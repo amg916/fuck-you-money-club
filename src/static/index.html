@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<link rel="icon" href="/favicon.ico" type="image/svg+xml">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>ProTip Abridger &amp; Autonomous Agent Report Studio</title>
 <style>
@@ -80,6 +81,14 @@ ul.list li{padding:10px 13px;border-radius:10px;background:rgba(255,255,255,.035
 .modal .glass{max-width:1020px;width:100%;padding:26px}
 .x{position:sticky;top:0;float:right}
 .empty{color:var(--dim);padding:34px;text-align:center}
+.ebook-cover{display:grid;grid-template-columns:minmax(180px,280px) minmax(0,1fr);align-items:center;gap:clamp(24px,4vw,56px);padding:clamp(20px,3vw,40px);margin:24px 0;border:1px solid var(--line);border-radius:22px;background:linear-gradient(135deg,rgba(0,240,255,.08),rgba(139,92,246,.1));overflow:hidden}
+.ebook-cover>img{width:100%;max-width:280px;justify-self:center;border-radius:5px 12px 12px 5px;transform:perspective(1000px) rotateY(-9deg);filter:drop-shadow(12px 20px 16px rgba(0,0,0,.65))}.ebook-cover>div{min-width:0}.ebook-cover h3{font-size:clamp(1.5rem,2.5vw,2.4rem);line-height:1.15;letter-spacing:-.025em;text-transform:none;color:var(--txt);margin-top:0;overflow-wrap:anywhere}.ebook-cover h3+p{font-size:1.05rem;font-weight:600;color:#c5d4e9}
+.ebook-cover .mini{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:24px}.ebook-cover .mini>div{padding:20px 14px;border-top:3px solid var(--cyan);background:linear-gradient(145deg,rgba(0,240,255,.1),rgba(139,92,246,.1));min-width:0}.ebook-cover .mini b{font-size:clamp(1.5rem,3vw,2.5rem);line-height:1.2;color:var(--txt);overflow-wrap:anywhere}.ebook-cover .mini span{display:block;margin-top:10px;color:#b9c8de}.ebook-cover .mini>div:last-child b{font-size:1.1rem;line-height:1.5}
+.ebook-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:20px;margin:20px 0 32px}.ebook-grid>figure,.ebook-grid>article{min-width:0;padding:18px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(145deg,rgba(23,35,57,.85),rgba(9,14,27,.95));box-shadow:0 12px 28px rgba(0,0,0,.25);transition:transform .22s,box-shadow .22s,border-color .22s;overflow-wrap:anywhere}.ebook-grid>figure:hover,.ebook-grid>article:hover{transform:translateY(-5px);border-color:var(--cyan);box-shadow:0 18px 36px rgba(0,0,0,.4)}.ebook-grid img{display:block;width:100%;height:auto;border-radius:12px}.ebook-grid figcaption{padding-top:14px;font-size:.8rem;font-weight:600;color:#b9c8de}
+#view-ebook a{color:#79dce9}#view-ebook details{padding:18px;margin:12px 0;border:1px solid var(--line);border-radius:12px}#view-ebook summary{cursor:pointer;font-weight:700}#view-ebook p{margin:12px 0}#ebook-download-bar{padding:18px 0}
+#ebook-market-tabs{gap:10px;margin:18px 0}#ebook-market-tabs .pill{padding:10px 20px;font-size:.85rem;color:var(--txt);background:#101a2c}#ebook-market-tabs .pill.on{color:#fff;border-color:var(--cyan);background:linear-gradient(120deg,rgba(0,240,255,.17),rgba(139,92,246,.25));box-shadow:inset 0 -2px 0 var(--cyan)}#ebook-market-tabs .pill:focus-visible,#ebook-copy-listing:focus-visible{outline:2px solid var(--cyan);outline-offset:4px}#ebook-market-copy{min-height:360px;margin:10px 0 16px;padding:22px;background:#050a14;color:#e8f0fc;border:1px solid #3b506f;border-radius:16px;font:13px/1.8 ui-monospace,SFMono-Regular,Menlo,monospace;box-shadow:inset 0 2px 12px rgba(0,0,0,.35)}#ebook-copy-listing{padding:13px 24px}
+@media(max-width:760px){.ebook-cover{grid-template-columns:minmax(0,1fr)}.ebook-cover>img{max-width:220px}.ebook-cover .mini{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(prefers-reduced-motion:reduce){.ebook-grid>figure,.ebook-grid>article,#ebook-market-tabs .pill{transition:none}.ebook-grid>figure:hover,.ebook-grid>article:hover{transform:none}}
 </style>
 </head>
 <body>
@@ -109,6 +118,7 @@ ul.list li{padding:10px 13px;border-radius:10px;background:rgba(255,255,255,.035
 <div class="tabs">
   <button class="tab on" id="tab-library">1. Video Library &amp; Abridged ProTips</button>
   <button class="tab" id="tab-combine">2. Combined Multi-Video Synthesis</button>
+  <button class="tab" id="tab-ebook">4. Autonomous eBook &amp; Marketplace Studio (Amazon · Etsy · eBay)</button>
   <button class="tab" id="tab-agent">3. Custom Agent PDF Report Studio</button>
 </div>
 
@@ -122,6 +132,7 @@ ul.list li{padding:10px 13px;border-radius:10px;background:rgba(255,255,255,.035
     <button id="btn-select-filtered" class="ghost">Select Visible</button>
     <button id="btn-invert-selection" class="ghost">Invert</button>
     <button id="btn-combine" class="go">Combine Selected (0)</button>
+    <button id="btn-open-ebook-studio" class="go">Topic → Illustrated eBook &amp; Marketplace Studio</button>
     <button id="btn-open-agent-studio" class="primary">Agent PDF Report</button>
   </div>
   <div class="status" id="filter-status"></div>
@@ -138,6 +149,25 @@ ul.list li{padding:10px 13px;border-radius:10px;background:rgba(255,255,255,.035
   <div id="combine-body"><div class="empty">Select videos in the library, then press <b>Combine Selected</b> to build the unified ProTip &amp; Finite Details playbook.</div></div>
 </section>
 
+<section class="glass hide" id="view-ebook">
+<h2>Topic Discovery + Autonomous Illustrated eBook &amp; Marketplace Studio</h2>
+<p>From a topic to a source-linked field manual, illustrated reader and publishing kit. No design questionnaire.</p>
+<label for="ebook-topics-input">Research topics</label>
+<textarea id="ebook-topics-input" placeholder="Enter one or multiple TOPICS (e.g. California Probate &amp; Small Estate Affidavits, Tax Sale Surplus Funds Recovery, Quiet Title &amp; Heir Hunting) — ChatGPT Pro &amp; YouTube Deep Discovery will find all relevant videos, ingest transcripts, and build your complete illustrated eBook + Amazon/Etsy/eBay bundle automatically with zero questions asked"></textarea>
+<div id="ebook-topic-presets" class="pills"></div>
+<label class="row"><input type="checkbox" id="ebook-discover-youtube" checked> Deep-Search YouTube for all relevant links on these topics first &amp; auto-ingest transcripts</label>
+<label class="row"><input type="checkbox" id="ebook-use-chatgpt-pro" checked> Use ChatGPT Pro / Codex deep query expansion</label>
+<p class="cmeta">Enter any topic(s) or pick a preset chip below — ChatGPT Pro / Codex &amp; YouTube Deep Discovery automatically find relevant tutorials, pull transcripts, and compile your complete illustrated eBook, EPUB 3, 6×9 KDP print interior, printable workbook, 5 mockups, and Amazon/Etsy/eBay listings.</p>
+<div class="row"><button id="btn-build-autonomous-ebook" class="go">One-Click Autonomous Build: Discover YouTube Links → Generate Illustrated eBook + Amazon/Etsy/eBay Bundle</button><button id="btn-discover-topics-only">Discover &amp; Ingest YouTube Links by Topic First</button></div>
+<div id="ebook-status" class="status" role="status" aria-live="polite"></div><div id="ebook-discovery-results"></div>
+<div id="ebook-download-bar" class="row hide">
+<button id="btn-download-ebook-bundle" class="primary">Download Complete Amazon + Etsy + eBay Bundle (.ZIP)</button>
+<button id="btn-download-ebook-pdf-digital">Download Illustrated Digital eBook PDF (8.5×11)</button>
+<button id="btn-download-ebook-pdf-kdp">Download Amazon KDP Print Paperback PDF (6×9)</button>
+<button id="btn-download-ebook-epub">Download Amazon Kindle eBook (.EPUB)</button>
+<button id="btn-download-ebook-workbook">Download Etsy Printable Workbook PDF (8.5×11)</button>
+</div><div id="ebook-body"></div>
+</section>
 <section class="glass hide" id="view-agent">
   <h2>Custom Agent PDF Report Studio</h2>
   <input type="text" id="agent-prompt-input" placeholder="Type any topic or request, e.g. California ClaimIt.ca.gov &amp; Probate Code 13101 Small Estate + Table of Heirship ProTips">
@@ -195,12 +225,12 @@ function renderGrid(){const f=filtered(),cap=S.showAll?f.length:Math.min(60,f.le
   $("show-all-row").innerHTML=(!S.showAll&&f.length>60)?'<button id="btn-show-all" class="ghost">Show All '+f.length+" Videos</button>":"";
   const b=$("btn-show-all");if(b)b.onclick=()=>{S.showAll=true;renderGrid();};
   say($("filter-status"),"Showing "+cap+" of "+f.length+" filtered &middot; "+S.videos.length+" in library &middot; "+S.sel.size+" selected");$("filter-status").innerHTML="Showing <b>"+cap+"</b> of <b>"+f.length+"</b> filtered &middot; <b>"+S.videos.length+"</b> in library &middot; <b>"+S.sel.size+"</b> selected";stats();}
-async function loadVideos(){try{const d=await jget("/api/videos");S.totalHours=d.total_hours||0;S.videos=Array.isArray(d)?d:(d.videos||d.items||[]);renderPills();renderGrid();}catch(e){$("video-grid").innerHTML='<div class="empty">Failed to load library: '+esc(e.message)+"</div>";}}
+async function loadVideos(){S.loadSeq=(S.loadSeq||0)+1;const seq=S.loadSeq;try{const d=await jget("/api/videos");if(seq!==S.loadSeq)return false;S.totalHours=d.total_hours||0;S.videos=Array.isArray(d)?d:(d.videos||d.items||[]);renderPills();renderGrid();return true;}catch(e){if(seq!==S.loadSeq)return false;$("video-grid").innerHTML='<div class="empty">Failed to load library: '+esc(e.message)+"</div>";return false;}}
 
-function showView(which){[["library","tab-library","view-library"],["combine","tab-combine","view-combine"],["agent","tab-agent","view-agent"]].forEach(([k,t,v])=>{$(t).classList.toggle("on",k===which);$(v).classList.toggle("hide",k!==which);});}
+function showView(which){[["library","tab-library","view-library"],["combine","tab-combine","view-combine"],["agent","tab-agent","view-agent"],["ebook","tab-ebook","view-ebook"]].forEach(([k,t,v])=>{$(t).classList.toggle("on",k===which);$(v).classList.toggle("hide",k!==which);});}
 $("tab-library").onclick=()=>showView("library");$("tab-combine").onclick=()=>showView("combine");$("tab-agent").onclick=()=>showView("agent");$("btn-open-agent-studio").onclick=()=>showView("agent");
 $("btn-sample-links").onclick=()=>{$("ingest-urls-input").value=["https://www.youtube.com/watch?v=9Q4qYeK5DTg","https://www.youtube.com/watch?v=MVCNlj7HQBQ","https://www.youtube.com/watch?v=aUiod-Jy68U"].join("\n");say($("ingest-status"),"3 sample links loaded — press Pull Transcripts to ingest.","ok");};
-$("btn-ingest").onclick=async()=>{const val=$("ingest-urls-input").value.trim();if(!val){say($("ingest-status"),"Paste at least one YouTube URL or video ID.","err");return;}const b=$("btn-ingest");b.disabled=true;say($("ingest-status"),"Pulling transcripts and generating ProTip abridged reports...");try{const d=await jpost("/api/ingest",{urls:val});const ids=arr(d.results).filter(v=>v.status==='ok'||v.status==='cached').map(v=>v.video_id).filter(Boolean);await loadVideos();ids.forEach(i=>S.sel.add(i));renderGrid();showView("library");say($("ingest-status"),"Ingested "+num(d.ingested_count)+" video(s), "+num(d.cached_count)+" cached, "+num(d.failed_count)+" failed — available videos auto-selected for combining.",d.failed_count?'err':'ok');}catch(e){say($("ingest-status"),"Ingest failed: "+e.message,"err");}finally{b.disabled=false;}};
+$("btn-ingest").onclick=async()=>{const val=$("ingest-urls-input").value.trim();if(!val){say($("ingest-status"),"Paste at least one YouTube URL or video ID.","err");return;}const b=$("btn-ingest");b.disabled=true;say($("ingest-status"),"Pulling transcripts and generating ProTip abridged reports...");try{const d=await jpost("/api/ingest",{urls:val});const ids=arr(d.results).filter(v=>v.status==='ok'||v.status==='cached').map(v=>v.video_id).filter(Boolean);ids.forEach(i=>S.sel.add(i));await loadVideos();showView("library");say($("ingest-status"),"Ingested "+num(d.ingested_count)+" video(s), "+num(d.cached_count)+" cached, "+num(d.failed_count)+" failed — available videos auto-selected for combining.",d.failed_count?'err':'ok');}catch(e){say($("ingest-status"),"Ingest failed: "+e.message,"err");}finally{b.disabled=false;}};
 $("search-input").addEventListener("input",e=>{S.q=e.target.value;S.showAll=false;renderGrid();});
 $("domain-pills").addEventListener("click",e=>{const p=e.target.closest(".pill");if(!p)return;S.domain=p.dataset.d;S.showAll=false;renderPills();renderGrid();});
 $("btn-select-all").onclick=()=>{S.videos.forEach(v=>S.sel.add(String(pick(v,"video_id","id"))));renderGrid();};
@@ -250,6 +280,53 @@ function closeModal(){++S.modalSeq;$("video-modal").classList.add("hide");}
 $("modal-close").onclick=closeModal;
 $("video-modal").addEventListener("click",e=>{if(e.target.id==="video-modal")closeModal();});
 document.addEventListener("keydown",e=>{if(e.key==="Escape")closeModal();});
+let currentEbook=null, ebookRequest=null;
+const svgUri=s=>'data:image/svg+xml;charset=utf-8,'+encodeURIComponent(s);
+const sourceLink=(url,label)=>'<a target="_blank" rel="noopener noreferrer" href="'+esc(/^https?:\/\//.test(url)?url:'#')+'">'+esc(label)+'</a>';
+$('tab-ebook').onclick=$('btn-open-ebook-studio').onclick=()=>showView('ebook');
+$('ebook-topic-presets').innerHTML=['California Probate & Small Estate Affidavits','Tax Sale Surplus Funds Recovery','Quiet Title & Heir Hunting'].map(t=>'<button class="pill">'+esc(t)+'</button>').join('');
+$('ebook-topic-presets').onclick=e=>{if(e.target.tagName==='BUTTON'){$('ebook-topics-input').value=e.target.textContent;buildStudio(false);}};
+function discoveryPreview(d){$('ebook-discovery-results').innerHTML='<p>'+esc(d.research_summary)+'</p><p>'+esc(d.engine)+' · '+d.queries_executed.length+' queries · '+d.search_failed_count+' search failures · '+d.failed_count+' ingestion failures</p><details><summary>Discovered sources ('+d.discovered_videos.length+')</summary>'+d.discovered_videos.map(v=>'<p>'+sourceLink(v.url,v.title||v.video_id)+'</p>').join('')+'</details>';}
+function renderEbook(e){
+ currentEbook=e;const t=e.telemetry;
+ $('ebook-body').innerHTML='<div class="ebook-cover"><img alt="Generated front cover" src="'+svgUri(e.cover_svg)+'"><div><h3>'+esc(e.title)+'</h3><p>'+esc(e.subtitle)+'</p><p>'+esc(e.book_spec.author)+' · '+esc(e.book_spec.edition)+'</p><p>'+esc(e.book_spec.isbn_status)+'</p>'+miniBlock([["Chapters", num(t.chapter_count)], ["Visual Exhibits", num(t.exhibit_count)], ["Expert ProTips", num(t.pro_tip_count)], ["Source Videos", num(t.video_count)], ["Listing Mockups", "5"], ["Marketplaces", "Amazon · Etsy · eBay"]])+'<p>'+esc(e.publication_notice)+'</p>'+(e.topic_fallback_used?'<p>No topic match: corpus fallback used. Review relevance.</p>':'')+'</div></div>'
+ +'<h3>Five Marketplace Listing Mockups</h3><div class="ebook-grid">'+Object.entries(e.mockup_svgs).map(([n,svg])=>'<figure><img loading="lazy" src="'+svgUri(svg)+'" alt="'+esc(n)+'"><figcaption>'+esc(n)+'</figcaption></figure>').join('')+'</div>'
+ +'<h3>Visual Evidence &amp; Timestamped Exhibits</h3><div class="ebook-grid">'+e.exhibits.map(x=>'<article class="glass card"><img loading="lazy" src="'+esc(x.svg_data_uri)+'" alt="'+esc(x.figure_label)+'"><details><summary>YouTube source thumbnail</summary><img loading="lazy" src="'+esc(x.thumbnail_url)+'" alt="YouTube source thumbnail"></details><h4>'+esc(x.figure_label)+'</h4><p>'+esc(x.caption)+'</p><p>'+esc(x.statutes.join(' · '))+'</p><p>'+esc(x.portals.join(' · '))+'</p>'+sourceLink(x.url,x.timestamp)+'</article>').join('')+'</div>'
+ +'<h3>Marketplace Copy-Paste Listing Studio</h3><div id="ebook-market-tabs" class="row"><button class="pill" data-market="amazon_kdp">Amazon KDP</button><button class="pill" data-market="etsy">Etsy</button><button class="pill" data-market="ebay">eBay</button></div><label for="ebook-market-copy">Listing metadata and buyer-ready description / HTML</label><textarea id="ebook-market-copy" readonly></textarea><button id="ebook-copy-listing" class="primary">Copy to Clipboard</button><div id="ebook-copy-status" role="status"></div>'
+ +'<h3>Full Chapter-by-Chapter Illustrated Reader</h3>'+e.chapters.map(c=>'<details><summary>'+esc(c.title)+'</summary>'+c.paragraphs.map(p=>'<p>'+esc(p)+'</p>').join('')+c.sections.map(s=>'<h4>'+esc(s.heading)+'</h4>'+s.paragraphs.map(p=>'<p>'+esc(p)+'</p>').join('')+sourceLink(s.source_url,'Review source')).join('')+tipList('ProTips',c.pro_tips,'')+c.exhibits.map(id=>{const x=e.exhibits.find(x=>x.exhibit_id===id);return '<figure><img style="max-width:700px;width:100%" src="'+esc(x.svg_data_uri)+'" alt="'+esc(x.figure_label)+'"><figcaption>'+esc(x.caption)+' '+sourceLink(x.url,x.timestamp)+'</figcaption></figure>';}).join('')+listBlock('Statutes & portals',c.statutes.concat(c.portals),r=>sourceLink(r.url||r.source_url,r.name)+' — '+esc(r.status))+listBlock('Checklist',c.checklist,x=>'<label><input type="checkbox"> '+esc(x)+'</label>')+'</details>').join('');
+ const market=k=>{$('ebook-market-tabs').querySelectorAll('[data-market]').forEach(b=>{const active=b.dataset.market===k;b.classList.toggle('on',active);b.setAttribute('aria-pressed',String(active));});$('ebook-market-copy').value=Object.entries(e.marketplace_kit[k]).map(([key,value])=>key.replaceAll('_',' ').toUpperCase()+'\n'+(typeof value==='object'?JSON.stringify(value,null,2):value)).join('\n\n');};
+ market('amazon_kdp');$('ebook-market-tabs').onclick=ev=>{if(ev.target.dataset.market)market(ev.target.dataset.market);};
+ $('ebook-copy-listing').onclick=async()=>{try{await navigator.clipboard.writeText($('ebook-market-copy').value);$('ebook-copy-status').textContent='Copied.';}catch(err){$('ebook-market-copy').select();$('ebook-copy-status').textContent='Clipboard unavailable. Selected text: use your copy shortcut.';}};
+ $('ebook-download-bar').classList.remove('hide');
+}
+async function buildStudio(discoverOnly){
+ const buttons=[$('btn-build-autonomous-ebook'),$('btn-discover-topics-only'),...$('ebook-topic-presets').querySelectorAll('button')];buttons.forEach(b=>b.disabled=true);
+ $('view-ebook').setAttribute('aria-busy','true');showView('ebook');
+ const topics=$('ebook-topics-input').value.trim(),use_codex_cli=$('ebook-use-chatgpt-pro').checked;
+ say($('ebook-status'),'Working: expanding queries, searching and ingesting transcripts. Discovery can take several minutes; unavailable sources will be reported.');
+ try{
+   if(discoverOnly){const d=await jpost('/api/topic-discover',{topics,use_codex_cli,max_videos:20});discoveryPreview(d);say($('ebook-status'),'Discovery finished. '+d.video_ids.length+' transcripts ready.','ok');}
+   else{const e=await jpost('/api/ebook/generate',{topics,discover_first:$('ebook-discover-youtube').checked,use_codex_cli,max_videos:20});
+     ebookRequest={topics:e.topics,video_ids:e.sources.map(s=>new URL(s.url).searchParams.get('v')),title:e.title};
+     renderEbook(e);if(e.discovery)discoveryPreview(e.discovery);
+     say($('ebook-status'),'Manuscript and marketplace drafts ready. Downloads compile your selected format on demand.','ok');}
+   await loadVideos();
+ }catch(err){say($('ebook-status'),'Build failed: '+err.message,'err');}
+ finally{buttons.forEach(b=>b.disabled=false);$('view-ebook').setAttribute('aria-busy','false');}
+}
+$('btn-build-autonomous-ebook').onclick=()=>buildStudio(false);$('btn-discover-topics-only').onclick=()=>buildStudio(true);
+for(const [id,path,mode,name] of [
+ ['btn-download-ebook-bundle','bundle',null,'amazon-etsy-ebay-ebook-bundle.zip'],
+ ['btn-download-ebook-pdf-digital','pdf','8.5x11','illustrated-ebook-digital.pdf'],
+ ['btn-download-ebook-pdf-kdp','pdf','6x9','illustrated-ebook-kdp.pdf'],
+ ['btn-download-ebook-epub','epub',null,'illustrated-ebook-kindle.epub'],
+ ['btn-download-ebook-workbook','pdf','workbook','illustrated-workbook.pdf']]){
+ $(id).onclick=async()=>{if(!currentEbook)return;$(id).disabled=true;try{
+ const payload={...ebookRequest};if(mode)payload.pdf_mode=mode;
+ const response=await fetch('/api/ebook/'+path,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
+ if(!response.ok)throw new Error((await response.json()).error);saveBlob(await response.blob(),name);say($('ebook-status'),'Downloaded '+name,'ok');
+ }catch(err){say($('ebook-status'),'Download failed: '+err.message,'err');}finally{$(id).disabled=false;}};
+}
 loadVideos();
 </script>
 </body>

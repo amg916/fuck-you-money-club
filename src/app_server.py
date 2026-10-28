@@ -28,7 +28,18 @@ else:  # pragma: no cover - top-level script usage
     from build_agent_report import EvidenceIndex, load_corpus
     from report_playbook import DOMAINS
 
+if __package__:
+    from .topic_discovery import parse_topics, discover_topic_videos, relevance_score
+    from .ebook_publisher import (build_full_ebook, render_ebook_pdf_bytes,
+                                  render_ebook_epub_bytes, render_marketplace_bundle_zip)
+else:
+    from topic_discovery import parse_topics, discover_topic_videos, relevance_score
+    from ebook_publisher import (build_full_ebook, render_ebook_pdf_bytes,
+                                 render_ebook_epub_bytes, render_marketplace_bundle_zip)
+
 MAX_BODY_BYTES = 2 * 1024 * 1024
+EBOOK_ROUTES = {'/api/topic-discover', '/api/ebook/generate', '/api/ebook/pdf',
+                '/api/ebook/epub', '/api/ebook/bundle'}
 
 
 class BadRequestError(ValueError):
@@ -36,6 +47,23 @@ class BadRequestError(ValueError):
 
 
 def validate_params(params):
+    if 'topics' in params:
+        try:
+            if params['topics'] is None:
+                raise ValueError('topics must be a string or list of strings')
+            topics = parse_topics(params['topics'])
+            if len(topics) > 10 or any(len(t) > 300 for t in topics):
+                raise ValueError('use at most 10 topics, each at most 300 characters')
+        except ValueError as exc:
+            raise BadRequestError(str(exc)) from exc
+    for key in ('trim', 'pdf_mode'):
+        if key in params and (not isinstance(params[key], str) or params[key] not in {'8.5x11', '6x9', 'workbook'}):
+            raise BadRequestError(f'invalid {key}')
+    for key in ('discover_first', 'auto_ingest', 'use_codex_cli'):
+        if key in params and type(params[key]) is not bool:
+            raise BadRequestError(f'{key} must be a boolean')
+    if 'max_videos' in params and (type(params['max_videos']) is not int or not 1 <= params['max_videos'] <= 100):
+        raise BadRequestError('max_videos must be an integer between 1 and 100')
     for key in ('prompt', 'title', 'subtitle', 'mode', 'markdown', 'video_id'):
         if key in params and not isinstance(params[key], str):
             raise BadRequestError(f'{key} must be a string')
@@ -113,9 +141,15 @@ class AppState:
                     if any(not isinstance(s, dict) or not isinstance(s.get('text'), str)
                            or not math.isfinite(float(s.get('start', 0))) for s in segments):
                         continue
-                except (ValueError, TypeError):
+                except (ValueError, TypeError, OverflowError):
                     continue
                 record.setdefault('metadata', {})
+                meta = record['metadata']
+                for k in ('title', 'author', 'shortDescription', 'lengthSeconds'):
+                    if meta.get(k) is None:
+                        meta[k] = ''
+                    elif not isinstance(meta[k], str):
+                        meta[k] = str(meta[k])
                 record.setdefault('full_text', ' '.join(s['text'] for s in segments))
                 record.setdefault('segments', [])
                 record['index'] = len(videos) + 1
@@ -180,6 +214,37 @@ class AppState:
             results.append({"video_id": vid, "status": "ok", "video": ab})
         return {"results": results, "ingested_count": ingested, "cached_count": cached,
                 "failed_count": failed, "total_videos": len(self.abridged_list)}
+
+    def discover_topics(self, topics, max_videos=20, auto_ingest=True, use_codex_cli=False, search_fn=None):
+        result = discover_topic_videos(topics, state=self, max_videos=max_videos,
+                                      auto_ingest=auto_ingest, use_codex_cli=use_codex_cli, search_fn=search_fn)
+        result['videos'] = self.resolve(result['video_ids'])
+        return result
+
+    def generate_ebook(self, topics=None, video_ids=None, title=None, discover_first=False,
+                       max_videos=20, use_codex_cli=False):
+        parsed = parse_topics(topics)
+        discovery = None
+        if discover_first and parsed:
+            discovery = self.discover_topics(parsed, max_videos=max_videos, use_codex_cli=use_codex_cli)
+            video_ids = discovery['video_ids']
+        if video_ids is not None:
+            video_ids = list(dict.fromkeys(video_ids))
+        selected = self.resolve(video_ids)
+        fallback = False
+        if parsed and video_ids is None:
+            matched = sorted((v for v in selected if relevance_score(v, parsed)),
+                             key=lambda v: -relevance_score(v, parsed))
+            fallback = not bool(matched)
+            selected = (matched or selected)[:max_videos]
+        selected = selected[:max_videos]
+        ebook = build_full_ebook(selected, topics=parsed, custom_title=title)
+        ebook['topic_fallback_used'] = fallback
+        if discovery is not None:
+            ebook['discovery'] = discovery
+        with self.lock:
+            self.last_ebook = ebook
+        return ebook
 
     def agent_report(self, prompt='', video_ids=None):
         with self._lock:
@@ -289,20 +354,81 @@ def create_handler(state: AppState):
             self._raw(200, markdown_to_pdf_bytes(markdown, title, params.get('subtitle', '')), "application/pdf",
                       {"Content-Disposition": 'attachment; filename="protip-agent-report.pdf"'})
 
+        def _ebook(self, path, params):
+            validate_params(params)
+            try:
+                if path == '/api/topic-discover':
+                    return self._json(state.discover_topics(params.get('topics'),
+                        max_videos=params.get('max_videos', 20), auto_ingest=params.get('auto_ingest', True),
+                        use_codex_cli=params.get('use_codex_cli', False)))
+                generation_keys = ('topics', 'video_ids', 'title', 'discover_first', 'max_videos', 'use_codex_cli')
+                with state.lock:
+                    ebook = getattr(state, 'last_ebook', None)
+                if path == '/api/ebook/generate' or any(k in params for k in generation_keys) or ebook is None:
+                    ebook = state.generate_ebook(**{k: params[k] for k in generation_keys if k in params})
+                if path == '/api/ebook/generate':
+                    return self._json(ebook)
+                if path == '/api/ebook/pdf':
+                    mode = params.get('pdf_mode', params.get('trim', '8.5x11'))
+                    data, mime, filename = render_ebook_pdf_bytes(ebook, mode), 'application/pdf', f'illustrated-ebook-{mode}.pdf'
+                elif path == '/api/ebook/epub':
+                    data, mime, filename = render_ebook_epub_bytes(ebook), 'application/epub+zip', 'illustrated-ebook-kindle.epub'
+                else:
+                    data, mime, filename = render_marketplace_bundle_zip(ebook), 'application/zip', 'amazon-etsy-ebay-ebook-bundle.zip'
+                return self._raw(200, data, mime, {'Content-Disposition': f'attachment; filename="{filename}"'})
+            except ValueError as exc:
+                raise BadRequestError(str(exc)) from exc
+
         def do_GET(self):
             parts = urllib.parse.urlsplit(self.path)
-            path, query = parts.path.rstrip("/") or "/", urllib.parse.parse_qs(parts.query)
+            path, query = parts.path.rstrip("/") or "/", urllib.parse.parse_qs(parts.query, keep_blank_values=True)
             one = lambda key: (query.get(key) or [None])[0]
             try:
+                if path in EBOOK_ROUTES:
+                    params = {k: v[0] for k, v in query.items()}
+                    for k in ('trim', 'pdf_mode', 'mode', 'video_id'):
+                        if params.get(k) == '':
+                            del params[k]
+                    if 'video_ids' in params:
+                        params['video_ids'] = [v for v in params['video_ids'].split(',') if v]
+                    for key in ('discover_first', 'auto_ingest', 'use_codex_cli'):
+                        if key in params:
+                            if params[key].lower() not in ('true', 'false'):
+                                raise BadRequestError(f'{key} must be true or false')
+                            params[key] = params[key].lower() == 'true'
+                    if 'max_videos' in params:
+                        try:
+                            params['max_videos'] = int(params['max_videos'])
+                        except ValueError as exc:
+                            raise BadRequestError('max_videos must be an integer') from exc
+                    return self._ebook(path, params)
                 if path in ("/", "/index.html"):
                     return self._raw(200, STATIC_INDEX.read_bytes(), "text/html; charset=utf-8")
+                if path == "/favicon.ico":
+                    return self._raw(200, b'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="8" fill="#0D1424"/></svg>', "image/svg+xml")
                 if path == "/api/health":
-                    return self._json(dict(state.totals(), status="ok",
-                                           total_videos=len(state.abridged_list)))
+                    t = state.totals()
+                    return self._json(dict(t, status="ok", total_videos=t["total"]))
                 if path == "/api/videos":
-                    items = state.search(one("domain"), one("q"))
+                    with state.lock:
+                        snapshot = list(state.abridged_list)
+                    items = snapshot
+                    domain = one("domain")
+                    if domain:
+                        items = [v for v in items if str(v.get("domain")) == str(domain)]
+                    q = (one("q") or "").strip().lower()
+                    if q:
+                        def hit(v):
+                            d = v.get("finite_details") or {}
+                            hay = [v.get("title", ""), v.get("author", ""), v.get("video_id", ""),
+                                   v.get("domain_name", "")]
+                            hay += [str(x) for x in d.get("tools_and_portals", [])]
+                            hay += [str(x) for x in d.get("statutes_and_forms", [])]
+                            hay += [t.get("tip", "") for t in v.get("pro_tips", [])]
+                            return any(q in str(x).lower() for x in hay)
+                        items = [v for v in items if hit(v)]
                     counts = {d: 0 for d in DOMAINS}
-                    for v in state.abridged_list:
+                    for v in snapshot:
                         if v.get("domain") in counts:
                             counts[v["domain"]] += 1
                     return self._json(dict(state.totals(items),
@@ -320,7 +446,7 @@ def create_handler(state: AppState):
                 if path == "/api/report/pdf":
                     params = {k: v[0] for k, v in query.items()}
                     if 'video_ids' in params:
-                        params['video_ids'] = params['video_ids'].split(',')
+                        params['video_ids'] = [v for v in params['video_ids'].split(',') if v]
                     return self._pdf(params)
                 return self._json({"error": f"not found: {parts.path}"}, 404)
             except FileNotFoundError as exc:
@@ -338,6 +464,8 @@ def create_handler(state: AppState):
             try:
                 payload = self._body()
                 validate_params(payload)
+                if path in EBOOK_ROUTES:
+                    return self._ebook(path, payload)
                 if path == "/api/ingest":
                     urls = payload.get("urls", payload.get("url", ""))
                     if not extract_video_urls("\n".join(str(u) for u in urls)

@@ -332,6 +332,174 @@ def markdown_to_pdf_bytes(markdown_text: str, title: str = "Agent Operational Re
     return render_pdf_bytes(title, subtitle, telemetry, blocks)
 
 
+def _jpeg_dimensions(data):
+    import struct
+    if not (isinstance(data, (bytes, bytearray)) and len(data) >= 4
+            and data.startswith(b'\xff\xd8\xff') and data.endswith(b'\xff\xd9')):
+        raise ValueError('JPEG has no supported frame header')
+    pos = 2
+    while pos + 4 <= len(data) - 2:
+        if data[pos] != 255:
+            break
+        marker = data[pos + 1]
+        length = struct.unpack('>H', data[pos + 2:pos + 4])[0]
+        if length < 2 or pos + 2 + length > len(data) - 2:
+            break
+        if marker in (0xc0, 0xc1, 0xc2):
+            if length < 8 or pos + 10 > len(data) - 2:
+                break
+            components = data[pos + 9]
+            if components not in (1, 3, 4) or length != 8 + 3 * components:
+                break
+            height, width = struct.unpack('>HH', data[pos + 5:pos + 9])
+            if width > 0 and height > 0:
+                return width, height
+            break
+        pos += 2 + length
+    raise ValueError('JPEG has no supported frame header')
+
+
+def render_ebook_pdf_bytes(ebook: dict, mode: str = '8.5x11') -> bytes:
+    """Independent illustrated layout; legacy report dimensions are never mutated."""
+    import base64
+    if mode not in {'8.5x11', '6x9', 'workbook'}:
+        raise ValueError('invalid ebook PDF mode')
+    width, height = (432, 648) if mode == '6x9' else (612, 792)
+    pages = []
+    page = None
+    y = 0
+
+    def new_page():
+        nonlocal page, y
+        number = len(pages) + 1
+        left = (58 if number % 2 else 40) if mode == '6x9' else 48
+        page = {'ops': [], 'links': [], 'images': [], 'left': left}
+        pages.append(page)
+        y = height - 48
+
+    def paragraph(value, size=10, bold=False, url=None, color=INK, max_lines=None):
+        nonlocal y
+        lines = []
+        for source in str(value).splitlines() or ['']:
+            lines.extend(wrap(source, size, width - (98 if mode == '6x9' else 96), font='bold' if bold else 'body'))
+        if max_lines is not None:
+            lines = lines[:max_lines]
+        for line in lines:
+            if y < 65 + size:
+                new_page()
+            page['ops'].append(_text(page['left'], y, line, 'bold' if bold else 'body', size, color))
+            if url and str(url).startswith(('https://', 'http://')):
+                page['links'].append((page['left'], y-3, width-40, y+size, url))
+            y -= size * 1.4
+        y -= 7
+
+    new_page()
+    page['ops'] += [_rect(0, 0, width, height, NAVY), _rect(0, height*.22, width, 110, ACCENT),
+                    _rect(18, 0, 10, height, NAVY_SOFT)]
+    y = height - 75
+    paragraph('APEX FIELD INTELLIGENCE PRESS', 10, True, color=PALE)
+    paragraph(ebook['title'], 23 if mode == '6x9' else 28, True, color=WHITE, max_lines=5)
+    paragraph(ebook['subtitle'], 11, color=WHITE, max_lines=3)
+    paragraph('PRINTABLE WORKBOOK EDITION' if mode == 'workbook' else ebook['book_spec']['edition'], 12, True, color=PALE)
+    for label, value in ebook['telemetry'].items():
+        paragraph(f'{label.replace("_", " ").upper()}: {value}', 10, True, color=WHITE)
+    new_page()
+    paragraph('Table of Contents', 22, True)
+    for chapter in ebook['chapters']:
+        paragraph(chapter['title'], 12, True)
+    paragraph('Source directory & publication notes', 12, True)
+    paragraph(ebook['publication_notice'], 10)
+    for chapter in ebook['chapters']:
+        new_page()
+        paragraph(chapter['title'], 17, True)
+        for p in chapter['paragraphs']:
+            paragraph(p)
+        for section in chapter['sections']:
+            paragraph(section['heading'], 12, True)
+            for p in section['paragraphs']:
+                paragraph(p)
+            paragraph('Review video source', url=section['source_url'], color=ACCENT)
+        for tip in chapter['pro_tips']:
+            paragraph('ProTip: ' + str(tip.get('tip', '')), 10, True)
+            paragraph(tip.get('timestamp', 'Source'), url=tip['timestamp_url'], color=ACCENT)
+        for reference in chapter['statutes'] + chapter['portals']:
+            paragraph(reference['name'] + ' | ' + reference['status'], 9,
+                      url=reference.get('url') or reference['source_url'])
+        for item in chapter['checklist']:
+            paragraph('[ ] ' + item)
+            if mode == 'workbook':
+                paragraph('Finding: ________________________________________\nSource / date: ___________________________________\nNext action: _____________________________________', 10)
+        for eid in chapter['exhibits']:
+            exhibit = next(e for e in ebook['exhibits'] if e['exhibit_id'] == eid)
+            new_page()
+            paragraph(exhibit['figure_label'], 14, True)
+            paragraph(exhibit['video_title'], 11)
+            image_width = width - (98 if mode == '6x9' else 96)
+            data = base64.b64decode(exhibit['jpeg_base64'])
+            iw, ih = _jpeg_dimensions(data)
+            image_height = min(200, image_width * ih / iw)
+            image_width = image_height * iw / ih
+            y -= image_height
+            name = 'Im' + str(len(page['images']) + 1)
+            page['images'].append((name, data, iw, ih))
+            page['ops'].append(f'q {image_width:.2f} 0 0 {image_height:.2f} {page["left"]} {y:.2f} cm /{name} Do Q')
+            y -= 20
+            paragraph(exhibit['image_provenance'], 8)
+            paragraph(exhibit['caption'], 9)
+            paragraph(exhibit['timestamp'] + ' — watch source', 10, url=exhibit['url'], color=ACCENT)
+            if y < 160:
+                new_page()
+            matrix = exhibit['qr_matrix']
+            cell = 2.2
+            x, bottom = page['left'], y - (len(matrix)+8)*cell
+            page['ops'].append(_rect(x, bottom, (len(matrix)+8)*cell, (len(matrix)+8)*cell, WHITE))
+            for row, values in enumerate(matrix):
+                for col, value in enumerate(values):
+                    if value:
+                        page['ops'].append(_rect(x+(col+4)*cell, bottom+(len(matrix)-row+3)*cell, cell, cell, (0, 0, 0)))
+            page['links'].append((x, bottom, x+(len(matrix)+8)*cell, y, exhibit['url']))
+            y = bottom - 20
+    new_page()
+    paragraph('Source directory & publication notes', 17, True)
+    paragraph(ebook['publication_notice'])
+    for source in ebook['sources']:
+        paragraph(source['title'] + ' — ' + source['author'], 11, True, source['url'])
+        paragraph(source['url'], 8, url=source['url'])
+    objects = [b'', b'']
+    def add(data):
+        objects.append(data.encode('latin-1', 'replace') if isinstance(data, str) else data)
+        return len(objects)
+    font1 = add('<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>')
+    font2 = add('<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>')
+    kids = []
+    for number, p in enumerate(pages, 1):
+        p['ops'].append(_text(p['left'], 28, f'Page {number} of {len(pages)}', size=9, color=GREY))
+        image_refs = []
+        for name, data, iw, ih in p['images']:
+            ref = add((f'<< /Type /XObject /Subtype /Image /Width {iw} /Height {ih} /ColorSpace /DeviceRGB /BitsPerComponent 8 /Filter /DCTDecode /Length {len(data)} >>\nstream\n').encode() + data + b'\nendstream')
+            image_refs.append(f'/{name} {ref} 0 R')
+        links = []
+        for x1, y1, x2, y2, url in p['links']:
+            ref = add(f'<< /Type /Annot /Subtype /Link /Rect [{x1} {y1} {x2} {y2}] /Border [0 0 0] /A << /Type /Action /S /URI /URI ({_esc(ascii_text(url))}) >> >>')
+            links.append(f'{ref} 0 R')
+        data = '\n'.join(p['ops']).encode('latin-1', 'replace')
+        stream = add(f'<< /Length {len(data)} >>\nstream\n'.encode() + data + b'\nendstream')
+        kids.append(add(f'<< /Type /Page /Parent 2 0 R /MediaBox [0 0 {width} {height}] /Resources << /Font << /F1 {font1} 0 R /F2 {font2} 0 R >> /XObject << {" ".join(image_refs)} >> >> /Annots [{" ".join(links)}] /Contents {stream} 0 R >>'))
+    objects[0] = b'<< /Type /Catalog /Pages 2 0 R >>'
+    objects[1] = f'<< /Type /Pages /Count {len(kids)} /Kids [{" ".join(str(k)+" 0 R" for k in kids)}] >>'.encode()
+    buffer = bytearray(b'%PDF-1.4\n%\xe2\xe3\xcf\xd3\n')
+    offsets = [0]
+    for i, obj in enumerate(objects, 1):
+        offsets.append(len(buffer))
+        buffer += f'{i} 0 obj\n'.encode() + obj + b'\nendobj\n'
+    start = len(buffer)
+    buffer += f'xref\n0 {len(objects)+1}\n0000000000 65535 f \n'.encode()
+    for offset in offsets[1:]:
+        buffer += f'{offset:010d} 00000 n \n'.encode()
+    buffer += f'trailer\n<< /Size {len(objects)+1} /Root 1 0 R >>\nstartxref\n{start}\n%%EOF\n'.encode()
+    return bytes(buffer)
+
+
 if __name__ == "__main__":  # pragma: no cover - smoke check
     import sys
     sys.stdout.buffer.write(markdown_to_pdf_bytes("# Demo\n\n_Sample_\n\n- one\n- two\n"))

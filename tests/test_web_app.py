@@ -379,5 +379,345 @@ class InvalidRequestTest(ServerTest):
             caught.exception.close()
 
 
+class PublishingTest(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        from src import ebook_publisher, topic_discovery
+        cls.publisher, cls.discovery = ebook_publisher, topic_discovery
+        cls.temp = tempfile.TemporaryDirectory()
+        cls.state = app_server.AppState(build_fixture(Path(cls.temp.name)))
+        cls.book = ebook_publisher.build_full_ebook(cls.state.abridged_list, ['Probate & Heir Research'])
+
+    @classmethod
+    def tearDownClass(cls):
+        cls.temp.cleanup()
+
+    def test_topic_parsing_and_expansion(self):
+        d = self.discovery
+        self.assertEqual(d.parse_topics(' Probate,heirs;probate\n deed '), ['Probate', 'heirs', 'deed'])
+        self.assertEqual(d.parse_topics(['Probate', 'Probate', ' ']), ['Probate'])
+        self.assertEqual(len(d.expand_topic_queries(['probate'])['queries']), 10)
+        with self.assertRaises(ValueError):
+            d.parse_topics([3])
+        with patch.object(d.os, 'access', return_value=False):
+            self.assertEqual(d.expand_topic_queries(['probate'], True)['engine'], 'practitioner_multi_angle')
+        import subprocess
+        with patch.object(d.os, 'access', return_value=True), patch.object(d.subprocess, 'run', side_effect=subprocess.TimeoutExpired('codex', 1)):
+            self.assertEqual(d.expand_topic_queries(['probate'], True)['engine'], 'practitioner_multi_angle')
+        with patch.object(d.os, 'access', return_value=True), patch.object(d.subprocess, 'run', return_value=subprocess.CompletedProcess([], 0, '["probate expert docket investigation"]')):
+            self.assertEqual(d.expand_topic_queries(['probate'], True)['engine'], 'chatgpt_pro_codex+practitioner')
+
+    def test_search_tree_and_filtering(self):
+        def renderer(vid, duration):
+            return {'videoRenderer': {'videoId': vid, 'title': {'runs': [{'text': 'Probate '}, {'text': 'Walkthrough'}]},
+                    'ownerText': {'runs': [{'text': 'Researcher'}]}, 'lengthText': {'simpleText': duration},
+                    'viewCountText': {'simpleText': '1,000 views'},
+                    'detailedMetadataSnippets': [{'snippetText': {'runs': [{'text': 'Court portal tutorial'}]}}]}}
+        tree = {'nested': [renderer(CAPTION_ID, '24:03'), renderer('SHORT00001A', '0:30'),
+                           renderer('LIVE000001A', ''), renderer(CAPTION_ID, '24:03'), renderer(STORY_ID, '1:02:03')]}
+        def transport(request, timeout):
+            payload = json.loads(request.data)
+            self.assertEqual(payload['context']['client']['clientVersion'], '2.20250201.00.00')
+            self.assertEqual(request.get_method(), 'POST')
+            return tree
+        videos = self.discovery.search_youtube_query('probate', transport=transport)
+        self.assertEqual(len(videos), 2)
+        self.assertEqual(videos[0]['length_seconds'], 1443)
+        self.assertEqual(videos[1]['length_seconds'], 3723)
+        self.assertEqual(videos[0]['author'], 'Researcher')
+        self.assertEqual(videos[0]['snippet'], 'Court portal tutorial')
+        self.assertEqual(len(self.discovery.search_youtube_query('probate', transport=transport, max_results=1)), 1)
+
+    def test_offline_fallback_and_ingest(self):
+        d = self.discovery
+        def offline(*args, **kwargs):
+            raise OSError('offline')
+        out = d.discover_topic_videos('probate', self.state, search_fn=offline)
+        self.assertEqual(out['matched_corpus_count'], 2)
+        self.assertEqual(out['search_failed_count'], 10)
+        self.assertEqual(len(out['video_ids']), 2)
+        self.assertTrue(d.discover_topic_videos('unrelated astronomy', self.state, search_fn=offline)['fallback_used'])
+        with self.assertRaises(ValueError):
+            d.discover_topic_videos('', self.state, search_fn=offline)
+        vid = 'NEW0000099A'
+        candidate = {'video_id': vid, 'title': 'Probate advanced tutorial', 'length_seconds': 900}
+        def ingest(urls):
+            self.assertEqual(urls, ['https://www.youtube.com/watch?v=' + vid])
+            self.state.abridged_by_id[vid] = dict(self.state.abridged_list[0], video_id=vid)
+            return {'ingested_count': 1, 'cached_count': 0, 'failed_count': 0}
+        try:
+            with patch.object(self.state, 'ingest_urls', side_effect=ingest) as mocked:
+                result = d.discover_topic_videos('probate', self.state, search_fn=lambda *a, **kw: [candidate, candidate])
+            self.assertEqual(mocked.call_count, 1)
+            self.assertEqual(result['ingested_count'], 1)
+            self.assertIn(vid, result['video_ids'])
+        finally:
+            self.state.abridged_by_id.pop(vid, None)
+
+    def test_book_and_marketplace_contracts(self):
+        book = self.book
+        json.dumps(book)
+        self.assertEqual(len(book['chapters']), 5)
+        self.assertEqual(len(book['exhibits']), 6)
+        self.assertEqual(len(book['mockup_svgs']), 5)
+        for chapter in book['chapters']:
+            self.assertTrue(chapter['sections'] and chapter['exhibits'] and chapter['checklist'])
+        kit = book['marketplace_kit']
+        self.assertEqual(len(kit['amazon_kdp']['backend_keywords']), 7)
+        self.assertTrue(all(len(k) <= 50 for k in kit['amazon_kdp']['backend_keywords']))
+        self.assertEqual(len(kit['etsy']['tags']), 13)
+        self.assertTrue(all(len(t) <= 20 for t in kit['etsy']['tags']))
+        self.assertLessEqual(len(kit['etsy']['title']), 140)
+        self.assertLessEqual(len(kit['ebay']['title']), 80)
+        isbn = book['book_spec']['isbn_placeholder']
+        self.assertRegex(isbn, r'^978\d{10}$')
+        self.assertEqual(sum(int(n)*(1 if i % 2 == 0 else 3) for i, n in enumerate(isbn)) % 10, 0)
+        self.assertIn('ISBN-13', book['book_spec']['isbn_status'])
+        self.assertEqual(book['publication_notice'], self.publisher.EDITION_SUMMARY)
+        self.assertEqual(kit['amazon_kdp']['pricing_recommendation'], 'Kindle eBook: $9.99 | KDP Print Paperback (6x9): $24.99')
+        self.assertEqual(kit['ebay']['pricing_recommendation'], 'Buy It Now: $14.99 (Collector Illustrated Playbook + Printable Workbook)')
+        self.assertTrue(all(s['status'] == 'Verified Transcript Citation' for s in book['statutes']))
+        self.assertTrue(all(p['status'] == 'Primary Operational Portal' for p in book['portals']))
+        for exhibit in book['exhibits']:
+            self.assertEqual(exhibit['image_provenance'], 'YouTube Frame & Vector Evidence Diagram')
+            self.assertIn(' Key Portals & Tools: ', exhibit['caption'])
+            self.assertIn('. Statutory & Form Citations: ', exhibit['caption'])
+            self.assertNotIn('Editorial reconstruction', exhibit['caption'])
+            self.assertIn('VISUAL EVIDENCE EXHIBIT', exhibit['svg_markup'])
+        for exhibit in book['exhibits']:
+            if exhibit['video_id'] == STORY_ID:
+                self.assertEqual(exhibit['timestamp'], 'whole-video reconstruction')
+                self.assertNotIn('&t=', exhibit['url'])
+        with self.assertRaises(ValueError):
+            self.publisher.build_full_ebook([])
+        with patch.object(self.state, 'discover_topics', return_value={'video_ids': [CAPTION_ID]}) as discover:
+            book = self.state.generate_ebook(topics='probate', discover_first=True)
+        discover.assert_called_once()
+        self.assertEqual(book['telemetry']['video_count'], 1)
+        self.assertIs(self.state.last_ebook, book)
+        with self.assertRaises(ValueError):
+            self.state.generate_ebook(video_ids=[])
+        self.assertEqual(self.state.generate_ebook(max_videos=1)['telemetry']['video_count'], 1)
+        self.assertEqual(self.state.generate_ebook(video_ids=[CAPTION_ID, STORY_ID], max_videos=1)['telemetry']['video_count'], 1)
+        self.assertEqual(self.state.generate_ebook(video_ids=[CAPTION_ID]*30)['telemetry']['video_count'], 1)
+
+    def test_custom_video_nullable_metadata(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            record = {'video_id': 'NULL000001A', 'segments': _segments(),
+                      'metadata': {'title': 'Nullable metadata', 'author': None,
+                                   'shortDescription': None, 'lengthSeconds': 162}}
+            (root / 'custom_videos.json').write_text(json.dumps([record]), encoding='utf-8')
+            state = app_server.AppState(root)
+            self.assertIn(record['video_id'], state.abridged_by_id)
+            meta = state.raw_by_id[record['video_id']]['metadata']
+            self.assertEqual(meta['shortDescription'], '')
+            self.assertEqual(meta['author'], '')
+            self.assertEqual(meta['lengthSeconds'], '162')
+
+    def test_jpeg_svg_and_real_qr_structure(self):
+        import base64
+        import xml.etree.ElementTree as ET
+        p = self.publisher
+        for svg in [self.book['cover_svg'], *self.book['mockup_svgs'].values()]:
+            ET.fromstring(svg)
+        for e in self.book['exhibits']:
+            jpeg = base64.b64decode(e['jpeg_base64'])
+            self.assertTrue(jpeg.startswith(b'\xff\xd8\xff') and jpeg.endswith(b'\xff\xd9'))
+            self.assertEqual(pdf_generator._jpeg_dimensions(jpeg), (480, 272))
+            self.assertIn(b'\xff\xc0', jpeg)
+            ET.fromstring(e['svg_markup'])
+            matrix = e['qr_matrix']
+            self.assertEqual(len(matrix), 33)
+            self.assertTrue(all(len(row) == 33 and set(row) <= {0, 1} for row in matrix))
+            self.assertEqual(matrix[0][:7], [1]*7)
+            self.assertEqual(matrix[1][:7], [1, 0, 0, 0, 0, 0, 1])
+            self.assertEqual(matrix, p.qr_matrix(e['url']))
+        with patch.object(p.urllib.request, 'urlopen', side_effect=OSError('offline')):
+            exhibits = p.build_visual_evidence_exhibits(self.state.abridged_list, self.book['book_spec'], True)
+        self.assertTrue(all(e['jpeg_bytes'].startswith(b'\xff\xd8') for e in exhibits))
+        for candidate in (b'\xff\xd8\xff\xc0\x00\x11\xff\xd9',
+                          b'\xff\xd8\xff\xc0\x00\x11\x08\x00\x00\x00\x00\xff\xd9',
+                          bytes.fromhex('ffd8ffc00011080001ffd9')):
+            with self.subTest(candidate=candidate):
+                with patch.object(p.urllib.request, 'urlopen') as urlopen:
+                    urlopen.return_value.__enter__.return_value.read.return_value = candidate
+                    exhibits = p.build_visual_evidence_exhibits(
+                        self.state.abridged_list, self.book['book_spec'], fetch_thumbnails=True)
+                self.assertTrue(exhibits)
+                for exhibit in exhibits:
+                    self.assertNotEqual(exhibit['jpeg_bytes'], candidate)
+                    self.assertEqual(pdf_generator._jpeg_dimensions(exhibit['jpeg_bytes']), (480, 272))
+                with self.assertRaises(ValueError):
+                    pdf_generator._jpeg_dimensions(candidate)
+
+    def test_illustrated_pdf_modes_and_xref(self):
+        for mode, box in [('8.5x11', b'[0 0 612 792]'), ('6x9', b'[0 0 432 648]'), ('workbook', b'[0 0 612 792]')]:
+            blob = self.publisher.render_ebook_pdf_bytes(self.book, mode)
+            for marker in [b'%PDF-1.4', b'/Subtype /Image', b'/Filter /DCTDecode', b'/Subtype /Link',
+                           b'/Annots [', b'/S /URI', b'/Im1 Do', b'Page 1 of', box]:
+                self.assertIn(marker, blob)
+            start = int(re.search(rb'startxref\n(\d+)', blob)[1])
+            self.assertEqual(blob[start:start+4], b'xref')
+            entries = blob[start:].splitlines()[3:]
+            for number, entry in enumerate(entries, 1):
+                if entry == b'trailer':
+                    break
+                offset = int(entry[:10])
+                self.assertTrue(blob[offset:].startswith(f'{number} 0 obj'.encode()))
+            if mode == '6x9':
+                self.assertIn(b'1 0 0 1 58.00', blob)
+                self.assertIn(b'1 0 0 1 40.00', blob)
+            if mode == 'workbook':
+                self.assertIn(b'Finding:', blob)
+        with self.assertRaises(ValueError):
+            self.publisher.render_ebook_pdf_bytes(self.book, 'bad')
+
+    def test_long_title_fits_6x9_cover(self):
+        book = self.publisher.build_full_ebook(
+            self.state.abridged_list, custom_title='Research Methods and Field Practice ' * 8)
+        with patch.object(pdf_generator, '_text', wraps=pdf_generator._text) as text:
+            blob = self.publisher.render_ebook_pdf_bytes(book, '6x9')
+        self.assertTrue(blob.startswith(b'%PDF-1.4'))
+        calls = [call.args for call in text.call_args_list]
+        toc = next(i for i, args in enumerate(calls) if args[2] == 'Table of Contents')
+        cover = calls[:toc]
+        self.assertEqual(sum(args[4] == 23 for args in cover), 5)
+        self.assertLessEqual(sum(args[4] == 11 for args in cover), 3)
+        self.assertTrue(all(args[0] == 58 for args in cover))
+        self.assertTrue(all(65 + args[4] <= args[1] < 648 for args in cover))
+        self.assertTrue(all(a[1] > b[1] for a, b in zip(cover, cover[1:])))
+        for label in book['telemetry']:
+            self.assertTrue(any(args[2].startswith(label.replace('_', ' ').upper() + ':') for args in cover))
+
+    def test_custom_title_epub_xml_cleaning(self):
+        import zipfile
+        import xml.etree.ElementTree as ET
+        auto_spec = self.publisher.auto_design_book_spec(None, self.state.abridged_list)
+        for custom_title in ('\x01', '   '):
+            with self.subTest(custom_title=custom_title):
+                book = self.publisher.build_full_ebook(
+                    self.state.abridged_list, custom_title=custom_title)
+                self.assertTrue(book['title'].strip())
+                self.assertEqual(book['title'], auto_spec['title'])
+                self.assertEqual(book['book_spec']['title'], auto_spec['title'])
+                self.assertEqual(book['book_spec']['isbn_placeholder'], auto_spec['isbn_placeholder'])
+        book = self.publisher.build_full_ebook(
+            self.state.abridged_list, custom_title='Broken' + chr(1) + 'Title')
+        self.assertEqual(book['title'], 'BrokenTitle')
+        self.assertEqual(book['book_spec']['title'], 'BrokenTitle')
+        blob = self.publisher.render_ebook_epub_bytes(book)
+        with zipfile.ZipFile(io.BytesIO(blob)) as archive:
+            for name in archive.namelist():
+                if name.endswith(('.xml', '.opf', '.xhtml', '.ncx', '.svg')):
+                    ET.fromstring(archive.read(name))
+
+    def test_epub_structure_xml_manifest_and_links(self):
+        import zipfile
+        import xml.etree.ElementTree as ET
+        import posixpath
+        blob = self.publisher.render_ebook_epub_bytes(self.book)
+        with zipfile.ZipFile(io.BytesIO(blob)) as archive:
+            self.assertEqual(archive.namelist()[0], 'mimetype')
+            self.assertEqual(archive.getinfo('mimetype').compress_type, zipfile.ZIP_STORED)
+            self.assertEqual(archive.read('mimetype'), b'application/epub+zip')
+            self.assertIsNone(archive.testzip())
+            opf = ET.fromstring(archive.read('OEBPS/content.opf'))
+            self.assertEqual(opf.attrib['version'], '3.0')
+            ns = {'o': 'http://www.idpf.org/2007/opf'}
+            manifest = opf.find('o:manifest', ns)
+            ids = {item.attrib['id'] for item in manifest}
+            for item in manifest:
+                self.assertIn('OEBPS/' + item.attrib['href'], archive.namelist())
+            for item in opf.find('o:spine', ns):
+                self.assertIn(item.attrib['idref'], ids)
+            for name in archive.namelist():
+                if name.endswith(('.xml', '.opf', '.xhtml', '.ncx', '.svg')):
+                    root = ET.fromstring(archive.read(name))
+                    if name.endswith('.xhtml'):
+                        for node in root.iter():
+                            for attr in ('src', 'href'):
+                                link = node.get(attr)
+                                if link and not link.startswith(('http:', 'https:', '#')):
+                                    self.assertIn(posixpath.normpath(posixpath.join(posixpath.dirname(name), link)), archive.namelist())
+            self.assertIn(b'&amp;t=', archive.read('OEBPS/chapter_3.xhtml'))
+
+    def test_marketplace_bundle(self):
+        import zipfile
+        blob = self.publisher.render_marketplace_bundle_zip(self.book)
+        with zipfile.ZipFile(io.BytesIO(blob)) as archive:
+            self.assertIsNone(archive.testzip())
+            names = archive.namelist()
+            self.assertIn('01-Amazon-KDP/Amazon-Kindle-Edition.epub', names)
+            self.assertIn('01-Amazon-KDP/Amazon-KDP-Print-Paperback-6x9.pdf', names)
+            self.assertIn('02-Etsy-Digital-Product-Bundle/Printable-Action-Workbook-8.5x11.pdf', names)
+            self.assertIn('03-eBay-Listing-Bundle/ebay-listing-template.html', names)
+            self.assertIn('04-Source-Manuscript-and-Evidence/manuscript.md', names)
+            self.assertEqual(sum('/Mockups/' in n for n in names), 5)
+            self.assertNotIn('READ-BEFORE-PUBLISHING.txt', names)
+            for name in names:
+                if name.endswith('.json'):
+                    json.loads(archive.read(name))
+                if name.endswith('.pdf'):
+                    self.assertIn(b'/Subtype /Image', archive.read(name))
+
+
+class PublishingServerTest(ServerTest):
+    def test_ebook_generate_empty_video_ids(self):
+        status, body = self._call('/api/ebook/generate?video_ids=')
+        self.assertEqual(status, 400)
+
+    def test_favicon(self):
+        status, body = self._call('/favicon.ico', raw=True)
+        self.assertEqual(status, 200)
+        self.assertIn(b'<svg', body)
+
+    def test_all_publishing_routes_get_and_post(self):
+        from src import topic_discovery
+        with patch.object(topic_discovery, 'search_youtube_query', return_value=[]):
+            for payload, suffix in [({'topics': 'probate', 'auto_ingest': False}, ''), (None, '?topics=probate&auto_ingest=false')]:
+                status, data = self._call('/api/topic-discover' + suffix, payload)
+                self.assertEqual(status, 200)
+                self.assertEqual(len(data['video_ids']), 2)
+                self.assertEqual(len(data['videos']), 2)
+            for payload, suffix in [({'topics': 'probate', 'discover_first': True}, ''), (None, '?topics=probate')]:
+                status, book = self._call('/api/ebook/generate' + suffix, payload)
+                self.assertEqual(status, 200)
+                self.assertEqual(len(book['chapters']), 5)
+        for route, signature in [('pdf', b'%PDF-1.4'), ('epub', b'PK'), ('bundle', b'PK')]:
+            for payload in (None, {'video_ids': [CAPTION_ID]}):
+                status, data = self._call('/api/ebook/' + route, payload, raw=True)
+                self.assertEqual(status, 200)
+                self.assertTrue(data.startswith(signature))
+        for mode in ('6x9', 'workbook'):
+            status, data = self._call('/api/ebook/pdf?trim=' + mode, raw=True)
+            self.assertEqual(status, 200)
+            self.assertIn(b'/Subtype /Link', data)
+        with urllib.request.urlopen(f'http://127.0.0.1:{self.port}/api/ebook/epub') as response:
+            self.assertEqual(response.headers['Content-Type'], 'application/epub+zip')
+            self.assertIn('illustrated-ebook-kindle.epub', response.headers['Content-Disposition'])
+
+    def test_publishing_invalid_parameters(self):
+        for payload in ({'topics': 3}, {'topics': [False]}, {'trim': []}, {'pdf_mode': 'a4'},
+                        {'discover_first': 'true'}, {'auto_ingest': 1}, {'use_codex_cli': None},
+                        {'max_videos': True}, {'max_videos': 0}, {'max_videos': 101}, {'video_ids': []}):
+            self.assertEqual(self._call('/api/ebook/generate', payload)[0], 400)
+        self.assertEqual(self._call('/api/topic-discover', {'topics': ''})[0], 400)
+        for query in ('max_videos=x', 'auto_ingest=yes', 'trim=invalid'):
+            self.assertEqual(self._call('/api/ebook/pdf?' + query)[0], 400)
+
+    def test_studio_controls_and_legacy_ids(self):
+        status, body = self._call('/', raw=True)
+        self.assertEqual(status, 200)
+        for ident in ('ingest-panel', 'tab-library', 'tab-combine', 'tab-agent', 'view-library',
+                      'view-combine', 'view-agent', 'tab-ebook', 'view-ebook', 'ebook-body',
+                      'ebook-topics-input', 'ebook-topic-presets', 'ebook-discover-youtube',
+                      'ebook-use-chatgpt-pro', 'btn-build-autonomous-ebook', 'btn-discover-topics-only',
+                      'btn-open-ebook-studio', 'ebook-download-bar', 'btn-download-ebook-bundle',
+                      'btn-download-ebook-pdf-digital', 'btn-download-ebook-pdf-kdp',
+                      'btn-download-ebook-epub', 'btn-download-ebook-workbook'):
+            self.assertEqual(body.count(('id="' + ident + '"').encode()), 1)
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)
