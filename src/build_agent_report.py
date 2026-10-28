@@ -125,20 +125,42 @@ def mentions(text):
 
 class EvidenceIndex:
     def __init__(self, videos):
-        self.videos = videos
+        self.videos = []
         self.rows = []
         self.by_video = defaultdict(list)
         self.postings = defaultdict(set)
+        self.video_ids = set()
         for video in videos:
-            video['domain'] = classify(video)
-            video['tools'] = mentions(video['full_text'] + '\n' + video['metadata'].get('shortDescription', ''))
-            for window in windows(video):
-                row = dict(window, video=video, terms=Counter(tokens(window['text'])))
-                idx = len(self.rows)
-                self.rows.append(row)
-                self.by_video[video['index']].append(row)
-                for word in row['terms']:
-                    self.postings[word].add(idx)
+            self.add_record(video)
+
+    def add_record(self, video):
+        if video['video_id'] in self.video_ids:
+            return
+        video['domain'] = classify(video)
+        video['tools'] = mentions(video['full_text'] + '\n' + video['metadata'].get('shortDescription', ''))
+        rows = [dict(window, video=video, terms=Counter(tokens(window['text'])))
+                for window in windows(video)]
+        for row in rows:
+            idx = len(self.rows)
+            self.rows.append(row)
+            self.by_video[video['index']].append(row)
+            for word in row['terms']:
+                self.postings[word].add(idx)
+        self.videos.append(video)
+        self.video_ids.add(video['video_id'])
+
+    def search(self, text, top_k=18, allowed_video_ids=None):
+        allowed = None if allowed_video_ids is None else set(allowed_video_ids)
+        query = set(tokens(text))
+        hits = []
+        for row in self.rows:
+            if allowed is not None and row['video']['video_id'] not in allowed:
+                continue
+            overlap = sorted(query & row['terms'].keys())
+            if overlap:
+                hits.append(dict(row, score=sum(row['terms'][w] for w in overlap),
+                                 matched_terms=overlap))
+        return sorted(hits, key=lambda row: -row['score'])[:max(0, top_k)]
 
     def query(self, text, limit=4, domain=None):
         query = set(tokens(text))
@@ -146,12 +168,12 @@ class EvidenceIndex:
         for word in query:
             candidates.update(self.postings.get(word, ()))
         ranked = []
-        for idx in candidates:
+        for idx in sorted(candidates):
             row = self.rows[idx]
-            overlap = query & row['terms'].keys()
+            overlap = sorted(query & row['terms'].keys())
             if len(overlap) < min(2, len(query)):
                 continue
-            score = sum(math.log(1 + len(self.rows) / (1 + len(self.postings[w]))) * (1 + math.log(row['terms'][w])) for w in overlap)
+            score = math.fsum(math.log(1 + len(self.rows) / (1 + len(self.postings[w]))) * (1 + math.log(row['terms'][w])) for w in overlap)
             if domain == row['video']['domain']:
                 score *= 1.15
             ranked.append((score, idx))

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ProTip Abridger &amp; Autonomous Agent Report Studio</title>
+<style>
+:root{--bg:#060913;--glass:#0D1424;--cyan:#00F0FF;--emerald:#10B981;--violet:#8B5CF6;--gold:#F59E0B;--rose:#F43F5E;--txt:#E8F0FC;--dim:#8296B4;--line:rgba(0,240,255,.16)}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--txt);font:15px/1.55 Inter,-apple-system,"Segoe UI",Roboto,sans-serif;padding-bottom:90px}
+body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;background:radial-gradient(900px 520px at 10% -8%,rgba(0,240,255,.15),transparent 62%),radial-gradient(820px 520px at 90% -4%,rgba(139,92,246,.17),transparent 62%)}
+.wrap{position:relative;z-index:1;max-width:1500px;margin:0 auto;padding:0 26px}
+.glass{background:linear-gradient(160deg,rgba(13,20,36,.94),rgba(9,14,27,.9));border:1px solid var(--line);border-radius:18px;box-shadow:0 18px 50px rgba(0,0,0,.45)}
+h1{font-size:1.85rem;font-weight:800;letter-spacing:.055em;background:linear-gradient(92deg,var(--cyan),var(--violet) 55%,var(--emerald));-webkit-background-clip:text;background-clip:text;color:transparent}
+header{padding:34px 0 10px}
+.sub{color:var(--dim);margin-top:8px;letter-spacing:.14em;font-size:.72rem;text-transform:uppercase}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin:22px 0 26px}
+.stat{padding:22px 20px;position:relative;overflow:hidden;transition:transform .25s,box-shadow .25s,border-color .25s}
+.stat:hover{transform:translateY(-4px);border-color:var(--cyan);box-shadow:0 0 34px rgba(0,240,255,.22)}
+.stat b{display:block;font-size:2.4rem;font-weight:800;line-height:1.05;letter-spacing:-.02em}
+.stat span{display:block;margin-top:8px;font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--dim)}
+.stat::after{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--cyan)}
+.s2::after{background:var(--emerald)}.s3::after{background:var(--gold)}.s4::after{background:var(--violet)}
+.s1 b{color:var(--cyan)}.s2 b{color:var(--emerald)}.s3 b{color:var(--gold)}.s4 b{color:var(--violet)}
+section{padding:22px;margin-bottom:22px}
+h2{font-size:.82rem;letter-spacing:.17em;text-transform:uppercase;color:var(--cyan);margin-bottom:14px}
+h3{font-size:.95rem;letter-spacing:.06em;text-transform:uppercase;color:var(--emerald);margin:20px 0 10px}
+textarea,input[type=text]{width:100%;background:#070C18;border:1px solid var(--line);border-radius:12px;color:var(--txt);padding:13px 15px;font:inherit;outline:none;transition:border-color .2s,box-shadow .2s}
+textarea{min-height:104px;resize:vertical;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13px}
+textarea:focus,input[type=text]:focus{border-color:var(--cyan);box-shadow:0 0 0 3px rgba(0,240,255,.13)}
+.row{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:12px}
+button{font:inherit;font-weight:700;cursor:pointer;border-radius:11px;padding:11px 17px;border:1px solid var(--line);background:rgba(255,255,255,.04);color:var(--txt);transition:transform .18s,box-shadow .22s,border-color .22s,background .22s}
+button:hover{transform:translateY(-2px);border-color:var(--cyan);box-shadow:0 0 22px rgba(0,240,255,.26)}
+button:disabled{opacity:.45;cursor:not-allowed;transform:none;box-shadow:none}
+.primary{background:linear-gradient(94deg,var(--cyan),var(--violet));border:0;color:#04101a}
+.go{background:linear-gradient(94deg,var(--emerald),var(--cyan));border:0;color:#04101a}
+.ghost{background:transparent}
+.tabs{display:flex;flex-wrap:wrap;gap:10px;margin:4px 0 18px}
+.tab{letter-spacing:.07em;text-transform:uppercase;font-size:.74rem}
+.tab.on{background:linear-gradient(94deg,rgba(0,240,255,.2),rgba(139,92,246,.2));border-color:var(--cyan);color:#fff;box-shadow:0 0 24px rgba(0,240,255,.2)}
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.pill{font-size:.72rem;padding:7px 13px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.03);cursor:pointer;color:var(--dim);transition:all .2s}
+.pill:hover{color:#fff;border-color:var(--violet)}
+.pill.on{background:rgba(139,92,246,.22);border-color:var(--violet);color:#fff}
+.status{font-size:.82rem;color:var(--dim);margin-top:11px;min-height:20px}
+.status.ok{color:var(--emerald)}.status.err{color:var(--rose)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(355px,1fr));gap:16px}
+.card{padding:17px;display:flex;flex-direction:column;gap:9px;transition:transform .22s,box-shadow .25s,border-color .25s}
+.card:hover{transform:translateY(-5px);border-color:var(--cyan);box-shadow:0 0 32px rgba(0,240,255,.17)}
+.card.pick{border-color:var(--emerald);box-shadow:0 0 26px rgba(16,185,129,.22)}
+.chead{display:flex;flex-wrap:wrap;gap:7px;align-items:center}
+.chead input{width:19px;height:19px;accent-color:var(--emerald);cursor:pointer}
+.badge{font-size:.62rem;letter-spacing:.11em;text-transform:uppercase;padding:4px 9px;border-radius:999px;border:1px solid var(--line);color:var(--dim)}
+.b-idx{color:var(--cyan);border-color:rgba(0,240,255,.4);font-family:ui-monospace,monospace}
+.b-dom{color:var(--violet);border-color:rgba(139,92,246,.45)}
+.b-tip{color:var(--gold);border-color:rgba(245,158,11,.5);background:rgba(245,158,11,.1);font-weight:700}
+.ctitle{font-size:1.02rem;font-weight:700;line-height:1.3}
+.cmeta{font-size:.76rem;color:var(--dim)}
+.snip{font-size:.83rem;color:#B9C8DE;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.tip{border-left:2px solid var(--gold);background:rgba(245,158,11,.07);border-radius:0 9px 9px 0;padding:8px 11px;font-size:.82rem}
+.tip .cat{font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);font-weight:700}
+.tip a{color:var(--cyan);text-decoration:none;font-family:ui-monospace,monospace;font-size:.7rem;margin-left:7px}
+.tip a:hover{text-decoration:underline}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tag{font-size:.65rem;padding:3px 8px;border-radius:7px;background:rgba(0,240,255,.08);border:1px solid rgba(0,240,255,.2);color:#9FE9F5}
+.tag.st{background:rgba(244,63,94,.09);border-color:rgba(244,63,94,.26);color:#FFB3C0}
+.cfoot{display:flex;gap:9px;margin-top:auto;padding-top:5px}
+.cfoot button{flex:1;font-size:.74rem;padding:9px 10px}
+.mini{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:13px;margin:14px 0}
+.mini div{padding:15px;border-radius:14px;background:rgba(255,255,255,.035);border:1px solid var(--line)}
+.mini b{display:block;font-size:1.7rem;font-weight:800;color:var(--cyan)}
+.mini span{font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;color:var(--dim)}
+ul.list{list-style:none;display:flex;flex-direction:column;gap:8px}
+ul.list li{padding:10px 13px;border-radius:10px;background:rgba(255,255,255,.035);border-left:2px solid var(--emerald);font-size:.86rem}
+.md{background:#070C18;border:1px solid var(--line);border-radius:14px;padding:18px;max-height:460px;overflow:auto;font-size:.86rem}
+.md h4{color:var(--cyan);margin:14px 0 6px;font-size:.9rem}
+.md li{margin-left:18px}
+.hide{display:none!important}
+.modal{position:fixed;inset:0;z-index:50;background:rgba(3,6,14,.86);backdrop-filter:blur(7px);display:flex;align-items:flex-start;justify-content:center;padding:34px 18px;overflow:auto}
+.modal .glass{max-width:1020px;width:100%;padding:26px}
+.x{position:sticky;top:0;float:right}
+.empty{color:var(--dim);padding:34px;text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>PROTIP ABRIDGER &amp; AUTONOMOUS AGENT REPORT STUDIO</h1>
+  <div class="sub">Transcript Ingestion &middot; ProTip Extraction &middot; Multi-Video Synthesis &middot; Custom PDF Intelligence</div>
+</header>
+
+<div class="stats">
+  <div class="glass stat s1"><b id="stat-total-videos">0</b><span>Videos in Library</span></div>
+  <div class="glass stat s2"><b id="stat-selected-count">0</b><span>Selected to Combine</span></div>
+  <div class="glass stat s3"><b id="stat-total-protips">0</b><span>Expert ProTips Extracted</span></div>
+  <div class="glass stat s4"><b id="stat-total-words">0</b><span>Corpus Words &amp; Hours</span></div>
+</div>
+
+<section class="glass" id="ingest-panel">
+  <h2>1 &middot; Drop Video Links &amp; Pull Transcripts</h2>
+  <textarea id="ingest-urls-input" placeholder="Paste one or multiple YouTube URLs or IDs (one per line, or comma separated)&#10;https://www.youtube.com/watch?v=9Q4qYeK5DTg&#10;https://youtu.be/MVCNlj7HQBQ&#10;aUiod-Jy68U"></textarea>
+  <div class="row">
+    <button id="btn-ingest" class="primary">Pull Transcripts &amp; Generate ProTip Abridged</button>
+    <button id="btn-sample-links" class="ghost">Load Sample Links</button>
+  </div>
+  <div class="status" id="ingest-status"></div>
+</section>
+
+<div class="tabs">
+  <button class="tab on" id="tab-library">1. Video Library &amp; Abridged ProTips</button>
+  <button class="tab" id="tab-combine">2. Combined Multi-Video Synthesis</button>
+  <button class="tab" id="tab-agent">3. Custom Agent PDF Report Studio</button>
+</div>
+
+<section class="glass">
+  <h2>Selection &amp; Filters</h2>
+  <input type="text" id="search-input" placeholder="Live search titles, channels, video IDs, domains, ProTips, statutes &amp; forms, tools &amp; portals...">
+  <div class="pills" id="domain-pills"></div>
+  <div class="row">
+    <button id="btn-select-all" class="ghost">Select All</button>
+    <button id="btn-deselect-all" class="ghost">Deselect All</button>
+    <button id="btn-select-filtered" class="ghost">Select Visible</button>
+    <button id="btn-invert-selection" class="ghost">Invert</button>
+    <button id="btn-combine" class="go">Combine Selected (0)</button>
+    <button id="btn-open-agent-studio" class="primary">Agent PDF Report</button>
+  </div>
+  <div class="status" id="filter-status"></div>
+</section>
+
+<section class="glass" id="view-library">
+  <h2>Video Library &amp; Abridged ProTips</h2>
+  <div class="grid" id="video-grid"></div>
+  <div class="row" id="show-all-row"></div>
+</section>
+
+<section class="glass hide" id="view-combine">
+  <h2>Combined Multi-Video Synthesis</h2>
+  <div id="combine-body"><div class="empty">Select videos in the library, then press <b>Combine Selected</b> to build the unified ProTip &amp; Finite Details playbook.</div></div>
+</section>
+
+<section class="glass hide" id="view-agent">
+  <h2>Custom Agent PDF Report Studio</h2>
+  <input type="text" id="agent-prompt-input" placeholder="Type any topic or request, e.g. California ClaimIt.ca.gov &amp; Probate Code 13101 Small Estate + Table of Heirship ProTips">
+  <div class="pills" id="agent-presets"></div>
+  <label class="row" style="font-size:.84rem;color:var(--dim)"><input type="checkbox" id="agent-scope-selected" checked style="width:18px;height:18px;accent-color:var(--emerald)"> Scope to selected videos only (uncheck to mine the entire library)</label>
+  <div class="row">
+    <button id="btn-run-agent-report" class="go">Generate Custom Agent Report</button>
+    <button id="btn-download-agent-pdf" class="primary">Download Custom PDF Report</button>
+  </div>
+  <div class="status" id="agent-status"></div>
+  <div id="agent-body"></div>
+</section>
+</div>
+
+<div class="modal hide" id="video-modal"><div class="glass"><button class="x ghost" id="modal-close">Close &times;</button><div id="modal-body"></div></div></div>
+
+<script>
+const S={videos:[],sel:new Set(),domain:"All Domains",q:"",showAll:false,combined:null,agent:null,totalHours:0,modalSeq:0,combinedIds:[],agentRequest:null};
+const PRESETS=["California ClaimIt.ca.gov &amp; Probate Code 13101 Small Estate + Table of Heirship ProTips","Unclaimed Property Claim Packet: Required Forms, Proofs &amp; Deadlines","Heirship Research Workflow: Vital Records, Obituaries &amp; Chain of Title","Probate Thresholds, Affidavit Limits &amp; Statutory Citations by State","Skip Tracing Tools, Portals &amp; Owner Outreach Scripts"];
+const $=i=>document.getElementById(i);
+const esc=s=>String(s==null?"":s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const arr=v=>Array.isArray(v)?v:(v==null||v===""?[]:[v]);
+const num=n=>(Number(n)||0).toLocaleString();
+const pick=(o,...k)=>{for(const x of k){if(o&&o[x]!=null&&o[x]!=="")return o[x];}return "";};
+function tip(t){if(t==null)return{text:"",cat:"",ts:""};if(typeof t==="string")return{text:t,cat:"",ts:""};return{video_id:t.video_id,timestamp_url:t.timestamp_url||t.link,start:t.start??t.seconds,text:String(pick(t,"text","tip","pro_tip","detail","summary","excerpt")),cat:String(pick(t,"category","topic","domain")),ts:String(pick(t,"timestamp","time","start","start_time"))};}
+function toSec(ts){if(ts===""||ts==null)return null;if(typeof ts==="number")return Math.max(0,Math.floor(ts));const p=String(ts).trim().replace(/[\[\]]/g,"").split(":").map(Number);if(!p.length||p.some(n=>isNaN(n)))return null;return Math.floor(p.reduce((a,b)=>a*60+b,0));}
+function tsHtml(vid,ts){const s=toSec(ts);if(s===null)return "";return '<a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v='+encodeURIComponent(vid)+"&t="+s+'s">'+esc(ts)+"</a>";}
+function tipLink(t,videoId){const url=t.timestamp_url||('https://www.youtube.com/watch?v='+encodeURIComponent(t.video_id||videoId)+'&t='+Math.floor(t.start??toSec(t.ts)??0)+'s');return '<a target="_blank" rel="noopener" href="'+esc(url)+'">'+esc(t.ts||'Watch')+'</a>';}
+function details(v){const d=v.master_finite_details||v.finite_details||{};return {tools:d.tools_and_portals||[],statutes:d.statutes_and_forms||d.statutes_codes_and_forms||[],numbers:d.numbers_thresholds_deadlines||d.thresholds_and_deadlines||[],steps:d.unified_workflow_steps||d.sops_and_checklists||d.tactical_checklist||[]};}
+function detailHtml(d){return tagBlock('Tools & Portals',d.tools)+tagBlock('Statutes & Forms',d.statutes,'st')+tagBlock('Numbers / Thresholds',d.numbers)+listBlock('Tactical Checklist / Workflow Steps',d.steps);}
+async function jget(url){const res=await fetch(url);const data=await res.json();if(!res.ok)throw new Error(data.error||('HTTP '+res.status));return data;}
+function tipsOf(v){return arr(pick(v,"pro_tips","protips","tips")).map(tip).filter(t=>t.text);}
+function wordsOf(v){return Number(pick(v,"word_count","words","transcript_words"))||0;}
+function say(el,msg,cls){el.className="status"+(cls?" "+cls:"");el.textContent=msg;}
+async function jpost(url,body){const r=await fetch(url,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(body)});const t=await r.text();let d=null;try{d=t?JSON.parse(t):null;}catch(e){}if(!r.ok)throw new Error((d&&(d.error||d.message))||t.slice(0,180)||("HTTP "+r.status));return d||{};}
+function saveBlob(b,name){const u=URL.createObjectURL(b),a=document.createElement("a");a.href=u;a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),5000);}
+async function pdf(body,name){const r=await fetch("/api/report/pdf",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(body)});if(!r.ok)throw new Error((await r.text()).slice(0,180)||("HTTP "+r.status));saveBlob(await r.blob(),name);}
+function md2html(t){if(!t)return '<div class="empty">No markdown returned.</div>';const out=[];let inUl=false;String(t).split(/\r?\n/).forEach(l=>{const h=l.match(/^(#{1,6})\s+(.*)$/),b=l.match(/^\s*[-*+]\s+(.*)$/);const ib=s=>esc(s).replace(/\*\*(.+?)\*\*/g,"<b>$1</b>").replace(/`(.+?)`/g,"<code>$1</code>");if(b){if(!inUl){out.push("<ul>");inUl=true;}out.push("<li>"+ib(b[1])+"</li>");return;}if(inUl){out.push("</ul>");inUl=false;}if(h)out.push("<h4>"+ib(h[2])+"</h4>");else if(l.trim())out.push("<p>"+ib(l)+"</p>");});if(inUl)out.push("</ul>");return out.join("");}
+function listBlock(title,items,map){const a=arr(items);if(!a.length)return "";return "<h3>"+esc(title)+" ("+a.length+')</h3><ul class="list">'+a.map(x=>"<li>"+(map?map(x):esc(typeof x==="string"?x:(tip(x).text||JSON.stringify(x))))+"</li>").join("")+"</ul>";}
+function tagBlock(title,items,cls){const a=arr(items).filter(Boolean);if(!a.length)return "";return "<h3>"+esc(title)+" ("+a.length+')</h3><div class="tags">'+a.map(x=>'<span class="tag '+(cls||"")+'">'+esc(typeof x==="string"?x:(tip(x).text||""))+"</span>").join("")+"</div>";}
+function miniBlock(pairs){return '<div class="mini">'+pairs.map(p=>"<div><b>"+esc(p[1])+"</b><span>"+esc(p[0])+"</span></div>").join("")+"</div>";}
+function tipList(title,items,vid){const a=arr(items).map(tip).filter(t=>t.text);if(!a.length)return "";return "<h3>"+esc(title)+" ("+a.length+')</h3><ul class="list">'+a.map(t=>'<li><div class="cat" style="color:var(--gold);font-size:.62rem;letter-spacing:.1em;text-transform:uppercase">'+esc(t.cat||"PROTIP")+"</div>"+esc(t.text)+tipLink(t,vid||"")+"</li>").join("")+"</ul>";}
+
+function stats(){const vs=S.videos;$("stat-total-videos").textContent=num(vs.length);$("stat-selected-count").textContent=num(S.sel.size);$("stat-total-protips").textContent=num(vs.reduce((a,v)=>a+tipsOf(v).length,0));const w=vs.reduce((a,v)=>a+wordsOf(v),0);$("stat-total-words").textContent=num(w)+" / "+Number(S.totalHours).toFixed(2)+"h";$("btn-combine").textContent="Combine Selected ("+S.sel.size+")";}
+function hay(v){return [pick(v,"title"),pick(v,"author","channel","uploader"),pick(v,"video_id","id"),pick(v,"domain_name","domain"),pick(v,"executive_summary","summary"),arr(pick(v,"pro_tips","tips")).map(t=>tip(t).text+" "+tip(t).cat).join(" "),arr(pick(v,"statutes_and_forms","statutes")).map(x=>typeof x==="string"?x:tip(x).text).join(" "),arr(pick(v,"tools_and_portals","tools")).map(x=>typeof x==="string"?x:tip(x).text).join(" ")].join(" ").toLowerCase();}
+function filtered(){const q=S.q.trim().toLowerCase();return S.videos.filter(v=>(S.domain==="All Domains"||String(pick(v,"domain_name","domain"))===S.domain)&&(!q||hay(v).includes(q)));}
+function renderPills(){const ds=[...new Set(S.videos.map(v=>String(pick(v,"domain_name","domain"))).filter(Boolean))].sort();$("domain-pills").innerHTML=["All Domains",...ds].map(d=>'<span class="pill'+(S.domain===d?" on":"")+'" data-d="'+esc(d)+'">'+esc(d)+"</span>").join("");}
+function card(v,i){const id=String(pick(v,"video_id","id")),ts=tipsOf(v),on=S.sel.has(id);
+  return '<div class="glass card'+(on?" pick":"")+'" data-id="'+esc(id)+'"><div class="chead"><input type="checkbox" class="cb"'+(on?" checked":"")+'><span class="badge b-idx">#'+String(i+1).padStart(3,"0")+'</span><span class="badge b-dom">'+esc(pick(v,"domain_name","domain")||"General")+'</span><span class="badge">'+esc(pick(v,"duration_string","duration")||"--:--")+'</span><span class="badge">'+num(wordsOf(v))+' w</span><span class="badge b-tip">'+ts.length+' ProTips</span></div>'
+  +'<div class="ctitle">'+esc(pick(v,"title")||id)+'</div><div class="cmeta">'+esc(pick(v,"author","channel","uploader")||"Unknown channel")+" &middot; "+esc(id)+'</div><div class="snip">'+esc(pick(v,"executive_summary","summary","abridged_summary")||"No abridged summary generated yet.")+"</div>"
+  +ts.slice(0,2).map(t=>'<div class="tip"><div class="cat">'+esc(t.cat||"PROTIP")+tipLink(t,id)+"</div>"+esc(t.text)+"</div>").join("")
+  +'<div class="tags">'+arr(pick(v,"statutes_and_forms","statutes")).slice(0,3).map(x=>'<span class="tag st">'+esc(typeof x==="string"?x:tip(x).text)+"</span>").join("")+arr(pick(v,"tools_and_portals","tools")).slice(0,3).map(x=>'<span class="tag">'+esc(typeof x==="string"?x:tip(x).text)+"</span>").join("")+"</div>"
+  +'<div class="cfoot"><button class="btn-inspect go">View Abridged + ProTips</button><button class="btn-card-pdf ghost">PDF</button></div></div>';}
+function renderGrid(){const f=filtered(),cap=S.showAll?f.length:Math.min(60,f.length);$("video-grid").innerHTML=f.length?f.slice(0,cap).map(card).join(""):'<div class="empty">No videos match the current search or domain filter.</div>';
+  $("show-all-row").innerHTML=(!S.showAll&&f.length>60)?'<button id="btn-show-all" class="ghost">Show All '+f.length+" Videos</button>":"";
+  const b=$("btn-show-all");if(b)b.onclick=()=>{S.showAll=true;renderGrid();};
+  say($("filter-status"),"Showing "+cap+" of "+f.length+" filtered &middot; "+S.videos.length+" in library &middot; "+S.sel.size+" selected");$("filter-status").innerHTML="Showing <b>"+cap+"</b> of <b>"+f.length+"</b> filtered &middot; <b>"+S.videos.length+"</b> in library &middot; <b>"+S.sel.size+"</b> selected";stats();}
+async function loadVideos(){try{const d=await jget("/api/videos");S.totalHours=d.total_hours||0;S.videos=Array.isArray(d)?d:(d.videos||d.items||[]);renderPills();renderGrid();}catch(e){$("video-grid").innerHTML='<div class="empty">Failed to load library: '+esc(e.message)+"</div>";}}
+
+function showView(which){[["library","tab-library","view-library"],["combine","tab-combine","view-combine"],["agent","tab-agent","view-agent"]].forEach(([k,t,v])=>{$(t).classList.toggle("on",k===which);$(v).classList.toggle("hide",k!==which);});}
+$("tab-library").onclick=()=>showView("library");$("tab-combine").onclick=()=>showView("combine");$("tab-agent").onclick=()=>showView("agent");$("btn-open-agent-studio").onclick=()=>showView("agent");
+$("btn-sample-links").onclick=()=>{$("ingest-urls-input").value=["https://www.youtube.com/watch?v=9Q4qYeK5DTg","https://www.youtube.com/watch?v=MVCNlj7HQBQ","https://www.youtube.com/watch?v=aUiod-Jy68U"].join("\n");say($("ingest-status"),"3 sample links loaded — press Pull Transcripts to ingest.","ok");};
+$("btn-ingest").onclick=async()=>{const val=$("ingest-urls-input").value.trim();if(!val){say($("ingest-status"),"Paste at least one YouTube URL or video ID.","err");return;}const b=$("btn-ingest");b.disabled=true;say($("ingest-status"),"Pulling transcripts and generating ProTip abridged reports...");try{const d=await jpost("/api/ingest",{urls:val});const ids=arr(d.results).filter(v=>v.status==='ok'||v.status==='cached').map(v=>v.video_id).filter(Boolean);await loadVideos();ids.forEach(i=>S.sel.add(i));renderGrid();showView("library");say($("ingest-status"),"Ingested "+num(d.ingested_count)+" video(s), "+num(d.cached_count)+" cached, "+num(d.failed_count)+" failed — available videos auto-selected for combining.",d.failed_count?'err':'ok');}catch(e){say($("ingest-status"),"Ingest failed: "+e.message,"err");}finally{b.disabled=false;}};
+$("search-input").addEventListener("input",e=>{S.q=e.target.value;S.showAll=false;renderGrid();});
+$("domain-pills").addEventListener("click",e=>{const p=e.target.closest(".pill");if(!p)return;S.domain=p.dataset.d;S.showAll=false;renderPills();renderGrid();});
+$("btn-select-all").onclick=()=>{S.videos.forEach(v=>S.sel.add(String(pick(v,"video_id","id"))));renderGrid();};
+$("btn-deselect-all").onclick=()=>{S.sel.clear();renderGrid();};
+$("btn-select-filtered").onclick=()=>{filtered().forEach(v=>S.sel.add(String(pick(v,"video_id","id"))));renderGrid();};
+$("btn-invert-selection").onclick=()=>{S.videos.forEach(v=>{const i=String(pick(v,"video_id","id"));S.sel.has(i)?S.sel.delete(i):S.sel.add(i);});renderGrid();};
+$("video-grid").addEventListener("click",async e=>{const c=e.target.closest(".card");if(!c)return;const id=c.dataset.id;
+  if(e.target.classList.contains("cb")){S.sel.has(id)?S.sel.delete(id):S.sel.add(id);c.classList.toggle("pick",S.sel.has(id));stats();renderGrid();return;}
+  if(e.target.classList.contains("btn-card-pdf")){try{await pdf({mode:'single',video_id:id},'protip-video.pdf');}catch(err){say($('filter-status'),'PDF failed: '+err.message,'err');}return;}
+  if(e.target.classList.contains("btn-inspect"))openModal(id);});
+
+function renderCombined(c){const fd=details(c),ids=S.combinedIds.slice();const t=c.telemetry||c.stats||c;const vids=c.video_count||arr(c.video_ids||c.videos).length||S.sel.size;
+  $("combine-body").innerHTML='<div class="row"><button id="btn-combine-pdf" class="primary">Download Combined PDF</button><button id="btn-combine-md" class="ghost">Download Markdown</button></div>'
+  +"<h3>"+esc(c.title||"Combined ProTip &amp; Finite Details Playbook")+"</h3>"
+  +miniBlock([["Videos Synthesized",num(vids)],["Master ProTips",num(arr(c.pro_tips||c.master_pro_tips).length||t.pro_tip_count||0)],["Finite Details",num(fd.tools.length+fd.statutes.length+fd.numbers.length+fd.steps.length)],["Corpus Words",num(t.total_words||c.word_count||0)],["Workflow Steps",num(fd.steps.length)]])
+  +tipList("Master ProTips Vault",c.pro_tips||c.master_pro_tips,"")
+  +"<h3>Master Finite Details Ledger</h3>"+detailHtml(fd)
+  +"<h3>Markdown Preview</h3><div class=\"md\">"+md2html(c.markdown||c.md||"")+"</div>";
+  $("btn-combine-pdf").onclick=async()=>{try{await pdf({mode:"markdown",markdown:c.markdown,video_ids:ids,title:c.title||"Combined ProTip & Finite Details Playbook"},"protip-combined-report.pdf");}catch(err){alert("PDF failed: "+err.message);}};
+  $("btn-combine-md").onclick=()=>saveBlob(new Blob([c.markdown||c.md||""],{type:"text/markdown"}),"protip-combined-report.md");}
+$("btn-combine").onclick=async()=>{if(!S.sel.size){say($("filter-status"),"Select at least one video to combine.","err");return;}const b=$("btn-combine");b.disabled=true;showView("combine");$("combine-body").innerHTML='<div class="empty">Synthesizing '+S.sel.size+" videos into one playbook...</div>";try{const ids=Array.from(S.sel);S.combined=await jpost("/api/combine",{video_ids:ids,title:"Combined ProTip & Finite Details Playbook"});S.combinedIds=ids;renderCombined(S.combined);}catch(e){$("combine-body").innerHTML='<div class="empty">Combine failed: '+esc(e.message)+"</div>";}finally{b.disabled=false;}};
+
+$("agent-presets").innerHTML=PRESETS.map(p=>'<span class="pill preset-chip">'+p+"</span>").join("");
+$("agent-presets").addEventListener("click",e=>{const c=e.target.closest(".preset-chip");if(c)$("agent-prompt-input").value=c.textContent;});
+function agentScopeIds(){return $("agent-scope-selected").checked?Array.from(S.sel):S.videos.map(v=>String(pick(v,"video_id","id")));}
+function renderAgent(r){const t=r.telemetry||r.stats||r;
+  $("agent-body").innerHTML=miniBlock([["Videos Matched",num(r.matched_video_count||0)],["ProTips Extracted",num(arr(r.pro_tips).length||t.pro_tip_count||0)],["Evidence Passages",num(arr(r.evidence_passages||r.passages||r.evidence||r.timestamped_passages).length)],["Relevance Score",esc(String(t.relevance_score!=null?t.relevance_score:"—"))]])
+  +tipList("Extracted ProTips",r.pro_tips,"")
+  +"<h3>Finite Details</h3>"+detailHtml(details(r))
+  +listBlock("Standard Operating Procedures",r.sops||r.standard_operating_procedures||r.procedures)
+  +listBlock("Timestamped Evidence Passages",r.evidence_passages||r.passages||r.evidence||r.timestamped_passages,x=>{const o=typeof x==="string"?{text:x,ts:""}:tip(x);const vid=(typeof x==="object"&&x)?String(pick(x,"video_id","id")):"";return esc(o.text)+tipLink(o,vid);})
+  +"<h3>Markdown Preview</h3><div class=\"md\">"+md2html(r.markdown||r.md||"")+"</div>";}
+$("btn-run-agent-report").onclick=async()=>{const p=$("agent-prompt-input").value.trim();if(!p){say($("agent-status"),"Type a custom topic or pick a preset chip.","err");return;}const b=$("btn-run-agent-report");b.disabled=true;say($("agent-status"),"Agent mining transcripts for: "+p);try{const request={prompt:p,video_ids:agentScopeIds()};S.agent=await jpost("/api/agent-report",request);S.agentRequest=request;renderAgent(S.agent);say($("agent-status"),"Custom agent report ready.","ok");}catch(e){say($("agent-status"),"Agent report failed: "+e.message,"err");}finally{b.disabled=false;}};
+$("btn-download-agent-pdf").onclick=async()=>{const p=$("agent-prompt-input").value.trim();if(!p&&!S.agent){say($("agent-status"),"Type a custom topic first.","err");return;}const b=$("btn-download-agent-pdf");b.disabled=true;say($("agent-status"),"Rendering custom PDF report...");try{await pdf(S.agent?{...S.agentRequest,mode:'markdown',markdown:S.agent.markdown,title:S.agent.title}:{mode:"agent",prompt:p,video_ids:agentScopeIds()},"protip-agent-report.pdf");say($("agent-status"),"Downloaded protip-agent-report.pdf","ok");}catch(e){say($("agent-status"),"PDF failed: "+e.message,"err");}finally{b.disabled=false;}};
+
+async function openModal(id){const seq=++S.modalSeq;const m=$("video-modal");m.classList.remove("hide");$("modal-body").innerHTML='<div class="empty">Loading abridged report...</div>';try{const d=await jget("/api/videos/"+encodeURIComponent(id)),v=d.video||d,fd=details(v);if(seq!==S.modalSeq)return;
+  $("modal-body").innerHTML="<h2>Abridged Summary &amp; Expert ProTips</h2><h3>"+esc(pick(v,"title")||id)+'</h3><div class="cmeta">'+esc(pick(v,"author","channel","uploader"))+" &middot; "+esc(id)+" &middot; "+esc(pick(v,"duration_string","duration"))+" &middot; "+num(wordsOf(v))+" words</div>"
+  +miniBlock([["ProTips",num(tipsOf(v).length)],["Tools &amp; Portals",num(fd.tools.length)],["Statutes &amp; Forms",num(fd.statutes.length)],["Chapters",num(arr(pick(v,"chapters","chronological_chapters")).length)]])
+  +"<h3>Abridged Summary</h3><p>"+esc(pick(v,"abridged_summary","executive_summary","summary")||"No summary available.")+"</p>"
+  +tipList("All Expert ProTips",pick(v,"pro_tips","tips"),id)
+  +"<h3>Finite Details</h3>"+detailHtml(fd)
+  +listBlock("Chronological Chapters",pick(v,"chapters","chronological_chapters"),x=>{const o=typeof x==="string"?{text:x,ts:""}:{text:String(pick(x,"title","text","heading")),ts:String(pick(x,"timestamp","start","time"))};return esc(o.text)+tsHtml(id,o.ts);})
+  +'<div class="row"><button id="modal-pdf" class="primary">Download Video PDF</button></div>';
+  $("modal-pdf").onclick=async()=>{try{await pdf({mode:'single',video_id:id},'protip-video.pdf');}catch(err){alert('PDF failed: '+err.message);}};
+}catch(e){if(seq!==S.modalSeq)return;$("modal-body").innerHTML='<div class="empty">Failed to load video: '+esc(e.message)+"</div>";}}
+function closeModal(){++S.modalSeq;$("video-modal").classList.add("hide");}
+$("modal-close").onclick=closeModal;
+$("video-modal").addEventListener("click",e=>{if(e.target.id==="video-modal")closeModal();});
+document.addEventListener("keydown",e=>{if(e.key==="Escape")closeModal();});
+loadVideos();
+</script>
+</body>
+</html>
