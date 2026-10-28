@@ -1,0 +1,4357 @@
+{
+  "index": 48,
+  "url": "https://www.youtube.com/watch?v=zz_ksXmJqyI",
+  "video_id": "zz_ksXmJqyI",
+  "status": "ok",
+  "metadata": {
+    "title": "NALP webinar, May 2024 - what is it like working in the Probate Research Industry",
+    "author": "NALP - National Association of Licenced Paralegals",
+    "channelId": "UCpBUcVeNJFqfj87w1se4Jxw",
+    "lengthSeconds": "1841",
+    "viewCount": "44",
+    "shortDescription": "Chantal, PR Director for the National Association of Licensed Paralegals discusses with Ryan Gregory what it is liking working as a paralegal in the Probate Research industry. Join us for 30 minutes of conversation, including a bit about what it is like on TV. Ryan was part of the cast for Heir Hunters"
+  },
+  "caption_tracks": [
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=zz_ksXmJqyI&ei=6HXhaoKVMcaVt7EP0uekqQc&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185880&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=1D5ABA05FC4550C26522ECA963907594D77441EC.9252D0A6B7DE06F2497A07E66C01664A2641BC84&key=yt8&kind=asr&lang=en",
+      "name": {
+        "runs": [
+          {
+            "text": "English (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.en",
+      "languageCode": "en",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    }
+  ],
+  "selected_track": {
+    "baseUrl": "https://www.youtube.com/api/timedtext?v=zz_ksXmJqyI&ei=6HXhaoKVMcaVt7EP0uekqQc&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185880&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=1D5ABA05FC4550C26522ECA963907594D77441EC.9252D0A6B7DE06F2497A07E66C01664A2641BC84&key=yt8&kind=asr&lang=en",
+    "name": {
+      "runs": [
+        {
+          "text": "English (auto-generated)"
+        }
+      ]
+    },
+    "vssId": "a.en",
+    "languageCode": "en",
+    "kind": "asr",
+    "isTranslatable": true,
+    "trackName": ""
+  },
+  "segments": [
+    {
+      "start": 5.4,
+      "duration": 5.239,
+      "text": "so hello my name is Shantel cook I'll be"
+    },
+    {
+      "start": 7.52,
+      "duration": 4.999,
+      "text": "hosting today's NP webinar with me um"
+    },
+    {
+      "start": 10.639,
+      "duration": 4.96,
+      "text": "I've got Amanda Hamilton who is our"
+    },
+    {
+      "start": 12.519,
+      "duration": 4.201,
+      "text": "former Pat Uh CEO and our current Patron"
+    },
+    {
+      "start": 15.599,
+      "duration": 3.721,
+      "text": "um"
+    },
+    {
+      "start": 16.72,
+      "duration": 5.92,
+      "text": "also the one that's labeled Jane but"
+    },
+    {
+      "start": 19.32,
+      "duration": 4.84,
+      "text": "looks like a bloke that's Nigel um he"
+    },
+    {
+      "start": 22.64,
+      "duration": 2.799,
+      "text": "looks after our marketing he'll be in"
+    },
+    {
+      "start": 24.16,
+      "duration": 3.48,
+      "text": "the background dealing with any Tech"
+    },
+    {
+      "start": 25.439,
+      "duration": 3.561,
+      "text": "issues so if there's anything that's um"
+    },
+    {
+      "start": 27.64,
+      "duration": 2.719,
+      "text": "any kind of tech problems or whatever"
+    },
+    {
+      "start": 29.0,
+      "duration": 3.16,
+      "text": "that you need to talk to Nigel about"
+    },
+    {
+      "start": 30.359,
+      "duration": 3.2,
+      "text": "message him directly through the chat"
+    },
+    {
+      "start": 32.16,
+      "duration": 2.8,
+      "text": "and he'll be looking after the questions"
+    },
+    {
+      "start": 33.559,
+      "duration": 3.601,
+      "text": "and putting in links into the chat and"
+    },
+    {
+      "start": 34.96,
+      "duration": 4.24,
+      "text": "so on as well so uh will be helping"
+    },
+    {
+      "start": 37.16,
+      "duration": 4.8,
+      "text": "us out there in the background um and"
+    },
+    {
+      "start": 39.2,
+      "duration": 4.76,
+      "text": "our guest today is Ryan Gregory who's"
+    },
+    {
+      "start": 41.96,
+      "duration": 3.72,
+      "text": "the international manager from finders"
+    },
+    {
+      "start": 43.96,
+      "duration": 4.599,
+      "text": "International and we'll be talking about"
+    },
+    {
+      "start": 45.68,
+      "duration": 4.28,
+      "text": "having a career in Probate research just"
+    },
+    {
+      "start": 48.559,
+      "duration": 3.761,
+      "text": "before we do that though I've got a few"
+    },
+    {
+      "start": 49.96,
+      "duration": 5.48,
+      "text": "announcements to give you so first of"
+    },
+    {
+      "start": 52.32,
+      "duration": 6.32,
+      "text": "all um our next webinar jumping ahead is"
+    },
+    {
+      "start": 55.44,
+      "duration": 5.32,
+      "text": "June the 5th and if you've ever felt"
+    },
+    {
+      "start": 58.64,
+      "duration": 4.04,
+      "text": "overwhelmed in your job that kind of"
+    },
+    {
+      "start": 60.76,
+      "duration": 4.52,
+      "text": "feeling of I can't put anything more on"
+    },
+    {
+      "start": 62.68,
+      "duration": 4.759,
+      "text": "the list or I'm going to explode then"
+    },
+    {
+      "start": 65.28,
+      "duration": 3.32,
+      "text": "this webinar on the 5th of June is"
+    },
+    {
+      "start": 67.439,
+      "duration": 3.281,
+      "text": "definitely one for you because it's a"
+    },
+    {
+      "start": 68.6,
+      "duration": 5.68,
+      "text": "webinar talking all about how to deal"
+    },
+    {
+      "start": 70.72,
+      "duration": 5.24,
+      "text": "with overwhelm then in July uh we have a"
+    },
+    {
+      "start": 74.28,
+      "duration": 3.879,
+      "text": "webinar booked in already for the 11th"
+    },
+    {
+      "start": 75.96,
+      "duration": 3.839,
+      "text": "of July and that is with barbar and"
+    },
+    {
+      "start": 78.159,
+      "duration": 4.6,
+      "text": "we'll be talking about how to convert"
+    },
+    {
+      "start": 79.799,
+      "duration": 4.161,
+      "text": "your nap qualifications into becoming a"
+    },
+    {
+      "start": 82.759,
+      "duration": 3.4,
+      "text": "solicitor if that's something that"
+    },
+    {
+      "start": 83.96,
+      "duration": 4.92,
+      "text": "you've ever been interested in doing so"
+    },
+    {
+      "start": 86.159,
+      "duration": 5.041,
+      "text": "5th of June for overwhelm and 11th of"
+    },
+    {
+      "start": 88.88,
+      "duration": 3.72,
+      "text": "July for becoming a solicitor pop those"
+    },
+    {
+      "start": 91.2,
+      "duration": 4.12,
+      "text": "in your diary and we'll be sending out"
+    },
+    {
+      "start": 92.6,
+      "duration": 5.0,
+      "text": "detail more details about them soon uh"
+    },
+    {
+      "start": 95.32,
+      "duration": 3.799,
+      "text": "we'll have no webinar in August it's"
+    },
+    {
+      "start": 97.6,
+      "duration": 3.159,
+      "text": "time to have a summer holiday and then"
+    },
+    {
+      "start": 99.119,
+      "duration": 4.401,
+      "text": "we're back again in"
+    },
+    {
+      "start": 100.759,
+      "duration": 6.481,
+      "text": "September big announcement you are the"
+    },
+    {
+      "start": 103.52,
+      "duration": 6.0,
+      "text": "very very first to know that we have a"
+    },
+    {
+      "start": 107.24,
+      "duration": 5.12,
+      "text": "date and confirmed for this year's"
+    },
+    {
+      "start": 109.52,
+      "duration": 6.239,
+      "text": "National pargal day that will take place"
+    },
+    {
+      "start": 112.36,
+      "duration": 5.84,
+      "text": "on Monday 11th of November that's Monday"
+    },
+    {
+      "start": 115.759,
+      "duration": 4.68,
+      "text": "the 11th of November in the evening and"
+    },
+    {
+      "start": 118.2,
+      "duration": 4.04,
+      "text": "that'll be at the Law Society in lond"
+    },
+    {
+      "start": 120.439,
+      "duration": 3.6,
+      "text": "there'll be more details coming soon but"
+    },
+    {
+      "start": 122.24,
+      "duration": 3.68,
+      "text": "please mark your Diaries because we'd"
+    },
+    {
+      "start": 124.039,
+      "duration": 3.44,
+      "text": "really love to see all of you for the"
+    },
+    {
+      "start": 125.92,
+      "duration": 3.92,
+      "text": "big celebrations at this year's National"
+    },
+    {
+      "start": 127.479,
+      "duration": 4.361,
+      "text": "paralal Day 11th of November at the Law"
+    },
+    {
+      "start": 129.84,
+      "duration": 3.36,
+      "text": "Society right I'd like to welcome our"
+    },
+    {
+      "start": 131.84,
+      "duration": 2.679,
+      "text": "guest then Ryan Gregory the"
+    },
+    {
+      "start": 133.2,
+      "duration": 3.8,
+      "text": "international manager of finders"
+    },
+    {
+      "start": 134.519,
+      "duration": 4.201,
+      "text": "International so you probably know this"
+    },
+    {
+      "start": 137.0,
+      "duration": 3.599,
+      "text": "already as I bet you've seen them on TV"
+    },
+    {
+      "start": 138.72,
+      "duration": 3.28,
+      "text": "but if in case you don't uh finders"
+    },
+    {
+      "start": 140.599,
+      "duration": 3.601,
+      "text": "International is an award-winning"
+    },
+    {
+      "start": 142.0,
+      "duration": 4.56,
+      "text": "probate research firm that traces the"
+    },
+    {
+      "start": 144.2,
+      "duration": 3.96,
+      "text": "beneficiaries to Estates property and"
+    },
+    {
+      "start": 146.56,
+      "duration": 3.36,
+      "text": "assets we'll be talking a little bit"
+    },
+    {
+      "start": 148.16,
+      "duration": 3.4,
+      "text": "about how to have a career in Probate"
+    },
+    {
+      "start": 149.92,
+      "duration": 3.44,
+      "text": "research what it involves and what you"
+    },
+    {
+      "start": 151.56,
+      "duration": 4.64,
+      "text": "need to know about it so Ryan can I"
+    },
+    {
+      "start": 153.36,
+      "duration": 5.879,
+      "text": "welcome you along to this today's n"
+    },
+    {
+      "start": 156.2,
+      "duration": 4.92,
+      "text": "webinar hi thank you for having me uh hi"
+    },
+    {
+      "start": 159.239,
+      "duration": 3.64,
+      "text": "to everyone that's watching I have to"
+    },
+    {
+      "start": 161.12,
+      "duration": 4.399,
+      "text": "apologize firstly just to anyone that"
+    },
+    {
+      "start": 162.879,
+      "duration": 4.761,
+      "text": "was expecting Danny cin the MD of"
+    },
+    {
+      "start": 165.519,
+      "duration": 4.321,
+      "text": "finders you're going to have to put up"
+    },
+    {
+      "start": 167.64,
+      "duration": 3.84,
+      "text": "with me instead but hopefully it'll be"
+    },
+    {
+      "start": 169.84,
+      "duration": 3.479,
+      "text": "interesting enough for everyone to stick"
+    },
+    {
+      "start": 171.48,
+      "duration": 4.36,
+      "text": "through to the end and yeah once again"
+    },
+    {
+      "start": 173.319,
+      "duration": 5.64,
+      "text": "thanks for having me pleasure so I've"
+    },
+    {
+      "start": 175.84,
+      "duration": 4.6,
+      "text": "got some questions get to get us going"
+    },
+    {
+      "start": 178.959,
+      "duration": 3.92,
+      "text": "first one is kind of the obvious one"
+    },
+    {
+      "start": 180.44,
+      "duration": 4.079,
+      "text": "really what is probate research what"
+    },
+    {
+      "start": 182.879,
+      "duration": 3.801,
+      "text": "does it actually"
+    },
+    {
+      "start": 184.519,
+      "duration": 4.401,
+      "text": "involve um so probate is the"
+    },
+    {
+      "start": 186.68,
+      "duration": 4.36,
+      "text": "administration and the transfer of"
+    },
+    {
+      "start": 188.92,
+      "duration": 4.16,
+      "text": "assets previously owned by a deceased"
+    },
+    {
+      "start": 191.04,
+      "duration": 4.88,
+      "text": "person then we combine that with the"
+    },
+    {
+      "start": 193.08,
+      "duration": 5.0,
+      "text": "research so probate research overall is"
+    },
+    {
+      "start": 195.92,
+      "duration": 3.92,
+      "text": "assisting estate administrators and"
+    },
+    {
+      "start": 198.08,
+      "duration": 5.04,
+      "text": "others in the probate industry just to"
+    },
+    {
+      "start": 199.84,
+      "duration": 5.84,
+      "text": "trace and approve the claims of rightful"
+    },
+    {
+      "start": 203.12,
+      "duration": 4.44,
+      "text": "heirs um when I joined in the industry"
+    },
+    {
+      "start": 205.68,
+      "duration": 4.16,
+      "text": "and I think largely is still called"
+    },
+    {
+      "start": 207.56,
+      "duration": 4.0,
+      "text": "probate gen energy on occasion so then"
+    },
+    {
+      "start": 209.84,
+      "duration": 3.84,
+      "text": "again we're just linking the probate"
+    },
+    {
+      "start": 211.56,
+      "duration": 3.92,
+      "text": "side of it to the genealogy side of it I"
+    },
+    {
+      "start": 213.68,
+      "duration": 3.96,
+      "text": "think probably your question is quite"
+    },
+    {
+      "start": 215.48,
+      "duration": 4.44,
+      "text": "apt because more and more we're having"
+    },
+    {
+      "start": 217.64,
+      "duration": 4.319,
+      "text": "to do bits which aren't really uh"
+    },
+    {
+      "start": 219.92,
+      "duration": 3.76,
+      "text": "genealogy related there's a lot of"
+    },
+    {
+      "start": 221.959,
+      "duration": 3.321,
+      "text": "Investigation there's a lot of DET"
+    },
+    {
+      "start": 223.68,
+      "duration": 3.6,
+      "text": "detective work there's sometimes a bit"
+    },
+    {
+      "start": 225.28,
+      "duration": 4.92,
+      "text": "of DNA work as well so research probably"
+    },
+    {
+      "start": 227.28,
+      "duration": 4.879,
+      "text": "is the more modern interpretation of"
+    },
+    {
+      "start": 230.2,
+      "duration": 5.239,
+      "text": "what used to be called Cate gen"
+    },
+    {
+      "start": 232.159,
+      "duration": 5.961,
+      "text": "enery and specifically what does finders"
+    },
+    {
+      "start": 235.439,
+      "duration": 6.16,
+      "text": "do so finders pretty much does that I"
+    },
+    {
+      "start": 238.12,
+      "duration": 5.92,
+      "text": "mean we started um tracing beneficiaries"
+    },
+    {
+      "start": 241.599,
+      "duration": 4.28,
+      "text": "to Estates unclaimed assets unclaimed"
+    },
+    {
+      "start": 244.04,
+      "duration": 4.88,
+      "text": "property as they like to call it in the"
+    },
+    {
+      "start": 245.879,
+      "duration": 5.241,
+      "text": "in the US more so traditionally within"
+    },
+    {
+      "start": 248.92,
+      "duration": 4.959,
+      "text": "the UK uh where the person passed away"
+    },
+    {
+      "start": 251.12,
+      "duration": 4.92,
+      "text": "and where the assets are based but we do"
+    },
+    {
+      "start": 253.879,
+      "duration": 4.161,
+      "text": "and have grown into being quite a global"
+    },
+    {
+      "start": 256.04,
+      "duration": 4.159,
+      "text": "presence so we have clients overseas as"
+    },
+    {
+      "start": 258.04,
+      "duration": 4.039,
+      "text": "well so we're trying to find missing"
+    },
+    {
+      "start": 260.199,
+      "duration": 3.761,
+      "text": "beneficiaries to unclaimed assets"
+    },
+    {
+      "start": 262.079,
+      "duration": 4.001,
+      "text": "essentially and a lot of those would be"
+    },
+    {
+      "start": 263.96,
+      "duration": 4.56,
+      "text": "probate Estates but you know over the"
+    },
+    {
+      "start": 266.08,
+      "duration": 4.839,
+      "text": "years finders has Diversified into other"
+    },
+    {
+      "start": 268.52,
+      "duration": 4.8,
+      "text": "things which can agid people in the"
+    },
+    {
+      "start": 270.919,
+      "duration": 5.601,
+      "text": "probate industry such as just simply"
+    },
+    {
+      "start": 273.32,
+      "duration": 4.64,
+      "text": "verifying the family tree um obtaining"
+    },
+    {
+      "start": 276.52,
+      "duration": 2.88,
+      "text": "missing documents be it a death"
+    },
+    {
+      "start": 277.96,
+      "duration": 3.679,
+      "text": "certificate or marriage certificate or"
+    },
+    {
+      "start": 279.4,
+      "duration": 4.16,
+      "text": "birth certificate for someone in the UK"
+    },
+    {
+      "start": 281.639,
+      "duration": 3.881,
+      "text": "or more complicated and and a bit more"
+    },
+    {
+      "start": 283.56,
+      "duration": 3.76,
+      "text": "expensive someone overseas they need a"
+    },
+    {
+      "start": 285.52,
+      "duration": 4.44,
+      "text": "death certificate from Thailand for"
+    },
+    {
+      "start": 287.32,
+      "duration": 4.28,
+      "text": "example U missing will searches to find"
+    },
+    {
+      "start": 289.96,
+      "duration": 3.2,
+      "text": "out if someone left a will obviously"
+    },
+    {
+      "start": 291.6,
+      "duration": 4.0,
+      "text": "important if you're going to ascertain"
+    },
+    {
+      "start": 293.16,
+      "duration": 4.92,
+      "text": "whether they died in testate or not U"
+    },
+    {
+      "start": 295.6,
+      "duration": 4.84,
+      "text": "missing asset searches so we can work"
+    },
+    {
+      "start": 298.08,
+      "duration": 5.2,
+      "text": "with the estate where representatives to"
+    },
+    {
+      "start": 300.44,
+      "duration": 5.319,
+      "text": "look for any assets that are due to the"
+    },
+    {
+      "start": 303.28,
+      "duration": 4.759,
+      "text": "estate um transfer of international"
+    },
+    {
+      "start": 305.759,
+      "duration": 3.561,
+      "text": "assets super comp complicated area of"
+    },
+    {
+      "start": 308.039,
+      "duration": 3.961,
+      "text": "work but we have someone that's"
+    },
+    {
+      "start": 309.32,
+      "duration": 4.48,
+      "text": "specialized they speak to um estate"
+    },
+    {
+      "start": 312.0,
+      "duration": 4.8,
+      "text": "administrators and we can put in assets"
+    },
+    {
+      "start": 313.8,
+      "duration": 4.92,
+      "text": "from places like the US and shares"
+    },
+    {
+      "start": 316.8,
+      "duration": 3.519,
+      "text": "missing assets and also a part that"
+    },
+    {
+      "start": 318.72,
+      "duration": 3.64,
+      "text": "maybe sometimes is overlooked when we"
+    },
+    {
+      "start": 320.319,
+      "duration": 4.201,
+      "text": "talk about probate research is just"
+    },
+    {
+      "start": 322.36,
+      "duration": 4.559,
+      "text": "reuniting families together it's"
+    },
+    {
+      "start": 324.52,
+      "duration": 4.04,
+      "text": "something we do on a on a daily basis as"
+    },
+    {
+      "start": 326.919,
+      "duration": 3.641,
+      "text": "well and it's kind of byproduct of what"
+    },
+    {
+      "start": 328.56,
+      "duration": 4.52,
+      "text": "we do but it's not overlooked because it"
+    },
+    {
+      "start": 330.56,
+      "duration": 5.44,
+      "text": "is one of the nier parts of the"
+    },
+    {
+      "start": 333.08,
+      "duration": 4.28,
+      "text": "job now it sounds like there's all sorts"
+    },
+    {
+      "start": 336.0,
+      "duration": 3.16,
+      "text": "of things involved like you mentioned"
+    },
+    {
+      "start": 337.36,
+      "duration": 3.36,
+      "text": "private almost like a being private"
+    },
+    {
+      "start": 339.16,
+      "duration": 2.8,
+      "text": "investigator or something but also then"
+    },
+    {
+      "start": 340.72,
+      "duration": 3.68,
+      "text": "there's the legal things and there's"
+    },
+    {
+      "start": 341.96,
+      "duration": 4.56,
+      "text": "genealogy and genealogy and there's well"
+    },
+    {
+      "start": 344.4,
+      "duration": 4.079,
+      "text": "all sorts of things so therefore what"
+    },
+    {
+      "start": 346.52,
+      "duration": 3.84,
+      "text": "actual qualifications do you need to do"
+    },
+    {
+      "start": 348.479,
+      "duration": 3.121,
+      "text": "that because it almost feels like you"
+    },
+    {
+      "start": 350.36,
+      "duration": 3.36,
+      "text": "come from it from"
+    },
+    {
+      "start": 351.6,
+      "duration": 4.92,
+      "text": "anywhere well yeah precisely that you"
+    },
+    {
+      "start": 353.72,
+      "duration": 5.96,
+      "text": "can come from it from anywhere really um"
+    },
+    {
+      "start": 356.52,
+      "duration": 6.799,
+      "text": "myself my personal story is that I left"
+    },
+    {
+      "start": 359.68,
+      "duration": 5.48,
+      "text": "school at 16 after getting as levels it"
+    },
+    {
+      "start": 363.319,
+      "duration": 3.801,
+      "text": "was the first year of having to pay for"
+    },
+    {
+      "start": 365.16,
+      "duration": 4.439,
+      "text": "uni didn't really have the funds for it"
+    },
+    {
+      "start": 367.12,
+      "duration": 4.479,
+      "text": "had to get a job I was living at home I"
+    },
+    {
+      "start": 369.599,
+      "duration": 4.281,
+      "text": "didn't go to UNI I got a couple of jobs"
+    },
+    {
+      "start": 371.599,
+      "duration": 5.361,
+      "text": "and then I landed um a job at finders"
+    },
+    {
+      "start": 373.88,
+      "duration": 5.4,
+      "text": "International just by um by chance"
+    },
+    {
+      "start": 376.96,
+      "duration": 5.2,
+      "text": "really when I was 18 I kind of stuck"
+    },
+    {
+      "start": 379.28,
+      "duration": 5.0,
+      "text": "with the company kind of grew through uh"
+    },
+    {
+      "start": 382.16,
+      "duration": 4.28,
+      "text": "as the company grew over the last 21"
+    },
+    {
+      "start": 384.28,
+      "duration": 4.0,
+      "text": "years um so you can do that you know"
+    },
+    {
+      "start": 386.44,
+      "duration": 3.479,
+      "text": "we'd happily look at a school lever"
+    },
+    {
+      "start": 388.28,
+      "duration": 3.8,
+      "text": "who's passionate in what we do or we"
+    },
+    {
+      "start": 389.919,
+      "duration": 4.881,
+      "text": "look at somebody we work with people in"
+    },
+    {
+      "start": 392.08,
+      "duration": 4.519,
+      "text": "finders who were maybe studying a law"
+    },
+    {
+      "start": 394.8,
+      "duration": 3.679,
+      "text": "degree or halfway through their"
+    },
+    {
+      "start": 396.599,
+      "duration": 4.32,
+      "text": "conversion and they decided look I like"
+    },
+    {
+      "start": 398.479,
+      "duration": 5.801,
+      "text": "law um but maybe it's not for me I don't"
+    },
+    {
+      "start": 400.919,
+      "duration": 4.761,
+      "text": "want to work the really long hours um"
+    },
+    {
+      "start": 404.28,
+      "duration": 3.8,
+      "text": "you know I want to do something that's"
+    },
+    {
+      "start": 405.68,
+      "duration": 3.799,
+      "text": "maybe going to benefit um people a bit"
+    },
+    {
+      "start": 408.08,
+      "duration": 4.119,
+      "text": "more and we speak to people where they"
+    },
+    {
+      "start": 409.479,
+      "duration": 4.521,
+      "text": "did their modules and they touch on the"
+    },
+    {
+      "start": 412.199,
+      "duration": 3.361,
+      "text": "probate module and they kind of stick on"
+    },
+    {
+      "start": 414.0,
+      "duration": 2.68,
+      "text": "it and then they're like they look"
+    },
+    {
+      "start": 415.56,
+      "duration": 3.319,
+      "text": "around and they're like wow I never"
+    },
+    {
+      "start": 416.68,
+      "duration": 3.359,
+      "text": "really knew you guys existed and then we"
+    },
+    {
+      "start": 418.879,
+      "duration": 2.6,
+      "text": "interview them"
+    },
+    {
+      "start": 420.039,
+      "duration": 4.16,
+      "text": "and they can come in I would say when we"
+    },
+    {
+      "start": 421.479,
+      "duration": 5.0,
+      "text": "look for people um we'll judge anyone"
+    },
+    {
+      "start": 424.199,
+      "duration": 3.801,
+      "text": "based on their CV but I mean there's"
+    },
+    {
+      "start": 426.479,
+      "duration": 2.961,
+      "text": "particular degrees that we do find"
+    },
+    {
+      "start": 428.0,
+      "duration": 3.759,
+      "text": "interesting I think a law degree is"
+    },
+    {
+      "start": 429.44,
+      "duration": 4.84,
+      "text": "useful given that we work in Probate"
+    },
+    {
+      "start": 431.759,
+      "duration": 5.72,
+      "text": "something like a history degree or a"
+    },
+    {
+      "start": 434.28,
+      "duration": 5.199,
+      "text": "criminology degree or history of art"
+    },
+    {
+      "start": 437.479,
+      "duration": 3.761,
+      "text": "we're kind of looking for someone that"
+    },
+    {
+      "start": 439.479,
+      "duration": 4.081,
+      "text": "you don't have to have a a background in"
+    },
+    {
+      "start": 441.24,
+      "duration": 4.56,
+      "text": "law but someone that has good leral"
+    },
+    {
+      "start": 443.56,
+      "duration": 4.68,
+      "text": "thinking you know someone that wants to"
+    },
+    {
+      "start": 445.8,
+      "duration": 6.32,
+      "text": "pick up something um kind of pick it"
+    },
+    {
+      "start": 448.24,
+      "duration": 5.959,
+      "text": "apart solve the puzzle and then kind of"
+    },
+    {
+      "start": 452.12,
+      "duration": 4.0,
+      "text": "um you know solve it and pass it over to"
+    },
+    {
+      "start": 454.199,
+      "duration": 4.201,
+      "text": "the relevant people so just someone"
+    },
+    {
+      "start": 456.12,
+      "duration": 4.84,
+      "text": "really with a keen interest in either"
+    },
+    {
+      "start": 458.4,
+      "duration": 5.44,
+      "text": "law genealogy or or probate would be"
+    },
+    {
+      "start": 460.96,
+      "duration": 4.519,
+      "text": "great so I guess in that case anybody"
+    },
+    {
+      "start": 463.84,
+      "duration": 3.639,
+      "text": "really with a a pro a paralal"
+    },
+    {
+      "start": 465.479,
+      "duration": 3.761,
+      "text": "qualification from nelp would be an"
+    },
+    {
+      "start": 467.479,
+      "duration": 5.241,
+      "text": "ideal person to come"
+    },
+    {
+      "start": 469.24,
+      "duration": 5.359,
+      "text": "in 100% yeah if we see someone um with"
+    },
+    {
+      "start": 472.72,
+      "duration": 4.08,
+      "text": "NP on their CV you know automatically"
+    },
+    {
+      "start": 474.599,
+      "duration": 4.04,
+      "text": "it's going to promote anybody's"
+    },
+    {
+      "start": 476.8,
+      "duration": 3.519,
+      "text": "interests that's looking to hire within"
+    },
+    {
+      "start": 478.639,
+      "duration": 3.28,
+      "text": "finders for sure"
+    },
+    {
+      "start": 480.319,
+      "duration": 3.16,
+      "text": "so I know most of your your staff are"
+    },
+    {
+      "start": 481.919,
+      "duration": 4.28,
+      "text": "actually nelt members aren't"
+    },
+    {
+      "start": 483.479,
+      "duration": 5.12,
+      "text": "they they are yeah we became nelt"
+    },
+    {
+      "start": 486.199,
+      "duration": 4.881,
+      "text": "members via the the kind of the on the"
+    },
+    {
+      "start": 488.599,
+      "duration": 5.521,
+      "text": "job experience that we've had in the"
+    },
+    {
+      "start": 491.08,
+      "duration": 4.559,
+      "text": "probate research field um so you know"
+    },
+    {
+      "start": 494.12,
+      "duration": 4.039,
+      "text": "it's it's pretty much something that"
+    },
+    {
+      "start": 495.639,
+      "duration": 5.12,
+      "text": "we've been able to kind of attach to"
+    },
+    {
+      "start": 498.159,
+      "duration": 4.681,
+      "text": "ourselves and to promote you know within"
+    },
+    {
+      "start": 500.759,
+      "duration": 4.081,
+      "text": "finders and to to clients be it a"
+    },
+    {
+      "start": 502.84,
+      "duration": 3.759,
+      "text": "beneficiary or a cister to say look"
+    },
+    {
+      "start": 504.84,
+      "duration": 4.039,
+      "text": "these people are experienced and we are"
+    },
+    {
+      "start": 506.599,
+      "duration": 5.8,
+      "text": "part of a a wider group of people that"
+    },
+    {
+      "start": 508.879,
+      "duration": 5.321,
+      "text": "share a common values and and similar"
+    },
+    {
+      "start": 512.399,
+      "duration": 3.241,
+      "text": "experiences so although I know you've"
+    },
+    {
+      "start": 514.2,
+      "duration": 3.0,
+      "text": "talked a little bit about kind of where"
+    },
+    {
+      "start": 515.64,
+      "duration": 4.36,
+      "text": "you can come from and having some kind"
+    },
+    {
+      "start": 517.2,
+      "duration": 6.0,
+      "text": "of understanding of the law is is useful"
+    },
+    {
+      "start": 520.0,
+      "duration": 6.6,
+      "text": "is there um you know if if you haven't"
+    },
+    {
+      "start": 523.2,
+      "duration": 4.96,
+      "text": "worked in Probate at all before is it"
+    },
+    {
+      "start": 526.6,
+      "duration": 3.2,
+      "text": "what what's a good place to go to get"
+    },
+    {
+      "start": 528.16,
+      "duration": 4.32,
+      "text": "experience I mean can you literally come"
+    },
+    {
+      "start": 529.8,
+      "duration": 5.64,
+      "text": "in with nothing or do you need to go off"
+    },
+    {
+      "start": 532.48,
+      "duration": 4.56,
+      "text": "and do something else first I would say"
+    },
+    {
+      "start": 535.44,
+      "duration": 4.959,
+      "text": "you can literally come in with with"
+    },
+    {
+      "start": 537.04,
+      "duration": 6.2,
+      "text": "nothing um you know any if we talk of"
+    },
+    {
+      "start": 540.399,
+      "duration": 4.641,
+      "text": "any company I guess as a whole there's"
+    },
+    {
+      "start": 543.24,
+      "duration": 3.2,
+      "text": "going to be varying recruitment"
+    },
+    {
+      "start": 545.04,
+      "duration": 3.039,
+      "text": "requirements throughout the year and"
+    },
+    {
+      "start": 546.44,
+      "duration": 3.16,
+      "text": "throughout the various years you know if"
+    },
+    {
+      "start": 548.079,
+      "duration": 3.601,
+      "text": "you happen to hit a company at the right"
+    },
+    {
+      "start": 549.6,
+      "duration": 3.799,
+      "text": "time and they're looking for someone and"
+    },
+    {
+      "start": 551.68,
+      "duration": 3.719,
+      "text": "you know you're interested in that job"
+    },
+    {
+      "start": 553.399,
+      "duration": 4.12,
+      "text": "it's really going to help uh your"
+    },
+    {
+      "start": 555.399,
+      "duration": 3.68,
+      "text": "chances but you know a way to get your"
+    },
+    {
+      "start": 557.519,
+      "duration": 4.361,
+      "text": "foot in the door maybe potentially if"
+    },
+    {
+      "start": 559.079,
+      "duration": 4.361,
+      "text": "someone isn't hiring um in our industry"
+    },
+    {
+      "start": 561.88,
+      "duration": 3.56,
+      "text": "you know having had a look at your"
+    },
+    {
+      "start": 563.44,
+      "duration": 4.519,
+      "text": "family history is going to put you quite"
+    },
+    {
+      "start": 565.44,
+      "duration": 3.8,
+      "text": "near the top of the list um for me"
+    },
+    {
+      "start": 567.959,
+      "duration": 2.921,
+      "text": "personally particularly if I'm looking"
+    },
+    {
+      "start": 569.24,
+      "duration": 3.64,
+      "text": "for for a research to somebody that has"
+    },
+    {
+      "start": 570.88,
+      "duration": 4.36,
+      "text": "done that that has researched their"
+    },
+    {
+      "start": 572.88,
+      "duration": 3.959,
+      "text": "family tree um that's really good for"
+    },
+    {
+      "start": 575.24,
+      "duration": 3.0,
+      "text": "research role but some people come to us"
+    },
+    {
+      "start": 576.839,
+      "duration": 2.881,
+      "text": "because they want to work in our setting"
+    },
+    {
+      "start": 578.24,
+      "duration": 2.88,
+      "text": "and and they're coming from an admin"
+    },
+    {
+      "start": 579.72,
+      "duration": 3.08,
+      "text": "background in which case you know you"
+    },
+    {
+      "start": 581.12,
+      "duration": 4.88,
+      "text": "want to be promoting your communication"
+    },
+    {
+      "start": 582.8,
+      "duration": 4.84,
+      "text": "skills your teamwork your accuracy your"
+    },
+    {
+      "start": 586.0,
+      "duration": 4.12,
+      "text": "self motivation and things like that so"
+    },
+    {
+      "start": 587.64,
+      "duration": 4.0,
+      "text": "I think it's just about considering the"
+    },
+    {
+      "start": 590.12,
+      "duration": 4.2,
+      "text": "the role that you're going for some of"
+    },
+    {
+      "start": 591.64,
+      "duration": 4.72,
+      "text": "it will be pot lock with the recruitment"
+    },
+    {
+      "start": 594.32,
+      "duration": 3.36,
+      "text": "needs of the company but kind of think"
+    },
+    {
+      "start": 596.36,
+      "duration": 4.12,
+      "text": "about the role you're going for and kind"
+    },
+    {
+      "start": 597.68,
+      "duration": 4.48,
+      "text": "of promote um yourself based on that"
+    },
+    {
+      "start": 600.48,
+      "duration": 4.08,
+      "text": "really and like I said anyone with an"
+    },
+    {
+      "start": 602.16,
+      "duration": 3.799,
+      "text": "interest in genealogy when I started"
+    },
+    {
+      "start": 604.56,
+      "duration": 3.44,
+      "text": "when I was 18 no one really knew what"
+    },
+    {
+      "start": 605.959,
+      "duration": 3.641,
+      "text": "genealogy was so I tell people I a"
+    },
+    {
+      "start": 608.0,
+      "duration": 3.64,
+      "text": "probate genealogist and I be like oh"
+    },
+    {
+      "start": 609.6,
+      "duration": 4.84,
+      "text": "genealogist that's interesting does that"
+    },
+    {
+      "start": 611.64,
+      "duration": 4.16,
+      "text": "do you study rocks or um you know I was"
+    },
+    {
+      "start": 614.44,
+      "duration": 3.16,
+      "text": "like that's a geologist the number of"
+    },
+    {
+      "start": 615.8,
+      "duration": 4.24,
+      "text": "times I had that conversation when I was"
+    },
+    {
+      "start": 617.6,
+      "duration": 4.4,
+      "text": "like starting off at finders was quite"
+    },
+    {
+      "start": 620.04,
+      "duration": 5.039,
+      "text": "quite funny but nowadays we have things"
+    },
+    {
+      "start": 622.0,
+      "duration": 5.519,
+      "text": "like ancestry.com and we have TV shows"
+    },
+    {
+      "start": 625.079,
+      "duration": 4.641,
+      "text": "about it um like BBC air hunters and"
+    },
+    {
+      "start": 627.519,
+      "duration": 3.361,
+      "text": "things that's why I think most people I"
+    },
+    {
+      "start": 629.72,
+      "duration": 3.84,
+      "text": "probably know the difference between"
+    },
+    {
+      "start": 630.88,
+      "duration": 5.6,
+      "text": "geology and genealogy now but yeah"
+    },
+    {
+      "start": 633.56,
+      "duration": 4.64,
+      "text": "certainly um if you want to kind of"
+    },
+    {
+      "start": 636.48,
+      "duration": 3.159,
+      "text": "highlight your CV maybe have a bit of a"
+    },
+    {
+      "start": 638.2,
+      "duration": 3.4,
+      "text": "dig around and you know you never know"
+    },
+    {
+      "start": 639.639,
+      "duration": 3.76,
+      "text": "what you're going to find if you don't"
+    },
+    {
+      "start": 641.6,
+      "duration": 3.359,
+      "text": "want to go straight in for research in"
+    },
+    {
+      "start": 643.399,
+      "duration": 3.921,
+      "text": "your family history in the traditional"
+    },
+    {
+      "start": 644.959,
+      "duration": 3.721,
+      "text": "way do your ancestry DNA because I find"
+    },
+    {
+      "start": 647.32,
+      "duration": 3.16,
+      "text": "that's a really good way to pull"
+    },
+    {
+      "start": 648.68,
+      "duration": 4.76,
+      "text": "yourself into some interesting stories"
+    },
+    {
+      "start": 650.48,
+      "duration": 4.88,
+      "text": "within your family and contacting people"
+    },
+    {
+      "start": 653.44,
+      "duration": 4.24,
+      "text": "and asking the right questions and"
+    },
+    {
+      "start": 655.36,
+      "duration": 5.4,
+      "text": "dismissing any kind of erroneous leads"
+    },
+    {
+      "start": 657.68,
+      "duration": 5.68,
+      "text": "it's all this sort of um things that we"
+    },
+    {
+      "start": 660.76,
+      "duration": 4.72,
+      "text": "would certainly be looking for yeah now"
+    },
+    {
+      "start": 663.36,
+      "duration": 5.32,
+      "text": "you mentioned the TV and air Hunters so"
+    },
+    {
+      "start": 665.48,
+      "duration": 5.159,
+      "text": "I have to ask what's that like doing"
+    },
+    {
+      "start": 668.68,
+      "duration": 4.959,
+      "text": "that is it as glamorous and as exciting"
+    },
+    {
+      "start": 670.639,
+      "duration": 7.401,
+      "text": "as it looks or is it just a lot of hard"
+    },
+    {
+      "start": 673.639,
+      "duration": 7.681,
+      "text": "work I have to say um I think Danny"
+    },
+    {
+      "start": 678.04,
+      "duration": 5.919,
+      "text": "cornered myself and Amy Moyes in a pub"
+    },
+    {
+      "start": 681.32,
+      "duration": 3.88,
+      "text": "on a team social you know buttered us up"
+    },
+    {
+      "start": 683.959,
+      "duration": 2.481,
+      "text": "with a couple of drinks maybe then"
+    },
+    {
+      "start": 685.2,
+      "duration": 4.24,
+      "text": "pretty much told us that we'll be"
+    },
+    {
+      "start": 686.44,
+      "duration": 5.16,
+      "text": "fronting air hunters for Finders we"
+    },
+    {
+      "start": 689.44,
+      "duration": 3.959,
+      "text": "joined the TV show we kind of went into"
+    },
+    {
+      "start": 691.6,
+      "duration": 4.039,
+      "text": "it Kicking and Screaming a little bit"
+    },
+    {
+      "start": 693.399,
+      "duration": 4.721,
+      "text": "just you know something different um"
+    },
+    {
+      "start": 695.639,
+      "duration": 4.44,
+      "text": "there's a a big chunk of anxiety which"
+    },
+    {
+      "start": 698.12,
+      "duration": 3.48,
+      "text": "comes with putting yourself out there I"
+    },
+    {
+      "start": 700.079,
+      "duration": 3.0,
+      "text": "think in front of your peers as well to"
+    },
+    {
+      "start": 701.6,
+      "duration": 2.919,
+      "text": "be judged I think knowing that everyone"
+    },
+    {
+      "start": 703.079,
+      "duration": 3.601,
+      "text": "in your industry is going to see it but"
+    },
+    {
+      "start": 704.519,
+      "duration": 4.241,
+      "text": "then the wider TV audience family"
+    },
+    {
+      "start": 706.68,
+      "duration": 4.159,
+      "text": "members and friends you know is quite"
+    },
+    {
+      "start": 708.76,
+      "duration": 4.639,
+      "text": "terrifying when they first put you in"
+    },
+    {
+      "start": 710.839,
+      "duration": 3.961,
+      "text": "front of your open plan office and stick"
+    },
+    {
+      "start": 713.399,
+      "duration": 2.761,
+      "text": "a TV Camera in front of your face and"
+    },
+    {
+      "start": 714.8,
+      "duration": 3.32,
+      "text": "you know it's going to go out to to a"
+    },
+    {
+      "start": 716.16,
+      "duration": 4.84,
+      "text": "million people or something once you get"
+    },
+    {
+      "start": 718.12,
+      "duration": 6.48,
+      "text": "over the nerves is it was an interesting"
+    },
+    {
+      "start": 721.0,
+      "duration": 5.68,
+      "text": "experience um it wasn't all high glamour"
+    },
+    {
+      "start": 724.6,
+      "duration": 3.679,
+      "text": "as you kind of alluded to it was a lot"
+    },
+    {
+      "start": 726.68,
+      "duration": 4.599,
+      "text": "of hard work to be honest we probably"
+    },
+    {
+      "start": 728.279,
+      "duration": 5.12,
+      "text": "filmed with the TV crew for sometimes up"
+    },
+    {
+      "start": 731.279,
+      "duration": 3.92,
+      "text": "to six months of the year not every"
+    },
+    {
+      "start": 733.399,
+      "duration": 3.44,
+      "text": "single case we filmed would get through"
+    },
+    {
+      "start": 735.199,
+      "duration": 3.601,
+      "text": "to being on the TV show we would often"
+    },
+    {
+      "start": 736.839,
+      "duration": 3.881,
+      "text": "film a lot of cases and then we didn't"
+    },
+    {
+      "start": 738.8,
+      "duration": 4.159,
+      "text": "find the right social history to make it"
+    },
+    {
+      "start": 740.72,
+      "duration": 3.799,
+      "text": "interesting for the show or we'd have"
+    },
+    {
+      "start": 742.959,
+      "duration": 3.88,
+      "text": "really interesting social history but we"
+    },
+    {
+      "start": 744.519,
+      "duration": 4.481,
+      "text": "couldn't find a beneficiary to speak to"
+    },
+    {
+      "start": 746.839,
+      "duration": 3.841,
+      "text": "the producers or we didn't know enough"
+    },
+    {
+      "start": 749.0,
+      "duration": 3.519,
+      "text": "about the deceased person obviously"
+    },
+    {
+      "start": 750.68,
+      "duration": 3.519,
+      "text": "that's the story that people want to"
+    },
+    {
+      "start": 752.519,
+      "duration": 3.401,
+      "text": "know about you know do we have any"
+    },
+    {
+      "start": 754.199,
+      "duration": 3.2,
+      "text": "pictures and photos so quite a lot of"
+    },
+    {
+      "start": 755.92,
+      "duration": 5.2,
+      "text": "the filming that we did ended up on The"
+    },
+    {
+      "start": 757.399,
+      "duration": 6.12,
+      "text": "Cutting Room floor so um there was a lot"
+    },
+    {
+      "start": 761.12,
+      "duration": 4.12,
+      "text": "of kind of late staying behind at the"
+    },
+    {
+      "start": 763.519,
+      "duration": 3.161,
+      "text": "end of the day doing piece pieces to"
+    },
+    {
+      "start": 765.24,
+      "duration": 3.76,
+      "text": "camera when you really just want to go"
+    },
+    {
+      "start": 766.68,
+      "duration": 4.64,
+      "text": "home and your brain is a bit fried there"
+    },
+    {
+      "start": 769.0,
+      "duration": 5.24,
+      "text": "was a lot of running around with the"
+    },
+    {
+      "start": 771.32,
+      "duration": 5.36,
+      "text": "team kind of sharing up bits of um"
+    },
+    {
+      "start": 774.24,
+      "duration": 4.399,
+      "text": "family trees and a lot of the work that"
+    },
+    {
+      "start": 776.68,
+      "duration": 3.599,
+      "text": "we were filming is a competitive type"
+    },
+    {
+      "start": 778.639,
+      "duration": 4.32,
+      "text": "competitive type of work from the bone"
+    },
+    {
+      "start": 780.279,
+      "duration": 4.8,
+      "text": "of Baner list which is the unclaimed"
+    },
+    {
+      "start": 782.959,
+      "duration": 3.601,
+      "text": "estate and kind of the last thing you"
+    },
+    {
+      "start": 785.079,
+      "duration": 2.921,
+      "text": "want when you're rushing around trying"
+    },
+    {
+      "start": 786.56,
+      "duration": 3.04,
+      "text": "to be the first person to ring a"
+    },
+    {
+      "start": 788.0,
+      "duration": 3.04,
+      "text": "potential beneficiary is someone with a"
+    },
+    {
+      "start": 789.6,
+      "duration": 3.76,
+      "text": "camera saying hey could you just tell me"
+    },
+    {
+      "start": 791.04,
+      "duration": 3.919,
+      "text": "what you're doing because you're trying"
+    },
+    {
+      "start": 793.36,
+      "duration": 2.479,
+      "text": "to not look fastled doing that and then"
+    },
+    {
+      "start": 794.959,
+      "duration": 2.641,
+      "text": "you're trying to speak to the"
+    },
+    {
+      "start": 795.839,
+      "duration": 3.24,
+      "text": "beneficiaries but it's one of these"
+    },
+    {
+      "start": 797.6,
+      "duration": 3.44,
+      "text": "things it was a long-term project and"
+    },
+    {
+      "start": 799.079,
+      "duration": 3.801,
+      "text": "every time you wrapped on a series and"
+    },
+    {
+      "start": 801.04,
+      "duration": 3.72,
+      "text": "then waited for it to come on and you"
+    },
+    {
+      "start": 802.88,
+      "duration": 4.24,
+      "text": "watched it back it was always really"
+    },
+    {
+      "start": 804.76,
+      "duration": 4.84,
+      "text": "nice they were really good at kind of"
+    },
+    {
+      "start": 807.12,
+      "duration": 5.079,
+      "text": "extrapolating the social history element"
+    },
+    {
+      "start": 809.6,
+      "duration": 5.52,
+      "text": "of it and for me personally I'd been in"
+    },
+    {
+      "start": 812.199,
+      "duration": 4.76,
+      "text": "the industry quite a long time and I I"
+    },
+    {
+      "start": 815.12,
+      "duration": 3.36,
+      "text": "didn't really have the time or the the"
+    },
+    {
+      "start": 816.959,
+      "duration": 3.921,
+      "text": "inclination to think too much about the"
+    },
+    {
+      "start": 818.48,
+      "duration": 4.68,
+      "text": "social history and it kind of changed"
+    },
+    {
+      "start": 820.88,
+      "duration": 4.28,
+      "text": "the way I thought about the families and"
+    },
+    {
+      "start": 823.16,
+      "duration": 4.72,
+      "text": "it kind of I I realized how important"
+    },
+    {
+      "start": 825.16,
+      "duration": 4.479,
+      "text": "that is I guess to the people we're um"
+    },
+    {
+      "start": 827.88,
+      "duration": 4.72,
+      "text": "we're speaking out but yeah being on the"
+    },
+    {
+      "start": 829.639,
+      "duration": 5.601,
+      "text": "TV show wasn't without its odd kind of"
+    },
+    {
+      "start": 832.6,
+      "duration": 4.56,
+      "text": "side of it like people dming you on"
+    },
+    {
+      "start": 835.24,
+      "duration": 3.519,
+      "text": "Twitter and Facebook and pretty much"
+    },
+    {
+      "start": 837.16,
+      "duration": 4.32,
+      "text": "wherever they could and tweeting about"
+    },
+    {
+      "start": 838.759,
+      "duration": 4.76,
+      "text": "you and you know asking you for an"
+    },
+    {
+      "start": 841.48,
+      "duration": 4.159,
+      "text": "autograph once or twice or a selfie you"
+    },
+    {
+      "start": 843.519,
+      "duration": 4.641,
+      "text": "know it kind of happened you know we're"
+    },
+    {
+      "start": 845.639,
+      "duration": 3.801,
+      "text": "like sitting on an airplane once and"
+    },
+    {
+      "start": 848.16,
+      "duration": 2.4,
+      "text": "kind of someone you know people always"
+    },
+    {
+      "start": 849.44,
+      "duration": 2.959,
+      "text": "think they know you because they've seen"
+    },
+    {
+      "start": 850.56,
+      "duration": 3.12,
+      "text": "you on TV and it's really then you don't"
+    },
+    {
+      "start": 852.399,
+      "duration": 2.68,
+      "text": "want to have to be that person that says"
+    },
+    {
+      "start": 853.68,
+      "duration": 3.04,
+      "text": "oh I think you might have seen me on TV"
+    },
+    {
+      "start": 855.079,
+      "duration": 3.281,
+      "text": "usually you can like brush it off"
+    },
+    {
+      "start": 856.72,
+      "duration": 4.039,
+      "text": "because it's a bit"
+    },
+    {
+      "start": 858.36,
+      "duration": 4.08,
+      "text": "cringy um but yeah there there were nice"
+    },
+    {
+      "start": 860.759,
+      "duration": 3.041,
+      "text": "parts to it it was rewarding at the end"
+    },
+    {
+      "start": 862.44,
+      "duration": 2.6,
+      "text": "of the day but yeah it was a lot of hard"
+    },
+    {
+      "start": 863.8,
+      "duration": 3.479,
+      "text": "work and a lot of things that people"
+    },
+    {
+      "start": 865.04,
+      "duration": 4.239,
+      "text": "didn't necessarily see some some really"
+    },
+    {
+      "start": 867.279,
+      "duration": 4.081,
+      "text": "good stories and sometimes stories that"
+    },
+    {
+      "start": 869.279,
+      "duration": 3.841,
+      "text": "probably a bit too dark to to have on"
+    },
+    {
+      "start": 871.36,
+      "duration": 2.96,
+      "text": "morning TV as well that you know"
+    },
+    {
+      "start": 873.12,
+      "duration": 3.36,
+      "text": "everyone in the office finds quite"
+    },
+    {
+      "start": 874.32,
+      "duration": 4.48,
+      "text": "interesting as as people typically quite"
+    },
+    {
+      "start": 876.48,
+      "duration": 4.4,
+      "text": "interested in the kind of more more gory"
+    },
+    {
+      "start": 878.8,
+      "duration": 4.52,
+      "text": "side of things but yeah we had to remind"
+    },
+    {
+      "start": 880.88,
+      "duration": 5.72,
+      "text": "ourselves that we were breakfast"
+    },
+    {
+      "start": 883.32,
+      "duration": 6.0,
+      "text": "TV do you think over all that TV program"
+    },
+    {
+      "start": 886.6,
+      "duration": 4.88,
+      "text": "has actually helped not just finders but"
+    },
+    {
+      "start": 889.32,
+      "duration": 4.12,
+      "text": "actually the industry as a whole to be"
+    },
+    {
+      "start": 891.48,
+      "duration": 3.799,
+      "text": "more visible to maybe make it easier to"
+    },
+    {
+      "start": 893.44,
+      "duration": 4.6,
+      "text": "recruit good quality people to make it a"
+    },
+    {
+      "start": 895.279,
+      "duration": 5.321,
+      "text": "career that that people actually want to"
+    },
+    {
+      "start": 898.04,
+      "duration": 4.239,
+      "text": "do 100% yeah I mean I think it's helped"
+    },
+    {
+      "start": 900.6,
+      "duration": 3.799,
+      "text": "raise the awareness of the industry I"
+    },
+    {
+      "start": 902.279,
+      "duration": 3.48,
+      "text": "think we still struggle internationally"
+    },
+    {
+      "start": 904.399,
+      "duration": 3.841,
+      "text": "I'm head of international we still"
+    },
+    {
+      "start": 905.759,
+      "duration": 4.52,
+      "text": "struggle internationally with convincing"
+    },
+    {
+      "start": 908.24,
+      "duration": 4.32,
+      "text": "people overseas that we are legitimate"
+    },
+    {
+      "start": 910.279,
+      "duration": 5.281,
+      "text": "we still have issues within the UK but"
+    },
+    {
+      "start": 912.56,
+      "duration": 5.36,
+      "text": "mostly people can uh pull away those"
+    },
+    {
+      "start": 915.56,
+      "duration": 4.839,
+      "text": "bricks of Suspicion when they can see"
+    },
+    {
+      "start": 917.92,
+      "duration": 4.56,
+      "text": "newspaper articles or TV shows and on"
+    },
+    {
+      "start": 920.399,
+      "duration": 4.641,
+      "text": "the recruitment side of things yeah know"
+    },
+    {
+      "start": 922.48,
+      "duration": 4.44,
+      "text": "kind of helps um get people into the"
+    },
+    {
+      "start": 925.04,
+      "duration": 4.239,
+      "text": "industry we used to find that our"
+    },
+    {
+      "start": 926.92,
+      "duration": 4.76,
+      "text": "demographics were probably students uh"
+    },
+    {
+      "start": 929.279,
+      "duration": 3.92,
+      "text": "back when it was on or uh people that"
+    },
+    {
+      "start": 931.68,
+      "duration": 5.279,
+      "text": "were off of their kids or pregnant PE"
+    },
+    {
+      "start": 933.199,
+      "duration": 5.241,
+      "text": "pregnant uh ladies or um older people so"
+    },
+    {
+      "start": 936.959,
+      "duration": 3.641,
+      "text": "quite often now I'm interviewing people"
+    },
+    {
+      "start": 938.44,
+      "duration": 4.28,
+      "text": "coming out of University who are like 21"
+    },
+    {
+      "start": 940.6,
+      "duration": 3.599,
+      "text": "22 and they'll probably tell me which"
+    },
+    {
+      "start": 942.72,
+      "duration": 3.72,
+      "text": "makes me feel a bit old that they either"
+    },
+    {
+      "start": 944.199,
+      "duration": 5.08,
+      "text": "watched it as kids their grandparents"
+    },
+    {
+      "start": 946.44,
+      "duration": 4.44,
+      "text": "used to watch it so it's nice to have it"
+    },
+    {
+      "start": 949.279,
+      "duration": 3.161,
+      "text": "there and it's it's good that people can"
+    },
+    {
+      "start": 950.88,
+      "duration": 3.72,
+      "text": "then go to YouTube and see a bit of what"
+    },
+    {
+      "start": 952.44,
+      "duration": 4.319,
+      "text": "we do and again like you know we would"
+    },
+    {
+      "start": 954.6,
+      "duration": 3.88,
+      "text": "be speaking to beneficiaries whilst the"
+    },
+    {
+      "start": 956.759,
+      "duration": 3.681,
+      "text": "TV show was on sometimes and they'll be"
+    },
+    {
+      "start": 958.48,
+      "duration": 5.839,
+      "text": "like yeah I'm watching you on TV so it's"
+    },
+    {
+      "start": 960.44,
+      "duration": 5.24,
+      "text": "really hard to um to kind of um hold on"
+    },
+    {
+      "start": 964.319,
+      "duration": 2.801,
+      "text": "to any suspicion when you can see"
+    },
+    {
+      "start": 965.68,
+      "duration": 3.36,
+      "text": "someone on the BBC that you're talking"
+    },
+    {
+      "start": 967.12,
+      "duration": 5.519,
+      "text": "to so on that side of things it helps"
+    },
+    {
+      "start": 969.04,
+      "duration": 5.68,
+      "text": "massively as well and very briefly who"
+    },
+    {
+      "start": 972.639,
+      "duration": 4.361,
+      "text": "is usually is it your clients they come"
+    },
+    {
+      "start": 974.72,
+      "duration": 4.16,
+      "text": "direct through solicitors or is it say"
+    },
+    {
+      "start": 977.0,
+      "duration": 3.16,
+      "text": "the um executive of the estate or"
+    },
+    {
+      "start": 978.88,
+      "duration": 3.36,
+      "text": "something how does that"
+    },
+    {
+      "start": 980.16,
+      "duration": 5.119,
+      "text": "work yeah it's a good question because I"
+    },
+    {
+      "start": 982.24,
+      "duration": 4.44,
+      "text": "think a lot of people think when we talk"
+    },
+    {
+      "start": 985.279,
+      "duration": 2.8,
+      "text": "about the industry if particular if"
+    },
+    {
+      "start": 986.68,
+      "duration": 2.399,
+      "text": "they've seen this TV show they will"
+    },
+    {
+      "start": 988.079,
+      "duration": 2.801,
+      "text": "think everything comes through through"
+    },
+    {
+      "start": 989.079,
+      "duration": 4.401,
+      "text": "this government list that's only a small"
+    },
+    {
+      "start": 990.88,
+      "duration": 5.24,
+      "text": "part of the type of work that we do we"
+    },
+    {
+      "start": 993.48,
+      "duration": 4.4,
+      "text": "do have a large uh portion of the work"
+    },
+    {
+      "start": 996.12,
+      "duration": 3.24,
+      "text": "that we undertake through private"
+    },
+    {
+      "start": 997.88,
+      "duration": 4.079,
+      "text": "clients so that'll be"
+    },
+    {
+      "start": 999.36,
+      "duration": 5.24,
+      "text": "solicitors um it will be state"
+    },
+    {
+      "start": 1001.959,
+      "duration": 4.481,
+      "text": "representatives um you know often local"
+    },
+    {
+      "start": 1004.6,
+      "duration": 4.12,
+      "text": "authorities will come to us"
+    },
+    {
+      "start": 1006.44,
+      "duration": 5.28,
+      "text": "directly um there is an element where we"
+    },
+    {
+      "start": 1008.72,
+      "duration": 5.559,
+      "text": "can Source cases from the public domain"
+    },
+    {
+      "start": 1011.72,
+      "duration": 4.76,
+      "text": "so there's all these kind of uh ways"
+    },
+    {
+      "start": 1014.279,
+      "duration": 4.761,
+      "text": "that cases can come into finders we have"
+    },
+    {
+      "start": 1016.48,
+      "duration": 4.44,
+      "text": "clients overseas as well so so yeah we"
+    },
+    {
+      "start": 1019.04,
+      "duration": 4.2,
+      "text": "don't only pluck from the government"
+    },
+    {
+      "start": 1020.92,
+      "duration": 3.639,
+      "text": "list and also we don't only work with"
+    },
+    {
+      "start": 1023.24,
+      "duration": 2.679,
+      "text": "private clients the lists as you"
+    },
+    {
+      "start": 1024.559,
+      "duration": 3.681,
+      "text": "mentioned it can just be in a state"
+    },
+    {
+      "start": 1025.919,
+      "duration": 4.241,
+      "text": "representative that wants to come to us"
+    },
+    {
+      "start": 1028.24,
+      "duration": 4.799,
+      "text": "and ask us to find missing beneficiaries"
+    },
+    {
+      "start": 1030.16,
+      "duration": 6.399,
+      "text": "or simply just just verify a family"
+    },
+    {
+      "start": 1033.039,
+      "duration": 7.121,
+      "text": "tree and for you what's the bit that you"
+    },
+    {
+      "start": 1036.559,
+      "duration": 3.601,
+      "text": "most love about doing this"
+    },
+    {
+      "start": 1040.319,
+      "duration": 4.961,
+      "text": "work I have to say is is the social"
+    },
+    {
+      "start": 1043.28,
+      "duration": 4.759,
+      "text": "history now it is these people that you"
+    },
+    {
+      "start": 1045.28,
+      "duration": 5.12,
+      "text": "can talk to and for some reason over the"
+    },
+    {
+      "start": 1048.039,
+      "duration": 3.921,
+      "text": "years you know you've seen that I've"
+    },
+    {
+      "start": 1050.4,
+      "duration": 3.08,
+      "text": "seen that people will just open up to"
+    },
+    {
+      "start": 1051.96,
+      "duration": 3.24,
+      "text": "you Al They you're just pretty much"
+    },
+    {
+      "start": 1053.48,
+      "duration": 4.0,
+      "text": "random person on the end of the"
+    },
+    {
+      "start": 1055.2,
+      "duration": 4.92,
+      "text": "phone everyone's got a story at the end"
+    },
+    {
+      "start": 1057.48,
+      "duration": 5.319,
+      "text": "of the day I think and you know once you"
+    },
+    {
+      "start": 1060.12,
+      "duration": 4.52,
+      "text": "hit that sweet spot with someone and you"
+    },
+    {
+      "start": 1062.799,
+      "duration": 3.361,
+      "text": "do find a lot of people do open up to"
+    },
+    {
+      "start": 1064.64,
+      "duration": 4.279,
+      "text": "you and they start telling you about"
+    },
+    {
+      "start": 1066.16,
+      "duration": 5.519,
+      "text": "their grandparents siblings and you know"
+    },
+    {
+      "start": 1068.919,
+      "duration": 4.441,
+      "text": "the black sheep in the family and so and"
+    },
+    {
+      "start": 1071.679,
+      "duration": 4.681,
+      "text": "so went and did this or you know this"
+    },
+    {
+      "start": 1073.36,
+      "duration": 5.48,
+      "text": "person's estranged and gone missing and"
+    },
+    {
+      "start": 1076.36,
+      "duration": 5.36,
+      "text": "you know you do have a really strong"
+    },
+    {
+      "start": 1078.84,
+      "duration": 4.6,
+      "text": "connection with them um between first"
+    },
+    {
+      "start": 1081.72,
+      "duration": 4.12,
+      "text": "speaking to them and and then ultimately"
+    },
+    {
+      "start": 1083.44,
+      "duration": 5.2,
+      "text": "when they Reed their inheritance and you"
+    },
+    {
+      "start": 1085.84,
+      "duration": 4.319,
+      "text": "know sometimes people you know jump for"
+    },
+    {
+      "start": 1088.64,
+      "duration": 3.68,
+      "text": "joy because they think of the money and"
+    },
+    {
+      "start": 1090.159,
+      "duration": 3.561,
+      "text": "you know Danny my boss's phrase that"
+    },
+    {
+      "start": 1092.32,
+      "duration": 3.599,
+      "text": "always sticks in my mind is Pennies from"
+    },
+    {
+      "start": 1093.72,
+      "duration": 3.76,
+      "text": "Heaven and you know that is important to"
+    },
+    {
+      "start": 1095.919,
+      "duration": 3.801,
+      "text": "people like you know who wouldn't want"
+    },
+    {
+      "start": 1097.48,
+      "duration": 4.559,
+      "text": "some money that's ultimately coming out"
+    },
+    {
+      "start": 1099.72,
+      "duration": 4.72,
+      "text": "of the blue from from someone that you"
+    },
+    {
+      "start": 1102.039,
+      "duration": 3.801,
+      "text": "know usually they didn't know but also"
+    },
+    {
+      "start": 1104.44,
+      "duration": 4.359,
+      "text": "the family side of it so I think getting"
+    },
+    {
+      "start": 1105.84,
+      "duration": 4.719,
+      "text": "involved in the in the in the stories"
+    },
+    {
+      "start": 1108.799,
+      "duration": 4.641,
+      "text": "the social history and just speaking to"
+    },
+    {
+      "start": 1110.559,
+      "duration": 4.721,
+      "text": "people about their ancestry I think you"
+    },
+    {
+      "start": 1113.44,
+      "duration": 4.44,
+      "text": "know everyone usually that comes in as a"
+    },
+    {
+      "start": 1115.28,
+      "duration": 5.12,
+      "text": "research role really finds that the most"
+    },
+    {
+      "start": 1117.88,
+      "duration": 4.679,
+      "text": "enjoyable part of the job I can imagine"
+    },
+    {
+      "start": 1120.4,
+      "duration": 4.84,
+      "text": "it being very rewarding as as a"
+    },
+    {
+      "start": 1122.559,
+      "duration": 5.12,
+      "text": "career super rewarding as a care career"
+    },
+    {
+      "start": 1125.24,
+      "duration": 4.64,
+      "text": "yeah I mean look I I never thought at 18"
+    },
+    {
+      "start": 1127.679,
+      "duration": 5.841,
+      "text": "that I would have a career coming up to"
+    },
+    {
+      "start": 1129.88,
+      "duration": 5.12,
+      "text": "almost 40 um and kind of it being most"
+    },
+    {
+      "start": 1133.52,
+      "duration": 4.279,
+      "text": "you know what's going to ultimately be"
+    },
+    {
+      "start": 1135.0,
+      "duration": 5.52,
+      "text": "most of my working life if not all of it"
+    },
+    {
+      "start": 1137.799,
+      "duration": 4.201,
+      "text": "and it never gets dull I know that"
+    },
+    {
+      "start": 1140.52,
+      "duration": 2.92,
+      "text": "sounds like something someone would just"
+    },
+    {
+      "start": 1142.0,
+      "duration": 3.08,
+      "text": "say but you know we get asked in"
+    },
+    {
+      "start": 1143.44,
+      "duration": 3.16,
+      "text": "interviews you know what do you enjoy"
+    },
+    {
+      "start": 1145.08,
+      "duration": 3.88,
+      "text": "about the job do you still enjoy it and"
+    },
+    {
+      "start": 1146.6,
+      "duration": 4.199,
+      "text": "and yeah um you know after up to 21"
+    },
+    {
+      "start": 1148.96,
+      "duration": 3.199,
+      "text": "years you do learn something new"
+    },
+    {
+      "start": 1150.799,
+      "duration": 3.601,
+      "text": "literally every day and again that's a"
+    },
+    {
+      "start": 1152.159,
+      "duration": 4.4,
+      "text": "bit of a cliche while you're always"
+    },
+    {
+      "start": 1154.4,
+      "duration": 4.12,
+      "text": "going to learn a different way of doing"
+    },
+    {
+      "start": 1156.559,
+      "duration": 4.24,
+      "text": "a bit of genealogy or a different way to"
+    },
+    {
+      "start": 1158.52,
+      "duration": 5.08,
+      "text": "trace someone or a different way to do"
+    },
+    {
+      "start": 1160.799,
+      "duration": 4.521,
+      "text": "research in however many countries there"
+    },
+    {
+      "start": 1163.6,
+      "duration": 4.079,
+      "text": "is overseas that you need to do research"
+    },
+    {
+      "start": 1165.32,
+      "duration": 4.56,
+      "text": "in so you never stop learning you work"
+    },
+    {
+      "start": 1167.679,
+      "duration": 3.641,
+      "text": "on cases B similar to like how a lawyer"
+    },
+    {
+      "start": 1169.88,
+      "duration": 3.159,
+      "text": "would work on a Case when they're"
+    },
+    {
+      "start": 1171.32,
+      "duration": 3.359,
+      "text": "conducting the administration so you do"
+    },
+    {
+      "start": 1173.039,
+      "duration": 4.921,
+      "text": "get that sense of satisfaction from"
+    },
+    {
+      "start": 1174.679,
+      "duration": 6.201,
+      "text": "opening a case working on it as a team"
+    },
+    {
+      "start": 1177.96,
+      "duration": 4.52,
+      "text": "so teamwork and then closing a case out"
+    },
+    {
+      "start": 1180.88,
+      "duration": 3.039,
+      "text": "and ultimately the beneficiaries"
+    },
+    {
+      "start": 1182.48,
+      "duration": 4.76,
+      "text": "receiving their inheritance so yeah"
+    },
+    {
+      "start": 1183.919,
+      "duration": 5.601,
+      "text": "super rewarding really good job for"
+    },
+    {
+      "start": 1187.24,
+      "duration": 3.6,
+      "text": "dinner parties when you're speaking to"
+    },
+    {
+      "start": 1189.52,
+      "duration": 3.72,
+      "text": "people there's pretty much you never"
+    },
+    {
+      "start": 1190.84,
+      "duration": 5.079,
+      "text": "meet another Pro anist I think funnny"
+    },
+    {
+      "start": 1193.24,
+      "duration": 5.0,
+      "text": "enough I did meet one once at a gig or"
+    },
+    {
+      "start": 1195.919,
+      "duration": 4.401,
+      "text": "something but that's one in 21 years and"
+    },
+    {
+      "start": 1198.24,
+      "duration": 3.799,
+      "text": "people do generally find it quite"
+    },
+    {
+      "start": 1200.32,
+      "duration": 3.16,
+      "text": "fascinating and there's not really many"
+    },
+    {
+      "start": 1202.039,
+      "duration": 3.281,
+      "text": "other jobs like it and to be honest out"
+    },
+    {
+      "start": 1203.48,
+      "duration": 4.52,
+      "text": "of everybody that I know and I speak to"
+    },
+    {
+      "start": 1205.32,
+      "duration": 4.8,
+      "text": "them about their job me personally I"
+    },
+    {
+      "start": 1208.0,
+      "duration": 4.48,
+      "text": "kind of I feel like I've got the best"
+    },
+    {
+      "start": 1210.12,
+      "duration": 5.16,
+      "text": "option other than what what I hear other"
+    },
+    {
+      "start": 1212.48,
+      "duration": 6.319,
+      "text": "people doing horses for courses but yeah"
+    },
+    {
+      "start": 1215.28,
+      "duration": 4.92,
+      "text": "I I do enjoy it brilliant thank you well"
+    },
+    {
+      "start": 1218.799,
+      "duration": 3.521,
+      "text": "we got we've got couple of questions"
+    },
+    {
+      "start": 1220.2,
+      "duration": 4.0,
+      "text": "coming so I'm gonna hand over to Nigel"
+    },
+    {
+      "start": 1222.32,
+      "duration": 3.839,
+      "text": "uh to ask you the questions if that's"
+    },
+    {
+      "start": 1224.2,
+      "duration": 3.56,
+      "text": "okay and then I've probably got one"
+    },
+    {
+      "start": 1226.159,
+      "duration": 2.801,
+      "text": "final question we'll finish off with but"
+    },
+    {
+      "start": 1227.76,
+      "duration": 3.919,
+      "text": "let's have some questions from our"
+    },
+    {
+      "start": 1228.96,
+      "duration": 5.64,
+      "text": "audience first so tell you says how do"
+    },
+    {
+      "start": 1231.679,
+      "duration": 5.521,
+      "text": "probate laws vary between different"
+    },
+    {
+      "start": 1234.6,
+      "duration": 5.199,
+      "text": "jurisdictions and how does that impact"
+    },
+    {
+      "start": 1237.2,
+      "duration": 5.2,
+      "text": "on on being able to do the"
+    },
+    {
+      "start": 1239.799,
+      "duration": 4.841,
+      "text": "resarch it's actually a super super good"
+    },
+    {
+      "start": 1242.4,
+      "duration": 3.639,
+      "text": "question um if someone came and asked"
+    },
+    {
+      "start": 1244.64,
+      "duration": 2.919,
+      "text": "that to me in an interview i' be like"
+    },
+    {
+      "start": 1246.039,
+      "duration": 6.081,
+      "text": "that is basically the type of person"
+    },
+    {
+      "start": 1247.559,
+      "duration": 6.281,
+      "text": "that's thinking to to what we need um"
+    },
+    {
+      "start": 1252.12,
+      "duration": 4.559,
+      "text": "that there isn't a blanket rule for"
+    },
+    {
+      "start": 1253.84,
+      "duration": 5.12,
+      "text": "succession even in the UK it varies um"
+    },
+    {
+      "start": 1256.679,
+      "duration": 4.281,
+      "text": "England and Wales have their own way of"
+    },
+    {
+      "start": 1258.96,
+      "duration": 3.16,
+      "text": "doing things Scotland has a slightly"
+    },
+    {
+      "start": 1260.96,
+      "duration": 2.88,
+      "text": "different way Northern island has a"
+    },
+    {
+      "start": 1262.12,
+      "duration": 3.76,
+      "text": "slightly different way irand has a"
+    },
+    {
+      "start": 1263.84,
+      "duration": 4.24,
+      "text": "completely different way and you realize"
+    },
+    {
+      "start": 1265.88,
+      "duration": 4.12,
+      "text": "when you research overseas every state"
+    },
+    {
+      "start": 1268.08,
+      "duration": 3.959,
+      "text": "in the US is slightly different every"
+    },
+    {
+      "start": 1270.0,
+      "duration": 4.559,
+      "text": "territory in Australia is slightly"
+    },
+    {
+      "start": 1272.039,
+      "duration": 4.841,
+      "text": "different so that's one of the top"
+    },
+    {
+      "start": 1274.559,
+      "duration": 3.681,
+      "text": "questions to ask if you're unsure if"
+    },
+    {
+      "start": 1276.88,
+      "duration": 2.919,
+      "text": "you've received the case from someone"
+    },
+    {
+      "start": 1278.24,
+      "duration": 3.6,
+      "text": "from a jurisdiction you're not familiar"
+    },
+    {
+      "start": 1279.799,
+      "duration": 4.88,
+      "text": "with what are the succession rules and"
+    },
+    {
+      "start": 1281.84,
+      "duration": 5.199,
+      "text": "ultimately when the case um is ready to"
+    },
+    {
+      "start": 1284.679,
+      "duration": 4.161,
+      "text": "pay out how is the estate divided"
+    },
+    {
+      "start": 1287.039,
+      "duration": 3.561,
+      "text": "because that can be something that for"
+    },
+    {
+      "start": 1288.84,
+      "duration": 3.52,
+      "text": "instance is very different from the way"
+    },
+    {
+      "start": 1290.6,
+      "duration": 4.72,
+      "text": "it is in England and Welles as opposed"
+    },
+    {
+      "start": 1292.36,
+      "duration": 6.559,
+      "text": "to Scotland so it it varies too much to"
+    },
+    {
+      "start": 1295.32,
+      "duration": 6.12,
+      "text": "cover everything um essentially though"
+    },
+    {
+      "start": 1298.919,
+      "duration": 6.401,
+      "text": "um you know it's it's going to go down"
+    },
+    {
+      "start": 1301.44,
+      "duration": 6.32,
+      "text": "the spouse issue parent spouse issue"
+    },
+    {
+      "start": 1305.32,
+      "duration": 5.12,
+      "text": "parents siblings route but again you"
+    },
+    {
+      "start": 1307.76,
+      "duration": 5.32,
+      "text": "know in some jurisdictions you would"
+    },
+    {
+      "start": 1310.44,
+      "duration": 4.56,
+      "text": "include like halfblood siblings in other"
+    },
+    {
+      "start": 1313.08,
+      "duration": 3.8,
+      "text": "jurisdictions you wouldn't so is's a"
+    },
+    {
+      "start": 1315.0,
+      "duration": 3.88,
+      "text": "massive distinction between different"
+    },
+    {
+      "start": 1316.88,
+      "duration": 3.76,
+      "text": "places you know because a lot of us grow"
+    },
+    {
+      "start": 1318.88,
+      "duration": 3.36,
+      "text": "up with half siblings and we count them"
+    },
+    {
+      "start": 1320.64,
+      "duration": 3.639,
+      "text": "as full siblings but sometimes when it"
+    },
+    {
+      "start": 1322.24,
+      "duration": 4.72,
+      "text": "comes to succession rules they're not so"
+    },
+    {
+      "start": 1324.279,
+      "duration": 5.081,
+      "text": "kind so is a good question it is worth"
+    },
+    {
+      "start": 1326.96,
+      "duration": 3.68,
+      "text": "finding out in each case well let's see"
+    },
+    {
+      "start": 1329.36,
+      "duration": 3.64,
+      "text": "if there are other questions that's good"
+    },
+    {
+      "start": 1330.64,
+      "duration": 4.44,
+      "text": "then what are the ethical considerations"
+    },
+    {
+      "start": 1333.0,
+      "duration": 5.76,
+      "text": "in Probate research particularly"
+    },
+    {
+      "start": 1335.08,
+      "duration": 6.56,
+      "text": "concerning privacy and sensitive"
+    },
+    {
+      "start": 1338.76,
+      "duration": 5.08,
+      "text": "information um I think to be honest a"
+    },
+    {
+      "start": 1341.64,
+      "duration": 5.32,
+      "text": "lot of the ethical considerations around"
+    },
+    {
+      "start": 1343.84,
+      "duration": 5.36,
+      "text": "privacy are um drawn up in the data"
+    },
+    {
+      "start": 1346.96,
+      "duration": 4.52,
+      "text": "protection rules um"
+    },
+    {
+      "start": 1349.2,
+      "duration": 5.28,
+      "text": "finders and I'm sure every other Pro"
+    },
+    {
+      "start": 1351.48,
+      "duration": 5.6,
+      "text": "Energy company abides by um data"
+    },
+    {
+      "start": 1354.48,
+      "duration": 4.36,
+      "text": "protection um so as long as we're"
+    },
+    {
+      "start": 1357.08,
+      "duration": 3.36,
+      "text": "constantly keeping in our mind that"
+    },
+    {
+      "start": 1358.84,
+      "duration": 4.6,
+      "text": "we're not to disclose private"
+    },
+    {
+      "start": 1360.44,
+      "duration": 4.839,
+      "text": "information to anyone um then I think"
+    },
+    {
+      "start": 1363.44,
+      "duration": 4.16,
+      "text": "that keeps us in good stad when we send"
+    },
+    {
+      "start": 1365.279,
+      "duration": 4.561,
+      "text": "out family trees to people um we'll be"
+    },
+    {
+      "start": 1367.6,
+      "duration": 5.48,
+      "text": "redacting people's full names dates of"
+    },
+    {
+      "start": 1369.84,
+      "duration": 4.92,
+      "text": "birth um gender pretty much you know"
+    },
+    {
+      "start": 1373.08,
+      "duration": 4.839,
+      "text": "these days anything that could be an"
+    },
+    {
+      "start": 1374.76,
+      "duration": 5.6,
+      "text": "identifying factor to um someone within"
+    },
+    {
+      "start": 1377.919,
+      "duration": 3.961,
+      "text": "a family you know we don't just pass"
+    },
+    {
+      "start": 1380.36,
+      "duration": 3.16,
+      "text": "someone's contact details over to"
+    },
+    {
+      "start": 1381.88,
+      "duration": 2.919,
+      "text": "someone although we might be asked"
+    },
+    {
+      "start": 1383.52,
+      "duration": 3.279,
+      "text": "sometimes can you put me in touch with"
+    },
+    {
+      "start": 1384.799,
+      "duration": 3.921,
+      "text": "so and so and you know when you're"
+    },
+    {
+      "start": 1386.799,
+      "duration": 3.801,
+      "text": "talking about more sensitive cases you"
+    },
+    {
+      "start": 1388.72,
+      "duration": 3.8,
+      "text": "know it could be that someone really"
+    },
+    {
+      "start": 1390.6,
+      "duration": 3.199,
+      "text": "doesn't want to be put in touch with"
+    },
+    {
+      "start": 1392.52,
+      "duration": 3.519,
+      "text": "anyone in their family that that's"
+    },
+    {
+      "start": 1393.799,
+      "duration": 3.561,
+      "text": "important for us to to remember as well"
+    },
+    {
+      "start": 1396.039,
+      "duration": 3.12,
+      "text": "that we're not going to offer to put"
+    },
+    {
+      "start": 1397.36,
+      "duration": 4.4,
+      "text": "someone in contact if they've explicitly"
+    },
+    {
+      "start": 1399.159,
+      "duration": 5.12,
+      "text": "told us um you know I I really don't"
+    },
+    {
+      "start": 1401.76,
+      "duration": 3.799,
+      "text": "want that to happen so you have to you"
+    },
+    {
+      "start": 1404.279,
+      "duration": 3.88,
+      "text": "do have to have quite a lot of empathy"
+    },
+    {
+      "start": 1405.559,
+      "duration": 5.72,
+      "text": "in the in the job as a whole um you know"
+    },
+    {
+      "start": 1408.159,
+      "duration": 5.361,
+      "text": "some of situations we get into can be"
+    },
+    {
+      "start": 1411.279,
+      "duration": 3.4,
+      "text": "quite um you know sensitive it could be"
+    },
+    {
+      "start": 1413.52,
+      "duration": 2.399,
+      "text": "that sometimes we're telling someone"
+    },
+    {
+      "start": 1414.679,
+      "duration": 2.6,
+      "text": "that their son or daughter has passed"
+    },
+    {
+      "start": 1415.919,
+      "duration": 4.081,
+      "text": "away which no one really wants to ever"
+    },
+    {
+      "start": 1417.279,
+      "duration": 4.721,
+      "text": "do um so you know just being Mindful and"
+    },
+    {
+      "start": 1420.0,
+      "duration": 4.48,
+      "text": "empathetic but also like reminding"
+    },
+    {
+      "start": 1422.0,
+      "duration": 4.919,
+      "text": "ourselves of the general data protection"
+    },
+    {
+      "start": 1424.48,
+      "duration": 4.36,
+      "text": "rules um is is really important because"
+    },
+    {
+      "start": 1426.919,
+      "duration": 3.161,
+      "text": "the last thing we want to do is cross"
+    },
+    {
+      "start": 1428.84,
+      "duration": 3.48,
+      "text": "any boundaries that we're not supposed"
+    },
+    {
+      "start": 1430.08,
+      "duration": 4.68,
+      "text": "to and I hope that answers the"
+    },
+    {
+      "start": 1432.32,
+      "duration": 5.839,
+      "text": "question definitely definitely but as"
+    },
+    {
+      "start": 1434.76,
+      "duration": 5.44,
+      "text": "you brought up family trees um make hard"
+    },
+    {
+      "start": 1438.159,
+      "duration": 3.88,
+      "text": "to want want to know whether you have"
+    },
+    {
+      "start": 1440.2,
+      "duration": 3.839,
+      "text": "any technology that actually helps you"
+    },
+    {
+      "start": 1442.039,
+      "duration": 4.281,
+      "text": "to draw up the family trees or do you do"
+    },
+    {
+      "start": 1444.039,
+      "duration": 3.361,
+      "text": "it manually like it looks like you do on"
+    },
+    {
+      "start": 1446.32,
+      "duration": 3.0,
+      "text": "the TV"
+    },
+    {
+      "start": 1447.4,
+      "duration": 4.2,
+      "text": "program yeah it's a good question as"
+    },
+    {
+      "start": 1449.32,
+      "duration": 3.719,
+      "text": "well it has that's been something that"
+    },
+    {
+      "start": 1451.6,
+      "duration": 3.84,
+      "text": "I'm sure all of us have seen we've all"
+    },
+    {
+      "start": 1453.039,
+      "duration": 4.601,
+      "text": "had to make some changes since the"
+    },
+    {
+      "start": 1455.44,
+      "duration": 5.28,
+      "text": "pandemic and you know the way we draw up"
+    },
+    {
+      "start": 1457.64,
+      "duration": 4.519,
+      "text": "our family trees did change during covid"
+    },
+    {
+      "start": 1460.72,
+      "duration": 4.199,
+      "text": "because we had to collaborate with each"
+    },
+    {
+      "start": 1462.159,
+      "duration": 5.0,
+      "text": "other online a lot more so as much as a"
+    },
+    {
+      "start": 1464.919,
+      "duration": 3.76,
+      "text": "lot of us used to love sticking A3"
+    },
+    {
+      "start": 1467.159,
+      "duration": 3.0,
+      "text": "sheets of paper together and then you"
+    },
+    {
+      "start": 1468.679,
+      "duration": 3.281,
+      "text": "have to add in a stem so you'd get your"
+    },
+    {
+      "start": 1470.159,
+      "duration": 4.0,
+      "text": "scissors out and chop up the tree and"
+    },
+    {
+      "start": 1471.96,
+      "duration": 4.0,
+      "text": "then like you know stick a bit of paper"
+    },
+    {
+      "start": 1474.159,
+      "duration": 3.321,
+      "text": "in with a bit of cellotape and you know"
+    },
+    {
+      "start": 1475.96,
+      "duration": 2.959,
+      "text": "everything was I used to love that I"
+    },
+    {
+      "start": 1477.48,
+      "duration": 2.52,
+      "text": "used to use a pencil and ruler because"
+    },
+    {
+      "start": 1478.919,
+      "duration": 3.64,
+      "text": "I'm like how many people do that on"
+    },
+    {
+      "start": 1480.0,
+      "duration": 4.2,
+      "text": "their day-to-day job um but yeah"
+    },
+    {
+      "start": 1482.559,
+      "duration": 4.0,
+      "text": "inevitably now it's gone into more of"
+    },
+    {
+      "start": 1484.2,
+      "duration": 3.56,
+      "text": "like a tech version of it so we have a"
+    },
+    {
+      "start": 1486.559,
+      "duration": 3.441,
+      "text": "software that we can plug the"
+    },
+    {
+      "start": 1487.76,
+      "duration": 4.44,
+      "text": "information into and it generates like a"
+    },
+    {
+      "start": 1490.0,
+      "duration": 5.0,
+      "text": "really nice family tree still so it also"
+    },
+    {
+      "start": 1492.2,
+      "duration": 5.079,
+      "text": "saves a lot of time like uh transferring"
+    },
+    {
+      "start": 1495.0,
+      "duration": 4.48,
+      "text": "a handwritten family tree and my"
+    },
+    {
+      "start": 1497.279,
+      "duration": 4.12,
+      "text": "handwriting was never really that good"
+    },
+    {
+      "start": 1499.48,
+      "duration": 2.96,
+      "text": "um you know it does avoid the mistakes"
+    },
+    {
+      "start": 1501.399,
+      "duration": 2.721,
+      "text": "that you could make from going from a"
+    },
+    {
+      "start": 1502.44,
+      "duration": 3.4,
+      "text": "handwritten family tree to transferring"
+    },
+    {
+      "start": 1504.12,
+      "duration": 3.799,
+      "text": "it into a database so we're skipping a"
+    },
+    {
+      "start": 1505.84,
+      "duration": 3.48,
+      "text": "step so ultimately it's it's good but"
+    },
+    {
+      "start": 1507.919,
+      "duration": 5.961,
+      "text": "yeah we do have software that can do"
+    },
+    {
+      "start": 1509.32,
+      "duration": 7.04,
+      "text": "that for us okay um and how is AI being"
+    },
+    {
+      "start": 1513.88,
+      "duration": 5.0,
+      "text": "utilized in prob big research and does"
+    },
+    {
+      "start": 1516.36,
+      "duration": 5.84,
+      "text": "it have an impact on efficiency and"
+    },
+    {
+      "start": 1518.88,
+      "duration": 4.72,
+      "text": "accuracy again good question um you know"
+    },
+    {
+      "start": 1522.2,
+      "duration": 3.199,
+      "text": "I think my answer now is going to be"
+    },
+    {
+      "start": 1523.6,
+      "duration": 3.72,
+      "text": "different today than it will be in 10"
+    },
+    {
+      "start": 1525.399,
+      "duration": 5.441,
+      "text": "years time"
+    },
+    {
+      "start": 1527.32,
+      "duration": 7.959,
+      "text": "um at the moment AI hasn't had a massive"
+    },
+    {
+      "start": 1530.84,
+      "duration": 6.559,
+      "text": "impact on on on probate gen energy um"
+    },
+    {
+      "start": 1535.279,
+      "duration": 3.961,
+      "text": "there are people there is a website in"
+    },
+    {
+      "start": 1537.399,
+      "duration": 4.241,
+      "text": "particular one of the geney websites I"
+    },
+    {
+      "start": 1539.24,
+      "duration": 4.76,
+      "text": "think it's um my Heritage which has"
+    },
+    {
+      "start": 1541.64,
+      "duration": 4.12,
+      "text": "launched an AI tool it's pretty much one"
+    },
+    {
+      "start": 1544.0,
+      "duration": 3.159,
+      "text": "of these AI tools where you're going to"
+    },
+    {
+      "start": 1545.76,
+      "duration": 3.32,
+      "text": "ask a question and it's going to kind of"
+    },
+    {
+      "start": 1547.159,
+      "duration": 3.64,
+      "text": "just give you similar results than"
+    },
+    {
+      "start": 1549.08,
+      "duration": 3.36,
+      "text": "you're going to get by looking through"
+    },
+    {
+      "start": 1550.799,
+      "duration": 4.201,
+      "text": "the search options it just makes it a"
+    },
+    {
+      "start": 1552.44,
+      "duration": 5.32,
+      "text": "bit easier for you whether it's AI or"
+    },
+    {
+      "start": 1555.0,
+      "duration": 4.919,
+      "text": "not it might just be answering questions"
+    },
+    {
+      "start": 1557.76,
+      "duration": 4.159,
+      "text": "focusing some of the results you know"
+    },
+    {
+      "start": 1559.919,
+      "duration": 4.48,
+      "text": "maybe one day you"
+    },
+    {
+      "start": 1561.919,
+      "duration": 4.441,
+      "text": "know go back to the TV show you'd have"
+    },
+    {
+      "start": 1564.399,
+      "duration": 3.241,
+      "text": "people saying you know like I your job"
+    },
+    {
+      "start": 1566.36,
+      "duration": 3.08,
+      "text": "looks really easy don't you just press a"
+    },
+    {
+      "start": 1567.64,
+      "duration": 3.039,
+      "text": "button and everything comes up I was"
+    },
+    {
+      "start": 1569.44,
+      "duration": 3.76,
+      "text": "thinking I hope we didn't make it look"
+    },
+    {
+      "start": 1570.679,
+      "duration": 4.321,
+      "text": "that easy on the TV show but um who"
+    },
+    {
+      "start": 1573.2,
+      "duration": 4.079,
+      "text": "knows maybe one day that will happen but"
+    },
+    {
+      "start": 1575.0,
+      "duration": 3.96,
+      "text": "I don't think anything that's AI for now"
+    },
+    {
+      "start": 1577.279,
+      "duration": 3.88,
+      "text": "like a lot of other industry Industries"
+    },
+    {
+      "start": 1578.96,
+      "duration": 5.959,
+      "text": "is going to kind of avoid or negate the"
+    },
+    {
+      "start": 1581.159,
+      "duration": 7.281,
+      "text": "need for um human kind of cross"
+    },
+    {
+      "start": 1584.919,
+      "duration": 4.64,
+      "text": "referencing and checking um and yeah for"
+    },
+    {
+      "start": 1588.44,
+      "duration": 2.839,
+      "text": "you can't just press a button and the"
+    },
+    {
+      "start": 1589.559,
+      "duration": 4.48,
+      "text": "whole family tree comes up when that"
+    },
+    {
+      "start": 1591.279,
+      "duration": 5.481,
+      "text": "happens um I will be talking to you from"
+    },
+    {
+      "start": 1594.039,
+      "duration": 4.12,
+      "text": "another industry I guess but um yeah I"
+    },
+    {
+      "start": 1596.76,
+      "duration": 4.12,
+      "text": "think it's I think it's a long way off"
+    },
+    {
+      "start": 1598.159,
+      "duration": 4.441,
+      "text": "knowing how manual it usually is I mean"
+    },
+    {
+      "start": 1600.88,
+      "duration": 3.56,
+      "text": "you can be you can be fortunate and you"
+    },
+    {
+      "start": 1602.6,
+      "duration": 4.079,
+      "text": "can see someone's put their family tree"
+    },
+    {
+      "start": 1604.44,
+      "duration": 5.92,
+      "text": "online or something that's kind of as as"
+    },
+    {
+      "start": 1606.679,
+      "duration": 6.12,
+      "text": "kind of um short cuty as it can get um"
+    },
+    {
+      "start": 1610.36,
+      "duration": 5.919,
+      "text": "but yeah for AI I think we'll be"
+    },
+    {
+      "start": 1612.799,
+      "duration": 4.441,
+      "text": "probably after kind of I don't know I"
+    },
+    {
+      "start": 1616.279,
+      "duration": 4.12,
+      "text": "guess we're probably gonna see more of"
+    },
+    {
+      "start": 1617.24,
+      "duration": 5.08,
+      "text": "an impact on probate lawyers before it"
+    },
+    {
+      "start": 1620.399,
+      "duration": 4.721,
+      "text": "comes down to the genealogists I guess"
+    },
+    {
+      "start": 1622.32,
+      "duration": 4.44,
+      "text": "because what we do is so organic and a"
+    },
+    {
+      "start": 1625.12,
+      "duration": 4.919,
+      "text": "lot of cross referencing we're not kind"
+    },
+    {
+      "start": 1626.76,
+      "duration": 6.24,
+      "text": "of producing set templates documents"
+    },
+    {
+      "start": 1630.039,
+      "duration": 5.481,
+      "text": "things okay I think that's that's all of"
+    },
+    {
+      "start": 1633.0,
+      "duration": 4.08,
+      "text": "the questions we've got Shantel lovely"
+    },
+    {
+      "start": 1635.52,
+      "duration": 3.0,
+      "text": "thank you Ryan I've just got one last"
+    },
+    {
+      "start": 1637.08,
+      "duration": 4.16,
+      "text": "question before we finish off then just"
+    },
+    {
+      "start": 1638.52,
+      "duration": 5.56,
+      "text": "give you a chance any final bit of"
+    },
+    {
+      "start": 1641.24,
+      "duration": 4.039,
+      "text": "advice you'd like to give paralegals if"
+    },
+    {
+      "start": 1644.08,
+      "duration": 2.8,
+      "text": "they're thinking about a career in"
+    },
+    {
+      "start": 1645.279,
+      "duration": 3.721,
+      "text": "Probate"
+    },
+    {
+      "start": 1646.88,
+      "duration": 4.159,
+      "text": "research I would so hopefully you kind"
+    },
+    {
+      "start": 1649.0,
+      "duration": 3.88,
+      "text": "of picked up a Vibe of or kind of"
+    },
+    {
+      "start": 1651.039,
+      "duration": 3.321,
+      "text": "General inkling of what we're kind of"
+    },
+    {
+      "start": 1652.88,
+      "duration": 2.72,
+      "text": "about when we talk about probate"
+    },
+    {
+      "start": 1654.36,
+      "duration": 2.88,
+      "text": "research but I would say if you're"
+    },
+    {
+      "start": 1655.6,
+      "duration": 3.16,
+      "text": "someone that likes a challenge if you're"
+    },
+    {
+      "start": 1657.24,
+      "duration": 4.24,
+      "text": "someone that likes to get to the bottom"
+    },
+    {
+      "start": 1658.76,
+      "duration": 4.96,
+      "text": "of things if you have an interest in law"
+    },
+    {
+      "start": 1661.48,
+      "duration": 5.72,
+      "text": "probate or family history then this is"
+    },
+    {
+      "start": 1663.72,
+      "duration": 5.52,
+      "text": "pretty much the the ideal job for you um"
+    },
+    {
+      "start": 1667.2,
+      "duration": 4.88,
+      "text": "I kind of said at a graduate um"
+    },
+    {
+      "start": 1669.24,
+      "duration": 4.24,
+      "text": "recruitment day last summer um you know"
+    },
+    {
+      "start": 1672.08,
+      "duration": 3.719,
+      "text": "if you're someone that likes watching"
+    },
+    {
+      "start": 1673.48,
+      "duration": 3.52,
+      "text": "these kind of true crime documentaries"
+    },
+    {
+      "start": 1675.799,
+      "duration": 2.48,
+      "text": "and you kind of want to binge it because"
+    },
+    {
+      "start": 1677.0,
+      "duration": 3.88,
+      "text": "you want to know what happens at the end"
+    },
+    {
+      "start": 1678.279,
+      "duration": 3.921,
+      "text": "or you like reading a detective novel"
+    },
+    {
+      "start": 1680.88,
+      "duration": 3.2,
+      "text": "it's pretty much like doing that every"
+    },
+    {
+      "start": 1682.2,
+      "duration": 3.76,
+      "text": "day and getting paid for it I'm not"
+    },
+    {
+      "start": 1684.08,
+      "duration": 3.479,
+      "text": "going to lie sometimes it's just going"
+    },
+    {
+      "start": 1685.96,
+      "duration": 3.92,
+      "text": "onto someone's Facebook and trying to"
+    },
+    {
+      "start": 1687.559,
+      "duration": 3.681,
+      "text": "figure out there's this picture of this"
+    },
+    {
+      "start": 1689.88,
+      "duration": 3.88,
+      "text": "person and they're saying it's their dad"
+    },
+    {
+      "start": 1691.24,
+      "duration": 3.679,
+      "text": "and you've only got you know happy you"
+    },
+    {
+      "start": 1693.76,
+      "duration": 2.72,
+      "text": "know not happy anniversary but"
+    },
+    {
+      "start": 1694.919,
+      "duration": 2.841,
+      "text": "commemorations on this anniversary"
+    },
+    {
+      "start": 1696.48,
+      "duration": 2.799,
+      "text": "there's a lot of information you can"
+    },
+    {
+      "start": 1697.76,
+      "duration": 3.24,
+      "text": "glean from just checking out someone's"
+    },
+    {
+      "start": 1699.279,
+      "duration": 3.681,
+      "text": "Social Media so again I always say if"
+    },
+    {
+      "start": 1701.0,
+      "duration": 3.84,
+      "text": "you're the person that uh your friends"
+    },
+    {
+      "start": 1702.96,
+      "duration": 3.64,
+      "text": "come to when someone's dating someone"
+    },
+    {
+      "start": 1704.84,
+      "duration": 3.439,
+      "text": "new in your social group and you're the"
+    },
+    {
+      "start": 1706.6,
+      "duration": 5.319,
+      "text": "one that's like found out their cousin"
+    },
+    {
+      "start": 1708.279,
+      "duration": 5.24,
+      "text": "cat's name within half an hour then um"
+    },
+    {
+      "start": 1711.919,
+      "duration": 3.36,
+      "text": "you know it's it's that sort of stuff"
+    },
+    {
+      "start": 1713.519,
+      "duration": 3.321,
+      "text": "it's kind of making it lighthearted but"
+    },
+    {
+      "start": 1715.279,
+      "duration": 2.721,
+      "text": "if you like a challenge you like casew"
+    },
+    {
+      "start": 1716.84,
+      "duration": 3.48,
+      "text": "workk and seeing something through from"
+    },
+    {
+      "start": 1718.0,
+      "duration": 5.44,
+      "text": "start to finish and you have a kind of"
+    },
+    {
+      "start": 1720.32,
+      "duration": 5.239,
+      "text": "investigative kind of head on you then"
+    },
+    {
+      "start": 1723.44,
+      "duration": 4.079,
+      "text": "there probably is no better job other"
+    },
+    {
+      "start": 1725.559,
+      "duration": 3.801,
+      "text": "than kind of being a detective or police"
+    },
+    {
+      "start": 1727.519,
+      "duration": 3.321,
+      "text": "officer or something but we get to do it"
+    },
+    {
+      "start": 1729.36,
+      "duration": 3.039,
+      "text": "from the comfort of our home and for"
+    },
+    {
+      "start": 1730.84,
+      "duration": 3.6,
+      "text": "positive reasons as well I should point"
+    },
+    {
+      "start": 1732.399,
+      "duration": 4.4,
+      "text": "out it's all positive tracing so that's"
+    },
+    {
+      "start": 1734.44,
+      "duration": 5.839,
+      "text": "important to to to put that distinction"
+    },
+    {
+      "start": 1736.799,
+      "duration": 5.681,
+      "text": "in place between us and unusual"
+    },
+    {
+      "start": 1740.279,
+      "duration": 3.64,
+      "text": "detectors lovely thank you so much"
+    },
+    {
+      "start": 1742.48,
+      "duration": 3.4,
+      "text": "that's Ryan Gregory International"
+    },
+    {
+      "start": 1743.919,
+      "duration": 3.721,
+      "text": "manager at finders International be"
+    },
+    {
+      "start": 1745.88,
+      "duration": 4.72,
+      "text": "talking about having a career in Probate"
+    },
+    {
+      "start": 1747.64,
+      "duration": 4.84,
+      "text": "research um as Nigel may have mentioned"
+    },
+    {
+      "start": 1750.6,
+      "duration": 4.48,
+      "text": "I can't remember uh this webinar will be"
+    },
+    {
+      "start": 1752.48,
+      "duration": 4.559,
+      "text": "available to members only on the NP"
+    },
+    {
+      "start": 1755.08,
+      "duration": 3.8,
+      "text": "website for the F for three months and"
+    },
+    {
+      "start": 1757.039,
+      "duration": 4.12,
+      "text": "then for non-members they can check it"
+    },
+    {
+      "start": 1758.88,
+      "duration": 4.44,
+      "text": "out um after three months time so thank"
+    },
+    {
+      "start": 1761.159,
+      "duration": 4.0,
+      "text": "you so much Ryan for joining us today"
+    },
+    {
+      "start": 1763.32,
+      "duration": 3.32,
+      "text": "and sharing your knowledge with us and I"
+    },
+    {
+      "start": 1765.159,
+      "duration": 4.88,
+      "text": "I feel really inspired now I want to go"
+    },
+    {
+      "start": 1766.64,
+      "duration": 3.399,
+      "text": "off and do a career"
+    },
+    {
+      "start": 1770.2,
+      "duration": 6.599,
+      "text": "yeah it sounds"
+    },
+    {
+      "start": 1772.64,
+      "duration": 6.84,
+      "text": "fascinating yeah I feel like joining"
+    },
+    {
+      "start": 1776.799,
+      "duration": 5.0,
+      "text": "finders I did a good there you go that's"
+    },
+    {
+      "start": 1779.48,
+      "duration": 5.439,
+      "text": "good you might find you suddenly get a"
+    },
+    {
+      "start": 1781.799,
+      "duration": 4.48,
+      "text": "flurry of of CVS coming over in the next"
+    },
+    {
+      "start": 1784.919,
+      "duration": 3.88,
+      "text": "few"
+    },
+    {
+      "start": 1786.279,
+      "duration": 4.561,
+      "text": "weeks um so thank you so"
+    },
+    {
+      "start": 1788.799,
+      "duration": 4.0,
+      "text": "much H just a quick reminder to"
+    },
+    {
+      "start": 1790.84,
+      "duration": 3.64,
+      "text": "everybody our next webinar is the 5th of"
+    },
+    {
+      "start": 1792.799,
+      "duration": 4.161,
+      "text": "June and that's talking about how to"
+    },
+    {
+      "start": 1794.48,
+      "duration": 4.439,
+      "text": "deal with overwhelm the following one is"
+    },
+    {
+      "start": 1796.96,
+      "duration": 3.559,
+      "text": "the 11th of jly July and that's with"
+    },
+    {
+      "start": 1798.919,
+      "duration": 4.201,
+      "text": "barbrey talking about how to convert"
+    },
+    {
+      "start": 1800.519,
+      "duration": 5.04,
+      "text": "your n paralal qualifications to become"
+    },
+    {
+      "start": 1803.12,
+      "duration": 4.32,
+      "text": "a solicitor so thank you so much for"
+    },
+    {
+      "start": 1805.559,
+      "duration": 4.201,
+      "text": "joining us today everybody uh there is a"
+    },
+    {
+      "start": 1807.44,
+      "duration": 3.92,
+      "text": "feedback Link in the chat so if you got"
+    },
+    {
+      "start": 1809.76,
+      "duration": 3.6,
+      "text": "any feedback on the webinar please do"
+    },
+    {
+      "start": 1811.36,
+      "duration": 3.48,
+      "text": "fill that in including if you've got"
+    },
+    {
+      "start": 1813.36,
+      "duration": 3.4,
+      "text": "topics you'd like us to cover in the"
+    },
+    {
+      "start": 1814.84,
+      "duration": 3.48,
+      "text": "future maybe there's a career you really"
+    },
+    {
+      "start": 1816.76,
+      "duration": 3.08,
+      "text": "fancy that we haven't talked about yet"
+    },
+    {
+      "start": 1818.32,
+      "duration": 3.04,
+      "text": "and we can maybe help you get some"
+    },
+    {
+      "start": 1819.84,
+      "duration": 3.679,
+      "text": "information on how to get into that"
+    },
+    {
+      "start": 1821.36,
+      "duration": 3.48,
+      "text": "particular sector so thanks very much"
+    },
+    {
+      "start": 1823.519,
+      "duration": 3.0,
+      "text": "again Ryan Gregory our guest from"
+    },
+    {
+      "start": 1824.84,
+      "duration": 3.76,
+      "text": "finders International and thank you all"
+    },
+    {
+      "start": 1826.519,
+      "duration": 4.081,
+      "text": "to all of you for joining us today for"
+    },
+    {
+      "start": 1828.6,
+      "duration": 6.0,
+      "text": "this na webinar on probate research"
+    },
+    {
+      "start": 1830.6,
+      "duration": 4.0,
+      "text": "we'll hopefully see you next month"
+    }
+  ],
+  "full_text": "so hello my name is Shantel cook I'll be hosting today's NP webinar with me um I've got Amanda Hamilton who is our former Pat Uh CEO and our current Patron um also the one that's labeled Jane but looks like a bloke that's Nigel um he looks after our marketing he'll be in the background dealing with any Tech issues so if there's anything that's um any kind of tech problems or whatever that you need to talk to Nigel about message him directly through the chat and he'll be looking after the questions and putting in links into the chat and so on as well so uh will be helping us out there in the background um and our guest today is Ryan Gregory who's the international manager from finders International and we'll be talking about having a career in Probate research just before we do that though I've got a few announcements to give you so first of all um our next webinar jumping ahead is June the 5th and if you've ever felt overwhelmed in your job that kind of feeling of I can't put anything more on the list or I'm going to explode then this webinar on the 5th of June is definitely one for you because it's a webinar talking all about how to deal with overwhelm then in July uh we have a webinar booked in already for the 11th of July and that is with barbar and we'll be talking about how to convert your nap qualifications into becoming a solicitor if that's something that you've ever been interested in doing so 5th of June for overwhelm and 11th of July for becoming a solicitor pop those in your diary and we'll be sending out detail more details about them soon uh we'll have no webinar in August it's time to have a summer holiday and then we're back again in September big announcement you are the very very first to know that we have a date and confirmed for this year's National pargal day that will take place on Monday 11th of November that's Monday the 11th of November in the evening and that'll be at the Law Society in lond there'll be more details coming soon but please mark your Diaries because we'd really love to see all of you for the big celebrations at this year's National paralal Day 11th of November at the Law Society right I'd like to welcome our guest then Ryan Gregory the international manager of finders International so you probably know this already as I bet you've seen them on TV but if in case you don't uh finders International is an award-winning probate research firm that traces the beneficiaries to Estates property and assets we'll be talking a little bit about how to have a career in Probate research what it involves and what you need to know about it so Ryan can I welcome you along to this today's n webinar hi thank you for having me uh hi to everyone that's watching I have to apologize firstly just to anyone that was expecting Danny cin the MD of finders you're going to have to put up with me instead but hopefully it'll be interesting enough for everyone to stick through to the end and yeah once again thanks for having me pleasure so I've got some questions get to get us going first one is kind of the obvious one really what is probate research what does it actually involve um so probate is the administration and the transfer of assets previously owned by a deceased person then we combine that with the research so probate research overall is assisting estate administrators and others in the probate industry just to trace and approve the claims of rightful heirs um when I joined in the industry and I think largely is still called probate gen energy on occasion so then again we're just linking the probate side of it to the genealogy side of it I think probably your question is quite apt because more and more we're having to do bits which aren't really uh genealogy related there's a lot of Investigation there's a lot of DET detective work there's sometimes a bit of DNA work as well so research probably is the more modern interpretation of what used to be called Cate gen enery and specifically what does finders do so finders pretty much does that I mean we started um tracing beneficiaries to Estates unclaimed assets unclaimed property as they like to call it in the in the US more so traditionally within the UK uh where the person passed away and where the assets are based but we do and have grown into being quite a global presence so we have clients overseas as well so we're trying to find missing beneficiaries to unclaimed assets essentially and a lot of those would be probate Estates but you know over the years finders has Diversified into other things which can agid people in the probate industry such as just simply verifying the family tree um obtaining missing documents be it a death certificate or marriage certificate or birth certificate for someone in the UK or more complicated and and a bit more expensive someone overseas they need a death certificate from Thailand for example U missing will searches to find out if someone left a will obviously important if you're going to ascertain whether they died in testate or not U missing asset searches so we can work with the estate where representatives to look for any assets that are due to the estate um transfer of international assets super comp complicated area of work but we have someone that's specialized they speak to um estate administrators and we can put in assets from places like the US and shares missing assets and also a part that maybe sometimes is overlooked when we talk about probate research is just reuniting families together it's something we do on a on a daily basis as well and it's kind of byproduct of what we do but it's not overlooked because it is one of the nier parts of the job now it sounds like there's all sorts of things involved like you mentioned private almost like a being private investigator or something but also then there's the legal things and there's genealogy and genealogy and there's well all sorts of things so therefore what actual qualifications do you need to do that because it almost feels like you come from it from anywhere well yeah precisely that you can come from it from anywhere really um myself my personal story is that I left school at 16 after getting as levels it was the first year of having to pay for uni didn't really have the funds for it had to get a job I was living at home I didn't go to UNI I got a couple of jobs and then I landed um a job at finders International just by um by chance really when I was 18 I kind of stuck with the company kind of grew through uh as the company grew over the last 21 years um so you can do that you know we'd happily look at a school lever who's passionate in what we do or we look at somebody we work with people in finders who were maybe studying a law degree or halfway through their conversion and they decided look I like law um but maybe it's not for me I don't want to work the really long hours um you know I want to do something that's maybe going to benefit um people a bit more and we speak to people where they did their modules and they touch on the probate module and they kind of stick on it and then they're like they look around and they're like wow I never really knew you guys existed and then we interview them and they can come in I would say when we look for people um we'll judge anyone based on their CV but I mean there's particular degrees that we do find interesting I think a law degree is useful given that we work in Probate something like a history degree or a criminology degree or history of art we're kind of looking for someone that you don't have to have a a background in law but someone that has good leral thinking you know someone that wants to pick up something um kind of pick it apart solve the puzzle and then kind of um you know solve it and pass it over to the relevant people so just someone really with a keen interest in either law genealogy or or probate would be great so I guess in that case anybody really with a a pro a paralal qualification from nelp would be an ideal person to come in 100% yeah if we see someone um with NP on their CV you know automatically it's going to promote anybody's interests that's looking to hire within finders for sure so I know most of your your staff are actually nelt members aren't they they are yeah we became nelt members via the the kind of the on the job experience that we've had in the probate research field um so you know it's it's pretty much something that we've been able to kind of attach to ourselves and to promote you know within finders and to to clients be it a beneficiary or a cister to say look these people are experienced and we are part of a a wider group of people that share a common values and and similar experiences so although I know you've talked a little bit about kind of where you can come from and having some kind of understanding of the law is is useful is there um you know if if you haven't worked in Probate at all before is it what what's a good place to go to get experience I mean can you literally come in with nothing or do you need to go off and do something else first I would say you can literally come in with with nothing um you know any if we talk of any company I guess as a whole there's going to be varying recruitment requirements throughout the year and throughout the various years you know if you happen to hit a company at the right time and they're looking for someone and you know you're interested in that job it's really going to help uh your chances but you know a way to get your foot in the door maybe potentially if someone isn't hiring um in our industry you know having had a look at your family history is going to put you quite near the top of the list um for me personally particularly if I'm looking for for a research to somebody that has done that that has researched their family tree um that's really good for research role but some people come to us because they want to work in our setting and and they're coming from an admin background in which case you know you want to be promoting your communication skills your teamwork your accuracy your self motivation and things like that so I think it's just about considering the the role that you're going for some of it will be pot lock with the recruitment needs of the company but kind of think about the role you're going for and kind of promote um yourself based on that really and like I said anyone with an interest in genealogy when I started when I was 18 no one really knew what genealogy was so I tell people I a probate genealogist and I be like oh genealogist that's interesting does that do you study rocks or um you know I was like that's a geologist the number of times I had that conversation when I was like starting off at finders was quite quite funny but nowadays we have things like ancestry.com and we have TV shows about it um like BBC air hunters and things that's why I think most people I probably know the difference between geology and genealogy now but yeah certainly um if you want to kind of highlight your CV maybe have a bit of a dig around and you know you never know what you're going to find if you don't want to go straight in for research in your family history in the traditional way do your ancestry DNA because I find that's a really good way to pull yourself into some interesting stories within your family and contacting people and asking the right questions and dismissing any kind of erroneous leads it's all this sort of um things that we would certainly be looking for yeah now you mentioned the TV and air Hunters so I have to ask what's that like doing that is it as glamorous and as exciting as it looks or is it just a lot of hard work I have to say um I think Danny cornered myself and Amy Moyes in a pub on a team social you know buttered us up with a couple of drinks maybe then pretty much told us that we'll be fronting air hunters for Finders we joined the TV show we kind of went into it Kicking and Screaming a little bit just you know something different um there's a a big chunk of anxiety which comes with putting yourself out there I think in front of your peers as well to be judged I think knowing that everyone in your industry is going to see it but then the wider TV audience family members and friends you know is quite terrifying when they first put you in front of your open plan office and stick a TV Camera in front of your face and you know it's going to go out to to a million people or something once you get over the nerves is it was an interesting experience um it wasn't all high glamour as you kind of alluded to it was a lot of hard work to be honest we probably filmed with the TV crew for sometimes up to six months of the year not every single case we filmed would get through to being on the TV show we would often film a lot of cases and then we didn't find the right social history to make it interesting for the show or we'd have really interesting social history but we couldn't find a beneficiary to speak to the producers or we didn't know enough about the deceased person obviously that's the story that people want to know about you know do we have any pictures and photos so quite a lot of the filming that we did ended up on The Cutting Room floor so um there was a lot of kind of late staying behind at the end of the day doing piece pieces to camera when you really just want to go home and your brain is a bit fried there was a lot of running around with the team kind of sharing up bits of um family trees and a lot of the work that we were filming is a competitive type competitive type of work from the bone of Baner list which is the unclaimed estate and kind of the last thing you want when you're rushing around trying to be the first person to ring a potential beneficiary is someone with a camera saying hey could you just tell me what you're doing because you're trying to not look fastled doing that and then you're trying to speak to the beneficiaries but it's one of these things it was a long-term project and every time you wrapped on a series and then waited for it to come on and you watched it back it was always really nice they were really good at kind of extrapolating the social history element of it and for me personally I'd been in the industry quite a long time and I I didn't really have the time or the the inclination to think too much about the social history and it kind of changed the way I thought about the families and it kind of I I realized how important that is I guess to the people we're um we're speaking out but yeah being on the TV show wasn't without its odd kind of side of it like people dming you on Twitter and Facebook and pretty much wherever they could and tweeting about you and you know asking you for an autograph once or twice or a selfie you know it kind of happened you know we're like sitting on an airplane once and kind of someone you know people always think they know you because they've seen you on TV and it's really then you don't want to have to be that person that says oh I think you might have seen me on TV usually you can like brush it off because it's a bit cringy um but yeah there there were nice parts to it it was rewarding at the end of the day but yeah it was a lot of hard work and a lot of things that people didn't necessarily see some some really good stories and sometimes stories that probably a bit too dark to to have on morning TV as well that you know everyone in the office finds quite interesting as as people typically quite interested in the kind of more more gory side of things but yeah we had to remind ourselves that we were breakfast TV do you think over all that TV program has actually helped not just finders but actually the industry as a whole to be more visible to maybe make it easier to recruit good quality people to make it a career that that people actually want to do 100% yeah I mean I think it's helped raise the awareness of the industry I think we still struggle internationally I'm head of international we still struggle internationally with convincing people overseas that we are legitimate we still have issues within the UK but mostly people can uh pull away those bricks of Suspicion when they can see newspaper articles or TV shows and on the recruitment side of things yeah know kind of helps um get people into the industry we used to find that our demographics were probably students uh back when it was on or uh people that were off of their kids or pregnant PE pregnant uh ladies or um older people so quite often now I'm interviewing people coming out of University who are like 21 22 and they'll probably tell me which makes me feel a bit old that they either watched it as kids their grandparents used to watch it so it's nice to have it there and it's it's good that people can then go to YouTube and see a bit of what we do and again like you know we would be speaking to beneficiaries whilst the TV show was on sometimes and they'll be like yeah I'm watching you on TV so it's really hard to um to kind of um hold on to any suspicion when you can see someone on the BBC that you're talking to so on that side of things it helps massively as well and very briefly who is usually is it your clients they come direct through solicitors or is it say the um executive of the estate or something how does that work yeah it's a good question because I think a lot of people think when we talk about the industry if particular if they've seen this TV show they will think everything comes through through this government list that's only a small part of the type of work that we do we do have a large uh portion of the work that we undertake through private clients so that'll be solicitors um it will be state representatives um you know often local authorities will come to us directly um there is an element where we can Source cases from the public domain so there's all these kind of uh ways that cases can come into finders we have clients overseas as well so so yeah we don't only pluck from the government list and also we don't only work with private clients the lists as you mentioned it can just be in a state representative that wants to come to us and ask us to find missing beneficiaries or simply just just verify a family tree and for you what's the bit that you most love about doing this work I have to say is is the social history now it is these people that you can talk to and for some reason over the years you know you've seen that I've seen that people will just open up to you Al They you're just pretty much random person on the end of the phone everyone's got a story at the end of the day I think and you know once you hit that sweet spot with someone and you do find a lot of people do open up to you and they start telling you about their grandparents siblings and you know the black sheep in the family and so and so went and did this or you know this person's estranged and gone missing and you know you do have a really strong connection with them um between first speaking to them and and then ultimately when they Reed their inheritance and you know sometimes people you know jump for joy because they think of the money and you know Danny my boss's phrase that always sticks in my mind is Pennies from Heaven and you know that is important to people like you know who wouldn't want some money that's ultimately coming out of the blue from from someone that you know usually they didn't know but also the family side of it so I think getting involved in the in the in the stories the social history and just speaking to people about their ancestry I think you know everyone usually that comes in as a research role really finds that the most enjoyable part of the job I can imagine it being very rewarding as as a career super rewarding as a care career yeah I mean look I I never thought at 18 that I would have a career coming up to almost 40 um and kind of it being most you know what's going to ultimately be most of my working life if not all of it and it never gets dull I know that sounds like something someone would just say but you know we get asked in interviews you know what do you enjoy about the job do you still enjoy it and and yeah um you know after up to 21 years you do learn something new literally every day and again that's a bit of a cliche while you're always going to learn a different way of doing a bit of genealogy or a different way to trace someone or a different way to do research in however many countries there is overseas that you need to do research in so you never stop learning you work on cases B similar to like how a lawyer would work on a Case when they're conducting the administration so you do get that sense of satisfaction from opening a case working on it as a team so teamwork and then closing a case out and ultimately the beneficiaries receiving their inheritance so yeah super rewarding really good job for dinner parties when you're speaking to people there's pretty much you never meet another Pro anist I think funnny enough I did meet one once at a gig or something but that's one in 21 years and people do generally find it quite fascinating and there's not really many other jobs like it and to be honest out of everybody that I know and I speak to them about their job me personally I kind of I feel like I've got the best option other than what what I hear other people doing horses for courses but yeah I I do enjoy it brilliant thank you well we got we've got couple of questions coming so I'm gonna hand over to Nigel uh to ask you the questions if that's okay and then I've probably got one final question we'll finish off with but let's have some questions from our audience first so tell you says how do probate laws vary between different jurisdictions and how does that impact on on being able to do the resarch it's actually a super super good question um if someone came and asked that to me in an interview i' be like that is basically the type of person that's thinking to to what we need um that there isn't a blanket rule for succession even in the UK it varies um England and Wales have their own way of doing things Scotland has a slightly different way Northern island has a slightly different way irand has a completely different way and you realize when you research overseas every state in the US is slightly different every territory in Australia is slightly different so that's one of the top questions to ask if you're unsure if you've received the case from someone from a jurisdiction you're not familiar with what are the succession rules and ultimately when the case um is ready to pay out how is the estate divided because that can be something that for instance is very different from the way it is in England and Welles as opposed to Scotland so it it varies too much to cover everything um essentially though um you know it's it's going to go down the spouse issue parent spouse issue parents siblings route but again you know in some jurisdictions you would include like halfblood siblings in other jurisdictions you wouldn't so is's a massive distinction between different places you know because a lot of us grow up with half siblings and we count them as full siblings but sometimes when it comes to succession rules they're not so kind so is a good question it is worth finding out in each case well let's see if there are other questions that's good then what are the ethical considerations in Probate research particularly concerning privacy and sensitive information um I think to be honest a lot of the ethical considerations around privacy are um drawn up in the data protection rules um finders and I'm sure every other Pro Energy company abides by um data protection um so as long as we're constantly keeping in our mind that we're not to disclose private information to anyone um then I think that keeps us in good stad when we send out family trees to people um we'll be redacting people's full names dates of birth um gender pretty much you know these days anything that could be an identifying factor to um someone within a family you know we don't just pass someone's contact details over to someone although we might be asked sometimes can you put me in touch with so and so and you know when you're talking about more sensitive cases you know it could be that someone really doesn't want to be put in touch with anyone in their family that that's important for us to to remember as well that we're not going to offer to put someone in contact if they've explicitly told us um you know I I really don't want that to happen so you have to you do have to have quite a lot of empathy in the in the job as a whole um you know some of situations we get into can be quite um you know sensitive it could be that sometimes we're telling someone that their son or daughter has passed away which no one really wants to ever do um so you know just being Mindful and empathetic but also like reminding ourselves of the general data protection rules um is is really important because the last thing we want to do is cross any boundaries that we're not supposed to and I hope that answers the question definitely definitely but as you brought up family trees um make hard to want want to know whether you have any technology that actually helps you to draw up the family trees or do you do it manually like it looks like you do on the TV program yeah it's a good question as well it has that's been something that I'm sure all of us have seen we've all had to make some changes since the pandemic and you know the way we draw up our family trees did change during covid because we had to collaborate with each other online a lot more so as much as a lot of us used to love sticking A3 sheets of paper together and then you have to add in a stem so you'd get your scissors out and chop up the tree and then like you know stick a bit of paper in with a bit of cellotape and you know everything was I used to love that I used to use a pencil and ruler because I'm like how many people do that on their day-to-day job um but yeah inevitably now it's gone into more of like a tech version of it so we have a software that we can plug the information into and it generates like a really nice family tree still so it also saves a lot of time like uh transferring a handwritten family tree and my handwriting was never really that good um you know it does avoid the mistakes that you could make from going from a handwritten family tree to transferring it into a database so we're skipping a step so ultimately it's it's good but yeah we do have software that can do that for us okay um and how is AI being utilized in prob big research and does it have an impact on efficiency and accuracy again good question um you know I think my answer now is going to be different today than it will be in 10 years time um at the moment AI hasn't had a massive impact on on on probate gen energy um there are people there is a website in particular one of the geney websites I think it's um my Heritage which has launched an AI tool it's pretty much one of these AI tools where you're going to ask a question and it's going to kind of just give you similar results than you're going to get by looking through the search options it just makes it a bit easier for you whether it's AI or not it might just be answering questions focusing some of the results you know maybe one day you know go back to the TV show you'd have people saying you know like I your job looks really easy don't you just press a button and everything comes up I was thinking I hope we didn't make it look that easy on the TV show but um who knows maybe one day that will happen but I don't think anything that's AI for now like a lot of other industry Industries is going to kind of avoid or negate the need for um human kind of cross referencing and checking um and yeah for you can't just press a button and the whole family tree comes up when that happens um I will be talking to you from another industry I guess but um yeah I think it's I think it's a long way off knowing how manual it usually is I mean you can be you can be fortunate and you can see someone's put their family tree online or something that's kind of as as kind of um short cuty as it can get um but yeah for AI I think we'll be probably after kind of I don't know I guess we're probably gonna see more of an impact on probate lawyers before it comes down to the genealogists I guess because what we do is so organic and a lot of cross referencing we're not kind of producing set templates documents things okay I think that's that's all of the questions we've got Shantel lovely thank you Ryan I've just got one last question before we finish off then just give you a chance any final bit of advice you'd like to give paralegals if they're thinking about a career in Probate research I would so hopefully you kind of picked up a Vibe of or kind of General inkling of what we're kind of about when we talk about probate research but I would say if you're someone that likes a challenge if you're someone that likes to get to the bottom of things if you have an interest in law probate or family history then this is pretty much the the ideal job for you um I kind of said at a graduate um recruitment day last summer um you know if you're someone that likes watching these kind of true crime documentaries and you kind of want to binge it because you want to know what happens at the end or you like reading a detective novel it's pretty much like doing that every day and getting paid for it I'm not going to lie sometimes it's just going onto someone's Facebook and trying to figure out there's this picture of this person and they're saying it's their dad and you've only got you know happy you know not happy anniversary but commemorations on this anniversary there's a lot of information you can glean from just checking out someone's Social Media so again I always say if you're the person that uh your friends come to when someone's dating someone new in your social group and you're the one that's like found out their cousin cat's name within half an hour then um you know it's it's that sort of stuff it's kind of making it lighthearted but if you like a challenge you like casew workk and seeing something through from start to finish and you have a kind of investigative kind of head on you then there probably is no better job other than kind of being a detective or police officer or something but we get to do it from the comfort of our home and for positive reasons as well I should point out it's all positive tracing so that's important to to to put that distinction in place between us and unusual detectors lovely thank you so much that's Ryan Gregory International manager at finders International be talking about having a career in Probate research um as Nigel may have mentioned I can't remember uh this webinar will be available to members only on the NP website for the F for three months and then for non-members they can check it out um after three months time so thank you so much Ryan for joining us today and sharing your knowledge with us and I I feel really inspired now I want to go off and do a career yeah it sounds fascinating yeah I feel like joining finders I did a good there you go that's good you might find you suddenly get a flurry of of CVS coming over in the next few weeks um so thank you so much H just a quick reminder to everybody our next webinar is the 5th of June and that's talking about how to deal with overwhelm the following one is the 11th of jly July and that's with barbrey talking about how to convert your n paralal qualifications to become a solicitor so thank you so much for joining us today everybody uh there is a feedback Link in the chat so if you got any feedback on the webinar please do fill that in including if you've got topics you'd like us to cover in the future maybe there's a career you really fancy that we haven't talked about yet and we can maybe help you get some information on how to get into that particular sector so thanks very much again Ryan Gregory our guest from finders International and thank you all to all of you for joining us today for this na webinar on probate research we'll hopefully see you next month",
+  "attempts": [
+    {
+      "client": "IOS",
+      "playability": {
+        "status": "OK",
+        "playableInEmbed": true,
+        "offlineability": {
+          "buttonRenderer": {
+            "navigationEndpoint": {
+              "clickTrackingParams": "CAkQ6ewBIhMIgqmei-zblwMVxsotAB3SMyl1ygEE4EnzkQ==",
+              "ypcGetOfflineUpsellEndpoint": {
+                "params": "ChPqqN25AQ0KC3p6X2tzWG1KcXlJIgt6el9rc1htSnF5SSoVCAkYAVIPCgt6el9rc1htSnF5SSAB"
+              }
+            },
+            "trackingParams": "CAkQ6ewBIhMIgqmei-zblwMVxsotAB3SMyl1"
+          }
+        },
+        "pictureInPicture": {
+          "pictureInPictureRenderer": {
+            "playableInPip": true,
+            "offByDefault": false,
+            "shouldResumeOnHead": false
+          }
+        },
+        "miniplayer": {
+          "miniplayerRenderer": {
+            "playbackMode": "PLAYBACK_MODE_ALLOW"
+          }
+        },
+        "contextParams": "Q0FFU0FnZ0M="
+      },
+      "outcome": "ok"
+    }
+  ],
+  "fetched_at": "2026-10-28T04:11:21.483268+00:00",
+  "client": "IOS",
+  "json_path": "transcripts/048_zz_ksXmJqyI.json",
+  "text_path": "transcripts/048_zz_ksXmJqyI.txt"
+}

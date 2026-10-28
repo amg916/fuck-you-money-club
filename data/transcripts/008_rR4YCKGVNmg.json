@@ -1,0 +1,3707 @@
+{
+  "index": 8,
+  "url": "https://www.youtube.com/watch?v=rR4YCKGVNmg",
+  "video_id": "rR4YCKGVNmg",
+  "status": "ok",
+  "metadata": {
+    "title": "New Techniques to Find Missing Beneficiaries - PBI Research Services BeneSearch Webinar",
+    "author": "PBI Research Services",
+    "channelId": "UC8x3fAvNzsYbTGTI1Fo9rZA",
+    "lengthSeconds": "1762",
+    "viewCount": "323",
+    "shortDescription": "0:00 Intro & Panelist Introductions\n01:18 Evolution of the Industry\n04:05 BeneSearch Beneficiary Process\n12:52 BeneSearch Report Example\n15:20 Case Study and Application\n19:48 How to get BeneSearch\n22:40 Q&A\n\nFeaturing: Lindsey Tate-McDonald – Director of Client Services and Mike Irey – Director of Operations at PBI Research Services.\n\nMissing or inaccurate beneficiary information is a major problem for corporate pension funds, insurance companies, financial firms, unions, government and TPAs. As life changes happen, many participants/policy holders forget to update or change their beneficiary information leaving the pension/organization with a heavy task of locating and communicating with family members. PBI removes that burden by identifying decedents and then going to work to contact the beneficiary. If no beneficiary on file, or if the information is inaccurate, PBI will attempt to identify or locate the beneficiary. PBI then provides the pensions/organizations the contact information for possible beneficiaries.\n\nLearn more about BeneSearch at: https://www.pbinfo.com/benesearch-beneficiary-research/"
+  },
+  "caption_tracks": [
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=rR4YCKGVNmg&ei=4HXhapGQPJGKsfIP3c2JYA&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185873&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=1C1E8CCB9424A8EA42B999B175E44A77685009D8.627D7E39CDD7727A27DE76C7CA163F11DD60ED99&key=yt8&kind=asr&lang=en",
+      "name": {
+        "runs": [
+          {
+            "text": "English (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.en",
+      "languageCode": "en",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    }
+  ],
+  "selected_track": {
+    "baseUrl": "https://www.youtube.com/api/timedtext?v=rR4YCKGVNmg&ei=4HXhapGQPJGKsfIP3c2JYA&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185873&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=1C1E8CCB9424A8EA42B999B175E44A77685009D8.627D7E39CDD7727A27DE76C7CA163F11DD60ED99&key=yt8&kind=asr&lang=en",
+    "name": {
+      "runs": [
+        {
+          "text": "English (auto-generated)"
+        }
+      ]
+    },
+    "vssId": "a.en",
+    "languageCode": "en",
+    "kind": "asr",
+    "isTranslatable": true,
+    "trackName": ""
+  },
+  "segments": [
+    {
+      "start": 0.62,
+      "duration": 3.52,
+      "text": "[Music]"
+    },
+    {
+      "start": 1.14,
+      "duration": 3.0,
+      "text": "foreign"
+    },
+    {
+      "start": 8.76,
+      "duration": 7.619,
+      "text": "Welcome to our webinar on missing uh"
+    },
+    {
+      "start": 13.62,
+      "duration": 4.98,
+      "text": "beneficiaries the interesting part about"
+    },
+    {
+      "start": 16.379,
+      "duration": 4.141,
+      "text": "the topic today is this is certainly a"
+    },
+    {
+      "start": 18.6,
+      "duration": 5.64,
+      "text": "conversation that we get involved with"
+    },
+    {
+      "start": 20.52,
+      "duration": 6.839,
+      "text": "time and time again and it's often the"
+    },
+    {
+      "start": 24.24,
+      "duration": 6.6,
+      "text": "uh the what's next of some of the work"
+    },
+    {
+      "start": 27.359,
+      "duration": 6.061,
+      "text": "that we do where we identify decedents"
+    },
+    {
+      "start": 30.84,
+      "duration": 5.899,
+      "text": "um and then it's that what next section"
+    },
+    {
+      "start": 33.42,
+      "duration": 6.06,
+      "text": "so we're going to run through that today"
+    },
+    {
+      "start": 36.739,
+      "duration": 4.361,
+      "text": "today with us well first of all my name"
+    },
+    {
+      "start": 39.48,
+      "duration": 3.899,
+      "text": "is Jason Sauer I'm a business"
+    },
+    {
+      "start": 41.1,
+      "duration": 5.04,
+      "text": "development manager here"
+    },
+    {
+      "start": 43.379,
+      "duration": 4.081,
+      "text": "um but I wanted to introduce the more"
+    },
+    {
+      "start": 46.14,
+      "duration": 2.759,
+      "text": "important people"
+    },
+    {
+      "start": 47.46,
+      "duration": 3.419,
+      "text": "um you know that are on with us today"
+    },
+    {
+      "start": 48.899,
+      "duration": 5.64,
+      "text": "we've got our both of our directors of"
+    },
+    {
+      "start": 50.879,
+      "duration": 6.541,
+      "text": "operations and Client Services uh Mike"
+    },
+    {
+      "start": 54.539,
+      "duration": 6.121,
+      "text": "irie and Lindsay have been with us for a"
+    },
+    {
+      "start": 57.42,
+      "duration": 5.639,
+      "text": "number of years and we'll walk through"
+    },
+    {
+      "start": 60.66,
+      "duration": 4.26,
+      "text": "um the topic today in regard to what's"
+    },
+    {
+      "start": 63.059,
+      "duration": 4.621,
+      "text": "new what are some of the best practices"
+    },
+    {
+      "start": 64.92,
+      "duration": 5.58,
+      "text": "what have we seen what data sources do"
+    },
+    {
+      "start": 67.68,
+      "duration": 6.72,
+      "text": "we have a lot of different topics I'm"
+    },
+    {
+      "start": 70.5,
+      "duration": 6.0,
+      "text": "covering uh beneficiaries so I think"
+    },
+    {
+      "start": 74.4,
+      "duration": 4.62,
+      "text": "with that we'll go ahead and get started"
+    },
+    {
+      "start": 76.5,
+      "duration": 4.979,
+      "text": "thank you everyone for joining today"
+    },
+    {
+      "start": 79.02,
+      "duration": 4.56,
+      "text": "my name is Lindsay Tate McDonald I'm the"
+    },
+    {
+      "start": 81.479,
+      "duration": 5.701,
+      "text": "director of Client Services here at PBI"
+    },
+    {
+      "start": 83.58,
+      "duration": 6.12,
+      "text": "I've been with PBI for about seven years"
+    },
+    {
+      "start": 87.18,
+      "duration": 4.259,
+      "text": "or so uh but PBI itself in general has"
+    },
+    {
+      "start": 89.7,
+      "duration": 4.919,
+      "text": "been in business over four years if"
+    },
+    {
+      "start": 91.439,
+      "duration": 6.481,
+      "text": "anybody understands uh clients needs and"
+    },
+    {
+      "start": 94.619,
+      "duration": 5.941,
+      "text": "issues and lack thereof data it's really"
+    },
+    {
+      "start": 97.92,
+      "duration": 4.62,
+      "text": "PBI I had the opportunity and pleasure"
+    },
+    {
+      "start": 100.56,
+      "duration": 4.5,
+      "text": "to speak with hundreds of clients over"
+    },
+    {
+      "start": 102.54,
+      "duration": 5.28,
+      "text": "the years and really understand"
+    },
+    {
+      "start": 105.06,
+      "duration": 5.66,
+      "text": "um a lot of the issues that they face on"
+    },
+    {
+      "start": 107.82,
+      "duration": 5.939,
+      "text": "a daily basis with trying to"
+    },
+    {
+      "start": 110.72,
+      "duration": 6.1,
+      "text": "fill in missing gaps of their their data"
+    },
+    {
+      "start": 113.759,
+      "duration": 6.0,
+      "text": "in general not just beneficiaries but so"
+    },
+    {
+      "start": 116.82,
+      "duration": 4.32,
+      "text": "I wanted to just talk to that briefly a"
+    },
+    {
+      "start": 119.759,
+      "duration": 4.021,
+      "text": "lot of the common problems that we hear"
+    },
+    {
+      "start": 121.14,
+      "duration": 4.5,
+      "text": "from clients on a daily basis is just"
+    },
+    {
+      "start": 123.78,
+      "duration": 4.38,
+      "text": "how do we fill in these missing gaps in"
+    },
+    {
+      "start": 125.64,
+      "duration": 4.2,
+      "text": "our data so a lot of those is could be"
+    },
+    {
+      "start": 128.16,
+      "duration": 4.56,
+      "text": "companies going through mergers and"
+    },
+    {
+      "start": 129.84,
+      "duration": 6.3,
+      "text": "Acquisitions tpas managing their clients"
+    },
+    {
+      "start": 132.72,
+      "duration": 4.86,
+      "text": "portfolios technology being outdated so"
+    },
+    {
+      "start": 136.14,
+      "duration": 3.06,
+      "text": "a lot of common problems we hear from"
+    },
+    {
+      "start": 137.58,
+      "duration": 3.12,
+      "text": "clients is a lot of this information"
+    },
+    {
+      "start": 139.2,
+      "duration": 3.42,
+      "text": "that they have is still on paper"
+    },
+    {
+      "start": 140.7,
+      "duration": 3.899,
+      "text": "documents in a file right how do they"
+    },
+    {
+      "start": 142.62,
+      "duration": 3.6,
+      "text": "get that information"
+    },
+    {
+      "start": 144.599,
+      "duration": 4.081,
+      "text": "um into"
+    },
+    {
+      "start": 146.22,
+      "duration": 5.34,
+      "text": "their databases where they can share it"
+    },
+    {
+      "start": 148.68,
+      "duration": 5.52,
+      "text": "and utilize it in a proper way"
+    },
+    {
+      "start": 151.56,
+      "duration": 4.5,
+      "text": "um so here at PBI we have lots of"
+    },
+    {
+      "start": 154.2,
+      "duration": 3.3,
+      "text": "different ways of how to fill in those"
+    },
+    {
+      "start": 156.06,
+      "duration": 3.539,
+      "text": "missing gaps today we're specifically"
+    },
+    {
+      "start": 157.5,
+      "duration": 4.56,
+      "text": "talking about beneficiaries"
+    },
+    {
+      "start": 159.599,
+      "duration": 4.621,
+      "text": "but part of that even trying to identify"
+    },
+    {
+      "start": 162.06,
+      "duration": 3.24,
+      "text": "beneficiaries is still is still trying"
+    },
+    {
+      "start": 164.22,
+      "duration": 3.12,
+      "text": "to enter"
+    },
+    {
+      "start": 165.3,
+      "duration": 3.84,
+      "text": "making sure that you have good data on"
+    },
+    {
+      "start": 167.34,
+      "duration": 3.66,
+      "text": "the participants themselves so making"
+    },
+    {
+      "start": 169.14,
+      "duration": 4.319,
+      "text": "ensure that they have"
+    },
+    {
+      "start": 171.0,
+      "duration": 6.84,
+      "text": "um updated names address information"
+    },
+    {
+      "start": 173.459,
+      "duration": 7.621,
+      "text": "dates of birth uh we see that on average"
+    },
+    {
+      "start": 177.84,
+      "duration": 5.58,
+      "text": "uh about 2.3 percent of participants"
+    },
+    {
+      "start": 181.08,
+      "duration": 4.62,
+      "text": "that are over the age of 65 passed away"
+    },
+    {
+      "start": 183.42,
+      "duration": 4.38,
+      "text": "on an annual basis"
+    },
+    {
+      "start": 185.7,
+      "duration": 3.539,
+      "text": "um part of the challenge of identifying"
+    },
+    {
+      "start": 187.8,
+      "duration": 3.48,
+      "text": "those deceased participants is making"
+    },
+    {
+      "start": 189.239,
+      "duration": 4.08,
+      "text": "sure that you have the good information"
+    },
+    {
+      "start": 191.28,
+      "duration": 3.36,
+      "text": "ahead of time to be able to identify"
+    },
+    {
+      "start": 193.319,
+      "duration": 4.381,
+      "text": "those deaths"
+    },
+    {
+      "start": 194.64,
+      "duration": 5.76,
+      "text": "um and be both filling the missing gaps"
+    },
+    {
+      "start": 197.7,
+      "duration": 5.819,
+      "text": "but um"
+    },
+    {
+      "start": 200.4,
+      "duration": 5.52,
+      "text": "so that is kind of the the problem at"
+    },
+    {
+      "start": 203.519,
+      "duration": 5.22,
+      "text": "hand at the beginning of part of it"
+    },
+    {
+      "start": 205.92,
+      "duration": 6.06,
+      "text": "um Mike ire is going to discuss exactly"
+    },
+    {
+      "start": 208.739,
+      "duration": 6.0,
+      "text": "how the Benny search service can help"
+    },
+    {
+      "start": 211.98,
+      "duration": 4.86,
+      "text": "fill in those pieces of beneficiaries"
+    },
+    {
+      "start": 214.739,
+      "duration": 3.841,
+      "text": "that you have missing most of the times"
+    },
+    {
+      "start": 216.84,
+      "duration": 3.899,
+      "text": "when you have missing beneficiaries it's"
+    },
+    {
+      "start": 218.58,
+      "duration": 4.32,
+      "text": "just a lack of communication from the"
+    },
+    {
+      "start": 220.739,
+      "duration": 4.5,
+      "text": "participants themselves so"
+    },
+    {
+      "start": 222.9,
+      "duration": 5.399,
+      "text": "a lot of those participants are getting"
+    },
+    {
+      "start": 225.239,
+      "duration": 4.801,
+      "text": "married getting divorced moving"
+    },
+    {
+      "start": 228.299,
+      "duration": 4.44,
+      "text": "um changing beneficiaries on records a"
+    },
+    {
+      "start": 230.04,
+      "duration": 4.74,
+      "text": "lot of times they just have uh the lack"
+    },
+    {
+      "start": 232.739,
+      "duration": 3.481,
+      "text": "of knowledge to be to understand that"
+    },
+    {
+      "start": 234.78,
+      "duration": 2.76,
+      "text": "they need to communicate back with their"
+    },
+    {
+      "start": 236.22,
+      "duration": 3.48,
+      "text": "former employers to update all that"
+    },
+    {
+      "start": 237.54,
+      "duration": 5.4,
+      "text": "paperwork uh Michael area is going to go"
+    },
+    {
+      "start": 239.7,
+      "duration": 4.319,
+      "text": "all over the urban search service and"
+    },
+    {
+      "start": 242.94,
+      "duration": 3.24,
+      "text": "how we can start filling in those"
+    },
+    {
+      "start": 244.019,
+      "duration": 4.681,
+      "text": "missing gaps for you thank you Lindsay"
+    },
+    {
+      "start": 246.18,
+      "duration": 3.96,
+      "text": "appreciate that"
+    },
+    {
+      "start": 248.7,
+      "duration": 3.3,
+      "text": "um a little bit about me my name is Mike"
+    },
+    {
+      "start": 250.14,
+      "duration": 3.42,
+      "text": "Harry I have been the director of"
+    },
+    {
+      "start": 252.0,
+      "duration": 4.199,
+      "text": "operations here at PBI for a little over"
+    },
+    {
+      "start": 253.56,
+      "duration": 6.239,
+      "text": "three years I've been with the holding"
+    },
+    {
+      "start": 256.199,
+      "duration": 6.241,
+      "text": "company uh for PBI for over 10 years"
+    },
+    {
+      "start": 259.799,
+      "duration": 5.521,
+      "text": "um Benny search is a product that we've"
+    },
+    {
+      "start": 262.44,
+      "duration": 4.5,
+      "text": "had for almost 10 years now but with a"
+    },
+    {
+      "start": 265.32,
+      "duration": 3.92,
+      "text": "heavier emphasis within the last five"
+    },
+    {
+      "start": 266.94,
+      "duration": 4.92,
+      "text": "years as more and more clients have"
+    },
+    {
+      "start": 269.24,
+      "duration": 4.78,
+      "text": "asked for this product"
+    },
+    {
+      "start": 271.86,
+      "duration": 5.64,
+      "text": "um we've built out a robust processing"
+    },
+    {
+      "start": 274.02,
+      "duration": 5.58,
+      "text": "system to handle Benny search that we"
+    },
+    {
+      "start": 277.5,
+      "duration": 4.62,
+      "text": "refined and continue to refined uh to"
+    },
+    {
+      "start": 279.6,
+      "duration": 4.5,
+      "text": "this day with the with the goal of"
+    },
+    {
+      "start": 282.12,
+      "duration": 4.98,
+      "text": "finding at least one first degree"
+    },
+    {
+      "start": 284.1,
+      "duration": 6.379,
+      "text": "relative first degree relative being a"
+    },
+    {
+      "start": 287.1,
+      "duration": 6.9,
+      "text": "parent a child a spouse or a sibling"
+    },
+    {
+      "start": 290.479,
+      "duration": 5.261,
+      "text": "we don't focus on stepchildren or Aunts"
+    },
+    {
+      "start": 294.0,
+      "duration": 4.62,
+      "text": "Uncles grandparents grandchildren"
+    },
+    {
+      "start": 295.74,
+      "duration": 4.32,
+      "text": "neighbors or friends some of that Mike"
+    },
+    {
+      "start": 298.62,
+      "duration": 2.359,
+      "text": "pull three might be provided that"
+    },
+    {
+      "start": 300.06,
+      "duration": 4.079,
+      "text": "information"
+    },
+    {
+      "start": 300.979,
+      "duration": 6.241,
+      "text": "but the focus here is on first degree"
+    },
+    {
+      "start": 304.139,
+      "duration": 7.261,
+      "text": "with the heaviest emphasis on spouse"
+    },
+    {
+      "start": 307.22,
+      "duration": 6.759,
+      "text": "we have a team dedicated to reviewing"
+    },
+    {
+      "start": 311.4,
+      "duration": 4.079,
+      "text": "Benny search that's all they do we've"
+    },
+    {
+      "start": 313.979,
+      "duration": 2.841,
+      "text": "completed tens of thousands of these"
+    },
+    {
+      "start": 315.479,
+      "duration": 4.201,
+      "text": "over the years"
+    },
+    {
+      "start": 316.82,
+      "duration": 4.24,
+      "text": "and because this team has done so many"
+    },
+    {
+      "start": 319.68,
+      "duration": 3.299,
+      "text": "of these they understand the little"
+    },
+    {
+      "start": 321.06,
+      "duration": 4.079,
+      "text": "quirks and little details that's needed"
+    },
+    {
+      "start": 322.979,
+      "duration": 4.041,
+      "text": "to find some a little more challenging"
+    },
+    {
+      "start": 325.139,
+      "duration": 4.56,
+      "text": "uh beneficiaries"
+    },
+    {
+      "start": 327.02,
+      "duration": 5.019,
+      "text": "every result gets reviewed by two people"
+    },
+    {
+      "start": 329.699,
+      "duration": 5.701,
+      "text": "we have an initial reviewer and then we"
+    },
+    {
+      "start": 332.039,
+      "duration": 4.981,
+      "text": "have a QC process before it gets back to"
+    },
+    {
+      "start": 335.4,
+      "duration": 4.44,
+      "text": "uh the client"
+    },
+    {
+      "start": 337.02,
+      "duration": 4.88,
+      "text": "uh Penny search was built to look for"
+    },
+    {
+      "start": 339.84,
+      "duration": 4.919,
+      "text": "deceased participants"
+    },
+    {
+      "start": 341.9,
+      "duration": 5.38,
+      "text": "however we can do it if the participant"
+    },
+    {
+      "start": 344.759,
+      "duration": 4.561,
+      "text": "is living we've had we've had a number"
+    },
+    {
+      "start": 347.28,
+      "duration": 4.08,
+      "text": "of those come in uh I will say our"
+    },
+    {
+      "start": 349.32,
+      "duration": 4.14,
+      "text": "confidence level is a little lower on"
+    },
+    {
+      "start": 351.36,
+      "duration": 4.38,
+      "text": "relative relationships"
+    },
+    {
+      "start": 353.46,
+      "duration": 6.239,
+      "text": "um if the person's living but we do find"
+    },
+    {
+      "start": 355.74,
+      "duration": 7.62,
+      "text": "a good amount of relatives either way"
+    },
+    {
+      "start": 359.699,
+      "duration": 4.981,
+      "text": "a little bit about our process"
+    },
+    {
+      "start": 363.36,
+      "duration": 3.779,
+      "text": "um the first thing we'll do when we take"
+    },
+    {
+      "start": 364.68,
+      "duration": 4.56,
+      "text": "a file in is we'll go out and get"
+    },
+    {
+      "start": 367.139,
+      "duration": 4.921,
+      "text": "updated data to confirm the participant"
+    },
+    {
+      "start": 369.24,
+      "duration": 4.38,
+      "text": "information uh what we're looking for is"
+    },
+    {
+      "start": 372.06,
+      "duration": 3.3,
+      "text": "do we get the right social security"
+    },
+    {
+      "start": 373.62,
+      "duration": 4.139,
+      "text": "number the right name the right date of"
+    },
+    {
+      "start": 375.36,
+      "duration": 4.38,
+      "text": "birth the right addresses and the right"
+    },
+    {
+      "start": 377.759,
+      "duration": 4.801,
+      "text": "date of death if provided by the client"
+    },
+    {
+      "start": 379.74,
+      "duration": 4.739,
+      "text": "if for whatever reason we feel like some"
+    },
+    {
+      "start": 382.56,
+      "duration": 4.259,
+      "text": "of the data is incorrect and we're not"
+    },
+    {
+      "start": 384.479,
+      "duration": 3.84,
+      "text": "finding the proper person that's linked"
+    },
+    {
+      "start": 386.819,
+      "duration": 3.181,
+      "text": "to what was provided to us we'll go"
+    },
+    {
+      "start": 388.319,
+      "duration": 4.681,
+      "text": "right back to the client and ask them to"
+    },
+    {
+      "start": 390.0,
+      "duration": 6.18,
+      "text": "take another look at their data it is"
+    },
+    {
+      "start": 393.0,
+      "duration": 6.0,
+      "text": "common for us to update locations uh"
+    },
+    {
+      "start": 396.18,
+      "duration": 5.579,
+      "text": "potential dates of birth some last name"
+    },
+    {
+      "start": 399.0,
+      "duration": 5.52,
+      "text": "changes those sorts of things"
+    },
+    {
+      "start": 401.759,
+      "duration": 4.461,
+      "text": "um we do that pretty regularly within"
+    },
+    {
+      "start": 404.52,
+      "duration": 4.619,
+      "text": "the account"
+    },
+    {
+      "start": 406.22,
+      "duration": 5.44,
+      "text": "The Next Step once we feel confident"
+    },
+    {
+      "start": 409.139,
+      "duration": 4.5,
+      "text": "that we have the participant and we can"
+    },
+    {
+      "start": 411.66,
+      "duration": 4.74,
+      "text": "give you back that same data or updated"
+    },
+    {
+      "start": 413.639,
+      "duration": 4.56,
+      "text": "data especially around locations is"
+    },
+    {
+      "start": 416.4,
+      "duration": 3.72,
+      "text": "we'll look for any potential relatives"
+    },
+    {
+      "start": 418.199,
+      "duration": 4.921,
+      "text": "we go out to our various different data"
+    },
+    {
+      "start": 420.12,
+      "duration": 6.44,
+      "text": "sources to pull in potential relative I"
+    },
+    {
+      "start": 423.12,
+      "duration": 5.94,
+      "text": "might be related to the participant"
+    },
+    {
+      "start": 426.56,
+      "duration": 4.96,
+      "text": "the data that we'll give you back on the"
+    },
+    {
+      "start": 429.06,
+      "duration": 4.859,
+      "text": "relatives are their name their date of"
+    },
+    {
+      "start": 431.52,
+      "duration": 3.44,
+      "text": "birth their address and phone number if"
+    },
+    {
+      "start": 433.919,
+      "duration": 3.241,
+      "text": "available"
+    },
+    {
+      "start": 434.96,
+      "duration": 4.78,
+      "text": "we give you the best known phone number"
+    },
+    {
+      "start": 437.16,
+      "duration": 5.58,
+      "text": "and best known address for each relative"
+    },
+    {
+      "start": 439.74,
+      "duration": 6.72,
+      "text": "we've been pulling up to 15 uh relatives"
+    },
+    {
+      "start": 442.74,
+      "duration": 5.399,
+      "text": "at a time uh as I said we focus first on"
+    },
+    {
+      "start": 446.46,
+      "duration": 3.54,
+      "text": "uh first degree relatives but there's"
+    },
+    {
+      "start": 448.139,
+      "duration": 3.601,
+      "text": "potential for"
+    },
+    {
+      "start": 450.0,
+      "duration": 4.02,
+      "text": "um second or third degree relatives to"
+    },
+    {
+      "start": 451.74,
+      "duration": 4.5,
+      "text": "to pull through as well"
+    },
+    {
+      "start": 454.02,
+      "duration": 5.459,
+      "text": "um our our next step is now we're going"
+    },
+    {
+      "start": 456.24,
+      "duration": 5.16,
+      "text": "to try to confirm the relationship of"
+    },
+    {
+      "start": 459.479,
+      "duration": 3.84,
+      "text": "those relatives"
+    },
+    {
+      "start": 461.4,
+      "duration": 4.079,
+      "text": "um so we'll pull in uh various different"
+    },
+    {
+      "start": 463.319,
+      "duration": 5.761,
+      "text": "sources one of them being the obit if"
+    },
+    {
+      "start": 465.479,
+      "duration": 6.66,
+      "text": "the participant is deceased and"
+    },
+    {
+      "start": 469.08,
+      "duration": 5.339,
+      "text": "um the obituaries uh we're really strong"
+    },
+    {
+      "start": 472.139,
+      "duration": 6.601,
+      "text": "with those if they're in the last you"
+    },
+    {
+      "start": 474.419,
+      "duration": 6.84,
+      "text": "know after 2010 uh between 2010 and 2000"
+    },
+    {
+      "start": 478.74,
+      "duration": 5.54,
+      "text": "it's a little weaker only because not as"
+    },
+    {
+      "start": 481.259,
+      "duration": 6.421,
+      "text": "many people posted obituaries online and"
+    },
+    {
+      "start": 484.28,
+      "duration": 5.259,
+      "text": "pre-2000 is a little harder that said we"
+    },
+    {
+      "start": 487.68,
+      "duration": 4.32,
+      "text": "do have uh ways of going back and"
+    },
+    {
+      "start": 489.539,
+      "duration": 4.621,
+      "text": "looking at old newspapers"
+    },
+    {
+      "start": 492.0,
+      "duration": 4.56,
+      "text": "um or any other kind of method in which"
+    },
+    {
+      "start": 494.16,
+      "duration": 4.68,
+      "text": "somebody might have posted uh an"
+    },
+    {
+      "start": 496.56,
+      "duration": 4.199,
+      "text": "obituary and we are able to find those"
+    },
+    {
+      "start": 498.84,
+      "duration": 4.32,
+      "text": "as well"
+    },
+    {
+      "start": 500.759,
+      "duration": 6.72,
+      "text": "um we also will look for marriage and"
+    },
+    {
+      "start": 503.16,
+      "duration": 6.659,
+      "text": "divorce records we have a entire section"
+    },
+    {
+      "start": 507.479,
+      "duration": 4.141,
+      "text": "devoted just for that and uh we've"
+    },
+    {
+      "start": 509.819,
+      "duration": 4.501,
+      "text": "cataloged all 50 states and their"
+    },
+    {
+      "start": 511.62,
+      "duration": 4.38,
+      "text": "requirements for uh marriage and divorce"
+    },
+    {
+      "start": 514.32,
+      "duration": 3.599,
+      "text": "records what they can provide what they"
+    },
+    {
+      "start": 516.0,
+      "duration": 4.2,
+      "text": "cannot provide the time periods in which"
+    },
+    {
+      "start": 517.919,
+      "duration": 4.56,
+      "text": "they can provide it for whether it's a"
+    },
+    {
+      "start": 520.2,
+      "duration": 4.56,
+      "text": "specific year or decade in which you're"
+    },
+    {
+      "start": 522.479,
+      "duration": 4.621,
+      "text": "stronger at"
+    },
+    {
+      "start": 524.76,
+      "duration": 4.259,
+      "text": "um as well as you know how we can obtain"
+    },
+    {
+      "start": 527.1,
+      "duration": 4.08,
+      "text": "that information"
+    },
+    {
+      "start": 529.019,
+      "duration": 3.961,
+      "text": "um we are stronger with marriages than"
+    },
+    {
+      "start": 531.18,
+      "duration": 3.719,
+      "text": "divorces that's just kind of the nature"
+    },
+    {
+      "start": 532.98,
+      "duration": 3.419,
+      "text": "of the business uh marriages are a"
+    },
+    {
+      "start": 534.899,
+      "duration": 3.301,
+      "text": "little easier to come by to force it a"
+    },
+    {
+      "start": 536.399,
+      "duration": 6.0,
+      "text": "little harder"
+    },
+    {
+      "start": 538.2,
+      "duration": 7.319,
+      "text": "um but we we do opt for that as needed"
+    },
+    {
+      "start": 542.399,
+      "duration": 6.0,
+      "text": "um we'll also confirm uh via using an"
+    },
+    {
+      "start": 545.519,
+      "duration": 4.141,
+      "text": "SSA or a state record uh of a death"
+    },
+    {
+      "start": 548.399,
+      "duration": 3.481,
+      "text": "record hit"
+    },
+    {
+      "start": 549.66,
+      "duration": 4.44,
+      "text": "um if for nothing else if we can't find"
+    },
+    {
+      "start": 551.88,
+      "duration": 3.54,
+      "text": "a marriage or divorce or an obit we can"
+    },
+    {
+      "start": 554.1,
+      "duration": 3.239,
+      "text": "at least confirm that this person is"
+    },
+    {
+      "start": 555.42,
+      "duration": 3.96,
+      "text": "deceased if provided that he was"
+    },
+    {
+      "start": 557.339,
+      "duration": 3.781,
+      "text": "deceased uh and some of these death"
+    },
+    {
+      "start": 559.38,
+      "duration": 5.76,
+      "text": "records they do give you some insight"
+    },
+    {
+      "start": 561.12,
+      "duration": 5.64,
+      "text": "into uh the marriage uh if you if the"
+    },
+    {
+      "start": 565.14,
+      "duration": 3.36,
+      "text": "participant was widowed or not or"
+    },
+    {
+      "start": 566.76,
+      "duration": 3.66,
+      "text": "divorced sometimes that does pull"
+    },
+    {
+      "start": 568.5,
+      "duration": 4.74,
+      "text": "through"
+    },
+    {
+      "start": 570.42,
+      "duration": 5.52,
+      "text": "um once we have this uh data we go and"
+    },
+    {
+      "start": 573.24,
+      "duration": 4.2,
+      "text": "look to update the relationship of the"
+    },
+    {
+      "start": 575.94,
+      "duration": 4.98,
+      "text": "relatives"
+    },
+    {
+      "start": 577.44,
+      "duration": 6.24,
+      "text": "um before we uh provide any data back to"
+    },
+    {
+      "start": 580.92,
+      "duration": 4.68,
+      "text": "you as far as as far as our confidence"
+    },
+    {
+      "start": 583.68,
+      "duration": 5.219,
+      "text": "level we'll want to have two sources"
+    },
+    {
+      "start": 585.6,
+      "duration": 6.84,
+      "text": "confirming that uh the relationship of a"
+    },
+    {
+      "start": 588.899,
+      "duration": 5.94,
+      "text": "relative especially the uh spouse if we"
+    },
+    {
+      "start": 592.44,
+      "duration": 4.44,
+      "text": "only have one source uh we'll mark that"
+    },
+    {
+      "start": 594.839,
+      "duration": 5.041,
+      "text": "relationship as possible if we have two"
+    },
+    {
+      "start": 596.88,
+      "duration": 4.92,
+      "text": "sources we'll we'll mark it as confirmed"
+    },
+    {
+      "start": 599.88,
+      "duration": 3.78,
+      "text": "um that way we've we have confidence"
+    },
+    {
+      "start": 601.8,
+      "duration": 5.219,
+      "text": "level going back to our client that you"
+    },
+    {
+      "start": 603.66,
+      "duration": 5.88,
+      "text": "know this is this is a relationship"
+    },
+    {
+      "start": 607.019,
+      "duration": 4.801,
+      "text": "um we also look at various other uh"
+    },
+    {
+      "start": 609.54,
+      "duration": 4.5,
+      "text": "vendors as well um sometimes uh"
+    },
+    {
+      "start": 611.82,
+      "duration": 4.86,
+      "text": "obituaries aren't as robust sometimes"
+    },
+    {
+      "start": 614.04,
+      "duration": 3.9,
+      "text": "marriage and divorce records aren't as"
+    },
+    {
+      "start": 616.68,
+      "duration": 4.02,
+      "text": "complete"
+    },
+    {
+      "start": 617.94,
+      "duration": 4.8,
+      "text": "um so we have um other methods that we"
+    },
+    {
+      "start": 620.7,
+      "duration": 3.42,
+      "text": "use to go out and look for additional"
+    },
+    {
+      "start": 622.74,
+      "duration": 4.279,
+      "text": "data"
+    },
+    {
+      "start": 624.12,
+      "duration": 5.339,
+      "text": "um we've looked at family trees census"
+    },
+    {
+      "start": 627.019,
+      "duration": 5.201,
+      "text": "uh write-ups"
+    },
+    {
+      "start": 629.459,
+      "duration": 5.401,
+      "text": "um you know blog posts all kinds of"
+    },
+    {
+      "start": 632.22,
+      "duration": 4.26,
+      "text": "different things that uh that we have"
+    },
+    {
+      "start": 634.86,
+      "duration": 3.36,
+      "text": "access to"
+    },
+    {
+      "start": 636.48,
+      "duration": 4.68,
+      "text": "um to help us kind of fill in the gaps"
+    },
+    {
+      "start": 638.22,
+      "duration": 5.4,
+      "text": "and make a full complete uh picture of"
+    },
+    {
+      "start": 641.16,
+      "duration": 4.799,
+      "text": "their relationship uh between the"
+    },
+    {
+      "start": 643.62,
+      "duration": 3.44,
+      "text": "potential relatives"
+    },
+    {
+      "start": 645.959,
+      "duration": 4.021,
+      "text": "um"
+    },
+    {
+      "start": 647.06,
+      "duration": 6.279,
+      "text": "we uh as I mentioned we use two sources"
+    },
+    {
+      "start": 649.98,
+      "duration": 5.7,
+      "text": "to verify the relative relationships"
+    },
+    {
+      "start": 653.339,
+      "duration": 3.721,
+      "text": "um the heaviest emphasis is on the"
+    },
+    {
+      "start": 655.68,
+      "duration": 3.719,
+      "text": "spouse"
+    },
+    {
+      "start": 657.06,
+      "duration": 4.56,
+      "text": "um all all relatives will be marked if"
+    },
+    {
+      "start": 659.399,
+      "duration": 3.961,
+      "text": "they're alive or deceased"
+    },
+    {
+      "start": 661.62,
+      "duration": 3.18,
+      "text": "um but the spouse will will go a step"
+    },
+    {
+      "start": 663.36,
+      "duration": 4.74,
+      "text": "further"
+    },
+    {
+      "start": 664.8,
+      "duration": 5.279,
+      "text": "um if the spouse is married or divorced"
+    },
+    {
+      "start": 668.1,
+      "duration": 4.26,
+      "text": "based on uh the information we've"
+    },
+    {
+      "start": 670.079,
+      "duration": 4.021,
+      "text": "provided we'll let you know that"
+    },
+    {
+      "start": 672.36,
+      "duration": 3.96,
+      "text": "um if we believe the participant has"
+    },
+    {
+      "start": 674.1,
+      "duration": 4.14,
+      "text": "never been married it's not quite common"
+    },
+    {
+      "start": 676.32,
+      "duration": 2.82,
+      "text": "but it does happen we'll certainly point"
+    },
+    {
+      "start": 678.24,
+      "duration": 3.779,
+      "text": "that out"
+    },
+    {
+      "start": 679.14,
+      "duration": 4.319,
+      "text": "uh if we believe the participant and"
+    },
+    {
+      "start": 682.019,
+      "duration": 2.641,
+      "text": "we're not quite sure one way or the"
+    },
+    {
+      "start": 683.459,
+      "duration": 3.241,
+      "text": "other but it's unlikely he's been"
+    },
+    {
+      "start": 684.66,
+      "duration": 3.9,
+      "text": "married for some some reason we'll point"
+    },
+    {
+      "start": 686.7,
+      "duration": 4.68,
+      "text": "that out as well"
+    },
+    {
+      "start": 688.56,
+      "duration": 4.56,
+      "text": "um there are times where it's just we"
+    },
+    {
+      "start": 691.38,
+      "duration": 4.079,
+      "text": "just won't have enough data to make that"
+    },
+    {
+      "start": 693.12,
+      "duration": 5.159,
+      "text": "determination and we'll mark it as we're"
+    },
+    {
+      "start": 695.459,
+      "duration": 4.741,
+      "text": "unsure if the uh participant was married"
+    },
+    {
+      "start": 698.279,
+      "duration": 3.901,
+      "text": "or not but we'll want to give you an"
+    },
+    {
+      "start": 700.2,
+      "duration": 4.199,
+      "text": "answer one way or the other on the"
+    },
+    {
+      "start": 702.18,
+      "duration": 4.14,
+      "text": "marriage uh between the participant and"
+    },
+    {
+      "start": 704.399,
+      "duration": 3.541,
+      "text": "the spouse whether we believe it's a"
+    },
+    {
+      "start": 706.32,
+      "duration": 2.88,
+      "text": "spouse or not and if the spouse is alive"
+    },
+    {
+      "start": 707.94,
+      "duration": 4.98,
+      "text": "or deceased"
+    },
+    {
+      "start": 709.2,
+      "duration": 5.94,
+      "text": "uh as far as some data on that"
+    },
+    {
+      "start": 712.92,
+      "duration": 4.38,
+      "text": "um a little over 80 percent of our"
+    },
+    {
+      "start": 715.14,
+      "duration": 5.46,
+      "text": "participants we have an answer for you"
+    },
+    {
+      "start": 717.3,
+      "duration": 5.88,
+      "text": "on the spouse and over 95 percent of the"
+    },
+    {
+      "start": 720.6,
+      "duration": 4.5,
+      "text": "time we'll find at least one relative"
+    },
+    {
+      "start": 723.18,
+      "duration": 3.36,
+      "text": "um the focus here is on living relatives"
+    },
+    {
+      "start": 725.1,
+      "duration": 3.72,
+      "text": "as well"
+    },
+    {
+      "start": 726.54,
+      "duration": 4.14,
+      "text": "um but if for whatever reason there are"
+    },
+    {
+      "start": 728.82,
+      "duration": 4.32,
+      "text": "no living relatives will want to make"
+    },
+    {
+      "start": 730.68,
+      "duration": 5.399,
+      "text": "sure that you're aware of that as well"
+    },
+    {
+      "start": 733.14,
+      "duration": 5.04,
+      "text": "um once we get through that process with"
+    },
+    {
+      "start": 736.079,
+      "duration": 3.901,
+      "text": "the initial reviewers and we will QC it"
+    },
+    {
+      "start": 738.18,
+      "duration": 4.32,
+      "text": "make sure that all the proper steps were"
+    },
+    {
+      "start": 739.98,
+      "duration": 5.099,
+      "text": "done uh if there's anything missing or"
+    },
+    {
+      "start": 742.5,
+      "duration": 3.899,
+      "text": "we're not hitting the uh what our"
+    },
+    {
+      "start": 745.079,
+      "duration": 3.781,
+      "text": "guidelines are to make sure we have one"
+    },
+    {
+      "start": 746.399,
+      "duration": 4.5,
+      "text": "living relative and a spouse will look"
+    },
+    {
+      "start": 748.86,
+      "duration": 4.68,
+      "text": "will look deeper"
+    },
+    {
+      "start": 750.899,
+      "duration": 4.861,
+      "text": "um but once all that's complete and uh"
+    },
+    {
+      "start": 753.54,
+      "duration": 3.84,
+      "text": "and and finish we'll make sure to get"
+    },
+    {
+      "start": 755.76,
+      "duration": 3.54,
+      "text": "that out to you"
+    },
+    {
+      "start": 757.38,
+      "duration": 3.3,
+      "text": "um we have orders coming in for one"
+    },
+    {
+      "start": 759.3,
+      "duration": 3.479,
+      "text": "participant we have orders coming in for"
+    },
+    {
+      "start": 760.68,
+      "duration": 5.099,
+      "text": "thousands uh they're each prioritized"
+    },
+    {
+      "start": 762.779,
+      "duration": 5.341,
+      "text": "and get done as soon as possible we have"
+    },
+    {
+      "start": 765.779,
+      "duration": 5.041,
+      "text": "a cue that we manage to ensure that all"
+    },
+    {
+      "start": 768.12,
+      "duration": 4.5,
+      "text": "things get completed on or before their"
+    },
+    {
+      "start": 770.82,
+      "duration": 3.54,
+      "text": "due date"
+    },
+    {
+      "start": 772.62,
+      "duration": 3.48,
+      "text": "so might talk to you all about"
+    },
+    {
+      "start": 774.36,
+      "duration": 3.419,
+      "text": "back-ended process and what we're"
+    },
+    {
+      "start": 776.1,
+      "duration": 3.72,
+      "text": "looking for and the information that we"
+    },
+    {
+      "start": 777.779,
+      "duration": 3.961,
+      "text": "utilize to update it on this slide"
+    },
+    {
+      "start": 779.82,
+      "duration": 4.139,
+      "text": "you'll see an example of the information"
+    },
+    {
+      "start": 781.74,
+      "duration": 3.3,
+      "text": "and the output that we provide back to"
+    },
+    {
+      "start": 783.959,
+      "duration": 2.521,
+      "text": "you"
+    },
+    {
+      "start": 785.04,
+      "duration": 3.12,
+      "text": "um so you can see this is a very"
+    },
+    {
+      "start": 786.48,
+      "duration": 4.68,
+      "text": "detailed report"
+    },
+    {
+      "start": 788.16,
+      "duration": 4.619,
+      "text": "um we give you information on the"
+    },
+    {
+      "start": 791.16,
+      "duration": 4.08,
+      "text": "participant that was submitted so"
+    },
+    {
+      "start": 792.779,
+      "duration": 4.441,
+      "text": "address history dates of birth date of"
+    },
+    {
+      "start": 795.24,
+      "duration": 3.539,
+      "text": "death if they weren't a known deceased"
+    },
+    {
+      "start": 797.22,
+      "duration": 4.799,
+      "text": "participant"
+    },
+    {
+      "start": 798.779,
+      "duration": 4.68,
+      "text": "um we'll provide that information to you"
+    },
+    {
+      "start": 802.019,
+      "duration": 2.641,
+      "text": "um you get it like I said complete"
+    },
+    {
+      "start": 803.459,
+      "duration": 3.241,
+      "text": "address history"
+    },
+    {
+      "start": 804.66,
+      "duration": 4.38,
+      "text": "um and then we start diving into the"
+    },
+    {
+      "start": 806.7,
+      "duration": 4.199,
+      "text": "relatives that we've identified"
+    },
+    {
+      "start": 809.04,
+      "duration": 5.039,
+      "text": "um you will receive name information"
+    },
+    {
+      "start": 810.899,
+      "duration": 5.701,
+      "text": "their dates of birth age their current"
+    },
+    {
+      "start": 814.079,
+      "duration": 4.981,
+      "text": "address location phone number if we can"
+    },
+    {
+      "start": 816.6,
+      "duration": 6.62,
+      "text": "find it really everything that you need"
+    },
+    {
+      "start": 819.06,
+      "duration": 7.44,
+      "text": "to make contact with that beneficiary"
+    },
+    {
+      "start": 823.22,
+      "duration": 5.44,
+      "text": "and communicate with them"
+    },
+    {
+      "start": 826.5,
+      "duration": 4.2,
+      "text": "um again Mike I already had saved before"
+    },
+    {
+      "start": 828.66,
+      "duration": 3.359,
+      "text": "we do come through marriage and divorce"
+    },
+    {
+      "start": 830.7,
+      "duration": 2.699,
+      "text": "records"
+    },
+    {
+      "start": 832.019,
+      "duration": 3.0,
+      "text": "um certainly if we find any of that"
+    },
+    {
+      "start": 833.399,
+      "duration": 4.021,
+      "text": "information we're providing it to you in"
+    },
+    {
+      "start": 835.019,
+      "duration": 4.141,
+      "text": "the report uh we don't report we provide"
+    },
+    {
+      "start": 837.42,
+      "duration": 4.08,
+      "text": "the actual certificate but we're able to"
+    },
+    {
+      "start": 839.16,
+      "duration": 3.84,
+      "text": "gather all that information that are in"
+    },
+    {
+      "start": 841.5,
+      "duration": 3.62,
+      "text": "those records and provide them back to"
+    },
+    {
+      "start": 843.0,
+      "duration": 2.12,
+      "text": "you"
+    },
+    {
+      "start": 845.16,
+      "duration": 5.4,
+      "text": "um we report the way that we found the"
+    },
+    {
+      "start": 848.639,
+      "duration": 4.32,
+      "text": "deceased participant"
+    },
+    {
+      "start": 850.56,
+      "duration": 4.38,
+      "text": "um so if that was through the Social"
+    },
+    {
+      "start": 852.959,
+      "duration": 4.741,
+      "text": "Security Administration if that was a"
+    },
+    {
+      "start": 854.94,
+      "duration": 4.62,
+      "text": "state Source if we found that death"
+    },
+    {
+      "start": 857.7,
+      "duration": 4.259,
+      "text": "through an obituary"
+    },
+    {
+      "start": 859.56,
+      "duration": 4.74,
+      "text": "if we did find the death route or either"
+    },
+    {
+      "start": 861.959,
+      "duration": 4.801,
+      "text": "way if we do find a an obituary that's"
+    },
+    {
+      "start": 864.3,
+      "duration": 4.56,
+      "text": "published we provide that published"
+    },
+    {
+      "start": 866.76,
+      "duration": 4.74,
+      "text": "obituary for you that texted that within"
+    },
+    {
+      "start": 868.86,
+      "duration": 5.7,
+      "text": "the report so you can easily see the"
+    },
+    {
+      "start": 871.5,
+      "duration": 5.88,
+      "text": "connections that meet we made as well"
+    },
+    {
+      "start": 874.56,
+      "duration": 5.459,
+      "text": "um so oftentimes uh what you can always"
+    },
+    {
+      "start": 877.38,
+      "duration": 6.36,
+      "text": "depend on in an obituary is that they do"
+    },
+    {
+      "start": 880.019,
+      "duration": 5.341,
+      "text": "provide uh relatives in there so if"
+    },
+    {
+      "start": 883.74,
+      "duration": 3.24,
+      "text": "they're a married spouse's name if they"
+    },
+    {
+      "start": 885.36,
+      "duration": 4.08,
+      "text": "had children those are usually typically"
+    },
+    {
+      "start": 886.98,
+      "duration": 4.14,
+      "text": "in there as well and really any"
+    },
+    {
+      "start": 889.44,
+      "duration": 4.199,
+      "text": "information that makes you feel that"
+    },
+    {
+      "start": 891.12,
+      "duration": 3.779,
+      "text": "provides uh makes you feel confident on"
+    },
+    {
+      "start": 893.639,
+      "duration": 2.581,
+      "text": "the information that we're providing"
+    },
+    {
+      "start": 894.899,
+      "duration": 4.38,
+      "text": "back to you"
+    },
+    {
+      "start": 896.22,
+      "duration": 4.979,
+      "text": "so not only do you get a PDF of all the"
+    },
+    {
+      "start": 899.279,
+      "duration": 4.021,
+      "text": "data that we found to you we also"
+    },
+    {
+      "start": 901.199,
+      "duration": 5.76,
+      "text": "provide all this information in an Excel"
+    },
+    {
+      "start": 903.3,
+      "duration": 6.24,
+      "text": "report as well we find that clients like"
+    },
+    {
+      "start": 906.959,
+      "duration": 4.62,
+      "text": "to have both versions one is visually"
+    },
+    {
+      "start": 909.54,
+      "duration": 4.2,
+      "text": "easy to view and can put into their"
+    },
+    {
+      "start": 911.579,
+      "duration": 3.721,
+      "text": "records too on an Excel point it's it's"
+    },
+    {
+      "start": 913.74,
+      "duration": 3.899,
+      "text": "easier to manage they can Port that"
+    },
+    {
+      "start": 915.3,
+      "duration": 3.719,
+      "text": "information into their systems or pass"
+    },
+    {
+      "start": 917.639,
+      "duration": 2.581,
+      "text": "that along internally a little bit"
+    },
+    {
+      "start": 919.019,
+      "duration": 3.301,
+      "text": "easier"
+    },
+    {
+      "start": 920.22,
+      "duration": 5.1,
+      "text": "thanks Lindsay and uh you know thanks"
+    },
+    {
+      "start": 922.32,
+      "duration": 4.8,
+      "text": "Mike as well I think what we wanted to"
+    },
+    {
+      "start": 925.32,
+      "duration": 4.44,
+      "text": "do was actually just take a look at a"
+    },
+    {
+      "start": 927.12,
+      "duration": 4.98,
+      "text": "couple examples to some extent this is"
+    },
+    {
+      "start": 929.76,
+      "duration": 5.4,
+      "text": "kind of like preaching the choir here"
+    },
+    {
+      "start": 932.1,
+      "duration": 6.239,
+      "text": "um but you know by way of using our"
+    },
+    {
+      "start": 935.16,
+      "duration": 5.52,
+      "text": "benef search service here's just a"
+    },
+    {
+      "start": 938.339,
+      "duration": 4.321,
+      "text": "couple of examples by way of a case"
+    },
+    {
+      "start": 940.68,
+      "duration": 7.019,
+      "text": "study or you know maybe what you could"
+    },
+    {
+      "start": 942.66,
+      "duration": 6.9,
+      "text": "call application so recently with us"
+    },
+    {
+      "start": 947.699,
+      "duration": 4.861,
+      "text": "um you know I had one of my clients"
+    },
+    {
+      "start": 949.56,
+      "duration": 4.86,
+      "text": "deliver a file to us and and they were"
+    },
+    {
+      "start": 952.56,
+      "duration": 5.639,
+      "text": "looking for deaths right much like what"
+    },
+    {
+      "start": 954.42,
+      "duration": 5.64,
+      "text": "a lot of our clients are as part of that"
+    },
+    {
+      "start": 958.199,
+      "duration": 5.341,
+      "text": "analysis and we were looking at term"
+    },
+    {
+      "start": 960.06,
+      "duration": 6.54,
+      "text": "vested folks deferred and in Pay uh as"
+    },
+    {
+      "start": 963.54,
+      "duration": 5.52,
+      "text": "part of that analysis we actually found"
+    },
+    {
+      "start": 966.6,
+      "duration": 3.859,
+      "text": "that there were a number of people that"
+    },
+    {
+      "start": 969.06,
+      "duration": 6.66,
+      "text": "were in their term vested population"
+    },
+    {
+      "start": 970.459,
+      "duration": 8.201,
+      "text": "that were deceased and as such they died"
+    },
+    {
+      "start": 975.72,
+      "duration": 4.2,
+      "text": "as a term vested participant"
+    },
+    {
+      "start": 978.66,
+      "duration": 3.539,
+      "text": "um you know they went back and checked"
+    },
+    {
+      "start": 979.92,
+      "duration": 4.2,
+      "text": "their records and you know obviously"
+    },
+    {
+      "start": 982.199,
+      "duration": 3.421,
+      "text": "they died prior to Applications so they"
+    },
+    {
+      "start": 984.12,
+      "duration": 4.26,
+      "text": "were not in pay"
+    },
+    {
+      "start": 985.62,
+      "duration": 6.12,
+      "text": "and what they had found was a number of"
+    },
+    {
+      "start": 988.38,
+      "duration": 5.1,
+      "text": "those individuals did not have any"
+    },
+    {
+      "start": 991.74,
+      "duration": 4.2,
+      "text": "beneficiary information that was"
+    },
+    {
+      "start": 993.48,
+      "duration": 3.9,
+      "text": "recorded in the system right so back in"
+    },
+    {
+      "start": 995.94,
+      "duration": 3.78,
+      "text": "the day we used to say that the cards"
+    },
+    {
+      "start": 997.38,
+      "duration": 4.98,
+      "text": "didn't get translated you know maybe the"
+    },
+    {
+      "start": 999.72,
+      "duration": 5.22,
+      "text": "information is mixed up or what have you"
+    },
+    {
+      "start": 1002.36,
+      "duration": 5.76,
+      "text": "but for whatever reason they did not"
+    },
+    {
+      "start": 1004.94,
+      "duration": 6.3,
+      "text": "have good records around the beneficiary"
+    },
+    {
+      "start": 1008.12,
+      "duration": 5.159,
+      "text": "so what we were actually able to do is"
+    },
+    {
+      "start": 1011.24,
+      "duration": 6.18,
+      "text": "use the ad hoc service called then a"
+    },
+    {
+      "start": 1013.279,
+      "duration": 7.5,
+      "text": "search and go in and find surviving"
+    },
+    {
+      "start": 1017.42,
+      "duration": 6.359,
+      "text": "spouses for those individual"
+    },
+    {
+      "start": 1020.779,
+      "duration": 5.341,
+      "text": "and then so outside of that obviously"
+    },
+    {
+      "start": 1023.779,
+      "duration": 4.8,
+      "text": "what you're able to do is you know were"
+    },
+    {
+      "start": 1026.12,
+      "duration": 4.079,
+      "text": "they was the spouse you know living at"
+    },
+    {
+      "start": 1028.579,
+      "duration": 3.181,
+      "text": "the time of death were they not were"
+    },
+    {
+      "start": 1030.199,
+      "duration": 3.541,
+      "text": "they do a benefit you kind of walk"
+    },
+    {
+      "start": 1031.76,
+      "duration": 4.14,
+      "text": "through your planned documents or you"
+    },
+    {
+      "start": 1033.74,
+      "duration": 4.14,
+      "text": "know the benefits that you offer and"
+    },
+    {
+      "start": 1035.9,
+      "duration": 4.5,
+      "text": "what this particular client was able to"
+    },
+    {
+      "start": 1037.88,
+      "duration": 5.579,
+      "text": "do was actually find spouses that"
+    },
+    {
+      "start": 1040.4,
+      "duration": 8.279,
+      "text": "weren't just do a payment but they were"
+    },
+    {
+      "start": 1043.459,
+      "duration": 7.561,
+      "text": "also do medical benefits as well so you"
+    },
+    {
+      "start": 1048.679,
+      "duration": 4.201,
+      "text": "know when you think about your fiduciary"
+    },
+    {
+      "start": 1051.02,
+      "duration": 3.6,
+      "text": "responsibility looking out for the"
+    },
+    {
+      "start": 1052.88,
+      "duration": 3.539,
+      "text": "participants having their best interest"
+    },
+    {
+      "start": 1054.62,
+      "duration": 4.74,
+      "text": "in mind"
+    },
+    {
+      "start": 1056.419,
+      "duration": 5.161,
+      "text": "um you know it's not just for the main"
+    },
+    {
+      "start": 1059.36,
+      "duration": 5.52,
+      "text": "folks but also for the beneficiaries as"
+    },
+    {
+      "start": 1061.58,
+      "duration": 5.339,
+      "text": "well so that's one case study if you"
+    },
+    {
+      "start": 1064.88,
+      "duration": 4.5,
+      "text": "will the other interesting application"
+    },
+    {
+      "start": 1066.919,
+      "duration": 4.741,
+      "text": "that we're running into more and more"
+    },
+    {
+      "start": 1069.38,
+      "duration": 5.1,
+      "text": "um at this point is"
+    },
+    {
+      "start": 1071.66,
+      "duration": 4.44,
+      "text": "um and we will have this PowerPoint it"
+    },
+    {
+      "start": 1074.48,
+      "duration": 3.66,
+      "text": "will be distributed"
+    },
+    {
+      "start": 1076.1,
+      "duration": 4.079,
+      "text": "um with that you'll see a reference to"
+    },
+    {
+      "start": 1078.14,
+      "duration": 3.779,
+      "text": "this so you'll have a website that you"
+    },
+    {
+      "start": 1080.179,
+      "duration": 4.321,
+      "text": "can click on"
+    },
+    {
+      "start": 1081.919,
+      "duration": 5.521,
+      "text": "um but the guidelines that the DOL came"
+    },
+    {
+      "start": 1084.5,
+      "duration": 5.76,
+      "text": "out with early 2021 I believe it was"
+    },
+    {
+      "start": 1087.44,
+      "duration": 4.619,
+      "text": "January where they talked about what to"
+    },
+    {
+      "start": 1090.26,
+      "duration": 4.56,
+      "text": "do in regard to missing or lost"
+    },
+    {
+      "start": 1092.059,
+      "duration": 5.881,
+      "text": "participants in a plan uh and by the way"
+    },
+    {
+      "start": 1094.82,
+      "duration": 7.739,
+      "text": "that's a DB so a pension plan it could"
+    },
+    {
+      "start": 1097.94,
+      "duration": 6.9,
+      "text": "be a 401k 457 403b what have you"
+    },
+    {
+      "start": 1102.559,
+      "duration": 5.101,
+      "text": "um but it talks specifically about the"
+    },
+    {
+      "start": 1104.84,
+      "duration": 5.64,
+      "text": "activities that you need to do as a"
+    },
+    {
+      "start": 1107.66,
+      "duration": 5.1,
+      "text": "fiduciary or planned sponsor and you"
+    },
+    {
+      "start": 1110.48,
+      "duration": 4.26,
+      "text": "know again that's in a plan that's for"
+    },
+    {
+      "start": 1112.76,
+      "duration": 5.76,
+      "text": "uncashed checks that was even with plan"
+    },
+    {
+      "start": 1114.74,
+      "duration": 5.48,
+      "text": "terminations if you read through those"
+    },
+    {
+      "start": 1118.52,
+      "duration": 5.279,
+      "text": "it mentions"
+    },
+    {
+      "start": 1120.22,
+      "duration": 5.56,
+      "text": "beneficiaries multiple times within"
+    },
+    {
+      "start": 1123.799,
+      "duration": 4.201,
+      "text": "those you know recommended steps we"
+    },
+    {
+      "start": 1125.78,
+      "duration": 4.98,
+      "text": "won't call them required but we will say"
+    },
+    {
+      "start": 1128.0,
+      "duration": 6.419,
+      "text": "what is recommended by the The Dol or"
+    },
+    {
+      "start": 1130.76,
+      "duration": 6.779,
+      "text": "the guidelines so where we've run into"
+    },
+    {
+      "start": 1134.419,
+      "duration": 6.421,
+      "text": "folks that are either working through an"
+    },
+    {
+      "start": 1137.539,
+      "duration": 5.941,
+      "text": "internal audit of their populations or"
+    },
+    {
+      "start": 1140.84,
+      "duration": 5.16,
+      "text": "of their census files or you know God"
+    },
+    {
+      "start": 1143.48,
+      "duration": 4.16,
+      "text": "forbid an outside audit that they're"
+    },
+    {
+      "start": 1146.0,
+      "duration": 4.38,
+      "text": "trying to work through"
+    },
+    {
+      "start": 1147.64,
+      "duration": 6.039,
+      "text": "beneficiaries and the documentation"
+    },
+    {
+      "start": 1150.38,
+      "duration": 6.06,
+      "text": "thereof and having them available or"
+    },
+    {
+      "start": 1153.679,
+      "duration": 5.88,
+      "text": "looking to them for information on a"
+    },
+    {
+      "start": 1156.44,
+      "duration": 4.5,
+      "text": "missing participant is a material part"
+    },
+    {
+      "start": 1159.559,
+      "duration": 3.601,
+      "text": "of fulfilling your fiduciary"
+    },
+    {
+      "start": 1160.94,
+      "duration": 4.619,
+      "text": "responsibility so"
+    },
+    {
+      "start": 1163.16,
+      "duration": 4.92,
+      "text": "um you know we will have that link if"
+    },
+    {
+      "start": 1165.559,
+      "duration": 6.0,
+      "text": "you need that in this presentation as we"
+    },
+    {
+      "start": 1168.08,
+      "duration": 6.479,
+      "text": "distribute that but really it's good"
+    },
+    {
+      "start": 1171.559,
+      "duration": 5.821,
+      "text": "practice know your participant know the"
+    },
+    {
+      "start": 1174.559,
+      "duration": 4.921,
+      "text": "data that's around them be able to find"
+    },
+    {
+      "start": 1177.38,
+      "duration": 4.44,
+      "text": "them by touch base with the"
+    },
+    {
+      "start": 1179.48,
+      "duration": 4.559,
+      "text": "beneficiaries and you know really be"
+    },
+    {
+      "start": 1181.82,
+      "duration": 5.52,
+      "text": "always this term that we throw out you"
+    },
+    {
+      "start": 1184.039,
+      "duration": 5.52,
+      "text": "know audit ready so in thinking through"
+    },
+    {
+      "start": 1187.34,
+      "duration": 5.459,
+      "text": "uh benef search how is it available"
+    },
+    {
+      "start": 1189.559,
+      "duration": 4.5,
+      "text": "today and and you know not trying to"
+    },
+    {
+      "start": 1192.799,
+      "duration": 3.0,
+      "text": "give you a sales pitch just trying to"
+    },
+    {
+      "start": 1194.059,
+      "duration": 3.181,
+      "text": "tell you how you can actually move"
+    },
+    {
+      "start": 1195.799,
+      "duration": 4.441,
+      "text": "forward with the service there's a"
+    },
+    {
+      "start": 1197.24,
+      "duration": 5.819,
+      "text": "couple different ways today one is it is"
+    },
+    {
+      "start": 1200.24,
+      "duration": 5.58,
+      "text": "available as an ad hoc service so just"
+    },
+    {
+      "start": 1203.059,
+      "duration": 4.86,
+      "text": "like Mike had mentioned sometimes we'll"
+    },
+    {
+      "start": 1205.82,
+      "duration": 4.5,
+      "text": "get benefit searches a handful of them"
+    },
+    {
+      "start": 1207.919,
+      "duration": 5.461,
+      "text": "but we've certainly seen files of a"
+    },
+    {
+      "start": 1210.32,
+      "duration": 5.04,
+      "text": "couple thousand right it depends on the"
+    },
+    {
+      "start": 1213.38,
+      "duration": 4.62,
+      "text": "challenge that you have it depends on"
+    },
+    {
+      "start": 1215.36,
+      "duration": 6.179,
+      "text": "the problem that you're trying to solve"
+    },
+    {
+      "start": 1218.0,
+      "duration": 5.46,
+      "text": "so it's certainly available under our"
+    },
+    {
+      "start": 1221.539,
+      "duration": 4.321,
+      "text": "locate Services section that you see"
+    },
+    {
+      "start": 1223.46,
+      "duration": 4.56,
+      "text": "here over on the right hand side as an"
+    },
+    {
+      "start": 1225.86,
+      "duration": 4.74,
+      "text": "ad hoc service so you do have the"
+    },
+    {
+      "start": 1228.02,
+      "duration": 5.7,
+      "text": "ability to submit one at a time through"
+    },
+    {
+      "start": 1230.6,
+      "duration": 6.24,
+      "text": "our secure locate portal"
+    },
+    {
+      "start": 1233.72,
+      "duration": 6.72,
+      "text": "um it's also available and you know it's"
+    },
+    {
+      "start": 1236.84,
+      "duration": 7.5,
+      "text": "it's important to note that you know the"
+    },
+    {
+      "start": 1240.44,
+      "duration": 6.119,
+      "text": "beneficiary service not benef search as"
+    },
+    {
+      "start": 1244.34,
+      "duration": 4.38,
+      "text": "you know an individual product is"
+    },
+    {
+      "start": 1246.559,
+      "duration": 3.48,
+      "text": "available in our Flagship product which"
+    },
+    {
+      "start": 1248.72,
+      "duration": 4.56,
+      "text": "we have in the middle here which is"
+    },
+    {
+      "start": 1250.039,
+      "duration": 5.52,
+      "text": "called certain census and you know again"
+    },
+    {
+      "start": 1253.28,
+      "duration": 3.8,
+      "text": "if you're having issues if you're"
+    },
+    {
+      "start": 1255.559,
+      "duration": 5.161,
+      "text": "attending because you've got questions"
+    },
+    {
+      "start": 1257.08,
+      "duration": 6.82,
+      "text": "around beneficiaries you either can"
+    },
+    {
+      "start": 1260.72,
+      "duration": 6.12,
+      "text": "solve them on a one-off basis or you can"
+    },
+    {
+      "start": 1263.9,
+      "duration": 5.58,
+      "text": "talk to one of our reps here uh and we"
+    },
+    {
+      "start": 1266.84,
+      "duration": 5.52,
+      "text": "will walk you through how to handle that"
+    },
+    {
+      "start": 1269.48,
+      "duration": 5.52,
+      "text": "kind of in mass and how to keep those"
+    },
+    {
+      "start": 1272.36,
+      "duration": 4.559,
+      "text": "records up to date at all times in"
+    },
+    {
+      "start": 1275.0,
+      "duration": 4.679,
+      "text": "regard to your census file and a big"
+    },
+    {
+      "start": 1276.919,
+      "duration": 5.76,
+      "text": "part of that is our service census"
+    },
+    {
+      "start": 1279.679,
+      "duration": 6.201,
+      "text": "solution which will not just find"
+    },
+    {
+      "start": 1282.679,
+      "duration": 5.761,
+      "text": "missing participants or you know"
+    },
+    {
+      "start": 1285.88,
+      "duration": 5.679,
+      "text": "deceased participants or pensioners"
+    },
+    {
+      "start": 1288.44,
+      "duration": 6.119,
+      "text": "within your plan but will also keep your"
+    },
+    {
+      "start": 1291.559,
+      "duration": 6.541,
+      "text": "beneficiaries up to date on a continual"
+    },
+    {
+      "start": 1294.559,
+      "duration": 5.881,
+      "text": "basis available via ad hoc also"
+    },
+    {
+      "start": 1298.1,
+      "duration": 5.459,
+      "text": "available in some of our ongoing"
+    },
+    {
+      "start": 1300.44,
+      "duration": 5.28,
+      "text": "Services mainly um Serta census"
+    },
+    {
+      "start": 1303.559,
+      "duration": 4.74,
+      "text": "um you know who do you contact well"
+    },
+    {
+      "start": 1305.72,
+      "duration": 3.959,
+      "text": "there's a couple ways you can do this uh"
+    },
+    {
+      "start": 1308.299,
+      "duration": 3.36,
+      "text": "one is you have my contact information"
+    },
+    {
+      "start": 1309.679,
+      "duration": 4.321,
+      "text": "here certainly feel free to contact"
+    },
+    {
+      "start": 1311.659,
+      "duration": 5.101,
+      "text": "attack me I can push you in the right"
+    },
+    {
+      "start": 1314.0,
+      "duration": 5.46,
+      "text": "direction so there's always that off our"
+    },
+    {
+      "start": 1316.76,
+      "duration": 5.22,
+      "text": "website we do have you know our general"
+    },
+    {
+      "start": 1319.46,
+      "duration": 5.459,
+      "text": "contact information 800 numbers things"
+    },
+    {
+      "start": 1321.98,
+      "duration": 4.559,
+      "text": "of that nature or if you have a rep that"
+    },
+    {
+      "start": 1324.919,
+      "duration": 3.181,
+      "text": "you're currently dealing with here at"
+    },
+    {
+      "start": 1326.539,
+      "duration": 3.721,
+      "text": "PBI"
+    },
+    {
+      "start": 1328.1,
+      "duration": 3.54,
+      "text": "um it's always great to contact them or"
+    },
+    {
+      "start": 1330.26,
+      "duration": 3.6,
+      "text": "if you're an existing client your"
+    },
+    {
+      "start": 1331.64,
+      "duration": 4.34,
+      "text": "contact uh contact your account manager"
+    },
+    {
+      "start": 1333.86,
+      "duration": 5.76,
+      "text": "and any of us would be more than happy"
+    },
+    {
+      "start": 1335.98,
+      "duration": 6.04,
+      "text": "to listen to answer any questions and"
+    },
+    {
+      "start": 1339.62,
+      "duration": 6.0,
+      "text": "see how we can help you out so with that"
+    },
+    {
+      "start": 1342.02,
+      "duration": 6.32,
+      "text": "we have just about five minutes left and"
+    },
+    {
+      "start": 1345.62,
+      "duration": 6.0,
+      "text": "I know we have a few questions"
+    },
+    {
+      "start": 1348.34,
+      "duration": 5.86,
+      "text": "that have come in during the"
+    },
+    {
+      "start": 1351.62,
+      "duration": 5.46,
+      "text": "presentation so let me grab a couple of"
+    },
+    {
+      "start": 1354.2,
+      "duration": 5.64,
+      "text": "those and Lindsay and Mike if you can uh"
+    },
+    {
+      "start": 1357.08,
+      "duration": 4.86,
+      "text": "you know just be prepared um I'll try"
+    },
+    {
+      "start": 1359.84,
+      "duration": 3.66,
+      "text": "and throw these to the appropriate"
+    },
+    {
+      "start": 1361.94,
+      "duration": 4.08,
+      "text": "person but you're more than welcome to"
+    },
+    {
+      "start": 1363.5,
+      "duration": 6.0,
+      "text": "trade off as well so so bear with me"
+    },
+    {
+      "start": 1366.02,
+      "duration": 6.3,
+      "text": "here as I look at these I think first"
+    },
+    {
+      "start": 1369.5,
+      "duration": 5.1,
+      "text": "uh let's see"
+    },
+    {
+      "start": 1372.32,
+      "duration": 6.599,
+      "text": "um Mike I think I'll throw this over to"
+    },
+    {
+      "start": 1374.6,
+      "duration": 5.66,
+      "text": "you how do you confirm the person is"
+    },
+    {
+      "start": 1378.919,
+      "duration": 3.781,
+      "text": "deceased"
+    },
+    {
+      "start": 1380.26,
+      "duration": 4.96,
+      "text": "great question Jason"
+    },
+    {
+      "start": 1382.7,
+      "duration": 4.62,
+      "text": "um we have two methods we will look"
+    },
+    {
+      "start": 1385.22,
+      "duration": 5.64,
+      "text": "through two primary methods we'll look"
+    },
+    {
+      "start": 1387.32,
+      "duration": 6.239,
+      "text": "at SSA or state record hit"
+    },
+    {
+      "start": 1390.86,
+      "duration": 4.86,
+      "text": "um and we'll also use obituaries those"
+    },
+    {
+      "start": 1393.559,
+      "duration": 5.641,
+      "text": "are by far two primary ones that gets"
+    },
+    {
+      "start": 1395.72,
+      "duration": 5.52,
+      "text": "about 95 plus percent of our deaths"
+    },
+    {
+      "start": 1399.2,
+      "duration": 3.78,
+      "text": "um but there could be additional other"
+    },
+    {
+      "start": 1401.24,
+      "duration": 3.179,
+      "text": "sources we might be able to use but"
+    },
+    {
+      "start": 1402.98,
+      "duration": 5.64,
+      "text": "primarily those two"
+    },
+    {
+      "start": 1404.419,
+      "duration": 5.76,
+      "text": "okay okay and with that and I know I"
+    },
+    {
+      "start": 1408.62,
+      "duration": 4.5,
+      "text": "think you had mentioned turnaround times"
+    },
+    {
+      "start": 1410.179,
+      "duration": 5.101,
+      "text": "you know kind of ASAP or you know as"
+    },
+    {
+      "start": 1413.12,
+      "duration": 4.86,
+      "text": "quickly as possible but do you have an"
+    },
+    {
+      "start": 1415.28,
+      "duration": 4.2,
+      "text": "example of you know maybe a project or"
+    },
+    {
+      "start": 1417.98,
+      "duration": 3.12,
+      "text": "what like an average turnaround time"
+    },
+    {
+      "start": 1419.48,
+      "duration": 3.9,
+      "text": "would be"
+    },
+    {
+      "start": 1421.1,
+      "duration": 3.42,
+      "text": "um for our smaller projects you know"
+    },
+    {
+      "start": 1423.38,
+      "duration": 2.52,
+      "text": "somewhere between one to ten"
+    },
+    {
+      "start": 1424.52,
+      "duration": 2.94,
+      "text": "participants we aim to get it done"
+    },
+    {
+      "start": 1425.9,
+      "duration": 6.24,
+      "text": "within a week"
+    },
+    {
+      "start": 1427.46,
+      "duration": 8.82,
+      "text": "for larger projects uh you know maybe"
+    },
+    {
+      "start": 1432.14,
+      "duration": 6.84,
+      "text": "20 30 50 within a month anything over"
+    },
+    {
+      "start": 1436.28,
+      "duration": 5.46,
+      "text": "100 participants will communicate with"
+    },
+    {
+      "start": 1438.98,
+      "duration": 3.84,
+      "text": "the client a due date right up front uh"
+    },
+    {
+      "start": 1441.74,
+      "duration": 3.6,
+      "text": "make sure that they're comfortable with"
+    },
+    {
+      "start": 1442.82,
+      "duration": 4.32,
+      "text": "it and also try to provide them results"
+    },
+    {
+      "start": 1445.34,
+      "duration": 4.38,
+      "text": "along the way so just get all the"
+    },
+    {
+      "start": 1447.14,
+      "duration": 3.899,
+      "text": "results at the end we are flexible with"
+    },
+    {
+      "start": 1449.72,
+      "duration": 4.38,
+      "text": "the timing in which they would like the"
+    },
+    {
+      "start": 1451.039,
+      "duration": 6.481,
+      "text": "results whether that's weekly every two"
+    },
+    {
+      "start": 1454.1,
+      "duration": 5.16,
+      "text": "weeks once a month we'll we'll set the"
+    },
+    {
+      "start": 1457.52,
+      "duration": 3.6,
+      "text": "target for how they want to get those"
+    },
+    {
+      "start": 1459.26,
+      "duration": 4.5,
+      "text": "results given to them and provide them"
+    },
+    {
+      "start": 1461.12,
+      "duration": 6.299,
+      "text": "along the way awesome okay great thank"
+    },
+    {
+      "start": 1463.76,
+      "duration": 4.68,
+      "text": "you uh let's see uh Lindsay here's one"
+    },
+    {
+      "start": 1467.419,
+      "duration": 4.321,
+      "text": "for you"
+    },
+    {
+      "start": 1468.44,
+      "duration": 5.04,
+      "text": "um what do you need from a client to get"
+    },
+    {
+      "start": 1471.74,
+      "duration": 5.22,
+      "text": "started in regard to uh benef search"
+    },
+    {
+      "start": 1473.48,
+      "duration": 5.699,
+      "text": "yeah great question so minimum required"
+    },
+    {
+      "start": 1476.96,
+      "duration": 5.339,
+      "text": "data points that are are needed for the"
+    },
+    {
+      "start": 1479.179,
+      "duration": 4.681,
+      "text": "search is participant name SSN and if"
+    },
+    {
+      "start": 1482.299,
+      "duration": 3.421,
+      "text": "they are deceased that we ask that you"
+    },
+    {
+      "start": 1483.86,
+      "duration": 4.62,
+      "text": "provide the the date of death as well"
+    },
+    {
+      "start": 1485.72,
+      "duration": 5.88,
+      "text": "nice to know Fields"
+    },
+    {
+      "start": 1488.48,
+      "duration": 5.579,
+      "text": "um are uh ZIP code so location of that"
+    },
+    {
+      "start": 1491.6,
+      "duration": 6.24,
+      "text": "participant date of birth that really"
+    },
+    {
+      "start": 1494.059,
+      "duration": 5.461,
+      "text": "helps us identify uh deceased"
+    },
+    {
+      "start": 1497.84,
+      "duration": 4.14,
+      "text": "participants information pull in and"
+    },
+    {
+      "start": 1499.52,
+      "duration": 4.98,
+      "text": "find obituary text so we can provide"
+    },
+    {
+      "start": 1501.98,
+      "duration": 4.8,
+      "text": "that in the in the report if you are"
+    },
+    {
+      "start": 1504.5,
+      "duration": 4.74,
+      "text": "missing any of that information PPI"
+    },
+    {
+      "start": 1506.78,
+      "duration": 5.1,
+      "text": "certainly has a ways and other services"
+    },
+    {
+      "start": 1509.24,
+      "duration": 5.1,
+      "text": "that we provide to pull in that missing"
+    },
+    {
+      "start": 1511.88,
+      "duration": 4.26,
+      "text": "information so let's say that you have"
+    },
+    {
+      "start": 1514.34,
+      "duration": 3.66,
+      "text": "the name and address but you're missing"
+    },
+    {
+      "start": 1516.14,
+      "duration": 4.019,
+      "text": "the social security number"
+    },
+    {
+      "start": 1518.0,
+      "duration": 3.96,
+      "text": "we have services that can provide any"
+    },
+    {
+      "start": 1520.159,
+      "duration": 3.781,
+      "text": "part of those those missing data points"
+    },
+    {
+      "start": 1521.96,
+      "duration": 3.9,
+      "text": "that you have you just contact us and we"
+    },
+    {
+      "start": 1523.94,
+      "duration": 2.76,
+      "text": "can walk you uh on how to start those"
+    },
+    {
+      "start": 1525.86,
+      "duration": 3.84,
+      "text": "services"
+    },
+    {
+      "start": 1526.7,
+      "duration": 5.339,
+      "text": "it's huge okay great thank you"
+    },
+    {
+      "start": 1529.7,
+      "duration": 4.5,
+      "text": "um we have one last question and I know"
+    },
+    {
+      "start": 1532.039,
+      "duration": 4.14,
+      "text": "that we're running short on time so what"
+    },
+    {
+      "start": 1534.2,
+      "duration": 3.959,
+      "text": "I'll do is I'll throw this out if"
+    },
+    {
+      "start": 1536.179,
+      "duration": 4.5,
+      "text": "anybody has a burning question that you"
+    },
+    {
+      "start": 1538.159,
+      "duration": 4.321,
+      "text": "want to ask before we end"
+    },
+    {
+      "start": 1540.679,
+      "duration": 4.081,
+      "text": "um I'll answer this last question"
+    },
+    {
+      "start": 1542.48,
+      "duration": 4.92,
+      "text": "um and then enter it in your chat we'll"
+    },
+    {
+      "start": 1544.76,
+      "duration": 4.62,
+      "text": "try and picture or pick that up prior to"
+    },
+    {
+      "start": 1547.4,
+      "duration": 3.3,
+      "text": "closing down today if we don't get to"
+    },
+    {
+      "start": 1549.38,
+      "duration": 2.58,
+      "text": "your question"
+    },
+    {
+      "start": 1550.7,
+      "duration": 3.479,
+      "text": "um you know we'll certainly get back to"
+    },
+    {
+      "start": 1551.96,
+      "duration": 4.56,
+      "text": "you after the webinar though so the the"
+    },
+    {
+      "start": 1554.179,
+      "duration": 5.941,
+      "text": "last one that I have if there's no"
+    },
+    {
+      "start": 1556.52,
+      "duration": 5.519,
+      "text": "others is uh it's always a good question"
+    },
+    {
+      "start": 1560.12,
+      "duration": 6.299,
+      "text": "um what can you legally do"
+    },
+    {
+      "start": 1562.039,
+      "duration": 6.12,
+      "text": "when you've exhausted all options we"
+    },
+    {
+      "start": 1566.419,
+      "duration": 2.64,
+      "text": "could ask these kinds of questions all"
+    },
+    {
+      "start": 1568.159,
+      "duration": 3.241,
+      "text": "the time"
+    },
+    {
+      "start": 1569.059,
+      "duration": 4.441,
+      "text": "um you know and I always joke a little"
+    },
+    {
+      "start": 1571.4,
+      "duration": 4.8,
+      "text": "bit right because I'm not a nurse"
+    },
+    {
+      "start": 1573.5,
+      "duration": 5.64,
+      "text": "attorney I don't even play one on TV so"
+    },
+    {
+      "start": 1576.2,
+      "duration": 6.12,
+      "text": "for me to kind of uh give you know"
+    },
+    {
+      "start": 1579.14,
+      "duration": 5.639,
+      "text": "prospects clients legal advice"
+    },
+    {
+      "start": 1582.32,
+      "duration": 5.099,
+      "text": "um I always try and stay away from that"
+    },
+    {
+      "start": 1584.779,
+      "duration": 5.041,
+      "text": "um but generally what I uh consult or"
+    },
+    {
+      "start": 1587.419,
+      "duration": 3.841,
+      "text": "what I encourage people to do is you"
+    },
+    {
+      "start": 1589.82,
+      "duration": 2.58,
+      "text": "know certainly talk with your internal"
+    },
+    {
+      "start": 1591.26,
+      "duration": 3.419,
+      "text": "counsel"
+    },
+    {
+      "start": 1592.4,
+      "duration": 5.12,
+      "text": "um external counsel if needed you know"
+    },
+    {
+      "start": 1594.679,
+      "duration": 7.141,
+      "text": "some type of uh you know erisa"
+    },
+    {
+      "start": 1597.52,
+      "duration": 5.98,
+      "text": "expertise but what I will say is from a"
+    },
+    {
+      "start": 1601.82,
+      "duration": 4.62,
+      "text": "practical matter"
+    },
+    {
+      "start": 1603.5,
+      "duration": 6.96,
+      "text": "um what Lindsay had shown in regard to"
+    },
+    {
+      "start": 1606.44,
+      "duration": 6.06,
+      "text": "that deliverable report right or even"
+    },
+    {
+      "start": 1610.46,
+      "duration": 4.92,
+      "text": "you know kind of the brass tax on the"
+    },
+    {
+      "start": 1612.5,
+      "duration": 6.0,
+      "text": "deliverable around the Excel spreadsheet"
+    },
+    {
+      "start": 1615.38,
+      "duration": 6.06,
+      "text": "is you know Mike's group does a a"
+    },
+    {
+      "start": 1618.5,
+      "duration": 6.72,
+      "text": "bang-up job with what they do and they"
+    },
+    {
+      "start": 1621.44,
+      "duration": 5.82,
+      "text": "document everything for you so that's"
+    },
+    {
+      "start": 1625.22,
+      "duration": 5.52,
+      "text": "probably one of the biggest Parts about"
+    },
+    {
+      "start": 1627.26,
+      "duration": 5.299,
+      "text": "you know a lot of our services is it's"
+    },
+    {
+      "start": 1630.74,
+      "duration": 4.86,
+      "text": "not just the data that you're getting"
+    },
+    {
+      "start": 1632.559,
+      "duration": 6.301,
+      "text": "but it's also the documentation that's"
+    },
+    {
+      "start": 1635.6,
+      "duration": 5.52,
+      "text": "behind the data right we in some"
+    },
+    {
+      "start": 1638.86,
+      "duration": 5.559,
+      "text": "products we'll call it like a diligent"
+    },
+    {
+      "start": 1641.12,
+      "duration": 5.039,
+      "text": "summary a report but it's the"
+    },
+    {
+      "start": 1644.419,
+      "duration": 3.841,
+      "text": "documentation so from a legal"
+    },
+    {
+      "start": 1646.159,
+      "duration": 5.581,
+      "text": "perspective if there's ever questions"
+    },
+    {
+      "start": 1648.26,
+      "duration": 5.58,
+      "text": "about any particular individual you're"
+    },
+    {
+      "start": 1651.74,
+      "duration": 3.96,
+      "text": "not only able to say hey here's what we"
+    },
+    {
+      "start": 1653.84,
+      "duration": 5.76,
+      "text": "have within our plan documents or here's"
+    },
+    {
+      "start": 1655.7,
+      "duration": 6.78,
+      "text": "what we do but you're also able to not"
+    },
+    {
+      "start": 1659.6,
+      "duration": 5.52,
+      "text": "just repeat that process but pull out"
+    },
+    {
+      "start": 1662.48,
+      "duration": 4.62,
+      "text": "the activities that happened and then"
+    },
+    {
+      "start": 1665.12,
+      "duration": 4.799,
+      "text": "also just like Lindsay had shown either"
+    },
+    {
+      "start": 1667.1,
+      "duration": 5.52,
+      "text": "an Excel spreadsheet or you know a PDF"
+    },
+    {
+      "start": 1669.919,
+      "duration": 4.981,
+      "text": "to prove that so any questions any"
+    },
+    {
+      "start": 1672.62,
+      "duration": 4.2,
+      "text": "issues down the road you always have"
+    },
+    {
+      "start": 1674.9,
+      "duration": 4.56,
+      "text": "that document mutation and that's a huge"
+    },
+    {
+      "start": 1676.82,
+      "duration": 5.16,
+      "text": "part and by the way that's coming on"
+    },
+    {
+      "start": 1679.46,
+      "duration": 6.0,
+      "text": "that that is available in our ad hoc"
+    },
+    {
+      "start": 1681.98,
+      "duration": 5.22,
+      "text": "services but it's also a huge part of"
+    },
+    {
+      "start": 1685.46,
+      "duration": 5.4,
+      "text": "our premium service which is Serta"
+    },
+    {
+      "start": 1687.2,
+      "duration": 6.62,
+      "text": "census as well because that's actually a"
+    },
+    {
+      "start": 1690.86,
+      "duration": 6.48,
+      "text": "whole solution and all of the services"
+    },
+    {
+      "start": 1693.82,
+      "duration": 5.92,
+      "text": "combined so if you ever have any issue"
+    },
+    {
+      "start": 1697.34,
+      "duration": 5.819,
+      "text": "you're actually able to jump back into"
+    },
+    {
+      "start": 1699.74,
+      "duration": 6.12,
+      "text": "certain census and you can you know pull"
+    },
+    {
+      "start": 1703.159,
+      "duration": 5.52,
+      "text": "all of that information out so it's a"
+    },
+    {
+      "start": 1705.86,
+      "duration": 5.52,
+      "text": "great question though let me see I think"
+    },
+    {
+      "start": 1708.679,
+      "duration": 5.341,
+      "text": "with that we are one minute over and we"
+    },
+    {
+      "start": 1711.38,
+      "duration": 5.34,
+      "text": "do not have another question but"
+    },
+    {
+      "start": 1714.02,
+      "duration": 4.8,
+      "text": "certainly after the fact if you know you"
+    },
+    {
+      "start": 1716.72,
+      "duration": 4.14,
+      "text": "do have any questions or if you need any"
+    },
+    {
+      "start": 1718.82,
+      "duration": 3.42,
+      "text": "follow-up we do have an email address"
+    },
+    {
+      "start": 1720.86,
+      "duration": 4.439,
+      "text": "down here at the bottom of the screen"
+    },
+    {
+      "start": 1722.24,
+      "duration": 5.939,
+      "text": "which is mine again you do have account"
+    },
+    {
+      "start": 1725.299,
+      "duration": 5.521,
+      "text": "managers for existing clients certainly"
+    },
+    {
+      "start": 1728.179,
+      "duration": 4.801,
+      "text": "they're a wealth of knowledge or if you"
+    },
+    {
+      "start": 1730.82,
+      "duration": 4.859,
+      "text": "are you know dealing with a rep already"
+    },
+    {
+      "start": 1732.98,
+      "duration": 4.02,
+      "text": "today from a sales perspective I'd"
+    },
+    {
+      "start": 1735.679,
+      "duration": 5.761,
+      "text": "encourage you to Circle back with them"
+    },
+    {
+      "start": 1737.0,
+      "duration": 6.299,
+      "text": "on questions too so with that we will go"
+    },
+    {
+      "start": 1741.44,
+      "duration": 4.5,
+      "text": "ahead and close this one down for today"
+    },
+    {
+      "start": 1743.299,
+      "duration": 5.821,
+      "text": "I appreciate everybody attending"
+    },
+    {
+      "start": 1745.94,
+      "duration": 4.92,
+      "text": "um you know have a a great day and look"
+    },
+    {
+      "start": 1749.12,
+      "duration": 3.97,
+      "text": "for the email as a follow-up coming out"
+    },
+    {
+      "start": 1750.86,
+      "duration": 9.379,
+      "text": "shortly thanks everybody"
+    },
+    {
+      "start": 1753.09,
+      "duration": 7.149,
+      "text": "[Music]"
+    }
+  ],
+  "full_text": "[Music] foreign Welcome to our webinar on missing uh beneficiaries the interesting part about the topic today is this is certainly a conversation that we get involved with time and time again and it's often the uh the what's next of some of the work that we do where we identify decedents um and then it's that what next section so we're going to run through that today today with us well first of all my name is Jason Sauer I'm a business development manager here um but I wanted to introduce the more important people um you know that are on with us today we've got our both of our directors of operations and Client Services uh Mike irie and Lindsay have been with us for a number of years and we'll walk through um the topic today in regard to what's new what are some of the best practices what have we seen what data sources do we have a lot of different topics I'm covering uh beneficiaries so I think with that we'll go ahead and get started thank you everyone for joining today my name is Lindsay Tate McDonald I'm the director of Client Services here at PBI I've been with PBI for about seven years or so uh but PBI itself in general has been in business over four years if anybody understands uh clients needs and issues and lack thereof data it's really PBI I had the opportunity and pleasure to speak with hundreds of clients over the years and really understand um a lot of the issues that they face on a daily basis with trying to fill in missing gaps of their their data in general not just beneficiaries but so I wanted to just talk to that briefly a lot of the common problems that we hear from clients on a daily basis is just how do we fill in these missing gaps in our data so a lot of those is could be companies going through mergers and Acquisitions tpas managing their clients portfolios technology being outdated so a lot of common problems we hear from clients is a lot of this information that they have is still on paper documents in a file right how do they get that information um into their databases where they can share it and utilize it in a proper way um so here at PBI we have lots of different ways of how to fill in those missing gaps today we're specifically talking about beneficiaries but part of that even trying to identify beneficiaries is still is still trying to enter making sure that you have good data on the participants themselves so making ensure that they have um updated names address information dates of birth uh we see that on average uh about 2.3 percent of participants that are over the age of 65 passed away on an annual basis um part of the challenge of identifying those deceased participants is making sure that you have the good information ahead of time to be able to identify those deaths um and be both filling the missing gaps but um so that is kind of the the problem at hand at the beginning of part of it um Mike ire is going to discuss exactly how the Benny search service can help fill in those pieces of beneficiaries that you have missing most of the times when you have missing beneficiaries it's just a lack of communication from the participants themselves so a lot of those participants are getting married getting divorced moving um changing beneficiaries on records a lot of times they just have uh the lack of knowledge to be to understand that they need to communicate back with their former employers to update all that paperwork uh Michael area is going to go all over the urban search service and how we can start filling in those missing gaps for you thank you Lindsay appreciate that um a little bit about me my name is Mike Harry I have been the director of operations here at PBI for a little over three years I've been with the holding company uh for PBI for over 10 years um Benny search is a product that we've had for almost 10 years now but with a heavier emphasis within the last five years as more and more clients have asked for this product um we've built out a robust processing system to handle Benny search that we refined and continue to refined uh to this day with the with the goal of finding at least one first degree relative first degree relative being a parent a child a spouse or a sibling we don't focus on stepchildren or Aunts Uncles grandparents grandchildren neighbors or friends some of that Mike pull three might be provided that information but the focus here is on first degree with the heaviest emphasis on spouse we have a team dedicated to reviewing Benny search that's all they do we've completed tens of thousands of these over the years and because this team has done so many of these they understand the little quirks and little details that's needed to find some a little more challenging uh beneficiaries every result gets reviewed by two people we have an initial reviewer and then we have a QC process before it gets back to uh the client uh Penny search was built to look for deceased participants however we can do it if the participant is living we've had we've had a number of those come in uh I will say our confidence level is a little lower on relative relationships um if the person's living but we do find a good amount of relatives either way a little bit about our process um the first thing we'll do when we take a file in is we'll go out and get updated data to confirm the participant information uh what we're looking for is do we get the right social security number the right name the right date of birth the right addresses and the right date of death if provided by the client if for whatever reason we feel like some of the data is incorrect and we're not finding the proper person that's linked to what was provided to us we'll go right back to the client and ask them to take another look at their data it is common for us to update locations uh potential dates of birth some last name changes those sorts of things um we do that pretty regularly within the account The Next Step once we feel confident that we have the participant and we can give you back that same data or updated data especially around locations is we'll look for any potential relatives we go out to our various different data sources to pull in potential relative I might be related to the participant the data that we'll give you back on the relatives are their name their date of birth their address and phone number if available we give you the best known phone number and best known address for each relative we've been pulling up to 15 uh relatives at a time uh as I said we focus first on uh first degree relatives but there's potential for um second or third degree relatives to to pull through as well um our our next step is now we're going to try to confirm the relationship of those relatives um so we'll pull in uh various different sources one of them being the obit if the participant is deceased and um the obituaries uh we're really strong with those if they're in the last you know after 2010 uh between 2010 and 2000 it's a little weaker only because not as many people posted obituaries online and pre-2000 is a little harder that said we do have uh ways of going back and looking at old newspapers um or any other kind of method in which somebody might have posted uh an obituary and we are able to find those as well um we also will look for marriage and divorce records we have a entire section devoted just for that and uh we've cataloged all 50 states and their requirements for uh marriage and divorce records what they can provide what they cannot provide the time periods in which they can provide it for whether it's a specific year or decade in which you're stronger at um as well as you know how we can obtain that information um we are stronger with marriages than divorces that's just kind of the nature of the business uh marriages are a little easier to come by to force it a little harder um but we we do opt for that as needed um we'll also confirm uh via using an SSA or a state record uh of a death record hit um if for nothing else if we can't find a marriage or divorce or an obit we can at least confirm that this person is deceased if provided that he was deceased uh and some of these death records they do give you some insight into uh the marriage uh if you if the participant was widowed or not or divorced sometimes that does pull through um once we have this uh data we go and look to update the relationship of the relatives um before we uh provide any data back to you as far as as far as our confidence level we'll want to have two sources confirming that uh the relationship of a relative especially the uh spouse if we only have one source uh we'll mark that relationship as possible if we have two sources we'll we'll mark it as confirmed um that way we've we have confidence level going back to our client that you know this is this is a relationship um we also look at various other uh vendors as well um sometimes uh obituaries aren't as robust sometimes marriage and divorce records aren't as complete um so we have um other methods that we use to go out and look for additional data um we've looked at family trees census uh write-ups um you know blog posts all kinds of different things that uh that we have access to um to help us kind of fill in the gaps and make a full complete uh picture of their relationship uh between the potential relatives um we uh as I mentioned we use two sources to verify the relative relationships um the heaviest emphasis is on the spouse um all all relatives will be marked if they're alive or deceased um but the spouse will will go a step further um if the spouse is married or divorced based on uh the information we've provided we'll let you know that um if we believe the participant has never been married it's not quite common but it does happen we'll certainly point that out uh if we believe the participant and we're not quite sure one way or the other but it's unlikely he's been married for some some reason we'll point that out as well um there are times where it's just we just won't have enough data to make that determination and we'll mark it as we're unsure if the uh participant was married or not but we'll want to give you an answer one way or the other on the marriage uh between the participant and the spouse whether we believe it's a spouse or not and if the spouse is alive or deceased uh as far as some data on that um a little over 80 percent of our participants we have an answer for you on the spouse and over 95 percent of the time we'll find at least one relative um the focus here is on living relatives as well um but if for whatever reason there are no living relatives will want to make sure that you're aware of that as well um once we get through that process with the initial reviewers and we will QC it make sure that all the proper steps were done uh if there's anything missing or we're not hitting the uh what our guidelines are to make sure we have one living relative and a spouse will look will look deeper um but once all that's complete and uh and and finish we'll make sure to get that out to you um we have orders coming in for one participant we have orders coming in for thousands uh they're each prioritized and get done as soon as possible we have a cue that we manage to ensure that all things get completed on or before their due date so might talk to you all about back-ended process and what we're looking for and the information that we utilize to update it on this slide you'll see an example of the information and the output that we provide back to you um so you can see this is a very detailed report um we give you information on the participant that was submitted so address history dates of birth date of death if they weren't a known deceased participant um we'll provide that information to you um you get it like I said complete address history um and then we start diving into the relatives that we've identified um you will receive name information their dates of birth age their current address location phone number if we can find it really everything that you need to make contact with that beneficiary and communicate with them um again Mike I already had saved before we do come through marriage and divorce records um certainly if we find any of that information we're providing it to you in the report uh we don't report we provide the actual certificate but we're able to gather all that information that are in those records and provide them back to you um we report the way that we found the deceased participant um so if that was through the Social Security Administration if that was a state Source if we found that death through an obituary if we did find the death route or either way if we do find a an obituary that's published we provide that published obituary for you that texted that within the report so you can easily see the connections that meet we made as well um so oftentimes uh what you can always depend on in an obituary is that they do provide uh relatives in there so if they're a married spouse's name if they had children those are usually typically in there as well and really any information that makes you feel that provides uh makes you feel confident on the information that we're providing back to you so not only do you get a PDF of all the data that we found to you we also provide all this information in an Excel report as well we find that clients like to have both versions one is visually easy to view and can put into their records too on an Excel point it's it's easier to manage they can Port that information into their systems or pass that along internally a little bit easier thanks Lindsay and uh you know thanks Mike as well I think what we wanted to do was actually just take a look at a couple examples to some extent this is kind of like preaching the choir here um but you know by way of using our benef search service here's just a couple of examples by way of a case study or you know maybe what you could call application so recently with us um you know I had one of my clients deliver a file to us and and they were looking for deaths right much like what a lot of our clients are as part of that analysis and we were looking at term vested folks deferred and in Pay uh as part of that analysis we actually found that there were a number of people that were in their term vested population that were deceased and as such they died as a term vested participant um you know they went back and checked their records and you know obviously they died prior to Applications so they were not in pay and what they had found was a number of those individuals did not have any beneficiary information that was recorded in the system right so back in the day we used to say that the cards didn't get translated you know maybe the information is mixed up or what have you but for whatever reason they did not have good records around the beneficiary so what we were actually able to do is use the ad hoc service called then a search and go in and find surviving spouses for those individual and then so outside of that obviously what you're able to do is you know were they was the spouse you know living at the time of death were they not were they do a benefit you kind of walk through your planned documents or you know the benefits that you offer and what this particular client was able to do was actually find spouses that weren't just do a payment but they were also do medical benefits as well so you know when you think about your fiduciary responsibility looking out for the participants having their best interest in mind um you know it's not just for the main folks but also for the beneficiaries as well so that's one case study if you will the other interesting application that we're running into more and more um at this point is um and we will have this PowerPoint it will be distributed um with that you'll see a reference to this so you'll have a website that you can click on um but the guidelines that the DOL came out with early 2021 I believe it was January where they talked about what to do in regard to missing or lost participants in a plan uh and by the way that's a DB so a pension plan it could be a 401k 457 403b what have you um but it talks specifically about the activities that you need to do as a fiduciary or planned sponsor and you know again that's in a plan that's for uncashed checks that was even with plan terminations if you read through those it mentions beneficiaries multiple times within those you know recommended steps we won't call them required but we will say what is recommended by the The Dol or the guidelines so where we've run into folks that are either working through an internal audit of their populations or of their census files or you know God forbid an outside audit that they're trying to work through beneficiaries and the documentation thereof and having them available or looking to them for information on a missing participant is a material part of fulfilling your fiduciary responsibility so um you know we will have that link if you need that in this presentation as we distribute that but really it's good practice know your participant know the data that's around them be able to find them by touch base with the beneficiaries and you know really be always this term that we throw out you know audit ready so in thinking through uh benef search how is it available today and and you know not trying to give you a sales pitch just trying to tell you how you can actually move forward with the service there's a couple different ways today one is it is available as an ad hoc service so just like Mike had mentioned sometimes we'll get benefit searches a handful of them but we've certainly seen files of a couple thousand right it depends on the challenge that you have it depends on the problem that you're trying to solve so it's certainly available under our locate Services section that you see here over on the right hand side as an ad hoc service so you do have the ability to submit one at a time through our secure locate portal um it's also available and you know it's it's important to note that you know the beneficiary service not benef search as you know an individual product is available in our Flagship product which we have in the middle here which is called certain census and you know again if you're having issues if you're attending because you've got questions around beneficiaries you either can solve them on a one-off basis or you can talk to one of our reps here uh and we will walk you through how to handle that kind of in mass and how to keep those records up to date at all times in regard to your census file and a big part of that is our service census solution which will not just find missing participants or you know deceased participants or pensioners within your plan but will also keep your beneficiaries up to date on a continual basis available via ad hoc also available in some of our ongoing Services mainly um Serta census um you know who do you contact well there's a couple ways you can do this uh one is you have my contact information here certainly feel free to contact attack me I can push you in the right direction so there's always that off our website we do have you know our general contact information 800 numbers things of that nature or if you have a rep that you're currently dealing with here at PBI um it's always great to contact them or if you're an existing client your contact uh contact your account manager and any of us would be more than happy to listen to answer any questions and see how we can help you out so with that we have just about five minutes left and I know we have a few questions that have come in during the presentation so let me grab a couple of those and Lindsay and Mike if you can uh you know just be prepared um I'll try and throw these to the appropriate person but you're more than welcome to trade off as well so so bear with me here as I look at these I think first uh let's see um Mike I think I'll throw this over to you how do you confirm the person is deceased great question Jason um we have two methods we will look through two primary methods we'll look at SSA or state record hit um and we'll also use obituaries those are by far two primary ones that gets about 95 plus percent of our deaths um but there could be additional other sources we might be able to use but primarily those two okay okay and with that and I know I think you had mentioned turnaround times you know kind of ASAP or you know as quickly as possible but do you have an example of you know maybe a project or what like an average turnaround time would be um for our smaller projects you know somewhere between one to ten participants we aim to get it done within a week for larger projects uh you know maybe 20 30 50 within a month anything over 100 participants will communicate with the client a due date right up front uh make sure that they're comfortable with it and also try to provide them results along the way so just get all the results at the end we are flexible with the timing in which they would like the results whether that's weekly every two weeks once a month we'll we'll set the target for how they want to get those results given to them and provide them along the way awesome okay great thank you uh let's see uh Lindsay here's one for you um what do you need from a client to get started in regard to uh benef search yeah great question so minimum required data points that are are needed for the search is participant name SSN and if they are deceased that we ask that you provide the the date of death as well nice to know Fields um are uh ZIP code so location of that participant date of birth that really helps us identify uh deceased participants information pull in and find obituary text so we can provide that in the in the report if you are missing any of that information PPI certainly has a ways and other services that we provide to pull in that missing information so let's say that you have the name and address but you're missing the social security number we have services that can provide any part of those those missing data points that you have you just contact us and we can walk you uh on how to start those services it's huge okay great thank you um we have one last question and I know that we're running short on time so what I'll do is I'll throw this out if anybody has a burning question that you want to ask before we end um I'll answer this last question um and then enter it in your chat we'll try and picture or pick that up prior to closing down today if we don't get to your question um you know we'll certainly get back to you after the webinar though so the the last one that I have if there's no others is uh it's always a good question um what can you legally do when you've exhausted all options we could ask these kinds of questions all the time um you know and I always joke a little bit right because I'm not a nurse attorney I don't even play one on TV so for me to kind of uh give you know prospects clients legal advice um I always try and stay away from that um but generally what I uh consult or what I encourage people to do is you know certainly talk with your internal counsel um external counsel if needed you know some type of uh you know erisa expertise but what I will say is from a practical matter um what Lindsay had shown in regard to that deliverable report right or even you know kind of the brass tax on the deliverable around the Excel spreadsheet is you know Mike's group does a a bang-up job with what they do and they document everything for you so that's probably one of the biggest Parts about you know a lot of our services is it's not just the data that you're getting but it's also the documentation that's behind the data right we in some products we'll call it like a diligent summary a report but it's the documentation so from a legal perspective if there's ever questions about any particular individual you're not only able to say hey here's what we have within our plan documents or here's what we do but you're also able to not just repeat that process but pull out the activities that happened and then also just like Lindsay had shown either an Excel spreadsheet or you know a PDF to prove that so any questions any issues down the road you always have that document mutation and that's a huge part and by the way that's coming on that that is available in our ad hoc services but it's also a huge part of our premium service which is Serta census as well because that's actually a whole solution and all of the services combined so if you ever have any issue you're actually able to jump back into certain census and you can you know pull all of that information out so it's a great question though let me see I think with that we are one minute over and we do not have another question but certainly after the fact if you know you do have any questions or if you need any follow-up we do have an email address down here at the bottom of the screen which is mine again you do have account managers for existing clients certainly they're a wealth of knowledge or if you are you know dealing with a rep already today from a sales perspective I'd encourage you to Circle back with them on questions too so with that we will go ahead and close this one down for today I appreciate everybody attending um you know have a a great day and look for the email as a follow-up coming out shortly thanks everybody [Music]",
+  "attempts": [
+    {
+      "client": "IOS",
+      "playability": {
+        "status": "OK",
+        "playableInEmbed": true,
+        "offlineability": {
+          "buttonRenderer": {
+            "navigationEndpoint": {
+              "clickTrackingParams": "CBEQ6ewBIhMIkYDBh-zblwMVEUVMCB3dZgIMygEEgk9Tvg==",
+              "ypcGetOfflineUpsellEndpoint": {
+                "params": "ChPqqN25AQ0KC3JSNFlDS0dWTm1nIgtyUjRZQ0tHVk5tZyoVCAkYAVIPCgtyUjRZQ0tHVk5tZyAB"
+              }
+            },
+            "trackingParams": "CBEQ6ewBIhMIkYDBh-zblwMVEUVMCB3dZgIM"
+          }
+        },
+        "pictureInPicture": {
+          "pictureInPictureRenderer": {
+            "playableInPip": true,
+            "offByDefault": false,
+            "shouldResumeOnHead": false
+          }
+        },
+        "miniplayer": {
+          "miniplayerRenderer": {
+            "playbackMode": "PLAYBACK_MODE_ALLOW"
+          }
+        },
+        "contextParams": "Q0FFU0FnZ0M="
+      },
+      "outcome": "ok"
+    }
+  ],
+  "fetched_at": "2026-10-28T04:11:13.801696+00:00",
+  "client": "IOS",
+  "json_path": "transcripts/008_rR4YCKGVNmg.json",
+  "text_path": "transcripts/008_rR4YCKGVNmg.txt"
+}

@@ -1,0 +1,2750 @@
+{
+  "index": 32,
+  "url": "https://www.youtube.com/watch?v=Ep2zENQQZ1k",
+  "video_id": "Ep2zENQQZ1k",
+  "status": "ok",
+  "metadata": {
+    "title": "Dueling Dates and Fact Fights: Resolving Evidence Conflicts, Part 2",
+    "author": "FamilySearch",
+    "channelId": "UC-9GZ7QHKOmLS0APnfz2g1Q",
+    "lengthSeconds": "1262",
+    "viewCount": "981",
+    "shortDescription": "In this session, Dueling Dates and Fact Fights: Resolving Evidence Conflicts, learn why evidence conflicts come up in genealogy research and how to resolve them.\n\nThis is part two of a two-part series.\n\nThis presentation was part of RootsTech Connect 2021. Find hundreds of free family history classes, keynotes, and more. http://familysearch.me/RootsTech \n\n#rootstechconnect\n\nRootsTech is hosted by FamilySearch, a global nonprofit organization dedicated to creating inspiring family discovery experiences. RootsTech is the premier global event and learning resource for making family connections and receiving guidance to help people learn more about their families.  \n\nFamilySearch is an international, nonprofit organization dedicated to helping people all over the world connect with their family: past, present, and future. Our partnerships with thousands of record custodians and major genealogical organizations allow us to make billions of records available for you to research your family tree free of charge! Regardless of where or how you research your ancestry, we have specialists all over the world to help you experience the joy of connecting with your heritage.\n\nOur desire to Connect with the Past, Present, and Future https://youtu.be/3cmj5kGm2Xw   \n\nSubscribe:  \nhttp://familysearch.me/youtube   \nhttp://familysearch.me/youtubeportuguese   \nhttp://familysearch.me/youtubespanish   \nhttp://familysearch.me/youtubeeurope   \n\nConnect with FamilySearch:  \nVisit: http://familysearch.me/home   \nLike FamilySearch on Facebook: http://familysearch.me/facebook   \nFollow FamilySearch on Twitter: http://familysearch.me/twitter   \nFollow FamilySearch on Instagram: http://familysearch.me/instagram",
+    "keywords": [
+      "Dueling Dates and Fact Fights: Resolving Evidence Conflicts",
+      "Resolving Evidence Conflicts",
+      "genealogy research",
+      "genealogy research conflists",
+      "genealogy research tips",
+      "genealogy research plan",
+      "genealogy evidence",
+      "family history",
+      "genealogy how to",
+      "family history research",
+      "how to do genealogy research",
+      "resolving research conflicts",
+      "rootstech",
+      "rootstech 2021",
+      "rootstech connect 2021",
+      "rootstech connect"
+    ]
+  },
+  "caption_tracks": [
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=Ep2zENQQZ1k&ei=5XXharmhNJjYsfIPlpmW6Q8&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185877&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=EC669391E389F484196A8A0E717C6BE50A5AB15C.7A0686ED2B1212E0135CACDD72431C4C87FEEDE3&key=yt8&kind=asr&lang=en",
+      "name": {
+        "runs": [
+          {
+            "text": "English (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.en",
+      "languageCode": "en",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    }
+  ],
+  "selected_track": {
+    "baseUrl": "https://www.youtube.com/api/timedtext?v=Ep2zENQQZ1k&ei=5XXharmhNJjYsfIPlpmW6Q8&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185877&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=EC669391E389F484196A8A0E717C6BE50A5AB15C.7A0686ED2B1212E0135CACDD72431C4C87FEEDE3&key=yt8&kind=asr&lang=en",
+    "name": {
+      "runs": [
+        {
+          "text": "English (auto-generated)"
+        }
+      ]
+    },
+    "vssId": "a.en",
+    "languageCode": "en",
+    "kind": "asr",
+    "isTranslatable": true,
+    "trackName": ""
+  },
+  "segments": [
+    {
+      "start": 7.26,
+      "duration": 3.109,
+      "text": "[Music]"
+    },
+    {
+      "start": 13.2,
+      "duration": 3.52,
+      "text": "hi"
+    },
+    {
+      "start": 13.679,
+      "duration": 5.6,
+      "text": "i'm melissa finley welcome to part two"
+    },
+    {
+      "start": 16.72,
+      "duration": 6.319,
+      "text": "of dueling dates and fact fights"
+    },
+    {
+      "start": 19.279,
+      "duration": 3.76,
+      "text": "resolving evidence conflicts"
+    },
+    {
+      "start": 24.56,
+      "duration": 4.32,
+      "text": "in part one of this presentation we"
+    },
+    {
+      "start": 26.88,
+      "duration": 2.96,
+      "text": "discuss that the fourth element of the"
+    },
+    {
+      "start": 28.88,
+      "duration": 3.199,
+      "text": "genealogical proof"
+    },
+    {
+      "start": 29.84,
+      "duration": 5.44,
+      "text": "standard is the resolution of"
+    },
+    {
+      "start": 32.079,
+      "duration": 3.201,
+      "text": "conflicting evidence"
+    },
+    {
+      "start": 35.92,
+      "duration": 4.319,
+      "text": "we defined conflicting evidence as"
+    },
+    {
+      "start": 38.32,
+      "duration": 5.52,
+      "text": "evidence from different sources"
+    },
+    {
+      "start": 40.239,
+      "duration": 6.881,
+      "text": "that contradict each other"
+    },
+    {
+      "start": 43.84,
+      "duration": 5.6,
+      "text": "and we discussed where and why"
+    },
+    {
+      "start": 47.12,
+      "duration": 4.959,
+      "text": "we might find conflicting evidence in"
+    },
+    {
+      "start": 49.44,
+      "duration": 2.639,
+      "text": "our research"
+    },
+    {
+      "start": 53.84,
+      "duration": 7.039,
+      "text": "now let's discuss some solutions and"
+    },
+    {
+      "start": 56.48,
+      "duration": 4.399,
+      "text": "examples to resolve evidence conflicts"
+    },
+    {
+      "start": 63.039,
+      "duration": 6.481,
+      "text": "first and foremost check your"
+    },
+    {
+      "start": 66.08,
+      "duration": 5.359,
+      "text": "assumptions we all go into our research"
+    },
+    {
+      "start": 69.52,
+      "duration": 4.24,
+      "text": "with certain assumptions"
+    },
+    {
+      "start": 71.439,
+      "duration": 4.0,
+      "text": "and it might cause us to skip a key"
+    },
+    {
+      "start": 73.76,
+      "duration": 5.359,
+      "text": "piece of information"
+    },
+    {
+      "start": 75.439,
+      "duration": 6.161,
+      "text": "because we assumed too much"
+    },
+    {
+      "start": 79.119,
+      "duration": 4.081,
+      "text": "so what kind of assumptions do we make"
+    },
+    {
+      "start": 81.6,
+      "duration": 3.28,
+      "text": "in our research"
+    },
+    {
+      "start": 83.2,
+      "duration": 3.279,
+      "text": "well we assume our ancestors"
+    },
+    {
+      "start": 84.88,
+      "duration": 2.32,
+      "text": "participated in certain types of"
+    },
+    {
+      "start": 86.479,
+      "duration": 4.401,
+      "text": "activities"
+    },
+    {
+      "start": 87.2,
+      "duration": 5.68,
+      "text": "at certain ages and not at others"
+    },
+    {
+      "start": 90.88,
+      "duration": 3.599,
+      "text": "we assume groups of people we find"
+    },
+    {
+      "start": 92.88,
+      "duration": 3.68,
+      "text": "together in documents"
+    },
+    {
+      "start": 94.479,
+      "duration": 4.32,
+      "text": "had certain relationships with each"
+    },
+    {
+      "start": 96.56,
+      "duration": 4.4,
+      "text": "other"
+    },
+    {
+      "start": 98.799,
+      "duration": 4.401,
+      "text": "we cherry-pick information out of"
+    },
+    {
+      "start": 100.96,
+      "duration": 4.159,
+      "text": "documents that matches our assumptions"
+    },
+    {
+      "start": 103.2,
+      "duration": 3.84,
+      "text": "and sometimes that makes us gloss over"
+    },
+    {
+      "start": 105.119,
+      "duration": 6.161,
+      "text": "the rest which may actually"
+    },
+    {
+      "start": 107.04,
+      "duration": 4.24,
+      "text": "contradict our preconceived scenario"
+    },
+    {
+      "start": 113.6,
+      "duration": 6.64,
+      "text": "so in order to avoid assumption traps"
+    },
+    {
+      "start": 117.52,
+      "duration": 4.639,
+      "text": "we need to consider alternative"
+    },
+    {
+      "start": 120.24,
+      "duration": 3.6,
+      "text": "scenarios"
+    },
+    {
+      "start": 122.159,
+      "duration": 4.681,
+      "text": "we need to make sure the document or"
+    },
+    {
+      "start": 123.84,
+      "duration": 4.24,
+      "text": "source states what we think that it"
+    },
+    {
+      "start": 126.84,
+      "duration": 4.92,
+      "text": "states"
+    },
+    {
+      "start": 128.08,
+      "duration": 8.48,
+      "text": "and we always need to try to build proof"
+    },
+    {
+      "start": 131.76,
+      "duration": 4.8,
+      "text": "from multiple sources if possible"
+    },
+    {
+      "start": 138.72,
+      "duration": 6.56,
+      "text": "so here's a quick example here we have"
+    },
+    {
+      "start": 142.16,
+      "duration": 6.48,
+      "text": "the percy farnworth household"
+    },
+    {
+      "start": 145.28,
+      "duration": 7.039,
+      "text": "from from meridian idaho"
+    },
+    {
+      "start": 148.64,
+      "duration": 6.56,
+      "text": "in 1900 and we have percy"
+    },
+    {
+      "start": 152.319,
+      "duration": 4.241,
+      "text": "as the head nora his wife and then"
+    },
+    {
+      "start": 155.2,
+      "duration": 4.48,
+      "text": "several children"
+    },
+    {
+      "start": 156.56,
+      "duration": 6.64,
+      "text": "labeled as sons and daughters"
+    },
+    {
+      "start": 159.68,
+      "duration": 5.36,
+      "text": "so from this census we would assume"
+    },
+    {
+      "start": 163.2,
+      "duration": 4.0,
+      "text": "you know that the relationships that are"
+    },
+    {
+      "start": 165.04,
+      "duration": 4.8,
+      "text": "stated are true percy was the"
+    },
+    {
+      "start": 167.2,
+      "duration": 3.119,
+      "text": "husband nor was the wife and they had"
+    },
+    {
+      "start": 169.84,
+      "duration": 4.24,
+      "text": "five"
+    },
+    {
+      "start": 170.319,
+      "duration": 5.841,
+      "text": "children however"
+    },
+    {
+      "start": 174.08,
+      "duration": 3.36,
+      "text": "if we look at other records we would"
+    },
+    {
+      "start": 176.16,
+      "duration": 4.24,
+      "text": "learn that"
+    },
+    {
+      "start": 177.44,
+      "duration": 4.96,
+      "text": "ovid the oldest son listed was not"
+    },
+    {
+      "start": 180.4,
+      "duration": 5.52,
+      "text": "actually percy's son"
+    },
+    {
+      "start": 182.4,
+      "duration": 5.68,
+      "text": "he is nora's son from her first marriage"
+    },
+    {
+      "start": 185.92,
+      "duration": 3.76,
+      "text": "but you can't no you can't figure this"
+    },
+    {
+      "start": 188.08,
+      "duration": 3.76,
+      "text": "out from the census"
+    },
+    {
+      "start": 189.68,
+      "duration": 4.479,
+      "text": "because the census got it wrong and it"
+    },
+    {
+      "start": 191.84,
+      "duration": 3.52,
+      "text": "created a conflict with other records"
+    },
+    {
+      "start": 194.159,
+      "duration": 2.961,
+      "text": "but we could have just gone on the"
+    },
+    {
+      "start": 195.36,
+      "duration": 3.2,
+      "text": "assumption that that relationship was"
+    },
+    {
+      "start": 197.12,
+      "duration": 4.479,
+      "text": "true and put that"
+    },
+    {
+      "start": 198.56,
+      "duration": 4.88,
+      "text": "in our tree and been done with it but"
+    },
+    {
+      "start": 201.599,
+      "duration": 6.241,
+      "text": "our assumptions would have made us put"
+    },
+    {
+      "start": 203.44,
+      "duration": 4.4,
+      "text": "an incorrect relationship in our tree"
+    },
+    {
+      "start": 209.68,
+      "duration": 7.36,
+      "text": "next we need to really take a deep look"
+    },
+    {
+      "start": 213.519,
+      "duration": 7.041,
+      "text": "at the geography that is involved in our"
+    },
+    {
+      "start": 217.04,
+      "duration": 5.6,
+      "text": "research so i highly encourage"
+    },
+    {
+      "start": 220.56,
+      "duration": 3.52,
+      "text": "that you use historic maps to understand"
+    },
+    {
+      "start": 222.64,
+      "duration": 5.2,
+      "text": "the place that you're looking in for"
+    },
+    {
+      "start": 224.08,
+      "duration": 3.76,
+      "text": "that time period"
+    },
+    {
+      "start": 228.72,
+      "duration": 5.519,
+      "text": "i have an example where i thought"
+    },
+    {
+      "start": 232.239,
+      "duration": 3.441,
+      "text": "we had conflicting evidence in our"
+    },
+    {
+      "start": 234.239,
+      "duration": 4.881,
+      "text": "family tree this is actually on my"
+    },
+    {
+      "start": 235.68,
+      "duration": 6.479,
+      "text": "husband's irish side the finley family"
+    },
+    {
+      "start": 239.12,
+      "duration": 6.56,
+      "text": "and um"
+    },
+    {
+      "start": 242.159,
+      "duration": 7.041,
+      "text": "this is sort of the north uh west coast"
+    },
+    {
+      "start": 245.68,
+      "duration": 4.32,
+      "text": "of ireland and we had several children"
+    },
+    {
+      "start": 249.2,
+      "duration": 3.84,
+      "text": "in a family"
+    },
+    {
+      "start": 250.0,
+      "duration": 5.36,
+      "text": "born in what seemed to be different"
+    },
+    {
+      "start": 253.04,
+      "duration": 3.919,
+      "text": "parts of ireland and i was very confused"
+    },
+    {
+      "start": 255.36,
+      "duration": 3.279,
+      "text": "about why this family"
+    },
+    {
+      "start": 256.959,
+      "duration": 3.28,
+      "text": "would be bouncing around ireland having"
+    },
+    {
+      "start": 258.639,
+      "duration": 2.641,
+      "text": "children that just didn't seem to make"
+    },
+    {
+      "start": 260.239,
+      "duration": 3.761,
+      "text": "sense"
+    },
+    {
+      "start": 261.28,
+      "duration": 3.6,
+      "text": "um especially because if you can see"
+    },
+    {
+      "start": 264.0,
+      "duration": 3.199,
+      "text": "from the numbers"
+    },
+    {
+      "start": 264.88,
+      "duration": 3.2,
+      "text": "number one she was born down along the"
+    },
+    {
+      "start": 267.199,
+      "duration": 3.921,
+      "text": "very"
+    },
+    {
+      "start": 268.08,
+      "duration": 4.88,
+      "text": "um sort of midwest coast"
+    },
+    {
+      "start": 271.12,
+      "duration": 3.519,
+      "text": "then the second group of children was"
+    },
+    {
+      "start": 272.96,
+      "duration": 5.04,
+      "text": "born up on the"
+    },
+    {
+      "start": 274.639,
+      "duration": 5.28,
+      "text": "north west coast and then they came back"
+    },
+    {
+      "start": 278.0,
+      "duration": 5.36,
+      "text": "down"
+    },
+    {
+      "start": 279.919,
+      "duration": 4.961,
+      "text": "for the third group of children"
+    },
+    {
+      "start": 283.36,
+      "duration": 3.279,
+      "text": "but then as i was gathering more"
+    },
+    {
+      "start": 284.88,
+      "duration": 4.64,
+      "text": "evidence i noticed"
+    },
+    {
+      "start": 286.639,
+      "duration": 4.401,
+      "text": "their father's death record stated that"
+    },
+    {
+      "start": 289.52,
+      "duration": 3.679,
+      "text": "he was a pensioner"
+    },
+    {
+      "start": 291.04,
+      "duration": 4.96,
+      "text": "with the coast guard and that was the"
+    },
+    {
+      "start": 293.199,
+      "duration": 5.44,
+      "text": "career he had"
+    },
+    {
+      "start": 296.0,
+      "duration": 3.919,
+      "text": "so i went looking for records of his"
+    },
+    {
+      "start": 298.639,
+      "duration": 3.12,
+      "text": "career"
+    },
+    {
+      "start": 299.919,
+      "duration": 3.12,
+      "text": "and then i started mapping out his"
+    },
+    {
+      "start": 301.759,
+      "duration": 3.28,
+      "text": "career"
+    },
+    {
+      "start": 303.039,
+      "duration": 4.0,
+      "text": "and it turns out his children were"
+    },
+    {
+      "start": 305.039,
+      "duration": 4.0,
+      "text": "simply born where he was"
+    },
+    {
+      "start": 307.039,
+      "duration": 3.041,
+      "text": "stationed for the coast guard and he did"
+    },
+    {
+      "start": 309.039,
+      "duration": 4.16,
+      "text": "bounce around"
+    },
+    {
+      "start": 310.08,
+      "duration": 5.36,
+      "text": "along the coastline for his job"
+    },
+    {
+      "start": 313.199,
+      "duration": 3.201,
+      "text": "and so then my evidence conflicts were"
+    },
+    {
+      "start": 315.44,
+      "duration": 3.52,
+      "text": "all gone"
+    },
+    {
+      "start": 316.4,
+      "duration": 3.6,
+      "text": "but it took a lot of looking at the"
+    },
+    {
+      "start": 318.96,
+      "duration": 3.2,
+      "text": "places"
+    },
+    {
+      "start": 320.0,
+      "duration": 4.24,
+      "text": "and figuring out how the records fit"
+    },
+    {
+      "start": 322.16,
+      "duration": 2.879,
+      "text": "together in order to resolve what seems"
+    },
+    {
+      "start": 324.24,
+      "duration": 3.84,
+      "text": "to be"
+    },
+    {
+      "start": 325.039,
+      "duration": 3.041,
+      "text": "conflicting evidence"
+    },
+    {
+      "start": 329.6,
+      "duration": 7.2,
+      "text": "my third tip is to use logic"
+    },
+    {
+      "start": 333.68,
+      "duration": 4.48,
+      "text": "so just like in real life in our"
+    },
+    {
+      "start": 336.8,
+      "duration": 4.239,
+      "text": "genealogical research"
+    },
+    {
+      "start": 338.16,
+      "duration": 3.2,
+      "text": "our possibilities are limited by time"
+    },
+    {
+      "start": 341.039,
+      "duration": 2.801,
+      "text": "and"
+    },
+    {
+      "start": 341.36,
+      "duration": 2.48,
+      "text": "physics"
+    },
+    {
+      "start": 346.88,
+      "duration": 4.64,
+      "text": "i was looking one day at a branch of my"
+    },
+    {
+      "start": 349.52,
+      "duration": 4.72,
+      "text": "family tree that i had never"
+    },
+    {
+      "start": 351.52,
+      "duration": 4.72,
+      "text": "personally researched i looked at the"
+    },
+    {
+      "start": 354.24,
+      "duration": 4.72,
+      "text": "ellen peterson"
+    },
+    {
+      "start": 356.24,
+      "duration": 4.32,
+      "text": "family i looked at her profile on family"
+    },
+    {
+      "start": 358.96,
+      "duration": 2.799,
+      "text": "search and i noticed that"
+    },
+    {
+      "start": 360.56,
+      "duration": 3.12,
+      "text": "she had a lot of records from two"
+    },
+    {
+      "start": 361.759,
+      "duration": 4.321,
+      "text": "different places in denmark so"
+    },
+    {
+      "start": 363.68,
+      "duration": 3.92,
+      "text": "i probably won't be pronouncing these"
+    },
+    {
+      "start": 366.08,
+      "duration": 4.64,
+      "text": "places right but torup"
+    },
+    {
+      "start": 367.6,
+      "duration": 4.56,
+      "text": "and rorwig and i looked these up on a"
+    },
+    {
+      "start": 370.72,
+      "duration": 3.28,
+      "text": "map and they're not too far apart"
+    },
+    {
+      "start": 372.16,
+      "duration": 2.56,
+      "text": "they're only about 13 kilometers apart"
+    },
+    {
+      "start": 374.0,
+      "duration": 2.56,
+      "text": "so it's"
+    },
+    {
+      "start": 374.72,
+      "duration": 3.36,
+      "text": "you know she could definitely be"
+    },
+    {
+      "start": 376.56,
+      "duration": 2.0,
+      "text": "traveling between those places at"
+    },
+    {
+      "start": 378.08,
+      "duration": 3.679,
+      "text": "different"
+    },
+    {
+      "start": 378.56,
+      "duration": 6.24,
+      "text": "time periods but i"
+    },
+    {
+      "start": 381.759,
+      "duration": 4.801,
+      "text": "wanted to take a closer look at"
+    },
+    {
+      "start": 384.8,
+      "duration": 3.119,
+      "text": "you know how these records kind of fit"
+    },
+    {
+      "start": 386.56,
+      "duration": 4.56,
+      "text": "together"
+    },
+    {
+      "start": 387.919,
+      "duration": 4.881,
+      "text": "so i started to break them apart and"
+    },
+    {
+      "start": 391.12,
+      "duration": 5.28,
+      "text": "analyze them"
+    },
+    {
+      "start": 392.8,
+      "duration": 7.92,
+      "text": "and here's how it broke down in toro"
+    },
+    {
+      "start": 396.4,
+      "duration": 6.239,
+      "text": "she married hans jacobson in 1752"
+    },
+    {
+      "start": 400.72,
+      "duration": 3.039,
+      "text": "then she appeared in laura vig and"
+    },
+    {
+      "start": 402.639,
+      "duration": 5.041,
+      "text": "married lars"
+    },
+    {
+      "start": 403.759,
+      "duration": 5.601,
+      "text": "rasmussen in 1753"
+    },
+    {
+      "start": 407.68,
+      "duration": 4.0,
+      "text": "that same year she was back in tour up"
+    },
+    {
+      "start": 409.36,
+      "duration": 3.52,
+      "text": "having baby jacob"
+    },
+    {
+      "start": 411.68,
+      "duration": 3.68,
+      "text": "and then the next year she was back in"
+    },
+    {
+      "start": 412.88,
+      "duration": 6.159,
+      "text": "norwich having peter"
+    },
+    {
+      "start": 415.36,
+      "duration": 5.679,
+      "text": "uh then bounced back to eric in torup"
+    },
+    {
+      "start": 419.039,
+      "duration": 4.241,
+      "text": "and then she stayed there for a while"
+    },
+    {
+      "start": 421.039,
+      "duration": 3.361,
+      "text": "and had peter and then she went back to"
+    },
+    {
+      "start": 423.28,
+      "duration": 4.8,
+      "text": "roar vegan had"
+    },
+    {
+      "start": 424.4,
+      "duration": 6.079,
+      "text": "podem and i started to"
+    },
+    {
+      "start": 428.08,
+      "duration": 3.92,
+      "text": "think you know what i think what we have"
+    },
+    {
+      "start": 430.479,
+      "duration": 3.84,
+      "text": "here"
+    },
+    {
+      "start": 432.0,
+      "duration": 4.479,
+      "text": "is probably two separate women who had"
+    },
+    {
+      "start": 434.319,
+      "duration": 3.361,
+      "text": "similar names and they lived nearby one"
+    },
+    {
+      "start": 436.479,
+      "duration": 5.041,
+      "text": "another"
+    },
+    {
+      "start": 437.68,
+      "duration": 5.919,
+      "text": "so without taking the time to use logic"
+    },
+    {
+      "start": 441.52,
+      "duration": 3.679,
+      "text": "on these records they've just been all"
+    },
+    {
+      "start": 443.599,
+      "duration": 3.201,
+      "text": "attached to one woman"
+    },
+    {
+      "start": 445.199,
+      "duration": 3.44,
+      "text": "who is really a conglomerate of two"
+    },
+    {
+      "start": 446.8,
+      "duration": 4.48,
+      "text": "women um but"
+    },
+    {
+      "start": 448.639,
+      "duration": 3.68,
+      "text": "as we look at all these records we can"
+    },
+    {
+      "start": 451.28,
+      "duration": 4.479,
+      "text": "easily"
+    },
+    {
+      "start": 452.319,
+      "duration": 6.641,
+      "text": "divide the two women out into their own"
+    },
+    {
+      "start": 455.759,
+      "duration": 3.201,
+      "text": "unique identities"
+    },
+    {
+      "start": 461.199,
+      "duration": 5.68,
+      "text": "the fourth tip is to know the laws"
+    },
+    {
+      "start": 464.56,
+      "duration": 3.359,
+      "text": "and how they affected how records were"
+    },
+    {
+      "start": 466.879,
+      "duration": 3.521,
+      "text": "kept and who"
+    },
+    {
+      "start": 467.919,
+      "duration": 3.521,
+      "text": "appeared in those records i've already"
+    },
+    {
+      "start": 470.4,
+      "duration": 4.56,
+      "text": "talked a little bit in"
+    },
+    {
+      "start": 471.44,
+      "duration": 5.68,
+      "text": "the previous presentation about tax laws"
+    },
+    {
+      "start": 474.96,
+      "duration": 3.04,
+      "text": "and how those affected who would have"
+    },
+    {
+      "start": 477.12,
+      "duration": 2.88,
+      "text": "been"
+    },
+    {
+      "start": 478.0,
+      "duration": 4.24,
+      "text": "listed in the tax lists from year to"
+    },
+    {
+      "start": 480.0,
+      "duration": 5.759,
+      "text": "year"
+    },
+    {
+      "start": 482.24,
+      "duration": 4.16,
+      "text": "let's talk about when people try to"
+    },
+    {
+      "start": 485.759,
+      "duration": 4.481,
+      "text": "avoid"
+    },
+    {
+      "start": 486.4,
+      "duration": 5.199,
+      "text": "the law so here is betsy stevens and"
+    },
+    {
+      "start": 490.24,
+      "duration": 3.359,
+      "text": "sydney barton"
+    },
+    {
+      "start": 491.599,
+      "duration": 4.241,
+      "text": "bless their little teenage souls they"
+    },
+    {
+      "start": 493.599,
+      "duration": 5.841,
+      "text": "met when they were young and they fell"
+    },
+    {
+      "start": 495.84,
+      "duration": 6.639,
+      "text": "in love and"
+    },
+    {
+      "start": 499.44,
+      "duration": 5.92,
+      "text": "in 1916 they"
+    },
+    {
+      "start": 502.479,
+      "duration": 4.641,
+      "text": "went to cleveland county oklahoma and"
+    },
+    {
+      "start": 505.36,
+      "duration": 4.64,
+      "text": "they married"
+    },
+    {
+      "start": 507.12,
+      "duration": 6.32,
+      "text": "now sydney listed his age as 21 and"
+    },
+    {
+      "start": 510.0,
+      "duration": 5.44,
+      "text": "bessie listed her name her age as 18."
+    },
+    {
+      "start": 513.44,
+      "duration": 8.399,
+      "text": "so this would have given them birth"
+    },
+    {
+      "start": 515.44,
+      "duration": 6.399,
+      "text": "dates around 1895 and 1898."
+    },
+    {
+      "start": 522.399,
+      "duration": 4.721,
+      "text": "however when we look at other records"
+    },
+    {
+      "start": 524.959,
+      "duration": 4.801,
+      "text": "from their life"
+    },
+    {
+      "start": 527.12,
+      "duration": 5.76,
+      "text": "um bessie was born on the 6th of june"
+    },
+    {
+      "start": 529.76,
+      "duration": 5.759,
+      "text": "1900 and this is verified by the 1910"
+    },
+    {
+      "start": 532.88,
+      "duration": 4.56,
+      "text": "census by a delayed birth certificate"
+    },
+    {
+      "start": 535.519,
+      "duration": 5.601,
+      "text": "filled out in the 1940s"
+    },
+    {
+      "start": 537.44,
+      "duration": 5.92,
+      "text": "and by the social security death index"
+    },
+    {
+      "start": 541.12,
+      "duration": 4.8,
+      "text": "and sydney was born on the 16th of"
+    },
+    {
+      "start": 543.36,
+      "duration": 4.96,
+      "text": "august 1897"
+    },
+    {
+      "start": 545.92,
+      "duration": 5.28,
+      "text": "and this is verified in some of the"
+    },
+    {
+      "start": 548.32,
+      "duration": 5.92,
+      "text": "records from his life the 1900 census"
+    },
+    {
+      "start": 551.2,
+      "duration": 4.72,
+      "text": "his world war one draft registration and"
+    },
+    {
+      "start": 554.24,
+      "duration": 5.68,
+      "text": "the social security death"
+    },
+    {
+      "start": 555.92,
+      "duration": 7.12,
+      "text": "index so why is there conflicting"
+    },
+    {
+      "start": 559.92,
+      "duration": 6.88,
+      "text": "evidence with their marriage record"
+    },
+    {
+      "start": 563.04,
+      "duration": 5.12,
+      "text": "well it was because the laws of the land"
+    },
+    {
+      "start": 566.8,
+      "duration": 2.56,
+      "text": "would not let them marry without their"
+    },
+    {
+      "start": 568.16,
+      "duration": 4.72,
+      "text": "parents consent"
+    },
+    {
+      "start": 569.36,
+      "duration": 5.76,
+      "text": "at the ages of 18 and 16 but that is"
+    },
+    {
+      "start": 572.88,
+      "duration": 4.959,
+      "text": "certainly the ages they were"
+    },
+    {
+      "start": 575.12,
+      "duration": 3.44,
+      "text": "when they went to the next county over"
+    },
+    {
+      "start": 577.839,
+      "duration": 3.841,
+      "text": "to get"
+    },
+    {
+      "start": 578.56,
+      "duration": 5.279,
+      "text": "eloped that's what they did and they"
+    },
+    {
+      "start": 581.68,
+      "duration": 4.8,
+      "text": "just told a little fib"
+    },
+    {
+      "start": 583.839,
+      "duration": 4.881,
+      "text": "because they wanted to marry without"
+    },
+    {
+      "start": 586.48,
+      "duration": 3.68,
+      "text": "their parents consent"
+    },
+    {
+      "start": 588.72,
+      "duration": 3.04,
+      "text": "but it all worked out in the end for"
+    },
+    {
+      "start": 590.16,
+      "duration": 4.48,
+      "text": "these two they were happily married for"
+    },
+    {
+      "start": 591.76,
+      "duration": 2.88,
+      "text": "over 50 years"
+    },
+    {
+      "start": 596.0,
+      "duration": 4.64,
+      "text": "so my next tip is that if you have"
+    },
+    {
+      "start": 598.959,
+      "duration": 4.0,
+      "text": "conflicting evidence"
+    },
+    {
+      "start": 600.64,
+      "duration": 3.52,
+      "text": "and you can't work it out with geography"
+    },
+    {
+      "start": 602.959,
+      "duration": 3.601,
+      "text": "you can't work it out with"
+    },
+    {
+      "start": 604.16,
+      "duration": 3.76,
+      "text": "logic or any of the other strategies you"
+    },
+    {
+      "start": 606.56,
+      "duration": 4.16,
+      "text": "have checked your assumptions you've"
+    },
+    {
+      "start": 607.92,
+      "duration": 6.479,
+      "text": "rechecked all the records you have"
+    },
+    {
+      "start": 610.72,
+      "duration": 7.52,
+      "text": "you need to go find more evidence"
+    },
+    {
+      "start": 614.399,
+      "duration": 6.961,
+      "text": "what sources have not been combed yet"
+    },
+    {
+      "start": 618.24,
+      "duration": 6.64,
+      "text": "that could help you resolve this problem"
+    },
+    {
+      "start": 621.36,
+      "duration": 5.12,
+      "text": "and look beyond the person themselves"
+    },
+    {
+      "start": 624.88,
+      "duration": 4.32,
+      "text": "you might have found every record that"
+    },
+    {
+      "start": 626.48,
+      "duration": 4.16,
+      "text": "belongs to that particular individual"
+    },
+    {
+      "start": 629.2,
+      "duration": 3.199,
+      "text": "but have you looked at all of their"
+    },
+    {
+      "start": 630.64,
+      "duration": 4.0,
+      "text": "family members records"
+    },
+    {
+      "start": 632.399,
+      "duration": 3.68,
+      "text": "have you looked at all of the previous"
+    },
+    {
+      "start": 634.64,
+      "duration": 3.36,
+      "text": "generations records"
+    },
+    {
+      "start": 636.079,
+      "duration": 5.521,
+      "text": "the younger generation's records have"
+    },
+    {
+      "start": 638.0,
+      "duration": 5.2,
+      "text": "you looked at their associates records"
+    },
+    {
+      "start": 641.6,
+      "duration": 3.76,
+      "text": "there is usually more evidence out there"
+    },
+    {
+      "start": 643.2,
+      "duration": 4.639,
+      "text": "to be found that can help resolve the"
+    },
+    {
+      "start": 645.36,
+      "duration": 2.479,
+      "text": "conflict"
+    },
+    {
+      "start": 648.88,
+      "duration": 5.68,
+      "text": "so we have a case of a man named charles"
+    },
+    {
+      "start": 652.079,
+      "duration": 4.88,
+      "text": "donahue"
+    },
+    {
+      "start": 654.56,
+      "duration": 3.519,
+      "text": "who mostly lived in nelson and"
+    },
+    {
+      "start": 656.959,
+      "duration": 3.201,
+      "text": "washington counties"
+    },
+    {
+      "start": 658.079,
+      "duration": 3.841,
+      "text": "kentucky and they are neighboring"
+    },
+    {
+      "start": 660.16,
+      "duration": 2.4,
+      "text": "counties so he just skipped back and"
+    },
+    {
+      "start": 661.92,
+      "duration": 2.64,
+      "text": "forth over"
+    },
+    {
+      "start": 662.56,
+      "duration": 3.04,
+      "text": "the county line a little bit during his"
+    },
+    {
+      "start": 664.56,
+      "duration": 3.36,
+      "text": "life"
+    },
+    {
+      "start": 665.6,
+      "duration": 3.84,
+      "text": "but in these counties he was born and"
+    },
+    {
+      "start": 667.92,
+      "duration": 4.72,
+      "text": "raised by his parents"
+    },
+    {
+      "start": 669.44,
+      "duration": 6.639,
+      "text": "he married matilda in 1874 he married"
+    },
+    {
+      "start": 672.64,
+      "duration": 5.6,
+      "text": "rosa after matilda's death in 1901"
+    },
+    {
+      "start": 676.079,
+      "duration": 4.081,
+      "text": "he participated in the civil war in the"
+    },
+    {
+      "start": 678.24,
+      "duration": 5.839,
+      "text": "sixth kentucky cavalry"
+    },
+    {
+      "start": 680.16,
+      "duration": 5.6,
+      "text": "his daughter rebecca was born in 1875"
+    },
+    {
+      "start": 684.079,
+      "duration": 3.2,
+      "text": "he's located in all the censuses in"
+    },
+    {
+      "start": 685.76,
+      "duration": 6.16,
+      "text": "these counties"
+    },
+    {
+      "start": 687.279,
+      "duration": 9.761,
+      "text": "and his burial is also in these counties"
+    },
+    {
+      "start": 691.92,
+      "duration": 8.0,
+      "text": "however i found one particular record"
+    },
+    {
+      "start": 697.04,
+      "duration": 5.44,
+      "text": "which is a pension record actually for"
+    },
+    {
+      "start": 699.92,
+      "duration": 5.8,
+      "text": "his second wife rosa"
+    },
+    {
+      "start": 702.48,
+      "duration": 8.479,
+      "text": "and it states that he died in february"
+    },
+    {
+      "start": 705.72,
+      "duration": 5.239,
+      "text": "1909 at durant oklahoma"
+    },
+    {
+      "start": 711.6,
+      "duration": 6.479,
+      "text": "okay durant oklahoma why"
+    },
+    {
+      "start": 715.12,
+      "duration": 4.48,
+      "text": "every other record is in kentucky why is"
+    },
+    {
+      "start": 718.079,
+      "duration": 3.76,
+      "text": "he in oklahoma dying"
+    },
+    {
+      "start": 719.6,
+      "duration": 4.0,
+      "text": "what is that about and then he's back in"
+    },
+    {
+      "start": 721.839,
+      "duration": 4.961,
+      "text": "kentucky being buried and his"
+    },
+    {
+      "start": 723.6,
+      "duration": 5.52,
+      "text": "burial you know uh commemorates his"
+    },
+    {
+      "start": 726.8,
+      "duration": 4.4,
+      "text": "sixth kentucky cavalry service and he's"
+    },
+    {
+      "start": 729.12,
+      "duration": 4.8,
+      "text": "near his first wife's burial so it"
+    },
+    {
+      "start": 731.2,
+      "duration": 4.079,
+      "text": "you know this was definitely a conflict"
+    },
+    {
+      "start": 733.92,
+      "duration": 3.919,
+      "text": "and i had to figure out what was going"
+    },
+    {
+      "start": 735.279,
+      "duration": 2.56,
+      "text": "on with this"
+    },
+    {
+      "start": 738.24,
+      "duration": 3.36,
+      "text": "so uh"
+    },
+    {
+      "start": 741.839,
+      "duration": 3.921,
+      "text": "i had to keep digging and i really felt"
+    },
+    {
+      "start": 744.24,
+      "duration": 3.44,
+      "text": "like i had exhausted all of his"
+    },
+    {
+      "start": 745.76,
+      "duration": 3.68,
+      "text": "particular records i didn't know where"
+    },
+    {
+      "start": 747.68,
+      "duration": 4.0,
+      "text": "else to go"
+    },
+    {
+      "start": 749.44,
+      "duration": 3.519,
+      "text": "um but i kept digging you know i was"
+    },
+    {
+      "start": 751.68,
+      "duration": 3.92,
+      "text": "looking for all of the"
+    },
+    {
+      "start": 752.959,
+      "duration": 3.921,
+      "text": "the records from his wives his parents"
+    },
+    {
+      "start": 755.6,
+      "duration": 2.4,
+      "text": "his siblings and he had a lot of"
+    },
+    {
+      "start": 756.88,
+      "duration": 3.68,
+      "text": "siblings"
+    },
+    {
+      "start": 758.0,
+      "duration": 4.48,
+      "text": "but nothing was really telling me why he"
+    },
+    {
+      "start": 760.56,
+      "duration": 3.839,
+      "text": "had died in durant oklahoma if this was"
+    },
+    {
+      "start": 762.48,
+      "duration": 4.96,
+      "text": "correct"
+    },
+    {
+      "start": 764.399,
+      "duration": 6.44,
+      "text": "and then i finally traced his daughter"
+    },
+    {
+      "start": 767.44,
+      "duration": 5.199,
+      "text": "all the way to her death and she died in"
+    },
+    {
+      "start": 770.839,
+      "duration": 5.081,
+      "text": "illinois"
+    },
+    {
+      "start": 772.639,
+      "duration": 5.44,
+      "text": "and here in her obituary there's a"
+    },
+    {
+      "start": 775.92,
+      "duration": 5.68,
+      "text": "little line that says"
+    },
+    {
+      "start": 778.079,
+      "duration": 6.56,
+      "text": "mr and mrs thompson moved to east texas"
+    },
+    {
+      "start": 781.6,
+      "duration": 5.039,
+      "text": "kentucky and from there to durant"
+    },
+    {
+      "start": 784.639,
+      "duration": 4.241,
+      "text": "indian territory which would have been"
+    },
+    {
+      "start": 786.639,
+      "duration": 3.361,
+      "text": "what oklahoma was at the time that they"
+    },
+    {
+      "start": 788.88,
+      "duration": 3.84,
+      "text": "lived there"
+    },
+    {
+      "start": 790.0,
+      "duration": 4.399,
+      "text": "where they resided for a year then they"
+    },
+    {
+      "start": 792.72,
+      "duration": 4.72,
+      "text": "returned to kentucky"
+    },
+    {
+      "start": 794.399,
+      "duration": 6.721,
+      "text": "remaining there until 1913."
+    },
+    {
+      "start": 797.44,
+      "duration": 7.36,
+      "text": "so why was mr charles donahue"
+    },
+    {
+      "start": 801.12,
+      "duration": 5.6,
+      "text": "um why did he die in oklahoma"
+    },
+    {
+      "start": 804.8,
+      "duration": 3.839,
+      "text": "it was because his his daughter his only"
+    },
+    {
+      "start": 806.72,
+      "duration": 3.919,
+      "text": "daughter had moved there"
+    },
+    {
+      "start": 808.639,
+      "duration": 4.32,
+      "text": "with her husband for a short period of"
+    },
+    {
+      "start": 810.639,
+      "duration": 5.041,
+      "text": "time they were only there for a year"
+    },
+    {
+      "start": 812.959,
+      "duration": 3.521,
+      "text": "and either he was living with her at the"
+    },
+    {
+      "start": 815.68,
+      "duration": 2.719,
+      "text": "time"
+    },
+    {
+      "start": 816.48,
+      "duration": 3.44,
+      "text": "or he had been there to visit when he"
+    },
+    {
+      "start": 818.399,
+      "duration": 4.24,
+      "text": "passed away and was brought back to"
+    },
+    {
+      "start": 819.92,
+      "duration": 6.0,
+      "text": "kentucky for his burial"
+    },
+    {
+      "start": 822.639,
+      "duration": 6.161,
+      "text": "so now that we have looked for more"
+    },
+    {
+      "start": 825.92,
+      "duration": 3.44,
+      "text": "evidence we have resolved our conflict"
+    },
+    {
+      "start": 828.8,
+      "duration": 3.12,
+      "text": "and we"
+    },
+    {
+      "start": 829.36,
+      "duration": 3.76,
+      "text": "can you know write up what we found and"
+    },
+    {
+      "start": 831.92,
+      "duration": 2.88,
+      "text": "how we found it"
+    },
+    {
+      "start": 833.12,
+      "duration": 3.36,
+      "text": "and why we know that that is an accurate"
+    },
+    {
+      "start": 834.8,
+      "duration": 4.32,
+      "text": "place of death and why it makes"
+    },
+    {
+      "start": 836.48,
+      "duration": 2.64,
+      "text": "sense now"
+    },
+    {
+      "start": 841.519,
+      "duration": 5.12,
+      "text": "another strategy that you should use in"
+    },
+    {
+      "start": 844.639,
+      "duration": 2.961,
+      "text": "order to resolve conflicting evidence is"
+    },
+    {
+      "start": 846.639,
+      "duration": 3.601,
+      "text": "to compare"
+    },
+    {
+      "start": 847.6,
+      "duration": 4.16,
+      "text": "and contrast until you can create a"
+    },
+    {
+      "start": 850.24,
+      "duration": 4.599,
+      "text": "hypothesis"
+    },
+    {
+      "start": 851.76,
+      "duration": 6.079,
+      "text": "or a proof argument to resolve the"
+    },
+    {
+      "start": 854.839,
+      "duration": 3.0,
+      "text": "conflict"
+    },
+    {
+      "start": 858.24,
+      "duration": 4.8,
+      "text": "so in this case we have mrs donahue i"
+    },
+    {
+      "start": 861.6,
+      "duration": 3.76,
+      "text": "like this donahue family they have a lot"
+    },
+    {
+      "start": 863.04,
+      "duration": 6.239,
+      "text": "of conflicts for me to resolve"
+    },
+    {
+      "start": 865.36,
+      "duration": 7.039,
+      "text": "um i wanted to find out her"
+    },
+    {
+      "start": 869.279,
+      "duration": 6.24,
+      "text": "time her date of death"
+    },
+    {
+      "start": 872.399,
+      "duration": 6.641,
+      "text": "and i found"
+    },
+    {
+      "start": 875.519,
+      "duration": 5.601,
+      "text": "i looked in a kentucky death index"
+    },
+    {
+      "start": 879.04,
+      "duration": 3.919,
+      "text": "which should have been kept during the"
+    },
+    {
+      "start": 881.12,
+      "duration": 3.6,
+      "text": "time period in which she died"
+    },
+    {
+      "start": 882.959,
+      "duration": 3.521,
+      "text": "kentucky was a little sporadic about"
+    },
+    {
+      "start": 884.72,
+      "duration": 3.28,
+      "text": "keeping death records but"
+    },
+    {
+      "start": 886.48,
+      "duration": 2.719,
+      "text": "the years when she disappeared from"
+    },
+    {
+      "start": 888.0,
+      "duration": 2.56,
+      "text": "other records should have been a time"
+    },
+    {
+      "start": 889.199,
+      "duration": 5.2,
+      "text": "when they were keeping it"
+    },
+    {
+      "start": 890.56,
+      "duration": 6.56,
+      "text": "so i looked in the index for the death"
+    },
+    {
+      "start": 894.399,
+      "duration": 5.12,
+      "text": "registers and i did not find any entry"
+    },
+    {
+      "start": 897.12,
+      "duration": 4.56,
+      "text": "for sarah donahue"
+    },
+    {
+      "start": 899.519,
+      "duration": 4.401,
+      "text": "but i couldn't find anything else about"
+    },
+    {
+      "start": 901.68,
+      "duration": 3.76,
+      "text": "her death so i decided i was going to do"
+    },
+    {
+      "start": 903.92,
+      "duration": 3.44,
+      "text": "a manual search"
+    },
+    {
+      "start": 905.44,
+      "duration": 4.0,
+      "text": "of this death index during the time"
+    },
+    {
+      "start": 907.36,
+      "duration": 6.24,
+      "text": "period and i found an entry"
+    },
+    {
+      "start": 909.44,
+      "duration": 7.839,
+      "text": "that simply had the surname of donahue"
+    },
+    {
+      "start": 913.6,
+      "duration": 6.64,
+      "text": "it said donahue female married"
+    },
+    {
+      "start": 917.279,
+      "duration": 4.8,
+      "text": "resident of bardstown died in bardstown"
+    },
+    {
+      "start": 920.24,
+      "duration": 4.24,
+      "text": "that's where this family lived"
+    },
+    {
+      "start": 922.079,
+      "duration": 5.281,
+      "text": "in nelson county the date of death was"
+    },
+    {
+      "start": 924.48,
+      "duration": 4.479,
+      "text": "22nd of january 1853 that was the time"
+    },
+    {
+      "start": 927.36,
+      "duration": 2.96,
+      "text": "period when she disappeared so it made"
+    },
+    {
+      "start": 928.959,
+      "duration": 5.041,
+      "text": "great sense"
+    },
+    {
+      "start": 930.32,
+      "duration": 7.6,
+      "text": "and that she died of psoas abscess"
+    },
+    {
+      "start": 934.0,
+      "duration": 4.8,
+      "text": "okay now that i had a more narrow time"
+    },
+    {
+      "start": 937.92,
+      "duration": 2.56,
+      "text": "period when she"
+    },
+    {
+      "start": 938.8,
+      "duration": 3.12,
+      "text": "probably died even though i can't verify"
+    },
+    {
+      "start": 940.48,
+      "duration": 4.24,
+      "text": "this as her yet"
+    },
+    {
+      "start": 941.92,
+      "duration": 3.839,
+      "text": "i went and dug in the newspapers and i"
+    },
+    {
+      "start": 944.72,
+      "duration": 4.0,
+      "text": "was able to find"
+    },
+    {
+      "start": 945.759,
+      "duration": 4.0,
+      "text": "this little snippet from thursday"
+    },
+    {
+      "start": 948.72,
+      "duration": 2.799,
+      "text": "january 2nd"
+    },
+    {
+      "start": 949.759,
+      "duration": 3.681,
+      "text": "published in the bardstown herald so"
+    },
+    {
+      "start": 951.519,
+      "duration": 5.281,
+      "text": "again this is her city where she"
+    },
+    {
+      "start": 953.44,
+      "duration": 4.8,
+      "text": "lived from 1853"
+    },
+    {
+      "start": 956.8,
+      "duration": 4.719,
+      "text": "there have been two deaths from"
+    },
+    {
+      "start": 958.24,
+      "duration": 6.8,
+      "text": "arizobilis in town since our last issue"
+    },
+    {
+      "start": 961.519,
+      "duration": 5.521,
+      "text": "mr lucius melvin and mrs donohue wife of"
+    },
+    {
+      "start": 965.04,
+      "duration": 4.56,
+      "text": "mr patrick donahue"
+    },
+    {
+      "start": 967.04,
+      "duration": 3.28,
+      "text": "there are several cases still on hand"
+    },
+    {
+      "start": 969.6,
+      "duration": 3.599,
+      "text": "but no"
+    },
+    {
+      "start": 970.32,
+      "duration": 4.72,
+      "text": "new ones so far we have heard in that"
+    },
+    {
+      "start": 973.199,
+      "duration": 3.681,
+      "text": "part of the county between bardstown and"
+    },
+    {
+      "start": 975.04,
+      "duration": 2.88,
+      "text": "bloomfield which has been so severely"
+    },
+    {
+      "start": 976.88,
+      "duration": 2.639,
+      "text": "afflicted"
+    },
+    {
+      "start": 977.92,
+      "duration": 3.76,
+      "text": "we understand that the disease has"
+    },
+    {
+      "start": 979.519,
+      "duration": 4.481,
+      "text": "greatly abated"
+    },
+    {
+      "start": 981.68,
+      "duration": 3.839,
+      "text": "okay this article was great it told me a"
+    },
+    {
+      "start": 984.0,
+      "duration": 3.759,
+      "text": "lot of things"
+    },
+    {
+      "start": 985.519,
+      "duration": 4.32,
+      "text": "uh first of all that she died from"
+    },
+    {
+      "start": 987.759,
+      "duration": 4.0,
+      "text": "aerospalis"
+    },
+    {
+      "start": 989.839,
+      "duration": 3.12,
+      "text": "um that mrs donahue was the wife of mr"
+    },
+    {
+      "start": 991.759,
+      "duration": 2.961,
+      "text": "patrick donahue"
+    },
+    {
+      "start": 992.959,
+      "duration": 3.281,
+      "text": "and i had already researched patrick"
+    },
+    {
+      "start": 994.72,
+      "duration": 3.2,
+      "text": "himself a lot and i knew there was no"
+    },
+    {
+      "start": 996.24,
+      "duration": 4.8,
+      "text": "other patrick donahues"
+    },
+    {
+      "start": 997.92,
+      "duration": 3.919,
+      "text": "in town during this time period um so"
+    },
+    {
+      "start": 1001.04,
+      "duration": 4.0,
+      "text": "that was a"
+    },
+    {
+      "start": 1001.839,
+      "duration": 5.12,
+      "text": "pretty strong evidence that it was her"
+    },
+    {
+      "start": 1005.04,
+      "duration": 3.44,
+      "text": "that had died"
+    },
+    {
+      "start": 1006.959,
+      "duration": 3.521,
+      "text": "and then it also tells me that"
+    },
+    {
+      "start": 1008.48,
+      "duration": 4.799,
+      "text": "aerysiphilis was"
+    },
+    {
+      "start": 1010.48,
+      "duration": 4.32,
+      "text": "kind of a little epidemic in town there"
+    },
+    {
+      "start": 1013.279,
+      "duration": 3.841,
+      "text": "had been a lot of cases and several"
+    },
+    {
+      "start": 1014.8,
+      "duration": 5.52,
+      "text": "deaths from it"
+    },
+    {
+      "start": 1017.12,
+      "duration": 4.959,
+      "text": "um however"
+    },
+    {
+      "start": 1020.32,
+      "duration": 3.28,
+      "text": "there was also a lot of conflicts in"
+    },
+    {
+      "start": 1022.079,
+      "duration": 4.801,
+      "text": "these records"
+    },
+    {
+      "start": 1023.6,
+      "duration": 6.0,
+      "text": "so the time of death on the death"
+    },
+    {
+      "start": 1026.88,
+      "duration": 4.559,
+      "text": "register said it was the 22nd of january"
+    },
+    {
+      "start": 1029.6,
+      "duration": 4.88,
+      "text": "1853"
+    },
+    {
+      "start": 1031.439,
+      "duration": 5.6,
+      "text": "but the newspaper article said january"
+    },
+    {
+      "start": 1034.48,
+      "duration": 2.559,
+      "text": "20th"
+    },
+    {
+      "start": 1037.199,
+      "duration": 3.201,
+      "text": "and then the cause of death on the"
+    },
+    {
+      "start": 1039.52,
+      "duration": 3.6,
+      "text": "register was"
+    },
+    {
+      "start": 1040.4,
+      "duration": 4.559,
+      "text": "psoas abscess while the article said era"
+    },
+    {
+      "start": 1043.12,
+      "duration": 4.959,
+      "text": "syphilis"
+    },
+    {
+      "start": 1044.959,
+      "duration": 4.241,
+      "text": "so which one was it and then of course"
+    },
+    {
+      "start": 1048.079,
+      "duration": 2.96,
+      "text": "we have the fact that her"
+    },
+    {
+      "start": 1049.2,
+      "duration": 3.839,
+      "text": "first name was never stated in either"
+    },
+    {
+      "start": 1051.039,
+      "duration": 6.64,
+      "text": "record she was just donahue"
+    },
+    {
+      "start": 1053.039,
+      "duration": 7.681,
+      "text": "and then mrs donohue and no first name"
+    },
+    {
+      "start": 1057.679,
+      "duration": 5.441,
+      "text": "but i i thought"
+    },
+    {
+      "start": 1060.72,
+      "duration": 3.92,
+      "text": "that you know i think i can resolve"
+    },
+    {
+      "start": 1063.12,
+      "duration": 4.96,
+      "text": "these conflicts"
+    },
+    {
+      "start": 1064.64,
+      "duration": 7.44,
+      "text": "by really just comparing and contrasting"
+    },
+    {
+      "start": 1068.08,
+      "duration": 7.2,
+      "text": "and writing it up and that is my last"
+    },
+    {
+      "start": 1072.08,
+      "duration": 6.24,
+      "text": "strategy for you i think every time"
+    },
+    {
+      "start": 1075.28,
+      "duration": 5.6,
+      "text": "that you have conflicting evidence"
+    },
+    {
+      "start": 1078.32,
+      "duration": 4.16,
+      "text": "you really need to write it up what your"
+    },
+    {
+      "start": 1080.88,
+      "duration": 2.32,
+      "text": "conclusions were or even if you haven't"
+    },
+    {
+      "start": 1082.48,
+      "duration": 2.96,
+      "text": "resolved yet"
+    },
+    {
+      "start": 1083.2,
+      "duration": 3.76,
+      "text": "just the conflict that you have so that"
+    },
+    {
+      "start": 1085.44,
+      "duration": 3.52,
+      "text": "future researchers come along and say"
+    },
+    {
+      "start": 1086.96,
+      "duration": 3.04,
+      "text": "yes they notice that conflict and they"
+    },
+    {
+      "start": 1088.96,
+      "duration": 3.92,
+      "text": "have addressed it"
+    },
+    {
+      "start": 1090.0,
+      "duration": 4.0,
+      "text": "in their research and if you have a"
+    },
+    {
+      "start": 1092.88,
+      "duration": 4.08,
+      "text": "solution you need to"
+    },
+    {
+      "start": 1094.0,
+      "duration": 4.16,
+      "text": "lead people along your trail of thought"
+    },
+    {
+      "start": 1096.96,
+      "duration": 3.839,
+      "text": "so that they know how you"
+    },
+    {
+      "start": 1098.16,
+      "duration": 3.36,
+      "text": "reached your conclusion so let me show"
+    },
+    {
+      "start": 1100.799,
+      "duration": 3.281,
+      "text": "you"
+    },
+    {
+      "start": 1101.52,
+      "duration": 3.519,
+      "text": "uh just one example from the death"
+    },
+    {
+      "start": 1104.08,
+      "duration": 3.12,
+      "text": "records"
+    },
+    {
+      "start": 1105.039,
+      "duration": 4.401,
+      "text": "for mrs donohue to tell you how i wrote"
+    },
+    {
+      "start": 1107.2,
+      "duration": 4.0,
+      "text": "this particular one up"
+    },
+    {
+      "start": 1109.44,
+      "duration": 5.04,
+      "text": "an index search in the nelson county"
+    },
+    {
+      "start": 1111.2,
+      "duration": 6.24,
+      "text": "kentucky death records from 1852"
+    },
+    {
+      "start": 1114.48,
+      "duration": 5.92,
+      "text": "to oh well i said to 1953 but i was"
+    },
+    {
+      "start": 1117.44,
+      "duration": 4.72,
+      "text": "really just checking until 1860."
+    },
+    {
+      "start": 1120.4,
+      "duration": 3.36,
+      "text": "yielded nothing for sarah donohue"
+    },
+    {
+      "start": 1122.16,
+      "duration": 4.639,
+      "text": "however a page by page search through"
+    },
+    {
+      "start": 1123.76,
+      "duration": 4.96,
+      "text": "the time period of 1852 to 1860"
+    },
+    {
+      "start": 1126.799,
+      "duration": 4.0,
+      "text": "showed an incomplete record for a female"
+    },
+    {
+      "start": 1128.72,
+      "duration": 4.319,
+      "text": "donohue married resident of bardstown"
+    },
+    {
+      "start": 1130.799,
+      "duration": 4.641,
+      "text": "dying of psoas abscess on the 22nd of"
+    },
+    {
+      "start": 1133.039,
+      "duration": 4.321,
+      "text": "january 1853."
+    },
+    {
+      "start": 1135.44,
+      "duration": 4.0,
+      "text": "this record while compelling could not"
+    },
+    {
+      "start": 1137.36,
+      "duration": 5.52,
+      "text": "confirm the date of sarah"
+    },
+    {
+      "start": 1139.44,
+      "duration": 5.359,
+      "text": "the death of sarah donahue alone"
+    },
+    {
+      "start": 1142.88,
+      "duration": 4.48,
+      "text": "a death notice stated the 20th of"
+    },
+    {
+      "start": 1144.799,
+      "duration": 3.361,
+      "text": "january 1853 printed in the bardstown"
+    },
+    {
+      "start": 1147.36,
+      "duration": 2.88,
+      "text": "herald"
+    },
+    {
+      "start": 1148.16,
+      "duration": 3.04,
+      "text": "did not provide the first name of mrs"
+    },
+    {
+      "start": 1150.24,
+      "duration": 2.72,
+      "text": "donahue"
+    },
+    {
+      "start": 1151.2,
+      "duration": 4.96,
+      "text": "but stated she was the wife of patrick"
+    },
+    {
+      "start": 1152.96,
+      "duration": 5.12,
+      "text": "donahue the only patrick donohue in town"
+    },
+    {
+      "start": 1156.16,
+      "duration": 3.6,
+      "text": "her cause of death was aerysippolis"
+    },
+    {
+      "start": 1158.08,
+      "duration": 4.0,
+      "text": "which was widespread in the town at that"
+    },
+    {
+      "start": 1159.76,
+      "duration": 4.56,
+      "text": "time the article noted"
+    },
+    {
+      "start": 1162.08,
+      "duration": 3.76,
+      "text": "the dates on the two records conflict"
+    },
+    {
+      "start": 1164.32,
+      "duration": 3.359,
+      "text": "the newspaper article was printed the"
+    },
+    {
+      "start": 1165.84,
+      "duration": 2.959,
+      "text": "20th of january while the physician"
+    },
+    {
+      "start": 1167.679,
+      "duration": 4.481,
+      "text": "reported the death"
+    },
+    {
+      "start": 1168.799,
+      "duration": 5.441,
+      "text": "was on the 22nd of january sarah likely"
+    },
+    {
+      "start": 1172.16,
+      "duration": 3.6,
+      "text": "died before the 20th of january"
+    },
+    {
+      "start": 1174.24,
+      "duration": 3.2,
+      "text": "in order for the news of her death to be"
+    },
+    {
+      "start": 1175.76,
+      "duration": 3.6,
+      "text": "printed by that date"
+    },
+    {
+      "start": 1177.44,
+      "duration": 4.4,
+      "text": "the doctor was working with a local"
+    },
+    {
+      "start": 1179.36,
+      "duration": 2.96,
+      "text": "epidemic of aerospalis and reported many"
+    },
+    {
+      "start": 1181.84,
+      "duration": 2.88,
+      "text": "deaths"
+    },
+    {
+      "start": 1182.32,
+      "duration": 4.479,
+      "text": "some time after they occurred and i have"
+    },
+    {
+      "start": 1184.72,
+      "duration": 4.16,
+      "text": "that fact just from reading that death"
+    },
+    {
+      "start": 1186.799,
+      "duration": 4.161,
+      "text": "register there's a lot of deaths that he"
+    },
+    {
+      "start": 1188.88,
+      "duration": 3.76,
+      "text": "recorded of that particular thing all in"
+    },
+    {
+      "start": 1190.96,
+      "duration": 3.52,
+      "text": "a big chunk"
+    },
+    {
+      "start": 1192.64,
+      "duration": 4.0,
+      "text": "while sarah's exact date of death"
+    },
+    {
+      "start": 1194.48,
+      "duration": 6.0,
+      "text": "remains unknown the records confirm she"
+    },
+    {
+      "start": 1196.64,
+      "duration": 5.6,
+      "text": "died in january 1853"
+    },
+    {
+      "start": 1200.48,
+      "duration": 4.16,
+      "text": "the death cause is different in each"
+    },
+    {
+      "start": 1202.24,
+      "duration": 4.319,
+      "text": "document however the causes could be"
+    },
+    {
+      "start": 1204.64,
+      "duration": 4.24,
+      "text": "related to the same condition"
+    },
+    {
+      "start": 1206.559,
+      "duration": 3.841,
+      "text": "erysipolis results from a streptococcus"
+    },
+    {
+      "start": 1208.88,
+      "duration": 4.32,
+      "text": "bacterial infection"
+    },
+    {
+      "start": 1210.4,
+      "duration": 4.88,
+      "text": "as can psoas abscess aerosyphilis"
+    },
+    {
+      "start": 1213.2,
+      "duration": 3.599,
+      "text": "typically causes painful red skin rashes"
+    },
+    {
+      "start": 1215.28,
+      "duration": 4.96,
+      "text": "on the extremities as in call"
+    },
+    {
+      "start": 1216.799,
+      "duration": 5.681,
+      "text": "and is called saint anthony's fire"
+    },
+    {
+      "start": 1220.24,
+      "duration": 4.24,
+      "text": "psoas abscess is a deeper infection of"
+    },
+    {
+      "start": 1222.48,
+      "duration": 4.88,
+      "text": "the streptococcus usually in the lower"
+    },
+    {
+      "start": 1224.48,
+      "duration": 4.88,
+      "text": "back and upper thigh in the psoas muscle"
+    },
+    {
+      "start": 1227.36,
+      "duration": 3.52,
+      "text": "this condition is also very painful it"
+    },
+    {
+      "start": 1229.36,
+      "duration": 3.199,
+      "text": "is very likely that sarah progressed"
+    },
+    {
+      "start": 1230.88,
+      "duration": 3.76,
+      "text": "from aerospace of the skin to the deeper"
+    },
+    {
+      "start": 1232.559,
+      "duration": 6.401,
+      "text": "psoas abscess from the same infection"
+    },
+    {
+      "start": 1234.64,
+      "duration": 4.32,
+      "text": "especially at her advanced age of 67."
+    },
+    {
+      "start": 1239.76,
+      "duration": 3.919,
+      "text": "i hope dueling dates and fact fights"
+    },
+    {
+      "start": 1241.679,
+      "duration": 3.921,
+      "text": "part 1 and 2 have helped you"
+    },
+    {
+      "start": 1243.679,
+      "duration": 4.401,
+      "text": "understand more about where and why"
+    },
+    {
+      "start": 1245.6,
+      "duration": 5.199,
+      "text": "conflicting evidence evidence occurs"
+    },
+    {
+      "start": 1248.08,
+      "duration": 3.92,
+      "text": "in genealogical research and how to"
+    },
+    {
+      "start": 1250.799,
+      "duration": 5.041,
+      "text": "resolve it"
+    },
+    {
+      "start": 1252.0,
+      "duration": 4.48,
+      "text": "thanks for watching for more great"
+    },
+    {
+      "start": 1255.84,
+      "duration": 7.68,
+      "text": "content"
+    },
+    {
+      "start": 1256.48,
+      "duration": 7.04,
+      "text": "check out the rootstech homepage"
+    }
+  ],
+  "full_text": "[Music] hi i'm melissa finley welcome to part two of dueling dates and fact fights resolving evidence conflicts in part one of this presentation we discuss that the fourth element of the genealogical proof standard is the resolution of conflicting evidence we defined conflicting evidence as evidence from different sources that contradict each other and we discussed where and why we might find conflicting evidence in our research now let's discuss some solutions and examples to resolve evidence conflicts first and foremost check your assumptions we all go into our research with certain assumptions and it might cause us to skip a key piece of information because we assumed too much so what kind of assumptions do we make in our research well we assume our ancestors participated in certain types of activities at certain ages and not at others we assume groups of people we find together in documents had certain relationships with each other we cherry-pick information out of documents that matches our assumptions and sometimes that makes us gloss over the rest which may actually contradict our preconceived scenario so in order to avoid assumption traps we need to consider alternative scenarios we need to make sure the document or source states what we think that it states and we always need to try to build proof from multiple sources if possible so here's a quick example here we have the percy farnworth household from from meridian idaho in 1900 and we have percy as the head nora his wife and then several children labeled as sons and daughters so from this census we would assume you know that the relationships that are stated are true percy was the husband nor was the wife and they had five children however if we look at other records we would learn that ovid the oldest son listed was not actually percy's son he is nora's son from her first marriage but you can't no you can't figure this out from the census because the census got it wrong and it created a conflict with other records but we could have just gone on the assumption that that relationship was true and put that in our tree and been done with it but our assumptions would have made us put an incorrect relationship in our tree next we need to really take a deep look at the geography that is involved in our research so i highly encourage that you use historic maps to understand the place that you're looking in for that time period i have an example where i thought we had conflicting evidence in our family tree this is actually on my husband's irish side the finley family and um this is sort of the north uh west coast of ireland and we had several children in a family born in what seemed to be different parts of ireland and i was very confused about why this family would be bouncing around ireland having children that just didn't seem to make sense um especially because if you can see from the numbers number one she was born down along the very um sort of midwest coast then the second group of children was born up on the north west coast and then they came back down for the third group of children but then as i was gathering more evidence i noticed their father's death record stated that he was a pensioner with the coast guard and that was the career he had so i went looking for records of his career and then i started mapping out his career and it turns out his children were simply born where he was stationed for the coast guard and he did bounce around along the coastline for his job and so then my evidence conflicts were all gone but it took a lot of looking at the places and figuring out how the records fit together in order to resolve what seems to be conflicting evidence my third tip is to use logic so just like in real life in our genealogical research our possibilities are limited by time and physics i was looking one day at a branch of my family tree that i had never personally researched i looked at the ellen peterson family i looked at her profile on family search and i noticed that she had a lot of records from two different places in denmark so i probably won't be pronouncing these places right but torup and rorwig and i looked these up on a map and they're not too far apart they're only about 13 kilometers apart so it's you know she could definitely be traveling between those places at different time periods but i wanted to take a closer look at you know how these records kind of fit together so i started to break them apart and analyze them and here's how it broke down in toro she married hans jacobson in 1752 then she appeared in laura vig and married lars rasmussen in 1753 that same year she was back in tour up having baby jacob and then the next year she was back in norwich having peter uh then bounced back to eric in torup and then she stayed there for a while and had peter and then she went back to roar vegan had podem and i started to think you know what i think what we have here is probably two separate women who had similar names and they lived nearby one another so without taking the time to use logic on these records they've just been all attached to one woman who is really a conglomerate of two women um but as we look at all these records we can easily divide the two women out into their own unique identities the fourth tip is to know the laws and how they affected how records were kept and who appeared in those records i've already talked a little bit in the previous presentation about tax laws and how those affected who would have been listed in the tax lists from year to year let's talk about when people try to avoid the law so here is betsy stevens and sydney barton bless their little teenage souls they met when they were young and they fell in love and in 1916 they went to cleveland county oklahoma and they married now sydney listed his age as 21 and bessie listed her name her age as 18. so this would have given them birth dates around 1895 and 1898. however when we look at other records from their life um bessie was born on the 6th of june 1900 and this is verified by the 1910 census by a delayed birth certificate filled out in the 1940s and by the social security death index and sydney was born on the 16th of august 1897 and this is verified in some of the records from his life the 1900 census his world war one draft registration and the social security death index so why is there conflicting evidence with their marriage record well it was because the laws of the land would not let them marry without their parents consent at the ages of 18 and 16 but that is certainly the ages they were when they went to the next county over to get eloped that's what they did and they just told a little fib because they wanted to marry without their parents consent but it all worked out in the end for these two they were happily married for over 50 years so my next tip is that if you have conflicting evidence and you can't work it out with geography you can't work it out with logic or any of the other strategies you have checked your assumptions you've rechecked all the records you have you need to go find more evidence what sources have not been combed yet that could help you resolve this problem and look beyond the person themselves you might have found every record that belongs to that particular individual but have you looked at all of their family members records have you looked at all of the previous generations records the younger generation's records have you looked at their associates records there is usually more evidence out there to be found that can help resolve the conflict so we have a case of a man named charles donahue who mostly lived in nelson and washington counties kentucky and they are neighboring counties so he just skipped back and forth over the county line a little bit during his life but in these counties he was born and raised by his parents he married matilda in 1874 he married rosa after matilda's death in 1901 he participated in the civil war in the sixth kentucky cavalry his daughter rebecca was born in 1875 he's located in all the censuses in these counties and his burial is also in these counties however i found one particular record which is a pension record actually for his second wife rosa and it states that he died in february 1909 at durant oklahoma okay durant oklahoma why every other record is in kentucky why is he in oklahoma dying what is that about and then he's back in kentucky being buried and his burial you know uh commemorates his sixth kentucky cavalry service and he's near his first wife's burial so it you know this was definitely a conflict and i had to figure out what was going on with this so uh i had to keep digging and i really felt like i had exhausted all of his particular records i didn't know where else to go um but i kept digging you know i was looking for all of the the records from his wives his parents his siblings and he had a lot of siblings but nothing was really telling me why he had died in durant oklahoma if this was correct and then i finally traced his daughter all the way to her death and she died in illinois and here in her obituary there's a little line that says mr and mrs thompson moved to east texas kentucky and from there to durant indian territory which would have been what oklahoma was at the time that they lived there where they resided for a year then they returned to kentucky remaining there until 1913. so why was mr charles donahue um why did he die in oklahoma it was because his his daughter his only daughter had moved there with her husband for a short period of time they were only there for a year and either he was living with her at the time or he had been there to visit when he passed away and was brought back to kentucky for his burial so now that we have looked for more evidence we have resolved our conflict and we can you know write up what we found and how we found it and why we know that that is an accurate place of death and why it makes sense now another strategy that you should use in order to resolve conflicting evidence is to compare and contrast until you can create a hypothesis or a proof argument to resolve the conflict so in this case we have mrs donahue i like this donahue family they have a lot of conflicts for me to resolve um i wanted to find out her time her date of death and i found i looked in a kentucky death index which should have been kept during the time period in which she died kentucky was a little sporadic about keeping death records but the years when she disappeared from other records should have been a time when they were keeping it so i looked in the index for the death registers and i did not find any entry for sarah donahue but i couldn't find anything else about her death so i decided i was going to do a manual search of this death index during the time period and i found an entry that simply had the surname of donahue it said donahue female married resident of bardstown died in bardstown that's where this family lived in nelson county the date of death was 22nd of january 1853 that was the time period when she disappeared so it made great sense and that she died of psoas abscess okay now that i had a more narrow time period when she probably died even though i can't verify this as her yet i went and dug in the newspapers and i was able to find this little snippet from thursday january 2nd published in the bardstown herald so again this is her city where she lived from 1853 there have been two deaths from arizobilis in town since our last issue mr lucius melvin and mrs donohue wife of mr patrick donahue there are several cases still on hand but no new ones so far we have heard in that part of the county between bardstown and bloomfield which has been so severely afflicted we understand that the disease has greatly abated okay this article was great it told me a lot of things uh first of all that she died from aerospalis um that mrs donahue was the wife of mr patrick donahue and i had already researched patrick himself a lot and i knew there was no other patrick donahues in town during this time period um so that was a pretty strong evidence that it was her that had died and then it also tells me that aerysiphilis was kind of a little epidemic in town there had been a lot of cases and several deaths from it um however there was also a lot of conflicts in these records so the time of death on the death register said it was the 22nd of january 1853 but the newspaper article said january 20th and then the cause of death on the register was psoas abscess while the article said era syphilis so which one was it and then of course we have the fact that her first name was never stated in either record she was just donahue and then mrs donohue and no first name but i i thought that you know i think i can resolve these conflicts by really just comparing and contrasting and writing it up and that is my last strategy for you i think every time that you have conflicting evidence you really need to write it up what your conclusions were or even if you haven't resolved yet just the conflict that you have so that future researchers come along and say yes they notice that conflict and they have addressed it in their research and if you have a solution you need to lead people along your trail of thought so that they know how you reached your conclusion so let me show you uh just one example from the death records for mrs donohue to tell you how i wrote this particular one up an index search in the nelson county kentucky death records from 1852 to oh well i said to 1953 but i was really just checking until 1860. yielded nothing for sarah donohue however a page by page search through the time period of 1852 to 1860 showed an incomplete record for a female donohue married resident of bardstown dying of psoas abscess on the 22nd of january 1853. this record while compelling could not confirm the date of sarah the death of sarah donahue alone a death notice stated the 20th of january 1853 printed in the bardstown herald did not provide the first name of mrs donahue but stated she was the wife of patrick donahue the only patrick donohue in town her cause of death was aerysippolis which was widespread in the town at that time the article noted the dates on the two records conflict the newspaper article was printed the 20th of january while the physician reported the death was on the 22nd of january sarah likely died before the 20th of january in order for the news of her death to be printed by that date the doctor was working with a local epidemic of aerospalis and reported many deaths some time after they occurred and i have that fact just from reading that death register there's a lot of deaths that he recorded of that particular thing all in a big chunk while sarah's exact date of death remains unknown the records confirm she died in january 1853 the death cause is different in each document however the causes could be related to the same condition erysipolis results from a streptococcus bacterial infection as can psoas abscess aerosyphilis typically causes painful red skin rashes on the extremities as in call and is called saint anthony's fire psoas abscess is a deeper infection of the streptococcus usually in the lower back and upper thigh in the psoas muscle this condition is also very painful it is very likely that sarah progressed from aerospace of the skin to the deeper psoas abscess from the same infection especially at her advanced age of 67. i hope dueling dates and fact fights part 1 and 2 have helped you understand more about where and why conflicting evidence evidence occurs in genealogical research and how to resolve it thanks for watching for more great content check out the rootstech homepage",
+  "attempts": [
+    {
+      "client": "IOS",
+      "playability": {
+        "status": "OK",
+        "playableInEmbed": true,
+        "offlineability": {
+          "buttonRenderer": {
+            "navigationEndpoint": {
+              "clickTrackingParams": "CBEQ6ewBIhMI-afqiezblwMVGGxMCB2WjCX9ygEEof4VFQ==",
+              "ypcGetOfflineUpsellEndpoint": {
+                "params": "ChPqqN25AQ0KC0VwMnpFTlFRWjFrIgtFcDJ6RU5RUVoxayoVCAkYAVIPCgtFcDJ6RU5RUVoxayAB"
+              }
+            },
+            "trackingParams": "CBEQ6ewBIhMI-afqiezblwMVGGxMCB2WjCX9"
+          }
+        },
+        "pictureInPicture": {
+          "pictureInPictureRenderer": {
+            "playableInPip": true,
+            "offByDefault": false,
+            "shouldResumeOnHead": false
+          }
+        },
+        "miniplayer": {
+          "miniplayerRenderer": {
+            "playbackMode": "PLAYBACK_MODE_ALLOW"
+          }
+        },
+        "contextParams": "Q0FFU0FnZ0M="
+      },
+      "outcome": "ok"
+    }
+  ],
+  "fetched_at": "2026-10-28T04:11:18.350448+00:00",
+  "client": "IOS",
+  "json_path": "transcripts/032_Ep2zENQQZ1k.json",
+  "text_path": "transcripts/032_Ep2zENQQZ1k.txt"
+}

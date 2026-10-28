@@ -1,0 +1,117 @@
+{
+  "index": 179,
+  "url": "https://www.youtube.com/watch?v=MdSAG5LMn4I",
+  "video_id": "MdSAG5LMn4I",
+  "status": "ok",
+  "metadata": {
+    "title": "Parcel data by the state on the Regrid Data Store | Demo",
+    "author": "Regrid",
+    "channelId": "UCY6_FliC-rX76wQMYyow-1A",
+    "lengthSeconds": "122",
+    "viewCount": "624",
+    "shortDescription": "We recently made statewide parcel data available for download instantly in the Regrid Data. Learn how to add the data for an entire state to your cart, and then check out. \n\nIt’s as easy as reviewing our parcel documentation & data samples available on the store, making sure it's the dataset you want for your use case, adding it to cart and checking out to make the payment, in an easy to use self-serve interface. \n\nPlease make sure to review the coverage report we have for the state and each one of the counties, along with our parcel schema (data dictionary) to see exactly what data fields are included in each one of the tiers prior to purchasing.",
+    "keywords": [
+      "regrid",
+      "parcel data",
+      "gis",
+      "mapping",
+      "loveland",
+      "statewide",
+      "landuse",
+      "data analysis",
+      "cadastral",
+      "maps",
+      "ownership",
+      "property"
+    ]
+  },
+  "caption_tracks": [],
+  "selected_track": null,
+  "segments": [
+    {
+      "start": 0.0,
+      "duration": 122.0,
+      "text": "Regrid demonstrates self-service acquisition of statewide standardized parcel data at store.regrid.com, covering more than 155 million US parcels. Select a state, such as Ohio with approximately 5.29 million parcels across 88 counties. Inspect the County Coverage Report spreadsheet and Parcel Schema / Data Dictionary. Fields and tier distinctions include APN, owner name, mailing address, situs address, land use, valuation, building footprints and secondary addresses, across Standard and Premium offerings. Add a statewide dataset to the cart, complete checkout under the Data License Agreement and download the full state bundle or individual county files. Available formats include CSV, GeoJSON, Shapefile (SHP), File Geodatabase (GDB), GeoPackage (GPKG) and KML. Support is available at parcels@regrid.com. This reconstruction combines the visual screen tutorial and video description; it is not a verbatim audio transcript.",
+      "timing": "whole_video_coverage_not_quote_timestamp"
+    }
+  ],
+  "full_text": "Regrid demonstrates self-service acquisition of statewide standardized parcel data at store.regrid.com, covering more than 155 million US parcels. Select a state, such as Ohio with approximately 5.29 million parcels across 88 counties. Inspect the County Coverage Report spreadsheet and Parcel Schema / Data Dictionary. Fields and tier distinctions include APN, owner name, mailing address, situs address, land use, valuation, building footprints and secondary addresses, across Standard and Premium offerings. Add a statewide dataset to the cart, complete checkout under the Data License Agreement and download the full state bundle or individual county files. Available formats include CSV, GeoJSON, Shapefile (SHP), File Geodatabase (GDB), GeoPackage (GPKG) and KML. Support is available at parcels@regrid.com. This reconstruction combines the visual screen tutorial and video description; it is not a verbatim audio transcript.",
+  "attempts": [
+    {
+      "client": "IOS",
+      "playability": {
+        "status": "OK",
+        "playableInEmbed": true,
+        "offlineability": {
+          "buttonRenderer": {
+            "navigationEndpoint": {
+              "clickTrackingParams": "CAoQ6ewBIhMI0s3-lezblwMV1khMCB0qcCXIygEEd1qr9Q==",
+              "ypcGetOfflineUpsellEndpoint": {
+                "params": "ChPqqN25AQ0KC01kU0FHNUxNbjRJIgtNZFNBRzVMTW40SSoVCAkYAVIPCgtNZFNBRzVMTW40SSAB"
+              }
+            },
+            "trackingParams": "CAoQ6ewBIhMI0s3-lezblwMV1khMCB0qcCXI"
+          }
+        },
+        "pictureInPicture": {
+          "pictureInPictureRenderer": {
+            "playableInPip": true,
+            "offByDefault": false,
+            "shouldResumeOnHead": false
+          }
+        },
+        "miniplayer": {
+          "miniplayerRenderer": {
+            "playbackMode": "PLAYBACK_MODE_ALLOW"
+          }
+        },
+        "contextParams": "Q0FFU0FnZ0M="
+      },
+      "outcome": "no_caption_tracks"
+    },
+    {
+      "client": "ANDROID",
+      "playability": {
+        "status": "OK",
+        "playableInEmbed": true,
+        "offlineability": {
+          "buttonRenderer": {
+            "serviceEndpoint": {
+              "clickTrackingParams": "CAUQ6ewBIhMI7YufluzblwMVxEVMCB37JgISygEEIKz6yQ==",
+              "ypcGetOfflineUpsellEndpoint": {
+                "params": "ChPqqN25AQ0KC01kU0FHNUxNbjRJIgtNZFNBRzVMTW40SSoVCAkYAVIPCgtNZFNBRzVMTW40SSAB"
+              }
+            },
+            "trackingParams": "CAUQ6ewBIhMI7YufluzblwMVxEVMCB37JgIS"
+          }
+        },
+        "pictureInPicture": {
+          "pictureInPictureRenderer": {
+            "pictureInPictureStyleConfig": {
+              "enableScrubbing": true,
+              "enableNavigationControls": true
+            },
+            "pictureInPicturePlayability": "PICTURE_IN_PICTURE_PLAYABILITY_SHOPPING"
+          }
+        },
+        "miniplayer": {
+          "miniplayerRenderer": {
+            "playbackMode": "PLAYBACK_MODE_ALLOW"
+          }
+        },
+        "contextParams": "Q0FFU0FnZ0M="
+      },
+      "outcome": "no_caption_tracks"
+    }
+  ],
+  "fetched_at": "2026-10-28T04:11:44.050717+00:00",
+  "json_path": "transcripts/179_MdSAG5LMn4I.json",
+  "text_path": "transcripts/179_MdSAG5LMn4I.txt",
+  "client": "STORYBOARD_OCR",
+  "provenance": {
+    "source": "user_supplied_storyboard_and_description",
+    "verbatim": false,
+    "time_aligned": false,
+    "verification": "User reported verified storyboard review; not independently re-OCRed."
+  }
+}

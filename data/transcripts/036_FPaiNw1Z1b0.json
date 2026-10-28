@@ -1,0 +1,5077 @@
+{
+  "index": 36,
+  "url": "https://www.youtube.com/watch?v=FPaiNw1Z1b0",
+  "video_id": "FPaiNw1Z1b0",
+  "status": "ok",
+  "metadata": {
+    "title": "Recognizing Inaccurate and Misleading Genealogical Records, Citations, and Sources",
+    "author": "Allen County Public Library",
+    "channelId": "UCfNxwdxPJEO1xhcGL3Xms0Q",
+    "lengthSeconds": "2968",
+    "viewCount": "916",
+    "shortDescription": "False and error filled information can be found in all genealogy sources, including many of the highest rated quality sources. The Internet has proliferated this tendency. In the name of convenience and time, genealogists are increasingly failing to compare original records with the information gleaned from print and online resources. Taking this information at face value, leads to mistakes spreading throughout sources.  This seminar will discuss issues associated with this topic and how to overcome problems.  \n\nBryan L. Mulcahy is an experienced librarian specializing in adult reference, genealogy, and literacy. He has served as a librarian with the Lee County Library System since 1990. Prior to this, he held similar roles with the Southwest Georgia Regional Library and Moultrie-Colquitt County Library from 1984 to 1990, including work with the Ellen Payne Odom Genealogy Library. Earlier in his career, he worked as a Reference and Circulation Assistant at Florida State University Law Library and as an archivist with Leahy Business Archives. Bryan holds a B.A. and MLS from Florida State University.\n\nHandout: https://static.libnet.info/frontend-images/pdfs/acpl/Genealogy/Recognizing_Inaccurate_and_Misleading_Genealogical_Records_Citations_and_Sources_2024_HANDOUT.pdf\nSlides: https://static.libnet.info/frontend-images/pdfs/acpl/Genealogy/Recognizing_Inaccurate_and_Misleading_Genealogical_Records__Citations__and_Sources_2024_Program_Version.pdf"
+  },
+  "caption_tracks": [
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=FPaiNw1Z1b0&ei=5nXhat-NIOyXsfIPw6e7oAo&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185878&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=636E8F0CDA739045D0216A3C80DD58AC62C2D684.8BAAA859905F67DCE1F5C3DF21E3E8B203F21B9E&key=yt8&kind=asr&lang=en",
+      "name": {
+        "runs": [
+          {
+            "text": "English (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.en",
+      "languageCode": "en",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    }
+  ],
+  "selected_track": {
+    "baseUrl": "https://www.youtube.com/api/timedtext?v=FPaiNw1Z1b0&ei=5nXhat-NIOyXsfIPw6e7oAo&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185878&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=636E8F0CDA739045D0216A3C80DD58AC62C2D684.8BAAA859905F67DCE1F5C3DF21E3E8B203F21B9E&key=yt8&kind=asr&lang=en",
+    "name": {
+      "runs": [
+        {
+          "text": "English (auto-generated)"
+        }
+      ]
+    },
+    "vssId": "a.en",
+    "languageCode": "en",
+    "kind": "asr",
+    "isTranslatable": true,
+    "trackName": ""
+  },
+  "segments": [
+    {
+      "start": 0.24,
+      "duration": 6.36,
+      "text": "my name is Brian M and I'm with the Fort"
+    },
+    {
+      "start": 3.28,
+      "duration": 6.0,
+      "text": "Meyers Regional Library you have my"
+    },
+    {
+      "start": 6.6,
+      "duration": 5.56,
+      "text": "email address at the bottom there if"
+    },
+    {
+      "start": 9.28,
+      "duration": 5.359,
+      "text": "during the course of the program if you"
+    },
+    {
+      "start": 12.16,
+      "duration": 5.44,
+      "text": "run into any questions that you forget"
+    },
+    {
+      "start": 14.639,
+      "duration": 6.321,
+      "text": "to ask if you send me an email I'll be"
+    },
+    {
+      "start": 17.6,
+      "duration": 8.12,
+      "text": "more than happy to answer your questions"
+    },
+    {
+      "start": 20.96,
+      "duration": 6.319,
+      "text": "ver via email at any time so we will get"
+    },
+    {
+      "start": 25.72,
+      "duration": 4.639,
+      "text": "started"
+    },
+    {
+      "start": 27.279,
+      "duration": 5.881,
+      "text": "here the listing of study guides that I"
+    },
+    {
+      "start": 30.359,
+      "duration": 6.401,
+      "text": "have here they are all on the Allen"
+    },
+    {
+      "start": 33.16,
+      "duration": 7.079,
+      "text": "County Library website I've included the"
+    },
+    {
+      "start": 36.76,
+      "duration": 5.76,
+      "text": "years when I updated these the primary"
+    },
+    {
+      "start": 40.239,
+      "duration": 5.041,
+      "text": "one for today's session is going to be"
+    },
+    {
+      "start": 42.52,
+      "duration": 5.359,
+      "text": "number six obviously inaccurate and"
+    },
+    {
+      "start": 45.28,
+      "duration": 5.88,
+      "text": "misleading genealogical records"
+    },
+    {
+      "start": 47.879,
+      "duration": 6.721,
+      "text": "citations and sources but all of these"
+    },
+    {
+      "start": 51.16,
+      "duration": 5.96,
+      "text": "other study guides that I have on here"
+    },
+    {
+      "start": 54.6,
+      "duration": 4.84,
+      "text": "are going to give you information that"
+    },
+    {
+      "start": 57.12,
+      "duration": 4.72,
+      "text": "would be related to the topic we're"
+    },
+    {
+      "start": 59.44,
+      "duration": 4.999,
+      "text": "talking about about today"
+    },
+    {
+      "start": 61.84,
+      "duration": 5.56,
+      "text": "especially to the two that a lot of"
+    },
+    {
+      "start": 64.439,
+      "duration": 5.72,
+      "text": "people find the most popular of all of"
+    },
+    {
+      "start": 67.4,
+      "duration": 6.039,
+      "text": "these would be number two the common"
+    },
+    {
+      "start": 70.159,
+      "duration": 5.841,
+      "text": "genealogy research mistakes and also the"
+    },
+    {
+      "start": 73.439,
+      "duration": 5.521,
+      "text": "one determining the reliability of"
+    },
+    {
+      "start": 76.0,
+      "duration": 6.6,
+      "text": "genealogical records and"
+    },
+    {
+      "start": 78.96,
+      "duration": 6.32,
+      "text": "documents now as far as research is"
+    },
+    {
+      "start": 82.6,
+      "duration": 5.6,
+      "text": "concerned you have to face up to some"
+    },
+    {
+      "start": 85.28,
+      "duration": 5.76,
+      "text": "realities number one sources are going"
+    },
+    {
+      "start": 88.2,
+      "duration": 5.52,
+      "text": "to contain errors and amiss misss and"
+    },
+    {
+      "start": 91.04,
+      "duration": 6.32,
+      "text": "this even includes the most"
+    },
+    {
+      "start": 93.72,
+      "duration": 6.6,
+      "text": "authoritative print and online"
+    },
+    {
+      "start": 97.36,
+      "duration": 6.0,
+      "text": "sources you have to look for error"
+    },
+    {
+      "start": 100.32,
+      "duration": 6.479,
+      "text": "sometimes these errors may be accidental"
+    },
+    {
+      "start": 103.36,
+      "duration": 6.359,
+      "text": "as in spelling errors or misinterpreted"
+    },
+    {
+      "start": 106.799,
+      "duration": 4.64,
+      "text": "words or errors that are intentional as"
+    },
+    {
+      "start": 109.719,
+      "duration": 6.281,
+      "text": "in dates and"
+    },
+    {
+      "start": 111.439,
+      "duration": 7.441,
+      "text": "ages research material without Source"
+    },
+    {
+      "start": 116.0,
+      "duration": 5.96,
+      "text": "documentation should never be trusted"
+    },
+    {
+      "start": 118.88,
+      "duration": 5.279,
+      "text": "you would call that heay versus"
+    },
+    {
+      "start": 121.96,
+      "duration": 5.919,
+      "text": "genealogy you should look at every"
+    },
+    {
+      "start": 124.159,
+      "duration": 7.881,
+      "text": "source with a critical eye no matter how"
+    },
+    {
+      "start": 127.879,
+      "duration": 5.481,
+      "text": "reliable you believe it to be AKA you"
+    },
+    {
+      "start": 132.04,
+      "duration": 4.199,
+      "text": "should be a"
+    },
+    {
+      "start": 133.36,
+      "duration": 6.04,
+      "text": "detective even if a source even if a"
+    },
+    {
+      "start": 136.239,
+      "duration": 6.161,
+      "text": "source does contain some errors don't"
+    },
+    {
+      "start": 139.4,
+      "duration": 6.32,
+      "text": "ignore it compare it to more sources"
+    },
+    {
+      "start": 142.4,
+      "duration": 6.64,
+      "text": "closer to the event trusting only one"
+    },
+    {
+      "start": 145.72,
+      "duration": 7.72,
+      "text": "source or focusing only on items that"
+    },
+    {
+      "start": 149.04,
+      "duration": 6.8,
+      "text": "fit your assumptions or expectations may"
+    },
+    {
+      "start": 153.44,
+      "duration": 5.04,
+      "text": "lead to errors"
+    },
+    {
+      "start": 155.84,
+      "duration": 5.92,
+      "text": "misinterpretation Andor faulty"
+    },
+    {
+      "start": 158.48,
+      "duration": 6.119,
+      "text": "conclusions and this would also include"
+    },
+    {
+      "start": 161.76,
+      "duration": 6.199,
+      "text": "eyewitness accounts found in official"
+    },
+    {
+      "start": 164.599,
+      "duration": 5.92,
+      "text": "records you should always question the"
+    },
+    {
+      "start": 167.959,
+      "duration": 5.241,
+      "text": "reliability of the informant in"
+    },
+    {
+      "start": 170.519,
+      "duration": 5.561,
+      "text": "testimony and the informant is always"
+    },
+    {
+      "start": 173.2,
+      "duration": 4.24,
+      "text": "going to be the key to the accuracy of"
+    },
+    {
+      "start": 176.08,
+      "duration": 3.96,
+      "text": "the"
+    },
+    {
+      "start": 177.44,
+      "duration": 5.439,
+      "text": "information there are three important"
+    },
+    {
+      "start": 180.04,
+      "duration": 7.32,
+      "text": "genealogical definitions that you really"
+    },
+    {
+      "start": 182.879,
+      "duration": 7.72,
+      "text": "need to be aware of evidence constitutes"
+    },
+    {
+      "start": 187.36,
+      "duration": 6.32,
+      "text": "facts used to reach conclusions about"
+    },
+    {
+      "start": 190.599,
+      "duration": 6.081,
+      "text": "genealogical data relationships or"
+    },
+    {
+      "start": 193.68,
+      "duration": 6.119,
+      "text": "events that are found in your research"
+    },
+    {
+      "start": 196.68,
+      "duration": 6.08,
+      "text": "sources you also have the genealogical"
+    },
+    {
+      "start": 199.799,
+      "duration": 5.8,
+      "text": "proof standard these are suggested"
+    },
+    {
+      "start": 202.76,
+      "duration": 7.039,
+      "text": "guidelines a genealogists should follow"
+    },
+    {
+      "start": 205.599,
+      "duration": 6.56,
+      "text": "for their work to be considered credible"
+    },
+    {
+      "start": 209.799,
+      "duration": 5.64,
+      "text": "and it's generally composed of five"
+    },
+    {
+      "start": 212.159,
+      "duration": 6.561,
+      "text": "elements number one a reasonably"
+    },
+    {
+      "start": 215.439,
+      "duration": 6.601,
+      "text": "exhaustive research project has been"
+    },
+    {
+      "start": 218.72,
+      "duration": 6.4,
+      "text": "conducted each statement of fact has a"
+    },
+    {
+      "start": 222.04,
+      "duration": 5.16,
+      "text": "complete and accurate emphasis on the"
+    },
+    {
+      "start": 225.12,
+      "duration": 5.56,
+      "text": "word accurate source"
+    },
+    {
+      "start": 227.2,
+      "duration": 6.8,
+      "text": "citation all evidence is reliable and"
+    },
+    {
+      "start": 230.68,
+      "duration": 6.32,
+      "text": "has been properly correlated and"
+    },
+    {
+      "start": 234.0,
+      "duration": 6.319,
+      "text": "interpreted all contradictory issues"
+    },
+    {
+      "start": 237.0,
+      "duration": 6.439,
+      "text": "have been resolved the conclusion has"
+    },
+    {
+      "start": 240.319,
+      "duration": 6.801,
+      "text": "been soundly reasoned and coherently"
+    },
+    {
+      "start": 243.439,
+      "duration": 7.201,
+      "text": "written now there is one caveat any"
+    },
+    {
+      "start": 247.12,
+      "duration": 7.679,
+      "text": "proof statement is subject to being"
+    },
+    {
+      "start": 250.64,
+      "duration": 6.96,
+      "text": "re-examined when new evidence"
+    },
+    {
+      "start": 254.799,
+      "duration": 5.44,
+      "text": "arises this next slide talks about the"
+    },
+    {
+      "start": 257.6,
+      "duration": 5.56,
+      "text": "different types of evidence direct"
+    },
+    {
+      "start": 260.239,
+      "duration": 5.881,
+      "text": "evidence this refers to the source of"
+    },
+    {
+      "start": 263.16,
+      "duration": 4.84,
+      "text": "information example if the birth"
+    },
+    {
+      "start": 266.12,
+      "duration": 4.6,
+      "text": "information came from a birth"
+    },
+    {
+      "start": 268.0,
+      "duration": 5.84,
+      "text": "certificate then it would be direct"
+    },
+    {
+      "start": 270.72,
+      "duration": 5.64,
+      "text": "evidence indirect evidence this is"
+    },
+    {
+      "start": 273.84,
+      "duration": 6.199,
+      "text": "information that requires"
+    },
+    {
+      "start": 276.36,
+      "duration": 7.2,
+      "text": "corroboration it provides enough detail"
+    },
+    {
+      "start": 280.039,
+      "duration": 6.681,
+      "text": "to enable you to form a hypothesis and"
+    },
+    {
+      "start": 283.56,
+      "duration": 6.8,
+      "text": "when combined with other evidence will"
+    },
+    {
+      "start": 286.72,
+      "duration": 6.479,
+      "text": "allow you to reach a reasonably reliable"
+    },
+    {
+      "start": 290.36,
+      "duration": 5.96,
+      "text": "conclusion an example of this there are"
+    },
+    {
+      "start": 293.199,
+      "duration": 5.681,
+      "text": "three of them you can't find a birth"
+    },
+    {
+      "start": 296.32,
+      "duration": 5.719,
+      "text": "certificate for your grandfather but you"
+    },
+    {
+      "start": 298.88,
+      "duration": 4.96,
+      "text": "can determine an age using a census"
+    },
+    {
+      "start": 302.039,
+      "duration": 4.681,
+      "text": "Andor a birth"
+    },
+    {
+      "start": 303.84,
+      "duration": 5.359,
+      "text": "announcement the census doesn't give his"
+    },
+    {
+      "start": 306.72,
+      "duration": 5.52,
+      "text": "exact date of birth the birth"
+    },
+    {
+      "start": 309.199,
+      "duration": 5.521,
+      "text": "announcement gives a birth date his full"
+    },
+    {
+      "start": 312.24,
+      "duration": 4.36,
+      "text": "name is not provided but his parents"
+    },
+    {
+      "start": 314.72,
+      "duration": 5.72,
+      "text": "names are"
+    },
+    {
+      "start": 316.6,
+      "duration": 7.28,
+      "text": "cited by using both indirect records you"
+    },
+    {
+      "start": 320.44,
+      "duration": 6.0,
+      "text": "can reach a reasonable conclusion as to"
+    },
+    {
+      "start": 323.88,
+      "duration": 6.24,
+      "text": "his probable date of"
+    },
+    {
+      "start": 326.44,
+      "duration": 6.599,
+      "text": "birth now negative evidence see seems to"
+    },
+    {
+      "start": 330.12,
+      "duration": 6.28,
+      "text": "be something that confuses a lot of"
+    },
+    {
+      "start": 333.039,
+      "duration": 7.16,
+      "text": "people these are conclusions about"
+    },
+    {
+      "start": 336.4,
+      "duration": 7.68,
+      "text": "relationships or facts that are drawn"
+    },
+    {
+      "start": 340.199,
+      "duration": 8.081,
+      "text": "because a situation fails to exist when"
+    },
+    {
+      "start": 344.08,
+      "duration": 7.239,
+      "text": "it probably should so three examples of"
+    },
+    {
+      "start": 348.28,
+      "duration": 6.72,
+      "text": "this that I run into a lot a young child"
+    },
+    {
+      "start": 351.319,
+      "duration": 5.681,
+      "text": "is not listed with a family on a sensus"
+    },
+    {
+      "start": 355.0,
+      "duration": 4.4,
+      "text": "living individual is not named in the"
+    },
+    {
+      "start": 357.0,
+      "duration": 6.08,
+      "text": "will of a supposed parent when all the"
+    },
+    {
+      "start": 359.4,
+      "duration": 8.16,
+      "text": "other children are finally a surviving"
+    },
+    {
+      "start": 363.08,
+      "duration": 7.2,
+      "text": "spouse is not listed in the will or"
+    },
+    {
+      "start": 367.56,
+      "duration": 5.44,
+      "text": "obituary when it comes to the concept of"
+    },
+    {
+      "start": 370.28,
+      "duration": 6.16,
+      "text": "proof it's a four-step process number"
+    },
+    {
+      "start": 373.0,
+      "duration": 7.44,
+      "text": "one the reliability of sources must"
+    },
+    {
+      "start": 376.44,
+      "duration": 6.44,
+      "text": "always be established number two the"
+    },
+    {
+      "start": 380.44,
+      "duration": 5.64,
+      "text": "statements made by family members"
+    },
+    {
+      "start": 382.88,
+      "duration": 6.24,
+      "text": "Associates and neighbors cannot always"
+    },
+    {
+      "start": 386.08,
+      "duration": 5.44,
+      "text": "be taken at face value for a variety of"
+    },
+    {
+      "start": 389.12,
+      "duration": 5.799,
+      "text": "reasons"
+    },
+    {
+      "start": 391.52,
+      "duration": 6.04,
+      "text": "number three official records often"
+    },
+    {
+      "start": 394.919,
+      "duration": 5.521,
+      "text": "contain a variety of"
+    },
+    {
+      "start": 397.56,
+      "duration": 6.56,
+      "text": "Errors one big example multiple"
+    },
+    {
+      "start": 400.44,
+      "duration": 6.44,
+      "text": "spellings of a name in the same record"
+    },
+    {
+      "start": 404.12,
+      "duration": 6.359,
+      "text": "finally there are three keys to"
+    },
+    {
+      "start": 406.88,
+      "duration": 6.439,
+      "text": "successful research number one knowing"
+    },
+    {
+      "start": 410.479,
+      "duration": 5.44,
+      "text": "the intended purpose of the"
+    },
+    {
+      "start": 413.319,
+      "duration": 5.961,
+      "text": "record now one of those screenshots"
+    },
+    {
+      "start": 415.919,
+      "duration": 6.761,
+      "text": "later on is a book that Corey meink"
+    },
+    {
+      "start": 419.28,
+      "duration": 6.68,
+      "text": "would Brigham Young University wrote in"
+    },
+    {
+      "start": 422.68,
+      "duration": 4.799,
+      "text": "1998 and it basically is a book that's"
+    },
+    {
+      "start": 425.96,
+      "duration": 4.239,
+      "text": "kind of like the"
+    },
+    {
+      "start": 427.479,
+      "duration": 5.56,
+      "text": "genealogy of a"
+    },
+    {
+      "start": 430.199,
+      "duration": 4.921,
+      "text": "resource you need to know make sure that"
+    },
+    {
+      "start": 433.039,
+      "duration": 4.88,
+      "text": "when you're looking at a record who was"
+    },
+    {
+      "start": 435.12,
+      "duration": 5.96,
+      "text": "the record created for as in the entity"
+    },
+    {
+      "start": 437.919,
+      "duration": 6.56,
+      "text": "and who who whether it be the police or"
+    },
+    {
+      "start": 441.08,
+      "duration": 7.16,
+      "text": "some agency something like that number"
+    },
+    {
+      "start": 444.479,
+      "duration": 6.481,
+      "text": "two the ability to identify and"
+    },
+    {
+      "start": 448.24,
+      "duration": 6.239,
+      "text": "understand the information and determine"
+    },
+    {
+      "start": 450.96,
+      "duration": 6.6,
+      "text": "its accuracy given the circumstances and"
+    },
+    {
+      "start": 454.479,
+      "duration": 5.601,
+      "text": "historical context and as I said"
+    },
+    {
+      "start": 457.56,
+      "duration": 4.52,
+      "text": "there'll be three excellent sources that"
+    },
+    {
+      "start": 460.08,
+      "duration": 3.6,
+      "text": "I'm going to be showing you in an"
+    },
+    {
+      "start": 462.08,
+      "duration": 4.839,
+      "text": "upcoming"
+    },
+    {
+      "start": 463.68,
+      "duration": 5.0,
+      "text": "slide now the most common errors that"
+    },
+    {
+      "start": 466.919,
+      "duration": 4.161,
+      "text": "you're going to find and what their"
+    },
+    {
+      "start": 468.68,
+      "duration": 4.959,
+      "text": "circumstances would be there are"
+    },
+    {
+      "start": 471.08,
+      "duration": 6.0,
+      "text": "numerous potential scenarios and"
+    },
+    {
+      "start": 473.639,
+      "duration": 6.56,
+      "text": "variations involving errors but these"
+    },
+    {
+      "start": 477.08,
+      "duration": 5.519,
+      "text": "are the most common as I said earlier"
+    },
+    {
+      "start": 480.199,
+      "duration": 5.921,
+      "text": "accidental these errors may have been"
+    },
+    {
+      "start": 482.599,
+      "duration": 7.6,
+      "text": "caused by speaking hearing Reading"
+    },
+    {
+      "start": 486.12,
+      "duration": 6.799,
+      "text": "Writing or memory lapses number two the"
+    },
+    {
+      "start": 490.199,
+      "duration": 5.56,
+      "text": "intentional now for some people this may"
+    },
+    {
+      "start": 492.919,
+      "duration": 6.12,
+      "text": "sound a little funny but it is what it"
+    },
+    {
+      "start": 495.759,
+      "duration": 7.041,
+      "text": "is the informant deliberately provided"
+    },
+    {
+      "start": 499.039,
+      "duration": 6.6,
+      "text": "false information and or omitted"
+    },
+    {
+      "start": 502.8,
+      "duration": 6.76,
+      "text": "important details some of the most"
+    },
+    {
+      "start": 505.639,
+      "duration": 6.201,
+      "text": "common examples would include the intent"
+    },
+    {
+      "start": 509.56,
+      "duration": 5.359,
+      "text": "was to hide information that was"
+    },
+    {
+      "start": 511.84,
+      "duration": 5.92,
+      "text": "perceived to be offensive Andor the"
+    },
+    {
+      "start": 514.919,
+      "duration": 6.721,
+      "text": "desire to paint a negative"
+    },
+    {
+      "start": 517.76,
+      "duration": 7.0,
+      "text": "portrait of the person or family this"
+    },
+    {
+      "start": 521.64,
+      "duration": 4.52,
+      "text": "tends to be for a lot of people the"
+    },
+    {
+      "start": 524.76,
+      "duration": 3.8,
+      "text": "number one"
+    },
+    {
+      "start": 526.16,
+      "duration": 5.4,
+      "text": "scenario another one would be the"
+    },
+    {
+      "start": 528.56,
+      "duration": 5.839,
+      "text": "possibility of personal financial or"
+    },
+    {
+      "start": 531.56,
+      "duration": 5.399,
+      "text": "social gain or advancement that"
+    },
+    {
+      "start": 534.399,
+      "duration": 8.201,
+      "text": "influences the informant to provide"
+    },
+    {
+      "start": 536.959,
+      "duration": 8.641,
+      "text": "false or distorted views of an event or"
+    },
+    {
+      "start": 542.6,
+      "duration": 6.08,
+      "text": "situation another one the informant will"
+    },
+    {
+      "start": 545.6,
+      "duration": 6.4,
+      "text": "deliberately exaggerate or embellish the"
+    },
+    {
+      "start": 548.68,
+      "duration": 7.0,
+      "text": "story or account to make themselves look"
+    },
+    {
+      "start": 552.0,
+      "duration": 7.0,
+      "text": "better or impress a listener or"
+    },
+    {
+      "start": 555.68,
+      "duration": 7.24,
+      "text": "reader another one would be rather than"
+    },
+    {
+      "start": 559.0,
+      "duration": 6.839,
+      "text": "admit ignorance of people or events the"
+    },
+    {
+      "start": 562.92,
+      "duration": 6.64,
+      "text": "informant Andor family members will"
+    },
+    {
+      "start": 565.839,
+      "duration": 7.801,
+      "text": "invent or distort information about"
+    },
+    {
+      "start": 569.56,
+      "duration": 7.92,
+      "text": "people and events now an example of"
+    },
+    {
+      "start": 573.64,
+      "duration": 6.4,
+      "text": "number two sometimes I've found it when"
+    },
+    {
+      "start": 577.48,
+      "duration": 4.84,
+      "text": "helping people with census record"
+    },
+    {
+      "start": 580.04,
+      "duration": 4.96,
+      "text": "theoretically the census takers if a"
+    },
+    {
+      "start": 582.32,
+      "duration": 5.8,
+      "text": "family wasn't home they were supposed to"
+    },
+    {
+      "start": 585.0,
+      "duration": 6.12,
+      "text": "go back and try to interview the people"
+    },
+    {
+      "start": 588.12,
+      "duration": 5.64,
+      "text": "and the family sometimes the information"
+    },
+    {
+      "start": 591.12,
+      "duration": 5.44,
+      "text": "a lot of times was given by a neighbor"
+    },
+    {
+      "start": 593.76,
+      "duration": 5.96,
+      "text": "if that neighbor was an honest person"
+    },
+    {
+      "start": 596.56,
+      "duration": 5.64,
+      "text": "you never would normally have a problem"
+    },
+    {
+      "start": 599.72,
+      "duration": 5.6,
+      "text": "if that neighbor had a grudge against"
+    },
+    {
+      "start": 602.2,
+      "duration": 6.72,
+      "text": "that person they often would take the"
+    },
+    {
+      "start": 605.32,
+      "duration": 6.48,
+      "text": "opportunity to say for lack of a better"
+    },
+    {
+      "start": 608.92,
+      "duration": 7.359,
+      "text": "term some very the politest way I can"
+    },
+    {
+      "start": 611.8,
+      "duration": 6.96,
+      "text": "put it is they said some very nasty"
+    },
+    {
+      "start": 616.279,
+      "duration": 4.401,
+      "text": "things about the particular person and"
+    },
+    {
+      "start": 618.76,
+      "duration": 5.0,
+      "text": "their intent hopefully was to get them"
+    },
+    {
+      "start": 620.68,
+      "duration": 6.36,
+      "text": "in trouble that is something that will"
+    },
+    {
+      "start": 623.76,
+      "duration": 6.4,
+      "text": "happen another one researchers can"
+    },
+    {
+      "start": 627.04,
+      "duration": 6.2,
+      "text": "create Errors By misreading or"
+    },
+    {
+      "start": 630.16,
+      "duration": 6.4,
+      "text": "misunderstanding accurate sources or"
+    },
+    {
+      "start": 633.24,
+      "duration": 5.96,
+      "text": "applying them to the wrong people using"
+    },
+    {
+      "start": 636.56,
+      "duration": 6.24,
+      "text": "the internet versus taking the time to"
+    },
+    {
+      "start": 639.2,
+      "duration": 7.16,
+      "text": "compare information with other primary"
+    },
+    {
+      "start": 642.8,
+      "duration": 7.2,
+      "text": "or secondary sources Fosters the"
+    },
+    {
+      "start": 646.36,
+      "duration": 6.12,
+      "text": "spreading of errors and"
+    },
+    {
+      "start": 650.0,
+      "duration": 4.48,
+      "text": "misinformation now errors and"
+    },
+    {
+      "start": 652.48,
+      "duration": 4.799,
+      "text": "misinformation can lead to some"
+    },
+    {
+      "start": 654.48,
+      "duration": 5.159,
+      "text": "significant research challenges some of"
+    },
+    {
+      "start": 657.279,
+      "duration": 5.68,
+      "text": "the most common discrepancies that"
+    },
+    {
+      "start": 659.639,
+      "duration": 4.921,
+      "text": "patrons will run into would include"
+    },
+    {
+      "start": 662.959,
+      "duration": 4.241,
+      "text": "baptismal"
+    },
+    {
+      "start": 664.56,
+      "duration": 6.04,
+      "text": "listening and presentations in the"
+    },
+    {
+      "start": 667.2,
+      "duration": 7.4,
+      "text": "church containing the wrong birth dates"
+    },
+    {
+      "start": 670.6,
+      "duration": 6.799,
+      "text": "names and sex another one birth records"
+    },
+    {
+      "start": 674.6,
+      "duration": 5.4,
+      "text": "with incorrect proper names and"
+    },
+    {
+      "start": 677.399,
+      "duration": 5.041,
+      "text": "surnames another one would be death"
+    },
+    {
+      "start": 680.0,
+      "duration": 6.519,
+      "text": "records with incorrect names for the"
+    },
+    {
+      "start": 682.44,
+      "duration": 7.56,
+      "text": "decedent parents and places of residence"
+    },
+    {
+      "start": 686.519,
+      "duration": 5.921,
+      "text": "another one would be family bible entry"
+    },
+    {
+      "start": 690.0,
+      "duration": 4.92,
+      "text": "with fabricated"
+    },
+    {
+      "start": 692.44,
+      "duration": 4.519,
+      "text": "information now when it comes to family"
+    },
+    {
+      "start": 694.92,
+      "duration": 6.039,
+      "text": "Bibles generally speaking the"
+    },
+    {
+      "start": 696.959,
+      "duration": 5.601,
+      "text": "information in them tends to be more"
+    },
+    {
+      "start": 700.959,
+      "duration": 4.241,
+      "text": "accurate than what you're going to find"
+    },
+    {
+      "start": 702.56,
+      "duration": 4.92,
+      "text": "in a lot of civil records but there is"
+    },
+    {
+      "start": 705.2,
+      "duration": 3.52,
+      "text": "one thing that you should be aware of"
+    },
+    {
+      "start": 707.48,
+      "duration": 4.28,
+      "text": "with family"
+    },
+    {
+      "start": 708.72,
+      "duration": 6.0,
+      "text": "Bibles look at the data publication if a"
+    },
+    {
+      "start": 711.76,
+      "duration": 7.8,
+      "text": "family Bible was let's"
+    },
+    {
+      "start": 714.72,
+      "duration": 8.2,
+      "text": "say came from the late 1700s"
+    },
+    {
+      "start": 719.56,
+      "duration": 5.64,
+      "text": "and all of the entries in there follow"
+    },
+    {
+      "start": 722.92,
+      "duration": 4.64,
+      "text": "the pattern from that time"
+    },
+    {
+      "start": 725.2,
+      "duration": 4.52,
+      "text": "forward sometimes the handwriting will"
+    },
+    {
+      "start": 727.56,
+      "duration": 5.519,
+      "text": "be a little different as people died and"
+    },
+    {
+      "start": 729.72,
+      "duration": 7.04,
+      "text": "others took up the uh recording those"
+    },
+    {
+      "start": 733.079,
+      "duration": 6.56,
+      "text": "tend to be more accurate than the other"
+    },
+    {
+      "start": 736.76,
+      "duration": 4.759,
+      "text": "example let's say it was the Family"
+    },
+    {
+      "start": 739.639,
+      "duration": 5.521,
+      "text": "Bible is from the"
+    },
+    {
+      "start": 741.519,
+      "duration": 4.76,
+      "text": "1860s but it has information going back"
+    },
+    {
+      "start": 745.16,
+      "duration": 4.44,
+      "text": "to the"
+    },
+    {
+      "start": 746.279,
+      "duration": 6.881,
+      "text": "1700s that information from the past was"
+    },
+    {
+      "start": 749.6,
+      "duration": 6.64,
+      "text": "added after the fact so that may or may"
+    },
+    {
+      "start": 753.16,
+      "duration": 5.039,
+      "text": "not be totally accurate just something"
+    },
+    {
+      "start": 756.24,
+      "duration": 5.52,
+      "text": "to bear in"
+    },
+    {
+      "start": 758.199,
+      "duration": 6.681,
+      "text": "mind marriage license applications with"
+    },
+    {
+      "start": 761.76,
+      "duration": 6.96,
+      "text": "incorrect names of the Bride or groom's"
+    },
+    {
+      "start": 764.88,
+      "duration": 6.88,
+      "text": "father or mother tax roles listing a"
+    },
+    {
+      "start": 768.72,
+      "duration": 6.08,
+      "text": "dead man as a living"
+    },
+    {
+      "start": 771.76,
+      "duration": 6.6,
+      "text": "taxpayer military records that are"
+    },
+    {
+      "start": 774.8,
+      "duration": 6.96,
+      "text": "omitting a soldier wills and probate"
+    },
+    {
+      "start": 778.36,
+      "duration": 7.56,
+      "text": "packets omitting the names of children"
+    },
+    {
+      "start": 781.76,
+      "duration": 7.36,
+      "text": "and falsely identifying bogus heirs and"
+    },
+    {
+      "start": 785.92,
+      "duration": 6.279,
+      "text": "finally deed and land records that"
+    },
+    {
+      "start": 789.12,
+      "duration": 6.12,
+      "text": "contain incomplete or bogus land"
+    },
+    {
+      "start": 792.199,
+      "duration": 4.521,
+      "text": "descriptions Andor incorrect names of"
+    },
+    {
+      "start": 795.24,
+      "duration": 4.08,
+      "text": "the"
+    },
+    {
+      "start": 796.72,
+      "duration": 5.04,
+      "text": "owner I'm sure some of you can come up"
+    },
+    {
+      "start": 799.32,
+      "duration": 5.48,
+      "text": "with some I didn't even put on"
+    },
+    {
+      "start": 801.76,
+      "duration": 6.759,
+      "text": "there now in terms of guidelines for"
+    },
+    {
+      "start": 804.8,
+      "duration": 6.8,
+      "text": "evidence and Analysis a lot of this I"
+    },
+    {
+      "start": 808.519,
+      "duration": 6.161,
+      "text": "would say is is common sense but I still"
+    },
+    {
+      "start": 811.6,
+      "duration": 6.08,
+      "text": "cover it anyway direct evidence is"
+    },
+    {
+      "start": 814.68,
+      "duration": 6.88,
+      "text": "always going to be easier to understand"
+    },
+    {
+      "start": 817.68,
+      "duration": 6.279,
+      "text": "but indirect evidence can carry equal"
+    },
+    {
+      "start": 821.56,
+      "duration": 4.56,
+      "text": "weight that's one reason why you have to"
+    },
+    {
+      "start": 823.959,
+      "duration": 4.921,
+      "text": "check your"
+    },
+    {
+      "start": 826.12,
+      "duration": 6.32,
+      "text": "sources reliable genealogical"
+    },
+    {
+      "start": 828.88,
+      "duration": 6.68,
+      "text": "conclusions are based on the weight not"
+    },
+    {
+      "start": 832.44,
+      "duration": 7.04,
+      "text": "the quantity of information"
+    },
+    {
+      "start": 835.56,
+      "duration": 7.16,
+      "text": "found again I'll repeat that reli"
+    },
+    {
+      "start": 839.48,
+      "duration": 5.68,
+      "text": "genealogical conclusions are based on"
+    },
+    {
+      "start": 842.72,
+      "duration": 5.52,
+      "text": "the weight not the"
+    },
+    {
+      "start": 845.16,
+      "duration": 6.599,
+      "text": "quantity of the evidence that's"
+    },
+    {
+      "start": 848.24,
+      "duration": 7.159,
+      "text": "found evidence should be drawn from a"
+    },
+    {
+      "start": 851.759,
+      "duration": 7.64,
+      "text": "variety of independently created"
+    },
+    {
+      "start": 855.399,
+      "duration": 6.401,
+      "text": "sources original Source material will"
+    },
+    {
+      "start": 859.399,
+      "duration": 6.161,
+      "text": "generally be more reliable than"
+    },
+    {
+      "start": 861.8,
+      "duration": 6.88,
+      "text": "derivative material the reliability of"
+    },
+    {
+      "start": 865.56,
+      "duration": 6.399,
+      "text": "derivative work can be influenced by how"
+    },
+    {
+      "start": 868.68,
+      "duration": 6.079,
+      "text": "often it has been reproduced in various"
+    },
+    {
+      "start": 871.959,
+      "duration": 6.32,
+      "text": "formats and you remember I said earlier"
+    },
+    {
+      "start": 874.759,
+      "duration": 6.76,
+      "text": "that sadly if people don't take the time"
+    },
+    {
+      "start": 878.279,
+      "duration": 5.56,
+      "text": "to really do some research and they just"
+    },
+    {
+      "start": 881.519,
+      "duration": 6.601,
+      "text": "take off what they see on the internet"
+    },
+    {
+      "start": 883.839,
+      "duration": 8.0,
+      "text": "and assume it's correct the errors keep"
+    },
+    {
+      "start": 888.12,
+      "duration": 6.32,
+      "text": "being spread over and over and over"
+    },
+    {
+      "start": 891.839,
+      "duration": 5.401,
+      "text": "again most reliable"
+    },
+    {
+      "start": 894.44,
+      "duration": 5.759,
+      "text": "informants have firsthand knowledge of"
+    },
+    {
+      "start": 897.24,
+      "duration": 6.399,
+      "text": "the events to which they testify"
+    },
+    {
+      "start": 900.199,
+      "duration": 7.56,
+      "text": "y handwriting analysis can help"
+    },
+    {
+      "start": 903.639,
+      "duration": 7.241,
+      "text": "establish identity date and"
+    },
+    {
+      "start": 907.759,
+      "duration": 6.401,
+      "text": "authenticity microfilm scans and"
+    },
+    {
+      "start": 910.88,
+      "duration": 6.519,
+      "text": "photocopies are usually more accurate"
+    },
+    {
+      "start": 914.16,
+      "duration": 4.4,
+      "text": "than handwritten or typed transcriptions"
+    },
+    {
+      "start": 917.399,
+      "duration": 3.921,
+      "text": "and"
+    },
+    {
+      "start": 918.56,
+      "duration": 6.199,
+      "text": "abstracts readable photographs of"
+    },
+    {
+      "start": 921.32,
+      "duration": 5.439,
+      "text": "Tombstone inscriptions are more accurate"
+    },
+    {
+      "start": 924.759,
+      "duration": 4.52,
+      "text": "than handwritten"
+    },
+    {
+      "start": 926.759,
+      "duration": 5.921,
+      "text": "notes transcriptions"
+    },
+    {
+      "start": 929.279,
+      "duration": 7.0,
+      "text": "made closer to the time of the event"
+    },
+    {
+      "start": 932.68,
+      "duration": 7.44,
+      "text": "tend to be more accurate than those made"
+    },
+    {
+      "start": 936.279,
+      "duration": 6.281,
+      "text": "years or decades afterwards and finally"
+    },
+    {
+      "start": 940.12,
+      "duration": 5.44,
+      "text": "something you need to always remember"
+    },
+    {
+      "start": 942.56,
+      "duration": 7.759,
+      "text": "when it comes to genealogical research"
+    },
+    {
+      "start": 945.56,
+      "duration": 7.8,
+      "text": "the case is never absolutely positively"
+    },
+    {
+      "start": 950.319,
+      "duration": 5.681,
+      "text": "closed now some strategies that have a"
+    },
+    {
+      "start": 953.36,
+      "duration": 5.68,
+      "text": "proven track record for success for"
+    },
+    {
+      "start": 956.0,
+      "duration": 5.519,
+      "text": "uncovering some of these errors this"
+    },
+    {
+      "start": 959.04,
+      "duration": 6.039,
+      "text": "section is going to cover that most"
+    },
+    {
+      "start": 961.519,
+      "duration": 6.68,
+      "text": "errors are uncovered by taking the time"
+    },
+    {
+      "start": 965.079,
+      "duration": 6.961,
+      "text": "to compare and contrast independent"
+    },
+    {
+      "start": 968.199,
+      "duration": 6.801,
+      "text": "sources that provide evidence answering"
+    },
+    {
+      "start": 972.04,
+      "duration": 5.68,
+      "text": "the same research questions and the"
+    },
+    {
+      "start": 975.0,
+      "duration": 6.44,
+      "text": "steps that I am going to talk about now"
+    },
+    {
+      "start": 977.72,
+      "duration": 7.52,
+      "text": "are considered critical in this analysis"
+    },
+    {
+      "start": 981.44,
+      "duration": 7.12,
+      "text": "process number one view any"
+    },
+    {
+      "start": 985.24,
+      "duration": 4.88,
+      "text": "uncorroborated records or testimony with"
+    },
+    {
+      "start": 988.56,
+      "duration": 5.199,
+      "text": "skep ticism"
+    },
+    {
+      "start": 990.12,
+      "duration": 6.48,
+      "text": "no matter how much you may think the"
+    },
+    {
+      "start": 993.759,
+      "duration": 5.721,
+      "text": "person is telling the truth if they"
+    },
+    {
+      "start": 996.6,
+      "duration": 7.28,
+      "text": "don't have something to back it up you"
+    },
+    {
+      "start": 999.48,
+      "duration": 7.96,
+      "text": "need to be careful number two search"
+    },
+    {
+      "start": 1003.88,
+      "duration": 6.16,
+      "text": "broadly for independent sources that"
+    },
+    {
+      "start": 1007.44,
+      "duration": 5.72,
+      "text": "might provide"
+    },
+    {
+      "start": 1010.04,
+      "duration": 7.159,
+      "text": "corroboration number three"
+    },
+    {
+      "start": 1013.16,
+      "duration": 6.72,
+      "text": "verify the independence of these sources"
+    },
+    {
+      "start": 1017.199,
+      "duration": 7.0,
+      "text": "accounts or testimonies"
+    },
+    {
+      "start": 1019.88,
+      "duration": 7.439,
+      "text": "number four reject information that"
+    },
+    {
+      "start": 1024.199,
+      "duration": 7.161,
+      "text": "cannot be corroborated you should still"
+    },
+    {
+      "start": 1027.319,
+      "duration": 7.561,
+      "text": "try to analyze it but if you cannot"
+    },
+    {
+      "start": 1031.36,
+      "duration": 5.679,
+      "text": "corroborate it for the most part you"
+    },
+    {
+      "start": 1034.88,
+      "duration": 4.84,
+      "text": "should reject it although I wouldn't"
+    },
+    {
+      "start": 1037.039,
+      "duration": 5.561,
+      "text": "throw it away completely because later"
+    },
+    {
+      "start": 1039.72,
+      "duration": 6.079,
+      "text": "on as you go forward in the research"
+    },
+    {
+      "start": 1042.6,
+      "duration": 6.6,
+      "text": "process you may later find some"
+    },
+    {
+      "start": 1045.799,
+      "duration": 6.841,
+      "text": "information that might corroborate it"
+    },
+    {
+      "start": 1049.2,
+      "duration": 6.8,
+      "text": "number five thoroughly examine the"
+    },
+    {
+      "start": 1052.64,
+      "duration": 6.12,
+      "text": "research subjects records dating back"
+    },
+    {
+      "start": 1056.0,
+      "duration": 5.44,
+      "text": "from birth to death looking for"
+    },
+    {
+      "start": 1058.76,
+      "duration": 6.12,
+      "text": "repetition patterns or"
+    },
+    {
+      "start": 1061.44,
+      "duration": 8.32,
+      "text": "sequences use a variety of formats to"
+    },
+    {
+      "start": 1064.88,
+      "duration": 7.88,
+      "text": "compare and contrast seemingly relevant"
+    },
+    {
+      "start": 1069.76,
+      "duration": 5.919,
+      "text": "information the most popular used by"
+    },
+    {
+      "start": 1072.76,
+      "duration": 6.399,
+      "text": "experts in the field include the"
+    },
+    {
+      "start": 1075.679,
+      "duration": 6.521,
+      "text": "following language and writing used used"
+    },
+    {
+      "start": 1079.159,
+      "duration": 6.561,
+      "text": "by the subject in daily"
+    },
+    {
+      "start": 1082.2,
+      "duration": 7.08,
+      "text": "activities number two timelines of"
+    },
+    {
+      "start": 1085.72,
+      "duration": 6.04,
+      "text": "events relevant to the event or subject"
+    },
+    {
+      "start": 1089.28,
+      "duration": 5.68,
+      "text": "timelines are your"
+    },
+    {
+      "start": 1091.76,
+      "duration": 8.0,
+      "text": "friend and taking the time to do a"
+    },
+    {
+      "start": 1094.96,
+      "duration": 7.959,
+      "text": "timeline will often identify areas that"
+    },
+    {
+      "start": 1099.76,
+      "duration": 7.919,
+      "text": "you need to look at I have run into some"
+    },
+    {
+      "start": 1102.919,
+      "duration": 7.041,
+      "text": "genealogist over 34 plus years that they"
+    },
+    {
+      "start": 1107.679,
+      "duration": 6.041,
+      "text": "thought they had all of their stuff"
+    },
+    {
+      "start": 1109.96,
+      "duration": 6.44,
+      "text": "ready to go until they heard me or"
+    },
+    {
+      "start": 1113.72,
+      "duration": 5.72,
+      "text": "someone else suggest why don't you check"
+    },
+    {
+      "start": 1116.4,
+      "duration": 5.8,
+      "text": "it with the timeline when they did that"
+    },
+    {
+      "start": 1119.44,
+      "duration": 6.32,
+      "text": "they found out that they had some very"
+    },
+    {
+      "start": 1122.2,
+      "duration": 8.56,
+      "text": "serious flaws in what what they had"
+    },
+    {
+      "start": 1125.76,
+      "duration": 8.24,
+      "text": "there number three maps and plats number"
+    },
+    {
+      "start": 1130.76,
+      "duration": 5.48,
+      "text": "four tables and"
+    },
+    {
+      "start": 1134.0,
+      "duration": 4.96,
+      "text": "spreadsheets now this section I'm going"
+    },
+    {
+      "start": 1136.24,
+      "duration": 6.0,
+      "text": "to talk about evidence analysis question"
+    },
+    {
+      "start": 1138.96,
+      "duration": 6.199,
+      "text": "questions and the screenshot there one"
+    },
+    {
+      "start": 1142.24,
+      "duration": 5.84,
+      "text": "of our former volunteers for many years"
+    },
+    {
+      "start": 1145.159,
+      "duration": 4.88,
+      "text": "Jenna hamister she's with the West I"
+    },
+    {
+      "start": 1148.08,
+      "duration": 4.44,
+      "text": "don't know if she's still alive or not"
+    },
+    {
+      "start": 1150.039,
+      "duration": 5.601,
+      "text": "but she was a wonderful lady but every"
+    },
+    {
+      "start": 1152.52,
+      "duration": 6.8,
+      "text": "time she did a class on the front of the"
+    },
+    {
+      "start": 1155.64,
+      "duration": 6.84,
+      "text": "uh Podium she would have genealogy"
+    },
+    {
+      "start": 1159.32,
+      "duration": 5.68,
+      "text": "without documentation is mythology well"
+    },
+    {
+      "start": 1162.48,
+      "duration": 5.16,
+      "text": "on this one they say the definition of"
+    },
+    {
+      "start": 1165.0,
+      "duration": 4.96,
+      "text": "mythology genealogy without"
+    },
+    {
+      "start": 1167.64,
+      "duration": 5.32,
+      "text": "documentation"
+    },
+    {
+      "start": 1169.96,
+      "duration": 6.719,
+      "text": "first one do the facts refer to the"
+    },
+    {
+      "start": 1172.96,
+      "duration": 5.76,
+      "text": "correct individual or family of Interest"
+    },
+    {
+      "start": 1176.679,
+      "duration": 5.441,
+      "text": "some things you have to be aware of with"
+    },
+    {
+      "start": 1178.72,
+      "duration": 6.079,
+      "text": "this there are no hard and fast rules"
+    },
+    {
+      "start": 1182.12,
+      "duration": 5.439,
+      "text": "for determining"
+    },
+    {
+      "start": 1184.799,
+      "duration": 5.801,
+      "text": "accuracy finding multiple people with"
+    },
+    {
+      "start": 1187.559,
+      "duration": 6.761,
+      "text": "the same name and from the same locality"
+    },
+    {
+      "start": 1190.6,
+      "duration": 6.68,
+      "text": "is common names were reused if children"
+    },
+    {
+      "start": 1194.32,
+      "duration": 5.28,
+      "text": "died at childbirth they often the names"
+    },
+    {
+      "start": 1197.28,
+      "duration": 6.8,
+      "text": "were reused later on"
+    },
+    {
+      "start": 1199.6,
+      "duration": 6.84,
+      "text": "on use known facts and information to"
+    },
+    {
+      "start": 1204.08,
+      "duration": 4.88,
+      "text": "more or less separate contenders with"
+    },
+    {
+      "start": 1206.44,
+      "duration": 5.76,
+      "text": "the same name some of the most common"
+    },
+    {
+      "start": 1208.96,
+      "duration": 8.16,
+      "text": "that often help would be the place of"
+    },
+    {
+      "start": 1212.2,
+      "duration": 8.64,
+      "text": "birth the Ed level of Education their"
+    },
+    {
+      "start": 1217.12,
+      "duration": 6.24,
+      "text": "occupation their level of income the"
+    },
+    {
+      "start": 1220.84,
+      "duration": 5.4,
+      "text": "race religious"
+    },
+    {
+      "start": 1223.36,
+      "duration": 5.64,
+      "text": "affiliation and did they have any land"
+    },
+    {
+      "start": 1226.24,
+      "duration": 5.76,
+      "text": "or Property Holdings"
+    },
+    {
+      "start": 1229.0,
+      "duration": 5.96,
+      "text": "another one as I said earlier this may"
+    },
+    {
+      "start": 1232.0,
+      "duration": 6.559,
+      "text": "sound like a broken record but timelines"
+    },
+    {
+      "start": 1234.96,
+      "duration": 6.959,
+      "text": "listing the major events in the lifetime"
+    },
+    {
+      "start": 1238.559,
+      "duration": 6.12,
+      "text": "of an individual or family often"
+    },
+    {
+      "start": 1241.919,
+      "duration": 5.441,
+      "text": "uncovers"
+    },
+    {
+      "start": 1244.679,
+      "duration": 6.281,
+      "text": "inconsistencies back in the 1840s there"
+    },
+    {
+      "start": 1247.36,
+      "duration": 6.24,
+      "text": "was no way or early 1850s there was no"
+    },
+    {
+      "start": 1250.96,
+      "duration": 4.12,
+      "text": "way you were going to get from New York"
+    },
+    {
+      "start": 1253.6,
+      "duration": 5.559,
+      "text": "to let's"
+    },
+    {
+      "start": 1255.08,
+      "duration": 7.56,
+      "text": "say California in three days I don't"
+    },
+    {
+      "start": 1259.159,
+      "duration": 6.921,
+      "text": "care unless they were in a spaceship"
+    },
+    {
+      "start": 1262.64,
+      "duration": 7.039,
+      "text": "whatever another one educated guesses"
+    },
+    {
+      "start": 1266.08,
+      "duration": 7.4,
+      "text": "are a legitimate option in genealogical"
+    },
+    {
+      "start": 1269.679,
+      "duration": 7.921,
+      "text": "and historical research with one caveat"
+    },
+    {
+      "start": 1273.48,
+      "duration": 7.92,
+      "text": "over time new facts may be uncovered"
+    },
+    {
+      "start": 1277.6,
+      "duration": 7.0,
+      "text": "that might provide more"
+    },
+    {
+      "start": 1281.4,
+      "duration": 6.12,
+      "text": "information the second question do the"
+    },
+    {
+      "start": 1284.6,
+      "duration": 5.28,
+      "text": "facts accurately reflect the"
+    },
+    {
+      "start": 1287.52,
+      "duration": 5.519,
+      "text": "circumstances or"
+    },
+    {
+      "start": 1289.88,
+      "duration": 6.32,
+      "text": "issues this is challenging because"
+    },
+    {
+      "start": 1293.039,
+      "duration": 5.081,
+      "text": "secondhand accounts are more often the"
+    },
+    {
+      "start": 1296.2,
+      "duration": 5.44,
+      "text": "norm that you're going to have to deal"
+    },
+    {
+      "start": 1298.12,
+      "duration": 6.76,
+      "text": "with a simple or straightforward yes or"
+    },
+    {
+      "start": 1301.64,
+      "duration": 5.72,
+      "text": "no answers to a particular question or"
+    },
+    {
+      "start": 1304.88,
+      "duration": 6.08,
+      "text": "situation seldom"
+    },
+    {
+      "start": 1307.36,
+      "duration": 6.64,
+      "text": "exist the accuracy is always going to be"
+    },
+    {
+      "start": 1310.96,
+      "duration": 5.12,
+      "text": "dependent on the informance knowledge"
+    },
+    {
+      "start": 1314.0,
+      "duration": 5.799,
+      "text": "and their"
+    },
+    {
+      "start": 1316.08,
+      "duration": 7.36,
+      "text": "motivations number four has a scenario"
+    },
+    {
+      "start": 1319.799,
+      "duration": 7.201,
+      "text": "or information changed over"
+    },
+    {
+      "start": 1323.44,
+      "duration": 7.28,
+      "text": "time I'll give you a I'll give you a"
+    },
+    {
+      "start": 1327.0,
+      "duration": 7.279,
+      "text": "simple thing that pertains to me over"
+    },
+    {
+      "start": 1330.72,
+      "duration": 8.079,
+      "text": "the years I was born December the 14th"
+    },
+    {
+      "start": 1334.279,
+      "duration": 6.561,
+      "text": "1953 at 12:07 a.m. but over the years my"
+    },
+    {
+      "start": 1338.799,
+      "duration": 4.76,
+      "text": "mother's description of the night I was"
+    },
+    {
+      "start": 1340.84,
+      "duration": 5.079,
+      "text": "born has changed at one point she said I"
+    },
+    {
+      "start": 1343.559,
+      "duration": 4.961,
+      "text": "was born in a white out they couldn't"
+    },
+    {
+      "start": 1345.919,
+      "duration": 5.12,
+      "text": "get me out of the house they lived in so"
+    },
+    {
+      "start": 1348.52,
+      "duration": 5.6,
+      "text": "so I was born there another time she"
+    },
+    {
+      "start": 1351.039,
+      "duration": 6.681,
+      "text": "told me I was born in a taxi"
+    },
+    {
+      "start": 1354.12,
+      "duration": 6.039,
+      "text": "cab finally I did find a little card"
+    },
+    {
+      "start": 1357.72,
+      "duration": 5.079,
+      "text": "from passent Memorial Hospital that's on"
+    },
+    {
+      "start": 1360.159,
+      "duration": 5.361,
+      "text": "the cor Campus of Northwestern"
+    },
+    {
+      "start": 1362.799,
+      "duration": 5.321,
+      "text": "University that basically said I was"
+    },
+    {
+      "start": 1365.52,
+      "duration": 4.639,
+      "text": "born in the hospital like I said"
+    },
+    {
+      "start": 1368.12,
+      "duration": 4.799,
+      "text": "December the 14th"
+    },
+    {
+      "start": 1370.159,
+      "duration": 6.161,
+      "text": "1953 at 12:07"
+    },
+    {
+      "start": 1372.919,
+      "duration": 7.041,
+      "text": "a.m. over the years that's an example of"
+    },
+    {
+      "start": 1376.32,
+      "duration": 6.32,
+      "text": "all the versions of what I heard"
+    },
+    {
+      "start": 1379.96,
+      "duration": 5.88,
+      "text": "next one have you taken the time to read"
+    },
+    {
+      "start": 1382.64,
+      "duration": 7.68,
+      "text": "a history or newspaper account of the"
+    },
+    {
+      "start": 1385.84,
+      "duration": 7.12,
+      "text": "area during the time period in"
+    },
+    {
+      "start": 1390.32,
+      "duration": 5.839,
+      "text": "question that's something you should"
+    },
+    {
+      "start": 1392.96,
+      "duration": 6.16,
+      "text": "take the time to do even if it delays"
+    },
+    {
+      "start": 1396.159,
+      "duration": 5.561,
+      "text": "your research a little bit getting back"
+    },
+    {
+      "start": 1399.12,
+      "duration": 5.48,
+      "text": "to the other one previously there was"
+    },
+    {
+      "start": 1401.72,
+      "duration": 5.92,
+      "text": "one other scenario supposedly that night"
+    },
+    {
+      "start": 1404.6,
+      "duration": 5.559,
+      "text": "there was a blizzard in Chicago well I"
+    },
+    {
+      "start": 1407.64,
+      "duration": 4.8,
+      "text": "checked the weather report for December"
+    },
+    {
+      "start": 1410.159,
+      "duration": 4.0,
+      "text": "the 14th and it was cold that night but"
+    },
+    {
+      "start": 1412.44,
+      "duration": 4.239,
+      "text": "there was no"
+    },
+    {
+      "start": 1414.159,
+      "duration": 7.241,
+      "text": "blizzard okay next"
+    },
+    {
+      "start": 1416.679,
+      "duration": 7.441,
+      "text": "one be careful about judgments based on"
+    },
+    {
+      "start": 1421.4,
+      "duration": 6.12,
+      "text": "Modern standards and"
+    },
+    {
+      "start": 1424.12,
+      "duration": 6.28,
+      "text": "circumstances the historical context is"
+    },
+    {
+      "start": 1427.52,
+      "duration": 4.039,
+      "text": "going to be something you need to be"
+    },
+    {
+      "start": 1430.4,
+      "duration": 4.399,
+      "text": "careful"
+    },
+    {
+      "start": 1431.559,
+      "duration": 5.6,
+      "text": "about you have you can't judge the past"
+    },
+    {
+      "start": 1434.799,
+      "duration": 5.841,
+      "text": "by today's standards if you're going to"
+    },
+    {
+      "start": 1437.159,
+      "duration": 6.76,
+      "text": "be doing research you have to know what"
+    },
+    {
+      "start": 1440.64,
+      "duration": 5.76,
+      "text": "the historical context was at that time"
+    },
+    {
+      "start": 1443.919,
+      "duration": 6.081,
+      "text": "period because that's the way it"
+    },
+    {
+      "start": 1446.4,
+      "duration": 6.639,
+      "text": "was the next one do the facts accurately"
+    },
+    {
+      "start": 1450.0,
+      "duration": 6.72,
+      "text": "apply to the historical circumstances"
+    },
+    {
+      "start": 1453.039,
+      "duration": 4.88,
+      "text": "AKA historical context that existed"
+    },
+    {
+      "start": 1456.72,
+      "duration": 4.24,
+      "text": "During the"
+    },
+    {
+      "start": 1457.919,
+      "duration": 5.921,
+      "text": "period now when you're trying to"
+    },
+    {
+      "start": 1460.96,
+      "duration": 5.12,
+      "text": "determine the answer to this question"
+    },
+    {
+      "start": 1463.84,
+      "duration": 5.24,
+      "text": "some of the best sources for you to look"
+    },
+    {
+      "start": 1466.08,
+      "duration": 4.599,
+      "text": "at are ethnic histories"
+    },
+    {
+      "start": 1469.08,
+      "duration": 3.319,
+      "text": "County and town"
+    },
+    {
+      "start": 1470.679,
+      "duration": 3.521,
+      "text": "histories"
+    },
+    {
+      "start": 1472.399,
+      "duration": 3.921,
+      "text": "timelines"
+    },
+    {
+      "start": 1474.2,
+      "duration": 5.64,
+      "text": "newspapers family"
+    },
+    {
+      "start": 1476.32,
+      "duration": 6.16,
+      "text": "Bibles family correspondence Diaries"
+    },
+    {
+      "start": 1479.84,
+      "duration": 6.04,
+      "text": "journals and photograph"
+    },
+    {
+      "start": 1482.48,
+      "duration": 6.76,
+      "text": "albums military and regimental"
+    },
+    {
+      "start": 1485.88,
+      "duration": 6.84,
+      "text": "histories historical maps and"
+    },
+    {
+      "start": 1489.24,
+      "duration": 7.52,
+      "text": "gazers and family interviews which"
+    },
+    {
+      "start": 1492.72,
+      "duration": 6.16,
+      "text": "sometimes would also be known as oral"
+    },
+    {
+      "start": 1496.76,
+      "duration": 5.12,
+      "text": "histories finally"
+    },
+    {
+      "start": 1498.88,
+      "duration": 6.36,
+      "text": "was the informance knowledge"
+    },
+    {
+      "start": 1501.88,
+      "duration": 6.399,
+      "text": "reliable some things to consider the"
+    },
+    {
+      "start": 1505.24,
+      "duration": 6.48,
+      "text": "reputation of the informant and what"
+    },
+    {
+      "start": 1508.279,
+      "duration": 7.88,
+      "text": "their relationship was to the person do"
+    },
+    {
+      "start": 1511.72,
+      "duration": 6.679,
+      "text": "they have a history of being truthful or"
+    },
+    {
+      "start": 1516.159,
+      "duration": 4.88,
+      "text": "they have they been known to play fast"
+    },
+    {
+      "start": 1518.399,
+      "duration": 6.081,
+      "text": "and loose with the truth on"
+    },
+    {
+      "start": 1521.039,
+      "duration": 6.721,
+      "text": "occasions this is applicable to any type"
+    },
+    {
+      "start": 1524.48,
+      "duration": 5.079,
+      "text": "of information some of the criteria that"
+    },
+    {
+      "start": 1527.76,
+      "duration": 4.6,
+      "text": "would be used used for"
+    },
+    {
+      "start": 1529.559,
+      "duration": 5.72,
+      "text": "evaluation was the informant in a"
+    },
+    {
+      "start": 1532.36,
+      "duration": 6.039,
+      "text": "position to have reliable"
+    },
+    {
+      "start": 1535.279,
+      "duration": 5.441,
+      "text": "information would they benefit by giving"
+    },
+    {
+      "start": 1538.399,
+      "duration": 5.601,
+      "text": "false or misleading"
+    },
+    {
+      "start": 1540.72,
+      "duration": 6.48,
+      "text": "information and as I said earlier has"
+    },
+    {
+      "start": 1544.0,
+      "duration": 5.48,
+      "text": "the informant provided reliable"
+    },
+    {
+      "start": 1547.2,
+      "duration": 4.959,
+      "text": "information in the"
+    },
+    {
+      "start": 1549.48,
+      "duration": 5.799,
+      "text": "past now these are three books that we"
+    },
+    {
+      "start": 1552.159,
+      "duration": 5.76,
+      "text": "have in the Fort Meyers genealogy"
+    },
+    {
+      "start": 1555.279,
+      "duration": 3.721,
+      "text": "collection and I'm going to assume they"
+    },
+    {
+      "start": 1557.919,
+      "duration": 4.321,
+      "text": "have"
+    },
+    {
+      "start": 1559.0,
+      "duration": 6.159,
+      "text": "in Allen County library and most major"
+    },
+    {
+      "start": 1562.24,
+      "duration": 7.159,
+      "text": "libraries would have them the first"
+    },
+    {
+      "start": 1565.159,
+      "duration": 7.601,
+      "text": "two are by Elizabeth Shon Mills evidence"
+    },
+    {
+      "start": 1569.399,
+      "duration": 7.801,
+      "text": "explained this one is considered the"
+    },
+    {
+      "start": 1572.76,
+      "duration": 7.519,
+      "text": "Bible for showing you not only how to"
+    },
+    {
+      "start": 1577.2,
+      "duration": 6.8,
+      "text": "determine the accuracy of evidence but"
+    },
+    {
+      "start": 1580.279,
+      "duration": 6.961,
+      "text": "it also shows you how things are"
+    },
+    {
+      "start": 1584.0,
+      "duration": 5.88,
+      "text": "cited the earlier book she did US"
+    },
+    {
+      "start": 1587.24,
+      "duration": 5.48,
+      "text": "evidence citation and Analysis for the"
+    },
+    {
+      "start": 1589.88,
+      "duration": 5.72,
+      "text": "family historian this was sort of an"
+    },
+    {
+      "start": 1592.72,
+      "duration": 6.4,
+      "text": "earlier version of the later version"
+    },
+    {
+      "start": 1595.6,
+      "duration": 7.16,
+      "text": "that we have that's on my left and the"
+    },
+    {
+      "start": 1599.12,
+      "duration": 7.08,
+      "text": "book I told you earlier that Corey Meer"
+    },
+    {
+      "start": 1602.76,
+      "duration": 6.56,
+      "text": "rink did on printed sources this is a"
+    },
+    {
+      "start": 1606.2,
+      "duration": 6.4,
+      "text": "book that as I said earlier will"
+    },
+    {
+      "start": 1609.32,
+      "duration": 6.359,
+      "text": "essentially give you what I would call"
+    },
+    {
+      "start": 1612.6,
+      "duration": 5.679,
+      "text": "the genealogy of a record so you can"
+    },
+    {
+      "start": 1615.679,
+      "duration": 5.081,
+      "text": "determine is this record really"
+    },
+    {
+      "start": 1618.279,
+      "duration": 5.481,
+      "text": "something that I should be looking at"
+    },
+    {
+      "start": 1620.76,
+      "duration": 5.799,
+      "text": "and it does it have the information and"
+    },
+    {
+      "start": 1623.76,
+      "duration": 5.919,
+      "text": "was it created for the circumstances"
+    },
+    {
+      "start": 1626.559,
+      "duration": 6.201,
+      "text": "that I'm researching all three of them"
+    },
+    {
+      "start": 1629.679,
+      "duration": 6.641,
+      "text": "are excellent books even though the Meer"
+    },
+    {
+      "start": 1632.76,
+      "duration": 7.639,
+      "text": "in book was done I believe in 1997 or"
+    },
+    {
+      "start": 1636.32,
+      "duration": 6.64,
+      "text": "1998 it is still considered very"
+    },
+    {
+      "start": 1640.399,
+      "duration": 5.041,
+      "text": "relevant by most"
+    },
+    {
+      "start": 1642.96,
+      "duration": 3.76,
+      "text": "professionals now these sources that are"
+    },
+    {
+      "start": 1645.44,
+      "duration": 4.44,
+      "text": "listed"
+    },
+    {
+      "start": 1646.72,
+      "duration": 7.72,
+      "text": "below these are are considered some of"
+    },
+    {
+      "start": 1649.88,
+      "duration": 7.32,
+      "text": "the most relevant sources to search for"
+    },
+    {
+      "start": 1654.44,
+      "duration": 6.239,
+      "text": "if you're going to be looking to locate"
+    },
+    {
+      "start": 1657.2,
+      "duration": 7.24,
+      "text": "what I would call potential inaccuracies"
+    },
+    {
+      "start": 1660.679,
+      "duration": 5.961,
+      "text": "or verifying the accuracy of Records"
+    },
+    {
+      "start": 1664.44,
+      "duration": 5.2,
+      "text": "they all pretty much speak for"
+    },
+    {
+      "start": 1666.64,
+      "duration": 5.84,
+      "text": "themselves the religious affiliation can"
+    },
+    {
+      "start": 1669.64,
+      "duration": 5.039,
+      "text": "be very interesting simply because when"
+    },
+    {
+      "start": 1672.48,
+      "duration": 4.6,
+      "text": "a lot of people came"
+    },
+    {
+      "start": 1674.679,
+      "duration": 4.6,
+      "text": "over no matter what religious"
+    },
+    {
+      "start": 1677.08,
+      "duration": 5.64,
+      "text": "affiliation they were if they mooved to"
+    },
+    {
+      "start": 1679.279,
+      "duration": 5.961,
+      "text": "a certain area they often would adopt"
+    },
+    {
+      "start": 1682.72,
+      "duration": 4.4,
+      "text": "the religion that was most predominant"
+    },
+    {
+      "start": 1685.24,
+      "duration": 5.12,
+      "text": "in that particular"
+    },
+    {
+      "start": 1687.12,
+      "duration": 5.559,
+      "text": "area but all of these are things that"
+    },
+    {
+      "start": 1690.36,
+      "duration": 4.72,
+      "text": "you need to keep in mind when you're"
+    },
+    {
+      "start": 1692.679,
+      "duration": 5.681,
+      "text": "analyzing this type of"
+    },
+    {
+      "start": 1695.08,
+      "duration": 7.16,
+      "text": "information now these are some what I"
+    },
+    {
+      "start": 1698.36,
+      "duration": 6.919,
+      "text": "would call final evidence reminders I"
+    },
+    {
+      "start": 1702.24,
+      "duration": 5.52,
+      "text": "got them off of Legacy Family Tree"
+    },
+    {
+      "start": 1705.279,
+      "duration": 4.801,
+      "text": "genealogists and all of these would be"
+    },
+    {
+      "start": 1707.76,
+      "duration": 5.759,
+      "text": "relevant"
+    },
+    {
+      "start": 1710.08,
+      "duration": 6.36,
+      "text": "actually let me go back a slide I got"
+    },
+    {
+      "start": 1713.519,
+      "duration": 6.441,
+      "text": "ahead of myself on these particular"
+    },
+    {
+      "start": 1716.44,
+      "duration": 7.76,
+      "text": "sources when you're talking about age"
+    },
+    {
+      "start": 1719.96,
+      "duration": 7.52,
+      "text": "okay Census records Cemetery records"
+    },
+    {
+      "start": 1724.2,
+      "duration": 6.44,
+      "text": "family Bibles military records"
+    },
+    {
+      "start": 1727.48,
+      "duration": 5.76,
+      "text": "obituaries pension applications tax"
+    },
+    {
+      "start": 1730.64,
+      "duration": 4.919,
+      "text": "records and Vital Records would give you"
+    },
+    {
+      "start": 1733.24,
+      "duration": 5.6,
+      "text": "that type of information if you're"
+    },
+    {
+      "start": 1735.559,
+      "duration": 6.521,
+      "text": "talking about birth dates and places"
+    },
+    {
+      "start": 1738.84,
+      "duration": 6.36,
+      "text": "Cemetery records again census Rec census"
+    },
+    {
+      "start": 1742.08,
+      "duration": 5.64,
+      "text": "and church records family Bibles"
+    },
+    {
+      "start": 1745.2,
+      "duration": 4.76,
+      "text": "military records"
+    },
+    {
+      "start": 1747.72,
+      "duration": 5.199,
+      "text": "newspapers birth announcements"
+    },
+    {
+      "start": 1749.96,
+      "duration": 6.199,
+      "text": "obituaries and Vital Records when you're"
+    },
+    {
+      "start": 1752.919,
+      "duration": 6.6,
+      "text": "talking about the city or Parish"
+    },
+    {
+      "start": 1756.159,
+      "duration": 7.36,
+      "text": "including if they're foreign born Census"
+    },
+    {
+      "start": 1759.519,
+      "duration": 7.121,
+      "text": "records Church records and family Bibles"
+    },
+    {
+      "start": 1763.519,
+      "duration": 4.64,
+      "text": "family histories immigration records"
+    },
+    {
+      "start": 1766.64,
+      "duration": 4.919,
+      "text": "naturalization"
+    },
+    {
+      "start": 1768.159,
+      "duration": 6.201,
+      "text": "and citizenship papers obituaries and"
+    },
+    {
+      "start": 1771.559,
+      "duration": 5.321,
+      "text": "Vital Records if you're talking about"
+    },
+    {
+      "start": 1774.36,
+      "duration": 6.36,
+      "text": "country Origins boundaries and place"
+    },
+    {
+      "start": 1776.88,
+      "duration": 7.6,
+      "text": "finding AIDS You' be looking at atlases"
+    },
+    {
+      "start": 1780.72,
+      "duration": 7.28,
+      "text": "City directories crisscross directories"
+    },
+    {
+      "start": 1784.48,
+      "duration": 7.6,
+      "text": "County or family histories and gazers"
+    },
+    {
+      "start": 1788.0,
+      "duration": 5.399,
+      "text": "land and property records taxation maps"
+    },
+    {
+      "start": 1792.08,
+      "duration": 3.52,
+      "text": "and"
+    },
+    {
+      "start": 1793.399,
+      "duration": 5.561,
+      "text": "Records obviously if you're talking"
+    },
+    {
+      "start": 1795.6,
+      "duration": 6.559,
+      "text": "about death records it's Cemetery Aries"
+    },
+    {
+      "start": 1798.96,
+      "duration": 6.319,
+      "text": "Church records court records family"
+    },
+    {
+      "start": 1802.159,
+      "duration": 7.201,
+      "text": "Bibles land and property records"
+    },
+    {
+      "start": 1805.279,
+      "duration": 7.28,
+      "text": "military records newspapers obituaries"
+    },
+    {
+      "start": 1809.36,
+      "duration": 5.36,
+      "text": "probate records and Vital Records if"
+    },
+    {
+      "start": 1812.559,
+      "duration": 5.681,
+      "text": "you're talking about"
+    },
+    {
+      "start": 1814.72,
+      "duration": 6.439,
+      "text": "divorces court records divorce records"
+    },
+    {
+      "start": 1818.24,
+      "duration": 4.439,
+      "text": "newspapers and Vital Records if you're"
+    },
+    {
+      "start": 1821.159,
+      "duration": 4.801,
+      "text": "talking about"
+    },
+    {
+      "start": 1822.679,
+      "duration": 5.921,
+      "text": "ethnicity Census records Church records"
+    },
+    {
+      "start": 1825.96,
+      "duration": 5.36,
+      "text": "family Bibles immigration"
+    },
+    {
+      "start": 1828.6,
+      "duration": 5.799,
+      "text": "records membership in minority"
+    },
+    {
+      "start": 1831.32,
+      "duration": 6.599,
+      "text": "associations or societies and"
+    },
+    {
+      "start": 1834.399,
+      "duration": 5.681,
+      "text": "Naturalization and citizenship papers if"
+    },
+    {
+      "start": 1837.919,
+      "duration": 3.521,
+      "text": "you're looking for the immigration or"
+    },
+    {
+      "start": 1840.08,
+      "duration": 3.719,
+      "text": "immigration"
+    },
+    {
+      "start": 1841.44,
+      "duration": 5.56,
+      "text": "date again a lot of these are going to"
+    },
+    {
+      "start": 1843.799,
+      "duration": 6.641,
+      "text": "be very similar census church history or"
+    },
+    {
+      "start": 1847.0,
+      "duration": 6.96,
+      "text": "records family Bibles published family"
+    },
+    {
+      "start": 1850.44,
+      "duration": 6.92,
+      "text": "history books or family history articles"
+    },
+    {
+      "start": 1853.96,
+      "duration": 6.64,
+      "text": "and periodicals an immigration record"
+    },
+    {
+      "start": 1857.36,
+      "duration": 6.159,
+      "text": "naturalist ation in citizenship papers"
+    },
+    {
+      "start": 1860.6,
+      "duration": 6.559,
+      "text": "newspapers and"
+    },
+    {
+      "start": 1863.519,
+      "duration": 7.241,
+      "text": "obituaries for marriage and maiden names"
+    },
+    {
+      "start": 1867.159,
+      "duration": 6.48,
+      "text": "biographies censuses cemeteries Church"
+    },
+    {
+      "start": 1870.76,
+      "duration": 5.919,
+      "text": "records and family Bibles family"
+    },
+    {
+      "start": 1873.639,
+      "duration": 7.16,
+      "text": "histories land and property records the"
+    },
+    {
+      "start": 1876.679,
+      "duration": 5.24,
+      "text": "military newspapers nobility listings"
+    },
+    {
+      "start": 1880.799,
+      "duration": 3.921,
+      "text": "personal"
+    },
+    {
+      "start": 1881.919,
+      "duration": 6.0,
+      "text": "correspondents probate records school"
+    },
+    {
+      "start": 1884.72,
+      "duration": 5.52,
+      "text": "records and vital records for OCC"
+    },
+    {
+      "start": 1887.919,
+      "duration": 4.48,
+      "text": "occupations you'd be talking about"
+    },
+    {
+      "start": 1890.24,
+      "duration": 3.52,
+      "text": "business directories that list company"
+    },
+    {
+      "start": 1892.399,
+      "duration": 4.64,
+      "text": "officials and"
+    },
+    {
+      "start": 1893.76,
+      "duration": 5.279,
+      "text": "employees the censuses city directories"
+    },
+    {
+      "start": 1897.039,
+      "duration": 4.721,
+      "text": "a crisscross civil"
+    },
+    {
+      "start": 1899.039,
+      "duration": 5.801,
+      "text": "registration court records immigration"
+    },
+    {
+      "start": 1901.76,
+      "duration": 4.6,
+      "text": "military newspapers obituaries and"
+    },
+    {
+      "start": 1904.84,
+      "duration": 4.439,
+      "text": "probate"
+    },
+    {
+      "start": 1906.36,
+      "duration": 4.799,
+      "text": "records for parents children and other"
+    },
+    {
+      "start": 1909.279,
+      "duration": 4.4,
+      "text": "family"
+    },
+    {
+      "start": 1911.159,
+      "duration": 4.601,
+      "text": "members most of these are exactly the"
+    },
+    {
+      "start": 1913.679,
+      "duration": 4.72,
+      "text": "same but you also have"
+    },
+    {
+      "start": 1915.76,
+      "duration": 5.879,
+      "text": "biographies land and property records"
+    },
+    {
+      "start": 1918.399,
+      "duration": 7.64,
+      "text": "the Naturalization and citizenship"
+    },
+    {
+      "start": 1921.639,
+      "duration": 8.121,
+      "text": "papers so goes on and"
+    },
+    {
+      "start": 1926.039,
+      "duration": 6.281,
+      "text": "on now this is off of family tree Legacy"
+    },
+    {
+      "start": 1929.76,
+      "duration": 4.48,
+      "text": "Family Tree genealogist and you see the"
+    },
+    {
+      "start": 1932.32,
+      "duration": 3.959,
+      "text": "website there where I got this"
+    },
+    {
+      "start": 1934.24,
+      "duration": 5.0,
+      "text": "screenshot but this is going to be"
+    },
+    {
+      "start": 1936.279,
+      "duration": 5.561,
+      "text": "talking about the researchers"
+    },
+    {
+      "start": 1939.24,
+      "duration": 5.72,
+      "text": "interpretation of pertinent information"
+    },
+    {
+      "start": 1941.84,
+      "duration": 5.719,
+      "text": "and sources and as I said earlier the"
+    },
+    {
+      "start": 1944.96,
+      "duration": 4.679,
+      "text": "third one there on negative this"
+    },
+    {
+      "start": 1947.559,
+      "duration": 6.041,
+      "text": "sometimes seems to cause a lot of"
+    },
+    {
+      "start": 1949.639,
+      "duration": 6.561,
+      "text": "confusion with people and again I'll say"
+    },
+    {
+      "start": 1953.6,
+      "duration": 6.039,
+      "text": "that the conclusion it's based on a"
+    },
+    {
+      "start": 1956.2,
+      "duration": 5.719,
+      "text": "relationship or fact that should be"
+    },
+    {
+      "start": 1959.639,
+      "duration": 5.121,
+      "text": "present but it isn't"
+    },
+    {
+      "start": 1961.919,
+      "duration": 6.12,
+      "text": "there and this is another one that talks"
+    },
+    {
+      "start": 1964.76,
+      "duration": 6.36,
+      "text": "about the differences between primary"
+    },
+    {
+      "start": 1968.039,
+      "duration": 6.321,
+      "text": "secondary and undetermined when it's"
+    },
+    {
+      "start": 1971.12,
+      "duration": 6.88,
+      "text": "undetermined there was inadequate data"
+    },
+    {
+      "start": 1974.36,
+      "duration": 4.439,
+      "text": "that was provided to actually identify"
+    },
+    {
+      "start": 1978.0,
+      "duration": 4.32,
+      "text": "the"
+    },
+    {
+      "start": 1978.799,
+      "duration": 6.201,
+      "text": "informant now even if this information"
+    },
+    {
+      "start": 1982.32,
+      "duration": 4.64,
+      "text": "right now initially would be considered"
+    },
+    {
+      "start": 1985.0,
+      "duration": 5.36,
+      "text": "undetermined or you're not sure what's"
+    },
+    {
+      "start": 1986.96,
+      "duration": 6.319,
+      "text": "going on never get rid of it because as"
+    },
+    {
+      "start": 1990.36,
+      "duration": 7.319,
+      "text": "you go through the research process you"
+    },
+    {
+      "start": 1993.279,
+      "duration": 6.64,
+      "text": "may find more information that will give"
+    },
+    {
+      "start": 1997.679,
+      "duration": 4.48,
+      "text": "you the answer to the question that"
+    },
+    {
+      "start": 1999.919,
+      "duration": 5.401,
+      "text": "you're looking"
+    },
+    {
+      "start": 2002.159,
+      "duration": 6.36,
+      "text": "for now some relevant websites for"
+    },
+    {
+      "start": 2005.32,
+      "duration": 7.359,
+      "text": "follow-up consultation"
+    },
+    {
+      "start": 2008.519,
+      "duration": 7.081,
+      "text": "ancestral findings this is one that has"
+    },
+    {
+      "start": 2012.679,
+      "duration": 5.72,
+      "text": "a very proven track Rec record in this"
+    },
+    {
+      "start": 2015.6,
+      "duration": 6.079,
+      "text": "particular case they actually had a"
+    },
+    {
+      "start": 2018.399,
+      "duration": 5.721,
+      "text": "brief presentation on there about using"
+    },
+    {
+      "start": 2021.679,
+      "duration": 5.441,
+      "text": "negative evidence to prove to prove"
+    },
+    {
+      "start": 2024.12,
+      "duration": 5.72,
+      "text": "family relationships it includes not"
+    },
+    {
+      "start": 2027.12,
+      "duration": 5.399,
+      "text": "only a YouTube article but it has the"
+    },
+    {
+      "start": 2029.84,
+      "duration": 2.679,
+      "text": "link to the"
+    },
+    {
+      "start": 2032.84,
+      "duration": 5.04,
+      "text": "presentation now I'm sure most of you"
+    },
+    {
+      "start": 2035.519,
+      "duration": 5.601,
+      "text": "have used Cindy's list that is"
+    },
+    {
+      "start": 2037.88,
+      "duration": 6.48,
+      "text": "considered one of the best sites to find"
+    },
+    {
+      "start": 2041.12,
+      "duration": 6.12,
+      "text": "the most reliable genealogical records"
+    },
+    {
+      "start": 2044.36,
+      "duration": 6.2,
+      "text": "on the internet and this particular one"
+    },
+    {
+      "start": 2047.24,
+      "duration": 6.52,
+      "text": "is one that discusses evidence analysis"
+    },
+    {
+      "start": 2050.56,
+      "duration": 6.319,
+      "text": "and evaluation and all of these links"
+    },
+    {
+      "start": 2053.76,
+      "duration": 5.68,
+      "text": "that you see on the right and the left"
+    },
+    {
+      "start": 2056.879,
+      "duration": 5.96,
+      "text": "these are all categories that you can go"
+    },
+    {
+      "start": 2059.44,
+      "duration": 6.399,
+      "text": "to for additional"
+    },
+    {
+      "start": 2062.839,
+      "duration": 5.52,
+      "text": "research she even has a section on here"
+    },
+    {
+      "start": 2065.839,
+      "duration": 5.441,
+      "text": "for evidence and Analysis these are"
+    },
+    {
+      "start": 2068.359,
+      "duration": 6.32,
+      "text": "actual articles now this is just the top"
+    },
+    {
+      "start": 2071.28,
+      "duration": 5.68,
+      "text": "of the page if you went further down you"
+    },
+    {
+      "start": 2074.679,
+      "duration": 4.641,
+      "text": "would find a lot more articles that"
+    },
+    {
+      "start": 2076.96,
+      "duration": 6.32,
+      "text": "would be of"
+    },
+    {
+      "start": 2079.32,
+      "duration": 5.799,
+      "text": "interest actually I did another"
+    },
+    {
+      "start": 2083.28,
+      "duration": 5.44,
+      "text": "screenshot have the board of"
+    },
+    {
+      "start": 2085.119,
+      "duration": 7.161,
+      "text": "certification of genealogists the DAR"
+    },
+    {
+      "start": 2088.72,
+      "duration": 6.32,
+      "text": "Library evidence analysis by Tristan"
+    },
+    {
+      "start": 2092.28,
+      "duration": 6.28,
+      "text": "Tolman evidence explained this is a"
+    },
+    {
+      "start": 2095.04,
+      "duration": 7.52,
+      "text": "quick lesson that Elizabeth shown Ms"
+    },
+    {
+      "start": 2098.56,
+      "duration": 5.44,
+      "text": "actually has available on Cindy's list"
+    },
+    {
+      "start": 2102.56,
+      "duration": 4.279,
+      "text": "and there are some"
+    },
+    {
+      "start": 2104.0,
+      "duration": 5.92,
+      "text": "more I tried to give you as much as I"
+    },
+    {
+      "start": 2106.839,
+      "duration": 5.041,
+      "text": "could so you get some idea how valuable"
+    },
+    {
+      "start": 2109.92,
+      "duration": 4.96,
+      "text": "Cindy's list can"
+    },
+    {
+      "start": 2111.88,
+      "duration": 4.28,
+      "text": "be now this is one off of the family"
+    },
+    {
+      "start": 2114.88,
+      "duration": 5.56,
+      "text": "search"
+    },
+    {
+      "start": 2116.16,
+      "duration": 6.24,
+      "text": "Blog the author of this was Tyler Staley"
+    },
+    {
+      "start": 2120.44,
+      "duration": 4.72,
+      "text": "I hope I didn't butcher that name too"
+    },
+    {
+      "start": 2122.4,
+      "duration": 5.4,
+      "text": "much but this is one where he discusses"
+    },
+    {
+      "start": 2125.16,
+      "duration": 6.48,
+      "text": "in detail"
+    },
+    {
+      "start": 2127.8,
+      "duration": 6.92,
+      "text": "standing the genealogical proof standard"
+    },
+    {
+      "start": 2131.64,
+      "duration": 6.16,
+      "text": "I gave you a basic gist of this but this"
+    },
+    {
+      "start": 2134.72,
+      "duration": 6.28,
+      "text": "one will go into a lot more"
+    },
+    {
+      "start": 2137.8,
+      "duration": 5.24,
+      "text": "detail this is family search Wiki the"
+    },
+    {
+      "start": 2141.0,
+      "duration": 5.119,
+      "text": "family search Wiki is one of the best"
+    },
+    {
+      "start": 2143.04,
+      "duration": 5.44,
+      "text": "places to go to and this is their"
+    },
+    {
+      "start": 2146.119,
+      "duration": 5.841,
+      "text": "article on the genealogical proof"
+    },
+    {
+      "start": 2148.48,
+      "duration": 7.28,
+      "text": "standard again it goes into a great deal"
+    },
+    {
+      "start": 2151.96,
+      "duration": 6.359,
+      "text": "of detail about this particular topic my"
+    },
+    {
+      "start": 2155.76,
+      "duration": 5.12,
+      "text": "study guide on evidence analysis"
+    },
+    {
+      "start": 2158.319,
+      "duration": 5.441,
+      "text": "is it's never going to be as good as"
+    },
+    {
+      "start": 2160.88,
+      "duration": 5.479,
+      "text": "what they have but uh it is it will give"
+    },
+    {
+      "start": 2163.76,
+      "duration": 6.359,
+      "text": "you a lot of information that you'll"
+    },
+    {
+      "start": 2166.359,
+      "duration": 5.561,
+      "text": "need to to help you as you progress"
+    },
+    {
+      "start": 2170.119,
+      "duration": 4.441,
+      "text": "through the research"
+    },
+    {
+      "start": 2171.92,
+      "duration": 4.6,
+      "text": "process and then this is another article"
+    },
+    {
+      "start": 2174.56,
+      "duration": 5.039,
+      "text": "on family search Wiki and this"
+    },
+    {
+      "start": 2176.52,
+      "duration": 4.64,
+      "text": "particular one the previous article"
+    },
+    {
+      "start": 2179.599,
+      "duration": 5.121,
+      "text": "talked about the"
+    },
+    {
+      "start": 2181.16,
+      "duration": 7.8,
+      "text": "genealogical group standard this article"
+    },
+    {
+      "start": 2184.72,
+      "duration": 7.52,
+      "text": "goes into detail about how to put it in"
+    },
+    {
+      "start": 2188.96,
+      "duration": 6.2,
+      "text": "action this is another website again"
+    },
+    {
+      "start": 2192.24,
+      "duration": 6.359,
+      "text": "Legacy Family Tree genealogists they"
+    },
+    {
+      "start": 2195.16,
+      "duration": 5.8,
+      "text": "definitely have a excellent record for"
+    },
+    {
+      "start": 2198.599,
+      "duration": 4.601,
+      "text": "putting people in success and they also"
+    },
+    {
+      "start": 2200.96,
+      "duration": 5.0,
+      "text": "will help you with your research but"
+    },
+    {
+      "start": 2203.2,
+      "duration": 6.2,
+      "text": "this is one talking about evidence"
+    },
+    {
+      "start": 2205.96,
+      "duration": 6.0,
+      "text": "analysis digging into the genealogical"
+    },
+    {
+      "start": 2209.4,
+      "duration": 5.12,
+      "text": "sources this will sort of tell you what"
+    },
+    {
+      "start": 2211.96,
+      "duration": 5.28,
+      "text": "you should be looking for when you're"
+    },
+    {
+      "start": 2214.52,
+      "duration": 5.28,
+      "text": "not only using these sources but perhaps"
+    },
+    {
+      "start": 2217.24,
+      "duration": 5.04,
+      "text": "even evaluating whether the sources are"
+    },
+    {
+      "start": 2219.8,
+      "duration": 5.44,
+      "text": "completely and totally"
+    },
+    {
+      "start": 2222.28,
+      "duration": 5.6,
+      "text": "accurate now as far as final thoughts"
+    },
+    {
+      "start": 2225.24,
+      "duration": 5.72,
+      "text": "for review I'll just simply these are"
+    },
+    {
+      "start": 2227.88,
+      "duration": 5.56,
+      "text": "some things that I think you should"
+    },
+    {
+      "start": 2230.96,
+      "duration": 6.48,
+      "text": "remember historical"
+    },
+    {
+      "start": 2233.44,
+      "duration": 7.72,
+      "text": "interpretations are going to change over"
+    },
+    {
+      "start": 2237.44,
+      "duration": 7.52,
+      "text": "time and at the risk again of sounding"
+    },
+    {
+      "start": 2241.16,
+      "duration": 7.28,
+      "text": "like a broken record historical context"
+    },
+    {
+      "start": 2244.96,
+      "duration": 6.639,
+      "text": "is the key to your success and that is"
+    },
+    {
+      "start": 2248.44,
+      "duration": 5.24,
+      "text": "what you have to go by there's nothing"
+    },
+    {
+      "start": 2251.599,
+      "duration": 4.121,
+      "text": "wrong with being politically"
+    },
+    {
+      "start": 2253.68,
+      "duration": 4.72,
+      "text": "correct I'll leave that up to"
+    },
+    {
+      "start": 2255.72,
+      "duration": 4.24,
+      "text": "individuals how they feel about that but"
+    },
+    {
+      "start": 2258.4,
+      "duration": 4.439,
+      "text": "when you're doing"
+    },
+    {
+      "start": 2259.96,
+      "duration": 6.56,
+      "text": "genealogy political correctness does not"
+    },
+    {
+      "start": 2262.839,
+      "duration": 7.48,
+      "text": "matter historical context is what you"
+    },
+    {
+      "start": 2266.52,
+      "duration": 7.559,
+      "text": "have to go by number two and this fits"
+    },
+    {
+      "start": 2270.319,
+      "duration": 7.601,
+      "text": "in with what I just said 21st century"
+    },
+    {
+      "start": 2274.079,
+      "duration": 5.24,
+      "text": "Norms unfortunately are irrelevant to"
+    },
+    {
+      "start": 2277.92,
+      "duration": 4.08,
+      "text": "historical"
+    },
+    {
+      "start": 2279.319,
+      "duration": 6.52,
+      "text": "circumstances what happened in the past"
+    },
+    {
+      "start": 2282.0,
+      "duration": 7.2,
+      "text": "happened some of it is good some of it"
+    },
+    {
+      "start": 2285.839,
+      "duration": 6.841,
+      "text": "is not so good most of the people I deal"
+    },
+    {
+      "start": 2289.2,
+      "duration": 5.32,
+      "text": "with they realize that and they and"
+    },
+    {
+      "start": 2292.68,
+      "duration": 4.72,
+      "text": "that's something they accept and they go"
+    },
+    {
+      "start": 2294.52,
+      "duration": 4.52,
+      "text": "on bottom line is even some of the"
+    },
+    {
+      "start": 2297.4,
+      "duration": 4.56,
+      "text": "things that happened that were not that"
+    },
+    {
+      "start": 2299.04,
+      "duration": 5.52,
+      "text": "were not very good most people I deal"
+    },
+    {
+      "start": 2301.96,
+      "duration": 6.359,
+      "text": "with regardless of what race they are or"
+    },
+    {
+      "start": 2304.56,
+      "duration": 6.559,
+      "text": "what ethnic group they are in they enjoy"
+    },
+    {
+      "start": 2308.319,
+      "duration": 6.401,
+      "text": "going through the process and they just"
+    },
+    {
+      "start": 2311.119,
+      "duration": 8.561,
+      "text": "take what happened as it is and they go"
+    },
+    {
+      "start": 2314.72,
+      "duration": 8.8,
+      "text": "on number three stretching the truth may"
+    },
+    {
+      "start": 2319.68,
+      "duration": 6.8,
+      "text": "happen as in Liberties taken in family"
+    },
+    {
+      "start": 2323.52,
+      "duration": 7.16,
+      "text": "stories and"
+    },
+    {
+      "start": 2326.48,
+      "duration": 6.96,
+      "text": "traditions number four be careful about"
+    },
+    {
+      "start": 2330.68,
+      "duration": 5.76,
+      "text": "perceptions regarding the family Black"
+    },
+    {
+      "start": 2333.44,
+      "duration": 6.04,
+      "text": "Sheep I actually have a study guide on"
+    },
+    {
+      "start": 2336.44,
+      "duration": 5.56,
+      "text": "Black Sheep and I've done multiple"
+    },
+    {
+      "start": 2339.48,
+      "duration": 5.119,
+      "text": "presentations about Black Sheep"
+    },
+    {
+      "start": 2342.0,
+      "duration": 6.04,
+      "text": "ancestors if any of you are interested"
+    },
+    {
+      "start": 2344.599,
+      "duration": 5.401,
+      "text": "in both of those you can let me know but"
+    },
+    {
+      "start": 2348.04,
+      "duration": 5.079,
+      "text": "one of the things you need to remember"
+    },
+    {
+      "start": 2350.0,
+      "duration": 6.2,
+      "text": "about the black sheep sometimes it's the"
+    },
+    {
+      "start": 2353.119,
+      "duration": 6.2,
+      "text": "black sheep that are telling the truth"
+    },
+    {
+      "start": 2356.2,
+      "duration": 6.28,
+      "text": "and the family has engaged in uh let's"
+    },
+    {
+      "start": 2359.319,
+      "duration": 7.601,
+      "text": "just say creative"
+    },
+    {
+      "start": 2362.48,
+      "duration": 6.56,
+      "text": "history number five ston wallers"
+    },
+    {
+      "start": 2366.92,
+      "duration": 4.399,
+      "text": "deliberate deceptions are going to"
+    },
+    {
+      "start": 2369.04,
+      "duration": 5.36,
+      "text": "happen and there are some people that"
+    },
+    {
+      "start": 2371.319,
+      "duration": 5.961,
+      "text": "are so determined to try to hide the"
+    },
+    {
+      "start": 2374.4,
+      "duration": 5.84,
+      "text": "past that they will go to Great Lengths"
+    },
+    {
+      "start": 2377.28,
+      "duration": 6.2,
+      "text": "to feed you with"
+    },
+    {
+      "start": 2380.24,
+      "duration": 4.92,
+      "text": "misinformation number six you might as"
+    },
+    {
+      "start": 2383.48,
+      "duration": 4.8,
+      "text": "well accept the fact that you are going"
+    },
+    {
+      "start": 2385.16,
+      "duration": 5.84,
+      "text": "to find contradictions in records you"
+    },
+    {
+      "start": 2388.28,
+      "duration": 6.039,
+      "text": "need to remember that historically when"
+    },
+    {
+      "start": 2391.0,
+      "duration": 6.64,
+      "text": "people were on the frontier going back"
+    },
+    {
+      "start": 2394.319,
+      "duration": 5.881,
+      "text": "in time the main thing that they were"
+    },
+    {
+      "start": 2397.64,
+      "duration": 5.24,
+      "text": "concerned with was"
+    },
+    {
+      "start": 2400.2,
+      "duration": 5.36,
+      "text": "survival they didn't always know the"
+    },
+    {
+      "start": 2402.88,
+      "duration": 5.52,
+      "text": "facts and sometimes the facts would"
+    },
+    {
+      "start": 2405.56,
+      "duration": 5.32,
+      "text": "change over time and to some degree"
+    },
+    {
+      "start": 2408.4,
+      "duration": 5.76,
+      "text": "again this may sound funny but it has"
+    },
+    {
+      "start": 2410.88,
+      "duration": 6.68,
+      "text": "been proven over and over again that if"
+    },
+    {
+      "start": 2414.16,
+      "duration": 5.08,
+      "text": "the information was provided by a male"
+    },
+    {
+      "start": 2417.56,
+      "duration": 6.12,
+      "text": "in the"
+    },
+    {
+      "start": 2419.24,
+      "duration": 7.72,
+      "text": "family I'll just say that sometimes the"
+    },
+    {
+      "start": 2423.68,
+      "duration": 6.639,
+      "text": "males were the worst people to ask about"
+    },
+    {
+      "start": 2426.96,
+      "duration": 6.08,
+      "text": "the facts about a family I remember one"
+    },
+    {
+      "start": 2430.319,
+      "duration": 5.441,
+      "text": "lady saying that the grandfather they"
+    },
+    {
+      "start": 2433.04,
+      "duration": 6.72,
+      "text": "had so many children he actually"
+    },
+    {
+      "start": 2435.76,
+      "duration": 6.48,
+      "text": "referred to the kids by numbers it was"
+    },
+    {
+      "start": 2439.76,
+      "duration": 4.599,
+      "text": "only when the wife gave the information"
+    },
+    {
+      "start": 2442.24,
+      "duration": 4.96,
+      "text": "that the names came out he couldn't even"
+    },
+    {
+      "start": 2444.359,
+      "duration": 6.201,
+      "text": "remember their names I'll leave it at"
+    },
+    {
+      "start": 2447.2,
+      "duration": 7.48,
+      "text": "that I'll stay out of that one number"
+    },
+    {
+      "start": 2450.56,
+      "duration": 7.44,
+      "text": "seven investigate any unexplained family"
+    },
+    {
+      "start": 2454.68,
+      "duration": 6.0,
+      "text": "heirlooms pictures and Diaries"
+    },
+    {
+      "start": 2458.0,
+      "duration": 5.8,
+      "text": "sometimes if you can do some research"
+    },
+    {
+      "start": 2460.68,
+      "duration": 5.6,
+      "text": "into that it may help you overcome some"
+    },
+    {
+      "start": 2463.8,
+      "duration": 5.96,
+      "text": "brick walls that you've"
+    },
+    {
+      "start": 2466.28,
+      "duration": 7.0,
+      "text": "discovered number eight again I gave you"
+    },
+    {
+      "start": 2469.76,
+      "duration": 7.839,
+      "text": "a couple examples of this from my own"
+    },
+    {
+      "start": 2473.28,
+      "duration": 7.44,
+      "text": "situation but stories accounts dates"
+    },
+    {
+      "start": 2477.599,
+      "duration": 7.921,
+      "text": "places or or narratives often change"
+    },
+    {
+      "start": 2480.72,
+      "duration": 6.84,
+      "text": "over time or become hazy over time I'm"
+    },
+    {
+      "start": 2485.52,
+      "duration": 5.079,
+      "text": "sure some of you have heard I believe"
+    },
+    {
+      "start": 2487.56,
+      "duration": 5.92,
+      "text": "the term is the rosec colored glass"
+    },
+    {
+      "start": 2490.599,
+      "duration": 5.841,
+      "text": "syndrome that when sometimes people talk"
+    },
+    {
+      "start": 2493.48,
+      "duration": 6.52,
+      "text": "about the past all they remember are the"
+    },
+    {
+      "start": 2496.44,
+      "duration": 6.32,
+      "text": "good things they don't always remember"
+    },
+    {
+      "start": 2500.0,
+      "duration": 6.64,
+      "text": "some of the not so good things have to"
+    },
+    {
+      "start": 2502.76,
+      "duration": 7.96,
+      "text": "keep that in mind number nine keep an"
+    },
+    {
+      "start": 2506.64,
+      "duration": 8.16,
+      "text": "open mind and again remember historical"
+    },
+    {
+      "start": 2510.72,
+      "duration": 8.52,
+      "text": "context and finally the case is never"
+    },
+    {
+      "start": 2514.8,
+      "duration": 4.44,
+      "text": "closed on any genealogic"
+    },
+    {
+      "start": 2519.359,
+      "duration": 5.041,
+      "text": "conclusion"
+    },
+    {
+      "start": 2521.48,
+      "duration": 6.0,
+      "text": "okay I'm ready if there are any"
+    },
+    {
+      "start": 2524.4,
+      "duration": 5.719,
+      "text": "questions out there I hope I covered"
+    },
+    {
+      "start": 2527.48,
+      "duration": 5.599,
+      "text": "everything thanks we do have a couple"
+    },
+    {
+      "start": 2530.119,
+      "duration": 7.441,
+      "text": "questions for you so we can get into"
+    },
+    {
+      "start": 2533.079,
+      "duration": 6.121,
+      "text": "those the first one is someone's asking"
+    },
+    {
+      "start": 2537.56,
+      "duration": 3.759,
+      "text": "what do you do when you find the wrong"
+    },
+    {
+      "start": 2539.2,
+      "duration": 4.76,
+      "text": "information on your ancestors on a"
+    },
+    {
+      "start": 2541.319,
+      "duration": 5.121,
+      "text": "family tree they say somebody has added"
+    },
+    {
+      "start": 2543.96,
+      "duration": 4.52,
+      "text": "a person to their tree that they know is"
+    },
+    {
+      "start": 2546.44,
+      "duration": 3.8,
+      "text": "not accurate so they're wondering what"
+    },
+    {
+      "start": 2548.48,
+      "duration": 6.68,
+      "text": "to do in that"
+    },
+    {
+      "start": 2550.24,
+      "duration": 8.2,
+      "text": "situation okay if you email me I have a"
+    },
+    {
+      "start": 2555.16,
+      "duration": 6.439,
+      "text": "study guide that talks about a genealogy"
+    },
+    {
+      "start": 2558.44,
+      "duration": 6.24,
+      "text": "software program if you use family"
+    },
+    {
+      "start": 2561.599,
+      "duration": 5.801,
+      "text": "search ancestry my Heritage all of these"
+    },
+    {
+      "start": 2564.68,
+      "duration": 5.879,
+      "text": "other sites that you know offer free"
+    },
+    {
+      "start": 2567.4,
+      "duration": 6.4,
+      "text": "that you can input information in it's"
+    },
+    {
+      "start": 2570.559,
+      "duration": 6.881,
+      "text": "fine in Dandy if you use them but the"
+    },
+    {
+      "start": 2573.8,
+      "duration": 7.0,
+      "text": "role that a lot of these sites have is"
+    },
+    {
+      "start": 2577.44,
+      "duration": 7.44,
+      "text": "their goal is to create a one world"
+    },
+    {
+      "start": 2580.8,
+      "duration": 7.72,
+      "text": "tree if you take the time to invest in a"
+    },
+    {
+      "start": 2584.88,
+      "duration": 7.6,
+      "text": "genology software program you will still"
+    },
+    {
+      "start": 2588.52,
+      "duration": 6.839,
+      "text": "be able to do searching on these"
+    },
+    {
+      "start": 2592.48,
+      "duration": 6.68,
+      "text": "databases the difference is when you do"
+    },
+    {
+      "start": 2595.359,
+      "duration": 6.96,
+      "text": "your findings you can put them into your"
+    },
+    {
+      "start": 2599.16,
+      "duration": 5.959,
+      "text": "genealogy software program what does"
+    },
+    {
+      "start": 2602.319,
+      "duration": 5.8,
+      "text": "that mean you will remain the boss of"
+    },
+    {
+      "start": 2605.119,
+      "duration": 4.48,
+      "text": "your information nobody body can go in"
+    },
+    {
+      "start": 2608.119,
+      "duration": 4.681,
+      "text": "and change your"
+    },
+    {
+      "start": 2609.599,
+      "duration": 5.72,
+      "text": "information you can share your pictures"
+    },
+    {
+      "start": 2612.8,
+      "duration": 4.64,
+      "text": "with whoever you want to share them with"
+    },
+    {
+      "start": 2615.319,
+      "duration": 4.081,
+      "text": "you can share your information with"
+    },
+    {
+      "start": 2617.44,
+      "duration": 5.399,
+      "text": "whoever you want to share it"
+    },
+    {
+      "start": 2619.4,
+      "duration": 6.64,
+      "text": "with and the bottom line is if I have to"
+    },
+    {
+      "start": 2622.839,
+      "duration": 4.28,
+      "text": "put it in a nutshell you are the boss of"
+    },
+    {
+      "start": 2626.04,
+      "duration": 3.44,
+      "text": "your"
+    },
+    {
+      "start": 2627.119,
+      "duration": 5.44,
+      "text": "information if you use these other"
+    },
+    {
+      "start": 2629.48,
+      "duration": 6.04,
+      "text": "databases and all that it's fine if you"
+    },
+    {
+      "start": 2632.559,
+      "duration": 4.52,
+      "text": "do it but if Carol wilick were still"
+    },
+    {
+      "start": 2635.52,
+      "duration": 3.599,
+      "text": "here she was a former president"
+    },
+    {
+      "start": 2637.079,
+      "duration": 4.161,
+      "text": "president of the Lee County genealogy"
+    },
+    {
+      "start": 2639.119,
+      "duration": 4.96,
+      "text": "Society if Jenna was still around if"
+    },
+    {
+      "start": 2641.24,
+      "duration": 5.64,
+      "text": "Carolyn Ford were still around all three"
+    },
+    {
+      "start": 2644.079,
+      "duration": 6.161,
+      "text": "of them could give a complete and total"
+    },
+    {
+      "start": 2646.88,
+      "duration": 6.439,
+      "text": "lecture on why you should not go that"
+    },
+    {
+      "start": 2650.24,
+      "duration": 6.44,
+      "text": "route you should instead put your"
+    },
+    {
+      "start": 2653.319,
+      "duration": 6.441,
+      "text": "information on a genealogy software"
+    },
+    {
+      "start": 2656.68,
+      "duration": 5.76,
+      "text": "program and my guide will give you some"
+    },
+    {
+      "start": 2659.76,
+      "duration": 6.24,
+      "text": "of the major companies and they all"
+    },
+    {
+      "start": 2662.44,
+      "duration": 5.24,
+      "text": "encourage you they all encourage you to"
+    },
+    {
+      "start": 2666.0,
+      "duration": 5.0,
+      "text": "go to their site"
+    },
+    {
+      "start": 2667.68,
+      "duration": 6.28,
+      "text": "and do a sample entry to see what it"
+    },
+    {
+      "start": 2671.0,
+      "duration": 4.68,
+      "text": "would look like if you use their product"
+    },
+    {
+      "start": 2673.96,
+      "duration": 5.159,
+      "text": "if you put your"
+    },
+    {
+      "start": 2675.68,
+      "duration": 6.48,
+      "text": "information on these other"
+    },
+    {
+      "start": 2679.119,
+      "duration": 5.72,
+      "text": "sites if the day comes when you want to"
+    },
+    {
+      "start": 2682.16,
+      "duration": 5.24,
+      "text": "publish your"
+    },
+    {
+      "start": 2684.839,
+      "duration": 4.441,
+      "text": "information there's no guarantee that"
+    },
+    {
+      "start": 2687.4,
+      "duration": 4.439,
+      "text": "you're going to be able to do that"
+    },
+    {
+      "start": 2689.28,
+      "duration": 4.96,
+      "text": "because theoretically they own the"
+    },
+    {
+      "start": 2691.839,
+      "duration": 3.72,
+      "text": "copyright that's one reason I tell"
+    },
+    {
+      "start": 2694.24,
+      "duration": 4.16,
+      "text": "people whenever they say they're going"
+    },
+    {
+      "start": 2695.559,
+      "duration": 5.841,
+      "text": "to do it before you do do that you need"
+    },
+    {
+      "start": 2698.4,
+      "duration": 4.88,
+      "text": "to look at the policies and procedures"
+    },
+    {
+      "start": 2701.4,
+      "duration": 5.04,
+      "text": "about what will happen if you ever"
+    },
+    {
+      "start": 2703.28,
+      "duration": 6.559,
+      "text": "decide to publish your"
+    },
+    {
+      "start": 2706.44,
+      "duration": 5.96,
+      "text": "information good deal thank you for our"
+    },
+    {
+      "start": 2709.839,
+      "duration": 5.52,
+      "text": "next one somebody's asking what is"
+    },
+    {
+      "start": 2712.4,
+      "duration": 4.64,
+      "text": "considered a crisscross directory a"
+    },
+    {
+      "start": 2715.359,
+      "duration": 5.441,
+      "text": "crisscross"
+    },
+    {
+      "start": 2717.04,
+      "duration": 7.72,
+      "text": "directory is uh it's basically another"
+    },
+    {
+      "start": 2720.8,
+      "duration": 6.84,
+      "text": "name for a city directory which uh these"
+    },
+    {
+      "start": 2724.76,
+      "duration": 4.4,
+      "text": "are similar in some way ways to"
+    },
+    {
+      "start": 2727.64,
+      "duration": 4.6,
+      "text": "telephone"
+    },
+    {
+      "start": 2729.16,
+      "duration": 4.48,
+      "text": "books they are usually more reliable"
+    },
+    {
+      "start": 2732.24,
+      "duration": 4.4,
+      "text": "than telephone"
+    },
+    {
+      "start": 2733.64,
+      "duration": 4.88,
+      "text": "directories but they're similar I I"
+    },
+    {
+      "start": 2736.64,
+      "duration": 5.24,
+      "text": "actually have a study guide that would"
+    },
+    {
+      "start": 2738.52,
+      "duration": 5.16,
+      "text": "tell you what a city directory would be"
+    },
+    {
+      "start": 2741.88,
+      "duration": 4.28,
+      "text": "and what's some of the differences are"
+    },
+    {
+      "start": 2743.68,
+      "duration": 5.12,
+      "text": "between telephone directories but I"
+    },
+    {
+      "start": 2746.16,
+      "duration": 6.32,
+      "text": "haven't used a telephone directory in I"
+    },
+    {
+      "start": 2748.8,
+      "duration": 5.519,
+      "text": "think about six or seven years but we do"
+    },
+    {
+      "start": 2752.48,
+      "duration": 4.72,
+      "text": "get more people looking at the city"
+    },
+    {
+      "start": 2754.319,
+      "duration": 5.8,
+      "text": "directories anymore now they don't don't"
+    },
+    {
+      "start": 2757.2,
+      "duration": 7.04,
+      "text": "even ask about telephone directories"
+    },
+    {
+      "start": 2760.119,
+      "duration": 7.081,
+      "text": "anymore thank you so I see a question"
+    },
+    {
+      "start": 2764.24,
+      "duration": 5.4,
+      "text": "that is asking if you can get a copy of"
+    },
+    {
+      "start": 2767.2,
+      "duration": 4.96,
+      "text": "the chat for the presentation and you"
+    },
+    {
+      "start": 2769.64,
+      "duration": 4.4,
+      "text": "can so just wanted to mention for a copy"
+    },
+    {
+      "start": 2772.16,
+      "duration": 3.959,
+      "text": "of the chat or if anybody has any"
+    },
+    {
+      "start": 2774.04,
+      "duration": 5.039,
+      "text": "additional questions you can email us at"
+    },
+    {
+      "start": 2776.119,
+      "duration": 5.48,
+      "text": "genealogy a.info"
+    },
+    {
+      "start": 2779.079,
+      "duration": 4.441,
+      "text": "and it looks like we have one more"
+    },
+    {
+      "start": 2781.599,
+      "duration": 3.281,
+      "text": "question and they're wondering if you"
+    },
+    {
+      "start": 2783.52,
+      "duration": 3.4,
+      "text": "could talk a little bit about the"
+    },
+    {
+      "start": 2784.88,
+      "duration": 4.64,
+      "text": "accuracy of County histories and"
+    },
+    {
+      "start": 2786.92,
+      "duration": 2.6,
+      "text": "biographical"
+    },
+    {
+      "start": 2789.72,
+      "duration": 8.119,
+      "text": "sketches okay that is a very very very"
+    },
+    {
+      "start": 2793.599,
+      "duration": 6.881,
+      "text": "interesting question okay let me add one"
+    },
+    {
+      "start": 2797.839,
+      "duration": 6.201,
+      "text": "thing to it if you want to know the most"
+    },
+    {
+      "start": 2800.48,
+      "duration": 7.16,
+      "text": "accurate history of a locality before I"
+    },
+    {
+      "start": 2804.04,
+      "duration": 8.16,
+      "text": "answer that question most experts would"
+    },
+    {
+      "start": 2807.64,
+      "duration": 8.199,
+      "text": "say you should take the time to read the"
+    },
+    {
+      "start": 2812.2,
+      "duration": 7.56,
+      "text": "newspaper because the newspaper often"
+    },
+    {
+      "start": 2815.839,
+      "duration": 6.601,
+      "text": "has more accurate information County"
+    },
+    {
+      "start": 2819.76,
+      "duration": 4.44,
+      "text": "histories are fine they serve a good"
+    },
+    {
+      "start": 2822.44,
+      "duration": 5.28,
+      "text": "purpose and they have a lot of good"
+    },
+    {
+      "start": 2824.2,
+      "duration": 6.04,
+      "text": "information in them including historical"
+    },
+    {
+      "start": 2827.72,
+      "duration": 5.96,
+      "text": "maps symbols that would help you"
+    },
+    {
+      "start": 2830.24,
+      "duration": 5.359,
+      "text": "identify churches cemeteries major"
+    },
+    {
+      "start": 2833.68,
+      "duration": 4.72,
+      "text": "entities in the"
+    },
+    {
+      "start": 2835.599,
+      "duration": 6.801,
+      "text": "place but the thing you have to remember"
+    },
+    {
+      "start": 2838.4,
+      "duration": 7.48,
+      "text": "about County histories is that sometimes"
+    },
+    {
+      "start": 2842.4,
+      "duration": 5.36,
+      "text": "they were somewhat sanitized for lack of"
+    },
+    {
+      "start": 2845.88,
+      "duration": 4.239,
+      "text": "a better term"
+    },
+    {
+      "start": 2847.76,
+      "duration": 4.68,
+      "text": "they might mention events they would"
+    },
+    {
+      "start": 2850.119,
+      "duration": 6.121,
+      "text": "mention a lot of events that happened in"
+    },
+    {
+      "start": 2852.44,
+      "duration": 7.84,
+      "text": "a particular area but sometimes they may"
+    },
+    {
+      "start": 2856.24,
+      "duration": 8.04,
+      "text": "or may not have included information"
+    },
+    {
+      "start": 2860.28,
+      "duration": 8.16,
+      "text": "about incidents or accidents or things"
+    },
+    {
+      "start": 2864.28,
+      "duration": 7.72,
+      "text": "like that that were not so nice to deal"
+    },
+    {
+      "start": 2868.44,
+      "duration": 6.84,
+      "text": "with another thing when you're looking"
+    },
+    {
+      "start": 2872.0,
+      "duration": 6.319,
+      "text": "at the profiles in some of these County"
+    },
+    {
+      "start": 2875.28,
+      "duration": 6.52,
+      "text": "histories be aware of the fact that some"
+    },
+    {
+      "start": 2878.319,
+      "duration": 5.881,
+      "text": "people paid top dollar for lack of a"
+    },
+    {
+      "start": 2881.8,
+      "duration": 5.44,
+      "text": "better term they paid top dollar to make"
+    },
+    {
+      "start": 2884.2,
+      "duration": 4.44,
+      "text": "sure the author put in what they wanted"
+    },
+    {
+      "start": 2887.24,
+      "duration": 5.76,
+      "text": "them to put"
+    },
+    {
+      "start": 2888.64,
+      "duration": 7.76,
+      "text": "in for their biographical"
+    },
+    {
+      "start": 2893.0,
+      "duration": 6.359,
+      "text": "profile does that make sense yes that is"
+    },
+    {
+      "start": 2896.4,
+      "duration": 5.679,
+      "text": "help or as one person said if you've got"
+    },
+    {
+      "start": 2899.359,
+      "duration": 5.881,
+      "text": "the money I've got the time to make you"
+    },
+    {
+      "start": 2902.079,
+      "duration": 6.081,
+      "text": "look like you were the greatest person"
+    },
+    {
+      "start": 2905.24,
+      "duration": 6.24,
+      "text": "that ever lived in this County"
+    },
+    {
+      "start": 2908.16,
+      "duration": 6.159,
+      "text": "now as far as biographical sketches are"
+    },
+    {
+      "start": 2911.48,
+      "duration": 4.72,
+      "text": "you talking about in published"
+    },
+    {
+      "start": 2914.319,
+      "duration": 3.161,
+      "text": "biographies I believe that's what they"
+    },
+    {
+      "start": 2916.2,
+      "duration": 4.44,
+      "text": "were referring"
+    },
+    {
+      "start": 2917.48,
+      "duration": 5.52,
+      "text": "to okay I would say on the whole that"
+    },
+    {
+      "start": 2920.64,
+      "duration": 4.76,
+      "text": "they would tend to be more"
+    },
+    {
+      "start": 2923.0,
+      "duration": 4.0,
+      "text": "accurate but there are plenty of people"
+    },
+    {
+      "start": 2925.4,
+      "duration": 4.399,
+      "text": "that will use"
+    },
+    {
+      "start": 2927.0,
+      "duration": 6.28,
+      "text": "both I'm not trying to put anybody down"
+    },
+    {
+      "start": 2929.799,
+      "duration": 5.56,
+      "text": "at Roa County History the older County"
+    },
+    {
+      "start": 2933.28,
+      "duration": 4.4,
+      "text": "histories they have a lot of good"
+    },
+    {
+      "start": 2935.359,
+      "duration": 4.361,
+      "text": "information in them and in some cases"
+    },
+    {
+      "start": 2937.68,
+      "duration": 4.8,
+      "text": "you may find something in them that"
+    },
+    {
+      "start": 2939.72,
+      "duration": 4.839,
+      "text": "you're not going to find in other"
+    },
+    {
+      "start": 2942.48,
+      "duration": 5.079,
+      "text": "sources and thank you for a great"
+    },
+    {
+      "start": 2944.559,
+      "duration": 5.081,
+      "text": "presentation and for your time today and"
+    },
+    {
+      "start": 2947.559,
+      "duration": 3.961,
+      "text": "I just wanted to mention again for"
+    },
+    {
+      "start": 2949.64,
+      "duration": 3.88,
+      "text": "anyone that would like a copy of the"
+    },
+    {
+      "start": 2951.52,
+      "duration": 5.12,
+      "text": "chat please send us an email at"
+    },
+    {
+      "start": 2953.52,
+      "duration": 5.2,
+      "text": "genealogy a.info"
+    },
+    {
+      "start": 2956.64,
+      "duration": 4.32,
+      "text": "okay well if there are no other"
+    },
+    {
+      "start": 2958.72,
+      "duration": 5.24,
+      "text": "questions but you think of any you know"
+    },
+    {
+      "start": 2960.96,
+      "duration": 5.28,
+      "text": "where to find me all right thanks bye"
+    },
+    {
+      "start": 2963.96,
+      "duration": 6.0,
+      "text": "bye have a good day thank you all for"
+    },
+    {
+      "start": 2966.24,
+      "duration": 3.72,
+      "text": "coming bye-bye"
+    }
+  ],
+  "full_text": "my name is Brian M and I'm with the Fort Meyers Regional Library you have my email address at the bottom there if during the course of the program if you run into any questions that you forget to ask if you send me an email I'll be more than happy to answer your questions ver via email at any time so we will get started here the listing of study guides that I have here they are all on the Allen County Library website I've included the years when I updated these the primary one for today's session is going to be number six obviously inaccurate and misleading genealogical records citations and sources but all of these other study guides that I have on here are going to give you information that would be related to the topic we're talking about about today especially to the two that a lot of people find the most popular of all of these would be number two the common genealogy research mistakes and also the one determining the reliability of genealogical records and documents now as far as research is concerned you have to face up to some realities number one sources are going to contain errors and amiss misss and this even includes the most authoritative print and online sources you have to look for error sometimes these errors may be accidental as in spelling errors or misinterpreted words or errors that are intentional as in dates and ages research material without Source documentation should never be trusted you would call that heay versus genealogy you should look at every source with a critical eye no matter how reliable you believe it to be AKA you should be a detective even if a source even if a source does contain some errors don't ignore it compare it to more sources closer to the event trusting only one source or focusing only on items that fit your assumptions or expectations may lead to errors misinterpretation Andor faulty conclusions and this would also include eyewitness accounts found in official records you should always question the reliability of the informant in testimony and the informant is always going to be the key to the accuracy of the information there are three important genealogical definitions that you really need to be aware of evidence constitutes facts used to reach conclusions about genealogical data relationships or events that are found in your research sources you also have the genealogical proof standard these are suggested guidelines a genealogists should follow for their work to be considered credible and it's generally composed of five elements number one a reasonably exhaustive research project has been conducted each statement of fact has a complete and accurate emphasis on the word accurate source citation all evidence is reliable and has been properly correlated and interpreted all contradictory issues have been resolved the conclusion has been soundly reasoned and coherently written now there is one caveat any proof statement is subject to being re-examined when new evidence arises this next slide talks about the different types of evidence direct evidence this refers to the source of information example if the birth information came from a birth certificate then it would be direct evidence indirect evidence this is information that requires corroboration it provides enough detail to enable you to form a hypothesis and when combined with other evidence will allow you to reach a reasonably reliable conclusion an example of this there are three of them you can't find a birth certificate for your grandfather but you can determine an age using a census Andor a birth announcement the census doesn't give his exact date of birth the birth announcement gives a birth date his full name is not provided but his parents names are cited by using both indirect records you can reach a reasonable conclusion as to his probable date of birth now negative evidence see seems to be something that confuses a lot of people these are conclusions about relationships or facts that are drawn because a situation fails to exist when it probably should so three examples of this that I run into a lot a young child is not listed with a family on a sensus living individual is not named in the will of a supposed parent when all the other children are finally a surviving spouse is not listed in the will or obituary when it comes to the concept of proof it's a four-step process number one the reliability of sources must always be established number two the statements made by family members Associates and neighbors cannot always be taken at face value for a variety of reasons number three official records often contain a variety of Errors one big example multiple spellings of a name in the same record finally there are three keys to successful research number one knowing the intended purpose of the record now one of those screenshots later on is a book that Corey meink would Brigham Young University wrote in 1998 and it basically is a book that's kind of like the genealogy of a resource you need to know make sure that when you're looking at a record who was the record created for as in the entity and who who whether it be the police or some agency something like that number two the ability to identify and understand the information and determine its accuracy given the circumstances and historical context and as I said there'll be three excellent sources that I'm going to be showing you in an upcoming slide now the most common errors that you're going to find and what their circumstances would be there are numerous potential scenarios and variations involving errors but these are the most common as I said earlier accidental these errors may have been caused by speaking hearing Reading Writing or memory lapses number two the intentional now for some people this may sound a little funny but it is what it is the informant deliberately provided false information and or omitted important details some of the most common examples would include the intent was to hide information that was perceived to be offensive Andor the desire to paint a negative portrait of the person or family this tends to be for a lot of people the number one scenario another one would be the possibility of personal financial or social gain or advancement that influences the informant to provide false or distorted views of an event or situation another one the informant will deliberately exaggerate or embellish the story or account to make themselves look better or impress a listener or reader another one would be rather than admit ignorance of people or events the informant Andor family members will invent or distort information about people and events now an example of number two sometimes I've found it when helping people with census record theoretically the census takers if a family wasn't home they were supposed to go back and try to interview the people and the family sometimes the information a lot of times was given by a neighbor if that neighbor was an honest person you never would normally have a problem if that neighbor had a grudge against that person they often would take the opportunity to say for lack of a better term some very the politest way I can put it is they said some very nasty things about the particular person and their intent hopefully was to get them in trouble that is something that will happen another one researchers can create Errors By misreading or misunderstanding accurate sources or applying them to the wrong people using the internet versus taking the time to compare information with other primary or secondary sources Fosters the spreading of errors and misinformation now errors and misinformation can lead to some significant research challenges some of the most common discrepancies that patrons will run into would include baptismal listening and presentations in the church containing the wrong birth dates names and sex another one birth records with incorrect proper names and surnames another one would be death records with incorrect names for the decedent parents and places of residence another one would be family bible entry with fabricated information now when it comes to family Bibles generally speaking the information in them tends to be more accurate than what you're going to find in a lot of civil records but there is one thing that you should be aware of with family Bibles look at the data publication if a family Bible was let's say came from the late 1700s and all of the entries in there follow the pattern from that time forward sometimes the handwriting will be a little different as people died and others took up the uh recording those tend to be more accurate than the other example let's say it was the Family Bible is from the 1860s but it has information going back to the 1700s that information from the past was added after the fact so that may or may not be totally accurate just something to bear in mind marriage license applications with incorrect names of the Bride or groom's father or mother tax roles listing a dead man as a living taxpayer military records that are omitting a soldier wills and probate packets omitting the names of children and falsely identifying bogus heirs and finally deed and land records that contain incomplete or bogus land descriptions Andor incorrect names of the owner I'm sure some of you can come up with some I didn't even put on there now in terms of guidelines for evidence and Analysis a lot of this I would say is is common sense but I still cover it anyway direct evidence is always going to be easier to understand but indirect evidence can carry equal weight that's one reason why you have to check your sources reliable genealogical conclusions are based on the weight not the quantity of information found again I'll repeat that reli genealogical conclusions are based on the weight not the quantity of the evidence that's found evidence should be drawn from a variety of independently created sources original Source material will generally be more reliable than derivative material the reliability of derivative work can be influenced by how often it has been reproduced in various formats and you remember I said earlier that sadly if people don't take the time to really do some research and they just take off what they see on the internet and assume it's correct the errors keep being spread over and over and over again most reliable informants have firsthand knowledge of the events to which they testify y handwriting analysis can help establish identity date and authenticity microfilm scans and photocopies are usually more accurate than handwritten or typed transcriptions and abstracts readable photographs of Tombstone inscriptions are more accurate than handwritten notes transcriptions made closer to the time of the event tend to be more accurate than those made years or decades afterwards and finally something you need to always remember when it comes to genealogical research the case is never absolutely positively closed now some strategies that have a proven track record for success for uncovering some of these errors this section is going to cover that most errors are uncovered by taking the time to compare and contrast independent sources that provide evidence answering the same research questions and the steps that I am going to talk about now are considered critical in this analysis process number one view any uncorroborated records or testimony with skep ticism no matter how much you may think the person is telling the truth if they don't have something to back it up you need to be careful number two search broadly for independent sources that might provide corroboration number three verify the independence of these sources accounts or testimonies number four reject information that cannot be corroborated you should still try to analyze it but if you cannot corroborate it for the most part you should reject it although I wouldn't throw it away completely because later on as you go forward in the research process you may later find some information that might corroborate it number five thoroughly examine the research subjects records dating back from birth to death looking for repetition patterns or sequences use a variety of formats to compare and contrast seemingly relevant information the most popular used by experts in the field include the following language and writing used used by the subject in daily activities number two timelines of events relevant to the event or subject timelines are your friend and taking the time to do a timeline will often identify areas that you need to look at I have run into some genealogist over 34 plus years that they thought they had all of their stuff ready to go until they heard me or someone else suggest why don't you check it with the timeline when they did that they found out that they had some very serious flaws in what what they had there number three maps and plats number four tables and spreadsheets now this section I'm going to talk about evidence analysis question questions and the screenshot there one of our former volunteers for many years Jenna hamister she's with the West I don't know if she's still alive or not but she was a wonderful lady but every time she did a class on the front of the uh Podium she would have genealogy without documentation is mythology well on this one they say the definition of mythology genealogy without documentation first one do the facts refer to the correct individual or family of Interest some things you have to be aware of with this there are no hard and fast rules for determining accuracy finding multiple people with the same name and from the same locality is common names were reused if children died at childbirth they often the names were reused later on on use known facts and information to more or less separate contenders with the same name some of the most common that often help would be the place of birth the Ed level of Education their occupation their level of income the race religious affiliation and did they have any land or Property Holdings another one as I said earlier this may sound like a broken record but timelines listing the major events in the lifetime of an individual or family often uncovers inconsistencies back in the 1840s there was no way or early 1850s there was no way you were going to get from New York to let's say California in three days I don't care unless they were in a spaceship whatever another one educated guesses are a legitimate option in genealogical and historical research with one caveat over time new facts may be uncovered that might provide more information the second question do the facts accurately reflect the circumstances or issues this is challenging because secondhand accounts are more often the norm that you're going to have to deal with a simple or straightforward yes or no answers to a particular question or situation seldom exist the accuracy is always going to be dependent on the informance knowledge and their motivations number four has a scenario or information changed over time I'll give you a I'll give you a simple thing that pertains to me over the years I was born December the 14th 1953 at 12:07 a.m. but over the years my mother's description of the night I was born has changed at one point she said I was born in a white out they couldn't get me out of the house they lived in so so I was born there another time she told me I was born in a taxi cab finally I did find a little card from passent Memorial Hospital that's on the cor Campus of Northwestern University that basically said I was born in the hospital like I said December the 14th 1953 at 12:07 a.m. over the years that's an example of all the versions of what I heard next one have you taken the time to read a history or newspaper account of the area during the time period in question that's something you should take the time to do even if it delays your research a little bit getting back to the other one previously there was one other scenario supposedly that night there was a blizzard in Chicago well I checked the weather report for December the 14th and it was cold that night but there was no blizzard okay next one be careful about judgments based on Modern standards and circumstances the historical context is going to be something you need to be careful about you have you can't judge the past by today's standards if you're going to be doing research you have to know what the historical context was at that time period because that's the way it was the next one do the facts accurately apply to the historical circumstances AKA historical context that existed During the period now when you're trying to determine the answer to this question some of the best sources for you to look at are ethnic histories County and town histories timelines newspapers family Bibles family correspondence Diaries journals and photograph albums military and regimental histories historical maps and gazers and family interviews which sometimes would also be known as oral histories finally was the informance knowledge reliable some things to consider the reputation of the informant and what their relationship was to the person do they have a history of being truthful or they have they been known to play fast and loose with the truth on occasions this is applicable to any type of information some of the criteria that would be used used for evaluation was the informant in a position to have reliable information would they benefit by giving false or misleading information and as I said earlier has the informant provided reliable information in the past now these are three books that we have in the Fort Meyers genealogy collection and I'm going to assume they have in Allen County library and most major libraries would have them the first two are by Elizabeth Shon Mills evidence explained this one is considered the Bible for showing you not only how to determine the accuracy of evidence but it also shows you how things are cited the earlier book she did US evidence citation and Analysis for the family historian this was sort of an earlier version of the later version that we have that's on my left and the book I told you earlier that Corey Meer rink did on printed sources this is a book that as I said earlier will essentially give you what I would call the genealogy of a record so you can determine is this record really something that I should be looking at and it does it have the information and was it created for the circumstances that I'm researching all three of them are excellent books even though the Meer in book was done I believe in 1997 or 1998 it is still considered very relevant by most professionals now these sources that are listed below these are are considered some of the most relevant sources to search for if you're going to be looking to locate what I would call potential inaccuracies or verifying the accuracy of Records they all pretty much speak for themselves the religious affiliation can be very interesting simply because when a lot of people came over no matter what religious affiliation they were if they mooved to a certain area they often would adopt the religion that was most predominant in that particular area but all of these are things that you need to keep in mind when you're analyzing this type of information now these are some what I would call final evidence reminders I got them off of Legacy Family Tree genealogists and all of these would be relevant actually let me go back a slide I got ahead of myself on these particular sources when you're talking about age okay Census records Cemetery records family Bibles military records obituaries pension applications tax records and Vital Records would give you that type of information if you're talking about birth dates and places Cemetery records again census Rec census and church records family Bibles military records newspapers birth announcements obituaries and Vital Records when you're talking about the city or Parish including if they're foreign born Census records Church records and family Bibles family histories immigration records naturalization and citizenship papers obituaries and Vital Records if you're talking about country Origins boundaries and place finding AIDS You' be looking at atlases City directories crisscross directories County or family histories and gazers land and property records taxation maps and Records obviously if you're talking about death records it's Cemetery Aries Church records court records family Bibles land and property records military records newspapers obituaries probate records and Vital Records if you're talking about divorces court records divorce records newspapers and Vital Records if you're talking about ethnicity Census records Church records family Bibles immigration records membership in minority associations or societies and Naturalization and citizenship papers if you're looking for the immigration or immigration date again a lot of these are going to be very similar census church history or records family Bibles published family history books or family history articles and periodicals an immigration record naturalist ation in citizenship papers newspapers and obituaries for marriage and maiden names biographies censuses cemeteries Church records and family Bibles family histories land and property records the military newspapers nobility listings personal correspondents probate records school records and vital records for OCC occupations you'd be talking about business directories that list company officials and employees the censuses city directories a crisscross civil registration court records immigration military newspapers obituaries and probate records for parents children and other family members most of these are exactly the same but you also have biographies land and property records the Naturalization and citizenship papers so goes on and on now this is off of family tree Legacy Family Tree genealogist and you see the website there where I got this screenshot but this is going to be talking about the researchers interpretation of pertinent information and sources and as I said earlier the third one there on negative this sometimes seems to cause a lot of confusion with people and again I'll say that the conclusion it's based on a relationship or fact that should be present but it isn't there and this is another one that talks about the differences between primary secondary and undetermined when it's undetermined there was inadequate data that was provided to actually identify the informant now even if this information right now initially would be considered undetermined or you're not sure what's going on never get rid of it because as you go through the research process you may find more information that will give you the answer to the question that you're looking for now some relevant websites for follow-up consultation ancestral findings this is one that has a very proven track Rec record in this particular case they actually had a brief presentation on there about using negative evidence to prove to prove family relationships it includes not only a YouTube article but it has the link to the presentation now I'm sure most of you have used Cindy's list that is considered one of the best sites to find the most reliable genealogical records on the internet and this particular one is one that discusses evidence analysis and evaluation and all of these links that you see on the right and the left these are all categories that you can go to for additional research she even has a section on here for evidence and Analysis these are actual articles now this is just the top of the page if you went further down you would find a lot more articles that would be of interest actually I did another screenshot have the board of certification of genealogists the DAR Library evidence analysis by Tristan Tolman evidence explained this is a quick lesson that Elizabeth shown Ms actually has available on Cindy's list and there are some more I tried to give you as much as I could so you get some idea how valuable Cindy's list can be now this is one off of the family search Blog the author of this was Tyler Staley I hope I didn't butcher that name too much but this is one where he discusses in detail standing the genealogical proof standard I gave you a basic gist of this but this one will go into a lot more detail this is family search Wiki the family search Wiki is one of the best places to go to and this is their article on the genealogical proof standard again it goes into a great deal of detail about this particular topic my study guide on evidence analysis is it's never going to be as good as what they have but uh it is it will give you a lot of information that you'll need to to help you as you progress through the research process and then this is another article on family search Wiki and this particular one the previous article talked about the genealogical group standard this article goes into detail about how to put it in action this is another website again Legacy Family Tree genealogists they definitely have a excellent record for putting people in success and they also will help you with your research but this is one talking about evidence analysis digging into the genealogical sources this will sort of tell you what you should be looking for when you're not only using these sources but perhaps even evaluating whether the sources are completely and totally accurate now as far as final thoughts for review I'll just simply these are some things that I think you should remember historical interpretations are going to change over time and at the risk again of sounding like a broken record historical context is the key to your success and that is what you have to go by there's nothing wrong with being politically correct I'll leave that up to individuals how they feel about that but when you're doing genealogy political correctness does not matter historical context is what you have to go by number two and this fits in with what I just said 21st century Norms unfortunately are irrelevant to historical circumstances what happened in the past happened some of it is good some of it is not so good most of the people I deal with they realize that and they and that's something they accept and they go on bottom line is even some of the things that happened that were not that were not very good most people I deal with regardless of what race they are or what ethnic group they are in they enjoy going through the process and they just take what happened as it is and they go on number three stretching the truth may happen as in Liberties taken in family stories and traditions number four be careful about perceptions regarding the family Black Sheep I actually have a study guide on Black Sheep and I've done multiple presentations about Black Sheep ancestors if any of you are interested in both of those you can let me know but one of the things you need to remember about the black sheep sometimes it's the black sheep that are telling the truth and the family has engaged in uh let's just say creative history number five ston wallers deliberate deceptions are going to happen and there are some people that are so determined to try to hide the past that they will go to Great Lengths to feed you with misinformation number six you might as well accept the fact that you are going to find contradictions in records you need to remember that historically when people were on the frontier going back in time the main thing that they were concerned with was survival they didn't always know the facts and sometimes the facts would change over time and to some degree again this may sound funny but it has been proven over and over again that if the information was provided by a male in the family I'll just say that sometimes the males were the worst people to ask about the facts about a family I remember one lady saying that the grandfather they had so many children he actually referred to the kids by numbers it was only when the wife gave the information that the names came out he couldn't even remember their names I'll leave it at that I'll stay out of that one number seven investigate any unexplained family heirlooms pictures and Diaries sometimes if you can do some research into that it may help you overcome some brick walls that you've discovered number eight again I gave you a couple examples of this from my own situation but stories accounts dates places or or narratives often change over time or become hazy over time I'm sure some of you have heard I believe the term is the rosec colored glass syndrome that when sometimes people talk about the past all they remember are the good things they don't always remember some of the not so good things have to keep that in mind number nine keep an open mind and again remember historical context and finally the case is never closed on any genealogic conclusion okay I'm ready if there are any questions out there I hope I covered everything thanks we do have a couple questions for you so we can get into those the first one is someone's asking what do you do when you find the wrong information on your ancestors on a family tree they say somebody has added a person to their tree that they know is not accurate so they're wondering what to do in that situation okay if you email me I have a study guide that talks about a genealogy software program if you use family search ancestry my Heritage all of these other sites that you know offer free that you can input information in it's fine in Dandy if you use them but the role that a lot of these sites have is their goal is to create a one world tree if you take the time to invest in a genology software program you will still be able to do searching on these databases the difference is when you do your findings you can put them into your genealogy software program what does that mean you will remain the boss of your information nobody body can go in and change your information you can share your pictures with whoever you want to share them with you can share your information with whoever you want to share it with and the bottom line is if I have to put it in a nutshell you are the boss of your information if you use these other databases and all that it's fine if you do it but if Carol wilick were still here she was a former president president of the Lee County genealogy Society if Jenna was still around if Carolyn Ford were still around all three of them could give a complete and total lecture on why you should not go that route you should instead put your information on a genealogy software program and my guide will give you some of the major companies and they all encourage you they all encourage you to go to their site and do a sample entry to see what it would look like if you use their product if you put your information on these other sites if the day comes when you want to publish your information there's no guarantee that you're going to be able to do that because theoretically they own the copyright that's one reason I tell people whenever they say they're going to do it before you do do that you need to look at the policies and procedures about what will happen if you ever decide to publish your information good deal thank you for our next one somebody's asking what is considered a crisscross directory a crisscross directory is uh it's basically another name for a city directory which uh these are similar in some way ways to telephone books they are usually more reliable than telephone directories but they're similar I I actually have a study guide that would tell you what a city directory would be and what's some of the differences are between telephone directories but I haven't used a telephone directory in I think about six or seven years but we do get more people looking at the city directories anymore now they don't don't even ask about telephone directories anymore thank you so I see a question that is asking if you can get a copy of the chat for the presentation and you can so just wanted to mention for a copy of the chat or if anybody has any additional questions you can email us at genealogy a.info and it looks like we have one more question and they're wondering if you could talk a little bit about the accuracy of County histories and biographical sketches okay that is a very very very interesting question okay let me add one thing to it if you want to know the most accurate history of a locality before I answer that question most experts would say you should take the time to read the newspaper because the newspaper often has more accurate information County histories are fine they serve a good purpose and they have a lot of good information in them including historical maps symbols that would help you identify churches cemeteries major entities in the place but the thing you have to remember about County histories is that sometimes they were somewhat sanitized for lack of a better term they might mention events they would mention a lot of events that happened in a particular area but sometimes they may or may not have included information about incidents or accidents or things like that that were not so nice to deal with another thing when you're looking at the profiles in some of these County histories be aware of the fact that some people paid top dollar for lack of a better term they paid top dollar to make sure the author put in what they wanted them to put in for their biographical profile does that make sense yes that is help or as one person said if you've got the money I've got the time to make you look like you were the greatest person that ever lived in this County now as far as biographical sketches are you talking about in published biographies I believe that's what they were referring to okay I would say on the whole that they would tend to be more accurate but there are plenty of people that will use both I'm not trying to put anybody down at Roa County History the older County histories they have a lot of good information in them and in some cases you may find something in them that you're not going to find in other sources and thank you for a great presentation and for your time today and I just wanted to mention again for anyone that would like a copy of the chat please send us an email at genealogy a.info okay well if there are no other questions but you think of any you know where to find me all right thanks bye bye have a good day thank you all for coming bye-bye",
+  "attempts": [
+    {
+      "client": "IOS",
+      "playability": {
+        "status": "OK",
+        "playableInEmbed": true,
+        "offlineability": {
+          "buttonRenderer": {
+            "navigationEndpoint": {
+              "clickTrackingParams": "CAkQ6ewBIhMI35iTiuzblwMV7EtMCB3D0w6kygEEkpO5jg==",
+              "ypcGetOfflineUpsellEndpoint": {
+                "params": "CiXqqN25AR8KC0ZQYWlOdzFaMWIwShAwZ2NKQ1NRRkptUC1qYXJCIgtGUGFpTncxWjFiMCoVCAkYAVIPCgtGUGFpTncxWjFiMCAB"
+              }
+            },
+            "trackingParams": "CAkQ6ewBIhMI35iTiuzblwMV7EtMCB3D0w6k"
+          }
+        },
+        "pictureInPicture": {
+          "pictureInPictureRenderer": {
+            "playableInPip": true,
+            "offByDefault": false,
+            "shouldResumeOnHead": false
+          }
+        },
+        "miniplayer": {
+          "miniplayerRenderer": {
+            "playbackMode": "PLAYBACK_MODE_ALLOW"
+          }
+        },
+        "contextParams": "Q0FFU0FnZ0M="
+      },
+      "outcome": "ok"
+    }
+  ],
+  "fetched_at": "2026-10-28T04:11:19.038868+00:00",
+  "client": "IOS",
+  "json_path": "transcripts/036_FPaiNw1Z1b0.json",
+  "text_path": "transcripts/036_FPaiNw1Z1b0.txt"
+}

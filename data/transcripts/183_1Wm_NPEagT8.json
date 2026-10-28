@@ -1,0 +1,762 @@
+{
+  "index": 183,
+  "url": "https://www.youtube.com/watch?v=1Wm_NPEagT8",
+  "video_id": "1Wm_NPEagT8",
+  "status": "ok",
+  "metadata": {
+    "title": "Quick Start - The Regrid Property App (Web)",
+    "author": "Regrid",
+    "channelId": "UCY6_FliC-rX76wQMYyow-1A",
+    "lengthSeconds": "294",
+    "viewCount": "5803",
+    "shortDescription": "Guide to the main features in the web version of the Regrid Property App to get you up and using the site quickly and easily.\n\nDid you know that we also offer a companion mobile app for your phone or tablet? Simply search Regrid Property App on iOS App Store or Google Play Store to download. A Regrid Pro subscription gets you full access to both web and mobile app versions: sign up for a Pro subscription at https://app.regrid.com/plans"
+  },
+  "caption_tracks": [
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=1Wm_NPEagT8&ei=AHbhatKpGo3fybgPpJyikQY&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185904&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=421A08C50F2D06027263906CD075A6149EE4A8EB.05F4042C0CA12558EE4C7F44F4E3A7BA2EA087DC&key=yt8&kind=asr&lang=en",
+      "name": {
+        "runs": [
+          {
+            "text": "English (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.en",
+      "languageCode": "en",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    }
+  ],
+  "selected_track": {
+    "baseUrl": "https://www.youtube.com/api/timedtext?v=1Wm_NPEagT8&ei=AHbhatKpGo3fybgPpJyikQY&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185904&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=421A08C50F2D06027263906CD075A6149EE4A8EB.05F4042C0CA12558EE4C7F44F4E3A7BA2EA087DC&key=yt8&kind=asr&lang=en",
+    "name": {
+      "runs": [
+        {
+          "text": "English (auto-generated)"
+        }
+      ]
+    },
+    "vssId": "a.en",
+    "languageCode": "en",
+    "kind": "asr",
+    "isTranslatable": true,
+    "trackName": ""
+  },
+  "segments": [
+    {
+      "start": 0.76,
+      "duration": 3.72,
+      "text": "welcome to the regrid mapping platform"
+    },
+    {
+      "start": 2.72,
+      "duration": 3.32,
+      "text": "today we're going to do a quick start"
+    },
+    {
+      "start": 4.48,
+      "duration": 4.6,
+      "text": "guide that should get you right into our"
+    },
+    {
+      "start": 6.04,
+      "duration": 4.16,
+      "text": "data and able to see and use our tools"
+    },
+    {
+      "start": 9.08,
+      "duration": 4.08,
+      "text": "so first things first you're going to"
+    },
+    {
+      "start": 10.2,
+      "duration": 6.52,
+      "text": "want to go to app. rd.com plans and"
+    },
+    {
+      "start": 13.16,
+      "duration": 5.8,
+      "text": "choose a plan uh starter will get you"
+    },
+    {
+      "start": 16.72,
+      "duration": 3.559,
+      "text": "able to browse around for free um but to"
+    },
+    {
+      "start": 18.96,
+      "duration": 2.319,
+      "text": "use most of the tools and other things"
+    },
+    {
+      "start": 20.279,
+      "duration": 4.121,
+      "text": "we're going to be talking about in this"
+    },
+    {
+      "start": 21.279,
+      "duration": 5.641,
+      "text": "video you'll want to be a pro or a team"
+    },
+    {
+      "start": 24.4,
+      "duration": 5.0,
+      "text": "subscriber once you have that all set up"
+    },
+    {
+      "start": 26.92,
+      "duration": 4.279,
+      "text": "you'll get placed into your dashboard uh"
+    },
+    {
+      "start": 29.4,
+      "duration": 4.24,
+      "text": "from here uh you can click the go to map"
+    },
+    {
+      "start": 31.199,
+      "duration": 6.121,
+      "text": "button and jump straight into the"
+    },
+    {
+      "start": 33.64,
+      "duration": 5.68,
+      "text": "map from here you're able to zoom into"
+    },
+    {
+      "start": 37.32,
+      "duration": 5.2,
+      "text": "any area of Interest around the country"
+    },
+    {
+      "start": 39.32,
+      "duration": 5.04,
+      "text": "and see all of the parcel"
+    },
+    {
+      "start": 42.52,
+      "duration": 3.679,
+      "text": "information uh when you Mouse over it"
+    },
+    {
+      "start": 44.36,
+      "duration": 3.32,
+      "text": "you can see it comes up at the top right"
+    },
+    {
+      "start": 46.199,
+      "duration": 4.161,
+      "text": "and if you were to click on a given"
+    },
+    {
+      "start": 47.68,
+      "duration": 4.879,
+      "text": "property uh you can see that it'll show"
+    },
+    {
+      "start": 50.36,
+      "duration": 4.24,
+      "text": "on the map highlighted and it'll also uh"
+    },
+    {
+      "start": 52.559,
+      "duration": 4.241,
+      "text": "pull up this pane on the left hand side"
+    },
+    {
+      "start": 54.6,
+      "duration": 4.0,
+      "text": "which gives you all of the data that we"
+    },
+    {
+      "start": 56.8,
+      "duration": 4.12,
+      "text": "have on that given"
+    },
+    {
+      "start": 58.6,
+      "duration": 4.919,
+      "text": "property uh from from here as well you"
+    },
+    {
+      "start": 60.92,
+      "duration": 4.199,
+      "text": "can choose to follow um a property if"
+    },
+    {
+      "start": 63.519,
+      "duration": 4.041,
+      "text": "you want to save it in the list for"
+    },
+    {
+      "start": 65.119,
+      "duration": 4.481,
+      "text": "later uh you can also print a parcel PDF"
+    },
+    {
+      "start": 67.56,
+      "duration": 5.04,
+      "text": "meaning you can get an export of this"
+    },
+    {
+      "start": 69.6,
+      "duration": 5.68,
+      "text": "properties information in a PDF"
+    },
+    {
+      "start": 72.6,
+      "duration": 5.0,
+      "text": "format um so some other things that are"
+    },
+    {
+      "start": 75.28,
+      "duration": 4.76,
+      "text": "super helpful and useful in General Life"
+    },
+    {
+      "start": 77.6,
+      "duration": 5.28,
+      "text": "uh under the style pane you can change"
+    },
+    {
+      "start": 80.04,
+      "duration": 4.36,
+      "text": "the colors of the default Parcels as"
+    },
+    {
+      "start": 82.88,
+      "duration": 3.199,
+      "text": "well as the parcel color that you hover"
+    },
+    {
+      "start": 84.4,
+      "duration": 2.44,
+      "text": "over and the selected parcel if you're"
+    },
+    {
+      "start": 86.079,
+      "duration": 2.801,
+      "text": "so"
+    },
+    {
+      "start": 86.84,
+      "duration": 4.04,
+      "text": "inclined uh there are also other style"
+    },
+    {
+      "start": 88.88,
+      "duration": 6.08,
+      "text": "rules if you want to say you know make"
+    },
+    {
+      "start": 90.88,
+      "duration": 5.879,
+      "text": "all owners with the city of Bend purple"
+    },
+    {
+      "start": 94.96,
+      "duration": 4.199,
+      "text": "or something like that you can do"
+    },
+    {
+      "start": 96.759,
+      "duration": 4.32,
+      "text": "so uh another extremely helpful tool"
+    },
+    {
+      "start": 99.159,
+      "duration": 4.521,
+      "text": "we're talking about here is our filter"
+    },
+    {
+      "start": 101.079,
+      "duration": 4.481,
+      "text": "tool um any of our data you can filter"
+    },
+    {
+      "start": 103.68,
+      "duration": 3.24,
+      "text": "on and select those properties uh and"
+    },
+    {
+      "start": 105.56,
+      "duration": 3.199,
+      "text": "then you can export those if you want to"
+    },
+    {
+      "start": 106.92,
+      "duration": 4.28,
+      "text": "see them in a list so for sake of"
+    },
+    {
+      "start": 108.759,
+      "duration": 4.921,
+      "text": "example uh let's say that within this"
+    },
+    {
+      "start": 111.2,
+      "duration": 5.4,
+      "text": "area around Bend I want to see vacant"
+    },
+    {
+      "start": 113.68,
+      "duration": 5.16,
+      "text": "Lots uh I can simply click that here you"
+    },
+    {
+      "start": 116.6,
+      "duration": 4.28,
+      "text": "can see the tally gives you the number"
+    },
+    {
+      "start": 118.84,
+      "duration": 2.8,
+      "text": "of parcels that fit that criteria within"
+    },
+    {
+      "start": 120.88,
+      "duration": 4.599,
+      "text": "this"
+    },
+    {
+      "start": 121.64,
+      "duration": 7.44,
+      "text": "area um from here I can either clear it"
+    },
+    {
+      "start": 125.479,
+      "duration": 5.48,
+      "text": "or I can refine my filter by going into"
+    },
+    {
+      "start": 129.08,
+      "duration": 3.799,
+      "text": "any of the other values and clicking on"
+    },
+    {
+      "start": 130.959,
+      "duration": 4.36,
+      "text": "them for example I could click here and"
+    },
+    {
+      "start": 132.879,
+      "duration": 5.161,
+      "text": "then try to find uh properties that are"
+    },
+    {
+      "start": 135.319,
+      "duration": 4.801,
+      "text": "owned by to shoot County and our vacant"
+    },
+    {
+      "start": 138.04,
+      "duration": 5.44,
+      "text": "lots and you see that narrows down the"
+    },
+    {
+      "start": 140.12,
+      "duration": 4.92,
+      "text": "tally here um I can then open these up"
+    },
+    {
+      "start": 143.48,
+      "duration": 4.479,
+      "text": "in list view if I want to see these"
+    },
+    {
+      "start": 145.04,
+      "duration": 4.88,
+      "text": "properties in a spreadsheet View and"
+    },
+    {
+      "start": 147.959,
+      "duration": 3.56,
+      "text": "then if you would like to export them"
+    },
+    {
+      "start": 149.92,
+      "duration": 4.039,
+      "text": "you'll need to create a project which"
+    },
+    {
+      "start": 151.519,
+      "duration": 6.601,
+      "text": "I'll do quickly for the sake of"
+    },
+    {
+      "start": 153.959,
+      "duration": 5.881,
+      "text": "example and you can download the"
+    },
+    {
+      "start": 158.12,
+      "duration": 3.68,
+      "text": "appropriate Parcels that you've selected"
+    },
+    {
+      "start": 159.84,
+      "duration": 4.52,
+      "text": "with the filter uh in a variety of"
+    },
+    {
+      "start": 161.8,
+      "duration": 5.04,
+      "text": "formats uh quick note on projects so"
+    },
+    {
+      "start": 164.36,
+      "duration": 3.599,
+      "text": "projects are useful for saving any stuff"
+    },
+    {
+      "start": 166.84,
+      "duration": 2.8,
+      "text": "that you might want to be looking at on"
+    },
+    {
+      "start": 167.959,
+      "duration": 5.081,
+      "text": "the map so for example saving a filter"
+    },
+    {
+      "start": 169.64,
+      "duration": 5.08,
+      "text": "to come back to later to uh set it to a"
+    },
+    {
+      "start": 173.04,
+      "duration": 4.08,
+      "text": "specific place so that you can snap back"
+    },
+    {
+      "start": 174.72,
+      "duration": 4.04,
+      "text": "there each time uh if you apply Styles"
+    },
+    {
+      "start": 177.12,
+      "duration": 4.0,
+      "text": "all those kinds of things need a a"
+    },
+    {
+      "start": 178.76,
+      "duration": 5.0,
+      "text": "project to be saved two to be able to"
+    },
+    {
+      "start": 181.12,
+      "duration": 5.199,
+      "text": "persist and be there next time you want"
+    },
+    {
+      "start": 183.76,
+      "duration": 4.28,
+      "text": "them um I am not going to get too"
+    },
+    {
+      "start": 186.319,
+      "duration": 4.0,
+      "text": "heavily into any of the specifics of the"
+    },
+    {
+      "start": 188.04,
+      "duration": 6.119,
+      "text": "tools um we do have specific tutorial"
+    },
+    {
+      "start": 190.319,
+      "duration": 6.401,
+      "text": "videos for each of them uh one well"
+    },
+    {
+      "start": 194.159,
+      "duration": 4.881,
+      "text": "maybe a couple other additional things"
+    },
+    {
+      "start": 196.72,
+      "duration": 4.32,
+      "text": "so one thing worth noting here we've"
+    },
+    {
+      "start": 199.04,
+      "duration": 4.36,
+      "text": "already touched on the style uh it's"
+    },
+    {
+      "start": 201.04,
+      "duration": 4.04,
+      "text": "also possible to use our measure tools"
+    },
+    {
+      "start": 203.4,
+      "duration": 4.119,
+      "text": "really easily so let's say that you want"
+    },
+    {
+      "start": 205.08,
+      "duration": 4.079,
+      "text": "to get the area of a given shape you can"
+    },
+    {
+      "start": 207.519,
+      "duration": 2.761,
+      "text": "simply click measure area and then you"
+    },
+    {
+      "start": 209.159,
+      "duration": 3.64,
+      "text": "can start"
+    },
+    {
+      "start": 210.28,
+      "duration": 3.679,
+      "text": "clicking uh this works almost exactly"
+    },
+    {
+      "start": 212.799,
+      "duration": 2.72,
+      "text": "like most of these other tools you may"
+    },
+    {
+      "start": 213.959,
+      "duration": 4.64,
+      "text": "have used you click to sort of set the"
+    },
+    {
+      "start": 215.519,
+      "duration": 5.44,
+      "text": "points double click to end it uh you can"
+    },
+    {
+      "start": 218.599,
+      "duration": 4.84,
+      "text": "then see uh that we can change the US"
+    },
+    {
+      "start": 220.959,
+      "duration": 4.0,
+      "text": "the units of measurement um and you can"
+    },
+    {
+      "start": 223.439,
+      "duration": 4.041,
+      "text": "also save it as a focus area if you want"
+    },
+    {
+      "start": 224.959,
+      "duration": 3.64,
+      "text": "to come back to this area in the future"
+    },
+    {
+      "start": 227.48,
+      "duration": 3.24,
+      "text": "so there are a few measure tools"
+    },
+    {
+      "start": 228.599,
+      "duration": 4.56,
+      "text": "available for you there the other thing"
+    },
+    {
+      "start": 230.72,
+      "duration": 4.76,
+      "text": "to note is that under the layers tab we"
+    },
+    {
+      "start": 233.159,
+      "duration": 4.16,
+      "text": "allow people to do a bunch of different"
+    },
+    {
+      "start": 235.48,
+      "duration": 3.319,
+      "text": "sort of overlays as well as the base map"
+    },
+    {
+      "start": 237.319,
+      "duration": 4.521,
+      "text": "so you can switch from satellite to"
+    },
+    {
+      "start": 238.799,
+      "duration": 5.36,
+      "text": "Street you can also overlay things like"
+    },
+    {
+      "start": 241.84,
+      "duration": 4.08,
+      "text": "owner names um or turn on parcel"
+    },
+    {
+      "start": 244.159,
+      "duration": 3.561,
+      "text": "Dimensions if you want to see the parcel"
+    },
+    {
+      "start": 245.92,
+      "duration": 4.64,
+      "text": "Dimensions uh it'll show you each sort"
+    },
+    {
+      "start": 247.72,
+      "duration": 4.0,
+      "text": "of segment of the parcel uh we also have"
+    },
+    {
+      "start": 250.56,
+      "duration": 2.519,
+      "text": "a bunch of things like elevation"
+    },
+    {
+      "start": 251.72,
+      "duration": 2.68,
+      "text": "Contours that you can turn on if you're"
+    },
+    {
+      "start": 253.079,
+      "duration": 2.921,
+      "text": "interested in those types of things"
+    },
+    {
+      "start": 254.4,
+      "duration": 3.839,
+      "text": "under"
+    },
+    {
+      "start": 256.0,
+      "duration": 4.4,
+      "text": "here that's uh pretty much the quick"
+    },
+    {
+      "start": 258.239,
+      "duration": 4.201,
+      "text": "rundown uh remember you can always get"
+    },
+    {
+      "start": 260.4,
+      "duration": 3.88,
+      "text": "back to your dashboard if you'd like uh"
+    },
+    {
+      "start": 262.44,
+      "duration": 4.08,
+      "text": "from the top left uh you can also have a"
+    },
+    {
+      "start": 264.28,
+      "duration": 3.639,
+      "text": "quick link to your billing there um you"
+    },
+    {
+      "start": 266.52,
+      "duration": 3.76,
+      "text": "can sign in and out from here if you're"
+    },
+    {
+      "start": 267.919,
+      "duration": 4.081,
+      "text": "signed out uh you can do that"
+    },
+    {
+      "start": 270.28,
+      "duration": 5.24,
+      "text": "and then one final note is that if"
+    },
+    {
+      "start": 272.0,
+      "duration": 5.28,
+      "text": "you're a paying Pro or team subscriber"
+    },
+    {
+      "start": 275.52,
+      "duration": 3.36,
+      "text": "uh your credentials will also work on"
+    },
+    {
+      "start": 277.28,
+      "duration": 4.359,
+      "text": "our companion mobile app so if you"
+    },
+    {
+      "start": 278.88,
+      "duration": 4.759,
+      "text": "search regrid mobile app or regrid"
+    },
+    {
+      "start": 281.639,
+      "duration": 4.321,
+      "text": "property app in the app store for"
+    },
+    {
+      "start": 283.639,
+      "duration": 3.4,
+      "text": "Android or Apple uh you can download it"
+    },
+    {
+      "start": 285.96,
+      "duration": 2.519,
+      "text": "there and use your same login"
+    },
+    {
+      "start": 287.039,
+      "duration": 3.321,
+      "text": "credentials to get in there and that"
+    },
+    {
+      "start": 288.479,
+      "duration": 2.921,
+      "text": "will give you a really great Tool uh if"
+    },
+    {
+      "start": 290.36,
+      "duration": 5.0,
+      "text": "you want to access any of this"
+    },
+    {
+      "start": 291.4,
+      "duration": 3.96,
+      "text": "information on the go"
+    }
+  ],
+  "full_text": "welcome to the regrid mapping platform today we're going to do a quick start guide that should get you right into our data and able to see and use our tools so first things first you're going to want to go to app. rd.com plans and choose a plan uh starter will get you able to browse around for free um but to use most of the tools and other things we're going to be talking about in this video you'll want to be a pro or a team subscriber once you have that all set up you'll get placed into your dashboard uh from here uh you can click the go to map button and jump straight into the map from here you're able to zoom into any area of Interest around the country and see all of the parcel information uh when you Mouse over it you can see it comes up at the top right and if you were to click on a given property uh you can see that it'll show on the map highlighted and it'll also uh pull up this pane on the left hand side which gives you all of the data that we have on that given property uh from from here as well you can choose to follow um a property if you want to save it in the list for later uh you can also print a parcel PDF meaning you can get an export of this properties information in a PDF format um so some other things that are super helpful and useful in General Life uh under the style pane you can change the colors of the default Parcels as well as the parcel color that you hover over and the selected parcel if you're so inclined uh there are also other style rules if you want to say you know make all owners with the city of Bend purple or something like that you can do so uh another extremely helpful tool we're talking about here is our filter tool um any of our data you can filter on and select those properties uh and then you can export those if you want to see them in a list so for sake of example uh let's say that within this area around Bend I want to see vacant Lots uh I can simply click that here you can see the tally gives you the number of parcels that fit that criteria within this area um from here I can either clear it or I can refine my filter by going into any of the other values and clicking on them for example I could click here and then try to find uh properties that are owned by to shoot County and our vacant lots and you see that narrows down the tally here um I can then open these up in list view if I want to see these properties in a spreadsheet View and then if you would like to export them you'll need to create a project which I'll do quickly for the sake of example and you can download the appropriate Parcels that you've selected with the filter uh in a variety of formats uh quick note on projects so projects are useful for saving any stuff that you might want to be looking at on the map so for example saving a filter to come back to later to uh set it to a specific place so that you can snap back there each time uh if you apply Styles all those kinds of things need a a project to be saved two to be able to persist and be there next time you want them um I am not going to get too heavily into any of the specifics of the tools um we do have specific tutorial videos for each of them uh one well maybe a couple other additional things so one thing worth noting here we've already touched on the style uh it's also possible to use our measure tools really easily so let's say that you want to get the area of a given shape you can simply click measure area and then you can start clicking uh this works almost exactly like most of these other tools you may have used you click to sort of set the points double click to end it uh you can then see uh that we can change the US the units of measurement um and you can also save it as a focus area if you want to come back to this area in the future so there are a few measure tools available for you there the other thing to note is that under the layers tab we allow people to do a bunch of different sort of overlays as well as the base map so you can switch from satellite to Street you can also overlay things like owner names um or turn on parcel Dimensions if you want to see the parcel Dimensions uh it'll show you each sort of segment of the parcel uh we also have a bunch of things like elevation Contours that you can turn on if you're interested in those types of things under here that's uh pretty much the quick rundown uh remember you can always get back to your dashboard if you'd like uh from the top left uh you can also have a quick link to your billing there um you can sign in and out from here if you're signed out uh you can do that and then one final note is that if you're a paying Pro or team subscriber uh your credentials will also work on our companion mobile app so if you search regrid mobile app or regrid property app in the app store for Android or Apple uh you can download it there and use your same login credentials to get in there and that will give you a really great Tool uh if you want to access any of this information on the go",
+  "attempts": [
+    {
+      "client": "IOS",
+      "playability": {
+        "status": "OK",
+        "playableInEmbed": true,
+        "offlineability": {
+          "buttonRenderer": {
+            "navigationEndpoint": {
+              "clickTrackingParams": "CAoQ6ewBIhMI0qnAluzblwMVjW8SAR0kjihiygEEjaGldw==",
+              "ypcGetOfflineUpsellEndpoint": {
+                "params": "ChPqqN25AQ0KCzFXbV9OUEVhZ1Q4IgsxV21fTlBFYWdUOCoVCAkYAVIPCgsxV21fTlBFYWdUOCAB"
+              }
+            },
+            "trackingParams": "CAoQ6ewBIhMI0qnAluzblwMVjW8SAR0kjihi"
+          }
+        },
+        "pictureInPicture": {
+          "pictureInPictureRenderer": {
+            "playableInPip": true,
+            "offByDefault": false,
+            "shouldResumeOnHead": false
+          }
+        },
+        "miniplayer": {
+          "miniplayerRenderer": {
+            "playbackMode": "PLAYBACK_MODE_ALLOW"
+          }
+        },
+        "contextParams": "Q0FFU0FnZ0M="
+      },
+      "outcome": "ok"
+    }
+  ],
+  "fetched_at": "2026-10-28T04:11:45.026881+00:00",
+  "client": "IOS",
+  "json_path": "transcripts/183_1Wm_NPEagT8.json",
+  "text_path": "transcripts/183_1Wm_NPEagT8.txt"
+}

@@ -1,0 +1,1180 @@
+{
+  "index": 34,
+  "url": "https://www.youtube.com/watch?v=R50W1KDrRPw",
+  "video_id": "R50W1KDrRPw",
+  "status": "ok",
+  "metadata": {
+    "title": "From Questionable to Credible: Analyzing and Verifying Genealogical Sources",
+    "author": "FamilySearch",
+    "channelId": "UC-9GZ7QHKOmLS0APnfz2g1Q",
+    "lengthSeconds": "1120",
+    "viewCount": "2454",
+    "shortDescription": "Learn practical strategies to assess and verify dubious sources, transforming questionable data into credible evidence for your research."
+  },
+  "caption_tracks": [
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=R50W1KDrRPw&ei=5nXhavr8DIv6sfIP74ycwAo&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185878&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=94FF886EA1BD5DB7C58E841FCD8284DAEA5B2D3E.94BA7BC3C565AC03E01AE87B2738CDF5CD8EA4A6&key=yt8&lang=en",
+      "name": {
+        "runs": [
+          {
+            "text": "English"
+          }
+        ]
+      },
+      "vssId": ".en",
+      "languageCode": "en",
+      "isTranslatable": true,
+      "trackName": ""
+    }
+  ],
+  "selected_track": {
+    "baseUrl": "https://www.youtube.com/api/timedtext?v=R50W1KDrRPw&ei=5nXhavr8DIv6sfIP74ycwAo&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185878&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=94FF886EA1BD5DB7C58E841FCD8284DAEA5B2D3E.94BA7BC3C565AC03E01AE87B2738CDF5CD8EA4A6&key=yt8&lang=en",
+    "name": {
+      "runs": [
+        {
+          "text": "English"
+        }
+      ]
+    },
+    "vssId": ".en",
+    "languageCode": "en",
+    "isTranslatable": true,
+    "trackName": ""
+  },
+  "segments": [
+    {
+      "start": 5.636,
+      "duration": 7.4,
+      "text": "Hi, I’m Shannon Green and today’s session is titled From Questionable to Credible: Analyzing"
+    },
+    {
+      "start": 13.036,
+      "duration": 2.48,
+      "text": "and Verifying Genealogical Sources."
+    },
+    {
+      "start": 16.596,
+      "duration": 5.4,
+      "text": "Today, I'm going to share some actionable advice on what to do when you come across"
+    },
+    {
+      "start": 21.996,
+      "duration": 5.48,
+      "text": "a questionable source. And although we should be questioning all of our sources."
+    },
+    {
+      "start": 27.756,
+      "duration": 5.76,
+      "text": "Today I'm talking about sources that seem particularly suspicious or dubious."
+    },
+    {
+      "start": 33.956,
+      "duration": 2.88,
+      "text": "Um, perhaps those without citations."
+    },
+    {
+      "start": 42.556,
+      "duration": 5.04,
+      "text": "So how many of you have stumbled on a family tree? That seems incorrect."
+    },
+    {
+      "start": 48.196,
+      "duration": 3.12,
+      "text": "Last year I was researching my ancestor, Mary Taylor,"
+    },
+    {
+      "start": 51.756,
+      "duration": 6.4,
+      "text": "and I received hints that her parents had been identified. More than a dozen trees."
+    },
+    {
+      "start": 58.156,
+      "duration": 4.48,
+      "text": "Had the same parents listed as Isaac Taylor and Lydia Perkins."
+    },
+    {
+      "start": 63.476,
+      "duration": 3.56,
+      "text": "Now, I could have just accepted them as her parents and move on."
+    },
+    {
+      "start": 67.356,
+      "duration": 4.92,
+      "text": "Or I could have thrown out that suggestion because there were no sources attached."
+    },
+    {
+      "start": 72.916,
+      "duration": 3.28,
+      "text": "But I decided to analyze and verify."
+    },
+    {
+      "start": 77.156,
+      "duration": 3.08,
+      "text": "I researched when Isaac and Lydia were born,"
+    },
+    {
+      "start": 80.236,
+      "duration": 3.56,
+      "text": "and Isaac was only 12 years old when Mary was born."
+    },
+    {
+      "start": 84.436,
+      "duration": 2.68,
+      "text": "I researched when Isaac and Lydia were married,"
+    },
+    {
+      "start": 87.316,
+      "duration": 3.36,
+      "text": "and they were married nine years after Mary's birth."
+    },
+    {
+      "start": 92.036,
+      "duration": 2.44,
+      "text": "I also researched where they were living."
+    },
+    {
+      "start": 94.876,
+      "duration": 2.36,
+      "text": "Isaac and Lydia lived in New England at"
+    },
+    {
+      "start": 97.236,
+      "duration": 3.2,
+      "text": "the same time that Mary was born in Pennsylvania."
+    },
+    {
+      "start": 101.196,
+      "duration": 2.92,
+      "text": "So in this case, this source was false."
+    },
+    {
+      "start": 104.756,
+      "duration": 6.2,
+      "text": "But keep in mind that many times these hints are correct, so you must evaluate each case."
+    },
+    {
+      "start": 113.676,
+      "duration": 2.56,
+      "text": "Other types of genealogical sources which"
+    },
+    {
+      "start": 116.236,
+      "duration": 6.12,
+      "text": "I would consider questionable are books that are collection of personal sketches."
+    },
+    {
+      "start": 122.756,
+      "duration": 5.88,
+      "text": "Many times the subject of the sketch paid to help underwrite the expense of printing,"
+    },
+    {
+      "start": 128.916,
+      "duration": 6.68,
+      "text": "and they were frequently the source of the information provided,"
+    },
+    {
+      "start": 135.596,
+      "duration": 6.68,
+      "text": "or those amazing family genealogies, many of which were published in the late 1800s."
+    },
+    {
+      "start": 142.276,
+      "duration": 5.12,
+      "text": "And I can only imagine the amount of family lore and knowledge that"
+    },
+    {
+      "start": 147.396,
+      "duration": 2.24,
+      "text": "the people who assembled these had."
+    },
+    {
+      "start": 152.876,
+      "duration": 2.68,
+      "text": "And then how many of you have found a find"
+    },
+    {
+      "start": 155.556,
+      "duration": 4.8,
+      "text": "a grave memorial that has information that you've never seen before?"
+    },
+    {
+      "start": 161.436,
+      "duration": 4.36,
+      "text": "So what do you do when you see one of these types of questionable sources?"
+    },
+    {
+      "start": 168.396,
+      "duration": 5.08,
+      "text": "Well, I want to outline for you the steps I take to verify these sources when"
+    },
+    {
+      "start": 173.476,
+      "duration": 4.32,
+      "text": "I come across them. There are three high level steps to my To my process,"
+    },
+    {
+      "start": 178.956,
+      "duration": 3.92,
+      "text": "I critique the source. I organize the information."
+    },
+    {
+      "start": 183.396,
+      "duration": 2.12,
+      "text": "And then I verify the evidence."
+    },
+    {
+      "start": 187.876,
+      "duration": 6.16,
+      "text": "The first step in turning a questionable source into credible evidence is to critique"
+    },
+    {
+      "start": 194.076,
+      "duration": 6.92,
+      "text": "the source. And this involves three parts. First, you want to draft a citation."
+    },
+    {
+      "start": 201.476,
+      "duration": 3.16,
+      "text": "A good citation tells us where the source came from"
+    },
+    {
+      "start": 204.636,
+      "duration": 4.96,
+      "text": "and highlights any weaknesses in its reliability."
+    },
+    {
+      "start": 209.596,
+      "duration": 5.88,
+      "text": "Next, analyze the source. Think about how and why the source was created."
+    },
+    {
+      "start": 215.596,
+      "duration": 4.16,
+      "text": "Is it an original or a derivative record, or perhaps an authored work?"
+    },
+    {
+      "start": 220.836,
+      "duration": 5.36,
+      "text": "And the real benefit of labeling something as derivative or an authored work is that it's"
+    },
+    {
+      "start": 226.196,
+      "duration": 2.28,
+      "text": "a cue to seek out the original."
+    },
+    {
+      "start": 229.716,
+      "duration": 4.28,
+      "text": "Finally, evaluate the information provided in the source."
+    },
+    {
+      "start": 234.476,
+      "duration": 3.36,
+      "text": "Who was the likely informant and how reliable were they?"
+    },
+    {
+      "start": 238.636,
+      "duration": 3.88,
+      "text": "Together, these steps give a clearer view of the sources credibility."
+    },
+    {
+      "start": 245.236,
+      "duration": 3.0,
+      "text": "The second step is to organize the information."
+    },
+    {
+      "start": 248.796,
+      "duration": 5.72,
+      "text": "I recommend using different organizational methods to help you spot patterns and gaps"
+    },
+    {
+      "start": 254.516,
+      "duration": 6.2,
+      "text": "and conflicts more easily. For any handwritten or hard to read sources,"
+    },
+    {
+      "start": 260.876,
+      "duration": 6.32,
+      "text": "consider creating a transcription to provide a clear reference to work from."
+    },
+    {
+      "start": 267.316,
+      "duration": 3.96,
+      "text": "Organize the information chronologically into a timeline,"
+    },
+    {
+      "start": 271.436,
+      "duration": 5.08,
+      "text": "and this can highlight inconsistencies such as gaps or overlapping events."
+    },
+    {
+      "start": 278.716,
+      "duration": 2.6,
+      "text": "And then you want to track family connections."
+    },
+    {
+      "start": 281.956,
+      "duration": 4.16,
+      "text": "Understanding an individual's family and associates really is crucial,"
+    },
+    {
+      "start": 286.116,
+      "duration": 6.84,
+      "text": "especially when there are multiple people who share the same name."
+    },
+    {
+      "start": 292.956,
+      "duration": 3.24,
+      "text": "Step three is to verify the evidence."
+    },
+    {
+      "start": 296.516,
+      "duration": 5.92,
+      "text": "I like to sort information items into these three verification buckets based on"
+    },
+    {
+      "start": 302.436,
+      "duration": 4.04,
+      "text": "the anticipated level of difficulty. Bucket one."
+    },
+    {
+      "start": 306.636,
+      "duration": 5.28,
+      "text": "These are items that are easy to verify or include straightforward action items,"
+    },
+    {
+      "start": 312.076,
+      "duration": 6.08,
+      "text": "for example, contacting a cemetery or a church record office. Bucket two."
+    },
+    {
+      "start": 318.436,
+      "duration": 2.12,
+      "text": "These are harder to verify items."
+    },
+    {
+      "start": 320.756,
+      "duration": 7.68,
+      "text": "They may require researching records that are in less accessible archives. And bucket three."
+    },
+    {
+      "start": 328.516,
+      "duration": 5.4,
+      "text": "These includes items that are conjecture or are nearly impossible to verify."
+    },
+    {
+      "start": 333.956,
+      "duration": 7.88,
+      "text": "For example, set somebody's motivation. So the process is simple. I execute bucket one."
+    },
+    {
+      "start": 342.076,
+      "duration": 4.16,
+      "text": "I plan for bucket two. And I evaluate bucket three."
+    },
+    {
+      "start": 346.796,
+      "duration": 3.76,
+      "text": "And this is all going to make more sense with the example I'm going to show you now."
+    },
+    {
+      "start": 353.156,
+      "duration": 4.0,
+      "text": "So we're going to look at look at an example of a questionable genealogical source,"
+    },
+    {
+      "start": 357.236,
+      "duration": 4.72,
+      "text": "and how I applied this method to turn it in to credible evidence."
+    },
+    {
+      "start": 362.676,
+      "duration": 5.56,
+      "text": "I was researching my ancestor, David Durst, and I found him enumerated in 1800,"
+    },
+    {
+      "start": 368.236,
+      "duration": 3.84,
+      "text": "living in the Northwest Territories today, that's Ohio."
+    },
+    {
+      "start": 372.876,
+      "duration": 3.36,
+      "text": "I looked at online family trees that included David Durst,"
+    },
+    {
+      "start": 376.236,
+      "duration": 2.32,
+      "text": "and I was kind of surprised that"
+    },
+    {
+      "start": 378.556,
+      "duration": 5.24,
+      "text": "I couldn't find any actual records attached to him in other people's trees,"
+    },
+    {
+      "start": 383.796,
+      "duration": 4.2,
+      "text": "but I did find this fabulous biographical sketch."
+    },
+    {
+      "start": 389.516,
+      "duration": 5.52,
+      "text": "A gentleman named Richard posted this story on his tree titled The History of David Durst."
+    },
+    {
+      "start": 395.716,
+      "duration": 6.16,
+      "text": "It was posted in 2010, and since then it has been attached to 119 trees."
+    },
+    {
+      "start": 402.796,
+      "duration": 2.24,
+      "text": "So this is my questionable source."
+    },
+    {
+      "start": 405.556,
+      "duration": 4.08,
+      "text": "Now I'm only showing you part of it, and I don't expect you to be able to read it."
+    },
+    {
+      "start": 409.636,
+      "duration": 3.08,
+      "text": "I simply wanted to give you an idea of what it looked like."
+    },
+    {
+      "start": 415.956,
+      "duration": 3.88,
+      "text": "So the first thing I did was to cite the biographical sketch."
+    },
+    {
+      "start": 421.156,
+      "duration": 3.56,
+      "text": "I put the username for the gentleman who posted it as the author."
+    },
+    {
+      "start": 425.316,
+      "duration": 3.4,
+      "text": "I included the title of the document, the date it was posted,"
+    },
+    {
+      "start": 428.996,
+      "duration": 5.88,
+      "text": "and that it was attached to a tree titled Richard's Family Tree,"
+    },
+    {
+      "start": 434.876,
+      "duration": 1.28,
+      "text": "and I had a link to the tree."
+    },
+    {
+      "start": 436.276,
+      "duration": 3.88,
+      "text": "And I also include the name of the person of interest, David Durst."
+    },
+    {
+      "start": 440.716,
+      "duration": 6.2,
+      "text": "And because there are multiple men named David Durst in this tree, I added the, um,"
+    },
+    {
+      "start": 446.956,
+      "duration": 6.04,
+      "text": "his death date. And then I also noted that it was an unsourced biographical sketch."
+    },
+    {
+      "start": 453.996,
+      "duration": 2.04,
+      "text": "And for the purpose of this presentation,"
+    },
+    {
+      "start": 456.036,
+      "duration": 3.68,
+      "text": "I have changed some of Richard's details to protect his privacy."
+    },
+    {
+      "start": 460.876,
+      "duration": 5.92,
+      "text": "So from this citation I crafted, I can tell what type of source it is, where to find it,"
+    },
+    {
+      "start": 466.916,
+      "duration": 3.48,
+      "text": "and then I do have some concerns about its reliability."
+    },
+    {
+      "start": 473.316,
+      "duration": 3.92,
+      "text": "The next part of critiquing a source is to analyze the source."
+    },
+    {
+      "start": 478.116,
+      "duration": 2.16,
+      "text": "Sometimes I write the analysis down,"
+    },
+    {
+      "start": 480.276,
+      "duration": 2.52,
+      "text": "and other times it kind of just happens in my head."
+    },
+    {
+      "start": 484.156,
+      "duration": 3.4,
+      "text": "In this case, I noted that it is an authored work."
+    },
+    {
+      "start": 487.556,
+      "duration": 4.08,
+      "text": "So somebody conducted research and wrote this biographical sketch."
+    },
+    {
+      "start": 492.676,
+      "duration": 2.8,
+      "text": "I note that it does not have any citations,"
+    },
+    {
+      "start": 495.676,
+      "duration": 4.72,
+      "text": "and although I did list the gentleman who posted it as the author when I cited it,"
+    },
+    {
+      "start": 500.396,
+      "duration": 4.64,
+      "text": "there actually is no notation that he was the one that conducted the research"
+    },
+    {
+      "start": 505.036,
+      "duration": 1.44,
+      "text": "and actually wrote the sketch."
+    },
+    {
+      "start": 507.596,
+      "duration": 3.88,
+      "text": "And we, of course, have no information on the history and the provenance."
+    },
+    {
+      "start": 512.316,
+      "duration": 2.28,
+      "text": "Now, also, this was kind of curious."
+    },
+    {
+      "start": 514.596,
+      "duration": 3.84,
+      "text": "Towards the end of the sketch, there was a child list,"
+    },
+    {
+      "start": 518.436,
+      "duration": 3.24,
+      "text": "and it listed the children specifically in birth order,"
+    },
+    {
+      "start": 521.676,
+      "duration": 5.2,
+      "text": "and it noted that each child is discussed later in later chapters."
+    },
+    {
+      "start": 527.036,
+      "duration": 2.32,
+      "text": "And I wasn't sure what to make of it."
+    },
+    {
+      "start": 529.396,
+      "duration": 3.36,
+      "text": "I wasn't sure if that meant that this was a transcription from a book,"
+    },
+    {
+      "start": 532.996,
+      "duration": 1.84,
+      "text": "or was it just his own research?"
+    },
+    {
+      "start": 535.316,
+      "duration": 2.72,
+      "text": "I did check the children in Richard's tree,"
+    },
+    {
+      "start": 538.276,
+      "duration": 4.04,
+      "text": "and I didn't find any additional chapters linked to any of the children."
+    },
+    {
+      "start": 543.636,
+      "duration": 4.36,
+      "text": "Now, the point of this source analysis is not to go through the process of labeling,"
+    },
+    {
+      "start": 548.196,
+      "duration": 4.84,
+      "text": "but to really help you assess the accuracy, credibility,"
+    },
+    {
+      "start": 553.036,
+      "duration": 4.68,
+      "text": "and completeness of the source and whether or not there were opportunities"
+    },
+    {
+      "start": 557.876,
+      "duration": 2.08,
+      "text": "for errors to have been introduced."
+    },
+    {
+      "start": 560.316,
+      "duration": 4.6,
+      "text": "And I think in this case, there were plenty of opportunities for errors to be introduced."
+    },
+    {
+      "start": 567.636,
+      "duration": 3.8,
+      "text": "So what about the information that was contained in the source?"
+    },
+    {
+      "start": 572.716,
+      "duration": 2.4,
+      "text": "There are no informants identified."
+    },
+    {
+      "start": 575.196,
+      "duration": 5.12,
+      "text": "Therefore we have no idea about their reliability, consistency or bias."
+    },
+    {
+      "start": 581.516,
+      "duration": 6.04,
+      "text": "And presumably the person who wrote it was not alive at the same time David was."
+    },
+    {
+      "start": 588.076,
+      "duration": 5.24,
+      "text": "So therefore it's not based on first hand knowledge or primary information."
+    },
+    {
+      "start": 594.476,
+      "duration": 3.28,
+      "text": "Now, one thing that I did notice was that there were many examples of"
+    },
+    {
+      "start": 597.756,
+      "duration": 5.36,
+      "text": "the use of qualifiers. And what I mean by this is that there were phrases such"
+    },
+    {
+      "start": 603.116,
+      "duration": 9.0,
+      "text": "as David Durst was probably born in Shenandoah, Virginia, and David's known siblings were,"
+    },
+    {
+      "start": 612.156,
+      "duration": 2.04,
+      "text": "you know, and these types of qualifiers,"
+    },
+    {
+      "start": 614.196,
+      "duration": 2.28,
+      "text": "I thought were great because that indicated that"
+    },
+    {
+      "start": 616.476,
+      "duration": 4.4,
+      "text": "the author was being very careful to qualify statements so"
+    },
+    {
+      "start": 620.876,
+      "duration": 4.4,
+      "text": "as not to imply that things were facts that they didn't have proof for,"
+    },
+    {
+      "start": 625.276,
+      "duration": 2.72,
+      "text": "but they just didn't provide proof for anything to us."
+    },
+    {
+      "start": 631.316,
+      "duration": 5.08,
+      "text": "So step two of dealing with questionable sources is to organize your information"
+    },
+    {
+      "start": 636.396,
+      "duration": 5.92,
+      "text": "for your source. I recommend starting with a transcription that can then be manipulated."
+    },
+    {
+      "start": 642.476,
+      "duration": 5.24,
+      "text": "And in this case, the biographical sketch was already in a word processing document,"
+    },
+    {
+      "start": 647.716,
+      "duration": 2.36,
+      "text": "so no transcription was necessary."
+    },
+    {
+      "start": 652.276,
+      "duration": 3.92,
+      "text": "The next thing to do is to arrange the information chronologically,"
+    },
+    {
+      "start": 656.756,
+      "duration": 3.64,
+      "text": "and this helps us to correlate the information into a timeline."
+    },
+    {
+      "start": 660.636,
+      "duration": 5.44,
+      "text": "And then you can see conflicts and overlaps and gaps in the life of David Darst."
+    },
+    {
+      "start": 669.116,
+      "duration": 4.44,
+      "text": "So I copied and pasted the original sketch into a new document."
+    },
+    {
+      "start": 673.956,
+      "duration": 5.92,
+      "text": "Then I went through paragraph by paragraph and separated out each statement of fact."
+    },
+    {
+      "start": 680.476,
+      "duration": 5.16,
+      "text": "If there was a date or even just a year, I use that to help sort it."
+    },
+    {
+      "start": 685.916,
+      "duration": 2.24,
+      "text": "And I went through the entire sketch doing this."
+    },
+    {
+      "start": 688.156,
+      "duration": 4.36,
+      "text": "I put everything into a table to organize the different statements of fact."
+    },
+    {
+      "start": 693.436,
+      "duration": 4.08,
+      "text": "And this is what it ended up looking like. Well, this is just part of my table."
+    },
+    {
+      "start": 698.636,
+      "duration": 5.4,
+      "text": "So some of the information was not tied to a specific year. So I left those at the top."
+    },
+    {
+      "start": 704.996,
+      "duration": 2.52,
+      "text": "Then I sorted the information by year."
+    },
+    {
+      "start": 708.436,
+      "duration": 3.16,
+      "text": "And because there were so many pieces of information,"
+    },
+    {
+      "start": 711.756,
+      "duration": 5.36,
+      "text": "I decided in this case to add a column for type or category of information."
+    },
+    {
+      "start": 717.996,
+      "duration": 3.28,
+      "text": "Now, I don't expect you to be able to read this, but again,"
+    },
+    {
+      "start": 721.276,
+      "duration": 3.88,
+      "text": "I just wanted to give you an indication of what it looked like at this stage."
+    },
+    {
+      "start": 728.036,
+      "duration": 2.96,
+      "text": "Next, I make sure to track family members."
+    },
+    {
+      "start": 731.596,
+      "duration": 2.44,
+      "text": "For most genealogical research questions,"
+    },
+    {
+      "start": 734.156,
+      "duration": 5.48,
+      "text": "research into an individual's family is necessary, and in this case,"
+    },
+    {
+      "start": 739.636,
+      "duration": 5.08,
+      "text": "I thought it was very important to see David in the context of his parents, siblings,"
+    },
+    {
+      "start": 744.716,
+      "duration": 1.28,
+      "text": "spouse, and children."
+    },
+    {
+      "start": 748.556,
+      "duration": 2.44,
+      "text": "So this is the list of all of the names"
+    },
+    {
+      "start": 750.996,
+      "duration": 4.0,
+      "text": "and relationships that were in that questionable biographical sketch."
+    },
+    {
+      "start": 755.716,
+      "duration": 2.04,
+      "text": "So as you can see, there were many."
+    },
+    {
+      "start": 758.236,
+      "duration": 2.44,
+      "text": "And even though I'm interested in David Durst,"
+    },
+    {
+      "start": 760.676,
+      "duration": 4.8,
+      "text": "I wanted to make sure to track and research each of these people to make sure that"
+    },
+    {
+      "start": 765.476,
+      "duration": 2.44,
+      "text": "I placed David in the correct family."
+    },
+    {
+      "start": 770.756,
+      "duration": 5.16,
+      "text": "So now this is the fun part. Now I take all of those statements of fact from that"
+    },
+    {
+      "start": 775.916,
+      "duration": 6.04,
+      "text": "questionable source, and I sort those information items into the buckets based on,"
+    },
+    {
+      "start": 781.956,
+      "duration": 2.92,
+      "text": "again, the anticipated degree of difficulty."
+    },
+    {
+      "start": 785.436,
+      "duration": 4.48,
+      "text": "And bucket one is for things that can be corroborated corroborated easily."
+    },
+    {
+      "start": 790.436,
+      "duration": 2.56,
+      "text": "Bucket two is for information that's going to take"
+    },
+    {
+      "start": 793.036,
+      "duration": 2.88,
+      "text": "a little bit more extensive research to corroborate."
+    },
+    {
+      "start": 796.236,
+      "duration": 4.84,
+      "text": "And bucket three is for things that I have absolutely no idea how to corroborate"
+    },
+    {
+      "start": 801.076,
+      "duration": 1.56,
+      "text": "or even if it's possible."
+    },
+    {
+      "start": 805.756,
+      "duration": 6.2,
+      "text": "So I want you to think about how you would sort these three different items from"
+    },
+    {
+      "start": 811.956,
+      "duration": 3.36,
+      "text": "the biographical sketch into the three different buckets."
+    },
+    {
+      "start": 816.356,
+      "duration": 9.16,
+      "text": "Number one Christina Durst married Rubin Smith on May 1st, 1815, in Gallipolis, Ohio."
+    },
+    {
+      "start": 826.676,
+      "duration": 6.88,
+      "text": "Number two. In 1816, Christina applied for David's back pay. Number three."
+    },
+    {
+      "start": 833.996,
+      "duration": 5.2,
+      "text": "According to family legend, David died in the Black Swamp in northwest Ohio."
+    },
+    {
+      "start": 840.676,
+      "duration": 5.08,
+      "text": "Since this is a pre-recorded session, you can pause at this point, and when you're ready,"
+    },
+    {
+      "start": 845.876,
+      "duration": 6.88,
+      "text": "press play to see how I sorted them."
+    },
+    {
+      "start": 852.756,
+      "duration": 6.44,
+      "text": "So I place the item about David's widow's 1815 marriage in bucket one,"
+    },
+    {
+      "start": 859.196,
+      "duration": 2.56,
+      "text": "based on my previous research experience."
+    },
+    {
+      "start": 861.956,
+      "duration": 5.88,
+      "text": "I know that Ohio County marriage records are easily available at FamilySearch online,"
+    },
+    {
+      "start": 867.836,
+      "duration": 2.52,
+      "text": "which is why I placed this one in bucket one."
+    },
+    {
+      "start": 871.836,
+      "duration": 3.68,
+      "text": "I place Christina's application for back pay in bucket two."
+    },
+    {
+      "start": 876.076,
+      "duration": 4.8,
+      "text": "I have never researched War of 1812 Ohio Militia records before,"
+    },
+    {
+      "start": 880.876,
+      "duration": 2.32,
+      "text": "so I thought that that's going to take some time"
+    },
+    {
+      "start": 883.196,
+      "duration": 3.92,
+      "text": "for me to me to figure out where those records are and how to access them."
+    },
+    {
+      "start": 888.596,
+      "duration": 4.72,
+      "text": "And I place the family legend of where exactly David died in bucket three."
+    },
+    {
+      "start": 894.116,
+      "duration": 4.32,
+      "text": "So to me, this is one of those pieces of information which will likely never be"
+    },
+    {
+      "start": 898.436,
+      "duration": 3.52,
+      "text": "verified, but I don't want to just throw it out."
+    },
+    {
+      "start": 903.116,
+      "duration": 4.68,
+      "text": "I'll likely include it in my final sketch and then cite the questionable source"
+    },
+    {
+      "start": 908.796,
+      "duration": 5.8,
+      "text": "for that piece of information. So did you agree with me on which statement went in?"
+    },
+    {
+      "start": 914.596,
+      "duration": 3.2,
+      "text": "Which bucket? And your answers might differ based"
+    },
+    {
+      "start": 917.796,
+      "duration": 4.68,
+      "text": "on your research experience with these records and location and time frame."
+    },
+    {
+      "start": 925.396,
+      "duration": 5.04,
+      "text": "So after I sort the information items, I execute bucket one."
+    },
+    {
+      "start": 931.236,
+      "duration": 4.52,
+      "text": "I use a color coding scheme. I use white for items that are not yet resolved."
+    },
+    {
+      "start": 936.196,
+      "duration": 2.56,
+      "text": "So at the beginning everything is white"
+    },
+    {
+      "start": 939.236,
+      "duration": 4.52,
+      "text": "and then information items that are green are ones that I was able to verify"
+    },
+    {
+      "start": 943.916,
+      "duration": 6.12,
+      "text": "and were accurate. Now I use the color orange to indicate information items that"
+    },
+    {
+      "start": 950.036,
+      "duration": 4.8,
+      "text": "I was able to verify, but the details were not exactly accurate,"
+    },
+    {
+      "start": 955.716,
+      "duration": 4.72,
+      "text": "and I use blue for items that I was not able to find a source for."
+    },
+    {
+      "start": 960.436,
+      "duration": 4.0,
+      "text": "And if you see on the right hand side I've added then the citations,"
+    },
+    {
+      "start": 964.436,
+      "duration": 5.12,
+      "text": "which was the key part that was missing in the questionable genealogical source."
+    },
+    {
+      "start": 970.756,
+      "duration": 5.16,
+      "text": "Well, I find this color scheme allows me to quickly pick up my research where I left off"
+    },
+    {
+      "start": 976.316,
+      "duration": 3.12,
+      "text": "and to know which information items to work on next."
+    },
+    {
+      "start": 981.956,
+      "duration": 4.52,
+      "text": "Now, once I execute bucket the items that were in bucket one,"
+    },
+    {
+      "start": 986.476,
+      "duration": 3.16,
+      "text": "then I tackle buckle two or bucket two."
+    },
+    {
+      "start": 990.076,
+      "duration": 5.0,
+      "text": "I address bucket one first because those are the ones that are easy quick wins."
+    },
+    {
+      "start": 995.076,
+      "duration": 4.4,
+      "text": "But also if the information in bucket one is not at all accurate,"
+    },
+    {
+      "start": 999.596,
+      "duration": 5.04,
+      "text": "then I rethink whether or not I even want to try to validate the items in bucket two."
+    },
+    {
+      "start": 1007.516,
+      "duration": 4.56,
+      "text": "And then for bucket three, I really have to sit down and evaluate whether"
+    },
+    {
+      "start": 1012.076,
+      "duration": 5.24,
+      "text": "or not to include these items as tentative or to leave them out entirely."
+    },
+    {
+      "start": 1021.596,
+      "duration": 4.24,
+      "text": "So to summarize, you want to critically analyze the source,"
+    },
+    {
+      "start": 1026.156,
+      "duration": 6.28,
+      "text": "organize the information items systematically, and then attempt to verify the evidence."
+    },
+    {
+      "start": 1035.076,
+      "duration": 3.6,
+      "text": "By applying the actionable steps I just shared with you."
+    },
+    {
+      "start": 1038.996,
+      "duration": 7.6,
+      "text": "I was able to take this questionable genealogical source and turn it into"
+    },
+    {
+      "start": 1046.596,
+      "duration": 3.44,
+      "text": "a credible source cited biographical sketch."
+    },
+    {
+      "start": 1050.916,
+      "duration": 4.0,
+      "text": "Now, I was able to verify most of the information contained in"
+    },
+    {
+      "start": 1054.916,
+      "duration": 6.6,
+      "text": "the original sketch, and I was able to resolve multiple conflicts and to include"
+    },
+    {
+      "start": 1061.516,
+      "duration": 4.56,
+      "text": "an additional child for David, who had been inadvertently omitted."
+    },
+    {
+      "start": 1068.596,
+      "duration": 5.16,
+      "text": "So I'd like to leave you with a quote from someone who is not known as"
+    },
+    {
+      "start": 1073.796,
+      "duration": 5.76,
+      "text": "for his genealogical advice. The important thing is not to stop questioning."
+    },
+    {
+      "start": 1080.076,
+      "duration": 8.84,
+      "text": "Curiosity has its own reason for existing. And this quote is from Albert Einstein. Allegedly."
+    },
+    {
+      "start": 1091.436,
+      "duration": 5.24,
+      "text": "Thank you for joining me today. I hope you enjoy Rootstech 2025."
+    }
+  ],
+  "full_text": "Hi, I’m Shannon Green and today’s session is titled From Questionable to Credible: Analyzing and Verifying Genealogical Sources. Today, I'm going to share some actionable advice on what to do when you come across a questionable source. And although we should be questioning all of our sources. Today I'm talking about sources that seem particularly suspicious or dubious. Um, perhaps those without citations. So how many of you have stumbled on a family tree? That seems incorrect. Last year I was researching my ancestor, Mary Taylor, and I received hints that her parents had been identified. More than a dozen trees. Had the same parents listed as Isaac Taylor and Lydia Perkins. Now, I could have just accepted them as her parents and move on. Or I could have thrown out that suggestion because there were no sources attached. But I decided to analyze and verify. I researched when Isaac and Lydia were born, and Isaac was only 12 years old when Mary was born. I researched when Isaac and Lydia were married, and they were married nine years after Mary's birth. I also researched where they were living. Isaac and Lydia lived in New England at the same time that Mary was born in Pennsylvania. So in this case, this source was false. But keep in mind that many times these hints are correct, so you must evaluate each case. Other types of genealogical sources which I would consider questionable are books that are collection of personal sketches. Many times the subject of the sketch paid to help underwrite the expense of printing, and they were frequently the source of the information provided, or those amazing family genealogies, many of which were published in the late 1800s. And I can only imagine the amount of family lore and knowledge that the people who assembled these had. And then how many of you have found a find a grave memorial that has information that you've never seen before? So what do you do when you see one of these types of questionable sources? Well, I want to outline for you the steps I take to verify these sources when I come across them. There are three high level steps to my To my process, I critique the source. I organize the information. And then I verify the evidence. The first step in turning a questionable source into credible evidence is to critique the source. And this involves three parts. First, you want to draft a citation. A good citation tells us where the source came from and highlights any weaknesses in its reliability. Next, analyze the source. Think about how and why the source was created. Is it an original or a derivative record, or perhaps an authored work? And the real benefit of labeling something as derivative or an authored work is that it's a cue to seek out the original. Finally, evaluate the information provided in the source. Who was the likely informant and how reliable were they? Together, these steps give a clearer view of the sources credibility. The second step is to organize the information. I recommend using different organizational methods to help you spot patterns and gaps and conflicts more easily. For any handwritten or hard to read sources, consider creating a transcription to provide a clear reference to work from. Organize the information chronologically into a timeline, and this can highlight inconsistencies such as gaps or overlapping events. And then you want to track family connections. Understanding an individual's family and associates really is crucial, especially when there are multiple people who share the same name. Step three is to verify the evidence. I like to sort information items into these three verification buckets based on the anticipated level of difficulty. Bucket one. These are items that are easy to verify or include straightforward action items, for example, contacting a cemetery or a church record office. Bucket two. These are harder to verify items. They may require researching records that are in less accessible archives. And bucket three. These includes items that are conjecture or are nearly impossible to verify. For example, set somebody's motivation. So the process is simple. I execute bucket one. I plan for bucket two. And I evaluate bucket three. And this is all going to make more sense with the example I'm going to show you now. So we're going to look at look at an example of a questionable genealogical source, and how I applied this method to turn it in to credible evidence. I was researching my ancestor, David Durst, and I found him enumerated in 1800, living in the Northwest Territories today, that's Ohio. I looked at online family trees that included David Durst, and I was kind of surprised that I couldn't find any actual records attached to him in other people's trees, but I did find this fabulous biographical sketch. A gentleman named Richard posted this story on his tree titled The History of David Durst. It was posted in 2010, and since then it has been attached to 119 trees. So this is my questionable source. Now I'm only showing you part of it, and I don't expect you to be able to read it. I simply wanted to give you an idea of what it looked like. So the first thing I did was to cite the biographical sketch. I put the username for the gentleman who posted it as the author. I included the title of the document, the date it was posted, and that it was attached to a tree titled Richard's Family Tree, and I had a link to the tree. And I also include the name of the person of interest, David Durst. And because there are multiple men named David Durst in this tree, I added the, um, his death date. And then I also noted that it was an unsourced biographical sketch. And for the purpose of this presentation, I have changed some of Richard's details to protect his privacy. So from this citation I crafted, I can tell what type of source it is, where to find it, and then I do have some concerns about its reliability. The next part of critiquing a source is to analyze the source. Sometimes I write the analysis down, and other times it kind of just happens in my head. In this case, I noted that it is an authored work. So somebody conducted research and wrote this biographical sketch. I note that it does not have any citations, and although I did list the gentleman who posted it as the author when I cited it, there actually is no notation that he was the one that conducted the research and actually wrote the sketch. And we, of course, have no information on the history and the provenance. Now, also, this was kind of curious. Towards the end of the sketch, there was a child list, and it listed the children specifically in birth order, and it noted that each child is discussed later in later chapters. And I wasn't sure what to make of it. I wasn't sure if that meant that this was a transcription from a book, or was it just his own research? I did check the children in Richard's tree, and I didn't find any additional chapters linked to any of the children. Now, the point of this source analysis is not to go through the process of labeling, but to really help you assess the accuracy, credibility, and completeness of the source and whether or not there were opportunities for errors to have been introduced. And I think in this case, there were plenty of opportunities for errors to be introduced. So what about the information that was contained in the source? There are no informants identified. Therefore we have no idea about their reliability, consistency or bias. And presumably the person who wrote it was not alive at the same time David was. So therefore it's not based on first hand knowledge or primary information. Now, one thing that I did notice was that there were many examples of the use of qualifiers. And what I mean by this is that there were phrases such as David Durst was probably born in Shenandoah, Virginia, and David's known siblings were, you know, and these types of qualifiers, I thought were great because that indicated that the author was being very careful to qualify statements so as not to imply that things were facts that they didn't have proof for, but they just didn't provide proof for anything to us. So step two of dealing with questionable sources is to organize your information for your source. I recommend starting with a transcription that can then be manipulated. And in this case, the biographical sketch was already in a word processing document, so no transcription was necessary. The next thing to do is to arrange the information chronologically, and this helps us to correlate the information into a timeline. And then you can see conflicts and overlaps and gaps in the life of David Darst. So I copied and pasted the original sketch into a new document. Then I went through paragraph by paragraph and separated out each statement of fact. If there was a date or even just a year, I use that to help sort it. And I went through the entire sketch doing this. I put everything into a table to organize the different statements of fact. And this is what it ended up looking like. Well, this is just part of my table. So some of the information was not tied to a specific year. So I left those at the top. Then I sorted the information by year. And because there were so many pieces of information, I decided in this case to add a column for type or category of information. Now, I don't expect you to be able to read this, but again, I just wanted to give you an indication of what it looked like at this stage. Next, I make sure to track family members. For most genealogical research questions, research into an individual's family is necessary, and in this case, I thought it was very important to see David in the context of his parents, siblings, spouse, and children. So this is the list of all of the names and relationships that were in that questionable biographical sketch. So as you can see, there were many. And even though I'm interested in David Durst, I wanted to make sure to track and research each of these people to make sure that I placed David in the correct family. So now this is the fun part. Now I take all of those statements of fact from that questionable source, and I sort those information items into the buckets based on, again, the anticipated degree of difficulty. And bucket one is for things that can be corroborated corroborated easily. Bucket two is for information that's going to take a little bit more extensive research to corroborate. And bucket three is for things that I have absolutely no idea how to corroborate or even if it's possible. So I want you to think about how you would sort these three different items from the biographical sketch into the three different buckets. Number one Christina Durst married Rubin Smith on May 1st, 1815, in Gallipolis, Ohio. Number two. In 1816, Christina applied for David's back pay. Number three. According to family legend, David died in the Black Swamp in northwest Ohio. Since this is a pre-recorded session, you can pause at this point, and when you're ready, press play to see how I sorted them. So I place the item about David's widow's 1815 marriage in bucket one, based on my previous research experience. I know that Ohio County marriage records are easily available at FamilySearch online, which is why I placed this one in bucket one. I place Christina's application for back pay in bucket two. I have never researched War of 1812 Ohio Militia records before, so I thought that that's going to take some time for me to me to figure out where those records are and how to access them. And I place the family legend of where exactly David died in bucket three. So to me, this is one of those pieces of information which will likely never be verified, but I don't want to just throw it out. I'll likely include it in my final sketch and then cite the questionable source for that piece of information. So did you agree with me on which statement went in? Which bucket? And your answers might differ based on your research experience with these records and location and time frame. So after I sort the information items, I execute bucket one. I use a color coding scheme. I use white for items that are not yet resolved. So at the beginning everything is white and then information items that are green are ones that I was able to verify and were accurate. Now I use the color orange to indicate information items that I was able to verify, but the details were not exactly accurate, and I use blue for items that I was not able to find a source for. And if you see on the right hand side I've added then the citations, which was the key part that was missing in the questionable genealogical source. Well, I find this color scheme allows me to quickly pick up my research where I left off and to know which information items to work on next. Now, once I execute bucket the items that were in bucket one, then I tackle buckle two or bucket two. I address bucket one first because those are the ones that are easy quick wins. But also if the information in bucket one is not at all accurate, then I rethink whether or not I even want to try to validate the items in bucket two. And then for bucket three, I really have to sit down and evaluate whether or not to include these items as tentative or to leave them out entirely. So to summarize, you want to critically analyze the source, organize the information items systematically, and then attempt to verify the evidence. By applying the actionable steps I just shared with you. I was able to take this questionable genealogical source and turn it into a credible source cited biographical sketch. Now, I was able to verify most of the information contained in the original sketch, and I was able to resolve multiple conflicts and to include an additional child for David, who had been inadvertently omitted. So I'd like to leave you with a quote from someone who is not known as for his genealogical advice. The important thing is not to stop questioning. Curiosity has its own reason for existing. And this quote is from Albert Einstein. Allegedly. Thank you for joining me today. I hope you enjoy Rootstech 2025.",
+  "attempts": [
+    {
+      "client": "IOS",
+      "playability": {
+        "status": "OK",
+        "playableInEmbed": true,
+        "offlineability": {
+          "buttonRenderer": {
+            "navigationEndpoint": {
+              "clickTrackingParams": "CAoQ6ewBIhMI-oeAiuzblwMVC31MCB1vBgeoygEEZ--k6Q==",
+              "ypcGetOfflineUpsellEndpoint": {
+                "params": "ChPqqN25AQ0KC1I1MFcxS0RyUlB3IgtSNTBXMUtEclJQdyoVCAkYAVIPCgtSNTBXMUtEclJQdyAB"
+              }
+            },
+            "trackingParams": "CAoQ6ewBIhMI-oeAiuzblwMVC31MCB1vBgeo"
+          }
+        },
+        "pictureInPicture": {
+          "pictureInPictureRenderer": {
+            "playableInPip": true,
+            "offByDefault": false,
+            "shouldResumeOnHead": false
+          }
+        },
+        "miniplayer": {
+          "miniplayerRenderer": {
+            "playbackMode": "PLAYBACK_MODE_ALLOW"
+          }
+        },
+        "contextParams": "Q0FFU0FnZ0M="
+      },
+      "outcome": "ok"
+    }
+  ],
+  "fetched_at": "2026-10-28T04:11:19.511122+00:00",
+  "client": "IOS",
+  "json_path": "transcripts/034_R50W1KDrRPw.json",
+  "text_path": "transcripts/034_R50W1KDrRPw.txt"
+}

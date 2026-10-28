@@ -1,0 +1,6264 @@
+{
+  "index": 61,
+  "url": "https://www.youtube.com/watch?v=uAcku9kesK4",
+  "video_id": "uAcku9kesK4",
+  "status": "ok",
+  "metadata": {
+    "title": "U.S. Probate Records for Genealogy  |  Midwest Genealogy Center",
+    "author": "Mid-Continent Public Library",
+    "channelId": "UC7JvM9NdRoCQviu1txsXDOA",
+    "lengthSeconds": "2921",
+    "viewCount": "28",
+    "shortDescription": "Probate records can help genealogists scale that brick wall between generations and add information about their family. If your ancestor had assets, they probably had probate papers. This class follows the estate from the documents to the final settlement. It also covers items such as dower rights. It does not offer legal advice. \n\nThis program was created for an adult audience. \n\nPlease be sure to like and share! Visit our website to register for upcoming in-person and virtual Genealogy programming events! https://www.mymcpl.org/genealogy \n\nCheck more Genealogy virtual programming videos on our playlist here: https://youtube.com/playlist?list=PLnm7vznxHH_cDXKlVbtZtZ3et2etxoLne \n\n#MidContinentPublicLibrary #MCPL #AccessYourWorld #CommunityProgramming #VirtualProgramming #Genealogy #Ancestry #History #HistoricalResearch"
+  },
+  "caption_tracks": [
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=uAcku9kesK4&ei=6nXhavThMryRsfIP5KLgqQQ&caps=asr&opi=112496729&xoaf=5&xowf=1&xospf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185882&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=A17BFB825ACE4B3D53754BC5DBC0258C6B013C89.26BDFB896619389625E2C7055FF030BB3346BEC9&key=yt8&kind=asr&lang=ar&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Arabic (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.ar",
+      "languageCode": "ar",
+      "kind": "asr",
+      "rtl": true,
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=uAcku9kesK4&ei=6nXhavThMryRsfIP5KLgqQQ&caps=asr&opi=112496729&xoaf=5&xowf=1&xospf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185882&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=A17BFB825ACE4B3D53754BC5DBC0258C6B013C89.26BDFB896619389625E2C7055FF030BB3346BEC9&key=yt8&kind=asr&lang=bn&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Bangla (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.bn",
+      "languageCode": "bn",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=uAcku9kesK4&ei=6nXhavThMryRsfIP5KLgqQQ&caps=asr&opi=112496729&xoaf=5&xowf=1&xospf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185882&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=A17BFB825ACE4B3D53754BC5DBC0258C6B013C89.26BDFB896619389625E2C7055FF030BB3346BEC9&key=yt8&kind=asr&lang=nl-NL&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Dutch (Netherlands) (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.nl-NL",
+      "languageCode": "nl-NL",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=uAcku9kesK4&ei=6nXhavThMryRsfIP5KLgqQQ&caps=asr&opi=112496729&xoaf=5&xowf=1&xospf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185882&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=A17BFB825ACE4B3D53754BC5DBC0258C6B013C89.26BDFB896619389625E2C7055FF030BB3346BEC9&key=yt8&kind=asr&lang=en&variant=gemini",
+      "name": {
+        "runs": [
+          {
+            "text": "English (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.en",
+      "languageCode": "en",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=uAcku9kesK4&ei=6nXhavThMryRsfIP5KLgqQQ&caps=asr&opi=112496729&xoaf=5&xowf=1&xospf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185882&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=A17BFB825ACE4B3D53754BC5DBC0258C6B013C89.26BDFB896619389625E2C7055FF030BB3346BEC9&key=yt8&kind=asr&lang=fr-FR&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "French (France) (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.fr-FR",
+      "languageCode": "fr-FR",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=uAcku9kesK4&ei=6nXhavThMryRsfIP5KLgqQQ&caps=asr&opi=112496729&xoaf=5&xowf=1&xospf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185882&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=A17BFB825ACE4B3D53754BC5DBC0258C6B013C89.26BDFB896619389625E2C7055FF030BB3346BEC9&key=yt8&kind=asr&lang=de-DE&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "German (Germany) (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.de-DE",
+      "languageCode": "de-DE",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=uAcku9kesK4&ei=6nXhavThMryRsfIP5KLgqQQ&caps=asr&opi=112496729&xoaf=5&xowf=1&xospf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185882&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=A17BFB825ACE4B3D53754BC5DBC0258C6B013C89.26BDFB896619389625E2C7055FF030BB3346BEC9&key=yt8&kind=asr&lang=iw&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Hebrew (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.iw",
+      "languageCode": "iw",
+      "kind": "asr",
+      "rtl": true,
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=uAcku9kesK4&ei=6nXhavThMryRsfIP5KLgqQQ&caps=asr&opi=112496729&xoaf=5&xowf=1&xospf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185882&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=A17BFB825ACE4B3D53754BC5DBC0258C6B013C89.26BDFB896619389625E2C7055FF030BB3346BEC9&key=yt8&kind=asr&lang=hi&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Hindi (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.hi",
+      "languageCode": "hi",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=uAcku9kesK4&ei=6nXhavThMryRsfIP5KLgqQQ&caps=asr&opi=112496729&xoaf=5&xowf=1&xospf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185882&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=A17BFB825ACE4B3D53754BC5DBC0258C6B013C89.26BDFB896619389625E2C7055FF030BB3346BEC9&key=yt8&kind=asr&lang=id&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Indonesian (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.id",
+      "languageCode": "id",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=uAcku9kesK4&ei=6nXhavThMryRsfIP5KLgqQQ&caps=asr&opi=112496729&xoaf=5&xowf=1&xospf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185882&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=A17BFB825ACE4B3D53754BC5DBC0258C6B013C89.26BDFB896619389625E2C7055FF030BB3346BEC9&key=yt8&kind=asr&lang=it&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Italian (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.it",
+      "languageCode": "it",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=uAcku9kesK4&ei=6nXhavThMryRsfIP5KLgqQQ&caps=asr&opi=112496729&xoaf=5&xowf=1&xospf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185882&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=A17BFB825ACE4B3D53754BC5DBC0258C6B013C89.26BDFB896619389625E2C7055FF030BB3346BEC9&key=yt8&kind=asr&lang=ja&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Japanese (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.ja",
+      "languageCode": "ja",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=uAcku9kesK4&ei=6nXhavThMryRsfIP5KLgqQQ&caps=asr&opi=112496729&xoaf=5&xowf=1&xospf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185882&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=A17BFB825ACE4B3D53754BC5DBC0258C6B013C89.26BDFB896619389625E2C7055FF030BB3346BEC9&key=yt8&kind=asr&lang=ko&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Korean (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.ko",
+      "languageCode": "ko",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=uAcku9kesK4&ei=6nXhavThMryRsfIP5KLgqQQ&caps=asr&opi=112496729&xoaf=5&xowf=1&xospf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185882&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=A17BFB825ACE4B3D53754BC5DBC0258C6B013C89.26BDFB896619389625E2C7055FF030BB3346BEC9&key=yt8&kind=asr&lang=ml&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Malayalam (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.ml",
+      "languageCode": "ml",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=uAcku9kesK4&ei=6nXhavThMryRsfIP5KLgqQQ&caps=asr&opi=112496729&xoaf=5&xowf=1&xospf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185882&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=A17BFB825ACE4B3D53754BC5DBC0258C6B013C89.26BDFB896619389625E2C7055FF030BB3346BEC9&key=yt8&kind=asr&lang=pl&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Polish (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.pl",
+      "languageCode": "pl",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=uAcku9kesK4&ei=6nXhavThMryRsfIP5KLgqQQ&caps=asr&opi=112496729&xoaf=5&xowf=1&xospf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185882&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=A17BFB825ACE4B3D53754BC5DBC0258C6B013C89.26BDFB896619389625E2C7055FF030BB3346BEC9&key=yt8&kind=asr&lang=pt-BR&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Portuguese (Brazil) (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.pt-BR",
+      "languageCode": "pt-BR",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=uAcku9kesK4&ei=6nXhavThMryRsfIP5KLgqQQ&caps=asr&opi=112496729&xoaf=5&xowf=1&xospf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185882&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=A17BFB825ACE4B3D53754BC5DBC0258C6B013C89.26BDFB896619389625E2C7055FF030BB3346BEC9&key=yt8&kind=asr&lang=pa&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Punjabi (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.pa",
+      "languageCode": "pa",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=uAcku9kesK4&ei=6nXhavThMryRsfIP5KLgqQQ&caps=asr&opi=112496729&xoaf=5&xowf=1&xospf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185882&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=A17BFB825ACE4B3D53754BC5DBC0258C6B013C89.26BDFB896619389625E2C7055FF030BB3346BEC9&key=yt8&kind=asr&lang=ru&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Russian (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.ru",
+      "languageCode": "ru",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=uAcku9kesK4&ei=6nXhavThMryRsfIP5KLgqQQ&caps=asr&opi=112496729&xoaf=5&xowf=1&xospf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185882&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=A17BFB825ACE4B3D53754BC5DBC0258C6B013C89.26BDFB896619389625E2C7055FF030BB3346BEC9&key=yt8&kind=asr&lang=es-US&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Spanish (United States) (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.es-US",
+      "languageCode": "es-US",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=uAcku9kesK4&ei=6nXhavThMryRsfIP5KLgqQQ&caps=asr&opi=112496729&xoaf=5&xowf=1&xospf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185882&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=A17BFB825ACE4B3D53754BC5DBC0258C6B013C89.26BDFB896619389625E2C7055FF030BB3346BEC9&key=yt8&kind=asr&lang=ta&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Tamil (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.ta",
+      "languageCode": "ta",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=uAcku9kesK4&ei=6nXhavThMryRsfIP5KLgqQQ&caps=asr&opi=112496729&xoaf=5&xowf=1&xospf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185882&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=A17BFB825ACE4B3D53754BC5DBC0258C6B013C89.26BDFB896619389625E2C7055FF030BB3346BEC9&key=yt8&kind=asr&lang=te&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Telugu (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.te",
+      "languageCode": "te",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=uAcku9kesK4&ei=6nXhavThMryRsfIP5KLgqQQ&caps=asr&opi=112496729&xoaf=5&xowf=1&xospf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185882&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=A17BFB825ACE4B3D53754BC5DBC0258C6B013C89.26BDFB896619389625E2C7055FF030BB3346BEC9&key=yt8&kind=asr&lang=uk&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Ukrainian (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.uk",
+      "languageCode": "uk",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    }
+  ],
+  "selected_track": {
+    "baseUrl": "https://www.youtube.com/api/timedtext?v=uAcku9kesK4&ei=6nXhavThMryRsfIP5KLgqQQ&caps=asr&opi=112496729&xoaf=5&xowf=1&xospf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185882&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=A17BFB825ACE4B3D53754BC5DBC0258C6B013C89.26BDFB896619389625E2C7055FF030BB3346BEC9&key=yt8&kind=asr&lang=en&variant=gemini",
+    "name": {
+      "runs": [
+        {
+          "text": "English (auto-generated)"
+        }
+      ]
+    },
+    "vssId": "a.en",
+    "languageCode": "en",
+    "kind": "asr",
+    "isTranslatable": true,
+    "trackName": ""
+  },
+  "segments": [
+    {
+      "start": 30.2,
+      "duration": 4.44,
+      "text": "Good afternoon."
+    },
+    {
+      "start": 32.0,
+      "duration": 5.8,
+      "text": "And welcome to"
+    },
+    {
+      "start": 34.64,
+      "duration": 5.88,
+      "text": "Midwest Genealogy Center's US Probate"
+    },
+    {
+      "start": 37.8,
+      "duration": 5.04,
+      "text": "Records for Genealogy."
+    },
+    {
+      "start": 40.52,
+      "duration": 4.72,
+      "text": "Uh first a few things, you should have"
+    },
+    {
+      "start": 42.84,
+      "duration": 5.76,
+      "text": "received an email"
+    },
+    {
+      "start": 45.24,
+      "duration": 5.6,
+      "text": "uh for those that are watching hybrid."
+    },
+    {
+      "start": 48.6,
+      "duration": 5.16,
+      "text": "Um"
+    },
+    {
+      "start": 50.84,
+      "duration": 5.16,
+      "text": "it will include uh the outline for the"
+    },
+    {
+      "start": 53.76,
+      "duration": 4.0,
+      "text": "class as well"
+    },
+    {
+      "start": 56.0,
+      "duration": 4.76,
+      "text": "as um"
+    },
+    {
+      "start": 57.76,
+      "duration": 3.0,
+      "text": "your number to get in."
+    },
+    {
+      "start": 61.04,
+      "duration": 1.52,
+      "text": "Uh"
+    },
+    {
+      "start": 61.88,
+      "duration": 3.28,
+      "text": "and"
+    },
+    {
+      "start": 62.56,
+      "duration": 4.6,
+      "text": "within 24 hours you will also be getting"
+    },
+    {
+      "start": 65.16,
+      "duration": 4.08,
+      "text": "an email that uh"
+    },
+    {
+      "start": 67.16,
+      "duration": 4.36,
+      "text": "has our marketing"
+    },
+    {
+      "start": 69.24,
+      "duration": 4.28,
+      "text": "evaluation sheet. Please fill that out"
+    },
+    {
+      "start": 71.52,
+      "duration": 3.64,
+      "text": "and return it."
+    },
+    {
+      "start": 73.52,
+      "duration": 4.72,
+      "text": "Please mute"
+    },
+    {
+      "start": 75.16,
+      "duration": 3.08,
+      "text": "your um"
+    },
+    {
+      "start": 79.76,
+      "duration": 4.16,
+      "text": "audio and your video."
+    },
+    {
+      "start": 82.52,
+      "duration": 2.88,
+      "text": "Um"
+    },
+    {
+      "start": 83.92,
+      "duration": 3.12,
+      "text": "also"
+    },
+    {
+      "start": 85.4,
+      "duration": 2.88,
+      "text": "please hold your questions to the end of"
+    },
+    {
+      "start": 87.04,
+      "duration": 3.84,
+      "text": "class."
+    },
+    {
+      "start": 88.28,
+      "duration": 4.56,
+      "text": "And we'll answer everything then."
+    },
+    {
+      "start": 90.88,
+      "duration": 3.96,
+      "text": "Uh"
+    },
+    {
+      "start": 92.84,
+      "duration": 4.16,
+      "text": "we're"
+    },
+    {
+      "start": 94.84,
+      "duration": 4.76,
+      "text": "Thank [snorts] you on that."
+    },
+    {
+      "start": 97.0,
+      "duration": 4.64,
+      "text": "Uh for those people here"
+    },
+    {
+      "start": 99.6,
+      "duration": 3.8,
+      "text": "little housekeeping."
+    },
+    {
+      "start": 101.64,
+      "duration": 4.44,
+      "text": "Um"
+    },
+    {
+      "start": 103.4,
+      "duration": 4.08,
+      "text": "the bathrooms are between the elevators."
+    },
+    {
+      "start": 106.08,
+      "duration": 3.32,
+      "text": "If for some [snorts]"
+    },
+    {
+      "start": 107.48,
+      "duration": 4.44,
+      "text": "reason there's an emergency, you can go"
+    },
+    {
+      "start": 109.4,
+      "duration": 5.68,
+      "text": "out the door and all the way to the"
+    },
+    {
+      "start": 111.92,
+      "duration": 5.8,
+      "text": "front doors, or you can"
+    },
+    {
+      "start": 115.08,
+      "duration": 4.24,
+      "text": "make a left, go through the microfilm"
+    },
+    {
+      "start": 117.72,
+      "duration": 3.56,
+      "text": "room back here"
+    },
+    {
+      "start": 119.32,
+      "duration": 3.6,
+      "text": "to the very end. There's a door, go out"
+    },
+    {
+      "start": 121.28,
+      "duration": 3.92,
+      "text": "that and there's another door and you go"
+    },
+    {
+      "start": 122.92,
+      "duration": 5.32,
+      "text": "out that and you're in the parking lot."
+    },
+    {
+      "start": 125.2,
+      "duration": 5.04,
+      "text": "Please mute your your phones or put them"
+    },
+    {
+      "start": 128.24,
+      "duration": 4.24,
+      "text": "on a vibrate."
+    },
+    {
+      "start": 130.24,
+      "duration": 5.4,
+      "text": "Um"
+    },
+    {
+      "start": 132.48,
+      "duration": 5.36,
+      "text": "and I think those are the major things."
+    },
+    {
+      "start": 135.64,
+      "duration": 5.08,
+      "text": "Um"
+    },
+    {
+      "start": 137.84,
+      "duration": 2.88,
+      "text": "also"
+    },
+    {
+      "start": 141.32,
+      "duration": 5.32,
+      "text": "Well, anyway, one thing about this"
+    },
+    {
+      "start": 144.12,
+      "duration": 5.88,
+      "text": "class, I am not a lawyer, an attorney."
+    },
+    {
+      "start": 146.64,
+      "duration": 5.4,
+      "text": "Please do not ask any legal advice."
+    },
+    {
+      "start": 150.0,
+      "duration": 4.12,
+      "text": "I will just tell you to go to your"
+    },
+    {
+      "start": 152.04,
+      "duration": 4.56,
+      "text": "lawyer or your attorney."
+    },
+    {
+      "start": 154.12,
+      "duration": 4.52,
+      "text": "Um"
+    },
+    {
+      "start": 156.6,
+      "duration": 5.0,
+      "text": "So"
+    },
+    {
+      "start": 158.64,
+      "duration": 6.16,
+      "text": "anyway, uh we're just here to discuss"
+    },
+    {
+      "start": 161.6,
+      "duration": 3.2,
+      "text": "the different records."
+    },
+    {
+      "start": 173.32,
+      "duration": 5.96,
+      "text": "Probate genealogy."
+    },
+    {
+      "start": 175.72,
+      "duration": 8.239,
+      "text": "Probate is some of the best records."
+    },
+    {
+      "start": 179.28,
+      "duration": 7.56,
+      "text": "I usually they list family information."
+    },
+    {
+      "start": 183.959,
+      "duration": 3.961,
+      "text": "Uh person may list sons and daughters on"
+    },
+    {
+      "start": 186.84,
+      "duration": 3.48,
+      "text": "there."
+    },
+    {
+      "start": 187.92,
+      "duration": 4.28,
+      "text": "Um which if you're looking for it, you"
+    },
+    {
+      "start": 190.32,
+      "duration": 5.84,
+      "text": "get the connection."
+    },
+    {
+      "start": 192.2,
+      "duration": 5.92,
+      "text": "Hopefully they put my son, say John."
+    },
+    {
+      "start": 196.16,
+      "duration": 4.72,
+      "text": "So that"
+    },
+    {
+      "start": 198.12,
+      "duration": 4.32,
+      "text": "um you actually know the relationship or"
+    },
+    {
+      "start": 200.88,
+      "duration": 4.2,
+      "text": "my nephew."
+    },
+    {
+      "start": 202.44,
+      "duration": 2.64,
+      "text": "Um"
+    },
+    {
+      "start": 205.4,
+      "duration": 4.92,
+      "text": "So you know, you get that connection."
+    },
+    {
+      "start": 208.84,
+      "duration": 4.16,
+      "text": "Especially when you're doing lineage"
+    },
+    {
+      "start": 210.32,
+      "duration": 3.96,
+      "text": "papers, you get that connection going"
+    },
+    {
+      "start": 213.0,
+      "duration": 4.519,
+      "text": "back."
+    },
+    {
+      "start": 214.28,
+      "duration": 5.56,
+      "text": "Uh deeds and probate go all the way back"
+    },
+    {
+      "start": 217.519,
+      "duration": 5.0,
+      "text": "to the beginning of the country"
+    },
+    {
+      "start": 219.84,
+      "duration": 5.36,
+      "text": "because they involved"
+    },
+    {
+      "start": 222.519,
+      "duration": 6.521,
+      "text": "assets or money."
+    },
+    {
+      "start": 225.2,
+      "duration": 6.56,
+      "text": "And everybody wrote that down."
+    },
+    {
+      "start": 229.04,
+      "duration": 2.72,
+      "text": "Um"
+    },
+    {
+      "start": 236.2,
+      "duration": 4.8,
+      "text": ">> And being able to connect your"
+    },
+    {
+      "start": 237.4,
+      "duration": 4.68,
+      "text": "generations, this is your proof."
+    },
+    {
+      "start": 241.0,
+      "duration": 2.96,
+      "text": "Uh"
+    },
+    {
+      "start": 242.08,
+      "duration": 3.92,
+      "text": "they can be found in various courts"
+    },
+    {
+      "start": 243.96,
+      "duration": 5.16,
+      "text": "around the country."
+    },
+    {
+      "start": 246.0,
+      "duration": 5.44,
+      "text": "Um some of the larger cities like Kansas"
+    },
+    {
+      "start": 249.12,
+      "duration": 4.4,
+      "text": "City and Independence, they have their"
+    },
+    {
+      "start": 251.44,
+      "duration": 3.36,
+      "text": "own probate court, which is a civil"
+    },
+    {
+      "start": 253.52,
+      "duration": 3.72,
+      "text": "court."
+    },
+    {
+      "start": 254.8,
+      "duration": 2.44,
+      "text": "Um"
+    },
+    {
+      "start": 257.799,
+      "duration": 6.041,
+      "text": "they can also be found"
+    },
+    {
+      "start": 260.04,
+      "duration": 6.96,
+      "text": "um in the smaller counties just in the"
+    },
+    {
+      "start": 263.84,
+      "duration": 4.4,
+      "text": "circuit court as in Missouri or county"
+    },
+    {
+      "start": 267.0,
+      "duration": 2.12,
+      "text": "courts."
+    },
+    {
+      "start": 268.24,
+      "duration": 2.8,
+      "text": "Uh"
+    },
+    {
+      "start": 269.12,
+      "duration": 3.799,
+      "text": "in Pennsylvania, you're they're orphan"
+    },
+    {
+      "start": 271.04,
+      "duration": 5.08,
+      "text": "courts."
+    },
+    {
+      "start": 272.919,
+      "duration": 4.601,
+      "text": "Um it's just a matter of name. Sometimes"
+    },
+    {
+      "start": 276.12,
+      "duration": 5.0,
+      "text": "they"
+    },
+    {
+      "start": 277.52,
+      "duration": 5.399,
+      "text": "uh probate it at the state level."
+    },
+    {
+      "start": 281.12,
+      "duration": 3.92,
+      "text": "Uh especially if they didn't want their"
+    },
+    {
+      "start": 282.919,
+      "duration": 3.881,
+      "text": "neighbors to know what they were"
+    },
+    {
+      "start": 285.04,
+      "duration": 3.28,
+      "text": "they had."
+    },
+    {
+      "start": 286.8,
+      "duration": 3.48,
+      "text": "So,"
+    },
+    {
+      "start": 288.32,
+      "duration": 3.76,
+      "text": "um"
+    },
+    {
+      "start": 290.28,
+      "duration": 4.84,
+      "text": "So, if you don't find them at the county"
+    },
+    {
+      "start": 292.08,
+      "duration": 6.2,
+      "text": "level, they might be at the state level."
+    },
+    {
+      "start": 295.12,
+      "duration": 6.28,
+      "text": "Um and that would be your superior court"
+    },
+    {
+      "start": 298.28,
+      "duration": 3.12,
+      "text": "of the state of"
+    },
+    {
+      "start": 301.76,
+      "duration": 4.56,
+      "text": "So, you know, start when you look for"
+    },
+    {
+      "start": 304.36,
+      "duration": 3.28,
+      "text": "the records, look for probate court, but"
+    },
+    {
+      "start": 306.32,
+      "duration": 5.16,
+      "text": "then also"
+    },
+    {
+      "start": 307.64,
+      "duration": 3.84,
+      "text": "look for any of the other courts."
+    },
+    {
+      "start": 312.88,
+      "duration": 6.24,
+      "text": "What is probate?"
+    },
+    {
+      "start": 315.12,
+      "duration": 6.2,
+      "text": "Probate is the process of distributing"
+    },
+    {
+      "start": 319.12,
+      "duration": 5.32,
+      "text": "the assets that the uh"
+    },
+    {
+      "start": 321.32,
+      "duration": 5.64,
+      "text": "from the deceased person's estate."
+    },
+    {
+      "start": 324.44,
+      "duration": 2.52,
+      "text": "Um"
+    },
+    {
+      "start": 329.44,
+      "duration": 5.0,
+      "text": "They um"
+    },
+    {
+      "start": 332.0,
+      "duration": 4.52,
+      "text": "are specified by the testator, which is"
+    },
+    {
+      "start": 334.44,
+      "duration": 4.44,
+      "text": "the person who died,"
+    },
+    {
+      "start": 336.52,
+      "duration": 5.2,
+      "text": "or by law."
+    },
+    {
+      "start": 338.88,
+      "duration": 5.76,
+      "text": "Um and we'll go into that in a minute."
+    },
+    {
+      "start": 341.72,
+      "duration": 5.04,
+      "text": "Uh assets will include"
+    },
+    {
+      "start": 344.64,
+      "duration": 6.08,
+      "text": "uh real property,"
+    },
+    {
+      "start": 346.76,
+      "duration": 7.48,
+      "text": "which land, buildings, property,"
+    },
+    {
+      "start": 350.72,
+      "duration": 5.12,
+      "text": "uh mineral rights, and appurtenances,"
+    },
+    {
+      "start": 354.24,
+      "duration": 4.72,
+      "text": "which are"
+    },
+    {
+      "start": 355.84,
+      "duration": 5.96,
+      "text": "improvements to the land as far as"
+    },
+    {
+      "start": 358.96,
+      "duration": 6.52,
+      "text": "buildings and things of that nature."
+    },
+    {
+      "start": 361.8,
+      "duration": 5.12,
+      "text": "So, the uh barn is an appurtenance."
+    },
+    {
+      "start": 365.48,
+      "duration": 4.8,
+      "text": "Um"
+    },
+    {
+      "start": 366.92,
+      "duration": 5.8,
+      "text": "anything that might require a deed."
+    },
+    {
+      "start": 370.28,
+      "duration": 2.44,
+      "text": "Uh"
+    },
+    {
+      "start": 373.08,
+      "duration": 5.32,
+      "text": "Personal property is another thing."
+    },
+    {
+      "start": 376.2,
+      "duration": 4.92,
+      "text": "That includes movables."
+    },
+    {
+      "start": 378.4,
+      "duration": 4.84,
+      "text": "The dishes, the furniture,"
+    },
+    {
+      "start": 381.12,
+      "duration": 5.24,
+      "text": "farm equipment,"
+    },
+    {
+      "start": 383.24,
+      "duration": 6.44,
+      "text": "and it also included enslaved people"
+    },
+    {
+      "start": 386.36,
+      "duration": 3.32,
+      "text": "before 1865."
+    },
+    {
+      "start": 394.4,
+      "duration": 4.88,
+      "text": "When an ancestor dies,"
+    },
+    {
+      "start": 397.08,
+      "duration": 5.68,
+      "text": "if he wrote a will,"
+    },
+    {
+      "start": 399.28,
+      "duration": 6.12,
+      "text": "it becomes a testate estate."
+    },
+    {
+      "start": 402.76,
+      "duration": 6.159,
+      "text": "The will has to be valid."
+    },
+    {
+      "start": 405.4,
+      "duration": 5.08,
+      "text": "The heirs need to pull it into court"
+    },
+    {
+      "start": 408.919,
+      "duration": 4.641,
+      "text": "to make sure that the court accepts it"
+    },
+    {
+      "start": 410.48,
+      "duration": 5.52,
+      "text": "and says, \"This is a valid will.\""
+    },
+    {
+      "start": 413.56,
+      "duration": 2.44,
+      "text": "Um"
+    },
+    {
+      "start": 417.68,
+      "duration": 4.6,
+      "text": "it is usually presented in court as soon"
+    },
+    {
+      "start": 420.6,
+      "duration": 4.96,
+      "text": "as possible"
+    },
+    {
+      "start": 422.28,
+      "duration": 6.12,
+      "text": "cuz everybody wanted their share."
+    },
+    {
+      "start": 425.56,
+      "duration": 4.72,
+      "text": "Sometimes these wills and estates can"
+    },
+    {
+      "start": 428.4,
+      "duration": 5.64,
+      "text": "take up to"
+    },
+    {
+      "start": 430.28,
+      "duration": 4.76,
+      "text": "a number of years. I've seen 10 or 12."
+    },
+    {
+      "start": 434.04,
+      "duration": 3.32,
+      "text": "Um"
+    },
+    {
+      "start": 435.04,
+      "duration": 4.48,
+      "text": "depending on"
+    },
+    {
+      "start": 437.36,
+      "duration": 3.72,
+      "text": "what the will specified things needed to"
+    },
+    {
+      "start": 439.52,
+      "duration": 4.12,
+      "text": "be done."
+    },
+    {
+      "start": 441.08,
+      "duration": 4.4,
+      "text": "Um"
+    },
+    {
+      "start": 443.64,
+      "duration": 3.36,
+      "text": "but hopefully it was only within a year"
+    },
+    {
+      "start": 445.48,
+      "duration": 3.76,
+      "text": "that everything got"
+    },
+    {
+      "start": 447.0,
+      "duration": 3.08,
+      "text": "uh accomplished."
+    },
+    {
+      "start": 449.24,
+      "duration": 4.08,
+      "text": "Uh"
+    },
+    {
+      "start": 450.08,
+      "duration": 5.72,
+      "text": "the executor or the executrix named in"
+    },
+    {
+      "start": 453.32,
+      "duration": 4.16,
+      "text": "the will an executrix is a female"
+    },
+    {
+      "start": 455.8,
+      "duration": 3.68,
+      "text": "executor."
+    },
+    {
+      "start": 457.48,
+      "duration": 4.2,
+      "text": "Um"
+    },
+    {
+      "start": 459.48,
+      "duration": 5.36,
+      "text": "they're usually were in the will."
+    },
+    {
+      "start": 461.68,
+      "duration": 5.24,
+      "text": "If they did not want to serve,"
+    },
+    {
+      "start": 464.84,
+      "duration": 4.44,
+      "text": "someone was appointed"
+    },
+    {
+      "start": 466.92,
+      "duration": 3.76,
+      "text": "or someone volunteered"
+    },
+    {
+      "start": 469.28,
+      "duration": 3.44,
+      "text": "to"
+    },
+    {
+      "start": 470.68,
+      "duration": 4.0,
+      "text": "do the will."
+    },
+    {
+      "start": 472.72,
+      "duration": 4.36,
+      "text": "They were paid"
+    },
+    {
+      "start": 474.68,
+      "duration": 4.8,
+      "text": "and you could tell by the payment as to"
+    },
+    {
+      "start": 477.08,
+      "duration": 4.8,
+      "text": "how big the estate was."
+    },
+    {
+      "start": 479.48,
+      "duration": 3.88,
+      "text": "If it was a small payment payment to the"
+    },
+    {
+      "start": 481.88,
+      "duration": 4.16,
+      "text": "executor,"
+    },
+    {
+      "start": 483.36,
+      "duration": 4.32,
+      "text": "it means there wasn't many uh much in"
+    },
+    {
+      "start": 486.04,
+      "duration": 6.24,
+      "text": "the estate."
+    },
+    {
+      "start": 487.68,
+      "duration": 7.04,
+      "text": "Uh letters testamentary were issued."
+    },
+    {
+      "start": 492.28,
+      "duration": 2.44,
+      "text": "Um"
+    },
+    {
+      "start": 496.32,
+      "duration": 6.2,
+      "text": "it should have been witnessed by two"
+    },
+    {
+      "start": 499.4,
+      "duration": 5.08,
+      "text": "uninterested parties."
+    },
+    {
+      "start": 502.52,
+      "duration": 5.04,
+      "text": "This is"
+    },
+    {
+      "start": 504.48,
+      "duration": 5.84,
+      "text": "um if you can find uninterested parties"
+    },
+    {
+      "start": 507.56,
+      "duration": 5.919,
+      "text": "when they were doing the will."
+    },
+    {
+      "start": 510.32,
+      "duration": 5.599,
+      "text": "Oftentimes in the colonial days, there"
+    },
+    {
+      "start": 513.479,
+      "duration": 5.281,
+      "text": "weren't two interested parties around,"
+    },
+    {
+      "start": 515.919,
+      "duration": 5.281,
+      "text": "so you see relatives signing that were"
+    },
+    {
+      "start": 518.76,
+      "duration": 3.68,
+      "text": "also in the will."
+    },
+    {
+      "start": 521.2,
+      "duration": 4.92,
+      "text": "Um"
+    },
+    {
+      "start": 522.44,
+      "duration": 5.52,
+      "text": "heirs are called devisees"
+    },
+    {
+      "start": 526.12,
+      "duration": 4.6,
+      "text": "or devisees."
+    },
+    {
+      "start": 527.96,
+      "duration": 4.16,
+      "text": "Um that's just legal terms. You'll run"
+    },
+    {
+      "start": 530.72,
+      "duration": 3.76,
+      "text": "across them as you're doing your"
+    },
+    {
+      "start": 532.12,
+      "duration": 3.96,
+      "text": "genealogy and as you're reading the"
+    },
+    {
+      "start": 534.48,
+      "duration": 3.76,
+      "text": "wills."
+    },
+    {
+      "start": 536.08,
+      "duration": 3.759,
+      "text": "And you need to read the wills."
+    },
+    {
+      "start": 538.24,
+      "duration": 3.52,
+      "text": "Um"
+    },
+    {
+      "start": 539.839,
+      "duration": 4.441,
+      "text": "abstracts are fine,"
+    },
+    {
+      "start": 541.76,
+      "duration": 4.36,
+      "text": "but if you see the real will, you can"
+    },
+    {
+      "start": 544.28,
+      "duration": 3.8,
+      "text": "see what they"
+    },
+    {
+      "start": 546.12,
+      "duration": 3.04,
+      "text": "portioned out."
+    },
+    {
+      "start": 548.08,
+      "duration": 3.52,
+      "text": "Um"
+    },
+    {
+      "start": 549.16,
+      "duration": 5.24,
+      "text": "and a bond was posted."
+    },
+    {
+      "start": 551.6,
+      "duration": 4.52,
+      "text": "That was to make sure that"
+    },
+    {
+      "start": 554.4,
+      "duration": 3.64,
+      "text": "the uh"
+    },
+    {
+      "start": 556.12,
+      "duration": 4.44,
+      "text": "executor"
+    },
+    {
+      "start": 558.04,
+      "duration": 4.08,
+      "text": "made sure that the estate came to a"
+    },
+    {
+      "start": 560.56,
+      "duration": 2.64,
+      "text": "conclusion."
+    },
+    {
+      "start": 562.12,
+      "duration": 2.64,
+      "text": "Uh"
+    },
+    {
+      "start": 563.2,
+      "duration": 4.4,
+      "text": "things were paid"
+    },
+    {
+      "start": 564.76,
+      "duration": 2.84,
+      "text": "and so on."
+    },
+    {
+      "start": 571.36,
+      "duration": 4.76,
+      "text": "This will"
+    },
+    {
+      "start": 572.76,
+      "duration": 5.96,
+      "text": "was a valid will it from Jackson County"
+    },
+    {
+      "start": 576.12,
+      "duration": 5.4,
+      "text": "uh John B. Nolan."
+    },
+    {
+      "start": 578.72,
+      "duration": 5.0,
+      "text": "He actually wrote the will in October of"
+    },
+    {
+      "start": 581.52,
+      "duration": 4.8,
+      "text": "1896."
+    },
+    {
+      "start": 583.72,
+      "duration": 5.08,
+      "text": "He died June 3rd,"
+    },
+    {
+      "start": 586.32,
+      "duration": 4.72,
+      "text": "uh, 1901."
+    },
+    {
+      "start": 588.8,
+      "duration": 4.4,
+      "text": "Heirs had it in court the 19th of June,"
+    },
+    {
+      "start": 591.04,
+      "duration": 5.28,
+      "text": "1901."
+    },
+    {
+      "start": 593.2,
+      "duration": 5.56,
+      "text": "I don't know how long it took him to,"
+    },
+    {
+      "start": 596.32,
+      "duration": 2.44,
+      "text": "um,"
+    },
+    {
+      "start": 603.28,
+      "duration": 3.96,
+      "text": "um, probate the estate. That's what I'm"
+    },
+    {
+      "start": 605.72,
+      "duration": 4.72,
+      "text": "thinking of."
+    },
+    {
+      "start": 607.24,
+      "duration": 5.72,
+      "text": "But, just the fact that"
+    },
+    {
+      "start": 610.44,
+      "duration": 3.76,
+      "text": "2 weeks, it was in court."
+    },
+    {
+      "start": 612.96,
+      "duration": 2.6,
+      "text": "So,"
+    },
+    {
+      "start": 614.2,
+      "duration": 3.8,
+      "text": "um,"
+    },
+    {
+      "start": 615.56,
+      "duration": 3.4,
+      "text": "but it does show"
+    },
+    {
+      "start": 618.0,
+      "duration": 3.64,
+      "text": "if I can get"
+    },
+    {
+      "start": 618.96,
+      "duration": 2.68,
+      "text": "this going."
+    },
+    {
+      "start": 622.76,
+      "duration": 2.8,
+      "text": "The first part,"
+    },
+    {
+      "start": 624.44,
+      "duration": 3.16,
+      "text": "which it's it's the will and the"
+    },
+    {
+      "start": 625.56,
+      "duration": 3.72,
+      "text": "administration"
+    },
+    {
+      "start": 627.6,
+      "duration": 4.4,
+      "text": "of"
+    },
+    {
+      "start": 629.28,
+      "duration": 4.88,
+      "text": "the person, uh, John B. Nolan."
+    },
+    {
+      "start": 632.0,
+      "duration": 4.52,
+      "text": "It also always mentions"
+    },
+    {
+      "start": 634.16,
+      "duration": 4.52,
+      "text": "their resident of"
+    },
+    {
+      "start": 636.52,
+      "duration": 4.36,
+      "text": "So, then you find out"
+    },
+    {
+      "start": 638.68,
+      "duration": 3.92,
+      "text": "where they were living."
+    },
+    {
+      "start": 640.88,
+      "duration": 5.68,
+      "text": "Um,"
+    },
+    {
+      "start": 642.6,
+      "duration": 3.96,
+      "text": "the next slide,"
+    },
+    {
+      "start": 646.68,
+      "duration": 4.2,
+      "text": "you can see,"
+    },
+    {
+      "start": 648.72,
+      "duration": 4.88,
+      "text": "uh, the bequest."
+    },
+    {
+      "start": 650.88,
+      "duration": 4.92,
+      "text": "Usually the first paragraph is,"
+    },
+    {
+      "start": 653.6,
+      "duration": 4.239,
+      "text": "\"I want my debts paid."
+    },
+    {
+      "start": 655.8,
+      "duration": 4.24,
+      "text": "And I want a Christian burial or a"
+    },
+    {
+      "start": 657.839,
+      "duration": 3.681,
+      "text": "burial of some sort.\""
+    },
+    {
+      "start": 660.04,
+      "duration": 4.08,
+      "text": "Uh,"
+    },
+    {
+      "start": 661.52,
+      "duration": 4.28,
+      "text": "the next few lines down"
+    },
+    {
+      "start": 664.12,
+      "duration": 3.32,
+      "text": "are the heirs."
+    },
+    {
+      "start": 665.8,
+      "duration": 2.96,
+      "text": "His wife"
+    },
+    {
+      "start": 667.44,
+      "duration": 6.0,
+      "text": "and"
+    },
+    {
+      "start": 668.76,
+      "duration": 4.68,
+      "text": "then it should show his children also."
+    },
+    {
+      "start": 675.16,
+      "duration": 2.32,
+      "text": "Um,"
+    },
+    {
+      "start": 680.4,
+      "duration": 5.12,
+      "text": "like wife and children."
+    },
+    {
+      "start": 683.08,
+      "duration": 2.44,
+      "text": "Okay."
+    },
+    {
+      "start": 685.76,
+      "duration": 4.04,
+      "text": "Here we are."
+    },
+    {
+      "start": 687.4,
+      "duration": 4.52,
+      "text": "Here's the kids."
+    },
+    {
+      "start": 689.8,
+      "duration": 4.76,
+      "text": "Children, um,"
+    },
+    {
+      "start": 691.92,
+      "duration": 4.24,
+      "text": "you always hope that,"
+    },
+    {
+      "start": 694.56,
+      "duration": 4.2,
+      "text": "uh,"
+    },
+    {
+      "start": 696.16,
+      "duration": 4.56,
+      "text": "the children, especially the daughters,"
+    },
+    {
+      "start": 698.76,
+      "duration": 3.56,
+      "text": "have their married names. Then you can"
+    },
+    {
+      "start": 700.72,
+      "duration": 4.52,
+      "text": "connect."
+    },
+    {
+      "start": 702.32,
+      "duration": 3.6,
+      "text": "Um doesn't always happen, but"
+    },
+    {
+      "start": 705.24,
+      "duration": 3.04,
+      "text": "uh"
+    },
+    {
+      "start": 705.92,
+      "duration": 3.84,
+      "text": "it makes life easier for a genealogist"
+    },
+    {
+      "start": 708.28,
+      "duration": 5.64,
+      "text": "to see that"
+    },
+    {
+      "start": 709.76,
+      "duration": 4.16,
+      "text": "she married this person here."
+    },
+    {
+      "start": 720.52,
+      "duration": 6.96,
+      "text": "Now we have types of wills."
+    },
+    {
+      "start": 724.12,
+      "duration": 6.0,
+      "text": "The attested will,"
+    },
+    {
+      "start": 727.48,
+      "duration": 4.48,
+      "text": "which is signed by the"
+    },
+    {
+      "start": 730.12,
+      "duration": 3.8,
+      "text": "um"
+    },
+    {
+      "start": 731.96,
+      "duration": 4.12,
+      "text": "deceased person,"
+    },
+    {
+      "start": 733.92,
+      "duration": 3.88,
+      "text": "and it was witnessed by two uninterested"
+    },
+    {
+      "start": 736.08,
+      "duration": 2.76,
+      "text": "parties. We just kind of went through"
+    },
+    {
+      "start": 737.8,
+      "duration": 2.88,
+      "text": "that"
+    },
+    {
+      "start": 738.84,
+      "duration": 4.28,
+      "text": "with John."
+    },
+    {
+      "start": 740.68,
+      "duration": 4.32,
+      "text": "Uh there were two uninterested parties."
+    },
+    {
+      "start": 743.12,
+      "duration": 3.64,
+      "text": "We went on."
+    },
+    {
+      "start": 745.0,
+      "duration": 4.32,
+      "text": "Um"
+    },
+    {
+      "start": 746.76,
+      "duration": 5.84,
+      "text": "An unattested will was just signed by"
+    },
+    {
+      "start": 749.32,
+      "duration": 4.12,
+      "text": "this deceased, but not witnessed."
+    },
+    {
+      "start": 752.6,
+      "duration": 2.6,
+      "text": "Uh"
+    },
+    {
+      "start": 753.44,
+      "duration": 3.72,
+      "text": "that could be challenged a little"
+    },
+    {
+      "start": 755.2,
+      "duration": 4.0,
+      "text": "easier."
+    },
+    {
+      "start": 757.16,
+      "duration": 3.72,
+      "text": "Um"
+    },
+    {
+      "start": 759.2,
+      "duration": 4.16,
+      "text": "Nuncupative will"
+    },
+    {
+      "start": 760.88,
+      "duration": 4.64,
+      "text": "is basically an oral will."
+    },
+    {
+      "start": 763.36,
+      "duration": 4.28,
+      "text": "Uh was written by another person,"
+    },
+    {
+      "start": 765.52,
+      "duration": 7.88,
+      "text": "usually at the deathbed"
+    },
+    {
+      "start": 767.64,
+      "duration": 5.76,
+      "text": "of the deceased with witnesses nearby."
+    },
+    {
+      "start": 773.48,
+      "duration": 4.88,
+      "text": "Sometimes they were accepted, and"
+    },
+    {
+      "start": 775.48,
+      "duration": 5.52,
+      "text": "sometimes they were not."
+    },
+    {
+      "start": 778.36,
+      "duration": 5.32,
+      "text": "But they may be recorded or in the loose"
+    },
+    {
+      "start": 781.0,
+      "duration": 4.04,
+      "text": "papers, which we'll cover later."
+    },
+    {
+      "start": 783.68,
+      "duration": 4.44,
+      "text": "Um"
+    },
+    {
+      "start": 785.04,
+      "duration": 6.4,
+      "text": "Video video wills, of course, are new"
+    },
+    {
+      "start": 788.12,
+      "duration": 5.28,
+      "text": "as far as the technology. Person stands"
+    },
+    {
+      "start": 791.44,
+      "duration": 2.84,
+      "text": "in front of a camera,"
+    },
+    {
+      "start": 793.4,
+      "duration": 3.92,
+      "text": "uh"
+    },
+    {
+      "start": 794.28,
+      "duration": 6.04,
+      "text": "tells everybody who gets what,"
+    },
+    {
+      "start": 797.32,
+      "duration": 3.0,
+      "text": "and um"
+    },
+    {
+      "start": 800.4,
+      "duration": 6.28,
+      "text": "they go from there."
+    },
+    {
+      "start": 802.88,
+      "duration": 3.8,
+      "text": "And then there's the holographic will."
+    },
+    {
+      "start": 806.76,
+      "duration": 4.4,
+      "text": "The will must be handwritten and signed"
+    },
+    {
+      "start": 809.28,
+      "duration": 3.84,
+      "text": "by the testator."
+    },
+    {
+      "start": 811.16,
+      "duration": 3.28,
+      "text": "Which is the usually the deceased"
+    },
+    {
+      "start": 813.12,
+      "duration": 2.28,
+      "text": "person."
+    },
+    {
+      "start": 814.44,
+      "duration": 4.24,
+      "text": "I"
+    },
+    {
+      "start": 815.4,
+      "duration": 5.84,
+      "text": "doesn't have to be witnessed."
+    },
+    {
+      "start": 818.68,
+      "duration": 2.56,
+      "text": "Uh"
+    },
+    {
+      "start": 821.28,
+      "duration": 5.04,
+      "text": "one thing you've got to find out is"
+    },
+    {
+      "start": 825.04,
+      "duration": 3.92,
+      "text": "if"
+    },
+    {
+      "start": 826.32,
+      "duration": 4.64,
+      "text": "the state accepts those"
+    },
+    {
+      "start": 828.96,
+      "duration": 5.44,
+      "text": "wills."
+    },
+    {
+      "start": 830.96,
+      "duration": 5.68,
+      "text": "Some states do, some states don't."
+    },
+    {
+      "start": 834.4,
+      "duration": 4.56,
+      "text": "Missouri does not."
+    },
+    {
+      "start": 836.64,
+      "duration": 3.48,
+      "text": "Um and I don't believe Kansas does"
+    },
+    {
+      "start": 838.96,
+      "duration": 3.36,
+      "text": "either."
+    },
+    {
+      "start": 840.12,
+      "duration": 4.76,
+      "text": "So"
+    },
+    {
+      "start": 842.32,
+      "duration": 5.88,
+      "text": "they may have written that will"
+    },
+    {
+      "start": 844.88,
+      "duration": 4.76,
+      "text": "uh and signed it and just left it."
+    },
+    {
+      "start": 848.2,
+      "duration": 5.6,
+      "text": "Um"
+    },
+    {
+      "start": 849.64,
+      "duration": 6.52,
+      "text": "state will not accept it."
+    },
+    {
+      "start": 853.8,
+      "duration": 6.12,
+      "text": "So then it becomes"
+    },
+    {
+      "start": 856.16,
+      "duration": 3.76,
+      "text": "an intestate estate."
+    },
+    {
+      "start": 864.6,
+      "duration": 3.08,
+      "text": "Okay."
+    },
+    {
+      "start": 866.36,
+      "duration": 3.84,
+      "text": "Now we come to the duties of the"
+    },
+    {
+      "start": 867.68,
+      "duration": 6.28,
+      "text": "executor."
+    },
+    {
+      "start": 870.2,
+      "duration": 5.24,
+      "text": "He completes the list of assets"
+    },
+    {
+      "start": 873.96,
+      "duration": 4.56,
+      "text": "and debts."
+    },
+    {
+      "start": 875.44,
+      "duration": 4.32,
+      "text": "Basically makes out the inventory."
+    },
+    {
+      "start": 878.52,
+      "duration": 4.28,
+      "text": "Um"
+    },
+    {
+      "start": 879.76,
+      "duration": 5.28,
+      "text": "who owes the estate money."
+    },
+    {
+      "start": 882.8,
+      "duration": 4.28,
+      "text": "And then the executor gets to go out and"
+    },
+    {
+      "start": 885.04,
+      "duration": 4.32,
+      "text": "collect it."
+    },
+    {
+      "start": 887.08,
+      "duration": 5.24,
+      "text": "And and also the same with the debts. He"
+    },
+    {
+      "start": 889.36,
+      "duration": 5.0,
+      "text": "needs to as soon as he's got his money"
+    },
+    {
+      "start": 892.32,
+      "duration": 6.08,
+      "text": "um"
+    },
+    {
+      "start": 894.36,
+      "duration": 7.72,
+      "text": "or they sell land or something"
+    },
+    {
+      "start": 898.4,
+      "duration": 7.36,
+      "text": "uh then he pays off the debts."
+    },
+    {
+      "start": 902.08,
+      "duration": 5.52,
+      "text": "Once they have a net figure that they've"
+    },
+    {
+      "start": 905.76,
+      "duration": 3.04,
+      "text": "cleaned that off"
+    },
+    {
+      "start": 907.6,
+      "duration": 3.2,
+      "text": "um"
+    },
+    {
+      "start": 908.8,
+      "duration": 3.4,
+      "text": "then they distribute the assets to the"
+    },
+    {
+      "start": 910.8,
+      "duration": 3.76,
+      "text": "heirs."
+    },
+    {
+      "start": 912.2,
+      "duration": 4.16,
+      "text": "Um"
+    },
+    {
+      "start": 914.56,
+      "duration": 3.68,
+      "text": "sometimes they could and sometimes they"
+    },
+    {
+      "start": 916.36,
+      "duration": 5.52,
+      "text": "couldn't."
+    },
+    {
+      "start": 918.24,
+      "duration": 3.64,
+      "text": "So um"
+    },
+    {
+      "start": 924.16,
+      "duration": 5.24,
+      "text": "we'll get to one later where they"
+    },
+    {
+      "start": 926.56,
+      "duration": 2.84,
+      "text": "weren't able to."
+    },
+    {
+      "start": 929.48,
+      "duration": 6.16,
+      "text": "Inheritance and intestate estates."
+    },
+    {
+      "start": 932.92,
+      "duration": 5.24,
+      "text": "Those named in the will."
+    },
+    {
+      "start": 935.64,
+      "duration": 5.04,
+      "text": "Um, a lot of times, especially in"
+    },
+    {
+      "start": 938.16,
+      "duration": 4.04,
+      "text": "colonial times, they'll say my wife and"
+    },
+    {
+      "start": 940.68,
+      "duration": 2.76,
+      "text": "children."
+    },
+    {
+      "start": 942.2,
+      "duration": 2.96,
+      "text": "Which"
+    },
+    {
+      "start": 943.44,
+      "duration": 3.36,
+      "text": "frustrates"
+    },
+    {
+      "start": 945.16,
+      "duration": 4.16,
+      "text": "everybody."
+    },
+    {
+      "start": 946.8,
+      "duration": 2.52,
+      "text": "Um,"
+    },
+    {
+      "start": 950.32,
+      "duration": 3.12,
+      "text": "because"
+    },
+    {
+      "start": 951.96,
+      "duration": 4.44,
+      "text": "as genealogists, we're looking for"
+    },
+    {
+      "start": 953.44,
+      "duration": 4.84,
+      "text": "names. What was the wife's name?"
+    },
+    {
+      "start": 956.4,
+      "duration": 4.24,
+      "text": "And"
+    },
+    {
+      "start": 958.28,
+      "duration": 4.88,
+      "text": "who were the children?"
+    },
+    {
+      "start": 960.64,
+      "duration": 2.52,
+      "text": "Um,"
+    },
+    {
+      "start": 963.4,
+      "duration": 5.0,
+      "text": "they will inherit according to the"
+    },
+    {
+      "start": 965.56,
+      "duration": 5.44,
+      "text": "instructions in the will."
+    },
+    {
+      "start": 968.4,
+      "duration": 2.6,
+      "text": "So,"
+    },
+    {
+      "start": 971.28,
+      "duration": 4.2,
+      "text": "you may get part of an estate"
+    },
+    {
+      "start": 973.8,
+      "duration": 5.12,
+      "text": "or money"
+    },
+    {
+      "start": 975.48,
+      "duration": 6.88,
+      "text": "or maybe, you know, the set of dishes"
+    },
+    {
+      "start": 978.92,
+      "duration": 6.32,
+      "text": "or a piece of furniture or mattress."
+    },
+    {
+      "start": 982.36,
+      "duration": 4.8,
+      "text": "Uh, you can see all this in a specially"
+    },
+    {
+      "start": 985.24,
+      "duration": 4.4,
+      "text": "the older wills."
+    },
+    {
+      "start": 987.16,
+      "duration": 2.48,
+      "text": "Um,"
+    },
+    {
+      "start": 989.88,
+      "duration": 5.32,
+      "text": "so, it makes life interesting."
+    },
+    {
+      "start": 993.16,
+      "duration": 4.28,
+      "text": "Books are very interesting, especially"
+    },
+    {
+      "start": 995.2,
+      "duration": 4.88,
+      "text": "in in the colonial wills,"
+    },
+    {
+      "start": 997.44,
+      "duration": 5.08,
+      "text": "because some of them will actually list"
+    },
+    {
+      "start": 1000.08,
+      "duration": 4.0,
+      "text": "the names of the books."
+    },
+    {
+      "start": 1002.52,
+      "duration": 2.92,
+      "text": "So, you can see what they read back"
+    },
+    {
+      "start": 1004.08,
+      "duration": 2.6,
+      "text": "then."
+    },
+    {
+      "start": 1005.44,
+      "duration": 3.52,
+      "text": "Um,"
+    },
+    {
+      "start": 1006.68,
+      "duration": 3.8,
+      "text": "you know, you might see like Jane Austen"
+    },
+    {
+      "start": 1008.96,
+      "duration": 2.92,
+      "text": "in there."
+    },
+    {
+      "start": 1010.48,
+      "duration": 3.8,
+      "text": "So,"
+    },
+    {
+      "start": 1011.88,
+      "duration": 4.56,
+      "text": "um,"
+    },
+    {
+      "start": 1014.28,
+      "duration": 4.559,
+      "text": "some of the family members may have"
+    },
+    {
+      "start": 1016.44,
+      "duration": 5.52,
+      "text": "received their portion."
+    },
+    {
+      "start": 1018.839,
+      "duration": 4.441,
+      "text": "It may or may not be listed in the will."
+    },
+    {
+      "start": 1021.96,
+      "duration": 2.999,
+      "text": "Uh,"
+    },
+    {
+      "start": 1023.28,
+      "duration": 3.799,
+      "text": "for instance, I had a"
+    },
+    {
+      "start": 1024.959,
+      "duration": 3.561,
+      "text": "great-great-grandfather"
+    },
+    {
+      "start": 1027.079,
+      "duration": 3.36,
+      "text": "who"
+    },
+    {
+      "start": 1028.52,
+      "duration": 4.16,
+      "text": "listed all his kids,"
+    },
+    {
+      "start": 1030.439,
+      "duration": 3.4,
+      "text": "but we had the ones that inherited"
+    },
+    {
+      "start": 1032.68,
+      "duration": 2.88,
+      "text": "items,"
+    },
+    {
+      "start": 1033.839,
+      "duration": 5.401,
+      "text": "and we had the ones"
+    },
+    {
+      "start": 1035.56,
+      "duration": 7.16,
+      "text": "who had already received their portion."
+    },
+    {
+      "start": 1039.24,
+      "duration": 5.496,
+      "text": "And he was very specific about that."
+    },
+    {
+      "start": 1042.72,
+      "duration": 2.68,
+      "text": "So, there was no question"
+    },
+    {
+      "start": 1044.736,
+      "duration": 3.343,
+      "text": ">> [clears throat]"
+    },
+    {
+      "start": 1045.4,
+      "duration": 5.24,
+      "text": ">> that they had received it."
+    },
+    {
+      "start": 1048.079,
+      "duration": 2.561,
+      "text": "Um"
+    },
+    {
+      "start": 1054.12,
+      "duration": 5.36,
+      "text": "per capita"
+    },
+    {
+      "start": 1056.4,
+      "duration": 3.08,
+      "text": "heirs um"
+    },
+    {
+      "start": 1059.56,
+      "duration": 4.96,
+      "text": "receive equal shares. It's kind of a"
+    },
+    {
+      "start": 1061.88,
+      "duration": 5.16,
+      "text": "share and share alike situation."
+    },
+    {
+      "start": 1064.52,
+      "duration": 5.92,
+      "text": "Um"
+    },
+    {
+      "start": 1067.04,
+      "duration": 4.88,
+      "text": "You see that especially on"
+    },
+    {
+      "start": 1070.44,
+      "duration": 2.76,
+      "text": "um"
+    },
+    {
+      "start": 1071.92,
+      "duration": 3.16,
+      "text": "people"
+    },
+    {
+      "start": 1073.2,
+      "duration": 4.08,
+      "text": "I worked um"
+    },
+    {
+      "start": 1075.08,
+      "duration": 4.04,
+      "text": "for some place that had insurance"
+    },
+    {
+      "start": 1077.28,
+      "duration": 4.16,
+      "text": "and you would see it come through with a"
+    },
+    {
+      "start": 1079.12,
+      "duration": 3.76,
+      "text": "share and share alike."
+    },
+    {
+      "start": 1081.44,
+      "duration": 3.28,
+      "text": "Evidently, they didn't want to do the"
+    },
+    {
+      "start": 1082.88,
+      "duration": 4.64,
+      "text": "math."
+    },
+    {
+      "start": 1084.72,
+      "duration": 4.88,
+      "text": "And unhappy heirs"
+    },
+    {
+      "start": 1087.52,
+      "duration": 4.68,
+      "text": "uh could contest"
+    },
+    {
+      "start": 1089.6,
+      "duration": 5.2,
+      "text": "if they didn't like the fact that"
+    },
+    {
+      "start": 1092.2,
+      "duration": 5.28,
+      "text": "their brother over here got"
+    },
+    {
+      "start": 1094.8,
+      "duration": 4.04,
+      "text": "more than what they felt was"
+    },
+    {
+      "start": 1097.48,
+      "duration": 2.92,
+      "text": "his share"
+    },
+    {
+      "start": 1098.84,
+      "duration": 3.2,
+      "text": "they could sue him."
+    },
+    {
+      "start": 1100.4,
+      "duration": 3.76,
+      "text": "And they did."
+    },
+    {
+      "start": 1102.04,
+      "duration": 3.64,
+      "text": "And they're interesting because not only"
+    },
+    {
+      "start": 1104.16,
+      "duration": 4.48,
+      "text": "do you see"
+    },
+    {
+      "start": 1105.68,
+      "duration": 5.12,
+      "text": "the people named in the probate"
+    },
+    {
+      "start": 1108.64,
+      "duration": 5.16,
+      "text": "which may or may not be all of them,"
+    },
+    {
+      "start": 1110.8,
+      "duration": 6.36,
+      "text": "you'll see a whole list of the heirs."
+    },
+    {
+      "start": 1113.8,
+      "duration": 7.4,
+      "text": "Uh so, not only will you get more"
+    },
+    {
+      "start": 1117.16,
+      "duration": 7.16,
+      "text": "information on who is in the family"
+    },
+    {
+      "start": 1121.2,
+      "duration": 5.08,
+      "text": "but you'll also get um statements from"
+    },
+    {
+      "start": 1124.32,
+      "duration": 6.16,
+      "text": "everybody. [clears throat]"
+    },
+    {
+      "start": 1126.28,
+      "duration": 4.2,
+      "text": "And that proves to be very interesting."
+    },
+    {
+      "start": 1135.68,
+      "duration": 5.24,
+      "text": "Okay. This is the second type."
+    },
+    {
+      "start": 1138.68,
+      "duration": 3.76,
+      "text": "When they die and they don't leave a"
+    },
+    {
+      "start": 1140.92,
+      "duration": 4.32,
+      "text": "valid will"
+    },
+    {
+      "start": 1142.44,
+      "duration": 5.64,
+      "text": "or the will is declared invalid"
+    },
+    {
+      "start": 1145.24,
+      "duration": 4.76,
+      "text": "for one reason or another."
+    },
+    {
+      "start": 1148.08,
+      "duration": 4.0,
+      "text": "Uh"
+    },
+    {
+      "start": 1150.0,
+      "duration": 3.92,
+      "text": "heirs"
+    },
+    {
+      "start": 1152.08,
+      "duration": 2.88,
+      "text": "in this case"
+    },
+    {
+      "start": 1153.92,
+      "duration": 4.76,
+      "text": "are"
+    },
+    {
+      "start": 1154.96,
+      "duration": 7.84,
+      "text": "called beneficiaries or distributees"
+    },
+    {
+      "start": 1158.68,
+      "duration": 5.64,
+      "text": "and are unable to produce a valid will."
+    },
+    {
+      "start": 1162.8,
+      "duration": 3.04,
+      "text": "Um"
+    },
+    {
+      "start": 1164.32,
+      "duration": 4.08,
+      "text": "estate"
+    },
+    {
+      "start": 1165.84,
+      "duration": 4.12,
+      "text": "The estate process begins as soon as"
+    },
+    {
+      "start": 1168.4,
+      "duration": 3.16,
+      "text": "possible."
+    },
+    {
+      "start": 1169.96,
+      "duration": 5.28,
+      "text": "There again"
+    },
+    {
+      "start": 1171.56,
+      "duration": 7.56,
+      "text": "uh they wanted to get it divided."
+    },
+    {
+      "start": 1175.24,
+      "duration": 5.48,
+      "text": "Someone petitions the court"
+    },
+    {
+      "start": 1179.12,
+      "duration": 3.36,
+      "text": "to be appointed administrator or"
+    },
+    {
+      "start": 1180.72,
+      "duration": 3.56,
+      "text": "administratrix."
+    },
+    {
+      "start": 1182.48,
+      "duration": 3.88,
+      "text": "Um"
+    },
+    {
+      "start": 1184.28,
+      "duration": 3.12,
+      "text": "could be"
+    },
+    {
+      "start": 1186.36,
+      "duration": 3.44,
+      "text": "uh"
+    },
+    {
+      "start": 1187.4,
+      "duration": 4.6,
+      "text": "just one or two."
+    },
+    {
+      "start": 1189.8,
+      "duration": 3.36,
+      "text": "I had a great aunt"
+    },
+    {
+      "start": 1192.0,
+      "duration": 2.92,
+      "text": "who"
+    },
+    {
+      "start": 1193.16,
+      "duration": 5.36,
+      "text": "10 of the relatives came out of the"
+    },
+    {
+      "start": 1194.92,
+      "duration": 5.56,
+      "text": "woodwork to be the administrator of her"
+    },
+    {
+      "start": 1198.52,
+      "duration": 4.6,
+      "text": "estate."
+    },
+    {
+      "start": 1200.48,
+      "duration": 2.64,
+      "text": "Um"
+    },
+    {
+      "start": 1203.28,
+      "duration": 4.88,
+      "text": "They eventually appointed one."
+    },
+    {
+      "start": 1206.12,
+      "duration": 4.4,
+      "text": "Um"
+    },
+    {
+      "start": 1208.16,
+      "duration": 4.16,
+      "text": "and they were able to proceed with the"
+    },
+    {
+      "start": 1210.52,
+      "duration": 3.0,
+      "text": "estate."
+    },
+    {
+      "start": 1212.32,
+      "duration": 3.08,
+      "text": "Um"
+    },
+    {
+      "start": 1213.52,
+      "duration": 4.24,
+      "text": "they"
+    },
+    {
+      "start": 1215.4,
+      "duration": 3.76,
+      "text": "Court will appoint the administrator and"
+    },
+    {
+      "start": 1217.76,
+      "duration": 3.4,
+      "text": "they will issue letters of"
+    },
+    {
+      "start": 1219.16,
+      "duration": 5.56,
+      "text": "administration."
+    },
+    {
+      "start": 1221.16,
+      "duration": 6.96,
+      "text": "And here again, a bond is posted so"
+    },
+    {
+      "start": 1224.72,
+      "duration": 5.96,
+      "text": "they see the probate to the end."
+    },
+    {
+      "start": 1228.12,
+      "duration": 2.56,
+      "text": "Um"
+    },
+    {
+      "start": 1234.48,
+      "duration": 3.2,
+      "text": "The duties of the administrator"
+    },
+    {
+      "start": 1235.96,
+      "duration": 4.68,
+      "text": "administratrix"
+    },
+    {
+      "start": 1237.68,
+      "duration": 5.04,
+      "text": "which are similar to the executors"
+    },
+    {
+      "start": 1240.64,
+      "duration": 4.32,
+      "text": "um"
+    },
+    {
+      "start": 1242.72,
+      "duration": 3.44,
+      "text": "is you compile a list of assets and"
+    },
+    {
+      "start": 1244.96,
+      "duration": 3.56,
+      "text": "debts."
+    },
+    {
+      "start": 1246.16,
+      "duration": 4.0,
+      "text": "There again, same thing."
+    },
+    {
+      "start": 1248.52,
+      "duration": 3.72,
+      "text": "Um"
+    },
+    {
+      "start": 1250.16,
+      "duration": 4.92,
+      "text": "collect any monies"
+    },
+    {
+      "start": 1252.24,
+      "duration": 5.12,
+      "text": "owed to the estate"
+    },
+    {
+      "start": 1255.08,
+      "duration": 4.12,
+      "text": "or and pay the debts."
+    },
+    {
+      "start": 1257.36,
+      "duration": 4.44,
+      "text": "Um"
+    },
+    {
+      "start": 1259.2,
+      "duration": 5.0,
+      "text": "this is when it gets interesting."
+    },
+    {
+      "start": 1261.8,
+      "duration": 6.08,
+      "text": "They make out an inventory"
+    },
+    {
+      "start": 1264.2,
+      "duration": 5.96,
+      "text": "and the court appoints three appraisers."
+    },
+    {
+      "start": 1267.88,
+      "duration": 3.8,
+      "text": "Usually, sometimes it's two, sometimes"
+    },
+    {
+      "start": 1270.16,
+      "duration": 4.76,
+      "text": "it's more."
+    },
+    {
+      "start": 1271.68,
+      "duration": 5.56,
+      "text": "To value the items in the estate."
+    },
+    {
+      "start": 1274.92,
+      "duration": 4.68,
+      "text": "Um"
+    },
+    {
+      "start": 1277.24,
+      "duration": 4.44,
+      "text": "And usually the estate holds a list of"
+    },
+    {
+      "start": 1279.6,
+      "duration": 3.72,
+      "text": "purchasers."
+    },
+    {
+      "start": 1281.68,
+      "duration": 3.88,
+      "text": "Usually shows"
+    },
+    {
+      "start": 1283.32,
+      "duration": 2.24,
+      "text": "uh"
+    },
+    {
+      "start": 1286.04,
+      "duration": 4.12,
+      "text": "relatives as well as the local"
+    },
+    {
+      "start": 1288.64,
+      "duration": 4.56,
+      "text": "neighborhood."
+    },
+    {
+      "start": 1290.16,
+      "duration": 6.04,
+      "text": "Uh basically the fan club."
+    },
+    {
+      "start": 1293.2,
+      "duration": 5.28,
+      "text": "Um they distribute the net assets"
+    },
+    {
+      "start": 1296.2,
+      "duration": 6.28,
+      "text": "per stirpes."
+    },
+    {
+      "start": 1298.48,
+      "duration": 8.04,
+      "text": "And a bond must be posted."
+    },
+    {
+      "start": 1302.48,
+      "duration": 6.56,
+      "text": "Uh same great aunt who had 10 people uh"
+    },
+    {
+      "start": 1306.52,
+      "duration": 4.48,
+      "text": "volunteer to be administrator,"
+    },
+    {
+      "start": 1309.04,
+      "duration": 4.48,
+      "text": "which also comes with a little fee"
+    },
+    {
+      "start": 1311.0,
+      "duration": 4.6,
+      "text": "attached to it they get."
+    },
+    {
+      "start": 1313.52,
+      "duration": 5.04,
+      "text": "Um"
+    },
+    {
+      "start": 1315.6,
+      "duration": 5.4,
+      "text": "She died. She was single. She had no"
+    },
+    {
+      "start": 1318.56,
+      "duration": 5.44,
+      "text": "children."
+    },
+    {
+      "start": 1321.0,
+      "duration": 4.48,
+      "text": "What they do is we go up"
+    },
+    {
+      "start": 1324.0,
+      "duration": 4.04,
+      "text": "to"
+    },
+    {
+      "start": 1325.48,
+      "duration": 2.56,
+      "text": "um"
+    },
+    {
+      "start": 1328.44,
+      "duration": 3.2,
+      "text": "her"
+    },
+    {
+      "start": 1329.96,
+      "duration": 2.88,
+      "text": "um"
+    },
+    {
+      "start": 1331.64,
+      "duration": 3.2,
+      "text": "parents."
+    },
+    {
+      "start": 1332.84,
+      "duration": 4.88,
+      "text": "Well, the parents had died"
+    },
+    {
+      "start": 1334.84,
+      "duration": 5.16,
+      "text": "40 years before."
+    },
+    {
+      "start": 1337.72,
+      "duration": 5.2,
+      "text": "It was an old family."
+    },
+    {
+      "start": 1340.0,
+      "duration": 4.2,
+      "text": "So, what And she had 10 brothers and"
+    },
+    {
+      "start": 1342.92,
+      "duration": 3.04,
+      "text": "sisters."
+    },
+    {
+      "start": 1344.2,
+      "duration": 3.56,
+      "text": "Of the 10,"
+    },
+    {
+      "start": 1345.96,
+      "duration": 3.76,
+      "text": "one sister"
+    },
+    {
+      "start": 1347.76,
+      "duration": 4.32,
+      "text": "was still alive."
+    },
+    {
+      "start": 1349.72,
+      "duration": 4.68,
+      "text": "So, nine they had to go and do the"
+    },
+    {
+      "start": 1352.08,
+      "duration": 4.88,
+      "text": "genealogy on them."
+    },
+    {
+      "start": 1354.4,
+      "duration": 4.76,
+      "text": "Luckily, the sister came and kept in"
+    },
+    {
+      "start": 1356.96,
+      "duration": 3.72,
+      "text": "contact with a lot of them."
+    },
+    {
+      "start": 1359.16,
+      "duration": 3.28,
+      "text": "Um"
+    },
+    {
+      "start": 1360.68,
+      "duration": 3.48,
+      "text": "They went down to the nieces and"
+    },
+    {
+      "start": 1362.44,
+      "duration": 3.84,
+      "text": "nephews."
+    },
+    {
+      "start": 1364.16,
+      "duration": 5.96,
+      "text": "Some of them had died. So, they had to"
+    },
+    {
+      "start": 1366.28,
+      "duration": 5.32,
+      "text": "go down to the grand nieces and nephews."
+    },
+    {
+      "start": 1370.12,
+      "duration": 3.12,
+      "text": "And I think there were a couple great"
+    },
+    {
+      "start": 1371.6,
+      "duration": 3.48,
+      "text": "grands that they had to go down to"
+    },
+    {
+      "start": 1373.24,
+      "duration": 5.2,
+      "text": "because"
+    },
+    {
+      "start": 1375.08,
+      "duration": 4.88,
+      "text": "it was the older part of the family and"
+    },
+    {
+      "start": 1378.44,
+      "duration": 4.64,
+      "text": "um"
+    },
+    {
+      "start": 1379.96,
+      "duration": 4.4,
+      "text": "they uh they were the only ones left."
+    },
+    {
+      "start": 1383.08,
+      "duration": 3.72,
+      "text": "So,"
+    },
+    {
+      "start": 1384.36,
+      "duration": 2.44,
+      "text": "um,"
+    },
+    {
+      "start": 1387.48,
+      "duration": 3.4,
+      "text": "these are the, uh,"
+    },
+    {
+      "start": 1390.92,
+      "duration": 5.36,
+      "text": "children, and these are per state laws."
+    },
+    {
+      "start": 1393.72,
+      "duration": 4.04,
+      "text": "All this is state law. And most states"
+    },
+    {
+      "start": 1396.28,
+      "duration": 3.24,
+      "text": "have this."
+    },
+    {
+      "start": 1397.76,
+      "duration": 4.64,
+      "text": "Um,"
+    },
+    {
+      "start": 1399.52,
+      "duration": 2.88,
+      "text": "if the, uh,"
+    },
+    {
+      "start": 1402.64,
+      "duration": 3.88,
+      "text": "if you're looking, and I would say do"
+    },
+    {
+      "start": 1405.16,
+      "duration": 5.68,
+      "text": "this,"
+    },
+    {
+      "start": 1406.52,
+      "duration": 7.8,
+      "text": "look at other people the same name,"
+    },
+    {
+      "start": 1410.84,
+      "duration": 7.56,
+      "text": "um, we had a gentleman who died"
+    },
+    {
+      "start": 1414.32,
+      "duration": 5.56,
+      "text": "in 1827 just up the road."
+    },
+    {
+      "start": 1418.4,
+      "duration": 4.08,
+      "text": "Uh,"
+    },
+    {
+      "start": 1419.88,
+      "duration": 4.24,
+      "text": "his estate was settled. We have a list"
+    },
+    {
+      "start": 1422.48,
+      "duration": 5.04,
+      "text": "of the heirs."
+    },
+    {
+      "start": 1424.12,
+      "duration": 5.76,
+      "text": "Um, it took"
+    },
+    {
+      "start": 1427.52,
+      "duration": 5.72,
+      "text": "well, 1827, it"
+    },
+    {
+      "start": 1429.88,
+      "duration": 3.36,
+      "text": "was finally"
+    },
+    {
+      "start": 1434.08,
+      "duration": 5.16,
+      "text": "finished in 1850."
+    },
+    {
+      "start": 1436.88,
+      "duration": 4.04,
+      "text": "Everybody got their portion. They went"
+    },
+    {
+      "start": 1439.24,
+      "duration": 3.88,
+      "text": "on."
+    },
+    {
+      "start": 1440.92,
+      "duration": 5.44,
+      "text": "Two years later,"
+    },
+    {
+      "start": 1443.12,
+      "duration": 4.52,
+      "text": "one of the younger sons died."
+    },
+    {
+      "start": 1446.36,
+      "duration": 4.08,
+      "text": "Now,"
+    },
+    {
+      "start": 1447.64,
+      "duration": 5.12,
+      "text": "his estate was apportioned"
+    },
+    {
+      "start": 1450.44,
+      "duration": 3.84,
+      "text": "amongst his mother and brothers and"
+    },
+    {
+      "start": 1452.76,
+      "duration": 4.8,
+      "text": "sisters."
+    },
+    {
+      "start": 1454.28,
+      "duration": 6.48,
+      "text": "We find something interesting there."
+    },
+    {
+      "start": 1457.56,
+      "duration": 5.76,
+      "text": "That is some brothers and sisters had"
+    },
+    {
+      "start": 1460.76,
+      "duration": 4.0,
+      "text": "half portions and some had full"
+    },
+    {
+      "start": 1463.32,
+      "duration": 4.0,
+      "text": "portions."
+    },
+    {
+      "start": 1464.76,
+      "duration": 4.88,
+      "text": "What this indicates was that his father"
+    },
+    {
+      "start": 1467.32,
+      "duration": 3.8,
+      "text": "had married twice."
+    },
+    {
+      "start": 1469.64,
+      "duration": 3.84,
+      "text": "So,"
+    },
+    {
+      "start": 1471.12,
+      "duration": 4.96,
+      "text": "the older heirs only received a half"
+    },
+    {
+      "start": 1473.48,
+      "duration": 5.48,
+      "text": "portion from because their mother was"
+    },
+    {
+      "start": 1476.08,
+      "duration": 5.8,
+      "text": "different from his mother."
+    },
+    {
+      "start": 1478.96,
+      "duration": 5.32,
+      "text": "And the interesting thing was his mother"
+    },
+    {
+      "start": 1481.88,
+      "duration": 5.04,
+      "text": "was still alive."
+    },
+    {
+      "start": 1484.28,
+      "duration": 4.92,
+      "text": "They had a list of everybody and where"
+    },
+    {
+      "start": 1486.92,
+      "duration": 5.36,
+      "text": "they were living at the time."
+    },
+    {
+      "start": 1489.2,
+      "duration": 6.24,
+      "text": "A lot of them had moved to California"
+    },
+    {
+      "start": 1492.28,
+      "duration": 5.88,
+      "text": "and sold the land here and, um,"
+    },
+    {
+      "start": 1495.44,
+      "duration": 5.16,
+      "text": "so they had to send the"
+    },
+    {
+      "start": 1498.16,
+      "duration": 4.28,
+      "text": "inheritance out to California for those"
+    },
+    {
+      "start": 1500.6,
+      "duration": 3.8,
+      "text": "people."
+    },
+    {
+      "start": 1502.44,
+      "duration": 6.52,
+      "text": "But, the fact is"
+    },
+    {
+      "start": 1504.4,
+      "duration": 6.8,
+      "text": "now you know where the family went."
+    },
+    {
+      "start": 1508.96,
+      "duration": 3.76,
+      "text": "Um"
+    },
+    {
+      "start": 1511.2,
+      "duration": 2.84,
+      "text": "I know several of them stayed around"
+    },
+    {
+      "start": 1512.72,
+      "duration": 3.52,
+      "text": "here."
+    },
+    {
+      "start": 1514.04,
+      "duration": 3.96,
+      "text": "Um"
+    },
+    {
+      "start": 1516.24,
+      "duration": 3.08,
+      "text": "and you're you're able to trace them"
+    },
+    {
+      "start": 1518.0,
+      "duration": 2.72,
+      "text": "from here."
+    },
+    {
+      "start": 1519.32,
+      "duration": 3.6,
+      "text": "But,"
+    },
+    {
+      "start": 1520.72,
+      "duration": 5.0,
+      "text": "that's the interesting thing."
+    },
+    {
+      "start": 1522.92,
+      "duration": 5.0,
+      "text": "It's that you've got the list. You don't"
+    },
+    {
+      "start": 1525.72,
+      "duration": 4.44,
+      "text": "have to dig through census and what have"
+    },
+    {
+      "start": 1527.92,
+      "duration": 5.44,
+      "text": "you. You have the list here in the"
+    },
+    {
+      "start": 1530.16,
+      "duration": 3.2,
+      "text": "probate papers."
+    },
+    {
+      "start": 1538.44,
+      "duration": 4.52,
+      "text": "The duties of the administrator and"
+    },
+    {
+      "start": 1539.96,
+      "duration": 3.0,
+      "text": "administratrix."
+    },
+    {
+      "start": 1544.8,
+      "duration": 3.08,
+      "text": "They They're again"
+    },
+    {
+      "start": 1549.96,
+      "duration": 2.52,
+      "text": "Technically"
+    },
+    {
+      "start": 1553.0,
+      "duration": 3.44,
+      "text": "Okay."
+    },
+    {
+      "start": 1554.6,
+      "duration": 4.56,
+      "text": "This"
+    },
+    {
+      "start": 1556.44,
+      "duration": 5.04,
+      "text": "is uh"
+    },
+    {
+      "start": 1559.16,
+      "duration": 4.08,
+      "text": "I believe this is the"
+    },
+    {
+      "start": 1561.48,
+      "duration": 4.64,
+      "text": "um"
+    },
+    {
+      "start": 1563.24,
+      "duration": 5.08,
+      "text": "letters of administration for"
+    },
+    {
+      "start": 1566.12,
+      "duration": 4.52,
+      "text": "one William Fletcher."
+    },
+    {
+      "start": 1568.32,
+      "duration": 3.12,
+      "text": "He was in Kansas City."
+    },
+    {
+      "start": 1570.64,
+      "duration": 3.12,
+      "text": "Uh"
+    },
+    {
+      "start": 1571.44,
+      "duration": 4.0,
+      "text": "see all that little writing there?"
+    },
+    {
+      "start": 1573.76,
+      "duration": 3.52,
+      "text": "That's all the heirs. There are like"
+    },
+    {
+      "start": 1575.44,
+      "duration": 3.16,
+      "text": "eight to 10."
+    },
+    {
+      "start": 1577.28,
+      "duration": 3.52,
+      "text": "But,"
+    },
+    {
+      "start": 1578.6,
+      "duration": 3.84,
+      "text": "they not only have the names,"
+    },
+    {
+      "start": 1580.8,
+      "duration": 4.68,
+      "text": "they have the"
+    },
+    {
+      "start": 1582.44,
+      "duration": 5.04,
+      "text": "places they were living at the time."
+    },
+    {
+      "start": 1585.48,
+      "duration": 4.04,
+      "text": "This is the first administrator. They"
+    },
+    {
+      "start": 1587.48,
+      "duration": 4.64,
+      "text": "had two."
+    },
+    {
+      "start": 1589.52,
+      "duration": 2.6,
+      "text": "Um"
+    },
+    {
+      "start": 1598.64,
+      "duration": 5.16,
+      "text": "Okay."
+    },
+    {
+      "start": 1600.08,
+      "duration": 6.08,
+      "text": "This is the second administrator."
+    },
+    {
+      "start": 1603.8,
+      "duration": 4.28,
+      "text": "It was approximately five or six years"
+    },
+    {
+      "start": 1606.16,
+      "duration": 3.64,
+      "text": "between them."
+    },
+    {
+      "start": 1608.08,
+      "duration": 3.52,
+      "text": "People had moved."
+    },
+    {
+      "start": 1609.8,
+      "duration": 3.92,
+      "text": "So, So can compare."
+    },
+    {
+      "start": 1611.6,
+      "duration": 5.0,
+      "text": "They're still the same people. It's just"
+    },
+    {
+      "start": 1613.72,
+      "duration": 4.8,
+      "text": "that for instance, somebody"
+    },
+    {
+      "start": 1616.6,
+      "duration": 4.4,
+      "text": "went from here"
+    },
+    {
+      "start": 1618.52,
+      "duration": 3.64,
+      "text": "to Iowa."
+    },
+    {
+      "start": 1621.0,
+      "duration": 2.4,
+      "text": "Um"
+    },
+    {
+      "start": 1622.16,
+      "duration": 3.92,
+      "text": "and you wouldn't know that unless you"
+    },
+    {
+      "start": 1623.4,
+      "duration": 4.56,
+      "text": "read both pieces of paper."
+    },
+    {
+      "start": 1626.08,
+      "duration": 5.0,
+      "text": "Uh"
+    },
+    {
+      "start": 1627.96,
+      "duration": 3.12,
+      "text": "and let's see."
+    },
+    {
+      "start": 1632.32,
+      "duration": 5.76,
+      "text": "And here's a sample of a bond. This is"
+    },
+    {
+      "start": 1634.96,
+      "duration": 4.68,
+      "text": "what the second administrator filed."
+    },
+    {
+      "start": 1638.08,
+      "duration": 4.84,
+      "text": "Um"
+    },
+    {
+      "start": 1639.64,
+      "duration": 5.12,
+      "text": "it doesn't tell you a lot except that"
+    },
+    {
+      "start": 1642.92,
+      "duration": 5.72,
+      "text": "um"
+    },
+    {
+      "start": 1644.76,
+      "duration": 3.88,
+      "text": "he filed it for so many dollars."
+    },
+    {
+      "start": 1653.36,
+      "duration": 4.6,
+      "text": "They always"
+    },
+    {
+      "start": 1655.16,
+      "duration": 6.76,
+      "text": "did an order of publication notice."
+    },
+    {
+      "start": 1657.96,
+      "duration": 3.96,
+      "text": "And this is not only with the"
+    },
+    {
+      "start": 1662.84,
+      "duration": 4.8,
+      "text": "administrators, it's also with the"
+    },
+    {
+      "start": 1664.48,
+      "duration": 4.76,
+      "text": "executors. This is to find out"
+    },
+    {
+      "start": 1667.64,
+      "duration": 3.96,
+      "text": "uh debts"
+    },
+    {
+      "start": 1669.24,
+      "duration": 5.84,
+      "text": "basically."
+    },
+    {
+      "start": 1671.6,
+      "duration": 3.48,
+      "text": "What did he owe and to whom?"
+    },
+    {
+      "start": 1675.4,
+      "duration": 3.88,
+      "text": "So"
+    },
+    {
+      "start": 1676.88,
+      "duration": 4.12,
+      "text": "supposedly he had a list of who people"
+    },
+    {
+      "start": 1679.28,
+      "duration": 4.6,
+      "text": "owed him."
+    },
+    {
+      "start": 1681.0,
+      "duration": 2.88,
+      "text": "But um"
+    },
+    {
+      "start": 1683.96,
+      "duration": 4.44,
+      "text": "this is something that um"
+    },
+    {
+      "start": 1687.04,
+      "duration": 4.04,
+      "text": "they did."
+    },
+    {
+      "start": 1688.4,
+      "duration": 4.92,
+      "text": "Often times they did it at least twice"
+    },
+    {
+      "start": 1691.08,
+      "duration": 5.56,
+      "text": "and maybe three times"
+    },
+    {
+      "start": 1693.32,
+      "duration": 5.6,
+      "text": "within a couple of months period."
+    },
+    {
+      "start": 1696.64,
+      "duration": 5.32,
+      "text": "Depends on the court as to what they"
+    },
+    {
+      "start": 1698.92,
+      "duration": 4.28,
+      "text": "told him to do."
+    },
+    {
+      "start": 1701.96,
+      "duration": 2.8,
+      "text": "Uh usually what they were in the"
+    },
+    {
+      "start": 1703.2,
+      "duration": 3.44,
+      "text": "newspaper."
+    },
+    {
+      "start": 1704.76,
+      "duration": 4.76,
+      "text": "And they have these little"
+    },
+    {
+      "start": 1706.64,
+      "duration": 4.24,
+      "text": "yellow pieces if you actually see a real"
+    },
+    {
+      "start": 1709.52,
+      "duration": 4.56,
+      "text": "estate"
+    },
+    {
+      "start": 1710.88,
+      "duration": 5.72,
+      "text": "um attached to a piece of paper."
+    },
+    {
+      "start": 1714.08,
+      "duration": 4.12,
+      "text": "Some of them have crumbled basically cuz"
+    },
+    {
+      "start": 1716.6,
+      "duration": 4.52,
+      "text": "they're so old."
+    },
+    {
+      "start": 1718.2,
+      "duration": 6.48,
+      "text": "It when then it was newsprint. It wasn't"
+    },
+    {
+      "start": 1721.12,
+      "duration": 5.44,
+      "text": "any fancy preservative type thing."
+    },
+    {
+      "start": 1724.68,
+      "duration": 3.24,
+      "text": "Um"
+    },
+    {
+      "start": 1726.56,
+      "duration": 3.48,
+      "text": "but"
+    },
+    {
+      "start": 1727.92,
+      "duration": 4.84,
+      "text": "if you were enough, you could also go in"
+    },
+    {
+      "start": 1730.04,
+      "duration": 4.6,
+      "text": "the newspapers that had been microfilmed"
+    },
+    {
+      "start": 1732.76,
+      "duration": 4.32,
+      "text": "and see it, too."
+    },
+    {
+      "start": 1734.64,
+      "duration": 2.44,
+      "text": "Um"
+    },
+    {
+      "start": 1738.36,
+      "duration": 4.48,
+      "text": "I guess I twice"
+    },
+    {
+      "start": 1740.0,
+      "duration": 4.32,
+      "text": "I I've seen it twice within a month."
+    },
+    {
+      "start": 1742.84,
+      "duration": 2.96,
+      "text": "Whatever."
+    },
+    {
+      "start": 1744.32,
+      "duration": 3.32,
+      "text": "Uh"
+    },
+    {
+      "start": 1745.8,
+      "duration": 4.68,
+      "text": "copies may be found"
+    },
+    {
+      "start": 1747.64,
+      "duration": 4.72,
+      "text": "with the probate papers."
+    },
+    {
+      "start": 1750.48,
+      "duration": 4.32,
+      "text": "One thing they did an order of"
+    },
+    {
+      "start": 1752.36,
+      "duration": 5.76,
+      "text": "publication for this."
+    },
+    {
+      "start": 1754.8,
+      "duration": 5.64,
+      "text": "Often times if they couldn't find heirs,"
+    },
+    {
+      "start": 1758.12,
+      "duration": 4.48,
+      "text": "they would put a notice in"
+    },
+    {
+      "start": 1760.44,
+      "duration": 4.28,
+      "text": "the newspaper where they thought the"
+    },
+    {
+      "start": 1762.6,
+      "duration": 4.96,
+      "text": "heirs lived."
+    },
+    {
+      "start": 1764.72,
+      "duration": 4.96,
+      "text": "Um sometimes people just disappeared in"
+    },
+    {
+      "start": 1767.56,
+      "duration": 4.04,
+      "text": "the West and they weren't able to find"
+    },
+    {
+      "start": 1769.68,
+      "duration": 4.92,
+      "text": "them, but they would do kind of a"
+    },
+    {
+      "start": 1771.6,
+      "duration": 4.8,
+      "text": "blanket thing on newspapers."
+    },
+    {
+      "start": 1774.6,
+      "duration": 4.0,
+      "text": "And often times newspapers would pick"
+    },
+    {
+      "start": 1776.4,
+      "duration": 3.16,
+      "text": "them up, especially if"
+    },
+    {
+      "start": 1778.6,
+      "duration": 4.28,
+      "text": "um"
+    },
+    {
+      "start": 1779.56,
+      "duration": 3.32,
+      "text": "uh the name looked familiar."
+    },
+    {
+      "start": 1787.24,
+      "duration": 4.52,
+      "text": "Probate packets."
+    },
+    {
+      "start": 1789.24,
+      "duration": 3.96,
+      "text": "These are the fun things."
+    },
+    {
+      "start": 1791.76,
+      "duration": 4.0,
+      "text": "Uh"
+    },
+    {
+      "start": 1793.2,
+      "duration": 4.92,
+      "text": "usually a folder or an envelope"
+    },
+    {
+      "start": 1795.76,
+      "duration": 4.32,
+      "text": "that uh contains most of these state"
+    },
+    {
+      "start": 1798.12,
+      "duration": 3.96,
+      "text": "paperwork."
+    },
+    {
+      "start": 1800.08,
+      "duration": 3.64,
+      "text": "So, the inventory, the list of"
+    },
+    {
+      "start": 1802.08,
+      "duration": 2.64,
+      "text": "purchasers,"
+    },
+    {
+      "start": 1803.72,
+      "duration": 4.08,
+      "text": "um"
+    },
+    {
+      "start": 1804.72,
+      "duration": 4.16,
+      "text": "the receipts after the settlement are in"
+    },
+    {
+      "start": 1807.8,
+      "duration": 3.52,
+      "text": "here."
+    },
+    {
+      "start": 1808.88,
+      "duration": 2.44,
+      "text": "Um"
+    },
+    {
+      "start": 1811.36,
+      "duration": 5.08,
+      "text": "and then there's other stuff."
+    },
+    {
+      "start": 1813.92,
+      "duration": 4.4,
+      "text": "Death certificate may be in there."
+    },
+    {
+      "start": 1816.44,
+      "duration": 4.12,
+      "text": "Um"
+    },
+    {
+      "start": 1818.32,
+      "duration": 5.32,
+      "text": "tax receipts. My great great"
+    },
+    {
+      "start": 1820.56,
+      "duration": 4.76,
+      "text": "grandmother's tax receipts are in there."
+    },
+    {
+      "start": 1823.64,
+      "duration": 3.84,
+      "text": "And when her husband died, she had to"
+    },
+    {
+      "start": 1825.32,
+      "duration": 4.28,
+      "text": "practice her signature."
+    },
+    {
+      "start": 1827.48,
+      "duration": 3.6,
+      "text": "So, she practiced them all over the tax"
+    },
+    {
+      "start": 1829.6,
+      "duration": 6.08,
+      "text": "receipts."
+    },
+    {
+      "start": 1831.08,
+      "duration": 7.84,
+      "text": "So, there you can get an idea of"
+    },
+    {
+      "start": 1835.68,
+      "duration": 6.04,
+      "text": "what they considered important."
+    },
+    {
+      "start": 1838.92,
+      "duration": 4.88,
+      "text": "I also found in the same folder"
+    },
+    {
+      "start": 1841.72,
+      "duration": 4.6,
+      "text": "that she had taken out an insurance"
+    },
+    {
+      "start": 1843.8,
+      "duration": 3.72,
+      "text": "policy on the house."
+    },
+    {
+      "start": 1846.32,
+      "duration": 3.92,
+      "text": "Which"
+    },
+    {
+      "start": 1847.52,
+      "duration": 4.76,
+      "text": "back in the 1880s, you don't think that"
+    },
+    {
+      "start": 1850.24,
+      "duration": 4.56,
+      "text": "they did insurance policies on their"
+    },
+    {
+      "start": 1852.28,
+      "duration": 4.6,
+      "text": "homes, but they did."
+    },
+    {
+      "start": 1854.8,
+      "duration": 4.36,
+      "text": "So, you find out, you know, little gems"
+    },
+    {
+      "start": 1856.88,
+      "duration": 3.88,
+      "text": "like that."
+    },
+    {
+      "start": 1859.16,
+      "duration": 4.04,
+      "text": "Unfortunately,"
+    },
+    {
+      "start": 1860.76,
+      "duration": 3.72,
+      "text": "she used a insurance company that wrote"
+    },
+    {
+      "start": 1863.2,
+      "duration": 3.2,
+      "text": "in German."
+    },
+    {
+      "start": 1864.48,
+      "duration": 3.56,
+      "text": "She was Pennsylvania Dutch."
+    },
+    {
+      "start": 1866.4,
+      "duration": 3.92,
+      "text": "Um"
+    },
+    {
+      "start": 1868.04,
+      "duration": 4.48,
+      "text": "so, I haven't deciphered it yet, but I"
+    },
+    {
+      "start": 1870.32,
+      "duration": 6.08,
+      "text": "thought it was interesting."
+    },
+    {
+      "start": 1872.52,
+      "duration": 5.92,
+      "text": "Um I also found um"
+    },
+    {
+      "start": 1876.4,
+      "duration": 4.32,
+      "text": "a piece of paper that there was misfiled"
+    },
+    {
+      "start": 1878.44,
+      "duration": 5.2,
+      "text": "and it should have been somebody else."
+    },
+    {
+      "start": 1880.72,
+      "duration": 5.6,
+      "text": "She died in 1894 and that was talking"
+    },
+    {
+      "start": 1883.64,
+      "duration": 5.64,
+      "text": "about someone in 1921."
+    },
+    {
+      "start": 1886.32,
+      "duration": 4.8,
+      "text": "So, you never know what you come across."
+    },
+    {
+      "start": 1889.28,
+      "duration": 4.88,
+      "text": "Um I gave it to the clerk and she"
+    },
+    {
+      "start": 1891.12,
+      "duration": 5.56,
+      "text": "refiled it in the correct folder."
+    },
+    {
+      "start": 1894.16,
+      "duration": 2.52,
+      "text": "Um"
+    },
+    {
+      "start": 1897.8,
+      "duration": 5.64,
+      "text": "and there's also the executor and the"
+    },
+    {
+      "start": 1900.12,
+      "duration": 4.88,
+      "text": "administrator's fee statement in there."
+    },
+    {
+      "start": 1903.44,
+      "duration": 2.88,
+      "text": "Um"
+    },
+    {
+      "start": 1905.0,
+      "duration": 3.12,
+      "text": "so, you can find out what they were"
+    },
+    {
+      "start": 1906.32,
+      "duration": 4.16,
+      "text": "paid."
+    },
+    {
+      "start": 1908.12,
+      "duration": 4.84,
+      "text": "Um Mr. Fletcher"
+    },
+    {
+      "start": 1910.48,
+      "duration": 2.48,
+      "text": "um"
+    },
+    {
+      "start": 1913.08,
+      "duration": 4.64,
+      "text": "they did get money for"
+    },
+    {
+      "start": 1915.2,
+      "duration": 4.32,
+      "text": "uh the administrator, I'll tell you that"
+    },
+    {
+      "start": 1917.72,
+      "duration": 3.28,
+      "text": "much. We'll get to the other stuff"
+    },
+    {
+      "start": 1919.52,
+      "duration": 4.64,
+      "text": "later, but"
+    },
+    {
+      "start": 1921.0,
+      "duration": 5.0,
+      "text": "um you can find just uh"
+    },
+    {
+      "start": 1924.16,
+      "duration": 4.92,
+      "text": "odds and ends."
+    },
+    {
+      "start": 1926.0,
+      "duration": 5.2,
+      "text": "Some states do not have probate packets"
+    },
+    {
+      "start": 1929.08,
+      "duration": 3.32,
+      "text": "and unfortunately, Virginia's one of"
+    },
+    {
+      "start": 1931.2,
+      "duration": 2.68,
+      "text": "them."
+    },
+    {
+      "start": 1932.4,
+      "duration": 4.84,
+      "text": "Being one of the oldest states, you"
+    },
+    {
+      "start": 1933.88,
+      "duration": 5.0,
+      "text": "know, you would have liked to have seen"
+    },
+    {
+      "start": 1937.24,
+      "duration": 2.88,
+      "text": "the probate,"
+    },
+    {
+      "start": 1938.88,
+      "duration": 3.08,
+      "text": "but"
+    },
+    {
+      "start": 1940.12,
+      "duration": 2.88,
+      "text": "that's a lot of writing and they didn't"
+    },
+    {
+      "start": 1941.96,
+      "duration": 3.52,
+      "text": "keep"
+    },
+    {
+      "start": 1943.0,
+      "duration": 5.28,
+      "text": "a whole lot."
+    },
+    {
+      "start": 1945.48,
+      "duration": 5.16,
+      "text": "Or in the case of"
+    },
+    {
+      "start": 1948.28,
+      "duration": 5.0,
+      "text": "one of my ancestors,"
+    },
+    {
+      "start": 1950.64,
+      "duration": 3.6,
+      "text": "the courthouse burned down in 1711. So,"
+    },
+    {
+      "start": 1953.28,
+      "duration": 4.2,
+      "text": "that"
+    },
+    {
+      "start": 1954.24,
+      "duration": 4.72,
+      "text": "you know, we couldn't find anything."
+    },
+    {
+      "start": 1957.48,
+      "duration": 5.4,
+      "text": "Um"
+    },
+    {
+      "start": 1958.96,
+      "duration": 6.32,
+      "text": "but most states do. Missouri does."
+    },
+    {
+      "start": 1962.88,
+      "duration": 4.8,
+      "text": "Um and there are, like I say,"
+    },
+    {
+      "start": 1965.28,
+      "duration": 5.08,
+      "text": "interesting items in there."
+    },
+    {
+      "start": 1967.68,
+      "duration": 4.44,
+      "text": "And you can kind of get an idea of"
+    },
+    {
+      "start": 1970.36,
+      "duration": 3.36,
+      "text": "what life was like."
+    },
+    {
+      "start": 1972.12,
+      "duration": 4.8,
+      "text": "If you're looking in Jackson County"
+    },
+    {
+      "start": 1973.72,
+      "duration": 5.72,
+      "text": "probate for the probate packets,"
+    },
+    {
+      "start": 1976.92,
+      "duration": 5.6,
+      "text": "you will find everything but the will."
+    },
+    {
+      "start": 1979.44,
+      "duration": 5.56,
+      "text": "The will is in a separate book."
+    },
+    {
+      "start": 1982.52,
+      "duration": 2.48,
+      "text": "Um"
+    },
+    {
+      "start": 1985.4,
+      "duration": 4.8,
+      "text": "I you know, they just kept it that way."
+    },
+    {
+      "start": 1988.24,
+      "duration": 3.8,
+      "text": "I don't know why."
+    },
+    {
+      "start": 1990.2,
+      "duration": 3.28,
+      "text": "I've never been able to get an answer on"
+    },
+    {
+      "start": 1992.04,
+      "duration": 2.44,
+      "text": "it, but"
+    },
+    {
+      "start": 1993.48,
+      "duration": 2.84,
+      "text": "uh"
+    },
+    {
+      "start": 1994.48,
+      "duration": 5.6,
+      "text": "it's kind of one of those things. You"
+    },
+    {
+      "start": 1996.32,
+      "duration": 3.76,
+      "text": "just need to look in two places."
+    },
+    {
+      "start": 2002.28,
+      "duration": 3.6,
+      "text": "The inventory,"
+    },
+    {
+      "start": 2003.72,
+      "duration": 5.04,
+      "text": "they listed everything."
+    },
+    {
+      "start": 2005.88,
+      "duration": 4.56,
+      "text": "Uh they you know, trying to get"
+    },
+    {
+      "start": 2008.76,
+      "duration": 4.6,
+      "text": "everything so that they could liquidate"
+    },
+    {
+      "start": 2010.44,
+      "duration": 5.88,
+      "text": "it and distribute it."
+    },
+    {
+      "start": 2013.36,
+      "duration": 3.8,
+      "text": "This is William Fletcher again."
+    },
+    {
+      "start": 2016.32,
+      "duration": 4.2,
+      "text": "Uh"
+    },
+    {
+      "start": 2017.16,
+      "duration": 3.36,
+      "text": "list of the assets."
+    },
+    {
+      "start": 2021.96,
+      "duration": 6.2,
+      "text": "Uh debts owed to the deceased and debts"
+    },
+    {
+      "start": 2025.04,
+      "duration": 6.24,
+      "text": "the deceased owed to others."
+    },
+    {
+      "start": 2028.16,
+      "duration": 5.92,
+      "text": "We get all this together"
+    },
+    {
+      "start": 2031.28,
+      "duration": 4.8,
+      "text": "and we find out"
+    },
+    {
+      "start": 2034.08,
+      "duration": 2.96,
+      "text": "the settlement papers and we find out"
+    },
+    {
+      "start": 2036.08,
+      "duration": 2.96,
+      "text": "the"
+    },
+    {
+      "start": 2037.04,
+      "duration": 4.52,
+      "text": "the estate after, [clears throat]"
+    },
+    {
+      "start": 2039.04,
+      "duration": 4.2,
+      "text": "of course, they paid the administrator."
+    },
+    {
+      "start": 2041.56,
+      "duration": 4.56,
+      "text": "Uh"
+    },
+    {
+      "start": 2043.24,
+      "duration": 6.159,
+      "text": "the estate was insolvent."
+    },
+    {
+      "start": 2046.12,
+      "duration": 6.4,
+      "text": "I think they only had $5 left and they"
+    },
+    {
+      "start": 2049.399,
+      "duration": 4.441,
+      "text": "just gave it to the administrator."
+    },
+    {
+      "start": 2052.52,
+      "duration": 4.159,
+      "text": "Um"
+    },
+    {
+      "start": 2053.84,
+      "duration": 2.839,
+      "text": "however,"
+    },
+    {
+      "start": 2058.159,
+      "duration": 5.401,
+      "text": "most settlement papers, if the heirs get"
+    },
+    {
+      "start": 2061.96,
+      "duration": 3.36,
+      "text": "a portion,"
+    },
+    {
+      "start": 2063.56,
+      "duration": 2.76,
+      "text": "there's little receipts like this in"
+    },
+    {
+      "start": 2065.32,
+      "duration": 3.079,
+      "text": "there."
+    },
+    {
+      "start": 2066.32,
+      "duration": 4.319,
+      "text": "It's kind of like those"
+    },
+    {
+      "start": 2068.399,
+      "duration": 4.961,
+      "text": "uh little pieces of paper you discover"
+    },
+    {
+      "start": 2070.639,
+      "duration": 4.801,
+      "text": "when a uh"
+    },
+    {
+      "start": 2073.36,
+      "duration": 4.4,
+      "text": "uh relative dies, they has all the"
+    },
+    {
+      "start": 2075.44,
+      "duration": 5.12,
+      "text": "genealogy on it. Well, these are little"
+    },
+    {
+      "start": 2077.76,
+      "duration": 5.04,
+      "text": "pieces of paper in probate."
+    },
+    {
+      "start": 2080.56,
+      "duration": 4.48,
+      "text": "They got so much"
+    },
+    {
+      "start": 2082.8,
+      "duration": 4.28,
+      "text": "and they sign at the bottom that they"
+    },
+    {
+      "start": 2085.04,
+      "duration": 4.119,
+      "text": "had received it."
+    },
+    {
+      "start": 2087.08,
+      "duration": 5.36,
+      "text": "This is actually"
+    },
+    {
+      "start": 2089.159,
+      "duration": 6.441,
+      "text": "the gentleman who died in 1827. This was"
+    },
+    {
+      "start": 2092.44,
+      "duration": 3.16,
+      "text": "one of his heirs."
+    },
+    {
+      "start": 2098.16,
+      "duration": 3.36,
+      "text": "Okay."
+    },
+    {
+      "start": 2099.76,
+      "duration": 3.28,
+      "text": "Um"
+    },
+    {
+      "start": 2101.52,
+      "duration": 5.28,
+      "text": "There's often a"
+    },
+    {
+      "start": 2103.04,
+      "duration": 7.52,
+      "text": "decree of distribution, not always."
+    },
+    {
+      "start": 2106.8,
+      "duration": 6.84,
+      "text": "Um and sometimes a transfer of property."
+    },
+    {
+      "start": 2110.56,
+      "duration": 5.32,
+      "text": "Sometimes if you look in deeds,"
+    },
+    {
+      "start": 2113.64,
+      "duration": 4.88,
+      "text": "you'll see a whole list of people and"
+    },
+    {
+      "start": 2115.88,
+      "duration": 5.96,
+      "text": "it'll say et al."
+    },
+    {
+      "start": 2118.52,
+      "duration": 5.96,
+      "text": "That's a pretty good indication that"
+    },
+    {
+      "start": 2121.84,
+      "duration": 4.16,
+      "text": "uh someone died and they left everybody"
+    },
+    {
+      "start": 2124.48,
+      "duration": 4.52,
+      "text": "property"
+    },
+    {
+      "start": 2126.0,
+      "duration": 5.12,
+      "text": "of this or portion of this plot and they"
+    },
+    {
+      "start": 2129.0,
+      "duration": 3.96,
+      "text": "all decided to sell it for one reason or"
+    },
+    {
+      "start": 2131.12,
+      "duration": 3.16,
+      "text": "another. Maybe they didn't live there"
+    },
+    {
+      "start": 2132.96,
+      "duration": 3.4,
+      "text": "anymore."
+    },
+    {
+      "start": 2134.28,
+      "duration": 4.0,
+      "text": "Like my great-grandparents."
+    },
+    {
+      "start": 2136.36,
+      "duration": 4.28,
+      "text": "His parents died. They didn't live there"
+    },
+    {
+      "start": 2138.28,
+      "duration": 4.44,
+      "text": "anymore, so they did a quitclaim on the"
+    },
+    {
+      "start": 2140.64,
+      "duration": 4.56,
+      "text": "land."
+    },
+    {
+      "start": 2142.72,
+      "duration": 2.48,
+      "text": "Um"
+    },
+    {
+      "start": 2145.6,
+      "duration": 3.36,
+      "text": "And so look for these."
+    },
+    {
+      "start": 2149.92,
+      "duration": 5.12,
+      "text": "I've done papers"
+    },
+    {
+      "start": 2152.76,
+      "duration": 5.76,
+      "text": "where they've given them"
+    },
+    {
+      "start": 2155.04,
+      "duration": 4.96,
+      "text": "like a horse and a carriage."
+    },
+    {
+      "start": 2158.52,
+      "duration": 4.64,
+      "text": "I don't know how they made it from"
+    },
+    {
+      "start": 2160.0,
+      "duration": 4.64,
+      "text": "Mississippi over to Arkansas,"
+    },
+    {
+      "start": 2163.16,
+      "duration": 3.28,
+      "text": "but evidently they went down and got the"
+    },
+    {
+      "start": 2164.64,
+      "duration": 5.28,
+      "text": "horse and carriage"
+    },
+    {
+      "start": 2166.44,
+      "duration": 3.48,
+      "text": "cuz they did sign for it."
+    },
+    {
+      "start": 2172.16,
+      "duration": 4.12,
+      "text": "Other record types."
+    },
+    {
+      "start": 2174.32,
+      "duration": 3.52,
+      "text": "Loose papers."
+    },
+    {
+      "start": 2176.28,
+      "duration": 3.16,
+      "text": "This is the pile of papers in the"
+    },
+    {
+      "start": 2177.84,
+      "duration": 3.92,
+      "text": "corner."
+    },
+    {
+      "start": 2179.44,
+      "duration": 3.48,
+      "text": "Generally they're dirty."
+    },
+    {
+      "start": 2181.76,
+      "duration": 4.12,
+      "text": "Um"
+    },
+    {
+      "start": 2182.92,
+      "duration": 4.56,
+      "text": "but they're unfiled probate packets."
+    },
+    {
+      "start": 2185.88,
+      "duration": 3.76,
+      "text": "Um"
+    },
+    {
+      "start": 2187.48,
+      "duration": 4.16,
+      "text": "other receipts"
+    },
+    {
+      "start": 2189.64,
+      "duration": 3.56,
+      "text": "um not associated with the probate"
+    },
+    {
+      "start": 2191.64,
+      "duration": 3.44,
+      "text": "record."
+    },
+    {
+      "start": 2193.2,
+      "duration": 5.16,
+      "text": "Um"
+    },
+    {
+      "start": 2195.08,
+      "duration": 4.4,
+      "text": "also um"
+    },
+    {
+      "start": 2198.36,
+      "duration": 3.56,
+      "text": "just"
+    },
+    {
+      "start": 2199.48,
+      "duration": 4.56,
+      "text": "things in general."
+    },
+    {
+      "start": 2201.92,
+      "duration": 4.72,
+      "text": "Uh one uh"
+    },
+    {
+      "start": 2204.04,
+      "duration": 4.8,
+      "text": "one genealogist that I knew"
+    },
+    {
+      "start": 2206.64,
+      "duration": 4.16,
+      "text": "was looking through the ones in Bates"
+    },
+    {
+      "start": 2208.84,
+      "duration": 4.32,
+      "text": "County,"
+    },
+    {
+      "start": 2210.8,
+      "duration": 5.12,
+      "text": "which is south of here."
+    },
+    {
+      "start": 2213.16,
+      "duration": 5.68,
+      "text": "There was no indication for the"
+    },
+    {
+      "start": 2215.92,
+      "duration": 3.96,
+      "text": "the death of a wife,"
+    },
+    {
+      "start": 2218.84,
+      "duration": 3.24,
+      "text": "but"
+    },
+    {
+      "start": 2219.88,
+      "duration": 4.2,
+      "text": "the receipt was in"
+    },
+    {
+      "start": 2222.08,
+      "duration": 3.44,
+      "text": "the loose papers"
+    },
+    {
+      "start": 2224.08,
+      "duration": 3.76,
+      "text": "in the corner."
+    },
+    {
+      "start": 2225.52,
+      "duration": 3.88,
+      "text": "He had to crawl over the file cabinets"
+    },
+    {
+      "start": 2227.84,
+      "duration": 3.32,
+      "text": "to get to the"
+    },
+    {
+      "start": 2229.4,
+      "duration": 4.4,
+      "text": "pile of receipts,"
+    },
+    {
+      "start": 2231.16,
+      "duration": 6.84,
+      "text": "but it was just a loose paper."
+    },
+    {
+      "start": 2233.8,
+      "duration": 4.2,
+      "text": "But they it was um"
+    },
+    {
+      "start": 2238.44,
+      "duration": 5.88,
+      "text": "it was just basically a coffin"
+    },
+    {
+      "start": 2241.96,
+      "duration": 4.28,
+      "text": "and a date."
+    },
+    {
+      "start": 2244.32,
+      "duration": 4.36,
+      "text": "Well, now you have at least some idea"
+    },
+    {
+      "start": 2246.24,
+      "duration": 5.0,
+      "text": "when she died."
+    },
+    {
+      "start": 2248.68,
+      "duration": 5.0,
+      "text": "Um and everybody was buried as soon as"
+    },
+    {
+      "start": 2251.24,
+      "duration": 5.88,
+      "text": "possible. So,"
+    },
+    {
+      "start": 2253.68,
+      "duration": 5.44,
+      "text": "uh you're going to get pretty close."
+    },
+    {
+      "start": 2257.12,
+      "duration": 4.36,
+      "text": "Uh dockets."
+    },
+    {
+      "start": 2259.12,
+      "duration": 6.12,
+      "text": "These are court calendars."
+    },
+    {
+      "start": 2261.48,
+      "duration": 6.36,
+      "text": "Uh they can be listed as"
+    },
+    {
+      "start": 2265.24,
+      "duration": 5.12,
+      "text": "um for guardianship or settlement or"
+    },
+    {
+      "start": 2267.84,
+      "duration": 2.52,
+      "text": "term."
+    },
+    {
+      "start": 2271.0,
+      "duration": 4.92,
+      "text": "So, you need to look at that if they're"
+    },
+    {
+      "start": 2273.6,
+      "duration": 4.16,
+      "text": "they still exist. That's something that"
+    },
+    {
+      "start": 2275.92,
+      "duration": 3.16,
+      "text": "sometimes they exist and sometimes they"
+    },
+    {
+      "start": 2277.76,
+      "duration": 3.631,
+      "text": "don't."
+    },
+    {
+      "start": 2279.08,
+      "duration": 2.84,
+      "text": "Um they should though."
+    },
+    {
+      "start": 2281.391,
+      "duration": 2.329,
+      "text": ">> [clears throat]"
+    },
+    {
+      "start": 2281.92,
+      "duration": 4.32,
+      "text": ">> Uh minutes."
+    },
+    {
+      "start": 2283.72,
+      "duration": 4.76,
+      "text": "These are the records of the session."
+    },
+    {
+      "start": 2286.24,
+      "duration": 4.68,
+      "text": "You'll at least get a name"
+    },
+    {
+      "start": 2288.48,
+      "duration": 5.24,
+      "text": "of the uh deceased as well as the"
+    },
+    {
+      "start": 2290.92,
+      "duration": 4.56,
+      "text": "administrator and that they've"
+    },
+    {
+      "start": 2293.72,
+      "duration": 5.28,
+      "text": "brought it to court."
+    },
+    {
+      "start": 2295.48,
+      "duration": 6.68,
+      "text": "Um what was decided or were they able to"
+    },
+    {
+      "start": 2299.0,
+      "duration": 3.16,
+      "text": "close the estate."
+    },
+    {
+      "start": 2302.56,
+      "duration": 5.72,
+      "text": "All courts have a general index."
+    },
+    {
+      "start": 2305.96,
+      "duration": 2.32,
+      "text": "Um"
+    },
+    {
+      "start": 2308.56,
+      "duration": 4.24,
+      "text": "first by number,"
+    },
+    {
+      "start": 2310.2,
+      "duration": 5.04,
+      "text": "but they also have an alphabetical index"
+    },
+    {
+      "start": 2312.8,
+      "duration": 4.76,
+      "text": "by the deceased name."
+    },
+    {
+      "start": 2315.24,
+      "duration": 3.76,
+      "text": "This is required."
+    },
+    {
+      "start": 2317.56,
+      "duration": 3.48,
+      "text": "So,"
+    },
+    {
+      "start": 2319.0,
+      "duration": 3.4,
+      "text": "most courts did this. We don't have a"
+    },
+    {
+      "start": 2321.04,
+      "duration": 2.96,
+      "text": "problem."
+    },
+    {
+      "start": 2322.4,
+      "duration": 3.531,
+      "text": "We don't have a problem in Jackson"
+    },
+    {
+      "start": 2324.0,
+      "duration": 2.2,
+      "text": "County."
+    },
+    {
+      "start": 2325.931,
+      "duration": 1.429,
+      "text": ">> [clears throat]"
+    },
+    {
+      "start": 2326.2,
+      "duration": 3.6,
+      "text": ">> But,"
+    },
+    {
+      "start": 2327.36,
+      "duration": 2.44,
+      "text": "um"
+    },
+    {
+      "start": 2331.2,
+      "duration": 5.32,
+      "text": "check there again. Check other wills"
+    },
+    {
+      "start": 2333.2,
+      "duration": 6.64,
+      "text": "that are with the same surname."
+    },
+    {
+      "start": 2336.52,
+      "duration": 3.32,
+      "text": "They may be a relative."
+    },
+    {
+      "start": 2339.92,
+      "duration": 4.24,
+      "text": "Now, we come to interesting stuff like"
+    },
+    {
+      "start": 2342.2,
+      "duration": 4.8,
+      "text": "dower rights."
+    },
+    {
+      "start": 2344.16,
+      "duration": 5.96,
+      "text": "It was basically the portion"
+    },
+    {
+      "start": 2347.0,
+      "duration": 5.32,
+      "text": "that the widow was entitled to."
+    },
+    {
+      "start": 2350.12,
+      "duration": 5.08,
+      "text": "Um it varies by state, but usually it"
+    },
+    {
+      "start": 2352.32,
+      "duration": 4.64,
+      "text": "was a third of the estate."
+    },
+    {
+      "start": 2355.2,
+      "duration": 3.24,
+      "text": "Uh"
+    },
+    {
+      "start": 2356.96,
+      "duration": 3.72,
+      "text": "she"
+    },
+    {
+      "start": 2358.44,
+      "duration": 6.08,
+      "text": "um"
+    },
+    {
+      "start": 2360.68,
+      "duration": 8.08,
+      "text": "was given this um"
+    },
+    {
+      "start": 2364.52,
+      "duration": 6.28,
+      "text": "to um support herself and her children"
+    },
+    {
+      "start": 2368.76,
+      "duration": 3.8,
+      "text": "until she remarried."
+    },
+    {
+      "start": 2370.8,
+      "duration": 3.12,
+      "text": "Uh the children would still get their"
+    },
+    {
+      "start": 2372.56,
+      "duration": 3.52,
+      "text": "portion."
+    },
+    {
+      "start": 2373.92,
+      "duration": 4.6,
+      "text": "Um"
+    },
+    {
+      "start": 2376.08,
+      "duration": 5.72,
+      "text": "and until the"
+    },
+    {
+      "start": 2378.52,
+      "duration": 5.12,
+      "text": "uh probate was"
+    },
+    {
+      "start": 2381.8,
+      "duration": 4.0,
+      "text": "um"
+    },
+    {
+      "start": 2383.64,
+      "duration": 4.96,
+      "text": "where they got had gone through it, she"
+    },
+    {
+      "start": 2385.8,
+      "duration": 7.2,
+      "text": "could get an annual allowance."
+    },
+    {
+      "start": 2388.6,
+      "duration": 5.88,
+      "text": "Uh yearly allowance is granted. Um"
+    },
+    {
+      "start": 2393.0,
+      "duration": 2.96,
+      "text": "Another thing,"
+    },
+    {
+      "start": 2394.48,
+      "duration": 6.88,
+      "text": "dower rights"
+    },
+    {
+      "start": 2395.96,
+      "duration": 6.48,
+      "text": "uh if the estate is insolvent are void."
+    },
+    {
+      "start": 2401.36,
+      "duration": 3.48,
+      "text": "Um"
+    },
+    {
+      "start": 2402.44,
+      "duration": 5.0,
+      "text": "most of the time,"
+    },
+    {
+      "start": 2404.84,
+      "duration": 5.08,
+      "text": "you will see you'll see dower rights"
+    },
+    {
+      "start": 2407.44,
+      "duration": 4.08,
+      "text": "more on deeds"
+    },
+    {
+      "start": 2409.92,
+      "duration": 4.24,
+      "text": "than"
+    },
+    {
+      "start": 2411.52,
+      "duration": 4.6,
+      "text": "uh in the actual estates, but the"
+    },
+    {
+      "start": 2414.16,
+      "duration": 4.52,
+      "text": "records are there."
+    },
+    {
+      "start": 2416.12,
+      "duration": 4.44,
+      "text": "If you're interested, uh you might look"
+    },
+    {
+      "start": 2418.68,
+      "duration": 3.8,
+      "text": "at our book called Washington County"
+    },
+    {
+      "start": 2420.56,
+      "duration": 3.92,
+      "text": "Dower Rights, and it's for Washington"
+    },
+    {
+      "start": 2422.48,
+      "duration": 4.56,
+      "text": "County, Tennessee."
+    },
+    {
+      "start": 2424.48,
+      "duration": 4.6,
+      "text": "Uh couple of gentlemen went through"
+    },
+    {
+      "start": 2427.04,
+      "duration": 4.08,
+      "text": "and listed them."
+    },
+    {
+      "start": 2429.08,
+      "duration": 4.24,
+      "text": "It's very interesting, and it's very"
+    },
+    {
+      "start": 2431.12,
+      "duration": 4.68,
+      "text": "interesting"
+    },
+    {
+      "start": 2433.32,
+      "duration": 5.16,
+      "text": "who had dower rights."
+    },
+    {
+      "start": 2435.8,
+      "duration": 5.4,
+      "text": "Dower rights in Missouri"
+    },
+    {
+      "start": 2438.48,
+      "duration": 4.2,
+      "text": "don't exist anymore."
+    },
+    {
+      "start": 2441.2,
+      "duration": 4.52,
+      "text": "They um"
+    },
+    {
+      "start": 2442.68,
+      "duration": 5.12,
+      "text": "went out in 1955."
+    },
+    {
+      "start": 2445.72,
+      "duration": 5.76,
+      "text": "And"
+    },
+    {
+      "start": 2447.8,
+      "duration": 7.44,
+      "text": "then again in 2017, the legislature"
+    },
+    {
+      "start": 2451.48,
+      "duration": 5.04,
+      "text": "made sure we had no dower rights here or"
+    },
+    {
+      "start": 2455.24,
+      "duration": 4.72,
+      "text": "curtesy,"
+    },
+    {
+      "start": 2456.52,
+      "duration": 4.76,
+      "text": "which is the husband's dower rights."
+    },
+    {
+      "start": 2459.96,
+      "duration": 3.08,
+      "text": "Generally,"
+    },
+    {
+      "start": 2461.28,
+      "duration": 2.88,
+      "text": "they didn't have much of that. It would"
+    },
+    {
+      "start": 2463.04,
+      "duration": 2.84,
+      "text": "be if"
+    },
+    {
+      "start": 2464.16,
+      "duration": 4.2,
+      "text": "for some reason,"
+    },
+    {
+      "start": 2465.88,
+      "duration": 3.88,
+      "text": "say the father-in-law put a hold on the"
+    },
+    {
+      "start": 2468.36,
+      "duration": 3.8,
+      "text": "estate"
+    },
+    {
+      "start": 2469.76,
+      "duration": 4.08,
+      "text": "such that only his daughter could"
+    },
+    {
+      "start": 2472.16,
+      "duration": 3.76,
+      "text": "inherit."
+    },
+    {
+      "start": 2473.84,
+      "duration": 3.4,
+      "text": "He could go back on that if his wife"
+    },
+    {
+      "start": 2475.92,
+      "duration": 5.48,
+      "text": "died"
+    },
+    {
+      "start": 2477.24,
+      "duration": 4.16,
+      "text": "and ask for dower rights."
+    },
+    {
+      "start": 2481.6,
+      "duration": 3.76,
+      "text": "Like I say, it doesn't occur very often,"
+    },
+    {
+      "start": 2483.96,
+      "duration": 3.24,
+      "text": "but"
+    },
+    {
+      "start": 2485.36,
+      "duration": 3.56,
+      "text": "it's kind of interesting."
+    },
+    {
+      "start": 2487.2,
+      "duration": 2.28,
+      "text": "And once"
+    },
+    {
+      "start": 2488.92,
+      "duration": 3.2,
+      "text": "uh"
+    },
+    {
+      "start": 2489.48,
+      "duration": 4.76,
+      "text": "the dower or the curtesy,"
+    },
+    {
+      "start": 2492.12,
+      "duration": 4.44,
+      "text": "the person died,"
+    },
+    {
+      "start": 2494.24,
+      "duration": 4.04,
+      "text": "uh the rights and money went to the"
+    },
+    {
+      "start": 2496.56,
+      "duration": 6.16,
+      "text": "heirs."
+    },
+    {
+      "start": 2498.28,
+      "duration": 4.44,
+      "text": "And you can see this in the court, also."
+    },
+    {
+      "start": 2503.88,
+      "duration": 5.08,
+      "text": "Guardianship records."
+    },
+    {
+      "start": 2506.84,
+      "duration": 3.92,
+      "text": "Basically, the heirs that"
+    },
+    {
+      "start": 2508.96,
+      "duration": 4.2,
+      "text": "heirs that left behind who were under"
+    },
+    {
+      "start": 2510.76,
+      "duration": 4.16,
+      "text": "21."
+    },
+    {
+      "start": 2513.16,
+      "duration": 3.56,
+      "text": "Um"
+    },
+    {
+      "start": 2514.92,
+      "duration": 3.52,
+      "text": "It's basically to take care of minor"
+    },
+    {
+      "start": 2516.72,
+      "duration": 3.64,
+      "text": "child."
+    },
+    {
+      "start": 2518.44,
+      "duration": 5.48,
+      "text": "Um"
+    },
+    {
+      "start": 2520.36,
+      "duration": 5.24,
+      "text": "or a person judged incompetent."
+    },
+    {
+      "start": 2523.92,
+      "duration": 3.92,
+      "text": "Uh"
+    },
+    {
+      "start": 2525.6,
+      "duration": 4.64,
+      "text": "And the person judged incompetent is"
+    },
+    {
+      "start": 2527.84,
+      "duration": 4.68,
+      "text": "called the cases are called"
+    },
+    {
+      "start": 2530.24,
+      "duration": 3.84,
+      "text": "conservatorships."
+    },
+    {
+      "start": 2532.52,
+      "duration": 5.12,
+      "text": "Um"
+    },
+    {
+      "start": 2534.08,
+      "duration": 6.36,
+      "text": "guardians had to file annual"
+    },
+    {
+      "start": 2537.64,
+      "duration": 7.12,
+      "text": "accounts to the court"
+    },
+    {
+      "start": 2540.44,
+      "duration": 6.4,
+      "text": "until the minor be reached the age of 21"
+    },
+    {
+      "start": 2544.76,
+      "duration": 3.84,
+      "text": "or 18 depending on the state, there"
+    },
+    {
+      "start": 2546.84,
+      "duration": 3.0,
+      "text": "again state law"
+    },
+    {
+      "start": 2548.6,
+      "duration": 3.52,
+      "text": "or"
+    },
+    {
+      "start": 2549.84,
+      "duration": 6.32,
+      "text": "if they married."
+    },
+    {
+      "start": 2552.12,
+      "duration": 6.72,
+      "text": "So, if a lady married at 16 or 17"
+    },
+    {
+      "start": 2556.16,
+      "duration": 5.44,
+      "text": "she was considered an adult and then she"
+    },
+    {
+      "start": 2558.84,
+      "duration": 5.28,
+      "text": "didn't need a guardian."
+    },
+    {
+      "start": 2561.6,
+      "duration": 2.52,
+      "text": "Um"
+    },
+    {
+      "start": 2565.44,
+      "duration": 4.96,
+      "text": "not all the accounts still exist."
+    },
+    {
+      "start": 2569.04,
+      "duration": 3.174,
+      "text": "I know because I've been through a"
+    },
+    {
+      "start": 2570.4,
+      "duration": 1.84,
+      "text": "guardianship."
+    },
+    {
+      "start": 2572.214,
+      "duration": 2.066,
+      "text": ">> [clears throat]"
+    },
+    {
+      "start": 2572.24,
+      "duration": 4.0,
+      "text": ">> Maybe they might have"
+    },
+    {
+      "start": 2574.28,
+      "duration": 4.8,
+      "text": "had every third year or something of"
+    },
+    {
+      "start": 2576.24,
+      "duration": 2.84,
+      "text": "that nature."
+    },
+    {
+      "start": 2581.44,
+      "duration": 4.6,
+      "text": "And this is a guardianship."
+    },
+    {
+      "start": 2584.28,
+      "duration": 4.32,
+      "text": "You can see"
+    },
+    {
+      "start": 2586.04,
+      "duration": 5.72,
+      "text": "a list of the kids"
+    },
+    {
+      "start": 2588.6,
+      "duration": 3.16,
+      "text": "and their accounts."
+    },
+    {
+      "start": 2598.56,
+      "duration": 6.32,
+      "text": "And if you'll see it shows the heirs of"
+    },
+    {
+      "start": 2602.24,
+      "duration": 4.76,
+      "text": "so you get the heirs of there. So, now"
+    },
+    {
+      "start": 2604.88,
+      "duration": 5.08,
+      "text": "you've got a connection."
+    },
+    {
+      "start": 2607.0,
+      "duration": 3.96,
+      "text": "You can prove that these kids"
+    },
+    {
+      "start": 2609.96,
+      "duration": 3.2,
+      "text": "were"
+    },
+    {
+      "start": 2610.96,
+      "duration": 4.28,
+      "text": "uh this gentleman's"
+    },
+    {
+      "start": 2613.16,
+      "duration": 4.52,
+      "text": "um"
+    },
+    {
+      "start": 2615.24,
+      "duration": 2.44,
+      "text": "children."
+    },
+    {
+      "start": 2619.52,
+      "duration": 3.64,
+      "text": "One thing you need to do is you need to"
+    },
+    {
+      "start": 2621.0,
+      "duration": 4.4,
+      "text": "set your probate sources."
+    },
+    {
+      "start": 2623.16,
+      "duration": 5.28,
+      "text": "Whether you get it online"
+    },
+    {
+      "start": 2625.4,
+      "duration": 5.04,
+      "text": "or through books and microfilm"
+    },
+    {
+      "start": 2628.44,
+      "duration": 4.04,
+      "text": "you need to indicate the pri- type of"
+    },
+    {
+      "start": 2630.44,
+      "duration": 4.16,
+      "text": "record. Was it a will? Was it"
+    },
+    {
+      "start": 2632.48,
+      "duration": 4.52,
+      "text": "administration?"
+    },
+    {
+      "start": 2634.6,
+      "duration": 4.52,
+      "text": "In Missouri the administrations"
+    },
+    {
+      "start": 2637.0,
+      "duration": 3.6,
+      "text": "list the heirs so it's almost as good as"
+    },
+    {
+      "start": 2639.12,
+      "duration": 4.32,
+      "text": "a will."
+    },
+    {
+      "start": 2640.6,
+      "duration": 4.2,
+      "text": "Um the name of the deceased"
+    },
+    {
+      "start": 2643.44,
+      "duration": 3.36,
+      "text": "the name of the administrator or"
+    },
+    {
+      "start": 2644.8,
+      "duration": 5.72,
+      "text": "executor"
+    },
+    {
+      "start": 2646.8,
+      "duration": 5.4,
+      "text": "uh the court and its location."
+    },
+    {
+      "start": 2650.52,
+      "duration": 3.76,
+      "text": "Was it in the county?"
+    },
+    {
+      "start": 2652.2,
+      "duration": 4.2,
+      "text": "Was it at the state?"
+    },
+    {
+      "start": 2654.28,
+      "duration": 5.96,
+      "text": "Generally, um"
+    },
+    {
+      "start": 2656.4,
+      "duration": 3.84,
+      "text": "things were filed at the county seat."
+    },
+    {
+      "start": 2661.16,
+      "duration": 3.68,
+      "text": "I have"
+    },
+    {
+      "start": 2662.44,
+      "duration": 3.2,
+      "text": "have not known many to be count"
+    },
+    {
+      "start": 2664.84,
+      "duration": 2.64,
+      "text": "um"
+    },
+    {
+      "start": 2665.64,
+      "duration": 4.84,
+      "text": "filed in one of the small towns around"
+    },
+    {
+      "start": 2667.48,
+      "duration": 5.08,
+      "text": "it. Usually it's at the county seat."
+    },
+    {
+      "start": 2670.48,
+      "duration": 4.8,
+      "text": "Uh the volume number and the page"
+    },
+    {
+      "start": 2672.56,
+      "duration": 2.72,
+      "text": "numbers."
+    },
+    {
+      "start": 2675.96,
+      "duration": 3.0,
+      "text": "So,"
+    },
+    {
+      "start": 2682.6,
+      "duration": 5.52,
+      "text": "these are two legal dictionaries."
+    },
+    {
+      "start": 2685.68,
+      "duration": 5.08,
+      "text": "There's Black's up there."
+    },
+    {
+      "start": 2688.12,
+      "duration": 5.36,
+      "text": "They've been going on since 1890."
+    },
+    {
+      "start": 2690.76,
+      "duration": 2.72,
+      "text": "Um"
+    },
+    {
+      "start": 2693.76,
+      "duration": 4.12,
+      "text": "They're published by um the Western"
+    },
+    {
+      "start": 2696.44,
+      "duration": 5.36,
+      "text": "Publishing Company or the West"
+    },
+    {
+      "start": 2697.88,
+      "duration": 5.36,
+      "text": "Publishing Company in St. Paul."
+    },
+    {
+      "start": 2701.8,
+      "duration": 2.56,
+      "text": "Although I believe they've been bought"
+    },
+    {
+      "start": 2703.24,
+      "duration": 2.48,
+      "text": "out."
+    },
+    {
+      "start": 2704.36,
+      "duration": 2.84,
+      "text": "Seems like a friend of mine whose"
+    },
+    {
+      "start": 2705.72,
+      "duration": 3.4,
+      "text": "husband used to work there and he said"
+    },
+    {
+      "start": 2707.2,
+      "duration": 4.6,
+      "text": "they were bought out."
+    },
+    {
+      "start": 2709.12,
+      "duration": 4.12,
+      "text": "Um but you can go in there for legal"
+    },
+    {
+      "start": 2711.8,
+      "duration": 4.88,
+      "text": "definitions."
+    },
+    {
+      "start": 2713.24,
+      "duration": 7.92,
+      "text": "We have Black's upstairs. We start in"
+    },
+    {
+      "start": 2716.68,
+      "duration": 6.6,
+      "text": "1891 or 1892 for the hard copy."
+    },
+    {
+      "start": 2721.16,
+      "duration": 4.44,
+      "text": "And the other one is Bouvier's Law"
+    },
+    {
+      "start": 2723.28,
+      "duration": 4.2,
+      "text": "Dictionary."
+    },
+    {
+      "start": 2725.6,
+      "duration": 3.92,
+      "text": "Uh"
+    },
+    {
+      "start": 2727.48,
+      "duration": 4.04,
+      "text": "1856."
+    },
+    {
+      "start": 2729.52,
+      "duration": 5.84,
+      "text": "These are both online."
+    },
+    {
+      "start": 2731.52,
+      "duration": 6.56,
+      "text": "Uh you can just Google either one"
+    },
+    {
+      "start": 2735.36,
+      "duration": 4.52,
+      "text": "uh to look up a word"
+    },
+    {
+      "start": 2738.08,
+      "duration": 4.16,
+      "text": "like"
+    },
+    {
+      "start": 2739.88,
+      "duration": 4.88,
+      "text": "et and then ux,"
+    },
+    {
+      "start": 2742.24,
+      "duration": 4.28,
+      "text": "which means and wife,"
+    },
+    {
+      "start": 2744.76,
+      "duration": 3.52,
+      "text": "Latin terms."
+    },
+    {
+      "start": 2746.52,
+      "duration": 3.76,
+      "text": "Um"
+    },
+    {
+      "start": 2748.28,
+      "duration": 3.52,
+      "text": "and I guarantee you of all the wills"
+    },
+    {
+      "start": 2750.28,
+      "duration": 2.96,
+      "text": "I've read, I don't remember all the"
+    },
+    {
+      "start": 2751.8,
+      "duration": 2.6,
+      "text": "Latin."
+    },
+    {
+      "start": 2753.24,
+      "duration": 2.8,
+      "text": "But"
+    },
+    {
+      "start": 2754.4,
+      "duration": 4.12,
+      "text": "go in there and look."
+    },
+    {
+      "start": 2756.04,
+      "duration": 2.48,
+      "text": "Um"
+    },
+    {
+      "start": 2758.64,
+      "duration": 4.76,
+      "text": "it could be, you know,"
+    },
+    {
+      "start": 2761.56,
+      "duration": 3.88,
+      "text": "could be they they decided to write it"
+    },
+    {
+      "start": 2763.4,
+      "duration": 5.36,
+      "text": "in Latin."
+    },
+    {
+      "start": 2765.44,
+      "duration": 4.48,
+      "text": "Uh one thing about before I get any"
+    },
+    {
+      "start": 2768.76,
+      "duration": 3.24,
+      "text": "further,"
+    },
+    {
+      "start": 2769.92,
+      "duration": 3.96,
+      "text": "Pennsylvania."
+    },
+    {
+      "start": 2772.0,
+      "duration": 4.88,
+      "text": "Some of the wills are in English and"
+    },
+    {
+      "start": 2773.88,
+      "duration": 5.0,
+      "text": "some of them are in German."
+    },
+    {
+      "start": 2776.88,
+      "duration": 4.04,
+      "text": "Unfortunately, the German ones are not"
+    },
+    {
+      "start": 2778.88,
+      "duration": 2.64,
+      "text": "indexed."
+    },
+    {
+      "start": 2780.92,
+      "duration": 1.84,
+      "text": "Uh"
+    },
+    {
+      "start": 2781.52,
+      "duration": 3.24,
+      "text": "so,"
+    },
+    {
+      "start": 2782.76,
+      "duration": 3.84,
+      "text": "you might keep that in mind"
+    },
+    {
+      "start": 2784.76,
+      "duration": 3.96,
+      "text": "and make a little thorough search of the"
+    },
+    {
+      "start": 2786.6,
+      "duration": 4.2,
+      "text": "books or anything"
+    },
+    {
+      "start": 2788.72,
+      "duration": 5.72,
+      "text": "so that you can find"
+    },
+    {
+      "start": 2790.8,
+      "duration": 3.64,
+      "text": "your ancestor, hopefully."
+    },
+    {
+      "start": 2795.84,
+      "duration": 3.04,
+      "text": "These are some of the additional"
+    },
+    {
+      "start": 2797.24,
+      "duration": 5.28,
+      "text": "resources"
+    },
+    {
+      "start": 2798.88,
+      "duration": 5.72,
+      "text": "that are online. Ancestry has wills"
+    },
+    {
+      "start": 2802.52,
+      "duration": 4.84,
+      "text": "and estates. So does HeritageQuest and"
+    },
+    {
+      "start": 2804.6,
+      "duration": 5.64,
+      "text": "FamilySearch."
+    },
+    {
+      "start": 2807.36,
+      "duration": 5.92,
+      "text": "Many of them are digitized. I think Sam-"
+    },
+    {
+      "start": 2810.24,
+      "duration": 5.16,
+      "text": "FamilySearch is completely digitized."
+    },
+    {
+      "start": 2813.28,
+      "duration": 4.32,
+      "text": "They also have"
+    },
+    {
+      "start": 2815.4,
+      "duration": 2.2,
+      "text": "uh"
+    },
+    {
+      "start": 2817.76,
+      "duration": 3.72,
+      "text": "where you can search for a name."
+    },
+    {
+      "start": 2822.56,
+      "duration": 4.0,
+      "text": "You can also uh on some of them you can"
+    },
+    {
+      "start": 2824.84,
+      "duration": 4.4,
+      "text": "search the administrative papers, the"
+    },
+    {
+      "start": 2826.56,
+      "duration": 4.72,
+      "text": "inventories, and the indexes."
+    },
+    {
+      "start": 2829.24,
+      "duration": 4.24,
+      "text": "It just depends."
+    },
+    {
+      "start": 2831.28,
+      "duration": 4.96,
+      "text": "Uh you can also use search engines to"
+    },
+    {
+      "start": 2833.48,
+      "duration": 4.44,
+      "text": "find online databases"
+    },
+    {
+      "start": 2836.24,
+      "duration": 4.68,
+      "text": "for specific"
+    },
+    {
+      "start": 2837.92,
+      "duration": 5.36,
+      "text": "uh counties and states."
+    },
+    {
+      "start": 2840.92,
+      "duration": 4.8,
+      "text": "And"
+    },
+    {
+      "start": 2843.28,
+      "duration": 5.92,
+      "text": "various printed probate indexes of"
+    },
+    {
+      "start": 2845.72,
+      "duration": 5.36,
+      "text": "records. You might look at our catalog."
+    },
+    {
+      "start": 2849.2,
+      "duration": 3.04,
+      "text": "We have a lot of indexes up there on"
+    },
+    {
+      "start": 2851.08,
+      "duration": 3.48,
+      "text": "probate,"
+    },
+    {
+      "start": 2852.24,
+      "duration": 4.72,
+      "text": "including Jackson County."
+    },
+    {
+      "start": 2854.56,
+      "duration": 2.4,
+      "text": "Um"
+    },
+    {
+      "start": 2857.4,
+      "duration": 2.72,
+      "text": "and"
+    },
+    {
+      "start": 2860.96,
+      "duration": 6.76,
+      "text": "before we get any further,"
+    },
+    {
+      "start": 2864.04,
+      "duration": 6.8,
+      "text": "we have our upcoming spring seminar,"
+    },
+    {
+      "start": 2867.72,
+      "duration": 4.12,
+      "text": "Branches and Bites."
+    },
+    {
+      "start": 2870.84,
+      "duration": 3.36,
+      "text": "Um"
+    },
+    {
+      "start": 2871.84,
+      "duration": 3.76,
+      "text": "with Steve Little and Mark"
+    },
+    {
+      "start": 2874.2,
+      "duration": 4.36,
+      "text": "Thompson."
+    },
+    {
+      "start": 2875.6,
+      "duration": 5.56,
+      "text": "It's going to be on April 18th of this"
+    },
+    {
+      "start": 2878.56,
+      "duration": 4.32,
+      "text": "year. There is a fee involved, but we do"
+    },
+    {
+      "start": 2881.16,
+      "duration": 2.92,
+      "text": "feed you."
+    },
+    {
+      "start": 2882.88,
+      "duration": 3.96,
+      "text": "So, [snorts]"
+    },
+    {
+      "start": 2884.08,
+      "duration": 4.16,
+      "text": "um, 9:00 to 4:00."
+    },
+    {
+      "start": 2886.84,
+      "duration": 5.64,
+      "text": "And we hope you'll"
+    },
+    {
+      "start": 2888.24,
+      "duration": 4.24,
+      "text": "all join us. It's basically on AI."
+    }
+  ],
+  "full_text": "Good afternoon. And welcome to Midwest Genealogy Center's US Probate Records for Genealogy. Uh first a few things, you should have received an email uh for those that are watching hybrid. Um it will include uh the outline for the class as well as um your number to get in. Uh and within 24 hours you will also be getting an email that uh has our marketing evaluation sheet. Please fill that out and return it. Please mute your um audio and your video. Um also please hold your questions to the end of class. And we'll answer everything then. Uh we're Thank [snorts] you on that. Uh for those people here little housekeeping. Um the bathrooms are between the elevators. If for some [snorts] reason there's an emergency, you can go out the door and all the way to the front doors, or you can make a left, go through the microfilm room back here to the very end. There's a door, go out that and there's another door and you go out that and you're in the parking lot. Please mute your your phones or put them on a vibrate. Um and I think those are the major things. Um also Well, anyway, one thing about this class, I am not a lawyer, an attorney. Please do not ask any legal advice. I will just tell you to go to your lawyer or your attorney. Um So anyway, uh we're just here to discuss the different records. Probate genealogy. Probate is some of the best records. I usually they list family information. Uh person may list sons and daughters on there. Um which if you're looking for it, you get the connection. Hopefully they put my son, say John. So that um you actually know the relationship or my nephew. Um So you know, you get that connection. Especially when you're doing lineage papers, you get that connection going back. Uh deeds and probate go all the way back to the beginning of the country because they involved assets or money. And everybody wrote that down. Um >> And being able to connect your generations, this is your proof. Uh they can be found in various courts around the country. Um some of the larger cities like Kansas City and Independence, they have their own probate court, which is a civil court. Um they can also be found um in the smaller counties just in the circuit court as in Missouri or county courts. Uh in Pennsylvania, you're they're orphan courts. Um it's just a matter of name. Sometimes they uh probate it at the state level. Uh especially if they didn't want their neighbors to know what they were they had. So, um So, if you don't find them at the county level, they might be at the state level. Um and that would be your superior court of the state of So, you know, start when you look for the records, look for probate court, but then also look for any of the other courts. What is probate? Probate is the process of distributing the assets that the uh from the deceased person's estate. Um They um are specified by the testator, which is the person who died, or by law. Um and we'll go into that in a minute. Uh assets will include uh real property, which land, buildings, property, uh mineral rights, and appurtenances, which are improvements to the land as far as buildings and things of that nature. So, the uh barn is an appurtenance. Um anything that might require a deed. Uh Personal property is another thing. That includes movables. The dishes, the furniture, farm equipment, and it also included enslaved people before 1865. When an ancestor dies, if he wrote a will, it becomes a testate estate. The will has to be valid. The heirs need to pull it into court to make sure that the court accepts it and says, \"This is a valid will.\" Um it is usually presented in court as soon as possible cuz everybody wanted their share. Sometimes these wills and estates can take up to a number of years. I've seen 10 or 12. Um depending on what the will specified things needed to be done. Um but hopefully it was only within a year that everything got uh accomplished. Uh the executor or the executrix named in the will an executrix is a female executor. Um they're usually were in the will. If they did not want to serve, someone was appointed or someone volunteered to do the will. They were paid and you could tell by the payment as to how big the estate was. If it was a small payment payment to the executor, it means there wasn't many uh much in the estate. Uh letters testamentary were issued. Um it should have been witnessed by two uninterested parties. This is um if you can find uninterested parties when they were doing the will. Oftentimes in the colonial days, there weren't two interested parties around, so you see relatives signing that were also in the will. Um heirs are called devisees or devisees. Um that's just legal terms. You'll run across them as you're doing your genealogy and as you're reading the wills. And you need to read the wills. Um abstracts are fine, but if you see the real will, you can see what they portioned out. Um and a bond was posted. That was to make sure that the uh executor made sure that the estate came to a conclusion. Uh things were paid and so on. This will was a valid will it from Jackson County uh John B. Nolan. He actually wrote the will in October of 1896. He died June 3rd, uh, 1901. Heirs had it in court the 19th of June, 1901. I don't know how long it took him to, um, um, probate the estate. That's what I'm thinking of. But, just the fact that 2 weeks, it was in court. So, um, but it does show if I can get this going. The first part, which it's it's the will and the administration of the person, uh, John B. Nolan. It also always mentions their resident of So, then you find out where they were living. Um, the next slide, you can see, uh, the bequest. Usually the first paragraph is, \"I want my debts paid. And I want a Christian burial or a burial of some sort.\" Uh, the next few lines down are the heirs. His wife and then it should show his children also. Um, like wife and children. Okay. Here we are. Here's the kids. Children, um, you always hope that, uh, the children, especially the daughters, have their married names. Then you can connect. Um doesn't always happen, but uh it makes life easier for a genealogist to see that she married this person here. Now we have types of wills. The attested will, which is signed by the um deceased person, and it was witnessed by two uninterested parties. We just kind of went through that with John. Uh there were two uninterested parties. We went on. Um An unattested will was just signed by this deceased, but not witnessed. Uh that could be challenged a little easier. Um Nuncupative will is basically an oral will. Uh was written by another person, usually at the deathbed of the deceased with witnesses nearby. Sometimes they were accepted, and sometimes they were not. But they may be recorded or in the loose papers, which we'll cover later. Um Video video wills, of course, are new as far as the technology. Person stands in front of a camera, uh tells everybody who gets what, and um they go from there. And then there's the holographic will. The will must be handwritten and signed by the testator. Which is the usually the deceased person. I doesn't have to be witnessed. Uh one thing you've got to find out is if the state accepts those wills. Some states do, some states don't. Missouri does not. Um and I don't believe Kansas does either. So they may have written that will uh and signed it and just left it. Um state will not accept it. So then it becomes an intestate estate. Okay. Now we come to the duties of the executor. He completes the list of assets and debts. Basically makes out the inventory. Um who owes the estate money. And then the executor gets to go out and collect it. And and also the same with the debts. He needs to as soon as he's got his money um or they sell land or something uh then he pays off the debts. Once they have a net figure that they've cleaned that off um then they distribute the assets to the heirs. Um sometimes they could and sometimes they couldn't. So um we'll get to one later where they weren't able to. Inheritance and intestate estates. Those named in the will. Um, a lot of times, especially in colonial times, they'll say my wife and children. Which frustrates everybody. Um, because as genealogists, we're looking for names. What was the wife's name? And who were the children? Um, they will inherit according to the instructions in the will. So, you may get part of an estate or money or maybe, you know, the set of dishes or a piece of furniture or mattress. Uh, you can see all this in a specially the older wills. Um, so, it makes life interesting. Books are very interesting, especially in in the colonial wills, because some of them will actually list the names of the books. So, you can see what they read back then. Um, you know, you might see like Jane Austen in there. So, um, some of the family members may have received their portion. It may or may not be listed in the will. Uh, for instance, I had a great-great-grandfather who listed all his kids, but we had the ones that inherited items, and we had the ones who had already received their portion. And he was very specific about that. So, there was no question >> [clears throat] >> that they had received it. Um per capita heirs um receive equal shares. It's kind of a share and share alike situation. Um You see that especially on um people I worked um for some place that had insurance and you would see it come through with a share and share alike. Evidently, they didn't want to do the math. And unhappy heirs uh could contest if they didn't like the fact that their brother over here got more than what they felt was his share they could sue him. And they did. And they're interesting because not only do you see the people named in the probate which may or may not be all of them, you'll see a whole list of the heirs. Uh so, not only will you get more information on who is in the family but you'll also get um statements from everybody. [clears throat] And that proves to be very interesting. Okay. This is the second type. When they die and they don't leave a valid will or the will is declared invalid for one reason or another. Uh heirs in this case are called beneficiaries or distributees and are unable to produce a valid will. Um estate The estate process begins as soon as possible. There again uh they wanted to get it divided. Someone petitions the court to be appointed administrator or administratrix. Um could be uh just one or two. I had a great aunt who 10 of the relatives came out of the woodwork to be the administrator of her estate. Um They eventually appointed one. Um and they were able to proceed with the estate. Um they Court will appoint the administrator and they will issue letters of administration. And here again, a bond is posted so they see the probate to the end. Um The duties of the administrator administratrix which are similar to the executors um is you compile a list of assets and debts. There again, same thing. Um collect any monies owed to the estate or and pay the debts. Um this is when it gets interesting. They make out an inventory and the court appoints three appraisers. Usually, sometimes it's two, sometimes it's more. To value the items in the estate. Um And usually the estate holds a list of purchasers. Usually shows uh relatives as well as the local neighborhood. Uh basically the fan club. Um they distribute the net assets per stirpes. And a bond must be posted. Uh same great aunt who had 10 people uh volunteer to be administrator, which also comes with a little fee attached to it they get. Um She died. She was single. She had no children. What they do is we go up to um her um parents. Well, the parents had died 40 years before. It was an old family. So, what And she had 10 brothers and sisters. Of the 10, one sister was still alive. So, nine they had to go and do the genealogy on them. Luckily, the sister came and kept in contact with a lot of them. Um They went down to the nieces and nephews. Some of them had died. So, they had to go down to the grand nieces and nephews. And I think there were a couple great grands that they had to go down to because it was the older part of the family and um they uh they were the only ones left. So, um, these are the, uh, children, and these are per state laws. All this is state law. And most states have this. Um, if the, uh, if you're looking, and I would say do this, look at other people the same name, um, we had a gentleman who died in 1827 just up the road. Uh, his estate was settled. We have a list of the heirs. Um, it took well, 1827, it was finally finished in 1850. Everybody got their portion. They went on. Two years later, one of the younger sons died. Now, his estate was apportioned amongst his mother and brothers and sisters. We find something interesting there. That is some brothers and sisters had half portions and some had full portions. What this indicates was that his father had married twice. So, the older heirs only received a half portion from because their mother was different from his mother. And the interesting thing was his mother was still alive. They had a list of everybody and where they were living at the time. A lot of them had moved to California and sold the land here and, um, so they had to send the inheritance out to California for those people. But, the fact is now you know where the family went. Um I know several of them stayed around here. Um and you're you're able to trace them from here. But, that's the interesting thing. It's that you've got the list. You don't have to dig through census and what have you. You have the list here in the probate papers. The duties of the administrator and administratrix. They They're again Technically Okay. This is uh I believe this is the um letters of administration for one William Fletcher. He was in Kansas City. Uh see all that little writing there? That's all the heirs. There are like eight to 10. But, they not only have the names, they have the places they were living at the time. This is the first administrator. They had two. Um Okay. This is the second administrator. It was approximately five or six years between them. People had moved. So, So can compare. They're still the same people. It's just that for instance, somebody went from here to Iowa. Um and you wouldn't know that unless you read both pieces of paper. Uh and let's see. And here's a sample of a bond. This is what the second administrator filed. Um it doesn't tell you a lot except that um he filed it for so many dollars. They always did an order of publication notice. And this is not only with the administrators, it's also with the executors. This is to find out uh debts basically. What did he owe and to whom? So supposedly he had a list of who people owed him. But um this is something that um they did. Often times they did it at least twice and maybe three times within a couple of months period. Depends on the court as to what they told him to do. Uh usually what they were in the newspaper. And they have these little yellow pieces if you actually see a real estate um attached to a piece of paper. Some of them have crumbled basically cuz they're so old. It when then it was newsprint. It wasn't any fancy preservative type thing. Um but if you were enough, you could also go in the newspapers that had been microfilmed and see it, too. Um I guess I twice I I've seen it twice within a month. Whatever. Uh copies may be found with the probate papers. One thing they did an order of publication for this. Often times if they couldn't find heirs, they would put a notice in the newspaper where they thought the heirs lived. Um sometimes people just disappeared in the West and they weren't able to find them, but they would do kind of a blanket thing on newspapers. And often times newspapers would pick them up, especially if um uh the name looked familiar. Probate packets. These are the fun things. Uh usually a folder or an envelope that uh contains most of these state paperwork. So, the inventory, the list of purchasers, um the receipts after the settlement are in here. Um and then there's other stuff. Death certificate may be in there. Um tax receipts. My great great grandmother's tax receipts are in there. And when her husband died, she had to practice her signature. So, she practiced them all over the tax receipts. So, there you can get an idea of what they considered important. I also found in the same folder that she had taken out an insurance policy on the house. Which back in the 1880s, you don't think that they did insurance policies on their homes, but they did. So, you find out, you know, little gems like that. Unfortunately, she used a insurance company that wrote in German. She was Pennsylvania Dutch. Um so, I haven't deciphered it yet, but I thought it was interesting. Um I also found um a piece of paper that there was misfiled and it should have been somebody else. She died in 1894 and that was talking about someone in 1921. So, you never know what you come across. Um I gave it to the clerk and she refiled it in the correct folder. Um and there's also the executor and the administrator's fee statement in there. Um so, you can find out what they were paid. Um Mr. Fletcher um they did get money for uh the administrator, I'll tell you that much. We'll get to the other stuff later, but um you can find just uh odds and ends. Some states do not have probate packets and unfortunately, Virginia's one of them. Being one of the oldest states, you know, you would have liked to have seen the probate, but that's a lot of writing and they didn't keep a whole lot. Or in the case of one of my ancestors, the courthouse burned down in 1711. So, that you know, we couldn't find anything. Um but most states do. Missouri does. Um and there are, like I say, interesting items in there. And you can kind of get an idea of what life was like. If you're looking in Jackson County probate for the probate packets, you will find everything but the will. The will is in a separate book. Um I you know, they just kept it that way. I don't know why. I've never been able to get an answer on it, but uh it's kind of one of those things. You just need to look in two places. The inventory, they listed everything. Uh they you know, trying to get everything so that they could liquidate it and distribute it. This is William Fletcher again. Uh list of the assets. Uh debts owed to the deceased and debts the deceased owed to others. We get all this together and we find out the settlement papers and we find out the the estate after, [clears throat] of course, they paid the administrator. Uh the estate was insolvent. I think they only had $5 left and they just gave it to the administrator. Um however, most settlement papers, if the heirs get a portion, there's little receipts like this in there. It's kind of like those uh little pieces of paper you discover when a uh uh relative dies, they has all the genealogy on it. Well, these are little pieces of paper in probate. They got so much and they sign at the bottom that they had received it. This is actually the gentleman who died in 1827. This was one of his heirs. Okay. Um There's often a decree of distribution, not always. Um and sometimes a transfer of property. Sometimes if you look in deeds, you'll see a whole list of people and it'll say et al. That's a pretty good indication that uh someone died and they left everybody property of this or portion of this plot and they all decided to sell it for one reason or another. Maybe they didn't live there anymore. Like my great-grandparents. His parents died. They didn't live there anymore, so they did a quitclaim on the land. Um And so look for these. I've done papers where they've given them like a horse and a carriage. I don't know how they made it from Mississippi over to Arkansas, but evidently they went down and got the horse and carriage cuz they did sign for it. Other record types. Loose papers. This is the pile of papers in the corner. Generally they're dirty. Um but they're unfiled probate packets. Um other receipts um not associated with the probate record. Um also um just things in general. Uh one uh one genealogist that I knew was looking through the ones in Bates County, which is south of here. There was no indication for the the death of a wife, but the receipt was in the loose papers in the corner. He had to crawl over the file cabinets to get to the pile of receipts, but it was just a loose paper. But they it was um it was just basically a coffin and a date. Well, now you have at least some idea when she died. Um and everybody was buried as soon as possible. So, uh you're going to get pretty close. Uh dockets. These are court calendars. Uh they can be listed as um for guardianship or settlement or term. So, you need to look at that if they're they still exist. That's something that sometimes they exist and sometimes they don't. Um they should though. >> [clears throat] >> Uh minutes. These are the records of the session. You'll at least get a name of the uh deceased as well as the administrator and that they've brought it to court. Um what was decided or were they able to close the estate. All courts have a general index. Um first by number, but they also have an alphabetical index by the deceased name. This is required. So, most courts did this. We don't have a problem. We don't have a problem in Jackson County. >> [clears throat] >> But, um check there again. Check other wills that are with the same surname. They may be a relative. Now, we come to interesting stuff like dower rights. It was basically the portion that the widow was entitled to. Um it varies by state, but usually it was a third of the estate. Uh she um was given this um to um support herself and her children until she remarried. Uh the children would still get their portion. Um and until the uh probate was um where they got had gone through it, she could get an annual allowance. Uh yearly allowance is granted. Um Another thing, dower rights uh if the estate is insolvent are void. Um most of the time, you will see you'll see dower rights more on deeds than uh in the actual estates, but the records are there. If you're interested, uh you might look at our book called Washington County Dower Rights, and it's for Washington County, Tennessee. Uh couple of gentlemen went through and listed them. It's very interesting, and it's very interesting who had dower rights. Dower rights in Missouri don't exist anymore. They um went out in 1955. And then again in 2017, the legislature made sure we had no dower rights here or curtesy, which is the husband's dower rights. Generally, they didn't have much of that. It would be if for some reason, say the father-in-law put a hold on the estate such that only his daughter could inherit. He could go back on that if his wife died and ask for dower rights. Like I say, it doesn't occur very often, but it's kind of interesting. And once uh the dower or the curtesy, the person died, uh the rights and money went to the heirs. And you can see this in the court, also. Guardianship records. Basically, the heirs that heirs that left behind who were under 21. Um It's basically to take care of minor child. Um or a person judged incompetent. Uh And the person judged incompetent is called the cases are called conservatorships. Um guardians had to file annual accounts to the court until the minor be reached the age of 21 or 18 depending on the state, there again state law or if they married. So, if a lady married at 16 or 17 she was considered an adult and then she didn't need a guardian. Um not all the accounts still exist. I know because I've been through a guardianship. >> [clears throat] >> Maybe they might have had every third year or something of that nature. And this is a guardianship. You can see a list of the kids and their accounts. And if you'll see it shows the heirs of so you get the heirs of there. So, now you've got a connection. You can prove that these kids were uh this gentleman's um children. One thing you need to do is you need to set your probate sources. Whether you get it online or through books and microfilm you need to indicate the pri- type of record. Was it a will? Was it administration? In Missouri the administrations list the heirs so it's almost as good as a will. Um the name of the deceased the name of the administrator or executor uh the court and its location. Was it in the county? Was it at the state? Generally, um things were filed at the county seat. I have have not known many to be count um filed in one of the small towns around it. Usually it's at the county seat. Uh the volume number and the page numbers. So, these are two legal dictionaries. There's Black's up there. They've been going on since 1890. Um They're published by um the Western Publishing Company or the West Publishing Company in St. Paul. Although I believe they've been bought out. Seems like a friend of mine whose husband used to work there and he said they were bought out. Um but you can go in there for legal definitions. We have Black's upstairs. We start in 1891 or 1892 for the hard copy. And the other one is Bouvier's Law Dictionary. Uh 1856. These are both online. Uh you can just Google either one uh to look up a word like et and then ux, which means and wife, Latin terms. Um and I guarantee you of all the wills I've read, I don't remember all the Latin. But go in there and look. Um it could be, you know, could be they they decided to write it in Latin. Uh one thing about before I get any further, Pennsylvania. Some of the wills are in English and some of them are in German. Unfortunately, the German ones are not indexed. Uh so, you might keep that in mind and make a little thorough search of the books or anything so that you can find your ancestor, hopefully. These are some of the additional resources that are online. Ancestry has wills and estates. So does HeritageQuest and FamilySearch. Many of them are digitized. I think Sam- FamilySearch is completely digitized. They also have uh where you can search for a name. You can also uh on some of them you can search the administrative papers, the inventories, and the indexes. It just depends. Uh you can also use search engines to find online databases for specific uh counties and states. And various printed probate indexes of records. You might look at our catalog. We have a lot of indexes up there on probate, including Jackson County. Um and before we get any further, we have our upcoming spring seminar, Branches and Bites. Um with Steve Little and Mark Thompson. It's going to be on April 18th of this year. There is a fee involved, but we do feed you. So, [snorts] um, 9:00 to 4:00. And we hope you'll all join us. It's basically on AI.",
+  "attempts": [
+    {
+      "client": "IOS",
+      "playability": {
+        "status": "OK",
+        "playableInEmbed": true,
+        "offlineability": {
+          "buttonRenderer": {
+            "navigationEndpoint": {
+              "clickTrackingParams": "CAkQ6ewBIhMI9P6ZjOzblwMVvEhMCB1kEThFygEE_Nf5aw==",
+              "ypcGetOfflineUpsellEndpoint": {
+                "params": "ChPqqN25AQ0KC3VBY2t1OWtlc0s0Igt1QWNrdTlrZXNLNCoVCAkYAVIPCgt1QWNrdTlrZXNLNCAB"
+              }
+            },
+            "trackingParams": "CAkQ6ewBIhMI9P6ZjOzblwMVvEhMCB1kEThF"
+          }
+        },
+        "pictureInPicture": {
+          "pictureInPictureRenderer": {
+            "playableInPip": true,
+            "offByDefault": false,
+            "shouldResumeOnHead": false
+          }
+        },
+        "miniplayer": {
+          "miniplayerRenderer": {
+            "playbackMode": "PLAYBACK_MODE_ALLOW"
+          }
+        },
+        "contextParams": "Q0FFU0FnZ0M="
+      },
+      "outcome": "ok"
+    }
+  ],
+  "fetched_at": "2026-10-28T04:11:23.325877+00:00",
+  "client": "IOS",
+  "json_path": "transcripts/061_uAcku9kesK4.json",
+  "text_path": "transcripts/061_uAcku9kesK4.txt"
+}

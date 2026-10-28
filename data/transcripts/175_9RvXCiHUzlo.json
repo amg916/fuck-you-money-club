@@ -1,0 +1,539 @@
+{
+  "index": 175,
+  "url": "https://www.youtube.com/watch?v=9RvXCiHUzlo",
+  "video_id": "9RvXCiHUzlo",
+  "status": "ok",
+  "metadata": {
+    "title": "DataTree Hacks: How to Find Portfolio Owners With Multiple Properties",
+    "author": "REtipster",
+    "channelId": "UC4f3qDE9qKqoRy5_9R6y_pw",
+    "lengthSeconds": "310",
+    "viewCount": "1722",
+    "shortDescription": "DataTree Discount: https://retipster.com/go/datatree/yt-9RvXCiHUzlo (REtipster Affiliate Link)\nFull Blog Post: https://retipster.com/datatree-hacks/?utm_source=youtube&utm_medium=social&utm_campaign=blog&utm_content=9RvXCiHUzlo\nDue Diligence Knowledge Base: https://retipster.com/category/due-diligence/?utm_source=youtube&utm_medium=social&utm_campaign=blog&utm_content=9RvXCiHUzlo\nJoin Our Community: https://welcome.retipster.com/?utm_source=youtube&utm_medium=social&utm_campaign=blog&utm_content=9RvXCiHUzlo\n\nHave you ever wanted to see all the properties owned by a single person or company? Maybe you're looking for motivated sellers and trying to find portfolio owners with lots of property to sell? Well, there's an easy way to do that with DataTree!\n\nIn this video, you'll learn how to find all the properties owned by a single property owner and generate a mailing list of property owners who own multiple properties throughout the U.S.\n\nThis functionality can also be useful for loan underwriters, attorneys, and even private investigators trying to see all the real estate owned by a particular person or entity. Whatever your reason may be, DataTree makes it pretty easy to do!\n\n0:00 - Intro\n0:21 - Why is it helpful to identify portfolio owners?\n1:04 - How to see when an owner owns multiple properties\n1:45 - How to generate a list of owners with multiple properties\n3:04 - Understanding the cost of \"premium filters,\" such as Properties Owned\n4:02 - How to remove duplicate owners before exporting your list\n4:33 - Get discounted pricing to DataTree through REtipster: https://retipster.com/go/datatree/yt-9RvXCiHUzlo",
+    "keywords": [
+      "real estate investing",
+      "retipster",
+      "datatree tutorial",
+      "porfolio owners",
+      "real estate investing for beginners",
+      "real estate owners with multiple properties",
+      "real estate",
+      "direct mail",
+      "motivated sellers",
+      "first american datatree",
+      "real estate investor",
+      "wholesaling houses",
+      "datatree by first american",
+      "direct mail tutorial",
+      "property resesarch",
+      "due diligence",
+      "how to find motivated sellers",
+      "datatree tricks",
+      "datatree hacks",
+      "real estate owner data",
+      "property owner data",
+      "datatree lesson"
+    ]
+  },
+  "caption_tracks": [
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=9RvXCiHUzlo&ei=_3XhasTBGKaAsfIP8__AuAM&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185903&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=8685972B71DCA7F8CCDB48A39E00492B07F88E5A.97BE29233011FA39B02E6C50C6F9D93883E366C5&key=yt8&lang=en",
+      "name": {
+        "runs": [
+          {
+            "text": "English"
+          }
+        ]
+      },
+      "vssId": ".en",
+      "languageCode": "en",
+      "isTranslatable": true,
+      "trackName": ""
+    }
+  ],
+  "selected_track": {
+    "baseUrl": "https://www.youtube.com/api/timedtext?v=9RvXCiHUzlo&ei=_3XhasTBGKaAsfIP8__AuAM&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185903&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=8685972B71DCA7F8CCDB48A39E00492B07F88E5A.97BE29233011FA39B02E6C50C6F9D93883E366C5&key=yt8&lang=en",
+    "name": {
+      "runs": [
+        {
+          "text": "English"
+        }
+      ]
+    },
+    "vssId": ".en",
+    "languageCode": "en",
+    "isTranslatable": true,
+    "trackName": ""
+  },
+  "segments": [
+    {
+      "start": 9.44,
+      "duration": 2.88,
+      "text": "Hey, what's going on? It’s Seth here from retipser.com."
+    },
+    {
+      "start": 12.32,
+      "duration": 4.25,
+      "text": "In this video, I'm going to show you two quick tricks for finding property owners"
+    },
+    {
+      "start": 16.57,
+      "duration": 2.064,
+      "text": "who own multiple properties."
+    },
+    {
+      "start": 18.634,
+      "duration": 3.129,
+      "text": "Sometimes people refer to these as portfolio owners,"
+    },
+    {
+      "start": 21.763,
+      "duration": 3.19,
+      "text": "and there's a number of different reasons why you might want to be aware of this"
+    },
+    {
+      "start": 24.953,
+      "duration": 4.511,
+      "text": "when somebody owns multiple properties or to intentionally seek out property owners"
+    },
+    {
+      "start": 29.464,
+      "duration": 1.589,
+      "text": "who own multiple properties."
+    },
+    {
+      "start": 31.053,
+      "duration": 3.47,
+      "text": "I know as a real estate investor, sometimes this can be a great source"
+    },
+    {
+      "start": 34.523,
+      "duration": 4.677,
+      "text": "for motivated sellers or people who just have real estate to sell. Just being able to find"
+    },
+    {
+      "start": 39.2,
+      "duration": 2.166,
+      "text": "those people who own a lot of real."
+    },
+    {
+      "start": 41.366,
+      "duration": 2.614,
+      "text": "Sometimes they'll be in a position where they have one or two"
+    },
+    {
+      "start": 43.98,
+      "duration": 5.045,
+      "text": "or more properties that they're willing and able and happy to let go for a discounted price."
+    },
+    {
+      "start": 49.025,
+      "duration": 4.095,
+      "text": "If you're any kind of underwriter or attorney or anything like that, sometimes this can have"
+    },
+    {
+      "start": 53.12,
+      "duration": 4.44,
+      "text": "other implications for just understanding how much real estate a person owns."
+    },
+    {
+      "start": 57.56,
+      "duration": 2.741,
+      "text": "So whoever you are, and whatever reason you would be looking for this,"
+    },
+    {
+      "start": 60.301,
+      "duration": 3.413,
+      "text": "I just want to show you how can do that really quickly here in DataTree."
+    },
+    {
+      "start": 63.714,
+      "duration": 5.066,
+      "text": "So, first of all, let's say you are researching individual property in your due diligence process."
+    },
+    {
+      "start": 68.78,
+      "duration": 1.56,
+      "text": "And I've got one in mind here."
+    },
+    {
+      "start": 70.34,
+      "duration": 5.318,
+      "text": "I'm just going to plug in here, put the APN and we can go right here."
+    },
+    {
+      "start": 75.658,
+      "duration": 1.972,
+      "text": "And whenever you find a property owner"
+    },
+    {
+      "start": 77.63,
+      "duration": 4.13,
+      "text": "that just happens to own multiple properties, you're going to see this thing right here."
+    },
+    {
+      "start": 81.76,
+      "duration": 2.47,
+      "text": "This is view other properties owned."
+    },
+    {
+      "start": 84.23,
+      "duration": 3.674,
+      "text": "If they only own one under that name then you're not going to see this."
+    },
+    {
+      "start": 87.904,
+      "duration": 1.617,
+      "text": "So I'm going to go ahead and click on this."
+    },
+    {
+      "start": 89.521,
+      "duration": 2.031,
+      "text": "It's going to open up a new window in DataTree."
+    },
+    {
+      "start": 91.953,
+      "duration": 3.647,
+      "text": "And just like that, it shows us all of the real estate nationwide,"
+    },
+    {
+      "start": 95.6,
+      "duration": 4.802,
+      "text": "not just in that one state or that one county, but everywhere that they own under that name."
+    },
+    {
+      "start": 100.402,
+      "duration": 4.108,
+      "text": "And then you can go ahead and click on any one of these and do more research from there."
+    },
+    {
+      "start": 104.51,
+      "duration": 3.521,
+      "text": "But let's say you're trying to pull a list of property owners,"
+    },
+    {
+      "start": 108.031,
+      "duration": 3.926,
+      "text": "whether it's for marketing purposes or direct mail or anything like that."
+    },
+    {
+      "start": 111.957,
+      "duration": 4.043,
+      "text": "And you want to find only the people who own multiple properties."
+    },
+    {
+      "start": 116.0,
+      "duration": 3.717,
+      "text": "Well, we would go up here to advance search and go through the usual steps. And by the way,"
+    },
+    {
+      "start": 119.717,
+      "duration": 4.153,
+      "text": "if you've never been in DataTree and you have no idea how to filter a list like this,"
+    },
+    {
+      "start": 123.87,
+      "duration": 2.43,
+      "text": "I have a separate video that dives much deeper into this,"
+    },
+    {
+      "start": 126.3,
+      "duration": 3.96,
+      "text": "but assuming you're at least somewhat familiar with how to filter a mailing list,"
+    },
+    {
+      "start": 130.26,
+      "duration": 4.041,
+      "text": "we're basically just going to go up here and we're going to pick whatever state or states"
+    },
+    {
+      "start": 134.301,
+      "duration": 2.903,
+      "text": "or county or counties you want to search in."
+    },
+    {
+      "start": 137.204,
+      "duration": 3.114,
+      "text": "And I'm just going to plug in a random county here."
+    },
+    {
+      "start": 140.318,
+      "duration": 3.954,
+      "text": "And then we're going to go down here to the owner section."
+    },
+    {
+      "start": 144.272,
+      "duration": 2.847,
+      "text": "And we can see this thing right here, that says properties owned."
+    },
+    {
+      "start": 147.119,
+      "duration": 3.541,
+      "text": "So we could say, we only want to pull a list of owners who own"
+    },
+    {
+      "start": 150.66,
+      "duration": 2.717,
+      "text": "anywhere from five to 10 properties."
+    },
+    {
+      "start": 153.377,
+      "duration": 2.227,
+      "text": "And obviously this can be any range you want."
+    },
+    {
+      "start": 155.604,
+      "duration": 2.678,
+      "text": "You could do two to 10. You could do 10 to 50."
+    },
+    {
+      "start": 158.282,
+      "duration": 2.218,
+      "text": "You could do a hundred to a thousand. It's up to you."
+    },
+    {
+      "start": 160.5,
+      "duration": 5.33,
+      "text": "But this is where that filter is. Go ahead and add that to the list and click get count."
+    },
+    {
+      "start": 165.83,
+      "duration": 5.565,
+      "text": "And it's going to show us, there's a lot of property owners that fit this criteria in this particular county."
+    },
+    {
+      "start": 171.395,
+      "duration": 4.537,
+      "text": "Now keep in mind, these are people who own five to 10 properties nationwide."
+    },
+    {
+      "start": 175.932,
+      "duration": 4.639,
+      "text": "So it doesn't mean all of the properties that these owners own are in this state and county."
+    },
+    {
+      "start": 180.571,
+      "duration": 3.66,
+      "text": "It just means nationwide those are their total properties owned."
+    },
+    {
+      "start": 184.231,
+      "duration": 5.059,
+      "text": "And you also might notice that there's this little dollar sign icon right next to this particular filter."
+    },
+    {
+      "start": 189.29,
+      "duration": 1.82,
+      "text": "If we go ahead and click view results"
+    },
+    {
+      "start": 191.11,
+      "duration": 5.588,
+      "text": "we see this little thing pop up that says this search query includes premium filters, which will incur"
+    },
+    {
+      "start": 196.698,
+      "duration": 3.105,
+      "text": "per record charges upon viewing the results."
+    },
+    {
+      "start": 199.803,
+      "duration": 3.497,
+      "text": "So not exporting them, but just viewing them is going to cost some more."
+    },
+    {
+      "start": 203.3,
+      "duration": 2.7,
+      "text": "And how much is this going to cost? Well, at the time of this recording,"
+    },
+    {
+      "start": 206.0,
+      "duration": 4.96,
+      "text": "it's an additional 25 cents per record, which is definitely going to add up when we're looking at"
+    },
+    {
+      "start": 210.96,
+      "duration": 6.15,
+      "text": "4,108 results, but also keep in mind, we have not added any other filters to this list yet."
+    },
+    {
+      "start": 217.11,
+      "duration": 5.74,
+      "text": "And I can't think of hardly any marketer for any reason who wouldn't add more filters than just this."
+    },
+    {
+      "start": 222.85,
+      "duration": 4.194,
+      "text": "And obviously the more filters we add, the smaller and smaller this number is going to get,"
+    },
+    {
+      "start": 227.044,
+      "duration": 3.328,
+      "text": "but just be aware if you do use this filter, it's going to cost quite a bit more,"
+    },
+    {
+      "start": 230.372,
+      "duration": 3.388,
+      "text": "but I also probably wouldn't recommend using this unless you're going to get a lot more"
+    },
+    {
+      "start": 233.76,
+      "duration": 4.585,
+      "text": "specific about the other filtering criteria available here in this menu."
+    },
+    {
+      "start": 238.345,
+      "duration": 3.695,
+      "text": "And there's a lot of different options and a lot of them can work very effectively."
+    },
+    {
+      "start": 242.04,
+      "duration": 3.4,
+      "text": "And also keep in mind that once you do get this number whittled down"
+    },
+    {
+      "start": 245.44,
+      "duration": 3.651,
+      "text": "and you're at the point where you're ready to pay that extra money and view the results,"
+    },
+    {
+      "start": 249.091,
+      "duration": 3.839,
+      "text": "you will have the option to remove duplicate owners from your list."
+    },
+    {
+      "start": 252.93,
+      "duration": 4.109,
+      "text": "So just because you're only filtering by the owners who have multiple properties,"
+    },
+    {
+      "start": 257.039,
+      "duration": 2.773,
+      "text": "it doesn't necessarily mean you want to download all those leads."
+    },
+    {
+      "start": 259.812,
+      "duration": 5.608,
+      "text": "You want to know which individual owners to contact one time regarding all of those properties."
+    },
+    {
+      "start": 265.42,
+      "duration": 1.79,
+      "text": "So if you're a DataTree user,"
+    },
+    {
+      "start": 267.21,
+      "duration": 4.595,
+      "text": "and if understanding how to identify those portfolio owners is important to you"
+    },
+    {
+      "start": 271.805,
+      "duration": 1.442,
+      "text": "I wanted to make sure you are aware of that."
+    },
+    {
+      "start": 273.247,
+      "duration": 3.165,
+      "text": "And if you're not a DataTree user, and you want to become one,"
+    },
+    {
+      "start": 276.412,
+      "duration": 2.754,
+      "text": "you can actually get some special discounted pricing"
+    },
+    {
+      "start": 279.166,
+      "duration": 2.832,
+      "text": "to this service through the REtipster affiliate link."
+    },
+    {
+      "start": 281.998,
+      "duration": 5.319,
+      "text": "And I'm going to have that link beneath this video. It's retipster.com/datatree."
+    },
+    {
+      "start": 287.317,
+      "duration": 1.782,
+      "text": "But regardless of when you're watching this,"
+    },
+    {
+      "start": 289.099,
+      "duration": 3.861,
+      "text": "you should be able to get in at a discounted price if you go through that link."
+    },
+    {
+      "start": 292.96,
+      "duration": 2.209,
+      "text": "Thanks for watching. I hope you found that helpful."
+    },
+    {
+      "start": 295.169,
+      "duration": 3.386,
+      "text": "And if you want to see some other cool tricks you can do with DataTree,"
+    },
+    {
+      "start": 298.555,
+      "duration": 4.035,
+      "text": "I have a whole other playlist on YouTube with a lot of these little clever hacks"
+    },
+    {
+      "start": 302.59,
+      "duration": 2.205,
+      "text": "that you can use with a service like DataTree"
+    },
+    {
+      "start": 304.795,
+      "duration": 2.313,
+      "text": "that most people aren't aware of, or just don't think about."
+    },
+    {
+      "start": 307.108,
+      "duration": 1.555,
+      "text": "So be sure to check that out as well."
+    },
+    {
+      "start": 308.663,
+      "duration": 1.677,
+      "text": "Thanks for watching. Talk to you again soon."
+    }
+  ],
+  "full_text": "Hey, what's going on? It’s Seth here from retipser.com. In this video, I'm going to show you two quick tricks for finding property owners who own multiple properties. Sometimes people refer to these as portfolio owners, and there's a number of different reasons why you might want to be aware of this when somebody owns multiple properties or to intentionally seek out property owners who own multiple properties. I know as a real estate investor, sometimes this can be a great source for motivated sellers or people who just have real estate to sell. Just being able to find those people who own a lot of real. Sometimes they'll be in a position where they have one or two or more properties that they're willing and able and happy to let go for a discounted price. If you're any kind of underwriter or attorney or anything like that, sometimes this can have other implications for just understanding how much real estate a person owns. So whoever you are, and whatever reason you would be looking for this, I just want to show you how can do that really quickly here in DataTree. So, first of all, let's say you are researching individual property in your due diligence process. And I've got one in mind here. I'm just going to plug in here, put the APN and we can go right here. And whenever you find a property owner that just happens to own multiple properties, you're going to see this thing right here. This is view other properties owned. If they only own one under that name then you're not going to see this. So I'm going to go ahead and click on this. It's going to open up a new window in DataTree. And just like that, it shows us all of the real estate nationwide, not just in that one state or that one county, but everywhere that they own under that name. And then you can go ahead and click on any one of these and do more research from there. But let's say you're trying to pull a list of property owners, whether it's for marketing purposes or direct mail or anything like that. And you want to find only the people who own multiple properties. Well, we would go up here to advance search and go through the usual steps. And by the way, if you've never been in DataTree and you have no idea how to filter a list like this, I have a separate video that dives much deeper into this, but assuming you're at least somewhat familiar with how to filter a mailing list, we're basically just going to go up here and we're going to pick whatever state or states or county or counties you want to search in. And I'm just going to plug in a random county here. And then we're going to go down here to the owner section. And we can see this thing right here, that says properties owned. So we could say, we only want to pull a list of owners who own anywhere from five to 10 properties. And obviously this can be any range you want. You could do two to 10. You could do 10 to 50. You could do a hundred to a thousand. It's up to you. But this is where that filter is. Go ahead and add that to the list and click get count. And it's going to show us, there's a lot of property owners that fit this criteria in this particular county. Now keep in mind, these are people who own five to 10 properties nationwide. So it doesn't mean all of the properties that these owners own are in this state and county. It just means nationwide those are their total properties owned. And you also might notice that there's this little dollar sign icon right next to this particular filter. If we go ahead and click view results we see this little thing pop up that says this search query includes premium filters, which will incur per record charges upon viewing the results. So not exporting them, but just viewing them is going to cost some more. And how much is this going to cost? Well, at the time of this recording, it's an additional 25 cents per record, which is definitely going to add up when we're looking at 4,108 results, but also keep in mind, we have not added any other filters to this list yet. And I can't think of hardly any marketer for any reason who wouldn't add more filters than just this. And obviously the more filters we add, the smaller and smaller this number is going to get, but just be aware if you do use this filter, it's going to cost quite a bit more, but I also probably wouldn't recommend using this unless you're going to get a lot more specific about the other filtering criteria available here in this menu. And there's a lot of different options and a lot of them can work very effectively. And also keep in mind that once you do get this number whittled down and you're at the point where you're ready to pay that extra money and view the results, you will have the option to remove duplicate owners from your list. So just because you're only filtering by the owners who have multiple properties, it doesn't necessarily mean you want to download all those leads. You want to know which individual owners to contact one time regarding all of those properties. So if you're a DataTree user, and if understanding how to identify those portfolio owners is important to you I wanted to make sure you are aware of that. And if you're not a DataTree user, and you want to become one, you can actually get some special discounted pricing to this service through the REtipster affiliate link. And I'm going to have that link beneath this video. It's retipster.com/datatree. But regardless of when you're watching this, you should be able to get in at a discounted price if you go through that link. Thanks for watching. I hope you found that helpful. And if you want to see some other cool tricks you can do with DataTree, I have a whole other playlist on YouTube with a lot of these little clever hacks that you can use with a service like DataTree that most people aren't aware of, or just don't think about. So be sure to check that out as well. Thanks for watching. Talk to you again soon.",
+  "attempts": [
+    {
+      "client": "IOS",
+      "playability": {
+        "status": "OK",
+        "playableInEmbed": true,
+        "offlineability": {
+          "buttonRenderer": {
+            "navigationEndpoint": {
+              "clickTrackingParams": "CBEQ6ewBIhMIhL2BluzblwMVJkBMCB3zPxA3ygEETVoYOA==",
+              "ypcGetOfflineUpsellEndpoint": {
+                "params": "ChPqqN25AQ0KCzlSdlhDaUhVemxvIgs5UnZYQ2lIVXpsbyoVCAkYAVIPCgs5UnZYQ2lIVXpsbyAB"
+              }
+            },
+            "trackingParams": "CBEQ6ewBIhMIhL2BluzblwMVJkBMCB3zPxA3"
+          }
+        },
+        "pictureInPicture": {
+          "pictureInPictureRenderer": {
+            "playableInPip": true,
+            "offByDefault": false,
+            "shouldResumeOnHead": false
+          }
+        },
+        "miniplayer": {
+          "miniplayerRenderer": {
+            "playbackMode": "PLAYBACK_MODE_ALLOW"
+          }
+        },
+        "contextParams": "Q0FFU0FnZ0M="
+      },
+      "outcome": "ok"
+    }
+  ],
+  "fetched_at": "2026-10-28T04:11:44.529041+00:00",
+  "client": "IOS",
+  "json_path": "transcripts/175_9RvXCiHUzlo.json",
+  "text_path": "transcripts/175_9RvXCiHUzlo.txt"
+}

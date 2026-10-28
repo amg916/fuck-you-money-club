@@ -1,0 +1,521 @@
+{
+  "index": 44,
+  "url": "https://www.youtube.com/watch?v=YNOLd8LZB48",
+  "video_id": "YNOLd8LZB48",
+  "status": "ok",
+  "metadata": {
+    "title": "Probate case study: Illegitimacy and conflicting surnames",
+    "author": "Five-minute genealogy",
+    "channelId": "UC6qnMgXP1jQMuUP8vTVoU3g",
+    "lengthSeconds": "438",
+    "viewCount": "195",
+    "shortDescription": "In this case study, I'll go over two women who had different maiden names, depending on the source. The solution is that they were born out of wedlock, and I proved it by reviewing 1850s Virginia ntestate probate law.",
+    "keywords": [
+      "genealogy",
+      "probate",
+      "illegitimacy",
+      "bastard",
+      "cohabitation without formalities",
+      "family research",
+      "family history",
+      "intestate",
+      "testate"
+    ]
+  },
+  "caption_tracks": [
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=YNOLd8LZB48&ei=53XhatXRMIzGsfIP96S9yQY&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185879&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=2A2B4B7B7E4330300758BB128FF2728ED31E3B68.C332CBEAB6574E8DA42A115E38921F54D59BB74C&key=yt8&lang=en",
+      "name": {
+        "runs": [
+          {
+            "text": "English"
+          }
+        ]
+      },
+      "vssId": ".en",
+      "languageCode": "en",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=YNOLd8LZB48&ei=53XhatXRMIzGsfIP96S9yQY&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185879&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=2A2B4B7B7E4330300758BB128FF2728ED31E3B68.C332CBEAB6574E8DA42A115E38921F54D59BB74C&key=yt8&kind=asr&lang=en",
+      "name": {
+        "runs": [
+          {
+            "text": "English (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.en",
+      "languageCode": "en",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    }
+  ],
+  "selected_track": {
+    "baseUrl": "https://www.youtube.com/api/timedtext?v=YNOLd8LZB48&ei=53XhatXRMIzGsfIP96S9yQY&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185879&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=2A2B4B7B7E4330300758BB128FF2728ED31E3B68.C332CBEAB6574E8DA42A115E38921F54D59BB74C&key=yt8&lang=en",
+    "name": {
+      "runs": [
+        {
+          "text": "English"
+        }
+      ]
+    },
+    "vssId": ".en",
+    "languageCode": "en",
+    "isTranslatable": true,
+    "trackName": ""
+  },
+  "segments": [
+    {
+      "start": 0.39,
+      "duration": 4.969,
+      "text": "Intestate probate proceedings can be one of the most valuable primary source genealogical"
+    },
+    {
+      "start": 5.359,
+      "duration": 4.711,
+      "text": "documents out there because the proceedings are governed strictly by law."
+    },
+    {
+      "start": 10.07,
+      "duration": 5.9,
+      "text": "Problem is, the laws may not make sense to you, and they can be hard to find."
+    },
+    {
+      "start": 15.97,
+      "duration": 4.6,
+      "text": "I’m Mike O’Neill, and I’m going to give you a case study of how the actual text of"
+    },
+    {
+      "start": 20.57,
+      "duration": 3.39,
+      "text": "Virginia’s intestate laws resolved a tough genealogy problem."
+    },
+    {
+      "start": 23.96,
+      "duration": 1.799,
+      "text": "And I’m going to try do it in five minutes."
+    },
+    {
+      "start": 25.759,
+      "duration": 7.341,
+      "text": "It started with my wife’s ancestor, Julia Chew, wife of Thomas Chew (1801-1879)."
+    },
+    {
+      "start": 33.1,
+      "duration": 5.5,
+      "text": "According to her tombstone, she was born on 2 March 1804, and various records put her"
+    },
+    {
+      "start": 38.6,
+      "duration": 2.329,
+      "text": "birthplace in Virginia."
+    },
+    {
+      "start": 40.929,
+      "duration": 5.27,
+      "text": "The consensus was that Julia’s maiden name was Huggins."
+    },
+    {
+      "start": 46.199,
+      "duration": 5.231,
+      "text": "As always, I assumed good intent when looking at secondary and tertiary sources—that is,"
+    },
+    {
+      "start": 51.43,
+      "duration": 4.879,
+      "text": "other people’s research—and I found a March 1835 probate proceeding in Highland"
+    },
+    {
+      "start": 56.309,
+      "duration": 7.421,
+      "text": "County, Ohio for a William Huggins who named two daughters, July Chew & Thirza Hancher,"
+    },
+    {
+      "start": 63.73,
+      "duration": 4.16,
+      "text": "as well as a son Doctor Benjamin Franklin M. Huggins."
+    },
+    {
+      "start": 67.89,
+      "duration": 6.39,
+      "text": "Fun fact: Doctor wasn’t a title, it was actually the poor guy’s first name."
+    },
+    {
+      "start": 74.28,
+      "duration": 3.48,
+      "text": "What a mouthful."
+    },
+    {
+      "start": 77.76,
+      "duration": 6.149,
+      "text": "Anyway, the probate file noted that William owned land in Frederick County, Virginia."
+    },
+    {
+      "start": 83.909,
+      "duration": 5.1,
+      "text": "Julia and Thomas spent most of their lives in Highland County, Ohio and in Indiana, but"
+    },
+    {
+      "start": 89.009,
+      "duration": 4.131,
+      "text": "they started their married lives in Virginia, where their first three children were born"
+    },
+    {
+      "start": 93.14,
+      "duration": 2.339,
+      "text": "between 1826 and 1830."
+    },
+    {
+      "start": 95.479,
+      "duration": 5.18,
+      "text": "So… they were probably married in or around Frederick County, Virginia where Julia’s"
+    },
+    {
+      "start": 100.659,
+      "duration": 1.981,
+      "text": "dad owned land!"
+    },
+    {
+      "start": 102.64,
+      "duration": 1.48,
+      "text": "Right?"
+    },
+    {
+      "start": 104.12,
+      "duration": 1.48,
+      "text": "Right?"
+    },
+    {
+      "start": 105.6,
+      "duration": 5.64,
+      "text": "There is a record of an 1823 marriage bond in Frederick County, Virginia for a Thomas"
+    },
+    {
+      "start": 111.24,
+      "duration": 2.87,
+      "text": "Chew, but here’s where the problem started."
+    },
+    {
+      "start": 114.11,
+      "duration": 5.009,
+      "text": "Thomas married a Julia Minser, not Julia Huggins."
+    },
+    {
+      "start": 119.119,
+      "duration": 6.171,
+      "text": "The bondsman—a role typically held by a close family member such as a father—was"
+    },
+    {
+      "start": 125.29,
+      "duration": 8.79,
+      "text": "William Huggins, so I felt this had to be the right record."
+    },
+    {
+      "start": 134.08,
+      "duration": 8.24,
+      "text": "I looked for a record of a Julia Huggins marrying a man named Minser, and couldn’t find one."
+    },
+    {
+      "start": 142.32,
+      "duration": 6.04,
+      "text": "I could walk away and say I’ve got it, I know the father."
+    },
+    {
+      "start": 148.36,
+      "duration": 3.48,
+      "text": "But… it just felt weird."
+    },
+    {
+      "start": 151.84,
+      "duration": 5.84,
+      "text": "When I hit a problem, a brick wall, I’ve found that one of the best ways to punch through"
+    },
+    {
+      "start": 157.68,
+      "duration": 1.79,
+      "text": "is to examine siblings."
+    },
+    {
+      "start": 159.47,
+      "duration": 6.22,
+      "text": "I discovered the name of Thirza’s deceased husband, Barton Hancher, in extended wrangling"
+    },
+    {
+      "start": 165.69,
+      "duration": 2.219,
+      "text": "over William Huggins’ will."
+    },
+    {
+      "start": 167.909,
+      "duration": 4.221,
+      "text": "Barton was from Berkeley County, adjacent to Frederick County."
+    },
+    {
+      "start": 172.13,
+      "duration": 9.249,
+      "text": "And in Frederick County, I found an 1832 bond for the marriage of Barton Hancher to Thirza"
+    },
+    {
+      "start": 181.379,
+      "duration": 9.991,
+      "text": "Minser, with Franklin Higgins as the bondsman—that has to be Doctor Benjamin Franklin M. Huggins,"
+    },
+    {
+      "start": 191.37,
+      "duration": 2.31,
+      "text": "right?"
+    },
+    {
+      "start": 193.68,
+      "duration": 5.95,
+      "text": "So… that’s really weird."
+    },
+    {
+      "start": 199.63,
+      "duration": 7.0,
+      "text": "William Huggins named both women as his daughters, but there’s no way that both women had first"
+    },
+    {
+      "start": 206.63,
+      "duration": 6.919,
+      "text": "married a man named Minser before remarrying to Thomas Chew and Barton Hancher respectively."
+    },
+    {
+      "start": 213.549,
+      "duration": 8.61,
+      "text": "At this point, I was totally confused, so I"
+    },
+    {
+      "start": 222.159,
+      "duration": 3.731,
+      "text": "started looking around for Minsers in the Frederick area for any clues."
+    },
+    {
+      "start": 225.89,
+      "duration": 5.069,
+      "text": "And I found one: a fellow named Brad Minser had found a will abstract for a Rebecca Minson"
+    },
+    {
+      "start": 230.959,
+      "duration": 8.42,
+      "text": "naming “Thomas Chin & his wife” and attached it to his ancestor, Rebecca Hancher Minser."
+    },
+    {
+      "start": 239.379,
+      "duration": 8.661,
+      "text": "The abstract also named “George P. Chrisman & his wife”—Thirza, widowed in 1835, married"
+    },
+    {
+      "start": 248.04,
+      "duration": 4.279,
+      "text": "George P. Chrisman in 1837 in Highland County, Ohio."
+    },
+    {
+      "start": 252.319,
+      "duration": 2.39,
+      "text": "Then I looked back at William Huggins’ will."
+    },
+    {
+      "start": 254.709,
+      "duration": 1.811,
+      "text": "It actually named a Wm."
+    },
+    {
+      "start": 256.52,
+      "duration": 6.56,
+      "text": "Minser in relation to some debts, and lo and behold, Brad Minser’s tree listed William"
+    },
+    {
+      "start": 263.08,
+      "duration": 3.47,
+      "text": "Minser as son of Rebecca Hancher Minser."
+    },
+    {
+      "start": 266.55,
+      "duration": 11.12,
+      "text": "This has to be all the same family, but there’s no explanation to why Thirza and Julia appear"
+    },
+    {
+      "start": 277.67,
+      "duration": 5.06,
+      "text": "with the wrong maiden name."
+    },
+    {
+      "start": 282.73,
+      "duration": 7.22,
+      "text": "Or why they would appear in the probate proceeding of a Rebecca Minser receiving shares in her"
+    },
+    {
+      "start": 289.95,
+      "duration": 7.18,
+      "text": "estate equal to Rebecca’s kids."
+    },
+    {
+      "start": 297.13,
+      "duration": 9.62,
+      "text": "So I went back to my principles: always read the original."
+    },
+    {
+      "start": 306.75,
+      "duration": 7.19,
+      "text": "The abstract Brad Minser had posted listed Books 23 and 25 of Frederick County Will Books"
+    },
+    {
+      "start": 313.94,
+      "duration": 2.55,
+      "text": "as containing the full probate proceeding."
+    },
+    {
+      "start": 316.49,
+      "duration": 3.91,
+      "text": "I ordered microfilms of those books from the Family History Library, and discovered that"
+    },
+    {
+      "start": 320.4,
+      "duration": 5.51,
+      "text": "Rebecca hadn’t named Julia Chew and Thirza Chrisman in her will."
+    },
+    {
+      "start": 325.91,
+      "duration": 5.62,
+      "text": "She had died intestate, and since both women received shares equal to Rebecca’s other"
+    },
+    {
+      "start": 331.53,
+      "duration": 2.91,
+      "text": "children, they had to have been her daughters."
+    },
+    {
+      "start": 334.44,
+      "duration": 5.69,
+      "text": "I also saw the transcription error—it wasn’t Thomas Chin in the original, it was Thomas"
+    },
+    {
+      "start": 340.13,
+      "duration": 1.08,
+      "text": "Chew."
+    },
+    {
+      "start": 341.21,
+      "duration": 5.58,
+      "text": "Both women were born well after Rebecca’s husband, Jacob Minser died, so he couldn’t"
+    },
+    {
+      "start": 346.79,
+      "duration": 1.0,
+      "text": "be the father."
+    },
+    {
+      "start": 347.79,
+      "duration": 5.35,
+      "text": "William Huggins claimed both women were his daughters, but he and Rebecca never married."
+    },
+    {
+      "start": 353.14,
+      "duration": 1.71,
+      "text": "My new hypothesis?"
+    },
+    {
+      "start": 354.85,
+      "duration": 3.87,
+      "text": "William and Rebecca “cohabited without formalities.”"
+    },
+    {
+      "start": 358.72,
+      "duration": 4.74,
+      "text": "Or to put it in the lingo of the 1800s, Julia and Thirza were bastards."
+    },
+    {
+      "start": 363.46,
+      "duration": 8.6,
+      "text": "Intestacy is strictly governed by law, so the law itself could prove my hypothesis."
+    },
+    {
+      "start": 372.06,
+      "duration": 13.44,
+      "text": "I got my hands on an 1857 guide book for Virginia probate law, and got a clear answer."
+    },
+    {
+      "start": 385.5,
+      "duration": 6.43,
+      "text": "And I quote “Bastards also shall be capable of inheriting on the part of their mother,"
+    },
+    {
+      "start": 391.93,
+      "duration": 4.95,
+      "text": "in like manner as if they had been lawfully begotten of such mother.”"
+    },
+    {
+      "start": 396.88,
+      "duration": 7.02,
+      "text": "At the time, bastards carried their mothers’ surname, even when the father was known."
+    },
+    {
+      "start": 403.9,
+      "duration": 6.381,
+      "text": "Put it all together, and it explains why Julia’s and Thirza’s maiden names were Minser, not"
+    },
+    {
+      "start": 410.281,
+      "duration": 1.189,
+      "text": "Huggins."
+    },
+    {
+      "start": 411.47,
+      "duration": 7.09,
+      "text": "Final point: Doctor Benjamin Franklin M. Huggins didn’t receive a share of Rebecca Minser’s"
+    },
+    {
+      "start": 418.56,
+      "duration": 4.64,
+      "text": "estate, and that means he had a different mother than Julia and Thirza."
+    },
+    {
+      "start": 423.2,
+      "duration": 14.07,
+      "text": "Not that I have had any luck figuring out who."
+    }
+  ],
+  "full_text": "Intestate probate proceedings can be one of the most valuable primary source genealogical documents out there because the proceedings are governed strictly by law. Problem is, the laws may not make sense to you, and they can be hard to find. I’m Mike O’Neill, and I’m going to give you a case study of how the actual text of Virginia’s intestate laws resolved a tough genealogy problem. And I’m going to try do it in five minutes. It started with my wife’s ancestor, Julia Chew, wife of Thomas Chew (1801-1879). According to her tombstone, she was born on 2 March 1804, and various records put her birthplace in Virginia. The consensus was that Julia’s maiden name was Huggins. As always, I assumed good intent when looking at secondary and tertiary sources—that is, other people’s research—and I found a March 1835 probate proceeding in Highland County, Ohio for a William Huggins who named two daughters, July Chew & Thirza Hancher, as well as a son Doctor Benjamin Franklin M. Huggins. Fun fact: Doctor wasn’t a title, it was actually the poor guy’s first name. What a mouthful. Anyway, the probate file noted that William owned land in Frederick County, Virginia. Julia and Thomas spent most of their lives in Highland County, Ohio and in Indiana, but they started their married lives in Virginia, where their first three children were born between 1826 and 1830. So… they were probably married in or around Frederick County, Virginia where Julia’s dad owned land! Right? Right? There is a record of an 1823 marriage bond in Frederick County, Virginia for a Thomas Chew, but here’s where the problem started. Thomas married a Julia Minser, not Julia Huggins. The bondsman—a role typically held by a close family member such as a father—was William Huggins, so I felt this had to be the right record. I looked for a record of a Julia Huggins marrying a man named Minser, and couldn’t find one. I could walk away and say I’ve got it, I know the father. But… it just felt weird. When I hit a problem, a brick wall, I’ve found that one of the best ways to punch through is to examine siblings. I discovered the name of Thirza’s deceased husband, Barton Hancher, in extended wrangling over William Huggins’ will. Barton was from Berkeley County, adjacent to Frederick County. And in Frederick County, I found an 1832 bond for the marriage of Barton Hancher to Thirza Minser, with Franklin Higgins as the bondsman—that has to be Doctor Benjamin Franklin M. Huggins, right? So… that’s really weird. William Huggins named both women as his daughters, but there’s no way that both women had first married a man named Minser before remarrying to Thomas Chew and Barton Hancher respectively. At this point, I was totally confused, so I started looking around for Minsers in the Frederick area for any clues. And I found one: a fellow named Brad Minser had found a will abstract for a Rebecca Minson naming “Thomas Chin & his wife” and attached it to his ancestor, Rebecca Hancher Minser. The abstract also named “George P. Chrisman & his wife”—Thirza, widowed in 1835, married George P. Chrisman in 1837 in Highland County, Ohio. Then I looked back at William Huggins’ will. It actually named a Wm. Minser in relation to some debts, and lo and behold, Brad Minser’s tree listed William Minser as son of Rebecca Hancher Minser. This has to be all the same family, but there’s no explanation to why Thirza and Julia appear with the wrong maiden name. Or why they would appear in the probate proceeding of a Rebecca Minser receiving shares in her estate equal to Rebecca’s kids. So I went back to my principles: always read the original. The abstract Brad Minser had posted listed Books 23 and 25 of Frederick County Will Books as containing the full probate proceeding. I ordered microfilms of those books from the Family History Library, and discovered that Rebecca hadn’t named Julia Chew and Thirza Chrisman in her will. She had died intestate, and since both women received shares equal to Rebecca’s other children, they had to have been her daughters. I also saw the transcription error—it wasn’t Thomas Chin in the original, it was Thomas Chew. Both women were born well after Rebecca’s husband, Jacob Minser died, so he couldn’t be the father. William Huggins claimed both women were his daughters, but he and Rebecca never married. My new hypothesis? William and Rebecca “cohabited without formalities.” Or to put it in the lingo of the 1800s, Julia and Thirza were bastards. Intestacy is strictly governed by law, so the law itself could prove my hypothesis. I got my hands on an 1857 guide book for Virginia probate law, and got a clear answer. And I quote “Bastards also shall be capable of inheriting on the part of their mother, in like manner as if they had been lawfully begotten of such mother.” At the time, bastards carried their mothers’ surname, even when the father was known. Put it all together, and it explains why Julia’s and Thirza’s maiden names were Minser, not Huggins. Final point: Doctor Benjamin Franklin M. Huggins didn’t receive a share of Rebecca Minser’s estate, and that means he had a different mother than Julia and Thirza. Not that I have had any luck figuring out who.",
+  "attempts": [
+    {
+      "client": "IOS",
+      "playability": {
+        "status": "OK",
+        "playableInEmbed": true,
+        "offlineability": {
+          "buttonRenderer": {
+            "navigationEndpoint": {
+              "clickTrackingParams": "CBEQ6ewBIhMIleHgiuzblwMVDGNMCB13Ui9pygEEGW4ezA==",
+              "ypcGetOfflineUpsellEndpoint": {
+                "params": "ChPqqN25AQ0KC1lOT0xkOExaQjQ4IgtZTk9MZDhMWkI0OCoVCAkYAVIPCgtZTk9MZDhMWkI0OCAB"
+              }
+            },
+            "trackingParams": "CBEQ6ewBIhMIleHgiuzblwMVDGNMCB13Ui9p"
+          }
+        },
+        "pictureInPicture": {
+          "pictureInPictureRenderer": {
+            "playableInPip": true,
+            "offByDefault": false,
+            "shouldResumeOnHead": false
+          }
+        },
+        "miniplayer": {
+          "miniplayerRenderer": {
+            "playbackMode": "PLAYBACK_MODE_ALLOW"
+          }
+        },
+        "contextParams": "Q0FFU0FnZ0M="
+      },
+      "outcome": "ok"
+    }
+  ],
+  "fetched_at": "2026-10-28T04:11:20.244034+00:00",
+  "client": "IOS",
+  "json_path": "transcripts/044_YNOLd8LZB48.json",
+  "text_path": "transcripts/044_YNOLd8LZB48.txt"
+}

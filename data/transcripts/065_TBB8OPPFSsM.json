@@ -1,0 +1,5805 @@
+{
+  "index": 65,
+  "url": "https://www.youtube.com/watch?v=TBB8OPPFSsM",
+  "video_id": "TBB8OPPFSsM",
+  "status": "ok",
+  "metadata": {
+    "title": "What’s in a Probate Record and How to Use it for Genealogical Research– James Tanner (10 Sep 2023)",
+    "author": "BYU Library Family History Center",
+    "channelId": "UC7hqNOQt-2AfeVEpDuc7sCA",
+    "lengthSeconds": "3053",
+    "viewCount": "1487",
+    "shortDescription": "Probate records are some of the most valuable historical records for genealogical research. This class covers some of the basics of research using probate records. It is possible to use probate records to find some most difficult historical information such as women's maiden names, missing children, difficult or unusual family relationships and other equally puzzling problems. Take some time to learn some of the basics and begin to use probate records.\nFor more information: https://familyhistory.lib.byu.edu/virtual-classes/whats-in-a-probate-record-and-how-to-use-it-for-genealogical-research",
+    "keywords": [
+      "BYU",
+      "Webinar",
+      "Family History",
+      "Library",
+      "Genealogy",
+      "Ancestor"
+    ]
+  },
+  "caption_tracks": [
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=TBB8OPPFSsM&ei=63XhaqKTIJqLsfIP0bOJ2Qc&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185883&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=AE9520987B94F2DC80B74DDC1E3564B96456605B.175E10D52F9ED369BD6F3A9D227C4EEFF26C0DA2&key=yt8&kind=asr&lang=en",
+      "name": {
+        "runs": [
+          {
+            "text": "English (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.en",
+      "languageCode": "en",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    }
+  ],
+  "selected_track": {
+    "baseUrl": "https://www.youtube.com/api/timedtext?v=TBB8OPPFSsM&ei=63XhaqKTIJqLsfIP0bOJ2Qc&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185883&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=AE9520987B94F2DC80B74DDC1E3564B96456605B.175E10D52F9ED369BD6F3A9D227C4EEFF26C0DA2&key=yt8&kind=asr&lang=en",
+    "name": {
+      "runs": [
+        {
+          "text": "English (auto-generated)"
+        }
+      ]
+    },
+    "vssId": "a.en",
+    "languageCode": "en",
+    "kind": "asr",
+    "isTranslatable": true,
+    "trackName": ""
+  },
+  "segments": [
+    {
+      "start": 11.16,
+      "duration": 6.3,
+      "text": "well hello this is James Tanner and I'm"
+    },
+    {
+      "start": 14.099,
+      "duration": 6.301,
+      "text": "here again from the BYU family history"
+    },
+    {
+      "start": 17.46,
+      "duration": 6.96,
+      "text": "library to talk about"
+    },
+    {
+      "start": 20.4,
+      "duration": 6.299,
+      "text": "probate records and how to use the"
+    },
+    {
+      "start": 24.42,
+      "duration": 5.82,
+      "text": "probate records in genealogical research"
+    },
+    {
+      "start": 26.699,
+      "duration": 5.461,
+      "text": "and I guess I'll need one couple of"
+    },
+    {
+      "start": 30.24,
+      "duration": 4.8,
+      "text": "things of introduction"
+    },
+    {
+      "start": 32.16,
+      "duration": 5.28,
+      "text": "I've spent almost 41 years doing"
+    },
+    {
+      "start": 35.04,
+      "duration": 6.179,
+      "text": "genealogical research and a lot of that"
+    },
+    {
+      "start": 37.44,
+      "duration": 6.66,
+      "text": "has involved res Research into probate"
+    },
+    {
+      "start": 41.219,
+      "duration": 4.921,
+      "text": "cases they're extremely helpful in"
+    },
+    {
+      "start": 44.1,
+      "duration": 4.5,
+      "text": "finding families"
+    },
+    {
+      "start": 46.14,
+      "duration": 7.259,
+      "text": "and the second part of that is that I"
+    },
+    {
+      "start": 48.6,
+      "duration": 7.02,
+      "text": "was a trial attorney in Arizona for 39"
+    },
+    {
+      "start": 53.399,
+      "duration": 4.68,
+      "text": "years and"
+    },
+    {
+      "start": 55.62,
+      "duration": 4.5,
+      "text": "spent a lot of time in the probate"
+    },
+    {
+      "start": 58.079,
+      "duration": 4.32,
+      "text": "courts that was something that I"
+    },
+    {
+      "start": 60.12,
+      "duration": 4.56,
+      "text": "consistently did over the"
+    },
+    {
+      "start": 62.399,
+      "duration": 4.981,
+      "text": "the time that I was an attorney in the"
+    },
+    {
+      "start": 64.68,
+      "duration": 3.9,
+      "text": "last few years the last 15 years or so I"
+    },
+    {
+      "start": 67.38,
+      "duration": 4.44,
+      "text": "was in court"
+    },
+    {
+      "start": 68.58,
+      "duration": 6.42,
+      "text": "fairly regularly with probate cases"
+    },
+    {
+      "start": 71.82,
+      "duration": 6.119,
+      "text": "so this is uh this is a topic that I"
+    },
+    {
+      "start": 75.0,
+      "duration": 5.7,
+      "text": "understand and hopefully I can help"
+    },
+    {
+      "start": 77.939,
+      "duration": 4.32,
+      "text": "people get started in understanding this"
+    },
+    {
+      "start": 80.7,
+      "duration": 4.559,
+      "text": "particular subject"
+    },
+    {
+      "start": 82.259,
+      "duration": 6.061,
+      "text": "so first of all probate files go back"
+    },
+    {
+      "start": 85.259,
+      "duration": 6.0,
+      "text": "thousands of years and"
+    },
+    {
+      "start": 88.32,
+      "duration": 6.24,
+      "text": "they certainly predate records of births"
+    },
+    {
+      "start": 91.259,
+      "duration": 7.021,
+      "text": "and deaths and that's the key here is"
+    },
+    {
+      "start": 94.56,
+      "duration": 6.66,
+      "text": "that the ability to find the the birth"
+    },
+    {
+      "start": 98.28,
+      "duration": 4.74,
+      "text": "date or the death date of an individual"
+    },
+    {
+      "start": 101.22,
+      "duration": 4.38,
+      "text": "person"
+    },
+    {
+      "start": 103.02,
+      "duration": 6.48,
+      "text": "other than people who are extremely"
+    },
+    {
+      "start": 105.6,
+      "duration": 5.339,
+      "text": "famous or have some reason to be noted"
+    },
+    {
+      "start": 109.5,
+      "duration": 4.2,
+      "text": "in history"
+    },
+    {
+      "start": 110.939,
+      "duration": 4.381,
+      "text": "those without with that exception most"
+    },
+    {
+      "start": 113.7,
+      "duration": 4.32,
+      "text": "Ordinary People"
+    },
+    {
+      "start": 115.32,
+      "duration": 7.04,
+      "text": "kind of disappear off records beginning"
+    },
+    {
+      "start": 118.02,
+      "duration": 7.32,
+      "text": "at the the late 1700s usually by 1800"
+    },
+    {
+      "start": 122.36,
+      "duration": 5.58,
+      "text": "it's already difficult to find birth"
+    },
+    {
+      "start": 125.34,
+      "duration": 6.3,
+      "text": "records marriage records are different"
+    },
+    {
+      "start": 127.94,
+      "duration": 6.34,
+      "text": "as a note marriage records affect"
+    },
+    {
+      "start": 131.64,
+      "duration": 5.16,
+      "text": "property rights real property and"
+    },
+    {
+      "start": 134.28,
+      "duration": 4.5,
+      "text": "personal property rights and so marriage"
+    },
+    {
+      "start": 136.8,
+      "duration": 4.14,
+      "text": "records are more common and they may go"
+    },
+    {
+      "start": 138.78,
+      "duration": 4.86,
+      "text": "back much further"
+    },
+    {
+      "start": 140.94,
+      "duration": 5.04,
+      "text": "but you may find that the only records"
+    },
+    {
+      "start": 143.64,
+      "duration": 5.34,
+      "text": "that you can find are Church records and"
+    },
+    {
+      "start": 145.98,
+      "duration": 4.08,
+      "text": "they may not be existent in place where"
+    },
+    {
+      "start": 148.98,
+      "duration": 3.899,
+      "text": "you're looking"
+    },
+    {
+      "start": 150.06,
+      "duration": 4.98,
+      "text": "and that's particularly true in in doing"
+    },
+    {
+      "start": 152.879,
+      "duration": 5.22,
+      "text": "research in the United States or in any"
+    },
+    {
+      "start": 155.04,
+      "duration": 5.04,
+      "text": "of the countries that outside of Western"
+    },
+    {
+      "start": 158.099,
+      "duration": 4.441,
+      "text": "Europe"
+    },
+    {
+      "start": 160.08,
+      "duration": 5.879,
+      "text": "so we're looking at something that's"
+    },
+    {
+      "start": 162.54,
+      "duration": 5.82,
+      "text": "very valuable another factor that that"
+    },
+    {
+      "start": 165.959,
+      "duration": 6.901,
+      "text": "helps me understand the probate record"
+    },
+    {
+      "start": 168.36,
+      "duration": 6.9,
+      "text": "says that my wife and I spent a year"
+    },
+    {
+      "start": 172.86,
+      "duration": 5.159,
+      "text": "working with family search and"
+    },
+    {
+      "start": 175.26,
+      "duration": 5.46,
+      "text": "digitizing records in the Maryland state"
+    },
+    {
+      "start": 178.019,
+      "duration": 5.041,
+      "text": "archives and all of the records we"
+    },
+    {
+      "start": 180.72,
+      "duration": 3.599,
+      "text": "digitized for a year were probate"
+    },
+    {
+      "start": 183.06,
+      "duration": 4.02,
+      "text": "records"
+    },
+    {
+      "start": 184.319,
+      "duration": 5.64,
+      "text": "and all I can say about the the process"
+    },
+    {
+      "start": 187.08,
+      "duration": 4.56,
+      "text": "there I just talked to the email back"
+    },
+    {
+      "start": 189.959,
+      "duration": 3.661,
+      "text": "and forth to one of the people who is"
+    },
+    {
+      "start": 191.64,
+      "duration": 4.56,
+      "text": "involved in that project"
+    },
+    {
+      "start": 193.62,
+      "duration": 4.74,
+      "text": "back in Maryland that was a few years"
+    },
+    {
+      "start": 196.2,
+      "duration": 3.72,
+      "text": "ago that we were there and he estimated"
+    },
+    {
+      "start": 198.36,
+      "duration": 4.5,
+      "text": "that they probably would take another"
+    },
+    {
+      "start": 199.92,
+      "duration": 5.94,
+      "text": "five or ten years to just to digitize"
+    },
+    {
+      "start": 202.86,
+      "duration": 5.099,
+      "text": "all of the probate records in that one"
+    },
+    {
+      "start": 205.86,
+      "duration": 4.2,
+      "text": "library in that one archive third the"
+    },
+    {
+      "start": 207.959,
+      "duration": 4.5,
+      "text": "state of Maryland"
+    },
+    {
+      "start": 210.06,
+      "duration": 4.56,
+      "text": "another problem of course with probate"
+    },
+    {
+      "start": 212.459,
+      "duration": 4.681,
+      "text": "records from the genealogical research"
+    },
+    {
+      "start": 214.62,
+      "duration": 5.759,
+      "text": "standpoint is that very few of them are"
+    },
+    {
+      "start": 217.14,
+      "duration": 6.42,
+      "text": "indexed and in many cases they're not"
+    },
+    {
+      "start": 220.379,
+      "duration": 5.94,
+      "text": "even digitized they're still sitting in"
+    },
+    {
+      "start": 223.56,
+      "duration": 5.52,
+      "text": "courts across the country one of the"
+    },
+    {
+      "start": 226.319,
+      "duration": 4.801,
+      "text": "good news parts of that is that many of"
+    },
+    {
+      "start": 229.08,
+      "duration": 4.439,
+      "text": "the courts across the country even down"
+    },
+    {
+      "start": 231.12,
+      "duration": 5.16,
+      "text": "to the county level are digitizing their"
+    },
+    {
+      "start": 233.519,
+      "duration": 5.461,
+      "text": "own records and so they may have the"
+    },
+    {
+      "start": 236.28,
+      "duration": 5.94,
+      "text": "records in the county available"
+    },
+    {
+      "start": 238.98,
+      "duration": 5.22,
+      "text": "under a cold each individual County"
+    },
+    {
+      "start": 242.22,
+      "duration": 5.76,
+      "text": "probably is a different way of doing it"
+    },
+    {
+      "start": 244.2,
+      "duration": 7.08,
+      "text": "and so it's something that we're used to"
+    },
+    {
+      "start": 247.98,
+      "duration": 5.459,
+      "text": "as as a genealogists in doing that kind"
+    },
+    {
+      "start": 251.28,
+      "duration": 4.739,
+      "text": "of research"
+    },
+    {
+      "start": 253.439,
+      "duration": 4.441,
+      "text": "and I have to emphasize if I have to say"
+    },
+    {
+      "start": 256.019,
+      "duration": 4.741,
+      "text": "it a number of times which I probably"
+    },
+    {
+      "start": 257.88,
+      "duration": 5.4,
+      "text": "will is that probate records are some of"
+    },
+    {
+      "start": 260.76,
+      "duration": 5.64,
+      "text": "the most valuable genealogical resources"
+    },
+    {
+      "start": 263.28,
+      "duration": 7.199,
+      "text": "for identifying whole families"
+    },
+    {
+      "start": 266.4,
+      "duration": 7.5,
+      "text": "it is in a lot of cases because of that"
+    },
+    {
+      "start": 270.479,
+      "duration": 5.22,
+      "text": "lack of of individual records and Census"
+    },
+    {
+      "start": 273.9,
+      "duration": 3.84,
+      "text": "records and things like that civil"
+    },
+    {
+      "start": 275.699,
+      "duration": 4.56,
+      "text": "registration records and others that are"
+    },
+    {
+      "start": 277.74,
+      "duration": 5.16,
+      "text": "used commonly used"
+    },
+    {
+      "start": 280.259,
+      "duration": 5.461,
+      "text": "is that the probate records are the only"
+    },
+    {
+      "start": 282.9,
+      "duration": 5.64,
+      "text": "records that show complete families and"
+    },
+    {
+      "start": 285.72,
+      "duration": 5.64,
+      "text": "so this is the key here is finding the"
+    },
+    {
+      "start": 288.54,
+      "duration": 4.14,
+      "text": "probate record and that can take a bit"
+    },
+    {
+      "start": 291.36,
+      "duration": 4.32,
+      "text": "of work"
+    },
+    {
+      "start": 292.68,
+      "duration": 5.22,
+      "text": "I have one as direct line ancestor that"
+    },
+    {
+      "start": 295.68,
+      "duration": 4.38,
+      "text": "I have been looking since I began doing"
+    },
+    {
+      "start": 297.9,
+      "duration": 4.98,
+      "text": "research I have been looking for probate"
+    },
+    {
+      "start": 300.06,
+      "duration": 5.46,
+      "text": "records and have yet to find his probate"
+    },
+    {
+      "start": 302.88,
+      "duration": 5.48,
+      "text": "records so if it's a process that could"
+    },
+    {
+      "start": 305.52,
+      "duration": 2.84,
+      "text": "go on for a while"
+    },
+    {
+      "start": 308.4,
+      "duration": 5.9,
+      "text": "to understand probate probate is a set"
+    },
+    {
+      "start": 311.22,
+      "duration": 5.94,
+      "text": "of court or government procedures"
+    },
+    {
+      "start": 314.3,
+      "duration": 5.679,
+      "text": "established for the orderly transfer of"
+    },
+    {
+      "start": 317.16,
+      "duration": 4.08,
+      "text": "property from a deceased person to his"
+    },
+    {
+      "start": 319.979,
+      "duration": 4.741,
+      "text": "or her"
+    },
+    {
+      "start": 321.24,
+      "duration": 5.519,
+      "text": "errors or assigns another point on this"
+    },
+    {
+      "start": 324.72,
+      "duration": 4.38,
+      "text": "is that there are a lot of"
+    },
+    {
+      "start": 326.759,
+      "duration": 5.761,
+      "text": "misconceptions out there about probate"
+    },
+    {
+      "start": 329.1,
+      "duration": 5.52,
+      "text": "and as I was talking before we got"
+    },
+    {
+      "start": 332.52,
+      "duration": 5.34,
+      "text": "started here today part of that problem"
+    },
+    {
+      "start": 334.62,
+      "duration": 6.12,
+      "text": "has to do with people who are involved"
+    },
+    {
+      "start": 337.86,
+      "duration": 5.88,
+      "text": "in what we call estate planning here in"
+    },
+    {
+      "start": 340.74,
+      "duration": 5.519,
+      "text": "the United States and a lot of the"
+    },
+    {
+      "start": 343.74,
+      "duration": 4.86,
+      "text": "information that's put out in the"
+    },
+    {
+      "start": 346.259,
+      "duration": 4.621,
+      "text": "general Community about probate is is"
+    },
+    {
+      "start": 348.6,
+      "duration": 4.92,
+      "text": "just simply inaccurate and doesn't have"
+    },
+    {
+      "start": 350.88,
+      "duration": 5.52,
+      "text": "really any factual basis one of the"
+    },
+    {
+      "start": 353.52,
+      "duration": 4.619,
+      "text": "things that comes up in genealogical"
+    },
+    {
+      "start": 356.4,
+      "duration": 4.139,
+      "text": "research is that"
+    },
+    {
+      "start": 358.139,
+      "duration": 4.021,
+      "text": "I've heard this many times that oh well"
+    },
+    {
+      "start": 360.539,
+      "duration": 3.301,
+      "text": "you can't find a probate because the"
+    },
+    {
+      "start": 362.16,
+      "duration": 4.14,
+      "text": "women didn't own any property and so"
+    },
+    {
+      "start": 363.84,
+      "duration": 5.699,
+      "text": "therefore they there's no probates for"
+    },
+    {
+      "start": 366.3,
+      "duration": 5.16,
+      "text": "women well usually if the woman survived"
+    },
+    {
+      "start": 369.539,
+      "duration": 4.821,
+      "text": "the husband then there was a probate for"
+    },
+    {
+      "start": 371.46,
+      "duration": 5.7,
+      "text": "the women's estate because whatever she"
+    },
+    {
+      "start": 374.36,
+      "duration": 5.44,
+      "text": "inherited had to be probated"
+    },
+    {
+      "start": 377.16,
+      "duration": 5.64,
+      "text": "and then then there was a question asked"
+    },
+    {
+      "start": 379.8,
+      "duration": 6.6,
+      "text": "before the class started about the"
+    },
+    {
+      "start": 382.8,
+      "duration": 6.38,
+      "text": "threshold level for a probate and all I"
+    },
+    {
+      "start": 386.4,
+      "duration": 8.76,
+      "text": "can say is that probate is mixed up with"
+    },
+    {
+      "start": 389.18,
+      "duration": 8.139,
+      "text": "taxes and uh and taxes on the property a"
+    },
+    {
+      "start": 395.16,
+      "duration": 4.64,
+      "text": "bit of an estate at the time of transfer"
+    },
+    {
+      "start": 397.319,
+      "duration": 5.341,
+      "text": "were very popular and are still popular"
+    },
+    {
+      "start": 399.8,
+      "duration": 6.1,
+      "text": "in a lot of countries and so there's"
+    },
+    {
+      "start": 402.66,
+      "duration": 8.64,
+      "text": "time when everything in the estate down"
+    },
+    {
+      "start": 405.9,
+      "duration": 10.019,
+      "text": "to the last pin and saddle and cup and"
+    },
+    {
+      "start": 411.3,
+      "duration": 7.5,
+      "text": "Spoon were taxed to some extent"
+    },
+    {
+      "start": 415.919,
+      "duration": 4.981,
+      "text": "and so the probates are some of them as"
+    },
+    {
+      "start": 418.8,
+      "duration": 6.06,
+      "text": "you go back in time you'll find probates"
+    },
+    {
+      "start": 420.9,
+      "duration": 6.299,
+      "text": "are extremely detailed into as far as"
+    },
+    {
+      "start": 424.86,
+      "duration": 5.279,
+      "text": "the property of the deceased"
+    },
+    {
+      "start": 427.199,
+      "duration": 5.041,
+      "text": "so these are are things that had that"
+    },
+    {
+      "start": 430.139,
+      "duration": 3.721,
+      "text": "happen because of the Taxation and"
+    },
+    {
+      "start": 432.24,
+      "duration": 4.079,
+      "text": "Taxation has been with us of course"
+    },
+    {
+      "start": 433.86,
+      "duration": 4.86,
+      "text": "since ancient times so we're we're"
+    },
+    {
+      "start": 436.319,
+      "duration": 5.641,
+      "text": "pretty well familiar with the process"
+    },
+    {
+      "start": 438.72,
+      "duration": 5.879,
+      "text": "here but what's happened lately just as"
+    },
+    {
+      "start": 441.96,
+      "duration": 6.299,
+      "text": "a kind of a side note is that"
+    },
+    {
+      "start": 444.599,
+      "duration": 6.72,
+      "text": "many of the smaller Estates fall under"
+    },
+    {
+      "start": 448.259,
+      "duration": 5.641,
+      "text": "exceptions through the taxation the"
+    },
+    {
+      "start": 451.319,
+      "duration": 7.32,
+      "text": "amount of property necessary for a"
+    },
+    {
+      "start": 453.9,
+      "duration": 6.12,
+      "text": "probate to have a tax liability is very"
+    },
+    {
+      "start": 458.639,
+      "duration": 4.62,
+      "text": "small"
+    },
+    {
+      "start": 460.02,
+      "duration": 6.06,
+      "text": "the other factor that creates but great"
+    },
+    {
+      "start": 463.259,
+      "duration": 5.041,
+      "text": "interest the amount of files of people"
+    },
+    {
+      "start": 466.08,
+      "duration": 4.98,
+      "text": "that fall under the need to have a"
+    },
+    {
+      "start": 468.3,
+      "duration": 5.76,
+      "text": "probate is a very small percentage of"
+    },
+    {
+      "start": 471.06,
+      "duration": 5.579,
+      "text": "those are actually have any tax"
+    },
+    {
+      "start": 474.06,
+      "duration": 4.52,
+      "text": "liabilities tax liabilities for example"
+    },
+    {
+      "start": 476.639,
+      "duration": 4.68,
+      "text": "in the United States the exemptions"
+    },
+    {
+      "start": 478.58,
+      "duration": 5.5,
+      "text": "begin at about a million dollars or"
+    },
+    {
+      "start": 481.319,
+      "duration": 5.461,
+      "text": "higher I didn't fail to look up the"
+    },
+    {
+      "start": 484.08,
+      "duration": 4.5,
+      "text": "exact number and it changed it changes"
+    },
+    {
+      "start": 486.78,
+      "duration": 4.199,
+      "text": "practically every year so if you're"
+    },
+    {
+      "start": 488.58,
+      "duration": 4.8,
+      "text": "interested in seeing what the exemption"
+    },
+    {
+      "start": 490.979,
+      "duration": 5.22,
+      "text": "amount is for a for an estate in the"
+    },
+    {
+      "start": 493.38,
+      "duration": 5.039,
+      "text": "United States then you can look that up"
+    },
+    {
+      "start": 496.199,
+      "duration": 5.22,
+      "text": "on online and see what the current"
+    },
+    {
+      "start": 498.419,
+      "duration": 5.641,
+      "text": "exemption is that it's one thing that"
+    },
+    {
+      "start": 501.419,
+      "duration": 4.861,
+      "text": "does change frequently most of the time"
+    },
+    {
+      "start": 504.06,
+      "duration": 5.039,
+      "text": "that I was practicing law which is about"
+    },
+    {
+      "start": 506.28,
+      "duration": 5.58,
+      "text": "10 years or so ago the exemption level"
+    },
+    {
+      "start": 509.099,
+      "duration": 5.221,
+      "text": "was up at around three million dollars"
+    },
+    {
+      "start": 511.86,
+      "duration": 4.26,
+      "text": "so unless you had an estate larger than"
+    },
+    {
+      "start": 514.32,
+      "duration": 5.82,
+      "text": "three million dollars you weren't paying"
+    },
+    {
+      "start": 516.12,
+      "duration": 6.2,
+      "text": "taxes but this is the reason why probate"
+    },
+    {
+      "start": 520.14,
+      "duration": 5.16,
+      "text": "files are valuable for doing"
+    },
+    {
+      "start": 522.32,
+      "duration": 6.16,
+      "text": "genealogical research because"
+    },
+    {
+      "start": 525.3,
+      "duration": 6.12,
+      "text": "first of all they were they were imposed"
+    },
+    {
+      "start": 528.48,
+      "duration": 4.979,
+      "text": "on everyone everyone had to have a"
+    },
+    {
+      "start": 531.42,
+      "duration": 4.02,
+      "text": "probate even if you had almost no"
+    },
+    {
+      "start": 533.459,
+      "duration": 4.201,
+      "text": "property at all the only people that"
+    },
+    {
+      "start": 535.44,
+      "duration": 4.5,
+      "text": "didn't have a probate were people who"
+    },
+    {
+      "start": 537.66,
+      "duration": 7.14,
+      "text": "did not have any property"
+    },
+    {
+      "start": 539.94,
+      "duration": 9.12,
+      "text": "okay so the reason why those records are"
+    },
+    {
+      "start": 544.8,
+      "duration": 6.78,
+      "text": "valuable become very very evident as you"
+    },
+    {
+      "start": 549.06,
+      "duration": 5.16,
+      "text": "look at the probate set of records that"
+    },
+    {
+      "start": 551.58,
+      "duration": 4.74,
+      "text": "go through a probate it's not just one"
+    },
+    {
+      "start": 554.22,
+      "duration": 5.52,
+      "text": "record it is a"
+    },
+    {
+      "start": 556.32,
+      "duration": 5.459,
+      "text": "bundle of records that extend over a"
+    },
+    {
+      "start": 559.74,
+      "duration": 5.4,
+      "text": "period of time"
+    },
+    {
+      "start": 561.779,
+      "duration": 6.081,
+      "text": "a few years ago I was looking for an"
+    },
+    {
+      "start": 565.14,
+      "duration": 5.819,
+      "text": "example on a probate file and I just"
+    },
+    {
+      "start": 567.86,
+      "duration": 7.36,
+      "text": "living here in Utah Valley and Utah"
+    },
+    {
+      "start": 570.959,
+      "duration": 7.141,
+      "text": "County or in Utah I decided I just look"
+    },
+    {
+      "start": 575.22,
+      "duration": 5.64,
+      "text": "and see where one of the representative"
+    },
+    {
+      "start": 578.1,
+      "duration": 6.84,
+      "text": "probates here in Utah how that went"
+    },
+    {
+      "start": 580.86,
+      "duration": 7.26,
+      "text": "I found a probate file that began in the"
+    },
+    {
+      "start": 584.94,
+      "duration": 8.579,
+      "text": "mid to late 1800s around the 1860 or"
+    },
+    {
+      "start": 588.12,
+      "duration": 7.5,
+      "text": "1870 and lasted for 30 years"
+    },
+    {
+      "start": 593.519,
+      "duration": 3.901,
+      "text": "so there were not you know people come"
+    },
+    {
+      "start": 595.62,
+      "duration": 3.3,
+      "text": "to me when they start doing probate and"
+    },
+    {
+      "start": 597.42,
+      "duration": 3.66,
+      "text": "I say well additionally for a probate"
+    },
+    {
+      "start": 598.92,
+      "duration": 3.9,
+      "text": "file you said yes I looked at the around"
+    },
+    {
+      "start": 601.08,
+      "duration": 3.66,
+      "text": "the date of death and I didn't find"
+    },
+    {
+      "start": 602.82,
+      "duration": 3.9,
+      "text": "anything on a probate there's no probate"
+    },
+    {
+      "start": 604.74,
+      "duration": 4.44,
+      "text": "file and I said well were you aware that"
+    },
+    {
+      "start": 606.72,
+      "duration": 5.76,
+      "text": "a probate file could be filed years"
+    },
+    {
+      "start": 609.18,
+      "duration": 6.0,
+      "text": "after the death it may be possible that"
+    },
+    {
+      "start": 612.48,
+      "duration": 5.46,
+      "text": "it could have been filed even 5 10 15"
+    },
+    {
+      "start": 615.18,
+      "duration": 5.279,
+      "text": "years after the person died or more"
+    },
+    {
+      "start": 617.94,
+      "duration": 5.7,
+      "text": "oh does that mean I have to go look at"
+    },
+    {
+      "start": 620.459,
+      "duration": 7.261,
+      "text": "all the records for all those years"
+    },
+    {
+      "start": 623.64,
+      "duration": 7.08,
+      "text": "um yes that's exactly what that means"
+    },
+    {
+      "start": 627.72,
+      "duration": 4.98,
+      "text": "and also you find well I found the will"
+    },
+    {
+      "start": 630.72,
+      "duration": 4.679,
+      "text": "and that's it well"
+    },
+    {
+      "start": 632.7,
+      "duration": 5.94,
+      "text": "if you found the will then you probably"
+    },
+    {
+      "start": 635.399,
+      "duration": 5.88,
+      "text": "have some access to the probate file and"
+    },
+    {
+      "start": 638.64,
+      "duration": 5.759,
+      "text": "as I've just mentioned those filings"
+    },
+    {
+      "start": 641.279,
+      "duration": 6.481,
+      "text": "could have continued for decades and"
+    },
+    {
+      "start": 644.399,
+      "duration": 5.221,
+      "text": "with hundreds of pages with detail about"
+    },
+    {
+      "start": 647.76,
+      "duration": 3.42,
+      "text": "the family down two and three"
+    },
+    {
+      "start": 649.62,
+      "duration": 4.62,
+      "text": "generations"
+    },
+    {
+      "start": 651.18,
+      "duration": 5.399,
+      "text": "so you know this is a lot of information"
+    },
+    {
+      "start": 654.24,
+      "duration": 5.219,
+      "text": "here and it's not ever wrapped up and"
+    },
+    {
+      "start": 656.579,
+      "duration": 5.461,
+      "text": "handed to you in a package you have to"
+    },
+    {
+      "start": 659.459,
+      "duration": 5.88,
+      "text": "sometimes dig around and look through a"
+    },
+    {
+      "start": 662.04,
+      "duration": 6.359,
+      "text": "lot of Records before you find all the"
+    },
+    {
+      "start": 665.339,
+      "duration": 6.661,
+      "text": "information that happens"
+    },
+    {
+      "start": 668.399,
+      "duration": 6.421,
+      "text": "foreign part of this for for a lot of"
+    },
+    {
+      "start": 672.0,
+      "duration": 4.5,
+      "text": "people is that the probate file is the"
+    },
+    {
+      "start": 674.82,
+      "duration": 3.9,
+      "text": "one that breaks down the brick wall"
+    },
+    {
+      "start": 676.5,
+      "duration": 5.399,
+      "text": "that's the one that actually identifies"
+    },
+    {
+      "start": 678.72,
+      "duration": 7.619,
+      "text": "the family puts the family in it very"
+    },
+    {
+      "start": 681.899,
+      "duration": 7.68,
+      "text": "specific place and time and verifies a"
+    },
+    {
+      "start": 686.339,
+      "duration": 6.541,
+      "text": "death date or approximate death date of"
+    },
+    {
+      "start": 689.579,
+      "duration": 6.841,
+      "text": "of the deceased and so the value of"
+    },
+    {
+      "start": 692.88,
+      "duration": 5.88,
+      "text": "these is is it's extremely extreme"
+    },
+    {
+      "start": 696.42,
+      "duration": 4.56,
+      "text": "there's just no question to you that you"
+    },
+    {
+      "start": 698.76,
+      "duration": 4.62,
+      "text": "should be looking for probate records"
+    },
+    {
+      "start": 700.98,
+      "duration": 4.74,
+      "text": "and as I mentioned if you didn't have"
+    },
+    {
+      "start": 703.38,
+      "duration": 5.34,
+      "text": "any property you didn't have a probate"
+    },
+    {
+      "start": 705.72,
+      "duration": 6.6,
+      "text": "so if your ancestors turn out to be as"
+    },
+    {
+      "start": 708.72,
+      "duration": 6.119,
+      "text": "poor as most of my ancestors looking for"
+    },
+    {
+      "start": 712.32,
+      "duration": 4.98,
+      "text": "probates if you find out that they live"
+    },
+    {
+      "start": 714.839,
+      "duration": 5.461,
+      "text": "in the poor house or whatever they have"
+    },
+    {
+      "start": 717.3,
+      "duration": 6.0,
+      "text": "no property now another factor of course"
+    },
+    {
+      "start": 720.3,
+      "duration": 6.18,
+      "text": "is that the probates were necessary in"
+    },
+    {
+      "start": 723.3,
+      "duration": 5.94,
+      "text": "order that people who owe debts"
+    },
+    {
+      "start": 726.48,
+      "duration": 5.64,
+      "text": "didn't get a free ride just because they"
+    },
+    {
+      "start": 729.24,
+      "duration": 5.219,
+      "text": "died their estate meaning the prop all"
+    },
+    {
+      "start": 732.12,
+      "duration": 5.04,
+      "text": "the property they owned was liable for"
+    },
+    {
+      "start": 734.459,
+      "duration": 5.341,
+      "text": "the payment of all those debts and so"
+    },
+    {
+      "start": 737.16,
+      "duration": 5.82,
+      "text": "part of the process of a probate was to"
+    },
+    {
+      "start": 739.8,
+      "duration": 5.159,
+      "text": "identify if there are any claims against"
+    },
+    {
+      "start": 742.98,
+      "duration": 5.22,
+      "text": "the estate"
+    },
+    {
+      "start": 744.959,
+      "duration": 5.221,
+      "text": "and I could go on for hours uh with"
+    },
+    {
+      "start": 748.2,
+      "duration": 5.46,
+      "text": "people talking about what's happened"
+    },
+    {
+      "start": 750.18,
+      "duration": 4.98,
+      "text": "recently meaning since around 1945 here"
+    },
+    {
+      "start": 753.66,
+      "duration": 5.22,
+      "text": "in the United States"
+    },
+    {
+      "start": 755.16,
+      "duration": 7.26,
+      "text": "where they took an Old English theory of"
+    },
+    {
+      "start": 758.88,
+      "duration": 6.6,
+      "text": "property called a trust and turned it"
+    },
+    {
+      "start": 762.42,
+      "duration": 7.5,
+      "text": "into a what they called a tax planning"
+    },
+    {
+      "start": 765.48,
+      "duration": 7.22,
+      "text": "or probate avoidance method and so what"
+    },
+    {
+      "start": 769.92,
+      "duration": 6.24,
+      "text": "people have today are trusts"
+    },
+    {
+      "start": 772.7,
+      "duration": 5.379,
+      "text": "my experience from a litigating"
+    },
+    {
+      "start": 776.16,
+      "duration": 4.859,
+      "text": "standpoint having been a trial attorney"
+    },
+    {
+      "start": 778.079,
+      "duration": 5.641,
+      "text": "is that we had just as much problem with"
+    },
+    {
+      "start": 781.019,
+      "duration": 6.841,
+      "text": "trust as we had with a probate"
+    },
+    {
+      "start": 783.72,
+      "duration": 6.66,
+      "text": "and so it's not necessarily what you"
+    },
+    {
+      "start": 787.86,
+      "duration": 4.62,
+      "text": "might think in the ways of how this"
+    },
+    {
+      "start": 790.38,
+      "duration": 5.18,
+      "text": "works and so I'm trying to but I'm"
+    },
+    {
+      "start": 792.48,
+      "duration": 7.26,
+      "text": "trying to do here today is to to"
+    },
+    {
+      "start": 795.56,
+      "duration": 7.959,
+      "text": "establish a concept here that this is a"
+    },
+    {
+      "start": 799.74,
+      "duration": 6.38,
+      "text": "very positive thing for genealogists you"
+    },
+    {
+      "start": 803.519,
+      "duration": 5.461,
+      "text": "should be happy that there was a probate"
+    },
+    {
+      "start": 806.12,
+      "duration": 5.459,
+      "text": "the People The Heirs may not have been"
+    },
+    {
+      "start": 808.98,
+      "duration": 6.38,
+      "text": "happy but you need to be happy because"
+    },
+    {
+      "start": 811.579,
+      "duration": 6.76,
+      "text": "that always creates records that are"
+    },
+    {
+      "start": 815.36,
+      "duration": 5.74,
+      "text": "sometimes useful sometimes not as useful"
+    },
+    {
+      "start": 818.339,
+      "duration": 4.861,
+      "text": "as you would like but a lot of times at"
+    },
+    {
+      "start": 821.1,
+      "duration": 5.64,
+      "text": "least they established some"
+    },
+    {
+      "start": 823.2,
+      "duration": 5.639,
+      "text": "relationships and and of the time of the"
+    },
+    {
+      "start": 826.74,
+      "duration": 4.38,
+      "text": "death of the deceased"
+    },
+    {
+      "start": 828.839,
+      "duration": 5.041,
+      "text": "one of the questions I'm always asking"
+    },
+    {
+      "start": 831.12,
+      "duration": 4.8,
+      "text": "people is did this person own any"
+    },
+    {
+      "start": 833.88,
+      "duration": 4.56,
+      "text": "property that you're looking for did he"
+    },
+    {
+      "start": 835.92,
+      "duration": 4.44,
+      "text": "own a farm did he or she own a farm or"
+    },
+    {
+      "start": 838.44,
+      "duration": 4.56,
+      "text": "did it did they whatever"
+    },
+    {
+      "start": 840.36,
+      "duration": 4.62,
+      "text": "and if the answer is yes then we say"
+    },
+    {
+      "start": 843.0,
+      "duration": 3.48,
+      "text": "well we're going to be looking for deeds"
+    },
+    {
+      "start": 844.98,
+      "duration": 3.72,
+      "text": "and we're going to be looking for"
+    },
+    {
+      "start": 846.48,
+      "duration": 5.7,
+      "text": "probate"
+    },
+    {
+      "start": 848.7,
+      "duration": 5.22,
+      "text": "and I would say from experience that"
+    },
+    {
+      "start": 852.18,
+      "duration": 4.14,
+      "text": "most of the countries the world have"
+    },
+    {
+      "start": 853.92,
+      "duration": 4.02,
+      "text": "some type of probate procedure now the"
+    },
+    {
+      "start": 856.32,
+      "duration": 4.56,
+      "text": "only people that would not have a"
+    },
+    {
+      "start": 857.94,
+      "duration": 5.519,
+      "text": "probate procedure would be countries"
+    },
+    {
+      "start": 860.88,
+      "duration": 5.88,
+      "text": "that did not recognize personal property"
+    },
+    {
+      "start": 863.459,
+      "duration": 5.94,
+      "text": "or did not recognize the ability of"
+    },
+    {
+      "start": 866.76,
+      "duration": 3.96,
+      "text": "individuals to transfer property upon"
+    },
+    {
+      "start": 869.399,
+      "duration": 3.781,
+      "text": "their death"
+    },
+    {
+      "start": 870.72,
+      "duration": 4.799,
+      "text": "so if that did not happen in whatever"
+    },
+    {
+      "start": 873.18,
+      "duration": 5.58,
+      "text": "country then there's probably no probate"
+    },
+    {
+      "start": 875.519,
+      "duration": 6.901,
+      "text": "files but if it did happen then there"
+    },
+    {
+      "start": 878.76,
+      "duration": 5.939,
+      "text": "are probate files of some kind and as I"
+    },
+    {
+      "start": 882.42,
+      "duration": 5.46,
+      "text": "mentioned they go back into Antiquity in"
+    },
+    {
+      "start": 884.699,
+      "duration": 7.741,
+      "text": "fact some of the earliest records in"
+    },
+    {
+      "start": 887.88,
+      "duration": 6.72,
+      "text": "Israel in Ju in Hebrew and in Aramaic"
+    },
+    {
+      "start": 892.44,
+      "duration": 3.78,
+      "text": "and the other languages are wills and"
+    },
+    {
+      "start": 894.6,
+      "duration": 4.739,
+      "text": "probate files"
+    },
+    {
+      "start": 896.22,
+      "duration": 7.14,
+      "text": "so we really have something we can use"
+    },
+    {
+      "start": 899.339,
+      "duration": 6.24,
+      "text": "as a bridge in a lot of cases"
+    },
+    {
+      "start": 903.36,
+      "duration": 4.8,
+      "text": "the important thing to understand is"
+    },
+    {
+      "start": 905.579,
+      "duration": 4.681,
+      "text": "because of the changes in the law in"
+    },
+    {
+      "start": 908.16,
+      "duration": 4.56,
+      "text": "most of the countries and in the larger"
+    },
+    {
+      "start": 910.26,
+      "duration": 6.48,
+      "text": "countries they've just learned that it's"
+    },
+    {
+      "start": 912.72,
+      "duration": 6.66,
+      "text": "beyond the capabilities and it ties up a"
+    },
+    {
+      "start": 916.74,
+      "duration": 5.399,
+      "text": "great amount of court time and Court"
+    },
+    {
+      "start": 919.38,
+      "duration": 5.34,
+      "text": "effort to determine the value and if"
+    },
+    {
+      "start": 922.139,
+      "duration": 5.0,
+      "text": "you're in there determining the value of"
+    },
+    {
+      "start": 924.72,
+      "duration": 5.359,
+      "text": "a pillowcase or you're in their"
+    },
+    {
+      "start": 927.139,
+      "duration": 6.221,
+      "text": "determining the value of an old chair"
+    },
+    {
+      "start": 930.079,
+      "duration": 6.76,
+      "text": "that kind of thing is basically what"
+    },
+    {
+      "start": 933.36,
+      "duration": 5.219,
+      "text": "motivates the governments to say okay"
+    },
+    {
+      "start": 936.839,
+      "duration": 3.541,
+      "text": "all we're really interested in is if"
+    },
+    {
+      "start": 938.579,
+      "duration": 4.38,
+      "text": "you've got enough money and so we're"
+    },
+    {
+      "start": 940.38,
+      "duration": 4.38,
+      "text": "going to put that artificially high so"
+    },
+    {
+      "start": 942.959,
+      "duration": 3.481,
+      "text": "that we don't have to deal with all this"
+    },
+    {
+      "start": 944.76,
+      "duration": 4.199,
+      "text": "little stuff"
+    },
+    {
+      "start": 946.44,
+      "duration": 5.42,
+      "text": "and so when when people worry about"
+    },
+    {
+      "start": 948.959,
+      "duration": 5.761,
+      "text": "having a probate they don't realize that"
+    },
+    {
+      "start": 951.86,
+      "duration": 5.32,
+      "text": "commonly in the present age even if you"
+    },
+    {
+      "start": 954.72,
+      "duration": 4.14,
+      "text": "do nothing with your estate it's very"
+    },
+    {
+      "start": 957.18,
+      "duration": 3.959,
+      "text": "unlikely you're going to have to have a"
+    },
+    {
+      "start": 958.86,
+      "duration": 5.64,
+      "text": "probate unless there's a disagreement"
+    },
+    {
+      "start": 961.139,
+      "duration": 5.161,
+      "text": "unless there's debts unless somebody is"
+    },
+    {
+      "start": 964.5,
+      "duration": 4.44,
+      "text": "trying to collect money against the"
+    },
+    {
+      "start": 966.3,
+      "duration": 4.38,
+      "text": "deceased all of those factors May create"
+    },
+    {
+      "start": 968.94,
+      "duration": 4.74,
+      "text": "a probate"
+    },
+    {
+      "start": 970.68,
+      "duration": 6.44,
+      "text": "which by the way are probably not going"
+    },
+    {
+      "start": 973.68,
+      "duration": 3.44,
+      "text": "to be avoided by a trust"
+    },
+    {
+      "start": 977.279,
+      "duration": 5.401,
+      "text": "a probate file contains all the"
+    },
+    {
+      "start": 979.74,
+      "duration": 5.94,
+      "text": "documents filed with the court and so"
+    },
+    {
+      "start": 982.68,
+      "duration": 5.04,
+      "text": "there's a way to open a probate by"
+    },
+    {
+      "start": 985.68,
+      "duration": 4.98,
+      "text": "filing a copy of a will with the court"
+    },
+    {
+      "start": 987.72,
+      "duration": 5.52,
+      "text": "and then each time there's a whole set"
+    },
+    {
+      "start": 990.66,
+      "duration": 5.4,
+      "text": "of procedures in the court about what"
+    },
+    {
+      "start": 993.24,
+      "duration": 5.159,
+      "text": "happens after that and there are records"
+    },
+    {
+      "start": 996.06,
+      "duration": 5.82,
+      "text": "for each one of those procedures so you"
+    },
+    {
+      "start": 998.399,
+      "duration": 6.721,
+      "text": "are you are amassing a significant"
+    },
+    {
+      "start": 1001.88,
+      "duration": 5.34,
+      "text": "amount of documents which by the way is"
+    },
+    {
+      "start": 1005.12,
+      "duration": 5.159,
+      "text": "directly related to the amount of"
+    },
+    {
+      "start": 1007.22,
+      "duration": 5.88,
+      "text": "property in the estate now I'm not going"
+    },
+    {
+      "start": 1010.279,
+      "duration": 4.461,
+      "text": "to talk about anything past 1900 here in"
+    },
+    {
+      "start": 1013.1,
+      "duration": 4.5,
+      "text": "the United States about"
+    },
+    {
+      "start": 1014.74,
+      "duration": 4.599,
+      "text": "1970 actually is when they had passed"
+    },
+    {
+      "start": 1017.6,
+      "duration": 3.239,
+      "text": "begin passing what's called uniform"
+    },
+    {
+      "start": 1019.339,
+      "duration": 5.041,
+      "text": "probate code"
+    },
+    {
+      "start": 1020.839,
+      "duration": 4.74,
+      "text": "and that kind of revised all of this"
+    },
+    {
+      "start": 1024.38,
+      "duration": 3.179,
+      "text": "stuff but"
+    },
+    {
+      "start": 1025.579,
+      "duration": 4.98,
+      "text": "back in history what we're dealing with"
+    },
+    {
+      "start": 1027.559,
+      "duration": 5.4,
+      "text": "as genealogists these records are"
+    },
+    {
+      "start": 1030.559,
+      "duration": 4.441,
+      "text": "extremely valuable as I will say over"
+    },
+    {
+      "start": 1032.959,
+      "duration": 5.46,
+      "text": "and over again"
+    },
+    {
+      "start": 1035.0,
+      "duration": 6.66,
+      "text": "so a probate case File can have hundreds"
+    },
+    {
+      "start": 1038.419,
+      "duration": 6.841,
+      "text": "of pages of documents and as I mentioned"
+    },
+    {
+      "start": 1041.66,
+      "duration": 5.399,
+      "text": "lasts more than 30 years and I know that"
+    },
+    {
+      "start": 1045.26,
+      "duration": 4.38,
+      "text": "they can last more than 30 years because"
+    },
+    {
+      "start": 1047.059,
+      "duration": 6.721,
+      "text": "I found cases that have lasted more than"
+    },
+    {
+      "start": 1049.64,
+      "duration": 8.039,
+      "text": "30 years so it's not unusual and the"
+    },
+    {
+      "start": 1053.78,
+      "duration": 7.5,
+      "text": "time can go on forever"
+    },
+    {
+      "start": 1057.679,
+      "duration": 5.941,
+      "text": "and you cannot predict the kinds of"
+    },
+    {
+      "start": 1061.28,
+      "duration": 4.92,
+      "text": "documents that might be it might have"
+    },
+    {
+      "start": 1063.62,
+      "duration": 5.76,
+      "text": "been filed in a probate action"
+    },
+    {
+      "start": 1066.2,
+      "duration": 5.7,
+      "text": "the questions that are raised the issues"
+    },
+    {
+      "start": 1069.38,
+      "duration": 5.82,
+      "text": "that are involved in the in in the"
+    },
+    {
+      "start": 1071.9,
+      "duration": 5.76,
+      "text": "resolution of the debts and the and the"
+    },
+    {
+      "start": 1075.2,
+      "duration": 5.28,
+      "text": "disposition of the property like the"
+    },
+    {
+      "start": 1077.66,
+      "duration": 5.639,
+      "text": "real property and the personal property"
+    },
+    {
+      "start": 1080.48,
+      "duration": 6.74,
+      "text": "you know you just cannot imagine the"
+    },
+    {
+      "start": 1083.299,
+      "duration": 6.361,
+      "text": "amount of information that is going to"
+    },
+    {
+      "start": 1087.22,
+      "duration": 7.0,
+      "text": "be created here"
+    },
+    {
+      "start": 1089.66,
+      "duration": 7.2,
+      "text": "Okay so it's kind of like uh opening up"
+    },
+    {
+      "start": 1094.22,
+      "duration": 5.36,
+      "text": "sort of a new world you get into the"
+    },
+    {
+      "start": 1096.86,
+      "duration": 8.9,
+      "text": "probate records you find out information"
+    },
+    {
+      "start": 1099.58,
+      "duration": 6.18,
+      "text": "that perhaps you had no idea existed"
+    },
+    {
+      "start": 1106.039,
+      "duration": 4.921,
+      "text": "so what are the kinds of things that you"
+    },
+    {
+      "start": 1108.38,
+      "duration": 6.06,
+      "text": "might find you would find Wills Wills"
+    },
+    {
+      "start": 1110.96,
+      "duration": 6.12,
+      "text": "are documents created before death by"
+    },
+    {
+      "start": 1114.44,
+      "duration": 4.979,
+      "text": "someone basically asking that the"
+    },
+    {
+      "start": 1117.08,
+      "duration": 4.979,
+      "text": "property be distributed in a certain way"
+    },
+    {
+      "start": 1119.419,
+      "duration": 5.701,
+      "text": "to certain of their heirs"
+    },
+    {
+      "start": 1122.059,
+      "duration": 5.161,
+      "text": "the idea of a court is that they will"
+    },
+    {
+      "start": 1125.12,
+      "duration": 4.559,
+      "text": "play along with that and distribute the"
+    },
+    {
+      "start": 1127.22,
+      "duration": 5.819,
+      "text": "property unless there's some conflict or"
+    },
+    {
+      "start": 1129.679,
+      "duration": 8.341,
+      "text": "or challenge to the will that's where I"
+    },
+    {
+      "start": 1133.039,
+      "duration": 7.081,
+      "text": "came in primarily as a litigator I would"
+    },
+    {
+      "start": 1138.02,
+      "duration": 5.399,
+      "text": "be walking into court because somebody"
+    },
+    {
+      "start": 1140.12,
+      "duration": 6.66,
+      "text": "was unhappy there are bonds which means"
+    },
+    {
+      "start": 1143.419,
+      "duration": 5.341,
+      "text": "that you have to have the people who"
+    },
+    {
+      "start": 1146.78,
+      "duration": 3.48,
+      "text": "administer the estate and they have a"
+    },
+    {
+      "start": 1148.76,
+      "duration": 4.44,
+      "text": "lot of different names that we'll talk"
+    },
+    {
+      "start": 1150.26,
+      "duration": 5.1,
+      "text": "about but the people who administrative"
+    },
+    {
+      "start": 1153.2,
+      "duration": 3.839,
+      "text": "state had to post bonds so these are"
+    },
+    {
+      "start": 1155.36,
+      "duration": 4.74,
+      "text": "other people that could be relatives"
+    },
+    {
+      "start": 1157.039,
+      "duration": 7.201,
+      "text": "they could be one of the things you may"
+    },
+    {
+      "start": 1160.1,
+      "duration": 7.319,
+      "text": "find is the wife's a maiden name because"
+    },
+    {
+      "start": 1164.24,
+      "duration": 5.179,
+      "text": "the person who got the bond was one of"
+    },
+    {
+      "start": 1167.419,
+      "duration": 4.921,
+      "text": "someone in her family"
+    },
+    {
+      "start": 1169.419,
+      "duration": 6.281,
+      "text": "petitions are requests that go to the"
+    },
+    {
+      "start": 1172.34,
+      "duration": 5.219,
+      "text": "court they can be endless asking the"
+    },
+    {
+      "start": 1175.7,
+      "duration": 5.28,
+      "text": "court to do certain things sell the"
+    },
+    {
+      "start": 1177.559,
+      "duration": 6.0,
+      "text": "property dispose of the property cut"
+    },
+    {
+      "start": 1180.98,
+      "duration": 5.52,
+      "text": "someone off take you know anything that"
+    },
+    {
+      "start": 1183.559,
+      "duration": 6.48,
+      "text": "comes up in the proceeding accountings"
+    },
+    {
+      "start": 1186.5,
+      "duration": 6.78,
+      "text": "are always required which means that you"
+    },
+    {
+      "start": 1190.039,
+      "duration": 6.0,
+      "text": "have to do an inventory of the property"
+    },
+    {
+      "start": 1193.28,
+      "duration": 5.04,
+      "text": "over the years they as you go further"
+    },
+    {
+      "start": 1196.039,
+      "duration": 4.081,
+      "text": "back in time particularly in"
+    },
+    {
+      "start": 1198.32,
+      "duration": 5.099,
+      "text": "English-speaking countries"
+    },
+    {
+      "start": 1200.12,
+      "duration": 6.84,
+      "text": "the information that is required is very"
+    },
+    {
+      "start": 1203.419,
+      "duration": 6.541,
+      "text": "it becomes extremely specific and and so"
+    },
+    {
+      "start": 1206.96,
+      "duration": 6.3,
+      "text": "as I mentioned you may be looking at a"
+    },
+    {
+      "start": 1209.96,
+      "duration": 5.82,
+      "text": "list of every piece of dishware and"
+    },
+    {
+      "start": 1213.26,
+      "duration": 5.039,
+      "text": "every every item of clothing and every"
+    },
+    {
+      "start": 1215.78,
+      "duration": 4.139,
+      "text": "other thing that happened or was owned"
+    },
+    {
+      "start": 1218.299,
+      "duration": 3.801,
+      "text": "by the deceased"
+    },
+    {
+      "start": 1219.919,
+      "duration": 5.041,
+      "text": "today the accountings and the"
+    },
+    {
+      "start": 1222.1,
+      "duration": 5.98,
+      "text": "inventories putting a value on the"
+    },
+    {
+      "start": 1224.96,
+      "duration": 7.14,
+      "text": "property and then there's a sale usually"
+    },
+    {
+      "start": 1228.08,
+      "duration": 6.18,
+      "text": "a sale in the in the probate of the"
+    },
+    {
+      "start": 1232.1,
+      "duration": 4.92,
+      "text": "property in order to satisfy creditors"
+    },
+    {
+      "start": 1234.26,
+      "duration": 6.299,
+      "text": "and to distribute the proceeds of the"
+    },
+    {
+      "start": 1237.02,
+      "duration": 6.659,
+      "text": "sale to The Heirs unless the the"
+    },
+    {
+      "start": 1240.559,
+      "duration": 5.821,
+      "text": "deceased test specifically designated"
+    },
+    {
+      "start": 1243.679,
+      "duration": 5.641,
+      "text": "that an item of personal property goes"
+    },
+    {
+      "start": 1246.38,
+      "duration": 4.98,
+      "text": "to at a specific individual"
+    },
+    {
+      "start": 1249.32,
+      "duration": 3.96,
+      "text": "there are orders by the court telling"
+    },
+    {
+      "start": 1251.36,
+      "duration": 4.14,
+      "text": "people when to show up and what to do"
+    },
+    {
+      "start": 1253.28,
+      "duration": 3.36,
+      "text": "and how to get what the court wants to"
+    },
+    {
+      "start": 1255.5,
+      "duration": 3.6,
+      "text": "look at"
+    },
+    {
+      "start": 1256.64,
+      "duration": 5.34,
+      "text": "then there are decrees that just"
+    },
+    {
+      "start": 1259.1,
+      "duration": 5.22,
+      "text": "determine where the property goes at the"
+    },
+    {
+      "start": 1261.98,
+      "duration": 4.02,
+      "text": "end of the probate and so somewhere down"
+    },
+    {
+      "start": 1264.32,
+      "duration": 4.14,
+      "text": "the line there's going to be a decree"
+    },
+    {
+      "start": 1266.0,
+      "duration": 5.88,
+      "text": "the simple way to look at this is let's"
+    },
+    {
+      "start": 1268.46,
+      "duration": 7.079,
+      "text": "suppose that the person owned a farm and"
+    },
+    {
+      "start": 1271.88,
+      "duration": 6.78,
+      "text": "that farm was valued at X dollars let's"
+    },
+    {
+      "start": 1275.539,
+      "duration": 6.0,
+      "text": "say a thousand dollars well then the"
+    },
+    {
+      "start": 1278.66,
+      "duration": 5.46,
+      "text": "court would impose a bond to protect the"
+    },
+    {
+      "start": 1281.539,
+      "duration": 5.101,
+      "text": "value of that property then there would"
+    },
+    {
+      "start": 1284.12,
+      "duration": 4.14,
+      "text": "be petitions back and forth about the"
+    },
+    {
+      "start": 1286.64,
+      "duration": 3.06,
+      "text": "property or the sale of the property"
+    },
+    {
+      "start": 1288.26,
+      "duration": 3.539,
+      "text": "they would they would have to get"
+    },
+    {
+      "start": 1289.7,
+      "duration": 3.06,
+      "text": "someone to give evaluation on the"
+    },
+    {
+      "start": 1291.799,
+      "duration": 4.321,
+      "text": "property"
+    },
+    {
+      "start": 1292.76,
+      "duration": 5.94,
+      "text": "and then there would be a legal"
+    },
+    {
+      "start": 1296.12,
+      "duration": 4.5,
+      "text": "description created the Deeds would be"
+    },
+    {
+      "start": 1298.7,
+      "duration": 4.14,
+      "text": "looked at to make sure the property was"
+    },
+    {
+      "start": 1300.62,
+      "duration": 4.559,
+      "text": "actually owned by the deceased"
+    },
+    {
+      "start": 1302.84,
+      "duration": 6.18,
+      "text": "and then just as if it were going to be"
+    },
+    {
+      "start": 1305.179,
+      "duration": 6.541,
+      "text": "sold and then there were orders ordering"
+    },
+    {
+      "start": 1309.02,
+      "duration": 5.94,
+      "text": "the property to be put up for Mark on up"
+    },
+    {
+      "start": 1311.72,
+      "duration": 5.22,
+      "text": "for sale and usually then at an auction"
+    },
+    {
+      "start": 1314.96,
+      "duration": 5.459,
+      "text": "they would sell the property and there"
+    },
+    {
+      "start": 1316.94,
+      "duration": 5.94,
+      "text": "would be a final decree having it the"
+    },
+    {
+      "start": 1320.419,
+      "duration": 4.38,
+      "text": "administrator of the estate to sign a"
+    },
+    {
+      "start": 1322.88,
+      "duration": 3.6,
+      "text": "deed and to turn it over out of the"
+    },
+    {
+      "start": 1324.799,
+      "duration": 4.201,
+      "text": "property and they would have what was"
+    },
+    {
+      "start": 1326.48,
+      "duration": 5.1,
+      "text": "called a deed of distribution which"
+    },
+    {
+      "start": 1329.0,
+      "duration": 5.22,
+      "text": "would then take the property the farm"
+    },
+    {
+      "start": 1331.58,
+      "duration": 7.04,
+      "text": "out of the estate and then The Heirs"
+    },
+    {
+      "start": 1334.22,
+      "duration": 8.579,
+      "text": "would divide up the proceeds"
+    },
+    {
+      "start": 1338.62,
+      "duration": 6.82,
+      "text": "so there's a lot of value and here's"
+    },
+    {
+      "start": 1342.799,
+      "duration": 4.981,
+      "text": "some of the values of a probate file for"
+    },
+    {
+      "start": 1345.44,
+      "duration": 5.76,
+      "text": "research first of all it helps to"
+    },
+    {
+      "start": 1347.78,
+      "duration": 6.779,
+      "text": "identify family members the wills and"
+    },
+    {
+      "start": 1351.2,
+      "duration": 5.04,
+      "text": "all the probate proceedings often tell"
+    },
+    {
+      "start": 1354.559,
+      "duration": 5.521,
+      "text": "who the people are and how they're"
+    },
+    {
+      "start": 1356.24,
+      "duration": 6.179,
+      "text": "related and may tell the grandchildren's"
+    },
+    {
+      "start": 1360.08,
+      "duration": 4.8,
+      "text": "names it may have all sorts of"
+    },
+    {
+      "start": 1362.419,
+      "duration": 5.161,
+      "text": "information in the will"
+    },
+    {
+      "start": 1364.88,
+      "duration": 5.94,
+      "text": "and yes if you go back in a far enough"
+    },
+    {
+      "start": 1367.58,
+      "duration": 5.88,
+      "text": "in time you'll have a problem like with"
+    },
+    {
+      "start": 1370.82,
+      "duration": 4.8,
+      "text": "this screenshot finding out that all"
+    },
+    {
+      "start": 1373.46,
+      "duration": 4.02,
+      "text": "these records are in handwriting and"
+    },
+    {
+      "start": 1375.62,
+      "duration": 3.36,
+      "text": "you're going to have to learn how to"
+    },
+    {
+      "start": 1377.48,
+      "duration": 3.62,
+      "text": "read the handwriting"
+    },
+    {
+      "start": 1378.98,
+      "duration": 4.199,
+      "text": "the main issue of course for"
+    },
+    {
+      "start": 1381.1,
+      "duration": 5.62,
+      "text": "genealogists who don't happen to be"
+    },
+    {
+      "start": 1383.179,
+      "duration": 5.101,
+      "text": "attorneys is that and even if you're an"
+    },
+    {
+      "start": 1386.72,
+      "duration": 4.74,
+      "text": "attorney and you haven't ever done"
+    },
+    {
+      "start": 1388.28,
+      "duration": 4.92,
+      "text": "probates the same problem and that is"
+    },
+    {
+      "start": 1391.46,
+      "duration": 3.66,
+      "text": "that the language may be totally"
+    },
+    {
+      "start": 1393.2,
+      "duration": 4.56,
+      "text": "unfamiliar and you may have to work"
+    },
+    {
+      "start": 1395.12,
+      "duration": 5.7,
+      "text": "through and find what all these things"
+    },
+    {
+      "start": 1397.76,
+      "duration": 6.299,
+      "text": "mean it may give the wife's maiden name"
+    },
+    {
+      "start": 1400.82,
+      "duration": 5.82,
+      "text": "which is a which is a bonus establish"
+    },
+    {
+      "start": 1404.059,
+      "duration": 5.941,
+      "text": "the relative's economic status when you"
+    },
+    {
+      "start": 1406.64,
+      "duration": 5.76,
+      "text": "see the the inventory of the property"
+    },
+    {
+      "start": 1410.0,
+      "duration": 4.26,
+      "text": "and the appraisement meaning the value"
+    },
+    {
+      "start": 1412.4,
+      "duration": 4.44,
+      "text": "of the property then you begin to"
+    },
+    {
+      "start": 1414.26,
+      "duration": 3.779,
+      "text": "immediately see what happened with the"
+    },
+    {
+      "start": 1416.84,
+      "duration": 4.199,
+      "text": "property"
+    },
+    {
+      "start": 1418.039,
+      "duration": 5.341,
+      "text": "one example which came up during the"
+    },
+    {
+      "start": 1421.039,
+      "duration": 5.041,
+      "text": "time that my wife and I were digitizing"
+    },
+    {
+      "start": 1423.38,
+      "duration": 5.64,
+      "text": "probate records in Maryland was of"
+    },
+    {
+      "start": 1426.08,
+      "duration": 6.42,
+      "text": "course Maryland was a slave state and"
+    },
+    {
+      "start": 1429.02,
+      "duration": 6.96,
+      "text": "the enslaved people were listed as part"
+    },
+    {
+      "start": 1432.5,
+      "duration": 6.539,
+      "text": "of the property of the estate"
+    },
+    {
+      "start": 1435.98,
+      "duration": 6.679,
+      "text": "and so when people say that there aren't"
+    },
+    {
+      "start": 1439.039,
+      "duration": 7.861,
+      "text": "any records for the African Americans"
+    },
+    {
+      "start": 1442.659,
+      "duration": 7.121,
+      "text": "back behind 1860 they simply do not know"
+    },
+    {
+      "start": 1446.9,
+      "duration": 6.3,
+      "text": "that there are records which primarily"
+    },
+    {
+      "start": 1449.78,
+      "duration": 5.48,
+      "text": "end up being probate records"
+    },
+    {
+      "start": 1453.2,
+      "duration": 4.74,
+      "text": "and it may reveal unknown family"
+    },
+    {
+      "start": 1455.26,
+      "duration": 4.539,
+      "text": "relationships you may find out who is"
+    },
+    {
+      "start": 1457.94,
+      "duration": 5.46,
+      "text": "related to who and that may be a"
+    },
+    {
+      "start": 1459.799,
+      "duration": 6.721,
+      "text": "surprise and also may be the only record"
+    },
+    {
+      "start": 1463.4,
+      "duration": 5.7,
+      "text": "of the ancestors death It's Not Unusual"
+    },
+    {
+      "start": 1466.52,
+      "duration": 6.539,
+      "text": "that you can't find any other evidence"
+    },
+    {
+      "start": 1469.1,
+      "duration": 6.12,
+      "text": "of the dis of the ancestors death"
+    },
+    {
+      "start": 1473.059,
+      "duration": 4.561,
+      "text": "you might because you found a probate"
+    },
+    {
+      "start": 1475.22,
+      "duration": 5.22,
+      "text": "record then be able to find a cemetery"
+    },
+    {
+      "start": 1477.62,
+      "duration": 5.34,
+      "text": "record or a cemetery marker"
+    },
+    {
+      "start": 1480.44,
+      "duration": 5.099,
+      "text": "with some information"
+    },
+    {
+      "start": 1482.96,
+      "duration": 5.28,
+      "text": "but sometimes it's easier to find a"
+    },
+    {
+      "start": 1485.539,
+      "duration": 4.921,
+      "text": "cemetery marker and then begin looking"
+    },
+    {
+      "start": 1488.24,
+      "duration": 5.179,
+      "text": "for a probate record where the cemetery"
+    },
+    {
+      "start": 1490.46,
+      "duration": 2.959,
+      "text": "marker is located"
+    },
+    {
+      "start": 1494.179,
+      "duration": 5.521,
+      "text": "and in the United States"
+    },
+    {
+      "start": 1496.659,
+      "duration": 6.101,
+      "text": "the probate records originate are"
+    },
+    {
+      "start": 1499.7,
+      "duration": 5.78,
+      "text": "maintained at the county level so all"
+    },
+    {
+      "start": 1502.76,
+      "duration": 5.159,
+      "text": "the counties across the country have"
+    },
+    {
+      "start": 1505.48,
+      "duration": 5.86,
+      "text": "procedures for probates"
+    },
+    {
+      "start": 1507.919,
+      "duration": 5.701,
+      "text": "and have a court that's designated as"
+    },
+    {
+      "start": 1511.34,
+      "duration": 5.1,
+      "text": "the probate court and they have"
+    },
+    {
+      "start": 1513.62,
+      "duration": 5.88,
+      "text": "different names across the country"
+    },
+    {
+      "start": 1516.44,
+      "duration": 5.58,
+      "text": "and then those records are if they're"
+    },
+    {
+      "start": 1519.5,
+      "duration": 4.86,
+      "text": "available are usually maintained on the"
+    },
+    {
+      "start": 1522.02,
+      "duration": 4.44,
+      "text": "county basis now if the records have"
+    },
+    {
+      "start": 1524.36,
+      "duration": 4.319,
+      "text": "been in the county for a long time or if"
+    },
+    {
+      "start": 1526.46,
+      "duration": 4.68,
+      "text": "the county split then records have moved"
+    },
+    {
+      "start": 1528.679,
+      "duration": 5.041,
+      "text": "then you have the same problems you have"
+    },
+    {
+      "start": 1531.14,
+      "duration": 5.159,
+      "text": "with all records that are kept at a"
+    },
+    {
+      "start": 1533.72,
+      "duration": 4.98,
+      "text": "lower level of jurisdictional level and"
+    },
+    {
+      "start": 1536.299,
+      "duration": 4.5,
+      "text": "that is that they may not be readily"
+    },
+    {
+      "start": 1538.7,
+      "duration": 5.28,
+      "text": "available because they've moved to some"
+    },
+    {
+      "start": 1540.799,
+      "duration": 6.061,
+      "text": "other County or the original County or"
+    },
+    {
+      "start": 1543.98,
+      "duration": 5.88,
+      "text": "or in in different situations and that"
+    },
+    {
+      "start": 1546.86,
+      "duration": 5.04,
+      "text": "may take some historical research"
+    },
+    {
+      "start": 1549.86,
+      "duration": 3.6,
+      "text": "and I might mention that there are three"
+    },
+    {
+      "start": 1551.9,
+      "duration": 3.6,
+      "text": "thousand one hundred and forty three"
+    },
+    {
+      "start": 1553.46,
+      "duration": 4.199,
+      "text": "counties and county equivalents in the"
+    },
+    {
+      "start": 1555.5,
+      "duration": 6.26,
+      "text": "United States so we have that many"
+    },
+    {
+      "start": 1557.659,
+      "duration": 4.101,
+      "text": "different ways of handling probates"
+    },
+    {
+      "start": 1561.98,
+      "duration": 6.059,
+      "text": "and I mentioned uh just a few minutes"
+    },
+    {
+      "start": 1564.679,
+      "duration": 5.821,
+      "text": "ago about the beginning of the 1970s we"
+    },
+    {
+      "start": 1568.039,
+      "duration": 5.461,
+      "text": "had a movement to have uniform probate"
+    },
+    {
+      "start": 1570.5,
+      "duration": 6.72,
+      "text": "laws well they weren't that popular and"
+    },
+    {
+      "start": 1573.5,
+      "duration": 6.059,
+      "text": "there's only a few not a large number of"
+    },
+    {
+      "start": 1577.22,
+      "duration": 4.38,
+      "text": "percentage but only a smaller percentage"
+    },
+    {
+      "start": 1579.559,
+      "duration": 4.86,
+      "text": "of the states that have actually adopted"
+    },
+    {
+      "start": 1581.6,
+      "duration": 5.76,
+      "text": "that sometimes they adopt parts of it"
+    },
+    {
+      "start": 1584.419,
+      "duration": 4.62,
+      "text": "and you still can count on the fact that"
+    },
+    {
+      "start": 1587.36,
+      "duration": 4.98,
+      "text": "the probate law is going to be different"
+    },
+    {
+      "start": 1589.039,
+      "duration": 7.221,
+      "text": "in every state and and the procedures"
+    },
+    {
+      "start": 1592.34,
+      "duration": 3.92,
+      "text": "may be different in the counties"
+    },
+    {
+      "start": 1596.779,
+      "duration": 5.221,
+      "text": "and the important thing to understand is"
+    },
+    {
+      "start": 1599.059,
+      "duration": 4.98,
+      "text": "that probate records are kept with all"
+    },
+    {
+      "start": 1602.0,
+      "duration": 7.2,
+      "text": "the other County records"
+    },
+    {
+      "start": 1604.039,
+      "duration": 7.201,
+      "text": "and it will depend on what you uh"
+    },
+    {
+      "start": 1609.2,
+      "duration": 4.02,
+      "text": "particularly are looking for you may"
+    },
+    {
+      "start": 1611.24,
+      "duration": 3.78,
+      "text": "find that you're looking through a lot"
+    },
+    {
+      "start": 1613.22,
+      "duration": 5.699,
+      "text": "of Records in a County"
+    },
+    {
+      "start": 1615.02,
+      "duration": 6.3,
+      "text": "the county records and finding probate"
+    },
+    {
+      "start": 1618.919,
+      "duration": 5.281,
+      "text": "records sort of scattered in so there's"
+    },
+    {
+      "start": 1621.32,
+      "duration": 5.7,
+      "text": "what happens in in different counties is"
+    },
+    {
+      "start": 1624.2,
+      "duration": 5.52,
+      "text": "that some counties keep all their"
+    },
+    {
+      "start": 1627.02,
+      "duration": 4.8,
+      "text": "probate records in one file so the"
+    },
+    {
+      "start": 1629.72,
+      "duration": 3.839,
+      "text": "probate started and everything that"
+    },
+    {
+      "start": 1631.82,
+      "duration": 3.54,
+      "text": "happens with that particular probate"
+    },
+    {
+      "start": 1633.559,
+      "duration": 4.681,
+      "text": "goes into one file"
+    },
+    {
+      "start": 1635.36,
+      "duration": 4.86,
+      "text": "and some did not do that they just took"
+    },
+    {
+      "start": 1638.24,
+      "duration": 4.08,
+      "text": "the probate records and put them in the"
+    },
+    {
+      "start": 1640.22,
+      "duration": 4.98,
+      "text": "in what's called the docket into the"
+    },
+    {
+      "start": 1642.32,
+      "duration": 4.92,
+      "text": "files of the records that are in the"
+    },
+    {
+      "start": 1645.2,
+      "duration": 3.24,
+      "text": "court in the chronological order that"
+    },
+    {
+      "start": 1647.24,
+      "duration": 2.939,
+      "text": "they came in"
+    },
+    {
+      "start": 1648.44,
+      "duration": 4.619,
+      "text": "so you may have to search through a lot"
+    },
+    {
+      "start": 1650.179,
+      "duration": 5.461,
+      "text": "of records and depending on how the"
+    },
+    {
+      "start": 1653.059,
+      "duration": 6.061,
+      "text": "records have been segregated out"
+    },
+    {
+      "start": 1655.64,
+      "duration": 7.5,
+      "text": "and you'll see for instance from this"
+    },
+    {
+      "start": 1659.12,
+      "duration": 7.86,
+      "text": "slide and the the screenshot here for"
+    },
+    {
+      "start": 1663.14,
+      "duration": 6.48,
+      "text": "Grayson County Texas that to search the"
+    },
+    {
+      "start": 1666.98,
+      "duration": 5.699,
+      "text": "probate records they begin in 1983 which"
+    },
+    {
+      "start": 1669.62,
+      "duration": 5.539,
+      "text": "may not help you a whole lot and request"
+    },
+    {
+      "start": 1672.679,
+      "duration": 5.521,
+      "text": "form for probate records go back to"
+    },
+    {
+      "start": 1675.159,
+      "duration": 5.861,
+      "text": "1846. the the question there would be"
+    },
+    {
+      "start": 1678.2,
+      "duration": 4.979,
+      "text": "when was this County created and are"
+    },
+    {
+      "start": 1681.02,
+      "duration": 5.519,
+      "text": "those perhaps the oldest records that"
+    },
+    {
+      "start": 1683.179,
+      "duration": 5.88,
+      "text": "exist in that particular County"
+    },
+    {
+      "start": 1686.539,
+      "duration": 4.62,
+      "text": "so these are the that's a kind of a blow"
+    },
+    {
+      "start": 1689.059,
+      "duration": 5.341,
+      "text": "up of that but I was looking at just a"
+    },
+    {
+      "start": 1691.159,
+      "duration": 5.221,
+      "text": "second ago so you can see that this will"
+    },
+    {
+      "start": 1694.4,
+      "duration": 4.74,
+      "text": "tell you rather quickly if those records"
+    },
+    {
+      "start": 1696.38,
+      "duration": 5.039,
+      "text": "are even had even been created in this"
+    },
+    {
+      "start": 1699.14,
+      "duration": 5.46,
+      "text": "particular County it may have been part"
+    },
+    {
+      "start": 1701.419,
+      "duration": 5.161,
+      "text": "of another County before 1846 and that's"
+    },
+    {
+      "start": 1704.6,
+      "duration": 3.14,
+      "text": "something else you should know about"
+    },
+    {
+      "start": 1706.58,
+      "duration": 4.62,
+      "text": "okay"
+    },
+    {
+      "start": 1707.74,
+      "duration": 5.74,
+      "text": "and I'm going to have to emphasize this"
+    },
+    {
+      "start": 1711.2,
+      "duration": 4.079,
+      "text": "that probate laws differ from state to"
+    },
+    {
+      "start": 1713.48,
+      "duration": 3.96,
+      "text": "state so it's important that you"
+    },
+    {
+      "start": 1715.279,
+      "duration": 4.921,
+      "text": "identify the place where the probate"
+    },
+    {
+      "start": 1717.44,
+      "duration": 4.56,
+      "text": "records are archived meaning where are"
+    },
+    {
+      "start": 1720.2,
+      "duration": 4.02,
+      "text": "they kept"
+    },
+    {
+      "start": 1722.0,
+      "duration": 4.2,
+      "text": "they may even be in estate archives"
+    },
+    {
+      "start": 1724.22,
+      "duration": 3.9,
+      "text": "that's why we were looking at probate"
+    },
+    {
+      "start": 1726.2,
+      "duration": 4.44,
+      "text": "records at the Maryland state archives"
+    },
+    {
+      "start": 1728.12,
+      "duration": 4.74,
+      "text": "because the older probate records had"
+    },
+    {
+      "start": 1730.64,
+      "duration": 4.26,
+      "text": "all been transferred to the state"
+    },
+    {
+      "start": 1732.86,
+      "duration": 3.78,
+      "text": "archives and so they were all sitting in"
+    },
+    {
+      "start": 1734.9,
+      "duration": 5.04,
+      "text": "Annapolis Maryland"
+    },
+    {
+      "start": 1736.64,
+      "duration": 5.34,
+      "text": "but not all but the bulk of the records"
+    },
+    {
+      "start": 1739.94,
+      "duration": 3.18,
+      "text": "not the current records that were being"
+    },
+    {
+      "start": 1741.98,
+      "duration": 5.1,
+      "text": "probated"
+    },
+    {
+      "start": 1743.12,
+      "duration": 7.08,
+      "text": "but here what we have are sort of a a"
+    },
+    {
+      "start": 1747.08,
+      "duration": 5.28,
+      "text": "searching from state to state"
+    },
+    {
+      "start": 1750.2,
+      "duration": 4.2,
+      "text": "now all the states and all the counties"
+    },
+    {
+      "start": 1752.36,
+      "duration": 4.98,
+      "text": "that I'm aware of in the United States"
+    },
+    {
+      "start": 1754.4,
+      "duration": 5.159,
+      "text": "today are online and it's pretty simple"
+    },
+    {
+      "start": 1757.34,
+      "duration": 4.14,
+      "text": "to determine how many counties and the"
+    },
+    {
+      "start": 1759.559,
+      "duration": 4.261,
+      "text": "names of the counties of every state in"
+    },
+    {
+      "start": 1761.48,
+      "duration": 5.04,
+      "text": "the United States and once you have"
+    },
+    {
+      "start": 1763.82,
+      "duration": 7.32,
+      "text": "identified to some extent this whole"
+    },
+    {
+      "start": 1766.52,
+      "duration": 7.22,
+      "text": "process is is initiated by the"
+    },
+    {
+      "start": 1771.14,
+      "duration": 5.399,
+      "text": "genealogical researcher identifying"
+    },
+    {
+      "start": 1773.74,
+      "duration": 6.4,
+      "text": "events in the Pro at the exact location"
+    },
+    {
+      "start": 1776.539,
+      "duration": 7.5,
+      "text": "of events in the ancestors life and the"
+    },
+    {
+      "start": 1780.14,
+      "duration": 7.259,
+      "text": "one that we're most interested in is the"
+    },
+    {
+      "start": 1784.039,
+      "duration": 5.76,
+      "text": "death of the deceased of the person and"
+    },
+    {
+      "start": 1787.399,
+      "duration": 5.041,
+      "text": "we want to know where that occurred why"
+    },
+    {
+      "start": 1789.799,
+      "duration": 5.521,
+      "text": "because the probate file"
+    },
+    {
+      "start": 1792.44,
+      "duration": 4.739,
+      "text": "can be filed the probate might have"
+    },
+    {
+      "start": 1795.32,
+      "duration": 4.859,
+      "text": "confiled in the court that has"
+    },
+    {
+      "start": 1797.179,
+      "duration": 4.141,
+      "text": "jurisdiction over the place where the"
+    },
+    {
+      "start": 1800.179,
+      "duration": 4.261,
+      "text": "person died"
+    },
+    {
+      "start": 1801.32,
+      "duration": 4.92,
+      "text": "or it may have been filed there may be"
+    },
+    {
+      "start": 1804.44,
+      "duration": 3.42,
+      "text": "even more than one probate for one"
+    },
+    {
+      "start": 1806.24,
+      "duration": 5.22,
+      "text": "person by the way"
+    },
+    {
+      "start": 1807.86,
+      "duration": 6.48,
+      "text": "there's what's called ancillary probates"
+    },
+    {
+      "start": 1811.46,
+      "duration": 4.86,
+      "text": "the properties may be in other locations"
+    },
+    {
+      "start": 1814.34,
+      "duration": 4.5,
+      "text": "and there may be additional probate"
+    },
+    {
+      "start": 1816.32,
+      "duration": 6.239,
+      "text": "files that had or probate actions that"
+    },
+    {
+      "start": 1818.84,
+      "duration": 5.699,
+      "text": "had to be filed in each state where"
+    },
+    {
+      "start": 1822.559,
+      "duration": 4.201,
+      "text": "property was located"
+    },
+    {
+      "start": 1824.539,
+      "duration": 4.62,
+      "text": "so if you get in this situation where"
+    },
+    {
+      "start": 1826.76,
+      "duration": 4.98,
+      "text": "you're working with someone that had a"
+    },
+    {
+      "start": 1829.159,
+      "duration": 4.981,
+      "text": "lot of property they may have had a"
+    },
+    {
+      "start": 1831.74,
+      "duration": 5.52,
+      "text": "beach house in town in California they"
+    },
+    {
+      "start": 1834.14,
+      "duration": 6.08,
+      "text": "may have had Ranch and Wyoming they may"
+    },
+    {
+      "start": 1837.26,
+      "duration": 6.24,
+      "text": "have had a house in in Utah"
+    },
+    {
+      "start": 1840.22,
+      "duration": 5.92,
+      "text": "they may have been winter residents in"
+    },
+    {
+      "start": 1843.5,
+      "duration": 4.62,
+      "text": "Arizona and had a house in Arizona and"
+    },
+    {
+      "start": 1846.14,
+      "duration": 3.659,
+      "text": "then they had a house in Florida and"
+    },
+    {
+      "start": 1848.12,
+      "duration": 3.72,
+      "text": "they had a house in Michigan because"
+    },
+    {
+      "start": 1849.799,
+      "duration": 6.24,
+      "text": "that's where their family came from and"
+    },
+    {
+      "start": 1851.84,
+      "duration": 6.66,
+      "text": "so forth and yes I have traced and and"
+    },
+    {
+      "start": 1856.039,
+      "duration": 4.681,
+      "text": "worked through situations just exactly"
+    },
+    {
+      "start": 1858.5,
+      "duration": 4.919,
+      "text": "like that with probate actions that were"
+    },
+    {
+      "start": 1860.72,
+      "duration": 4.74,
+      "text": "spread across the country and yes we had"
+    },
+    {
+      "start": 1863.419,
+      "duration": 4.081,
+      "text": "to hire attorneys in all of the"
+    },
+    {
+      "start": 1865.46,
+      "duration": 5.52,
+      "text": "different states to handle the property"
+    },
+    {
+      "start": 1867.5,
+      "duration": 5.64,
+      "text": "that was in that particular State and we"
+    },
+    {
+      "start": 1870.98,
+      "duration": 4.98,
+      "text": "also had to come to an agreement was to"
+    },
+    {
+      "start": 1873.14,
+      "duration": 4.68,
+      "text": "where the primary probate action would"
+    },
+    {
+      "start": 1875.96,
+      "duration": 4.86,
+      "text": "be established"
+    },
+    {
+      "start": 1877.82,
+      "duration": 5.28,
+      "text": "so you're thinking about this as it goes"
+    },
+    {
+      "start": 1880.82,
+      "duration": 4.32,
+      "text": "across as the population of the United"
+    },
+    {
+      "start": 1883.1,
+      "duration": 5.34,
+      "text": "States spread from the east to west"
+    },
+    {
+      "start": 1885.14,
+      "duration": 4.919,
+      "text": "across the country you may have a"
+    },
+    {
+      "start": 1888.44,
+      "duration": 5.04,
+      "text": "difficulty"
+    },
+    {
+      "start": 1890.059,
+      "duration": 7.381,
+      "text": "finding all of the probate actions there"
+    },
+    {
+      "start": 1893.48,
+      "duration": 6.6,
+      "text": "may be they're out in separate counties"
+    },
+    {
+      "start": 1897.44,
+      "duration": 4.859,
+      "text": "I would suggest checking that local laws"
+    },
+    {
+      "start": 1900.08,
+      "duration": 4.38,
+      "text": "about probate before doing some research"
+    },
+    {
+      "start": 1902.299,
+      "duration": 5.161,
+      "text": "I don't mean the law today I mean the"
+    },
+    {
+      "start": 1904.46,
+      "duration": 5.959,
+      "text": "law back at the time find out if they're"
+    },
+    {
+      "start": 1907.46,
+      "duration": 6.0,
+      "text": "what the what the actual law was"
+    },
+    {
+      "start": 1910.419,
+      "duration": 6.041,
+      "text": "doing research Historical Research into"
+    },
+    {
+      "start": 1913.46,
+      "duration": 5.04,
+      "text": "what laws existed at in the United"
+    },
+    {
+      "start": 1916.46,
+      "duration": 4.98,
+      "text": "States and in England and other places"
+    },
+    {
+      "start": 1918.5,
+      "duration": 6.059,
+      "text": "where you might be working as well as in"
+    },
+    {
+      "start": 1921.44,
+      "duration": 6.3,
+      "text": "other countries in Europe is just basic"
+    },
+    {
+      "start": 1924.559,
+      "duration": 5.281,
+      "text": "historical research and finding out what"
+    },
+    {
+      "start": 1927.74,
+      "duration": 3.9,
+      "text": "the law was back at a certain time in"
+    },
+    {
+      "start": 1929.84,
+      "duration": 5.459,
+      "text": "the jurisdictions at the certain time"
+    },
+    {
+      "start": 1931.64,
+      "duration": 6.72,
+      "text": "are both things that that depend on the"
+    },
+    {
+      "start": 1935.299,
+      "duration": 6.0,
+      "text": "prowess of the person who is doing the"
+    },
+    {
+      "start": 1938.36,
+      "duration": 5.1,
+      "text": "historical research and I would always"
+    },
+    {
+      "start": 1941.299,
+      "duration": 4.021,
+      "text": "encourage searching online for the"
+    },
+    {
+      "start": 1943.46,
+      "duration": 4.439,
+      "text": "records long before you started getting"
+    },
+    {
+      "start": 1945.32,
+      "duration": 5.52,
+      "text": "in a car or taking a plane fight"
+    },
+    {
+      "start": 1947.899,
+      "duration": 5.461,
+      "text": "someplace to to look for records in the"
+    },
+    {
+      "start": 1950.84,
+      "duration": 4.319,
+      "text": "county directly you may find that the"
+    },
+    {
+      "start": 1953.36,
+      "duration": 3.12,
+      "text": "records when you get to the place where"
+    },
+    {
+      "start": 1955.159,
+      "duration": 3.781,
+      "text": "you're looking that the records have"
+    },
+    {
+      "start": 1956.48,
+      "duration": 4.5,
+      "text": "been digitized and that they are no"
+    },
+    {
+      "start": 1958.94,
+      "duration": 5.4,
+      "text": "longer stored online and no longer"
+    },
+    {
+      "start": 1960.98,
+      "duration": 5.46,
+      "text": "available and that the only way you're"
+    },
+    {
+      "start": 1964.34,
+      "duration": 5.719,
+      "text": "going to get access is through their"
+    },
+    {
+      "start": 1966.44,
+      "duration": 3.619,
+      "text": "online resources"
+    },
+    {
+      "start": 1970.22,
+      "duration": 5.339,
+      "text": "then you can contact the court whenever"
+    },
+    {
+      "start": 1973.1,
+      "duration": 4.799,
+      "text": "I get into one of these situations where"
+    },
+    {
+      "start": 1975.559,
+      "duration": 4.201,
+      "text": "people are doing research and they say"
+    },
+    {
+      "start": 1977.899,
+      "duration": 4.621,
+      "text": "well I don't know how do I get started"
+    },
+    {
+      "start": 1979.76,
+      "duration": 3.96,
+      "text": "with this and the answer is call the"
+    },
+    {
+      "start": 1982.52,
+      "duration": 3.899,
+      "text": "court"
+    },
+    {
+      "start": 1983.72,
+      "duration": 5.1,
+      "text": "if you know where the person died if or"
+    },
+    {
+      "start": 1986.419,
+      "duration": 4.441,
+      "text": "you know approximately and you know the"
+    },
+    {
+      "start": 1988.82,
+      "duration": 4.26,
+      "text": "county then you can call the county and"
+    },
+    {
+      "start": 1990.86,
+      "duration": 4.02,
+      "text": "ask them where the probate records are"
+    },
+    {
+      "start": 1993.08,
+      "duration": 4.68,
+      "text": "and they'll say Well they're all online"
+    },
+    {
+      "start": 1994.88,
+      "duration": 5.48,
+      "text": "or they're all kept at the courthouse or"
+    },
+    {
+      "start": 1997.76,
+      "duration": 5.7,
+      "text": "they're all setting up in the state"
+    },
+    {
+      "start": 2000.36,
+      "duration": 5.86,
+      "text": "archives or they're in a historical"
+    },
+    {
+      "start": 2003.46,
+      "duration": 4.92,
+      "text": "society in other words these people are"
+    },
+    {
+      "start": 2006.22,
+      "duration": 4.5,
+      "text": "going to get this question all the court"
+    },
+    {
+      "start": 2008.38,
+      "duration": 3.96,
+      "text": "people in various counties across the"
+    },
+    {
+      "start": 2010.72,
+      "duration": 3.299,
+      "text": "country and around the world are going"
+    },
+    {
+      "start": 2012.34,
+      "duration": 4.14,
+      "text": "to get this cut these questions"
+    },
+    {
+      "start": 2014.019,
+      "duration": 5.101,
+      "text": "regularly and they will"
+    },
+    {
+      "start": 2016.48,
+      "duration": 4.799,
+      "text": "if they don't avoid answering they may"
+    },
+    {
+      "start": 2019.12,
+      "duration": 3.439,
+      "text": "you may very well find out that"
+    },
+    {
+      "start": 2021.279,
+      "duration": 4.321,
+      "text": "information"
+    },
+    {
+      "start": 2022.559,
+      "duration": 6.46,
+      "text": "another way a good way to get into this"
+    },
+    {
+      "start": 2025.6,
+      "duration": 5.52,
+      "text": "is the family search research Wiki"
+    },
+    {
+      "start": 2029.019,
+      "duration": 4.081,
+      "text": "it's on familysearch.org under the"
+    },
+    {
+      "start": 2031.12,
+      "duration": 5.22,
+      "text": "search Tab and it's called the research"
+    },
+    {
+      "start": 2033.1,
+      "duration": 5.04,
+      "text": "Wiki and it's obviously in other"
+    },
+    {
+      "start": 2036.34,
+      "duration": 5.1,
+      "text": "languages also"
+    },
+    {
+      "start": 2038.14,
+      "duration": 5.879,
+      "text": "and if you look under probate records it"
+    },
+    {
+      "start": 2041.44,
+      "duration": 4.859,
+      "text": "will tell you for the time periods"
+    },
+    {
+      "start": 2044.019,
+      "duration": 4.08,
+      "text": "involved where those probate records are"
+    },
+    {
+      "start": 2046.299,
+      "duration": 4.741,
+      "text": "likely located"
+    },
+    {
+      "start": 2048.099,
+      "duration": 5.52,
+      "text": "so that is the answer to the question"
+    },
+    {
+      "start": 2051.04,
+      "duration": 5.28,
+      "text": "you go to the you go to the family"
+    },
+    {
+      "start": 2053.619,
+      "duration": 4.5,
+      "text": "search research Wiki as the start and"
+    },
+    {
+      "start": 2056.32,
+      "duration": 4.62,
+      "text": "you look it up and then you can start"
+    },
+    {
+      "start": 2058.119,
+      "duration": 6.24,
+      "text": "calling to see what the availability is"
+    },
+    {
+      "start": 2060.94,
+      "duration": 6.78,
+      "text": "of the records now don't be surprised if"
+    },
+    {
+      "start": 2064.359,
+      "duration": 6.24,
+      "text": "the counties have monetized this process"
+    },
+    {
+      "start": 2067.72,
+      "duration": 5.34,
+      "text": "and will start charging you for copies"
+    },
+    {
+      "start": 2070.599,
+      "duration": 5.701,
+      "text": "or start charging you for physical"
+    },
+    {
+      "start": 2073.06,
+      "duration": 7.26,
+      "text": "access to the records and may even"
+    },
+    {
+      "start": 2076.3,
+      "duration": 5.64,
+      "text": "charge for online access to the records"
+    },
+    {
+      "start": 2080.32,
+      "duration": 5.88,
+      "text": "so there may be some kind of"
+    },
+    {
+      "start": 2081.94,
+      "duration": 6.84,
+      "text": "registration process and a cost involved"
+    },
+    {
+      "start": 2086.2,
+      "duration": 6.06,
+      "text": "some U.S probate records are digitized"
+    },
+    {
+      "start": 2088.78,
+      "duration": 7.079,
+      "text": "on family search and on Ancestry there"
+    },
+    {
+      "start": 2092.26,
+      "duration": 6.48,
+      "text": "is a category of archived records while"
+    },
+    {
+      "start": 2095.859,
+      "duration": 5.941,
+      "text": "we were digitizing records in an in"
+    },
+    {
+      "start": 2098.74,
+      "duration": 5.94,
+      "text": "Annapolis Maryland family search asked"
+    },
+    {
+      "start": 2101.8,
+      "duration": 5.48,
+      "text": "if we would go up to a conference of the"
+    },
+    {
+      "start": 2104.68,
+      "duration": 5.28,
+      "text": "county clerks in Pennsylvania"
+    },
+    {
+      "start": 2107.28,
+      "duration": 6.46,
+      "text": "which we did and we spend a couple of"
+    },
+    {
+      "start": 2109.96,
+      "duration": 7.56,
+      "text": "days up there in in Pennsylvania do"
+    },
+    {
+      "start": 2113.74,
+      "duration": 5.76,
+      "text": "talking to county clerks and some of"
+    },
+    {
+      "start": 2117.52,
+      "duration": 4.079,
+      "text": "them had the records digitized some of"
+    },
+    {
+      "start": 2119.5,
+      "duration": 3.78,
+      "text": "them did not have the record digitized"
+    },
+    {
+      "start": 2121.599,
+      "duration": 4.561,
+      "text": "and were interested in having family"
+    },
+    {
+      "start": 2123.28,
+      "duration": 5.819,
+      "text": "search digitize the records and some of"
+    },
+    {
+      "start": 2126.16,
+      "duration": 4.439,
+      "text": "them didn't know what digitizing was and"
+    },
+    {
+      "start": 2129.099,
+      "duration": 4.561,
+      "text": "weren't interested"
+    },
+    {
+      "start": 2130.599,
+      "duration": 6.121,
+      "text": "so it's kind of a spread of what's still"
+    },
+    {
+      "start": 2133.66,
+      "duration": 5.76,
+      "text": "going on constantly throughout the world"
+    },
+    {
+      "start": 2136.72,
+      "duration": 5.04,
+      "text": "as far as preserving and making"
+    },
+    {
+      "start": 2139.42,
+      "duration": 5.58,
+      "text": "available records"
+    },
+    {
+      "start": 2141.76,
+      "duration": 5.339,
+      "text": "and ancestry has indexed some of the"
+    },
+    {
+      "start": 2145.0,
+      "duration": 5.88,
+      "text": "probate records in the United States and"
+    },
+    {
+      "start": 2147.099,
+      "duration": 7.441,
+      "text": "Great Britain so you may find probate"
+    },
+    {
+      "start": 2150.88,
+      "duration": 6.54,
+      "text": "records on ancestry.com"
+    },
+    {
+      "start": 2154.54,
+      "duration": 4.559,
+      "text": "always check the catalog of the"
+    },
+    {
+      "start": 2157.42,
+      "duration": 4.439,
+      "text": "available records to see if there are"
+    },
+    {
+      "start": 2159.099,
+      "duration": 4.861,
+      "text": "probate records before you start trying"
+    },
+    {
+      "start": 2161.859,
+      "duration": 4.681,
+      "text": "to do searches and things like that it's"
+    },
+    {
+      "start": 2163.96,
+      "duration": 5.94,
+      "text": "probably a really good idea to look at"
+    },
+    {
+      "start": 2166.54,
+      "duration": 6.059,
+      "text": "the catalog on Ancestry that's called"
+    },
+    {
+      "start": 2169.9,
+      "duration": 5.58,
+      "text": "the card catalog The Collection catalog"
+    },
+    {
+      "start": 2172.599,
+      "duration": 6.121,
+      "text": "on myheritage and the catalog on family"
+    },
+    {
+      "start": 2175.48,
+      "duration": 5.94,
+      "text": "search and the and the list of all the"
+    },
+    {
+      "start": 2178.72,
+      "duration": 4.8,
+      "text": "records available on find my past and so"
+    },
+    {
+      "start": 2181.42,
+      "duration": 5.12,
+      "text": "forth each one of those big the big"
+    },
+    {
+      "start": 2183.52,
+      "duration": 6.42,
+      "text": "websites has that kind of a record"
+    },
+    {
+      "start": 2186.54,
+      "duration": 6.1,
+      "text": "having gone through the process of"
+    },
+    {
+      "start": 2189.94,
+      "duration": 5.88,
+      "text": "learning all of this from law when I"
+    },
+    {
+      "start": 2192.64,
+      "duration": 5.459,
+      "text": "began law school you can find it seems"
+    },
+    {
+      "start": 2195.82,
+      "duration": 4.019,
+      "text": "it may very well seem that when you"
+    },
+    {
+      "start": 2198.099,
+      "duration": 3.321,
+      "text": "start reading appropriate record that it"
+    },
+    {
+      "start": 2199.839,
+      "duration": 4.381,
+      "text": "sounds like it's in a foreign language"
+    },
+    {
+      "start": 2201.42,
+      "duration": 4.84,
+      "text": "and the writing may look like it isn't a"
+    },
+    {
+      "start": 2204.22,
+      "duration": 4.139,
+      "text": "foreign language and it may be in a"
+    },
+    {
+      "start": 2206.26,
+      "duration": 5.28,
+      "text": "foreign language as you go back far"
+    },
+    {
+      "start": 2208.359,
+      "duration": 6.121,
+      "text": "enough you will find in Europe a lot of"
+    },
+    {
+      "start": 2211.54,
+      "duration": 4.86,
+      "text": "the probate files in Latin so"
+    },
+    {
+      "start": 2214.48,
+      "duration": 3.48,
+      "text": "you may just find that kind of"
+    },
+    {
+      "start": 2216.4,
+      "duration": 3.9,
+      "text": "information"
+    },
+    {
+      "start": 2217.96,
+      "duration": 3.119,
+      "text": "now here's the key to the legal part of"
+    },
+    {
+      "start": 2220.3,
+      "duration": 3.72,
+      "text": "it"
+    },
+    {
+      "start": 2221.079,
+      "duration": 6.061,
+      "text": "the blacks Law Dictionary and this is"
+    },
+    {
+      "start": 2224.02,
+      "duration": 5.22,
+      "text": "good for all kind of English derivative"
+    },
+    {
+      "start": 2227.14,
+      "duration": 4.56,
+      "text": "when I say English language English"
+    },
+    {
+      "start": 2229.24,
+      "duration": 5.28,
+      "text": "language and Latin derivative countries"
+    },
+    {
+      "start": 2231.7,
+      "duration": 4.32,
+      "text": "because different legal terms are all"
+    },
+    {
+      "start": 2234.52,
+      "duration": 2.64,
+      "text": "going to be in this Black's Law"
+    },
+    {
+      "start": 2236.02,
+      "duration": 4.62,
+      "text": "Dictionary"
+    },
+    {
+      "start": 2237.16,
+      "duration": 5.28,
+      "text": "every attorney that I knew had a copy of"
+    },
+    {
+      "start": 2240.64,
+      "duration": 4.08,
+      "text": "Black's Law of dictionary someplace"
+    },
+    {
+      "start": 2242.44,
+      "duration": 4.139,
+      "text": "close at hand now that we have that"
+    },
+    {
+      "start": 2244.72,
+      "duration": 4.8,
+      "text": "online and it's been available online"
+    },
+    {
+      "start": 2246.579,
+      "duration": 4.441,
+      "text": "and it's free online I don't think that"
+    },
+    {
+      "start": 2249.52,
+      "duration": 3.36,
+      "text": "there are some at least some of the"
+    },
+    {
+      "start": 2251.02,
+      "duration": 5.22,
+      "text": "attorneys probably do not have a"
+    },
+    {
+      "start": 2252.88,
+      "duration": 5.76,
+      "text": "physical copy but basically it was the"
+    },
+    {
+      "start": 2256.24,
+      "duration": 4.5,
+      "text": "the go-to place for finding out some"
+    },
+    {
+      "start": 2258.64,
+      "duration": 2.939,
+      "text": "legal term that you weren't unfamiliar"
+    },
+    {
+      "start": 2260.74,
+      "duration": 4.859,
+      "text": "with"
+    },
+    {
+      "start": 2261.579,
+      "duration": 5.941,
+      "text": "and you can access it on it if you do a"
+    },
+    {
+      "start": 2265.599,
+      "duration": 4.141,
+      "text": "search for Black's Law Dictionary you'll"
+    },
+    {
+      "start": 2267.52,
+      "duration": 5.579,
+      "text": "find multiple copies of multiple"
+    },
+    {
+      "start": 2269.74,
+      "duration": 7.14,
+      "text": "different versions and and revisions of"
+    },
+    {
+      "start": 2273.099,
+      "duration": 7.02,
+      "text": "the law you do not need the most current"
+    },
+    {
+      "start": 2276.88,
+      "duration": 6.6,
+      "text": "is no reason to even borrow bother about"
+    },
+    {
+      "start": 2280.119,
+      "duration": 7.201,
+      "text": "worrying about the latter half of the"
+    },
+    {
+      "start": 2283.48,
+      "duration": 4.74,
+      "text": "20th century and say from 1950 up to the"
+    },
+    {
+      "start": 2287.32,
+      "duration": 3.84,
+      "text": "present"
+    },
+    {
+      "start": 2288.22,
+      "duration": 5.82,
+      "text": "the language is going to be modernized"
+    },
+    {
+      "start": 2291.16,
+      "duration": 5.28,
+      "text": "to some extent and probates but it's"
+    },
+    {
+      "start": 2294.04,
+      "duration": 5.96,
+      "text": "also not going to have nearly as many"
+    },
+    {
+      "start": 2296.44,
+      "duration": 3.56,
+      "text": "terms that you don't understand"
+    },
+    {
+      "start": 2300.52,
+      "duration": 6.059,
+      "text": "so what is an estate we keep using the"
+    },
+    {
+      "start": 2303.16,
+      "duration": 7.199,
+      "text": "term estate I keep saying the estate and"
+    },
+    {
+      "start": 2306.579,
+      "duration": 5.401,
+      "text": "what the estate is is first of all as I"
+    },
+    {
+      "start": 2310.359,
+      "duration": 3.72,
+      "text": "mentioned the country's laws must"
+    },
+    {
+      "start": 2311.98,
+      "duration": 5.28,
+      "text": "recognize individual property rights"
+    },
+    {
+      "start": 2314.079,
+      "duration": 7.561,
+      "text": "that's what what individuals have an"
+    },
+    {
+      "start": 2317.26,
+      "duration": 7.079,
+      "text": "interest in in property and the"
+    },
+    {
+      "start": 2321.64,
+      "duration": 6.24,
+      "text": "individuals must have the right to"
+    },
+    {
+      "start": 2324.339,
+      "duration": 6.361,
+      "text": "alienate that means to sell rent do"
+    },
+    {
+      "start": 2327.88,
+      "duration": 5.28,
+      "text": "whatever or transfer property to a"
+    },
+    {
+      "start": 2330.7,
+      "duration": 4.74,
+      "text": "spouse or others after their death"
+    },
+    {
+      "start": 2333.16,
+      "duration": 3.959,
+      "text": "so if those two things aren't satisfied"
+    },
+    {
+      "start": 2335.44,
+      "duration": 3.24,
+      "text": "then there's not going to be any probate"
+    },
+    {
+      "start": 2337.119,
+      "duration": 5.701,
+      "text": "laws it's just not going to exist"
+    },
+    {
+      "start": 2338.68,
+      "duration": 6.78,
+      "text": "probate is a process of doing this and"
+    },
+    {
+      "start": 2342.82,
+      "duration": 4.74,
+      "text": "if it if you can't do it then it"
+    },
+    {
+      "start": 2345.46,
+      "duration": 6.26,
+      "text": "obviously you don't need a probate"
+    },
+    {
+      "start": 2347.56,
+      "duration": 7.019,
+      "text": "and the concept here is that everything"
+    },
+    {
+      "start": 2351.72,
+      "duration": 5.619,
+      "text": "owned by the decease at the time of the"
+    },
+    {
+      "start": 2354.579,
+      "duration": 6.681,
+      "text": "estate is in the estate"
+    },
+    {
+      "start": 2357.339,
+      "duration": 7.321,
+      "text": "now when is it not in the estate that's"
+    },
+    {
+      "start": 2361.26,
+      "duration": 4.96,
+      "text": "always a question that comes up and that"
+    },
+    {
+      "start": 2364.66,
+      "duration": 5.36,
+      "text": "depends on the law"
+    },
+    {
+      "start": 2366.22,
+      "duration": 7.08,
+      "text": "so once again if if"
+    },
+    {
+      "start": 2370.02,
+      "duration": 6.04,
+      "text": "the law in the in the jurisdiction"
+    },
+    {
+      "start": 2373.3,
+      "duration": 5.4,
+      "text": "you're looking at if it happens to be"
+    },
+    {
+      "start": 2376.06,
+      "duration": 4.98,
+      "text": "Arizona or Utah or someplace like that"
+    },
+    {
+      "start": 2378.7,
+      "duration": 6.0,
+      "text": "then there's going to be a threshold"
+    },
+    {
+      "start": 2381.04,
+      "duration": 6.059,
+      "text": "that says oh we don't consider"
+    },
+    {
+      "start": 2384.7,
+      "duration": 7.98,
+      "text": "household items"
+    },
+    {
+      "start": 2387.099,
+      "duration": 7.74,
+      "text": "in bulk to be part of an estate so how"
+    },
+    {
+      "start": 2392.68,
+      "duration": 4.679,
+      "text": "do they transferred they're transferred"
+    },
+    {
+      "start": 2394.839,
+      "duration": 5.52,
+      "text": "by people coming there and having garage"
+    },
+    {
+      "start": 2397.359,
+      "duration": 4.861,
+      "text": "sales or estate sales or"
+    },
+    {
+      "start": 2400.359,
+      "duration": 4.021,
+      "text": "having their relatives come in and"
+    },
+    {
+      "start": 2402.22,
+      "duration": 4.02,
+      "text": "choose what they want and nobody cares"
+    },
+    {
+      "start": 2404.38,
+      "duration": 4.62,
+      "text": "and nobody is going to get taxed on it"
+    },
+    {
+      "start": 2406.24,
+      "duration": 5.76,
+      "text": "and nobody has any problem with it"
+    },
+    {
+      "start": 2409.0,
+      "duration": 3.96,
+      "text": "but as you go back in time like I've"
+    },
+    {
+      "start": 2412.0,
+      "duration": 4.26,
+      "text": "mentioned"
+    },
+    {
+      "start": 2412.96,
+      "duration": 6.119,
+      "text": "to emphasize that the amount of that"
+    },
+    {
+      "start": 2416.26,
+      "duration": 3.9,
+      "text": "property that is exempt begins to"
+    },
+    {
+      "start": 2419.079,
+      "duration": 3.301,
+      "text": "disappear"
+    },
+    {
+      "start": 2420.16,
+      "duration": 5.04,
+      "text": "and depending on the state and on the"
+    },
+    {
+      "start": 2422.38,
+      "duration": 6.54,
+      "text": "county it could disappear somewhere in"
+    },
+    {
+      "start": 2425.2,
+      "duration": 7.2,
+      "text": "the mid-1800s or even early even work"
+    },
+    {
+      "start": 2428.92,
+      "duration": 4.679,
+      "text": "more currently like early 1900s or"
+    },
+    {
+      "start": 2432.4,
+      "duration": 4.439,
+      "text": "wherever"
+    },
+    {
+      "start": 2433.599,
+      "duration": 5.581,
+      "text": "so it may be that probates are more and"
+    },
+    {
+      "start": 2436.839,
+      "duration": 4.681,
+      "text": "more like the reason why this is the"
+    },
+    {
+      "start": 2439.18,
+      "duration": 5.899,
+      "text": "reason why probates are more and more"
+    },
+    {
+      "start": 2441.52,
+      "duration": 7.2,
+      "text": "and more common as you go back in time"
+    },
+    {
+      "start": 2445.079,
+      "duration": 5.921,
+      "text": "so the will is a document created by the"
+    },
+    {
+      "start": 2448.72,
+      "duration": 4.02,
+      "text": "person before death that attempts to"
+    },
+    {
+      "start": 2451.0,
+      "duration": 4.14,
+      "text": "influence the distribution of the"
+    },
+    {
+      "start": 2452.74,
+      "duration": 7.339,
+      "text": "person's property after death"
+    },
+    {
+      "start": 2455.14,
+      "duration": 8.4,
+      "text": "Now that statement I make in there is"
+    },
+    {
+      "start": 2460.079,
+      "duration": 6.361,
+      "text": "I would I won't call it a an editorial"
+    },
+    {
+      "start": 2463.54,
+      "duration": 5.46,
+      "text": "comment but I would call it a an a"
+    },
+    {
+      "start": 2466.44,
+      "duration": 4.899,
+      "text": "experience comment"
+    },
+    {
+      "start": 2469.0,
+      "duration": 5.22,
+      "text": "people think that everything has to go"
+    },
+    {
+      "start": 2471.339,
+      "duration": 4.381,
+      "text": "by the will well unfortunately that's"
+    },
+    {
+      "start": 2474.22,
+      "duration": 5.7,
+      "text": "not true"
+    },
+    {
+      "start": 2475.72,
+      "duration": 6.02,
+      "text": "the will is merely a as I say here an"
+    },
+    {
+      "start": 2479.92,
+      "duration": 5.28,
+      "text": "attempt to influence the distribution"
+    },
+    {
+      "start": 2481.74,
+      "duration": 5.68,
+      "text": "and if the distribution does not if the"
+    },
+    {
+      "start": 2485.2,
+      "duration": 4.26,
+      "text": "people who are The Heirs"
+    },
+    {
+      "start": 2487.42,
+      "duration": 5.04,
+      "text": "the people who are going to receive the"
+    },
+    {
+      "start": 2489.46,
+      "duration": 5.639,
+      "text": "property don't agree then that will may"
+    },
+    {
+      "start": 2492.46,
+      "duration": 5.1,
+      "text": "not have very much usefulness it may"
+    },
+    {
+      "start": 2495.099,
+      "duration": 4.681,
+      "text": "only be a suggestion and it may not be"
+    },
+    {
+      "start": 2497.56,
+      "duration": 3.9,
+      "text": "the way that the property ever gets"
+    },
+    {
+      "start": 2499.78,
+      "duration": 3.839,
+      "text": "distributed"
+    },
+    {
+      "start": 2501.46,
+      "duration": 6.18,
+      "text": "so what are the requirements for a will"
+    },
+    {
+      "start": 2503.619,
+      "duration": 6.541,
+      "text": "and that depends again on the local law"
+    },
+    {
+      "start": 2507.64,
+      "duration": 3.84,
+      "text": "but it generally speaking they're all"
+    },
+    {
+      "start": 2510.16,
+      "duration": 3.48,
+      "text": "about the same"
+    },
+    {
+      "start": 2511.48,
+      "duration": 4.02,
+      "text": "and they must conform to the legal"
+    },
+    {
+      "start": 2513.64,
+      "duration": 3.6,
+      "text": "restrictions and force at the time the"
+    },
+    {
+      "start": 2515.5,
+      "duration": 5.099,
+      "text": "will is made so whether there is a will"
+    },
+    {
+      "start": 2517.24,
+      "duration": 6.119,
+      "text": "or not is defined by the law at the time"
+    },
+    {
+      "start": 2520.599,
+      "duration": 5.281,
+      "text": "that the will was actually made"
+    },
+    {
+      "start": 2523.359,
+      "duration": 5.821,
+      "text": "and there can be all kinds of different"
+    },
+    {
+      "start": 2525.88,
+      "duration": 5.88,
+      "text": "wills and usually they must be in"
+    },
+    {
+      "start": 2529.18,
+      "duration": 4.38,
+      "text": "writing and witnessed or must be in the"
+    },
+    {
+      "start": 2531.76,
+      "duration": 4.92,
+      "text": "handwriting of the deceased this is"
+    },
+    {
+      "start": 2533.56,
+      "duration": 4.92,
+      "text": "called a holographic will or maybe oral"
+    },
+    {
+      "start": 2536.68,
+      "duration": 4.26,
+      "text": "if the witness if it's witnessed and"
+    },
+    {
+      "start": 2538.48,
+      "duration": 4.74,
+      "text": "written down at the time or shortly"
+    },
+    {
+      "start": 2540.94,
+      "duration": 5.04,
+      "text": "thereafter so those are the kind of"
+    },
+    {
+      "start": 2543.22,
+      "duration": 4.859,
+      "text": "things that you look for as to whether"
+    },
+    {
+      "start": 2545.98,
+      "duration": 6.599,
+      "text": "or not a will is valid"
+    },
+    {
+      "start": 2548.079,
+      "duration": 8.401,
+      "text": "the big transfer here was people who who"
+    },
+    {
+      "start": 2552.579,
+      "duration": 7.02,
+      "text": "would come into a law firm and even our"
+    },
+    {
+      "start": 2556.48,
+      "duration": 5.52,
+      "text": "Law Firm on a regular basis and they"
+    },
+    {
+      "start": 2559.599,
+      "duration": 3.181,
+      "text": "would say I want to I need to change my"
+    },
+    {
+      "start": 2562.0,
+      "duration": 3.24,
+      "text": "will"
+    },
+    {
+      "start": 2562.78,
+      "duration": 5.04,
+      "text": "and we'd say well what's what happened"
+    },
+    {
+      "start": 2565.24,
+      "duration": 4.92,
+      "text": "with that they said well Fred didn't"
+    },
+    {
+      "start": 2567.82,
+      "duration": 4.98,
+      "text": "come in and he didn't make his payment"
+    },
+    {
+      "start": 2570.16,
+      "duration": 5.34,
+      "text": "on time or Fred didn't call me on the"
+    },
+    {
+      "start": 2572.8,
+      "duration": 5.519,
+      "text": "phone or Fred didn't notify me and so"
+    },
+    {
+      "start": 2575.5,
+      "duration": 5.04,
+      "text": "I'm cutting him out of my will"
+    },
+    {
+      "start": 2578.319,
+      "duration": 4.321,
+      "text": "and that would be that week and then he"
+    },
+    {
+      "start": 2580.54,
+      "duration": 5.16,
+      "text": "would be put back in the next week and"
+    },
+    {
+      "start": 2582.64,
+      "duration": 5.28,
+      "text": "so if we would always urge the people to"
+    },
+    {
+      "start": 2585.7,
+      "duration": 4.32,
+      "text": "destroy all earlier copies of the will"
+    },
+    {
+      "start": 2587.92,
+      "duration": 4.199,
+      "text": "but that didn't always work and that's"
+    },
+    {
+      "start": 2590.02,
+      "duration": 4.68,
+      "text": "one of the reasons we end up in court we"
+    },
+    {
+      "start": 2592.119,
+      "duration": 5.881,
+      "text": "had 15 copies of the will and we didn't"
+    },
+    {
+      "start": 2594.7,
+      "duration": 5.1,
+      "text": "know which one was the last one or which"
+    },
+    {
+      "start": 2598.0,
+      "duration": 3.9,
+      "text": "one really it was the one that was"
+    },
+    {
+      "start": 2599.8,
+      "duration": 5.819,
+      "text": "intended to be binding"
+    },
+    {
+      "start": 2601.9,
+      "duration": 6.419,
+      "text": "so basically a will depends on the law"
+    },
+    {
+      "start": 2605.619,
+      "duration": 6.781,
+      "text": "of the jurisdiction the place where the"
+    },
+    {
+      "start": 2608.319,
+      "duration": 7.681,
+      "text": "will is made the county the state"
+    },
+    {
+      "start": 2612.4,
+      "duration": 5.34,
+      "text": "it must refer to Or List the assets so"
+    },
+    {
+      "start": 2616.0,
+      "duration": 4.26,
+      "text": "the will can't just say I want to give"
+    },
+    {
+      "start": 2617.74,
+      "duration": 5.339,
+      "text": "everything away it actually has to say"
+    },
+    {
+      "start": 2620.26,
+      "duration": 6.0,
+      "text": "what it is you want to give away"
+    },
+    {
+      "start": 2623.079,
+      "duration": 5.161,
+      "text": "or it's going to be very difficult for"
+    },
+    {
+      "start": 2626.26,
+      "duration": 5.16,
+      "text": "anybody to"
+    },
+    {
+      "start": 2628.24,
+      "duration": 5.22,
+      "text": "to not disagree about it"
+    },
+    {
+      "start": 2631.42,
+      "duration": 4.14,
+      "text": "it has to identify who's going to"
+    },
+    {
+      "start": 2633.46,
+      "duration": 5.159,
+      "text": "benefit from the will the beneficiaries"
+    },
+    {
+      "start": 2635.56,
+      "duration": 7.38,
+      "text": "the people who receive it and it must"
+    },
+    {
+      "start": 2638.619,
+      "duration": 7.261,
+      "text": "name someone who is to be the executor"
+    },
+    {
+      "start": 2642.94,
+      "duration": 4.98,
+      "text": "or personal representative of the state"
+    },
+    {
+      "start": 2645.88,
+      "duration": 4.979,
+      "text": "that means the person who administers"
+    },
+    {
+      "start": 2647.92,
+      "duration": 6.6,
+      "text": "also called an administrator"
+    },
+    {
+      "start": 2650.859,
+      "duration": 4.98,
+      "text": "must be signed and witnessed and that"
+    },
+    {
+      "start": 2654.52,
+      "duration": 3.599,
+      "text": "was it"
+    },
+    {
+      "start": 2655.839,
+      "duration": 5.461,
+      "text": "so there are two kinds of things that"
+    },
+    {
+      "start": 2658.119,
+      "duration": 5.101,
+      "text": "occur probate may be necessary if"
+    },
+    {
+      "start": 2661.3,
+      "duration": 4.319,
+      "text": "there's a will it's called a test date"
+    },
+    {
+      "start": 2663.22,
+      "duration": 5.399,
+      "text": "the proceedings of intestate"
+    },
+    {
+      "start": 2665.619,
+      "duration": 5.101,
+      "text": "our the test state of a will that means"
+    },
+    {
+      "start": 2668.619,
+      "duration": 4.98,
+      "text": "the will is being determined what how"
+    },
+    {
+      "start": 2670.72,
+      "duration": 5.28,
+      "text": "it's going to transfer the property if"
+    },
+    {
+      "start": 2673.599,
+      "duration": 4.5,
+      "text": "there's no will then we have a an action"
+    },
+    {
+      "start": 2676.0,
+      "duration": 5.04,
+      "text": "in test state which means without a will"
+    },
+    {
+      "start": 2678.099,
+      "duration": 5.581,
+      "text": "and the and the prop if that's the case"
+    },
+    {
+      "start": 2681.04,
+      "duration": 4.98,
+      "text": "then the law you look to the law of the"
+    },
+    {
+      "start": 2683.68,
+      "duration": 4.58,
+      "text": "state because the state's law May"
+    },
+    {
+      "start": 2686.02,
+      "duration": 6.12,
+      "text": "determine how the property is to be"
+    },
+    {
+      "start": 2688.26,
+      "duration": 5.5,
+      "text": "distributed and who gets the property uh"
+    },
+    {
+      "start": 2692.14,
+      "duration": 3.959,
+      "text": "if there's no will"
+    },
+    {
+      "start": 2693.76,
+      "duration": 4.62,
+      "text": "so and Kate unless you want to disagree"
+    },
+    {
+      "start": 2696.099,
+      "duration": 4.74,
+      "text": "with what the state does I mean if you"
+    },
+    {
+      "start": 2698.38,
+      "duration": 4.4,
+      "text": "do disagree with what the state has for"
+    },
+    {
+      "start": 2700.839,
+      "duration": 6.061,
+      "text": "their way of Distributing the property"
+    },
+    {
+      "start": 2702.78,
+      "duration": 7.36,
+      "text": "you absolutely will need a will to uh"
+    },
+    {
+      "start": 2706.9,
+      "duration": 6.12,
+      "text": "distribute it different than we will go"
+    },
+    {
+      "start": 2710.14,
+      "duration": 5.16,
+      "text": "with the state and that depends on each"
+    },
+    {
+      "start": 2713.02,
+      "duration": 4.92,
+      "text": "state and each County and you need to"
+    },
+    {
+      "start": 2715.3,
+      "duration": 4.62,
+      "text": "know what that is"
+    },
+    {
+      "start": 2717.94,
+      "duration": 5.76,
+      "text": "if you want to look that up you look for"
+    },
+    {
+      "start": 2719.92,
+      "duration": 7.5,
+      "text": "some what's called intestate succession"
+    },
+    {
+      "start": 2723.7,
+      "duration": 6.54,
+      "text": "so if you typed that in for Arizona it"
+    },
+    {
+      "start": 2727.42,
+      "duration": 5.52,
+      "text": "would tell you and show you the law that"
+    },
+    {
+      "start": 2730.24,
+      "duration": 4.02,
+      "text": "happened how the law was applied if"
+    },
+    {
+      "start": 2732.94,
+      "duration": 4.139,
+      "text": "there was no will"
+    },
+    {
+      "start": 2734.26,
+      "duration": 5.64,
+      "text": "so here are a couple of definitions a"
+    },
+    {
+      "start": 2737.079,
+      "duration": 4.561,
+      "text": "testator testatrix that's the person"
+    },
+    {
+      "start": 2739.9,
+      "duration": 3.54,
+      "text": "that makes the will"
+    },
+    {
+      "start": 2741.64,
+      "duration": 4.439,
+      "text": "an administrator is the person"
+    },
+    {
+      "start": 2743.44,
+      "duration": 6.419,
+      "text": "administering the estate without a will"
+    },
+    {
+      "start": 2746.079,
+      "duration": 5.941,
+      "text": "an Executor an eccentrics female version"
+    },
+    {
+      "start": 2749.859,
+      "duration": 3.96,
+      "text": "those have been discontinued long ago"
+    },
+    {
+      "start": 2752.02,
+      "duration": 3.72,
+      "text": "but they're still around in history so"
+    },
+    {
+      "start": 2753.819,
+      "duration": 4.321,
+      "text": "you have to know about them is the"
+    },
+    {
+      "start": 2755.74,
+      "duration": 6.359,
+      "text": "person administrate administrating the"
+    },
+    {
+      "start": 2758.14,
+      "duration": 7.199,
+      "text": "estate if there is a will"
+    },
+    {
+      "start": 2762.099,
+      "duration": 5.281,
+      "text": "and a personal representative as anyone"
+    },
+    {
+      "start": 2765.339,
+      "duration": 4.141,
+      "text": "administering in a state and that's"
+    },
+    {
+      "start": 2767.38,
+      "duration": 4.34,
+      "text": "under the uniformed propane code so we"
+    },
+    {
+      "start": 2769.48,
+      "duration": 5.28,
+      "text": "did away with the male female"
+    },
+    {
+      "start": 2771.72,
+      "duration": 5.98,
+      "text": "designations and it was interesting"
+    },
+    {
+      "start": 2774.76,
+      "duration": 5.66,
+      "text": "because when I was in law school one of"
+    },
+    {
+      "start": 2777.7,
+      "duration": 5.399,
+      "text": "my La my trust in Estates probate"
+    },
+    {
+      "start": 2780.42,
+      "duration": 5.38,
+      "text": "classes were being taught by the person"
+    },
+    {
+      "start": 2783.099,
+      "duration": 5.821,
+      "text": "who wrote the uniform for probate code"
+    },
+    {
+      "start": 2785.8,
+      "duration": 5.58,
+      "text": "for across the country so that was kind"
+    },
+    {
+      "start": 2788.92,
+      "duration": 4.32,
+      "text": "of the an interesting thing that we were"
+    },
+    {
+      "start": 2791.38,
+      "duration": 4.92,
+      "text": "involved in"
+    },
+    {
+      "start": 2793.24,
+      "duration": 5.28,
+      "text": "so don't ignore this valuable set of"
+    },
+    {
+      "start": 2796.3,
+      "duration": 4.799,
+      "text": "Records these records are tremendously"
+    },
+    {
+      "start": 2798.52,
+      "duration": 4.94,
+      "text": "valuable and helpful they're just hard"
+    },
+    {
+      "start": 2801.099,
+      "duration": 2.361,
+      "text": "to find"
+    },
+    {
+      "start": 2804.04,
+      "duration": 6.48,
+      "text": "I just like to mention we have 14 videos"
+    },
+    {
+      "start": 2807.66,
+      "duration": 5.98,
+      "text": "on the BYU family history Library"
+    },
+    {
+      "start": 2810.52,
+      "duration": 6.0,
+      "text": "YouTube channel about probate so if you"
+    },
+    {
+      "start": 2813.64,
+      "duration": 5.88,
+      "text": "want to get into it in more detail I did"
+    },
+    {
+      "start": 2816.52,
+      "duration": 6.9,
+      "text": "a six-part probate series that goes into"
+    },
+    {
+      "start": 2819.52,
+      "duration": 6.9,
+      "text": "a lot more detail about how probate"
+    },
+    {
+      "start": 2823.42,
+      "duration": 6.74,
+      "text": "works and and gets more into the"
+    },
+    {
+      "start": 2826.42,
+      "duration": 7.919,
+      "text": "technical parts of the probate"
+    },
+    {
+      "start": 2830.16,
+      "duration": 6.76,
+      "text": "so your learning process never ends in"
+    },
+    {
+      "start": 2834.339,
+      "duration": 4.921,
+      "text": "other words once you start the process"
+    },
+    {
+      "start": 2836.92,
+      "duration": 4.919,
+      "text": "of doing research in genealogical"
+    },
+    {
+      "start": 2839.26,
+      "duration": 4.52,
+      "text": "research about your family you're going"
+    },
+    {
+      "start": 2841.839,
+      "duration": 5.461,
+      "text": "to find out that there's always"
+    },
+    {
+      "start": 2843.78,
+      "duration": 5.26,
+      "text": "something you need to learn it just it"
+    },
+    {
+      "start": 2847.3,
+      "duration": 3.68,
+      "text": "just happens that way that's the way"
+    },
+    {
+      "start": 2849.04,
+      "duration": 5.34,
+      "text": "it's structured it's historical things"
+    },
+    {
+      "start": 2850.98,
+      "duration": 6.28,
+      "text": "and as you go back in history the"
+    },
+    {
+      "start": 2854.38,
+      "duration": 6.06,
+      "text": "language changes the the laws change the"
+    },
+    {
+      "start": 2857.26,
+      "duration": 6.54,
+      "text": "Customs change and without learning all"
+    },
+    {
+      "start": 2860.44,
+      "duration": 6.48,
+      "text": "that information it uh research going"
+    },
+    {
+      "start": 2863.8,
+      "duration": 5.1,
+      "text": "back becomes very difficult it's"
+    },
+    {
+      "start": 2866.92,
+      "duration": 4.5,
+      "text": "difficult anyway but it becomes nearly"
+    },
+    {
+      "start": 2868.9,
+      "duration": 5.459,
+      "text": "impossible unless you go through the"
+    },
+    {
+      "start": 2871.42,
+      "duration": 5.82,
+      "text": "learning process so that's an and kind"
+    },
+    {
+      "start": 2874.359,
+      "duration": 6.661,
+      "text": "of encouraging everyone to take the time"
+    },
+    {
+      "start": 2877.24,
+      "duration": 5.879,
+      "text": "to do some some learning beyond the"
+    },
+    {
+      "start": 2881.02,
+      "duration": 3.66,
+      "text": "basic introductions"
+    },
+    {
+      "start": 2883.119,
+      "duration": 4.021,
+      "text": "okay well"
+    },
+    {
+      "start": 2884.68,
+      "duration": 6.84,
+      "text": "thanks for watching"
+    },
+    {
+      "start": 2887.14,
+      "duration": 6.84,
+      "text": "see if there are any questions here"
+    },
+    {
+      "start": 2891.52,
+      "duration": 3.66,
+      "text": "there's two questions from Sandra in the"
+    },
+    {
+      "start": 2893.98,
+      "duration": 4.879,
+      "text": "Q a"
+    },
+    {
+      "start": 2895.18,
+      "duration": 6.899,
+      "text": "say what can I infer from a 1844"
+    },
+    {
+      "start": 2898.859,
+      "duration": 4.841,
+      "text": "galatian County widows probate that"
+    },
+    {
+      "start": 2902.079,
+      "duration": 3.481,
+      "text": "doesn't mention any family it's only"
+    },
+    {
+      "start": 2903.7,
+      "duration": 3.84,
+      "text": "seven or eight pages so mostly things"
+    },
+    {
+      "start": 2905.56,
+      "duration": 4.68,
+      "text": "being sold to people with surnames that"
+    },
+    {
+      "start": 2907.54,
+      "duration": 4.98,
+      "text": "are unfamiliar not found the will"
+    },
+    {
+      "start": 2910.24,
+      "duration": 3.9,
+      "text": "I'm trying to prove or disprove to"
+    },
+    {
+      "start": 2912.52,
+      "duration": 4.92,
+      "text": "connection to my family of the same"
+    },
+    {
+      "start": 2914.14,
+      "duration": 5.82,
+      "text": "common surname Gates brickwall Etc"
+    },
+    {
+      "start": 2917.44,
+      "duration": 5.879,
+      "text": "okay well the answer to that is those"
+    },
+    {
+      "start": 2919.96,
+      "duration": 5.58,
+      "text": "those documents are probably not in not"
+    },
+    {
+      "start": 2923.319,
+      "duration": 4.141,
+      "text": "fully explored there may be a lot more"
+    },
+    {
+      "start": 2925.54,
+      "duration": 4.2,
+      "text": "documents out there"
+    },
+    {
+      "start": 2927.46,
+      "duration": 4.56,
+      "text": "and I would keep looking at the court"
+    },
+    {
+      "start": 2929.74,
+      "duration": 3.96,
+      "text": "file and keep asking those questions if"
+    },
+    {
+      "start": 2932.02,
+      "duration": 3.36,
+      "text": "you're looking online and that's the"
+    },
+    {
+      "start": 2933.7,
+      "duration": 4.1,
+      "text": "only thing you're finding that does not"
+    },
+    {
+      "start": 2935.38,
+      "duration": 5.64,
+      "text": "mean that they have the that they"
+    },
+    {
+      "start": 2937.8,
+      "duration": 5.38,
+      "text": "digitize the entire probate file they"
+    },
+    {
+      "start": 2941.02,
+      "duration": 3.9,
+      "text": "may have only digitized a few documents"
+    },
+    {
+      "start": 2943.18,
+      "duration": 3.36,
+      "text": "and that was it because that's what they"
+    },
+    {
+      "start": 2944.92,
+      "duration": 4.38,
+      "text": "had at that time"
+    },
+    {
+      "start": 2946.54,
+      "duration": 4.4,
+      "text": "so I would be talking to the county and"
+    },
+    {
+      "start": 2949.3,
+      "duration": 3.96,
+      "text": "I would be talking to a County"
+    },
+    {
+      "start": 2950.94,
+      "duration": 4.54,
+      "text": "Historical Society and a county"
+    },
+    {
+      "start": 2953.26,
+      "duration": 4.88,
+      "text": "Geological Society and I would be"
+    },
+    {
+      "start": 2955.48,
+      "duration": 6.9,
+      "text": "questioning the court by telephone"
+    },
+    {
+      "start": 2958.14,
+      "duration": 5.38,
+      "text": "asking if uh where there might be more"
+    },
+    {
+      "start": 2962.38,
+      "duration": 3.18,
+      "text": "records"
+    },
+    {
+      "start": 2963.52,
+      "duration": 4.2,
+      "text": "that's that's kind of the solution it's"
+    },
+    {
+      "start": 2965.56,
+      "duration": 3.539,
+      "text": "just a matter of getting more records"
+    },
+    {
+      "start": 2967.72,
+      "duration": 3.54,
+      "text": "that doesn't sound like the whole"
+    },
+    {
+      "start": 2969.099,
+      "duration": 5.461,
+      "text": "probate file"
+    },
+    {
+      "start": 2971.26,
+      "duration": 6.72,
+      "text": "and maybe she had no identifiable heirs"
+    },
+    {
+      "start": 2974.56,
+      "duration": 5.16,
+      "text": "or or family members and so there was"
+    },
+    {
+      "start": 2977.98,
+      "duration": 3.96,
+      "text": "nothing they could do except sell off"
+    },
+    {
+      "start": 2979.72,
+      "duration": 3.96,
+      "text": "the property to people who were willing"
+    },
+    {
+      "start": 2981.94,
+      "duration": 4.919,
+      "text": "to pay for it"
+    },
+    {
+      "start": 2983.68,
+      "duration": 5.04,
+      "text": "when you say property no probate are you"
+    },
+    {
+      "start": 2986.859,
+      "duration": 4.441,
+      "text": "referring to land as opposed to personal"
+    },
+    {
+      "start": 2988.72,
+      "duration": 5.639,
+      "text": "property the answer is both when I say"
+    },
+    {
+      "start": 2991.3,
+      "duration": 6.66,
+      "text": "property I mean property real property"
+    },
+    {
+      "start": 2994.359,
+      "duration": 6.121,
+      "text": "which is land and personal property if"
+    },
+    {
+      "start": 2997.96,
+      "duration": 4.26,
+      "text": "there's no probate you don't you can't"
+    },
+    {
+      "start": 3000.48,
+      "duration": 3.839,
+      "text": "have land if you have land you"
+    },
+    {
+      "start": 3002.22,
+      "duration": 4.639,
+      "text": "automatically have a probate going back"
+    },
+    {
+      "start": 3004.319,
+      "duration": 5.28,
+      "text": "in time if you have even if you have"
+    },
+    {
+      "start": 3006.859,
+      "duration": 5.441,
+      "text": "very little personal property"
+    },
+    {
+      "start": 3009.599,
+      "duration": 5.641,
+      "text": "but uh what we're talking about is"
+    },
+    {
+      "start": 3012.3,
+      "duration": 5.88,
+      "text": "anything identifiable as part of the"
+    },
+    {
+      "start": 3015.24,
+      "duration": 5.579,
+      "text": "estate meaning everything owned by the"
+    },
+    {
+      "start": 3018.18,
+      "duration": 4.86,
+      "text": "deceased when they died"
+    },
+    {
+      "start": 3020.819,
+      "duration": 4.621,
+      "text": "we have a question in the chat there"
+    },
+    {
+      "start": 3023.04,
+      "duration": 4.74,
+      "text": "from Robert"
+    },
+    {
+      "start": 3025.44,
+      "duration": 4.98,
+      "text": "are Wills probate records considered"
+    },
+    {
+      "start": 3027.78,
+      "duration": 5.46,
+      "text": "public records yes"
+    },
+    {
+      "start": 3030.42,
+      "duration": 4.439,
+      "text": "the answer is definitely yes they're all"
+    },
+    {
+      "start": 3033.24,
+      "duration": 3.96,
+      "text": "public records"
+    },
+    {
+      "start": 3034.859,
+      "duration": 3.96,
+      "text": "I have to say yes because I can think"
+    },
+    {
+      "start": 3037.2,
+      "duration": 5.34,
+      "text": "right off my hand I can't think of an"
+    },
+    {
+      "start": 3038.819,
+      "duration": 6.121,
+      "text": "exception why they would not be"
+    },
+    {
+      "start": 3042.54,
+      "duration": 4.14,
+      "text": "there's no privacy dead people don't"
+    },
+    {
+      "start": 3044.94,
+      "duration": 3.659,
+      "text": "have privacy"
+    },
+    {
+      "start": 3046.68,
+      "duration": 3.54,
+      "text": "but it's helpful too because of the"
+    },
+    {
+      "start": 3048.599,
+      "duration": 3.98,
+      "text": "people that are still alive are usually"
+    },
+    {
+      "start": 3050.22,
+      "duration": 2.359,
+      "text": "named"
+    }
+  ],
+  "full_text": "well hello this is James Tanner and I'm here again from the BYU family history library to talk about probate records and how to use the probate records in genealogical research and I guess I'll need one couple of things of introduction I've spent almost 41 years doing genealogical research and a lot of that has involved res Research into probate cases they're extremely helpful in finding families and the second part of that is that I was a trial attorney in Arizona for 39 years and spent a lot of time in the probate courts that was something that I consistently did over the the time that I was an attorney in the last few years the last 15 years or so I was in court fairly regularly with probate cases so this is uh this is a topic that I understand and hopefully I can help people get started in understanding this particular subject so first of all probate files go back thousands of years and they certainly predate records of births and deaths and that's the key here is that the ability to find the the birth date or the death date of an individual person other than people who are extremely famous or have some reason to be noted in history those without with that exception most Ordinary People kind of disappear off records beginning at the the late 1700s usually by 1800 it's already difficult to find birth records marriage records are different as a note marriage records affect property rights real property and personal property rights and so marriage records are more common and they may go back much further but you may find that the only records that you can find are Church records and they may not be existent in place where you're looking and that's particularly true in in doing research in the United States or in any of the countries that outside of Western Europe so we're looking at something that's very valuable another factor that that helps me understand the probate record says that my wife and I spent a year working with family search and digitizing records in the Maryland state archives and all of the records we digitized for a year were probate records and all I can say about the the process there I just talked to the email back and forth to one of the people who is involved in that project back in Maryland that was a few years ago that we were there and he estimated that they probably would take another five or ten years to just to digitize all of the probate records in that one library in that one archive third the state of Maryland another problem of course with probate records from the genealogical research standpoint is that very few of them are indexed and in many cases they're not even digitized they're still sitting in courts across the country one of the good news parts of that is that many of the courts across the country even down to the county level are digitizing their own records and so they may have the records in the county available under a cold each individual County probably is a different way of doing it and so it's something that we're used to as as a genealogists in doing that kind of research and I have to emphasize if I have to say it a number of times which I probably will is that probate records are some of the most valuable genealogical resources for identifying whole families it is in a lot of cases because of that lack of of individual records and Census records and things like that civil registration records and others that are used commonly used is that the probate records are the only records that show complete families and so this is the key here is finding the probate record and that can take a bit of work I have one as direct line ancestor that I have been looking since I began doing research I have been looking for probate records and have yet to find his probate records so if it's a process that could go on for a while to understand probate probate is a set of court or government procedures established for the orderly transfer of property from a deceased person to his or her errors or assigns another point on this is that there are a lot of misconceptions out there about probate and as I was talking before we got started here today part of that problem has to do with people who are involved in what we call estate planning here in the United States and a lot of the information that's put out in the general Community about probate is is just simply inaccurate and doesn't have really any factual basis one of the things that comes up in genealogical research is that I've heard this many times that oh well you can't find a probate because the women didn't own any property and so therefore they there's no probates for women well usually if the woman survived the husband then there was a probate for the women's estate because whatever she inherited had to be probated and then then there was a question asked before the class started about the threshold level for a probate and all I can say is that probate is mixed up with taxes and uh and taxes on the property a bit of an estate at the time of transfer were very popular and are still popular in a lot of countries and so there's time when everything in the estate down to the last pin and saddle and cup and Spoon were taxed to some extent and so the probates are some of them as you go back in time you'll find probates are extremely detailed into as far as the property of the deceased so these are are things that had that happen because of the Taxation and Taxation has been with us of course since ancient times so we're we're pretty well familiar with the process here but what's happened lately just as a kind of a side note is that many of the smaller Estates fall under exceptions through the taxation the amount of property necessary for a probate to have a tax liability is very small the other factor that creates but great interest the amount of files of people that fall under the need to have a probate is a very small percentage of those are actually have any tax liabilities tax liabilities for example in the United States the exemptions begin at about a million dollars or higher I didn't fail to look up the exact number and it changed it changes practically every year so if you're interested in seeing what the exemption amount is for a for an estate in the United States then you can look that up on online and see what the current exemption is that it's one thing that does change frequently most of the time that I was practicing law which is about 10 years or so ago the exemption level was up at around three million dollars so unless you had an estate larger than three million dollars you weren't paying taxes but this is the reason why probate files are valuable for doing genealogical research because first of all they were they were imposed on everyone everyone had to have a probate even if you had almost no property at all the only people that didn't have a probate were people who did not have any property okay so the reason why those records are valuable become very very evident as you look at the probate set of records that go through a probate it's not just one record it is a bundle of records that extend over a period of time a few years ago I was looking for an example on a probate file and I just living here in Utah Valley and Utah County or in Utah I decided I just look and see where one of the representative probates here in Utah how that went I found a probate file that began in the mid to late 1800s around the 1860 or 1870 and lasted for 30 years so there were not you know people come to me when they start doing probate and I say well additionally for a probate file you said yes I looked at the around the date of death and I didn't find anything on a probate there's no probate file and I said well were you aware that a probate file could be filed years after the death it may be possible that it could have been filed even 5 10 15 years after the person died or more oh does that mean I have to go look at all the records for all those years um yes that's exactly what that means and also you find well I found the will and that's it well if you found the will then you probably have some access to the probate file and as I've just mentioned those filings could have continued for decades and with hundreds of pages with detail about the family down two and three generations so you know this is a lot of information here and it's not ever wrapped up and handed to you in a package you have to sometimes dig around and look through a lot of Records before you find all the information that happens foreign part of this for for a lot of people is that the probate file is the one that breaks down the brick wall that's the one that actually identifies the family puts the family in it very specific place and time and verifies a death date or approximate death date of of the deceased and so the value of these is is it's extremely extreme there's just no question to you that you should be looking for probate records and as I mentioned if you didn't have any property you didn't have a probate so if your ancestors turn out to be as poor as most of my ancestors looking for probates if you find out that they live in the poor house or whatever they have no property now another factor of course is that the probates were necessary in order that people who owe debts didn't get a free ride just because they died their estate meaning the prop all the property they owned was liable for the payment of all those debts and so part of the process of a probate was to identify if there are any claims against the estate and I could go on for hours uh with people talking about what's happened recently meaning since around 1945 here in the United States where they took an Old English theory of property called a trust and turned it into a what they called a tax planning or probate avoidance method and so what people have today are trusts my experience from a litigating standpoint having been a trial attorney is that we had just as much problem with trust as we had with a probate and so it's not necessarily what you might think in the ways of how this works and so I'm trying to but I'm trying to do here today is to to establish a concept here that this is a very positive thing for genealogists you should be happy that there was a probate the People The Heirs may not have been happy but you need to be happy because that always creates records that are sometimes useful sometimes not as useful as you would like but a lot of times at least they established some relationships and and of the time of the death of the deceased one of the questions I'm always asking people is did this person own any property that you're looking for did he own a farm did he or she own a farm or did it did they whatever and if the answer is yes then we say well we're going to be looking for deeds and we're going to be looking for probate and I would say from experience that most of the countries the world have some type of probate procedure now the only people that would not have a probate procedure would be countries that did not recognize personal property or did not recognize the ability of individuals to transfer property upon their death so if that did not happen in whatever country then there's probably no probate files but if it did happen then there are probate files of some kind and as I mentioned they go back into Antiquity in fact some of the earliest records in Israel in Ju in Hebrew and in Aramaic and the other languages are wills and probate files so we really have something we can use as a bridge in a lot of cases the important thing to understand is because of the changes in the law in most of the countries and in the larger countries they've just learned that it's beyond the capabilities and it ties up a great amount of court time and Court effort to determine the value and if you're in there determining the value of a pillowcase or you're in their determining the value of an old chair that kind of thing is basically what motivates the governments to say okay all we're really interested in is if you've got enough money and so we're going to put that artificially high so that we don't have to deal with all this little stuff and so when when people worry about having a probate they don't realize that commonly in the present age even if you do nothing with your estate it's very unlikely you're going to have to have a probate unless there's a disagreement unless there's debts unless somebody is trying to collect money against the deceased all of those factors May create a probate which by the way are probably not going to be avoided by a trust a probate file contains all the documents filed with the court and so there's a way to open a probate by filing a copy of a will with the court and then each time there's a whole set of procedures in the court about what happens after that and there are records for each one of those procedures so you are you are amassing a significant amount of documents which by the way is directly related to the amount of property in the estate now I'm not going to talk about anything past 1900 here in the United States about 1970 actually is when they had passed begin passing what's called uniform probate code and that kind of revised all of this stuff but back in history what we're dealing with as genealogists these records are extremely valuable as I will say over and over again so a probate case File can have hundreds of pages of documents and as I mentioned lasts more than 30 years and I know that they can last more than 30 years because I found cases that have lasted more than 30 years so it's not unusual and the time can go on forever and you cannot predict the kinds of documents that might be it might have been filed in a probate action the questions that are raised the issues that are involved in the in in the resolution of the debts and the and the disposition of the property like the real property and the personal property you know you just cannot imagine the amount of information that is going to be created here Okay so it's kind of like uh opening up sort of a new world you get into the probate records you find out information that perhaps you had no idea existed so what are the kinds of things that you might find you would find Wills Wills are documents created before death by someone basically asking that the property be distributed in a certain way to certain of their heirs the idea of a court is that they will play along with that and distribute the property unless there's some conflict or or challenge to the will that's where I came in primarily as a litigator I would be walking into court because somebody was unhappy there are bonds which means that you have to have the people who administer the estate and they have a lot of different names that we'll talk about but the people who administrative state had to post bonds so these are other people that could be relatives they could be one of the things you may find is the wife's a maiden name because the person who got the bond was one of someone in her family petitions are requests that go to the court they can be endless asking the court to do certain things sell the property dispose of the property cut someone off take you know anything that comes up in the proceeding accountings are always required which means that you have to do an inventory of the property over the years they as you go further back in time particularly in English-speaking countries the information that is required is very it becomes extremely specific and and so as I mentioned you may be looking at a list of every piece of dishware and every every item of clothing and every other thing that happened or was owned by the deceased today the accountings and the inventories putting a value on the property and then there's a sale usually a sale in the in the probate of the property in order to satisfy creditors and to distribute the proceeds of the sale to The Heirs unless the the deceased test specifically designated that an item of personal property goes to at a specific individual there are orders by the court telling people when to show up and what to do and how to get what the court wants to look at then there are decrees that just determine where the property goes at the end of the probate and so somewhere down the line there's going to be a decree the simple way to look at this is let's suppose that the person owned a farm and that farm was valued at X dollars let's say a thousand dollars well then the court would impose a bond to protect the value of that property then there would be petitions back and forth about the property or the sale of the property they would they would have to get someone to give evaluation on the property and then there would be a legal description created the Deeds would be looked at to make sure the property was actually owned by the deceased and then just as if it were going to be sold and then there were orders ordering the property to be put up for Mark on up for sale and usually then at an auction they would sell the property and there would be a final decree having it the administrator of the estate to sign a deed and to turn it over out of the property and they would have what was called a deed of distribution which would then take the property the farm out of the estate and then The Heirs would divide up the proceeds so there's a lot of value and here's some of the values of a probate file for research first of all it helps to identify family members the wills and all the probate proceedings often tell who the people are and how they're related and may tell the grandchildren's names it may have all sorts of information in the will and yes if you go back in a far enough in time you'll have a problem like with this screenshot finding out that all these records are in handwriting and you're going to have to learn how to read the handwriting the main issue of course for genealogists who don't happen to be attorneys is that and even if you're an attorney and you haven't ever done probates the same problem and that is that the language may be totally unfamiliar and you may have to work through and find what all these things mean it may give the wife's maiden name which is a which is a bonus establish the relative's economic status when you see the the inventory of the property and the appraisement meaning the value of the property then you begin to immediately see what happened with the property one example which came up during the time that my wife and I were digitizing probate records in Maryland was of course Maryland was a slave state and the enslaved people were listed as part of the property of the estate and so when people say that there aren't any records for the African Americans back behind 1860 they simply do not know that there are records which primarily end up being probate records and it may reveal unknown family relationships you may find out who is related to who and that may be a surprise and also may be the only record of the ancestors death It's Not Unusual that you can't find any other evidence of the dis of the ancestors death you might because you found a probate record then be able to find a cemetery record or a cemetery marker with some information but sometimes it's easier to find a cemetery marker and then begin looking for a probate record where the cemetery marker is located and in the United States the probate records originate are maintained at the county level so all the counties across the country have procedures for probates and have a court that's designated as the probate court and they have different names across the country and then those records are if they're available are usually maintained on the county basis now if the records have been in the county for a long time or if the county split then records have moved then you have the same problems you have with all records that are kept at a lower level of jurisdictional level and that is that they may not be readily available because they've moved to some other County or the original County or or in in different situations and that may take some historical research and I might mention that there are three thousand one hundred and forty three counties and county equivalents in the United States so we have that many different ways of handling probates and I mentioned uh just a few minutes ago about the beginning of the 1970s we had a movement to have uniform probate laws well they weren't that popular and there's only a few not a large number of percentage but only a smaller percentage of the states that have actually adopted that sometimes they adopt parts of it and you still can count on the fact that the probate law is going to be different in every state and and the procedures may be different in the counties and the important thing to understand is that probate records are kept with all the other County records and it will depend on what you uh particularly are looking for you may find that you're looking through a lot of Records in a County the county records and finding probate records sort of scattered in so there's what happens in in different counties is that some counties keep all their probate records in one file so the probate started and everything that happens with that particular probate goes into one file and some did not do that they just took the probate records and put them in the in what's called the docket into the files of the records that are in the court in the chronological order that they came in so you may have to search through a lot of records and depending on how the records have been segregated out and you'll see for instance from this slide and the the screenshot here for Grayson County Texas that to search the probate records they begin in 1983 which may not help you a whole lot and request form for probate records go back to 1846. the the question there would be when was this County created and are those perhaps the oldest records that exist in that particular County so these are the that's a kind of a blow up of that but I was looking at just a second ago so you can see that this will tell you rather quickly if those records are even had even been created in this particular County it may have been part of another County before 1846 and that's something else you should know about okay and I'm going to have to emphasize this that probate laws differ from state to state so it's important that you identify the place where the probate records are archived meaning where are they kept they may even be in estate archives that's why we were looking at probate records at the Maryland state archives because the older probate records had all been transferred to the state archives and so they were all sitting in Annapolis Maryland but not all but the bulk of the records not the current records that were being probated but here what we have are sort of a a searching from state to state now all the states and all the counties that I'm aware of in the United States today are online and it's pretty simple to determine how many counties and the names of the counties of every state in the United States and once you have identified to some extent this whole process is is initiated by the genealogical researcher identifying events in the Pro at the exact location of events in the ancestors life and the one that we're most interested in is the death of the deceased of the person and we want to know where that occurred why because the probate file can be filed the probate might have confiled in the court that has jurisdiction over the place where the person died or it may have been filed there may be even more than one probate for one person by the way there's what's called ancillary probates the properties may be in other locations and there may be additional probate files that had or probate actions that had to be filed in each state where property was located so if you get in this situation where you're working with someone that had a lot of property they may have had a beach house in town in California they may have had Ranch and Wyoming they may have had a house in in Utah they may have been winter residents in Arizona and had a house in Arizona and then they had a house in Florida and they had a house in Michigan because that's where their family came from and so forth and yes I have traced and and worked through situations just exactly like that with probate actions that were spread across the country and yes we had to hire attorneys in all of the different states to handle the property that was in that particular State and we also had to come to an agreement was to where the primary probate action would be established so you're thinking about this as it goes across as the population of the United States spread from the east to west across the country you may have a difficulty finding all of the probate actions there may be they're out in separate counties I would suggest checking that local laws about probate before doing some research I don't mean the law today I mean the law back at the time find out if they're what the what the actual law was doing research Historical Research into what laws existed at in the United States and in England and other places where you might be working as well as in other countries in Europe is just basic historical research and finding out what the law was back at a certain time in the jurisdictions at the certain time are both things that that depend on the prowess of the person who is doing the historical research and I would always encourage searching online for the records long before you started getting in a car or taking a plane fight someplace to to look for records in the county directly you may find that the records when you get to the place where you're looking that the records have been digitized and that they are no longer stored online and no longer available and that the only way you're going to get access is through their online resources then you can contact the court whenever I get into one of these situations where people are doing research and they say well I don't know how do I get started with this and the answer is call the court if you know where the person died if or you know approximately and you know the county then you can call the county and ask them where the probate records are and they'll say Well they're all online or they're all kept at the courthouse or they're all setting up in the state archives or they're in a historical society in other words these people are going to get this question all the court people in various counties across the country and around the world are going to get this cut these questions regularly and they will if they don't avoid answering they may you may very well find out that information another way a good way to get into this is the family search research Wiki it's on familysearch.org under the search Tab and it's called the research Wiki and it's obviously in other languages also and if you look under probate records it will tell you for the time periods involved where those probate records are likely located so that is the answer to the question you go to the you go to the family search research Wiki as the start and you look it up and then you can start calling to see what the availability is of the records now don't be surprised if the counties have monetized this process and will start charging you for copies or start charging you for physical access to the records and may even charge for online access to the records so there may be some kind of registration process and a cost involved some U.S probate records are digitized on family search and on Ancestry there is a category of archived records while we were digitizing records in an in Annapolis Maryland family search asked if we would go up to a conference of the county clerks in Pennsylvania which we did and we spend a couple of days up there in in Pennsylvania do talking to county clerks and some of them had the records digitized some of them did not have the record digitized and were interested in having family search digitize the records and some of them didn't know what digitizing was and weren't interested so it's kind of a spread of what's still going on constantly throughout the world as far as preserving and making available records and ancestry has indexed some of the probate records in the United States and Great Britain so you may find probate records on ancestry.com always check the catalog of the available records to see if there are probate records before you start trying to do searches and things like that it's probably a really good idea to look at the catalog on Ancestry that's called the card catalog The Collection catalog on myheritage and the catalog on family search and the and the list of all the records available on find my past and so forth each one of those big the big websites has that kind of a record having gone through the process of learning all of this from law when I began law school you can find it seems it may very well seem that when you start reading appropriate record that it sounds like it's in a foreign language and the writing may look like it isn't a foreign language and it may be in a foreign language as you go back far enough you will find in Europe a lot of the probate files in Latin so you may just find that kind of information now here's the key to the legal part of it the blacks Law Dictionary and this is good for all kind of English derivative when I say English language English language and Latin derivative countries because different legal terms are all going to be in this Black's Law Dictionary every attorney that I knew had a copy of Black's Law of dictionary someplace close at hand now that we have that online and it's been available online and it's free online I don't think that there are some at least some of the attorneys probably do not have a physical copy but basically it was the the go-to place for finding out some legal term that you weren't unfamiliar with and you can access it on it if you do a search for Black's Law Dictionary you'll find multiple copies of multiple different versions and and revisions of the law you do not need the most current is no reason to even borrow bother about worrying about the latter half of the 20th century and say from 1950 up to the present the language is going to be modernized to some extent and probates but it's also not going to have nearly as many terms that you don't understand so what is an estate we keep using the term estate I keep saying the estate and what the estate is is first of all as I mentioned the country's laws must recognize individual property rights that's what what individuals have an interest in in property and the individuals must have the right to alienate that means to sell rent do whatever or transfer property to a spouse or others after their death so if those two things aren't satisfied then there's not going to be any probate laws it's just not going to exist probate is a process of doing this and if it if you can't do it then it obviously you don't need a probate and the concept here is that everything owned by the decease at the time of the estate is in the estate now when is it not in the estate that's always a question that comes up and that depends on the law so once again if if the law in the in the jurisdiction you're looking at if it happens to be Arizona or Utah or someplace like that then there's going to be a threshold that says oh we don't consider household items in bulk to be part of an estate so how do they transferred they're transferred by people coming there and having garage sales or estate sales or having their relatives come in and choose what they want and nobody cares and nobody is going to get taxed on it and nobody has any problem with it but as you go back in time like I've mentioned to emphasize that the amount of that property that is exempt begins to disappear and depending on the state and on the county it could disappear somewhere in the mid-1800s or even early even work more currently like early 1900s or wherever so it may be that probates are more and more like the reason why this is the reason why probates are more and more and more common as you go back in time so the will is a document created by the person before death that attempts to influence the distribution of the person's property after death Now that statement I make in there is I would I won't call it a an editorial comment but I would call it a an a experience comment people think that everything has to go by the will well unfortunately that's not true the will is merely a as I say here an attempt to influence the distribution and if the distribution does not if the people who are The Heirs the people who are going to receive the property don't agree then that will may not have very much usefulness it may only be a suggestion and it may not be the way that the property ever gets distributed so what are the requirements for a will and that depends again on the local law but it generally speaking they're all about the same and they must conform to the legal restrictions and force at the time the will is made so whether there is a will or not is defined by the law at the time that the will was actually made and there can be all kinds of different wills and usually they must be in writing and witnessed or must be in the handwriting of the deceased this is called a holographic will or maybe oral if the witness if it's witnessed and written down at the time or shortly thereafter so those are the kind of things that you look for as to whether or not a will is valid the big transfer here was people who who would come into a law firm and even our Law Firm on a regular basis and they would say I want to I need to change my will and we'd say well what's what happened with that they said well Fred didn't come in and he didn't make his payment on time or Fred didn't call me on the phone or Fred didn't notify me and so I'm cutting him out of my will and that would be that week and then he would be put back in the next week and so if we would always urge the people to destroy all earlier copies of the will but that didn't always work and that's one of the reasons we end up in court we had 15 copies of the will and we didn't know which one was the last one or which one really it was the one that was intended to be binding so basically a will depends on the law of the jurisdiction the place where the will is made the county the state it must refer to Or List the assets so the will can't just say I want to give everything away it actually has to say what it is you want to give away or it's going to be very difficult for anybody to to not disagree about it it has to identify who's going to benefit from the will the beneficiaries the people who receive it and it must name someone who is to be the executor or personal representative of the state that means the person who administers also called an administrator must be signed and witnessed and that was it so there are two kinds of things that occur probate may be necessary if there's a will it's called a test date the proceedings of intestate our the test state of a will that means the will is being determined what how it's going to transfer the property if there's no will then we have a an action in test state which means without a will and the and the prop if that's the case then the law you look to the law of the state because the state's law May determine how the property is to be distributed and who gets the property uh if there's no will so and Kate unless you want to disagree with what the state does I mean if you do disagree with what the state has for their way of Distributing the property you absolutely will need a will to uh distribute it different than we will go with the state and that depends on each state and each County and you need to know what that is if you want to look that up you look for some what's called intestate succession so if you typed that in for Arizona it would tell you and show you the law that happened how the law was applied if there was no will so here are a couple of definitions a testator testatrix that's the person that makes the will an administrator is the person administering the estate without a will an Executor an eccentrics female version those have been discontinued long ago but they're still around in history so you have to know about them is the person administrate administrating the estate if there is a will and a personal representative as anyone administering in a state and that's under the uniformed propane code so we did away with the male female designations and it was interesting because when I was in law school one of my La my trust in Estates probate classes were being taught by the person who wrote the uniform for probate code for across the country so that was kind of the an interesting thing that we were involved in so don't ignore this valuable set of Records these records are tremendously valuable and helpful they're just hard to find I just like to mention we have 14 videos on the BYU family history Library YouTube channel about probate so if you want to get into it in more detail I did a six-part probate series that goes into a lot more detail about how probate works and and gets more into the technical parts of the probate so your learning process never ends in other words once you start the process of doing research in genealogical research about your family you're going to find out that there's always something you need to learn it just it just happens that way that's the way it's structured it's historical things and as you go back in history the language changes the the laws change the Customs change and without learning all that information it uh research going back becomes very difficult it's difficult anyway but it becomes nearly impossible unless you go through the learning process so that's an and kind of encouraging everyone to take the time to do some some learning beyond the basic introductions okay well thanks for watching see if there are any questions here there's two questions from Sandra in the Q a say what can I infer from a 1844 galatian County widows probate that doesn't mention any family it's only seven or eight pages so mostly things being sold to people with surnames that are unfamiliar not found the will I'm trying to prove or disprove to connection to my family of the same common surname Gates brickwall Etc okay well the answer to that is those those documents are probably not in not fully explored there may be a lot more documents out there and I would keep looking at the court file and keep asking those questions if you're looking online and that's the only thing you're finding that does not mean that they have the that they digitize the entire probate file they may have only digitized a few documents and that was it because that's what they had at that time so I would be talking to the county and I would be talking to a County Historical Society and a county Geological Society and I would be questioning the court by telephone asking if uh where there might be more records that's that's kind of the solution it's just a matter of getting more records that doesn't sound like the whole probate file and maybe she had no identifiable heirs or or family members and so there was nothing they could do except sell off the property to people who were willing to pay for it when you say property no probate are you referring to land as opposed to personal property the answer is both when I say property I mean property real property which is land and personal property if there's no probate you don't you can't have land if you have land you automatically have a probate going back in time if you have even if you have very little personal property but uh what we're talking about is anything identifiable as part of the estate meaning everything owned by the deceased when they died we have a question in the chat there from Robert are Wills probate records considered public records yes the answer is definitely yes they're all public records I have to say yes because I can think right off my hand I can't think of an exception why they would not be there's no privacy dead people don't have privacy but it's helpful too because of the people that are still alive are usually named",
+  "attempts": [
+    {
+      "client": "IOS",
+      "playability": {
+        "status": "OK",
+        "playableInEmbed": true,
+        "offlineability": {
+          "buttonRenderer": {
+            "navigationEndpoint": {
+              "clickTrackingParams": "CAkQ6ewBIhMI4rTEjOzblwMVmkVMCB3RWSJ7ygEEVndfZg==",
+              "ypcGetOfflineUpsellEndpoint": {
+                "params": "ChPqqN25AQ0KC1RCQjhPUFBGU3NNIgtUQkI4T1BQRlNzTSoVCAkYAVIPCgtUQkI4T1BQRlNzTSAB"
+              }
+            },
+            "trackingParams": "CAkQ6ewBIhMI4rTEjOzblwMVmkVMCB3RWSJ7"
+          }
+        },
+        "pictureInPicture": {
+          "pictureInPictureRenderer": {
+            "playableInPip": true,
+            "offByDefault": false,
+            "shouldResumeOnHead": false
+          }
+        },
+        "miniplayer": {
+          "miniplayerRenderer": {
+            "playbackMode": "PLAYBACK_MODE_ALLOW"
+          }
+        },
+        "contextParams": "Q0FFU0FnZ0M="
+      },
+      "outcome": "ok"
+    }
+  ],
+  "fetched_at": "2026-10-28T04:11:24.145346+00:00",
+  "client": "IOS",
+  "json_path": "transcripts/065_TBB8OPPFSsM.json",
+  "text_path": "transcripts/065_TBB8OPPFSsM.txt"
+}

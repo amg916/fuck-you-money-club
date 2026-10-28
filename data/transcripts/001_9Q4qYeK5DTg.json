@@ -1,0 +1,5445 @@
+{
+  "index": 1,
+  "url": "https://www.youtube.com/watch?v=9Q4qYeK5DTg",
+  "video_id": "9Q4qYeK5DTg",
+  "status": "ok",
+  "metadata": {
+    "title": "Finding Your Ancestors' Descendants  - James Tanner (26 Feb 2023)",
+    "author": "BYU Library Family History Center",
+    "channelId": "UC7hqNOQt-2AfeVEpDuc7sCA",
+    "lengthSeconds": "2777",
+    "viewCount": "1973",
+    "shortDescription": "Descendancy research opens up a whole new world of genealogical research. All those people who are descendants of your grandparents and great-grandparents and back through all the generations are your cousins and finding them can be as challenging and interesting as following a direct line. Take some time to watch this video about how to get started with finding all those cousins. \nFor more information: https://familyhistory.lib.byu.edu/virtual-classes/finding-your-ancestors-descendants\nHandout: https://familyhistory.lib.byu.edu/0000018f-a74b-d08a-abaf-bfff074e0001/finding-your-ancestors-descendants-james-tanner-26-feb-2023-pdf",
+    "keywords": [
+      "BYU",
+      "Webinar",
+      "Family History",
+      "Library",
+      "Genealogy",
+      "Ancestor"
+    ]
+  },
+  "caption_tracks": [
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=9Q4qYeK5DTg&ei=4HXhaqbpMoOYybgPlsjZqAg&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185872&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=2086728DCD1516B9F04CF3BBE289A7E80B46289C.692EA2186A63D79E320D3E4B50B8B91609A6EDE1&key=yt8&kind=asr&lang=en",
+      "name": {
+        "runs": [
+          {
+            "text": "English (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.en",
+      "languageCode": "en",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    }
+  ],
+  "selected_track": {
+    "baseUrl": "https://www.youtube.com/api/timedtext?v=9Q4qYeK5DTg&ei=4HXhaqbpMoOYybgPlsjZqAg&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185872&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=2086728DCD1516B9F04CF3BBE289A7E80B46289C.692EA2186A63D79E320D3E4B50B8B91609A6EDE1&key=yt8&kind=asr&lang=en",
+    "name": {
+      "runs": [
+        {
+          "text": "English (auto-generated)"
+        }
+      ]
+    },
+    "vssId": "a.en",
+    "languageCode": "en",
+    "kind": "asr",
+    "isTranslatable": true,
+    "trackName": ""
+  },
+  "segments": [
+    {
+      "start": 0.06,
+      "duration": 4.259,
+      "text": "welcome to this Sunday's virtual class"
+    },
+    {
+      "start": 2.159,
+      "duration": 4.261,
+      "text": "in the Brigham Young University's family"
+    },
+    {
+      "start": 4.319,
+      "duration": 4.261,
+      "text": "history library at Provo Utah today's"
+    },
+    {
+      "start": 6.42,
+      "duration": 4.98,
+      "text": "class is finding your ancestors"
+    },
+    {
+      "start": 8.58,
+      "duration": 4.32,
+      "text": "descendants our presenters James Tanner"
+    },
+    {
+      "start": 11.4,
+      "duration": 2.88,
+      "text": "we appreciate his preparation and"
+    },
+    {
+      "start": 12.9,
+      "duration": 3.299,
+      "text": "willingness to share his knowledge on"
+    },
+    {
+      "start": 14.28,
+      "duration": 4.579,
+      "text": "this subject we'll now turn the time"
+    },
+    {
+      "start": 16.199,
+      "duration": 2.66,
+      "text": "over to James"
+    },
+    {
+      "start": 19.08,
+      "duration": 5.459,
+      "text": "well we are going to go about look about"
+    },
+    {
+      "start": 21.779,
+      "duration": 5.281,
+      "text": "finding your ancestors descendants and"
+    },
+    {
+      "start": 24.539,
+      "duration": 6.06,
+      "text": "this particular presentation is going to"
+    },
+    {
+      "start": 27.06,
+      "duration": 5.999,
+      "text": "be based primarily on familysearch.org"
+    },
+    {
+      "start": 30.599,
+      "duration": 4.62,
+      "text": "it is one of the few programs that I'm"
+    },
+    {
+      "start": 33.059,
+      "duration": 5.16,
+      "text": "aware of that will show you all your"
+    },
+    {
+      "start": 35.219,
+      "duration": 6.36,
+      "text": "descendants from back to whatever living"
+    },
+    {
+      "start": 38.219,
+      "duration": 5.581,
+      "text": "people from wherever they are and it's a"
+    },
+    {
+      "start": 41.579,
+      "duration": 5.101,
+      "text": "very interesting process and we'll get"
+    },
+    {
+      "start": 43.8,
+      "duration": 5.64,
+      "text": "right into it first of all just kind of"
+    },
+    {
+      "start": 46.68,
+      "duration": 6.3,
+      "text": "to get us oriented as to what all this"
+    },
+    {
+      "start": 49.44,
+      "duration": 8.04,
+      "text": "means is that your ancestors descendants"
+    },
+    {
+      "start": 52.98,
+      "duration": 7.2,
+      "text": "are your cousins and you have the second"
+    },
+    {
+      "start": 57.48,
+      "duration": 5.34,
+      "text": "you know twice removed three times"
+    },
+    {
+      "start": 60.18,
+      "duration": 4.799,
+      "text": "removed well is further the further you"
+    },
+    {
+      "start": 62.82,
+      "duration": 4.32,
+      "text": "go back with great great greater great"
+    },
+    {
+      "start": 64.979,
+      "duration": 4.14,
+      "text": "great great great grandparents the more"
+    },
+    {
+      "start": 67.14,
+      "duration": 4.74,
+      "text": "removed they are from you their direct"
+    },
+    {
+      "start": 69.119,
+      "duration": 4.5,
+      "text": "line at ascendants in other words their"
+    },
+    {
+      "start": 71.88,
+      "duration": 3.54,
+      "text": "children their children's children and"
+    },
+    {
+      "start": 73.619,
+      "duration": 4.32,
+      "text": "their children's children"
+    },
+    {
+      "start": 75.42,
+      "duration": 4.8,
+      "text": "obviously if you're one of the"
+    },
+    {
+      "start": 77.939,
+      "duration": 4.561,
+      "text": "descendants of a great great great great"
+    },
+    {
+      "start": 80.22,
+      "duration": 4.98,
+      "text": "grandparent it doesn't it doesn't matter"
+    },
+    {
+      "start": 82.5,
+      "duration": 4.259,
+      "text": "how many descendants they have you're"
+    },
+    {
+      "start": 85.2,
+      "duration": 3.84,
+      "text": "still that's still your great great"
+    },
+    {
+      "start": 86.759,
+      "duration": 4.201,
+      "text": "great grandfather you just share that"
+    },
+    {
+      "start": 89.04,
+      "duration": 5.579,
+      "text": "person that great first great"
+    },
+    {
+      "start": 90.96,
+      "duration": 6.18,
+      "text": "grandparent with as many descendants as"
+    },
+    {
+      "start": 94.619,
+      "duration": 4.621,
+      "text": "they are and then we'll kind of get an"
+    },
+    {
+      "start": 97.14,
+      "duration": 4.26,
+      "text": "idea of what we're talking about when"
+    },
+    {
+      "start": 99.24,
+      "duration": 3.3,
+      "text": "we're talking about uh numbers of"
+    },
+    {
+      "start": 101.4,
+      "duration": 3.359,
+      "text": "descendants"
+    },
+    {
+      "start": 102.54,
+      "duration": 5.1,
+      "text": "this is a notice I received yesterday"
+    },
+    {
+      "start": 104.759,
+      "duration": 4.801,
+      "text": "and I understand that the numbers have"
+    },
+    {
+      "start": 107.64,
+      "duration": 4.38,
+      "text": "changed dramatically since yesterday and"
+    },
+    {
+      "start": 109.56,
+      "duration": 5.4,
+      "text": "will continue to change during this week"
+    },
+    {
+      "start": 112.02,
+      "duration": 6.0,
+      "text": "where this class is being presented the"
+    },
+    {
+      "start": 114.96,
+      "duration": 6.96,
+      "text": "the beginning of the week before the"
+    },
+    {
+      "start": 118.02,
+      "duration": 7.02,
+      "text": "roots Tech Conference of 2023 so the"
+    },
+    {
+      "start": 121.92,
+      "duration": 5.1,
+      "text": "numbers here are going to be uh a"
+    },
+    {
+      "start": 125.04,
+      "duration": 3.84,
+      "text": "snapshot of what was happening uh"
+    },
+    {
+      "start": 127.02,
+      "duration": 3.18,
+      "text": "yesterday about a week before the"
+    },
+    {
+      "start": 128.88,
+      "duration": 4.74,
+      "text": "conference"
+    },
+    {
+      "start": 130.2,
+      "duration": 6.539,
+      "text": "so I had when I signed into this"
+    },
+    {
+      "start": 133.62,
+      "duration": 6.72,
+      "text": "relatives at Roots Tech kind of app that"
+    },
+    {
+      "start": 136.739,
+      "duration": 6.241,
+      "text": "they have for uh people who are"
+    },
+    {
+      "start": 140.34,
+      "duration": 5.039,
+      "text": "registered if you if you opt into this"
+    },
+    {
+      "start": 142.98,
+      "duration": 6.619,
+      "text": "if you choose to to be part of relatives"
+    },
+    {
+      "start": 145.379,
+      "duration": 8.881,
+      "text": "of the text then they'll put this up I"
+    },
+    {
+      "start": 149.599,
+      "duration": 6.961,
+      "text": "really don't have a lot of time to view"
+    },
+    {
+      "start": 154.26,
+      "duration": 5.66,
+      "text": "relationship but I have"
+    },
+    {
+      "start": 156.56,
+      "duration": 7.0,
+      "text": "6401 cousins but"
+    },
+    {
+      "start": 159.92,
+      "duration": 6.94,
+      "text": "you might be surprised uh if you and let"
+    },
+    {
+      "start": 163.56,
+      "duration": 4.86,
+      "text": "me I I analyze this I looked at it I"
+    },
+    {
+      "start": 166.86,
+      "duration": 3.48,
+      "text": "thought well what am I going to tell"
+    },
+    {
+      "start": 168.42,
+      "duration": 5.28,
+      "text": "people that why would I have six"
+    },
+    {
+      "start": 170.34,
+      "duration": 5.94,
+      "text": "thousand uh cousins well by the time I"
+    },
+    {
+      "start": 173.7,
+      "duration": 5.28,
+      "text": "finished registering by the way will go"
+    },
+    {
+      "start": 176.28,
+      "duration": 4.819,
+      "text": "on I had twelve thousand one hundred and"
+    },
+    {
+      "start": 178.98,
+      "duration": 5.339,
+      "text": "twenty four so it had doubled in about"
+    },
+    {
+      "start": 181.099,
+      "duration": 6.041,
+      "text": "10 or 15 minutes after I was doing this"
+    },
+    {
+      "start": 184.319,
+      "duration": 3.861,
+      "text": "particular registration"
+    },
+    {
+      "start": 187.14,
+      "duration": 4.14,
+      "text": "um"
+    },
+    {
+      "start": 188.18,
+      "duration": 6.1,
+      "text": "these numbers go back are basically"
+    },
+    {
+      "start": 191.28,
+      "duration": 5.64,
+      "text": "based on the family tree so if you if"
+    },
+    {
+      "start": 194.28,
+      "duration": 5.099,
+      "text": "you have your you have to have your uh"
+    },
+    {
+      "start": 196.92,
+      "duration": 4.739,
+      "text": "some kind of a TR of connection in the"
+    },
+    {
+      "start": 199.379,
+      "duration": 4.461,
+      "text": "family tree some some you have to put"
+    },
+    {
+      "start": 201.659,
+      "duration": 6.141,
+      "text": "your information in it to some extent"
+    },
+    {
+      "start": 203.84,
+      "duration": 6.52,
+      "text": "and and it obviously depends on how many"
+    },
+    {
+      "start": 207.8,
+      "duration": 5.62,
+      "text": "connections you have as you go back if"
+    },
+    {
+      "start": 210.36,
+      "duration": 5.82,
+      "text": "you have put uh let's say you're"
+    },
+    {
+      "start": 213.42,
+      "duration": 5.76,
+      "text": "you start a new account a new part of"
+    },
+    {
+      "start": 216.18,
+      "duration": 6.54,
+      "text": "the family tree and family search and"
+    },
+    {
+      "start": 219.18,
+      "duration": 5.94,
+      "text": "you put in you and your parents uh"
+    },
+    {
+      "start": 222.72,
+      "duration": 4.86,
+      "text": "and they don't register for root stick"
+    },
+    {
+      "start": 225.12,
+      "duration": 5.28,
+      "text": "then you probably won't have any"
+    },
+    {
+      "start": 227.58,
+      "duration": 4.98,
+      "text": "relatives in root stick because they"
+    },
+    {
+      "start": 230.4,
+      "duration": 5.16,
+      "text": "won't have any way to know if you're"
+    },
+    {
+      "start": 232.56,
+      "duration": 4.8,
+      "text": "related so the larger you the more time"
+    },
+    {
+      "start": 235.56,
+      "duration": 5.459,
+      "text": "you've spent putting names in family"
+    },
+    {
+      "start": 237.36,
+      "duration": 5.34,
+      "text": "search then the larger this number and"
+    },
+    {
+      "start": 241.019,
+      "duration": 3.78,
+      "text": "of course I have a little bit of a head"
+    },
+    {
+      "start": 242.7,
+      "duration": 4.259,
+      "text": "start on most of you because I start at"
+    },
+    {
+      "start": 244.799,
+      "duration": 5.16,
+      "text": "40 years plus ago"
+    },
+    {
+      "start": 246.959,
+      "duration": 6.36,
+      "text": "so after 40 years I've managed to"
+    },
+    {
+      "start": 249.959,
+      "duration": 4.92,
+      "text": "accumulate a vast number of relatives"
+    },
+    {
+      "start": 253.319,
+      "duration": 4.441,
+      "text": "around the world"
+    },
+    {
+      "start": 254.879,
+      "duration": 6.961,
+      "text": "and the interesting part about this is"
+    },
+    {
+      "start": 257.76,
+      "duration": 5.82,
+      "text": "uh where all these relatives are so you"
+    },
+    {
+      "start": 261.84,
+      "duration": 3.48,
+      "text": "see it jumped a bit this is the number"
+    },
+    {
+      "start": 263.58,
+      "duration": 5.46,
+      "text": "that uh"
+    },
+    {
+      "start": 265.32,
+      "duration": 5.46,
+      "text": "uh it just keeps jumping up as we go"
+    },
+    {
+      "start": 269.04,
+      "duration": 4.32,
+      "text": "along but I think that's the total"
+    },
+    {
+      "start": 270.78,
+      "duration": 5.1,
+      "text": "number of people on the program because"
+    },
+    {
+      "start": 273.36,
+      "duration": 3.899,
+      "text": "if if I'm already yeah it says total"
+    },
+    {
+      "start": 275.88,
+      "duration": 3.36,
+      "text": "participants"
+    },
+    {
+      "start": 277.259,
+      "duration": 6.061,
+      "text": "so that was the number yesterday and I"
+    },
+    {
+      "start": 279.24,
+      "duration": 5.76,
+      "text": "understand by today it's has doubled"
+    },
+    {
+      "start": 283.32,
+      "duration": 3.599,
+      "text": "but you can see that there are people"
+    },
+    {
+      "start": 285.0,
+      "duration": 4.32,
+      "text": "all around the world I have more than a"
+    },
+    {
+      "start": 286.919,
+      "duration": 4.141,
+      "text": "hundred thousand relatives in the United"
+    },
+    {
+      "start": 289.32,
+      "duration": 4.2,
+      "text": "States or"
+    },
+    {
+      "start": 291.06,
+      "duration": 5.88,
+      "text": "or wherever"
+    },
+    {
+      "start": 293.52,
+      "duration": 5.52,
+      "text": "and so this is uh this this gives you a"
+    },
+    {
+      "start": 296.94,
+      "duration": 5.58,
+      "text": "kind of a Global Perspective"
+    },
+    {
+      "start": 299.04,
+      "duration": 6.0,
+      "text": "and how I managed to get relatives in"
+    },
+    {
+      "start": 302.52,
+      "duration": 4.2,
+      "text": "China and all throughout Africa and"
+    },
+    {
+      "start": 305.04,
+      "duration": 4.92,
+      "text": "South America and"
+    },
+    {
+      "start": 306.72,
+      "duration": 7.32,
+      "text": "in other places I have no idea but"
+    },
+    {
+      "start": 309.96,
+      "duration": 7.679,
+      "text": "that's kind of an interesting uh an"
+    },
+    {
+      "start": 314.04,
+      "duration": 7.62,
+      "text": "interesting thing to uh to discuss and"
+    },
+    {
+      "start": 317.639,
+      "duration": 5.701,
+      "text": "to view and to find out that you really"
+    },
+    {
+      "start": 321.66,
+      "duration": 3.84,
+      "text": "do have all these people and by the way"
+    },
+    {
+      "start": 323.34,
+      "duration": 5.4,
+      "text": "this works for people who are registered"
+    },
+    {
+      "start": 325.5,
+      "duration": 5.699,
+      "text": "online as well as registered at the live"
+    },
+    {
+      "start": 328.74,
+      "duration": 5.0,
+      "text": "concert conference so don't don't"
+    },
+    {
+      "start": 331.199,
+      "duration": 5.94,
+      "text": "hesitate to register for roots Tech"
+    },
+    {
+      "start": 333.74,
+      "duration": 6.82,
+      "text": "online because there's no charge and so"
+    },
+    {
+      "start": 337.139,
+      "duration": 5.28,
+      "text": "you'll get the the complete impact of"
+    },
+    {
+      "start": 340.56,
+      "duration": 4.979,
+      "text": "this"
+    },
+    {
+      "start": 342.419,
+      "duration": 6.601,
+      "text": "but before you begin the descendancy"
+    },
+    {
+      "start": 345.539,
+      "duration": 4.5,
+      "text": "research this is something that I go"
+    },
+    {
+      "start": 349.02,
+      "duration": 5.28,
+      "text": "through"
+    },
+    {
+      "start": 350.039,
+      "duration": 6.841,
+      "text": "repeatedly with people uh it's not it's"
+    },
+    {
+      "start": 354.3,
+      "duration": 4.56,
+      "text": "very common when someone will come in at"
+    },
+    {
+      "start": 356.88,
+      "duration": 3.539,
+      "text": "the library or they'll contact me"
+    },
+    {
+      "start": 358.86,
+      "duration": 5.94,
+      "text": "directly and say"
+    },
+    {
+      "start": 360.419,
+      "duration": 8.761,
+      "text": "I need some help I'm trying to find Jon"
+    },
+    {
+      "start": 364.8,
+      "duration": 7.5,
+      "text": "Jones and he lived in England in uh he"
+    },
+    {
+      "start": 369.18,
+      "duration": 7.26,
+      "text": "lived in England and uh he was probably"
+    },
+    {
+      "start": 372.3,
+      "duration": 4.14,
+      "text": "christened around 1740."
+    },
+    {
+      "start": 377.699,
+      "duration": 5.761,
+      "text": "and and I go back to him"
+    },
+    {
+      "start": 380.46,
+      "duration": 5.88,
+      "text": "and I go and you're looking for what and"
+    },
+    {
+      "start": 383.46,
+      "duration": 5.22,
+      "text": "well we're looking for his parents"
+    },
+    {
+      "start": 386.34,
+      "duration": 5.639,
+      "text": "and so the answer is"
+    },
+    {
+      "start": 388.68,
+      "duration": 5.7,
+      "text": "well I need to know before I can help"
+    },
+    {
+      "start": 391.979,
+      "duration": 3.961,
+      "text": "you and this is kind of my polite way of"
+    },
+    {
+      "start": 394.38,
+      "duration": 4.14,
+      "text": "putting this"
+    },
+    {
+      "start": 395.94,
+      "duration": 4.08,
+      "text": "I need to help before I can help you I"
+    },
+    {
+      "start": 398.52,
+      "duration": 3.899,
+      "text": "need to get some idea how you're"
+    },
+    {
+      "start": 400.02,
+      "duration": 4.44,
+      "text": "connected to this person"
+    },
+    {
+      "start": 402.419,
+      "duration": 4.4,
+      "text": "so we sit down"
+    },
+    {
+      "start": 404.46,
+      "duration": 6.06,
+      "text": "and we go through their family tree"
+    },
+    {
+      "start": 406.819,
+      "duration": 6.22,
+      "text": "portion their pedigree back to the"
+    },
+    {
+      "start": 410.52,
+      "duration": 3.48,
+      "text": "connection of that person and in each"
+    },
+    {
+      "start": 413.039,
+      "duration": 2.28,
+      "text": "case"
+    },
+    {
+      "start": 414.0,
+      "duration": 3.3,
+      "text": "we"
+    },
+    {
+      "start": 415.319,
+      "duration": 4.5,
+      "text": "look for"
+    },
+    {
+      "start": 417.3,
+      "duration": 6.0,
+      "text": "a valid sourced parent-child"
+    },
+    {
+      "start": 419.819,
+      "duration": 7.32,
+      "text": "relationship for each generation"
+    },
+    {
+      "start": 423.3,
+      "duration": 6.66,
+      "text": "now what does that mean it means"
+    },
+    {
+      "start": 427.139,
+      "duration": 4.941,
+      "text": "that um"
+    },
+    {
+      "start": 429.96,
+      "duration": 3.739,
+      "text": "we have a document"
+    },
+    {
+      "start": 432.08,
+      "duration": 5.619,
+      "text": "historically"
+    },
+    {
+      "start": 433.699,
+      "duration": 5.981,
+      "text": "valid genealogically source document"
+    },
+    {
+      "start": 437.699,
+      "duration": 5.881,
+      "text": "that says"
+    },
+    {
+      "start": 439.68,
+      "duration": 5.1,
+      "text": "this person is the child of this person"
+    },
+    {
+      "start": 443.58,
+      "duration": 3.72,
+      "text": "okay"
+    },
+    {
+      "start": 444.78,
+      "duration": 5.28,
+      "text": "so that's kind of the simple basis for"
+    },
+    {
+      "start": 447.3,
+      "duration": 4.92,
+      "text": "this whole idea of doing genealogy"
+    },
+    {
+      "start": 450.06,
+      "duration": 5.759,
+      "text": "so I clicked back"
+    },
+    {
+      "start": 452.22,
+      "duration": 5.16,
+      "text": "on one of the lines that I have that I"
+    },
+    {
+      "start": 455.819,
+      "duration": 4.201,
+      "text": "happen to know"
+    },
+    {
+      "start": 457.38,
+      "duration": 6.06,
+      "text": "uh a little bit about"
+    },
+    {
+      "start": 460.02,
+      "duration": 5.399,
+      "text": "let's say more than usual and"
+    },
+    {
+      "start": 463.44,
+      "duration": 4.199,
+      "text": "I clicked back and I just stopped"
+    },
+    {
+      "start": 465.419,
+      "duration": 4.921,
+      "text": "clicking after a while because I figured"
+    },
+    {
+      "start": 467.639,
+      "duration": 4.741,
+      "text": "this probably Illustrated"
+    },
+    {
+      "start": 470.34,
+      "duration": 5.94,
+      "text": "so if I'm clicking back on this line"
+    },
+    {
+      "start": 472.38,
+      "duration": 5.28,
+      "text": "which is the Morgan line and the"
+    },
+    {
+      "start": 476.28,
+      "duration": 2.88,
+      "text": "Morgan's"
+    },
+    {
+      "start": 477.66,
+      "duration": 4.319,
+      "text": "first of all kind of give you a"
+    },
+    {
+      "start": 479.16,
+      "duration": 6.479,
+      "text": "background of this Morgan is one of the"
+    },
+    {
+      "start": 481.979,
+      "duration": 6.481,
+      "text": "top five most common names in Wales"
+    },
+    {
+      "start": 485.639,
+      "duration": 4.861,
+      "text": "and it's also common in England and it's"
+    },
+    {
+      "start": 488.46,
+      "duration": 5.639,
+      "text": "also commented in Scotland and it's"
+    },
+    {
+      "start": 490.5,
+      "duration": 6.96,
+      "text": "gotten content and lots of other places"
+    },
+    {
+      "start": 494.099,
+      "duration": 5.361,
+      "text": "which is tremendously common name"
+    },
+    {
+      "start": 497.46,
+      "duration": 5.459,
+      "text": "but what's happened in this line of"
+    },
+    {
+      "start": 499.46,
+      "duration": 5.139,
+      "text": "Morgans that goes back is that at some"
+    },
+    {
+      "start": 502.919,
+      "duration": 3.78,
+      "text": "point in the line"
+    },
+    {
+      "start": 504.599,
+      "duration": 4.981,
+      "text": "they just decided they would jump to"
+    },
+    {
+      "start": 506.699,
+      "duration": 6.26,
+      "text": "somebody that they could find easily"
+    },
+    {
+      "start": 509.58,
+      "duration": 6.48,
+      "text": "that was famous and had the name Morgan"
+    },
+    {
+      "start": 512.959,
+      "duration": 4.541,
+      "text": "and so they just kept going back and"
+    },
+    {
+      "start": 516.06,
+      "duration": 4.14,
+      "text": "back and they just picked up all the"
+    },
+    {
+      "start": 517.5,
+      "duration": 6.06,
+      "text": "mortgage so this is line that that is"
+    },
+    {
+      "start": 520.2,
+      "duration": 5.639,
+      "text": "kind of blatantly not supportable by any"
+    },
+    {
+      "start": 523.56,
+      "duration": 4.08,
+      "text": "historical documents if you look over"
+    },
+    {
+      "start": 525.839,
+      "duration": 2.94,
+      "text": "here the person in the middle of this"
+    },
+    {
+      "start": 527.64,
+      "duration": 7.259,
+      "text": "pedigree"
+    },
+    {
+      "start": 528.779,
+      "duration": 9.18,
+      "text": "as well an app I for bedri bledri and he"
+    },
+    {
+      "start": 534.899,
+      "duration": 4.681,
+      "text": "has zero sources zero memories I mean"
+    },
+    {
+      "start": 537.959,
+      "duration": 3.721,
+      "text": "there's nothing in here to support this"
+    },
+    {
+      "start": 539.58,
+      "duration": 4.02,
+      "text": "and the interesting thing about it is"
+    },
+    {
+      "start": 541.68,
+      "duration": 3.48,
+      "text": "you've looked down at his birth here on"
+    },
+    {
+      "start": 543.6,
+      "duration": 3.66,
+      "text": "the right hand side"
+    },
+    {
+      "start": 545.16,
+      "duration": 4.28,
+      "text": "you'll see he is saying I'm going to try"
+    },
+    {
+      "start": 547.26,
+      "duration": 4.68,
+      "text": "to say all that said tredica"
+    },
+    {
+      "start": 549.44,
+      "duration": 3.88,
+      "text": "monmouthshire Wales"
+    },
+    {
+      "start": 551.94,
+      "duration": 3.12,
+      "text": "and"
+    },
+    {
+      "start": 553.32,
+      "duration": 2.88,
+      "text": "this other place so he's born in two"
+    },
+    {
+      "start": 555.06,
+      "duration": 3.3,
+      "text": "different places and they're two"
+    },
+    {
+      "start": 556.2,
+      "duration": 3.78,
+      "text": "different parts of Wales and so he's"
+    },
+    {
+      "start": 558.36,
+      "duration": 4.919,
+      "text": "quite a unique character since he was"
+    },
+    {
+      "start": 559.98,
+      "duration": 5.52,
+      "text": "born twice in two different places but"
+    },
+    {
+      "start": 563.279,
+      "duration": 4.74,
+      "text": "this is kind of what happens back in"
+    },
+    {
+      "start": 565.5,
+      "duration": 5.58,
+      "text": "this these records and because you don't"
+    },
+    {
+      "start": 568.019,
+      "duration": 5.101,
+      "text": "focus on the place where he was born"
+    },
+    {
+      "start": 571.08,
+      "duration": 4.8,
+      "text": "you assume that there's some kind of"
+    },
+    {
+      "start": 573.12,
+      "duration": 3.779,
+      "text": "source because here usually date and it"
+    },
+    {
+      "start": 575.88,
+      "duration": 3.6,
+      "text": "gives you"
+    },
+    {
+      "start": 576.899,
+      "duration": 4.681,
+      "text": "a place for a person was born"
+    },
+    {
+      "start": 579.48,
+      "duration": 3.299,
+      "text": "well let's look a little bit further"
+    },
+    {
+      "start": 581.58,
+      "duration": 3.6,
+      "text": "here"
+    },
+    {
+      "start": 582.779,
+      "duration": 5.281,
+      "text": "and see what happens"
+    },
+    {
+      "start": 585.18,
+      "duration": 4.14,
+      "text": "that's a little bit closer look at what"
+    },
+    {
+      "start": 588.06,
+      "duration": 4.56,
+      "text": "he did"
+    },
+    {
+      "start": 589.32,
+      "duration": 5.76,
+      "text": "what that record shows so then if we"
+    },
+    {
+      "start": 592.62,
+      "duration": 3.899,
+      "text": "just do a little bit of"
+    },
+    {
+      "start": 595.08,
+      "duration": 5.52,
+      "text": "research"
+    },
+    {
+      "start": 596.519,
+      "duration": 9.421,
+      "text": "we find that these people are all on"
+    },
+    {
+      "start": 600.6,
+      "duration": 9.48,
+      "text": "A Welch Wiki so this page was it's the"
+    },
+    {
+      "start": 605.94,
+      "duration": 6.36,
+      "text": "witchy Peter because it is not"
+    },
+    {
+      "start": 610.08,
+      "duration": 3.36,
+      "text": "originally in Welch and it's translated"
+    },
+    {
+      "start": 612.3,
+      "duration": 3.0,
+      "text": "in English"
+    },
+    {
+      "start": 613.44,
+      "duration": 3.12,
+      "text": "the interesting thing about this"
+    },
+    {
+      "start": 615.3,
+      "duration": 3.38,
+      "text": "particular"
+    },
+    {
+      "start": 616.56,
+      "duration": 2.12,
+      "text": "um"
+    },
+    {
+      "start": 618.899,
+      "duration": 5.94,
+      "text": "document as it says we have few solid"
+    },
+    {
+      "start": 622.38,
+      "duration": 4.98,
+      "text": "facts about him"
+    },
+    {
+      "start": 624.839,
+      "duration": 5.701,
+      "text": "well if you have few solid facts then"
+    },
+    {
+      "start": 627.36,
+      "duration": 6.24,
+      "text": "you don't have any facts"
+    },
+    {
+      "start": 630.54,
+      "duration": 6.419,
+      "text": "so this is the basically this person was"
+    },
+    {
+      "start": 633.6,
+      "duration": 8.84,
+      "text": "taken out of some kind of of oral"
+    },
+    {
+      "start": 636.959,
+      "duration": 5.481,
+      "text": "history of or or poetry from"
+    },
+    {
+      "start": 642.54,
+      "duration": 4.979,
+      "text": "from Wales it's kind of like saying you"
+    },
+    {
+      "start": 645.0,
+      "duration": 5.04,
+      "text": "were related to King Arthur and all of"
+    },
+    {
+      "start": 647.519,
+      "duration": 5.06,
+      "text": "the different kinds of"
+    },
+    {
+      "start": 650.04,
+      "duration": 2.539,
+      "text": "of"
+    },
+    {
+      "start": 652.98,
+      "duration": 4.2,
+      "text": "different kinds of things that have been"
+    },
+    {
+      "start": 654.959,
+      "duration": 4.921,
+      "text": "written about whether Arthur King Arthur"
+    },
+    {
+      "start": 657.18,
+      "duration": 5.159,
+      "text": "was actual person or whatever and"
+    },
+    {
+      "start": 659.88,
+      "duration": 4.32,
+      "text": "they're still kind of out"
+    },
+    {
+      "start": 662.339,
+      "duration": 4.44,
+      "text": "the the"
+    },
+    {
+      "start": 664.2,
+      "duration": 5.22,
+      "text": "historic history and all the writings"
+    },
+    {
+      "start": 666.779,
+      "duration": 6.541,
+      "text": "and everything are still kind of uh out"
+    },
+    {
+      "start": 669.42,
+      "duration": 6.24,
+      "text": "on out on maybe and maybe not for Arthur"
+    },
+    {
+      "start": 673.32,
+      "duration": 4.44,
+      "text": "but for these guys there's no"
+    },
+    {
+      "start": 675.66,
+      "duration": 4.739,
+      "text": "there's not even that much interest not"
+    },
+    {
+      "start": 677.76,
+      "duration": 6.18,
+      "text": "that many people are looking for them"
+    },
+    {
+      "start": 680.399,
+      "duration": 4.921,
+      "text": "so where where did this line really end"
+    },
+    {
+      "start": 683.94,
+      "duration": 4.98,
+      "text": "no"
+    },
+    {
+      "start": 685.32,
+      "duration": 8.28,
+      "text": "I say that but I mean is where was there"
+    },
+    {
+      "start": 688.92,
+      "duration": 6.84,
+      "text": "someone added as a parent with no source"
+    },
+    {
+      "start": 693.6,
+      "duration": 4.739,
+      "text": "there's nothing that shows us where they"
+    },
+    {
+      "start": 695.76,
+      "duration": 4.139,
+      "text": "got the information or that there was"
+    },
+    {
+      "start": 698.339,
+      "duration": 5.641,
+      "text": "any information"
+    },
+    {
+      "start": 699.899,
+      "duration": 7.981,
+      "text": "so if we look at this what we're going"
+    },
+    {
+      "start": 703.98,
+      "duration": 6.18,
+      "text": "to find is that and come down the whole"
+    },
+    {
+      "start": 707.88,
+      "duration": 5.459,
+      "text": "the whole line here"
+    },
+    {
+      "start": 710.16,
+      "duration": 6.0,
+      "text": "we also start looking and see if there"
+    },
+    {
+      "start": 713.339,
+      "duration": 4.801,
+      "text": "were any if there anything about this"
+    },
+    {
+      "start": 716.16,
+      "duration": 5.22,
+      "text": "person that we need to know this well in"
+    },
+    {
+      "start": 718.14,
+      "duration": 5.22,
+      "text": "appi for bloody Petri and it says"
+    },
+    {
+      "start": 721.38,
+      "duration": 3.84,
+      "text": "basically I clicked on whether I was"
+    },
+    {
+      "start": 723.36,
+      "duration": 3.9,
+      "text": "related view my relationship and I"
+    },
+    {
+      "start": 725.22,
+      "duration": 4.739,
+      "text": "wasn't even related this thing because"
+    },
+    {
+      "start": 727.26,
+      "duration": 4.62,
+      "text": "he's Beyond 15 generations and they're"
+    },
+    {
+      "start": 729.959,
+      "duration": 5.221,
+      "text": "not going to say you're related"
+    },
+    {
+      "start": 731.88,
+      "duration": 5.699,
+      "text": "so family search is at least put some"
+    },
+    {
+      "start": 735.18,
+      "duration": 4.5,
+      "text": "limit on the total number of generations"
+    },
+    {
+      "start": 737.579,
+      "duration": 3.961,
+      "text": "you can go back before any before even"
+    },
+    {
+      "start": 739.68,
+      "duration": 3.839,
+      "text": "they believe or even want to believe"
+    },
+    {
+      "start": 741.54,
+      "duration": 5.52,
+      "text": "that you're related"
+    },
+    {
+      "start": 743.519,
+      "duration": 5.76,
+      "text": "so I went up the line from me up back"
+    },
+    {
+      "start": 747.06,
+      "duration": 4.8,
+      "text": "through my Morgan line which is my"
+    },
+    {
+      "start": 749.279,
+      "duration": 6.721,
+      "text": "mother and my grandmother and my my"
+    },
+    {
+      "start": 751.86,
+      "duration": 6.06,
+      "text": "grandfather and his family going back"
+    },
+    {
+      "start": 756.0,
+      "duration": 5.7,
+      "text": "the Morgan Family"
+    },
+    {
+      "start": 757.92,
+      "duration": 6.539,
+      "text": "and I found this record this is uh"
+    },
+    {
+      "start": 761.7,
+      "duration": 4.319,
+      "text": "Gerard Morgan and it says that he's in"
+    },
+    {
+      "start": 764.459,
+      "duration": 4.62,
+      "text": "the entry for Gerard Mark and Virginia"
+    },
+    {
+      "start": 766.019,
+      "duration": 5.581,
+      "text": "burst well that's Gerard Morgan and his"
+    },
+    {
+      "start": 769.079,
+      "duration": 6.361,
+      "text": "son Gerard Morgan and that son was born"
+    },
+    {
+      "start": 771.6,
+      "duration": 6.539,
+      "text": "and an entry well this is Gerard Morgan"
+    },
+    {
+      "start": 775.44,
+      "duration": 4.56,
+      "text": "who was born and that 1584 doesn't have"
+    },
+    {
+      "start": 778.139,
+      "duration": 6.541,
+      "text": "anything to do with anything because he"
+    },
+    {
+      "start": 780.0,
+      "duration": 7.5,
+      "text": "was born in 1755 and his son was born a"
+    },
+    {
+      "start": 784.68,
+      "duration": 4.14,
+      "text": "number of years later so none of these I"
+    },
+    {
+      "start": 787.5,
+      "duration": 3.36,
+      "text": "might I'm not going to go through the"
+    },
+    {
+      "start": 788.82,
+      "duration": 4.38,
+      "text": "whole discussion of each of these"
+    },
+    {
+      "start": 790.86,
+      "duration": 4.919,
+      "text": "sources but none of these sources show"
+    },
+    {
+      "start": 793.2,
+      "duration": 4.379,
+      "text": "who Gerard Morgan's father was"
+    },
+    {
+      "start": 795.779,
+      "duration": 4.201,
+      "text": "they're just there's just no nothing"
+    },
+    {
+      "start": 797.579,
+      "duration": 4.26,
+      "text": "there that shows who the father was even"
+    },
+    {
+      "start": 799.98,
+      "duration": 3.24,
+      "text": "the book which is a book down at the"
+    },
+    {
+      "start": 801.839,
+      "duration": 2.94,
+      "text": "bottom of the page"
+    },
+    {
+      "start": 803.22,
+      "duration": 3.96,
+      "text": "so"
+    },
+    {
+      "start": 804.779,
+      "duration": 4.68,
+      "text": "from this point on going back"
+    },
+    {
+      "start": 807.18,
+      "duration": 4.62,
+      "text": "there are no Source records documenting"
+    },
+    {
+      "start": 809.459,
+      "duration": 4.38,
+      "text": "a parent-child relationship"
+    },
+    {
+      "start": 811.8,
+      "duration": 3.0,
+      "text": "and that means this is the end of the"
+    },
+    {
+      "start": 813.839,
+      "duration": 4.261,
+      "text": "line"
+    },
+    {
+      "start": 814.8,
+      "duration": 4.56,
+      "text": "now so why do I saying this well because"
+    },
+    {
+      "start": 818.1,
+      "duration": 4.2,
+      "text": "we're going to be talk about doing"
+    },
+    {
+      "start": 819.36,
+      "duration": 5.7,
+      "text": "ascendancy and to do descendancy you"
+    },
+    {
+      "start": 822.3,
+      "duration": 4.94,
+      "text": "have to pick an ancestor back on your"
+    },
+    {
+      "start": 825.06,
+      "duration": 5.04,
+      "text": "family line and then start"
+    },
+    {
+      "start": 827.24,
+      "duration": 4.599,
+      "text": "researching all of their descendants all"
+    },
+    {
+      "start": 830.1,
+      "duration": 4.44,
+      "text": "their children children's children so"
+    },
+    {
+      "start": 831.839,
+      "duration": 5.101,
+      "text": "forth and so when we're talking about"
+    },
+    {
+      "start": 834.54,
+      "duration": 3.84,
+      "text": "that it's very important to find out"
+    },
+    {
+      "start": 836.94,
+      "duration": 3.72,
+      "text": "whether you're related to this because"
+    },
+    {
+      "start": 838.38,
+      "duration": 4.32,
+      "text": "if you're not related to it so here's"
+    },
+    {
+      "start": 840.66,
+      "duration": 6.119,
+      "text": "the difference the difference is Gerard"
+    },
+    {
+      "start": 842.7,
+      "duration": 6.0,
+      "text": "Morgan was around 1755 as opposed to"
+    },
+    {
+      "start": 846.779,
+      "duration": 3.901,
+      "text": "1220."
+    },
+    {
+      "start": 848.7,
+      "duration": 3.98,
+      "text": "I mean that's like"
+    },
+    {
+      "start": 850.68,
+      "duration": 2.0,
+      "text": "um"
+    },
+    {
+      "start": 853.019,
+      "duration": 6.12,
+      "text": "500 years with of stuff that if you"
+    },
+    {
+      "start": 857.16,
+      "duration": 5.64,
+      "text": "wanted to go back and start back 500"
+    },
+    {
+      "start": 859.139,
+      "duration": 6.241,
+      "text": "years then in the past then you probably"
+    },
+    {
+      "start": 862.8,
+      "duration": 5.599,
+      "text": "have a whole different world to work"
+    },
+    {
+      "start": 865.38,
+      "duration": 3.019,
+      "text": "with obviously"
+    },
+    {
+      "start": 868.86,
+      "duration": 3.96,
+      "text": "so"
+    },
+    {
+      "start": 870.899,
+      "duration": 4.921,
+      "text": "this is kind of a rule of thumb now"
+    },
+    {
+      "start": 872.82,
+      "duration": 4.92,
+      "text": "rules of thumb are helpful because they"
+    },
+    {
+      "start": 875.82,
+      "duration": 3.6,
+      "text": "give you a guideline and then when you"
+    },
+    {
+      "start": 877.74,
+      "duration": 3.12,
+      "text": "get out of that guideline and you say"
+    },
+    {
+      "start": 879.42,
+      "duration": 4.68,
+      "text": "well this is an exception to the"
+    },
+    {
+      "start": 880.86,
+      "duration": 5.88,
+      "text": "guideline then you pretty well are the"
+    },
+    {
+      "start": 884.1,
+      "duration": 5.099,
+      "text": "the burdens on you to show that there's"
+    },
+    {
+      "start": 886.74,
+      "duration": 5.64,
+      "text": "some reason why you would go past this"
+    },
+    {
+      "start": 889.199,
+      "duration": 6.0,
+      "text": "this this line and and that you have"
+    },
+    {
+      "start": 892.38,
+      "duration": 5.639,
+      "text": "some kind of valid uh Source material"
+    },
+    {
+      "start": 895.199,
+      "duration": 5.64,
+      "text": "that that talks you back for that far"
+    },
+    {
+      "start": 898.019,
+      "duration": 4.801,
+      "text": "and uh going back in time you'll find"
+    },
+    {
+      "start": 900.839,
+      "duration": 3.961,
+      "text": "that most of the pedigrees especially"
+    },
+    {
+      "start": 902.82,
+      "duration": 6.959,
+      "text": "those on the family search family tree"
+    },
+    {
+      "start": 904.8,
+      "duration": 7.979,
+      "text": "really end up before the 1700 A.D"
+    },
+    {
+      "start": 909.779,
+      "duration": 4.92,
+      "text": "there's a relatively few of the"
+    },
+    {
+      "start": 912.779,
+      "duration": 4.441,
+      "text": "thousands and thousands of possibilities"
+    },
+    {
+      "start": 914.699,
+      "duration": 5.041,
+      "text": "you realize of course that as you go"
+    },
+    {
+      "start": 917.22,
+      "duration": 4.859,
+      "text": "back in time it's a geometric"
+    },
+    {
+      "start": 919.74,
+      "duration": 8.64,
+      "text": "progression of all your ancestors it's 2"
+    },
+    {
+      "start": 922.079,
+      "duration": 13.44,
+      "text": "4 8 16 32 64 you know 120 128"
+    },
+    {
+      "start": 928.38,
+      "duration": 8.699,
+      "text": "uh 256 512 Etc 512 and 1024 ancestors"
+    },
+    {
+      "start": 935.519,
+      "duration": 3.361,
+      "text": "and then if you take all their"
+    },
+    {
+      "start": 937.079,
+      "duration": 4.081,
+      "text": "descendants then you can begin to see"
+    },
+    {
+      "start": 938.88,
+      "duration": 4.56,
+      "text": "why I have that many relatives on the"
+    },
+    {
+      "start": 941.16,
+      "duration": 4.32,
+      "text": "roots Tech website"
+    },
+    {
+      "start": 943.44,
+      "duration": 3.54,
+      "text": "so when you have all those numbers and"
+    },
+    {
+      "start": 945.48,
+      "duration": 2.94,
+      "text": "they've all and a lot of that research"
+    },
+    {
+      "start": 946.98,
+      "duration": 4.08,
+      "text": "has been done and there's all those"
+    },
+    {
+      "start": 948.42,
+      "duration": 3.84,
+      "text": "people in the family tree then really do"
+    },
+    {
+      "start": 951.06,
+      "duration": 3.18,
+      "text": "if you really do have that many"
+    },
+    {
+      "start": 952.26,
+      "duration": 5.519,
+      "text": "relatives and you really are related to"
+    },
+    {
+      "start": 954.24,
+      "duration": 6.719,
+      "text": "all those people and uh it's it's very"
+    },
+    {
+      "start": 957.779,
+      "duration": 5.521,
+      "text": "interesting to be rated to be be related"
+    },
+    {
+      "start": 960.959,
+      "duration": 4.861,
+      "text": "to all that many people but it's only"
+    },
+    {
+      "start": 963.3,
+      "duration": 6.14,
+      "text": "interesting because there's really no"
+    },
+    {
+      "start": 965.82,
+      "duration": 6.12,
+      "text": "way that you can be uh you know"
+    },
+    {
+      "start": 969.44,
+      "duration": 5.199,
+      "text": "culturally in the United States it would"
+    },
+    {
+      "start": 971.94,
+      "duration": 4.98,
+      "text": "be it's it's almost impossible to to"
+    },
+    {
+      "start": 974.639,
+      "duration": 4.26,
+      "text": "claim that you have fifth cousins that"
+    },
+    {
+      "start": 976.92,
+      "duration": 3.419,
+      "text": "you're familiar with unless it's just"
+    },
+    {
+      "start": 978.899,
+      "duration": 2.581,
+      "text": "somebody you happen to work with or go"
+    },
+    {
+      "start": 980.339,
+      "duration": 4.5,
+      "text": "to school with"
+    },
+    {
+      "start": 981.48,
+      "duration": 5.52,
+      "text": "so anyway make sure you're related make"
+    },
+    {
+      "start": 984.839,
+      "duration": 3.661,
+      "text": "sure as you go back in time that you're"
+    },
+    {
+      "start": 987.0,
+      "duration": 3.54,
+      "text": "actually related to the person that"
+    },
+    {
+      "start": 988.5,
+      "duration": 4.74,
+      "text": "you're going to start with unless you"
+    },
+    {
+      "start": 990.54,
+      "duration": 3.9,
+      "text": "just want to research random families if"
+    },
+    {
+      "start": 993.24,
+      "duration": 3.06,
+      "text": "you really don't care if you're related"
+    },
+    {
+      "start": 994.44,
+      "duration": 4.259,
+      "text": "to the person and you just want to go"
+    },
+    {
+      "start": 996.3,
+      "duration": 4.32,
+      "text": "back and take some famous person decide"
+    },
+    {
+      "start": 998.699,
+      "duration": 3.961,
+      "text": "to find out all the people that are"
+    },
+    {
+      "start": 1000.62,
+      "duration": 4.139,
+      "text": "descended from them then that's one"
+    },
+    {
+      "start": 1002.66,
+      "duration": 4.919,
+      "text": "thing but that's not doing your own"
+    },
+    {
+      "start": 1004.759,
+      "duration": 6.361,
+      "text": "genealogy that's just doing genealogy"
+    },
+    {
+      "start": 1007.579,
+      "duration": 6.301,
+      "text": "for somebody random out there"
+    },
+    {
+      "start": 1011.12,
+      "duration": 5.519,
+      "text": "this opens up a whole a whole question"
+    },
+    {
+      "start": 1013.88,
+      "duration": 6.3,
+      "text": "because a lot of people have spent a lot"
+    },
+    {
+      "start": 1016.639,
+      "duration": 6.301,
+      "text": "of time working on on people that go"
+    },
+    {
+      "start": 1020.18,
+      "duration": 6.84,
+      "text": "back on Royal lines and other lines that"
+    },
+    {
+      "start": 1022.94,
+      "duration": 6.18,
+      "text": "go back very much further than than even"
+    },
+    {
+      "start": 1027.02,
+      "duration": 4.74,
+      "text": "that"
+    },
+    {
+      "start": 1029.12,
+      "duration": 4.76,
+      "text": "1200 A.D figure"
+    },
+    {
+      "start": 1031.76,
+      "duration": 5.4,
+      "text": "and the question is"
+    },
+    {
+      "start": 1033.88,
+      "duration": 6.22,
+      "text": "all of that is is pretty much been done"
+    },
+    {
+      "start": 1037.16,
+      "duration": 5.399,
+      "text": "all that genealogy is all you're doing"
+    },
+    {
+      "start": 1040.1,
+      "duration": 6.54,
+      "text": "when you get back past a certain point"
+    },
+    {
+      "start": 1042.559,
+      "duration": 5.661,
+      "text": "and that's about 1500 is your you're"
+    },
+    {
+      "start": 1046.64,
+      "duration": 3.84,
+      "text": "you're just copying"
+    },
+    {
+      "start": 1048.22,
+      "duration": 3.64,
+      "text": "genealogies that have been created"
+    },
+    {
+      "start": 1050.48,
+      "duration": 5.04,
+      "text": "previously"
+    },
+    {
+      "start": 1051.86,
+      "duration": 5.52,
+      "text": "in books or manuscripts or whatever"
+    },
+    {
+      "start": 1055.52,
+      "duration": 3.779,
+      "text": "you're not really doing any actual"
+    },
+    {
+      "start": 1057.38,
+      "duration": 5.34,
+      "text": "research you're not you're not turning"
+    },
+    {
+      "start": 1059.299,
+      "duration": 5.76,
+      "text": "up historical documents you can that is"
+    },
+    {
+      "start": 1062.72,
+      "duration": 4.38,
+      "text": "possible and there are some people and"
+    },
+    {
+      "start": 1065.059,
+      "duration": 3.901,
+      "text": "there are people who have done that and"
+    },
+    {
+      "start": 1067.1,
+      "duration": 4.86,
+      "text": "and they're they're the ones who are"
+    },
+    {
+      "start": 1068.96,
+      "duration": 5.64,
+      "text": "compiling the royal families of Europe"
+    },
+    {
+      "start": 1071.96,
+      "duration": 4.94,
+      "text": "or wherever and they're the ones that"
+    },
+    {
+      "start": 1074.6,
+      "duration": 5.34,
+      "text": "sit in the libraries over in Europe or"
+    },
+    {
+      "start": 1076.9,
+      "duration": 5.62,
+      "text": "and uh and actually go through all the"
+    },
+    {
+      "start": 1079.94,
+      "duration": 4.5,
+      "text": "old records and reconstruct this stuff"
+    },
+    {
+      "start": 1082.52,
+      "duration": 4.56,
+      "text": "but if you really want to know there's"
+    },
+    {
+      "start": 1084.44,
+      "duration": 4.26,
+      "text": "already on family search there's a"
+    },
+    {
+      "start": 1087.08,
+      "duration": 4.08,
+      "text": "section under the search tab called"
+    },
+    {
+      "start": 1088.7,
+      "duration": 5.339,
+      "text": "genealogies and if you go in there"
+    },
+    {
+      "start": 1091.16,
+      "duration": 5.34,
+      "text": "there's a community uh"
+    },
+    {
+      "start": 1094.039,
+      "duration": 3.721,
+      "text": "they're called Community records or"
+    },
+    {
+      "start": 1096.5,
+      "duration": 2.7,
+      "text": "communities"
+    },
+    {
+      "start": 1097.76,
+      "duration": 3.72,
+      "text": "and when you go into the community"
+    },
+    {
+      "start": 1099.2,
+      "duration": 4.38,
+      "text": "you'll find if you search for royalty"
+    },
+    {
+      "start": 1101.48,
+      "duration": 3.66,
+      "text": "that there are there's a section in"
+    },
+    {
+      "start": 1103.58,
+      "duration": 4.86,
+      "text": "their Toronto royalty of Europe and"
+    },
+    {
+      "start": 1105.14,
+      "duration": 5.82,
+      "text": "that's the compiled area of every single"
+    },
+    {
+      "start": 1108.44,
+      "duration": 5.04,
+      "text": "person who they can document as having"
+    },
+    {
+      "start": 1110.96,
+      "duration": 3.599,
+      "text": "royalty be part of the royalty in all of"
+    },
+    {
+      "start": 1113.48,
+      "duration": 5.699,
+      "text": "Europe"
+    },
+    {
+      "start": 1114.559,
+      "duration": 7.801,
+      "text": "and it's been worked on now for close to"
+    },
+    {
+      "start": 1119.179,
+      "duration": 7.261,
+      "text": "is yeah close to 100 years now"
+    },
+    {
+      "start": 1122.36,
+      "duration": 6.059,
+      "text": "or more so I would suggest that you can"
+    },
+    {
+      "start": 1126.44,
+      "duration": 4.14,
+      "text": "you know that's why I'm saying don't"
+    },
+    {
+      "start": 1128.419,
+      "duration": 4.38,
+      "text": "don't waste your time it's all there if"
+    },
+    {
+      "start": 1130.58,
+      "duration": 5.339,
+      "text": "you want to copy it out that's great but"
+    },
+    {
+      "start": 1132.799,
+      "duration": 5.161,
+      "text": "I think that's primarily not something"
+    },
+    {
+      "start": 1135.919,
+      "duration": 4.101,
+      "text": "that I personally would be interested in"
+    },
+    {
+      "start": 1137.96,
+      "duration": 4.62,
+      "text": "doing"
+    },
+    {
+      "start": 1140.02,
+      "duration": 4.84,
+      "text": "an additional other thing is don't ever"
+    },
+    {
+      "start": 1142.58,
+      "duration": 5.82,
+      "text": "get obsessed with researching just one"
+    },
+    {
+      "start": 1144.86,
+      "duration": 5.76,
+      "text": "record one person or one family"
+    },
+    {
+      "start": 1148.4,
+      "duration": 5.04,
+      "text": "this is very this can happen whether"
+    },
+    {
+      "start": 1150.62,
+      "duration": 5.52,
+      "text": "you're going back in time or coming"
+    },
+    {
+      "start": 1153.44,
+      "duration": 4.76,
+      "text": "forward in time doing descended series"
+    },
+    {
+      "start": 1156.14,
+      "duration": 4.919,
+      "text": "research"
+    },
+    {
+      "start": 1158.2,
+      "duration": 6.16,
+      "text": "many times many many times I get"
+    },
+    {
+      "start": 1161.059,
+      "duration": 5.161,
+      "text": "involved with people who say oh I have"
+    },
+    {
+      "start": 1164.36,
+      "duration": 6.84,
+      "text": "been looking for this marriage record"
+    },
+    {
+      "start": 1166.22,
+      "duration": 8.1,
+      "text": "now for for 25 or 30 or 40 years"
+    },
+    {
+      "start": 1171.2,
+      "duration": 4.08,
+      "text": "and I go well do you not think they were"
+    },
+    {
+      "start": 1174.32,
+      "duration": 3.719,
+      "text": "married"
+    },
+    {
+      "start": 1175.28,
+      "duration": 5.639,
+      "text": "and they say well yeah they had five"
+    },
+    {
+      "start": 1178.039,
+      "duration": 4.741,
+      "text": "kids well why are you looking for a"
+    },
+    {
+      "start": 1180.919,
+      "duration": 5.461,
+      "text": "nurse record"
+    },
+    {
+      "start": 1182.78,
+      "duration": 5.46,
+      "text": "so it's it's you know this is genealogy"
+    },
+    {
+      "start": 1186.38,
+      "duration": 3.9,
+      "text": "is a very interesting subject it's"
+    },
+    {
+      "start": 1188.24,
+      "duration": 6.36,
+      "text": "interesting to pursue but when you start"
+    },
+    {
+      "start": 1190.28,
+      "duration": 6.72,
+      "text": "getting fixated and and obsessed with"
+    },
+    {
+      "start": 1194.6,
+      "duration": 4.98,
+      "text": "one individual or one record"
+    },
+    {
+      "start": 1197.0,
+      "duration": 6.78,
+      "text": "that's that goes beyond the whole"
+    },
+    {
+      "start": 1199.58,
+      "duration": 6.959,
+      "text": "concept and scope of of genealogy uh if"
+    },
+    {
+      "start": 1203.78,
+      "duration": 5.279,
+      "text": "you if you are really interested because"
+    },
+    {
+      "start": 1206.539,
+      "duration": 4.681,
+      "text": "you have a very unusual or a really"
+    },
+    {
+      "start": 1209.059,
+      "duration": 4.86,
+      "text": "interesting grandparent and you want to"
+    },
+    {
+      "start": 1211.22,
+      "duration": 6.0,
+      "text": "do research on that person to write a"
+    },
+    {
+      "start": 1213.919,
+      "duration": 5.88,
+      "text": "book or a life history or a biography or"
+    },
+    {
+      "start": 1217.22,
+      "duration": 6.12,
+      "text": "whatever I mean that's that's legitimate"
+    },
+    {
+      "start": 1219.799,
+      "duration": 6.781,
+      "text": "Pursuit that that's fine but if you're"
+    },
+    {
+      "start": 1223.34,
+      "duration": 6.24,
+      "text": "trying to accumulate and and find out"
+    },
+    {
+      "start": 1226.58,
+      "duration": 6.479,
+      "text": "all the people or in other words if the"
+    },
+    {
+      "start": 1229.58,
+      "duration": 6.959,
+      "text": "idea here is to make connections and and"
+    },
+    {
+      "start": 1233.059,
+      "duration": 7.261,
+      "text": "get additional people uh into the family"
+    },
+    {
+      "start": 1236.539,
+      "duration": 6.241,
+      "text": "search family tree for example then uh"
+    },
+    {
+      "start": 1240.32,
+      "duration": 6.18,
+      "text": "don't don't get stuck on one person or"
+    },
+    {
+      "start": 1242.78,
+      "duration": 7.92,
+      "text": "one family or one one record and it's"
+    },
+    {
+      "start": 1246.5,
+      "duration": 5.94,
+      "text": "just a caution it it's just it it's uh"
+    },
+    {
+      "start": 1250.7,
+      "duration": 4.56,
+      "text": "it you make up your own mind what you"
+    },
+    {
+      "start": 1252.44,
+      "duration": 5.94,
+      "text": "want to do but uh I I found that people"
+    },
+    {
+      "start": 1255.26,
+      "duration": 5.4,
+      "text": "who do that generally have stopped doing"
+    },
+    {
+      "start": 1258.38,
+      "duration": 4.44,
+      "text": "any other research or primarily or"
+    },
+    {
+      "start": 1260.66,
+      "duration": 4.92,
+      "text": "focusing on this one thing and I think"
+    },
+    {
+      "start": 1262.82,
+      "duration": 4.859,
+      "text": "and another problem that I see is that"
+    },
+    {
+      "start": 1265.58,
+      "duration": 4.68,
+      "text": "we have a concept out there called"
+    },
+    {
+      "start": 1267.679,
+      "duration": 6.421,
+      "text": "cluster research which says that you"
+    },
+    {
+      "start": 1270.26,
+      "duration": 6.9,
+      "text": "look for the whole family and all the"
+    },
+    {
+      "start": 1274.1,
+      "duration": 6.54,
+      "text": "relatives and you do as much research on"
+    },
+    {
+      "start": 1277.16,
+      "duration": 6.44,
+      "text": "the environment and the the culture and"
+    },
+    {
+      "start": 1280.64,
+      "duration": 6.539,
+      "text": "the context and the history of the area"
+    },
+    {
+      "start": 1283.6,
+      "duration": 6.34,
+      "text": "in order to uh to develop the idea of"
+    },
+    {
+      "start": 1287.179,
+      "duration": 4.98,
+      "text": "this person but ultimately it comes down"
+    },
+    {
+      "start": 1289.94,
+      "duration": 5.34,
+      "text": "to that same question that I mentioned"
+    },
+    {
+      "start": 1292.159,
+      "duration": 6.421,
+      "text": "earlier is and the way I do it with the"
+    },
+    {
+      "start": 1295.28,
+      "duration": 4.98,
+      "text": "rules of genealogy is uh if you're"
+    },
+    {
+      "start": 1298.58,
+      "duration": 3.3,
+      "text": "looking for a death record and the"
+    },
+    {
+      "start": 1300.26,
+      "duration": 3.24,
+      "text": "answer is do you think the person's"
+    },
+    {
+      "start": 1301.88,
+      "duration": 4.2,
+      "text": "still alive"
+    },
+    {
+      "start": 1303.5,
+      "duration": 5.94,
+      "text": "and of course the answer is no"
+    },
+    {
+      "start": 1306.08,
+      "duration": 5.82,
+      "text": "and so the answer I have back is then"
+    },
+    {
+      "start": 1309.44,
+      "duration": 4.739,
+      "text": "why do you want to look spend so much"
+    },
+    {
+      "start": 1311.9,
+      "duration": 6.54,
+      "text": "time on that one record"
+    },
+    {
+      "start": 1314.179,
+      "duration": 8.761,
+      "text": "so now we begin with the descendancy"
+    },
+    {
+      "start": 1318.44,
+      "duration": 6.479,
+      "text": "view on familysearch.org this is an"
+    },
+    {
+      "start": 1322.94,
+      "duration": 2.64,
+      "text": "option and"
+    },
+    {
+      "start": 1324.919,
+      "duration": 4.321,
+      "text": "um"
+    },
+    {
+      "start": 1325.58,
+      "duration": 6.36,
+      "text": "uh I'm not aware of other programs that"
+    },
+    {
+      "start": 1329.24,
+      "duration": 4.439,
+      "text": "provide this option and the reason why"
+    },
+    {
+      "start": 1331.94,
+      "duration": 6.54,
+      "text": "they don't provide the option are very"
+    },
+    {
+      "start": 1333.679,
+      "duration": 7.561,
+      "text": "simple because they have your own family"
+    },
+    {
+      "start": 1338.48,
+      "duration": 6.36,
+      "text": "tree this is a unified collaborative"
+    },
+    {
+      "start": 1341.24,
+      "duration": 6.299,
+      "text": "family tree and they simply only have"
+    },
+    {
+      "start": 1344.84,
+      "duration": 4.319,
+      "text": "the research that you particularly have"
+    },
+    {
+      "start": 1347.539,
+      "duration": 3.901,
+      "text": "done"
+    },
+    {
+      "start": 1349.159,
+      "duration": 4.561,
+      "text": "and so unless you've managed to do"
+    },
+    {
+      "start": 1351.44,
+      "duration": 5.16,
+      "text": "descendancy research on your own family"
+    },
+    {
+      "start": 1353.72,
+      "duration": 4.98,
+      "text": "tree on one of these on one of the other"
+    },
+    {
+      "start": 1356.6,
+      "duration": 4.38,
+      "text": "programs that's all you're going to see"
+    },
+    {
+      "start": 1358.7,
+      "duration": 4.02,
+      "text": "you're never going to see people when"
+    },
+    {
+      "start": 1360.98,
+      "duration": 4.92,
+      "text": "everybody else has added that"
+    },
+    {
+      "start": 1362.72,
+      "duration": 4.56,
+      "text": "information in over the last 100 plus"
+    },
+    {
+      "start": 1365.9,
+      "duration": 4.259,
+      "text": "years"
+    },
+    {
+      "start": 1367.28,
+      "duration": 6.56,
+      "text": "and we're getting up to about 125 100"
+    },
+    {
+      "start": 1370.159,
+      "duration": 5.9,
+      "text": "and almost going close to 130 years of"
+    },
+    {
+      "start": 1373.84,
+      "duration": 5.26,
+      "text": "genealogy behind"
+    },
+    {
+      "start": 1376.059,
+      "duration": 5.021,
+      "text": "this or being part of this family search"
+    },
+    {
+      "start": 1379.1,
+      "duration": 4.439,
+      "text": "family tree"
+    },
+    {
+      "start": 1381.08,
+      "duration": 5.7,
+      "text": "and so this is a lot of people and it"
+    },
+    {
+      "start": 1383.539,
+      "duration": 7.52,
+      "text": "has a lot of information and I I I've"
+    },
+    {
+      "start": 1386.78,
+      "duration": 4.279,
+      "text": "kind of get a little bit uh"
+    },
+    {
+      "start": 1391.28,
+      "duration": 4.62,
+      "text": "put off by people who constantly look at"
+    },
+    {
+      "start": 1394.039,
+      "duration": 3.481,
+      "text": "the negative side and say oh this"
+    },
+    {
+      "start": 1395.9,
+      "duration": 3.18,
+      "text": "information isn't correct or this one"
+    },
+    {
+      "start": 1397.52,
+      "duration": 4.44,
+      "text": "isn't correct or whatever and the answer"
+    },
+    {
+      "start": 1399.08,
+      "duration": 6.06,
+      "text": "is no but the the vast amount of this"
+    },
+    {
+      "start": 1401.96,
+      "duration": 7.56,
+      "text": "information in the in the billions of"
+    },
+    {
+      "start": 1405.14,
+      "duration": 7.46,
+      "text": "people that are on this record now is uh"
+    },
+    {
+      "start": 1409.52,
+      "duration": 6.0,
+      "text": "sourced and record there's there's"
+    },
+    {
+      "start": 1412.6,
+      "duration": 5.98,
+      "text": "hundreds of thousands of sources that go"
+    },
+    {
+      "start": 1415.52,
+      "duration": 5.1,
+      "text": "into this program every year"
+    },
+    {
+      "start": 1418.58,
+      "duration": 5.82,
+      "text": "telling us where these people were and"
+    },
+    {
+      "start": 1420.62,
+      "duration": 6.059,
+      "text": "what they were and if uh and to focus on"
+    },
+    {
+      "start": 1424.4,
+      "duration": 4.92,
+      "text": "uh on the negative aspects or the"
+    },
+    {
+      "start": 1426.679,
+      "duration": 5.461,
+      "text": "questions or the limitations of it are"
+    },
+    {
+      "start": 1429.32,
+      "duration": 5.4,
+      "text": "is not productive"
+    },
+    {
+      "start": 1432.14,
+      "duration": 4.8,
+      "text": "so looking for Descendants is no"
+    },
+    {
+      "start": 1434.72,
+      "duration": 4.38,
+      "text": "different than looking for your ancestry"
+    },
+    {
+      "start": 1436.94,
+      "duration": 3.84,
+      "text": "this type of research can be also viewed"
+    },
+    {
+      "start": 1439.1,
+      "duration": 4.699,
+      "text": "as filling in the blanks on your family"
+    },
+    {
+      "start": 1440.78,
+      "duration": 6.12,
+      "text": "pedigree if you go back traditionally"
+    },
+    {
+      "start": 1443.799,
+      "duration": 5.141,
+      "text": "pedigrees went back on your surname"
+    },
+    {
+      "start": 1446.9,
+      "duration": 4.259,
+      "text": "so if you were"
+    },
+    {
+      "start": 1448.94,
+      "duration": 4.859,
+      "text": "a Tanner then you went back on your"
+    },
+    {
+      "start": 1451.159,
+      "duration": 5.161,
+      "text": "Tanner line and that was it that was"
+    },
+    {
+      "start": 1453.799,
+      "duration": 4.5,
+      "text": "your pedigree you never looked at the"
+    },
+    {
+      "start": 1456.32,
+      "duration": 4.56,
+      "text": "wives uh you never looked at the"
+    },
+    {
+      "start": 1458.299,
+      "duration": 5.821,
+      "text": "children or the siblings of anybody"
+    },
+    {
+      "start": 1460.88,
+      "duration": 5.7,
+      "text": "and that was uh that was the way that"
+    },
+    {
+      "start": 1464.12,
+      "duration": 5.4,
+      "text": "these pedigrees were put together and uh"
+    },
+    {
+      "start": 1466.58,
+      "duration": 5.099,
+      "text": "so you just uh you knew who you were"
+    },
+    {
+      "start": 1469.52,
+      "duration": 4.56,
+      "text": "because you were a Tanner or you were a"
+    },
+    {
+      "start": 1471.679,
+      "duration": 4.801,
+      "text": "Smith or you were a Jones or a Peterson"
+    },
+    {
+      "start": 1474.08,
+      "duration": 7.14,
+      "text": "or Robertson or whatever"
+    },
+    {
+      "start": 1476.48,
+      "duration": 5.939,
+      "text": "and so that's how you uh identify uh the"
+    },
+    {
+      "start": 1481.22,
+      "duration": 4.92,
+      "text": "concept"
+    },
+    {
+      "start": 1482.419,
+      "duration": 5.521,
+      "text": "of expanding that and adding in all the"
+    },
+    {
+      "start": 1486.14,
+      "duration": 4.44,
+      "text": "people including all the descendants of"
+    },
+    {
+      "start": 1487.94,
+      "duration": 5.219,
+      "text": "all the people is really kind of an"
+    },
+    {
+      "start": 1490.58,
+      "duration": 6.839,
+      "text": "innovation with the family search family"
+    },
+    {
+      "start": 1493.159,
+      "duration": 6.481,
+      "text": "tree as it's now evolved and so this is"
+    },
+    {
+      "start": 1497.419,
+      "duration": 6.181,
+      "text": "something that's uh that has not ever"
+    },
+    {
+      "start": 1499.64,
+      "duration": 7.56,
+      "text": "been been done in any kind of organized"
+    },
+    {
+      "start": 1503.6,
+      "duration": 6.18,
+      "text": "way in the past over other than an"
+    },
+    {
+      "start": 1507.2,
+      "duration": 4.14,
+      "text": "occasional descendancy book so for"
+    },
+    {
+      "start": 1509.78,
+      "duration": 4.019,
+      "text": "instance people would go together and"
+    },
+    {
+      "start": 1511.34,
+      "duration": 5.52,
+      "text": "pick out a famous or prominent ancestor"
+    },
+    {
+      "start": 1513.799,
+      "duration": 5.941,
+      "text": "and then do all the descendants of that"
+    },
+    {
+      "start": 1516.86,
+      "duration": 5.22,
+      "text": "ancestor when I was young these are the"
+    },
+    {
+      "start": 1519.74,
+      "duration": 5.1,
+      "text": "things that we had in our home we had"
+    },
+    {
+      "start": 1522.08,
+      "duration": 5.24,
+      "text": "different descendancy books books about"
+    },
+    {
+      "start": 1524.84,
+      "duration": 5.52,
+      "text": "the Tanner family books about the"
+    },
+    {
+      "start": 1527.32,
+      "duration": 7.0,
+      "text": "oversons and jarvises and and other"
+    },
+    {
+      "start": 1530.36,
+      "duration": 6.799,
+      "text": "people and they went back to a remote"
+    },
+    {
+      "start": 1534.32,
+      "duration": 6.38,
+      "text": "ancestor usually one that they could"
+    },
+    {
+      "start": 1537.159,
+      "duration": 6.76,
+      "text": "conveniently characterize and then"
+    },
+    {
+      "start": 1540.7,
+      "duration": 7.12,
+      "text": "attempted to copy down and and document"
+    },
+    {
+      "start": 1543.919,
+      "duration": 6.24,
+      "text": "all of The Descendants now this is when"
+    },
+    {
+      "start": 1547.82,
+      "duration": 5.339,
+      "text": "I say that the reason is very simple"
+    },
+    {
+      "start": 1550.159,
+      "duration": 5.88,
+      "text": "because one other thing you ought to do"
+    },
+    {
+      "start": 1553.159,
+      "duration": 5.341,
+      "text": "when you go back to your remote ancestor"
+    },
+    {
+      "start": 1556.039,
+      "duration": 4.26,
+      "text": "and see if you're going to choose this"
+    },
+    {
+      "start": 1558.5,
+      "duration": 4.14,
+      "text": "one as your person you're going to and"
+    },
+    {
+      "start": 1560.299,
+      "duration": 4.321,
+      "text": "I'll give you some con ideas here today"
+    },
+    {
+      "start": 1562.64,
+      "duration": 3.96,
+      "text": "on how you're going to choose that"
+    },
+    {
+      "start": 1564.62,
+      "duration": 4.74,
+      "text": "person but when you go back to that"
+    },
+    {
+      "start": 1566.6,
+      "duration": 4.319,
+      "text": "remote ancestor you better find out if"
+    },
+    {
+      "start": 1569.36,
+      "duration": 5.88,
+      "text": "somebody's already done a descendancy"
+    },
+    {
+      "start": 1570.919,
+      "duration": 6.421,
+      "text": "book about them if there is a book and I"
+    },
+    {
+      "start": 1575.24,
+      "duration": 4.5,
+      "text": "have here the Bryants"
+    },
+    {
+      "start": 1577.34,
+      "duration": 7.079,
+      "text": "and the interesting thing about it is is"
+    },
+    {
+      "start": 1579.74,
+      "duration": 7.5,
+      "text": "that this is there is a Bryant book"
+    },
+    {
+      "start": 1584.419,
+      "duration": 5.521,
+      "text": "and you would think oh the Bryant book"
+    },
+    {
+      "start": 1587.24,
+      "duration": 4.38,
+      "text": "well maybe all that information maybe we"
+    },
+    {
+      "start": 1589.94,
+      "duration": 4.02,
+      "text": "just copy all that information in here"
+    },
+    {
+      "start": 1591.62,
+      "duration": 5.88,
+      "text": "well basically what you're seeing here"
+    },
+    {
+      "start": 1593.96,
+      "duration": 5.64,
+      "text": "is what was copied out of the book"
+    },
+    {
+      "start": 1597.5,
+      "duration": 3.6,
+      "text": "most of this came out of the Bryant book"
+    },
+    {
+      "start": 1599.6,
+      "duration": 4.02,
+      "text": "whether they're not the people"
+    },
+    {
+      "start": 1601.1,
+      "duration": 4.74,
+      "text": "attributed that but this is where this"
+    },
+    {
+      "start": 1603.62,
+      "duration": 3.84,
+      "text": "information ultimately came from and was"
+    },
+    {
+      "start": 1605.84,
+      "duration": 6.18,
+      "text": "collected from"
+    },
+    {
+      "start": 1607.46,
+      "duration": 8.099,
+      "text": "so the answer is what else is there"
+    },
+    {
+      "start": 1612.02,
+      "duration": 6.539,
+      "text": "so let's let's start out with some kind"
+    },
+    {
+      "start": 1615.559,
+      "duration": 6.421,
+      "text": "of parameters where it would make it a"
+    },
+    {
+      "start": 1618.559,
+      "duration": 8.941,
+      "text": "possible thing to do and not run you"
+    },
+    {
+      "start": 1621.98,
+      "duration": 9.36,
+      "text": "into uh you know app somebody from Wales"
+    },
+    {
+      "start": 1627.5,
+      "duration": 6.299,
+      "text": "so uh by the way app AP means the son of"
+    },
+    {
+      "start": 1631.34,
+      "duration": 5.339,
+      "text": "so when you're in Wales that's just a"
+    },
+    {
+      "start": 1633.799,
+      "duration": 5.401,
+      "text": "patronymic that marker of"
+    },
+    {
+      "start": 1636.679,
+      "duration": 5.701,
+      "text": "so"
+    },
+    {
+      "start": 1639.2,
+      "duration": 4.62,
+      "text": "and so app so and so is the son of so"
+    },
+    {
+      "start": 1642.38,
+      "duration": 4.5,
+      "text": "and so"
+    },
+    {
+      "start": 1643.82,
+      "duration": 6.359,
+      "text": "so we wanted to start you want to choose"
+    },
+    {
+      "start": 1646.88,
+      "duration": 4.64,
+      "text": "an ancestor who lived"
+    },
+    {
+      "start": 1650.179,
+      "duration": 4.5,
+      "text": "um"
+    },
+    {
+      "start": 1651.52,
+      "duration": 5.94,
+      "text": "uh no earlier than the last half of the"
+    },
+    {
+      "start": 1654.679,
+      "duration": 2.781,
+      "text": "18th century"
+    },
+    {
+      "start": 1657.559,
+      "duration": 2.22,
+      "text": "and"
+    },
+    {
+      "start": 1659.12,
+      "duration": 3.299,
+      "text": "um"
+    },
+    {
+      "start": 1659.779,
+      "duration": 4.38,
+      "text": "that's the reason is that I don't that"
+    },
+    {
+      "start": 1662.419,
+      "duration": 5.64,
+      "text": "you don't want to get back before into"
+    },
+    {
+      "start": 1664.159,
+      "duration": 6.921,
+      "text": "the 1700s now technically for example in"
+    },
+    {
+      "start": 1668.059,
+      "duration": 6.541,
+      "text": "England uh Parish registers go back to"
+    },
+    {
+      "start": 1671.08,
+      "duration": 5.92,
+      "text": "1538 and there's always this challenge"
+    },
+    {
+      "start": 1674.6,
+      "duration": 5.28,
+      "text": "of caring it's trying to find the person"
+    },
+    {
+      "start": 1677.0,
+      "duration": 5.58,
+      "text": "all the way back to that to that 1500"
+    },
+    {
+      "start": 1679.88,
+      "duration": 5.34,
+      "text": "day you know and occasionally you'll"
+    },
+    {
+      "start": 1682.58,
+      "duration": 5.88,
+      "text": "find a uh somebody who was rich or"
+    },
+    {
+      "start": 1685.22,
+      "duration": 5.52,
+      "text": "famous or part of the nobility and they"
+    },
+    {
+      "start": 1688.46,
+      "duration": 4.56,
+      "text": "would be be able to go back further but"
+    },
+    {
+      "start": 1690.74,
+      "duration": 4.679,
+      "text": "that like I said when you get to a"
+    },
+    {
+      "start": 1693.02,
+      "duration": 4.62,
+      "text": "certain point you cease doing"
+    },
+    {
+      "start": 1695.419,
+      "duration": 5.581,
+      "text": "genealogical research and you're simply"
+    },
+    {
+      "start": 1697.64,
+      "duration": 5.88,
+      "text": "doing uh Historical Research into"
+    },
+    {
+      "start": 1701.0,
+      "duration": 5.76,
+      "text": "documents that were created at the time"
+    },
+    {
+      "start": 1703.52,
+      "duration": 5.279,
+      "text": "and there's no real uh there's no real"
+    },
+    {
+      "start": 1706.76,
+      "duration": 4.26,
+      "text": "valid any other validity in those names"
+    },
+    {
+      "start": 1708.799,
+      "duration": 4.021,
+      "text": "back then because they just put them in"
+    },
+    {
+      "start": 1711.02,
+      "duration": 4.2,
+      "text": "so you never know where they came from"
+    },
+    {
+      "start": 1712.82,
+      "duration": 3.959,
+      "text": "because they're very fewer but those are"
+    },
+    {
+      "start": 1715.22,
+      "duration": 4.38,
+      "text": "sourced and they're not sourced in the"
+    },
+    {
+      "start": 1716.779,
+      "duration": 5.241,
+      "text": "way except for royalty and very few"
+    },
+    {
+      "start": 1719.6,
+      "duration": 2.42,
+      "text": "other people"
+    },
+    {
+      "start": 1722.659,
+      "duration": 5.281,
+      "text": "so next you do is you look at the"
+    },
+    {
+      "start": 1725.299,
+      "duration": 4.201,
+      "text": "person's tree so what we're going to do"
+    },
+    {
+      "start": 1727.94,
+      "duration": 4.92,
+      "text": "is okay we're going to choose John"
+    },
+    {
+      "start": 1729.5,
+      "duration": 6.72,
+      "text": "Bryant here who was born in 1760."
+    },
+    {
+      "start": 1732.86,
+      "duration": 7.439,
+      "text": "and I just make sure that this person is"
+    },
+    {
+      "start": 1736.22,
+      "duration": 7.199,
+      "text": "actually a person that lives and lived"
+    },
+    {
+      "start": 1740.299,
+      "duration": 5.461,
+      "text": "and is connected to you by by the"
+    },
+    {
+      "start": 1743.419,
+      "duration": 5.281,
+      "text": "pedigrees so I have already I've gone"
+    },
+    {
+      "start": 1745.76,
+      "duration": 5.64,
+      "text": "through that process I went and I"
+    },
+    {
+      "start": 1748.7,
+      "duration": 6.599,
+      "text": "verified that this was actually one of"
+    },
+    {
+      "start": 1751.4,
+      "duration": 5.879,
+      "text": "my relatives and then I went through the"
+    },
+    {
+      "start": 1755.299,
+      "duration": 4.801,
+      "text": "process of making sure that the"
+    },
+    {
+      "start": 1757.279,
+      "duration": 5.101,
+      "text": "information on this person was correct"
+    },
+    {
+      "start": 1760.1,
+      "duration": 6.36,
+      "text": "and as a matter of fact I'm still in"
+    },
+    {
+      "start": 1762.38,
+      "duration": 6.6,
+      "text": "that process and I've added another uh"
+    },
+    {
+      "start": 1766.46,
+      "duration": 4.74,
+      "text": "dozen or so sources to this particular"
+    },
+    {
+      "start": 1768.98,
+      "duration": 5.76,
+      "text": "person so now I'm pretty well satisfied"
+    },
+    {
+      "start": 1771.2,
+      "duration": 6.839,
+      "text": "that this person is somebody that I am"
+    },
+    {
+      "start": 1774.74,
+      "duration": 5.46,
+      "text": "related to so what's the next step is to"
+    },
+    {
+      "start": 1778.039,
+      "duration": 3.12,
+      "text": "view his tree and that's a selection"
+    },
+    {
+      "start": 1780.2,
+      "duration": 4.68,
+      "text": "here"
+    },
+    {
+      "start": 1781.159,
+      "duration": 7.561,
+      "text": "in family search and then you can go"
+    },
+    {
+      "start": 1784.88,
+      "duration": 7.26,
+      "text": "over here and choose descendancy"
+    },
+    {
+      "start": 1788.72,
+      "duration": 5.76,
+      "text": "so you have the standard landscape but"
+    },
+    {
+      "start": 1792.14,
+      "duration": 5.519,
+      "text": "this is the descendancy view so now you"
+    },
+    {
+      "start": 1794.48,
+      "duration": 5.22,
+      "text": "can see John Bryant Jane Watson and"
+    },
+    {
+      "start": 1797.659,
+      "duration": 5.161,
+      "text": "their children"
+    },
+    {
+      "start": 1799.7,
+      "duration": 7.62,
+      "text": "so now you're on your way this is the"
+    },
+    {
+      "start": 1802.82,
+      "duration": 5.82,
+      "text": "start and uh one thing that you uh when"
+    },
+    {
+      "start": 1807.32,
+      "duration": 3.3,
+      "text": "you get here"
+    },
+    {
+      "start": 1808.64,
+      "duration": 3.779,
+      "text": "then the next thing you want to do is"
+    },
+    {
+      "start": 1810.62,
+      "duration": 4.26,
+      "text": "choose how many"
+    },
+    {
+      "start": 1812.419,
+      "duration": 3.541,
+      "text": "generations of people that you want to"
+    },
+    {
+      "start": 1814.88,
+      "duration": 4.58,
+      "text": "look at"
+    },
+    {
+      "start": 1815.96,
+      "duration": 7.26,
+      "text": "the program lets you choose up to four"
+    },
+    {
+      "start": 1819.46,
+      "duration": 6.52,
+      "text": "descendancy generations so you can go"
+    },
+    {
+      "start": 1823.22,
+      "duration": 5.52,
+      "text": "out four generations on somebody like"
+    },
+    {
+      "start": 1825.98,
+      "duration": 4.98,
+      "text": "this uh you know you can go it would"
+    },
+    {
+      "start": 1828.74,
+      "duration": 4.02,
+      "text": "depend on the person so you may choose a"
+    },
+    {
+      "start": 1830.96,
+      "duration": 4.319,
+      "text": "person and they say look at four"
+    },
+    {
+      "start": 1832.76,
+      "duration": 5.399,
+      "text": "generations of this of his descendants"
+    },
+    {
+      "start": 1835.279,
+      "duration": 5.821,
+      "text": "and it shows two generations or one or"
+    },
+    {
+      "start": 1838.159,
+      "duration": 5.52,
+      "text": "none that means that person's no one has"
+    },
+    {
+      "start": 1841.1,
+      "duration": 4.799,
+      "text": "ever done any research on that"
+    },
+    {
+      "start": 1843.679,
+      "duration": 3.661,
+      "text": "person's descendancy well at least"
+    },
+    {
+      "start": 1845.899,
+      "duration": 3.0,
+      "text": "they've never put it into the family"
+    },
+    {
+      "start": 1847.34,
+      "duration": 4.14,
+      "text": "tree"
+    },
+    {
+      "start": 1848.899,
+      "duration": 4.861,
+      "text": "and so you're out there doing some very"
+    },
+    {
+      "start": 1851.48,
+      "duration": 4.439,
+      "text": "basic research almost immediately"
+    },
+    {
+      "start": 1853.76,
+      "duration": 6.299,
+      "text": "but if you actually choose a larger"
+    },
+    {
+      "start": 1855.919,
+      "duration": 6.12,
+      "text": "number then what happens is let's say I"
+    },
+    {
+      "start": 1860.059,
+      "duration": 4.201,
+      "text": "choose three or four well if you choose"
+    },
+    {
+      "start": 1862.039,
+      "duration": 3.961,
+      "text": "two you've already got two showings so"
+    },
+    {
+      "start": 1864.26,
+      "duration": 3.12,
+      "text": "that's not going to do anything if you"
+    },
+    {
+      "start": 1866.0,
+      "duration": 3.48,
+      "text": "choose one you're just going to have"
+    },
+    {
+      "start": 1867.38,
+      "duration": 4.019,
+      "text": "John Bryant and Jane Watson"
+    },
+    {
+      "start": 1869.48,
+      "duration": 4.86,
+      "text": "but if you choose three or four you're"
+    },
+    {
+      "start": 1871.399,
+      "duration": 6.601,
+      "text": "going to have a few more and this is the"
+    },
+    {
+      "start": 1874.34,
+      "duration": 6.54,
+      "text": "case where I chose three generations"
+    },
+    {
+      "start": 1878.0,
+      "duration": 3.98,
+      "text": "so first of all there's some a little"
+    },
+    {
+      "start": 1880.88,
+      "duration": 4.14,
+      "text": "bit of"
+    },
+    {
+      "start": 1881.98,
+      "duration": 6.22,
+      "text": "what happens here of course we have some"
+    },
+    {
+      "start": 1885.02,
+      "duration": 6.12,
+      "text": "ways of of expressing these generational"
+    },
+    {
+      "start": 1888.2,
+      "duration": 5.099,
+      "text": "changes you see the little arrows that"
+    },
+    {
+      "start": 1891.14,
+      "duration": 4.259,
+      "text": "are up by people the Arrow by a person"
+    },
+    {
+      "start": 1893.299,
+      "duration": 4.801,
+      "text": "means that they have a marriage record"
+    },
+    {
+      "start": 1895.399,
+      "duration": 5.76,
+      "text": "or a marriage somebody they're married"
+    },
+    {
+      "start": 1898.1,
+      "duration": 4.92,
+      "text": "to and so each time you click on a an"
+    },
+    {
+      "start": 1901.159,
+      "duration": 4.14,
+      "text": "arrow it'll turn down and you'll get"
+    },
+    {
+      "start": 1903.02,
+      "duration": 4.86,
+      "text": "either one person or a long line of"
+    },
+    {
+      "start": 1905.299,
+      "duration": 4.38,
+      "text": "people depending on how many people so"
+    },
+    {
+      "start": 1907.88,
+      "duration": 5.22,
+      "text": "every every one of those is going to go"
+    },
+    {
+      "start": 1909.679,
+      "duration": 5.281,
+      "text": "down once the line moves over it goes"
+    },
+    {
+      "start": 1913.1,
+      "duration": 3.62,
+      "text": "down a generation and then it moves over"
+    },
+    {
+      "start": 1914.96,
+      "duration": 4.439,
+      "text": "and goes down a generation and so"
+    },
+    {
+      "start": 1916.72,
+      "duration": 4.959,
+      "text": "basically as you get down into this it"
+    },
+    {
+      "start": 1919.399,
+      "duration": 5.041,
+      "text": "gets quite a bit complicated"
+    },
+    {
+      "start": 1921.679,
+      "duration": 6.6,
+      "text": "uh and you kind of have to keep Orient"
+    },
+    {
+      "start": 1924.44,
+      "duration": 7.619,
+      "text": "getting well oriented now I usually if I"
+    },
+    {
+      "start": 1928.279,
+      "duration": 5.161,
+      "text": "start going down this I usually stop uh"
+    },
+    {
+      "start": 1932.059,
+      "duration": 5.22,
+      "text": "When the Children of the people were"
+    },
+    {
+      "start": 1933.44,
+      "duration": 5.4,
+      "text": "born in the 1900s so if you look down uh"
+    },
+    {
+      "start": 1937.279,
+      "duration": 4.62,
+      "text": "any of these These are older ones"
+    },
+    {
+      "start": 1938.84,
+      "duration": 5.459,
+      "text": "because I started in 1760. if I'd"
+    },
+    {
+      "start": 1941.899,
+      "duration": 4.38,
+      "text": "started in 1830 I would only have to go"
+    },
+    {
+      "start": 1944.299,
+      "duration": 4.461,
+      "text": "through a few Generations before I hit"
+    },
+    {
+      "start": 1946.279,
+      "duration": 6.181,
+      "text": "1900."
+    },
+    {
+      "start": 1948.76,
+      "duration": 6.159,
+      "text": "so uh there's a lot of reasons that we"
+    },
+    {
+      "start": 1952.46,
+      "duration": 4.86,
+      "text": "stop that I stopped in the 1900s and"
+    },
+    {
+      "start": 1954.919,
+      "duration": 6.36,
+      "text": "that's uh primarily because they end up"
+    },
+    {
+      "start": 1957.32,
+      "duration": 7.02,
+      "text": "being uh possibly being living people"
+    },
+    {
+      "start": 1961.279,
+      "duration": 6.301,
+      "text": "and the second problem of course is that"
+    },
+    {
+      "start": 1964.34,
+      "duration": 4.68,
+      "text": "I just that I figure if they're still"
+    },
+    {
+      "start": 1967.58,
+      "duration": 3.54,
+      "text": "living or their children are still"
+    },
+    {
+      "start": 1969.02,
+      "duration": 4.5,
+      "text": "living it's their responsibility to find"
+    },
+    {
+      "start": 1971.12,
+      "duration": 5.72,
+      "text": "these people I've not going to spend a"
+    },
+    {
+      "start": 1973.52,
+      "duration": 7.68,
+      "text": "lot of time on people uh who are already"
+    },
+    {
+      "start": 1976.84,
+      "duration": 7.059,
+      "text": "who are living or who only recently died"
+    },
+    {
+      "start": 1981.2,
+      "duration": 4.859,
+      "text": "so it's uh it's just you have to make"
+    },
+    {
+      "start": 1983.899,
+      "duration": 3.78,
+      "text": "these kind of judgment things this isn't"
+    },
+    {
+      "start": 1986.059,
+      "duration": 3.6,
+      "text": "anything that I'm telling you you need"
+    },
+    {
+      "start": 1987.679,
+      "duration": 5.22,
+      "text": "to do or that I do I'm just explaining"
+    },
+    {
+      "start": 1989.659,
+      "duration": 5.941,
+      "text": "how I do it and why I would do it"
+    },
+    {
+      "start": 1992.899,
+      "duration": 4.561,
+      "text": "because there are enough people as you"
+    },
+    {
+      "start": 1995.6,
+      "duration": 5.16,
+      "text": "can see from just the numbers I showed"
+    },
+    {
+      "start": 1997.46,
+      "duration": 6.18,
+      "text": "you at rootstick it would take me a long"
+    },
+    {
+      "start": 2000.76,
+      "duration": 5.94,
+      "text": "time to go through even one person's"
+    },
+    {
+      "start": 2003.64,
+      "duration": 5.759,
+      "text": "genealogy or the numbers of actual"
+    },
+    {
+      "start": 2006.7,
+      "duration": 5.28,
+      "text": "potential uh when you talk about the"
+    },
+    {
+      "start": 2009.399,
+      "duration": 5.28,
+      "text": "number of of ancestors going back and"
+    },
+    {
+      "start": 2011.98,
+      "duration": 5.16,
+      "text": "you get to 1024 you have to understand"
+    },
+    {
+      "start": 2014.679,
+      "duration": 4.321,
+      "text": "that if every one of those got married"
+    },
+    {
+      "start": 2017.14,
+      "duration": 4.94,
+      "text": "it would automatically double the number"
+    },
+    {
+      "start": 2019.0,
+      "duration": 7.919,
+      "text": "of people and it would add another whole"
+    },
+    {
+      "start": 2022.08,
+      "duration": 8.439,
+      "text": "doubled line of ancestry okay so there"
+    },
+    {
+      "start": 2026.919,
+      "duration": 6.781,
+      "text": "you're there's your uh why it doubles"
+    },
+    {
+      "start": 2030.519,
+      "duration": 5.52,
+      "text": "each each uh generation"
+    },
+    {
+      "start": 2033.7,
+      "duration": 3.9,
+      "text": "but you're assuming that they had one"
+    },
+    {
+      "start": 2036.039,
+      "duration": 4.321,
+      "text": "child well you're going to throw"
+    },
+    {
+      "start": 2037.6,
+      "duration": 3.98,
+      "text": "everything off when somebody has 10 or"
+    },
+    {
+      "start": 2040.36,
+      "duration": 6.12,
+      "text": "12 children"
+    },
+    {
+      "start": 2041.58,
+      "duration": 7.42,
+      "text": "or has three wives and 25 children"
+    },
+    {
+      "start": 2046.48,
+      "duration": 5.22,
+      "text": "and so those are the numbers that going"
+    },
+    {
+      "start": 2049.0,
+      "duration": 5.28,
+      "text": "descendancy numbers are are vastly"
+    },
+    {
+      "start": 2051.7,
+      "duration": 5.76,
+      "text": "greater than the numbers of people if"
+    },
+    {
+      "start": 2054.28,
+      "duration": 5.879,
+      "text": "you go back in in time so those of us"
+    },
+    {
+      "start": 2057.46,
+      "duration": 4.26,
+      "text": "who have been doing genealogy for many"
+    },
+    {
+      "start": 2060.159,
+      "duration": 5.281,
+      "text": "many years"
+    },
+    {
+      "start": 2061.72,
+      "duration": 6.0,
+      "text": "and have had ancestors in my family who"
+    },
+    {
+      "start": 2065.44,
+      "duration": 3.479,
+      "text": "have done genealogy for over a hundred"
+    },
+    {
+      "start": 2067.72,
+      "duration": 5.1,
+      "text": "years"
+    },
+    {
+      "start": 2068.919,
+      "duration": 7.98,
+      "text": "basically we are at the what you would"
+    },
+    {
+      "start": 2072.82,
+      "duration": 6.66,
+      "text": "call brick wall or end of line on almost"
+    },
+    {
+      "start": 2076.899,
+      "duration": 5.041,
+      "text": "every line there are very few lines to"
+    },
+    {
+      "start": 2079.48,
+      "duration": 5.939,
+      "text": "go back now I've spent the last 40 years"
+    },
+    {
+      "start": 2081.94,
+      "duration": 5.88,
+      "text": "going back on end of lines and we did"
+    },
+    {
+      "start": 2085.419,
+      "duration": 5.76,
+      "text": "extended every single one of my six"
+    },
+    {
+      "start": 2087.82,
+      "duration": 6.059,
+      "text": "Generations lines except about two into"
+    },
+    {
+      "start": 2091.179,
+      "duration": 5.101,
+      "text": "the seventh generation and then it gets"
+    },
+    {
+      "start": 2093.879,
+      "duration": 5.761,
+      "text": "really spotty but that just means that"
+    },
+    {
+      "start": 2096.28,
+      "duration": 4.8,
+      "text": "we have tried on every line and uh so"
+    },
+    {
+      "start": 2099.64,
+      "duration": 3.66,
+      "text": "we're turned around and go in the back"
+    },
+    {
+      "start": 2101.08,
+      "duration": 4.38,
+      "text": "of the way you know to say let's go the"
+    },
+    {
+      "start": 2103.3,
+      "duration": 5.42,
+      "text": "other direction so we're going down and"
+    },
+    {
+      "start": 2105.46,
+      "duration": 3.26,
+      "text": "getting all their descendants"
+    },
+    {
+      "start": 2109.06,
+      "duration": 6.12,
+      "text": "so now here's some way to start the"
+    },
+    {
+      "start": 2112.48,
+      "duration": 6.78,
+      "text": "first one you start is with people who"
+    },
+    {
+      "start": 2115.18,
+      "duration": 7.02,
+      "text": "who have few or no sources"
+    },
+    {
+      "start": 2119.26,
+      "duration": 5.46,
+      "text": "and how do you know that well family"
+    },
+    {
+      "start": 2122.2,
+      "duration": 5.04,
+      "text": "search tells you that so if you click on"
+    },
+    {
+      "start": 2124.72,
+      "duration": 6.42,
+      "text": "there it'll tell you if I clicked on"
+    },
+    {
+      "start": 2127.24,
+      "duration": 7.68,
+      "text": "this Mary Bryan in 1817 and she has one"
+    },
+    {
+      "start": 2131.14,
+      "duration": 6.12,
+      "text": "source another way that that happens is"
+    },
+    {
+      "start": 2134.92,
+      "duration": 3.9,
+      "text": "uh through some other things that we'll"
+    },
+    {
+      "start": 2137.26,
+      "duration": 4.2,
+      "text": "look here here so what are the other"
+    },
+    {
+      "start": 2138.82,
+      "duration": 4.74,
+      "text": "things that I would look here I don't"
+    },
+    {
+      "start": 2141.46,
+      "duration": 5.04,
+      "text": "necessarily need to do all these people"
+    },
+    {
+      "start": 2143.56,
+      "duration": 4.799,
+      "text": "over again in other words I don't have"
+    },
+    {
+      "start": 2146.5,
+      "duration": 3.54,
+      "text": "to do research if I click on bind"
+    },
+    {
+      "start": 2148.359,
+      "duration": 4.321,
+      "text": "there's a lot of information about this"
+    },
+    {
+      "start": 2150.04,
+      "duration": 5.1,
+      "text": "individual I have no particular reason"
+    },
+    {
+      "start": 2152.68,
+      "duration": 6.72,
+      "text": "to write a biography on any one of these"
+    },
+    {
+      "start": 2155.14,
+      "duration": 6.12,
+      "text": "people so I would just go ahead and and"
+    },
+    {
+      "start": 2159.4,
+      "duration": 4.8,
+      "text": "make these kinds of distinctions the"
+    },
+    {
+      "start": 2161.26,
+      "duration": 5.94,
+      "text": "first one here is I have a person named"
+    },
+    {
+      "start": 2164.2,
+      "duration": 8.04,
+      "text": "Henry Woodson Morgan he lived from 1830"
+    },
+    {
+      "start": 2167.2,
+      "duration": 7.2,
+      "text": "to 1895 65 years and it doesn't show"
+    },
+    {
+      "start": 2172.24,
+      "duration": 4.379,
+      "text": "that he was ever married"
+    },
+    {
+      "start": 2174.4,
+      "duration": 4.14,
+      "text": "so the question is did he ever get"
+    },
+    {
+      "start": 2176.619,
+      "duration": 3.841,
+      "text": "married now if he did get married and it"
+    },
+    {
+      "start": 2178.54,
+      "duration": 5.64,
+      "text": "was never discovered or entered into the"
+    },
+    {
+      "start": 2180.46,
+      "duration": 5.82,
+      "text": "family tree then I would have a marriage"
+    },
+    {
+      "start": 2184.18,
+      "duration": 4.5,
+      "text": "and another person"
+    },
+    {
+      "start": 2186.28,
+      "duration": 4.02,
+      "text": "and then I would also have the potential"
+    },
+    {
+      "start": 2188.68,
+      "duration": 4.8,
+      "text": "that they had children"
+    },
+    {
+      "start": 2190.3,
+      "duration": 6.0,
+      "text": "and so it's possible that this person in"
+    },
+    {
+      "start": 2193.48,
+      "duration": 6.42,
+      "text": "the family tree was married had children"
+    },
+    {
+      "start": 2196.3,
+      "duration": 6.539,
+      "text": "and descendants and there could be"
+    },
+    {
+      "start": 2199.9,
+      "duration": 5.28,
+      "text": "a hundred from 1830 to the present there"
+    },
+    {
+      "start": 2202.839,
+      "duration": 4.321,
+      "text": "could be"
+    },
+    {
+      "start": 2205.18,
+      "duration": 4.26,
+      "text": "two or three thousand people out there"
+    },
+    {
+      "start": 2207.16,
+      "duration": 4.26,
+      "text": "that you would need to look at so you"
+    },
+    {
+      "start": 2209.44,
+      "duration": 3.6,
+      "text": "can spend an awful long time"
+    },
+    {
+      "start": 2211.42,
+      "duration": 4.679,
+      "text": "just doing"
+    },
+    {
+      "start": 2213.04,
+      "duration": 7.92,
+      "text": "the descendancy research for one person"
+    },
+    {
+      "start": 2216.099,
+      "duration": 6.901,
+      "text": "from one remote ancestor or relative"
+    },
+    {
+      "start": 2220.96,
+      "duration": 3.84,
+      "text": "so"
+    },
+    {
+      "start": 2223.0,
+      "duration": 5.52,
+      "text": "the second thing"
+    },
+    {
+      "start": 2224.8,
+      "duration": 4.92,
+      "text": "is to look at someone who says that they"
+    },
+    {
+      "start": 2228.52,
+      "duration": 4.8,
+      "text": "were born"
+    },
+    {
+      "start": 2229.72,
+      "duration": 6.0,
+      "text": "and this one is Woodson S Morgan Morgan"
+    },
+    {
+      "start": 2233.32,
+      "duration": 4.019,
+      "text": "say the names are very I mean the names"
+    },
+    {
+      "start": 2235.72,
+      "duration": 3.119,
+      "text": "are just repeated over and over which"
+    },
+    {
+      "start": 2237.339,
+      "duration": 3.181,
+      "text": "also is something else you have to watch"
+    },
+    {
+      "start": 2238.839,
+      "duration": 3.24,
+      "text": "out for"
+    },
+    {
+      "start": 2240.52,
+      "duration": 5.579,
+      "text": "but"
+    },
+    {
+      "start": 2242.079,
+      "duration": 5.76,
+      "text": "this is 1840 and he's deceased well how"
+    },
+    {
+      "start": 2246.099,
+      "duration": 3.541,
+      "text": "did long did he live did he die as a"
+    },
+    {
+      "start": 2247.839,
+      "duration": 4.201,
+      "text": "child did he die"
+    },
+    {
+      "start": 2249.64,
+      "duration": 4.86,
+      "text": "when he was 20 years old did he die when"
+    },
+    {
+      "start": 2252.04,
+      "duration": 4.44,
+      "text": "he was 80 years old and if he did did he"
+    },
+    {
+      "start": 2254.5,
+      "duration": 4.079,
+      "text": "ever get married so this is really the"
+    },
+    {
+      "start": 2256.48,
+      "duration": 4.44,
+      "text": "same question as the one who doesn't"
+    },
+    {
+      "start": 2258.579,
+      "duration": 3.301,
+      "text": "show a marriage but it adds the other"
+    },
+    {
+      "start": 2260.92,
+      "duration": 3.48,
+      "text": "problem"
+    },
+    {
+      "start": 2261.88,
+      "duration": 5.34,
+      "text": "if that doesn't show when he died"
+    },
+    {
+      "start": 2264.4,
+      "duration": 4.02,
+      "text": "so we this is another opportunity if"
+    },
+    {
+      "start": 2267.22,
+      "duration": 2.94,
+      "text": "it's just the way it shows you that"
+    },
+    {
+      "start": 2268.42,
+      "duration": 3.48,
+      "text": "there's an opportunity here"
+    },
+    {
+      "start": 2270.16,
+      "duration": 3.959,
+      "text": "the third one"
+    },
+    {
+      "start": 2271.9,
+      "duration": 5.58,
+      "text": "is"
+    },
+    {
+      "start": 2274.119,
+      "duration": 5.401,
+      "text": "parents who have no children"
+    },
+    {
+      "start": 2277.48,
+      "duration": 4.8,
+      "text": "back in that time period"
+    },
+    {
+      "start": 2279.52,
+      "duration": 5.339,
+      "text": "that was that's unusual"
+    },
+    {
+      "start": 2282.28,
+      "duration": 4.68,
+      "text": "and so it's very likely that these"
+    },
+    {
+      "start": 2284.859,
+      "duration": 3.48,
+      "text": "people had children"
+    },
+    {
+      "start": 2286.96,
+      "duration": 3.6,
+      "text": "now there's another thing that's"
+    },
+    {
+      "start": 2288.339,
+      "duration": 6.061,
+      "text": "important about this"
+    },
+    {
+      "start": 2290.56,
+      "duration": 5.94,
+      "text": "these people were people in the United"
+    },
+    {
+      "start": 2294.4,
+      "duration": 4.92,
+      "text": "States and in English"
+    },
+    {
+      "start": 2296.5,
+      "duration": 4.98,
+      "text": "and Market actually Wales also but but"
+    },
+    {
+      "start": 2299.32,
+      "duration": 3.6,
+      "text": "these people go back so many days these"
+    },
+    {
+      "start": 2301.48,
+      "duration": 4.5,
+      "text": "most of these people are in the United"
+    },
+    {
+      "start": 2302.92,
+      "duration": 5.22,
+      "text": "States and it's interesting"
+    },
+    {
+      "start": 2305.98,
+      "duration": 6.119,
+      "text": "that"
+    },
+    {
+      "start": 2308.14,
+      "duration": 6.719,
+      "text": "in 18 if they were born in 1819"
+    },
+    {
+      "start": 2312.099,
+      "duration": 8.341,
+      "text": "and they died in 1893 during the night"
+    },
+    {
+      "start": 2314.859,
+      "duration": 7.141,
+      "text": "1850 1860 1870 and 1880 censuses"
+    },
+    {
+      "start": 2320.44,
+      "duration": 3.06,
+      "text": "we're talking about four different"
+    },
+    {
+      "start": 2322.0,
+      "duration": 4.98,
+      "text": "Census records"
+    },
+    {
+      "start": 2323.5,
+      "duration": 6.42,
+      "text": "and if they were 1819"
+    },
+    {
+      "start": 2326.98,
+      "duration": 4.68,
+      "text": "they were about 20 plus years in 1850"
+    },
+    {
+      "start": 2329.92,
+      "duration": 3.919,
+      "text": "they could be there and show their"
+    },
+    {
+      "start": 2331.66,
+      "duration": 6.0,
+      "text": "parents so there's a lot of information"
+    },
+    {
+      "start": 2333.839,
+      "duration": 6.221,
+      "text": "that's relatively accessible about"
+    },
+    {
+      "start": 2337.66,
+      "duration": 4.5,
+      "text": "people who are in this time frame and"
+    },
+    {
+      "start": 2340.06,
+      "duration": 3.42,
+      "text": "that's another factor in choosing the"
+    },
+    {
+      "start": 2342.16,
+      "duration": 4.32,
+      "text": "names"
+    },
+    {
+      "start": 2343.48,
+      "duration": 5.22,
+      "text": "so by focusing if you focus on the"
+    },
+    {
+      "start": 2346.48,
+      "duration": 5.04,
+      "text": "people who have no sources and have"
+    },
+    {
+      "start": 2348.7,
+      "duration": 6.48,
+      "text": "someone of these criterias"
+    },
+    {
+      "start": 2351.52,
+      "duration": 6.3,
+      "text": "then you like Jane Bryant has no sources"
+    },
+    {
+      "start": 2355.18,
+      "duration": 4.56,
+      "text": "because family search tells you there"
+    },
+    {
+      "start": 2357.82,
+      "duration": 3.24,
+      "text": "are no sources"
+    },
+    {
+      "start": 2359.74,
+      "duration": 4.2,
+      "text": "and then"
+    },
+    {
+      "start": 2361.06,
+      "duration": 7.14,
+      "text": "she was born In 1855 so she would be in"
+    },
+    {
+      "start": 2363.94,
+      "duration": 6.36,
+      "text": "the 1860 1870 1880. and if she was if"
+    },
+    {
+      "start": 2368.2,
+      "duration": 7.74,
+      "text": "this were in England she'd be in the"
+    },
+    {
+      "start": 2370.3,
+      "duration": 8.16,
+      "text": "of the 1861 set 71 81 91 censuses"
+    },
+    {
+      "start": 2375.94,
+      "duration": 6.12,
+      "text": "so this person is going to be fairly"
+    },
+    {
+      "start": 2378.46,
+      "duration": 5.159,
+      "text": "easy to determine if she died early"
+    },
+    {
+      "start": 2382.06,
+      "duration": 5.16,
+      "text": "and I don't like to use the word easy"
+    },
+    {
+      "start": 2383.619,
+      "duration": 6.0,
+      "text": "but it say it's doable it's doable to"
+    },
+    {
+      "start": 2387.22,
+      "duration": 4.8,
+      "text": "find a person like this"
+    },
+    {
+      "start": 2389.619,
+      "duration": 4.941,
+      "text": "in the sense it's particularly if other"
+    },
+    {
+      "start": 2392.02,
+      "duration": 4.86,
+      "text": "people in the family have already been"
+    },
+    {
+      "start": 2394.56,
+      "duration": 4.96,
+      "text": "uh sourced"
+    },
+    {
+      "start": 2396.88,
+      "duration": 5.52,
+      "text": "because then you have a sort of an idea"
+    },
+    {
+      "start": 2399.52,
+      "duration": 4.38,
+      "text": "of exactly where to look now here's the"
+    },
+    {
+      "start": 2402.4,
+      "duration": 3.78,
+      "text": "other problem"
+    },
+    {
+      "start": 2403.9,
+      "duration": 4.02,
+      "text": "when you get to this point and you start"
+    },
+    {
+      "start": 2406.18,
+      "duration": 4.679,
+      "text": "doing the research you may find that"
+    },
+    {
+      "start": 2407.92,
+      "duration": 4.86,
+      "text": "this family is total disaster that none"
+    },
+    {
+      "start": 2410.859,
+      "duration": 3.181,
+      "text": "of these people are really related they"
+    },
+    {
+      "start": 2412.78,
+      "duration": 4.02,
+      "text": "don't have anything to do with each"
+    },
+    {
+      "start": 2414.04,
+      "duration": 5.1,
+      "text": "other and they are"
+    },
+    {
+      "start": 2416.8,
+      "duration": 6.36,
+      "text": "and it was just all made up"
+    },
+    {
+      "start": 2419.14,
+      "duration": 6.84,
+      "text": "well then what you do is correct it all"
+    },
+    {
+      "start": 2423.16,
+      "duration": 6.06,
+      "text": "so you go back up the line and start"
+    },
+    {
+      "start": 2425.98,
+      "duration": 5.34,
+      "text": "again and start correcting it until you"
+    },
+    {
+      "start": 2429.22,
+      "duration": 5.66,
+      "text": "find the correct ancestors and of course"
+    },
+    {
+      "start": 2431.32,
+      "duration": 3.56,
+      "text": "when you do that you get more people"
+    },
+    {
+      "start": 2435.88,
+      "duration": 7.739,
+      "text": "and down here there is a source but it"
+    },
+    {
+      "start": 2439.78,
+      "duration": 7.44,
+      "text": "says that it's a legacy source"
+    },
+    {
+      "start": 2443.619,
+      "duration": 6.321,
+      "text": "that means it's a source that"
+    },
+    {
+      "start": 2447.22,
+      "duration": 2.72,
+      "text": "who knows"
+    },
+    {
+      "start": 2450.579,
+      "duration": 4.02,
+      "text": "so when they have Census records to look"
+    },
+    {
+      "start": 2453.16,
+      "duration": 2.939,
+      "text": "for people who may have had children"
+    },
+    {
+      "start": 2454.599,
+      "duration": 4.281,
+      "text": "where there are Census records because"
+    },
+    {
+      "start": 2456.099,
+      "duration": 2.781,
+      "text": "that'll really help"
+    },
+    {
+      "start": 2460.0,
+      "duration": 4.079,
+      "text": "so don't make things harder than they"
+    },
+    {
+      "start": 2461.74,
+      "duration": 4.8,
+      "text": "already are if there's there's lots of"
+    },
+    {
+      "start": 2464.079,
+      "duration": 4.621,
+      "text": "ways to do this and that means that"
+    },
+    {
+      "start": 2466.54,
+      "duration": 4.319,
+      "text": "you're getting into information that"
+    },
+    {
+      "start": 2468.7,
+      "duration": 4.8,
+      "text": "obviously is cut"
+    },
+    {
+      "start": 2470.859,
+      "duration": 4.681,
+      "text": "uh really nobody knows where these"
+    },
+    {
+      "start": 2473.5,
+      "duration": 4.38,
+      "text": "people were and there were never any"
+    },
+    {
+      "start": 2475.54,
+      "duration": 4.62,
+      "text": "sources and like that's like going back"
+    },
+    {
+      "start": 2477.88,
+      "duration": 5.719,
+      "text": "and back in time"
+    },
+    {
+      "start": 2480.16,
+      "duration": 3.439,
+      "text": "so you don't want to do that"
+    },
+    {
+      "start": 2484.18,
+      "duration": 5.52,
+      "text": "James yeah there's a question that says"
+    },
+    {
+      "start": 2487.66,
+      "duration": 5.9,
+      "text": "how do you see what is in the sources"
+    },
+    {
+      "start": 2489.7,
+      "duration": 8.28,
+      "text": "that say Legacy new family search Source"
+    },
+    {
+      "start": 2493.56,
+      "duration": 6.88,
+      "text": "usually nothing it just says that"
+    },
+    {
+      "start": 2497.98,
+      "duration": 4.26,
+      "text": "so you kind of have to take it on faith"
+    },
+    {
+      "start": 2500.44,
+      "duration": 4.32,
+      "text": "that there was something there I've"
+    },
+    {
+      "start": 2502.24,
+      "duration": 4.74,
+      "text": "found almost none of those Legacy"
+    },
+    {
+      "start": 2504.76,
+      "duration": 4.74,
+      "text": "sources have any they don't have links"
+    },
+    {
+      "start": 2506.98,
+      "duration": 4.5,
+      "text": "to anything and so you'd have to kind of"
+    },
+    {
+      "start": 2509.5,
+      "duration": 3.96,
+      "text": "look at that and see if there's a book"
+    },
+    {
+      "start": 2511.48,
+      "duration": 4.619,
+      "text": "or if there's some kind of other thing"
+    },
+    {
+      "start": 2513.46,
+      "duration": 5.119,
+      "text": "that that might have that"
+    },
+    {
+      "start": 2516.099,
+      "duration": 2.48,
+      "text": "record"
+    },
+    {
+      "start": 2518.74,
+      "duration": 2.599,
+      "text": "okay"
+    },
+    {
+      "start": 2521.619,
+      "duration": 6.121,
+      "text": "so use all the possible resources"
+    },
+    {
+      "start": 2525.46,
+      "duration": 4.68,
+      "text": "I mean this is just doing research so"
+    },
+    {
+      "start": 2527.74,
+      "duration": 5.22,
+      "text": "you're going to do the research"
+    },
+    {
+      "start": 2530.14,
+      "duration": 4.439,
+      "text": "and frequently check to see if you are"
+    },
+    {
+      "start": 2532.96,
+      "duration": 3.24,
+      "text": "still related to the people you're"
+    },
+    {
+      "start": 2534.579,
+      "duration": 3.961,
+      "text": "researching"
+    },
+    {
+      "start": 2536.2,
+      "duration": 4.62,
+      "text": "this is your little how am I related"
+    },
+    {
+      "start": 2538.54,
+      "duration": 4.62,
+      "text": "view how I'm related kind of thing from"
+    },
+    {
+      "start": 2540.82,
+      "duration": 4.259,
+      "text": "family search it'll show you exactly"
+    },
+    {
+      "start": 2543.16,
+      "duration": 4.439,
+      "text": "what kind of uh"
+    },
+    {
+      "start": 2545.079,
+      "duration": 5.04,
+      "text": "what your relationship is"
+    },
+    {
+      "start": 2547.599,
+      "duration": 5.701,
+      "text": "I would check this every time you make a"
+    },
+    {
+      "start": 2550.119,
+      "duration": 6.96,
+      "text": "choice every time you move I would go"
+    },
+    {
+      "start": 2553.3,
+      "duration": 7.319,
+      "text": "back and I do this just constantly"
+    },
+    {
+      "start": 2557.079,
+      "duration": 5.76,
+      "text": "because it's so easy to get off on a"
+    },
+    {
+      "start": 2560.619,
+      "duration": 4.801,
+      "text": "line and pick up somebody who doesn't"
+    },
+    {
+      "start": 2562.839,
+      "duration": 4.561,
+      "text": "turn out to be related because I don't"
+    },
+    {
+      "start": 2565.42,
+      "duration": 2.82,
+      "text": "there's too many ways to even talk about"
+    },
+    {
+      "start": 2567.4,
+      "duration": 3.92,
+      "text": "that"
+    },
+    {
+      "start": 2568.24,
+      "duration": 3.08,
+      "text": "it just happens"
+    },
+    {
+      "start": 2571.66,
+      "duration": 4.74,
+      "text": "so you have to understand these people"
+    },
+    {
+      "start": 2574.119,
+      "duration": 4.321,
+      "text": "may never have married or couples may"
+    },
+    {
+      "start": 2576.4,
+      "duration": 4.919,
+      "text": "never have had children and that's"
+    },
+    {
+      "start": 2578.44,
+      "duration": 6.48,
+      "text": "you can feel bad about that or not but"
+    },
+    {
+      "start": 2581.319,
+      "duration": 5.641,
+      "text": "it's it's what happens so usually the"
+    },
+    {
+      "start": 2584.92,
+      "duration": 4.26,
+      "text": "easiest way is to see the person died"
+    },
+    {
+      "start": 2586.96,
+      "duration": 5.1,
+      "text": "and was buried with the same name that"
+    },
+    {
+      "start": 2589.18,
+      "duration": 5.399,
+      "text": "they got born with then their maiden"
+    },
+    {
+      "start": 2592.06,
+      "duration": 4.259,
+      "text": "name on women never changed with men it"
+    },
+    {
+      "start": 2594.579,
+      "duration": 5.061,
+      "text": "may be a more difficult"
+    },
+    {
+      "start": 2596.319,
+      "duration": 6.661,
+      "text": "because in in English-speaking countries"
+    },
+    {
+      "start": 2599.64,
+      "duration": 6.219,
+      "text": "we don't change the male's name at any"
+    },
+    {
+      "start": 2602.98,
+      "duration": 4.26,
+      "text": "time so you may have to do some research"
+    },
+    {
+      "start": 2605.859,
+      "duration": 4.321,
+      "text": "all the way till the time that they're"
+    },
+    {
+      "start": 2607.24,
+      "duration": 4.92,
+      "text": "80 years old or 90 or die if they die"
+    },
+    {
+      "start": 2610.18,
+      "duration": 4.139,
+      "text": "with the same name and they don't show"
+    },
+    {
+      "start": 2612.16,
+      "duration": 4.58,
+      "text": "any spouse then you probably didn't ever"
+    },
+    {
+      "start": 2614.319,
+      "duration": 2.421,
+      "text": "get married"
+    },
+    {
+      "start": 2617.14,
+      "duration": 4.32,
+      "text": "and watch out for the same name same"
+    },
+    {
+      "start": 2619.18,
+      "duration": 4.62,
+      "text": "person trap"
+    },
+    {
+      "start": 2621.46,
+      "duration": 4.859,
+      "text": "now I got into one of these that was"
+    },
+    {
+      "start": 2623.8,
+      "duration": 5.64,
+      "text": "just absolutely complicated"
+    },
+    {
+      "start": 2626.319,
+      "duration": 6.481,
+      "text": "basically what happened was that I found"
+    },
+    {
+      "start": 2629.44,
+      "duration": 4.2,
+      "text": "a person and in England and it turned"
+    },
+    {
+      "start": 2632.8,
+      "duration": 2.94,
+      "text": "out"
+    },
+    {
+      "start": 2633.64,
+      "duration": 4.08,
+      "text": "that I kept coming up with different"
+    },
+    {
+      "start": 2635.74,
+      "duration": 3.72,
+      "text": "wives names I kept coming up with"
+    },
+    {
+      "start": 2637.72,
+      "duration": 3.66,
+      "text": "different children's names they weren't"
+    },
+    {
+      "start": 2639.46,
+      "duration": 3.3,
+      "text": "they were all the wise name were exactly"
+    },
+    {
+      "start": 2641.38,
+      "duration": 3.54,
+      "text": "the same"
+    },
+    {
+      "start": 2642.76,
+      "duration": 3.48,
+      "text": "except the children all were always"
+    },
+    {
+      "start": 2644.92,
+      "duration": 3.24,
+      "text": "weren't the same"
+    },
+    {
+      "start": 2646.24,
+      "duration": 3.06,
+      "text": "and I kept working on it finally it"
+    },
+    {
+      "start": 2648.16,
+      "duration": 2.84,
+      "text": "occurred to me that I was probably"
+    },
+    {
+      "start": 2649.3,
+      "duration": 4.319,
+      "text": "dealing with two different people here"
+    },
+    {
+      "start": 2651.0,
+      "duration": 4.96,
+      "text": "but everything kept coming up the same"
+    },
+    {
+      "start": 2653.619,
+      "duration": 4.861,
+      "text": "and usually I look at the location and"
+    },
+    {
+      "start": 2655.96,
+      "duration": 4.44,
+      "text": "the locations were exactly the same"
+    },
+    {
+      "start": 2658.48,
+      "duration": 4.619,
+      "text": "and I kept thinking will this guy get"
+    },
+    {
+      "start": 2660.4,
+      "duration": 5.1,
+      "text": "married twice is this uh you know"
+    },
+    {
+      "start": 2663.099,
+      "duration": 5.041,
+      "text": "where's the second marriage anyway for"
+    },
+    {
+      "start": 2665.5,
+      "duration": 5.64,
+      "text": "after all this was happening for quite a"
+    },
+    {
+      "start": 2668.14,
+      "duration": 6.06,
+      "text": "bit of research time what happened was"
+    },
+    {
+      "start": 2671.14,
+      "duration": 4.439,
+      "text": "that they did have the same name here"
+    },
+    {
+      "start": 2674.2,
+      "duration": 3.3,
+      "text": "were two people"
+    },
+    {
+      "start": 2675.579,
+      "duration": 4.081,
+      "text": "with the same name obviously that's"
+    },
+    {
+      "start": 2677.5,
+      "duration": 5.04,
+      "text": "that's easy they both had the same wives"
+    },
+    {
+      "start": 2679.66,
+      "duration": 4.32,
+      "text": "names their children almost all had the"
+    },
+    {
+      "start": 2682.54,
+      "duration": 3.24,
+      "text": "same names"
+    },
+    {
+      "start": 2683.98,
+      "duration": 4.379,
+      "text": "and then when I kept going which got"
+    },
+    {
+      "start": 2685.78,
+      "duration": 4.319,
+      "text": "even more frustrating after a while is I"
+    },
+    {
+      "start": 2688.359,
+      "duration": 3.301,
+      "text": "finally figured out that they live next"
+    },
+    {
+      "start": 2690.099,
+      "duration": 3.601,
+      "text": "door to each other"
+    },
+    {
+      "start": 2691.66,
+      "duration": 4.439,
+      "text": "so they lived in the same place"
+    },
+    {
+      "start": 2693.7,
+      "duration": 5.159,
+      "text": "in the same neighborhood"
+    },
+    {
+      "start": 2696.099,
+      "duration": 4.561,
+      "text": "so don't don't put it out of your mind"
+    },
+    {
+      "start": 2698.859,
+      "duration": 4.201,
+      "text": "that you're not going to get fooled by"
+    },
+    {
+      "start": 2700.66,
+      "duration": 4.26,
+      "text": "the same name same person trap"
+    },
+    {
+      "start": 2703.06,
+      "duration": 3.9,
+      "text": "because they're you're going to get a"
+    },
+    {
+      "start": 2704.92,
+      "duration": 4.919,
+      "text": "mixed up sometimes and you'll get people"
+    },
+    {
+      "start": 2706.96,
+      "duration": 4.619,
+      "text": "in there that that then it's look start"
+    },
+    {
+      "start": 2709.839,
+      "duration": 3.421,
+      "text": "looking really strange"
+    },
+    {
+      "start": 2711.579,
+      "duration": 4.081,
+      "text": "when you start having people children"
+    },
+    {
+      "start": 2713.26,
+      "duration": 4.92,
+      "text": "born the same year and things like that"
+    },
+    {
+      "start": 2715.66,
+      "duration": 6.419,
+      "text": "so you just have to be really careful"
+    },
+    {
+      "start": 2718.18,
+      "duration": 7.2,
+      "text": "because this comes up just continually"
+    },
+    {
+      "start": 2722.079,
+      "duration": 5.04,
+      "text": "the Boneless benefit of all this is that"
+    },
+    {
+      "start": 2725.38,
+      "duration": 3.78,
+      "text": "you're coming forward in time instead of"
+    },
+    {
+      "start": 2727.119,
+      "duration": 4.081,
+      "text": "going backward in time and because"
+    },
+    {
+      "start": 2729.16,
+      "duration": 3.9,
+      "text": "you're going forward in time there are"
+    },
+    {
+      "start": 2731.2,
+      "duration": 4.619,
+      "text": "going to be naturally more records than"
+    },
+    {
+      "start": 2733.06,
+      "duration": 5.82,
+      "text": "there were when you started out and it's"
+    },
+    {
+      "start": 2735.819,
+      "duration": 5.701,
+      "text": "just like getting a child who's now born"
+    },
+    {
+      "start": 2738.88,
+      "duration": 4.739,
+      "text": "during the census years or a child who's"
+    },
+    {
+      "start": 2741.52,
+      "duration": 4.02,
+      "text": "now boring born when there was civil"
+    },
+    {
+      "start": 2743.619,
+      "duration": 3.72,
+      "text": "registration in England or any number of"
+    },
+    {
+      "start": 2745.54,
+      "duration": 4.26,
+      "text": "other things"
+    },
+    {
+      "start": 2747.339,
+      "duration": 3.601,
+      "text": "so this is kind of how you get to that"
+    },
+    {
+      "start": 2749.8,
+      "duration": 4.74,
+      "text": "point"
+    },
+    {
+      "start": 2750.94,
+      "duration": 6.3,
+      "text": "and the Big Goal here and the and the"
+    },
+    {
+      "start": 2754.54,
+      "duration": 4.62,
+      "text": "and the bonus is that you'll never run"
+    },
+    {
+      "start": 2757.24,
+      "duration": 5.64,
+      "text": "out of people to research"
+    },
+    {
+      "start": 2759.16,
+      "duration": 5.939,
+      "text": "as the numbers are are way more than you"
+    },
+    {
+      "start": 2762.88,
+      "duration": 4.5,
+      "text": "can possibly imagine"
+    },
+    {
+      "start": 2765.099,
+      "duration": 5.52,
+      "text": "and so there's always a new family to"
+    },
+    {
+      "start": 2767.38,
+      "duration": 5.76,
+      "text": "look at a new place to look and new"
+    },
+    {
+      "start": 2770.619,
+      "duration": 4.681,
+      "text": "information to to be added to the family"
+    },
+    {
+      "start": 2773.14,
+      "duration": 5.959,
+      "text": "tree okay"
+    },
+    {
+      "start": 2775.3,
+      "duration": 3.799,
+      "text": "well thanks for watching"
+    }
+  ],
+  "full_text": "welcome to this Sunday's virtual class in the Brigham Young University's family history library at Provo Utah today's class is finding your ancestors descendants our presenters James Tanner we appreciate his preparation and willingness to share his knowledge on this subject we'll now turn the time over to James well we are going to go about look about finding your ancestors descendants and this particular presentation is going to be based primarily on familysearch.org it is one of the few programs that I'm aware of that will show you all your descendants from back to whatever living people from wherever they are and it's a very interesting process and we'll get right into it first of all just kind of to get us oriented as to what all this means is that your ancestors descendants are your cousins and you have the second you know twice removed three times removed well is further the further you go back with great great greater great great great great grandparents the more removed they are from you their direct line at ascendants in other words their children their children's children and their children's children obviously if you're one of the descendants of a great great great great grandparent it doesn't it doesn't matter how many descendants they have you're still that's still your great great great grandfather you just share that person that great first great grandparent with as many descendants as they are and then we'll kind of get an idea of what we're talking about when we're talking about uh numbers of descendants this is a notice I received yesterday and I understand that the numbers have changed dramatically since yesterday and will continue to change during this week where this class is being presented the the beginning of the week before the roots Tech Conference of 2023 so the numbers here are going to be uh a snapshot of what was happening uh yesterday about a week before the conference so I had when I signed into this relatives at Roots Tech kind of app that they have for uh people who are registered if you if you opt into this if you choose to to be part of relatives of the text then they'll put this up I really don't have a lot of time to view relationship but I have 6401 cousins but you might be surprised uh if you and let me I I analyze this I looked at it I thought well what am I going to tell people that why would I have six thousand uh cousins well by the time I finished registering by the way will go on I had twelve thousand one hundred and twenty four so it had doubled in about 10 or 15 minutes after I was doing this particular registration um these numbers go back are basically based on the family tree so if you if you have your you have to have your uh some kind of a TR of connection in the family tree some some you have to put your information in it to some extent and and it obviously depends on how many connections you have as you go back if you have put uh let's say you're you start a new account a new part of the family tree and family search and you put in you and your parents uh and they don't register for root stick then you probably won't have any relatives in root stick because they won't have any way to know if you're related so the larger you the more time you've spent putting names in family search then the larger this number and of course I have a little bit of a head start on most of you because I start at 40 years plus ago so after 40 years I've managed to accumulate a vast number of relatives around the world and the interesting part about this is uh where all these relatives are so you see it jumped a bit this is the number that uh uh it just keeps jumping up as we go along but I think that's the total number of people on the program because if if I'm already yeah it says total participants so that was the number yesterday and I understand by today it's has doubled but you can see that there are people all around the world I have more than a hundred thousand relatives in the United States or or wherever and so this is uh this this gives you a kind of a Global Perspective and how I managed to get relatives in China and all throughout Africa and South America and in other places I have no idea but that's kind of an interesting uh an interesting thing to uh to discuss and to view and to find out that you really do have all these people and by the way this works for people who are registered online as well as registered at the live concert conference so don't don't hesitate to register for roots Tech online because there's no charge and so you'll get the the complete impact of this but before you begin the descendancy research this is something that I go through repeatedly with people uh it's not it's very common when someone will come in at the library or they'll contact me directly and say I need some help I'm trying to find Jon Jones and he lived in England in uh he lived in England and uh he was probably christened around 1740. and and I go back to him and I go and you're looking for what and well we're looking for his parents and so the answer is well I need to know before I can help you and this is kind of my polite way of putting this I need to help before I can help you I need to get some idea how you're connected to this person so we sit down and we go through their family tree portion their pedigree back to the connection of that person and in each case we look for a valid sourced parent-child relationship for each generation now what does that mean it means that um we have a document historically valid genealogically source document that says this person is the child of this person okay so that's kind of the simple basis for this whole idea of doing genealogy so I clicked back on one of the lines that I have that I happen to know uh a little bit about let's say more than usual and I clicked back and I just stopped clicking after a while because I figured this probably Illustrated so if I'm clicking back on this line which is the Morgan line and the Morgan's first of all kind of give you a background of this Morgan is one of the top five most common names in Wales and it's also common in England and it's also commented in Scotland and it's gotten content and lots of other places which is tremendously common name but what's happened in this line of Morgans that goes back is that at some point in the line they just decided they would jump to somebody that they could find easily that was famous and had the name Morgan and so they just kept going back and back and they just picked up all the mortgage so this is line that that is kind of blatantly not supportable by any historical documents if you look over here the person in the middle of this pedigree as well an app I for bedri bledri and he has zero sources zero memories I mean there's nothing in here to support this and the interesting thing about it is you've looked down at his birth here on the right hand side you'll see he is saying I'm going to try to say all that said tredica monmouthshire Wales and this other place so he's born in two different places and they're two different parts of Wales and so he's quite a unique character since he was born twice in two different places but this is kind of what happens back in this these records and because you don't focus on the place where he was born you assume that there's some kind of source because here usually date and it gives you a place for a person was born well let's look a little bit further here and see what happens that's a little bit closer look at what he did what that record shows so then if we just do a little bit of research we find that these people are all on A Welch Wiki so this page was it's the witchy Peter because it is not originally in Welch and it's translated in English the interesting thing about this particular um document as it says we have few solid facts about him well if you have few solid facts then you don't have any facts so this is the basically this person was taken out of some kind of of oral history of or or poetry from from Wales it's kind of like saying you were related to King Arthur and all of the different kinds of of different kinds of things that have been written about whether Arthur King Arthur was actual person or whatever and they're still kind of out the the historic history and all the writings and everything are still kind of uh out on out on maybe and maybe not for Arthur but for these guys there's no there's not even that much interest not that many people are looking for them so where where did this line really end no I say that but I mean is where was there someone added as a parent with no source there's nothing that shows us where they got the information or that there was any information so if we look at this what we're going to find is that and come down the whole the whole line here we also start looking and see if there were any if there anything about this person that we need to know this well in appi for bloody Petri and it says basically I clicked on whether I was related view my relationship and I wasn't even related this thing because he's Beyond 15 generations and they're not going to say you're related so family search is at least put some limit on the total number of generations you can go back before any before even they believe or even want to believe that you're related so I went up the line from me up back through my Morgan line which is my mother and my grandmother and my my grandfather and his family going back the Morgan Family and I found this record this is uh Gerard Morgan and it says that he's in the entry for Gerard Mark and Virginia burst well that's Gerard Morgan and his son Gerard Morgan and that son was born and an entry well this is Gerard Morgan who was born and that 1584 doesn't have anything to do with anything because he was born in 1755 and his son was born a number of years later so none of these I might I'm not going to go through the whole discussion of each of these sources but none of these sources show who Gerard Morgan's father was they're just there's just no nothing there that shows who the father was even the book which is a book down at the bottom of the page so from this point on going back there are no Source records documenting a parent-child relationship and that means this is the end of the line now so why do I saying this well because we're going to be talk about doing ascendancy and to do descendancy you have to pick an ancestor back on your family line and then start researching all of their descendants all their children children's children so forth and so when we're talking about that it's very important to find out whether you're related to this because if you're not related to it so here's the difference the difference is Gerard Morgan was around 1755 as opposed to 1220. I mean that's like um 500 years with of stuff that if you wanted to go back and start back 500 years then in the past then you probably have a whole different world to work with obviously so this is kind of a rule of thumb now rules of thumb are helpful because they give you a guideline and then when you get out of that guideline and you say well this is an exception to the guideline then you pretty well are the the burdens on you to show that there's some reason why you would go past this this this line and and that you have some kind of valid uh Source material that that talks you back for that far and uh going back in time you'll find that most of the pedigrees especially those on the family search family tree really end up before the 1700 A.D there's a relatively few of the thousands and thousands of possibilities you realize of course that as you go back in time it's a geometric progression of all your ancestors it's 2 4 8 16 32 64 you know 120 128 uh 256 512 Etc 512 and 1024 ancestors and then if you take all their descendants then you can begin to see why I have that many relatives on the roots Tech website so when you have all those numbers and they've all and a lot of that research has been done and there's all those people in the family tree then really do if you really do have that many relatives and you really are related to all those people and uh it's it's very interesting to be rated to be be related to all that many people but it's only interesting because there's really no way that you can be uh you know culturally in the United States it would be it's it's almost impossible to to claim that you have fifth cousins that you're familiar with unless it's just somebody you happen to work with or go to school with so anyway make sure you're related make sure as you go back in time that you're actually related to the person that you're going to start with unless you just want to research random families if you really don't care if you're related to the person and you just want to go back and take some famous person decide to find out all the people that are descended from them then that's one thing but that's not doing your own genealogy that's just doing genealogy for somebody random out there this opens up a whole a whole question because a lot of people have spent a lot of time working on on people that go back on Royal lines and other lines that go back very much further than than even that 1200 A.D figure and the question is all of that is is pretty much been done all that genealogy is all you're doing when you get back past a certain point and that's about 1500 is your you're you're just copying genealogies that have been created previously in books or manuscripts or whatever you're not really doing any actual research you're not you're not turning up historical documents you can that is possible and there are some people and there are people who have done that and and they're they're the ones who are compiling the royal families of Europe or wherever and they're the ones that sit in the libraries over in Europe or and uh and actually go through all the old records and reconstruct this stuff but if you really want to know there's already on family search there's a section under the search tab called genealogies and if you go in there there's a community uh they're called Community records or communities and when you go into the community you'll find if you search for royalty that there are there's a section in their Toronto royalty of Europe and that's the compiled area of every single person who they can document as having royalty be part of the royalty in all of Europe and it's been worked on now for close to is yeah close to 100 years now or more so I would suggest that you can you know that's why I'm saying don't don't waste your time it's all there if you want to copy it out that's great but I think that's primarily not something that I personally would be interested in doing an additional other thing is don't ever get obsessed with researching just one record one person or one family this is very this can happen whether you're going back in time or coming forward in time doing descended series research many times many many times I get involved with people who say oh I have been looking for this marriage record now for for 25 or 30 or 40 years and I go well do you not think they were married and they say well yeah they had five kids well why are you looking for a nurse record so it's it's you know this is genealogy is a very interesting subject it's interesting to pursue but when you start getting fixated and and obsessed with one individual or one record that's that goes beyond the whole concept and scope of of genealogy uh if you if you are really interested because you have a very unusual or a really interesting grandparent and you want to do research on that person to write a book or a life history or a biography or whatever I mean that's that's legitimate Pursuit that that's fine but if you're trying to accumulate and and find out all the people or in other words if the idea here is to make connections and and get additional people uh into the family search family tree for example then uh don't don't get stuck on one person or one family or one one record and it's just a caution it it's just it it's uh it you make up your own mind what you want to do but uh I I found that people who do that generally have stopped doing any other research or primarily or focusing on this one thing and I think and another problem that I see is that we have a concept out there called cluster research which says that you look for the whole family and all the relatives and you do as much research on the environment and the the culture and the context and the history of the area in order to uh to develop the idea of this person but ultimately it comes down to that same question that I mentioned earlier is and the way I do it with the rules of genealogy is uh if you're looking for a death record and the answer is do you think the person's still alive and of course the answer is no and so the answer I have back is then why do you want to look spend so much time on that one record so now we begin with the descendancy view on familysearch.org this is an option and um uh I'm not aware of other programs that provide this option and the reason why they don't provide the option are very simple because they have your own family tree this is a unified collaborative family tree and they simply only have the research that you particularly have done and so unless you've managed to do descendancy research on your own family tree on one of these on one of the other programs that's all you're going to see you're never going to see people when everybody else has added that information in over the last 100 plus years and we're getting up to about 125 100 and almost going close to 130 years of genealogy behind this or being part of this family search family tree and so this is a lot of people and it has a lot of information and I I I've kind of get a little bit uh put off by people who constantly look at the negative side and say oh this information isn't correct or this one isn't correct or whatever and the answer is no but the the vast amount of this information in the in the billions of people that are on this record now is uh sourced and record there's there's hundreds of thousands of sources that go into this program every year telling us where these people were and what they were and if uh and to focus on uh on the negative aspects or the questions or the limitations of it are is not productive so looking for Descendants is no different than looking for your ancestry this type of research can be also viewed as filling in the blanks on your family pedigree if you go back traditionally pedigrees went back on your surname so if you were a Tanner then you went back on your Tanner line and that was it that was your pedigree you never looked at the wives uh you never looked at the children or the siblings of anybody and that was uh that was the way that these pedigrees were put together and uh so you just uh you knew who you were because you were a Tanner or you were a Smith or you were a Jones or a Peterson or Robertson or whatever and so that's how you uh identify uh the concept of expanding that and adding in all the people including all the descendants of all the people is really kind of an innovation with the family search family tree as it's now evolved and so this is something that's uh that has not ever been been done in any kind of organized way in the past over other than an occasional descendancy book so for instance people would go together and pick out a famous or prominent ancestor and then do all the descendants of that ancestor when I was young these are the things that we had in our home we had different descendancy books books about the Tanner family books about the oversons and jarvises and and other people and they went back to a remote ancestor usually one that they could conveniently characterize and then attempted to copy down and and document all of The Descendants now this is when I say that the reason is very simple because one other thing you ought to do when you go back to your remote ancestor and see if you're going to choose this one as your person you're going to and I'll give you some con ideas here today on how you're going to choose that person but when you go back to that remote ancestor you better find out if somebody's already done a descendancy book about them if there is a book and I have here the Bryants and the interesting thing about it is is that this is there is a Bryant book and you would think oh the Bryant book well maybe all that information maybe we just copy all that information in here well basically what you're seeing here is what was copied out of the book most of this came out of the Bryant book whether they're not the people attributed that but this is where this information ultimately came from and was collected from so the answer is what else is there so let's let's start out with some kind of parameters where it would make it a possible thing to do and not run you into uh you know app somebody from Wales so uh by the way app AP means the son of so when you're in Wales that's just a patronymic that marker of so and so app so and so is the son of so and so so we wanted to start you want to choose an ancestor who lived um uh no earlier than the last half of the 18th century and um that's the reason is that I don't that you don't want to get back before into the 1700s now technically for example in England uh Parish registers go back to 1538 and there's always this challenge of caring it's trying to find the person all the way back to that to that 1500 day you know and occasionally you'll find a uh somebody who was rich or famous or part of the nobility and they would be be able to go back further but that like I said when you get to a certain point you cease doing genealogical research and you're simply doing uh Historical Research into documents that were created at the time and there's no real uh there's no real valid any other validity in those names back then because they just put them in so you never know where they came from because they're very fewer but those are sourced and they're not sourced in the way except for royalty and very few other people so next you do is you look at the person's tree so what we're going to do is okay we're going to choose John Bryant here who was born in 1760. and I just make sure that this person is actually a person that lives and lived and is connected to you by by the pedigrees so I have already I've gone through that process I went and I verified that this was actually one of my relatives and then I went through the process of making sure that the information on this person was correct and as a matter of fact I'm still in that process and I've added another uh dozen or so sources to this particular person so now I'm pretty well satisfied that this person is somebody that I am related to so what's the next step is to view his tree and that's a selection here in family search and then you can go over here and choose descendancy so you have the standard landscape but this is the descendancy view so now you can see John Bryant Jane Watson and their children so now you're on your way this is the start and uh one thing that you uh when you get here then the next thing you want to do is choose how many generations of people that you want to look at the program lets you choose up to four descendancy generations so you can go out four generations on somebody like this uh you know you can go it would depend on the person so you may choose a person and they say look at four generations of this of his descendants and it shows two generations or one or none that means that person's no one has ever done any research on that person's descendancy well at least they've never put it into the family tree and so you're out there doing some very basic research almost immediately but if you actually choose a larger number then what happens is let's say I choose three or four well if you choose two you've already got two showings so that's not going to do anything if you choose one you're just going to have John Bryant and Jane Watson but if you choose three or four you're going to have a few more and this is the case where I chose three generations so first of all there's some a little bit of what happens here of course we have some ways of of expressing these generational changes you see the little arrows that are up by people the Arrow by a person means that they have a marriage record or a marriage somebody they're married to and so each time you click on a an arrow it'll turn down and you'll get either one person or a long line of people depending on how many people so every every one of those is going to go down once the line moves over it goes down a generation and then it moves over and goes down a generation and so basically as you get down into this it gets quite a bit complicated uh and you kind of have to keep Orient getting well oriented now I usually if I start going down this I usually stop uh When the Children of the people were born in the 1900s so if you look down uh any of these These are older ones because I started in 1760. if I'd started in 1830 I would only have to go through a few Generations before I hit 1900. so uh there's a lot of reasons that we stop that I stopped in the 1900s and that's uh primarily because they end up being uh possibly being living people and the second problem of course is that I just that I figure if they're still living or their children are still living it's their responsibility to find these people I've not going to spend a lot of time on people uh who are already who are living or who only recently died so it's uh it's just you have to make these kind of judgment things this isn't anything that I'm telling you you need to do or that I do I'm just explaining how I do it and why I would do it because there are enough people as you can see from just the numbers I showed you at rootstick it would take me a long time to go through even one person's genealogy or the numbers of actual potential uh when you talk about the number of of ancestors going back and you get to 1024 you have to understand that if every one of those got married it would automatically double the number of people and it would add another whole doubled line of ancestry okay so there you're there's your uh why it doubles each each uh generation but you're assuming that they had one child well you're going to throw everything off when somebody has 10 or 12 children or has three wives and 25 children and so those are the numbers that going descendancy numbers are are vastly greater than the numbers of people if you go back in in time so those of us who have been doing genealogy for many many years and have had ancestors in my family who have done genealogy for over a hundred years basically we are at the what you would call brick wall or end of line on almost every line there are very few lines to go back now I've spent the last 40 years going back on end of lines and we did extended every single one of my six Generations lines except about two into the seventh generation and then it gets really spotty but that just means that we have tried on every line and uh so we're turned around and go in the back of the way you know to say let's go the other direction so we're going down and getting all their descendants so now here's some way to start the first one you start is with people who who have few or no sources and how do you know that well family search tells you that so if you click on there it'll tell you if I clicked on this Mary Bryan in 1817 and she has one source another way that that happens is uh through some other things that we'll look here here so what are the other things that I would look here I don't necessarily need to do all these people over again in other words I don't have to do research if I click on bind there's a lot of information about this individual I have no particular reason to write a biography on any one of these people so I would just go ahead and and make these kinds of distinctions the first one here is I have a person named Henry Woodson Morgan he lived from 1830 to 1895 65 years and it doesn't show that he was ever married so the question is did he ever get married now if he did get married and it was never discovered or entered into the family tree then I would have a marriage and another person and then I would also have the potential that they had children and so it's possible that this person in the family tree was married had children and descendants and there could be a hundred from 1830 to the present there could be two or three thousand people out there that you would need to look at so you can spend an awful long time just doing the descendancy research for one person from one remote ancestor or relative so the second thing is to look at someone who says that they were born and this one is Woodson S Morgan Morgan say the names are very I mean the names are just repeated over and over which also is something else you have to watch out for but this is 1840 and he's deceased well how did long did he live did he die as a child did he die when he was 20 years old did he die when he was 80 years old and if he did did he ever get married so this is really the same question as the one who doesn't show a marriage but it adds the other problem if that doesn't show when he died so we this is another opportunity if it's just the way it shows you that there's an opportunity here the third one is parents who have no children back in that time period that was that's unusual and so it's very likely that these people had children now there's another thing that's important about this these people were people in the United States and in English and Market actually Wales also but but these people go back so many days these most of these people are in the United States and it's interesting that in 18 if they were born in 1819 and they died in 1893 during the night 1850 1860 1870 and 1880 censuses we're talking about four different Census records and if they were 1819 they were about 20 plus years in 1850 they could be there and show their parents so there's a lot of information that's relatively accessible about people who are in this time frame and that's another factor in choosing the names so by focusing if you focus on the people who have no sources and have someone of these criterias then you like Jane Bryant has no sources because family search tells you there are no sources and then she was born In 1855 so she would be in the 1860 1870 1880. and if she was if this were in England she'd be in the of the 1861 set 71 81 91 censuses so this person is going to be fairly easy to determine if she died early and I don't like to use the word easy but it say it's doable it's doable to find a person like this in the sense it's particularly if other people in the family have already been uh sourced because then you have a sort of an idea of exactly where to look now here's the other problem when you get to this point and you start doing the research you may find that this family is total disaster that none of these people are really related they don't have anything to do with each other and they are and it was just all made up well then what you do is correct it all so you go back up the line and start again and start correcting it until you find the correct ancestors and of course when you do that you get more people and down here there is a source but it says that it's a legacy source that means it's a source that who knows so when they have Census records to look for people who may have had children where there are Census records because that'll really help so don't make things harder than they already are if there's there's lots of ways to do this and that means that you're getting into information that obviously is cut uh really nobody knows where these people were and there were never any sources and like that's like going back and back in time so you don't want to do that James yeah there's a question that says how do you see what is in the sources that say Legacy new family search Source usually nothing it just says that so you kind of have to take it on faith that there was something there I've found almost none of those Legacy sources have any they don't have links to anything and so you'd have to kind of look at that and see if there's a book or if there's some kind of other thing that that might have that record okay so use all the possible resources I mean this is just doing research so you're going to do the research and frequently check to see if you are still related to the people you're researching this is your little how am I related view how I'm related kind of thing from family search it'll show you exactly what kind of uh what your relationship is I would check this every time you make a choice every time you move I would go back and I do this just constantly because it's so easy to get off on a line and pick up somebody who doesn't turn out to be related because I don't there's too many ways to even talk about that it just happens so you have to understand these people may never have married or couples may never have had children and that's you can feel bad about that or not but it's it's what happens so usually the easiest way is to see the person died and was buried with the same name that they got born with then their maiden name on women never changed with men it may be a more difficult because in in English-speaking countries we don't change the male's name at any time so you may have to do some research all the way till the time that they're 80 years old or 90 or die if they die with the same name and they don't show any spouse then you probably didn't ever get married and watch out for the same name same person trap now I got into one of these that was just absolutely complicated basically what happened was that I found a person and in England and it turned out that I kept coming up with different wives names I kept coming up with different children's names they weren't they were all the wise name were exactly the same except the children all were always weren't the same and I kept working on it finally it occurred to me that I was probably dealing with two different people here but everything kept coming up the same and usually I look at the location and the locations were exactly the same and I kept thinking will this guy get married twice is this uh you know where's the second marriage anyway for after all this was happening for quite a bit of research time what happened was that they did have the same name here were two people with the same name obviously that's that's easy they both had the same wives names their children almost all had the same names and then when I kept going which got even more frustrating after a while is I finally figured out that they live next door to each other so they lived in the same place in the same neighborhood so don't don't put it out of your mind that you're not going to get fooled by the same name same person trap because they're you're going to get a mixed up sometimes and you'll get people in there that that then it's look start looking really strange when you start having people children born the same year and things like that so you just have to be really careful because this comes up just continually the Boneless benefit of all this is that you're coming forward in time instead of going backward in time and because you're going forward in time there are going to be naturally more records than there were when you started out and it's just like getting a child who's now born during the census years or a child who's now boring born when there was civil registration in England or any number of other things so this is kind of how you get to that point and the Big Goal here and the and the and the bonus is that you'll never run out of people to research as the numbers are are way more than you can possibly imagine and so there's always a new family to look at a new place to look and new information to to be added to the family tree okay well thanks for watching",
+  "attempts": [
+    {
+      "client": "IOS",
+      "playability": {
+        "status": "OK",
+        "playableInEmbed": true,
+        "offlineability": {
+          "buttonRenderer": {
+            "navigationEndpoint": {
+              "clickTrackingParams": "CAkQ6ewBIhMIptm3h-zblwMVA0wSAR0WZBaFygEEh6ZAyA==",
+              "ypcGetOfflineUpsellEndpoint": {
+                "params": "CiXqqN25AR8KCzlRNHFZZUs1RFRnShAwZ2NKQ1NRRkptUC1qYXJCIgs5UTRxWWVLNURUZyoVCAkYAVIPCgs5UTRxWWVLNURUZyAB"
+              }
+            },
+            "trackingParams": "CAkQ6ewBIhMIptm3h-zblwMVA0wSAR0WZBaF"
+          }
+        },
+        "pictureInPicture": {
+          "pictureInPictureRenderer": {
+            "playableInPip": true,
+            "offByDefault": false,
+            "shouldResumeOnHead": false
+          }
+        },
+        "miniplayer": {
+          "miniplayerRenderer": {
+            "playbackMode": "PLAYBACK_MODE_ALLOW"
+          }
+        },
+        "contextParams": "Q0FFU0FnZ0M="
+      },
+      "outcome": "ok"
+    }
+  ],
+  "fetched_at": "2026-10-28T04:11:13.304716+00:00",
+  "client": "IOS",
+  "json_path": "transcripts/001_9Q4qYeK5DTg.json",
+  "text_path": "transcripts/001_9Q4qYeK5DTg.txt"
+}

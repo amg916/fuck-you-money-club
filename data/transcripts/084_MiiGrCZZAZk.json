@@ -1,0 +1,1244 @@
+{
+  "index": 84,
+  "url": "https://www.youtube.com/watch?v=MiiGrCZZAZk",
+  "video_id": "MiiGrCZZAZk",
+  "status": "ok",
+  "metadata": {
+    "title": "$200,000 California Foreclosure Heir Claim Case Study",
+    "author": "Money Making Juggernaut",
+    "channelId": "UCdlGmhEdBaOT32DLXY3IRyw",
+    "lengthSeconds": "389",
+    "viewCount": "1672",
+    "shortDescription": "Build your own Surplus Funds recovery business https://learn.surplusfundsprofitsystem.com/\n\nFREE FB Community👉 https://www.facebook.com/groups/assetrecovery\nUse this CRM, automations, dialer, and marketing system 👉 https://excesselite.com\nFollow me on IG: https://www.instagram.com/erizzyy"
+  },
+  "caption_tracks": [
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=MiiGrCZZAZk&ei=7nXhaoTHJNWXsfIPiJqSsAY&caps=asr&opi=112496729&xoaf=5&xowf=1&xospf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185886&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=B41C969FE373807DB95D740B66727C709A138A1D.CEA1809D188F21DE38C7F2859B431F68877DCC64&key=yt8&kind=asr&lang=ar&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Arabic (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.ar",
+      "languageCode": "ar",
+      "kind": "asr",
+      "rtl": true,
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=MiiGrCZZAZk&ei=7nXhaoTHJNWXsfIPiJqSsAY&caps=asr&opi=112496729&xoaf=5&xowf=1&xospf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185886&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=B41C969FE373807DB95D740B66727C709A138A1D.CEA1809D188F21DE38C7F2859B431F68877DCC64&key=yt8&kind=asr&lang=bn&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Bangla (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.bn",
+      "languageCode": "bn",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=MiiGrCZZAZk&ei=7nXhaoTHJNWXsfIPiJqSsAY&caps=asr&opi=112496729&xoaf=5&xowf=1&xospf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185886&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=B41C969FE373807DB95D740B66727C709A138A1D.CEA1809D188F21DE38C7F2859B431F68877DCC64&key=yt8&kind=asr&lang=nl-NL&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Dutch (Netherlands) (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.nl-NL",
+      "languageCode": "nl-NL",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=MiiGrCZZAZk&ei=7nXhaoTHJNWXsfIPiJqSsAY&caps=asr&opi=112496729&xoaf=5&xowf=1&xospf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185886&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=B41C969FE373807DB95D740B66727C709A138A1D.CEA1809D188F21DE38C7F2859B431F68877DCC64&key=yt8&kind=asr&lang=en&variant=gemini",
+      "name": {
+        "runs": [
+          {
+            "text": "English (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.en",
+      "languageCode": "en",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=MiiGrCZZAZk&ei=7nXhaoTHJNWXsfIPiJqSsAY&caps=asr&opi=112496729&xoaf=5&xowf=1&xospf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185886&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=B41C969FE373807DB95D740B66727C709A138A1D.CEA1809D188F21DE38C7F2859B431F68877DCC64&key=yt8&kind=asr&lang=fr-FR&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "French (France) (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.fr-FR",
+      "languageCode": "fr-FR",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=MiiGrCZZAZk&ei=7nXhaoTHJNWXsfIPiJqSsAY&caps=asr&opi=112496729&xoaf=5&xowf=1&xospf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185886&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=B41C969FE373807DB95D740B66727C709A138A1D.CEA1809D188F21DE38C7F2859B431F68877DCC64&key=yt8&kind=asr&lang=de-DE&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "German (Germany) (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.de-DE",
+      "languageCode": "de-DE",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=MiiGrCZZAZk&ei=7nXhaoTHJNWXsfIPiJqSsAY&caps=asr&opi=112496729&xoaf=5&xowf=1&xospf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185886&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=B41C969FE373807DB95D740B66727C709A138A1D.CEA1809D188F21DE38C7F2859B431F68877DCC64&key=yt8&kind=asr&lang=iw&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Hebrew (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.iw",
+      "languageCode": "iw",
+      "kind": "asr",
+      "rtl": true,
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=MiiGrCZZAZk&ei=7nXhaoTHJNWXsfIPiJqSsAY&caps=asr&opi=112496729&xoaf=5&xowf=1&xospf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185886&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=B41C969FE373807DB95D740B66727C709A138A1D.CEA1809D188F21DE38C7F2859B431F68877DCC64&key=yt8&kind=asr&lang=hi&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Hindi (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.hi",
+      "languageCode": "hi",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=MiiGrCZZAZk&ei=7nXhaoTHJNWXsfIPiJqSsAY&caps=asr&opi=112496729&xoaf=5&xowf=1&xospf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185886&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=B41C969FE373807DB95D740B66727C709A138A1D.CEA1809D188F21DE38C7F2859B431F68877DCC64&key=yt8&kind=asr&lang=id&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Indonesian (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.id",
+      "languageCode": "id",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=MiiGrCZZAZk&ei=7nXhaoTHJNWXsfIPiJqSsAY&caps=asr&opi=112496729&xoaf=5&xowf=1&xospf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185886&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=B41C969FE373807DB95D740B66727C709A138A1D.CEA1809D188F21DE38C7F2859B431F68877DCC64&key=yt8&kind=asr&lang=it&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Italian (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.it",
+      "languageCode": "it",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=MiiGrCZZAZk&ei=7nXhaoTHJNWXsfIPiJqSsAY&caps=asr&opi=112496729&xoaf=5&xowf=1&xospf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185886&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=B41C969FE373807DB95D740B66727C709A138A1D.CEA1809D188F21DE38C7F2859B431F68877DCC64&key=yt8&kind=asr&lang=ja&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Japanese (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.ja",
+      "languageCode": "ja",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=MiiGrCZZAZk&ei=7nXhaoTHJNWXsfIPiJqSsAY&caps=asr&opi=112496729&xoaf=5&xowf=1&xospf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185886&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=B41C969FE373807DB95D740B66727C709A138A1D.CEA1809D188F21DE38C7F2859B431F68877DCC64&key=yt8&kind=asr&lang=ko&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Korean (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.ko",
+      "languageCode": "ko",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=MiiGrCZZAZk&ei=7nXhaoTHJNWXsfIPiJqSsAY&caps=asr&opi=112496729&xoaf=5&xowf=1&xospf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185886&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=B41C969FE373807DB95D740B66727C709A138A1D.CEA1809D188F21DE38C7F2859B431F68877DCC64&key=yt8&kind=asr&lang=ml&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Malayalam (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.ml",
+      "languageCode": "ml",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=MiiGrCZZAZk&ei=7nXhaoTHJNWXsfIPiJqSsAY&caps=asr&opi=112496729&xoaf=5&xowf=1&xospf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185886&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=B41C969FE373807DB95D740B66727C709A138A1D.CEA1809D188F21DE38C7F2859B431F68877DCC64&key=yt8&kind=asr&lang=pl&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Polish (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.pl",
+      "languageCode": "pl",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=MiiGrCZZAZk&ei=7nXhaoTHJNWXsfIPiJqSsAY&caps=asr&opi=112496729&xoaf=5&xowf=1&xospf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185886&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=B41C969FE373807DB95D740B66727C709A138A1D.CEA1809D188F21DE38C7F2859B431F68877DCC64&key=yt8&kind=asr&lang=pt-BR&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Portuguese (Brazil) (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.pt-BR",
+      "languageCode": "pt-BR",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=MiiGrCZZAZk&ei=7nXhaoTHJNWXsfIPiJqSsAY&caps=asr&opi=112496729&xoaf=5&xowf=1&xospf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185886&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=B41C969FE373807DB95D740B66727C709A138A1D.CEA1809D188F21DE38C7F2859B431F68877DCC64&key=yt8&kind=asr&lang=pa&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Punjabi (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.pa",
+      "languageCode": "pa",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=MiiGrCZZAZk&ei=7nXhaoTHJNWXsfIPiJqSsAY&caps=asr&opi=112496729&xoaf=5&xowf=1&xospf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185886&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=B41C969FE373807DB95D740B66727C709A138A1D.CEA1809D188F21DE38C7F2859B431F68877DCC64&key=yt8&kind=asr&lang=ru&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Russian (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.ru",
+      "languageCode": "ru",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=MiiGrCZZAZk&ei=7nXhaoTHJNWXsfIPiJqSsAY&caps=asr&opi=112496729&xoaf=5&xowf=1&xospf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185886&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=B41C969FE373807DB95D740B66727C709A138A1D.CEA1809D188F21DE38C7F2859B431F68877DCC64&key=yt8&kind=asr&lang=es-US&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Spanish (United States) (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.es-US",
+      "languageCode": "es-US",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=MiiGrCZZAZk&ei=7nXhaoTHJNWXsfIPiJqSsAY&caps=asr&opi=112496729&xoaf=5&xowf=1&xospf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185886&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=B41C969FE373807DB95D740B66727C709A138A1D.CEA1809D188F21DE38C7F2859B431F68877DCC64&key=yt8&kind=asr&lang=ta&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Tamil (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.ta",
+      "languageCode": "ta",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=MiiGrCZZAZk&ei=7nXhaoTHJNWXsfIPiJqSsAY&caps=asr&opi=112496729&xoaf=5&xowf=1&xospf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185886&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=B41C969FE373807DB95D740B66727C709A138A1D.CEA1809D188F21DE38C7F2859B431F68877DCC64&key=yt8&kind=asr&lang=te&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Telugu (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.te",
+      "languageCode": "te",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=MiiGrCZZAZk&ei=7nXhaoTHJNWXsfIPiJqSsAY&caps=asr&opi=112496729&xoaf=5&xowf=1&xospf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185886&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=B41C969FE373807DB95D740B66727C709A138A1D.CEA1809D188F21DE38C7F2859B431F68877DCC64&key=yt8&kind=asr&lang=uk&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Ukrainian (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.uk",
+      "languageCode": "uk",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    }
+  ],
+  "selected_track": {
+    "baseUrl": "https://www.youtube.com/api/timedtext?v=MiiGrCZZAZk&ei=7nXhaoTHJNWXsfIPiJqSsAY&caps=asr&opi=112496729&xoaf=5&xowf=1&xospf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185886&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=B41C969FE373807DB95D740B66727C709A138A1D.CEA1809D188F21DE38C7F2859B431F68877DCC64&key=yt8&kind=asr&lang=en&variant=gemini",
+    "name": {
+      "runs": [
+        {
+          "text": "English (auto-generated)"
+        }
+      ]
+    },
+    "vssId": "a.en",
+    "languageCode": "en",
+    "kind": "asr",
+    "isTranslatable": true,
+    "trackName": ""
+  },
+  "segments": [
+    {
+      "start": 0.4,
+      "duration": 2.88,
+      "text": "Hey, what's up, YouTube? Welcome back to"
+    },
+    {
+      "start": 1.76,
+      "duration": 3.44,
+      "text": "my page, Money Making Juggernaut. I'm"
+    },
+    {
+      "start": 3.28,
+      "duration": 3.4,
+      "text": "your host, Eric Richardson, the number"
+    },
+    {
+      "start": 5.2,
+      "duration": 3.56,
+      "text": "one educator in the asset recovery"
+    },
+    {
+      "start": 6.68,
+      "duration": 4.36,
+      "text": "business. Today, I'm going to provide a"
+    },
+    {
+      "start": 8.76,
+      "duration": 4.24,
+      "text": "case study. Just got paid out on a"
+    },
+    {
+      "start": 11.04,
+      "duration": 4.24,
+      "text": "$210,000"
+    },
+    {
+      "start": 13.0,
+      "duration": 5.04,
+      "text": "claim. This was in the state of"
+    },
+    {
+      "start": 15.28,
+      "duration": 4.76,
+      "text": "California on a mortgage foreclosure,"
+    },
+    {
+      "start": 18.04,
+      "duration": 4.6,
+      "text": "which is non-judicial."
+    },
+    {
+      "start": 20.04,
+      "duration": 5.48,
+      "text": "For those of you who do non-judicial, so"
+    },
+    {
+      "start": 22.64,
+      "duration": 5.08,
+      "text": "you have to basically be a foreclosure"
+    },
+    {
+      "start": 25.52,
+      "duration": 5.76,
+      "text": "consultant, or you have to go through a"
+    },
+    {
+      "start": 27.72,
+      "duration": 5.039,
+      "text": "law firm to have the claim filed. Also,"
+    },
+    {
+      "start": 31.28,
+      "duration": 3.76,
+      "text": "mortgage foreclosures being"
+    },
+    {
+      "start": 32.759,
+      "duration": 5.601,
+      "text": "non-judicial, you're going through a"
+    },
+    {
+      "start": 35.04,
+      "duration": 6.28,
+      "text": "trustee, not the county. All right? So,"
+    },
+    {
+      "start": 38.36,
+      "duration": 5.24,
+      "text": "this check, $210,000, was issued to the"
+    },
+    {
+      "start": 41.32,
+      "duration": 4.16,
+      "text": "law firm that we went through. I used"
+    },
+    {
+      "start": 43.6,
+      "duration": 4.16,
+      "text": "attorney Bruce Bridgeman, who is"
+    },
+    {
+      "start": 45.48,
+      "duration": 4.24,
+      "text": "amazing. Highly recommend him, and I'll"
+    },
+    {
+      "start": 47.76,
+      "duration": 4.6,
+      "text": "also provide his information in the"
+    },
+    {
+      "start": 49.72,
+      "duration": 5.72,
+      "text": "chat. Now, this claim, we were able to"
+    },
+    {
+      "start": 52.36,
+      "duration": 5.6,
+      "text": "get the client to agree at 25%."
+    },
+    {
+      "start": 55.44,
+      "duration": 4.72,
+      "text": "They are an heir, all right? Her father"
+    },
+    {
+      "start": 57.96,
+      "duration": 4.6,
+      "text": "passed away. He owned the property. And"
+    },
+    {
+      "start": 60.16,
+      "duration": 5.359,
+      "text": "we were able to assist them open probate"
+    },
+    {
+      "start": 62.56,
+      "duration": 6.56,
+      "text": "and successfully recover these funds."
+    },
+    {
+      "start": 65.519,
+      "duration": 6.001,
+      "text": "So, here's the deal. $210,000."
+    },
+    {
+      "start": 69.12,
+      "duration": 4.0,
+      "text": "Just recently received it."
+    },
+    {
+      "start": 71.52,
+      "duration": 3.88,
+      "text": "This check"
+    },
+    {
+      "start": 73.12,
+      "duration": 4.44,
+      "text": "did take time to get paid. And as you"
+    },
+    {
+      "start": 75.4,
+      "duration": 3.56,
+      "text": "guys know, that is the industry. All"
+    },
+    {
+      "start": 77.56,
+      "duration": 3.04,
+      "text": "right? This isn't a get-rich-quick"
+    },
+    {
+      "start": 78.96,
+      "duration": 4.92,
+      "text": "scheme. It does take time, but it's well"
+    },
+    {
+      "start": 80.6,
+      "duration": 5.56,
+      "text": "worth it. I mean, 25% of 210,000,"
+    },
+    {
+      "start": 83.88,
+      "duration": 5.88,
+      "text": "that's over $50,000."
+    },
+    {
+      "start": 86.16,
+      "duration": 6.24,
+      "text": "So, it's well worth the wait."
+    },
+    {
+      "start": 89.76,
+      "duration": 5.16,
+      "text": "Now, on this case, this was a beautiful"
+    },
+    {
+      "start": 92.4,
+      "duration": 5.52,
+      "text": "home in the state of California. All"
+    },
+    {
+      "start": 94.92,
+      "duration": 5.28,
+      "text": "right? This was in Contra Costa. And"
+    },
+    {
+      "start": 97.92,
+      "duration": 4.48,
+      "text": "this took 9 months for us to recover."
+    },
+    {
+      "start": 100.2,
+      "duration": 5.04,
+      "text": "And the reason is, in California,"
+    },
+    {
+      "start": 102.4,
+      "duration": 4.72,
+      "text": "opening a probate does take some time."
+    },
+    {
+      "start": 105.24,
+      "duration": 3.12,
+      "text": "All right? We reached out to the client."
+    },
+    {
+      "start": 107.12,
+      "duration": 3.28,
+      "text": "We informed them that there was a"
+    },
+    {
+      "start": 108.36,
+      "duration": 4.76,
+      "text": "surplus. We asked them if they had a"
+    },
+    {
+      "start": 110.4,
+      "duration": 5.04,
+      "text": "will, a trust, any probate established."
+    },
+    {
+      "start": 113.12,
+      "duration": 5.68,
+      "text": "They did not. So, we had to take care of"
+    },
+    {
+      "start": 115.44,
+      "duration": 6.28,
+      "text": "that, which justifies us getting our 25%"
+    },
+    {
+      "start": 118.8,
+      "duration": 6.08,
+      "text": "fee on such a large claim."
+    },
+    {
+      "start": 121.72,
+      "duration": 6.36,
+      "text": "Now, how did I get this deal? Everything"
+    },
+    {
+      "start": 124.88,
+      "duration": 6.48,
+      "text": "was through XCES Elite. XCES Elite truly"
+    },
+    {
+      "start": 128.08,
+      "duration": 4.96,
+      "text": "is the number one CRM for this business."
+    },
+    {
+      "start": 131.36,
+      "duration": 3.32,
+      "text": "They have the leading database where"
+    },
+    {
+      "start": 133.04,
+      "duration": 4.0,
+      "text": "they provide leads across the entire"
+    },
+    {
+      "start": 134.68,
+      "duration": 4.04,
+      "text": "nation Monday through Friday. We took"
+    },
+    {
+      "start": 137.04,
+      "duration": 4.08,
+      "text": "the lead, fully skip traced phone"
+    },
+    {
+      "start": 138.72,
+      "duration": 4.8,
+      "text": "numbers, DNC compliant, and we plugged"
+    },
+    {
+      "start": 141.12,
+      "duration": 5.12,
+      "text": "it into the CRM. We did our marketing"
+    },
+    {
+      "start": 143.52,
+      "duration": 4.52,
+      "text": "outreach, we got the client engaged, we"
+    },
+    {
+      "start": 146.24,
+      "duration": 3.84,
+      "text": "sent over proof, we got them under"
+    },
+    {
+      "start": 148.04,
+      "duration": 4.72,
+      "text": "contract, and we handed over to an"
+    },
+    {
+      "start": 150.08,
+      "duration": 4.96,
+      "text": "attorney. All right? XCES Elite is super"
+    },
+    {
+      "start": 152.76,
+      "duration": 5.28,
+      "text": "powerful. It's how I operate my entire"
+    },
+    {
+      "start": 155.04,
+      "duration": 5.28,
+      "text": "business at such a high level."
+    },
+    {
+      "start": 158.04,
+      "duration": 4.56,
+      "text": "Now, here's how we reached out and let's"
+    },
+    {
+      "start": 160.32,
+      "duration": 4.16,
+      "text": "take a look at things. So, we reached"
+    },
+    {
+      "start": 162.6,
+      "duration": 3.24,
+      "text": "out to this client, we informed them"
+    },
+    {
+      "start": 164.48,
+      "duration": 4.56,
+      "text": "that, \"Hey, we specialize in"
+    },
+    {
+      "start": 165.84,
+      "duration": 4.84,
+      "text": "foreclosures. We've identified a refund."
+    },
+    {
+      "start": 169.04,
+      "duration": 3.32,
+      "text": "The property sold for more. Most people"
+    },
+    {
+      "start": 170.68,
+      "duration": 4.04,
+      "text": "don't know about it.\" They didn't"
+    },
+    {
+      "start": 172.36,
+      "duration": 3.92,
+      "text": "respond. We followed up again. We said,"
+    },
+    {
+      "start": 174.72,
+      "duration": 3.04,
+      "text": "\"Hey, did you get a chance to check us"
+    },
+    {
+      "start": 176.28,
+      "duration": 5.08,
+      "text": "out? We'd love to send you over"
+    },
+    {
+      "start": 177.76,
+      "duration": 5.72,
+      "text": "details.\" This was during Thanksgiving."
+    },
+    {
+      "start": 181.36,
+      "duration": 3.96,
+      "text": "They responded. She said, \"Hey, sorry,"
+    },
+    {
+      "start": 183.48,
+      "duration": 3.92,
+      "text": "this week has been hectic. A lot of"
+    },
+    {
+      "start": 185.32,
+      "duration": 4.28,
+      "text": "holiday plans, you know the drill."
+    },
+    {
+      "start": 187.4,
+      "duration": 3.44,
+      "text": "What's the expiration period on this? I"
+    },
+    {
+      "start": 189.6,
+      "duration": 3.56,
+      "text": "hope you're having a great holiday"
+    },
+    {
+      "start": 190.84,
+      "duration": 4.32,
+      "text": "weekend.\" All right? Very engaged"
+    },
+    {
+      "start": 193.16,
+      "duration": 3.44,
+      "text": "customer. Most people are not like this,"
+    },
+    {
+      "start": 195.16,
+      "duration": 2.72,
+      "text": "but she was very nice and that's"
+    },
+    {
+      "start": 196.6,
+      "duration": 3.72,
+      "text": "awesome."
+    },
+    {
+      "start": 197.88,
+      "duration": 4.4,
+      "text": "After that, we followed up with them."
+    },
+    {
+      "start": 200.32,
+      "duration": 3.68,
+      "text": "And basically, when I market, guys, I'm"
+    },
+    {
+      "start": 202.28,
+      "duration": 3.64,
+      "text": "looking to receive their email address"
+    },
+    {
+      "start": 204.0,
+      "duration": 4.04,
+      "text": "so that I can send them proof. All"
+    },
+    {
+      "start": 205.92,
+      "duration": 4.76,
+      "text": "right? So, we asked them for the email,"
+    },
+    {
+      "start": 208.04,
+      "duration": 5.52,
+      "text": "they supplied that, and then after that,"
+    },
+    {
+      "start": 210.68,
+      "duration": 4.68,
+      "text": "we sent them over details. And this is"
+    },
+    {
+      "start": 213.56,
+      "duration": 4.92,
+      "text": "how I teach the business. It's the"
+    },
+    {
+      "start": 215.36,
+      "duration": 4.28,
+      "text": "transparent model. Proof builds trust."
+    },
+    {
+      "start": 218.48,
+      "duration": 4.16,
+      "text": "All right? So, we're going to show the"
+    },
+    {
+      "start": 219.64,
+      "duration": 5.12,
+      "text": "facts and make the next steps easy. So,"
+    },
+    {
+      "start": 222.64,
+      "duration": 4.16,
+      "text": "I think of it as fishing. All right? We"
+    },
+    {
+      "start": 224.76,
+      "duration": 4.16,
+      "text": "cast out our bait, they bite it on the"
+    },
+    {
+      "start": 226.8,
+      "duration": 5.28,
+      "text": "hook, and then we reel them in."
+    },
+    {
+      "start": 228.92,
+      "duration": 5.48,
+      "text": "So, our marketing is the bait. They bite"
+    },
+    {
+      "start": 232.08,
+      "duration": 3.92,
+      "text": "on it, we ask for email, and now we reel"
+    },
+    {
+      "start": 234.4,
+      "duration": 3.36,
+      "text": "them in with proof."
+    },
+    {
+      "start": 236.0,
+      "duration": 4.04,
+      "text": "Sent them an email, broke down the"
+    },
+    {
+      "start": 237.76,
+      "duration": 4.96,
+      "text": "foreclosure process, we break down the"
+    },
+    {
+      "start": 240.04,
+      "duration": 4.8,
+      "text": "state law, we talk about how they are"
+    },
+    {
+      "start": 242.72,
+      "duration": 4.2,
+      "text": "entitled because they're potential heir,"
+    },
+    {
+      "start": 244.84,
+      "duration": 3.72,
+      "text": "we gave them the next steps, and then"
+    },
+    {
+      "start": 246.92,
+      "duration": 3.68,
+      "text": "after that, you can see here the client"
+    },
+    {
+      "start": 248.56,
+      "duration": 3.76,
+      "text": "responded and said, \"Hi, thank you for"
+    },
+    {
+      "start": 250.6,
+      "duration": 3.92,
+      "text": "informing me on the process. Is there"
+    },
+    {
+      "start": 252.32,
+      "duration": 3.8,
+      "text": "any way I have to prove that he was my"
+    },
+    {
+      "start": 254.52,
+      "duration": 3.92,
+      "text": "father? I would like to move forward"
+    },
+    {
+      "start": 256.12,
+      "duration": 4.44,
+      "text": "with this process since I'm in Oregon. I"
+    },
+    {
+      "start": 258.44,
+      "duration": 4.12,
+      "text": "would be electronically signing these.\""
+    },
+    {
+      "start": 260.56,
+      "duration": 4.12,
+      "text": "So, once again, this was a a very good"
+    },
+    {
+      "start": 262.56,
+      "duration": 3.92,
+      "text": "client. They were highly engaged and"
+    },
+    {
+      "start": 264.68,
+      "duration": 4.04,
+      "text": "very respectful and nice. They really"
+    },
+    {
+      "start": 266.48,
+      "duration": 4.2,
+      "text": "didn't have any skepticism, but showing"
+    },
+    {
+      "start": 268.72,
+      "duration": 4.64,
+      "text": "them proof is essentially how you can"
+    },
+    {
+      "start": 270.68,
+      "duration": 4.76,
+      "text": "close majority of your deals."
+    },
+    {
+      "start": 273.36,
+      "duration": 4.92,
+      "text": "So, we sent over the contract. We've got"
+    },
+    {
+      "start": 275.44,
+      "duration": 5.36,
+      "text": "that signed in December, and we got paid"
+    },
+    {
+      "start": 278.28,
+      "duration": 4.44,
+      "text": "in September. All right? This contract"
+    },
+    {
+      "start": 280.8,
+      "duration": 3.76,
+      "text": "was at 25%"
+    },
+    {
+      "start": 282.72,
+      "duration": 3.36,
+      "text": "and then after that, we handed it off to"
+    },
+    {
+      "start": 284.56,
+      "duration": 3.24,
+      "text": "the attorney, and we were very"
+    },
+    {
+      "start": 286.08,
+      "duration": 2.92,
+      "text": "transparent with the client letting them"
+    },
+    {
+      "start": 287.8,
+      "duration": 3.16,
+      "text": "know. We said, \"Thank you for signing"
+    },
+    {
+      "start": 289.0,
+      "duration": 4.04,
+      "text": "the authorization form. We have just"
+    },
+    {
+      "start": 290.96,
+      "duration": 3.92,
+      "text": "forwarded the details to our legal team."
+    },
+    {
+      "start": 293.04,
+      "duration": 4.04,
+      "text": "They will present the next steps.\" And"
+    },
+    {
+      "start": 294.88,
+      "duration": 4.44,
+      "text": "they went ahead and handled everything"
+    },
+    {
+      "start": 297.08,
+      "duration": 4.32,
+      "text": "else. That's why using Bruce Bridgman"
+    },
+    {
+      "start": 299.32,
+      "duration": 4.56,
+      "text": "Law Firm was amazing because they"
+    },
+    {
+      "start": 301.4,
+      "duration": 4.96,
+      "text": "handled that. All right? That allows me"
+    },
+    {
+      "start": 303.88,
+      "duration": 4.8,
+      "text": "to build more deals in my pipeline. So,"
+    },
+    {
+      "start": 306.36,
+      "duration": 3.84,
+      "text": "I outreach, I get people under contract,"
+    },
+    {
+      "start": 308.68,
+      "duration": 3.84,
+      "text": "I of course perform due diligence to"
+    },
+    {
+      "start": 310.2,
+      "duration": 5.08,
+      "text": "make sure it's feasible, and then I hand"
+    },
+    {
+      "start": 312.52,
+      "duration": 6.12,
+      "text": "it over to the legal team. And all of"
+    },
+    {
+      "start": 315.28,
+      "duration": 8.36,
+      "text": "this is powered through Xaxis Elite."
+    },
+    {
+      "start": 318.64,
+      "duration": 5.0,
+      "text": "So, what was recovered? $210,404.44"
+    },
+    {
+      "start": 323.96,
+      "duration": 7.28,
+      "text": "to be exact. A 25% success fee amounting"
+    },
+    {
+      "start": 328.12,
+      "duration": 4.76,
+      "text": "for over $52,000."
+    },
+    {
+      "start": 331.24,
+      "duration": 4.4,
+      "text": "So,"
+    },
+    {
+      "start": 332.88,
+      "duration": 5.08,
+      "text": "the process, super simple. We get leads"
+    },
+    {
+      "start": 335.64,
+      "duration": 4.24,
+      "text": "from Xaxis Elite, we market them on"
+    },
+    {
+      "start": 337.96,
+      "duration": 4.92,
+      "text": "Xaxis Elite, we perform our due"
+    },
+    {
+      "start": 339.88,
+      "duration": 4.6,
+      "text": "diligence on Xaxis Elite, and then we"
+    },
+    {
+      "start": 342.88,
+      "duration": 3.96,
+      "text": "send the client proof, we get them under"
+    },
+    {
+      "start": 344.48,
+      "duration": 4.88,
+      "text": "contract, and we shoot that over to an"
+    },
+    {
+      "start": 346.84,
+      "duration": 5.0,
+      "text": "attorney. The business is real, guys."
+    },
+    {
+      "start": 349.36,
+      "duration": 4.96,
+      "text": "It's an amazing opportunity to generate"
+    },
+    {
+      "start": 351.84,
+      "duration": 6.96,
+      "text": "income. Yes, some deals like this can"
+    },
+    {
+      "start": 354.32,
+      "duration": 7.0,
+      "text": "take excess of, you know, 9 months. Is"
+    },
+    {
+      "start": 358.8,
+      "duration": 5.28,
+      "text": "it worth the wait? Absolutely. Are there"
+    },
+    {
+      "start": 361.32,
+      "duration": 5.12,
+      "text": "deals that pay faster? Absolutely. But,"
+    },
+    {
+      "start": 364.08,
+      "duration": 4.64,
+      "text": "it comes down to following the process."
+    },
+    {
+      "start": 366.44,
+      "duration": 4.48,
+      "text": "This is a proven method, and all of you"
+    },
+    {
+      "start": 368.72,
+      "duration": 4.36,
+      "text": "guys have the ability to be successful"
+    },
+    {
+      "start": 370.92,
+      "duration": 3.64,
+      "text": "if you put in the work. So, if you guys"
+    },
+    {
+      "start": 373.08,
+      "duration": 3.4,
+      "text": "are interested in getting your business"
+    },
+    {
+      "start": 374.56,
+      "duration": 3.84,
+      "text": "set up exactly the way that I operate"
+    },
+    {
+      "start": 376.48,
+      "duration": 3.72,
+      "text": "it, go ahead and click the link in the"
+    },
+    {
+      "start": 378.4,
+      "duration": 4.04,
+      "text": "description, and then you'll go ahead"
+    },
+    {
+      "start": 380.2,
+      "duration": 4.0,
+      "text": "and apply to join the team. Make sure"
+    },
+    {
+      "start": 382.44,
+      "duration": 3.88,
+      "text": "you guys also go ahead and subscribe,"
+    },
+    {
+      "start": 384.2,
+      "duration": 4.0,
+      "text": "like, and share this video with somebody"
+    },
+    {
+      "start": 386.32,
+      "duration": 4.599,
+      "text": "that needs to learn the very simple"
+    },
+    {
+      "start": 388.2,
+      "duration": 2.719,
+      "text": "process."
+    }
+  ],
+  "full_text": "Hey, what's up, YouTube? Welcome back to my page, Money Making Juggernaut. I'm your host, Eric Richardson, the number one educator in the asset recovery business. Today, I'm going to provide a case study. Just got paid out on a $210,000 claim. This was in the state of California on a mortgage foreclosure, which is non-judicial. For those of you who do non-judicial, so you have to basically be a foreclosure consultant, or you have to go through a law firm to have the claim filed. Also, mortgage foreclosures being non-judicial, you're going through a trustee, not the county. All right? So, this check, $210,000, was issued to the law firm that we went through. I used attorney Bruce Bridgeman, who is amazing. Highly recommend him, and I'll also provide his information in the chat. Now, this claim, we were able to get the client to agree at 25%. They are an heir, all right? Her father passed away. He owned the property. And we were able to assist them open probate and successfully recover these funds. So, here's the deal. $210,000. Just recently received it. This check did take time to get paid. And as you guys know, that is the industry. All right? This isn't a get-rich-quick scheme. It does take time, but it's well worth it. I mean, 25% of 210,000, that's over $50,000. So, it's well worth the wait. Now, on this case, this was a beautiful home in the state of California. All right? This was in Contra Costa. And this took 9 months for us to recover. And the reason is, in California, opening a probate does take some time. All right? We reached out to the client. We informed them that there was a surplus. We asked them if they had a will, a trust, any probate established. They did not. So, we had to take care of that, which justifies us getting our 25% fee on such a large claim. Now, how did I get this deal? Everything was through XCES Elite. XCES Elite truly is the number one CRM for this business. They have the leading database where they provide leads across the entire nation Monday through Friday. We took the lead, fully skip traced phone numbers, DNC compliant, and we plugged it into the CRM. We did our marketing outreach, we got the client engaged, we sent over proof, we got them under contract, and we handed over to an attorney. All right? XCES Elite is super powerful. It's how I operate my entire business at such a high level. Now, here's how we reached out and let's take a look at things. So, we reached out to this client, we informed them that, \"Hey, we specialize in foreclosures. We've identified a refund. The property sold for more. Most people don't know about it.\" They didn't respond. We followed up again. We said, \"Hey, did you get a chance to check us out? We'd love to send you over details.\" This was during Thanksgiving. They responded. She said, \"Hey, sorry, this week has been hectic. A lot of holiday plans, you know the drill. What's the expiration period on this? I hope you're having a great holiday weekend.\" All right? Very engaged customer. Most people are not like this, but she was very nice and that's awesome. After that, we followed up with them. And basically, when I market, guys, I'm looking to receive their email address so that I can send them proof. All right? So, we asked them for the email, they supplied that, and then after that, we sent them over details. And this is how I teach the business. It's the transparent model. Proof builds trust. All right? So, we're going to show the facts and make the next steps easy. So, I think of it as fishing. All right? We cast out our bait, they bite it on the hook, and then we reel them in. So, our marketing is the bait. They bite on it, we ask for email, and now we reel them in with proof. Sent them an email, broke down the foreclosure process, we break down the state law, we talk about how they are entitled because they're potential heir, we gave them the next steps, and then after that, you can see here the client responded and said, \"Hi, thank you for informing me on the process. Is there any way I have to prove that he was my father? I would like to move forward with this process since I'm in Oregon. I would be electronically signing these.\" So, once again, this was a a very good client. They were highly engaged and very respectful and nice. They really didn't have any skepticism, but showing them proof is essentially how you can close majority of your deals. So, we sent over the contract. We've got that signed in December, and we got paid in September. All right? This contract was at 25% and then after that, we handed it off to the attorney, and we were very transparent with the client letting them know. We said, \"Thank you for signing the authorization form. We have just forwarded the details to our legal team. They will present the next steps.\" And they went ahead and handled everything else. That's why using Bruce Bridgman Law Firm was amazing because they handled that. All right? That allows me to build more deals in my pipeline. So, I outreach, I get people under contract, I of course perform due diligence to make sure it's feasible, and then I hand it over to the legal team. And all of this is powered through Xaxis Elite. So, what was recovered? $210,404.44 to be exact. A 25% success fee amounting for over $52,000. So, the process, super simple. We get leads from Xaxis Elite, we market them on Xaxis Elite, we perform our due diligence on Xaxis Elite, and then we send the client proof, we get them under contract, and we shoot that over to an attorney. The business is real, guys. It's an amazing opportunity to generate income. Yes, some deals like this can take excess of, you know, 9 months. Is it worth the wait? Absolutely. Are there deals that pay faster? Absolutely. But, it comes down to following the process. This is a proven method, and all of you guys have the ability to be successful if you put in the work. So, if you guys are interested in getting your business set up exactly the way that I operate it, go ahead and click the link in the description, and then you'll go ahead and apply to join the team. Make sure you guys also go ahead and subscribe, like, and share this video with somebody that needs to learn the very simple process.",
+  "attempts": [
+    {
+      "client": "IOS",
+      "playability": {
+        "status": "OK",
+        "playableInEmbed": true,
+        "offlineability": {
+          "buttonRenderer": {
+            "navigationEndpoint": {
+              "clickTrackingParams": "CBEQ6ewBIhMIhPb_jezblwMV1UtMCB0IjQRmygEEeD4NrA==",
+              "ypcGetOfflineUpsellEndpoint": {
+                "params": "ChPqqN25AQ0KC01paUdyQ1paQVprIgtNaWlHckNaWkFaayoVCAkYAVIPCgtNaWlHckNaWkFaayAB"
+              }
+            },
+            "trackingParams": "CBEQ6ewBIhMIhPb_jezblwMV1UtMCB0IjQRm"
+          }
+        },
+        "pictureInPicture": {
+          "pictureInPictureRenderer": {
+            "playableInPip": true,
+            "offByDefault": false,
+            "shouldResumeOnHead": false
+          }
+        },
+        "miniplayer": {
+          "miniplayerRenderer": {
+            "playbackMode": "PLAYBACK_MODE_ALLOW"
+          }
+        },
+        "contextParams": "Q0FFU0FnZ0M="
+      },
+      "outcome": "ok"
+    }
+  ],
+  "fetched_at": "2026-10-28T04:11:27.183820+00:00",
+  "client": "IOS",
+  "json_path": "transcripts/084_MiiGrCZZAZk.json",
+  "text_path": "transcripts/084_MiiGrCZZAZk.txt"
+}

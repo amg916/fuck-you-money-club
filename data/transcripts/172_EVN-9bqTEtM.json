@@ -1,0 +1,410 @@
+{
+  "index": 172,
+  "url": "https://www.youtube.com/watch?v=EVN-9bqTEtM",
+  "video_id": "EVN-9bqTEtM",
+  "status": "ok",
+  "metadata": {
+    "title": "Exporting Regrid Data to ArcGIS - Regrid Property App (Web)",
+    "author": "Regrid",
+    "channelId": "UCY6_FliC-rX76wQMYyow-1A",
+    "lengthSeconds": "149",
+    "viewCount": "1001",
+    "shortDescription": "Exporting data as a shapefile (.SHP) from the Regrid platform, then importing it into ArcGIS Pro.\n\nThe Regrid Property App is great if you want to see and work with property data using the tools we provide. If you are an Esri user and like our data (and especially if you have complex workfllows), you may be interested in our Feature Service product, which \"streams\" our property data directly into Esri platforms: https://regrid.com/feature-service\n\nPlease note that the Regrid Property App interface has been updated since this video was shot - while the UI is slightly different now, the functionality remains the same.",
+    "keywords": [
+      "radius",
+      "focus area",
+      "measure distance",
+      "mapping",
+      "map",
+      "real estate",
+      "land",
+      "property",
+      "spatial analysis",
+      "parcel data",
+      "cadastre"
+    ]
+  },
+  "caption_tracks": [
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=EVN-9bqTEtM&ei=_nXhasWXFIjHsfIPgP2wyQY&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185902&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=919618FBF91D78F5766C03A16AA52F22016B4A0C.B3C75811142509804142C21CBFFDEC0E84FC46E4&key=yt8&kind=asr&lang=en",
+      "name": {
+        "runs": [
+          {
+            "text": "English (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.en",
+      "languageCode": "en",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    }
+  ],
+  "selected_track": {
+    "baseUrl": "https://www.youtube.com/api/timedtext?v=EVN-9bqTEtM&ei=_nXhasWXFIjHsfIPgP2wyQY&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185902&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=919618FBF91D78F5766C03A16AA52F22016B4A0C.B3C75811142509804142C21CBFFDEC0E84FC46E4&key=yt8&kind=asr&lang=en",
+    "name": {
+      "runs": [
+        {
+          "text": "English (auto-generated)"
+        }
+      ]
+    },
+    "vssId": "a.en",
+    "languageCode": "en",
+    "kind": "asr",
+    "isTranslatable": true,
+    "trackName": ""
+  },
+  "segments": [
+    {
+      "start": 3.84,
+      "duration": 4.24,
+      "text": "welcome to the regrid mapping platform"
+    },
+    {
+      "start": 6.08,
+      "duration": 4.16,
+      "text": "today we're going to quickly discuss how"
+    },
+    {
+      "start": 8.08,
+      "duration": 4.719,
+      "text": "you can export data that you have"
+    },
+    {
+      "start": 10.24,
+      "duration": 4.96,
+      "text": "created in our regrid system"
+    },
+    {
+      "start": 12.799,
+      "duration": 6.48,
+      "text": "as a file that you can open in arc"
+    },
+    {
+      "start": 15.2,
+      "duration": 6.64,
+      "text": "products specifically arc desktop"
+    },
+    {
+      "start": 19.279,
+      "duration": 4.801,
+      "text": "so here i'm looking at a project in"
+    },
+    {
+      "start": 21.84,
+      "duration": 4.88,
+      "text": "which i have some bookmarks saved"
+    },
+    {
+      "start": 24.08,
+      "duration": 4.0,
+      "text": "so we'll use that as the sample data in"
+    },
+    {
+      "start": 26.72,
+      "duration": 4.479,
+      "text": "this example"
+    },
+    {
+      "start": 28.08,
+      "duration": 5.2,
+      "text": "generally speaking we allow for only"
+    },
+    {
+      "start": 31.199,
+      "duration": 5.281,
+      "text": "spreadsheet exports"
+    },
+    {
+      "start": 33.28,
+      "duration": 4.959,
+      "text": "but there are certain edge cases where"
+    },
+    {
+      "start": 36.48,
+      "duration": 3.2,
+      "text": "you can export data that you have"
+    },
+    {
+      "start": 38.239,
+      "duration": 4.401,
+      "text": "created"
+    },
+    {
+      "start": 39.68,
+      "duration": 5.52,
+      "text": "as a spatial file"
+    },
+    {
+      "start": 42.64,
+      "duration": 4.88,
+      "text": "those two are basically"
+    },
+    {
+      "start": 45.2,
+      "duration": 4.08,
+      "text": "where you have bookmarked or surveyed to"
+    },
+    {
+      "start": 47.52,
+      "duration": 3.12,
+      "text": "create your own data or where you have"
+    },
+    {
+      "start": 49.28,
+      "duration": 4.56,
+      "text": "imported a spreadsheet and then you"
+    },
+    {
+      "start": 50.64,
+      "duration": 3.2,
+      "text": "would like to export that"
+    },
+    {
+      "start": 54.0,
+      "duration": 4.48,
+      "text": "if you are one of those cases you can go"
+    },
+    {
+      "start": 56.079,
+      "duration": 4.881,
+      "text": "to export and you will see the"
+    },
+    {
+      "start": 58.48,
+      "duration": 3.68,
+      "text": "spatial files not grayed out up here"
+    },
+    {
+      "start": 60.96,
+      "duration": 3.04,
+      "text": "which will be your indication that you"
+    },
+    {
+      "start": 62.16,
+      "duration": 4.24,
+      "text": "can download them"
+    },
+    {
+      "start": 64.0,
+      "duration": 4.72,
+      "text": "so in this example let's download these"
+    },
+    {
+      "start": 66.4,
+      "duration": 3.92,
+      "text": "bookmarks as a shapefile and open them"
+    },
+    {
+      "start": 68.72,
+      "duration": 4.56,
+      "text": "up in arc"
+    },
+    {
+      "start": 70.32,
+      "duration": 5.04,
+      "text": "i can simply click shapefile here"
+    },
+    {
+      "start": 73.28,
+      "duration": 4.0,
+      "text": "and then you'll see that it comes up"
+    },
+    {
+      "start": 75.36,
+      "duration": 3.68,
+      "text": "here as pending"
+    },
+    {
+      "start": 77.28,
+      "duration": 3.92,
+      "text": "when this finishes a download button"
+    },
+    {
+      "start": 79.04,
+      "duration": 4.079,
+      "text": "will be available here on the right hand"
+    },
+    {
+      "start": 81.2,
+      "duration": 3.279,
+      "text": "side here we go"
+    },
+    {
+      "start": 83.119,
+      "duration": 3.761,
+      "text": "and you will also get an email"
+    },
+    {
+      "start": 84.479,
+      "duration": 4.881,
+      "text": "notification"
+    },
+    {
+      "start": 86.88,
+      "duration": 5.199,
+      "text": "clicking download downloads those files"
+    },
+    {
+      "start": 89.36,
+      "duration": 5.119,
+      "text": "into a zipped folder"
+    },
+    {
+      "start": 92.079,
+      "duration": 5.04,
+      "text": "i can then open that folder"
+    },
+    {
+      "start": 94.479,
+      "duration": 5.041,
+      "text": "i'll want to extract it into a regular"
+    },
+    {
+      "start": 97.119,
+      "duration": 2.401,
+      "text": "folder"
+    },
+    {
+      "start": 99.759,
+      "duration": 4.32,
+      "text": "and you can see here that shapefiles"
+    },
+    {
+      "start": 101.439,
+      "duration": 4.32,
+      "text": "come in a multi-file setup so what i'll"
+    },
+    {
+      "start": 104.079,
+      "duration": 5.68,
+      "text": "do is i'll select all and now i'm going"
+    },
+    {
+      "start": 105.759,
+      "duration": 5.841,
+      "text": "to tab over to my blank arc project"
+    },
+    {
+      "start": 109.759,
+      "duration": 3.521,
+      "text": "and i'll simply click and drag all of"
+    },
+    {
+      "start": 111.6,
+      "duration": 2.96,
+      "text": "those files"
+    },
+    {
+      "start": 113.28,
+      "duration": 5.76,
+      "text": "into"
+    },
+    {
+      "start": 114.56,
+      "duration": 4.48,
+      "text": "the left hand contents pane"
+    },
+    {
+      "start": 119.119,
+      "duration": 3.201,
+      "text": "closing this out"
+    },
+    {
+      "start": 120.399,
+      "duration": 5.121,
+      "text": "you can see that the bookmarks show up"
+    },
+    {
+      "start": 122.32,
+      "duration": 5.119,
+      "text": "here on the map as expected"
+    },
+    {
+      "start": 125.52,
+      "duration": 3.599,
+      "text": "clicking on any of the shapes that"
+    },
+    {
+      "start": 127.439,
+      "duration": 3.681,
+      "text": "you've brought over will show that any"
+    },
+    {
+      "start": 129.119,
+      "duration": 4.641,
+      "text": "of the data that you had created if you"
+    },
+    {
+      "start": 131.12,
+      "duration": 3.92,
+      "text": "had a bookmark or a survey or that you"
+    },
+    {
+      "start": 133.76,
+      "duration": 2.88,
+      "text": "had brought along with you if you've"
+    },
+    {
+      "start": 135.04,
+      "duration": 4.0,
+      "text": "imported a spreadsheet will show up at"
+    },
+    {
+      "start": 136.64,
+      "duration": 4.319,
+      "text": "the beginning of the attributes and then"
+    },
+    {
+      "start": 139.04,
+      "duration": 6.76,
+      "text": "appended to it will be all of the parcel"
+    },
+    {
+      "start": 140.959,
+      "duration": 4.841,
+      "text": "data that we have attached as well"
+    }
+  ],
+  "full_text": "welcome to the regrid mapping platform today we're going to quickly discuss how you can export data that you have created in our regrid system as a file that you can open in arc products specifically arc desktop so here i'm looking at a project in which i have some bookmarks saved so we'll use that as the sample data in this example generally speaking we allow for only spreadsheet exports but there are certain edge cases where you can export data that you have created as a spatial file those two are basically where you have bookmarked or surveyed to create your own data or where you have imported a spreadsheet and then you would like to export that if you are one of those cases you can go to export and you will see the spatial files not grayed out up here which will be your indication that you can download them so in this example let's download these bookmarks as a shapefile and open them up in arc i can simply click shapefile here and then you'll see that it comes up here as pending when this finishes a download button will be available here on the right hand side here we go and you will also get an email notification clicking download downloads those files into a zipped folder i can then open that folder i'll want to extract it into a regular folder and you can see here that shapefiles come in a multi-file setup so what i'll do is i'll select all and now i'm going to tab over to my blank arc project and i'll simply click and drag all of those files into the left hand contents pane closing this out you can see that the bookmarks show up here on the map as expected clicking on any of the shapes that you've brought over will show that any of the data that you had created if you had a bookmark or a survey or that you had brought along with you if you've imported a spreadsheet will show up at the beginning of the attributes and then appended to it will be all of the parcel data that we have attached as well",
+  "attempts": [
+    {
+      "client": "IOS",
+      "playability": {
+        "status": "OK",
+        "playableInEmbed": true,
+        "offlineability": {
+          "buttonRenderer": {
+            "navigationEndpoint": {
+              "clickTrackingParams": "CAoQ6ewBIhMIxY7AlezblwMViGNMCB2APixpygEEoVYP7A==",
+              "ypcGetOfflineUpsellEndpoint": {
+                "params": "ChPqqN25AQ0KC0VWTi05YnFURXRNIgtFVk4tOWJxVEV0TSoVCAkYAVIPCgtFVk4tOWJxVEV0TSAB"
+              }
+            },
+            "trackingParams": "CAoQ6ewBIhMIxY7AlezblwMViGNMCB2APixp"
+          }
+        },
+        "pictureInPicture": {
+          "pictureInPictureRenderer": {
+            "playableInPip": true,
+            "offByDefault": false,
+            "shouldResumeOnHead": false
+          }
+        },
+        "miniplayer": {
+          "miniplayerRenderer": {
+            "playbackMode": "PLAYBACK_MODE_ALLOW"
+          }
+        },
+        "contextParams": "Q0FFU0FnZ0M="
+      },
+      "outcome": "ok"
+    }
+  ],
+  "fetched_at": "2026-10-28T04:11:42.965782+00:00",
+  "client": "IOS",
+  "json_path": "transcripts/172_EVN-9bqTEtM.json",
+  "text_path": "transcripts/172_EVN-9bqTEtM.txt"
+}

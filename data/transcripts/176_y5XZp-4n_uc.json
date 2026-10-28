@@ -1,0 +1,879 @@
+{
+  "index": 176,
+  "url": "https://www.youtube.com/watch?v=y5XZp-4n_uc",
+  "video_id": "y5XZp-4n_uc",
+  "status": "ok",
+  "metadata": {
+    "title": "DataTree Hacks: How to Search and Find Property Owners Nationwide",
+    "author": "REtipster",
+    "channelId": "UC4f3qDE9qKqoRy5_9R6y_pw",
+    "lengthSeconds": "328",
+    "viewCount": "2676",
+    "shortDescription": "Check out DataTree at: https://retipster.com/go/datatree/yt-y5XZp-4n_uc (REtipster Affiliate Link)\nFull Blog Post: https://retipster.com/datatree-hacks/?utm_source=youtube&utm_medium=social&utm_campaign=blog&utm_content=y5XZp-4n_uc\nJoin Our Community: https://retipster.com/follow/?utm_source=youtube&utm_medium=social&utm_campaign=blog&utm_content=y5XZp-4n_uc\n\nOne of the most basic and useful things DataTree can do is allow you to search nationwide for any property owner in the United States.\n\nOf course, it helps if you know what state and county they're located in. Even if you don't, DataTree will allow you to search by name and show you all the results in their vast database, so you can find the properties and property owners you're looking for, along with all kinds of useful information about each property.\n\n0:00 - Intro\n0:46 - Search by Owner Name, State and County\n1:03 - Picking the owner from a list of results\n1:32 - Sorting results by Address, Owner Name, and APN\n1:52 - Searching a first and last name on a state-wide basis\n2:12 - Searching for a property owner on a nationwide basis\n2:27 - What information can we find about each property owner?\n3:41 - What information comes with a Property Detail Report?\n4:55 - Get discounted access to DataTree through the REtipster affiliate link: https://retipster.com/go/datatree/yt-y5XZp-4n_uc",
+    "keywords": [
+      "real estate investing",
+      "retipster",
+      "datatree tutorial",
+      "datatree demo",
+      "how to find who owns a property",
+      "how to be a private investigator",
+      "private investigator training",
+      "detective training",
+      "property ownership real estate",
+      "real estate due diligence",
+      "real estate research",
+      "property research",
+      "real estate investor",
+      "land investing",
+      "how to use datatree",
+      "real estate database",
+      "real estate data analysis",
+      "real estate data mining",
+      "how to get real estate data",
+      "real estate ownership data"
+    ]
+  },
+  "caption_tracks": [
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=y5XZp-4n_uc&ei=_3XhasXpEeWYsfIP3OWO4Ak&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185903&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=B36F17EC06E16BBBB7CFE8448DB16497EEDD240A.DB159451342A6B13571EA1C33EC8EB068187F2F2&key=yt8&kind=asr&lang=ar&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Arabic (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.ar",
+      "languageCode": "ar",
+      "kind": "asr",
+      "rtl": true,
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=y5XZp-4n_uc&ei=_3XhasXpEeWYsfIP3OWO4Ak&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185903&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=B36F17EC06E16BBBB7CFE8448DB16497EEDD240A.DB159451342A6B13571EA1C33EC8EB068187F2F2&key=yt8&kind=asr&lang=bn&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Bangla (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.bn",
+      "languageCode": "bn",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=y5XZp-4n_uc&ei=_3XhasXpEeWYsfIP3OWO4Ak&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185903&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=B36F17EC06E16BBBB7CFE8448DB16497EEDD240A.DB159451342A6B13571EA1C33EC8EB068187F2F2&key=yt8&kind=asr&lang=nl-NL&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Dutch (Netherlands) (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.nl-NL",
+      "languageCode": "nl-NL",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=y5XZp-4n_uc&ei=_3XhasXpEeWYsfIP3OWO4Ak&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185903&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=B36F17EC06E16BBBB7CFE8448DB16497EEDD240A.DB159451342A6B13571EA1C33EC8EB068187F2F2&key=yt8&lang=en",
+      "name": {
+        "runs": [
+          {
+            "text": "English"
+          }
+        ]
+      },
+      "vssId": ".en",
+      "languageCode": "en",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=y5XZp-4n_uc&ei=_3XhasXpEeWYsfIP3OWO4Ak&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185903&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=B36F17EC06E16BBBB7CFE8448DB16497EEDD240A.DB159451342A6B13571EA1C33EC8EB068187F2F2&key=yt8&kind=asr&lang=en&variant=gemini",
+      "name": {
+        "runs": [
+          {
+            "text": "English (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.en",
+      "languageCode": "en",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=y5XZp-4n_uc&ei=_3XhasXpEeWYsfIP3OWO4Ak&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185903&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=B36F17EC06E16BBBB7CFE8448DB16497EEDD240A.DB159451342A6B13571EA1C33EC8EB068187F2F2&key=yt8&kind=asr&lang=fr-FR&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "French (France) (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.fr-FR",
+      "languageCode": "fr-FR",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=y5XZp-4n_uc&ei=_3XhasXpEeWYsfIP3OWO4Ak&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185903&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=B36F17EC06E16BBBB7CFE8448DB16497EEDD240A.DB159451342A6B13571EA1C33EC8EB068187F2F2&key=yt8&kind=asr&lang=de-DE&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "German (Germany) (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.de-DE",
+      "languageCode": "de-DE",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=y5XZp-4n_uc&ei=_3XhasXpEeWYsfIP3OWO4Ak&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185903&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=B36F17EC06E16BBBB7CFE8448DB16497EEDD240A.DB159451342A6B13571EA1C33EC8EB068187F2F2&key=yt8&kind=asr&lang=iw&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Hebrew (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.iw",
+      "languageCode": "iw",
+      "kind": "asr",
+      "rtl": true,
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=y5XZp-4n_uc&ei=_3XhasXpEeWYsfIP3OWO4Ak&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185903&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=B36F17EC06E16BBBB7CFE8448DB16497EEDD240A.DB159451342A6B13571EA1C33EC8EB068187F2F2&key=yt8&kind=asr&lang=hi&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Hindi (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.hi",
+      "languageCode": "hi",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=y5XZp-4n_uc&ei=_3XhasXpEeWYsfIP3OWO4Ak&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185903&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=B36F17EC06E16BBBB7CFE8448DB16497EEDD240A.DB159451342A6B13571EA1C33EC8EB068187F2F2&key=yt8&kind=asr&lang=id&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Indonesian (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.id",
+      "languageCode": "id",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=y5XZp-4n_uc&ei=_3XhasXpEeWYsfIP3OWO4Ak&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185903&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=B36F17EC06E16BBBB7CFE8448DB16497EEDD240A.DB159451342A6B13571EA1C33EC8EB068187F2F2&key=yt8&kind=asr&lang=it&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Italian (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.it",
+      "languageCode": "it",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=y5XZp-4n_uc&ei=_3XhasXpEeWYsfIP3OWO4Ak&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185903&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=B36F17EC06E16BBBB7CFE8448DB16497EEDD240A.DB159451342A6B13571EA1C33EC8EB068187F2F2&key=yt8&kind=asr&lang=ja&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Japanese (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.ja",
+      "languageCode": "ja",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=y5XZp-4n_uc&ei=_3XhasXpEeWYsfIP3OWO4Ak&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185903&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=B36F17EC06E16BBBB7CFE8448DB16497EEDD240A.DB159451342A6B13571EA1C33EC8EB068187F2F2&key=yt8&kind=asr&lang=ko&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Korean (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.ko",
+      "languageCode": "ko",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=y5XZp-4n_uc&ei=_3XhasXpEeWYsfIP3OWO4Ak&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185903&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=B36F17EC06E16BBBB7CFE8448DB16497EEDD240A.DB159451342A6B13571EA1C33EC8EB068187F2F2&key=yt8&kind=asr&lang=ml&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Malayalam (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.ml",
+      "languageCode": "ml",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=y5XZp-4n_uc&ei=_3XhasXpEeWYsfIP3OWO4Ak&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185903&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=B36F17EC06E16BBBB7CFE8448DB16497EEDD240A.DB159451342A6B13571EA1C33EC8EB068187F2F2&key=yt8&kind=asr&lang=pl&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Polish (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.pl",
+      "languageCode": "pl",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=y5XZp-4n_uc&ei=_3XhasXpEeWYsfIP3OWO4Ak&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185903&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=B36F17EC06E16BBBB7CFE8448DB16497EEDD240A.DB159451342A6B13571EA1C33EC8EB068187F2F2&key=yt8&kind=asr&lang=pt-BR&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Portuguese (Brazil) (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.pt-BR",
+      "languageCode": "pt-BR",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=y5XZp-4n_uc&ei=_3XhasXpEeWYsfIP3OWO4Ak&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185903&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=B36F17EC06E16BBBB7CFE8448DB16497EEDD240A.DB159451342A6B13571EA1C33EC8EB068187F2F2&key=yt8&kind=asr&lang=pa&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Punjabi (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.pa",
+      "languageCode": "pa",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=y5XZp-4n_uc&ei=_3XhasXpEeWYsfIP3OWO4Ak&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185903&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=B36F17EC06E16BBBB7CFE8448DB16497EEDD240A.DB159451342A6B13571EA1C33EC8EB068187F2F2&key=yt8&kind=asr&lang=es-US&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Spanish (United States) (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.es-US",
+      "languageCode": "es-US",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=y5XZp-4n_uc&ei=_3XhasXpEeWYsfIP3OWO4Ak&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185903&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=B36F17EC06E16BBBB7CFE8448DB16497EEDD240A.DB159451342A6B13571EA1C33EC8EB068187F2F2&key=yt8&kind=asr&lang=ta&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Tamil (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.ta",
+      "languageCode": "ta",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=y5XZp-4n_uc&ei=_3XhasXpEeWYsfIP3OWO4Ak&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185903&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=B36F17EC06E16BBBB7CFE8448DB16497EEDD240A.DB159451342A6B13571EA1C33EC8EB068187F2F2&key=yt8&kind=asr&lang=te&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Telugu (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.te",
+      "languageCode": "te",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=y5XZp-4n_uc&ei=_3XhasXpEeWYsfIP3OWO4Ak&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185903&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=B36F17EC06E16BBBB7CFE8448DB16497EEDD240A.DB159451342A6B13571EA1C33EC8EB068187F2F2&key=yt8&kind=asr&lang=uk&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Ukrainian (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.uk",
+      "languageCode": "uk",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    }
+  ],
+  "selected_track": {
+    "baseUrl": "https://www.youtube.com/api/timedtext?v=y5XZp-4n_uc&ei=_3XhasXpEeWYsfIP3OWO4Ak&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185903&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=B36F17EC06E16BBBB7CFE8448DB16497EEDD240A.DB159451342A6B13571EA1C33EC8EB068187F2F2&key=yt8&lang=en",
+    "name": {
+      "runs": [
+        {
+          "text": "English"
+        }
+      ]
+    },
+    "vssId": ".en",
+    "languageCode": "en",
+    "isTranslatable": true,
+    "trackName": ""
+  },
+  "segments": [
+    {
+      "start": 9.52,
+      "duration": 3.92,
+      "text": "Hey guys, it’s Seth here. In this video, I want to really quickly show you one of the most"
+    },
+    {
+      "start": 13.44,
+      "duration": 2.98,
+      "text": "basic and useful things you can do in DataTree."
+    },
+    {
+      "start": 16.68,
+      "duration": 4.505,
+      "text": "Let's say you're trying to find a person and any real estate they own."
+    },
+    {
+      "start": 21.185,
+      "duration": 5.45,
+      "text": "And the same thing goes for a business entity in any real estate that that entity owns."
+    },
+    {
+      "start": 26.635,
+      "duration": 2.805,
+      "text": "But all the information you have is the name."
+    },
+    {
+      "start": 29.44,
+      "duration": 3.648,
+      "text": "You don't have a property address. You don't have a mailing address."
+    },
+    {
+      "start": 33.088,
+      "duration": 3.846,
+      "text": "You don't have a parcel number. You don't have anything else, just a name."
+    },
+    {
+      "start": 36.934,
+      "duration": 4.26,
+      "text": "Preferably you know what state and county that person or busines is in"
+    },
+    {
+      "start": 41.194,
+      "duration": 4.81,
+      "text": "but even if you don't have that, you still can most likely find them in DataTree."
+    },
+    {
+      "start": 46.664,
+      "duration": 5.156,
+      "text": "All you got to do is go up here. You want to make sure this dropdown thing is set to owner."
+    },
+    {
+      "start": 51.82,
+      "duration": 4.158,
+      "text": "And in this case, I'm going to pretend that I do know the state and the county."
+    },
+    {
+      "start": 55.978,
+      "duration": 6.102,
+      "text": "I'm going to select that, put that here and pick this here. And then I just know the last name."
+    },
+    {
+      "start": 62.08,
+      "duration": 5.374,
+      "text": "I'm going to type that in here. And if I see the name, I can just select right here"
+    },
+    {
+      "start": 67.454,
+      "duration": 1.123,
+      "text": "and go right to them."
+    },
+    {
+      "start": 68.577,
+      "duration": 3.663,
+      "text": "But if it's a more common name like Jones or something like that, then there's going"
+    },
+    {
+      "start": 72.24,
+      "duration": 1.8,
+      "text": "to be a whole lot more results."
+    },
+    {
+      "start": 74.04,
+      "duration": 2.59,
+      "text": "And if we're not seeing the person that we're looking for,"
+    },
+    {
+      "start": 76.63,
+      "duration": 5.184,
+      "text": "we could just hit enter and is going to show us all the people in that state and county"
+    },
+    {
+      "start": 81.814,
+      "duration": 1.863,
+      "text": "that have the name Jones in it."
+    },
+    {
+      "start": 83.677,
+      "duration": 3.463,
+      "text": "And in this case, there's a whole lot of them. Almost 800 people. And at this point"
+    },
+    {
+      "start": 87.14,
+      "duration": 2.61,
+      "text": "we could go line by line through all of these,"
+    },
+    {
+      "start": 89.75,
+      "duration": 2.491,
+      "text": "until we can find the person that we're looking for."
+    },
+    {
+      "start": 92.241,
+      "duration": 5.323,
+      "text": "And we can also sort them by address here or by owner or by APN, if we want to do that."
+    },
+    {
+      "start": 97.564,
+      "duration": 3.209,
+      "text": "But in most cases, depending on why you are looking for a person,"
+    },
+    {
+      "start": 100.773,
+      "duration": 2.37,
+      "text": "you would probably have more than just last name."
+    },
+    {
+      "start": 103.143,
+      "duration": 1.887,
+      "text": "You'd probably have a first name as well,"
+    },
+    {
+      "start": 105.03,
+      "duration": 4.65,
+      "text": "or like a full entity name, for example, and you probably would have the state and county,"
+    },
+    {
+      "start": 109.68,
+      "duration": 3.84,
+      "text": "but we can mix this up a little bit and just see what happens. Like for example, let's try"
+    },
+    {
+      "start": 113.52,
+      "duration": 4.431,
+      "text": "George Jones, but let's take away the county. Let's say we don't know what county they're in,"
+    },
+    {
+      "start": 117.951,
+      "duration": 2.191,
+      "text": "but we know that there's somewhere in California"
+    },
+    {
+      "start": 120.142,
+      "duration": 2.488,
+      "text": "and we can see how many results show up this way."
+    },
+    {
+      "start": 122.63,
+      "duration": 3.712,
+      "text": "And in this case, it looks like it helped a lot to be able to add that first name in there."
+    },
+    {
+      "start": 126.342,
+      "duration": 3.085,
+      "text": "Because even though we're looking at the entire state of California,"
+    },
+    {
+      "start": 129.427,
+      "duration": 2.803,
+      "text": "it narrows it down to 117 results now."
+    },
+    {
+      "start": 132.23,
+      "duration": 3.678,
+      "text": "And the really cool thing about DataTree, and there's not very many data services."
+    },
+    {
+      "start": 135.908,
+      "duration": 2.656,
+      "text": "In fact, I don't really know of any of the ones that allow you to do this"
+    },
+    {
+      "start": 138.564,
+      "duration": 4.026,
+      "text": "is that you can search through the entire country at once, if you want to."
+    },
+    {
+      "start": 142.59,
+      "duration": 3.245,
+      "text": "If you have no idea where this person is and you just have a name,"
+    },
+    {
+      "start": 145.835,
+      "duration": 1.555,
+      "text": "you could do it that way too."
+    },
+    {
+      "start": 147.39,
+      "duration": 1.415,
+      "text": "Let's say we've done our searching"
+    },
+    {
+      "start": 148.805,
+      "duration": 2.88,
+      "text": "and we've been lucky enough to find the person that we're looking for."
+    },
+    {
+      "start": 151.685,
+      "duration": 3.174,
+      "text": "I'm going to just pick a property at random here and show you how this looks."
+    },
+    {
+      "start": 154.969,
+      "duration": 2.142,
+      "text": "Let's pick this person right here."
+    },
+    {
+      "start": 157.261,
+      "duration": 4.41,
+      "text": "Once we select a property, we can go up here to this property data reports tab"
+    },
+    {
+      "start": 161.671,
+      "duration": 3.204,
+      "text": "and right beneath here, there's going to be all kinds of different reports we can pull"
+    },
+    {
+      "start": 164.875,
+      "duration": 4.083,
+      "text": "depending on why we're looking for this person and their property in the first place."
+    },
+    {
+      "start": 168.958,
+      "duration": 3.581,
+      "text": "If we're an appraiser, if we're a real estate investor, if we're a lender,"
+    },
+    {
+      "start": 172.539,
+      "duration": 4.008,
+      "text": "there's all kinds of different reasons why we might be looking for this information."
+    },
+    {
+      "start": 176.815,
+      "duration": 3.665,
+      "text": "In my case, as a real estate investor, a lot of times, I'm just trying to figure out"
+    },
+    {
+      "start": 180.48,
+      "duration": 2.65,
+      "text": "who currently owns this property, when did they buy it?"
+    },
+    {
+      "start": 183.13,
+      "duration": 1.8,
+      "text": "What are all the specifics of the property?"
+    },
+    {
+      "start": 184.93,
+      "duration": 3.335,
+      "text": "How many bedrooms or bathrooms, maybe how much did they pay for it?"
+    },
+    {
+      "start": 188.265,
+      "duration": 1.205,
+      "text": "What is the thing worth?"
+    },
+    {
+      "start": 189.47,
+      "duration": 2.292,
+      "text": "When was it built? A lot of that basic information."
+    },
+    {
+      "start": 191.762,
+      "duration": 4.064,
+      "text": "And a lot of that detail can be found right here in this property detail report."
+    },
+    {
+      "start": 195.826,
+      "duration": 2.494,
+      "text": "This is a very common one that I order all the time."
+    },
+    {
+      "start": 198.32,
+      "duration": 4.595,
+      "text": "If we want to get every possible piece of information you could ever imagine"
+    },
+    {
+      "start": 202.915,
+      "duration": 3.405,
+      "text": "like about the surrounding area, about the properties history,"
+    },
+    {
+      "start": 206.32,
+      "duration": 3.36,
+      "text": "like everything, that's what this total view report is,"
+    },
+    {
+      "start": 209.68,
+      "duration": 4.69,
+      "text": "depending on what part of the country we're in and what DataTree's database has available"
+    },
+    {
+      "start": 214.37,
+      "duration": 2.678,
+      "text": "we could potentially even order like a title search"
+    },
+    {
+      "start": 217.048,
+      "duration": 4.092,
+      "text": "and a lean report and figure out what the status is on this person's property taxes."
+    },
+    {
+      "start": 221.14,
+      "duration": 3.72,
+      "text": "I'll just quick show you what this property detailed report is once we order this thing."
+    },
+    {
+      "start": 224.86,
+      "duration": 2.34,
+      "text": "When we pop here, we can see the name of the owner."
+    },
+    {
+      "start": 227.2,
+      "duration": 1.677,
+      "text": "We can see the date of the last sale."
+    },
+    {
+      "start": 228.877,
+      "duration": 2.506,
+      "text": "We can see the gross living area of the property,"
+    },
+    {
+      "start": 231.383,
+      "duration": 3.479,
+      "text": "total rooms, bedrooms, bathrooms, the year it was built,"
+    },
+    {
+      "start": 234.862,
+      "duration": 3.606,
+      "text": "the school district, the assessed value, the property tax information."
+    },
+    {
+      "start": 238.468,
+      "duration": 2.775,
+      "text": "We can even order title of documents right here, if we want to."
+    },
+    {
+      "start": 241.243,
+      "duration": 2.497,
+      "text": "And let me just tell you, this is just scratching the surface."
+    },
+    {
+      "start": 243.74,
+      "duration": 4.25,
+      "text": "There is so much more we can do with DataTree if we want to, depending on"
+    },
+    {
+      "start": 247.99,
+      "duration": 4.543,
+      "text": "why we're searching for this information in the first place, there's a lot of different types of people"
+    },
+    {
+      "start": 252.533,
+      "duration": 2.606,
+      "text": "that use DataTree for all sorts of different reasons."
+    },
+    {
+      "start": 255.139,
+      "duration": 2.781,
+      "text": "But again, the main point of this video is just to"
+    },
+    {
+      "start": 257.92,
+      "duration": 6.0,
+      "text": "show you how easy it is to find into a person and the real estate they own on a nationwide basis."
+    },
+    {
+      "start": 263.92,
+      "duration": 5.327,
+      "text": "All you need to know is the name under which they own their real estate, be it their first and last name"
+    },
+    {
+      "start": 269.247,
+      "duration": 1.771,
+      "text": "and or the name of their spouse,"
+    },
+    {
+      "start": 271.018,
+      "duration": 3.629,
+      "text": "or the name of whatever entity they own that owns their real estate."
+    },
+    {
+      "start": 274.647,
+      "duration": 2.73,
+      "text": "Whether that's an LLC or a corporation or a trust."
+    },
+    {
+      "start": 277.505,
+      "duration": 2.286,
+      "text": "If you have that information and preferably"
+    },
+    {
+      "start": 279.791,
+      "duration": 5.289,
+      "text": "the state and county where that real estate is located, you can find it fairly quickly and easily."
+    },
+    {
+      "start": 285.08,
+      "duration": 3.836,
+      "text": "And even if you don't have the state or county, for some reason, you can still find it."
+    },
+    {
+      "start": 288.916,
+      "duration": 3.594,
+      "text": "It might just take you a little bit longer to pick through a lot of other property owners"
+    },
+    {
+      "start": 292.51,
+      "duration": 1.64,
+      "text": "until you can find the one you're looking for."
+    },
+    {
+      "start": 294.15,
+      "duration": 2.88,
+      "text": "And if you think DataTree would be useful for you and your business"
+    },
+    {
+      "start": 297.03,
+      "duration": 4.611,
+      "text": "you can actually get discounted pricing to this service through the retipster affiliate link."
+    },
+    {
+      "start": 301.641,
+      "duration": 4.33,
+      "text": "We make a very, very small commission from this, and you can get a great deal on the service."
+    },
+    {
+      "start": 305.971,
+      "duration": 3.22,
+      "text": "That's retipster.com/datatree."
+    },
+    {
+      "start": 309.191,
+      "duration": 4.096,
+      "text": "It's definitely not the only service like this out there, but it's a very solid option."
+    },
+    {
+      "start": 313.287,
+      "duration": 2.393,
+      "text": "I've been using it for years and it's served me very well."
+    },
+    {
+      "start": 315.68,
+      "duration": 3.39,
+      "text": "I just want to make sure you guys knew about this and show you a little bit about how to use it."
+    },
+    {
+      "start": 319.07,
+      "duration": 4.476,
+      "text": "And I've got a whole other playlist on YouTube showing lot of other tricks you can use"
+    },
+    {
+      "start": 323.546,
+      "duration": 2.917,
+      "text": "if you decide to use DataTree as your data service."
+    },
+    {
+      "start": 326.463,
+      "duration": 1.967,
+      "text": "Thanks for watching. I'll talk to you again soon."
+    }
+  ],
+  "full_text": "Hey guys, it’s Seth here. In this video, I want to really quickly show you one of the most basic and useful things you can do in DataTree. Let's say you're trying to find a person and any real estate they own. And the same thing goes for a business entity in any real estate that that entity owns. But all the information you have is the name. You don't have a property address. You don't have a mailing address. You don't have a parcel number. You don't have anything else, just a name. Preferably you know what state and county that person or busines is in but even if you don't have that, you still can most likely find them in DataTree. All you got to do is go up here. You want to make sure this dropdown thing is set to owner. And in this case, I'm going to pretend that I do know the state and the county. I'm going to select that, put that here and pick this here. And then I just know the last name. I'm going to type that in here. And if I see the name, I can just select right here and go right to them. But if it's a more common name like Jones or something like that, then there's going to be a whole lot more results. And if we're not seeing the person that we're looking for, we could just hit enter and is going to show us all the people in that state and county that have the name Jones in it. And in this case, there's a whole lot of them. Almost 800 people. And at this point we could go line by line through all of these, until we can find the person that we're looking for. And we can also sort them by address here or by owner or by APN, if we want to do that. But in most cases, depending on why you are looking for a person, you would probably have more than just last name. You'd probably have a first name as well, or like a full entity name, for example, and you probably would have the state and county, but we can mix this up a little bit and just see what happens. Like for example, let's try George Jones, but let's take away the county. Let's say we don't know what county they're in, but we know that there's somewhere in California and we can see how many results show up this way. And in this case, it looks like it helped a lot to be able to add that first name in there. Because even though we're looking at the entire state of California, it narrows it down to 117 results now. And the really cool thing about DataTree, and there's not very many data services. In fact, I don't really know of any of the ones that allow you to do this is that you can search through the entire country at once, if you want to. If you have no idea where this person is and you just have a name, you could do it that way too. Let's say we've done our searching and we've been lucky enough to find the person that we're looking for. I'm going to just pick a property at random here and show you how this looks. Let's pick this person right here. Once we select a property, we can go up here to this property data reports tab and right beneath here, there's going to be all kinds of different reports we can pull depending on why we're looking for this person and their property in the first place. If we're an appraiser, if we're a real estate investor, if we're a lender, there's all kinds of different reasons why we might be looking for this information. In my case, as a real estate investor, a lot of times, I'm just trying to figure out who currently owns this property, when did they buy it? What are all the specifics of the property? How many bedrooms or bathrooms, maybe how much did they pay for it? What is the thing worth? When was it built? A lot of that basic information. And a lot of that detail can be found right here in this property detail report. This is a very common one that I order all the time. If we want to get every possible piece of information you could ever imagine like about the surrounding area, about the properties history, like everything, that's what this total view report is, depending on what part of the country we're in and what DataTree's database has available we could potentially even order like a title search and a lean report and figure out what the status is on this person's property taxes. I'll just quick show you what this property detailed report is once we order this thing. When we pop here, we can see the name of the owner. We can see the date of the last sale. We can see the gross living area of the property, total rooms, bedrooms, bathrooms, the year it was built, the school district, the assessed value, the property tax information. We can even order title of documents right here, if we want to. And let me just tell you, this is just scratching the surface. There is so much more we can do with DataTree if we want to, depending on why we're searching for this information in the first place, there's a lot of different types of people that use DataTree for all sorts of different reasons. But again, the main point of this video is just to show you how easy it is to find into a person and the real estate they own on a nationwide basis. All you need to know is the name under which they own their real estate, be it their first and last name and or the name of their spouse, or the name of whatever entity they own that owns their real estate. Whether that's an LLC or a corporation or a trust. If you have that information and preferably the state and county where that real estate is located, you can find it fairly quickly and easily. And even if you don't have the state or county, for some reason, you can still find it. It might just take you a little bit longer to pick through a lot of other property owners until you can find the one you're looking for. And if you think DataTree would be useful for you and your business you can actually get discounted pricing to this service through the retipster affiliate link. We make a very, very small commission from this, and you can get a great deal on the service. That's retipster.com/datatree. It's definitely not the only service like this out there, but it's a very solid option. I've been using it for years and it's served me very well. I just want to make sure you guys knew about this and show you a little bit about how to use it. And I've got a whole other playlist on YouTube showing lot of other tricks you can use if you decide to use DataTree as your data service. Thanks for watching. I'll talk to you again soon.",
+  "attempts": [
+    {
+      "client": "IOS",
+      "playability": {
+        "status": "OK",
+        "playableInEmbed": true,
+        "offlineability": {
+          "buttonRenderer": {
+            "navigationEndpoint": {
+              "clickTrackingParams": "CBEQ6ewBIhMIheX6lezblwMVZUxMCB3csgOcygEE7avNog==",
+              "ypcGetOfflineUpsellEndpoint": {
+                "params": "ChPqqN25AQ0KC3k1WFpwLTRuX3VjIgt5NVhacC00bl91YyoVCAkYAVIPCgt5NVhacC00bl91YyAB"
+              }
+            },
+            "trackingParams": "CBEQ6ewBIhMIheX6lezblwMVZUxMCB3csgOc"
+          }
+        },
+        "pictureInPicture": {
+          "pictureInPictureRenderer": {
+            "playableInPip": true,
+            "offByDefault": false,
+            "shouldResumeOnHead": false
+          }
+        },
+        "miniplayer": {
+          "miniplayerRenderer": {
+            "playbackMode": "PLAYBACK_MODE_ALLOW"
+          }
+        },
+        "contextParams": "Q0FFU0FnZ0M="
+      },
+      "outcome": "ok"
+    }
+  ],
+  "fetched_at": "2026-10-28T04:11:44.396340+00:00",
+  "client": "IOS",
+  "json_path": "transcripts/176_y5XZp-4n_uc.json",
+  "text_path": "transcripts/176_y5XZp-4n_uc.txt"
+}

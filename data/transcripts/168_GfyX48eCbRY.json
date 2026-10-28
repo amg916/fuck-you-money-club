@@ -1,0 +1,627 @@
+{
+  "index": 168,
+  "url": "https://www.youtube.com/watch?v=GfyX48eCbRY",
+  "video_id": "GfyX48eCbRY",
+  "status": "ok",
+  "metadata": {
+    "title": "DataTree Hacks: How to Do Title Research and Hire Abstractor Services",
+    "author": "REtipster",
+    "channelId": "UC4f3qDE9qKqoRy5_9R6y_pw",
+    "lengthSeconds": "380",
+    "viewCount": "2762",
+    "shortDescription": "Discounted Pricing to DataTree: https://retipster.com/go/datatree/yt-GfyX48eCbRY (REtipster affiliate link)\nFull Blog Post: https://retipster.com/datatree-hacks/?utm_source=youtube&utm_medium=social&utm_campaign=blog&utm_content=GfyX48eCbRY\nGeo Coverage Map: https://web.datatree.com/home/geocoverage\n\nMost people close the deal through a title company or real estate attorney when they buy real estate. In these cases, the title company will handle all the title research to verify that the property doesn't have any clouds on the title.\n\nAs a land investor, sometimes the purchase price is so low that it makes sense to close the deal myself. In these cases, I have to do my own title search and prepare all the documentation, which can be a slow, tedious process because I have to find a title abstractor who can pull all the documentation for me.\n\nBut did you know that DataTree can be used to handle this process in many areas around the country? I'll show you how it works in this video.\n\nAs I mentioned above, a title search requires a bit of understanding about what to look for. It's not something everybody is well suited to do, so if you have no idea how to do your own title search, then you're probably better off leaving this up to a professional abstractor to pull all the documents and review them to let you know if there are any issues you need to watch out for.\n\n0:00 - Intro\n0:21 - Using the GeoCoverage Map\n1:40 - How to search for a property by the state, county, and name\n1:50 - Reviewing a Transaction History Report\n2:22 - How to order a Title Chain & Lien Report\n3:48 - Reviewing a Title Chain & Lien Report\n5:32 - Who uses DataTree? How to get a discount.\n\nJoin Our Community!\nREtipster Forum: https://retipster.com/forum\nREtipster Facebook Group: https://retipster.com/facebookgroup\n\nFollow Along!\nYouTube: https://retipster.com/youtube\nFacebook: https://retipster.com/facebook\nInstagram: https://retipster.com/instagram\nTwitter: https://retipster.com/twitter\nPinterest: https://retipster.com/pinterest\nLinkedIn: https://retipster.com/linkedin\nTikTok: https://retipster.com/tiktok",
+    "keywords": [
+      "online title search",
+      "abstractor",
+      "datatree tutorial",
+      "datatree hacks",
+      "land investing",
+      "real estate due diligence",
+      "real estate property research",
+      "first american datatree",
+      "first american",
+      "title search",
+      "property data",
+      "title insurance",
+      "data tree",
+      "datatree by first american",
+      "property records",
+      "title insurance data",
+      "title insurance records",
+      "real estate title search",
+      "property research",
+      "property owners",
+      "real estate data",
+      "real estate closing",
+      "chain of title",
+      "property title",
+      "retipster"
+    ]
+  },
+  "caption_tracks": [
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=GfyX48eCbRY&ei=_XXhavzEMNeXsfIP9I2RiQo&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185901&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=49DA37D1BD07468A93EDE0C0DA325FE62FD6E5A7.DABB96A5533985CE9B1B2E94DB12135E3784033F&key=yt8&lang=en",
+      "name": {
+        "runs": [
+          {
+            "text": "English"
+          }
+        ]
+      },
+      "vssId": ".en",
+      "languageCode": "en",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=GfyX48eCbRY&ei=_XXhavzEMNeXsfIP9I2RiQo&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185901&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=49DA37D1BD07468A93EDE0C0DA325FE62FD6E5A7.DABB96A5533985CE9B1B2E94DB12135E3784033F&key=yt8&kind=asr&lang=en&variant=gemini",
+      "name": {
+        "runs": [
+          {
+            "text": "English (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.en",
+      "languageCode": "en",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    }
+  ],
+  "selected_track": {
+    "baseUrl": "https://www.youtube.com/api/timedtext?v=GfyX48eCbRY&ei=_XXhavzEMNeXsfIP9I2RiQo&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185901&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=49DA37D1BD07468A93EDE0C0DA325FE62FD6E5A7.DABB96A5533985CE9B1B2E94DB12135E3784033F&key=yt8&lang=en",
+    "name": {
+      "runs": [
+        {
+          "text": "English"
+        }
+      ]
+    },
+    "vssId": ".en",
+    "languageCode": "en",
+    "isTranslatable": true,
+    "trackName": ""
+  },
+  "segments": [
+    {
+      "start": 9.76,
+      "duration": 1.506,
+      "text": "Hey guys, how's going? This is Seth."
+    },
+    {
+      "start": 11.266,
+      "duration": 5.751,
+      "text": "And in this video, I want to show you how you can do a title search right here within DataTree."
+    },
+    {
+      "start": 17.017,
+      "duration": 2.162,
+      "text": "And the first thing to do, if you want to do this"
+    },
+    {
+      "start": 19.179,
+      "duration": 4.901,
+      "text": "is to go over here to this geo coverage map that DataTree provides. And I'm going to include a link"
+    },
+    {
+      "start": 24.08,
+      "duration": 4.8,
+      "text": "to this beneath this video, if you want to check it out. But this essentially tells you what data"
+    },
+    {
+      "start": 28.88,
+      "duration": 5.19,
+      "text": "is available in DataTree in every single county, throughout the entire US, because some states"
+    },
+    {
+      "start": 34.07,
+      "duration": 4.164,
+      "text": "and counties have more information and more current information then others."
+    },
+    {
+      "start": 38.234,
+      "duration": 5.154,
+      "text": "For example, if I go over here to, I don't know, Texas we'll go check out Dallas County."
+    },
+    {
+      "start": 43.388,
+      "duration": 1.307,
+      "text": "We can see what they've got there."
+    },
+    {
+      "start": 44.695,
+      "duration": 4.317,
+      "text": "And when we scroll down, when it comes to looking at the title history of a property,"
+    },
+    {
+      "start": 49.012,
+      "duration": 6.263,
+      "text": "the things that we're looking for are the title chain and lean report in Transaction History Full."
+    },
+    {
+      "start": 55.275,
+      "duration": 3.905,
+      "text": "This is the kind of information that a title researcher would be doing at a title company."
+    },
+    {
+      "start": 59.18,
+      "duration": 3.477,
+      "text": "They may not use DataTree specifically, but just as a first pass,"
+    },
+    {
+      "start": 62.657,
+      "duration": 2.028,
+      "text": "this would tell them most of what they need to know."
+    },
+    {
+      "start": 64.685,
+      "duration": 2.01,
+      "text": "Whereas if you look at another state, like,"
+    },
+    {
+      "start": 66.695,
+      "duration": 1.932,
+      "text": "I don't know, let's check out North Dakota,"
+    },
+    {
+      "start": 68.627,
+      "duration": 2.787,
+      "text": "like in this case, they do have transaction history full."
+    },
+    {
+      "start": 71.414,
+      "duration": 3.876,
+      "text": "So that will tell you something, but you don't see that chain and lean report here."
+    },
+    {
+      "start": 75.29,
+      "duration": 4.412,
+      "text": "So you probably couldn't see everything in DataTree in this particular state and county,"
+    },
+    {
+      "start": 79.702,
+      "duration": 4.13,
+      "text": "you'd have to go find a titled company to help you with that but you could still see some of it"
+    },
+    {
+      "start": 83.832,
+      "duration": 4.344,
+      "text": "enough to help paint the picture and maybe even point out some problems. But anyway, the point is,"
+    },
+    {
+      "start": 88.176,
+      "duration": 4.511,
+      "text": "before you go and start doing this, just check out this map, check out the state and county and make sure"
+    },
+    {
+      "start": 92.687,
+      "duration": 5.644,
+      "text": "they have at the very least transaction history full and preferably title chain and lean report."
+    },
+    {
+      "start": 98.331,
+      "duration": 4.078,
+      "text": "So I'm going to go over here. Let's go check out Dallas County, Texas."
+    },
+    {
+      "start": 102.409,
+      "duration": 1.642,
+      "text": "Texas here, Dallas."
+    },
+    {
+      "start": 104.204,
+      "duration": 4.265,
+      "text": "And we're just going to type in a random name here and check out what we can see there."
+    },
+    {
+      "start": 108.729,
+      "duration": 6.27,
+      "text": "So when we go over here to property data reports, let's go ahead and order transaction history report."
+    },
+    {
+      "start": 115.559,
+      "duration": 2.363,
+      "text": "And it's going to take a few seconds for this to generate."
+    },
+    {
+      "start": 117.922,
+      "duration": 6.033,
+      "text": "So here we can see going back a little over 20 years to what's been going on with the transaction"
+    },
+    {
+      "start": 123.955,
+      "duration": 5.809,
+      "text": "history of this property, we can see that it was sold in December of 1999 for this amount."
+    },
+    {
+      "start": 129.764,
+      "duration": 4.574,
+      "text": "And that's pretty much the only transaction of record dating back to 1999."
+    },
+    {
+      "start": 134.338,
+      "duration": 4.702,
+      "text": "You can also see some other liens that were attached to the property throughout this person's ownership."
+    },
+    {
+      "start": 139.04,
+      "duration": 2.652,
+      "text": "And that's pretty much it. There's not a whole lot to look at here."
+    },
+    {
+      "start": 141.692,
+      "duration": 5.04,
+      "text": "Let's go ahead and click on title chain and lean report and see how much more information we get here."
+    },
+    {
+      "start": 146.732,
+      "duration": 4.868,
+      "text": "And first off, you'll see that in order to order this, you need to specify exactly what you're"
+    },
+    {
+      "start": 151.6,
+      "duration": 2.3,
+      "text": "looking for and how far back it goes."
+    },
+    {
+      "start": 153.9,
+      "duration": 4.061,
+      "text": "And another thing you'll notice back over here on this geo coverage tool"
+    },
+    {
+      "start": 157.961,
+      "duration": 4.067,
+      "text": "is that whenever this kind of thing is available, the title chain and lean report,"
+    },
+    {
+      "start": 162.028,
+      "duration": 3.136,
+      "text": "it will tell you how far back that information goes."
+    },
+    {
+      "start": 165.164,
+      "duration": 3.666,
+      "text": "And in this case, it goes back to February 11th, 2012."
+    },
+    {
+      "start": 168.83,
+      "duration": 3.65,
+      "text": "I don't know why that date, but basically it means that if you order"
+    },
+    {
+      "start": 172.48,
+      "duration": 5.14,
+      "text": "this title chain and lean report, it's only going to report back to that date and no earlier."
+    },
+    {
+      "start": 177.62,
+      "duration": 4.3,
+      "text": "And that's actually not that far. A lot of times when people order title searches, they want to go"
+    },
+    {
+      "start": 181.92,
+      "duration": 5.911,
+      "text": "back and see 30 or 40 years, sometimes even further than that. So in this particular state and county,"
+    },
+    {
+      "start": 187.831,
+      "duration": 4.939,
+      "text": "it's not going to go back that far, but it will tell us everything that happened going back to that date."
+    },
+    {
+      "start": 192.77,
+      "duration": 2.95,
+      "text": "We check out this county in Arizona."
+    },
+    {
+      "start": 195.72,
+      "duration": 3.895,
+      "text": "On this one, the title chain and lean report goes back 1970."
+    },
+    {
+      "start": 199.615,
+      "duration": 3.298,
+      "text": "So that's actually a lot better just in terms of telling us a lot more information"
+    },
+    {
+      "start": 202.913,
+      "duration": 1.56,
+      "text": "about how far back it goes."
+    },
+    {
+      "start": 204.473,
+      "duration": 4.677,
+      "text": "So I don't mean to imply that this is like a bulletproof solution in every area around the country,"
+    },
+    {
+      "start": 209.15,
+      "duration": 4.48,
+      "text": "but I just want to draw your attention that you can see how far back it's going to be able to go right here."
+    },
+    {
+      "start": 213.63,
+      "duration": 1.806,
+      "text": "And if that's not far enough back for you,"
+    },
+    {
+      "start": 215.436,
+      "duration": 5.0,
+      "text": "then DataTree is probably not your best solution, but if it is available and if it does go far enough back"
+    },
+    {
+      "start": 220.436,
+      "duration": 2.844,
+      "text": "then it can be a really easy way to handle your title searching."
+    },
+    {
+      "start": 223.28,
+      "duration": 1.87,
+      "text": "So let's go ahead and order this one."
+    },
+    {
+      "start": 225.15,
+      "duration": 2.77,
+      "text": "We'll see what comes up and how much more detailed it is."
+    },
+    {
+      "start": 227.92,
+      "duration": 2.92,
+      "text": "All right. So in this case, it shows us a lot of the same information."
+    },
+    {
+      "start": 230.84,
+      "duration": 6.04,
+      "text": "It just shows us a lot more documents available and tied to those transactions and liens that were filed"
+    },
+    {
+      "start": 236.88,
+      "duration": 0.806,
+      "text": "over the years."
+    },
+    {
+      "start": 237.686,
+      "duration": 3.624,
+      "text": "And whenever you see this kind of check box here, that means that you can go ahead"
+    },
+    {
+      "start": 241.31,
+      "duration": 4.96,
+      "text": "and order the document and it'll take a few seconds, but it will literally show up right here"
+    },
+    {
+      "start": 246.27,
+      "duration": 4.05,
+      "text": "on your screen and you can examine it and check out the wording and look a lot closer to see"
+    },
+    {
+      "start": 250.32,
+      "duration": 4.38,
+      "text": "if there's anything in that wording that should be of concern to you. Let's go ahead and open this thing up."
+    },
+    {
+      "start": 254.7,
+      "duration": 3.14,
+      "text": "So here we go. This is the actual document that this person signed,"
+    },
+    {
+      "start": 257.84,
+      "duration": 4.486,
+      "text": "and this is what a title searcher would be going over to be like, Oh, okay. Is there any issue here?"
+    },
+    {
+      "start": 262.326,
+      "duration": 1.964,
+      "text": "Is there any language that we should be concerned about?"
+    },
+    {
+      "start": 264.29,
+      "duration": 3.39,
+      "text": "So that's available right here. And if we go back here, you'll see that a lot of these other ones"
+    },
+    {
+      "start": 267.68,
+      "duration": 3.402,
+      "text": "don't have checkbox as they have this little icon here."
+    },
+    {
+      "start": 271.082,
+      "duration": 1.638,
+      "text": "What is that? Well, that basically means"
+    },
+    {
+      "start": 272.72,
+      "duration": 5.727,
+      "text": "that that document is not instantly available in DataTree's system. But if you click this,"
+    },
+    {
+      "start": 278.447,
+      "duration": 4.753,
+      "text": "you can request an abstracter to go and get this document from that state and county."
+    },
+    {
+      "start": 283.2,
+      "duration": 2.361,
+      "text": "And you'll get it in about 24 to 48 hours."
+    },
+    {
+      "start": 285.561,
+      "duration": 3.197,
+      "text": "So it's pretty convenient and it's not instant, but it's there."
+    },
+    {
+      "start": 288.758,
+      "duration": 2.442,
+      "text": "And it's a lot easier and usually a lot cheaper"
+    },
+    {
+      "start": 291.2,
+      "duration": 4.4,
+      "text": "than having to get this through some third party that's going to charge you like 10 times more"
+    },
+    {
+      "start": 295.6,
+      "duration": 1.24,
+      "text": "for the exact same information."
+    },
+    {
+      "start": 296.84,
+      "duration": 1.799,
+      "text": "So that's a super convenient thing there."
+    },
+    {
+      "start": 298.639,
+      "duration": 3.03,
+      "text": "And if you don't know anything about title searching"
+    },
+    {
+      "start": 301.669,
+      "duration": 4.01,
+      "text": "and how it works and how to do it, and what problems to look out for and all that"
+    },
+    {
+      "start": 305.679,
+      "duration": 2.721,
+      "text": "then you might not even want to go down this road because there can be a lot"
+    },
+    {
+      "start": 308.4,
+      "duration": 4.8,
+      "text": "of little hidden issues that a title specialist knows exactly what to look for and how to find,"
+    },
+    {
+      "start": 313.2,
+      "duration": 3.12,
+      "text": "but somebody who has never done this before, and doesn't know what they're doing,"
+    },
+    {
+      "start": 316.32,
+      "duration": 2.932,
+      "text": "doesn't even know what they're looking for and or when it's a problem."
+    },
+    {
+      "start": 319.252,
+      "duration": 5.028,
+      "text": "So you sort of have to take into account your own experience and comfort with doing title searching."
+    },
+    {
+      "start": 324.28,
+      "duration": 4.79,
+      "text": "But if you are at all confident in what you're doing, this can just be a super convenient way"
+    },
+    {
+      "start": 329.07,
+      "duration": 3.061,
+      "text": "to get that information really quickly right here through DataTree."
+    },
+    {
+      "start": 332.131,
+      "duration": 2.454,
+      "text": "And this is not the only thing DataTree can be used for."
+    },
+    {
+      "start": 334.585,
+      "duration": 5.125,
+      "text": "You can use this to generate lists, do property research, pull up property tax information."
+    },
+    {
+      "start": 339.71,
+      "duration": 3.34,
+      "text": "The list goes on and on, and I've got several other videos explaining"
+    },
+    {
+      "start": 343.05,
+      "duration": 1.465,
+      "text": "how to do a lot of this other stuff."
+    },
+    {
+      "start": 344.515,
+      "duration": 3.637,
+      "text": "And I'm going to link to that playlist beneath this video as well if you want to check it out."
+    },
+    {
+      "start": 348.152,
+      "duration": 4.666,
+      "text": "Really, there are all kinds of different professionals that use DataTree for various reasons,"
+    },
+    {
+      "start": 352.818,
+      "duration": 2.702,
+      "text": "whether they're insurance underwriters or appraisers"
+    },
+    {
+      "start": 355.52,
+      "duration": 5.576,
+      "text": "or real estate investors or real estate agents, title specialists, lots of different uses for DataTree."
+    },
+    {
+      "start": 361.096,
+      "duration": 3.554,
+      "text": "If you want to check it out and get a discount through our affiliate link,"
+    },
+    {
+      "start": 364.65,
+      "duration": 4.383,
+      "text": "you can do it through retipster.com/datatree."
+    },
+    {
+      "start": 369.033,
+      "duration": 3.169,
+      "text": "It'll take you to this page where you can sign up and get some special pricing."
+    },
+    {
+      "start": 372.202,
+      "duration": 4.138,
+      "text": "So I hope that was helpful. And again, if you want to see some other ways you can use DataTree"
+    },
+    {
+      "start": 376.53,
+      "duration": 2.312,
+      "text": "be sure to check out this next video as well."
+    },
+    {
+      "start": 378.842,
+      "duration": 1.158,
+      "text": "Talk to you again soon."
+    }
+  ],
+  "full_text": "Hey guys, how's going? This is Seth. And in this video, I want to show you how you can do a title search right here within DataTree. And the first thing to do, if you want to do this is to go over here to this geo coverage map that DataTree provides. And I'm going to include a link to this beneath this video, if you want to check it out. But this essentially tells you what data is available in DataTree in every single county, throughout the entire US, because some states and counties have more information and more current information then others. For example, if I go over here to, I don't know, Texas we'll go check out Dallas County. We can see what they've got there. And when we scroll down, when it comes to looking at the title history of a property, the things that we're looking for are the title chain and lean report in Transaction History Full. This is the kind of information that a title researcher would be doing at a title company. They may not use DataTree specifically, but just as a first pass, this would tell them most of what they need to know. Whereas if you look at another state, like, I don't know, let's check out North Dakota, like in this case, they do have transaction history full. So that will tell you something, but you don't see that chain and lean report here. So you probably couldn't see everything in DataTree in this particular state and county, you'd have to go find a titled company to help you with that but you could still see some of it enough to help paint the picture and maybe even point out some problems. But anyway, the point is, before you go and start doing this, just check out this map, check out the state and county and make sure they have at the very least transaction history full and preferably title chain and lean report. So I'm going to go over here. Let's go check out Dallas County, Texas. Texas here, Dallas. And we're just going to type in a random name here and check out what we can see there. So when we go over here to property data reports, let's go ahead and order transaction history report. And it's going to take a few seconds for this to generate. So here we can see going back a little over 20 years to what's been going on with the transaction history of this property, we can see that it was sold in December of 1999 for this amount. And that's pretty much the only transaction of record dating back to 1999. You can also see some other liens that were attached to the property throughout this person's ownership. And that's pretty much it. There's not a whole lot to look at here. Let's go ahead and click on title chain and lean report and see how much more information we get here. And first off, you'll see that in order to order this, you need to specify exactly what you're looking for and how far back it goes. And another thing you'll notice back over here on this geo coverage tool is that whenever this kind of thing is available, the title chain and lean report, it will tell you how far back that information goes. And in this case, it goes back to February 11th, 2012. I don't know why that date, but basically it means that if you order this title chain and lean report, it's only going to report back to that date and no earlier. And that's actually not that far. A lot of times when people order title searches, they want to go back and see 30 or 40 years, sometimes even further than that. So in this particular state and county, it's not going to go back that far, but it will tell us everything that happened going back to that date. We check out this county in Arizona. On this one, the title chain and lean report goes back 1970. So that's actually a lot better just in terms of telling us a lot more information about how far back it goes. So I don't mean to imply that this is like a bulletproof solution in every area around the country, but I just want to draw your attention that you can see how far back it's going to be able to go right here. And if that's not far enough back for you, then DataTree is probably not your best solution, but if it is available and if it does go far enough back then it can be a really easy way to handle your title searching. So let's go ahead and order this one. We'll see what comes up and how much more detailed it is. All right. So in this case, it shows us a lot of the same information. It just shows us a lot more documents available and tied to those transactions and liens that were filed over the years. And whenever you see this kind of check box here, that means that you can go ahead and order the document and it'll take a few seconds, but it will literally show up right here on your screen and you can examine it and check out the wording and look a lot closer to see if there's anything in that wording that should be of concern to you. Let's go ahead and open this thing up. So here we go. This is the actual document that this person signed, and this is what a title searcher would be going over to be like, Oh, okay. Is there any issue here? Is there any language that we should be concerned about? So that's available right here. And if we go back here, you'll see that a lot of these other ones don't have checkbox as they have this little icon here. What is that? Well, that basically means that that document is not instantly available in DataTree's system. But if you click this, you can request an abstracter to go and get this document from that state and county. And you'll get it in about 24 to 48 hours. So it's pretty convenient and it's not instant, but it's there. And it's a lot easier and usually a lot cheaper than having to get this through some third party that's going to charge you like 10 times more for the exact same information. So that's a super convenient thing there. And if you don't know anything about title searching and how it works and how to do it, and what problems to look out for and all that then you might not even want to go down this road because there can be a lot of little hidden issues that a title specialist knows exactly what to look for and how to find, but somebody who has never done this before, and doesn't know what they're doing, doesn't even know what they're looking for and or when it's a problem. So you sort of have to take into account your own experience and comfort with doing title searching. But if you are at all confident in what you're doing, this can just be a super convenient way to get that information really quickly right here through DataTree. And this is not the only thing DataTree can be used for. You can use this to generate lists, do property research, pull up property tax information. The list goes on and on, and I've got several other videos explaining how to do a lot of this other stuff. And I'm going to link to that playlist beneath this video as well if you want to check it out. Really, there are all kinds of different professionals that use DataTree for various reasons, whether they're insurance underwriters or appraisers or real estate investors or real estate agents, title specialists, lots of different uses for DataTree. If you want to check it out and get a discount through our affiliate link, you can do it through retipster.com/datatree. It'll take you to this page where you can sign up and get some special pricing. So I hope that was helpful. And again, if you want to see some other ways you can use DataTree be sure to check out this next video as well. Talk to you again soon.",
+  "attempts": [
+    {
+      "client": "IOS",
+      "playability": {
+        "status": "OK",
+        "playableInEmbed": true,
+        "offlineability": {
+          "buttonRenderer": {
+            "navigationEndpoint": {
+              "clickTrackingParams": "CBEQ6ewBIhMIvLeflezblwMV10tMCB30RiShygEEgNMMfA==",
+              "ypcGetOfflineUpsellEndpoint": {
+                "params": "ChPqqN25AQ0KC0dmeVg0OGVDYlJZIgtHZnlYNDhlQ2JSWSoVCAkYAVIPCgtHZnlYNDhlQ2JSWSAB"
+              }
+            },
+            "trackingParams": "CBEQ6ewBIhMIvLeflezblwMV10tMCB30RiSh"
+          }
+        },
+        "pictureInPicture": {
+          "pictureInPictureRenderer": {
+            "playableInPip": true,
+            "offByDefault": false,
+            "shouldResumeOnHead": false
+          }
+        },
+        "miniplayer": {
+          "miniplayerRenderer": {
+            "playbackMode": "PLAYBACK_MODE_ALLOW"
+          }
+        },
+        "contextParams": "Q0FFU0FnZ0M="
+      },
+      "outcome": "ok"
+    }
+  ],
+  "fetched_at": "2026-10-28T04:11:42.845319+00:00",
+  "client": "IOS",
+  "json_path": "transcripts/168_GfyX48eCbRY.json",
+  "text_path": "transcripts/168_GfyX48eCbRY.txt"
+}

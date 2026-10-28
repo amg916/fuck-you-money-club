@@ -1,0 +1,567 @@
+{
+  "index": 45,
+  "url": "https://www.youtube.com/watch?v=X-Q-bm1y9no",
+  "video_id": "X-Q-bm1y9no",
+  "status": "ok",
+  "metadata": {
+    "title": "Locating Heirs",
+    "author": "Hull & Hull LLP",
+    "channelId": "UCgwK9zTUgyapgnesp2I-3lA",
+    "lengthSeconds": "233",
+    "viewCount": "788",
+    "shortDescription": "Ian Hull & Suzana Popovic-Montag discuss the process of locating heirs to an estate.",
+    "keywords": [
+      "heirs",
+      "inheritance",
+      "benefiaries",
+      "beneficiary",
+      "estate law",
+      "estate planning",
+      "wills",
+      "law",
+      "legal",
+      "lawyer",
+      "legal news",
+      "toronto lawyer",
+      "ian hull",
+      "suzana popovic-montag",
+      "hull and hull",
+      "hull and hull tv",
+      "hull & hull",
+      "hull & hull tv"
+    ]
+  },
+  "caption_tracks": [
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=X-Q-bm1y9no&ei=6HXhasSLBqqAsfIP6IfIsAo&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185880&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=C7F3E5C7983A1CA746FB9F07422C9488772D640E.1DB68437C1F6664A31A758214BF96B2404B5A379&key=yt8&kind=asr&lang=en",
+      "name": {
+        "runs": [
+          {
+            "text": "English (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.en",
+      "languageCode": "en",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    }
+  ],
+  "selected_track": {
+    "baseUrl": "https://www.youtube.com/api/timedtext?v=X-Q-bm1y9no&ei=6HXhasSLBqqAsfIP6IfIsAo&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185880&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=C7F3E5C7983A1CA746FB9F07422C9488772D640E.1DB68437C1F6664A31A758214BF96B2404B5A379&key=yt8&kind=asr&lang=en",
+    "name": {
+      "runs": [
+        {
+          "text": "English (auto-generated)"
+        }
+      ]
+    },
+    "vssId": "a.en",
+    "languageCode": "en",
+    "kind": "asr",
+    "isTranslatable": true,
+    "trackName": ""
+  },
+  "segments": [
+    {
+      "start": 15.32,
+      "duration": 5.119,
+      "text": "hi and welcome to hullen Hull TV I'm"
+    },
+    {
+      "start": 18.16,
+      "duration": 4.64,
+      "text": "Dana O'Brien and I'm joined by founding"
+    },
+    {
+      "start": 20.439,
+      "duration": 6.16,
+      "text": "partner Ian Hull and managing partner"
+    },
+    {
+      "start": 22.8,
+      "duration": 5.68,
+      "text": "Susanna poit monag at hullen Hall LLP an"
+    },
+    {
+      "start": 26.599,
+      "duration": 5.081,
+      "text": "Innovative Law Firm that practices"
+    },
+    {
+      "start": 28.48,
+      "duration": 5.8,
+      "text": "exclusively in aate trust and capacity"
+    },
+    {
+      "start": 31.68,
+      "duration": 4.48,
+      "text": "litigation here at hullen Hull TV we're"
+    },
+    {
+      "start": 34.28,
+      "duration": 5.0,
+      "text": "exploring the issues around estate"
+    },
+    {
+      "start": 36.16,
+      "duration": 5.32,
+      "text": "planning that affect you Ian and Susanna"
+    },
+    {
+      "start": 39.28,
+      "duration": 4.24,
+      "text": "an executive's duties include locating"
+    },
+    {
+      "start": 41.48,
+      "duration": 3.919,
+      "text": "all heirs who may be entitled to share"
+    },
+    {
+      "start": 43.52,
+      "duration": 4.0,
+      "text": "in the estate what's the best place to"
+    },
+    {
+      "start": 45.399,
+      "duration": 3.721,
+      "text": "start Susanna when we're looking to"
+    },
+    {
+      "start": 47.52,
+      "duration": 2.96,
+      "text": "locate areas what we're really talking"
+    },
+    {
+      "start": 49.12,
+      "duration": 3.079,
+      "text": "about is trying to find those"
+    },
+    {
+      "start": 50.48,
+      "duration": 4.0,
+      "text": "individuals who are beneficiaries of the"
+    },
+    {
+      "start": 52.199,
+      "duration": 4.281,
+      "text": "estate and easy ones are like for"
+    },
+    {
+      "start": 54.48,
+      "duration": 3.719,
+      "text": "instance you know to my son but when"
+    },
+    {
+      "start": 56.48,
+      "duration": 3.759,
+      "text": "you've got an extended family member or"
+    },
+    {
+      "start": 58.199,
+      "duration": 3.721,
+      "text": "someone who can't be readily a found"
+    },
+    {
+      "start": 60.239,
+      "duration": 3.241,
+      "text": "then in those cases we normally start"
+    },
+    {
+      "start": 61.92,
+      "duration": 2.959,
+      "text": "with family and friends to say you know"
+    },
+    {
+      "start": 63.48,
+      "duration": 2.959,
+      "text": "do you know where these individuals are"
+    },
+    {
+      "start": 64.879,
+      "duration": 4.001,
+      "text": "can you help us build out this family"
+    },
+    {
+      "start": 66.439,
+      "duration": 4.121,
+      "text": "tree to find out where everyone is and"
+    },
+    {
+      "start": 68.88,
+      "duration": 3.52,
+      "text": "that's not necessarily going to lead you"
+    },
+    {
+      "start": 70.56,
+      "duration": 3.44,
+      "text": "to the right answer many people know and"
+    },
+    {
+      "start": 72.4,
+      "duration": 3.68,
+      "text": "use the internet they'll do the Canada"
+    },
+    {
+      "start": 74.0,
+      "duration": 3.799,
+      "text": "411 search they'll do other sort of"
+    },
+    {
+      "start": 76.08,
+      "duration": 3.92,
+      "text": "self- Health remedies to try to locate"
+    },
+    {
+      "start": 77.799,
+      "duration": 4.96,
+      "text": "these individuals and when that doesn't"
+    },
+    {
+      "start": 80.0,
+      "duration": 5.56,
+      "text": "work what about hiring a researcher in"
+    },
+    {
+      "start": 82.759,
+      "duration": 6.121,
+      "text": "to help out well that's right and those"
+    },
+    {
+      "start": 85.56,
+      "duration": 5.199,
+      "text": "uh people are available uh readily now"
+    },
+    {
+      "start": 88.88,
+      "duration": 4.4,
+      "text": "there are sort of two types of"
+    },
+    {
+      "start": 90.759,
+      "duration": 5.121,
+      "text": "researchers both of which are necessary"
+    },
+    {
+      "start": 93.28,
+      "duration": 4.68,
+      "text": "and sometimes uh required in different"
+    },
+    {
+      "start": 95.88,
+      "duration": 4.12,
+      "text": "situations I mean you can hire a fee for"
+    },
+    {
+      "start": 97.96,
+      "duration": 3.96,
+      "text": "service researcher who has got"
+    },
+    {
+      "start": 100.0,
+      "duration": 3.799,
+      "text": "genealogical searching that they'll go"
+    },
+    {
+      "start": 101.92,
+      "duration": 5.4,
+      "text": "right down to going into cemeteries"
+    },
+    {
+      "start": 103.799,
+      "duration": 6.161,
+      "text": "tracking where family members uh yeah"
+    },
+    {
+      "start": 107.32,
+      "duration": 4.96,
+      "text": "it's a lot of fun uh and then also"
+    },
+    {
+      "start": 109.96,
+      "duration": 4.04,
+      "text": "Searchers who will search for a fee and"
+    },
+    {
+      "start": 112.28,
+      "duration": 4.4,
+      "text": "they will seek you out or you will seek"
+    },
+    {
+      "start": 114.0,
+      "duration": 4.96,
+      "text": "them and retain them for whatever finder"
+    },
+    {
+      "start": 116.68,
+      "duration": 5.2,
+      "text": "fee they collect from finding the"
+    },
+    {
+      "start": 118.96,
+      "duration": 5.32,
+      "text": "individuals now an executive is expected"
+    },
+    {
+      "start": 121.88,
+      "duration": 4.76,
+      "text": "to make a reasonable effort to find"
+    },
+    {
+      "start": 124.28,
+      "duration": 4.44,
+      "text": "missing heirs but what's reasonable"
+    },
+    {
+      "start": 126.64,
+      "duration": 3.479,
+      "text": "Susanna that's a great question and it's"
+    },
+    {
+      "start": 128.72,
+      "duration": 4.08,
+      "text": "really going to determine or be"
+    },
+    {
+      "start": 130.119,
+      "duration": 5.001,
+      "text": "determined by the particular situation"
+    },
+    {
+      "start": 132.8,
+      "duration": 4.159,
+      "text": "so if you uh have gone through the"
+    },
+    {
+      "start": 135.12,
+      "duration": 4.08,
+      "text": "self-help remedies of trying to locate"
+    },
+    {
+      "start": 136.959,
+      "duration": 4.241,
+      "text": "individuals you've then hired perhaps a"
+    },
+    {
+      "start": 139.2,
+      "duration": 4.72,
+      "text": "private investigator or retained one of"
+    },
+    {
+      "start": 141.2,
+      "duration": 4.52,
+      "text": "these researchers to locate these people"
+    },
+    {
+      "start": 143.92,
+      "duration": 4.2,
+      "text": "then at that point you may have done"
+    },
+    {
+      "start": 145.72,
+      "duration": 5.08,
+      "text": "your your reasonable efforts to locate"
+    },
+    {
+      "start": 148.12,
+      "duration": 5.0,
+      "text": "someone and what happens Ian if an"
+    },
+    {
+      "start": 150.8,
+      "duration": 4.76,
+      "text": "executive isn't satisfied that they've"
+    },
+    {
+      "start": 153.12,
+      "duration": 5.68,
+      "text": "found all missing airs what's the next"
+    },
+    {
+      "start": 155.56,
+      "duration": 5.28,
+      "text": "option well you can uh go to court and"
+    },
+    {
+      "start": 158.8,
+      "duration": 3.96,
+      "text": "get some assistance from the court and"
+    },
+    {
+      "start": 160.84,
+      "duration": 4.479,
+      "text": "the steps that suzanna's talked about we"
+    },
+    {
+      "start": 162.76,
+      "duration": 4.16,
+      "text": "can document them fully and identify"
+    },
+    {
+      "start": 165.319,
+      "duration": 3.801,
+      "text": "this the self-help remedies that you've"
+    },
+    {
+      "start": 166.92,
+      "duration": 4.56,
+      "text": "sought identify the researcher and the"
+    },
+    {
+      "start": 169.12,
+      "duration": 4.8,
+      "text": "researcher will typically file a report"
+    },
+    {
+      "start": 171.48,
+      "duration": 4.24,
+      "text": "in respect of what efforts they've taken"
+    },
+    {
+      "start": 173.92,
+      "duration": 4.28,
+      "text": "even that though the court is going to"
+    },
+    {
+      "start": 175.72,
+      "duration": 4.72,
+      "text": "be very nervous about making an order"
+    },
+    {
+      "start": 178.2,
+      "duration": 4.039,
+      "text": "and uh lots of times and done these over"
+    },
+    {
+      "start": 180.44,
+      "duration": 3.64,
+      "text": "the years many times a judge will say"
+    },
+    {
+      "start": 182.239,
+      "duration": 4.601,
+      "text": "look you know what I'm just not quite"
+    },
+    {
+      "start": 184.08,
+      "duration": 4.84,
+      "text": "ready to determine uh that you've done"
+    },
+    {
+      "start": 186.84,
+      "duration": 4.24,
+      "text": "everything because of the consequences"
+    },
+    {
+      "start": 188.92,
+      "duration": 4.039,
+      "text": "significant uh to this individual if you"
+    },
+    {
+      "start": 191.08,
+      "duration": 5.0,
+      "text": "determine that they can't be found or"
+    },
+    {
+      "start": 192.959,
+      "duration": 4.601,
+      "text": "that they can be found so you sometimes"
+    },
+    {
+      "start": 196.08,
+      "duration": 3.12,
+      "text": "a judge will send you back with a"
+    },
+    {
+      "start": 197.56,
+      "duration": 3.599,
+      "text": "creative point that they've made and"
+    },
+    {
+      "start": 199.2,
+      "duration": 3.56,
+      "text": "they'll say well you searched Google but"
+    },
+    {
+      "start": 201.159,
+      "duration": 4.8,
+      "text": "you didn't search Yahoo and I want you"
+    },
+    {
+      "start": 202.76,
+      "duration": 5.36,
+      "text": "to go back and do another search uh and"
+    },
+    {
+      "start": 205.959,
+      "duration": 4.321,
+      "text": "that is not uncommon because of the"
+    },
+    {
+      "start": 208.12,
+      "duration": 4.36,
+      "text": "consequence of it so might like to give"
+    },
+    {
+      "start": 210.28,
+      "duration": 5.4,
+      "text": "it a little more time and effort"
+    },
+    {
+      "start": 212.48,
+      "duration": 7.0,
+      "text": "absolutely Ian and Susanna thank you and"
+    },
+    {
+      "start": 215.68,
+      "duration": 3.8,
+      "text": "thanks for joining us on Halland Hall"
+    },
+    {
+      "start": 232.36,
+      "duration": 3.0,
+      "text": "TV"
+    }
+  ],
+  "full_text": "hi and welcome to hullen Hull TV I'm Dana O'Brien and I'm joined by founding partner Ian Hull and managing partner Susanna poit monag at hullen Hall LLP an Innovative Law Firm that practices exclusively in aate trust and capacity litigation here at hullen Hull TV we're exploring the issues around estate planning that affect you Ian and Susanna an executive's duties include locating all heirs who may be entitled to share in the estate what's the best place to start Susanna when we're looking to locate areas what we're really talking about is trying to find those individuals who are beneficiaries of the estate and easy ones are like for instance you know to my son but when you've got an extended family member or someone who can't be readily a found then in those cases we normally start with family and friends to say you know do you know where these individuals are can you help us build out this family tree to find out where everyone is and that's not necessarily going to lead you to the right answer many people know and use the internet they'll do the Canada 411 search they'll do other sort of self- Health remedies to try to locate these individuals and when that doesn't work what about hiring a researcher in to help out well that's right and those uh people are available uh readily now there are sort of two types of researchers both of which are necessary and sometimes uh required in different situations I mean you can hire a fee for service researcher who has got genealogical searching that they'll go right down to going into cemeteries tracking where family members uh yeah it's a lot of fun uh and then also Searchers who will search for a fee and they will seek you out or you will seek them and retain them for whatever finder fee they collect from finding the individuals now an executive is expected to make a reasonable effort to find missing heirs but what's reasonable Susanna that's a great question and it's really going to determine or be determined by the particular situation so if you uh have gone through the self-help remedies of trying to locate individuals you've then hired perhaps a private investigator or retained one of these researchers to locate these people then at that point you may have done your your reasonable efforts to locate someone and what happens Ian if an executive isn't satisfied that they've found all missing airs what's the next option well you can uh go to court and get some assistance from the court and the steps that suzanna's talked about we can document them fully and identify this the self-help remedies that you've sought identify the researcher and the researcher will typically file a report in respect of what efforts they've taken even that though the court is going to be very nervous about making an order and uh lots of times and done these over the years many times a judge will say look you know what I'm just not quite ready to determine uh that you've done everything because of the consequences significant uh to this individual if you determine that they can't be found or that they can be found so you sometimes a judge will send you back with a creative point that they've made and they'll say well you searched Google but you didn't search Yahoo and I want you to go back and do another search uh and that is not uncommon because of the consequence of it so might like to give it a little more time and effort absolutely Ian and Susanna thank you and thanks for joining us on Halland Hall TV",
+  "attempts": [
+    {
+      "client": "IOS",
+      "playability": {
+        "status": "OK",
+        "playableInEmbed": true,
+        "offlineability": {
+          "buttonRenderer": {
+            "navigationEndpoint": {
+              "clickTrackingParams": "CAkQ6ewBIhMIxJ_ziuzblwMVKkBMCB3oAxKmygEEXDZrzw==",
+              "ypcGetOfflineUpsellEndpoint": {
+                "params": "ChPqqN25AQ0KC1gtUS1ibTF5OW5vIgtYLVEtYm0xeTlubyoVCAkYAVIPCgtYLVEtYm0xeTlubyAB"
+              }
+            },
+            "trackingParams": "CAkQ6ewBIhMIxJ_ziuzblwMVKkBMCB3oAxKm"
+          }
+        },
+        "pictureInPicture": {
+          "pictureInPictureRenderer": {
+            "playableInPip": true,
+            "offByDefault": false,
+            "shouldResumeOnHead": false
+          }
+        },
+        "miniplayer": {
+          "miniplayerRenderer": {
+            "playbackMode": "PLAYBACK_MODE_ALLOW"
+          }
+        },
+        "contextParams": "Q0FFU0FnZ0M="
+      },
+      "outcome": "ok"
+    }
+  ],
+  "fetched_at": "2026-10-28T04:11:20.719230+00:00",
+  "client": "IOS",
+  "json_path": "transcripts/045_X-Q-bm1y9no.json",
+  "text_path": "transcripts/045_X-Q-bm1y9no.txt"
+}

@@ -1,0 +1,2923 @@
+{
+  "index": 17,
+  "url": "https://www.youtube.com/watch?v=KtpN2Ws9PA4",
+  "video_id": "KtpN2Ws9PA4",
+  "status": "ok",
+  "metadata": {
+    "title": "Peeling Back the Layers: Citing Sources From Online Materials, Part 2",
+    "author": "FamilySearch",
+    "channelId": "UC-9GZ7QHKOmLS0APnfz2g1Q",
+    "lengthSeconds": "1230",
+    "viewCount": "1220",
+    "shortDescription": "Have you wondered how to create a source citation for a record found on a website like FamilySearch or Ancestry? With the majority of our research now done online, understanding the basics of citation can help us accurately cite our sources and create a path back to the original source. In Peeling Back the Layers Citing Sources from Online Materials (Part 2), we’ll look at different examples that illustrate the principles needed to construct a citation for a source from any website.\n\nThis is the second part of a three-part series.\n\nPart 1: https://youtu.be/DUAbGD8rVzA\nPart 3: https://youtu.be/FxQgurvv3_g\n\nThis presentation was part of RootsTech Connect 2021. Find hundreds of free family history classes, keynotes, and more. http://familysearch.me/RootsTech \n\n#rootstechconnect\n\nRootsTech is hosted by FamilySearch, a global nonprofit organization dedicated to creating inspiring family discovery experiences. RootsTech is the premier global event and learning resource for making family connections and receiving guidance to help people learn more about their families.  \n\nFamilySearch is an international, nonprofit organization dedicated to helping people all over the world connect with their family: past, present, and future. Our partnerships with thousands of record custodians and major genealogical organizations allow us to make billions of records available for you to research your family tree free of charge! Regardless of where or how you research your ancestry, we have specialists all over the world to help you experience the joy of connecting with your heritage.\n\nOur desire to Connect with the Past, Present, and Future https://youtu.be/3cmj5kGm2Xw   \n\nSubscribe:  \nhttp://familysearch.me/youtube   \nhttp://familysearch.me/youtubeportuguese   \nhttp://familysearch.me/youtubespanish   \nhttp://familysearch.me/youtubeeurope   \n\nConnect with FamilySearch:  \nVisit: http://familysearch.me/home   \nLike FamilySearch on Facebook: http://familysearch.me/facebook   \nFollow FamilySearch on Twitter: http://familysearch.me/twitter   \nFollow FamilySearch on Instagram: http://familysearch.me/instagram",
+    "keywords": [
+      "in-text citations",
+      "citing sources",
+      "source citations",
+      "online sources",
+      "layered citations",
+      "research",
+      "FamilySearch",
+      "Ancestry",
+      "genealogy",
+      "rootstech 2021",
+      "rootstech connect 2021",
+      "familysearch",
+      "family history",
+      "genealogy research",
+      "research methods",
+      "bibliography",
+      "sources cited",
+      "Peeling Back the Layers: Citing Sources from Online Materials",
+      "Part 2",
+      "create a source citation",
+      "basics of citation",
+      "citing family history resources",
+      "Citing Sources from Online Materials",
+      "citing online sources"
+    ]
+  },
+  "caption_tracks": [
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=KtpN2Ws9PA4&ei=4nXhas--Nb3FsfIP5uD5-Ao&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185874&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=3361E686E27FAC6B9FC9B3DCBB5857016A061F9D.633AD40FA700B586150A56AF83D99DF10043EE57&key=yt8&kind=asr&lang=en",
+      "name": {
+        "runs": [
+          {
+            "text": "English (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.en",
+      "languageCode": "en",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    }
+  ],
+  "selected_track": {
+    "baseUrl": "https://www.youtube.com/api/timedtext?v=KtpN2Ws9PA4&ei=4nXhas--Nb3FsfIP5uD5-Ao&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185874&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=3361E686E27FAC6B9FC9B3DCBB5857016A061F9D.633AD40FA700B586150A56AF83D99DF10043EE57&key=yt8&kind=asr&lang=en",
+    "name": {
+      "runs": [
+        {
+          "text": "English (auto-generated)"
+        }
+      ]
+    },
+    "vssId": "a.en",
+    "languageCode": "en",
+    "kind": "asr",
+    "isTranslatable": true,
+    "trackName": ""
+  },
+  "segments": [
+    {
+      "start": 1.599,
+      "duration": 4.081,
+      "text": "welcome to peeling back the layers"
+    },
+    {
+      "start": 3.52,
+      "duration": 3.839,
+      "text": "citing sources from online materials"
+    },
+    {
+      "start": 5.68,
+      "duration": 3.76,
+      "text": "part two"
+    },
+    {
+      "start": 7.359,
+      "duration": 4.16,
+      "text": "my name is diana elder i'm an accredited"
+    },
+    {
+      "start": 9.44,
+      "duration": 4.48,
+      "text": "genealogist and you can find more about"
+    },
+    {
+      "start": 11.519,
+      "duration": 2.401,
+      "text": "me on"
+    },
+    {
+      "start": 15.599,
+      "duration": 3.281,
+      "text": "the familylocket.com of this video as"
+    },
+    {
+      "start": 17.119,
+      "duration": 2.961,
+      "text": "well as the thoughts views and opinions"
+    },
+    {
+      "start": 18.88,
+      "duration": 3.28,
+      "text": "expressed herein"
+    },
+    {
+      "start": 20.08,
+      "duration": 4.08,
+      "text": "belongs solely to the creator and do not"
+    },
+    {
+      "start": 22.16,
+      "duration": 3.359,
+      "text": "necessarily reflect the views of family"
+    },
+    {
+      "start": 24.16,
+      "duration": 4.64,
+      "text": "search international"
+    },
+    {
+      "start": 25.519,
+      "duration": 5.84,
+      "text": "and roots tech as"
+    },
+    {
+      "start": 28.8,
+      "duration": 4.08,
+      "text": "i mentioned in part one of this series"
+    },
+    {
+      "start": 31.359,
+      "duration": 4.561,
+      "text": "source citations"
+    },
+    {
+      "start": 32.88,
+      "duration": 7.28,
+      "text": "falls in the genealogy research process"
+    },
+    {
+      "start": 35.92,
+      "duration": 6.24,
+      "text": "as a critical part and as we have"
+    },
+    {
+      "start": 40.16,
+      "duration": 4.0,
+      "text": "created an objective for our research"
+    },
+    {
+      "start": 42.16,
+      "duration": 4.239,
+      "text": "project and we've analyzed our sources"
+    },
+    {
+      "start": 44.16,
+      "duration": 3.919,
+      "text": "learned about the location we've created"
+    },
+    {
+      "start": 46.399,
+      "duration": 3.121,
+      "text": "a research plan and we're finally to the"
+    },
+    {
+      "start": 48.079,
+      "duration": 3.841,
+      "text": "research stage"
+    },
+    {
+      "start": 49.52,
+      "duration": 4.24,
+      "text": "and we have our research log open and we"
+    },
+    {
+      "start": 51.92,
+      "duration": 3.119,
+      "text": "are looking at our sources"
+    },
+    {
+      "start": 53.76,
+      "duration": 2.88,
+      "text": "we want to make sure that we are"
+    },
+    {
+      "start": 55.039,
+      "duration": 3.68,
+      "text": "creating those source citations the"
+    },
+    {
+      "start": 56.64,
+      "duration": 3.28,
+      "text": "first time we look at the sources"
+    },
+    {
+      "start": 58.719,
+      "duration": 3.441,
+      "text": "so when we come to writing our"
+    },
+    {
+      "start": 59.92,
+      "duration": 4.16,
+      "text": "conclusions or sharing our research"
+    },
+    {
+      "start": 62.16,
+      "duration": 3.76,
+      "text": "we have a source citation to back up"
+    },
+    {
+      "start": 64.08,
+      "duration": 5.12,
+      "text": "everything that we've learned"
+    },
+    {
+      "start": 65.92,
+      "duration": 6.16,
+      "text": "about our people and to provide"
+    },
+    {
+      "start": 69.2,
+      "duration": 5.84,
+      "text": "some proof of our work which is what we"
+    },
+    {
+      "start": 72.08,
+      "duration": 2.96,
+      "text": "all want right"
+    },
+    {
+      "start": 75.68,
+      "duration": 5.2,
+      "text": "so just to review layered citations is a"
+    },
+    {
+      "start": 78.56,
+      "duration": 4.32,
+      "text": "term coined by elizabeth shown mills"
+    },
+    {
+      "start": 80.88,
+      "duration": 4.16,
+      "text": "and it describes digital sources that"
+    },
+    {
+      "start": 82.88,
+      "duration": 3.279,
+      "text": "contain digital images of original"
+    },
+    {
+      "start": 85.04,
+      "duration": 3.6,
+      "text": "records"
+    },
+    {
+      "start": 86.159,
+      "duration": 4.401,
+      "text": "and the reason i like to use this term"
+    },
+    {
+      "start": 88.64,
+      "duration": 3.2,
+      "text": "layered citations is i think it helps us"
+    },
+    {
+      "start": 90.56,
+      "duration": 3.36,
+      "text": "to understand"
+    },
+    {
+      "start": 91.84,
+      "duration": 3.76,
+      "text": "easier how to create these these types"
+    },
+    {
+      "start": 93.92,
+      "duration": 3.76,
+      "text": "of citations"
+    },
+    {
+      "start": 95.6,
+      "duration": 3.76,
+      "text": "because we use so many online sources"
+    },
+    {
+      "start": 97.68,
+      "duration": 4.0,
+      "text": "it's critical that we understand"
+    },
+    {
+      "start": 99.36,
+      "duration": 3.68,
+      "text": "how to to create a citation that's clear"
+    },
+    {
+      "start": 101.68,
+      "duration": 3.28,
+      "text": "and consistent"
+    },
+    {
+      "start": 103.04,
+      "duration": 4.719,
+      "text": "and can help us get back to the record"
+    },
+    {
+      "start": 104.96,
+      "duration": 5.04,
+      "text": "as well as anyone else"
+    },
+    {
+      "start": 107.759,
+      "duration": 3.921,
+      "text": "let's get to it let's talk about"
+    },
+    {
+      "start": 110.0,
+      "duration": 5.6,
+      "text": "creating a source citation"
+    },
+    {
+      "start": 111.68,
+      "duration": 6.799,
+      "text": "how is this done the first thing to"
+    },
+    {
+      "start": 115.6,
+      "duration": 3.839,
+      "text": "understand is that we need to understand"
+    },
+    {
+      "start": 118.479,
+      "duration": 2.32,
+      "text": "the source"
+    },
+    {
+      "start": 119.439,
+      "duration": 3.521,
+      "text": "we have got to know what we're looking"
+    },
+    {
+      "start": 120.799,
+      "duration": 3.761,
+      "text": "at if we're going to have"
+    },
+    {
+      "start": 122.96,
+      "duration": 3.439,
+      "text": "any kind of a hope of creating a good"
+    },
+    {
+      "start": 124.56,
+      "duration": 4.96,
+      "text": "source citation for it"
+    },
+    {
+      "start": 126.399,
+      "duration": 5.84,
+      "text": "so in the part one of this series"
+    },
+    {
+      "start": 129.52,
+      "duration": 4.96,
+      "text": "we talked a little bit about this world"
+    },
+    {
+      "start": 132.239,
+      "duration": 4.881,
+      "text": "war one draft registration card"
+    },
+    {
+      "start": 134.48,
+      "duration": 5.2,
+      "text": "which is found on ancestry.com this is"
+    },
+    {
+      "start": 137.12,
+      "duration": 5.6,
+      "text": "for my great grandfather doc harris"
+    },
+    {
+      "start": 139.68,
+      "duration": 5.199,
+      "text": "and we can of course look through the"
+    },
+    {
+      "start": 142.72,
+      "duration": 4.56,
+      "text": "card read all the information"
+    },
+    {
+      "start": 144.879,
+      "duration": 3.921,
+      "text": "and really try to understand what the"
+    },
+    {
+      "start": 147.28,
+      "duration": 3.599,
+      "text": "source is telling us"
+    },
+    {
+      "start": 148.8,
+      "duration": 3.519,
+      "text": "but we also need to understand where the"
+    },
+    {
+      "start": 150.879,
+      "duration": 3.36,
+      "text": "source came from"
+    },
+    {
+      "start": 152.319,
+      "duration": 3.841,
+      "text": "and the only way we can do that is by"
+    },
+    {
+      "start": 154.239,
+      "duration": 3.36,
+      "text": "clicking around on the website"
+    },
+    {
+      "start": 156.16,
+      "duration": 3.2,
+      "text": "now one of the things to note on"
+    },
+    {
+      "start": 157.599,
+      "duration": 4.961,
+      "text": "ancestry is if you look"
+    },
+    {
+      "start": 159.36,
+      "duration": 4.48,
+      "text": "right above the image we see the name of"
+    },
+    {
+      "start": 162.56,
+      "duration": 3.44,
+      "text": "the collection right there"
+    },
+    {
+      "start": 163.84,
+      "duration": 3.44,
+      "text": "u.s world war one draft registration"
+    },
+    {
+      "start": 166.0,
+      "duration": 5.12,
+      "text": "cards for"
+    },
+    {
+      "start": 167.28,
+      "duration": 6.64,
+      "text": "keras and we get some information about"
+    },
+    {
+      "start": 171.12,
+      "duration": 4.8,
+      "text": "the place so this can be good"
+    },
+    {
+      "start": 173.92,
+      "duration": 3.2,
+      "text": "information that you can use in creating"
+    },
+    {
+      "start": 175.92,
+      "duration": 2.8,
+      "text": "your citation"
+    },
+    {
+      "start": 177.12,
+      "duration": 4.64,
+      "text": "that's a little tip that i have for you"
+    },
+    {
+      "start": 178.72,
+      "duration": 6.32,
+      "text": "for ancestry is to use that information"
+    },
+    {
+      "start": 181.76,
+      "duration": 4.8,
+      "text": "located above the image and maybe move"
+    },
+    {
+      "start": 185.04,
+      "duration": 5.119,
+      "text": "that around a little bit but it will"
+    },
+    {
+      "start": 186.56,
+      "duration": 6.64,
+      "text": "give you some of the good basic details"
+    },
+    {
+      "start": 190.159,
+      "duration": 5.201,
+      "text": "now to understand the source make sure"
+    },
+    {
+      "start": 193.2,
+      "duration": 5.039,
+      "text": "you look at all the provided details"
+    },
+    {
+      "start": 195.36,
+      "duration": 3.36,
+      "text": "and we went through this in some detail"
+    },
+    {
+      "start": 198.239,
+      "duration": 3.041,
+      "text": "in"
+    },
+    {
+      "start": 198.72,
+      "duration": 4.0,
+      "text": "part one of this series but notice just"
+    },
+    {
+      "start": 201.28,
+      "duration": 3.28,
+      "text": "for review that the source"
+    },
+    {
+      "start": 202.72,
+      "duration": 4.239,
+      "text": "citation the information and the"
+    },
+    {
+      "start": 204.56,
+      "duration": 4.959,
+      "text": "original data all contain"
+    },
+    {
+      "start": 206.959,
+      "duration": 3.84,
+      "text": "some good information but none of it is"
+    },
+    {
+      "start": 209.519,
+      "duration": 4.0,
+      "text": "complete enough"
+    },
+    {
+      "start": 210.799,
+      "duration": 4.961,
+      "text": "for a good source citation so we're"
+    },
+    {
+      "start": 213.519,
+      "duration": 5.201,
+      "text": "going to want to do a little bit more"
+    },
+    {
+      "start": 215.76,
+      "duration": 3.759,
+      "text": "with this information now that we"
+    },
+    {
+      "start": 218.72,
+      "duration": 3.519,
+      "text": "understand"
+    },
+    {
+      "start": 219.519,
+      "duration": 4.321,
+      "text": "that this source came from the national"
+    },
+    {
+      "start": 222.239,
+      "duration": 4.481,
+      "text": "archives"
+    },
+    {
+      "start": 223.84,
+      "duration": 3.84,
+      "text": "and the ancestors created a collection"
+    },
+    {
+      "start": 226.72,
+      "duration": 2.96,
+      "text": "for it"
+    },
+    {
+      "start": 227.68,
+      "duration": 3.279,
+      "text": "and that it came originally from"
+    },
+    {
+      "start": 229.68,
+      "duration": 4.8,
+      "text": "oklahoma and"
+    },
+    {
+      "start": 230.959,
+      "duration": 6.56,
+      "text": "love county so so many moving pieces"
+    },
+    {
+      "start": 234.48,
+      "duration": 3.039,
+      "text": "of this source"
+    },
+    {
+      "start": 238.159,
+      "duration": 3.36,
+      "text": "so to create our citation when we're"
+    },
+    {
+      "start": 240.08,
+      "duration": 4.879,
+      "text": "working with"
+    },
+    {
+      "start": 241.519,
+      "duration": 5.44,
+      "text": "a physical and a digital layer we"
+    },
+    {
+      "start": 244.959,
+      "duration": 3.601,
+      "text": "can separate those out and it can be"
+    },
+    {
+      "start": 246.959,
+      "duration": 4.801,
+      "text": "helpful to show that"
+    },
+    {
+      "start": 248.56,
+      "duration": 5.36,
+      "text": "so in the next few examples i have the"
+    },
+    {
+      "start": 251.76,
+      "duration": 5.199,
+      "text": "digital layer in the physical layer"
+    },
+    {
+      "start": 253.92,
+      "duration": 5.68,
+      "text": "separated out and i'm going to show you"
+    },
+    {
+      "start": 256.959,
+      "duration": 3.441,
+      "text": "the five questions and how i answered"
+    },
+    {
+      "start": 259.6,
+      "duration": 3.2,
+      "text": "them"
+    },
+    {
+      "start": 260.4,
+      "duration": 3.84,
+      "text": "for each one of these layers and explain"
+    },
+    {
+      "start": 262.8,
+      "duration": 2.64,
+      "text": "my reasoning"
+    },
+    {
+      "start": 264.24,
+      "duration": 3.28,
+      "text": "and i want you to remember as we're"
+    },
+    {
+      "start": 265.44,
+      "duration": 4.72,
+      "text": "going through this that"
+    },
+    {
+      "start": 267.52,
+      "duration": 4.16,
+      "text": "citation is an art not a science quoted"
+    },
+    {
+      "start": 270.16,
+      "duration": 3.12,
+      "text": "from elizabeth shonen mills"
+    },
+    {
+      "start": 271.68,
+      "duration": 3.12,
+      "text": "and you may choose to do this a little"
+    },
+    {
+      "start": 273.28,
+      "duration": 3.52,
+      "text": "differently i'm just showing you a"
+    },
+    {
+      "start": 274.8,
+      "duration": 3.2,
+      "text": "method that i have used and that works"
+    },
+    {
+      "start": 276.8,
+      "duration": 4.04,
+      "text": "well for me"
+    },
+    {
+      "start": 278.0,
+      "duration": 4.639,
+      "text": "and maybe it will work well for you as"
+    },
+    {
+      "start": 280.84,
+      "duration": 4.919,
+      "text": "well"
+    },
+    {
+      "start": 282.639,
+      "duration": 5.601,
+      "text": "here are those five questions we want to"
+    },
+    {
+      "start": 285.759,
+      "duration": 4.961,
+      "text": "create our citation by answering these"
+    },
+    {
+      "start": 288.24,
+      "duration": 5.28,
+      "text": "now this seems simple enough right"
+    },
+    {
+      "start": 290.72,
+      "duration": 3.84,
+      "text": "answering the who what where is when and"
+    },
+    {
+      "start": 293.52,
+      "duration": 3.36,
+      "text": "where in"
+    },
+    {
+      "start": 294.56,
+      "duration": 3.68,
+      "text": "but when it comes to layered citations"
+    },
+    {
+      "start": 296.88,
+      "duration": 4.4,
+      "text": "do we answer the who"
+    },
+    {
+      "start": 298.24,
+      "duration": 4.16,
+      "text": "for both layers what is the when for"
+    },
+    {
+      "start": 301.28,
+      "duration": 3.6,
+      "text": "both layers"
+    },
+    {
+      "start": 302.4,
+      "duration": 4.16,
+      "text": "so it makes it even more complicated"
+    },
+    {
+      "start": 304.88,
+      "duration": 3.92,
+      "text": "when we are using"
+    },
+    {
+      "start": 306.56,
+      "duration": 4.56,
+      "text": "different layers for a citation so we're"
+    },
+    {
+      "start": 308.8,
+      "duration": 5.44,
+      "text": "going to look at some"
+    },
+    {
+      "start": 311.12,
+      "duration": 3.919,
+      "text": "thoughts on this let's start our"
+    },
+    {
+      "start": 314.24,
+      "duration": 2.799,
+      "text": "discussion"
+    },
+    {
+      "start": 315.039,
+      "duration": 4.88,
+      "text": "about answering the five questions with"
+    },
+    {
+      "start": 317.039,
+      "duration": 5.361,
+      "text": "the question of who created the source"
+    },
+    {
+      "start": 319.919,
+      "duration": 3.681,
+      "text": "this is the author of the source or the"
+    },
+    {
+      "start": 322.4,
+      "duration": 3.359,
+      "text": "creator"
+    },
+    {
+      "start": 323.6,
+      "duration": 3.76,
+      "text": "so this is often a religious or a"
+    },
+    {
+      "start": 325.759,
+      "duration": 2.0,
+      "text": "government entity when we're talking"
+    },
+    {
+      "start": 327.36,
+      "duration": 3.76,
+      "text": "about"
+    },
+    {
+      "start": 327.759,
+      "duration": 5.761,
+      "text": "genealogy type records"
+    },
+    {
+      "start": 331.12,
+      "duration": 4.16,
+      "text": "in this example of the world war one"
+    },
+    {
+      "start": 333.52,
+      "duration": 5.04,
+      "text": "draft registration card"
+    },
+    {
+      "start": 335.28,
+      "duration": 6.56,
+      "text": "the who is shown in bright red"
+    },
+    {
+      "start": 338.56,
+      "duration": 4.4,
+      "text": "and because the first layer is the"
+    },
+    {
+      "start": 341.84,
+      "duration": 3.76,
+      "text": "digital layer"
+    },
+    {
+      "start": 342.96,
+      "duration": 3.04,
+      "text": "ancestry was the creator of the digital"
+    },
+    {
+      "start": 345.6,
+      "duration": 3.52,
+      "text": "layer"
+    },
+    {
+      "start": 346.0,
+      "duration": 5.12,
+      "text": "ancestry put together this collection"
+    },
+    {
+      "start": 349.12,
+      "duration": 3.12,
+      "text": "of world war one draft registration"
+    },
+    {
+      "start": 351.12,
+      "duration": 4.32,
+      "text": "cards"
+    },
+    {
+      "start": 352.24,
+      "duration": 4.32,
+      "text": "now the national archives put together a"
+    },
+    {
+      "start": 355.44,
+      "duration": 4.479,
+      "text": "physical layer"
+    },
+    {
+      "start": 356.56,
+      "duration": 5.759,
+      "text": "in the microfilm publication and so"
+    },
+    {
+      "start": 359.919,
+      "duration": 3.84,
+      "text": "i have the digital layer first i have"
+    },
+    {
+      "start": 362.319,
+      "duration": 3.041,
+      "text": "the physical layer"
+    },
+    {
+      "start": 363.759,
+      "duration": 3.121,
+      "text": "second if we wanted to go to the"
+    },
+    {
+      "start": 365.36,
+      "duration": 3.76,
+      "text": "national archives"
+    },
+    {
+      "start": 366.88,
+      "duration": 3.2,
+      "text": "we could see this original microfilm"
+    },
+    {
+      "start": 369.12,
+      "duration": 4.48,
+      "text": "that was"
+    },
+    {
+      "start": 370.08,
+      "duration": 6.88,
+      "text": "made of these individual"
+    },
+    {
+      "start": 373.6,
+      "duration": 3.36,
+      "text": "draft registration cards"
+    },
+    {
+      "start": 377.36,
+      "duration": 6.8,
+      "text": "now let's talk about the what the what"
+    },
+    {
+      "start": 380.4,
+      "duration": 6.88,
+      "text": "is if it's a published work it would be"
+    },
+    {
+      "start": 384.16,
+      "duration": 4.08,
+      "text": "the title of the book the article the"
+    },
+    {
+      "start": 387.28,
+      "duration": 3.039,
+      "text": "journal"
+    },
+    {
+      "start": 388.24,
+      "duration": 3.679,
+      "text": "it could be a website if it's"
+    },
+    {
+      "start": 390.319,
+      "duration": 3.6,
+      "text": "unpublished it could be a personal"
+    },
+    {
+      "start": 391.919,
+      "duration": 4.641,
+      "text": "history or an interview a collection of"
+    },
+    {
+      "start": 393.919,
+      "duration": 4.641,
+      "text": "loose papers a birth registration book"
+    },
+    {
+      "start": 396.56,
+      "duration": 4.479,
+      "text": "so many different things that could be"
+    },
+    {
+      "start": 398.56,
+      "duration": 2.479,
+      "text": "the what"
+    },
+    {
+      "start": 401.84,
+      "duration": 7.44,
+      "text": "in our example here the what is"
+    },
+    {
+      "start": 406.16,
+      "duration": 4.24,
+      "text": "in brown the what is the title of the"
+    },
+    {
+      "start": 409.28,
+      "duration": 3.359,
+      "text": "collection"
+    },
+    {
+      "start": 410.4,
+      "duration": 5.359,
+      "text": "this is the u.s world war one draft"
+    },
+    {
+      "start": 412.639,
+      "duration": 3.12,
+      "text": "registration cards"
+    },
+    {
+      "start": 415.8,
+      "duration": 4.92,
+      "text": "1917-1918"
+    },
+    {
+      "start": 417.36,
+      "duration": 4.16,
+      "text": "and then i've also added the information"
+    },
+    {
+      "start": 420.72,
+      "duration": 3.84,
+      "text": "that it's the"
+    },
+    {
+      "start": 421.52,
+      "duration": 5.04,
+      "text": "entry for dot keras so"
+    },
+    {
+      "start": 424.56,
+      "duration": 3.68,
+      "text": "this is an important piece of the what"
+    },
+    {
+      "start": 426.56,
+      "duration": 4.88,
+      "text": "that is often missing"
+    },
+    {
+      "start": 428.24,
+      "duration": 5.6,
+      "text": "in citations that are very generic"
+    },
+    {
+      "start": 431.44,
+      "duration": 3.84,
+      "text": "on some of the websites because they"
+    },
+    {
+      "start": 433.84,
+      "duration": 4.88,
+      "text": "obviously can't go in"
+    },
+    {
+      "start": 435.28,
+      "duration": 4.8,
+      "text": "and create a nice citation for each"
+    },
+    {
+      "start": 438.72,
+      "duration": 3.199,
+      "text": "individual record"
+    },
+    {
+      "start": 440.08,
+      "duration": 3.04,
+      "text": "often they'll use a generic one for an"
+    },
+    {
+      "start": 441.919,
+      "duration": 3.68,
+      "text": "entire collection"
+    },
+    {
+      "start": 443.12,
+      "duration": 4.96,
+      "text": "and so it's up to us as researchers to"
+    },
+    {
+      "start": 445.599,
+      "duration": 3.841,
+      "text": "go in and add the extra details about"
+    },
+    {
+      "start": 448.08,
+      "duration": 4.559,
+      "text": "the what"
+    },
+    {
+      "start": 449.44,
+      "duration": 6.64,
+      "text": "now how about that physical layer"
+    },
+    {
+      "start": 452.639,
+      "duration": 6.801,
+      "text": "of the national archives microfilm well"
+    },
+    {
+      "start": 456.08,
+      "duration": 5.119,
+      "text": "we don't need to duplicate information"
+    },
+    {
+      "start": 459.44,
+      "duration": 3.68,
+      "text": "so we wouldn't need to put again that"
+    },
+    {
+      "start": 461.199,
+      "duration": 3.521,
+      "text": "this was an entry for dot keras"
+    },
+    {
+      "start": 463.12,
+      "duration": 4.799,
+      "text": "and that it was the draft registration"
+    },
+    {
+      "start": 464.72,
+      "duration": 5.12,
+      "text": "cards we simply just need to cite"
+    },
+    {
+      "start": 467.919,
+      "duration": 4.081,
+      "text": "the information shown there and i'll"
+    },
+    {
+      "start": 469.84,
+      "duration": 3.759,
+      "text": "i'll explain what that is in a minute"
+    },
+    {
+      "start": 472.0,
+      "duration": 3.68,
+      "text": "but think about that that when we're"
+    },
+    {
+      "start": 473.599,
+      "duration": 4.88,
+      "text": "doing a letter citation we don't"
+    },
+    {
+      "start": 475.68,
+      "duration": 4.48,
+      "text": "have to duplicate any of the information"
+    },
+    {
+      "start": 478.479,
+      "duration": 4.16,
+      "text": "because sometimes"
+    },
+    {
+      "start": 480.16,
+      "duration": 3.52,
+      "text": "one place is fine in this case the"
+    },
+    {
+      "start": 482.639,
+      "duration": 4.24,
+      "text": "digital"
+    },
+    {
+      "start": 483.68,
+      "duration": 6.88,
+      "text": "layer shown first explains completely"
+    },
+    {
+      "start": 486.879,
+      "duration": 3.681,
+      "text": "the what is the source"
+    },
+    {
+      "start": 490.879,
+      "duration": 3.921,
+      "text": "now to answer the question of when we"
+    },
+    {
+      "start": 493.12,
+      "duration": 3.359,
+      "text": "have to look at when the source was"
+    },
+    {
+      "start": 494.8,
+      "duration": 4.799,
+      "text": "created or when the event"
+    },
+    {
+      "start": 496.479,
+      "duration": 5.521,
+      "text": "happened and sometimes we use both"
+    },
+    {
+      "start": 499.599,
+      "duration": 3.521,
+      "text": "if we are using a published source like"
+    },
+    {
+      "start": 502.0,
+      "duration": 3.599,
+      "text": "a book"
+    },
+    {
+      "start": 503.12,
+      "duration": 4.4,
+      "text": "we just put the year of publication if"
+    },
+    {
+      "start": 505.599,
+      "duration": 2.88,
+      "text": "it's a journal or a magazine we can add"
+    },
+    {
+      "start": 507.52,
+      "duration": 4.639,
+      "text": "the month"
+    },
+    {
+      "start": 508.479,
+      "duration": 6.961,
+      "text": "or the season if we are looking at"
+    },
+    {
+      "start": 512.159,
+      "duration": 5.281,
+      "text": "a website we can add the access date"
+    },
+    {
+      "start": 515.44,
+      "duration": 4.0,
+      "text": "and we always want to add the date that"
+    },
+    {
+      "start": 517.44,
+      "duration": 5.36,
+      "text": "we looked at that website"
+    },
+    {
+      "start": 519.44,
+      "duration": 5.04,
+      "text": "urls can change and knowing the date"
+    },
+    {
+      "start": 522.8,
+      "duration": 3.12,
+      "text": "that we looked at it could help us"
+    },
+    {
+      "start": 524.48,
+      "duration": 3.2,
+      "text": "if we're going to use the wayback"
+    },
+    {
+      "start": 525.92,
+      "duration": 2.96,
+      "text": "machine on internet archive to find that"
+    },
+    {
+      "start": 527.68,
+      "duration": 3.839,
+      "text": "record again"
+    },
+    {
+      "start": 528.88,
+      "duration": 4.959,
+      "text": "it can also help us to know if we have"
+    },
+    {
+      "start": 531.519,
+      "duration": 3.361,
+      "text": "searched that website lately or that"
+    },
+    {
+      "start": 533.839,
+      "duration": 3.281,
+      "text": "collection"
+    },
+    {
+      "start": 534.88,
+      "duration": 4.48,
+      "text": "lately because perhaps new records have"
+    },
+    {
+      "start": 537.12,
+      "duration": 5.839,
+      "text": "been added since we last looked"
+    },
+    {
+      "start": 539.36,
+      "duration": 4.32,
+      "text": "at the date then if it's an unpublished"
+    },
+    {
+      "start": 542.959,
+      "duration": 3.121,
+      "text": "source"
+    },
+    {
+      "start": 543.68,
+      "duration": 3.44,
+      "text": "we can use the date it was created or"
+    },
+    {
+      "start": 546.08,
+      "duration": 3.759,
+      "text": "the date of the event"
+    },
+    {
+      "start": 547.12,
+      "duration": 4.719,
+      "text": "reports or both so these are all"
+    },
+    {
+      "start": 549.839,
+      "duration": 4.081,
+      "text": "scenarios that we will run across as"
+    },
+    {
+      "start": 551.839,
+      "duration": 3.921,
+      "text": "we're doing our layered citations"
+    },
+    {
+      "start": 553.92,
+      "duration": 4.64,
+      "text": "as more and more people upload"
+    },
+    {
+      "start": 555.76,
+      "duration": 4.8,
+      "text": "information we could have an interview"
+    },
+    {
+      "start": 558.56,
+      "duration": 3.76,
+      "text": "uploaded to a website that we'll want to"
+    },
+    {
+      "start": 560.56,
+      "duration": 3.76,
+      "text": "use and it would be unpublished and"
+    },
+    {
+      "start": 562.32,
+      "duration": 5.12,
+      "text": "we'll have to figure out a way"
+    },
+    {
+      "start": 564.32,
+      "duration": 5.44,
+      "text": "to cite that and if we can at"
+    },
+    {
+      "start": 567.44,
+      "duration": 3.6,
+      "text": "all figure out a date on any of those it"
+    },
+    {
+      "start": 569.76,
+      "duration": 7.199,
+      "text": "will help us to answer"
+    },
+    {
+      "start": 571.04,
+      "duration": 8.16,
+      "text": "the question of when"
+    },
+    {
+      "start": 576.959,
+      "duration": 4.801,
+      "text": "when we want to answer when the source"
+    },
+    {
+      "start": 579.2,
+      "duration": 5.44,
+      "text": "was created or when did the event happen"
+    },
+    {
+      "start": 581.76,
+      "duration": 3.84,
+      "text": "with our example we have two dates that"
+    },
+    {
+      "start": 584.64,
+      "duration": 3.52,
+      "text": "we can"
+    },
+    {
+      "start": 585.6,
+      "duration": 3.52,
+      "text": "put into our citation first we can put"
+    },
+    {
+      "start": 588.16,
+      "duration": 3.92,
+      "text": "the date"
+    },
+    {
+      "start": 589.12,
+      "duration": 4.56,
+      "text": "for the actual record and this draft"
+    },
+    {
+      "start": 592.08,
+      "duration": 5.759,
+      "text": "registration card"
+    },
+    {
+      "start": 593.68,
+      "duration": 6.0,
+      "text": "was dated 1917 and then the date that i"
+    },
+    {
+      "start": 597.839,
+      "duration": 5.521,
+      "text": "looked at it on ancestry"
+    },
+    {
+      "start": 599.68,
+      "duration": 5.76,
+      "text": "was december 21st 2020 and so both of"
+    },
+    {
+      "start": 603.36,
+      "duration": 4.88,
+      "text": "those dates give me information"
+    },
+    {
+      "start": 605.44,
+      "duration": 4.959,
+      "text": "i get information about when this card"
+    },
+    {
+      "start": 608.24,
+      "duration": 5.52,
+      "text": "the source was recorded and when i"
+    },
+    {
+      "start": 610.399,
+      "duration": 3.361,
+      "text": "actually accessed it"
+    },
+    {
+      "start": 616.32,
+      "duration": 4.0,
+      "text": "when we talk about where is a source"
+    },
+    {
+      "start": 619.12,
+      "duration": 2.56,
+      "text": "located"
+    },
+    {
+      "start": 620.32,
+      "duration": 3.759,
+      "text": "we're talking about a place of"
+    },
+    {
+      "start": 621.68,
+      "duration": 5.839,
+      "text": "publication if it's published"
+    },
+    {
+      "start": 624.079,
+      "duration": 6.32,
+      "text": "if it's a website that place is"
+    },
+    {
+      "start": 627.519,
+      "duration": 4.0,
+      "text": "a url that's where we can actually"
+    },
+    {
+      "start": 630.399,
+      "duration": 3.521,
+      "text": "locate it"
+    },
+    {
+      "start": 631.519,
+      "duration": 3.521,
+      "text": "if it's an unpublished source this is"
+    },
+    {
+      "start": 633.92,
+      "duration": 4.4,
+      "text": "where the source can be"
+    },
+    {
+      "start": 635.04,
+      "duration": 4.64,
+      "text": "viewed and an example of this would be a"
+    },
+    {
+      "start": 638.32,
+      "duration": 4.4,
+      "text": "personal letter"
+    },
+    {
+      "start": 639.68,
+      "duration": 4.32,
+      "text": "that only you have and physically it is"
+    },
+    {
+      "start": 642.72,
+      "duration": 3.04,
+      "text": "in your files"
+    },
+    {
+      "start": 644.0,
+      "duration": 3.2,
+      "text": "but perhaps you've uploaded that to"
+    },
+    {
+      "start": 645.76,
+      "duration": 4.48,
+      "text": "family search or"
+    },
+    {
+      "start": 647.2,
+      "duration": 3.6,
+      "text": "to ancestry and someone else is using"
+    },
+    {
+      "start": 650.24,
+      "duration": 2.88,
+      "text": "that"
+    },
+    {
+      "start": 650.8,
+      "duration": 3.039,
+      "text": "in their research report so they'll be"
+    },
+    {
+      "start": 653.12,
+      "duration": 3.2,
+      "text": "creating"
+    },
+    {
+      "start": 653.839,
+      "duration": 3.761,
+      "text": "a layered citation with both the"
+    },
+    {
+      "start": 656.32,
+      "duration": 5.04,
+      "text": "physical"
+    },
+    {
+      "start": 657.6,
+      "duration": 6.239,
+      "text": "location in your files and the digital"
+    },
+    {
+      "start": 661.36,
+      "duration": 5.28,
+      "text": "location where they looked at it on an"
+    },
+    {
+      "start": 663.839,
+      "duration": 2.801,
+      "text": "online tree"
+    },
+    {
+      "start": 667.04,
+      "duration": 4.64,
+      "text": "in our example the where is the source"
+    },
+    {
+      "start": 670.48,
+      "duration": 4.56,
+      "text": "located"
+    },
+    {
+      "start": 671.68,
+      "duration": 7.2,
+      "text": "is answered in the digital layer"
+    },
+    {
+      "start": 675.04,
+      "duration": 6.239,
+      "text": "with the url of ancestry and notice that"
+    },
+    {
+      "start": 678.88,
+      "duration": 4.8,
+      "text": "in this example i have just the basic"
+    },
+    {
+      "start": 681.279,
+      "duration": 5.521,
+      "text": "url of ancestry.com"
+    },
+    {
+      "start": 683.68,
+      "duration": 4.88,
+      "text": "i haven't put the specific url pointing"
+    },
+    {
+      "start": 686.8,
+      "duration": 4.4,
+      "text": "directly to this record"
+    },
+    {
+      "start": 688.56,
+      "duration": 4.719,
+      "text": "the reason is is this is a record that"
+    },
+    {
+      "start": 691.2,
+      "duration": 3.12,
+      "text": "is easily located by going to that"
+    },
+    {
+      "start": 693.279,
+      "duration": 3.761,
+      "text": "collection"
+    },
+    {
+      "start": 694.32,
+      "duration": 4.48,
+      "text": "it's indexed i could simply put in the"
+    },
+    {
+      "start": 697.04,
+      "duration": 3.6,
+      "text": "name of doc harris"
+    },
+    {
+      "start": 698.8,
+      "duration": 3.84,
+      "text": "and i could find it again really quickly"
+    },
+    {
+      "start": 700.64,
+      "duration": 4.48,
+      "text": "as could anyone else"
+    },
+    {
+      "start": 702.64,
+      "duration": 5.28,
+      "text": "now let's think about another scenario"
+    },
+    {
+      "start": 705.12,
+      "duration": 5.2,
+      "text": "where perhaps you have found a source"
+    },
+    {
+      "start": 707.92,
+      "duration": 3.68,
+      "text": "on a website and you don't know if that"
+    },
+    {
+      "start": 710.32,
+      "duration": 3.28,
+      "text": "website will be around"
+    },
+    {
+      "start": 711.6,
+      "duration": 3.12,
+      "text": "very long or if they will maybe"
+    },
+    {
+      "start": 713.6,
+      "duration": 2.72,
+      "text": "rearrange"
+    },
+    {
+      "start": 714.72,
+      "duration": 3.84,
+      "text": "their records and in that case you might"
+    },
+    {
+      "start": 716.32,
+      "duration": 4.0,
+      "text": "want to have the complete url"
+    },
+    {
+      "start": 718.56,
+      "duration": 4.079,
+      "text": "which as i mentioned before you could"
+    },
+    {
+      "start": 720.32,
+      "duration": 3.12,
+      "text": "use on the internet archive wayback"
+    },
+    {
+      "start": 722.639,
+      "duration": 2.721,
+      "text": "machine"
+    },
+    {
+      "start": 723.44,
+      "duration": 4.48,
+      "text": "you'd put in the complete url and the"
+    },
+    {
+      "start": 725.36,
+      "duration": 5.76,
+      "text": "date and you would be able to"
+    },
+    {
+      "start": 727.92,
+      "duration": 5.359,
+      "text": "go back and find that actual website and"
+    },
+    {
+      "start": 731.12,
+      "duration": 4.64,
+      "text": "that web page as it was created"
+    },
+    {
+      "start": 733.279,
+      "duration": 4.641,
+      "text": "or as the wayback machine took a picture"
+    },
+    {
+      "start": 735.76,
+      "duration": 4.16,
+      "text": "of it on that date"
+    },
+    {
+      "start": 737.92,
+      "duration": 3.52,
+      "text": "and so you have to be judicious in"
+    },
+    {
+      "start": 739.92,
+      "duration": 4.24,
+      "text": "thinking about what you want to do for"
+    },
+    {
+      "start": 741.44,
+      "duration": 4.0,
+      "text": "the url if you want to use just the"
+    },
+    {
+      "start": 744.16,
+      "duration": 2.72,
+      "text": "website url"
+    },
+    {
+      "start": 745.44,
+      "duration": 3.92,
+      "text": "and then have enough pieces of"
+    },
+    {
+      "start": 746.88,
+      "duration": 4.56,
+      "text": "information that someone could get"
+    },
+    {
+      "start": 749.36,
+      "duration": 4.8,
+      "text": "back to it easily or if perhaps you need"
+    },
+    {
+      "start": 751.44,
+      "duration": 4.0,
+      "text": "to also do a more complete url"
+    },
+    {
+      "start": 754.16,
+      "duration": 3.2,
+      "text": "just something to think about and"
+    },
+    {
+      "start": 755.44,
+      "duration": 4.48,
+      "text": "there's no right or wrong answer"
+    },
+    {
+      "start": 757.36,
+      "duration": 4.159,
+      "text": "answer again this is an art not a"
+    },
+    {
+      "start": 759.92,
+      "duration": 3.2,
+      "text": "science and it's up to us to use our"
+    },
+    {
+      "start": 761.519,
+      "duration": 2.641,
+      "text": "brains to think about what would work"
+    },
+    {
+      "start": 763.12,
+      "duration": 3.2,
+      "text": "best"
+    },
+    {
+      "start": 764.16,
+      "duration": 4.16,
+      "text": "now notice in the physical layer that we"
+    },
+    {
+      "start": 766.32,
+      "duration": 3.519,
+      "text": "have national archives is where the"
+    },
+    {
+      "start": 768.32,
+      "duration": 4.079,
+      "text": "source is located"
+    },
+    {
+      "start": 769.839,
+      "duration": 3.921,
+      "text": "and if we wanted to go to washington dc"
+    },
+    {
+      "start": 772.399,
+      "duration": 3.761,
+      "text": "and look at this"
+    },
+    {
+      "start": 773.76,
+      "duration": 4.56,
+      "text": "original microfilm it would be at the"
+    },
+    {
+      "start": 776.16,
+      "duration": 2.72,
+      "text": "national archives so that answers the"
+    },
+    {
+      "start": 778.32,
+      "duration": 3.44,
+      "text": "question"
+    },
+    {
+      "start": 778.88,
+      "duration": 2.88,
+      "text": "of where"
+    },
+    {
+      "start": 782.639,
+      "duration": 6.32,
+      "text": "now when we're thinking about where in"
+    },
+    {
+      "start": 785.76,
+      "duration": 4.639,
+      "text": "the book film magazine database etc is"
+    },
+    {
+      "start": 788.959,
+      "duration": 3.041,
+      "text": "the source located"
+    },
+    {
+      "start": 790.399,
+      "duration": 3.601,
+      "text": "then we're thinking about really"
+    },
+    {
+      "start": 792.0,
+      "duration": 3.92,
+      "text": "specific details"
+    },
+    {
+      "start": 794.0,
+      "duration": 3.76,
+      "text": "for instance if this is a book a"
+    },
+    {
+      "start": 795.92,
+      "duration": 3.039,
+      "text": "published source then we want the page"
+    },
+    {
+      "start": 797.76,
+      "duration": 4.56,
+      "text": "number of the book"
+    },
+    {
+      "start": 798.959,
+      "duration": 5.841,
+      "text": "that that piece of information came from"
+    },
+    {
+      "start": 802.32,
+      "duration": 4.24,
+      "text": "or maybe we won't need the volume number"
+    },
+    {
+      "start": 804.8,
+      "duration": 4.159,
+      "text": "if it's an online database"
+    },
+    {
+      "start": 806.56,
+      "duration": 4.8,
+      "text": "and we have been browsing microfilm"
+    },
+    {
+      "start": 808.959,
+      "duration": 4.88,
+      "text": "perhaps we need to have an image number"
+    },
+    {
+      "start": 811.36,
+      "duration": 3.279,
+      "text": "or maybe we need waypoints maybe we need"
+    },
+    {
+      "start": 813.839,
+      "duration": 4.24,
+      "text": "something"
+    },
+    {
+      "start": 814.639,
+      "duration": 6.481,
+      "text": "helping us to go deeper into the film"
+    },
+    {
+      "start": 818.079,
+      "duration": 6.241,
+      "text": "or the website till we get to the actual"
+    },
+    {
+      "start": 821.12,
+      "duration": 4.159,
+      "text": "place the source we are looking at is"
+    },
+    {
+      "start": 824.32,
+      "duration": 3.04,
+      "text": "located"
+    },
+    {
+      "start": 825.279,
+      "duration": 3.36,
+      "text": "so we have to think about how we would"
+    },
+    {
+      "start": 827.36,
+      "duration": 3.279,
+      "text": "guide someone"
+    },
+    {
+      "start": 828.639,
+      "duration": 3.281,
+      "text": "who is trying to get to that place we"
+    },
+    {
+      "start": 830.639,
+      "duration": 4.081,
+      "text": "are looking at"
+    },
+    {
+      "start": 831.92,
+      "duration": 3.68,
+      "text": "through our source citation wherein can"
+    },
+    {
+      "start": 834.72,
+      "duration": 4.0,
+      "text": "also be"
+    },
+    {
+      "start": 835.6,
+      "duration": 4.88,
+      "text": "something like a government certificate"
+    },
+    {
+      "start": 838.72,
+      "duration": 4.239,
+      "text": "a document number for a government"
+    },
+    {
+      "start": 840.48,
+      "duration": 5.44,
+      "text": "certificate especially if we are"
+    },
+    {
+      "start": 842.959,
+      "duration": 3.921,
+      "text": "using a website and that's how things"
+    },
+    {
+      "start": 845.92,
+      "duration": 3.44,
+      "text": "are organized"
+    },
+    {
+      "start": 846.88,
+      "duration": 3.28,
+      "text": "is by document number something that can"
+    },
+    {
+      "start": 849.36,
+      "duration": 3.12,
+      "text": "really help"
+    },
+    {
+      "start": 850.16,
+      "duration": 3.919,
+      "text": "when we're thinking about the where in"
+    },
+    {
+      "start": 852.48,
+      "duration": 3.84,
+      "text": "is how"
+    },
+    {
+      "start": 854.079,
+      "duration": 3.681,
+      "text": "that database is organized is it"
+    },
+    {
+      "start": 856.32,
+      "duration": 4.16,
+      "text": "organized alphabetically"
+    },
+    {
+      "start": 857.76,
+      "duration": 3.6,
+      "text": "is it by date is it by location is it by"
+    },
+    {
+      "start": 860.48,
+      "duration": 3.599,
+      "text": "number"
+    },
+    {
+      "start": 861.36,
+      "duration": 3.68,
+      "text": "and by thinking about how it is actually"
+    },
+    {
+      "start": 864.079,
+      "duration": 3.601,
+      "text": "organized"
+    },
+    {
+      "start": 865.04,
+      "duration": 3.76,
+      "text": "that will help us to figure out the type"
+    },
+    {
+      "start": 867.68,
+      "duration": 4.56,
+      "text": "of information"
+    },
+    {
+      "start": 868.8,
+      "duration": 6.96,
+      "text": "to answer the where in question"
+    },
+    {
+      "start": 872.24,
+      "duration": 7.279,
+      "text": "so in our example what do we have"
+    },
+    {
+      "start": 875.76,
+      "duration": 7.36,
+      "text": "well i've put some waypoints there"
+    },
+    {
+      "start": 879.519,
+      "duration": 4.721,
+      "text": "and if i were browsing this collection"
+    },
+    {
+      "start": 883.12,
+      "duration": 3.279,
+      "text": "on ancestry"
+    },
+    {
+      "start": 884.24,
+      "duration": 3.599,
+      "text": "i could start with the basic collection"
+    },
+    {
+      "start": 886.399,
+      "duration": 4.24,
+      "text": "then i could go to oklahoma"
+    },
+    {
+      "start": 887.839,
+      "duration": 5.12,
+      "text": "then to love county and then to the h's"
+    },
+    {
+      "start": 890.639,
+      "duration": 4.64,
+      "text": "to find this entry for doc harris"
+    },
+    {
+      "start": 892.959,
+      "duration": 3.841,
+      "text": "and so you'll see there in green the"
+    },
+    {
+      "start": 895.279,
+      "duration": 5.201,
+      "text": "specifics about where"
+    },
+    {
+      "start": 896.8,
+      "duration": 7.2,
+      "text": "in this is and"
+    },
+    {
+      "start": 900.48,
+      "duration": 5.599,
+      "text": "down in the physical layer"
+    },
+    {
+      "start": 904.0,
+      "duration": 4.48,
+      "text": "you'll see that we have a specific"
+    },
+    {
+      "start": 906.079,
+      "duration": 5.281,
+      "text": "publication number"
+    },
+    {
+      "start": 908.48,
+      "duration": 3.52,
+      "text": "for m1509 which is the record group at"
+    },
+    {
+      "start": 911.36,
+      "duration": 4.4,
+      "text": "the national"
+    },
+    {
+      "start": 912.0,
+      "duration": 6.32,
+      "text": "archives so at the national archives"
+    },
+    {
+      "start": 915.76,
+      "duration": 3.6,
+      "text": "if i were to visit there physically"
+    },
+    {
+      "start": 918.32,
+      "duration": 3.68,
+      "text": "there could be"
+    },
+    {
+      "start": 919.36,
+      "duration": 4.88,
+      "text": "perhaps some additional physical"
+    },
+    {
+      "start": 922.0,
+      "duration": 4.399,
+      "text": "information i could put for the wherein"
+    },
+    {
+      "start": 924.24,
+      "duration": 4.0,
+      "text": "but in this case the only information i"
+    },
+    {
+      "start": 926.399,
+      "duration": 5.041,
+      "text": "have provided by ancestry"
+    },
+    {
+      "start": 928.24,
+      "duration": 5.12,
+      "text": "is the record group and so we do the"
+    },
+    {
+      "start": 931.44,
+      "duration": 3.44,
+      "text": "best with what we have when we try to"
+    },
+    {
+      "start": 933.36,
+      "duration": 4.64,
+      "text": "include enough information"
+    },
+    {
+      "start": 934.88,
+      "duration": 4.8,
+      "text": "in the citation in either the physical"
+    },
+    {
+      "start": 938.0,
+      "duration": 2.88,
+      "text": "or the digital layer that we can"
+    },
+    {
+      "start": 939.68,
+      "duration": 4.719,
+      "text": "relocate"
+    },
+    {
+      "start": 940.88,
+      "duration": 7.28,
+      "text": "that source so you'll notice that"
+    },
+    {
+      "start": 944.399,
+      "duration": 4.481,
+      "text": "i did not repeat oklahoma and love"
+    },
+    {
+      "start": 948.16,
+      "duration": 3.679,
+      "text": "county"
+    },
+    {
+      "start": 948.88,
+      "duration": 3.84,
+      "text": "in the physical layer for the national"
+    },
+    {
+      "start": 951.839,
+      "duration": 2.641,
+      "text": "archives"
+    },
+    {
+      "start": 952.72,
+      "duration": 3.52,
+      "text": "again there's no need to be repetitive"
+    },
+    {
+      "start": 954.48,
+      "duration": 3.68,
+      "text": "if we've got the basic information"
+    },
+    {
+      "start": 956.24,
+      "duration": 5.44,
+      "text": "in one of the layers then we don't need"
+    },
+    {
+      "start": 958.16,
+      "duration": 3.52,
+      "text": "to add it to the other layer"
+    },
+    {
+      "start": 962.0,
+      "duration": 5.6,
+      "text": "let's stop and think about punctuation"
+    },
+    {
+      "start": 965.519,
+      "duration": 3.361,
+      "text": "punctuation is really important in our"
+    },
+    {
+      "start": 967.6,
+      "duration": 3.2,
+      "text": "citations"
+    },
+    {
+      "start": 968.88,
+      "duration": 3.68,
+      "text": "and you may get confused you may think"
+    },
+    {
+      "start": 970.8,
+      "duration": 3.52,
+      "text": "why do i need to bother this is just one"
+    },
+    {
+      "start": 972.56,
+      "duration": 3.76,
+      "text": "step i don't want to worry about"
+    },
+    {
+      "start": 974.32,
+      "duration": 3.36,
+      "text": "but it's really pretty simple and once"
+    },
+    {
+      "start": 976.32,
+      "duration": 4.079,
+      "text": "you get used to it"
+    },
+    {
+      "start": 977.68,
+      "duration": 3.92,
+      "text": "you get the hang of it and it becomes"
+    },
+    {
+      "start": 980.399,
+      "duration": 2.641,
+      "text": "second nature"
+    },
+    {
+      "start": 981.6,
+      "duration": 3.919,
+      "text": "so let's just go through these and i'm"
+    },
+    {
+      "start": 983.04,
+      "duration": 5.76,
+      "text": "going to show you our citation with"
+    },
+    {
+      "start": 985.519,
+      "duration": 4.0,
+      "text": "out punctuation and width quotation"
+    },
+    {
+      "start": 988.8,
+      "duration": 4.32,
+      "text": "marks"
+    },
+    {
+      "start": 989.519,
+      "duration": 5.76,
+      "text": "these are around a collection title so"
+    },
+    {
+      "start": 993.12,
+      "duration": 4.639,
+      "text": "many of the websites use collection"
+    },
+    {
+      "start": 995.279,
+      "duration": 4.961,
+      "text": "titles so it's simple"
+    },
+    {
+      "start": 997.759,
+      "duration": 4.721,
+      "text": "put quotation marks around it think of"
+    },
+    {
+      "start": 1000.24,
+      "duration": 3.36,
+      "text": "it as a chapter title in a book which is"
+    },
+    {
+      "start": 1002.48,
+      "duration": 3.12,
+      "text": "something else that we would put"
+    },
+    {
+      "start": 1003.6,
+      "duration": 4.239,
+      "text": "quotation marks around"
+    },
+    {
+      "start": 1005.6,
+      "duration": 3.599,
+      "text": "so think of the entire website as a book"
+    },
+    {
+      "start": 1007.839,
+      "duration": 3.281,
+      "text": "it's a publication"
+    },
+    {
+      "start": 1009.199,
+      "duration": 3.841,
+      "text": "and then think of the quote the"
+    },
+    {
+      "start": 1011.12,
+      "duration": 4.399,
+      "text": "collections within the website"
+    },
+    {
+      "start": 1013.04,
+      "duration": 3.84,
+      "text": "as chapter titles and quotation marks go"
+    },
+    {
+      "start": 1015.519,
+      "duration": 4.481,
+      "text": "around them"
+    },
+    {
+      "start": 1016.88,
+      "duration": 6.0,
+      "text": "now parentheses the style"
+    },
+    {
+      "start": 1020.0,
+      "duration": 4.319,
+      "text": "guides have publication information"
+    },
+    {
+      "start": 1022.88,
+      "duration": 4.0,
+      "text": "within parentheses"
+    },
+    {
+      "start": 1024.319,
+      "duration": 4.64,
+      "text": "and so if you think about it the website"
+    },
+    {
+      "start": 1026.88,
+      "duration": 3.28,
+      "text": "is a publication and so that's why we"
+    },
+    {
+      "start": 1028.959,
+      "duration": 3.441,
+      "text": "put the url"
+    },
+    {
+      "start": 1030.16,
+      "duration": 4.24,
+      "text": "and the access date within parentheses"
+    },
+    {
+      "start": 1032.4,
+      "duration": 4.799,
+      "text": "because it's the publication"
+    },
+    {
+      "start": 1034.4,
+      "duration": 5.12,
+      "text": "if we were citing a book we put the"
+    },
+    {
+      "start": 1037.199,
+      "duration": 3.441,
+      "text": "publisher and the date a publication in"
+    },
+    {
+      "start": 1039.52,
+      "duration": 4.72,
+      "text": "place of publication"
+    },
+    {
+      "start": 1040.64,
+      "duration": 5.279,
+      "text": "also within parentheses semicolons are"
+    },
+    {
+      "start": 1044.24,
+      "duration": 3.679,
+      "text": "an important thing to remember with"
+    },
+    {
+      "start": 1045.919,
+      "duration": 4.241,
+      "text": "alert citation because it separates the"
+    },
+    {
+      "start": 1047.919,
+      "duration": 4.961,
+      "text": "layers of the citation"
+    },
+    {
+      "start": 1050.16,
+      "duration": 5.519,
+      "text": "the colon the two little dots separates"
+    },
+    {
+      "start": 1052.88,
+      "duration": 6.08,
+      "text": "parts of the publication information"
+    },
+    {
+      "start": 1055.679,
+      "duration": 4.161,
+      "text": "a comma separates each part within the"
+    },
+    {
+      "start": 1058.96,
+      "duration": 2.8,
+      "text": "layer"
+    },
+    {
+      "start": 1059.84,
+      "duration": 3.199,
+      "text": "and then we put a period at the very end"
+    },
+    {
+      "start": 1061.76,
+      "duration": 5.84,
+      "text": "which signals the"
+    },
+    {
+      "start": 1063.039,
+      "duration": 6.961,
+      "text": "end of our great citation"
+    },
+    {
+      "start": 1067.6,
+      "duration": 4.48,
+      "text": "all right without punctuation here is"
+    },
+    {
+      "start": 1070.0,
+      "duration": 3.6,
+      "text": "the citation that i drafted"
+    },
+    {
+      "start": 1072.08,
+      "duration": 3.76,
+      "text": "for that world war one draft"
+    },
+    {
+      "start": 1073.6,
+      "duration": 3.6,
+      "text": "registration registration card"
+    },
+    {
+      "start": 1075.84,
+      "duration": 3.44,
+      "text": "now you'll notice as you're just"
+    },
+    {
+      "start": 1077.2,
+      "duration": 3.76,
+      "text": "glancing through this you really have no"
+    },
+    {
+      "start": 1079.28,
+      "duration": 4.16,
+      "text": "idea what the collection is because"
+    },
+    {
+      "start": 1080.96,
+      "duration": 4.4,
+      "text": "there's no quotation marks around it"
+    },
+    {
+      "start": 1083.44,
+      "duration": 3.76,
+      "text": "you're not really sure about publication"
+    },
+    {
+      "start": 1085.36,
+      "duration": 4.8,
+      "text": "there's no parentheses"
+    },
+    {
+      "start": 1087.2,
+      "duration": 3.599,
+      "text": "there's no semicolon signaling an online"
+    },
+    {
+      "start": 1090.16,
+      "duration": 2.96,
+      "text": "layer"
+    },
+    {
+      "start": 1090.799,
+      "duration": 3.441,
+      "text": "or signaling the digital or physical"
+    },
+    {
+      "start": 1093.12,
+      "duration": 4.0,
+      "text": "layer"
+    },
+    {
+      "start": 1094.24,
+      "duration": 4.72,
+      "text": "there's really a lot of problems it's"
+    },
+    {
+      "start": 1097.12,
+      "duration": 4.96,
+      "text": "like reading a paragraph or a sentence"
+    },
+    {
+      "start": 1098.96,
+      "duration": 5.68,
+      "text": "without any punctuation"
+    },
+    {
+      "start": 1102.08,
+      "duration": 4.64,
+      "text": "now let's look at width punctuation and"
+    },
+    {
+      "start": 1104.64,
+      "duration": 3.6,
+      "text": "i put those in blue and bolded them so"
+    },
+    {
+      "start": 1106.72,
+      "duration": 4.079,
+      "text": "you can see clearly"
+    },
+    {
+      "start": 1108.24,
+      "duration": 3.28,
+      "text": "just like how much better that is now we"
+    },
+    {
+      "start": 1110.799,
+      "duration": 4.321,
+      "text": "have got"
+    },
+    {
+      "start": 1111.52,
+      "duration": 6.64,
+      "text": "the online collection clearly denoted in"
+    },
+    {
+      "start": 1115.12,
+      "duration": 3.52,
+      "text": "the quotation marks and we have the"
+    },
+    {
+      "start": 1118.16,
+      "duration": 2.639,
+      "text": "comma"
+    },
+    {
+      "start": 1118.64,
+      "duration": 3.039,
+      "text": "inside the quotation marks per our style"
+    },
+    {
+      "start": 1120.799,
+      "duration": 3.521,
+      "text": "guide"
+    },
+    {
+      "start": 1121.679,
+      "duration": 4.321,
+      "text": "and then we have the little sideways"
+    },
+    {
+      "start": 1124.32,
+      "duration": 4.64,
+      "text": "carrot"
+    },
+    {
+      "start": 1126.0,
+      "duration": 5.28,
+      "text": "showing basically waypoints or you know"
+    },
+    {
+      "start": 1128.96,
+      "duration": 5.68,
+      "text": "drilling down into a collection"
+    },
+    {
+      "start": 1131.28,
+      "duration": 6.16,
+      "text": "we have got the publication of"
+    },
+    {
+      "start": 1134.64,
+      "duration": 4.399,
+      "text": "the with the url and access date within"
+    },
+    {
+      "start": 1137.44,
+      "duration": 2.88,
+      "text": "parentheses and then there's that"
+    },
+    {
+      "start": 1139.039,
+      "duration": 3.52,
+      "text": "semicolon"
+    },
+    {
+      "start": 1140.32,
+      "duration": 3.44,
+      "text": "which signals that we are now going to"
+    },
+    {
+      "start": 1142.559,
+      "duration": 3.041,
+      "text": "the physical layer"
+    },
+    {
+      "start": 1143.76,
+      "duration": 3.279,
+      "text": "we've completed the digital layer now we"
+    },
+    {
+      "start": 1145.6,
+      "duration": 3.92,
+      "text": "have the physical there"
+    },
+    {
+      "start": 1147.039,
+      "duration": 3.601,
+      "text": "and then we have the period which shows"
+    },
+    {
+      "start": 1149.52,
+      "duration": 4.64,
+      "text": "that we're done"
+    },
+    {
+      "start": 1150.64,
+      "duration": 5.68,
+      "text": "this is the end of our citation"
+    },
+    {
+      "start": 1154.16,
+      "duration": 4.08,
+      "text": "so we've gone through quite a few things"
+    },
+    {
+      "start": 1156.32,
+      "duration": 3.92,
+      "text": "here let's just review"
+    },
+    {
+      "start": 1158.24,
+      "duration": 3.439,
+      "text": "steps to citing a source we need to"
+    },
+    {
+      "start": 1160.24,
+      "duration": 3.36,
+      "text": "understand the source"
+    },
+    {
+      "start": 1161.679,
+      "duration": 3.681,
+      "text": "then we create the citation by answering"
+    },
+    {
+      "start": 1163.6,
+      "duration": 5.439,
+      "text": "the five questions the who what"
+    },
+    {
+      "start": 1165.36,
+      "duration": 3.679,
+      "text": "when where in and where is"
+    },
+    {
+      "start": 1169.52,
+      "duration": 3.92,
+      "text": "as you are creating your citations"
+    },
+    {
+      "start": 1171.6,
+      "duration": 5.68,
+      "text": "remember citation is an"
+    },
+    {
+      "start": 1173.44,
+      "duration": 4.56,
+      "text": "art not a science in part three of this"
+    },
+    {
+      "start": 1177.28,
+      "duration": 3.12,
+      "text": "series"
+    },
+    {
+      "start": 1178.0,
+      "duration": 3.44,
+      "text": "of creating layered citations we're"
+    },
+    {
+      "start": 1180.4,
+      "duration": 3.2,
+      "text": "going to look at"
+    },
+    {
+      "start": 1181.44,
+      "duration": 3.52,
+      "text": "two different examples from family"
+    },
+    {
+      "start": 1183.6,
+      "duration": 4.0,
+      "text": "search one for"
+    },
+    {
+      "start": 1184.96,
+      "duration": 3.599,
+      "text": "a record index on family search and one"
+    },
+    {
+      "start": 1187.6,
+      "duration": 4.079,
+      "text": "for a record that"
+    },
+    {
+      "start": 1188.559,
+      "duration": 3.601,
+      "text": "is not indexed or browse only and these"
+    },
+    {
+      "start": 1191.679,
+      "duration": 2.0,
+      "text": "are two"
+    },
+    {
+      "start": 1192.16,
+      "duration": 3.6,
+      "text": "quite different examples than the one"
+    },
+    {
+      "start": 1193.679,
+      "duration": 4.321,
+      "text": "we've looked at here on ancestry so"
+    },
+    {
+      "start": 1195.76,
+      "duration": 5.44,
+      "text": "i invite you to join me in part three of"
+    },
+    {
+      "start": 1198.0,
+      "duration": 5.6,
+      "text": "this year of this series"
+    },
+    {
+      "start": 1201.2,
+      "duration": 4.959,
+      "text": "thank you so much for watching to learn"
+    },
+    {
+      "start": 1203.6,
+      "duration": 4.8,
+      "text": "more about what i teach and what i do"
+    },
+    {
+      "start": 1206.159,
+      "duration": 4.321,
+      "text": "please visit familylocket.com and we"
+    },
+    {
+      "start": 1208.4,
+      "duration": 4.639,
+      "text": "have a special roots type page"
+    },
+    {
+      "start": 1210.48,
+      "duration": 4.559,
+      "text": "with some templates for you information"
+    },
+    {
+      "start": 1213.039,
+      "duration": 5.281,
+      "text": "about our podcast our newsletter"
+    },
+    {
+      "start": 1215.039,
+      "duration": 3.281,
+      "text": "our book and our courses"
+    },
+    {
+      "start": 1219.52,
+      "duration": 5.68,
+      "text": "please watch other great content"
+    },
+    {
+      "start": 1222.559,
+      "duration": 6.201,
+      "text": "on rootstech connect thank you again for"
+    },
+    {
+      "start": 1225.2,
+      "duration": 6.56,
+      "text": "watching and i hope to see you in part"
+    },
+    {
+      "start": 1228.76,
+      "duration": 3.0,
+      "text": "three"
+    }
+  ],
+  "full_text": "welcome to peeling back the layers citing sources from online materials part two my name is diana elder i'm an accredited genealogist and you can find more about me on the familylocket.com of this video as well as the thoughts views and opinions expressed herein belongs solely to the creator and do not necessarily reflect the views of family search international and roots tech as i mentioned in part one of this series source citations falls in the genealogy research process as a critical part and as we have created an objective for our research project and we've analyzed our sources learned about the location we've created a research plan and we're finally to the research stage and we have our research log open and we are looking at our sources we want to make sure that we are creating those source citations the first time we look at the sources so when we come to writing our conclusions or sharing our research we have a source citation to back up everything that we've learned about our people and to provide some proof of our work which is what we all want right so just to review layered citations is a term coined by elizabeth shown mills and it describes digital sources that contain digital images of original records and the reason i like to use this term layered citations is i think it helps us to understand easier how to create these these types of citations because we use so many online sources it's critical that we understand how to to create a citation that's clear and consistent and can help us get back to the record as well as anyone else let's get to it let's talk about creating a source citation how is this done the first thing to understand is that we need to understand the source we have got to know what we're looking at if we're going to have any kind of a hope of creating a good source citation for it so in the part one of this series we talked a little bit about this world war one draft registration card which is found on ancestry.com this is for my great grandfather doc harris and we can of course look through the card read all the information and really try to understand what the source is telling us but we also need to understand where the source came from and the only way we can do that is by clicking around on the website now one of the things to note on ancestry is if you look right above the image we see the name of the collection right there u.s world war one draft registration cards for keras and we get some information about the place so this can be good information that you can use in creating your citation that's a little tip that i have for you for ancestry is to use that information located above the image and maybe move that around a little bit but it will give you some of the good basic details now to understand the source make sure you look at all the provided details and we went through this in some detail in part one of this series but notice just for review that the source citation the information and the original data all contain some good information but none of it is complete enough for a good source citation so we're going to want to do a little bit more with this information now that we understand that this source came from the national archives and the ancestors created a collection for it and that it came originally from oklahoma and love county so so many moving pieces of this source so to create our citation when we're working with a physical and a digital layer we can separate those out and it can be helpful to show that so in the next few examples i have the digital layer in the physical layer separated out and i'm going to show you the five questions and how i answered them for each one of these layers and explain my reasoning and i want you to remember as we're going through this that citation is an art not a science quoted from elizabeth shonen mills and you may choose to do this a little differently i'm just showing you a method that i have used and that works well for me and maybe it will work well for you as well here are those five questions we want to create our citation by answering these now this seems simple enough right answering the who what where is when and where in but when it comes to layered citations do we answer the who for both layers what is the when for both layers so it makes it even more complicated when we are using different layers for a citation so we're going to look at some thoughts on this let's start our discussion about answering the five questions with the question of who created the source this is the author of the source or the creator so this is often a religious or a government entity when we're talking about genealogy type records in this example of the world war one draft registration card the who is shown in bright red and because the first layer is the digital layer ancestry was the creator of the digital layer ancestry put together this collection of world war one draft registration cards now the national archives put together a physical layer in the microfilm publication and so i have the digital layer first i have the physical layer second if we wanted to go to the national archives we could see this original microfilm that was made of these individual draft registration cards now let's talk about the what the what is if it's a published work it would be the title of the book the article the journal it could be a website if it's unpublished it could be a personal history or an interview a collection of loose papers a birth registration book so many different things that could be the what in our example here the what is in brown the what is the title of the collection this is the u.s world war one draft registration cards 1917-1918 and then i've also added the information that it's the entry for dot keras so this is an important piece of the what that is often missing in citations that are very generic on some of the websites because they obviously can't go in and create a nice citation for each individual record often they'll use a generic one for an entire collection and so it's up to us as researchers to go in and add the extra details about the what now how about that physical layer of the national archives microfilm well we don't need to duplicate information so we wouldn't need to put again that this was an entry for dot keras and that it was the draft registration cards we simply just need to cite the information shown there and i'll i'll explain what that is in a minute but think about that that when we're doing a letter citation we don't have to duplicate any of the information because sometimes one place is fine in this case the digital layer shown first explains completely the what is the source now to answer the question of when we have to look at when the source was created or when the event happened and sometimes we use both if we are using a published source like a book we just put the year of publication if it's a journal or a magazine we can add the month or the season if we are looking at a website we can add the access date and we always want to add the date that we looked at that website urls can change and knowing the date that we looked at it could help us if we're going to use the wayback machine on internet archive to find that record again it can also help us to know if we have searched that website lately or that collection lately because perhaps new records have been added since we last looked at the date then if it's an unpublished source we can use the date it was created or the date of the event reports or both so these are all scenarios that we will run across as we're doing our layered citations as more and more people upload information we could have an interview uploaded to a website that we'll want to use and it would be unpublished and we'll have to figure out a way to cite that and if we can at all figure out a date on any of those it will help us to answer the question of when when we want to answer when the source was created or when did the event happen with our example we have two dates that we can put into our citation first we can put the date for the actual record and this draft registration card was dated 1917 and then the date that i looked at it on ancestry was december 21st 2020 and so both of those dates give me information i get information about when this card the source was recorded and when i actually accessed it when we talk about where is a source located we're talking about a place of publication if it's published if it's a website that place is a url that's where we can actually locate it if it's an unpublished source this is where the source can be viewed and an example of this would be a personal letter that only you have and physically it is in your files but perhaps you've uploaded that to family search or to ancestry and someone else is using that in their research report so they'll be creating a layered citation with both the physical location in your files and the digital location where they looked at it on an online tree in our example the where is the source located is answered in the digital layer with the url of ancestry and notice that in this example i have just the basic url of ancestry.com i haven't put the specific url pointing directly to this record the reason is is this is a record that is easily located by going to that collection it's indexed i could simply put in the name of doc harris and i could find it again really quickly as could anyone else now let's think about another scenario where perhaps you have found a source on a website and you don't know if that website will be around very long or if they will maybe rearrange their records and in that case you might want to have the complete url which as i mentioned before you could use on the internet archive wayback machine you'd put in the complete url and the date and you would be able to go back and find that actual website and that web page as it was created or as the wayback machine took a picture of it on that date and so you have to be judicious in thinking about what you want to do for the url if you want to use just the website url and then have enough pieces of information that someone could get back to it easily or if perhaps you need to also do a more complete url just something to think about and there's no right or wrong answer answer again this is an art not a science and it's up to us to use our brains to think about what would work best now notice in the physical layer that we have national archives is where the source is located and if we wanted to go to washington dc and look at this original microfilm it would be at the national archives so that answers the question of where now when we're thinking about where in the book film magazine database etc is the source located then we're thinking about really specific details for instance if this is a book a published source then we want the page number of the book that that piece of information came from or maybe we won't need the volume number if it's an online database and we have been browsing microfilm perhaps we need to have an image number or maybe we need waypoints maybe we need something helping us to go deeper into the film or the website till we get to the actual place the source we are looking at is located so we have to think about how we would guide someone who is trying to get to that place we are looking at through our source citation wherein can also be something like a government certificate a document number for a government certificate especially if we are using a website and that's how things are organized is by document number something that can really help when we're thinking about the where in is how that database is organized is it organized alphabetically is it by date is it by location is it by number and by thinking about how it is actually organized that will help us to figure out the type of information to answer the where in question so in our example what do we have well i've put some waypoints there and if i were browsing this collection on ancestry i could start with the basic collection then i could go to oklahoma then to love county and then to the h's to find this entry for doc harris and so you'll see there in green the specifics about where in this is and down in the physical layer you'll see that we have a specific publication number for m1509 which is the record group at the national archives so at the national archives if i were to visit there physically there could be perhaps some additional physical information i could put for the wherein but in this case the only information i have provided by ancestry is the record group and so we do the best with what we have when we try to include enough information in the citation in either the physical or the digital layer that we can relocate that source so you'll notice that i did not repeat oklahoma and love county in the physical layer for the national archives again there's no need to be repetitive if we've got the basic information in one of the layers then we don't need to add it to the other layer let's stop and think about punctuation punctuation is really important in our citations and you may get confused you may think why do i need to bother this is just one step i don't want to worry about but it's really pretty simple and once you get used to it you get the hang of it and it becomes second nature so let's just go through these and i'm going to show you our citation with out punctuation and width quotation marks these are around a collection title so many of the websites use collection titles so it's simple put quotation marks around it think of it as a chapter title in a book which is something else that we would put quotation marks around so think of the entire website as a book it's a publication and then think of the quote the collections within the website as chapter titles and quotation marks go around them now parentheses the style guides have publication information within parentheses and so if you think about it the website is a publication and so that's why we put the url and the access date within parentheses because it's the publication if we were citing a book we put the publisher and the date a publication in place of publication also within parentheses semicolons are an important thing to remember with alert citation because it separates the layers of the citation the colon the two little dots separates parts of the publication information a comma separates each part within the layer and then we put a period at the very end which signals the end of our great citation all right without punctuation here is the citation that i drafted for that world war one draft registration registration card now you'll notice as you're just glancing through this you really have no idea what the collection is because there's no quotation marks around it you're not really sure about publication there's no parentheses there's no semicolon signaling an online layer or signaling the digital or physical layer there's really a lot of problems it's like reading a paragraph or a sentence without any punctuation now let's look at width punctuation and i put those in blue and bolded them so you can see clearly just like how much better that is now we have got the online collection clearly denoted in the quotation marks and we have the comma inside the quotation marks per our style guide and then we have the little sideways carrot showing basically waypoints or you know drilling down into a collection we have got the publication of the with the url and access date within parentheses and then there's that semicolon which signals that we are now going to the physical layer we've completed the digital layer now we have the physical there and then we have the period which shows that we're done this is the end of our citation so we've gone through quite a few things here let's just review steps to citing a source we need to understand the source then we create the citation by answering the five questions the who what when where in and where is as you are creating your citations remember citation is an art not a science in part three of this series of creating layered citations we're going to look at two different examples from family search one for a record index on family search and one for a record that is not indexed or browse only and these are two quite different examples than the one we've looked at here on ancestry so i invite you to join me in part three of this year of this series thank you so much for watching to learn more about what i teach and what i do please visit familylocket.com and we have a special roots type page with some templates for you information about our podcast our newsletter our book and our courses please watch other great content on rootstech connect thank you again for watching and i hope to see you in part three",
+  "attempts": [
+    {
+      "client": "IOS",
+      "playability": {
+        "status": "OK",
+        "playableInEmbed": true,
+        "offlineability": {
+          "buttonRenderer": {
+            "navigationEndpoint": {
+              "clickTrackingParams": "CBEQ6ewBIhMIz7e0iOzblwMVvWJMCB1mcB6vygEETTEexw==",
+              "ypcGetOfflineUpsellEndpoint": {
+                "params": "ChPqqN25AQ0KC0t0cE4yV3M5UEE0IgtLdHBOMldzOVBBNCoVCAkYAVIPCgtLdHBOMldzOVBBNCAB"
+              }
+            },
+            "trackingParams": "CBEQ6ewBIhMIz7e0iOzblwMVvWJMCB1mcB6v"
+          }
+        },
+        "pictureInPicture": {
+          "pictureInPictureRenderer": {
+            "playableInPip": true,
+            "offByDefault": false,
+            "shouldResumeOnHead": false
+          }
+        },
+        "miniplayer": {
+          "miniplayerRenderer": {
+            "playbackMode": "PLAYBACK_MODE_ALLOW"
+          }
+        },
+        "contextParams": "Q0FFU0FnZ0M="
+      },
+      "outcome": "ok"
+    }
+  ],
+  "fetched_at": "2026-10-28T04:11:15.435169+00:00",
+  "client": "IOS",
+  "json_path": "transcripts/017_KtpN2Ws9PA4.json",
+  "text_path": "transcripts/017_KtpN2Ws9PA4.txt"
+}

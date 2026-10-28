@@ -1,0 +1,5469 @@
+{
+  "index": 163,
+  "url": "https://www.youtube.com/watch?v=GMTY78xqGXQ",
+  "video_id": "GMTY78xqGXQ",
+  "status": "ok",
+  "metadata": {
+    "title": "Neo4j Live: Entity Resolution and Deduplication with Neo4j and GenAI",
+    "author": "Neo4j",
+    "channelId": "UCvze3hU6OZBkB1vkhH2lH9Q",
+    "lengthSeconds": "3000",
+    "viewCount": "4033",
+    "shortDescription": "Starting with a knowledge graph constructed from unstructured data with the help of LLMs, we'll address the common challenge of duplicated entities resulting from variations in extracted names and identifiers.\n\nDiscover how Neo4j’s Node Similarity algorithms can be leveraged to identify and merge these entities, enhancing the accuracy and usability of your data.\n\nGuest: Johannes Jolkkonen @johannesjolkkonen \n\nGraphstuff.FM: https://graphstuff.fm/episodes/rag-databases-with-johannes-jolkkonen-when-to-choose-a-graph-database-vs-alternative-vector-or-relational-stores \nNode Similarity: https://neo4j.com/docs/graph-data-science/current/algorithms/node-similarity/\nfastRP: https://neo4j.com/docs/graph-data-science/current/machine-learning/node-embeddings/fastrp/\nEntity Resolution and Deduping: Best Practices From Neo4j's Field Team https://youtu.be/O9Qpz6dI9zg\n\n#neo4j #graphdatabase #entity #duplicate #genai #llm #knowledgegraph",
+    "keywords": [
+      "genai",
+      "GenerativeAI",
+      "LLMS",
+      "KNOWLEDGE GRAPHS",
+      "knowledgegraphs"
+    ]
+  },
+  "caption_tracks": [
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=GMTY78xqGXQ&ei=_HXhatq6LqKdsfIP3u3n4QI&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185900&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=65C02E0A6B728D5AC24BFF2C58E0BB256F638614.9484592ED5A12D4999C9915429BCDFE227F421C7&key=yt8&kind=asr&lang=en",
+      "name": {
+        "runs": [
+          {
+            "text": "English (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.en",
+      "languageCode": "en",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    }
+  ],
+  "selected_track": {
+    "baseUrl": "https://www.youtube.com/api/timedtext?v=GMTY78xqGXQ&ei=_HXhatq6LqKdsfIP3u3n4QI&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185900&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=65C02E0A6B728D5AC24BFF2C58E0BB256F638614.9484592ED5A12D4999C9915429BCDFE227F421C7&key=yt8&kind=asr&lang=en",
+    "name": {
+      "runs": [
+        {
+          "text": "English (auto-generated)"
+        }
+      ]
+    },
+    "vssId": "a.en",
+    "languageCode": "en",
+    "kind": "asr",
+    "isTranslatable": true,
+    "trackName": ""
+  },
+  "segments": [
+    {
+      "start": 0.08,
+      "duration": 4.52,
+      "text": "jump into a"
+    },
+    {
+      "start": 1.52,
+      "duration": 5.52,
+      "text": "little couple of slides"
+    },
+    {
+      "start": 4.6,
+      "duration": 5.4,
+      "text": "first uh some of this we touched already"
+    },
+    {
+      "start": 7.04,
+      "duration": 5.04,
+      "text": "in the intro chat but yeah we're going"
+    },
+    {
+      "start": 10.0,
+      "duration": 3.96,
+      "text": "to just talk briefly about What entity"
+    },
+    {
+      "start": 12.08,
+      "duration": 3.959,
+      "text": "resolution actually is what is the"
+    },
+    {
+      "start": 13.96,
+      "duration": 5.0,
+      "text": "problem and why is it"
+    },
+    {
+      "start": 16.039,
+      "duration": 5.041,
+      "text": "important a quick overview of some of"
+    },
+    {
+      "start": 18.96,
+      "duration": 4.6,
+      "text": "the methods that are available in neo4j"
+    },
+    {
+      "start": 21.08,
+      "duration": 4.56,
+      "text": "for solving the issue and then finally"
+    },
+    {
+      "start": 23.56,
+      "duration": 5.28,
+      "text": "the practical"
+    },
+    {
+      "start": 25.64,
+      "duration": 4.6,
+      "text": "application so entity resolution it's"
+    },
+    {
+      "start": 28.84,
+      "duration": 3.64,
+      "text": "determining whether or not two"
+    },
+    {
+      "start": 30.24,
+      "duration": 5.639,
+      "text": "representations of an entity actually"
+    },
+    {
+      "start": 32.48,
+      "duration": 6.0,
+      "text": "refer to the same entity so again as we"
+    },
+    {
+      "start": 35.879,
+      "duration": 6.2,
+      "text": "mentioned before if I was going to"
+    },
+    {
+      "start": 38.48,
+      "duration": 5.399,
+      "text": "extract some entities from some data"
+    },
+    {
+      "start": 42.079,
+      "duration": 3.881,
+      "text": "related to Amazon for example I might"
+    },
+    {
+      "start": 43.879,
+      "duration": 4.961,
+      "text": "end up with two nodes Amazon and"
+    },
+    {
+      "start": 45.96,
+      "duration": 6.239,
+      "text": "separately Amazon Inc"
+    },
+    {
+      "start": 48.84,
+      "duration": 6.0,
+      "text": "um but of course these these two should"
+    },
+    {
+      "start": 52.199,
+      "duration": 4.84,
+      "text": "be considered the same entity so we have"
+    },
+    {
+      "start": 54.84,
+      "duration": 4.399,
+      "text": "consistency in our graph and the all the"
+    },
+    {
+      "start": 57.039,
+      "duration": 5.721,
+      "text": "information related to Amazon is in the"
+    },
+    {
+      "start": 59.239,
+      "duration": 6.161,
+      "text": "same region in the same center of the"
+    },
+    {
+      "start": 62.76,
+      "duration": 4.08,
+      "text": "graph uh so it's that's that's the"
+    },
+    {
+      "start": 65.4,
+      "duration": 4.079,
+      "text": "problem a"
+    },
+    {
+      "start": 66.84,
+      "duration": 5.04,
+      "text": "nutshell um as I also said not a new"
+    },
+    {
+      "start": 69.479,
+      "duration": 4.441,
+      "text": "problem newly relevant because of the"
+    },
+    {
+      "start": 71.88,
+      "duration": 4.239,
+      "text": "possible applications of extracting"
+    },
+    {
+      "start": 73.92,
+      "duration": 5.559,
+      "text": "graphs with llms from unstructured or"
+    },
+    {
+      "start": 76.119,
+      "duration": 6.481,
+      "text": "semi-structured data and it's important"
+    },
+    {
+      "start": 79.479,
+      "duration": 4.921,
+      "text": "because yeah if you have your your"
+    },
+    {
+      "start": 82.6,
+      "duration": 4.04,
+      "text": "duplications of your entities and your"
+    },
+    {
+      "start": 84.4,
+      "duration": 5.0,
+      "text": "information scattered between those"
+    },
+    {
+      "start": 86.64,
+      "duration": 5.68,
+      "text": "entities it's going to definitely limit"
+    },
+    {
+      "start": 89.4,
+      "duration": 7.359,
+      "text": "the quality of insights or quality of"
+    },
+    {
+      "start": 92.32,
+      "duration": 4.439,
+      "text": "just the usability of your graph quite"
+    },
+    {
+      "start": 97.079,
+      "duration": 6.72,
+      "text": "obviously some methods uh starting at"
+    },
+    {
+      "start": 100.399,
+      "duration": 6.241,
+      "text": "the top uh the dream case wherever you"
+    },
+    {
+      "start": 103.799,
+      "duration": 5.761,
+      "text": "can apply it the simplest ways just"
+    },
+    {
+      "start": 106.64,
+      "duration": 5.36,
+      "text": "business rules uh in other words if you"
+    },
+    {
+      "start": 109.56,
+      "duration": 4.08,
+      "text": "have you can you can say that if we have"
+    },
+    {
+      "start": 112.0,
+      "duration": 3.119,
+      "text": "two user nodes with the same phone"
+    },
+    {
+      "start": 113.64,
+      "duration": 4.28,
+      "text": "number then we're going to consider them"
+    },
+    {
+      "start": 115.119,
+      "duration": 5.241,
+      "text": "the same user if we have notes of our"
+    },
+    {
+      "start": 117.92,
+      "duration": 3.6,
+      "text": "offices in different locations if they"
+    },
+    {
+      "start": 120.36,
+      "duration": 3.039,
+      "text": "have the same address we're going to"
+    },
+    {
+      "start": 121.52,
+      "duration": 6.04,
+      "text": "consider them the same same"
+    },
+    {
+      "start": 123.399,
+      "duration": 6.321,
+      "text": "office um beyond that we have semantic"
+    },
+    {
+      "start": 127.56,
+      "duration": 3.64,
+      "text": "similarity which is going to be very"
+    },
+    {
+      "start": 129.72,
+      "duration": 6.36,
+      "text": "familiar to anybody who's worked with"
+    },
+    {
+      "start": 131.2,
+      "duration": 7.8,
+      "text": "rag so just Vector embeddings of node"
+    },
+    {
+      "start": 136.08,
+      "duration": 5.239,
+      "text": "properties and then running semantic"
+    },
+    {
+      "start": 139.0,
+      "duration": 4.56,
+      "text": "similarity on those vectors so if we"
+    },
+    {
+      "start": 141.319,
+      "duration": 4.161,
+      "text": "have a node with a name company node"
+    },
+    {
+      "start": 143.56,
+      "duration": 4.039,
+      "text": "with a name Tesla in the industry of"
+    },
+    {
+      "start": 145.48,
+      "duration": 3.839,
+      "text": "autonomous vehicles that's going to be"
+    },
+    {
+      "start": 147.599,
+      "duration": 4.561,
+      "text": "similar as a another one with the"
+    },
+    {
+      "start": 149.319,
+      "duration": 5.64,
+      "text": "self-driving cars and Tesla"
+    },
+    {
+      "start": 152.16,
+      "duration": 5.079,
+      "text": "Inc and then the third one is more"
+    },
+    {
+      "start": 154.959,
+      "duration": 4.441,
+      "text": "specific to graphs and this going to be"
+    },
+    {
+      "start": 157.239,
+      "duration": 4.0,
+      "text": "structure based similarities so not just"
+    },
+    {
+      "start": 159.4,
+      "duration": 4.36,
+      "text": "the properties of the nodes but actually"
+    },
+    {
+      "start": 161.239,
+      "duration": 5.92,
+      "text": "the relationships of the of the nodes so"
+    },
+    {
+      "start": 163.76,
+      "duration": 6.16,
+      "text": "if we have shared relationships or the"
+    },
+    {
+      "start": 167.159,
+      "duration": 4.681,
+      "text": "same relationships uh between nodes then"
+    },
+    {
+      "start": 169.92,
+      "duration": 4.72,
+      "text": "we can also compute similarity based on"
+    },
+    {
+      "start": 171.84,
+      "duration": 5.44,
+      "text": "that so for Amazon example if there's a"
+    },
+    {
+      "start": 174.64,
+      "duration": 7.4,
+      "text": "relationship has headquarters in Seattle"
+    },
+    {
+      "start": 177.28,
+      "duration": 8.16,
+      "text": "or is a is a has a subsidiary"
+    },
+    {
+      "start": 182.04,
+      "duration": 5.04,
+      "text": "AWS was founded by Jeff Bezos and if"
+    },
+    {
+      "start": 185.44,
+      "duration": 4.159,
+      "text": "they share some of these relationships"
+    },
+    {
+      "start": 187.08,
+      "duration": 5.36,
+      "text": "then we can also leverage that in our"
+    },
+    {
+      "start": 189.599,
+      "duration": 2.841,
+      "text": "similarity"
+    },
+    {
+      "start": 192.68,
+      "duration": 7.52,
+      "text": "calculation cool and that's the"
+    },
+    {
+      "start": 196.72,
+      "duration": 3.48,
+      "text": "intro now the"
+    },
+    {
+      "start": 200.92,
+      "duration": 4.64,
+      "text": "demo so very first we're just going to"
+    },
+    {
+      "start": 203.239,
+      "duration": 6.64,
+      "text": "look at a very simple"
+    },
+    {
+      "start": 205.56,
+      "duration": 6.28,
+      "text": "graph and we're going to use this to"
+    },
+    {
+      "start": 209.879,
+      "duration": 4.681,
+      "text": "show these methods that I mentioned"
+    },
+    {
+      "start": 211.84,
+      "duration": 4.399,
+      "text": "mainly U structural similarity and"
+    },
+    {
+      "start": 214.56,
+      "duration": 4.879,
+      "text": "semantic similarity in"
+    },
+    {
+      "start": 216.239,
+      "duration": 6.161,
+      "text": "action see how they work how you can uh"
+    },
+    {
+      "start": 219.439,
+      "duration": 6.16,
+      "text": "use them in neop forj so for this graph"
+    },
+    {
+      "start": 222.4,
+      "duration": 5.839,
+      "text": "we just have some doctors contributing"
+    },
+    {
+      "start": 225.599,
+      "duration": 5.241,
+      "text": "to projects and working in a field or"
+    },
+    {
+      "start": 228.239,
+      "duration": 4.92,
+      "text": "Department of of"
+    },
+    {
+      "start": 230.84,
+      "duration": 4.2,
+      "text": "medicine and uh the very first thing we"
+    },
+    {
+      "start": 233.159,
+      "duration": 4.841,
+      "text": "want to do before we run any graph"
+    },
+    {
+      "start": 235.04,
+      "duration": 5.08,
+      "text": "algorithms is create a graph"
+    },
+    {
+      "start": 238.0,
+      "duration": 5.04,
+      "text": "projection and for those who aren't"
+    },
+    {
+      "start": 240.12,
+      "duration": 6.08,
+      "text": "familiar or are less familiar with with"
+    },
+    {
+      "start": 243.04,
+      "duration": 5.68,
+      "text": "gra Neo forj or the graph data science"
+    },
+    {
+      "start": 246.2,
+      "duration": 6.399,
+      "text": "Library uh graph projection is like a"
+    },
+    {
+      "start": 248.72,
+      "duration": 5.4,
+      "text": "saved temporary subsection of your graph"
+    },
+    {
+      "start": 252.599,
+      "duration": 3.841,
+      "text": "uh if you're familiar with relational"
+    },
+    {
+      "start": 254.12,
+      "duration": 4.88,
+      "text": "databases uh good analog is something"
+    },
+    {
+      "start": 256.44,
+      "duration": 4.68,
+      "text": "like a database view so you can yeah"
+    },
+    {
+      "start": 259.0,
+      "duration": 5.52,
+      "text": "save save a view of your database or"
+    },
+    {
+      "start": 261.12,
+      "duration": 5.76,
+      "text": "some section of your database and that's"
+    },
+    {
+      "start": 264.52,
+      "duration": 3.92,
+      "text": "useful because first of all you can"
+    },
+    {
+      "start": 266.88,
+      "duration": 3.36,
+      "text": "specify which nodes and which"
+    },
+    {
+      "start": 268.44,
+      "duration": 4.0,
+      "text": "relationships you want to include in the"
+    },
+    {
+      "start": 270.24,
+      "duration": 4.679,
+      "text": "projection so you can narrow the scope"
+    },
+    {
+      "start": 272.44,
+      "duration": 4.16,
+      "text": "for which you run the algorithm but also"
+    },
+    {
+      "start": 274.919,
+      "duration": 4.601,
+      "text": "more generally you need to Define even"
+    },
+    {
+      "start": 276.6,
+      "duration": 5.24,
+      "text": "if you want to include all of your graph"
+    },
+    {
+      "start": 279.52,
+      "duration": 4.239,
+      "text": "uh you need to you need to create the"
+    },
+    {
+      "start": 281.84,
+      "duration": 4.079,
+      "text": "projection first because you can only"
+    },
+    {
+      "start": 283.759,
+      "duration": 4.521,
+      "text": "run the algorithms on these"
+    },
+    {
+      "start": 285.919,
+      "duration": 5.72,
+      "text": "projections so we're going to do that"
+    },
+    {
+      "start": 288.28,
+      "duration": 5.56,
+      "text": "including all our nodes and all our"
+    },
+    {
+      "start": 291.639,
+      "duration": 5.201,
+      "text": "relationships we can also specify the"
+    },
+    {
+      "start": 293.84,
+      "duration": 6.079,
+      "text": "orientation of the relationships in our"
+    },
+    {
+      "start": 296.84,
+      "duration": 4.76,
+      "text": "projection uh so if it's undirected then"
+    },
+    {
+      "start": 299.919,
+      "duration": 4.481,
+      "text": "that means that the projection isn't"
+    },
+    {
+      "start": 301.6,
+      "duration": 4.879,
+      "text": "going to carry any uh information about"
+    },
+    {
+      "start": 304.4,
+      "duration": 4.76,
+      "text": "the directions of the"
+    },
+    {
+      "start": 306.479,
+      "duration": 4.241,
+      "text": "relationships uh it's just going to have"
+    },
+    {
+      "start": 309.16,
+      "duration": 4.759,
+      "text": "the information that there is a link"
+    },
+    {
+      "start": 310.72,
+      "duration": 5.24,
+      "text": "between these two nodes for example um"
+    },
+    {
+      "start": 313.919,
+      "duration": 3.801,
+      "text": "but if we change it to Natural then it's"
+    },
+    {
+      "start": 315.96,
+      "duration": 3.959,
+      "text": "going to preserve the original"
+    },
+    {
+      "start": 317.72,
+      "duration": 4.68,
+      "text": "directionality as"
+    },
+    {
+      "start": 319.919,
+      "duration": 4.521,
+      "text": "well but we here here we're just going"
+    },
+    {
+      "start": 322.4,
+      "duration": 5.88,
+      "text": "to set it as"
+    },
+    {
+      "start": 324.44,
+      "duration": 5.72,
+      "text": "undirected and create this"
+    },
+    {
+      "start": 328.28,
+      "duration": 5.4,
+      "text": "projection and with the projection"
+    },
+    {
+      "start": 330.16,
+      "duration": 5.72,
+      "text": "created we can now run this uh quite"
+    },
+    {
+      "start": 333.68,
+      "duration": 4.32,
+      "text": "simple node"
+    },
+    {
+      "start": 335.88,
+      "duration": 4.24,
+      "text": "similarity"
+    },
+    {
+      "start": 338.0,
+      "duration": 3.24,
+      "text": "algorithm which you can find the details"
+    },
+    {
+      "start": 340.12,
+      "duration": 3.359,
+      "text": "of in the"
+    },
+    {
+      "start": 341.24,
+      "duration": 4.2,
+      "text": "neo4j"
+    },
+    {
+      "start": 343.479,
+      "duration": 3.72,
+      "text": "documentation and these just computes"
+    },
+    {
+      "start": 345.44,
+      "duration": 4.039,
+      "text": "are similarity based on based on the"
+    },
+    {
+      "start": 347.199,
+      "duration": 3.921,
+      "text": "shared relationships um and shared"
+    },
+    {
+      "start": 349.479,
+      "duration": 3.881,
+      "text": "neighbors that the nodes have and"
+    },
+    {
+      "start": 351.12,
+      "duration": 5.88,
+      "text": "doesn't take into account anything"
+    },
+    {
+      "start": 353.36,
+      "duration": 3.64,
+      "text": "else so for our"
+    },
+    {
+      "start": 358.639,
+      "duration": 4.161,
+      "text": "example these are the scores we are"
+    },
+    {
+      "start": 360.68,
+      "duration": 4.079,
+      "text": "getting and just to put that in the"
+    },
+    {
+      "start": 362.8,
+      "duration": 4.6,
+      "text": "context of the graph"
+    },
+    {
+      "start": 364.759,
+      "duration": 5.56,
+      "text": "itself the highest score we are getting"
+    },
+    {
+      "start": 367.4,
+      "duration": 6.199,
+      "text": "for these two Dr Baker Dr"
+    },
+    {
+      "start": 370.319,
+      "duration": 5.401,
+      "text": "Clark and that's unsurprising because"
+    },
+    {
+      "start": 373.599,
+      "duration": 4.0,
+      "text": "they do share two of these relationships"
+    },
+    {
+      "start": 375.72,
+      "duration": 4.199,
+      "text": "they both work in oncology they both"
+    },
+    {
+      "start": 377.599,
+      "duration": 4.481,
+      "text": "contribute to this same"
+    },
+    {
+      "start": 379.919,
+      "duration": 5.481,
+      "text": "project now the reason the similarity"
+    },
+    {
+      "start": 382.08,
+      "duration": 5.679,
+      "text": "isn't perfectly one perfect similarity"
+    },
+    {
+      "start": 385.4,
+      "duration": 5.72,
+      "text": "is that Dr Baker also contributes to"
+    },
+    {
+      "start": 387.759,
+      "duration": 6.121,
+      "text": "this other project which is shared by by"
+    },
+    {
+      "start": 391.12,
+      "duration": 5.0,
+      "text": "Dr Clark here so that's just the basics"
+    },
+    {
+      "start": 393.88,
+      "duration": 5.64,
+      "text": "of node"
+    },
+    {
+      "start": 396.12,
+      "duration": 7.079,
+      "text": "similarity and uh for"
+    },
+    {
+      "start": 399.52,
+      "duration": 5.56,
+      "text": "the second one which is the node"
+    },
+    {
+      "start": 403.199,
+      "duration": 6.161,
+      "text": "embeddings for that we're actually going"
+    },
+    {
+      "start": 405.08,
+      "duration": 4.28,
+      "text": "to jump into vs"
+    },
+    {
+      "start": 411.28,
+      "duration": 5.12,
+      "text": "code and the reason for that is that we"
+    },
+    {
+      "start": 413.759,
+      "duration": 6.641,
+      "text": "are going to actually use open AIS out"
+    },
+    {
+      "start": 416.4,
+      "duration": 4.0,
+      "text": "two for the embeddings"
+    },
+    {
+      "start": 424.52,
+      "duration": 5.359,
+      "text": "and um you can you can run you can"
+    },
+    {
+      "start": 427.8,
+      "duration": 6.079,
+      "text": "create embeddings in Neo forj uh"
+    },
+    {
+      "start": 429.879,
+      "duration": 8.801,
+      "text": "natively as well there are some uh"
+    },
+    {
+      "start": 433.879,
+      "duration": 4.801,
+      "text": "embedding algorithms namely uh"
+    },
+    {
+      "start": 439.8,
+      "duration": 7.519,
+      "text": "fast fast what is it called Fast"
+    },
+    {
+      "start": 444.72,
+      "duration": 5.4,
+      "text": "RP yeah fast random"
+    },
+    {
+      "start": 447.319,
+      "duration": 6.081,
+      "text": "projection uh which allows you to"
+    },
+    {
+      "start": 450.12,
+      "duration": 5.079,
+      "text": "calculate a embedding based on you can"
+    },
+    {
+      "start": 453.4,
+      "duration": 3.12,
+      "text": "include relationships you can also"
+    },
+    {
+      "start": 455.199,
+      "duration": 3.881,
+      "text": "include"
+    },
+    {
+      "start": 456.52,
+      "duration": 5.119,
+      "text": "properties um so you that is definitely"
+    },
+    {
+      "start": 459.08,
+      "duration": 5.48,
+      "text": "an option uh in NE forj"
+    },
+    {
+      "start": 461.639,
+      "duration": 4.161,
+      "text": "native uh but for a few reasons one"
+    },
+    {
+      "start": 464.56,
+      "duration": 3.72,
+      "text": "being that I'm just personally more"
+    },
+    {
+      "start": 465.8,
+      "duration": 5.2,
+      "text": "comfortable with python but the second"
+    },
+    {
+      "start": 468.28,
+      "duration": 4.24,
+      "text": "reason is also that just to demonstrate"
+    },
+    {
+      "start": 471.0,
+      "duration": 4.199,
+      "text": "that you can actually also use any kind"
+    },
+    {
+      "start": 472.52,
+      "duration": 5.399,
+      "text": "of embedding model that you want with"
+    },
+    {
+      "start": 475.199,
+      "duration": 4.881,
+      "text": "neo4j and as you'll see in a moment I"
+    },
+    {
+      "start": 477.919,
+      "duration": 4.521,
+      "text": "think it entity resolution is actually a"
+    },
+    {
+      "start": 480.08,
+      "duration": 4.559,
+      "text": "case where it might might be useful to"
+    },
+    {
+      "start": 482.44,
+      "duration": 4.199,
+      "text": "have a fine-tuned embedding"
+    },
+    {
+      "start": 484.639,
+      "duration": 4.201,
+      "text": "model uh but just to show what we're"
+    },
+    {
+      "start": 486.639,
+      "duration": 5.28,
+      "text": "doing here we are just getting all the"
+    },
+    {
+      "start": 488.84,
+      "duration": 6.24,
+      "text": "doctors in our graph here and for each"
+    },
+    {
+      "start": 491.919,
+      "duration": 7.96,
+      "text": "of those doctor nodes we are going to"
+    },
+    {
+      "start": 495.08,
+      "duration": 8.04,
+      "text": "get the text of the skills"
+    },
+    {
+      "start": 499.879,
+      "duration": 5.561,
+      "text": "property which all the doctors have they"
+    },
+    {
+      "start": 503.12,
+      "duration": 4.44,
+      "text": "have some set of skills and this is what"
+    },
+    {
+      "start": 505.44,
+      "duration": 4.08,
+      "text": "we're going to base our embeddings on so"
+    },
+    {
+      "start": 507.56,
+      "duration": 3.839,
+      "text": "we're going to embed those through the"
+    },
+    {
+      "start": 509.52,
+      "duration": 3.959,
+      "text": "open AI"
+    },
+    {
+      "start": 511.399,
+      "duration": 4.76,
+      "text": "endpoints and then we're going to update"
+    },
+    {
+      "start": 513.479,
+      "duration": 6.081,
+      "text": "each node with a new property embedding"
+    },
+    {
+      "start": 516.159,
+      "duration": 3.401,
+      "text": "and set the value as as the"
+    },
+    {
+      "start": 525.88,
+      "duration": 6.76,
+      "text": "embedding and"
+    },
+    {
+      "start": 528.32,
+      "duration": 4.32,
+      "text": "now if we uh reload our"
+    },
+    {
+      "start": 534.72,
+      "duration": 6.84,
+      "text": "graph oh I also actually I had a in my"
+    },
+    {
+      "start": 539.12,
+      "duration": 4.64,
+      "text": "notebook B I had a section for creating"
+    },
+    {
+      "start": 541.56,
+      "duration": 3.76,
+      "text": "the graphs so now we have it double but"
+    },
+    {
+      "start": 543.76,
+      "duration": 4.8,
+      "text": "the point is"
+    },
+    {
+      "start": 545.32,
+      "duration": 6.68,
+      "text": "that now we have this new property of"
+    },
+    {
+      "start": 548.56,
+      "duration": 5.719,
+      "text": "embedding for each doctor and whether"
+    },
+    {
+      "start": 552.0,
+      "duration": 5.36,
+      "text": "you get that embedding from one of Neo"
+    },
+    {
+      "start": 554.279,
+      "duration": 5.0,
+      "text": "4js embedding options or something else"
+    },
+    {
+      "start": 557.36,
+      "duration": 6.159,
+      "text": "once you have that then you can run the"
+    },
+    {
+      "start": 559.279,
+      "duration": 5.881,
+      "text": "cosign similarity from the GDs library"
+    },
+    {
+      "start": 563.519,
+      "duration": 3.641,
+      "text": "to get a similarity"
+    },
+    {
+      "start": 565.16,
+      "duration": 5.44,
+      "text": "score based on the based on the"
+    },
+    {
+      "start": 567.16,
+      "duration": 3.44,
+      "text": "embedding property"
+    },
+    {
+      "start": 573.2,
+      "duration": 7.92,
+      "text": "and it's messed up a little because of"
+    },
+    {
+      "start": 576.04,
+      "duration": 5.08,
+      "text": "the application I just created"
+    },
+    {
+      "start": 581.24,
+      "duration": 6.68,
+      "text": "but"
+    },
+    {
+      "start": 584.0,
+      "duration": 7.0,
+      "text": "the main thing here is"
+    },
+    {
+      "start": 587.92,
+      "duration": 5.359,
+      "text": "that for Dr Clark and Dr Baker that we"
+    },
+    {
+      "start": 591.0,
+      "duration": 5.24,
+      "text": "looked at earlier the coine similarity"
+    },
+    {
+      "start": 593.279,
+      "duration": 5.601,
+      "text": "of their skills is going to be exactly"
+    },
+    {
+      "start": 596.24,
+      "duration": 5.32,
+      "text": "one because we have given them the exact"
+    },
+    {
+      "start": 598.88,
+      "duration": 3.56,
+      "text": "same skills here so we're going to have"
+    },
+    {
+      "start": 601.56,
+      "duration": 2.719,
+      "text": "perfect"
+    },
+    {
+      "start": 602.44,
+      "duration": 4.8,
+      "text": "similarity and then it's just going to"
+    },
+    {
+      "start": 604.279,
+      "duration": 4.201,
+      "text": "go down for for the other ones now"
+    },
+    {
+      "start": 607.24,
+      "duration": 3.32,
+      "text": "generally you'll see that all these"
+    },
+    {
+      "start": 608.48,
+      "duration": 3.76,
+      "text": "scores are pretty high although a lot of"
+    },
+    {
+      "start": 610.56,
+      "duration": 4.44,
+      "text": "the doctors do actually have very Sim"
+    },
+    {
+      "start": 612.24,
+      "duration": 4.599,
+      "text": "different skills and the reason for that"
+    },
+    {
+      "start": 615.0,
+      "duration": 5.72,
+      "text": "is that we are using a generic embedding"
+    },
+    {
+      "start": 616.839,
+      "duration": 7.041,
+      "text": "model which is what Ada 2 from open AI"
+    },
+    {
+      "start": 620.72,
+      "duration": 4.76,
+      "text": "is and that means that although in the"
+    },
+    {
+      "start": 623.88,
+      "duration": 4.519,
+      "text": "context in the specific context of"
+    },
+    {
+      "start": 625.48,
+      "duration": 5.2,
+      "text": "medicine some skills might be very"
+    },
+    {
+      "start": 628.399,
+      "duration": 3.68,
+      "text": "different but for a generic embedding"
+    },
+    {
+      "start": 630.68,
+      "duration": 3.399,
+      "text": "model they're still all like medical"
+    },
+    {
+      "start": 632.079,
+      "duration": 4.961,
+      "text": "terms and as a baseline they're going to"
+    },
+    {
+      "start": 634.079,
+      "duration": 4.361,
+      "text": "get high scores High similarity scores"
+    },
+    {
+      "start": 637.04,
+      "duration": 3.16,
+      "text": "and so that's what I mean when I say"
+    },
+    {
+      "start": 638.44,
+      "duration": 3.92,
+      "text": "that a fine tun model might be useful"
+    },
+    {
+      "start": 640.2,
+      "duration": 4.319,
+      "text": "for this kind of use case uh because it"
+    },
+    {
+      "start": 642.36,
+      "duration": 5.96,
+      "text": "is like we are quite sensitive to like"
+    },
+    {
+      "start": 644.519,
+      "duration": 6.081,
+      "text": "subtle subtleties in um a certain type"
+    },
+    {
+      "start": 648.32,
+      "duration": 5.639,
+      "text": "of similarity or difference in our"
+    },
+    {
+      "start": 650.6,
+      "duration": 5.479,
+      "text": "values um so yeah u f tun embedding"
+    },
+    {
+      "start": 653.959,
+      "duration": 3.961,
+      "text": "model for this to get more precise"
+    },
+    {
+      "start": 656.079,
+      "duration": 5.081,
+      "text": "similarity scores might be might be"
+    },
+    {
+      "start": 657.92,
+      "duration": 7.479,
+      "text": "useful here"
+    },
+    {
+      "start": 661.16,
+      "duration": 8.28,
+      "text": "but that's just to"
+    },
+    {
+      "start": 665.399,
+      "duration": 6.641,
+      "text": "demonstrate how these work no similarity"
+    },
+    {
+      "start": 669.44,
+      "duration": 2.6,
+      "text": "and"
+    },
+    {
+      "start": 673.0,
+      "duration": 5.839,
+      "text": "um and coine similarity in NE forj but"
+    },
+    {
+      "start": 677.0,
+      "duration": 4.68,
+      "text": "now we're going to look at a slightly"
+    },
+    {
+      "start": 678.839,
+      "duration": 2.841,
+      "text": "more realistic"
+    },
+    {
+      "start": 683.56,
+      "duration": 6.76,
+      "text": "graph which I have loaded here maybe be"
+    },
+    {
+      "start": 688.32,
+      "duration": 4.48,
+      "text": "before we before we do that there was"
+    },
+    {
+      "start": 690.32,
+      "duration": 5.639,
+      "text": "there were there were a couple of points"
+    },
+    {
+      "start": 692.8,
+      "duration": 6.4,
+      "text": "um oopsie Let's uh let's do it like this"
+    },
+    {
+      "start": 695.959,
+      "duration": 7.56,
+      "text": "um that uh came up in chat so maybe we"
+    },
+    {
+      "start": 699.2,
+      "duration": 7.28,
+      "text": "we take a short break here um a good"
+    },
+    {
+      "start": 703.519,
+      "duration": 5.44,
+      "text": "comment from from Mark uh came in chat"
+    },
+    {
+      "start": 706.48,
+      "duration": 4.12,
+      "text": "that um is using Neo forj Vector search"
+    },
+    {
+      "start": 708.959,
+      "duration": 4.44,
+      "text": "to find similar nodes and then subject"
+    },
+    {
+      "start": 710.6,
+      "duration": 4.64,
+      "text": "those to rigorous pairwise Logic the Ann"
+    },
+    {
+      "start": 713.399,
+      "duration": 3.921,
+      "text": "search does a fantastic job R using the"
+    },
+    {
+      "start": 715.24,
+      "duration": 5.56,
+      "text": "number of pairs to compare and he showed"
+    },
+    {
+      "start": 717.32,
+      "duration": 5.56,
+      "text": "this in a in a session at nodes 2023 I"
+    },
+    {
+      "start": 720.8,
+      "duration": 3.92,
+      "text": "linked that one in the in the video"
+    },
+    {
+      "start": 722.88,
+      "duration": 3.28,
+      "text": "description so if you want to know more"
+    },
+    {
+      "start": 724.72,
+      "duration": 3.16,
+      "text": "more about that then you can find that"
+    },
+    {
+      "start": 726.16,
+      "duration": 5.919,
+      "text": "in the YouTube video"
+    },
+    {
+      "start": 727.88,
+      "duration": 6.079,
+      "text": "description um um he Manu says what I'm"
+    },
+    {
+      "start": 732.079,
+      "duration": 4.0,
+      "text": "really interested about is how graph"
+    },
+    {
+      "start": 733.959,
+      "duration": 3.481,
+      "text": "structure is going to help in doing dbe"
+    },
+    {
+      "start": 736.079,
+      "duration": 4.2,
+      "text": "because other things can be done with"
+    },
+    {
+      "start": 737.44,
+      "duration": 4.399,
+      "text": "other things yes uh I guess that's"
+    },
+    {
+      "start": 740.279,
+      "duration": 3.24,
+      "text": "something we gonna we're gonna show show"
+    },
+    {
+      "start": 741.839,
+      "duration": 3.0,
+      "text": "next right so that's that's like look"
+    },
+    {
+      "start": 743.519,
+      "duration": 2.401,
+      "text": "into the graph structure so that's"
+    },
+    {
+      "start": 744.839,
+      "duration": 4.401,
+      "text": "that's that's"
+    },
+    {
+      "start": 745.92,
+      "duration": 5.96,
+      "text": "perfect um and then maybe quickly for"
+    },
+    {
+      "start": 749.24,
+      "duration": 5.12,
+      "text": "Alex um I think it was answered but just"
+    },
+    {
+      "start": 751.88,
+      "duration": 4.639,
+      "text": "for everybody else uh what kind of"
+    },
+    {
+      "start": 754.36,
+      "duration": 4.24,
+      "text": "embeddings did you use text embeding"
+    },
+    {
+      "start": 756.519,
+      "duration": 4.281,
+      "text": "node Properties or graph embeddings such"
+    },
+    {
+      "start": 758.6,
+      "duration": 5.76,
+      "text": "as not to V I think you ended up using"
+    },
+    {
+      "start": 760.8,
+      "duration": 5.96,
+      "text": "text embeddings but um yeah so there's a"
+    },
+    {
+      "start": 764.36,
+      "duration": 4.599,
+      "text": "there's a variety of options um like you"
+    },
+    {
+      "start": 766.76,
+      "duration": 3.68,
+      "text": "can you can use the node similarity"
+    },
+    {
+      "start": 768.959,
+      "duration": 3.12,
+      "text": "algorithm for the"
+    },
+    {
+      "start": 770.44,
+      "duration": 3.519,
+      "text": "relationships and then you can"
+    },
+    {
+      "start": 772.079,
+      "duration": 4.241,
+      "text": "separately do do text"
+    },
+    {
+      "start": 773.959,
+      "duration": 6.161,
+      "text": "embedding or you can also do something"
+    },
+    {
+      "start": 776.32,
+      "duration": 6.0,
+      "text": "like node two back uh which or or fast"
+    },
+    {
+      "start": 780.12,
+      "duration": 5.44,
+      "text": "fast RP which allows you to create the"
+    },
+    {
+      "start": 782.32,
+      "duration": 5.72,
+      "text": "embeddings based on both uh what we are"
+    },
+    {
+      "start": 785.56,
+      "duration": 4.36,
+      "text": "going to look at in the next next part"
+    },
+    {
+      "start": 788.04,
+      "duration": 4.56,
+      "text": "is actually combining these two"
+    },
+    {
+      "start": 789.92,
+      "duration": 4.599,
+      "text": "approaches that I just showed into some"
+    },
+    {
+      "start": 792.6,
+      "duration": 4.039,
+      "text": "kind of like combined combined"
+    },
+    {
+      "start": 794.519,
+      "duration": 3.721,
+      "text": "similarities core uh that we can then"
+    },
+    {
+      "start": 796.639,
+      "duration": 4.481,
+      "text": "use for the D2"
+    },
+    {
+      "start": 798.24,
+      "duration": 5.399,
+      "text": "pin cool but yeah there's there's a lot"
+    },
+    {
+      "start": 801.12,
+      "duration": 5.76,
+      "text": "of a lot of different options yeah um so"
+    },
+    {
+      "start": 803.639,
+      "duration": 4.841,
+      "text": "it's just boil down to what you what"
+    },
+    {
+      "start": 806.88,
+      "duration": 3.48,
+      "text": "suits you the best personal preference"
+    },
+    {
+      "start": 808.48,
+      "duration": 5.2,
+      "text": "yeah yeah makes sense and what works the"
+    },
+    {
+      "start": 810.36,
+      "duration": 7.08,
+      "text": "best and what works the best yeah of"
+    },
+    {
+      "start": 813.68,
+      "duration": 6.0,
+      "text": "course yeah cool all right uh yeah if"
+    },
+    {
+      "start": 817.44,
+      "duration": 4.079,
+      "text": "you if you continue um with the"
+    },
+    {
+      "start": 819.68,
+      "duration": 4.159,
+      "text": "questions then uh I'll I'll read them"
+    },
+    {
+      "start": 821.519,
+      "duration": 6.32,
+      "text": "out um as we as we go along but I didn't"
+    },
+    {
+      "start": 823.839,
+      "duration": 5.761,
+      "text": "want to interrupt your um uh your demo"
+    },
+    {
+      "start": 827.839,
+      "duration": 3.24,
+      "text": "just just while you were talking yeah no"
+    },
+    {
+      "start": 829.6,
+      "duration": 7.2,
+      "text": "awesome awesome feel free to interrupt"
+    },
+    {
+      "start": 831.079,
+      "duration": 5.721,
+      "text": "me I can uh steam steam through pretty"
+    },
+    {
+      "start": 837.519,
+      "duration": 6.201,
+      "text": "fast cool now I lost your screen I think"
+    },
+    {
+      "start": 840.959,
+      "duration": 2.761,
+      "text": "um oh yeah I'm going"
+    },
+    {
+      "start": 844.04,
+      "duration": 3.4,
+      "text": "to redo"
+    },
+    {
+      "start": 853.16,
+      "duration": 9.039,
+      "text": "it y all right oh there it is perfect so"
+    },
+    {
+      "start": 858.56,
+      "duration": 7.88,
+      "text": "this time we are looking at a graph of"
+    },
+    {
+      "start": 862.199,
+      "duration": 4.241,
+      "text": "Amazon and it's various"
+    },
+    {
+      "start": 866.48,
+      "duration": 6.76,
+      "text": "subsidiaries as well as their services"
+    },
+    {
+      "start": 870.399,
+      "duration": 2.841,
+      "text": "some key people"
+    },
+    {
+      "start": 874.079,
+      "duration": 5.241,
+      "text": "involved uh Etc and this been partially"
+    },
+    {
+      "start": 877.519,
+      "duration": 6.161,
+      "text": "extracted by some from some Wikipedia"
+    },
+    {
+      "start": 879.32,
+      "duration": 7.4,
+      "text": "articles um uh about Amazon and AWS and"
+    },
+    {
+      "start": 883.68,
+      "duration": 4.88,
+      "text": "zapo mainly but I will also say in terms"
+    },
+    {
+      "start": 886.72,
+      "duration": 4.84,
+      "text": "of transparency I've also done quite a"
+    },
+    {
+      "start": 888.56,
+      "duration": 5.719,
+      "text": "bit of post editing in in in order to"
+    },
+    {
+      "start": 891.56,
+      "duration": 7.0,
+      "text": "make it more more suitable for the"
+    },
+    {
+      "start": 894.279,
+      "duration": 6.161,
+      "text": "demo but for our purposes what we are"
+    },
+    {
+      "start": 898.56,
+      "duration": 4.92,
+      "text": "especially interested here is the fact"
+    },
+    {
+      "start": 900.44,
+      "duration": 4.88,
+      "text": "that there are in fact two versions of"
+    },
+    {
+      "start": 903.48,
+      "duration": 5.56,
+      "text": "Amazon here we do have our Amazon and"
+    },
+    {
+      "start": 905.32,
+      "duration": 7.6,
+      "text": "Amazon Inc uh as I alluded to"
+    },
+    {
+      "start": 909.04,
+      "duration": 7.64,
+      "text": "before and we also have separately"
+    },
+    {
+      "start": 912.92,
+      "duration": 6.12,
+      "text": "Amazon web services here and AWS here"
+    },
+    {
+      "start": 916.68,
+      "duration": 4.56,
+      "text": "sharing some of the"
+    },
+    {
+      "start": 919.04,
+      "duration": 4.44,
+      "text": "edges and some of the"
+    },
+    {
+      "start": 921.24,
+      "duration": 4.36,
+      "text": "properties so we're going to jump back"
+    },
+    {
+      "start": 923.48,
+      "duration": 5.68,
+      "text": "into vs"
+    },
+    {
+      "start": 925.6,
+      "duration": 5.4,
+      "text": "code and uh we're going to try and see"
+    },
+    {
+      "start": 929.16,
+      "duration": 4.96,
+      "text": "if we can apply the"
+    },
+    {
+      "start": 931.0,
+      "duration": 5.759,
+      "text": "methods covered previously and try and"
+    },
+    {
+      "start": 934.12,
+      "duration": 4.44,
+      "text": "uh detect these these duplicates and"
+    },
+    {
+      "start": 936.759,
+      "duration": 4.56,
+      "text": "then get rid of"
+    },
+    {
+      "start": 938.56,
+      "duration": 5.8,
+      "text": "them so again the first step is going to"
+    },
+    {
+      "start": 941.319,
+      "duration": 5.361,
+      "text": "be creating the graph"
+    },
+    {
+      "start": 944.36,
+      "duration": 6.0,
+      "text": "projection selecting all the nodes and"
+    },
+    {
+      "start": 946.68,
+      "duration": 3.68,
+      "text": "some of the relationships that are"
+    },
+    {
+      "start": 952.48,
+      "duration": 5.159,
+      "text": "relevant and we're going to start by"
+    },
+    {
+      "start": 955.519,
+      "duration": 4.921,
+      "text": "just running the node similarity on its"
+    },
+    {
+      "start": 957.639,
+      "duration": 5.081,
+      "text": "own and we're convert the results into a"
+    },
+    {
+      "start": 960.44,
+      "duration": 2.28,
+      "text": "data"
+    },
+    {
+      "start": 964.079,
+      "duration": 5.601,
+      "text": "frame and indeed because our duplicates"
+    },
+    {
+      "start": 967.36,
+      "duration": 5.479,
+      "text": "here do share a lot of the"
+    },
+    {
+      "start": 969.68,
+      "duration": 5.399,
+      "text": "edges we do get high high scores for"
+    },
+    {
+      "start": 972.839,
+      "duration": 5.201,
+      "text": "them additionally we can also see that"
+    },
+    {
+      "start": 975.079,
+      "duration": 6.12,
+      "text": "we get a somewhat some similarity for"
+    },
+    {
+      "start": 978.04,
+      "duration": 4.919,
+      "text": "Amazon Fresh and Whole Foods which is"
+    },
+    {
+      "start": 981.199,
+      "duration": 4.0,
+      "text": "also not that surprising because they"
+    },
+    {
+      "start": 982.959,
+      "duration": 4.601,
+      "text": "also here share"
+    },
+    {
+      "start": 985.199,
+      "duration": 5.64,
+      "text": "some some"
+    },
+    {
+      "start": 987.56,
+      "duration": 5.8,
+      "text": "properties both offering groceries being"
+    },
+    {
+      "start": 990.839,
+      "duration": 2.521,
+      "text": "owed by"
+    },
+    {
+      "start": 995.68,
+      "duration": 5.839,
+      "text": "Amazon and uh but this again highlights"
+    },
+    {
+      "start": 999.12,
+      "duration": 4.959,
+      "text": "the I think importance of not just"
+    },
+    {
+      "start": 1001.519,
+      "duration": 6.8,
+      "text": "relying on one on the structure"
+    },
+    {
+      "start": 1004.079,
+      "duration": 6.88,
+      "text": "itself um because that can be shared"
+    },
+    {
+      "start": 1008.319,
+      "duration": 4.801,
+      "text": "across nodes but in fact if they are"
+    },
+    {
+      "start": 1010.959,
+      "duration": 4.521,
+      "text": "different in other ways uh in their"
+    },
+    {
+      "start": 1013.12,
+      "duration": 4.159,
+      "text": "properties for example and then that's"
+    },
+    {
+      "start": 1015.48,
+      "duration": 4.76,
+      "text": "going to be important to capture in our"
+    },
+    {
+      "start": 1017.279,
+      "duration": 5.12,
+      "text": "logic as well"
+    },
+    {
+      "start": 1020.24,
+      "duration": 3.519,
+      "text": "so for the embeddings and the coign"
+    },
+    {
+      "start": 1022.399,
+      "duration": 4.92,
+      "text": "similarity the process is also going to"
+    },
+    {
+      "start": 1023.759,
+      "duration": 6.721,
+      "text": "look similar as in our previous dummy"
+    },
+    {
+      "start": 1027.319,
+      "duration": 5.24,
+      "text": "example except that this time instead of"
+    },
+    {
+      "start": 1030.48,
+      "duration": 4.16,
+      "text": "just taking one property which was the"
+    },
+    {
+      "start": 1032.559,
+      "duration": 4.801,
+      "text": "skills property of the"
+    },
+    {
+      "start": 1034.64,
+      "duration": 5.96,
+      "text": "doctors uh especially if we are working"
+    },
+    {
+      "start": 1037.36,
+      "duration": 4.8,
+      "text": "with a graph that's partially extracted"
+    },
+    {
+      "start": 1040.6,
+      "duration": 3.56,
+      "text": "from unstructured data we might not"
+    },
+    {
+      "start": 1042.16,
+      "duration": 5.799,
+      "text": "always be sure what properties each node"
+    },
+    {
+      "start": 1044.16,
+      "duration": 5.879,
+      "text": "has uh so for our embedding text string"
+    },
+    {
+      "start": 1047.959,
+      "duration": 3.681,
+      "text": "we are going to join all the properties"
+    },
+    {
+      "start": 1050.039,
+      "duration": 5.681,
+      "text": "that a node"
+    },
+    {
+      "start": 1051.64,
+      "duration": 5.68,
+      "text": "has uh regardless of any arbitrary"
+    },
+    {
+      "start": 1055.72,
+      "duration": 3.76,
+      "text": "amount of properties or their names that"
+    },
+    {
+      "start": 1057.32,
+      "duration": 3.479,
+      "text": "the node might have and we We join that"
+    },
+    {
+      "start": 1059.48,
+      "duration": 4.48,
+      "text": "into a text"
+    },
+    {
+      "start": 1060.799,
+      "duration": 4.681,
+      "text": "string and then this text text string is"
+    },
+    {
+      "start": 1063.96,
+      "duration": 4.04,
+      "text": "the one we"
+    },
+    {
+      "start": 1065.48,
+      "duration": 5.12,
+      "text": "embed again setting it as a as a new"
+    },
+    {
+      "start": 1068.0,
+      "duration": 2.6,
+      "text": "embedding"
+    },
+    {
+      "start": 1077.24,
+      "duration": 3.919,
+      "text": "attribute and so we're going to run that"
+    },
+    {
+      "start": 1079.4,
+      "duration": 4.88,
+      "text": "and then once the embeddings finished"
+    },
+    {
+      "start": 1081.159,
+      "duration": 8.0,
+      "text": "Computing then we're going to run the"
+    },
+    {
+      "start": 1084.28,
+      "duration": 4.879,
+      "text": "same cosine similarity function from"
+    },
+    {
+      "start": 1089.44,
+      "duration": 7.56,
+      "text": "GDs and now we also get get the scores"
+    },
+    {
+      "start": 1093.28,
+      "duration": 7.24,
+      "text": "for for these these notes can can we a"
+    },
+    {
+      "start": 1097.0,
+      "duration": 5.919,
+      "text": "little bit into this one oh yeah yeah"
+    },
+    {
+      "start": 1100.52,
+      "duration": 5.279,
+      "text": "please yeah cool thank"
+    },
+    {
+      "start": 1102.919,
+      "duration": 5.921,
+      "text": "you might also do"
+    },
+    {
+      "start": 1105.799,
+      "duration": 5.24,
+      "text": "this yeah and so this is a bit of a"
+    },
+    {
+      "start": 1108.84,
+      "duration": 6.04,
+      "text": "gamed example in the sense"
+    },
+    {
+      "start": 1111.039,
+      "duration": 5.52,
+      "text": "that being such a well-known company"
+    },
+    {
+      "start": 1114.88,
+      "duration": 5.159,
+      "text": "even the generic embedding model is"
+    },
+    {
+      "start": 1116.559,
+      "duration": 5.881,
+      "text": "going to recognize that these two are"
+    },
+    {
+      "start": 1120.039,
+      "duration": 5.161,
+      "text": "very similar so it is going to give us a"
+    },
+    {
+      "start": 1122.44,
+      "duration": 4.28,
+      "text": "very high similarity scores for AWS and"
+    },
+    {
+      "start": 1125.2,
+      "duration": 4.599,
+      "text": "Amazon web"
+    },
+    {
+      "start": 1126.72,
+      "duration": 5.68,
+      "text": "services um one point here is that we"
+    },
+    {
+      "start": 1129.799,
+      "duration": 6.801,
+      "text": "also get a very high score for these two"
+    },
+    {
+      "start": 1132.4,
+      "duration": 8.08,
+      "text": "Amazon books and Amazon web"
+    },
+    {
+      "start": 1136.6,
+      "duration": 7.88,
+      "text": "store and what that tells here is"
+    },
+    {
+      "start": 1140.48,
+      "duration": 4.0,
+      "text": "that if I can find the two"
+    },
+    {
+      "start": 1144.6,
+      "duration": 5.439,
+      "text": "nodes we don't have a lot of properties"
+    },
+    {
+      "start": 1146.96,
+      "duration": 7.04,
+      "text": "for them like all we have is this uh"
+    },
+    {
+      "start": 1150.039,
+      "duration": 5.441,
+      "text": "industry and a name for each and of"
+    },
+    {
+      "start": 1154.0,
+      "duration": 3.6,
+      "text": "course the fact that there's Amazon in"
+    },
+    {
+      "start": 1155.48,
+      "duration": 4.72,
+      "text": "the name and the industry is quite"
+    },
+    {
+      "start": 1157.6,
+      "duration": 4.88,
+      "text": "similar uh it makes sense that the coign"
+    },
+    {
+      "start": 1160.2,
+      "duration": 4.76,
+      "text": "similarity is going to be quite high but"
+    },
+    {
+      "start": 1162.48,
+      "duration": 6.48,
+      "text": "what this tells us is that and I'm going"
+    },
+    {
+      "start": 1164.96,
+      "duration": 5.839,
+      "text": "to mention this later as well but one"
+    },
+    {
+      "start": 1168.96,
+      "duration": 3.959,
+      "text": "thing I found is that the quality of"
+    },
+    {
+      "start": 1170.799,
+      "duration": 4.12,
+      "text": "your extraction really influences the"
+    },
+    {
+      "start": 1172.919,
+      "duration": 4.321,
+      "text": "quality of your entity resolution a lot"
+    },
+    {
+      "start": 1174.919,
+      "duration": 5.801,
+      "text": "because the more"
+    },
+    {
+      "start": 1177.24,
+      "duration": 5.439,
+      "text": "properties you can extract in the early"
+    },
+    {
+      "start": 1180.72,
+      "duration": 3.72,
+      "text": "St early stage of your graph"
+    },
+    {
+      "start": 1182.679,
+      "duration": 3.841,
+      "text": "construction that just means that you"
+    },
+    {
+      "start": 1184.44,
+      "duration": 3.599,
+      "text": "have more to play with when it comes to"
+    },
+    {
+      "start": 1186.52,
+      "duration": 3.399,
+      "text": "entity resolution and defining the"
+    },
+    {
+      "start": 1188.039,
+      "duration": 4.041,
+      "text": "process for your entity resolution"
+    },
+    {
+      "start": 1189.919,
+      "duration": 4.321,
+      "text": "you'll have different attributes for"
+    },
+    {
+      "start": 1192.08,
+      "duration": 5.52,
+      "text": "differentiating different"
+    },
+    {
+      "start": 1194.24,
+      "duration": 5.679,
+      "text": "nodes uh and whereas if you just have a"
+    },
+    {
+      "start": 1197.6,
+      "duration": 4.12,
+      "text": "very limited amount of information then"
+    },
+    {
+      "start": 1199.919,
+      "duration": 3.281,
+      "text": "it's going to be then the noes are"
+    },
+    {
+      "start": 1201.72,
+      "duration": 4.319,
+      "text": "either going to be completely different"
+    },
+    {
+      "start": 1203.2,
+      "duration": 4.56,
+      "text": "or complet completely similar like all"
+    },
+    {
+      "start": 1206.039,
+      "duration": 4.321,
+      "text": "the companies in a one industry for"
+    },
+    {
+      "start": 1207.76,
+      "duration": 6.72,
+      "text": "example might show up very very similar"
+    },
+    {
+      "start": 1210.36,
+      "duration": 5.84,
+      "text": "in your efforts to do entity resolution"
+    },
+    {
+      "start": 1214.48,
+      "duration": 3.24,
+      "text": "uh and it can be difficult to actually"
+    },
+    {
+      "start": 1216.2,
+      "duration": 3.64,
+      "text": "differentiate them in the in the way"
+    },
+    {
+      "start": 1217.72,
+      "duration": 2.12,
+      "text": "that"
+    },
+    {
+      "start": 1222.2,
+      "duration": 6.479,
+      "text": "matters now with the coine similarity"
+    },
+    {
+      "start": 1224.84,
+      "duration": 3.839,
+      "text": "and the node similarity"
+    },
+    {
+      "start": 1228.76,
+      "duration": 5.0,
+      "text": "what we now want to do is we are going"
+    },
+    {
+      "start": 1230.84,
+      "duration": 5.079,
+      "text": "to combine them as I said into one score"
+    },
+    {
+      "start": 1233.76,
+      "duration": 3.96,
+      "text": "in a very simple way in this case but"
+    },
+    {
+      "start": 1235.919,
+      "duration": 5.441,
+      "text": "here again like you could have and you"
+    },
+    {
+      "start": 1237.72,
+      "duration": 5.68,
+      "text": "probably would have a lot more let's say"
+    },
+    {
+      "start": 1241.36,
+      "duration": 4.48,
+      "text": "uh Nuance to how you actually calculate"
+    },
+    {
+      "start": 1243.4,
+      "duration": 4.08,
+      "text": "the final score you could do a mean you"
+    },
+    {
+      "start": 1245.84,
+      "duration": 5.36,
+      "text": "could do a simple multiplication as"
+    },
+    {
+      "start": 1247.48,
+      "duration": 8.199,
+      "text": "we've done here but you could also add"
+    },
+    {
+      "start": 1251.2,
+      "duration": 7.839,
+      "text": "weights to one aspect of the of"
+    },
+    {
+      "start": 1255.679,
+      "duration": 6.0,
+      "text": "the uh scoring uh depending on what you"
+    },
+    {
+      "start": 1259.039,
+      "duration": 6.88,
+      "text": "think is going to give you the most"
+    },
+    {
+      "start": 1261.679,
+      "duration": 6.441,
+      "text": "signal about about the the"
+    },
+    {
+      "start": 1265.919,
+      "duration": 3.921,
+      "text": "duplication so that's something that you"
+    },
+    {
+      "start": 1268.12,
+      "duration": 4.88,
+      "text": "you'd also have the option to think"
+    },
+    {
+      "start": 1269.84,
+      "duration": 5.76,
+      "text": "about here uh how to do best but for"
+    },
+    {
+      "start": 1273.0,
+      "duration": 4.6,
+      "text": "this demo we're just going to do a very"
+    },
+    {
+      "start": 1275.6,
+      "duration": 5.319,
+      "text": "simple"
+    },
+    {
+      "start": 1277.6,
+      "duration": 6.48,
+      "text": "multiplication getting us this combined"
+    },
+    {
+      "start": 1280.919,
+      "duration": 6.041,
+      "text": "score which just in a very simple sense"
+    },
+    {
+      "start": 1284.08,
+      "duration": 5.079,
+      "text": "combines both the node similarity based"
+    },
+    {
+      "start": 1286.96,
+      "duration": 4.64,
+      "text": "on the structure but then also the"
+    },
+    {
+      "start": 1289.159,
+      "duration": 2.441,
+      "text": "cosign"
+    },
+    {
+      "start": 1292.24,
+      "duration": 6.919,
+      "text": "similarity and after that however you"
+    },
+    {
+      "start": 1296.08,
+      "duration": 5.479,
+      "text": "get to that final final stage uh"
+    },
+    {
+      "start": 1299.159,
+      "duration": 4.361,
+      "text": "whatever your process looks like what"
+    },
+    {
+      "start": 1301.559,
+      "duration": 4.0,
+      "text": "the D application is is typically going"
+    },
+    {
+      "start": 1303.52,
+      "duration": 4.2,
+      "text": "to look like after that is simply"
+    },
+    {
+      "start": 1305.559,
+      "duration": 5.0,
+      "text": "setting some threshold or some rule for"
+    },
+    {
+      "start": 1307.72,
+      "duration": 6.559,
+      "text": "you to decide that two nodes are in fact"
+    },
+    {
+      "start": 1310.559,
+      "duration": 6.12,
+      "text": "the same and here we are going to use"
+    },
+    {
+      "start": 1314.279,
+      "duration": 4.081,
+      "text": "this same as relationship that we're"
+    },
+    {
+      "start": 1316.679,
+      "duration": 4.161,
+      "text": "going to create between two nodes when"
+    },
+    {
+      "start": 1318.36,
+      "duration": 5.76,
+      "text": "we once we do decide that they are the"
+    },
+    {
+      "start": 1320.84,
+      "duration": 6.719,
+      "text": "same and we're just going to use this um"
+    },
+    {
+      "start": 1324.12,
+      "duration": 5.64,
+      "text": "unusually low threshold of 0.20 but it's"
+    },
+    {
+      "start": 1327.559,
+      "duration": 4.6,
+      "text": "going to work for our purposes"
+    },
+    {
+      "start": 1329.76,
+      "duration": 6.64,
+      "text": "here and then we're going to iterate"
+    },
+    {
+      "start": 1332.159,
+      "duration": 7.64,
+      "text": "over all the rows in our data frame see"
+    },
+    {
+      "start": 1336.4,
+      "duration": 5.519,
+      "text": "which node pairs have a similarity score"
+    },
+    {
+      "start": 1339.799,
+      "duration": 5.281,
+      "text": "above our threshold and then we can"
+    },
+    {
+      "start": 1341.919,
+      "duration": 3.161,
+      "text": "create the same as"
+    },
+    {
+      "start": 1347.08,
+      "duration": 3.68,
+      "text": "relationships and now we can"
+    },
+    {
+      "start": 1355.72,
+      "duration": 6.16,
+      "text": "see that now these two nodes are in fact"
+    },
+    {
+      "start": 1358.64,
+      "duration": 3.24,
+      "text": "tagged as as being the"
+    },
+    {
+      "start": 1362.52,
+      "duration": 4.639,
+      "text": "same and so with that in place the last"
+    },
+    {
+      "start": 1365.279,
+      "duration": 5.76,
+      "text": "thing we need to do is we just need to"
+    },
+    {
+      "start": 1367.159,
+      "duration": 7.281,
+      "text": "merge the nodes that have the same as"
+    },
+    {
+      "start": 1371.039,
+      "duration": 5.161,
+      "text": "relationship in this way uh matching"
+    },
+    {
+      "start": 1374.44,
+      "duration": 2.8,
+      "text": "matching finding the node pairs that"
+    },
+    {
+      "start": 1376.2,
+      "duration": 3.079,
+      "text": "have the"
+    },
+    {
+      "start": 1377.24,
+      "duration": 4.559,
+      "text": "relationship uh we're going to delete"
+    },
+    {
+      "start": 1379.279,
+      "duration": 3.88,
+      "text": "the same as relationship right after"
+    },
+    {
+      "start": 1381.799,
+      "duration": 3.521,
+      "text": "that because we don't need it anymore"
+    },
+    {
+      "start": 1383.159,
+      "duration": 5.64,
+      "text": "and we don't need it to be cluttering"
+    },
+    {
+      "start": 1385.32,
+      "duration": 5.719,
+      "text": "our graph uh Beyond this step and then"
+    },
+    {
+      "start": 1388.799,
+      "duration": 5.521,
+      "text": "for all those no pairs uh we're just"
+    },
+    {
+      "start": 1391.039,
+      "duration": 6.12,
+      "text": "going to use the apar refactor merge"
+    },
+    {
+      "start": 1394.32,
+      "duration": 5.92,
+      "text": "nodes uh which is going to combine these"
+    },
+    {
+      "start": 1397.159,
+      "duration": 3.841,
+      "text": "node Pairs and merge their relationships"
+    },
+    {
+      "start": 1400.24,
+      "duration": 3.72,
+      "text": "as"
+    },
+    {
+      "start": 1401.0,
+      "duration": 6.159,
+      "text": "well and uh that's going to be the end"
+    },
+    {
+      "start": 1403.96,
+      "duration": 5.24,
+      "text": "of our de application process basically"
+    },
+    {
+      "start": 1407.159,
+      "duration": 5.241,
+      "text": "um but here again although it seems"
+    },
+    {
+      "start": 1409.2,
+      "duration": 5.28,
+      "text": "simple here but in reality this is"
+    },
+    {
+      "start": 1412.4,
+      "duration": 3.84,
+      "text": "another point where you would have to do"
+    },
+    {
+      "start": 1414.48,
+      "duration": 4.4,
+      "text": "some consideration because okay you have"
+    },
+    {
+      "start": 1416.24,
+      "duration": 5.16,
+      "text": "your two nodes that you want to merge"
+    },
+    {
+      "start": 1418.88,
+      "duration": 5.52,
+      "text": "but if they have conflicting properties"
+    },
+    {
+      "start": 1421.4,
+      "duration": 4.8,
+      "text": "for example they have different emails"
+    },
+    {
+      "start": 1424.4,
+      "duration": 3.519,
+      "text": "or whatever else different properties or"
+    },
+    {
+      "start": 1426.2,
+      "duration": 4.16,
+      "text": "different relationships which ones do"
+    },
+    {
+      "start": 1427.919,
+      "duration": 3.561,
+      "text": "you want to prioritize because"
+    },
+    {
+      "start": 1430.36,
+      "duration": 4.0,
+      "text": "essentially you will you're going to"
+    },
+    {
+      "start": 1431.48,
+      "duration": 5.92,
+      "text": "have to choose one node to keep and one"
+    },
+    {
+      "start": 1434.36,
+      "duration": 5.199,
+      "text": "node to delete and then just um how how"
+    },
+    {
+      "start": 1437.4,
+      "duration": 5.08,
+      "text": "you do how how you choose that"
+    },
+    {
+      "start": 1439.559,
+      "duration": 7.081,
+      "text": "node whether you want to use the some"
+    },
+    {
+      "start": 1442.48,
+      "duration": 5.92,
+      "text": "kind of a creation date or updation date"
+    },
+    {
+      "start": 1446.64,
+      "duration": 5.639,
+      "text": "and select the newer one or maybe the"
+    },
+    {
+      "start": 1448.4,
+      "duration": 5.639,
+      "text": "older one um in reality that's also a"
+    },
+    {
+      "start": 1452.279,
+      "duration": 3.921,
+      "text": "consideration that needs to be made at"
+    },
+    {
+      "start": 1454.039,
+      "duration": 2.161,
+      "text": "this"
+    },
+    {
+      "start": 1456.88,
+      "duration": 7.76,
+      "text": "step but now if"
+    },
+    {
+      "start": 1460.2,
+      "duration": 4.44,
+      "text": "we run this"
+    },
+    {
+      "start": 1471.52,
+      "duration": 3.12,
+      "text": "then the end results should"
+    },
+    {
+      "start": 1479.2,
+      "duration": 6.719,
+      "text": "be indeed that we no longer have Amazon"
+    },
+    {
+      "start": 1487.32,
+      "duration": 7.599,
+      "text": "Inc and then we also don't"
+    },
+    {
+      "start": 1491.12,
+      "duration": 3.799,
+      "text": "have AWS"
+    },
+    {
+      "start": 1497.08,
+      "duration": 5.16,
+      "text": "here and that's basically the end of the"
+    },
+    {
+      "start": 1499.799,
+      "duration": 5.76,
+      "text": "demonstration I will say it is like as"
+    },
+    {
+      "start": 1502.24,
+      "duration": 5.799,
+      "text": "as I mentioned it is sadly almost a bit"
+    },
+    {
+      "start": 1505.559,
+      "duration": 5.921,
+      "text": "of a still a simplified example because"
+    },
+    {
+      "start": 1508.039,
+      "duration": 6.441,
+      "text": "in reality these processes would be uh"
+    },
+    {
+      "start": 1511.48,
+      "duration": 5.16,
+      "text": "very let's say multi multifaceted and"
+    },
+    {
+      "start": 1514.48,
+      "duration": 3.6,
+      "text": "very very elaborate and it's also"
+    },
+    {
+      "start": 1516.64,
+      "duration": 4.6,
+      "text": "difficult to come up with a data set"
+    },
+    {
+      "start": 1518.08,
+      "duration": 6.079,
+      "text": "that can match that while also being"
+    },
+    {
+      "start": 1521.24,
+      "duration": 6.36,
+      "text": "simplified enough to be be followable in"
+    },
+    {
+      "start": 1524.159,
+      "duration": 5.281,
+      "text": "a demo yeah but hopefully that gives you"
+    },
+    {
+      "start": 1527.6,
+      "duration": 2.92,
+      "text": "a basic idea of how you might approach"
+    },
+    {
+      "start": 1529.44,
+      "duration": 3.8,
+      "text": "this"
+    },
+    {
+      "start": 1530.52,
+      "duration": 4.96,
+      "text": "problem cool and with that I just have a"
+    },
+    {
+      "start": 1533.24,
+      "duration": 4.799,
+      "text": "few more final remarks here and then we"
+    },
+    {
+      "start": 1535.48,
+      "duration": 5.799,
+      "text": "can use the last rest of the time for"
+    },
+    {
+      "start": 1538.039,
+      "duration": 3.24,
+      "text": "some Q&A"
+    },
+    {
+      "start": 1542.2,
+      "duration": 6.32,
+      "text": "y I think I covered most of these"
+    },
+    {
+      "start": 1545.64,
+      "duration": 4.56,
+      "text": "already before but yeah as I said better"
+    },
+    {
+      "start": 1548.52,
+      "duration": 5.08,
+      "text": "extraction better"
+    },
+    {
+      "start": 1550.2,
+      "duration": 7.359,
+      "text": "resolution um the more you can extract"
+    },
+    {
+      "start": 1553.6,
+      "duration": 5.36,
+      "text": "good data um earlier in the pipeline the"
+    },
+    {
+      "start": 1557.559,
+      "duration": 3.201,
+      "text": "better your option are going to be and"
+    },
+    {
+      "start": 1558.96,
+      "duration": 4.76,
+      "text": "better your qu results are probably"
+    },
+    {
+      "start": 1560.76,
+      "duration": 4.519,
+      "text": "going to have in the resol resolution uh"
+    },
+    {
+      "start": 1563.72,
+      "duration": 5.4,
+      "text": "particularly if you"
+    },
+    {
+      "start": 1565.279,
+      "duration": 6.801,
+      "text": "can find ways to"
+    },
+    {
+      "start": 1569.12,
+      "duration": 5.64,
+      "text": "find these kinds of uni unique"
+    },
+    {
+      "start": 1572.08,
+      "duration": 4.719,
+      "text": "identifiers in the extraction extraction"
+    },
+    {
+      "start": 1574.76,
+      "duration": 5.08,
+      "text": "phase whether it's emails or phone"
+    },
+    {
+      "start": 1576.799,
+      "duration": 5.721,
+      "text": "numbers or some stock tickers stock"
+    },
+    {
+      "start": 1579.84,
+      "duration": 6.92,
+      "text": "symbols something that you can use to"
+    },
+    {
+      "start": 1582.52,
+      "duration": 6.519,
+      "text": "Anchor um entities as being a particular"
+    },
+    {
+      "start": 1586.76,
+      "duration": 4.44,
+      "text": "type of entity that's really going to"
+    },
+    {
+      "start": 1589.039,
+      "duration": 4.321,
+      "text": "help your process later"
+    },
+    {
+      "start": 1591.2,
+      "duration": 6.8,
+      "text": "on and yeah this"
+    },
+    {
+      "start": 1593.36,
+      "duration": 6.84,
+      "text": "I said to toas at the very beginning the"
+    },
+    {
+      "start": 1598.0,
+      "duration": 4.88,
+      "text": "reality is that it's here we D"
+    },
+    {
+      "start": 1600.2,
+      "duration": 5.079,
+      "text": "duplicated companies but in a real"
+    },
+    {
+      "start": 1602.88,
+      "duration": 4.799,
+      "text": "scenario we would probably also have um"
+    },
+    {
+      "start": 1605.279,
+      "duration": 5.4,
+      "text": "duplicates of people duplicates of"
+    },
+    {
+      "start": 1607.679,
+      "duration": 6.6,
+      "text": "services um duplicates of"
+    },
+    {
+      "start": 1610.679,
+      "duration": 5.641,
+      "text": "Brands and we we wouldn't be able to use"
+    },
+    {
+      "start": 1614.279,
+      "duration": 4.801,
+      "text": "the same logic the same properties the"
+    },
+    {
+      "start": 1616.32,
+      "duration": 5.4,
+      "text": "same embedding uh configuration"
+    },
+    {
+      "start": 1619.08,
+      "duration": 4.52,
+      "text": "for one node type that we can use for"
+    },
+    {
+      "start": 1621.72,
+      "duration": 5.8,
+      "text": "another so in reality you probably have"
+    },
+    {
+      "start": 1623.6,
+      "duration": 5.12,
+      "text": "to Define this kind of a process um of"
+    },
+    {
+      "start": 1627.52,
+      "duration": 4.279,
+      "text": "steps"
+    },
+    {
+      "start": 1628.72,
+      "duration": 4.48,
+      "text": "for as many different duplication"
+    },
+    {
+      "start": 1631.799,
+      "duration": 3.6,
+      "text": "problems that are going to happen in"
+    },
+    {
+      "start": 1633.2,
+      "duration": 3.76,
+      "text": "your particular graph and then just find"
+    },
+    {
+      "start": 1635.399,
+      "duration": 3.321,
+      "text": "a way to also run those in some"
+    },
+    {
+      "start": 1636.96,
+      "duration": 4.52,
+      "text": "particular order because the order is"
+    },
+    {
+      "start": 1638.72,
+      "duration": 5.959,
+      "text": "also going to matter um because every"
+    },
+    {
+      "start": 1641.48,
+      "duration": 4.76,
+      "text": "time you merge some nodes you resolve"
+    },
+    {
+      "start": 1644.679,
+      "duration": 4.041,
+      "text": "some entities it's going to change the"
+    },
+    {
+      "start": 1646.24,
+      "duration": 4.919,
+      "text": "structure of your graph and and then if"
+    },
+    {
+      "start": 1648.72,
+      "duration": 5.8,
+      "text": "you use that structure to compute"
+    },
+    {
+      "start": 1651.159,
+      "duration": 5.601,
+      "text": "similarity for some subsequent steps"
+    },
+    {
+      "start": 1654.52,
+      "duration": 4.159,
+      "text": "then you know the order of the steps is"
+    },
+    {
+      "start": 1656.76,
+      "duration": 5.039,
+      "text": "also going to be"
+    },
+    {
+      "start": 1658.679,
+      "duration": 7.24,
+      "text": "important uh final note is that llms I"
+    },
+    {
+      "start": 1661.799,
+      "duration": 5.801,
+      "text": "think also can can be one um useful tool"
+    },
+    {
+      "start": 1665.919,
+      "duration": 2.88,
+      "text": "in this step as well as the extraction"
+    },
+    {
+      "start": 1667.6,
+      "duration": 3.079,
+      "text": "but also the"
+    },
+    {
+      "start": 1668.799,
+      "duration": 6.081,
+      "text": "resolution like it's obviously not"
+    },
+    {
+      "start": 1670.679,
+      "duration": 6.961,
+      "text": "feasible to just feed your entire graph"
+    },
+    {
+      "start": 1674.88,
+      "duration": 4.32,
+      "text": "uh to an llm and ask it to spot um"
+    },
+    {
+      "start": 1677.64,
+      "duration": 3.56,
+      "text": "duplicate"
+    },
+    {
+      "start": 1679.2,
+      "duration": 3.88,
+      "text": "um Beyond a certain size of a graph that"
+    },
+    {
+      "start": 1681.2,
+      "duration": 3.44,
+      "text": "just obviously isn't feasible anytime"
+    },
+    {
+      "start": 1683.08,
+      "duration": 4.16,
+      "text": "you want to update some data is to you"
+    },
+    {
+      "start": 1684.64,
+      "duration": 5.68,
+      "text": "know feed the whole graph to an llm but"
+    },
+    {
+      "start": 1687.24,
+      "duration": 5.64,
+      "text": "if you do use methods like the ones I"
+    },
+    {
+      "start": 1690.32,
+      "duration": 5.68,
+      "text": "described here to narrow down the scope"
+    },
+    {
+      "start": 1692.88,
+      "duration": 5.6,
+      "text": "of okay here we have some potential"
+    },
+    {
+      "start": 1696.0,
+      "duration": 5.2,
+      "text": "duplicates uh in this you know section"
+    },
+    {
+      "start": 1698.48,
+      "duration": 5.319,
+      "text": "of our graph then maybe that smaller"
+    },
+    {
+      "start": 1701.2,
+      "duration": 4.44,
+      "text": "slice you can then pass on to an llm for"
+    },
+    {
+      "start": 1703.799,
+      "duration": 6.561,
+      "text": "also some further let's say validation"
+    },
+    {
+      "start": 1705.64,
+      "duration": 6.639,
+      "text": "or F further um further analysis to help"
+    },
+    {
+      "start": 1710.36,
+      "duration": 4.84,
+      "text": "highlight highlight those uh D"
+    },
+    {
+      "start": 1712.279,
+      "duration": 4.561,
+      "text": "duplicates oh those duplicates so some"
+    },
+    {
+      "start": 1715.2,
+      "duration": 3.04,
+      "text": "combination of like that I haven't"
+    },
+    {
+      "start": 1716.84,
+      "duration": 3.64,
+      "text": "worked with that"
+    },
+    {
+      "start": 1718.24,
+      "duration": 5.439,
+      "text": "myself um but I think if I was going to"
+    },
+    {
+      "start": 1720.48,
+      "duration": 5.0,
+      "text": "make a make a video continuation on that"
+    },
+    {
+      "start": 1723.679,
+      "duration": 4.6,
+      "text": "uh I think that would probably be a"
+    },
+    {
+      "start": 1725.48,
+      "duration": 2.799,
+      "text": "significant part of"
+    },
+    {
+      "start": 1729.0,
+      "duration": 7.279,
+      "text": "it so thank"
+    },
+    {
+      "start": 1732.6,
+      "duration": 5.6,
+      "text": "you cool thank you very much johanes"
+    },
+    {
+      "start": 1736.279,
+      "duration": 4.921,
+      "text": "that was that was cool that was good"
+    },
+    {
+      "start": 1738.2,
+      "duration": 4.199,
+      "text": "good to see good to good to hear and and"
+    },
+    {
+      "start": 1741.2,
+      "duration": 4.479,
+      "text": "thank you for the demo especially that"
+    },
+    {
+      "start": 1742.399,
+      "duration": 5.88,
+      "text": "made it all a little bit um more real"
+    },
+    {
+      "start": 1745.679,
+      "duration": 5.12,
+      "text": "life I would say so uh so that helped"
+    },
+    {
+      "start": 1748.279,
+      "duration": 5.961,
+      "text": "helped a lot um there were a couple of"
+    },
+    {
+      "start": 1750.799,
+      "duration": 5.681,
+      "text": "questions in chat uh I'd like to to talk"
+    },
+    {
+      "start": 1754.24,
+      "duration": 5.679,
+      "text": "about I think they are interesting ones"
+    },
+    {
+      "start": 1756.48,
+      "duration": 4.919,
+      "text": "so Alex asks uh any suggestions for"
+    },
+    {
+      "start": 1759.919,
+      "duration": 3.321,
+      "text": "metrics that might be used to help"
+    },
+    {
+      "start": 1761.399,
+      "duration": 4.721,
+      "text": "identify a threshold so I think what"
+    },
+    {
+      "start": 1763.24,
+      "duration": 5.279,
+      "text": "they mean is um when when do you think"
+    },
+    {
+      "start": 1766.12,
+      "duration": 5.72,
+      "text": "similarity score is high enough that you"
+    },
+    {
+      "start": 1768.519,
+      "duration": 7.721,
+      "text": "would say okay this this is now good"
+    },
+    {
+      "start": 1771.84,
+      "duration": 6.839,
+      "text": "enough to uh to deem uh a merge uh and"
+    },
+    {
+      "start": 1776.24,
+      "duration": 4.2,
+      "text": "and you know in in your case it was it"
+    },
+    {
+      "start": 1778.679,
+      "duration": 3.401,
+      "text": "was pretty clear you look at AWS you"
+    },
+    {
+      "start": 1780.44,
+      "duration": 3.76,
+      "text": "look at Amazon web services you okay you"
+    },
+    {
+      "start": 1782.08,
+      "duration": 4.479,
+      "text": "know this makes sense but you know the"
+    },
+    {
+      "start": 1784.2,
+      "duration": 4.199,
+      "text": "the the whole fools and Amazon Fresh"
+    },
+    {
+      "start": 1786.559,
+      "duration": 5.0,
+      "text": "example was like okay yeah there is some"
+    },
+    {
+      "start": 1788.399,
+      "duration": 4.721,
+      "text": "similarity there but maybe not enough do"
+    },
+    {
+      "start": 1791.559,
+      "duration": 3.96,
+      "text": "you do you have some experience on that"
+    },
+    {
+      "start": 1793.12,
+      "duration": 6.159,
+      "text": "could you you have some some ideas of of"
+    },
+    {
+      "start": 1795.519,
+      "duration": 3.76,
+      "text": "how to approach that"
+    },
+    {
+      "start": 1800.559,
+      "duration": 6.0,
+      "text": "um I'm trying to avoid giving the cup"
+    },
+    {
+      "start": 1802.96,
+      "duration": 6.92,
+      "text": "out answer of it depends but"
+    },
+    {
+      "start": 1806.559,
+      "duration": 7.12,
+      "text": "uh yeah the the reality is that I think"
+    },
+    {
+      "start": 1809.88,
+      "duration": 3.799,
+      "text": "the key factor there is is"
+    },
+    {
+      "start": 1814.039,
+      "duration": 4.0,
+      "text": "that like our our threshold here was set"
+    },
+    {
+      "start": 1816.96,
+      "duration": 2.839,
+      "text": "very"
+    },
+    {
+      "start": 1818.039,
+      "duration": 4.64,
+      "text": "low"
+    },
+    {
+      "start": 1819.799,
+      "duration": 5.921,
+      "text": "but in a different kind of graph you"
+    },
+    {
+      "start": 1822.679,
+      "duration": 5.521,
+      "text": "might have a just a baseline a lot of"
+    },
+    {
+      "start": 1825.72,
+      "duration": 5.16,
+      "text": "similarities between entities as a"
+    },
+    {
+      "start": 1828.2,
+      "duration": 3.719,
+      "text": "baseline a lot of shared uh structure"
+    },
+    {
+      "start": 1830.88,
+      "duration": 4.519,
+      "text": "shared"
+    },
+    {
+      "start": 1831.919,
+      "duration": 5.041,
+      "text": "properties um without that indicating"
+    },
+    {
+      "start": 1835.399,
+      "duration": 2.601,
+      "text": "necessarily that you know they are they"
+    },
+    {
+      "start": 1836.96,
+      "duration": 5.36,
+      "text": "are"
+    },
+    {
+      "start": 1838.0,
+      "duration": 7.08,
+      "text": "duplicates whereas in another one even"
+    },
+    {
+      "start": 1842.32,
+      "duration": 4.719,
+      "text": "one or two key relationships like for"
+    },
+    {
+      "start": 1845.08,
+      "duration": 4.4,
+      "text": "example if it's if it's like one of"
+    },
+    {
+      "start": 1847.039,
+      "duration": 5.401,
+      "text": "these very high signal relationships"
+    },
+    {
+      "start": 1849.48,
+      "duration": 5.439,
+      "text": "like having a certain CEO or having a"
+    },
+    {
+      "start": 1852.44,
+      "duration": 4.64,
+      "text": "certain product that that might be like"
+    },
+    {
+      "start": 1854.919,
+      "duration": 3.921,
+      "text": "a dead giveaway that as long as this one"
+    },
+    {
+      "start": 1857.08,
+      "duration": 5.24,
+      "text": "relationship is is"
+    },
+    {
+      "start": 1858.84,
+      "duration": 7.079,
+      "text": "shared um the threshold can be very low"
+    },
+    {
+      "start": 1862.32,
+      "duration": 5.959,
+      "text": "MH uh if that makes sense I I"
+    },
+    {
+      "start": 1865.919,
+      "duration": 4.12,
+      "text": "think yeah just it just comes down to"
+    },
+    {
+      "start": 1868.279,
+      "duration": 5.24,
+      "text": "how much how much similarity there is"
+    },
+    {
+      "start": 1870.039,
+      "duration": 6.041,
+      "text": "between your uh entities as a Baseline"
+    },
+    {
+      "start": 1873.519,
+      "duration": 5.12,
+      "text": "and then you are looking for the"
+    },
+    {
+      "start": 1876.08,
+      "duration": 4.28,
+      "text": "outliers beyond that Baseline but if"
+    },
+    {
+      "start": 1878.639,
+      "duration": 4.481,
+      "text": "your Baseline is already like very low"
+    },
+    {
+      "start": 1880.36,
+      "duration": 5.439,
+      "text": "and there isn't a lot of similarities uh"
+    },
+    {
+      "start": 1883.12,
+      "duration": 5.76,
+      "text": "as a as a as a rule then"
+    },
+    {
+      "start": 1885.799,
+      "duration": 4.921,
+      "text": "even um small"
+    },
+    {
+      "start": 1888.88,
+      "duration": 3.6,
+      "text": "deviations above that Baseline might"
+    },
+    {
+      "start": 1890.72,
+      "duration": 5.64,
+      "text": "indicate that you know there is a there"
+    },
+    {
+      "start": 1892.48,
+      "duration": 7.12,
+      "text": "is a duplicate there yeah do you think"
+    },
+    {
+      "start": 1896.36,
+      "duration": 6.919,
+      "text": "it might might help to add uh Vector"
+    },
+    {
+      "start": 1899.6,
+      "duration": 6.76,
+      "text": "search on top of the the node similarity"
+    },
+    {
+      "start": 1903.279,
+      "duration": 5.681,
+      "text": "or the the the the looking at the graph"
+    },
+    {
+      "start": 1906.36,
+      "duration": 4.799,
+      "text": "structure and add add another another"
+    },
+    {
+      "start": 1908.96,
+      "duration": 4.48,
+      "text": "tier to to it is that something that"
+    },
+    {
+      "start": 1911.159,
+      "duration": 2.281,
+      "text": "would be"
+    },
+    {
+      "start": 1916.399,
+      "duration": 5.4,
+      "text": "helpful I mean principle yeah like all"
+    },
+    {
+      "start": 1919.399,
+      "duration": 5.4,
+      "text": "all that cosine like vector Sim Vector"
+    },
+    {
+      "start": 1921.799,
+      "duration": 6.12,
+      "text": "search is basically in most case is just"
+    },
+    {
+      "start": 1924.799,
+      "duration": 5.681,
+      "text": "cosine cosine similarity uh so basically"
+    },
+    {
+      "start": 1927.919,
+      "duration": 3.921,
+      "text": "that's already we aren't doing a search"
+    },
+    {
+      "start": 1930.48,
+      "duration": 3.6,
+      "text": "uh"
+    },
+    {
+      "start": 1931.84,
+      "duration": 4.439,
+      "text": "exactly but we are basically doing the"
+    },
+    {
+      "start": 1934.08,
+      "duration": 4.599,
+      "text": "same the scoring is based on the exact"
+    },
+    {
+      "start": 1936.279,
+      "duration": 4.481,
+      "text": "same metric that a vector search would"
+    },
+    {
+      "start": 1938.679,
+      "duration": 6.72,
+      "text": "be based on so in some sense we are"
+    },
+    {
+      "start": 1940.76,
+      "duration": 6.96,
+      "text": "already doing it yeah okay"
+    },
+    {
+      "start": 1945.399,
+      "duration": 4.441,
+      "text": "cool look like you want to say something"
+    },
+    {
+      "start": 1947.72,
+      "duration": 2.12,
+      "text": "yeah"
+    },
+    {
+      "start": 1950.639,
+      "duration": 6.16,
+      "text": "I'm I'm eager to hear Thomas's no no but"
+    },
+    {
+      "start": 1954.2,
+      "duration": 6.0,
+      "text": "because I'm going to say first of all it"
+    },
+    {
+      "start": 1956.799,
+      "duration": 7.88,
+      "text": "was this week or last week I talked with"
+    },
+    {
+      "start": 1960.2,
+      "duration": 6.479,
+      "text": "uh some people who like did submitted to"
+    },
+    {
+      "start": 1964.679,
+      "duration": 4.72,
+      "text": "Archive but they haven't published a"
+    },
+    {
+      "start": 1966.679,
+      "duration": 4.6,
+      "text": "paper yet and they did the exact same"
+    },
+    {
+      "start": 1969.399,
+      "duration": 5.601,
+      "text": "thing that she did here which is just"
+    },
+    {
+      "start": 1971.279,
+      "duration": 8.681,
+      "text": "basically take the coign similarity of"
+    },
+    {
+      "start": 1975.0,
+      "duration": 6.919,
+      "text": "names and then uh uh try to basically"
+    },
+    {
+      "start": 1979.96,
+      "duration": 5.079,
+      "text": "just compare the C and"
+    },
+    {
+      "start": 1981.919,
+      "duration": 5.76,
+      "text": "similarity between entities and then in"
+    },
+    {
+      "start": 1985.039,
+      "duration": 5.921,
+      "text": "their case they took a really high"
+    },
+    {
+      "start": 1987.679,
+      "duration": 7.041,
+      "text": "threshold because they would rather have"
+    },
+    {
+      "start": 1990.96,
+      "duration": 6.88,
+      "text": "false negatives than false positives"
+    },
+    {
+      "start": 1994.72,
+      "duration": 9.439,
+      "text": "right so you rather not"
+    },
+    {
+      "start": 1997.84,
+      "duration": 9.76,
+      "text": "merge uh by my by my stake then merge by"
+    },
+    {
+      "start": 2004.159,
+      "duration": 4.161,
+      "text": "my mistake if that makes sense right so"
+    },
+    {
+      "start": 2007.6,
+      "duration": 3.52,
+      "text": "if"
+    },
+    {
+      "start": 2008.32,
+      "duration": 4.479,
+      "text": "that makes that means that two entities"
+    },
+    {
+      "start": 2011.12,
+      "duration": 4.08,
+      "text": "if they're different they will still be"
+    },
+    {
+      "start": 2012.799,
+      "duration": 5.961,
+      "text": "different but two entities that might be"
+    },
+    {
+      "start": 2015.2,
+      "duration": 5.88,
+      "text": "the same might not be merged in that"
+    },
+    {
+      "start": 2018.76,
+      "duration": 5.159,
+      "text": "case so like when you're talking about"
+    },
+    {
+      "start": 2021.08,
+      "duration": 5.319,
+      "text": "threshold it also like"
+    },
+    {
+      "start": 2023.919,
+      "duration": 6.36,
+      "text": "depends you wanted to Avid it but it"
+    },
+    {
+      "start": 2026.399,
+      "duration": 6.681,
+      "text": "really depends what you want to do and"
+    },
+    {
+      "start": 2030.279,
+      "duration": 6.24,
+      "text": "like what's your preference are you more"
+    },
+    {
+      "start": 2033.08,
+      "duration": 5.8,
+      "text": "strict or less strict and what I wanted"
+    },
+    {
+      "start": 2036.519,
+      "duration": 5.76,
+      "text": "to say is that with like even with"
+    },
+    {
+      "start": 2038.88,
+      "duration": 7.0,
+      "text": "entity duplication you don't have to"
+    },
+    {
+      "start": 2042.279,
+      "duration": 5.64,
+      "text": "merge the final nodes right if you say"
+    },
+    {
+      "start": 2045.88,
+      "duration": 5.239,
+      "text": "these two are"
+    },
+    {
+      "start": 2047.919,
+      "duration": 5.401,
+      "text": "identical right based on threshold you"
+    },
+    {
+      "start": 2051.119,
+      "duration": 4.401,
+      "text": "don't have to merge them you can just"
+    },
+    {
+      "start": 2053.32,
+      "duration": 6.16,
+      "text": "leave the same as"
+    },
+    {
+      "start": 2055.52,
+      "duration": 8.319,
+      "text": "relationship and then maybe have like"
+    },
+    {
+      "start": 2059.48,
+      "duration": 8.52,
+      "text": "uh uh like a manual riew that someone"
+    },
+    {
+      "start": 2063.839,
+      "duration": 6.84,
+      "text": "who who basically like an domain expert"
+    },
+    {
+      "start": 2068.0,
+      "duration": 5.56,
+      "text": "says okay this is and this is not or it"
+    },
+    {
+      "start": 2070.679,
+      "duration": 6.601,
+      "text": "could just stay same as forever in the"
+    },
+    {
+      "start": 2073.56,
+      "duration": 6.119,
+      "text": "graph right because when you merge the"
+    },
+    {
+      "start": 2077.28,
+      "duration": 5.48,
+      "text": "notes you kind of lose some of the"
+    },
+    {
+      "start": 2079.679,
+      "duration": 5.841,
+      "text": "information and then you don't really"
+    },
+    {
+      "start": 2082.76,
+      "duration": 6.0,
+      "text": "know uh how you say if you made a"
+    },
+    {
+      "start": 2085.52,
+      "duration": 6.399,
+      "text": "mistake you will never"
+    },
+    {
+      "start": 2088.76,
+      "duration": 6.919,
+      "text": "know that that mistake was made because"
+    },
+    {
+      "start": 2091.919,
+      "duration": 7.2,
+      "text": "you mged that information right so"
+    },
+    {
+      "start": 2095.679,
+      "duration": 7.4,
+      "text": "maybe in some cases it it makes sense to"
+    },
+    {
+      "start": 2099.119,
+      "duration": 5.921,
+      "text": "not um merge the nodes at"
+    },
+    {
+      "start": 2103.079,
+      "duration": 4.921,
+      "text": "all"
+    },
+    {
+      "start": 2105.04,
+      "duration": 6.16,
+      "text": "yeah yeah that makes a lot of sense"
+    },
+    {
+      "start": 2108.0,
+      "duration": 7.4,
+      "text": "that's a good point and yeah I mean like"
+    },
+    {
+      "start": 2111.2,
+      "duration": 7.159,
+      "text": "you said LM a lot of people are using K"
+    },
+    {
+      "start": 2115.4,
+      "duration": 5.28,
+      "text": "but it can be quite"
+    },
+    {
+      "start": 2118.359,
+      "duration": 3.961,
+      "text": "costly it can be quite costly and then"
+    },
+    {
+      "start": 2120.68,
+      "duration": 7.52,
+      "text": "it depends like if"
+    },
+    {
+      "start": 2122.32,
+      "duration": 9.24,
+      "text": "you to LM or like how much do to Ed"
+    },
+    {
+      "start": 2128.2,
+      "duration": 6.159,
+      "text": "property and it's like yeah I mean I"
+    },
+    {
+      "start": 2131.56,
+      "duration": 6.96,
+      "text": "know but what you could do is like for"
+    },
+    {
+      "start": 2134.359,
+      "duration": 8.121,
+      "text": "example use an embedding uh similarity"
+    },
+    {
+      "start": 2138.52,
+      "duration": 7.36,
+      "text": "to find like potential candidates and"
+    },
+    {
+      "start": 2142.48,
+      "duration": 6.44,
+      "text": "then the final step authorization is"
+    },
+    {
+      "start": 2145.88,
+      "duration": 5.88,
+      "text": "done by an llm who say okay this is to"
+    },
+    {
+      "start": 2148.92,
+      "duration": 6.0,
+      "text": "be merged and this is not to be merged"
+    },
+    {
+      "start": 2151.76,
+      "duration": 7.44,
+      "text": "so that could be like more automated and"
+    },
+    {
+      "start": 2154.92,
+      "duration": 4.28,
+      "text": "expensive way of doing"
+    },
+    {
+      "start": 2161.0,
+      "duration": 5.839,
+      "text": "yeah is is a good good comment slash"
+    },
+    {
+      "start": 2164.28,
+      "duration": 4.4,
+      "text": "question from Peter in chat right now um"
+    },
+    {
+      "start": 2166.839,
+      "duration": 3.721,
+      "text": "if entities change over time is there a"
+    },
+    {
+      "start": 2168.68,
+      "duration": 4.32,
+      "text": "Best practice for representing that in a"
+    },
+    {
+      "start": 2170.56,
+      "duration": 4.48,
+      "text": "graph do you you know once you do the"
+    },
+    {
+      "start": 2173.0,
+      "duration": 4.56,
+      "text": "merge once you decide okay these are"
+    },
+    {
+      "start": 2175.04,
+      "duration": 4.68,
+      "text": "these have been duplicates do is there"
+    },
+    {
+      "start": 2177.56,
+      "duration": 4.519,
+      "text": "is there do you do you want to keep this"
+    },
+    {
+      "start": 2179.72,
+      "duration": 5.0,
+      "text": "track somehow is this is this something"
+    },
+    {
+      "start": 2182.079,
+      "duration": 7.481,
+      "text": "you you would you would put there or is"
+    },
+    {
+      "start": 2184.72,
+      "duration": 7.68,
+      "text": "this something you you you know you"
+    },
+    {
+      "start": 2189.56,
+      "duration": 6.86,
+      "text": "don't yeah I"
+    },
+    {
+      "start": 2192.4,
+      "duration": 5.36,
+      "text": "mean if you say usually"
+    },
+    {
+      "start": 2196.42,
+      "duration": 4.419,
+      "text": "[Music]"
+    },
+    {
+      "start": 2197.76,
+      "duration": 6.16,
+      "text": "you I mean there are best practices for"
+    },
+    {
+      "start": 2200.839,
+      "duration": 6.0,
+      "text": "representing changes over time you have"
+    },
+    {
+      "start": 2203.92,
+      "duration": 7.399,
+      "text": "some versioning"
+    },
+    {
+      "start": 2206.839,
+      "duration": 7.321,
+      "text": "uh based on time and then it it depends"
+    },
+    {
+      "start": 2211.319,
+      "duration": 6.52,
+      "text": "how complex and granular they want to be"
+    },
+    {
+      "start": 2214.16,
+      "duration": 8.52,
+      "text": "because you can have like States of each"
+    },
+    {
+      "start": 2217.839,
+      "duration": 7.401,
+      "text": "uh entity sort of like what's the state"
+    },
+    {
+      "start": 2222.68,
+      "duration": 4.639,
+      "text": "of entity in like 2020 and what's the"
+    },
+    {
+      "start": 2225.24,
+      "duration": 4.72,
+      "text": "state of the 10ty in"
+    },
+    {
+      "start": 2227.319,
+      "duration": 5.641,
+      "text": "2021 so there's a lot of things you can"
+    },
+    {
+      "start": 2229.96,
+      "duration": 7.72,
+      "text": "do uh but like"
+    },
+    {
+      "start": 2232.96,
+      "duration": 8.399,
+      "text": "my if I my advice would be just uh try"
+    },
+    {
+      "start": 2237.68,
+      "duration": 3.679,
+      "text": "to keep it as simple as"
+    },
+    {
+      "start": 2244.04,
+      "duration": 4.36,
+      "text": "possible yeah yeah I mean that that"
+    },
+    {
+      "start": 2246.8,
+      "duration": 3.519,
+      "text": "that's good and it's it yeah like you"
+    },
+    {
+      "start": 2248.4,
+      "duration": 3.76,
+      "text": "said it depends a little bit on what you"
+    },
+    {
+      "start": 2250.319,
+      "duration": 3.8,
+      "text": "what what's important um and what you"
+    },
+    {
+      "start": 2252.16,
+      "duration": 4.48,
+      "text": "want to want to get out of it in the end"
+    },
+    {
+      "start": 2254.119,
+      "duration": 4.041,
+      "text": "if if if if a full history is is very"
+    },
+    {
+      "start": 2256.64,
+      "duration": 3.6,
+      "text": "important and that makes sense to add"
+    },
+    {
+      "start": 2258.16,
+      "duration": 3.8,
+      "text": "that if it's not as not as relevant"
+    },
+    {
+      "start": 2260.24,
+      "duration": 4.96,
+      "text": "maybe for some reason or other then you"
+    },
+    {
+      "start": 2261.96,
+      "duration": 5.92,
+      "text": "know maybe keep it keep it simple and um"
+    },
+    {
+      "start": 2265.2,
+      "duration": 4.84,
+      "text": "cut down a little bit on the"
+    },
+    {
+      "start": 2267.88,
+      "duration": 4.6,
+      "text": "overhead um there is another question"
+    },
+    {
+      "start": 2270.04,
+      "duration": 4.24,
+      "text": "from Manuel to both of you uh what do"
+    },
+    {
+      "start": 2272.48,
+      "duration": 4.44,
+      "text": "you think about the idea of applying any"
+    },
+    {
+      "start": 2274.28,
+      "duration": 6.4,
+      "text": "of the re-anchor solutions out there to"
+    },
+    {
+      "start": 2276.92,
+      "duration": 6.56,
+      "text": "identify High similarity for entity"
+    },
+    {
+      "start": 2280.68,
+      "duration": 5.52,
+      "text": "resolution and he adds it is true that"
+    },
+    {
+      "start": 2283.48,
+      "duration": 4.48,
+      "text": "with low context nodes and property"
+    },
+    {
+      "start": 2286.2,
+      "duration": 3.56,
+      "text": "sometimes can be very Overkill but I"
+    },
+    {
+      "start": 2287.96,
+      "duration": 3.48,
+      "text": "have the impression this could be a good"
+    },
+    {
+      "start": 2289.76,
+      "duration": 5.12,
+      "text": "approach for the similarity"
+    },
+    {
+      "start": 2291.44,
+      "duration": 7.24,
+      "text": "identification in a first"
+    },
+    {
+      "start": 2294.88,
+      "duration": 6.239,
+      "text": "stage any any idea"
+    },
+    {
+      "start": 2298.68,
+      "duration": 5.96,
+      "text": "re-anchor"
+    },
+    {
+      "start": 2301.119,
+      "duration": 4.601,
+      "text": "Solutions does that ring any bells yeah"
+    },
+    {
+      "start": 2304.64,
+      "duration": 3.439,
+      "text": "I"
+    },
+    {
+      "start": 2305.72,
+      "duration": 6.119,
+      "text": "mean is"
+    },
+    {
+      "start": 2308.079,
+      "duration": 7.0,
+      "text": "just again some sort of similarity right"
+    },
+    {
+      "start": 2311.839,
+      "duration": 7.681,
+      "text": "cuz I think uh in Rec applications when"
+    },
+    {
+      "start": 2315.079,
+      "duration": 7.321,
+      "text": "you do re ranking is kind of another so"
+    },
+    {
+      "start": 2319.52,
+      "duration": 5.2,
+      "text": "it's not the same like for example if"
+    },
+    {
+      "start": 2322.4,
+      "duration": 4.84,
+      "text": "you do Rec application first you let's"
+    },
+    {
+      "start": 2324.72,
+      "duration": 5.399,
+      "text": "say do coine similarity with like text"
+    },
+    {
+      "start": 2327.24,
+      "duration": 6.92,
+      "text": "embeddings like a"
+    },
+    {
+      "start": 2330.119,
+      "duration": 7.321,
+      "text": "002 and you select like top 100 results"
+    },
+    {
+      "start": 2334.16,
+      "duration": 7.32,
+      "text": "and then you do ranking to find the most"
+    },
+    {
+      "start": 2337.44,
+      "duration": 6.159,
+      "text": "most relevant one so ranking is kind of"
+    },
+    {
+      "start": 2341.48,
+      "duration": 5.72,
+      "text": "another"
+    },
+    {
+      "start": 2343.599,
+      "duration": 8.681,
+      "text": "um similarity metric right so yeah I"
+    },
+    {
+      "start": 2347.2,
+      "duration": 9.52,
+      "text": "mean definitely the more um similarity"
+    },
+    {
+      "start": 2352.28,
+      "duration": 7.4,
+      "text": "metrics like reasonable and uh with"
+    },
+    {
+      "start": 2356.72,
+      "duration": 6.32,
+      "text": "signal simility matics that you can"
+    },
+    {
+      "start": 2359.68,
+      "duration": 8.08,
+      "text": "incorporate the better right yeah and"
+    },
+    {
+      "start": 2363.04,
+      "duration": 7.319,
+      "text": "also what rer rankers often often"
+    },
+    {
+      "start": 2367.76,
+      "duration": 6.4,
+      "text": "use is some kind of"
+    },
+    {
+      "start": 2370.359,
+      "duration": 7.641,
+      "text": "um some kind of training data of"
+    },
+    {
+      "start": 2374.16,
+      "duration": 5.48,
+      "text": "examples and that I think uh ties into"
+    },
+    {
+      "start": 2378.0,
+      "duration": 5.92,
+      "text": "ties into what I said about fine tuning"
+    },
+    {
+      "start": 2379.64,
+      "duration": 8.16,
+      "text": "in particular um so you could have some"
+    },
+    {
+      "start": 2383.92,
+      "duration": 7.679,
+      "text": "training set or test sets of"
+    },
+    {
+      "start": 2387.8,
+      "duration": 5.319,
+      "text": "of well it's it would be I wouldn't I"
+    },
+    {
+      "start": 2391.599,
+      "duration": 4.841,
+      "text": "wouldn't want to Define that kind of a"
+    },
+    {
+      "start": 2393.119,
+      "duration": 5.441,
+      "text": "test set for um uh this kind of"
+    },
+    {
+      "start": 2396.44,
+      "duration": 5.08,
+      "text": "application because it would be a it"
+    },
+    {
+      "start": 2398.56,
+      "duration": 5.24,
+      "text": "would be a lot of work but if you were"
+    },
+    {
+      "start": 2401.52,
+      "duration": 5.68,
+      "text": "going to like yeah reranking is just"
+    },
+    {
+      "start": 2403.8,
+      "duration": 6.76,
+      "text": "another like scoring process that's"
+    },
+    {
+      "start": 2407.2,
+      "duration": 6.28,
+      "text": "that's all it is uh applying applying"
+    },
+    {
+      "start": 2410.56,
+      "duration": 5.279,
+      "text": "some some um"
+    },
+    {
+      "start": 2413.48,
+      "duration": 5.4,
+      "text": "conditions you usually it's just a"
+    },
+    {
+      "start": 2415.839,
+      "duration": 5.52,
+      "text": "different kind of um embedding sometimes"
+    },
+    {
+      "start": 2418.88,
+      "duration": 4.76,
+      "text": "it involves some like user preference"
+    },
+    {
+      "start": 2421.359,
+      "duration": 4.841,
+      "text": "data that we have from a history uh"
+    },
+    {
+      "start": 2423.64,
+      "duration": 5.479,
+      "text": "results in the context of rag results"
+    },
+    {
+      "start": 2426.2,
+      "duration": 5.24,
+      "text": "that uh um have been preferential to"
+    },
+    {
+      "start": 2429.119,
+      "duration": 6.0,
+      "text": "users in the past we can use that to"
+    },
+    {
+      "start": 2431.44,
+      "duration": 6.44,
+      "text": "rerank uh results uh in the"
+    },
+    {
+      "start": 2435.119,
+      "duration": 5.681,
+      "text": "future um so sure you could apply"
+    },
+    {
+      "start": 2437.88,
+      "duration": 4.84,
+      "text": "something similar here but it's I think"
+    },
+    {
+      "start": 2440.8,
+      "duration": 4.039,
+      "text": "less it's less of a it's not so"
+    },
+    {
+      "start": 2442.72,
+      "duration": 4.879,
+      "text": "different in some sense to the kinds of"
+    },
+    {
+      "start": 2444.839,
+      "duration": 5.48,
+      "text": "methods that we talked about here"
+    },
+    {
+      "start": 2447.599,
+      "duration": 5.881,
+      "text": "earlier it's in some sense it's just a"
+    },
+    {
+      "start": 2450.319,
+      "duration": 5.681,
+      "text": "like a different name for doing more of"
+    },
+    {
+      "start": 2453.48,
+      "duration": 5.72,
+      "text": "the same stuff like thas"
+    },
+    {
+      "start": 2456.0,
+      "duration": 5.16,
+      "text": "said cool"
+    },
+    {
+      "start": 2459.2,
+      "duration": 3.96,
+      "text": "um there's one more question from himu"
+    },
+    {
+      "start": 2461.16,
+      "duration": 4.24,
+      "text": "for real life pipelines though"
+    },
+    {
+      "start": 2463.16,
+      "duration": 4.12,
+      "text": "extracting more property seem to be"
+    },
+    {
+      "start": 2465.4,
+      "duration": 4.32,
+      "text": "better but these other properties also"
+    },
+    {
+      "start": 2467.28,
+      "duration": 9.48,
+      "text": "have high amount of duplicate duplicates"
+    },
+    {
+      "start": 2469.72,
+      "duration": 7.04,
+      "text": "in them any idea suggestions for for"
+    },
+    {
+      "start": 2483.079,
+      "duration": 5.24,
+      "text": "that"
+    },
+    {
+      "start": 2485.4,
+      "duration": 6.08,
+      "text": "H yeah I I would say I would generally"
+    },
+    {
+      "start": 2488.319,
+      "duration": 5.441,
+      "text": "say more is is better because you can"
+    },
+    {
+      "start": 2491.48,
+      "duration": 7.599,
+      "text": "always choose which properties you can"
+    },
+    {
+      "start": 2493.76,
+      "duration": 7.88,
+      "text": "select for your U similarity"
+    },
+    {
+      "start": 2499.079,
+      "duration": 5.28,
+      "text": "computation uh and then if you have more"
+    },
+    {
+      "start": 2501.64,
+      "duration": 4.52,
+      "text": "to choose from then you can probably"
+    },
+    {
+      "start": 2504.359,
+      "duration": 6.321,
+      "text": "just try and choose the ones that are"
+    },
+    {
+      "start": 2506.16,
+      "duration": 7.76,
+      "text": "most let's say most signal uh most"
+    },
+    {
+      "start": 2510.68,
+      "duration": 5.2,
+      "text": "distinctive of of each entity and in"
+    },
+    {
+      "start": 2513.92,
+      "duration": 4.679,
+      "text": "other words if you compare on those then"
+    },
+    {
+      "start": 2515.88,
+      "duration": 4.88,
+      "text": "that's going to be more of a"
+    },
+    {
+      "start": 2518.599,
+      "duration": 4.641,
+      "text": "better better results for your"
+    },
+    {
+      "start": 2520.76,
+      "duration": 4.48,
+      "text": "similarity"
+    },
+    {
+      "start": 2523.24,
+      "duration": 3.24,
+      "text": "scoring yeah it can it can be"
+    },
+    {
+      "start": 2525.24,
+      "duration": 2.8,
+      "text": "problematic if you have a lot of"
+    },
+    {
+      "start": 2526.48,
+      "duration": 3.599,
+      "text": "properties that are just like shared"
+    },
+    {
+      "start": 2528.04,
+      "duration": 5.12,
+      "text": "across the board and can kind of like"
+    },
+    {
+      "start": 2530.079,
+      "duration": 4.441,
+      "text": "blow your similarity scores but I think"
+    },
+    {
+      "start": 2533.16,
+      "duration": 3.439,
+      "text": "that's like you"
+    },
+    {
+      "start": 2534.52,
+      "duration": 5.319,
+      "text": "can you can you can you can set your"
+    },
+    {
+      "start": 2536.599,
+      "duration": 5.161,
+      "text": "thresholds higher you can not select"
+    },
+    {
+      "start": 2539.839,
+      "duration": 4.121,
+      "text": "some of the properties that is going be"
+    },
+    {
+      "start": 2541.76,
+      "duration": 4.68,
+      "text": "just going to be shared between the mon"
+    },
+    {
+      "start": 2543.96,
+      "duration": 5.599,
+      "text": "noes um so yeah I would still definitely"
+    },
+    {
+      "start": 2546.44,
+      "duration": 5.919,
+      "text": "say uh more is better and then you can"
+    },
+    {
+      "start": 2549.559,
+      "duration": 2.8,
+      "text": "choose which ones to"
+    },
+    {
+      "start": 2553.24,
+      "duration": 6.76,
+      "text": "use yeah I mean I would just said that"
+    },
+    {
+      "start": 2555.72,
+      "duration": 8.44,
+      "text": "basically this is a really hard problem"
+    },
+    {
+      "start": 2560.0,
+      "duration": 7.44,
+      "text": "that like before LMS even Academia was"
+    },
+    {
+      "start": 2564.16,
+      "duration": 6.88,
+      "text": "interest and not it's not like a solved"
+    },
+    {
+      "start": 2567.44,
+      "duration": 7.0,
+      "text": "problem right it's just like do what you"
+    },
+    {
+      "start": 2571.04,
+      "duration": 7.2,
+      "text": "can with the options that you"
+    },
+    {
+      "start": 2574.44,
+      "duration": 7.72,
+      "text": "have and and that's it because there's"
+    },
+    {
+      "start": 2578.24,
+      "duration": 6.04,
+      "text": "also like one we didn't mention"
+    },
+    {
+      "start": 2582.16,
+      "duration": 5.439,
+      "text": "specifically but there's also the"
+    },
+    {
+      "start": 2584.28,
+      "duration": 6.72,
+      "text": "concept of entity linking so if you have"
+    },
+    {
+      "start": 2587.599,
+      "duration": 5.601,
+      "text": "like a Target database that you can link"
+    },
+    {
+      "start": 2591.0,
+      "duration": 5.28,
+      "text": "your entities"
+    },
+    {
+      "start": 2593.2,
+      "duration": 6.48,
+      "text": "to uh so"
+    },
+    {
+      "start": 2596.28,
+      "duration": 6.079,
+      "text": "basically uh for example the most"
+    },
+    {
+      "start": 2599.68,
+      "duration": 5.72,
+      "text": "U common example is like having"
+    },
+    {
+      "start": 2602.359,
+      "duration": 6.321,
+      "text": "Wikipedia as your target knowledge base"
+    },
+    {
+      "start": 2605.4,
+      "duration": 5.88,
+      "text": "and then you try to map entities in the"
+    },
+    {
+      "start": 2608.68,
+      "duration": 3.639,
+      "text": "text to Wikipedia right so that is your"
+    },
+    {
+      "start": 2611.28,
+      "duration": 3.6,
+      "text": "kind of"
+    },
+    {
+      "start": 2612.319,
+      "duration": 4.681,
+      "text": "disambiguation the duplication part"
+    },
+    {
+      "start": 2614.88,
+      "duration": 3.84,
+      "text": "basically for each entity return"
+    },
+    {
+      "start": 2617.0,
+      "duration": 7.04,
+      "text": "Wikipedia"
+    },
+    {
+      "start": 2618.72,
+      "duration": 8.2,
+      "text": "ID uh and uh for a long time I was a fan"
+    },
+    {
+      "start": 2624.04,
+      "duration": 4.76,
+      "text": "of that but that doesn't really that's"
+    },
+    {
+      "start": 2626.92,
+      "duration": 4.72,
+      "text": "not really a flexible solution right"
+    },
+    {
+      "start": 2628.8,
+      "duration": 5.6,
+      "text": "because okay Wikipedia knowledge Bas is"
+    },
+    {
+      "start": 2631.64,
+      "duration": 6.439,
+      "text": "nice but now let's say we want to"
+    },
+    {
+      "start": 2634.4,
+      "duration": 7.08,
+      "text": "extract uh like internal documents for"
+    },
+    {
+      "start": 2638.079,
+      "duration": 6.081,
+      "text": "company I mean not all employees are on"
+    },
+    {
+      "start": 2641.48,
+      "duration": 6.639,
+      "text": "Wikipedia and stuff like that so they're"
+    },
+    {
+      "start": 2644.16,
+      "duration": 7.88,
+      "text": "always trade off but there's a What U"
+    },
+    {
+      "start": 2648.119,
+      "duration": 6.44,
+      "text": "and I think with the uh The Entity"
+    },
+    {
+      "start": 2652.04,
+      "duration": 5.44,
+      "text": "linking there are like some end to end"
+    },
+    {
+      "start": 2654.559,
+      "duration": 4.841,
+      "text": "models that you can take a look at which"
+    },
+    {
+      "start": 2657.48,
+      "duration": 3.079,
+      "text": "is quite interesting interesting so you"
+    },
+    {
+      "start": 2659.4,
+      "duration": 5.32,
+      "text": "kind of"
+    },
+    {
+      "start": 2660.559,
+      "duration": 7.04,
+      "text": "train a model to do the disambiguation"
+    },
+    {
+      "start": 2664.72,
+      "duration": 4.76,
+      "text": "for you based on like"
+    },
+    {
+      "start": 2667.599,
+      "duration": 4.52,
+      "text": "uh available"
+    },
+    {
+      "start": 2669.48,
+      "duration": 5.48,
+      "text": "options and they like I said people have"
+    },
+    {
+      "start": 2672.119,
+      "duration": 5.561,
+      "text": "tried a lot of things uh and it's not a"
+    },
+    {
+      "start": 2674.96,
+      "duration": 6.879,
+      "text": "solv problem"
+    },
+    {
+      "start": 2677.68,
+      "duration": 7.639,
+      "text": "so yeah tricky maybe maybe I will also"
+    },
+    {
+      "start": 2681.839,
+      "duration": 6.72,
+      "text": "say maybe on a I mean it's everything"
+    },
+    {
+      "start": 2685.319,
+      "duration": 6.161,
+      "text": "Thomas said is true as a as a note of"
+    },
+    {
+      "start": 2688.559,
+      "duration": 6.8,
+      "text": "hope I would also say that like there is"
+    },
+    {
+      "start": 2691.48,
+      "duration": 7.56,
+      "text": "a spectrum of of applications here and"
+    },
+    {
+      "start": 2695.359,
+      "duration": 6.0,
+      "text": "it's not just like you always need to"
+    },
+    {
+      "start": 2699.04,
+      "duration": 4.68,
+      "text": "get your graph from zero from"
+    },
+    {
+      "start": 2701.359,
+      "duration": 5.24,
+      "text": "unstructured data to something you know"
+    },
+    {
+      "start": 2703.72,
+      "duration": 5.48,
+      "text": "that's pristine and uh consistent and"
+    },
+    {
+      "start": 2706.599,
+      "duration": 5.161,
+      "text": "doesn't have duplicates uh but often you"
+    },
+    {
+      "start": 2709.2,
+      "duration": 5.72,
+      "text": "can lean on like some ex"
+    },
+    {
+      "start": 2711.76,
+      "duration": 6.079,
+      "text": "existing uh relationship structure in"
+    },
+    {
+      "start": 2714.92,
+      "duration": 6.24,
+      "text": "your data you already have some links uh"
+    },
+    {
+      "start": 2717.839,
+      "duration": 5.52,
+      "text": "that are like known and high quality and"
+    },
+    {
+      "start": 2721.16,
+      "duration": 5.0,
+      "text": "then you can maybe just build on that by"
+    },
+    {
+      "start": 2723.359,
+      "duration": 4.841,
+      "text": "adding some uh extracted unstructured"
+    },
+    {
+      "start": 2726.16,
+      "duration": 4.52,
+      "text": "data"
+    },
+    {
+      "start": 2728.2,
+      "duration": 5.159,
+      "text": "um and and then then you know the"
+    },
+    {
+      "start": 2730.68,
+      "duration": 5.0,
+      "text": "problem does become a little little more"
+    },
+    {
+      "start": 2733.359,
+      "duration": 3.921,
+      "text": "feasible uh but yeah if if you are"
+    },
+    {
+      "start": 2735.68,
+      "duration": 4.24,
+      "text": "trying to build build a graph"
+    },
+    {
+      "start": 2737.28,
+      "duration": 5.48,
+      "text": "application from just like entirely llm"
+    },
+    {
+      "start": 2739.92,
+      "duration": 6.12,
+      "text": "extracted data it's like basically an"
+    },
+    {
+      "start": 2742.76,
+      "duration": 5.72,
+      "text": "unol problem in in a lot of"
+    },
+    {
+      "start": 2746.04,
+      "duration": 6.519,
+      "text": "ways yeah but the good thing is like you"
+    },
+    {
+      "start": 2748.48,
+      "duration": 5.04,
+      "text": "said that uh a lot of times we have like"
+    },
+    {
+      "start": 2752.559,
+      "duration": 5.601,
+      "text": "a good"
+    },
+    {
+      "start": 2753.52,
+      "duration": 7.559,
+      "text": "enough uh like cut off and we can say I"
+    },
+    {
+      "start": 2758.16,
+      "duration": 5.72,
+      "text": "mean it's good enough because even"
+    },
+    {
+      "start": 2761.079,
+      "duration": 4.921,
+      "text": "like Google does that like I know there"
+    },
+    {
+      "start": 2763.88,
+      "duration": 5.4,
+      "text": "are some companies that scrape the"
+    },
+    {
+      "start": 2766.0,
+      "duration": 6.119,
+      "text": "internet and kind of do the same thing"
+    },
+    {
+      "start": 2769.28,
+      "duration": 5.12,
+      "text": "and like for the most part it's fine"
+    },
+    {
+      "start": 2772.119,
+      "duration": 4.561,
+      "text": "right so like if you can kind of"
+    },
+    {
+      "start": 2774.4,
+      "duration": 5.48,
+      "text": "identify what you're like good enough"
+    },
+    {
+      "start": 2776.68,
+      "duration": 6.879,
+      "text": "threshold and just try to aim aim to"
+    },
+    {
+      "start": 2779.88,
+      "duration": 5.32,
+      "text": "achieve that I think it should be fine I"
+    },
+    {
+      "start": 2783.559,
+      "duration": 4.241,
+      "text": "mean it's going to it's going to take"
+    },
+    {
+      "start": 2785.2,
+      "duration": 6.28,
+      "text": "some work obviously uh but it's"
+    },
+    {
+      "start": 2787.8,
+      "duration": 8.12,
+      "text": "achievable like said it's not"
+    },
+    {
+      "start": 2791.48,
+      "duration": 4.44,
+      "text": "like you're gonna just waste your"
+    },
+    {
+      "start": 2796.24,
+      "duration": 5.68,
+      "text": "time It's Tricky um maybe we we we cover"
+    },
+    {
+      "start": 2800.119,
+      "duration": 5.681,
+      "text": "one more questions be one more question"
+    },
+    {
+      "start": 2801.92,
+      "duration": 7.0,
+      "text": "before we close I was uh sent in from uh"
+    },
+    {
+      "start": 2805.8,
+      "duration": 6.48,
+      "text": "doron uh and they"
+    },
+    {
+      "start": 2808.92,
+      "duration": 5.439,
+      "text": "ask did how does this method that you"
+    },
+    {
+      "start": 2812.28,
+      "duration": 4.319,
+      "text": "just showed youan how does that compare"
+    },
+    {
+      "start": 2814.359,
+      "duration": 5.521,
+      "text": "with Integrity checks in in relational"
+    },
+    {
+      "start": 2816.599,
+      "duration": 4.841,
+      "text": "data base are there can can you compare"
+    },
+    {
+      "start": 2819.88,
+      "duration": 5.64,
+      "text": "it at all and is there is there any"
+    },
+    {
+      "start": 2821.44,
+      "duration": 6.679,
+      "text": "lessons to to learn from from from using"
+    },
+    {
+      "start": 2825.52,
+      "duration": 5.559,
+      "text": "um this system or the other system or is"
+    },
+    {
+      "start": 2828.119,
+      "duration": 2.96,
+      "text": "that not really"
+    },
+    {
+      "start": 2831.8,
+      "duration": 5.84,
+      "text": "comparable well I think it's almost more"
+    },
+    {
+      "start": 2833.92,
+      "duration": 8.399,
+      "text": "comparable to what to much said"
+    },
+    {
+      "start": 2837.64,
+      "duration": 7.24,
+      "text": "about um having references in your"
+    },
+    {
+      "start": 2842.319,
+      "duration": 5.441,
+      "text": "entities uh where you can validate that"
+    },
+    {
+      "start": 2844.88,
+      "duration": 5.56,
+      "text": "the you can validate the"
+    },
+    {
+      "start": 2847.76,
+      "duration": 4.88,
+      "text": "data from The Source"
+    },
+    {
+      "start": 2850.44,
+      "duration": 4.48,
+      "text": "level"
+    },
+    {
+      "start": 2852.64,
+      "duration": 4.28,
+      "text": "um I think that would be like yeah that"
+    },
+    {
+      "start": 2854.92,
+      "duration": 5.96,
+      "text": "would be maybe the closest closest"
+    },
+    {
+      "start": 2856.92,
+      "duration": 6.84,
+      "text": "equivalent okay that comes to"
+    },
+    {
+      "start": 2860.88,
+      "duration": 6.04,
+      "text": "mind"
+    },
+    {
+      "start": 2863.76,
+      "duration": 6.839,
+      "text": "cool all right um yeah and I think with"
+    },
+    {
+      "start": 2866.92,
+      "duration": 6.36,
+      "text": "that um we um we can we can close it for"
+    },
+    {
+      "start": 2870.599,
+      "duration": 4.161,
+      "text": "today um thank you very much johanes"
+    },
+    {
+      "start": 2873.28,
+      "duration": 3.279,
+      "text": "thank you very much Tomas for for"
+    },
+    {
+      "start": 2874.76,
+      "duration": 3.48,
+      "text": "joining today for the demo and for the"
+    },
+    {
+      "start": 2876.559,
+      "duration": 3.961,
+      "text": "slide slides uh and for the time"
+    },
+    {
+      "start": 2878.24,
+      "duration": 6.319,
+      "text": "obviously so that was was really nice um"
+    },
+    {
+      "start": 2880.52,
+      "duration": 6.44,
+      "text": "and a cool um cool demo and and Hands-On"
+    },
+    {
+      "start": 2884.559,
+      "duration": 5.601,
+      "text": "session uh thank you all for for"
+    },
+    {
+      "start": 2886.96,
+      "duration": 5.84,
+      "text": "watching um this session today before"
+    },
+    {
+      "start": 2890.16,
+      "duration": 5.08,
+      "text": "you all go I'd like to remind you that"
+    },
+    {
+      "start": 2892.8,
+      "duration": 4.279,
+      "text": "we run a couple of workshops this week"
+    },
+    {
+      "start": 2895.24,
+      "duration": 4.359,
+      "text": "next weekend afterwards starting with an"
+    },
+    {
+      "start": 2897.079,
+      "duration": 5.681,
+      "text": "intro to near forj session on Thursday"
+    },
+    {
+      "start": 2899.599,
+      "duration": 4.801,
+      "text": "so we will be uh conducting these online"
+    },
+    {
+      "start": 2902.76,
+      "duration": 3.559,
+      "text": "uh training Series so if you are"
+    },
+    {
+      "start": 2904.4,
+      "duration": 5.0,
+      "text": "interested in joining one of those more"
+    },
+    {
+      "start": 2906.319,
+      "duration": 5.441,
+      "text": "of those all of them then um check out"
+    },
+    {
+      "start": 2909.4,
+      "duration": 4.64,
+      "text": "the link I post in in the in the chat uh"
+    },
+    {
+      "start": 2911.76,
+      "duration": 6.48,
+      "text": "or use the one that is visible here on"
+    },
+    {
+      "start": 2914.04,
+      "duration": 6.96,
+      "text": "on the screen and uh suggest you um you"
+    },
+    {
+      "start": 2918.24,
+      "duration": 5.24,
+      "text": "know to join one of those if if that's"
+    },
+    {
+      "start": 2921.0,
+      "duration": 4.72,
+      "text": "an interesting topic um that also means"
+    },
+    {
+      "start": 2923.48,
+      "duration": 5.44,
+      "text": "that we'll take a little break uh with"
+    },
+    {
+      "start": 2925.72,
+      "duration": 6.48,
+      "text": "NE forj lives uh over the next couple of"
+    },
+    {
+      "start": 2928.92,
+      "duration": 5.96,
+      "text": "weeks in favor of this one um so um next"
+    },
+    {
+      "start": 2932.2,
+      "duration": 5.399,
+      "text": "session is going to be early April I"
+    },
+    {
+      "start": 2934.88,
+      "duration": 7.0,
+      "text": "think with a going meta episode um so"
+    },
+    {
+      "start": 2937.599,
+      "duration": 7.081,
+      "text": "until then um yeah we we continue doing"
+    },
+    {
+      "start": 2941.88,
+      "duration": 5.28,
+      "text": "uh trainings and all that stuff so we'd"
+    },
+    {
+      "start": 2944.68,
+      "duration": 5.399,
+      "text": "like to see you there um and join us"
+    },
+    {
+      "start": 2947.16,
+      "duration": 5.48,
+      "text": "then again uh thank you very much Tas"
+    },
+    {
+      "start": 2950.079,
+      "duration": 3.961,
+      "text": "and johanes for for your time today and"
+    },
+    {
+      "start": 2952.64,
+      "duration": 3.64,
+      "text": "for the presentation thank you all for"
+    },
+    {
+      "start": 2954.04,
+      "duration": 4.0,
+      "text": "watching and yeah I hope to see you soon"
+    },
+    {
+      "start": 2956.28,
+      "duration": 6.039,
+      "text": "uh oh yeah one more question janas I"
+    },
+    {
+      "start": 2958.04,
+      "duration": 7.319,
+      "text": "forgot about this is uh"
+    },
+    {
+      "start": 2962.319,
+      "duration": 4.961,
+      "text": "your demo uh is this available somewhere"
+    },
+    {
+      "start": 2965.359,
+      "duration": 5.0,
+      "text": "is there GitHub repo or or some kind of"
+    },
+    {
+      "start": 2967.28,
+      "duration": 4.72,
+      "text": "Link uh not not yet not yet I'm going to"
+    },
+    {
+      "start": 2970.359,
+      "duration": 3.121,
+      "text": "I'm going to share I'm going to try and"
+    },
+    {
+      "start": 2972.0,
+      "duration": 5.28,
+      "text": "share it later this"
+    },
+    {
+      "start": 2973.48,
+      "duration": 5.52,
+      "text": "week yeah and if people would I'll I'll"
+    },
+    {
+      "start": 2977.28,
+      "duration": 3.48,
+      "text": "I'll I can send it to your way maybe"
+    },
+    {
+      "start": 2979.0,
+      "duration": 4.2,
+      "text": "I'll comment it on the live stream"
+    },
+    {
+      "start": 2980.76,
+      "duration": 5.039,
+      "text": "YouTube recording something I'll add it"
+    },
+    {
+      "start": 2983.2,
+      "duration": 4.08,
+      "text": "to exactly perfect yeah cool once it's"
+    },
+    {
+      "start": 2985.799,
+      "duration": 3.641,
+      "text": "available then we add it to the video"
+    },
+    {
+      "start": 2987.28,
+      "duration": 4.519,
+      "text": "description uh and then there's also way"
+    },
+    {
+      "start": 2989.44,
+      "duration": 6.6,
+      "text": "means of getting in touch with you yanes"
+    },
+    {
+      "start": 2991.799,
+      "duration": 7.04,
+      "text": "if if uh if need be I I guess yeah yeah"
+    },
+    {
+      "start": 2996.04,
+      "duration": 6.16,
+      "text": "cheers all cool thank you very much take"
+    },
+    {
+      "start": 2998.839,
+      "duration": 3.361,
+      "text": "care bye bye"
+    }
+  ],
+  "full_text": "jump into a little couple of slides first uh some of this we touched already in the intro chat but yeah we're going to just talk briefly about What entity resolution actually is what is the problem and why is it important a quick overview of some of the methods that are available in neo4j for solving the issue and then finally the practical application so entity resolution it's determining whether or not two representations of an entity actually refer to the same entity so again as we mentioned before if I was going to extract some entities from some data related to Amazon for example I might end up with two nodes Amazon and separately Amazon Inc um but of course these these two should be considered the same entity so we have consistency in our graph and the all the information related to Amazon is in the same region in the same center of the graph uh so it's that's that's the problem a nutshell um as I also said not a new problem newly relevant because of the possible applications of extracting graphs with llms from unstructured or semi-structured data and it's important because yeah if you have your your duplications of your entities and your information scattered between those entities it's going to definitely limit the quality of insights or quality of just the usability of your graph quite obviously some methods uh starting at the top uh the dream case wherever you can apply it the simplest ways just business rules uh in other words if you have you can you can say that if we have two user nodes with the same phone number then we're going to consider them the same user if we have notes of our offices in different locations if they have the same address we're going to consider them the same same office um beyond that we have semantic similarity which is going to be very familiar to anybody who's worked with rag so just Vector embeddings of node properties and then running semantic similarity on those vectors so if we have a node with a name company node with a name Tesla in the industry of autonomous vehicles that's going to be similar as a another one with the self-driving cars and Tesla Inc and then the third one is more specific to graphs and this going to be structure based similarities so not just the properties of the nodes but actually the relationships of the of the nodes so if we have shared relationships or the same relationships uh between nodes then we can also compute similarity based on that so for Amazon example if there's a relationship has headquarters in Seattle or is a is a has a subsidiary AWS was founded by Jeff Bezos and if they share some of these relationships then we can also leverage that in our similarity calculation cool and that's the intro now the demo so very first we're just going to look at a very simple graph and we're going to use this to show these methods that I mentioned mainly U structural similarity and semantic similarity in action see how they work how you can uh use them in neop forj so for this graph we just have some doctors contributing to projects and working in a field or Department of of medicine and uh the very first thing we want to do before we run any graph algorithms is create a graph projection and for those who aren't familiar or are less familiar with with gra Neo forj or the graph data science Library uh graph projection is like a saved temporary subsection of your graph uh if you're familiar with relational databases uh good analog is something like a database view so you can yeah save save a view of your database or some section of your database and that's useful because first of all you can specify which nodes and which relationships you want to include in the projection so you can narrow the scope for which you run the algorithm but also more generally you need to Define even if you want to include all of your graph uh you need to you need to create the projection first because you can only run the algorithms on these projections so we're going to do that including all our nodes and all our relationships we can also specify the orientation of the relationships in our projection uh so if it's undirected then that means that the projection isn't going to carry any uh information about the directions of the relationships uh it's just going to have the information that there is a link between these two nodes for example um but if we change it to Natural then it's going to preserve the original directionality as well but we here here we're just going to set it as undirected and create this projection and with the projection created we can now run this uh quite simple node similarity algorithm which you can find the details of in the neo4j documentation and these just computes are similarity based on based on the shared relationships um and shared neighbors that the nodes have and doesn't take into account anything else so for our example these are the scores we are getting and just to put that in the context of the graph itself the highest score we are getting for these two Dr Baker Dr Clark and that's unsurprising because they do share two of these relationships they both work in oncology they both contribute to this same project now the reason the similarity isn't perfectly one perfect similarity is that Dr Baker also contributes to this other project which is shared by by Dr Clark here so that's just the basics of node similarity and uh for the second one which is the node embeddings for that we're actually going to jump into vs code and the reason for that is that we are going to actually use open AIS out two for the embeddings and um you can you can run you can create embeddings in Neo forj uh natively as well there are some uh embedding algorithms namely uh fast fast what is it called Fast RP yeah fast random projection uh which allows you to calculate a embedding based on you can include relationships you can also include properties um so you that is definitely an option uh in NE forj native uh but for a few reasons one being that I'm just personally more comfortable with python but the second reason is also that just to demonstrate that you can actually also use any kind of embedding model that you want with neo4j and as you'll see in a moment I think it entity resolution is actually a case where it might might be useful to have a fine-tuned embedding model uh but just to show what we're doing here we are just getting all the doctors in our graph here and for each of those doctor nodes we are going to get the text of the skills property which all the doctors have they have some set of skills and this is what we're going to base our embeddings on so we're going to embed those through the open AI endpoints and then we're going to update each node with a new property embedding and set the value as as the embedding and now if we uh reload our graph oh I also actually I had a in my notebook B I had a section for creating the graphs so now we have it double but the point is that now we have this new property of embedding for each doctor and whether you get that embedding from one of Neo 4js embedding options or something else once you have that then you can run the cosign similarity from the GDs library to get a similarity score based on the based on the embedding property and it's messed up a little because of the application I just created but the main thing here is that for Dr Clark and Dr Baker that we looked at earlier the coine similarity of their skills is going to be exactly one because we have given them the exact same skills here so we're going to have perfect similarity and then it's just going to go down for for the other ones now generally you'll see that all these scores are pretty high although a lot of the doctors do actually have very Sim different skills and the reason for that is that we are using a generic embedding model which is what Ada 2 from open AI is and that means that although in the context in the specific context of medicine some skills might be very different but for a generic embedding model they're still all like medical terms and as a baseline they're going to get high scores High similarity scores and so that's what I mean when I say that a fine tun model might be useful for this kind of use case uh because it is like we are quite sensitive to like subtle subtleties in um a certain type of similarity or difference in our values um so yeah u f tun embedding model for this to get more precise similarity scores might be might be useful here but that's just to demonstrate how these work no similarity and um and coine similarity in NE forj but now we're going to look at a slightly more realistic graph which I have loaded here maybe be before we before we do that there was there were there were a couple of points um oopsie Let's uh let's do it like this um that uh came up in chat so maybe we we take a short break here um a good comment from from Mark uh came in chat that um is using Neo forj Vector search to find similar nodes and then subject those to rigorous pairwise Logic the Ann search does a fantastic job R using the number of pairs to compare and he showed this in a in a session at nodes 2023 I linked that one in the in the video description so if you want to know more more about that then you can find that in the YouTube video description um um he Manu says what I'm really interested about is how graph structure is going to help in doing dbe because other things can be done with other things yes uh I guess that's something we gonna we're gonna show show next right so that's that's like look into the graph structure so that's that's that's perfect um and then maybe quickly for Alex um I think it was answered but just for everybody else uh what kind of embeddings did you use text embeding node Properties or graph embeddings such as not to V I think you ended up using text embeddings but um yeah so there's a there's a variety of options um like you can you can use the node similarity algorithm for the relationships and then you can separately do do text embedding or you can also do something like node two back uh which or or fast fast RP which allows you to create the embeddings based on both uh what we are going to look at in the next next part is actually combining these two approaches that I just showed into some kind of like combined combined similarities core uh that we can then use for the D2 pin cool but yeah there's there's a lot of a lot of different options yeah um so it's just boil down to what you what suits you the best personal preference yeah yeah makes sense and what works the best and what works the best yeah of course yeah cool all right uh yeah if you if you continue um with the questions then uh I'll I'll read them out um as we as we go along but I didn't want to interrupt your um uh your demo just just while you were talking yeah no awesome awesome feel free to interrupt me I can uh steam steam through pretty fast cool now I lost your screen I think um oh yeah I'm going to redo it y all right oh there it is perfect so this time we are looking at a graph of Amazon and it's various subsidiaries as well as their services some key people involved uh Etc and this been partially extracted by some from some Wikipedia articles um uh about Amazon and AWS and zapo mainly but I will also say in terms of transparency I've also done quite a bit of post editing in in in order to make it more more suitable for the demo but for our purposes what we are especially interested here is the fact that there are in fact two versions of Amazon here we do have our Amazon and Amazon Inc uh as I alluded to before and we also have separately Amazon web services here and AWS here sharing some of the edges and some of the properties so we're going to jump back into vs code and uh we're going to try and see if we can apply the methods covered previously and try and uh detect these these duplicates and then get rid of them so again the first step is going to be creating the graph projection selecting all the nodes and some of the relationships that are relevant and we're going to start by just running the node similarity on its own and we're convert the results into a data frame and indeed because our duplicates here do share a lot of the edges we do get high high scores for them additionally we can also see that we get a somewhat some similarity for Amazon Fresh and Whole Foods which is also not that surprising because they also here share some some properties both offering groceries being owed by Amazon and uh but this again highlights the I think importance of not just relying on one on the structure itself um because that can be shared across nodes but in fact if they are different in other ways uh in their properties for example and then that's going to be important to capture in our logic as well so for the embeddings and the coign similarity the process is also going to look similar as in our previous dummy example except that this time instead of just taking one property which was the skills property of the doctors uh especially if we are working with a graph that's partially extracted from unstructured data we might not always be sure what properties each node has uh so for our embedding text string we are going to join all the properties that a node has uh regardless of any arbitrary amount of properties or their names that the node might have and we We join that into a text string and then this text text string is the one we embed again setting it as a as a new embedding attribute and so we're going to run that and then once the embeddings finished Computing then we're going to run the same cosine similarity function from GDs and now we also get get the scores for for these these notes can can we a little bit into this one oh yeah yeah please yeah cool thank you might also do this yeah and so this is a bit of a gamed example in the sense that being such a well-known company even the generic embedding model is going to recognize that these two are very similar so it is going to give us a very high similarity scores for AWS and Amazon web services um one point here is that we also get a very high score for these two Amazon books and Amazon web store and what that tells here is that if I can find the two nodes we don't have a lot of properties for them like all we have is this uh industry and a name for each and of course the fact that there's Amazon in the name and the industry is quite similar uh it makes sense that the coign similarity is going to be quite high but what this tells us is that and I'm going to mention this later as well but one thing I found is that the quality of your extraction really influences the quality of your entity resolution a lot because the more properties you can extract in the early St early stage of your graph construction that just means that you have more to play with when it comes to entity resolution and defining the process for your entity resolution you'll have different attributes for differentiating different nodes uh and whereas if you just have a very limited amount of information then it's going to be then the noes are either going to be completely different or complet completely similar like all the companies in a one industry for example might show up very very similar in your efforts to do entity resolution uh and it can be difficult to actually differentiate them in the in the way that matters now with the coine similarity and the node similarity what we now want to do is we are going to combine them as I said into one score in a very simple way in this case but here again like you could have and you probably would have a lot more let's say uh Nuance to how you actually calculate the final score you could do a mean you could do a simple multiplication as we've done here but you could also add weights to one aspect of the of the uh scoring uh depending on what you think is going to give you the most signal about about the the duplication so that's something that you you'd also have the option to think about here uh how to do best but for this demo we're just going to do a very simple multiplication getting us this combined score which just in a very simple sense combines both the node similarity based on the structure but then also the cosign similarity and after that however you get to that final final stage uh whatever your process looks like what the D application is is typically going to look like after that is simply setting some threshold or some rule for you to decide that two nodes are in fact the same and here we are going to use this same as relationship that we're going to create between two nodes when we once we do decide that they are the same and we're just going to use this um unusually low threshold of 0.20 but it's going to work for our purposes here and then we're going to iterate over all the rows in our data frame see which node pairs have a similarity score above our threshold and then we can create the same as relationships and now we can see that now these two nodes are in fact tagged as as being the same and so with that in place the last thing we need to do is we just need to merge the nodes that have the same as relationship in this way uh matching matching finding the node pairs that have the relationship uh we're going to delete the same as relationship right after that because we don't need it anymore and we don't need it to be cluttering our graph uh Beyond this step and then for all those no pairs uh we're just going to use the apar refactor merge nodes uh which is going to combine these node Pairs and merge their relationships as well and uh that's going to be the end of our de application process basically um but here again although it seems simple here but in reality this is another point where you would have to do some consideration because okay you have your two nodes that you want to merge but if they have conflicting properties for example they have different emails or whatever else different properties or different relationships which ones do you want to prioritize because essentially you will you're going to have to choose one node to keep and one node to delete and then just um how how you do how how you choose that node whether you want to use the some kind of a creation date or updation date and select the newer one or maybe the older one um in reality that's also a consideration that needs to be made at this step but now if we run this then the end results should be indeed that we no longer have Amazon Inc and then we also don't have AWS here and that's basically the end of the demonstration I will say it is like as as I mentioned it is sadly almost a bit of a still a simplified example because in reality these processes would be uh very let's say multi multifaceted and very very elaborate and it's also difficult to come up with a data set that can match that while also being simplified enough to be be followable in a demo yeah but hopefully that gives you a basic idea of how you might approach this problem cool and with that I just have a few more final remarks here and then we can use the last rest of the time for some Q&A y I think I covered most of these already before but yeah as I said better extraction better resolution um the more you can extract good data um earlier in the pipeline the better your option are going to be and better your qu results are probably going to have in the resol resolution uh particularly if you can find ways to find these kinds of uni unique identifiers in the extraction extraction phase whether it's emails or phone numbers or some stock tickers stock symbols something that you can use to Anchor um entities as being a particular type of entity that's really going to help your process later on and yeah this I said to toas at the very beginning the reality is that it's here we D duplicated companies but in a real scenario we would probably also have um duplicates of people duplicates of services um duplicates of Brands and we we wouldn't be able to use the same logic the same properties the same embedding uh configuration for one node type that we can use for another so in reality you probably have to Define this kind of a process um of steps for as many different duplication problems that are going to happen in your particular graph and then just find a way to also run those in some particular order because the order is also going to matter um because every time you merge some nodes you resolve some entities it's going to change the structure of your graph and and then if you use that structure to compute similarity for some subsequent steps then you know the order of the steps is also going to be important uh final note is that llms I think also can can be one um useful tool in this step as well as the extraction but also the resolution like it's obviously not feasible to just feed your entire graph uh to an llm and ask it to spot um duplicate um Beyond a certain size of a graph that just obviously isn't feasible anytime you want to update some data is to you know feed the whole graph to an llm but if you do use methods like the ones I described here to narrow down the scope of okay here we have some potential duplicates uh in this you know section of our graph then maybe that smaller slice you can then pass on to an llm for also some further let's say validation or F further um further analysis to help highlight highlight those uh D duplicates oh those duplicates so some combination of like that I haven't worked with that myself um but I think if I was going to make a make a video continuation on that uh I think that would probably be a significant part of it so thank you cool thank you very much johanes that was that was cool that was good good to see good to good to hear and and thank you for the demo especially that made it all a little bit um more real life I would say so uh so that helped helped a lot um there were a couple of questions in chat uh I'd like to to talk about I think they are interesting ones so Alex asks uh any suggestions for metrics that might be used to help identify a threshold so I think what they mean is um when when do you think similarity score is high enough that you would say okay this this is now good enough to uh to deem uh a merge uh and and you know in in your case it was it was pretty clear you look at AWS you look at Amazon web services you okay you know this makes sense but you know the the the whole fools and Amazon Fresh example was like okay yeah there is some similarity there but maybe not enough do you do you have some experience on that could you you have some some ideas of of how to approach that um I'm trying to avoid giving the cup out answer of it depends but uh yeah the the reality is that I think the key factor there is is that like our our threshold here was set very low but in a different kind of graph you might have a just a baseline a lot of similarities between entities as a baseline a lot of shared uh structure shared properties um without that indicating necessarily that you know they are they are duplicates whereas in another one even one or two key relationships like for example if it's if it's like one of these very high signal relationships like having a certain CEO or having a certain product that that might be like a dead giveaway that as long as this one relationship is is shared um the threshold can be very low MH uh if that makes sense I I think yeah just it just comes down to how much how much similarity there is between your uh entities as a Baseline and then you are looking for the outliers beyond that Baseline but if your Baseline is already like very low and there isn't a lot of similarities uh as a as a as a rule then even um small deviations above that Baseline might indicate that you know there is a there is a duplicate there yeah do you think it might might help to add uh Vector search on top of the the node similarity or the the the the looking at the graph structure and add add another another tier to to it is that something that would be helpful I mean principle yeah like all all that cosine like vector Sim Vector search is basically in most case is just cosine cosine similarity uh so basically that's already we aren't doing a search uh exactly but we are basically doing the same the scoring is based on the exact same metric that a vector search would be based on so in some sense we are already doing it yeah okay cool look like you want to say something yeah I'm I'm eager to hear Thomas's no no but because I'm going to say first of all it was this week or last week I talked with uh some people who like did submitted to Archive but they haven't published a paper yet and they did the exact same thing that she did here which is just basically take the coign similarity of names and then uh uh try to basically just compare the C and similarity between entities and then in their case they took a really high threshold because they would rather have false negatives than false positives right so you rather not merge uh by my by my stake then merge by my mistake if that makes sense right so if that makes that means that two entities if they're different they will still be different but two entities that might be the same might not be merged in that case so like when you're talking about threshold it also like depends you wanted to Avid it but it really depends what you want to do and like what's your preference are you more strict or less strict and what I wanted to say is that with like even with entity duplication you don't have to merge the final nodes right if you say these two are identical right based on threshold you don't have to merge them you can just leave the same as relationship and then maybe have like uh uh like a manual riew that someone who who basically like an domain expert says okay this is and this is not or it could just stay same as forever in the graph right because when you merge the notes you kind of lose some of the information and then you don't really know uh how you say if you made a mistake you will never know that that mistake was made because you mged that information right so maybe in some cases it it makes sense to not um merge the nodes at all yeah yeah that makes a lot of sense that's a good point and yeah I mean like you said LM a lot of people are using K but it can be quite costly it can be quite costly and then it depends like if you to LM or like how much do to Ed property and it's like yeah I mean I know but what you could do is like for example use an embedding uh similarity to find like potential candidates and then the final step authorization is done by an llm who say okay this is to be merged and this is not to be merged so that could be like more automated and expensive way of doing yeah is is a good good comment slash question from Peter in chat right now um if entities change over time is there a Best practice for representing that in a graph do you you know once you do the merge once you decide okay these are these have been duplicates do is there is there do you do you want to keep this track somehow is this is this something you you would you would put there or is this something you you you know you don't yeah I mean if you say usually [Music] you I mean there are best practices for representing changes over time you have some versioning uh based on time and then it it depends how complex and granular they want to be because you can have like States of each uh entity sort of like what's the state of entity in like 2020 and what's the state of the 10ty in 2021 so there's a lot of things you can do uh but like my if I my advice would be just uh try to keep it as simple as possible yeah yeah I mean that that that's good and it's it yeah like you said it depends a little bit on what you what what's important um and what you want to want to get out of it in the end if if if if a full history is is very important and that makes sense to add that if it's not as not as relevant maybe for some reason or other then you know maybe keep it keep it simple and um cut down a little bit on the overhead um there is another question from Manuel to both of you uh what do you think about the idea of applying any of the re-anchor solutions out there to identify High similarity for entity resolution and he adds it is true that with low context nodes and property sometimes can be very Overkill but I have the impression this could be a good approach for the similarity identification in a first stage any any idea re-anchor Solutions does that ring any bells yeah I mean is just again some sort of similarity right cuz I think uh in Rec applications when you do re ranking is kind of another so it's not the same like for example if you do Rec application first you let's say do coine similarity with like text embeddings like a 002 and you select like top 100 results and then you do ranking to find the most most relevant one so ranking is kind of another um similarity metric right so yeah I mean definitely the more um similarity metrics like reasonable and uh with signal simility matics that you can incorporate the better right yeah and also what rer rankers often often use is some kind of um some kind of training data of examples and that I think uh ties into ties into what I said about fine tuning in particular um so you could have some training set or test sets of of well it's it would be I wouldn't I wouldn't want to Define that kind of a test set for um uh this kind of application because it would be a it would be a lot of work but if you were going to like yeah reranking is just another like scoring process that's that's all it is uh applying applying some some um conditions you usually it's just a different kind of um embedding sometimes it involves some like user preference data that we have from a history uh results in the context of rag results that uh um have been preferential to users in the past we can use that to rerank uh results uh in the future um so sure you could apply something similar here but it's I think less it's less of a it's not so different in some sense to the kinds of methods that we talked about here earlier it's in some sense it's just a like a different name for doing more of the same stuff like thas said cool um there's one more question from himu for real life pipelines though extracting more property seem to be better but these other properties also have high amount of duplicate duplicates in them any idea suggestions for for that H yeah I I would say I would generally say more is is better because you can always choose which properties you can select for your U similarity computation uh and then if you have more to choose from then you can probably just try and choose the ones that are most let's say most signal uh most distinctive of of each entity and in other words if you compare on those then that's going to be more of a better better results for your similarity scoring yeah it can it can be problematic if you have a lot of properties that are just like shared across the board and can kind of like blow your similarity scores but I think that's like you can you can you can you can set your thresholds higher you can not select some of the properties that is going be just going to be shared between the mon noes um so yeah I would still definitely say uh more is better and then you can choose which ones to use yeah I mean I would just said that basically this is a really hard problem that like before LMS even Academia was interest and not it's not like a solved problem right it's just like do what you can with the options that you have and and that's it because there's also like one we didn't mention specifically but there's also the concept of entity linking so if you have like a Target database that you can link your entities to uh so basically uh for example the most U common example is like having Wikipedia as your target knowledge base and then you try to map entities in the text to Wikipedia right so that is your kind of disambiguation the duplication part basically for each entity return Wikipedia ID uh and uh for a long time I was a fan of that but that doesn't really that's not really a flexible solution right because okay Wikipedia knowledge Bas is nice but now let's say we want to extract uh like internal documents for company I mean not all employees are on Wikipedia and stuff like that so they're always trade off but there's a What U and I think with the uh The Entity linking there are like some end to end models that you can take a look at which is quite interesting interesting so you kind of train a model to do the disambiguation for you based on like uh available options and they like I said people have tried a lot of things uh and it's not a solv problem so yeah tricky maybe maybe I will also say maybe on a I mean it's everything Thomas said is true as a as a note of hope I would also say that like there is a spectrum of of applications here and it's not just like you always need to get your graph from zero from unstructured data to something you know that's pristine and uh consistent and doesn't have duplicates uh but often you can lean on like some ex existing uh relationship structure in your data you already have some links uh that are like known and high quality and then you can maybe just build on that by adding some uh extracted unstructured data um and and then then you know the problem does become a little little more feasible uh but yeah if if you are trying to build build a graph application from just like entirely llm extracted data it's like basically an unol problem in in a lot of ways yeah but the good thing is like you said that uh a lot of times we have like a good enough uh like cut off and we can say I mean it's good enough because even like Google does that like I know there are some companies that scrape the internet and kind of do the same thing and like for the most part it's fine right so like if you can kind of identify what you're like good enough threshold and just try to aim aim to achieve that I think it should be fine I mean it's going to it's going to take some work obviously uh but it's achievable like said it's not like you're gonna just waste your time It's Tricky um maybe we we we cover one more questions be one more question before we close I was uh sent in from uh doron uh and they ask did how does this method that you just showed youan how does that compare with Integrity checks in in relational data base are there can can you compare it at all and is there is there any lessons to to learn from from from using um this system or the other system or is that not really comparable well I think it's almost more comparable to what to much said about um having references in your entities uh where you can validate that the you can validate the data from The Source level um I think that would be like yeah that would be maybe the closest closest equivalent okay that comes to mind cool all right um yeah and I think with that um we um we can we can close it for today um thank you very much johanes thank you very much Tomas for for joining today for the demo and for the slide slides uh and for the time obviously so that was was really nice um and a cool um cool demo and and Hands-On session uh thank you all for for watching um this session today before you all go I'd like to remind you that we run a couple of workshops this week next weekend afterwards starting with an intro to near forj session on Thursday so we will be uh conducting these online uh training Series so if you are interested in joining one of those more of those all of them then um check out the link I post in in the in the chat uh or use the one that is visible here on on the screen and uh suggest you um you know to join one of those if if that's an interesting topic um that also means that we'll take a little break uh with NE forj lives uh over the next couple of weeks in favor of this one um so um next session is going to be early April I think with a going meta episode um so until then um yeah we we continue doing uh trainings and all that stuff so we'd like to see you there um and join us then again uh thank you very much Tas and johanes for for your time today and for the presentation thank you all for watching and yeah I hope to see you soon uh oh yeah one more question janas I forgot about this is uh your demo uh is this available somewhere is there GitHub repo or or some kind of Link uh not not yet not yet I'm going to I'm going to share I'm going to try and share it later this week yeah and if people would I'll I'll I'll I can send it to your way maybe I'll comment it on the live stream YouTube recording something I'll add it to exactly perfect yeah cool once it's available then we add it to the video description uh and then there's also way means of getting in touch with you yanes if if uh if need be I I guess yeah yeah cheers all cool thank you very much take care bye bye",
+  "attempts": [
+    {
+      "client": "IOS",
+      "playability": {
+        "status": "OK",
+        "playableInEmbed": true,
+        "offlineability": {
+          "buttonRenderer": {
+            "navigationEndpoint": {
+              "clickTrackingParams": "CAoQ6ewBIhMI2qjglOzblwMVok5MCB3e9jksygEEEu_DIA==",
+              "ypcGetOfflineUpsellEndpoint": {
+                "params": "ChPqqN25AQ0KC0dNVFk3OHhxR1hRIgtHTVRZNzh4cUdYUSoVCAkYAVIPCgtHTVRZNzh4cUdYUSAB"
+              }
+            },
+            "trackingParams": "CAoQ6ewBIhMI2qjglOzblwMVok5MCB3e9jks"
+          }
+        },
+        "pictureInPicture": {
+          "pictureInPictureRenderer": {
+            "playableInPip": true,
+            "offByDefault": false,
+            "shouldResumeOnHead": false
+          }
+        },
+        "miniplayer": {
+          "miniplayerRenderer": {
+            "playbackMode": "PLAYBACK_MODE_ALLOW"
+          }
+        },
+        "contextParams": "Q0FFU0FnZ0M="
+      },
+      "outcome": "ok"
+    }
+  ],
+  "fetched_at": "2026-10-28T04:11:41.969337+00:00",
+  "client": "IOS",
+  "json_path": "transcripts/163_GMTY78xqGXQ.json",
+  "text_path": "transcripts/163_GMTY78xqGXQ.txt"
+}

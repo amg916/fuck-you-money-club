@@ -1,0 +1,111 @@
+{
+  "index": 82,
+  "url": "https://www.youtube.com/watch?v=bsbWDqAXsrE",
+  "video_id": "bsbWDqAXsrE",
+  "status": "ok",
+  "metadata": {
+    "title": "How to Claim Your Property for the California State Controller's Office",
+    "author": "California State Controller's Office",
+    "channelId": "UCB1t8qTtFOibG0WoHX1cOqg",
+    "lengthSeconds": "339",
+    "viewCount": "14611",
+    "shortDescription": "Do you have unclaimed property waiting for you? This tutorial will walk you through how to claim it. \n\nCalifornia Controller Malia M. Cohen safeguards this lost or forgotten property for as long as it takes to reunite it with the rightful owners. There is no deadline for claiming property once it is transferred over to the State Controller’s Office and no fee associated with claiming your property. \n\nSearch for your unclaimed property at https://www.claimit.ca.gov\nLearn more about California's Unclaimed Property at https://www.sco.ca.gov",
+    "keywords": [
+      "california state controllers office",
+      "controller cohen",
+      "unclaimed property",
+      "find my unclaimed money",
+      "search for unclaimed funds",
+      "how to find my unclaimed property"
+    ]
+  },
+  "caption_tracks": [],
+  "selected_track": null,
+  "segments": [
+    {
+      "start": 0.0,
+      "duration": 339.0,
+      "text": "Controller Malia M. Cohen introduces ClaimIt.ca.gov and explains California Unclaimed Property Law. After three years of dormancy, covered property can include bank accounts, stocks, uncashed checks, insurance benefits, wages and safe deposit box contents. Real estate is excluded. Search by Last or Business Name, First Name and City or ZIP, or by Property ID. Active escheated properties have a +CLAIM button. Pre-escheat Notice properties have an INFO button showing holder contact information and a June 1 transfer deadline; an owner can contact the holder directly before transfer. Add multiple properties to the Claim Cart. Select the Claimant Relationship: Myself; Business Officer/Dissolving/LLC/Sole Prop; Heir; Heir-Trust; Heir-Will; Heir-Court Appointed Rep; Heir-Final Decree Distribution; Holder Reimbursement; Government Agency; or Bankruptcy Trustee. Complete the three-step eClaim form. Step 1 collects contact information, SSN and date of birth. Step 2 is an electronic signature under penalty of perjury. Step 3 presents a claim summary with Claim ID and a confirmation email within 24 hours. Upload verification documents through Upload Claim Documentation, with up to five files per batch in PDF, JPG or JPEG format, each between 1 KB and 15 MB. Document types include ID, SSN, Proof of Reported Address, Death Certificate, Trust/Will/Probate Decree and Investigator Agreement. Check status at ClaimIt.ca.gov or call 1-800-992-4647.",
+      "timing": "whole_video_coverage_not_quote_timestamp"
+    }
+  ],
+  "full_text": "Controller Malia M. Cohen introduces ClaimIt.ca.gov and explains California Unclaimed Property Law. After three years of dormancy, covered property can include bank accounts, stocks, uncashed checks, insurance benefits, wages and safe deposit box contents. Real estate is excluded. Search by Last or Business Name, First Name and City or ZIP, or by Property ID. Active escheated properties have a +CLAIM button. Pre-escheat Notice properties have an INFO button showing holder contact information and a June 1 transfer deadline; an owner can contact the holder directly before transfer. Add multiple properties to the Claim Cart. Select the Claimant Relationship: Myself; Business Officer/Dissolving/LLC/Sole Prop; Heir; Heir-Trust; Heir-Will; Heir-Court Appointed Rep; Heir-Final Decree Distribution; Holder Reimbursement; Government Agency; or Bankruptcy Trustee. Complete the three-step eClaim form. Step 1 collects contact information, SSN and date of birth. Step 2 is an electronic signature under penalty of perjury. Step 3 presents a claim summary with Claim ID and a confirmation email within 24 hours. Upload verification documents through Upload Claim Documentation, with up to five files per batch in PDF, JPG or JPEG format, each between 1 KB and 15 MB. Document types include ID, SSN, Proof of Reported Address, Death Certificate, Trust/Will/Probate Decree and Investigator Agreement. Check status at ClaimIt.ca.gov or call 1-800-992-4647.",
+  "attempts": [
+    {
+      "client": "IOS",
+      "playability": {
+        "status": "OK",
+        "playableInEmbed": true,
+        "offlineability": {
+          "buttonRenderer": {
+            "navigationEndpoint": {
+              "clickTrackingParams": "CBAQ6ewBIhMI06rpjezblwMV-CsvCB2C3xypygEE7yIMWg==",
+              "ypcGetOfflineUpsellEndpoint": {
+                "params": "ChPqqN25AQ0KC2JzYldEcUFYc3JFIgtic2JXRHFBWHNyRSoVCAkYAVIPCgtic2JXRHFBWHNyRSAB"
+              }
+            },
+            "trackingParams": "CBAQ6ewBIhMI06rpjezblwMV-CsvCB2C3xyp"
+          }
+        },
+        "pictureInPicture": {
+          "pictureInPictureRenderer": {
+            "playableInPip": true,
+            "offByDefault": false,
+            "shouldResumeOnHead": false
+          }
+        },
+        "miniplayer": {
+          "miniplayerRenderer": {
+            "playbackMode": "PLAYBACK_MODE_ALLOW"
+          }
+        },
+        "contextParams": "Q0FFU0FnZ0M="
+      },
+      "outcome": "no_caption_tracks"
+    },
+    {
+      "client": "ANDROID",
+      "playability": {
+        "status": "OK",
+        "playableInEmbed": true,
+        "offlineability": {
+          "buttonRenderer": {
+            "serviceEndpoint": {
+              "clickTrackingParams": "CAsQ6ewBIhMI79aUjuzblwMVq2xMCB3upDxmygEE65iFAA==",
+              "ypcGetOfflineUpsellEndpoint": {
+                "params": "ChPqqN25AQ0KC2JzYldEcUFYc3JFIgtic2JXRHFBWHNyRSoVCAkYAVIPCgtic2JXRHFBWHNyRSAB"
+              }
+            },
+            "trackingParams": "CAsQ6ewBIhMI79aUjuzblwMVq2xMCB3upDxm"
+          }
+        },
+        "pictureInPicture": {
+          "pictureInPictureRenderer": {
+            "pictureInPictureStyleConfig": {
+              "enableScrubbing": true,
+              "enableNavigationControls": true
+            },
+            "pictureInPicturePlayability": "PICTURE_IN_PICTURE_PLAYABILITY_SHOPPING"
+          }
+        },
+        "miniplayer": {
+          "miniplayerRenderer": {
+            "playbackMode": "PLAYBACK_MODE_ALLOW"
+          }
+        },
+        "contextParams": "Q0FFU0FnZ0M="
+      },
+      "outcome": "no_caption_tracks"
+    }
+  ],
+  "fetched_at": "2026-10-28T04:11:27.084249+00:00",
+  "json_path": "transcripts/082_bsbWDqAXsrE.json",
+  "text_path": "transcripts/082_bsbWDqAXsrE.txt",
+  "client": "STORYBOARD_OCR",
+  "provenance": {
+    "source": "user_supplied_storyboard_and_description",
+    "verbatim": false,
+    "time_aligned": false,
+    "verification": "User reported verified storyboard review; not independently re-OCRed."
+  }
+}

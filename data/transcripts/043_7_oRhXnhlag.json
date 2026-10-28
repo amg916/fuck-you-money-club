@@ -1,0 +1,439 @@
+{
+  "index": 43,
+  "url": "https://www.youtube.com/watch?v=7_oRhXnhlag",
+  "video_id": "7_oRhXnhlag",
+  "status": "ok",
+  "metadata": {
+    "title": "Primary Sources: Understanding guardianship in probate proceedings",
+    "author": "Five-minute genealogy",
+    "channelId": "UC6qnMgXP1jQMuUP8vTVoU3g",
+    "lengthSeconds": "293",
+    "viewCount": "138",
+    "shortDescription": "Guardianship in probate proceedings is so easy to misunderstand. In this video, I'll give you an overview on guardianship, especially in context of Colonial and early republic probate proceedings.",
+    "keywords": [
+      "Guardianship",
+      "Philip Schlauch",
+      "Philip Slough",
+      "Family History",
+      "Genealogy",
+      "Probate",
+      "Intestacy",
+      "Intestate",
+      "Family research",
+      "custody",
+      "apprenticeship",
+      "five-minute genealgy"
+    ]
+  },
+  "caption_tracks": [
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=7_oRhXnhlag&ei=53XhapLHOqWTsfIPg_fncQ&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185880&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=302F053E27EC1EC91076342113E1690B1C90E107.B6154EE5C3C6E4629B19FB00AC2B9660375CA864&key=yt8&lang=en",
+      "name": {
+        "runs": [
+          {
+            "text": "English"
+          }
+        ]
+      },
+      "vssId": ".en",
+      "languageCode": "en",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=7_oRhXnhlag&ei=53XhapLHOqWTsfIPg_fncQ&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185880&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=302F053E27EC1EC91076342113E1690B1C90E107.B6154EE5C3C6E4629B19FB00AC2B9660375CA864&key=yt8&kind=asr&lang=en",
+      "name": {
+        "runs": [
+          {
+            "text": "English (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.en",
+      "languageCode": "en",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    }
+  ],
+  "selected_track": {
+    "baseUrl": "https://www.youtube.com/api/timedtext?v=7_oRhXnhlag&ei=53XhapLHOqWTsfIPg_fncQ&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185880&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=302F053E27EC1EC91076342113E1690B1C90E107.B6154EE5C3C6E4629B19FB00AC2B9660375CA864&key=yt8&lang=en",
+    "name": {
+      "runs": [
+        {
+          "text": "English"
+        }
+      ]
+    },
+    "vssId": ".en",
+    "languageCode": "en",
+    "isTranslatable": true,
+    "trackName": ""
+  },
+  "segments": [
+    {
+      "start": 0.089,
+      "duration": 3.771,
+      "text": "Probate documents are one of the best primary source documents, but they’re also one of"
+    },
+    {
+      "start": 3.86,
+      "duration": 1.33,
+      "text": "the most complicated."
+    },
+    {
+      "start": 5.19,
+      "duration": 4.61,
+      "text": "Where I see the most confusion, though, is understanding guardianship, especially in"
+    },
+    {
+      "start": 9.8,
+      "duration": 2.89,
+      "text": "Colonial and early Republic probate proceedings."
+    },
+    {
+      "start": 12.69,
+      "duration": 4.56,
+      "text": "I’m Mike O’Neill, and I’m going to give you an overview of guardianship, if I can,"
+    },
+    {
+      "start": 17.25,
+      "duration": 1.88,
+      "text": "in five minutes."
+    },
+    {
+      "start": 19.13,
+      "duration": 4.43,
+      "text": "If you want to dig deeper, I recommend spending some time at “Bob’s Genealogy Filing Cabinet”"
+    },
+    {
+      "start": 23.56,
+      "duration": 1.0,
+      "text": "at genfiles.com."
+    },
+    {
+      "start": 24.56,
+      "duration": 7.62,
+      "text": "And actually, I’m going to start with a couple of quotes from that site’s Orphans"
+    },
+    {
+      "start": 32.18,
+      "duration": 5.26,
+      "text": "& Guardians article, which really does a fantastic job of providing historical perspective."
+    },
+    {
+      "start": 37.44,
+      "duration": 7.0,
+      "text": "“For most of history an orphan was a fatherless child, irrespective of whether the mother"
+    },
+    {
+      "start": 44.44,
+      "duration": 1.0,
+      "text": "was living.”"
+    },
+    {
+      "start": 45.44,
+      "duration": 4.02,
+      "text": "“The guardian’s responsibility was focused on the property of the orphan [not] on the"
+    },
+    {
+      "start": 49.46,
+      "duration": 5.51,
+      "text": "orphan himself… the primary purpose of a guardian was to provide for management of"
+    },
+    {
+      "start": 54.97,
+      "duration": 5.83,
+      "text": "the orphan’s estate, and to use that estate for his maintenance and education…"
+    },
+    {
+      "start": 60.8,
+      "duration": 3.859,
+      "text": "Guardianship thus had nothing to do with physical custody."
+    },
+    {
+      "start": 64.659,
+      "duration": 4.311,
+      "text": "Courts almost always assumed that orphaned children would live with their mother if she"
+    },
+    {
+      "start": 68.97,
+      "duration": 2.469,
+      "text": "was alive and capable of rearing them.”"
+    },
+    {
+      "start": 71.439,
+      "duration": 5.96,
+      "text": "Honestly, if you can internalize that, then you can stop watching this video."
+    },
+    {
+      "start": 77.4,
+      "duration": 0.56,
+      "text": "You’ve got the message."
+    },
+    {
+      "start": 77.96,
+      "duration": 4.24,
+      "text": "Guardianship was about finances, not about raising a child."
+    },
+    {
+      "start": 82.6,
+      "duration": 8.52,
+      "text": "Of course, I have a few things to add, along with an example of how to misinterpret guardianship."
+    },
+    {
+      "start": 91.13,
+      "duration": 5.259,
+      "text": "First, pay close attention to when the courts assign guardians."
+    },
+    {
+      "start": 96.389,
+      "duration": 5.29,
+      "text": "Many courts will note in the record that a child was below or above a certain age."
+    },
+    {
+      "start": 101.679,
+      "duration": 4.701,
+      "text": "For probate proceedings taking place over many years, you can get very accurate estimates"
+    },
+    {
+      "start": 106.38,
+      "duration": 1.94,
+      "text": "of when some of the children were born."
+    },
+    {
+      "start": 108.32,
+      "duration": 3.22,
+      "text": "Now why do probate courts do this?"
+    },
+    {
+      "start": 111.54,
+      "duration": 3.64,
+      "text": "Typically, children had different rights depending on their age."
+    },
+    {
+      "start": 115.18,
+      "duration": 5.92,
+      "text": "For example, in Pennsylvania, a minor below the age of 14 was assigned a guardian"
+    },
+    {
+      "start": 121.1,
+      "duration": 7.48,
+      "text": "Minors above the age of 14 could request the court assign a specific guardian of their choice."
+    },
+    {
+      "start": 128.66,
+      "duration": 4.299,
+      "text": "Second, probate was a family affair."
+    },
+    {
+      "start": 132.959,
+      "duration": 5.25,
+      "text": "When courts assigned guardians, they typically chose close family members to play the role."
+    },
+    {
+      "start": 138.209,
+      "duration": 4.89,
+      "text": "As an example, I have been struggling for three years with the role of two brothers,"
+    },
+    {
+      "start": 143.099,
+      "duration": 6.09,
+      "text": "Thomas and Joseph Chew as the guardians chosen by Nancy Chew Overman—I can’t figure out"
+    },
+    {
+      "start": 149.189,
+      "duration": 5.241,
+      "text": "how Nancy was related to the two men, and the widely accepted genealogy puts Thomas"
+    },
+    {
+      "start": 154.43,
+      "duration": 6.639,
+      "text": "and Joseph as siblings to a completely different Nancy Chew, which would have made Nancy Overman"
+    },
+    {
+      "start": 161.069,
+      "duration": 3.521,
+      "text": "a fourth or fifth cousin."
+    },
+    {
+      "start": 164.59,
+      "duration": 7.38,
+      "text": "Third, realize how different education is today compared to a century ago."
+    },
+    {
+      "start": 171.97,
+      "duration": 7.049,
+      "text": "In 1919, only 17% of high school students graduated, which was nearly triple the rate"
+    },
+    {
+      "start": 179.019,
+      "duration": 1.591,
+      "text": "of 1900."
+    },
+    {
+      "start": 180.61,
+      "duration": 9.519,
+      "text": "In 2016, 84% graduated high school."
+    },
+    {
+      "start": 190.129,
+      "duration": 1.021,
+      "text": "Go back to the 1800s?"
+    },
+    {
+      "start": 191.15,
+      "duration": 3.69,
+      "text": "High schools didn’t really even exist."
+    },
+    {
+      "start": 194.84,
+      "duration": 6.42,
+      "text": "Education happened in a one-room school house that ended after the eighth grade."
+    },
+    {
+      "start": 201.26,
+      "duration": 4.979,
+      "text": "Go back even further to the colonial era, your education happened on the job, either"
+    },
+    {
+      "start": 206.239,
+      "duration": 3.08,
+      "text": "from your parents or via an apprenticeship."
+    },
+    {
+      "start": 209.319,
+      "duration": 6.381,
+      "text": "For example, in colonial Pennsylvania, apprenticeship was such an important educational path that"
+    },
+    {
+      "start": 215.7,
+      "duration": 9.33,
+      "text": "a 1713 law granted the courts the explicit power to place a minor orphan into an apprenticeship"
+    },
+    {
+      "start": 225.03,
+      "duration": 3.51,
+      "text": "or other form of employment upon the request of a guardian."
+    },
+    {
+      "start": 228.54,
+      "duration": 1.5,
+      "text": "Now why is that important?"
+    },
+    {
+      "start": 230.04,
+      "duration": 4.88,
+      "text": "If you see a probate document where a child was handed off into an apprenticeship"
+    },
+    {
+      "start": 234.92,
+      "duration": 3.8,
+      "text": "you might think there's a wicked stepfather thing going on."
+    },
+    {
+      "start": 238.72,
+      "duration": 3.12,
+      "text": "That wasn't the case at all. That's how you got educated."
+    },
+    {
+      "start": 241.98,
+      "duration": 4.36,
+      "text": "Let's look at an example of how to misinterpret guardianship."
+    },
+    {
+      "start": 246.5,
+      "duration": 4.62,
+      "text": "Here’s an excerpt from a genealogy of the Slough family in Pennsylvania."
+    },
+    {
+      "start": 251.12,
+      "duration": 6.14,
+      "text": "The story is that a wicked step-father banished his step children from their home and placed"
+    },
+    {
+      "start": 257.26,
+      "duration": 2.9,
+      "text": "them into the care of guardians on nearby farms."
+    },
+    {
+      "start": 260.16,
+      "duration": 2.7,
+      "text": "You can already see the problem right there."
+    },
+    {
+      "start": 262.86,
+      "duration": 3.5,
+      "text": "The author equated guardianship with custody."
+    },
+    {
+      "start": 266.36,
+      "duration": 5.17,
+      "text": "What really happened is that when Philip Slough died intestate, his children were all minors,"
+    },
+    {
+      "start": 271.53,
+      "duration": 5.13,
+      "text": "so the court assigned them guardians to protect their financial interests and represent them"
+    },
+    {
+      "start": 276.66,
+      "duration": 1.12,
+      "text": "in court."
+    },
+    {
+      "start": 277.78,
+      "duration": 5.8,
+      "text": "I guess some of the older children could have been apprenticed out to nearby farms, but"
+    },
+    {
+      "start": 283.58,
+      "duration": 1.88,
+      "text": "this would have been typical for the period."
+    },
+    {
+      "start": 285.46,
+      "duration": 6.759,
+      "text": "Thanks for watching my video. If you've got any feedback, please leave it in the comments."
+    }
+  ],
+  "full_text": "Probate documents are one of the best primary source documents, but they’re also one of the most complicated. Where I see the most confusion, though, is understanding guardianship, especially in Colonial and early Republic probate proceedings. I’m Mike O’Neill, and I’m going to give you an overview of guardianship, if I can, in five minutes. If you want to dig deeper, I recommend spending some time at “Bob’s Genealogy Filing Cabinet” at genfiles.com. And actually, I’m going to start with a couple of quotes from that site’s Orphans & Guardians article, which really does a fantastic job of providing historical perspective. “For most of history an orphan was a fatherless child, irrespective of whether the mother was living.” “The guardian’s responsibility was focused on the property of the orphan [not] on the orphan himself… the primary purpose of a guardian was to provide for management of the orphan’s estate, and to use that estate for his maintenance and education… Guardianship thus had nothing to do with physical custody. Courts almost always assumed that orphaned children would live with their mother if she was alive and capable of rearing them.” Honestly, if you can internalize that, then you can stop watching this video. You’ve got the message. Guardianship was about finances, not about raising a child. Of course, I have a few things to add, along with an example of how to misinterpret guardianship. First, pay close attention to when the courts assign guardians. Many courts will note in the record that a child was below or above a certain age. For probate proceedings taking place over many years, you can get very accurate estimates of when some of the children were born. Now why do probate courts do this? Typically, children had different rights depending on their age. For example, in Pennsylvania, a minor below the age of 14 was assigned a guardian Minors above the age of 14 could request the court assign a specific guardian of their choice. Second, probate was a family affair. When courts assigned guardians, they typically chose close family members to play the role. As an example, I have been struggling for three years with the role of two brothers, Thomas and Joseph Chew as the guardians chosen by Nancy Chew Overman—I can’t figure out how Nancy was related to the two men, and the widely accepted genealogy puts Thomas and Joseph as siblings to a completely different Nancy Chew, which would have made Nancy Overman a fourth or fifth cousin. Third, realize how different education is today compared to a century ago. In 1919, only 17% of high school students graduated, which was nearly triple the rate of 1900. In 2016, 84% graduated high school. Go back to the 1800s? High schools didn’t really even exist. Education happened in a one-room school house that ended after the eighth grade. Go back even further to the colonial era, your education happened on the job, either from your parents or via an apprenticeship. For example, in colonial Pennsylvania, apprenticeship was such an important educational path that a 1713 law granted the courts the explicit power to place a minor orphan into an apprenticeship or other form of employment upon the request of a guardian. Now why is that important? If you see a probate document where a child was handed off into an apprenticeship you might think there's a wicked stepfather thing going on. That wasn't the case at all. That's how you got educated. Let's look at an example of how to misinterpret guardianship. Here’s an excerpt from a genealogy of the Slough family in Pennsylvania. The story is that a wicked step-father banished his step children from their home and placed them into the care of guardians on nearby farms. You can already see the problem right there. The author equated guardianship with custody. What really happened is that when Philip Slough died intestate, his children were all minors, so the court assigned them guardians to protect their financial interests and represent them in court. I guess some of the older children could have been apprenticed out to nearby farms, but this would have been typical for the period. Thanks for watching my video. If you've got any feedback, please leave it in the comments.",
+  "attempts": [
+    {
+      "client": "IOS",
+      "playability": {
+        "status": "OK",
+        "playableInEmbed": true,
+        "offlineability": {
+          "buttonRenderer": {
+            "navigationEndpoint": {
+              "clickTrackingParams": "CBEQ6ewBIhMI0tbqiuzblwMVpUlMCB2D-zkOygEEO-KpuA==",
+              "ypcGetOfflineUpsellEndpoint": {
+                "params": "ChPqqN25AQ0KCzdfb1JoWG5obGFnIgs3X29SaFhuaGxhZyoVCAkYAVIPCgs3X29SaFhuaGxhZyAB"
+              }
+            },
+            "trackingParams": "CBEQ6ewBIhMI0tbqiuzblwMVpUlMCB2D-zkO"
+          }
+        },
+        "pictureInPicture": {
+          "pictureInPictureRenderer": {
+            "playableInPip": true,
+            "offByDefault": false,
+            "shouldResumeOnHead": false
+          }
+        },
+        "miniplayer": {
+          "miniplayerRenderer": {
+            "playbackMode": "PLAYBACK_MODE_ALLOW"
+          }
+        },
+        "contextParams": "Q0FFU0FnZ0M="
+      },
+      "outcome": "ok"
+    }
+  ],
+  "fetched_at": "2026-10-28T04:11:20.379885+00:00",
+  "client": "IOS",
+  "json_path": "transcripts/043_7_oRhXnhlag.json",
+  "text_path": "transcripts/043_7_oRhXnhlag.txt"
+}

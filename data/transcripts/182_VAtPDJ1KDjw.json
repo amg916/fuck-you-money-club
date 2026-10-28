@@ -1,0 +1,1765 @@
+{
+  "index": 182,
+  "url": "https://www.youtube.com/watch?v=VAtPDJ1KDjw",
+  "video_id": "VAtPDJ1KDjw",
+  "status": "ok",
+  "metadata": {
+    "title": "Troubleshooting Data Import - Regrid Property App (Web)",
+    "author": "Regrid",
+    "channelId": "UCY6_FliC-rX76wQMYyow-1A",
+    "lengthSeconds": "666",
+    "viewCount": "654",
+    "shortDescription": "Learn how to avoid some common roadblocks when importing a dataset based on parcel numbers on to the Regrid Mapping Platform.\n\nNote: this video was shot prior to an update to the Regrid Property App's interface. While the new version looks a little different, all the functionality is the same as described in the video.",
+    "keywords": [
+      "radius",
+      "focus area",
+      "measure distance",
+      "mapping",
+      "map",
+      "real estate",
+      "land",
+      "property",
+      "spatial analysis",
+      "parcel data",
+      "cadastre"
+    ]
+  },
+  "caption_tracks": [
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=VAtPDJ1KDjw&ei=AHbhavSMCZORsfIPj8aWgQo&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185904&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=1C5F1D7AA7EAA4AD29AB38EDED38E9383EFC5264.6D541E2DCD35B0764FB1F40D4EA920FFED554BF2&key=yt8&kind=asr&lang=en",
+      "name": {
+        "runs": [
+          {
+            "text": "English (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.en",
+      "languageCode": "en",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    }
+  ],
+  "selected_track": {
+    "baseUrl": "https://www.youtube.com/api/timedtext?v=VAtPDJ1KDjw&ei=AHbhavSMCZORsfIPj8aWgQo&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185904&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=1C5F1D7AA7EAA4AD29AB38EDED38E9383EFC5264.6D541E2DCD35B0764FB1F40D4EA920FFED554BF2&key=yt8&kind=asr&lang=en",
+    "name": {
+      "runs": [
+        {
+          "text": "English (auto-generated)"
+        }
+      ]
+    },
+    "vssId": "a.en",
+    "languageCode": "en",
+    "kind": "asr",
+    "isTranslatable": true,
+    "trackName": ""
+  },
+  "segments": [
+    {
+      "start": 3.439,
+      "duration": 3.36,
+      "text": "welcome to the regrid mapping platform"
+    },
+    {
+      "start": 5.52,
+      "duration": 3.84,
+      "text": "today we're going to be talking about"
+    },
+    {
+      "start": 6.799,
+      "duration": 4.72,
+      "text": "troubleshooting a spreadsheet import"
+    },
+    {
+      "start": 9.36,
+      "duration": 4.159,
+      "text": "that you're attempting"
+    },
+    {
+      "start": 11.519,
+      "duration": 4.401,
+      "text": "so starting at the most general level"
+    },
+    {
+      "start": 13.519,
+      "duration": 5.361,
+      "text": "it's important to note that what regrid"
+    },
+    {
+      "start": 15.92,
+      "duration": 4.24,
+      "text": "does in its importer is work with parcel"
+    },
+    {
+      "start": 18.88,
+      "duration": 2.159,
+      "text": "level data"
+    },
+    {
+      "start": 20.16,
+      "duration": 2.72,
+      "text": "meaning"
+    },
+    {
+      "start": 21.039,
+      "duration": 4.0,
+      "text": "not census data"
+    },
+    {
+      "start": 22.88,
+      "duration": 3.68,
+      "text": "you know not larger geographies but"
+    },
+    {
+      "start": 25.039,
+      "duration": 4.0,
+      "text": "something that can be tied to specific"
+    },
+    {
+      "start": 26.56,
+      "duration": 2.479,
+      "text": "properties"
+    },
+    {
+      "start": 29.359,
+      "duration": 2.72,
+      "text": "this is"
+    },
+    {
+      "start": 30.4,
+      "duration": 3.2,
+      "text": "a lot of the data that you may see"
+    },
+    {
+      "start": 32.079,
+      "duration": 3.281,
+      "text": "floating around especially in open data"
+    },
+    {
+      "start": 33.6,
+      "duration": 3.2,
+      "text": "portals so it's not a big deal but it's"
+    },
+    {
+      "start": 35.36,
+      "duration": 2.8,
+      "text": "important to note that you need to get"
+    },
+    {
+      "start": 36.8,
+      "duration": 3.599,
+      "text": "the data"
+    },
+    {
+      "start": 38.16,
+      "duration": 4.32,
+      "text": "geography right first so if you've got a"
+    },
+    {
+      "start": 40.399,
+      "duration": 4.16,
+      "text": "spreadsheet of information that can be"
+    },
+    {
+      "start": 42.48,
+      "duration": 4.239,
+      "text": "attached to specific parcels"
+    },
+    {
+      "start": 44.559,
+      "duration": 5.84,
+      "text": "uh then this is for you and then it's"
+    },
+    {
+      "start": 46.719,
+      "duration": 5.36,
+      "text": "just a question of how do we get it to"
+    },
+    {
+      "start": 50.399,
+      "duration": 3.041,
+      "text": "load correctly and to match to the right"
+    },
+    {
+      "start": 52.079,
+      "duration": 2.401,
+      "text": "parcels"
+    },
+    {
+      "start": 53.44,
+      "duration": 2.4,
+      "text": "so"
+    },
+    {
+      "start": 54.48,
+      "duration": 2.88,
+      "text": "i figured we would step through a couple"
+    },
+    {
+      "start": 55.84,
+      "duration": 3.519,
+      "text": "different things starting with the most"
+    },
+    {
+      "start": 57.36,
+      "duration": 3.359,
+      "text": "basic and then getting into the more"
+    },
+    {
+      "start": 59.359,
+      "duration": 4.401,
+      "text": "detailed"
+    },
+    {
+      "start": 60.719,
+      "duration": 6.561,
+      "text": "so here i have a example file of about"
+    },
+    {
+      "start": 63.76,
+      "duration": 5.6,
+      "text": "500 records i have it imported as a csv"
+    },
+    {
+      "start": 67.28,
+      "duration": 5.28,
+      "text": "file type which those of you you can use"
+    },
+    {
+      "start": 69.36,
+      "duration": 5.68,
+      "text": "excel you can save it as a csv it's"
+    },
+    {
+      "start": 72.56,
+      "duration": 4.16,
+      "text": "worth uh if you have an excel file we"
+    },
+    {
+      "start": 75.04,
+      "duration": 3.36,
+      "text": "can accept excel files but if you're"
+    },
+    {
+      "start": 76.72,
+      "duration": 4.16,
+      "text": "seeing issues it's often worth saving as"
+    },
+    {
+      "start": 78.4,
+      "duration": 4.16,
+      "text": "a csv and trying that way just to reduce"
+    },
+    {
+      "start": 80.88,
+      "duration": 4.08,
+      "text": "the number of variables so that's the"
+    },
+    {
+      "start": 82.56,
+      "duration": 4.879,
+      "text": "first thing that you can try"
+    },
+    {
+      "start": 84.96,
+      "duration": 4.56,
+      "text": "secondly you'll note that when you click"
+    },
+    {
+      "start": 87.439,
+      "duration": 4.72,
+      "text": "import and you see the progress bars go"
+    },
+    {
+      "start": 89.52,
+      "duration": 4.959,
+      "text": "through and you get to tested"
+    },
+    {
+      "start": 92.159,
+      "duration": 4.0,
+      "text": "there is a finish import button however"
+    },
+    {
+      "start": 94.479,
+      "duration": 3.28,
+      "text": "don't click that until you actually see"
+    },
+    {
+      "start": 96.159,
+      "duration": 4.081,
+      "text": "what the match rate"
+    },
+    {
+      "start": 97.759,
+      "duration": 4.481,
+      "text": "and sort of how the import is going it"
+    },
+    {
+      "start": 100.24,
+      "duration": 3.68,
+      "text": "is because otherwise you risk importing"
+    },
+    {
+      "start": 102.24,
+      "duration": 3.28,
+      "text": "sort of an empty data set that doesn't"
+    },
+    {
+      "start": 103.92,
+      "duration": 2.72,
+      "text": "actually have any data attached to our"
+    },
+    {
+      "start": 105.52,
+      "duration": 2.72,
+      "text": "parcels"
+    },
+    {
+      "start": 106.64,
+      "duration": 2.96,
+      "text": "so when you get to here"
+    },
+    {
+      "start": 108.24,
+      "duration": 2.72,
+      "text": "scroll down"
+    },
+    {
+      "start": 109.6,
+      "duration": 2.72,
+      "text": "and you'll see a couple options here"
+    },
+    {
+      "start": 110.96,
+      "duration": 2.24,
+      "text": "we'll talk about them in depth in a"
+    },
+    {
+      "start": 112.32,
+      "duration": 2.159,
+      "text": "second"
+    },
+    {
+      "start": 113.2,
+      "duration": 2.72,
+      "text": "but i would recommend starting by"
+    },
+    {
+      "start": 114.479,
+      "duration": 3.521,
+      "text": "scrolling all the way down to where it"
+    },
+    {
+      "start": 115.92,
+      "duration": 3.68,
+      "text": "says results here and you'll see that"
+    },
+    {
+      "start": 118.0,
+      "duration": 2.799,
+      "text": "there's this sort of progress bar"
+    },
+    {
+      "start": 119.6,
+      "duration": 3.68,
+      "text": "looking thing which is actually a"
+    },
+    {
+      "start": 120.799,
+      "duration": 3.441,
+      "text": "percentage uh you know zero to a hundred"
+    },
+    {
+      "start": 123.28,
+      "duration": 2.159,
+      "text": "percent"
+    },
+    {
+      "start": 124.24,
+      "duration": 3.519,
+      "text": "right now we're seeing that we only have"
+    },
+    {
+      "start": 125.439,
+      "duration": 5.361,
+      "text": "a 13 match rate meaning"
+    },
+    {
+      "start": 127.759,
+      "duration": 3.84,
+      "text": "13 of the 500 rows in the file"
+    },
+    {
+      "start": 130.8,
+      "duration": 2.079,
+      "text": "have"
+    },
+    {
+      "start": 131.599,
+      "duration": 2.961,
+      "text": "uh properties that they're going to"
+    },
+    {
+      "start": 132.879,
+      "duration": 3.041,
+      "text": "potentially attach to"
+    },
+    {
+      "start": 134.56,
+      "duration": 3.6,
+      "text": "so obviously we want to get this way"
+    },
+    {
+      "start": 135.92,
+      "duration": 4.48,
+      "text": "higher 100 is ideal"
+    },
+    {
+      "start": 138.16,
+      "duration": 3.84,
+      "text": "uh so let's think about our various"
+    },
+    {
+      "start": 140.4,
+      "duration": 3.199,
+      "text": "options"
+    },
+    {
+      "start": 142.0,
+      "duration": 4.239,
+      "text": "so scrolling up a little bit and"
+    },
+    {
+      "start": 143.599,
+      "duration": 4.961,
+      "text": "starting right after the the sort of the"
+    },
+    {
+      "start": 146.239,
+      "duration": 3.841,
+      "text": "view of what your data looks like"
+    },
+    {
+      "start": 148.56,
+      "duration": 3.84,
+      "text": "you see this dialogue which is where is"
+    },
+    {
+      "start": 150.08,
+      "duration": 4.48,
+      "text": "this data located so the first thing is"
+    },
+    {
+      "start": 152.4,
+      "duration": 4.96,
+      "text": "to make sure that the appropriate county"
+    },
+    {
+      "start": 154.56,
+      "duration": 4.16,
+      "text": "or counties are checked here"
+    },
+    {
+      "start": 157.36,
+      "duration": 3.2,
+      "text": "also worth noting that generally"
+    },
+    {
+      "start": 158.72,
+      "duration": 3.68,
+      "text": "speaking our importer was built to work"
+    },
+    {
+      "start": 160.56,
+      "duration": 4.319,
+      "text": "with one county at a time"
+    },
+    {
+      "start": 162.4,
+      "duration": 6.0,
+      "text": "you can import data to multiple counties"
+    },
+    {
+      "start": 164.879,
+      "duration": 5.44,
+      "text": "at once but performance may be worse"
+    },
+    {
+      "start": 168.4,
+      "duration": 4.16,
+      "text": "so let's talk about this where is this"
+    },
+    {
+      "start": 170.319,
+      "duration": 4.0,
+      "text": "data located i have a"
+    },
+    {
+      "start": 172.56,
+      "duration": 3.84,
+      "text": "spreadsheet that it only has cleveland"
+    },
+    {
+      "start": 174.319,
+      "duration": 4.241,
+      "text": "ohio data which is in cuyahoga county so"
+    },
+    {
+      "start": 176.4,
+      "duration": 3.28,
+      "text": "the first thing here is to uncheck this"
+    },
+    {
+      "start": 178.56,
+      "duration": 4.399,
+      "text": "tennessee"
+    },
+    {
+      "start": 179.68,
+      "duration": 4.8,
+      "text": "option and to check cuyahoga county ohio"
+    },
+    {
+      "start": 182.959,
+      "duration": 2.961,
+      "text": "my preference when i'm troubleshooting"
+    },
+    {
+      "start": 184.48,
+      "duration": 2.56,
+      "text": "is to change one thing at once so that"
+    },
+    {
+      "start": 185.92,
+      "duration": 2.72,
+      "text": "you can see what happened so i'm going"
+    },
+    {
+      "start": 187.04,
+      "duration": 4.8,
+      "text": "to click apply changes here and you'll"
+    },
+    {
+      "start": 188.64,
+      "duration": 4.56,
+      "text": "see that the testing bar will rerun"
+    },
+    {
+      "start": 191.84,
+      "duration": 2.16,
+      "text": "and so basically what we're looking at"
+    },
+    {
+      "start": 193.2,
+      "duration": 2.64,
+      "text": "here"
+    },
+    {
+      "start": 194.0,
+      "duration": 3.2,
+      "text": "is with everything else the same if i"
+    },
+    {
+      "start": 195.84,
+      "duration": 3.2,
+      "text": "just change the location of the place"
+    },
+    {
+      "start": 197.2,
+      "duration": 4.56,
+      "text": "that i know that i want to be how much"
+    },
+    {
+      "start": 199.04,
+      "duration": 2.72,
+      "text": "does that help me"
+    },
+    {
+      "start": 203.28,
+      "duration": 3.599,
+      "text": "okay so it's gone through to 100 tested"
+    },
+    {
+      "start": 205.519,
+      "duration": 2.72,
+      "text": "and so now i'm going to scroll back down"
+    },
+    {
+      "start": 206.879,
+      "duration": 3.44,
+      "text": "and check out the results so okay"
+    },
+    {
+      "start": 208.239,
+      "duration": 4.0,
+      "text": "immediately we've got a way better"
+    },
+    {
+      "start": 210.319,
+      "duration": 3.521,
+      "text": "result because now we're at 75 percent"
+    },
+    {
+      "start": 212.239,
+      "duration": 3.441,
+      "text": "matched"
+    },
+    {
+      "start": 213.84,
+      "duration": 3.6,
+      "text": "uh so let's talk about the next thing"
+    },
+    {
+      "start": 215.68,
+      "duration": 3.839,
+      "text": "down after the where is this located"
+    },
+    {
+      "start": 217.44,
+      "duration": 4.159,
+      "text": "which is the special columns"
+    },
+    {
+      "start": 219.519,
+      "duration": 3.841,
+      "text": "section"
+    },
+    {
+      "start": 221.599,
+      "duration": 4.56,
+      "text": "so"
+    },
+    {
+      "start": 223.36,
+      "duration": 4.72,
+      "text": "we offer matching on basically three"
+    },
+    {
+      "start": 226.159,
+      "duration": 5.041,
+      "text": "things you can either match on a"
+    },
+    {
+      "start": 228.08,
+      "duration": 4.96,
+      "text": "latitude longitude or a parcel id or"
+    },
+    {
+      "start": 231.2,
+      "duration": 3.44,
+      "text": "parcel number sometimes also called an"
+    },
+    {
+      "start": 233.04,
+      "duration": 3.199,
+      "text": "apn"
+    },
+    {
+      "start": 234.64,
+      "duration": 3.44,
+      "text": "or an address"
+    },
+    {
+      "start": 236.239,
+      "duration": 3.36,
+      "text": "of the three addresses are the least"
+    },
+    {
+      "start": 238.08,
+      "duration": 3.84,
+      "text": "precise and that's because there's a lot"
+    },
+    {
+      "start": 239.599,
+      "duration": 4.321,
+      "text": "of variation inherent in addresses right"
+    },
+    {
+      "start": 241.92,
+      "duration": 3.76,
+      "text": "if you think about uh"
+    },
+    {
+      "start": 243.92,
+      "duration": 3.84,
+      "text": "the abbreviations that can happen you"
+    },
+    {
+      "start": 245.68,
+      "duration": 4.16,
+      "text": "know sometimes you've got like 300 north"
+    },
+    {
+      "start": 247.76,
+      "duration": 3.199,
+      "text": "street and north could be n or north"
+    },
+    {
+      "start": 249.84,
+      "duration": 2.24,
+      "text": "there's all kinds of things that can"
+    },
+    {
+      "start": 250.959,
+      "duration": 3.121,
+      "text": "happen there"
+    },
+    {
+      "start": 252.08,
+      "duration": 3.92,
+      "text": "so if you have a partial id or a lat"
+    },
+    {
+      "start": 254.08,
+      "duration": 3.76,
+      "text": "long column in your data"
+    },
+    {
+      "start": 256.0,
+      "duration": 3.519,
+      "text": "you're going to want to match on those"
+    },
+    {
+      "start": 257.84,
+      "duration": 4.72,
+      "text": "first it'll help you out a lot if you"
+    },
+    {
+      "start": 259.519,
+      "duration": 4.96,
+      "text": "don't we can talk about some options to"
+    },
+    {
+      "start": 262.56,
+      "duration": 3.6,
+      "text": "refine the address portion but we'll"
+    },
+    {
+      "start": 264.479,
+      "duration": 3.44,
+      "text": "leave that for later"
+    },
+    {
+      "start": 266.16,
+      "duration": 4.56,
+      "text": "so i'm going to go back up and look at"
+    },
+    {
+      "start": 267.919,
+      "duration": 5.201,
+      "text": "my data and in this case i actually do"
+    },
+    {
+      "start": 270.72,
+      "duration": 3.199,
+      "text": "have a parcel number column here"
+    },
+    {
+      "start": 273.12,
+      "duration": 2.24,
+      "text": "so"
+    },
+    {
+      "start": 273.919,
+      "duration": 3.041,
+      "text": "i'm looking at the special columns and i"
+    },
+    {
+      "start": 275.36,
+      "duration": 3.76,
+      "text": "see that it actually it's selected don't"
+    },
+    {
+      "start": 276.96,
+      "duration": 5.519,
+      "text": "match using a parcel id so i want to"
+    },
+    {
+      "start": 279.12,
+      "duration": 5.04,
+      "text": "change that and re-run this matching"
+    },
+    {
+      "start": 282.479,
+      "duration": 3.041,
+      "text": "process and see if changing the partial"
+    },
+    {
+      "start": 284.16,
+      "duration": 2.4,
+      "text": "number will help so i'll click parcel"
+    },
+    {
+      "start": 285.52,
+      "duration": 2.32,
+      "text": "number"
+    },
+    {
+      "start": 286.56,
+      "duration": 2.88,
+      "text": "and then for these other fields i'm"
+    },
+    {
+      "start": 287.84,
+      "duration": 3.2,
+      "text": "actually just going to select none just"
+    },
+    {
+      "start": 289.44,
+      "duration": 3.84,
+      "text": "to make sure that we're truly matching"
+    },
+    {
+      "start": 291.04,
+      "duration": 4.8,
+      "text": "on the parcel number again just one"
+    },
+    {
+      "start": 293.28,
+      "duration": 4.88,
+      "text": "variable at a time"
+    },
+    {
+      "start": 295.84,
+      "duration": 4.48,
+      "text": "okay so now that we've rerun this on"
+    },
+    {
+      "start": 298.16,
+      "duration": 3.92,
+      "text": "parcel number we see that the match rate"
+    },
+    {
+      "start": 300.32,
+      "duration": 4.159,
+      "text": "has improved again so we're now we're"
+    },
+    {
+      "start": 302.08,
+      "duration": 4.32,
+      "text": "looking at 87 rather than about 75"
+    },
+    {
+      "start": 304.479,
+      "duration": 3.28,
+      "text": "percent that we saw previously"
+    },
+    {
+      "start": 306.4,
+      "duration": 2.239,
+      "text": "so that's an improvement we're nearly at"
+    },
+    {
+      "start": 307.759,
+      "duration": 2.321,
+      "text": "90"
+    },
+    {
+      "start": 308.639,
+      "duration": 3.28,
+      "text": "but again we're not at 100 so we want to"
+    },
+    {
+      "start": 310.08,
+      "duration": 2.72,
+      "text": "keep pushing here"
+    },
+    {
+      "start": 311.919,
+      "duration": 2.961,
+      "text": "uh"
+    },
+    {
+      "start": 312.8,
+      "duration": 3.839,
+      "text": "so there's a couple things we can do"
+    },
+    {
+      "start": 314.88,
+      "duration": 3.28,
+      "text": "the first thing when you are trying to"
+    },
+    {
+      "start": 316.639,
+      "duration": 3.441,
+      "text": "match on a partial number or latitude"
+    },
+    {
+      "start": 318.16,
+      "duration": 2.8,
+      "text": "longitude column"
+    },
+    {
+      "start": 320.08,
+      "duration": 3.2,
+      "text": "is"
+    },
+    {
+      "start": 320.96,
+      "duration": 4.0,
+      "text": "it's fairly helpful to go back and look"
+    },
+    {
+      "start": 323.28,
+      "duration": 3.199,
+      "text": "at your source data to see if actually"
+    },
+    {
+      "start": 324.96,
+      "duration": 3.44,
+      "text": "there are parcel numbers for all of the"
+    },
+    {
+      "start": 326.479,
+      "duration": 3.601,
+      "text": "columns or whether it could be some kind"
+    },
+    {
+      "start": 328.4,
+      "duration": 3.6,
+      "text": "of a formatting thing"
+    },
+    {
+      "start": 330.08,
+      "duration": 3.36,
+      "text": "so i'm going to go back to the"
+    },
+    {
+      "start": 332.0,
+      "duration": 2.639,
+      "text": "spreadsheet of data that i'm working"
+    },
+    {
+      "start": 333.44,
+      "duration": 2.8,
+      "text": "with here"
+    },
+    {
+      "start": 334.639,
+      "duration": 3.201,
+      "text": "and in this case it's pretty small so i"
+    },
+    {
+      "start": 336.24,
+      "duration": 4.0,
+      "text": "can scroll down the list but you can do"
+    },
+    {
+      "start": 337.84,
+      "duration": 4.56,
+      "text": "sort of sort and find commands to see if"
+    },
+    {
+      "start": 340.24,
+      "duration": 3.679,
+      "text": "there's anything that can be uh"
+    },
+    {
+      "start": 342.4,
+      "duration": 3.44,
+      "text": "you know anything that's out of place in"
+    },
+    {
+      "start": 343.919,
+      "duration": 4.321,
+      "text": "this case i'm looking for blanks in the"
+    },
+    {
+      "start": 345.84,
+      "duration": 5.6,
+      "text": "parcel numbers"
+    },
+    {
+      "start": 348.24,
+      "duration": 5.6,
+      "text": "and going down here i don't see"
+    },
+    {
+      "start": 351.44,
+      "duration": 4.08,
+      "text": "any blanks it's possible that there's"
+    },
+    {
+      "start": 353.84,
+      "duration": 3.84,
+      "text": "something else going on here"
+    },
+    {
+      "start": 355.52,
+      "duration": 3.679,
+      "text": "so there's a couple things we can try"
+    },
+    {
+      "start": 357.68,
+      "duration": 3.519,
+      "text": "the first one would be to make sure that"
+    },
+    {
+      "start": 359.199,
+      "duration": 4.401,
+      "text": "the parcel number formatting here"
+    },
+    {
+      "start": 361.199,
+      "duration": 3.601,
+      "text": "matches parcels in"
+    },
+    {
+      "start": 363.6,
+      "duration": 3.2,
+      "text": "regrid"
+    },
+    {
+      "start": 364.8,
+      "duration": 3.6,
+      "text": "so what i could do here is copy a parcel"
+    },
+    {
+      "start": 366.8,
+      "duration": 3.44,
+      "text": "number and then paste that into our"
+    },
+    {
+      "start": 368.4,
+      "duration": 4.079,
+      "text": "search bar to see if they come up"
+    },
+    {
+      "start": 370.24,
+      "duration": 4.32,
+      "text": "i could also just click on a given"
+    },
+    {
+      "start": 372.479,
+      "duration": 3.761,
+      "text": "parcel in the area that i am curious"
+    },
+    {
+      "start": 374.56,
+      "duration": 3.12,
+      "text": "about closing out the importer clicking"
+    },
+    {
+      "start": 376.24,
+      "duration": 2.88,
+      "text": "on a property and seeing the parcel"
+    },
+    {
+      "start": 377.68,
+      "duration": 4.4,
+      "text": "number to see if the formatting is the"
+    },
+    {
+      "start": 379.12,
+      "duration": 5.919,
+      "text": "same if it's not the same you may want"
+    },
+    {
+      "start": 382.08,
+      "duration": 4.239,
+      "text": "to use excel functions or"
+    },
+    {
+      "start": 385.039,
+      "duration": 3.361,
+      "text": "whatever spreadsheet program you're"
+    },
+    {
+      "start": 386.319,
+      "duration": 4.16,
+      "text": "using to try to make the formatting"
+    },
+    {
+      "start": 388.4,
+      "duration": 4.72,
+      "text": "match so for example leading zeros"
+    },
+    {
+      "start": 390.479,
+      "duration": 4.321,
+      "text": "trailing zeros dashes and there's all"
+    },
+    {
+      "start": 393.12,
+      "duration": 3.84,
+      "text": "kinds of support for that kind of"
+    },
+    {
+      "start": 394.8,
+      "duration": 4.56,
+      "text": "spreadsheet manipulation if you uh"
+    },
+    {
+      "start": 396.96,
+      "duration": 3.76,
+      "text": "search for it online"
+    },
+    {
+      "start": 399.36,
+      "duration": 3.44,
+      "text": "so"
+    },
+    {
+      "start": 400.72,
+      "duration": 4.479,
+      "text": "back to what i'm trying to do here uh"
+    },
+    {
+      "start": 402.8,
+      "duration": 3.839,
+      "text": "i'm still not at 100 and so now i think"
+    },
+    {
+      "start": 405.199,
+      "duration": 2.401,
+      "text": "one of the things that may be helpful to"
+    },
+    {
+      "start": 406.639,
+      "duration": 2.801,
+      "text": "do"
+    },
+    {
+      "start": 407.6,
+      "duration": 3.28,
+      "text": "is to"
+    },
+    {
+      "start": 409.44,
+      "duration": 5.68,
+      "text": "click"
+    },
+    {
+      "start": 410.88,
+      "duration": 5.68,
+      "text": "to search on both parcel and address"
+    },
+    {
+      "start": 415.12,
+      "duration": 4.079,
+      "text": "so i'm going to redo this i'm going to"
+    },
+    {
+      "start": 416.56,
+      "duration": 2.639,
+      "text": "rerun this"
+    },
+    {
+      "start": 419.919,
+      "duration": 3.68,
+      "text": "and what we're hoping for here is a"
+    },
+    {
+      "start": 421.919,
+      "duration": 4.081,
+      "text": "higher match rate"
+    },
+    {
+      "start": 423.599,
+      "duration": 4.801,
+      "text": "so okay it is a little bit higher but it"
+    },
+    {
+      "start": 426.0,
+      "duration": 6.08,
+      "text": "really hasn't changed a great deal"
+    },
+    {
+      "start": 428.4,
+      "duration": 5.359,
+      "text": "so at this point we are looking at"
+    },
+    {
+      "start": 432.08,
+      "duration": 4.16,
+      "text": "we're seeming to sort of reach a limit"
+    },
+    {
+      "start": 433.759,
+      "duration": 4.641,
+      "text": "here in terms of how many properties"
+    },
+    {
+      "start": 436.24,
+      "duration": 3.44,
+      "text": "we can match so there's a couple things"
+    },
+    {
+      "start": 438.4,
+      "duration": 2.799,
+      "text": "from here that i would do to"
+    },
+    {
+      "start": 439.68,
+      "duration": 3.12,
+      "text": "troubleshoot"
+    },
+    {
+      "start": 441.199,
+      "duration": 3.521,
+      "text": "the first one is to click on show which"
+    },
+    {
+      "start": 442.8,
+      "duration": 4.799,
+      "text": "records couldn't be matched and then"
+    },
+    {
+      "start": 444.72,
+      "duration": 4.319,
+      "text": "these rows correspond to the rows in the"
+    },
+    {
+      "start": 447.599,
+      "duration": 4.641,
+      "text": "spreadsheet so"
+    },
+    {
+      "start": 449.039,
+      "duration": 4.801,
+      "text": "for example status of row 6 is miss"
+    },
+    {
+      "start": 452.24,
+      "duration": 3.519,
+      "text": "meaning it didn't match so what i might"
+    },
+    {
+      "start": 453.84,
+      "duration": 4.32,
+      "text": "do is i might go back here"
+    },
+    {
+      "start": 455.759,
+      "duration": 4.56,
+      "text": "look at what's happening on row 6"
+    },
+    {
+      "start": 458.16,
+      "duration": 4.8,
+      "text": "and see if there's anything notable"
+    },
+    {
+      "start": 460.319,
+      "duration": 5.6,
+      "text": "about these specific"
+    },
+    {
+      "start": 462.96,
+      "duration": 3.84,
+      "text": "parcels that might lead me to"
+    },
+    {
+      "start": 465.919,
+      "duration": 2.801,
+      "text": "think that there's something that i"
+    },
+    {
+      "start": 466.8,
+      "duration": 4.0,
+      "text": "could change so e to east or some other"
+    },
+    {
+      "start": 468.72,
+      "duration": 3.52,
+      "text": "kind of minor formatting thing"
+    },
+    {
+      "start": 470.8,
+      "duration": 2.88,
+      "text": "uh in this case i don't see anything"
+    },
+    {
+      "start": 472.24,
+      "duration": 4.0,
+      "text": "wrong so i'm going to proceed but that's"
+    },
+    {
+      "start": 473.68,
+      "duration": 2.56,
+      "text": "one option"
+    },
+    {
+      "start": 476.479,
+      "duration": 3.921,
+      "text": "and then once you're sort of down here"
+    },
+    {
+      "start": 479.039,
+      "duration": 3.28,
+      "text": "and you've you've maximized what you"
+    },
+    {
+      "start": 480.4,
+      "duration": 3.359,
+      "text": "have and you're still needing additional"
+    },
+    {
+      "start": 482.319,
+      "duration": 4.0,
+      "text": "help there's a couple other things that"
+    },
+    {
+      "start": 483.759,
+      "duration": 4.081,
+      "text": "we would suggest"
+    },
+    {
+      "start": 486.319,
+      "duration": 3.28,
+      "text": "so"
+    },
+    {
+      "start": 487.84,
+      "duration": 3.359,
+      "text": "one of them would be the manual approach"
+    },
+    {
+      "start": 489.599,
+      "duration": 3.841,
+      "text": "like we had talked about comparing sort"
+    },
+    {
+      "start": 491.199,
+      "duration": 3.601,
+      "text": "of what your data has to what our data"
+    },
+    {
+      "start": 493.44,
+      "duration": 2.96,
+      "text": "has so you could find the specific"
+    },
+    {
+      "start": 494.8,
+      "duration": 4.399,
+      "text": "parcels and then"
+    },
+    {
+      "start": 496.4,
+      "duration": 5.28,
+      "text": "copy the partial ids in this case and"
+    },
+    {
+      "start": 499.199,
+      "duration": 5.28,
+      "text": "copy them into the partial id"
+    },
+    {
+      "start": 501.68,
+      "duration": 4.88,
+      "text": "appropriate row in the partial id column"
+    },
+    {
+      "start": 504.479,
+      "duration": 3.761,
+      "text": "of the data that you have so that's one"
+    },
+    {
+      "start": 506.56,
+      "duration": 2.96,
+      "text": "approach is the manual one if you don't"
+    },
+    {
+      "start": 508.24,
+      "duration": 2.959,
+      "text": "have many"
+    },
+    {
+      "start": 509.52,
+      "duration": 3.28,
+      "text": "rows in the data"
+    },
+    {
+      "start": 511.199,
+      "duration": 2.64,
+      "text": "you may be able to do this manually with"
+    },
+    {
+      "start": 512.8,
+      "duration": 2.08,
+      "text": "no"
+    },
+    {
+      "start": 513.839,
+      "duration": 3.281,
+      "text": "issues"
+    },
+    {
+      "start": 514.88,
+      "duration": 5.839,
+      "text": "the second approach that you can try is"
+    },
+    {
+      "start": 517.12,
+      "duration": 5.44,
+      "text": "using a another site to geocode the"
+    },
+    {
+      "start": 520.719,
+      "duration": 4.161,
+      "text": "results into"
+    },
+    {
+      "start": 522.56,
+      "duration": 4.16,
+      "text": "latitude longitude columns so basically"
+    },
+    {
+      "start": 524.88,
+      "duration": 3.76,
+      "text": "what geocoding is it's taking an address"
+    },
+    {
+      "start": 526.72,
+      "duration": 4.08,
+      "text": "and it's attaching a point to it a"
+    },
+    {
+      "start": 528.64,
+      "duration": 3.759,
+      "text": "latitude longitude coordinate"
+    },
+    {
+      "start": 530.8,
+      "duration": 2.56,
+      "text": "there's a bunch of sites and ways to do"
+    },
+    {
+      "start": 532.399,
+      "duration": 2.481,
+      "text": "this"
+    },
+    {
+      "start": 533.36,
+      "duration": 3.039,
+      "text": "i personally tend to use this site"
+    },
+    {
+      "start": 534.88,
+      "duration": 2.72,
+      "text": "geocodio because it's fairly"
+    },
+    {
+      "start": 536.399,
+      "duration": 4.0,
+      "text": "straightforward but there's many"
+    },
+    {
+      "start": 537.6,
+      "duration": 4.16,
+      "text": "available so don't take my word for it"
+    },
+    {
+      "start": 540.399,
+      "duration": 4.241,
+      "text": "and basically what you'll do there is"
+    },
+    {
+      "start": 541.76,
+      "duration": 4.4,
+      "text": "you'll run your spreadsheet through this"
+    },
+    {
+      "start": 544.64,
+      "duration": 4.0,
+      "text": "other software"
+    },
+    {
+      "start": 546.16,
+      "duration": 4.799,
+      "text": "and what that will do will"
+    },
+    {
+      "start": 548.64,
+      "duration": 4.8,
+      "text": "append a latitude longitude column to"
+    },
+    {
+      "start": 550.959,
+      "duration": 5.361,
+      "text": "all of your address data"
+    },
+    {
+      "start": 553.44,
+      "duration": 5.2,
+      "text": "okay so i've run the spreadsheet through"
+    },
+    {
+      "start": 556.32,
+      "duration": 3.28,
+      "text": "a geocoder to show you what that looks"
+    },
+    {
+      "start": 558.64,
+      "duration": 3.92,
+      "text": "like"
+    },
+    {
+      "start": 559.6,
+      "duration": 5.76,
+      "text": "uh i'll note that i had to concatenate"
+    },
+    {
+      "start": 562.56,
+      "duration": 5.6,
+      "text": "aka put together the house number and"
+    },
+    {
+      "start": 565.36,
+      "duration": 4.159,
+      "text": "street name into a single column for"
+    },
+    {
+      "start": 568.16,
+      "duration": 4.4,
+      "text": "this to work right"
+    },
+    {
+      "start": 569.519,
+      "duration": 4.961,
+      "text": "i did that through a excel function and"
+    },
+    {
+      "start": 572.56,
+      "duration": 3.44,
+      "text": "then you can see that all these columns"
+    },
+    {
+      "start": 574.48,
+      "duration": 3.359,
+      "text": "are appended the ones that we care about"
+    },
+    {
+      "start": 576.0,
+      "duration": 3.36,
+      "text": "are here in h and i the latitude and"
+    },
+    {
+      "start": 577.839,
+      "duration": 3.44,
+      "text": "longitude"
+    },
+    {
+      "start": 579.36,
+      "duration": 4.64,
+      "text": "so now that we've got those i'm going to"
+    },
+    {
+      "start": 581.279,
+      "duration": 4.161,
+      "text": "close out of here in the excel"
+    },
+    {
+      "start": 584.0,
+      "duration": 3.04,
+      "text": "and then i'm going to go back to our"
+    },
+    {
+      "start": 585.44,
+      "duration": 4.16,
+      "text": "import here and i'm going to cancel what"
+    },
+    {
+      "start": 587.04,
+      "duration": 5.44,
+      "text": "we had going on and i'm going to select"
+    },
+    {
+      "start": 589.6,
+      "duration": 2.88,
+      "text": "the new file"
+    },
+    {
+      "start": 592.72,
+      "duration": 3.84,
+      "text": "when this finishes running we can look"
+    },
+    {
+      "start": 594.64,
+      "duration": 3.28,
+      "text": "at the match rate and make more"
+    },
+    {
+      "start": 596.56,
+      "duration": 4.0,
+      "text": "selections and hopefully we'll get much"
+    },
+    {
+      "start": 597.92,
+      "duration": 2.64,
+      "text": "closer to 100"
+    },
+    {
+      "start": 601.68,
+      "duration": 5.12,
+      "text": "all right so we've rerun the newly"
+    },
+    {
+      "start": 604.56,
+      "duration": 3.68,
+      "text": "geocoded data set"
+    },
+    {
+      "start": 606.8,
+      "duration": 3.039,
+      "text": "and"
+    },
+    {
+      "start": 608.24,
+      "duration": 3.2,
+      "text": "we have it matching on longitude and"
+    },
+    {
+      "start": 609.839,
+      "duration": 3.761,
+      "text": "latitude and as you can see now we have"
+    },
+    {
+      "start": 611.44,
+      "duration": 5.519,
+      "text": "a pretty good match rate i generally"
+    },
+    {
+      "start": 613.6,
+      "duration": 6.799,
+      "text": "consider over 95 to be"
+    },
+    {
+      "start": 616.959,
+      "duration": 5.921,
+      "text": "acceptable um you obviously can can go"
+    },
+    {
+      "start": 620.399,
+      "duration": 5.521,
+      "text": "for more or less as your needs dictate"
+    },
+    {
+      "start": 622.88,
+      "duration": 4.8,
+      "text": "uh but so i am comfortable with this 97"
+    },
+    {
+      "start": 625.92,
+      "duration": 4.479,
+      "text": "great let's do it uh so now i'm going to"
+    },
+    {
+      "start": 627.68,
+      "duration": 5.04,
+      "text": "click finish import and we will see the"
+    },
+    {
+      "start": 630.399,
+      "duration": 4.161,
+      "text": "parcels render on the map great so here"
+    },
+    {
+      "start": 632.72,
+      "duration": 2.64,
+      "text": "we go we've got a we can add it to the"
+    },
+    {
+      "start": 634.56,
+      "duration": 3.68,
+      "text": "map"
+    },
+    {
+      "start": 635.36,
+      "duration": 4.479,
+      "text": "we'll see the properties render here"
+    },
+    {
+      "start": 638.24,
+      "duration": 4.64,
+      "text": "everything's looking good"
+    },
+    {
+      "start": 639.839,
+      "duration": 6.56,
+      "text": "and so that's how you can do sort of a"
+    },
+    {
+      "start": 642.88,
+      "duration": 5.519,
+      "text": "preliminary troubleshoot of an import"
+    },
+    {
+      "start": 646.399,
+      "duration": 5.12,
+      "text": "feel free to comment on this video if"
+    },
+    {
+      "start": 648.399,
+      "duration": 5.281,
+      "text": "you have specific needs or if you"
+    },
+    {
+      "start": 651.519,
+      "duration": 5.041,
+      "text": "need help troubleshooting"
+    },
+    {
+      "start": 653.68,
+      "duration": 4.8,
+      "text": "and we can shoot further videos that get"
+    },
+    {
+      "start": 656.56,
+      "duration": 3.2,
+      "text": "more into the areas that i haven't"
+    },
+    {
+      "start": 658.48,
+      "duration": 4.68,
+      "text": "covered here but hopefully this is a"
+    },
+    {
+      "start": 659.76,
+      "duration": 3.4,
+      "text": "helpful overview"
+    }
+  ],
+  "full_text": "welcome to the regrid mapping platform today we're going to be talking about troubleshooting a spreadsheet import that you're attempting so starting at the most general level it's important to note that what regrid does in its importer is work with parcel level data meaning not census data you know not larger geographies but something that can be tied to specific properties this is a lot of the data that you may see floating around especially in open data portals so it's not a big deal but it's important to note that you need to get the data geography right first so if you've got a spreadsheet of information that can be attached to specific parcels uh then this is for you and then it's just a question of how do we get it to load correctly and to match to the right parcels so i figured we would step through a couple different things starting with the most basic and then getting into the more detailed so here i have a example file of about 500 records i have it imported as a csv file type which those of you you can use excel you can save it as a csv it's worth uh if you have an excel file we can accept excel files but if you're seeing issues it's often worth saving as a csv and trying that way just to reduce the number of variables so that's the first thing that you can try secondly you'll note that when you click import and you see the progress bars go through and you get to tested there is a finish import button however don't click that until you actually see what the match rate and sort of how the import is going it is because otherwise you risk importing sort of an empty data set that doesn't actually have any data attached to our parcels so when you get to here scroll down and you'll see a couple options here we'll talk about them in depth in a second but i would recommend starting by scrolling all the way down to where it says results here and you'll see that there's this sort of progress bar looking thing which is actually a percentage uh you know zero to a hundred percent right now we're seeing that we only have a 13 match rate meaning 13 of the 500 rows in the file have uh properties that they're going to potentially attach to so obviously we want to get this way higher 100 is ideal uh so let's think about our various options so scrolling up a little bit and starting right after the the sort of the view of what your data looks like you see this dialogue which is where is this data located so the first thing is to make sure that the appropriate county or counties are checked here also worth noting that generally speaking our importer was built to work with one county at a time you can import data to multiple counties at once but performance may be worse so let's talk about this where is this data located i have a spreadsheet that it only has cleveland ohio data which is in cuyahoga county so the first thing here is to uncheck this tennessee option and to check cuyahoga county ohio my preference when i'm troubleshooting is to change one thing at once so that you can see what happened so i'm going to click apply changes here and you'll see that the testing bar will rerun and so basically what we're looking at here is with everything else the same if i just change the location of the place that i know that i want to be how much does that help me okay so it's gone through to 100 tested and so now i'm going to scroll back down and check out the results so okay immediately we've got a way better result because now we're at 75 percent matched uh so let's talk about the next thing down after the where is this located which is the special columns section so we offer matching on basically three things you can either match on a latitude longitude or a parcel id or parcel number sometimes also called an apn or an address of the three addresses are the least precise and that's because there's a lot of variation inherent in addresses right if you think about uh the abbreviations that can happen you know sometimes you've got like 300 north street and north could be n or north there's all kinds of things that can happen there so if you have a partial id or a lat long column in your data you're going to want to match on those first it'll help you out a lot if you don't we can talk about some options to refine the address portion but we'll leave that for later so i'm going to go back up and look at my data and in this case i actually do have a parcel number column here so i'm looking at the special columns and i see that it actually it's selected don't match using a parcel id so i want to change that and re-run this matching process and see if changing the partial number will help so i'll click parcel number and then for these other fields i'm actually just going to select none just to make sure that we're truly matching on the parcel number again just one variable at a time okay so now that we've rerun this on parcel number we see that the match rate has improved again so we're now we're looking at 87 rather than about 75 percent that we saw previously so that's an improvement we're nearly at 90 but again we're not at 100 so we want to keep pushing here uh so there's a couple things we can do the first thing when you are trying to match on a partial number or latitude longitude column is it's fairly helpful to go back and look at your source data to see if actually there are parcel numbers for all of the columns or whether it could be some kind of a formatting thing so i'm going to go back to the spreadsheet of data that i'm working with here and in this case it's pretty small so i can scroll down the list but you can do sort of sort and find commands to see if there's anything that can be uh you know anything that's out of place in this case i'm looking for blanks in the parcel numbers and going down here i don't see any blanks it's possible that there's something else going on here so there's a couple things we can try the first one would be to make sure that the parcel number formatting here matches parcels in regrid so what i could do here is copy a parcel number and then paste that into our search bar to see if they come up i could also just click on a given parcel in the area that i am curious about closing out the importer clicking on a property and seeing the parcel number to see if the formatting is the same if it's not the same you may want to use excel functions or whatever spreadsheet program you're using to try to make the formatting match so for example leading zeros trailing zeros dashes and there's all kinds of support for that kind of spreadsheet manipulation if you uh search for it online so back to what i'm trying to do here uh i'm still not at 100 and so now i think one of the things that may be helpful to do is to click to search on both parcel and address so i'm going to redo this i'm going to rerun this and what we're hoping for here is a higher match rate so okay it is a little bit higher but it really hasn't changed a great deal so at this point we are looking at we're seeming to sort of reach a limit here in terms of how many properties we can match so there's a couple things from here that i would do to troubleshoot the first one is to click on show which records couldn't be matched and then these rows correspond to the rows in the spreadsheet so for example status of row 6 is miss meaning it didn't match so what i might do is i might go back here look at what's happening on row 6 and see if there's anything notable about these specific parcels that might lead me to think that there's something that i could change so e to east or some other kind of minor formatting thing uh in this case i don't see anything wrong so i'm going to proceed but that's one option and then once you're sort of down here and you've you've maximized what you have and you're still needing additional help there's a couple other things that we would suggest so one of them would be the manual approach like we had talked about comparing sort of what your data has to what our data has so you could find the specific parcels and then copy the partial ids in this case and copy them into the partial id appropriate row in the partial id column of the data that you have so that's one approach is the manual one if you don't have many rows in the data you may be able to do this manually with no issues the second approach that you can try is using a another site to geocode the results into latitude longitude columns so basically what geocoding is it's taking an address and it's attaching a point to it a latitude longitude coordinate there's a bunch of sites and ways to do this i personally tend to use this site geocodio because it's fairly straightforward but there's many available so don't take my word for it and basically what you'll do there is you'll run your spreadsheet through this other software and what that will do will append a latitude longitude column to all of your address data okay so i've run the spreadsheet through a geocoder to show you what that looks like uh i'll note that i had to concatenate aka put together the house number and street name into a single column for this to work right i did that through a excel function and then you can see that all these columns are appended the ones that we care about are here in h and i the latitude and longitude so now that we've got those i'm going to close out of here in the excel and then i'm going to go back to our import here and i'm going to cancel what we had going on and i'm going to select the new file when this finishes running we can look at the match rate and make more selections and hopefully we'll get much closer to 100 all right so we've rerun the newly geocoded data set and we have it matching on longitude and latitude and as you can see now we have a pretty good match rate i generally consider over 95 to be acceptable um you obviously can can go for more or less as your needs dictate uh but so i am comfortable with this 97 great let's do it uh so now i'm going to click finish import and we will see the parcels render on the map great so here we go we've got a we can add it to the map we'll see the properties render here everything's looking good and so that's how you can do sort of a preliminary troubleshoot of an import feel free to comment on this video if you have specific needs or if you need help troubleshooting and we can shoot further videos that get more into the areas that i haven't covered here but hopefully this is a helpful overview",
+  "attempts": [
+    {
+      "client": "IOS",
+      "playability": {
+        "status": "OK",
+        "playableInEmbed": true,
+        "offlineability": {
+          "buttonRenderer": {
+            "navigationEndpoint": {
+              "clickTrackingParams": "CAoQ6ewBIhMI9IyvluzblwMVk0hMCB0PoyWgygEE9_mN-Q==",
+              "ypcGetOfflineUpsellEndpoint": {
+                "params": "ChPqqN25AQ0KC1ZBdFBESjFLRGp3IgtWQXRQREoxS0RqdyoVCAkYAVIPCgtWQXRQREoxS0RqdyAB"
+              }
+            },
+            "trackingParams": "CAoQ6ewBIhMI9IyvluzblwMVk0hMCB0PoyWg"
+          }
+        },
+        "pictureInPicture": {
+          "pictureInPictureRenderer": {
+            "playableInPip": true,
+            "offByDefault": false,
+            "shouldResumeOnHead": false
+          }
+        },
+        "miniplayer": {
+          "miniplayerRenderer": {
+            "playbackMode": "PLAYBACK_MODE_ALLOW"
+          }
+        },
+        "contextParams": "Q0FFU0FnZ0M="
+      },
+      "outcome": "ok"
+    }
+  ],
+  "fetched_at": "2026-10-28T04:11:44.903208+00:00",
+  "client": "IOS",
+  "json_path": "transcripts/182_VAtPDJ1KDjw.json",
+  "text_path": "transcripts/182_VAtPDJ1KDjw.txt"
+}

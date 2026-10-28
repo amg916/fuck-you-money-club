@@ -1,0 +1,525 @@
+{
+  "index": 41,
+  "url": "https://www.youtube.com/watch?v=pGyFJ46jwTE",
+  "video_id": "pGyFJ46jwTE",
+  "status": "ok",
+  "metadata": {
+    "title": "Primary sources: Intestate probate documents",
+    "author": "Five-minute genealogy",
+    "channelId": "UC6qnMgXP1jQMuUP8vTVoU3g",
+    "lengthSeconds": "365",
+    "viewCount": "137",
+    "shortDescription": "There are a ton of different document types that appear in \"intestate\" probate proceedings, or probate where there is not a valid will. In this video, I'll give a five-minute overview of the common documents you may encounter in Colonial and early republic U.S. intestate probate proceedings.",
+    "keywords": [
+      "intestate",
+      "no will",
+      "probate",
+      "letters of administration",
+      "bonds",
+      "genealogy",
+      "family history",
+      "family research"
+    ]
+  },
+  "caption_tracks": [
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=pGyFJ46jwTE&ei=53XhasXrF_L8sfIP78Wx2QY&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185879&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=0F5EAEDF47469DB617D3366A09FC7C72DFC1F1DA.1228EB31A1FC220DC9D53301B3ACD527A72F6F3C&key=yt8&lang=en",
+      "name": {
+        "runs": [
+          {
+            "text": "English"
+          }
+        ]
+      },
+      "vssId": ".en",
+      "languageCode": "en",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=pGyFJ46jwTE&ei=53XhasXrF_L8sfIP78Wx2QY&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185879&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=0F5EAEDF47469DB617D3366A09FC7C72DFC1F1DA.1228EB31A1FC220DC9D53301B3ACD527A72F6F3C&key=yt8&kind=asr&lang=en",
+      "name": {
+        "runs": [
+          {
+            "text": "English (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.en",
+      "languageCode": "en",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    }
+  ],
+  "selected_track": {
+    "baseUrl": "https://www.youtube.com/api/timedtext?v=pGyFJ46jwTE&ei=53XhasXrF_L8sfIP78Wx2QY&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185879&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=0F5EAEDF47469DB617D3366A09FC7C72DFC1F1DA.1228EB31A1FC220DC9D53301B3ACD527A72F6F3C&key=yt8&lang=en",
+    "name": {
+      "runs": [
+        {
+          "text": "English"
+        }
+      ]
+    },
+    "vssId": ".en",
+    "languageCode": "en",
+    "isTranslatable": true,
+    "trackName": ""
+  },
+  "segments": [
+    {
+      "start": 0.669,
+      "duration": 4.171,
+      "text": "Probate documents are one of the best primary source documents, but they’re also one of"
+    },
+    {
+      "start": 4.84,
+      "duration": 5.75,
+      "text": "the most complicated, partly because of the dizzying array of different document types,"
+    },
+    {
+      "start": 10.59,
+      "duration": 2.299,
+      "text": "such as: 1) Probate proceedings."
+    },
+    {
+      "start": 12.889,
+      "duration": 3.961,
+      "text": "2) Bonds, letters of administration, letters testamentary, and other administrativa."
+    },
+    {
+      "start": 16.85,
+      "duration": 2.21,
+      "text": "3) Inventories & bills of sale."
+    },
+    {
+      "start": 19.06,
+      "duration": 1.139,
+      "text": "4) Guardianship."
+    },
+    {
+      "start": 20.199,
+      "duration": 4.601,
+      "text": "I’m Mike O’Neill, and I’m going to give you an overview of different probate documents"
+    },
+    {
+      "start": 24.8,
+      "duration": 3.29,
+      "text": "in five minutes."
+    },
+    {
+      "start": 28.09,
+      "duration": 4.879,
+      "text": "If you want to dig deeper, I recommend spending some time at “Bob’s Genealogy Cabinet”"
+    },
+    {
+      "start": 32.969,
+      "duration": 1.5,
+      "text": "at genfiles.com."
+    },
+    {
+      "start": 34.469,
+      "duration": 5.55,
+      "text": "In this video, I’m going to focus on intestate proceedings, where there’s no valid will."
+    },
+    {
+      "start": 40.019,
+      "duration": 3.81,
+      "text": "I’ll cover wills and guardianship separately."
+    },
+    {
+      "start": 43.829,
+      "duration": 5.091,
+      "text": "If you’re lucky, these proceedings will be handled by a special-purpose court, which"
+    },
+    {
+      "start": 48.92,
+      "duration": 3.09,
+      "text": "can make records easier to find."
+    },
+    {
+      "start": 52.01,
+      "duration": 4.939,
+      "text": "For example, in Pennsylvania, the Orphan’s Courts handled such proceedings."
+    },
+    {
+      "start": 56.949,
+      "duration": 5.261,
+      "text": "Intestate probate proceedings are both complicated and extremely valuable genealogically."
+    },
+    {
+      "start": 62.21,
+      "duration": 3.98,
+      "text": "The reason that intestate is complicated is that the proceeding are governed by local"
+    },
+    {
+      "start": 66.19,
+      "duration": 2.58,
+      "text": "laws which reflected cultural mores of the time."
+    },
+    {
+      "start": 68.77,
+      "duration": 4.42,
+      "text": "But you won’t find explicit references to those laws in the proceedings, you’ll just"
+    },
+    {
+      "start": 73.19,
+      "duration": 6.41,
+      "text": "see decisions that seem strange today, but were really run-of-the-mill for the time."
+    },
+    {
+      "start": 79.6,
+      "duration": 1.449,
+      "text": "Let me give you an example."
+    },
+    {
+      "start": 81.049,
+      "duration": 5.661,
+      "text": "Colonial Pennsylvania law gave the eldest son the option to buy out his siblings’"
+    },
+    {
+      "start": 86.71,
+      "duration": 4.949,
+      "text": "share of his father’s real property, provided he could come up with the funds within one"
+    },
+    {
+      "start": 91.659,
+      "duration": 1.0,
+      "text": "year."
+    },
+    {
+      "start": 92.659,
+      "duration": 3.621,
+      "text": "If you didn’t know this, however, you might come to the wrong conclusion."
+    },
+    {
+      "start": 96.28,
+      "duration": 4.75,
+      "text": "Consider this family genealogy, which states that a Jacob Slough petitioned the court to"
+    },
+    {
+      "start": 101.03,
+      "duration": 2.35,
+      "text": "have his father’s estate divided up."
+    },
+    {
+      "start": 103.38,
+      "duration": 7.26,
+      "text": "The genealogy considers this to be a significant event related to a wicked stepfather taking"
+    },
+    {
+      "start": 110.64,
+      "duration": 4.31,
+      "text": "control of the farm, and Jacob trying to seize it back."
+    },
+    {
+      "start": 114.95,
+      "duration": 3.769,
+      "text": "But it wasn’t even worth mentioning, and he wasn’t asking for the property to be"
+    },
+    {
+      "start": 118.719,
+      "duration": 1.0,
+      "text": "divided up."
+    },
+    {
+      "start": 119.719,
+      "duration": 4.71,
+      "text": "Jacob’s motion was just a routine procedure in intestate proceedings."
+    },
+    {
+      "start": 124.429,
+      "duration": 4.53,
+      "text": "Before Jacob could buy-out his siblings’ shares of their father’s estate, the law"
+    },
+    {
+      "start": 128.959,
+      "duration": 6.191,
+      "text": "required proof—via the testimony of twelve “disinterested” men—that the farm could"
+    },
+    {
+      "start": 135.15,
+      "duration": 5.58,
+      "text": "not be divided into equal shares without diminishing the value of the property."
+    },
+    {
+      "start": 140.73,
+      "duration": 4.53,
+      "text": "Perhaps it couldn’t be partitioned because only one share had access to water, or perhaps"
+    },
+    {
+      "start": 145.26,
+      "duration": 6.0,
+      "text": "it was because most of the acreage was uncleared, leaving each farmable parcel too small to"
+    },
+    {
+      "start": 151.26,
+      "duration": 1.619,
+      "text": "support a family."
+    },
+    {
+      "start": 152.879,
+      "duration": 4.911,
+      "text": "Anyway, that’s all that Jacob was asking: that the court follow a standard procedure"
+    },
+    {
+      "start": 157.79,
+      "duration": 5.77,
+      "text": "outlined in Pennsylvania law to send twelve men to check out the farm and decide whether"
+    },
+    {
+      "start": 163.56,
+      "duration": 1.34,
+      "text": "it could or could not be split up."
+    },
+    {
+      "start": 164.9,
+      "duration": 4.32,
+      "text": "If it couldn’t be partitioned, Jacob could buy-out his siblings’ share of their fathers’"
+    },
+    {
+      "start": 169.22,
+      "duration": 1.0,
+      "text": "real estate."
+    },
+    {
+      "start": 170.22,
+      "duration": 4.93,
+      "text": "It’s hard to provide specific advice here, since every state will have different laws."
+    },
+    {
+      "start": 175.15,
+      "duration": 5.26,
+      "text": "Here’s the best rule of thumb: if something seems strange in an intestate proceeding,"
+    },
+    {
+      "start": 180.41,
+      "duration": 4.62,
+      "text": "assume that you are the problem, and that what you’re seeing is usual."
+    },
+    {
+      "start": 185.03,
+      "duration": 8.36,
+      "text": "Then search for guidance about the laws of that state to see if you can learn more."
+    },
+    {
+      "start": 193.39,
+      "duration": 4.06,
+      "text": "If you’re lucky, you’ll find pre-built explanations."
+    },
+    {
+      "start": 197.45,
+      "duration": 4.849,
+      "text": "Bob’s Genealogy Filing Cabinet is a pretty good one."
+    },
+    {
+      "start": 202.299,
+      "duration": 5.581,
+      "text": "But it may come down to finding an old book on worldcat and requesting it via inter-library"
+    },
+    {
+      "start": 207.88,
+      "duration": 1.0,
+      "text": "loan."
+    },
+    {
+      "start": 208.88,
+      "duration": 4.34,
+      "text": "I’ve actually got a case study video that hinged on how Virginia’s intestate laws"
+    },
+    {
+      "start": 213.22,
+      "duration": 2.67,
+      "text": "treated children born out of wedlock."
+    },
+    {
+      "start": 215.89,
+      "duration": 6.799,
+      "text": "Without a copy of the law, I could only speculate."
+    },
+    {
+      "start": 222.689,
+      "duration": 4.05,
+      "text": "Intestate probate proceedings are going to follow some boilerplate conventions, the most"
+    },
+    {
+      "start": 226.739,
+      "duration": 5.431,
+      "text": "important of which is that children will almost always be listed in birth order."
+    },
+    {
+      "start": 232.17,
+      "duration": 4.92,
+      "text": "One common exception is if the first-born son has special legal rights: in this case,"
+    },
+    {
+      "start": 237.09,
+      "duration": 3.94,
+      "text": "he may be listed ahead of any older sisters."
+    },
+    {
+      "start": 241.03,
+      "duration": 4.179,
+      "text": "Intestate proceedings may also include assignment of guardians for minor children."
+    },
+    {
+      "start": 245.209,
+      "duration": 6.17,
+      "text": "Pay close attention to this: many courts will note that a child was below or above a certain"
+    },
+    {
+      "start": 251.379,
+      "duration": 1.0,
+      "text": "age."
+    },
+    {
+      "start": 252.379,
+      "duration": 4.321,
+      "text": "For probate proceedings taking place over many years, you can get very accurate estimates"
+    },
+    {
+      "start": 256.7,
+      "duration": 1.86,
+      "text": "of when some of the children were born."
+    },
+    {
+      "start": 258.56,
+      "duration": 4.66,
+      "text": "If you want to learn about guardianship, I've got a separate video on that topic."
+    },
+    {
+      "start": 263.34,
+      "duration": 4.92,
+      "text": "Intestate proceedings may also include letters of administration, bonds and an inventory."
+    },
+    {
+      "start": 268.26,
+      "duration": 4.81,
+      "text": "These are just administrativa, and the only genealogical value is that the people named"
+    },
+    {
+      "start": 273.07,
+      "duration": 4.13,
+      "text": "tend to be family, friends, associates and neighbors of the deceased."
+    },
+    {
+      "start": 277.2,
+      "duration": 6.9,
+      "text": "Sometimes you’ll get a relationship for a single person, but that’s about it."
+    },
+    {
+      "start": 284.1,
+      "duration": 2.88,
+      "text": "Letters of administration state that a given individual is the estate’s administrator,"
+    },
+    {
+      "start": 286.98,
+      "duration": 4.03,
+      "text": "and can transact on behalf of the estate until it is settled."
+    },
+    {
+      "start": 291.01,
+      "duration": 4.94,
+      "text": "If there are minor children, the administrator may keep showing up in court until the youngest"
+    },
+    {
+      "start": 295.95,
+      "duration": 4.63,
+      "text": "child reaches the age of majority."
+    },
+    {
+      "start": 300.58,
+      "duration": 5.9,
+      "text": "Bonds are a financial guarantee that the administrator and or guardian won’t embezzle from the"
+    },
+    {
+      "start": 306.48,
+      "duration": 1.0,
+      "text": "estate."
+    },
+    {
+      "start": 307.48,
+      "duration": 5.36,
+      "text": "If a court later found the administrator guilty of financial malfeasance, the administrator and"
+    },
+    {
+      "start": 312.84,
+      "duration": 5.23,
+      "text": "another person would be held financially liable for an amount that could be higher than the"
+    },
+    {
+      "start": 318.07,
+      "duration": 4.73,
+      "text": "estimated value of the estate, depending on the extent of the malfeasance."
+    },
+    {
+      "start": 322.8,
+      "duration": 3.12,
+      "text": "The other document type you may find in an intestate probate proceeding is an inventory."
+    },
+    {
+      "start": 326.06,
+      "duration": 7.84,
+      "text": "Inventories are the output of an estate sale, and can come in two parts: an estimate of"
+    },
+    {
+      "start": 333.91,
+      "duration": 5.41,
+      "text": "the value of personal items, and the actual bill of sale."
+    },
+    {
+      "start": 339.32,
+      "duration": 6.58,
+      "text": "These can be interesting in learning about the decedent’s possessions, but they generally won't help with genealogy."
+    },
+    {
+      "start": 346.14,
+      "duration": 6.12,
+      "text": "The bill of sale may include family members making purchases, but they won’t be identified"
+    },
+    {
+      "start": 352.27,
+      "duration": 9.17,
+      "text": "as such—this can be a lead for figuring out who a decedent’s daughters married."
+    }
+  ],
+  "full_text": "Probate documents are one of the best primary source documents, but they’re also one of the most complicated, partly because of the dizzying array of different document types, such as: 1) Probate proceedings. 2) Bonds, letters of administration, letters testamentary, and other administrativa. 3) Inventories & bills of sale. 4) Guardianship. I’m Mike O’Neill, and I’m going to give you an overview of different probate documents in five minutes. If you want to dig deeper, I recommend spending some time at “Bob’s Genealogy Cabinet” at genfiles.com. In this video, I’m going to focus on intestate proceedings, where there’s no valid will. I’ll cover wills and guardianship separately. If you’re lucky, these proceedings will be handled by a special-purpose court, which can make records easier to find. For example, in Pennsylvania, the Orphan’s Courts handled such proceedings. Intestate probate proceedings are both complicated and extremely valuable genealogically. The reason that intestate is complicated is that the proceeding are governed by local laws which reflected cultural mores of the time. But you won’t find explicit references to those laws in the proceedings, you’ll just see decisions that seem strange today, but were really run-of-the-mill for the time. Let me give you an example. Colonial Pennsylvania law gave the eldest son the option to buy out his siblings’ share of his father’s real property, provided he could come up with the funds within one year. If you didn’t know this, however, you might come to the wrong conclusion. Consider this family genealogy, which states that a Jacob Slough petitioned the court to have his father’s estate divided up. The genealogy considers this to be a significant event related to a wicked stepfather taking control of the farm, and Jacob trying to seize it back. But it wasn’t even worth mentioning, and he wasn’t asking for the property to be divided up. Jacob’s motion was just a routine procedure in intestate proceedings. Before Jacob could buy-out his siblings’ shares of their father’s estate, the law required proof—via the testimony of twelve “disinterested” men—that the farm could not be divided into equal shares without diminishing the value of the property. Perhaps it couldn’t be partitioned because only one share had access to water, or perhaps it was because most of the acreage was uncleared, leaving each farmable parcel too small to support a family. Anyway, that’s all that Jacob was asking: that the court follow a standard procedure outlined in Pennsylvania law to send twelve men to check out the farm and decide whether it could or could not be split up. If it couldn’t be partitioned, Jacob could buy-out his siblings’ share of their fathers’ real estate. It’s hard to provide specific advice here, since every state will have different laws. Here’s the best rule of thumb: if something seems strange in an intestate proceeding, assume that you are the problem, and that what you’re seeing is usual. Then search for guidance about the laws of that state to see if you can learn more. If you’re lucky, you’ll find pre-built explanations. Bob’s Genealogy Filing Cabinet is a pretty good one. But it may come down to finding an old book on worldcat and requesting it via inter-library loan. I’ve actually got a case study video that hinged on how Virginia’s intestate laws treated children born out of wedlock. Without a copy of the law, I could only speculate. Intestate probate proceedings are going to follow some boilerplate conventions, the most important of which is that children will almost always be listed in birth order. One common exception is if the first-born son has special legal rights: in this case, he may be listed ahead of any older sisters. Intestate proceedings may also include assignment of guardians for minor children. Pay close attention to this: many courts will note that a child was below or above a certain age. For probate proceedings taking place over many years, you can get very accurate estimates of when some of the children were born. If you want to learn about guardianship, I've got a separate video on that topic. Intestate proceedings may also include letters of administration, bonds and an inventory. These are just administrativa, and the only genealogical value is that the people named tend to be family, friends, associates and neighbors of the deceased. Sometimes you’ll get a relationship for a single person, but that’s about it. Letters of administration state that a given individual is the estate’s administrator, and can transact on behalf of the estate until it is settled. If there are minor children, the administrator may keep showing up in court until the youngest child reaches the age of majority. Bonds are a financial guarantee that the administrator and or guardian won’t embezzle from the estate. If a court later found the administrator guilty of financial malfeasance, the administrator and another person would be held financially liable for an amount that could be higher than the estimated value of the estate, depending on the extent of the malfeasance. The other document type you may find in an intestate probate proceeding is an inventory. Inventories are the output of an estate sale, and can come in two parts: an estimate of the value of personal items, and the actual bill of sale. These can be interesting in learning about the decedent’s possessions, but they generally won't help with genealogy. The bill of sale may include family members making purchases, but they won’t be identified as such—this can be a lead for figuring out who a decedent’s daughters married.",
+  "attempts": [
+    {
+      "client": "IOS",
+      "playability": {
+        "status": "OK",
+        "playableInEmbed": true,
+        "offlineability": {
+          "buttonRenderer": {
+            "navigationEndpoint": {
+              "clickTrackingParams": "CBEQ6ewBIhMIhfvHiuzblwMVcn5MCB3vYixrygEEsptaAg==",
+              "ypcGetOfflineUpsellEndpoint": {
+                "params": "ChPqqN25AQ0KC3BHeUZKNDZqd1RFIgtwR3lGSjQ2andURSoVCAkYAVIPCgtwR3lGSjQ2andURSAB"
+              }
+            },
+            "trackingParams": "CBEQ6ewBIhMIhfvHiuzblwMVcn5MCB3vYixr"
+          }
+        },
+        "pictureInPicture": {
+          "pictureInPictureRenderer": {
+            "playableInPip": true,
+            "offByDefault": false,
+            "shouldResumeOnHead": false
+          }
+        },
+        "miniplayer": {
+          "miniplayerRenderer": {
+            "playbackMode": "PLAYBACK_MODE_ALLOW"
+          }
+        },
+        "contextParams": "Q0FFU0FnZ0M="
+      },
+      "outcome": "ok"
+    }
+  ],
+  "fetched_at": "2026-10-28T04:11:19.988741+00:00",
+  "client": "IOS",
+  "json_path": "transcripts/041_pGyFJ46jwTE.json",
+  "text_path": "transcripts/041_pGyFJ46jwTE.txt"
+}

@@ -1,0 +1,2125 @@
+{
+  "index": 31,
+  "url": "https://www.youtube.com/watch?v=VbgMCP7bKcs",
+  "video_id": "VbgMCP7bKcs",
+  "status": "ok",
+  "metadata": {
+    "title": "Dueling Dates and Fact Fights: Resolving Evidence Conflicts, Part 1",
+    "author": "FamilySearch",
+    "channelId": "UC-9GZ7QHKOmLS0APnfz2g1Q",
+    "lengthSeconds": "895",
+    "viewCount": "1300",
+    "shortDescription": "In this session, Dueling Dates and Fact Fights: Resolving Evidence Conflicts, learn why evidence conflicts come up in genealogy research and how to resolve them.\n\nThis is part one of a two-part series.\n\nThis presentation was part of RootsTech Connect 2021. Find hundreds of free family history classes, keynotes, and more. http://familysearch.me/RootsTech \n\n#rootstechconnect\n\nRootsTech is hosted by FamilySearch, a global nonprofit organization dedicated to creating inspiring family discovery experiences. RootsTech is the premier global event and learning resource for making family connections and receiving guidance to help people learn more about their families.  \n\nFamilySearch is an international, nonprofit organization dedicated to helping people all over the world connect with their family: past, present, and future. Our partnerships with thousands of record custodians and major genealogical organizations allow us to make billions of records available for you to research your family tree free of charge! Regardless of where or how you research your ancestry, we have specialists all over the world to help you experience the joy of connecting with your heritage.\n\nOur desire to Connect with the Past, Present, and Future https://youtu.be/3cmj5kGm2Xw   \n\nSubscribe:  \nhttp://familysearch.me/youtube   \nhttp://familysearch.me/youtubeportuguese   \nhttp://familysearch.me/youtubespanish   \nhttp://familysearch.me/youtubeeurope   \n\nConnect with FamilySearch:  \nVisit: http://familysearch.me/home   \nLike FamilySearch on Facebook: http://familysearch.me/facebook   \nFollow FamilySearch on Twitter: http://familysearch.me/twitter   \nFollow FamilySearch on Instagram: http://familysearch.me/instagram",
+    "keywords": [
+      "Dueling Dates and Fact Fights: Resolving Evidence Conflicts",
+      "Resolving Evidence Conflicts",
+      "genealogy research",
+      "genealogy research conflists",
+      "genealogy research tips",
+      "genealogy research plan",
+      "genealogy evidence",
+      "family history",
+      "genealogy how to",
+      "family history research",
+      "how to do genealogy research",
+      "resolving research conflicts",
+      "rootstech",
+      "rootstech 2021",
+      "rootstech connect 2021",
+      "rootstech connect"
+    ]
+  },
+  "caption_tracks": [
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=VbgMCP7bKcs&ei=5XXhavChHaWQsfIPrdC6KQ&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185877&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=E129432E93BED35FEEBA4631ECB44FAAEDEFDC55.2CCFD96FB1213A9165E29D02A36B965A1995E813&key=yt8&kind=asr&lang=en",
+      "name": {
+        "runs": [
+          {
+            "text": "English (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.en",
+      "languageCode": "en",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    }
+  ],
+  "selected_track": {
+    "baseUrl": "https://www.youtube.com/api/timedtext?v=VbgMCP7bKcs&ei=5XXhavChHaWQsfIPrdC6KQ&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185877&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=E129432E93BED35FEEBA4631ECB44FAAEDEFDC55.2CCFD96FB1213A9165E29D02A36B965A1995E813&key=yt8&kind=asr&lang=en",
+    "name": {
+      "runs": [
+        {
+          "text": "English (auto-generated)"
+        }
+      ]
+    },
+    "vssId": "a.en",
+    "languageCode": "en",
+    "kind": "asr",
+    "isTranslatable": true,
+    "trackName": ""
+  },
+  "segments": [
+    {
+      "start": 3.11,
+      "duration": 3.05,
+      "text": "[Music]"
+    },
+    {
+      "start": 14.4,
+      "duration": 3.52,
+      "text": "hello"
+    },
+    {
+      "start": 15.36,
+      "duration": 3.999,
+      "text": "my name is melissa finley and this is"
+    },
+    {
+      "start": 17.92,
+      "duration": 4.48,
+      "text": "the presentation called"
+    },
+    {
+      "start": 19.359,
+      "duration": 4.401,
+      "text": "dueling dates and fact fights resolving"
+    },
+    {
+      "start": 22.4,
+      "duration": 4.0,
+      "text": "evidence conflicts"
+    },
+    {
+      "start": 23.76,
+      "duration": 2.64,
+      "text": "part one"
+    },
+    {
+      "start": 27.119,
+      "duration": 3.601,
+      "text": "the fourth element of the genealogical"
+    },
+    {
+      "start": 29.359,
+      "duration": 3.04,
+      "text": "proof standard"
+    },
+    {
+      "start": 30.72,
+      "duration": 3.12,
+      "text": "created by the board for certification"
+    },
+    {
+      "start": 32.399,
+      "duration": 4.32,
+      "text": "of genealogists"
+    },
+    {
+      "start": 33.84,
+      "duration": 5.2,
+      "text": "states that we must make a resolution of"
+    },
+    {
+      "start": 36.719,
+      "duration": 7.761,
+      "text": "conflicting evidence to reach a sound"
+    },
+    {
+      "start": 39.04,
+      "duration": 8.96,
+      "text": "conclusion in our genealogical research"
+    },
+    {
+      "start": 44.48,
+      "duration": 6.0,
+      "text": "but what is conflicting evidence"
+    },
+    {
+      "start": 48.0,
+      "duration": 3.68,
+      "text": "the law dictionary website provides this"
+    },
+    {
+      "start": 50.48,
+      "duration": 3.68,
+      "text": "definition"
+    },
+    {
+      "start": 51.68,
+      "duration": 4.16,
+      "text": "conflicting evidence is evidence that is"
+    },
+    {
+      "start": 54.16,
+      "duration": 5.68,
+      "text": "taken from different sources"
+    },
+    {
+      "start": 55.84,
+      "duration": 4.0,
+      "text": "that contradict each other"
+    },
+    {
+      "start": 60.64,
+      "duration": 4.4,
+      "text": "in this class part one of two of dueling"
+    },
+    {
+      "start": 63.199,
+      "duration": 4.161,
+      "text": "dates and fact fights"
+    },
+    {
+      "start": 65.04,
+      "duration": 4.16,
+      "text": "we are going to talk about where and why"
+    },
+    {
+      "start": 67.36,
+      "duration": 3.119,
+      "text": "we might find conflicting evidence in"
+    },
+    {
+      "start": 69.2,
+      "duration": 3.44,
+      "text": "our research"
+    },
+    {
+      "start": 70.479,
+      "duration": 4.0,
+      "text": "in part two we'll emphasize solutions"
+    },
+    {
+      "start": 72.64,
+      "duration": 4.24,
+      "text": "and examples so i hope you'll join me"
+    },
+    {
+      "start": 74.479,
+      "duration": 5.361,
+      "text": "for that session as well"
+    },
+    {
+      "start": 76.88,
+      "duration": 3.68,
+      "text": "now let's discuss some areas where we"
+    },
+    {
+      "start": 79.84,
+      "duration": 6.48,
+      "text": "can find"
+    },
+    {
+      "start": 80.56,
+      "duration": 8.16,
+      "text": "conflicts and why those conflicts occur"
+    },
+    {
+      "start": 86.32,
+      "duration": 4.24,
+      "text": "let's start with spelling spelling is"
+    },
+    {
+      "start": 88.72,
+      "duration": 3.439,
+      "text": "probably the most common place we're"
+    },
+    {
+      "start": 90.56,
+      "duration": 4.64,
+      "text": "going to find conflicts in"
+    },
+    {
+      "start": 92.159,
+      "duration": 3.92,
+      "text": "our research and there's several reasons"
+    },
+    {
+      "start": 95.2,
+      "duration": 4.8,
+      "text": "why"
+    },
+    {
+      "start": 96.079,
+      "duration": 7.36,
+      "text": "um one of those is illiteracy"
+    },
+    {
+      "start": 100.0,
+      "duration": 5.84,
+      "text": "phonetics and then standardized spelling"
+    },
+    {
+      "start": 103.439,
+      "duration": 3.04,
+      "text": "so many of our ancestors actually could"
+    },
+    {
+      "start": 105.84,
+      "duration": 2.959,
+      "text": "not"
+    },
+    {
+      "start": 106.479,
+      "duration": 3.6,
+      "text": "read or write and they didn't know how"
+    },
+    {
+      "start": 108.799,
+      "duration": 3.841,
+      "text": "to spell their name"
+    },
+    {
+      "start": 110.079,
+      "duration": 3.201,
+      "text": "so therefore the tax man or the county"
+    },
+    {
+      "start": 112.64,
+      "duration": 3.36,
+      "text": "clerk or"
+    },
+    {
+      "start": 113.28,
+      "duration": 3.28,
+      "text": "whoever the record was created by would"
+    },
+    {
+      "start": 116.0,
+      "duration": 2.96,
+      "text": "just"
+    },
+    {
+      "start": 116.56,
+      "duration": 3.919,
+      "text": "wrote what he heard or he might have"
+    },
+    {
+      "start": 118.96,
+      "duration": 2.4,
+      "text": "written a way he thought the name was"
+    },
+    {
+      "start": 120.479,
+      "duration": 4.32,
+      "text": "spelled"
+    },
+    {
+      "start": 121.36,
+      "duration": 5.2,
+      "text": "or literally just the way the phonetics"
+    },
+    {
+      "start": 124.799,
+      "duration": 3.68,
+      "text": "worked out so that he would spell it how"
+    },
+    {
+      "start": 126.56,
+      "duration": 4.0,
+      "text": "it sounded"
+    },
+    {
+      "start": 128.479,
+      "duration": 3.041,
+      "text": "standardized spelling and high literacy"
+    },
+    {
+      "start": 130.56,
+      "duration": 4.64,
+      "text": "rates are much more"
+    },
+    {
+      "start": 131.52,
+      "duration": 3.68,
+      "text": "modern concept"
+    },
+    {
+      "start": 135.68,
+      "duration": 3.12,
+      "text": "so here's an example of several ways you"
+    },
+    {
+      "start": 137.92,
+      "duration": 4.16,
+      "text": "might find"
+    },
+    {
+      "start": 138.8,
+      "duration": 6.72,
+      "text": "the taylor surname spelled in a variety"
+    },
+    {
+      "start": 142.08,
+      "duration": 5.12,
+      "text": "of records and this is just a sampling"
+    },
+    {
+      "start": 145.52,
+      "duration": 4.88,
+      "text": "there's more ways you could find this"
+    },
+    {
+      "start": 147.2,
+      "duration": 3.2,
+      "text": "nate this name spelled"
+    },
+    {
+      "start": 150.879,
+      "duration": 5.601,
+      "text": "and then there's an example of"
+    },
+    {
+      "start": 153.92,
+      "duration": 3.36,
+      "text": "a first name jonathan which you might"
+    },
+    {
+      "start": 156.48,
+      "duration": 2.56,
+      "text": "find"
+    },
+    {
+      "start": 157.28,
+      "duration": 4.0,
+      "text": "spelled a variety of ways and also"
+    },
+    {
+      "start": 159.04,
+      "duration": 4.64,
+      "text": "abbreviated a variety of ways in the"
+    },
+    {
+      "start": 161.28,
+      "duration": 5.599,
+      "text": "records"
+    },
+    {
+      "start": 163.68,
+      "duration": 4.48,
+      "text": "in most cases spelling conflicts can be"
+    },
+    {
+      "start": 166.879,
+      "duration": 3.44,
+      "text": "easily explained"
+    },
+    {
+      "start": 168.16,
+      "duration": 3.6,
+      "text": "because it's simply a variation on the"
+    },
+    {
+      "start": 170.319,
+      "duration": 4.64,
+      "text": "spelling of a name"
+    },
+    {
+      "start": 171.76,
+      "duration": 6.559,
+      "text": "and you can find other evidence"
+    },
+    {
+      "start": 174.959,
+      "duration": 6.081,
+      "text": "in the documents that corroborates"
+    },
+    {
+      "start": 178.319,
+      "duration": 4.721,
+      "text": "that it's the same person so in most of"
+    },
+    {
+      "start": 181.04,
+      "duration": 2.559,
+      "text": "my client reports i actually write a"
+    },
+    {
+      "start": 183.04,
+      "duration": 3.68,
+      "text": "short"
+    },
+    {
+      "start": 183.599,
+      "duration": 5.201,
+      "text": "explanation about spelling variation and"
+    },
+    {
+      "start": 186.72,
+      "duration": 5.36,
+      "text": "then i choose one standard way to write"
+    },
+    {
+      "start": 188.8,
+      "duration": 5.12,
+      "text": "the name within the report except"
+    },
+    {
+      "start": 192.08,
+      "duration": 3.84,
+      "text": "when i'm specifically extracting data"
+    },
+    {
+      "start": 193.92,
+      "duration": 3.52,
+      "text": "from the records and when i'm creating a"
+    },
+    {
+      "start": 195.92,
+      "duration": 3.599,
+      "text": "source citation i keep"
+    },
+    {
+      "start": 197.44,
+      "duration": 6.0,
+      "text": "the spelling the way it was found in the"
+    },
+    {
+      "start": 199.519,
+      "duration": 3.921,
+      "text": "record for historical accuracy"
+    },
+    {
+      "start": 204.0,
+      "duration": 3.04,
+      "text": "okay let's talk about conflicting"
+    },
+    {
+      "start": 206.4,
+      "duration": 4.08,
+      "text": "evidence"
+    },
+    {
+      "start": 207.04,
+      "duration": 5.199,
+      "text": "in names some of the reasons we might"
+    },
+    {
+      "start": 210.48,
+      "duration": 3.039,
+      "text": "have conflicting evidence in names is"
+    },
+    {
+      "start": 212.239,
+      "duration": 4.161,
+      "text": "because"
+    },
+    {
+      "start": 213.519,
+      "duration": 4.0,
+      "text": "just like now people would use nicknames"
+    },
+    {
+      "start": 216.4,
+      "duration": 4.8,
+      "text": "call names"
+    },
+    {
+      "start": 217.519,
+      "duration": 6.241,
+      "text": "or saints names for their children"
+    },
+    {
+      "start": 221.2,
+      "duration": 3.52,
+      "text": "so for example the parents name the"
+    },
+    {
+      "start": 223.76,
+      "duration": 3.039,
+      "text": "child sarah"
+    },
+    {
+      "start": 224.72,
+      "duration": 4.0,
+      "text": "but when she's young they start calling"
+    },
+    {
+      "start": 226.799,
+      "duration": 4.401,
+      "text": "her the nickname sally and she just"
+    },
+    {
+      "start": 228.72,
+      "duration": 4.799,
+      "text": "continues to use it as she gets older"
+    },
+    {
+      "start": 231.2,
+      "duration": 3.52,
+      "text": "or the parents name their son robert"
+    },
+    {
+      "start": 233.519,
+      "duration": 2.961,
+      "text": "andrew"
+    },
+    {
+      "start": 234.72,
+      "duration": 3.2,
+      "text": "uh after his grandfather but they know"
+    },
+    {
+      "start": 236.48,
+      "duration": 2.16,
+      "text": "from the get-go that they're going to"
+    },
+    {
+      "start": 237.92,
+      "duration": 4.08,
+      "text": "call him"
+    },
+    {
+      "start": 238.64,
+      "duration": 5.92,
+      "text": "by the name andy thus the call name"
+    },
+    {
+      "start": 242.0,
+      "duration": 4.08,
+      "text": "and the parents especially if they're"
+    },
+    {
+      "start": 244.56,
+      "duration": 4.16,
+      "text": "religious especially of the"
+    },
+    {
+      "start": 246.08,
+      "duration": 3.6,
+      "text": "catholic faith they might give their"
+    },
+    {
+      "start": 248.72,
+      "duration": 2.96,
+      "text": "child one or more"
+    },
+    {
+      "start": 249.68,
+      "duration": 4.4,
+      "text": "saints names before they give them a"
+    },
+    {
+      "start": 251.68,
+      "duration": 3.839,
+      "text": "given name or simply just give them"
+    },
+    {
+      "start": 254.08,
+      "duration": 2.96,
+      "text": "saints names"
+    },
+    {
+      "start": 255.519,
+      "duration": 3.84,
+      "text": "and the child might go by a different"
+    },
+    {
+      "start": 257.04,
+      "duration": 3.84,
+      "text": "name a middle name as found on the"
+    },
+    {
+      "start": 259.359,
+      "duration": 3.761,
+      "text": "baptismal record"
+    },
+    {
+      "start": 260.88,
+      "duration": 3.92,
+      "text": "or just a nickname so such as the"
+    },
+    {
+      "start": 263.12,
+      "duration": 6.079,
+      "text": "example mary magdalene"
+    },
+    {
+      "start": 264.8,
+      "duration": 8.08,
+      "text": "who is called maggie"
+    },
+    {
+      "start": 269.199,
+      "duration": 5.361,
+      "text": "families also sometimes would reuse"
+    },
+    {
+      "start": 272.88,
+      "duration": 4.8,
+      "text": "names"
+    },
+    {
+      "start": 274.56,
+      "duration": 5.04,
+      "text": "so for example i had a family that i"
+    },
+    {
+      "start": 277.68,
+      "duration": 5.2,
+      "text": "researched where they had some twins"
+    },
+    {
+      "start": 279.6,
+      "duration": 3.92,
+      "text": "born in 1824 and i found their baptismal"
+    },
+    {
+      "start": 282.88,
+      "duration": 3.44,
+      "text": "records"
+    },
+    {
+      "start": 283.52,
+      "duration": 3.6,
+      "text": "they named them patrick and william and"
+    },
+    {
+      "start": 286.32,
+      "duration": 3.84,
+      "text": "then"
+    },
+    {
+      "start": 287.12,
+      "duration": 5.76,
+      "text": "late the next year the family had"
+    },
+    {
+      "start": 290.16,
+      "duration": 4.88,
+      "text": "another singleton baby and the twins had"
+    },
+    {
+      "start": 292.88,
+      "duration": 5.68,
+      "text": "died and so they renamed"
+    },
+    {
+      "start": 295.04,
+      "duration": 5.84,
+      "text": "this baby william"
+    },
+    {
+      "start": 298.56,
+      "duration": 3.04,
+      "text": "and that's a common pattern that you see"
+    },
+    {
+      "start": 300.88,
+      "duration": 4.159,
+      "text": "when"
+    },
+    {
+      "start": 301.6,
+      "duration": 3.439,
+      "text": "child mortality rates were high"
+    },
+    {
+      "start": 305.919,
+      "duration": 3.921,
+      "text": "so we also come across name changes that"
+    },
+    {
+      "start": 308.479,
+      "duration": 2.16,
+      "text": "cause conflicting evidence in our"
+    },
+    {
+      "start": 309.84,
+      "duration": 2.96,
+      "text": "research"
+    },
+    {
+      "start": 310.639,
+      "duration": 3.84,
+      "text": "sometimes a person would go by one name"
+    },
+    {
+      "start": 312.8,
+      "duration": 3.52,
+      "text": "for a portion of their life"
+    },
+    {
+      "start": 314.479,
+      "duration": 4.0,
+      "text": "and then change their name slightly or"
+    },
+    {
+      "start": 316.32,
+      "duration": 3.76,
+      "text": "drastically later in life"
+    },
+    {
+      "start": 318.479,
+      "duration": 4.321,
+      "text": "and there are a variety of reasons for"
+    },
+    {
+      "start": 320.08,
+      "duration": 6.0,
+      "text": "this from differing preferences"
+    },
+    {
+      "start": 322.8,
+      "duration": 7.839,
+      "text": "or trying to hide something or from"
+    },
+    {
+      "start": 326.08,
+      "duration": 6.8,
+      "text": "someone so i i had just a simple example"
+    },
+    {
+      "start": 330.639,
+      "duration": 3.441,
+      "text": "i researched a woman who went by emma as"
+    },
+    {
+      "start": 332.88,
+      "duration": 3.28,
+      "text": "a child"
+    },
+    {
+      "start": 334.08,
+      "duration": 3.44,
+      "text": "but after she married and moved closer"
+    },
+    {
+      "start": 336.16,
+      "duration": 4.8,
+      "text": "to her husband's family she went"
+    },
+    {
+      "start": 337.52,
+      "duration": 3.44,
+      "text": "by the name emily"
+    },
+    {
+      "start": 342.72,
+      "duration": 5.44,
+      "text": "and then finally when we're speaking of"
+    },
+    {
+      "start": 344.72,
+      "duration": 4.96,
+      "text": "names i cannot neglect to talk about"
+    },
+    {
+      "start": 348.16,
+      "duration": 3.28,
+      "text": "that we often run into conflicting"
+    },
+    {
+      "start": 349.68,
+      "duration": 3.519,
+      "text": "evidence because there are multiple"
+    },
+    {
+      "start": 351.44,
+      "duration": 4.64,
+      "text": "people with the same name"
+    },
+    {
+      "start": 353.199,
+      "duration": 4.56,
+      "text": "in an area at the same time so we must"
+    },
+    {
+      "start": 356.08,
+      "duration": 3.28,
+      "text": "acknowledge that in our research and do"
+    },
+    {
+      "start": 357.759,
+      "duration": 4.241,
+      "text": "our best to document and"
+    },
+    {
+      "start": 359.36,
+      "duration": 3.279,
+      "text": "separate each same named person to"
+    },
+    {
+      "start": 362.0,
+      "duration": 5.12,
+      "text": "resolve"
+    },
+    {
+      "start": 362.639,
+      "duration": 7.12,
+      "text": "our conflicts"
+    },
+    {
+      "start": 367.12,
+      "duration": 6.079,
+      "text": "we can find conflicts in the dates of"
+    },
+    {
+      "start": 369.759,
+      "duration": 6.0,
+      "text": "our ancestors events and the ages"
+    },
+    {
+      "start": 373.199,
+      "duration": 3.84,
+      "text": "they are listed under from varying"
+    },
+    {
+      "start": 375.759,
+      "duration": 3.681,
+      "text": "records"
+    },
+    {
+      "start": 377.039,
+      "duration": 4.081,
+      "text": "so one particular reason that we find"
+    },
+    {
+      "start": 379.44,
+      "duration": 3.28,
+      "text": "this is because there was an actual"
+    },
+    {
+      "start": 381.12,
+      "duration": 4.48,
+      "text": "calendar change"
+    },
+    {
+      "start": 382.72,
+      "duration": 4.8,
+      "text": "in between 1750 and 1752 there was a"
+    },
+    {
+      "start": 385.6,
+      "duration": 3.68,
+      "text": "change from the julian calendar to the"
+    },
+    {
+      "start": 387.52,
+      "duration": 3.28,
+      "text": "gregorian calendar"
+    },
+    {
+      "start": 389.28,
+      "duration": 4.4,
+      "text": "the date of the new year changed from"
+    },
+    {
+      "start": 390.8,
+      "duration": 5.44,
+      "text": "march 25th to january 1st"
+    },
+    {
+      "start": 393.68,
+      "duration": 4.639,
+      "text": "and so if you're dealing with this"
+    },
+    {
+      "start": 396.24,
+      "duration": 3.679,
+      "text": "particular time period in your research"
+    },
+    {
+      "start": 398.319,
+      "duration": 3.44,
+      "text": "you're going to want to familiarize"
+    },
+    {
+      "start": 399.919,
+      "duration": 3.441,
+      "text": "yourself with the specifics of this"
+    },
+    {
+      "start": 401.759,
+      "duration": 3.201,
+      "text": "calendar change"
+    },
+    {
+      "start": 403.36,
+      "duration": 3.04,
+      "text": "and i will include a link in the"
+    },
+    {
+      "start": 404.96,
+      "duration": 2.959,
+      "text": "syllabus"
+    },
+    {
+      "start": 406.4,
+      "duration": 3.44,
+      "text": "for a website that shares all the"
+    },
+    {
+      "start": 407.919,
+      "duration": 4.321,
+      "text": "details about this particular calendar"
+    },
+    {
+      "start": 409.84,
+      "duration": 2.4,
+      "text": "change"
+    },
+    {
+      "start": 413.039,
+      "duration": 4.481,
+      "text": "next we look at a variety of records to"
+    },
+    {
+      "start": 415.44,
+      "duration": 5.44,
+      "text": "determine our ancestors vital"
+    },
+    {
+      "start": 417.52,
+      "duration": 6.88,
+      "text": "event details so we need to carefully"
+    },
+    {
+      "start": 420.88,
+      "duration": 8.159,
+      "text": "assess what the"
+    },
+    {
+      "start": 424.4,
+      "duration": 6.32,
+      "text": "record is telling us so for example"
+    },
+    {
+      "start": 429.039,
+      "duration": 3.44,
+      "text": "when you're looking at birth data are"
+    },
+    {
+      "start": 430.72,
+      "duration": 4.12,
+      "text": "you looking at an actual birth record"
+    },
+    {
+      "start": 432.479,
+      "duration": 3.521,
+      "text": "or are you looking at a baptism"
+    },
+    {
+      "start": 434.84,
+      "duration": 2.68,
+      "text": "certificate"
+    },
+    {
+      "start": 436.0,
+      "duration": 3.68,
+      "text": "those are going to tell you different"
+    },
+    {
+      "start": 437.52,
+      "duration": 5.119,
+      "text": "dates are you looking at a marriage"
+    },
+    {
+      "start": 439.68,
+      "duration": 4.48,
+      "text": "license when the couple went to the"
+    },
+    {
+      "start": 442.639,
+      "duration": 3.041,
+      "text": "county or whichever"
+    },
+    {
+      "start": 444.16,
+      "duration": 3.2,
+      "text": "jurisdiction they need to go to to"
+    },
+    {
+      "start": 445.68,
+      "duration": 3.12,
+      "text": "receive permission to marry"
+    },
+    {
+      "start": 447.36,
+      "duration": 3.279,
+      "text": "or are you looking at the return that"
+    },
+    {
+      "start": 448.8,
+      "duration": 4.0,
+      "text": "came back from the priest"
+    },
+    {
+      "start": 450.639,
+      "duration": 4.56,
+      "text": "uh or whoever officiated their wedding"
+    },
+    {
+      "start": 452.8,
+      "duration": 3.76,
+      "text": "saying yes i married them on this date"
+    },
+    {
+      "start": 455.199,
+      "duration": 3.28,
+      "text": "those dates might be very different from"
+    },
+    {
+      "start": 456.56,
+      "duration": 3.039,
+      "text": "one another and then when you're looking"
+    },
+    {
+      "start": 458.479,
+      "duration": 2.481,
+      "text": "for a death date are you looking at a"
+    },
+    {
+      "start": 459.599,
+      "duration": 4.481,
+      "text": "death or burial or"
+    },
+    {
+      "start": 460.96,
+      "duration": 4.56,
+      "text": "probate record all of those could have"
+    },
+    {
+      "start": 464.08,
+      "duration": 2.88,
+      "text": "different dates on them because of the"
+    },
+    {
+      "start": 465.52,
+      "duration": 3.119,
+      "text": "purpose of the record"
+    },
+    {
+      "start": 466.96,
+      "duration": 4.48,
+      "text": "and so that might cause conflicts that"
+    },
+    {
+      "start": 468.639,
+      "duration": 5.68,
+      "text": "you need to resolve"
+    },
+    {
+      "start": 471.44,
+      "duration": 5.68,
+      "text": "we also run into laws and legal issues"
+    },
+    {
+      "start": 474.319,
+      "duration": 5.681,
+      "text": "that affect the dates and ages"
+    },
+    {
+      "start": 477.12,
+      "duration": 4.72,
+      "text": "in the records that we look at so laws"
+    },
+    {
+      "start": 480.0,
+      "duration": 4.16,
+      "text": "and legal issues affect what age people"
+    },
+    {
+      "start": 481.84,
+      "duration": 4.079,
+      "text": "can be taxed what age they can marry"
+    },
+    {
+      "start": 484.16,
+      "duration": 3.28,
+      "text": "and when they can make legal decisions"
+    },
+    {
+      "start": 485.919,
+      "duration": 3.84,
+      "text": "in court and when they can manage"
+    },
+    {
+      "start": 487.44,
+      "duration": 3.439,
+      "text": "property so if we aren't interpreting"
+    },
+    {
+      "start": 489.759,
+      "duration": 4.081,
+      "text": "the laws"
+    },
+    {
+      "start": 490.879,
+      "duration": 4.081,
+      "text": "and the records correctly we might come"
+    },
+    {
+      "start": 493.84,
+      "duration": 3.359,
+      "text": "across"
+    },
+    {
+      "start": 494.96,
+      "duration": 3.6,
+      "text": "um conflicting evidence we can also know"
+    },
+    {
+      "start": 497.199,
+      "duration": 4.56,
+      "text": "that sometimes people"
+    },
+    {
+      "start": 498.56,
+      "duration": 5.039,
+      "text": "tried to get around the law and so the"
+    },
+    {
+      "start": 501.759,
+      "duration": 3.761,
+      "text": "records might not be accurate because"
+    },
+    {
+      "start": 503.599,
+      "duration": 4.801,
+      "text": "they were trying to fudge a little bit"
+    },
+    {
+      "start": 505.52,
+      "duration": 2.88,
+      "text": "to get around the law"
+    },
+    {
+      "start": 508.56,
+      "duration": 5.279,
+      "text": "so in general things like this"
+    },
+    {
+      "start": 511.84,
+      "duration": 4.24,
+      "text": "affect the dates and ages so men would"
+    },
+    {
+      "start": 513.839,
+      "duration": 4.161,
+      "text": "typically start appearing on tax lists"
+    },
+    {
+      "start": 516.08,
+      "duration": 3.68,
+      "text": "in the u.s at age 21. now this could"
+    },
+    {
+      "start": 518.0,
+      "duration": 4.08,
+      "text": "vary by place and time"
+    },
+    {
+      "start": 519.76,
+      "duration": 3.519,
+      "text": "but men sometimes age out of the poll"
+    },
+    {
+      "start": 522.08,
+      "duration": 4.24,
+      "text": "tax 60"
+    },
+    {
+      "start": 523.279,
+      "duration": 6.161,
+      "text": "in some places and times"
+    },
+    {
+      "start": 526.32,
+      "duration": 6.32,
+      "text": "so when we're weighing the evidence um"
+    },
+    {
+      "start": 529.44,
+      "duration": 4.72,
+      "text": "we have to consider these these four"
+    },
+    {
+      "start": 532.64,
+      "duration": 4.08,
+      "text": "the spelling the name the date or the"
+    },
+    {
+      "start": 534.16,
+      "duration": 4.96,
+      "text": "age how important is it to resolve"
+    },
+    {
+      "start": 536.72,
+      "duration": 3.76,
+      "text": "the conflict sometimes on spelling as"
+    },
+    {
+      "start": 539.12,
+      "duration": 2.8,
+      "text": "long as there's other corroborating"
+    },
+    {
+      "start": 540.48,
+      "duration": 2.56,
+      "text": "evidence in the records it's not that"
+    },
+    {
+      "start": 541.92,
+      "duration": 2.72,
+      "text": "important"
+    },
+    {
+      "start": 543.04,
+      "duration": 3.28,
+      "text": "to figure out the exact spelling of"
+    },
+    {
+      "start": 544.64,
+      "duration": 3.44,
+      "text": "their name"
+    },
+    {
+      "start": 546.32,
+      "duration": 3.04,
+      "text": "in other cases it really does matter"
+    },
+    {
+      "start": 548.08,
+      "duration": 2.96,
+      "text": "such as"
+    },
+    {
+      "start": 549.36,
+      "duration": 3.2,
+      "text": "um if you're dealing with two same name"
+    },
+    {
+      "start": 551.04,
+      "duration": 3.68,
+      "text": "men in this area"
+    },
+    {
+      "start": 552.56,
+      "duration": 3.76,
+      "text": "you definitely need to resolve that"
+    },
+    {
+      "start": 554.72,
+      "duration": 3.76,
+      "text": "conflict"
+    },
+    {
+      "start": 556.32,
+      "duration": 3.28,
+      "text": "so if it is important to resolve keep"
+    },
+    {
+      "start": 558.48,
+      "duration": 3.68,
+      "text": "digging for more"
+    },
+    {
+      "start": 559.6,
+      "duration": 3.28,
+      "text": "evidence to resolve your conflict if"
+    },
+    {
+      "start": 562.16,
+      "duration": 2.48,
+      "text": "it's not"
+    },
+    {
+      "start": 562.88,
+      "duration": 3.44,
+      "text": "that important to resolve and know the"
+    },
+    {
+      "start": 564.64,
+      "duration": 4.319,
+      "text": "exact date of birth"
+    },
+    {
+      "start": 566.32,
+      "duration": 3.04,
+      "text": "um go ahead and give a brief explanation"
+    },
+    {
+      "start": 568.959,
+      "duration": 2.241,
+      "text": "um"
+    },
+    {
+      "start": 569.36,
+      "duration": 3.12,
+      "text": "in your software or in your report"
+    },
+    {
+      "start": 571.2,
+      "duration": 2.16,
+      "text": "wherever you keep track of your family"
+    },
+    {
+      "start": 572.48,
+      "duration": 4.799,
+      "text": "history"
+    },
+    {
+      "start": 573.36,
+      "duration": 5.52,
+      "text": "and then move on"
+    },
+    {
+      "start": 577.279,
+      "duration": 3.361,
+      "text": "so now let's move on to some more"
+    },
+    {
+      "start": 578.88,
+      "duration": 4.0,
+      "text": "complex conflicting evidence"
+    },
+    {
+      "start": 580.64,
+      "duration": 3.04,
+      "text": "we can come across in our research the"
+    },
+    {
+      "start": 582.88,
+      "duration": 5.28,
+      "text": "first is"
+    },
+    {
+      "start": 583.68,
+      "duration": 6.88,
+      "text": "relationships just like today"
+    },
+    {
+      "start": 588.16,
+      "duration": 3.119,
+      "text": "our ancestors families often included"
+    },
+    {
+      "start": 590.56,
+      "duration": 3.839,
+      "text": "complex"
+    },
+    {
+      "start": 591.279,
+      "duration": 6.161,
+      "text": "relationships of many types including"
+    },
+    {
+      "start": 594.399,
+      "duration": 4.56,
+      "text": "biological relationships adopted and"
+    },
+    {
+      "start": 597.44,
+      "duration": 3.04,
+      "text": "that could be formally adopted or"
+    },
+    {
+      "start": 598.959,
+      "duration": 4.56,
+      "text": "informally"
+    },
+    {
+      "start": 600.48,
+      "duration": 4.16,
+      "text": "illegitimacy half relationships step"
+    },
+    {
+      "start": 603.519,
+      "duration": 4.641,
+      "text": "relationships"
+    },
+    {
+      "start": 604.64,
+      "duration": 6.24,
+      "text": "and remarriages so we"
+    },
+    {
+      "start": 608.16,
+      "duration": 3.679,
+      "text": "sometimes come up with conflicting"
+    },
+    {
+      "start": 610.88,
+      "duration": 4.24,
+      "text": "evidence because"
+    },
+    {
+      "start": 611.839,
+      "duration": 5.921,
+      "text": "we don't yet understand the true nature"
+    },
+    {
+      "start": 615.12,
+      "duration": 5.36,
+      "text": "of the relationship between two people"
+    },
+    {
+      "start": 617.76,
+      "duration": 5.12,
+      "text": "so we need to"
+    },
+    {
+      "start": 620.48,
+      "duration": 3.76,
+      "text": "analyze more or find more evidence to"
+    },
+    {
+      "start": 622.88,
+      "duration": 4.0,
+      "text": "figure out what the nature of their"
+    },
+    {
+      "start": 624.24,
+      "duration": 4.56,
+      "text": "relationship is"
+    },
+    {
+      "start": 626.88,
+      "duration": 3.76,
+      "text": "let's talk for a minute about the"
+    },
+    {
+      "start": 628.8,
+      "duration": 5.44,
+      "text": "historic use of the terms"
+    },
+    {
+      "start": 630.64,
+      "duration": 4.24,
+      "text": "senior and junior for the most part"
+    },
+    {
+      "start": 634.24,
+      "duration": 2.8,
+      "text": "today"
+    },
+    {
+      "start": 634.88,
+      "duration": 3.28,
+      "text": "they are used to denote a parent-child"
+    },
+    {
+      "start": 637.04,
+      "duration": 3.359,
+      "text": "relationship"
+    },
+    {
+      "start": 638.16,
+      "duration": 3.359,
+      "text": "however historically this was not always"
+    },
+    {
+      "start": 640.399,
+      "duration": 3.761,
+      "text": "the case"
+    },
+    {
+      "start": 641.519,
+      "duration": 4.32,
+      "text": "often men of the same name in a"
+    },
+    {
+      "start": 644.16,
+      "duration": 2.88,
+      "text": "community would use these terms to"
+    },
+    {
+      "start": 645.839,
+      "duration": 4.321,
+      "text": "distinguish"
+    },
+    {
+      "start": 647.04,
+      "duration": 6.72,
+      "text": "between themselves so"
+    },
+    {
+      "start": 650.16,
+      "duration": 6.0,
+      "text": "the older one would say he was william"
+    },
+    {
+      "start": 653.76,
+      "duration": 3.04,
+      "text": "senior the younger man would say he was"
+    },
+    {
+      "start": 656.16,
+      "duration": 4.799,
+      "text": "william"
+    },
+    {
+      "start": 656.8,
+      "duration": 6.32,
+      "text": "jr but it did not necessarily signify"
+    },
+    {
+      "start": 660.959,
+      "duration": 3.521,
+      "text": "a parent-child relationship they might"
+    },
+    {
+      "start": 663.12,
+      "duration": 3.839,
+      "text": "be an uncle and nephew"
+    },
+    {
+      "start": 664.48,
+      "duration": 5.68,
+      "text": "they might be cousins or they could even"
+    },
+    {
+      "start": 666.959,
+      "duration": 3.201,
+      "text": "be unrelated"
+    },
+    {
+      "start": 671.279,
+      "duration": 5.441,
+      "text": "so now let's talk about conflicts"
+    },
+    {
+      "start": 673.36,
+      "duration": 5.76,
+      "text": "involving jurisdictions or places"
+    },
+    {
+      "start": 676.72,
+      "duration": 3.2,
+      "text": "boundaries around the world have changed"
+    },
+    {
+      "start": 679.12,
+      "duration": 3.36,
+      "text": "over time"
+    },
+    {
+      "start": 679.92,
+      "duration": 3.44,
+      "text": "so what was at one time in one county or"
+    },
+    {
+      "start": 682.48,
+      "duration": 3.44,
+      "text": "state"
+    },
+    {
+      "start": 683.36,
+      "duration": 3.52,
+      "text": "or country or province might be in a"
+    },
+    {
+      "start": 685.92,
+      "duration": 3.76,
+      "text": "different"
+    },
+    {
+      "start": 686.88,
+      "duration": 4.48,
+      "text": "country or state or province after a"
+    },
+    {
+      "start": 689.68,
+      "duration": 4.8,
+      "text": "boundary change"
+    },
+    {
+      "start": 691.36,
+      "duration": 5.44,
+      "text": "our ancestors also migrated some"
+    },
+    {
+      "start": 694.48,
+      "duration": 3.84,
+      "text": "very little but others more than we"
+    },
+    {
+      "start": 696.8,
+      "duration": 4.719,
+      "text": "imagined was possible"
+    },
+    {
+      "start": 698.32,
+      "duration": 4.959,
+      "text": "with former means of travel but migrate"
+    },
+    {
+      "start": 701.519,
+      "duration": 4.161,
+      "text": "they did and sometimes this"
+    },
+    {
+      "start": 703.279,
+      "duration": 3.12,
+      "text": "causes conflicting evidence that we must"
+    },
+    {
+      "start": 705.68,
+      "duration": 3.92,
+      "text": "carefully"
+    },
+    {
+      "start": 706.399,
+      "duration": 5.041,
+      "text": "work through to resolve we also have to"
+    },
+    {
+      "start": 709.6,
+      "duration": 2.88,
+      "text": "keep in mind that we deal with records"
+    },
+    {
+      "start": 711.44,
+      "duration": 4.32,
+      "text": "created at"
+    },
+    {
+      "start": 712.48,
+      "duration": 4.24,
+      "text": "different jurisdiction levels so some by"
+    },
+    {
+      "start": 715.76,
+      "duration": 3.68,
+      "text": "towns"
+    },
+    {
+      "start": 716.72,
+      "duration": 3.84,
+      "text": "counties parishes states or country"
+    },
+    {
+      "start": 719.44,
+      "duration": 3.199,
+      "text": "level"
+    },
+    {
+      "start": 720.56,
+      "duration": 3.279,
+      "text": "and knowing the jurisdiction level of"
+    },
+    {
+      "start": 722.639,
+      "duration": 4.401,
+      "text": "the record"
+    },
+    {
+      "start": 723.839,
+      "duration": 7.201,
+      "text": "can actually help us resolve our"
+    },
+    {
+      "start": 727.04,
+      "duration": 5.68,
+      "text": "conflicting evidence"
+    },
+    {
+      "start": 731.04,
+      "duration": 4.16,
+      "text": "so let's take a look at one of the"
+    },
+    {
+      "start": 732.72,
+      "duration": 5.359,
+      "text": "jurisdictions that i often work in"
+    },
+    {
+      "start": 735.2,
+      "duration": 4.96,
+      "text": "this is at the kentucky virginia"
+    },
+    {
+      "start": 738.079,
+      "duration": 4.401,
+      "text": "tennessee"
+    },
+    {
+      "start": 740.16,
+      "duration": 3.28,
+      "text": "north carolina border and this"
+    },
+    {
+      "start": 742.48,
+      "duration": 3.28,
+      "text": "particular map"
+    },
+    {
+      "start": 743.44,
+      "duration": 3.6,
+      "text": "shows this area in 1848 keep in mind"
+    },
+    {
+      "start": 745.76,
+      "duration": 4.8,
+      "text": "that the boundaries"
+    },
+    {
+      "start": 747.04,
+      "duration": 6.799,
+      "text": "changed before this time um"
+    },
+    {
+      "start": 750.56,
+      "duration": 6.32,
+      "text": "so what does this look like to you yeah"
+    },
+    {
+      "start": 753.839,
+      "duration": 6.081,
+      "text": "it's a nice zigzag shape and"
+    },
+    {
+      "start": 756.88,
+      "duration": 4.8,
+      "text": "i'll tell you what um i have researched"
+    },
+    {
+      "start": 759.92,
+      "duration": 5.12,
+      "text": "a lot of folks that like to"
+    },
+    {
+      "start": 761.68,
+      "duration": 6.399,
+      "text": "zigzag across the zigzags here"
+    },
+    {
+      "start": 765.04,
+      "duration": 5.52,
+      "text": "at these boundaries so"
+    },
+    {
+      "start": 768.079,
+      "duration": 4.88,
+      "text": "it is imperative as a researcher that we"
+    },
+    {
+      "start": 770.56,
+      "duration": 4.8,
+      "text": "understand jurisdictions"
+    },
+    {
+      "start": 772.959,
+      "duration": 4.801,
+      "text": "to help us resolve conflicts in our"
+    },
+    {
+      "start": 775.36,
+      "duration": 2.4,
+      "text": "research"
+    },
+    {
+      "start": 778.88,
+      "duration": 3.6,
+      "text": "so lastly i want to talk about records"
+    },
+    {
+      "start": 781.6,
+      "duration": 3.039,
+      "text": "and sources"
+    },
+    {
+      "start": 782.48,
+      "duration": 3.12,
+      "text": "themselves we look at a lot of types of"
+    },
+    {
+      "start": 784.639,
+      "duration": 3.281,
+      "text": "records"
+    },
+    {
+      "start": 785.6,
+      "duration": 3.28,
+      "text": "in our research sometimes we're looking"
+    },
+    {
+      "start": 787.92,
+      "duration": 4.56,
+      "text": "at index"
+    },
+    {
+      "start": 788.88,
+      "duration": 5.68,
+      "text": "sometimes it's a compiled source um"
+    },
+    {
+      "start": 792.48,
+      "duration": 4.479,
+      "text": "other times it's an original or a copy"
+    },
+    {
+      "start": 794.56,
+      "duration": 5.6,
+      "text": "of an original"
+    },
+    {
+      "start": 796.959,
+      "duration": 5.361,
+      "text": "and we need to keep that in mind how far"
+    },
+    {
+      "start": 800.16,
+      "duration": 2.799,
+      "text": "removed is the record we are looking at"
+    },
+    {
+      "start": 802.32,
+      "duration": 4.0,
+      "text": "from"
+    },
+    {
+      "start": 802.959,
+      "duration": 5.281,
+      "text": "the original because the farther we are"
+    },
+    {
+      "start": 806.32,
+      "duration": 3.44,
+      "text": "removed from the original the more"
+    },
+    {
+      "start": 808.24,
+      "duration": 3.52,
+      "text": "chance there are errors in the"
+    },
+    {
+      "start": 809.76,
+      "duration": 4.319,
+      "text": "information that we're looking at"
+    },
+    {
+      "start": 811.76,
+      "duration": 4.079,
+      "text": "and that might be the thing that's"
+    },
+    {
+      "start": 814.079,
+      "duration": 4.241,
+      "text": "causing our conflicting"
+    },
+    {
+      "start": 815.839,
+      "duration": 3.841,
+      "text": "evidence another thing to keep in mind"
+    },
+    {
+      "start": 818.32,
+      "duration": 4.8,
+      "text": "is when you're looking at an"
+    },
+    {
+      "start": 819.68,
+      "duration": 4.8,
+      "text": "index or a compiled record or even if"
+    },
+    {
+      "start": 823.12,
+      "duration": 3.279,
+      "text": "you're looking at an original"
+    },
+    {
+      "start": 824.48,
+      "duration": 4.719,
+      "text": "are you actually looking at the complete"
+    },
+    {
+      "start": 826.399,
+      "duration": 4.481,
+      "text": "record or just part of it"
+    },
+    {
+      "start": 829.199,
+      "duration": 4.161,
+      "text": "chances are the entire record was not"
+    },
+    {
+      "start": 830.88,
+      "duration": 4.0,
+      "text": "indexed so the index is just a way for"
+    },
+    {
+      "start": 833.36,
+      "duration": 3.44,
+      "text": "you to get back to the original and find"
+    },
+    {
+      "start": 834.88,
+      "duration": 3.36,
+      "text": "all the information there"
+    },
+    {
+      "start": 836.8,
+      "duration": 4.8,
+      "text": "but sometimes even when we're looking at"
+    },
+    {
+      "start": 838.24,
+      "duration": 6.32,
+      "text": "something say a probate"
+    },
+    {
+      "start": 841.6,
+      "duration": 4.4,
+      "text": "paper that might not be the entire"
+    },
+    {
+      "start": 844.56,
+      "duration": 2.399,
+      "text": "probate case and so we're missing"
+    },
+    {
+      "start": 846.0,
+      "duration": 2.72,
+      "text": "information there"
+    },
+    {
+      "start": 846.959,
+      "duration": 3.521,
+      "text": "that might help us to resolve our"
+    },
+    {
+      "start": 848.72,
+      "duration": 4.239,
+      "text": "conflict so"
+    },
+    {
+      "start": 850.48,
+      "duration": 3.2,
+      "text": "we need to understand what record we're"
+    },
+    {
+      "start": 852.959,
+      "duration": 3.201,
+      "text": "using"
+    },
+    {
+      "start": 853.68,
+      "duration": 4.64,
+      "text": "and if we have all of it or just part of"
+    },
+    {
+      "start": 856.16,
+      "duration": 2.16,
+      "text": "it"
+    },
+    {
+      "start": 858.8,
+      "duration": 3.92,
+      "text": "thanks for watching part one of dueling"
+    },
+    {
+      "start": 861.04,
+      "duration": 4.88,
+      "text": "dates and fact fights"
+    },
+    {
+      "start": 862.72,
+      "duration": 5.2,
+      "text": "resolving evidence conflicts i hope this"
+    },
+    {
+      "start": 865.92,
+      "duration": 4.479,
+      "text": "class has helped you"
+    },
+    {
+      "start": 867.92,
+      "duration": 3.2,
+      "text": "understand a little better where and why"
+    },
+    {
+      "start": 870.399,
+      "duration": 2.321,
+      "text": "you might find"
+    },
+    {
+      "start": 871.12,
+      "duration": 3.839,
+      "text": "conflicting evidence in your"
+    },
+    {
+      "start": 872.72,
+      "duration": 4.88,
+      "text": "genealogical research"
+    },
+    {
+      "start": 874.959,
+      "duration": 4.24,
+      "text": "be sure to tune in for part two of this"
+    },
+    {
+      "start": 877.6,
+      "duration": 2.0,
+      "text": "presentation where we're going to look"
+    },
+    {
+      "start": 879.199,
+      "duration": 2.64,
+      "text": "at"
+    },
+    {
+      "start": 879.6,
+      "duration": 6.239,
+      "text": "examples and solutions for our"
+    },
+    {
+      "start": 881.839,
+      "duration": 4.0,
+      "text": "conflicting evidence"
+    },
+    {
+      "start": 886.16,
+      "duration": 10.96,
+      "text": "for even more great content visit the"
+    },
+    {
+      "start": 888.48,
+      "duration": 8.64,
+      "text": "rootstech homepage"
+    }
+  ],
+  "full_text": "[Music] hello my name is melissa finley and this is the presentation called dueling dates and fact fights resolving evidence conflicts part one the fourth element of the genealogical proof standard created by the board for certification of genealogists states that we must make a resolution of conflicting evidence to reach a sound conclusion in our genealogical research but what is conflicting evidence the law dictionary website provides this definition conflicting evidence is evidence that is taken from different sources that contradict each other in this class part one of two of dueling dates and fact fights we are going to talk about where and why we might find conflicting evidence in our research in part two we'll emphasize solutions and examples so i hope you'll join me for that session as well now let's discuss some areas where we can find conflicts and why those conflicts occur let's start with spelling spelling is probably the most common place we're going to find conflicts in our research and there's several reasons why um one of those is illiteracy phonetics and then standardized spelling so many of our ancestors actually could not read or write and they didn't know how to spell their name so therefore the tax man or the county clerk or whoever the record was created by would just wrote what he heard or he might have written a way he thought the name was spelled or literally just the way the phonetics worked out so that he would spell it how it sounded standardized spelling and high literacy rates are much more modern concept so here's an example of several ways you might find the taylor surname spelled in a variety of records and this is just a sampling there's more ways you could find this nate this name spelled and then there's an example of a first name jonathan which you might find spelled a variety of ways and also abbreviated a variety of ways in the records in most cases spelling conflicts can be easily explained because it's simply a variation on the spelling of a name and you can find other evidence in the documents that corroborates that it's the same person so in most of my client reports i actually write a short explanation about spelling variation and then i choose one standard way to write the name within the report except when i'm specifically extracting data from the records and when i'm creating a source citation i keep the spelling the way it was found in the record for historical accuracy okay let's talk about conflicting evidence in names some of the reasons we might have conflicting evidence in names is because just like now people would use nicknames call names or saints names for their children so for example the parents name the child sarah but when she's young they start calling her the nickname sally and she just continues to use it as she gets older or the parents name their son robert andrew uh after his grandfather but they know from the get-go that they're going to call him by the name andy thus the call name and the parents especially if they're religious especially of the catholic faith they might give their child one or more saints names before they give them a given name or simply just give them saints names and the child might go by a different name a middle name as found on the baptismal record or just a nickname so such as the example mary magdalene who is called maggie families also sometimes would reuse names so for example i had a family that i researched where they had some twins born in 1824 and i found their baptismal records they named them patrick and william and then late the next year the family had another singleton baby and the twins had died and so they renamed this baby william and that's a common pattern that you see when child mortality rates were high so we also come across name changes that cause conflicting evidence in our research sometimes a person would go by one name for a portion of their life and then change their name slightly or drastically later in life and there are a variety of reasons for this from differing preferences or trying to hide something or from someone so i i had just a simple example i researched a woman who went by emma as a child but after she married and moved closer to her husband's family she went by the name emily and then finally when we're speaking of names i cannot neglect to talk about that we often run into conflicting evidence because there are multiple people with the same name in an area at the same time so we must acknowledge that in our research and do our best to document and separate each same named person to resolve our conflicts we can find conflicts in the dates of our ancestors events and the ages they are listed under from varying records so one particular reason that we find this is because there was an actual calendar change in between 1750 and 1752 there was a change from the julian calendar to the gregorian calendar the date of the new year changed from march 25th to january 1st and so if you're dealing with this particular time period in your research you're going to want to familiarize yourself with the specifics of this calendar change and i will include a link in the syllabus for a website that shares all the details about this particular calendar change next we look at a variety of records to determine our ancestors vital event details so we need to carefully assess what the record is telling us so for example when you're looking at birth data are you looking at an actual birth record or are you looking at a baptism certificate those are going to tell you different dates are you looking at a marriage license when the couple went to the county or whichever jurisdiction they need to go to to receive permission to marry or are you looking at the return that came back from the priest uh or whoever officiated their wedding saying yes i married them on this date those dates might be very different from one another and then when you're looking for a death date are you looking at a death or burial or probate record all of those could have different dates on them because of the purpose of the record and so that might cause conflicts that you need to resolve we also run into laws and legal issues that affect the dates and ages in the records that we look at so laws and legal issues affect what age people can be taxed what age they can marry and when they can make legal decisions in court and when they can manage property so if we aren't interpreting the laws and the records correctly we might come across um conflicting evidence we can also know that sometimes people tried to get around the law and so the records might not be accurate because they were trying to fudge a little bit to get around the law so in general things like this affect the dates and ages so men would typically start appearing on tax lists in the u.s at age 21. now this could vary by place and time but men sometimes age out of the poll tax 60 in some places and times so when we're weighing the evidence um we have to consider these these four the spelling the name the date or the age how important is it to resolve the conflict sometimes on spelling as long as there's other corroborating evidence in the records it's not that important to figure out the exact spelling of their name in other cases it really does matter such as um if you're dealing with two same name men in this area you definitely need to resolve that conflict so if it is important to resolve keep digging for more evidence to resolve your conflict if it's not that important to resolve and know the exact date of birth um go ahead and give a brief explanation um in your software or in your report wherever you keep track of your family history and then move on so now let's move on to some more complex conflicting evidence we can come across in our research the first is relationships just like today our ancestors families often included complex relationships of many types including biological relationships adopted and that could be formally adopted or informally illegitimacy half relationships step relationships and remarriages so we sometimes come up with conflicting evidence because we don't yet understand the true nature of the relationship between two people so we need to analyze more or find more evidence to figure out what the nature of their relationship is let's talk for a minute about the historic use of the terms senior and junior for the most part today they are used to denote a parent-child relationship however historically this was not always the case often men of the same name in a community would use these terms to distinguish between themselves so the older one would say he was william senior the younger man would say he was william jr but it did not necessarily signify a parent-child relationship they might be an uncle and nephew they might be cousins or they could even be unrelated so now let's talk about conflicts involving jurisdictions or places boundaries around the world have changed over time so what was at one time in one county or state or country or province might be in a different country or state or province after a boundary change our ancestors also migrated some very little but others more than we imagined was possible with former means of travel but migrate they did and sometimes this causes conflicting evidence that we must carefully work through to resolve we also have to keep in mind that we deal with records created at different jurisdiction levels so some by towns counties parishes states or country level and knowing the jurisdiction level of the record can actually help us resolve our conflicting evidence so let's take a look at one of the jurisdictions that i often work in this is at the kentucky virginia tennessee north carolina border and this particular map shows this area in 1848 keep in mind that the boundaries changed before this time um so what does this look like to you yeah it's a nice zigzag shape and i'll tell you what um i have researched a lot of folks that like to zigzag across the zigzags here at these boundaries so it is imperative as a researcher that we understand jurisdictions to help us resolve conflicts in our research so lastly i want to talk about records and sources themselves we look at a lot of types of records in our research sometimes we're looking at index sometimes it's a compiled source um other times it's an original or a copy of an original and we need to keep that in mind how far removed is the record we are looking at from the original because the farther we are removed from the original the more chance there are errors in the information that we're looking at and that might be the thing that's causing our conflicting evidence another thing to keep in mind is when you're looking at an index or a compiled record or even if you're looking at an original are you actually looking at the complete record or just part of it chances are the entire record was not indexed so the index is just a way for you to get back to the original and find all the information there but sometimes even when we're looking at something say a probate paper that might not be the entire probate case and so we're missing information there that might help us to resolve our conflict so we need to understand what record we're using and if we have all of it or just part of it thanks for watching part one of dueling dates and fact fights resolving evidence conflicts i hope this class has helped you understand a little better where and why you might find conflicting evidence in your genealogical research be sure to tune in for part two of this presentation where we're going to look at examples and solutions for our conflicting evidence for even more great content visit the rootstech homepage",
+  "attempts": [
+    {
+      "client": "IOS",
+      "playability": {
+        "status": "OK",
+        "playableInEmbed": true,
+        "offlineability": {
+          "buttonRenderer": {
+            "navigationEndpoint": {
+              "clickTrackingParams": "CBEQ6ewBIhMIsKjTiezblwMVJUhMCB0tqC4FygEEo9et0w==",
+              "ypcGetOfflineUpsellEndpoint": {
+                "params": "CiXqqN25AR8KC1ZiZ01DUDdiS2NzShAwZ2NKQ1NRRkptUC1qYXJCIgtWYmdNQ1A3YktjcyoVCAkYAVIPCgtWYmdNQ1A3YktjcyAB"
+              }
+            },
+            "trackingParams": "CBEQ6ewBIhMIsKjTiezblwMVJUhMCB0tqC4F"
+          }
+        },
+        "pictureInPicture": {
+          "pictureInPictureRenderer": {
+            "playableInPip": true,
+            "offByDefault": false,
+            "shouldResumeOnHead": false
+          }
+        },
+        "miniplayer": {
+          "miniplayerRenderer": {
+            "playbackMode": "PLAYBACK_MODE_ALLOW"
+          }
+        },
+        "contextParams": "Q0FFU0FnZ0M="
+      },
+      "outcome": "ok"
+    }
+  ],
+  "fetched_at": "2026-10-28T04:11:27.838881+00:00",
+  "client": "IOS",
+  "json_path": "transcripts/031_VbgMCP7bKcs.json",
+  "text_path": "transcripts/031_VbgMCP7bKcs.txt"
+}

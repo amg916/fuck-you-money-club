@@ -1,0 +1,882 @@
+{
+  "index": 12,
+  "url": "https://www.youtube.com/watch?v=7120UjJPqZM",
+  "video_id": "7120UjJPqZM",
+  "status": "ok",
+  "metadata": {
+    "title": "Probate  Part 3,  \"Wording of Wills\"  by James Tanner",
+    "author": "BYU Library Family History Center",
+    "channelId": "UC7hqNOQt-2AfeVEpDuc7sCA",
+    "lengthSeconds": "489",
+    "viewCount": "305",
+    "shortDescription": "This is the next installment of the 9 part Probate Series.",
+    "keywords": [
+      "Family History",
+      "Genealogy",
+      "Probate and Wills"
+    ]
+  },
+  "caption_tracks": [
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=7120UjJPqZM&ei=4XXhasTJOdyTsfIPmI-kmQo&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185873&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=08F4D9516850F8EEACFC335619305F20EE719C3E.EA94B554D79016CF3970B36225CDCB38500F7C6E&key=yt8&kind=asr&lang=en",
+      "name": {
+        "runs": [
+          {
+            "text": "English (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.en",
+      "languageCode": "en",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    }
+  ],
+  "selected_track": {
+    "baseUrl": "https://www.youtube.com/api/timedtext?v=7120UjJPqZM&ei=4XXhasTJOdyTsfIPmI-kmQo&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185873&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=08F4D9516850F8EEACFC335619305F20EE719C3E.EA94B554D79016CF3970B36225CDCB38500F7C6E&key=yt8&kind=asr&lang=en",
+    "name": {
+      "runs": [
+        {
+          "text": "English (auto-generated)"
+        }
+      ]
+    },
+    "vssId": "a.en",
+    "languageCode": "en",
+    "kind": "asr",
+    "isTranslatable": true,
+    "trackName": ""
+  },
+  "segments": [
+    {
+      "start": 5.75,
+      "duration": 5.349,
+      "text": "welcome to the ins and outs of probate"
+    },
+    {
+      "start": 8.13,
+      "duration": 5.21,
+      "text": "virginie ologist this segment is called"
+    },
+    {
+      "start": 11.099,
+      "duration": 5.671,
+      "text": "understanding the language of a will"
+    },
+    {
+      "start": 13.34,
+      "duration": 7.87,
+      "text": "this is part of an ongoing series of"
+    },
+    {
+      "start": 16.77,
+      "duration": 7.08,
+      "text": "nine videos concerning probate all of"
+    },
+    {
+      "start": 21.21,
+      "duration": 5.01,
+      "text": "these videos will it be available on the"
+    },
+    {
+      "start": 23.85,
+      "duration": 5.13,
+      "text": "Brigham Young University family history"
+    },
+    {
+      "start": 26.22,
+      "duration": 9.109,
+      "text": "youtube families to library YouTube"
+    },
+    {
+      "start": 28.98,
+      "duration": 8.82,
+      "text": "channel the language of a will is very"
+    },
+    {
+      "start": 35.329,
+      "duration": 4.601,
+      "text": "conservative if you were to read a will"
+    },
+    {
+      "start": 37.8,
+      "duration": 5.21,
+      "text": "today you would see language that was"
+    },
+    {
+      "start": 39.93,
+      "duration": 5.969,
+      "text": "similar to a wheel written in the 1700s"
+    },
+    {
+      "start": 43.01,
+      "duration": 6.25,
+      "text": "it is not impossible that you would find"
+    },
+    {
+      "start": 45.899,
+      "duration": 8.16,
+      "text": "the same phrases and it is probable that"
+    },
+    {
+      "start": 49.26,
+      "duration": 6.99,
+      "text": "you would see the same structure no"
+    },
+    {
+      "start": 54.059,
+      "duration": 4.171,
+      "text": "matter how difficult the handwriting may"
+    },
+    {
+      "start": 56.25,
+      "duration": 4.14,
+      "text": "appear to be most of the wheels have a"
+    },
+    {
+      "start": 58.23,
+      "duration": 4.59,
+      "text": "standard format and you can almost"
+    },
+    {
+      "start": 60.39,
+      "duration": 4.53,
+      "text": "always look for the same words and"
+    },
+    {
+      "start": 62.82,
+      "duration": 6.42,
+      "text": "phrases in an old will as you will find"
+    },
+    {
+      "start": 64.92,
+      "duration": 6.09,
+      "text": "in a brand new will the law in the"
+    },
+    {
+      "start": 69.24,
+      "duration": 4.35,
+      "text": "United States is based on a principle"
+    },
+    {
+      "start": 71.01,
+      "duration": 5.1,
+      "text": "called starry decisis this comes from"
+    },
+    {
+      "start": 73.59,
+      "duration": 6.84,
+      "text": "the English common law the term means"
+    },
+    {
+      "start": 76.11,
+      "duration": 7.439,
+      "text": "let the lost and and that means that the"
+    },
+    {
+      "start": 80.43,
+      "duration": 4.979,
+      "text": "courts rely on prior court decisions to"
+    },
+    {
+      "start": 83.549,
+      "duration": 4.351,
+      "text": "determine how to apply the law in the"
+    },
+    {
+      "start": 85.409,
+      "duration": 4.32,
+      "text": "current case when I refer to the"
+    },
+    {
+      "start": 87.9,
+      "duration": 4.679,
+      "text": "corridor usually am referring to the"
+    },
+    {
+      "start": 89.729,
+      "duration": 7.581,
+      "text": "judge so the judge in the case will make"
+    },
+    {
+      "start": 92.579,
+      "duration": 4.731,
+      "text": "a decision a decision based on prior law"
+    },
+    {
+      "start": 97.64,
+      "duration": 5.83,
+      "text": "using prior case law assures that"
+    },
+    {
+      "start": 101.28,
+      "duration": 8.39,
+      "text": "everyone that everyone that the law will"
+    },
+    {
+      "start": 103.47,
+      "duration": 10.38,
+      "text": "be applied consistently the process of"
+    },
+    {
+      "start": 109.67,
+      "duration": 7.96,
+      "text": "representing a client in corde involves"
+    },
+    {
+      "start": 113.85,
+      "duration": 6.659,
+      "text": "informing the court about how previous"
+    },
+    {
+      "start": 117.63,
+      "duration": 5.79,
+      "text": "cases you know that are similar have"
+    },
+    {
+      "start": 120.509,
+      "duration": 6.301,
+      "text": "been decided so an attorney will write"
+    },
+    {
+      "start": 123.42,
+      "duration": 6.929,
+      "text": "what is called a brief or a memorandum"
+    },
+    {
+      "start": 126.81,
+      "duration": 6.149,
+      "text": "to the court arguing that the court"
+    },
+    {
+      "start": 130.349,
+      "duration": 4.761,
+      "text": "should decide their clients or his or"
+    },
+    {
+      "start": 132.959,
+      "duration": 6.06,
+      "text": "her client"
+    },
+    {
+      "start": 135.11,
+      "duration": 7.18,
+      "text": "case consistent with cases that are"
+    },
+    {
+      "start": 139.019,
+      "duration": 6.75,
+      "text": "cited however it's clear that there's"
+    },
+    {
+      "start": 142.29,
+      "duration": 5.37,
+      "text": "usually someone on the opposite side who"
+    },
+    {
+      "start": 145.769,
+      "duration": 4.47,
+      "text": "is making a different and exactly"
+    },
+    {
+      "start": 147.66,
+      "duration": 5.609,
+      "text": "opposite argument so the court has to"
+    },
+    {
+      "start": 150.239,
+      "duration": 5.041,
+      "text": "sort out which of the case is applied to"
+    },
+    {
+      "start": 153.269,
+      "duration": 5.101,
+      "text": "this particular mat to the particular"
+    },
+    {
+      "start": 155.28,
+      "duration": 4.38,
+      "text": "matter before the court it's a little"
+    },
+    {
+      "start": 158.37,
+      "duration": 5.369,
+      "text": "bit different in the probate court"
+    },
+    {
+      "start": 159.66,
+      "duration": 6.57,
+      "text": "action with concerning a will there is"
+    },
+    {
+      "start": 163.739,
+      "duration": 5.101,
+      "text": "not all with someone on the opposite"
+    },
+    {
+      "start": 166.23,
+      "duration": 6.75,
+      "text": "side most of the probate cases are"
+    },
+    {
+      "start": 168.84,
+      "duration": 6.66,
+      "text": "unopposed but there are many times when"
+    },
+    {
+      "start": 172.98,
+      "duration": 6.33,
+      "text": "probate cases involve disagreements"
+    },
+    {
+      "start": 175.5,
+      "duration": 7.079,
+      "text": "among the heirs or even issues raised by"
+    },
+    {
+      "start": 179.31,
+      "duration": 7.38,
+      "text": "third parties such as creditors in these"
+    },
+    {
+      "start": 182.579,
+      "duration": 7.621,
+      "text": "cases the court treats the will contest"
+    },
+    {
+      "start": 186.69,
+      "duration": 5.129,
+      "text": "matter or the probate matter just as"
+    },
+    {
+      "start": 190.2,
+      "duration": 5.869,
+      "text": "they would any other lawsuit and the"
+    },
+    {
+      "start": 191.819,
+      "duration": 4.25,
+      "text": "lawyers need to cite case already"
+    },
+    {
+      "start": 197.63,
+      "duration": 6.97,
+      "text": "unfortunately the law doesn't exactly"
+    },
+    {
+      "start": 201.51,
+      "duration": 7.74,
+      "text": "work all the same ways all the time and"
+    },
+    {
+      "start": 204.6,
+      "duration": 6.96,
+      "text": "so it's as applied it changes the"
+    },
+    {
+      "start": 209.25,
+      "duration": 6.48,
+      "text": "problem I guess you call it the break or"
+    },
+    {
+      "start": 211.56,
+      "duration": 7.019,
+      "text": "the constraint on the law changing too"
+    },
+    {
+      "start": 215.73,
+      "duration": 5.46,
+      "text": "rapidly is the changes in the wording of"
+    },
+    {
+      "start": 218.579,
+      "duration": 5.13,
+      "text": "a will can result in changes as the way"
+    },
+    {
+      "start": 221.19,
+      "duration": 6.75,
+      "text": "as to the way is the law is applied to"
+    },
+    {
+      "start": 223.709,
+      "duration": 6.451,
+      "text": "the will so the courts have to decide if"
+    },
+    {
+      "start": 227.94,
+      "duration": 4.409,
+      "text": "the new what the new language means and"
+    },
+    {
+      "start": 230.16,
+      "duration": 5.99,
+      "text": "how it relates to previous rulings and"
+    },
+    {
+      "start": 232.349,
+      "duration": 7.14,
+      "text": "how it will affect the law in the future"
+    },
+    {
+      "start": 236.15,
+      "duration": 5.53,
+      "text": "of course wills use language that may be"
+    },
+    {
+      "start": 239.489,
+      "duration": 4.821,
+      "text": "unfamiliar these are not the words you'd"
+    },
+    {
+      "start": 241.68,
+      "duration": 5.119,
+      "text": "have on your grade school spelling test"
+    },
+    {
+      "start": 244.31,
+      "duration": 4.929,
+      "text": "you may have to work slowly at first"
+    },
+    {
+      "start": 246.799,
+      "duration": 5.291,
+      "text": "understand what's being said in the will"
+    },
+    {
+      "start": 249.239,
+      "duration": 5.101,
+      "text": "very important to focus on each word if"
+    },
+    {
+      "start": 252.09,
+      "duration": 4.829,
+      "text": "you don't know the meaning of the word"
+    },
+    {
+      "start": 254.34,
+      "duration": 6.329,
+      "text": "look it up you may need to use a"
+    },
+    {
+      "start": 256.919,
+      "duration": 5.851,
+      "text": "reference book or an online source to"
+    },
+    {
+      "start": 260.669,
+      "duration": 4.641,
+      "text": "decipher the terms and figure out who"
+    },
+    {
+      "start": 262.77,
+      "duration": 2.54,
+      "text": "got what"
+    },
+    {
+      "start": 265.98,
+      "duration": 6.94,
+      "text": "one of the basic books is the black's"
+    },
+    {
+      "start": 270.7,
+      "duration": 5.25,
+      "text": "law dictionary which I mentioned in a"
+    },
+    {
+      "start": 272.92,
+      "duration": 5.91,
+      "text": "previous segment of this video you can"
+    },
+    {
+      "start": 275.95,
+      "duration": 4.92,
+      "text": "see that online and do a search for"
+    },
+    {
+      "start": 278.83,
+      "duration": 3.72,
+      "text": "black's law dictionary there's many"
+    },
+    {
+      "start": 280.87,
+      "duration": 5.31,
+      "text": "websites such as the law dictionary"
+    },
+    {
+      "start": 282.55,
+      "duration": 5.91,
+      "text": "websites cited here where that use"
+    },
+    {
+      "start": 286.18,
+      "duration": 7.05,
+      "text": "black's law dictionary to define legal"
+    },
+    {
+      "start": 288.46,
+      "duration": 8.04,
+      "text": "terms the other good source is the"
+    },
+    {
+      "start": 293.23,
+      "duration": 6.24,
+      "text": "Internet Archive that's archive.org and"
+    },
+    {
+      "start": 296.5,
+      "duration": 7.26,
+      "text": "they have a complete text of the 6th"
+    },
+    {
+      "start": 299.47,
+      "duration": 6.12,
+      "text": "edition available for searching now each"
+    },
+    {
+      "start": 303.76,
+      "duration": 4.05,
+      "text": "of the wheel is broken each will is"
+    },
+    {
+      "start": 305.59,
+      "duration": 4.53,
+      "text": "broken down into some common provisions"
+    },
+    {
+      "start": 307.81,
+      "duration": 4.8,
+      "text": "the important thing to understand that"
+    },
+    {
+      "start": 310.12,
+      "duration": 5.33,
+      "text": "these particular provisions are"
+    },
+    {
+      "start": 312.61,
+      "duration": 5.82,
+      "text": "necessary and required for a valid will"
+    },
+    {
+      "start": 315.45,
+      "duration": 6.25,
+      "text": "the first is a statement of the identity"
+    },
+    {
+      "start": 318.43,
+      "duration": 7.05,
+      "text": "of the testator testator is the person"
+    },
+    {
+      "start": 321.7,
+      "duration": 5.73,
+      "text": "making the will next is a statement of"
+    },
+    {
+      "start": 325.48,
+      "duration": 4.68,
+      "text": "the testator's intent to make a will"
+    },
+    {
+      "start": 327.43,
+      "duration": 5.13,
+      "text": "this is called testamentary intent and"
+    },
+    {
+      "start": 330.16,
+      "duration": 4.95,
+      "text": "that and the person making a whale has"
+    },
+    {
+      "start": 332.56,
+      "duration": 5.46,
+      "text": "to clearly state they want to dispose of"
+    },
+    {
+      "start": 335.11,
+      "duration": 7.68,
+      "text": "their property upon their demise or upon"
+    },
+    {
+      "start": 338.02,
+      "duration": 6.75,
+      "text": "their death next is a statement setting"
+    },
+    {
+      "start": 342.79,
+      "duration": 4.85,
+      "text": "forth the details of the family or the"
+    },
+    {
+      "start": 344.77,
+      "duration": 6.3,
+      "text": "people who will inherit the property"
+    },
+    {
+      "start": 347.64,
+      "duration": 5.5,
+      "text": "usually called the heirs could be called"
+    },
+    {
+      "start": 351.07,
+      "duration": 4.86,
+      "text": "heirs and assigns and a whole bunch of"
+    },
+    {
+      "start": 353.14,
+      "duration": 6.77,
+      "text": "other words that they basically boil"
+    },
+    {
+      "start": 355.93,
+      "duration": 3.98,
+      "text": "down to the people who get the property"
+    },
+    {
+      "start": 361.29,
+      "duration": 5.41,
+      "text": "next in line is the appointment of an"
+    },
+    {
+      "start": 364.24,
+      "duration": 4.7,
+      "text": "executor of personal representative this"
+    },
+    {
+      "start": 366.7,
+      "duration": 5.58,
+      "text": "depends on the jurisdiction the wording"
+    },
+    {
+      "start": 368.94,
+      "duration": 4.84,
+      "text": "if person has a will the person"
+    },
+    {
+      "start": 372.28,
+      "duration": 4.02,
+      "text": "administering the will is called an"
+    },
+    {
+      "start": 373.78,
+      "duration": 5.04,
+      "text": "executor if there is no will if it's in"
+    },
+    {
+      "start": 376.3,
+      "duration": 5.81,
+      "text": "testing rather than a test state action"
+    },
+    {
+      "start": 378.82,
+      "duration": 5.76,
+      "text": "then the person is an administrator in"
+    },
+    {
+      "start": 382.11,
+      "duration": 5.86,
+      "text": "some jurisdictions in the United States"
+    },
+    {
+      "start": 384.58,
+      "duration": 9.089,
+      "text": "both are referred to by the term"
+    },
+    {
+      "start": 387.97,
+      "duration": 9.09,
+      "text": "personal representative there's some"
+    },
+    {
+      "start": 393.669,
+      "duration": 4.391,
+      "text": "additional common provision so will the"
+    },
+    {
+      "start": 397.06,
+      "duration": 3.55,
+      "text": "will can contain"
+    },
+    {
+      "start": 398.06,
+      "duration": 5.28,
+      "text": "directions to the executor or personal"
+    },
+    {
+      "start": 400.61,
+      "duration": 4.65,
+      "text": "representative things that they would"
+    },
+    {
+      "start": 403.34,
+      "duration": 4.89,
+      "text": "like to see happen that the testator"
+    },
+    {
+      "start": 405.26,
+      "duration": 7.23,
+      "text": "would like to see happen you can also"
+    },
+    {
+      "start": 408.23,
+      "duration": 6.51,
+      "text": "find a bequest a devise or grant of the"
+    },
+    {
+      "start": 412.49,
+      "duration": 6.8,
+      "text": "assets of the estate each of those words"
+    },
+    {
+      "start": 414.74,
+      "duration": 8.82,
+      "text": "have a restricted legal meaning"
+    },
+    {
+      "start": 419.29,
+      "duration": 7.06,
+      "text": "depending on the particular state they"
+    },
+    {
+      "start": 423.56,
+      "duration": 5.52,
+      "text": "could be construed but it's not unusual"
+    },
+    {
+      "start": 426.35,
+      "duration": 6.539,
+      "text": "to see all three of them put together in"
+    },
+    {
+      "start": 429.08,
+      "duration": 7.79,
+      "text": "that in the form of i bequeath devise"
+    },
+    {
+      "start": 432.889,
+      "duration": 3.981,
+      "text": "and grant or something of that nature"
+    },
+    {
+      "start": 437.38,
+      "duration": 5.44,
+      "text": "there's also a possibility that the"
+    },
+    {
+      "start": 441.05,
+      "duration": 6.089,
+      "text": "testator will put in some special"
+    },
+    {
+      "start": 442.82,
+      "duration": 7.8,
+      "text": "provisions for the devisees for those"
+    },
+    {
+      "start": 447.139,
+      "duration": 5.641,
+      "text": "who are receiving specific requests"
+    },
+    {
+      "start": 450.62,
+      "duration": 6.21,
+      "text": "these things usually deal with specific"
+    },
+    {
+      "start": 452.78,
+      "duration": 6.66,
+      "text": "items of personal property any other"
+    },
+    {
+      "start": 456.83,
+      "duration": 5.04,
+      "text": "instructions are also included for"
+    },
+    {
+      "start": 459.44,
+      "duration": 7.68,
+      "text": "example care of minor children or the"
+    },
+    {
+      "start": 461.87,
+      "duration": 7.44,
+      "text": "maintenance of a spouse last it's"
+    },
+    {
+      "start": 467.12,
+      "duration": 6.63,
+      "text": "necessary to have a signature and"
+    },
+    {
+      "start": 469.31,
+      "duration": 6.15,
+      "text": "witnesses usually two witnesses well"
+    },
+    {
+      "start": 473.75,
+      "duration": 4.65,
+      "text": "that's the end of this one thanks for"
+    },
+    {
+      "start": 475.46,
+      "duration": 6.06,
+      "text": "watching there will be a number of"
+    },
+    {
+      "start": 478.4,
+      "duration": 6.09,
+      "text": "additional segments up to nine in this"
+    },
+    {
+      "start": 481.52,
+      "duration": 5.72,
+      "text": "series and we hope that you can follow"
+    },
+    {
+      "start": 484.49,
+      "duration": 2.75,
+      "text": "all of them"
+    }
+  ],
+  "full_text": "welcome to the ins and outs of probate virginie ologist this segment is called understanding the language of a will this is part of an ongoing series of nine videos concerning probate all of these videos will it be available on the Brigham Young University family history youtube families to library YouTube channel the language of a will is very conservative if you were to read a will today you would see language that was similar to a wheel written in the 1700s it is not impossible that you would find the same phrases and it is probable that you would see the same structure no matter how difficult the handwriting may appear to be most of the wheels have a standard format and you can almost always look for the same words and phrases in an old will as you will find in a brand new will the law in the United States is based on a principle called starry decisis this comes from the English common law the term means let the lost and and that means that the courts rely on prior court decisions to determine how to apply the law in the current case when I refer to the corridor usually am referring to the judge so the judge in the case will make a decision a decision based on prior law using prior case law assures that everyone that everyone that the law will be applied consistently the process of representing a client in corde involves informing the court about how previous cases you know that are similar have been decided so an attorney will write what is called a brief or a memorandum to the court arguing that the court should decide their clients or his or her client case consistent with cases that are cited however it's clear that there's usually someone on the opposite side who is making a different and exactly opposite argument so the court has to sort out which of the case is applied to this particular mat to the particular matter before the court it's a little bit different in the probate court action with concerning a will there is not all with someone on the opposite side most of the probate cases are unopposed but there are many times when probate cases involve disagreements among the heirs or even issues raised by third parties such as creditors in these cases the court treats the will contest matter or the probate matter just as they would any other lawsuit and the lawyers need to cite case already unfortunately the law doesn't exactly work all the same ways all the time and so it's as applied it changes the problem I guess you call it the break or the constraint on the law changing too rapidly is the changes in the wording of a will can result in changes as the way as to the way is the law is applied to the will so the courts have to decide if the new what the new language means and how it relates to previous rulings and how it will affect the law in the future of course wills use language that may be unfamiliar these are not the words you'd have on your grade school spelling test you may have to work slowly at first understand what's being said in the will very important to focus on each word if you don't know the meaning of the word look it up you may need to use a reference book or an online source to decipher the terms and figure out who got what one of the basic books is the black's law dictionary which I mentioned in a previous segment of this video you can see that online and do a search for black's law dictionary there's many websites such as the law dictionary websites cited here where that use black's law dictionary to define legal terms the other good source is the Internet Archive that's archive.org and they have a complete text of the 6th edition available for searching now each of the wheel is broken each will is broken down into some common provisions the important thing to understand that these particular provisions are necessary and required for a valid will the first is a statement of the identity of the testator testator is the person making the will next is a statement of the testator's intent to make a will this is called testamentary intent and that and the person making a whale has to clearly state they want to dispose of their property upon their demise or upon their death next is a statement setting forth the details of the family or the people who will inherit the property usually called the heirs could be called heirs and assigns and a whole bunch of other words that they basically boil down to the people who get the property next in line is the appointment of an executor of personal representative this depends on the jurisdiction the wording if person has a will the person administering the will is called an executor if there is no will if it's in testing rather than a test state action then the person is an administrator in some jurisdictions in the United States both are referred to by the term personal representative there's some additional common provision so will the will can contain directions to the executor or personal representative things that they would like to see happen that the testator would like to see happen you can also find a bequest a devise or grant of the assets of the estate each of those words have a restricted legal meaning depending on the particular state they could be construed but it's not unusual to see all three of them put together in that in the form of i bequeath devise and grant or something of that nature there's also a possibility that the testator will put in some special provisions for the devisees for those who are receiving specific requests these things usually deal with specific items of personal property any other instructions are also included for example care of minor children or the maintenance of a spouse last it's necessary to have a signature and witnesses usually two witnesses well that's the end of this one thanks for watching there will be a number of additional segments up to nine in this series and we hope that you can follow all of them",
+  "attempts": [
+    {
+      "client": "IOS",
+      "playability": {
+        "status": "OK",
+        "playableInEmbed": true,
+        "offlineability": {
+          "buttonRenderer": {
+            "navigationEndpoint": {
+              "clickTrackingParams": "CAkQ6ewBIhMIhL77h-zblwMV3ElMCB2YBymjygEEbMMkbw==",
+              "ypcGetOfflineUpsellEndpoint": {
+                "params": "ChPqqN25AQ0KCzcxMjBVakpQcVpNIgs3MTIwVWpKUHFaTSoVCAkYAVIPCgs3MTIwVWpKUHFaTSAB"
+              }
+            },
+            "trackingParams": "CAkQ6ewBIhMIhL77h-zblwMV3ElMCB2YBymj"
+          }
+        },
+        "pictureInPicture": {
+          "pictureInPictureRenderer": {
+            "playableInPip": true,
+            "offByDefault": false,
+            "shouldResumeOnHead": false
+          }
+        },
+        "miniplayer": {
+          "miniplayerRenderer": {
+            "playbackMode": "PLAYBACK_MODE_ALLOW"
+          }
+        },
+        "contextParams": "Q0FFU0FnZ0M="
+      },
+      "outcome": "ok"
+    }
+  ],
+  "fetched_at": "2026-10-28T04:11:14.677523+00:00",
+  "client": "IOS",
+  "json_path": "transcripts/012_7120UjJPqZM.json",
+  "text_path": "transcripts/012_7120UjJPqZM.txt"
+}

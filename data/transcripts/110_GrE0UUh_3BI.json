@@ -1,0 +1,5126 @@
+{
+  "index": 110,
+  "url": "https://www.youtube.com/watch?v=GrE0UUh_3BI",
+  "video_id": "GrE0UUh_3BI",
+  "status": "ok",
+  "metadata": {
+    "title": "Claiming your Unclaimed Funds",
+    "author": "ohiocommerce",
+    "channelId": "UC_MyluygkWheJe3ylV5HwEA",
+    "lengthSeconds": "2728",
+    "viewCount": "307",
+    "shortDescription": "#OhioUnclaimedFunds #UnclaimedFunds #DivisionUnclaimedFunds\n\nThis video is a replay of a live webinar recorded on February 28, 2024 hosted by the Better Business Bureau of Central Ohio where we covered everything on claiming your unclaimed funds.\nUnclaimed Funds is lost or forgotten money from inactive accounts that is reported by banks and businesses to the State of Ohio Division of Unclaimed Funds for safekeeping. The money come from inactive checking accounts, savings accounts, refund/credit balances, uncashed cashier’s checks, life insurance benefits, stocks & bonds, and safe deposit box contents. After attending this webinar, you will learn: What are unclaimed funds, how to find out if you have any, and the steps to claiming funds, Claiming on behalf of a deceased family member and the required documentation,  Claims timeline and delays, Claims status, and Claims resources. Visit unclaimedfunds.ohio.gov to search your name and claim your money today!"
+  },
+  "caption_tracks": [
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=GrE0UUh_3BI&ei=8nXhasyFGvL1sfIPiNjHcQ&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185890&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=25A6C4C4F8995A617B7C2E814E05F5EC43A8FEB2.6A82B6FCBCAB1CA2E1E1CD70A834DADB4D4E0CC9&key=yt8&kind=asr&lang=en",
+      "name": {
+        "runs": [
+          {
+            "text": "English (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.en",
+      "languageCode": "en",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    }
+  ],
+  "selected_track": {
+    "baseUrl": "https://www.youtube.com/api/timedtext?v=GrE0UUh_3BI&ei=8nXhasyFGvL1sfIPiNjHcQ&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185890&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=25A6C4C4F8995A617B7C2E814E05F5EC43A8FEB2.6A82B6FCBCAB1CA2E1E1CD70A834DADB4D4E0CC9&key=yt8&kind=asr&lang=en",
+    "name": {
+      "runs": [
+        {
+          "text": "English (auto-generated)"
+        }
+      ]
+    },
+    "vssId": "a.en",
+    "languageCode": "en",
+    "kind": "asr",
+    "isTranslatable": true,
+    "trackName": ""
+  },
+  "segments": [
+    {
+      "start": 17.279,
+      "duration": 5.561,
+      "text": "okay we are live thank you everyone"
+    },
+    {
+      "start": 20.32,
+      "duration": 2.52,
+      "text": "thank you for"
+    },
+    {
+      "start": 23.48,
+      "duration": 4.44,
+      "text": "waiting we're going to get started in"
+    },
+    {
+      "start": 25.599,
+      "duration": 2.321,
+      "text": "just a"
+    },
+    {
+      "start": 28.96,
+      "duration": 3.0,
+      "text": "second"
+    },
+    {
+      "start": 53.719,
+      "duration": 5.721,
+      "text": "okay Jessica take it away all right well"
+    },
+    {
+      "start": 57.16,
+      "duration": 4.6,
+      "text": "welcome everybody we're very excited to"
+    },
+    {
+      "start": 59.44,
+      "duration": 4.84,
+      "text": "have you here today to explore how to"
+    },
+    {
+      "start": 61.76,
+      "duration": 5.08,
+      "text": "claim your unclaimed funds um it's a"
+    },
+    {
+      "start": 64.28,
+      "duration": 4.92,
+      "text": "very important process for you to know"
+    },
+    {
+      "start": 66.84,
+      "duration": 5.639,
+      "text": "most of us many of us have funds hanging"
+    },
+    {
+      "start": 69.2,
+      "duration": 5.919,
+      "text": "around out there somewhere and for sure"
+    },
+    {
+      "start": 72.479,
+      "duration": 5.521,
+      "text": "the unclaimed funds Department of the"
+    },
+    {
+      "start": 75.119,
+      "duration": 5.0,
+      "text": "Department of Commerce is a trusted and"
+    },
+    {
+      "start": 78.0,
+      "duration": 3.84,
+      "text": "reliable way for you to explore it so"
+    },
+    {
+      "start": 80.119,
+      "duration": 4.121,
+      "text": "the Better Business Bureau is very"
+    },
+    {
+      "start": 81.84,
+      "duration": 3.52,
+      "text": "excited to be able to partner with the"
+    },
+    {
+      "start": 84.24,
+      "duration": 2.96,
+      "text": "Department of Commerce and the"
+    },
+    {
+      "start": 85.36,
+      "duration": 3.92,
+      "text": "department of unclaimed funds in"
+    },
+    {
+      "start": 87.2,
+      "duration": 3.48,
+      "text": "bringing you legitimate verified"
+    },
+    {
+      "start": 89.28,
+      "duration": 3.76,
+      "text": "information to to help you track down"
+    },
+    {
+      "start": 90.68,
+      "duration": 3.68,
+      "text": "money that might be yours first though"
+    },
+    {
+      "start": 93.04,
+      "duration": 6.6,
+      "text": "we'd like to give you a little bit of a"
+    },
+    {
+      "start": 94.36,
+      "duration": 5.28,
+      "text": "look around uh the new BBB so next"
+    },
+    {
+      "start": 102.159,
+      "duration": 6.56,
+      "text": "slide there we go most importantly we"
+    },
+    {
+      "start": 105.399,
+      "duration": 6.561,
+      "text": "want you to know that this is your BBB"
+    },
+    {
+      "start": 108.719,
+      "duration": 6.68,
+      "text": "BBB is your first line of resource to"
+    },
+    {
+      "start": 111.96,
+      "duration": 6.119,
+      "text": "check out businesses to file complaints"
+    },
+    {
+      "start": 115.399,
+      "duration": 4.72,
+      "text": "to get solutions to start your"
+    },
+    {
+      "start": 118.079,
+      "duration": 8.08,
+      "text": "businesses to have business resourc our"
+    },
+    {
+      "start": 120.119,
+      "duration": 6.04,
+      "text": "es all around this is your BBB next"
+    },
+    {
+      "start": 129.599,
+      "duration": 7.36,
+      "text": "slide and we are up and growing and"
+    },
+    {
+      "start": 134.16,
+      "duration": 5.04,
+      "text": "better than ever we are the better check"
+    },
+    {
+      "start": 136.959,
+      "duration": 3.601,
+      "text": "here first bureau if you have any"
+    },
+    {
+      "start": 139.2,
+      "duration": 3.36,
+      "text": "hesitations if you're thinking of"
+    },
+    {
+      "start": 140.56,
+      "duration": 4.48,
+      "text": "signing any contracts if you're spending"
+    },
+    {
+      "start": 142.56,
+      "duration": 5.16,
+      "text": "any money of any significance out of the"
+    },
+    {
+      "start": 145.04,
+      "duration": 5.88,
+      "text": "norm you want to check at the Better"
+    },
+    {
+      "start": 147.72,
+      "duration": 4.72,
+      "text": "Business Bureau you want to look for an"
+    },
+    {
+      "start": 150.92,
+      "duration": 3.959,
+      "text": "accredited business and you'll see the"
+    },
+    {
+      "start": 152.44,
+      "duration": 5.439,
+      "text": "BBB torch that's the sign of a Better"
+    },
+    {
+      "start": 154.879,
+      "duration": 3.0,
+      "text": "Business"
+    },
+    {
+      "start": 160.68,
+      "duration": 6.88,
+      "text": "next and you can look for it so be sure"
+    },
+    {
+      "start": 164.68,
+      "duration": 4.919,
+      "text": "to find that label you might find it on"
+    },
+    {
+      "start": 167.56,
+      "duration": 4.56,
+      "text": "the side of a vehicle of a service"
+    },
+    {
+      "start": 169.599,
+      "duration": 4.881,
+      "text": "person it might be on a website it might"
+    },
+    {
+      "start": 172.12,
+      "duration": 5.56,
+      "text": "be on Advertising it might be in a booth"
+    },
+    {
+      "start": 174.48,
+      "duration": 5.44,
+      "text": "at a trade fair trade show um but you"
+    },
+    {
+      "start": 177.68,
+      "duration": 5.72,
+      "text": "can go beyond that if you're unsure and"
+    },
+    {
+      "start": 179.92,
+      "duration": 3.48,
+      "text": "you're not seeing the signs next"
+    },
+    {
+      "start": 183.84,
+      "duration": 5.64,
+      "text": "slide we want you to start your"
+    },
+    {
+      "start": 187.319,
+      "duration": 4.721,
+      "text": "decisionmaking process by starting with"
+    },
+    {
+      "start": 189.48,
+      "duration": 6.16,
+      "text": "trust so we want you to go to bbb.org"
+    },
+    {
+      "start": 192.04,
+      "duration": 5.64,
+      "text": "You'll select what area of Ohio um I Am"
+    },
+    {
+      "start": 195.64,
+      "duration": 5.2,
+      "text": "With Better Business Bureau of Central"
+    },
+    {
+      "start": 197.68,
+      "duration": 5.04,
+      "text": "Ohio um there are multiple other bureaus"
+    },
+    {
+      "start": 200.84,
+      "duration": 4.759,
+      "text": "that may be serving your area we"
+    },
+    {
+      "start": 202.72,
+      "duration": 5.76,
+      "text": "represent a 21 County footprint go to"
+    },
+    {
+      "start": 205.599,
+      "duration": 5.241,
+      "text": "bbb.org select your area there you can"
+    },
+    {
+      "start": 208.48,
+      "duration": 4.24,
+      "text": "look up any business not necessarily"
+    },
+    {
+      "start": 210.84,
+      "duration": 4.119,
+      "text": "only accredited businesses but all"
+    },
+    {
+      "start": 212.72,
+      "duration": 4.159,
+      "text": "businesses you can check out the reviews"
+    },
+    {
+      "start": 214.959,
+      "duration": 4.961,
+      "text": "check out the ratings and check out how"
+    },
+    {
+      "start": 216.879,
+      "duration": 5.041,
+      "text": "the business responds to the reviews and"
+    },
+    {
+      "start": 219.92,
+      "duration": 4.44,
+      "text": "ratings it's the sign that will"
+    },
+    {
+      "start": 221.92,
+      "duration": 5.399,
+      "text": "instantly tell you if a business is"
+    },
+    {
+      "start": 224.36,
+      "duration": 5.68,
+      "text": "honest additionally we're getting a lot"
+    },
+    {
+      "start": 227.319,
+      "duration": 4.681,
+      "text": "of questions about scams and often even"
+    },
+    {
+      "start": 230.04,
+      "duration": 4.559,
+      "text": "with unclaimed funds this might pop up"
+    },
+    {
+      "start": 232.0,
+      "duration": 4.28,
+      "text": "as a scam it's a very real thing so to"
+    },
+    {
+      "start": 234.599,
+      "duration": 4.081,
+      "text": "check if that is actually what's going"
+    },
+    {
+      "start": 236.28,
+      "duration": 6.56,
+      "text": "on we encourage you to to look at our"
+    },
+    {
+      "start": 238.68,
+      "duration": 6.16,
+      "text": "bbb.org for/ scamtracker it is a"
+    },
+    {
+      "start": 242.84,
+      "duration": 3.92,
+      "text": "nationwide initiative with Capital One"
+    },
+    {
+      "start": 244.84,
+      "duration": 4.679,
+      "text": "and Amazon from the Better Business"
+    },
+    {
+      "start": 246.76,
+      "duration": 4.839,
+      "text": "Bureau Institute for Marketplace trust"
+    },
+    {
+      "start": 249.519,
+      "duration": 4.8,
+      "text": "it allows you to go in check out what"
+    },
+    {
+      "start": 251.599,
+      "duration": 4.48,
+      "text": "scams are hot and trending at the moment"
+    },
+    {
+      "start": 254.319,
+      "duration": 5.48,
+      "text": "check out if you've been being targeted"
+    },
+    {
+      "start": 256.079,
+      "duration": 6.361,
+      "text": "with a past scam um and you can also"
+    },
+    {
+      "start": 259.799,
+      "duration": 4.201,
+      "text": "there file your own recording of scams"
+    },
+    {
+      "start": 262.44,
+      "duration": 4.0,
+      "text": "you've encountered whether You' Fallen"
+    },
+    {
+      "start": 264.0,
+      "duration": 4.479,
+      "text": "victim or not we want you to report it"
+    },
+    {
+      "start": 266.44,
+      "duration": 3.28,
+      "text": "so we know what's coming up we can"
+    },
+    {
+      "start": 268.479,
+      "duration": 2.801,
+      "text": "report it up to the attorney general"
+    },
+    {
+      "start": 269.72,
+      "duration": 4.4,
+      "text": "General's office we can present fact"
+    },
+    {
+      "start": 271.28,
+      "duration": 4.639,
+      "text": "patterns and every year we make a report"
+    },
+    {
+      "start": 274.12,
+      "duration": 4.359,
+      "text": "to say what is on the rise what people"
+    },
+    {
+      "start": 275.919,
+      "duration": 4.241,
+      "text": "should watch out for and that scam"
+    },
+    {
+      "start": 278.479,
+      "duration": 4.241,
+      "text": "tracker risk report will actually be"
+    },
+    {
+      "start": 280.16,
+      "duration": 6.52,
+      "text": "coming out on Monday so we encourage you"
+    },
+    {
+      "start": 282.72,
+      "duration": 7.039,
+      "text": "to visit back at bbb.org then next slide"
+    },
+    {
+      "start": 286.68,
+      "duration": 6.32,
+      "text": "this scam tracker has been voted the"
+    },
+    {
+      "start": 289.759,
+      "duration": 7.0,
+      "text": "best scam fighting tool in 2023 by the"
+    },
+    {
+      "start": 293.0,
+      "duration": 5.919,
+      "text": "Global anti-cam Alliance so it is very"
+    },
+    {
+      "start": 296.759,
+      "duration": 3.601,
+      "text": "relevant it is timely and it is"
+    },
+    {
+      "start": 298.919,
+      "duration": 5.161,
+      "text": "something that can help you and help"
+    },
+    {
+      "start": 300.36,
+      "duration": 6.72,
+      "text": "protect you now without further Ado we"
+    },
+    {
+      "start": 304.08,
+      "duration": 6.04,
+      "text": "want to turn this over to the trusted"
+    },
+    {
+      "start": 307.08,
+      "duration": 5.44,
+      "text": "Department of unclaimed funds um and we"
+    },
+    {
+      "start": 310.12,
+      "duration": 4.0,
+      "text": "want to introduce Marlene Jukes she's"
+    },
+    {
+      "start": 312.52,
+      "duration": 3.88,
+      "text": "the deputy superintendent for the"
+    },
+    {
+      "start": 314.12,
+      "duration": 4.48,
+      "text": "division of unclaimed funds where she's"
+    },
+    {
+      "start": 316.4,
+      "duration": 4.519,
+      "text": "responsible for developing policies and"
+    },
+    {
+      "start": 318.6,
+      "duration": 3.76,
+      "text": "procedures for the division and Advising"
+    },
+    {
+      "start": 320.919,
+      "duration": 4.28,
+      "text": "the superintendent to ensure that the"
+    },
+    {
+      "start": 322.36,
+      "duration": 4.76,
+      "text": "mission goals and objectives are met"
+    },
+    {
+      "start": 325.199,
+      "duration": 4.481,
+      "text": "also hosting with us today is Susie"
+    },
+    {
+      "start": 327.12,
+      "duration": 4.6,
+      "text": "Wagner who's the Outreach administrator"
+    },
+    {
+      "start": 329.68,
+      "duration": 5.48,
+      "text": "for the division of unclaimed funds it's"
+    },
+    {
+      "start": 331.72,
+      "duration": 4.84,
+      "text": "her job to ensure you as an ohioan"
+    },
+    {
+      "start": 335.16,
+      "duration": 3.52,
+      "text": "understand and know about unclaimed"
+    },
+    {
+      "start": 336.56,
+      "duration": 3.96,
+      "text": "funds and can claim your money we'll"
+    },
+    {
+      "start": 338.68,
+      "duration": 4.0,
+      "text": "have questions and time for questions"
+    },
+    {
+      "start": 340.52,
+      "duration": 3.88,
+      "text": "throughout this presentation uh type"
+    },
+    {
+      "start": 342.68,
+      "duration": 4.56,
+      "text": "them in the chat box or in the message"
+    },
+    {
+      "start": 344.4,
+      "duration": 4.56,
+      "text": "box you should see that in the lower bar"
+    },
+    {
+      "start": 347.24,
+      "duration": 3.16,
+      "text": "and without further Ado thank you so"
+    },
+    {
+      "start": 348.96,
+      "duration": 3.92,
+      "text": "much I can't wait to learn more about"
+    },
+    {
+      "start": 350.4,
+      "duration": 5.68,
+      "text": "unclaimed"
+    },
+    {
+      "start": 352.88,
+      "duration": 8.08,
+      "text": "funds thank you Jessica and so the whole"
+    },
+    {
+      "start": 356.08,
+      "duration": 8.32,
+      "text": "reason we are here today is because"
+    },
+    {
+      "start": 360.96,
+      "duration": 6.4,
+      "text": "$3,021 that was the average claim amount"
+    },
+    {
+      "start": 364.4,
+      "duration": 6.04,
+      "text": "for last year so we're not talking about"
+    },
+    {
+      "start": 367.36,
+      "duration": 6.279,
+      "text": "pennies it and this could be you so we"
+    },
+    {
+      "start": 370.44,
+      "duration": 5.479,
+      "text": "are going to um share with you exactly"
+    },
+    {
+      "start": 373.639,
+      "duration": 4.721,
+      "text": "what you need to do to see if you have"
+    },
+    {
+      "start": 375.919,
+      "duration": 2.441,
+      "text": "money"
+    },
+    {
+      "start": 382.72,
+      "duration": 7.36,
+      "text": "today so in unclaimed funds we have uh"
+    },
+    {
+      "start": 386.44,
+      "duration": 7.08,
+      "text": "last year in 2023 we processed 40 we"
+    },
+    {
+      "start": 390.08,
+      "duration": 4.239,
+      "text": "paid out 43,000 claims and we returned"
+    },
+    {
+      "start": 393.52,
+      "duration": 6.399,
+      "text": "over"
+    },
+    {
+      "start": 394.319,
+      "duration": 5.6,
+      "text": "$139 $130 Million last"
+    },
+    {
+      "start": 402.28,
+      "duration": 5.44,
+      "text": "year and so for today we're going to go"
+    },
+    {
+      "start": 405.12,
+      "duration": 4.96,
+      "text": "over what exactly is unclaimed funds the"
+    },
+    {
+      "start": 407.72,
+      "duration": 4.36,
+      "text": "three easy steps to claim them the"
+    },
+    {
+      "start": 410.08,
+      "duration": 4.839,
+      "text": "timeline and how you can look up the"
+    },
+    {
+      "start": 412.08,
+      "duration": 2.839,
+      "text": "status of your"
+    },
+    {
+      "start": 416.24,
+      "duration": 5.04,
+      "text": "claim so most people wonder what are"
+    },
+    {
+      "start": 418.8,
+      "duration": 4.44,
+      "text": "unclaimed funds unclaimed funds are lost"
+    },
+    {
+      "start": 421.28,
+      "duration": 5.919,
+      "text": "or forgotten monies and inactive"
+    },
+    {
+      "start": 423.24,
+      "duration": 6.519,
+      "text": "accounts uh businesses are required to"
+    },
+    {
+      "start": 427.199,
+      "duration": 5.44,
+      "text": "report those to the uh division of"
+    },
+    {
+      "start": 429.759,
+      "duration": 5.521,
+      "text": "unclaimed funds every year and we keep"
+    },
+    {
+      "start": 432.639,
+      "duration": 4.4,
+      "text": "them for our your safekeeping so"
+    },
+    {
+      "start": 435.28,
+      "duration": 4.599,
+      "text": "basically it's inactive checking"
+    },
+    {
+      "start": 437.039,
+      "duration": 5.041,
+      "text": "accounts savings accounts any refund or"
+    },
+    {
+      "start": 439.879,
+      "duration": 4.801,
+      "text": "credit balances you may have there could"
+    },
+    {
+      "start": 442.08,
+      "duration": 5.88,
+      "text": "be uncashed cashiers checks life"
+    },
+    {
+      "start": 444.68,
+      "duration": 6.72,
+      "text": "insurance uh benefits uh stocks and"
+    },
+    {
+      "start": 447.96,
+      "duration": 6.76,
+      "text": "bonds or uh safe deposit contents um and"
+    },
+    {
+      "start": 451.4,
+      "duration": 3.32,
+      "text": "we get those funds every"
+    },
+    {
+      "start": 454.84,
+      "duration": 4.799,
+      "text": "year and so there are three easy steps"
+    },
+    {
+      "start": 457.68,
+      "duration": 4.44,
+      "text": "to claim your funds we're going to go"
+    },
+    {
+      "start": 459.639,
+      "duration": 4.28,
+      "text": "over each step the first is just to"
+    },
+    {
+      "start": 462.12,
+      "duration": 4.039,
+      "text": "search for your unclaimed funds search"
+    },
+    {
+      "start": 463.919,
+      "duration": 5.96,
+      "text": "your name to see if you have any the"
+    },
+    {
+      "start": 466.159,
+      "duration": 6.04,
+      "text": "second is to review that checklist of"
+    },
+    {
+      "start": 469.879,
+      "duration": 4.28,
+      "text": "documentation to make sure that you are"
+    },
+    {
+      "start": 472.199,
+      "duration": 4.72,
+      "text": "providing us with the right information"
+    },
+    {
+      "start": 474.159,
+      "duration": 4.521,
+      "text": "to verify you are the rightful owner and"
+    },
+    {
+      "start": 476.919,
+      "duration": 4.84,
+      "text": "then step three is just to send us your"
+    },
+    {
+      "start": 478.68,
+      "duration": 3.079,
+      "text": "claim it's that"
+    },
+    {
+      "start": 485.0,
+      "duration": 6.039,
+      "text": "easy so when you go to our uh our site"
+    },
+    {
+      "start": 489.08,
+      "duration": 4.64,
+      "text": "um at unclaimed funds or"
+    },
+    {
+      "start": 491.039,
+      "duration": 6.801,
+      "text": "missingmoney.com or you can go through"
+    },
+    {
+      "start": 493.72,
+      "duration": 6.479,
+      "text": "uh unclaimed funds uh.com and find uh"
+    },
+    {
+      "start": 497.84,
+      "duration": 4.199,
+      "text": "and search for uh your missing money but"
+    },
+    {
+      "start": 500.199,
+      "duration": 5.521,
+      "text": "the first step is missing money that"
+    },
+    {
+      "start": 502.039,
+      "duration": 5.88,
+      "text": "site is legit uh we we back that site"
+    },
+    {
+      "start": 505.72,
+      "duration": 4.36,
+      "text": "several States you can actually search"
+    },
+    {
+      "start": 507.919,
+      "duration": 4.0,
+      "text": "for money uh through"
+    },
+    {
+      "start": 510.08,
+      "duration": 4.879,
+      "text": "I think at least 30 to 40 different"
+    },
+    {
+      "start": 511.919,
+      "duration": 4.441,
+      "text": "states um f and claim funds on here so"
+    },
+    {
+      "start": 514.959,
+      "duration": 4.361,
+      "text": "the first thing you want to do is go to"
+    },
+    {
+      "start": 516.36,
+      "duration": 5.039,
+      "text": "that search box put in your name um your"
+    },
+    {
+      "start": 519.32,
+      "duration": 5.12,
+      "text": "first or last name it's easier if you"
+    },
+    {
+      "start": 521.399,
+      "duration": 6.481,
+      "text": "narrow down to your city or your state"
+    },
+    {
+      "start": 524.44,
+      "duration": 5.72,
+      "text": "um and you'll see uh it'll give you a"
+    },
+    {
+      "start": 527.88,
+      "duration": 4.04,
+      "text": "summary it'll allow you to see if you're"
+    },
+    {
+      "start": 530.16,
+      "duration": 5.32,
+      "text": "there it'll tell you if you have unflame"
+    },
+    {
+      "start": 531.92,
+      "duration": 6.2,
+      "text": "funds um so it's a very easy site for"
+    },
+    {
+      "start": 535.48,
+      "duration": 4.799,
+      "text": "you to use uh it's really you can go on"
+    },
+    {
+      "start": 538.12,
+      "duration": 4.56,
+      "text": "there all time I would suggest you check"
+    },
+    {
+      "start": 540.279,
+      "duration": 5.601,
+      "text": "it maybe every quarter cuz we're"
+    },
+    {
+      "start": 542.68,
+      "duration": 7.0,
+      "text": "constantly getting unclaimed funds"
+    },
+    {
+      "start": 545.88,
+      "duration": 6.68,
+      "text": "in and I would add um that social"
+    },
+    {
+      "start": 549.68,
+      "duration": 5.44,
+      "text": "security card is on here as a reminder"
+    },
+    {
+      "start": 552.56,
+      "duration": 5.92,
+      "text": "we do not need your social security in"
+    },
+    {
+      "start": 555.12,
+      "duration": 7.719,
+      "text": "order to search for your unclaimed funds"
+    },
+    {
+      "start": 558.48,
+      "duration": 7.32,
+      "text": "so you um once you are in this uh the"
+    },
+    {
+      "start": 562.839,
+      "duration": 4.641,
+      "text": "step for step one if you find a claim"
+    },
+    {
+      "start": 565.8,
+      "duration": 3.96,
+      "text": "there that matches your name and an"
+    },
+    {
+      "start": 567.48,
+      "duration": 3.76,
+      "text": "address where you have lived you will"
+    },
+    {
+      "start": 569.76,
+      "duration": 4.04,
+      "text": "then enter in all of your contact"
+    },
+    {
+      "start": 571.24,
+      "duration": 5.279,
+      "text": "information social security number is a"
+    },
+    {
+      "start": 573.8,
+      "duration": 6.599,
+      "text": "field on that form you do not have to"
+    },
+    {
+      "start": 576.519,
+      "duration": 6.201,
+      "text": "input it but we will require it once you"
+    },
+    {
+      "start": 580.399,
+      "duration": 4.801,
+      "text": "um do send in that documentation and"
+    },
+    {
+      "start": 582.72,
+      "duration": 3.92,
+      "text": "I'll explain in just a second so we get"
+    },
+    {
+      "start": 585.2,
+      "duration": 3.4,
+      "text": "a lot of people asking about social"
+    },
+    {
+      "start": 586.64,
+      "duration": 3.639,
+      "text": "security cards that's why I was uh"
+    },
+    {
+      "start": 588.6,
+      "duration": 3.64,
+      "text": "wanted to make sure that we talked about"
+    },
+    {
+      "start": 590.279,
+      "duration": 4.641,
+      "text": "that for a second you don't need it"
+    },
+    {
+      "start": 592.24,
+      "duration": 4.36,
+      "text": "initially in order to create that claim"
+    },
+    {
+      "start": 594.92,
+      "duration": 4.52,
+      "text": "form"
+    },
+    {
+      "start": 596.6,
+      "duration": 4.44,
+      "text": "okay so step number two is that Jack"
+    },
+    {
+      "start": 599.44,
+      "duration": 4.56,
+      "text": "checklist of"
+    },
+    {
+      "start": 601.04,
+      "duration": 5.64,
+      "text": "documentation and on this is uh an"
+    },
+    {
+      "start": 604.0,
+      "duration": 4.8,
+      "text": "excerpt from our website there's"
+    },
+    {
+      "start": 606.68,
+      "duration": 4.92,
+      "text": "different tabs as you can see if you"
+    },
+    {
+      "start": 608.8,
+      "duration": 5.44,
+      "text": "scroll through those tabs on our website"
+    },
+    {
+      "start": 611.6,
+      "duration": 5.76,
+      "text": "you can see um the information exactly"
+    },
+    {
+      "start": 614.24,
+      "duration": 5.8,
+      "text": "what we will need from you in order to"
+    },
+    {
+      "start": 617.36,
+      "duration": 4.56,
+      "text": "prove that you are the rightful owner so"
+    },
+    {
+      "start": 620.04,
+      "duration": 3.72,
+      "text": "owner is if you're the you're the owner"
+    },
+    {
+      "start": 621.92,
+      "duration": 4.72,
+      "text": "of the claim joint owner it's you and"
+    },
+    {
+      "start": 623.76,
+      "duration": 4.8,
+      "text": "someone else owns that claim if you're a"
+    },
+    {
+      "start": 626.64,
+      "duration": 4.52,
+      "text": "guardian you're claiming on behalf of"
+    },
+    {
+      "start": 628.56,
+      "duration": 5.719,
+      "text": "someone an heir if you're claiming on"
+    },
+    {
+      "start": 631.16,
+      "duration": 5.44,
+      "text": "behalf of a deceased person trust"
+    },
+    {
+      "start": 634.279,
+      "duration": 5.321,
+      "text": "business government and international"
+    },
+    {
+      "start": 636.6,
+      "duration": 5.76,
+      "text": "claims we have claim instructions right"
+    },
+    {
+      "start": 639.6,
+      "duration": 7.0,
+      "text": "there that you can click on that go into"
+    },
+    {
+      "start": 642.36,
+      "duration": 4.24,
+      "text": "detail more if you have any"
+    },
+    {
+      "start": 648.399,
+      "duration": 7.081,
+      "text": "questions so if you find your name uh on"
+    },
+    {
+      "start": 652.32,
+      "duration": 5.199,
+      "text": "a missing money site for all claim types"
+    },
+    {
+      "start": 655.48,
+      "duration": 3.919,
+      "text": "the beginning so sometimes a lot of"
+    },
+    {
+      "start": 657.519,
+      "duration": 4.201,
+      "text": "people are hesitant because they are"
+    },
+    {
+      "start": 659.399,
+      "duration": 4.401,
+      "text": "well I don't know if I have this but the"
+    },
+    {
+      "start": 661.72,
+      "duration": 5.239,
+      "text": "the main documentation for all claims"
+    },
+    {
+      "start": 663.8,
+      "duration": 5.88,
+      "text": "that we ask you to send in um is your uh"
+    },
+    {
+      "start": 666.959,
+      "duration": 6.801,
+      "text": "unexpired driver's license a state fold"
+    },
+    {
+      "start": 669.68,
+      "duration": 7.44,
+      "text": "ID a passport um or us uh Department of"
+    },
+    {
+      "start": 673.76,
+      "duration": 6.44,
+      "text": "Defense ID anything um government issued"
+    },
+    {
+      "start": 677.12,
+      "duration": 5.2,
+      "text": "a ID to prove that we you are who you"
+    },
+    {
+      "start": 680.2,
+      "duration": 5.4,
+      "text": "say you are we need a proof of the"
+    },
+    {
+      "start": 682.32,
+      "duration": 6.04,
+      "text": "address for the property that is uh"
+    },
+    {
+      "start": 685.6,
+      "duration": 4.6,
+      "text": "reported on the claim form um if you"
+    },
+    {
+      "start": 688.36,
+      "duration": 4.24,
+      "text": "don't have that"
+    },
+    {
+      "start": 690.2,
+      "duration": 4.0,
+      "text": "um just send in all that you have but if"
+    },
+    {
+      "start": 692.6,
+      "duration": 4.72,
+      "text": "you have anything that had like a"
+    },
+    {
+      "start": 694.2,
+      "duration": 7.24,
+      "text": "utility bill bank statement any old"
+    },
+    {
+      "start": 697.32,
+      "duration": 6.079,
+      "text": "property tax forms um that proof will"
+    },
+    {
+      "start": 701.44,
+      "duration": 4.639,
+      "text": "substantiate the address that the uh"
+    },
+    {
+      "start": 703.399,
+      "duration": 4.44,
+      "text": "business reported to us and then of"
+    },
+    {
+      "start": 706.079,
+      "duration": 5.161,
+      "text": "course we also we need a proof of your"
+    },
+    {
+      "start": 707.839,
+      "duration": 7.321,
+      "text": "Social Security um card um it could be"
+    },
+    {
+      "start": 711.24,
+      "duration": 8.32,
+      "text": "on a W2 or some 1099 um and we also ask"
+    },
+    {
+      "start": 715.16,
+      "duration": 6.56,
+      "text": "that you fill out a W9 tax form um as"
+    },
+    {
+      "start": 719.56,
+      "duration": 4.88,
+      "text": "well so those are the three the four"
+    },
+    {
+      "start": 721.72,
+      "duration": 4.88,
+      "text": "most important things um so if you're"
+    },
+    {
+      "start": 724.44,
+      "duration": 6.399,
+      "text": "not sure whether you have enough"
+    },
+    {
+      "start": 726.6,
+      "duration": 6.16,
+      "text": "information send those four items first"
+    },
+    {
+      "start": 730.839,
+      "duration": 3.961,
+      "text": "um and then one of our uh claims"
+    },
+    {
+      "start": 732.76,
+      "duration": 5.0,
+      "text": "processors will be contacting you if"
+    },
+    {
+      "start": 734.8,
+      "duration": 2.96,
+      "text": "they need additional"
+    },
+    {
+      "start": 741.8,
+      "duration": 5.08,
+      "text": "information and so we get this question"
+    },
+    {
+      "start": 744.519,
+      "duration": 5.641,
+      "text": "a lot as well if you are claiming on"
+    },
+    {
+      "start": 746.88,
+      "duration": 5.36,
+      "text": "behalf of a deceased person um there is"
+    },
+    {
+      "start": 750.16,
+      "duration": 4.28,
+      "text": "a few more pieces of documentation that"
+    },
+    {
+      "start": 752.24,
+      "duration": 3.68,
+      "text": "we do require um we need to make sure"
+    },
+    {
+      "start": 754.44,
+      "duration": 5.199,
+      "text": "that this money is gone to the rightful"
+    },
+    {
+      "start": 755.92,
+      "duration": 6.479,
+      "text": "owner and so you may need a death"
+    },
+    {
+      "start": 759.639,
+      "duration": 4.721,
+      "text": "certificate uh a marriage certificate if"
+    },
+    {
+      "start": 762.399,
+      "duration": 4.481,
+      "text": "if the deceased was your spouse a birth"
+    },
+    {
+      "start": 764.36,
+      "duration": 5.159,
+      "text": "certificate if it was a parent or"
+    },
+    {
+      "start": 766.88,
+      "duration": 5.24,
+      "text": "sibling um we have the table of Airship"
+    },
+    {
+      "start": 769.519,
+      "duration": 5.721,
+      "text": "form which is provided on our website"
+    },
+    {
+      "start": 772.12,
+      "duration": 5.64,
+      "text": "you may need a probate court order and"
+    },
+    {
+      "start": 775.24,
+      "duration": 5.08,
+      "text": "it must be filed within two years of"
+    },
+    {
+      "start": 777.76,
+      "duration": 4.92,
+      "text": "filing the claim if the probate of the"
+    },
+    {
+      "start": 780.32,
+      "duration": 6.0,
+      "text": "estate has been closed you will need to"
+    },
+    {
+      "start": 782.68,
+      "duration": 6.68,
+      "text": "reopen that probate order um that is"
+    },
+    {
+      "start": 786.32,
+      "duration": 5.48,
+      "text": "part of the process for filing uh on"
+    },
+    {
+      "start": 789.36,
+      "duration": 5.52,
+      "text": "behalf of a deceased person we also may"
+    },
+    {
+      "start": 791.8,
+      "duration": 5.88,
+      "text": "need the estate's Ein tax identification"
+    },
+    {
+      "start": 794.88,
+      "duration": 5.72,
+      "text": "number if you have any questions about"
+    },
+    {
+      "start": 797.68,
+      "duration": 6.04,
+      "text": "any of this um please don't hesitate to"
+    },
+    {
+      "start": 800.6,
+      "duration": 6.4,
+      "text": "give us a call we are here and we want"
+    },
+    {
+      "start": 803.72,
+      "duration": 5.239,
+      "text": "to help you um proactively make sure"
+    },
+    {
+      "start": 807.0,
+      "duration": 4.88,
+      "text": "that you have all the right information"
+    },
+    {
+      "start": 808.959,
+      "duration": 6.401,
+      "text": "this the first time you send it to us so"
+    },
+    {
+      "start": 811.88,
+      "duration": 3.48,
+      "text": "it will help you get paid out"
+    },
+    {
+      "start": 816.88,
+      "duration": 5.36,
+      "text": "quicker so the third step in uh getting"
+    },
+    {
+      "start": 819.88,
+      "duration": 4.36,
+      "text": "your claim form to us because when you"
+    },
+    {
+      "start": 822.24,
+      "duration": 4.279,
+      "text": "go to the missing money site sometimes"
+    },
+    {
+      "start": 824.24,
+      "duration": 4.92,
+      "text": "people are confused it'll say yes your"
+    },
+    {
+      "start": 826.519,
+      "duration": 4.921,
+      "text": "claim has been um submitted but that"
+    },
+    {
+      "start": 829.16,
+      "duration": 4.72,
+      "text": "means it's just going to email you the"
+    },
+    {
+      "start": 831.44,
+      "duration": 5.959,
+      "text": "claim form and so what we need for you"
+    },
+    {
+      "start": 833.88,
+      "duration": 6.04,
+      "text": "to do is sign the claim form and then"
+    },
+    {
+      "start": 837.399,
+      "duration": 4.961,
+      "text": "upload any additional in uh a"
+    },
+    {
+      "start": 839.92,
+      "duration": 5.76,
+      "text": "documentation your driver's license your"
+    },
+    {
+      "start": 842.36,
+      "duration": 6.8,
+      "text": "W9 Form uh in proof of the address that"
+    },
+    {
+      "start": 845.68,
+      "duration": 5.719,
+      "text": "the business um printed on the that's"
+    },
+    {
+      "start": 849.16,
+      "duration": 4.919,
+      "text": "printed on the claim form so we have two"
+    },
+    {
+      "start": 851.399,
+      "duration": 5.721,
+      "text": "ways that you can do this we've um we do"
+    },
+    {
+      "start": 854.079,
+      "duration": 5.401,
+      "text": "have um a document upload on our website"
+    },
+    {
+      "start": 857.12,
+      "duration": 5.279,
+      "text": "that you can scan the uh documents in"
+    },
+    {
+      "start": 859.48,
+      "duration": 5.359,
+      "text": "upload it to us put in your uh your"
+    },
+    {
+      "start": 862.399,
+      "duration": 5.88,
+      "text": "claim number which should be emailed to"
+    },
+    {
+      "start": 864.839,
+      "duration": 5.401,
+      "text": "you your first and your last name and um"
+    },
+    {
+      "start": 868.279,
+      "duration": 4.881,
+      "text": "we'll start you know processing your"
+    },
+    {
+      "start": 870.24,
+      "duration": 4.76,
+      "text": "claim form um along with the others so"
+    },
+    {
+      "start": 873.16,
+      "duration": 4.479,
+      "text": "you don't have to go through the mail"
+    },
+    {
+      "start": 875.0,
+      "duration": 5.44,
+      "text": "but you can always mail it to us um at"
+    },
+    {
+      "start": 877.639,
+      "duration": 6.241,
+      "text": "Ohio Division of unclaimed funds 77"
+    },
+    {
+      "start": 880.44,
+      "duration": 7.24,
+      "text": "South High Street um but please include"
+    },
+    {
+      "start": 883.88,
+      "duration": 5.759,
+      "text": "your claim um number on your documents"
+    },
+    {
+      "start": 887.68,
+      "duration": 4.599,
+      "text": "and if you're sending documents through"
+    },
+    {
+      "start": 889.639,
+      "duration": 5.32,
+      "text": "the mail to us any critical documents"
+    },
+    {
+      "start": 892.279,
+      "duration": 5.961,
+      "text": "cashier Checker please keep a copy of"
+    },
+    {
+      "start": 894.959,
+      "duration": 6.081,
+      "text": "the documents that you send um into into"
+    },
+    {
+      "start": 898.24,
+      "duration": 2.8,
+      "text": "our office"
+    },
+    {
+      "start": 902.72,
+      "duration": 5.0,
+      "text": "so those are the three easy steps now"
+    },
+    {
+      "start": 905.36,
+      "duration": 4.0,
+      "text": "You' filed your claim and you're"
+    },
+    {
+      "start": 907.72,
+      "duration": 5.4,
+      "text": "wondering how long this is going to take"
+    },
+    {
+      "start": 909.36,
+      "duration": 6.12,
+      "text": "to get your check in the mail so we do"
+    },
+    {
+      "start": 913.12,
+      "duration": 5.639,
+      "text": "want to say and let you know that it can"
+    },
+    {
+      "start": 915.48,
+      "duration": 8.32,
+      "text": "take up to 120 days for us to initially"
+    },
+    {
+      "start": 918.759,
+      "duration": 7.921,
+      "text": "review your claim um we it we are backed"
+    },
+    {
+      "start": 923.8,
+      "duration": 5.88,
+      "text": "up right now we have um lots of claims"
+    },
+    {
+      "start": 926.68,
+      "duration": 7.36,
+      "text": "that we are looking at um"
+    },
+    {
+      "start": 929.68,
+      "duration": 6.36,
+      "text": "and our staff is working extra hard to"
+    },
+    {
+      "start": 934.04,
+      "duration": 4.599,
+      "text": "make sure that they review and they're"
+    },
+    {
+      "start": 936.04,
+      "duration": 5.719,
+      "text": "reviewing by the way every piece of"
+    },
+    {
+      "start": 938.639,
+      "duration": 6.12,
+      "text": "paper and documentation that you send in"
+    },
+    {
+      "start": 941.759,
+      "duration": 5.041,
+      "text": "or upload to our website so it takes"
+    },
+    {
+      "start": 944.759,
+      "duration": 4.2,
+      "text": "some time for us to review all that"
+    },
+    {
+      "start": 946.8,
+      "duration": 4.12,
+      "text": "information and make sure that we have"
+    },
+    {
+      "start": 948.959,
+      "duration": 4.761,
+      "text": "everything that we need and we can"
+    },
+    {
+      "start": 950.92,
+      "duration": 5.359,
+      "text": "verify you are the rightful owner once"
+    },
+    {
+      "start": 953.72,
+      "duration": 4.799,
+      "text": "we have reviewed and see that we have"
+    },
+    {
+      "start": 956.279,
+      "duration": 4.641,
+      "text": "everything that we need we will approve"
+    },
+    {
+      "start": 958.519,
+      "duration": 4.481,
+      "text": "your claim and that check will be mailed"
+    },
+    {
+      "start": 960.92,
+      "duration": 4.76,
+      "text": "to you so you will get that check in the"
+    },
+    {
+      "start": 963.0,
+      "duration": 5.56,
+      "text": "mail that is the only way that you will"
+    },
+    {
+      "start": 965.68,
+      "duration": 2.88,
+      "text": "be paid for your"
+    },
+    {
+      "start": 971.12,
+      "duration": 6.399,
+      "text": "claim like Susie said yeah it takes a"
+    },
+    {
+      "start": 973.639,
+      "duration": 6.801,
+      "text": "long time right now we have about 13,000"
+    },
+    {
+      "start": 977.519,
+      "duration": 7.161,
+      "text": "claims in our office waiting to be"
+    },
+    {
+      "start": 980.44,
+      "duration": 6.199,
+      "text": "reviewed um so that processes and our"
+    },
+    {
+      "start": 984.68,
+      "duration": 3.719,
+      "text": "our claims team we have been working"
+    },
+    {
+      "start": 986.639,
+      "duration": 3.281,
+      "text": "overtime for the last four or five"
+    },
+    {
+      "start": 988.399,
+      "duration": 3.761,
+      "text": "months"
+    },
+    {
+      "start": 989.92,
+      "duration": 4.159,
+      "text": "um trying to catch up but just the mere"
+    },
+    {
+      "start": 992.16,
+      "duration": 4.2,
+      "text": "volume and just because we're doing a"
+    },
+    {
+      "start": 994.079,
+      "duration": 4.2,
+      "text": "lot of Outreach and advertising we're"
+    },
+    {
+      "start": 996.36,
+      "duration": 3.839,
+      "text": "getting a lot of um claims and and like"
+    },
+    {
+      "start": 998.279,
+      "duration": 4.521,
+      "text": "Susie said you have to we have to look"
+    },
+    {
+      "start": 1000.199,
+      "duration": 5.241,
+      "text": "at every um document that you send in"
+    },
+    {
+      "start": 1002.8,
+      "duration": 4.479,
+      "text": "but once you send your claim form in if"
+    },
+    {
+      "start": 1005.44,
+      "duration": 5.839,
+      "text": "you want to know to check on the status"
+    },
+    {
+      "start": 1007.279,
+      "duration": 7.56,
+      "text": "of your claim on our website um you can"
+    },
+    {
+      "start": 1011.279,
+      "duration": 6.841,
+      "text": "also go to our website unclaim"
+    },
+    {
+      "start": 1014.839,
+      "duration": 6.161,
+      "text": "funds.gov and check on your claim so you"
+    },
+    {
+      "start": 1018.12,
+      "duration": 5.56,
+      "text": "can go to our it put unclaim funds."
+    },
+    {
+      "start": 1021.0,
+      "duration": 6.039,
+      "text": "oh.gov ohio.gov I'm sorry I always"
+    },
+    {
+      "start": 1023.68,
+      "duration": 6.48,
+      "text": "missed that part unclaim funds."
+    },
+    {
+      "start": 1027.039,
+      "duration": 6.561,
+      "text": "oh.gov um put in your claim number on on"
+    },
+    {
+      "start": 1030.16,
+      "duration": 7.759,
+      "text": "the screen and it will give you um uh"
+    },
+    {
+      "start": 1033.6,
+      "duration": 6.52,
+      "text": "some the status of your claim um and so"
+    },
+    {
+      "start": 1037.919,
+      "duration": 4.601,
+      "text": "sometimes a lot of people it'll keep if"
+    },
+    {
+      "start": 1040.12,
+      "duration": 5.079,
+      "text": "it's still waiting to be reviewed it'll"
+    },
+    {
+      "start": 1042.52,
+      "duration": 5.559,
+      "text": "just say claim is being processed like I"
+    },
+    {
+      "start": 1045.199,
+      "duration": 5.761,
+      "text": "said our our claim processing times are"
+    },
+    {
+      "start": 1048.079,
+      "duration": 5.761,
+      "text": "very lengthy right now um we're hiring"
+    },
+    {
+      "start": 1050.96,
+      "duration": 5.2,
+      "text": "more people and we just have a lot of"
+    },
+    {
+      "start": 1053.84,
+      "duration": 5.36,
+      "text": "claims in here so the process has taken"
+    },
+    {
+      "start": 1056.16,
+      "duration": 4.96,
+      "text": "a long time but we we do plan we we do"
+    },
+    {
+      "start": 1059.2,
+      "duration": 3.92,
+      "text": "look at every claim and we will get it"
+    },
+    {
+      "start": 1061.12,
+      "duration": 4.6,
+      "text": "to you as soon as"
+    },
+    {
+      "start": 1063.12,
+      "duration": 5.2,
+      "text": "possible that's right and and remember"
+    },
+    {
+      "start": 1065.72,
+      "duration": 6.959,
+      "text": "we paid out $139"
+    },
+    {
+      "start": 1068.32,
+      "duration": 7.2,
+      "text": "Million last year to um so many"
+    },
+    {
+      "start": 1072.679,
+      "duration": 5.201,
+      "text": "thousands of claimants throughout Ohio"
+    },
+    {
+      "start": 1075.52,
+      "duration": 5.6,
+      "text": "so and that average claim amount was"
+    },
+    {
+      "start": 1077.88,
+      "duration": 5.279,
+      "text": "$3,000 so you could be one of those"
+    },
+    {
+      "start": 1081.12,
+      "duration": 4.76,
+      "text": "people so I don't want to discourage you"
+    },
+    {
+      "start": 1083.159,
+      "duration": 4.961,
+      "text": "please you know continue to file your"
+    },
+    {
+      "start": 1085.88,
+      "duration": 4.64,
+      "text": "claim and reach out with any questions"
+    },
+    {
+      "start": 1088.12,
+      "duration": 5.6,
+      "text": "that you might have so we do have an"
+    },
+    {
+      "start": 1090.52,
+      "duration": 6.12,
+      "text": "exciting announcement that next year we"
+    },
+    {
+      "start": 1093.72,
+      "duration": 6.56,
+      "text": "are getting a system upgrade and that"
+    },
+    {
+      "start": 1096.64,
+      "duration": 5.6,
+      "text": "should help um uh really move things"
+    },
+    {
+      "start": 1100.28,
+      "duration": 4.0,
+      "text": "along and it's just going to be an"
+    },
+    {
+      "start": 1102.24,
+      "duration": 4.96,
+      "text": "exciting new announcement with lots of"
+    },
+    {
+      "start": 1104.28,
+      "duration": 4.8,
+      "text": "more details I will share next year so"
+    },
+    {
+      "start": 1107.2,
+      "duration": 4.76,
+      "text": "know that that is coming and we are"
+    },
+    {
+      "start": 1109.08,
+      "duration": 5.24,
+      "text": "working on making things better and the"
+    },
+    {
+      "start": 1111.96,
+      "duration": 3.68,
+      "text": "processes work better for everyone who"
+    },
+    {
+      "start": 1114.32,
+      "duration": 6.12,
+      "text": "files those"
+    },
+    {
+      "start": 1115.64,
+      "duration": 8.399,
+      "text": "claims and so with that we are complete"
+    },
+    {
+      "start": 1120.44,
+      "duration": 6.16,
+      "text": "with the webinar portion in terms of you"
+    },
+    {
+      "start": 1124.039,
+      "duration": 4.961,
+      "text": "know explaining the three easy steps and"
+    },
+    {
+      "start": 1126.6,
+      "duration": 4.48,
+      "text": "going over if you have any questions"
+    },
+    {
+      "start": 1129.0,
+      "duration": 3.76,
+      "text": "let's look in the live Q&A and see if"
+    },
+    {
+      "start": 1131.08,
+      "duration": 2.719,
+      "text": "there's any questions we can answer"
+    },
+    {
+      "start": 1132.76,
+      "duration": 3.799,
+      "text": "while we're"
+    },
+    {
+      "start": 1133.799,
+      "duration": 5.641,
+      "text": "here um will there be a copy of the"
+    },
+    {
+      "start": 1136.559,
+      "duration": 5.36,
+      "text": "presentation available for download yes"
+    },
+    {
+      "start": 1139.44,
+      "duration": 5.44,
+      "text": "yes we have this posted on our website"
+    },
+    {
+      "start": 1141.919,
+      "duration": 5.281,
+      "text": "at unclaim funds. oh.gov there's the"
+    },
+    {
+      "start": 1144.88,
+      "duration": 5.679,
+      "text": "website address right"
+    },
+    {
+      "start": 1147.2,
+      "duration": 7.08,
+      "text": "there and let's see I also wanted to"
+    },
+    {
+      "start": 1150.559,
+      "duration": 6.041,
+      "text": "show um we have a phone number and an"
+    },
+    {
+      "start": 1154.28,
+      "duration": 3.6,
+      "text": "email address that you can contact us"
+    },
+    {
+      "start": 1156.6,
+      "duration": 4.04,
+      "text": "it's"
+    },
+    {
+      "start": 1157.88,
+      "duration": 8.52,
+      "text": "claims. ohio.gov and there's our phone"
+    },
+    {
+      "start": 1160.64,
+      "duration": 9.159,
+      "text": "number 6144 66 4433 we are here you can"
+    },
+    {
+      "start": 1166.4,
+      "duration": 6.0,
+      "text": "call and speak to a live person and and"
+    },
+    {
+      "start": 1169.799,
+      "duration": 4.481,
+      "text": "they can review your claim information"
+    },
+    {
+      "start": 1172.4,
+      "duration": 5.399,
+      "text": "and see and answer any questions that"
+    },
+    {
+      "start": 1174.28,
+      "duration": 5.879,
+      "text": "you may have okay we have some other"
+    },
+    {
+      "start": 1177.799,
+      "duration": 5.801,
+      "text": "questions um what is"
+    },
+    {
+      "start": 1180.159,
+      "duration": 5.52,
+      "text": "the yes what is the website"
+    },
+    {
+      "start": 1183.6,
+      "duration": 4.88,
+      "text": "address what question for you who should"
+    },
+    {
+      "start": 1185.679,
+      "duration": 5.441,
+      "text": "be checking for unclaimed funds and who"
+    },
+    {
+      "start": 1188.48,
+      "duration": 2.64,
+      "text": "can you check"
+    },
+    {
+      "start": 1191.48,
+      "duration": 5.76,
+      "text": "on oh anyone yeah you can anyone can"
+    },
+    {
+      "start": 1195.32,
+      "duration": 4.32,
+      "text": "check for unclaimed funds and there"
+    },
+    {
+      "start": 1197.24,
+      "duration": 4.76,
+      "text": "could be um you can check for your mom"
+    },
+    {
+      "start": 1199.64,
+      "duration": 3.96,
+      "text": "your sisters your cousins you can"
+    },
+    {
+      "start": 1202.0,
+      "duration": 3.799,
+      "text": "actually you know just go on the site"
+    },
+    {
+      "start": 1203.6,
+      "duration": 4.04,
+      "text": "and say oh Mom and get the claim form"
+    },
+    {
+      "start": 1205.799,
+      "duration": 4.841,
+      "text": "printed out and email to you and you can"
+    },
+    {
+      "start": 1207.64,
+      "duration": 6.279,
+      "text": "give it to your family person member um"
+    },
+    {
+      "start": 1210.64,
+      "duration": 5.24,
+      "text": "or whomever so okay and you mentioned"
+    },
+    {
+      "start": 1213.919,
+      "duration": 5.921,
+      "text": "that we do need documentation in order"
+    },
+    {
+      "start": 1215.88,
+      "duration": 6.88,
+      "text": "to verify that we're legit um and honest"
+    },
+    {
+      "start": 1219.84,
+      "duration": 5.44,
+      "text": "in in trying to make that claim um some"
+    },
+    {
+      "start": 1222.76,
+      "duration": 4.08,
+      "text": "of these forms are sensitive documents"
+    },
+    {
+      "start": 1225.28,
+      "duration": 5.08,
+      "text": "like birth certificates death"
+    },
+    {
+      "start": 1226.84,
+      "duration": 6.24,
+      "text": "certificates Etc do we send a copy of"
+    },
+    {
+      "start": 1230.36,
+      "duration": 4.76,
+      "text": "that or what if somebody wants to hang"
+    },
+    {
+      "start": 1233.08,
+      "duration": 3.8,
+      "text": "on to the original birth certificate of"
+    },
+    {
+      "start": 1235.12,
+      "duration": 4.679,
+      "text": "their mother as a Keepsake how do we"
+    },
+    {
+      "start": 1236.88,
+      "duration": 6.279,
+      "text": "ensure that that cherish document can be"
+    },
+    {
+      "start": 1239.799,
+      "duration": 5.401,
+      "text": "saved right so we only request a copy of"
+    },
+    {
+      "start": 1243.159,
+      "duration": 4.0,
+      "text": "that document and on the document it"
+    },
+    {
+      "start": 1245.2,
+      "duration": 4.24,
+      "text": "normally like once you copy it we can"
+    },
+    {
+      "start": 1247.159,
+      "duration": 5.0,
+      "text": "see whether it's been copied or original"
+    },
+    {
+      "start": 1249.44,
+      "duration": 4.479,
+      "text": "so definitely we only want copies of the"
+    },
+    {
+      "start": 1252.159,
+      "duration": 4.721,
+      "text": "birth certificate um and depth"
+    },
+    {
+      "start": 1253.919,
+      "duration": 6.201,
+      "text": "certificates um because our retention"
+    },
+    {
+      "start": 1256.88,
+      "duration": 6.52,
+      "text": "policy we um after 60 days at the after"
+    },
+    {
+      "start": 1260.12,
+      "duration": 5.799,
+      "text": "the claim has been paid we um Shred the"
+    },
+    {
+      "start": 1263.4,
+      "duration": 5.72,
+      "text": "um documentation anyway so please send"
+    },
+    {
+      "start": 1265.919,
+      "duration": 5.64,
+      "text": "us copies one thing to also note too is"
+    },
+    {
+      "start": 1269.12,
+      "duration": 4.28,
+      "text": "we don't pay by name alone so sometimes"
+    },
+    {
+      "start": 1271.559,
+      "duration": 4.961,
+      "text": "somebody will see their name no that was"
+    },
+    {
+      "start": 1273.4,
+      "duration": 5.6,
+      "text": "me and there are a lot of people with"
+    },
+    {
+      "start": 1276.52,
+      "duration": 4.519,
+      "text": "the same names unfortunately so that's"
+    },
+    {
+      "start": 1279.0,
+      "duration": 4.52,
+      "text": "why we ask for a proof proof whatever"
+    },
+    {
+      "start": 1281.039,
+      "duration": 5.561,
+      "text": "you can send us that can validate you"
+    },
+    {
+      "start": 1283.52,
+      "duration": 6.48,
+      "text": "are who you say you are or you live that"
+    },
+    {
+      "start": 1286.6,
+      "duration": 5.88,
+      "text": "that address um send whatever it is that"
+    },
+    {
+      "start": 1290.0,
+      "duration": 6.679,
+      "text": "that can be help pack it and send it in"
+    },
+    {
+      "start": 1292.48,
+      "duration": 6.48,
+      "text": "yes okay okay so how long do do people"
+    },
+    {
+      "start": 1296.679,
+      "duration": 4.721,
+      "text": "have to claim funds how far back can we"
+    },
+    {
+      "start": 1298.96,
+      "duration": 2.44,
+      "text": "expect to"
+    },
+    {
+      "start": 1302.0,
+      "duration": 5.4,
+      "text": "look wow we have we keep claim unclaim"
+    },
+    {
+      "start": 1304.84,
+      "duration": 4.56,
+      "text": "funds forever so they never go away so"
+    },
+    {
+      "start": 1307.4,
+      "duration": 3.8,
+      "text": "even if you start processing your claim"
+    },
+    {
+      "start": 1309.4,
+      "duration": 3.48,
+      "text": "and for whatever reason you forget or"
+    },
+    {
+      "start": 1311.2,
+      "duration": 5.079,
+      "text": "you just didn't get around the milon it"
+    },
+    {
+      "start": 1312.88,
+      "duration": 5.24,
+      "text": "in um we won't do anything it'll just"
+    },
+    {
+      "start": 1316.279,
+      "duration": 5.52,
+      "text": "sit there until you come back and claim"
+    },
+    {
+      "start": 1318.12,
+      "duration": 5.96,
+      "text": "it and it's been paid so um we we could"
+    },
+    {
+      "start": 1321.799,
+      "duration": 4.0,
+      "text": "find that last check from an an unpaid"
+    },
+    {
+      "start": 1324.08,
+      "duration": 4.76,
+      "text": "College job or high school job that we"
+    },
+    {
+      "start": 1325.799,
+      "duration": 5.801,
+      "text": "never picked up for Yes okay that's"
+    },
+    {
+      "start": 1328.84,
+      "duration": 3.88,
+      "text": "right and and the division was founded"
+    },
+    {
+      "start": 1331.6,
+      "duration": 4.679,
+      "text": "in"
+    },
+    {
+      "start": 1332.72,
+      "duration": 8.52,
+      "text": "1968 so believe it or not we have claims"
+    },
+    {
+      "start": 1336.279,
+      "duration": 8.88,
+      "text": "dating back that far ago so you could be"
+    },
+    {
+      "start": 1341.24,
+      "duration": 9.48,
+      "text": "an a could be a relative that's right"
+    },
+    {
+      "start": 1345.159,
+      "duration": 9.52,
+      "text": "okay okay that's really good to know so"
+    },
+    {
+      "start": 1350.72,
+      "duration": 6.079,
+      "text": "um how would we consider like from the"
+    },
+    {
+      "start": 1354.679,
+      "duration": 5.321,
+      "text": "business perspective what do they have"
+    },
+    {
+      "start": 1356.799,
+      "duration": 4.561,
+      "text": "to file on or so so that the consumer"
+    },
+    {
+      "start": 1360.0,
+      "duration": 3.72,
+      "text": "can say okay this guy might have"
+    },
+    {
+      "start": 1361.36,
+      "duration": 3.919,
+      "text": "actually filed for me um because they're"
+    },
+    {
+      "start": 1363.72,
+      "duration": 3.0,
+      "text": "obligated to is that there a dollar"
+    },
+    {
+      "start": 1365.279,
+      "duration": 4.841,
+      "text": "amount if it's 20 bucks they have to"
+    },
+    {
+      "start": 1366.72,
+      "duration": 5.92,
+      "text": "file it a 100 bucks they have to file it"
+    },
+    {
+      "start": 1370.12,
+      "duration": 5.72,
+      "text": "um how do we know it could be there"
+    },
+    {
+      "start": 1372.64,
+      "duration": 3.2,
+      "text": "within that limitation"
+    },
+    {
+      "start": 1377.0,
+      "duration": 5.679,
+      "text": "set how do we know that the unclaimed"
+    },
+    {
+      "start": 1380.159,
+      "duration": 3.921,
+      "text": "property would be there well um I'm"
+    },
+    {
+      "start": 1382.679,
+      "duration": 3.88,
+      "text": "thinking you know you go back to your"
+    },
+    {
+      "start": 1384.08,
+      "duration": 4.24,
+      "text": "high school or college job um for"
+    },
+    {
+      "start": 1386.559,
+      "duration": 3.72,
+      "text": "example I know that I have like $100"
+    },
+    {
+      "start": 1388.32,
+      "duration": 3.359,
+      "text": "floating around out there somewhere"
+    },
+    {
+      "start": 1390.279,
+      "duration": 4.201,
+      "text": "because I wasn't able to make it back to"
+    },
+    {
+      "start": 1391.679,
+      "duration": 5.6,
+      "text": "that city to pick up a hard check what"
+    },
+    {
+      "start": 1394.48,
+      "duration": 5.88,
+      "text": "if it was $20 or $100 like what is the"
+    },
+    {
+      "start": 1397.279,
+      "duration": 5.601,
+      "text": "onus on the business you may have worked"
+    },
+    {
+      "start": 1400.36,
+      "duration": 4.84,
+      "text": "for or the the person filing those"
+    },
+    {
+      "start": 1402.88,
+      "duration": 4.159,
+      "text": "claims to get those claims in or when do"
+    },
+    {
+      "start": 1405.2,
+      "duration": 4.839,
+      "text": "it just let it go and don't worry about"
+    },
+    {
+      "start": 1407.039,
+      "duration": 6.161,
+      "text": "it yeah we have paid claims as low as"
+    },
+    {
+      "start": 1410.039,
+      "duration": 5.801,
+      "text": "two cents so we collect every any"
+    },
+    {
+      "start": 1413.2,
+      "duration": 4.92,
+      "text": "unclaimed funds all business are report"
+    },
+    {
+      "start": 1415.84,
+      "duration": 4.64,
+      "text": "are to report any unclaimed funds that"
+    },
+    {
+      "start": 1418.12,
+      "duration": 5.439,
+      "text": "they have so yeah I've played out claims"
+    },
+    {
+      "start": 1420.48,
+      "duration": 5.199,
+      "text": "as small as two cents believe it or not"
+    },
+    {
+      "start": 1423.559,
+      "duration": 4.081,
+      "text": "yeah okay well that's that's good to"
+    },
+    {
+      "start": 1425.679,
+      "duration": 5.961,
+      "text": "know so nothing's too small to to"
+    },
+    {
+      "start": 1427.64,
+      "duration": 6.32,
+      "text": "attempt to claim yeah or look for all"
+    },
+    {
+      "start": 1431.64,
+      "duration": 3.68,
+      "text": "right Susie are there more questions"
+    },
+    {
+      "start": 1433.96,
+      "duration": 5.199,
+      "text": "from the"
+    },
+    {
+      "start": 1435.32,
+      "duration": 6.64,
+      "text": "crowd just looking through um first"
+    },
+    {
+      "start": 1439.159,
+      "duration": 4.841,
+      "text": "question my passport is in English and"
+    },
+    {
+      "start": 1441.96,
+      "duration": 4.88,
+      "text": "Spanish but my driver's license is in"
+    },
+    {
+      "start": 1444.0,
+      "duration": 6.64,
+      "text": "Spanish do I have to translate that into"
+    },
+    {
+      "start": 1446.84,
+      "duration": 7.04,
+      "text": "English marene interesting"
+    },
+    {
+      "start": 1450.64,
+      "duration": 6.72,
+      "text": "question yes yes you do yeah we we will"
+    },
+    {
+      "start": 1453.88,
+      "duration": 7.08,
+      "text": "ask you to um have that translated an"
+    },
+    {
+      "start": 1457.36,
+      "duration": 3.6,
+      "text": "affidavit with that so"
+    },
+    {
+      "start": 1462.84,
+      "duration": 5.76,
+      "text": "yes okay and yes someone did ask about"
+    },
+    {
+      "start": 1466.64,
+      "duration": 5.919,
+      "text": "filing for their business so that is a"
+    },
+    {
+      "start": 1468.6,
+      "duration": 6.0,
+      "text": "great Point um if you do own a business"
+    },
+    {
+      "start": 1472.559,
+      "duration": 3.921,
+      "text": "you we do encourage you to go ahead and"
+    },
+    {
+      "start": 1474.6,
+      "duration": 4.52,
+      "text": "look up to see if your business has any"
+    },
+    {
+      "start": 1476.48,
+      "duration": 6.079,
+      "text": "claims um so it's not just"
+    },
+    {
+      "start": 1479.12,
+      "duration": 6.08,
+      "text": "individuals businesses do have money um"
+    },
+    {
+      "start": 1482.559,
+      "duration": 4.641,
+      "text": "we've had um different companies all"
+    },
+    {
+      "start": 1485.2,
+      "duration": 4.68,
+      "text": "over Ohio find money that they didn't"
+    },
+    {
+      "start": 1487.2,
+      "duration": 5.52,
+      "text": "know about so you could be one of them"
+    },
+    {
+      "start": 1489.88,
+      "duration": 5.84,
+      "text": "as well you look that up under the"
+    },
+    {
+      "start": 1492.72,
+      "duration": 4.679,
+      "text": "company name or the owner's name or is"
+    },
+    {
+      "start": 1495.72,
+      "duration": 3.12,
+      "text": "it a person or the company that you're"
+    },
+    {
+      "start": 1497.399,
+      "duration": 5.0,
+      "text": "you're searching"
+    },
+    {
+      "start": 1498.84,
+      "duration": 6.12,
+      "text": "so in missingmoney.com you in the field"
+    },
+    {
+      "start": 1502.399,
+      "duration": 4.64,
+      "text": "of last name it says last name or"
+    },
+    {
+      "start": 1504.96,
+      "duration": 4.24,
+      "text": "business so you just type in the"
+    },
+    {
+      "start": 1507.039,
+      "duration": 4.24,
+      "text": "business name if you're looking up your"
+    },
+    {
+      "start": 1509.2,
+      "duration": 4.839,
+      "text": "business to see if there's a claim for"
+    },
+    {
+      "start": 1511.279,
+      "duration": 5.52,
+      "text": "you um if you type in your last name"
+    },
+    {
+      "start": 1514.039,
+      "duration": 5.721,
+      "text": "that's going to look up any individual"
+    },
+    {
+      "start": 1516.799,
+      "duration": 6.081,
+      "text": "claims"
+    },
+    {
+      "start": 1519.76,
+      "duration": 6.96,
+      "text": "perfect and also another good point with"
+    },
+    {
+      "start": 1522.88,
+      "duration": 5.519,
+      "text": "that is if you are married um if you've"
+    },
+    {
+      "start": 1526.72,
+      "duration": 3.959,
+      "text": "been married a couple times we've had"
+    },
+    {
+      "start": 1528.399,
+      "duration": 5.681,
+      "text": "people ask this question you know we"
+    },
+    {
+      "start": 1530.679,
+      "duration": 7.441,
+      "text": "encourage you to look up your name your"
+    },
+    {
+      "start": 1534.08,
+      "duration": 6.079,
+      "text": "um your um maen name your if you've been"
+    },
+    {
+      "start": 1538.12,
+      "duration": 4.96,
+      "text": "married multiple times look up all of"
+    },
+    {
+      "start": 1540.159,
+      "duration": 4.961,
+      "text": "the the names that you have had because"
+    },
+    {
+      "start": 1543.08,
+      "duration": 4.56,
+      "text": "if you've had any accounts in those"
+    },
+    {
+      "start": 1545.12,
+      "duration": 4.2,
+      "text": "names you could have unclaimed funds"
+    },
+    {
+      "start": 1547.64,
+      "duration": 4.639,
+      "text": "waiting for"
+    },
+    {
+      "start": 1549.32,
+      "duration": 5.0,
+      "text": "you and so too would be any relatives"
+    },
+    {
+      "start": 1552.279,
+      "duration": 4.321,
+      "text": "that might have madeen names or changed"
+    },
+    {
+      "start": 1554.32,
+      "duration": 5.16,
+      "text": "names along the way"
+    },
+    {
+      "start": 1556.6,
+      "duration": 6.36,
+      "text": "absolutely yeah I mean I encourage that"
+    },
+    {
+      "start": 1559.48,
+      "duration": 5.52,
+      "text": "I I see it over and over where you know"
+    },
+    {
+      "start": 1562.96,
+      "duration": 4.04,
+      "text": "people will type in their name their"
+    },
+    {
+      "start": 1565.0,
+      "duration": 4.0,
+      "text": "their maen name and then look up their"
+    },
+    {
+      "start": 1567.0,
+      "duration": 4.919,
+      "text": "family members right and their maiden"
+    },
+    {
+      "start": 1569.0,
+      "duration": 6.159,
+      "text": "names and it's so fun it's a fun game to"
+    },
+    {
+      "start": 1571.919,
+      "duration": 7.401,
+      "text": "play right and see who has money and"
+    },
+    {
+      "start": 1575.159,
+      "duration": 8.281,
+      "text": "then you can hunt isn't it"
+    },
+    {
+      "start": 1579.32,
+      "duration": 7.56,
+      "text": "yes an actual chance at"
+    },
+    {
+      "start": 1583.44,
+      "duration": 5.4,
+      "text": "payout absolutely thank you so much are"
+    },
+    {
+      "start": 1586.88,
+      "duration": 3.76,
+      "text": "there any further questions from our"
+    },
+    {
+      "start": 1588.84,
+      "duration": 4.24,
+      "text": "audience"
+    },
+    {
+      "start": 1590.64,
+      "duration": 4.279,
+      "text": "Susie what additional documents are"
+    },
+    {
+      "start": 1593.08,
+      "duration": 3.44,
+      "text": "required if claiming on behalf of a"
+    },
+    {
+      "start": 1594.919,
+      "duration": 3.64,
+      "text": "business or"
+    },
+    {
+      "start": 1596.52,
+      "duration": 6.48,
+      "text": "employer good"
+    },
+    {
+      "start": 1598.559,
+      "duration": 6.881,
+      "text": "question right so that all depends um"
+    },
+    {
+      "start": 1603.0,
+      "duration": 6.24,
+      "text": "what the business actually reported to"
+    },
+    {
+      "start": 1605.44,
+      "duration": 5.599,
+      "text": "us so if they reported your fi in and"
+    },
+    {
+      "start": 1609.24,
+      "duration": 3.919,
+      "text": "the address where you did business at in"
+    },
+    {
+      "start": 1611.039,
+      "duration": 5.721,
+      "text": "the name of the business we would ask"
+    },
+    {
+      "start": 1613.159,
+      "duration": 5.88,
+      "text": "for proof of that F proof of that"
+    },
+    {
+      "start": 1616.76,
+      "duration": 5.84,
+      "text": "address the name of your business so you"
+    },
+    {
+      "start": 1619.039,
+      "duration": 5.24,
+      "text": "can send us in invoices um with that it"
+    },
+    {
+      "start": 1622.6,
+      "duration": 6.679,
+      "text": "probably would have your maybe your F"
+    },
+    {
+      "start": 1624.279,
+      "duration": 7.081,
+      "text": "tax ID number on there um any agreements"
+    },
+    {
+      "start": 1629.279,
+      "duration": 4.481,
+      "text": "that you had you know to establish the"
+    },
+    {
+      "start": 1631.36,
+      "duration": 5.4,
+      "text": "business or dissolve the business um as"
+    },
+    {
+      "start": 1633.76,
+      "duration": 4.639,
+      "text": "much information that you can send us"
+    },
+    {
+      "start": 1636.76,
+      "duration": 4.44,
+      "text": "that validates that this is your"
+    },
+    {
+      "start": 1638.399,
+      "duration": 4.28,
+      "text": "business uh we need proof that you would"
+    },
+    {
+      "start": 1641.2,
+      "duration": 3.44,
+      "text": "have the right to claim if you're not"
+    },
+    {
+      "start": 1642.679,
+      "duration": 4.441,
+      "text": "the owner or you're a representative we"
+    },
+    {
+      "start": 1644.64,
+      "duration": 4.639,
+      "text": "would need something from the president"
+    },
+    {
+      "start": 1647.12,
+      "duration": 4.76,
+      "text": "or somebody in the company says yes I'm"
+    },
+    {
+      "start": 1649.279,
+      "duration": 5.0,
+      "text": "able to claim these funds on behalf of"
+    },
+    {
+      "start": 1651.88,
+      "duration": 4.36,
+      "text": "this business so if you if you're"
+    },
+    {
+      "start": 1654.279,
+      "duration": 3.681,
+      "text": "working for someone you go okay yeah I"
+    },
+    {
+      "start": 1656.24,
+      "duration": 4.919,
+      "text": "need a letter of authority that's what"
+    },
+    {
+      "start": 1657.96,
+      "duration": 4.52,
+      "text": "the re claims processor would ask like"
+    },
+    {
+      "start": 1661.159,
+      "duration": 4.321,
+      "text": "what gives you the authority to claim"
+    },
+    {
+      "start": 1662.48,
+      "duration": 6.24,
+      "text": "for this company F in the most common"
+    },
+    {
+      "start": 1665.48,
+      "duration": 5.0,
+      "text": "most of the time um a dissolution"
+    },
+    {
+      "start": 1668.72,
+      "duration": 4.559,
+      "text": "agreement if the business has been"
+    },
+    {
+      "start": 1670.48,
+      "duration": 4.52,
+      "text": "dissolved um sometimes people don't do"
+    },
+    {
+      "start": 1673.279,
+      "duration": 4.161,
+      "text": "that with some kind of agreement on how"
+    },
+    {
+      "start": 1675.0,
+      "duration": 5.24,
+      "text": "the business was dissolved or what are"
+    },
+    {
+      "start": 1677.44,
+      "duration": 5.239,
+      "text": "your rights to to that uh property once"
+    },
+    {
+      "start": 1680.24,
+      "duration": 5.08,
+      "text": "it was dissolved how would so those type"
+    },
+    {
+      "start": 1682.679,
+      "duration": 4.72,
+      "text": "of technical documents helps our"
+    },
+    {
+      "start": 1685.32,
+      "duration": 4.359,
+      "text": "processors you know go through your"
+    },
+    {
+      "start": 1687.399,
+      "duration": 4.321,
+      "text": "claim faster prove that you are the"
+    },
+    {
+      "start": 1689.679,
+      "duration": 4.48,
+      "text": "person that could claim on behalf of the"
+    },
+    {
+      "start": 1691.72,
+      "duration": 5.839,
+      "text": "business or you own the business um if"
+    },
+    {
+      "start": 1694.159,
+      "duration": 5.76,
+      "text": "you were uh a sold proprietor you know"
+    },
+    {
+      "start": 1697.559,
+      "duration": 4.801,
+      "text": "sometimes your your um your tax returns"
+    },
+    {
+      "start": 1699.919,
+      "duration": 5.521,
+      "text": "could show that you know how you the"
+    },
+    {
+      "start": 1702.36,
+      "duration": 5.52,
+      "text": "business was set handled through you so"
+    },
+    {
+      "start": 1705.44,
+      "duration": 7.76,
+      "text": "any any documentation any invoices you"
+    },
+    {
+      "start": 1707.88,
+      "duration": 8.88,
+      "text": "have any old um agreements documents"
+    },
+    {
+      "start": 1713.2,
+      "duration": 5.359,
+      "text": "that that will help us and we don't we"
+    },
+    {
+      "start": 1716.76,
+      "duration": 4.159,
+      "text": "won't accept anything that can be"
+    },
+    {
+      "start": 1718.559,
+      "duration": 5.201,
+      "text": "printed from the internet you know we"
+    },
+    {
+      "start": 1720.919,
+      "duration": 5.081,
+      "text": "get we get things a lot that um people"
+    },
+    {
+      "start": 1723.76,
+      "duration": 4.12,
+      "text": "anyone can produce from the internet so"
+    },
+    {
+      "start": 1726.0,
+      "duration": 5.44,
+      "text": "we're looking for something that is a"
+    },
+    {
+      "start": 1727.88,
+      "duration": 6.919,
+      "text": "formalized statement with like that"
+    },
+    {
+      "start": 1731.44,
+      "duration": 6.88,
+      "text": "account number matching on it for your"
+    },
+    {
+      "start": 1734.799,
+      "duration": 5.12,
+      "text": "EIN in um with the business name we're"
+    },
+    {
+      "start": 1738.32,
+      "duration": 4.359,
+      "text": "for for something that's really going to"
+    },
+    {
+      "start": 1739.919,
+      "duration": 5.64,
+      "text": "provide that proof and I'm just showing"
+    },
+    {
+      "start": 1742.679,
+      "duration": 5.6,
+      "text": "on uh the screen our website and this is"
+    },
+    {
+      "start": 1745.559,
+      "duration": 5.6,
+      "text": "the check list of documentation there is"
+    },
+    {
+      "start": 1748.279,
+      "duration": 5.201,
+      "text": "a business tab so you can always review"
+    },
+    {
+      "start": 1751.159,
+      "duration": 3.88,
+      "text": "that that has some information there and"
+    },
+    {
+      "start": 1753.48,
+      "duration": 5.319,
+      "text": "then our claim instructions for a"
+    },
+    {
+      "start": 1755.039,
+      "duration": 5.48,
+      "text": "business so it's all listed here um for"
+    },
+    {
+      "start": 1758.799,
+      "duration": 4.641,
+      "text": "those International someone was asking"
+    },
+    {
+      "start": 1760.519,
+      "duration": 6.441,
+      "text": "about International claims um"
+    },
+    {
+      "start": 1763.44,
+      "duration": 5.16,
+      "text": "specifically they asked uh let's see I"
+    },
+    {
+      "start": 1766.96,
+      "duration": 3.4,
+      "text": "already have contacted your office but"
+    },
+    {
+      "start": 1768.6,
+      "duration": 3.959,
+      "text": "they just sent me back to instructions"
+    },
+    {
+      "start": 1770.36,
+      "duration": 5.559,
+      "text": "online and I already have an appointment"
+    },
+    {
+      "start": 1772.559,
+      "duration": 5.081,
+      "text": "at the US Embassy but waiting time is 6"
+    },
+    {
+      "start": 1775.919,
+      "duration": 3.88,
+      "text": "months will they be able to notarize and"
+    },
+    {
+      "start": 1777.64,
+      "duration": 5.159,
+      "text": "certify my driver's"
+    },
+    {
+      "start": 1779.799,
+      "duration": 6.041,
+      "text": "license um I can't speak to if the US"
+    },
+    {
+      "start": 1782.799,
+      "duration": 5.6,
+      "text": "Embassy can notorized um I know you can"
+    },
+    {
+      "start": 1785.84,
+      "duration": 6.28,
+      "text": "get notorized skills from your local"
+    },
+    {
+      "start": 1788.399,
+      "duration": 7.0,
+      "text": "bank um to be able to notorized any"
+    },
+    {
+      "start": 1792.12,
+      "duration": 5.2,
+      "text": "claim forms for us right now we require"
+    },
+    {
+      "start": 1795.399,
+      "duration": 4.64,
+      "text": "a notorized claim form for anything over"
+    },
+    {
+      "start": 1797.32,
+      "duration": 2.719,
+      "text": "$1,000"
+    },
+    {
+      "start": 1800.64,
+      "duration": 4.279,
+      "text": "yeah and and if it's an international"
+    },
+    {
+      "start": 1802.64,
+      "duration": 5.0,
+      "text": "claim I mean we do ask that it's"
+    },
+    {
+      "start": 1804.919,
+      "duration": 4.961,
+      "text": "authenticated you know with the uh US"
+    },
+    {
+      "start": 1807.64,
+      "duration": 4.48,
+      "text": "Embassy or wherever you are because oh"
+    },
+    {
+      "start": 1809.88,
+      "duration": 7.88,
+      "text": "no the lights just went out"
+    },
+    {
+      "start": 1812.12,
+      "duration": 7.6,
+      "text": "um so we do ask as for that uh yeah and"
+    },
+    {
+      "start": 1817.76,
+      "duration": 3.72,
+      "text": "one of the common things we see with"
+    },
+    {
+      "start": 1819.72,
+      "duration": 3.92,
+      "text": "business too A lot of times they send us"
+    },
+    {
+      "start": 1821.48,
+      "duration": 5.439,
+      "text": "documents from the Secretary of State"
+    },
+    {
+      "start": 1823.64,
+      "duration": 4.84,
+      "text": "and that's still a public basic website"
+    },
+    {
+      "start": 1826.919,
+      "duration": 4.521,
+      "text": "that you know and there's a lot of"
+    },
+    {
+      "start": 1828.48,
+      "duration": 4.4,
+      "text": "frosters out there so we're not saying"
+    },
+    {
+      "start": 1831.44,
+      "duration": 3.28,
+      "text": "we don't believe who you are we just"
+    },
+    {
+      "start": 1832.88,
+      "duration": 4.72,
+      "text": "need to validate because we don't want"
+    },
+    {
+      "start": 1834.72,
+      "duration": 5.319,
+      "text": "to mistakenly give someone someone"
+    },
+    {
+      "start": 1837.6,
+      "duration": 3.959,
+      "text": "else's money and so that we are very"
+    },
+    {
+      "start": 1840.039,
+      "duration": 4.401,
+      "text": "protective and we want to make sure"
+    },
+    {
+      "start": 1841.559,
+      "duration": 4.72,
+      "text": "we're paying the rightful person so"
+    },
+    {
+      "start": 1844.44,
+      "duration": 3.76,
+      "text": "that's why a lot of those documents from"
+    },
+    {
+      "start": 1846.279,
+      "duration": 5.601,
+      "text": "the internet that anybody can just go on"
+    },
+    {
+      "start": 1848.2,
+      "duration": 5.599,
+      "text": "and print this off that um it it's you"
+    },
+    {
+      "start": 1851.88,
+      "duration": 4.56,
+      "text": "know we would feel like if your business"
+    },
+    {
+      "start": 1853.799,
+      "duration": 4.321,
+      "text": "you would have like invoices and more um"
+    },
+    {
+      "start": 1856.44,
+      "duration": 4.359,
+      "text": "documents that relate to your business"
+    },
+    {
+      "start": 1858.12,
+      "duration": 5.679,
+      "text": "to prove how you're connected to these"
+    },
+    {
+      "start": 1860.799,
+      "duration": 4.321,
+      "text": "properties Mak sense yeah s with a"
+    },
+    {
+      "start": 1863.799,
+      "duration": 4.36,
+      "text": "little bit of leg work you can"
+    },
+    {
+      "start": 1865.12,
+      "duration": 4.799,
+      "text": "accomplish quite a bit yes that's right"
+    },
+    {
+      "start": 1868.159,
+      "duration": 4.801,
+      "text": "um can a"
+    },
+    {
+      "start": 1869.919,
+      "duration": 5.681,
+      "text": "parent do the filing process for an"
+    },
+    {
+      "start": 1872.96,
+      "duration": 6.679,
+      "text": "underage working"
+    },
+    {
+      "start": 1875.6,
+      "duration": 7.199,
+      "text": "child yes a minor"
+    },
+    {
+      "start": 1879.639,
+      "duration": 6.081,
+      "text": "okay absolutely all right parents get"
+    },
+    {
+      "start": 1882.799,
+      "duration": 7.0,
+      "text": "out there and get their unclaimed checks"
+    },
+    {
+      "start": 1885.72,
+      "duration": 5.76,
+      "text": "yes um someone said that they file for"
+    },
+    {
+      "start": 1889.799,
+      "duration": 4.72,
+      "text": "business what happens if we accidentally"
+    },
+    {
+      "start": 1891.48,
+      "duration": 4.76,
+      "text": "claim a property that isn't ours if we"
+    },
+    {
+      "start": 1894.519,
+      "duration": 2.921,
+      "text": "are unsure and claim something what is"
+    },
+    {
+      "start": 1896.24,
+      "duration": 3.399,
+      "text": "your"
+    },
+    {
+      "start": 1897.44,
+      "duration": 3.959,
+      "text": "recommendation good question um I I"
+    },
+    {
+      "start": 1899.639,
+      "duration": 3.64,
+      "text": "would say put the property on your claim"
+    },
+    {
+      "start": 1901.399,
+      "duration": 5.081,
+      "text": "form and once the processor starts"
+    },
+    {
+      "start": 1903.279,
+      "duration": 4.921,
+      "text": "reviewing your claim um and and they'll"
+    },
+    {
+      "start": 1906.48,
+      "duration": 4.24,
+      "text": "just say hey do you have any document to"
+    },
+    {
+      "start": 1908.2,
+      "duration": 4.719,
+      "text": "prove because we don't know each"
+    },
+    {
+      "start": 1910.72,
+      "duration": 4.36,
+      "text": "property how much documentation the"
+    },
+    {
+      "start": 1912.919,
+      "duration": 4.0,
+      "text": "business actually gave us sometimes they"
+    },
+    {
+      "start": 1915.08,
+      "duration": 5.319,
+      "text": "give us a lot sometimes they give us"
+    },
+    {
+      "start": 1916.919,
+      "duration": 5.841,
+      "text": "your FEI in number and your address or"
+    },
+    {
+      "start": 1920.399,
+      "duration": 4.681,
+      "text": "some other information that's related to"
+    },
+    {
+      "start": 1922.76,
+      "duration": 5.72,
+      "text": "or we can reach out to the business and"
+    },
+    {
+      "start": 1925.08,
+      "duration": 4.92,
+      "text": "say Hey What Can you give us um but I"
+    },
+    {
+      "start": 1928.48,
+      "duration": 4.039,
+      "text": "would put it on their processor we'll"
+    },
+    {
+      "start": 1930.0,
+      "duration": 4.639,
+      "text": "let you know whether um it's claimable"
+    },
+    {
+      "start": 1932.519,
+      "duration": 3.681,
+      "text": "and then they'll say you know what this"
+    },
+    {
+      "start": 1934.639,
+      "duration": 3.321,
+      "text": "property doesn't belong to you but we"
+    },
+    {
+      "start": 1936.2,
+      "duration": 4.079,
+      "text": "can play pay the rest of the properties"
+    },
+    {
+      "start": 1937.96,
+      "duration": 2.319,
+      "text": "on your"
+    },
+    {
+      "start": 1941.799,
+      "duration": 6.24,
+      "text": "claim uh someone said you uh hold the"
+    },
+    {
+      "start": 1945.399,
+      "duration": 5.361,
+      "text": "money forever but I thought that as some"
+    },
+    {
+      "start": 1948.039,
+      "duration": 5.281,
+      "text": "point in time unclaimed funds eventually"
+    },
+    {
+      "start": 1950.76,
+      "duration": 5.879,
+      "text": "sheets to the State of Ohio's general"
+    },
+    {
+      "start": 1953.32,
+      "duration": 6.319,
+      "text": "fund that's not correct no that is not"
+    },
+    {
+      "start": 1956.639,
+      "duration": 6.52,
+      "text": "correct that's right that is not correct"
+    },
+    {
+      "start": 1959.639,
+      "duration": 5.081,
+      "text": "that might be true for some of the city"
+    },
+    {
+      "start": 1963.159,
+      "duration": 4.36,
+      "text": "may have some unclaimed funds some of"
+    },
+    {
+      "start": 1964.72,
+      "duration": 5.36,
+      "text": "the other smaller um but for the state"
+    },
+    {
+      "start": 1967.519,
+      "duration": 4.88,
+      "text": "of Ohio our unclaimed property stays"
+    },
+    {
+      "start": 1970.08,
+      "duration": 4.92,
+      "text": "here forever yeah yes and that may be"
+    },
+    {
+      "start": 1972.399,
+      "duration": 4.961,
+      "text": "true for other states as well each state"
+    },
+    {
+      "start": 1975.0,
+      "duration": 4.96,
+      "text": "has their own laws and so we are"
+    },
+    {
+      "start": 1977.36,
+      "duration": 6.279,
+      "text": "governed by Ohio Revised Code"
+    },
+    {
+      "start": 1979.96,
+      "duration": 6.079,
+      "text": "169 and so that requires us to hold at"
+    },
+    {
+      "start": 1983.639,
+      "duration": 6.321,
+      "text": "Safeguard the the money Forever Until"
+    },
+    {
+      "start": 1986.039,
+      "duration": 7.48,
+      "text": "That rightful owner is is claims"
+    },
+    {
+      "start": 1989.96,
+      "duration": 5.92,
+      "text": "it uh we have some more questions great"
+    },
+    {
+      "start": 1993.519,
+      "duration": 4.681,
+      "text": "um one claimant has a passport with"
+    },
+    {
+      "start": 1995.88,
+      "duration": 6.36,
+      "text": "married name but driver's license and a"
+    },
+    {
+      "start": 1998.2,
+      "duration": 6.079,
+      "text": "voter ID has the single ma a name what"
+    },
+    {
+      "start": 2002.24,
+      "duration": 4.279,
+      "text": "should we do about that since you need"
+    },
+    {
+      "start": 2004.279,
+      "duration": 4.481,
+      "text": "two IDs for each claim"
+    },
+    {
+      "start": 2006.519,
+      "duration": 5.4,
+      "text": "it h"
+    },
+    {
+      "start": 2008.76,
+      "duration": 6.0,
+      "text": "so that depends on how the property was"
+    },
+    {
+      "start": 2011.919,
+      "duration": 5.441,
+      "text": "reported to us so if you're saying the"
+    },
+    {
+      "start": 2014.76,
+      "duration": 5.68,
+      "text": "property that was reported to us was in"
+    },
+    {
+      "start": 2017.36,
+      "duration": 5.159,
+      "text": "your um mating mating name and you have"
+    },
+    {
+      "start": 2020.44,
+      "duration": 6.32,
+      "text": "your driver's license if you could show"
+    },
+    {
+      "start": 2022.519,
+      "duration": 6.481,
+      "text": "us your um marriage certificate um or"
+    },
+    {
+      "start": 2026.76,
+      "duration": 4.68,
+      "text": "your birth certificate that says hey"
+    },
+    {
+      "start": 2029.0,
+      "duration": 4.76,
+      "text": "this is who I am I am married now to"
+    },
+    {
+      "start": 2031.44,
+      "duration": 6.599,
+      "text": "this person so we just need something to"
+    },
+    {
+      "start": 2033.76,
+      "duration": 7.48,
+      "text": "validate your your old name um but you"
+    },
+    {
+      "start": 2038.039,
+      "duration": 6.36,
+      "text": "that's the case it's it's um for ladies"
+    },
+    {
+      "start": 2041.24,
+      "duration": 4.96,
+      "text": "female no their um the property was"
+    },
+    {
+      "start": 2044.399,
+      "duration": 5.2,
+      "text": "reported in their M name we just asked"
+    },
+    {
+      "start": 2046.2,
+      "duration": 5.439,
+      "text": "for a copy of your marriage license"
+    },
+    {
+      "start": 2049.599,
+      "duration": 4.08,
+      "text": "that's simple enough and we would go oh"
+    },
+    {
+      "start": 2051.639,
+      "duration": 4.28,
+      "text": "yeah that was you know that's what you"
+    },
+    {
+      "start": 2053.679,
+      "duration": 4.72,
+      "text": "used to be usually I mean most marriage"
+    },
+    {
+      "start": 2055.919,
+      "duration": 5.92,
+      "text": "certificates have your maid name on"
+    },
+    {
+      "start": 2058.399,
+      "duration": 3.44,
+      "text": "there with your your new married"
+    },
+    {
+      "start": 2063.159,
+      "duration": 4.68,
+      "text": "name uh would you need the birth"
+    },
+    {
+      "start": 2065.96,
+      "duration": 3.6,
+      "text": "certificate and or marriage certificate"
+    },
+    {
+      "start": 2067.839,
+      "duration": 4.24,
+      "text": "that claim it to show she is the same"
+    },
+    {
+      "start": 2069.56,
+      "duration": 7.16,
+      "text": "person okay you just answered"
+    },
+    {
+      "start": 2072.079,
+      "duration": 6.961,
+      "text": "that okay what else uh large retailers"
+    },
+    {
+      "start": 2076.72,
+      "duration": 3.48,
+      "text": "often close locations and open a new"
+    },
+    {
+      "start": 2079.04,
+      "duration": 3.68,
+      "text": "address"
+    },
+    {
+      "start": 2080.2,
+      "duration": 4.52,
+      "text": "locations could be hard to prove in an"
+    },
+    {
+      "start": 2082.72,
+      "duration": 5.6,
+      "text": "address that is many years old"
+    },
+    {
+      "start": 2084.72,
+      "duration": 6.639,
+      "text": "suggestions in this case great question"
+    },
+    {
+      "start": 2088.32,
+      "duration": 6.319,
+      "text": "yeah so we have that a lot and so we do"
+    },
+    {
+      "start": 2091.359,
+      "duration": 7.361,
+      "text": "have um access to software that we can"
+    },
+    {
+      "start": 2094.639,
+      "duration": 8.281,
+      "text": "use to try to validate an older address"
+    },
+    {
+      "start": 2098.72,
+      "duration": 6.84,
+      "text": "um so our processors will go we have um"
+    },
+    {
+      "start": 2102.92,
+      "duration": 5.0,
+      "text": "they will try to assist you in finding"
+    },
+    {
+      "start": 2105.56,
+      "duration": 4.72,
+      "text": "you know something that proves that old"
+    },
+    {
+      "start": 2107.92,
+      "duration": 4.72,
+      "text": "address so but just send in whatever you"
+    },
+    {
+      "start": 2110.28,
+      "duration": 5.6,
+      "text": "have I wouldn't I would just say send it"
+    },
+    {
+      "start": 2112.64,
+      "duration": 6.479,
+      "text": "in you know you can even put like this"
+    },
+    {
+      "start": 2115.88,
+      "duration": 6.12,
+      "text": "address this business existed 25 years"
+    },
+    {
+      "start": 2119.119,
+      "duration": 4.681,
+      "text": "ago we can do some research we do have"
+    },
+    {
+      "start": 2122.0,
+      "duration": 3.44,
+      "text": "researchers that kind of try to make"
+    },
+    {
+      "start": 2123.8,
+      "duration": 4.88,
+      "text": "sure we can help this business used to"
+    },
+    {
+      "start": 2125.44,
+      "duration": 5.12,
+      "text": "be this um we'll reject to you know if"
+    },
+    {
+      "start": 2128.68,
+      "duration": 5.399,
+      "text": "it was taken over so send in whatever"
+    },
+    {
+      "start": 2130.56,
+      "duration": 6.519,
+      "text": "you have um we we will we really do try"
+    },
+    {
+      "start": 2134.079,
+      "duration": 4.52,
+      "text": "to make sure we connect the dots so we"
+    },
+    {
+      "start": 2137.079,
+      "duration": 3.361,
+      "text": "understand some of those addresses so"
+    },
+    {
+      "start": 2138.599,
+      "duration": 3.721,
+      "text": "the older properties are really hard for"
+    },
+    {
+      "start": 2140.44,
+      "duration": 3.96,
+      "text": "our examiners to work with because we"
+    },
+    {
+      "start": 2142.32,
+      "duration": 4.44,
+      "text": "know like some banks have been acquired"
+    },
+    {
+      "start": 2144.4,
+      "duration": 5.52,
+      "text": "by different the name has gone to this"
+    },
+    {
+      "start": 2146.76,
+      "duration": 4.96,
+      "text": "and that and it's this but um we've"
+    },
+    {
+      "start": 2149.92,
+      "duration": 4.56,
+      "text": "worked with a lot of the businesses and"
+    },
+    {
+      "start": 2151.72,
+      "duration": 5.399,
+      "text": "they're they're able to assist us too so"
+    },
+    {
+      "start": 2154.48,
+      "duration": 3.8,
+      "text": "um yeah just don't do it because you"
+    },
+    {
+      "start": 2157.119,
+      "duration": 2.96,
+      "text": "don't think you you could prove that"
+    },
+    {
+      "start": 2158.28,
+      "duration": 4.64,
+      "text": "that address we like I said we have"
+    },
+    {
+      "start": 2160.079,
+      "duration": 6.401,
+      "text": "access to to software here that they can"
+    },
+    {
+      "start": 2162.92,
+      "duration": 6.159,
+      "text": "go and try to research um that former"
+    },
+    {
+      "start": 2166.48,
+      "duration": 2.599,
+      "text": "address for"
+    },
+    {
+      "start": 2170.079,
+      "duration": 5.321,
+      "text": "you and we have one more question so if"
+    },
+    {
+      "start": 2173.839,
+      "duration": 4.561,
+      "text": "you have any questions please get them"
+    },
+    {
+      "start": 2175.4,
+      "duration": 4.88,
+      "text": "in right now um I'm seeing can you"
+    },
+    {
+      "start": 2178.4,
+      "duration": 6.719,
+      "text": "explain more about claiming for a"
+    },
+    {
+      "start": 2180.28,
+      "duration": 4.839,
+      "text": "deceased relative that went through"
+    },
+    {
+      "start": 2186.16,
+      "duration": 6.959,
+      "text": "probate so yeah yeah that's a common uh"
+    },
+    {
+      "start": 2189.76,
+      "duration": 7.0,
+      "text": "thing so you need to have letters of"
+    },
+    {
+      "start": 2193.119,
+      "duration": 5.72,
+      "text": "authority um from the probate court and"
+    },
+    {
+      "start": 2196.76,
+      "duration": 4.88,
+      "text": "the the probate document needs to be"
+    },
+    {
+      "start": 2198.839,
+      "duration": 6.24,
+      "text": "with at least within two years so say if"
+    },
+    {
+      "start": 2201.64,
+      "duration": 5.84,
+      "text": "you filed a claim today your letters of"
+    },
+    {
+      "start": 2205.079,
+      "duration": 6.921,
+      "text": "authority should be dated at least by"
+    },
+    {
+      "start": 2207.48,
+      "duration": 6.24,
+      "text": "2022 okay and we can if you have a Clos"
+    },
+    {
+      "start": 2212.0,
+      "duration": 3.68,
+      "text": "the state you can go back to the probaby"
+    },
+    {
+      "start": 2213.72,
+      "duration": 4.28,
+      "text": "court and say hey I have newly"
+    },
+    {
+      "start": 2215.68,
+      "duration": 4.88,
+      "text": "discovered assets and I'd like to reopen"
+    },
+    {
+      "start": 2218.0,
+      "duration": 4.2,
+      "text": "this sometimes I mean not trying to talk"
+    },
+    {
+      "start": 2220.56,
+      "duration": 3.84,
+      "text": "for the probate court but I don't know"
+    },
+    {
+      "start": 2222.2,
+      "duration": 4.84,
+      "text": "what the whole real process is but I"
+    },
+    {
+      "start": 2224.4,
+      "duration": 4.52,
+      "text": "know we always get that um they can go"
+    },
+    {
+      "start": 2227.04,
+      "duration": 3.64,
+      "text": "to the probate say I have newly"
+    },
+    {
+      "start": 2228.92,
+      "duration": 5.48,
+      "text": "discovered assets I need to reopen this"
+    },
+    {
+      "start": 2230.68,
+      "duration": 8.32,
+      "text": "estate uh to claim that those properties"
+    },
+    {
+      "start": 2234.4,
+      "duration": 7.4,
+      "text": "um and basically that's what we"
+    },
+    {
+      "start": 2239.0,
+      "duration": 6.839,
+      "text": "need"
+    },
+    {
+      "start": 2241.8,
+      "duration": 6.48,
+      "text": "okay um this one um what happens if the"
+    },
+    {
+      "start": 2245.839,
+      "duration": 3.24,
+      "text": "company that reported your property did"
+    },
+    {
+      "start": 2248.28,
+      "duration": 4.16,
+      "text": "a"
+    },
+    {
+      "start": 2249.079,
+      "duration": 6.0,
+      "text": "typo and the address or the name and"
+    },
+    {
+      "start": 2252.44,
+      "duration": 4.72,
+      "text": "sent completely invalid kind of yeah"
+    },
+    {
+      "start": 2255.079,
+      "duration": 4.921,
+      "text": "there's a typo and it we this does"
+    },
+    {
+      "start": 2257.16,
+      "duration": 5.28,
+      "text": "happen so that's a great question yeah"
+    },
+    {
+      "start": 2260.0,
+      "duration": 4.52,
+      "text": "it does happen a lot and so that's why"
+    },
+    {
+      "start": 2262.44,
+      "duration": 5.6,
+      "text": "it's important any documentation that"
+    },
+    {
+      "start": 2264.52,
+      "duration": 6.48,
+      "text": "you have that says hey no I this is me"
+    },
+    {
+      "start": 2268.04,
+      "duration": 5.079,
+      "text": "and I had an invoice or a statement from"
+    },
+    {
+      "start": 2271.0,
+      "duration": 4.0,
+      "text": "this bank with this name and this"
+    },
+    {
+      "start": 2273.119,
+      "duration": 3.2,
+      "text": "address and we can look at it I mean"
+    },
+    {
+      "start": 2275.0,
+      "duration": 3.28,
+      "text": "there's you know there's sometimes we"
+    },
+    {
+      "start": 2276.319,
+      "duration": 4.561,
+      "text": "just have to you know use our judgment"
+    },
+    {
+      "start": 2278.28,
+      "duration": 3.4,
+      "text": "and go yeah that is you uh sometimes"
+    },
+    {
+      "start": 2280.88,
+      "duration": 4.199,
+      "text": "they"
+    },
+    {
+      "start": 2281.68,
+      "duration": 6.32,
+      "text": "pay uh they they they may send us other"
+    },
+    {
+      "start": 2285.079,
+      "duration": 5.841,
+      "text": "other information so if it even if it is"
+    },
+    {
+      "start": 2288.0,
+      "duration": 5.52,
+      "text": "wrong and they've sent um they may have"
+    },
+    {
+      "start": 2290.92,
+      "duration": 4.48,
+      "text": "sent your social security number into us"
+    },
+    {
+      "start": 2293.52,
+      "duration": 3.52,
+      "text": "that's why sometimes that's important"
+    },
+    {
+      "start": 2295.4,
+      "duration": 4.4,
+      "text": "because they may have given us that and"
+    },
+    {
+      "start": 2297.04,
+      "duration": 5.079,
+      "text": "we could match that if there was a typo"
+    },
+    {
+      "start": 2299.8,
+      "duration": 5.44,
+      "text": "especially in the older uh properties we"
+    },
+    {
+      "start": 2302.119,
+      "duration": 5.121,
+      "text": "have we've seen that a lot cuz I'm sure"
+    },
+    {
+      "start": 2305.24,
+      "duration": 2.96,
+      "text": "20 years ago most of the stuff was you"
+    },
+    {
+      "start": 2307.24,
+      "duration": 4.119,
+      "text": "know"
+    },
+    {
+      "start": 2308.2,
+      "duration": 6.56,
+      "text": "entered in by hand and it's not wasn't"
+    },
+    {
+      "start": 2311.359,
+      "duration": 6.201,
+      "text": "electronically but um yes we've had that"
+    },
+    {
+      "start": 2314.76,
+      "duration": 5.839,
+      "text": "happen it with transpose we've had the"
+    },
+    {
+      "start": 2317.56,
+      "duration": 5.32,
+      "text": "name transpose and we can we have"
+    },
+    {
+      "start": 2320.599,
+      "duration": 5.401,
+      "text": "connected the dots some uh a lot of"
+    },
+    {
+      "start": 2322.88,
+      "duration": 4.76,
+      "text": "times and have been able to pay claims"
+    },
+    {
+      "start": 2326.0,
+      "duration": 5.0,
+      "text": "because there was a typer we'll reach"
+    },
+    {
+      "start": 2327.64,
+      "duration": 5.52,
+      "text": "out to the business um as well um and"
+    },
+    {
+      "start": 2331.0,
+      "duration": 4.68,
+      "text": "sometimes they're able to you know give"
+    },
+    {
+      "start": 2333.16,
+      "duration": 5.64,
+      "text": "us additional"
+    },
+    {
+      "start": 2335.68,
+      "duration": 4.6,
+      "text": "information you get a denial letter is"
+    },
+    {
+      "start": 2338.8,
+      "duration": 6.68,
+      "text": "there a way to"
+    },
+    {
+      "start": 2340.28,
+      "duration": 7.48,
+      "text": "appeal yes so we um we do have um so if"
+    },
+    {
+      "start": 2345.48,
+      "duration": 6.599,
+      "text": "you do get a denial letter we try not to"
+    },
+    {
+      "start": 2347.76,
+      "duration": 6.8,
+      "text": "deny um many claims mostly we'll our"
+    },
+    {
+      "start": 2352.079,
+      "duration": 4.641,
+      "text": "first steps are saying hey can you find"
+    },
+    {
+      "start": 2354.56,
+      "duration": 4.759,
+      "text": "any additional information we'll we'll"
+    },
+    {
+      "start": 2356.72,
+      "duration": 4.84,
+      "text": "do this but if we do say hey this"
+    },
+    {
+      "start": 2359.319,
+      "duration": 4.04,
+      "text": "property is not you're you're not the um"
+    },
+    {
+      "start": 2361.56,
+      "duration": 3.64,
+      "text": "reported owner of this property we will"
+    },
+    {
+      "start": 2363.359,
+      "duration": 4.76,
+      "text": "so you will deny a letter we have a what"
+    },
+    {
+      "start": 2365.2,
+      "duration": 6.08,
+      "text": "we call a 119 process first you can you"
+    },
+    {
+      "start": 2368.119,
+      "duration": 6.321,
+      "text": "know either we can have a a informal"
+    },
+    {
+      "start": 2371.28,
+      "duration": 5.0,
+      "text": "hearing with our division Council and"
+    },
+    {
+      "start": 2374.44,
+      "duration": 4.04,
+      "text": "our superintendent and they'll look at"
+    },
+    {
+      "start": 2376.28,
+      "duration": 4.88,
+      "text": "all the facts and make a determination"
+    },
+    {
+      "start": 2378.48,
+      "duration": 4.48,
+      "text": "or then we'll go outside and we'll have"
+    },
+    {
+      "start": 2381.16,
+      "duration": 3.28,
+      "text": "uh someone from the Attorney General's"
+    },
+    {
+      "start": 2382.96,
+      "duration": 5.28,
+      "text": "office sit in and review your"
+    },
+    {
+      "start": 2384.44,
+      "duration": 3.8,
+      "text": "documentations and then make a"
+    },
+    {
+      "start": 2390.64,
+      "duration": 6.08,
+      "text": "decision are there any other details"
+    },
+    {
+      "start": 2393.2,
+      "duration": 6.119,
+      "text": "that you think would be useful to um our"
+    },
+    {
+      "start": 2396.72,
+      "duration": 2.599,
+      "text": "community"
+    },
+    {
+      "start": 2400.44,
+      "duration": 3.919,
+      "text": "or takeaway highlights top three things"
+    },
+    {
+      "start": 2402.56,
+      "duration": 4.68,
+      "text": "to remember that you'd like to encourage"
+    },
+    {
+      "start": 2404.359,
+      "duration": 6.921,
+      "text": "folks to jot"
+    },
+    {
+      "start": 2407.24,
+      "duration": 6.32,
+      "text": "down yeah the the top two top three"
+    },
+    {
+      "start": 2411.28,
+      "duration": 6.039,
+      "text": "things is send in a copy of your"
+    },
+    {
+      "start": 2413.56,
+      "duration": 6.48,
+      "text": "driver's license social security card W9"
+    },
+    {
+      "start": 2417.319,
+      "duration": 5.641,
+      "text": "sign your claim form notorized your"
+    },
+    {
+      "start": 2420.04,
+      "duration": 5.319,
+      "text": "claim form and any documentation that"
+    },
+    {
+      "start": 2422.96,
+      "duration": 5.6,
+      "text": "can prove not the current address that"
+    },
+    {
+      "start": 2425.359,
+      "duration": 5.72,
+      "text": "you currently live the the address that"
+    },
+    {
+      "start": 2428.56,
+      "duration": 5.08,
+      "text": "is printed on your client form next to"
+    },
+    {
+      "start": 2431.079,
+      "duration": 4.401,
+      "text": "the property those are the main two some"
+    },
+    {
+      "start": 2433.64,
+      "duration": 3.719,
+      "text": "sometimes people get confused and they"
+    },
+    {
+      "start": 2435.48,
+      "duration": 3.879,
+      "text": "send us proof of their current address"
+    },
+    {
+      "start": 2437.359,
+      "duration": 5.321,
+      "text": "we need proof of that address that's"
+    },
+    {
+      "start": 2439.359,
+      "duration": 6.24,
+      "text": "reported with the um claim so those are"
+    },
+    {
+      "start": 2442.68,
+      "duration": 5.96,
+      "text": "the the main things because the"
+    },
+    {
+      "start": 2445.599,
+      "duration": 4.961,
+      "text": "processor will look at it we sometimes"
+    },
+    {
+      "start": 2448.64,
+      "duration": 4.32,
+      "text": "the the information that's on the claim"
+    },
+    {
+      "start": 2450.56,
+      "duration": 4.0,
+      "text": "form we may have more information in our"
+    },
+    {
+      "start": 2452.96,
+      "duration": 4.56,
+      "text": "system or we can reach out to the"
+    },
+    {
+      "start": 2454.56,
+      "duration": 6.08,
+      "text": "business and get additional information"
+    },
+    {
+      "start": 2457.52,
+      "duration": 5.72,
+      "text": "or do our own search so um if you give"
+    },
+    {
+      "start": 2460.64,
+      "duration": 6.28,
+      "text": "us those four major things that helps us"
+    },
+    {
+      "start": 2463.24,
+      "duration": 3.68,
+      "text": "a lot to even start the the"
+    },
+    {
+      "start": 2468.079,
+      "duration": 6.52,
+      "text": "process and I would also just add if you"
+    },
+    {
+      "start": 2471.079,
+      "duration": 6.641,
+      "text": "have questions just reach out you know"
+    },
+    {
+      "start": 2474.599,
+      "duration": 6.801,
+      "text": "reach out and and and reach out and call"
+    },
+    {
+      "start": 2477.72,
+      "duration": 6.08,
+      "text": "us um we want to help you and so there"
+    },
+    {
+      "start": 2481.4,
+      "duration": 4.76,
+      "text": "as you can tell there's so many specific"
+    },
+    {
+      "start": 2483.8,
+      "duration": 5.319,
+      "text": "and different situations that everybody"
+    },
+    {
+      "start": 2486.16,
+      "duration": 5.52,
+      "text": "has when claiming their funds so just"
+    },
+    {
+      "start": 2489.119,
+      "duration": 6.24,
+      "text": "don't hesitate give us a phone call we"
+    },
+    {
+      "start": 2491.68,
+      "duration": 6.12,
+      "text": "can walk you through what we need um you"
+    },
+    {
+      "start": 2495.359,
+      "duration": 6.96,
+      "text": "can always send an email if you prefer"
+    },
+    {
+      "start": 2497.8,
+      "duration": 6.279,
+      "text": "email uh so just proactively ask those"
+    },
+    {
+      "start": 2502.319,
+      "duration": 5.0,
+      "text": "questions so that you're sending us the"
+    },
+    {
+      "start": 2504.079,
+      "duration": 5.361,
+      "text": "right information the first time that's"
+    },
+    {
+      "start": 2507.319,
+      "duration": 5.401,
+      "text": "if anything I can stress that would be"
+    },
+    {
+      "start": 2509.44,
+      "duration": 7.08,
+      "text": "the takeaway from today's webinar if you"
+    },
+    {
+      "start": 2512.72,
+      "duration": 7.359,
+      "text": "do that you will be golden right and I"
+    },
+    {
+      "start": 2516.52,
+      "duration": 7.04,
+      "text": "was the audience yeah I"
+    },
+    {
+      "start": 2520.079,
+      "duration": 5.801,
+      "text": "was send in yeah ask questions but the"
+    },
+    {
+      "start": 2523.56,
+      "duration": 4.92,
+      "text": "first step is get your information once"
+    },
+    {
+      "start": 2525.88,
+      "duration": 5.479,
+      "text": "a processor has reviewed your claim that"
+    },
+    {
+      "start": 2528.48,
+      "duration": 5.92,
+      "text": "is the best point if once it's in the re"
+    },
+    {
+      "start": 2531.359,
+      "duration": 5.641,
+      "text": "uh review process um they can give you"
+    },
+    {
+      "start": 2534.4,
+      "duration": 5.159,
+      "text": "better details when it's just waiting"
+    },
+    {
+      "start": 2537.0,
+      "duration": 5.48,
+      "text": "and it's been here and received our"
+    },
+    {
+      "start": 2539.559,
+      "duration": 4.401,
+      "text": "support staff they really can't answer a"
+    },
+    {
+      "start": 2542.48,
+      "duration": 3.96,
+      "text": "lot of questions because they have no"
+    },
+    {
+      "start": 2543.96,
+      "duration": 5.159,
+      "text": "idea what documentation you send in what"
+    },
+    {
+      "start": 2546.44,
+      "duration": 4.56,
+      "text": "all the other details so if you call in"
+    },
+    {
+      "start": 2549.119,
+      "duration": 4.161,
+      "text": "to our front desk and they haven't your"
+    },
+    {
+      "start": 2551.0,
+      "duration": 4.16,
+      "text": "claim has not been assigned to a"
+    },
+    {
+      "start": 2553.28,
+      "duration": 4.4,
+      "text": "processor it's going to be hard for them"
+    },
+    {
+      "start": 2555.16,
+      "duration": 6.159,
+      "text": "to give you a real answer other than"
+    },
+    {
+      "start": 2557.68,
+      "duration": 5.48,
+      "text": "probably maybe you might need um so once"
+    },
+    {
+      "start": 2561.319,
+      "duration": 4.52,
+      "text": "your claim has been assigned to a"
+    },
+    {
+      "start": 2563.16,
+      "duration": 5.36,
+      "text": "processor that's your best chance to get"
+    },
+    {
+      "start": 2565.839,
+      "duration": 4.921,
+      "text": "some real Direction on your claim"
+    },
+    {
+      "start": 2568.52,
+      "duration": 5.64,
+      "text": "because like I said we got 13,000 claims"
+    },
+    {
+      "start": 2570.76,
+      "duration": 5.4,
+      "text": "here so uh when you if you initially"
+    },
+    {
+      "start": 2574.16,
+      "duration": 4.48,
+      "text": "call in and you're asking them what I"
+    },
+    {
+      "start": 2576.16,
+      "duration": 5.159,
+      "text": "they'll give you a curse overview of"
+    },
+    {
+      "start": 2578.64,
+      "duration": 5.36,
+      "text": "what our instructions say but if an"
+    },
+    {
+      "start": 2581.319,
+      "duration": 6.04,
+      "text": "examiner has reviewed it or is in the"
+    },
+    {
+      "start": 2584.0,
+      "duration": 5.64,
+      "text": "process of reviewing it um they can give"
+    },
+    {
+      "start": 2587.359,
+      "duration": 4.681,
+      "text": "you more detailed explanation of how to"
+    },
+    {
+      "start": 2589.64,
+      "duration": 4.6,
+      "text": "prove the funds are um belong to you and"
+    },
+    {
+      "start": 2592.04,
+      "duration": 4.72,
+      "text": "what documentation they"
+    },
+    {
+      "start": 2594.24,
+      "duration": 4.8,
+      "text": "need so everybody in the audience now is"
+    },
+    {
+      "start": 2596.76,
+      "duration": 4.92,
+      "text": "a great time to take a screenshot do a"
+    },
+    {
+      "start": 2599.04,
+      "duration": 5.079,
+      "text": "quick snip take this uh image and and"
+    },
+    {
+      "start": 2601.68,
+      "duration": 5.28,
+      "text": "tuck it away for your future reference"
+    },
+    {
+      "start": 2604.119,
+      "duration": 6.761,
+      "text": "um we absolutely thank you both Merlene"
+    },
+    {
+      "start": 2606.96,
+      "duration": 7.28,
+      "text": "and and Susie for partnering with us in"
+    },
+    {
+      "start": 2610.88,
+      "duration": 7.32,
+      "text": "at the BBB to bring this really valuable"
+    },
+    {
+      "start": 2614.24,
+      "duration": 6.96,
+      "text": "um information to our communities um in"
+    },
+    {
+      "start": 2618.2,
+      "duration": 5.76,
+      "text": "a way that's clear simple to understand"
+    },
+    {
+      "start": 2621.2,
+      "duration": 4.68,
+      "text": "um and and truly helpful and legitimate"
+    },
+    {
+      "start": 2623.96,
+      "duration": 5.2,
+      "text": "we're so thrilled to work with you for"
+    },
+    {
+      "start": 2625.88,
+      "duration": 4.719,
+      "text": "any businesses in the audience or folks"
+    },
+    {
+      "start": 2629.16,
+      "duration": 5.159,
+      "text": "that are working at a business or in a"
+    },
+    {
+      "start": 2630.599,
+      "duration": 5.681,
+      "text": "leadership role BBB and uh the"
+    },
+    {
+      "start": 2634.319,
+      "duration": 3.321,
+      "text": "Department of Commerce will once again"
+    },
+    {
+      "start": 2636.28,
+      "duration": 4.76,
+      "text": "be partnering"
+    },
+    {
+      "start": 2637.64,
+      "duration": 5.36,
+      "text": "to bring you a filing your unclaimed"
+    },
+    {
+      "start": 2641.04,
+      "duration": 4.4,
+      "text": "funds the flip side of this equation how"
+    },
+    {
+      "start": 2643.0,
+      "duration": 4.96,
+      "text": "to do it most efficient way easy ways to"
+    },
+    {
+      "start": 2645.44,
+      "duration": 5.04,
+      "text": "do that um if you have unclaimed funds"
+    },
+    {
+      "start": 2647.96,
+      "duration": 4.08,
+      "text": "you are responsible for filing them and"
+    },
+    {
+      "start": 2650.48,
+      "duration": 3.52,
+      "text": "we will bring this information to you to"
+    },
+    {
+      "start": 2652.04,
+      "duration": 6.039,
+      "text": "help you navigate the process later this"
+    },
+    {
+      "start": 2654.0,
+      "duration": 7.16,
+      "text": "fall uh before that if you are looking"
+    },
+    {
+      "start": 2658.079,
+      "duration": 6.321,
+      "text": "to manage other aspects of businesses uh"
+    },
+    {
+      "start": 2661.16,
+      "duration": 7.88,
+      "text": "I would encourage you to go to bbb.org"
+    },
+    {
+      "start": 2664.4,
+      "duration": 7.919,
+      "text": "um at least our be Bureau is hosting uh"
+    },
+    {
+      "start": 2669.04,
+      "duration": 7.319,
+      "text": "several upcoming webinars that are meant"
+    },
+    {
+      "start": 2672.319,
+      "duration": 7.201,
+      "text": "to assist businesses out there for um"
+    },
+    {
+      "start": 2676.359,
+      "duration": 6.48,
+      "text": "filing mandated information for llc's"
+    },
+    {
+      "start": 2679.52,
+      "duration": 5.92,
+      "text": "coming up that will be tomorrow um so"
+    },
+    {
+      "start": 2682.839,
+      "duration": 4.841,
+      "text": "you go to bbb.org put in Columbus or"
+    },
+    {
+      "start": 2685.44,
+      "duration": 3.679,
+      "text": "Central Ohio uh and then go to events"
+    },
+    {
+      "start": 2687.68,
+      "duration": 4.2,
+      "text": "and you'll see some of our webinar"
+    },
+    {
+      "start": 2689.119,
+      "duration": 5.641,
+      "text": "information coming up that is uh quite"
+    },
+    {
+      "start": 2691.88,
+      "duration": 5.479,
+      "text": "good so we're here to help you the"
+    },
+    {
+      "start": 2694.76,
+      "duration": 5.64,
+      "text": "department is here to help you and we"
+    },
+    {
+      "start": 2697.359,
+      "duration": 4.841,
+      "text": "very much are so happy and consider"
+    },
+    {
+      "start": 2700.4,
+      "duration": 4.32,
+      "text": "ourselves fortunate to be such part of"
+    },
+    {
+      "start": 2702.2,
+      "duration": 2.52,
+      "text": "such a great"
+    },
+    {
+      "start": 2706.04,
+      "duration": 5.76,
+      "text": "Community with that we will say goodbye"
+    },
+    {
+      "start": 2709.2,
+      "duration": 7.0,
+      "text": "for now thank you everyone for"
+    },
+    {
+      "start": 2711.8,
+      "duration": 4.4,
+      "text": "joining thank you thank"
+    },
+    {
+      "start": 2725.96,
+      "duration": 3.0,
+      "text": "you"
+    }
+  ],
+  "full_text": "okay we are live thank you everyone thank you for waiting we're going to get started in just a second okay Jessica take it away all right well welcome everybody we're very excited to have you here today to explore how to claim your unclaimed funds um it's a very important process for you to know most of us many of us have funds hanging around out there somewhere and for sure the unclaimed funds Department of the Department of Commerce is a trusted and reliable way for you to explore it so the Better Business Bureau is very excited to be able to partner with the Department of Commerce and the department of unclaimed funds in bringing you legitimate verified information to to help you track down money that might be yours first though we'd like to give you a little bit of a look around uh the new BBB so next slide there we go most importantly we want you to know that this is your BBB BBB is your first line of resource to check out businesses to file complaints to get solutions to start your businesses to have business resourc our es all around this is your BBB next slide and we are up and growing and better than ever we are the better check here first bureau if you have any hesitations if you're thinking of signing any contracts if you're spending any money of any significance out of the norm you want to check at the Better Business Bureau you want to look for an accredited business and you'll see the BBB torch that's the sign of a Better Business next and you can look for it so be sure to find that label you might find it on the side of a vehicle of a service person it might be on a website it might be on Advertising it might be in a booth at a trade fair trade show um but you can go beyond that if you're unsure and you're not seeing the signs next slide we want you to start your decisionmaking process by starting with trust so we want you to go to bbb.org You'll select what area of Ohio um I Am With Better Business Bureau of Central Ohio um there are multiple other bureaus that may be serving your area we represent a 21 County footprint go to bbb.org select your area there you can look up any business not necessarily only accredited businesses but all businesses you can check out the reviews check out the ratings and check out how the business responds to the reviews and ratings it's the sign that will instantly tell you if a business is honest additionally we're getting a lot of questions about scams and often even with unclaimed funds this might pop up as a scam it's a very real thing so to check if that is actually what's going on we encourage you to to look at our bbb.org for/ scamtracker it is a nationwide initiative with Capital One and Amazon from the Better Business Bureau Institute for Marketplace trust it allows you to go in check out what scams are hot and trending at the moment check out if you've been being targeted with a past scam um and you can also there file your own recording of scams you've encountered whether You' Fallen victim or not we want you to report it so we know what's coming up we can report it up to the attorney general General's office we can present fact patterns and every year we make a report to say what is on the rise what people should watch out for and that scam tracker risk report will actually be coming out on Monday so we encourage you to visit back at bbb.org then next slide this scam tracker has been voted the best scam fighting tool in 2023 by the Global anti-cam Alliance so it is very relevant it is timely and it is something that can help you and help protect you now without further Ado we want to turn this over to the trusted Department of unclaimed funds um and we want to introduce Marlene Jukes she's the deputy superintendent for the division of unclaimed funds where she's responsible for developing policies and procedures for the division and Advising the superintendent to ensure that the mission goals and objectives are met also hosting with us today is Susie Wagner who's the Outreach administrator for the division of unclaimed funds it's her job to ensure you as an ohioan understand and know about unclaimed funds and can claim your money we'll have questions and time for questions throughout this presentation uh type them in the chat box or in the message box you should see that in the lower bar and without further Ado thank you so much I can't wait to learn more about unclaimed funds thank you Jessica and so the whole reason we are here today is because $3,021 that was the average claim amount for last year so we're not talking about pennies it and this could be you so we are going to um share with you exactly what you need to do to see if you have money today so in unclaimed funds we have uh last year in 2023 we processed 40 we paid out 43,000 claims and we returned over $139 $130 Million last year and so for today we're going to go over what exactly is unclaimed funds the three easy steps to claim them the timeline and how you can look up the status of your claim so most people wonder what are unclaimed funds unclaimed funds are lost or forgotten monies and inactive accounts uh businesses are required to report those to the uh division of unclaimed funds every year and we keep them for our your safekeeping so basically it's inactive checking accounts savings accounts any refund or credit balances you may have there could be uncashed cashiers checks life insurance uh benefits uh stocks and bonds or uh safe deposit contents um and we get those funds every year and so there are three easy steps to claim your funds we're going to go over each step the first is just to search for your unclaimed funds search your name to see if you have any the second is to review that checklist of documentation to make sure that you are providing us with the right information to verify you are the rightful owner and then step three is just to send us your claim it's that easy so when you go to our uh our site um at unclaimed funds or missingmoney.com or you can go through uh unclaimed funds uh.com and find uh and search for uh your missing money but the first step is missing money that site is legit uh we we back that site several States you can actually search for money uh through I think at least 30 to 40 different states um f and claim funds on here so the first thing you want to do is go to that search box put in your name um your first or last name it's easier if you narrow down to your city or your state um and you'll see uh it'll give you a summary it'll allow you to see if you're there it'll tell you if you have unflame funds um so it's a very easy site for you to use uh it's really you can go on there all time I would suggest you check it maybe every quarter cuz we're constantly getting unclaimed funds in and I would add um that social security card is on here as a reminder we do not need your social security in order to search for your unclaimed funds so you um once you are in this uh the step for step one if you find a claim there that matches your name and an address where you have lived you will then enter in all of your contact information social security number is a field on that form you do not have to input it but we will require it once you um do send in that documentation and I'll explain in just a second so we get a lot of people asking about social security cards that's why I was uh wanted to make sure that we talked about that for a second you don't need it initially in order to create that claim form okay so step number two is that Jack checklist of documentation and on this is uh an excerpt from our website there's different tabs as you can see if you scroll through those tabs on our website you can see um the information exactly what we will need from you in order to prove that you are the rightful owner so owner is if you're the you're the owner of the claim joint owner it's you and someone else owns that claim if you're a guardian you're claiming on behalf of someone an heir if you're claiming on behalf of a deceased person trust business government and international claims we have claim instructions right there that you can click on that go into detail more if you have any questions so if you find your name uh on a missing money site for all claim types the beginning so sometimes a lot of people are hesitant because they are well I don't know if I have this but the the main documentation for all claims that we ask you to send in um is your uh unexpired driver's license a state fold ID a passport um or us uh Department of Defense ID anything um government issued a ID to prove that we you are who you say you are we need a proof of the address for the property that is uh reported on the claim form um if you don't have that um just send in all that you have but if you have anything that had like a utility bill bank statement any old property tax forms um that proof will substantiate the address that the uh business reported to us and then of course we also we need a proof of your Social Security um card um it could be on a W2 or some 1099 um and we also ask that you fill out a W9 tax form um as well so those are the three the four most important things um so if you're not sure whether you have enough information send those four items first um and then one of our uh claims processors will be contacting you if they need additional information and so we get this question a lot as well if you are claiming on behalf of a deceased person um there is a few more pieces of documentation that we do require um we need to make sure that this money is gone to the rightful owner and so you may need a death certificate uh a marriage certificate if if the deceased was your spouse a birth certificate if it was a parent or sibling um we have the table of Airship form which is provided on our website you may need a probate court order and it must be filed within two years of filing the claim if the probate of the estate has been closed you will need to reopen that probate order um that is part of the process for filing uh on behalf of a deceased person we also may need the estate's Ein tax identification number if you have any questions about any of this um please don't hesitate to give us a call we are here and we want to help you um proactively make sure that you have all the right information this the first time you send it to us so it will help you get paid out quicker so the third step in uh getting your claim form to us because when you go to the missing money site sometimes people are confused it'll say yes your claim has been um submitted but that means it's just going to email you the claim form and so what we need for you to do is sign the claim form and then upload any additional in uh a documentation your driver's license your W9 Form uh in proof of the address that the business um printed on the that's printed on the claim form so we have two ways that you can do this we've um we do have um a document upload on our website that you can scan the uh documents in upload it to us put in your uh your claim number which should be emailed to you your first and your last name and um we'll start you know processing your claim form um along with the others so you don't have to go through the mail but you can always mail it to us um at Ohio Division of unclaimed funds 77 South High Street um but please include your claim um number on your documents and if you're sending documents through the mail to us any critical documents cashier Checker please keep a copy of the documents that you send um into into our office so those are the three easy steps now You' filed your claim and you're wondering how long this is going to take to get your check in the mail so we do want to say and let you know that it can take up to 120 days for us to initially review your claim um we it we are backed up right now we have um lots of claims that we are looking at um and our staff is working extra hard to make sure that they review and they're reviewing by the way every piece of paper and documentation that you send in or upload to our website so it takes some time for us to review all that information and make sure that we have everything that we need and we can verify you are the rightful owner once we have reviewed and see that we have everything that we need we will approve your claim and that check will be mailed to you so you will get that check in the mail that is the only way that you will be paid for your claim like Susie said yeah it takes a long time right now we have about 13,000 claims in our office waiting to be reviewed um so that processes and our our claims team we have been working overtime for the last four or five months um trying to catch up but just the mere volume and just because we're doing a lot of Outreach and advertising we're getting a lot of um claims and and like Susie said you have to we have to look at every um document that you send in but once you send your claim form in if you want to know to check on the status of your claim on our website um you can also go to our website unclaim funds.gov and check on your claim so you can go to our it put unclaim funds. oh.gov ohio.gov I'm sorry I always missed that part unclaim funds. oh.gov um put in your claim number on on the screen and it will give you um uh some the status of your claim um and so sometimes a lot of people it'll keep if it's still waiting to be reviewed it'll just say claim is being processed like I said our our claim processing times are very lengthy right now um we're hiring more people and we just have a lot of claims in here so the process has taken a long time but we we do plan we we do look at every claim and we will get it to you as soon as possible that's right and and remember we paid out $139 Million last year to um so many thousands of claimants throughout Ohio so and that average claim amount was $3,000 so you could be one of those people so I don't want to discourage you please you know continue to file your claim and reach out with any questions that you might have so we do have an exciting announcement that next year we are getting a system upgrade and that should help um uh really move things along and it's just going to be an exciting new announcement with lots of more details I will share next year so know that that is coming and we are working on making things better and the processes work better for everyone who files those claims and so with that we are complete with the webinar portion in terms of you know explaining the three easy steps and going over if you have any questions let's look in the live Q&A and see if there's any questions we can answer while we're here um will there be a copy of the presentation available for download yes yes we have this posted on our website at unclaim funds. oh.gov there's the website address right there and let's see I also wanted to show um we have a phone number and an email address that you can contact us it's claims. ohio.gov and there's our phone number 6144 66 4433 we are here you can call and speak to a live person and and they can review your claim information and see and answer any questions that you may have okay we have some other questions um what is the yes what is the website address what question for you who should be checking for unclaimed funds and who can you check on oh anyone yeah you can anyone can check for unclaimed funds and there could be um you can check for your mom your sisters your cousins you can actually you know just go on the site and say oh Mom and get the claim form printed out and email to you and you can give it to your family person member um or whomever so okay and you mentioned that we do need documentation in order to verify that we're legit um and honest in in trying to make that claim um some of these forms are sensitive documents like birth certificates death certificates Etc do we send a copy of that or what if somebody wants to hang on to the original birth certificate of their mother as a Keepsake how do we ensure that that cherish document can be saved right so we only request a copy of that document and on the document it normally like once you copy it we can see whether it's been copied or original so definitely we only want copies of the birth certificate um and depth certificates um because our retention policy we um after 60 days at the after the claim has been paid we um Shred the um documentation anyway so please send us copies one thing to also note too is we don't pay by name alone so sometimes somebody will see their name no that was me and there are a lot of people with the same names unfortunately so that's why we ask for a proof proof whatever you can send us that can validate you are who you say you are or you live that that address um send whatever it is that that can be help pack it and send it in yes okay okay so how long do do people have to claim funds how far back can we expect to look wow we have we keep claim unclaim funds forever so they never go away so even if you start processing your claim and for whatever reason you forget or you just didn't get around the milon it in um we won't do anything it'll just sit there until you come back and claim it and it's been paid so um we we could find that last check from an an unpaid College job or high school job that we never picked up for Yes okay that's right and and the division was founded in 1968 so believe it or not we have claims dating back that far ago so you could be an a could be a relative that's right okay okay that's really good to know so um how would we consider like from the business perspective what do they have to file on or so so that the consumer can say okay this guy might have actually filed for me um because they're obligated to is that there a dollar amount if it's 20 bucks they have to file it a 100 bucks they have to file it um how do we know it could be there within that limitation set how do we know that the unclaimed property would be there well um I'm thinking you know you go back to your high school or college job um for example I know that I have like $100 floating around out there somewhere because I wasn't able to make it back to that city to pick up a hard check what if it was $20 or $100 like what is the onus on the business you may have worked for or the the person filing those claims to get those claims in or when do it just let it go and don't worry about it yeah we have paid claims as low as two cents so we collect every any unclaimed funds all business are report are to report any unclaimed funds that they have so yeah I've played out claims as small as two cents believe it or not yeah okay well that's that's good to know so nothing's too small to to attempt to claim yeah or look for all right Susie are there more questions from the crowd just looking through um first question my passport is in English and Spanish but my driver's license is in Spanish do I have to translate that into English marene interesting question yes yes you do yeah we we will ask you to um have that translated an affidavit with that so yes okay and yes someone did ask about filing for their business so that is a great Point um if you do own a business you we do encourage you to go ahead and look up to see if your business has any claims um so it's not just individuals businesses do have money um we've had um different companies all over Ohio find money that they didn't know about so you could be one of them as well you look that up under the company name or the owner's name or is it a person or the company that you're you're searching so in missingmoney.com you in the field of last name it says last name or business so you just type in the business name if you're looking up your business to see if there's a claim for you um if you type in your last name that's going to look up any individual claims perfect and also another good point with that is if you are married um if you've been married a couple times we've had people ask this question you know we encourage you to look up your name your um your um maen name your if you've been married multiple times look up all of the the names that you have had because if you've had any accounts in those names you could have unclaimed funds waiting for you and so too would be any relatives that might have madeen names or changed names along the way absolutely yeah I mean I encourage that I I see it over and over where you know people will type in their name their their maen name and then look up their family members right and their maiden names and it's so fun it's a fun game to play right and see who has money and then you can hunt isn't it yes an actual chance at payout absolutely thank you so much are there any further questions from our audience Susie what additional documents are required if claiming on behalf of a business or employer good question right so that all depends um what the business actually reported to us so if they reported your fi in and the address where you did business at in the name of the business we would ask for proof of that F proof of that address the name of your business so you can send us in invoices um with that it probably would have your maybe your F tax ID number on there um any agreements that you had you know to establish the business or dissolve the business um as much information that you can send us that validates that this is your business uh we need proof that you would have the right to claim if you're not the owner or you're a representative we would need something from the president or somebody in the company says yes I'm able to claim these funds on behalf of this business so if you if you're working for someone you go okay yeah I need a letter of authority that's what the re claims processor would ask like what gives you the authority to claim for this company F in the most common most of the time um a dissolution agreement if the business has been dissolved um sometimes people don't do that with some kind of agreement on how the business was dissolved or what are your rights to to that uh property once it was dissolved how would so those type of technical documents helps our processors you know go through your claim faster prove that you are the person that could claim on behalf of the business or you own the business um if you were uh a sold proprietor you know sometimes your your um your tax returns could show that you know how you the business was set handled through you so any any documentation any invoices you have any old um agreements documents that that will help us and we don't we won't accept anything that can be printed from the internet you know we get we get things a lot that um people anyone can produce from the internet so we're looking for something that is a formalized statement with like that account number matching on it for your EIN in um with the business name we're for for something that's really going to provide that proof and I'm just showing on uh the screen our website and this is the check list of documentation there is a business tab so you can always review that that has some information there and then our claim instructions for a business so it's all listed here um for those International someone was asking about International claims um specifically they asked uh let's see I already have contacted your office but they just sent me back to instructions online and I already have an appointment at the US Embassy but waiting time is 6 months will they be able to notarize and certify my driver's license um I can't speak to if the US Embassy can notorized um I know you can get notorized skills from your local bank um to be able to notorized any claim forms for us right now we require a notorized claim form for anything over $1,000 yeah and and if it's an international claim I mean we do ask that it's authenticated you know with the uh US Embassy or wherever you are because oh no the lights just went out um so we do ask as for that uh yeah and one of the common things we see with business too A lot of times they send us documents from the Secretary of State and that's still a public basic website that you know and there's a lot of frosters out there so we're not saying we don't believe who you are we just need to validate because we don't want to mistakenly give someone someone else's money and so that we are very protective and we want to make sure we're paying the rightful person so that's why a lot of those documents from the internet that anybody can just go on and print this off that um it it's you know we would feel like if your business you would have like invoices and more um documents that relate to your business to prove how you're connected to these properties Mak sense yeah s with a little bit of leg work you can accomplish quite a bit yes that's right um can a parent do the filing process for an underage working child yes a minor okay absolutely all right parents get out there and get their unclaimed checks yes um someone said that they file for business what happens if we accidentally claim a property that isn't ours if we are unsure and claim something what is your recommendation good question um I I would say put the property on your claim form and once the processor starts reviewing your claim um and and they'll just say hey do you have any document to prove because we don't know each property how much documentation the business actually gave us sometimes they give us a lot sometimes they give us your FEI in number and your address or some other information that's related to or we can reach out to the business and say Hey What Can you give us um but I would put it on their processor we'll let you know whether um it's claimable and then they'll say you know what this property doesn't belong to you but we can play pay the rest of the properties on your claim uh someone said you uh hold the money forever but I thought that as some point in time unclaimed funds eventually sheets to the State of Ohio's general fund that's not correct no that is not correct that's right that is not correct that might be true for some of the city may have some unclaimed funds some of the other smaller um but for the state of Ohio our unclaimed property stays here forever yeah yes and that may be true for other states as well each state has their own laws and so we are governed by Ohio Revised Code 169 and so that requires us to hold at Safeguard the the money Forever Until That rightful owner is is claims it uh we have some more questions great um one claimant has a passport with married name but driver's license and a voter ID has the single ma a name what should we do about that since you need two IDs for each claim it h so that depends on how the property was reported to us so if you're saying the property that was reported to us was in your um mating mating name and you have your driver's license if you could show us your um marriage certificate um or your birth certificate that says hey this is who I am I am married now to this person so we just need something to validate your your old name um but you that's the case it's it's um for ladies female no their um the property was reported in their M name we just asked for a copy of your marriage license that's simple enough and we would go oh yeah that was you know that's what you used to be usually I mean most marriage certificates have your maid name on there with your your new married name uh would you need the birth certificate and or marriage certificate that claim it to show she is the same person okay you just answered that okay what else uh large retailers often close locations and open a new address locations could be hard to prove in an address that is many years old suggestions in this case great question yeah so we have that a lot and so we do have um access to software that we can use to try to validate an older address um so our processors will go we have um they will try to assist you in finding you know something that proves that old address so but just send in whatever you have I wouldn't I would just say send it in you know you can even put like this address this business existed 25 years ago we can do some research we do have researchers that kind of try to make sure we can help this business used to be this um we'll reject to you know if it was taken over so send in whatever you have um we we will we really do try to make sure we connect the dots so we understand some of those addresses so the older properties are really hard for our examiners to work with because we know like some banks have been acquired by different the name has gone to this and that and it's this but um we've worked with a lot of the businesses and they're they're able to assist us too so um yeah just don't do it because you don't think you you could prove that that address we like I said we have access to to software here that they can go and try to research um that former address for you and we have one more question so if you have any questions please get them in right now um I'm seeing can you explain more about claiming for a deceased relative that went through probate so yeah yeah that's a common uh thing so you need to have letters of authority um from the probate court and the the probate document needs to be with at least within two years so say if you filed a claim today your letters of authority should be dated at least by 2022 okay and we can if you have a Clos the state you can go back to the probaby court and say hey I have newly discovered assets and I'd like to reopen this sometimes I mean not trying to talk for the probate court but I don't know what the whole real process is but I know we always get that um they can go to the probate say I have newly discovered assets I need to reopen this estate uh to claim that those properties um and basically that's what we need okay um this one um what happens if the company that reported your property did a typo and the address or the name and sent completely invalid kind of yeah there's a typo and it we this does happen so that's a great question yeah it does happen a lot and so that's why it's important any documentation that you have that says hey no I this is me and I had an invoice or a statement from this bank with this name and this address and we can look at it I mean there's you know there's sometimes we just have to you know use our judgment and go yeah that is you uh sometimes they pay uh they they they may send us other other information so if it even if it is wrong and they've sent um they may have sent your social security number into us that's why sometimes that's important because they may have given us that and we could match that if there was a typo especially in the older uh properties we have we've seen that a lot cuz I'm sure 20 years ago most of the stuff was you know entered in by hand and it's not wasn't electronically but um yes we've had that happen it with transpose we've had the name transpose and we can we have connected the dots some uh a lot of times and have been able to pay claims because there was a typer we'll reach out to the business um as well um and sometimes they're able to you know give us additional information you get a denial letter is there a way to appeal yes so we um we do have um so if you do get a denial letter we try not to deny um many claims mostly we'll our first steps are saying hey can you find any additional information we'll we'll do this but if we do say hey this property is not you're you're not the um reported owner of this property we will so you will deny a letter we have a what we call a 119 process first you can you know either we can have a a informal hearing with our division Council and our superintendent and they'll look at all the facts and make a determination or then we'll go outside and we'll have uh someone from the Attorney General's office sit in and review your documentations and then make a decision are there any other details that you think would be useful to um our community or takeaway highlights top three things to remember that you'd like to encourage folks to jot down yeah the the top two top three things is send in a copy of your driver's license social security card W9 sign your claim form notorized your claim form and any documentation that can prove not the current address that you currently live the the address that is printed on your client form next to the property those are the main two some sometimes people get confused and they send us proof of their current address we need proof of that address that's reported with the um claim so those are the the main things because the processor will look at it we sometimes the the information that's on the claim form we may have more information in our system or we can reach out to the business and get additional information or do our own search so um if you give us those four major things that helps us a lot to even start the the process and I would also just add if you have questions just reach out you know reach out and and and reach out and call us um we want to help you and so there as you can tell there's so many specific and different situations that everybody has when claiming their funds so just don't hesitate give us a phone call we can walk you through what we need um you can always send an email if you prefer email uh so just proactively ask those questions so that you're sending us the right information the first time that's if anything I can stress that would be the takeaway from today's webinar if you do that you will be golden right and I was the audience yeah I was send in yeah ask questions but the first step is get your information once a processor has reviewed your claim that is the best point if once it's in the re uh review process um they can give you better details when it's just waiting and it's been here and received our support staff they really can't answer a lot of questions because they have no idea what documentation you send in what all the other details so if you call in to our front desk and they haven't your claim has not been assigned to a processor it's going to be hard for them to give you a real answer other than probably maybe you might need um so once your claim has been assigned to a processor that's your best chance to get some real Direction on your claim because like I said we got 13,000 claims here so uh when you if you initially call in and you're asking them what I they'll give you a curse overview of what our instructions say but if an examiner has reviewed it or is in the process of reviewing it um they can give you more detailed explanation of how to prove the funds are um belong to you and what documentation they need so everybody in the audience now is a great time to take a screenshot do a quick snip take this uh image and and tuck it away for your future reference um we absolutely thank you both Merlene and and Susie for partnering with us in at the BBB to bring this really valuable um information to our communities um in a way that's clear simple to understand um and and truly helpful and legitimate we're so thrilled to work with you for any businesses in the audience or folks that are working at a business or in a leadership role BBB and uh the Department of Commerce will once again be partnering to bring you a filing your unclaimed funds the flip side of this equation how to do it most efficient way easy ways to do that um if you have unclaimed funds you are responsible for filing them and we will bring this information to you to help you navigate the process later this fall uh before that if you are looking to manage other aspects of businesses uh I would encourage you to go to bbb.org um at least our be Bureau is hosting uh several upcoming webinars that are meant to assist businesses out there for um filing mandated information for llc's coming up that will be tomorrow um so you go to bbb.org put in Columbus or Central Ohio uh and then go to events and you'll see some of our webinar information coming up that is uh quite good so we're here to help you the department is here to help you and we very much are so happy and consider ourselves fortunate to be such part of such a great Community with that we will say goodbye for now thank you everyone for joining thank you thank you",
+  "attempts": [
+    {
+      "client": "IOS",
+      "playability": {
+        "status": "OK",
+        "playableInEmbed": true,
+        "offlineability": {
+          "buttonRenderer": {
+            "size": "SIZE_DEFAULT",
+            "icon": {
+              "iconType": "OFFLINE_DOWNLOAD"
+            },
+            "navigationEndpoint": {
+              "clickTrackingParams": "CA0Q8FsiEwjMxumP7NuXAxXyekwIHQjsMQ7KAQSyy3Ud",
+              "addToToastAction": {
+                "item": {
+                  "notificationActionRenderer": {
+                    "responseText": {
+                      "runs": [
+                        {
+                          "text": "This action is turned off for content made for kids"
+                        }
+                      ]
+                    },
+                    "actionButton": {
+                      "buttonRenderer": {
+                        "text": {
+                          "runs": [
+                            {
+                              "text": "Learn more"
+                            }
+                          ]
+                        },
+                        "navigationEndpoint": {
+                          "clickTrackingParams": "CA8Q8FsiEwjMxumP7NuXAxXyekwIHQjsMQ7KAQSyy3Ud",
+                          "urlEndpoint": {
+                            "url": "//support.google.com/youtube/bin/answer.py?answer=9632097&nohelpkit=1&hl=en",
+                            "target": "TARGET_NEW_WINDOW"
+                          }
+                        },
+                        "trackingParams": "CA8Q8FsiEwjMxumP7NuXAxXyekwIHQjsMQ4="
+                      }
+                    },
+                    "trackingParams": "CA4QuWoiEwjMxumP7NuXAxXyekwIHQjsMQ4="
+                  }
+                }
+              }
+            },
+            "trackingParams": "CA0Q8FsiEwjMxumP7NuXAxXyekwIHQjsMQ4=",
+            "themedBasicColorPalette": {
+              "foregroundTitleColor": "THEME_ATTRIBUTE_TEXT_DISABLED",
+              "foregroundIconColor": "THEME_ATTRIBUTE_ICON_DISABLED"
+            }
+          }
+        },
+        "pictureInPicture": {
+          "pictureInPictureRenderer": {
+            "playableInPip": true,
+            "offByDefault": false,
+            "shouldResumeOnHead": false
+          }
+        },
+        "miniplayer": {
+          "miniplayerRenderer": {
+            "playbackMode": "PLAYBACK_MODE_PAUSED_ONLY",
+            "minimizedEndpoint": {
+              "clickTrackingParams": "CAAQu2kiEwjMxumP7NuXAxXyekwIHQjsMQ7KAQSyy3Ud",
+              "addToToastAction": {
+                "item": {
+                  "notificationActionRenderer": {
+                    "responseText": {
+                      "runs": [
+                        {
+                          "text": "Miniplayer is off for videos made for kids. Tap play to resume"
+                        }
+                      ]
+                    },
+                    "actionButton": {
+                      "buttonRenderer": {
+                        "text": {
+                          "runs": [
+                            {
+                              "text": "Learn more"
+                            }
+                          ]
+                        },
+                        "navigationEndpoint": {
+                          "clickTrackingParams": "CAwQ8FsiEwjMxumP7NuXAxXyekwIHQjsMQ7KAQSyy3Ud",
+                          "urlEndpoint": {
+                            "url": "//support.google.com/youtube/bin/answer.py?answer=9632097&nohelpkit=1&hl=en",
+                            "target": "TARGET_NEW_WINDOW"
+                          }
+                        },
+                        "trackingParams": "CAwQ8FsiEwjMxumP7NuXAxXyekwIHQjsMQ4="
+                      }
+                    },
+                    "trackingParams": "CAsQuWoiEwjMxumP7NuXAxXyekwIHQjsMQ4="
+                  }
+                }
+              }
+            }
+          }
+        },
+        "contextParams": "Q0FJU0FnZ0M="
+      },
+      "outcome": "ok"
+    }
+  ],
+  "fetched_at": "2026-10-28T04:11:30.822300+00:00",
+  "client": "IOS",
+  "json_path": "transcripts/110_GrE0UUh_3BI.json",
+  "text_path": "transcripts/110_GrE0UUh_3BI.txt"
+}

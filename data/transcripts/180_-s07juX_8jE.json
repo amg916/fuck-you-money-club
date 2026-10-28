@@ -1,0 +1,275 @@
+{
+  "index": 180,
+  "url": "https://www.youtube.com/watch?v=-s07juX_8jE",
+  "video_id": "-s07juX_8jE",
+  "status": "ok",
+  "metadata": {
+    "title": "Using Datasets - Regrid Property App (Web)",
+    "author": "Regrid",
+    "channelId": "UCY6_FliC-rX76wQMYyow-1A",
+    "lengthSeconds": "80",
+    "viewCount": "875",
+    "shortDescription": "The Regrid Property App allows you to manage datasets in your account, such as data you've imported, or data you've created in the app (for example, by Following a property, adding data to a Survey, etc). This video shows you how to work with them inside your account.\n\nNote: this video was shot prior to an update to the Regrid Property App's interface. While the new version looks a little different, all the functionality is the same as described in the video.",
+    "keywords": [
+      "radius",
+      "focus area",
+      "measure distance",
+      "mapping",
+      "map",
+      "real estate",
+      "land",
+      "property",
+      "spatial analysis",
+      "parcel data",
+      "cadastre"
+    ]
+  },
+  "caption_tracks": [
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=-s07juX_8jE&ei=_3XhauGDIvCKsfIPls3hqQ0&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185903&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=03CABD6D15C635916C6F6E0F66FDBE5F1043D603.0AC2EA1C25AADAF5601C84B69D108309C9CD4943&key=yt8&kind=asr&lang=en",
+      "name": {
+        "runs": [
+          {
+            "text": "English (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.en",
+      "languageCode": "en",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    }
+  ],
+  "selected_track": {
+    "baseUrl": "https://www.youtube.com/api/timedtext?v=-s07juX_8jE&ei=_3XhauGDIvCKsfIPls3hqQ0&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185903&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=03CABD6D15C635916C6F6E0F66FDBE5F1043D603.0AC2EA1C25AADAF5601C84B69D108309C9CD4943&key=yt8&kind=asr&lang=en",
+    "name": {
+      "runs": [
+        {
+          "text": "English (auto-generated)"
+        }
+      ]
+    },
+    "vssId": "a.en",
+    "languageCode": "en",
+    "kind": "asr",
+    "isTranslatable": true,
+    "trackName": ""
+  },
+  "segments": [
+    {
+      "start": 3.28,
+      "duration": 3.599,
+      "text": "welcome to the regrid mapping platform"
+    },
+    {
+      "start": 5.359,
+      "duration": 2.56,
+      "text": "today we're covering how to use data"
+    },
+    {
+      "start": 6.879,
+      "duration": 3.041,
+      "text": "sets"
+    },
+    {
+      "start": 7.919,
+      "duration": 3.521,
+      "text": "a data set simply put is any data that"
+    },
+    {
+      "start": 9.92,
+      "duration": 3.759,
+      "text": "you have imported that you've created"
+    },
+    {
+      "start": 11.44,
+      "duration": 4.319,
+      "text": "with a survey or a bookmark or which is"
+    },
+    {
+      "start": 13.679,
+      "duration": 4.081,
+      "text": "publicly available on our platform it's"
+    },
+    {
+      "start": 15.759,
+      "duration": 3.841,
+      "text": "basically just a collection of data into"
+    },
+    {
+      "start": 17.76,
+      "duration": 3.599,
+      "text": "one file"
+    },
+    {
+      "start": 19.6,
+      "duration": 3.439,
+      "text": "if you're in a project you can add data"
+    },
+    {
+      "start": 21.359,
+      "duration": 3.361,
+      "text": "sets to the project by simply clicking"
+    },
+    {
+      "start": 23.039,
+      "duration": 3.281,
+      "text": "data sets on the left hand side as i"
+    },
+    {
+      "start": 24.72,
+      "duration": 3.68,
+      "text": "have selected here"
+    },
+    {
+      "start": 26.32,
+      "duration": 3.279,
+      "text": "and then finding a data set of interest"
+    },
+    {
+      "start": 28.4,
+      "duration": 3.279,
+      "text": "let's say that we're interested in one"
+    },
+    {
+      "start": 29.599,
+      "duration": 4.161,
+      "text": "of these tax foreclosure data sets which"
+    },
+    {
+      "start": 31.679,
+      "duration": 4.241,
+      "text": "are unique to detroit"
+    },
+    {
+      "start": 33.76,
+      "duration": 4.16,
+      "text": "click on the plus icon"
+    },
+    {
+      "start": 35.92,
+      "duration": 5.6,
+      "text": "and that will add it to the map and you"
+    },
+    {
+      "start": 37.92,
+      "duration": 5.44,
+      "text": "can see the properties highlight here"
+    },
+    {
+      "start": 41.52,
+      "duration": 3.76,
+      "text": "to remove an added data set you can"
+    },
+    {
+      "start": 43.36,
+      "duration": 4.8,
+      "text": "simply click the x button up at the top"
+    },
+    {
+      "start": 45.28,
+      "duration": 2.88,
+      "text": "to remove it again"
+    },
+    {
+      "start": 48.32,
+      "duration": 3.36,
+      "text": "if you'd like an easier to see list of"
+    },
+    {
+      "start": 50.079,
+      "duration": 4.16,
+      "text": "all of your data sets or if you'd like"
+    },
+    {
+      "start": 51.68,
+      "duration": 4.32,
+      "text": "to delete a data set outright you can go"
+    },
+    {
+      "start": 54.239,
+      "duration": 5.441,
+      "text": "to your dashboard"
+    },
+    {
+      "start": 56.0,
+      "duration": 6.399,
+      "text": "and then you can go to the data sets tab"
+    },
+    {
+      "start": 59.68,
+      "duration": 5.119,
+      "text": "here you can see all of the book marks"
+    },
+    {
+      "start": 62.399,
+      "duration": 4.481,
+      "text": "and surveys and imported data that you"
+    },
+    {
+      "start": 64.799,
+      "duration": 4.081,
+      "text": "have and if you'd like to delete any of"
+    },
+    {
+      "start": 66.88,
+      "duration": 4.0,
+      "text": "these things you can click on the data"
+    },
+    {
+      "start": 68.88,
+      "duration": 4.16,
+      "text": "set name and then scroll to the bottom"
+    },
+    {
+      "start": 70.88,
+      "duration": 5.16,
+      "text": "where you will find a delete data set"
+    },
+    {
+      "start": 73.04,
+      "duration": 3.0,
+      "text": "option"
+    }
+  ],
+  "full_text": "welcome to the regrid mapping platform today we're covering how to use data sets a data set simply put is any data that you have imported that you've created with a survey or a bookmark or which is publicly available on our platform it's basically just a collection of data into one file if you're in a project you can add data sets to the project by simply clicking data sets on the left hand side as i have selected here and then finding a data set of interest let's say that we're interested in one of these tax foreclosure data sets which are unique to detroit click on the plus icon and that will add it to the map and you can see the properties highlight here to remove an added data set you can simply click the x button up at the top to remove it again if you'd like an easier to see list of all of your data sets or if you'd like to delete a data set outright you can go to your dashboard and then you can go to the data sets tab here you can see all of the book marks and surveys and imported data that you have and if you'd like to delete any of these things you can click on the data set name and then scroll to the bottom where you will find a delete data set option",
+  "attempts": [
+    {
+      "client": "IOS",
+      "playability": {
+        "status": "OK",
+        "playableInEmbed": true,
+        "offlineability": {
+          "buttonRenderer": {
+            "navigationEndpoint": {
+              "clickTrackingParams": "CAoQ6ewBIhMIof-KluzblwMVcEVMCB2WZjjVygEEbz1cJQ==",
+              "ypcGetOfflineUpsellEndpoint": {
+                "params": "CiXqqN25AR8KCy1zMDdqdVhfOGpFShAwZ2NKQ1NRRkptUC1qYXJCIgstczA3anVYXzhqRSoVCAkYAVIPCgstczA3anVYXzhqRSAB"
+              }
+            },
+            "trackingParams": "CAoQ6ewBIhMIof-KluzblwMVcEVMCB2WZjjV"
+          }
+        },
+        "pictureInPicture": {
+          "pictureInPictureRenderer": {
+            "playableInPip": true,
+            "offByDefault": false,
+            "shouldResumeOnHead": false
+          }
+        },
+        "miniplayer": {
+          "miniplayerRenderer": {
+            "playbackMode": "PLAYBACK_MODE_ALLOW"
+          }
+        },
+        "contextParams": "Q0FFU0FnZ0M="
+      },
+      "outcome": "ok"
+    }
+  ],
+  "fetched_at": "2026-10-28T04:11:44.082245+00:00",
+  "client": "IOS",
+  "json_path": "transcripts/180_-s07juX_8jE.json",
+  "text_path": "transcripts/180_-s07juX_8jE.txt"
+}

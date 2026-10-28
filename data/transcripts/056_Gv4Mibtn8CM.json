@@ -1,0 +1,2417 @@
+{
+  "index": 56,
+  "url": "https://www.youtube.com/watch?v=Gv4Mibtn8CM",
+  "video_id": "Gv4Mibtn8CM",
+  "status": "ok",
+  "metadata": {
+    "title": "Analyzing Probate Records: Finding Our Ancestor's Stories",
+    "author": "FamilySearch",
+    "channelId": "UC-9GZ7QHKOmLS0APnfz2g1Q",
+    "lengthSeconds": "1151",
+    "viewCount": "3080",
+    "shortDescription": "Probate Records can shed light on your ancestor's stories even when there's no will left behind. Learn how to use these records to find clues and help answer your family history research questions.\n\nIn this video, we learn about two types of probate records: testate and intestate. By analyzing probate records, we receive vital clues for finding our ancestor's stories. Probate records may be the key to unlocking exciting family stories telling of drama, sacrifice, service, day-to-day life,  and more!\n\nThis presentation was part of RootsTech Connect 2021. Find hundreds of free family history classes, keynotes, and more. http://familysearch.me/RootsTech \n\n#rootstechconnect \n\nRootsTech is hosted by FamilySearch, a global nonprofit organization dedicated to creating inspiring family discovery experiences. RootsTech is the premier global event and learning resource for making family connections and receiving guidance to help people learn more about their families.  \n \nFamilySearch is an international, nonprofit organization dedicated to helping people all over the world connect with their family: past, present, and future. Our partnerships with thousands of record custodians and major genealogical organizations allow us to make billions of records available for you to research your family tree free of charge! Regardless of where or how you research your ancestry, we have specialists all over the world to help you experience the joy of connecting with your heritage.  \n \nOur desire to Connect with the Past, Present, and Future https://youtu.be/3cmj5kGm2Xw   \n \nSubscribe:  \nhttp://familysearch.me/youtube   \nhttp://familysearch.me/youtubeportuguese   \nhttp://familysearch.me/youtubespanish   \nhttp://familysearch.me/youtubeeurope   \n \nConnect with FamilySearch:  \nVisit: http://familysearch.me/home   \nLike FamilySearch on Facebook: http://familysearch.me/facebook   \nFollow FamilySearch on Twitter: http://familysearch.me/twitter   \nFollow FamilySearch on Instagram: http://familysearch.me/instagram",
+    "keywords": [
+      "Finding Our Ancestor's Stories",
+      "Analyzing Probate Records",
+      "Analyzing Probate Records: Finding Our Ancestor's Stories",
+      "Probate Records",
+      "research questions",
+      "family history research questions",
+      "family stories",
+      "family history",
+      "family search",
+      "family history research",
+      "familysearch genealogy",
+      "Analyzing Probate Records: Finding Our Ancestors Stories",
+      "how to do genealogy research",
+      "genealogy research tips",
+      "rootstech",
+      "rootstech connect",
+      "understanding probate records",
+      "Ancestor's Stories"
+    ]
+  },
+  "caption_tracks": [
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=Gv4Mibtn8CM&ei=6XXhatn1PL3U-coPpuK6sAM&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185882&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=8C7EA871E19AC21D200158D94F88139D549204F9.43F915B57DDA04EF39E5FD7D7EAFCF20D7958510&key=yt8&kind=asr&lang=en",
+      "name": {
+        "runs": [
+          {
+            "text": "English (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.en",
+      "languageCode": "en",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    }
+  ],
+  "selected_track": {
+    "baseUrl": "https://www.youtube.com/api/timedtext?v=Gv4Mibtn8CM&ei=6XXhatn1PL3U-coPpuK6sAM&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185882&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=8C7EA871E19AC21D200158D94F88139D549204F9.43F915B57DDA04EF39E5FD7D7EAFCF20D7958510&key=yt8&kind=asr&lang=en",
+    "name": {
+      "runs": [
+        {
+          "text": "English (auto-generated)"
+        }
+      ]
+    },
+    "vssId": "a.en",
+    "languageCode": "en",
+    "kind": "asr",
+    "isTranslatable": true,
+    "trackName": ""
+  },
+  "segments": [
+    {
+      "start": 5.68,
+      "duration": 3.68,
+      "text": "hi i'm sherry hudson passi"
+    },
+    {
+      "start": 7.44,
+      "duration": 3.92,
+      "text": "and thank you so much for joining me for"
+    },
+    {
+      "start": 9.36,
+      "duration": 5.279,
+      "text": "analyzing probate records"
+    },
+    {
+      "start": 11.36,
+      "duration": 5.04,
+      "text": "finding clues to your ancestors stories"
+    },
+    {
+      "start": 14.639,
+      "duration": 3.121,
+      "text": "we're going to take some time today and"
+    },
+    {
+      "start": 16.4,
+      "duration": 3.92,
+      "text": "walk through"
+    },
+    {
+      "start": 17.76,
+      "duration": 3.92,
+      "text": "how a probate package is put together"
+    },
+    {
+      "start": 20.32,
+      "duration": 3.76,
+      "text": "and what"
+    },
+    {
+      "start": 21.68,
+      "duration": 4.4,
+      "text": "fabulous clues that you can find within"
+    },
+    {
+      "start": 24.08,
+      "duration": 4.0,
+      "text": "them that can give you information on"
+    },
+    {
+      "start": 26.08,
+      "duration": 5.359,
+      "text": "your ancestor and lead you"
+    },
+    {
+      "start": 28.08,
+      "duration": 7.52,
+      "text": "to other documents so let's"
+    },
+    {
+      "start": 31.439,
+      "duration": 4.96,
+      "text": "get started i would love to connect with"
+    },
+    {
+      "start": 35.6,
+      "duration": 4.4,
+      "text": "you"
+    },
+    {
+      "start": 36.399,
+      "duration": 7.041,
+      "text": "so any questions comments please"
+    },
+    {
+      "start": 40.0,
+      "duration": 4.559,
+      "text": "email me visit my blog find me on"
+    },
+    {
+      "start": 43.44,
+      "duration": 4.799,
+      "text": "facebook"
+    },
+    {
+      "start": 44.559,
+      "duration": 3.68,
+      "text": "instagram or twitter"
+    },
+    {
+      "start": 48.719,
+      "duration": 4.16,
+      "text": "there are two categories that people"
+    },
+    {
+      "start": 50.64,
+      "duration": 6.079,
+      "text": "fall into when they pass away"
+    },
+    {
+      "start": 52.879,
+      "duration": 6.081,
+      "text": "they're either test date or intestate"
+    },
+    {
+      "start": 56.719,
+      "duration": 4.0,
+      "text": "and depending on what type they were"
+    },
+    {
+      "start": 58.96,
+      "duration": 5.519,
+      "text": "sometimes depends on what"
+    },
+    {
+      "start": 60.719,
+      "duration": 6.881,
+      "text": "records that you can find in"
+    },
+    {
+      "start": 64.479,
+      "duration": 5.201,
+      "text": "the probate packages now"
+    },
+    {
+      "start": 67.6,
+      "duration": 3.839,
+      "text": "for most of us i think that when we"
+    },
+    {
+      "start": 69.68,
+      "duration": 2.479,
+      "text": "start thinking about probate packages we"
+    },
+    {
+      "start": 71.439,
+      "duration": 4.161,
+      "text": "automatically"
+    },
+    {
+      "start": 72.159,
+      "duration": 4.881,
+      "text": "go to wills if your ancestor died and"
+    },
+    {
+      "start": 75.6,
+      "duration": 5.6,
+      "text": "left a will"
+    },
+    {
+      "start": 77.04,
+      "duration": 7.8,
+      "text": "he was test state now of course a will"
+    },
+    {
+      "start": 81.2,
+      "duration": 6.48,
+      "text": "is exciting because it'll normally name"
+    },
+    {
+      "start": 84.84,
+      "duration": 5.48,
+      "text": "names as the deceased"
+    },
+    {
+      "start": 87.68,
+      "duration": 4.56,
+      "text": "wants certain property items to go to"
+    },
+    {
+      "start": 90.32,
+      "duration": 4.96,
+      "text": "certain people and we can find"
+    },
+    {
+      "start": 92.24,
+      "duration": 6.16,
+      "text": "lots of family connections in wills"
+    },
+    {
+      "start": 95.28,
+      "duration": 6.56,
+      "text": "we can even find reference to"
+    },
+    {
+      "start": 98.4,
+      "duration": 5.44,
+      "text": "land ownership or other property"
+    },
+    {
+      "start": 101.84,
+      "duration": 3.84,
+      "text": "ownership and they can tell us a lot and"
+    },
+    {
+      "start": 103.84,
+      "duration": 5.68,
+      "text": "give us a lot of clues"
+    },
+    {
+      "start": 105.68,
+      "duration": 5.36,
+      "text": "about our ancestor sometimes a will will"
+    },
+    {
+      "start": 109.52,
+      "duration": 4.16,
+      "text": "even talk about"
+    },
+    {
+      "start": 111.04,
+      "duration": 4.16,
+      "text": "places where they used to live and then"
+    },
+    {
+      "start": 113.68,
+      "duration": 2.88,
+      "text": "we need to go back and look and see if"
+    },
+    {
+      "start": 115.2,
+      "duration": 4.4,
+      "text": "there's any"
+    },
+    {
+      "start": 116.56,
+      "duration": 5.04,
+      "text": "probate in those places as well but"
+    },
+    {
+      "start": 119.6,
+      "duration": 4.32,
+      "text": "wills generally are what we're looking"
+    },
+    {
+      "start": 121.6,
+      "duration": 4.32,
+      "text": "for"
+    },
+    {
+      "start": 123.92,
+      "duration": 3.76,
+      "text": "now here's an example of a will this is"
+    },
+    {
+      "start": 125.92,
+      "duration": 5.52,
+      "text": "the 1840 will of"
+    },
+    {
+      "start": 127.68,
+      "duration": 6.08,
+      "text": "charity stafford in it she bequeathed to"
+    },
+    {
+      "start": 131.44,
+      "duration": 4.96,
+      "text": "her beloved granddaughter"
+    },
+    {
+      "start": 133.76,
+      "duration": 4.16,
+      "text": "barbary e stafford so there's a"
+    },
+    {
+      "start": 136.4,
+      "duration": 6.24,
+      "text": "connection"
+    },
+    {
+      "start": 137.92,
+      "duration": 8.16,
+      "text": "to her beloved daughter barbary jones"
+    },
+    {
+      "start": 142.64,
+      "duration": 7.44,
+      "text": "and then to two sons lunsford"
+    },
+    {
+      "start": 146.08,
+      "duration": 4.48,
+      "text": "and hartwell stafford family connections"
+    },
+    {
+      "start": 150.08,
+      "duration": 3.68,
+      "text": "that"
+    },
+    {
+      "start": 150.56,
+      "duration": 7.28,
+      "text": "perhaps you wouldn't have found if she"
+    },
+    {
+      "start": 153.76,
+      "duration": 4.08,
+      "text": "didn't have this will"
+    },
+    {
+      "start": 158.879,
+      "duration": 6.401,
+      "text": "but if you're like me many times there"
+    },
+    {
+      "start": 163.04,
+      "duration": 3.76,
+      "text": "doesn't seem to be a will for my"
+    },
+    {
+      "start": 165.28,
+      "duration": 3.92,
+      "text": "ancestor"
+    },
+    {
+      "start": 166.8,
+      "duration": 4.04,
+      "text": "if someone dies without a will they are"
+    },
+    {
+      "start": 169.2,
+      "duration": 4.48,
+      "text": "said to be"
+    },
+    {
+      "start": 170.84,
+      "duration": 5.08,
+      "text": "intestate but you know"
+    },
+    {
+      "start": 173.68,
+      "duration": 3.6,
+      "text": "something still had to be done with"
+    },
+    {
+      "start": 175.92,
+      "duration": 3.28,
+      "text": "their property"
+    },
+    {
+      "start": 177.28,
+      "duration": 3.039,
+      "text": "even if they had very very little"
+    },
+    {
+      "start": 179.2,
+      "duration": 3.44,
+      "text": "property"
+    },
+    {
+      "start": 180.319,
+      "duration": 3.84,
+      "text": "something had to be done with it they"
+    },
+    {
+      "start": 182.64,
+      "duration": 5.12,
+      "text": "needed to decide"
+    },
+    {
+      "start": 184.159,
+      "duration": 5.761,
+      "text": "who was going to get it and especially"
+    },
+    {
+      "start": 187.76,
+      "duration": 6.32,
+      "text": "if there were any debtors"
+    },
+    {
+      "start": 189.92,
+      "duration": 9.2,
+      "text": "they made sure to file paperwork"
+    },
+    {
+      "start": 194.08,
+      "duration": 7.04,
+      "text": "to get their money back"
+    },
+    {
+      "start": 199.12,
+      "duration": 4.0,
+      "text": "probate records are court records"
+    },
+    {
+      "start": 201.12,
+      "duration": 5.039,
+      "text": "dealing with the distribution of"
+    },
+    {
+      "start": 203.12,
+      "duration": 3.6,
+      "text": "property a person owned the documents"
+    },
+    {
+      "start": 206.159,
+      "duration": 3.281,
+      "text": "created"
+    },
+    {
+      "start": 206.72,
+      "duration": 4.0,
+      "text": "are placed in a probate package for an"
+    },
+    {
+      "start": 209.44,
+      "duration": 3.2,
+      "text": "individual"
+    },
+    {
+      "start": 210.72,
+      "duration": 3.92,
+      "text": "there is a procedure for creating"
+    },
+    {
+      "start": 212.64,
+      "duration": 3.76,
+      "text": "records in these cases"
+    },
+    {
+      "start": 214.64,
+      "duration": 4.239,
+      "text": "so let's take a look at the types of"
+    },
+    {
+      "start": 216.4,
+      "duration": 3.919,
+      "text": "records found in a packet for someone"
+    },
+    {
+      "start": 218.879,
+      "duration": 4.241,
+      "text": "who has died"
+    },
+    {
+      "start": 220.319,
+      "duration": 2.801,
+      "text": "in test date"
+    },
+    {
+      "start": 223.519,
+      "duration": 4.241,
+      "text": "the first thing that would happen when"
+    },
+    {
+      "start": 225.44,
+      "duration": 3.68,
+      "text": "someone died was the filing of a"
+    },
+    {
+      "start": 227.76,
+      "duration": 4.479,
+      "text": "petition"
+    },
+    {
+      "start": 229.12,
+      "duration": 4.08,
+      "text": "an heir or another interested party like"
+    },
+    {
+      "start": 232.239,
+      "duration": 2.961,
+      "text": "a creditor"
+    },
+    {
+      "start": 233.2,
+      "duration": 4.399,
+      "text": "would go to the courthouse and fill out"
+    },
+    {
+      "start": 235.2,
+      "duration": 5.039,
+      "text": "papers to request the settlement of the"
+    },
+    {
+      "start": 237.599,
+      "duration": 4.801,
+      "text": "estate of the deceased"
+    },
+    {
+      "start": 240.239,
+      "duration": 3.121,
+      "text": "now the petition would often name the"
+    },
+    {
+      "start": 242.4,
+      "duration": 4.559,
+      "text": "heirs"
+    },
+    {
+      "start": 243.36,
+      "duration": 6.159,
+      "text": "where they lived and include the date"
+    },
+    {
+      "start": 246.959,
+      "duration": 2.56,
+      "text": "of death"
+    },
+    {
+      "start": 250.08,
+      "duration": 4.0,
+      "text": "this is a note that was written and left"
+    },
+    {
+      "start": 251.84,
+      "duration": 5.919,
+      "text": "at the court of clerks by the son"
+    },
+    {
+      "start": 254.08,
+      "duration": 5.36,
+      "text": "of my ancestor edmund price edmund died"
+    },
+    {
+      "start": 257.759,
+      "duration": 3.841,
+      "text": "in tessa date and his son"
+    },
+    {
+      "start": 259.44,
+      "duration": 4.479,
+      "text": "wants the judge to know the family has"
+    },
+    {
+      "start": 261.6,
+      "duration": 5.68,
+      "text": "chosen him as the administrator"
+    },
+    {
+      "start": 263.919,
+      "duration": 5.761,
+      "text": "of the estate and from this note we can"
+    },
+    {
+      "start": 267.28,
+      "duration": 4.96,
+      "text": "see the date the note was written"
+    },
+    {
+      "start": 269.68,
+      "duration": 4.48,
+      "text": "and who wrote it and his relationship"
+    },
+    {
+      "start": 272.24,
+      "duration": 5.36,
+      "text": "with the deceased"
+    },
+    {
+      "start": 274.16,
+      "duration": 5.36,
+      "text": "it also says where he lives and why he"
+    },
+    {
+      "start": 277.6,
+      "duration": 4.319,
+      "text": "had to send a note"
+    },
+    {
+      "start": 279.52,
+      "duration": 3.239,
+      "text": "so it's got the date at the top november"
+    },
+    {
+      "start": 281.919,
+      "duration": 4.641,
+      "text": "27"
+    },
+    {
+      "start": 282.759,
+      "duration": 6.841,
+      "text": "1868 he says my father"
+    },
+    {
+      "start": 286.56,
+      "duration": 6.56,
+      "text": "has deceased and the family desires me"
+    },
+    {
+      "start": 289.6,
+      "duration": 5.24,
+      "text": "to administrate and then he says i live"
+    },
+    {
+      "start": 293.12,
+      "duration": 5.04,
+      "text": "40 miles"
+    },
+    {
+      "start": 294.84,
+      "duration": 4.2,
+      "text": "from this courthouse so he had to leave"
+    },
+    {
+      "start": 298.16,
+      "duration": 2.24,
+      "text": "a note because"
+    },
+    {
+      "start": 299.04,
+      "duration": 3.04,
+      "text": "he couldn't just turn around and come"
+    },
+    {
+      "start": 300.4,
+      "duration": 5.68,
+      "text": "back travel"
+    },
+    {
+      "start": 302.08,
+      "duration": 6.48,
+      "text": "was tricky in 1868."
+    },
+    {
+      "start": 306.08,
+      "duration": 4.0,
+      "text": "he gives the names of the heirs and says"
+    },
+    {
+      "start": 308.56,
+      "duration": 4.56,
+      "text": "that they need to sell some land"
+    },
+    {
+      "start": 310.08,
+      "duration": 5.119,
+      "text": "because there are some debts to pay"
+    },
+    {
+      "start": 313.12,
+      "duration": 3.359,
+      "text": "the note helps to create a list of"
+    },
+    {
+      "start": 315.199,
+      "duration": 3.601,
+      "text": "family members"
+    },
+    {
+      "start": 316.479,
+      "duration": 4.401,
+      "text": "and gives a clue to the fact that there"
+    },
+    {
+      "start": 318.8,
+      "duration": 4.64,
+      "text": "is land involved"
+    },
+    {
+      "start": 320.88,
+      "duration": 5.36,
+      "text": "indicating there is a need to research"
+    },
+    {
+      "start": 323.44,
+      "duration": 6.0,
+      "text": "land records"
+    },
+    {
+      "start": 326.24,
+      "duration": 3.2,
+      "text": "he signs his name"
+    },
+    {
+      "start": 330.16,
+      "duration": 3.84,
+      "text": "giving us a clue to his occupation and"
+    },
+    {
+      "start": 332.72,
+      "duration": 4.64,
+      "text": "further research"
+    },
+    {
+      "start": 334.0,
+      "duration": 6.16,
+      "text": "it says reverend and he gives his"
+    },
+    {
+      "start": 337.36,
+      "duration": 3.76,
+      "text": "address now his father died in richland"
+    },
+    {
+      "start": 340.16,
+      "duration": 4.24,
+      "text": "county"
+    },
+    {
+      "start": 341.12,
+      "duration": 4.96,
+      "text": "and he lived in barnwell county that's a"
+    },
+    {
+      "start": 344.4,
+      "duration": 3.84,
+      "text": "long way to travel"
+    },
+    {
+      "start": 346.08,
+      "duration": 4.76,
+      "text": "no wonder he had to send a note instead"
+    },
+    {
+      "start": 348.24,
+      "duration": 6.56,
+      "text": "of just coming back when the office was"
+    },
+    {
+      "start": 350.84,
+      "duration": 5.32,
+      "text": "open the next step was that a bond was"
+    },
+    {
+      "start": 354.8,
+      "duration": 3.2,
+      "text": "required"
+    },
+    {
+      "start": 356.16,
+      "duration": 3.52,
+      "text": "that would say that the administrator"
+    },
+    {
+      "start": 358.0,
+      "duration": 4.16,
+      "text": "was"
+    },
+    {
+      "start": 359.68,
+      "duration": 3.28,
+      "text": "going to do his full duty and it is"
+    },
+    {
+      "start": 362.16,
+      "duration": 3.52,
+      "text": "signed"
+    },
+    {
+      "start": 362.96,
+      "duration": 4.88,
+      "text": "by witnesses now here are some of the"
+    },
+    {
+      "start": 365.68,
+      "duration": 4.639,
+      "text": "clues that you can find on these bonds"
+    },
+    {
+      "start": 367.84,
+      "duration": 4.24,
+      "text": "number one someone had to pay a thousand"
+    },
+    {
+      "start": 370.319,
+      "duration": 3.761,
+      "text": "dollars"
+    },
+    {
+      "start": 372.08,
+      "duration": 3.679,
+      "text": "now that's a lot of money back then so"
+    },
+    {
+      "start": 374.08,
+      "duration": 4.8,
+      "text": "usually these were most"
+    },
+    {
+      "start": 375.759,
+      "duration": 3.921,
+      "text": "likely members of the family there's"
+    },
+    {
+      "start": 378.88,
+      "duration": 4.08,
+      "text": "also"
+    },
+    {
+      "start": 379.68,
+      "duration": 6.4,
+      "text": "the witnesses who also usually most"
+    },
+    {
+      "start": 382.96,
+      "duration": 4.0,
+      "text": "likely family we have edmund a price who"
+    },
+    {
+      "start": 386.08,
+      "duration": 3.679,
+      "text": "is the son"
+    },
+    {
+      "start": 386.96,
+      "duration": 4.079,
+      "text": "that started the ball rolling and said"
+    },
+    {
+      "start": 389.759,
+      "duration": 2.321,
+      "text": "the family wanted him to be the"
+    },
+    {
+      "start": 391.039,
+      "duration": 3.201,
+      "text": "administrator"
+    },
+    {
+      "start": 392.08,
+      "duration": 4.32,
+      "text": "and then we have a thomas price and a"
+    },
+    {
+      "start": 394.24,
+      "duration": 4.079,
+      "text": "john price"
+    },
+    {
+      "start": 396.4,
+      "duration": 4.799,
+      "text": "we also have a date of the 18th of"
+    },
+    {
+      "start": 398.319,
+      "duration": 6.32,
+      "text": "december 1868."
+    },
+    {
+      "start": 401.199,
+      "duration": 6.56,
+      "text": "we have a place richland county and"
+    },
+    {
+      "start": 404.639,
+      "duration": 6.721,
+      "text": "we have signatures signatures are"
+    },
+    {
+      "start": 407.759,
+      "duration": 6.88,
+      "text": "valuable to help you determine if people"
+    },
+    {
+      "start": 411.36,
+      "duration": 4.32,
+      "text": "are the same if you've got a disputation"
+    },
+    {
+      "start": 414.639,
+      "duration": 3.68,
+      "text": "between"
+    },
+    {
+      "start": 415.68,
+      "duration": 3.919,
+      "text": "two different men at two different times"
+    },
+    {
+      "start": 418.319,
+      "duration": 4.561,
+      "text": "and you can't tell"
+    },
+    {
+      "start": 419.599,
+      "duration": 6.401,
+      "text": "if it's the same person well check out"
+    },
+    {
+      "start": 422.88,
+      "duration": 6.159,
+      "text": "their signatures next an"
+    },
+    {
+      "start": 426.0,
+      "duration": 5.759,
+      "text": "inventory of the property is taken"
+    },
+    {
+      "start": 429.039,
+      "duration": 4.321,
+      "text": "everything that can be sold is listed"
+    },
+    {
+      "start": 431.759,
+      "duration": 3.84,
+      "text": "with a price"
+    },
+    {
+      "start": 433.36,
+      "duration": 3.04,
+      "text": "remember they had debts to pay and the"
+    },
+    {
+      "start": 435.599,
+      "duration": 4.641,
+      "text": "creditors"
+    },
+    {
+      "start": 436.4,
+      "duration": 6.96,
+      "text": "wanted that money"
+    },
+    {
+      "start": 440.24,
+      "duration": 5.12,
+      "text": "there are wonderful clues in inventories"
+    },
+    {
+      "start": 443.36,
+      "duration": 3.36,
+      "text": "you can learn about your ancestors life"
+    },
+    {
+      "start": 445.36,
+      "duration": 4.0,
+      "text": "by the things they had"
+    },
+    {
+      "start": 446.72,
+      "duration": 3.44,
+      "text": "in their household you can learn about"
+    },
+    {
+      "start": 449.36,
+      "duration": 2.959,
+      "text": "hobbies"
+    },
+    {
+      "start": 450.16,
+      "duration": 4.24,
+      "text": "were there musical instruments"
+    },
+    {
+      "start": 452.319,
+      "duration": 4.081,
+      "text": "occupations can be determined by the"
+    },
+    {
+      "start": 454.4,
+      "duration": 4.48,
+      "text": "equipment they owned"
+    },
+    {
+      "start": 456.4,
+      "duration": 4.48,
+      "text": "did they own livestock what kind of"
+    },
+    {
+      "start": 458.88,
+      "duration": 7.2,
+      "text": "furniture did they own"
+    },
+    {
+      "start": 460.88,
+      "duration": 9.2,
+      "text": "and then sadly pre-civil war records"
+    },
+    {
+      "start": 466.08,
+      "duration": 7.76,
+      "text": "also will list the enslaved"
+    },
+    {
+      "start": 470.08,
+      "duration": 7.92,
+      "text": "they will have their names ages"
+    },
+    {
+      "start": 473.84,
+      "duration": 7.359,
+      "text": "and their price"
+    },
+    {
+      "start": 478.0,
+      "duration": 7.36,
+      "text": "and then there are the sales"
+    },
+    {
+      "start": 481.199,
+      "duration": 4.161,
+      "text": "documents who's buying"
+    },
+    {
+      "start": 486.0,
+      "duration": 6.639,
+      "text": "items on the sale page are listed by"
+    },
+    {
+      "start": 489.039,
+      "duration": 6.641,
+      "text": "the item the price and who"
+    },
+    {
+      "start": 492.639,
+      "duration": 5.521,
+      "text": "bought it look at that who is"
+    },
+    {
+      "start": 495.68,
+      "duration": 3.44,
+      "text": "buying are they family names that you"
+    },
+    {
+      "start": 498.16,
+      "duration": 2.8,
+      "text": "know"
+    },
+    {
+      "start": 499.12,
+      "duration": 3.84,
+      "text": "make a list of all the people who"
+    },
+    {
+      "start": 500.96,
+      "duration": 4.639,
+      "text": "participated in the sales"
+    },
+    {
+      "start": 502.96,
+      "duration": 4.079,
+      "text": "and see where they fit in the family did"
+    },
+    {
+      "start": 505.599,
+      "duration": 2.961,
+      "text": "neighbors come to buy"
+    },
+    {
+      "start": 507.039,
+      "duration": 4.88,
+      "text": "you may be able to find these people in"
+    },
+    {
+      "start": 508.56,
+      "duration": 6.32,
+      "text": "the census now why is this important"
+    },
+    {
+      "start": 511.919,
+      "duration": 3.761,
+      "text": "well it's because of the fan club those"
+    },
+    {
+      "start": 514.88,
+      "duration": 4.719,
+      "text": "friends"
+    },
+    {
+      "start": 515.68,
+      "duration": 9.52,
+      "text": "associates and neighbors oftentimes"
+    },
+    {
+      "start": 519.599,
+      "duration": 8.641,
+      "text": "their records mention our ancestors"
+    },
+    {
+      "start": 525.2,
+      "duration": 6.4,
+      "text": "now probate sometimes took several"
+    },
+    {
+      "start": 528.24,
+      "duration": 6.32,
+      "text": "years sometimes decades to complete"
+    },
+    {
+      "start": 531.6,
+      "duration": 5.76,
+      "text": "a report was given every year until a"
+    },
+    {
+      "start": 534.56,
+      "duration": 6.16,
+      "text": "final report could be given to the court"
+    },
+    {
+      "start": 537.36,
+      "duration": 7.28,
+      "text": "this process started in 1868"
+    },
+    {
+      "start": 540.72,
+      "duration": 6.239,
+      "text": "and was still going on in 1884"
+    },
+    {
+      "start": 544.64,
+      "duration": 5.28,
+      "text": "so don't just check the indexes and the"
+    },
+    {
+      "start": 546.959,
+      "duration": 6.56,
+      "text": "books for the year your ancestor died"
+    },
+    {
+      "start": 549.92,
+      "duration": 7.599,
+      "text": "try for several years and even decades"
+    },
+    {
+      "start": 553.519,
+      "duration": 6.641,
+      "text": "afterwards so this annual return"
+    },
+    {
+      "start": 557.519,
+      "duration": 3.121,
+      "text": "for the probate package of edmund s"
+    },
+    {
+      "start": 560.16,
+      "duration": 3.76,
+      "text": "price"
+    },
+    {
+      "start": 560.64,
+      "duration": 6.639,
+      "text": "in 1884 shows his son"
+    },
+    {
+      "start": 563.92,
+      "duration": 5.919,
+      "text": "edmund a price asking for his expenses"
+    },
+    {
+      "start": 567.279,
+      "duration": 5.68,
+      "text": "to be paid for traveling to columbia"
+    },
+    {
+      "start": 569.839,
+      "duration": 6.641,
+      "text": "to file the report he wanted"
+    },
+    {
+      "start": 572.959,
+      "duration": 6.481,
+      "text": "the railroad fee and the judge's fee"
+    },
+    {
+      "start": 576.48,
+      "duration": 2.96,
+      "text": "returned to him"
+    },
+    {
+      "start": 579.76,
+      "duration": 3.12,
+      "text": "now depending on the law if there were"
+    },
+    {
+      "start": 581.92,
+      "duration": 3.28,
+      "text": "minor children"
+    },
+    {
+      "start": 582.88,
+      "duration": 3.519,
+      "text": "or an adult who was not able to care for"
+    },
+    {
+      "start": 585.2,
+      "duration": 4.319,
+      "text": "themselves"
+    },
+    {
+      "start": 586.399,
+      "duration": 5.521,
+      "text": "a guardian may have been appointed"
+    },
+    {
+      "start": 589.519,
+      "duration": 3.281,
+      "text": "creating even more records for a probate"
+    },
+    {
+      "start": 591.92,
+      "duration": 3.44,
+      "text": "package"
+    },
+    {
+      "start": 592.8,
+      "duration": 3.52,
+      "text": "now guardianship records may have also"
+    },
+    {
+      "start": 595.36,
+      "duration": 2.72,
+      "text": "been recorded in"
+    },
+    {
+      "start": 596.32,
+      "duration": 3.92,
+      "text": "other courts so it's important to"
+    },
+    {
+      "start": 598.08,
+      "duration": 4.759,
+      "text": "research the laws at the time"
+    },
+    {
+      "start": 600.24,
+      "duration": 4.88,
+      "text": "to see where guardianship records were"
+    },
+    {
+      "start": 602.839,
+      "duration": 4.68,
+      "text": "placed"
+    },
+    {
+      "start": 605.12,
+      "duration": 3.6,
+      "text": "the types of guardianship created are"
+    },
+    {
+      "start": 607.519,
+      "duration": 3.521,
+      "text": "much like the ones"
+    },
+    {
+      "start": 608.72,
+      "duration": 4.32,
+      "text": "for the estate of the deceased an"
+    },
+    {
+      "start": 611.04,
+      "duration": 5.6,
+      "text": "administrator is chosen"
+    },
+    {
+      "start": 613.04,
+      "duration": 6.32,
+      "text": "a bond signed property would then be"
+    },
+    {
+      "start": 616.64,
+      "duration": 3.759,
+      "text": "sold to pay for the needs of the miners"
+    },
+    {
+      "start": 619.36,
+      "duration": 3.919,
+      "text": "and it all"
+    },
+    {
+      "start": 620.399,
+      "duration": 4.721,
+      "text": "would be submitted to the court you may"
+    },
+    {
+      "start": 623.279,
+      "duration": 4.081,
+      "text": "be surprised to find out"
+    },
+    {
+      "start": 625.12,
+      "duration": 3.76,
+      "text": "a woman may not be given guardianship of"
+    },
+    {
+      "start": 627.36,
+      "duration": 4.64,
+      "text": "her own children"
+    },
+    {
+      "start": 628.88,
+      "duration": 5.6,
+      "text": "during certain times in history a male"
+    },
+    {
+      "start": 632.0,
+      "duration": 3.44,
+      "text": "relative is often the one chosen to look"
+    },
+    {
+      "start": 634.48,
+      "duration": 4.16,
+      "text": "after"
+    },
+    {
+      "start": 635.44,
+      "duration": 5.28,
+      "text": "their interests so don't assume a child"
+    },
+    {
+      "start": 638.64,
+      "duration": 5.12,
+      "text": "has lost both of its parents"
+    },
+    {
+      "start": 640.72,
+      "duration": 4.799,
+      "text": "if their guardianship papers filed now"
+    },
+    {
+      "start": 643.76,
+      "duration": 3.84,
+      "text": "once the child comes of age"
+    },
+    {
+      "start": 645.519,
+      "duration": 4.641,
+      "text": "the court is made aware with another"
+    },
+    {
+      "start": 647.6,
+      "duration": 3.6,
+      "text": "document and a guardianship is no longer"
+    },
+    {
+      "start": 650.16,
+      "duration": 4.4,
+      "text": "needed"
+    },
+    {
+      "start": 651.2,
+      "duration": 4.8,
+      "text": "now remember guardianships are taking"
+    },
+    {
+      "start": 654.56,
+      "duration": 4.32,
+      "text": "care of minors"
+    },
+    {
+      "start": 656.0,
+      "duration": 4.72,
+      "text": "it's important to find out what denotes"
+    },
+    {
+      "start": 658.88,
+      "duration": 4.8,
+      "text": "a minor"
+    },
+    {
+      "start": 660.72,
+      "duration": 4.799,
+      "text": "in the area and the time period that"
+    },
+    {
+      "start": 663.68,
+      "duration": 4.96,
+      "text": "your ancestor"
+    },
+    {
+      "start": 665.519,
+      "duration": 4.88,
+      "text": "died sometimes"
+    },
+    {
+      "start": 668.64,
+      "duration": 3.439,
+      "text": "they're called infants in these"
+    },
+    {
+      "start": 670.399,
+      "duration": 5.44,
+      "text": "guardianship records"
+    },
+    {
+      "start": 672.079,
+      "duration": 6.721,
+      "text": "and that is any minor"
+    },
+    {
+      "start": 675.839,
+      "duration": 6.0,
+      "text": "between the age of 0 and whatever it"
+    },
+    {
+      "start": 678.8,
+      "duration": 5.039,
+      "text": "could be 18 it could be 21."
+    },
+    {
+      "start": 681.839,
+      "duration": 4.881,
+      "text": "it just depends on the law of that"
+    },
+    {
+      "start": 683.839,
+      "duration": 5.12,
+      "text": "location of that state"
+    },
+    {
+      "start": 686.72,
+      "duration": 4.08,
+      "text": "they would be called an infant and"
+    },
+    {
+      "start": 688.959,
+      "duration": 2.481,
+      "text": "sometimes people get confused with that"
+    },
+    {
+      "start": 690.8,
+      "duration": 2.479,
+      "text": "and think"
+    },
+    {
+      "start": 691.44,
+      "duration": 4.959,
+      "text": "there are more little children than"
+    },
+    {
+      "start": 693.279,
+      "duration": 3.12,
+      "text": "there actually are"
+    },
+    {
+      "start": 696.72,
+      "duration": 4.16,
+      "text": "this is the guardianship application for"
+    },
+    {
+      "start": 699.04,
+      "duration": 3.76,
+      "text": "the children of ellen early"
+    },
+    {
+      "start": 700.88,
+      "duration": 4.079,
+      "text": "after the death of her husband ransom"
+    },
+    {
+      "start": 702.8,
+      "duration": 4.4,
+      "text": "early there were three"
+    },
+    {
+      "start": 704.959,
+      "duration": 4.161,
+      "text": "children who were considered minors in"
+    },
+    {
+      "start": 707.2,
+      "duration": 3.68,
+      "text": "that household"
+    },
+    {
+      "start": 709.12,
+      "duration": 3.76,
+      "text": "they are said to be entitled to some"
+    },
+    {
+      "start": 710.88,
+      "duration": 2.88,
+      "text": "monies from the personal estate of their"
+    },
+    {
+      "start": 712.88,
+      "duration": 3.04,
+      "text": "father"
+    },
+    {
+      "start": 713.76,
+      "duration": 5.84,
+      "text": "now ellen filed this application to gain"
+    },
+    {
+      "start": 715.92,
+      "duration": 3.68,
+      "text": "this money for her children"
+    },
+    {
+      "start": 721.76,
+      "duration": 4.879,
+      "text": "so what was the result well the"
+    },
+    {
+      "start": 724.079,
+      "duration": 5.2,
+      "text": "guardianship of ellen's minor children"
+    },
+    {
+      "start": 726.639,
+      "duration": 3.041,
+      "text": "shows guardianship was awarded to a man"
+    },
+    {
+      "start": 729.279,
+      "duration": 4.641,
+      "text": "named"
+    },
+    {
+      "start": 729.68,
+      "duration": 7.839,
+      "text": "john turner goodman the reason"
+    },
+    {
+      "start": 733.92,
+      "duration": 6.8,
+      "text": "well turns out"
+    },
+    {
+      "start": 737.519,
+      "duration": 5.32,
+      "text": "they thought that ellen was not"
+    },
+    {
+      "start": 740.72,
+      "duration": 3.28,
+      "text": "financially able to care for her"
+    },
+    {
+      "start": 742.839,
+      "duration": 3.481,
+      "text": "children"
+    },
+    {
+      "start": 744.0,
+      "duration": 3.68,
+      "text": "now it's not known at this time who john"
+    },
+    {
+      "start": 746.32,
+      "duration": 3.199,
+      "text": "turner goodman is"
+    },
+    {
+      "start": 747.68,
+      "duration": 4.959,
+      "text": "or if he had any connection to the"
+    },
+    {
+      "start": 749.519,
+      "duration": 5.681,
+      "text": "family his job was to see"
+    },
+    {
+      "start": 752.639,
+      "duration": 4.481,
+      "text": "that the sale of personal property and"
+    },
+    {
+      "start": 755.2,
+      "duration": 4.96,
+      "text": "lands would be able to support"
+    },
+    {
+      "start": 757.12,
+      "duration": 5.68,
+      "text": "the three minor children now this"
+    },
+    {
+      "start": 760.16,
+      "duration": 4.72,
+      "text": "transcription shows that he is asking"
+    },
+    {
+      "start": 762.8,
+      "duration": 3.12,
+      "text": "to be able to have the monies to send"
+    },
+    {
+      "start": 764.88,
+      "duration": 3.84,
+      "text": "them"
+    },
+    {
+      "start": 765.92,
+      "duration": 2.8,
+      "text": "to school"
+    },
+    {
+      "start": 770.0,
+      "duration": 3.92,
+      "text": "well mr goodwill had to file an"
+    },
+    {
+      "start": 771.76,
+      "duration": 3.12,
+      "text": "accounting of the financial support for"
+    },
+    {
+      "start": 773.92,
+      "duration": 3.52,
+      "text": "his awards"
+    },
+    {
+      "start": 774.88,
+      "duration": 5.759,
+      "text": "yearly until they were no longer minors"
+    },
+    {
+      "start": 777.44,
+      "duration": 6.399,
+      "text": "now this document is the record for my"
+    },
+    {
+      "start": 780.639,
+      "duration": 5.601,
+      "text": "great grandfather jubal early"
+    },
+    {
+      "start": 783.839,
+      "duration": 3.44,
+      "text": "it lists the monies that were spent for"
+    },
+    {
+      "start": 786.24,
+      "duration": 4.719,
+      "text": "him"
+    },
+    {
+      "start": 787.279,
+      "duration": 6.401,
+      "text": "and one interesting thing is"
+    },
+    {
+      "start": 790.959,
+      "duration": 4.081,
+      "text": "the clothing that was purchased for him"
+    },
+    {
+      "start": 793.68,
+      "duration": 6.88,
+      "text": "that year"
+    },
+    {
+      "start": 795.04,
+      "duration": 8.239,
+      "text": "nine dollars and 30 cents for clothing"
+    },
+    {
+      "start": 800.56,
+      "duration": 5.2,
+      "text": "the account of jubal's older sister dora"
+    },
+    {
+      "start": 803.279,
+      "duration": 4.881,
+      "text": "lists the payment of tuition for school"
+    },
+    {
+      "start": 805.76,
+      "duration": 3.36,
+      "text": "and her railroad transportation back and"
+    },
+    {
+      "start": 808.16,
+      "duration": 3.04,
+      "text": "forth"
+    },
+    {
+      "start": 809.12,
+      "duration": 4.0,
+      "text": "now perhaps there are still school"
+    },
+    {
+      "start": 811.2,
+      "duration": 3.92,
+      "text": "records available that can tell more"
+    },
+    {
+      "start": 813.12,
+      "duration": 4.08,
+      "text": "about her story"
+    },
+    {
+      "start": 815.12,
+      "duration": 5.2,
+      "text": "so take a good look at the accounting"
+    },
+    {
+      "start": 817.2,
+      "duration": 5.439,
+      "text": "pages for minors in your family tree"
+    },
+    {
+      "start": 820.32,
+      "duration": 3.68,
+      "text": "and how their guardians were spending"
+    },
+    {
+      "start": 822.639,
+      "duration": 4.081,
+      "text": "their money"
+    },
+    {
+      "start": 824.0,
+      "duration": 5.839,
+      "text": "what other records do they suggest that"
+    },
+    {
+      "start": 826.72,
+      "duration": 3.119,
+      "text": "you look for"
+    },
+    {
+      "start": 829.92,
+      "duration": 4.08,
+      "text": "now a woman may have had lands given to"
+    },
+    {
+      "start": 832.32,
+      "duration": 2.319,
+      "text": "her at the time of her marriage or"
+    },
+    {
+      "start": 834.0,
+      "duration": 3.92,
+      "text": "before"
+    },
+    {
+      "start": 834.639,
+      "duration": 6.64,
+      "text": "her marriage sometimes lands were bought"
+    },
+    {
+      "start": 837.92,
+      "duration": 5.68,
+      "text": "by her husband or both together that are"
+    },
+    {
+      "start": 841.279,
+      "duration": 5.441,
+      "text": "in her name"
+    },
+    {
+      "start": 843.6,
+      "duration": 7.039,
+      "text": "these should be set apart and not sold"
+    },
+    {
+      "start": 846.72,
+      "duration": 7.28,
+      "text": "as part of probate unless the woman"
+    },
+    {
+      "start": 850.639,
+      "duration": 3.361,
+      "text": "agrees upon it"
+    },
+    {
+      "start": 854.399,
+      "duration": 5.041,
+      "text": "now ellen early filed a petition in"
+    },
+    {
+      "start": 856.56,
+      "duration": 4.8,
+      "text": "court to make claim on part of the lands"
+    },
+    {
+      "start": 859.44,
+      "duration": 3.12,
+      "text": "being sold in the probate process for"
+    },
+    {
+      "start": 861.36,
+      "duration": 3.2,
+      "text": "her husband"
+    },
+    {
+      "start": 862.56,
+      "duration": 3.279,
+      "text": "she claimed the land was purchased by"
+    },
+    {
+      "start": 864.56,
+      "duration": 4.24,
+      "text": "both she and her husband"
+    },
+    {
+      "start": 865.839,
+      "duration": 4.56,
+      "text": "and gives the exact details of where the"
+    },
+    {
+      "start": 868.8,
+      "duration": 4.24,
+      "text": "land was"
+    },
+    {
+      "start": 870.399,
+      "duration": 4.321,
+      "text": "she asked for it to be hers for as long"
+    },
+    {
+      "start": 873.04,
+      "duration": 4.32,
+      "text": "as she lived"
+    },
+    {
+      "start": 874.72,
+      "duration": 4.96,
+      "text": "including the dwellings on it now she"
+    },
+    {
+      "start": 877.36,
+      "duration": 3.44,
+      "text": "accused her older children of trying to"
+    },
+    {
+      "start": 879.68,
+      "duration": 4.719,
+      "text": "sell it and take"
+    },
+    {
+      "start": 880.8,
+      "duration": 6.32,
+      "text": "away her property there can be some very"
+    },
+    {
+      "start": 884.399,
+      "duration": 6.24,
+      "text": "interesting family stories and gossip"
+    },
+    {
+      "start": 887.12,
+      "duration": 3.92,
+      "text": "in probate records now ellen's petition"
+    },
+    {
+      "start": 890.639,
+      "duration": 3.2,
+      "text": "was"
+    },
+    {
+      "start": 891.04,
+      "duration": 3.919,
+      "text": "examined by the court and it was agreed"
+    },
+    {
+      "start": 893.839,
+      "duration": 4.321,
+      "text": "that the land"
+    },
+    {
+      "start": 894.959,
+      "duration": 5.281,
+      "text": "should be sectioned off and given to her"
+    },
+    {
+      "start": 898.16,
+      "duration": 6.479,
+      "text": "along with some monies from the sale"
+    },
+    {
+      "start": 900.24,
+      "duration": 4.399,
+      "text": "of the state of her husband's property"
+    },
+    {
+      "start": 906.079,
+      "duration": 4.0,
+      "text": "okay as we've seen there are some"
+    },
+    {
+      "start": 908.72,
+      "duration": 4.479,
+      "text": "wonderful"
+    },
+    {
+      "start": 910.079,
+      "duration": 6.56,
+      "text": "pieces of information in probate records"
+    },
+    {
+      "start": 913.199,
+      "duration": 6.88,
+      "text": "and some wonderful clues to continue on"
+    },
+    {
+      "start": 916.639,
+      "duration": 6.401,
+      "text": "with your research so where can"
+    },
+    {
+      "start": 920.079,
+      "duration": 2.961,
+      "text": "you find them"
+    },
+    {
+      "start": 923.68,
+      "duration": 3.04,
+      "text": "probate records can be recorded in"
+    },
+    {
+      "start": 925.839,
+      "duration": 4.721,
+      "text": "packets"
+    },
+    {
+      "start": 926.72,
+      "duration": 4.72,
+      "text": "or in books the originals and microfilms"
+    },
+    {
+      "start": 930.56,
+      "duration": 4.56,
+      "text": "can be found in"
+    },
+    {
+      "start": 931.44,
+      "duration": 8.0,
+      "text": "archives and courthouses and many have"
+    },
+    {
+      "start": 935.12,
+      "duration": 7.44,
+      "text": "been digitized and can be found online"
+    },
+    {
+      "start": 939.44,
+      "duration": 6.0,
+      "text": "so where can you find probate records"
+    },
+    {
+      "start": 942.56,
+      "duration": 4.88,
+      "text": "check online first ancestry family"
+    },
+    {
+      "start": 945.44,
+      "duration": 3.04,
+      "text": "search and some state and county"
+    },
+    {
+      "start": 947.44,
+      "duration": 3.519,
+      "text": "archives"
+    },
+    {
+      "start": 948.48,
+      "duration": 3.039,
+      "text": "have digitized and placed probate"
+    },
+    {
+      "start": 950.959,
+      "duration": 3.921,
+      "text": "records"
+    },
+    {
+      "start": 951.519,
+      "duration": 5.76,
+      "text": "online and it's a continual commitment"
+    },
+    {
+      "start": 954.88,
+      "duration": 5.12,
+      "text": "for them to do so"
+    },
+    {
+      "start": 957.279,
+      "duration": 4.401,
+      "text": "check locally check home sources who in"
+    },
+    {
+      "start": 960.0,
+      "duration": 2.8,
+      "text": "your family may have some original"
+    },
+    {
+      "start": 961.68,
+      "duration": 4.0,
+      "text": "records"
+    },
+    {
+      "start": 962.8,
+      "duration": 4.88,
+      "text": "i have my grandmother's will check the"
+    },
+    {
+      "start": 965.68,
+      "duration": 4.0,
+      "text": "local courthouse and the state and"
+    },
+    {
+      "start": 967.68,
+      "duration": 4.24,
+      "text": "county archives"
+    },
+    {
+      "start": 969.68,
+      "duration": 4.24,
+      "text": "also see if there's a special records"
+    },
+    {
+      "start": 971.92,
+      "duration": 4.8,
+      "text": "office in some places"
+    },
+    {
+      "start": 973.92,
+      "duration": 4.88,
+      "text": "these records are handed off to a"
+    },
+    {
+      "start": 976.72,
+      "duration": 4.64,
+      "text": "records office"
+    },
+    {
+      "start": 978.8,
+      "duration": 3.279,
+      "text": "there's other places to look to some"
+    },
+    {
+      "start": 981.36,
+      "duration": 3.839,
+      "text": "genealogy"
+    },
+    {
+      "start": 982.079,
+      "duration": 6.721,
+      "text": "societies historical societies and"
+    },
+    {
+      "start": 985.199,
+      "duration": 5.921,
+      "text": "other groups have transcribed probate"
+    },
+    {
+      "start": 988.8,
+      "duration": 3.52,
+      "text": "records and they've placed them in books"
+    },
+    {
+      "start": 991.12,
+      "duration": 5.92,
+      "text": "in quarterlies"
+    },
+    {
+      "start": 992.32,
+      "duration": 7.199,
+      "text": "or journals most probate records whether"
+    },
+    {
+      "start": 997.04,
+      "duration": 3.68,
+      "text": "in packet or book form can be found"
+    },
+    {
+      "start": 999.519,
+      "duration": 4.24,
+      "text": "through an index"
+    },
+    {
+      "start": 1000.72,
+      "duration": 3.52,
+      "text": "either in the courthouse or online but"
+    },
+    {
+      "start": 1003.759,
+      "duration": 4.161,
+      "text": "be"
+    },
+    {
+      "start": 1004.24,
+      "duration": 7.519,
+      "text": "sure to look beyond the index"
+    },
+    {
+      "start": 1007.92,
+      "duration": 7.359,
+      "text": "in those probate books look at the index"
+    },
+    {
+      "start": 1011.759,
+      "duration": 6.961,
+      "text": "and then check to see where that"
+    },
+    {
+      "start": 1015.279,
+      "duration": 4.0,
+      "text": "record has been placed find the book"
+    },
+    {
+      "start": 1018.72,
+      "duration": 4.479,
+      "text": "number"
+    },
+    {
+      "start": 1019.279,
+      "duration": 7.28,
+      "text": "and the page number and go find it"
+    },
+    {
+      "start": 1023.199,
+      "duration": 6.24,
+      "text": "many are browsable online some"
+    },
+    {
+      "start": 1026.559,
+      "duration": 4.961,
+      "text": "you have to browse the index and then go"
+    },
+    {
+      "start": 1029.439,
+      "duration": 5.281,
+      "text": "to the page in that book"
+    },
+    {
+      "start": 1031.52,
+      "duration": 6.399,
+      "text": "or you have to go to another digitized"
+    },
+    {
+      "start": 1034.72,
+      "duration": 4.479,
+      "text": "film and sometimes you'll find that the"
+    },
+    {
+      "start": 1037.919,
+      "duration": 4.16,
+      "text": "search results"
+    },
+    {
+      "start": 1039.199,
+      "duration": 5.441,
+      "text": "will bring you right to the record"
+    },
+    {
+      "start": 1042.079,
+      "duration": 2.561,
+      "text": "itself"
+    },
+    {
+      "start": 1045.919,
+      "duration": 3.921,
+      "text": "yeah we would all like to find a will"
+    },
+    {
+      "start": 1047.919,
+      "duration": 4.0,
+      "text": "for our ancestor"
+    },
+    {
+      "start": 1049.84,
+      "duration": 4.32,
+      "text": "that tells us everything that we want to"
+    },
+    {
+      "start": 1051.919,
+      "duration": 5.281,
+      "text": "know about them and their family"
+    },
+    {
+      "start": 1054.16,
+      "duration": 5.519,
+      "text": "but remember even if there is no will"
+    },
+    {
+      "start": 1057.2,
+      "duration": 3.92,
+      "text": "there's still a way to discover things"
+    },
+    {
+      "start": 1059.679,
+      "duration": 5.281,
+      "text": "about them"
+    },
+    {
+      "start": 1061.12,
+      "duration": 7.679,
+      "text": "names dates places family connections"
+    },
+    {
+      "start": 1064.96,
+      "duration": 6.959,
+      "text": "living conditions occupations hobbies"
+    },
+    {
+      "start": 1068.799,
+      "duration": 5.601,
+      "text": "land ownership their community members"
+    },
+    {
+      "start": 1071.919,
+      "duration": 4.961,
+      "text": "all may be mentioned in probate packages"
+    },
+    {
+      "start": 1074.4,
+      "duration": 6.159,
+      "text": "as property has to be distributed"
+    },
+    {
+      "start": 1076.88,
+      "duration": 7.679,
+      "text": "and sold to pay debts you just"
+    },
+    {
+      "start": 1080.559,
+      "duration": 7.921,
+      "text": "never know what you might find"
+    },
+    {
+      "start": 1084.559,
+      "duration": 8.281,
+      "text": "so do you have any questions if you do"
+    },
+    {
+      "start": 1088.48,
+      "duration": 6.8,
+      "text": "please feel free to contact me at sheri"
+    },
+    {
+      "start": 1092.84,
+      "duration": 5.8,
+      "text": "carolinagirlgeneology.com"
+    },
+    {
+      "start": 1095.28,
+      "duration": 5.84,
+      "text": "well thank you so much for joining me"
+    },
+    {
+      "start": 1098.64,
+      "duration": 5.76,
+      "text": "for analyzing probate records finding"
+    },
+    {
+      "start": 1101.12,
+      "duration": 6.799,
+      "text": "clues to your ancestors stories"
+    },
+    {
+      "start": 1104.4,
+      "duration": 5.279,
+      "text": "remember even when there's not a will"
+    },
+    {
+      "start": 1107.919,
+      "duration": 4.0,
+      "text": "there's still a way"
+    },
+    {
+      "start": 1109.679,
+      "duration": 3.201,
+      "text": "to find out information about your"
+    },
+    {
+      "start": 1111.919,
+      "duration": 3.521,
+      "text": "ancestors"
+    },
+    {
+      "start": 1112.88,
+      "duration": 3.84,
+      "text": "so i hope that you will start looking"
+    },
+    {
+      "start": 1115.44,
+      "duration": 5.359,
+      "text": "for probate packages"
+    },
+    {
+      "start": 1116.72,
+      "duration": 6.56,
+      "text": "and see what goodies that you can find"
+    },
+    {
+      "start": 1120.799,
+      "duration": 3.201,
+      "text": "i'd love to hear from you you can email"
+    },
+    {
+      "start": 1123.28,
+      "duration": 4.32,
+      "text": "me at"
+    },
+    {
+      "start": 1124.0,
+      "duration": 6.4,
+      "text": "sheri at carolinagirlgeneology.com"
+    },
+    {
+      "start": 1127.6,
+      "duration": 4.079,
+      "text": "or you can find me on social media i"
+    },
+    {
+      "start": 1130.4,
+      "duration": 5.92,
+      "text": "would love"
+    },
+    {
+      "start": 1131.679,
+      "duration": 7.521,
+      "text": "love to make contact so thanks again get"
+    },
+    {
+      "start": 1136.32,
+      "duration": 5.04,
+      "text": "busy with those probate packages and"
+    },
+    {
+      "start": 1139.2,
+      "duration": 11.2,
+      "text": "find the clues that lead to your"
+    },
+    {
+      "start": 1141.36,
+      "duration": 11.12,
+      "text": "ancestors stories bye everybody"
+    },
+    {
+      "start": 1150.4,
+      "duration": 2.08,
+      "text": "you"
+    }
+  ],
+  "full_text": "hi i'm sherry hudson passi and thank you so much for joining me for analyzing probate records finding clues to your ancestors stories we're going to take some time today and walk through how a probate package is put together and what fabulous clues that you can find within them that can give you information on your ancestor and lead you to other documents so let's get started i would love to connect with you so any questions comments please email me visit my blog find me on facebook instagram or twitter there are two categories that people fall into when they pass away they're either test date or intestate and depending on what type they were sometimes depends on what records that you can find in the probate packages now for most of us i think that when we start thinking about probate packages we automatically go to wills if your ancestor died and left a will he was test state now of course a will is exciting because it'll normally name names as the deceased wants certain property items to go to certain people and we can find lots of family connections in wills we can even find reference to land ownership or other property ownership and they can tell us a lot and give us a lot of clues about our ancestor sometimes a will will even talk about places where they used to live and then we need to go back and look and see if there's any probate in those places as well but wills generally are what we're looking for now here's an example of a will this is the 1840 will of charity stafford in it she bequeathed to her beloved granddaughter barbary e stafford so there's a connection to her beloved daughter barbary jones and then to two sons lunsford and hartwell stafford family connections that perhaps you wouldn't have found if she didn't have this will but if you're like me many times there doesn't seem to be a will for my ancestor if someone dies without a will they are said to be intestate but you know something still had to be done with their property even if they had very very little property something had to be done with it they needed to decide who was going to get it and especially if there were any debtors they made sure to file paperwork to get their money back probate records are court records dealing with the distribution of property a person owned the documents created are placed in a probate package for an individual there is a procedure for creating records in these cases so let's take a look at the types of records found in a packet for someone who has died in test date the first thing that would happen when someone died was the filing of a petition an heir or another interested party like a creditor would go to the courthouse and fill out papers to request the settlement of the estate of the deceased now the petition would often name the heirs where they lived and include the date of death this is a note that was written and left at the court of clerks by the son of my ancestor edmund price edmund died in tessa date and his son wants the judge to know the family has chosen him as the administrator of the estate and from this note we can see the date the note was written and who wrote it and his relationship with the deceased it also says where he lives and why he had to send a note so it's got the date at the top november 27 1868 he says my father has deceased and the family desires me to administrate and then he says i live 40 miles from this courthouse so he had to leave a note because he couldn't just turn around and come back travel was tricky in 1868. he gives the names of the heirs and says that they need to sell some land because there are some debts to pay the note helps to create a list of family members and gives a clue to the fact that there is land involved indicating there is a need to research land records he signs his name giving us a clue to his occupation and further research it says reverend and he gives his address now his father died in richland county and he lived in barnwell county that's a long way to travel no wonder he had to send a note instead of just coming back when the office was open the next step was that a bond was required that would say that the administrator was going to do his full duty and it is signed by witnesses now here are some of the clues that you can find on these bonds number one someone had to pay a thousand dollars now that's a lot of money back then so usually these were most likely members of the family there's also the witnesses who also usually most likely family we have edmund a price who is the son that started the ball rolling and said the family wanted him to be the administrator and then we have a thomas price and a john price we also have a date of the 18th of december 1868. we have a place richland county and we have signatures signatures are valuable to help you determine if people are the same if you've got a disputation between two different men at two different times and you can't tell if it's the same person well check out their signatures next an inventory of the property is taken everything that can be sold is listed with a price remember they had debts to pay and the creditors wanted that money there are wonderful clues in inventories you can learn about your ancestors life by the things they had in their household you can learn about hobbies were there musical instruments occupations can be determined by the equipment they owned did they own livestock what kind of furniture did they own and then sadly pre-civil war records also will list the enslaved they will have their names ages and their price and then there are the sales documents who's buying items on the sale page are listed by the item the price and who bought it look at that who is buying are they family names that you know make a list of all the people who participated in the sales and see where they fit in the family did neighbors come to buy you may be able to find these people in the census now why is this important well it's because of the fan club those friends associates and neighbors oftentimes their records mention our ancestors now probate sometimes took several years sometimes decades to complete a report was given every year until a final report could be given to the court this process started in 1868 and was still going on in 1884 so don't just check the indexes and the books for the year your ancestor died try for several years and even decades afterwards so this annual return for the probate package of edmund s price in 1884 shows his son edmund a price asking for his expenses to be paid for traveling to columbia to file the report he wanted the railroad fee and the judge's fee returned to him now depending on the law if there were minor children or an adult who was not able to care for themselves a guardian may have been appointed creating even more records for a probate package now guardianship records may have also been recorded in other courts so it's important to research the laws at the time to see where guardianship records were placed the types of guardianship created are much like the ones for the estate of the deceased an administrator is chosen a bond signed property would then be sold to pay for the needs of the miners and it all would be submitted to the court you may be surprised to find out a woman may not be given guardianship of her own children during certain times in history a male relative is often the one chosen to look after their interests so don't assume a child has lost both of its parents if their guardianship papers filed now once the child comes of age the court is made aware with another document and a guardianship is no longer needed now remember guardianships are taking care of minors it's important to find out what denotes a minor in the area and the time period that your ancestor died sometimes they're called infants in these guardianship records and that is any minor between the age of 0 and whatever it could be 18 it could be 21. it just depends on the law of that location of that state they would be called an infant and sometimes people get confused with that and think there are more little children than there actually are this is the guardianship application for the children of ellen early after the death of her husband ransom early there were three children who were considered minors in that household they are said to be entitled to some monies from the personal estate of their father now ellen filed this application to gain this money for her children so what was the result well the guardianship of ellen's minor children shows guardianship was awarded to a man named john turner goodman the reason well turns out they thought that ellen was not financially able to care for her children now it's not known at this time who john turner goodman is or if he had any connection to the family his job was to see that the sale of personal property and lands would be able to support the three minor children now this transcription shows that he is asking to be able to have the monies to send them to school well mr goodwill had to file an accounting of the financial support for his awards yearly until they were no longer minors now this document is the record for my great grandfather jubal early it lists the monies that were spent for him and one interesting thing is the clothing that was purchased for him that year nine dollars and 30 cents for clothing the account of jubal's older sister dora lists the payment of tuition for school and her railroad transportation back and forth now perhaps there are still school records available that can tell more about her story so take a good look at the accounting pages for minors in your family tree and how their guardians were spending their money what other records do they suggest that you look for now a woman may have had lands given to her at the time of her marriage or before her marriage sometimes lands were bought by her husband or both together that are in her name these should be set apart and not sold as part of probate unless the woman agrees upon it now ellen early filed a petition in court to make claim on part of the lands being sold in the probate process for her husband she claimed the land was purchased by both she and her husband and gives the exact details of where the land was she asked for it to be hers for as long as she lived including the dwellings on it now she accused her older children of trying to sell it and take away her property there can be some very interesting family stories and gossip in probate records now ellen's petition was examined by the court and it was agreed that the land should be sectioned off and given to her along with some monies from the sale of the state of her husband's property okay as we've seen there are some wonderful pieces of information in probate records and some wonderful clues to continue on with your research so where can you find them probate records can be recorded in packets or in books the originals and microfilms can be found in archives and courthouses and many have been digitized and can be found online so where can you find probate records check online first ancestry family search and some state and county archives have digitized and placed probate records online and it's a continual commitment for them to do so check locally check home sources who in your family may have some original records i have my grandmother's will check the local courthouse and the state and county archives also see if there's a special records office in some places these records are handed off to a records office there's other places to look to some genealogy societies historical societies and other groups have transcribed probate records and they've placed them in books in quarterlies or journals most probate records whether in packet or book form can be found through an index either in the courthouse or online but be sure to look beyond the index in those probate books look at the index and then check to see where that record has been placed find the book number and the page number and go find it many are browsable online some you have to browse the index and then go to the page in that book or you have to go to another digitized film and sometimes you'll find that the search results will bring you right to the record itself yeah we would all like to find a will for our ancestor that tells us everything that we want to know about them and their family but remember even if there is no will there's still a way to discover things about them names dates places family connections living conditions occupations hobbies land ownership their community members all may be mentioned in probate packages as property has to be distributed and sold to pay debts you just never know what you might find so do you have any questions if you do please feel free to contact me at sheri carolinagirlgeneology.com well thank you so much for joining me for analyzing probate records finding clues to your ancestors stories remember even when there's not a will there's still a way to find out information about your ancestors so i hope that you will start looking for probate packages and see what goodies that you can find i'd love to hear from you you can email me at sheri at carolinagirlgeneology.com or you can find me on social media i would love love to make contact so thanks again get busy with those probate packages and find the clues that lead to your ancestors stories bye everybody you",
+  "attempts": [
+    {
+      "client": "IOS",
+      "playability": {
+        "status": "OK",
+        "playableInEmbed": true,
+        "offlineability": {
+          "buttonRenderer": {
+            "navigationEndpoint": {
+              "clickTrackingParams": "CBEQ6ewBIhMImY7ni-zblwMVPWpeAx0msQ42ygEE1ix-bQ==",
+              "ypcGetOfflineUpsellEndpoint": {
+                "params": "ChPqqN25AQ0KC0d2NE1pYnRuOENNIgtHdjRNaWJ0bjhDTSoVCAkYAVIPCgtHdjRNaWJ0bjhDTSAB"
+              }
+            },
+            "trackingParams": "CBEQ6ewBIhMImY7ni-zblwMVPWpeAx0msQ42"
+          }
+        },
+        "pictureInPicture": {
+          "pictureInPictureRenderer": {
+            "playableInPip": true,
+            "offByDefault": false,
+            "shouldResumeOnHead": false
+          }
+        },
+        "miniplayer": {
+          "miniplayerRenderer": {
+            "playbackMode": "PLAYBACK_MODE_ALLOW"
+          }
+        },
+        "contextParams": "Q0FFU0FnZ0M="
+      },
+      "outcome": "ok"
+    }
+  ],
+  "fetched_at": "2026-10-28T04:11:22.560233+00:00",
+  "client": "IOS",
+  "json_path": "transcripts/056_Gv4Mibtn8CM.json",
+  "text_path": "transcripts/056_Gv4Mibtn8CM.txt"
+}

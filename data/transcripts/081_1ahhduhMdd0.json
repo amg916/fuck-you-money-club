@@ -1,0 +1,355 @@
+{
+  "index": 81,
+  "url": "https://www.youtube.com/watch?v=1ahhduhMdd0",
+  "video_id": "1ahhduhMdd0",
+  "status": "ok",
+  "metadata": {
+    "title": "Declaration Under Probate Code 13101 Tutorial",
+    "author": "California State Controller's Office",
+    "channelId": "UCB1t8qTtFOibG0WoHX1cOqg",
+    "lengthSeconds": "207",
+    "viewCount": "19916",
+    "shortDescription": ""
+  },
+  "caption_tracks": [
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=1ahhduhMdd0&ei=7nXhaoCnA9KL2_gPtbrQmAw&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185886&sparams=ip,ipbits,expire,v,ei,opi,xoaf&signature=B0BA5E66AECC60EFEFE50C78A547D9BDE2421C39.8859CA77EB5584524D1D171EE67A122CE185370A&key=yt8&lang=en",
+      "name": {
+        "runs": [
+          {
+            "text": "English"
+          }
+        ]
+      },
+      "vssId": ".en",
+      "languageCode": "en",
+      "isTranslatable": true,
+      "trackName": ""
+    }
+  ],
+  "selected_track": {
+    "baseUrl": "https://www.youtube.com/api/timedtext?v=1ahhduhMdd0&ei=7nXhaoCnA9KL2_gPtbrQmAw&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185886&sparams=ip,ipbits,expire,v,ei,opi,xoaf&signature=B0BA5E66AECC60EFEFE50C78A547D9BDE2421C39.8859CA77EB5584524D1D171EE67A122CE185370A&key=yt8&lang=en",
+    "name": {
+      "runs": [
+        {
+          "text": "English"
+        }
+      ]
+    },
+    "vssId": ".en",
+    "languageCode": "en",
+    "isTranslatable": true,
+    "trackName": ""
+  },
+  "segments": [
+    {
+      "start": 0.34,
+      "duration": 4.02,
+      "text": "Welcome to this tutorial on how to complete the Declaration Under Probate Code Section"
+    },
+    {
+      "start": 4.36,
+      "duration": 3.89,
+      "text": "13101 Form located on the California State Controller's"
+    },
+    {
+      "start": 8.25,
+      "duration": 2.29,
+      "text": "Unclaimed Property Website."
+    },
+    {
+      "start": 10.54,
+      "duration": 4.3,
+      "text": "To navigate to the Declaration Under Probate form from the State Controller's Office website,"
+    },
+    {
+      "start": 14.84,
+      "duration": 1.96,
+      "text": "click on Unclaimed Property."
+    },
+    {
+      "start": 16.8,
+      "duration": 5.8,
+      "text": "Next, click the link for Claim Filing Instructions and Forms."
+    },
+    {
+      "start": 22.6,
+      "duration": 3.85,
+      "text": "Lastly, scroll down to the bottom of the page, and click the link for"
+    },
+    {
+      "start": 26.45,
+      "duration": 2.13,
+      "text": "the Declaration Under Probate Code 13101 form."
+    },
+    {
+      "start": 28.58,
+      "duration": 6.49,
+      "text": "The Declaration Under Probate Form is used for Heir claims, as a way to declare that"
+    },
+    {
+      "start": 35.07,
+      "duration": 3.44,
+      "text": "no Probate was required for an estate, or that the Administrator"
+    },
+    {
+      "start": 38.51,
+      "duration": 2.709,
+      "text": "or Personal Representative of the estate has provided"
+    },
+    {
+      "start": 41.219,
+      "duration": 5.66,
+      "text": "consent in writing stating the claimant is entitled to the Unclaimed Property."
+    },
+    {
+      "start": 46.879,
+      "duration": 4.711,
+      "text": "At the top of the form, fill in the name, location, and date of passing for the deceased"
+    },
+    {
+      "start": 51.59,
+      "duration": 2.22,
+      "text": "owner."
+    },
+    {
+      "start": 53.81,
+      "duration": 4.4,
+      "text": "This information can be found on the deceased owner's death certificate."
+    },
+    {
+      "start": 58.21,
+      "duration": 5.329,
+      "text": "In section 3, check one of the following appropriate boxes:"
+    },
+    {
+      "start": 63.539,
+      "duration": 3.86,
+      "text": "Check the first box if there are no court proceedings pending, nor been conducted to"
+    },
+    {
+      "start": 67.399,
+      "duration": 3.04,
+      "text": "administer the decedent's estate in California, and that"
+    },
+    {
+      "start": 70.439,
+      "duration": 3.11,
+      "text": "no personal representative or special administrator has been"
+    },
+    {
+      "start": 73.549,
+      "duration": 4.271,
+      "text": "appointed by the court to administer the estate."
+    },
+    {
+      "start": 77.82,
+      "duration": 4.049,
+      "text": "Check the second box if there is written consent from the decedent's personal representative"
+    },
+    {
+      "start": 81.869,
+      "duration": 3.23,
+      "text": "providing for you to receive payment, transfer or delivery"
+    },
+    {
+      "start": 85.099,
+      "duration": 4.251,
+      "text": "of the properties listed in Section 5."
+    },
+    {
+      "start": 89.35,
+      "duration": 5.379,
+      "text": "In section 5, list all of the Property ID Numbers you are claiming."
+    },
+    {
+      "start": 94.729,
+      "duration": 4.111,
+      "text": "You may attach a separate sheet if there are too many properties to list on the form."
+    },
+    {
+      "start": 98.84,
+      "duration": 5.11,
+      "text": "In that case, simply write *see attached list*."
+    },
+    {
+      "start": 103.95,
+      "duration": 4.5,
+      "text": "Please note that your Claim ID Number is not acceptable in this section, only the Property"
+    },
+    {
+      "start": 108.45,
+      "duration": 2.919,
+      "text": "ID Numbers that are part of your claim."
+    },
+    {
+      "start": 111.369,
+      "duration": 5.24,
+      "text": "In section 6, check one of the following appropriate boxes:"
+    },
+    {
+      "start": 116.609,
+      "duration": 4.8,
+      "text": "Check the first box if the claimant is a beneficiary listed in the decedent's will; or, if the"
+    },
+    {
+      "start": 121.409,
+      "duration": 3.07,
+      "text": "decedent did not leave a will, but the claimant is a direct"
+    },
+    {
+      "start": 124.479,
+      "duration": 3.64,
+      "text": "relative of the decedent, such as a spouse, child, grandchild,"
+    },
+    {
+      "start": 128.119,
+      "duration": 3.561,
+      "text": "parent, and so on."
+    },
+    {
+      "start": 131.68,
+      "duration": 3.699,
+      "text": "Check the second box if the claimant is the guardian or conservator of the estate of the"
+    },
+    {
+      "start": 135.379,
+      "duration": 4.5,
+      "text": "person entitled to any of the decedent's property."
+    },
+    {
+      "start": 139.879,
+      "duration": 4.78,
+      "text": "Or if the claimant is the trustee of the decedent's trust, the personal representative of a beneficiary"
+    },
+    {
+      "start": 144.659,
+      "duration": 3.16,
+      "text": "of the decedent's estate, or is an attorney-in-fact"
+    },
+    {
+      "start": 147.819,
+      "duration": 2.681,
+      "text": "as part of a legally executed Durable Power of Attorney"
+    },
+    {
+      "start": 150.5,
+      "duration": 1.569,
+      "text": "for the claimant."
+    },
+    {
+      "start": 152.069,
+      "duration": 4.591,
+      "text": "Fill in the name of the person or the name of the trust entitled to the decedent's"
+    },
+    {
+      "start": 156.66,
+      "duration": 3.02,
+      "text": "property, whichever is applicable."
+    },
+    {
+      "start": 159.68,
+      "duration": 5.889,
+      "text": "Finally, the claimant's signature, printed name, and date the claimant makes this declaration"
+    },
+    {
+      "start": 165.569,
+      "duration": 3.03,
+      "text": "is required at the bottom of the form."
+    },
+    {
+      "start": 168.599,
+      "duration": 5.001,
+      "text": "By signing this form, you declare the statements made on this form are true under penalty of"
+    },
+    {
+      "start": 173.6,
+      "duration": 1.0,
+      "text": "perjury."
+    },
+    {
+      "start": 174.6,
+      "duration": 3.169,
+      "text": "A notary is not required on this form."
+    },
+    {
+      "start": 177.769,
+      "duration": 4.25,
+      "text": "If you have any questions, please contact the State Controller's Office by phone at"
+    },
+    {
+      "start": 182.019,
+      "duration": 4.881,
+      "text": "800-992-4647."
+    },
+    {
+      "start": 186.9,
+      "duration": 5.21,
+      "text": "Our Call Center is available 8 a.m. to 5 p.m. Pacific Time, Monday through Friday, excluding"
+    },
+    {
+      "start": 192.11,
+      "duration": 2.57,
+      "text": "state holidays."
+    },
+    {
+      "start": 194.68,
+      "duration": 3.32,
+      "text": "The California State Controller's team is committed to helping rightful owners receive"
+    },
+    {
+      "start": 198.0,
+      "duration": 2.73,
+      "text": "their property."
+    },
+    {
+      "start": 200.73,
+      "duration": 3.53,
+      "text": "Please help spread the word by sharing this tutorial with family and friends who may have"
+    },
+    {
+      "start": 204.26,
+      "duration": 1.67,
+      "text": "unclaimed property waiting for them."
+    }
+  ],
+  "full_text": "Welcome to this tutorial on how to complete the Declaration Under Probate Code Section 13101 Form located on the California State Controller's Unclaimed Property Website. To navigate to the Declaration Under Probate form from the State Controller's Office website, click on Unclaimed Property. Next, click the link for Claim Filing Instructions and Forms. Lastly, scroll down to the bottom of the page, and click the link for the Declaration Under Probate Code 13101 form. The Declaration Under Probate Form is used for Heir claims, as a way to declare that no Probate was required for an estate, or that the Administrator or Personal Representative of the estate has provided consent in writing stating the claimant is entitled to the Unclaimed Property. At the top of the form, fill in the name, location, and date of passing for the deceased owner. This information can be found on the deceased owner's death certificate. In section 3, check one of the following appropriate boxes: Check the first box if there are no court proceedings pending, nor been conducted to administer the decedent's estate in California, and that no personal representative or special administrator has been appointed by the court to administer the estate. Check the second box if there is written consent from the decedent's personal representative providing for you to receive payment, transfer or delivery of the properties listed in Section 5. In section 5, list all of the Property ID Numbers you are claiming. You may attach a separate sheet if there are too many properties to list on the form. In that case, simply write *see attached list*. Please note that your Claim ID Number is not acceptable in this section, only the Property ID Numbers that are part of your claim. In section 6, check one of the following appropriate boxes: Check the first box if the claimant is a beneficiary listed in the decedent's will; or, if the decedent did not leave a will, but the claimant is a direct relative of the decedent, such as a spouse, child, grandchild, parent, and so on. Check the second box if the claimant is the guardian or conservator of the estate of the person entitled to any of the decedent's property. Or if the claimant is the trustee of the decedent's trust, the personal representative of a beneficiary of the decedent's estate, or is an attorney-in-fact as part of a legally executed Durable Power of Attorney for the claimant. Fill in the name of the person or the name of the trust entitled to the decedent's property, whichever is applicable. Finally, the claimant's signature, printed name, and date the claimant makes this declaration is required at the bottom of the form. By signing this form, you declare the statements made on this form are true under penalty of perjury. A notary is not required on this form. If you have any questions, please contact the State Controller's Office by phone at 800-992-4647. Our Call Center is available 8 a.m. to 5 p.m. Pacific Time, Monday through Friday, excluding state holidays. The California State Controller's team is committed to helping rightful owners receive their property. Please help spread the word by sharing this tutorial with family and friends who may have unclaimed property waiting for them.",
+  "attempts": [
+    {
+      "client": "IOS",
+      "playability": {
+        "status": "OK",
+        "playableInEmbed": false,
+        "offlineability": {
+          "buttonRenderer": {
+            "navigationEndpoint": {
+              "clickTrackingParams": "CAkQ6ewBIhMIgNbejezblwMV0sUWCR01HRTDygEEEBsKEw==",
+              "ypcGetOfflineUpsellEndpoint": {
+                "params": "ChPqqN25AQ0KCzFhaGhkdWhNZGQwIgsxYWhoZHVoTWRkMCoVCAkYAVIPCgsxYWhoZHVoTWRkMCAB"
+              }
+            },
+            "trackingParams": "CAkQ6ewBIhMIgNbejezblwMV0sUWCR01HRTD"
+          }
+        },
+        "pictureInPicture": {
+          "pictureInPictureRenderer": {
+            "playableInPip": true,
+            "offByDefault": false,
+            "shouldResumeOnHead": false
+          }
+        },
+        "miniplayer": {
+          "miniplayerRenderer": {
+            "playbackMode": "PLAYBACK_MODE_ALLOW"
+          }
+        },
+        "contextParams": "Q0FFU0FnZ0M="
+      },
+      "outcome": "ok"
+    }
+  ],
+  "fetched_at": "2026-10-28T04:11:26.550640+00:00",
+  "client": "IOS",
+  "json_path": "transcripts/081_1ahhduhMdd0.json",
+  "text_path": "transcripts/081_1ahhduhMdd0.txt"
+}

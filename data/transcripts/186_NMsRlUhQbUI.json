@@ -1,0 +1,960 @@
+{
+  "index": 186,
+  "url": "https://www.youtube.com/watch?v=NMsRlUhQbUI",
+  "video_id": "NMsRlUhQbUI",
+  "status": "ok",
+  "metadata": {
+    "title": "Best Real Estate Data APIs for Building a Deal Finder App",
+    "author": "REI Tech Club",
+    "channelId": "UCIiL-dg6dDk5zVGL86TNvGg",
+    "lengthSeconds": "354",
+    "viewCount": "1253",
+    "shortDescription": "In this video, I take you behind the scenes of my journey to build an AI-powered deal-finding app for real estate investing. The concept is simple: scan active listings, apply my buy box, and get the best deals in my inbox every day. But the biggest challenge? Finding a reliable, legal data source—without a real estate license or access to the MLS.\n\nI started with the obvious options like Zillow and Redfin, but scraping them is a legal minefield. I explored official MLS APIs, but most of them require licensing, bureaucracy, and enterprise-level partnerships. So I had to keep going.\n\nEventually, I filtered down dozens of data providers to just a few that seemed transparent, investor-friendly, and easy to work with. In the end, I chose Rentcast—a tool with open API documentation, clear pricing, and solid national coverage, even if it isn’t a direct MLS feed.\n\nThis is the first step in building a smarter real estate tool—and a smarter investing system—with AI. If you’re a solo investor or builder looking to leverage tech in your real estate strategy, this channel is for you.\n\nSubscribe to stay updated on the build, or join the REI + AI newsletter at: https://reiplusai.com/\n\nFor business inquiries, contact: ben@reiplusai.com",
+    "keywords": [
+      "real estate investing",
+      "real estate investor tools",
+      "ai real estate",
+      "proptech",
+      "real estate deal finder",
+      "best real estate api",
+      "mls data access",
+      "real estate automation",
+      "ai in real estate",
+      "how to find real estate deals",
+      "rentcast api",
+      "housecanary vs rentcast",
+      "real estate data tools",
+      "real estate ai app",
+      "real estate tech stack",
+      "automate real estate investing",
+      "real estate data sources",
+      "real estate investor software",
+      "how to use ai for real estate",
+      "build real estate app",
+      "real estate api"
+    ]
+  },
+  "caption_tracks": [
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=NMsRlUhQbUI&ei=AHbhasuJJf-KsfIPnZ-QmQc&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185904&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=AFCDF66EAD6C599C406112EE4282A9DF64553412.607132BCAAE19D7FEC055D731DFBE46EE57A0861&key=yt8&kind=asr&lang=en",
+      "name": {
+        "runs": [
+          {
+            "text": "English (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.en",
+      "languageCode": "en",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    }
+  ],
+  "selected_track": {
+    "baseUrl": "https://www.youtube.com/api/timedtext?v=NMsRlUhQbUI&ei=AHbhasuJJf-KsfIPnZ-QmQc&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185904&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=AFCDF66EAD6C599C406112EE4282A9DF64553412.607132BCAAE19D7FEC055D731DFBE46EE57A0861&key=yt8&kind=asr&lang=en",
+    "name": {
+      "runs": [
+        {
+          "text": "English (auto-generated)"
+        }
+      ]
+    },
+    "vssId": "a.en",
+    "languageCode": "en",
+    "kind": "asr",
+    "isTranslatable": true,
+    "trackName": ""
+  },
+  "segments": [
+    {
+      "start": 0.16,
+      "duration": 4.08,
+      "text": "I'm a real estate investor that wants to"
+    },
+    {
+      "start": 2.159,
+      "duration": 3.841,
+      "text": "leverage AI in my investing."
+    },
+    {
+      "start": 4.24,
+      "duration": 3.76,
+      "text": "Specifically, I want to build a tool"
+    },
+    {
+      "start": 6.0,
+      "duration": 3.92,
+      "text": "that searches for active listings in my"
+    },
+    {
+      "start": 8.0,
+      "duration": 4.24,
+      "text": "market and automatically sends me the"
+    },
+    {
+      "start": 9.92,
+      "duration": 4.4,
+      "text": "best deal every day. Sounds nice, right?"
+    },
+    {
+      "start": 12.24,
+      "duration": 4.24,
+      "text": "But there's just one problem. I need"
+    },
+    {
+      "start": 14.32,
+      "duration": 4.64,
+      "text": "data. And it turns out that getting real"
+    },
+    {
+      "start": 16.48,
+      "duration": 4.559,
+      "text": "estate data, particularly for onmarket"
+    },
+    {
+      "start": 18.96,
+      "duration": 3.6,
+      "text": "listings, is not an easy task."
+    },
+    {
+      "start": 21.039,
+      "duration": 2.961,
+      "text": "Especially if you want nationwide"
+    },
+    {
+      "start": 22.56,
+      "duration": 3.92,
+      "text": "coverage and you don't have a real"
+    },
+    {
+      "start": 24.0,
+      "duration": 4.4,
+      "text": "estate license or direct access to an"
+    },
+    {
+      "start": 26.48,
+      "duration": 3.84,
+      "text": "MLS. But just because something's"
+    },
+    {
+      "start": 28.4,
+      "duration": 3.52,
+      "text": "difficult doesn't mean it's impossible."
+    },
+    {
+      "start": 30.32,
+      "duration": 3.6,
+      "text": "So in this video, I'm going to walk you"
+    },
+    {
+      "start": 31.92,
+      "duration": 4.4,
+      "text": "through my process. I started with"
+    },
+    {
+      "start": 33.92,
+      "duration": 4.4,
+      "text": "dozens of different data sources, APIs,"
+    },
+    {
+      "start": 36.32,
+      "duration": 4.16,
+      "text": "and real estate platforms. I then"
+    },
+    {
+      "start": 38.32,
+      "duration": 4.48,
+      "text": "narrowed that list down to one single"
+    },
+    {
+      "start": 40.48,
+      "duration": 4.56,
+      "text": "tool, one real estate API that I think"
+    },
+    {
+      "start": 42.8,
+      "duration": 4.4,
+      "text": "is best suited for my application, and"
+    },
+    {
+      "start": 45.04,
+      "duration": 4.8,
+      "text": "this is finding onmarket deals as an"
+    },
+    {
+      "start": 47.2,
+      "duration": 4.64,
+      "text": "individual real estate investor. And no,"
+    },
+    {
+      "start": 49.84,
+      "duration": 3.76,
+      "text": "this video is not sponsored. In fact,"
+    },
+    {
+      "start": 51.84,
+      "duration": 3.84,
+      "text": "this is the first video on my channel."
+    },
+    {
+      "start": 53.6,
+      "duration": 4.24,
+      "text": "So, as of posting this, I have zero"
+    },
+    {
+      "start": 55.68,
+      "duration": 3.92,
+      "text": "subscribers and nobody knows who I am."
+    },
+    {
+      "start": 57.84,
+      "duration": 6.399,
+      "text": "Yet, you still found me. So, congrats"
+    },
+    {
+      "start": 59.6,
+      "duration": 6.64,
+      "text": "and maybe subscribe. Let's dive in."
+    },
+    {
+      "start": 64.239,
+      "duration": 4.481,
+      "text": "Like most people, I started with what I"
+    },
+    {
+      "start": 66.24,
+      "duration": 5.12,
+      "text": "already knew. Zillow, Redfin,"
+    },
+    {
+      "start": 68.72,
+      "duration": 4.56,
+      "text": "Realtor.com. These sites clearly have"
+    },
+    {
+      "start": 71.36,
+      "duration": 3.84,
+      "text": "the data I need. I mean, you can see it"
+    },
+    {
+      "start": 73.28,
+      "duration": 4.0,
+      "text": "right there. But there's one major"
+    },
+    {
+      "start": 75.2,
+      "duration": 4.239,
+      "text": "problem. You can't use them legally to"
+    },
+    {
+      "start": 77.28,
+      "duration": 3.68,
+      "text": "power your own tools. Scraping these"
+    },
+    {
+      "start": 79.439,
+      "duration": 4.081,
+      "text": "websites is against their terms of"
+    },
+    {
+      "start": 80.96,
+      "duration": 4.56,
+      "text": "service. It can get you banned, sued, or"
+    },
+    {
+      "start": 83.52,
+      "duration": 4.08,
+      "text": "both. And even if you get away with it,"
+    },
+    {
+      "start": 85.52,
+      "duration": 4.0,
+      "text": "it's incredibly fragile. They can change"
+    },
+    {
+      "start": 87.6,
+      "duration": 3.839,
+      "text": "their backend structure, update their"
+    },
+    {
+      "start": 89.52,
+      "duration": 3.599,
+      "text": "protection layers, or just block you at"
+    },
+    {
+      "start": 91.439,
+      "duration": 3.601,
+      "text": "any time. It's like building a house"
+    },
+    {
+      "start": 93.119,
+      "duration": 3.521,
+      "text": "with a foundation made of loose sand"
+    },
+    {
+      "start": 95.04,
+      "duration": 3.2,
+      "text": "right next to a cliff. I don't want to"
+    },
+    {
+      "start": 96.64,
+      "duration": 3.839,
+      "text": "put in the effort to build something on"
+    },
+    {
+      "start": 98.24,
+      "duration": 3.76,
+      "text": "such short-term thinking. So, even if"
+    },
+    {
+      "start": 100.479,
+      "duration": 3.6,
+      "text": "those platforms are familiar and"
+    },
+    {
+      "start": 102.0,
+      "duration": 4.399,
+      "text": "tempting to use, I had to remove them"
+    },
+    {
+      "start": 104.079,
+      "duration": 4.0,
+      "text": "from consideration. So, next, I dug a"
+    },
+    {
+      "start": 106.399,
+      "duration": 3.051,
+      "text": "bit deeper into the world of real estate"
+    },
+    {
+      "start": 108.079,
+      "duration": 3.281,
+      "text": "data sources."
+    },
+    {
+      "start": 109.45,
+      "duration": 3.989,
+      "text": "[Music]"
+    },
+    {
+      "start": 111.36,
+      "duration": 4.24,
+      "text": "This is where things got both exciting"
+    },
+    {
+      "start": 113.439,
+      "duration": 3.841,
+      "text": "and discouraging. Onmarket listings in"
+    },
+    {
+      "start": 115.6,
+      "duration": 4.32,
+      "text": "the US are controlled by hundreds of"
+    },
+    {
+      "start": 117.28,
+      "duration": 4.32,
+      "text": "local MLS's or multiple listing"
+    },
+    {
+      "start": 119.92,
+      "duration": 3.68,
+      "text": "services. These organizations are"
+    },
+    {
+      "start": 121.6,
+      "duration": 4.159,
+      "text": "effectively a data silo and they're"
+    },
+    {
+      "start": 123.6,
+      "duration": 4.639,
+      "text": "protective of their data, too. Each MLS"
+    },
+    {
+      "start": 125.759,
+      "duration": 4.401,
+      "text": "has its own rules, fees, and politics."
+    },
+    {
+      "start": 128.239,
+      "duration": 4.961,
+      "text": "Yes, there's technically a direct way to"
+    },
+    {
+      "start": 130.16,
+      "duration": 4.96,
+      "text": "access the MLS through APIs, but I found"
+    },
+    {
+      "start": 133.2,
+      "duration": 4.16,
+      "text": "that unless you're a real estate agent,"
+    },
+    {
+      "start": 135.12,
+      "duration": 4.08,
+      "text": "a broker, or certified software"
+    },
+    {
+      "start": 137.36,
+      "duration": 4.8,
+      "text": "development with formal agreements in"
+    },
+    {
+      "start": 139.2,
+      "duration": 5.52,
+      "text": "place, it's really cost prohibitive and"
+    },
+    {
+      "start": 142.16,
+      "duration": 4.96,
+      "text": "not practical to do so. And as a smaller"
+    },
+    {
+      "start": 144.72,
+      "duration": 3.92,
+      "text": "real estate investor all by myself, that"
+    },
+    {
+      "start": 147.12,
+      "duration": 3.759,
+      "text": "just simply wasn't going to work."
+    },
+    {
+      "start": 148.64,
+      "duration": 4.16,
+      "text": "Unfortunately, this dropped several data"
+    },
+    {
+      "start": 150.879,
+      "duration": 3.841,
+      "text": "sources from the funnel, many of which"
+    },
+    {
+      "start": 152.8,
+      "duration": 4.64,
+      "text": "felt like they were made for large-scale"
+    },
+    {
+      "start": 154.72,
+      "duration": 4.4,
+      "text": "enterprise users, not for solo investors"
+    },
+    {
+      "start": 157.44,
+      "duration": 3.04,
+      "text": "just trying to build a new tool. I"
+    },
+    {
+      "start": 159.12,
+      "duration": 4.16,
+      "text": "simply don't have the bandwidth or"
+    },
+    {
+      "start": 160.48,
+      "duration": 4.96,
+      "text": "budget to negotiate access with multiple"
+    },
+    {
+      "start": 163.28,
+      "duration": 4.319,
+      "text": "MLS's, especially if I want to build a"
+    },
+    {
+      "start": 165.44,
+      "duration": 5.92,
+      "text": "nationwide tool. So, I guess it's on to"
+    },
+    {
+      "start": 167.599,
+      "duration": 5.761,
+      "text": "the next step in the funnel."
+    },
+    {
+      "start": 171.36,
+      "duration": 3.92,
+      "text": "At this point, I started evaluating the"
+    },
+    {
+      "start": 173.36,
+      "duration": 4.239,
+      "text": "remaining data sources based on their"
+    },
+    {
+      "start": 175.28,
+      "duration": 4.0,
+      "text": "potential ease of use. Ideally, I want"
+    },
+    {
+      "start": 177.599,
+      "duration": 4.0,
+      "text": "to work with a tool that's designed with"
+    },
+    {
+      "start": 179.28,
+      "duration": 4.4,
+      "text": "individual investors in mind and that's"
+    },
+    {
+      "start": 181.599,
+      "duration": 4.481,
+      "text": "transparent upfront about their pricing"
+    },
+    {
+      "start": 183.68,
+      "duration": 4.8,
+      "text": "and API documentation. And that knocked"
+    },
+    {
+      "start": 186.08,
+      "duration": 4.079,
+      "text": "out a surprising number of companies."
+    },
+    {
+      "start": 188.48,
+      "duration": 3.52,
+      "text": "Personally, I felt like many of the"
+    },
+    {
+      "start": 190.159,
+      "duration": 4.881,
+      "text": "tools lack transparency about their"
+    },
+    {
+      "start": 192.0,
+      "duration": 4.879,
+      "text": "pricing, API documentation, or even just"
+    },
+    {
+      "start": 195.04,
+      "duration": 3.839,
+      "text": "confirmation that the tool is made"
+    },
+    {
+      "start": 196.879,
+      "duration": 3.601,
+      "text": "available to investors like me. It's"
+    },
+    {
+      "start": 198.879,
+      "duration": 3.841,
+      "text": "possible that these data sources may"
+    },
+    {
+      "start": 200.48,
+      "duration": 3.92,
+      "text": "work for me one day, but at this time"
+    },
+    {
+      "start": 202.72,
+      "duration": 3.92,
+      "text": "I'm looking for something a bit more"
+    },
+    {
+      "start": 204.4,
+      "duration": 4.479,
+      "text": "accessible and beginner friendly to be"
+    },
+    {
+      "start": 206.64,
+      "duration": 4.239,
+      "text": "honest. So, with this last ease of use"
+    },
+    {
+      "start": 208.879,
+      "duration": 4.321,
+      "text": "filter in mind, the bottom of the funnel"
+    },
+    {
+      "start": 210.879,
+      "duration": 5.201,
+      "text": "came down to two serious contenders."
+    },
+    {
+      "start": 213.2,
+      "duration": 5.039,
+      "text": "House Canary and Rentcast. House Canary"
+    },
+    {
+      "start": 216.08,
+      "duration": 5.04,
+      "text": "is a legitimate option, but it still"
+    },
+    {
+      "start": 218.239,
+      "duration": 4.64,
+      "text": "felt a bit more enterpriseoriented."
+    },
+    {
+      "start": 221.12,
+      "duration": 3.759,
+      "text": "For example, when I attempted to book a"
+    },
+    {
+      "start": 222.879,
+      "duration": 4.0,
+      "text": "demo call with my personal Gmail"
+    },
+    {
+      "start": 224.879,
+      "duration": 3.761,
+      "text": "address, their website wouldn't accept"
+    },
+    {
+      "start": 226.879,
+      "duration": 3.201,
+      "text": "it. it had to be a corporate email."
+    },
+    {
+      "start": 228.64,
+      "duration": 3.44,
+      "text": "While on the other hand, I felt like"
+    },
+    {
+      "start": 230.08,
+      "duration": 4.32,
+      "text": "Rentcast really nailed their marketing"
+    },
+    {
+      "start": 232.08,
+      "duration": 4.239,
+      "text": "of being investorfriendly and they stood"
+    },
+    {
+      "start": 234.4,
+      "duration": 3.759,
+      "text": "out to me based on their transparency."
+    },
+    {
+      "start": 236.319,
+      "duration": 4.241,
+      "text": "They clearly shared their pricing and"
+    },
+    {
+      "start": 238.159,
+      "duration": 4.561,
+      "text": "API documentation upfront on their"
+    },
+    {
+      "start": 240.56,
+      "duration": 4.319,
+      "text": "website. In fact, I was even able to"
+    },
+    {
+      "start": 242.72,
+      "duration": 3.92,
+      "text": "test a few of their APIs, all within"
+    },
+    {
+      "start": 244.879,
+      "duration": 3.92,
+      "text": "just a few minutes of signing up and"
+    },
+    {
+      "start": 246.64,
+      "duration": 4.4,
+      "text": "completely for free. Now, to be clear,"
+    },
+    {
+      "start": 248.799,
+      "duration": 4.08,
+      "text": "Redcast is not at all perfect. For"
+    },
+    {
+      "start": 251.04,
+      "duration": 4.24,
+      "text": "example, it's a data source that's not"
+    },
+    {
+      "start": 252.879,
+      "duration": 4.48,
+      "text": "directly based from the MLS. It's"
+    },
+    {
+      "start": 255.28,
+      "duration": 4.0,
+      "text": "instead based on third-party derived"
+    },
+    {
+      "start": 257.359,
+      "duration": 4.56,
+      "text": "information. So, it's not quite as"
+    },
+    {
+      "start": 259.28,
+      "duration": 4.96,
+      "text": "official as directly sourcing data from"
+    },
+    {
+      "start": 261.919,
+      "duration": 4.641,
+      "text": "the MLS. But at the time of this video,"
+    },
+    {
+      "start": 264.24,
+      "duration": 4.72,
+      "text": "they still claim to have roughly 96%"
+    },
+    {
+      "start": 266.56,
+      "duration": 4.24,
+      "text": "coverage nationwide for residential"
+    },
+    {
+      "start": 268.96,
+      "duration": 3.2,
+      "text": "sales and even rental properties as"
+    },
+    {
+      "start": 270.8,
+      "duration": 3.04,
+      "text": "well. And that includes a lot of"
+    },
+    {
+      "start": 272.16,
+      "duration": 4.96,
+      "text": "different types of properties. They have"
+    },
+    {
+      "start": 273.84,
+      "duration": 6.32,
+      "text": "single family homes, condos, town homes,"
+    },
+    {
+      "start": 277.12,
+      "duration": 5.2,
+      "text": "manufactured housing, small multifamily,"
+    },
+    {
+      "start": 280.16,
+      "duration": 3.84,
+      "text": "and even vacant land. The only major"
+    },
+    {
+      "start": 282.32,
+      "duration": 4.0,
+      "text": "category I didn't see was"
+    },
+    {
+      "start": 284.0,
+      "duration": 3.919,
+      "text": "non-residential commercial real estate"
+    },
+    {
+      "start": 286.32,
+      "duration": 4.24,
+      "text": "like office buildings, industrial"
+    },
+    {
+      "start": 287.919,
+      "duration": 4.241,
+      "text": "spaces, retail, etc. But that doesn't"
+    },
+    {
+      "start": 290.56,
+      "duration": 4.48,
+      "text": "bother me cuz I'm not a commercial real"
+    },
+    {
+      "start": 292.16,
+      "duration": 5.36,
+      "text": "estate investor. So, it's decided for my"
+    },
+    {
+      "start": 295.04,
+      "duration": 4.8,
+      "text": "first version of building an onmarket AI"
+    },
+    {
+      "start": 297.52,
+      "duration": 4.56,
+      "text": "enabled deal finding app, I'm going to"
+    },
+    {
+      "start": 299.84,
+      "duration": 4.48,
+      "text": "move forward using rentcast data. So,"
+    },
+    {
+      "start": 302.08,
+      "duration": 4.24,
+      "text": "let's recap. I started with dozens of"
+    },
+    {
+      "start": 304.32,
+      "duration": 4.159,
+      "text": "options for real estate data, but I"
+    },
+    {
+      "start": 306.32,
+      "duration": 4.48,
+      "text": "first eliminated consumer websites like"
+    },
+    {
+      "start": 308.479,
+      "duration": 4.881,
+      "text": "Zillow and Redfin because scraping them"
+    },
+    {
+      "start": 310.8,
+      "duration": 4.32,
+      "text": "is a major legal liability and likely"
+    },
+    {
+      "start": 313.36,
+      "duration": 4.0,
+      "text": "not going to work out in the long term."
+    },
+    {
+      "start": 315.12,
+      "duration": 4.32,
+      "text": "I also eliminated MLS dependent"
+    },
+    {
+      "start": 317.36,
+      "duration": 4.48,
+      "text": "platforms that required too much red"
+    },
+    {
+      "start": 319.44,
+      "duration": 4.08,
+      "text": "tape, licensing, and bureaucracy. And"
+    },
+    {
+      "start": 321.84,
+      "duration": 3.44,
+      "text": "lastly, I filtered down the remaining"
+    },
+    {
+      "start": 323.52,
+      "duration": 3.519,
+      "text": "data sources based on their potential"
+    },
+    {
+      "start": 325.28,
+      "duration": 3.919,
+      "text": "ease of use. And that led me to"
+    },
+    {
+      "start": 327.039,
+      "duration": 4.641,
+      "text": "Rentcast. So, my next step is to dive"
+    },
+    {
+      "start": 329.199,
+      "duration": 4.321,
+      "text": "further into their API documentation,"
+    },
+    {
+      "start": 331.68,
+      "duration": 4.0,
+      "text": "figure out how to query their data"
+    },
+    {
+      "start": 333.52,
+      "duration": 3.519,
+      "text": "effectively, and start building my app."
+    },
+    {
+      "start": 335.68,
+      "duration": 3.519,
+      "text": "So, if you're interested in following"
+    },
+    {
+      "start": 337.039,
+      "duration": 4.241,
+      "text": "along in this process or simply just"
+    },
+    {
+      "start": 339.199,
+      "duration": 4.081,
+      "text": "learning more about how AI can improve"
+    },
+    {
+      "start": 341.28,
+      "duration": 3.6,
+      "text": "your life as a real estate investor,"
+    },
+    {
+      "start": 343.28,
+      "duration": 3.28,
+      "text": "then I encourage you to subscribe to"
+    },
+    {
+      "start": 344.88,
+      "duration": 3.12,
+      "text": "this channel. It's brand new and you"
+    },
+    {
+      "start": 346.56,
+      "duration": 3.84,
+      "text": "have an opportunity to be one of my"
+    },
+    {
+      "start": 348.0,
+      "duration": 4.24,
+      "text": "first subscribers. How often do you get"
+    },
+    {
+      "start": 350.4,
+      "duration": 3.04,
+      "text": "that opportunity? Well, thanks for"
+    },
+    {
+      "start": 352.24,
+      "duration": 1.62,
+      "text": "watching this and I'll see you in the"
+    },
+    {
+      "start": 353.44,
+      "duration": 2.489,
+      "text": "next"
+    },
+    {
+      "start": 353.86,
+      "duration": 2.069,
+      "text": "[Music]"
+    }
+  ],
+  "full_text": "I'm a real estate investor that wants to leverage AI in my investing. Specifically, I want to build a tool that searches for active listings in my market and automatically sends me the best deal every day. Sounds nice, right? But there's just one problem. I need data. And it turns out that getting real estate data, particularly for onmarket listings, is not an easy task. Especially if you want nationwide coverage and you don't have a real estate license or direct access to an MLS. But just because something's difficult doesn't mean it's impossible. So in this video, I'm going to walk you through my process. I started with dozens of different data sources, APIs, and real estate platforms. I then narrowed that list down to one single tool, one real estate API that I think is best suited for my application, and this is finding onmarket deals as an individual real estate investor. And no, this video is not sponsored. In fact, this is the first video on my channel. So, as of posting this, I have zero subscribers and nobody knows who I am. Yet, you still found me. So, congrats and maybe subscribe. Let's dive in. Like most people, I started with what I already knew. Zillow, Redfin, Realtor.com. These sites clearly have the data I need. I mean, you can see it right there. But there's one major problem. You can't use them legally to power your own tools. Scraping these websites is against their terms of service. It can get you banned, sued, or both. And even if you get away with it, it's incredibly fragile. They can change their backend structure, update their protection layers, or just block you at any time. It's like building a house with a foundation made of loose sand right next to a cliff. I don't want to put in the effort to build something on such short-term thinking. So, even if those platforms are familiar and tempting to use, I had to remove them from consideration. So, next, I dug a bit deeper into the world of real estate data sources. [Music] This is where things got both exciting and discouraging. Onmarket listings in the US are controlled by hundreds of local MLS's or multiple listing services. These organizations are effectively a data silo and they're protective of their data, too. Each MLS has its own rules, fees, and politics. Yes, there's technically a direct way to access the MLS through APIs, but I found that unless you're a real estate agent, a broker, or certified software development with formal agreements in place, it's really cost prohibitive and not practical to do so. And as a smaller real estate investor all by myself, that just simply wasn't going to work. Unfortunately, this dropped several data sources from the funnel, many of which felt like they were made for large-scale enterprise users, not for solo investors just trying to build a new tool. I simply don't have the bandwidth or budget to negotiate access with multiple MLS's, especially if I want to build a nationwide tool. So, I guess it's on to the next step in the funnel. At this point, I started evaluating the remaining data sources based on their potential ease of use. Ideally, I want to work with a tool that's designed with individual investors in mind and that's transparent upfront about their pricing and API documentation. And that knocked out a surprising number of companies. Personally, I felt like many of the tools lack transparency about their pricing, API documentation, or even just confirmation that the tool is made available to investors like me. It's possible that these data sources may work for me one day, but at this time I'm looking for something a bit more accessible and beginner friendly to be honest. So, with this last ease of use filter in mind, the bottom of the funnel came down to two serious contenders. House Canary and Rentcast. House Canary is a legitimate option, but it still felt a bit more enterpriseoriented. For example, when I attempted to book a demo call with my personal Gmail address, their website wouldn't accept it. it had to be a corporate email. While on the other hand, I felt like Rentcast really nailed their marketing of being investorfriendly and they stood out to me based on their transparency. They clearly shared their pricing and API documentation upfront on their website. In fact, I was even able to test a few of their APIs, all within just a few minutes of signing up and completely for free. Now, to be clear, Redcast is not at all perfect. For example, it's a data source that's not directly based from the MLS. It's instead based on third-party derived information. So, it's not quite as official as directly sourcing data from the MLS. But at the time of this video, they still claim to have roughly 96% coverage nationwide for residential sales and even rental properties as well. And that includes a lot of different types of properties. They have single family homes, condos, town homes, manufactured housing, small multifamily, and even vacant land. The only major category I didn't see was non-residential commercial real estate like office buildings, industrial spaces, retail, etc. But that doesn't bother me cuz I'm not a commercial real estate investor. So, it's decided for my first version of building an onmarket AI enabled deal finding app, I'm going to move forward using rentcast data. So, let's recap. I started with dozens of options for real estate data, but I first eliminated consumer websites like Zillow and Redfin because scraping them is a major legal liability and likely not going to work out in the long term. I also eliminated MLS dependent platforms that required too much red tape, licensing, and bureaucracy. And lastly, I filtered down the remaining data sources based on their potential ease of use. And that led me to Rentcast. So, my next step is to dive further into their API documentation, figure out how to query their data effectively, and start building my app. So, if you're interested in following along in this process or simply just learning more about how AI can improve your life as a real estate investor, then I encourage you to subscribe to this channel. It's brand new and you have an opportunity to be one of my first subscribers. How often do you get that opportunity? Well, thanks for watching this and I'll see you in the next [Music]",
+  "attempts": [
+    {
+      "client": "IOS",
+      "playability": {
+        "status": "OK",
+        "playableInEmbed": true,
+        "offlineability": {
+          "buttonRenderer": {
+            "navigationEndpoint": {
+              "clickTrackingParams": "CAkQ6ewBIhMIy4nLluzblwMVf0VMCB2dDyRzygEEkKGunQ==",
+              "ypcGetOfflineUpsellEndpoint": {
+                "params": "ChPqqN25AQ0KC05Nc1JsVWhRYlVJIgtOTXNSbFVoUWJVSSoVCAkYAVIPCgtOTXNSbFVoUWJVSSAB"
+              }
+            },
+            "trackingParams": "CAkQ6ewBIhMIy4nLluzblwMVf0VMCB2dDyRz"
+          }
+        },
+        "pictureInPicture": {
+          "pictureInPictureRenderer": {
+            "playableInPip": true,
+            "offByDefault": false,
+            "shouldResumeOnHead": false
+          }
+        },
+        "miniplayer": {
+          "miniplayerRenderer": {
+            "playbackMode": "PLAYBACK_MODE_ALLOW"
+          }
+        },
+        "contextParams": "Q0FFU0FnZ0M="
+      },
+      "outcome": "ok"
+    }
+  ],
+  "fetched_at": "2026-10-28T04:11:45.558532+00:00",
+  "client": "IOS",
+  "json_path": "transcripts/186_NMsRlUhQbUI.json",
+  "text_path": "transcripts/186_NMsRlUhQbUI.txt"
+}

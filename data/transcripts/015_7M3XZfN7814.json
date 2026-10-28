@@ -1,0 +1,3388 @@
+{
+  "index": 15,
+  "url": "https://www.youtube.com/watch?v=7M3XZfN7814",
+  "video_id": "7M3XZfN7814",
+  "status": "ok",
+  "metadata": {
+    "title": "Crafting Source Citations in Your Ancestry Tree | Ancestry",
+    "author": "Ancestry",
+    "channelId": "UCsc0AQkAh_2cQmxqwD6VWRw",
+    "lengthSeconds": "1632",
+    "viewCount": "16022",
+    "shortDescription": "Ancestry creates source citations for you when you attach records from their collections to people in your online family tree. But, what do you do with the records you find elsewhere?\n \n Join Crista Cowan for a quick look at the FACTS view in the New Ancestry experience. She will walk you through the screens you need to craft your own source citations for everything from those death certificates you ordered from the state records office to the newspaper clippings you downloaded from Newspapers.com.\n\nStart Your Journey Today:\nhttp://www.ancestry.com/s89392/t38352/rd.ashx\n\nSubscribe: http://www.youtube.com/channel/UCsc0AQkAh_2cQmxqwD6VWRw?sub_confirmation=1\n\nAbout Ancestry:\nBringing together science and self-discovery, Ancestry helps everyone, everywhere discover the story of what led to them. Our sophisticated engineering and technology harnesses family history and consumer genomics, combining billions of rich historical records and millions of family trees to over 10 million and counting to provide people with deeply meaningful insights about who they are and where they come from. \nWe’ve pioneered and defined this category, developing new innovations and technologies that have reinvented how people make family history discoveries. And these discoveries can give everyone a greater sense of identity, relatedness, and their place in the world.\n\nConnect with Ancestry:\nVisit Ancestry’s Official Site: https://www.ancestry.com/\nLike Ancestry on Facebook: https://www.facebook.com/Ancestry/\nFollow Ancestry on Twitter: https://twitter.com/Ancestry\nFollow Ancestry on Instagram: https://www.instagram.com/ancestry\n\nCrafting Source Citations in Your Ancestry Tree | Ancestry\nhttps://www.youtube.com/user/AncestryCom",
+    "keywords": [
+      "ancestry.com",
+      "ancestry",
+      "family tree",
+      "family history",
+      "genealogy",
+      "Barefoot Genealogist",
+      "New Ancestry",
+      "Genealogical Proof Standard",
+      "GPS"
+    ]
+  },
+  "caption_tracks": [
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=7M3XZfN7814&ei=4nXhatmyJsyXsfIP3t3fiAY&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185874&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=77289AD021C9013A65F304962B371DA5371CB3C8.C7D32EE7B2E474EB764921FADD34F9A3AEC67428&key=yt8&kind=asr&lang=en",
+      "name": {
+        "runs": [
+          {
+            "text": "English (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.en",
+      "languageCode": "en",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    }
+  ],
+  "selected_track": {
+    "baseUrl": "https://www.youtube.com/api/timedtext?v=7M3XZfN7814&ei=4nXhatmyJsyXsfIP3t3fiAY&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185874&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=77289AD021C9013A65F304962B371DA5371CB3C8.C7D32EE7B2E474EB764921FADD34F9A3AEC67428&key=yt8&kind=asr&lang=en",
+    "name": {
+      "runs": [
+        {
+          "text": "English (auto-generated)"
+        }
+      ]
+    },
+    "vssId": "a.en",
+    "languageCode": "en",
+    "kind": "asr",
+    "isTranslatable": true,
+    "trackName": ""
+  },
+  "segments": [
+    {
+      "start": 8.32,
+      "duration": 3.08,
+      "text": "hi everyone Christa Cowen here with"
+    },
+    {
+      "start": 9.92,
+      "duration": 5.2,
+      "text": "another episode of the barefoot"
+    },
+    {
+      "start": 11.4,
+      "duration": 6.08,
+      "text": "genealogist today we are talking about"
+    },
+    {
+      "start": 15.12,
+      "duration": 4.999,
+      "text": "Source citations specifically we're"
+    },
+    {
+      "start": 17.48,
+      "duration": 5.959,
+      "text": "talking about crafting a source citation"
+    },
+    {
+      "start": 20.119,
+      "duration": 5.441,
+      "text": "in the fax view of new ancestry so we're"
+    },
+    {
+      "start": 23.439,
+      "duration": 4.401,
+      "text": "just going to talk really briefly um"
+    },
+    {
+      "start": 25.56,
+      "duration": 4.44,
+      "text": "about Source citations just a review of"
+    },
+    {
+      "start": 27.84,
+      "duration": 4.16,
+      "text": "some things I'll I'll walk you through"
+    },
+    {
+      "start": 30.0,
+      "duration": 4.12,
+      "text": "through the screens in the new ancestry"
+    },
+    {
+      "start": 32.0,
+      "duration": 4.48,
+      "text": "on the fax view where you can craft your"
+    },
+    {
+      "start": 34.12,
+      "duration": 5.04,
+      "text": "own source citations and then we'll just"
+    },
+    {
+      "start": 36.48,
+      "duration": 5.44,
+      "text": "run through a couple of best practices"
+    },
+    {
+      "start": 39.16,
+      "duration": 4.6,
+      "text": "tips that might help you or spark some"
+    },
+    {
+      "start": 41.92,
+      "duration": 3.84,
+      "text": "new ideas in you so let's go ahead and"
+    },
+    {
+      "start": 43.76,
+      "duration": 5.0,
+      "text": "dive"
+    },
+    {
+      "start": 45.76,
+      "duration": 6.319,
+      "text": "in first um I just want to remind you"
+    },
+    {
+      "start": 48.76,
+      "duration": 5.24,
+      "text": "that uh I actually did a video"
+    },
+    {
+      "start": 52.079,
+      "duration": 3.841,
+      "text": "probably well it's been a couple of"
+    },
+    {
+      "start": 54.0,
+      "duration": 4.64,
+      "text": "months ago the video was called the"
+    },
+    {
+      "start": 55.92,
+      "duration": 4.92,
+      "text": "basics of a genealogy source citation"
+    },
+    {
+      "start": 58.64,
+      "duration": 4.759,
+      "text": "where I walk you through just that the"
+    },
+    {
+      "start": 60.84,
+      "duration": 3.76,
+      "text": "basics of a genealogy source citation a"
+    },
+    {
+      "start": 63.399,
+      "duration": 3.801,
+      "text": "couple of things that I just want to"
+    },
+    {
+      "start": 64.6,
+      "duration": 6.12,
+      "text": "remind you about from that video anytime"
+    },
+    {
+      "start": 67.2,
+      "duration": 5.68,
+      "text": "you attach a record from ancestry into"
+    },
+    {
+      "start": 70.72,
+      "duration": 4.36,
+      "text": "your online tree or if you do it through"
+    },
+    {
+      "start": 72.88,
+      "duration": 4.239,
+      "text": "FTM through Family Tree Maker it"
+    },
+    {
+      "start": 75.08,
+      "duration": 4.8,
+      "text": "automatically creates those Source"
+    },
+    {
+      "start": 77.119,
+      "duration": 4.881,
+      "text": "citations for you now I'll show you in"
+    },
+    {
+      "start": 79.88,
+      "duration": 5.4,
+      "text": "just a minute where you can go to review"
+    },
+    {
+      "start": 82.0,
+      "duration": 5.52,
+      "text": "those but uh that is an automatic"
+    },
+    {
+      "start": 85.28,
+      "duration": 4.96,
+      "text": "process what we're going to talk about"
+    },
+    {
+      "start": 87.52,
+      "duration": 5.639,
+      "text": "today is crafting your own Source"
+    },
+    {
+      "start": 90.24,
+      "duration": 6.12,
+      "text": "citations for information you locate"
+    },
+    {
+      "start": 93.159,
+      "duration": 5.6,
+      "text": "elsewhere so I do a lot of my research"
+    },
+    {
+      "start": 96.36,
+      "duration": 5.439,
+      "text": "uh online through ancestry with more"
+    },
+    {
+      "start": 98.759,
+      "duration": 4.921,
+      "text": "than 16 billion records online um I"
+    },
+    {
+      "start": 101.799,
+      "duration": 4.28,
+      "text": "never run out of Records there's always"
+    },
+    {
+      "start": 103.68,
+      "duration": 4.28,
+      "text": "something new to find or to discover but"
+    },
+    {
+      "start": 106.079,
+      "duration": 3.64,
+      "text": "if I'm working on proving something"
+    },
+    {
+      "start": 107.96,
+      "duration": 3.72,
+      "text": "about a particular person the"
+    },
+    {
+      "start": 109.719,
+      "duration": 3.481,
+      "text": "genealogical proof standard states that"
+    },
+    {
+      "start": 111.68,
+      "duration": 3.88,
+      "text": "I should be doing a reasonably"
+    },
+    {
+      "start": 113.2,
+      "duration": 4.44,
+      "text": "exhaustive search which means that"
+    },
+    {
+      "start": 115.56,
+      "duration": 4.839,
+      "text": "sometimes I have to go elsewhere for"
+    },
+    {
+      "start": 117.64,
+      "duration": 5.68,
+      "text": "records sometimes because it's all that"
+    },
+    {
+      "start": 120.399,
+      "duration": 5.32,
+      "text": "the state or archive has provided"
+    },
+    {
+      "start": 123.32,
+      "duration": 4.999,
+      "text": "ancestry only has an index of a"
+    },
+    {
+      "start": 125.719,
+      "duration": 6.041,
+      "text": "particular record and so I have to"
+    },
+    {
+      "start": 128.319,
+      "duration": 6.56,
+      "text": "actually write away to the state or get"
+    },
+    {
+      "start": 131.76,
+      "duration": 4.759,
+      "text": "on their website and order a copy of the"
+    },
+    {
+      "start": 134.879,
+      "duration": 3.921,
+      "text": "original marriage certificate or the"
+    },
+    {
+      "start": 136.519,
+      "duration": 4.321,
+      "text": "original death certificate uh because"
+    },
+    {
+      "start": 138.8,
+      "duration": 4.799,
+      "text": "they haven't allowed those to be placed"
+    },
+    {
+      "start": 140.84,
+      "duration": 4.679,
+      "text": "online a lot of times I do a lot of"
+    },
+    {
+      "start": 143.599,
+      "duration": 3.881,
+      "text": "newspaper research and so I use the"
+    },
+    {
+      "start": 145.519,
+      "duration": 5.161,
+      "text": "newspapers on Ancestry I also use the"
+    },
+    {
+      "start": 147.48,
+      "duration": 5.119,
+      "text": "newspapers on newspapers.com"
+    },
+    {
+      "start": 150.68,
+      "duration": 3.88,
+      "text": "um there are free sites like Fulton"
+    },
+    {
+      "start": 152.599,
+      "duration": 4.761,
+      "text": "history uh lots of different places"
+    },
+    {
+      "start": 154.56,
+      "duration": 5.88,
+      "text": "where I go for my newspaper research I"
+    },
+    {
+      "start": 157.36,
+      "duration": 6.519,
+      "text": "will clip copies of those newspapers and"
+    },
+    {
+      "start": 160.44,
+      "duration": 5.159,
+      "text": "want to upload those to my tree so I've"
+    },
+    {
+      "start": 163.879,
+      "duration": 4.241,
+      "text": "got original documents that I get in the"
+    },
+    {
+      "start": 165.599,
+      "duration": 4.56,
+      "text": "mail that I have to scan and upload I've"
+    },
+    {
+      "start": 168.12,
+      "duration": 5.0,
+      "text": "got things I find other places online"
+    },
+    {
+      "start": 170.159,
+      "duration": 5.201,
+      "text": "that I want to clip um and and upload"
+    },
+    {
+      "start": 173.12,
+      "duration": 4.16,
+      "text": "that image to the tree and so I have to"
+    },
+    {
+      "start": 175.36,
+      "duration": 5.599,
+      "text": "be able to craft my own source citations"
+    },
+    {
+      "start": 177.28,
+      "duration": 7.0,
+      "text": "for that information that I have located"
+    },
+    {
+      "start": 180.959,
+      "duration": 6.481,
+      "text": "elsewhere so on Ancestry when you're in"
+    },
+    {
+      "start": 184.28,
+      "duration": 5.72,
+      "text": "a person's profile uh and hopefully"
+    },
+    {
+      "start": 187.44,
+      "duration": 4.48,
+      "text": "you're on the facts tab that's where you"
+    },
+    {
+      "start": 190.0,
+      "duration": 4.319,
+      "text": "should be doing uh all of your research"
+    },
+    {
+      "start": 191.92,
+      "duration": 5.399,
+      "text": "the life story tab is just a"
+    },
+    {
+      "start": 194.319,
+      "duration": 5.28,
+      "text": "presentation um sharable kind of a"
+    },
+    {
+      "start": 197.319,
+      "duration": 4.361,
+      "text": "feature it's also a great way to look at"
+    },
+    {
+      "start": 199.599,
+      "duration": 4.36,
+      "text": "your family tree in a different light to"
+    },
+    {
+      "start": 201.68,
+      "duration": 5.04,
+      "text": "see where some of your own data entry"
+    },
+    {
+      "start": 203.959,
+      "duration": 4.401,
+      "text": "errors might be or where you might have"
+    },
+    {
+      "start": 206.72,
+      "duration": 3.239,
+      "text": "um missed following some of the"
+    },
+    {
+      "start": 208.36,
+      "duration": 2.68,
+      "text": "genealogical standards or where might"
+    },
+    {
+      "start": 209.959,
+      "duration": 3.601,
+      "text": "not have made some of the edits that"
+    },
+    {
+      "start": 211.04,
+      "duration": 5.32,
+      "text": "need to be made um or in my case I just"
+    },
+    {
+      "start": 213.56,
+      "duration": 4.08,
+      "text": "make silly mistakes sometimes um and so"
+    },
+    {
+      "start": 216.36,
+      "duration": 4.68,
+      "text": "I like the life story view because it"
+    },
+    {
+      "start": 217.64,
+      "duration": 4.879,
+      "text": "helps to see my tree in a in a new way"
+    },
+    {
+      "start": 221.04,
+      "duration": 3.8,
+      "text": "and it allows me to catch some of those"
+    },
+    {
+      "start": 222.519,
+      "duration": 5.161,
+      "text": "errors I might not have caught otherwise"
+    },
+    {
+      "start": 224.84,
+      "duration": 5.88,
+      "text": "the fact view on the new ancestry"
+    },
+    {
+      "start": 227.68,
+      "duration": 5.119,
+      "text": "experience is much like the timeline in"
+    },
+    {
+      "start": 230.72,
+      "duration": 5.32,
+      "text": "the old ancestry experience it's where"
+    },
+    {
+      "start": 232.799,
+      "duration": 5.64,
+      "text": "you have um your facts and your sources"
+    },
+    {
+      "start": 236.04,
+      "duration": 4.6,
+      "text": "and your family members and we've put"
+    },
+    {
+      "start": 238.439,
+      "duration": 4.72,
+      "text": "those sources front and Center and we"
+    },
+    {
+      "start": 240.64,
+      "duration": 6.239,
+      "text": "did that really intentionally because"
+    },
+    {
+      "start": 243.159,
+      "duration": 6.0,
+      "text": "sources are uh what determines the"
+    },
+    {
+      "start": 246.879,
+      "duration": 4.601,
+      "text": "accuracy or helps helps validate the"
+    },
+    {
+      "start": 249.159,
+      "duration": 4.0,
+      "text": "accuracy of your tree if you've watched"
+    },
+    {
+      "start": 251.48,
+      "duration": 3.92,
+      "text": "my series on the genealogical proof"
+    },
+    {
+      "start": 253.159,
+      "duration": 3.561,
+      "text": "standard you know how critical that is"
+    },
+    {
+      "start": 255.4,
+      "duration": 4.16,
+      "text": "and so we put that right front and"
+    },
+    {
+      "start": 256.72,
+      "duration": 4.88,
+      "text": "center so that everybody can see uh when"
+    },
+    {
+      "start": 259.56,
+      "duration": 4.8,
+      "text": "they're looking at your tree if it is"
+    },
+    {
+      "start": 261.6,
+      "duration": 5.039,
+      "text": "sourced or not right away it also helps"
+    },
+    {
+      "start": 264.36,
+      "duration": 4.8,
+      "text": "you to know right away what you have or"
+    },
+    {
+      "start": 266.639,
+      "duration": 4.921,
+      "text": "what you don't have now the sources at"
+    },
+    {
+      "start": 269.16,
+      "duration": 5.8,
+      "text": "the top of that Source"
+    },
+    {
+      "start": 271.56,
+      "duration": 5.479,
+      "text": "column are the sources from ancestry so"
+    },
+    {
+      "start": 274.96,
+      "duration": 5.519,
+      "text": "those are the records on Ancestry that"
+    },
+    {
+      "start": 277.039,
+      "duration": 5.321,
+      "text": "you have added and if you remember um"
+    },
+    {
+      "start": 280.479,
+      "duration": 4.16,
+      "text": "from I think the last video I did about"
+    },
+    {
+      "start": 282.36,
+      "duration": 5.36,
+      "text": "the new ancestry experience if you click"
+    },
+    {
+      "start": 284.639,
+      "duration": 6.361,
+      "text": "once on any one of these sources it will"
+    },
+    {
+      "start": 287.72,
+      "duration": 6.759,
+      "text": "highlight the facts in the the leftand"
+    },
+    {
+      "start": 291.0,
+      "duration": 6.32,
+      "text": "facts column that are supported by that"
+    },
+    {
+      "start": 294.479,
+      "duration": 5.481,
+      "text": "single piece of evidence conversely if"
+    },
+    {
+      "start": 297.32,
+      "duration": 4.8,
+      "text": "you click on any fact in the left left"
+    },
+    {
+      "start": 299.96,
+      "duration": 4.88,
+      "text": "hand side in that facts column it will"
+    },
+    {
+      "start": 302.12,
+      "duration": 6.4,
+      "text": "highlight the sources that support that"
+    },
+    {
+      "start": 304.84,
+      "duration": 6.199,
+      "text": "specific fact we'll talk more about that"
+    },
+    {
+      "start": 308.52,
+      "duration": 4.6,
+      "text": "concept a little bit um later in the"
+    },
+    {
+      "start": 311.039,
+      "duration": 4.281,
+      "text": "month about attaching records and and"
+    },
+    {
+      "start": 313.12,
+      "duration": 4.28,
+      "text": "making sure that those facts and sources"
+    },
+    {
+      "start": 315.32,
+      "duration": 5.319,
+      "text": "all line up today what we're talking"
+    },
+    {
+      "start": 317.4,
+      "duration": 5.359,
+      "text": "specifically about is how we can add a"
+    },
+    {
+      "start": 320.639,
+      "duration": 3.56,
+      "text": "source so anytime you find a record"
+    },
+    {
+      "start": 322.759,
+      "duration": 3.121,
+      "text": "outside of ancestry this is what you're"
+    },
+    {
+      "start": 324.199,
+      "duration": 3.361,
+      "text": "going to want to do and there are"
+    },
+    {
+      "start": 325.88,
+      "duration": 3.84,
+      "text": "actually two places you can do it we"
+    },
+    {
+      "start": 327.56,
+      "duration": 4.04,
+      "text": "wanted to make it really obvious you can"
+    },
+    {
+      "start": 329.72,
+      "duration": 4.12,
+      "text": "add a source down here at the bottom of"
+    },
+    {
+      "start": 331.6,
+      "duration": 4.36,
+      "text": "the column but sometimes this column"
+    },
+    {
+      "start": 333.84,
+      "duration": 4.479,
+      "text": "gets really really long you end up with"
+    },
+    {
+      "start": 335.96,
+      "duration": 4.64,
+      "text": "you know hopefully 10 20 30 records"
+    },
+    {
+      "start": 338.319,
+      "duration": 4.041,
+      "text": "attached to a person remember reasonably"
+    },
+    {
+      "start": 340.6,
+      "duration": 4.2,
+      "text": "exhaustive search means we've consulted"
+    },
+    {
+      "start": 342.36,
+      "duration": 5.0,
+      "text": "a lot of documents before we come to"
+    },
+    {
+      "start": 344.8,
+      "duration": 4.519,
+      "text": "some conclusions about these individuals"
+    },
+    {
+      "start": 347.36,
+      "duration": 4.36,
+      "text": "and so we also have placed a way to add"
+    },
+    {
+      "start": 349.319,
+      "duration": 4.88,
+      "text": "that Source at the top of that column so"
+    },
+    {
+      "start": 351.72,
+      "duration": 4.28,
+      "text": "a link at the top a link at the bottom"
+    },
+    {
+      "start": 354.199,
+      "duration": 4.361,
+      "text": "you're going to want to go ahead and"
+    },
+    {
+      "start": 356.0,
+      "duration": 4.56,
+      "text": "click that and here's the screen it's"
+    },
+    {
+      "start": 358.56,
+      "duration": 4.84,
+      "text": "going to bring up and there's actually a"
+    },
+    {
+      "start": 360.56,
+      "duration": 5.68,
+      "text": "couple of different parts to creating a"
+    },
+    {
+      "start": 363.4,
+      "duration": 5.12,
+      "text": "source citation the first part is you"
+    },
+    {
+      "start": 366.24,
+      "duration": 4.6,
+      "text": "need to define the"
+    },
+    {
+      "start": 368.52,
+      "duration": 3.72,
+      "text": "source now the easiest way to define the"
+    },
+    {
+      "start": 370.84,
+      "duration": 3.56,
+      "text": "source that I've heard used and I'm"
+    },
+    {
+      "start": 372.24,
+      "duration": 5.2,
+      "text": "going to reference Elizabeth shown Mills"
+    },
+    {
+      "start": 374.4,
+      "duration": 6.28,
+      "text": "work quite a bit today she's um she is"
+    },
+    {
+      "start": 377.44,
+      "duration": 5.4,
+      "text": "the master of all things source citation"
+    },
+    {
+      "start": 380.68,
+      "duration": 5.0,
+      "text": "and probably one of the queens of"
+    },
+    {
+      "start": 382.84,
+      "duration": 6.24,
+      "text": "genealogy and so she talks about the"
+    },
+    {
+      "start": 385.68,
+      "duration": 5.799,
+      "text": "source as being the container in which"
+    },
+    {
+      "start": 389.08,
+      "duration": 5.6,
+      "text": "the information resides that's kind of"
+    },
+    {
+      "start": 391.479,
+      "duration": 6.28,
+      "text": "an easy way to conceptualize this idea"
+    },
+    {
+      "start": 394.68,
+      "duration": 5.959,
+      "text": "the citation then is the actual"
+    },
+    {
+      "start": 397.759,
+      "duration": 4.56,
+      "text": "information in the record so the source"
+    },
+    {
+      "start": 400.639,
+      "duration": 5.761,
+      "text": "you're going to have a couple of options"
+    },
+    {
+      "start": 402.319,
+      "duration": 8.561,
+      "text": "here one is select a previous source so"
+    },
+    {
+      "start": 406.4,
+      "duration": 6.04,
+      "text": "if I've had a 1790 census before or I"
+    },
+    {
+      "start": 410.88,
+      "duration": 3.84,
+      "text": "can scroll through this list and see"
+    },
+    {
+      "start": 412.44,
+      "duration": 4.199,
+      "text": "lots of Census records in there and some"
+    },
+    {
+      "start": 414.72,
+      "duration": 4.199,
+      "text": "of those need to be cleaned up if I've"
+    },
+    {
+      "start": 416.639,
+      "duration": 4.761,
+      "text": "used Oregan death records or Ohio"
+    },
+    {
+      "start": 418.919,
+      "duration": 5.921,
+      "text": "marriage record records or whatever the"
+    },
+    {
+      "start": 421.4,
+      "duration": 6.84,
+      "text": "case may be if I've already used a"
+    },
+    {
+      "start": 424.84,
+      "duration": 5.0,
+      "text": "record from a particular Source I can"
+    },
+    {
+      "start": 428.24,
+      "duration": 5.6,
+      "text": "just come in here and"
+    },
+    {
+      "start": 429.84,
+      "duration": 6.24,
+      "text": "pre-select that particular Source okay"
+    },
+    {
+      "start": 433.84,
+      "duration": 4.32,
+      "text": "if I've never used it before I'm going"
+    },
+    {
+      "start": 436.08,
+      "duration": 3.16,
+      "text": "to want to create a new source and"
+    },
+    {
+      "start": 438.16,
+      "duration": 3.08,
+      "text": "that's going to take me to a whole"
+    },
+    {
+      "start": 439.24,
+      "duration": 3.519,
+      "text": "different screen now I'm going to just"
+    },
+    {
+      "start": 441.24,
+      "duration": 3.399,
+      "text": "walk through these fields really quickly"
+    },
+    {
+      "start": 442.759,
+      "duration": 4.361,
+      "text": "just so that you're aware of them but"
+    },
+    {
+      "start": 444.639,
+      "duration": 4.56,
+      "text": "the only field in this entire screen"
+    },
+    {
+      "start": 447.12,
+      "duration": 4.919,
+      "text": "that is absolutely required is this Top"
+    },
+    {
+      "start": 449.199,
+      "duration": 5.201,
+      "text": "Field this title field all the other"
+    },
+    {
+      "start": 452.039,
+      "duration": 5.641,
+      "text": "fields are optional and the reason"
+    },
+    {
+      "start": 454.4,
+      "duration": 5.56,
+      "text": "they're optional is because not every"
+    },
+    {
+      "start": 457.68,
+      "duration": 5.6,
+      "text": "single source is going to be exactly the"
+    },
+    {
+      "start": 459.96,
+      "duration": 6.199,
+      "text": "same so sometimes the source that I am"
+    },
+    {
+      "start": 463.28,
+      "duration": 5.4,
+      "text": "that I'm creating um again the container"
+    },
+    {
+      "start": 466.159,
+      "duration": 5.281,
+      "text": "in which the information is held is"
+    },
+    {
+      "start": 468.68,
+      "duration": 5.32,
+      "text": "going to be a book A book is a a really"
+    },
+    {
+      "start": 471.44,
+      "duration": 4.56,
+      "text": "obvious Source an actually printed book"
+    },
+    {
+      "start": 474.0,
+      "duration": 4.28,
+      "text": "um whether it's a printed book that I"
+    },
+    {
+      "start": 476.0,
+      "duration": 5.159,
+      "text": "tangibly held in my hands or whether"
+    },
+    {
+      "start": 478.28,
+      "duration": 5.56,
+      "text": "it's a book that I downloaded as a PDF"
+    },
+    {
+      "start": 481.159,
+      "duration": 5.16,
+      "text": "off of one of the um booklink sites like"
+    },
+    {
+      "start": 483.84,
+      "duration": 4.88,
+      "text": "Google books or genealogy booklinks uh"
+    },
+    {
+      "start": 486.319,
+      "duration": 5.0,
+      "text": "wherever I wherever I obtain a copy of"
+    },
+    {
+      "start": 488.72,
+      "duration": 6.919,
+      "text": "that book the book still has a"
+    },
+    {
+      "start": 491.319,
+      "duration": 7.16,
+      "text": "title and an author and a publisher and"
+    },
+    {
+      "start": 495.639,
+      "duration": 5.68,
+      "text": "publisher location and then it has a"
+    },
+    {
+      "start": 498.479,
+      "duration": 5.241,
+      "text": "publishing date uh usually it has a call"
+    },
+    {
+      "start": 501.319,
+      "duration": 5.72,
+      "text": "number I can make some notes that"
+    },
+    {
+      "start": 503.72,
+      "duration": 5.919,
+      "text": "pertain to that particular Source an rfn"
+    },
+    {
+      "start": 507.039,
+      "duration": 4.601,
+      "text": "number and then a repository we'll talk"
+    },
+    {
+      "start": 509.639,
+      "duration": 5.001,
+      "text": "about that repository in just a"
+    },
+    {
+      "start": 511.64,
+      "duration": 6.0,
+      "text": "minute so a book is probably the easiest"
+    },
+    {
+      "start": 514.64,
+      "duration": 6.24,
+      "text": "most obvious kind of source um that you"
+    },
+    {
+      "start": 517.64,
+      "duration": 6.04,
+      "text": "can create now there are other sources"
+    },
+    {
+      "start": 520.88,
+      "duration": 4.32,
+      "text": "so for example a census is a source and"
+    },
+    {
+      "start": 523.68,
+      "duration": 3.48,
+      "text": "if you look through your existing Source"
+    },
+    {
+      "start": 525.2,
+      "duration": 3.72,
+      "text": "list uh based on the things you've"
+    },
+    {
+      "start": 527.16,
+      "duration": 4.96,
+      "text": "attached An ancestry you'll get a feel"
+    },
+    {
+      "start": 528.92,
+      "duration": 7.96,
+      "text": "for that um maybe a source is a"
+    },
+    {
+      "start": 532.12,
+      "duration": 7.44,
+      "text": "newspaper or a source is um a particular"
+    },
+    {
+      "start": 536.88,
+      "duration": 5.04,
+      "text": "um set of documents like Missouri State"
+    },
+    {
+      "start": 539.56,
+      "duration": 4.8,
+      "text": "death certificates there's a collection"
+    },
+    {
+      "start": 541.92,
+      "duration": 5.32,
+      "text": "of those online okay again whatever the"
+    },
+    {
+      "start": 544.36,
+      "duration": 5.4,
+      "text": "case may be um you only have to have a"
+    },
+    {
+      "start": 547.24,
+      "duration": 4.76,
+      "text": "title but where you can fill in"
+    },
+    {
+      "start": 549.76,
+      "duration": 4.28,
+      "text": "additional information it's going to be"
+    },
+    {
+      "start": 552.0,
+      "duration": 4.16,
+      "text": "useful now this is going to go back to"
+    },
+    {
+      "start": 554.04,
+      "duration": 4.76,
+      "text": "one of the reasons why we create sources"
+    },
+    {
+      "start": 556.16,
+      "duration": 6.16,
+      "text": "and Source citations one of them is so"
+    },
+    {
+      "start": 558.8,
+      "duration": 5.52,
+      "text": "that we can find that information again"
+    },
+    {
+      "start": 562.32,
+      "duration": 3.759,
+      "text": "one of them is so that other people can"
+    },
+    {
+      "start": 564.32,
+      "duration": 4.6,
+      "text": "find that information can follow our"
+    },
+    {
+      "start": 566.079,
+      "duration": 4.921,
+      "text": "research Trail and probably the most"
+    },
+    {
+      "start": 568.92,
+      "duration": 5.2,
+      "text": "important reason why I create Source"
+    },
+    {
+      "start": 571.0,
+      "duration": 5.44,
+      "text": "citations is because in the process of"
+    },
+    {
+      "start": 574.12,
+      "duration": 4.56,
+      "text": "creating them what I'm doing is I'm"
+    },
+    {
+      "start": 576.44,
+      "duration": 4.519,
+      "text": "analyzing This Record where did this"
+    },
+    {
+      "start": 578.68,
+      "duration": 5.88,
+      "text": "record come from who created it why was"
+    },
+    {
+      "start": 580.959,
+      "duration": 6.401,
+      "text": "it created when was it created all of"
+    },
+    {
+      "start": 584.56,
+      "duration": 5.6,
+      "text": "those are important to analyzing that"
+    },
+    {
+      "start": 587.36,
+      "duration": 5.24,
+      "text": "record to understand how accurate the"
+    },
+    {
+      "start": 590.16,
+      "duration": 5.4,
+      "text": "information contained in that record may"
+    },
+    {
+      "start": 592.6,
+      "duration": 7.0,
+      "text": "be so for example if my"
+    },
+    {
+      "start": 595.56,
+      "duration": 7.08,
+      "text": "source um is a particular Cemetery right"
+    },
+    {
+      "start": 599.6,
+      "duration": 5.44,
+      "text": "a particular a tombstone for example"
+    },
+    {
+      "start": 602.64,
+      "duration": 4.92,
+      "text": "knowing that that that Cemetery record"
+    },
+    {
+      "start": 605.04,
+      "duration": 5.479,
+      "text": "that I'm looking at um knowing that that"
+    },
+    {
+      "start": 607.56,
+      "duration": 5.839,
+      "text": "Tombstone was placed 60 years after the"
+    },
+    {
+      "start": 610.519,
+      "duration": 5.081,
+      "text": "person died means that I'm going to give"
+    },
+    {
+      "start": 613.399,
+      "duration": 4.361,
+      "text": "different weight to that particular"
+    },
+    {
+      "start": 615.6,
+      "duration": 5.479,
+      "text": "piece of evidence than if it had been"
+    },
+    {
+      "start": 617.76,
+      "duration": 5.96,
+      "text": "placed um immediately upon death for"
+    },
+    {
+      "start": 621.079,
+      "duration": 5.281,
+      "text": "example right so creating these Source"
+    },
+    {
+      "start": 623.72,
+      "duration": 4.96,
+      "text": "citations helps me to analyze the the"
+    },
+    {
+      "start": 626.36,
+      "duration": 4.8,
+      "text": "sources that I'm using so that I come to"
+    },
+    {
+      "start": 628.68,
+      "duration": 4.92,
+      "text": "better conclus conclusions about who's"
+    },
+    {
+      "start": 631.16,
+      "duration": 4.96,
+      "text": "in my tree about the information and"
+    },
+    {
+      "start": 633.6,
+      "duration": 4.239,
+      "text": "that all helps ensure that I'm climbing"
+    },
+    {
+      "start": 636.12,
+      "duration": 4.0,
+      "text": "my own tree and not somebody else's that"
+    },
+    {
+      "start": 637.839,
+      "duration": 4.321,
+      "text": "I haven't just attached some record that"
+    },
+    {
+      "start": 640.12,
+      "duration": 5.68,
+      "text": "has nothing to do with my"
+    },
+    {
+      "start": 642.16,
+      "duration": 7.28,
+      "text": "person so creating this Source um is is"
+    },
+    {
+      "start": 645.8,
+      "duration": 5.279,
+      "text": "an important step now the repository"
+    },
+    {
+      "start": 649.44,
+      "duration": 3.28,
+      "text": "here at the bottom of this Source form"
+    },
+    {
+      "start": 651.079,
+      "duration": 3.401,
+      "text": "is also important so this is where"
+    },
+    {
+      "start": 652.72,
+      "duration": 3.28,
+      "text": "you're going to list I'm going to use a"
+    },
+    {
+      "start": 654.48,
+      "duration": 5.28,
+      "text": "book as an example again because it's"
+    },
+    {
+      "start": 656.0,
+      "duration": 5.68,
+      "text": "the easiest example um of the repository"
+    },
+    {
+      "start": 659.76,
+      "duration": 4.68,
+      "text": "for that book might be the library where"
+    },
+    {
+      "start": 661.68,
+      "duration": 6.36,
+      "text": "you where you obtained it or it might be"
+    },
+    {
+      "start": 664.44,
+      "duration": 6.12,
+      "text": "the website that digitized the books and"
+    },
+    {
+      "start": 668.04,
+      "duration": 4.72,
+      "text": "you accessed that particular website"
+    },
+    {
+      "start": 670.56,
+      "duration": 4.24,
+      "text": "you'll notice that I've got ancestry.com"
+    },
+    {
+      "start": 672.76,
+      "duration": 3.879,
+      "text": "as the top repository here well that's"
+    },
+    {
+      "start": 674.8,
+      "duration": 3.76,
+      "text": "because every record that I attach"
+    },
+    {
+      "start": 676.639,
+      "duration": 5.801,
+      "text": "automatically through ancestry"
+    },
+    {
+      "start": 678.56,
+      "duration": 5.48,
+      "text": "ancestry.com is listed as the repository"
+    },
+    {
+      "start": 682.44,
+      "duration": 3.839,
+      "text": "you'll see I also have you know the"
+    },
+    {
+      "start": 684.04,
+      "duration": 4.12,
+      "text": "family history Library I try to get up"
+    },
+    {
+      "start": 686.279,
+      "duration": 4.441,
+      "text": "there uh up to Salt Lake City to the"
+    },
+    {
+      "start": 688.16,
+      "duration": 6.4,
+      "text": "family history Library if times a year"
+    },
+    {
+      "start": 690.72,
+      "duration": 6.0,
+      "text": "and they have CA you know cases full of"
+    },
+    {
+      "start": 694.56,
+      "duration": 3.68,
+      "text": "microfilm much of that microfilm that"
+    },
+    {
+      "start": 696.72,
+      "duration": 4.16,
+      "text": "has not yet been digitized and put"
+    },
+    {
+      "start": 698.24,
+      "duration": 6.32,
+      "text": "online and so if I access a particular"
+    },
+    {
+      "start": 700.88,
+      "duration": 7.199,
+      "text": "reel of microfilm that has a book or a"
+    },
+    {
+      "start": 704.56,
+      "duration": 5.279,
+      "text": "parish register or you know the the you"
+    },
+    {
+      "start": 708.079,
+      "duration": 3.241,
+      "text": "know the little church in Germany the"
+    },
+    {
+      "start": 709.839,
+      "duration": 3.881,
+      "text": "records for the little church in Germany"
+    },
+    {
+      "start": 711.32,
+      "duration": 5.24,
+      "text": "where my family lived whatever the case"
+    },
+    {
+      "start": 713.72,
+      "duration": 5.72,
+      "text": "may be that particular title or"
+    },
+    {
+      "start": 716.56,
+      "duration": 4.68,
+      "text": "collection is going to be the source but"
+    },
+    {
+      "start": 719.44,
+      "duration": 4.12,
+      "text": "the family history library is going to"
+    },
+    {
+      "start": 721.24,
+      "duration": 5.52,
+      "text": "be the repository because that's where I"
+    },
+    {
+      "start": 723.56,
+      "duration": 5.64,
+      "text": "obtained my copy of that record so it"
+    },
+    {
+      "start": 726.76,
+      "duration": 5.639,
+      "text": "doesn't matter if the record is actually"
+    },
+    {
+      "start": 729.2,
+      "duration": 5.04,
+      "text": "held by the National Archives um if I"
+    },
+    {
+      "start": 732.399,
+      "duration": 3.761,
+      "text": "obtain my copy through ancestry or"
+    },
+    {
+      "start": 734.24,
+      "duration": 4.48,
+      "text": "through the family history Library"
+    },
+    {
+      "start": 736.16,
+      "duration": 4.44,
+      "text": "Missouri State archives through US gen"
+    },
+    {
+      "start": 738.72,
+      "duration": 4.799,
+      "text": "web whatever the case may be I'm going"
+    },
+    {
+      "start": 740.6,
+      "duration": 4.4,
+      "text": "to list the repository where I accessed"
+    },
+    {
+      "start": 743.519,
+      "duration": 4.361,
+      "text": "that particular"
+    },
+    {
+      "start": 745.0,
+      "duration": 4.839,
+      "text": "information now once you've created your"
+    },
+    {
+      "start": 747.88,
+      "duration": 4.72,
+      "text": "source and"
+    },
+    {
+      "start": 749.839,
+      "duration": 4.721,
+      "text": "and um that's a pretty simple process"
+    },
+    {
+      "start": 752.6,
+      "duration": 6.0,
+      "text": "really you're going to want to create"
+    },
+    {
+      "start": 754.56,
+      "duration": 6.6,
+      "text": "the citation now the citation is about"
+    },
+    {
+      "start": 758.6,
+      "duration": 5.039,
+      "text": "the specific information that you are"
+    },
+    {
+      "start": 761.16,
+      "duration": 5.56,
+      "text": "using out of that particular record and"
+    },
+    {
+      "start": 763.639,
+      "duration": 7.041,
+      "text": "again for me one of the main purposes of"
+    },
+    {
+      "start": 766.72,
+      "duration": 6.76,
+      "text": "this is that it helps me analyze the"
+    },
+    {
+      "start": 770.68,
+      "duration": 4.92,
+      "text": "information as I'm entering this"
+    },
+    {
+      "start": 773.48,
+      "duration": 4.359,
+      "text": "citation to ensure that I've got the"
+    },
+    {
+      "start": 775.6,
+      "duration": 5.799,
+      "text": "right person that I've extracted all the"
+    },
+    {
+      "start": 777.839,
+      "duration": 5.44,
+      "text": "juicy goodness out of that record that I"
+    },
+    {
+      "start": 781.399,
+      "duration": 3.481,
+      "text": "understand the context of this record so"
+    },
+    {
+      "start": 783.279,
+      "duration": 3.521,
+      "text": "that I understand how it fits with my"
+    },
+    {
+      "start": 784.88,
+      "duration": 3.92,
+      "text": "other evidence um one of the"
+    },
+    {
+      "start": 786.8,
+      "duration": 4.12,
+      "text": "genealogical proof standard steps is"
+    },
+    {
+      "start": 788.8,
+      "duration": 3.719,
+      "text": "resolving conflicting evidence and if"
+    },
+    {
+      "start": 790.92,
+      "duration": 4.159,
+      "text": "you've been doing this for any length of"
+    },
+    {
+      "start": 792.519,
+      "duration": 4.801,
+      "text": "time you know that you will often come"
+    },
+    {
+      "start": 795.079,
+      "duration": 4.081,
+      "text": "across conflicting evidence one person"
+    },
+    {
+      "start": 797.32,
+      "duration": 4.72,
+      "text": "says the birth date was this another you"
+    },
+    {
+      "start": 799.16,
+      "duration": 4.56,
+      "text": "know another record says this um one"
+    },
+    {
+      "start": 802.04,
+      "duration": 4.0,
+      "text": "record says they were born here another"
+    },
+    {
+      "start": 803.72,
+      "duration": 4.799,
+      "text": "record says here so you have to be able"
+    },
+    {
+      "start": 806.04,
+      "duration": 3.68,
+      "text": "to take all of that evidence about a"
+    },
+    {
+      "start": 808.519,
+      "duration": 3.401,
+      "text": "person and you have to be able to"
+    },
+    {
+      "start": 809.72,
+      "duration": 4.2,
+      "text": "resolve those conflicting pieces of"
+    },
+    {
+      "start": 811.92,
+      "duration": 4.68,
+      "text": "evidence because a person really only"
+    },
+    {
+      "start": 813.92,
+      "duration": 5.279,
+      "text": "died once in one place and they were"
+    },
+    {
+      "start": 816.6,
+      "duration": 5.88,
+      "text": "only born once in one place and so"
+    },
+    {
+      "start": 819.199,
+      "duration": 4.88,
+      "text": "having multiple you know um alternate"
+    },
+    {
+      "start": 822.48,
+      "duration": 3.799,
+      "text": "birth dates and places and death dates"
+    },
+    {
+      "start": 824.079,
+      "duration": 4.56,
+      "text": "and places is silly right you need to be"
+    },
+    {
+      "start": 826.279,
+      "duration": 6.321,
+      "text": "able to take all of that evidence and"
+    },
+    {
+      "start": 828.639,
+      "duration": 5.76,
+      "text": "resolve it and come to a conclusion and"
+    },
+    {
+      "start": 832.6,
+      "duration": 3.52,
+      "text": "your conclusion is going to be the best"
+    },
+    {
+      "start": 834.399,
+      "duration": 3.961,
+      "text": "that you can come to at the time with"
+    },
+    {
+      "start": 836.12,
+      "duration": 5.12,
+      "text": "the evidence that you have been able to"
+    },
+    {
+      "start": 838.36,
+      "duration": 4.599,
+      "text": "to loc to identify so the purpose of the"
+    },
+    {
+      "start": 841.24,
+      "duration": 4.08,
+      "text": "source citation again is to help you"
+    },
+    {
+      "start": 842.959,
+      "duration": 4.88,
+      "text": "just like the creating the source to"
+    },
+    {
+      "start": 845.32,
+      "duration": 4.04,
+      "text": "help you analyze that information again"
+    },
+    {
+      "start": 847.839,
+      "duration": 4.36,
+      "text": "much like the source the only thing"
+    },
+    {
+      "start": 849.36,
+      "duration": 4.0,
+      "text": "that's required in this field is some"
+    },
+    {
+      "start": 852.199,
+      "duration": 3.64,
+      "text": "kind of a"
+    },
+    {
+      "start": 853.36,
+      "duration": 5.839,
+      "text": "title um so in this case we're going to"
+    },
+    {
+      "start": 855.839,
+      "duration": 6.161,
+      "text": "put the volume number or the film number"
+    },
+    {
+      "start": 859.199,
+      "duration": 5.281,
+      "text": "or whatever additional detail is going"
+    },
+    {
+      "start": 862.0,
+      "duration": 4.12,
+      "text": "to get us to that particular record"
+    },
+    {
+      "start": 864.48,
+      "duration": 4.32,
+      "text": "we're going to enter a date here if"
+    },
+    {
+      "start": 866.12,
+      "duration": 4.639,
+      "text": "that's significant we're going to enter"
+    },
+    {
+      "start": 868.8,
+      "duration": 4.44,
+      "text": "the transcription of the text if you"
+    },
+    {
+      "start": 870.759,
+      "duration": 3.76,
+      "text": "would like to now I actually I"
+    },
+    {
+      "start": 873.24,
+      "duration": 2.839,
+      "text": "personally do this a little bit"
+    },
+    {
+      "start": 874.519,
+      "duration": 3.641,
+      "text": "differently rather than putting the"
+    },
+    {
+      "start": 876.079,
+      "duration": 4.481,
+      "text": "transcription of the text into my source"
+    },
+    {
+      "start": 878.16,
+      "duration": 4.96,
+      "text": "citation I actually put it into my notes"
+    },
+    {
+      "start": 880.56,
+      "duration": 4.32,
+      "text": "for the person and I do that so that I"
+    },
+    {
+      "start": 883.12,
+      "duration": 5.8,
+      "text": "create a narrative and so that I have"
+    },
+    {
+      "start": 884.88,
+      "duration": 6.28,
+      "text": "all my um citation transcriptions in one"
+    },
+    {
+      "start": 888.92,
+      "duration": 4.08,
+      "text": "location and I can quickly review them"
+    },
+    {
+      "start": 891.16,
+      "duration": 4.239,
+      "text": "all together instead of having to open"
+    },
+    {
+      "start": 893.0,
+      "duration": 5.079,
+      "text": "up individual citations but if this"
+    },
+    {
+      "start": 895.399,
+      "duration": 4.161,
+      "text": "works for you absolutely do it that way"
+    },
+    {
+      "start": 898.079,
+      "duration": 3.361,
+      "text": "you can include addition additional"
+    },
+    {
+      "start": 899.56,
+      "duration": 4.68,
+      "text": "information and here's um where I"
+    },
+    {
+      "start": 901.44,
+      "duration": 4.72,
+      "text": "include information like um you know"
+    },
+    {
+      "start": 904.24,
+      "duration": 4.92,
+      "text": "like if I'm reading a particular page of"
+    },
+    {
+      "start": 906.16,
+      "duration": 5.4,
+      "text": "a census and it's hard to read and the"
+    },
+    {
+      "start": 909.16,
+      "duration": 4.239,
+      "text": "names are really faded and I've done the"
+    },
+    {
+      "start": 911.56,
+      "duration": 4.92,
+      "text": "best I can in making out that"
+    },
+    {
+      "start": 913.399,
+      "duration": 4.961,
+      "text": "information I might make a note about"
+    },
+    {
+      "start": 916.48,
+      "duration": 3.32,
+      "text": "how you know the bottom third of this"
+    },
+    {
+      "start": 918.36,
+      "duration": 3.64,
+      "text": "page was burned and so I might be"
+    },
+    {
+      "start": 919.8,
+      "duration": 5.399,
+      "text": "missing some information or the the the"
+    },
+    {
+      "start": 922.0,
+      "duration": 4.88,
+      "text": "writing was really faint and so it was"
+    },
+    {
+      "start": 925.199,
+      "duration": 4.841,
+      "text": "kind of illegible and I've done the best"
+    },
+    {
+      "start": 926.88,
+      "duration": 4.519,
+      "text": "I can I make whatever notations can"
+    },
+    {
+      "start": 930.04,
+      "duration": 2.4,
+      "text": "about the source or about that"
+    },
+    {
+      "start": 931.399,
+      "duration": 3.8,
+      "text": "particular"
+    },
+    {
+      "start": 932.44,
+      "duration": 5.079,
+      "text": "citation just so that I understand what"
+    },
+    {
+      "start": 935.199,
+      "duration": 4.12,
+      "text": "the limitations of those records are and"
+    },
+    {
+      "start": 937.519,
+      "duration": 4.361,
+      "text": "again so that others who are looking at"
+    },
+    {
+      "start": 939.319,
+      "duration": 4.601,
+      "text": "my source citations also know that I've"
+    },
+    {
+      "start": 941.88,
+      "duration": 3.72,
+      "text": "taken the time to analyze that and that"
+    },
+    {
+      "start": 943.92,
+      "duration": 3.279,
+      "text": "I'm admitting that you know what I might"
+    },
+    {
+      "start": 945.6,
+      "duration": 3.599,
+      "text": "I might be wrong I might have"
+    },
+    {
+      "start": 947.199,
+      "duration": 3.12,
+      "text": "misinterpreted this because of these"
+    },
+    {
+      "start": 949.199,
+      "duration": 3.32,
+      "text": "particular"
+    },
+    {
+      "start": 950.319,
+      "duration": 3.64,
+      "text": "limitations if the source is something"
+    },
+    {
+      "start": 952.519,
+      "duration": 3.601,
+      "text": "that you found"
+    },
+    {
+      "start": 953.959,
+      "duration": 3.8,
+      "text": "online so if it's something that you"
+    },
+    {
+      "start": 956.12,
+      "duration": 3.8,
+      "text": "accessed you know for example I"
+    },
+    {
+      "start": 957.759,
+      "duration": 3.921,
+      "text": "mentioned the Missouri State archives"
+    },
+    {
+      "start": 959.92,
+      "duration": 4.279,
+      "text": "they have a What's called the Missouri"
+    },
+    {
+      "start": 961.68,
+      "duration": 5.279,
+      "text": "digital Heritage website where they have"
+    },
+    {
+      "start": 964.199,
+      "duration": 5.44,
+      "text": "digitized death certificates I think"
+    },
+    {
+      "start": 966.959,
+      "duration": 4.641,
+      "text": "they go from 1909 through 1961 or some"
+    },
+    {
+      "start": 969.639,
+      "duration": 3.361,
+      "text": "such a thing uh they've digitized the"
+    },
+    {
+      "start": 971.6,
+      "duration": 2.64,
+      "text": "death certificates for the state and"
+    },
+    {
+      "start": 973.0,
+      "duration": 3.759,
+      "text": "they've placed them on their State"
+    },
+    {
+      "start": 974.24,
+      "duration": 5.279,
+      "text": "website so they've given us the index to"
+    },
+    {
+      "start": 976.759,
+      "duration": 5.041,
+      "text": "that on Ancestry so I've attached that"
+    },
+    {
+      "start": 979.519,
+      "duration": 4.0,
+      "text": "in that index where it has come up as a"
+    },
+    {
+      "start": 981.8,
+      "duration": 4.159,
+      "text": "shaky Leaf hint or I found it in a"
+    },
+    {
+      "start": 983.519,
+      "duration": 4.8,
+      "text": "search but then I go back and I actually"
+    },
+    {
+      "start": 985.959,
+      "duration": 4.961,
+      "text": "obtain from this Missouri digital"
+    },
+    {
+      "start": 988.319,
+      "duration": 3.44,
+      "text": "heritage website the actual copies of"
+    },
+    {
+      "start": 990.92,
+      "duration": 4.479,
+      "text": "the"
+    },
+    {
+      "start": 991.759,
+      "duration": 5.681,
+      "text": "certificate and so I list that URL there"
+    },
+    {
+      "start": 995.399,
+      "duration": 4.12,
+      "text": "now some of you just might be wondering"
+    },
+    {
+      "start": 997.44,
+      "duration": 3.639,
+      "text": "why I wanted to obtain an original copy"
+    },
+    {
+      "start": 999.519,
+      "duration": 3.721,
+      "text": "of the certificate there are a couple of"
+    },
+    {
+      "start": 1001.079,
+      "duration": 4.721,
+      "text": "quick reasons one is because the person"
+    },
+    {
+      "start": 1003.24,
+      "duration": 4.719,
+      "text": "who made the transcription for the index"
+    },
+    {
+      "start": 1005.8,
+      "duration": 5.959,
+      "text": "uh might have made a mistake the other"
+    },
+    {
+      "start": 1007.959,
+      "duration": 5.521,
+      "text": "reason is because often times very often"
+    },
+    {
+      "start": 1011.759,
+      "duration": 4.041,
+      "text": "there is more information on the"
+    },
+    {
+      "start": 1013.48,
+      "duration": 4.839,
+      "text": "original record than there is in the"
+    },
+    {
+      "start": 1015.8,
+      "duration": 4.44,
+      "text": "index the purpose of an index is not to"
+    },
+    {
+      "start": 1018.319,
+      "duration": 3.88,
+      "text": "be a trans description of the record the"
+    },
+    {
+      "start": 1020.24,
+      "duration": 4.16,
+      "text": "purpose of an index is to get you to the"
+    },
+    {
+      "start": 1022.199,
+      "duration": 3.801,
+      "text": "original to let you know you know help"
+    },
+    {
+      "start": 1024.4,
+      "duration": 4.399,
+      "text": "you find it to help you know where you"
+    },
+    {
+      "start": 1026.0,
+      "duration": 4.36,
+      "text": "can go to access it so the original"
+    },
+    {
+      "start": 1028.799,
+      "duration": 3.801,
+      "text": "record in the case of these Missouri"
+    },
+    {
+      "start": 1030.36,
+      "duration": 4.52,
+      "text": "death certificates actually lists"
+    },
+    {
+      "start": 1032.6,
+      "duration": 4.88,
+      "text": "parents' names in birthplaces it lists a"
+    },
+    {
+      "start": 1034.88,
+      "duration": 5.159,
+      "text": "spouse's name if they were married um it"
+    },
+    {
+      "start": 1037.48,
+      "duration": 5.0,
+      "text": "lists details about how they died it"
+    },
+    {
+      "start": 1040.039,
+      "duration": 5.0,
+      "text": "might list where they're buried so lots"
+    },
+    {
+      "start": 1042.48,
+      "duration": 5.319,
+      "text": "of additional information there so you"
+    },
+    {
+      "start": 1045.039,
+      "duration": 4.681,
+      "text": "would enter here the URL of the website"
+    },
+    {
+      "start": 1047.799,
+      "duration": 5.521,
+      "text": "where you accessed those particular"
+    },
+    {
+      "start": 1049.72,
+      "duration": 6.64,
+      "text": "records if you access them online again"
+    },
+    {
+      "start": 1053.32,
+      "duration": 4.32,
+      "text": "not all records are online so um you"
+    },
+    {
+      "start": 1056.36,
+      "duration": 3.76,
+      "text": "leave the fields blank that aren't"
+    },
+    {
+      "start": 1057.64,
+      "duration": 5.08,
+      "text": "pertinent to your particular citation"
+    },
+    {
+      "start": 1060.12,
+      "duration": 5.24,
+      "text": "the last two steps in creating Source"
+    },
+    {
+      "start": 1062.72,
+      "duration": 5.839,
+      "text": "citations one is you're going to upload"
+    },
+    {
+      "start": 1065.36,
+      "duration": 4.96,
+      "text": "the media so for example again these"
+    },
+    {
+      "start": 1068.559,
+      "duration": 4.321,
+      "text": "Missouri death certificates if I have an"
+    },
+    {
+      "start": 1070.32,
+      "duration": 4.4,
+      "text": "actual um image of that death"
+    },
+    {
+      "start": 1072.88,
+      "duration": 4.12,
+      "text": "certificate here's where I'm going to"
+    },
+    {
+      "start": 1074.72,
+      "duration": 5.92,
+      "text": "upload that I just click the yes"
+    },
+    {
+      "start": 1077.0,
+      "duration": 6.32,
+      "text": "button and it walks me through the steps"
+    },
+    {
+      "start": 1080.64,
+      "duration": 4.399,
+      "text": "to attach that particular piece of media"
+    },
+    {
+      "start": 1083.32,
+      "duration": 4.96,
+      "text": "now a lot of you have gotten in the"
+    },
+    {
+      "start": 1085.039,
+      "duration": 5.76,
+      "text": "habit of attaching your media to"
+    },
+    {
+      "start": 1088.28,
+      "duration": 5.72,
+      "text": "specific facts instead of creating"
+    },
+    {
+      "start": 1090.799,
+      "duration": 5.281,
+      "text": "Source citations and the new ancestry is"
+    },
+    {
+      "start": 1094.0,
+      "duration": 3.28,
+      "text": "is um a little uncomfortable for some of"
+    },
+    {
+      "start": 1096.08,
+      "duration": 4.64,
+      "text": "you because what we're doing is we're"
+    },
+    {
+      "start": 1097.28,
+      "duration": 7.36,
+      "text": "trying to move you into um this more"
+    },
+    {
+      "start": 1100.72,
+      "duration": 6.52,
+      "text": "genealogical genealogically accurate way"
+    },
+    {
+      "start": 1104.64,
+      "duration": 6.08,
+      "text": "of of using your media and I'm going to"
+    },
+    {
+      "start": 1107.24,
+      "duration": 6.679,
+      "text": "again use this death certificate as an"
+    },
+    {
+      "start": 1110.72,
+      "duration": 5.319,
+      "text": "example a death certificate if all you"
+    },
+    {
+      "start": 1113.919,
+      "duration": 3.88,
+      "text": "do is upload that create a death fact"
+    },
+    {
+      "start": 1116.039,
+      "duration": 5.041,
+      "text": "and upload that death certificate to"
+    },
+    {
+      "start": 1117.799,
+      "duration": 4.921,
+      "text": "that death fact you're missing out on"
+    },
+    {
+      "start": 1121.08,
+      "duration": 3.92,
+      "text": "some of those critical steps of the"
+    },
+    {
+      "start": 1122.72,
+      "duration": 5.0,
+      "text": "genealogical proof standard things like"
+    },
+    {
+      "start": 1125.0,
+      "duration": 4.76,
+      "text": "creating a full and accurate source"
+    },
+    {
+      "start": 1127.72,
+      "duration": 5.199,
+      "text": "citation um but the other thing you're"
+    },
+    {
+      "start": 1129.76,
+      "duration": 8.12,
+      "text": "missing out on is the is is the idea"
+    },
+    {
+      "start": 1132.919,
+      "duration": 8.401,
+      "text": "that a death certificate is a source for"
+    },
+    {
+      "start": 1137.88,
+      "duration": 4.919,
+      "text": "more than just the death fact and so"
+    },
+    {
+      "start": 1141.32,
+      "duration": 3.76,
+      "text": "what you'll see here is the final step"
+    },
+    {
+      "start": 1142.799,
+      "duration": 4.721,
+      "text": "of creating your source citation is that"
+    },
+    {
+      "start": 1145.08,
+      "duration": 5.16,
+      "text": "you'll see all of the facts that this"
+    },
+    {
+      "start": 1147.52,
+      "duration": 4.92,
+      "text": "particular event uh or all of the facts"
+    },
+    {
+      "start": 1150.24,
+      "duration": 5.6,
+      "text": "and events that this particular source"
+    },
+    {
+      "start": 1152.44,
+      "duration": 5.52,
+      "text": "citation uh pertains to so a death"
+    },
+    {
+      "start": 1155.84,
+      "duration": 4.76,
+      "text": "certificate yes it contains information"
+    },
+    {
+      "start": 1157.96,
+      "duration": 5.64,
+      "text": "about the death date in place but it"
+    },
+    {
+      "start": 1160.6,
+      "duration": 5.28,
+      "text": "also is a piece of evidence for gender"
+    },
+    {
+      "start": 1163.6,
+      "duration": 4.04,
+      "text": "and it's a piece of evidence for name"
+    },
+    {
+      "start": 1165.88,
+      "duration": 3.96,
+      "text": "and it's a piece of evidence for birth"
+    },
+    {
+      "start": 1167.64,
+      "duration": 4.159,
+      "text": "date in place it might be a piece of"
+    },
+    {
+      "start": 1169.84,
+      "duration": 4.36,
+      "text": "evidence for parents' names and"
+    },
+    {
+      "start": 1171.799,
+      "duration": 5.521,
+      "text": "birthplaces for spouse's names and"
+    },
+    {
+      "start": 1174.2,
+      "duration": 7.2,
+      "text": "birthplaces for the burial date and"
+    },
+    {
+      "start": 1177.32,
+      "duration": 7.599,
+      "text": "location okay so a death certificate is"
+    },
+    {
+      "start": 1181.4,
+      "duration": 6.92,
+      "text": "a source it is not just an image and"
+    },
+    {
+      "start": 1184.919,
+      "duration": 7.24,
+      "text": "that Source pertains to a lot of facts"
+    },
+    {
+      "start": 1188.32,
+      "duration": 6.96,
+      "text": "not just the obvious fact of a death"
+    },
+    {
+      "start": 1192.159,
+      "duration": 5.321,
+      "text": "certificate and this is true of a lot of"
+    },
+    {
+      "start": 1195.28,
+      "duration": 5.04,
+      "text": "different things so another type of"
+    },
+    {
+      "start": 1197.48,
+      "duration": 5.8,
+      "text": "record that I upload a quite a bit is"
+    },
+    {
+      "start": 1200.32,
+      "duration": 5.2,
+      "text": "newspaper images um images of newspaper"
+    },
+    {
+      "start": 1203.28,
+      "duration": 4.6,
+      "text": "clippings and maybe it's a a statement"
+    },
+    {
+      "start": 1205.52,
+      "duration": 5.0,
+      "text": "about a m appending marriage or maybe"
+    },
+    {
+      "start": 1207.88,
+      "duration": 5.4,
+      "text": "it's a little blurb about somebody's"
+    },
+    {
+      "start": 1210.52,
+      "duration": 4.72,
+      "text": "parents coming to visit them um and"
+    },
+    {
+      "start": 1213.28,
+      "duration": 4.24,
+      "text": "their new baby and so now I've got this"
+    },
+    {
+      "start": 1215.24,
+      "duration": 5.28,
+      "text": "little news blurb that gives me the"
+    },
+    {
+      "start": 1217.52,
+      "duration": 4.72,
+      "text": "mother's maiden name and it gives me the"
+    },
+    {
+      "start": 1220.52,
+      "duration": 4.519,
+      "text": "birth date of the baby and the name and"
+    },
+    {
+      "start": 1222.24,
+      "duration": 5.439,
+      "text": "the gender of the baby right so all of"
+    },
+    {
+      "start": 1225.039,
+      "duration": 5.921,
+      "text": "these little media items for the most"
+    },
+    {
+      "start": 1227.679,
+      "duration": 6.88,
+      "text": "part are sourc is as we are"
+    },
+    {
+      "start": 1230.96,
+      "duration": 5.8,
+      "text": "crafting um these identities or"
+    },
+    {
+      "start": 1234.559,
+      "duration": 5.36,
+      "text": "restoring these identities of these"
+    },
+    {
+      "start": 1236.76,
+      "duration": 6.279,
+      "text": "ancestors in our family tree so that's"
+    },
+    {
+      "start": 1239.919,
+      "duration": 5.281,
+      "text": "how Source citations work again what's"
+    },
+    {
+      "start": 1243.039,
+      "duration": 4.241,
+      "text": "going to happen is once you've added"
+    },
+    {
+      "start": 1245.2,
+      "duration": 4.24,
+      "text": "that source citation you're going to end"
+    },
+    {
+      "start": 1247.28,
+      "duration": 3.72,
+      "text": "up with sources from ancestry and then"
+    },
+    {
+      "start": 1249.44,
+      "duration": 3.479,
+      "text": "sources that you've added from other"
+    },
+    {
+      "start": 1251.0,
+      "duration": 3.2,
+      "text": "locations they're all going to be here"
+    },
+    {
+      "start": 1252.919,
+      "duration": 4.481,
+      "text": "in the center"
+    },
+    {
+      "start": 1254.2,
+      "duration": 6.8,
+      "text": "section you can double click on any one"
+    },
+    {
+      "start": 1257.4,
+      "duration": 5.639,
+      "text": "of them um and you can go in and edit"
+    },
+    {
+      "start": 1261.0,
+      "duration": 4.36,
+      "text": "any of those citation details and you"
+    },
+    {
+      "start": 1263.039,
+      "duration": 4.481,
+      "text": "can do this even on the source citations"
+    },
+    {
+      "start": 1265.36,
+      "duration": 4.6,
+      "text": "that ancestry automatically creates for"
+    },
+    {
+      "start": 1267.52,
+      "duration": 5.12,
+      "text": "you as a matter of fact it's a useful"
+    },
+    {
+      "start": 1269.96,
+      "duration": 4.4,
+      "text": "exercise to go in and review some of the"
+    },
+    {
+      "start": 1272.64,
+      "duration": 4.12,
+      "text": "source citations that ancestry has"
+    },
+    {
+      "start": 1274.36,
+      "duration": 4.559,
+      "text": "automatically created just to get a feel"
+    },
+    {
+      "start": 1276.76,
+      "duration": 4.159,
+      "text": "for the types of things that are put in"
+    },
+    {
+      "start": 1278.919,
+      "duration": 4.841,
+      "text": "some of the different fields here you'll"
+    },
+    {
+      "start": 1280.919,
+      "duration": 5.561,
+      "text": "see broken out the source information"
+    },
+    {
+      "start": 1283.76,
+      "duration": 6.88,
+      "text": "the repository information and the"
+    },
+    {
+      "start": 1286.48,
+      "duration": 7.88,
+      "text": "citation details you'll also be able to"
+    },
+    {
+      "start": 1290.64,
+      "duration": 5.519,
+      "text": "see the associated facts and you can go"
+    },
+    {
+      "start": 1294.36,
+      "duration": 6.36,
+      "text": "through and"
+    },
+    {
+      "start": 1296.159,
+      "duration": 6.52,
+      "text": "remove or add any single fact from the"
+    },
+    {
+      "start": 1300.72,
+      "duration": 5.0,
+      "text": "information that's included or"
+    },
+    {
+      "start": 1302.679,
+      "duration": 4.841,
+      "text": "referenced by a particular citation"
+    },
+    {
+      "start": 1305.72,
+      "duration": 4.959,
+      "text": "hopefully that all made sense let me"
+    },
+    {
+      "start": 1307.52,
+      "duration": 6.24,
+      "text": "just end with a couple of best practices"
+    },
+    {
+      "start": 1310.679,
+      "duration": 5.161,
+      "text": "for Source citations um one is just a"
+    },
+    {
+      "start": 1313.76,
+      "duration": 5.279,
+      "text": "reminder that source citation is as much"
+    },
+    {
+      "start": 1315.84,
+      "duration": 5.8,
+      "text": "an art as it is a science and so don't"
+    },
+    {
+      "start": 1319.039,
+      "duration": 4.441,
+      "text": "get too hung up in the mechanics of it"
+    },
+    {
+      "start": 1321.64,
+      "duration": 5.039,
+      "text": "if it's overwhelming to you just start"
+    },
+    {
+      "start": 1323.48,
+      "duration": 6.52,
+      "text": "doing it um you'll you may have noticed"
+    },
+    {
+      "start": 1326.679,
+      "duration": 5.401,
+      "text": "that in my source list I have a lot of"
+    },
+    {
+      "start": 1330.0,
+      "duration": 3.44,
+      "text": "things I need to clean up and that's"
+    },
+    {
+      "start": 1332.08,
+      "duration": 4.079,
+      "text": "because I've been doing family history"
+    },
+    {
+      "start": 1333.44,
+      "duration": 5.56,
+      "text": "research since I was 12 um I started"
+    },
+    {
+      "start": 1336.159,
+      "duration": 4.841,
+      "text": "with path as my genealogy program I"
+    },
+    {
+      "start": 1339.0,
+      "duration": 4.84,
+      "text": "moved to Family Tree Maker when I came"
+    },
+    {
+      "start": 1341.0,
+      "duration": 5.039,
+      "text": "to work here at ancestry um I've since"
+    },
+    {
+      "start": 1343.84,
+      "duration": 4.92,
+      "text": "2012 with the ability of Family Tree"
+    },
+    {
+      "start": 1346.039,
+      "duration": 5.601,
+      "text": "Maker to sink with my online tree I'm I"
+    },
+    {
+      "start": 1348.76,
+      "duration": 5.279,
+      "text": "keep those two things in sync until New"
+    },
+    {
+      "start": 1351.64,
+      "duration": 4.639,
+      "text": "ancestry came out I did most of my work"
+    },
+    {
+      "start": 1354.039,
+      "duration": 4.76,
+      "text": "in Family Tree Maker now that the new"
+    },
+    {
+      "start": 1356.279,
+      "duration": 4.88,
+      "text": "ancestry has come out I actually find so"
+    },
+    {
+      "start": 1358.799,
+      "duration": 5.161,
+      "text": "many of the things that um I did in"
+    },
+    {
+      "start": 1361.159,
+      "duration": 4.961,
+      "text": "Family Tree Maker uh are actually easier"
+    },
+    {
+      "start": 1363.96,
+      "duration": 4.48,
+      "text": "to do now in the new ancestry experience"
+    },
+    {
+      "start": 1366.12,
+      "duration": 4.559,
+      "text": "so I'm finding myself surprising to me"
+    },
+    {
+      "start": 1368.44,
+      "duration": 3.96,
+      "text": "spending a lot more time in my online"
+    },
+    {
+      "start": 1370.679,
+      "duration": 4.641,
+      "text": "tree than in Family Tree"
+    },
+    {
+      "start": 1372.4,
+      "duration": 4.48,
+      "text": "Maker and so um one of the things that"
+    },
+    {
+      "start": 1375.32,
+      "duration": 4.04,
+      "text": "I've been doing lately is actually going"
+    },
+    {
+      "start": 1376.88,
+      "duration": 6.48,
+      "text": "back through my tree and it is not small"
+    },
+    {
+      "start": 1379.36,
+      "duration": 5.88,
+      "text": "um and redoing or revisiting some of"
+    },
+    {
+      "start": 1383.36,
+      "duration": 6.52,
+      "text": "those Old Source citations that I made"
+    },
+    {
+      "start": 1385.24,
+      "duration": 8.24,
+      "text": "when I was you know 12 15 18 25 35 years"
+    },
+    {
+      "start": 1389.88,
+      "duration": 6.32,
+      "text": "old um I have learned more as I have um"
+    },
+    {
+      "start": 1393.48,
+      "duration": 5.48,
+      "text": "grown in my genealogy experience and"
+    },
+    {
+      "start": 1396.2,
+      "duration": 4.88,
+      "text": "skill and there are a lot of things in"
+    },
+    {
+      "start": 1398.96,
+      "duration": 3.92,
+      "text": "my tree that still need to be cleaned up"
+    },
+    {
+      "start": 1401.08,
+      "duration": 4.199,
+      "text": "and I find that as I go back and revisit"
+    },
+    {
+      "start": 1402.88,
+      "duration": 5.36,
+      "text": "or redo some of those"
+    },
+    {
+      "start": 1405.279,
+      "duration": 4.721,
+      "text": "citations I discover new evidence that I"
+    },
+    {
+      "start": 1408.24,
+      "duration": 4.24,
+      "text": "miss the first time around because I"
+    },
+    {
+      "start": 1410.0,
+      "duration": 5.72,
+      "text": "wasn't as meticulous in crafting those"
+    },
+    {
+      "start": 1412.48,
+      "duration": 5.559,
+      "text": "citations as I am now so so don't be too"
+    },
+    {
+      "start": 1415.72,
+      "duration": 4.72,
+      "text": "intimidated by it just jump in and get"
+    },
+    {
+      "start": 1418.039,
+      "duration": 4.801,
+      "text": "started and you'll find that you'll um"
+    },
+    {
+      "start": 1420.44,
+      "duration": 6.08,
+      "text": "get better at as as time goes by if you"
+    },
+    {
+      "start": 1422.84,
+      "duration": 5.68,
+      "text": "have questions about how to craft Source"
+    },
+    {
+      "start": 1426.52,
+      "duration": 4.48,
+      "text": "citations um one of the things I would"
+    },
+    {
+      "start": 1428.52,
+      "duration": 4.68,
+      "text": "encourage you to do if you if you can is"
+    },
+    {
+      "start": 1431.0,
+      "duration": 5.72,
+      "text": "to get a copy of the book evidence"
+    },
+    {
+      "start": 1433.2,
+      "duration": 6.719,
+      "text": "explained by Elizabeth shown Mills like"
+    },
+    {
+      "start": 1436.72,
+      "duration": 5.88,
+      "text": "I said she is um the master of source"
+    },
+    {
+      "start": 1439.919,
+      "duration": 5.321,
+      "text": "citations and that book covers"
+    },
+    {
+      "start": 1442.6,
+      "duration": 4.12,
+      "text": "everything it covers how to site a I"
+    },
+    {
+      "start": 1445.24,
+      "duration": 3.36,
+      "text": "think somebody once said it covers"
+    },
+    {
+      "start": 1446.72,
+      "duration": 4.959,
+      "text": "everything from how to site a milk"
+    },
+    {
+      "start": 1448.6,
+      "duration": 5.52,
+      "text": "carton um so like actual artifacts and"
+    },
+    {
+      "start": 1451.679,
+      "duration": 4.6,
+      "text": "things in our possession to anything"
+    },
+    {
+      "start": 1454.12,
+      "duration": 5.0,
+      "text": "that you might find in an archive or a"
+    },
+    {
+      "start": 1456.279,
+      "duration": 6.201,
+      "text": "library to anything you might find"
+    },
+    {
+      "start": 1459.12,
+      "duration": 5.159,
+      "text": "online in any particular form or format"
+    },
+    {
+      "start": 1462.48,
+      "duration": 4.36,
+      "text": "and so she walks through a lot of"
+    },
+    {
+      "start": 1464.279,
+      "duration": 4.681,
+      "text": "examples there she also has a Facebook"
+    },
+    {
+      "start": 1466.84,
+      "duration": 5.0,
+      "text": "page for evidence explained where she"
+    },
+    {
+      "start": 1468.96,
+      "duration": 5.92,
+      "text": "shares tips almost daily and I find it"
+    },
+    {
+      "start": 1471.84,
+      "duration": 5.439,
+      "text": "really useful to just kind of watch do"
+    },
+    {
+      "start": 1474.88,
+      "duration": 4.96,
+      "text": "on Facebook and she has a website and"
+    },
+    {
+      "start": 1477.279,
+      "duration": 4.921,
+      "text": "her website has some great resources"
+    },
+    {
+      "start": 1479.84,
+      "duration": 4.76,
+      "text": "some quick models that you can use if"
+    },
+    {
+      "start": 1482.2,
+      "duration": 4.56,
+      "text": "you can't get the book just yet um so"
+    },
+    {
+      "start": 1484.6,
+      "duration": 4.6,
+      "text": "that you can you know create those"
+    },
+    {
+      "start": 1486.76,
+      "duration": 5.08,
+      "text": "Source citations or know how to site"
+    },
+    {
+      "start": 1489.2,
+      "duration": 4.92,
+      "text": "certain sources and then just a reminder"
+    },
+    {
+      "start": 1491.84,
+      "duration": 4.36,
+      "text": "and I can't stress this enough um any"
+    },
+    {
+      "start": 1494.12,
+      "duration": 3.72,
+      "text": "media that we attach that's not just a"
+    },
+    {
+      "start": 1496.2,
+      "duration": 3.959,
+      "text": "photograph although photographs"
+    },
+    {
+      "start": 1497.84,
+      "duration": 4.839,
+      "text": "sometimes do fall into this category as"
+    },
+    {
+      "start": 1500.159,
+      "duration": 7.0,
+      "text": "well just remember that those are"
+    },
+    {
+      "start": 1502.679,
+      "duration": 7.081,
+      "text": "sources that we are using to inform the"
+    },
+    {
+      "start": 1507.159,
+      "duration": 3.801,
+      "text": "research into our family history and so"
+    },
+    {
+      "start": 1509.76,
+      "duration": 3.68,
+      "text": "make sure that you're creating those"
+    },
+    {
+      "start": 1510.96,
+      "duration": 5.04,
+      "text": "Source citations for that media and"
+    },
+    {
+      "start": 1513.44,
+      "duration": 5.16,
+      "text": "uploading the the media to your source"
+    },
+    {
+      "start": 1516.0,
+      "duration": 6.72,
+      "text": "citation as opposed to just uploading it"
+    },
+    {
+      "start": 1518.6,
+      "duration": 6.52,
+      "text": "to a specific fact um I think it limits"
+    },
+    {
+      "start": 1522.72,
+      "duration": 5.88,
+      "text": "the usefulness of that particular piece"
+    },
+    {
+      "start": 1525.12,
+      "duration": 5.88,
+      "text": "of media if we are um forcing it into"
+    },
+    {
+      "start": 1528.6,
+      "duration": 5.28,
+      "text": "just a singular fact and I hope I've"
+    },
+    {
+      "start": 1531.0,
+      "duration": 4.52,
+      "text": "made that pretty clear okay that is all"
+    },
+    {
+      "start": 1533.88,
+      "duration": 4.2,
+      "text": "I have prepared for you today I hope"
+    },
+    {
+      "start": 1535.52,
+      "duration": 4.48,
+      "text": "this was useful and informative um"
+    },
+    {
+      "start": 1538.08,
+      "duration": 4.479,
+      "text": "mostly my objective is just to get you"
+    },
+    {
+      "start": 1540.0,
+      "duration": 6.12,
+      "text": "to go click on things on the website and"
+    },
+    {
+      "start": 1542.559,
+      "duration": 5.72,
+      "text": "explore and see how they work for you um"
+    },
+    {
+      "start": 1546.12,
+      "duration": 4.039,
+      "text": "and also it's to educate you about some"
+    },
+    {
+      "start": 1548.279,
+      "duration": 4.12,
+      "text": "proper genealogical practices and some"
+    },
+    {
+      "start": 1550.159,
+      "duration": 5.52,
+      "text": "standards in the industry and how"
+    },
+    {
+      "start": 1552.399,
+      "duration": 4.76,
+      "text": "ancestry is working to try to conform to"
+    },
+    {
+      "start": 1555.679,
+      "duration": 3.561,
+      "text": "some of those standards and to help you"
+    },
+    {
+      "start": 1557.159,
+      "duration": 4.961,
+      "text": "to do the same"
+    },
+    {
+      "start": 1559.24,
+      "duration": 5.36,
+      "text": "the October calendar for our October"
+    },
+    {
+      "start": 1562.12,
+      "duration": 5.279,
+      "text": "video events is already up on the"
+    },
+    {
+      "start": 1564.6,
+      "duration": 4.199,
+      "text": "Facebook page uh so look at me getting"
+    },
+    {
+      "start": 1567.399,
+      "duration": 3.841,
+      "text": "it done a couple days before the end of"
+    },
+    {
+      "start": 1568.799,
+      "duration": 4.641,
+      "text": "the month um so if you go to uh"
+    },
+    {
+      "start": 1571.24,
+      "duration": 4.319,
+      "text": "ancestries Facebook page and click on"
+    },
+    {
+      "start": 1573.44,
+      "duration": 4.119,
+      "text": "the events tab you'll be able to see all"
+    },
+    {
+      "start": 1575.559,
+      "duration": 4.561,
+      "text": "of the events scheduled for the month of"
+    },
+    {
+      "start": 1577.559,
+      "duration": 4.201,
+      "text": "October be sure to just click I think"
+    },
+    {
+      "start": 1580.12,
+      "duration": 4.559,
+      "text": "Facebook changed the language it used to"
+    },
+    {
+      "start": 1581.76,
+      "duration": 5.6,
+      "text": "say join I think it now says going um"
+    },
+    {
+      "start": 1584.679,
+      "duration": 4.12,
+      "text": "but click that button uh and whether you"
+    },
+    {
+      "start": 1587.36,
+      "duration": 4.679,
+      "text": "intend to ATT"
+    },
+    {
+      "start": 1588.799,
+      "duration": 7.081,
+      "text": "intend to attend a live session of our"
+    },
+    {
+      "start": 1592.039,
+      "duration": 7.36,
+      "text": "video recordings or not if you uh RSVP"
+    },
+    {
+      "start": 1595.88,
+      "duration": 6.36,
+      "text": "on that Facebook uh event then when the"
+    },
+    {
+      "start": 1599.399,
+      "duration": 5.28,
+      "text": "video gets posted to YouTube you'll get"
+    },
+    {
+      "start": 1602.24,
+      "duration": 4.159,
+      "text": "a Facebook notification that the video"
+    },
+    {
+      "start": 1604.679,
+      "duration": 4.561,
+      "text": "is now available on YouTube so that you"
+    },
+    {
+      "start": 1606.399,
+      "duration": 5.841,
+      "text": "can go and watch it at your convenience"
+    },
+    {
+      "start": 1609.24,
+      "duration": 4.64,
+      "text": "and hopefully that made sense um again"
+    },
+    {
+      "start": 1612.24,
+      "duration": 3.12,
+      "text": "that's all I have for you today so if"
+    },
+    {
+      "start": 1613.88,
+      "duration": 3.159,
+      "text": "you're watching this live I will be on"
+    },
+    {
+      "start": 1615.36,
+      "duration": 3.439,
+      "text": "chat in just a few minutes if you're"
+    },
+    {
+      "start": 1617.039,
+      "duration": 3.921,
+      "text": "watching this on YouTube"
+    },
+    {
+      "start": 1618.799,
+      "duration": 4.641,
+      "text": "feel free to leave a comment and I will"
+    },
+    {
+      "start": 1620.96,
+      "duration": 4.52,
+      "text": "respond to those as necessary until next"
+    },
+    {
+      "start": 1623.44,
+      "duration": 4.76,
+      "text": "time this is Christa Cowen have fun"
+    },
+    {
+      "start": 1625.48,
+      "duration": 2.72,
+      "text": "climbing your family"
+    },
+    {
+      "start": 1630.559,
+      "duration": 3.0,
+      "text": "tree"
+    }
+  ],
+  "full_text": "hi everyone Christa Cowen here with another episode of the barefoot genealogist today we are talking about Source citations specifically we're talking about crafting a source citation in the fax view of new ancestry so we're just going to talk really briefly um about Source citations just a review of some things I'll I'll walk you through through the screens in the new ancestry on the fax view where you can craft your own source citations and then we'll just run through a couple of best practices tips that might help you or spark some new ideas in you so let's go ahead and dive in first um I just want to remind you that uh I actually did a video probably well it's been a couple of months ago the video was called the basics of a genealogy source citation where I walk you through just that the basics of a genealogy source citation a couple of things that I just want to remind you about from that video anytime you attach a record from ancestry into your online tree or if you do it through FTM through Family Tree Maker it automatically creates those Source citations for you now I'll show you in just a minute where you can go to review those but uh that is an automatic process what we're going to talk about today is crafting your own Source citations for information you locate elsewhere so I do a lot of my research uh online through ancestry with more than 16 billion records online um I never run out of Records there's always something new to find or to discover but if I'm working on proving something about a particular person the genealogical proof standard states that I should be doing a reasonably exhaustive search which means that sometimes I have to go elsewhere for records sometimes because it's all that the state or archive has provided ancestry only has an index of a particular record and so I have to actually write away to the state or get on their website and order a copy of the original marriage certificate or the original death certificate uh because they haven't allowed those to be placed online a lot of times I do a lot of newspaper research and so I use the newspapers on Ancestry I also use the newspapers on newspapers.com um there are free sites like Fulton history uh lots of different places where I go for my newspaper research I will clip copies of those newspapers and want to upload those to my tree so I've got original documents that I get in the mail that I have to scan and upload I've got things I find other places online that I want to clip um and and upload that image to the tree and so I have to be able to craft my own source citations for that information that I have located elsewhere so on Ancestry when you're in a person's profile uh and hopefully you're on the facts tab that's where you should be doing uh all of your research the life story tab is just a presentation um sharable kind of a feature it's also a great way to look at your family tree in a different light to see where some of your own data entry errors might be or where you might have um missed following some of the genealogical standards or where might not have made some of the edits that need to be made um or in my case I just make silly mistakes sometimes um and so I like the life story view because it helps to see my tree in a in a new way and it allows me to catch some of those errors I might not have caught otherwise the fact view on the new ancestry experience is much like the timeline in the old ancestry experience it's where you have um your facts and your sources and your family members and we've put those sources front and Center and we did that really intentionally because sources are uh what determines the accuracy or helps helps validate the accuracy of your tree if you've watched my series on the genealogical proof standard you know how critical that is and so we put that right front and center so that everybody can see uh when they're looking at your tree if it is sourced or not right away it also helps you to know right away what you have or what you don't have now the sources at the top of that Source column are the sources from ancestry so those are the records on Ancestry that you have added and if you remember um from I think the last video I did about the new ancestry experience if you click once on any one of these sources it will highlight the facts in the the leftand facts column that are supported by that single piece of evidence conversely if you click on any fact in the left left hand side in that facts column it will highlight the sources that support that specific fact we'll talk more about that concept a little bit um later in the month about attaching records and and making sure that those facts and sources all line up today what we're talking specifically about is how we can add a source so anytime you find a record outside of ancestry this is what you're going to want to do and there are actually two places you can do it we wanted to make it really obvious you can add a source down here at the bottom of the column but sometimes this column gets really really long you end up with you know hopefully 10 20 30 records attached to a person remember reasonably exhaustive search means we've consulted a lot of documents before we come to some conclusions about these individuals and so we also have placed a way to add that Source at the top of that column so a link at the top a link at the bottom you're going to want to go ahead and click that and here's the screen it's going to bring up and there's actually a couple of different parts to creating a source citation the first part is you need to define the source now the easiest way to define the source that I've heard used and I'm going to reference Elizabeth shown Mills work quite a bit today she's um she is the master of all things source citation and probably one of the queens of genealogy and so she talks about the source as being the container in which the information resides that's kind of an easy way to conceptualize this idea the citation then is the actual information in the record so the source you're going to have a couple of options here one is select a previous source so if I've had a 1790 census before or I can scroll through this list and see lots of Census records in there and some of those need to be cleaned up if I've used Oregan death records or Ohio marriage record records or whatever the case may be if I've already used a record from a particular Source I can just come in here and pre-select that particular Source okay if I've never used it before I'm going to want to create a new source and that's going to take me to a whole different screen now I'm going to just walk through these fields really quickly just so that you're aware of them but the only field in this entire screen that is absolutely required is this Top Field this title field all the other fields are optional and the reason they're optional is because not every single source is going to be exactly the same so sometimes the source that I am that I'm creating um again the container in which the information is held is going to be a book A book is a a really obvious Source an actually printed book um whether it's a printed book that I tangibly held in my hands or whether it's a book that I downloaded as a PDF off of one of the um booklink sites like Google books or genealogy booklinks uh wherever I wherever I obtain a copy of that book the book still has a title and an author and a publisher and publisher location and then it has a publishing date uh usually it has a call number I can make some notes that pertain to that particular Source an rfn number and then a repository we'll talk about that repository in just a minute so a book is probably the easiest most obvious kind of source um that you can create now there are other sources so for example a census is a source and if you look through your existing Source list uh based on the things you've attached An ancestry you'll get a feel for that um maybe a source is a newspaper or a source is um a particular um set of documents like Missouri State death certificates there's a collection of those online okay again whatever the case may be um you only have to have a title but where you can fill in additional information it's going to be useful now this is going to go back to one of the reasons why we create sources and Source citations one of them is so that we can find that information again one of them is so that other people can find that information can follow our research Trail and probably the most important reason why I create Source citations is because in the process of creating them what I'm doing is I'm analyzing This Record where did this record come from who created it why was it created when was it created all of those are important to analyzing that record to understand how accurate the information contained in that record may be so for example if my source um is a particular Cemetery right a particular a tombstone for example knowing that that that Cemetery record that I'm looking at um knowing that that Tombstone was placed 60 years after the person died means that I'm going to give different weight to that particular piece of evidence than if it had been placed um immediately upon death for example right so creating these Source citations helps me to analyze the the sources that I'm using so that I come to better conclus conclusions about who's in my tree about the information and that all helps ensure that I'm climbing my own tree and not somebody else's that I haven't just attached some record that has nothing to do with my person so creating this Source um is is an important step now the repository here at the bottom of this Source form is also important so this is where you're going to list I'm going to use a book as an example again because it's the easiest example um of the repository for that book might be the library where you where you obtained it or it might be the website that digitized the books and you accessed that particular website you'll notice that I've got ancestry.com as the top repository here well that's because every record that I attach automatically through ancestry ancestry.com is listed as the repository you'll see I also have you know the family history Library I try to get up there uh up to Salt Lake City to the family history Library if times a year and they have CA you know cases full of microfilm much of that microfilm that has not yet been digitized and put online and so if I access a particular reel of microfilm that has a book or a parish register or you know the the you know the little church in Germany the records for the little church in Germany where my family lived whatever the case may be that particular title or collection is going to be the source but the family history library is going to be the repository because that's where I obtained my copy of that record so it doesn't matter if the record is actually held by the National Archives um if I obtain my copy through ancestry or through the family history Library Missouri State archives through US gen web whatever the case may be I'm going to list the repository where I accessed that particular information now once you've created your source and and um that's a pretty simple process really you're going to want to create the citation now the citation is about the specific information that you are using out of that particular record and again for me one of the main purposes of this is that it helps me analyze the information as I'm entering this citation to ensure that I've got the right person that I've extracted all the juicy goodness out of that record that I understand the context of this record so that I understand how it fits with my other evidence um one of the genealogical proof standard steps is resolving conflicting evidence and if you've been doing this for any length of time you know that you will often come across conflicting evidence one person says the birth date was this another you know another record says this um one record says they were born here another record says here so you have to be able to take all of that evidence about a person and you have to be able to resolve those conflicting pieces of evidence because a person really only died once in one place and they were only born once in one place and so having multiple you know um alternate birth dates and places and death dates and places is silly right you need to be able to take all of that evidence and resolve it and come to a conclusion and your conclusion is going to be the best that you can come to at the time with the evidence that you have been able to to loc to identify so the purpose of the source citation again is to help you just like the creating the source to help you analyze that information again much like the source the only thing that's required in this field is some kind of a title um so in this case we're going to put the volume number or the film number or whatever additional detail is going to get us to that particular record we're going to enter a date here if that's significant we're going to enter the transcription of the text if you would like to now I actually I personally do this a little bit differently rather than putting the transcription of the text into my source citation I actually put it into my notes for the person and I do that so that I create a narrative and so that I have all my um citation transcriptions in one location and I can quickly review them all together instead of having to open up individual citations but if this works for you absolutely do it that way you can include addition additional information and here's um where I include information like um you know like if I'm reading a particular page of a census and it's hard to read and the names are really faded and I've done the best I can in making out that information I might make a note about how you know the bottom third of this page was burned and so I might be missing some information or the the the writing was really faint and so it was kind of illegible and I've done the best I can I make whatever notations can about the source or about that particular citation just so that I understand what the limitations of those records are and again so that others who are looking at my source citations also know that I've taken the time to analyze that and that I'm admitting that you know what I might I might be wrong I might have misinterpreted this because of these particular limitations if the source is something that you found online so if it's something that you accessed you know for example I mentioned the Missouri State archives they have a What's called the Missouri digital Heritage website where they have digitized death certificates I think they go from 1909 through 1961 or some such a thing uh they've digitized the death certificates for the state and they've placed them on their State website so they've given us the index to that on Ancestry so I've attached that in that index where it has come up as a shaky Leaf hint or I found it in a search but then I go back and I actually obtain from this Missouri digital heritage website the actual copies of the certificate and so I list that URL there now some of you just might be wondering why I wanted to obtain an original copy of the certificate there are a couple of quick reasons one is because the person who made the transcription for the index uh might have made a mistake the other reason is because often times very often there is more information on the original record than there is in the index the purpose of an index is not to be a trans description of the record the purpose of an index is to get you to the original to let you know you know help you find it to help you know where you can go to access it so the original record in the case of these Missouri death certificates actually lists parents' names in birthplaces it lists a spouse's name if they were married um it lists details about how they died it might list where they're buried so lots of additional information there so you would enter here the URL of the website where you accessed those particular records if you access them online again not all records are online so um you leave the fields blank that aren't pertinent to your particular citation the last two steps in creating Source citations one is you're going to upload the media so for example again these Missouri death certificates if I have an actual um image of that death certificate here's where I'm going to upload that I just click the yes button and it walks me through the steps to attach that particular piece of media now a lot of you have gotten in the habit of attaching your media to specific facts instead of creating Source citations and the new ancestry is is um a little uncomfortable for some of you because what we're doing is we're trying to move you into um this more genealogical genealogically accurate way of of using your media and I'm going to again use this death certificate as an example a death certificate if all you do is upload that create a death fact and upload that death certificate to that death fact you're missing out on some of those critical steps of the genealogical proof standard things like creating a full and accurate source citation um but the other thing you're missing out on is the is is the idea that a death certificate is a source for more than just the death fact and so what you'll see here is the final step of creating your source citation is that you'll see all of the facts that this particular event uh or all of the facts and events that this particular source citation uh pertains to so a death certificate yes it contains information about the death date in place but it also is a piece of evidence for gender and it's a piece of evidence for name and it's a piece of evidence for birth date in place it might be a piece of evidence for parents' names and birthplaces for spouse's names and birthplaces for the burial date and location okay so a death certificate is a source it is not just an image and that Source pertains to a lot of facts not just the obvious fact of a death certificate and this is true of a lot of different things so another type of record that I upload a quite a bit is newspaper images um images of newspaper clippings and maybe it's a a statement about a m appending marriage or maybe it's a little blurb about somebody's parents coming to visit them um and their new baby and so now I've got this little news blurb that gives me the mother's maiden name and it gives me the birth date of the baby and the name and the gender of the baby right so all of these little media items for the most part are sourc is as we are crafting um these identities or restoring these identities of these ancestors in our family tree so that's how Source citations work again what's going to happen is once you've added that source citation you're going to end up with sources from ancestry and then sources that you've added from other locations they're all going to be here in the center section you can double click on any one of them um and you can go in and edit any of those citation details and you can do this even on the source citations that ancestry automatically creates for you as a matter of fact it's a useful exercise to go in and review some of the source citations that ancestry has automatically created just to get a feel for the types of things that are put in some of the different fields here you'll see broken out the source information the repository information and the citation details you'll also be able to see the associated facts and you can go through and remove or add any single fact from the information that's included or referenced by a particular citation hopefully that all made sense let me just end with a couple of best practices for Source citations um one is just a reminder that source citation is as much an art as it is a science and so don't get too hung up in the mechanics of it if it's overwhelming to you just start doing it um you'll you may have noticed that in my source list I have a lot of things I need to clean up and that's because I've been doing family history research since I was 12 um I started with path as my genealogy program I moved to Family Tree Maker when I came to work here at ancestry um I've since 2012 with the ability of Family Tree Maker to sink with my online tree I'm I keep those two things in sync until New ancestry came out I did most of my work in Family Tree Maker now that the new ancestry has come out I actually find so many of the things that um I did in Family Tree Maker uh are actually easier to do now in the new ancestry experience so I'm finding myself surprising to me spending a lot more time in my online tree than in Family Tree Maker and so um one of the things that I've been doing lately is actually going back through my tree and it is not small um and redoing or revisiting some of those Old Source citations that I made when I was you know 12 15 18 25 35 years old um I have learned more as I have um grown in my genealogy experience and skill and there are a lot of things in my tree that still need to be cleaned up and I find that as I go back and revisit or redo some of those citations I discover new evidence that I miss the first time around because I wasn't as meticulous in crafting those citations as I am now so so don't be too intimidated by it just jump in and get started and you'll find that you'll um get better at as as time goes by if you have questions about how to craft Source citations um one of the things I would encourage you to do if you if you can is to get a copy of the book evidence explained by Elizabeth shown Mills like I said she is um the master of source citations and that book covers everything it covers how to site a I think somebody once said it covers everything from how to site a milk carton um so like actual artifacts and things in our possession to anything that you might find in an archive or a library to anything you might find online in any particular form or format and so she walks through a lot of examples there she also has a Facebook page for evidence explained where she shares tips almost daily and I find it really useful to just kind of watch do on Facebook and she has a website and her website has some great resources some quick models that you can use if you can't get the book just yet um so that you can you know create those Source citations or know how to site certain sources and then just a reminder and I can't stress this enough um any media that we attach that's not just a photograph although photographs sometimes do fall into this category as well just remember that those are sources that we are using to inform the research into our family history and so make sure that you're creating those Source citations for that media and uploading the the media to your source citation as opposed to just uploading it to a specific fact um I think it limits the usefulness of that particular piece of media if we are um forcing it into just a singular fact and I hope I've made that pretty clear okay that is all I have prepared for you today I hope this was useful and informative um mostly my objective is just to get you to go click on things on the website and explore and see how they work for you um and also it's to educate you about some proper genealogical practices and some standards in the industry and how ancestry is working to try to conform to some of those standards and to help you to do the same the October calendar for our October video events is already up on the Facebook page uh so look at me getting it done a couple days before the end of the month um so if you go to uh ancestries Facebook page and click on the events tab you'll be able to see all of the events scheduled for the month of October be sure to just click I think Facebook changed the language it used to say join I think it now says going um but click that button uh and whether you intend to ATT intend to attend a live session of our video recordings or not if you uh RSVP on that Facebook uh event then when the video gets posted to YouTube you'll get a Facebook notification that the video is now available on YouTube so that you can go and watch it at your convenience and hopefully that made sense um again that's all I have for you today so if you're watching this live I will be on chat in just a few minutes if you're watching this on YouTube feel free to leave a comment and I will respond to those as necessary until next time this is Christa Cowen have fun climbing your family tree",
+  "attempts": [
+    {
+      "client": "IOS",
+      "playability": {
+        "status": "OK",
+        "playableInEmbed": true,
+        "offlineability": {
+          "buttonRenderer": {
+            "navigationEndpoint": {
+              "clickTrackingParams": "CAkQ6ewBIhMI2auliOzblwMVzEtMCB3e7hdhygEE_5OIIg==",
+              "ypcGetOfflineUpsellEndpoint": {
+                "params": "ChPqqN25AQ0KCzdNM1haZk43ODE0Igs3TTNYWmZONzgxNCoVCAkYAVIPCgs3TTNYWmZONzgxNCAB"
+              }
+            },
+            "trackingParams": "CAkQ6ewBIhMI2auliOzblwMVzEtMCB3e7hdh"
+          }
+        },
+        "pictureInPicture": {
+          "pictureInPictureRenderer": {
+            "playableInPip": true,
+            "offByDefault": false,
+            "shouldResumeOnHead": false
+          }
+        },
+        "miniplayer": {
+          "miniplayerRenderer": {
+            "playbackMode": "PLAYBACK_MODE_ALLOW"
+          }
+        },
+        "contextParams": "Q0FFU0FnZ0M="
+      },
+      "outcome": "ok"
+    }
+  ],
+  "fetched_at": "2026-10-28T04:11:15.219737+00:00",
+  "client": "IOS",
+  "json_path": "transcripts/015_7M3XZfN7814.json",
+  "text_path": "transcripts/015_7M3XZfN7814.txt"
+}

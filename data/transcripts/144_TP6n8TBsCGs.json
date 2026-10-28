@@ -1,0 +1,3230 @@
+{
+  "index": 144,
+  "url": "https://www.youtube.com/watch?v=TP6n8TBsCGs",
+  "video_id": "TP6n8TBsCGs",
+  "status": "ok",
+  "metadata": {
+    "title": "Resolving Heirs' Property",
+    "author": "MD Ag Law Education Initiative",
+    "channelId": "UCCA3krV3_YEBhad9ByfxQjQ",
+    "lengthSeconds": "3784",
+    "viewCount": "45",
+    "shortDescription": "This video covers steps to take to understand who legally owns the property, legal structures that can hold land owned by heirs' property owners, and tools and resources to assist."
+  },
+  "caption_tracks": [
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=TP6n8TBsCGs&ei=-HXharXxErb3sfIP9c_JEQ&caps=asr&opi=112496729&xoaf=5&xowf=1&xospf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185896&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=72D7DE15D1C9B36FE8657F383AE327C7F40F69C2.08458A299DE3B88EFF69FAD84CCB0D49DC32CA02&key=yt8&kind=asr&lang=en",
+      "name": {
+        "runs": [
+          {
+            "text": "English (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.en",
+      "languageCode": "en",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=TP6n8TBsCGs&ei=-HXharXxErb3sfIP9c_JEQ&caps=asr&opi=112496729&xoaf=5&xowf=1&xospf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185896&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=72D7DE15D1C9B36FE8657F383AE327C7F40F69C2.08458A299DE3B88EFF69FAD84CCB0D49DC32CA02&key=yt8&lang=en-US",
+      "name": {
+        "runs": [
+          {
+            "text": "English (United States)"
+          }
+        ]
+      },
+      "vssId": ".en-US",
+      "languageCode": "en-US",
+      "isTranslatable": true,
+      "trackName": ""
+    }
+  ],
+  "selected_track": {
+    "baseUrl": "https://www.youtube.com/api/timedtext?v=TP6n8TBsCGs&ei=-HXharXxErb3sfIP9c_JEQ&caps=asr&opi=112496729&xoaf=5&xowf=1&xospf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185896&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=72D7DE15D1C9B36FE8657F383AE327C7F40F69C2.08458A299DE3B88EFF69FAD84CCB0D49DC32CA02&key=yt8&lang=en-US",
+    "name": {
+      "runs": [
+        {
+          "text": "English (United States)"
+        }
+      ]
+    },
+    "vssId": ".en-US",
+    "languageCode": "en-US",
+    "isTranslatable": true,
+    "trackName": ""
+  },
+  "segments": [
+    {
+      "start": 1.56,
+      "duration": 1.48,
+      "text": "Okay, well, welcome back, everybody."
+    },
+    {
+      "start": 3.04,
+      "duration": 5.76,
+      "text": "This is our third and final installment of our webinar series, and we're going to cover resolution today."
+    },
+    {
+      "start": 9.2,
+      "duration": 6.24,
+      "text": "And as Prem mentioned, we did an overview on the first webinar about the impact and effects of heirs property."
+    },
+    {
+      "start": 15.72,
+      "duration": 4.52,
+      "text": "And Samantha Capaldo presented preventing heirs property at the second webinar."
+    },
+    {
+      "start": 20.4,
+      "duration": 4.32,
+      "text": "Today, we're going to talk about resolving heirs property issues."
+    },
+    {
+      "start": 24.72,
+      "duration": 4.32,
+      "text": "But let's keep in mind, this training is supported by our funders."
+    },
+    {
+      "start": 29.04,
+      "duration": 0.92,
+      "text": "They're very important."
+    },
+    {
+      "start": 30.04,
+      "duration": 6.76,
+      "text": "comes from a USDA grant, as Prem mentioned, and some of our additional co-PIs on this part, partnering on this project."
+    },
+    {
+      "start": 38.56,
+      "duration": 8.56,
+      "text": "And all of the acknowledgements, everybody here who worked on creating the information that you're being given."
+    },
+    {
+      "start": 47.36,
+      "duration": 4.88,
+      "text": "And of course, this is me, I'm Nicole, and you can find me at UMES Extension."
+    },
+    {
+      "start": 53.12,
+      "duration": 7.6,
+      "text": "and also on the Agriculture Law Education Initiative website at umaglaw.org."
+    },
+    {
+      "start": 61.84,
+      "duration": 13.199,
+      "text": "So like I said, tonight we're going to focus on resolution and we're going to cover topics here, including going briefly through those challenges of owning heirs property, the importance of working with other family members and resolving heirs property issues,"
+    },
+    {
+      "start": 75.52,
+      "duration": 11.36,
+      "text": "the steps to undertake and delineate who legally owns the property, and then legal structures that can hold land in heirs property, excuse me, hold land that heirs property owners own."
+    },
+    {
+      "start": 87.64,
+      "duration": 1.399,
+      "text": "So, okay."
+    },
+    {
+      "start": 90.0,
+      "duration": 0.72,
+      "text": "let's go ahead."
+    },
+    {
+      "start": 90.72,
+      "duration": 2.64,
+      "text": "Of course, we've got lawyers talking to you."
+    },
+    {
+      "start": 93.36,
+      "duration": 1.48,
+      "text": "So there's going to be some disclaimers."
+    },
+    {
+      "start": 94.84,
+      "duration": 5.32,
+      "text": "And the first is that these materials are intended to present general educational information."
+    },
+    {
+      "start": 100.16,
+      "duration": 2.72,
+      "text": "We're not providing any specific legal advice tonight."
+    },
+    {
+      "start": 103.6,
+      "duration": 2.24,
+      "text": "And the information is applicable."
+    },
+    {
+      "start": 106.12,
+      "duration": 7.08,
+      "text": "We understand we have audiences coming and who will view this possibly from every other state."
+    },
+    {
+      "start": 113.2,
+      "duration": 3.559,
+      "text": "We have international observers as well and viewers sometimes."
+    },
+    {
+      "start": 116.759,
+      "duration": 2.641,
+      "text": "So please understand that this information may not necessarily"
+    },
+    {
+      "start": 119.56,
+      "duration": 3.0,
+      "text": "barely always be applicable to every state."
+    },
+    {
+      "start": 122.56,
+      "duration": 4.64,
+      "text": "So you want to make sure you're checking with lawyers that practice law in the state that you're interested in."
+    },
+    {
+      "start": 129.84,
+      "duration": 9.04,
+      "text": "And because we are actually recording the webinar and they will be posted, we generally caution people not to provide personal stories."
+    },
+    {
+      "start": 139.52,
+      "duration": 6.08,
+      "text": "General questions are always welcome, but personal questions might be better asked outside of our webinar setting tonight."
+    },
+    {
+      "start": 147.44,
+      "duration": 17.12,
+      "text": "So, okay, during this session, we're gonna talk about the challenges of heirs property and also why some families might actually choose to continue holding their land as homes and homes as heirs property, 'cause that's an option."
+    },
+    {
+      "start": 164.56,
+      "duration": 3.519,
+      "text": "But we'll talk about, of course, the dangers that come with choosing that option."
+    },
+    {
+      "start": 168.72,
+      "duration": 6.88,
+      "text": "But we'll also talk about the importance of working with other family members to consider how best to manage the heirs property."
+    },
+    {
+      "start": 176.12,
+      "duration": 8.28,
+      "text": "And we're going to talk about steps to understand who legally owns the property and then discuss legal structures that can hold land that's owned by heir property owners."
+    },
+    {
+      "start": 187.2,
+      "duration": 9.68,
+      "text": "Before we get started, I do want to, I'm hoping we can watch this short video that documents how one family lost generational land due to heirs property."
+    },
+    {
+      "start": 197.12,
+      "duration": 1.44,
+      "text": "And so let me play that."
+    },
+    {
+      "start": 200.079,
+      "duration": 1.441,
+      "text": "Nope, that's not what I wanted to do."
+    },
+    {
+      "start": 201.68,
+      "duration": 0.36,
+      "text": "Here we go."
+    },
+    {
+      "start": 206.92,
+      "duration": 2.2,
+      "text": "Imagine you inherit a family heirloom."
+    },
+    {
+      "start": 210.079,
+      "duration": 5.521,
+      "text": "Your extended family also inherits this thing, so you each own a teeny tiny percentage of it."
+    },
+    {
+      "start": 216.079,
+      "duration": 1.921,
+      "text": "What if no one agrees on what to do with it?"
+    },
+    {
+      "start": 218.4,
+      "duration": 4.32,
+      "text": "What if you risk losing it forever if just one person decides they want to sell?"
+    },
+    {
+      "start": 223.2,
+      "duration": 7.52,
+      "text": "This nightmare scenario has been playing out on family farms for generations, and it's hit black-owned farms particularly hard."
+    },
+    {
+      "start": 241.2,
+      "duration": 9.92,
+      "text": "So if we think about the Jim Crow South, individuals were not able to access the legal system, which means they weren't actually able to prepare themselves for their own departure."
+    },
+    {
+      "start": 252.88,
+      "duration": 6.959,
+      "text": "I steward 15 acres of land with the support of Farmer Greer and Mama Callie here."
+    },
+    {
+      "start": 261.959,
+      "duration": 1.801,
+      "text": "My name is Jasmine Elise Story."
+    },
+    {
+      "start": 264.0,
+      "duration": 7.12,
+      "text": "I am the descendant of farmers, and I am also an inheritor of heir property."
+    },
+    {
+      "start": 271.72,
+      "duration": 9.24,
+      "text": "And it has been a multi-generational struggle to make sure that that land was able to stay within our family."
+    },
+    {
+      "start": 281.12,
+      "duration": 10.64,
+      "text": "Some people have 200 heirs or 2,000 heirs attached to a property because you're talking about people who are able to purchase land at the turn of the century."
+    },
+    {
+      "start": 292.0,
+      "duration": 3.12,
+      "text": "or right after they themselves were considered property."
+    },
+    {
+      "start": 295.76,
+      "duration": 5.44,
+      "text": "Over the course of the 20th century, black farm owners lost nearly 90% of their farmland."
+    },
+    {
+      "start": 301.52,
+      "duration": 3.68,
+      "text": "And today, black farmers make up less than 2% of all U.S."
+    },
+    {
+      "start": 305.2,
+      "duration": 0.64,
+      "text": "farmers."
+    },
+    {
+      "start": 306.32,
+      "duration": 10.64,
+      "text": "Some likely reasons why include forced sales, lack of investment, and limited access to loans and government funding, all issues that affect heirs' property."
+    },
+    {
+      "start": 317.76,
+      "duration": 16.96,
+      "text": "Heir property is vulnerable because it is held in common, which means any individual member who has individual interest in the property could eventually fall prey to an outsider who might buy that interest."
+    },
+    {
+      "start": 335.04,
+      "duration": 8.08,
+      "text": "And then they can cause a judge to sell the entire piece of property, and essentially the land is lost to the family."
+    },
+    {
+      "start": 343.44,
+      "duration": 4.2,
+      "text": "If you are being barred because of the structural violence"
+    },
+    {
+      "start": 347.72,
+      "duration": 15.24,
+      "text": "violence of the past and our government's inability to address that in the present, it just feels like it's another very, very open space where that promise is not being delivered in earnest."
+    },
+    {
+      "start": 364.16,
+      "duration": 5.76,
+      "text": "Heir's property continues to be an uphill battle for Black farmers keeping and working their land."
+    },
+    {
+      "start": 370.16,
+      "duration": 4.88,
+      "text": "There needs to be more federal resources for Black and minority farmers and landowners."
+    },
+    {
+      "start": 375.48,
+      "duration": 5.36,
+      "text": "so they can resolve heirs' property issues and get access to USDA programs that will provide more help."
+    },
+    {
+      "start": 381.36,
+      "duration": 7.84,
+      "text": "Support for community-based organizations that provide legal and mediation services that help farming families can prevent future heirs' property."
+    },
+    {
+      "start": 389.72,
+      "duration": 1.48,
+      "text": "And finally, research."
+    },
+    {
+      "start": 391.52,
+      "duration": 6.72,
+      "text": "We have to better understand how many farmers are threatened by heirs' property and help prevent those farmers from losing their land."
+    },
+    {
+      "start": 407.56,
+      "duration": 0.28,
+      "text": "OK."
+    },
+    {
+      "start": 410.32,
+      "duration": 0.32,
+      "text": "All right."
+    },
+    {
+      "start": 410.64,
+      "duration": 0.68,
+      "text": "Well, guess what?"
+    },
+    {
+      "start": 411.32,
+      "duration": 2.04,
+      "text": "That wasn't the video I thought I was going to show you."
+    },
+    {
+      "start": 416.44,
+      "duration": 1.0,
+      "text": "It's a good video."
+    },
+    {
+      "start": 417.52,
+      "duration": 4.92,
+      "text": "However, what I was going to try to show you, what we'll send you is the link to the video on the Lewis family."
+    },
+    {
+      "start": 422.44,
+      "duration": 2.76,
+      "text": "But that's all very good information regardless."
+    },
+    {
+      "start": 425.68,
+      "duration": 1.04,
+      "text": "Not sure how that happened."
+    },
+    {
+      "start": 426.72,
+      "duration": 0.48,
+      "text": "Sorry."
+    },
+    {
+      "start": 428.8,
+      "duration": 1.52,
+      "text": "OK, so."
+    },
+    {
+      "start": 431.8,
+      "duration": 9.96,
+      "text": "When we do these workshops in persons, I will tell you that, and I will make some references back to exercises that we do that reference the Lewis family video."
+    },
+    {
+      "start": 441.8,
+      "duration": 14.52,
+      "text": "And for folks who might have already seen it, it's a video that was put out by Vice, and it does cover actually a family's, documents a family's loss of their land under all of the scenarios that we've been talking about."
+    },
+    {
+      "start": 456.96,
+      "duration": 0.72,
+      "text": "Excuse me."
+    },
+    {
+      "start": 459.0,
+      "duration": 8.28,
+      "text": "where a developer came in and did in fact buy an heir's shares and forced a sale of the property."
+    },
+    {
+      "start": 467.28,
+      "duration": 9.32,
+      "text": "So we won't be doing those exercises tonight, regardless, because we are in a webinar, but I do still think it's interesting and helpful to look at that video."
+    },
+    {
+      "start": 476.6,
+      "duration": 1.559,
+      "text": "So we'll send you the link for that as well."
+    },
+    {
+      "start": 478.52,
+      "duration": 3.56,
+      "text": "And it's helpful pulling together all of what we've been talking about."
+    },
+    {
+      "start": 483.0,
+      "duration": 11.64,
+      "text": "throughout the webinar series and then setting up what we'll cover tonight, which is the information about ways of going about how to resolve heirs property issues and trying to protect those family legacies."
+    },
+    {
+      "start": 494.88,
+      "duration": 1.8,
+      "text": "So now let's go ahead."
+    },
+    {
+      "start": 496.68,
+      "duration": 1.0,
+      "text": "Let's get to work."
+    },
+    {
+      "start": 497.84,
+      "duration": 7.68,
+      "text": "So all right, we've learned that heirs property owners face a number of serious challenges that limit their ability"
+    },
+    {
+      "start": 505.88,
+      "duration": 8.36,
+      "text": "to build and preserve generational wealth, let's quickly review the challenges of heirs property owners that we've been talking about throughout the webinar series."
+    },
+    {
+      "start": 515.039,
+      "duration": 16.041,
+      "text": "First, one major issue is that threat of partition sales, where a single heir can force the sale of the entire property, often below market value, putting families at risk of losing land that's been in their name for generations."
+    },
+    {
+      "start": 532.16,
+      "duration": 19.36,
+      "text": "Also, because heirs property lacks clear title, owners often have limited access to loans, making it difficult to leverage their land for improvements like building a house, making investments in the property, including maybe energy saving upgrades, or to convert, or excuse me, to cover emergencies that might happen."
+    },
+    {
+      "start": 552.08,
+      "duration": 7.36,
+      "text": "Heirs property owners can't use the land as collateral to get low interest loans to start a business, for example, or to pay for schooling."
+    },
+    {
+      "start": 560.44,
+      "duration": 5.64,
+      "text": "And this limits the ability of owners of heirs property to build wealth that can be passed down from generation to generation."
+    },
+    {
+      "start": 566.72,
+      "duration": 6.6,
+      "text": "Heirs property owners have what's called dead capital, right?"
+    },
+    {
+      "start": 573.44,
+      "duration": 4.56,
+      "text": "Dead capital is an economic term and it's related to property that's informally held."
+    },
+    {
+      "start": 578.96,
+      "duration": 4.64,
+      "text": "is not legally recognized and cannot be exchanged for financial capital."
+    },
+    {
+      "start": 584.0,
+      "duration": 6.96,
+      "text": "So these heirs property owners, they have all of the burdens that come with the ownership right, but none of the benefits of the property."
+    },
+    {
+      "start": 591.84,
+      "duration": 10.88,
+      "text": "And this lack of clear ownership also prevents them from qualifying for government programs like agricultural subsidies or disaster relief, which require documented proof of ownership."
+    },
+    {
+      "start": 603.76,
+      "duration": 2.96,
+      "text": "And forced tax sales are another danger."
+    },
+    {
+      "start": 606.88,
+      "duration": 7.04,
+      "text": "Heirs property owners can lose their properties through tax sales if real estate taxes aren't being paid in a timely way."
+    },
+    {
+      "start": 614.24,
+      "duration": 6.4,
+      "text": "And this often happens because there can be confusion about, you know, who is it that's responsible for paying those property taxes?"
+    },
+    {
+      "start": 620.96,
+      "duration": 1.76,
+      "text": "And people often don't understand"
+    },
+    {
+      "start": 623.28,
+      "duration": 7.08,
+      "text": "even that they have a legal right to reclaim the property within a certain time period, even if the property is taken by the government."
+    },
+    {
+      "start": 630.36,
+      "duration": 5.48,
+      "text": "That does usually exist in most jurisdictions, that opportunity to rectify, to cure the tax lien."
+    },
+    {
+      "start": 636.64,
+      "duration": 9.2,
+      "text": "All these issues combine to severely restrict wealth generation because families can't utilize fully all of the property value."
+    },
+    {
+      "start": 646.64,
+      "duration": 0.96,
+      "text": "They can't sell the property."
+    },
+    {
+      "start": 647.6,
+      "duration": 1.2,
+      "text": "They can't develop the property."
+    },
+    {
+      "start": 649.2,
+      "duration": 5.68,
+      "text": "Without access to equity or legal protections, the land becomes more of a liability than an asset."
+    },
+    {
+      "start": 654.88,
+      "duration": 5.04,
+      "text": "And we know that these systemic barriers disproportionately affect black,"
+    },
+    {
+      "start": 660.04,
+      "duration": 1.6,
+      "text": "rural and low-income families."
+    },
+    {
+      "start": 661.64,
+      "duration": 5.88,
+      "text": "And we also know that addressing these challenges is essential to preserving heritage and promoting economic justice."
+    },
+    {
+      "start": 671.68,
+      "duration": 0.48,
+      "text": "Okay."
+    },
+    {
+      "start": 672.4,
+      "duration": 8.16,
+      "text": "So in our previous sessions, heirs property has been generally described as a form of ownership that has several serious problems."
+    },
+    {
+      "start": 680.96,
+      "duration": 9.84,
+      "text": "The problem that's attracted the most attention is the danger that the family may lose the property because of a court-ordered sale of the property, the so-called partition sale."
+    },
+    {
+      "start": 691.36,
+      "duration": 5.52,
+      "text": "Now, there are two kinds of partition actions, and I don't think we've specified enough about the differences."
+    },
+    {
+      "start": 696.88,
+      "duration": 1.84,
+      "text": "So there's partition in kind,"
+    },
+    {
+      "start": 699.32,
+      "duration": 6.52,
+      "text": "And this is where the land itself is divided according to the percentage of ownership held by each heir."
+    },
+    {
+      "start": 706.32,
+      "duration": 4.32,
+      "text": "And this might happen if all of the land is similar in quality and value."
+    },
+    {
+      "start": 711.2,
+      "duration": 3.6,
+      "text": "The number of heirs is very small, so it can be done."
+    },
+    {
+      "start": 715.2,
+      "duration": 3.28,
+      "text": "And the heirs all agree how the land should be divided."
+    },
+    {
+      "start": 719.6,
+      "duration": 8.88,
+      "text": "Heirs involved in voluntary partitioning, however, should really check with the appropriate local government offices to make sure that they're following all of the necessary procedures."
+    },
+    {
+      "start": 728.84,
+      "duration": 5.0,
+      "text": "And they should, of course, also consult with a lawyer to be sure that all the documents are properly filed."
+    },
+    {
+      "start": 733.84,
+      "duration": 3.44,
+      "text": "Now the other kind of partition is a partition by sale."
+    },
+    {
+      "start": 737.28,
+      "duration": 9.36,
+      "text": "So a partition by sale is where the property is sold and the proceeds from the sale are then divided among the heirs according to their respective shares."
+    },
+    {
+      "start": 747.76,
+      "duration": 2.64,
+      "text": "Some forms of property, for example, a house,"
+    },
+    {
+      "start": 751.28,
+      "duration": 3.84,
+      "text": "just don't lend themselves, right, to partitions in kind."
+    },
+    {
+      "start": 755.48,
+      "duration": 6.68,
+      "text": "In other words, they don't lend themselves to being physically divided, and they must be sold in order for the heirs to receive the benefits."
+    },
+    {
+      "start": 763.44,
+      "duration": 12.68,
+      "text": "Heirs may agree that a partition by sale is the best way to divide the property, or one heir or the purchaser of an heir's interest may force the sale on other members of the family."
+    },
+    {
+      "start": 777.08,
+      "duration": 1.44,
+      "text": "And there are numerous examples."
+    },
+    {
+      "start": 778.52,
+      "duration": 17.32,
+      "text": "We've talked about a partition actions brought by an outsider, like a real estate developer, who purchases the shares of 1 heir and then goes to a local court and demands that the property be sold and the proceeds from the sale be distributed, as you would have seen in the Lewis family video."
+    },
+    {
+      "start": 796.72,
+      "duration": 5.96,
+      "text": "And those sales historically often resulted in an auction of the property on the courthouse steps."
+    },
+    {
+      "start": 802.96,
+      "duration": 5.84,
+      "text": "And I know that those were still happening where I grew up in Iowa as recently, as you know, not too many years ago."
+    },
+    {
+      "start": 809.44,
+      "duration": 5.24,
+      "text": "And the property being sold then for much less than it's actually worth, right?"
+    },
+    {
+      "start": 814.68,
+      "duration": 3.16,
+      "text": "Because it's an auction, courthouse, you know, fire auction."
+    },
+    {
+      "start": 818.08,
+      "duration": 5.84,
+      "text": "With the passage, however, of the Uniform Partition of Heirs Property Act, which we're going to talk about next,"
+    },
+    {
+      "start": 824.64,
+      "duration": 2.8,
+      "text": "This has started to change in many jurisdictions."
+    },
+    {
+      "start": 827.68,
+      "duration": 14.16,
+      "text": "So for decades, state partition laws contributed to widespread and devastating land loss among families who owned lands as tenants in common, which is how heirs property is held."
+    },
+    {
+      "start": 842.48,
+      "duration": 10.76,
+      "text": "As a result of class action lawsuits and the publication of an article on partition action abuses, a task force was formed to start efforts to reform partition laws in each of the states."
+    },
+    {
+      "start": 853.24,
+      "duration": 5.0,
+      "text": "And the next few slides gives an overview of what this means for heirs property owners."
+    },
+    {
+      "start": 859.92,
+      "duration": 12.48,
+      "text": "So the American Bar Association's section of Real Property, Trusts, and Estates Law formed that task force, and they submitted a proposal in 2006 to the Uniform Law Commission."
+    },
+    {
+      "start": 873.12,
+      "duration": 13.32,
+      "text": "The Uniform Law Commission, also known as the National Conference of Commissioners on Uniform State Laws, that commission worked to develop a model statute that states could adopt that would address partition laws."
+    },
+    {
+      "start": 886.92,
+      "duration": 8.92,
+      "text": "and the Uniform Law Commission approved the Uniform Partition of Heirs Property Act, or the UPHPA, in the summer of 2010."
+    },
+    {
+      "start": 896.36,
+      "duration": 1.0,
+      "text": "So it's been with us a while."
+    },
+    {
+      "start": 898.08,
+      "duration": 10.24,
+      "text": "It is important to note that the uniform law is not effective, however, in any state at all, unless or until some form of it is adopted by that state's legislature."
+    },
+    {
+      "start": 908.88,
+      "duration": 4.8,
+      "text": "And this is a map actually of the states who have enacted the Uniform Partition of Heirs Property Act."
+    },
+    {
+      "start": 914.24,
+      "duration": 1.6,
+      "text": "And those states are highlighted in blue."
+    },
+    {
+      "start": 915.84,
+      "duration": 6.24,
+      "text": "And this is what's been adopted or introduced as of January, when I last checked, January of this year."
+    },
+    {
+      "start": 923.36,
+      "duration": 6.24,
+      "text": "And you'll see that Maryland, for our Maryland viewers, has enacted a version of the UPHPA."
+    },
+    {
+      "start": 930.04,
+      "duration": 11.32,
+      "text": "I'm going to talk first generally about the UPHPA, and then I'll talk more specifically briefly about Maryland's new Partition of Property Act, which is how it's known in Maryland."
+    },
+    {
+      "start": 941.6,
+      "duration": 3.12,
+      "text": "And that was enacted in Maryland in 2022."
+    },
+    {
+      "start": 945.84,
+      "duration": 12.88,
+      "text": "And it's actually an enhanced, Maryland has actually a somewhat enhanced version of the UPHPA because of course the state can adopt the model law, but then make amendments and enhancements and change it to its own likings, right?"
+    },
+    {
+      "start": 960.48,
+      "duration": 5.84,
+      "text": "Okay, so this slide gives us an overview of how the UPHPA helps heirs property owners."
+    },
+    {
+      "start": 967.2,
+      "duration": 10.64,
+      "text": "It contains legal protections for heirs property landowners that are designed to address the devastating effects of partition sales while balancing the interests of all owners of the property."
+    },
+    {
+      "start": 978.16,
+      "duration": 13.88,
+      "text": "In order for a partition action to be governed by the UPHPA, the property in question must constitute heirs property as defined under the UPHPA."
+    },
+    {
+      "start": 992.04,
+      "duration": 4.04,
+      "text": "So this is very specific in the model law that it applies only to heirs property."
+    },
+    {
+      "start": 996.72,
+      "duration": 3.2,
+      "text": "And the next few slides gives us more detail here."
+    },
+    {
+      "start": 1000.32,
+      "duration": 10.16,
+      "text": "I do want to note here, when you see on here a mention of co-tenant, that the co-tenant is defined as a person having a fractional interest, a fractional ownership interest in the property."
+    },
+    {
+      "start": 1012.16,
+      "duration": 0.36,
+      "text": "Okay."
+    },
+    {
+      "start": 1013.76,
+      "duration": 0.48,
+      "text": "So"
+    },
+    {
+      "start": 1015.76,
+      "duration": 12.68,
+      "text": "In order to understand how the UPHPA might help resolve your heir's property issues, it's important to speak with an attorney, of course, who's licensed to practice law in the state where the land, where the real property is located."
+    },
+    {
+      "start": 1028.44,
+      "duration": 15.2,
+      "text": "And when you talk with that attorney, you want to discuss with them a variety of different things, but most especially, what are the ethical rules, right, concerning representing a family or representing one or more of the members of the family, right?"
+    },
+    {
+      "start": 1044.8,
+      "duration": 6.32,
+      "text": "You want to ask the attorney and talk with the attorney about whether, in fact, the UPHPA has been enacted in the state."
+    },
+    {
+      "start": 1052.0,
+      "duration": 4.72,
+      "text": "And if not, then how does heirs property law apply?"
+    },
+    {
+      "start": 1057.04,
+      "duration": 4.0,
+      "text": "Or how is heirs property governed under the state law?"
+    },
+    {
+      "start": 1061.04,
+      "duration": 8.8,
+      "text": "And then how does how the UPHPA or other applicable real property law may actually help resolve, right, your family's heir properties issues."
+    },
+    {
+      "start": 1069.84,
+      "duration": 3.44,
+      "text": "So get into those specifics when you're shopping for your attorney."
+    },
+    {
+      "start": 1075.28,
+      "duration": 10.24,
+      "text": "Generally, the UPHPA is helpful because it does provide actually enhanced notice to potential heirs or to all heirs or to potentially all heirs."
+    },
+    {
+      "start": 1086.4,
+      "duration": 6.08,
+      "text": "And it does provide for an independent appraisal of the property so that you get the true value to market value of the property."
+    },
+    {
+      "start": 1092.96,
+      "duration": 4.48,
+      "text": "It also affords a right of first refusal to those heirs who are not seeking to sell."
+    },
+    {
+      "start": 1098.24,
+      "duration": 3.36,
+      "text": "And it provides a preference for partition in kind, right?"
+    },
+    {
+      "start": 1101.6,
+      "duration": 3.28,
+      "text": "Again, dividing the land into pieces of equal value for those co-tenants."
+    },
+    {
+      "start": 1105.28,
+      "duration": 6.56,
+      "text": "And then it also provides them for open market sale, again, to ensure the true value."
+    },
+    {
+      "start": 1112.92,
+      "duration": 3.88,
+      "text": "Okay, so let's talk about the provisions to provide enhanced notice."
+    },
+    {
+      "start": 1117.12,
+      "duration": 8.56,
+      "text": "So the new sales procedure under the UPHPA is designed to mirror the traditional procedures real estate brokers use when they market properties."
+    },
+    {
+      "start": 1126.0,
+      "duration": 5.44,
+      "text": "And so it provides for enhanced notice requirements regarding the partition sale."
+    },
+    {
+      "start": 1132.56,
+      "duration": 10.16,
+      "text": "In addition to sending notice of filing of a partition action to all known heirs who are locatable, the plaintiff, that is the person who's bringing the partition action,"
+    },
+    {
+      "start": 1143.28,
+      "duration": 6.56,
+      "text": "shall or must post a conspicuous sign on the actual heir's property itself."
+    },
+    {
+      "start": 1150.32,
+      "duration": 8.56,
+      "text": "And the sign has to state that an action for partition has commenced and it has to list the name and the address of the court under which the partition is filed."
+    },
+    {
+      "start": 1159.28,
+      "duration": 7.56,
+      "text": "And then the court may require the plaintiff to publish on the sign the name of the plaintiff and any known co-tenants."
+    },
+    {
+      "start": 1167.28,
+      "duration": 3.28,
+      "text": "So there's a lot more information and notice under the UPHPA."
+    },
+    {
+      "start": 1171.52,
+      "duration": 10.08,
+      "text": "Now for the independent appraisal requirements of the UPHPA, obviously it's possible that the co-tenants maybe could all agree on the value of the property."
+    },
+    {
+      "start": 1182.32,
+      "duration": 14.0,
+      "text": "But if all co-tenants do not agree on the value of the property, then under the UPHPA, the court will order a disinterested licensed real estate appraiser to determine the fair market value of the property."
+    },
+    {
+      "start": 1196.6,
+      "duration": 3.28,
+      "text": "And that way the property is less likely to be sold at a discount."
+    },
+    {
+      "start": 1202.08,
+      "duration": 11.44,
+      "text": "The right of first refusal or buyout provision under the UPHPA allows a co-tenant who did not request a partition by sale to purchase the property, right?"
+    },
+    {
+      "start": 1213.52,
+      "duration": 5.52,
+      "text": "So in that way, it protects against those developers buying the property away from the family."
+    },
+    {
+      "start": 1219.6,
+      "duration": 7.52,
+      "text": "Any co-tenant who does not request a partition sale may purchase the shares of the co-tenants who petitioned the court for a sale."
+    },
+    {
+      "start": 1228.0,
+      "duration": 4.64,
+      "text": "And if two or more co-tenants want to purchase the property, the court will divide the seller's interest."
+    },
+    {
+      "start": 1232.96,
+      "duration": 7.28,
+      "text": "They will divide the seller's interest between those buyers according to the existing ownership shares of those buyers."
+    },
+    {
+      "start": 1240.36,
+      "duration": 0.24,
+      "text": "Okay."
+    },
+    {
+      "start": 1243.2,
+      "duration": 0.56,
+      "text": "All right."
+    },
+    {
+      "start": 1243.76,
+      "duration": 9.6,
+      "text": "So this is actually one of the most beneficial parts of the UPHPA in terms of changing the jurisprudence around partition actions."
+    },
+    {
+      "start": 1253.92,
+      "duration": 14.8,
+      "text": "Under the old partition paradigm, when a co-tenant sought partition, the preference in the law was to sell the property and to split the proceeds regardless of whether other co-tenants might want to partition the property in kind instead."
+    },
+    {
+      "start": 1268.88,
+      "duration": 1.36,
+      "text": "And that was the problem, right?"
+    },
+    {
+      "start": 1270.24,
+      "duration": 4.72,
+      "text": "Just one co-tenant could force the sale of the land even against the wishes of all the other co-tenants."
+    },
+    {
+      "start": 1276.0,
+      "duration": 9.88,
+      "text": "The UPHPA, however, requires a court to determine whether a petition in kind is actually more appropriate when any co-tenant chooses to petition the property in kind."
+    },
+    {
+      "start": 1285.88,
+      "duration": 14.12,
+      "text": "In other words, ask the court to divide the property into physically distinct and separately titled tracks, or when no co-tenant decides to purchase the shares from the co-tenant who petitioned the court to sell the property."
+    },
+    {
+      "start": 1301.84,
+      "duration": 18.08,
+      "text": "So under the UPHPA, a preference exists to divide the property in kind unless the court, using the totality of the circumstances test and considering economic as well as non-economic factors, finds a partition in kind will result in manifest prejudice to the co-tenants as a group."
+    },
+    {
+      "start": 1320.04,
+      "duration": 2.48,
+      "text": "And that's a pretty high bar for the court to have to find."
+    },
+    {
+      "start": 1324.0,
+      "duration": 10.32,
+      "text": "So those economic factors now that are required to be considered by the court under the UHPA include the total fair market value of the parcels resulting from the division."
+    },
+    {
+      "start": 1335.2,
+      "duration": 7.68,
+      "text": "That would be, the determination would be that they would be materially less than the value of the property if it was sold as a whole."
+    },
+    {
+      "start": 1344.12,
+      "duration": 9.48,
+      "text": "An example of those non-economic factors that are now required to be considered by the court include sentimental attachment to the land by any of the co-tenants."
+    },
+    {
+      "start": 1353.84,
+      "duration": 2.96,
+      "text": "Lawful use of the land, is there somebody actually residing on the land?"
+    },
+    {
+      "start": 1356.8,
+      "duration": 1.76,
+      "text": "That's considered lawful use of the land."
+    },
+    {
+      "start": 1359.6,
+      "duration": 6.24,
+      "text": "And paid property taxes and maintenance and other expenses associated with the land and who was making those payments, right?"
+    },
+    {
+      "start": 1366.16,
+      "duration": 4.72,
+      "text": "So those are some of the considerations required by the court to make under the UPHPA."
+    },
+    {
+      "start": 1371.84,
+      "duration": 14.8,
+      "text": "Okay, if the property is to be sold, it must be listed with a licensed real estate broker for sale at a price not lower than the court-determined value, and it must be listed for a reasonable amount of time."
+    },
+    {
+      "start": 1386.92,
+      "duration": 6.12,
+      "text": "In other words, give folks time, right, to discover and to see if they can get the money together to buy it."
+    },
+    {
+      "start": 1393.68,
+      "duration": 5.88,
+      "text": "Also, if another method will produce a better price, the court actually may waive the open market sale procedure."
+    },
+    {
+      "start": 1399.56,
+      "duration": 3.8,
+      "text": "So you can seek, right, other ways to get a better value, a higher price."
+    },
+    {
+      "start": 1406.72,
+      "duration": 10.08,
+      "text": "Okay, so that was a very quick overview of the Uniform Partition of Heirs Property Act, and some states have adopted some version of it, while others are considering doing so."
+    },
+    {
+      "start": 1417.32,
+      "duration": 4.6,
+      "text": "And yet there are still others who have yet to even consider it, but hopefully they will."
+    },
+    {
+      "start": 1422.64,
+      "duration": 14.08,
+      "text": "Maryland has adopted a version of the Model Act, as I said, and Maryland's new Partition of Property Act changed existing partition law in Maryland to better protect owners of tenancy and common property from forced court-ordered sales of the property."
+    },
+    {
+      "start": 1437.44,
+      "duration": 13.76,
+      "text": "Specifically, the law provides new procedures for serving notice on owners with unknown whereabouts and for determining the property's fair market value if the co-owners of the property are unable to agree on the value."
+    },
+    {
+      "start": 1452.4,
+      "duration": 11.04,
+      "text": "Maryland's law also requires that if an owner seeks a partition by sale, it is only the owners who did not request the sale who may buy out the interest of all the other owners in the property."
+    },
+    {
+      "start": 1465.12,
+      "duration": 13.04,
+      "text": "For partitions in kind, Maryland's new law requires the court in determining whether and how to partition the property to specifically consider various things, including each owner's respective ownership shares,"
+    },
+    {
+      "start": 1478.6,
+      "duration": 4.28,
+      "text": "whether they have contributed towards the property's carrying costs, right?"
+    },
+    {
+      "start": 1482.88,
+      "duration": 7.2,
+      "text": "They've paid the taxes, they've paid insurance, and whether owners have certain sentimental ties to the property."
+    },
+    {
+      "start": 1490.08,
+      "duration": 6.72,
+      "text": "So for all those reasons, there's an enhanced, it's provided enhanced protection for heirs' property in Maryland."
+    },
+    {
+      "start": 1496.88,
+      "duration": 11.12,
+      "text": "And I'm just sharing with you a blog post that I wrote, but you can find a lot of information about Maryland's new Partition of Property Act, and you can certainly reach back out to us for questions about that as well."
+    },
+    {
+      "start": 1510.88,
+      "duration": 15.84,
+      "text": "Something that is important to know is that a partition or sale for division under the UPHPA does not mean that you won't be responsible for existing mortgages or liens on the property."
+    },
+    {
+      "start": 1526.72,
+      "duration": 6.16,
+      "text": "Those are still in place and they are going to be, of course, have to be paid and you'll likely be obligated to satisfy or pay them."
+    },
+    {
+      "start": 1532.88,
+      "duration": 0.72,
+      "text": "So that is not"
+    },
+    {
+      "start": 1534.92,
+      "duration": 2.8,
+      "text": "That's not something that the UPHPA did away with."
+    },
+    {
+      "start": 1539.04,
+      "duration": 0.2,
+      "text": "Okay."
+    },
+    {
+      "start": 1540.08,
+      "duration": 1.44,
+      "text": "Now, some progress."
+    },
+    {
+      "start": 1541.84,
+      "duration": 6.16,
+      "text": "Yeah, in addition to the UPHPA, there has been some other progress around heirs property."
+    },
+    {
+      "start": 1548.4,
+      "duration": 14.48,
+      "text": "First, the Farm Service Agency, or FSA, of USDA issued guidance a couple of years ago listing alternative documentation that heirs property owners can use to show that they're in control of the farm operation"
+    },
+    {
+      "start": 1563.2,
+      "duration": 3.84,
+      "text": "And that way, they can actually obtain a farm number."
+    },
+    {
+      "start": 1567.04,
+      "duration": 6.88,
+      "text": "Now, if you don't already know, in order to participate in most USDA programs, farmers must get a farm number from FSA."
+    },
+    {
+      "start": 1574.56,
+      "duration": 6.96,
+      "text": "because people have to show clear ownership of land to get a farm number, many heirs property owners had been left out."
+    },
+    {
+      "start": 1581.68,
+      "duration": 2.56,
+      "text": "But the new guidance from FSA changed that."
+    },
+    {
+      "start": 1585.92,
+      "duration": 3.36,
+      "text": "However, with regards to ag land, it did change that."
+    },
+    {
+      "start": 1589.28,
+      "duration": 6.88,
+      "text": "However, heirs property owners are generally still unable to get help from USDA programs designed to assist homeowners."
+    },
+    {
+      "start": 1596.56,
+      "duration": 7.28,
+      "text": "You know, they often underwrite homeowner loans, home loans, because they don't have clear title to their homes."
+    },
+    {
+      "start": 1604.48,
+      "duration": 13.92,
+      "text": "Second, more recently, like within the last 14 months or so, FEMA changed its policies so that heirs property owners can get emergency assistance after a hurricane or other natural disaster."
+    },
+    {
+      "start": 1620.0,
+      "duration": 8.32,
+      "text": "For those with heirs property that need emergency assistance, FEMA and the states have recently expanded the criteria to be eligible for disaster relief."
+    },
+    {
+      "start": 1628.96,
+      "duration": 4.16,
+      "text": "Now heirs property owners, now heirs property owners can certify."
+    },
+    {
+      "start": 1633.44,
+      "duration": 6.48,
+      "text": "They can certify that they own the property that was damaged rather than producing necessarily a clear, clear title."
+    },
+    {
+      "start": 1641.52,
+      "duration": 2.04,
+      "text": "OK, and that's yeah."
+    },
+    {
+      "start": 1643.84,
+      "duration": 1.6,
+      "text": "So next I just wanted to."
+    },
+    {
+      "start": 1646.2,
+      "duration": 11.4,
+      "text": "When I last checked last Friday, at least two of these resources with information that I was just talking about are still available on the federal agency's website."
+    },
+    {
+      "start": 1657.6,
+      "duration": 6.88,
+      "text": "So, you know, the guidance for heirs property owners participating in FSA programs, that fact sheet is still available."
+    },
+    {
+      "start": 1665.04,
+      "duration": 4.24,
+      "text": "And the update to FEMA's individual assistance programs and policy guide was still available."
+    },
+    {
+      "start": 1669.92,
+      "duration": 10.56,
+      "text": "I think you might want to check back if you're looking for the third, the FEMA makes changes to individual assistance policies to advance equity for disaster survivors sheet and see if they bring that back up."
+    },
+    {
+      "start": 1681.52,
+      "duration": 3.92,
+      "text": "But as of my last check, that was the resources that were available."
+    },
+    {
+      "start": 1687.28,
+      "duration": 7.68,
+      "text": "Okay, there is also the Heirs Property Relending Program that was authorized by Congress through the 2018 Farm Bill."
+    },
+    {
+      "start": 1695.52,
+      "duration": 5.12,
+      "text": "And this is a new program and we are still working under the 2018 Farm Bill."
+    },
+    {
+      "start": 1701.28,
+      "duration": 6.72,
+      "text": "And we are actually pushing, I know that there's advocacy to extend this into the next Farm Bill as well."
+    },
+    {
+      "start": 1708.64,
+      "duration": 10.96,
+      "text": "This is, again, a new program that could help heirs property landowners who are close to resolving their issues around the heirs property, and they just need funds to complete the resolution."
+    },
+    {
+      "start": 1720.08,
+      "duration": 5.76,
+      "text": "For example, if heirs need to buy out another heirs share, they could borrow money under this program."
+    },
+    {
+      "start": 1726.32,
+      "duration": 1.64,
+      "text": "Borrow money, and I'm going to point that out."
+    },
+    {
+      "start": 1727.96,
+      "duration": 3.28,
+      "text": "This is not a grant, it's a loan, but they borrow the money and then they pay it back over time."
+    },
+    {
+      "start": 1732.72,
+      "duration": 9.2,
+      "text": "Or if heirs need to hire a lawyer to codify the agreement that they've already reached, they could borrow money to pay the lawyer and then pay it back, right?"
+    },
+    {
+      "start": 1741.92,
+      "duration": 1.92,
+      "text": "Pay that back over time."
+    },
+    {
+      "start": 1744.88,
+      "duration": 3.28,
+      "text": "So you just need to be really very clear that it's not a grant, it is a loan."
+    },
+    {
+      "start": 1750.16,
+      "duration": 0.28,
+      "text": "Okay."
+    },
+    {
+      "start": 1753.76,
+      "duration": 5.48,
+      "text": "Okay, now let's talk about how to navigate family conflict."
+    },
+    {
+      "start": 1759.24,
+      "duration": 13.72,
+      "text": "Switching gears, going away from resources a little bit to talk about, you know, how do we navigate those family conflicts, those disagreements that are common in resolving a lot of issues, certainly common in resolving heirs property issues."
+    },
+    {
+      "start": 1773.52,
+      "duration": 2.48,
+      "text": "But that shouldn't stop families from moving forward, right?"
+    },
+    {
+      "start": 1776.32,
+      "duration": 5.8,
+      "text": "Communication and transparency within the family is going to be critical, right, if you're doing this work."
+    },
+    {
+      "start": 1782.12,
+      "duration": 4.76,
+      "text": "And you want to find out, is there somebody in the family who can lead this as a project?"
+    },
+    {
+      "start": 1787.08,
+      "duration": 3.24,
+      "text": "I'm guessing for folks that are on the webinar, it might be themselves, it might be you."
+    },
+    {
+      "start": 1791.2,
+      "duration": 4.32,
+      "text": "And you're going to need to discuss these important points together as a family."
+    },
+    {
+      "start": 1796.12,
+      "duration": 4.0,
+      "text": "You're going to need to talk about all the issues that are related to the property, right, in the tangled title."
+    },
+    {
+      "start": 1800.12,
+      "duration": 3.32,
+      "text": "What issues does that raise for the family members?"
+    },
+    {
+      "start": 1803.92,
+      "duration": 7.92,
+      "text": "Understanding, right, that the property as a resource, does every member in the family understand that the property is a resource?"
+    },
+    {
+      "start": 1812.08,
+      "duration": 1.2,
+      "text": "Do they see it in that light?"
+    },
+    {
+      "start": 1813.6,
+      "duration": 2.48,
+      "text": "Do they see it as a potential source of wealth?"
+    },
+    {
+      "start": 1816.08,
+      "duration": 2.72,
+      "text": "Do they see its cultural importance?"
+    },
+    {
+      "start": 1819.48,
+      "duration": 5.2,
+      "text": "And then figuring out how to deal with conflicts that will inevitably arise, right?"
+    },
+    {
+      "start": 1824.68,
+      "duration": 2.92,
+      "text": "And these are all things that the family is going to have to discuss."
+    },
+    {
+      "start": 1828.24,
+      "duration": 4.88,
+      "text": "And members of the family should decide how best to be in touch with one another, right?"
+    },
+    {
+      "start": 1833.92,
+      "duration": 7.28,
+      "text": "As the process of resolving the heir's property is generally, it's a long, it's complicated process, it's going to take some time."
+    },
+    {
+      "start": 1841.2,
+      "duration": 1.68,
+      "text": "How are you going to keep in touch with one another?"
+    },
+    {
+      "start": 1843.52,
+      "duration": 1.92,
+      "text": "Maybe think ahead, what questions are going to arise?"
+    },
+    {
+      "start": 1845.44,
+      "duration": 2.56,
+      "text": "How are you going to set up those discussions?"
+    },
+    {
+      "start": 1849.2,
+      "duration": 8.8,
+      "text": "Maybe you're going to do one-on-one conversations, but there's probably going to still be a need, right, for the whole family to come together at some point and work out issues together."
+    },
+    {
+      "start": 1858.56,
+      "duration": 12.28,
+      "text": "In some cases, it may be useful to consider maybe using a facilitator or a mediator or an arbitrator, possibly, to help conversations, right, be productive."
+    },
+    {
+      "start": 1871.52,
+      "duration": 5.76,
+      "text": "Some non-governmental organizations that focus on heirs' property might be valuable resources."
+    },
+    {
+      "start": 1878.4,
+      "duration": 5.84,
+      "text": "in identifying those facilitators or mediators who could work with you and your family."
+    },
+    {
+      "start": 1884.76,
+      "duration": 5.32,
+      "text": "If you're talking about ag land, we have resources that we can direct you to in Maryland that can help with mediation."
+    },
+    {
+      "start": 1890.8,
+      "duration": 17.88,
+      "text": "Facilitators, just so those are neutral individuals whose job it is to help a group engage in dialogue, ensuring that all participants can share equally in the conversation and that the group's dialogue actually leads to a decision or a resolution or is productive."
+    },
+    {
+      "start": 1909.28,
+      "duration": 9.28,
+      "text": "Even where there's no conflict within a family, I think having a skilled, neutral person, you know, from outside of the family can be helpful."
+    },
+    {
+      "start": 1920.0,
+      "duration": 2.16,
+      "text": "Okay, and they keep you on track too."
+    },
+    {
+      "start": 1922.16,
+      "duration": 2.0,
+      "text": "They can keep you accountable and keep you moving forward."
+    },
+    {
+      "start": 1924.16,
+      "duration": 8.36,
+      "text": "And then a mediator is again a neutral third party who facilitates conversations aimed at resolution, much like a dispute."
+    },
+    {
+      "start": 1932.52,
+      "duration": 1.64,
+      "text": "So they're very resolution"
+    },
+    {
+      "start": 1934.8,
+      "duration": 0.72,
+      "text": "oriented."
+    },
+    {
+      "start": 1936.64,
+      "duration": 2.8,
+      "text": "Like facilitators, they don't make any decisions."
+    },
+    {
+      "start": 1939.76,
+      "duration": 5.52,
+      "text": "They facilitate the conversation and make sure all parties are heard and understood."
+    },
+    {
+      "start": 1945.6,
+      "duration": 5.6,
+      "text": "And they can identify issues and interests and help guide the parties to a resolution."
+    },
+    {
+      "start": 1954.4,
+      "duration": 4.88,
+      "text": "Arbitrators, arbitration is like a mediation."
+    },
+    {
+      "start": 1959.28,
+      "duration": 4.16,
+      "text": "It's really, it is an alternative dispute resolution process."
+    },
+    {
+      "start": 1963.44,
+      "duration": 6.0,
+      "text": "And the arbitrator, again, is a neutral person, but they actually do make a decision."
+    },
+    {
+      "start": 1969.44,
+      "duration": 4.4,
+      "text": "So we see there our role of the arbitrator more similar to that of a judge."
+    },
+    {
+      "start": 1974.4,
+      "duration": 3.76,
+      "text": "However, unlike a judge, the parties, they can choose their own arbitrator."
+    },
+    {
+      "start": 1978.4,
+      "duration": 1.56,
+      "text": "And that allows"
+    },
+    {
+      "start": 1980.04,
+      "duration": 3.8,
+      "text": "allows them to choose someone with subject matter expertise, for instance."
+    },
+    {
+      "start": 1984.2,
+      "duration": 10.84,
+      "text": "And then you go into the arbitration, you present your case, similar to court litigation, and then the arbitrator makes a decision to which all parties in advance have agreed that they will abide by."
+    },
+    {
+      "start": 1995.36,
+      "duration": 1.0,
+      "text": "So, okay."
+    },
+    {
+      "start": 1997.36,
+      "duration": 5.92,
+      "text": "So there's some helpful resources for helping families navigate those conflicts, right?"
+    },
+    {
+      "start": 2004.64,
+      "duration": 14.96,
+      "text": "Now, because of these challenges, the most common advice that owners of heirs' property receive is that they need to actually change the way the property is owned for all of the reasons that we've talked about in terms of the potential downfalls of owning property as heirs' property."
+    },
+    {
+      "start": 2020.4,
+      "duration": 1.84,
+      "text": "However, owners of heirs' properties"
+    },
+    {
+      "start": 2022.72,
+      "duration": 0.88,
+      "text": "They might, right?"
+    },
+    {
+      "start": 2023.6,
+      "duration": 2.52,
+      "text": "They might decide that no change is necessary."
+    },
+    {
+      "start": 2026.12,
+      "duration": 1.48,
+      "text": "And that's an option, right?"
+    },
+    {
+      "start": 2027.6,
+      "duration": 6.88,
+      "text": "So here are some important things that families must consider in deciding whether to change the way that the heirs property is held."
+    },
+    {
+      "start": 2035.36,
+      "duration": 12.08,
+      "text": "They have to consider resolving the fact, or they will be considering the fact that resolving heirs property, like I said, does take time, takes a little time, takes effort, energy, money."
+    },
+    {
+      "start": 2048.32,
+      "duration": 7.359,
+      "text": "to identify all potential heirs, get a unanimous agreement on what to do and hire a lawyer and change the legal status of the property."
+    },
+    {
+      "start": 2056.239,
+      "duration": 1.721,
+      "text": "So those are real challenges."
+    },
+    {
+      "start": 2059.36,
+      "duration": 7.52,
+      "text": "If many generations have passed since the original property owner died, there may be hundreds of heirs, right, that we've been learning about."
+    },
+    {
+      "start": 2067.12,
+      "duration": 3.039,
+      "text": "And some of whom have moved far away."
+    },
+    {
+      "start": 2070.159,
+      "duration": 3.921,
+      "text": "They may no longer be in contact with others in the family."
+    },
+    {
+      "start": 2075.159,
+      "duration": 1.241,
+      "text": "no one else in the family."
+    },
+    {
+      "start": 2076.48,
+      "duration": 6.56,
+      "text": "And they may have no idea that they even own or an heir, right?"
+    },
+    {
+      "start": 2083.04,
+      "duration": 8.52,
+      "text": "And even so, these individuals still under the law, right, have the same rights of ownership as those living on the land and paying taxes on the property, okay?"
+    },
+    {
+      "start": 2094.08,
+      "duration": 21.68,
+      "text": "Because ownership is so complex and family members may have many different opinions on what should be done with the property, there might be advantages to changing the way that the property is owned or even in some cases selling the property completely, including maybe to a subset of heirs who are most interested or emotionally attached to the property and maybe"
+    },
+    {
+      "start": 2116.16,
+      "duration": 2.0,
+      "text": "that'll be the resolution, right?"
+    },
+    {
+      "start": 2118.24,
+      "duration": 1.36,
+      "text": "And that's an option as well."
+    },
+    {
+      "start": 2120.4,
+      "duration": 5.92,
+      "text": "Or it could be that there are a relatively small number of heirs who all get along."
+    },
+    {
+      "start": 2127.92,
+      "duration": 3.88,
+      "text": "They all agree on how the property should be used and managed and who's going to pay what."
+    },
+    {
+      "start": 2131.8,
+      "duration": 6.68,
+      "text": "And this might represent a situation where, in fact, leaving the property is heir's property, at least for that"
+    },
+    {
+      "start": 2139.12,
+      "duration": 2.08,
+      "text": "this generation, that might work, right?"
+    },
+    {
+      "start": 2141.2,
+      "duration": 10.8,
+      "text": "However, of course, we have to remember that as the number of heirs increases and the different generations with different family lines are represented among the heirs, the likelihood of disagreement is going to increase."
+    },
+    {
+      "start": 2152.0,
+      "duration": 5.32,
+      "text": "And that is where changing the property ownership to a different legal status really could make sense, right?"
+    },
+    {
+      "start": 2158.72,
+      "duration": 0.28,
+      "text": "Okay."
+    },
+    {
+      "start": 2161.52,
+      "duration": 7.36,
+      "text": "Okay, so understanding that some families will choose to continue owning the property as heirs property, I want to move on."
+    },
+    {
+      "start": 2168.88,
+      "duration": 16.96,
+      "text": "The remainder of this presentation will focus on how owners of heirs property might proceed to resolve their heirs property issues to overcome some of the known constraints that limit the ability of heirs property owners to effectively use, manage, and generate wealth from their property."
+    },
+    {
+      "start": 2186.08,
+      "duration": 2.8,
+      "text": "And in this section, we'll be talking about general themes,"
+    },
+    {
+      "start": 2189.28,
+      "duration": 9.68,
+      "text": "and then discuss how you can gather as much information as possible before getting legal help, which will certainly save time, and time is money when we're talking about lawyers."
+    },
+    {
+      "start": 2200.96,
+      "duration": 3.4,
+      "text": "Let's start with understanding your own goals and limitations, right?"
+    },
+    {
+      "start": 2204.4,
+      "duration": 7.92,
+      "text": "Again, if you're here at this webinar, you might be the leader in the family that's taking on this project, but you do want to start with understanding what are your own, right?"
+    },
+    {
+      "start": 2212.32,
+      "duration": 8.0,
+      "text": "What's important for you to know before you start having these conversations with other family members about their goals and their limitations?"
+    },
+    {
+      "start": 2220.76,
+      "duration": 2.36,
+      "text": "Do you want to continue to be an owner?"
+    },
+    {
+      "start": 2223.12,
+      "duration": 4.08,
+      "text": "Do you want to make sure that the land stays in the family?"
+    },
+    {
+      "start": 2228.08,
+      "duration": 2.88,
+      "text": "Do you plan to improve the economic value of the land?"
+    },
+    {
+      "start": 2231.96,
+      "duration": 2.72,
+      "text": "And also understand your limitations, right?"
+    },
+    {
+      "start": 2234.68,
+      "duration": 3.32,
+      "text": "How much time and money are you willing to invest in doing this?"
+    },
+    {
+      "start": 2238.92,
+      "duration": 1.64,
+      "text": "What about your emotional limits?"
+    },
+    {
+      "start": 2240.56,
+      "duration": 2.56,
+      "text": "How much emotional energy can you invest?"
+    },
+    {
+      "start": 2244.08,
+      "duration": 4.6,
+      "text": "You know, family dynamics, those can be complicated, especially when it comes to shared assets."
+    },
+    {
+      "start": 2249.44,
+      "duration": 8.0,
+      "text": "And there are family members with whom you may not be able to work well at all with, you know, you don't wanna maybe engage at all with them."
+    },
+    {
+      "start": 2258.0,
+      "duration": 1.28,
+      "text": "Be thinking about that ahead of time."
+    },
+    {
+      "start": 2259.28,
+      "duration": 0.88,
+      "text": "How are you going to handle that?"
+    },
+    {
+      "start": 2260.68,
+      "duration": 5.92,
+      "text": "And knowing your goals and limitations is important and should help inform any strategy that you decide to pursue."
+    },
+    {
+      "start": 2266.6,
+      "duration": 8.28,
+      "text": "And it can be useful to check back on those, right, on your goals if anything gets difficult and you need to decide whether to stick with the strategy that you've developed."
+    },
+    {
+      "start": 2275.92,
+      "duration": 4.72,
+      "text": "Once you have your own goals and limits in mind, reaching out to other members is next."
+    },
+    {
+      "start": 2280.64,
+      "duration": 0.88,
+      "text": "That's the next step."
+    },
+    {
+      "start": 2281.6,
+      "duration": 2.4,
+      "text": "Identifying heirs is an important first step."
+    },
+    {
+      "start": 2284.32,
+      "duration": 2.32,
+      "text": "And then you can begin discussing goals."
+    },
+    {
+      "start": 2287.6,
+      "duration": 15.2,
+      "text": "Having clear goals for addressing the challenges involved in owning land as heirs property is important to be able to develop a strategy that leads to family agreement and hopefully resolution of title issues, meaning getting that title in the name of the current owners."
+    },
+    {
+      "start": 2303.52,
+      "duration": 2.4,
+      "text": "The goals can vary depending on your circumstances."
+    },
+    {
+      "start": 2306.0,
+      "duration": 7.84,
+      "text": "They can include figuring out how to get qualified for USDA and other programs for agriculture or conservation."
+    },
+    {
+      "start": 2314.48,
+      "duration": 7.44,
+      "text": "They can include ensuring the family always has a place to live or simply taking care of the same land that your ancestors cared for."
+    },
+    {
+      "start": 2322.88,
+      "duration": 4.84,
+      "text": "Discussing all the goals of all the heirs is important because they may not be the same, right?"
+    },
+    {
+      "start": 2327.72,
+      "duration": 1.64,
+      "text": "And you want to know ahead of time."
+    },
+    {
+      "start": 2329.76,
+      "duration": 1.36,
+      "text": "And they may even conflict."
+    },
+    {
+      "start": 2332.16,
+      "duration": 4.08,
+      "text": "Some heirs may have no interest in the property and may not want the burden of ownership."
+    },
+    {
+      "start": 2336.24,
+      "duration": 3.88,
+      "text": "Other heirs might need money and would be happy to sell their shares."
+    },
+    {
+      "start": 2340.12,
+      "duration": 2.68,
+      "text": "And this, of course, can be the problem, right?"
+    },
+    {
+      "start": 2342.8,
+      "duration": 3.92,
+      "text": "That if another person who is not a member of the family may buy a share."
+    },
+    {
+      "start": 2348.6,
+      "duration": 1.64,
+      "text": "So it's important to have those conversations."
+    },
+    {
+      "start": 2350.56,
+      "duration": 3.28,
+      "text": "But resolving heirs' property, like I said, it can be overwhelming."
+    },
+    {
+      "start": 2353.84,
+      "duration": 1.68,
+      "text": "You may be starting to feel that already."
+    },
+    {
+      "start": 2355.84,
+      "duration": 3.2,
+      "text": "And this presentation itself includes a lot of information."
+    },
+    {
+      "start": 2359.64,
+      "duration": 4.76,
+      "text": "And you need to know that you won't be able to take all of the actions on everything at once."
+    },
+    {
+      "start": 2364.52,
+      "duration": 1.64,
+      "text": "And you have to start small."
+    },
+    {
+      "start": 2368.48,
+      "duration": 0.28,
+      "text": "Okay."
+    },
+    {
+      "start": 2370.0,
+      "duration": 7.68,
+      "text": "Well, one of the first things that the family must do to resolve heirs' property is to identify all the heirs who have an interest in the land."
+    },
+    {
+      "start": 2378.24,
+      "duration": 4.96,
+      "text": "from the person who initially bought the property to the youngest person in the family right now, right?"
+    },
+    {
+      "start": 2383.52,
+      "duration": 4.88,
+      "text": "If only one or two generations are involved, that can be relatively simple."
+    },
+    {
+      "start": 2389.32,
+      "duration": 4.12,
+      "text": "And you may be able to draw the family tree based on your own personal knowledge, right?"
+    },
+    {
+      "start": 2393.76,
+      "duration": 3.28,
+      "text": "Maybe you're the only person that needs to be there to make that tree."
+    },
+    {
+      "start": 2398.0,
+      "duration": 5.12,
+      "text": "But imagine that the property was bought by an ancestor three or four generations in the past."
+    },
+    {
+      "start": 2403.52,
+      "duration": 1.52,
+      "text": "There could be hundreds of heirs."
+    },
+    {
+      "start": 2405.6,
+      "duration": 3.92,
+      "text": "including many, again, whose whereabouts or even existence may not be known."
+    },
+    {
+      "start": 2410.24,
+      "duration": 1.76,
+      "text": "And that sounds pretty daunting, right?"
+    },
+    {
+      "start": 2412.0,
+      "duration": 4.24,
+      "text": "And it doesn't make, it does make things difficult, but it's not impossible."
+    },
+    {
+      "start": 2416.56,
+      "duration": 5.52,
+      "text": "And there are ways to satisfy courts that honest efforts have been made to identify all errors."
+    },
+    {
+      "start": 2422.08,
+      "duration": 8.8,
+      "text": "So as we've talked about, I think in the last webinar, the burden is to, right, to make reasonable efforts and all honest efforts to identify all errors."
+    },
+    {
+      "start": 2431.12,
+      "duration": 1.6,
+      "text": "That's typically the requirement."
+    },
+    {
+      "start": 2433.12,
+      "duration": 1.92,
+      "text": "So a court may allow something like"
+    },
+    {
+      "start": 2435.56,
+      "duration": 22.52,
+      "text": "an airship affidavit that can be filed in which the family shows all of the efforts and all of the information that it's done about the heirs that it's been trying to notice, to discover and to notify, and demonstrates in that affidavit that it made a diligent search for anyone who might be missing."
+    },
+    {
+      "start": 2458.32,
+      "duration": 1.6,
+      "text": "Okay, that's a possibility."
+    },
+    {
+      "start": 2460.8,
+      "duration": 3.44,
+      "text": "Just do your best and keep records of all your efforts."
+    },
+    {
+      "start": 2465.12,
+      "duration": 2.24,
+      "text": "to identify and all the heirs."
+    },
+    {
+      "start": 2468.0,
+      "duration": 10.24,
+      "text": "people use a whole variety of tools, family Bibles, those are a great, great source to identify heirs, birth certificates, death certificates."
+    },
+    {
+      "start": 2479.52,
+      "duration": 6.24,
+      "text": "Use the ancestry tracing websites that are available."
+    },
+    {
+      "start": 2486.72,
+      "duration": 1.2,
+      "text": "Check with cemeteries."
+    },
+    {
+      "start": 2489.2,
+      "duration": 1.44,
+      "text": "review obituaries."
+    },
+    {
+      "start": 2490.88,
+      "duration": 4.96,
+      "text": "And certainly now we can use social media too to try to help us identify errors."
+    },
+    {
+      "start": 2496.96,
+      "duration": 5.28,
+      "text": "Make sure to add birth and death dates to the family tree."
+    },
+    {
+      "start": 2503.28,
+      "duration": 5.52,
+      "text": "You've received a handout that will help guide you through how to make a family tree."
+    },
+    {
+      "start": 2509.68,
+      "duration": 0.96,
+      "text": "You know, if someone"
+    },
+    {
+      "start": 2512.0,
+      "duration": 3.52,
+      "text": "If you find out somebody died, try to find out whether they had a will."
+    },
+    {
+      "start": 2515.52,
+      "duration": 2.16,
+      "text": "Did they die with a will or without a will?"
+    },
+    {
+      "start": 2517.68,
+      "duration": 2.4,
+      "text": "Those are the things that you want to start noting."
+    },
+    {
+      "start": 2520.28,
+      "duration": 5.28,
+      "text": "And then talk with your family members, even those that you might be getting to know for the first time, right?"
+    },
+    {
+      "start": 2525.56,
+      "duration": 4.2,
+      "text": "Tell them what you're doing and tell them why and ask them,"
+    },
+    {
+      "start": 2530.28,
+      "duration": 1.32,
+      "text": "What do they want to do, right?"
+    },
+    {
+      "start": 2531.68,
+      "duration": 8.32,
+      "text": "And use those conversations to build, start to build consensus or at least some common understanding that something should be done."
+    },
+    {
+      "start": 2540.0,
+      "duration": 4.8,
+      "text": "So as you're building your family tree, you're starting to talk with folks about their goals."
+    },
+    {
+      "start": 2545.2,
+      "duration": 10.16,
+      "text": "Creating a family tree involves developing that list of all family members, their dates of birth and death, if they married, if they divorced, if they divorced and then remarried."
+    },
+    {
+      "start": 2556.24,
+      "duration": 11.2,
+      "text": "And if they had any children from those marriages, or if they had children outside of their marriages, or you know, for those who are living, write down their contact information, get their phone number, their residential address, their e-mail addresses."
+    },
+    {
+      "start": 2568.24,
+      "duration": 2.08,
+      "text": "Those are the things that you want to be accumulating."
+    },
+    {
+      "start": 2571.92,
+      "duration": 6.16,
+      "text": "So we saw a similar picture in the beginning of this webinar series illustrating the fractionalization of shares."
+    },
+    {
+      "start": 2578.88,
+      "duration": 3.6,
+      "text": "This illustrates the process of intestate succession."
+    },
+    {
+      "start": 2582.48,
+      "duration": 2.32,
+      "text": "So this is when someone dies without a will, right?"
+    },
+    {
+      "start": 2584.8,
+      "duration": 1.28,
+      "text": "They die in intestate."
+    },
+    {
+      "start": 2586.96,
+      "duration": 3.84,
+      "text": "Who inherits how much of the decedent's estate?"
+    },
+    {
+      "start": 2591.04,
+      "duration": 2.8,
+      "text": "And that's going to differ by state intestacy law."
+    },
+    {
+      "start": 2593.92,
+      "duration": 8.64,
+      "text": "And it's even more complex, you know, than this if you start to include siblings, right, from other marriages and children who are born to parents who aren't married."
+    },
+    {
+      "start": 2602.56,
+      "duration": 5.36,
+      "text": "So this is the tree that you need to try to start working on developing."
+    },
+    {
+      "start": 2610.4,
+      "duration": 4.56,
+      "text": "Okay, so let's, a lot of times we try to just do a quick little tabletop exercise."
+    },
+    {
+      "start": 2614.96,
+      "duration": 1.04,
+      "text": "I think we can do it here."
+    },
+    {
+      "start": 2616.0,
+      "duration": 6.88,
+      "text": "So imagine one of your own grandparents owned 100 acres of land and died with no will."
+    },
+    {
+      "start": 2623.28,
+      "duration": 6.96,
+      "text": "Now build a family tree showing your own parent and your parents' siblings."
+    },
+    {
+      "start": 2633.56,
+      "duration": 1.88,
+      "text": "Are all your aunts and uncles alive?"
+    },
+    {
+      "start": 2635.44,
+      "duration": 0.8,
+      "text": "Are they still alive?"
+    },
+    {
+      "start": 2636.24,
+      "duration": 1.36,
+      "text": "You should be noting this down."
+    },
+    {
+      "start": 2638.56,
+      "duration": 1.44,
+      "text": "How many children in grand?"
+    },
+    {
+      "start": 2640.08,
+      "duration": 2.24,
+      "text": "children are on there."
+    },
+    {
+      "start": 2644.56,
+      "duration": 3.76,
+      "text": "And I'd like to know if there's a way for you to put it in the to put in the chat."
+    },
+    {
+      "start": 2648.32,
+      "duration": 3.84,
+      "text": "How many generations are you able to go back to confidently?"
+    },
+    {
+      "start": 2653.12,
+      "duration": 5.28,
+      "text": "How many of you could go beyond your grandparents with full confidence that you know all of their children?"
+    },
+    {
+      "start": 2659.76,
+      "duration": 1.04,
+      "text": "Now, do you think"
+    },
+    {
+      "start": 2663.12,
+      "duration": 3.6,
+      "text": "I don't know if you want to share it in the chat, go ahead and tell me how far back you can go."
+    },
+    {
+      "start": 2666.72,
+      "duration": 5.08,
+      "text": "I'm really only able to go back about two generations with full confidence."
+    },
+    {
+      "start": 2673.12,
+      "duration": 5.88,
+      "text": "Because then I also have to think about now, could you get in contact with all of those heirs today, right?"
+    },
+    {
+      "start": 2679.04,
+      "duration": 9.92,
+      "text": "Do you think if you could get in contact with all of those heirs, do you think you could get all those people to agree on how to manage those hundreds, that 100 acres, right?"
+    },
+    {
+      "start": 2692.72,
+      "duration": 5.92,
+      "text": "So again, we've got a handout for you, how to create your family tree."
+    },
+    {
+      "start": 2699.2,
+      "duration": 1.2,
+      "text": "So that's a resource."
+    },
+    {
+      "start": 2700.4,
+      "duration": 4.4,
+      "text": "And there's other resources that are available to help you work on building your family tree."
+    },
+    {
+      "start": 2704.8,
+      "duration": 3.52,
+      "text": "And you can just contact me if you have more questions about those resources."
+    },
+    {
+      "start": 2709.76,
+      "duration": 5.6,
+      "text": "There's something called a Family Tree Builder, and that's a free software program at myheritage.com."
+    },
+    {
+      "start": 2715.68,
+      "duration": 6.08,
+      "text": "There's the National Geographical, Genealogical, excuse me, the National Genealogical Society as well."
+    },
+    {
+      "start": 2721.84,
+      "duration": 1.04,
+      "text": "Those are some resources."
+    },
+    {
+      "start": 2725.92,
+      "duration": 4.08,
+      "text": "Okay, so a little tapes off exercise to keep you thinking."
+    },
+    {
+      "start": 2731.44,
+      "duration": 7.6,
+      "text": "I'm guessing each of us can think of at least two people in our family who might view the value of land differently, right?"
+    },
+    {
+      "start": 2739.12,
+      "duration": 8.8,
+      "text": "The emotional, cultural, or other types of attachments that we have with places can be quite different between different family members and certainly across generations."
+    },
+    {
+      "start": 2748.36,
+      "duration": 3.88,
+      "text": "And part of the discussion is going to have to involve talking with your family about those things."
+    },
+    {
+      "start": 2752.8,
+      "duration": 6.56,
+      "text": "Things like, what is the value of your land economically, emotionally, or culturally?"
+    },
+    {
+      "start": 2760.04,
+      "duration": 5.28,
+      "text": "And can you have an appraisal done to determine the economic value of the land?"
+    },
+    {
+      "start": 2765.32,
+      "duration": 1.4,
+      "text": "Are they going to be okay with that?"
+    },
+    {
+      "start": 2767.2,
+      "duration": 3.92,
+      "text": "Do you have timber on your land that can be sold to generate income?"
+    },
+    {
+      "start": 2771.12,
+      "duration": 3.6,
+      "text": "That might, some things that you might not think about, but you need to start thinking about."
+    },
+    {
+      "start": 2774.76,
+      "duration": 2.64,
+      "text": "Is there other sources of income off the land?"
+    },
+    {
+      "start": 2778.08,
+      "duration": 6.08,
+      "text": "Can you lease the land for agriculture or other activities and get some income that way?"
+    },
+    {
+      "start": 2785.28,
+      "duration": 2.8,
+      "text": "Things that you just need to think about in terms of the land itself."
+    },
+    {
+      "start": 2788.08,
+      "duration": 1.6,
+      "text": "Do you know the history of the land?"
+    },
+    {
+      "start": 2790.4,
+      "duration": 4.4,
+      "text": "how your ancestor acquired it, or what it was used for."
+    },
+    {
+      "start": 2795.08,
+      "duration": 6.84,
+      "text": "All of that information is important to share with family members, and that will help everyone determine what are the next steps."
+    },
+    {
+      "start": 2803.52,
+      "duration": 5.52,
+      "text": "So the family is working on the family tree, thinking about what the land means to them."
+    },
+    {
+      "start": 2809.44,
+      "duration": 4.96,
+      "text": "There are still things, however, that need to be done regarding the land while all of that is going on."
+    },
+    {
+      "start": 2814.56,
+      "duration": 2.08,
+      "text": "The property needs to be secured,"
+    },
+    {
+      "start": 2817.12,
+      "duration": 5.76,
+      "text": "and protected from outside threats like trespassers, possibly squatters."
+    },
+    {
+      "start": 2823.84,
+      "duration": 6.6,
+      "text": "Otherwise, they actually, those trespassers or squatters might be able to assert a legal claim to the land."
+    },
+    {
+      "start": 2830.44,
+      "duration": 3.56,
+      "text": "And legally, this is generally called adverse possession."
+    },
+    {
+      "start": 2835.04,
+      "duration": 4.88,
+      "text": "Each state law differs, but generally in order to be able to claim adverse possession,"
+    },
+    {
+      "start": 2840.64,
+      "duration": 16.88,
+      "text": "Squatters have to show that they've been living on the land for a certain number of years, that they don't have permission to be living there, and that they've been living there openly, however, so not in secret, and they had exclusive use of the land."
+    },
+    {
+      "start": 2857.68,
+      "duration": 2.64,
+      "text": "So it happens."
+    },
+    {
+      "start": 2860.72,
+      "duration": 3.0,
+      "text": "However, there's usually a long period of years that it has to happen."
+    },
+    {
+      "start": 2863.72,
+      "duration": 2.52,
+      "text": "For instance, in Maryland, it's over a 20-year period."
+    },
+    {
+      "start": 2866.32,
+      "duration": 3.12,
+      "text": "But again, we're talking about heirs property where maybe nobody was even aware that they"
+    },
+    {
+      "start": 2870.04,
+      "duration": 1.36,
+      "text": "to protect the land."
+    },
+    {
+      "start": 2871.4,
+      "duration": 1.64,
+      "text": "They didn't know the land was theirs."
+    },
+    {
+      "start": 2873.44,
+      "duration": 2.24,
+      "text": "Also in Maryland, it is against the law."
+    },
+    {
+      "start": 2875.68,
+      "duration": 1.52,
+      "text": "I just want Maryland folks to know this."
+    },
+    {
+      "start": 2877.36,
+      "duration": 3.68,
+      "text": "It is against the law for landowners to evict squatters on their own."
+    },
+    {
+      "start": 2881.04,
+      "duration": 2.72,
+      "text": "You do have to go through a court process in order to do that."
+    },
+    {
+      "start": 2884.88,
+      "duration": 0.96,
+      "text": "So don't do that on your own."
+    },
+    {
+      "start": 2887.36,
+      "duration": 8.08,
+      "text": "Also, while the family is talking about next steps to take in filling out their family tree, you have to make sure the property taxes are being paid."
+    },
+    {
+      "start": 2895.84,
+      "duration": 8.08,
+      "text": "Otherwise, again, the town or the county can seize the land, slap a tax lien on it, and ultimately could sell the land, right?"
+    },
+    {
+      "start": 2903.92,
+      "duration": 6.48,
+      "text": "Again, every state's procedures for this is going to be different, but if the taxes aren't paid, you may likely lose the land."
+    },
+    {
+      "start": 2911.36,
+      "duration": 5.2,
+      "text": "And then you also have to establish and maintain communication with those known heirs and family members."
+    },
+    {
+      "start": 2917.44,
+      "duration": 6.32,
+      "text": "because you don't want an heir to sell their interest to an outsider while you're doing all of this prep work to clear the title."
+    },
+    {
+      "start": 2924.64,
+      "duration": 10.4,
+      "text": "Family members should be reminded not to sign anything, especially from someone outside of the family, at least not without discussing the matter with a trusted advisor."
+    },
+    {
+      "start": 2935.04,
+      "duration": 4.0,
+      "text": "So making sure that folks know, hey, we're in the process of trying to clear this up."
+    },
+    {
+      "start": 2939.84,
+      "duration": 4.0,
+      "text": "You know, don't screw that up for us."
+    },
+    {
+      "start": 2945.04,
+      "duration": 0.12,
+      "text": "So"
+    },
+    {
+      "start": 2946.16,
+      "duration": 5.12,
+      "text": "Okay, the next step is getting documentation that you're going to need, okay?"
+    },
+    {
+      "start": 2951.76,
+      "duration": 3.68,
+      "text": "Before seeing an attorney, try to get these documents together."
+    },
+    {
+      "start": 2955.44,
+      "duration": 19.52,
+      "text": "So examples of documents to bring would be your most recent deed to the land that you can find, wills that you can get your hands on, copies of tax documents related to the land, again, deeds, any contracts or leases on the property, if you know of those and you have copies of those."
+    },
+    {
+      "start": 2975.8,
+      "duration": 5.08,
+      "text": "And certainly any documentation of any easements that might be associated with property."
+    },
+    {
+      "start": 2982.04,
+      "duration": 4.32,
+      "text": "And you can find some of these, all those resources that I mentioned before might be good sources."
+    },
+    {
+      "start": 2986.36,
+      "duration": 3.96,
+      "text": "You can search county offices for this information."
+    },
+    {
+      "start": 2990.56,
+      "duration": 5.84,
+      "text": "It's going to differ by state, but there's usually a county office that holds land records, including deeds and maps."
+    },
+    {
+      "start": 2996.96,
+      "duration": 7.6,
+      "text": "And you're going to be searching the clerk of court records or whatever office keeps those land records in the county where the land is located."
+    },
+    {
+      "start": 3005.44,
+      "duration": 9.12,
+      "text": "And for any liens, and those are debts, right, for any liens or other judgments and documents associated with the property, that's what you're looking for."
+    },
+    {
+      "start": 3014.8,
+      "duration": 5.2,
+      "text": "In Maryland, fortunately, pretty much everything, all the land records are online."
+    },
+    {
+      "start": 3020.32,
+      "duration": 6.16,
+      "text": "You start with a land record search on the State Department of Assessments and Taxation's website."
+    },
+    {
+      "start": 3027.12,
+      "duration": 6.16,
+      "text": "And then you use the info that you find there to search for the deed on the Maryland Land Records website, but it's all on websites."
+    },
+    {
+      "start": 3033.6,
+      "duration": 9.68,
+      "text": "I actually teach a class on how to search for and find the deed to your property in Maryland and how to read a deed, how to read a deed, because they're cryptic, especially if they've been, they're from a long time ago."
+    },
+    {
+      "start": 3043.6,
+      "duration": 3.12,
+      "text": "And if you'd like more information about how to do that, you can just reach out to me."
+    },
+    {
+      "start": 3049.04,
+      "duration": 7.52,
+      "text": "Conducting a title search, ultimately, you're going to have to conduct a title search to confirm the current owner of the property."
+    },
+    {
+      "start": 3057.76,
+      "duration": 8.4,
+      "text": "A title search is the formal process of retrieving the necessary documentation and information to determine the current ownership interests in a piece of land."
+    },
+    {
+      "start": 3066.72,
+      "duration": 4.8,
+      "text": "And this can be done by a title abstractor, but it's going to need to be confirmed by an attorney."
+    },
+    {
+      "start": 3072.56,
+      "duration": 4.84,
+      "text": "A title search reveals all past owners of the property, or it should, right?"
+    },
+    {
+      "start": 3077.52,
+      "duration": 2.88,
+      "text": "It should include all past owners of the property,"
+    },
+    {
+      "start": 3081.0,
+      "duration": 6.52,
+      "text": "a legal description of the property, and any liens on or other unresolved issues concerning the property."
+    },
+    {
+      "start": 3087.52,
+      "duration": 1.76,
+      "text": "That's what you're paying for in a title search."
+    },
+    {
+      "start": 3089.28,
+      "duration": 2.88,
+      "text": "But again, those the results should be reviewed by an attorney."
+    },
+    {
+      "start": 3095.84,
+      "duration": 2.72,
+      "text": "So now let's talk about how you select an attorney."
+    },
+    {
+      "start": 3099.4,
+      "duration": 9.48,
+      "text": "And just like Samantha talked about last week, when you're when you're making your wills and your power of attorney documents and your estate plans to prevent creating heirs property,"
+    },
+    {
+      "start": 3109.8,
+      "duration": 10.04,
+      "text": "A lawyer who helps families with resolving heirs property matters really must have experience in estate planning or what's called succession planning."
+    },
+    {
+      "start": 3119.84,
+      "duration": 2.0,
+      "text": "Some of them call it succession planning."
+    },
+    {
+      "start": 3122.8,
+      "duration": 6.08,
+      "text": "They must have experience in real estate and maybe business law if you want to put the land into a business entity."
+    },
+    {
+      "start": 3130.48,
+      "duration": 4.72,
+      "text": "You want to choose someone with appropriate experience and who has a good reputation."
+    },
+    {
+      "start": 3135.92,
+      "duration": 3.96,
+      "text": "And you can do that by talking and asking people that you trust for recommendations."
+    },
+    {
+      "start": 3140.64,
+      "duration": 6.0,
+      "text": "Also, understanding cost for every stage of the process is helpful, right, as you're planning."
+    },
+    {
+      "start": 3146.96,
+      "duration": 3.36,
+      "text": "Ask the attorney to explain potential costs along the way."
+    },
+    {
+      "start": 3150.72,
+      "duration": 7.68,
+      "text": "And a lawyer can review documents that you've provided, review available records, make the recommendations for the next steps."
+    },
+    {
+      "start": 3158.88,
+      "duration": 17.92,
+      "text": "And those recommendations should include an estimated cost for each stage of resolving the heirs' property issues, and should also include estimated costs for advice regarding what the family can do to prevent further distribution of heirs' property, like creating a trust or a business entity to hold the land."
+    },
+    {
+      "start": 3176.8,
+      "duration": 3.64,
+      "text": "So for every step, your attorney should be able to tell you,"
+    },
+    {
+      "start": 3180.76,
+      "duration": 0.92,
+      "text": "estimated cost."
+    },
+    {
+      "start": 3183.76,
+      "duration": 8.4,
+      "text": "Okay, now how your property is titled is vital to doing that drafting of your will, for instance, right?"
+    },
+    {
+      "start": 3192.16,
+      "duration": 4.8,
+      "text": "The next step explores some of the next section explores some things to consider."
+    },
+    {
+      "start": 3198.92,
+      "duration": 0.28,
+      "text": "And I"
+    },
+    {
+      "start": 3200.04,
+      "duration": 9.88,
+      "text": "A lot of what we're talking about over the course of the webinar is really getting you used to lingo and terms that you should be able to issue spot and understand when you're talking, for instance, with the lawyer."
+    },
+    {
+      "start": 3209.92,
+      "duration": 5.2,
+      "text": "So these are some of the key terms that you want to understand related to property ownership."
+    },
+    {
+      "start": 3216.0,
+      "duration": 1.08,
+      "text": "Title, what's a title?"
+    },
+    {
+      "start": 3217.08,
+      "duration": 4.2,
+      "text": "A title is a legal term and it concerns ownership of property."
+    },
+    {
+      "start": 3221.88,
+      "duration": 4.04,
+      "text": "We've talked about it a lot, but it dictates your rights vis-a-vis the land."
+    },
+    {
+      "start": 3226.64,
+      "duration": 2.0,
+      "text": "You get title to the land."
+    },
+    {
+      "start": 3230.0,
+      "duration": 2.48,
+      "text": "Now, a deed is also, it's a legal document."
+    },
+    {
+      "start": 3232.48,
+      "duration": 1.68,
+      "text": "So title is a legal term."
+    },
+    {
+      "start": 3234.44,
+      "duration": 14.12,
+      "text": "A deed is a legal document that transfers the title from one person to another, and it should be recorded in the courthouse so that everybody knows about the transfer or recorded in wherever the land records are recorded."
+    },
+    {
+      "start": 3248.8,
+      "duration": 0.76,
+      "text": "Depends on the state."
+    },
+    {
+      "start": 3250.64,
+      "duration": 2.12,
+      "text": "Cloudy title, that's heirs property, right?"
+    },
+    {
+      "start": 3252.96,
+      "duration": 6.24,
+      "text": "Heirs property owners generally have what's called cloudy or tangled title to their property because the deed"
+    },
+    {
+      "start": 3259.64,
+      "duration": 10.92,
+      "text": "remains in the name of an ancestor who is no longer alive, or ancestors who are no longer alive instead of in the name of the current owners."
+    },
+    {
+      "start": 3270.56,
+      "duration": 1.6,
+      "text": "So that's the lingo."
+    },
+    {
+      "start": 3272.88,
+      "duration": 6.72,
+      "text": "This slide lists the type of information typically found on a title certificate or a title report."
+    },
+    {
+      "start": 3280.48,
+      "duration": 1.84,
+      "text": "A few things to note here."
+    },
+    {
+      "start": 3283.2,
+      "duration": 4.24,
+      "text": "Generally, you're only going to get information about the surface title."
+    },
+    {
+      "start": 3287.44,
+      "duration": 1.0,
+      "text": "That's what's examined."
+    },
+    {
+      "start": 3288.44,
+      "duration": 6.2,
+      "text": "So for instance, if you have interest in mineral titles, that's not going to be part of a standard title search."
+    },
+    {
+      "start": 3296.24,
+      "duration": 3.72,
+      "text": "The examiner reviews all instruments going back."
+    },
+    {
+      "start": 3300.48,
+      "duration": 5.04,
+      "text": "for the period of years that is required by law under the applicable state."
+    },
+    {
+      "start": 3305.52,
+      "duration": 7.52,
+      "text": "So if there's some reason why you want to or need to extend that period, just understand that's what they're going to follow first."
+    },
+    {
+      "start": 3313.6,
+      "duration": 11.76,
+      "text": "Also, you'll learn about the type of interest that you might have in the property if it's shared, because your interest might be limited, right, by the form of the deed to you if you hold title by"
+    },
+    {
+      "start": 3325.92,
+      "duration": 3.68,
+      "text": "Joint tenancy with right of survivorship, that's one way to hold title, right?"
+    },
+    {
+      "start": 3330.0,
+      "duration": 3.76,
+      "text": "Typically we see that for husbands and wives, right, or married couples."
+    },
+    {
+      "start": 3334.32,
+      "duration": 8.76,
+      "text": "And that joint tenancy with right of survivorship, that vests title in the survivor as between the joint tenants, right?"
+    },
+    {
+      "start": 3343.08,
+      "duration": 5.4,
+      "text": "So if one dies, their right, the right of survivorship passes to the living owner."
+    },
+    {
+      "start": 3348.96,
+      "duration": 6.24,
+      "text": "And then the other type of interest is a tenancy in common."
+    },
+    {
+      "start": 3355.8,
+      "duration": 3.08,
+      "text": "And we see this typically in siblings, for siblings."
+    },
+    {
+      "start": 3359.96,
+      "duration": 9.32,
+      "text": "And that vests title in the heirs of the decedent, right, and typically in the absence of a will."
+    },
+    {
+      "start": 3369.28,
+      "duration": 1.84,
+      "text": "So again, through our intestacy laws."
+    },
+    {
+      "start": 3371.84,
+      "duration": 8.0,
+      "text": "You inherit, if your dad and mom die, the property passes through intestacy typically to the children as tenants in common."
+    },
+    {
+      "start": 3379.96,
+      "duration": 1.48,
+      "text": "And they each get equal shares typically."
+    },
+    {
+      "start": 3381.44,
+      "duration": 0.4,
+      "text": "So, okay."
+    },
+    {
+      "start": 3382.4,
+      "duration": 0.2,
+      "text": "All right."
+    },
+    {
+      "start": 3386.48,
+      "duration": 8.08,
+      "text": "OK, we're going to wrap up here by going over different structures that may be useful in securing heirs' property land."
+    },
+    {
+      "start": 3396.68,
+      "duration": 0.36,
+      "text": "Excuse me."
+    },
+    {
+      "start": 3399.04,
+      "duration": 4.36,
+      "text": "We're going to talk about the most common legal structures for holding land."
+    },
+    {
+      "start": 3403.4,
+      "duration": 11.64,
+      "text": "And we're not going to do a deep dive into these, just introducing you to terms so you have some familiarity with them and understand that these are options that for holding heirs' property land, right?"
+    },
+    {
+      "start": 3415.6,
+      "duration": 2.0,
+      "text": "So let's talk about trusts first."
+    },
+    {
+      "start": 3418.16,
+      "duration": 13.12,
+      "text": "Sometimes creating a single entity that owns the land in which each family member effectively owns an interest can be a more secure way of owning the property and transferring it to future generations."
+    },
+    {
+      "start": 3431.6,
+      "duration": 8.88,
+      "text": "So rather than each family member owning a share of the land directly, what they own is a share in the entity that owns the land."
+    },
+    {
+      "start": 3440.72,
+      "duration": 2.32,
+      "text": "And this is what we, this can be done with a trust."
+    },
+    {
+      "start": 3443.76,
+      "duration": 1.12,
+      "text": "So with a trust,"
+    },
+    {
+      "start": 3445.44,
+      "duration": 9.68,
+      "text": "Heirs property owners can deed their interest in the land to the trust and then name one or more people to serve as trustees, right?"
+    },
+    {
+      "start": 3455.12,
+      "duration": 3.68,
+      "text": "So this is, I got my family together and we decided to do it this way, okay?"
+    },
+    {
+      "start": 3458.8,
+      "duration": 1.68,
+      "text": "All the heirs decided to do it this way."
+    },
+    {
+      "start": 3461.6,
+      "duration": 7.2,
+      "text": "Or with the trust, the remaining heirs property owners can be the beneficiaries of the trust, so you should understand that."
+    },
+    {
+      "start": 3468.88,
+      "duration": 4.32,
+      "text": "And with a trust, the trustee would manage and control the land"
+    },
+    {
+      "start": 3473.6,
+      "duration": 2.4,
+      "text": "and be responsible for maintenance and tax payments."
+    },
+    {
+      "start": 3476.0,
+      "duration": 1.52,
+      "text": "That's the rule, typically of the trustee."
+    },
+    {
+      "start": 3477.8,
+      "duration": 4.28,
+      "text": "And it's all done according to the terms that are set out in the trust agreement."
+    },
+    {
+      "start": 3484.24,
+      "duration": 8.52,
+      "text": "So you can, of course, make those more specific to your, you know, everybody's needs and desires."
+    },
+    {
+      "start": 3492.76,
+      "duration": 9.4,
+      "text": "So now, heirs property owners can also decide to form a business entity like an LLC, a limited liability company, or a corporation."
+    },
+    {
+      "start": 3502.88,
+      "duration": 3.12,
+      "text": "and transfer the property to the LLC or corporation."
+    },
+    {
+      "start": 3506.64,
+      "duration": 12.96,
+      "text": "And there are fees, right, for the initial filing and the annual reports of a, if you own, if you choose to go the business entity structure route, they're not necessarily daunting, but"
+    },
+    {
+      "start": 3521.04,
+      "duration": 8.64,
+      "text": "What is done then is under the LLC, right, or the business, an operating agreement or maybe bylaws are established, right?"
+    },
+    {
+      "start": 3529.68,
+      "duration": 8.88,
+      "text": "And what happens then is you can determine, you can dictate through those bylaws or the operating agreement what happens to a member's share when they die."
+    },
+    {
+      "start": 3539.08,
+      "duration": 3.32,
+      "text": "What happens if a member wants to sell their share?"
+    },
+    {
+      "start": 3542.64,
+      "duration": 1.68,
+      "text": "How are decisions going to be made?"
+    },
+    {
+      "start": 3544.32,
+      "duration": 2.36,
+      "text": "How is management of the property going to be handled?"
+    },
+    {
+      "start": 3546.96,
+      "duration": 1.76,
+      "text": "Who's responsible for maintenance tax?"
+    },
+    {
+      "start": 3549.36,
+      "duration": 6.48,
+      "text": "other duties and how our profits and costs that might come, right, come from and come with the land are going to be shared."
+    },
+    {
+      "start": 3555.84,
+      "duration": 0.84,
+      "text": "How are those going to be shared?"
+    },
+    {
+      "start": 3556.68,
+      "duration": 2.36,
+      "text": "So those can all be done through the operating agreement."
+    },
+    {
+      "start": 3559.12,
+      "duration": 2.4,
+      "text": "So much similar to the trust, right?"
+    },
+    {
+      "start": 3561.52,
+      "duration": 2.48,
+      "text": "We've put it in another entity and we own shares of the entity."
+    },
+    {
+      "start": 3564.8,
+      "duration": 6.24,
+      "text": "And lastly, you could decide to enter what's called a tenant in common agreement."
+    },
+    {
+      "start": 3572.12,
+      "duration": 2.56,
+      "text": "And you could enter that with all of the owners, right?"
+    },
+    {
+      "start": 3574.68,
+      "duration": 9.56,
+      "text": "And that's a legal structure in terms of the, well, you should understand that the legal structure in terms of the title to the land remains the same."
+    },
+    {
+      "start": 3584.48,
+      "duration": 5.12,
+      "text": "So all co-heirs, all own the land as tenant in common, that's the same."
+    },
+    {
+      "start": 3590.52,
+      "duration": 9.24,
+      "text": "And instead of creating a new entity which governs the family ownership of the property, the family members, the heirs, all enter into that common tenant in common agreement."
+    },
+    {
+      "start": 3600.8,
+      "duration": 3.28,
+      "text": "It's a private contract that's done between the owners."
+    },
+    {
+      "start": 3604.48,
+      "duration": 13.12,
+      "text": "And that way, each family member still owns a share of the land itself because the deed hasn't changed, the title hasn't changed, and nothing's been done, right, to retitle it or, excuse me, to create a new deed."
+    },
+    {
+      "start": 3618.64,
+      "duration": 7.24,
+      "text": "But they reach an agreement as a family about, you know, sets out the rights and responsibilities under the agreement."
+    },
+    {
+      "start": 3627.36,
+      "duration": 1.28,
+      "text": "of everybody, all the owners."
+    },
+    {
+      "start": 3628.64,
+      "duration": 9.12,
+      "text": "It can help address who's going to manage, they can talk about who's going to manage the property, how is the property going to be used, who's going to pay the taxes, what happens if a co-town wants to sell their interest."
+    },
+    {
+      "start": 3637.76,
+      "duration": 5.92,
+      "text": "So just like an operating agreement under an LLC, this is a separate private contract, right?"
+    },
+    {
+      "start": 3644.4,
+      "duration": 3.68,
+      "text": "That's done between all of the owners."
+    },
+    {
+      "start": 3650.2,
+      "duration": 0.24,
+      "text": "Okay."
+    },
+    {
+      "start": 3651.84,
+      "duration": 1.92,
+      "text": "All right, guys, we covered A lot."
+    },
+    {
+      "start": 3653.92,
+      "duration": 1.28,
+      "text": "We covered all of these things."
+    },
+    {
+      "start": 3655.2,
+      "duration": 1.92,
+      "text": "We covered the challenges of owning heirs..."
+    },
+    {
+      "start": 3658.08,
+      "duration": 0.48,
+      "text": "Hello?"
+    },
+    {
+      "start": 3661.84,
+      "duration": 13.76,
+      "text": "Okay, we covered the challenges of owning heirs property, the importance of working with all family members, creating a family tree, considerations relevant to a family's decision, title to real property and different legal structures."
+    },
+    {
+      "start": 3678.12,
+      "duration": 3.4,
+      "text": "And the last thing I want to leave you with is we've got some additional resources"
+    },
+    {
+      "start": 3682.08,
+      "duration": 0.68,
+      "text": "I can hear folks."
+    },
+    {
+      "start": 3682.76,
+      "duration": 2.2,
+      "text": "I don't know if folks can mute themselves for just a minute."
+    },
+    {
+      "start": 3685.0,
+      "duration": 0.92,
+      "text": "I'm almost done."
+    },
+    {
+      "start": 3687.4,
+      "duration": 1.32,
+      "text": "Sure, please go ahead."
+    },
+    {
+      "start": 3689.08,
+      "duration": 0.32,
+      "text": "Thank you."
+    },
+    {
+      "start": 3689.52,
+      "duration": 3.92,
+      "text": "We've got just additional resources here that I want to let you know about."
+    },
+    {
+      "start": 3693.68,
+      "duration": 0.64,
+      "text": "There is"
+    },
+    {
+      "start": 3695.28,
+      "duration": 4.0,
+      "text": "Some assistance, again, in resolving heirs property, there's some additional resources."
+    },
+    {
+      "start": 3699.28,
+      "duration": 2.56,
+      "text": "One is the heirs property practitioners network."
+    },
+    {
+      "start": 3702.2,
+      "duration": 2.52,
+      "text": "And you can go to this website that's on the slide here."
+    },
+    {
+      "start": 3705.28,
+      "duration": 1.76,
+      "text": "Just want to inform people how this works."
+    },
+    {
+      "start": 3707.04,
+      "duration": 6.72,
+      "text": "They actually ask you at the website through the portal for information so that they can reach back out to you."
+    },
+    {
+      "start": 3714.16,
+      "duration": 6.64,
+      "text": "And they do this to protect heirs because there are people, of course, that we know that are out there that are trying to exploit heirs in order to get property."
+    },
+    {
+      "start": 3720.8,
+      "duration": 1.04,
+      "text": "So that's why that's done."
+    },
+    {
+      "start": 3722.08,
+      "duration": 3.08,
+      "text": "If anybody has difficulty with that side, I know the lawyers that run that"
+    },
+    {
+      "start": 3725.4,
+      "duration": 3.24,
+      "text": "And you can reach out to me for some help with that."
+    },
+    {
+      "start": 3729.4,
+      "duration": 3.64,
+      "text": "Estate Planning and Heirs Property Clinic at Howard University."
+    },
+    {
+      "start": 3733.2,
+      "duration": 6.68,
+      "text": "It's a law clinic, meaning that there are attorneys that oversee the students doing the work and they handle legal matters."
+    },
+    {
+      "start": 3739.88,
+      "duration": 2.68,
+      "text": "Usually they cost less through a clinic than a private attorney."
+    },
+    {
+      "start": 3742.88,
+      "duration": 0.96,
+      "text": "So you might check that out."
+    },
+    {
+      "start": 3744.32,
+      "duration": 6.64,
+      "text": "Maryland Volunteer Lawyer Service is also a good resource, again, for my folks in Maryland, as is Shore Legal."
+    },
+    {
+      "start": 3752.32,
+      "duration": 3.72,
+      "text": "Shore Legal is actually located here on the lower shore, lower Eastern Shore."
+    },
+    {
+      "start": 3756.04,
+      "duration": 5.64,
+      "text": "And they actually have told us they have funding to assist people on the Eastern Shore with resolution of heirs property issues."
+    },
+    {
+      "start": 3762.4,
+      "duration": 4.0,
+      "text": "It's mostly free except for maybe that any of the filing fees that might be involved."
+    },
+    {
+      "start": 3767.32,
+      "duration": 7.8,
+      "text": "And we have a DC heirs property assistance program that again, last I checked was at least information was still available."
+    },
+    {
+      "start": 3775.12,
+      "duration": 1.96,
+      "text": "So it might be a resource for you to check out."
+    },
+    {
+      "start": 3777.08,
+      "duration": 3.16,
+      "text": "And then there's general invocation, education, more education."
+    },
+    {
+      "start": 3780.76,
+      "duration": 2.52,
+      "text": "about heirs properties, so at these websites."
+    }
+  ],
+  "full_text": "Okay, well, welcome back, everybody. This is our third and final installment of our webinar series, and we're going to cover resolution today. And as Prem mentioned, we did an overview on the first webinar about the impact and effects of heirs property. And Samantha Capaldo presented preventing heirs property at the second webinar. Today, we're going to talk about resolving heirs property issues. But let's keep in mind, this training is supported by our funders. They're very important. comes from a USDA grant, as Prem mentioned, and some of our additional co-PIs on this part, partnering on this project. And all of the acknowledgements, everybody here who worked on creating the information that you're being given. And of course, this is me, I'm Nicole, and you can find me at UMES Extension. and also on the Agriculture Law Education Initiative website at umaglaw.org. So like I said, tonight we're going to focus on resolution and we're going to cover topics here, including going briefly through those challenges of owning heirs property, the importance of working with other family members and resolving heirs property issues, the steps to undertake and delineate who legally owns the property, and then legal structures that can hold land in heirs property, excuse me, hold land that heirs property owners own. So, okay. let's go ahead. Of course, we've got lawyers talking to you. So there's going to be some disclaimers. And the first is that these materials are intended to present general educational information. We're not providing any specific legal advice tonight. And the information is applicable. We understand we have audiences coming and who will view this possibly from every other state. We have international observers as well and viewers sometimes. So please understand that this information may not necessarily barely always be applicable to every state. So you want to make sure you're checking with lawyers that practice law in the state that you're interested in. And because we are actually recording the webinar and they will be posted, we generally caution people not to provide personal stories. General questions are always welcome, but personal questions might be better asked outside of our webinar setting tonight. So, okay, during this session, we're gonna talk about the challenges of heirs property and also why some families might actually choose to continue holding their land as homes and homes as heirs property, 'cause that's an option. But we'll talk about, of course, the dangers that come with choosing that option. But we'll also talk about the importance of working with other family members to consider how best to manage the heirs property. And we're going to talk about steps to understand who legally owns the property and then discuss legal structures that can hold land that's owned by heir property owners. Before we get started, I do want to, I'm hoping we can watch this short video that documents how one family lost generational land due to heirs property. And so let me play that. Nope, that's not what I wanted to do. Here we go. Imagine you inherit a family heirloom. Your extended family also inherits this thing, so you each own a teeny tiny percentage of it. What if no one agrees on what to do with it? What if you risk losing it forever if just one person decides they want to sell? This nightmare scenario has been playing out on family farms for generations, and it's hit black-owned farms particularly hard. So if we think about the Jim Crow South, individuals were not able to access the legal system, which means they weren't actually able to prepare themselves for their own departure. I steward 15 acres of land with the support of Farmer Greer and Mama Callie here. My name is Jasmine Elise Story. I am the descendant of farmers, and I am also an inheritor of heir property. And it has been a multi-generational struggle to make sure that that land was able to stay within our family. Some people have 200 heirs or 2,000 heirs attached to a property because you're talking about people who are able to purchase land at the turn of the century. or right after they themselves were considered property. Over the course of the 20th century, black farm owners lost nearly 90% of their farmland. And today, black farmers make up less than 2% of all U.S. farmers. Some likely reasons why include forced sales, lack of investment, and limited access to loans and government funding, all issues that affect heirs' property. Heir property is vulnerable because it is held in common, which means any individual member who has individual interest in the property could eventually fall prey to an outsider who might buy that interest. And then they can cause a judge to sell the entire piece of property, and essentially the land is lost to the family. If you are being barred because of the structural violence violence of the past and our government's inability to address that in the present, it just feels like it's another very, very open space where that promise is not being delivered in earnest. Heir's property continues to be an uphill battle for Black farmers keeping and working their land. There needs to be more federal resources for Black and minority farmers and landowners. so they can resolve heirs' property issues and get access to USDA programs that will provide more help. Support for community-based organizations that provide legal and mediation services that help farming families can prevent future heirs' property. And finally, research. We have to better understand how many farmers are threatened by heirs' property and help prevent those farmers from losing their land. OK. All right. Well, guess what? That wasn't the video I thought I was going to show you. It's a good video. However, what I was going to try to show you, what we'll send you is the link to the video on the Lewis family. But that's all very good information regardless. Not sure how that happened. Sorry. OK, so. When we do these workshops in persons, I will tell you that, and I will make some references back to exercises that we do that reference the Lewis family video. And for folks who might have already seen it, it's a video that was put out by Vice, and it does cover actually a family's, documents a family's loss of their land under all of the scenarios that we've been talking about. Excuse me. where a developer came in and did in fact buy an heir's shares and forced a sale of the property. So we won't be doing those exercises tonight, regardless, because we are in a webinar, but I do still think it's interesting and helpful to look at that video. So we'll send you the link for that as well. And it's helpful pulling together all of what we've been talking about. throughout the webinar series and then setting up what we'll cover tonight, which is the information about ways of going about how to resolve heirs property issues and trying to protect those family legacies. So now let's go ahead. Let's get to work. So all right, we've learned that heirs property owners face a number of serious challenges that limit their ability to build and preserve generational wealth, let's quickly review the challenges of heirs property owners that we've been talking about throughout the webinar series. First, one major issue is that threat of partition sales, where a single heir can force the sale of the entire property, often below market value, putting families at risk of losing land that's been in their name for generations. Also, because heirs property lacks clear title, owners often have limited access to loans, making it difficult to leverage their land for improvements like building a house, making investments in the property, including maybe energy saving upgrades, or to convert, or excuse me, to cover emergencies that might happen. Heirs property owners can't use the land as collateral to get low interest loans to start a business, for example, or to pay for schooling. And this limits the ability of owners of heirs property to build wealth that can be passed down from generation to generation. Heirs property owners have what's called dead capital, right? Dead capital is an economic term and it's related to property that's informally held. is not legally recognized and cannot be exchanged for financial capital. So these heirs property owners, they have all of the burdens that come with the ownership right, but none of the benefits of the property. And this lack of clear ownership also prevents them from qualifying for government programs like agricultural subsidies or disaster relief, which require documented proof of ownership. And forced tax sales are another danger. Heirs property owners can lose their properties through tax sales if real estate taxes aren't being paid in a timely way. And this often happens because there can be confusion about, you know, who is it that's responsible for paying those property taxes? And people often don't understand even that they have a legal right to reclaim the property within a certain time period, even if the property is taken by the government. That does usually exist in most jurisdictions, that opportunity to rectify, to cure the tax lien. All these issues combine to severely restrict wealth generation because families can't utilize fully all of the property value. They can't sell the property. They can't develop the property. Without access to equity or legal protections, the land becomes more of a liability than an asset. And we know that these systemic barriers disproportionately affect black, rural and low-income families. And we also know that addressing these challenges is essential to preserving heritage and promoting economic justice. Okay. So in our previous sessions, heirs property has been generally described as a form of ownership that has several serious problems. The problem that's attracted the most attention is the danger that the family may lose the property because of a court-ordered sale of the property, the so-called partition sale. Now, there are two kinds of partition actions, and I don't think we've specified enough about the differences. So there's partition in kind, And this is where the land itself is divided according to the percentage of ownership held by each heir. And this might happen if all of the land is similar in quality and value. The number of heirs is very small, so it can be done. And the heirs all agree how the land should be divided. Heirs involved in voluntary partitioning, however, should really check with the appropriate local government offices to make sure that they're following all of the necessary procedures. And they should, of course, also consult with a lawyer to be sure that all the documents are properly filed. Now the other kind of partition is a partition by sale. So a partition by sale is where the property is sold and the proceeds from the sale are then divided among the heirs according to their respective shares. Some forms of property, for example, a house, just don't lend themselves, right, to partitions in kind. In other words, they don't lend themselves to being physically divided, and they must be sold in order for the heirs to receive the benefits. Heirs may agree that a partition by sale is the best way to divide the property, or one heir or the purchaser of an heir's interest may force the sale on other members of the family. And there are numerous examples. We've talked about a partition actions brought by an outsider, like a real estate developer, who purchases the shares of 1 heir and then goes to a local court and demands that the property be sold and the proceeds from the sale be distributed, as you would have seen in the Lewis family video. And those sales historically often resulted in an auction of the property on the courthouse steps. And I know that those were still happening where I grew up in Iowa as recently, as you know, not too many years ago. And the property being sold then for much less than it's actually worth, right? Because it's an auction, courthouse, you know, fire auction. With the passage, however, of the Uniform Partition of Heirs Property Act, which we're going to talk about next, This has started to change in many jurisdictions. So for decades, state partition laws contributed to widespread and devastating land loss among families who owned lands as tenants in common, which is how heirs property is held. As a result of class action lawsuits and the publication of an article on partition action abuses, a task force was formed to start efforts to reform partition laws in each of the states. And the next few slides gives an overview of what this means for heirs property owners. So the American Bar Association's section of Real Property, Trusts, and Estates Law formed that task force, and they submitted a proposal in 2006 to the Uniform Law Commission. The Uniform Law Commission, also known as the National Conference of Commissioners on Uniform State Laws, that commission worked to develop a model statute that states could adopt that would address partition laws. and the Uniform Law Commission approved the Uniform Partition of Heirs Property Act, or the UPHPA, in the summer of 2010. So it's been with us a while. It is important to note that the uniform law is not effective, however, in any state at all, unless or until some form of it is adopted by that state's legislature. And this is a map actually of the states who have enacted the Uniform Partition of Heirs Property Act. And those states are highlighted in blue. And this is what's been adopted or introduced as of January, when I last checked, January of this year. And you'll see that Maryland, for our Maryland viewers, has enacted a version of the UPHPA. I'm going to talk first generally about the UPHPA, and then I'll talk more specifically briefly about Maryland's new Partition of Property Act, which is how it's known in Maryland. And that was enacted in Maryland in 2022. And it's actually an enhanced, Maryland has actually a somewhat enhanced version of the UPHPA because of course the state can adopt the model law, but then make amendments and enhancements and change it to its own likings, right? Okay, so this slide gives us an overview of how the UPHPA helps heirs property owners. It contains legal protections for heirs property landowners that are designed to address the devastating effects of partition sales while balancing the interests of all owners of the property. In order for a partition action to be governed by the UPHPA, the property in question must constitute heirs property as defined under the UPHPA. So this is very specific in the model law that it applies only to heirs property. And the next few slides gives us more detail here. I do want to note here, when you see on here a mention of co-tenant, that the co-tenant is defined as a person having a fractional interest, a fractional ownership interest in the property. Okay. So In order to understand how the UPHPA might help resolve your heir's property issues, it's important to speak with an attorney, of course, who's licensed to practice law in the state where the land, where the real property is located. And when you talk with that attorney, you want to discuss with them a variety of different things, but most especially, what are the ethical rules, right, concerning representing a family or representing one or more of the members of the family, right? You want to ask the attorney and talk with the attorney about whether, in fact, the UPHPA has been enacted in the state. And if not, then how does heirs property law apply? Or how is heirs property governed under the state law? And then how does how the UPHPA or other applicable real property law may actually help resolve, right, your family's heir properties issues. So get into those specifics when you're shopping for your attorney. Generally, the UPHPA is helpful because it does provide actually enhanced notice to potential heirs or to all heirs or to potentially all heirs. And it does provide for an independent appraisal of the property so that you get the true value to market value of the property. It also affords a right of first refusal to those heirs who are not seeking to sell. And it provides a preference for partition in kind, right? Again, dividing the land into pieces of equal value for those co-tenants. And then it also provides them for open market sale, again, to ensure the true value. Okay, so let's talk about the provisions to provide enhanced notice. So the new sales procedure under the UPHPA is designed to mirror the traditional procedures real estate brokers use when they market properties. And so it provides for enhanced notice requirements regarding the partition sale. In addition to sending notice of filing of a partition action to all known heirs who are locatable, the plaintiff, that is the person who's bringing the partition action, shall or must post a conspicuous sign on the actual heir's property itself. And the sign has to state that an action for partition has commenced and it has to list the name and the address of the court under which the partition is filed. And then the court may require the plaintiff to publish on the sign the name of the plaintiff and any known co-tenants. So there's a lot more information and notice under the UPHPA. Now for the independent appraisal requirements of the UPHPA, obviously it's possible that the co-tenants maybe could all agree on the value of the property. But if all co-tenants do not agree on the value of the property, then under the UPHPA, the court will order a disinterested licensed real estate appraiser to determine the fair market value of the property. And that way the property is less likely to be sold at a discount. The right of first refusal or buyout provision under the UPHPA allows a co-tenant who did not request a partition by sale to purchase the property, right? So in that way, it protects against those developers buying the property away from the family. Any co-tenant who does not request a partition sale may purchase the shares of the co-tenants who petitioned the court for a sale. And if two or more co-tenants want to purchase the property, the court will divide the seller's interest. They will divide the seller's interest between those buyers according to the existing ownership shares of those buyers. Okay. All right. So this is actually one of the most beneficial parts of the UPHPA in terms of changing the jurisprudence around partition actions. Under the old partition paradigm, when a co-tenant sought partition, the preference in the law was to sell the property and to split the proceeds regardless of whether other co-tenants might want to partition the property in kind instead. And that was the problem, right? Just one co-tenant could force the sale of the land even against the wishes of all the other co-tenants. The UPHPA, however, requires a court to determine whether a petition in kind is actually more appropriate when any co-tenant chooses to petition the property in kind. In other words, ask the court to divide the property into physically distinct and separately titled tracks, or when no co-tenant decides to purchase the shares from the co-tenant who petitioned the court to sell the property. So under the UPHPA, a preference exists to divide the property in kind unless the court, using the totality of the circumstances test and considering economic as well as non-economic factors, finds a partition in kind will result in manifest prejudice to the co-tenants as a group. And that's a pretty high bar for the court to have to find. So those economic factors now that are required to be considered by the court under the UHPA include the total fair market value of the parcels resulting from the division. That would be, the determination would be that they would be materially less than the value of the property if it was sold as a whole. An example of those non-economic factors that are now required to be considered by the court include sentimental attachment to the land by any of the co-tenants. Lawful use of the land, is there somebody actually residing on the land? That's considered lawful use of the land. And paid property taxes and maintenance and other expenses associated with the land and who was making those payments, right? So those are some of the considerations required by the court to make under the UPHPA. Okay, if the property is to be sold, it must be listed with a licensed real estate broker for sale at a price not lower than the court-determined value, and it must be listed for a reasonable amount of time. In other words, give folks time, right, to discover and to see if they can get the money together to buy it. Also, if another method will produce a better price, the court actually may waive the open market sale procedure. So you can seek, right, other ways to get a better value, a higher price. Okay, so that was a very quick overview of the Uniform Partition of Heirs Property Act, and some states have adopted some version of it, while others are considering doing so. And yet there are still others who have yet to even consider it, but hopefully they will. Maryland has adopted a version of the Model Act, as I said, and Maryland's new Partition of Property Act changed existing partition law in Maryland to better protect owners of tenancy and common property from forced court-ordered sales of the property. Specifically, the law provides new procedures for serving notice on owners with unknown whereabouts and for determining the property's fair market value if the co-owners of the property are unable to agree on the value. Maryland's law also requires that if an owner seeks a partition by sale, it is only the owners who did not request the sale who may buy out the interest of all the other owners in the property. For partitions in kind, Maryland's new law requires the court in determining whether and how to partition the property to specifically consider various things, including each owner's respective ownership shares, whether they have contributed towards the property's carrying costs, right? They've paid the taxes, they've paid insurance, and whether owners have certain sentimental ties to the property. So for all those reasons, there's an enhanced, it's provided enhanced protection for heirs' property in Maryland. And I'm just sharing with you a blog post that I wrote, but you can find a lot of information about Maryland's new Partition of Property Act, and you can certainly reach back out to us for questions about that as well. Something that is important to know is that a partition or sale for division under the UPHPA does not mean that you won't be responsible for existing mortgages or liens on the property. Those are still in place and they are going to be, of course, have to be paid and you'll likely be obligated to satisfy or pay them. So that is not That's not something that the UPHPA did away with. Okay. Now, some progress. Yeah, in addition to the UPHPA, there has been some other progress around heirs property. First, the Farm Service Agency, or FSA, of USDA issued guidance a couple of years ago listing alternative documentation that heirs property owners can use to show that they're in control of the farm operation And that way, they can actually obtain a farm number. Now, if you don't already know, in order to participate in most USDA programs, farmers must get a farm number from FSA. because people have to show clear ownership of land to get a farm number, many heirs property owners had been left out. But the new guidance from FSA changed that. However, with regards to ag land, it did change that. However, heirs property owners are generally still unable to get help from USDA programs designed to assist homeowners. You know, they often underwrite homeowner loans, home loans, because they don't have clear title to their homes. Second, more recently, like within the last 14 months or so, FEMA changed its policies so that heirs property owners can get emergency assistance after a hurricane or other natural disaster. For those with heirs property that need emergency assistance, FEMA and the states have recently expanded the criteria to be eligible for disaster relief. Now heirs property owners, now heirs property owners can certify. They can certify that they own the property that was damaged rather than producing necessarily a clear, clear title. OK, and that's yeah. So next I just wanted to. When I last checked last Friday, at least two of these resources with information that I was just talking about are still available on the federal agency's website. So, you know, the guidance for heirs property owners participating in FSA programs, that fact sheet is still available. And the update to FEMA's individual assistance programs and policy guide was still available. I think you might want to check back if you're looking for the third, the FEMA makes changes to individual assistance policies to advance equity for disaster survivors sheet and see if they bring that back up. But as of my last check, that was the resources that were available. Okay, there is also the Heirs Property Relending Program that was authorized by Congress through the 2018 Farm Bill. And this is a new program and we are still working under the 2018 Farm Bill. And we are actually pushing, I know that there's advocacy to extend this into the next Farm Bill as well. This is, again, a new program that could help heirs property landowners who are close to resolving their issues around the heirs property, and they just need funds to complete the resolution. For example, if heirs need to buy out another heirs share, they could borrow money under this program. Borrow money, and I'm going to point that out. This is not a grant, it's a loan, but they borrow the money and then they pay it back over time. Or if heirs need to hire a lawyer to codify the agreement that they've already reached, they could borrow money to pay the lawyer and then pay it back, right? Pay that back over time. So you just need to be really very clear that it's not a grant, it is a loan. Okay. Okay, now let's talk about how to navigate family conflict. Switching gears, going away from resources a little bit to talk about, you know, how do we navigate those family conflicts, those disagreements that are common in resolving a lot of issues, certainly common in resolving heirs property issues. But that shouldn't stop families from moving forward, right? Communication and transparency within the family is going to be critical, right, if you're doing this work. And you want to find out, is there somebody in the family who can lead this as a project? I'm guessing for folks that are on the webinar, it might be themselves, it might be you. And you're going to need to discuss these important points together as a family. You're going to need to talk about all the issues that are related to the property, right, in the tangled title. What issues does that raise for the family members? Understanding, right, that the property as a resource, does every member in the family understand that the property is a resource? Do they see it in that light? Do they see it as a potential source of wealth? Do they see its cultural importance? And then figuring out how to deal with conflicts that will inevitably arise, right? And these are all things that the family is going to have to discuss. And members of the family should decide how best to be in touch with one another, right? As the process of resolving the heir's property is generally, it's a long, it's complicated process, it's going to take some time. How are you going to keep in touch with one another? Maybe think ahead, what questions are going to arise? How are you going to set up those discussions? Maybe you're going to do one-on-one conversations, but there's probably going to still be a need, right, for the whole family to come together at some point and work out issues together. In some cases, it may be useful to consider maybe using a facilitator or a mediator or an arbitrator, possibly, to help conversations, right, be productive. Some non-governmental organizations that focus on heirs' property might be valuable resources. in identifying those facilitators or mediators who could work with you and your family. If you're talking about ag land, we have resources that we can direct you to in Maryland that can help with mediation. Facilitators, just so those are neutral individuals whose job it is to help a group engage in dialogue, ensuring that all participants can share equally in the conversation and that the group's dialogue actually leads to a decision or a resolution or is productive. Even where there's no conflict within a family, I think having a skilled, neutral person, you know, from outside of the family can be helpful. Okay, and they keep you on track too. They can keep you accountable and keep you moving forward. And then a mediator is again a neutral third party who facilitates conversations aimed at resolution, much like a dispute. So they're very resolution oriented. Like facilitators, they don't make any decisions. They facilitate the conversation and make sure all parties are heard and understood. And they can identify issues and interests and help guide the parties to a resolution. Arbitrators, arbitration is like a mediation. It's really, it is an alternative dispute resolution process. And the arbitrator, again, is a neutral person, but they actually do make a decision. So we see there our role of the arbitrator more similar to that of a judge. However, unlike a judge, the parties, they can choose their own arbitrator. And that allows allows them to choose someone with subject matter expertise, for instance. And then you go into the arbitration, you present your case, similar to court litigation, and then the arbitrator makes a decision to which all parties in advance have agreed that they will abide by. So, okay. So there's some helpful resources for helping families navigate those conflicts, right? Now, because of these challenges, the most common advice that owners of heirs' property receive is that they need to actually change the way the property is owned for all of the reasons that we've talked about in terms of the potential downfalls of owning property as heirs' property. However, owners of heirs' properties They might, right? They might decide that no change is necessary. And that's an option, right? So here are some important things that families must consider in deciding whether to change the way that the heirs property is held. They have to consider resolving the fact, or they will be considering the fact that resolving heirs property, like I said, does take time, takes a little time, takes effort, energy, money. to identify all potential heirs, get a unanimous agreement on what to do and hire a lawyer and change the legal status of the property. So those are real challenges. If many generations have passed since the original property owner died, there may be hundreds of heirs, right, that we've been learning about. And some of whom have moved far away. They may no longer be in contact with others in the family. no one else in the family. And they may have no idea that they even own or an heir, right? And even so, these individuals still under the law, right, have the same rights of ownership as those living on the land and paying taxes on the property, okay? Because ownership is so complex and family members may have many different opinions on what should be done with the property, there might be advantages to changing the way that the property is owned or even in some cases selling the property completely, including maybe to a subset of heirs who are most interested or emotionally attached to the property and maybe that'll be the resolution, right? And that's an option as well. Or it could be that there are a relatively small number of heirs who all get along. They all agree on how the property should be used and managed and who's going to pay what. And this might represent a situation where, in fact, leaving the property is heir's property, at least for that this generation, that might work, right? However, of course, we have to remember that as the number of heirs increases and the different generations with different family lines are represented among the heirs, the likelihood of disagreement is going to increase. And that is where changing the property ownership to a different legal status really could make sense, right? Okay. Okay, so understanding that some families will choose to continue owning the property as heirs property, I want to move on. The remainder of this presentation will focus on how owners of heirs property might proceed to resolve their heirs property issues to overcome some of the known constraints that limit the ability of heirs property owners to effectively use, manage, and generate wealth from their property. And in this section, we'll be talking about general themes, and then discuss how you can gather as much information as possible before getting legal help, which will certainly save time, and time is money when we're talking about lawyers. Let's start with understanding your own goals and limitations, right? Again, if you're here at this webinar, you might be the leader in the family that's taking on this project, but you do want to start with understanding what are your own, right? What's important for you to know before you start having these conversations with other family members about their goals and their limitations? Do you want to continue to be an owner? Do you want to make sure that the land stays in the family? Do you plan to improve the economic value of the land? And also understand your limitations, right? How much time and money are you willing to invest in doing this? What about your emotional limits? How much emotional energy can you invest? You know, family dynamics, those can be complicated, especially when it comes to shared assets. And there are family members with whom you may not be able to work well at all with, you know, you don't wanna maybe engage at all with them. Be thinking about that ahead of time. How are you going to handle that? And knowing your goals and limitations is important and should help inform any strategy that you decide to pursue. And it can be useful to check back on those, right, on your goals if anything gets difficult and you need to decide whether to stick with the strategy that you've developed. Once you have your own goals and limits in mind, reaching out to other members is next. That's the next step. Identifying heirs is an important first step. And then you can begin discussing goals. Having clear goals for addressing the challenges involved in owning land as heirs property is important to be able to develop a strategy that leads to family agreement and hopefully resolution of title issues, meaning getting that title in the name of the current owners. The goals can vary depending on your circumstances. They can include figuring out how to get qualified for USDA and other programs for agriculture or conservation. They can include ensuring the family always has a place to live or simply taking care of the same land that your ancestors cared for. Discussing all the goals of all the heirs is important because they may not be the same, right? And you want to know ahead of time. And they may even conflict. Some heirs may have no interest in the property and may not want the burden of ownership. Other heirs might need money and would be happy to sell their shares. And this, of course, can be the problem, right? That if another person who is not a member of the family may buy a share. So it's important to have those conversations. But resolving heirs' property, like I said, it can be overwhelming. You may be starting to feel that already. And this presentation itself includes a lot of information. And you need to know that you won't be able to take all of the actions on everything at once. And you have to start small. Okay. Well, one of the first things that the family must do to resolve heirs' property is to identify all the heirs who have an interest in the land. from the person who initially bought the property to the youngest person in the family right now, right? If only one or two generations are involved, that can be relatively simple. And you may be able to draw the family tree based on your own personal knowledge, right? Maybe you're the only person that needs to be there to make that tree. But imagine that the property was bought by an ancestor three or four generations in the past. There could be hundreds of heirs. including many, again, whose whereabouts or even existence may not be known. And that sounds pretty daunting, right? And it doesn't make, it does make things difficult, but it's not impossible. And there are ways to satisfy courts that honest efforts have been made to identify all errors. So as we've talked about, I think in the last webinar, the burden is to, right, to make reasonable efforts and all honest efforts to identify all errors. That's typically the requirement. So a court may allow something like an airship affidavit that can be filed in which the family shows all of the efforts and all of the information that it's done about the heirs that it's been trying to notice, to discover and to notify, and demonstrates in that affidavit that it made a diligent search for anyone who might be missing. Okay, that's a possibility. Just do your best and keep records of all your efforts. to identify and all the heirs. people use a whole variety of tools, family Bibles, those are a great, great source to identify heirs, birth certificates, death certificates. Use the ancestry tracing websites that are available. Check with cemeteries. review obituaries. And certainly now we can use social media too to try to help us identify errors. Make sure to add birth and death dates to the family tree. You've received a handout that will help guide you through how to make a family tree. You know, if someone If you find out somebody died, try to find out whether they had a will. Did they die with a will or without a will? Those are the things that you want to start noting. And then talk with your family members, even those that you might be getting to know for the first time, right? Tell them what you're doing and tell them why and ask them, What do they want to do, right? And use those conversations to build, start to build consensus or at least some common understanding that something should be done. So as you're building your family tree, you're starting to talk with folks about their goals. Creating a family tree involves developing that list of all family members, their dates of birth and death, if they married, if they divorced, if they divorced and then remarried. And if they had any children from those marriages, or if they had children outside of their marriages, or you know, for those who are living, write down their contact information, get their phone number, their residential address, their e-mail addresses. Those are the things that you want to be accumulating. So we saw a similar picture in the beginning of this webinar series illustrating the fractionalization of shares. This illustrates the process of intestate succession. So this is when someone dies without a will, right? They die in intestate. Who inherits how much of the decedent's estate? And that's going to differ by state intestacy law. And it's even more complex, you know, than this if you start to include siblings, right, from other marriages and children who are born to parents who aren't married. So this is the tree that you need to try to start working on developing. Okay, so let's, a lot of times we try to just do a quick little tabletop exercise. I think we can do it here. So imagine one of your own grandparents owned 100 acres of land and died with no will. Now build a family tree showing your own parent and your parents' siblings. Are all your aunts and uncles alive? Are they still alive? You should be noting this down. How many children in grand? children are on there. And I'd like to know if there's a way for you to put it in the to put in the chat. How many generations are you able to go back to confidently? How many of you could go beyond your grandparents with full confidence that you know all of their children? Now, do you think I don't know if you want to share it in the chat, go ahead and tell me how far back you can go. I'm really only able to go back about two generations with full confidence. Because then I also have to think about now, could you get in contact with all of those heirs today, right? Do you think if you could get in contact with all of those heirs, do you think you could get all those people to agree on how to manage those hundreds, that 100 acres, right? So again, we've got a handout for you, how to create your family tree. So that's a resource. And there's other resources that are available to help you work on building your family tree. And you can just contact me if you have more questions about those resources. There's something called a Family Tree Builder, and that's a free software program at myheritage.com. There's the National Geographical, Genealogical, excuse me, the National Genealogical Society as well. Those are some resources. Okay, so a little tapes off exercise to keep you thinking. I'm guessing each of us can think of at least two people in our family who might view the value of land differently, right? The emotional, cultural, or other types of attachments that we have with places can be quite different between different family members and certainly across generations. And part of the discussion is going to have to involve talking with your family about those things. Things like, what is the value of your land economically, emotionally, or culturally? And can you have an appraisal done to determine the economic value of the land? Are they going to be okay with that? Do you have timber on your land that can be sold to generate income? That might, some things that you might not think about, but you need to start thinking about. Is there other sources of income off the land? Can you lease the land for agriculture or other activities and get some income that way? Things that you just need to think about in terms of the land itself. Do you know the history of the land? how your ancestor acquired it, or what it was used for. All of that information is important to share with family members, and that will help everyone determine what are the next steps. So the family is working on the family tree, thinking about what the land means to them. There are still things, however, that need to be done regarding the land while all of that is going on. The property needs to be secured, and protected from outside threats like trespassers, possibly squatters. Otherwise, they actually, those trespassers or squatters might be able to assert a legal claim to the land. And legally, this is generally called adverse possession. Each state law differs, but generally in order to be able to claim adverse possession, Squatters have to show that they've been living on the land for a certain number of years, that they don't have permission to be living there, and that they've been living there openly, however, so not in secret, and they had exclusive use of the land. So it happens. However, there's usually a long period of years that it has to happen. For instance, in Maryland, it's over a 20-year period. But again, we're talking about heirs property where maybe nobody was even aware that they to protect the land. They didn't know the land was theirs. Also in Maryland, it is against the law. I just want Maryland folks to know this. It is against the law for landowners to evict squatters on their own. You do have to go through a court process in order to do that. So don't do that on your own. Also, while the family is talking about next steps to take in filling out their family tree, you have to make sure the property taxes are being paid. Otherwise, again, the town or the county can seize the land, slap a tax lien on it, and ultimately could sell the land, right? Again, every state's procedures for this is going to be different, but if the taxes aren't paid, you may likely lose the land. And then you also have to establish and maintain communication with those known heirs and family members. because you don't want an heir to sell their interest to an outsider while you're doing all of this prep work to clear the title. Family members should be reminded not to sign anything, especially from someone outside of the family, at least not without discussing the matter with a trusted advisor. So making sure that folks know, hey, we're in the process of trying to clear this up. You know, don't screw that up for us. So Okay, the next step is getting documentation that you're going to need, okay? Before seeing an attorney, try to get these documents together. So examples of documents to bring would be your most recent deed to the land that you can find, wills that you can get your hands on, copies of tax documents related to the land, again, deeds, any contracts or leases on the property, if you know of those and you have copies of those. And certainly any documentation of any easements that might be associated with property. And you can find some of these, all those resources that I mentioned before might be good sources. You can search county offices for this information. It's going to differ by state, but there's usually a county office that holds land records, including deeds and maps. And you're going to be searching the clerk of court records or whatever office keeps those land records in the county where the land is located. And for any liens, and those are debts, right, for any liens or other judgments and documents associated with the property, that's what you're looking for. In Maryland, fortunately, pretty much everything, all the land records are online. You start with a land record search on the State Department of Assessments and Taxation's website. And then you use the info that you find there to search for the deed on the Maryland Land Records website, but it's all on websites. I actually teach a class on how to search for and find the deed to your property in Maryland and how to read a deed, how to read a deed, because they're cryptic, especially if they've been, they're from a long time ago. And if you'd like more information about how to do that, you can just reach out to me. Conducting a title search, ultimately, you're going to have to conduct a title search to confirm the current owner of the property. A title search is the formal process of retrieving the necessary documentation and information to determine the current ownership interests in a piece of land. And this can be done by a title abstractor, but it's going to need to be confirmed by an attorney. A title search reveals all past owners of the property, or it should, right? It should include all past owners of the property, a legal description of the property, and any liens on or other unresolved issues concerning the property. That's what you're paying for in a title search. But again, those the results should be reviewed by an attorney. So now let's talk about how you select an attorney. And just like Samantha talked about last week, when you're when you're making your wills and your power of attorney documents and your estate plans to prevent creating heirs property, A lawyer who helps families with resolving heirs property matters really must have experience in estate planning or what's called succession planning. Some of them call it succession planning. They must have experience in real estate and maybe business law if you want to put the land into a business entity. You want to choose someone with appropriate experience and who has a good reputation. And you can do that by talking and asking people that you trust for recommendations. Also, understanding cost for every stage of the process is helpful, right, as you're planning. Ask the attorney to explain potential costs along the way. And a lawyer can review documents that you've provided, review available records, make the recommendations for the next steps. And those recommendations should include an estimated cost for each stage of resolving the heirs' property issues, and should also include estimated costs for advice regarding what the family can do to prevent further distribution of heirs' property, like creating a trust or a business entity to hold the land. So for every step, your attorney should be able to tell you, estimated cost. Okay, now how your property is titled is vital to doing that drafting of your will, for instance, right? The next step explores some of the next section explores some things to consider. And I A lot of what we're talking about over the course of the webinar is really getting you used to lingo and terms that you should be able to issue spot and understand when you're talking, for instance, with the lawyer. So these are some of the key terms that you want to understand related to property ownership. Title, what's a title? A title is a legal term and it concerns ownership of property. We've talked about it a lot, but it dictates your rights vis-a-vis the land. You get title to the land. Now, a deed is also, it's a legal document. So title is a legal term. A deed is a legal document that transfers the title from one person to another, and it should be recorded in the courthouse so that everybody knows about the transfer or recorded in wherever the land records are recorded. Depends on the state. Cloudy title, that's heirs property, right? Heirs property owners generally have what's called cloudy or tangled title to their property because the deed remains in the name of an ancestor who is no longer alive, or ancestors who are no longer alive instead of in the name of the current owners. So that's the lingo. This slide lists the type of information typically found on a title certificate or a title report. A few things to note here. Generally, you're only going to get information about the surface title. That's what's examined. So for instance, if you have interest in mineral titles, that's not going to be part of a standard title search. The examiner reviews all instruments going back. for the period of years that is required by law under the applicable state. So if there's some reason why you want to or need to extend that period, just understand that's what they're going to follow first. Also, you'll learn about the type of interest that you might have in the property if it's shared, because your interest might be limited, right, by the form of the deed to you if you hold title by Joint tenancy with right of survivorship, that's one way to hold title, right? Typically we see that for husbands and wives, right, or married couples. And that joint tenancy with right of survivorship, that vests title in the survivor as between the joint tenants, right? So if one dies, their right, the right of survivorship passes to the living owner. And then the other type of interest is a tenancy in common. And we see this typically in siblings, for siblings. And that vests title in the heirs of the decedent, right, and typically in the absence of a will. So again, through our intestacy laws. You inherit, if your dad and mom die, the property passes through intestacy typically to the children as tenants in common. And they each get equal shares typically. So, okay. All right. OK, we're going to wrap up here by going over different structures that may be useful in securing heirs' property land. Excuse me. We're going to talk about the most common legal structures for holding land. And we're not going to do a deep dive into these, just introducing you to terms so you have some familiarity with them and understand that these are options that for holding heirs' property land, right? So let's talk about trusts first. Sometimes creating a single entity that owns the land in which each family member effectively owns an interest can be a more secure way of owning the property and transferring it to future generations. So rather than each family member owning a share of the land directly, what they own is a share in the entity that owns the land. And this is what we, this can be done with a trust. So with a trust, Heirs property owners can deed their interest in the land to the trust and then name one or more people to serve as trustees, right? So this is, I got my family together and we decided to do it this way, okay? All the heirs decided to do it this way. Or with the trust, the remaining heirs property owners can be the beneficiaries of the trust, so you should understand that. And with a trust, the trustee would manage and control the land and be responsible for maintenance and tax payments. That's the rule, typically of the trustee. And it's all done according to the terms that are set out in the trust agreement. So you can, of course, make those more specific to your, you know, everybody's needs and desires. So now, heirs property owners can also decide to form a business entity like an LLC, a limited liability company, or a corporation. and transfer the property to the LLC or corporation. And there are fees, right, for the initial filing and the annual reports of a, if you own, if you choose to go the business entity structure route, they're not necessarily daunting, but What is done then is under the LLC, right, or the business, an operating agreement or maybe bylaws are established, right? And what happens then is you can determine, you can dictate through those bylaws or the operating agreement what happens to a member's share when they die. What happens if a member wants to sell their share? How are decisions going to be made? How is management of the property going to be handled? Who's responsible for maintenance tax? other duties and how our profits and costs that might come, right, come from and come with the land are going to be shared. How are those going to be shared? So those can all be done through the operating agreement. So much similar to the trust, right? We've put it in another entity and we own shares of the entity. And lastly, you could decide to enter what's called a tenant in common agreement. And you could enter that with all of the owners, right? And that's a legal structure in terms of the, well, you should understand that the legal structure in terms of the title to the land remains the same. So all co-heirs, all own the land as tenant in common, that's the same. And instead of creating a new entity which governs the family ownership of the property, the family members, the heirs, all enter into that common tenant in common agreement. It's a private contract that's done between the owners. And that way, each family member still owns a share of the land itself because the deed hasn't changed, the title hasn't changed, and nothing's been done, right, to retitle it or, excuse me, to create a new deed. But they reach an agreement as a family about, you know, sets out the rights and responsibilities under the agreement. of everybody, all the owners. It can help address who's going to manage, they can talk about who's going to manage the property, how is the property going to be used, who's going to pay the taxes, what happens if a co-town wants to sell their interest. So just like an operating agreement under an LLC, this is a separate private contract, right? That's done between all of the owners. Okay. All right, guys, we covered A lot. We covered all of these things. We covered the challenges of owning heirs... Hello? Okay, we covered the challenges of owning heirs property, the importance of working with all family members, creating a family tree, considerations relevant to a family's decision, title to real property and different legal structures. And the last thing I want to leave you with is we've got some additional resources I can hear folks. I don't know if folks can mute themselves for just a minute. I'm almost done. Sure, please go ahead. Thank you. We've got just additional resources here that I want to let you know about. There is Some assistance, again, in resolving heirs property, there's some additional resources. One is the heirs property practitioners network. And you can go to this website that's on the slide here. Just want to inform people how this works. They actually ask you at the website through the portal for information so that they can reach back out to you. And they do this to protect heirs because there are people, of course, that we know that are out there that are trying to exploit heirs in order to get property. So that's why that's done. If anybody has difficulty with that side, I know the lawyers that run that And you can reach out to me for some help with that. Estate Planning and Heirs Property Clinic at Howard University. It's a law clinic, meaning that there are attorneys that oversee the students doing the work and they handle legal matters. Usually they cost less through a clinic than a private attorney. So you might check that out. Maryland Volunteer Lawyer Service is also a good resource, again, for my folks in Maryland, as is Shore Legal. Shore Legal is actually located here on the lower shore, lower Eastern Shore. And they actually have told us they have funding to assist people on the Eastern Shore with resolution of heirs property issues. It's mostly free except for maybe that any of the filing fees that might be involved. And we have a DC heirs property assistance program that again, last I checked was at least information was still available. So it might be a resource for you to check out. And then there's general invocation, education, more education. about heirs properties, so at these websites.",
+  "attempts": [
+    {
+      "client": "IOS",
+      "playability": {
+        "status": "OK",
+        "playableInEmbed": true,
+        "offlineability": {
+          "buttonRenderer": {
+            "navigationEndpoint": {
+              "clickTrackingParams": "CAkQ6ewBIhMItc3QkuzblwMVtntMCB31ZzICygEEgySuxg==",
+              "ypcGetOfflineUpsellEndpoint": {
+                "params": "ChPqqN25AQ0KC1RQNm44VEJzQ0dzIgtUUDZuOFRCc0NHcyoVCAkYAVIPCgtUUDZuOFRCc0NHcyAB"
+              }
+            },
+            "trackingParams": "CAkQ6ewBIhMItc3QkuzblwMVtntMCB31ZzIC"
+          }
+        },
+        "pictureInPicture": {
+          "pictureInPictureRenderer": {
+            "playableInPip": true,
+            "offByDefault": false,
+            "shouldResumeOnHead": false
+          }
+        },
+        "miniplayer": {
+          "miniplayerRenderer": {
+            "playbackMode": "PLAYBACK_MODE_ALLOW"
+          }
+        },
+        "contextParams": "Q0FFU0FnZ0M="
+      },
+      "outcome": "ok"
+    }
+  ],
+  "fetched_at": "2026-10-28T04:11:36.910027+00:00",
+  "client": "IOS",
+  "json_path": "transcripts/144_TP6n8TBsCGs.json",
+  "text_path": "transcripts/144_TP6n8TBsCGs.txt"
+}

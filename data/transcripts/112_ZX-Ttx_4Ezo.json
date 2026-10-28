@@ -1,0 +1,103 @@
+{
+  "index": 112,
+  "url": "https://www.youtube.com/watch?v=ZX-Ttx_4Ezo",
+  "video_id": "ZX-Ttx_4Ezo",
+  "status": "ok",
+  "metadata": {
+    "title": "How to Search for a Property ID",
+    "author": "California State Controller's Office",
+    "channelId": "UCB1t8qTtFOibG0WoHX1cOqg",
+    "lengthSeconds": "222",
+    "viewCount": "402776",
+    "shortDescription": ""
+  },
+  "caption_tracks": [],
+  "selected_track": null,
+  "segments": [
+    {
+      "start": 0.0,
+      "duration": 222.0,
+      "text": "The California State Controller's Office explains Property ID searching on ClaimIt.ca.gov. Do not use a middle initial on the initial search. The example John P Sullivan returns 73 matches while John Sullivan returns more than 500 because holders often omit middle initials. Last Name requires at least three characters. Narrow results with cities where the person lived or received mail. Holder reporting errors in names, streets, cities or ZIP codes can explain undelivered payments. Try partial city names, such as Gold for Gold River, common name misspellings, partial first names and nicknames, such as WIL for William or Will. Inspect results for former addresses, P.O. boxes and family members. Click Add beside a Property ID to add it to the Claims Cart, then Claim Properties in My Cart or Continue Search. File using eClaim or a paper mail-in form when complex heir documentation is required. Record the Property ID before calling (800) 992-4647.",
+      "timing": "whole_video_coverage_not_quote_timestamp"
+    }
+  ],
+  "full_text": "The California State Controller's Office explains Property ID searching on ClaimIt.ca.gov. Do not use a middle initial on the initial search. The example John P Sullivan returns 73 matches while John Sullivan returns more than 500 because holders often omit middle initials. Last Name requires at least three characters. Narrow results with cities where the person lived or received mail. Holder reporting errors in names, streets, cities or ZIP codes can explain undelivered payments. Try partial city names, such as Gold for Gold River, common name misspellings, partial first names and nicknames, such as WIL for William or Will. Inspect results for former addresses, P.O. boxes and family members. Click Add beside a Property ID to add it to the Claims Cart, then Claim Properties in My Cart or Continue Search. File using eClaim or a paper mail-in form when complex heir documentation is required. Record the Property ID before calling (800) 992-4647.",
+  "attempts": [
+    {
+      "client": "IOS",
+      "playability": {
+        "status": "OK",
+        "playableInEmbed": true,
+        "offlineability": {
+          "buttonRenderer": {
+            "navigationEndpoint": {
+              "clickTrackingParams": "CAkQ6ewBIhMIyKDUkOzblwMVFExMCB3WHRUWygEE49Ej2Q==",
+              "ypcGetOfflineUpsellEndpoint": {
+                "params": "CiXqqN25AR8KC1pYLVR0eF80RXpvShAwZ2NKQ1NRRkptUC1qYXJCIgtaWC1UdHhfNEV6byoVCAkYAVIPCgtaWC1UdHhfNEV6byAB"
+              }
+            },
+            "trackingParams": "CAkQ6ewBIhMIyKDUkOzblwMVFExMCB3WHRUW"
+          }
+        },
+        "pictureInPicture": {
+          "pictureInPictureRenderer": {
+            "playableInPip": true,
+            "offByDefault": false,
+            "shouldResumeOnHead": false
+          }
+        },
+        "miniplayer": {
+          "miniplayerRenderer": {
+            "playbackMode": "PLAYBACK_MODE_ALLOW"
+          }
+        },
+        "contextParams": "Q0FFU0FnZ0M="
+      },
+      "outcome": "no_caption_tracks"
+    },
+    {
+      "client": "ANDROID",
+      "playability": {
+        "status": "OK",
+        "playableInEmbed": true,
+        "offlineability": {
+          "buttonRenderer": {
+            "serviceEndpoint": {
+              "clickTrackingParams": "CAQQ6ewBIhMI2JjlkOzblwMVjEhMCB3qbganygEEv_r12A==",
+              "ypcGetOfflineUpsellEndpoint": {
+                "params": "ChPqqN25AQ0KC1pYLVR0eF80RXpvIgtaWC1UdHhfNEV6byoVCAkYAVIPCgtaWC1UdHhfNEV6byAB"
+              }
+            },
+            "trackingParams": "CAQQ6ewBIhMI2JjlkOzblwMVjEhMCB3qbgan"
+          }
+        },
+        "pictureInPicture": {
+          "pictureInPictureRenderer": {
+            "pictureInPictureStyleConfig": {
+              "enableScrubbing": true,
+              "enableNavigationControls": true
+            },
+            "pictureInPicturePlayability": "PICTURE_IN_PICTURE_PLAYABILITY_SHOPPING"
+          }
+        },
+        "miniplayer": {
+          "miniplayerRenderer": {
+            "playbackMode": "PLAYBACK_MODE_ALLOW"
+          }
+        },
+        "contextParams": "Q0FFU0FnZ0M="
+      },
+      "outcome": "no_caption_tracks"
+    }
+  ],
+  "fetched_at": "2026-10-28T04:11:32.581142+00:00",
+  "json_path": "transcripts/112_ZX-Ttx_4Ezo.json",
+  "text_path": "transcripts/112_ZX-Ttx_4Ezo.txt",
+  "client": "STORYBOARD_OCR",
+  "provenance": {
+    "source": "user_supplied_storyboard_and_description",
+    "verbatim": false,
+    "time_aligned": false,
+    "verification": "User reported verified storyboard review; not independently re-OCRed."
+  }
+}

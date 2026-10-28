@@ -1,0 +1,3442 @@
+{
+  "index": 58,
+  "url": "https://www.youtube.com/watch?v=bcOlApV2Fng",
+  "video_id": "bcOlApV2Fng",
+  "status": "ok",
+  "metadata": {
+    "title": "Getting Started With Probate Records | Ancestry",
+    "author": "Ancestry",
+    "channelId": "UCsc0AQkAh_2cQmxqwD6VWRw",
+    "lengthSeconds": "1751",
+    "viewCount": "10931",
+    "shortDescription": "Probate records are, arguably, the single most valuable genealogical records for pre-1880 U.S. family history research. Join Crista Cowan for a look at how these records are organized on Ancestry and how best to search them.\n\nStart Your Journey Today:\nhttp://www.ancestry.com/s89386/t38352/rd.ashx\n\nSubscribe: http://www.youtube.com/channel/UCsc0AQkAh_2cQmxqwD6VWRw?sub_confirmation=1\n\nAbout Ancestry:\nBringing together science and self-discovery, Ancestry helps everyone, everywhere discover the story of what led to them. Our sophisticated engineering and technology harnesses family history and consumer genomics, combining billions of rich historical records and millions of family trees to over 10 million and counting to provide people with deeply meaningful insights about who they are and where they come from. \nWe’ve pioneered and defined this category, developing new innovations and technologies that have reinvented how people make family history discoveries. And these discoveries can give everyone a greater sense of identity, relatedness, and their place in the world.\n\nConnect with Ancestry:\nVisit Ancestry’s Official Site: https://www.ancestry.com/\nLike Ancestry on Facebook: https://www.facebook.com/Ancestry/\nFollow Ancestry on Twitter: https://twitter.com/Ancestry\nFollow Ancestry on Instagram: https://www.instagram.com/ancestry\n\nGetting Started With Probate Records | Ancestry\nhttps://www.youtube.com/user/AncestryCom",
+    "keywords": [
+      "ancestry.com",
+      "ancestry",
+      "family tree",
+      "family history",
+      "genealogy",
+      "Barefoot Genealogist",
+      "probate",
+      "wills"
+    ]
+  },
+  "caption_tracks": [
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=bcOlApV2Fng&ei=6nXhasuUBO-tlu8PpYXYyAQ&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185882&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=504122D570D8214003197957FAB5E488209BBEC2.2913B3D90D98D2361777811A631D1327E689032F&key=yt8&kind=asr&lang=en",
+      "name": {
+        "runs": [
+          {
+            "text": "English (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.en",
+      "languageCode": "en",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    }
+  ],
+  "selected_track": {
+    "baseUrl": "https://www.youtube.com/api/timedtext?v=bcOlApV2Fng&ei=6nXhasuUBO-tlu8PpYXYyAQ&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185882&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=504122D570D8214003197957FAB5E488209BBEC2.2913B3D90D98D2361777811A631D1327E689032F&key=yt8&kind=asr&lang=en",
+    "name": {
+      "runs": [
+        {
+          "text": "English (auto-generated)"
+        }
+      ]
+    },
+    "vssId": "a.en",
+    "languageCode": "en",
+    "kind": "asr",
+    "isTranslatable": true,
+    "trackName": ""
+  },
+  "segments": [
+    {
+      "start": 9.84,
+      "duration": 2.879,
+      "text": "hi everyone Christa Cowen here with"
+    },
+    {
+      "start": 11.32,
+      "duration": 4.04,
+      "text": "another episode of the barefoot"
+    },
+    {
+      "start": 12.719,
+      "duration": 4.921,
+      "text": "genealogist today we are talking about"
+    },
+    {
+      "start": 15.36,
+      "duration": 4.999,
+      "text": "probate records if you've been paying"
+    },
+    {
+      "start": 17.64,
+      "duration": 4.84,
+      "text": "any attention uh to ancestry at all over"
+    },
+    {
+      "start": 20.359,
+      "duration": 4.68,
+      "text": "the weekend you will know that we"
+    },
+    {
+      "start": 22.48,
+      "duration": 4.68,
+      "text": "released millions of probate records for"
+    },
+    {
+      "start": 25.039,
+      "duration": 4.961,
+      "text": "the United States over the"
+    },
+    {
+      "start": 27.16,
+      "duration": 5.119,
+      "text": "weekend and uh this is really exciting"
+    },
+    {
+      "start": 30.0,
+      "duration": 4.76,
+      "text": "to me as a genealogist because I know"
+    },
+    {
+      "start": 32.279,
+      "duration": 4.761,
+      "text": "that there are so many brick walls just"
+    },
+    {
+      "start": 34.76,
+      "duration": 4.72,
+      "text": "waiting to be broken down with the"
+    },
+    {
+      "start": 37.04,
+      "duration": 5.32,
+      "text": "information that is in these records"
+    },
+    {
+      "start": 39.48,
+      "duration": 4.599,
+      "text": "there are Wills which are which are what"
+    },
+    {
+      "start": 42.36,
+      "duration": 4.24,
+      "text": "most people associate with probate"
+    },
+    {
+      "start": 44.079,
+      "duration": 5.201,
+      "text": "records but even if your ancestor died"
+    },
+    {
+      "start": 46.6,
+      "duration": 6.04,
+      "text": "without a will there could still be"
+    },
+    {
+      "start": 49.28,
+      "duration": 5.36,
+      "text": "probate records records about um"
+    },
+    {
+      "start": 52.64,
+      "duration": 4.2,
+      "text": "information about their estate that had"
+    },
+    {
+      "start": 54.64,
+      "duration": 4.559,
+      "text": "to be divided up if they didn't leave a"
+    },
+    {
+      "start": 56.84,
+      "duration": 4.76,
+      "text": "will that had there had to be executiv"
+    },
+    {
+      "start": 59.199,
+      "duration": 4.881,
+      "text": "guardianships of children lots of"
+    },
+    {
+      "start": 61.6,
+      "duration": 5.519,
+      "text": "different paperwork that's created when"
+    },
+    {
+      "start": 64.08,
+      "duration": 5.12,
+      "text": "a person passes away now all of these"
+    },
+    {
+      "start": 67.119,
+      "duration": 5.0,
+      "text": "records are typically created here in"
+    },
+    {
+      "start": 69.2,
+      "duration": 5.08,
+      "text": "the US at a county level and so these"
+    },
+    {
+      "start": 72.119,
+      "duration": 4.441,
+      "text": "are county level records we've rolled"
+    },
+    {
+      "start": 74.28,
+      "duration": 4.68,
+      "text": "them into State databases and so we're"
+    },
+    {
+      "start": 76.56,
+      "duration": 4.0,
+      "text": "going to talk today specifically about"
+    },
+    {
+      "start": 78.96,
+      "duration": 3.24,
+      "text": "um how to get the most out of these"
+    },
+    {
+      "start": 80.56,
+      "duration": 3.599,
+      "text": "collections how to dig into them and"
+    },
+    {
+      "start": 82.2,
+      "duration": 3.2,
+      "text": "really find what you're looking for I'm"
+    },
+    {
+      "start": 84.159,
+      "duration": 2.721,
+      "text": "going to give you some information about"
+    },
+    {
+      "start": 85.4,
+      "duration": 3.759,
+      "text": "the databases"
+    },
+    {
+      "start": 86.88,
+      "duration": 4.44,
+      "text": "themselves we'll talk about a few search"
+    },
+    {
+      "start": 89.159,
+      "duration": 3.96,
+      "text": "tips and tricks so that you can find"
+    },
+    {
+      "start": 91.32,
+      "duration": 4.2,
+      "text": "what you're looking for and then we'll"
+    },
+    {
+      "start": 93.119,
+      "duration": 4.32,
+      "text": "talk about some research Basics around"
+    },
+    {
+      "start": 95.52,
+      "duration": 3.52,
+      "text": "probates and then we'll wrap it up with"
+    },
+    {
+      "start": 97.439,
+      "duration": 4.68,
+      "text": "me giving you some places where you can"
+    },
+    {
+      "start": 99.04,
+      "duration": 4.84,
+      "text": "go to find some additional information"
+    },
+    {
+      "start": 102.119,
+      "duration": 4.201,
+      "text": "about how to use these probate records"
+    },
+    {
+      "start": 103.88,
+      "duration": 4.8,
+      "text": "what they tell you and where that can"
+    },
+    {
+      "start": 106.32,
+      "duration": 5.479,
+      "text": "take your research so let's go ahead and"
+    },
+    {
+      "start": 108.68,
+      "duration": 5.56,
+      "text": "dive in let's start by just talking"
+    },
+    {
+      "start": 111.799,
+      "duration": 4.881,
+      "text": "about these databases themselves so I'm"
+    },
+    {
+      "start": 114.24,
+      "duration": 4.839,
+      "text": "going to give you some database specific"
+    },
+    {
+      "start": 116.68,
+      "duration": 6.68,
+      "text": "tips the first one I mentioned is that"
+    },
+    {
+      "start": 119.079,
+      "duration": 7.36,
+      "text": "the databases are by State so probate"
+    },
+    {
+      "start": 123.36,
+      "duration": 5.119,
+      "text": "records are created at a county level um"
+    },
+    {
+      "start": 126.439,
+      "duration": 4.32,
+      "text": "but those records have been microfilmed"
+    },
+    {
+      "start": 128.479,
+      "duration": 4.12,
+      "text": "at that county level and then ancestry"
+    },
+    {
+      "start": 130.759,
+      "duration": 4.041,
+      "text": "has rolled them into state level"
+    },
+    {
+      "start": 132.599,
+      "duration": 5.0,
+      "text": "databases so here's what that looks like"
+    },
+    {
+      "start": 134.8,
+      "duration": 4.76,
+      "text": "on our website if you go to my favorite"
+    },
+    {
+      "start": 137.599,
+      "duration": 5.241,
+      "text": "resource on our site the card"
+    },
+    {
+      "start": 139.56,
+      "duration": 6.12,
+      "text": "catalog and you click on that and you"
+    },
+    {
+      "start": 142.84,
+      "duration": 4.96,
+      "text": "just type in the word probate into the"
+    },
+    {
+      "start": 145.68,
+      "duration": 4.6,
+      "text": "title field you're going to see a list"
+    },
+    {
+      "start": 147.8,
+      "duration": 5.4,
+      "text": "of all the probate records that we have"
+    },
+    {
+      "start": 150.28,
+      "duration": 5.599,
+      "text": "if you sort that by date added you'll"
+    },
+    {
+      "start": 153.2,
+      "duration": 6.119,
+      "text": "get all the new stuff at the top of the"
+    },
+    {
+      "start": 155.879,
+      "duration": 5.881,
+      "text": "list and you can see there we've got um"
+    },
+    {
+      "start": 159.319,
+      "duration": 6.121,
+      "text": "databases called wills and probate"
+    },
+    {
+      "start": 161.76,
+      "duration": 6.68,
+      "text": "records for um all of these"
+    },
+    {
+      "start": 165.44,
+      "duration": 5.76,
+      "text": "states now you'll notice every state has"
+    },
+    {
+      "start": 168.44,
+      "duration": 4.56,
+      "text": "a different date range that's because"
+    },
+    {
+      "start": 171.2,
+      "duration": 4.36,
+      "text": "different states or different counties"
+    },
+    {
+      "start": 173.0,
+      "duration": 5.48,
+      "text": "rather started keeping those records at"
+    },
+    {
+      "start": 175.56,
+      "duration": 5.599,
+      "text": "different times there are also privacy"
+    },
+    {
+      "start": 178.48,
+      "duration": 6.56,
+      "text": "laws that differ state state by state"
+    },
+    {
+      "start": 181.159,
+      "duration": 5.481,
+      "text": "about what can be made available and um"
+    },
+    {
+      "start": 185.04,
+      "duration": 4.24,
+      "text": "the later date here on any of these"
+    },
+    {
+      "start": 186.64,
+      "duration": 3.959,
+      "text": "you'll notice Rhode Island it's 1932"
+    },
+    {
+      "start": 189.28,
+      "duration": 4.4,
+      "text": "Indiana It's"
+    },
+    {
+      "start": 190.599,
+      "duration": 5.72,
+      "text": "1999 they differ um at the at the back"
+    },
+    {
+      "start": 193.68,
+      "duration": 4.24,
+      "text": "end as well based on both privacy laws"
+    },
+    {
+      "start": 196.319,
+      "duration": 4.041,
+      "text": "and on when these records were"
+    },
+    {
+      "start": 197.92,
+      "duration": 4.64,
+      "text": "originally filmed so if these records"
+    },
+    {
+      "start": 200.36,
+      "duration": 4.92,
+      "text": "were filmed back in the 1970s or the"
+    },
+    {
+      "start": 202.56,
+      "duration": 6.44,
+      "text": "1980s that database may only go up to"
+    },
+    {
+      "start": 205.28,
+      "duration": 5.28,
+      "text": "that time period so um those date ranges"
+    },
+    {
+      "start": 209.0,
+      "duration": 3.92,
+      "text": "are just what"
+    },
+    {
+      "start": 210.56,
+      "duration": 4.679,
+      "text": "exists um that has been microfilm that"
+    },
+    {
+      "start": 212.92,
+      "duration": 5.64,
+      "text": "has since then been digitized that we"
+    },
+    {
+      "start": 215.239,
+      "duration": 4.56,
+      "text": "could place online so every state is"
+    },
+    {
+      "start": 218.56,
+      "duration": 4.959,
+      "text": "going to be a little bit different but"
+    },
+    {
+      "start": 219.799,
+      "duration": 6.401,
+      "text": "those databases are by State"
+    },
+    {
+      "start": 223.519,
+      "duration": 5.92,
+      "text": "okay another thing to know is that every"
+    },
+    {
+      "start": 226.2,
+      "duration": 5.319,
+      "text": "County within that state has different"
+    },
+    {
+      "start": 229.439,
+      "duration": 4.961,
+      "text": "records available for different time"
+    },
+    {
+      "start": 231.519,
+      "duration": 5.36,
+      "text": "periods so for example just because the"
+    },
+    {
+      "start": 234.4,
+      "duration": 3.919,
+      "text": "state of Indiana just because the"
+    },
+    {
+      "start": 236.879,
+      "duration": 4.841,
+      "text": "database states that they started"
+    },
+    {
+      "start": 238.319,
+      "duration": 6.441,
+      "text": "keeping records in 17 98 does not mean"
+    },
+    {
+      "start": 241.72,
+      "duration": 6.359,
+      "text": "that every single county has records"
+    },
+    {
+      "start": 244.76,
+      "duration": 5.479,
+      "text": "back to that particular date okay every"
+    },
+    {
+      "start": 248.079,
+      "duration": 6.121,
+      "text": "county is going to have a different date"
+    },
+    {
+      "start": 250.239,
+      "duration": 6.201,
+      "text": "range within that same time period so"
+    },
+    {
+      "start": 254.2,
+      "duration": 4.48,
+      "text": "that's important to understand also it's"
+    },
+    {
+      "start": 256.44,
+      "duration": 4.96,
+      "text": "important to understand that some"
+    },
+    {
+      "start": 258.68,
+      "duration": 6.799,
+      "text": "counties have suffered devastating"
+    },
+    {
+      "start": 261.4,
+      "duration": 7.6,
+      "text": "effects of Courthouse fires or"
+    },
+    {
+      "start": 265.479,
+      "duration": 6.641,
+      "text": "destruction of records for natural or"
+    },
+    {
+      "start": 269.0,
+      "duration": 5.96,
+      "text": "manmade reasons uh whatever the case may"
+    },
+    {
+      "start": 272.12,
+      "duration": 4.84,
+      "text": "be so the the databases are at a state"
+    },
+    {
+      "start": 274.96,
+      "duration": 4.04,
+      "text": "level within the state you have a county"
+    },
+    {
+      "start": 276.96,
+      "duration": 5.799,
+      "text": "level and those County records are going"
+    },
+    {
+      "start": 279.0,
+      "duration": 7.16,
+      "text": "to be a little bit different time period"
+    },
+    {
+      "start": 282.759,
+      "duration": 5.241,
+      "text": "so the best way to know if the records"
+    },
+    {
+      "start": 286.16,
+      "duration": 5.84,
+      "text": "for the county that you're interested in"
+    },
+    {
+      "start": 288.0,
+      "duration": 5.6,
+      "text": "exist online is to use what we call our"
+    },
+    {
+      "start": 292.0,
+      "duration": 4.28,
+      "text": "browse"
+    },
+    {
+      "start": 293.6,
+      "duration": 4.48,
+      "text": "structure so rather than just jumping in"
+    },
+    {
+      "start": 296.28,
+      "duration": 3.8,
+      "text": "and searching which you're welcome to do"
+    },
+    {
+      "start": 298.08,
+      "duration": 5.959,
+      "text": "that is one way to do it but I would"
+    },
+    {
+      "start": 300.08,
+      "duration": 7.04,
+      "text": "recommend use the card catalog or our um"
+    },
+    {
+      "start": 304.039,
+      "duration": 6.72,
+      "text": "wills and probates Page use that"
+    },
+    {
+      "start": 307.12,
+      "duration": 7.88,
+      "text": "information to drill down to a"
+    },
+    {
+      "start": 310.759,
+      "duration": 5.521,
+      "text": "specific state probate record okay so"
+    },
+    {
+      "start": 315.0,
+      "duration": 4.68,
+      "text": "I'm going to come in here to the card"
+    },
+    {
+      "start": 316.28,
+      "duration": 7.4,
+      "text": "catalog I'm going to for example jump to"
+    },
+    {
+      "start": 319.68,
+      "duration": 5.0,
+      "text": "Missouri okay before I start searching"
+    },
+    {
+      "start": 323.68,
+      "duration": 4.12,
+      "text": "I'm going to come over here to this"
+    },
+    {
+      "start": 324.68,
+      "duration": 5.72,
+      "text": "browse box on the right hand side and"
+    },
+    {
+      "start": 327.8,
+      "duration": 4.28,
+      "text": "I'm going to select the county"
+    },
+    {
+      "start": 330.4,
+      "duration": 4.44,
+      "text": "that I am interested"
+    },
+    {
+      "start": 332.08,
+      "duration": 7.399,
+      "text": "in and then I'm going to get a list of"
+    },
+    {
+      "start": 334.84,
+      "duration": 8.359,
+      "text": "all of the records by type of record and"
+    },
+    {
+      "start": 339.479,
+      "duration": 6.321,
+      "text": "by date range that exist for this"
+    },
+    {
+      "start": 343.199,
+      "duration": 4.72,
+      "text": "particular County so I can scroll"
+    },
+    {
+      "start": 345.8,
+      "duration": 3.959,
+      "text": "through here and I Can See For example"
+    },
+    {
+      "start": 347.919,
+      "duration": 4.961,
+      "text": "I've got administrators applications and"
+    },
+    {
+      "start": 349.759,
+      "duration": 6.321,
+      "text": "letters I've got administrators bonds"
+    },
+    {
+      "start": 352.88,
+      "duration": 6.439,
+      "text": "Guardian bonds invest inventories"
+    },
+    {
+      "start": 356.08,
+      "duration": 6.04,
+      "text": "appraisement and sale bills minute books"
+    },
+    {
+      "start": 359.319,
+      "duration": 5.081,
+      "text": "prob records records of Wills"
+    },
+    {
+      "start": 362.12,
+      "duration": 4.079,
+      "text": "settlements Guardians and curators right"
+    },
+    {
+      "start": 364.4,
+      "duration": 5.519,
+      "text": "like all of these different kinds of"
+    },
+    {
+      "start": 366.199,
+      "duration": 7.72,
+      "text": "records that make up the process of"
+    },
+    {
+      "start": 369.919,
+      "duration": 6.361,
+      "text": "probate excuse me so I can then see a"
+    },
+    {
+      "start": 373.919,
+      "duration": 5.081,
+      "text": "date range for every one of those"
+    },
+    {
+      "start": 376.28,
+      "duration": 5.4,
+      "text": "particular collections now it's really"
+    },
+    {
+      "start": 379.0,
+      "duration": 4.12,
+      "text": "tempting I know because I've done it to"
+    },
+    {
+      "start": 381.68,
+      "duration": 5.2,
+      "text": "just jump directly to the record of"
+    },
+    {
+      "start": 383.12,
+      "duration": 7.6,
+      "text": "Wills in this case it covers 1864 to"
+    },
+    {
+      "start": 386.88,
+      "duration": 5.439,
+      "text": "1925 for Christian County Missouri"
+    },
+    {
+      "start": 390.72,
+      "duration": 4.599,
+      "text": "it's really tempting to just jump right"
+    },
+    {
+      "start": 392.319,
+      "duration": 5.6,
+      "text": "into that particular book and to start"
+    },
+    {
+      "start": 395.319,
+      "duration": 4.361,
+      "text": "searching so I'm going to minimize my"
+    },
+    {
+      "start": 397.919,
+      "duration": 4.641,
+      "text": "source window I'm going to minimize my"
+    },
+    {
+      "start": 399.68,
+      "duration": 4.68,
+      "text": "film strip or maybe not maybe I'll use"
+    },
+    {
+      "start": 402.56,
+      "duration": 4.039,
+      "text": "my film strip here to jump to the first"
+    },
+    {
+      "start": 404.36,
+      "duration": 5.64,
+      "text": "page of actual"
+    },
+    {
+      "start": 406.599,
+      "duration": 6.241,
+      "text": "Wills then I will minimize my film strip"
+    },
+    {
+      "start": 410.0,
+      "duration": 4.4,
+      "text": "and now I can drag around this image"
+    },
+    {
+      "start": 412.84,
+      "duration": 4.44,
+      "text": "right and I can start reading through"
+    },
+    {
+      "start": 414.4,
+      "duration": 5.76,
+      "text": "these Wills now again super tempting to"
+    },
+    {
+      "start": 417.28,
+      "duration": 6.0,
+      "text": "do that but I would encourage you not to"
+    },
+    {
+      "start": 420.16,
+      "duration": 5.599,
+      "text": "do that I would encourage you to use"
+    },
+    {
+      "start": 423.28,
+      "duration": 6.0,
+      "text": "this information in the browse"
+    },
+    {
+      "start": 425.759,
+      "duration": 5.88,
+      "text": "structure to know what exists so that"
+    },
+    {
+      "start": 429.28,
+      "duration": 5.24,
+      "text": "you know what you're looking for I would"
+    },
+    {
+      "start": 431.639,
+      "duration": 4.84,
+      "text": "also encourage you to recognize that"
+    },
+    {
+      "start": 434.52,
+      "duration": 4.799,
+      "text": "just your your ancestor may or may not"
+    },
+    {
+      "start": 436.479,
+      "duration": 4.961,
+      "text": "have had a will but even if they didn't"
+    },
+    {
+      "start": 439.319,
+      "duration": 5.401,
+      "text": "have a will remember if they owned"
+    },
+    {
+      "start": 441.44,
+      "duration": 4.64,
+      "text": "anything at all any property of any kind"
+    },
+    {
+      "start": 444.72,
+      "duration": 2.64,
+      "text": "and you may think your ancestors were"
+    },
+    {
+      "start": 446.08,
+      "duration": 3.88,
+      "text": "just poor farmers and didn't own"
+    },
+    {
+      "start": 447.36,
+      "duration": 4.36,
+      "text": "anything but you might be surprised um"
+    },
+    {
+      "start": 449.96,
+      "duration": 4.959,
+      "text": "there might be other records there very"
+    },
+    {
+      "start": 451.72,
+      "duration": 5.52,
+      "text": "likely could be other records that give"
+    },
+    {
+      "start": 454.919,
+      "duration": 5.0,
+      "text": "you clues about their"
+    },
+    {
+      "start": 457.24,
+      "duration": 4.32,
+      "text": "estate um what all of these records are"
+    },
+    {
+      "start": 459.919,
+      "duration": 4.28,
+      "text": "I will give you some resources to look"
+    },
+    {
+      "start": 461.56,
+      "duration": 3.919,
+      "text": "those up or to to understand more about"
+    },
+    {
+      "start": 464.199,
+      "duration": 3.241,
+      "text": "those later right now I just want to"
+    },
+    {
+      "start": 465.479,
+      "duration": 4.361,
+      "text": "talk about searching the records but"
+    },
+    {
+      "start": 467.44,
+      "duration": 5.439,
+      "text": "just be aware that Wills are not the"
+    },
+    {
+      "start": 469.84,
+      "duration": 5.16,
+      "text": "only kind of Records included in Probate"
+    },
+    {
+      "start": 472.879,
+      "duration": 6.0,
+      "text": "and they're not the only useful records"
+    },
+    {
+      "start": 475.0,
+      "duration": 6.08,
+      "text": "included in Probate so Browse by County"
+    },
+    {
+      "start": 478.879,
+      "duration": 6.201,
+      "text": "to see what available for each"
+    },
+    {
+      "start": 481.08,
+      "duration": 7.839,
+      "text": "particular County at a record type and a"
+    },
+    {
+      "start": 485.08,
+      "duration": 6.36,
+      "text": "time frame level okay these are all"
+    },
+    {
+      "start": 488.919,
+      "duration": 5.641,
+      "text": "things as a as a genealogical researcher"
+    },
+    {
+      "start": 491.44,
+      "duration": 6.319,
+      "text": "that I do long before I ever start just"
+    },
+    {
+      "start": 494.56,
+      "duration": 5.24,
+      "text": "typing something into a search box um"
+    },
+    {
+      "start": 497.759,
+      "duration": 4.44,
+      "text": "there are ways to search and we're going"
+    },
+    {
+      "start": 499.8,
+      "duration": 5.44,
+      "text": "to talk about that but remember we want"
+    },
+    {
+      "start": 502.199,
+      "duration": 6.241,
+      "text": "to be researchers not just Searchers"
+    },
+    {
+      "start": 505.24,
+      "duration": 4.84,
+      "text": "Searchers very often get frustrated or"
+    },
+    {
+      "start": 508.44,
+      "duration": 3.56,
+      "text": "find something and don't if it's for the"
+    },
+    {
+      "start": 510.08,
+      "duration": 4.16,
+      "text": "right person or not or find something"
+    },
+    {
+      "start": 512.0,
+      "duration": 4.399,
+      "text": "and don't know if you don't know what"
+    },
+    {
+      "start": 514.24,
+      "duration": 5.84,
+      "text": "they're looking at or don't find"
+    },
+    {
+      "start": 516.399,
+      "duration": 5.601,
+      "text": "something and get frustrated so"
+    },
+    {
+      "start": 520.08,
+      "duration": 5.08,
+      "text": "researchers understand the records that"
+    },
+    {
+      "start": 522.0,
+      "duration": 6.2,
+      "text": "they're using understand the limitations"
+    },
+    {
+      "start": 525.16,
+      "duration": 5.96,
+      "text": "both of the records and of the databases"
+    },
+    {
+      "start": 528.2,
+      "duration": 4.6,
+      "text": "and of the search parameters and that"
+    },
+    {
+      "start": 531.12,
+      "duration": 4.08,
+      "text": "helps them to find exactly what they're"
+    },
+    {
+      "start": 532.8,
+      "duration": 5.159,
+      "text": "looking for and to know what to do with"
+    },
+    {
+      "start": 535.2,
+      "duration": 4.68,
+      "text": "that information once they found it so"
+    },
+    {
+      "start": 537.959,
+      "duration": 5.0,
+      "text": "become very familiar with those"
+    },
+    {
+      "start": 539.88,
+      "duration": 4.639,
+      "text": "databases before you dive into searching"
+    },
+    {
+      "start": 542.959,
+      "duration": 4.921,
+      "text": "now once you dive into searching I've"
+    },
+    {
+      "start": 544.519,
+      "duration": 5.801,
+      "text": "got some tips for you there as well I"
+    },
+    {
+      "start": 547.88,
+      "duration": 5.72,
+      "text": "would encourage you like I mentioned to"
+    },
+    {
+      "start": 550.32,
+      "duration": 5.48,
+      "text": "go to the specific database for the"
+    },
+    {
+      "start": 553.6,
+      "duration": 4.72,
+      "text": "specific state probate records that you"
+    },
+    {
+      "start": 555.8,
+      "duration": 5.24,
+      "text": "are interested in so rather than doing"
+    },
+    {
+      "start": 558.32,
+      "duration": 6.6,
+      "text": "what we call our Global search which you"
+    },
+    {
+      "start": 561.04,
+      "duration": 5.96,
+      "text": "can do it's it it works it just isn't as"
+    },
+    {
+      "start": 564.92,
+      "duration": 4.0,
+      "text": "efficient okay so you can come in here"
+    },
+    {
+      "start": 567.0,
+      "duration": 4.92,
+      "text": "and you can type in whatever into the"
+    },
+    {
+      "start": 568.92,
+      "duration": 6.12,
+      "text": "global search box but when you do that"
+    },
+    {
+      "start": 571.92,
+      "duration": 4.44,
+      "text": "you're searching all 16 billion records"
+    },
+    {
+      "start": 575.04,
+      "duration": 3.88,
+      "text": "available on"
+    },
+    {
+      "start": 576.36,
+      "duration": 4.159,
+      "text": "Ancestry and then you have to filter and"
+    },
+    {
+      "start": 578.92,
+      "duration": 3.76,
+      "text": "filter and filter and filter your way"
+    },
+    {
+      "start": 580.519,
+      "duration": 6.241,
+      "text": "down to a specific collection or a"
+    },
+    {
+      "start": 582.68,
+      "duration": 7.64,
+      "text": "specific subset of Records okay what I"
+    },
+    {
+      "start": 586.76,
+      "duration": 6.319,
+      "text": "want you to do is come into that card"
+    },
+    {
+      "start": 590.32,
+      "duration": 5.759,
+      "text": "catalog type in maybe the name of a"
+    },
+    {
+      "start": 593.079,
+      "duration": 5.0,
+      "text": "particular State let's do"
+    },
+    {
+      "start": 596.079,
+      "duration": 3.88,
+      "text": "California"
+    },
+    {
+      "start": 598.079,
+      "duration": 6.44,
+      "text": "probate and"
+    },
+    {
+      "start": 599.959,
+      "duration": 6.961,
+      "text": "and go directly to that specific"
+    },
+    {
+      "start": 604.519,
+      "duration": 4.641,
+      "text": "database one of the benefits of doing it"
+    },
+    {
+      "start": 606.92,
+      "duration": 5.039,
+      "text": "this way is that now you don't have to"
+    },
+    {
+      "start": 609.16,
+      "duration": 4.88,
+      "text": "type in a location because you're"
+    },
+    {
+      "start": 611.959,
+      "duration": 4.601,
+      "text": "already in the database for that"
+    },
+    {
+      "start": 614.04,
+      "duration": 4.64,
+      "text": "particular State okay hopefully that"
+    },
+    {
+      "start": 616.56,
+      "duration": 4.8,
+      "text": "makes sense to you now I can just start"
+    },
+    {
+      "start": 618.68,
+      "duration": 5.56,
+      "text": "searching by surnames I can start"
+    },
+    {
+      "start": 621.36,
+      "duration": 5.12,
+      "text": "searching by specific counties but I"
+    },
+    {
+      "start": 624.24,
+      "duration": 4.36,
+      "text": "won't have to worry about filtering out"
+    },
+    {
+      "start": 626.48,
+      "duration": 4.76,
+      "text": "anything that doesn't belong to the"
+    },
+    {
+      "start": 628.6,
+      "duration": 5.16,
+      "text": "state of California"
+    },
+    {
+      "start": 631.24,
+      "duration": 5.24,
+      "text": "California another benefit is when"
+    },
+    {
+      "start": 633.76,
+      "duration": 6.519,
+      "text": "you're in a specific State database you"
+    },
+    {
+      "start": 636.48,
+      "duration": 6.56,
+      "text": "can put less information into the search"
+    },
+    {
+      "start": 640.279,
+      "duration": 4.881,
+      "text": "box and here's what one of the reasons"
+    },
+    {
+      "start": 643.04,
+      "duration": 4.76,
+      "text": "why that might be important I'm going to"
+    },
+    {
+      "start": 645.16,
+      "duration": 4.239,
+      "text": "put in um just but into the keyword"
+    },
+    {
+      "start": 647.8,
+      "duration": 4.52,
+      "text": "field there that but is one of the"
+    },
+    {
+      "start": 649.399,
+      "duration": 4.041,
+      "text": "counties in the state of California and"
+    },
+    {
+      "start": 652.32,
+      "duration": 2.759,
+      "text": "one of the things you'll notice is that"
+    },
+    {
+      "start": 653.44,
+      "duration": 4.32,
+      "text": "we've got 5,000 I just that's the only"
+    },
+    {
+      "start": 655.079,
+      "duration": 4.76,
+      "text": "thing I searched for is just but any"
+    },
+    {
+      "start": 657.76,
+      "duration": 4.319,
+      "text": "record that contains that word"
+    },
+    {
+      "start": 659.839,
+      "duration": 5.8,
+      "text": "so this database contains"
+    },
+    {
+      "start": 662.079,
+      "duration": 6.921,
+      "text": "5,261 records that have that word that"
+    },
+    {
+      "start": 665.639,
+      "duration": 6.161,
+      "text": "keyword in somewhere in the record or in"
+    },
+    {
+      "start": 669.0,
+      "duration": 4.72,
+      "text": "the index of that record and there's a"
+    },
+    {
+      "start": 671.8,
+      "duration": 5.32,
+      "text": "couple of things I want you to notice"
+    },
+    {
+      "start": 673.72,
+      "duration": 6.119,
+      "text": "one is that some of these"
+    },
+    {
+      "start": 677.12,
+      "duration": 4.92,
+      "text": "records a record exists but there's no"
+    },
+    {
+      "start": 679.839,
+      "duration": 4.44,
+      "text": "name that's been indexed and it's"
+    },
+    {
+      "start": 682.04,
+      "duration": 5.16,
+      "text": "because either the name wasn't"
+    },
+    {
+      "start": 684.279,
+      "duration": 5.521,
+      "text": "legible or the name wasn't where it was"
+    },
+    {
+      "start": 687.2,
+      "duration": 5.079,
+      "text": "expected to be okay lot of different"
+    },
+    {
+      "start": 689.8,
+      "duration": 6.92,
+      "text": "reasons and so there are some records"
+    },
+    {
+      "start": 692.279,
+      "duration": 7.68,
+      "text": "that exist that have not yet been name"
+    },
+    {
+      "start": 696.72,
+      "duration": 5.559,
+      "text": "indexed and so searching by location"
+    },
+    {
+      "start": 699.959,
+      "duration": 4.0,
+      "text": "might help you find those records"
+    },
+    {
+      "start": 702.279,
+      "duration": 4.481,
+      "text": "another thing you might notice let's see"
+    },
+    {
+      "start": 703.959,
+      "duration": 5.281,
+      "text": "let me remove but and type in just a"
+    },
+    {
+      "start": 706.76,
+      "duration": 5.48,
+      "text": "surname that I know is a very common"
+    },
+    {
+      "start": 709.24,
+      "duration": 4.8,
+      "text": "surname and again my objective is just"
+    },
+    {
+      "start": 712.24,
+      "duration": 3.839,
+      "text": "to try to find out how the records are"
+    },
+    {
+      "start": 714.04,
+      "duration": 4.16,
+      "text": "organized and what kind of information"
+    },
+    {
+      "start": 716.079,
+      "duration": 3.401,
+      "text": "is going to come up when I do a search"
+    },
+    {
+      "start": 718.2,
+      "duration": 3.879,
+      "text": "so in this case I just put put in the"
+    },
+    {
+      "start": 719.48,
+      "duration": 5.359,
+      "text": "surname Smith into the California wheels"
+    },
+    {
+      "start": 722.079,
+      "duration": 4.44,
+      "text": "and probates Records database"
+    },
+    {
+      "start": 724.839,
+      "duration": 4.56,
+      "text": "specifically and you're going to notice"
+    },
+    {
+      "start": 726.519,
+      "duration": 5.241,
+      "text": "there's 1,75 records that came up and as"
+    },
+    {
+      "start": 729.399,
+      "duration": 5.281,
+      "text": "I scroll through them there are a few"
+    },
+    {
+      "start": 731.76,
+      "duration": 5.439,
+      "text": "things that I notice one for example I"
+    },
+    {
+      "start": 734.68,
+      "duration": 3.76,
+      "text": "have someone who has a surname but no"
+    },
+    {
+      "start": 737.199,
+      "duration": 3.76,
+      "text": "given name"
+    },
+    {
+      "start": 738.44,
+      "duration": 4.839,
+      "text": "listed again that could be because the"
+    },
+    {
+      "start": 740.959,
+      "duration": 4.041,
+      "text": "given name wasn't actually on the record"
+    },
+    {
+      "start": 743.279,
+      "duration": 4.12,
+      "text": "it could be because it was illegible on"
+    },
+    {
+      "start": 745.0,
+      "duration": 4.36,
+      "text": "the record whatever the case may be um"
+    },
+    {
+      "start": 747.399,
+      "duration": 3.921,
+      "text": "but I do have a county and that might"
+    },
+    {
+      "start": 749.36,
+      "duration": 4.68,
+      "text": "get me a little closer to the records"
+    },
+    {
+      "start": 751.32,
+      "duration": 5.48,
+      "text": "I'm looking for here's a record where"
+    },
+    {
+      "start": 754.04,
+      "duration": 6.12,
+      "text": "the the person is recorded as Mrs Smith"
+    },
+    {
+      "start": 756.8,
+      "duration": 5.32,
+      "text": "so again no given name is listed there"
+    },
+    {
+      "start": 760.16,
+      "duration": 4.56,
+      "text": "are occasions where you'll go through"
+    },
+    {
+      "start": 762.12,
+      "duration": 4.76,
+      "text": "and you'll find that only initials are"
+    },
+    {
+      "start": 764.72,
+      "duration": 5.0,
+      "text": "recorded so here in this case this"
+    },
+    {
+      "start": 766.88,
+      "duration": 5.319,
+      "text": "person is recorded as CD Smith or CL L"
+    },
+    {
+      "start": 769.72,
+      "duration": 4.239,
+      "text": "Smith whatever the case may be and so"
+    },
+    {
+      "start": 772.199,
+      "duration": 5.2,
+      "text": "surname only"
+    },
+    {
+      "start": 773.959,
+      "duration": 5.88,
+      "text": "searches might yield information that I"
+    },
+    {
+      "start": 777.399,
+      "duration": 4.721,
+      "text": "wouldn't find otherwise"
+    },
+    {
+      "start": 779.839,
+      "duration": 5.68,
+      "text": "now that's going to be really beneficial"
+    },
+    {
+      "start": 782.12,
+      "duration": 6.04,
+      "text": "to me as a researcher if I am doing"
+    },
+    {
+      "start": 785.519,
+      "duration": 4.281,
+      "text": "searches now for specifically for"
+    },
+    {
+      "start": 788.16,
+      "duration": 3.44,
+      "text": "records that I'm interested in so I'm"
+    },
+    {
+      "start": 789.8,
+      "duration": 5.039,
+      "text": "going to come in here to the Arkansas"
+    },
+    {
+      "start": 791.6,
+      "duration": 6.64,
+      "text": "wills and probates record um database"
+    },
+    {
+      "start": 794.839,
+      "duration": 6.761,
+      "text": "and combine those two very specific"
+    },
+    {
+      "start": 798.24,
+      "duration": 6.44,
+      "text": "searches so I'm looking for my family"
+    },
+    {
+      "start": 801.6,
+      "duration": 5.76,
+      "text": "that is in um Arkansas the last name is"
+    },
+    {
+      "start": 804.68,
+      "duration": 5.68,
+      "text": "Lawrence and they were living in"
+    },
+    {
+      "start": 807.36,
+      "duration": 5.12,
+      "text": "Washington County in fville um in that"
+    },
+    {
+      "start": 810.36,
+      "duration": 4.279,
+      "text": "area in Arkansas and so I'm going to put"
+    },
+    {
+      "start": 812.48,
+      "duration": 5.24,
+      "text": "in those two things and click search and"
+    },
+    {
+      "start": 814.639,
+      "duration": 5.241,
+      "text": "you'll notice I get two records here"
+    },
+    {
+      "start": 817.72,
+      "duration": 4.96,
+      "text": "that that are from that particular area"
+    },
+    {
+      "start": 819.88,
+      "duration": 3.959,
+      "text": "with that particular surname and I'm I"
+    },
+    {
+      "start": 822.68,
+      "duration": 3.68,
+      "text": "know I've looked at this record for"
+    },
+    {
+      "start": 823.839,
+      "duration": 3.961,
+      "text": "George Lawrence I am related to him um I"
+    },
+    {
+      "start": 826.36,
+      "duration": 3.8,
+      "text": "have not yet looked at this record for"
+    },
+    {
+      "start": 827.8,
+      "duration": 5.76,
+      "text": "ML Lawrence so I'm not even sure yet who"
+    },
+    {
+      "start": 830.16,
+      "duration": 5.599,
+      "text": "it is could be a man could be a woman um"
+    },
+    {
+      "start": 833.56,
+      "duration": 4.32,
+      "text": "it's probably going to be a cousin of"
+    },
+    {
+      "start": 835.759,
+      "duration": 5.241,
+      "text": "some sort since I'm related to most of"
+    },
+    {
+      "start": 837.88,
+      "duration": 5.879,
+      "text": "Northwest Arkansas but that doing the"
+    },
+    {
+      "start": 841.0,
+      "duration": 5.839,
+      "text": "database specific searches allows me to"
+    },
+    {
+      "start": 843.759,
+      "duration": 6.88,
+      "text": "put in less information and still get"
+    },
+    {
+      "start": 846.839,
+      "duration": 5.481,
+      "text": "very specific search results and almost"
+    },
+    {
+      "start": 850.639,
+      "duration": 3.76,
+      "text": "always it ensures that I don't miss"
+    },
+    {
+      "start": 852.32,
+      "duration": 5.759,
+      "text": "anything that I might have missed doing"
+    },
+    {
+      "start": 854.399,
+      "duration": 6.0,
+      "text": "the search in a different way so we come"
+    },
+    {
+      "start": 858.079,
+      "duration": 4.241,
+      "text": "back over here um search those specific"
+    },
+    {
+      "start": 860.399,
+      "duration": 4.041,
+      "text": "State databases try those surname only"
+    },
+    {
+      "start": 862.32,
+      "duration": 7.04,
+      "text": "searches and then you'll notice one of"
+    },
+    {
+      "start": 864.44,
+      "duration": 7.44,
+      "text": "the things I did was I used the keyword"
+    },
+    {
+      "start": 869.36,
+      "duration": 4.76,
+      "text": "field um in order to put in the name of"
+    },
+    {
+      "start": 871.88,
+      "duration": 4.759,
+      "text": "the county now there is another way I"
+    },
+    {
+      "start": 874.12,
+      "duration": 5.12,
+      "text": "could have done it I could have come in"
+    },
+    {
+      "start": 876.639,
+      "duration": 6.481,
+      "text": "here to what's called this any event"
+    },
+    {
+      "start": 879.24,
+      "duration": 7.399,
+      "text": "field so uh ancestry has basic life"
+    },
+    {
+      "start": 883.12,
+      "duration": 7.12,
+      "text": "vital event search Fields birth marriage"
+    },
+    {
+      "start": 886.639,
+      "duration": 6.081,
+      "text": "death um however probate a probate"
+    },
+    {
+      "start": 890.24,
+      "duration": 5.68,
+      "text": "location and a probate"
+    },
+    {
+      "start": 892.72,
+      "duration": 6.919,
+      "text": "date um those are a different kind of"
+    },
+    {
+      "start": 895.92,
+      "duration": 6.56,
+      "text": "event and while it gives us information"
+    },
+    {
+      "start": 899.639,
+      "duration": 5.081,
+      "text": "about the person's death it is not a"
+    },
+    {
+      "start": 902.48,
+      "duration": 4.4,
+      "text": "direct piece of evidence about that"
+    },
+    {
+      "start": 904.72,
+      "duration": 5.32,
+      "text": "person's death it's an indirect piece of"
+    },
+    {
+      "start": 906.88,
+      "duration": 6.8,
+      "text": "evidence here's what I mean by that I"
+    },
+    {
+      "start": 910.04,
+      "duration": 7.68,
+      "text": "could have a probate record uh from"
+    },
+    {
+      "start": 913.68,
+      "duration": 8.48,
+      "text": "1907 and I do in Salt Lake Salt Lake"
+    },
+    {
+      "start": 917.72,
+      "duration": 6.919,
+      "text": "County Utah okay and that gives me some"
+    },
+    {
+      "start": 922.16,
+      "duration": 5.32,
+      "text": "idea that the person was dead by"
+    },
+    {
+      "start": 924.639,
+      "duration": 6.241,
+      "text": "1907 and might have been from the state"
+    },
+    {
+      "start": 927.48,
+      "duration": 5.76,
+      "text": "of Utah since the they've got property"
+    },
+    {
+      "start": 930.88,
+      "duration": 5.04,
+      "text": "or possessions being probated out of"
+    },
+    {
+      "start": 933.24,
+      "duration": 5.399,
+      "text": "Salt Lake County now the reality of the"
+    },
+    {
+      "start": 935.92,
+      "duration": 6.8,
+      "text": "fact in that specific case is that the"
+    },
+    {
+      "start": 938.639,
+      "duration": 7.801,
+      "text": "man died in 1897 so 10 years earlier and"
+    },
+    {
+      "start": 942.72,
+      "duration": 6.08,
+      "text": "he died in Utah County about 40 mil"
+    },
+    {
+      "start": 946.44,
+      "duration": 5.0,
+      "text": "south of where his his property was"
+    },
+    {
+      "start": 948.8,
+      "duration": 4.12,
+      "text": "being probated and so that's important"
+    },
+    {
+      "start": 951.44,
+      "duration": 7.24,
+      "text": "to remember as"
+    },
+    {
+      "start": 952.92,
+      "duration": 7.2,
+      "text": "well because um because he died in Utah"
+    },
+    {
+      "start": 958.68,
+      "duration": 4.8,
+      "text": "and he died before"
+    },
+    {
+      "start": 960.12,
+      "duration": 6.24,
+      "text": "1907 but I might have inferred a death"
+    },
+    {
+      "start": 963.48,
+      "duration": 5.4,
+      "text": "date and a death place a lot more a lot"
+    },
+    {
+      "start": 966.36,
+      "duration": 5.0,
+      "text": "more closely to the place and time in"
+    },
+    {
+      "start": 968.88,
+      "duration": 6.6,
+      "text": "which he died so we're not going to make"
+    },
+    {
+      "start": 971.36,
+      "duration": 6.64,
+      "text": "those probate dates and places um"
+    },
+    {
+      "start": 975.48,
+      "duration": 4.039,
+      "text": "synonymous with a death date in place"
+    },
+    {
+      "start": 978.0,
+      "duration": 4.68,
+      "text": "which means if you put the death date"
+    },
+    {
+      "start": 979.519,
+      "duration": 6.12,
+      "text": "and death Place into your search form"
+    },
+    {
+      "start": 982.68,
+      "duration": 5.719,
+      "text": "and you mark it exact you might not get"
+    },
+    {
+      "start": 985.639,
+      "duration": 5.88,
+      "text": "the results You're Expecting so I would"
+    },
+    {
+      "start": 988.399,
+      "duration": 5.761,
+      "text": "encourage you to use the any field or"
+    },
+    {
+      "start": 991.519,
+      "duration": 5.88,
+      "text": "the keyword field specifically if you're"
+    },
+    {
+      "start": 994.16,
+      "duration": 5.799,
+      "text": "going to put in that state okay so"
+    },
+    {
+      "start": 997.399,
+      "duration": 5.521,
+      "text": "remember um when you start typing"
+    },
+    {
+      "start": 999.959,
+      "duration": 5.921,
+      "text": "locations any locations in ancestry you"
+    },
+    {
+      "start": 1002.92,
+      "duration": 4.52,
+      "text": "get a type a head list always select"
+    },
+    {
+      "start": 1005.88,
+      "duration": 4.48,
+      "text": "from that type of head list where you"
+    },
+    {
+      "start": 1007.44,
+      "duration": 5.24,
+      "text": "can remember these are county level"
+    },
+    {
+      "start": 1010.36,
+      "duration": 4.719,
+      "text": "records so even though I know they lived"
+    },
+    {
+      "start": 1012.68,
+      "duration": 4.719,
+      "text": "in fville I'm not going to put that in"
+    },
+    {
+      "start": 1015.079,
+      "duration": 5.161,
+      "text": "the location field because none of these"
+    },
+    {
+      "start": 1017.399,
+      "duration": 4.721,
+      "text": "records have been in indexed at the city"
+    },
+    {
+      "start": 1020.24,
+      "duration": 3.56,
+      "text": "level they've all been indexed at the"
+    },
+    {
+      "start": 1022.12,
+      "duration": 3.64,
+      "text": "county level so I'm going to put in the"
+    },
+    {
+      "start": 1023.8,
+      "duration": 3.6,
+      "text": "name of the county where they lived I'm"
+    },
+    {
+      "start": 1025.76,
+      "duration": 4.72,
+      "text": "going to select it from that type of"
+    },
+    {
+      "start": 1027.4,
+      "duration": 6.2,
+      "text": "head list and I'm going to mark that"
+    },
+    {
+      "start": 1030.48,
+      "duration": 5.0,
+      "text": "exact and then I can do my search and"
+    },
+    {
+      "start": 1033.6,
+      "duration": 6.28,
+      "text": "I'll see here that I"
+    },
+    {
+      "start": 1035.48,
+      "duration": 8.559,
+      "text": "get 2300 some OD records out of that"
+    },
+    {
+      "start": 1039.88,
+      "duration": 7.76,
+      "text": "particular County okay so again for"
+    },
+    {
+      "start": 1044.039,
+      "duration": 6.241,
+      "text": "location based searches in the probate"
+    },
+    {
+      "start": 1047.64,
+      "duration": 6.6,
+      "text": "collection you use the database specific"
+    },
+    {
+      "start": 1050.28,
+      "duration": 6.6,
+      "text": "to the state and then use the any field"
+    },
+    {
+      "start": 1054.24,
+      "duration": 4.96,
+      "text": "to type in the name of the county select"
+    },
+    {
+      "start": 1056.88,
+      "duration": 4.56,
+      "text": "it from the type ahead and Mark it exact"
+    },
+    {
+      "start": 1059.2,
+      "duration": 5.479,
+      "text": "or just type in the name of the"
+    },
+    {
+      "start": 1061.44,
+      "duration": 5.599,
+      "text": "County and in the keyword field and Mark"
+    },
+    {
+      "start": 1064.679,
+      "duration": 5.081,
+      "text": "that exact those are your options for"
+    },
+    {
+      "start": 1067.039,
+      "duration": 4.041,
+      "text": "narrowing those search results by a"
+    },
+    {
+      "start": 1069.76,
+      "duration": 3.52,
+      "text": "specific"
+    },
+    {
+      "start": 1071.08,
+      "duration": 4.88,
+      "text": "location now let's talk about the last"
+    },
+    {
+      "start": 1073.28,
+      "duration": 4.84,
+      "text": "few tips here these are research tips so"
+    },
+    {
+      "start": 1075.96,
+      "duration": 3.839,
+      "text": "we've talked about database tips we've"
+    },
+    {
+      "start": 1078.12,
+      "duration": 4.72,
+      "text": "talked about search tips now we're"
+    },
+    {
+      "start": 1079.799,
+      "duration": 4.441,
+      "text": "talking about research tips um I"
+    },
+    {
+      "start": 1082.84,
+      "duration": 3.88,
+      "text": "mentioned this briefly in my last"
+    },
+    {
+      "start": 1084.24,
+      "duration": 5.84,
+      "text": "example hopefully you caught it some"
+    },
+    {
+      "start": 1086.72,
+      "duration": 7.04,
+      "text": "Estates were in Probate for years after"
+    },
+    {
+      "start": 1090.08,
+      "duration": 6.28,
+      "text": "a person's death so keep in mind that a"
+    },
+    {
+      "start": 1093.76,
+      "duration": 5.12,
+      "text": "will may have been written the will the"
+    },
+    {
+      "start": 1096.36,
+      "duration": 4.52,
+      "text": "will was written if if it exists before"
+    },
+    {
+      "start": 1098.88,
+      "duration": 4.32,
+      "text": "the person died it could have been"
+    },
+    {
+      "start": 1100.88,
+      "duration": 3.84,
+      "text": "written two days before the person died"
+    },
+    {
+      "start": 1103.2,
+      "duration": 5.28,
+      "text": "or it could have been written 20 years"
+    },
+    {
+      "start": 1104.72,
+      "duration": 6.48,
+      "text": "before the person died so the will date"
+    },
+    {
+      "start": 1108.48,
+      "duration": 6.8,
+      "text": "is a pre-death"
+    },
+    {
+      "start": 1111.2,
+      "duration": 5.92,
+      "text": "date then a will is probated and when a"
+    },
+    {
+      "start": 1115.28,
+      "duration": 4.56,
+      "text": "will is delivered to the court to be"
+    },
+    {
+      "start": 1117.12,
+      "duration": 6.2,
+      "text": "probated there's a date but then that"
+    },
+    {
+      "start": 1119.84,
+      "duration": 5.12,
+      "text": "could go on for years and the the"
+    },
+    {
+      "start": 1123.32,
+      "duration": 4.359,
+      "text": "different circumstances I mean and"
+    },
+    {
+      "start": 1124.96,
+      "duration": 4.0,
+      "text": "there's a variety of circumstances but"
+    },
+    {
+      "start": 1127.679,
+      "duration": 3.36,
+      "text": "uh it could be that there was some kind"
+    },
+    {
+      "start": 1128.96,
+      "duration": 3.599,
+      "text": "of a contesting of the will it could be"
+    },
+    {
+      "start": 1131.039,
+      "duration": 3.721,
+      "text": "that the executiv weren't doing their"
+    },
+    {
+      "start": 1132.559,
+      "duration": 4.0,
+      "text": "job it could be that there were minor"
+    },
+    {
+      "start": 1134.76,
+      "duration": 4.56,
+      "text": "children involved and that some"
+    },
+    {
+      "start": 1136.559,
+      "duration": 5.24,
+      "text": "provision in the will kept that Pro open"
+    },
+    {
+      "start": 1139.32,
+      "duration": 5.56,
+      "text": "until those children became adults it"
+    },
+    {
+      "start": 1141.799,
+      "duration": 4.961,
+      "text": "could be like in the case of my third"
+    },
+    {
+      "start": 1144.88,
+      "duration": 3.84,
+      "text": "great-grandfather um there was some"
+    },
+    {
+      "start": 1146.76,
+      "duration": 5.44,
+      "text": "property discovered years after probate"
+    },
+    {
+      "start": 1148.72,
+      "duration": 5.68,
+      "text": "closed on his original will and estate"
+    },
+    {
+      "start": 1152.2,
+      "duration": 3.76,
+      "text": "there was a piece of property discovered"
+    },
+    {
+      "start": 1154.4,
+      "duration": 4.639,
+      "text": "that he still owned or that he still"
+    },
+    {
+      "start": 1155.96,
+      "duration": 5.36,
+      "text": "held the title to in Salt Lake County"
+    },
+    {
+      "start": 1159.039,
+      "duration": 5.561,
+      "text": "and they had to the estate or the"
+    },
+    {
+      "start": 1161.32,
+      "duration": 4.839,
+      "text": "children had to dispose of that sell it"
+    },
+    {
+      "start": 1164.6,
+      "duration": 4.24,
+      "text": "and then a determination had to be made"
+    },
+    {
+      "start": 1166.159,
+      "duration": 6.241,
+      "text": "by the court about how to divide the"
+    },
+    {
+      "start": 1168.84,
+      "duration": 5.959,
+      "text": "proceeds from that particular sale so"
+    },
+    {
+      "start": 1172.4,
+      "duration": 4.519,
+      "text": "lots of different reasons why records"
+    },
+    {
+      "start": 1174.799,
+      "duration": 4.36,
+      "text": "might exist for years after a person's"
+    },
+    {
+      "start": 1176.919,
+      "duration": 4.0,
+      "text": "death but in this particular collection"
+    },
+    {
+      "start": 1179.159,
+      "duration": 3.88,
+      "text": "you're going to see that more and more"
+    },
+    {
+      "start": 1180.919,
+      "duration": 5.041,
+      "text": "often so don't just assume because you"
+    },
+    {
+      "start": 1183.039,
+      "duration": 6.52,
+      "text": "know they died in 1894 that the probate"
+    },
+    {
+      "start": 1185.96,
+      "duration": 5.079,
+      "text": "should be in 1895 or 1896 and be done"
+    },
+    {
+      "start": 1189.559,
+      "duration": 4.841,
+      "text": "keep keep a little bit of an open mind"
+    },
+    {
+      "start": 1191.039,
+      "duration": 6.201,
+      "text": "about that another thing to be aware of"
+    },
+    {
+      "start": 1194.4,
+      "duration": 5.279,
+      "text": "is that women had probate records too"
+    },
+    {
+      "start": 1197.24,
+      "duration": 5.36,
+      "text": "every state had had different laws"
+    },
+    {
+      "start": 1199.679,
+      "duration": 6.401,
+      "text": "throughout time about women's property"
+    },
+    {
+      "start": 1202.6,
+      "duration": 5.84,
+      "text": "rights um and those laws varied based on"
+    },
+    {
+      "start": 1206.08,
+      "duration": 3.88,
+      "text": "a lot of different things um were they"
+    },
+    {
+      "start": 1208.44,
+      "duration": 3.719,
+      "text": "single were they married were they"
+    },
+    {
+      "start": 1209.96,
+      "duration": 5.0,
+      "text": "widowed were they divorced did they own"
+    },
+    {
+      "start": 1212.159,
+      "duration": 4.681,
+      "text": "the property before they got married um"
+    },
+    {
+      "start": 1214.96,
+      "duration": 3.68,
+      "text": "was the property given to them by a"
+    },
+    {
+      "start": 1216.84,
+      "duration": 4.44,
+      "text": "parent with a provision that their"
+    },
+    {
+      "start": 1218.64,
+      "duration": 5.159,
+      "text": "husband could not take ownership in lots"
+    },
+    {
+      "start": 1221.28,
+      "duration": 5.2,
+      "text": "of different ways again that that"
+    },
+    {
+      "start": 1223.799,
+      "duration": 5.441,
+      "text": "happens and the laws all differ by place"
+    },
+    {
+      "start": 1226.48,
+      "duration": 5.04,
+      "text": "and time but just don't just be looking"
+    },
+    {
+      "start": 1229.24,
+      "duration": 3.72,
+      "text": "for your male relatives I will give you"
+    },
+    {
+      "start": 1231.52,
+      "duration": 3.24,
+      "text": "one example and you can read more about"
+    },
+    {
+      "start": 1232.96,
+      "duration": 5.599,
+      "text": "it on the ancestry blog here in a couple"
+    },
+    {
+      "start": 1234.76,
+      "duration": 6.84,
+      "text": "of days um I have a great great"
+    },
+    {
+      "start": 1238.559,
+      "duration": 7.12,
+      "text": "grandmother maybe three times great who"
+    },
+    {
+      "start": 1241.6,
+      "duration": 6.28,
+      "text": "um she was married and had a child and"
+    },
+    {
+      "start": 1245.679,
+      "duration": 5.561,
+      "text": "her husband died while serving in the"
+    },
+    {
+      "start": 1247.88,
+      "duration": 5.919,
+      "text": "Civil War and she petitioned for some"
+    },
+    {
+      "start": 1251.24,
+      "duration": 5.2,
+      "text": "land that he had been entitled to"
+    },
+    {
+      "start": 1253.799,
+      "duration": 5.841,
+      "text": "because of his service and she got that"
+    },
+    {
+      "start": 1256.44,
+      "duration": 4.92,
+      "text": "land she subsequently REM married had"
+    },
+    {
+      "start": 1259.64,
+      "duration": 2.68,
+      "text": "seven or eight more children one of whom"
+    },
+    {
+      "start": 1261.36,
+      "duration": 4.36,
+      "text": "is my"
+    },
+    {
+      "start": 1262.32,
+      "duration": 7.16,
+      "text": "great-grandmother and And yet when she"
+    },
+    {
+      "start": 1265.72,
+      "duration": 7.079,
+      "text": "married her second husband did not take"
+    },
+    {
+      "start": 1269.48,
+      "duration": 5.84,
+      "text": "possession of the land that she had"
+    },
+    {
+      "start": 1272.799,
+      "duration": 4.081,
+      "text": "received due to her first husband's"
+    },
+    {
+      "start": 1275.32,
+      "duration": 4.959,
+      "text": "Civil War"
+    },
+    {
+      "start": 1276.88,
+      "duration": 5.0,
+      "text": "service so um they both wrote wills at"
+    },
+    {
+      "start": 1280.279,
+      "duration": 3.52,
+      "text": "the same time they're dated at the same"
+    },
+    {
+      "start": 1281.88,
+      "duration": 3.76,
+      "text": "time they were probated I think about"
+    },
+    {
+      "start": 1283.799,
+      "duration": 3.641,
+      "text": "eight or nine months apart they died"
+    },
+    {
+      "start": 1285.64,
+      "duration": 4.519,
+      "text": "very close together my great great"
+    },
+    {
+      "start": 1287.44,
+      "duration": 5.719,
+      "text": "grandparents but um there is a will for"
+    },
+    {
+      "start": 1290.159,
+      "duration": 4.801,
+      "text": "him that lists all of their all of their"
+    },
+    {
+      "start": 1293.159,
+      "duration": 4.681,
+      "text": "possessions and property and then there"
+    },
+    {
+      "start": 1294.96,
+      "duration": 5.52,
+      "text": "is also a will for her that lists just"
+    },
+    {
+      "start": 1297.84,
+      "duration": 5.56,
+      "text": "this one solitary little piece of"
+    },
+    {
+      "start": 1300.48,
+      "duration": 5.439,
+      "text": "property and it's interesting to compare"
+    },
+    {
+      "start": 1303.4,
+      "duration": 4.96,
+      "text": "the two wheels side by side and to see"
+    },
+    {
+      "start": 1305.919,
+      "duration": 4.36,
+      "text": "how they dealt with their children um"
+    },
+    {
+      "start": 1308.36,
+      "duration": 4.6,
+      "text": "you can definitely tell that there was a"
+    },
+    {
+      "start": 1310.279,
+      "duration": 6.121,
+      "text": "favored daughter between both of them"
+    },
+    {
+      "start": 1312.96,
+      "duration": 6.24,
+      "text": "and then you can also um see in her"
+    },
+    {
+      "start": 1316.4,
+      "duration": 5.24,
+      "text": "probate record she leaves some of that"
+    },
+    {
+      "start": 1319.2,
+      "duration": 4.839,
+      "text": "property to her oldest son who was the"
+    },
+    {
+      "start": 1321.64,
+      "duration": 4.08,
+      "text": "product of that first marriage and her"
+    },
+    {
+      "start": 1324.039,
+      "duration": 4.24,
+      "text": "second husband even though he raised"
+    },
+    {
+      "start": 1325.72,
+      "duration": 5.48,
+      "text": "that boy from a child did not leave any"
+    },
+    {
+      "start": 1328.279,
+      "duration": 4.961,
+      "text": "property to that son so interest just"
+    },
+    {
+      "start": 1331.2,
+      "duration": 4.8,
+      "text": "interesting um when you start to not"
+    },
+    {
+      "start": 1333.24,
+      "duration": 6.679,
+      "text": "only find these records but compare"
+    },
+    {
+      "start": 1336.0,
+      "duration": 6.919,
+      "text": "these records as well okay last uh tip"
+    },
+    {
+      "start": 1339.919,
+      "duration": 6.0,
+      "text": "about research uh make sure that when"
+    },
+    {
+      "start": 1342.919,
+      "duration": 6.161,
+      "text": "you come across an entry that looks like"
+    },
+    {
+      "start": 1345.919,
+      "duration": 4.921,
+      "text": "it is only an index and I've seen this"
+    },
+    {
+      "start": 1349.08,
+      "duration": 4.199,
+      "text": "and I've seen some of you on the message"
+    },
+    {
+      "start": 1350.84,
+      "duration": 5.64,
+      "text": "boards and in our social media talking"
+    },
+    {
+      "start": 1353.279,
+      "duration": 5.241,
+      "text": "about this when you come across a record"
+    },
+    {
+      "start": 1356.48,
+      "duration": 3.88,
+      "text": "that looks like it's just an index okay"
+    },
+    {
+      "start": 1358.52,
+      "duration": 4.36,
+      "text": "so you go to the original image and it"
+    },
+    {
+      "start": 1360.36,
+      "duration": 5.64,
+      "text": "just lists a name and a page number"
+    },
+    {
+      "start": 1362.88,
+      "duration": 5.44,
+      "text": "typically it could just be that that was"
+    },
+    {
+      "start": 1366.0,
+      "duration": 3.96,
+      "text": "the only record indexed in that"
+    },
+    {
+      "start": 1368.32,
+      "duration": 3.479,
+      "text": "particular collection because it was an"
+    },
+    {
+      "start": 1369.96,
+      "duration": 5.92,
+      "text": "index and it was easy to"
+    },
+    {
+      "start": 1371.799,
+      "duration": 6.841,
+      "text": "index the original record may still also"
+    },
+    {
+      "start": 1375.88,
+      "duration": 4.88,
+      "text": "exist on Ancestry"
+    },
+    {
+      "start": 1378.64,
+      "duration": 4.88,
+      "text": "so remember we talked about that browse"
+    },
+    {
+      "start": 1380.76,
+      "duration": 6.36,
+      "text": "structure you have to go back into that"
+    },
+    {
+      "start": 1383.52,
+      "duration": 5.2,
+      "text": "browse structure and you have to select"
+    },
+    {
+      "start": 1387.12,
+      "duration": 3.48,
+      "text": "the type of record that you're looking"
+    },
+    {
+      "start": 1388.72,
+      "duration": 5.959,
+      "text": "for so for example if you're looking at"
+    },
+    {
+      "start": 1390.6,
+      "duration": 5.72,
+      "text": "an index to um Wills then I you know and"
+    },
+    {
+      "start": 1394.679,
+      "duration": 4.441,
+      "text": "you know that it's for a particular year"
+    },
+    {
+      "start": 1396.32,
+      "duration": 6.56,
+      "text": "range or it has a volume number as part"
+    },
+    {
+      "start": 1399.12,
+      "duration": 7.08,
+      "text": "of that index you can come in here to"
+    },
+    {
+      "start": 1402.88,
+      "duration": 7.76,
+      "text": "this specific collection or set of"
+    },
+    {
+      "start": 1406.2,
+      "duration": 7.2,
+      "text": "records and I'm going to to minimize my"
+    },
+    {
+      "start": 1410.64,
+      "duration": 5.56,
+      "text": "extra screens here so that I can just"
+    },
+    {
+      "start": 1413.4,
+      "duration": 6.159,
+      "text": "jump to the images that I need and then"
+    },
+    {
+      "start": 1416.2,
+      "duration": 6.56,
+      "text": "you can use this film strip down here to"
+    },
+    {
+      "start": 1419.559,
+      "duration": 6.761,
+      "text": "jump to a particular page now keep in"
+    },
+    {
+      "start": 1422.76,
+      "duration": 5.96,
+      "text": "mind this this is an index page here is"
+    },
+    {
+      "start": 1426.32,
+      "duration": 5.68,
+      "text": "an example of an index page I've got"
+    },
+    {
+      "start": 1428.72,
+      "duration": 6.959,
+      "text": "some names and then some page numbers"
+    },
+    {
+      "start": 1432.0,
+      "duration": 6.44,
+      "text": "okay so I can jump to any one of those"
+    },
+    {
+      "start": 1435.679,
+      "duration": 5.12,
+      "text": "images then using this film strip and"
+    },
+    {
+      "start": 1438.44,
+      "duration": 5.479,
+      "text": "and keep in mind that the image number"
+    },
+    {
+      "start": 1440.799,
+      "duration": 6.48,
+      "text": "in this case I'm on image number 50 does"
+    },
+    {
+      "start": 1443.919,
+      "duration": 7.521,
+      "text": "is not the same as the page number so"
+    },
+    {
+      "start": 1447.279,
+      "duration": 6.921,
+      "text": "here I'm on page 20 and 21 of the book"
+    },
+    {
+      "start": 1451.44,
+      "duration": 5.2,
+      "text": "but I'm on image 50 and so what that"
+    },
+    {
+      "start": 1454.2,
+      "duration": 4.88,
+      "text": "tells me is that I've got two pages per"
+    },
+    {
+      "start": 1456.64,
+      "duration": 6.76,
+      "text": "image and so for example if I'm looking"
+    },
+    {
+      "start": 1459.08,
+      "duration": 8.8,
+      "text": "for image 56 I'm going to want to jump"
+    },
+    {
+      "start": 1463.4,
+      "duration": 7.84,
+      "text": "forward um to you know a chunk of images"
+    },
+    {
+      "start": 1467.88,
+      "duration": 5.6,
+      "text": "here here now I'm on image 127 so you"
+    },
+    {
+      "start": 1471.24,
+      "duration": 6.039,
+      "text": "can use the film strip or you can use"
+    },
+    {
+      "start": 1473.48,
+      "duration": 6.559,
+      "text": "this little um page icon here and I can"
+    },
+    {
+      "start": 1477.279,
+      "duration": 4.88,
+      "text": "type in a particular page number click"
+    },
+    {
+      "start": 1480.039,
+      "duration": 6.52,
+      "text": "go and it will advance me now I'm at"
+    },
+    {
+      "start": 1482.159,
+      "duration": 6.081,
+      "text": "image 141 to that particular image again"
+    },
+    {
+      "start": 1486.559,
+      "duration": 4.72,
+      "text": "here we're seeing the difference between"
+    },
+    {
+      "start": 1488.24,
+      "duration": 5.64,
+      "text": "a Searcher and a researcher researchers"
+    },
+    {
+      "start": 1491.279,
+      "duration": 3.841,
+      "text": "know that sometimes you have to massage"
+    },
+    {
+      "start": 1493.88,
+      "duration": 3.36,
+      "text": "the record you have to work with the"
+    },
+    {
+      "start": 1495.12,
+      "duration": 3.799,
+      "text": "records sometimes you have to dig dig"
+    },
+    {
+      "start": 1497.24,
+      "duration": 4.0,
+      "text": "another level deeper"
+    },
+    {
+      "start": 1498.919,
+      "duration": 4.561,
+      "text": "in order to find the particular record"
+    },
+    {
+      "start": 1501.24,
+      "duration": 4.88,
+      "text": "or set of records that you are looking"
+    },
+    {
+      "start": 1503.48,
+      "duration": 4.36,
+      "text": "for and so you just keep going and now"
+    },
+    {
+      "start": 1506.12,
+      "duration": 5.32,
+      "text": "here I am up to page"
+    },
+    {
+      "start": 1507.84,
+      "duration": 6.6,
+      "text": "156 and here is the handwritten copy"
+    },
+    {
+      "start": 1511.44,
+      "duration": 7.08,
+      "text": "then of the will that I was looking"
+    },
+    {
+      "start": 1514.44,
+      "duration": 9.08,
+      "text": "for so I can then take that image and I"
+    },
+    {
+      "start": 1518.52,
+      "duration": 7.24,
+      "text": "can save it to um to to my computer and"
+    },
+    {
+      "start": 1523.52,
+      "duration": 4.279,
+      "text": "then upload it as an image to my tree or"
+    },
+    {
+      "start": 1525.76,
+      "duration": 4.039,
+      "text": "I can save it directly to my tree and"
+    },
+    {
+      "start": 1527.799,
+      "duration": 5.041,
+      "text": "when you click on on that save button it"
+    },
+    {
+      "start": 1529.799,
+      "duration": 6.201,
+      "text": "will tell you exactly what you can do"
+    },
+    {
+      "start": 1532.84,
+      "duration": 4.36,
+      "text": "with that particular record so again"
+    },
+    {
+      "start": 1536.0,
+      "duration": 2.32,
+      "text": "every one of those is going to be"
+    },
+    {
+      "start": 1537.2,
+      "duration": 3.959,
+      "text": "different based on the way the"
+    },
+    {
+      "start": 1538.32,
+      "duration": 5.239,
+      "text": "particular image is indexed but you can"
+    },
+    {
+      "start": 1541.159,
+      "duration": 5.52,
+      "text": "use this green save button to save that"
+    },
+    {
+      "start": 1543.559,
+      "duration": 5.36,
+      "text": "to your tree okay that is all I have"
+    },
+    {
+      "start": 1546.679,
+      "duration": 3.561,
+      "text": "planned for you today again my purpose"
+    },
+    {
+      "start": 1548.919,
+      "duration": 3.281,
+      "text": "today was just to get you into the"
+    },
+    {
+      "start": 1550.24,
+      "duration": 3.64,
+      "text": "records help you understand how the"
+    },
+    {
+      "start": 1552.2,
+      "duration": 3.959,
+      "text": "databases are organized a little bit"
+    },
+    {
+      "start": 1553.88,
+      "duration": 4.48,
+      "text": "better help you get some search tips and"
+    },
+    {
+      "start": 1556.159,
+      "duration": 3.88,
+      "text": "tricks around those databases and then"
+    },
+    {
+      "start": 1558.36,
+      "duration": 3.88,
+      "text": "help you understand just some basics of"
+    },
+    {
+      "start": 1560.039,
+      "duration": 4.36,
+      "text": "probate research if you want to learn"
+    },
+    {
+      "start": 1562.24,
+      "duration": 4.28,
+      "text": "more about the probate records"
+    },
+    {
+      "start": 1564.399,
+      "duration": 4.64,
+      "text": "themselves what all the different pieces"
+    },
+    {
+      "start": 1566.52,
+      "duration": 5.519,
+      "text": "of probate are what all the legal mumbo"
+    },
+    {
+      "start": 1569.039,
+      "duration": 5.921,
+      "text": "jumbo means um Judy Russell who is the"
+    },
+    {
+      "start": 1572.039,
+      "duration": 5.36,
+      "text": "legal genealogist she is a brilliant"
+    },
+    {
+      "start": 1574.96,
+      "duration": 4.599,
+      "text": "mind and a brilliant teacher has"
+    },
+    {
+      "start": 1577.399,
+      "duration": 4.88,
+      "text": "recorded a course for us on Ancestry"
+    },
+    {
+      "start": 1579.559,
+      "duration": 5.801,
+      "text": "Academy called the records of death"
+    },
+    {
+      "start": 1582.279,
+      "duration": 6.12,
+      "text": "using probates in family history and I"
+    },
+    {
+      "start": 1585.36,
+      "duration": 5.24,
+      "text": "would strongly encourage you to take the"
+    },
+    {
+      "start": 1588.399,
+      "duration": 3.961,
+      "text": "time and to go through that course if"
+    },
+    {
+      "start": 1590.6,
+      "duration": 5.16,
+      "text": "you're not familiar with ancestry"
+    },
+    {
+      "start": 1592.36,
+      "duration": 5.88,
+      "text": "Academy if you just go Um on Ancestry on"
+    },
+    {
+      "start": 1595.76,
+      "duration": 5.399,
+      "text": "the main menu under extras you'll see a"
+    },
+    {
+      "start": 1598.24,
+      "duration": 4.559,
+      "text": "link there to the ancestry Academy you"
+    },
+    {
+      "start": 1601.159,
+      "duration": 4.721,
+      "text": "can go ahead and click that that will"
+    },
+    {
+      "start": 1602.799,
+      "duration": 4.88,
+      "text": "take you to um out to the ancestry"
+    },
+    {
+      "start": 1605.88,
+      "duration": 3.24,
+      "text": "Academy web page and then if you just"
+    },
+    {
+      "start": 1607.679,
+      "duration": 3.961,
+      "text": "scroll down to the bottom you'll see"
+    },
+    {
+      "start": 1609.12,
+      "duration": 5.2,
+      "text": "here that records of death using"
+    },
+    {
+      "start": 1611.64,
+      "duration": 4.639,
+      "text": "probates in family history course by"
+    },
+    {
+      "start": 1614.32,
+      "duration": 5.0,
+      "text": "Judy Russell one of the things I like"
+    },
+    {
+      "start": 1616.279,
+      "duration": 4.841,
+      "text": "about the ancestry Academy is that that"
+    },
+    {
+      "start": 1619.32,
+      "duration": 4.64,
+      "text": "it's it's about an hour usually they're"
+    },
+    {
+      "start": 1621.12,
+      "duration": 5.96,
+      "text": "between an hour to two hour long courses"
+    },
+    {
+      "start": 1623.96,
+      "duration": 5.76,
+      "text": "um they're meant to be um your education"
+    },
+    {
+      "start": 1627.08,
+      "duration": 5.0,
+      "text": "conference level courses but every one"
+    },
+    {
+      "start": 1629.72,
+      "duration": 3.959,
+      "text": "of them has been broken down into"
+    },
+    {
+      "start": 1632.08,
+      "duration": 4.68,
+      "text": "sections and so if you don't want to"
+    },
+    {
+      "start": 1633.679,
+      "duration": 5.561,
+      "text": "watch the entire video you can come in"
+    },
+    {
+      "start": 1636.76,
+      "duration": 5.159,
+      "text": "here and just watch the portion of the"
+    },
+    {
+      "start": 1639.24,
+      "duration": 4.64,
+      "text": "video that is about the topic that you"
+    },
+    {
+      "start": 1641.919,
+      "duration": 4.521,
+      "text": "are interested in and those are listed"
+    },
+    {
+      "start": 1643.88,
+      "duration": 5.799,
+      "text": "here in a table of contents format and"
+    },
+    {
+      "start": 1646.44,
+      "duration": 5.599,
+      "text": "they are clickable and really great um"
+    },
+    {
+      "start": 1649.679,
+      "duration": 4.921,
+      "text": "it's a really great way to dive into"
+    },
+    {
+      "start": 1652.039,
+      "duration": 4.64,
+      "text": "these particular set of Records the"
+    },
+    {
+      "start": 1654.6,
+      "duration": 6.36,
+      "text": "other Learning Resource that we have"
+    },
+    {
+      "start": 1656.679,
+      "duration": 6.681,
+      "text": "available for you is we do have a free"
+    },
+    {
+      "start": 1660.96,
+      "duration": 5.719,
+      "text": "um research guide It's a PDF"
+    },
+    {
+      "start": 1663.36,
+      "duration": 6.88,
+      "text": "file and so um on the banner on your"
+    },
+    {
+      "start": 1666.679,
+      "duration": 6.041,
+      "text": "homepage you should have a um link to"
+    },
+    {
+      "start": 1670.24,
+      "duration": 4.799,
+      "text": "our probates landing page this is what"
+    },
+    {
+      "start": 1672.72,
+      "duration": 3.559,
+      "text": "it looks like and on the right hand side"
+    },
+    {
+      "start": 1675.039,
+      "duration": 4.801,
+      "text": "towards the bottom you're going to see a"
+    },
+    {
+      "start": 1676.279,
+      "duration": 5.24,
+      "text": "little link here to view the research"
+    },
+    {
+      "start": 1679.84,
+      "duration": 3.92,
+      "text": "guide and that's going to open up that"
+    },
+    {
+      "start": 1681.519,
+      "duration": 5.321,
+      "text": "PDF file and that's going to walk you"
+    },
+    {
+      "start": 1683.76,
+      "duration": 5.88,
+      "text": "through again all of the parts and"
+    },
+    {
+      "start": 1686.84,
+      "duration": 5.16,
+      "text": "pieces of probate what's a will what's a"
+    },
+    {
+      "start": 1689.64,
+      "duration": 4.2,
+      "text": "petition what's an inventory you know"
+    },
+    {
+      "start": 1692.0,
+      "duration": 4.08,
+      "text": "why is a child being assigned a guardian"
+    },
+    {
+      "start": 1693.84,
+      "duration": 4.199,
+      "text": "even though their mother is still living"
+    },
+    {
+      "start": 1696.08,
+      "duration": 4.16,
+      "text": "um some of those same tips and tricks"
+    },
+    {
+      "start": 1698.039,
+      "duration": 5.48,
+      "text": "for browsing and searching that I"
+    },
+    {
+      "start": 1700.24,
+      "duration": 6.64,
+      "text": "provided you with um our team here has"
+    },
+    {
+      "start": 1703.519,
+      "duration": 5.0,
+      "text": "put together into this research guide so"
+    },
+    {
+      "start": 1706.88,
+      "duration": 4.76,
+      "text": "go ahead and download that so that you"
+    },
+    {
+      "start": 1708.519,
+      "duration": 5.081,
+      "text": "have that handy and then just dive into"
+    },
+    {
+      "start": 1711.64,
+      "duration": 3.96,
+      "text": "the records if you have questions as"
+    },
+    {
+      "start": 1713.6,
+      "duration": 4.559,
+      "text": "you're diving into these records please"
+    },
+    {
+      "start": 1715.6,
+      "duration": 5.48,
+      "text": "feel free to visit us uh on Facebook at"
+    },
+    {
+      "start": 1718.159,
+      "duration": 4.4,
+      "text": "the ancestry Facebook page post your"
+    },
+    {
+      "start": 1721.08,
+      "duration": 3.68,
+      "text": "questions there we've got a really great"
+    },
+    {
+      "start": 1722.559,
+      "duration": 4.801,
+      "text": "helpful Community you can also visit our"
+    },
+    {
+      "start": 1724.76,
+      "duration": 4.08,
+      "text": "message boards or our community Forum um"
+    },
+    {
+      "start": 1727.36,
+      "duration": 4.4,
+      "text": "and as always you can send an email to"
+    },
+    {
+      "start": 1728.84,
+      "duration": 5.079,
+      "text": "me at ask ancestry.com if I start to see"
+    },
+    {
+      "start": 1731.76,
+      "duration": 4.759,
+      "text": "a lot of similar questions come through"
+    },
+    {
+      "start": 1733.919,
+      "duration": 4.961,
+      "text": "I may put uh together a part two video"
+    },
+    {
+      "start": 1736.519,
+      "duration": 4.201,
+      "text": "based on some of your questions and"
+    },
+    {
+      "start": 1738.88,
+      "duration": 4.0,
+      "text": "suggestions that's all I have for you"
+    },
+    {
+      "start": 1740.72,
+      "duration": 6.959,
+      "text": "today until next time this is Christa"
+    },
+    {
+      "start": 1742.88,
+      "duration": 4.799,
+      "text": "Cowen have fun climbing your family tree"
+    }
+  ],
+  "full_text": "hi everyone Christa Cowen here with another episode of the barefoot genealogist today we are talking about probate records if you've been paying any attention uh to ancestry at all over the weekend you will know that we released millions of probate records for the United States over the weekend and uh this is really exciting to me as a genealogist because I know that there are so many brick walls just waiting to be broken down with the information that is in these records there are Wills which are which are what most people associate with probate records but even if your ancestor died without a will there could still be probate records records about um information about their estate that had to be divided up if they didn't leave a will that had there had to be executiv guardianships of children lots of different paperwork that's created when a person passes away now all of these records are typically created here in the US at a county level and so these are county level records we've rolled them into State databases and so we're going to talk today specifically about um how to get the most out of these collections how to dig into them and really find what you're looking for I'm going to give you some information about the databases themselves we'll talk about a few search tips and tricks so that you can find what you're looking for and then we'll talk about some research Basics around probates and then we'll wrap it up with me giving you some places where you can go to find some additional information about how to use these probate records what they tell you and where that can take your research so let's go ahead and dive in let's start by just talking about these databases themselves so I'm going to give you some database specific tips the first one I mentioned is that the databases are by State so probate records are created at a county level um but those records have been microfilmed at that county level and then ancestry has rolled them into state level databases so here's what that looks like on our website if you go to my favorite resource on our site the card catalog and you click on that and you just type in the word probate into the title field you're going to see a list of all the probate records that we have if you sort that by date added you'll get all the new stuff at the top of the list and you can see there we've got um databases called wills and probate records for um all of these states now you'll notice every state has a different date range that's because different states or different counties rather started keeping those records at different times there are also privacy laws that differ state state by state about what can be made available and um the later date here on any of these you'll notice Rhode Island it's 1932 Indiana It's 1999 they differ um at the at the back end as well based on both privacy laws and on when these records were originally filmed so if these records were filmed back in the 1970s or the 1980s that database may only go up to that time period so um those date ranges are just what exists um that has been microfilm that has since then been digitized that we could place online so every state is going to be a little bit different but those databases are by State okay another thing to know is that every County within that state has different records available for different time periods so for example just because the state of Indiana just because the database states that they started keeping records in 17 98 does not mean that every single county has records back to that particular date okay every county is going to have a different date range within that same time period so that's important to understand also it's important to understand that some counties have suffered devastating effects of Courthouse fires or destruction of records for natural or manmade reasons uh whatever the case may be so the the databases are at a state level within the state you have a county level and those County records are going to be a little bit different time period so the best way to know if the records for the county that you're interested in exist online is to use what we call our browse structure so rather than just jumping in and searching which you're welcome to do that is one way to do it but I would recommend use the card catalog or our um wills and probates Page use that information to drill down to a specific state probate record okay so I'm going to come in here to the card catalog I'm going to for example jump to Missouri okay before I start searching I'm going to come over here to this browse box on the right hand side and I'm going to select the county that I am interested in and then I'm going to get a list of all of the records by type of record and by date range that exist for this particular County so I can scroll through here and I Can See For example I've got administrators applications and letters I've got administrators bonds Guardian bonds invest inventories appraisement and sale bills minute books prob records records of Wills settlements Guardians and curators right like all of these different kinds of records that make up the process of probate excuse me so I can then see a date range for every one of those particular collections now it's really tempting I know because I've done it to just jump directly to the record of Wills in this case it covers 1864 to 1925 for Christian County Missouri it's really tempting to just jump right into that particular book and to start searching so I'm going to minimize my source window I'm going to minimize my film strip or maybe not maybe I'll use my film strip here to jump to the first page of actual Wills then I will minimize my film strip and now I can drag around this image right and I can start reading through these Wills now again super tempting to do that but I would encourage you not to do that I would encourage you to use this information in the browse structure to know what exists so that you know what you're looking for I would also encourage you to recognize that just your your ancestor may or may not have had a will but even if they didn't have a will remember if they owned anything at all any property of any kind and you may think your ancestors were just poor farmers and didn't own anything but you might be surprised um there might be other records there very likely could be other records that give you clues about their estate um what all of these records are I will give you some resources to look those up or to to understand more about those later right now I just want to talk about searching the records but just be aware that Wills are not the only kind of Records included in Probate and they're not the only useful records included in Probate so Browse by County to see what available for each particular County at a record type and a time frame level okay these are all things as a as a genealogical researcher that I do long before I ever start just typing something into a search box um there are ways to search and we're going to talk about that but remember we want to be researchers not just Searchers Searchers very often get frustrated or find something and don't if it's for the right person or not or find something and don't know if you don't know what they're looking at or don't find something and get frustrated so researchers understand the records that they're using understand the limitations both of the records and of the databases and of the search parameters and that helps them to find exactly what they're looking for and to know what to do with that information once they found it so become very familiar with those databases before you dive into searching now once you dive into searching I've got some tips for you there as well I would encourage you like I mentioned to go to the specific database for the specific state probate records that you are interested in so rather than doing what we call our Global search which you can do it's it it works it just isn't as efficient okay so you can come in here and you can type in whatever into the global search box but when you do that you're searching all 16 billion records available on Ancestry and then you have to filter and filter and filter and filter your way down to a specific collection or a specific subset of Records okay what I want you to do is come into that card catalog type in maybe the name of a particular State let's do California probate and and go directly to that specific database one of the benefits of doing it this way is that now you don't have to type in a location because you're already in the database for that particular State okay hopefully that makes sense to you now I can just start searching by surnames I can start searching by specific counties but I won't have to worry about filtering out anything that doesn't belong to the state of California California another benefit is when you're in a specific State database you can put less information into the search box and here's what one of the reasons why that might be important I'm going to put in um just but into the keyword field there that but is one of the counties in the state of California and one of the things you'll notice is that we've got 5,000 I just that's the only thing I searched for is just but any record that contains that word so this database contains 5,261 records that have that word that keyword in somewhere in the record or in the index of that record and there's a couple of things I want you to notice one is that some of these records a record exists but there's no name that's been indexed and it's because either the name wasn't legible or the name wasn't where it was expected to be okay lot of different reasons and so there are some records that exist that have not yet been name indexed and so searching by location might help you find those records another thing you might notice let's see let me remove but and type in just a surname that I know is a very common surname and again my objective is just to try to find out how the records are organized and what kind of information is going to come up when I do a search so in this case I just put put in the surname Smith into the California wheels and probates Records database specifically and you're going to notice there's 1,75 records that came up and as I scroll through them there are a few things that I notice one for example I have someone who has a surname but no given name listed again that could be because the given name wasn't actually on the record it could be because it was illegible on the record whatever the case may be um but I do have a county and that might get me a little closer to the records I'm looking for here's a record where the the person is recorded as Mrs Smith so again no given name is listed there are occasions where you'll go through and you'll find that only initials are recorded so here in this case this person is recorded as CD Smith or CL L Smith whatever the case may be and so surname only searches might yield information that I wouldn't find otherwise now that's going to be really beneficial to me as a researcher if I am doing searches now for specifically for records that I'm interested in so I'm going to come in here to the Arkansas wills and probates record um database and combine those two very specific searches so I'm looking for my family that is in um Arkansas the last name is Lawrence and they were living in Washington County in fville um in that area in Arkansas and so I'm going to put in those two things and click search and you'll notice I get two records here that that are from that particular area with that particular surname and I'm I know I've looked at this record for George Lawrence I am related to him um I have not yet looked at this record for ML Lawrence so I'm not even sure yet who it is could be a man could be a woman um it's probably going to be a cousin of some sort since I'm related to most of Northwest Arkansas but that doing the database specific searches allows me to put in less information and still get very specific search results and almost always it ensures that I don't miss anything that I might have missed doing the search in a different way so we come back over here um search those specific State databases try those surname only searches and then you'll notice one of the things I did was I used the keyword field um in order to put in the name of the county now there is another way I could have done it I could have come in here to what's called this any event field so uh ancestry has basic life vital event search Fields birth marriage death um however probate a probate location and a probate date um those are a different kind of event and while it gives us information about the person's death it is not a direct piece of evidence about that person's death it's an indirect piece of evidence here's what I mean by that I could have a probate record uh from 1907 and I do in Salt Lake Salt Lake County Utah okay and that gives me some idea that the person was dead by 1907 and might have been from the state of Utah since the they've got property or possessions being probated out of Salt Lake County now the reality of the fact in that specific case is that the man died in 1897 so 10 years earlier and he died in Utah County about 40 mil south of where his his property was being probated and so that's important to remember as well because um because he died in Utah and he died before 1907 but I might have inferred a death date and a death place a lot more a lot more closely to the place and time in which he died so we're not going to make those probate dates and places um synonymous with a death date in place which means if you put the death date and death Place into your search form and you mark it exact you might not get the results You're Expecting so I would encourage you to use the any field or the keyword field specifically if you're going to put in that state okay so remember um when you start typing locations any locations in ancestry you get a type a head list always select from that type of head list where you can remember these are county level records so even though I know they lived in fville I'm not going to put that in the location field because none of these records have been in indexed at the city level they've all been indexed at the county level so I'm going to put in the name of the county where they lived I'm going to select it from that type of head list and I'm going to mark that exact and then I can do my search and I'll see here that I get 2300 some OD records out of that particular County okay so again for location based searches in the probate collection you use the database specific to the state and then use the any field to type in the name of the county select it from the type ahead and Mark it exact or just type in the name of the County and in the keyword field and Mark that exact those are your options for narrowing those search results by a specific location now let's talk about the last few tips here these are research tips so we've talked about database tips we've talked about search tips now we're talking about research tips um I mentioned this briefly in my last example hopefully you caught it some Estates were in Probate for years after a person's death so keep in mind that a will may have been written the will the will was written if if it exists before the person died it could have been written two days before the person died or it could have been written 20 years before the person died so the will date is a pre-death date then a will is probated and when a will is delivered to the court to be probated there's a date but then that could go on for years and the the different circumstances I mean and there's a variety of circumstances but uh it could be that there was some kind of a contesting of the will it could be that the executiv weren't doing their job it could be that there were minor children involved and that some provision in the will kept that Pro open until those children became adults it could be like in the case of my third great-grandfather um there was some property discovered years after probate closed on his original will and estate there was a piece of property discovered that he still owned or that he still held the title to in Salt Lake County and they had to the estate or the children had to dispose of that sell it and then a determination had to be made by the court about how to divide the proceeds from that particular sale so lots of different reasons why records might exist for years after a person's death but in this particular collection you're going to see that more and more often so don't just assume because you know they died in 1894 that the probate should be in 1895 or 1896 and be done keep keep a little bit of an open mind about that another thing to be aware of is that women had probate records too every state had had different laws throughout time about women's property rights um and those laws varied based on a lot of different things um were they single were they married were they widowed were they divorced did they own the property before they got married um was the property given to them by a parent with a provision that their husband could not take ownership in lots of different ways again that that happens and the laws all differ by place and time but just don't just be looking for your male relatives I will give you one example and you can read more about it on the ancestry blog here in a couple of days um I have a great great grandmother maybe three times great who um she was married and had a child and her husband died while serving in the Civil War and she petitioned for some land that he had been entitled to because of his service and she got that land she subsequently REM married had seven or eight more children one of whom is my great-grandmother and And yet when she married her second husband did not take possession of the land that she had received due to her first husband's Civil War service so um they both wrote wills at the same time they're dated at the same time they were probated I think about eight or nine months apart they died very close together my great great grandparents but um there is a will for him that lists all of their all of their possessions and property and then there is also a will for her that lists just this one solitary little piece of property and it's interesting to compare the two wheels side by side and to see how they dealt with their children um you can definitely tell that there was a favored daughter between both of them and then you can also um see in her probate record she leaves some of that property to her oldest son who was the product of that first marriage and her second husband even though he raised that boy from a child did not leave any property to that son so interest just interesting um when you start to not only find these records but compare these records as well okay last uh tip about research uh make sure that when you come across an entry that looks like it is only an index and I've seen this and I've seen some of you on the message boards and in our social media talking about this when you come across a record that looks like it's just an index okay so you go to the original image and it just lists a name and a page number typically it could just be that that was the only record indexed in that particular collection because it was an index and it was easy to index the original record may still also exist on Ancestry so remember we talked about that browse structure you have to go back into that browse structure and you have to select the type of record that you're looking for so for example if you're looking at an index to um Wills then I you know and you know that it's for a particular year range or it has a volume number as part of that index you can come in here to this specific collection or set of records and I'm going to to minimize my extra screens here so that I can just jump to the images that I need and then you can use this film strip down here to jump to a particular page now keep in mind this this is an index page here is an example of an index page I've got some names and then some page numbers okay so I can jump to any one of those images then using this film strip and and keep in mind that the image number in this case I'm on image number 50 does is not the same as the page number so here I'm on page 20 and 21 of the book but I'm on image 50 and so what that tells me is that I've got two pages per image and so for example if I'm looking for image 56 I'm going to want to jump forward um to you know a chunk of images here here now I'm on image 127 so you can use the film strip or you can use this little um page icon here and I can type in a particular page number click go and it will advance me now I'm at image 141 to that particular image again here we're seeing the difference between a Searcher and a researcher researchers know that sometimes you have to massage the record you have to work with the records sometimes you have to dig dig another level deeper in order to find the particular record or set of records that you are looking for and so you just keep going and now here I am up to page 156 and here is the handwritten copy then of the will that I was looking for so I can then take that image and I can save it to um to to my computer and then upload it as an image to my tree or I can save it directly to my tree and when you click on on that save button it will tell you exactly what you can do with that particular record so again every one of those is going to be different based on the way the particular image is indexed but you can use this green save button to save that to your tree okay that is all I have planned for you today again my purpose today was just to get you into the records help you understand how the databases are organized a little bit better help you get some search tips and tricks around those databases and then help you understand just some basics of probate research if you want to learn more about the probate records themselves what all the different pieces of probate are what all the legal mumbo jumbo means um Judy Russell who is the legal genealogist she is a brilliant mind and a brilliant teacher has recorded a course for us on Ancestry Academy called the records of death using probates in family history and I would strongly encourage you to take the time and to go through that course if you're not familiar with ancestry Academy if you just go Um on Ancestry on the main menu under extras you'll see a link there to the ancestry Academy you can go ahead and click that that will take you to um out to the ancestry Academy web page and then if you just scroll down to the bottom you'll see here that records of death using probates in family history course by Judy Russell one of the things I like about the ancestry Academy is that that it's it's about an hour usually they're between an hour to two hour long courses um they're meant to be um your education conference level courses but every one of them has been broken down into sections and so if you don't want to watch the entire video you can come in here and just watch the portion of the video that is about the topic that you are interested in and those are listed here in a table of contents format and they are clickable and really great um it's a really great way to dive into these particular set of Records the other Learning Resource that we have available for you is we do have a free um research guide It's a PDF file and so um on the banner on your homepage you should have a um link to our probates landing page this is what it looks like and on the right hand side towards the bottom you're going to see a little link here to view the research guide and that's going to open up that PDF file and that's going to walk you through again all of the parts and pieces of probate what's a will what's a petition what's an inventory you know why is a child being assigned a guardian even though their mother is still living um some of those same tips and tricks for browsing and searching that I provided you with um our team here has put together into this research guide so go ahead and download that so that you have that handy and then just dive into the records if you have questions as you're diving into these records please feel free to visit us uh on Facebook at the ancestry Facebook page post your questions there we've got a really great helpful Community you can also visit our message boards or our community Forum um and as always you can send an email to me at ask ancestry.com if I start to see a lot of similar questions come through I may put uh together a part two video based on some of your questions and suggestions that's all I have for you today until next time this is Christa Cowen have fun climbing your family tree",
+  "attempts": [
+    {
+      "client": "IOS",
+      "playability": {
+        "status": "OK",
+        "playableInEmbed": true,
+        "offlineability": {
+          "buttonRenderer": {
+            "navigationEndpoint": {
+              "clickTrackingParams": "CAkQ6ewBIhMIy7Hri-zblwMV75blBx2lAhZJygEE_wzbfw==",
+              "ypcGetOfflineUpsellEndpoint": {
+                "params": "ChPqqN25AQ0KC2JjT2xBcFYyRm5nIgtiY09sQXBWMkZuZyoVCAkYAVIPCgtiY09sQXBWMkZuZyAB"
+              }
+            },
+            "trackingParams": "CAkQ6ewBIhMIy7Hri-zblwMV75blBx2lAhZJ"
+          }
+        },
+        "pictureInPicture": {
+          "pictureInPictureRenderer": {
+            "playableInPip": true,
+            "offByDefault": false,
+            "shouldResumeOnHead": false
+          }
+        },
+        "miniplayer": {
+          "miniplayerRenderer": {
+            "playbackMode": "PLAYBACK_MODE_ALLOW"
+          }
+        },
+        "contextParams": "Q0FFU0FnZ0M="
+      },
+      "outcome": "ok"
+    }
+  ],
+  "fetched_at": "2026-10-28T04:11:22.495873+00:00",
+  "client": "IOS",
+  "json_path": "transcripts/058_bcOlApV2Fng.json",
+  "text_path": "transcripts/058_bcOlApV2Fng.txt"
+}

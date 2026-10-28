@@ -1,0 +1,3887 @@
+{
+  "index": 47,
+  "url": "https://www.youtube.com/watch?v=AKvEFJHf5K0",
+  "video_id": "AKvEFJHf5K0",
+  "status": "ok",
+  "metadata": {
+    "title": "Daniel Curran Finders International - Todays Wills & Probate Podcast",
+    "author": "Daniel Curran",
+    "channelId": "UCz_SlEpcned26WwbFsGuzvQ",
+    "lengthSeconds": "1699",
+    "viewCount": "59",
+    "shortDescription": "Daniel Curran MD, Finders International joins Today’s Wills and Probate podcast host David Opie. \n\nFinders International recently celebrated its 25th Anniversary and in this podcast Daniel Curran discusses the challenges of running a business that has seen so much change since 1997, the changing face of genealogy services and what he thinks the future holds.\n\nSource: \nhttps://todayswillsandprobate.co.uk/the-finders-international-story/ \n\nConnect: \nhttps://www.linkedin.com/in/danielcurran-finders/ \nhttps://www.twitter.com/Curran_Finders",
+    "keywords": [
+      "Daniel Curran",
+      "Daniel Curran Finders",
+      "Finders International",
+      "Today's Wills & Probate",
+      "Podcast",
+      "Wills",
+      "Probate",
+      "WillsAndProbate"
+    ]
+  },
+  "caption_tracks": [
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=AKvEFJHf5K0&ei=6HXhaoHrFviRsfIPmLqPmQ8&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185880&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=E91D9E27E78A94F549FE2635B1C6526E1CC73877.2A7EAE253BC332C25625FAAE74B0FFB76FDD8516&key=yt8&kind=asr&lang=en",
+      "name": {
+        "runs": [
+          {
+            "text": "English (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.en",
+      "languageCode": "en",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    }
+  ],
+  "selected_track": {
+    "baseUrl": "https://www.youtube.com/api/timedtext?v=AKvEFJHf5K0&ei=6HXhaoHrFviRsfIPmLqPmQ8&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185880&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=E91D9E27E78A94F549FE2635B1C6526E1CC73877.2A7EAE253BC332C25625FAAE74B0FFB76FDD8516&key=yt8&kind=asr&lang=en",
+    "name": {
+      "runs": [
+        {
+          "text": "English (auto-generated)"
+        }
+      ]
+    },
+    "vssId": "a.en",
+    "languageCode": "en",
+    "kind": "asr",
+    "isTranslatable": true,
+    "trackName": ""
+  },
+  "segments": [
+    {
+      "start": 0.439,
+      "duration": 5.681,
+      "text": "you're listening to the today's wills"
+    },
+    {
+      "start": 3.419,
+      "duration": 4.801,
+      "text": "and probate podcast one of the leading"
+    },
+    {
+      "start": 6.12,
+      "duration": 5.099,
+      "text": "sources of information for the Wilson"
+    },
+    {
+      "start": 8.22,
+      "duration": 5.879,
+      "text": "probate sector don't forget to subscribe"
+    },
+    {
+      "start": 11.219,
+      "duration": 6.181,
+      "text": "and sign up to our free newsletter at"
+    },
+    {
+      "start": 14.099,
+      "duration": 8.241,
+      "text": "today's wills and probate dot Co dot UK"
+    },
+    {
+      "start": 17.4,
+      "duration": 4.94,
+      "text": "and follow us on LinkedIn and Twitter"
+    },
+    {
+      "start": 22.68,
+      "duration": 5.939,
+      "text": "hello and welcome to the first today's"
+    },
+    {
+      "start": 24.66,
+      "duration": 6.9,
+      "text": "Wilson probate podcast of 2023"
+    },
+    {
+      "start": 28.619,
+      "duration": 4.381,
+      "text": "it's a new year I have a new guest"
+    },
+    {
+      "start": 31.56,
+      "duration": 4.92,
+      "text": "somebody's we have not had on the"
+    },
+    {
+      "start": 33.0,
+      "duration": 5.64,
+      "text": "podcast before my thanks to Danny Curran"
+    },
+    {
+      "start": 36.48,
+      "duration": 4.5,
+      "text": "founder and MD of finders International"
+    },
+    {
+      "start": 38.64,
+      "duration": 4.68,
+      "text": "for joining thank you for coming on the"
+    },
+    {
+      "start": 40.98,
+      "duration": 4.079,
+      "text": "podcast Danny it's a pleasure David and"
+    },
+    {
+      "start": 43.32,
+      "duration": 3.3,
+      "text": "happy New Year to you"
+    },
+    {
+      "start": 45.059,
+      "duration": 3.84,
+      "text": "thank you"
+    },
+    {
+      "start": 46.62,
+      "duration": 4.2,
+      "text": "Johnny as I said founder and MD defines"
+    },
+    {
+      "start": 48.899,
+      "duration": 3.721,
+      "text": "International you're going to tell us so"
+    },
+    {
+      "start": 50.82,
+      "duration": 4.14,
+      "text": "much more about that and probably an"
+    },
+    {
+      "start": 52.62,
+      "duration": 5.7,
+      "text": "awful lot better than I am and today"
+    },
+    {
+      "start": 54.96,
+      "duration": 5.52,
+      "text": "we're going to talk about genealogy what"
+    },
+    {
+      "start": 58.32,
+      "duration": 4.68,
+      "text": "you do in the industry some of the"
+    },
+    {
+      "start": 60.48,
+      "duration": 4.679,
+      "text": "different services that finders offer"
+    },
+    {
+      "start": 63.0,
+      "duration": 4.26,
+      "text": "but also I'm very interested in some of"
+    },
+    {
+      "start": 65.159,
+      "duration": 5.041,
+      "text": "those anecdotal stories as well that you"
+    },
+    {
+      "start": 67.26,
+      "duration": 6.02,
+      "text": "can tell us I'm I'm sure firstly though"
+    },
+    {
+      "start": 70.2,
+      "duration": 8.04,
+      "text": "tell us a little bit about yourself the"
+    },
+    {
+      "start": 73.28,
+      "duration": 8.379,
+      "text": "25th anniversary of finders was in 2022"
+    },
+    {
+      "start": 78.24,
+      "duration": 5.04,
+      "text": "a very odd date I remember you saying"
+    },
+    {
+      "start": 81.659,
+      "duration": 3.6,
+      "text": "tell us about yourself in the first"
+    },
+    {
+      "start": 83.28,
+      "duration": 4.74,
+      "text": "instance how on Earth did you get"
+    },
+    {
+      "start": 85.259,
+      "duration": 4.741,
+      "text": "involved in genealogy in the first place"
+    },
+    {
+      "start": 88.02,
+      "duration": 3.779,
+      "text": "well um"
+    },
+    {
+      "start": 90.0,
+      "duration": 3.6,
+      "text": "it's a long story it's actually I've"
+    },
+    {
+      "start": 91.799,
+      "duration": 5.041,
+      "text": "been involved in Probate research and"
+    },
+    {
+      "start": 93.6,
+      "duration": 5.879,
+      "text": "genealogy for 30 years since 1990"
+    },
+    {
+      "start": 96.84,
+      "duration": 4.26,
+      "text": "um so it's 32 years now crisis time is"
+    },
+    {
+      "start": 99.479,
+      "duration": 4.081,
+      "text": "moving on"
+    },
+    {
+      "start": 101.1,
+      "duration": 7.68,
+      "text": "um my father was a private detective in"
+    },
+    {
+      "start": 103.56,
+      "duration": 7.5,
+      "text": "the 1960s and he started to do a bit of"
+    },
+    {
+      "start": 108.78,
+      "duration": 5.28,
+      "text": "this kind of work while during his time"
+    },
+    {
+      "start": 111.06,
+      "duration": 8.64,
+      "text": "as a as a pi"
+    },
+    {
+      "start": 114.06,
+      "duration": 7.5,
+      "text": "um and then he formed a company"
+    },
+    {
+      "start": 119.7,
+      "duration": 4.68,
+      "text": "called title research which in other"
+    },
+    {
+      "start": 121.56,
+      "duration": 5.46,
+      "text": "program research company which I joined"
+    },
+    {
+      "start": 124.38,
+      "duration": 7.2,
+      "text": "in 1990"
+    },
+    {
+      "start": 127.02,
+      "duration": 8.219,
+      "text": "um and then in 1997 it's a long time ago"
+    },
+    {
+      "start": 131.58,
+      "duration": 7.76,
+      "text": "now but there was a big family bust up"
+    },
+    {
+      "start": 135.239,
+      "duration": 7.08,
+      "text": "um and I we we went our separate ways so"
+    },
+    {
+      "start": 139.34,
+      "duration": 4.84,
+      "text": "it's all healed now time has healed all"
+    },
+    {
+      "start": 142.319,
+      "duration": 3.42,
+      "text": "the Rifts"
+    },
+    {
+      "start": 144.18,
+      "duration": 3.9,
+      "text": "um but I basically just started again"
+    },
+    {
+      "start": 145.739,
+      "duration": 4.021,
+      "text": "because our title research I've built up"
+    },
+    {
+      "start": 148.08,
+      "duration": 2.519,
+      "text": "the company"
+    },
+    {
+      "start": 149.76,
+      "duration": 2.94,
+      "text": "um"
+    },
+    {
+      "start": 150.599,
+      "duration": 4.86,
+      "text": "through kind of a certain area mainly"
+    },
+    {
+      "start": 152.7,
+      "duration": 5.88,
+      "text": "areas of work that were competitive and"
+    },
+    {
+      "start": 155.459,
+      "duration": 5.461,
+      "text": "my belief was I could make a bigger"
+    },
+    {
+      "start": 158.58,
+      "duration": 4.98,
+      "text": "breakthroughs in the competitive Arena"
+    },
+    {
+      "start": 160.92,
+      "duration": 5.52,
+      "text": "which was dominated by a couple of other"
+    },
+    {
+      "start": 163.56,
+      "duration": 4.86,
+      "text": "firms so when I started finders my first"
+    },
+    {
+      "start": 166.44,
+      "duration": 4.98,
+      "text": "Port of Call was to work on what we call"
+    },
+    {
+      "start": 168.42,
+      "duration": 6.0,
+      "text": "public domain cases"
+    },
+    {
+      "start": 171.42,
+      "duration": 3.78,
+      "text": "and my my routine was"
+    },
+    {
+      "start": 174.42,
+      "duration": 2.88,
+      "text": "um"
+    },
+    {
+      "start": 175.2,
+      "duration": 4.38,
+      "text": "the bone of a cancer division advertised"
+    },
+    {
+      "start": 177.3,
+      "duration": 5.4,
+      "text": "unclaimed Estates in the newspapers in"
+    },
+    {
+      "start": 179.58,
+      "duration": 4.56,
+      "text": "in the 90s and it was fairly predictable"
+    },
+    {
+      "start": 182.7,
+      "duration": 3.539,
+      "text": "sort of every Tuesday and Thursday"
+    },
+    {
+      "start": 184.14,
+      "duration": 2.879,
+      "text": "something like that"
+    },
+    {
+      "start": 186.239,
+      "duration": 2.521,
+      "text": "um"
+    },
+    {
+      "start": 187.019,
+      "duration": 4.381,
+      "text": "so"
+    },
+    {
+      "start": 188.76,
+      "duration": 4.74,
+      "text": "what I did is I I went down to King's"
+    },
+    {
+      "start": 191.4,
+      "duration": 3.9,
+      "text": "cross station where they dropped off the"
+    },
+    {
+      "start": 193.5,
+      "duration": 3.659,
+      "text": "newspapers at midnight"
+    },
+    {
+      "start": 195.3,
+      "duration": 3.84,
+      "text": "and literally got them off the back of"
+    },
+    {
+      "start": 197.159,
+      "duration": 4.261,
+      "text": "the lorry"
+    },
+    {
+      "start": 199.14,
+      "duration": 4.379,
+      "text": "um so while my competitors were sleeping"
+    },
+    {
+      "start": 201.42,
+      "duration": 4.98,
+      "text": "I went off to the office and did all the"
+    },
+    {
+      "start": 203.519,
+      "duration": 5.521,
+      "text": "research myself on microbeesh is the"
+    },
+    {
+      "start": 206.4,
+      "duration": 5.58,
+      "text": "obviously pre-internet"
+    },
+    {
+      "start": 209.04,
+      "duration": 3.9,
+      "text": "and with uh with a bit of luck and"
+    },
+    {
+      "start": 211.98,
+      "duration": 3.179,
+      "text": "judgment"
+    },
+    {
+      "start": 212.94,
+      "duration": 3.78,
+      "text": "um I managed to to crack a few cases"
+    },
+    {
+      "start": 215.159,
+      "duration": 3.241,
+      "text": "that way and then I'll go off on the"
+    },
+    {
+      "start": 216.72,
+      "duration": 3.06,
+      "text": "weekend and visit the beneficiaries and"
+    },
+    {
+      "start": 218.4,
+      "duration": 3.72,
+      "text": "sign them up"
+    },
+    {
+      "start": 219.78,
+      "duration": 3.959,
+      "text": "it was just very hard work I just had to"
+    },
+    {
+      "start": 222.12,
+      "duration": 2.699,
+      "text": "do it I knew what I was doing and I've"
+    },
+    {
+      "start": 223.739,
+      "duration": 4.5,
+      "text": "had a lot of experience and actually"
+    },
+    {
+      "start": 224.819,
+      "duration": 5.461,
+      "text": "following on from that once the name was"
+    },
+    {
+      "start": 228.239,
+      "duration": 4.621,
+      "text": "I started to advertise the name and"
+    },
+    {
+      "start": 230.28,
+      "duration": 4.92,
+      "text": "people you know got to know that I had a"
+    },
+    {
+      "start": 232.86,
+      "duration": 4.5,
+      "text": "new company there were a lot of lawyers"
+    },
+    {
+      "start": 235.2,
+      "duration": 4.8,
+      "text": "that had used me my previous employment"
+    },
+    {
+      "start": 237.36,
+      "duration": 4.98,
+      "text": "so they kind of followed me to find us"
+    },
+    {
+      "start": 240.0,
+      "duration": 3.54,
+      "text": "and uh and there we are so it's quite a"
+    },
+    {
+      "start": 242.34,
+      "duration": 4.319,
+      "text": "long story short I've now got to have"
+    },
+    {
+      "start": 243.54,
+      "duration": 5.22,
+      "text": "about 100 employees and 50 freelance uh"
+    },
+    {
+      "start": 246.659,
+      "duration": 3.78,
+      "text": "retired police officers you know on our"
+    },
+    {
+      "start": 248.76,
+      "duration": 4.14,
+      "text": "team"
+    },
+    {
+      "start": 250.439,
+      "duration": 4.261,
+      "text": "and offices in London Edinburgh Dublin"
+    },
+    {
+      "start": 252.9,
+      "duration": 6.299,
+      "text": "and Sydney and Australia"
+    },
+    {
+      "start": 254.7,
+      "duration": 5.52,
+      "text": "so it's been a long a long journey"
+    },
+    {
+      "start": 259.199,
+      "duration": 3.78,
+      "text": "um"
+    },
+    {
+      "start": 260.22,
+      "duration": 5.52,
+      "text": "and uh it's not over yet but it's uh"
+    },
+    {
+      "start": 262.979,
+      "duration": 4.681,
+      "text": "it's from very humble beginnings so you"
+    },
+    {
+      "start": 265.74,
+      "duration": 4.019,
+      "text": "know that that's how I started"
+    },
+    {
+      "start": 267.66,
+      "duration": 3.36,
+      "text": "oh incredible and you talk about the"
+    },
+    {
+      "start": 269.759,
+      "duration": 3.121,
+      "text": "fact that you went down to King's cross"
+    },
+    {
+      "start": 271.02,
+      "duration": 4.02,
+      "text": "got the paper off the off the back of"
+    },
+    {
+      "start": 272.88,
+      "duration": 4.68,
+      "text": "the Lorry we're going to talk about how"
+    },
+    {
+      "start": 275.04,
+      "duration": 4.2,
+      "text": "the industry's changed because you're"
+    },
+    {
+      "start": 277.56,
+      "duration": 3.359,
+      "text": "absolutely right you've started this"
+    },
+    {
+      "start": 279.24,
+      "duration": 4.86,
+      "text": "business pre-internet what what is the"
+    },
+    {
+      "start": 280.919,
+      "duration": 6.661,
+      "text": "impact of the internet and Technology"
+    },
+    {
+      "start": 284.1,
+      "duration": 5.159,
+      "text": "been on genealogy Services because you"
+    },
+    {
+      "start": 287.58,
+      "duration": 3.3,
+      "text": "know I'm very naive about these things"
+    },
+    {
+      "start": 289.259,
+      "duration": 3.781,
+      "text": "you know I look at social media Facebook"
+    },
+    {
+      "start": 290.88,
+      "duration": 4.319,
+      "text": "that kind of thing there was uh what was"
+    },
+    {
+      "start": 293.04,
+      "duration": 4.8,
+      "text": "that website years ago friends reunited"
+    },
+    {
+      "start": 295.199,
+      "duration": 4.201,
+      "text": "yes all that kind of stuff you know the"
+    },
+    {
+      "start": 297.84,
+      "duration": 4.56,
+      "text": "internet really changed this industry"
+    },
+    {
+      "start": 299.4,
+      "duration": 5.82,
+      "text": "presumably yeah as I say the the records"
+    },
+    {
+      "start": 302.4,
+      "duration": 5.64,
+      "text": "we we rely on you know Vital Records the"
+    },
+    {
+      "start": 305.22,
+      "duration": 5.28,
+      "text": "the key records to any family tree birth"
+    },
+    {
+      "start": 308.04,
+      "duration": 4.26,
+      "text": "marriage and death indexes"
+    },
+    {
+      "start": 310.5,
+      "duration": 4.38,
+      "text": "so"
+    },
+    {
+      "start": 312.3,
+      "duration": 5.52,
+      "text": "um when I started they were all the the"
+    },
+    {
+      "start": 314.88,
+      "duration": 7.379,
+      "text": "master copies of you like a big huge"
+    },
+    {
+      "start": 317.82,
+      "duration": 7.5,
+      "text": "kind of um about 50 60 centimeter High"
+    },
+    {
+      "start": 322.259,
+      "duration": 5.461,
+      "text": "books uh let you know hard covers and"
+    },
+    {
+      "start": 325.32,
+      "duration": 3.84,
+      "text": "leather handles and they stored them all"
+    },
+    {
+      "start": 327.72,
+      "duration": 3.96,
+      "text": "on the shelves of Saint Catherine's"
+    },
+    {
+      "start": 329.16,
+      "duration": 5.4,
+      "text": "house and it was physical so you go down"
+    },
+    {
+      "start": 331.68,
+      "duration": 4.799,
+      "text": "there and you hike these great big books"
+    },
+    {
+      "start": 334.56,
+      "duration": 5.34,
+      "text": "off the shelf slam them on the bench"
+    },
+    {
+      "start": 336.479,
+      "duration": 4.621,
+      "text": "behind you and flick through like a"
+    },
+    {
+      "start": 339.9,
+      "duration": 3.6,
+      "text": "telephone directory when you're looking"
+    },
+    {
+      "start": 341.1,
+      "duration": 4.2,
+      "text": "up a birth entry so everyone's in these"
+    },
+    {
+      "start": 343.5,
+      "duration": 3.0,
+      "text": "books when you do you look up the name"
+    },
+    {
+      "start": 345.3,
+      "duration": 2.1,
+      "text": "like a birth"
+    },
+    {
+      "start": 346.5,
+      "duration": 3.78,
+      "text": "um"
+    },
+    {
+      "start": 347.4,
+      "duration": 4.739,
+      "text": "a birth entry like a telephone directory"
+    },
+    {
+      "start": 350.28,
+      "duration": 3.3,
+      "text": "and then that information you can build"
+    },
+    {
+      "start": 352.139,
+      "duration": 5.581,
+      "text": "up a family tree"
+    },
+    {
+      "start": 353.58,
+      "duration": 6.0,
+      "text": "so the internet we I think I had an"
+    },
+    {
+      "start": 357.72,
+      "duration": 3.9,
+      "text": "early Dial up which you remember the the"
+    },
+    {
+      "start": 359.58,
+      "duration": 3.74,
+      "text": "modem the dialect modems and they they"
+    },
+    {
+      "start": 361.62,
+      "duration": 4.38,
+      "text": "sounded like a factory machine"
+    },
+    {
+      "start": 363.32,
+      "duration": 4.96,
+      "text": "and then the unpredictable nature of"
+    },
+    {
+      "start": 366.0,
+      "duration": 4.259,
+      "text": "whether that would even work"
+    },
+    {
+      "start": 368.28,
+      "duration": 3.479,
+      "text": "but in the early days you'd get as you"
+    },
+    {
+      "start": 370.259,
+      "duration": 4.38,
+      "text": "say friends reunited was one of the"
+    },
+    {
+      "start": 371.759,
+      "duration": 5.761,
+      "text": "early ones but there wasn't any great"
+    },
+    {
+      "start": 374.639,
+      "duration": 4.56,
+      "text": "deal of information until I'd say at"
+    },
+    {
+      "start": 377.52,
+      "duration": 4.44,
+      "text": "least five or six years further down the"
+    },
+    {
+      "start": 379.199,
+      "duration": 4.981,
+      "text": "line then it started to"
+    },
+    {
+      "start": 381.96,
+      "duration": 4.019,
+      "text": "become more of a thing"
+    },
+    {
+      "start": 384.18,
+      "duration": 4.5,
+      "text": "um I was actually involved in the early"
+    },
+    {
+      "start": 385.979,
+      "duration": 5.041,
+      "text": "discussions on products which ended up"
+    },
+    {
+      "start": 388.68,
+      "duration": 5.579,
+      "text": "being find my path"
+    },
+    {
+      "start": 391.02,
+      "duration": 6.239,
+      "text": "um so but I was busy with my setting up"
+    },
+    {
+      "start": 394.259,
+      "duration": 4.261,
+      "text": "my own business so I didn't get involved"
+    },
+    {
+      "start": 397.259,
+      "duration": 2.581,
+      "text": "um which probably not you know I should"
+    },
+    {
+      "start": 398.52,
+      "duration": 3.48,
+      "text": "have done really with hindsights"
+    },
+    {
+      "start": 399.84,
+      "duration": 4.74,
+      "text": "obviously made a lot of money but"
+    },
+    {
+      "start": 402.0,
+      "duration": 4.319,
+      "text": "um but there you go so that we knew that"
+    },
+    {
+      "start": 404.58,
+      "duration": 3.66,
+      "text": "we always knew that these products were"
+    },
+    {
+      "start": 406.319,
+      "duration": 3.66,
+      "text": "in the making we knew what ancestry we"
+    },
+    {
+      "start": 408.24,
+      "duration": 3.54,
+      "text": "were up to we in touch with Americans"
+    },
+    {
+      "start": 409.979,
+      "duration": 4.021,
+      "text": "and what they were doing so we knew it"
+    },
+    {
+      "start": 411.78,
+      "duration": 4.44,
+      "text": "was coming"
+    },
+    {
+      "start": 414.0,
+      "duration": 4.02,
+      "text": "um but even now we've kept all these"
+    },
+    {
+      "start": 416.22,
+      "duration": 3.419,
+      "text": "original light fish in the office we've"
+    },
+    {
+      "start": 418.02,
+      "duration": 4.69,
+      "text": "got every single birth marriage and"
+    },
+    {
+      "start": 419.639,
+      "duration": 4.381,
+      "text": "death entry on right graffiti from 1837"
+    },
+    {
+      "start": 422.71,
+      "duration": 3.47,
+      "text": "[Music]"
+    },
+    {
+      "start": 424.02,
+      "duration": 5.1,
+      "text": "to when they stopped making them which I"
+    },
+    {
+      "start": 426.18,
+      "duration": 4.739,
+      "text": "think is around about 2 000 so we bought"
+    },
+    {
+      "start": 429.12,
+      "duration": 3.78,
+      "text": "them all you had to buy a copy of these"
+    },
+    {
+      "start": 430.919,
+      "duration": 4.921,
+      "text": "microviche birth Prejudice every single"
+    },
+    {
+      "start": 432.9,
+      "duration": 4.68,
+      "text": "person in England Wales is on them"
+    },
+    {
+      "start": 435.84,
+      "duration": 3.24,
+      "text": "um and a manual so so if you imagine"
+    },
+    {
+      "start": 437.58,
+      "duration": 3.42,
+      "text": "that"
+    },
+    {
+      "start": 439.08,
+      "duration": 3.36,
+      "text": "if you're filling in a web form to try"
+    },
+    {
+      "start": 441.0,
+      "duration": 3.96,
+      "text": "and find someone's date of birth you're"
+    },
+    {
+      "start": 442.44,
+      "duration": 5.58,
+      "text": "probably looking at you know like 10 20"
+    },
+    {
+      "start": 444.96,
+      "duration": 3.84,
+      "text": "seconds 30 second operation"
+    },
+    {
+      "start": 448.02,
+      "duration": 2.88,
+      "text": "um"
+    },
+    {
+      "start": 448.8,
+      "duration": 4.32,
+      "text": "so that would take at least half an hour"
+    },
+    {
+      "start": 450.9,
+      "duration": 4.019,
+      "text": "for that one search"
+    },
+    {
+      "start": 453.12,
+      "duration": 3.96,
+      "text": "um and if it's a common surname even"
+    },
+    {
+      "start": 454.919,
+      "duration": 4.981,
+      "text": "longer"
+    },
+    {
+      "start": 457.08,
+      "duration": 4.44,
+      "text": "um so the internet transformed the speed"
+    },
+    {
+      "start": 459.9,
+      "duration": 3.48,
+      "text": "but also"
+    },
+    {
+      "start": 461.52,
+      "duration": 3.48,
+      "text": "it had it's a like many things"
+    },
+    {
+      "start": 463.38,
+      "duration": 3.18,
+      "text": "double-edged sword it increased the"
+    },
+    {
+      "start": 465.0,
+      "duration": 3.84,
+      "text": "number of Errors because the scanning"
+    },
+    {
+      "start": 466.56,
+      "duration": 5.82,
+      "text": "errors you're scanning old documents and"
+    },
+    {
+      "start": 468.84,
+      "duration": 4.979,
+      "text": "therefore the the OCR recognition you"
+    },
+    {
+      "start": 472.38,
+      "duration": 4.62,
+      "text": "know the optical character recognition"
+    },
+    {
+      "start": 473.819,
+      "duration": 5.761,
+      "text": "the scanning software has to be super"
+    },
+    {
+      "start": 477.0,
+      "duration": 4.979,
+      "text": "Reliant in terms of translating all that"
+    },
+    {
+      "start": 479.58,
+      "duration": 3.48,
+      "text": "into readable entries"
+    },
+    {
+      "start": 481.979,
+      "duration": 4.201,
+      "text": "um which said that you know then"
+    },
+    {
+      "start": 483.06,
+      "duration": 4.38,
+      "text": "digitized so the skills then became more"
+    },
+    {
+      "start": 486.18,
+      "duration": 3.419,
+      "text": "around what if they'd missed something"
+    },
+    {
+      "start": 487.44,
+      "duration": 4.62,
+      "text": "what if it's felt wrong"
+    },
+    {
+      "start": 489.599,
+      "duration": 5.1,
+      "text": "um how do we investigate first how do we"
+    },
+    {
+      "start": 492.06,
+      "duration": 4.139,
+      "text": "verify what we found out"
+    },
+    {
+      "start": 494.699,
+      "duration": 3.361,
+      "text": "so"
+    },
+    {
+      "start": 496.199,
+      "duration": 4.261,
+      "text": "um obviously the ultimate verification"
+    },
+    {
+      "start": 498.06,
+      "duration": 4.039,
+      "text": "is then to find The Descendants on that"
+    },
+    {
+      "start": 500.46,
+      "duration": 4.139,
+      "text": "branch of the family and talk to them"
+    },
+    {
+      "start": 502.099,
+      "duration": 3.641,
+      "text": "and see if it matches up if they"
+    },
+    {
+      "start": 504.599,
+      "duration": 2.461,
+      "text": "remember"
+    },
+    {
+      "start": 505.74,
+      "duration": 3.42,
+      "text": "um of course they might not even know"
+    },
+    {
+      "start": 507.06,
+      "duration": 4.44,
+      "text": "their own ancestry so you might be on a"
+    },
+    {
+      "start": 509.16,
+      "duration": 3.179,
+      "text": "bit but hiding to nothing there but"
+    },
+    {
+      "start": 511.5,
+      "duration": 3.3,
+      "text": "um"
+    },
+    {
+      "start": 512.339,
+      "duration": 4.681,
+      "text": "at least you could then make some"
+    },
+    {
+      "start": 514.8,
+      "duration": 4.2,
+      "text": "progress and sometimes it works out"
+    },
+    {
+      "start": 517.02,
+      "duration": 4.92,
+      "text": "quicker but even today you can't really"
+    },
+    {
+      "start": 519.0,
+      "duration": 5.58,
+      "text": "you know you hope it's right and most"
+    },
+    {
+      "start": 521.94,
+      "duration": 5.76,
+      "text": "the time it's it's good but there's"
+    },
+    {
+      "start": 524.58,
+      "duration": 5.34,
+      "text": "still many situations where"
+    },
+    {
+      "start": 527.7,
+      "duration": 4.56,
+      "text": "the fact that the internet records"
+    },
+    {
+      "start": 529.92,
+      "duration": 3.12,
+      "text": "especially for the UK"
+    },
+    {
+      "start": 532.26,
+      "duration": 3.24,
+      "text": "um"
+    },
+    {
+      "start": 533.04,
+      "duration": 3.96,
+      "text": "are good doesn't doesn't shortcut any"
+    },
+    {
+      "start": 535.5,
+      "duration": 3.06,
+      "text": "process especially when the research"
+    },
+    {
+      "start": 537.0,
+      "duration": 3.779,
+      "text": "goes abroad"
+    },
+    {
+      "start": 538.56,
+      "duration": 4.44,
+      "text": "I think you're alluding to this next"
+    },
+    {
+      "start": 540.779,
+      "duration": 5.161,
+      "text": "question in what you've said but do you"
+    },
+    {
+      "start": 543.0,
+      "duration": 5.519,
+      "text": "face the same issues today that you"
+    },
+    {
+      "start": 545.94,
+      "duration": 5.16,
+      "text": "faced 25 years ago"
+    },
+    {
+      "start": 548.519,
+      "duration": 3.421,
+      "text": "and if they're different how are they"
+    },
+    {
+      "start": 551.1,
+      "duration": 2.7,
+      "text": "different"
+    },
+    {
+      "start": 551.94,
+      "duration": 3.839,
+      "text": "I'd say they're different issues because"
+    },
+    {
+      "start": 553.8,
+      "duration": 3.9,
+      "text": "obviously we're now"
+    },
+    {
+      "start": 555.779,
+      "duration": 3.901,
+      "text": "um the biggest company in the UK in our"
+    },
+    {
+      "start": 557.7,
+      "duration": 4.38,
+      "text": "field and we've got a huge number of"
+    },
+    {
+      "start": 559.68,
+      "duration": 4.08,
+      "text": "staff so personally my my day-to-day"
+    },
+    {
+      "start": 562.08,
+      "duration": 3.96,
+      "text": "work is very different I don't do the"
+    },
+    {
+      "start": 563.76,
+      "duration": 3.18,
+      "text": "casework anymore"
+    },
+    {
+      "start": 566.04,
+      "duration": 3.419,
+      "text": "um"
+    },
+    {
+      "start": 566.94,
+      "duration": 6.42,
+      "text": "the one thing that I'm doing more of"
+    },
+    {
+      "start": 569.459,
+      "duration": 7.56,
+      "text": "that I always wanted to happen was to"
+    },
+    {
+      "start": 573.36,
+      "duration": 5.58,
+      "text": "deal with the industry regulation to"
+    },
+    {
+      "start": 577.019,
+      "duration": 4.861,
+      "text": "become a kind of face for the industry"
+    },
+    {
+      "start": 578.94,
+      "duration": 5.64,
+      "text": "and do all the media work and uh press"
+    },
+    {
+      "start": 581.88,
+      "duration": 7.079,
+      "text": "and TV I've done over 150"
+    },
+    {
+      "start": 584.58,
+      "duration": 6.3,
+      "text": "radio press interviews TV"
+    },
+    {
+      "start": 588.959,
+      "duration": 3.601,
+      "text": "you've now appeared under today's rules"
+    },
+    {
+      "start": 590.88,
+      "duration": 4.079,
+      "text": "and probate podcast"
+    },
+    {
+      "start": 592.56,
+      "duration": 6.54,
+      "text": "my career is now reached a new pie by"
+    },
+    {
+      "start": 594.959,
+      "duration": 5.461,
+      "text": "being on the TWP podcast so I I've kind"
+    },
+    {
+      "start": 599.1,
+      "duration": 3.96,
+      "text": "of"
+    },
+    {
+      "start": 600.42,
+      "duration": 4.38,
+      "text": "I want and every time I've done these"
+    },
+    {
+      "start": 603.06,
+      "duration": 4.14,
+      "text": "shows I've always tried to highlight the"
+    },
+    {
+      "start": 604.8,
+      "duration": 5.64,
+      "text": "positivity there's what the one thing"
+    },
+    {
+      "start": 607.2,
+      "duration": 6.12,
+      "text": "that hasn't changed is that most firms"
+    },
+    {
+      "start": 610.44,
+      "duration": 4.32,
+      "text": "in this Arena wanted to be and still"
+    },
+    {
+      "start": 613.32,
+      "duration": 4.44,
+      "text": "want to be kind of what they call under"
+    },
+    {
+      "start": 614.76,
+      "duration": 4.8,
+      "text": "the radar so they want to be doing this"
+    },
+    {
+      "start": 617.76,
+      "duration": 4.44,
+      "text": "sort of dark art that no one really"
+    },
+    {
+      "start": 619.56,
+      "duration": 5.16,
+      "text": "knows much about and this really came to"
+    },
+    {
+      "start": 622.2,
+      "duration": 3.84,
+      "text": "a head when we were on BBC One air"
+    },
+    {
+      "start": 624.72,
+      "duration": 3.96,
+      "text": "Hunters"
+    },
+    {
+      "start": 626.04,
+      "duration": 5.46,
+      "text": "so that was that was on TV for 12 series"
+    },
+    {
+      "start": 628.68,
+      "duration": 4.98,
+      "text": "and is still repeated endlessly on minor"
+    },
+    {
+      "start": 631.5,
+      "duration": 3.959,
+      "text": "channels so"
+    },
+    {
+      "start": 633.66,
+      "duration": 3.72,
+      "text": "um when we started doing that we decided"
+    },
+    {
+      "start": 635.459,
+      "duration": 3.841,
+      "text": "to really go for it and really"
+    },
+    {
+      "start": 637.38,
+      "duration": 4.5,
+      "text": "professionalize it the way we did it the"
+    },
+    {
+      "start": 639.3,
+      "duration": 4.62,
+      "text": "way we we know we we even got a stylist"
+    },
+    {
+      "start": 641.88,
+      "duration": 4.44,
+      "text": "in to help us with what we should wear"
+    },
+    {
+      "start": 643.92,
+      "duration": 4.38,
+      "text": "how we should talk what we should do and"
+    },
+    {
+      "start": 646.32,
+      "duration": 3.48,
+      "text": "we we presented it in our best possible"
+    },
+    {
+      "start": 648.3,
+      "duration": 3.0,
+      "text": "way because I'm a firm believer if"
+    },
+    {
+      "start": 649.8,
+      "duration": 3.9,
+      "text": "you're going to do it do it properly you"
+    },
+    {
+      "start": 651.3,
+      "duration": 5.76,
+      "text": "know don't sort of stand there in your"
+    },
+    {
+      "start": 653.7,
+      "duration": 5.639,
+      "text": "worst nylon shirt looking sweaty and um"
+    },
+    {
+      "start": 657.06,
+      "duration": 4.8,
+      "text": "you know awkward you just do it to the"
+    },
+    {
+      "start": 659.339,
+      "duration": 4.68,
+      "text": "best of your ability so"
+    },
+    {
+      "start": 661.86,
+      "duration": 4.02,
+      "text": "we did that and from on the back of that"
+    },
+    {
+      "start": 664.019,
+      "duration": 4.32,
+      "text": "that's when I started to do all the"
+    },
+    {
+      "start": 665.88,
+      "duration": 3.78,
+      "text": "press and TV throughout the because it"
+    },
+    {
+      "start": 668.339,
+      "duration": 2.521,
+      "text": "generated a lot of interest in the"
+    },
+    {
+      "start": 669.66,
+      "duration": 3.9,
+      "text": "public"
+    },
+    {
+      "start": 670.86,
+      "duration": 4.38,
+      "text": "if and therefore"
+    },
+    {
+      "start": 673.56,
+      "duration": 3.42,
+      "text": "um the things but the things that"
+    },
+    {
+      "start": 675.24,
+      "duration": 3.3,
+      "text": "haven't changed as I say is that there"
+    },
+    {
+      "start": 676.98,
+      "duration": 5.76,
+      "text": "was a great deal of resentment and"
+    },
+    {
+      "start": 678.54,
+      "duration": 5.82,
+      "text": "animosity from within the industry"
+    },
+    {
+      "start": 682.74,
+      "duration": 3.659,
+      "text": "um firmsing why are you doing this show"
+    },
+    {
+      "start": 684.36,
+      "duration": 4.44,
+      "text": "what a stupid idea why have you done"
+    },
+    {
+      "start": 686.399,
+      "duration": 4.261,
+      "text": "that and really ante it"
+    },
+    {
+      "start": 688.8,
+      "duration": 3.0,
+      "text": "um and those of us that were on it were"
+    },
+    {
+      "start": 690.66,
+      "duration": 3.9,
+      "text": "just"
+    },
+    {
+      "start": 691.8,
+      "duration": 4.979,
+      "text": "realizing that you know if you can't"
+    },
+    {
+      "start": 694.56,
+      "duration": 3.899,
+      "text": "beat them join them I mean there are"
+    },
+    {
+      "start": 696.779,
+      "duration": 4.861,
+      "text": "times in business where you have to make"
+    },
+    {
+      "start": 698.459,
+      "duration": 4.261,
+      "text": "a business decision it might not be one"
+    },
+    {
+      "start": 701.64,
+      "duration": 3.24,
+      "text": "you like"
+    },
+    {
+      "start": 702.72,
+      "duration": 4.559,
+      "text": "but once we've made that decision to do"
+    },
+    {
+      "start": 704.88,
+      "duration": 4.22,
+      "text": "it and to seize it you know take the"
+    },
+    {
+      "start": 707.279,
+      "duration": 5.221,
+      "text": "bull by the horns and to do it properly"
+    },
+    {
+      "start": 709.1,
+      "duration": 5.62,
+      "text": "we not only we became the leading voices"
+    },
+    {
+      "start": 712.5,
+      "duration": 5.16,
+      "text": "in our industry but our"
+    },
+    {
+      "start": 714.72,
+      "duration": 5.76,
+      "text": "turnover grew we were"
+    },
+    {
+      "start": 717.66,
+      "duration": 4.5,
+      "text": "easily recognized by it wasn't so much a"
+    },
+    {
+      "start": 720.48,
+      "duration": 3.72,
+      "text": "show for professionals it was a show for"
+    },
+    {
+      "start": 722.16,
+      "duration": 4.14,
+      "text": "the public so when you're knocking on"
+    },
+    {
+      "start": 724.2,
+      "duration": 4.02,
+      "text": "the door of someone's house or one of"
+    },
+    {
+      "start": 726.3,
+      "duration": 3.42,
+      "text": "our Representatives is quite often"
+    },
+    {
+      "start": 728.22,
+      "duration": 4.38,
+      "text": "they're going and we'd be on the TV"
+    },
+    {
+      "start": 729.72,
+      "duration": 5.16,
+      "text": "sitting right in front of them so"
+    },
+    {
+      "start": 732.6,
+      "duration": 4.739,
+      "text": "because it was a daytime program on BBC"
+    },
+    {
+      "start": 734.88,
+      "duration": 4.56,
+      "text": "One and many many people saw it during"
+    },
+    {
+      "start": 737.339,
+      "duration": 3.781,
+      "text": "its height so on the back of that we"
+    },
+    {
+      "start": 739.44,
+      "duration": 3.36,
+      "text": "gained a lot of reassurance in the"
+    },
+    {
+      "start": 741.12,
+      "duration": 4.2,
+      "text": "public thinking we're not a scam it's"
+    },
+    {
+      "start": 742.8,
+      "duration": 4.2,
+      "text": "not a weird thing going on"
+    },
+    {
+      "start": 745.32,
+      "duration": 3.3,
+      "text": "um the professionals"
+    },
+    {
+      "start": 747.0,
+      "duration": 3.959,
+      "text": "neither here nor there they didn't"
+    },
+    {
+      "start": 748.62,
+      "duration": 4.02,
+      "text": "really have an opinion but a lot of the"
+    },
+    {
+      "start": 750.959,
+      "duration": 5.281,
+      "text": "people within the industry were really"
+    },
+    {
+      "start": 752.64,
+      "duration": 5.879,
+      "text": "anti and vocal about how Dreadful air"
+    },
+    {
+      "start": 756.24,
+      "duration": 4.5,
+      "text": "Hunters are and even to this day they"
+    },
+    {
+      "start": 758.519,
+      "duration": 4.38,
+      "text": "some of the firms in the industry put"
+    },
+    {
+      "start": 760.74,
+      "duration": 5.159,
+      "text": "their emphasis on how"
+    },
+    {
+      "start": 762.899,
+      "duration": 4.5,
+      "text": "you know that how wrong they think"
+    },
+    {
+      "start": 765.899,
+      "duration": 4.021,
+      "text": "certain things we do is and these are"
+    },
+    {
+      "start": 767.399,
+      "duration": 5.041,
+      "text": "people in the same industry"
+    },
+    {
+      "start": 769.92,
+      "duration": 4.8,
+      "text": "um it's really odd and I've never"
+    },
+    {
+      "start": 772.44,
+      "duration": 4.5,
+      "text": "understood it because we have we're very"
+    },
+    {
+      "start": 774.72,
+      "duration": 4.5,
+      "text": "lucky we have good news stories all of"
+    },
+    {
+      "start": 776.94,
+      "duration": 4.079,
+      "text": "our work is about good news it's"
+    },
+    {
+      "start": 779.22,
+      "duration": 4.02,
+      "text": "bittersweet of course some you know"
+    },
+    {
+      "start": 781.019,
+      "duration": 4.26,
+      "text": "especially when someone's died and we"
+    },
+    {
+      "start": 783.24,
+      "duration": 5.0,
+      "text": "have to break that news to relatives but"
+    },
+    {
+      "start": 785.279,
+      "duration": 5.521,
+      "text": "how lucky are we that we can actually"
+    },
+    {
+      "start": 788.24,
+      "duration": 5.62,
+      "text": "effectively tell people they're a"
+    },
+    {
+      "start": 790.8,
+      "duration": 4.92,
+      "text": "lottery winner every day or every week"
+    },
+    {
+      "start": 793.86,
+      "duration": 4.58,
+      "text": "did bringing"
+    },
+    {
+      "start": 795.72,
+      "duration": 5.52,
+      "text": "genealogy services and air hunting to"
+    },
+    {
+      "start": 798.44,
+      "duration": 5.98,
+      "text": "wider public attention"
+    },
+    {
+      "start": 801.24,
+      "duration": 5.039,
+      "text": "benefit the industry as a whole do you"
+    },
+    {
+      "start": 804.42,
+      "duration": 4.62,
+      "text": "think"
+    },
+    {
+      "start": 806.279,
+      "duration": 5.881,
+      "text": "I think the the one area where the the"
+    },
+    {
+      "start": 809.04,
+      "duration": 5.28,
+      "text": "TV show was kind of contradictory was"
+    },
+    {
+      "start": 812.16,
+      "duration": 4.28,
+      "text": "that we're trying to at the same time I"
+    },
+    {
+      "start": 814.32,
+      "duration": 4.139,
+      "text": "I started um"
+    },
+    {
+      "start": 816.44,
+      "duration": 3.76,
+      "text": "self-regulatory body"
+    },
+    {
+      "start": 818.459,
+      "duration": 3.961,
+      "text": "um six years ago the first one of its"
+    },
+    {
+      "start": 820.2,
+      "duration": 3.3,
+      "text": "kind in our industry called The"
+    },
+    {
+      "start": 822.42,
+      "duration": 3.479,
+      "text": "International Association of"
+    },
+    {
+      "start": 823.5,
+      "duration": 3.66,
+      "text": "professional probate researchers and"
+    },
+    {
+      "start": 825.899,
+      "duration": 3.06,
+      "text": "there's a large number of international"
+    },
+    {
+      "start": 827.16,
+      "duration": 4.46,
+      "text": "members now"
+    },
+    {
+      "start": 828.959,
+      "duration": 4.801,
+      "text": "um we have an AGM"
+    },
+    {
+      "start": 831.62,
+      "duration": 3.82,
+      "text": "ippr.org is the website if people are"
+    },
+    {
+      "start": 833.76,
+      "duration": 3.66,
+      "text": "interested so we've introduced"
+    },
+    {
+      "start": 835.44,
+      "duration": 3.78,
+      "text": "self-regulation in an unregulated"
+    },
+    {
+      "start": 837.42,
+      "duration": 2.88,
+      "text": "industry codes of conduct codes of"
+    },
+    {
+      "start": 839.22,
+      "duration": 3.66,
+      "text": "ethics"
+    },
+    {
+      "start": 840.3,
+      "duration": 4.68,
+      "text": "and all that kind of thing"
+    },
+    {
+      "start": 842.88,
+      "duration": 5.1,
+      "text": "um and that was kind of in response in a"
+    },
+    {
+      "start": 844.98,
+      "duration": 4.979,
+      "text": "way to the people watching the TV show"
+    },
+    {
+      "start": 847.98,
+      "duration": 4.979,
+      "text": "thinking oh that's I'll give that a go"
+    },
+    {
+      "start": 849.959,
+      "duration": 4.201,
+      "text": "and you know as people do now some of"
+    },
+    {
+      "start": 852.959,
+      "duration": 4.141,
+      "text": "those people"
+    },
+    {
+      "start": 854.16,
+      "duration": 5.22,
+      "text": "gave it a go and were okay with it but"
+    },
+    {
+      "start": 857.1,
+      "duration": 3.96,
+      "text": "what people don't you know what people"
+    },
+    {
+      "start": 859.38,
+      "duration": 3.48,
+      "text": "don't realize is that some people ended"
+    },
+    {
+      "start": 861.06,
+      "duration": 6.12,
+      "text": "up in jail having to have done it"
+    },
+    {
+      "start": 862.86,
+      "duration": 6.12,
+      "text": "because and this is the weird thing to"
+    },
+    {
+      "start": 867.18,
+      "duration": 4.459,
+      "text": "get to the bottom of this um in this"
+    },
+    {
+      "start": 868.98,
+      "duration": 5.52,
+      "text": "world of anti-money laundering and"
+    },
+    {
+      "start": 871.639,
+      "duration": 4.121,
+      "text": "proving our shoe size before we can do"
+    },
+    {
+      "start": 874.5,
+      "duration": 3.899,
+      "text": "anything"
+    },
+    {
+      "start": 875.76,
+      "duration": 5.22,
+      "text": "when the treasury solicitor the cancer"
+    },
+    {
+      "start": 878.399,
+      "duration": 4.8,
+      "text": "division admits a claim they give you"
+    },
+    {
+      "start": 880.98,
+      "duration": 3.599,
+      "text": "details of where the assets are and you"
+    },
+    {
+      "start": 883.199,
+      "duration": 3.421,
+      "text": "write to them and you say I represent"
+    },
+    {
+      "start": 884.579,
+      "duration": 5.521,
+      "text": "them and they just hand over the money"
+    },
+    {
+      "start": 886.62,
+      "duration": 5.219,
+      "text": "so some people were tempted to uh run"
+    },
+    {
+      "start": 890.1,
+      "duration": 3.84,
+      "text": "off with the money"
+    },
+    {
+      "start": 891.839,
+      "duration": 4.56,
+      "text": "um because you don't have to be a"
+    },
+    {
+      "start": 893.94,
+      "duration": 5.16,
+      "text": "solicitor to receive the money it's it"
+    },
+    {
+      "start": 896.399,
+      "duration": 5.281,
+      "text": "can go to an unregulated firm we"
+    },
+    {
+      "start": 899.1,
+      "duration": 4.62,
+      "text": "represent the Mexican hand over the"
+    },
+    {
+      "start": 901.68,
+      "duration": 3.959,
+      "text": "money and they do and you know at some"
+    },
+    {
+      "start": 903.72,
+      "duration": 3.72,
+      "text": "point you have to you're living in a"
+    },
+    {
+      "start": 905.639,
+      "duration": 4.14,
+      "text": "world where information is everywhere"
+    },
+    {
+      "start": 907.44,
+      "duration": 4.079,
+      "text": "the internet is everywhere you you've"
+    },
+    {
+      "start": 909.779,
+      "duration": 4.021,
+      "text": "got to be more transparent you've got to"
+    },
+    {
+      "start": 911.519,
+      "duration": 5.041,
+      "text": "show the show your hand in some ways and"
+    },
+    {
+      "start": 913.8,
+      "duration": 4.14,
+      "text": "prove to people that you're playing"
+    },
+    {
+      "start": 916.56,
+      "duration": 4.16,
+      "text": "um you're running your business fairly"
+    },
+    {
+      "start": 917.94,
+      "duration": 6.06,
+      "text": "and and professionally"
+    },
+    {
+      "start": 920.72,
+      "duration": 7.119,
+      "text": "what about lawyers themselves then do"
+    },
+    {
+      "start": 924.0,
+      "duration": 7.74,
+      "text": "you see that lawyers have benefited from"
+    },
+    {
+      "start": 927.839,
+      "duration": 6.661,
+      "text": "this uh I suppose boom in interest in in"
+    },
+    {
+      "start": 931.74,
+      "duration": 4.5,
+      "text": "genealogy okay this is a great example"
+    },
+    {
+      "start": 934.5,
+      "duration": 4.38,
+      "text": "because there's stories that I could"
+    },
+    {
+      "start": 936.24,
+      "duration": 4.5,
+      "text": "bore you endlessly with stories but the"
+    },
+    {
+      "start": 938.88,
+      "duration": 4.199,
+      "text": "amount of times that people with"
+    },
+    {
+      "start": 940.74,
+      "duration": 4.5,
+      "text": "solicitors have come to us and said this"
+    },
+    {
+      "start": 943.079,
+      "duration": 4.56,
+      "text": "is the soul layer or this is the only"
+    },
+    {
+      "start": 945.24,
+      "duration": 4.44,
+      "text": "one or we know it's going to go to"
+    },
+    {
+      "start": 947.639,
+      "duration": 3.601,
+      "text": "cousins there's no closer relatives to"
+    },
+    {
+      "start": 949.68,
+      "duration": 3.719,
+      "text": "the deceased he's only got these distant"
+    },
+    {
+      "start": 951.24,
+      "duration": 3.48,
+      "text": "cousins the amount of times that's been"
+    },
+    {
+      "start": 953.399,
+      "duration": 3.3,
+      "text": "wrong"
+    },
+    {
+      "start": 954.72,
+      "duration": 3.84,
+      "text": "um and there's no obligation legally on"
+    },
+    {
+      "start": 956.699,
+      "duration": 3.301,
+      "text": "them to check everything because you go"
+    },
+    {
+      "start": 958.56,
+      "duration": 3.06,
+      "text": "to play a point a personal"
+    },
+    {
+      "start": 960.0,
+      "duration": 2.88,
+      "text": "representative who could be the deceased"
+    },
+    {
+      "start": 961.62,
+      "duration": 4.019,
+      "text": "customer"
+    },
+    {
+      "start": 962.88,
+      "duration": 4.079,
+      "text": "and you say some you say to that cousin"
+    },
+    {
+      "start": 965.639,
+      "duration": 3.241,
+      "text": "do you want us to check there's no one"
+    },
+    {
+      "start": 966.959,
+      "duration": 3.421,
+      "text": "that's entitled before you"
+    },
+    {
+      "start": 968.88,
+      "duration": 3.6,
+      "text": "um what's your answer going to be"
+    },
+    {
+      "start": 970.38,
+      "duration": 6.3,
+      "text": "probably uh no I think we'll leave it at"
+    },
+    {
+      "start": 972.48,
+      "duration": 6.419,
+      "text": "that and and hand over the money so"
+    },
+    {
+      "start": 976.68,
+      "duration": 4.26,
+      "text": "there needs to be in my view something"
+    },
+    {
+      "start": 978.899,
+      "duration": 4.321,
+      "text": "compelling"
+    },
+    {
+      "start": 980.94,
+      "duration": 2.94,
+      "text": "solicitors to check"
+    },
+    {
+      "start": 983.22,
+      "duration": 2.82,
+      "text": "um"
+    },
+    {
+      "start": 983.88,
+      "duration": 4.019,
+      "text": "you know to verify the family tree and"
+    },
+    {
+      "start": 986.04,
+      "duration": 4.26,
+      "text": "in other countries abroad it is part of"
+    },
+    {
+      "start": 987.899,
+      "duration": 5.341,
+      "text": "the legal process you have to do it"
+    },
+    {
+      "start": 990.3,
+      "duration": 4.92,
+      "text": "and like I say the amount of times you"
+    },
+    {
+      "start": 993.24,
+      "duration": 4.5,
+      "text": "know last week there was a set of"
+    },
+    {
+      "start": 995.22,
+      "duration": 4.979,
+      "text": "cousins referred to us and we found that"
+    },
+    {
+      "start": 997.74,
+      "duration": 5.159,
+      "text": "the deceased at Half Blood siblings that"
+    },
+    {
+      "start": 1000.199,
+      "duration": 4.56,
+      "text": "no one knew about the massive story"
+    },
+    {
+      "start": 1002.899,
+      "duration": 3.661,
+      "text": "about a lady called Margaret Abbott last"
+    },
+    {
+      "start": 1004.759,
+      "duration": 5.161,
+      "text": "year in the Daily Mail"
+    },
+    {
+      "start": 1006.56,
+      "duration": 5.339,
+      "text": "who was a half sister to a lady she'd"
+    },
+    {
+      "start": 1009.92,
+      "duration": 4.56,
+      "text": "only met once as a baby"
+    },
+    {
+      "start": 1011.899,
+      "duration": 4.56,
+      "text": "and again the solicitors came to us with"
+    },
+    {
+      "start": 1014.48,
+      "duration": 4.08,
+      "text": "cousins saying that can you just verify"
+    },
+    {
+      "start": 1016.459,
+      "duration": 4.081,
+      "text": "the family tree so"
+    },
+    {
+      "start": 1018.56,
+      "duration": 4.92,
+      "text": "great praise to those solicitors who"
+    },
+    {
+      "start": 1020.54,
+      "duration": 6.0,
+      "text": "think like that who think let's check"
+    },
+    {
+      "start": 1023.48,
+      "duration": 6.479,
+      "text": "um and let's make sure we check because"
+    },
+    {
+      "start": 1026.54,
+      "duration": 4.68,
+      "text": "I wouldn't begin to count the I mean"
+    },
+    {
+      "start": 1029.959,
+      "duration": 3.6,
+      "text": "there must be millions that have been"
+    },
+    {
+      "start": 1031.22,
+      "duration": 4.32,
+      "text": "distributed wrongly over the years"
+    },
+    {
+      "start": 1033.559,
+      "duration": 3.36,
+      "text": "is we've got an office in Ireland an"
+    },
+    {
+      "start": 1035.54,
+      "duration": 3.48,
+      "text": "island and the worst for this because"
+    },
+    {
+      "start": 1036.919,
+      "duration": 3.361,
+      "text": "they they all think they know each other"
+    },
+    {
+      "start": 1039.02,
+      "duration": 3.12,
+      "text": "and um"
+    },
+    {
+      "start": 1040.28,
+      "duration": 3.48,
+      "text": "you know they couldn't possibly have a"
+    },
+    {
+      "start": 1042.14,
+      "duration": 3.24,
+      "text": "legit illegitimate children because"
+    },
+    {
+      "start": 1043.76,
+      "duration": 2.939,
+      "text": "they're Catholic and that would never"
+    },
+    {
+      "start": 1045.38,
+      "duration": 4.44,
+      "text": "happen of course"
+    },
+    {
+      "start": 1046.699,
+      "duration": 4.86,
+      "text": "so so you have a solicit an island will"
+    },
+    {
+      "start": 1049.82,
+      "duration": 3.239,
+      "text": "say oh yeah Paddy down the road he told"
+    },
+    {
+      "start": 1051.559,
+      "duration": 3.0,
+      "text": "me that he's only got two brothers and"
+    },
+    {
+      "start": 1053.059,
+      "duration": 3.36,
+      "text": "that's it"
+    },
+    {
+      "start": 1054.559,
+      "duration": 3.24,
+      "text": "well of course"
+    },
+    {
+      "start": 1056.419,
+      "duration": 3.841,
+      "text": "um they don't tell you about the story"
+    },
+    {
+      "start": 1057.799,
+      "duration": 3.781,
+      "text": "of the one that went to America and"
+    },
+    {
+      "start": 1060.26,
+      "duration": 4.02,
+      "text": "you know"
+    },
+    {
+      "start": 1061.58,
+      "duration": 4.14,
+      "text": "had loads of kids and whatever so and"
+    },
+    {
+      "start": 1064.28,
+      "duration": 3.42,
+      "text": "these are the things that happen to us"
+    },
+    {
+      "start": 1065.72,
+      "duration": 4.62,
+      "text": "every day you know every I'd say every"
+    },
+    {
+      "start": 1067.7,
+      "duration": 4.859,
+      "text": "week there's something like this happens"
+    },
+    {
+      "start": 1070.34,
+      "duration": 3.78,
+      "text": "um so please please if you're always"
+    },
+    {
+      "start": 1072.559,
+      "duration": 3.781,
+      "text": "listen to listen to this think about"
+    },
+    {
+      "start": 1074.12,
+      "duration": 4.919,
+      "text": "verification can be cheap it can be free"
+    },
+    {
+      "start": 1076.34,
+      "duration": 3.959,
+      "text": "in some cases but it's well worth doing"
+    },
+    {
+      "start": 1079.039,
+      "duration": 4.561,
+      "text": "and then on the back of that you can"
+    },
+    {
+      "start": 1080.299,
+      "duration": 5.76,
+      "text": "ensure against beneficiaries turning up"
+    },
+    {
+      "start": 1083.6,
+      "duration": 5.52,
+      "text": "and you know ones that were missed even"
+    },
+    {
+      "start": 1086.059,
+      "duration": 4.921,
+      "text": "by us you know that does happen"
+    },
+    {
+      "start": 1089.12,
+      "duration": 3.6,
+      "text": "um and just and then the insurance"
+    },
+    {
+      "start": 1090.98,
+      "duration": 3.54,
+      "text": "policy will take care of any unpaid"
+    },
+    {
+      "start": 1092.72,
+      "duration": 3.3,
+      "text": "inheritances"
+    },
+    {
+      "start": 1094.52,
+      "duration": 3.84,
+      "text": "I think it's probably fair to say"
+    },
+    {
+      "start": 1096.02,
+      "duration": 4.44,
+      "text": "historically that"
+    },
+    {
+      "start": 1098.36,
+      "duration": 3.78,
+      "text": "if you had a sort of murky family"
+    },
+    {
+      "start": 1100.46,
+      "duration": 4.32,
+      "text": "background you weren't particularly"
+    },
+    {
+      "start": 1102.14,
+      "duration": 4.98,
+      "text": "transparent about it these days you've"
+    },
+    {
+      "start": 1104.78,
+      "duration": 4.019,
+      "text": "got a huge rise in divorce you've got"
+    },
+    {
+      "start": 1107.12,
+      "duration": 4.86,
+      "text": "Blended families"
+    },
+    {
+      "start": 1108.799,
+      "duration": 5.521,
+      "text": "you've got a very different demographic"
+    },
+    {
+      "start": 1111.98,
+      "duration": 4.02,
+      "text": "I suppose societal demographic does that"
+    },
+    {
+      "start": 1114.32,
+      "duration": 4.739,
+      "text": "change the way that you work does that"
+    },
+    {
+      "start": 1116.0,
+      "duration": 5.7,
+      "text": "has that made your job more difficult"
+    },
+    {
+      "start": 1119.059,
+      "duration": 6.781,
+      "text": "yeah in some ways the changes in um"
+    },
+    {
+      "start": 1121.7,
+      "duration": 5.82,
+      "text": "Society patterns will alter our thinking"
+    },
+    {
+      "start": 1125.84,
+      "duration": 3.36,
+      "text": "on how we go about the research because"
+    },
+    {
+      "start": 1127.52,
+      "duration": 3.12,
+      "text": "we're not automatically thinking people"
+    },
+    {
+      "start": 1129.2,
+      "duration": 3.42,
+      "text": "will be getting married"
+    },
+    {
+      "start": 1130.64,
+      "duration": 3.3,
+      "text": "and if they do we're not automatically"
+    },
+    {
+      "start": 1132.62,
+      "duration": 2.939,
+      "text": "thinking they're going to change their"
+    },
+    {
+      "start": 1133.94,
+      "duration": 3.9,
+      "text": "name like the woman will change the"
+    },
+    {
+      "start": 1135.559,
+      "duration": 3.721,
+      "text": "surname my you know my in my own family"
+    },
+    {
+      "start": 1137.84,
+      "duration": 2.88,
+      "text": "the women that haven't changed their"
+    },
+    {
+      "start": 1139.28,
+      "duration": 3.96,
+      "text": "names"
+    },
+    {
+      "start": 1140.72,
+      "duration": 4.86,
+      "text": "um so we have to bear all these changes"
+    },
+    {
+      "start": 1143.24,
+      "duration": 4.799,
+      "text": "and patterns in behavior"
+    },
+    {
+      "start": 1145.58,
+      "duration": 3.78,
+      "text": "um so instead of just just because"
+    },
+    {
+      "start": 1148.039,
+      "duration": 3.301,
+      "text": "someone's married doesn't mean that"
+    },
+    {
+      "start": 1149.36,
+      "duration": 3.3,
+      "text": "they're going to change their name"
+    },
+    {
+      "start": 1151.34,
+      "duration": 3.78,
+      "text": "um"
+    },
+    {
+      "start": 1152.66,
+      "duration": 5.16,
+      "text": "and people can change their name at any"
+    },
+    {
+      "start": 1155.12,
+      "duration": 4.799,
+      "text": "time anyway using Deeds so you have to"
+    },
+    {
+      "start": 1157.82,
+      "duration": 5.4,
+      "text": "bear that in mind someone might then be"
+    },
+    {
+      "start": 1159.919,
+      "duration": 4.14,
+      "text": "more inclined to change their name"
+    },
+    {
+      "start": 1163.22,
+      "duration": 3.54,
+      "text": "um"
+    },
+    {
+      "start": 1164.059,
+      "duration": 4.921,
+      "text": "although most people it's still you have"
+    },
+    {
+      "start": 1166.76,
+      "duration": 4.62,
+      "text": "to register births by law"
+    },
+    {
+      "start": 1168.98,
+      "duration": 3.66,
+      "text": "um the fact of that birth certificate"
+    },
+    {
+      "start": 1171.38,
+      "duration": 3.48,
+      "text": "um"
+    },
+    {
+      "start": 1172.64,
+      "duration": 4.159,
+      "text": "doesn't necessarily mean that that"
+    },
+    {
+      "start": 1174.86,
+      "duration": 4.559,
+      "text": "person named on that birth certificate"
+    },
+    {
+      "start": 1176.799,
+      "duration": 5.5,
+      "text": "is the person that you end up looking"
+    },
+    {
+      "start": 1179.419,
+      "duration": 4.741,
+      "text": "for because of all these name changed"
+    },
+    {
+      "start": 1182.299,
+      "duration": 4.081,
+      "text": "items and everything else and people"
+    },
+    {
+      "start": 1184.16,
+      "duration": 3.18,
+      "text": "were often known by"
+    },
+    {
+      "start": 1186.38,
+      "duration": 3.179,
+      "text": "um"
+    },
+    {
+      "start": 1187.34,
+      "duration": 3.9,
+      "text": "a name that is not on the birth"
+    },
+    {
+      "start": 1189.559,
+      "duration": 3.24,
+      "text": "certificate and that becomes their"
+    },
+    {
+      "start": 1191.24,
+      "duration": 3.059,
+      "text": "common usage name or they use their"
+    },
+    {
+      "start": 1192.799,
+      "duration": 2.76,
+      "text": "middle name as their first name or"
+    },
+    {
+      "start": 1194.299,
+      "duration": 3.781,
+      "text": "whatever it happens all the time so"
+    },
+    {
+      "start": 1195.559,
+      "duration": 3.901,
+      "text": "there's all these variations some are so"
+    },
+    {
+      "start": 1198.08,
+      "duration": 2.82,
+      "text": "his historically you would have you"
+    },
+    {
+      "start": 1199.46,
+      "duration": 3.719,
+      "text": "would have looked through a full set of"
+    },
+    {
+      "start": 1200.9,
+      "duration": 5.399,
+      "text": "certificates of Earth marriage death and"
+    },
+    {
+      "start": 1203.179,
+      "duration": 5.281,
+      "text": "and glean most of the information from"
+    },
+    {
+      "start": 1206.299,
+      "duration": 4.921,
+      "text": "those facts facts of life"
+    },
+    {
+      "start": 1208.46,
+      "duration": 4.38,
+      "text": "the marriage sometimes isn't doesn't"
+    },
+    {
+      "start": 1211.22,
+      "duration": 3.06,
+      "text": "feature but then you can be fairly"
+    },
+    {
+      "start": 1212.84,
+      "duration": 3.06,
+      "text": "confident that that person was a"
+    },
+    {
+      "start": 1214.28,
+      "duration": 3.96,
+      "text": "bachelor or spinster and didn't leave"
+    },
+    {
+      "start": 1215.9,
+      "duration": 4.44,
+      "text": "any issue and these days you can't you"
+    },
+    {
+      "start": 1218.24,
+      "duration": 5.28,
+      "text": "have to find other ways to check"
+    },
+    {
+      "start": 1220.34,
+      "duration": 6.18,
+      "text": "so it's more about and ironically"
+    },
+    {
+      "start": 1223.52,
+      "duration": 5.7,
+      "text": "the way the thing that's benefit still"
+    },
+    {
+      "start": 1226.52,
+      "duration": 5.64,
+      "text": "benefits us hugely on this is the fact"
+    },
+    {
+      "start": 1229.22,
+      "duration": 5.1,
+      "text": "that we have these 50 odd retired police"
+    },
+    {
+      "start": 1232.16,
+      "duration": 3.66,
+      "text": "on the road knocking on doors asking"
+    },
+    {
+      "start": 1234.32,
+      "duration": 3.96,
+      "text": "questions speaking to the neighbors"
+    },
+    {
+      "start": 1235.82,
+      "duration": 4.26,
+      "text": "because you can go on any database you"
+    },
+    {
+      "start": 1238.28,
+      "duration": 3.3,
+      "text": "like but they're not going to tell you"
+    },
+    {
+      "start": 1240.08,
+      "duration": 4.14,
+      "text": "that someone might have had a kid with"
+    },
+    {
+      "start": 1241.58,
+      "duration": 5.219,
+      "text": "another woman down the road 20 years ago"
+    },
+    {
+      "start": 1244.22,
+      "duration": 3.9,
+      "text": "it doesn't say that on these phrases and"
+    },
+    {
+      "start": 1246.799,
+      "duration": 3.901,
+      "text": "they're not going to brag about it on"
+    },
+    {
+      "start": 1248.12,
+      "duration": 3.179,
+      "text": "social media necessarily so"
+    },
+    {
+      "start": 1250.7,
+      "duration": 2.94,
+      "text": "um"
+    },
+    {
+      "start": 1251.299,
+      "duration": 3.841,
+      "text": "funnily enough ironically you go full"
+    },
+    {
+      "start": 1253.64,
+      "duration": 3.24,
+      "text": "circle and you have to go and talk to"
+    },
+    {
+      "start": 1255.14,
+      "duration": 3.24,
+      "text": "them but you have to pick up the phone"
+    },
+    {
+      "start": 1256.88,
+      "duration": 3.48,
+      "text": "and have a decent chat with them or send"
+    },
+    {
+      "start": 1258.38,
+      "duration": 4.56,
+      "text": "someone around there to talk to them so"
+    },
+    {
+      "start": 1260.36,
+      "duration": 4.38,
+      "text": "it's it's a blended thing yes you can"
+    },
+    {
+      "start": 1262.94,
+      "duration": 3.78,
+      "text": "get basic information quicker on the"
+    },
+    {
+      "start": 1264.74,
+      "duration": 3.66,
+      "text": "internet but but you sometimes the old"
+    },
+    {
+      "start": 1266.72,
+      "duration": 2.64,
+      "text": "methods are the only way to find things"
+    },
+    {
+      "start": 1268.4,
+      "duration": 3.6,
+      "text": "out"
+    },
+    {
+      "start": 1269.36,
+      "duration": 4.38,
+      "text": "you've talked about your experience on"
+    },
+    {
+      "start": 1272.0,
+      "duration": 3.419,
+      "text": "on television I"
+    },
+    {
+      "start": 1273.74,
+      "duration": 3.36,
+      "text": "decide whether you enjoyed it or not"
+    },
+    {
+      "start": 1275.419,
+      "duration": 4.321,
+      "text": "Danny did you enjoy it"
+    },
+    {
+      "start": 1277.1,
+      "duration": 3.9,
+      "text": "I did very much yeah I it was a bit"
+    },
+    {
+      "start": 1279.74,
+      "duration": 2.76,
+      "text": "nerve-wracking like when you do this"
+    },
+    {
+      "start": 1281.0,
+      "duration": 3.78,
+      "text": "morning or something like that the first"
+    },
+    {
+      "start": 1282.5,
+      "duration": 3.72,
+      "text": "time live TV because it's going through"
+    },
+    {
+      "start": 1284.78,
+      "duration": 4.2,
+      "text": "your head this is like I can't do"
+    },
+    {
+      "start": 1286.22,
+      "duration": 6.78,
+      "text": "anything wrong but but actually yeah"
+    },
+    {
+      "start": 1288.98,
+      "duration": 5.28,
+      "text": "it's fine it takes it well maybe I was"
+    },
+    {
+      "start": 1293.0,
+      "duration": 3.24,
+      "text": "like it took me two minutes to get used"
+    },
+    {
+      "start": 1294.26,
+      "duration": 4.62,
+      "text": "to it and I was fine with it and then I"
+    },
+    {
+      "start": 1296.24,
+      "duration": 5.4,
+      "text": "did I've done quite a few things since I"
+    },
+    {
+      "start": 1298.88,
+      "duration": 5.34,
+      "text": "did I was on live TV last weekend"
+    },
+    {
+      "start": 1301.64,
+      "duration": 4.74,
+      "text": "actually on talk TV"
+    },
+    {
+      "start": 1304.22,
+      "duration": 4.439,
+      "text": "um with Trisha Goddard you might"
+    },
+    {
+      "start": 1306.38,
+      "duration": 4.679,
+      "text": "remember from the um she had a kind of"
+    },
+    {
+      "start": 1308.659,
+      "duration": 4.081,
+      "text": "Jerry Springer time show wasn't it"
+    },
+    {
+      "start": 1311.059,
+      "duration": 5.221,
+      "text": "that's right yeah yeah"
+    },
+    {
+      "start": 1312.74,
+      "duration": 7.08,
+      "text": "so she's on talk TV now um so yeah I'm"
+    },
+    {
+      "start": 1316.28,
+      "duration": 6.42,
+      "text": "happy to do it and I have like say my my"
+    },
+    {
+      "start": 1319.82,
+      "duration": 5.339,
+      "text": "the reason I think that it's good that"
+    },
+    {
+      "start": 1322.7,
+      "duration": 4.74,
+      "text": "I'm doing this is because I'm trying to"
+    },
+    {
+      "start": 1325.159,
+      "duration": 4.861,
+      "text": "promote the positive"
+    },
+    {
+      "start": 1327.44,
+      "duration": 5.34,
+      "text": "and the responsible and the professional"
+    },
+    {
+      "start": 1330.02,
+      "duration": 6.74,
+      "text": "side of the industry"
+    },
+    {
+      "start": 1332.78,
+      "duration": 7.98,
+      "text": "so go on then what's next for finders"
+    },
+    {
+      "start": 1336.76,
+      "duration": 6.279,
+      "text": "and I'm also very interested given what"
+    },
+    {
+      "start": 1340.76,
+      "duration": 4.14,
+      "text": "you've said about your Ambitions for the"
+    },
+    {
+      "start": 1343.039,
+      "duration": 5.76,
+      "text": "industry what what do you think is next"
+    },
+    {
+      "start": 1344.9,
+      "duration": 6.24,
+      "text": "for the industry as a as a whole Danny"
+    },
+    {
+      "start": 1348.799,
+      "duration": 4.921,
+      "text": "well I think for the industry as a whole"
+    },
+    {
+      "start": 1351.14,
+      "duration": 4.86,
+      "text": "I'd like to see as we touched on before"
+    },
+    {
+      "start": 1353.72,
+      "duration": 3.78,
+      "text": "I'd like to see"
+    },
+    {
+      "start": 1356.0,
+      "duration": 3.659,
+      "text": "um more people signing up to"
+    },
+    {
+      "start": 1357.5,
+      "duration": 4.26,
+      "text": "self-regulatory bodies to make sure that"
+    },
+    {
+      "start": 1359.659,
+      "duration": 4.201,
+      "text": "they're watching their own behavior and"
+    },
+    {
+      "start": 1361.76,
+      "duration": 4.62,
+      "text": "codes of conducts and everything else"
+    },
+    {
+      "start": 1363.86,
+      "duration": 4.02,
+      "text": "and uh if if there could be some formal"
+    },
+    {
+      "start": 1366.38,
+      "duration": 3.179,
+      "text": "regulator"
+    },
+    {
+      "start": 1367.88,
+      "duration": 4.08,
+      "text": "um that would be absolutely fine it'd be"
+    },
+    {
+      "start": 1369.559,
+      "duration": 4.161,
+      "text": "a good thing for us because"
+    },
+    {
+      "start": 1371.96,
+      "duration": 5.04,
+      "text": "um it could only mean that we are"
+    },
+    {
+      "start": 1373.72,
+      "duration": 4.78,
+      "text": "trusted more by the legal progression"
+    },
+    {
+      "start": 1377.0,
+      "duration": 3.78,
+      "text": "I'm not saying we're not trusted by them"
+    },
+    {
+      "start": 1378.5,
+      "duration": 5.48,
+      "text": "but there is that's always been the"
+    },
+    {
+      "start": 1380.78,
+      "duration": 5.94,
+      "text": "struggle over the last 30 years is to be"
+    },
+    {
+      "start": 1383.98,
+      "duration": 4.96,
+      "text": "taken as a key part of the legal"
+    },
+    {
+      "start": 1386.72,
+      "duration": 3.839,
+      "text": "professional legal service and I think I"
+    },
+    {
+      "start": 1388.94,
+      "duration": 3.54,
+      "text": "think to a large extent we've covered"
+    },
+    {
+      "start": 1390.559,
+      "duration": 3.541,
+      "text": "that but there's always more work to do"
+    },
+    {
+      "start": 1392.48,
+      "duration": 3.48,
+      "text": "there's more lawyers qualifying every"
+    },
+    {
+      "start": 1394.1,
+      "duration": 4.559,
+      "text": "day you've got to keep rammingham the"
+    },
+    {
+      "start": 1395.96,
+      "duration": 4.92,
+      "text": "message that"
+    },
+    {
+      "start": 1398.659,
+      "duration": 4.14,
+      "text": "you can't just trust what the family"
+    },
+    {
+      "start": 1400.88,
+      "duration": 4.679,
+      "text": "testimony is you should verify things"
+    },
+    {
+      "start": 1402.799,
+      "duration": 5.581,
+      "text": "independently The Firm you use should be"
+    },
+    {
+      "start": 1405.559,
+      "duration": 4.5,
+      "text": "a firm that you trust and you can sign"
+    },
+    {
+      "start": 1408.38,
+      "duration": 4.26,
+      "text": "up some kind of self-regulation like"
+    },
+    {
+      "start": 1410.059,
+      "duration": 4.081,
+      "text": "iapbr that kind of thing so that that's"
+    },
+    {
+      "start": 1412.64,
+      "duration": 3.96,
+      "text": "an ongoing there are things that will"
+    },
+    {
+      "start": 1414.14,
+      "duration": 4.2,
+      "text": "always be a an ongoing battle in an"
+    },
+    {
+      "start": 1416.6,
+      "duration": 3.54,
+      "text": "unregulated industry you have to keep"
+    },
+    {
+      "start": 1418.34,
+      "duration": 4.5,
+      "text": "proving your worth when you're standing"
+    },
+    {
+      "start": 1420.14,
+      "duration": 4.919,
+      "text": "and everything else the company grown"
+    },
+    {
+      "start": 1422.84,
+      "duration": 3.839,
+      "text": "organically since I started and it"
+    },
+    {
+      "start": 1425.059,
+      "duration": 4.381,
+      "text": "doesn't show any signs of slowing down"
+    },
+    {
+      "start": 1426.679,
+      "duration": 6.181,
+      "text": "so I think the finders itself would like"
+    },
+    {
+      "start": 1429.44,
+      "duration": 5.88,
+      "text": "to be opening uh more offices"
+    },
+    {
+      "start": 1432.86,
+      "duration": 4.92,
+      "text": "um in in different countries it as and"
+    },
+    {
+      "start": 1435.32,
+      "duration": 3.599,
+      "text": "where we can because you often have a"
+    },
+    {
+      "start": 1437.78,
+      "duration": 3.6,
+      "text": "local"
+    },
+    {
+      "start": 1438.919,
+      "duration": 5.221,
+      "text": "um contact who can do research for you"
+    },
+    {
+      "start": 1441.38,
+      "duration": 4.26,
+      "text": "but when we started in Australia the"
+    },
+    {
+      "start": 1444.14,
+      "duration": 4.08,
+      "text": "opening office in Australia was because"
+    },
+    {
+      "start": 1445.64,
+      "duration": 5.279,
+      "text": "those contacts you know they changed and"
+    },
+    {
+      "start": 1448.22,
+      "duration": 5.16,
+      "text": "they they get older they retire they"
+    },
+    {
+      "start": 1450.919,
+      "duration": 4.201,
+      "text": "move on so we kind of we built up this"
+    },
+    {
+      "start": 1453.38,
+      "duration": 4.32,
+      "text": "amazing Network we"
+    },
+    {
+      "start": 1455.12,
+      "duration": 6.0,
+      "text": "we traced um in the last year we just"
+    },
+    {
+      "start": 1457.7,
+      "duration": 6.9,
+      "text": "did the certificate statistics we um"
+    },
+    {
+      "start": 1461.12,
+      "duration": 5.82,
+      "text": "traced over 11 000 beneficiaries in 66"
+    },
+    {
+      "start": 1464.6,
+      "duration": 5.04,
+      "text": "different countries around the world wow"
+    },
+    {
+      "start": 1466.94,
+      "duration": 6.119,
+      "text": "so we do have the reach and the ability"
+    },
+    {
+      "start": 1469.64,
+      "duration": 5.22,
+      "text": "to to get in touch with people in a vast"
+    },
+    {
+      "start": 1473.059,
+      "duration": 5.881,
+      "text": "number of countries but that again that"
+    },
+    {
+      "start": 1474.86,
+      "duration": 5.939,
+      "text": "scene is always shifting now Ukraine was"
+    },
+    {
+      "start": 1478.94,
+      "duration": 4.02,
+      "text": "um there's a lot of ukrainians who went"
+    },
+    {
+      "start": 1480.799,
+      "duration": 3.661,
+      "text": "to the states and died and their"
+    },
+    {
+      "start": 1482.96,
+      "duration": 3.18,
+      "text": "relatives would be back in the Ukraine"
+    },
+    {
+      "start": 1484.46,
+      "duration": 4.92,
+      "text": "and that of course everything to do with"
+    },
+    {
+      "start": 1486.14,
+      "duration": 4.68,
+      "text": "Ukraine is like indefinitely on hold now"
+    },
+    {
+      "start": 1489.38,
+      "duration": 3.84,
+      "text": "um and if you think back through history"
+    },
+    {
+      "start": 1490.82,
+      "duration": 4.56,
+      "text": "Poland has changed its borders more"
+    },
+    {
+      "start": 1493.22,
+      "duration": 3.54,
+      "text": "times than you know you can think to"
+    },
+    {
+      "start": 1495.38,
+      "duration": 3.419,
+      "text": "remember"
+    },
+    {
+      "start": 1496.76,
+      "duration": 4.74,
+      "text": "um so keeping that International Network"
+    },
+    {
+      "start": 1498.799,
+      "duration": 4.74,
+      "text": "live and growing the association that we"
+    },
+    {
+      "start": 1501.5,
+      "duration": 3.659,
+      "text": "belong to is good because you need to"
+    },
+    {
+      "start": 1503.539,
+      "duration": 3.12,
+      "text": "keep updating your information your"
+    },
+    {
+      "start": 1505.159,
+      "duration": 2.88,
+      "text": "resources and everything else it's a"
+    },
+    {
+      "start": 1506.659,
+      "duration": 3.961,
+      "text": "constant"
+    },
+    {
+      "start": 1508.039,
+      "duration": 4.441,
+      "text": "the field it never stands still like in"
+    },
+    {
+      "start": 1510.62,
+      "duration": 4.38,
+      "text": "many fields that I think finders in the"
+    },
+    {
+      "start": 1512.48,
+      "duration": 5.16,
+      "text": "future has to remain agile"
+    },
+    {
+      "start": 1515.0,
+      "duration": 5.7,
+      "text": "um quick to respond to changes and on"
+    },
+    {
+      "start": 1517.64,
+      "duration": 4.98,
+      "text": "top of the regulatory or self-regulatory"
+    },
+    {
+      "start": 1520.7,
+      "duration": 3.3,
+      "text": "regime so that's why I hope we go in the"
+    },
+    {
+      "start": 1522.62,
+      "duration": 3.84,
+      "text": "future"
+    },
+    {
+      "start": 1524.0,
+      "duration": 4.5,
+      "text": "um and we make maximum use of our"
+    },
+    {
+      "start": 1526.46,
+      "duration": 4.26,
+      "text": "contacts in that way so that's my"
+    },
+    {
+      "start": 1528.5,
+      "duration": 4.4,
+      "text": "ambitions for the company do you see"
+    },
+    {
+      "start": 1530.72,
+      "duration": 4.92,
+      "text": "that there's any opportunity for"
+    },
+    {
+      "start": 1532.9,
+      "duration": 4.42,
+      "text": "intervention in in the regulatory side"
+    },
+    {
+      "start": 1535.64,
+      "duration": 3.72,
+      "text": "of things you know some sort of"
+    },
+    {
+      "start": 1537.32,
+      "duration": 4.8,
+      "text": "government or quasi-government"
+    },
+    {
+      "start": 1539.36,
+      "duration": 4.14,
+      "text": "intervention to set some standards in"
+    },
+    {
+      "start": 1542.12,
+      "duration": 3.84,
+      "text": "this industry"
+    },
+    {
+      "start": 1543.5,
+      "duration": 4.14,
+      "text": "as I said before I wouldn't mind that if"
+    },
+    {
+      "start": 1545.96,
+      "duration": 3.24,
+      "text": "there was I'd be fine absolutely fine"
+    },
+    {
+      "start": 1547.64,
+      "duration": 3.36,
+      "text": "I'd welcome it as long as we could be"
+    },
+    {
+      "start": 1549.2,
+      "duration": 4.56,
+      "text": "part of the process"
+    },
+    {
+      "start": 1551.0,
+      "duration": 4.86,
+      "text": "um you know and it'd be horrible to set"
+    },
+    {
+      "start": 1553.76,
+      "duration": 3.48,
+      "text": "rules just thrown on you but I don't"
+    },
+    {
+      "start": 1555.86,
+      "duration": 3.84,
+      "text": "think that's the way it really works so"
+    },
+    {
+      "start": 1557.24,
+      "duration": 4.26,
+      "text": "yeah we we have"
+    },
+    {
+      "start": 1559.7,
+      "duration": 4.14,
+      "text": "um as far as we can we check our"
+    },
+    {
+      "start": 1561.5,
+      "duration": 4.98,
+      "text": "processes with the SRA"
+    },
+    {
+      "start": 1563.84,
+      "duration": 4.8,
+      "text": "anyone that's listed an SRA regulated"
+    },
+    {
+      "start": 1566.48,
+      "duration": 5.16,
+      "text": "solicitor employees to do a certain area"
+    },
+    {
+      "start": 1568.64,
+      "duration": 5.1,
+      "text": "of work should be in in compliance with"
+    },
+    {
+      "start": 1571.64,
+      "duration": 4.74,
+      "text": "the SRA code even so far as where that"
+    },
+    {
+      "start": 1573.74,
+      "duration": 4.08,
+      "text": "touches upon that area of work so we're"
+    },
+    {
+      "start": 1576.38,
+      "duration": 2.76,
+      "text": "always aware of that and we're always"
+    },
+    {
+      "start": 1577.82,
+      "duration": 3.479,
+      "text": "trying to make sure that we don't"
+    },
+    {
+      "start": 1579.14,
+      "duration": 4.08,
+      "text": "Venture into territory that would cause"
+    },
+    {
+      "start": 1581.299,
+      "duration": 3.181,
+      "text": "our clients difficulties it wouldn't be"
+    },
+    {
+      "start": 1583.22,
+      "duration": 3.3,
+      "text": "us of course because we're not the"
+    },
+    {
+      "start": 1584.48,
+      "duration": 4.559,
+      "text": "regulated ones the reason I don't think"
+    },
+    {
+      "start": 1586.52,
+      "duration": 4.2,
+      "text": "it'll be regulated is because simply the"
+    },
+    {
+      "start": 1589.039,
+      "duration": 2.76,
+      "text": "probate research industry isn't really"
+    },
+    {
+      "start": 1590.72,
+      "duration": 3.24,
+      "text": "big enough"
+    },
+    {
+      "start": 1591.799,
+      "duration": 4.86,
+      "text": "um to Warrant an independent regulator"
+    },
+    {
+      "start": 1593.96,
+      "duration": 5.28,
+      "text": "so self-regulation I think would be if"
+    },
+    {
+      "start": 1596.659,
+      "duration": 4.561,
+      "text": "we get to the point where we where"
+    },
+    {
+      "start": 1599.24,
+      "duration": 5.039,
+      "text": "a solicitor thinks well they're not part"
+    },
+    {
+      "start": 1601.22,
+      "duration": 5.04,
+      "text": "of this IEP PR so we're not using them"
+    },
+    {
+      "start": 1604.279,
+      "duration": 3.9,
+      "text": "that would be great"
+    },
+    {
+      "start": 1606.26,
+      "duration": 4.98,
+      "text": "um but in the meantime the IEP PR is"
+    },
+    {
+      "start": 1608.179,
+      "duration": 5.461,
+      "text": "there also as an advisory thing for"
+    },
+    {
+      "start": 1611.24,
+      "duration": 4.2,
+      "text": "um if beneficiaries are contacted out"
+    },
+    {
+      "start": 1613.64,
+      "duration": 4.44,
+      "text": "the blue by someone they think it's a"
+    },
+    {
+      "start": 1615.44,
+      "duration": 5.219,
+      "text": "scam they can go online and hopefully"
+    },
+    {
+      "start": 1618.08,
+      "duration": 4.74,
+      "text": "find IA PPR and get a reference from the"
+    },
+    {
+      "start": 1620.659,
+      "duration": 4.081,
+      "text": "company secretary to tell them whether"
+    },
+    {
+      "start": 1622.82,
+      "duration": 3.959,
+      "text": "the company is genuine or not"
+    },
+    {
+      "start": 1624.74,
+      "duration": 4.02,
+      "text": "going back to the TV show that's that's"
+    },
+    {
+      "start": 1626.779,
+      "duration": 5.041,
+      "text": "the big one for the public"
+    },
+    {
+      "start": 1628.76,
+      "duration": 4.38,
+      "text": "you know um anyone who's done that TV"
+    },
+    {
+      "start": 1631.82,
+      "duration": 3.239,
+      "text": "show for"
+    },
+    {
+      "start": 1633.14,
+      "duration": 5.279,
+      "text": "for that length of time"
+    },
+    {
+      "start": 1635.059,
+      "duration": 5.821,
+      "text": "gives them great reassurance I think"
+    },
+    {
+      "start": 1638.419,
+      "duration": 4.38,
+      "text": "it's an area that I find"
+    },
+    {
+      "start": 1640.88,
+      "duration": 3.659,
+      "text": "fascinating and I can probably talk to"
+    },
+    {
+      "start": 1642.799,
+      "duration": 3.301,
+      "text": "you for much of the rest of the day"
+    },
+    {
+      "start": 1644.539,
+      "duration": 4.561,
+      "text": "about it Danny but we're fast running"
+    },
+    {
+      "start": 1646.1,
+      "duration": 4.62,
+      "text": "out of time it's been great to have you"
+    },
+    {
+      "start": 1649.1,
+      "duration": 3.12,
+      "text": "on the podcast I really appreciate you"
+    },
+    {
+      "start": 1650.72,
+      "duration": 2.4,
+      "text": "joining and thank you for sharing your"
+    },
+    {
+      "start": 1652.22,
+      "duration": 3.18,
+      "text": "Insight"
+    },
+    {
+      "start": 1653.12,
+      "duration": 5.58,
+      "text": "no it's a pleasure and if ever the"
+    },
+    {
+      "start": 1655.4,
+      "duration": 5.399,
+      "text": "surname Opie comes up in a family tree"
+    },
+    {
+      "start": 1658.7,
+      "duration": 4.88,
+      "text": "don't contact me for goodness sake yeah"
+    },
+    {
+      "start": 1660.799,
+      "duration": 2.781,
+      "text": "you don't want the money"
+    },
+    {
+      "start": 1664.76,
+      "duration": 3.299,
+      "text": "the today's Wilson probate podcast is"
+    },
+    {
+      "start": 1666.5,
+      "duration": 3.299,
+      "text": "available on your preferred podcast"
+    },
+    {
+      "start": 1668.059,
+      "duration": 4.74,
+      "text": "provider it's also available on today's"
+    },
+    {
+      "start": 1669.799,
+      "duration": 5.281,
+      "text": "wasn't probate dot Co dot UK my thanks"
+    },
+    {
+      "start": 1672.799,
+      "duration": 3.801,
+      "text": "to Danny thank you for listening and"
+    },
+    {
+      "start": 1675.08,
+      "duration": 4.44,
+      "text": "we'll see you again soon"
+    },
+    {
+      "start": 1676.6,
+      "duration": 5.74,
+      "text": "you're listening to the today's wills"
+    },
+    {
+      "start": 1679.52,
+      "duration": 4.86,
+      "text": "and probate podcast one of the leading"
+    },
+    {
+      "start": 1682.34,
+      "duration": 5.04,
+      "text": "sources of information for the Wilson"
+    },
+    {
+      "start": 1684.38,
+      "duration": 6.0,
+      "text": "probate sector don't forget to subscribe"
+    },
+    {
+      "start": 1687.38,
+      "duration": 6.24,
+      "text": "and sign up to our free newsletter at"
+    },
+    {
+      "start": 1690.38,
+      "duration": 8.179,
+      "text": "today's wills and probate dot Co dot UK"
+    },
+    {
+      "start": 1693.62,
+      "duration": 4.939,
+      "text": "and follow us on LinkedIn and Twitter"
+    }
+  ],
+  "full_text": "you're listening to the today's wills and probate podcast one of the leading sources of information for the Wilson probate sector don't forget to subscribe and sign up to our free newsletter at today's wills and probate dot Co dot UK and follow us on LinkedIn and Twitter hello and welcome to the first today's Wilson probate podcast of 2023 it's a new year I have a new guest somebody's we have not had on the podcast before my thanks to Danny Curran founder and MD of finders International for joining thank you for coming on the podcast Danny it's a pleasure David and happy New Year to you thank you Johnny as I said founder and MD defines International you're going to tell us so much more about that and probably an awful lot better than I am and today we're going to talk about genealogy what you do in the industry some of the different services that finders offer but also I'm very interested in some of those anecdotal stories as well that you can tell us I'm I'm sure firstly though tell us a little bit about yourself the 25th anniversary of finders was in 2022 a very odd date I remember you saying tell us about yourself in the first instance how on Earth did you get involved in genealogy in the first place well um it's a long story it's actually I've been involved in Probate research and genealogy for 30 years since 1990 um so it's 32 years now crisis time is moving on um my father was a private detective in the 1960s and he started to do a bit of this kind of work while during his time as a as a pi um and then he formed a company called title research which in other program research company which I joined in 1990 um and then in 1997 it's a long time ago now but there was a big family bust up um and I we we went our separate ways so it's all healed now time has healed all the Rifts um but I basically just started again because our title research I've built up the company um through kind of a certain area mainly areas of work that were competitive and my belief was I could make a bigger breakthroughs in the competitive Arena which was dominated by a couple of other firms so when I started finders my first Port of Call was to work on what we call public domain cases and my my routine was um the bone of a cancer division advertised unclaimed Estates in the newspapers in in the 90s and it was fairly predictable sort of every Tuesday and Thursday something like that um so what I did is I I went down to King's cross station where they dropped off the newspapers at midnight and literally got them off the back of the lorry um so while my competitors were sleeping I went off to the office and did all the research myself on microbeesh is the obviously pre-internet and with uh with a bit of luck and judgment um I managed to to crack a few cases that way and then I'll go off on the weekend and visit the beneficiaries and sign them up it was just very hard work I just had to do it I knew what I was doing and I've had a lot of experience and actually following on from that once the name was I started to advertise the name and people you know got to know that I had a new company there were a lot of lawyers that had used me my previous employment so they kind of followed me to find us and uh and there we are so it's quite a long story short I've now got to have about 100 employees and 50 freelance uh retired police officers you know on our team and offices in London Edinburgh Dublin and Sydney and Australia so it's been a long a long journey um and uh it's not over yet but it's uh it's from very humble beginnings so you know that that's how I started oh incredible and you talk about the fact that you went down to King's cross got the paper off the off the back of the Lorry we're going to talk about how the industry's changed because you're absolutely right you've started this business pre-internet what what is the impact of the internet and Technology been on genealogy Services because you know I'm very naive about these things you know I look at social media Facebook that kind of thing there was uh what was that website years ago friends reunited yes all that kind of stuff you know the internet really changed this industry presumably yeah as I say the the records we we rely on you know Vital Records the the key records to any family tree birth marriage and death indexes so um when I started they were all the the master copies of you like a big huge kind of um about 50 60 centimeter High books uh let you know hard covers and leather handles and they stored them all on the shelves of Saint Catherine's house and it was physical so you go down there and you hike these great big books off the shelf slam them on the bench behind you and flick through like a telephone directory when you're looking up a birth entry so everyone's in these books when you do you look up the name like a birth um a birth entry like a telephone directory and then that information you can build up a family tree so the internet we I think I had an early Dial up which you remember the the modem the dialect modems and they they sounded like a factory machine and then the unpredictable nature of whether that would even work but in the early days you'd get as you say friends reunited was one of the early ones but there wasn't any great deal of information until I'd say at least five or six years further down the line then it started to become more of a thing um I was actually involved in the early discussions on products which ended up being find my path um so but I was busy with my setting up my own business so I didn't get involved um which probably not you know I should have done really with hindsights obviously made a lot of money but um but there you go so that we knew that we always knew that these products were in the making we knew what ancestry we were up to we in touch with Americans and what they were doing so we knew it was coming um but even now we've kept all these original light fish in the office we've got every single birth marriage and death entry on right graffiti from 1837 [Music] to when they stopped making them which I think is around about 2 000 so we bought them all you had to buy a copy of these microviche birth Prejudice every single person in England Wales is on them um and a manual so so if you imagine that if you're filling in a web form to try and find someone's date of birth you're probably looking at you know like 10 20 seconds 30 second operation um so that would take at least half an hour for that one search um and if it's a common surname even longer um so the internet transformed the speed but also it had it's a like many things double-edged sword it increased the number of Errors because the scanning errors you're scanning old documents and therefore the the OCR recognition you know the optical character recognition the scanning software has to be super Reliant in terms of translating all that into readable entries um which said that you know then digitized so the skills then became more around what if they'd missed something what if it's felt wrong um how do we investigate first how do we verify what we found out so um obviously the ultimate verification is then to find The Descendants on that branch of the family and talk to them and see if it matches up if they remember um of course they might not even know their own ancestry so you might be on a bit but hiding to nothing there but um at least you could then make some progress and sometimes it works out quicker but even today you can't really you know you hope it's right and most the time it's it's good but there's still many situations where the fact that the internet records especially for the UK um are good doesn't doesn't shortcut any process especially when the research goes abroad I think you're alluding to this next question in what you've said but do you face the same issues today that you faced 25 years ago and if they're different how are they different I'd say they're different issues because obviously we're now um the biggest company in the UK in our field and we've got a huge number of staff so personally my my day-to-day work is very different I don't do the casework anymore um the one thing that I'm doing more of that I always wanted to happen was to deal with the industry regulation to become a kind of face for the industry and do all the media work and uh press and TV I've done over 150 radio press interviews TV you've now appeared under today's rules and probate podcast my career is now reached a new pie by being on the TWP podcast so I I've kind of I want and every time I've done these shows I've always tried to highlight the positivity there's what the one thing that hasn't changed is that most firms in this Arena wanted to be and still want to be kind of what they call under the radar so they want to be doing this sort of dark art that no one really knows much about and this really came to a head when we were on BBC One air Hunters so that was that was on TV for 12 series and is still repeated endlessly on minor channels so um when we started doing that we decided to really go for it and really professionalize it the way we did it the way we we know we we even got a stylist in to help us with what we should wear how we should talk what we should do and we we presented it in our best possible way because I'm a firm believer if you're going to do it do it properly you know don't sort of stand there in your worst nylon shirt looking sweaty and um you know awkward you just do it to the best of your ability so we did that and from on the back of that that's when I started to do all the press and TV throughout the because it generated a lot of interest in the public if and therefore um the things but the things that haven't changed as I say is that there was a great deal of resentment and animosity from within the industry um firmsing why are you doing this show what a stupid idea why have you done that and really ante it um and those of us that were on it were just realizing that you know if you can't beat them join them I mean there are times in business where you have to make a business decision it might not be one you like but once we've made that decision to do it and to seize it you know take the bull by the horns and to do it properly we not only we became the leading voices in our industry but our turnover grew we were easily recognized by it wasn't so much a show for professionals it was a show for the public so when you're knocking on the door of someone's house or one of our Representatives is quite often they're going and we'd be on the TV sitting right in front of them so because it was a daytime program on BBC One and many many people saw it during its height so on the back of that we gained a lot of reassurance in the public thinking we're not a scam it's not a weird thing going on um the professionals neither here nor there they didn't really have an opinion but a lot of the people within the industry were really anti and vocal about how Dreadful air Hunters are and even to this day they some of the firms in the industry put their emphasis on how you know that how wrong they think certain things we do is and these are people in the same industry um it's really odd and I've never understood it because we have we're very lucky we have good news stories all of our work is about good news it's bittersweet of course some you know especially when someone's died and we have to break that news to relatives but how lucky are we that we can actually effectively tell people they're a lottery winner every day or every week did bringing genealogy services and air hunting to wider public attention benefit the industry as a whole do you think I think the the one area where the the TV show was kind of contradictory was that we're trying to at the same time I I started um self-regulatory body um six years ago the first one of its kind in our industry called The International Association of professional probate researchers and there's a large number of international members now um we have an AGM ippr.org is the website if people are interested so we've introduced self-regulation in an unregulated industry codes of conduct codes of ethics and all that kind of thing um and that was kind of in response in a way to the people watching the TV show thinking oh that's I'll give that a go and you know as people do now some of those people gave it a go and were okay with it but what people don't you know what people don't realize is that some people ended up in jail having to have done it because and this is the weird thing to get to the bottom of this um in this world of anti-money laundering and proving our shoe size before we can do anything when the treasury solicitor the cancer division admits a claim they give you details of where the assets are and you write to them and you say I represent them and they just hand over the money so some people were tempted to uh run off with the money um because you don't have to be a solicitor to receive the money it's it can go to an unregulated firm we represent the Mexican hand over the money and they do and you know at some point you have to you're living in a world where information is everywhere the internet is everywhere you you've got to be more transparent you've got to show the show your hand in some ways and prove to people that you're playing um you're running your business fairly and and professionally what about lawyers themselves then do you see that lawyers have benefited from this uh I suppose boom in interest in in genealogy okay this is a great example because there's stories that I could bore you endlessly with stories but the amount of times that people with solicitors have come to us and said this is the soul layer or this is the only one or we know it's going to go to cousins there's no closer relatives to the deceased he's only got these distant cousins the amount of times that's been wrong um and there's no obligation legally on them to check everything because you go to play a point a personal representative who could be the deceased customer and you say some you say to that cousin do you want us to check there's no one that's entitled before you um what's your answer going to be probably uh no I think we'll leave it at that and and hand over the money so there needs to be in my view something compelling solicitors to check um you know to verify the family tree and in other countries abroad it is part of the legal process you have to do it and like I say the amount of times you know last week there was a set of cousins referred to us and we found that the deceased at Half Blood siblings that no one knew about the massive story about a lady called Margaret Abbott last year in the Daily Mail who was a half sister to a lady she'd only met once as a baby and again the solicitors came to us with cousins saying that can you just verify the family tree so great praise to those solicitors who think like that who think let's check um and let's make sure we check because I wouldn't begin to count the I mean there must be millions that have been distributed wrongly over the years is we've got an office in Ireland an island and the worst for this because they they all think they know each other and um you know they couldn't possibly have a legit illegitimate children because they're Catholic and that would never happen of course so so you have a solicit an island will say oh yeah Paddy down the road he told me that he's only got two brothers and that's it well of course um they don't tell you about the story of the one that went to America and you know had loads of kids and whatever so and these are the things that happen to us every day you know every I'd say every week there's something like this happens um so please please if you're always listen to listen to this think about verification can be cheap it can be free in some cases but it's well worth doing and then on the back of that you can ensure against beneficiaries turning up and you know ones that were missed even by us you know that does happen um and just and then the insurance policy will take care of any unpaid inheritances I think it's probably fair to say historically that if you had a sort of murky family background you weren't particularly transparent about it these days you've got a huge rise in divorce you've got Blended families you've got a very different demographic I suppose societal demographic does that change the way that you work does that has that made your job more difficult yeah in some ways the changes in um Society patterns will alter our thinking on how we go about the research because we're not automatically thinking people will be getting married and if they do we're not automatically thinking they're going to change their name like the woman will change the surname my you know my in my own family the women that haven't changed their names um so we have to bear all these changes and patterns in behavior um so instead of just just because someone's married doesn't mean that they're going to change their name um and people can change their name at any time anyway using Deeds so you have to bear that in mind someone might then be more inclined to change their name um although most people it's still you have to register births by law um the fact of that birth certificate um doesn't necessarily mean that that person named on that birth certificate is the person that you end up looking for because of all these name changed items and everything else and people were often known by um a name that is not on the birth certificate and that becomes their common usage name or they use their middle name as their first name or whatever it happens all the time so there's all these variations some are so his historically you would have you would have looked through a full set of certificates of Earth marriage death and and glean most of the information from those facts facts of life the marriage sometimes isn't doesn't feature but then you can be fairly confident that that person was a bachelor or spinster and didn't leave any issue and these days you can't you have to find other ways to check so it's more about and ironically the way the thing that's benefit still benefits us hugely on this is the fact that we have these 50 odd retired police on the road knocking on doors asking questions speaking to the neighbors because you can go on any database you like but they're not going to tell you that someone might have had a kid with another woman down the road 20 years ago it doesn't say that on these phrases and they're not going to brag about it on social media necessarily so um funnily enough ironically you go full circle and you have to go and talk to them but you have to pick up the phone and have a decent chat with them or send someone around there to talk to them so it's it's a blended thing yes you can get basic information quicker on the internet but but you sometimes the old methods are the only way to find things out you've talked about your experience on on television I decide whether you enjoyed it or not Danny did you enjoy it I did very much yeah I it was a bit nerve-wracking like when you do this morning or something like that the first time live TV because it's going through your head this is like I can't do anything wrong but but actually yeah it's fine it takes it well maybe I was like it took me two minutes to get used to it and I was fine with it and then I did I've done quite a few things since I did I was on live TV last weekend actually on talk TV um with Trisha Goddard you might remember from the um she had a kind of Jerry Springer time show wasn't it that's right yeah yeah so she's on talk TV now um so yeah I'm happy to do it and I have like say my my the reason I think that it's good that I'm doing this is because I'm trying to promote the positive and the responsible and the professional side of the industry so go on then what's next for finders and I'm also very interested given what you've said about your Ambitions for the industry what what do you think is next for the industry as a as a whole Danny well I think for the industry as a whole I'd like to see as we touched on before I'd like to see um more people signing up to self-regulatory bodies to make sure that they're watching their own behavior and codes of conducts and everything else and uh if if there could be some formal regulator um that would be absolutely fine it'd be a good thing for us because um it could only mean that we are trusted more by the legal progression I'm not saying we're not trusted by them but there is that's always been the struggle over the last 30 years is to be taken as a key part of the legal professional legal service and I think I think to a large extent we've covered that but there's always more work to do there's more lawyers qualifying every day you've got to keep rammingham the message that you can't just trust what the family testimony is you should verify things independently The Firm you use should be a firm that you trust and you can sign up some kind of self-regulation like iapbr that kind of thing so that that's an ongoing there are things that will always be a an ongoing battle in an unregulated industry you have to keep proving your worth when you're standing and everything else the company grown organically since I started and it doesn't show any signs of slowing down so I think the finders itself would like to be opening uh more offices um in in different countries it as and where we can because you often have a local um contact who can do research for you but when we started in Australia the opening office in Australia was because those contacts you know they changed and they they get older they retire they move on so we kind of we built up this amazing Network we we traced um in the last year we just did the certificate statistics we um traced over 11 000 beneficiaries in 66 different countries around the world wow so we do have the reach and the ability to to get in touch with people in a vast number of countries but that again that scene is always shifting now Ukraine was um there's a lot of ukrainians who went to the states and died and their relatives would be back in the Ukraine and that of course everything to do with Ukraine is like indefinitely on hold now um and if you think back through history Poland has changed its borders more times than you know you can think to remember um so keeping that International Network live and growing the association that we belong to is good because you need to keep updating your information your resources and everything else it's a constant the field it never stands still like in many fields that I think finders in the future has to remain agile um quick to respond to changes and on top of the regulatory or self-regulatory regime so that's why I hope we go in the future um and we make maximum use of our contacts in that way so that's my ambitions for the company do you see that there's any opportunity for intervention in in the regulatory side of things you know some sort of government or quasi-government intervention to set some standards in this industry as I said before I wouldn't mind that if there was I'd be fine absolutely fine I'd welcome it as long as we could be part of the process um you know and it'd be horrible to set rules just thrown on you but I don't think that's the way it really works so yeah we we have um as far as we can we check our processes with the SRA anyone that's listed an SRA regulated solicitor employees to do a certain area of work should be in in compliance with the SRA code even so far as where that touches upon that area of work so we're always aware of that and we're always trying to make sure that we don't Venture into territory that would cause our clients difficulties it wouldn't be us of course because we're not the regulated ones the reason I don't think it'll be regulated is because simply the probate research industry isn't really big enough um to Warrant an independent regulator so self-regulation I think would be if we get to the point where we where a solicitor thinks well they're not part of this IEP PR so we're not using them that would be great um but in the meantime the IEP PR is there also as an advisory thing for um if beneficiaries are contacted out the blue by someone they think it's a scam they can go online and hopefully find IA PPR and get a reference from the company secretary to tell them whether the company is genuine or not going back to the TV show that's that's the big one for the public you know um anyone who's done that TV show for for that length of time gives them great reassurance I think it's an area that I find fascinating and I can probably talk to you for much of the rest of the day about it Danny but we're fast running out of time it's been great to have you on the podcast I really appreciate you joining and thank you for sharing your Insight no it's a pleasure and if ever the surname Opie comes up in a family tree don't contact me for goodness sake yeah you don't want the money the today's Wilson probate podcast is available on your preferred podcast provider it's also available on today's wasn't probate dot Co dot UK my thanks to Danny thank you for listening and we'll see you again soon you're listening to the today's wills and probate podcast one of the leading sources of information for the Wilson probate sector don't forget to subscribe and sign up to our free newsletter at today's wills and probate dot Co dot UK and follow us on LinkedIn and Twitter",
+  "attempts": [
+    {
+      "client": "IOS",
+      "playability": {
+        "status": "OK",
+        "playableInEmbed": true,
+        "offlineability": {
+          "buttonRenderer": {
+            "navigationEndpoint": {
+              "clickTrackingParams": "CAoQ6ewBIhMIgf-Di-zblwMV-EhMCB0Y3SPzygEEl2UnyQ==",
+              "ypcGetOfflineUpsellEndpoint": {
+                "params": "ChPqqN25AQ0KC0FLdkVGSkhmNUswIgtBS3ZFRkpIZjVLMCoVCAkYAVIPCgtBS3ZFRkpIZjVLMCABMAM%3D"
+              }
+            },
+            "trackingParams": "CAoQ6ewBIhMIgf-Di-zblwMV-EhMCB0Y3SPz"
+          }
+        },
+        "pictureInPicture": {
+          "pictureInPictureRenderer": {
+            "playableInPip": true,
+            "offByDefault": false,
+            "shouldResumeOnHead": false
+          }
+        },
+        "miniplayer": {
+          "miniplayerRenderer": {
+            "playbackMode": "PLAYBACK_MODE_ALLOW"
+          }
+        },
+        "contextParams": "Q0FFU0FnZ0M="
+      },
+      "outcome": "ok"
+    }
+  ],
+  "fetched_at": "2026-10-28T04:11:20.921910+00:00",
+  "client": "IOS",
+  "json_path": "transcripts/047_AKvEFJHf5K0.json",
+  "text_path": "transcripts/047_AKvEFJHf5K0.txt"
+}

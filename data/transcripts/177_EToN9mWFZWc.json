@@ -1,0 +1,4206 @@
+{
+  "index": 177,
+  "url": "https://www.youtube.com/watch?v=EToN9mWFZWc",
+  "video_id": "EToN9mWFZWc",
+  "status": "ok",
+  "metadata": {
+    "title": "Regrid Parcel Data - Overview & Coverage",
+    "author": "Regrid",
+    "channelId": "UCY6_FliC-rX76wQMYyow-1A",
+    "lengthSeconds": "2157",
+    "viewCount": "439",
+    "shortDescription": "Listen to Matt Hampel (Sr. Architect at Regrid) give a complete overview & demo of the Regrid Parcel Data during our live webinar session.\n\nTopics covered in this video are:\n1. Introduction of Regrid Parcel Data\n2. Coverage & attribution\n3. Data update & refresh frequency\n4. Standard & premium fields\n5. Data Delivery Methods\n6. Support docs & live Q& A",
+    "keywords": [
+      "landgrid",
+      "loveland",
+      "parcel data",
+      "parcel maps",
+      "property data",
+      "property records",
+      "maps",
+      "GIS",
+      "live video",
+      "webinar",
+      "videocast",
+      "data"
+    ]
+  },
+  "caption_tracks": [
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=EToN9mWFZWc&ei=_3XhauruEbOQsfIP34ayyQQ&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185903&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=9DC42AB27FB071F28410BF30CA2D0C58638558CD.B12D026B71C268F0F53CBE2561D210FC8B34D613&key=yt8&kind=asr&lang=en",
+      "name": {
+        "runs": [
+          {
+            "text": "English (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.en",
+      "languageCode": "en",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    }
+  ],
+  "selected_track": {
+    "baseUrl": "https://www.youtube.com/api/timedtext?v=EToN9mWFZWc&ei=_3XhauruEbOQsfIP34ayyQQ&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185903&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=9DC42AB27FB071F28410BF30CA2D0C58638558CD.B12D026B71C268F0F53CBE2561D210FC8B34D613&key=yt8&kind=asr&lang=en",
+    "name": {
+      "runs": [
+        {
+          "text": "English (auto-generated)"
+        }
+      ]
+    },
+    "vssId": "a.en",
+    "languageCode": "en",
+    "kind": "asr",
+    "isTranslatable": true,
+    "trackName": ""
+  },
+  "segments": [
+    {
+      "start": 7.16,
+      "duration": 6.25,
+      "text": "all right and we are live welcome"
+    },
+    {
+      "start": 11.16,
+      "duration": 4.649,
+      "text": "welcome this is the first ever date up"
+    },
+    {
+      "start": 13.41,
+      "duration": 4.83,
+      "text": "landed parcel data webinar that we are"
+    },
+    {
+      "start": 15.809,
+      "duration": 5.161,
+      "text": "doing we're so excited and thank you all"
+    },
+    {
+      "start": 18.24,
+      "duration": 5.129,
+      "text": "all the attendees for registering and"
+    },
+    {
+      "start": 20.97,
+      "duration": 6.71,
+      "text": "joining us live let's keep this"
+    },
+    {
+      "start": 23.369,
+      "duration": 7.381,
+      "text": "interaction interactive so you can use"
+    },
+    {
+      "start": 27.68,
+      "duration": 4.839,
+      "text": "the Bluefish console on your interface"
+    },
+    {
+      "start": 30.75,
+      "duration": 3.57,
+      "text": "to like let us know if you have any"
+    },
+    {
+      "start": 32.519,
+      "duration": 4.261,
+      "text": "questions if you're curious about"
+    },
+    {
+      "start": 34.32,
+      "duration": 4.409,
+      "text": "anything if you would like us to repeat"
+    },
+    {
+      "start": 36.78,
+      "duration": 5.4,
+      "text": "a few things or show the screenshot"
+    },
+    {
+      "start": 38.729,
+      "duration": 6.57,
+      "text": "again please please let us know as we go"
+    },
+    {
+      "start": 42.18,
+      "duration": 6.15,
+      "text": "along it's it's gonna be just me and"
+    },
+    {
+      "start": 45.299,
+      "duration": 5.22,
+      "text": "Matt today Blake is also here from the"
+    },
+    {
+      "start": 48.33,
+      "duration": 4.229,
+      "text": "languor team but he you know typical"
+    },
+    {
+      "start": 50.519,
+      "duration": 5.341,
+      "text": "glitches as always he's not able to hear"
+    },
+    {
+      "start": 52.559,
+      "duration": 5.82,
+      "text": "us on on this webinar so let's get"
+    },
+    {
+      "start": 55.86,
+      "duration": 5.58,
+      "text": "started this is exciting today we're"
+    },
+    {
+      "start": 58.379,
+      "duration": 5.701,
+      "text": "just gonna talk about landed parcel data"
+    },
+    {
+      "start": 61.44,
+      "duration": 4.56,
+      "text": "and just go through like an overview of"
+    },
+    {
+      "start": 64.08,
+      "duration": 3.51,
+      "text": "what the parcel data is what our"
+    },
+    {
+      "start": 66.0,
+      "duration": 4.369,
+      "text": "coverage is like what what sort of"
+    },
+    {
+      "start": 67.59,
+      "duration": 5.099,
+      "text": "attribution we have how we deliver data"
+    },
+    {
+      "start": 70.369,
+      "duration": 4.481,
+      "text": "etc and at the end we would like to open"
+    },
+    {
+      "start": 72.689,
+      "duration": 6.811,
+      "text": "it up up to all of you who've joined us"
+    },
+    {
+      "start": 74.85,
+      "duration": 8.159,
+      "text": "live right now for any questions so yeah"
+    },
+    {
+      "start": 79.5,
+      "duration": 4.89,
+      "text": "let's get started I would like a Matt on"
+    },
+    {
+      "start": 83.009,
+      "duration": 4.521,
+      "text": "our team to go ahead and introduce"
+    },
+    {
+      "start": 84.39,
+      "duration": 5.25,
+      "text": "himself first all right good afternoon"
+    },
+    {
+      "start": 87.53,
+      "duration": 4.21,
+      "text": "or a good morning or good evening"
+    },
+    {
+      "start": 89.64,
+      "duration": 3.24,
+      "text": "depending what time zone you're in my"
+    },
+    {
+      "start": 91.74,
+      "duration": 3.479,
+      "text": "name is Matt Hamill I'm a senior"
+    },
+    {
+      "start": 92.88,
+      "duration": 5.07,
+      "text": "software architect here at Loveland I"
+    },
+    {
+      "start": 95.219,
+      "duration": 4.86,
+      "text": "work across our parcel services from our"
+    },
+    {
+      "start": 97.95,
+      "duration": 4.949,
+      "text": "platform and enterprise to the API and"
+    },
+    {
+      "start": 100.079,
+      "duration": 6.511,
+      "text": "to the bulk parcel collection data and"
+    },
+    {
+      "start": 102.899,
+      "duration": 6.451,
+      "text": "delivery and I'm joined here by our"
+    },
+    {
+      "start": 106.59,
+      "duration": 4.86,
+      "text": "colleague Blake Gerardo he is the"
+    },
+    {
+      "start": 109.35,
+      "duration": 4.11,
+      "text": "primary point of contact for our parcel"
+    },
+    {
+      "start": 111.45,
+      "duration": 3.209,
+      "text": "system you'll be working with him"
+    },
+    {
+      "start": 113.46,
+      "duration": 2.88,
+      "text": "closely if you're working with our"
+    },
+    {
+      "start": 114.659,
+      "duration": 5.85,
+      "text": "parcel data he knows all the ins and"
+    },
+    {
+      "start": 116.34,
+      "duration": 6.239,
+      "text": "outs manages delivery for us and I'm"
+    },
+    {
+      "start": 120.509,
+      "duration": 3.39,
+      "text": "sorry that he's not able to jump in"
+    },
+    {
+      "start": 122.579,
+      "duration": 3.121,
+      "text": "right now and hopefully you will later"
+    },
+    {
+      "start": 123.899,
+      "duration": 3.42,
+      "text": "but we're excited to get started and"
+    },
+    {
+      "start": 125.7,
+      "duration": 4.86,
+      "text": "tell you a little bit more about our"
+    },
+    {
+      "start": 127.319,
+      "duration": 4.861,
+      "text": "parcel data services absolutely and I"
+    },
+    {
+      "start": 130.56,
+      "duration": 4.11,
+      "text": "think you might and thank you for also"
+    },
+    {
+      "start": 132.18,
+      "duration": 3.3,
+      "text": "introducing the amazing Blake on our"
+    },
+    {
+      "start": 134.67,
+      "duration": 3.08,
+      "text": "team"
+    },
+    {
+      "start": 135.48,
+      "duration": 4.58,
+      "text": "I'm Sahana multi"
+    },
+    {
+      "start": 137.75,
+      "duration": 4.23,
+      "text": "my title is you know that of a general"
+    },
+    {
+      "start": 140.06,
+      "duration": 3.6,
+      "text": "manager but I do opposed to things from"
+    },
+    {
+      "start": 141.98,
+      "duration": 4.44,
+      "text": "product management about marketing to"
+    },
+    {
+      "start": 143.66,
+      "duration": 6.81,
+      "text": "managing the team the strategy the ops"
+    },
+    {
+      "start": 146.42,
+      "duration": 6.15,
+      "text": "and the works so a lot of times you will"
+    },
+    {
+      "start": 150.47,
+      "duration": 4.92,
+      "text": "interface with me you know if you're a"
+    },
+    {
+      "start": 152.57,
+      "duration": 4.47,
+      "text": "data customer so yeah so that's a little"
+    },
+    {
+      "start": 155.39,
+      "duration": 3.48,
+      "text": "bit about our team of you're an"
+    },
+    {
+      "start": 157.04,
+      "duration": 4.56,
+      "text": "extremely approachable team so feel free"
+    },
+    {
+      "start": 158.87,
+      "duration": 4.26,
+      "text": "to email any one of us you know our"
+    },
+    {
+      "start": 161.6,
+      "duration": 3.78,
+      "text": "email addresses are very simple it's"
+    },
+    {
+      "start": 163.13,
+      "duration": 4.56,
+      "text": "just our first name at language comm so"
+    },
+    {
+      "start": 165.38,
+      "duration": 3.96,
+      "text": "you can get to all of us at any time if"
+    },
+    {
+      "start": 167.69,
+      "duration": 3.93,
+      "text": "you have any questions or you can use"
+    },
+    {
+      "start": 169.34,
+      "duration": 5.25,
+      "text": "team at language comm or help with"
+    },
+    {
+      "start": 171.62,
+      "duration": 5.67,
+      "text": "language comm with that said let's just"
+    },
+    {
+      "start": 174.59,
+      "duration": 4.38,
+      "text": "you know dive right in let's give a"
+    },
+    {
+      "start": 177.29,
+      "duration": 5.6,
+      "text": "little bit about you know give a little"
+    },
+    {
+      "start": 178.97,
+      "duration": 7.14,
+      "text": "context about what parcel data is"
+    },
+    {
+      "start": 182.89,
+      "duration": 5.92,
+      "text": "essentially loveland have you been you"
+    },
+    {
+      "start": 186.11,
+      "duration": 5.73,
+      "text": "know in operation for about 10 years now"
+    },
+    {
+      "start": 188.81,
+      "duration": 4.5,
+      "text": "I think our roots were very different to"
+    },
+    {
+      "start": 191.84,
+      "duration": 4.59,
+      "text": "what we're doing right now but it's all"
+    },
+    {
+      "start": 193.31,
+      "duration": 4.98,
+      "text": "in the same you know it's all in it"
+    },
+    {
+      "start": 196.43,
+      "duration": 4.08,
+      "text": "comes into the same industry it sits"
+    },
+    {
+      "start": 198.29,
+      "duration": 3.9,
+      "text": "under the same realm of things which is"
+    },
+    {
+      "start": 200.51,
+      "duration": 4.74,
+      "text": "working with property information and"
+    },
+    {
+      "start": 202.19,
+      "duration": 5.7,
+      "text": "property records so we have been a"
+    },
+    {
+      "start": 205.25,
+      "duration": 5.28,
+      "text": "primary property and parcel data"
+    },
+    {
+      "start": 207.89,
+      "duration": 4.89,
+      "text": "collector for over a year close to 2 to"
+    },
+    {
+      "start": 210.53,
+      "duration": 6.3,
+      "text": "3 years now we work with counties"
+    },
+    {
+      "start": 212.78,
+      "duration": 6.269,
+      "text": "directly and we obtain parcel boundaries"
+    },
+    {
+      "start": 216.83,
+      "duration": 4.56,
+      "text": "the shape files the data and the taxes"
+    },
+    {
+      "start": 219.049,
+      "duration": 4.891,
+      "text": "of the data that comes along with it now"
+    },
+    {
+      "start": 221.39,
+      "duration": 4.08,
+      "text": "if those of you worked in this industry"
+    },
+    {
+      "start": 223.94,
+      "duration": 3.6,
+      "text": "or have worked with this kind of data"
+    },
+    {
+      "start": 225.47,
+      "duration": 3.18,
+      "text": "before you know that the data differs"
+    },
+    {
+      "start": 227.54,
+      "duration": 2.88,
+      "text": "from County to County"
+    },
+    {
+      "start": 228.65,
+      "duration": 4.559,
+      "text": "it's very disparate it's not"
+    },
+    {
+      "start": 230.42,
+      "duration": 4.14,
+      "text": "standardized so our amazing team here"
+    },
+    {
+      "start": 233.209,
+      "duration": 5.041,
+      "text": "which includes the two people that you"
+    },
+    {
+      "start": 234.56,
+      "duration": 6.0,
+      "text": "will hear now Matt and Blake um they"
+    },
+    {
+      "start": 238.25,
+      "duration": 4.2,
+      "text": "kind of work on it they standardize it"
+    },
+    {
+      "start": 240.56,
+      "duration": 4.8,
+      "text": "and make it available at a nationwide"
+    },
+    {
+      "start": 242.45,
+      "duration": 7.5,
+      "text": "level so today as of today we have close"
+    },
+    {
+      "start": 245.36,
+      "duration": 7.469,
+      "text": "to 143 million parcels mapped and and"
+    },
+    {
+      "start": 249.95,
+      "duration": 6.93,
+      "text": "yeah I recorded on both on our site and"
+    },
+    {
+      "start": 252.829,
+      "duration": 5.4,
+      "text": "as our on our data set right now and"
+    },
+    {
+      "start": 256.88,
+      "duration": 3.75,
+      "text": "that's kind of what we all talk about"
+    },
+    {
+      "start": 258.229,
+      "duration": 5.19,
+      "text": "we'll talk about what the data is how"
+    },
+    {
+      "start": 260.63,
+      "duration": 5.46,
+      "text": "we've collected that what our coverage"
+    },
+    {
+      "start": 263.419,
+      "duration": 5.701,
+      "text": "is what attribution we have and then"
+    },
+    {
+      "start": 266.09,
+      "duration": 5.079,
+      "text": "we'll end the session with delivery"
+    },
+    {
+      "start": 269.12,
+      "duration": 4.299,
+      "text": "notes on how we deliver the data"
+    },
+    {
+      "start": 271.169,
+      "duration": 4.47,
+      "text": "all right so mad if you want to jump"
+    },
+    {
+      "start": 273.419,
+      "duration": 4.891,
+      "text": "right in and talk about the data itself"
+    },
+    {
+      "start": 275.639,
+      "duration": 4.65,
+      "text": "and our coverage definitely I'll get"
+    },
+    {
+      "start": 278.31,
+      "duration": 3.629,
+      "text": "started on that and our folks able to"
+    },
+    {
+      "start": 280.289,
+      "duration": 3.12,
+      "text": "see my screen if not please let us know"
+    },
+    {
+      "start": 281.939,
+      "duration": 6.421,
+      "text": "in the chat and we'll make adjustments"
+    },
+    {
+      "start": 283.409,
+      "duration": 6.331,
+      "text": "here yeah I mean great wonderful so I"
+    },
+    {
+      "start": 288.36,
+      "duration": 3.389,
+      "text": "think one thing I want to introduce is"
+    },
+    {
+      "start": 289.74,
+      "duration": 4.669,
+      "text": "this report that's a several years old"
+    },
+    {
+      "start": 291.749,
+      "duration": 5.521,
+      "text": "at this point but soon if you're here"
+    },
+    {
+      "start": 294.409,
+      "duration": 7.151,
+      "text": "you know so I'm getting a message that"
+    },
+    {
+      "start": 297.27,
+      "duration": 6.57,
+      "text": "folks can't hear me yeah are you able to"
+    },
+    {
+      "start": 301.56,
+      "duration": 4.829,
+      "text": "hear me so how I am able to hear you yes"
+    },
+    {
+      "start": 303.84,
+      "duration": 4.53,
+      "text": "okay I will try and speak up a little"
+    },
+    {
+      "start": 306.389,
+      "duration": 5.041,
+      "text": "bit here huh"
+    },
+    {
+      "start": 308.37,
+      "duration": 5.63,
+      "text": "Darren says he can hear thanks Dan yeah"
+    },
+    {
+      "start": 311.43,
+      "duration": 7.079,
+      "text": "Thank You Darren"
+    },
+    {
+      "start": 314.0,
+      "duration": 6.219,
+      "text": "go ahead bud all right and so um if"
+    },
+    {
+      "start": 318.509,
+      "duration": 4.111,
+      "text": "you're in this webinar you're probably"
+    },
+    {
+      "start": 320.219,
+      "duration": 5.07,
+      "text": "familiar at a basic level with what a"
+    },
+    {
+      "start": 322.62,
+      "duration": 4.38,
+      "text": "parcel is and how it covers it we also"
+    },
+    {
+      "start": 325.289,
+      "duration": 4.231,
+      "text": "have this great report at land grade"
+    },
+    {
+      "start": 327.0,
+      "duration": 4.229,
+      "text": "comm slash report slash parcels or if"
+    },
+    {
+      "start": 329.52,
+      "duration": 3.359,
+      "text": "you just search Loveland parcel report"
+    },
+    {
+      "start": 331.229,
+      "duration": 4.44,
+      "text": "it'll pop right up there really"
+    },
+    {
+      "start": 332.879,
+      "duration": 5.01,
+      "text": "introduces what parcels are and more of"
+    },
+    {
+      "start": 335.669,
+      "duration": 4.59,
+      "text": "the process that we go into to acquire"
+    },
+    {
+      "start": 337.889,
+      "duration": 5.37,
+      "text": "collect clean and standardize these so"
+    },
+    {
+      "start": 340.259,
+      "duration": 4.47,
+      "text": "this report is a couple years old we're"
+    },
+    {
+      "start": 343.259,
+      "duration": 3.571,
+      "text": "going to work on updating but it really"
+    },
+    {
+      "start": 344.729,
+      "duration": 5.731,
+      "text": "is a great introduction to the subject"
+    },
+    {
+      "start": 346.83,
+      "duration": 7.35,
+      "text": "and so let me dive right in a little bit"
+    },
+    {
+      "start": 350.46,
+      "duration": 6.479,
+      "text": "to our coverage information here and how"
+    },
+    {
+      "start": 354.18,
+      "duration": 4.59,
+      "text": "we how we collect the data how we're"
+    },
+    {
+      "start": 356.939,
+      "duration": 3.96,
+      "text": "looking at it and how you can see what"
+    },
+    {
+      "start": 358.77,
+      "duration": 5.009,
+      "text": "is way up to Z so if you land at land"
+    },
+    {
+      "start": 360.899,
+      "duration": 4.86,
+      "text": "grid comm slash parcels one of the big"
+    },
+    {
+      "start": 363.779,
+      "duration": 4.711,
+      "text": "pages that we have is the parcel verse"
+    },
+    {
+      "start": 365.759,
+      "duration": 5.39,
+      "text": "and this is a map of the nation it has"
+    },
+    {
+      "start": 368.49,
+      "duration": 5.849,
+      "text": "green red and yellow counties every"
+    },
+    {
+      "start": 371.149,
+      "duration": 6.161,
+      "text": "county or place that we have online in"
+    },
+    {
+      "start": 374.339,
+      "duration": 6.0,
+      "text": "the US and this is a key place to look"
+    },
+    {
+      "start": 377.31,
+      "duration": 4.44,
+      "text": "to see our coverage you know it's a"
+    },
+    {
+      "start": 380.339,
+      "duration": 4.471,
+      "text": "quick place to check if a county is"
+    },
+    {
+      "start": 381.75,
+      "duration": 5.43,
+      "text": "online see the scope of it see how many"
+    },
+    {
+      "start": 384.81,
+      "duration": 5.4,
+      "text": "we have online so right now we have 2800"
+    },
+    {
+      "start": 387.18,
+      "duration": 4.59,
+      "text": "online there's 170 or so that we know"
+    },
+    {
+      "start": 390.21,
+      "duration": 2.759,
+      "text": "are possible to collect and we're"
+    },
+    {
+      "start": 391.77,
+      "duration": 3.149,
+      "text": "working on getting and then there's"
+    },
+    {
+      "start": 392.969,
+      "duration": 4.831,
+      "text": "about three hundred and three that for"
+    },
+    {
+      "start": 394.919,
+      "duration": 4.92,
+      "text": "some reason whether it's prohibitive"
+    },
+    {
+      "start": 397.8,
+      "duration": 3.78,
+      "text": "cost or in some cases simply we've"
+    },
+    {
+      "start": 399.839,
+      "duration": 4.32,
+      "text": "learned that the data is still on paper"
+    },
+    {
+      "start": 401.58,
+      "duration": 3.48,
+      "text": "we haven't been able to get parcel data"
+    },
+    {
+      "start": 404.159,
+      "duration": 2.671,
+      "text": "there and we're"
+    },
+    {
+      "start": 405.06,
+      "duration": 4.59,
+      "text": "not positive or be able to get it in the"
+    },
+    {
+      "start": 406.83,
+      "duration": 5.79,
+      "text": "short-term so you can see that coverage"
+    },
+    {
+      "start": 409.65,
+      "duration": 5.04,
+      "text": "here 2843 counties online as of today as"
+    },
+    {
+      "start": 412.62,
+      "duration": 3.99,
+      "text": "of coming in next Monday we'll probably"
+    },
+    {
+      "start": 414.69,
+      "duration": 4.14,
+      "text": "have more available for you every other"
+    },
+    {
+      "start": 416.61,
+      "duration": 4.95,
+      "text": "Monday we release a batch of updated and"
+    },
+    {
+      "start": 418.83,
+      "duration": 5.91,
+      "text": "added counties and those are available"
+    },
+    {
+      "start": 421.56,
+      "duration": 6.12,
+      "text": "to our bulk data clients shortly every"
+    },
+    {
+      "start": 424.74,
+      "duration": 5.1,
+      "text": "month after they come out and they're"
+    },
+    {
+      "start": 427.68,
+      "duration": 5.03,
+      "text": "also available on our site and platform"
+    },
+    {
+      "start": 429.84,
+      "duration": 5.25,
+      "text": "an API as soon as they launch as well so"
+    },
+    {
+      "start": 432.71,
+      "duration": 4.12,
+      "text": "some basic information here and let me"
+    },
+    {
+      "start": 435.09,
+      "duration": 3.9,
+      "text": "dive a little bit into the coverage"
+    },
+    {
+      "start": 436.83,
+      "duration": 6.0,
+      "text": "report so if you have a specific"
+    },
+    {
+      "start": 438.99,
+      "duration": 5.34,
+      "text": "question about the coverage so for"
+    },
+    {
+      "start": 442.83,
+      "duration": 5.97,
+      "text": "example you're asking it you are curious"
+    },
+    {
+      "start": 444.33,
+      "duration": 6.18,
+      "text": "if we have a field a specific field"
+    },
+    {
+      "start": 448.8,
+      "duration": 3.69,
+      "text": "what's our coverage for that field if we"
+    },
+    {
+      "start": 450.51,
+      "duration": 3.57,
+      "text": "have a specific County or if we have a"
+    },
+    {
+      "start": 452.49,
+      "duration": 3.06,
+      "text": "specific field in the specific County we"
+    },
+    {
+      "start": 454.08,
+      "duration": 4.2,
+      "text": "can share we're happy to share a"
+    },
+    {
+      "start": 455.55,
+      "duration": 3.66,
+      "text": "detailed coverage report with you so let"
+    },
+    {
+      "start": 458.28,
+      "duration": 4.949,
+      "text": "me pull that up now"
+    },
+    {
+      "start": 459.21,
+      "duration": 6.3,
+      "text": "and put that on screen here so here's"
+    },
+    {
+      "start": 463.229,
+      "duration": 6.391,
+      "text": "the coverage report as it stands today"
+    },
+    {
+      "start": 465.51,
+      "duration": 5.76,
+      "text": "it is a large spreadsheet but we really"
+    },
+    {
+      "start": 469.62,
+      "duration": 3.48,
+      "text": "pride ourselves in providing as much"
+    },
+    {
+      "start": 471.27,
+      "duration": 3.48,
+      "text": "detail as we can so you can make a good"
+    },
+    {
+      "start": 473.1,
+      "duration": 3.72,
+      "text": "decision and we're happy to work with"
+    },
+    {
+      "start": 474.75,
+      "duration": 4.26,
+      "text": "you to get answers out of this or to"
+    },
+    {
+      "start": 476.82,
+      "duration": 5.69,
+      "text": "help guide through this process Mack can"
+    },
+    {
+      "start": 479.01,
+      "duration": 14.52,
+      "text": "you zoom in a tad bit absolutely yes"
+    },
+    {
+      "start": 482.51,
+      "duration": 14.05,
+      "text": "good point thank you all right I know"
+    },
+    {
+      "start": 493.53,
+      "duration": 5.79,
+      "text": "Blake so sorry"
+    },
+    {
+      "start": 496.56,
+      "duration": 6.87,
+      "text": "and then just just to walk you through"
+    },
+    {
+      "start": 499.32,
+      "duration": 5.67,
+      "text": "this a little bit we have detailed"
+    },
+    {
+      "start": 503.43,
+      "duration": 3.81,
+      "text": "information in the state county geo ID"
+    },
+    {
+      "start": 504.99,
+      "duration": 4.2,
+      "text": "how we store that data and our last"
+    },
+    {
+      "start": 507.24,
+      "duration": 3.929,
+      "text": "refresh and number of parcels in that"
+    },
+    {
+      "start": 509.19,
+      "duration": 3.96,
+      "text": "place and now we have columns for the"
+    },
+    {
+      "start": 511.169,
+      "duration": 4.411,
+      "text": "our percent coverage for each of these"
+    },
+    {
+      "start": 513.15,
+      "duration": 4.86,
+      "text": "fields because because for some fields"
+    },
+    {
+      "start": 515.58,
+      "duration": 4.32,
+      "text": "will have will frequently have 100"
+    },
+    {
+      "start": 518.01,
+      "duration": 4.56,
+      "text": "percent coverage for a county for others"
+    },
+    {
+      "start": 519.9,
+      "duration": 4.139,
+      "text": "it really varies depending on what our"
+    },
+    {
+      "start": 522.57,
+      "duration": 7.29,
+      "text": "partners have available or what the"
+    },
+    {
+      "start": 524.039,
+      "duration": 7.8,
+      "text": "county itself provides and to talk a"
+    },
+    {
+      "start": 529.86,
+      "duration": 4.32,
+      "text": "little about that let me jump over also"
+    },
+    {
+      "start": 531.839,
+      "duration": 5.281,
+      "text": "and share our standard schema so as part"
+    },
+    {
+      "start": 534.18,
+      "duration": 4.95,
+      "text": "of collecting this parcel data we"
+    },
+    {
+      "start": 537.12,
+      "duration": 4.14,
+      "text": "convert it and clean it significant"
+    },
+    {
+      "start": 539.13,
+      "duration": 4.38,
+      "text": "and place it into the Loveland standard"
+    },
+    {
+      "start": 541.26,
+      "duration": 5.72,
+      "text": "schema so this schema is available"
+    },
+    {
+      "start": 543.51,
+      "duration": 6.42,
+      "text": "online here as a Google sheet right now"
+    },
+    {
+      "start": 546.98,
+      "duration": 4.69,
+      "text": "it lists every column that we have in"
+    },
+    {
+      "start": 549.93,
+      "duration": 5.1,
+      "text": "here and let me bump up the size a"
+    },
+    {
+      "start": 551.67,
+      "duration": 5.94,
+      "text": "little bit while 106 105 columns that we"
+    },
+    {
+      "start": 555.03,
+      "duration": 8.37,
+      "text": "have right now this changes occasionally"
+    },
+    {
+      "start": 557.61,
+      "duration": 7.41,
+      "text": "as we add and remove columns and you'll"
+    },
+    {
+      "start": 563.4,
+      "duration": 4.02,
+      "text": "see here the field name that we have for"
+    },
+    {
+      "start": 565.02,
+      "duration": 4.05,
+      "text": "it the type the data type that we store"
+    },
+    {
+      "start": 567.42,
+      "duration": 3.54,
+      "text": "it this is these are postgrads data"
+    },
+    {
+      "start": 569.07,
+      "duration": 4.98,
+      "text": "types but they're generally similar"
+    },
+    {
+      "start": 570.96,
+      "duration": 4.44,
+      "text": "across different formats and in a human"
+    },
+    {
+      "start": 574.05,
+      "duration": 3.3,
+      "text": "readable of some examples in a human"
+    },
+    {
+      "start": 575.4,
+      "duration": 4.02,
+      "text": "readable a description of what that"
+    },
+    {
+      "start": 577.35,
+      "duration": 4.08,
+      "text": "field is so if there's a particular"
+    },
+    {
+      "start": 579.42,
+      "duration": 3.78,
+      "text": "field you're looking at check out the"
+    },
+    {
+      "start": 581.43,
+      "duration": 3.93,
+      "text": "standardized schema the data dictionary"
+    },
+    {
+      "start": 583.2,
+      "duration": 3.72,
+      "text": "for the standardized schema and then you"
+    },
+    {
+      "start": 585.36,
+      "duration": 4.5,
+      "text": "can check on the coverage report our"
+    },
+    {
+      "start": 586.92,
+      "duration": 4.41,
+      "text": "coverage for that place we also try to"
+    },
+    {
+      "start": 589.86,
+      "duration": 2.91,
+      "text": "keep these as machine readable as"
+    },
+    {
+      "start": 591.33,
+      "duration": 3.62,
+      "text": "possible so if you're integrating this"
+    },
+    {
+      "start": 592.77,
+      "duration": 5.73,
+      "text": "into a workflow you can add your own"
+    },
+    {
+      "start": 594.95,
+      "duration": 8.53,
+      "text": "automated checks and your own queries on"
+    },
+    {
+      "start": 598.5,
+      "duration": 6.99,
+      "text": "top of this we do one thing I do want to"
+    },
+    {
+      "start": 603.48,
+      "duration": 4.23,
+      "text": "note is that we we have this skin"
+    },
+    {
+      "start": 605.49,
+      "duration": 4.62,
+      "text": "standard schema 105 different columns"
+    },
+    {
+      "start": 607.71,
+      "duration": 4.08,
+      "text": "right now and growing at the same time"
+    },
+    {
+      "start": 610.11,
+      "duration": 3.57,
+      "text": "counties often have fields that are one"
+    },
+    {
+      "start": 611.79,
+      "duration": 4.44,
+      "text": "us maybe it's something special that"
+    },
+    {
+      "start": 613.68,
+      "duration": 5.73,
+      "text": "just matters to that County Georgia Q"
+    },
+    {
+      "start": 616.23,
+      "duration": 5.28,
+      "text": "ler state we will add those fields on in"
+    },
+    {
+      "start": 619.41,
+      "duration": 3.39,
+      "text": "addition to the standard schema here and"
+    },
+    {
+      "start": 621.51,
+      "duration": 3.93,
+      "text": "unfortunately because of the variability"
+    },
+    {
+      "start": 622.8,
+      "duration": 4.74,
+      "text": "of those we don't have a comprehensive"
+    },
+    {
+      "start": 625.44,
+      "duration": 3.72,
+      "text": "dictionary for those if you're working"
+    },
+    {
+      "start": 627.54,
+      "duration": 3.39,
+      "text": "with the data in bulk we're happy to"
+    },
+    {
+      "start": 629.16,
+      "duration": 3.36,
+      "text": "talk about strategies but the standard"
+    },
+    {
+      "start": 630.93,
+      "duration": 9.08,
+      "text": "schema were guaranteed to distribute"
+    },
+    {
+      "start": 632.52,
+      "duration": 12.81,
+      "text": "with every data table that we have good"
+    },
+    {
+      "start": 640.01,
+      "duration": 7.15,
+      "text": "and so all right and another thing I"
+    },
+    {
+      "start": 645.33,
+      "duration": 4.56,
+      "text": "wanted to talk about is some of the"
+    },
+    {
+      "start": 647.16,
+      "duration": 4.23,
+      "text": "premium and extra columns that we've"
+    },
+    {
+      "start": 649.89,
+      "duration": 3.51,
+      "text": "been working on adding recently and you"
+    },
+    {
+      "start": 651.39,
+      "duration": 3.66,
+      "text": "might have seen emails about these and I"
+    },
+    {
+      "start": 653.4,
+      "duration": 4.47,
+      "text": "wanted to share a little bit more detail"
+    },
+    {
+      "start": 655.05,
+      "duration": 5.13,
+      "text": "about them so in addition to the basics"
+    },
+    {
+      "start": 657.87,
+      "duration": 4.08,
+      "text": "that you get all these all the columns"
+    },
+    {
+      "start": 660.18,
+      "duration": 3.15,
+      "text": "in the standard schema here there are a"
+    },
+    {
+      "start": 661.95,
+      "duration": 3.33,
+      "text": "number of additional steps that we go"
+    },
+    {
+      "start": 663.33,
+      "duration": 4.83,
+      "text": "through to enhance the data so one of"
+    },
+    {
+      "start": 665.28,
+      "duration": 5.55,
+      "text": "those is putting standardizing addresses"
+    },
+    {
+      "start": 668.16,
+      "duration": 5.09,
+      "text": "and running them through USBs validation"
+    },
+    {
+      "start": 670.83,
+      "duration": 4.759,
+      "text": "so that will give you details"
+    },
+    {
+      "start": 673.25,
+      "duration": 5.19,
+      "text": "like the type of delivery point if it's"
+    },
+    {
+      "start": 675.589,
+      "duration": 5.19,
+      "text": "a residential delivery point it'll show"
+    },
+    {
+      "start": 678.44,
+      "duration": 4.17,
+      "text": "if that address is valid in USPS and"
+    },
+    {
+      "start": 680.779,
+      "duration": 4.531,
+      "text": "will have a delivery indicator that"
+    },
+    {
+      "start": 682.61,
+      "duration": 6.209,
+      "text": "indicates if that's a vacant address or"
+    },
+    {
+      "start": 685.31,
+      "duration": 6.54,
+      "text": "a deliverable location and that data is"
+    },
+    {
+      "start": 688.819,
+      "duration": 4.77,
+      "text": "included in our premium data sets and"
+    },
+    {
+      "start": 691.85,
+      "duration": 4.679,
+      "text": "we've also we're also excited to have"
+    },
+    {
+      "start": 693.589,
+      "duration": 5.49,
+      "text": "recently launched a new building"
+    },
+    {
+      "start": 696.529,
+      "duration": 3.901,
+      "text": "footprint data set where we have the"
+    },
+    {
+      "start": 699.079,
+      "duration": 3.781,
+      "text": "count of the number of buildings"
+    },
+    {
+      "start": 700.43,
+      "duration": 5.31,
+      "text": "overlapping the parcel as well as the"
+    },
+    {
+      "start": 702.86,
+      "duration": 4.62,
+      "text": "size of the building footprint on the"
+    },
+    {
+      "start": 705.74,
+      "duration": 3.63,
+      "text": "parcel and we're rolling that out that's"
+    },
+    {
+      "start": 707.48,
+      "duration": 5.039,
+      "text": "a the count is on national nationwide"
+    },
+    {
+      "start": 709.37,
+      "duration": 8.009,
+      "text": "the square feet is rolling out and in"
+    },
+    {
+      "start": 712.519,
+      "duration": 6.661,
+      "text": "vailable in most places we have details"
+    },
+    {
+      "start": 717.379,
+      "duration": 5.25,
+      "text": "about this on our support site support"
+    },
+    {
+      "start": 719.18,
+      "duration": 5.88,
+      "text": "dial language comm there's a general FAQ"
+    },
+    {
+      "start": 722.629,
+      "duration": 6.06,
+      "text": "about the parcel data including details"
+    },
+    {
+      "start": 725.06,
+      "duration": 5.129,
+      "text": "on the building data it talks about how"
+    },
+    {
+      "start": 728.689,
+      "duration": 2.82,
+      "text": "we get the data and I'm having answered"
+    },
+    {
+      "start": 730.189,
+      "duration": 4.471,
+      "text": "detailed questions about this later"
+    },
+    {
+      "start": 731.509,
+      "duration": 5.611,
+      "text": "where it comes from in the process we go"
+    },
+    {
+      "start": 734.66,
+      "duration": 5.4,
+      "text": "through to match it and similarly for"
+    },
+    {
+      "start": 737.12,
+      "duration": 4.529,
+      "text": "the USPS data we have an FAQ"
+    },
+    {
+      "start": 740.06,
+      "duration": 3.06,
+      "text": "specifically on debt and we're always"
+    },
+    {
+      "start": 741.649,
+      "duration": 4.411,
+      "text": "happy to answer quite your questions on"
+    },
+    {
+      "start": 743.12,
+      "duration": 4.8,
+      "text": "it it shows how to access this data and"
+    },
+    {
+      "start": 746.06,
+      "duration": 2.43,
+      "text": "it's available in the land grid platform"
+    },
+    {
+      "start": 747.92,
+      "duration": 3.269,
+      "text": "as well"
+    },
+    {
+      "start": 748.49,
+      "duration": 5.01,
+      "text": "yeah and we recently did two videos on"
+    },
+    {
+      "start": 751.189,
+      "duration": 4.171,
+      "text": "the buildings data and you'll find them"
+    },
+    {
+      "start": 753.5,
+      "duration": 7.529,
+      "text": "on our YouTube channel or on our website"
+    },
+    {
+      "start": 755.36,
+      "duration": 7.079,
+      "text": "on the videos page so another one that"
+    },
+    {
+      "start": 761.029,
+      "duration": 4.92,
+      "text": "we've been rolling out that I wanted to"
+    },
+    {
+      "start": 762.439,
+      "duration": 4.981,
+      "text": "quickly speak about is an issue that a"
+    },
+    {
+      "start": 765.949,
+      "duration": 2.791,
+      "text": "lot of people is near and dear to a lot"
+    },
+    {
+      "start": 767.42,
+      "duration": 3.149,
+      "text": "of our hearts and that's the question of"
+    },
+    {
+      "start": 768.74,
+      "duration": 3.899,
+      "text": "what does the parcel used for and this"
+    },
+    {
+      "start": 770.569,
+      "duration": 3.541,
+      "text": "is a surprisingly tricky problem because"
+    },
+    {
+      "start": 772.639,
+      "duration": 4.351,
+      "text": "parcels can have zoning they can have"
+    },
+    {
+      "start": 774.11,
+      "duration": 6.06,
+      "text": "use codes there's no standardization of"
+    },
+    {
+      "start": 776.99,
+      "duration": 4.68,
+      "text": "this nationwide until now so when we get"
+    },
+    {
+      "start": 780.17,
+      "duration": 3.57,
+      "text": "the data from a county it'll have"
+    },
+    {
+      "start": 781.67,
+      "duration": 4.32,
+      "text": "whatever the local use codes and zoning"
+    },
+    {
+      "start": 783.74,
+      "duration": 4.199,
+      "text": "codes are attached to it and what our"
+    },
+    {
+      "start": 785.99,
+      "duration": 4.529,
+      "text": "team does is goes through and attaches"
+    },
+    {
+      "start": 787.939,
+      "duration": 4.44,
+      "text": "standardized value from the land based"
+    },
+    {
+      "start": 790.519,
+      "duration": 4.891,
+      "text": "classification system from the American"
+    },
+    {
+      "start": 792.379,
+      "duration": 7.111,
+      "text": "Planning Association this is linked in"
+    },
+    {
+      "start": 795.41,
+      "duration": 7.44,
+      "text": "our standard schema it's the LDCs fields"
+    },
+    {
+      "start": 799.49,
+      "duration": 7.51,
+      "text": "and these are numeric codes ranging from"
+    },
+    {
+      "start": 802.85,
+      "duration": 8.47,
+      "text": "1,000 to 9999 the ink"
+    },
+    {
+      "start": 807.0,
+      "duration": 5.97,
+      "text": "a number of dimensions from activity"
+    },
+    {
+      "start": 811.32,
+      "duration": 4.62,
+      "text": "function structures site and ownership"
+    },
+    {
+      "start": 812.97,
+      "duration": 6.18,
+      "text": "they give us rich detail on how the"
+    },
+    {
+      "start": 815.94,
+      "duration": 4.8,
+      "text": "parcel is being used so we've been"
+    },
+    {
+      "start": 819.15,
+      "duration": 3.24,
+      "text": "rolling this out nationwide we'll have"
+    },
+    {
+      "start": 820.74,
+      "duration": 2.97,
+      "text": "an announcement about this and in a"
+    },
+    {
+      "start": 822.39,
+      "duration": 5.88,
+      "text": "couple of months but you'll be seeing"
+    },
+    {
+      "start": 823.71,
+      "duration": 7.08,
+      "text": "this data in the exports already and we"
+    },
+    {
+      "start": 828.27,
+      "duration": 4.38,
+      "text": "have links to the key is for folks to"
+    },
+    {
+      "start": 830.79,
+      "duration": 5.19,
+      "text": "use here as well if you're looking for"
+    },
+    {
+      "start": 832.65,
+      "duration": 6.24,
+      "text": "more standardized to use information and"
+    },
+    {
+      "start": 835.98,
+      "duration": 4.29,
+      "text": "there we have it on our FAQ is on the"
+    },
+    {
+      "start": 838.89,
+      "duration": 4.89,
+      "text": "support site as well there's more"
+    },
+    {
+      "start": 840.27,
+      "duration": 6.09,
+      "text": "details about the LDCs coding definitely"
+    },
+    {
+      "start": 843.78,
+      "duration": 4.68,
+      "text": "definitely and there's a few additional"
+    },
+    {
+      "start": 846.36,
+      "duration": 5.16,
+      "text": "columns on there so we'll have we have"
+    },
+    {
+      "start": 848.46,
+      "duration": 5.16,
+      "text": "we calculate acres for the parcel acres"
+    },
+    {
+      "start": 851.52,
+      "duration": 4.11,
+      "text": "in square feet and we also join in"
+    },
+    {
+      "start": 853.62,
+      "duration": 6.51,
+      "text": "federal qualified opportunities own"
+    },
+    {
+      "start": 855.63,
+      "duration": 7.86,
+      "text": "flags to the data as well that's good"
+    },
+    {
+      "start": 860.13,
+      "duration": 6.99,
+      "text": "all right if there are no questions at"
+    },
+    {
+      "start": 863.49,
+      "duration": 6.0,
+      "text": "this point I guess we can move into data"
+    },
+    {
+      "start": 867.12,
+      "duration": 4.59,
+      "text": "delivery this is where Blake would have"
+    },
+    {
+      "start": 869.49,
+      "duration": 5.4,
+      "text": "chimed in but he's unable to at this"
+    },
+    {
+      "start": 871.71,
+      "duration": 5.61,
+      "text": "point definitely so Blake is fantastic"
+    },
+    {
+      "start": 874.89,
+      "duration": 4.29,
+      "text": "at keeping our data set updated for all"
+    },
+    {
+      "start": 877.32,
+      "duration": 3.09,
+      "text": "our bulk data clients and I'd like to"
+    },
+    {
+      "start": 879.18,
+      "duration": 3.84,
+      "text": "share a little bit about how that"
+    },
+    {
+      "start": 880.41,
+      "duration": 5.1,
+      "text": "process works what it looks like once"
+    },
+    {
+      "start": 883.02,
+      "duration": 4.26,
+      "text": "you have access to that whether it's the"
+    },
+    {
+      "start": 885.51,
+      "duration": 3.329,
+      "text": "full nationwide data set it's the for"
+    },
+    {
+      "start": 887.28,
+      "duration": 3.63,
+      "text": "nationwide data set with those premium"
+    },
+    {
+      "start": 888.839,
+      "duration": 4.081,
+      "text": "fields I mentioned or whether it's a"
+    },
+    {
+      "start": 890.91,
+      "duration": 4.38,
+      "text": "custom export we've put together for you"
+    },
+    {
+      "start": 892.92,
+      "duration": 6.15,
+      "text": "so this is what it looks like for a"
+    },
+    {
+      "start": 895.29,
+      "duration": 8.49,
+      "text": "typical nationwide export we provide the"
+    },
+    {
+      "start": 899.07,
+      "duration": 6.6,
+      "text": "data via FTP it's accessible anytime you"
+    },
+    {
+      "start": 903.78,
+      "duration": 4.98,
+      "text": "want it and we update we roll out"
+    },
+    {
+      "start": 905.67,
+      "duration": 4.68,
+      "text": "updates to it once a month and let me"
+    },
+    {
+      "start": 908.76,
+      "duration": 6.81,
+      "text": "talk through a little couple of tips and"
+    },
+    {
+      "start": 910.35,
+      "duration": 6.45,
+      "text": "tricks for accessing it so one when you"
+    },
+    {
+      "start": 915.57,
+      "duration": 2.85,
+      "text": "log in you'll have a download folder"
+    },
+    {
+      "start": 916.8,
+      "duration": 5.16,
+      "text": "with all of the different formats that"
+    },
+    {
+      "start": 918.42,
+      "duration": 5.07,
+      "text": "we offer available here the flat CSV"
+    },
+    {
+      "start": 921.96,
+      "duration": 3.6,
+      "text": "file is the only one that really differs"
+    },
+    {
+      "start": 923.49,
+      "duration": 5.04,
+      "text": "that does not have the full parcel"
+    },
+    {
+      "start": 925.56,
+      "duration": 5.67,
+      "text": "geometry in it otherwise these will all"
+    },
+    {
+      "start": 928.53,
+      "duration": 5.22,
+      "text": "have that full parcel geometry in there"
+    },
+    {
+      "start": 931.23,
+      "duration": 6.32,
+      "text": "matically can you zoom in just a little"
+    },
+    {
+      "start": 933.75,
+      "duration": 6.41,
+      "text": "bit yeah let me see if this works here"
+    },
+    {
+      "start": 937.55,
+      "duration": 6.959,
+      "text": "this is hope at all thank you"
+    },
+    {
+      "start": 940.16,
+      "duration": 7.38,
+      "text": "great things and one of the key pieces"
+    },
+    {
+      "start": 944.509,
+      "duration": 6.091,
+      "text": "so you can access this by hand you can"
+    },
+    {
+      "start": 947.54,
+      "duration": 4.799,
+      "text": "of course browse through here and click"
+    },
+    {
+      "start": 950.6,
+      "duration": 5.549,
+      "text": "and download any individual file you're"
+    },
+    {
+      "start": 952.339,
+      "duration": 7.8,
+      "text": "interested in there's going to be you"
+    },
+    {
+      "start": 956.149,
+      "duration": 5.761,
+      "text": "know 2,000 some of them available one"
+    },
+    {
+      "start": 960.139,
+      "duration": 3.901,
+      "text": "for each county that we have available"
+    },
+    {
+      "start": 961.91,
+      "duration": 4.08,
+      "text": "what you also see is these have really"
+    },
+    {
+      "start": 964.04,
+      "duration": 3.27,
+      "text": "nice predictable names in here and this"
+    },
+    {
+      "start": 965.99,
+      "duration": 4.74,
+      "text": "is great if you're integrating this into"
+    },
+    {
+      "start": 967.31,
+      "duration": 6.0,
+      "text": "an automated workflow and for that we"
+    },
+    {
+      "start": 970.73,
+      "duration": 4.02,
+      "text": "also provide this verse this parse / CSV"
+    },
+    {
+      "start": 973.31,
+      "duration": 4.199,
+      "text": "which mears what you'll see on the"
+    },
+    {
+      "start": 974.75,
+      "duration": 10.199,
+      "text": "coverage report at language com / Parcel"
+    },
+    {
+      "start": 977.509,
+      "duration": 10.2,
+      "text": "verse and let me open this up well if my"
+    },
+    {
+      "start": 984.949,
+      "duration": 6.81,
+      "text": "client behaves I will pull up the"
+    },
+    {
+      "start": 987.709,
+      "duration": 7.291,
+      "text": "version of this thing and give me just a"
+    },
+    {
+      "start": 991.759,
+      "duration": 5.221,
+      "text": "moment here what I do is I'll show you"
+    },
+    {
+      "start": 995.0,
+      "duration": 3.93,
+      "text": "the we have metadata available for this"
+    },
+    {
+      "start": 996.98,
+      "duration": 6.419,
+      "text": "what I'll show you is how you can use"
+    },
+    {
+      "start": 998.93,
+      "duration": 6.81,
+      "text": "this and one column that we have in here"
+    },
+    {
+      "start": 1003.399,
+      "duration": 4.68,
+      "text": "that's really useful is or limit let me"
+    },
+    {
+      "start": 1005.74,
+      "duration": 3.659,
+      "text": "introduce this the verse file through"
+    },
+    {
+      "start": 1008.079,
+      "duration": 3.481,
+      "text": "the metadata here so this is just"
+    },
+    {
+      "start": 1009.399,
+      "duration": 4.911,
+      "text": "machine readable metadata on all the"
+    },
+    {
+      "start": 1011.56,
+      "duration": 6.54,
+      "text": "parcel data that we provide it includes"
+    },
+    {
+      "start": 1014.31,
+      "duration": 6.009,
+      "text": "information on the count the the age the"
+    },
+    {
+      "start": 1018.1,
+      "duration": 4.109,
+      "text": "county the Geo ID so you can figure out"
+    },
+    {
+      "start": 1020.319,
+      "duration": 4.35,
+      "text": "specific places quickly or you can loop"
+    },
+    {
+      "start": 1022.209,
+      "duration": 5.73,
+      "text": "through everything and it also has the"
+    },
+    {
+      "start": 1024.669,
+      "duration": 8.13,
+      "text": "last three our last refresh date for the"
+    },
+    {
+      "start": 1027.939,
+      "duration": 6.48,
+      "text": "parcel for that parcel area one thing it"
+    },
+    {
+      "start": 1032.799,
+      "duration": 3.721,
+      "text": "also has is through this canonical path"
+    },
+    {
+      "start": 1034.419,
+      "duration": 5.64,
+      "text": "field and for each county this will give"
+    },
+    {
+      "start": 1036.52,
+      "duration": 7.049,
+      "text": "you an exact exact path and the filename"
+    },
+    {
+      "start": 1040.059,
+      "duration": 5.041,
+      "text": "stem here you will be useful for you for"
+    },
+    {
+      "start": 1043.569,
+      "duration": 3.72,
+      "text": "identifying files in the machine"
+    },
+    {
+      "start": 1045.1,
+      "duration": 4.949,
+      "text": "readable ways so using the the verse"
+    },
+    {
+      "start": 1047.289,
+      "duration": 4.591,
+      "text": "table in the filename stem column you"
+    },
+    {
+      "start": 1050.049,
+      "duration": 4.62,
+      "text": "can just loop over the files that are"
+    },
+    {
+      "start": 1051.88,
+      "duration": 5.61,
+      "text": "available by FTP download them all in"
+    },
+    {
+      "start": 1054.669,
+      "duration": 4.951,
+      "text": "bulk and then bulk process them using"
+    },
+    {
+      "start": 1057.49,
+      "duration": 2.97,
+      "text": "this data this is really handy if you"
+    },
+    {
+      "start": 1059.62,
+      "duration": 4.08,
+      "text": "want to see okay"
+    },
+    {
+      "start": 1060.46,
+      "duration": 4.56,
+      "text": "what has updated in the last month let"
+    },
+    {
+      "start": 1063.7,
+      "duration": 3.33,
+      "text": "me pull everything that's updated in the"
+    },
+    {
+      "start": 1065.02,
+      "duration": 4.5,
+      "text": "last month into my database or other"
+    },
+    {
+      "start": 1067.03,
+      "duration": 4.32,
+      "text": "system and we're happy to provide"
+    },
+    {
+      "start": 1069.52,
+      "duration": 4.31,
+      "text": "specific code examples or walkthrough"
+    },
+    {
+      "start": 1071.35,
+      "duration": 2.48,
+      "text": "parts of that"
+    },
+    {
+      "start": 1075.12,
+      "duration": 6.25,
+      "text": "so that is that's how we deliver the"
+    },
+    {
+      "start": 1077.74,
+      "duration": 6.36,
+      "text": "bulk data to clients I'm happy to answer"
+    },
+    {
+      "start": 1081.37,
+      "duration": 4.56,
+      "text": "any questions about that it's by SFTP"
+    },
+    {
+      "start": 1084.1,
+      "duration": 3.81,
+      "text": "you'll get your own login password and"
+    },
+    {
+      "start": 1085.93,
+      "duration": 3.57,
+      "text": "in this metadata table to help process"
+    },
+    {
+      "start": 1087.91,
+      "duration": 6.74,
+      "text": "it in bulk or of course you can always"
+    },
+    {
+      "start": 1089.5,
+      "duration": 8.04,
+      "text": "use it by hand we also have a parcel API"
+    },
+    {
+      "start": 1094.65,
+      "duration": 5.2,
+      "text": "we have once you sign up we'll share a"
+    },
+    {
+      "start": 1097.54,
+      "duration": 3.68,
+      "text": "support document for that there's a"
+    },
+    {
+      "start": 1099.85,
+      "duration": 4.44,
+      "text": "couple of different endpoints that we"
+    },
+    {
+      "start": 1101.22,
+      "duration": 5.68,
+      "text": "support right now the core ones are"
+    },
+    {
+      "start": 1104.29,
+      "duration": 4.77,
+      "text": "latitude and longitude search so if you"
+    },
+    {
+      "start": 1106.9,
+      "duration": 3.75,
+      "text": "have a point on a map so someone is"
+    },
+    {
+      "start": 1109.06,
+      "duration": 3.81,
+      "text": "clicking on a map and your application"
+    },
+    {
+      "start": 1110.65,
+      "duration": 3.54,
+      "text": "or app you can pass that point to us and"
+    },
+    {
+      "start": 1112.87,
+      "duration": 4.53,
+      "text": "we'll give you all the details on we"
+    },
+    {
+      "start": 1114.19,
+      "duration": 5.52,
+      "text": "have on any parcels at that location and"
+    },
+    {
+      "start": 1117.4,
+      "duration": 5.67,
+      "text": "then the other one is by address so you"
+    },
+    {
+      "start": 1119.71,
+      "duration": 5.58,
+      "text": "can pass in an address query and do and"
+    },
+    {
+      "start": 1123.07,
+      "duration": 3.48,
+      "text": "you can add a context which we describe"
+    },
+    {
+      "start": 1125.29,
+      "duration": 3.66,
+      "text": "here but it helps narrow our search"
+    },
+    {
+      "start": 1126.55,
+      "duration": 3.87,
+      "text": "results down and your API token and"
+    },
+    {
+      "start": 1128.95,
+      "duration": 4.65,
+      "text": "we'll give you the best parcel we can"
+    },
+    {
+      "start": 1130.42,
+      "duration": 5.64,
+      "text": "find there both of those are available"
+    },
+    {
+      "start": 1133.6,
+      "duration": 4.17,
+      "text": "to API clients and then you can also"
+    },
+    {
+      "start": 1136.06,
+      "duration": 7.5,
+      "text": "search by parcel number if you're coming"
+    },
+    {
+      "start": 1137.77,
+      "duration": 8.52,
+      "text": "in with a parcel number we also provide"
+    },
+    {
+      "start": 1143.56,
+      "duration": 4.2,
+      "text": "a vector and raster tile server so if"
+    },
+    {
+      "start": 1146.29,
+      "duration": 3.87,
+      "text": "you're integrating these tiles into your"
+    },
+    {
+      "start": 1147.76,
+      "duration": 4.38,
+      "text": "app if you want to see them on the map"
+    },
+    {
+      "start": 1150.16,
+      "duration": 5.97,
+      "text": "we can share that with you whether it's"
+    },
+    {
+      "start": 1152.14,
+      "duration": 5.52,
+      "text": "a vector or raster we have endpoints for"
+    },
+    {
+      "start": 1156.13,
+      "duration": 3.48,
+      "text": "both of those including if you need them"
+    },
+    {
+      "start": 1157.66,
+      "duration": 4.86,
+      "text": "custom styles for the raster's and"
+    },
+    {
+      "start": 1159.61,
+      "duration": 5.31,
+      "text": "interactivity for raster's we definitely"
+    },
+    {
+      "start": 1162.52,
+      "duration": 4.77,
+      "text": "the vector tile surfer we have examples"
+    },
+    {
+      "start": 1164.92,
+      "duration": 4.52,
+      "text": "for using that we love using it with"
+    },
+    {
+      "start": 1167.29,
+      "duration": 4.53,
+      "text": "matte box and matte box GL service"
+    },
+    {
+      "start": 1169.44,
+      "duration": 5.47,
+      "text": "that's a great integration it works"
+    },
+    {
+      "start": 1171.82,
+      "duration": 5.19,
+      "text": "natively it also works in ESRI use"
+    },
+    {
+      "start": 1174.91,
+      "duration": 5.61,
+      "text": "vector tiles services if you're building"
+    },
+    {
+      "start": 1177.01,
+      "duration": 6.72,
+      "text": "ESRI web services so we have examples"
+    },
+    {
+      "start": 1180.52,
+      "duration": 7.08,
+      "text": "for that as well and we're happy to talk"
+    },
+    {
+      "start": 1183.73,
+      "duration": 5.67,
+      "text": "about styling and producing this data so"
+    },
+    {
+      "start": 1187.6,
+      "duration": 3.3,
+      "text": "that's an overview of the three"
+    },
+    {
+      "start": 1189.4,
+      "duration": 5.07,
+      "text": "different ways that we typically deliver"
+    },
+    {
+      "start": 1190.9,
+      "duration": 6.66,
+      "text": "the data and can go into detail on any"
+    },
+    {
+      "start": 1194.47,
+      "duration": 6.09,
+      "text": "one of those sounds good thank you mad"
+    },
+    {
+      "start": 1197.56,
+      "duration": 6.03,
+      "text": "that was amazing so we'd like to open up"
+    },
+    {
+      "start": 1200.56,
+      "duration": 4.68,
+      "text": "for any crashes at this point please use"
+    },
+    {
+      "start": 1203.59,
+      "duration": 3.45,
+      "text": "the chat window there"
+    },
+    {
+      "start": 1205.24,
+      "duration": 3.15,
+      "text": "and we'd love to answer if you have any"
+    },
+    {
+      "start": 1207.04,
+      "duration": 3.57,
+      "text": "questions or if you thought that we"
+    },
+    {
+      "start": 1208.39,
+      "duration": 4.74,
+      "text": "didn't cover a particular area enough or"
+    },
+    {
+      "start": 1210.61,
+      "duration": 10.41,
+      "text": "talked about something please let us"
+    },
+    {
+      "start": 1213.13,
+      "duration": 10.98,
+      "text": "know happy to help and while our"
+    },
+    {
+      "start": 1221.02,
+      "duration": 5.25,
+      "text": "attendees type their questions"
+    },
+    {
+      "start": 1224.11,
+      "duration": 5.3,
+      "text": "I saw the Blake just rejoined Blake are"
+    },
+    {
+      "start": 1226.27,
+      "duration": 3.14,
+      "text": "you still not able to hear us"
+    },
+    {
+      "start": 1232.72,
+      "duration": 10.38,
+      "text": "[Music]"
+    },
+    {
+      "start": 1235.62,
+      "duration": 15.15,
+      "text": "alright so no questions then okay all"
+    },
+    {
+      "start": 1243.1,
+      "duration": 10.67,
+      "text": "right um go ahead Matt quite possible"
+    },
+    {
+      "start": 1250.77,
+      "duration": 3.0,
+      "text": "yeah"
+    },
+    {
+      "start": 1255.22,
+      "duration": 4.23,
+      "text": "Darren thank you again so much for"
+    },
+    {
+      "start": 1257.23,
+      "duration": 5.16,
+      "text": "taking the survey yesterday appreciate"
+    },
+    {
+      "start": 1259.45,
+      "duration": 4.95,
+      "text": "it and I'm so sorry you had some trouble"
+    },
+    {
+      "start": 1262.39,
+      "duration": 4.44,
+      "text": "accessing that as well somehow technical"
+    },
+    {
+      "start": 1264.4,
+      "duration": 5.07,
+      "text": "glitches are I don't know it seems to be"
+    },
+    {
+      "start": 1266.83,
+      "duration": 5.1,
+      "text": "the theme of this week for us um all"
+    },
+    {
+      "start": 1269.47,
+      "duration": 4.5,
+      "text": "right so um you know if you know if you"
+    },
+    {
+      "start": 1271.93,
+      "duration": 5.04,
+      "text": "can if you think of questions at a later"
+    },
+    {
+      "start": 1273.97,
+      "duration": 5.01,
+      "text": "time or want to dig deep or you know"
+    },
+    {
+      "start": 1276.97,
+      "duration": 5.1,
+      "text": "discuss further you can always reach us"
+    },
+    {
+      "start": 1278.98,
+      "duration": 5.04,
+      "text": "at parcels at language comm and one of"
+    },
+    {
+      "start": 1282.07,
+      "duration": 4.02,
+      "text": "us will be always available to respond"
+    },
+    {
+      "start": 1284.02,
+      "duration": 3.63,
+      "text": "back to you and like I said all of our"
+    },
+    {
+      "start": 1286.09,
+      "duration": 4.83,
+      "text": "email addresses are essentially our"
+    },
+    {
+      "start": 1287.65,
+      "duration": 5.31,
+      "text": "first name at language comso Sahana matt"
+    },
+    {
+      "start": 1290.92,
+      "duration": 3.57,
+      "text": "and blake and i'm sure most of you are"
+    },
+    {
+      "start": 1292.96,
+      "duration": 3.72,
+      "text": "probably interfacing with one of us"
+    },
+    {
+      "start": 1294.49,
+      "duration": 5.28,
+      "text": "already at this point oh we do have a"
+    },
+    {
+      "start": 1296.68,
+      "duration": 5.94,
+      "text": "question from Brian would you consider a"
+    },
+    {
+      "start": 1299.77,
+      "duration": 6.75,
+      "text": "refresh when you last receive data from"
+    },
+    {
+      "start": 1302.62,
+      "duration": 5.37,
+      "text": "the county or something else yeah"
+    },
+    {
+      "start": 1306.52,
+      "duration": 2.48,
+      "text": "definitely so that's it that's a great"
+    },
+    {
+      "start": 1307.99,
+      "duration": 3.81,
+      "text": "question"
+    },
+    {
+      "start": 1309.0,
+      "duration": 4.78,
+      "text": "definitely a common question so we do we"
+    },
+    {
+      "start": 1311.8,
+      "duration": 4.44,
+      "text": "bump that last refresh date when we pull"
+    },
+    {
+      "start": 1313.78,
+      "duration": 5.79,
+      "text": "fresh data from the county so that"
+    },
+    {
+      "start": 1316.24,
+      "duration": 5.22,
+      "text": "includes the geometries in some cases in"
+    },
+    {
+      "start": 1319.57,
+      "duration": 4.98,
+      "text": "between them there will be there is a"
+    },
+    {
+      "start": 1321.46,
+      "duration": 6.33,
+      "text": "table updated key in our parcel verse"
+    },
+    {
+      "start": 1324.55,
+      "duration": 5.87,
+      "text": "table and that'll record the last date"
+    },
+    {
+      "start": 1327.79,
+      "duration": 6.51,
+      "text": "of any type of edit to that table so"
+    },
+    {
+      "start": 1330.42,
+      "duration": 6.76,
+      "text": "that might be we ran you know another"
+    },
+    {
+      "start": 1334.3,
+      "duration": 4.19,
+      "text": "address matching script over it or we"
+    },
+    {
+      "start": 1337.18,
+      "duration": 3.68,
+      "text": "cleaned one row"
+    },
+    {
+      "start": 1338.49,
+      "duration": 4.11,
+      "text": "one field of one row in that table but"
+    },
+    {
+      "start": 1340.86,
+      "duration": 4.05,
+      "text": "we'll only bump that last refresh when"
+    },
+    {
+      "start": 1342.6,
+      "duration": 8.01,
+      "text": "we really have pulled a fresh set of"
+    },
+    {
+      "start": 1344.91,
+      "duration": 7.47,
+      "text": "data from that County so actually and"
+    },
+    {
+      "start": 1350.61,
+      "duration": 3.09,
+      "text": "one additional note related to that if"
+    },
+    {
+      "start": 1352.38,
+      "duration": 4.38,
+      "text": "you're working with the data depending"
+    },
+    {
+      "start": 1353.7,
+      "duration": 5.37,
+      "text": "on how you'd like to work with it table"
+    },
+    {
+      "start": 1356.76,
+      "duration": 3.72,
+      "text": "updated it is always good you know if"
+    },
+    {
+      "start": 1359.07,
+      "duration": 3.6,
+      "text": "we're republishing this day when you see"
+    },
+    {
+      "start": 1360.48,
+      "duration": 4.5,
+      "text": "a new fresh table updated stamp on there"
+    },
+    {
+      "start": 1362.67,
+      "duration": 3.63,
+      "text": "I you should feel free to pull in there"
+    },
+    {
+      "start": 1364.98,
+      "duration": 3.57,
+      "text": "there are going to be improvements in"
+    },
+    {
+      "start": 1366.3,
+      "duration": 4.259,
+      "text": "that table but when the last refresh is"
+    },
+    {
+      "start": 1368.55,
+      "duration": 8.4,
+      "text": "updated as when to full County is going"
+    },
+    {
+      "start": 1370.559,
+      "duration": 9.12,
+      "text": "to change around Brian hope that"
+    },
+    {
+      "start": 1376.95,
+      "duration": 5.57,
+      "text": "answered your question we can do we can"
+    },
+    {
+      "start": 1379.679,
+      "duration": 7.441,
+      "text": "do this back and forth on email as well"
+    },
+    {
+      "start": 1382.52,
+      "duration": 16.96,
+      "text": "thank you any other questions about our"
+    },
+    {
+      "start": 1387.12,
+      "duration": 14.4,
+      "text": "coverage or data oh I do see another"
+    },
+    {
+      "start": 1399.48,
+      "duration": 4.29,
+      "text": "question here do all the parcels have"
+    },
+    {
+      "start": 1401.52,
+      "duration": 5.1,
+      "text": "both ownership and the boundaries data"
+    },
+    {
+      "start": 1403.77,
+      "duration": 6.18,
+      "text": "if not what percentage would not have"
+    },
+    {
+      "start": 1406.62,
+      "duration": 4.77,
+      "text": "boundaries definitely every parcel that"
+    },
+    {
+      "start": 1409.95,
+      "duration": 3.9,
+      "text": "we're sharing with you will have"
+    },
+    {
+      "start": 1411.39,
+      "duration": 4.47,
+      "text": "boundary data on it so that's one of our"
+    },
+    {
+      "start": 1413.85,
+      "duration": 3.6,
+      "text": "core requirements here is anything"
+    },
+    {
+      "start": 1415.86,
+      "duration": 3.48,
+      "text": "that's coming through in any of these"
+    },
+    {
+      "start": 1417.45,
+      "duration": 5.34,
+      "text": "formats we're going to have boundaries"
+    },
+    {
+      "start": 1419.34,
+      "duration": 5.25,
+      "text": "for it for the ownership percent there I"
+    },
+    {
+      "start": 1422.79,
+      "duration": 3.45,
+      "text": "can get you a high level number I don't"
+    },
+    {
+      "start": 1424.59,
+      "duration": 3.839,
+      "text": "have the high level number offhand I"
+    },
+    {
+      "start": 1426.24,
+      "duration": 8.03,
+      "text": "don't think might be in our coverage"
+    },
+    {
+      "start": 1428.429,
+      "duration": 8.791,
+      "text": "report in that first row here so our"
+    },
+    {
+      "start": 1434.27,
+      "duration": 4.15,
+      "text": "ownership coverage this is definitely"
+    },
+    {
+      "start": 1437.22,
+      "duration": 3.81,
+      "text": "where I would look for any of the"
+    },
+    {
+      "start": 1438.42,
+      "duration": 7.74,
+      "text": "coverage questions is here so let's"
+    },
+    {
+      "start": 1441.03,
+      "duration": 8.67,
+      "text": "scroll an owner over to owner sometimes"
+    },
+    {
+      "start": 1446.16,
+      "duration": 5.67,
+      "text": "it's quicker just to search so so about"
+    },
+    {
+      "start": 1449.7,
+      "duration": 5.21,
+      "text": "85% of our parcels right now will have"
+    },
+    {
+      "start": 1451.83,
+      "duration": 3.08,
+      "text": "the owner name on there"
+    },
+    {
+      "start": 1459.09,
+      "duration": 3.67,
+      "text": "Hey Thank You Peter let us know if that"
+    },
+    {
+      "start": 1461.83,
+      "duration": 17.81,
+      "text": "answered your question"
+    },
+    {
+      "start": 1462.76,
+      "duration": 19.95,
+      "text": "um any other questions all right um"
+    },
+    {
+      "start": 1479.64,
+      "duration": 5.2,
+      "text": "while most of you are typing your"
+    },
+    {
+      "start": 1482.71,
+      "duration": 6.6,
+      "text": "questions I'd like to go ahead and give"
+    },
+    {
+      "start": 1484.84,
+      "duration": 7.02,
+      "text": "a few upcoming updates from us we have a"
+    },
+    {
+      "start": 1489.31,
+      "duration": 4.68,
+      "text": "big deploy coming up next week"
+    },
+    {
+      "start": 1491.86,
+      "duration": 3.84,
+      "text": "like like matt said we do it every other"
+    },
+    {
+      "start": 1493.99,
+      "duration": 4.29,
+      "text": "week and then we send out monthly"
+    },
+    {
+      "start": 1495.7,
+      "duration": 5.16,
+      "text": "updates to our data customers why an"
+    },
+    {
+      "start": 1498.28,
+      "duration": 4.62,
+      "text": "update email that lists exactly what was"
+    },
+    {
+      "start": 1500.86,
+      "duration": 3.78,
+      "text": "refresh what was added what was updated"
+    },
+    {
+      "start": 1502.9,
+      "duration": 5.85,
+      "text": "in the prior month for instance if you"
+    },
+    {
+      "start": 1504.64,
+      "duration": 6.24,
+      "text": "receive an email from us this month then"
+    },
+    {
+      "start": 1508.75,
+      "duration": 4.26,
+      "text": "it will contain all of the updates and"
+    },
+    {
+      "start": 1510.88,
+      "duration": 4.2,
+      "text": "the happenings to the data from the"
+    },
+    {
+      "start": 1513.01,
+      "duration": 4.11,
+      "text": "month of January so that's kind of our"
+    },
+    {
+      "start": 1515.08,
+      "duration": 4.38,
+      "text": "way of keeping our customers data"
+    },
+    {
+      "start": 1517.12,
+      "duration": 3.54,
+      "text": "customers informed of everything that"
+    },
+    {
+      "start": 1519.46,
+      "duration": 3.96,
+      "text": "we've been doing with our nationwide"
+    },
+    {
+      "start": 1520.66,
+      "duration": 6.06,
+      "text": "data apart from that we have some"
+    },
+    {
+      "start": 1523.42,
+      "duration": 5.28,
+      "text": "exciting exciting you know updates"
+    },
+    {
+      "start": 1526.72,
+      "duration": 4.62,
+      "text": "coming up I don't want to divulge too"
+    },
+    {
+      "start": 1528.7,
+      "duration": 4.41,
+      "text": "many details just yet but in the coming"
+    },
+    {
+      "start": 1531.34,
+      "duration": 4.5,
+      "text": "weeks please keep an eye out for a bunch"
+    },
+    {
+      "start": 1533.11,
+      "duration": 5.25,
+      "text": "of announcements from us essentially we"
+    },
+    {
+      "start": 1535.84,
+      "duration": 4.86,
+      "text": "have seen over the past couple years you"
+    },
+    {
+      "start": 1538.36,
+      "duration": 4.89,
+      "text": "know a lot of people ask for you know"
+    },
+    {
+      "start": 1540.7,
+      "duration": 4.35,
+      "text": "single County data or you know not"
+    },
+    {
+      "start": 1543.25,
+      "duration": 4.68,
+      "text": "something that is nationwide that"
+    },
+    {
+      "start": 1545.05,
+      "duration": 4.71,
+      "text": "requires a big back-and-forth so we want"
+    },
+    {
+      "start": 1547.93,
+      "duration": 3.99,
+      "text": "to make that easily available to you so"
+    },
+    {
+      "start": 1549.76,
+      "duration": 4.02,
+      "text": "we would like to get that going and make"
+    },
+    {
+      "start": 1551.92,
+      "duration": 4.11,
+      "text": "that available so you can come help"
+    },
+    {
+      "start": 1553.78,
+      "duration": 5.55,
+      "text": "yourself see which county you want and"
+    },
+    {
+      "start": 1556.03,
+      "duration": 5.52,
+      "text": "then you know license the data from us"
+    },
+    {
+      "start": 1559.33,
+      "duration": 3.54,
+      "text": "on your own without you know any of the"
+    },
+    {
+      "start": 1561.55,
+      "duration": 4.17,
+      "text": "back and forth and the time-consuming"
+    },
+    {
+      "start": 1562.87,
+      "duration": 5.97,
+      "text": "process so please keep an eye out for"
+    },
+    {
+      "start": 1565.72,
+      "duration": 5.97,
+      "text": "one such update Matt here the you know"
+    },
+    {
+      "start": 1568.84,
+      "duration": 4.58,
+      "text": "our miracle worker here on our team is"
+    },
+    {
+      "start": 1571.69,
+      "duration": 4.74,
+      "text": "working on it as we speak"
+    },
+    {
+      "start": 1573.42,
+      "duration": 6.78,
+      "text": "apart from that um you know we are also"
+    },
+    {
+      "start": 1576.43,
+      "duration": 6.42,
+      "text": "trying to host all of our parcel update"
+    },
+    {
+      "start": 1580.2,
+      "duration": 4.87,
+      "text": "updates and refreshes as a blog post"
+    },
+    {
+      "start": 1582.85,
+      "duration": 4.86,
+      "text": "every month so if you're not a data"
+    },
+    {
+      "start": 1585.07,
+      "duration": 4.02,
+      "text": "customer yet and thinking whether we"
+    },
+    {
+      "start": 1587.71,
+      "duration": 3.39,
+      "text": "should become a data customer whether"
+    },
+    {
+      "start": 1589.09,
+      "duration": 3.39,
+      "text": "our data is good enough you can follow"
+    },
+    {
+      "start": 1591.1,
+      "duration": 3.39,
+      "text": "our blog and see"
+    },
+    {
+      "start": 1592.48,
+      "duration": 3.36,
+      "text": "was updated recently and if it includes"
+    },
+    {
+      "start": 1594.49,
+      "duration": 3.36,
+      "text": "anything that you've been looking for"
+    },
+    {
+      "start": 1595.84,
+      "duration": 4.469,
+      "text": "then please reach out to us and we can"
+    },
+    {
+      "start": 1597.85,
+      "duration": 3.959,
+      "text": "get you the data so you don't just have"
+    },
+    {
+      "start": 1600.309,
+      "duration": 4.441,
+      "text": "to be a data customer to receive this"
+    },
+    {
+      "start": 1601.809,
+      "duration": 7.291,
+      "text": "parcel data updates moving forward I do"
+    },
+    {
+      "start": 1604.75,
+      "duration": 6.87,
+      "text": "see another question pop up generally"
+    },
+    {
+      "start": 1609.1,
+      "duration": 5.52,
+      "text": "how often do the counties update their"
+    },
+    {
+      "start": 1611.62,
+      "duration": 5.07,
+      "text": "data like if a new subdivision is built"
+    },
+    {
+      "start": 1614.62,
+      "duration": 5.67,
+      "text": "how long is it before they have the data"
+    },
+    {
+      "start": 1616.69,
+      "duration": 4.35,
+      "text": "for that new area that's that's a"
+    },
+    {
+      "start": 1620.29,
+      "duration": 3.06,
+      "text": "fantastic question"
+    },
+    {
+      "start": 1621.04,
+      "duration": 4.05,
+      "text": "every county is very different for it so"
+    },
+    {
+      "start": 1623.35,
+      "duration": 4.11,
+      "text": "some counties are updating their data"
+    },
+    {
+      "start": 1625.09,
+      "duration": 4.65,
+      "text": "alive and we try and do as many"
+    },
+    {
+      "start": 1627.46,
+      "duration": 5.339,
+      "text": "refreshes as we can some places really"
+    },
+    {
+      "start": 1629.74,
+      "duration": 6.66,
+      "text": "only publish a fresh set or draw a fresh"
+    },
+    {
+      "start": 1632.799,
+      "duration": 6.75,
+      "text": "set of data infrequently so once a year"
+    },
+    {
+      "start": 1636.4,
+      "duration": 4.71,
+      "text": "or plus or minus or less so our goal is"
+    },
+    {
+      "start": 1639.549,
+      "duration": 3.331,
+      "text": "to have every place refreshed at least"
+    },
+    {
+      "start": 1641.11,
+      "duration": 3.48,
+      "text": "once a year and one thing that's really"
+    },
+    {
+      "start": 1642.88,
+      "duration": 2.76,
+      "text": "nice is where you will to work with you"
+    },
+    {
+      "start": 1644.59,
+      "duration": 2.4,
+      "text": "so if there's a place where you're"
+    },
+    {
+      "start": 1645.64,
+      "duration": 3.75,
+      "text": "especially interested in let us know"
+    },
+    {
+      "start": 1646.99,
+      "duration": 5.61,
+      "text": "we're able to refresh it more frequently"
+    },
+    {
+      "start": 1649.39,
+      "duration": 5.789,
+      "text": "as you need and we're always speeding up"
+    },
+    {
+      "start": 1652.6,
+      "duration": 4.56,
+      "text": "the pipeline for pulling in fresh data"
+    },
+    {
+      "start": 1655.179,
+      "duration": 5.49,
+      "text": "and just as an anecdote as talking to a"
+    },
+    {
+      "start": 1657.16,
+      "duration": 5.34,
+      "text": "county assessor recently who was telling"
+    },
+    {
+      "start": 1660.669,
+      "duration": 3.421,
+      "text": "me that their data comes from the sub"
+    },
+    {
+      "start": 1662.5,
+      "duration": 3.33,
+      "text": "municipalities that are part of their"
+    },
+    {
+      "start": 1664.09,
+      "duration": 3.81,
+      "text": "County and they're having trouble"
+    },
+    {
+      "start": 1665.83,
+      "duration": 4.53,
+      "text": "getting those municipalities to even"
+    },
+    {
+      "start": 1667.9,
+      "duration": 4.11,
+      "text": "sometimes source their updated"
+    },
+    {
+      "start": 1670.36,
+      "duration": 3.3,
+      "text": "subdivision data so there definitely is"
+    },
+    {
+      "start": 1672.01,
+      "duration": 3.96,
+      "text": "a lag for some things like new"
+    },
+    {
+      "start": 1673.66,
+      "duration": 4.56,
+      "text": "subdivisions even from the county if we"
+    },
+    {
+      "start": 1675.97,
+      "duration": 3.24,
+      "text": "refresh as fast as possible so we're"
+    },
+    {
+      "start": 1678.22,
+      "duration": 4.44,
+      "text": "doing our best to keep it up to date"
+    },
+    {
+      "start": 1679.21,
+      "duration": 4.83,
+      "text": "yeah and we try and do as many as and"
+    },
+    {
+      "start": 1682.66,
+      "duration": 2.94,
+      "text": "when we can update the data we do"
+    },
+    {
+      "start": 1684.04,
+      "duration": 3.36,
+      "text": "sometimes if you're able to do it"
+    },
+    {
+      "start": 1685.6,
+      "duration": 4.29,
+      "text": "multiple times in a year we do but there"
+    },
+    {
+      "start": 1687.4,
+      "duration": 4.83,
+      "text": "are some times like for instance Matt"
+    },
+    {
+      "start": 1689.89,
+      "duration": 4.59,
+      "text": "correct me if I'm wrong here but a state"
+    },
+    {
+      "start": 1692.23,
+      "duration": 5.64,
+      "text": "like Florida refresh is only once a year"
+    },
+    {
+      "start": 1694.48,
+      "duration": 5.67,
+      "text": "so you know we won't be able to do"
+    },
+    {
+      "start": 1697.87,
+      "duration": 5.01,
+      "text": "multiple refreshes on you know Florida"
+    },
+    {
+      "start": 1700.15,
+      "duration": 5.49,
+      "text": "data for instance but anything else as"
+    },
+    {
+      "start": 1702.88,
+      "duration": 5.49,
+      "text": "and when we are able to we try and grab"
+    },
+    {
+      "start": 1705.64,
+      "duration": 4.23,
+      "text": "it and update and try and add new"
+    },
+    {
+      "start": 1708.37,
+      "duration": 3.84,
+      "text": "counties the counties that we don't"
+    },
+    {
+      "start": 1709.87,
+      "duration": 3.66,
+      "text": "actually have totally yeah there's some"
+    },
+    {
+      "start": 1712.21,
+      "duration": 3.18,
+      "text": "there's some places in Florida where we"
+    },
+    {
+      "start": 1713.53,
+      "duration": 3.389,
+      "text": "where we are able to get more frequent"
+    },
+    {
+      "start": 1715.39,
+      "duration": 3.9,
+      "text": "things but for some parts of the state"
+    },
+    {
+      "start": 1716.919,
+      "duration": 6.271,
+      "text": "we're not and so we're always working to"
+    },
+    {
+      "start": 1719.29,
+      "duration": 5.55,
+      "text": "get those working faster and right now"
+    },
+    {
+      "start": 1723.19,
+      "duration": 3.07,
+      "text": "we update as and when we can as"
+    },
+    {
+      "start": 1724.84,
+      "duration": 3.19,
+      "text": "frequently as we can but"
+    },
+    {
+      "start": 1726.26,
+      "duration": 4.44,
+      "text": "eventually the hope is and hopefully we"
+    },
+    {
+      "start": 1728.03,
+      "duration": 4.2,
+      "text": "can hit those numbers this year we would"
+    },
+    {
+      "start": 1730.7,
+      "duration": 3.78,
+      "text": "like to get to a point where we can do"
+    },
+    {
+      "start": 1732.23,
+      "duration": 4.319,
+      "text": "quarterly updates the entire data of the"
+    },
+    {
+      "start": 1734.48,
+      "duration": 10.17,
+      "text": "inter dataset it'll be nice to get to"
+    },
+    {
+      "start": 1736.549,
+      "duration": 12.591,
+      "text": "that point all right does anyone have a"
+    },
+    {
+      "start": 1744.65,
+      "duration": 4.49,
+      "text": "job to tell while we wait for questions"
+    },
+    {
+      "start": 1753.91,
+      "duration": 7.36,
+      "text": "okay all right so I think that's about"
+    },
+    {
+      "start": 1759.2,
+      "duration": 2.55,
+      "text": "it do I see another question Popeye yes"
+    },
+    {
+      "start": 1761.27,
+      "duration": 3.84,
+      "text": "I do"
+    },
+    {
+      "start": 1761.75,
+      "duration": 5.22,
+      "text": "Darrin do connie's have that have more"
+    },
+    {
+      "start": 1765.11,
+      "duration": 4.65,
+      "text": "limited information than others ever"
+    },
+    {
+      "start": 1766.97,
+      "duration": 5.88,
+      "text": "expand what they report or does it stay"
+    },
+    {
+      "start": 1769.76,
+      "duration": 6.09,
+      "text": "in whatever they stayed they report hmm"
+    },
+    {
+      "start": 1772.85,
+      "duration": 4.53,
+      "text": "yeah absolutely they do get better over"
+    },
+    {
+      "start": 1775.85,
+      "duration": 3.81,
+      "text": "time we've definitely found that so we"
+    },
+    {
+      "start": 1777.38,
+      "duration": 4.5,
+      "text": "have some statewide things rolling on"
+    },
+    {
+      "start": 1779.66,
+      "duration": 4.2,
+      "text": "soon where we've been able to refresh"
+    },
+    {
+      "start": 1781.88,
+      "duration": 4.41,
+      "text": "most of some states and we've seen"
+    },
+    {
+      "start": 1783.86,
+      "duration": 4.35,
+      "text": "really dramatic increases and you know"
+    },
+    {
+      "start": 1786.29,
+      "duration": 4.47,
+      "text": "for example like our owner coverage or"
+    },
+    {
+      "start": 1788.21,
+      "duration": 3.51,
+      "text": "and other fields and they're so and"
+    },
+    {
+      "start": 1790.76,
+      "duration": 2.52,
+      "text": "especially if there's a place you're"
+    },
+    {
+      "start": 1791.72,
+      "duration": 4.05,
+      "text": "looking at where you see less coverage"
+    },
+    {
+      "start": 1793.28,
+      "duration": 4.5,
+      "text": "we're able to you know reach out more as"
+    },
+    {
+      "start": 1795.77,
+      "duration": 4.23,
+      "text": "well if there's specific areas but in"
+    },
+    {
+      "start": 1797.78,
+      "duration": 5.87,
+      "text": "general we are seeing definitely a trend"
+    },
+    {
+      "start": 1800.0,
+      "duration": 3.65,
+      "text": "in in providing more data"
+    },
+    {
+      "start": 1822.33,
+      "duration": 7.24,
+      "text": "Thank You Darren alright I think that"
+    },
+    {
+      "start": 1826.48,
+      "duration": 5.28,
+      "text": "covers that we've probably answered all"
+    },
+    {
+      "start": 1829.57,
+      "duration": 4.89,
+      "text": "okay there's another one just now we've"
+    },
+    {
+      "start": 1831.76,
+      "duration": 4.95,
+      "text": "had some pesky clients find counties"
+    },
+    {
+      "start": 1834.46,
+      "duration": 5.82,
+      "text": "where there is not parcel data available"
+    },
+    {
+      "start": 1836.71,
+      "duration": 5.31,
+      "text": "do you all have a request to send do you"
+    },
+    {
+      "start": 1840.28,
+      "duration": 6.12,
+      "text": "have a system to send a request ah"
+    },
+    {
+      "start": 1842.02,
+      "duration": 6.75,
+      "text": "interesting yes so the the best way"
+    },
+    {
+      "start": 1846.4,
+      "duration": 5.04,
+      "text": "right now is to email us parcels at land"
+    },
+    {
+      "start": 1848.77,
+      "duration": 5.88,
+      "text": "grid comm or if you're in touch with"
+    },
+    {
+      "start": 1851.44,
+      "duration": 6.869,
+      "text": "laker myself directly as your rep let us"
+    },
+    {
+      "start": 1854.65,
+      "duration": 5.31,
+      "text": "know and yes yeah we're happy to work"
+    },
+    {
+      "start": 1858.309,
+      "duration": 4.141,
+      "text": "with you so sometimes when we're not"
+    },
+    {
+      "start": 1859.96,
+      "duration": 5.219,
+      "text": "able to get County it's because the cost"
+    },
+    {
+      "start": 1862.45,
+      "duration": 4.109,
+      "text": "is prohibitive you know it well we're"
+    },
+    {
+      "start": 1865.179,
+      "duration": 3.931,
+      "text": "happy to talk with you about how we can"
+    },
+    {
+      "start": 1866.559,
+      "duration": 4.891,
+      "text": "work that on you know whether it's a"
+    },
+    {
+      "start": 1869.11,
+      "duration": 4.44,
+      "text": "cost that we have to pass on directly"
+    },
+    {
+      "start": 1871.45,
+      "duration": 3.54,
+      "text": "and fully because we're not able to"
+    },
+    {
+      "start": 1873.55,
+      "duration": 2.85,
+      "text": "share the data or if we can work"
+    },
+    {
+      "start": 1874.99,
+      "duration": 5.31,
+      "text": "something out if we're able to also"
+    },
+    {
+      "start": 1876.4,
+      "duration": 5.13,
+      "text": "reuse that data so we're always there's"
+    },
+    {
+      "start": 1880.3,
+      "duration": 3.48,
+      "text": "a there's a number of instances where"
+    },
+    {
+      "start": 1881.53,
+      "duration": 3.57,
+      "text": "we've hold additional data with our"
+    },
+    {
+      "start": 1883.78,
+      "duration": 3.0,
+      "text": "relationship with clients and we really"
+    },
+    {
+      "start": 1885.1,
+      "duration": 3.39,
+      "text": "want do want to hear from you you know"
+    },
+    {
+      "start": 1886.78,
+      "duration": 3.12,
+      "text": "if there's a place where your clients"
+    },
+    {
+      "start": 1888.49,
+      "duration": 2.52,
+      "text": "are remarking it we want to make it"
+    },
+    {
+      "start": 1889.9,
+      "duration": 4.68,
+      "text": "better for them and we want to be able"
+    },
+    {
+      "start": 1891.01,
+      "duration": 5.31,
+      "text": "to turn that around quickly as well yeah"
+    },
+    {
+      "start": 1894.58,
+      "duration": 4.65,
+      "text": "and I want to quickly add to that that"
+    },
+    {
+      "start": 1896.32,
+      "duration": 5.4,
+      "text": "we have had such arrangements with you"
+    },
+    {
+      "start": 1899.23,
+      "duration": 4.26,
+      "text": "know customers where you know they would"
+    },
+    {
+      "start": 1901.72,
+      "duration": 4.5,
+      "text": "like certain counties that we don't have"
+    },
+    {
+      "start": 1903.49,
+      "duration": 4.53,
+      "text": "and then we have come up with you know a"
+    },
+    {
+      "start": 1906.22,
+      "duration": 4.08,
+      "text": "similar arrangement that Matt just"
+    },
+    {
+      "start": 1908.02,
+      "duration": 4.2,
+      "text": "explained definitely we're only asked"
+    },
+    {
+      "start": 1910.3,
+      "duration": 3.6,
+      "text": "for data and contribute to it being"
+    },
+    {
+      "start": 1912.22,
+      "duration": 3.93,
+      "text": "gathered with expectation that everyone"
+    },
+    {
+      "start": 1913.9,
+      "duration": 4.68,
+      "text": "will be able to get it as well that's"
+    },
+    {
+      "start": 1916.15,
+      "duration": 5.19,
+      "text": "right yes we try and make sure that"
+    },
+    {
+      "start": 1918.58,
+      "duration": 5.07,
+      "text": "that's the way it is because let's face"
+    },
+    {
+      "start": 1921.34,
+      "duration": 4.17,
+      "text": "it essentially this is public data and"
+    },
+    {
+      "start": 1923.65,
+      "duration": 4.62,
+      "text": "we want to make it publicly available to"
+    },
+    {
+      "start": 1925.51,
+      "duration": 4.35,
+      "text": "everyone and typically that's the way we"
+    },
+    {
+      "start": 1928.27,
+      "duration": 4.86,
+      "text": "kind of work with customers to make sure"
+    },
+    {
+      "start": 1929.86,
+      "duration": 5.61,
+      "text": "that as and when you know we work with"
+    },
+    {
+      "start": 1933.13,
+      "duration": 3.9,
+      "text": "you to acquire counties and some of them"
+    },
+    {
+      "start": 1935.47,
+      "duration": 3.3,
+      "text": "that we have to pay for we want to make"
+    },
+    {
+      "start": 1937.03,
+      "duration": 6.42,
+      "text": "sure that they are publicly available as"
+    },
+    {
+      "start": 1938.77,
+      "duration": 9.57,
+      "text": "well so do we"
+    },
+    {
+      "start": 1943.45,
+      "duration": 6.3,
+      "text": "thank you any more questions"
+    },
+    {
+      "start": 1948.34,
+      "duration": 3.89,
+      "text": "keep them coming it's getting"
+    },
+    {
+      "start": 1949.75,
+      "duration": 2.48,
+      "text": "interesting"
+    },
+    {
+      "start": 1975.639,
+      "duration": 8.351,
+      "text": "all right think that might be the last"
+    },
+    {
+      "start": 1980.149,
+      "duration": 7.461,
+      "text": "of it just wanna check again to make"
+    },
+    {
+      "start": 1983.99,
+      "duration": 3.62,
+      "text": "sure that I'm not missing any question"
+    },
+    {
+      "start": 1988.299,
+      "duration": 7.031,
+      "text": "all right okay that wraps ed um thank"
+    },
+    {
+      "start": 1993.11,
+      "duration": 3.21,
+      "text": "you all so much for joining us live this"
+    },
+    {
+      "start": 1995.33,
+      "duration": 2.969,
+      "text": "has been amazing"
+    },
+    {
+      "start": 1996.32,
+      "duration": 4.68,
+      "text": "we want to do more of these and I think"
+    },
+    {
+      "start": 1998.299,
+      "duration": 5.88,
+      "text": "the ones that we do on data next will be"
+    },
+    {
+      "start": 2001.0,
+      "duration": 5.1,
+      "text": "a little bit more um you know we want to"
+    },
+    {
+      "start": 2004.179,
+      "duration": 3.391,
+      "text": "like dig deep and dive into certain"
+    },
+    {
+      "start": 2006.1,
+      "duration": 3.75,
+      "text": "parts like today was just in general"
+    },
+    {
+      "start": 2007.57,
+      "duration": 3.9,
+      "text": "overview but I think the ones that we do"
+    },
+    {
+      "start": 2009.85,
+      "duration": 3.39,
+      "text": "in future could be about a particular"
+    },
+    {
+      "start": 2011.47,
+      "duration": 4.65,
+      "text": "data set that we just integrated with"
+    },
+    {
+      "start": 2013.24,
+      "duration": 4.889,
+      "text": "like the USPS or you know our delivery"
+    },
+    {
+      "start": 2016.12,
+      "duration": 4.139,
+      "text": "methods and things like that so we want"
+    },
+    {
+      "start": 2018.129,
+      "duration": 6.721,
+      "text": "to like dig deeper and want to do more"
+    },
+    {
+      "start": 2020.259,
+      "duration": 7.681,
+      "text": "of these through the year and we don't"
+    },
+    {
+      "start": 2024.85,
+      "duration": 5.579,
+      "text": "just do data we also do a lot of these"
+    },
+    {
+      "start": 2027.94,
+      "duration": 4.92,
+      "text": "webinars and live videos and demos for"
+    },
+    {
+      "start": 2030.429,
+      "duration": 4.62,
+      "text": "our mapping platform as well and we have"
+    },
+    {
+      "start": 2032.86,
+      "duration": 5.49,
+      "text": "one coming up in two weeks on the 28th"
+    },
+    {
+      "start": 2035.049,
+      "duration": 6.061,
+      "text": "on surveying best practices so if any of"
+    },
+    {
+      "start": 2038.35,
+      "duration": 4.799,
+      "text": "you is interested in conducting property"
+    },
+    {
+      "start": 2041.11,
+      "duration": 4.169,
+      "text": "and land surveys ah that would be a good"
+    },
+    {
+      "start": 2043.149,
+      "duration": 4.561,
+      "text": "one to join it'll be with one of our"
+    },
+    {
+      "start": 2045.279,
+      "duration": 5.07,
+      "text": "customers who does these surveys all the"
+    },
+    {
+      "start": 2047.71,
+      "duration": 5.699,
+      "text": "time he's like such a pro and he has"
+    },
+    {
+      "start": 2050.349,
+      "duration": 5.07,
+      "text": "over his course of time doing these"
+    },
+    {
+      "start": 2053.409,
+      "duration": 3.42,
+      "text": "surveys acquired so much experience and"
+    },
+    {
+      "start": 2055.419,
+      "duration": 3.96,
+      "text": "expertise that he wants to share his"
+    },
+    {
+      "start": 2056.829,
+      "duration": 5.671,
+      "text": "expertise with all of us by sharing his"
+    },
+    {
+      "start": 2059.379,
+      "duration": 5.401,
+      "text": "best practices I do have lots of nerdy"
+    },
+    {
+      "start": 2062.5,
+      "duration": 3.839,
+      "text": "data questions mostly related to change"
+    },
+    {
+      "start": 2064.78,
+      "duration": 2.49,
+      "text": "logs change tracking change"
+    },
+    {
+      "start": 2066.339,
+      "duration": 3.421,
+      "text": "notifications"
+    },
+    {
+      "start": 2067.27,
+      "duration": 5.099,
+      "text": "you've reached out to the right set of"
+    },
+    {
+      "start": 2069.76,
+      "duration": 5.369,
+      "text": "crowd Matt and Blake both of them here"
+    },
+    {
+      "start": 2072.369,
+      "duration": 5.821,
+      "text": "love interacting with customers and love"
+    },
+    {
+      "start": 2075.129,
+      "duration": 5.341,
+      "text": "the nerdy data discussion so feel free"
+    },
+    {
+      "start": 2078.19,
+      "duration": 5.129,
+      "text": "to either email us at parcels add or you"
+    },
+    {
+      "start": 2080.47,
+      "duration": 6.09,
+      "text": "can email them directly match em ATT at"
+    },
+    {
+      "start": 2083.319,
+      "duration": 5.61,
+      "text": "language comm and Blake B la ke"
+    },
+    {
+      "start": 2086.56,
+      "duration": 7.44,
+      "text": "Atlanta comm and they would be so happy"
+    },
+    {
+      "start": 2088.929,
+      "duration": 8.131,
+      "text": "to answer all those questions all right"
+    },
+    {
+      "start": 2094.0,
+      "duration": 5.09,
+      "text": "um so that's it I will keep you guys"
+    },
+    {
+      "start": 2097.06,
+      "duration": 5.34,
+      "text": "notified there you go"
+    },
+    {
+      "start": 2099.09,
+      "duration": 6.52,
+      "text": "right there I'll keep you guys notified"
+    },
+    {
+      "start": 2102.4,
+      "duration": 5.43,
+      "text": "of any future data related webinars that"
+    },
+    {
+      "start": 2105.61,
+      "duration": 4.08,
+      "text": "we do but keep following us and all of"
+    },
+    {
+      "start": 2107.83,
+      "duration": 3.78,
+      "text": "these webinars if you're not able to"
+    },
+    {
+      "start": 2109.69,
+      "duration": 3.72,
+      "text": "join them live they get converted into"
+    },
+    {
+      "start": 2111.61,
+      "duration": 4.2,
+      "text": "videos and get added to our YouTube"
+    },
+    {
+      "start": 2113.41,
+      "duration": 3.99,
+      "text": "channel and our website so there's no"
+    },
+    {
+      "start": 2115.81,
+      "duration": 3.3,
+      "text": "way of missing the content on any of"
+    },
+    {
+      "start": 2117.4,
+      "duration": 3.93,
+      "text": "these so thank you all so much for"
+    },
+    {
+      "start": 2119.11,
+      "duration": 5.37,
+      "text": "joining us live appreciated and Matt"
+    },
+    {
+      "start": 2121.33,
+      "duration": 4.98,
+      "text": "thank you so much for sharing your"
+    },
+    {
+      "start": 2124.48,
+      "duration": 3.96,
+      "text": "knowledge and expertise on our data and"
+    },
+    {
+      "start": 2126.31,
+      "duration": 4.29,
+      "text": "Blake you've been such an amazing"
+    },
+    {
+      "start": 2128.44,
+      "duration": 3.69,
+      "text": "partner on this webinar and I'm so sorry"
+    },
+    {
+      "start": 2130.6,
+      "duration": 3.78,
+      "text": "we want to do one with you"
+    },
+    {
+      "start": 2132.13,
+      "duration": 3.81,
+      "text": "again you know just you alone so that"
+    },
+    {
+      "start": 2134.38,
+      "duration": 4.17,
+      "text": "people can hear all the good stuff that"
+    },
+    {
+      "start": 2135.94,
+      "duration": 4.08,
+      "text": "you have to tell them all right Matt and"
+    },
+    {
+      "start": 2138.55,
+      "duration": 8.52,
+      "text": "Blake thank you so much for joining and"
+    },
+    {
+      "start": 2140.02,
+      "duration": 8.11,
+      "text": "thank you all so much see you again all"
+    },
+    {
+      "start": 2147.07,
+      "duration": 4.749,
+      "text": "right thanks"
+    },
+    {
+      "start": 2148.13,
+      "duration": 3.689,
+      "text": "yeah bye-bye"
+    }
+  ],
+  "full_text": "all right and we are live welcome welcome this is the first ever date up landed parcel data webinar that we are doing we're so excited and thank you all all the attendees for registering and joining us live let's keep this interaction interactive so you can use the Bluefish console on your interface to like let us know if you have any questions if you're curious about anything if you would like us to repeat a few things or show the screenshot again please please let us know as we go along it's it's gonna be just me and Matt today Blake is also here from the languor team but he you know typical glitches as always he's not able to hear us on on this webinar so let's get started this is exciting today we're just gonna talk about landed parcel data and just go through like an overview of what the parcel data is what our coverage is like what what sort of attribution we have how we deliver data etc and at the end we would like to open it up up to all of you who've joined us live right now for any questions so yeah let's get started I would like a Matt on our team to go ahead and introduce himself first all right good afternoon or a good morning or good evening depending what time zone you're in my name is Matt Hamill I'm a senior software architect here at Loveland I work across our parcel services from our platform and enterprise to the API and to the bulk parcel collection data and delivery and I'm joined here by our colleague Blake Gerardo he is the primary point of contact for our parcel system you'll be working with him closely if you're working with our parcel data he knows all the ins and outs manages delivery for us and I'm sorry that he's not able to jump in right now and hopefully you will later but we're excited to get started and tell you a little bit more about our parcel data services absolutely and I think you might and thank you for also introducing the amazing Blake on our team I'm Sahana multi my title is you know that of a general manager but I do opposed to things from product management about marketing to managing the team the strategy the ops and the works so a lot of times you will interface with me you know if you're a data customer so yeah so that's a little bit about our team of you're an extremely approachable team so feel free to email any one of us you know our email addresses are very simple it's just our first name at language comm so you can get to all of us at any time if you have any questions or you can use team at language comm or help with language comm with that said let's just you know dive right in let's give a little bit about you know give a little context about what parcel data is essentially loveland have you been you know in operation for about 10 years now I think our roots were very different to what we're doing right now but it's all in the same you know it's all in it comes into the same industry it sits under the same realm of things which is working with property information and property records so we have been a primary property and parcel data collector for over a year close to 2 to 3 years now we work with counties directly and we obtain parcel boundaries the shape files the data and the taxes of the data that comes along with it now if those of you worked in this industry or have worked with this kind of data before you know that the data differs from County to County it's very disparate it's not standardized so our amazing team here which includes the two people that you will hear now Matt and Blake um they kind of work on it they standardize it and make it available at a nationwide level so today as of today we have close to 143 million parcels mapped and and yeah I recorded on both on our site and as our on our data set right now and that's kind of what we all talk about we'll talk about what the data is how we've collected that what our coverage is what attribution we have and then we'll end the session with delivery notes on how we deliver the data all right so mad if you want to jump right in and talk about the data itself and our coverage definitely I'll get started on that and our folks able to see my screen if not please let us know in the chat and we'll make adjustments here yeah I mean great wonderful so I think one thing I want to introduce is this report that's a several years old at this point but soon if you're here you know so I'm getting a message that folks can't hear me yeah are you able to hear me so how I am able to hear you yes okay I will try and speak up a little bit here huh Darren says he can hear thanks Dan yeah Thank You Darren go ahead bud all right and so um if you're in this webinar you're probably familiar at a basic level with what a parcel is and how it covers it we also have this great report at land grade comm slash report slash parcels or if you just search Loveland parcel report it'll pop right up there really introduces what parcels are and more of the process that we go into to acquire collect clean and standardize these so this report is a couple years old we're going to work on updating but it really is a great introduction to the subject and so let me dive right in a little bit to our coverage information here and how we how we collect the data how we're looking at it and how you can see what is way up to Z so if you land at land grid comm slash parcels one of the big pages that we have is the parcel verse and this is a map of the nation it has green red and yellow counties every county or place that we have online in the US and this is a key place to look to see our coverage you know it's a quick place to check if a county is online see the scope of it see how many we have online so right now we have 2800 online there's 170 or so that we know are possible to collect and we're working on getting and then there's about three hundred and three that for some reason whether it's prohibitive cost or in some cases simply we've learned that the data is still on paper we haven't been able to get parcel data there and we're not positive or be able to get it in the short-term so you can see that coverage here 2843 counties online as of today as of coming in next Monday we'll probably have more available for you every other Monday we release a batch of updated and added counties and those are available to our bulk data clients shortly every month after they come out and they're also available on our site and platform an API as soon as they launch as well so some basic information here and let me dive a little bit into the coverage report so if you have a specific question about the coverage so for example you're asking it you are curious if we have a field a specific field what's our coverage for that field if we have a specific County or if we have a specific field in the specific County we can share we're happy to share a detailed coverage report with you so let me pull that up now and put that on screen here so here's the coverage report as it stands today it is a large spreadsheet but we really pride ourselves in providing as much detail as we can so you can make a good decision and we're happy to work with you to get answers out of this or to help guide through this process Mack can you zoom in a tad bit absolutely yes good point thank you all right I know Blake so sorry and then just just to walk you through this a little bit we have detailed information in the state county geo ID how we store that data and our last refresh and number of parcels in that place and now we have columns for the our percent coverage for each of these fields because because for some fields will have will frequently have 100 percent coverage for a county for others it really varies depending on what our partners have available or what the county itself provides and to talk a little about that let me jump over also and share our standard schema so as part of collecting this parcel data we convert it and clean it significant and place it into the Loveland standard schema so this schema is available online here as a Google sheet right now it lists every column that we have in here and let me bump up the size a little bit while 106 105 columns that we have right now this changes occasionally as we add and remove columns and you'll see here the field name that we have for it the type the data type that we store it this is these are postgrads data types but they're generally similar across different formats and in a human readable of some examples in a human readable a description of what that field is so if there's a particular field you're looking at check out the standardized schema the data dictionary for the standardized schema and then you can check on the coverage report our coverage for that place we also try to keep these as machine readable as possible so if you're integrating this into a workflow you can add your own automated checks and your own queries on top of this we do one thing I do want to note is that we we have this skin standard schema 105 different columns right now and growing at the same time counties often have fields that are one us maybe it's something special that just matters to that County Georgia Q ler state we will add those fields on in addition to the standard schema here and unfortunately because of the variability of those we don't have a comprehensive dictionary for those if you're working with the data in bulk we're happy to talk about strategies but the standard schema were guaranteed to distribute with every data table that we have good and so all right and another thing I wanted to talk about is some of the premium and extra columns that we've been working on adding recently and you might have seen emails about these and I wanted to share a little bit more detail about them so in addition to the basics that you get all these all the columns in the standard schema here there are a number of additional steps that we go through to enhance the data so one of those is putting standardizing addresses and running them through USBs validation so that will give you details like the type of delivery point if it's a residential delivery point it'll show if that address is valid in USPS and will have a delivery indicator that indicates if that's a vacant address or a deliverable location and that data is included in our premium data sets and we've also we're also excited to have recently launched a new building footprint data set where we have the count of the number of buildings overlapping the parcel as well as the size of the building footprint on the parcel and we're rolling that out that's a the count is on national nationwide the square feet is rolling out and in vailable in most places we have details about this on our support site support dial language comm there's a general FAQ about the parcel data including details on the building data it talks about how we get the data and I'm having answered detailed questions about this later where it comes from in the process we go through to match it and similarly for the USPS data we have an FAQ specifically on debt and we're always happy to answer quite your questions on it it shows how to access this data and it's available in the land grid platform as well yeah and we recently did two videos on the buildings data and you'll find them on our YouTube channel or on our website on the videos page so another one that we've been rolling out that I wanted to quickly speak about is an issue that a lot of people is near and dear to a lot of our hearts and that's the question of what does the parcel used for and this is a surprisingly tricky problem because parcels can have zoning they can have use codes there's no standardization of this nationwide until now so when we get the data from a county it'll have whatever the local use codes and zoning codes are attached to it and what our team does is goes through and attaches standardized value from the land based classification system from the American Planning Association this is linked in our standard schema it's the LDCs fields and these are numeric codes ranging from 1,000 to 9999 the ink a number of dimensions from activity function structures site and ownership they give us rich detail on how the parcel is being used so we've been rolling this out nationwide we'll have an announcement about this and in a couple of months but you'll be seeing this data in the exports already and we have links to the key is for folks to use here as well if you're looking for more standardized to use information and there we have it on our FAQ is on the support site as well there's more details about the LDCs coding definitely definitely and there's a few additional columns on there so we'll have we have we calculate acres for the parcel acres in square feet and we also join in federal qualified opportunities own flags to the data as well that's good all right if there are no questions at this point I guess we can move into data delivery this is where Blake would have chimed in but he's unable to at this point definitely so Blake is fantastic at keeping our data set updated for all our bulk data clients and I'd like to share a little bit about how that process works what it looks like once you have access to that whether it's the full nationwide data set it's the for nationwide data set with those premium fields I mentioned or whether it's a custom export we've put together for you so this is what it looks like for a typical nationwide export we provide the data via FTP it's accessible anytime you want it and we update we roll out updates to it once a month and let me talk through a little couple of tips and tricks for accessing it so one when you log in you'll have a download folder with all of the different formats that we offer available here the flat CSV file is the only one that really differs that does not have the full parcel geometry in it otherwise these will all have that full parcel geometry in there matically can you zoom in just a little bit yeah let me see if this works here this is hope at all thank you great things and one of the key pieces so you can access this by hand you can of course browse through here and click and download any individual file you're interested in there's going to be you know 2,000 some of them available one for each county that we have available what you also see is these have really nice predictable names in here and this is great if you're integrating this into an automated workflow and for that we also provide this verse this parse / CSV which mears what you'll see on the coverage report at language com / Parcel verse and let me open this up well if my client behaves I will pull up the version of this thing and give me just a moment here what I do is I'll show you the we have metadata available for this what I'll show you is how you can use this and one column that we have in here that's really useful is or limit let me introduce this the verse file through the metadata here so this is just machine readable metadata on all the parcel data that we provide it includes information on the count the the age the county the Geo ID so you can figure out specific places quickly or you can loop through everything and it also has the last three our last refresh date for the parcel for that parcel area one thing it also has is through this canonical path field and for each county this will give you an exact exact path and the filename stem here you will be useful for you for identifying files in the machine readable ways so using the the verse table in the filename stem column you can just loop over the files that are available by FTP download them all in bulk and then bulk process them using this data this is really handy if you want to see okay what has updated in the last month let me pull everything that's updated in the last month into my database or other system and we're happy to provide specific code examples or walkthrough parts of that so that is that's how we deliver the bulk data to clients I'm happy to answer any questions about that it's by SFTP you'll get your own login password and in this metadata table to help process it in bulk or of course you can always use it by hand we also have a parcel API we have once you sign up we'll share a support document for that there's a couple of different endpoints that we support right now the core ones are latitude and longitude search so if you have a point on a map so someone is clicking on a map and your application or app you can pass that point to us and we'll give you all the details on we have on any parcels at that location and then the other one is by address so you can pass in an address query and do and you can add a context which we describe here but it helps narrow our search results down and your API token and we'll give you the best parcel we can find there both of those are available to API clients and then you can also search by parcel number if you're coming in with a parcel number we also provide a vector and raster tile server so if you're integrating these tiles into your app if you want to see them on the map we can share that with you whether it's a vector or raster we have endpoints for both of those including if you need them custom styles for the raster's and interactivity for raster's we definitely the vector tile surfer we have examples for using that we love using it with matte box and matte box GL service that's a great integration it works natively it also works in ESRI use vector tiles services if you're building ESRI web services so we have examples for that as well and we're happy to talk about styling and producing this data so that's an overview of the three different ways that we typically deliver the data and can go into detail on any one of those sounds good thank you mad that was amazing so we'd like to open up for any crashes at this point please use the chat window there and we'd love to answer if you have any questions or if you thought that we didn't cover a particular area enough or talked about something please let us know happy to help and while our attendees type their questions I saw the Blake just rejoined Blake are you still not able to hear us [Music] alright so no questions then okay all right um go ahead Matt quite possible yeah Darren thank you again so much for taking the survey yesterday appreciate it and I'm so sorry you had some trouble accessing that as well somehow technical glitches are I don't know it seems to be the theme of this week for us um all right so um you know if you know if you can if you think of questions at a later time or want to dig deep or you know discuss further you can always reach us at parcels at language comm and one of us will be always available to respond back to you and like I said all of our email addresses are essentially our first name at language comso Sahana matt and blake and i'm sure most of you are probably interfacing with one of us already at this point oh we do have a question from Brian would you consider a refresh when you last receive data from the county or something else yeah definitely so that's it that's a great question definitely a common question so we do we bump that last refresh date when we pull fresh data from the county so that includes the geometries in some cases in between them there will be there is a table updated key in our parcel verse table and that'll record the last date of any type of edit to that table so that might be we ran you know another address matching script over it or we cleaned one row one field of one row in that table but we'll only bump that last refresh when we really have pulled a fresh set of data from that County so actually and one additional note related to that if you're working with the data depending on how you'd like to work with it table updated it is always good you know if we're republishing this day when you see a new fresh table updated stamp on there I you should feel free to pull in there there are going to be improvements in that table but when the last refresh is updated as when to full County is going to change around Brian hope that answered your question we can do we can do this back and forth on email as well thank you any other questions about our coverage or data oh I do see another question here do all the parcels have both ownership and the boundaries data if not what percentage would not have boundaries definitely every parcel that we're sharing with you will have boundary data on it so that's one of our core requirements here is anything that's coming through in any of these formats we're going to have boundaries for it for the ownership percent there I can get you a high level number I don't have the high level number offhand I don't think might be in our coverage report in that first row here so our ownership coverage this is definitely where I would look for any of the coverage questions is here so let's scroll an owner over to owner sometimes it's quicker just to search so so about 85% of our parcels right now will have the owner name on there Hey Thank You Peter let us know if that answered your question um any other questions all right um while most of you are typing your questions I'd like to go ahead and give a few upcoming updates from us we have a big deploy coming up next week like like matt said we do it every other week and then we send out monthly updates to our data customers why an update email that lists exactly what was refresh what was added what was updated in the prior month for instance if you receive an email from us this month then it will contain all of the updates and the happenings to the data from the month of January so that's kind of our way of keeping our customers data customers informed of everything that we've been doing with our nationwide data apart from that we have some exciting exciting you know updates coming up I don't want to divulge too many details just yet but in the coming weeks please keep an eye out for a bunch of announcements from us essentially we have seen over the past couple years you know a lot of people ask for you know single County data or you know not something that is nationwide that requires a big back-and-forth so we want to make that easily available to you so we would like to get that going and make that available so you can come help yourself see which county you want and then you know license the data from us on your own without you know any of the back and forth and the time-consuming process so please keep an eye out for one such update Matt here the you know our miracle worker here on our team is working on it as we speak apart from that um you know we are also trying to host all of our parcel update updates and refreshes as a blog post every month so if you're not a data customer yet and thinking whether we should become a data customer whether our data is good enough you can follow our blog and see was updated recently and if it includes anything that you've been looking for then please reach out to us and we can get you the data so you don't just have to be a data customer to receive this parcel data updates moving forward I do see another question pop up generally how often do the counties update their data like if a new subdivision is built how long is it before they have the data for that new area that's that's a fantastic question every county is very different for it so some counties are updating their data alive and we try and do as many refreshes as we can some places really only publish a fresh set or draw a fresh set of data infrequently so once a year or plus or minus or less so our goal is to have every place refreshed at least once a year and one thing that's really nice is where you will to work with you so if there's a place where you're especially interested in let us know we're able to refresh it more frequently as you need and we're always speeding up the pipeline for pulling in fresh data and just as an anecdote as talking to a county assessor recently who was telling me that their data comes from the sub municipalities that are part of their County and they're having trouble getting those municipalities to even sometimes source their updated subdivision data so there definitely is a lag for some things like new subdivisions even from the county if we refresh as fast as possible so we're doing our best to keep it up to date yeah and we try and do as many as and when we can update the data we do sometimes if you're able to do it multiple times in a year we do but there are some times like for instance Matt correct me if I'm wrong here but a state like Florida refresh is only once a year so you know we won't be able to do multiple refreshes on you know Florida data for instance but anything else as and when we are able to we try and grab it and update and try and add new counties the counties that we don't actually have totally yeah there's some there's some places in Florida where we where we are able to get more frequent things but for some parts of the state we're not and so we're always working to get those working faster and right now we update as and when we can as frequently as we can but eventually the hope is and hopefully we can hit those numbers this year we would like to get to a point where we can do quarterly updates the entire data of the inter dataset it'll be nice to get to that point all right does anyone have a job to tell while we wait for questions okay all right so I think that's about it do I see another question Popeye yes I do Darrin do connie's have that have more limited information than others ever expand what they report or does it stay in whatever they stayed they report hmm yeah absolutely they do get better over time we've definitely found that so we have some statewide things rolling on soon where we've been able to refresh most of some states and we've seen really dramatic increases and you know for example like our owner coverage or and other fields and they're so and especially if there's a place you're looking at where you see less coverage we're able to you know reach out more as well if there's specific areas but in general we are seeing definitely a trend in in providing more data Thank You Darren alright I think that covers that we've probably answered all okay there's another one just now we've had some pesky clients find counties where there is not parcel data available do you all have a request to send do you have a system to send a request ah interesting yes so the the best way right now is to email us parcels at land grid comm or if you're in touch with laker myself directly as your rep let us know and yes yeah we're happy to work with you so sometimes when we're not able to get County it's because the cost is prohibitive you know it well we're happy to talk with you about how we can work that on you know whether it's a cost that we have to pass on directly and fully because we're not able to share the data or if we can work something out if we're able to also reuse that data so we're always there's a there's a number of instances where we've hold additional data with our relationship with clients and we really want do want to hear from you you know if there's a place where your clients are remarking it we want to make it better for them and we want to be able to turn that around quickly as well yeah and I want to quickly add to that that we have had such arrangements with you know customers where you know they would like certain counties that we don't have and then we have come up with you know a similar arrangement that Matt just explained definitely we're only asked for data and contribute to it being gathered with expectation that everyone will be able to get it as well that's right yes we try and make sure that that's the way it is because let's face it essentially this is public data and we want to make it publicly available to everyone and typically that's the way we kind of work with customers to make sure that as and when you know we work with you to acquire counties and some of them that we have to pay for we want to make sure that they are publicly available as well so do we thank you any more questions keep them coming it's getting interesting all right think that might be the last of it just wanna check again to make sure that I'm not missing any question all right okay that wraps ed um thank you all so much for joining us live this has been amazing we want to do more of these and I think the ones that we do on data next will be a little bit more um you know we want to like dig deep and dive into certain parts like today was just in general overview but I think the ones that we do in future could be about a particular data set that we just integrated with like the USPS or you know our delivery methods and things like that so we want to like dig deeper and want to do more of these through the year and we don't just do data we also do a lot of these webinars and live videos and demos for our mapping platform as well and we have one coming up in two weeks on the 28th on surveying best practices so if any of you is interested in conducting property and land surveys ah that would be a good one to join it'll be with one of our customers who does these surveys all the time he's like such a pro and he has over his course of time doing these surveys acquired so much experience and expertise that he wants to share his expertise with all of us by sharing his best practices I do have lots of nerdy data questions mostly related to change logs change tracking change notifications you've reached out to the right set of crowd Matt and Blake both of them here love interacting with customers and love the nerdy data discussion so feel free to either email us at parcels add or you can email them directly match em ATT at language comm and Blake B la ke Atlanta comm and they would be so happy to answer all those questions all right um so that's it I will keep you guys notified there you go right there I'll keep you guys notified of any future data related webinars that we do but keep following us and all of these webinars if you're not able to join them live they get converted into videos and get added to our YouTube channel and our website so there's no way of missing the content on any of these so thank you all so much for joining us live appreciated and Matt thank you so much for sharing your knowledge and expertise on our data and Blake you've been such an amazing partner on this webinar and I'm so sorry we want to do one with you again you know just you alone so that people can hear all the good stuff that you have to tell them all right Matt and Blake thank you so much for joining and thank you all so much see you again all right thanks yeah bye-bye",
+  "attempts": [
+    {
+      "client": "IOS",
+      "playability": {
+        "status": "OK",
+        "playableInEmbed": true,
+        "offlineability": {
+          "buttonRenderer": {
+            "navigationEndpoint": {
+              "clickTrackingParams": "CBEQ6ewBIhMIqur6lezblwMVM0hMCB1fgyxJygEE4HWk8w==",
+              "ypcGetOfflineUpsellEndpoint": {
+                "params": "CiXqqN25AR8KC0VUb045bVdGWldjShAwZ2NKQ1NRRkptUC1qYXJCIgtFVG9OOW1XRlpXYyoVCAkYAVIPCgtFVG9OOW1XRlpXYyAB"
+              }
+            },
+            "trackingParams": "CBEQ6ewBIhMIqur6lezblwMVM0hMCB1fgyxJ"
+          }
+        },
+        "pictureInPicture": {
+          "pictureInPictureRenderer": {
+            "playableInPip": true,
+            "offByDefault": false,
+            "shouldResumeOnHead": false
+          }
+        },
+        "miniplayer": {
+          "miniplayerRenderer": {
+            "playbackMode": "PLAYBACK_MODE_ALLOW"
+          }
+        },
+        "contextParams": "Q0FFU0FnZ0M="
+      },
+      "outcome": "ok"
+    }
+  ],
+  "fetched_at": "2026-10-28T04:11:44.094383+00:00",
+  "client": "IOS",
+  "json_path": "transcripts/177_EToN9mWFZWc.json",
+  "text_path": "transcripts/177_EToN9mWFZWc.txt"
+}

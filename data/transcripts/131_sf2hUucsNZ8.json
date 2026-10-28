@@ -1,0 +1,3212 @@
+{
+  "index": 131,
+  "url": "https://www.youtube.com/watch?v=sf2hUucsNZ8",
+  "video_id": "sf2hUucsNZ8",
+  "status": "ok",
+  "metadata": {
+    "title": "5 Curative Title Terms Every Investor Should Understand",
+    "author": "Courtney Fricke",
+    "channelId": "UCfZlfkGpNzcMuDh6NX7xVpQ",
+    "lengthSeconds": "1297",
+    "viewCount": "178",
+    "shortDescription": "Most investors hear terms like quitclaim deed, cloud on title, and quiet title action but don't really understand what they mean. In this episode, I break down five of the most common curative title terms every investor should know and explain them in plain English.\n\nWhat You'll Learn\n-What fee simple ownership means\n-How chain of title works\n-What creates a cloud on title\n-Why quitclaim deeds are misunderstood\n-When a quiet title action may be necessary\n\nCHAPTERS FOR THIS EPISODE:\n00:00 Why Title Problems Kill Deals\n01:12 What Is Fee Simple Title?\n05:18 What Is Chain of Title?\n10:47 What Is a Cloud on Title?\n16:05 What Is a Quitclaim Deed?\n21:37 What Is a Quiet Title Action?\n28:10 Five Questions Every Investor Should Ask\n31:22 Final Thoughts\n\nATTENTION:\nThe information shared in this episode is for educational and informational purposes only and reflects personal experiences and opinions. It is not intended as legal, tax, financial, or investment advice. Real Estate laws, tax rules, and regulations vary by state and situation. Always consult with a qualified attorney, CPA, or other licensed professional before making any Real Estate or financial decisions.\n\nConnect with Courtney Fricke: \nInstagram: https://instagram.com/courtneyfricke\nTikTok: https://tiktok.com/@courtney.fricke \nFacebook: https://www.facebook.com/courtneyfricke19/\nX: https://x.com/courtneyfricke \nYouTube: https://www.youtube.com/@courtneyfricke\nWebsite: www.CourtneyFricke.com for more resources.\n\nIf you found this convo helpful, please subscribe to Courtney's Podcasts: \n\nThe Strategic Success Podcast: https://www.youtube.com/playlist?list=PL_t1CjX04xMtnNcKPG5LvTh-1m2QVIrY4\n\nAI for REI Podcast with Maria Giordano: https://www.youtube.com/playlist?list=PL_t1CjX04xMvxWaWZ6RTzx_Bmfe2Cx2xH\n\nLouisiana Real Estate Talks Podcast with Stephen Keighery: https://www.youtube.com/playlist?list=PL_t1CjX04xMsUc4TcAH_uyYDMPzzU6xRy\n\nMessy Money Podcast(Solving Problems in Real Estate Like Curative Title and Creative Finance): https://www.youtube.com/playlist?list=PL_t1CjX04xMtBIyWGIO5Mvi2FDn2f436N"
+  },
+  "caption_tracks": [
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=sf2hUucsNZ8&ei=9XXhapeHOaKpsfIPwuXIgQo&caps=asr&opi=112496729&xoaf=5&xowf=1&xospf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185894&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=045EBD965F53F190591F5B08D164694D331309C5.2CEECEE1143EDFEE0484248EEF67CC2605C60F9B&key=yt8&kind=asr&lang=en&variant=gemini",
+      "name": {
+        "runs": [
+          {
+            "text": "English (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.en",
+      "languageCode": "en",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=sf2hUucsNZ8&ei=9XXhapeHOaKpsfIPwuXIgQo&caps=asr&opi=112496729&xoaf=5&xowf=1&xospf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185894&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=045EBD965F53F190591F5B08D164694D331309C5.2CEECEE1143EDFEE0484248EEF67CC2605C60F9B&key=yt8&kind=asr&lang=fr-FR&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "French (France) (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.fr-FR",
+      "languageCode": "fr-FR",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=sf2hUucsNZ8&ei=9XXhapeHOaKpsfIPwuXIgQo&caps=asr&opi=112496729&xoaf=5&xowf=1&xospf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185894&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=045EBD965F53F190591F5B08D164694D331309C5.2CEECEE1143EDFEE0484248EEF67CC2605C60F9B&key=yt8&kind=asr&lang=de-DE&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "German (Germany) (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.de-DE",
+      "languageCode": "de-DE",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=sf2hUucsNZ8&ei=9XXhapeHOaKpsfIPwuXIgQo&caps=asr&opi=112496729&xoaf=5&xowf=1&xospf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185894&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=045EBD965F53F190591F5B08D164694D331309C5.2CEECEE1143EDFEE0484248EEF67CC2605C60F9B&key=yt8&kind=asr&lang=hi&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Hindi (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.hi",
+      "languageCode": "hi",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=sf2hUucsNZ8&ei=9XXhapeHOaKpsfIPwuXIgQo&caps=asr&opi=112496729&xoaf=5&xowf=1&xospf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185894&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=045EBD965F53F190591F5B08D164694D331309C5.2CEECEE1143EDFEE0484248EEF67CC2605C60F9B&key=yt8&kind=asr&lang=id&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Indonesian (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.id",
+      "languageCode": "id",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=sf2hUucsNZ8&ei=9XXhapeHOaKpsfIPwuXIgQo&caps=asr&opi=112496729&xoaf=5&xowf=1&xospf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185894&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=045EBD965F53F190591F5B08D164694D331309C5.2CEECEE1143EDFEE0484248EEF67CC2605C60F9B&key=yt8&kind=asr&lang=it&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Italian (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.it",
+      "languageCode": "it",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=sf2hUucsNZ8&ei=9XXhapeHOaKpsfIPwuXIgQo&caps=asr&opi=112496729&xoaf=5&xowf=1&xospf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185894&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=045EBD965F53F190591F5B08D164694D331309C5.2CEECEE1143EDFEE0484248EEF67CC2605C60F9B&key=yt8&kind=asr&lang=pt-BR&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Portuguese (Brazil) (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.pt-BR",
+      "languageCode": "pt-BR",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=sf2hUucsNZ8&ei=9XXhapeHOaKpsfIPwuXIgQo&caps=asr&opi=112496729&xoaf=5&xowf=1&xospf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185894&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=045EBD965F53F190591F5B08D164694D331309C5.2CEECEE1143EDFEE0484248EEF67CC2605C60F9B&key=yt8&kind=asr&lang=es-US&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Spanish (United States) (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.es-US",
+      "languageCode": "es-US",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    }
+  ],
+  "selected_track": {
+    "baseUrl": "https://www.youtube.com/api/timedtext?v=sf2hUucsNZ8&ei=9XXhapeHOaKpsfIPwuXIgQo&caps=asr&opi=112496729&xoaf=5&xowf=1&xospf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185894&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=045EBD965F53F190591F5B08D164694D331309C5.2CEECEE1143EDFEE0484248EEF67CC2605C60F9B&key=yt8&kind=asr&lang=en&variant=gemini",
+    "name": {
+      "runs": [
+        {
+          "text": "English (auto-generated)"
+        }
+      ]
+    },
+    "vssId": "a.en",
+    "languageCode": "en",
+    "kind": "asr",
+    "isTranslatable": true,
+    "trackName": ""
+  },
+  "segments": [
+    {
+      "start": 0.32,
+      "duration": 2.6,
+      "text": "One of the fastest ways to kill a real"
+    },
+    {
+      "start": 1.88,
+      "duration": 3.6,
+      "text": "estate deal is when you're under"
+    },
+    {
+      "start": 2.92,
+      "duration": 5.2,
+      "text": "contract and an ownership or title issue"
+    },
+    {
+      "start": 5.48,
+      "duration": 4.28,
+      "text": "pops up. And sure, the title company may"
+    },
+    {
+      "start": 8.12,
+      "duration": 4.0,
+      "text": "say, \"Hey, you might be able to solve"
+    },
+    {
+      "start": 9.76,
+      "duration": 4.88,
+      "text": "this if\" and then they start using this"
+    },
+    {
+      "start": 12.12,
+      "duration": 4.48,
+      "text": "legal jargon and a lot of investors,"
+    },
+    {
+      "start": 14.64,
+      "duration": 4.28,
+      "text": "they just nod their head because they"
+    },
+    {
+      "start": 16.6,
+      "duration": 4.44,
+      "text": "don't admit that they're confused."
+    },
+    {
+      "start": 18.92,
+      "duration": 3.16,
+      "text": "Now, I want to fix that today."
+    },
+    {
+      "start": 21.04,
+      "duration": 3.2,
+      "text": "Before we get started, my name's"
+    },
+    {
+      "start": 22.08,
+      "duration": 4.48,
+      "text": "Courtney Friel. I am a full-time"
+    },
+    {
+      "start": 24.24,
+      "duration": 4.4,
+      "text": "solutions-based real estate investor"
+    },
+    {
+      "start": 26.56,
+      "duration": 3.56,
+      "text": "where I focus on solving some of the"
+    },
+    {
+      "start": 28.64,
+      "duration": 2.92,
+      "text": "most complicated problems in real"
+    },
+    {
+      "start": 30.12,
+      "duration": 3.68,
+      "text": "estate. I'm talking stopping"
+    },
+    {
+      "start": 31.56,
+      "duration": 4.96,
+      "text": "foreclosures, navigating the messy"
+    },
+    {
+      "start": 33.8,
+      "duration": 4.72,
+      "text": "probate deals, and dealing with complex"
+    },
+    {
+      "start": 36.52,
+      "duration": 4.36,
+      "text": "ownership and title issues."
+    },
+    {
+      "start": 38.52,
+      "duration": 4.04,
+      "text": "And here at the Messy Money podcast, I"
+    },
+    {
+      "start": 40.88,
+      "duration": 3.88,
+      "text": "believe that the money is made when you"
+    },
+    {
+      "start": 42.56,
+      "duration": 3.56,
+      "text": "get into the messy side of real estate."
+    },
+    {
+      "start": 44.76,
+      "duration": 4.44,
+      "text": "In today's episode, I'm going to break"
+    },
+    {
+      "start": 46.12,
+      "duration": 4.76,
+      "text": "down five terms used in the curative"
+    },
+    {
+      "start": 49.2,
+      "duration": 5.52,
+      "text": "title world, which is where you're"
+    },
+    {
+      "start": 50.88,
+      "duration": 5.08,
+      "text": "curing or resolving title issues."
+    },
+    {
+      "start": 54.72,
+      "duration": 2.88,
+      "text": "I'm going to break it down in plain"
+    },
+    {
+      "start": 55.96,
+      "duration": 3.52,
+      "text": "English so that you can better"
+    },
+    {
+      "start": 57.6,
+      "duration": 3.68,
+      "text": "understand what's happening when"
+    },
+    {
+      "start": 59.48,
+      "duration": 4.12,
+      "text": "ownership issues start showing up in"
+    },
+    {
+      "start": 61.28,
+      "duration": 3.959,
+      "text": "your deals. So, let's jump in."
+    },
+    {
+      "start": 63.6,
+      "duration": 5.16,
+      "text": "So, the first term I want to introduce"
+    },
+    {
+      "start": 65.239,
+      "duration": 5.601,
+      "text": "you to is fee simple title. Now, simply"
+    },
+    {
+      "start": 68.76,
+      "duration": 4.16,
+      "text": "put, this means"
+    },
+    {
+      "start": 70.84,
+      "duration": 4.2,
+      "text": "when you have fee simple title, it is"
+    },
+    {
+      "start": 72.92,
+      "duration": 4.24,
+      "text": "the highest form of ownership interest"
+    },
+    {
+      "start": 75.04,
+      "duration": 4.92,
+      "text": "someone can have in real estate."
+    },
+    {
+      "start": 77.16,
+      "duration": 4.8,
+      "text": "Think of it as a premium level of of"
+    },
+    {
+      "start": 79.96,
+      "duration": 3.64,
+      "text": "ownership, right? In most cases, it's it"
+    },
+    {
+      "start": 81.96,
+      "duration": 3.28,
+      "text": "means that you own the property"
+    },
+    {
+      "start": 83.6,
+      "duration": 4.0,
+      "text": "outright."
+    },
+    {
+      "start": 85.24,
+      "duration": 4.04,
+      "text": "And you have the right to sell it, lease"
+    },
+    {
+      "start": 87.6,
+      "duration": 4.48,
+      "text": "it, mortgage it,"
+    },
+    {
+      "start": 89.28,
+      "duration": 5.56,
+      "text": "gift it, leave it to your heirs."
+    },
+    {
+      "start": 92.08,
+      "duration": 4.04,
+      "text": "So, I want you to imagine like owning a"
+    },
+    {
+      "start": 94.84,
+      "duration": 2.56,
+      "text": "house, okay?"
+    },
+    {
+      "start": 96.12,
+      "duration": 3.16,
+      "text": "It's not that you have a lease on the"
+    },
+    {
+      "start": 97.4,
+      "duration": 5.32,
+      "text": "house. It's not that you have a right to"
+    },
+    {
+      "start": 99.28,
+      "duration": 6.16,
+      "text": "live there. It's not partial interest."
+    },
+    {
+      "start": 102.72,
+      "duration": 4.4,
+      "text": "It is the house is yours, okay? You can"
+    },
+    {
+      "start": 105.44,
+      "duration": 3.6,
+      "text": "sell it again, you can rent it, mortgage"
+    },
+    {
+      "start": 107.12,
+      "duration": 4.64,
+      "text": "it, you can renovate it, you can leave"
+    },
+    {
+      "start": 109.04,
+      "duration": 4.6,
+      "text": "it to your kids. That is fee simple"
+    },
+    {
+      "start": 111.76,
+      "duration": 3.4,
+      "text": "ownership. And this is why you should"
+    },
+    {
+      "start": 113.64,
+      "duration": 3.56,
+      "text": "care if you're a real estate investor is"
+    },
+    {
+      "start": 115.16,
+      "duration": 4.2,
+      "text": "cuz one of the biggest mistakes that"
+    },
+    {
+      "start": 117.2,
+      "duration": 3.88,
+      "text": "investors make is assuming the person"
+    },
+    {
+      "start": 119.36,
+      "duration": 3.72,
+      "text": "they're talking to is the person who can"
+    },
+    {
+      "start": 121.08,
+      "duration": 3.68,
+      "text": "actually sell the property."
+    },
+    {
+      "start": 123.08,
+      "duration": 5.12,
+      "text": "And this is really important. Just"
+    },
+    {
+      "start": 124.76,
+      "duration": 5.2,
+      "text": "because someone name appears on the the"
+    },
+    {
+      "start": 128.2,
+      "duration": 3.92,
+      "text": "tax assessor's website, maybe at the"
+    },
+    {
+      "start": 129.96,
+      "duration": 4.72,
+      "text": "county or parish level,"
+    },
+    {
+      "start": 132.12,
+      "duration": 4.16,
+      "text": "doesn't mean they own fee simple title."
+    },
+    {
+      "start": 134.68,
+      "duration": 3.72,
+      "text": "Just because they're living in the"
+    },
+    {
+      "start": 136.28,
+      "duration": 4.28,
+      "text": "property doesn't mean they they own fee"
+    },
+    {
+      "start": 138.4,
+      "duration": 4.0,
+      "text": "simple title, either. And just because"
+    },
+    {
+      "start": 140.56,
+      "duration": 4.399,
+      "text": "they're paying on the taxes doesn't mean"
+    },
+    {
+      "start": 142.4,
+      "duration": 4.24,
+      "text": "they own fee simple title, either. Real"
+    },
+    {
+      "start": 144.959,
+      "duration": 4.241,
+      "text": "estate is full of situations where the"
+    },
+    {
+      "start": 146.64,
+      "duration": 4.44,
+      "text": "decision maker and the occupant"
+    },
+    {
+      "start": 149.2,
+      "duration": 3.759,
+      "text": "are not the same person. You know, the"
+    },
+    {
+      "start": 151.08,
+      "duration": 3.56,
+      "text": "people who are you are talking to, it's"
+    },
+    {
+      "start": 152.959,
+      "duration": 4.481,
+      "text": "really important that you understand"
+    },
+    {
+      "start": 154.64,
+      "duration": 4.4,
+      "text": "this. Some examples may include life"
+    },
+    {
+      "start": 157.44,
+      "duration": 3.48,
+      "text": "estates,"
+    },
+    {
+      "start": 159.04,
+      "duration": 3.84,
+      "text": "heirs to the property."
+    },
+    {
+      "start": 160.92,
+      "duration": 4.36,
+      "text": "So, that's probate and succession"
+    },
+    {
+      "start": 162.88,
+      "duration": 5.4,
+      "text": "situations. It could be trust-owned"
+    },
+    {
+      "start": 165.28,
+      "duration": 5.88,
+      "text": "properties or properties owned by LLCs"
+    },
+    {
+      "start": 168.28,
+      "duration": 5.52,
+      "text": "and divorce situations. One of the first"
+    },
+    {
+      "start": 171.16,
+      "duration": 5.44,
+      "text": "questions I ask in any curious situation"
+    },
+    {
+      "start": 173.8,
+      "duration": 4.28,
+      "text": "is who actually owns fee simple title."
+    },
+    {
+      "start": 176.6,
+      "duration": 3.48,
+      "text": "And let's be clear, I ask that for all"
+    },
+    {
+      "start": 178.08,
+      "duration": 3.6,
+      "text": "the deals that I'm working cuz I want to"
+    },
+    {
+      "start": 180.08,
+      "duration": 3.439,
+      "text": "make sure when I'm signing a purchase"
+    },
+    {
+      "start": 181.68,
+      "duration": 3.24,
+      "text": "agreement,"
+    },
+    {
+      "start": 183.519,
+      "duration": 2.961,
+      "text": "I'm actually talking to the decision"
+    },
+    {
+      "start": 184.92,
+      "duration": 2.96,
+      "text": "maker."
+    },
+    {
+      "start": 186.48,
+      "duration": 4.2,
+      "text": "And ultimately, before you can solve a"
+    },
+    {
+      "start": 187.88,
+      "duration": 3.92,
+      "text": "problem, negotiate a deal, buy the"
+    },
+    {
+      "start": 190.68,
+      "duration": 3.36,
+      "text": "property,"
+    },
+    {
+      "start": 191.8,
+      "duration": 5.0,
+      "text": "you've got to figure out who that legal"
+    },
+    {
+      "start": 194.04,
+      "duration": 5.0,
+      "text": "authority is. And that's who you want to"
+    },
+    {
+      "start": 196.8,
+      "duration": 3.719,
+      "text": "make sure, at the end of the day,"
+    },
+    {
+      "start": 199.04,
+      "duration": 3.28,
+      "text": "you're doing business with."
+    },
+    {
+      "start": 200.519,
+      "duration": 3.601,
+      "text": "Because many deals can fall apart"
+    },
+    {
+      "start": 202.32,
+      "duration": 3.88,
+      "text": "because investors are spending months"
+    },
+    {
+      "start": 204.12,
+      "duration": 3.52,
+      "text": "negotiating with someone who never had"
+    },
+    {
+      "start": 206.2,
+      "duration": 2.6,
+      "text": "the authority to sell in the first"
+    },
+    {
+      "start": 207.64,
+      "duration": 4.04,
+      "text": "place."
+    },
+    {
+      "start": 208.8,
+      "duration": 4.56,
+      "text": "So, if fee simple title tells us who"
+    },
+    {
+      "start": 211.68,
+      "duration": 3.44,
+      "text": "owns the property,"
+    },
+    {
+      "start": 213.36,
+      "duration": 4.28,
+      "text": "the next question becomes, how do we"
+    },
+    {
+      "start": 215.12,
+      "duration": 4.96,
+      "text": "know they own it? And that's where chain"
+    },
+    {
+      "start": 217.64,
+      "duration": 4.28,
+      "text": "of title comes in. So, term number two"
+    },
+    {
+      "start": 220.08,
+      "duration": 4.159,
+      "text": "is chain of title."
+    },
+    {
+      "start": 221.92,
+      "duration": 4.08,
+      "text": "So, to maybe further this reference to"
+    },
+    {
+      "start": 224.239,
+      "duration": 3.72,
+      "text": "what"
+    },
+    {
+      "start": 226.0,
+      "duration": 4.0,
+      "text": "But to give it a uh simple definition,"
+    },
+    {
+      "start": 227.959,
+      "duration": 4.881,
+      "text": "it's the chain of title is the ownership"
+    },
+    {
+      "start": 230.0,
+      "duration": 5.16,
+      "text": "history of a property. It shows how"
+    },
+    {
+      "start": 232.84,
+      "duration": 4.76,
+      "text": "ownership has moved from one owner to"
+    },
+    {
+      "start": 235.16,
+      "duration": 4.6,
+      "text": "the next over time. Think of it as the"
+    },
+    {
+      "start": 237.6,
+      "duration": 3.44,
+      "text": "property's kind of like family tree and"
+    },
+    {
+      "start": 239.76,
+      "duration": 4.2,
+      "text": "you know, every ownership should"
+    },
+    {
+      "start": 241.04,
+      "duration": 6.68,
+      "text": "connect. They should be connected via a"
+    },
+    {
+      "start": 243.96,
+      "duration": 7.6,
+      "text": "legally valid transfer of some sort."
+    },
+    {
+      "start": 247.72,
+      "duration": 6.48,
+      "text": "So, let's give it an example."
+    },
+    {
+      "start": 251.56,
+      "duration": 4.56,
+      "text": "Let's think back to, you know, um"
+    },
+    {
+      "start": 254.2,
+      "duration": 3.44,
+      "text": "high school and gym and and think of a"
+    },
+    {
+      "start": 256.12,
+      "duration": 4.2,
+      "text": "relay race."
+    },
+    {
+      "start": 257.64,
+      "duration": 4.52,
+      "text": "Each runner is going to pass the baton"
+    },
+    {
+      "start": 260.32,
+      "duration": 5.4,
+      "text": "to the next runner."
+    },
+    {
+      "start": 262.16,
+      "duration": 5.32,
+      "text": "And the chain of title is the baton."
+    },
+    {
+      "start": 265.72,
+      "duration": 4.84,
+      "text": "You should be able to follow every"
+    },
+    {
+      "start": 267.48,
+      "duration": 6.24,
+      "text": "handoff from start to finish. But if the"
+    },
+    {
+      "start": 270.56,
+      "duration": 6.12,
+      "text": "baton gets dropped, lost, or handed to"
+    },
+    {
+      "start": 273.72,
+      "duration": 4.0,
+      "text": "the wrong person, you've got a problem."
+    },
+    {
+      "start": 276.68,
+      "duration": 3.44,
+      "text": "So,"
+    },
+    {
+      "start": 277.72,
+      "duration": 5.48,
+      "text": "let's kind of pull this to where the"
+    },
+    {
+      "start": 280.12,
+      "duration": 4.84,
+      "text": "curative issues show up. These Many of"
+    },
+    {
+      "start": 283.2,
+      "duration": 3.24,
+      "text": "these title issues exist because"
+    },
+    {
+      "start": 284.96,
+      "duration": 3.84,
+      "text": "something interrupted that chain of"
+    },
+    {
+      "start": 286.44,
+      "duration": 4.12,
+      "text": "title. So, common examples might include"
+    },
+    {
+      "start": 288.8,
+      "duration": 3.88,
+      "text": "something like an estate, you know,"
+    },
+    {
+      "start": 290.56,
+      "duration": 4.24,
+      "text": "someone died and their estate was never"
+    },
+    {
+      "start": 292.68,
+      "duration": 3.64,
+      "text": "probated."
+    },
+    {
+      "start": 294.8,
+      "duration": 3.08,
+      "text": "It could be that a deed was never"
+    },
+    {
+      "start": 296.32,
+      "duration": 3.64,
+      "text": "recorded. Just the other day I was"
+    },
+    {
+      "start": 297.88,
+      "duration": 4.16,
+      "text": "talking to someone who had"
+    },
+    {
+      "start": 299.96,
+      "duration": 4.56,
+      "text": "bought a property 20 years ago and they"
+    },
+    {
+      "start": 302.04,
+      "duration": 3.92,
+      "text": "have the deed, but they never recorded"
+    },
+    {
+      "start": 304.52,
+      "duration": 4.32,
+      "text": "it."
+    },
+    {
+      "start": 305.96,
+      "duration": 4.52,
+      "text": "Talk about a chain of title issue."
+    },
+    {
+      "start": 308.84,
+      "duration": 3.56,
+      "text": "It could be"
+    },
+    {
+      "start": 310.48,
+      "duration": 4.32,
+      "text": "that a signature on the deed was"
+    },
+    {
+      "start": 312.4,
+      "duration": 3.64,
+      "text": "defective or maybe was not properly,"
+    },
+    {
+      "start": 314.8,
+      "duration": 3.4,
+      "text": "like the paperwork, maybe it wasn't"
+    },
+    {
+      "start": 316.04,
+      "duration": 3.92,
+      "text": "properly notarized, you know, some"
+    },
+    {
+      "start": 318.2,
+      "duration": 3.8,
+      "text": "issues there."
+    },
+    {
+      "start": 319.96,
+      "duration": 3.72,
+      "text": "Whether it was like prepared incorrectly"
+    },
+    {
+      "start": 322.0,
+      "duration": 4.08,
+      "text": "or um"
+    },
+    {
+      "start": 323.68,
+      "duration": 4.08,
+      "text": "executed incorrectly."
+    },
+    {
+      "start": 326.08,
+      "duration": 3.48,
+      "text": "It could be an heir that was left out of"
+    },
+    {
+      "start": 327.76,
+      "duration": 3.76,
+      "text": "transfer, you know, it could be a"
+    },
+    {
+      "start": 329.56,
+      "duration": 3.88,
+      "text": "divorce, but the property wasn't"
+    },
+    {
+      "start": 331.52,
+      "duration": 3.96,
+      "text": "properly transferred after the divorce"
+    },
+    {
+      "start": 333.44,
+      "duration": 4.08,
+      "text": "correctly. It could be a lot of things"
+    },
+    {
+      "start": 335.48,
+      "duration": 4.76,
+      "text": "along those lines. And this is why title"
+    },
+    {
+      "start": 337.52,
+      "duration": 4.48,
+      "text": "companies spend so much time reviewing"
+    },
+    {
+      "start": 340.24,
+      "duration": 4.44,
+      "text": "the history of a property. A lot of"
+    },
+    {
+      "start": 342.0,
+      "duration": 4.76,
+      "text": "times they look back 30 or 50 years in"
+    },
+    {
+      "start": 344.68,
+      "duration": 4.28,
+      "text": "public records. They're trying to verify"
+    },
+    {
+      "start": 346.76,
+      "duration": 3.76,
+      "text": "that every ownership transfer occurred"
+    },
+    {
+      "start": 348.96,
+      "duration": 3.24,
+      "text": "properly."
+    },
+    {
+      "start": 350.52,
+      "duration": 3.68,
+      "text": "And so"
+    },
+    {
+      "start": 352.2,
+      "duration": 4.16,
+      "text": "I want to give you a real-world example."
+    },
+    {
+      "start": 354.2,
+      "duration": 4.64,
+      "text": "Let's say John owned a property, and so"
+    },
+    {
+      "start": 356.36,
+      "duration": 4.16,
+      "text": "then John dies. Oh, no."
+    },
+    {
+      "start": 358.84,
+      "duration": 3.96,
+      "text": "His daughter, Mary, starts paying the"
+    },
+    {
+      "start": 360.52,
+      "duration": 4.68,
+      "text": "taxes. She's maintaining the property,"
+    },
+    {
+      "start": 362.8,
+      "duration": 5.16,
+      "text": "and she's even at a certain point starts"
+    },
+    {
+      "start": 365.2,
+      "duration": 5.32,
+      "text": "renting it out. Good for you, Mary. 20"
+    },
+    {
+      "start": 367.96,
+      "duration": 4.8,
+      "text": "years later, Mary decides she wants to"
+    },
+    {
+      "start": 370.52,
+      "duration": 5.0,
+      "text": "sell her rental property."
+    },
+    {
+      "start": 372.76,
+      "duration": 7.4,
+      "text": "But the problem is no probate was ever"
+    },
+    {
+      "start": 375.52,
+      "duration": 6.52,
+      "text": "opened. The deed was never recorded"
+    },
+    {
+      "start": 380.16,
+      "duration": 4.68,
+      "text": "transferring ownership from John, her"
+    },
+    {
+      "start": 382.04,
+      "duration": 4.68,
+      "text": "dad, to Mary, his daughter, his heir."
+    },
+    {
+      "start": 384.84,
+      "duration": 4.6,
+      "text": "Mary may have acted like the owner for"
+    },
+    {
+      "start": 386.72,
+      "duration": 5.52,
+      "text": "20 years, but the chain of proper chain"
+    },
+    {
+      "start": 389.44,
+      "duration": 4.76,
+      "text": "of title was never properly updated."
+    },
+    {
+      "start": 392.24,
+      "duration": 4.44,
+      "text": "Now you've got a title problem to solve"
+    },
+    {
+      "start": 394.2,
+      "duration": 4.2,
+      "text": "before the property can be sold."
+    },
+    {
+      "start": 396.68,
+      "duration": 4.28,
+      "text": "And so that right there, that is one of"
+    },
+    {
+      "start": 398.4,
+      "duration": 4.84,
+      "text": "the most common breaks in the chain of"
+    },
+    {
+      "start": 400.96,
+      "duration": 5.64,
+      "text": "title is when, you know,"
+    },
+    {
+      "start": 403.24,
+      "duration": 5.16,
+      "text": "an estate is not properly probated."
+    },
+    {
+      "start": 406.6,
+      "duration": 4.16,
+      "text": "So whenever you encounter a title issue,"
+    },
+    {
+      "start": 408.4,
+      "duration": 4.8,
+      "text": "here's a question you want to ask."
+    },
+    {
+      "start": 410.76,
+      "duration": 4.48,
+      "text": "It's where did the chain of title break?"
+    },
+    {
+      "start": 413.2,
+      "duration": 3.16,
+      "text": "Because once you identify that broken"
+    },
+    {
+      "start": 415.24,
+      "duration": 3.08,
+      "text": "link,"
+    },
+    {
+      "start": 416.36,
+      "duration": 4.48,
+      "text": "you're often much closer to finding the"
+    },
+    {
+      "start": 418.32,
+      "duration": 4.84,
+      "text": "solution. You can isolate it."
+    },
+    {
+      "start": 420.84,
+      "duration": 4.4,
+      "text": "In many curative deals, you're not"
+    },
+    {
+      "start": 423.16,
+      "duration": 4.08,
+      "text": "really solving a property problem,"
+    },
+    {
+      "start": 425.24,
+      "duration": 4.04,
+      "text": "you're solving a broken ownership"
+    },
+    {
+      "start": 427.24,
+      "duration": 5.679,
+      "text": "history, you know, something along those"
+    },
+    {
+      "start": 429.28,
+      "duration": 5.6,
+      "text": "lines. So, this is where knowing"
+    },
+    {
+      "start": 432.919,
+      "duration": 4.241,
+      "text": "all the different times that ownership"
+    },
+    {
+      "start": 434.88,
+      "duration": 3.72,
+      "text": "transferred, and double-checking, and"
+    },
+    {
+      "start": 437.16,
+      "duration": 3.72,
+      "text": "paying attention to the details, those"
+    },
+    {
+      "start": 438.6,
+      "duration": 4.36,
+      "text": "things can matter. Whether that's you"
+    },
+    {
+      "start": 440.88,
+      "duration": 4.16,
+      "text": "who are doing it or a third party, like"
+    },
+    {
+      "start": 442.96,
+      "duration": 4.0,
+      "text": "an abstractor title company who is"
+    },
+    {
+      "start": 445.04,
+      "duration": 3.32,
+      "text": "reviewing it, those are things to keep"
+    },
+    {
+      "start": 446.96,
+      "duration": 4.32,
+      "text": "in mind."
+    },
+    {
+      "start": 448.36,
+      "duration": 5.32,
+      "text": "Now, if every transfer in the chain of"
+    },
+    {
+      "start": 451.28,
+      "duration": 5.04,
+      "text": "title happened perfectly, life would be"
+    },
+    {
+      "start": 453.68,
+      "duration": 4.64,
+      "text": "easy. Unfortunately, that's not always"
+    },
+    {
+      "start": 456.32,
+      "duration": 4.04,
+      "text": "the case, and that's where clouds on"
+    },
+    {
+      "start": 458.32,
+      "duration": 3.96,
+      "text": "title come from."
+    },
+    {
+      "start": 460.36,
+      "duration": 4.16,
+      "text": "So the third term here is cloud of"
+    },
+    {
+      "start": 462.28,
+      "duration": 4.6,
+      "text": "title. Cloud on title, maybe heard that"
+    },
+    {
+      "start": 464.52,
+      "duration": 4.6,
+      "text": "before, there's clouded title, you know,"
+    },
+    {
+      "start": 466.88,
+      "duration": 4.88,
+      "text": "some version of that. And the cloud of"
+    },
+    {
+      "start": 469.12,
+      "duration": 4.92,
+      "text": "title is is anything that creates doubt,"
+    },
+    {
+      "start": 471.76,
+      "duration": 4.6,
+      "text": "uncertainty, or a potential claim"
+    },
+    {
+      "start": 474.04,
+      "duration": 5.44,
+      "text": "against ownership of a property. It does"
+    },
+    {
+      "start": 476.36,
+      "duration": 4.76,
+      "text": "not necessarily mean ownership is wrong,"
+    },
+    {
+      "start": 479.48,
+      "duration": 4.24,
+      "text": "it simply means there's a question that"
+    },
+    {
+      "start": 481.12,
+      "duration": 5.68,
+      "text": "must be answered before ownership can be"
+    },
+    {
+      "start": 483.72,
+      "duration": 4.92,
+      "text": "considered clear, you know, being easily"
+    },
+    {
+      "start": 486.8,
+      "duration": 4.04,
+      "text": "um transferable. So, think of it this"
+    },
+    {
+      "start": 488.64,
+      "duration": 4.72,
+      "text": "way, a cloud on title is not necessarily"
+    },
+    {
+      "start": 490.84,
+      "duration": 4.32,
+      "text": "a problem, it's a question mark. And"
+    },
+    {
+      "start": 493.36,
+      "duration": 4.92,
+      "text": "title companies don't like question"
+    },
+    {
+      "start": 495.16,
+      "duration": 4.64,
+      "text": "marks, so they want to"
+    },
+    {
+      "start": 498.28,
+      "duration": 3.639,
+      "text": "they want to make sure they identify"
+    },
+    {
+      "start": 499.8,
+      "duration": 4.24,
+      "text": "these clouds on title and then address"
+    },
+    {
+      "start": 501.919,
+      "duration": 4.481,
+      "text": "each of them. So, some common examples"
+    },
+    {
+      "start": 504.04,
+      "duration": 4.48,
+      "text": "for clouds on titles could include an"
+    },
+    {
+      "start": 506.4,
+      "duration": 3.88,
+      "text": "unreleased mortgage. Plenty of times"
+    },
+    {
+      "start": 508.52,
+      "duration": 3.6,
+      "text": "people get sent the"
+    },
+    {
+      "start": 510.28,
+      "duration": 3.92,
+      "text": "the um"
+    },
+    {
+      "start": 512.12,
+      "duration": 4.96,
+      "text": "satisfaction for their mortgage in the"
+    },
+    {
+      "start": 514.2,
+      "duration": 5.24,
+      "text": "mail, but then they don't go bring it to"
+    },
+    {
+      "start": 517.08,
+      "duration": 3.56,
+      "text": "the court the the public records at the"
+    },
+    {
+      "start": 519.44,
+      "duration": 4.039,
+      "text": "county clerk"
+    },
+    {
+      "start": 520.64,
+      "duration": 5.24,
+      "text": "to then release the mortgage. And so,"
+    },
+    {
+      "start": 523.479,
+      "duration": 4.561,
+      "text": "that's very common to have an unreleased"
+    },
+    {
+      "start": 525.88,
+      "duration": 3.2,
+      "text": "mortgage that's still is a question mark"
+    },
+    {
+      "start": 528.04,
+      "duration": 3.04,
+      "text": "and you have to figure out what's going"
+    },
+    {
+      "start": 529.08,
+      "duration": 3.68,
+      "text": "on, whether it's an active mortgage that"
+    },
+    {
+      "start": 531.08,
+      "duration": 4.16,
+      "text": "needs a payoff"
+    },
+    {
+      "start": 532.76,
+      "duration": 3.64,
+      "text": "or like that release that's just sitting"
+    },
+    {
+      "start": 535.24,
+      "duration": 3.84,
+      "text": "in a file, it could be something like"
+    },
+    {
+      "start": 536.4,
+      "duration": 4.64,
+      "text": "that. It could be a judgment or a lien."
+    },
+    {
+      "start": 539.08,
+      "duration": 4.4,
+      "text": "And again, that has to be figured is"
+    },
+    {
+      "start": 541.04,
+      "duration": 4.52,
+      "text": "this active or is this something that is"
+    },
+    {
+      "start": 543.48,
+      "duration": 3.88,
+      "text": "not is no longer active."
+    },
+    {
+      "start": 545.56,
+      "duration": 3.6,
+      "text": "It could be"
+    },
+    {
+      "start": 547.36,
+      "duration": 5.12,
+      "text": "a missing heir, it could be a tax sale"
+    },
+    {
+      "start": 549.16,
+      "duration": 5.32,
+      "text": "issue, a forged deed allegation."
+    },
+    {
+      "start": 552.48,
+      "duration": 4.84,
+      "text": "It could be a boundary dispute, an"
+    },
+    {
+      "start": 554.48,
+      "duration": 5.48,
+      "text": "improperly prepared deed, or a probate"
+    },
+    {
+      "start": 557.32,
+      "duration": 4.36,
+      "text": "that was never completed. Again, these"
+    },
+    {
+      "start": 559.96,
+      "duration": 4.04,
+      "text": "various clouds can show up in different"
+    },
+    {
+      "start": 561.68,
+      "duration": 3.68,
+      "text": "ways. Uh a simple analogy here is"
+    },
+    {
+      "start": 564.0,
+      "duration": 2.44,
+      "text": "imagine"
+    },
+    {
+      "start": 565.36,
+      "duration": 3.6,
+      "text": "you know, you're looking through a"
+    },
+    {
+      "start": 566.44,
+      "duration": 4.08,
+      "text": "window. If the glass is clean, you can"
+    },
+    {
+      "start": 568.96,
+      "duration": 3.84,
+      "text": "clearly see through it. But if the"
+    },
+    {
+      "start": 570.52,
+      "duration": 5.16,
+      "text": "window has dirt, smudges, cracks, or"
+    },
+    {
+      "start": 572.8,
+      "duration": 5.52,
+      "text": "fog, your view becomes less certain. And"
+    },
+    {
+      "start": 575.68,
+      "duration": 5.2,
+      "text": "that's what a cloud on title does."
+    },
+    {
+      "start": 578.32,
+      "duration": 4.08,
+      "text": "To sell the property with clear fee"
+    },
+    {
+      "start": 580.88,
+      "duration": 3.92,
+      "text": "simple ownership. Remember we talked"
+    },
+    {
+      "start": 582.4,
+      "duration": 3.84,
+      "text": "about that earlier?"
+    },
+    {
+      "start": 584.8,
+      "duration": 3.88,
+      "text": "Those clouds generally need to be"
+    },
+    {
+      "start": 586.24,
+      "duration": 4.72,
+      "text": "addressed so everyone can clearly"
+    },
+    {
+      "start": 588.68,
+      "duration": 4.32,
+      "text": "understand who owns the property and"
+    },
+    {
+      "start": 590.96,
+      "duration": 3.64,
+      "text": "what claims may exist again it against"
+    },
+    {
+      "start": 593.0,
+      "duration": 2.96,
+      "text": "it."
+    },
+    {
+      "start": 594.6,
+      "duration": 3.36,
+      "text": "And this is where most curative"
+    },
+    {
+      "start": 595.96,
+      "duration": 4.44,
+      "text": "opportunities live by the way."
+    },
+    {
+      "start": 597.96,
+      "duration": 4.08,
+      "text": "The cloud scares away buyers, right?"
+    },
+    {
+      "start": 600.4,
+      "duration": 3.6,
+      "text": "Some of the"
+    },
+    {
+      "start": 602.04,
+      "duration": 3.48,
+      "text": "less easy to resolve ones. For example,"
+    },
+    {
+      "start": 604.0,
+      "duration": 3.68,
+      "text": "if it's an active mortgage that just"
+    },
+    {
+      "start": 605.52,
+      "duration": 4.44,
+      "text": "needs a payoff and to get, you know,"
+    },
+    {
+      "start": 607.68,
+      "duration": 4.56,
+      "text": "paid off. That's simple. But if it's an"
+    },
+    {
+      "start": 609.96,
+      "duration": 3.88,
+      "text": "unreleased mortgage by a"
+    },
+    {
+      "start": 612.24,
+      "duration": 3.36,
+      "text": "lender that's no longer in business and"
+    },
+    {
+      "start": 613.84,
+      "duration": 5.28,
+      "text": "hard to track down, will create an"
+    },
+    {
+      "start": 615.6,
+      "duration": 5.76,
+      "text": "opportunity there. And I believe so."
+    },
+    {
+      "start": 619.12,
+      "duration": 5.12,
+      "text": "See, sellers get frustrated, buyers get"
+    },
+    {
+      "start": 621.36,
+      "duration": 5.16,
+      "text": "scared, the property sits"
+    },
+    {
+      "start": 624.24,
+      "duration": 4.52,
+      "text": "and investors, a lot of them, walk away"
+    },
+    {
+      "start": 626.52,
+      "duration": 4.44,
+      "text": "because they don't understand."
+    },
+    {
+      "start": 628.76,
+      "duration": 4.52,
+      "text": "They think of it as an impossible deal"
+    },
+    {
+      "start": 630.96,
+      "duration": 4.28,
+      "text": "instead of an opportunity. But many"
+    },
+    {
+      "start": 633.28,
+      "duration": 3.6,
+      "text": "clouds on title can be resolved once"
+    },
+    {
+      "start": 635.24,
+      "duration": 4.28,
+      "text": "someone takes the time to investigate"
+    },
+    {
+      "start": 636.88,
+      "duration": 4.64,
+      "text": "what's actually causing the uncertainty."
+    },
+    {
+      "start": 639.52,
+      "duration": 4.16,
+      "text": "This one of the most important skill"
+    },
+    {
+      "start": 641.52,
+      "duration": 4.76,
+      "text": "sets in curative work is learning to"
+    },
+    {
+      "start": 643.68,
+      "duration": 4.28,
+      "text": "distinguish between a real problem, a"
+    },
+    {
+      "start": 646.28,
+      "duration": 4.44,
+      "text": "solvable problem, and a perceived"
+    },
+    {
+      "start": 647.96,
+      "duration": 5.28,
+      "text": "problem. Because sometimes the cloud is"
+    },
+    {
+      "start": 650.72,
+      "duration": 3.8,
+      "text": "much smaller than people think."
+    },
+    {
+      "start": 653.24,
+      "duration": 2.64,
+      "text": "But that comes with skill and"
+    },
+    {
+      "start": 654.52,
+      "duration": 2.76,
+      "text": "understanding."
+    },
+    {
+      "start": 655.88,
+      "duration": 3.12,
+      "text": "So question to ask here is when I"
+    },
+    {
+      "start": 657.28,
+      "duration": 3.88,
+      "text": "encounter a cloud on title, my first"
+    },
+    {
+      "start": 659.0,
+      "duration": 4.2,
+      "text": "question isn't can the this deal be"
+    },
+    {
+      "start": 661.16,
+      "duration": 4.84,
+      "text": "done? My first question is what is the"
+    },
+    {
+      "start": 663.2,
+      "duration": 4.52,
+      "text": "actual cloud? Again, I I want to isolate"
+    },
+    {
+      "start": 666.0,
+      "duration": 3.839,
+      "text": "it. I want to understand it because"
+    },
+    {
+      "start": 667.72,
+      "duration": 3.84,
+      "text": "until you identify specific issue"
+    },
+    {
+      "start": 669.839,
+      "duration": 3.081,
+      "text": "creating uncertainty, it's possible to"
+    },
+    {
+      "start": 671.56,
+      "duration": 4.6,
+      "text": "know"
+    },
+    {
+      "start": 672.92,
+      "duration": 5.52,
+      "text": "what path exists to remove it."
+    },
+    {
+      "start": 676.16,
+      "duration": 4.12,
+      "text": "Many of the best deals I've"
+    },
+    {
+      "start": 678.44,
+      "duration": 3.24,
+      "text": "started with a with a title company"
+    },
+    {
+      "start": 680.28,
+      "duration": 4.559,
+      "text": "saying, \"Hey, we have,"
+    },
+    {
+      "start": 681.68,
+      "duration": 5.0,
+      "text": "you know, a problem.\""
+    },
+    {
+      "start": 684.839,
+      "duration": 3.521,
+      "text": "And the real opportunity is to figure"
+    },
+    {
+      "start": 686.68,
+      "duration": 3.64,
+      "text": "out whether that problem can be solved."
+    },
+    {
+      "start": 688.36,
+      "duration": 3.16,
+      "text": "And again, that involves understanding"
+    },
+    {
+      "start": 690.32,
+      "duration": 2.32,
+      "text": "and skill."
+    },
+    {
+      "start": 691.52,
+      "duration": 2.56,
+      "text": "So,"
+    },
+    {
+      "start": 692.64,
+      "duration": 4.12,
+      "text": "one of the documents that frequently"
+    },
+    {
+      "start": 694.08,
+      "duration": 4.36,
+      "text": "appears when ownership gets messy is a"
+    },
+    {
+      "start": 696.76,
+      "duration": 4.2,
+      "text": "quick claim deed."
+    },
+    {
+      "start": 698.44,
+      "duration": 5.44,
+      "text": "Unfortunately, it's also one of the most"
+    },
+    {
+      "start": 700.96,
+      "duration": 4.88,
+      "text": "misunderstood documents in real estate."
+    },
+    {
+      "start": 703.88,
+      "duration": 4.48,
+      "text": "So, that's the fourth term, quitclaim"
+    },
+    {
+      "start": 705.84,
+      "duration": 7.48,
+      "text": "deed. So, first things first, it's a"
+    },
+    {
+      "start": 708.36,
+      "duration": 7.76,
+      "text": "quitclaim deed, not a quick claim deed."
+    },
+    {
+      "start": 713.32,
+      "duration": 5.04,
+      "text": "Quit, kind of like"
+    },
+    {
+      "start": 716.12,
+      "duration": 3.96,
+      "text": "you give up, right? Not quick like as in"
+    },
+    {
+      "start": 718.36,
+      "duration": 3.6,
+      "text": "fast, right? So, quit"
+    },
+    {
+      "start": 720.08,
+      "duration": 3.2,
+      "text": "claim deed. Now that I've gotten that"
+    },
+    {
+      "start": 721.96,
+      "duration": 3.68,
+      "text": "out of the way,"
+    },
+    {
+      "start": 723.28,
+      "duration": 3.16,
+      "text": "cuz that is something that some people"
+    },
+    {
+      "start": 725.64,
+      "duration": 2.52,
+      "text": "um"
+    },
+    {
+      "start": 726.44,
+      "duration": 4.0,
+      "text": "bring up a lot, right?"
+    },
+    {
+      "start": 728.16,
+      "duration": 5.36,
+      "text": "A quitclaim deed transfers whatever"
+    },
+    {
+      "start": 730.44,
+      "duration": 5.92,
+      "text": "ownership interest someone may have in a"
+    },
+    {
+      "start": 733.52,
+      "duration": 5.16,
+      "text": "property, if any, without making any"
+    },
+    {
+      "start": 736.36,
+      "duration": 3.92,
+      "text": "guarantees or any warranties about what"
+    },
+    {
+      "start": 738.68,
+      "duration": 2.96,
+      "text": "they actually own."
+    },
+    {
+      "start": 740.28,
+      "duration": 3.2,
+      "text": "The person signing the deed is"
+    },
+    {
+      "start": 741.64,
+      "duration": 4.08,
+      "text": "essentially saying, \"Whatever interest I"
+    },
+    {
+      "start": 743.48,
+      "duration": 3.32,
+      "text": "have, I'm giving it to you.\" Right?"
+    },
+    {
+      "start": 745.72,
+      "duration": 2.16,
+      "text": "They're They're collecting money, but"
+    },
+    {
+      "start": 746.8,
+      "duration": 3.6,
+      "text": "they're saying, \"Hey, it's for whatever"
+    },
+    {
+      "start": 747.88,
+      "duration": 4.44,
+      "text": "I have.\" And what they're not saying is,"
+    },
+    {
+      "start": 750.4,
+      "duration": 3.72,
+      "text": "\"I actually own this property.\" So, to"
+    },
+    {
+      "start": 752.32,
+      "duration": 5.04,
+      "text": "give you a simple"
+    },
+    {
+      "start": 754.12,
+      "duration": 6.04,
+      "text": "example of this is here on my street, I"
+    },
+    {
+      "start": 757.36,
+      "duration": 6.16,
+      "text": "could give you a quitclaim deed for"
+    },
+    {
+      "start": 760.16,
+      "duration": 4.64,
+      "text": "every single property on my street."
+    },
+    {
+      "start": 763.52,
+      "duration": 2.56,
+      "text": "Does it mean that I own those"
+    },
+    {
+      "start": 764.8,
+      "duration": 2.56,
+      "text": "properties?"
+    },
+    {
+      "start": 766.08,
+      "duration": 2.96,
+      "text": "No."
+    },
+    {
+      "start": 767.36,
+      "duration": 4.16,
+      "text": "Do I have any interest in any of those"
+    },
+    {
+      "start": 769.04,
+      "duration": 4.6,
+      "text": "properties? I don't."
+    },
+    {
+      "start": 771.52,
+      "duration": 3.8,
+      "text": "Can I still sign a quitclaim deed and"
+    },
+    {
+      "start": 773.64,
+      "duration": 4.32,
+      "text": "hand it to you?"
+    },
+    {
+      "start": 775.32,
+      "duration": 4.2,
+      "text": "And you can buy it from me?"
+    },
+    {
+      "start": 777.96,
+      "duration": 4.16,
+      "text": "Absolutely."
+    },
+    {
+      "start": 779.52,
+      "duration": 5.04,
+      "text": "The deed itself for a quitclaim deed"
+    },
+    {
+      "start": 782.12,
+      "duration": 4.64,
+      "text": "doesn't prove ownership. It simply"
+    },
+    {
+      "start": 784.56,
+      "duration": 3.56,
+      "text": "transfers whatever interest the signer"
+    },
+    {
+      "start": 786.76,
+      "duration": 4.52,
+      "text": "may have."
+    },
+    {
+      "start": 788.12,
+      "duration": 7.0,
+      "text": "That interest could be substantial"
+    },
+    {
+      "start": 791.28,
+      "duration": 3.84,
+      "text": "or it could be absolutely nothing."
+    },
+    {
+      "start": 795.4,
+      "duration": 3.48,
+      "text": "This is a very common mistake, and it's"
+    },
+    {
+      "start": 797.36,
+      "duration": 3.52,
+      "text": "one of the biggest misconceptions in"
+    },
+    {
+      "start": 798.88,
+      "duration": 5.28,
+      "text": "real estate that a quitclaim deed proves"
+    },
+    {
+      "start": 800.88,
+      "duration": 5.68,
+      "text": "ownership, but it just simply doesn't. A"
+    },
+    {
+      "start": 804.16,
+      "duration": 4.16,
+      "text": "recorded quitclaim deed only proves that"
+    },
+    {
+      "start": 806.56,
+      "duration": 4.04,
+      "text": "someone transfers whatever interest that"
+    },
+    {
+      "start": 808.32,
+      "duration": 4.68,
+      "text": "they may have, especially at that time."
+    },
+    {
+      "start": 810.6,
+      "duration": 4.56,
+      "text": "The real question is what interest"
+    },
+    {
+      "start": 813.0,
+      "duration": 3.36,
+      "text": "did they actually own before they sign"
+    },
+    {
+      "start": 815.16,
+      "duration": 2.52,
+      "text": "it?"
+    },
+    {
+      "start": 816.36,
+      "duration": 3.76,
+      "text": "And that's a completely different"
+    },
+    {
+      "start": 817.68,
+      "duration": 5.96,
+      "text": "analysis, right? Having a quitclaim deed"
+    },
+    {
+      "start": 820.12,
+      "duration": 5.52,
+      "text": "is, you know, again, one thing versus"
+    },
+    {
+      "start": 823.64,
+      "duration": 4.2,
+      "text": "backing it up with proof of whether or"
+    },
+    {
+      "start": 825.64,
+      "duration": 4.56,
+      "text": "not they actually had interest is a"
+    },
+    {
+      "start": 827.84,
+      "duration": 4.36,
+      "text": "whole 'nother conversation. Quitclaim"
+    },
+    {
+      "start": 830.2,
+      "duration": 4.4,
+      "text": "deeds showed up all the time in curative"
+    },
+    {
+      "start": 832.2,
+      "duration": 4.44,
+      "text": "work, especially when"
+    },
+    {
+      "start": 834.6,
+      "duration": 4.04,
+      "text": "family members are resolving ownership"
+    },
+    {
+      "start": 836.64,
+      "duration": 3.52,
+      "text": "issues, you know, missing heirs are"
+    },
+    {
+      "start": 838.64,
+      "duration": 3.36,
+      "text": "located,"
+    },
+    {
+      "start": 840.16,
+      "duration": 4.88,
+      "text": "probate matters are being cleared up,"
+    },
+    {
+      "start": 842.0,
+      "duration": 4.76,
+      "text": "divorce situations occur, you know, um"
+    },
+    {
+      "start": 845.04,
+      "duration": 3.28,
+      "text": "there's some buyouts, you have investors"
+    },
+    {
+      "start": 846.76,
+      "duration": 3.96,
+      "text": "who are clearing title defects. It can"
+    },
+    {
+      "start": 848.32,
+      "duration": 4.2,
+      "text": "even show up with creditors um giving"
+    },
+    {
+      "start": 850.72,
+      "duration": 4.08,
+      "text": "quitclaim deeds."
+    },
+    {
+      "start": 852.52,
+      "duration": 4.72,
+      "text": "That said, I generally view a quitclaim"
+    },
+    {
+      "start": 854.8,
+      "duration": 5.12,
+      "text": "deed as one of the weakest method of"
+    },
+    {
+      "start": 857.24,
+      "duration": 5.24,
+      "text": "conveying ownership. When possible, I"
+    },
+    {
+      "start": 859.92,
+      "duration": 4.4,
+      "text": "prefer ownership transfer through other"
+    },
+    {
+      "start": 862.48,
+      "duration": 3.96,
+      "text": "deed types that provide stronger"
+    },
+    {
+      "start": 864.32,
+      "duration": 3.44,
+      "text": "warranties and protections."
+    },
+    {
+      "start": 866.44,
+      "duration": 3.36,
+      "text": "And we'll save that deep dive for"
+    },
+    {
+      "start": 867.76,
+      "duration": 3.96,
+      "text": "another episode, but for now, just"
+    },
+    {
+      "start": 869.8,
+      "duration": 3.92,
+      "text": "remember a quitclaim deed tells you"
+    },
+    {
+      "start": 871.72,
+      "duration": 3.68,
+      "text": "someone signed a document, right? They"
+    },
+    {
+      "start": 873.72,
+      "duration": 3.8,
+      "text": "transferred whatever interest they may"
+    },
+    {
+      "start": 875.4,
+      "duration": 4.2,
+      "text": "have. It does not tell you what actually"
+    },
+    {
+      "start": 877.52,
+      "duration": 3.96,
+      "text": "they owned."
+    },
+    {
+      "start": 879.6,
+      "duration": 4.92,
+      "text": "Now, most ownership issues can be"
+    },
+    {
+      "start": 881.48,
+      "duration": 5.48,
+      "text": "resolved without going to court."
+    },
+    {
+      "start": 884.52,
+      "duration": 4.68,
+      "text": "But sometimes the dispute becomes"
+    },
+    {
+      "start": 886.96,
+      "duration": 3.8,
+      "text": "significant enough that a judge has to"
+    },
+    {
+      "start": 889.2,
+      "duration": 4.24,
+      "text": "determine who actually owns the"
+    },
+    {
+      "start": 890.76,
+      "duration": 5.2,
+      "text": "property, who has interest in it. And"
+    },
+    {
+      "start": 893.44,
+      "duration": 3.68,
+      "text": "that's where quiet title action"
+    },
+    {
+      "start": 895.96,
+      "duration": 3.32,
+      "text": "comes in."
+    },
+    {
+      "start": 897.12,
+      "duration": 3.68,
+      "text": "So, term number five is quiet title"
+    },
+    {
+      "start": 899.28,
+      "duration": 5.48,
+      "text": "action."
+    },
+    {
+      "start": 900.8,
+      "duration": 5.76,
+      "text": "And a quiet title action is a lawsuit"
+    },
+    {
+      "start": 904.76,
+      "duration": 4.48,
+      "text": "that's used to establish ownership"
+    },
+    {
+      "start": 906.56,
+      "duration": 4.0,
+      "text": "rights and resolve competing claims to a"
+    },
+    {
+      "start": 909.24,
+      "duration": 3.48,
+      "text": "property."
+    },
+    {
+      "start": 910.56,
+      "duration": 4.68,
+      "text": "In simple terms, it's"
+    },
+    {
+      "start": 912.72,
+      "duration": 4.92,
+      "text": "it's asking the court to determine who"
+    },
+    {
+      "start": 915.24,
+      "duration": 3.48,
+      "text": "actually owns this property."
+    },
+    {
+      "start": 917.64,
+      "duration": 3.36,
+      "text": "And once the court makes that"
+    },
+    {
+      "start": 918.72,
+      "duration": 4.96,
+      "text": "determination, certain competing claims"
+    },
+    {
+      "start": 921.0,
+      "duration": 3.72,
+      "text": "can be removed or extinguished."
+    },
+    {
+      "start": 923.68,
+      "duration": 3.0,
+      "text": "Now, I want to give you a simple"
+    },
+    {
+      "start": 924.72,
+      "duration": 3.68,
+      "text": "example. Imagine two kids in the"
+    },
+    {
+      "start": 926.68,
+      "duration": 4.36,
+      "text": "neighborhood, they're arguing over who"
+    },
+    {
+      "start": 928.4,
+      "duration": 3.72,
+      "text": "owns a bicycle. Each one claims it's"
+    },
+    {
+      "start": 931.04,
+      "duration": 3.96,
+      "text": "theirs"
+    },
+    {
+      "start": 932.12,
+      "duration": 4.12,
+      "text": "and it's like having an adult step in"
+    },
+    {
+      "start": 935.0,
+      "duration": 3.0,
+      "text": "or, you know,"
+    },
+    {
+      "start": 936.24,
+      "duration": 3.92,
+      "text": "in our world it's a judge, right?"
+    },
+    {
+      "start": 938.0,
+      "duration": 4.76,
+      "text": "Reviews the evidence and says, \"Here's"
+    },
+    {
+      "start": 940.16,
+      "duration": 5.2,
+      "text": "who owns it.\" That's a simple, you know,"
+    },
+    {
+      "start": 942.76,
+      "duration": 7.92,
+      "text": "that's essentially what a quick claim a"
+    },
+    {
+      "start": 945.36,
+      "duration": 5.32,
+      "text": "a quick, quiet title action does."
+    },
+    {
+      "start": 950.72,
+      "duration": 4.48,
+      "text": "That allows a court to determine"
+    },
+    {
+      "start": 952.56,
+      "duration": 4.92,
+      "text": "ownership when there's uncertainty,"
+    },
+    {
+      "start": 955.2,
+      "duration": 4.24,
+      "text": "confusion, or that those competing"
+    },
+    {
+      "start": 957.48,
+      "duration": 3.36,
+      "text": "claims, right? There's different people"
+    },
+    {
+      "start": 959.44,
+      "duration": 4.08,
+      "text": "who were saying, \"No, this is my"
+    },
+    {
+      "start": 960.84,
+      "duration": 5.16,
+      "text": "situation.\" Or this is what I believe."
+    },
+    {
+      "start": 963.52,
+      "duration": 4.68,
+      "text": "And they're competing towards having"
+    },
+    {
+      "start": 966.0,
+      "duration": 5.04,
+      "text": "that ownership claim."
+    },
+    {
+      "start": 968.2,
+      "duration": 4.6,
+      "text": "Quiet title actions commonly arise in"
+    },
+    {
+      "start": 971.04,
+      "duration": 2.96,
+      "text": "situations involving tax sale"
+    },
+    {
+      "start": 972.8,
+      "duration": 3.28,
+      "text": "properties. That's probably one of the"
+    },
+    {
+      "start": 974.0,
+      "duration": 4.96,
+      "text": "most common ones that I see. Could be"
+    },
+    {
+      "start": 976.08,
+      "duration": 5.28,
+      "text": "defective or fraudulent deeds,"
+    },
+    {
+      "start": 978.96,
+      "duration": 6.12,
+      "text": "boundary disputes, adverse possession"
+    },
+    {
+      "start": 981.36,
+      "duration": 5.88,
+      "text": "claims, missing or unknown owners,"
+    },
+    {
+      "start": 985.08,
+      "duration": 3.48,
+      "text": "and breaks in the chain of title."
+    },
+    {
+      "start": 987.24,
+      "duration": 5.24,
+      "text": "Again, are those, you know, whatever"
+    },
+    {
+      "start": 988.56,
+      "duration": 5.44,
+      "text": "those competing ownership claims may be."
+    },
+    {
+      "start": 992.48,
+      "duration": 3.359,
+      "text": "Many of us just hear the word quiet"
+    },
+    {
+      "start": 994.0,
+      "duration": 2.92,
+      "text": "title and they assume it means fixing"
+    },
+    {
+      "start": 995.839,
+      "duration": 3.961,
+      "text": "title."
+    },
+    {
+      "start": 996.92,
+      "duration": 4.88,
+      "text": "And really it's one specific legal tool"
+    },
+    {
+      "start": 999.8,
+      "duration": 3.68,
+      "text": "used to resolve certain ownership"
+    },
+    {
+      "start": 1001.8,
+      "duration": 3.76,
+      "text": "disputes. And"
+    },
+    {
+      "start": 1003.48,
+      "duration": 4.84,
+      "text": "and I want to be very clear here. If"
+    },
+    {
+      "start": 1005.56,
+      "duration": 5.2,
+      "text": "you've got three heirs and they're"
+    },
+    {
+      "start": 1008.32,
+      "duration": 5.24,
+      "text": "fighting about deciding whether to sell"
+    },
+    {
+      "start": 1010.76,
+      "duration": 6.44,
+      "text": "or not sell, that's not an opportunity"
+    },
+    {
+      "start": 1013.56,
+      "duration": 5.84,
+      "text": "for a quiet title action."
+    },
+    {
+      "start": 1017.2,
+      "duration": 3.04,
+      "text": "It's not a matter of who actually owns"
+    },
+    {
+      "start": 1019.4,
+      "duration": 3.36,
+      "text": "it."
+    },
+    {
+      "start": 1020.24,
+      "duration": 3.959,
+      "text": "That's not the competing claim."
+    },
+    {
+      "start": 1022.76,
+      "duration": 3.0,
+      "text": "That's for them just not being on the"
+    },
+    {
+      "start": 1024.199,
+      "duration": 3.12,
+      "text": "same page in making a decision. And"
+    },
+    {
+      "start": 1025.76,
+      "duration": 2.92,
+      "text": "that's when a different lawsuit called a"
+    },
+    {
+      "start": 1027.319,
+      "duration": 4.561,
+      "text": "partition"
+    },
+    {
+      "start": 1028.68,
+      "duration": 4.36,
+      "text": "um is more at play there, right?"
+    },
+    {
+      "start": 1031.88,
+      "duration": 2.6,
+      "text": "So, let me give you a real world"
+    },
+    {
+      "start": 1033.04,
+      "duration": 2.96,
+      "text": "example."
+    },
+    {
+      "start": 1034.48,
+      "duration": 3.24,
+      "text": "Let's say a property was sold decades"
+    },
+    {
+      "start": 1036.0,
+      "duration": 4.319,
+      "text": "ago, but one of the deeds that chain of"
+    },
+    {
+      "start": 1037.72,
+      "duration": 5.0,
+      "text": "title was recorded incorrectly. As the"
+    },
+    {
+      "start": 1040.319,
+      "duration": 4.52,
+      "text": "property changed hand over"
+    },
+    {
+      "start": 1042.72,
+      "duration": 3.76,
+      "text": "and over over the years, the error goes"
+    },
+    {
+      "start": 1044.839,
+      "duration": 3.521,
+      "text": "unnoticed."
+    },
+    {
+      "start": 1046.48,
+      "duration": 3.68,
+      "text": "Eventually, a title search reveal"
+    },
+    {
+      "start": 1048.36,
+      "duration": 4.28,
+      "text": "reveals this conflicting ownership"
+    },
+    {
+      "start": 1050.16,
+      "duration": 4.64,
+      "text": "claims created by that defective deed"
+    },
+    {
+      "start": 1052.64,
+      "duration": 4.04,
+      "text": "all those years ago. A buyer is ready to"
+    },
+    {
+      "start": 1054.8,
+      "duration": 4.68,
+      "text": "purchase the property, but the title"
+    },
+    {
+      "start": 1056.68,
+      "duration": 4.64,
+      "text": "company will not insure with title"
+    },
+    {
+      "start": 1059.48,
+      "duration": 4.0,
+      "text": "insurance the transaction until"
+    },
+    {
+      "start": 1061.32,
+      "duration": 4.96,
+      "text": "ownership is clearly established. In"
+    },
+    {
+      "start": 1063.48,
+      "duration": 4.68,
+      "text": "some cases, a quiet title action may be"
+    },
+    {
+      "start": 1066.28,
+      "duration": 4.84,
+      "text": "necessary to have a court a court"
+    },
+    {
+      "start": 1068.16,
+      "duration": 5.28,
+      "text": "determine the rightful ownership of the"
+    },
+    {
+      "start": 1071.12,
+      "duration": 4.6,
+      "text": "property and remove uncertainty created"
+    },
+    {
+      "start": 1073.44,
+      "duration": 4.44,
+      "text": "by the defective deed."
+    },
+    {
+      "start": 1075.72,
+      "duration": 4.32,
+      "text": "Again, I want to be very clear. This is"
+    },
+    {
+      "start": 1077.88,
+      "duration": 4.2,
+      "text": "not the same thing as partition suit."
+    },
+    {
+      "start": 1080.04,
+      "duration": 3.92,
+      "text": "That's a very common"
+    },
+    {
+      "start": 1082.08,
+      "duration": 5.0,
+      "text": "point of confusion here."
+    },
+    {
+      "start": 1083.96,
+      "duration": 5.96,
+      "text": "So, just remember a quiet title action"
+    },
+    {
+      "start": 1087.08,
+      "duration": 4.68,
+      "text": "is determining ownership,"
+    },
+    {
+      "start": 1089.92,
+      "duration": 5.08,
+      "text": "whereas a partition suit is about"
+    },
+    {
+      "start": 1091.76,
+      "duration": 3.24,
+      "text": "separating ownership."
+    },
+    {
+      "start": 1095.84,
+      "duration": 4.56,
+      "text": "Before assuming a quiet title action is"
+    },
+    {
+      "start": 1097.96,
+      "duration": 5.12,
+      "text": "needed, I want you to ask is ownership"
+    },
+    {
+      "start": 1100.4,
+      "duration": 5.44,
+      "text": "actually disputed or do we simply just"
+    },
+    {
+      "start": 1103.08,
+      "duration": 4.2,
+      "text": "have co-owners who disagree?"
+    },
+    {
+      "start": 1105.84,
+      "duration": 3.08,
+      "text": "The answers often determines whether"
+    },
+    {
+      "start": 1107.28,
+      "duration": 3.52,
+      "text": "you're dealing with quiet title issue, a"
+    },
+    {
+      "start": 1108.92,
+      "duration": 3.48,
+      "text": "partition issue, or an entirely"
+    },
+    {
+      "start": 1110.8,
+      "duration": 3.56,
+      "text": "different solution."
+    },
+    {
+      "start": 1112.4,
+      "duration": 4.64,
+      "text": "One of the biggest mistakes investors"
+    },
+    {
+      "start": 1114.36,
+      "duration": 5.84,
+      "text": "make is assuming every title problem"
+    },
+    {
+      "start": 1117.04,
+      "duration": 4.4,
+      "text": "requires a lawsuit. Many of them don't."
+    },
+    {
+      "start": 1120.2,
+      "duration": 3.12,
+      "text": "By the way,"
+    },
+    {
+      "start": 1121.44,
+      "duration": 3.88,
+      "text": "the first rule"
+    },
+    {
+      "start": 1123.32,
+      "duration": 5.08,
+      "text": "the first rule of law is to don't"
+    },
+    {
+      "start": 1125.32,
+      "duration": 5.36,
+      "text": "litigate, settle, right? And don't get"
+    },
+    {
+      "start": 1128.4,
+      "duration": 4.64,
+      "text": "me wrong, I have litigated many real"
+    },
+    {
+      "start": 1130.68,
+      "duration": 3.96,
+      "text": "estate transactions, but the majority of"
+    },
+    {
+      "start": 1133.04,
+      "duration": 3.4,
+      "text": "what you should be doing is trying to"
+    },
+    {
+      "start": 1134.64,
+      "duration": 4.16,
+      "text": "settle, trying to find a solution, and"
+    },
+    {
+      "start": 1136.44,
+      "duration": 5.08,
+      "text": "then save this for those lawsuits for"
+    },
+    {
+      "start": 1138.8,
+      "duration": 4.92,
+      "text": "when they're absolutely needed. But when"
+    },
+    {
+      "start": 1141.52,
+      "duration": 4.48,
+      "text": "ownership itself is in question, just"
+    },
+    {
+      "start": 1143.72,
+      "duration": 3.84,
+      "text": "remember a quiet title action is often"
+    },
+    {
+      "start": 1146.0,
+      "duration": 2.8,
+      "text": "one of the most powerful tools"
+    },
+    {
+      "start": 1147.56,
+      "duration": 3.72,
+      "text": "available."
+    },
+    {
+      "start": 1148.8,
+      "duration": 4.92,
+      "text": "So, as we start to bring all of this to"
+    },
+    {
+      "start": 1151.28,
+      "duration": 3.88,
+      "text": "a hedge, I"
+    },
+    {
+      "start": 1153.72,
+      "duration": 4.24,
+      "text": "I want to just say some things. First of"
+    },
+    {
+      "start": 1155.16,
+      "duration": 5.0,
+      "text": "all, if you're brand new to title and"
+    },
+    {
+      "start": 1157.96,
+      "duration": 3.52,
+      "text": "ownership issues in the curative world,"
+    },
+    {
+      "start": 1160.16,
+      "duration": 3.16,
+      "text": "or maybe you're a real estate investor"
+    },
+    {
+      "start": 1161.48,
+      "duration": 3.76,
+      "text": "just wanting to understand this stuff"
+    },
+    {
+      "start": 1163.32,
+      "duration": 3.48,
+      "text": "better for your own deals,"
+    },
+    {
+      "start": 1165.24,
+      "duration": 3.4,
+      "text": "I don't you make the mistake of trying"
+    },
+    {
+      "start": 1166.8,
+      "duration": 4.72,
+      "text": "to memorize every statute, every"
+    },
+    {
+      "start": 1168.64,
+      "duration": 4.8,
+      "text": "lawsuit, you know, lien and title defect"
+    },
+    {
+      "start": 1171.52,
+      "duration": 4.16,
+      "text": "that can can show up."
+    },
+    {
+      "start": 1173.44,
+      "duration": 3.96,
+      "text": "Instead, start by asking these five"
+    },
+    {
+      "start": 1175.68,
+      "duration": 4.04,
+      "text": "simple questions that we've gone over"
+    },
+    {
+      "start": 1177.4,
+      "duration": 3.92,
+      "text": "today. Number one, who owns the"
+    },
+    {
+      "start": 1179.72,
+      "duration": 4.96,
+      "text": "property?"
+    },
+    {
+      "start": 1181.32,
+      "duration": 5.52,
+      "text": "Number two, how did they get ownership?"
+    },
+    {
+      "start": 1184.68,
+      "duration": 3.76,
+      "text": "Like, what's that history look like?"
+    },
+    {
+      "start": 1186.84,
+      "duration": 3.24,
+      "text": "And number three, is there a break in"
+    },
+    {
+      "start": 1188.44,
+      "duration": 4.36,
+      "text": "the chain of title? Is there a break in"
+    },
+    {
+      "start": 1190.08,
+      "duration": 5.24,
+      "text": "that history? Number four, are there any"
+    },
+    {
+      "start": 1192.8,
+      "duration": 3.88,
+      "text": "clouds on title?"
+    },
+    {
+      "start": 1195.32,
+      "duration": 3.76,
+      "text": "Is there anything hindering from being"
+    },
+    {
+      "start": 1196.68,
+      "duration": 4.24,
+      "text": "able to give that clear title? Number"
+    },
+    {
+      "start": 1199.08,
+      "duration": 3.8,
+      "text": "five, what would it take to clear that"
+    },
+    {
+      "start": 1200.92,
+      "duration": 3.92,
+      "text": "cloud?"
+    },
+    {
+      "start": 1202.88,
+      "duration": 3.88,
+      "text": "Those five questions will solve more"
+    },
+    {
+      "start": 1204.84,
+      "duration": 3.12,
+      "text": "title problems than most investors"
+    },
+    {
+      "start": 1206.76,
+      "duration": 2.76,
+      "text": "realize."
+    },
+    {
+      "start": 1207.96,
+      "duration": 2.76,
+      "text": "And so, understand having that as a"
+    },
+    {
+      "start": 1209.52,
+      "duration": 3.68,
+      "text": "basis,"
+    },
+    {
+      "start": 1210.72,
+      "duration": 4.04,
+      "text": "uh can really can really help you clear"
+    },
+    {
+      "start": 1213.2,
+      "duration": 2.64,
+      "text": "up some of the mess."
+    },
+    {
+      "start": 1214.76,
+      "duration": 4.04,
+      "text": "Because at the end of the day, curative"
+    },
+    {
+      "start": 1215.84,
+      "duration": 5.12,
+      "text": "title isn't really about"
+    },
+    {
+      "start": 1218.8,
+      "duration": 4.0,
+      "text": "again, lawsuits and and all the legal"
+    },
+    {
+      "start": 1220.96,
+      "duration": 4.56,
+      "text": "stuff, but it can be very simple. It can"
+    },
+    {
+      "start": 1222.8,
+      "duration": 4.48,
+      "text": "it can often be about understanding the"
+    },
+    {
+      "start": 1225.52,
+      "duration": 3.64,
+      "text": "ownership"
+    },
+    {
+      "start": 1227.28,
+      "duration": 3.76,
+      "text": "and the ownership history. The better"
+    },
+    {
+      "start": 1229.16,
+      "duration": 4.2,
+      "text": "you understand that, the better you"
+    },
+    {
+      "start": 1231.04,
+      "duration": 5.36,
+      "text": "understand why deals get stuck, why"
+    },
+    {
+      "start": 1233.36,
+      "duration": 4.84,
+      "text": "title companies raise objections, and"
+    },
+    {
+      "start": 1236.4,
+      "duration": 5.16,
+      "text": "where opportunities exist that other"
+    },
+    {
+      "start": 1238.2,
+      "duration": 5.52,
+      "text": "investors miss. Remember, most investors"
+    },
+    {
+      "start": 1241.56,
+      "duration": 4.2,
+      "text": "spend their time looking for properties."
+    },
+    {
+      "start": 1243.72,
+      "duration": 4.0,
+      "text": "For those who focus on curative title"
+    },
+    {
+      "start": 1245.76,
+      "duration": 4.28,
+      "text": "opportunities, they spend their time"
+    },
+    {
+      "start": 1247.72,
+      "duration": 4.8,
+      "text": "understanding the ownership and finding"
+    },
+    {
+      "start": 1250.04,
+      "duration": 4.36,
+      "text": "those opportunities where there is some"
+    },
+    {
+      "start": 1252.52,
+      "duration": 4.24,
+      "text": "sort of break, where there is some sort"
+    },
+    {
+      "start": 1254.4,
+      "duration": 4.24,
+      "text": "of defect, some cloud on the title that"
+    },
+    {
+      "start": 1256.76,
+      "duration": 3.92,
+      "text": "is causing issues. So, thanks for"
+    },
+    {
+      "start": 1258.64,
+      "duration": 5.64,
+      "text": "joining me for another episode of Messy"
+    },
+    {
+      "start": 1260.68,
+      "duration": 5.44,
+      "text": "Money podcast. If you are enjoying these"
+    },
+    {
+      "start": 1264.28,
+      "duration": 4.6,
+      "text": "conversations, make sure you"
+    },
+    {
+      "start": 1266.12,
+      "duration": 4.8,
+      "text": "subscribe. If there's a title term or an"
+    },
+    {
+      "start": 1268.88,
+      "duration": 3.36,
+      "text": "ownership term, some sort of sure topic"
+    },
+    {
+      "start": 1270.92,
+      "duration": 3.28,
+      "text": "that you'd like for me to cover in a"
+    },
+    {
+      "start": 1272.24,
+      "duration": 4.32,
+      "text": "future episode, let me know in the"
+    },
+    {
+      "start": 1274.2,
+      "duration": 5.36,
+      "text": "comments below. I would love to hear"
+    },
+    {
+      "start": 1276.56,
+      "duration": 5.92,
+      "text": "your thoughts. And because keep in mind"
+    },
+    {
+      "start": 1279.56,
+      "duration": 5.24,
+      "text": "you guys, the money is made when things"
+    },
+    {
+      "start": 1282.48,
+      "duration": 3.4,
+      "text": "in real estate get messy."
+    },
+    {
+      "start": 1284.8,
+      "duration": 2.64,
+      "text": "And that's what we want to do. We want"
+    },
+    {
+      "start": 1285.88,
+      "duration": 3.8,
+      "text": "to talk through it so you guys can learn"
+    },
+    {
+      "start": 1287.44,
+      "duration": 4.8,
+      "text": "how to resolve more of these messes so"
+    },
+    {
+      "start": 1289.68,
+      "duration": 4.2,
+      "text": "that you can make a profit. I'll see you"
+    },
+    {
+      "start": 1292.24,
+      "duration": 6.04,
+      "text": "guys on the next episode. Appreciate you"
+    },
+    {
+      "start": 1293.88,
+      "duration": 4.4,
+      "text": "guys tuning in as always."
+    }
+  ],
+  "full_text": "One of the fastest ways to kill a real estate deal is when you're under contract and an ownership or title issue pops up. And sure, the title company may say, \"Hey, you might be able to solve this if\" and then they start using this legal jargon and a lot of investors, they just nod their head because they don't admit that they're confused. Now, I want to fix that today. Before we get started, my name's Courtney Friel. I am a full-time solutions-based real estate investor where I focus on solving some of the most complicated problems in real estate. I'm talking stopping foreclosures, navigating the messy probate deals, and dealing with complex ownership and title issues. And here at the Messy Money podcast, I believe that the money is made when you get into the messy side of real estate. In today's episode, I'm going to break down five terms used in the curative title world, which is where you're curing or resolving title issues. I'm going to break it down in plain English so that you can better understand what's happening when ownership issues start showing up in your deals. So, let's jump in. So, the first term I want to introduce you to is fee simple title. Now, simply put, this means when you have fee simple title, it is the highest form of ownership interest someone can have in real estate. Think of it as a premium level of of ownership, right? In most cases, it's it means that you own the property outright. And you have the right to sell it, lease it, mortgage it, gift it, leave it to your heirs. So, I want you to imagine like owning a house, okay? It's not that you have a lease on the house. It's not that you have a right to live there. It's not partial interest. It is the house is yours, okay? You can sell it again, you can rent it, mortgage it, you can renovate it, you can leave it to your kids. That is fee simple ownership. And this is why you should care if you're a real estate investor is cuz one of the biggest mistakes that investors make is assuming the person they're talking to is the person who can actually sell the property. And this is really important. Just because someone name appears on the the tax assessor's website, maybe at the county or parish level, doesn't mean they own fee simple title. Just because they're living in the property doesn't mean they they own fee simple title, either. And just because they're paying on the taxes doesn't mean they own fee simple title, either. Real estate is full of situations where the decision maker and the occupant are not the same person. You know, the people who are you are talking to, it's really important that you understand this. Some examples may include life estates, heirs to the property. So, that's probate and succession situations. It could be trust-owned properties or properties owned by LLCs and divorce situations. One of the first questions I ask in any curious situation is who actually owns fee simple title. And let's be clear, I ask that for all the deals that I'm working cuz I want to make sure when I'm signing a purchase agreement, I'm actually talking to the decision maker. And ultimately, before you can solve a problem, negotiate a deal, buy the property, you've got to figure out who that legal authority is. And that's who you want to make sure, at the end of the day, you're doing business with. Because many deals can fall apart because investors are spending months negotiating with someone who never had the authority to sell in the first place. So, if fee simple title tells us who owns the property, the next question becomes, how do we know they own it? And that's where chain of title comes in. So, term number two is chain of title. So, to maybe further this reference to what But to give it a uh simple definition, it's the chain of title is the ownership history of a property. It shows how ownership has moved from one owner to the next over time. Think of it as the property's kind of like family tree and you know, every ownership should connect. They should be connected via a legally valid transfer of some sort. So, let's give it an example. Let's think back to, you know, um high school and gym and and think of a relay race. Each runner is going to pass the baton to the next runner. And the chain of title is the baton. You should be able to follow every handoff from start to finish. But if the baton gets dropped, lost, or handed to the wrong person, you've got a problem. So, let's kind of pull this to where the curative issues show up. These Many of these title issues exist because something interrupted that chain of title. So, common examples might include something like an estate, you know, someone died and their estate was never probated. It could be that a deed was never recorded. Just the other day I was talking to someone who had bought a property 20 years ago and they have the deed, but they never recorded it. Talk about a chain of title issue. It could be that a signature on the deed was defective or maybe was not properly, like the paperwork, maybe it wasn't properly notarized, you know, some issues there. Whether it was like prepared incorrectly or um executed incorrectly. It could be an heir that was left out of transfer, you know, it could be a divorce, but the property wasn't properly transferred after the divorce correctly. It could be a lot of things along those lines. And this is why title companies spend so much time reviewing the history of a property. A lot of times they look back 30 or 50 years in public records. They're trying to verify that every ownership transfer occurred properly. And so I want to give you a real-world example. Let's say John owned a property, and so then John dies. Oh, no. His daughter, Mary, starts paying the taxes. She's maintaining the property, and she's even at a certain point starts renting it out. Good for you, Mary. 20 years later, Mary decides she wants to sell her rental property. But the problem is no probate was ever opened. The deed was never recorded transferring ownership from John, her dad, to Mary, his daughter, his heir. Mary may have acted like the owner for 20 years, but the chain of proper chain of title was never properly updated. Now you've got a title problem to solve before the property can be sold. And so that right there, that is one of the most common breaks in the chain of title is when, you know, an estate is not properly probated. So whenever you encounter a title issue, here's a question you want to ask. It's where did the chain of title break? Because once you identify that broken link, you're often much closer to finding the solution. You can isolate it. In many curative deals, you're not really solving a property problem, you're solving a broken ownership history, you know, something along those lines. So, this is where knowing all the different times that ownership transferred, and double-checking, and paying attention to the details, those things can matter. Whether that's you who are doing it or a third party, like an abstractor title company who is reviewing it, those are things to keep in mind. Now, if every transfer in the chain of title happened perfectly, life would be easy. Unfortunately, that's not always the case, and that's where clouds on title come from. So the third term here is cloud of title. Cloud on title, maybe heard that before, there's clouded title, you know, some version of that. And the cloud of title is is anything that creates doubt, uncertainty, or a potential claim against ownership of a property. It does not necessarily mean ownership is wrong, it simply means there's a question that must be answered before ownership can be considered clear, you know, being easily um transferable. So, think of it this way, a cloud on title is not necessarily a problem, it's a question mark. And title companies don't like question marks, so they want to they want to make sure they identify these clouds on title and then address each of them. So, some common examples for clouds on titles could include an unreleased mortgage. Plenty of times people get sent the the um satisfaction for their mortgage in the mail, but then they don't go bring it to the court the the public records at the county clerk to then release the mortgage. And so, that's very common to have an unreleased mortgage that's still is a question mark and you have to figure out what's going on, whether it's an active mortgage that needs a payoff or like that release that's just sitting in a file, it could be something like that. It could be a judgment or a lien. And again, that has to be figured is this active or is this something that is not is no longer active. It could be a missing heir, it could be a tax sale issue, a forged deed allegation. It could be a boundary dispute, an improperly prepared deed, or a probate that was never completed. Again, these various clouds can show up in different ways. Uh a simple analogy here is imagine you know, you're looking through a window. If the glass is clean, you can clearly see through it. But if the window has dirt, smudges, cracks, or fog, your view becomes less certain. And that's what a cloud on title does. To sell the property with clear fee simple ownership. Remember we talked about that earlier? Those clouds generally need to be addressed so everyone can clearly understand who owns the property and what claims may exist again it against it. And this is where most curative opportunities live by the way. The cloud scares away buyers, right? Some of the less easy to resolve ones. For example, if it's an active mortgage that just needs a payoff and to get, you know, paid off. That's simple. But if it's an unreleased mortgage by a lender that's no longer in business and hard to track down, will create an opportunity there. And I believe so. See, sellers get frustrated, buyers get scared, the property sits and investors, a lot of them, walk away because they don't understand. They think of it as an impossible deal instead of an opportunity. But many clouds on title can be resolved once someone takes the time to investigate what's actually causing the uncertainty. This one of the most important skill sets in curative work is learning to distinguish between a real problem, a solvable problem, and a perceived problem. Because sometimes the cloud is much smaller than people think. But that comes with skill and understanding. So question to ask here is when I encounter a cloud on title, my first question isn't can the this deal be done? My first question is what is the actual cloud? Again, I I want to isolate it. I want to understand it because until you identify specific issue creating uncertainty, it's possible to know what path exists to remove it. Many of the best deals I've started with a with a title company saying, \"Hey, we have, you know, a problem.\" And the real opportunity is to figure out whether that problem can be solved. And again, that involves understanding and skill. So, one of the documents that frequently appears when ownership gets messy is a quick claim deed. Unfortunately, it's also one of the most misunderstood documents in real estate. So, that's the fourth term, quitclaim deed. So, first things first, it's a quitclaim deed, not a quick claim deed. Quit, kind of like you give up, right? Not quick like as in fast, right? So, quit claim deed. Now that I've gotten that out of the way, cuz that is something that some people um bring up a lot, right? A quitclaim deed transfers whatever ownership interest someone may have in a property, if any, without making any guarantees or any warranties about what they actually own. The person signing the deed is essentially saying, \"Whatever interest I have, I'm giving it to you.\" Right? They're They're collecting money, but they're saying, \"Hey, it's for whatever I have.\" And what they're not saying is, \"I actually own this property.\" So, to give you a simple example of this is here on my street, I could give you a quitclaim deed for every single property on my street. Does it mean that I own those properties? No. Do I have any interest in any of those properties? I don't. Can I still sign a quitclaim deed and hand it to you? And you can buy it from me? Absolutely. The deed itself for a quitclaim deed doesn't prove ownership. It simply transfers whatever interest the signer may have. That interest could be substantial or it could be absolutely nothing. This is a very common mistake, and it's one of the biggest misconceptions in real estate that a quitclaim deed proves ownership, but it just simply doesn't. A recorded quitclaim deed only proves that someone transfers whatever interest that they may have, especially at that time. The real question is what interest did they actually own before they sign it? And that's a completely different analysis, right? Having a quitclaim deed is, you know, again, one thing versus backing it up with proof of whether or not they actually had interest is a whole 'nother conversation. Quitclaim deeds showed up all the time in curative work, especially when family members are resolving ownership issues, you know, missing heirs are located, probate matters are being cleared up, divorce situations occur, you know, um there's some buyouts, you have investors who are clearing title defects. It can even show up with creditors um giving quitclaim deeds. That said, I generally view a quitclaim deed as one of the weakest method of conveying ownership. When possible, I prefer ownership transfer through other deed types that provide stronger warranties and protections. And we'll save that deep dive for another episode, but for now, just remember a quitclaim deed tells you someone signed a document, right? They transferred whatever interest they may have. It does not tell you what actually they owned. Now, most ownership issues can be resolved without going to court. But sometimes the dispute becomes significant enough that a judge has to determine who actually owns the property, who has interest in it. And that's where quiet title action comes in. So, term number five is quiet title action. And a quiet title action is a lawsuit that's used to establish ownership rights and resolve competing claims to a property. In simple terms, it's it's asking the court to determine who actually owns this property. And once the court makes that determination, certain competing claims can be removed or extinguished. Now, I want to give you a simple example. Imagine two kids in the neighborhood, they're arguing over who owns a bicycle. Each one claims it's theirs and it's like having an adult step in or, you know, in our world it's a judge, right? Reviews the evidence and says, \"Here's who owns it.\" That's a simple, you know, that's essentially what a quick claim a a quick, quiet title action does. That allows a court to determine ownership when there's uncertainty, confusion, or that those competing claims, right? There's different people who were saying, \"No, this is my situation.\" Or this is what I believe. And they're competing towards having that ownership claim. Quiet title actions commonly arise in situations involving tax sale properties. That's probably one of the most common ones that I see. Could be defective or fraudulent deeds, boundary disputes, adverse possession claims, missing or unknown owners, and breaks in the chain of title. Again, are those, you know, whatever those competing ownership claims may be. Many of us just hear the word quiet title and they assume it means fixing title. And really it's one specific legal tool used to resolve certain ownership disputes. And and I want to be very clear here. If you've got three heirs and they're fighting about deciding whether to sell or not sell, that's not an opportunity for a quiet title action. It's not a matter of who actually owns it. That's not the competing claim. That's for them just not being on the same page in making a decision. And that's when a different lawsuit called a partition um is more at play there, right? So, let me give you a real world example. Let's say a property was sold decades ago, but one of the deeds that chain of title was recorded incorrectly. As the property changed hand over and over over the years, the error goes unnoticed. Eventually, a title search reveal reveals this conflicting ownership claims created by that defective deed all those years ago. A buyer is ready to purchase the property, but the title company will not insure with title insurance the transaction until ownership is clearly established. In some cases, a quiet title action may be necessary to have a court a court determine the rightful ownership of the property and remove uncertainty created by the defective deed. Again, I want to be very clear. This is not the same thing as partition suit. That's a very common point of confusion here. So, just remember a quiet title action is determining ownership, whereas a partition suit is about separating ownership. Before assuming a quiet title action is needed, I want you to ask is ownership actually disputed or do we simply just have co-owners who disagree? The answers often determines whether you're dealing with quiet title issue, a partition issue, or an entirely different solution. One of the biggest mistakes investors make is assuming every title problem requires a lawsuit. Many of them don't. By the way, the first rule the first rule of law is to don't litigate, settle, right? And don't get me wrong, I have litigated many real estate transactions, but the majority of what you should be doing is trying to settle, trying to find a solution, and then save this for those lawsuits for when they're absolutely needed. But when ownership itself is in question, just remember a quiet title action is often one of the most powerful tools available. So, as we start to bring all of this to a hedge, I I want to just say some things. First of all, if you're brand new to title and ownership issues in the curative world, or maybe you're a real estate investor just wanting to understand this stuff better for your own deals, I don't you make the mistake of trying to memorize every statute, every lawsuit, you know, lien and title defect that can can show up. Instead, start by asking these five simple questions that we've gone over today. Number one, who owns the property? Number two, how did they get ownership? Like, what's that history look like? And number three, is there a break in the chain of title? Is there a break in that history? Number four, are there any clouds on title? Is there anything hindering from being able to give that clear title? Number five, what would it take to clear that cloud? Those five questions will solve more title problems than most investors realize. And so, understand having that as a basis, uh can really can really help you clear up some of the mess. Because at the end of the day, curative title isn't really about again, lawsuits and and all the legal stuff, but it can be very simple. It can it can often be about understanding the ownership and the ownership history. The better you understand that, the better you understand why deals get stuck, why title companies raise objections, and where opportunities exist that other investors miss. Remember, most investors spend their time looking for properties. For those who focus on curative title opportunities, they spend their time understanding the ownership and finding those opportunities where there is some sort of break, where there is some sort of defect, some cloud on the title that is causing issues. So, thanks for joining me for another episode of Messy Money podcast. If you are enjoying these conversations, make sure you subscribe. If there's a title term or an ownership term, some sort of sure topic that you'd like for me to cover in a future episode, let me know in the comments below. I would love to hear your thoughts. And because keep in mind you guys, the money is made when things in real estate get messy. And that's what we want to do. We want to talk through it so you guys can learn how to resolve more of these messes so that you can make a profit. I'll see you guys on the next episode. Appreciate you guys tuning in as always.",
+  "attempts": [
+    {
+      "client": "IOS",
+      "playability": {
+        "status": "OK",
+        "playableInEmbed": true,
+        "offlineability": {
+          "buttonRenderer": {
+            "navigationEndpoint": {
+              "clickTrackingParams": "CBAQ6ewBIhMI19W_kezblwMVolRMCB3CMjKgygEEGoXmBA==",
+              "ypcGetOfflineUpsellEndpoint": {
+                "params": "ChPqqN25AQ0KC3NmMmhVdWNzTlo4IgtzZjJoVXVjc05aOCoVCAkYAVIPCgtzZjJoVXVjc05aOCABMAM%3D"
+              }
+            },
+            "trackingParams": "CBAQ6ewBIhMI19W_kezblwMVolRMCB3CMjKg"
+          }
+        },
+        "pictureInPicture": {
+          "pictureInPictureRenderer": {
+            "playableInPip": true,
+            "offByDefault": false,
+            "shouldResumeOnHead": false
+          }
+        },
+        "miniplayer": {
+          "miniplayerRenderer": {
+            "playbackMode": "PLAYBACK_MODE_ALLOW"
+          }
+        },
+        "contextParams": "Q0FFU0FnZ0M="
+      },
+      "outcome": "ok"
+    }
+  ],
+  "fetched_at": "2026-10-28T04:11:34.641290+00:00",
+  "client": "IOS",
+  "json_path": "transcripts/131_sf2hUucsNZ8.json",
+  "text_path": "transcripts/131_sf2hUucsNZ8.txt"
+}

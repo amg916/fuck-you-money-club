@@ -1,0 +1,932 @@
+{
+  "index": 111,
+  "url": "https://www.youtube.com/watch?v=eRjGqaIOHWI",
+  "video_id": "eRjGqaIOHWI",
+  "status": "ok",
+  "metadata": {
+    "title": "How To File a Claim - PA Treasury Unclaimed Property Tutorial",
+    "author": "PA Treasury Department",
+    "channelId": "UCcCoeilgt3uUOSTL1Jzcn8g",
+    "lengthSeconds": "477",
+    "viewCount": "3672",
+    "shortDescription": "This video was created by the Pennsylvania Treasury Department to help constituents file for unclaimed property. For more information about Pennsylvania’s unclaimed property program and Treasurer Stacy Garrity’s efforts to return more than $4.5 billion worth of unclaimed property, please visit https://www.patreasury.gov/unclaimed-property/"
+  },
+  "caption_tracks": [
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=eRjGqaIOHWI&ei=8nXhatS-I_bVsfIPgLyesQo&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185890&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=BFA92D52E911CA139ABF0D6758825F85CFD2F3D0.BDFE0BAE7D7A2AA86210303A264EA8559CC2F0C6&key=yt8&kind=asr&lang=en",
+      "name": {
+        "runs": [
+          {
+            "text": "English (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.en",
+      "languageCode": "en",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    }
+  ],
+  "selected_track": {
+    "baseUrl": "https://www.youtube.com/api/timedtext?v=eRjGqaIOHWI&ei=8nXhatS-I_bVsfIPgLyesQo&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185890&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=BFA92D52E911CA139ABF0D6758825F85CFD2F3D0.BDFE0BAE7D7A2AA86210303A264EA8559CC2F0C6&key=yt8&kind=asr&lang=en",
+    "name": {
+      "runs": [
+        {
+          "text": "English (auto-generated)"
+        }
+      ]
+    },
+    "vssId": "a.en",
+    "languageCode": "en",
+    "kind": "asr",
+    "isTranslatable": true,
+    "trackName": ""
+  },
+  "segments": [
+    {
+      "start": 3.84,
+      "duration": 5.6,
+      "text": "hello everyone in this video I'll cover"
+    },
+    {
+      "start": 6.759,
+      "duration": 5.481,
+      "text": "the process of filing an online claim"
+    },
+    {
+      "start": 9.44,
+      "duration": 6.8,
+      "text": "via our website here's the main screen"
+    },
+    {
+      "start": 12.24,
+      "duration": 7.64,
+      "text": "for our site first go to patreasury.gov"
+    },
+    {
+      "start": 16.24,
+      "duration": 6.4,
+      "text": "and click programs on the menu bar then"
+    },
+    {
+      "start": 19.88,
+      "duration": 6.799,
+      "text": "click unclaim property on the drop- down"
+    },
+    {
+      "start": 22.64,
+      "duration": 6.039,
+      "text": "menu then select start your search next"
+    },
+    {
+      "start": 26.679,
+      "duration": 5.041,
+      "text": "click the search now button displayed"
+    },
+    {
+      "start": 28.679,
+      "duration": 5.321,
+      "text": "here the green gives you an idea of how"
+    },
+    {
+      "start": 31.72,
+      "duration": 5.48,
+      "text": "far you are in the claim submission"
+    },
+    {
+      "start": 34.0,
+      "duration": 6.079,
+      "text": "process the online process for finding"
+    },
+    {
+      "start": 37.2,
+      "duration": 5.44,
+      "text": "unclaimed property is simple plus if you"
+    },
+    {
+      "start": 40.079,
+      "duration": 5.561,
+      "text": "file online your claim may be eligible"
+    },
+    {
+      "start": 42.64,
+      "duration": 5.96,
+      "text": "for our automated approval process that"
+    },
+    {
+      "start": 45.64,
+      "duration": 5.559,
+      "text": "means no paper claim form is required"
+    },
+    {
+      "start": 48.6,
+      "duration": 4.599,
+      "text": "and it will significantly cut down the"
+    },
+    {
+      "start": 51.199,
+      "duration": 4.561,
+      "text": "amount of time it takes for you to"
+    },
+    {
+      "start": 53.199,
+      "duration": 5.04,
+      "text": "receive your money you can also speed up"
+    },
+    {
+      "start": 55.76,
+      "duration": 4.759,
+      "text": "the process by selecting to receive your"
+    },
+    {
+      "start": 58.239,
+      "duration": 5.88,
+      "text": "funds by direct deposit"
+    },
+    {
+      "start": 60.519,
+      "duration": 6.28,
+      "text": "also known as AC okay now let's get"
+    },
+    {
+      "start": 64.119,
+      "duration": 5.801,
+      "text": "started type your last name or company"
+    },
+    {
+      "start": 66.799,
+      "duration": 5.881,
+      "text": "name in the designated text box you must"
+    },
+    {
+      "start": 69.92,
+      "duration": 5.48,
+      "text": "type a minimum of two characters into"
+    },
+    {
+      "start": 72.68,
+      "duration": 5.479,
+      "text": "the text box to further narrow your"
+    },
+    {
+      "start": 75.4,
+      "duration": 6.359,
+      "text": "search you may also type your first name"
+    },
+    {
+      "start": 78.159,
+      "duration": 6.201,
+      "text": "or initial your ZIP code address or city"
+    },
+    {
+      "start": 81.759,
+      "duration": 5.561,
+      "text": "in each designated text box by"
+    },
+    {
+      "start": 84.36,
+      "duration": 5.64,
+      "text": "completing more of these optional Fields"
+    },
+    {
+      "start": 87.32,
+      "duration": 4.68,
+      "text": "your search becomes narrower so it's"
+    },
+    {
+      "start": 90.0,
+      "duration": 4.36,
+      "text": "probably a good idea to start by"
+    },
+    {
+      "start": 92.0,
+      "duration": 5.159,
+      "text": "entering only your last name and first"
+    },
+    {
+      "start": 94.36,
+      "duration": 6.079,
+      "text": "initial if you want to search as many of"
+    },
+    {
+      "start": 97.159,
+      "duration": 6.401,
+      "text": "our records as possible check the I'm"
+    },
+    {
+      "start": 100.439,
+      "duration": 5.121,
+      "text": "not a robot box then click the search"
+    },
+    {
+      "start": 103.56,
+      "duration": 5.0,
+      "text": "properties button at the bottom of the"
+    },
+    {
+      "start": 105.56,
+      "duration": 6.12,
+      "text": "page a list of results for potential"
+    },
+    {
+      "start": 108.56,
+      "duration": 5.68,
+      "text": "matches will appear if you identify"
+    },
+    {
+      "start": 111.68,
+      "duration": 5.6,
+      "text": "property that may belong to you review"
+    },
+    {
+      "start": 114.24,
+      "duration": 5.239,
+      "text": "the information and click the add box"
+    },
+    {
+      "start": 117.28,
+      "duration": 4.36,
+      "text": "beside each property listed that you"
+    },
+    {
+      "start": 119.479,
+      "duration": 4.56,
+      "text": "would like like to claim once you"
+    },
+    {
+      "start": 121.64,
+      "duration": 6.159,
+      "text": "finished adding properties click the"
+    },
+    {
+      "start": 124.039,
+      "duration": 5.92,
+      "text": "green claim properties in my cart button"
+    },
+    {
+      "start": 127.799,
+      "duration": 5.52,
+      "text": "at this point you'll see an option to"
+    },
+    {
+      "start": 129.959,
+      "duration": 7.161,
+      "text": "receive funds via a or direct deposit to"
+    },
+    {
+      "start": 133.319,
+      "duration": 7.081,
+      "text": "your bank account select yes or no let's"
+    },
+    {
+      "start": 137.12,
+      "duration": 5.28,
+      "text": "walk through these steps to be paid by a"
+    },
+    {
+      "start": 140.4,
+      "duration": 4.52,
+      "text": "after selecting yes you will be"
+    },
+    {
+      "start": 142.4,
+      "duration": 5.64,
+      "text": "presented with a claimant login screen"
+    },
+    {
+      "start": 144.92,
+      "duration": 5.959,
+      "text": "to register for an account select"
+    },
+    {
+      "start": 148.04,
+      "duration": 5.08,
+      "text": "register for an account on this form you"
+    },
+    {
+      "start": 150.879,
+      "duration": 4.961,
+      "text": "may be required to enter your personal"
+    },
+    {
+      "start": 153.12,
+      "duration": 6.96,
+      "text": "information that includes your first and"
+    },
+    {
+      "start": 155.84,
+      "duration": 8.399,
+      "text": "last name street address ZIP code city"
+    },
+    {
+      "start": 160.08,
+      "duration": 6.799,
+      "text": "state email phone birth date username"
+    },
+    {
+      "start": 164.239,
+      "duration": 5.881,
+      "text": "and password then click the save"
+    },
+    {
+      "start": 166.879,
+      "duration": 4.961,
+      "text": "registration button on the bottom at"
+    },
+    {
+      "start": 170.12,
+      "duration": 4.759,
+      "text": "this point you'll need to go to your"
+    },
+    {
+      "start": 171.84,
+      "duration": 5.36,
+      "text": "email to confirm your account after"
+    },
+    {
+      "start": 174.879,
+      "duration": 5.72,
+      "text": "clicking the link in the email you'll"
+    },
+    {
+      "start": 177.2,
+      "duration": 6.48,
+      "text": "get a confirmation message now you're"
+    },
+    {
+      "start": 180.599,
+      "duration": 6.64,
+      "text": "set to be able to sign in and register"
+    },
+    {
+      "start": 183.68,
+      "duration": 6.839,
+      "text": "for an ACH payment so click return to"
+    },
+    {
+      "start": 187.239,
+      "duration": 5.481,
+      "text": "claim and login log in using the"
+    },
+    {
+      "start": 190.519,
+      "duration": 6.681,
+      "text": "username and password that you just set"
+    },
+    {
+      "start": 192.72,
+      "duration": 6.879,
+      "text": "up then click the gold login button now"
+    },
+    {
+      "start": 197.2,
+      "duration": 6.0,
+      "text": "click the green claim properties in my"
+    },
+    {
+      "start": 199.599,
+      "duration": 5.601,
+      "text": "cart button next use the drop-down box"
+    },
+    {
+      "start": 203.2,
+      "duration": 5.0,
+      "text": "to select your relationship to the"
+    },
+    {
+      "start": 205.2,
+      "duration": 5.0,
+      "text": "property listed a popup box will appear"
+    },
+    {
+      "start": 208.2,
+      "duration": 4.48,
+      "text": "to further explain the relation ship"
+    },
+    {
+      "start": 210.2,
+      "duration": 5.88,
+      "text": "that you selected if all of the above"
+    },
+    {
+      "start": 212.68,
+      "duration": 5.119,
+      "text": "are true click yes you have the ability"
+    },
+    {
+      "start": 216.08,
+      "duration": 4.159,
+      "text": "to claim different properties at the"
+    },
+    {
+      "start": 217.799,
+      "duration": 5.481,
+      "text": "same time even if your relationship to"
+    },
+    {
+      "start": 220.239,
+      "duration": 5.601,
+      "text": "the properties is not all the same next"
+    },
+    {
+      "start": 223.28,
+      "duration": 5.48,
+      "text": "complete your claim and information form"
+    },
+    {
+      "start": 225.84,
+      "duration": 6.88,
+      "text": "fill in your first name last name street"
+    },
+    {
+      "start": 228.76,
+      "duration": 6.16,
+      "text": "address zip city state email phone"
+    },
+    {
+      "start": 232.72,
+      "duration": 4.439,
+      "text": "number and birth date all of the"
+    },
+    {
+      "start": 234.92,
+      "duration": 5.159,
+      "text": "information is required in order to move"
+    },
+    {
+      "start": 237.159,
+      "duration": 5.0,
+      "text": "on to the next step enter entering your"
+    },
+    {
+      "start": 240.079,
+      "duration": 4.761,
+      "text": "social security number is likely to"
+    },
+    {
+      "start": 242.159,
+      "duration": 5.201,
+      "text": "result in Faster processing if you do"
+    },
+    {
+      "start": 244.84,
+      "duration": 4.72,
+      "text": "not provide a social security number the"
+    },
+    {
+      "start": 247.36,
+      "duration": 4.799,
+      "text": "claim will not be eligible to go through"
+    },
+    {
+      "start": 249.56,
+      "duration": 4.679,
+      "text": "our automated approval process that"
+    },
+    {
+      "start": 252.159,
+      "duration": 4.881,
+      "text": "means you'll need to submit the PDF"
+    },
+    {
+      "start": 254.239,
+      "duration": 5.56,
+      "text": "claim form which will result in longer"
+    },
+    {
+      "start": 257.04,
+      "duration": 4.84,
+      "text": "processing time if you choose not to"
+    },
+    {
+      "start": 259.799,
+      "duration": 4.521,
+      "text": "provide your social security number"
+    },
+    {
+      "start": 261.88,
+      "duration": 4.52,
+      "text": "you'll be required to check the box"
+    },
+    {
+      "start": 264.32,
+      "duration": 4.4,
+      "text": "acknowledging that a social security"
+    },
+    {
+      "start": 266.4,
+      "duration": 4.359,
+      "text": "number was not provided if you're a"
+    },
+    {
+      "start": 268.72,
+      "duration": 3.759,
+      "text": "finder which means that you assisting"
+    },
+    {
+      "start": 270.759,
+      "duration": 4.44,
+      "text": "someone to recover their unclaimed"
+    },
+    {
+      "start": 272.479,
+      "duration": 5.481,
+      "text": "property for a fee Pennsylvania requires"
+    },
+    {
+      "start": 275.199,
+      "duration": 4.761,
+      "text": "you to become a registered finder refer"
+    },
+    {
+      "start": 277.96,
+      "duration": 6.16,
+      "text": "to the finder registration process on"
+    },
+    {
+      "start": 279.96,
+      "duration": 7.28,
+      "text": "our website at patreasury.gov unclaimed"
+    },
+    {
+      "start": 284.12,
+      "duration": 5.28,
+      "text": "property finders next for how did you"
+    },
+    {
+      "start": 287.24,
+      "duration": 5.08,
+      "text": "hear about this site select from the"
+    },
+    {
+      "start": 289.4,
+      "duration": 6.12,
+      "text": "drop- down menu finally check if you're"
+    },
+    {
+      "start": 292.32,
+      "duration": 5.56,
+      "text": "a veteran or active duty service member"
+    },
+    {
+      "start": 295.52,
+      "duration": 5.519,
+      "text": "for this demonstration a social security"
+    },
+    {
+      "start": 297.88,
+      "duration": 5.319,
+      "text": "number is required for AC age payment so"
+    },
+    {
+      "start": 301.039,
+      "duration": 4.761,
+      "text": "proceed with entry of your Social"
+    },
+    {
+      "start": 303.199,
+      "duration": 5.56,
+      "text": "Security number check the box to have"
+    },
+    {
+      "start": 305.8,
+      "duration": 4.959,
+      "text": "your property sent to you via acch"
+    },
+    {
+      "start": 308.759,
+      "duration": 4.321,
+      "text": "several blue boxes of important"
+    },
+    {
+      "start": 310.759,
+      "duration": 6.0,
+      "text": "information relating to the receipt of"
+    },
+    {
+      "start": 313.08,
+      "duration": 6.36,
+      "text": "funds by AC appear enter your bank"
+    },
+    {
+      "start": 316.759,
+      "duration": 5.0,
+      "text": "routing number and account number Select"
+    },
+    {
+      "start": 319.44,
+      "duration": 5.24,
+      "text": "from the drop- down box if the account"
+    },
+    {
+      "start": 321.759,
+      "duration": 6.121,
+      "text": "is a checking or savings and select how"
+    },
+    {
+      "start": 324.68,
+      "duration": 5.88,
+      "text": "you heard about this site you can accept"
+    },
+    {
+      "start": 327.88,
+      "duration": 5.08,
+      "text": "the terms and conditions of treasury's"
+    },
+    {
+      "start": 330.56,
+      "duration": 5.0,
+      "text": "affidavit and indemnification agreement"
+    },
+    {
+      "start": 332.96,
+      "duration": 6.0,
+      "text": "online immediately before signing the"
+    },
+    {
+      "start": 335.56,
+      "duration": 6.16,
+      "text": "claim form after this form is completed"
+    },
+    {
+      "start": 338.96,
+      "duration": 5.44,
+      "text": "click the create claim button answer"
+    },
+    {
+      "start": 341.72,
+      "duration": 5.16,
+      "text": "okay to the popup box if all of the"
+    },
+    {
+      "start": 344.4,
+      "duration": 5.04,
+      "text": "information is correct to create the"
+    },
+    {
+      "start": 346.88,
+      "duration": 5.36,
+      "text": "claim all submitted claims will be"
+    },
+    {
+      "start": 349.44,
+      "duration": 4.64,
+      "text": "showcased on the screen depending on the"
+    },
+    {
+      "start": 352.24,
+      "duration": 4.399,
+      "text": "type of claim and your relationship to"
+    },
+    {
+      "start": 354.08,
+      "duration": 5.52,
+      "text": "the property each claim form may have"
+    },
+    {
+      "start": 356.639,
+      "duration": 5.761,
+      "text": "different requirements listed if your"
+    },
+    {
+      "start": 359.6,
+      "duration": 5.48,
+      "text": "presented with the ability to generate a"
+    },
+    {
+      "start": 362.4,
+      "duration": 5.519,
+      "text": "PDF of your claim form then a paper"
+    },
+    {
+      "start": 365.08,
+      "duration": 6.16,
+      "text": "claim form is required you can fill it"
+    },
+    {
+      "start": 367.919,
+      "duration": 5.68,
+      "text": "out sign and upload the claim form"
+    },
+    {
+      "start": 371.24,
+      "duration": 5.239,
+      "text": "online you'll receive an email of the"
+    },
+    {
+      "start": 373.599,
+      "duration": 5.521,
+      "text": "claim form as a PDF along with a list of"
+    },
+    {
+      "start": 376.479,
+      "duration": 5.16,
+      "text": "two options to either upload a completed"
+    },
+    {
+      "start": 379.12,
+      "duration": 5.88,
+      "text": "claim form to our website or print and"
+    },
+    {
+      "start": 381.639,
+      "duration": 6.481,
+      "text": "mail the claim form to our PO Box"
+    },
+    {
+      "start": 385.0,
+      "duration": 6.36,
+      "text": "however if no PDF is presented that's"
+    },
+    {
+      "start": 388.12,
+      "duration": 5.799,
+      "text": "good news it likely means that no paper"
+    },
+    {
+      "start": 391.36,
+      "duration": 5.44,
+      "text": "claim form is required for the"
+    },
+    {
+      "start": 393.919,
+      "duration": 5.441,
+      "text": "claim to check the status of the claim"
+    },
+    {
+      "start": 396.8,
+      "duration": 5.679,
+      "text": "on our site you'll need the zip code and"
+    },
+    {
+      "start": 399.36,
+      "duration": 5.679,
+      "text": "claim ID for each claim which can be"
+    },
+    {
+      "start": 402.479,
+      "duration": 4.12,
+      "text": "found at the bottom of the claim forms"
+    },
+    {
+      "start": 405.039,
+      "duration": 4.641,
+      "text": "now I'll show you how to check the"
+    },
+    {
+      "start": 406.599,
+      "duration": 6.841,
+      "text": "status of a claim on our site it's very"
+    },
+    {
+      "start": 409.68,
+      "duration": 6.28,
+      "text": "easy the claim status upload forms tab"
+    },
+    {
+      "start": 413.44,
+      "duration": 5.319,
+      "text": "is displayed on the main screen right"
+    },
+    {
+      "start": 415.96,
+      "duration": 6.239,
+      "text": "underneath the already started need help"
+    },
+    {
+      "start": 418.759,
+      "duration": 5.921,
+      "text": "section to check the status of one or"
+    },
+    {
+      "start": 422.199,
+      "duration": 5.481,
+      "text": "any of your claims you simply fill in"
+    },
+    {
+      "start": 424.68,
+      "duration": 5.519,
+      "text": "the zip code and claim ID if you're"
+    },
+    {
+      "start": 427.68,
+      "duration": 5.04,
+      "text": "logged in the status of all your claims"
+    },
+    {
+      "start": 430.199,
+      "duration": 5.4,
+      "text": "is automatically presented on your"
+    },
+    {
+      "start": 432.72,
+      "duration": 6.0,
+      "text": "portal each status is labeled with a"
+    },
+    {
+      "start": 435.599,
+      "duration": 6.081,
+      "text": "specific color and each color references"
+    },
+    {
+      "start": 438.72,
+      "duration": 6.08,
+      "text": "a certain claim status for instance the"
+    },
+    {
+      "start": 441.68,
+      "duration": 6.28,
+      "text": "color orange is labeled as claim form"
+    },
+    {
+      "start": 444.8,
+      "duration": 6.28,
+      "text": "received by state you can also use this"
+    },
+    {
+      "start": 447.96,
+      "duration": 5.679,
+      "text": "page to upload claim forms if you have"
+    },
+    {
+      "start": 451.08,
+      "duration": 6.519,
+      "text": "any questions about the process please"
+    },
+    {
+      "start": 453.639,
+      "duration": 5.921,
+      "text": "email topmail patreasury.gov and our"
+    },
+    {
+      "start": 457.599,
+      "duration": 4.88,
+      "text": "unclaimed property staff will be happy"
+    },
+    {
+      "start": 459.56,
+      "duration": 5.319,
+      "text": "to assist you if you'd like to search"
+    },
+    {
+      "start": 462.479,
+      "duration": 7.4,
+      "text": "for unclaimed property in other states"
+    },
+    {
+      "start": 464.879,
+      "duration": 5.0,
+      "text": "visit missingmoney.com thank"
+    },
+    {
+      "start": 470.48,
+      "duration": 8.399,
+      "text": "[Music]"
+    },
+    {
+      "start": 475.879,
+      "duration": 3.0,
+      "text": "you"
+    }
+  ],
+  "full_text": "hello everyone in this video I'll cover the process of filing an online claim via our website here's the main screen for our site first go to patreasury.gov and click programs on the menu bar then click unclaim property on the drop- down menu then select start your search next click the search now button displayed here the green gives you an idea of how far you are in the claim submission process the online process for finding unclaimed property is simple plus if you file online your claim may be eligible for our automated approval process that means no paper claim form is required and it will significantly cut down the amount of time it takes for you to receive your money you can also speed up the process by selecting to receive your funds by direct deposit also known as AC okay now let's get started type your last name or company name in the designated text box you must type a minimum of two characters into the text box to further narrow your search you may also type your first name or initial your ZIP code address or city in each designated text box by completing more of these optional Fields your search becomes narrower so it's probably a good idea to start by entering only your last name and first initial if you want to search as many of our records as possible check the I'm not a robot box then click the search properties button at the bottom of the page a list of results for potential matches will appear if you identify property that may belong to you review the information and click the add box beside each property listed that you would like like to claim once you finished adding properties click the green claim properties in my cart button at this point you'll see an option to receive funds via a or direct deposit to your bank account select yes or no let's walk through these steps to be paid by a after selecting yes you will be presented with a claimant login screen to register for an account select register for an account on this form you may be required to enter your personal information that includes your first and last name street address ZIP code city state email phone birth date username and password then click the save registration button on the bottom at this point you'll need to go to your email to confirm your account after clicking the link in the email you'll get a confirmation message now you're set to be able to sign in and register for an ACH payment so click return to claim and login log in using the username and password that you just set up then click the gold login button now click the green claim properties in my cart button next use the drop-down box to select your relationship to the property listed a popup box will appear to further explain the relation ship that you selected if all of the above are true click yes you have the ability to claim different properties at the same time even if your relationship to the properties is not all the same next complete your claim and information form fill in your first name last name street address zip city state email phone number and birth date all of the information is required in order to move on to the next step enter entering your social security number is likely to result in Faster processing if you do not provide a social security number the claim will not be eligible to go through our automated approval process that means you'll need to submit the PDF claim form which will result in longer processing time if you choose not to provide your social security number you'll be required to check the box acknowledging that a social security number was not provided if you're a finder which means that you assisting someone to recover their unclaimed property for a fee Pennsylvania requires you to become a registered finder refer to the finder registration process on our website at patreasury.gov unclaimed property finders next for how did you hear about this site select from the drop- down menu finally check if you're a veteran or active duty service member for this demonstration a social security number is required for AC age payment so proceed with entry of your Social Security number check the box to have your property sent to you via acch several blue boxes of important information relating to the receipt of funds by AC appear enter your bank routing number and account number Select from the drop- down box if the account is a checking or savings and select how you heard about this site you can accept the terms and conditions of treasury's affidavit and indemnification agreement online immediately before signing the claim form after this form is completed click the create claim button answer okay to the popup box if all of the information is correct to create the claim all submitted claims will be showcased on the screen depending on the type of claim and your relationship to the property each claim form may have different requirements listed if your presented with the ability to generate a PDF of your claim form then a paper claim form is required you can fill it out sign and upload the claim form online you'll receive an email of the claim form as a PDF along with a list of two options to either upload a completed claim form to our website or print and mail the claim form to our PO Box however if no PDF is presented that's good news it likely means that no paper claim form is required for the claim to check the status of the claim on our site you'll need the zip code and claim ID for each claim which can be found at the bottom of the claim forms now I'll show you how to check the status of a claim on our site it's very easy the claim status upload forms tab is displayed on the main screen right underneath the already started need help section to check the status of one or any of your claims you simply fill in the zip code and claim ID if you're logged in the status of all your claims is automatically presented on your portal each status is labeled with a specific color and each color references a certain claim status for instance the color orange is labeled as claim form received by state you can also use this page to upload claim forms if you have any questions about the process please email topmail patreasury.gov and our unclaimed property staff will be happy to assist you if you'd like to search for unclaimed property in other states visit missingmoney.com thank [Music] you",
+  "attempts": [
+    {
+      "client": "IOS",
+      "playability": {
+        "status": "OK",
+        "playableInEmbed": true,
+        "offlineability": {
+          "buttonRenderer": {
+            "navigationEndpoint": {
+              "clickTrackingParams": "CAkQ6ewBIhMI1P_yj-zblwMV9mpMCB0AniemygEEorhjLQ==",
+              "ypcGetOfflineUpsellEndpoint": {
+                "params": "ChPqqN25AQ0KC2VSakdxYUlPSFdJIgtlUmpHcWFJT0hXSSoVCAkYAVIPCgtlUmpHcWFJT0hXSSAB"
+              }
+            },
+            "trackingParams": "CAkQ6ewBIhMI1P_yj-zblwMV9mpMCB0Aniem"
+          }
+        },
+        "pictureInPicture": {
+          "pictureInPictureRenderer": {
+            "playableInPip": true,
+            "offByDefault": false,
+            "shouldResumeOnHead": false
+          }
+        },
+        "miniplayer": {
+          "miniplayerRenderer": {
+            "playbackMode": "PLAYBACK_MODE_ALLOW"
+          }
+        },
+        "contextParams": "Q0FFU0FnZ0M="
+      },
+      "outcome": "ok"
+    }
+  ],
+  "fetched_at": "2026-10-28T04:11:30.945032+00:00",
+  "client": "IOS",
+  "json_path": "transcripts/111_eRjGqaIOHWI.json",
+  "text_path": "transcripts/111_eRjGqaIOHWI.txt"
+}

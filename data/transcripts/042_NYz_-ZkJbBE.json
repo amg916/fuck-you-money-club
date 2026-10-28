@@ -1,0 +1,529 @@
+{
+  "index": 42,
+  "url": "https://www.youtube.com/watch?v=NYz_-ZkJbBE",
+  "video_id": "NYz_-ZkJbBE",
+  "status": "ok",
+  "metadata": {
+    "title": "Primary Sources: testate probate documents",
+    "author": "Five-minute genealogy",
+    "channelId": "UC6qnMgXP1jQMuUP8vTVoU3g",
+    "lengthSeconds": "356",
+    "viewCount": "77",
+    "shortDescription": "There are a ton of different document types that appear in \"testate\" probate proceedings, or probate when there is a Last Will and Testament. In this video, I'll give a five-minute overview of the common documents you may encounter in Colonial and early republic U.S. probate proceedings.",
+    "keywords": [
+      "testate",
+      "will",
+      "last will",
+      "testament",
+      "executor",
+      "inventory",
+      "bill of sale",
+      "genealogy",
+      "family research",
+      "guardian",
+      "guardianship",
+      "probate"
+    ]
+  },
+  "caption_tracks": [
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=NYz_-ZkJbBE&ei=53Xhasr-K9yZsfIPrYiDgA0&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185879&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=8BEC1C84F9F408418B9D8C05B3883020D79DC1E1.5E63C489D58DBEF7327F406C2C19E1EF4B07F00C&key=yt8&lang=en",
+      "name": {
+        "runs": [
+          {
+            "text": "English"
+          }
+        ]
+      },
+      "vssId": ".en",
+      "languageCode": "en",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=NYz_-ZkJbBE&ei=53Xhasr-K9yZsfIPrYiDgA0&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185879&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=8BEC1C84F9F408418B9D8C05B3883020D79DC1E1.5E63C489D58DBEF7327F406C2C19E1EF4B07F00C&key=yt8&kind=asr&lang=en",
+      "name": {
+        "runs": [
+          {
+            "text": "English (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.en",
+      "languageCode": "en",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    }
+  ],
+  "selected_track": {
+    "baseUrl": "https://www.youtube.com/api/timedtext?v=NYz_-ZkJbBE&ei=53Xhasr-K9yZsfIPrYiDgA0&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185879&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=8BEC1C84F9F408418B9D8C05B3883020D79DC1E1.5E63C489D58DBEF7327F406C2C19E1EF4B07F00C&key=yt8&lang=en",
+    "name": {
+      "runs": [
+        {
+          "text": "English"
+        }
+      ]
+    },
+    "vssId": ".en",
+    "languageCode": "en",
+    "isTranslatable": true,
+    "trackName": ""
+  },
+  "segments": [
+    {
+      "start": 0.399,
+      "duration": 4.521,
+      "text": "Probate documents are one of the best primary source documents, but they’re also one of"
+    },
+    {
+      "start": 4.92,
+      "duration": 4.77,
+      "text": "the most complicated, partly because of the dizzying array of different document types,"
+    },
+    {
+      "start": 9.69,
+      "duration": 1.8,
+      "text": "such as: 1) Wills."
+    },
+    {
+      "start": 11.49,
+      "duration": 4.729,
+      "text": "2) Bonds, letters of administration, letters testamentary, and other administrativa."
+    },
+    {
+      "start": 16.219,
+      "duration": 1.601,
+      "text": "3) Inventories."
+    },
+    {
+      "start": 17.82,
+      "duration": 1.6,
+      "text": "4) Probate proceedings."
+    },
+    {
+      "start": 19.42,
+      "duration": 1.58,
+      "text": "5) Settlement."
+    },
+    {
+      "start": 21.0,
+      "duration": 1.58,
+      "text": "6) Guardianship."
+    },
+    {
+      "start": 22.58,
+      "duration": 4.3,
+      "text": "I’m Mike O’Neill, and I’m going to give you an overview of different probate documents"
+    },
+    {
+      "start": 26.88,
+      "duration": 2.19,
+      "text": "in five minutes."
+    },
+    {
+      "start": 29.07,
+      "duration": 5.13,
+      "text": "If you want to dig deeper, I recommend spending some time at “Bob’s Genealogy Cabinet”"
+    },
+    {
+      "start": 34.2,
+      "duration": 2.16,
+      "text": "at genfiles.com."
+    },
+    {
+      "start": 36.36,
+      "duration": 5.35,
+      "text": "In this video, I’m going to focus on testate proceedings where a person made out a will."
+    },
+    {
+      "start": 41.71,
+      "duration": 5.21,
+      "text": "I’ll cover guardianship and intestacy—when there’s no will—separately."
+    },
+    {
+      "start": 46.92,
+      "duration": 2.13,
+      "text": "Testate probate proceedings are the most straightforward."
+    },
+    {
+      "start": 49.05,
+      "duration": 6.72,
+      "text": "At a minimum, you will have a last will and testament which documents how a decedent wants"
+    },
+    {
+      "start": 55.77,
+      "duration": 3.07,
+      "text": "his (or her) property to be distributed."
+    },
+    {
+      "start": 58.84,
+      "duration": 4.85,
+      "text": "Wills are fairly boilerplate—you’ll see similar language in all of them, and there"
+    },
+    {
+      "start": 63.69,
+      "duration": 4.02,
+      "text": "are a couple conventions which are incredibly helpful for genealogy:"
+    },
+    {
+      "start": 67.71,
+      "duration": 3.57,
+      "text": "1) First, listing children in birth order."
+    },
+    {
+      "start": 71.28,
+      "duration": 4.79,
+      "text": "It’s not used all the time, but when you have no other indicators of age, assume the"
+    },
+    {
+      "start": 76.07,
+      "duration": 2.32,
+      "text": "kids are listed by age."
+    },
+    {
+      "start": 78.39,
+      "duration": 3.48,
+      "text": "It can be a really useful way to narrow down searches."
+    },
+    {
+      "start": 81.87,
+      "duration": 8.63,
+      "text": "2) Second, is the clarifying text listing sons-in-law, e.g. “Catherine, who is intermarried"
+    },
+    {
+      "start": 90.5,
+      "duration": 3.409,
+      "text": "with Henry Roth.”"
+    },
+    {
+      "start": 93.909,
+      "duration": 5.431,
+      "text": "You may also encounter letters testamentary, bonds and an inventory."
+    },
+    {
+      "start": 99.34,
+      "duration": 4.959,
+      "text": "These are just administrativa, and the only genealogical value is that the people named"
+    },
+    {
+      "start": 104.299,
+      "duration": 4.721,
+      "text": "tend to be family, friends, associates and neighbors of the deceased."
+    },
+    {
+      "start": 109.02,
+      "duration": 9.75,
+      "text": "Sometimes you’ll get a relationship specified for a single person, but that’s about it."
+    },
+    {
+      "start": 118.77,
+      "duration": 5.33,
+      "text": "Letters testamentary state that a given individual is the estate’s executor, and can transact"
+    },
+    {
+      "start": 124.1,
+      "duration": 2.88,
+      "text": "on behalf of the estate until it is settled."
+    },
+    {
+      "start": 126.98,
+      "duration": 4.899,
+      "text": "Getting this letter isn’t always necessary: in some locales, if an executor is named in"
+    },
+    {
+      "start": 131.879,
+      "duration": 3.931,
+      "text": "a will, she has the legal authority to act on behalf of the estate."
+    },
+    {
+      "start": 135.81,
+      "duration": 6.39,
+      "text": "She doesn’t even need to prove the will in court to get started."
+    },
+    {
+      "start": 142.2,
+      "duration": 6.239,
+      "text": "Bonds are a financial guarantee that the executor won’t embezzle from the estate."
+    },
+    {
+      "start": 148.439,
+      "duration": 4.651,
+      "text": "If a court later found the executor guilty of financial malfeasance, the executor and"
+    },
+    {
+      "start": 153.09,
+      "duration": 3.75,
+      "text": "another person would be held financially liable for an amount that could be higher than the"
+    },
+    {
+      "start": 156.84,
+      "duration": 4.319,
+      "text": "estimated value of the estate, depending on the extent of the malfeasance."
+    },
+    {
+      "start": 161.159,
+      "duration": 5.42,
+      "text": "Inventories are the output of an estate sale, and can come in two parts: an estimate of"
+    },
+    {
+      "start": 166.579,
+      "duration": 4.33,
+      "text": "the value of personal items, and the actual bill of sale."
+    },
+    {
+      "start": 170.909,
+      "duration": 2.97,
+      "text": "These can be interesting in learning about the decedent’s possessions."
+    },
+    {
+      "start": 173.879,
+      "duration": 6.211,
+      "text": "Now, the bill of sale will include family members making purchases, but they probably"
+    },
+    {
+      "start": 180.09,
+      "duration": 1.719,
+      "text": "won’t be identified as such."
+    },
+    {
+      "start": 181.809,
+      "duration": 4.46,
+      "text": "This can be a lead for figuring out who a decedent’s daughters married."
+    },
+    {
+      "start": 186.269,
+      "duration": 5.2,
+      "text": "Sometimes, the execution of a will can go sideways, and you’ll find a record of this"
+    },
+    {
+      "start": 191.469,
+      "duration": 1.351,
+      "text": "in probate proceedings."
+    },
+    {
+      "start": 192.82,
+      "duration": 8.34,
+      "text": "Probate issues might be heard in the same court where a will was proved, but it could be heard elsewhere."
+    },
+    {
+      "start": 201.58,
+      "duration": 4.15,
+      "text": "For example, if the decedent’s spouse was pregnant when the decedent died, state law"
+    },
+    {
+      "start": 205.73,
+      "duration": 5.239,
+      "text": "might render the will invalid."
+    },
+    {
+      "start": 210.969,
+      "duration": 4.06,
+      "text": "Or the terms of the will might be impossible to meet, and the decedent’s family may have"
+    },
+    {
+      "start": 215.029,
+      "duration": 4.66,
+      "text": "to sue the executor, who was probably a sibling or spouse."
+    },
+    {
+      "start": 219.689,
+      "duration": 4.651,
+      "text": "Even if the executor was in agreement, our adversarial court system means there must"
+    },
+    {
+      "start": 224.34,
+      "duration": 1.95,
+      "text": "be an appellant and a respondent."
+    },
+    {
+      "start": 226.29,
+      "duration": 4.899,
+      "text": "I found a case where a wife had to sue her executor husband over the disposition of her"
+    },
+    {
+      "start": 231.189,
+      "duration": 1.421,
+      "text": "father’s estate."
+    },
+    {
+      "start": 232.61,
+      "duration": 4.779,
+      "text": "The executor, of course, testified in court that he was in complete agreement with his"
+    },
+    {
+      "start": 237.389,
+      "duration": 2.52,
+      "text": "wife, but she still had to sue him."
+    },
+    {
+      "start": 239.909,
+      "duration": 8.59,
+      "text": "The actual court handling probate proceedings will vary state to state, and that can make"
+    },
+    {
+      "start": 248.499,
+      "duration": 2.38,
+      "text": "it difficult to find."
+    },
+    {
+      "start": 250.879,
+      "duration": 2.98,
+      "text": "I’ll cover hints for this in another video."
+    },
+    {
+      "start": 253.859,
+      "duration": 4.511,
+      "text": "The final document type you may encounter is an estate settlement."
+    },
+    {
+      "start": 258.37,
+      "duration": 4.89,
+      "text": "In my experience, this is the rarest type of document to find, and is typically part"
+    },
+    {
+      "start": 263.26,
+      "duration": 3.2,
+      "text": "of probate proceedings."
+    },
+    {
+      "start": 266.46,
+      "duration": 4.22,
+      "text": "But it is worth calling out because of its potential high genealogical value."
+    },
+    {
+      "start": 270.68,
+      "duration": 5.709,
+      "text": "If the will explicitly lists out all familial relationships, the settlement won’t matter"
+    },
+    {
+      "start": 276.389,
+      "duration": 1.0,
+      "text": "much."
+    },
+    {
+      "start": 277.389,
+      "duration": 5.532,
+      "text": "If the decedent didn’t map out familial relationships, perhaps by saying “I leave"
+    },
+    {
+      "start": 282.921,
+      "duration": 6.139,
+      "text": "my entire estate to my children, share and share alike,” a settlement is gold."
+    },
+    {
+      "start": 289.06,
+      "duration": 7.23,
+      "text": "“Share and share alike” means that each child gets an equal share, so even if relationships"
+    },
+    {
+      "start": 296.29,
+      "duration": 4.74,
+      "text": "aren’t named, you will know that all the people receiving the same amount of money"
+    },
+    {
+      "start": 301.03,
+      "duration": 2.62,
+      "text": "are siblings."
+    },
+    {
+      "start": 303.65,
+      "duration": 4.94,
+      "text": "Settlements can also help when the recipient of one of the decedent’s bequests passed"
+    },
+    {
+      "start": 308.59,
+      "duration": 1.0,
+      "text": "away."
+    },
+    {
+      "start": 309.59,
+      "duration": 5.069,
+      "text": "The settlement will list out the bequest and then name all the people who received it—that"
+    },
+    {
+      "start": 314.659,
+      "duration": 1.911,
+      "text": "will be heirs of the recipient."
+    },
+    {
+      "start": 316.57,
+      "duration": 5.83,
+      "text": "I had a case where this was the only way to prove lineage as there were no baptismal records,"
+    },
+    {
+      "start": 322.4,
+      "duration": 5.38,
+      "text": "and both parents, Jacob Slough and Elizabeth Morey Slough, died without leaving any trace"
+    },
+    {
+      "start": 327.78,
+      "duration": 1.289,
+      "text": "in probate records."
+    },
+    {
+      "start": 329.069,
+      "duration": 6.801,
+      "text": "But Elizabeth’s father’s estate settlement named her and listed all of their children"
+    },
+    {
+      "start": 335.87,
+      "duration": 2.89,
+      "text": "together, because Elizabeth had already passed away."
+    },
+    {
+      "start": 338.76,
+      "duration": 4.89,
+      "text": "More important, the sum of the share of the estate given to her children equaled that"
+    },
+    {
+      "start": 343.65,
+      "duration": 6.67,
+      "text": "given to Elizabeth’s siblings, proving that they were grandchildren of Elizabeth's father."
+    },
+    {
+      "start": 350.32,
+      "duration": 4.66,
+      "text": "Thanks for watching my video. If you have any feedback, please leave it in the comments."
+    }
+  ],
+  "full_text": "Probate documents are one of the best primary source documents, but they’re also one of the most complicated, partly because of the dizzying array of different document types, such as: 1) Wills. 2) Bonds, letters of administration, letters testamentary, and other administrativa. 3) Inventories. 4) Probate proceedings. 5) Settlement. 6) Guardianship. I’m Mike O’Neill, and I’m going to give you an overview of different probate documents in five minutes. If you want to dig deeper, I recommend spending some time at “Bob’s Genealogy Cabinet” at genfiles.com. In this video, I’m going to focus on testate proceedings where a person made out a will. I’ll cover guardianship and intestacy—when there’s no will—separately. Testate probate proceedings are the most straightforward. At a minimum, you will have a last will and testament which documents how a decedent wants his (or her) property to be distributed. Wills are fairly boilerplate—you’ll see similar language in all of them, and there are a couple conventions which are incredibly helpful for genealogy: 1) First, listing children in birth order. It’s not used all the time, but when you have no other indicators of age, assume the kids are listed by age. It can be a really useful way to narrow down searches. 2) Second, is the clarifying text listing sons-in-law, e.g. “Catherine, who is intermarried with Henry Roth.” You may also encounter letters testamentary, bonds and an inventory. These are just administrativa, and the only genealogical value is that the people named tend to be family, friends, associates and neighbors of the deceased. Sometimes you’ll get a relationship specified for a single person, but that’s about it. Letters testamentary state that a given individual is the estate’s executor, and can transact on behalf of the estate until it is settled. Getting this letter isn’t always necessary: in some locales, if an executor is named in a will, she has the legal authority to act on behalf of the estate. She doesn’t even need to prove the will in court to get started. Bonds are a financial guarantee that the executor won’t embezzle from the estate. If a court later found the executor guilty of financial malfeasance, the executor and another person would be held financially liable for an amount that could be higher than the estimated value of the estate, depending on the extent of the malfeasance. Inventories are the output of an estate sale, and can come in two parts: an estimate of the value of personal items, and the actual bill of sale. These can be interesting in learning about the decedent’s possessions. Now, the bill of sale will include family members making purchases, but they probably won’t be identified as such. This can be a lead for figuring out who a decedent’s daughters married. Sometimes, the execution of a will can go sideways, and you’ll find a record of this in probate proceedings. Probate issues might be heard in the same court where a will was proved, but it could be heard elsewhere. For example, if the decedent’s spouse was pregnant when the decedent died, state law might render the will invalid. Or the terms of the will might be impossible to meet, and the decedent’s family may have to sue the executor, who was probably a sibling or spouse. Even if the executor was in agreement, our adversarial court system means there must be an appellant and a respondent. I found a case where a wife had to sue her executor husband over the disposition of her father’s estate. The executor, of course, testified in court that he was in complete agreement with his wife, but she still had to sue him. The actual court handling probate proceedings will vary state to state, and that can make it difficult to find. I’ll cover hints for this in another video. The final document type you may encounter is an estate settlement. In my experience, this is the rarest type of document to find, and is typically part of probate proceedings. But it is worth calling out because of its potential high genealogical value. If the will explicitly lists out all familial relationships, the settlement won’t matter much. If the decedent didn’t map out familial relationships, perhaps by saying “I leave my entire estate to my children, share and share alike,” a settlement is gold. “Share and share alike” means that each child gets an equal share, so even if relationships aren’t named, you will know that all the people receiving the same amount of money are siblings. Settlements can also help when the recipient of one of the decedent’s bequests passed away. The settlement will list out the bequest and then name all the people who received it—that will be heirs of the recipient. I had a case where this was the only way to prove lineage as there were no baptismal records, and both parents, Jacob Slough and Elizabeth Morey Slough, died without leaving any trace in probate records. But Elizabeth’s father’s estate settlement named her and listed all of their children together, because Elizabeth had already passed away. More important, the sum of the share of the estate given to her children equaled that given to Elizabeth’s siblings, proving that they were grandchildren of Elizabeth's father. Thanks for watching my video. If you have any feedback, please leave it in the comments.",
+  "attempts": [
+    {
+      "client": "IOS",
+      "playability": {
+        "status": "OK",
+        "playableInEmbed": true,
+        "offlineability": {
+          "buttonRenderer": {
+            "navigationEndpoint": {
+              "clickTrackingParams": "CBEQ6ewBIhMIio7ciuzblwMV3ExMCB0txADQygEEDyC3fA==",
+              "ypcGetOfflineUpsellEndpoint": {
+                "params": "CiXqqN25AR8KC05Zel8tWmtKYkJFShAwZ2NKQ1NRRkptUC1qYXJCIgtOWXpfLVprSmJCRSoVCAkYAVIPCgtOWXpfLVprSmJCRSAB"
+              }
+            },
+            "trackingParams": "CBEQ6ewBIhMIio7ciuzblwMV3ExMCB0txADQ"
+          }
+        },
+        "pictureInPicture": {
+          "pictureInPictureRenderer": {
+            "playableInPip": true,
+            "offByDefault": false,
+            "shouldResumeOnHead": false
+          }
+        },
+        "miniplayer": {
+          "miniplayerRenderer": {
+            "playbackMode": "PLAYBACK_MODE_ALLOW"
+          }
+        },
+        "contextParams": "Q0FFU0FnZ0M="
+      },
+      "outcome": "ok"
+    }
+  ],
+  "fetched_at": "2026-10-28T04:11:20.305565+00:00",
+  "client": "IOS",
+  "json_path": "transcripts/042_NYz_-ZkJbBE.json",
+  "text_path": "transcripts/042_NYz_-ZkJbBE.txt"
+}

@@ -1,0 +1,1690 @@
+{
+  "index": 138,
+  "url": "https://www.youtube.com/watch?v=whDzDrFNADQ",
+  "video_id": "whDzDrFNADQ",
+  "status": "ok",
+  "metadata": {
+    "title": "USDA FSA Resources for Heirs: Join FSA as we talk with the Experts (Episode 1-Full Version)",
+    "author": "FarmersGov",
+    "channelId": "UCBlm1cdj1ELGjanH0Ci0zDQ",
+    "lengthSeconds": "1429",
+    "viewCount": "596",
+    "shortDescription": "Check out this video series featuring USDA FSA staff speaking with experts on the topic of heirs’ property. These experts answer and address many of the common heirs’ property questions and concerns asked by heirs, as well as provide some best practices for when heirs are preparing to work with the resources provided through FSA.\n\nPrior to the 2018 Farm Bill owners of heirs property could not qualify for USDA programs. However, thanks to the new provisions provided in the 2018 Farm Bill, heirs' property owners with farming and ranching operations can now utilize available resources provided by USDA FSA to secure a farm number and access USDA programs."
+  },
+  "caption_tracks": [
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=whDzDrFNADQ&ei=93XhavrVBcXysfIPpov9mAc&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185895&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=F0FE4165E49326E8A61A4BE2AA393AFACDBB3183.36E8CB03D57C68255E0C87024E35EFDFA61DD61C&key=yt8&kind=asr&lang=en",
+      "name": {
+        "runs": [
+          {
+            "text": "English (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.en",
+      "languageCode": "en",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=whDzDrFNADQ&ei=93XhavrVBcXysfIPpov9mAc&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185895&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=F0FE4165E49326E8A61A4BE2AA393AFACDBB3183.36E8CB03D57C68255E0C87024E35EFDFA61DD61C&key=yt8&lang=en-US",
+      "name": {
+        "runs": [
+          {
+            "text": "English (United States)"
+          }
+        ]
+      },
+      "vssId": ".en-US",
+      "languageCode": "en-US",
+      "isTranslatable": true,
+      "trackName": ""
+    }
+  ],
+  "selected_track": {
+    "baseUrl": "https://www.youtube.com/api/timedtext?v=whDzDrFNADQ&ei=93XhavrVBcXysfIPpov9mAc&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185895&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=F0FE4165E49326E8A61A4BE2AA393AFACDBB3183.36E8CB03D57C68255E0C87024E35EFDFA61DD61C&key=yt8&lang=en-US",
+    "name": {
+      "runs": [
+        {
+          "text": "English (United States)"
+        }
+      ]
+    },
+    "vssId": ".en-US",
+    "languageCode": "en-US",
+    "isTranslatable": true,
+    "trackName": ""
+  },
+  "segments": [
+    {
+      "start": 5.299,
+      "duration": 4.311,
+      "text": "Thank you for joining us to watch the resources that are being made available for heirs in"
+    },
+    {
+      "start": 9.61,
+      "duration": 1.43,
+      "text": "a series of."
+    },
+    {
+      "start": 11.04,
+      "duration": 5.53,
+      "text": "Heirs resources, that is rolling out with the heirs property relending program my name"
+    },
+    {
+      "start": 16.57,
+      "duration": 4.31,
+      "text": "is Kanika Davis, and I am a national outreach specialist with the United States Department"
+    },
+    {
+      "start": 20.88,
+      "duration": 3.58,
+      "text": "of Agriculture farm service agency I."
+    },
+    {
+      "start": 24.46,
+      "duration": 2.26,
+      "text": "I have with me today."
+    },
+    {
+      "start": 26.72,
+      "duration": 5.64,
+      "text": "Sarah Campbell and Rusty Rumley who is an attorney with the national Ag law Center and"
+    },
+    {
+      "start": 32.36,
+      "duration": 4.21,
+      "text": "they will both introduce their selves."
+    },
+    {
+      "start": 36.57,
+      "duration": 1.649,
+      "text": "Hi everyone I’m Sarah Campbell."
+    },
+    {
+      "start": 38.219,
+      "duration": 4.161,
+      "text": "I’m USDA’s beginning farmer and rancher coordinator and I work on beginning farmer"
+    },
+    {
+      "start": 42.38,
+      "duration": 5.21,
+      "text": "and rancher issues across the department, including land access."
+    },
+    {
+      "start": 47.59,
+      "duration": 5.55,
+      "text": "Here, working on some of the heirs property relief efforts and I’m looking forward to"
+    },
+    {
+      "start": 53.14,
+      "duration": 2.86,
+      "text": "having this conversation with Rusty today."
+    },
+    {
+      "start": 56.0,
+      "duration": 1.31,
+      "text": "Well, thank you."
+    },
+    {
+      "start": 57.31,
+      "duration": 4.15,
+      "text": "My name is Rusty Rumley I am a senior staff attorney here at the national agricultural"
+    },
+    {
+      "start": 61.46,
+      "duration": 1.0,
+      "text": "law Center."
+    },
+    {
+      "start": 62.46,
+      "duration": 6.56,
+      "text": "And I do a lot of work on issues regarding land use and estate planning so that's kind"
+    },
+    {
+      "start": 69.02,
+      "duration": 1.0,
+      "text": "of my bailiwick."
+    },
+    {
+      "start": 70.02,
+      "duration": 1.97,
+      "text": "Thank you both so much."
+    },
+    {
+      "start": 71.99,
+      "duration": 7.09,
+      "text": "As we dive into these resources today I just kind of want to explain like why we are providing"
+    },
+    {
+      "start": 79.08,
+      "duration": 1.0,
+      "text": "this."
+    },
+    {
+      "start": 80.08,
+      "duration": 6.01,
+      "text": "FSA has been in the process of rolling out resources for heirs, since the 2018 farm bill."
+    },
+    {
+      "start": 86.09,
+      "duration": 2.13,
+      "text": "a part of those resources are."
+    },
+    {
+      "start": 88.22,
+      "duration": 5.31,
+      "text": "The language and legislation that was approved for the county offices to work with heirs"
+    },
+    {
+      "start": 93.53,
+      "duration": 3.1,
+      "text": "that come in that are seeking to receive a farm number."
+    },
+    {
+      "start": 96.63,
+      "duration": 4.37,
+      "text": "We also have the avenue for heirs to work with the heir’s property relending program"
+    },
+    {
+      "start": 101.0,
+      "duration": 4.83,
+      "text": "where they can work with those announced re-lenders that are there and available."
+    },
+    {
+      "start": 105.83,
+      "duration": 6.48,
+      "text": "At this time, we have three, but the announcement is a rolling announcement, so you can feel"
+    },
+    {
+      "start": 112.31,
+      "duration": 2.92,
+      "text": "free to check back on the farmers.gov."
+    },
+    {
+      "start": 115.23,
+      "duration": 3.55,
+      "text": "website to see any new relenders that are being announced."
+    },
+    {
+      "start": 118.78,
+      "duration": 5.14,
+      "text": "we also have the certified mediation program where heirs can work with certified mediators"
+    },
+    {
+      "start": 123.92,
+      "duration": 6.22,
+      "text": "that have partnered with the USDA to provide those services within those States and on"
+    },
+    {
+      "start": 130.14,
+      "duration": 4.39,
+      "text": "the farmers.gov/heirs website, you will see."
+    },
+    {
+      "start": 134.53,
+      "duration": 5.89,
+      "text": "A link to that certified mediation program fact sheet where you will be able to identify"
+    },
+    {
+      "start": 140.42,
+      "duration": 5.8,
+      "text": "what certified mediators and certified mediation services are available within your state."
+    },
+    {
+      "start": 146.22,
+      "duration": 5.2,
+      "text": "Today we have with us Rusty Raumley and we just want to thank him again for taking the."
+    },
+    {
+      "start": 151.42,
+      "duration": 4.84,
+      "text": "opportunity to sit down with the USDA farm service agency, just to provide some guidance"
+    },
+    {
+      "start": 156.26,
+      "duration": 2.15,
+      "text": "as we're looking for this."
+    },
+    {
+      "start": 158.41,
+      "duration": 4.73,
+      "text": "heirs property program just to roll out, not only the heirs property relending program"
+    },
+    {
+      "start": 163.14,
+      "duration": 1.06,
+      "text": "but also."
+    },
+    {
+      "start": 164.2,
+      "duration": 4.61,
+      "text": "The different aspects as we talked about the county offices as well, a certified mediation"
+    },
+    {
+      "start": 168.81,
+      "duration": 4.31,
+      "text": "program, we know that a lot of heirs have questions like where to start you know what"
+    },
+    {
+      "start": 173.12,
+      "duration": 1.0,
+      "text": "are some things that."
+    },
+    {
+      "start": 174.12,
+      "duration": 3.59,
+      "text": "They need to do when they first have found out that they have heirs property."
+    },
+    {
+      "start": 177.71,
+      "duration": 6.3,
+      "text": "And things of those nature FSA has partnered with different organizations, as well as heirs"
+    },
+    {
+      "start": 184.01,
+      "duration": 2.1,
+      "text": "expert in the heirs property field."
+    },
+    {
+      "start": 186.11,
+      "duration": 2.9,
+      "text": "And as a part of that Rusty is going to"
+    },
+    {
+      "start": 189.01,
+      "duration": 5.38,
+      "text": "provide information today that we would think it's very helpful for heirs to."
+    },
+    {
+      "start": 194.39,
+      "duration": 4.679,
+      "text": "know and think about as they look to resolve some of their heirs property issues, so at"
+    },
+    {
+      "start": 199.069,
+      "duration": 4.061,
+      "text": "this time we'll get this conversation kicked off and started, so one of the first things"
+    },
+    {
+      "start": 203.13,
+      "duration": 4.5,
+      "text": "that we wanted to ask Rusty as we were just looking into some advice and information that"
+    },
+    {
+      "start": 207.63,
+      "duration": 4.89,
+      "text": "heirs could be provided, is for individuals that have been here in your property what"
+    },
+    {
+      "start": 212.52,
+      "duration": 5.67,
+      "text": "are some point is that you will provide them at once they have realized that they don't"
+    },
+    {
+      "start": 218.19,
+      "duration": 3.89,
+      "text": "have this clear title and their land is truly heirs property."
+    },
+    {
+      "start": 222.08,
+      "duration": 2.04,
+      "text": "That's a really good question."
+    },
+    {
+      "start": 224.12,
+      "duration": 4.69,
+      "text": "So, first of all, let me start with saying at the ag law Center we're not allowed to"
+    },
+    {
+      "start": 228.81,
+      "duration": 3.79,
+      "text": "provide legal advice, but we can provide legal information."
+    },
+    {
+      "start": 232.6,
+      "duration": 4.8,
+      "text": "So these are more of like tips and things to be thinking about ahead of time, but at"
+    },
+    {
+      "start": 237.4,
+      "duration": 5.589,
+      "text": "some point you're probably going to need local council to help with these issues, depending"
+    },
+    {
+      "start": 242.989,
+      "duration": 8.341,
+      "text": "upon how complicated the matter is so for people that are just getting started."
+    },
+    {
+      "start": 251.33,
+      "duration": 6.67,
+      "text": "One thing that I think helps is really helpful to find out."
+    },
+    {
+      "start": 258.0,
+      "duration": 7.219,
+      "text": "What are the baseline facts, so how much land, do you own or how much land is that issue"
+    },
+    {
+      "start": 265.219,
+      "duration": 4.771,
+      "text": "property lines can move over time."
+    },
+    {
+      "start": 269.99,
+      "duration": 5.38,
+      "text": "People can think they own more or less than what they really do and that's even for property"
+    },
+    {
+      "start": 275.37,
+      "duration": 2.49,
+      "text": "that's not heir property."
+    },
+    {
+      "start": 277.86,
+      "duration": 5.29,
+      "text": "So finding out, you know just how much land is at issue is going to be important."
+    },
+    {
+      "start": 283.15,
+      "duration": 5.69,
+      "text": "The second thing that I think is really important is to go back and see who's the last person"
+    },
+    {
+      "start": 288.84,
+      "duration": 5.389,
+      "text": "that had clear title, it might be a parent or grandparent or Great grandparents, depending"
+    },
+    {
+      "start": 294.229,
+      "duration": 3.21,
+      "text": "on how far it goes back."
+    },
+    {
+      "start": 297.439,
+      "duration": 6.91,
+      "text": "And then start doing your research on finding out who those potential heirs are who are"
+    },
+    {
+      "start": 304.349,
+      "duration": 5.841,
+      "text": "all the potential co-owners and I really can't stress enough it's important that you go in"
+    },
+    {
+      "start": 310.19,
+      "duration": 2.539,
+      "text": "there and."
+    },
+    {
+      "start": 312.729,
+      "duration": 5.59,
+      "text": "start from scratch don't be making assumptions on who people are because it's very common"
+    },
+    {
+      "start": 318.319,
+      "duration": 4.641,
+      "text": "and families to refer to someone as a cousin or an uncle."
+    },
+    {
+      "start": 322.96,
+      "duration": 5.039,
+      "text": "And they may not be blood relation, they may just be close enough to you, that is just"
+    },
+    {
+      "start": 327.999,
+      "duration": 3.76,
+      "text": "you know the family calls them that so."
+    },
+    {
+      "start": 331.759,
+      "duration": 4.0,
+      "text": "It's really important to go back there and actually look at the records and see is this"
+    },
+    {
+      "start": 335.759,
+      "duration": 3.63,
+      "text": "person actually a blood relative because they may not be."
+    },
+    {
+      "start": 339.389,
+      "duration": 4.17,
+      "text": "and vice versa, there could be someone, that is a blood relative it just wasn't talked"
+    },
+    {
+      "start": 343.559,
+      "duration": 2.73,
+      "text": "about very much maybe they died a long time ago."
+    },
+    {
+      "start": 346.289,
+      "duration": 3.981,
+      "text": "Maybe there's some other reason they're not talked about, but it is really important to"
+    },
+    {
+      "start": 350.27,
+      "duration": 4.569,
+      "text": "go out there and establish, you know how much land is at issue and then who all are the"
+    },
+    {
+      "start": 354.839,
+      "duration": 3.681,
+      "text": "potential heirs at law."
+    },
+    {
+      "start": 358.52,
+      "duration": 5.669,
+      "text": "Thanks Rusty and I have a follow up question, you mentioned that you all kind of could just"
+    },
+    {
+      "start": 364.189,
+      "duration": 4.09,
+      "text": "share information and that you know somebody really probably doesn't need to be working"
+    },
+    {
+      "start": 368.279,
+      "duration": 3.66,
+      "text": "will eventually need to be working with an attorney I’m assuming somebody whose barred"
+    },
+    {
+      "start": 371.939,
+      "duration": 1.69,
+      "text": "in their state but."
+    },
+    {
+      "start": 373.629,
+      "duration": 4.53,
+      "text": "When an heir gets to that stage, and when someone is looking to work with an attorney"
+    },
+    {
+      "start": 378.159,
+      "duration": 7.301,
+      "text": "what guidance, would you share with them on how to select that attorney and vet them."
+    },
+    {
+      "start": 385.46,
+      "duration": 5.28,
+      "text": "So that's always tricky so one of the issues that we run into with heir property is."
+    },
+    {
+      "start": 390.74,
+      "duration": 4.47,
+      "text": "there's No two pieces of land in the entire world that are identical."
+    },
+    {
+      "start": 395.21,
+      "duration": 4.78,
+      "text": "And there are no two families in the entire world that are identical so you're pairing"
+    },
+    {
+      "start": 399.99,
+      "duration": 5.78,
+      "text": "up to very unique things so you always end up with a unique problem it's never going"
+    },
+    {
+      "start": 405.77,
+      "duration": 2.97,
+      "text": "to look the same one situation to the next."
+    },
+    {
+      "start": 408.74,
+      "duration": 4.81,
+      "text": "So that's usually why it's important to have an attorney involved because there's not really"
+    },
+    {
+      "start": 413.55,
+      "duration": 4.679,
+      "text": "a cookie cutter way of doing this."
+    },
+    {
+      "start": 418.229,
+      "duration": 8.041,
+      "text": "Who does this is going to vary widely depending upon what state you're in some states do have"
+    },
+    {
+      "start": 426.27,
+      "duration": 7.359,
+      "text": "resources that are available to help owners of heir property."
+    },
+    {
+      "start": 433.629,
+      "duration": 5.38,
+      "text": "some of it with some of the legal work other states, the options may be more limited."
+    },
+    {
+      "start": 439.009,
+      "duration": 5.75,
+      "text": "Generally, though you're going to be looking for an attorney that's had a little bit of"
+    },
+    {
+      "start": 444.759,
+      "duration": 7.31,
+      "text": "experience with land works like title work things like that, and with estate planning"
+    },
+    {
+      "start": 452.069,
+      "duration": 5.951,
+      "text": "and a lot of your general practice attorneys are going to have some experience with that."
+    },
+    {
+      "start": 458.02,
+      "duration": 6.459,
+      "text": "Another, especially if it's farmland another good option would be usually there's a couple"
+    },
+    {
+      "start": 464.479,
+      "duration": 2.361,
+      "text": "of lawyers, at least in every county."
+    },
+    {
+      "start": 466.84,
+      "duration": 6.809,
+      "text": "That works with the local farmers, whether it's buying and selling land or with USDA"
+    },
+    {
+      "start": 473.649,
+      "duration": 2.881,
+      "text": "programs or something."
+    },
+    {
+      "start": 476.53,
+      "duration": 4.819,
+      "text": "Going and talking to one of those attorneys is another good option, and if you can't find"
+    },
+    {
+      "start": 481.349,
+      "duration": 4.451,
+      "text": "one of those attorneys I mean most people can identify the coffee shop or the farmers"
+    },
+    {
+      "start": 485.8,
+      "duration": 1.549,
+      "text": "hanging out in the morning."
+    },
+    {
+      "start": 487.349,
+      "duration": 4.31,
+      "text": "go down there by the farmers a cup of coffee and kind of pull the crowd on who they use,"
+    },
+    {
+      "start": 491.659,
+      "duration": 3.46,
+      "text": "I mean you might be able to get a couple of names that way."
+    },
+    {
+      "start": 495.119,
+      "duration": 4.881,
+      "text": "But it's generally going to be a little bit cheaper to get a local attorney just because"
+    },
+    {
+      "start": 500.0,
+      "duration": 3.849,
+      "text": "they're not going to be someone that's having to travel back and forth, to the county."
+    },
+    {
+      "start": 503.849,
+      "duration": 5.141,
+      "text": "Because most of this stuff is going to be done in the county where the heir property"
+    },
+    {
+      "start": 508.99,
+      "duration": 5.52,
+      "text": "is located at so having that that local attorney will help."
+    },
+    {
+      "start": 514.51,
+      "duration": 3.36,
+      "text": "Sometimes you may have to go farther out sometimes there may be attorneys that are willing to"
+    },
+    {
+      "start": 517.87,
+      "duration": 6.099,
+      "text": "help that are located farther out but that's going to be part of that initial legwork that"
+    },
+    {
+      "start": 523.969,
+      "duration": 5.171,
+      "text": "the families have to do to start the process to resolve this issue."
+    },
+    {
+      "start": 529.14,
+      "duration": 8.319,
+      "text": "Thanks so much so, as we are kind of just thinking some more things through like what"
+    },
+    {
+      "start": 537.459,
+      "duration": 5.63,
+      "text": "would be some helpful things the heirs to do to make the process for resolving those"
+    },
+    {
+      "start": 543.089,
+      "duration": 4.48,
+      "text": "heirs issue a little smoother I know you talked about identifying who might actually be a"
+    },
+    {
+      "start": 547.569,
+      "duration": 1.101,
+      "text": "cousin versus who."
+    },
+    {
+      "start": 548.67,
+      "duration": 1.46,
+      "text": "is not by blood."
+    },
+    {
+      "start": 550.13,
+      "duration": 4.62,
+      "text": "Are there any other tips within that realm that you might suggest."
+    },
+    {
+      "start": 554.75,
+      "duration": 4.339,
+      "text": "and honestly that's probably one of the most beneficial things that the."
+    },
+    {
+      "start": 559.089,
+      "duration": 3.56,
+      "text": "The heirs can do is try to figure out, you know who's who."
+    },
+    {
+      "start": 562.649,
+      "duration": 5.581,
+      "text": "I think, depending upon how complicated the situation is this could take a little bit"
+    },
+    {
+      "start": 568.23,
+      "duration": 5.24,
+      "text": "of time, you know if the heir property was created when someone's parents passed away"
+    },
+    {
+      "start": 573.47,
+      "duration": 1.799,
+      "text": "and there's you know."
+    },
+    {
+      "start": 575.269,
+      "duration": 5.521,
+      "text": "Three siblings it doesn't take a whole lot of legwork to get that established."
+    },
+    {
+      "start": 580.79,
+      "duration": 4.029,
+      "text": "But I’ve seen heir property situations where it was the great, great grandparents that"
+    },
+    {
+      "start": 584.819,
+      "duration": 2.701,
+      "text": "that passed away and they were the last legal owners."
+    },
+    {
+      "start": 587.52,
+      "duration": 6.54,
+      "text": "So now you're talking about 50 to 75 potential co-owners, so at that point it's a lot of"
+    },
+    {
+      "start": 594.06,
+      "duration": 2.899,
+      "text": "legwork to go out there and determine."
+    },
+    {
+      "start": 596.959,
+      "duration": 5.62,
+      "text": "Who all are the legal heirs and you know trace it through each of those generations so you"
+    },
+    {
+      "start": 602.579,
+      "duration": 4.45,
+      "text": "know, the amount of work that someone may have to do is going to vary pretty wildly"
+    },
+    {
+      "start": 607.029,
+      "duration": 2.24,
+      "text": "depending upon."
+    },
+    {
+      "start": 609.269,
+      "duration": 4.652,
+      "text": "You know just how many generations are in there, how many kids were born, how many of"
+    },
+    {
+      "start": 613.921,
+      "duration": 4.929,
+      "text": "those kids had their own kids or they died without issue some of that stuff's going to"
+    },
+    {
+      "start": 618.85,
+      "duration": 2.179,
+      "text": "be pretty tricky to do."
+    },
+    {
+      "start": 621.029,
+      "duration": 5.691,
+      "text": "finding out, you know where it was a kid adopted where they stepchild, you know if they were"
+    },
+    {
+      "start": 626.72,
+      "duration": 5.5,
+      "text": "a stepchild where the stepchild of the of the descendant where the land went through"
+    },
+    {
+      "start": 632.22,
+      "duration": 5.88,
+      "text": "like there's just there's a lot of potential issues, so creating that family tree."
+    },
+    {
+      "start": 638.1,
+      "duration": 5.529,
+      "text": "Is a is a is a big help for whatever attorneys going to be trying to address this issue."
+    },
+    {
+      "start": 643.629,
+      "duration": 5.811,
+      "text": "I know you just mentioned about making sure you have a family tree, because that will"
+    },
+    {
+      "start": 649.44,
+      "duration": 6.79,
+      "text": "help when thinking about going the route of hiring an attorney how beneficial Is that"
+    },
+    {
+      "start": 656.23,
+      "duration": 6.89,
+      "text": "tree, because I know you go in and you tell someone I think I might only have I’ve heirs"
+    },
+    {
+      "start": 663.12,
+      "duration": 3.75,
+      "text": "and come to find out it’s like ten of you all."
+    },
+    {
+      "start": 666.87,
+      "duration": 5.05,
+      "text": "Well they're going to have to try to find they're going to do a little bit of due diligence"
+    },
+    {
+      "start": 671.92,
+      "duration": 1.719,
+      "text": "themselves hopefully."
+    },
+    {
+      "start": 673.639,
+      "duration": 8.021,
+      "text": "Like I’ve said it's not always easy if it's only been heir property for one generation"
+    },
+    {
+      "start": 681.66,
+      "duration": 5.76,
+      "text": "it's typically not too hard, I mean most people can list those off the top of their head."
+    },
+    {
+      "start": 687.42,
+      "duration": 4.93,
+      "text": "They may want to see birth certificates or some other kind of documentation to prove"
+    },
+    {
+      "start": 692.35,
+      "duration": 1.0,
+      "text": "that."
+    },
+    {
+      "start": 693.35,
+      "duration": 5.88,
+      "text": "But you know, things can get a lot more complicated if it's been heir property for two or three"
+    },
+    {
+      "start": 699.23,
+      "duration": 1.0,
+      "text": "generations."
+    },
+    {
+      "start": 700.23,
+      "duration": 4.93,
+      "text": "So I mean really it's going to depend upon you know how long has it been heir property"
+    },
+    {
+      "start": 705.16,
+      "duration": 3.969,
+      "text": "how many potential heirs are at stake."
+    },
+    {
+      "start": 709.129,
+      "duration": 6.441,
+      "text": "You know it's if it's just two or three it's not terribly difficult, especially if people,"
+    },
+    {
+      "start": 715.57,
+      "duration": 4.449,
+      "text": "you know that the all the heirs agree, but you know as you add more people and you start"
+    },
+    {
+      "start": 720.019,
+      "duration": 4.49,
+      "text": "getting people disagreeing on kind of what the ultimate outcome should be that's when"
+    },
+    {
+      "start": 724.509,
+      "duration": 2.31,
+      "text": "things get more complicated."
+    },
+    {
+      "start": 726.819,
+      "duration": 6.88,
+      "text": "yeah Rusty you’ve talked about things a lawyer can do and how they could do some of"
+    },
+    {
+      "start": 733.699,
+      "duration": 1.75,
+      "text": "that background, research and."
+    },
+    {
+      "start": 735.449,
+      "duration": 4.741,
+      "text": "Potentially assists with identifying heirs that maybe they missed, I guess, to help kind"
+    },
+    {
+      "start": 740.19,
+      "duration": 5.35,
+      "text": "of people manage their expectations what kinds of things can lawyers definitely help with"
+    },
+    {
+      "start": 745.54,
+      "duration": 6.94,
+      "text": "and then what are, maybe some additional responsibilities that heirs might have that a lawyer can’t."
+    },
+    {
+      "start": 752.48,
+      "duration": 1.96,
+      "text": "So."
+    },
+    {
+      "start": 754.44,
+      "duration": 5.269,
+      "text": "Finding those heirs is probably going to be easier for the actual heirs themselves, I"
+    },
+    {
+      "start": 759.709,
+      "duration": 4.711,
+      "text": "mean they're the ones that are going to have access to those types of records."
+    },
+    {
+      "start": 764.42,
+      "duration": 4.55,
+      "text": "Sometimes it could be like old family bibles for like births and deaths were recorded at"
+    },
+    {
+      "start": 768.97,
+      "duration": 1.79,
+      "text": "the beginning."
+    },
+    {
+      "start": 770.76,
+      "duration": 4.12,
+      "text": "Sometimes it's going to be other paperwork family photos that's not things in a lawyer"
+    },
+    {
+      "start": 774.88,
+      "duration": 3.22,
+      "text": "can typically find that at the courthouse."
+    },
+    {
+      "start": 778.1,
+      "duration": 4.96,
+      "text": "So that kind of stuffs going to be important for the family members, now there are ways"
+    },
+    {
+      "start": 783.06,
+      "duration": 1.449,
+      "text": "that you."
+    },
+    {
+      "start": 784.509,
+      "duration": 4.461,
+      "text": "different States have different ways to deal with heirs that no one may know of so generally"
+    },
+    {
+      "start": 788.97,
+      "duration": 2.06,
+      "text": "there's like a posting requirement."
+    },
+    {
+      "start": 791.03,
+      "duration": 4.669,
+      "text": "So for states that have adopted the uniform partition of heirs property act, you can post"
+    },
+    {
+      "start": 795.699,
+      "duration": 4.99,
+      "text": "notice on the actual property that you're starting this process to resolve heirship"
+    },
+    {
+      "start": 800.689,
+      "duration": 1.0,
+      "text": "and."
+    },
+    {
+      "start": 801.689,
+      "duration": 3.121,
+      "text": "People that think they should have I think they have a claim should you know get with"
+    },
+    {
+      "start": 804.81,
+      "duration": 1.469,
+      "text": "this person."
+    },
+    {
+      "start": 806.279,
+      "duration": 5.781,
+      "text": "So it really varies on the state, but especially that family research that's generally going"
+    },
+    {
+      "start": 812.06,
+      "duration": 4.55,
+      "text": "to be better for the heirs because they're the ones that are going to have those types"
+    },
+    {
+      "start": 816.61,
+      "duration": 2.99,
+      "text": "of resources and the lawyers not."
+    },
+    {
+      "start": 819.6,
+      "duration": 5.049,
+      "text": "Different attorneys are going to have different things, especially tracking down some of those"
+    },
+    {
+      "start": 824.649,
+      "duration": 4.411,
+      "text": "heirs that can take a long time."
+    },
+    {
+      "start": 829.06,
+      "duration": 5.529,
+      "text": "attorneys are going to be probably better equipped to handle things like that transferring"
+    },
+    {
+      "start": 834.589,
+      "duration": 6.18,
+      "text": "title of the property if it's a uniform partition of heir property act state taking it through"
+    },
+    {
+      "start": 840.769,
+      "duration": 2.51,
+      "text": "that process."
+    },
+    {
+      "start": 843.279,
+      "duration": 4.781,
+      "text": "If the families are wanting to create an LLC at the end of the process to kind of put the"
+    },
+    {
+      "start": 848.06,
+      "duration": 5.3,
+      "text": "ownership of that property into an LLC to prevent it from becoming heir property again"
+    },
+    {
+      "start": 853.36,
+      "duration": 4.159,
+      "text": "the attorneys going to be beneficial there."
+    },
+    {
+      "start": 857.519,
+      "duration": 4.251,
+      "text": "The lawyer is going to be more of doing the transactional type work."
+    },
+    {
+      "start": 861.77,
+      "duration": 6.439,
+      "text": "When it comes to like research for the family and things like that you know it's the family's"
+    },
+    {
+      "start": 868.209,
+      "duration": 4.591,
+      "text": "going to have the best source of records for that that type of issue."
+    },
+    {
+      "start": 872.8,
+      "duration": 2.141,
+      "text": "So the uniform petition of heir."
+    },
+    {
+      "start": 874.941,
+      "duration": 1.299,
+      "text": "Property act."
+    },
+    {
+      "start": 876.24,
+      "duration": 6.709,
+      "text": "Is a model law that I think about half the States now have adopted."
+    },
+    {
+      "start": 882.949,
+      "duration": 7.63,
+      "text": "So what it basically does is it creates a framework for trying to resolve heir property"
+    },
+    {
+      "start": 890.579,
+      "duration": 6.281,
+      "text": "disputes so typically what would happen if you don't have uniform partition of heir property"
+    },
+    {
+      "start": 896.86,
+      "duration": 8.01,
+      "text": "Act adopted in your state is that everyone that's a owner of the heir property is."
+    },
+    {
+      "start": 904.87,
+      "duration": 6.569,
+      "text": "Their tenants in common, which basically means everybody owns an undivided interest of that"
+    },
+    {
+      "start": 911.439,
+      "duration": 1.0,
+      "text": "property."
+    },
+    {
+      "start": 912.439,
+      "duration": 6.75,
+      "text": "So if you have 100 acres and there's 10 owners you can't just point to the land and say you"
+    },
+    {
+      "start": 919.189,
+      "duration": 5.361,
+      "text": "know person A owns this 10 acres and person B owns this 10 acres."
+    },
+    {
+      "start": 924.55,
+      "duration": 5.18,
+      "text": "Every 10 of them own the hundred acres all together, so they all have the right to access"
+    },
+    {
+      "start": 929.73,
+      "duration": 1.609,
+      "text": "all the land."
+    },
+    {
+      "start": 931.339,
+      "duration": 5.56,
+      "text": "So it makes things confusing and difficult when it comes to things like building houses"
+    },
+    {
+      "start": 936.899,
+      "duration": 9.391,
+      "text": "or or things like that so typically what would happen is if one of those heirs wants to to"
+    },
+    {
+      "start": 946.29,
+      "duration": 5.5,
+      "text": "get out of the situation, they want to sell their interest."
+    },
+    {
+      "start": 951.79,
+      "duration": 7.519,
+      "text": "The traditional approach is that because that land is divided and it's held in tenants in"
+    },
+    {
+      "start": 959.309,
+      "duration": 2.38,
+      "text": "common, the."
+    },
+    {
+      "start": 961.689,
+      "duration": 5.01,
+      "text": "it's really difficult to physically divide up the land, because if you have 100 acres"
+    },
+    {
+      "start": 966.699,
+      "duration": 1.591,
+      "text": "you know."
+    },
+    {
+      "start": 968.29,
+      "duration": 3.549,
+      "text": "Different parts of that hundred acres is going to be worth more than other parts of the hundred"
+    },
+    {
+      "start": 971.839,
+      "duration": 1.0,
+      "text": "acres."
+    },
+    {
+      "start": 972.839,
+      "duration": 3.701,
+      "text": "Some of those going to be road frontage so that's going to be more valuable some of its"
+    },
+    {
+      "start": 976.54,
+      "duration": 4.04,
+      "text": "going to be scrub brush while other parts are going to be cropland, cropland is going"
+    },
+    {
+      "start": 980.58,
+      "duration": 2.54,
+      "text": "to be more valuable than scrub brushes."
+    },
+    {
+      "start": 983.12,
+      "duration": 6.48,
+      "text": "So it's really hard to equitably divide land, so what courts have done in the past as the"
+    },
+    {
+      "start": 989.6,
+      "duration": 4.6,
+      "text": "simple remedy is well why don't we just sell the land."
+    },
+    {
+      "start": 994.2,
+      "duration": 5.84,
+      "text": "And then, if everybody owns 10% of it we gI’ve everybody 10% of the sale price, you know"
+    },
+    {
+      "start": 1000.04,
+      "duration": 6.799,
+      "text": "minus any expenses for selling the land, and that was kind of seen as the fair way to do"
+    },
+    {
+      "start": 1006.839,
+      "duration": 1.0,
+      "text": "it."
+    },
+    {
+      "start": 1007.839,
+      "duration": 4.921,
+      "text": "Now, it also means that the family, lost their land and if the other nine people wanted to"
+    },
+    {
+      "start": 1012.76,
+      "duration": 7.519,
+      "text": "keep the land, their only option was to show up on the sale day and try to buy it themselves."
+    },
+    {
+      "start": 1020.279,
+      "duration": 5.28,
+      "text": "But they really didn't have any advantage that that anyone else didn't have already"
+    },
+    {
+      "start": 1025.559,
+      "duration": 5.691,
+      "text": "so uniform partition of heir property act What it does is it kind of creates more of"
+    },
+    {
+      "start": 1031.25,
+      "duration": 1.23,
+      "text": "a."
+    },
+    {
+      "start": 1032.48,
+      "duration": 6.39,
+      "text": "set of steps to first determine how much is a land worth and then determine which ones"
+    },
+    {
+      "start": 1038.87,
+      "duration": 6.63,
+      "text": "of these heirs want out so going back to that example of the hundred acres with the 10 owners"
+    },
+    {
+      "start": 1045.5,
+      "duration": 5.12,
+      "text": "say two of the owners, they went out, they want their money."
+    },
+    {
+      "start": 1050.62,
+      "duration": 3.82,
+      "text": "The first right would be well let's figure out how much the lands worth how much their"
+    },
+    {
+      "start": 1054.44,
+      "duration": 5.29,
+      "text": "shares worth and then, are there any of the other current owners those other eight that"
+    },
+    {
+      "start": 1059.73,
+      "duration": 1.0,
+      "text": "can buy them out."
+    },
+    {
+      "start": 1060.73,
+      "duration": 7.59,
+      "text": "Or, as really want to buy them out, and if so great, they pay their portion they buy"
+    },
+    {
+      "start": 1068.32,
+      "duration": 4.46,
+      "text": "their shares, but the thing is the land still and tenancy in common."
+    },
+    {
+      "start": 1072.78,
+      "duration": 4.73,
+      "text": "So now, you still have heir property you just have heir property, with eight owners, instead"
+    },
+    {
+      "start": 1077.51,
+      "duration": 1.17,
+      "text": "of 10 owners."
+    },
+    {
+      "start": 1078.68,
+      "duration": 4.01,
+      "text": "So, at that point, you know you've gotten rid of the owners you've kept the land in"
+    },
+    {
+      "start": 1082.69,
+      "duration": 1.49,
+      "text": "the family."
+    },
+    {
+      "start": 1084.18,
+      "duration": 4.15,
+      "text": "But you may not have fix the situation because eventually those eight people are going to"
+    },
+    {
+      "start": 1088.33,
+      "duration": 2.77,
+      "text": "pass away their."
+    },
+    {
+      "start": 1091.1,
+      "duration": 3.72,
+      "text": "heirs their children grandchildren whatever are going to inherit the land and then you"
+    },
+    {
+      "start": 1094.82,
+      "duration": 4.27,
+      "text": "may have to start again so you know it's a it's."
+    },
+    {
+      "start": 1099.09,
+      "duration": 3.49,
+      "text": "Another step that the lawyer can help you with is do you want to put this into some"
+    },
+    {
+      "start": 1102.58,
+      "duration": 4.85,
+      "text": "kind of entity business entity like an LLC or a trust or something like that."
+    },
+    {
+      "start": 1107.43,
+      "duration": 4.42,
+      "text": "To make sure that this problem doesn't pop up again when the next generation of heirs"
+    },
+    {
+      "start": 1111.85,
+      "duration": 4.7,
+      "text": "come in, because every generation that you know removed, they have they may have less"
+    },
+    {
+      "start": 1116.55,
+      "duration": 3.15,
+      "text": "and less of a connection to that property so."
+    },
+    {
+      "start": 1119.7,
+      "duration": 6.31,
+      "text": "So going back so let's say they they can't there's no one that can buy them out."
+    },
+    {
+      "start": 1126.01,
+      "duration": 3.881,
+      "text": "The real ending program supposed to provide money, this is one of the benefits of the"
+    },
+    {
+      "start": 1129.891,
+      "duration": 3.499,
+      "text": "relending program is this would be a place where you could potentially take out a loan"
+    },
+    {
+      "start": 1133.39,
+      "duration": 4.92,
+      "text": "to buy out those the interest of those ones that one out."
+    },
+    {
+      "start": 1138.31,
+      "duration": 5.02,
+      "text": "suppose you can't get the loan for some reason or no one wants to buy him out in the Court"
+    },
+    {
+      "start": 1143.33,
+      "duration": 4.06,
+      "text": "will look at is there really any way we can physically divide the land if there's a way"
+    },
+    {
+      "start": 1147.39,
+      "duration": 4.31,
+      "text": "people can agree to it they'll physically divide up the land at that point it's no longer"
+    },
+    {
+      "start": 1151.7,
+      "duration": 2.56,
+      "text": "heir property."
+    },
+    {
+      "start": 1154.26,
+      "duration": 4.62,
+      "text": "If there's really not a fair way to do it and there's a whole list of fat actors that"
+    },
+    {
+      "start": 1158.88,
+      "duration": 2.84,
+      "text": "they'll consider if there's a fair way to do it."
+    },
+    {
+      "start": 1161.72,
+      "duration": 3.64,
+      "text": "If there's no fair way to do it, and none of the current heirs can buy out the ones"
+    },
+    {
+      "start": 1165.36,
+      "duration": 3.78,
+      "text": "that one out, then it goes it'll be sold."
+    },
+    {
+      "start": 1169.14,
+      "duration": 3.77,
+      "text": "But the Court kind of gets to have a little bit of a say in it they'll try to pick the"
+    },
+    {
+      "start": 1172.91,
+      "duration": 5.33,
+      "text": "the method of sale that's going to bring the most value to the to the."
+    },
+    {
+      "start": 1178.24,
+      "duration": 4.45,
+      "text": "Owners of the property so even the uniform partition of heir property act."
+    },
+    {
+      "start": 1182.69,
+      "duration": 4.19,
+      "text": "it's not a perfect solution for keeping the land in the family, like there's got to be"
+    },
+    {
+      "start": 1186.88,
+      "duration": 2.411,
+      "text": "someone there someone that's heir that can."
+    },
+    {
+      "start": 1189.291,
+      "duration": 4.649,
+      "text": "can buy those interests out whether they've got the money themselves or whether they can"
+    },
+    {
+      "start": 1193.94,
+      "duration": 6.05,
+      "text": "get the loan to purchase it, but you know, if nothing else, works, the very last resort,"
+    },
+    {
+      "start": 1199.99,
+      "duration": 2.92,
+      "text": "is to sell the property."
+    },
+    {
+      "start": 1202.91,
+      "duration": 2.19,
+      "text": "Sorry that's a very long winded."
+    },
+    {
+      "start": 1205.1,
+      "duration": 2.44,
+      "text": "Explanation of a convoluted statute."
+    },
+    {
+      "start": 1207.54,
+      "duration": 7.33,
+      "text": "Well, thank you so much I’m definitely with our audience is going to be individuals that"
+    },
+    {
+      "start": 1214.87,
+      "duration": 4.47,
+      "text": "are watching this today who just don't know where to start so."
+    },
+    {
+      "start": 1219.34,
+      "duration": 5.77,
+      "text": "You have definitely provided them with a wealth of information, so we really, really do thank"
+    },
+    {
+      "start": 1225.11,
+      "duration": 1.0,
+      "text": "you."
+    },
+    {
+      "start": 1226.11,
+      "duration": 4.76,
+      "text": "Sarah did you have any additional follow-up questions before we wrap up here."
+    },
+    {
+      "start": 1230.87,
+      "duration": 6.38,
+      "text": "No, I was, I was going to ask about kind of prevention and next steps, but Rusty kind"
+    },
+    {
+      "start": 1237.25,
+      "duration": 5.59,
+      "text": "of laid out some options about setting up a trust and an LLC so tends to help areas"
+    },
+    {
+      "start": 1242.84,
+      "duration": 2.26,
+      "text": "once they actually get clear title so."
+    },
+    {
+      "start": 1245.1,
+      "duration": 4.4,
+      "text": "The options are going to be different in different states so that's another reason why you want"
+    },
+    {
+      "start": 1249.5,
+      "duration": 2.66,
+      "text": "local attorneys is that these things are."
+    },
+    {
+      "start": 1252.16,
+      "duration": 5.1,
+      "text": "they're highly individual because of the land, the unique aspects of land and then family"
+    },
+    {
+      "start": 1257.26,
+      "duration": 4.96,
+      "text": "and then you add in that we have 50 different states with 50 different sets of laws."
+    },
+    {
+      "start": 1262.22,
+      "duration": 4.57,
+      "text": "You really end up with some unique situations and something that works great in one state"
+    },
+    {
+      "start": 1266.79,
+      "duration": 4.67,
+      "text": "with one family and one piece of land may not work so well."
+    },
+    {
+      "start": 1271.46,
+      "duration": 5.92,
+      "text": "in a different place with a different family, so it really is important to treat these things"
+    },
+    {
+      "start": 1277.38,
+      "duration": 4.04,
+      "text": "as unique when you're when you go forward with this."
+    },
+    {
+      "start": 1281.42,
+      "duration": 10.23,
+      "text": "Great, and that is just a good place to wrap it up on this one and tie that together, and"
+    },
+    {
+      "start": 1291.65,
+      "duration": 5.15,
+      "text": "again reiterate that heirs property issues are very unique."
+    },
+    {
+      "start": 1296.8,
+      "duration": 5.71,
+      "text": "So trying to ensure that you take some of the information that was provided today to."
+    },
+    {
+      "start": 1302.51,
+      "duration": 6.76,
+      "text": "apply that to help you know kind of get your situation kicked off the research aspect of"
+    },
+    {
+      "start": 1309.27,
+      "duration": 3.34,
+      "text": "it and, if possible, trying to look for someone local that can assist you with that and just"
+    },
+    {
+      "start": 1312.61,
+      "duration": 6.22,
+      "text": "understanding that you know, this is an issue that, while it can be resolved."
+    },
+    {
+      "start": 1318.83,
+      "duration": 4.54,
+      "text": "Patience is definitely critical you know, ensuring that you do your research to see"
+    },
+    {
+      "start": 1323.37,
+      "duration": 3.99,
+      "text": "if your site is one of the ones that fall under the uniform partition of heirs property"
+    },
+    {
+      "start": 1327.36,
+      "duration": 1.14,
+      "text": "act that was."
+    },
+    {
+      "start": 1328.5,
+      "duration": 4.81,
+      "text": "mentioned earlier, and you know, seeing what resources that you have available for you,"
+    },
+    {
+      "start": 1333.31,
+      "duration": 5.71,
+      "text": "you will see, at the conclusion of this of the conclusion of this video."
+    },
+    {
+      "start": 1339.02,
+      "duration": 6.36,
+      "text": "Link where it takes you to the farmers.gov/heirs website where some additional information"
+    },
+    {
+      "start": 1345.38,
+      "duration": 4.43,
+      "text": "is there and some additional links that will also take you to other resources that are"
+    },
+    {
+      "start": 1349.81,
+      "duration": 1.0,
+      "text": "available."
+    },
+    {
+      "start": 1350.81,
+      "duration": 4.42,
+      "text": "However, we hope that you were able to walk away from here today, after watching this"
+    },
+    {
+      "start": 1355.23,
+      "duration": 3.27,
+      "text": "video at least feeling empowered to know some different."
+    },
+    {
+      "start": 1358.5,
+      "duration": 4.77,
+      "text": "Some different guidance that is out there for you some different places to start some"
+    },
+    {
+      "start": 1363.27,
+      "duration": 4.43,
+      "text": "different things that you need to be thinking about, and you know just."
+    },
+    {
+      "start": 1367.7,
+      "duration": 6.33,
+      "text": "Providing whatever leg work you can on your part, to ensure that you start like connecting"
+    },
+    {
+      "start": 1374.03,
+      "duration": 5.28,
+      "text": "some of the dots of who is who so that your property can go from being heirs property"
+    },
+    {
+      "start": 1379.31,
+      "duration": 1.0,
+      "text": "to just being."
+    },
+    {
+      "start": 1380.31,
+      "duration": 5.19,
+      "text": "Having a clear title and deed, so we thank you for joining us today Rusty as well as"
+    },
+    {
+      "start": 1385.5,
+      "duration": 1.0,
+      "text": "we."
+    },
+    {
+      "start": 1386.5,
+      "duration": 5.45,
+      "text": "look to provide a series of resources, this is the first of additional resources that"
+    },
+    {
+      "start": 1391.95,
+      "duration": 4.11,
+      "text": "will be made available, so we encourage you to continue to check back on our website."
+    },
+    {
+      "start": 1396.06,
+      "duration": 4.22,
+      "text": "To see when those updates have been made, but we thank you for taking the time out of"
+    },
+    {
+      "start": 1400.28,
+      "duration": 6.92,
+      "text": "your day to watch this video today and to join in on this discussion take care."
+    },
+    {
+      "start": 1407.2,
+      "duration": 0.81,
+      "text": "Thanks."
+    }
+  ],
+  "full_text": "Thank you for joining us to watch the resources that are being made available for heirs in a series of. Heirs resources, that is rolling out with the heirs property relending program my name is Kanika Davis, and I am a national outreach specialist with the United States Department of Agriculture farm service agency I. I have with me today. Sarah Campbell and Rusty Rumley who is an attorney with the national Ag law Center and they will both introduce their selves. Hi everyone I’m Sarah Campbell. I’m USDA’s beginning farmer and rancher coordinator and I work on beginning farmer and rancher issues across the department, including land access. Here, working on some of the heirs property relief efforts and I’m looking forward to having this conversation with Rusty today. Well, thank you. My name is Rusty Rumley I am a senior staff attorney here at the national agricultural law Center. And I do a lot of work on issues regarding land use and estate planning so that's kind of my bailiwick. Thank you both so much. As we dive into these resources today I just kind of want to explain like why we are providing this. FSA has been in the process of rolling out resources for heirs, since the 2018 farm bill. a part of those resources are. The language and legislation that was approved for the county offices to work with heirs that come in that are seeking to receive a farm number. We also have the avenue for heirs to work with the heir’s property relending program where they can work with those announced re-lenders that are there and available. At this time, we have three, but the announcement is a rolling announcement, so you can feel free to check back on the farmers.gov. website to see any new relenders that are being announced. we also have the certified mediation program where heirs can work with certified mediators that have partnered with the USDA to provide those services within those States and on the farmers.gov/heirs website, you will see. A link to that certified mediation program fact sheet where you will be able to identify what certified mediators and certified mediation services are available within your state. Today we have with us Rusty Raumley and we just want to thank him again for taking the. opportunity to sit down with the USDA farm service agency, just to provide some guidance as we're looking for this. heirs property program just to roll out, not only the heirs property relending program but also. The different aspects as we talked about the county offices as well, a certified mediation program, we know that a lot of heirs have questions like where to start you know what are some things that. They need to do when they first have found out that they have heirs property. And things of those nature FSA has partnered with different organizations, as well as heirs expert in the heirs property field. And as a part of that Rusty is going to provide information today that we would think it's very helpful for heirs to. know and think about as they look to resolve some of their heirs property issues, so at this time we'll get this conversation kicked off and started, so one of the first things that we wanted to ask Rusty as we were just looking into some advice and information that heirs could be provided, is for individuals that have been here in your property what are some point is that you will provide them at once they have realized that they don't have this clear title and their land is truly heirs property. That's a really good question. So, first of all, let me start with saying at the ag law Center we're not allowed to provide legal advice, but we can provide legal information. So these are more of like tips and things to be thinking about ahead of time, but at some point you're probably going to need local council to help with these issues, depending upon how complicated the matter is so for people that are just getting started. One thing that I think helps is really helpful to find out. What are the baseline facts, so how much land, do you own or how much land is that issue property lines can move over time. People can think they own more or less than what they really do and that's even for property that's not heir property. So finding out, you know just how much land is at issue is going to be important. The second thing that I think is really important is to go back and see who's the last person that had clear title, it might be a parent or grandparent or Great grandparents, depending on how far it goes back. And then start doing your research on finding out who those potential heirs are who are all the potential co-owners and I really can't stress enough it's important that you go in there and. start from scratch don't be making assumptions on who people are because it's very common and families to refer to someone as a cousin or an uncle. And they may not be blood relation, they may just be close enough to you, that is just you know the family calls them that so. It's really important to go back there and actually look at the records and see is this person actually a blood relative because they may not be. and vice versa, there could be someone, that is a blood relative it just wasn't talked about very much maybe they died a long time ago. Maybe there's some other reason they're not talked about, but it is really important to go out there and establish, you know how much land is at issue and then who all are the potential heirs at law. Thanks Rusty and I have a follow up question, you mentioned that you all kind of could just share information and that you know somebody really probably doesn't need to be working will eventually need to be working with an attorney I’m assuming somebody whose barred in their state but. When an heir gets to that stage, and when someone is looking to work with an attorney what guidance, would you share with them on how to select that attorney and vet them. So that's always tricky so one of the issues that we run into with heir property is. there's No two pieces of land in the entire world that are identical. And there are no two families in the entire world that are identical so you're pairing up to very unique things so you always end up with a unique problem it's never going to look the same one situation to the next. So that's usually why it's important to have an attorney involved because there's not really a cookie cutter way of doing this. Who does this is going to vary widely depending upon what state you're in some states do have resources that are available to help owners of heir property. some of it with some of the legal work other states, the options may be more limited. Generally, though you're going to be looking for an attorney that's had a little bit of experience with land works like title work things like that, and with estate planning and a lot of your general practice attorneys are going to have some experience with that. Another, especially if it's farmland another good option would be usually there's a couple of lawyers, at least in every county. That works with the local farmers, whether it's buying and selling land or with USDA programs or something. Going and talking to one of those attorneys is another good option, and if you can't find one of those attorneys I mean most people can identify the coffee shop or the farmers hanging out in the morning. go down there by the farmers a cup of coffee and kind of pull the crowd on who they use, I mean you might be able to get a couple of names that way. But it's generally going to be a little bit cheaper to get a local attorney just because they're not going to be someone that's having to travel back and forth, to the county. Because most of this stuff is going to be done in the county where the heir property is located at so having that that local attorney will help. Sometimes you may have to go farther out sometimes there may be attorneys that are willing to help that are located farther out but that's going to be part of that initial legwork that the families have to do to start the process to resolve this issue. Thanks so much so, as we are kind of just thinking some more things through like what would be some helpful things the heirs to do to make the process for resolving those heirs issue a little smoother I know you talked about identifying who might actually be a cousin versus who. is not by blood. Are there any other tips within that realm that you might suggest. and honestly that's probably one of the most beneficial things that the. The heirs can do is try to figure out, you know who's who. I think, depending upon how complicated the situation is this could take a little bit of time, you know if the heir property was created when someone's parents passed away and there's you know. Three siblings it doesn't take a whole lot of legwork to get that established. But I’ve seen heir property situations where it was the great, great grandparents that that passed away and they were the last legal owners. So now you're talking about 50 to 75 potential co-owners, so at that point it's a lot of legwork to go out there and determine. Who all are the legal heirs and you know trace it through each of those generations so you know, the amount of work that someone may have to do is going to vary pretty wildly depending upon. You know just how many generations are in there, how many kids were born, how many of those kids had their own kids or they died without issue some of that stuff's going to be pretty tricky to do. finding out, you know where it was a kid adopted where they stepchild, you know if they were a stepchild where the stepchild of the of the descendant where the land went through like there's just there's a lot of potential issues, so creating that family tree. Is a is a is a big help for whatever attorneys going to be trying to address this issue. I know you just mentioned about making sure you have a family tree, because that will help when thinking about going the route of hiring an attorney how beneficial Is that tree, because I know you go in and you tell someone I think I might only have I’ve heirs and come to find out it’s like ten of you all. Well they're going to have to try to find they're going to do a little bit of due diligence themselves hopefully. Like I’ve said it's not always easy if it's only been heir property for one generation it's typically not too hard, I mean most people can list those off the top of their head. They may want to see birth certificates or some other kind of documentation to prove that. But you know, things can get a lot more complicated if it's been heir property for two or three generations. So I mean really it's going to depend upon you know how long has it been heir property how many potential heirs are at stake. You know it's if it's just two or three it's not terribly difficult, especially if people, you know that the all the heirs agree, but you know as you add more people and you start getting people disagreeing on kind of what the ultimate outcome should be that's when things get more complicated. yeah Rusty you’ve talked about things a lawyer can do and how they could do some of that background, research and. Potentially assists with identifying heirs that maybe they missed, I guess, to help kind of people manage their expectations what kinds of things can lawyers definitely help with and then what are, maybe some additional responsibilities that heirs might have that a lawyer can’t. So. Finding those heirs is probably going to be easier for the actual heirs themselves, I mean they're the ones that are going to have access to those types of records. Sometimes it could be like old family bibles for like births and deaths were recorded at the beginning. Sometimes it's going to be other paperwork family photos that's not things in a lawyer can typically find that at the courthouse. So that kind of stuffs going to be important for the family members, now there are ways that you. different States have different ways to deal with heirs that no one may know of so generally there's like a posting requirement. So for states that have adopted the uniform partition of heirs property act, you can post notice on the actual property that you're starting this process to resolve heirship and. People that think they should have I think they have a claim should you know get with this person. So it really varies on the state, but especially that family research that's generally going to be better for the heirs because they're the ones that are going to have those types of resources and the lawyers not. Different attorneys are going to have different things, especially tracking down some of those heirs that can take a long time. attorneys are going to be probably better equipped to handle things like that transferring title of the property if it's a uniform partition of heir property act state taking it through that process. If the families are wanting to create an LLC at the end of the process to kind of put the ownership of that property into an LLC to prevent it from becoming heir property again the attorneys going to be beneficial there. The lawyer is going to be more of doing the transactional type work. When it comes to like research for the family and things like that you know it's the family's going to have the best source of records for that that type of issue. So the uniform petition of heir. Property act. Is a model law that I think about half the States now have adopted. So what it basically does is it creates a framework for trying to resolve heir property disputes so typically what would happen if you don't have uniform partition of heir property Act adopted in your state is that everyone that's a owner of the heir property is. Their tenants in common, which basically means everybody owns an undivided interest of that property. So if you have 100 acres and there's 10 owners you can't just point to the land and say you know person A owns this 10 acres and person B owns this 10 acres. Every 10 of them own the hundred acres all together, so they all have the right to access all the land. So it makes things confusing and difficult when it comes to things like building houses or or things like that so typically what would happen is if one of those heirs wants to to get out of the situation, they want to sell their interest. The traditional approach is that because that land is divided and it's held in tenants in common, the. it's really difficult to physically divide up the land, because if you have 100 acres you know. Different parts of that hundred acres is going to be worth more than other parts of the hundred acres. Some of those going to be road frontage so that's going to be more valuable some of its going to be scrub brush while other parts are going to be cropland, cropland is going to be more valuable than scrub brushes. So it's really hard to equitably divide land, so what courts have done in the past as the simple remedy is well why don't we just sell the land. And then, if everybody owns 10% of it we gI’ve everybody 10% of the sale price, you know minus any expenses for selling the land, and that was kind of seen as the fair way to do it. Now, it also means that the family, lost their land and if the other nine people wanted to keep the land, their only option was to show up on the sale day and try to buy it themselves. But they really didn't have any advantage that that anyone else didn't have already so uniform partition of heir property act What it does is it kind of creates more of a. set of steps to first determine how much is a land worth and then determine which ones of these heirs want out so going back to that example of the hundred acres with the 10 owners say two of the owners, they went out, they want their money. The first right would be well let's figure out how much the lands worth how much their shares worth and then, are there any of the other current owners those other eight that can buy them out. Or, as really want to buy them out, and if so great, they pay their portion they buy their shares, but the thing is the land still and tenancy in common. So now, you still have heir property you just have heir property, with eight owners, instead of 10 owners. So, at that point, you know you've gotten rid of the owners you've kept the land in the family. But you may not have fix the situation because eventually those eight people are going to pass away their. heirs their children grandchildren whatever are going to inherit the land and then you may have to start again so you know it's a it's. Another step that the lawyer can help you with is do you want to put this into some kind of entity business entity like an LLC or a trust or something like that. To make sure that this problem doesn't pop up again when the next generation of heirs come in, because every generation that you know removed, they have they may have less and less of a connection to that property so. So going back so let's say they they can't there's no one that can buy them out. The real ending program supposed to provide money, this is one of the benefits of the relending program is this would be a place where you could potentially take out a loan to buy out those the interest of those ones that one out. suppose you can't get the loan for some reason or no one wants to buy him out in the Court will look at is there really any way we can physically divide the land if there's a way people can agree to it they'll physically divide up the land at that point it's no longer heir property. If there's really not a fair way to do it and there's a whole list of fat actors that they'll consider if there's a fair way to do it. If there's no fair way to do it, and none of the current heirs can buy out the ones that one out, then it goes it'll be sold. But the Court kind of gets to have a little bit of a say in it they'll try to pick the the method of sale that's going to bring the most value to the to the. Owners of the property so even the uniform partition of heir property act. it's not a perfect solution for keeping the land in the family, like there's got to be someone there someone that's heir that can. can buy those interests out whether they've got the money themselves or whether they can get the loan to purchase it, but you know, if nothing else, works, the very last resort, is to sell the property. Sorry that's a very long winded. Explanation of a convoluted statute. Well, thank you so much I’m definitely with our audience is going to be individuals that are watching this today who just don't know where to start so. You have definitely provided them with a wealth of information, so we really, really do thank you. Sarah did you have any additional follow-up questions before we wrap up here. No, I was, I was going to ask about kind of prevention and next steps, but Rusty kind of laid out some options about setting up a trust and an LLC so tends to help areas once they actually get clear title so. The options are going to be different in different states so that's another reason why you want local attorneys is that these things are. they're highly individual because of the land, the unique aspects of land and then family and then you add in that we have 50 different states with 50 different sets of laws. You really end up with some unique situations and something that works great in one state with one family and one piece of land may not work so well. in a different place with a different family, so it really is important to treat these things as unique when you're when you go forward with this. Great, and that is just a good place to wrap it up on this one and tie that together, and again reiterate that heirs property issues are very unique. So trying to ensure that you take some of the information that was provided today to. apply that to help you know kind of get your situation kicked off the research aspect of it and, if possible, trying to look for someone local that can assist you with that and just understanding that you know, this is an issue that, while it can be resolved. Patience is definitely critical you know, ensuring that you do your research to see if your site is one of the ones that fall under the uniform partition of heirs property act that was. mentioned earlier, and you know, seeing what resources that you have available for you, you will see, at the conclusion of this of the conclusion of this video. Link where it takes you to the farmers.gov/heirs website where some additional information is there and some additional links that will also take you to other resources that are available. However, we hope that you were able to walk away from here today, after watching this video at least feeling empowered to know some different. Some different guidance that is out there for you some different places to start some different things that you need to be thinking about, and you know just. Providing whatever leg work you can on your part, to ensure that you start like connecting some of the dots of who is who so that your property can go from being heirs property to just being. Having a clear title and deed, so we thank you for joining us today Rusty as well as we. look to provide a series of resources, this is the first of additional resources that will be made available, so we encourage you to continue to check back on our website. To see when those updates have been made, but we thank you for taking the time out of your day to watch this video today and to join in on this discussion take care. Thanks.",
+  "attempts": [
+    {
+      "client": "IOS",
+      "playability": {
+        "status": "OK",
+        "playableInEmbed": true,
+        "offlineability": {
+          "buttonRenderer": {
+            "navigationEndpoint": {
+              "clickTrackingParams": "CAkQ6ewBIhMIuq2GkuzblwMVRXlMCB2mRR9zygEE1soQpw==",
+              "ypcGetOfflineUpsellEndpoint": {
+                "params": "ChPqqN25AQ0KC3doRHpEckZOQURRIgt3aER6RHJGTkFEUSoVCAkYAVIPCgt3aER6RHJGTkFEUSAB"
+              }
+            },
+            "trackingParams": "CAkQ6ewBIhMIuq2GkuzblwMVRXlMCB2mRR9z"
+          }
+        },
+        "pictureInPicture": {
+          "pictureInPictureRenderer": {
+            "playableInPip": true,
+            "offByDefault": false,
+            "shouldResumeOnHead": false
+          }
+        },
+        "miniplayer": {
+          "miniplayerRenderer": {
+            "playbackMode": "PLAYBACK_MODE_ALLOW"
+          }
+        },
+        "contextParams": "Q0FFU0FnZ0M="
+      },
+      "outcome": "ok"
+    }
+  ],
+  "fetched_at": "2026-10-28T04:11:35.569586+00:00",
+  "client": "IOS",
+  "json_path": "transcripts/138_whDzDrFNADQ.json",
+  "text_path": "transcripts/138_whDzDrFNADQ.txt"
+}

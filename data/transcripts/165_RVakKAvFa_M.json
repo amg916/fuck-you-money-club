@@ -1,0 +1,1482 @@
+{
+  "index": 165,
+  "url": "https://www.youtube.com/watch?v=RVakKAvFa_M",
+  "video_id": "RVakKAvFa_M",
+  "status": "ok",
+  "metadata": {
+    "title": "Quick Start Regrid's Interactive API Sandbox Guide",
+    "author": "Regrid",
+    "channelId": "UCY6_FliC-rX76wQMYyow-1A",
+    "lengthSeconds": "739",
+    "viewCount": "1053",
+    "shortDescription": "Experience the full range of Regrid API offerings with the launch of our advanced interactive API sandbox!\nInstantly test our endpoints, experiment with Regrid data, and witness the power of our API firsthand.\n\nGet started today - https://app.regrid.com/profile/api\n\nRegrid’s interactive #APISandbox is perfect for developers, students, coders, product managers and anyone looking to make a business/technical case for seamlessly integrating #ParcelData in your #App or #SaaS projects.\n\nDive into our Interactive Sandbox with a free 30-day API trial. \nGenerate an API token and get started testing our endpoints - https://app.regrid.com/profile/api"
+  },
+  "caption_tracks": [
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=RVakKAvFa_M&ei=_XXhatyrDdHpybgP_t__4A8&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185901&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=2196473A6AC8530684526E4D70AD48FD44BD7663.115FFAA0581CC6369FB4B9E378EA0A0D0979E70C&key=yt8&kind=asr&lang=en",
+      "name": {
+        "runs": [
+          {
+            "text": "English (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.en",
+      "languageCode": "en",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    }
+  ],
+  "selected_track": {
+    "baseUrl": "https://www.youtube.com/api/timedtext?v=RVakKAvFa_M&ei=_XXhatyrDdHpybgP_t__4A8&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185901&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=2196473A6AC8530684526E4D70AD48FD44BD7663.115FFAA0581CC6369FB4B9E378EA0A0D0979E70C&key=yt8&kind=asr&lang=en",
+    "name": {
+      "runs": [
+        {
+          "text": "English (auto-generated)"
+        }
+      ]
+    },
+    "vssId": "a.en",
+    "languageCode": "en",
+    "kind": "asr",
+    "isTranslatable": true,
+    "trackName": ""
+  },
+  "segments": [
+    {
+      "start": 3.84,
+      "duration": 6.54,
+      "text": "this demo for the interactive API"
+    },
+    {
+      "start": 6.839,
+      "duration": 5.041,
+      "text": "sandbox on the support center page this"
+    },
+    {
+      "start": 10.38,
+      "duration": 3.96,
+      "text": "is where you can find the information"
+    },
+    {
+      "start": 11.88,
+      "duration": 4.86,
+      "text": "about the interactive API sandbox"
+    },
+    {
+      "start": 14.34,
+      "duration": 5.1,
+      "text": "helpful links about our products that"
+    },
+    {
+      "start": 16.74,
+      "duration": 5.52,
+      "text": "are within the sandbox the ability for"
+    },
+    {
+      "start": 19.44,
+      "duration": 5.64,
+      "text": "yourself to get an API token this is for"
+    },
+    {
+      "start": 22.26,
+      "duration": 4.92,
+      "text": "a trial token and the information that's"
+    },
+    {
+      "start": 25.08,
+      "duration": 4.92,
+      "text": "included for the trial is right below it"
+    },
+    {
+      "start": 27.18,
+      "duration": 4.86,
+      "text": "if you already have your own token"
+    },
+    {
+      "start": 30.0,
+      "duration": 4.559,
+      "text": "already you can definitely jump into the"
+    },
+    {
+      "start": 32.04,
+      "duration": 5.519,
+      "text": "interactive API sandbox so let's get"
+    },
+    {
+      "start": 34.559,
+      "duration": 5.581,
+      "text": "started with getting a token I'm going"
+    },
+    {
+      "start": 37.559,
+      "duration": 6.741,
+      "text": "to go ahead and sign up for an account"
+    },
+    {
+      "start": 40.14,
+      "duration": 4.16,
+      "text": "and enter my information here"
+    },
+    {
+      "start": 45.96,
+      "duration": 4.5,
+      "text": "add in a little handy dandy"
+    },
+    {
+      "start": 48.539,
+      "duration": 4.86,
+      "text": "password"
+    },
+    {
+      "start": 50.46,
+      "duration": 5.16,
+      "text": "I'm going to uncheck this box to receive"
+    },
+    {
+      "start": 53.399,
+      "duration": 3.18,
+      "text": "emails because I already received emails"
+    },
+    {
+      "start": 55.62,
+      "duration": 3.0,
+      "text": "but"
+    },
+    {
+      "start": 56.579,
+      "duration": 3.601,
+      "text": "you can definitely leave this check and"
+    },
+    {
+      "start": 58.62,
+      "duration": 3.72,
+      "text": "please go ahead and enter the"
+    },
+    {
+      "start": 60.18,
+      "duration": 5.339,
+      "text": "information on the right hand side but"
+    },
+    {
+      "start": 62.34,
+      "duration": 6.779,
+      "text": "let's go ahead and get an we have landed"
+    },
+    {
+      "start": 65.519,
+      "duration": 5.401,
+      "text": "on the API dashboard which is great it's"
+    },
+    {
+      "start": 69.119,
+      "duration": 4.021,
+      "text": "within your account"
+    },
+    {
+      "start": 70.92,
+      "duration": 4.5,
+      "text": "and it tells you that you have a free"
+    },
+    {
+      "start": 73.14,
+      "duration": 5.4,
+      "text": "account the information that's included"
+    },
+    {
+      "start": 75.42,
+      "duration": 6.12,
+      "text": "for the API access your ability to"
+    },
+    {
+      "start": 78.54,
+      "duration": 6.0,
+      "text": "generate an API token"
+    },
+    {
+      "start": 81.54,
+      "duration": 5.28,
+      "text": "um and the different plan options that"
+    },
+    {
+      "start": 84.54,
+      "duration": 4.8,
+      "text": "you would like to upgrade to"
+    },
+    {
+      "start": 86.82,
+      "duration": 4.979,
+      "text": "um would be self-serve subscription or"
+    },
+    {
+      "start": 89.34,
+      "duration": 5.58,
+      "text": "Enterprise license and what is included"
+    },
+    {
+      "start": 91.799,
+      "duration": 6.481,
+      "text": "for either one of those plans so let's"
+    },
+    {
+      "start": 94.92,
+      "duration": 6.239,
+      "text": "go ahead and generate an API token all"
+    },
+    {
+      "start": 98.28,
+      "duration": 5.82,
+      "text": "right so this sandbox token is available"
+    },
+    {
+      "start": 101.159,
+      "duration": 6.181,
+      "text": "for a maximum of 30 days it has"
+    },
+    {
+      "start": 104.1,
+      "duration": 4.74,
+      "text": "expiration time frame here and it"
+    },
+    {
+      "start": 107.34,
+      "duration": 3.959,
+      "text": "includes what's"
+    },
+    {
+      "start": 108.84,
+      "duration": 5.279,
+      "text": "products that we offer that will be"
+    },
+    {
+      "start": 111.299,
+      "duration": 4.201,
+      "text": "included within this API token and the"
+    },
+    {
+      "start": 114.119,
+      "duration": 3.18,
+      "text": "limits"
+    },
+    {
+      "start": 115.5,
+      "duration": 4.14,
+      "text": "um that are associated with this token"
+    },
+    {
+      "start": 117.299,
+      "duration": 5.28,
+      "text": "once you start using your token you can"
+    },
+    {
+      "start": 119.64,
+      "duration": 5.72,
+      "text": "then go to this button for C usage"
+    },
+    {
+      "start": 122.579,
+      "duration": 6.301,
+      "text": "history and check out the history"
+    },
+    {
+      "start": 125.36,
+      "duration": 6.099,
+      "text": "that you did with using your token I'll"
+    },
+    {
+      "start": 128.88,
+      "duration": 5.82,
+      "text": "definitely show you another way later on"
+    },
+    {
+      "start": 131.459,
+      "duration": 6.36,
+      "text": "in this video so let's go ahead and take"
+    },
+    {
+      "start": 134.7,
+      "duration": 5.7,
+      "text": "our token just copy it to our clipboard"
+    },
+    {
+      "start": 137.819,
+      "duration": 6.301,
+      "text": "and we're going to navigate into the"
+    },
+    {
+      "start": 140.4,
+      "duration": 5.64,
+      "text": "interactive API sandbox all right so I"
+    },
+    {
+      "start": 144.12,
+      "duration": 3.66,
+      "text": "just want to let you know that as an"
+    },
+    {
+      "start": 146.04,
+      "duration": 4.26,
+      "text": "admin I have a little bit of a different"
+    },
+    {
+      "start": 147.78,
+      "duration": 4.56,
+      "text": "view but you will be landing on this"
+    },
+    {
+      "start": 150.3,
+      "duration": 5.28,
+      "text": "page with getting started with a regret"
+    },
+    {
+      "start": 152.34,
+      "duration": 5.94,
+      "text": "interactive API sandbox that gives you a"
+    },
+    {
+      "start": 155.58,
+      "duration": 5.4,
+      "text": "lot of information on what is included"
+    },
+    {
+      "start": 158.28,
+      "duration": 4.679,
+      "text": "in the API sandbox what's included for"
+    },
+    {
+      "start": 160.98,
+      "duration": 4.8,
+      "text": "the API trial token"
+    },
+    {
+      "start": 162.959,
+      "duration": 5.161,
+      "text": "as well again the plan options that are"
+    },
+    {
+      "start": 165.78,
+      "duration": 4.56,
+      "text": "available with links to every single"
+    },
+    {
+      "start": 168.12,
+      "duration": 5.1,
+      "text": "product here if you would like to learn"
+    },
+    {
+      "start": 170.34,
+      "duration": 5.46,
+      "text": "more about it and we also include some"
+    },
+    {
+      "start": 173.22,
+      "duration": 5.04,
+      "text": "helpful links and some FAQs that you"
+    },
+    {
+      "start": 175.8,
+      "duration": 3.96,
+      "text": "would like to read over to see uh to"
+    },
+    {
+      "start": 178.26,
+      "duration": 3.059,
+      "text": "understand more"
+    },
+    {
+      "start": 179.76,
+      "duration": 5.759,
+      "text": "so"
+    },
+    {
+      "start": 181.319,
+      "duration": 6.841,
+      "text": "um we also include in this sandbox our"
+    },
+    {
+      "start": 185.519,
+      "duration": 4.08,
+      "text": "parcel tiles demo that will be coming"
+    },
+    {
+      "start": 188.16,
+      "duration": 4.2,
+      "text": "soon"
+    },
+    {
+      "start": 189.599,
+      "duration": 4.681,
+      "text": "um so look forward to seeing that by the"
+    },
+    {
+      "start": 192.36,
+      "duration": 4.68,
+      "text": "time this video comes out this may be"
+    },
+    {
+      "start": 194.28,
+      "duration": 5.4,
+      "text": "already up and available so you can go"
+    },
+    {
+      "start": 197.04,
+      "duration": 4.14,
+      "text": "ahead and test that out so for now we're"
+    },
+    {
+      "start": 199.68,
+      "duration": 3.779,
+      "text": "going to go ahead and skip this parcel"
+    },
+    {
+      "start": 201.18,
+      "duration": 4.74,
+      "text": "tiles demo and go straight to the"
+    },
+    {
+      "start": 203.459,
+      "duration": 5.7,
+      "text": "endpoints so we have several endpoints"
+    },
+    {
+      "start": 205.92,
+      "duration": 6.0,
+      "text": "here from regrad and we have to search"
+    },
+    {
+      "start": 209.159,
+      "duration": 5.16,
+      "text": "different parcel records we have our"
+    },
+    {
+      "start": 211.92,
+      "duration": 5.819,
+      "text": "collection of searching for our latitude"
+    },
+    {
+      "start": 214.319,
+      "duration": 5.64,
+      "text": "and longitude address search assessors"
+    },
+    {
+      "start": 217.739,
+      "duration": 2.881,
+      "text": "parcel number as well as the owner's"
+    },
+    {
+      "start": 219.959,
+      "duration": 2.7,
+      "text": "name"
+    },
+    {
+      "start": 220.62,
+      "duration": 6.119,
+      "text": "we also"
+    },
+    {
+      "start": 222.659,
+      "duration": 6.901,
+      "text": "um have a more powerful endpoint that"
+    },
+    {
+      "start": 226.739,
+      "duration": 4.981,
+      "text": "combines most of these items into its"
+    },
+    {
+      "start": 229.56,
+      "duration": 5.28,
+      "text": "own endpoint which I'll show you how to"
+    },
+    {
+      "start": 231.72,
+      "duration": 5.46,
+      "text": "use shortly we also have an address type"
+    },
+    {
+      "start": 234.84,
+      "duration": 4.08,
+      "text": "ahead API so if you're looking to"
+    },
+    {
+      "start": 237.18,
+      "duration": 4.26,
+      "text": "complete that address when you're"
+    },
+    {
+      "start": 238.92,
+      "duration": 6.12,
+      "text": "searching we also have that ability we"
+    },
+    {
+      "start": 241.44,
+      "duration": 6.06,
+      "text": "also include a polygon search endpoint a"
+    },
+    {
+      "start": 245.04,
+      "duration": 5.82,
+      "text": "post etiquette version additional"
+    },
+    {
+      "start": 247.5,
+      "duration": 7.08,
+      "text": "endpoints for uuid finding that unique"
+    },
+    {
+      "start": 250.86,
+      "duration": 6.3,
+      "text": "parcel and a bit of metadata endpoints"
+    },
+    {
+      "start": 254.58,
+      "duration": 5.1,
+      "text": "that include getting the parcel schema"
+    },
+    {
+      "start": 257.16,
+      "duration": 6.9,
+      "text": "learning about what counties are"
+    },
+    {
+      "start": 259.68,
+      "duration": 6.48,
+      "text": "available within our data the usage for"
+    },
+    {
+      "start": 264.06,
+      "duration": 5.52,
+      "text": "your token as well as if you need to"
+    },
+    {
+      "start": 266.16,
+      "duration": 6.479,
+      "text": "report any issues about the endpoints"
+    },
+    {
+      "start": 269.58,
+      "duration": 5.1,
+      "text": "when you're testing it out so let's go"
+    },
+    {
+      "start": 272.639,
+      "duration": 3.421,
+      "text": "ahead and get started with our latitude"
+    },
+    {
+      "start": 274.68,
+      "duration": 3.48,
+      "text": "and longitude"
+    },
+    {
+      "start": 276.06,
+      "duration": 3.419,
+      "text": "so with this sandbox we're going to have"
+    },
+    {
+      "start": 278.16,
+      "duration": 6.12,
+      "text": "the input path"
+    },
+    {
+      "start": 279.479,
+      "duration": 8.22,
+      "text": "for uh this end plane it's a URL path it"
+    },
+    {
+      "start": 284.28,
+      "duration": 5.22,
+      "text": "has some information about the endpoint"
+    },
+    {
+      "start": 287.699,
+      "duration": 4.381,
+      "text": "some additional links if you're"
+    },
+    {
+      "start": 289.5,
+      "duration": 5.36,
+      "text": "interested in knowing what uh products"
+    },
+    {
+      "start": 292.08,
+      "duration": 5.94,
+      "text": "that are associated with this data"
+    },
+    {
+      "start": 294.86,
+      "duration": 5.44,
+      "text": "the options on the right hand side about"
+    },
+    {
+      "start": 298.02,
+      "duration": 6.06,
+      "text": "language you can choose your language of"
+    },
+    {
+      "start": 300.3,
+      "duration": 6.66,
+      "text": "choice to see the snippet of code so if"
+    },
+    {
+      "start": 304.08,
+      "duration": 4.38,
+      "text": "you want to switch between node Ruby PHP"
+    },
+    {
+      "start": 306.96,
+      "duration": 4.86,
+      "text": "or python"
+    },
+    {
+      "start": 308.46,
+      "duration": 4.92,
+      "text": "and then you're able to enter your uh"
+    },
+    {
+      "start": 311.82,
+      "duration": 3.599,
+      "text": "token here"
+    },
+    {
+      "start": 313.38,
+      "duration": 3.66,
+      "text": "I'm going to remove the previous token"
+    },
+    {
+      "start": 315.419,
+      "duration": 4.081,
+      "text": "but I'm going to go ahead and paste our"
+    },
+    {
+      "start": 317.04,
+      "duration": 5.04,
+      "text": "token that we created just before this"
+    },
+    {
+      "start": 319.5,
+      "duration": 5.539,
+      "text": "we're gonna I'm gonna enter that here it"
+    },
+    {
+      "start": 322.08,
+      "duration": 6.6,
+      "text": "then goes and adds our token"
+    },
+    {
+      "start": 325.039,
+      "duration": 5.141,
+      "text": "to the snippet"
+    },
+    {
+      "start": 328.68,
+      "duration": 4.14,
+      "text": "um we're gonna also load in some"
+    },
+    {
+      "start": 330.18,
+      "duration": 5.16,
+      "text": "examples so all of these endpoints"
+    },
+    {
+      "start": 332.82,
+      "duration": 4.2,
+      "text": "um have examples preloaded in so you"
+    },
+    {
+      "start": 335.34,
+      "duration": 3.6,
+      "text": "don't have to worry about figure out"
+    },
+    {
+      "start": 337.02,
+      "duration": 3.6,
+      "text": "which ones which information to enter"
+    },
+    {
+      "start": 338.94,
+      "duration": 5.28,
+      "text": "but if you do have your own information"
+    },
+    {
+      "start": 340.62,
+      "duration": 6.6,
+      "text": "by all planes go ahead and do that if"
+    },
+    {
+      "start": 344.22,
+      "duration": 6.479,
+      "text": "you are on a trial token though it is a"
+    },
+    {
+      "start": 347.22,
+      "duration": 4.68,
+      "text": "subset of the Nationwide data so if"
+    },
+    {
+      "start": 350.699,
+      "duration": 2.641,
+      "text": "you're searching please make sure you're"
+    },
+    {
+      "start": 351.9,
+      "duration": 3.66,
+      "text": "searching within the counties that are"
+    },
+    {
+      "start": 353.34,
+      "duration": 4.68,
+      "text": "available for your token"
+    },
+    {
+      "start": 355.56,
+      "duration": 5.1,
+      "text": "so let's go ahead and continue with this"
+    },
+    {
+      "start": 358.02,
+      "duration": 6.179,
+      "text": "latitude and longitude I'm going to have"
+    },
+    {
+      "start": 360.66,
+      "duration": 6.24,
+      "text": "a radius of 10 meters and I'm going to"
+    },
+    {
+      "start": 364.199,
+      "duration": 5.28,
+      "text": "limit the results to just return three"
+    },
+    {
+      "start": 366.9,
+      "duration": 3.96,
+      "text": "partial records for us I'm going to"
+    },
+    {
+      "start": 369.479,
+      "duration": 2.401,
+      "text": "leave the rest"
+    },
+    {
+      "start": 370.86,
+      "duration": 3.48,
+      "text": "um"
+    },
+    {
+      "start": 371.88,
+      "duration": 4.86,
+      "text": "which is plank um you can fill them in"
+    },
+    {
+      "start": 374.34,
+      "duration": 4.919,
+      "text": "either true or false but the default"
+    },
+    {
+      "start": 376.74,
+      "duration": 5.519,
+      "text": "will be false for all of these and the"
+    },
+    {
+      "start": 379.259,
+      "duration": 6.72,
+      "text": "default will be true for return custom"
+    },
+    {
+      "start": 382.259,
+      "duration": 8.401,
+      "text": "and we have the option for 200 or 400"
+    },
+    {
+      "start": 385.979,
+      "duration": 7.56,
+      "text": "401 so we can go ahead and try this out"
+    },
+    {
+      "start": 390.66,
+      "duration": 6.0,
+      "text": "and excellent we have a response with"
+    },
+    {
+      "start": 393.539,
+      "duration": 4.921,
+      "text": "our parcel records and you can see all"
+    },
+    {
+      "start": 396.66,
+      "duration": 4.379,
+      "text": "the information listed here on the right"
+    },
+    {
+      "start": 398.46,
+      "duration": 5.459,
+      "text": "hand side for"
+    },
+    {
+      "start": 401.039,
+      "duration": 5.481,
+      "text": "um what partials are located at this"
+    },
+    {
+      "start": 403.919,
+      "duration": 5.941,
+      "text": "latitude of longitude location"
+    },
+    {
+      "start": 406.52,
+      "duration": 4.66,
+      "text": "and one other thing I would like to show"
+    },
+    {
+      "start": 409.86,
+      "duration": 2.7,
+      "text": "you we're going to skip the rest of"
+    },
+    {
+      "start": 411.18,
+      "duration": 3.48,
+      "text": "these because they're pretty much"
+    },
+    {
+      "start": 412.56,
+      "duration": 4.859,
+      "text": "similar in regards to filling in the"
+    },
+    {
+      "start": 414.66,
+      "duration": 4.68,
+      "text": "information and trying it out but one"
+    },
+    {
+      "start": 417.419,
+      "duration": 4.381,
+      "text": "thing I would like to mention is that"
+    },
+    {
+      "start": 419.34,
+      "duration": 5.28,
+      "text": "our query by fields"
+    },
+    {
+      "start": 421.8,
+      "duration": 6.72,
+      "text": "endpoint this endpoint has an overview"
+    },
+    {
+      "start": 424.62,
+      "duration": 6.66,
+      "text": "of what this includes the format of how"
+    },
+    {
+      "start": 428.52,
+      "duration": 6.36,
+      "text": "this endpoint is structured but I have"
+    },
+    {
+      "start": 431.28,
+      "duration": 6.18,
+      "text": "included sample use cases for you to try"
+    },
+    {
+      "start": 434.88,
+      "duration": 5.4,
+      "text": "on how to use this endpoint"
+    },
+    {
+      "start": 437.46,
+      "duration": 6.299,
+      "text": "so for example if you're looking for all"
+    },
+    {
+      "start": 440.28,
+      "duration": 6.539,
+      "text": "the owners of a specific the owner who"
+    },
+    {
+      "start": 443.759,
+      "duration": 6.541,
+      "text": "owns you know several Parcels within a"
+    },
+    {
+      "start": 446.819,
+      "duration": 7.681,
+      "text": "certain area County zip code State Etc"
+    },
+    {
+      "start": 450.3,
+      "duration": 7.38,
+      "text": "uh you can use this endpoint I used"
+    },
+    {
+      "start": 454.5,
+      "duration": 5.819,
+      "text": "um our County which is a geoid also"
+    },
+    {
+      "start": 457.68,
+      "duration": 4.739,
+      "text": "known as the fips code and the owner"
+    },
+    {
+      "start": 460.319,
+      "duration": 5.16,
+      "text": "name I'm looking for all the 7-Elevens"
+    },
+    {
+      "start": 462.419,
+      "duration": 5.22,
+      "text": "in Dallas County"
+    },
+    {
+      "start": 465.479,
+      "duration": 5.361,
+      "text": "um I already pre-loaded and said that"
+    },
+    {
+      "start": 467.639,
+      "duration": 5.46,
+      "text": "this result should turn 232."
+    },
+    {
+      "start": 470.84,
+      "duration": 4.18,
+      "text": "7-Elevens in this area and I'm going to"
+    },
+    {
+      "start": 473.099,
+      "duration": 4.561,
+      "text": "go ahead and test it out"
+    },
+    {
+      "start": 475.02,
+      "duration": 6.66,
+      "text": "I'm going to use an example here here we"
+    },
+    {
+      "start": 477.66,
+      "duration": 6.62,
+      "text": "have the unique format of uh the"
+    },
+    {
+      "start": 481.68,
+      "duration": 6.359,
+      "text": "parameter so it should be the field the"
+    },
+    {
+      "start": 484.28,
+      "duration": 5.259,
+      "text": "attribute name and an operator"
+    },
+    {
+      "start": 488.039,
+      "duration": 4.621,
+      "text": "and I'm going to say it's going to equal"
+    },
+    {
+      "start": 489.539,
+      "duration": 6.0,
+      "text": "to 48.113 I'm going to pre-load the"
+    },
+    {
+      "start": 492.66,
+      "duration": 4.62,
+      "text": "7-Eleven information in here and I'm"
+    },
+    {
+      "start": 495.539,
+      "duration": 3.6,
+      "text": "going to go ahead and just get the total"
+    },
+    {
+      "start": 497.28,
+      "duration": 4.319,
+      "text": "count"
+    },
+    {
+      "start": 499.139,
+      "duration": 5.581,
+      "text": "and also I'm going to restrict this"
+    },
+    {
+      "start": 501.599,
+      "duration": 4.861,
+      "text": "within Dallas Texas"
+    },
+    {
+      "start": 504.72,
+      "duration": 5.159,
+      "text": "um this is already restricted in Dallas"
+    },
+    {
+      "start": 506.46,
+      "duration": 6.48,
+      "text": "Texas as this is the fips code for 48113"
+    },
+    {
+      "start": 509.879,
+      "duration": 5.58,
+      "text": "but this is just an extra measure this"
+    },
+    {
+      "start": 512.94,
+      "duration": 4.2,
+      "text": "is not applicable in this scenario but"
+    },
+    {
+      "start": 515.459,
+      "duration": 4.26,
+      "text": "if you would like to add it it does not"
+    },
+    {
+      "start": 517.14,
+      "duration": 5.36,
+      "text": "hurt this endpoint I'm going to go ahead"
+    },
+    {
+      "start": 519.719,
+      "duration": 2.781,
+      "text": "and try it out"
+    },
+    {
+      "start": 522.599,
+      "duration": 10.201,
+      "text": "all right and we got our result"
+    },
+    {
+      "start": 525.44,
+      "duration": 8.86,
+      "text": "238 7 11. so I previously said 232 and I"
+    },
+    {
+      "start": 532.8,
+      "duration": 3.479,
+      "text": "think that was a typo but I'll go ahead"
+    },
+    {
+      "start": 534.3,
+      "duration": 4.26,
+      "text": "and correct that"
+    },
+    {
+      "start": 536.279,
+      "duration": 5.161,
+      "text": "um and that is the same for all these"
+    },
+    {
+      "start": 538.56,
+      "duration": 5.339,
+      "text": "use cases the one thing I will say for"
+    },
+    {
+      "start": 541.44,
+      "duration": 4.7,
+      "text": "this endpoint that is really cool is"
+    },
+    {
+      "start": 543.899,
+      "duration": 5.12,
+      "text": "that this is our Nationwide in point"
+    },
+    {
+      "start": 546.14,
+      "duration": 5.379,
+      "text": "that searches across the United States"
+    },
+    {
+      "start": 549.019,
+      "duration": 4.181,
+      "text": "and the reason why it took a little bit"
+    },
+    {
+      "start": 551.519,
+      "duration": 3.26,
+      "text": "longer than our other endpoints is"
+    },
+    {
+      "start": 553.2,
+      "duration": 5.579,
+      "text": "because it's going through that"
+    },
+    {
+      "start": 554.779,
+      "duration": 7.18,
+      "text": "Nationwide data in regards to our"
+    },
+    {
+      "start": 558.779,
+      "duration": 5.521,
+      "text": "latitude our search by endpoints these"
+    },
+    {
+      "start": 561.959,
+      "duration": 6.421,
+      "text": "are specific to an area"
+    },
+    {
+      "start": 564.3,
+      "duration": 4.74,
+      "text": "um as as you may know it's an address or"
+    },
+    {
+      "start": 568.38,
+      "duration": 4.139,
+      "text": "um"
+    },
+    {
+      "start": 569.04,
+      "duration": 5.4,
+      "text": "well parcel name such as Parts number"
+    },
+    {
+      "start": 572.519,
+      "duration": 4.141,
+      "text": "and owner name"
+    },
+    {
+      "start": 574.44,
+      "duration": 7.079,
+      "text": "um is also searching Nationwide as well"
+    },
+    {
+      "start": 576.66,
+      "duration": 7.619,
+      "text": "but this one by far is the best one for"
+    },
+    {
+      "start": 581.519,
+      "duration": 5.521,
+      "text": "query by Fields using multiple"
+    },
+    {
+      "start": 584.279,
+      "duration": 4.68,
+      "text": "parameters that you can use to get the"
+    },
+    {
+      "start": 587.04,
+      "duration": 4.08,
+      "text": "information that you need"
+    },
+    {
+      "start": 588.959,
+      "duration": 4.141,
+      "text": "one other thing I would like to show is"
+    },
+    {
+      "start": 591.12,
+      "duration": 5.159,
+      "text": "our polygon"
+    },
+    {
+      "start": 593.1,
+      "duration": 7.4,
+      "text": "endpoint we have two versions of posts"
+    },
+    {
+      "start": 596.279,
+      "duration": 8.821,
+      "text": "and a git and the Git Version we have a"
+    },
+    {
+      "start": 600.5,
+      "duration": 7.42,
+      "text": "geojson polygon shape already defined if"
+    },
+    {
+      "start": 605.1,
+      "duration": 6.02,
+      "text": "you like to try your own geojson polygon"
+    },
+    {
+      "start": 607.92,
+      "duration": 6.419,
+      "text": "shape you can go to"
+    },
+    {
+      "start": 611.12,
+      "duration": 5.58,
+      "text": "geojson.io to create your own polygon"
+    },
+    {
+      "start": 614.339,
+      "duration": 4.861,
+      "text": "shape unless you already have a map"
+    },
+    {
+      "start": 616.7,
+      "duration": 3.52,
+      "text": "layer that can already do that for"
+    },
+    {
+      "start": 619.2,
+      "duration": 3.48,
+      "text": "yourself"
+    },
+    {
+      "start": 620.22,
+      "duration": 4.02,
+      "text": "I'm going to go ahead and limit this to"
+    },
+    {
+      "start": 622.68,
+      "duration": 2.52,
+      "text": "five"
+    },
+    {
+      "start": 624.24,
+      "duration": 2.58,
+      "text": "um"
+    },
+    {
+      "start": 625.2,
+      "duration": 2.819,
+      "text": "actually let me go ahead and not limit"
+    },
+    {
+      "start": 626.82,
+      "duration": 3.66,
+      "text": "this"
+    },
+    {
+      "start": 628.019,
+      "duration": 5.461,
+      "text": "and I'll get the count"
+    },
+    {
+      "start": 630.48,
+      "duration": 6.08,
+      "text": "for how many Parcels are within this"
+    },
+    {
+      "start": 633.48,
+      "duration": 3.08,
+      "text": "polygon shape"
+    },
+    {
+      "start": 637.08,
+      "duration": 6.36,
+      "text": "and there are 38 and it also includes"
+    },
+    {
+      "start": 640.8,
+      "duration": 4.68,
+      "text": "the Acres within this polygon shape the"
+    },
+    {
+      "start": 643.44,
+      "duration": 3.899,
+      "text": "square meters within this polygon shape"
+    },
+    {
+      "start": 645.48,
+      "duration": 4.26,
+      "text": "as well as the square miles within this"
+    },
+    {
+      "start": 647.339,
+      "duration": 3.961,
+      "text": "polygon shape so there's quite a lot of"
+    },
+    {
+      "start": 649.74,
+      "duration": 4.32,
+      "text": "information here"
+    },
+    {
+      "start": 651.3,
+      "duration": 5.55,
+      "text": "um just for the count version but uh if"
+    },
+    {
+      "start": 654.06,
+      "duration": 3.42,
+      "text": "you don't want to use the count and you"
+    },
+    {
+      "start": 656.85,
+      "duration": 1.35,
+      "text": "[Music]"
+    },
+    {
+      "start": 657.48,
+      "duration": 2.88,
+      "text": "um"
+    },
+    {
+      "start": 658.2,
+      "duration": 5.4,
+      "text": "just with the parcels then you don't"
+    },
+    {
+      "start": 660.36,
+      "duration": 7.5,
+      "text": "need to use this uh attribute I mean"
+    },
+    {
+      "start": 663.6,
+      "duration": 6.12,
+      "text": "this parameter and that is it um oh"
+    },
+    {
+      "start": 667.86,
+      "duration": 4.86,
+      "text": "actually one more thing I meant to show"
+    },
+    {
+      "start": 669.72,
+      "duration": 4.08,
+      "text": "you about the usage so in regards to the"
+    },
+    {
+      "start": 672.72,
+      "duration": 3.6,
+      "text": "usage"
+    },
+    {
+      "start": 673.8,
+      "duration": 5.46,
+      "text": "um you can go ahead and take your and"
+    },
+    {
+      "start": 676.32,
+      "duration": 6.3,
+      "text": "your token that is already loaded into"
+    },
+    {
+      "start": 679.26,
+      "duration": 8.16,
+      "text": "the multiplication section and go ahead"
+    },
+    {
+      "start": 682.62,
+      "duration": 7.8,
+      "text": "and get a full history of your usage"
+    },
+    {
+      "start": 687.42,
+      "duration": 5.94,
+      "text": "so so far I've did three requests and"
+    },
+    {
+      "start": 690.42,
+      "duration": 5.159,
+      "text": "had one result that one result means"
+    },
+    {
+      "start": 693.36,
+      "duration": 6.12,
+      "text": "that for every time I use count"
+    },
+    {
+      "start": 695.579,
+      "duration": 6.121,
+      "text": "parameter that does not count as results"
+    },
+    {
+      "start": 699.48,
+      "duration": 5.52,
+      "text": "because I'm just getting a count this"
+    },
+    {
+      "start": 701.7,
+      "duration": 6.78,
+      "text": "value increments when parcel records are"
+    },
+    {
+      "start": 705.0,
+      "duration": 6.48,
+      "text": "returned so it is one"
+    },
+    {
+      "start": 708.48,
+      "duration": 5.34,
+      "text": "um and it has a full history of using"
+    },
+    {
+      "start": 711.48,
+      "duration": 4.74,
+      "text": "this token and since we're just using"
+    },
+    {
+      "start": 713.82,
+      "duration": 4.079,
+      "text": "this for today because that is the April"
+    },
+    {
+      "start": 716.22,
+      "duration": 4.38,
+      "text": "28th"
+    },
+    {
+      "start": 717.899,
+      "duration": 5.161,
+      "text": "um it has the information for today"
+    },
+    {
+      "start": 720.6,
+      "duration": 4.62,
+      "text": "all right so that is it for a walk"
+    },
+    {
+      "start": 723.06,
+      "duration": 5.82,
+      "text": "through on how to use the interactive"
+    },
+    {
+      "start": 725.22,
+      "duration": 5.28,
+      "text": "API sandbox how to get your token and if"
+    },
+    {
+      "start": 728.88,
+      "duration": 7.16,
+      "text": "you have any questions please reach out"
+    },
+    {
+      "start": 730.5,
+      "duration": 5.54,
+      "text": "to us at help regrid.com thank you"
+    }
+  ],
+  "full_text": "this demo for the interactive API sandbox on the support center page this is where you can find the information about the interactive API sandbox helpful links about our products that are within the sandbox the ability for yourself to get an API token this is for a trial token and the information that's included for the trial is right below it if you already have your own token already you can definitely jump into the interactive API sandbox so let's get started with getting a token I'm going to go ahead and sign up for an account and enter my information here add in a little handy dandy password I'm going to uncheck this box to receive emails because I already received emails but you can definitely leave this check and please go ahead and enter the information on the right hand side but let's go ahead and get an we have landed on the API dashboard which is great it's within your account and it tells you that you have a free account the information that's included for the API access your ability to generate an API token um and the different plan options that you would like to upgrade to um would be self-serve subscription or Enterprise license and what is included for either one of those plans so let's go ahead and generate an API token all right so this sandbox token is available for a maximum of 30 days it has expiration time frame here and it includes what's products that we offer that will be included within this API token and the limits um that are associated with this token once you start using your token you can then go to this button for C usage history and check out the history that you did with using your token I'll definitely show you another way later on in this video so let's go ahead and take our token just copy it to our clipboard and we're going to navigate into the interactive API sandbox all right so I just want to let you know that as an admin I have a little bit of a different view but you will be landing on this page with getting started with a regret interactive API sandbox that gives you a lot of information on what is included in the API sandbox what's included for the API trial token as well again the plan options that are available with links to every single product here if you would like to learn more about it and we also include some helpful links and some FAQs that you would like to read over to see uh to understand more so um we also include in this sandbox our parcel tiles demo that will be coming soon um so look forward to seeing that by the time this video comes out this may be already up and available so you can go ahead and test that out so for now we're going to go ahead and skip this parcel tiles demo and go straight to the endpoints so we have several endpoints here from regrad and we have to search different parcel records we have our collection of searching for our latitude and longitude address search assessors parcel number as well as the owner's name we also um have a more powerful endpoint that combines most of these items into its own endpoint which I'll show you how to use shortly we also have an address type ahead API so if you're looking to complete that address when you're searching we also have that ability we also include a polygon search endpoint a post etiquette version additional endpoints for uuid finding that unique parcel and a bit of metadata endpoints that include getting the parcel schema learning about what counties are available within our data the usage for your token as well as if you need to report any issues about the endpoints when you're testing it out so let's go ahead and get started with our latitude and longitude so with this sandbox we're going to have the input path for uh this end plane it's a URL path it has some information about the endpoint some additional links if you're interested in knowing what uh products that are associated with this data the options on the right hand side about language you can choose your language of choice to see the snippet of code so if you want to switch between node Ruby PHP or python and then you're able to enter your uh token here I'm going to remove the previous token but I'm going to go ahead and paste our token that we created just before this we're gonna I'm gonna enter that here it then goes and adds our token to the snippet um we're gonna also load in some examples so all of these endpoints um have examples preloaded in so you don't have to worry about figure out which ones which information to enter but if you do have your own information by all planes go ahead and do that if you are on a trial token though it is a subset of the Nationwide data so if you're searching please make sure you're searching within the counties that are available for your token so let's go ahead and continue with this latitude and longitude I'm going to have a radius of 10 meters and I'm going to limit the results to just return three partial records for us I'm going to leave the rest um which is plank um you can fill them in either true or false but the default will be false for all of these and the default will be true for return custom and we have the option for 200 or 400 401 so we can go ahead and try this out and excellent we have a response with our parcel records and you can see all the information listed here on the right hand side for um what partials are located at this latitude of longitude location and one other thing I would like to show you we're going to skip the rest of these because they're pretty much similar in regards to filling in the information and trying it out but one thing I would like to mention is that our query by fields endpoint this endpoint has an overview of what this includes the format of how this endpoint is structured but I have included sample use cases for you to try on how to use this endpoint so for example if you're looking for all the owners of a specific the owner who owns you know several Parcels within a certain area County zip code State Etc uh you can use this endpoint I used um our County which is a geoid also known as the fips code and the owner name I'm looking for all the 7-Elevens in Dallas County um I already pre-loaded and said that this result should turn 232. 7-Elevens in this area and I'm going to go ahead and test it out I'm going to use an example here here we have the unique format of uh the parameter so it should be the field the attribute name and an operator and I'm going to say it's going to equal to 48.113 I'm going to pre-load the 7-Eleven information in here and I'm going to go ahead and just get the total count and also I'm going to restrict this within Dallas Texas um this is already restricted in Dallas Texas as this is the fips code for 48113 but this is just an extra measure this is not applicable in this scenario but if you would like to add it it does not hurt this endpoint I'm going to go ahead and try it out all right and we got our result 238 7 11. so I previously said 232 and I think that was a typo but I'll go ahead and correct that um and that is the same for all these use cases the one thing I will say for this endpoint that is really cool is that this is our Nationwide in point that searches across the United States and the reason why it took a little bit longer than our other endpoints is because it's going through that Nationwide data in regards to our latitude our search by endpoints these are specific to an area um as as you may know it's an address or um well parcel name such as Parts number and owner name um is also searching Nationwide as well but this one by far is the best one for query by Fields using multiple parameters that you can use to get the information that you need one other thing I would like to show is our polygon endpoint we have two versions of posts and a git and the Git Version we have a geojson polygon shape already defined if you like to try your own geojson polygon shape you can go to geojson.io to create your own polygon shape unless you already have a map layer that can already do that for yourself I'm going to go ahead and limit this to five um actually let me go ahead and not limit this and I'll get the count for how many Parcels are within this polygon shape and there are 38 and it also includes the Acres within this polygon shape the square meters within this polygon shape as well as the square miles within this polygon shape so there's quite a lot of information here um just for the count version but uh if you don't want to use the count and you [Music] um just with the parcels then you don't need to use this uh attribute I mean this parameter and that is it um oh actually one more thing I meant to show you about the usage so in regards to the usage um you can go ahead and take your and your token that is already loaded into the multiplication section and go ahead and get a full history of your usage so so far I've did three requests and had one result that one result means that for every time I use count parameter that does not count as results because I'm just getting a count this value increments when parcel records are returned so it is one um and it has a full history of using this token and since we're just using this for today because that is the April 28th um it has the information for today all right so that is it for a walk through on how to use the interactive API sandbox how to get your token and if you have any questions please reach out to us at help regrid.com thank you",
+  "attempts": [
+    {
+      "client": "IOS",
+      "playability": {
+        "status": "OK",
+        "playableInEmbed": true,
+        "offlineability": {
+          "buttonRenderer": {
+            "navigationEndpoint": {
+              "clickTrackingParams": "CAoQ6ewBIhMInJ78lOzblwMV0XQSAR3-7x_8ygEEeefzbw==",
+              "ypcGetOfflineUpsellEndpoint": {
+                "params": "ChPqqN25AQ0KC1JWYWtLQXZGYV9NIgtSVmFrS0F2RmFfTSoVCAkYAVIPCgtSVmFrS0F2RmFfTSAB"
+              }
+            },
+            "trackingParams": "CAoQ6ewBIhMInJ78lOzblwMV0XQSAR3-7x_8"
+          }
+        },
+        "pictureInPicture": {
+          "pictureInPictureRenderer": {
+            "playableInPip": true,
+            "offByDefault": false,
+            "shouldResumeOnHead": false
+          }
+        },
+        "miniplayer": {
+          "miniplayerRenderer": {
+            "playbackMode": "PLAYBACK_MODE_ALLOW"
+          }
+        },
+        "contextParams": "Q0FFU0FnZ0M="
+      },
+      "outcome": "ok"
+    }
+  ],
+  "fetched_at": "2026-10-28T04:11:41.964498+00:00",
+  "client": "IOS",
+  "json_path": "transcripts/165_RVakKAvFa_M.json",
+  "text_path": "transcripts/165_RVakKAvFa_M.txt"
+}

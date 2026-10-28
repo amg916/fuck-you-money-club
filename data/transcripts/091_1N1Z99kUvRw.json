@@ -1,0 +1,1051 @@
+{
+  "index": 91,
+  "url": "https://www.youtube.com/watch?v=1N1Z99kUvRw",
+  "video_id": "1N1Z99kUvRw",
+  "status": "ok",
+  "metadata": {
+    "title": "Surplus Funds: Owner Died - STILL CLAIM!",
+    "author": "SurplusFundsRiches",
+    "channelId": "UCtmurzSHjGbiX8hMCo8evng",
+    "lengthSeconds": "410",
+    "viewCount": "1407",
+    "shortDescription": "https://surplusfundsriches.net",
+    "keywords": [
+      "surplus funds",
+      "excess proceeds",
+      "tax overages",
+      "mortgage overages",
+      "overbids",
+      "overage syndicate",
+      "tax sale blueprint",
+      "surplus funds mastery",
+      "bob diamond",
+      "spencer vann",
+      "shawn buige",
+      "nick fullmer"
+    ]
+  },
+  "caption_tracks": [
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=1N1Z99kUvRw&ei=73XhauzMKsucsfIPg__YQQ&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185887&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=733D704D1DC36CCA17042528F30740317D54CEF1.2B8A50AD788091020FC10B751DD130758138501F&key=yt8&kind=asr&lang=en",
+      "name": {
+        "runs": [
+          {
+            "text": "English (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.en",
+      "languageCode": "en",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=1N1Z99kUvRw&ei=73XhauzMKsucsfIPg__YQQ&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185887&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=733D704D1DC36CCA17042528F30740317D54CEF1.2B8A50AD788091020FC10B751DD130758138501F&key=yt8&kind=asr&lang=fr-FR&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "French (France) (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.fr-FR",
+      "languageCode": "fr-FR",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=1N1Z99kUvRw&ei=73XhauzMKsucsfIPg__YQQ&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185887&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=733D704D1DC36CCA17042528F30740317D54CEF1.2B8A50AD788091020FC10B751DD130758138501F&key=yt8&kind=asr&lang=it&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Italian (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.it",
+      "languageCode": "it",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=1N1Z99kUvRw&ei=73XhauzMKsucsfIPg__YQQ&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185887&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=733D704D1DC36CCA17042528F30740317D54CEF1.2B8A50AD788091020FC10B751DD130758138501F&key=yt8&kind=asr&lang=pt-BR&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Portuguese (Brazil) (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.pt-BR",
+      "languageCode": "pt-BR",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    }
+  ],
+  "selected_track": {
+    "baseUrl": "https://www.youtube.com/api/timedtext?v=1N1Z99kUvRw&ei=73XhauzMKsucsfIPg__YQQ&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185887&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=733D704D1DC36CCA17042528F30740317D54CEF1.2B8A50AD788091020FC10B751DD130758138501F&key=yt8&kind=asr&lang=en",
+    "name": {
+      "runs": [
+        {
+          "text": "English (auto-generated)"
+        }
+      ]
+    },
+    "vssId": "a.en",
+    "languageCode": "en",
+    "kind": "asr",
+    "isTranslatable": true,
+    "trackName": ""
+  },
+  "segments": [
+    {
+      "start": 0.12,
+      "duration": 2.94,
+      "text": "hey guys Sean Buju"
+    },
+    {
+      "start": 1.7,
+      "duration": 4.42,
+      "text": "surplusfundsreaches.net we're going to"
+    },
+    {
+      "start": 3.06,
+      "duration": 4.5,
+      "text": "talk about the number one issue that's"
+    },
+    {
+      "start": 6.12,
+      "duration": 4.26,
+      "text": "going to affect you in the next three to"
+    },
+    {
+      "start": 7.56,
+      "duration": 4.92,
+      "text": "ten years and knowing what I'm about to"
+    },
+    {
+      "start": 10.38,
+      "duration": 4.799,
+      "text": "tell you is going to make some people"
+    },
+    {
+      "start": 12.48,
+      "duration": 4.26,
+      "text": "hundreds of thousands of dollars in the"
+    },
+    {
+      "start": 15.179,
+      "duration": 3.661,
+      "text": "coming years I'm going to tell you why"
+    },
+    {
+      "start": 16.74,
+      "duration": 3.78,
+      "text": "we're going to cover joint tenants or"
+    },
+    {
+      "start": 18.84,
+      "duration": 3.84,
+      "text": "threats survivorship importance of the"
+    },
+    {
+      "start": 20.52,
+      "duration": 5.179,
+      "text": "day to death community property rights"
+    },
+    {
+      "start": 22.68,
+      "duration": 6.54,
+      "text": "and property and trust a huge issue"
+    },
+    {
+      "start": 25.699,
+      "duration": 6.041,
+      "text": "looming on the horizon right now is a"
+    },
+    {
+      "start": 29.22,
+      "duration": 4.74,
+      "text": "tsunami of deaths coming up here's why"
+    },
+    {
+      "start": 31.74,
+      "duration": 5.819,
+      "text": "first let's look at home ownership rates"
+    },
+    {
+      "start": 33.96,
+      "duration": 4.92,
+      "text": "among the 65 to 74 year olds they have"
+    },
+    {
+      "start": 37.559,
+      "duration": 3.721,
+      "text": "the highest home ownership rate is"
+    },
+    {
+      "start": 38.88,
+      "duration": 4.08,
+      "text": "almost of almost 80 percent so the"
+    },
+    {
+      "start": 41.28,
+      "duration": 5.88,
+      "text": "opportunity that it's going to be an"
+    },
+    {
+      "start": 42.96,
+      "duration": 6.56,
+      "text": "older person 65 to 74 is very high that"
+    },
+    {
+      "start": 47.16,
+      "duration": 5.52,
+      "text": "loses their their house in foreclosures"
+    },
+    {
+      "start": 49.52,
+      "duration": 5.559,
+      "text": "56.9 percent of homeowners age 30 to 34"
+    },
+    {
+      "start": 52.68,
+      "duration": 5.219,
+      "text": "have been in their homes three years or"
+    },
+    {
+      "start": 55.079,
+      "duration": 6.061,
+      "text": "less so the big big number here is the"
+    },
+    {
+      "start": 57.899,
+      "duration": 5.221,
+      "text": "65 to 74 year olds why is that important"
+    },
+    {
+      "start": 61.14,
+      "duration": 4.14,
+      "text": "this is from uh Center for Health"
+    },
+    {
+      "start": 63.12,
+      "duration": 4.319,
+      "text": "statistics the average life expectancy"
+    },
+    {
+      "start": 65.28,
+      "duration": 4.86,
+      "text": "is currently 76 years old"
+    },
+    {
+      "start": 67.439,
+      "duration": 5.521,
+      "text": "sorry monstrous portion of the"
+    },
+    {
+      "start": 70.14,
+      "duration": 5.4,
+      "text": "population that owns homes is about to"
+    },
+    {
+      "start": 72.96,
+      "duration": 4.199,
+      "text": "die now most you guys are chasing"
+    },
+    {
+      "start": 75.54,
+      "duration": 3.36,
+      "text": "Airship and trying to call people and"
+    },
+    {
+      "start": 77.159,
+      "duration": 4.261,
+      "text": "try to figure all that out if you would"
+    },
+    {
+      "start": 78.9,
+      "duration": 4.74,
+      "text": "just read the deed you'd avoid all that"
+    },
+    {
+      "start": 81.42,
+      "duration": 4.14,
+      "text": "real quick I'm going to teach you how to"
+    },
+    {
+      "start": 83.64,
+      "duration": 4.32,
+      "text": "look at a deed and tell if the person's"
+    },
+    {
+      "start": 85.56,
+      "duration": 4.68,
+      "text": "dead without going any further and then"
+    },
+    {
+      "start": 87.96,
+      "duration": 4.08,
+      "text": "I'm going to teach you the dragon slayer"
+    },
+    {
+      "start": 90.24,
+      "duration": 4.8,
+      "text": "how to get around probate and estate"
+    },
+    {
+      "start": 92.04,
+      "duration": 5.88,
+      "text": "issues just by reading the deed if there"
+    },
+    {
+      "start": 95.04,
+      "duration": 6.539,
+      "text": "are certain things Incorporated in that"
+    },
+    {
+      "start": 97.92,
+      "duration": 5.04,
+      "text": "D first of all if the deed a lot of the"
+    },
+    {
+      "start": 101.579,
+      "duration": 4.321,
+      "text": "older Deeds are handwritten believe it"
+    },
+    {
+      "start": 102.96,
+      "duration": 4.799,
+      "text": "or not but if the deed that transfer the"
+    },
+    {
+      "start": 105.9,
+      "duration": 3.539,
+      "text": "ownership to the owner who owned it at"
+    },
+    {
+      "start": 107.759,
+      "duration": 4.801,
+      "text": "the time of the sale was recorded in"
+    },
+    {
+      "start": 109.439,
+      "duration": 5.281,
+      "text": "1960 or earlier you pretty much you know"
+    },
+    {
+      "start": 112.56,
+      "duration": 4.919,
+      "text": "that person on the deed is dead just so"
+    },
+    {
+      "start": 114.72,
+      "duration": 4.32,
+      "text": "you know why they were probably 20 years"
+    },
+    {
+      "start": 117.479,
+      "duration": 4.5,
+      "text": "old at the time that would put it at"
+    },
+    {
+      "start": 119.04,
+      "duration": 5.16,
+      "text": "1940 1940 is their birthday it is now"
+    },
+    {
+      "start": 121.979,
+      "duration": 4.92,
+      "text": "2023 that's 83 years old the average"
+    },
+    {
+      "start": 124.2,
+      "duration": 5.82,
+      "text": "person was 76 years the chance that they"
+    },
+    {
+      "start": 126.899,
+      "duration": 4.92,
+      "text": "went beyond that is slim to none"
+    },
+    {
+      "start": 130.02,
+      "duration": 3.12,
+      "text": "so if you see an older deed or if you're"
+    },
+    {
+      "start": 131.819,
+      "duration": 2.821,
+      "text": "in a registered Deeds Department that"
+    },
+    {
+      "start": 133.14,
+      "duration": 5.099,
+      "text": "only recorded Deeds"
+    },
+    {
+      "start": 134.64,
+      "duration": 5.819,
+      "text": "back to let's say 19 1916 is oh there's"
+    },
+    {
+      "start": 138.239,
+      "duration": 4.14,
+      "text": "another D but I can't get it yeah it's"
+    },
+    {
+      "start": 140.459,
+      "duration": 4.441,
+      "text": "older than 1960 the person is dead"
+    },
+    {
+      "start": 142.379,
+      "duration": 4.741,
+      "text": "that's just a given okay now how do we"
+    },
+    {
+      "start": 144.9,
+      "duration": 4.68,
+      "text": "get around this how do we get past all"
+    },
+    {
+      "start": 147.12,
+      "duration": 4.259,
+      "text": "the estate and probate issues we read"
+    },
+    {
+      "start": 149.58,
+      "duration": 3.299,
+      "text": "the deed we're going to talk about joint"
+    },
+    {
+      "start": 151.379,
+      "duration": 2.761,
+      "text": "tenants with the right survivorship the"
+    },
+    {
+      "start": 152.879,
+      "duration": 3.181,
+      "text": "importance of the date of death with"
+    },
+    {
+      "start": 154.14,
+      "duration": 3.9,
+      "text": "that and community property States you"
+    },
+    {
+      "start": 156.06,
+      "duration": 3.899,
+      "text": "guys are going to be blown away by this"
+    },
+    {
+      "start": 158.04,
+      "duration": 4.979,
+      "text": "first thing you need to know is in many"
+    },
+    {
+      "start": 159.959,
+      "duration": 4.86,
+      "text": "states joint tenants if they got it if"
+    },
+    {
+      "start": 163.019,
+      "duration": 4.621,
+      "text": "it was transferred to John and Mary"
+    },
+    {
+      "start": 164.819,
+      "duration": 5.461,
+      "text": "Smith as joint tenants in many states"
+    },
+    {
+      "start": 167.64,
+      "duration": 5.7,
+      "text": "that means joint tenants with rights of"
+    },
+    {
+      "start": 170.28,
+      "duration": 4.38,
+      "text": "survivorship okay what that means is"
+    },
+    {
+      "start": 173.34,
+      "duration": 3.0,
+      "text": "that when the person if one of the"
+    },
+    {
+      "start": 174.66,
+      "duration": 4.92,
+      "text": "spouses died it transferred to the other"
+    },
+    {
+      "start": 176.34,
+      "duration": 4.56,
+      "text": "one at their death at the death of the"
+    },
+    {
+      "start": 179.58,
+      "duration": 3.86,
+      "text": "spouse"
+    },
+    {
+      "start": 180.9,
+      "duration": 5.64,
+      "text": "in a few States this is really wild"
+    },
+    {
+      "start": 183.44,
+      "duration": 5.379,
+      "text": "Simply Having a deed with both names"
+    },
+    {
+      "start": 186.54,
+      "duration": 3.779,
+      "text": "followed by married or husband and wife"
+    },
+    {
+      "start": 188.819,
+      "duration": 3.84,
+      "text": "North Carolina is one of these states"
+    },
+    {
+      "start": 190.319,
+      "duration": 3.901,
+      "text": "that establishes a joint tenants with"
+    },
+    {
+      "start": 192.659,
+      "duration": 3.181,
+      "text": "the right survivorship automatically you"
+    },
+    {
+      "start": 194.22,
+      "duration": 3.299,
+      "text": "gotta that's why we use attorneys guys"
+    },
+    {
+      "start": 195.84,
+      "duration": 3.539,
+      "text": "you can ask the attorney in a situation"
+    },
+    {
+      "start": 197.519,
+      "duration": 4.561,
+      "text": "like that they can answer it like that"
+    },
+    {
+      "start": 199.379,
+      "duration": 4.561,
+      "text": "the real wild one is community States"
+    },
+    {
+      "start": 202.08,
+      "duration": 3.54,
+      "text": "there's nine of These Guys these states"
+    },
+    {
+      "start": 203.94,
+      "duration": 4.32,
+      "text": "establish joint tenants with the right"
+    },
+    {
+      "start": 205.62,
+      "duration": 4.92,
+      "text": "survivorship even if the spouse wasn't"
+    },
+    {
+      "start": 208.26,
+      "duration": 4.8,
+      "text": "listed on the deed"
+    },
+    {
+      "start": 210.54,
+      "duration": 4.02,
+      "text": "okay I'm going to get to that but let's"
+    },
+    {
+      "start": 213.06,
+      "duration": 4.14,
+      "text": "talk about joint tanks with the right"
+    },
+    {
+      "start": 214.56,
+      "duration": 4.38,
+      "text": "survivorship first so with joint tenants"
+    },
+    {
+      "start": 217.2,
+      "duration": 4.259,
+      "text": "with the right survivorship the number"
+    },
+    {
+      "start": 218.94,
+      "duration": 4.92,
+      "text": "one factor is the date of death guys"
+    },
+    {
+      "start": 221.459,
+      "duration": 5.221,
+      "text": "here's an example Barry and Elizabeth"
+    },
+    {
+      "start": 223.86,
+      "duration": 4.5,
+      "text": "Hurley bought the home January 1st 1998"
+    },
+    {
+      "start": 226.68,
+      "duration": 4.199,
+      "text": "as joint tenants with the right"
+    },
+    {
+      "start": 228.36,
+      "duration": 7.2,
+      "text": "survivorship you see a lot of that"
+    },
+    {
+      "start": 230.879,
+      "duration": 7.201,
+      "text": "Barry dies March the 1st 2023 his"
+    },
+    {
+      "start": 235.56,
+      "duration": 5.039,
+      "text": "ownership would transfer at that point"
+    },
+    {
+      "start": 238.08,
+      "duration": 5.159,
+      "text": "no need for a state no need for probate"
+    },
+    {
+      "start": 240.599,
+      "duration": 4.441,
+      "text": "the deed said husband and wife literally"
+    },
+    {
+      "start": 243.239,
+      "duration": 3.901,
+      "text": "Elizabeth could walk down to the court"
+    },
+    {
+      "start": 245.04,
+      "duration": 4.38,
+      "text": "with a death certificate and prove that"
+    },
+    {
+      "start": 247.14,
+      "duration": 4.679,
+      "text": "she's a sole owner of the property"
+    },
+    {
+      "start": 249.42,
+      "duration": 5.099,
+      "text": "which means she'd be a solo on the"
+    },
+    {
+      "start": 251.819,
+      "duration": 5.04,
+      "text": "Surplus right or not not so fast"
+    },
+    {
+      "start": 254.519,
+      "duration": 4.321,
+      "text": "with Surplus we look at the foreclosure"
+    },
+    {
+      "start": 256.859,
+      "duration": 5.16,
+      "text": "date versus the date of death so if the"
+    },
+    {
+      "start": 258.84,
+      "duration": 6.24,
+      "text": "property was foreclosed on February 28th"
+    },
+    {
+      "start": 262.019,
+      "duration": 4.74,
+      "text": "and Barry died March 1st Barry's"
+    },
+    {
+      "start": 265.08,
+      "duration": 3.48,
+      "text": "ownership hadn't passed at the time in"
+    },
+    {
+      "start": 266.759,
+      "duration": 3.481,
+      "text": "the Foreclosure to Elizabeth so now"
+    },
+    {
+      "start": 268.56,
+      "duration": 3.84,
+      "text": "we've got that instance we have to deal"
+    },
+    {
+      "start": 270.24,
+      "duration": 4.019,
+      "text": "with their ship she didn't have 100 of"
+    },
+    {
+      "start": 272.4,
+      "duration": 4.38,
+      "text": "the property that didn't happen yet so"
+    },
+    {
+      "start": 274.259,
+      "duration": 4.5,
+      "text": "Elizabeth can claim half the Surplus and"
+    },
+    {
+      "start": 276.78,
+      "duration": 3.419,
+      "text": "the other half will be divided among"
+    },
+    {
+      "start": 278.759,
+      "duration": 3.301,
+      "text": "heirs probably some to her as well"
+    },
+    {
+      "start": 280.199,
+      "duration": 3.72,
+      "text": "because of the rights of survivorship"
+    },
+    {
+      "start": 282.06,
+      "duration": 5.22,
+      "text": "did not kick in until after the property"
+    },
+    {
+      "start": 283.919,
+      "duration": 5.701,
+      "text": "was lost so it didn't happen is the"
+    },
+    {
+      "start": 287.28,
+      "duration": 4.38,
+      "text": "transfer of his portion to her didn't"
+    },
+    {
+      "start": 289.62,
+      "duration": 3.96,
+      "text": "happen very important you understand it"
+    },
+    {
+      "start": 291.66,
+      "duration": 4.68,
+      "text": "date of death is everything if the"
+    },
+    {
+      "start": 293.58,
+      "duration": 4.5,
+      "text": "property was foreclosed on March 2nd"
+    },
+    {
+      "start": 296.34,
+      "duration": 4.919,
+      "text": "Barry's ownership passed to Elizabeth"
+    },
+    {
+      "start": 298.08,
+      "duration": 5.399,
+      "text": "the day before when he died at his death"
+    },
+    {
+      "start": 301.259,
+      "duration": 4.141,
+      "text": "so Elizabeth since it passed completely"
+    },
+    {
+      "start": 303.479,
+      "duration": 4.021,
+      "text": "to her the day before the foreclosure"
+    },
+    {
+      "start": 305.4,
+      "duration": 4.2,
+      "text": "she gets all the Surplus you don't have"
+    },
+    {
+      "start": 307.5,
+      "duration": 3.84,
+      "text": "to worry about probate or estate big"
+    },
+    {
+      "start": 309.6,
+      "duration": 4.5,
+      "text": "deal now here's where it gets wacky"
+    },
+    {
+      "start": 311.34,
+      "duration": 5.46,
+      "text": "let's talk about if the D doesn't list a"
+    },
+    {
+      "start": 314.1,
+      "duration": 4.319,
+      "text": "spouse but in these states if they were"
+    },
+    {
+      "start": 316.8,
+      "duration": 4.679,
+      "text": "married not divorced at the time of the"
+    },
+    {
+      "start": 318.419,
+      "duration": 5.041,
+      "text": "Foreclosure that spouse even if they're"
+    },
+    {
+      "start": 321.479,
+      "duration": 4.141,
+      "text": "not on the deed is entitled to all the"
+    },
+    {
+      "start": 323.46,
+      "duration": 3.48,
+      "text": "Surplus sound crazy it's gonna think"
+    },
+    {
+      "start": 325.62,
+      "duration": 3.12,
+      "text": "about how much this is going to save you"
+    },
+    {
+      "start": 326.94,
+      "duration": 3.84,
+      "text": "guys right so you find out the owner"
+    },
+    {
+      "start": 328.74,
+      "duration": 3.959,
+      "text": "died but then you also find out he was"
+    },
+    {
+      "start": 330.78,
+      "duration": 3.18,
+      "text": "married not divorced at the time of the"
+    },
+    {
+      "start": 332.699,
+      "duration": 3.301,
+      "text": "Foreclosure even though there's nobody"
+    },
+    {
+      "start": 333.96,
+      "duration": 3.959,
+      "text": "else on the deed in these nine states if"
+    },
+    {
+      "start": 336.0,
+      "duration": 3.84,
+      "text": "you can prove he was married to someone"
+    },
+    {
+      "start": 337.919,
+      "duration": 5.401,
+      "text": "else and that spouse is still alive"
+    },
+    {
+      "start": 339.84,
+      "duration": 6.359,
+      "text": "they're entitled to 100 percent 100"
+    },
+    {
+      "start": 343.32,
+      "duration": 5.159,
+      "text": "let's look at these are your nine golden"
+    },
+    {
+      "start": 346.199,
+      "duration": 4.861,
+      "text": "states because it's community property"
+    },
+    {
+      "start": 348.479,
+      "duration": 4.381,
+      "text": "law even if The spouse's name wasn't on"
+    },
+    {
+      "start": 351.06,
+      "duration": 3.479,
+      "text": "the deed they were married not divorced"
+    },
+    {
+      "start": 352.86,
+      "duration": 2.94,
+      "text": "at the time of the foreclosure and the"
+    },
+    {
+      "start": 354.539,
+      "duration": 3.541,
+      "text": "other person died prior to the"
+    },
+    {
+      "start": 355.8,
+      "duration": 4.38,
+      "text": "Foreclosure right the person on the Deep"
+    },
+    {
+      "start": 358.08,
+      "duration": 4.14,
+      "text": "died prior to the Foreclosure but they"
+    },
+    {
+      "start": 360.18,
+      "duration": 4.56,
+      "text": "were married and you can prove that in"
+    },
+    {
+      "start": 362.22,
+      "duration": 4.02,
+      "text": "these nine states the spouse even not"
+    },
+    {
+      "start": 364.74,
+      "duration": 4.58,
+      "text": "being on the deed is entitled the money"
+    },
+    {
+      "start": 366.24,
+      "duration": 6.239,
+      "text": "Arizona California Idaho Louisiana"
+    },
+    {
+      "start": 369.32,
+      "duration": 5.98,
+      "text": "Nevada New Mexico Washington state"
+    },
+    {
+      "start": 372.479,
+      "duration": 6.421,
+      "text": "Wisconsin and Texas this is a big deal"
+    },
+    {
+      "start": 375.3,
+      "duration": 6.839,
+      "text": "guys now lastly let's talk about"
+    },
+    {
+      "start": 378.9,
+      "duration": 5.82,
+      "text": "property and Trust if the property is in"
+    },
+    {
+      "start": 382.139,
+      "duration": 4.62,
+      "text": "a trust not a person individually see"
+    },
+    {
+      "start": 384.72,
+      "duration": 3.599,
+      "text": "you've got to read the deed guys if the"
+    },
+    {
+      "start": 386.759,
+      "duration": 3.301,
+      "text": "property is in a trust not a person"
+    },
+    {
+      "start": 388.319,
+      "duration": 3.421,
+      "text": "individually the administrator the trust"
+    },
+    {
+      "start": 390.06,
+      "duration": 3.72,
+      "text": "is the person that's entitled to Surplus"
+    },
+    {
+      "start": 391.74,
+      "duration": 3.179,
+      "text": "they'll figure out how to disperse it as"
+    },
+    {
+      "start": 393.78,
+      "duration": 3.24,
+      "text": "long as they're the administrator"
+    },
+    {
+      "start": 394.919,
+      "duration": 4.021,
+      "text": "they're entitled now there's usually a"
+    },
+    {
+      "start": 397.02,
+      "duration": 4.08,
+      "text": "backup administrator too so if the"
+    },
+    {
+      "start": 398.94,
+      "duration": 5.58,
+      "text": "administrator passed there's usually a"
+    },
+    {
+      "start": 401.1,
+      "duration": 4.92,
+      "text": "chain someone else you can follow guys I"
+    },
+    {
+      "start": 404.52,
+      "duration": 2.88,
+      "text": "just made you guys hundreds of thousands"
+    },
+    {
+      "start": 406.02,
+      "duration": 4.7,
+      "text": "of dollars in the next three to ten"
+    },
+    {
+      "start": 407.4,
+      "duration": 3.32,
+      "text": "years you're welcome"
+    }
+  ],
+  "full_text": "hey guys Sean Buju surplusfundsreaches.net we're going to talk about the number one issue that's going to affect you in the next three to ten years and knowing what I'm about to tell you is going to make some people hundreds of thousands of dollars in the coming years I'm going to tell you why we're going to cover joint tenants or threats survivorship importance of the day to death community property rights and property and trust a huge issue looming on the horizon right now is a tsunami of deaths coming up here's why first let's look at home ownership rates among the 65 to 74 year olds they have the highest home ownership rate is almost of almost 80 percent so the opportunity that it's going to be an older person 65 to 74 is very high that loses their their house in foreclosures 56.9 percent of homeowners age 30 to 34 have been in their homes three years or less so the big big number here is the 65 to 74 year olds why is that important this is from uh Center for Health statistics the average life expectancy is currently 76 years old sorry monstrous portion of the population that owns homes is about to die now most you guys are chasing Airship and trying to call people and try to figure all that out if you would just read the deed you'd avoid all that real quick I'm going to teach you how to look at a deed and tell if the person's dead without going any further and then I'm going to teach you the dragon slayer how to get around probate and estate issues just by reading the deed if there are certain things Incorporated in that D first of all if the deed a lot of the older Deeds are handwritten believe it or not but if the deed that transfer the ownership to the owner who owned it at the time of the sale was recorded in 1960 or earlier you pretty much you know that person on the deed is dead just so you know why they were probably 20 years old at the time that would put it at 1940 1940 is their birthday it is now 2023 that's 83 years old the average person was 76 years the chance that they went beyond that is slim to none so if you see an older deed or if you're in a registered Deeds Department that only recorded Deeds back to let's say 19 1916 is oh there's another D but I can't get it yeah it's older than 1960 the person is dead that's just a given okay now how do we get around this how do we get past all the estate and probate issues we read the deed we're going to talk about joint tenants with the right survivorship the importance of the date of death with that and community property States you guys are going to be blown away by this first thing you need to know is in many states joint tenants if they got it if it was transferred to John and Mary Smith as joint tenants in many states that means joint tenants with rights of survivorship okay what that means is that when the person if one of the spouses died it transferred to the other one at their death at the death of the spouse in a few States this is really wild Simply Having a deed with both names followed by married or husband and wife North Carolina is one of these states that establishes a joint tenants with the right survivorship automatically you gotta that's why we use attorneys guys you can ask the attorney in a situation like that they can answer it like that the real wild one is community States there's nine of These Guys these states establish joint tenants with the right survivorship even if the spouse wasn't listed on the deed okay I'm going to get to that but let's talk about joint tanks with the right survivorship first so with joint tenants with the right survivorship the number one factor is the date of death guys here's an example Barry and Elizabeth Hurley bought the home January 1st 1998 as joint tenants with the right survivorship you see a lot of that Barry dies March the 1st 2023 his ownership would transfer at that point no need for a state no need for probate the deed said husband and wife literally Elizabeth could walk down to the court with a death certificate and prove that she's a sole owner of the property which means she'd be a solo on the Surplus right or not not so fast with Surplus we look at the foreclosure date versus the date of death so if the property was foreclosed on February 28th and Barry died March 1st Barry's ownership hadn't passed at the time in the Foreclosure to Elizabeth so now we've got that instance we have to deal with their ship she didn't have 100 of the property that didn't happen yet so Elizabeth can claim half the Surplus and the other half will be divided among heirs probably some to her as well because of the rights of survivorship did not kick in until after the property was lost so it didn't happen is the transfer of his portion to her didn't happen very important you understand it date of death is everything if the property was foreclosed on March 2nd Barry's ownership passed to Elizabeth the day before when he died at his death so Elizabeth since it passed completely to her the day before the foreclosure she gets all the Surplus you don't have to worry about probate or estate big deal now here's where it gets wacky let's talk about if the D doesn't list a spouse but in these states if they were married not divorced at the time of the Foreclosure that spouse even if they're not on the deed is entitled to all the Surplus sound crazy it's gonna think about how much this is going to save you guys right so you find out the owner died but then you also find out he was married not divorced at the time of the Foreclosure even though there's nobody else on the deed in these nine states if you can prove he was married to someone else and that spouse is still alive they're entitled to 100 percent 100 let's look at these are your nine golden states because it's community property law even if The spouse's name wasn't on the deed they were married not divorced at the time of the foreclosure and the other person died prior to the Foreclosure right the person on the Deep died prior to the Foreclosure but they were married and you can prove that in these nine states the spouse even not being on the deed is entitled the money Arizona California Idaho Louisiana Nevada New Mexico Washington state Wisconsin and Texas this is a big deal guys now lastly let's talk about property and Trust if the property is in a trust not a person individually see you've got to read the deed guys if the property is in a trust not a person individually the administrator the trust is the person that's entitled to Surplus they'll figure out how to disperse it as long as they're the administrator they're entitled now there's usually a backup administrator too so if the administrator passed there's usually a chain someone else you can follow guys I just made you guys hundreds of thousands of dollars in the next three to ten years you're welcome",
+  "attempts": [
+    {
+      "client": "IOS",
+      "playability": {
+        "status": "OK",
+        "playableInEmbed": true,
+        "offlineability": {
+          "buttonRenderer": {
+            "navigationEndpoint": {
+              "clickTrackingParams": "CBIQ6ewBIhMIrIDDjuzblwMVS05MCB2DPzYIygEE5rPgRw==",
+              "ypcGetOfflineUpsellEndpoint": {
+                "params": "ChPqqN25AQ0KCzFOMVo5OWtVdlJ3IgsxTjFaOTlrVXZSdyoVCAkYAVIPCgsxTjFaOTlrVXZSdyAB"
+              }
+            },
+            "trackingParams": "CBIQ6ewBIhMIrIDDjuzblwMVS05MCB2DPzYI"
+          }
+        },
+        "pictureInPicture": {
+          "pictureInPictureRenderer": {
+            "playableInPip": true,
+            "offByDefault": false,
+            "shouldResumeOnHead": false
+          }
+        },
+        "miniplayer": {
+          "miniplayerRenderer": {
+            "playbackMode": "PLAYBACK_MODE_ALLOW"
+          }
+        },
+        "contextParams": "Q0FFU0FnZ0M="
+      },
+      "outcome": "ok"
+    }
+  ],
+  "fetched_at": "2026-10-28T04:11:28.568273+00:00",
+  "client": "IOS",
+  "json_path": "transcripts/091_1N1Z99kUvRw.json",
+  "text_path": "transcripts/091_1N1Z99kUvRw.txt"
+}

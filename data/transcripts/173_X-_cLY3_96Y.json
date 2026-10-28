@@ -1,0 +1,910 @@
+{
+  "index": 173,
+  "url": "https://www.youtube.com/watch?v=X-_cLY3_96Y",
+  "video_id": "X-_cLY3_96Y",
+  "status": "ok",
+  "metadata": {
+    "title": "Feature Service Product Demo",
+    "author": "Regrid",
+    "channelId": "UCY6_FliC-rX76wQMYyow-1A",
+    "lengthSeconds": "370",
+    "viewCount": "749",
+    "shortDescription": "Incorporate Regrid’s Nationwide Parcel Data via our Esri compatible Feature Service. For enterprises centered on Esri technologies.\n\nRegrid Feature Service is compatible with:\n- ArcGIS Pro (Desktop Software)\n- Application configuration tools hosted on ArcGIS Online\n- JavaScript API development environments & SDKs\n\nSimply Integrate with a URL for full parcel geometries and associated attributes in Regrid’s Standard or Premium Parcel Record Schema.\n\nNo custom integration, no data wrangling!\n\nSo if you are building & configuring apps primarily out of an Esri stack, then this is the solution for you. \n\nReach out for a trial token - parcels@regrid.com\nLearn more on our site - https://regrid.com/feature-service",
+    "keywords": [
+      "regrid",
+      "parcel data",
+      "gis",
+      "esri",
+      "arc gis",
+      "launch",
+      "nationwide",
+      "loveland",
+      "esri compatible",
+      "feature service",
+      "arc gis pro",
+      "sdks",
+      "javascript",
+      "maps",
+      "mapping",
+      "cadastral"
+    ]
+  },
+  "caption_tracks": [
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=X-_cLY3_96Y&ei=_nXhau6QJtfQsfIPhdursA0&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185902&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=E452DB7F3BF90760669D7617210A61630CAF6DDE.37D5AC611171FE77AD2BA8B25F4168E7F83A6A5E&key=yt8&kind=asr&lang=en",
+      "name": {
+        "runs": [
+          {
+            "text": "English (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.en",
+      "languageCode": "en",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    }
+  ],
+  "selected_track": {
+    "baseUrl": "https://www.youtube.com/api/timedtext?v=X-_cLY3_96Y&ei=_nXhau6QJtfQsfIPhdursA0&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185902&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=E452DB7F3BF90760669D7617210A61630CAF6DDE.37D5AC611171FE77AD2BA8B25F4168E7F83A6A5E&key=yt8&kind=asr&lang=en",
+    "name": {
+      "runs": [
+        {
+          "text": "English (auto-generated)"
+        }
+      ]
+    },
+    "vssId": "a.en",
+    "languageCode": "en",
+    "kind": "asr",
+    "isTranslatable": true,
+    "trackName": ""
+  },
+  "segments": [
+    {
+      "start": 2.639,
+      "duration": 3.841,
+      "text": "welcome to regrid this will be a quick"
+    },
+    {
+      "start": 4.799,
+      "duration": 3.921,
+      "text": "video demoing our new regrid feature"
+    },
+    {
+      "start": 6.48,
+      "duration": 4.079,
+      "text": "service an esri compatible solution that"
+    },
+    {
+      "start": 8.72,
+      "duration": 3.999,
+      "text": "deploys our nationwide land parcel data"
+    },
+    {
+      "start": 10.559,
+      "duration": 3.601,
+      "text": "straight into your esri environment"
+    },
+    {
+      "start": 12.719,
+      "duration": 3.201,
+      "text": "for enterprises centered on esri"
+    },
+    {
+      "start": 14.16,
+      "duration": 4.0,
+      "text": "technologies regrid feature service is"
+    },
+    {
+      "start": 15.92,
+      "duration": 3.359,
+      "text": "compatible with esri arcgis pro on the"
+    },
+    {
+      "start": 18.16,
+      "duration": 3.199,
+      "text": "desktop"
+    },
+    {
+      "start": 19.279,
+      "duration": 4.0,
+      "text": "app configuration tools and javascript"
+    },
+    {
+      "start": 21.359,
+      "duration": 4.16,
+      "text": "api development environments"
+    },
+    {
+      "start": 23.279,
+      "duration": 3.76,
+      "text": "simply integrate with our url for full"
+    },
+    {
+      "start": 25.519,
+      "duration": 3.52,
+      "text": "parcel geometries and associated"
+    },
+    {
+      "start": 27.039,
+      "duration": 3.601,
+      "text": "attributes in regrid's parcel records"
+    },
+    {
+      "start": 29.039,
+      "duration": 3.121,
+      "text": "schema"
+    },
+    {
+      "start": 30.64,
+      "duration": 3.36,
+      "text": "here we're going to quickly demo loading"
+    },
+    {
+      "start": 32.16,
+      "duration": 4.0,
+      "text": "our premium parcel data into arcgis"
+    },
+    {
+      "start": 34.0,
+      "duration": 4.8,
+      "text": "online you can do the same to configure"
+    },
+    {
+      "start": 36.16,
+      "duration": 5.6,
+      "text": "web apps hosted on agol"
+    },
+    {
+      "start": 38.8,
+      "duration": 5.68,
+      "text": "the first and key step is to use our"
+    },
+    {
+      "start": 41.76,
+      "duration": 5.279,
+      "text": "token and url to link the"
+    },
+    {
+      "start": 44.48,
+      "duration": 4.32,
+      "text": "feature service to the arcgis online"
+    },
+    {
+      "start": 47.039,
+      "duration": 5.121,
+      "text": "environment so to do that"
+    },
+    {
+      "start": 48.8,
+      "duration": 5.52,
+      "text": "you go to content on the top left"
+    },
+    {
+      "start": 52.16,
+      "duration": 4.399,
+      "text": "new item"
+    },
+    {
+      "start": 54.32,
+      "duration": 5.039,
+      "text": "and from here you'll click url"
+    },
+    {
+      "start": 56.559,
+      "duration": 5.121,
+      "text": "and here you'll paste in the url as well"
+    },
+    {
+      "start": 59.359,
+      "duration": 4.88,
+      "text": "as the token that you got when you have"
+    },
+    {
+      "start": 61.68,
+      "duration": 5.119,
+      "text": "access to that from the regrid team"
+    },
+    {
+      "start": 64.239,
+      "duration": 4.56,
+      "text": "this will automatically uh select the"
+    },
+    {
+      "start": 66.799,
+      "duration": 4.561,
+      "text": "arcgis server web service as the type"
+    },
+    {
+      "start": 68.799,
+      "duration": 5.121,
+      "text": "which is correct we'll hit next"
+    },
+    {
+      "start": 71.36,
+      "duration": 3.92,
+      "text": "you'll be prompted to set a title for"
+    },
+    {
+      "start": 73.92,
+      "duration": 4.8,
+      "text": "the thing here i'm just going to call it"
+    },
+    {
+      "start": 75.28,
+      "duration": 3.44,
+      "text": "regrid feature service demo"
+    },
+    {
+      "start": 79.84,
+      "duration": 5.36,
+      "text": "hit save and once that goes through you"
+    },
+    {
+      "start": 82.08,
+      "duration": 5.76,
+      "text": "can see that uh it has been added to"
+    },
+    {
+      "start": 85.2,
+      "duration": 4.64,
+      "text": "your arcgis online account"
+    },
+    {
+      "start": 87.84,
+      "duration": 6.08,
+      "text": "you can always get back to where you"
+    },
+    {
+      "start": 89.84,
+      "duration": 6.8,
+      "text": "added it from the content pane"
+    },
+    {
+      "start": 93.92,
+      "duration": 4.4,
+      "text": "once you have it here as you see now"
+    },
+    {
+      "start": 96.64,
+      "duration": 4.64,
+      "text": "you're ready to add it to either your"
+    },
+    {
+      "start": 98.32,
+      "duration": 5.28,
+      "text": "arcgis online map or pull it into a an"
+    },
+    {
+      "start": 101.28,
+      "duration": 4.159,
+      "text": "arcgis online app or if you so choose"
+    },
+    {
+      "start": 103.6,
+      "duration": 3.36,
+      "text": "you can open it in arcgis desktop but"
+    },
+    {
+      "start": 105.439,
+      "duration": 3.36,
+      "text": "once it's in that sort of content"
+    },
+    {
+      "start": 106.96,
+      "duration": 2.88,
+      "text": "section you can do whatever you'd like"
+    },
+    {
+      "start": 108.799,
+      "duration": 2.401,
+      "text": "from here"
+    },
+    {
+      "start": 109.84,
+      "duration": 3.44,
+      "text": "for the purposes of this demo i'm going"
+    },
+    {
+      "start": 111.2,
+      "duration": 3.84,
+      "text": "to open it in the map viewer the new"
+    },
+    {
+      "start": 113.28,
+      "duration": 3.68,
+      "text": "version as you can see you could also"
+    },
+    {
+      "start": 115.04,
+      "duration": 3.759,
+      "text": "open it in esri's map viewer classic"
+    },
+    {
+      "start": 116.96,
+      "duration": 4.64,
+      "text": "which is the slightly older arcgis"
+    },
+    {
+      "start": 118.799,
+      "duration": 2.801,
+      "text": "online version"
+    },
+    {
+      "start": 123.119,
+      "duration": 3.04,
+      "text": "having clicked on open in map viewer"
+    },
+    {
+      "start": 124.88,
+      "duration": 3.999,
+      "text": "you'll see that it'll take you back to"
+    },
+    {
+      "start": 126.159,
+      "duration": 4.88,
+      "text": "sort of the map view here and the"
+    },
+    {
+      "start": 128.879,
+      "duration": 4.0,
+      "text": "parcels will load in as sort of this"
+    },
+    {
+      "start": 131.039,
+      "duration": 3.601,
+      "text": "default light blue"
+    },
+    {
+      "start": 132.879,
+      "duration": 3.44,
+      "text": "so here we have the parcels loaded in on"
+    },
+    {
+      "start": 134.64,
+      "duration": 4.88,
+      "text": "the map if we care to click on any given"
+    },
+    {
+      "start": 136.319,
+      "duration": 6.161,
+      "text": "one you can see that all of the"
+    },
+    {
+      "start": 139.52,
+      "duration": 5.92,
+      "text": "attributes that we have for this parcel"
+    },
+    {
+      "start": 142.48,
+      "duration": 2.96,
+      "text": "can be pulled up here"
+    },
+    {
+      "start": 145.68,
+      "duration": 3.68,
+      "text": "once the layer is loaded in the map"
+    },
+    {
+      "start": 147.12,
+      "duration": 4.08,
+      "text": "viewer you can of course do all of the"
+    },
+    {
+      "start": 149.36,
+      "duration": 4.48,
+      "text": "functions that the map viewer allows so"
+    },
+    {
+      "start": 151.2,
+      "duration": 4.399,
+      "text": "for example here i've selected owner"
+    },
+    {
+      "start": 153.84,
+      "duration": 3.039,
+      "text": "name as the attribute that i'd like to"
+    },
+    {
+      "start": 155.599,
+      "duration": 3.441,
+      "text": "filter on"
+    },
+    {
+      "start": 156.879,
+      "duration": 4.481,
+      "text": "and then i'm going to just as an example"
+    },
+    {
+      "start": 159.04,
+      "duration": 5.36,
+      "text": "here put in"
+    },
+    {
+      "start": 161.36,
+      "duration": 5.28,
+      "text": "uh properties that are owned by"
+    },
+    {
+      "start": 164.4,
+      "duration": 4.559,
+      "text": "someone who has ann arbor in the title"
+    },
+    {
+      "start": 166.64,
+      "duration": 3.679,
+      "text": "you can see how the parcels here"
+    },
+    {
+      "start": 168.959,
+      "duration": 3.681,
+      "text": "reduced to just those that fit that"
+    },
+    {
+      "start": 170.319,
+      "duration": 4.801,
+      "text": "criteria and if we scroll down"
+    },
+    {
+      "start": 172.64,
+      "duration": 4.72,
+      "text": "to owner in one of the parcels that we"
+    },
+    {
+      "start": 175.12,
+      "duration": 3.44,
+      "text": "see still highlighted here"
+    },
+    {
+      "start": 177.36,
+      "duration": 3.76,
+      "text": "you can see here"
+    },
+    {
+      "start": 178.56,
+      "duration": 6.0,
+      "text": "city of ann arbor"
+    },
+    {
+      "start": 181.12,
+      "duration": 5.199,
+      "text": "similarly if we would like to manipulate"
+    },
+    {
+      "start": 184.56,
+      "duration": 3.36,
+      "text": "the styles and change the way that the"
+    },
+    {
+      "start": 186.319,
+      "duration": 3.84,
+      "text": "parcel layer looks"
+    },
+    {
+      "start": 187.92,
+      "duration": 4.8,
+      "text": "you can do all of that under the styles"
+    },
+    {
+      "start": 190.159,
+      "duration": 4.641,
+      "text": "drop down so for example let's say that"
+    },
+    {
+      "start": 192.72,
+      "duration": 4.4,
+      "text": "we want to"
+    },
+    {
+      "start": 194.8,
+      "duration": 4.719,
+      "text": "style the properties"
+    },
+    {
+      "start": 197.12,
+      "duration": 4.08,
+      "text": "on a gradated scale based on their"
+    },
+    {
+      "start": 199.519,
+      "duration": 4.0,
+      "text": "acreage"
+    },
+    {
+      "start": 201.2,
+      "duration": 3.599,
+      "text": "we can do that here so we first choose"
+    },
+    {
+      "start": 203.519,
+      "duration": 3.841,
+      "text": "the field"
+    },
+    {
+      "start": 204.799,
+      "duration": 6.481,
+      "text": "in this case loveland calculated acres"
+    },
+    {
+      "start": 207.36,
+      "duration": 3.92,
+      "text": "then we go down to counts and amounts"
+    },
+    {
+      "start": 211.519,
+      "duration": 5.28,
+      "text": "and you can see how the data now changes"
+    },
+    {
+      "start": 214.159,
+      "duration": 4.16,
+      "text": "so that the larger parcels are a darker"
+    },
+    {
+      "start": 216.799,
+      "duration": 2.881,
+      "text": "color"
+    },
+    {
+      "start": 218.319,
+      "duration": 3.041,
+      "text": "so that's been a quick rundown of the"
+    },
+    {
+      "start": 219.68,
+      "duration": 4.8,
+      "text": "sort of things that you can do once you"
+    },
+    {
+      "start": 221.36,
+      "duration": 5.2,
+      "text": "load our feature service into the arcgis"
+    },
+    {
+      "start": 224.48,
+      "duration": 3.28,
+      "text": "online map viewer"
+    },
+    {
+      "start": 226.56,
+      "duration": 3.12,
+      "text": "the last thing i want to touch on before"
+    },
+    {
+      "start": 227.76,
+      "duration": 4.479,
+      "text": "we go is to talk a little bit about how"
+    },
+    {
+      "start": 229.68,
+      "duration": 5.759,
+      "text": "you could load this layer into any of"
+    },
+    {
+      "start": 232.239,
+      "duration": 4.801,
+      "text": "the multitude of arcgis online apps that"
+    },
+    {
+      "start": 235.439,
+      "duration": 2.321,
+      "text": "exist"
+    },
+    {
+      "start": 237.04,
+      "duration": 4.0,
+      "text": "so"
+    },
+    {
+      "start": 237.76,
+      "duration": 5.36,
+      "text": "from a map view that incorporates the"
+    },
+    {
+      "start": 241.04,
+      "duration": 5.6,
+      "text": "regrid feature service layer"
+    },
+    {
+      "start": 243.12,
+      "duration": 6.0,
+      "text": "you'd want to click save and open"
+    },
+    {
+      "start": 246.64,
+      "duration": 3.599,
+      "text": "and then you would say save as and"
+    },
+    {
+      "start": 249.12,
+      "duration": 3.72,
+      "text": "you're going to want to save this as a"
+    },
+    {
+      "start": 250.239,
+      "duration": 5.041,
+      "text": "map so i'm going to call this"
+    },
+    {
+      "start": 252.84,
+      "duration": 5.0,
+      "text": "regrid feature service"
+    },
+    {
+      "start": 255.28,
+      "duration": 5.04,
+      "text": "demo map"
+    },
+    {
+      "start": 257.84,
+      "duration": 2.48,
+      "text": "save it"
+    },
+    {
+      "start": 262.8,
+      "duration": 7.04,
+      "text": "now that this has been saved i can go"
+    },
+    {
+      "start": 265.36,
+      "duration": 4.48,
+      "text": "into our content page again"
+    },
+    {
+      "start": 270.56,
+      "duration": 3.44,
+      "text": "from here you'll see both the feature"
+    },
+    {
+      "start": 272.479,
+      "duration": 3.28,
+      "text": "layer that we added initially and then"
+    },
+    {
+      "start": 274.0,
+      "duration": 2.72,
+      "text": "the web map that we just saved a second"
+    },
+    {
+      "start": 275.759,
+      "duration": 3.44,
+      "text": "ago"
+    },
+    {
+      "start": 276.72,
+      "duration": 4.96,
+      "text": "and from here you can click create app"
+    },
+    {
+      "start": 279.199,
+      "duration": 4.081,
+      "text": "instant apps"
+    },
+    {
+      "start": 281.68,
+      "duration": 4.64,
+      "text": "and then you'll be able to"
+    },
+    {
+      "start": 283.28,
+      "duration": 5.12,
+      "text": "select from any of the multitudes of"
+    },
+    {
+      "start": 286.32,
+      "duration": 4.96,
+      "text": "apps that are available here"
+    },
+    {
+      "start": 288.4,
+      "duration": 5.68,
+      "text": "um in this case i'll just choose"
+    },
+    {
+      "start": 291.28,
+      "duration": 4.08,
+      "text": "one at random let's say this basic one"
+    },
+    {
+      "start": 294.08,
+      "duration": 3.679,
+      "text": "uh"
+    },
+    {
+      "start": 295.36,
+      "duration": 5.92,
+      "text": "regrid demo app"
+    },
+    {
+      "start": 297.759,
+      "duration": 3.521,
+      "text": "feature service is what i'll call this"
+    },
+    {
+      "start": 301.759,
+      "duration": 4.88,
+      "text": "here we see uh that now so the the app"
+    },
+    {
+      "start": 304.24,
+      "duration": 4.08,
+      "text": "is open and we're given the next steps"
+    },
+    {
+      "start": 306.639,
+      "duration": 4.0,
+      "text": "to be able to load this in so we have to"
+    },
+    {
+      "start": 308.32,
+      "duration": 4.64,
+      "text": "navigate to the map section in the side"
+    },
+    {
+      "start": 310.639,
+      "duration": 2.321,
+      "text": "panel"
+    },
+    {
+      "start": 314.639,
+      "duration": 3.84,
+      "text": "here we see the map that i made a second"
+    },
+    {
+      "start": 316.24,
+      "duration": 2.239,
+      "text": "ago"
+    },
+    {
+      "start": 322.72,
+      "duration": 3.28,
+      "text": "and then we'll go through all the other"
+    },
+    {
+      "start": 324.479,
+      "duration": 3.041,
+      "text": "steps uh"
+    },
+    {
+      "start": 326.0,
+      "duration": 3.68,
+      "text": "here and then you there you would have"
+    },
+    {
+      "start": 327.52,
+      "duration": 4.959,
+      "text": "your app so any of the apps that we saw"
+    },
+    {
+      "start": 329.68,
+      "duration": 4.079,
+      "text": "in that overview uh you can load them in"
+    },
+    {
+      "start": 332.479,
+      "duration": 3.041,
+      "text": "as easily as this and then when you're"
+    },
+    {
+      "start": 333.759,
+      "duration": 3.361,
+      "text": "done you would hit publish and there you"
+    },
+    {
+      "start": 335.52,
+      "duration": 3.119,
+      "text": "would have an app that pulls in our"
+    },
+    {
+      "start": 337.12,
+      "duration": 3.44,
+      "text": "feature service layer ready for you to"
+    },
+    {
+      "start": 338.639,
+      "duration": 3.681,
+      "text": "do whatever the application is that you"
+    },
+    {
+      "start": 340.56,
+      "duration": 3.359,
+      "text": "would like to do"
+    },
+    {
+      "start": 342.32,
+      "duration": 3.68,
+      "text": "so there you have it it's as simple as"
+    },
+    {
+      "start": 343.919,
+      "duration": 4.881,
+      "text": "using a url to load our parcel data as a"
+    },
+    {
+      "start": 346.0,
+      "duration": 4.32,
+      "text": "nationwide data layer into the arcgis"
+    },
+    {
+      "start": 348.8,
+      "duration": 2.88,
+      "text": "environment and from there you can take"
+    },
+    {
+      "start": 350.32,
+      "duration": 4.0,
+      "text": "it wherever you would like you can load"
+    },
+    {
+      "start": 351.68,
+      "duration": 5.359,
+      "text": "it into the viewer you can pull it into"
+    },
+    {
+      "start": 354.32,
+      "duration": 5.28,
+      "text": "the desktop and you can create instant"
+    },
+    {
+      "start": 357.039,
+      "duration": 4.561,
+      "text": "apps that use it as a layer"
+    },
+    {
+      "start": 359.6,
+      "duration": 3.36,
+      "text": "and of course if you are interested in"
+    },
+    {
+      "start": 361.6,
+      "duration": 5.719,
+      "text": "this reach out to our friendly sales"
+    },
+    {
+      "start": 362.96,
+      "duration": 4.359,
+      "text": "team and get a sample today"
+    }
+  ],
+  "full_text": "welcome to regrid this will be a quick video demoing our new regrid feature service an esri compatible solution that deploys our nationwide land parcel data straight into your esri environment for enterprises centered on esri technologies regrid feature service is compatible with esri arcgis pro on the desktop app configuration tools and javascript api development environments simply integrate with our url for full parcel geometries and associated attributes in regrid's parcel records schema here we're going to quickly demo loading our premium parcel data into arcgis online you can do the same to configure web apps hosted on agol the first and key step is to use our token and url to link the feature service to the arcgis online environment so to do that you go to content on the top left new item and from here you'll click url and here you'll paste in the url as well as the token that you got when you have access to that from the regrid team this will automatically uh select the arcgis server web service as the type which is correct we'll hit next you'll be prompted to set a title for the thing here i'm just going to call it regrid feature service demo hit save and once that goes through you can see that uh it has been added to your arcgis online account you can always get back to where you added it from the content pane once you have it here as you see now you're ready to add it to either your arcgis online map or pull it into a an arcgis online app or if you so choose you can open it in arcgis desktop but once it's in that sort of content section you can do whatever you'd like from here for the purposes of this demo i'm going to open it in the map viewer the new version as you can see you could also open it in esri's map viewer classic which is the slightly older arcgis online version having clicked on open in map viewer you'll see that it'll take you back to sort of the map view here and the parcels will load in as sort of this default light blue so here we have the parcels loaded in on the map if we care to click on any given one you can see that all of the attributes that we have for this parcel can be pulled up here once the layer is loaded in the map viewer you can of course do all of the functions that the map viewer allows so for example here i've selected owner name as the attribute that i'd like to filter on and then i'm going to just as an example here put in uh properties that are owned by someone who has ann arbor in the title you can see how the parcels here reduced to just those that fit that criteria and if we scroll down to owner in one of the parcels that we see still highlighted here you can see here city of ann arbor similarly if we would like to manipulate the styles and change the way that the parcel layer looks you can do all of that under the styles drop down so for example let's say that we want to style the properties on a gradated scale based on their acreage we can do that here so we first choose the field in this case loveland calculated acres then we go down to counts and amounts and you can see how the data now changes so that the larger parcels are a darker color so that's been a quick rundown of the sort of things that you can do once you load our feature service into the arcgis online map viewer the last thing i want to touch on before we go is to talk a little bit about how you could load this layer into any of the multitude of arcgis online apps that exist so from a map view that incorporates the regrid feature service layer you'd want to click save and open and then you would say save as and you're going to want to save this as a map so i'm going to call this regrid feature service demo map save it now that this has been saved i can go into our content page again from here you'll see both the feature layer that we added initially and then the web map that we just saved a second ago and from here you can click create app instant apps and then you'll be able to select from any of the multitudes of apps that are available here um in this case i'll just choose one at random let's say this basic one uh regrid demo app feature service is what i'll call this here we see uh that now so the the app is open and we're given the next steps to be able to load this in so we have to navigate to the map section in the side panel here we see the map that i made a second ago and then we'll go through all the other steps uh here and then you there you would have your app so any of the apps that we saw in that overview uh you can load them in as easily as this and then when you're done you would hit publish and there you would have an app that pulls in our feature service layer ready for you to do whatever the application is that you would like to do so there you have it it's as simple as using a url to load our parcel data as a nationwide data layer into the arcgis environment and from there you can take it wherever you would like you can load it into the viewer you can pull it into the desktop and you can create instant apps that use it as a layer and of course if you are interested in this reach out to our friendly sales team and get a sample today",
+  "attempts": [
+    {
+      "client": "IOS",
+      "playability": {
+        "status": "OK",
+        "playableInEmbed": true,
+        "offlineability": {
+          "buttonRenderer": {
+            "navigationEndpoint": {
+              "clickTrackingParams": "CBEQ6ewBIhMI7ofSlezblwMVV2hMCB2F7QrWygEE40cmiA==",
+              "ypcGetOfflineUpsellEndpoint": {
+                "params": "ChPqqN25AQ0KC1gtX2NMWTNfOTZZIgtYLV9jTFkzXzk2WSoVCAkYAVIPCgtYLV9jTFkzXzk2WSAB"
+              }
+            },
+            "trackingParams": "CBEQ6ewBIhMI7ofSlezblwMVV2hMCB2F7QrW"
+          }
+        },
+        "pictureInPicture": {
+          "pictureInPictureRenderer": {
+            "playableInPip": true,
+            "offByDefault": false,
+            "shouldResumeOnHead": false
+          }
+        },
+        "miniplayer": {
+          "miniplayerRenderer": {
+            "playbackMode": "PLAYBACK_MODE_ALLOW"
+          }
+        },
+        "contextParams": "Q0FFU0FnZ0M="
+      },
+      "outcome": "ok"
+    }
+  ],
+  "fetched_at": "2026-10-28T04:11:43.271114+00:00",
+  "client": "IOS",
+  "json_path": "transcripts/173_X-_cLY3_96Y.json",
+  "text_path": "transcripts/173_X-_cLY3_96Y.txt"
+}

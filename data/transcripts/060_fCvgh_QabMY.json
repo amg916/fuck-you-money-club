@@ -1,0 +1,2902 @@
+{
+  "index": 60,
+  "url": "https://www.youtube.com/watch?v=fCvgh_QabMY",
+  "video_id": "fCvgh_QabMY",
+  "status": "ok",
+  "metadata": {
+    "title": "Records Analysis: Level up Your Probate Skills",
+    "author": "FamilySearch",
+    "channelId": "UC-9GZ7QHKOmLS0APnfz2g1Q",
+    "lengthSeconds": "1281",
+    "viewCount": "1273",
+    "shortDescription": "Learn more about how to get the most out of probate records. This session, Records Analysis: Level up Your Probate Skills, will also cover substitute records that can be used to find similar genealogical information.\n\nThis presentation was part of RootsTech Connect 2021. Find hundreds of free family history classes, keynotes, and more. http://familysearch.me/RootsTech \n\n#rootstechconnect\n\nRootsTech is hosted by FamilySearch, a global nonprofit organization dedicated to creating inspiring family discovery experiences. RootsTech is the premier global event and learning resource for making family connections and receiving guidance to help people learn more about their families.  \n\nFamilySearch is an international, nonprofit organization dedicated to helping people all over the world connect with their family: past, present, and future. Our partnerships with thousands of record custodians and major genealogical organizations allow us to make billions of records available for you to research your family tree free of charge! Regardless of where or how you research your ancestry, we have specialists all over the world to help you experience the joy of connecting with your heritage.\n\nOur desire to Connect with the Past, Present, and Future https://youtu.be/3cmj5kGm2Xw   \n\nSubscribe:  \nhttp://familysearch.me/youtube   \nhttp://familysearch.me/youtubeportuguese   \nhttp://familysearch.me/youtubespanish   \nhttp://familysearch.me/youtubeeurope   \n\nConnect with FamilySearch:  \nVisit: http://familysearch.me/home   \nLike FamilySearch on Facebook: http://familysearch.me/facebook   \nFollow FamilySearch on Twitter: http://familysearch.me/twitter   \nFollow FamilySearch on Instagram: http://familysearch.me/instagram"
+  },
+  "caption_tracks": [
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=fCvgh_QabMY&ei=6nXhaujdH5aWsfIP1fHd2AY&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185882&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=BC99C7411DC1866F87D92537405CF036BDEC09C3.E21A9062D364C67763908158E33944F8F306D0A2&key=yt8&kind=asr&lang=en",
+      "name": {
+        "runs": [
+          {
+            "text": "English (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.en",
+      "languageCode": "en",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    }
+  ],
+  "selected_track": {
+    "baseUrl": "https://www.youtube.com/api/timedtext?v=fCvgh_QabMY&ei=6nXhaujdH5aWsfIP1fHd2AY&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185882&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=BC99C7411DC1866F87D92537405CF036BDEC09C3.E21A9062D364C67763908158E33944F8F306D0A2&key=yt8&kind=asr&lang=en",
+    "name": {
+      "runs": [
+        {
+          "text": "English (auto-generated)"
+        }
+      ]
+    },
+    "vssId": "a.en",
+    "languageCode": "en",
+    "kind": "asr",
+    "isTranslatable": true,
+    "trackName": ""
+  },
+  "segments": [
+    {
+      "start": 7.6,
+      "duration": 3.119,
+      "text": "hi"
+    },
+    {
+      "start": 8.32,
+      "duration": 3.12,
+      "text": "i'm melissa finley welcome to this"
+    },
+    {
+      "start": 10.719,
+      "duration": 4.08,
+      "text": "presentation"
+    },
+    {
+      "start": 11.44,
+      "duration": 6.48,
+      "text": "entitled records analysis level up your"
+    },
+    {
+      "start": 14.799,
+      "duration": 3.121,
+      "text": "probate skills"
+    },
+    {
+      "start": 19.92,
+      "duration": 4.24,
+      "text": "when we talk about probate let's talk"
+    },
+    {
+      "start": 21.92,
+      "duration": 6.72,
+      "text": "about what is the purpose"
+    },
+    {
+      "start": 24.16,
+      "duration": 6.72,
+      "text": "the purpose of probate is to administer"
+    },
+    {
+      "start": 28.64,
+      "duration": 5.439,
+      "text": "all the legalities of a deceased"
+    },
+    {
+      "start": 30.88,
+      "duration": 3.199,
+      "text": "person's estate"
+    },
+    {
+      "start": 36.079,
+      "duration": 5.201,
+      "text": "probate is a multi-step court process"
+    },
+    {
+      "start": 39.6,
+      "duration": 3.52,
+      "text": "and even though i'm going to"
+    },
+    {
+      "start": 41.28,
+      "duration": 3.759,
+      "text": "specifically talk about the united"
+    },
+    {
+      "start": 43.12,
+      "duration": 4.16,
+      "text": "states process"
+    },
+    {
+      "start": 45.039,
+      "duration": 4.161,
+      "text": "this process is very similar in many"
+    },
+    {
+      "start": 47.28,
+      "duration": 4.0,
+      "text": "countries around the world"
+    },
+    {
+      "start": 49.2,
+      "duration": 3.359,
+      "text": "so i'm a united states expert but this"
+    },
+    {
+      "start": 51.28,
+      "duration": 4.0,
+      "text": "might apply"
+    },
+    {
+      "start": 52.559,
+      "duration": 5.121,
+      "text": "at least in some instances where you are"
+    },
+    {
+      "start": 55.28,
+      "duration": 4.48,
+      "text": "researching"
+    },
+    {
+      "start": 57.68,
+      "duration": 3.28,
+      "text": "so this multi-step court process"
+    },
+    {
+      "start": 59.76,
+      "duration": 3.84,
+      "text": "includes many"
+    },
+    {
+      "start": 60.96,
+      "duration": 3.68,
+      "text": "different facets of administering"
+    },
+    {
+      "start": 63.6,
+      "duration": 3.92,
+      "text": "someone's estate"
+    },
+    {
+      "start": 64.64,
+      "duration": 4.24,
+      "text": "and i'm only going to cover a few today"
+    },
+    {
+      "start": 67.52,
+      "duration": 3.279,
+      "text": "and some of those include"
+    },
+    {
+      "start": 68.88,
+      "duration": 3.279,
+      "text": "inventorying the property that the"
+    },
+    {
+      "start": 70.799,
+      "duration": 4.401,
+      "text": "person owned"
+    },
+    {
+      "start": 72.159,
+      "duration": 4.481,
+      "text": "paying off their debts dividing the"
+    },
+    {
+      "start": 75.2,
+      "duration": 3.599,
+      "text": "property that's remaining after the"
+    },
+    {
+      "start": 76.64,
+      "duration": 4.72,
+      "text": "debts are paid among the heirs"
+    },
+    {
+      "start": 78.799,
+      "duration": 3.921,
+      "text": "and then safeguarding any minor heirs"
+    },
+    {
+      "start": 81.36,
+      "duration": 3.48,
+      "text": "inheritance"
+    },
+    {
+      "start": 82.72,
+      "duration": 4.399,
+      "text": "until they are of legal age to manage it"
+    },
+    {
+      "start": 84.84,
+      "duration": 4.84,
+      "text": "themselves"
+    },
+    {
+      "start": 87.119,
+      "duration": 4.0,
+      "text": "now if you want to know all of the steps"
+    },
+    {
+      "start": 89.68,
+      "duration": 5.439,
+      "text": "that might be involved"
+    },
+    {
+      "start": 91.119,
+      "duration": 7.721,
+      "text": "in the probate process i will put a"
+    },
+    {
+      "start": 95.119,
+      "duration": 6.32,
+      "text": "link to an article for that in the"
+    },
+    {
+      "start": 98.84,
+      "duration": 4.52,
+      "text": "syllabus"
+    },
+    {
+      "start": 101.439,
+      "duration": 3.281,
+      "text": "here are some terms you need to know"
+    },
+    {
+      "start": 103.36,
+      "duration": 4.399,
+      "text": "when we're talking about"
+    },
+    {
+      "start": 104.72,
+      "duration": 5.52,
+      "text": "probate you need to know the word"
+    },
+    {
+      "start": 107.759,
+      "duration": 3.441,
+      "text": "testate test state means the deceased"
+    },
+    {
+      "start": 110.24,
+      "duration": 4.32,
+      "text": "wrote a will"
+    },
+    {
+      "start": 111.2,
+      "duration": 4.48,
+      "text": "before they died and when they wrote a"
+    },
+    {
+      "start": 114.56,
+      "duration": 2.8,
+      "text": "will before they died"
+    },
+    {
+      "start": 115.68,
+      "duration": 3.759,
+      "text": "they would have named the person they"
+    },
+    {
+      "start": 117.36,
+      "duration": 4.0,
+      "text": "wanted to carry out their wishes"
+    },
+    {
+      "start": 119.439,
+      "duration": 3.28,
+      "text": "and that person would be called the"
+    },
+    {
+      "start": 121.36,
+      "duration": 4.48,
+      "text": "executor or"
+    },
+    {
+      "start": 122.719,
+      "duration": 5.281,
+      "text": "the executrix executors for male and"
+    },
+    {
+      "start": 125.84,
+      "duration": 4.72,
+      "text": "executrix for a female who's doing"
+    },
+    {
+      "start": 128.0,
+      "duration": 2.56,
+      "text": "that job"
+    },
+    {
+      "start": 131.039,
+      "duration": 5.361,
+      "text": "people could also die intestate that"
+    },
+    {
+      "start": 134.08,
+      "duration": 5.76,
+      "text": "means the deceased did not leave a will"
+    },
+    {
+      "start": 136.4,
+      "duration": 6.24,
+      "text": "before they died in this case their"
+    },
+    {
+      "start": 139.84,
+      "duration": 4.08,
+      "text": "remaining family members or associates"
+    },
+    {
+      "start": 142.64,
+      "duration": 3.44,
+      "text": "have to go to the court"
+    },
+    {
+      "start": 143.92,
+      "duration": 3.36,
+      "text": "and ask to be appointed as the"
+    },
+    {
+      "start": 146.08,
+      "duration": 4.48,
+      "text": "administrator"
+    },
+    {
+      "start": 147.28,
+      "duration": 5.12,
+      "text": "or administrators of the estate in order"
+    },
+    {
+      "start": 150.56,
+      "duration": 4.48,
+      "text": "to basically do the same job"
+    },
+    {
+      "start": 152.4,
+      "duration": 6.0,
+      "text": "that the executive or executive does if"
+    },
+    {
+      "start": 155.04,
+      "duration": 3.36,
+      "text": "the person dies test date"
+    },
+    {
+      "start": 159.68,
+      "duration": 3.839,
+      "text": "another term to know is the term"
+    },
+    {
+      "start": 161.44,
+      "duration": 4.96,
+      "text": "community property"
+    },
+    {
+      "start": 163.519,
+      "duration": 3.761,
+      "text": "so there are several states in the"
+    },
+    {
+      "start": 166.4,
+      "duration": 3.52,
+      "text": "united states"
+    },
+    {
+      "start": 167.28,
+      "duration": 4.319,
+      "text": "that follow community property laws and"
+    },
+    {
+      "start": 169.92,
+      "duration": 2.72,
+      "text": "that means that each spouse when they're"
+    },
+    {
+      "start": 171.599,
+      "duration": 3.36,
+      "text": "both alive"
+    },
+    {
+      "start": 172.64,
+      "duration": 3.36,
+      "text": "basically own about 50 of the property"
+    },
+    {
+      "start": 174.959,
+      "duration": 3.841,
+      "text": "right they're equal"
+    },
+    {
+      "start": 176.0,
+      "duration": 5.28,
+      "text": "partners in their ownership and at death"
+    },
+    {
+      "start": 178.8,
+      "duration": 4.64,
+      "text": "the surviving spouse automatically"
+    },
+    {
+      "start": 181.28,
+      "duration": 3.28,
+      "text": "is the owner of 100 of their joint"
+    },
+    {
+      "start": 183.44,
+      "duration": 2.799,
+      "text": "property"
+    },
+    {
+      "start": 184.56,
+      "duration": 3.36,
+      "text": "but they can also have separate"
+    },
+    {
+      "start": 186.239,
+      "duration": 2.881,
+      "text": "ownership of anything that they have"
+    },
+    {
+      "start": 187.92,
+      "duration": 5.36,
+      "text": "inherited"
+    },
+    {
+      "start": 189.12,
+      "duration": 4.16,
+      "text": "through their own family lines"
+    },
+    {
+      "start": 195.44,
+      "duration": 4.48,
+      "text": "the rest of the areas are in the united"
+    },
+    {
+      "start": 198.48,
+      "duration": 4.0,
+      "text": "states the rest of the states are"
+    },
+    {
+      "start": 199.92,
+      "duration": 5.599,
+      "text": "non-community property areas"
+    },
+    {
+      "start": 202.48,
+      "duration": 6.0,
+      "text": "and in this case the woman"
+    },
+    {
+      "start": 205.519,
+      "duration": 3.44,
+      "text": "has really no property rights when she"
+    },
+    {
+      "start": 208.48,
+      "duration": 3.679,
+      "text": "is"
+    },
+    {
+      "start": 208.959,
+      "duration": 4.401,
+      "text": "married or single it's her father or her"
+    },
+    {
+      "start": 212.159,
+      "duration": 2.401,
+      "text": "husband that has those property rights"
+    },
+    {
+      "start": 213.36,
+      "duration": 3.519,
+      "text": "except for"
+    },
+    {
+      "start": 214.56,
+      "duration": 3.28,
+      "text": "she has a dour right to a third of the"
+    },
+    {
+      "start": 216.879,
+      "duration": 3.92,
+      "text": "property"
+    },
+    {
+      "start": 217.84,
+      "duration": 5.119,
+      "text": "um in case her husband dies she is able"
+    },
+    {
+      "start": 220.799,
+      "duration": 5.52,
+      "text": "to keep that property for her"
+    },
+    {
+      "start": 222.959,
+      "duration": 6.161,
+      "text": "lifetime to take care of herself"
+    },
+    {
+      "start": 226.319,
+      "duration": 3.92,
+      "text": "because of this dower write she must"
+    },
+    {
+      "start": 229.12,
+      "duration": 4.0,
+      "text": "release the dour"
+    },
+    {
+      "start": 230.239,
+      "duration": 4.08,
+      "text": "at any of the sales of the property that"
+    },
+    {
+      "start": 233.12,
+      "duration": 2.96,
+      "text": "her husband makes"
+    },
+    {
+      "start": 234.319,
+      "duration": 4.161,
+      "text": "so you'll often see this in deeds you'll"
+    },
+    {
+      "start": 236.08,
+      "duration": 4.719,
+      "text": "see the woman releasing her dower right"
+    },
+    {
+      "start": 238.48,
+      "duration": 4.319,
+      "text": "to the property her husband is selling"
+    },
+    {
+      "start": 240.799,
+      "duration": 3.201,
+      "text": "and then in non-community property areas"
+    },
+    {
+      "start": 242.799,
+      "duration": 3.44,
+      "text": "the man"
+    },
+    {
+      "start": 244.0,
+      "duration": 4.239,
+      "text": "has the right to courtesy if they have"
+    },
+    {
+      "start": 246.239,
+      "duration": 3.441,
+      "text": "living children together"
+    },
+    {
+      "start": 248.239,
+      "duration": 3.28,
+      "text": "which means he gets to keep all of the"
+    },
+    {
+      "start": 249.68,
+      "duration": 4.88,
+      "text": "woman's property after her decease"
+    },
+    {
+      "start": 251.519,
+      "duration": 5.12,
+      "text": "until the children until"
+    },
+    {
+      "start": 254.56,
+      "duration": 3.76,
+      "text": "the children come of age to inherit it"
+    },
+    {
+      "start": 256.639,
+      "duration": 2.961,
+      "text": "or he gets one third of the property"
+    },
+    {
+      "start": 258.32,
+      "duration": 3.599,
+      "text": "if they don't have living children"
+    },
+    {
+      "start": 259.6,
+      "duration": 4.56,
+      "text": "together just like she would for the dow"
+    },
+    {
+      "start": 261.919,
+      "duration": 4.881,
+      "text": "right"
+    },
+    {
+      "start": 264.16,
+      "duration": 3.44,
+      "text": "another term to know is guardianship"
+    },
+    {
+      "start": 266.8,
+      "duration": 2.8,
+      "text": "again those"
+    },
+    {
+      "start": 267.6,
+      "duration": 3.2,
+      "text": "minor heirs the ones who are not who are"
+    },
+    {
+      "start": 269.6,
+      "duration": 4.72,
+      "text": "still children who are not"
+    },
+    {
+      "start": 270.8,
+      "duration": 5.839,
+      "text": "of legal age yet need to have a guardian"
+    },
+    {
+      "start": 274.32,
+      "duration": 3.04,
+      "text": "um this is not a physical guardian"
+    },
+    {
+      "start": 276.639,
+      "duration": 2.241,
+      "text": "someone who"
+    },
+    {
+      "start": 277.36,
+      "duration": 3.119,
+      "text": "for instance adopts them or takes care"
+    },
+    {
+      "start": 278.88,
+      "duration": 3.84,
+      "text": "of them in their home but this is"
+    },
+    {
+      "start": 280.479,
+      "duration": 4.241,
+      "text": "someone who is managing their"
+    },
+    {
+      "start": 282.72,
+      "duration": 4.24,
+      "text": "property their legal right to their"
+    },
+    {
+      "start": 284.72,
+      "duration": 4.0,
+      "text": "property that is inherited"
+    },
+    {
+      "start": 286.96,
+      "duration": 3.84,
+      "text": "until they become of age which was"
+    },
+    {
+      "start": 288.72,
+      "duration": 5.039,
+      "text": "typically the age of 21."
+    },
+    {
+      "start": 290.8,
+      "duration": 4.0,
+      "text": "um and guardianship also is for"
+    },
+    {
+      "start": 293.759,
+      "duration": 3.44,
+      "text": "incompetent"
+    },
+    {
+      "start": 294.8,
+      "duration": 5.04,
+      "text": "adults that are proven to be incompetent"
+    },
+    {
+      "start": 297.199,
+      "duration": 2.641,
+      "text": "by the courts"
+    },
+    {
+      "start": 300.32,
+      "duration": 3.92,
+      "text": "so why do we even want to get into"
+    },
+    {
+      "start": 302.24,
+      "duration": 3.84,
+      "text": "probate records what is the genealogical"
+    },
+    {
+      "start": 304.24,
+      "duration": 4.08,
+      "text": "value of probate records"
+    },
+    {
+      "start": 306.08,
+      "duration": 3.2,
+      "text": "probate records can help us nail down"
+    },
+    {
+      "start": 308.32,
+      "duration": 4.56,
+      "text": "these types of"
+    },
+    {
+      "start": 309.28,
+      "duration": 7.12,
+      "text": "facts the date of death of our ancestor"
+    },
+    {
+      "start": 312.88,
+      "duration": 5.68,
+      "text": "their place of death often the records"
+    },
+    {
+      "start": 316.4,
+      "duration": 3.76,
+      "text": "provide generational linkages between"
+    },
+    {
+      "start": 318.56,
+      "duration": 3.84,
+      "text": "parents and children"
+    },
+    {
+      "start": 320.16,
+      "duration": 3.84,
+      "text": "and of course that includes a list of"
+    },
+    {
+      "start": 322.4,
+      "duration": 4.88,
+      "text": "heirs those are the things we hope"
+    },
+    {
+      "start": 324.0,
+      "duration": 3.28,
+      "text": "for in probate records"
+    },
+    {
+      "start": 327.68,
+      "duration": 4.64,
+      "text": "so now let's go over some examples to"
+    },
+    {
+      "start": 329.52,
+      "duration": 6.16,
+      "text": "see exactly the value of probate records"
+    },
+    {
+      "start": 332.32,
+      "duration": 5.36,
+      "text": "and sometimes we find them in tidy"
+    },
+    {
+      "start": 335.68,
+      "duration": 3.12,
+      "text": "probate packets including all the"
+    },
+    {
+      "start": 337.68,
+      "duration": 2.16,
+      "text": "different parts that went through the"
+    },
+    {
+      "start": 338.8,
+      "duration": 4.0,
+      "text": "court"
+    },
+    {
+      "start": 339.84,
+      "duration": 4.48,
+      "text": "but often we only find it in bits and"
+    },
+    {
+      "start": 342.8,
+      "duration": 4.08,
+      "text": "pieces and we'll go over both kinds of"
+    },
+    {
+      "start": 344.32,
+      "duration": 2.56,
+      "text": "examples"
+    },
+    {
+      "start": 347.28,
+      "duration": 6.24,
+      "text": "so first i want to look at the"
+    },
+    {
+      "start": 350.4,
+      "duration": 4.799,
+      "text": "wills and estates papers from"
+    },
+    {
+      "start": 353.52,
+      "duration": 3.679,
+      "text": "the north carolina estate files"
+    },
+    {
+      "start": 355.199,
+      "duration": 3.921,
+      "text": "collection on family search"
+    },
+    {
+      "start": 357.199,
+      "duration": 3.041,
+      "text": "this happens to be the packet for john"
+    },
+    {
+      "start": 359.12,
+      "duration": 5.12,
+      "text": "bassett"
+    },
+    {
+      "start": 360.24,
+      "duration": 5.28,
+      "text": "and it was dated 1785 although as you'll"
+    },
+    {
+      "start": 364.24,
+      "duration": 4.32,
+      "text": "see as we go through"
+    },
+    {
+      "start": 365.52,
+      "duration": 4.56,
+      "text": "this probate went through the court for"
+    },
+    {
+      "start": 368.56,
+      "duration": 4.72,
+      "text": "quite a few years to get all the"
+    },
+    {
+      "start": 370.08,
+      "duration": 3.2,
+      "text": "different parts complete"
+    },
+    {
+      "start": 373.52,
+      "duration": 5.44,
+      "text": "so one of the first dated pieces in this"
+    },
+    {
+      "start": 376.88,
+      "duration": 5.2,
+      "text": "packet which by the way has over a dozen"
+    },
+    {
+      "start": 378.96,
+      "duration": 6.56,
+      "text": "pages is a guardian bond"
+    },
+    {
+      "start": 382.08,
+      "duration": 5.76,
+      "text": "mordecai smith is giving a bond to the"
+    },
+    {
+      "start": 385.52,
+      "duration": 3.519,
+      "text": "court"
+    },
+    {
+      "start": 387.84,
+      "duration": 2.56,
+      "text": "saying that he's bound in a certain"
+    },
+    {
+      "start": 389.039,
+      "duration": 2.801,
+      "text": "amount of money to do his job"
+    },
+    {
+      "start": 390.4,
+      "duration": 3.519,
+      "text": "responsibly for"
+    },
+    {
+      "start": 391.84,
+      "duration": 4.799,
+      "text": "these minor children and this was"
+    },
+    {
+      "start": 393.919,
+      "duration": 4.56,
+      "text": "produced in court in 1775"
+    },
+    {
+      "start": 396.639,
+      "duration": 3.68,
+      "text": "and he is going to be the guardian for"
+    },
+    {
+      "start": 398.479,
+      "duration": 4.961,
+      "text": "the property of john"
+    },
+    {
+      "start": 400.319,
+      "duration": 8.081,
+      "text": "sally and olive bassett those are the"
+    },
+    {
+      "start": 403.44,
+      "duration": 6.96,
+      "text": "minor heirs of john bassett"
+    },
+    {
+      "start": 408.4,
+      "duration": 3.6,
+      "text": "so again these are the facts that we"
+    },
+    {
+      "start": 410.4,
+      "duration": 4.639,
+      "text": "gain just from this one"
+    },
+    {
+      "start": 412.0,
+      "duration": 3.039,
+      "text": "piece of paper"
+    },
+    {
+      "start": 418.0,
+      "duration": 6.24,
+      "text": "another interesting paper in this packet"
+    },
+    {
+      "start": 421.36,
+      "duration": 3.119,
+      "text": "is an account of sales of the belongings"
+    },
+    {
+      "start": 424.24,
+      "duration": 3.76,
+      "text": "of"
+    },
+    {
+      "start": 424.479,
+      "duration": 5.601,
+      "text": "john bassett so"
+    },
+    {
+      "start": 428.0,
+      "duration": 4.16,
+      "text": "in a lot of probate packets you'll find"
+    },
+    {
+      "start": 430.08,
+      "duration": 4.08,
+      "text": "an inventory of all the goods and"
+    },
+    {
+      "start": 432.16,
+      "duration": 4.24,
+      "text": "their approximate value and then you'll"
+    },
+    {
+      "start": 434.16,
+      "duration": 3.92,
+      "text": "also find an account of the inventory"
+    },
+    {
+      "start": 436.4,
+      "duration": 3.919,
+      "text": "being sold"
+    },
+    {
+      "start": 438.08,
+      "duration": 3.119,
+      "text": "and so in this case you can see it's"
+    },
+    {
+      "start": 440.319,
+      "duration": 3.28,
+      "text": "it's a small"
+    },
+    {
+      "start": 441.199,
+      "duration": 4.481,
+      "text": "page but they're selling things like"
+    },
+    {
+      "start": 443.599,
+      "duration": 4.241,
+      "text": "form implements and household goods"
+    },
+    {
+      "start": 445.68,
+      "duration": 4.72,
+      "text": "and then in the right hand column you"
+    },
+    {
+      "start": 447.84,
+      "duration": 3.84,
+      "text": "can see who is purchasing those items"
+    },
+    {
+      "start": 450.4,
+      "duration": 4.48,
+      "text": "and the amount that they're purchasing"
+    },
+    {
+      "start": 451.68,
+      "duration": 5.519,
+      "text": "it for one reason i really like these"
+    },
+    {
+      "start": 454.88,
+      "duration": 5.439,
+      "text": "sale of household goods lists"
+    },
+    {
+      "start": 457.199,
+      "duration": 4.961,
+      "text": "is because often you can find the widow"
+    },
+    {
+      "start": 460.319,
+      "duration": 3.681,
+      "text": "buying a lot of her household goods in"
+    },
+    {
+      "start": 462.16,
+      "duration": 3.68,
+      "text": "order to hold on to everything she needs"
+    },
+    {
+      "start": 464.0,
+      "duration": 4.0,
+      "text": "to run her household"
+    },
+    {
+      "start": 465.84,
+      "duration": 3.12,
+      "text": "in this particular list i thought it was"
+    },
+    {
+      "start": 468.0,
+      "duration": 3.199,
+      "text": "interesting that there"
+    },
+    {
+      "start": 468.96,
+      "duration": 3.519,
+      "text": "are no other individuals with the"
+    },
+    {
+      "start": 471.199,
+      "duration": 2.961,
+      "text": "surname bassett"
+    },
+    {
+      "start": 472.479,
+      "duration": 3.12,
+      "text": "anywhere to be found on the sale of"
+    },
+    {
+      "start": 474.16,
+      "duration": 3.759,
+      "text": "items"
+    },
+    {
+      "start": 475.599,
+      "duration": 4.401,
+      "text": "so they still might have been kin but"
+    },
+    {
+      "start": 477.919,
+      "duration": 4.56,
+      "text": "they were not of the basset surname"
+    },
+    {
+      "start": 480.0,
+      "duration": 4.16,
+      "text": "i do not see a widow on this list buying"
+    },
+    {
+      "start": 482.479,
+      "duration": 3.681,
+      "text": "any property so that might tell us"
+    },
+    {
+      "start": 484.16,
+      "duration": 5.2,
+      "text": "something"
+    },
+    {
+      "start": 486.16,
+      "duration": 3.759,
+      "text": "a lot of times in these sales you will"
+    },
+    {
+      "start": 489.36,
+      "duration": 4.559,
+      "text": "find"
+    },
+    {
+      "start": 489.919,
+      "duration": 5.921,
+      "text": "kin and neighbors there buying the goods"
+    },
+    {
+      "start": 493.919,
+      "duration": 3.441,
+      "text": "now this case was interesting because it"
+    },
+    {
+      "start": 495.84,
+      "duration": 4.56,
+      "text": "didn't actually get settled"
+    },
+    {
+      "start": 497.36,
+      "duration": 5.44,
+      "text": "all the way until 1795."
+    },
+    {
+      "start": 500.4,
+      "duration": 4.96,
+      "text": "so i'm not sure exactly why the case"
+    },
+    {
+      "start": 502.8,
+      "duration": 6.32,
+      "text": "file is listed as 1785"
+    },
+    {
+      "start": 505.36,
+      "duration": 6.72,
+      "text": "because we have a guardian bond in 1777"
+    },
+    {
+      "start": 509.12,
+      "duration": 6.719,
+      "text": "and a settlement in 1795 so this case"
+    },
+    {
+      "start": 512.08,
+      "duration": 3.759,
+      "text": "was going on for a long time"
+    },
+    {
+      "start": 516.479,
+      "duration": 3.68,
+      "text": "next let's look also uh this time in new"
+    },
+    {
+      "start": 519.2,
+      "duration": 4.12,
+      "text": "hampshire"
+    },
+    {
+      "start": 520.159,
+      "duration": 5.601,
+      "text": "at daniel chapman's estate file from"
+    },
+    {
+      "start": 523.32,
+      "duration": 5.48,
+      "text": "1815."
+    },
+    {
+      "start": 525.76,
+      "duration": 5.28,
+      "text": "so his uh"
+    },
+    {
+      "start": 528.8,
+      "duration": 4.24,
+      "text": "his widow came and i'm only showing you"
+    },
+    {
+      "start": 531.04,
+      "duration": 3.44,
+      "text": "a part of this petition there's actually"
+    },
+    {
+      "start": 533.04,
+      "duration": 2.72,
+      "text": "a back side of this that has more"
+    },
+    {
+      "start": 534.48,
+      "duration": 3.039,
+      "text": "information"
+    },
+    {
+      "start": 535.76,
+      "duration": 4.0,
+      "text": "but she came in for a petition for"
+    },
+    {
+      "start": 537.519,
+      "duration": 6.481,
+      "text": "administration on the estate of dan"
+    },
+    {
+      "start": 539.76,
+      "duration": 7.6,
+      "text": "chapman um late of newmarket"
+    },
+    {
+      "start": 544.0,
+      "duration": 5.279,
+      "text": "in november of 1815. so this"
+    },
+    {
+      "start": 547.36,
+      "duration": 3.52,
+      "text": "this just this little bit tells us a few"
+    },
+    {
+      "start": 549.279,
+      "duration": 5.441,
+      "text": "things"
+    },
+    {
+      "start": 550.88,
+      "duration": 6.399,
+      "text": "the widow's coming in so obviously dan"
+    },
+    {
+      "start": 554.72,
+      "duration": 4.32,
+      "text": "chapman has died before november 20th"
+    },
+    {
+      "start": 557.279,
+      "duration": 4.0,
+      "text": "1815"
+    },
+    {
+      "start": 559.04,
+      "duration": 4.479,
+      "text": "and she's asking for administration"
+    },
+    {
+      "start": 561.279,
+      "duration": 5.201,
+      "text": "rights which means he died without"
+    },
+    {
+      "start": 563.519,
+      "duration": 2.961,
+      "text": "leaving a will"
+    },
+    {
+      "start": 567.04,
+      "duration": 5.04,
+      "text": "then a couple of years later in 1818"
+    },
+    {
+      "start": 570.64,
+      "duration": 4.319,
+      "text": "um so this is actually just about two"
+    },
+    {
+      "start": 572.08,
+      "duration": 4.48,
+      "text": "years later because this is january 1818"
+    },
+    {
+      "start": 574.959,
+      "duration": 3.281,
+      "text": "the widow comes back again to the court"
+    },
+    {
+      "start": 576.56,
+      "duration": 3.44,
+      "text": "nancy chapman comes back"
+    },
+    {
+      "start": 578.24,
+      "duration": 3.92,
+      "text": "and this time she's asking for a"
+    },
+    {
+      "start": 580.0,
+      "duration": 6.72,
+      "text": "guardian to be appointed for her four"
+    },
+    {
+      "start": 582.16,
+      "duration": 4.56,
+      "text": "children the heirs of daniel chapman"
+    },
+    {
+      "start": 586.959,
+      "duration": 6.0,
+      "text": "and here we have um the man who was"
+    },
+    {
+      "start": 590.959,
+      "duration": 5.281,
+      "text": "going to be the guardian"
+    },
+    {
+      "start": 592.959,
+      "duration": 6.32,
+      "text": "listing the children all of john warren"
+    },
+    {
+      "start": 596.24,
+      "duration": 6.0,
+      "text": "and daniel chapman minor heirs"
+    },
+    {
+      "start": 599.279,
+      "duration": 3.521,
+      "text": "of daniel chapman deceased and he's"
+    },
+    {
+      "start": 602.24,
+      "duration": 2.719,
+      "text": "putting"
+    },
+    {
+      "start": 602.8,
+      "duration": 3.76,
+      "text": "a bond and he's also saying what"
+    },
+    {
+      "start": 604.959,
+      "duration": 2.481,
+      "text": "property he is going to manage for them"
+    },
+    {
+      "start": 606.56,
+      "duration": 3.68,
+      "text": "which is"
+    },
+    {
+      "start": 607.44,
+      "duration": 4.959,
+      "text": "a dwelling house and a barn and 90 acres"
+    },
+    {
+      "start": 610.24,
+      "duration": 5.44,
+      "text": "of land and all of the household"
+    },
+    {
+      "start": 612.399,
+      "duration": 3.281,
+      "text": "and farm implements"
+    },
+    {
+      "start": 616.72,
+      "duration": 3.44,
+      "text": "and then one of the final dated pieces"
+    },
+    {
+      "start": 619.519,
+      "duration": 4.721,
+      "text": "of paper"
+    },
+    {
+      "start": 620.16,
+      "duration": 7.359,
+      "text": "in this packet is a petition to sell"
+    },
+    {
+      "start": 624.24,
+      "duration": 4.88,
+      "text": "the property and the estate"
+    },
+    {
+      "start": 627.519,
+      "duration": 5.44,
+      "text": "of the heirs of daniel chapman and this"
+    },
+    {
+      "start": 629.12,
+      "duration": 8.48,
+      "text": "is occurring in 1825 so 10 years after"
+    },
+    {
+      "start": 632.959,
+      "duration": 4.641,
+      "text": "the start of this case"
+    },
+    {
+      "start": 639.36,
+      "duration": 3.12,
+      "text": "the final full packet that we will take"
+    },
+    {
+      "start": 641.12,
+      "duration": 4.56,
+      "text": "a look at is"
+    },
+    {
+      "start": 642.48,
+      "duration": 5.68,
+      "text": "from north carolina again winborn steed"
+    },
+    {
+      "start": 645.68,
+      "duration": 5.76,
+      "text": "in 1871."
+    },
+    {
+      "start": 648.16,
+      "duration": 6.0,
+      "text": "this one is a pretty interesting case um"
+    },
+    {
+      "start": 651.44,
+      "duration": 4.0,
+      "text": "now i know this image is kind of making"
+    },
+    {
+      "start": 654.16,
+      "duration": 4.48,
+      "text": "your eyes feel like they're"
+    },
+    {
+      "start": 655.44,
+      "duration": 5.2,
+      "text": "blurry but it's not your eyes it's just"
+    },
+    {
+      "start": 658.64,
+      "duration": 5.28,
+      "text": "this particular copy"
+    },
+    {
+      "start": 660.64,
+      "duration": 4.639,
+      "text": "just looks wiggy to your eyes so"
+    },
+    {
+      "start": 663.92,
+      "duration": 3.68,
+      "text": "i apologize but i wanted to use it"
+    },
+    {
+      "start": 665.279,
+      "duration": 5.521,
+      "text": "anyway because it's interesting so"
+    },
+    {
+      "start": 667.6,
+      "duration": 4.32,
+      "text": "there these individuals there's multiple"
+    },
+    {
+      "start": 670.8,
+      "duration": 2.32,
+      "text": "of them coming to the court and"
+    },
+    {
+      "start": 671.92,
+      "duration": 4.24,
+      "text": "petitioning"
+    },
+    {
+      "start": 673.12,
+      "duration": 7.2,
+      "text": "it says benjamin steed martha priscilla"
+    },
+    {
+      "start": 676.16,
+      "duration": 7.359,
+      "text": "erasmus alexander who are of full age"
+    },
+    {
+      "start": 680.32,
+      "duration": 6.48,
+      "text": "then robert john and marcus who are"
+    },
+    {
+      "start": 683.519,
+      "duration": 7.521,
+      "text": "minors um"
+    },
+    {
+      "start": 686.8,
+      "duration": 7.76,
+      "text": "are coming to ask for"
+    },
+    {
+      "start": 691.04,
+      "duration": 7.76,
+      "text": "uh the estate"
+    },
+    {
+      "start": 694.56,
+      "duration": 5.92,
+      "text": "of winburn steed to be uh started"
+    },
+    {
+      "start": 698.8,
+      "duration": 4.8,
+      "text": "the probate process to be started in"
+    },
+    {
+      "start": 700.48,
+      "duration": 6.88,
+      "text": "court for a win born steed"
+    },
+    {
+      "start": 703.6,
+      "duration": 5.359,
+      "text": "then they go on to say that in 1862"
+    },
+    {
+      "start": 707.36,
+      "duration": 6.32,
+      "text": "winburn steed"
+    },
+    {
+      "start": 708.959,
+      "duration": 8.241,
+      "text": "of the county died intestate he was"
+    },
+    {
+      "start": 713.68,
+      "duration": 6.0,
+      "text": "fighting for the rebellion and"
+    },
+    {
+      "start": 717.2,
+      "duration": 4.0,
+      "text": "uh that at his death his property was"
+    },
+    {
+      "start": 719.68,
+      "duration": 3.36,
+      "text": "seized but they would like it back and"
+    },
+    {
+      "start": 721.2,
+      "duration": 2.8,
+      "text": "they would like to divide it among the"
+    },
+    {
+      "start": 723.04,
+      "duration": 3.68,
+      "text": "heirs"
+    },
+    {
+      "start": 724.0,
+      "duration": 4.56,
+      "text": "and that he had 100 acres at that time"
+    },
+    {
+      "start": 726.72,
+      "duration": 3.679,
+      "text": "that adjoined benjamin seat who was one"
+    },
+    {
+      "start": 728.56,
+      "duration": 4.88,
+      "text": "of the petitioners"
+    },
+    {
+      "start": 730.399,
+      "duration": 4.161,
+      "text": "then they go on to say that we are all"
+    },
+    {
+      "start": 733.44,
+      "duration": 3.519,
+      "text": "of his siblings"
+    },
+    {
+      "start": 734.56,
+      "duration": 4.0,
+      "text": "except for these miners who are the"
+    },
+    {
+      "start": 736.959,
+      "duration": 3.601,
+      "text": "nieces and nephews"
+    },
+    {
+      "start": 738.56,
+      "duration": 3.279,
+      "text": "the children of his brother who is also"
+    },
+    {
+      "start": 740.56,
+      "duration": 3.04,
+      "text": "deceased"
+    },
+    {
+      "start": 741.839,
+      "duration": 3.041,
+      "text": "we are the only heirs and we would like"
+    },
+    {
+      "start": 743.6,
+      "duration": 3.919,
+      "text": "to divide the land"
+    },
+    {
+      "start": 744.88,
+      "duration": 3.519,
+      "text": "and this case goes on for another 23"
+    },
+    {
+      "start": 747.519,
+      "duration": 5.281,
+      "text": "pages"
+    },
+    {
+      "start": 748.399,
+      "duration": 4.401,
+      "text": "as they go through the process in court"
+    },
+    {
+      "start": 752.959,
+      "duration": 3.201,
+      "text": "so those were great those packets were"
+    },
+    {
+      "start": 754.959,
+      "duration": 3.921,
+      "text": "great we love"
+    },
+    {
+      "start": 756.16,
+      "duration": 4.16,
+      "text": "when we can find a complete packet"
+    },
+    {
+      "start": 758.88,
+      "duration": 2.959,
+      "text": "already intact with all of the"
+    },
+    {
+      "start": 760.32,
+      "duration": 4.24,
+      "text": "information we want about"
+    },
+    {
+      "start": 761.839,
+      "duration": 3.041,
+      "text": "our ancestors probate case and it helps"
+    },
+    {
+      "start": 764.56,
+      "duration": 2.56,
+      "text": "us"
+    },
+    {
+      "start": 764.88,
+      "duration": 3.84,
+      "text": "learn a lot about them in their family"
+    },
+    {
+      "start": 767.12,
+      "duration": 5.92,
+      "text": "connections"
+    },
+    {
+      "start": 768.72,
+      "duration": 7.04,
+      "text": "um but we're not always that lucky"
+    },
+    {
+      "start": 773.04,
+      "duration": 3.919,
+      "text": "are we so a lot of times you are going"
+    },
+    {
+      "start": 775.76,
+      "duration": 4.4,
+      "text": "to find"
+    },
+    {
+      "start": 776.959,
+      "duration": 6.241,
+      "text": "these probate files in bits and pieces"
+    },
+    {
+      "start": 780.16,
+      "duration": 4.32,
+      "text": "depending on how they were kept"
+    },
+    {
+      "start": 783.2,
+      "duration": 4.56,
+      "text": "in the jurisdiction where they were"
+    },
+    {
+      "start": 784.48,
+      "duration": 5.599,
+      "text": "created and also if they have been"
+    },
+    {
+      "start": 787.76,
+      "duration": 3.92,
+      "text": "damaged over time because of natural"
+    },
+    {
+      "start": 790.079,
+      "duration": 4.161,
+      "text": "disaster or just wear and tear or"
+    },
+    {
+      "start": 791.68,
+      "duration": 6.32,
+      "text": "whatever the case may be"
+    },
+    {
+      "start": 794.24,
+      "duration": 6.88,
+      "text": "so in this case we're looking at"
+    },
+    {
+      "start": 798.0,
+      "duration": 4.32,
+      "text": "robert where's will from 1803 and this"
+    },
+    {
+      "start": 801.12,
+      "duration": 3.2,
+      "text": "is in a collection called will's"
+    },
+    {
+      "start": 802.32,
+      "duration": 3.519,
+      "text": "inventories claims and accounts"
+    },
+    {
+      "start": 804.32,
+      "duration": 4.0,
+      "text": "from new hampshire so you can see"
+    },
+    {
+      "start": 805.839,
+      "duration": 3.601,
+      "text": "already that um this batch of records is"
+    },
+    {
+      "start": 808.32,
+      "duration": 3.04,
+      "text": "very mixed"
+    },
+    {
+      "start": 809.44,
+      "duration": 4.32,
+      "text": "between different parts of the probate"
+    },
+    {
+      "start": 811.36,
+      "duration": 2.4,
+      "text": "process"
+    },
+    {
+      "start": 813.839,
+      "duration": 6.641,
+      "text": "and so um"
+    },
+    {
+      "start": 817.36,
+      "duration": 6.56,
+      "text": "this is the widow bringing forth"
+    },
+    {
+      "start": 820.48,
+      "duration": 6.4,
+      "text": "the will of her deceased husband"
+    },
+    {
+      "start": 823.92,
+      "duration": 4.96,
+      "text": "and she is talking about the debts that"
+    },
+    {
+      "start": 826.88,
+      "duration": 4.079,
+      "text": "she needs to pay for him"
+    },
+    {
+      "start": 828.88,
+      "duration": 3.44,
+      "text": "and that she's finished paying those"
+    },
+    {
+      "start": 830.959,
+      "duration": 4.641,
+      "text": "debts and now she would like"
+    },
+    {
+      "start": 832.32,
+      "duration": 4.639,
+      "text": "to um take care of the next step of the"
+    },
+    {
+      "start": 835.6,
+      "duration": 4.08,
+      "text": "probate process"
+    },
+    {
+      "start": 836.959,
+      "duration": 4.481,
+      "text": "and this gives us some information that"
+    },
+    {
+      "start": 839.68,
+      "duration": 2.32,
+      "text": "robert ware died before they started"
+    },
+    {
+      "start": 841.44,
+      "duration": 3.12,
+      "text": "this process"
+    },
+    {
+      "start": 842.0,
+      "duration": 4.16,
+      "text": "on the 8th of june 1801 and that hannah"
+    },
+    {
+      "start": 844.56,
+      "duration": 4.24,
+      "text": "ware was likely his wife because she's"
+    },
+    {
+      "start": 846.16,
+      "duration": 5.84,
+      "text": "coming in as the executrix of his"
+    },
+    {
+      "start": 848.8,
+      "duration": 4.8,
+      "text": "will and levi and elias ware"
+    },
+    {
+      "start": 852.0,
+      "duration": 5.839,
+      "text": "were mentioned in this and they're"
+    },
+    {
+      "start": 853.6,
+      "duration": 4.239,
+      "text": "likely related"
+    },
+    {
+      "start": 858.24,
+      "duration": 4.24,
+      "text": "now this page i didn't zoom in because i"
+    },
+    {
+      "start": 860.48,
+      "duration": 4.159,
+      "text": "wanted you to see this particular thing"
+    },
+    {
+      "start": 862.48,
+      "duration": 6.719,
+      "text": "this one's from new hampshire as well"
+    },
+    {
+      "start": 864.639,
+      "duration": 5.841,
+      "text": "the same collection and this is in 1802"
+    },
+    {
+      "start": 869.199,
+      "duration": 3.121,
+      "text": "but i wanted to show you because on the"
+    },
+    {
+      "start": 870.48,
+      "duration": 6.08,
+      "text": "left hand side of the page what we have"
+    },
+    {
+      "start": 872.32,
+      "duration": 5.6,
+      "text": "is the end of an inventory of the estate"
+    },
+    {
+      "start": 876.56,
+      "duration": 2.88,
+      "text": "of a person"
+    },
+    {
+      "start": 877.92,
+      "duration": 3.68,
+      "text": "that started on the previous page and it"
+    },
+    {
+      "start": 879.44,
+      "duration": 4.0,
+      "text": "just has the line items of all of his"
+    },
+    {
+      "start": 881.6,
+      "duration": 5.2,
+      "text": "belongings and their approximate"
+    },
+    {
+      "start": 883.44,
+      "duration": 6.0,
+      "text": "value and then we start on"
+    },
+    {
+      "start": 886.8,
+      "duration": 4.8,
+      "text": "the next part of someone else's probate"
+    },
+    {
+      "start": 889.44,
+      "duration": 5.28,
+      "text": "administration in this case"
+    },
+    {
+      "start": 891.6,
+      "duration": 5.039,
+      "text": "this is the widow coming to uh say that"
+    },
+    {
+      "start": 894.72,
+      "duration": 2.559,
+      "text": "she would like to be the administrators"
+    },
+    {
+      "start": 896.639,
+      "duration": 2.961,
+      "text": "of"
+    },
+    {
+      "start": 897.279,
+      "duration": 3.841,
+      "text": "her husband's estate and here is a list"
+    },
+    {
+      "start": 899.6,
+      "duration": 4.0,
+      "text": "of all of his debtors so on the"
+    },
+    {
+      "start": 901.12,
+      "duration": 4.32,
+      "text": "the right hand side we have a list of"
+    },
+    {
+      "start": 903.6,
+      "duration": 3.359,
+      "text": "debts that need to be paid from someone"
+    },
+    {
+      "start": 905.44,
+      "duration": 2.56,
+      "text": "else's estate and it just kind of goes"
+    },
+    {
+      "start": 906.959,
+      "duration": 3.12,
+      "text": "on like that"
+    },
+    {
+      "start": 908.0,
+      "duration": 4.0,
+      "text": "in these books you have one part of"
+    },
+    {
+      "start": 910.079,
+      "duration": 3.361,
+      "text": "someone's probate process being done"
+    },
+    {
+      "start": 912.0,
+      "duration": 3.76,
+      "text": "and then you have one part of someone"
+    },
+    {
+      "start": 913.44,
+      "duration": 2.32,
+      "text": "else's"
+    },
+    {
+      "start": 916.56,
+      "duration": 5.04,
+      "text": "so you might be lucky in finding"
+    },
+    {
+      "start": 919.279,
+      "duration": 4.721,
+      "text": "complete estate packets you might"
+    },
+    {
+      "start": 921.6,
+      "duration": 3.919,
+      "text": "not be and you have to find bits and"
+    },
+    {
+      "start": 924.0,
+      "duration": 3.76,
+      "text": "pieces here and there in"
+    },
+    {
+      "start": 925.519,
+      "duration": 3.44,
+      "text": "the records of the county that you're"
+    },
+    {
+      "start": 927.76,
+      "duration": 4.56,
+      "text": "looking at"
+    },
+    {
+      "start": 928.959,
+      "duration": 4.081,
+      "text": "but what if you can't find anything you"
+    },
+    {
+      "start": 932.32,
+      "duration": 2.48,
+      "text": "can't find"
+    },
+    {
+      "start": 933.04,
+      "duration": 3.76,
+      "text": "any parts of the probate because the"
+    },
+    {
+      "start": 934.8,
+      "duration": 4.56,
+      "text": "records have been destroyed or because"
+    },
+    {
+      "start": 936.8,
+      "duration": 3.599,
+      "text": "um you just can't find your ancestor in"
+    },
+    {
+      "start": 939.36,
+      "duration": 3.279,
+      "text": "those"
+    },
+    {
+      "start": 940.399,
+      "duration": 3.841,
+      "text": "are there any other alternative records"
+    },
+    {
+      "start": 942.639,
+      "duration": 2.801,
+      "text": "that can find us the same kind of"
+    },
+    {
+      "start": 944.24,
+      "duration": 4.48,
+      "text": "information we're looking for"
+    },
+    {
+      "start": 945.44,
+      "duration": 5.04,
+      "text": "in probate um no will know probate file"
+    },
+    {
+      "start": 948.72,
+      "duration": 5.52,
+      "text": "what can we do"
+    },
+    {
+      "start": 950.48,
+      "duration": 7.12,
+      "text": "well we can go look at deed records"
+    },
+    {
+      "start": 954.24,
+      "duration": 4.8,
+      "text": "and just generic court records so let's"
+    },
+    {
+      "start": 957.6,
+      "duration": 4.32,
+      "text": "take a look at some of those examples"
+    },
+    {
+      "start": 959.04,
+      "duration": 2.88,
+      "text": "and see what we can find"
+    },
+    {
+      "start": 963.04,
+      "duration": 3.68,
+      "text": "so first of all i love to find probate"
+    },
+    {
+      "start": 965.68,
+      "duration": 4.399,
+      "text": "type information"
+    },
+    {
+      "start": 966.72,
+      "duration": 6.88,
+      "text": "indeed records so this is an example of"
+    },
+    {
+      "start": 970.079,
+      "duration": 5.361,
+      "text": "an index from henry county tennessee"
+    },
+    {
+      "start": 973.6,
+      "duration": 3.76,
+      "text": "and when you're looking at a deed index"
+    },
+    {
+      "start": 975.44,
+      "duration": 4.8,
+      "text": "sometimes you can pick out"
+    },
+    {
+      "start": 977.36,
+      "duration": 4.8,
+      "text": "the types of deeds that would be have"
+    },
+    {
+      "start": 980.24,
+      "duration": 4.24,
+      "text": "probate type information in it"
+    },
+    {
+      "start": 982.16,
+      "duration": 3.359,
+      "text": "and you're looking for terms like all or"
+    },
+    {
+      "start": 984.48,
+      "duration": 3.919,
+      "text": "at all or"
+    },
+    {
+      "start": 985.519,
+      "duration": 3.68,
+      "text": "and others that means that it's not just"
+    },
+    {
+      "start": 988.399,
+      "duration": 2.8,
+      "text": "one person"
+    },
+    {
+      "start": 989.199,
+      "duration": 3.601,
+      "text": "selling a property but it's multiple"
+    },
+    {
+      "start": 991.199,
+      "duration": 2.961,
+      "text": "people selling it together"
+    },
+    {
+      "start": 992.8,
+      "duration": 3.2,
+      "text": "and one of the reasons for that is"
+    },
+    {
+      "start": 994.16,
+      "duration": 4.88,
+      "text": "because they have inherited it together"
+    },
+    {
+      "start": 996.0,
+      "duration": 3.759,
+      "text": "and therefore they have to divide it and"
+    },
+    {
+      "start": 999.04,
+      "duration": 4.479,
+      "text": "or sell it"
+    },
+    {
+      "start": 999.759,
+      "duration": 5.44,
+      "text": "together so i like to see these terms"
+    },
+    {
+      "start": 1003.519,
+      "duration": 3.041,
+      "text": "in the deed files i'll go and look for"
+    },
+    {
+      "start": 1005.199,
+      "duration": 4.0,
+      "text": "those deeds"
+    },
+    {
+      "start": 1006.56,
+      "duration": 3.44,
+      "text": "so let's take an example of that here we"
+    },
+    {
+      "start": 1009.199,
+      "duration": 3.921,
+      "text": "have"
+    },
+    {
+      "start": 1010.0,
+      "duration": 7.199,
+      "text": "uh richard anderson at all"
+    },
+    {
+      "start": 1013.12,
+      "duration": 7.12,
+      "text": "selling to joseph kirkpatrick in 1831."
+    },
+    {
+      "start": 1017.199,
+      "duration": 5.921,
+      "text": "now this has a whole list of individuals"
+    },
+    {
+      "start": 1020.24,
+      "duration": 4.079,
+      "text": "with richard anderson that are selling a"
+    },
+    {
+      "start": 1023.12,
+      "duration": 4.559,
+      "text": "portion of land"
+    },
+    {
+      "start": 1024.319,
+      "duration": 4.081,
+      "text": "to joseph kirkpatrick and what has"
+    },
+    {
+      "start": 1027.679,
+      "duration": 4.4,
+      "text": "happened here"
+    },
+    {
+      "start": 1028.4,
+      "duration": 6.639,
+      "text": "is that richard um"
+    },
+    {
+      "start": 1032.079,
+      "duration": 4.161,
+      "text": "is actually married to a kirkpatrick"
+    },
+    {
+      "start": 1035.039,
+      "duration": 2.88,
+      "text": "sister"
+    },
+    {
+      "start": 1036.24,
+      "duration": 3.12,
+      "text": "okay they've all inherited this land"
+    },
+    {
+      "start": 1037.919,
+      "duration": 4.561,
+      "text": "together from the kirkpatrick"
+    },
+    {
+      "start": 1039.36,
+      "duration": 5.92,
+      "text": "father who's passed away and all of the"
+    },
+    {
+      "start": 1042.48,
+      "duration": 4.16,
+      "text": "inheritors together so it's sisters and"
+    },
+    {
+      "start": 1045.28,
+      "duration": 3.36,
+      "text": "their husbands because their husbands"
+    },
+    {
+      "start": 1046.64,
+      "duration": 5.52,
+      "text": "have the property rights with them right"
+    },
+    {
+      "start": 1048.64,
+      "duration": 4.88,
+      "text": "and then the brothers they all are"
+    },
+    {
+      "start": 1052.16,
+      "duration": 2.8,
+      "text": "coming together and they figured out how"
+    },
+    {
+      "start": 1053.52,
+      "duration": 2.48,
+      "text": "to divide the land and now they have to"
+    },
+    {
+      "start": 1054.96,
+      "duration": 3.12,
+      "text": "together"
+    },
+    {
+      "start": 1056.0,
+      "duration": 3.6,
+      "text": "deed off parts of the land to each of"
+    },
+    {
+      "start": 1058.08,
+      "duration": 4.64,
+      "text": "the different inheritance"
+    },
+    {
+      "start": 1059.6,
+      "duration": 4.72,
+      "text": "inheritors the different heirs so in"
+    },
+    {
+      "start": 1062.72,
+      "duration": 3.36,
+      "text": "this case they're selling to joseph"
+    },
+    {
+      "start": 1064.32,
+      "duration": 3.12,
+      "text": "kirkpatrick for his portion and then"
+    },
+    {
+      "start": 1066.08,
+      "duration": 4.24,
+      "text": "they're going to go on to sell to"
+    },
+    {
+      "start": 1067.44,
+      "duration": 4.96,
+      "text": "the next person for their portion i"
+    },
+    {
+      "start": 1070.32,
+      "duration": 3.68,
+      "text": "guess my point is for this one that"
+    },
+    {
+      "start": 1072.4,
+      "duration": 3.84,
+      "text": "in this case even if you couldn't find"
+    },
+    {
+      "start": 1074.0,
+      "duration": 3.2,
+      "text": "the probate for mr kirkpatrick who"
+    },
+    {
+      "start": 1076.24,
+      "duration": 2.72,
+      "text": "passed away"
+    },
+    {
+      "start": 1077.2,
+      "duration": 3.839,
+      "text": "you can still find a list of his heirs"
+    },
+    {
+      "start": 1078.96,
+      "duration": 5.52,
+      "text": "right here as they divide"
+    },
+    {
+      "start": 1081.039,
+      "duration": 3.441,
+      "text": "the land that they have inherited"
+    },
+    {
+      "start": 1085.12,
+      "duration": 3.2,
+      "text": "so here we have another interesting case"
+    },
+    {
+      "start": 1087.679,
+      "duration": 4.88,
+      "text": "john w"
+    },
+    {
+      "start": 1088.32,
+      "duration": 6.96,
+      "text": "travis at all to amanda travis in 1871"
+    },
+    {
+      "start": 1092.559,
+      "duration": 4.0,
+      "text": "in henry county tennessee in this case"
+    },
+    {
+      "start": 1095.28,
+      "duration": 3.92,
+      "text": "they say"
+    },
+    {
+      "start": 1096.559,
+      "duration": 3.281,
+      "text": "for our natural love and affection for"
+    },
+    {
+      "start": 1099.2,
+      "duration": 3.359,
+      "text": "our mother"
+    },
+    {
+      "start": 1099.84,
+      "duration": 4.719,
+      "text": "amanda travis we have inherited this"
+    },
+    {
+      "start": 1102.559,
+      "duration": 3.841,
+      "text": "land from our father who is deceased and"
+    },
+    {
+      "start": 1104.559,
+      "duration": 4.321,
+      "text": "we are going to give her"
+    },
+    {
+      "start": 1106.4,
+      "duration": 3.6,
+      "text": "such and such portion of land for her"
+    },
+    {
+      "start": 1108.88,
+      "duration": 4.32,
+      "text": "comfort and use"
+    },
+    {
+      "start": 1110.0,
+      "duration": 4.96,
+      "text": "during her lifetime and um"
+    },
+    {
+      "start": 1113.2,
+      "duration": 3.76,
+      "text": "for whatever reason the way they"
+    },
+    {
+      "start": 1114.96,
+      "duration": 3.52,
+      "text": "inherited this they are going to give a"
+    },
+    {
+      "start": 1116.96,
+      "duration": 3.36,
+      "text": "portion to their mother she has not"
+    },
+    {
+      "start": 1118.48,
+      "duration": 3.52,
+      "text": "inherited it on her own"
+    },
+    {
+      "start": 1120.32,
+      "duration": 3.2,
+      "text": "and so they have come to the court to do"
+    },
+    {
+      "start": 1122.0,
+      "duration": 2.32,
+      "text": "that so now you get the connections"
+    },
+    {
+      "start": 1123.52,
+      "duration": 2.8,
+      "text": "between"
+    },
+    {
+      "start": 1124.32,
+      "duration": 4.4,
+      "text": "the father and the children and the"
+    },
+    {
+      "start": 1126.32,
+      "duration": 2.4,
+      "text": "mother"
+    },
+    {
+      "start": 1129.84,
+      "duration": 3.76,
+      "text": "so let's talk about probate in court"
+    },
+    {
+      "start": 1132.24,
+      "duration": 4.24,
+      "text": "records"
+    },
+    {
+      "start": 1133.6,
+      "duration": 4.64,
+      "text": "um sometimes the court records for"
+    },
+    {
+      "start": 1136.48,
+      "duration": 3.76,
+      "text": "probate are specifically probate"
+    },
+    {
+      "start": 1138.24,
+      "duration": 3.36,
+      "text": "court records right but sometimes we"
+    },
+    {
+      "start": 1140.24,
+      "duration": 3.679,
+      "text": "have um"
+    },
+    {
+      "start": 1141.6,
+      "duration": 4.079,
+      "text": "counties where they just have generic"
+    },
+    {
+      "start": 1143.919,
+      "duration": 4.241,
+      "text": "court records court minutes"
+    },
+    {
+      "start": 1145.679,
+      "duration": 4.081,
+      "text": "court orders and a lot of times these"
+    },
+    {
+      "start": 1148.16,
+      "duration": 4.879,
+      "text": "are unindexed records"
+    },
+    {
+      "start": 1149.76,
+      "duration": 6.88,
+      "text": "so what do we do well if"
+    },
+    {
+      "start": 1153.039,
+      "duration": 4.721,
+      "text": "you have come you've you've tried"
+    },
+    {
+      "start": 1156.64,
+      "duration": 2.24,
+      "text": "everything else and you can't come up"
+    },
+    {
+      "start": 1157.76,
+      "duration": 3.2,
+      "text": "with a solution"
+    },
+    {
+      "start": 1158.88,
+      "duration": 3.44,
+      "text": "you might want to go look at those court"
+    },
+    {
+      "start": 1160.96,
+      "duration": 4.48,
+      "text": "orders or court"
+    },
+    {
+      "start": 1162.32,
+      "duration": 4.64,
+      "text": "minutes and you'll find things like this"
+    },
+    {
+      "start": 1165.44,
+      "duration": 4.8,
+      "text": "here's a court minute that says"
+    },
+    {
+      "start": 1166.96,
+      "duration": 6.88,
+      "text": "charlotte kane at all"
+    },
+    {
+      "start": 1170.24,
+      "duration": 5.84,
+      "text": "versus edward mcfarland administrator so"
+    },
+    {
+      "start": 1173.84,
+      "duration": 3.12,
+      "text": "edward mcfarlane is administrating an"
+    },
+    {
+      "start": 1176.08,
+      "duration": 3.28,
+      "text": "estate"
+    },
+    {
+      "start": 1176.96,
+      "duration": 3.76,
+      "text": "and charlotte kane and others would like"
+    },
+    {
+      "start": 1179.36,
+      "duration": 4.8,
+      "text": "to"
+    },
+    {
+      "start": 1180.72,
+      "duration": 6.24,
+      "text": "have the court give them something okay"
+    },
+    {
+      "start": 1184.16,
+      "duration": 3.84,
+      "text": "so they come in here and they explain we"
+    },
+    {
+      "start": 1186.96,
+      "duration": 4.079,
+      "text": "want to be heard"
+    },
+    {
+      "start": 1188.0,
+      "duration": 3.679,
+      "text": "because such and such person passed away"
+    },
+    {
+      "start": 1191.039,
+      "duration": 2.161,
+      "text": "and we should be"
+    },
+    {
+      "start": 1191.679,
+      "duration": 3.36,
+      "text": "inheriting and the administrator's not"
+    },
+    {
+      "start": 1193.2,
+      "duration": 4.56,
+      "text": "giving us our portion"
+    },
+    {
+      "start": 1195.039,
+      "duration": 5.041,
+      "text": "and this is giving you a lot of details"
+    },
+    {
+      "start": 1197.76,
+      "duration": 5.84,
+      "text": "about who were the heirs"
+    },
+    {
+      "start": 1200.08,
+      "duration": 4.959,
+      "text": "who was the administrator who died and"
+    },
+    {
+      "start": 1203.6,
+      "duration": 2.559,
+      "text": "even if you don't know the exact date"
+    },
+    {
+      "start": 1205.039,
+      "duration": 2.721,
+      "text": "that they died you would know that they"
+    },
+    {
+      "start": 1206.159,
+      "duration": 3.681,
+      "text": "at least died by this time and all the"
+    },
+    {
+      "start": 1207.76,
+      "duration": 3.84,
+      "text": "heirs are fighting about it at this time"
+    },
+    {
+      "start": 1209.84,
+      "duration": 4.16,
+      "text": "so this at least gives you something to"
+    },
+    {
+      "start": 1211.6,
+      "duration": 2.4,
+      "text": "go on"
+    },
+    {
+      "start": 1214.4,
+      "duration": 4.159,
+      "text": "and then finally let me just explain to"
+    },
+    {
+      "start": 1216.64,
+      "duration": 3.6,
+      "text": "you why this could be important"
+    },
+    {
+      "start": 1218.559,
+      "duration": 3.6,
+      "text": "so in this case we're looking in spencer"
+    },
+    {
+      "start": 1220.24,
+      "duration": 4.319,
+      "text": "county kentucky"
+    },
+    {
+      "start": 1222.159,
+      "duration": 4.481,
+      "text": "which is one of those places where a lot"
+    },
+    {
+      "start": 1224.559,
+      "duration": 4.881,
+      "text": "of their records got destroyed at the"
+    },
+    {
+      "start": 1226.64,
+      "duration": 5.6,
+      "text": "end of the civil war in 1865 and there's"
+    },
+    {
+      "start": 1229.44,
+      "duration": 4.32,
+      "text": "very few records left for this area"
+    },
+    {
+      "start": 1232.24,
+      "duration": 4.08,
+      "text": "but one of the things that does survive"
+    },
+    {
+      "start": 1233.76,
+      "duration": 5.039,
+      "text": "is the order books from the court"
+    },
+    {
+      "start": 1236.32,
+      "duration": 3.76,
+      "text": "and if you've ever read order books"
+    },
+    {
+      "start": 1238.799,
+      "duration": 3.921,
+      "text": "again most of them are not"
+    },
+    {
+      "start": 1240.08,
+      "duration": 4.0,
+      "text": "indexed it's very random what you'll"
+    },
+    {
+      "start": 1242.72,
+      "duration": 4.48,
+      "text": "find on each page"
+    },
+    {
+      "start": 1244.08,
+      "duration": 6.24,
+      "text": "so here on this page we've got"
+    },
+    {
+      "start": 1247.2,
+      "duration": 4.719,
+      "text": "levees we've got road crews being"
+    },
+    {
+      "start": 1250.32,
+      "duration": 2.88,
+      "text": "assigned to maintain the road crews in"
+    },
+    {
+      "start": 1251.919,
+      "duration": 4.081,
+      "text": "their neighborhood we've got"
+    },
+    {
+      "start": 1253.2,
+      "duration": 4.719,
+      "text": "tavern licenses being petitioned for and"
+    },
+    {
+      "start": 1256.0,
+      "duration": 5.919,
+      "text": "then in between all of these"
+    },
+    {
+      "start": 1257.919,
+      "duration": 6.961,
+      "text": "we have probate records we have probate"
+    },
+    {
+      "start": 1261.919,
+      "duration": 3.681,
+      "text": "mentioned that such and such person came"
+    },
+    {
+      "start": 1264.88,
+      "duration": 1.919,
+      "text": "with the will"
+    },
+    {
+      "start": 1265.6,
+      "duration": 4.959,
+      "text": "of such and such person you know"
+    },
+    {
+      "start": 1266.799,
+      "duration": 4.961,
+      "text": "deceased etc"
+    },
+    {
+      "start": 1270.559,
+      "duration": 4.281,
+      "text": "thank you for joining me for this"
+    },
+    {
+      "start": 1271.76,
+      "duration": 4.72,
+      "text": "presentation on leveling up your probate"
+    },
+    {
+      "start": 1274.84,
+      "duration": 3.88,
+      "text": "skills"
+    },
+    {
+      "start": 1276.48,
+      "duration": 6.48,
+      "text": "for more great presentations visit the"
+    },
+    {
+      "start": 1278.72,
+      "duration": 4.24,
+      "text": "roots tech homepage"
+    }
+  ],
+  "full_text": "hi i'm melissa finley welcome to this presentation entitled records analysis level up your probate skills when we talk about probate let's talk about what is the purpose the purpose of probate is to administer all the legalities of a deceased person's estate probate is a multi-step court process and even though i'm going to specifically talk about the united states process this process is very similar in many countries around the world so i'm a united states expert but this might apply at least in some instances where you are researching so this multi-step court process includes many different facets of administering someone's estate and i'm only going to cover a few today and some of those include inventorying the property that the person owned paying off their debts dividing the property that's remaining after the debts are paid among the heirs and then safeguarding any minor heirs inheritance until they are of legal age to manage it themselves now if you want to know all of the steps that might be involved in the probate process i will put a link to an article for that in the syllabus here are some terms you need to know when we're talking about probate you need to know the word testate test state means the deceased wrote a will before they died and when they wrote a will before they died they would have named the person they wanted to carry out their wishes and that person would be called the executor or the executrix executors for male and executrix for a female who's doing that job people could also die intestate that means the deceased did not leave a will before they died in this case their remaining family members or associates have to go to the court and ask to be appointed as the administrator or administrators of the estate in order to basically do the same job that the executive or executive does if the person dies test date another term to know is the term community property so there are several states in the united states that follow community property laws and that means that each spouse when they're both alive basically own about 50 of the property right they're equal partners in their ownership and at death the surviving spouse automatically is the owner of 100 of their joint property but they can also have separate ownership of anything that they have inherited through their own family lines the rest of the areas are in the united states the rest of the states are non-community property areas and in this case the woman has really no property rights when she is married or single it's her father or her husband that has those property rights except for she has a dour right to a third of the property um in case her husband dies she is able to keep that property for her lifetime to take care of herself because of this dower write she must release the dour at any of the sales of the property that her husband makes so you'll often see this in deeds you'll see the woman releasing her dower right to the property her husband is selling and then in non-community property areas the man has the right to courtesy if they have living children together which means he gets to keep all of the woman's property after her decease until the children until the children come of age to inherit it or he gets one third of the property if they don't have living children together just like she would for the dow right another term to know is guardianship again those minor heirs the ones who are not who are still children who are not of legal age yet need to have a guardian um this is not a physical guardian someone who for instance adopts them or takes care of them in their home but this is someone who is managing their property their legal right to their property that is inherited until they become of age which was typically the age of 21. um and guardianship also is for incompetent adults that are proven to be incompetent by the courts so why do we even want to get into probate records what is the genealogical value of probate records probate records can help us nail down these types of facts the date of death of our ancestor their place of death often the records provide generational linkages between parents and children and of course that includes a list of heirs those are the things we hope for in probate records so now let's go over some examples to see exactly the value of probate records and sometimes we find them in tidy probate packets including all the different parts that went through the court but often we only find it in bits and pieces and we'll go over both kinds of examples so first i want to look at the wills and estates papers from the north carolina estate files collection on family search this happens to be the packet for john bassett and it was dated 1785 although as you'll see as we go through this probate went through the court for quite a few years to get all the different parts complete so one of the first dated pieces in this packet which by the way has over a dozen pages is a guardian bond mordecai smith is giving a bond to the court saying that he's bound in a certain amount of money to do his job responsibly for these minor children and this was produced in court in 1775 and he is going to be the guardian for the property of john sally and olive bassett those are the minor heirs of john bassett so again these are the facts that we gain just from this one piece of paper another interesting paper in this packet is an account of sales of the belongings of john bassett so in a lot of probate packets you'll find an inventory of all the goods and their approximate value and then you'll also find an account of the inventory being sold and so in this case you can see it's it's a small page but they're selling things like form implements and household goods and then in the right hand column you can see who is purchasing those items and the amount that they're purchasing it for one reason i really like these sale of household goods lists is because often you can find the widow buying a lot of her household goods in order to hold on to everything she needs to run her household in this particular list i thought it was interesting that there are no other individuals with the surname bassett anywhere to be found on the sale of items so they still might have been kin but they were not of the basset surname i do not see a widow on this list buying any property so that might tell us something a lot of times in these sales you will find kin and neighbors there buying the goods now this case was interesting because it didn't actually get settled all the way until 1795. so i'm not sure exactly why the case file is listed as 1785 because we have a guardian bond in 1777 and a settlement in 1795 so this case was going on for a long time next let's look also uh this time in new hampshire at daniel chapman's estate file from 1815. so his uh his widow came and i'm only showing you a part of this petition there's actually a back side of this that has more information but she came in for a petition for administration on the estate of dan chapman um late of newmarket in november of 1815. so this this just this little bit tells us a few things the widow's coming in so obviously dan chapman has died before november 20th 1815 and she's asking for administration rights which means he died without leaving a will then a couple of years later in 1818 um so this is actually just about two years later because this is january 1818 the widow comes back again to the court nancy chapman comes back and this time she's asking for a guardian to be appointed for her four children the heirs of daniel chapman and here we have um the man who was going to be the guardian listing the children all of john warren and daniel chapman minor heirs of daniel chapman deceased and he's putting a bond and he's also saying what property he is going to manage for them which is a dwelling house and a barn and 90 acres of land and all of the household and farm implements and then one of the final dated pieces of paper in this packet is a petition to sell the property and the estate of the heirs of daniel chapman and this is occurring in 1825 so 10 years after the start of this case the final full packet that we will take a look at is from north carolina again winborn steed in 1871. this one is a pretty interesting case um now i know this image is kind of making your eyes feel like they're blurry but it's not your eyes it's just this particular copy just looks wiggy to your eyes so i apologize but i wanted to use it anyway because it's interesting so there these individuals there's multiple of them coming to the court and petitioning it says benjamin steed martha priscilla erasmus alexander who are of full age then robert john and marcus who are minors um are coming to ask for uh the estate of winburn steed to be uh started the probate process to be started in court for a win born steed then they go on to say that in 1862 winburn steed of the county died intestate he was fighting for the rebellion and uh that at his death his property was seized but they would like it back and they would like to divide it among the heirs and that he had 100 acres at that time that adjoined benjamin seat who was one of the petitioners then they go on to say that we are all of his siblings except for these miners who are the nieces and nephews the children of his brother who is also deceased we are the only heirs and we would like to divide the land and this case goes on for another 23 pages as they go through the process in court so those were great those packets were great we love when we can find a complete packet already intact with all of the information we want about our ancestors probate case and it helps us learn a lot about them in their family connections um but we're not always that lucky are we so a lot of times you are going to find these probate files in bits and pieces depending on how they were kept in the jurisdiction where they were created and also if they have been damaged over time because of natural disaster or just wear and tear or whatever the case may be so in this case we're looking at robert where's will from 1803 and this is in a collection called will's inventories claims and accounts from new hampshire so you can see already that um this batch of records is very mixed between different parts of the probate process and so um this is the widow bringing forth the will of her deceased husband and she is talking about the debts that she needs to pay for him and that she's finished paying those debts and now she would like to um take care of the next step of the probate process and this gives us some information that robert ware died before they started this process on the 8th of june 1801 and that hannah ware was likely his wife because she's coming in as the executrix of his will and levi and elias ware were mentioned in this and they're likely related now this page i didn't zoom in because i wanted you to see this particular thing this one's from new hampshire as well the same collection and this is in 1802 but i wanted to show you because on the left hand side of the page what we have is the end of an inventory of the estate of a person that started on the previous page and it just has the line items of all of his belongings and their approximate value and then we start on the next part of someone else's probate administration in this case this is the widow coming to uh say that she would like to be the administrators of her husband's estate and here is a list of all of his debtors so on the the right hand side we have a list of debts that need to be paid from someone else's estate and it just kind of goes on like that in these books you have one part of someone's probate process being done and then you have one part of someone else's so you might be lucky in finding complete estate packets you might not be and you have to find bits and pieces here and there in the records of the county that you're looking at but what if you can't find anything you can't find any parts of the probate because the records have been destroyed or because um you just can't find your ancestor in those are there any other alternative records that can find us the same kind of information we're looking for in probate um no will know probate file what can we do well we can go look at deed records and just generic court records so let's take a look at some of those examples and see what we can find so first of all i love to find probate type information indeed records so this is an example of an index from henry county tennessee and when you're looking at a deed index sometimes you can pick out the types of deeds that would be have probate type information in it and you're looking for terms like all or at all or and others that means that it's not just one person selling a property but it's multiple people selling it together and one of the reasons for that is because they have inherited it together and therefore they have to divide it and or sell it together so i like to see these terms in the deed files i'll go and look for those deeds so let's take an example of that here we have uh richard anderson at all selling to joseph kirkpatrick in 1831. now this has a whole list of individuals with richard anderson that are selling a portion of land to joseph kirkpatrick and what has happened here is that richard um is actually married to a kirkpatrick sister okay they've all inherited this land together from the kirkpatrick father who's passed away and all of the inheritors together so it's sisters and their husbands because their husbands have the property rights with them right and then the brothers they all are coming together and they figured out how to divide the land and now they have to together deed off parts of the land to each of the different inheritance inheritors the different heirs so in this case they're selling to joseph kirkpatrick for his portion and then they're going to go on to sell to the next person for their portion i guess my point is for this one that in this case even if you couldn't find the probate for mr kirkpatrick who passed away you can still find a list of his heirs right here as they divide the land that they have inherited so here we have another interesting case john w travis at all to amanda travis in 1871 in henry county tennessee in this case they say for our natural love and affection for our mother amanda travis we have inherited this land from our father who is deceased and we are going to give her such and such portion of land for her comfort and use during her lifetime and um for whatever reason the way they inherited this they are going to give a portion to their mother she has not inherited it on her own and so they have come to the court to do that so now you get the connections between the father and the children and the mother so let's talk about probate in court records um sometimes the court records for probate are specifically probate court records right but sometimes we have um counties where they just have generic court records court minutes court orders and a lot of times these are unindexed records so what do we do well if you have come you've you've tried everything else and you can't come up with a solution you might want to go look at those court orders or court minutes and you'll find things like this here's a court minute that says charlotte kane at all versus edward mcfarland administrator so edward mcfarlane is administrating an estate and charlotte kane and others would like to have the court give them something okay so they come in here and they explain we want to be heard because such and such person passed away and we should be inheriting and the administrator's not giving us our portion and this is giving you a lot of details about who were the heirs who was the administrator who died and even if you don't know the exact date that they died you would know that they at least died by this time and all the heirs are fighting about it at this time so this at least gives you something to go on and then finally let me just explain to you why this could be important so in this case we're looking in spencer county kentucky which is one of those places where a lot of their records got destroyed at the end of the civil war in 1865 and there's very few records left for this area but one of the things that does survive is the order books from the court and if you've ever read order books again most of them are not indexed it's very random what you'll find on each page so here on this page we've got levees we've got road crews being assigned to maintain the road crews in their neighborhood we've got tavern licenses being petitioned for and then in between all of these we have probate records we have probate mentioned that such and such person came with the will of such and such person you know deceased etc thank you for joining me for this presentation on leveling up your probate skills for more great presentations visit the roots tech homepage",
+  "attempts": [
+    {
+      "client": "IOS",
+      "playability": {
+        "status": "OK",
+        "playableInEmbed": true,
+        "offlineability": {
+          "buttonRenderer": {
+            "navigationEndpoint": {
+              "clickTrackingParams": "CAoQ6ewBIhMI6PqGjOzblwMVFktMCB3VeBdrygEEoSXoyQ==",
+              "ypcGetOfflineUpsellEndpoint": {
+                "params": "ChPqqN25AQ0KC2ZDdmdoX1FhYk1ZIgtmQ3ZnaF9RYWJNWSoVCAkYAVIPCgtmQ3ZnaF9RYWJNWSAB"
+              }
+            },
+            "trackingParams": "CAoQ6ewBIhMI6PqGjOzblwMVFktMCB3VeBdr"
+          }
+        },
+        "pictureInPicture": {
+          "pictureInPictureRenderer": {
+            "playableInPip": true,
+            "offByDefault": false,
+            "shouldResumeOnHead": false
+          }
+        },
+        "miniplayer": {
+          "miniplayerRenderer": {
+            "playbackMode": "PLAYBACK_MODE_ALLOW"
+          }
+        },
+        "contextParams": "Q0FFU0FnZ0M="
+      },
+      "outcome": "ok"
+    }
+  ],
+  "fetched_at": "2026-10-28T04:11:23.212308+00:00",
+  "client": "IOS",
+  "json_path": "transcripts/060_fCvgh_QabMY.json",
+  "text_path": "transcripts/060_fCvgh_QabMY.txt"
+}

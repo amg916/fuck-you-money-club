@@ -1,0 +1,670 @@
+{
+  "index": 181,
+  "url": "https://www.youtube.com/watch?v=cKYlwRY3aVw",
+  "video_id": "cKYlwRY3aVw",
+  "status": "ok",
+  "metadata": {
+    "title": "Regrid Mapping Platform - Filter Data",
+    "author": "Regrid",
+    "channelId": "UCY6_FliC-rX76wQMYyow-1A",
+    "lengthSeconds": "235",
+    "viewCount": "1746",
+    "shortDescription": "Learn how to filter data on the Regrid Mapping Platform.\n\nRegrid's mapping tools make working with property data easy. Filter to find properties of interest, add notes and photos to properties, and much more.\n\nRegrid's Mapping Platform - https://app.regrid.com\nLearn more - https://regrid.com/saas\n\nOur mapping platform is great if you want to see and work with property data using the tools we provide. If you want to pull our data into your GIS software or database, please see our bulk data options below and email us at parcels@regrid.com to get set up.",
+    "keywords": [
+      "radius",
+      "focus area",
+      "measure distance",
+      "mapping",
+      "map",
+      "real estate",
+      "land",
+      "property",
+      "spatial analysis",
+      "parcel data",
+      "cadastre"
+    ]
+  },
+  "caption_tracks": [
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=cKYlwRY3aVw&ei=AXbhao6wApb3sfIPjKiTsQg&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185905&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=B7ABB85B7B8FD36F04E561AD6925659BC3E00C18.3D77B9BEC9664889E652A5B9D46AD45C345B4043&key=yt8&kind=asr&lang=en",
+      "name": {
+        "runs": [
+          {
+            "text": "English (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.en",
+      "languageCode": "en",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    }
+  ],
+  "selected_track": {
+    "baseUrl": "https://www.youtube.com/api/timedtext?v=cKYlwRY3aVw&ei=AXbhao6wApb3sfIPjKiTsQg&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185905&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=B7ABB85B7B8FD36F04E561AD6925659BC3E00C18.3D77B9BEC9664889E652A5B9D46AD45C345B4043&key=yt8&kind=asr&lang=en",
+    "name": {
+      "runs": [
+        {
+          "text": "English (auto-generated)"
+        }
+      ]
+    },
+    "vssId": "a.en",
+    "languageCode": "en",
+    "kind": "asr",
+    "isTranslatable": true,
+    "trackName": ""
+  },
+  "segments": [
+    {
+      "start": 4.319,
+      "duration": 4.081,
+      "text": "welcome to the regrid mapping platform"
+    },
+    {
+      "start": 6.24,
+      "duration": 3.68,
+      "text": "today we'll be covering the filter tool"
+    },
+    {
+      "start": 8.4,
+      "duration": 2.8,
+      "text": "filtering is the best way to find just"
+    },
+    {
+      "start": 9.92,
+      "duration": 3.599,
+      "text": "properties that interest you by"
+    },
+    {
+      "start": 11.2,
+      "duration": 3.84,
+      "text": "characteristics in our data for example"
+    },
+    {
+      "start": 13.519,
+      "duration": 3.52,
+      "text": "you could use a filter to narrow down to"
+    },
+    {
+      "start": 15.04,
+      "duration": 3.52,
+      "text": "just residential properties properties"
+    },
+    {
+      "start": 17.039,
+      "duration": 4.641,
+      "text": "that are vacant or anything else that we"
+    },
+    {
+      "start": 18.56,
+      "duration": 4.959,
+      "text": "have data for at the parcel level"
+    },
+    {
+      "start": 21.68,
+      "duration": 3.439,
+      "text": "as with most of our mapping tools to get"
+    },
+    {
+      "start": 23.519,
+      "duration": 2.641,
+      "text": "started we recommend you first create a"
+    },
+    {
+      "start": 25.119,
+      "duration": 2.4,
+      "text": "project"
+    },
+    {
+      "start": 26.16,
+      "duration": 3.279,
+      "text": "you can do this by clicking on the"
+    },
+    {
+      "start": 27.519,
+      "duration": 3.6,
+      "text": "project drop down and then new project"
+    },
+    {
+      "start": 29.439,
+      "duration": 3.681,
+      "text": "or you can open up a project that you"
+    },
+    {
+      "start": 31.119,
+      "duration": 3.681,
+      "text": "already have existing"
+    },
+    {
+      "start": 33.12,
+      "duration": 4.48,
+      "text": "once you're in a project then click"
+    },
+    {
+      "start": 34.8,
+      "duration": 4.64,
+      "text": "filter on the left side to see the tool"
+    },
+    {
+      "start": 37.6,
+      "duration": 3.36,
+      "text": "the resulting panel lists all the"
+    },
+    {
+      "start": 39.44,
+      "duration": 4.32,
+      "text": "characteristics that are available for"
+    },
+    {
+      "start": 40.96,
+      "duration": 4.24,
+      "text": "you to filter by in your area"
+    },
+    {
+      "start": 43.76,
+      "duration": 3.119,
+      "text": "for this example let's start by"
+    },
+    {
+      "start": 45.2,
+      "duration": 3.679,
+      "text": "filtering on properties that are between"
+    },
+    {
+      "start": 46.879,
+      "duration": 4.401,
+      "text": "1 and 3 acres"
+    },
+    {
+      "start": 48.879,
+      "duration": 4.241,
+      "text": "so i go down the list i find calculated"
+    },
+    {
+      "start": 51.28,
+      "duration": 3.759,
+      "text": "acres"
+    },
+    {
+      "start": 53.12,
+      "duration": 4.88,
+      "text": "i want to find ones between 1 and 3 so i"
+    },
+    {
+      "start": 55.039,
+      "duration": 6.081,
+      "text": "put minimum 1 maximum 3"
+    },
+    {
+      "start": 58.0,
+      "duration": 3.12,
+      "text": "and i click load on map"
+    },
+    {
+      "start": 61.199,
+      "duration": 3.201,
+      "text": "this visually highlights the parcels"
+    },
+    {
+      "start": 62.719,
+      "duration": 3.76,
+      "text": "that match my criteria"
+    },
+    {
+      "start": 64.4,
+      "duration": 4.48,
+      "text": "down at the bottom of the filter pane"
+    },
+    {
+      "start": 66.479,
+      "duration": 4.0,
+      "text": "you can see the tally of the parcels"
+    },
+    {
+      "start": 68.88,
+      "duration": 2.8,
+      "text": "that match the boundary that has been"
+    },
+    {
+      "start": 70.479,
+      "duration": 3.521,
+      "text": "chosen"
+    },
+    {
+      "start": 71.68,
+      "duration": 4.56,
+      "text": "we have a bounds tutorial separately"
+    },
+    {
+      "start": 74.0,
+      "duration": 3.759,
+      "text": "you can see what bound you have here"
+    },
+    {
+      "start": 76.24,
+      "duration": 3.12,
+      "text": "but basically if you want to have a"
+    },
+    {
+      "start": 77.759,
+      "duration": 3.441,
+      "text": "larger smaller area you might want to"
+    },
+    {
+      "start": 79.36,
+      "duration": 3.439,
+      "text": "adjust your boundary and the number of"
+    },
+    {
+      "start": 81.2,
+      "duration": 4.4,
+      "text": "parcels found will adjust"
+    },
+    {
+      "start": 82.799,
+      "duration": 2.801,
+      "text": "correspondingly"
+    },
+    {
+      "start": 85.68,
+      "duration": 3.52,
+      "text": "you can filter by more than one criteria"
+    },
+    {
+      "start": 87.439,
+      "duration": 3.36,
+      "text": "at once for example if i want to find"
+    },
+    {
+      "start": 89.2,
+      "duration": 4.48,
+      "text": "properties between one and three acres"
+    },
+    {
+      "start": 90.799,
+      "duration": 5.121,
+      "text": "and also our residential"
+    },
+    {
+      "start": 93.68,
+      "duration": 4.0,
+      "text": "i can do that by going up and finding"
+    },
+    {
+      "start": 95.92,
+      "duration": 3.12,
+      "text": "for example the residential delivery"
+    },
+    {
+      "start": 97.68,
+      "duration": 2.799,
+      "text": "indicator"
+    },
+    {
+      "start": 99.04,
+      "duration": 4.16,
+      "text": "i'm clicking on the"
+    },
+    {
+      "start": 100.479,
+      "duration": 4.401,
+      "text": "box to see options in this case i want y"
+    },
+    {
+      "start": 103.2,
+      "duration": 5.12,
+      "text": "for yes"
+    },
+    {
+      "start": 104.88,
+      "duration": 3.44,
+      "text": "and then i'll click load on map again"
+    },
+    {
+      "start": 108.399,
+      "duration": 4.561,
+      "text": "we can see that the criteria updates to"
+    },
+    {
+      "start": 110.24,
+      "duration": 5.199,
+      "text": "now show that we want both"
+    },
+    {
+      "start": 112.96,
+      "duration": 3.6,
+      "text": "yes residential and also between one and"
+    },
+    {
+      "start": 115.439,
+      "duration": 2.241,
+      "text": "three acres"
+    },
+    {
+      "start": 116.56,
+      "duration": 2.72,
+      "text": "and you can see that the number of"
+    },
+    {
+      "start": 117.68,
+      "duration": 3.119,
+      "text": "parcels has been reduced because it's"
+    },
+    {
+      "start": 119.28,
+      "duration": 3.68,
+      "text": "reflecting the"
+    },
+    {
+      "start": 120.799,
+      "duration": 3.68,
+      "text": "combination of both of these things some"
+    },
+    {
+      "start": 122.96,
+      "duration": 3.439,
+      "text": "data categories like owner have many"
+    },
+    {
+      "start": 124.479,
+      "duration": 3.441,
+      "text": "possible options in this case clicking"
+    },
+    {
+      "start": 126.399,
+      "duration": 3.28,
+      "text": "in the box to see values will bring up"
+    },
+    {
+      "start": 127.92,
+      "duration": 4.399,
+      "text": "only the top hits you can start typing"
+    },
+    {
+      "start": 129.679,
+      "duration": 5.2,
+      "text": "to look for a specific name for example"
+    },
+    {
+      "start": 132.319,
+      "duration": 4.721,
+      "text": "let's look at this with owner if i click"
+    },
+    {
+      "start": 134.879,
+      "duration": 3.921,
+      "text": "on it we can see the top examples but if"
+    },
+    {
+      "start": 137.04,
+      "duration": 4.16,
+      "text": "i start typing"
+    },
+    {
+      "start": 138.8,
+      "duration": 4.64,
+      "text": "the results will be refined to just ones"
+    },
+    {
+      "start": 141.2,
+      "duration": 4.0,
+      "text": "that include that phrase so for example"
+    },
+    {
+      "start": 143.44,
+      "duration": 4.56,
+      "text": "if i'm interested in various cities"
+    },
+    {
+      "start": 145.2,
+      "duration": 5.119,
+      "text": "ownership here typing in city"
+    },
+    {
+      "start": 148.0,
+      "duration": 5.12,
+      "text": "will bring up just those and if i then"
+    },
+    {
+      "start": 150.319,
+      "duration": 5.121,
+      "text": "want to choose that to use as my filter"
+    },
+    {
+      "start": 153.12,
+      "duration": 3.839,
+      "text": "i can click on the result you see it"
+    },
+    {
+      "start": 155.44,
+      "duration": 4.0,
+      "text": "sort of enters into the box here and"
+    },
+    {
+      "start": 156.959,
+      "duration": 5.041,
+      "text": "then when i click load on map"
+    },
+    {
+      "start": 159.44,
+      "duration": 4.159,
+      "text": "that will be reflected"
+    },
+    {
+      "start": 162.0,
+      "duration": 2.959,
+      "text": "once you have your properties filtered"
+    },
+    {
+      "start": 163.599,
+      "duration": 4.161,
+      "text": "you can obviously go look at them on the"
+    },
+    {
+      "start": 164.959,
+      "duration": 4.481,
+      "text": "map and bookmark them as you would like"
+    },
+    {
+      "start": 167.76,
+      "duration": 3.759,
+      "text": "you can also look at them in spreadsheet"
+    },
+    {
+      "start": 169.44,
+      "duration": 4.799,
+      "text": "view you can click view parcels in list"
+    },
+    {
+      "start": 171.519,
+      "duration": 4.481,
+      "text": "view here or list on the left hand side"
+    },
+    {
+      "start": 174.239,
+      "duration": 4.08,
+      "text": "to view all the properties that fit your"
+    },
+    {
+      "start": 176.0,
+      "duration": 4.08,
+      "text": "filter as a spreadsheet"
+    },
+    {
+      "start": 178.319,
+      "duration": 3.681,
+      "text": "you can click the little arrow button to"
+    },
+    {
+      "start": 180.08,
+      "duration": 3.439,
+      "text": "the left of any of the rows to go to"
+    },
+    {
+      "start": 182.0,
+      "duration": 3.68,
+      "text": "that specific parcel"
+    },
+    {
+      "start": 183.519,
+      "duration": 3.841,
+      "text": "and you can also hit the download csv"
+    },
+    {
+      "start": 185.68,
+      "duration": 3.279,
+      "text": "button at the bottom right here if you"
+    },
+    {
+      "start": 187.36,
+      "duration": 3.599,
+      "text": "would like to download"
+    },
+    {
+      "start": 188.959,
+      "duration": 3.601,
+      "text": "a spreadsheet of all of the parcels that"
+    },
+    {
+      "start": 190.959,
+      "duration": 3.601,
+      "text": "fit your filter"
+    },
+    {
+      "start": 192.56,
+      "duration": 5.84,
+      "text": "with your subscription you get 50 000"
+    },
+    {
+      "start": 194.56,
+      "duration": 7.36,
+      "text": "downloads of csv exports per month"
+    },
+    {
+      "start": 198.4,
+      "duration": 4.88,
+      "text": "a couple other quick notes on filter"
+    },
+    {
+      "start": 201.92,
+      "duration": 3.28,
+      "text": "first is that when you have a filter"
+    },
+    {
+      "start": 203.28,
+      "duration": 2.72,
+      "text": "applied you can see this little dot show"
+    },
+    {
+      "start": 205.2,
+      "duration": 2.399,
+      "text": "up"
+    },
+    {
+      "start": 206.0,
+      "duration": 3.36,
+      "text": "which will indicate that you have a"
+    },
+    {
+      "start": 207.599,
+      "duration": 3.041,
+      "text": "filter applied this becomes much more"
+    },
+    {
+      "start": 209.36,
+      "duration": 4.0,
+      "text": "relevant when we start working in"
+    },
+    {
+      "start": 210.64,
+      "duration": 4.319,
+      "text": "combination with tools like style"
+    },
+    {
+      "start": 213.36,
+      "duration": 3.12,
+      "text": "the final note is simply that if you"
+    },
+    {
+      "start": 214.959,
+      "duration": 3.84,
+      "text": "would like to clear your filter you can"
+    },
+    {
+      "start": 216.48,
+      "duration": 3.679,
+      "text": "obviously do so by clicking clear down"
+    },
+    {
+      "start": 218.799,
+      "duration": 3.841,
+      "text": "at the bottom"
+    },
+    {
+      "start": 220.159,
+      "duration": 4.0,
+      "text": "you can also clear individual"
+    },
+    {
+      "start": 222.64,
+      "duration": 3.599,
+      "text": "attributes that you're trying to filter"
+    },
+    {
+      "start": 224.159,
+      "duration": 3.681,
+      "text": "on by clicking the little x to the left"
+    },
+    {
+      "start": 226.239,
+      "duration": 5.72,
+      "text": "of their"
+    },
+    {
+      "start": 227.84,
+      "duration": 4.119,
+      "text": "criteria in the box"
+    }
+  ],
+  "full_text": "welcome to the regrid mapping platform today we'll be covering the filter tool filtering is the best way to find just properties that interest you by characteristics in our data for example you could use a filter to narrow down to just residential properties properties that are vacant or anything else that we have data for at the parcel level as with most of our mapping tools to get started we recommend you first create a project you can do this by clicking on the project drop down and then new project or you can open up a project that you already have existing once you're in a project then click filter on the left side to see the tool the resulting panel lists all the characteristics that are available for you to filter by in your area for this example let's start by filtering on properties that are between 1 and 3 acres so i go down the list i find calculated acres i want to find ones between 1 and 3 so i put minimum 1 maximum 3 and i click load on map this visually highlights the parcels that match my criteria down at the bottom of the filter pane you can see the tally of the parcels that match the boundary that has been chosen we have a bounds tutorial separately you can see what bound you have here but basically if you want to have a larger smaller area you might want to adjust your boundary and the number of parcels found will adjust correspondingly you can filter by more than one criteria at once for example if i want to find properties between one and three acres and also our residential i can do that by going up and finding for example the residential delivery indicator i'm clicking on the box to see options in this case i want y for yes and then i'll click load on map again we can see that the criteria updates to now show that we want both yes residential and also between one and three acres and you can see that the number of parcels has been reduced because it's reflecting the combination of both of these things some data categories like owner have many possible options in this case clicking in the box to see values will bring up only the top hits you can start typing to look for a specific name for example let's look at this with owner if i click on it we can see the top examples but if i start typing the results will be refined to just ones that include that phrase so for example if i'm interested in various cities ownership here typing in city will bring up just those and if i then want to choose that to use as my filter i can click on the result you see it sort of enters into the box here and then when i click load on map that will be reflected once you have your properties filtered you can obviously go look at them on the map and bookmark them as you would like you can also look at them in spreadsheet view you can click view parcels in list view here or list on the left hand side to view all the properties that fit your filter as a spreadsheet you can click the little arrow button to the left of any of the rows to go to that specific parcel and you can also hit the download csv button at the bottom right here if you would like to download a spreadsheet of all of the parcels that fit your filter with your subscription you get 50 000 downloads of csv exports per month a couple other quick notes on filter first is that when you have a filter applied you can see this little dot show up which will indicate that you have a filter applied this becomes much more relevant when we start working in combination with tools like style the final note is simply that if you would like to clear your filter you can obviously do so by clicking clear down at the bottom you can also clear individual attributes that you're trying to filter on by clicking the little x to the left of their criteria in the box",
+  "attempts": [
+    {
+      "client": "IOS",
+      "playability": {
+        "status": "OK",
+        "playableInEmbed": true,
+        "offlineability": {
+          "buttonRenderer": {
+            "navigationEndpoint": {
+              "clickTrackingParams": "CAoQ6ewBIhMIzrTlluzblwMVlntMCB0M1CSGygEEWdWskg==",
+              "ypcGetOfflineUpsellEndpoint": {
+                "params": "CiXqqN25AR8KC2NLWWx3UlkzYVZ3ShAwZ2NKQ1NRRkptUC1qYXJCIgtjS1lsd1JZM2FWdyoVCAkYAVIPCgtjS1lsd1JZM2FWdyAB"
+              }
+            },
+            "trackingParams": "CAoQ6ewBIhMIzrTlluzblwMVlntMCB0M1CSG"
+          }
+        },
+        "pictureInPicture": {
+          "pictureInPictureRenderer": {
+            "playableInPip": true,
+            "offByDefault": false,
+            "shouldResumeOnHead": false
+          }
+        },
+        "miniplayer": {
+          "miniplayerRenderer": {
+            "playbackMode": "PLAYBACK_MODE_ALLOW"
+          }
+        },
+        "contextParams": "Q0FFU0FnZ0M="
+      },
+      "outcome": "ok"
+    }
+  ],
+  "fetched_at": "2026-10-28T04:11:45.496278+00:00",
+  "client": "IOS",
+  "json_path": "transcripts/181_cKYlwRY3aVw.json",
+  "text_path": "transcripts/181_cKYlwRY3aVw.txt"
+}

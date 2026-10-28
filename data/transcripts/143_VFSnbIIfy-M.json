@@ -1,0 +1,6318 @@
+{
+  "index": 143,
+  "url": "https://www.youtube.com/watch?v=VFSnbIIfy-M",
+  "video_id": "VFSnbIIfy-M",
+  "status": "ok",
+  "metadata": {
+    "title": "Preserving Homeownership: A Guide to Heirs Property for Housing Counselors",
+    "author": "National Housing Resource Center",
+    "channelId": "UCs6aMsZ80-iKBnD8JniBw6Q",
+    "lengthSeconds": "3489",
+    "viewCount": "242",
+    "shortDescription": "This webinar focuses on the importance of heirs’ property and estate planning—key issues that can prevent families from keeping or passing down their homes. Without a clear title or estate plan in place, homeowners risk losing access to loss mitigation, FEMA assistance, and other essential resources.\n \nThe Local Initiatives Support Corporation (LISC) joined us for this webinar to highlight how housing counselors can help families understand the importance of estate planning, identify challenges related to heirs’ property early, and connect clients with trusted legal and community resources. We also heard from a housing counseling agency that is partnering with LISC, which has worked to put this work into practice.",
+    "keywords": [
+      "National Housing Resource Center",
+      "NHRC",
+      "Leaders in Housing Counseling Webinar",
+      "Bruce Dorpalen",
+      "Chanel Starks",
+      "Kristopher Smith",
+      "LISC",
+      "Carrie Davis",
+      "Wealth Watchers",
+      "Heirs Property",
+      "Preserving Homeownership",
+      "tangled title",
+      "heirs",
+      "foreclosure",
+      "estate planning",
+      "Wills",
+      "living trusts",
+      "transfer on Death Affidavits",
+      "lady bird deeds"
+    ]
+  },
+  "caption_tracks": [
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=VFSnbIIfy-M&ei=-HXhapflB5uQsfIP9JCp4Qo&caps=asr&opi=112496729&xoaf=5&xowf=1&xospf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185896&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=0281EABB8B2D548C2AC3E43A86A37B0E1CF8B529.3F5A66B191C71289A2BD395395873CBAC3217770&key=yt8&kind=asr&lang=en",
+      "name": {
+        "runs": [
+          {
+            "text": "English (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.en",
+      "languageCode": "en",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    }
+  ],
+  "selected_track": {
+    "baseUrl": "https://www.youtube.com/api/timedtext?v=VFSnbIIfy-M&ei=-HXhapflB5uQsfIP9JCp4Qo&caps=asr&opi=112496729&xoaf=5&xowf=1&xospf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185896&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=0281EABB8B2D548C2AC3E43A86A37B0E1CF8B529.3F5A66B191C71289A2BD395395873CBAC3217770&key=yt8&kind=asr&lang=en",
+    "name": {
+      "runs": [
+        {
+          "text": "English (auto-generated)"
+        }
+      ]
+    },
+    "vssId": "a.en",
+    "languageCode": "en",
+    "kind": "asr",
+    "isTranslatable": true,
+    "trackName": ""
+  },
+  "segments": [
+    {
+      "start": 0.24,
+      "duration": 16.6,
+      "text": "[Music]"
+    },
+    {
+      "start": 18.48,
+      "duration": 4.559,
+      "text": "With that, I want to go ahead and"
+    },
+    {
+      "start": 20.0,
+      "duration": 6.24,
+      "text": "introduce our panelists for our webinar"
+    },
+    {
+      "start": 23.039,
+      "duration": 5.201,
+      "text": "today. Our first speaker is Christopher"
+    },
+    {
+      "start": 26.24,
+      "duration": 4.959,
+      "text": "Smith who is the senior community"
+    },
+    {
+      "start": 28.24,
+      "duration": 4.72,
+      "text": "development program officer at Lisk. Uh"
+    },
+    {
+      "start": 31.199,
+      "duration": 3.761,
+      "text": "Christopher brings nearly 20 years of"
+    },
+    {
+      "start": 32.96,
+      "duration": 4.16,
+      "text": "experience in community engagement and"
+    },
+    {
+      "start": 34.96,
+      "duration": 4.88,
+      "text": "development, grant making and capacity"
+    },
+    {
+      "start": 37.12,
+      "duration": 4.959,
+      "text": "building to the organization."
+    },
+    {
+      "start": 39.84,
+      "duration": 4.719,
+      "text": "Following him is Carrie Davis who's the"
+    },
+    {
+      "start": 42.079,
+      "duration": 4.64,
+      "text": "president and CEO of Wealth Watchers"
+    },
+    {
+      "start": 44.559,
+      "duration": 4.32,
+      "text": "Inc. a HUD certified housing counseling"
+    },
+    {
+      "start": 46.719,
+      "duration": 4.32,
+      "text": "agency and a chartered neighborworks"
+    },
+    {
+      "start": 48.879,
+      "duration": 4.401,
+      "text": "organization. She has over 20 years of"
+    },
+    {
+      "start": 51.039,
+      "duration": 4.0,
+      "text": "experience in urban and rural community"
+    },
+    {
+      "start": 53.28,
+      "duration": 4.64,
+      "text": "development, housing counseling, and"
+    },
+    {
+      "start": 55.039,
+      "duration": 4.961,
+      "text": "consumer financial education."
+    },
+    {
+      "start": 57.92,
+      "duration": 4.4,
+      "text": "And the final presenter is Chanel"
+    },
+    {
+      "start": 60.0,
+      "duration": 5.6,
+      "text": "Starks, who is the senior program"
+    },
+    {
+      "start": 62.32,
+      "duration": 5.28,
+      "text": "officer of housing at Lisk Cleveland."
+    },
+    {
+      "start": 65.6,
+      "duration": 3.6,
+      "text": "She has extensive knowledge in HUD"
+    },
+    {
+      "start": 67.6,
+      "duration": 3.76,
+      "text": "regulatory compliance in both the"
+    },
+    {
+      "start": 69.2,
+      "duration": 4.4,
+      "text": "low-income public housing and housing"
+    },
+    {
+      "start": 71.36,
+      "duration": 3.36,
+      "text": "choice voucher programs. And with that,"
+    },
+    {
+      "start": 73.6,
+      "duration": 4.0,
+      "text": "I'm going to hand it right over to"
+    },
+    {
+      "start": 74.72,
+      "duration": 4.88,
+      "text": "Christopher to take us through the"
+    },
+    {
+      "start": 77.6,
+      "duration": 3.839,
+      "text": "presentation. Christopher."
+    },
+    {
+      "start": 79.6,
+      "duration": 3.199,
+      "text": ">> Thanks, Ellie. And welcome everyone."
+    },
+    {
+      "start": 81.439,
+      "duration": 4.0,
+      "text": "Glad to be with y'all. I'm going to run"
+    },
+    {
+      "start": 82.799,
+      "duration": 5.521,
+      "text": "through a few quick slides and then hand"
+    },
+    {
+      "start": 85.439,
+      "duration": 6.161,
+      "text": "it off to my colleague Carrie to really"
+    },
+    {
+      "start": 88.32,
+      "duration": 6.32,
+      "text": "dig into HCA role in this space. So, you"
+    },
+    {
+      "start": 91.6,
+      "duration": 6.0,
+      "text": "can go to the next slide. My work has"
+    },
+    {
+      "start": 94.64,
+      "duration": 5.92,
+      "text": "been around uh how do we think about"
+    },
+    {
+      "start": 97.6,
+      "duration": 6.4,
+      "text": "this uh notion of housing counseling and"
+    },
+    {
+      "start": 100.56,
+      "duration": 6.879,
+      "text": "estate planning as a potential onramp"
+    },
+    {
+      "start": 104.0,
+      "duration": 6.64,
+      "text": "for home ownership. Um given the price"
+    },
+    {
+      "start": 107.439,
+      "duration": 6.32,
+      "text": "of new construction, we think that this"
+    },
+    {
+      "start": 110.64,
+      "duration": 8.0,
+      "text": "notion of encouraging um the legal"
+    },
+    {
+      "start": 113.759,
+      "duration": 7.68,
+      "text": "transfer of housing is a way quiet way"
+    },
+    {
+      "start": 118.64,
+      "duration": 5.28,
+      "text": "for folks to be able to enter the formal"
+    },
+    {
+      "start": 121.439,
+      "duration": 3.68,
+      "text": "housing market. Here's why that's"
+    },
+    {
+      "start": 123.92,
+      "duration": 3.44,
+      "text": "important. Because you see on your"
+    },
+    {
+      "start": 125.119,
+      "duration": 4.64,
+      "text": "screen sort of the heir's property"
+    },
+    {
+      "start": 127.36,
+      "duration": 4.0,
+      "text": "challenge. On the left is what it is."
+    },
+    {
+      "start": 129.759,
+      "duration": 4.081,
+      "text": "And I won't read this to you, but on the"
+    },
+    {
+      "start": 131.36,
+      "duration": 5.519,
+      "text": "right some of the challenges from this"
+    },
+    {
+      "start": 133.84,
+      "duration": 5.6,
+      "text": "notion of tango title, which essentially"
+    },
+    {
+      "start": 136.879,
+      "duration": 5.601,
+      "text": "means folks who inherit a home without a"
+    },
+    {
+      "start": 139.44,
+      "duration": 6.24,
+      "text": "will. And so they're unable in that"
+    },
+    {
+      "start": 142.48,
+      "duration": 4.8,
+      "text": "situation to tap into home equity, to be"
+    },
+    {
+      "start": 145.68,
+      "duration": 4.8,
+      "text": "able to access housing assistance"
+    },
+    {
+      "start": 147.28,
+      "duration": 5.84,
+      "text": "programs, and they're also vulnerable to"
+    },
+    {
+      "start": 150.48,
+      "duration": 5.92,
+      "text": "things like property tax foreclosure."
+    },
+    {
+      "start": 153.12,
+      "duration": 6.08,
+      "text": "And so our work is both twofold. One,"
+    },
+    {
+      "start": 156.4,
+      "duration": 6.32,
+      "text": "how do we prevent future heirs"
+    },
+    {
+      "start": 159.2,
+      "duration": 5.2,
+      "text": "properties? That means how do we ramp up"
+    },
+    {
+      "start": 162.72,
+      "duration": 3.68,
+      "text": "estate planning? And that that's"
+    },
+    {
+      "start": 164.4,
+      "duration": 4.72,
+      "text": "critically important for the work that"
+    },
+    {
+      "start": 166.4,
+      "duration": 6.4,
+      "text": "y'all do. um Lisk provides sort of"
+    },
+    {
+      "start": 169.12,
+      "duration": 7.119,
+      "text": "backbone support, grants, convening and"
+    },
+    {
+      "start": 172.8,
+      "duration": 6.799,
+      "text": "technical assistance for local efforts"
+    },
+    {
+      "start": 176.239,
+      "duration": 6.72,
+      "text": "to occur. And so if we can think about"
+    },
+    {
+      "start": 179.599,
+      "duration": 5.36,
+      "text": "this notion of prevention, helping folks"
+    },
+    {
+      "start": 182.959,
+      "duration": 4.401,
+      "text": "get access to estate planning,"
+    },
+    {
+      "start": 184.959,
+      "duration": 5.521,
+      "text": "integrating estate planning in the"
+    },
+    {
+      "start": 187.36,
+      "duration": 5.2,
+      "text": "housing counseling culture and systems,"
+    },
+    {
+      "start": 190.48,
+      "duration": 5.28,
+      "text": "not to say that it's not happening now,"
+    },
+    {
+      "start": 192.56,
+      "duration": 5.84,
+      "text": "but it is to actually ramp it up. How do"
+    },
+    {
+      "start": 195.76,
+      "duration": 4.88,
+      "text": "we amplify it? Turn it up is the work"
+    },
+    {
+      "start": 198.4,
+      "duration": 5.44,
+      "text": "that's yet to be done. We can go to the"
+    },
+    {
+      "start": 200.64,
+      "duration": 6.48,
+      "text": "next slide. And so more of the work that"
+    },
+    {
+      "start": 203.84,
+      "duration": 7.2,
+      "text": "we're doing with Lisk um has been around"
+    },
+    {
+      "start": 207.12,
+      "duration": 6.0,
+      "text": "this notion of thinking about potential"
+    },
+    {
+      "start": 211.04,
+      "duration": 5.68,
+      "text": "um ways and you can capture this. You"
+    },
+    {
+      "start": 213.12,
+      "duration": 5.759,
+      "text": "can go to the next slide. Um and that is"
+    },
+    {
+      "start": 216.72,
+      "duration": 5.2,
+      "text": "understanding sort of the pathway. And"
+    },
+    {
+      "start": 218.879,
+      "duration": 6.401,
+      "text": "so here's a just a quick notion of if"
+    },
+    {
+      "start": 221.92,
+      "duration": 5.679,
+      "text": "you have an estate plan, what the clear"
+    },
+    {
+      "start": 225.28,
+      "duration": 5.599,
+      "text": "path to ownership might look like. And"
+    },
+    {
+      "start": 227.599,
+      "duration": 6.801,
+      "text": "if you don't, here's what could occur,"
+    },
+    {
+      "start": 230.879,
+      "duration": 8.161,
+      "text": "which is this fractured um notion of"
+    },
+    {
+      "start": 234.4,
+      "duration": 7.039,
+      "text": "ownership that restricts one person from"
+    },
+    {
+      "start": 239.04,
+      "duration": 4.08,
+      "text": "being able to access the equity of the"
+    },
+    {
+      "start": 241.439,
+      "duration": 4.481,
+      "text": "home, even if they live in the home,"
+    },
+    {
+      "start": 243.12,
+      "duration": 7.199,
+      "text": "even if they're paying the taxes. So"
+    },
+    {
+      "start": 245.92,
+      "duration": 7.039,
+      "text": "that no estate plan scenario exposes the"
+    },
+    {
+      "start": 250.319,
+      "duration": 5.521,
+      "text": "home and the fractured owners to"
+    },
+    {
+      "start": 252.959,
+      "duration": 6.321,
+      "text": "potential loss because investors oftent"
+    },
+    {
+      "start": 255.84,
+      "duration": 6.799,
+      "text": "times can purchase a share from one of"
+    },
+    {
+      "start": 259.28,
+      "duration": 5.919,
+      "text": "those owners and then petition to court"
+    },
+    {
+      "start": 262.639,
+      "duration": 4.56,
+      "text": "to actually sell the ent sell the entire"
+    },
+    {
+      "start": 265.199,
+      "duration": 3.681,
+      "text": "property without the consent of the"
+    },
+    {
+      "start": 267.199,
+      "duration": 3.601,
+      "text": "other owners. I know there's a lot of"
+    },
+    {
+      "start": 268.88,
+      "duration": 5.12,
+      "text": "legal ease. The bottom line is we need"
+    },
+    {
+      "start": 270.8,
+      "duration": 5.28,
+      "text": "more estate planning to avoid a avoid"
+    },
+    {
+      "start": 274.0,
+      "duration": 5.199,
+      "text": "this notion of fractional ownership."
+    },
+    {
+      "start": 276.08,
+      "duration": 5.839,
+      "text": "Next slide."
+    },
+    {
+      "start": 279.199,
+      "duration": 5.121,
+      "text": "Here's our list is thinking a bet. So"
+    },
+    {
+      "start": 281.919,
+      "duration": 4.961,
+      "text": "turn your eyes to the arrow on the"
+    },
+    {
+      "start": 284.32,
+      "duration": 5.52,
+      "text": "right, the orange and title continuence"
+    },
+    {
+      "start": 286.88,
+      "duration": 6.48,
+      "text": "and estate planning is our big bet. We"
+    },
+    {
+      "start": 289.84,
+      "duration": 6.079,
+      "text": "want to invest and bet in bet on"
+    },
+    {
+      "start": 293.36,
+      "duration": 5.36,
+      "text": "increasing turning up this issue of"
+    },
+    {
+      "start": 295.919,
+      "duration": 5.761,
+      "text": "estate planning as a way to increase"
+    },
+    {
+      "start": 298.72,
+      "duration": 5.6,
+      "text": "home ownership rates across the country."
+    },
+    {
+      "start": 301.68,
+      "duration": 4.799,
+      "text": "Next slide."
+    },
+    {
+      "start": 304.32,
+      "duration": 4.56,
+      "text": "The the strategy is laid out pretty"
+    },
+    {
+      "start": 306.479,
+      "duration": 5.961,
+      "text": "pretty clearly here. We can send this to"
+    },
+    {
+      "start": 308.88,
+      "duration": 3.56,
+      "text": "you. Next slide."
+    },
+    {
+      "start": 314.32,
+      "duration": 4.24,
+      "text": "You can go ahead to the next slide."
+    },
+    {
+      "start": 316.0,
+      "duration": 5.039,
+      "text": "Thank you. So, in Jacksonville since"
+    },
+    {
+      "start": 318.56,
+      "duration": 5.44,
+      "text": "2021, just to give you a feel for how"
+    },
+    {
+      "start": 321.039,
+      "duration": 5.681,
+      "text": "the work has played out, um we've made"
+    },
+    {
+      "start": 324.0,
+      "duration": 5.44,
+      "text": "an investment and in this work around"
+    },
+    {
+      "start": 326.72,
+      "duration": 6.8,
+      "text": "estate planning specifically, um around"
+    },
+    {
+      "start": 329.44,
+      "duration": 6.96,
+      "text": "$1.7 million. Um and and the blue line,"
+    },
+    {
+      "start": 333.52,
+      "duration": 5.76,
+      "text": "if you look at that blue line, that is"
+    },
+    {
+      "start": 336.4,
+      "duration": 5.359,
+      "text": "the the idea of resolved heirs"
+    },
+    {
+      "start": 339.28,
+      "duration": 5.759,
+      "text": "properties. That's both prevention,"
+    },
+    {
+      "start": 341.759,
+      "duration": 6.321,
+      "text": "that's estate planning, as well as u"
+    },
+    {
+      "start": 345.039,
+      "duration": 6.961,
+      "text": "this notion of folks being in this um"
+    },
+    {
+      "start": 348.08,
+      "duration": 6.88,
+      "text": "tangled title um and getting legal"
+    },
+    {
+      "start": 352.0,
+      "duration": 5.52,
+      "text": "support to resolve them to to create"
+    },
+    {
+      "start": 354.96,
+      "duration": 6.48,
+      "text": "clear title. And so that blue line means"
+    },
+    {
+      "start": 357.52,
+      "duration": 7.76,
+      "text": "we resolved and we prevented more cases"
+    },
+    {
+      "start": 361.44,
+      "duration": 6.479,
+      "text": "in 2023 than were created. Okay? Because"
+    },
+    {
+      "start": 365.28,
+      "duration": 6.479,
+      "text": "if you see that new HP, those are new"
+    },
+    {
+      "start": 367.919,
+      "duration": 6.481,
+      "text": "cases. New cases can occur when an owner"
+    },
+    {
+      "start": 371.759,
+      "duration": 5.361,
+      "text": "passes away without a will. And so the"
+    },
+    {
+      "start": 374.4,
+      "duration": 5.12,
+      "text": "the local jurisdiction can track those."
+    },
+    {
+      "start": 377.12,
+      "duration": 4.799,
+      "text": "So the idea here is simple folks. We"
+    },
+    {
+      "start": 379.52,
+      "duration": 5.44,
+      "text": "want to increase the number of estate"
+    },
+    {
+      "start": 381.919,
+      "duration": 5.921,
+      "text": "plans filed. We want to increase the"
+    },
+    {
+      "start": 384.96,
+      "duration": 5.359,
+      "text": "number of heirs properties resolved"
+    },
+    {
+      "start": 387.84,
+      "duration": 5.199,
+      "text": "while at the same time we want to"
+    },
+    {
+      "start": 390.319,
+      "duration": 5.921,
+      "text": "decrease the number that are created. If"
+    },
+    {
+      "start": 393.039,
+      "duration": 5.681,
+      "text": "we do that, we think over a period of"
+    },
+    {
+      "start": 396.24,
+      "duration": 6.239,
+      "text": "time, let's say three to five years, we"
+    },
+    {
+      "start": 398.72,
+      "duration": 7.44,
+      "text": "can tip the market towards generational"
+    },
+    {
+      "start": 402.479,
+      "duration": 5.44,
+      "text": "wealth and that creates a stability for"
+    },
+    {
+      "start": 406.16,
+      "duration": 4.56,
+      "text": "local government that we think is a"
+    },
+    {
+      "start": 407.919,
+      "duration": 5.361,
+      "text": "win-win. Next slide."
+    },
+    {
+      "start": 410.72,
+      "duration": 6.16,
+      "text": "Here's some communication tips uh or"
+    },
+    {
+      "start": 413.28,
+      "duration": 5.919,
+      "text": "tools rather for HCAS. So, if you if you"
+    },
+    {
+      "start": 416.88,
+      "duration": 5.28,
+      "text": "scan the QR code, that'll give you"
+    },
+    {
+      "start": 419.199,
+      "duration": 6.161,
+      "text": "access to our toolkit. There's handouts,"
+    },
+    {
+      "start": 422.16,
+      "duration": 6.72,
+      "text": "postcards, scripts that we've found to"
+    },
+    {
+      "start": 425.36,
+      "duration": 5.839,
+      "text": "be effective to help people move from"
+    },
+    {
+      "start": 428.88,
+      "duration": 5.12,
+      "text": "thinking about this and understanding"
+    },
+    {
+      "start": 431.199,
+      "duration": 4.72,
+      "text": "the importance to actually making a"
+    },
+    {
+      "start": 434.0,
+      "duration": 4.16,
+      "text": "phone call, connecting with their"
+    },
+    {
+      "start": 435.919,
+      "duration": 3.84,
+      "text": "housing counseling agency or their legal"
+    },
+    {
+      "start": 438.16,
+      "duration": 3.36,
+      "text": "partner to actually walk through the"
+    },
+    {
+      "start": 439.759,
+      "duration": 4.801,
+      "text": "process of estate planning. So, I"
+    },
+    {
+      "start": 441.52,
+      "duration": 6.079,
+      "text": "encourage you to um go ahead and take a"
+    },
+    {
+      "start": 444.56,
+      "duration": 6.079,
+      "text": "picture of that and take this note in as"
+    },
+    {
+      "start": 447.599,
+      "duration": 6.081,
+      "text": "well on October 20th. That is the first"
+    },
+    {
+      "start": 450.639,
+      "duration": 5.68,
+      "text": "day of National State Planning Week. We"
+    },
+    {
+      "start": 453.68,
+      "duration": 4.639,
+      "text": "will be releasing a 2.0 of our"
+    },
+    {
+      "start": 456.319,
+      "duration": 4.32,
+      "text": "communications toolkit and that will"
+    },
+    {
+      "start": 458.319,
+      "duration": 5.841,
+      "text": "have new field guides and information"
+    },
+    {
+      "start": 460.639,
+      "duration": 5.361,
+      "text": "for HCAS and for local legal partners to"
+    },
+    {
+      "start": 464.16,
+      "duration": 6.0,
+      "text": "help think about ways they can spread"
+    },
+    {
+      "start": 466.0,
+      "duration": 6.8,
+      "text": "the word more effective. Next slide."
+    },
+    {
+      "start": 470.16,
+      "duration": 5.039,
+      "text": "Here's just a couple of or one way we"
+    },
+    {
+      "start": 472.8,
+      "duration": 6.239,
+      "text": "have thought about getting the word out"
+    },
+    {
+      "start": 475.199,
+      "duration": 6.241,
+      "text": "using infographics and messaging that"
+    },
+    {
+      "start": 479.039,
+      "duration": 3.921,
+      "text": "resonate potentially resonates with"
+    },
+    {
+      "start": 481.44,
+      "duration": 3.52,
+      "text": "folks. Here's one that's basically"
+    },
+    {
+      "start": 482.96,
+      "duration": 4.239,
+      "text": "saying, \"Hey, I've been putting it off"
+    },
+    {
+      "start": 484.96,
+      "duration": 5.76,
+      "text": "and now I think I need to do something"
+    },
+    {
+      "start": 487.199,
+      "duration": 6.56,
+      "text": "about it.\" And so that infographic has"
+    },
+    {
+      "start": 490.72,
+      "duration": 4.96,
+      "text": "worked. that has led people to actually"
+    },
+    {
+      "start": 493.759,
+      "duration": 5.201,
+      "text": "um pick up the phone and make a phone"
+    },
+    {
+      "start": 495.68,
+      "duration": 5.76,
+      "text": "call or email their local partner, the"
+    },
+    {
+      "start": 498.96,
+      "duration": 3.519,
+      "text": "HCA or the legal partner. Next slide. I"
+    },
+    {
+      "start": 501.44,
+      "duration": 3.439,
+      "text": "think we're going to see one more of"
+    },
+    {
+      "start": 502.479,
+      "duration": 5.761,
+      "text": "these. Yes. So, I'm going to pause here"
+    },
+    {
+      "start": 504.879,
+      "duration": 5.281,
+      "text": "and say this is um the point in which I"
+    },
+    {
+      "start": 508.24,
+      "duration": 4.719,
+      "text": "want to mention the value of working"
+    },
+    {
+      "start": 510.16,
+      "duration": 5.439,
+      "text": "with HAS. as an intermediary, we've been"
+    },
+    {
+      "start": 512.959,
+      "duration": 4.801,
+      "text": "fortunate to work with NeighborWorks um"
+    },
+    {
+      "start": 515.599,
+      "duration": 4.401,
+      "text": "um and and a NeighborWorks affiliate"
+    },
+    {
+      "start": 517.76,
+      "duration": 4.32,
+      "text": "rather that's called Wealth Watchers and"
+    },
+    {
+      "start": 520.0,
+      "duration": 3.839,
+      "text": "Carrie Davis, my colleague, is going to"
+    },
+    {
+      "start": 522.08,
+      "duration": 3.28,
+      "text": "pick it up from here and talk about the"
+    },
+    {
+      "start": 523.839,
+      "duration": 3.281,
+      "text": "work we've been doing together. Thank"
+    },
+    {
+      "start": 525.36,
+      "duration": 4.24,
+      "text": "you."
+    },
+    {
+      "start": 527.12,
+      "duration": 4.48,
+      "text": ">> Thank you, Christopher. So, I want to"
+    },
+    {
+      "start": 529.6,
+      "duration": 4.88,
+      "text": "take a moment to give you some"
+    },
+    {
+      "start": 531.6,
+      "duration": 6.48,
+      "text": "background about myself. So, I've been"
+    },
+    {
+      "start": 534.48,
+      "duration": 5.919,
+      "text": "in this business for about 30 years. Um"
+    },
+    {
+      "start": 538.08,
+      "duration": 5.36,
+      "text": "I started out as a community organizer."
+    },
+    {
+      "start": 540.399,
+      "duration": 6.401,
+      "text": "So that will always be the direction"
+    },
+    {
+      "start": 543.44,
+      "duration": 5.2,
+      "text": "that all of my work falls from. In"
+    },
+    {
+      "start": 546.8,
+      "duration": 5.039,
+      "text": "addition to that, I've been the"
+    },
+    {
+      "start": 548.64,
+      "duration": 6.96,
+      "text": "president and CEO of Wealth Watchers for"
+    },
+    {
+      "start": 551.839,
+      "duration": 7.921,
+      "text": "almost 18 years. And if you look at our"
+    },
+    {
+      "start": 555.6,
+      "duration": 7.12,
+      "text": "tagline for almost 25 years, we'll be"
+    },
+    {
+      "start": 559.76,
+      "duration": 6.16,
+      "text": "selling our 25th anniversary"
+    },
+    {
+      "start": 562.72,
+      "duration": 6.239,
+      "text": "um next year. Our tagline is building"
+    },
+    {
+      "start": 565.92,
+      "duration": 5.12,
+      "text": "wealth through future generations. And I"
+    },
+    {
+      "start": 568.959,
+      "duration": 4.641,
+      "text": "apologize for the background noise. I'm"
+    },
+    {
+      "start": 571.04,
+      "duration": 6.64,
+      "text": "actually in the airport."
+    },
+    {
+      "start": 573.6,
+      "duration": 5.919,
+      "text": "Um, but one of the things that is always"
+    },
+    {
+      "start": 577.68,
+      "duration": 5.04,
+      "text": "important to us as we think about"
+    },
+    {
+      "start": 579.519,
+      "duration": 5.601,
+      "text": "building wealth for future generations"
+    },
+    {
+      "start": 582.72,
+      "duration": 4.32,
+      "text": "is the fact that we know that for most"
+    },
+    {
+      "start": 585.12,
+      "duration": 3.68,
+      "text": "individuals, they're doing that through"
+    },
+    {
+      "start": 587.04,
+      "duration": 4.799,
+      "text": "home ownership."
+    },
+    {
+      "start": 588.8,
+      "duration": 4.96,
+      "text": "So, we provide one-on-one counseling as"
+    },
+    {
+      "start": 591.839,
+      "duration": 3.921,
+      "text": "well as education."
+    },
+    {
+      "start": 593.76,
+      "duration": 5.04,
+      "text": "As Christopher said, we've been working"
+    },
+    {
+      "start": 595.76,
+      "duration": 6.56,
+      "text": "with List Jacksonville on their heirs"
+    },
+    {
+      "start": 598.8,
+      "duration": 5.28,
+      "text": "property initiative since 2021, but our"
+    },
+    {
+      "start": 602.32,
+      "duration": 5.12,
+      "text": "work at Aerys Property goes back"
+    },
+    {
+      "start": 604.08,
+      "duration": 5.68,
+      "text": "probably to 2007208"
+    },
+    {
+      "start": 607.44,
+      "duration": 4.399,
+      "text": "when we were working with farmers. And"
+    },
+    {
+      "start": 609.76,
+      "duration": 6.56,
+      "text": "we still work with farmers that assist"
+    },
+    {
+      "start": 611.839,
+      "duration": 6.801,
+      "text": "with land retention as well as building"
+    },
+    {
+      "start": 616.32,
+      "duration": 3.759,
+      "text": "up their wealth in their land and their"
+    },
+    {
+      "start": 618.64,
+      "duration": 3.12,
+      "text": "homes and passing it down for"
+    },
+    {
+      "start": 620.079,
+      "duration": 3.44,
+      "text": "generations."
+    },
+    {
+      "start": 621.76,
+      "duration": 5.44,
+      "text": "One of the things that we know is"
+    },
+    {
+      "start": 623.519,
+      "duration": 8.081,
+      "text": "critical as agencies is that we have to"
+    },
+    {
+      "start": 627.2,
+      "duration": 7.28,
+      "text": "be able to go where the homeowners are,"
+    },
+    {
+      "start": 631.6,
+      "duration": 6.479,
+      "text": "where the individuals are. And so the"
+    },
+    {
+      "start": 634.48,
+      "duration": 5.76,
+      "text": "PowerPoint that you're seeing is uh our"
+    },
+    {
+      "start": 638.079,
+      "duration": 4.88,
+      "text": "mobile unit that we call wheels on"
+    },
+    {
+      "start": 640.24,
+      "duration": 7.36,
+      "text": "wheels. And what that does is it allows"
+    },
+    {
+      "start": 642.959,
+      "duration": 7.44,
+      "text": "us to go to communities and provide the"
+    },
+    {
+      "start": 647.6,
+      "duration": 5.679,
+      "text": "information on estate planning right"
+    },
+    {
+      "start": 650.399,
+      "duration": 6.161,
+      "text": "there in the community. In addition to"
+    },
+    {
+      "start": 653.279,
+      "duration": 6.481,
+      "text": "that, as housing counseling agencies,"
+    },
+    {
+      "start": 656.56,
+      "duration": 6.399,
+      "text": "our role is critical in terms of"
+    },
+    {
+      "start": 659.76,
+      "duration": 6.24,
+      "text": "preventing errors property and ensuring"
+    },
+    {
+      "start": 662.959,
+      "duration": 5.601,
+      "text": "that everyone has estate planning. In"
+    },
+    {
+      "start": 666.0,
+      "duration": 5.44,
+      "text": "our office, we start talking about"
+    },
+    {
+      "start": 668.56,
+      "duration": 4.399,
+      "text": "estate planning in the pre-purchase"
+    },
+    {
+      "start": 671.44,
+      "duration": 4.8,
+      "text": "phase."
+    },
+    {
+      "start": 672.959,
+      "duration": 6.721,
+      "text": "And so in our a and also so that's our"
+    },
+    {
+      "start": 676.24,
+      "duration": 5.52,
+      "text": "counseling as well as our education, our"
+    },
+    {
+      "start": 679.68,
+      "duration": 4.0,
+      "text": "home buyer education."
+    },
+    {
+      "start": 681.76,
+      "duration": 4.4,
+      "text": "In addition to talking about and"
+    },
+    {
+      "start": 683.68,
+      "duration": 5.839,
+      "text": "ensuring that potential homeowners have"
+    },
+    {
+      "start": 686.16,
+      "duration": 5.6,
+      "text": "their tax exemption, etc. We're very"
+    },
+    {
+      "start": 689.519,
+      "duration": 4.801,
+      "text": "deliberate about also said and you need"
+    },
+    {
+      "start": 691.76,
+      "duration": 5.12,
+      "text": "a will. And that's where the partnership"
+    },
+    {
+      "start": 694.32,
+      "duration": 5.28,
+      "text": "with list comes in."
+    },
+    {
+      "start": 696.88,
+      "duration": 5.6,
+      "text": "We provide a link that they can complete"
+    },
+    {
+      "start": 699.6,
+      "duration": 4.56,
+      "text": "the intake application online and it"
+    },
+    {
+      "start": 702.48,
+      "duration": 3.52,
+      "text": "goes directly to one of our other"
+    },
+    {
+      "start": 704.16,
+      "duration": 5.6,
+      "text": "partners which is Three River Legal"
+    },
+    {
+      "start": 706.0,
+      "duration": 6.0,
+      "text": "Services. Also, we I know we're seeing"
+    },
+    {
+      "start": 709.76,
+      "duration": 4.319,
+      "text": "and I'm sure a lot of other housing"
+    },
+    {
+      "start": 712.0,
+      "duration": 5.04,
+      "text": "counseling agencies are seeing it as"
+    },
+    {
+      "start": 714.079,
+      "duration": 6.081,
+      "text": "well that we're starting to see a lot of"
+    },
+    {
+      "start": 717.04,
+      "duration": 5.44,
+      "text": "foreclosures again. That is also an"
+    },
+    {
+      "start": 720.16,
+      "duration": 4.96,
+      "text": "opportunity for you to do a temperature"
+    },
+    {
+      "start": 722.48,
+      "duration": 5.2,
+      "text": "check to ensure if they have an estate"
+    },
+    {
+      "start": 725.12,
+      "duration": 5.279,
+      "text": "plan in place. So there's various"
+    },
+    {
+      "start": 727.68,
+      "duration": 6.399,
+      "text": "different points in the counseling and"
+    },
+    {
+      "start": 730.399,
+      "duration": 7.361,
+      "text": "education and the homeownership pathway"
+    },
+    {
+      "start": 734.079,
+      "duration": 6.721,
+      "text": "that we can reiterate the importance of"
+    },
+    {
+      "start": 737.76,
+      "duration": 5.84,
+      "text": "having an estate plan. In addition to"
+    },
+    {
+      "start": 740.8,
+      "duration": 5.2,
+      "text": "that, we can also and in our office we"
+    },
+    {
+      "start": 743.6,
+      "duration": 4.32,
+      "text": "talk about what happens when you don't"
+    },
+    {
+      "start": 746.0,
+      "duration": 6.72,
+      "text": "have one. So that's part of the"
+    },
+    {
+      "start": 747.92,
+      "duration": 7.68,
+      "text": "education process as well. So again,"
+    },
+    {
+      "start": 752.72,
+      "duration": 5.359,
+      "text": "being a partner oftent times as housing"
+    },
+    {
+      "start": 755.6,
+      "duration": 5.039,
+      "text": "counseling agencies, we're not in a"
+    },
+    {
+      "start": 758.079,
+      "duration": 5.76,
+      "text": "position to lead that work. You need a"
+    },
+    {
+      "start": 760.639,
+      "duration": 5.681,
+      "text": "partner like List Jacksonville who has a"
+    },
+    {
+      "start": 763.839,
+      "duration": 5.44,
+      "text": "broader reach that can lead that work."
+    },
+    {
+      "start": 766.32,
+      "duration": 5.759,
+      "text": "But we're we're very fortunate that"
+    },
+    {
+      "start": 769.279,
+      "duration": 5.68,
+      "text": "Christopher and his team sees the value"
+    },
+    {
+      "start": 772.079,
+      "duration": 6.32,
+      "text": "of housing counseling and ensuring that"
+    },
+    {
+      "start": 774.959,
+      "duration": 7.601,
+      "text": "that piece is interweaving into"
+    },
+    {
+      "start": 778.399,
+      "duration": 6.161,
+      "text": "interwoven into the entire process. So"
+    },
+    {
+      "start": 782.56,
+      "duration": 6.44,
+      "text": "I'll stop right there and I know we'll"
+    },
+    {
+      "start": 784.56,
+      "duration": 4.44,
+      "text": "have an opportunity to answer questions"
+    },
+    {
+      "start": 790.959,
+      "duration": 5.281,
+      "text": "and I'll also turn it over to our"
+    },
+    {
+      "start": 793.6,
+      "duration": 5.919,
+      "text": "colleague Chanel."
+    },
+    {
+      "start": 796.24,
+      "duration": 6.64,
+      "text": "Thank you, Carrie. Um, thank you, Chris."
+    },
+    {
+      "start": 799.519,
+      "duration": 7.12,
+      "text": "Um, Chris has pretty much provided the"
+    },
+    {
+      "start": 802.88,
+      "duration": 8.24,
+      "text": "the meat of the heirs property. Um,"
+    },
+    {
+      "start": 806.639,
+      "duration": 7.2,
+      "text": "Chris and his team are the um ones who"
+    },
+    {
+      "start": 811.12,
+      "duration": 5.6,
+      "text": "have made this model pretty much go"
+    },
+    {
+      "start": 813.839,
+      "duration": 6.0,
+      "text": "national. Chris has done an excellent"
+    },
+    {
+      "start": 816.72,
+      "duration": 6.08,
+      "text": "job with um implementing heirs property"
+    },
+    {
+      "start": 819.839,
+      "duration": 5.68,
+      "text": "in the Jacksonville office and our"
+    },
+    {
+      "start": 822.8,
+      "duration": 6.88,
+      "text": "national housing team is now picking up"
+    },
+    {
+      "start": 825.519,
+      "duration": 7.281,
+      "text": "his model and carrying it throughout the"
+    },
+    {
+      "start": 829.68,
+      "duration": 6.719,
+      "text": "um the list organization."
+    },
+    {
+      "start": 832.8,
+      "duration": 7.36,
+      "text": "So from the national team um heirs"
+    },
+    {
+      "start": 836.399,
+      "duration": 7.041,
+      "text": "property um where we do the work um"
+    },
+    {
+      "start": 840.16,
+      "duration": 6.72,
+      "text": "there are six offices that are supported"
+    },
+    {
+      "start": 843.44,
+      "duration": 6.24,
+      "text": "by list community research and impact"
+    },
+    {
+      "start": 846.88,
+      "duration": 6.88,
+      "text": "those six um offices if you could change"
+    },
+    {
+      "start": 849.68,
+      "duration": 7.76,
+      "text": "the slide please. Um Atlanta, Detroit,"
+    },
+    {
+      "start": 853.76,
+      "duration": 7.28,
+      "text": "Jacksonville, Richmond, San Antonio,"
+    },
+    {
+      "start": 857.44,
+      "duration": 8.16,
+      "text": "Pine Bluff. Um, moving more toward the"
+    },
+    {
+      "start": 861.04,
+      "duration": 8.159,
+      "text": "Midwest is where, um, I sit. Um, we're"
+    },
+    {
+      "start": 865.6,
+      "duration": 6.479,
+      "text": "supported by the National List Housing."
+    },
+    {
+      "start": 869.199,
+      "duration": 6.88,
+      "text": "And in Cleveland, we implemented our"
+    },
+    {
+      "start": 872.079,
+      "duration": 5.76,
+      "text": "heirs property program in February of"
+    },
+    {
+      "start": 876.079,
+      "duration": 4.241,
+      "text": "2025."
+    },
+    {
+      "start": 877.839,
+      "duration": 5.521,
+      "text": "And since implementation with our"
+    },
+    {
+      "start": 880.32,
+      "duration": 6.04,
+      "text": "program partner, we have been able to"
+    },
+    {
+      "start": 883.36,
+      "duration": 3.0,
+      "text": "assist"
+    },
+    {
+      "start": 886.72,
+      "duration": 6.96,
+      "text": "131 individuals with the state planning"
+    },
+    {
+      "start": 889.839,
+      "duration": 7.281,
+      "text": "and we just started tapping into the um"
+    },
+    {
+      "start": 893.68,
+      "duration": 6.24,
+      "text": "tangled title resolution piece. Um and"
+    },
+    {
+      "start": 897.12,
+      "duration": 5.04,
+      "text": "we currently have six active cases that"
+    },
+    {
+      "start": 899.92,
+      "duration": 5.359,
+      "text": "are being worked."
+    },
+    {
+      "start": 902.16,
+      "duration": 5.44,
+      "text": "We can change the slide please."
+    },
+    {
+      "start": 905.279,
+      "duration": 4.881,
+      "text": "Building generational wealth is"
+    },
+    {
+      "start": 907.6,
+      "duration": 6.88,
+      "text": "something that is very important when"
+    },
+    {
+      "start": 910.16,
+      "duration": 6.96,
+      "text": "we're thinking about heirs property. Um,"
+    },
+    {
+      "start": 914.48,
+      "duration": 6.159,
+      "text": "list housing uh the national housing"
+    },
+    {
+      "start": 917.12,
+      "duration": 5.839,
+      "text": "team supports the one list platform by"
+    },
+    {
+      "start": 920.639,
+      "duration": 4.241,
+      "text": "connecting housing production with our"
+    },
+    {
+      "start": 922.959,
+      "duration": 5.281,
+      "text": "four affiliates and leveraging"
+    },
+    {
+      "start": 924.88,
+      "duration": 5.92,
+      "text": "innovative financing, impactful programs"
+    },
+    {
+      "start": 928.24,
+      "duration": 4.88,
+      "text": "and national messaging."
+    },
+    {
+      "start": 930.8,
+      "duration": 5.76,
+      "text": "The"
+    },
+    {
+      "start": 933.12,
+      "duration": 7.12,
+      "text": "role of the national housing team is to"
+    },
+    {
+      "start": 936.56,
+      "duration": 8.959,
+      "text": "be strategic in the areas in which they"
+    },
+    {
+      "start": 940.24,
+      "duration": 8.159,
+      "text": "feel that is most impactful for um the"
+    },
+    {
+      "start": 945.519,
+      "duration": 5.68,
+      "text": "results to be seen around generational"
+    },
+    {
+      "start": 948.399,
+      "duration": 5.921,
+      "text": "wealth and housing. Those areas are"
+    },
+    {
+      "start": 951.199,
+      "duration": 6.721,
+      "text": "capacity building, capacity training"
+    },
+    {
+      "start": 954.32,
+      "duration": 6.319,
+      "text": "programs for developers to be able to"
+    },
+    {
+      "start": 957.92,
+      "duration": 4.8,
+      "text": "learn those skills necessary to bring"
+    },
+    {
+      "start": 960.639,
+      "duration": 3.681,
+      "text": "more affordable housing into"
+    },
+    {
+      "start": 962.72,
+      "duration": 4.799,
+      "text": "communities."
+    },
+    {
+      "start": 964.32,
+      "duration": 5.36,
+      "text": "Heir's property initiatives to create"
+    },
+    {
+      "start": 967.519,
+      "duration": 4.481,
+      "text": "generational wealth. You know, we grow"
+    },
+    {
+      "start": 969.68,
+      "duration": 4.719,
+      "text": "up in homes. We stay in homes with our"
+    },
+    {
+      "start": 972.0,
+      "duration": 4.8,
+      "text": "grandparents and parents."
+    },
+    {
+      "start": 974.399,
+      "duration": 5.041,
+      "text": "Some of us want to be able to keep those"
+    },
+    {
+      "start": 976.8,
+      "duration": 4.719,
+      "text": "assets in the family."
+    },
+    {
+      "start": 979.44,
+      "duration": 5.199,
+      "text": "um home repair support. That's more"
+    },
+    {
+      "start": 981.519,
+      "duration": 6.081,
+      "text": "around preservation, preserving the home"
+    },
+    {
+      "start": 984.639,
+      "duration": 5.521,
+      "text": "that you're currently in. As Carrie"
+    },
+    {
+      "start": 987.6,
+      "duration": 5.359,
+      "text": "said, it's very important to get the"
+    },
+    {
+      "start": 990.16,
+      "duration": 5.76,
+      "text": "post and pre-education"
+    },
+    {
+      "start": 992.959,
+      "duration": 5.521,
+      "text": "around the home buying process. And when"
+    },
+    {
+      "start": 995.92,
+      "duration": 5.68,
+      "text": "you do have those educational resources"
+    },
+    {
+      "start": 998.48,
+      "duration": 5.919,
+      "text": "at your fingertips, you're able to keep"
+    },
+    {
+      "start": 1001.6,
+      "duration": 5.28,
+      "text": "your property in good repair or be able"
+    },
+    {
+      "start": 1004.399,
+      "duration": 4.721,
+      "text": "to take advantage of resources that may"
+    },
+    {
+      "start": 1006.88,
+      "duration": 4.959,
+      "text": "be out there."
+    },
+    {
+      "start": 1009.12,
+      "duration": 5.12,
+      "text": "Homeownership readiness and faith-based"
+    },
+    {
+      "start": 1011.839,
+      "duration": 4.24,
+      "text": "missiondriven affordable housing"
+    },
+    {
+      "start": 1014.24,
+      "duration": 5.44,
+      "text": "development is also one of the"
+    },
+    {
+      "start": 1016.079,
+      "duration": 6.721,
+      "text": "programmatic areas that we focus on."
+    },
+    {
+      "start": 1019.68,
+      "duration": 5.119,
+      "text": "Next slide, please."
+    },
+    {
+      "start": 1022.8,
+      "duration": 5.759,
+      "text": "We all know that he's property is a"
+    },
+    {
+      "start": 1024.799,
+      "duration": 6.801,
+      "text": "silent threat. So, LIS has uplifted this"
+    },
+    {
+      "start": 1028.559,
+      "duration": 5.201,
+      "text": "body of work. The project program"
+    },
+    {
+      "start": 1031.6,
+      "duration": 5.599,
+      "text": "objectives for list heirs property"
+    },
+    {
+      "start": 1033.76,
+      "duration": 5.679,
+      "text": "programs increase awareness"
+    },
+    {
+      "start": 1037.199,
+      "duration": 4.401,
+      "text": "and causes of heirs property through"
+    },
+    {
+      "start": 1039.439,
+      "duration": 4.48,
+      "text": "community education."
+    },
+    {
+      "start": 1041.6,
+      "duration": 5.439,
+      "text": "If we don't know what heir's property"
+    },
+    {
+      "start": 1043.919,
+      "duration": 5.281,
+      "text": "is, we cannot provide the resources that"
+    },
+    {
+      "start": 1047.039,
+      "duration": 3.841,
+      "text": "are necessary to help mitigate the"
+    },
+    {
+      "start": 1049.2,
+      "duration": 4.88,
+      "text": "issue."
+    },
+    {
+      "start": 1050.88,
+      "duration": 5.919,
+      "text": "We need to be able to connect impacted"
+    },
+    {
+      "start": 1054.08,
+      "duration": 6.16,
+      "text": "households with legal service providers"
+    },
+    {
+      "start": 1056.799,
+      "duration": 6.641,
+      "text": "for estate counseling, estate planning,"
+    },
+    {
+      "start": 1060.24,
+      "duration": 5.04,
+      "text": "and probate litigation to preserve"
+    },
+    {
+      "start": 1063.44,
+      "duration": 6.0,
+      "text": "generational wealth through home"
+    },
+    {
+      "start": 1065.28,
+      "duration": 7.44,
+      "text": "ownership. The key thing there is legal"
+    },
+    {
+      "start": 1069.44,
+      "duration": 6.479,
+      "text": "services could be very important."
+    },
+    {
+      "start": 1072.72,
+      "duration": 5.68,
+      "text": "Lisk is being very intentional with"
+    },
+    {
+      "start": 1075.919,
+      "duration": 6.401,
+      "text": "partnerships to try to get as much"
+    },
+    {
+      "start": 1078.4,
+      "duration": 7.2,
+      "text": "funding as possible to be able to help"
+    },
+    {
+      "start": 1082.32,
+      "duration": 6.96,
+      "text": "families and individuals who are"
+    },
+    {
+      "start": 1085.6,
+      "duration": 5.68,
+      "text": "experiencing any issues around heirs"
+    },
+    {
+      "start": 1089.28,
+      "duration": 6.0,
+      "text": "property."
+    },
+    {
+      "start": 1091.28,
+      "duration": 7.279,
+      "text": "When we are able to"
+    },
+    {
+      "start": 1095.28,
+      "duration": 5.44,
+      "text": "address issues around"
+    },
+    {
+      "start": 1098.559,
+      "duration": 5.041,
+      "text": "tangled titles,"
+    },
+    {
+      "start": 1100.72,
+      "duration": 5.12,
+      "text": "we unlock what's called dead capital. We"
+    },
+    {
+      "start": 1103.6,
+      "duration": 5.28,
+      "text": "clear those titles and we allow"
+    },
+    {
+      "start": 1105.84,
+      "duration": 6.4,
+      "text": "households to be able to access more"
+    },
+    {
+      "start": 1108.88,
+      "duration": 5.12,
+      "text": "traditional financing products. Those"
+    },
+    {
+      "start": 1112.24,
+      "duration": 4.96,
+      "text": "could be"
+    },
+    {
+      "start": 1114.0,
+      "duration": 6.0,
+      "text": "home repair resources. Those could be"
+    },
+    {
+      "start": 1117.2,
+      "duration": 4.96,
+      "text": "utility assistance. Those could be"
+    },
+    {
+      "start": 1120.0,
+      "duration": 4.48,
+      "text": "weatherization,"
+    },
+    {
+      "start": 1122.16,
+      "duration": 5.2,
+      "text": "uh, refinancing the homes to make it"
+    },
+    {
+      "start": 1124.48,
+      "duration": 5.84,
+      "text": "more affordable. So, making sure that"
+    },
+    {
+      "start": 1127.36,
+      "duration": 6.4,
+      "text": "you have those clear titles, you're able"
+    },
+    {
+      "start": 1130.32,
+      "duration": 6.719,
+      "text": "to access many more resources."
+    },
+    {
+      "start": 1133.76,
+      "duration": 7.919,
+      "text": "By doing so, it improves housing stock"
+    },
+    {
+      "start": 1137.039,
+      "duration": 7.201,
+      "text": "through increased property values."
+    },
+    {
+      "start": 1141.679,
+      "duration": 4.801,
+      "text": "Next slide, please."
+    },
+    {
+      "start": 1144.24,
+      "duration": 5.04,
+      "text": "We've talked about a lot of what heirs"
+    },
+    {
+      "start": 1146.48,
+      "duration": 4.64,
+      "text": "property is, how heirs property affects"
+    },
+    {
+      "start": 1149.28,
+      "duration": 5.759,
+      "text": "our communities,"
+    },
+    {
+      "start": 1151.12,
+      "duration": 7.36,
+      "text": "what additional resources are available."
+    },
+    {
+      "start": 1155.039,
+      "duration": 8.321,
+      "text": "Um, our key learnings, um, you"
+    },
+    {
+      "start": 1158.48,
+      "duration": 7.68,
+      "text": "definitely need to know the data. Um,"
+    },
+    {
+      "start": 1163.36,
+      "duration": 6.4,
+      "text": "the data will tell you where the issue"
+    },
+    {
+      "start": 1166.16,
+      "duration": 6.32,
+      "text": "is. The data will tell you what"
+    },
+    {
+      "start": 1169.76,
+      "duration": 7.6,
+      "text": "resources need to be put into the"
+    },
+    {
+      "start": 1172.48,
+      "duration": 8.96,
+      "text": "community. The data unveils a lot and we"
+    },
+    {
+      "start": 1177.36,
+      "duration": 5.6,
+      "text": "are being very intentional in doing"
+    },
+    {
+      "start": 1181.44,
+      "duration": 6.239,
+      "text": "research"
+    },
+    {
+      "start": 1182.96,
+      "duration": 8.079,
+      "text": "around where the problem exists. So we"
+    },
+    {
+      "start": 1187.679,
+      "duration": 6.721,
+      "text": "are able to put those resources in the"
+    },
+    {
+      "start": 1191.039,
+      "duration": 4.88,
+      "text": "community by awareness,"
+    },
+    {
+      "start": 1194.4,
+      "duration": 5.12,
+      "text": "education,"
+    },
+    {
+      "start": 1195.919,
+      "duration": 7.12,
+      "text": "and the legal services."
+    },
+    {
+      "start": 1199.52,
+      "duration": 5.279,
+      "text": "Unclear ownership negatively impacts"
+    },
+    {
+      "start": 1203.039,
+      "duration": 3.281,
+      "text": "home values. When you're in"
+    },
+    {
+      "start": 1204.799,
+      "duration": 5.681,
+      "text": "neighborhoods"
+    },
+    {
+      "start": 1206.32,
+      "duration": 6.88,
+      "text": "where families are living in homes that"
+    },
+    {
+      "start": 1210.48,
+      "duration": 5.84,
+      "text": "are passed down or inherited, but titles"
+    },
+    {
+      "start": 1213.2,
+      "duration": 6.4,
+      "text": "have not been properly cared for, you"
+    },
+    {
+      "start": 1216.32,
+      "duration": 6.08,
+      "text": "run into issues with the taxes not being"
+    },
+    {
+      "start": 1219.6,
+      "duration": 4.959,
+      "text": "paid, the maintenance not keeping being"
+    },
+    {
+      "start": 1222.4,
+      "duration": 4.639,
+      "text": "kept up on the home. So, all of that"
+    },
+    {
+      "start": 1224.559,
+      "duration": 5.521,
+      "text": "impacts your home and the values in the"
+    },
+    {
+      "start": 1227.039,
+      "duration": 4.721,
+      "text": "neighborhood. Once the title is clear,"
+    },
+    {
+      "start": 1230.08,
+      "duration": 3.839,
+      "text": "there is an opportunity to make"
+    },
+    {
+      "start": 1231.76,
+      "duration": 5.2,
+      "text": "referrals. as we said earlier in the"
+    },
+    {
+      "start": 1233.919,
+      "duration": 6.481,
+      "text": "previous slide for home repair for"
+    },
+    {
+      "start": 1236.96,
+      "duration": 7.28,
+      "text": "qualifying households and you're able to"
+    },
+    {
+      "start": 1240.4,
+      "duration": 6.159,
+      "text": "address issues that may have been, you"
+    },
+    {
+      "start": 1244.24,
+      "duration": 5.28,
+      "text": "know, going on for quite some time. But"
+    },
+    {
+      "start": 1246.559,
+      "duration": 5.921,
+      "text": "what it does is unlock the opportunity"
+    },
+    {
+      "start": 1249.52,
+      "duration": 6.08,
+      "text": "and the potential for you to be able to"
+    },
+    {
+      "start": 1252.48,
+      "duration": 5.84,
+      "text": "take advantage of other resources that"
+    },
+    {
+      "start": 1255.6,
+      "duration": 4.8,
+      "text": "are available."
+    },
+    {
+      "start": 1258.32,
+      "duration": 4.239,
+      "text": "We know it's a hard conversation. Can"
+    },
+    {
+      "start": 1260.4,
+      "duration": 4.88,
+      "text": "you switch the slide, please? We know"
+    },
+    {
+      "start": 1262.559,
+      "duration": 5.201,
+      "text": "it's a hard conversation to have, but"
+    },
+    {
+      "start": 1265.28,
+      "duration": 5.84,
+      "text": "it's a conversation that everybody needs"
+    },
+    {
+      "start": 1267.76,
+      "duration": 5.919,
+      "text": "to have at one point. And the"
+    },
+    {
+      "start": 1271.12,
+      "duration": 5.28,
+      "text": "conversation is around having your"
+    },
+    {
+      "start": 1273.679,
+      "duration": 5.761,
+      "text": "affairs in order."
+    },
+    {
+      "start": 1276.4,
+      "duration": 6.399,
+      "text": "It starts with estate planning as a"
+    },
+    {
+      "start": 1279.44,
+      "duration": 5.92,
+      "text": "preservation tool. As my colleague"
+    },
+    {
+      "start": 1282.799,
+      "duration": 4.561,
+      "text": "Christopher and my colleague Carrie have"
+    },
+    {
+      "start": 1285.36,
+      "duration": 5.76,
+      "text": "already stated,"
+    },
+    {
+      "start": 1287.36,
+      "duration": 6.72,
+      "text": "we have to make sure that we are"
+    },
+    {
+      "start": 1291.12,
+      "duration": 5.28,
+      "text": "educating the community, educating home"
+    },
+    {
+      "start": 1294.08,
+      "duration": 6.32,
+      "text": "buyers at the beginning of the home"
+    },
+    {
+      "start": 1296.4,
+      "duration": 7.519,
+      "text": "buying process about wheels, estate"
+    },
+    {
+      "start": 1300.4,
+      "duration": 5.6,
+      "text": "planning, toss. So as they're going"
+    },
+    {
+      "start": 1303.919,
+      "duration": 6.0,
+      "text": "through the process and understanding"
+    },
+    {
+      "start": 1306.0,
+      "duration": 6.4,
+      "text": "the process, they're able to have this"
+    },
+    {
+      "start": 1309.919,
+      "duration": 6.081,
+      "text": "estate planning end of life docu end of"
+    },
+    {
+      "start": 1312.4,
+      "duration": 7.759,
+      "text": "life planning documents in order. So"
+    },
+    {
+      "start": 1316.0,
+      "duration": 7.12,
+      "text": "when everybody does come to that point,"
+    },
+    {
+      "start": 1320.159,
+      "duration": 6.321,
+      "text": "we don't have to create additional heirs"
+    },
+    {
+      "start": 1323.12,
+      "duration": 6.64,
+      "text": "property issues. So having your wills in"
+    },
+    {
+      "start": 1326.48,
+      "duration": 6.4,
+      "text": "place, having your trust in place,"
+    },
+    {
+      "start": 1329.76,
+      "duration": 7.919,
+      "text": "having your toss in place will make it"
+    },
+    {
+      "start": 1332.88,
+      "duration": 7.84,
+      "text": "so much easier when we have to have that"
+    },
+    {
+      "start": 1337.679,
+      "duration": 5.681,
+      "text": "hard conversation about end of life"
+    },
+    {
+      "start": 1340.72,
+      "duration": 7.36,
+      "text": "planning."
+    },
+    {
+      "start": 1343.36,
+      "duration": 6.88,
+      "text": "The roles uh change the slide please."
+    },
+    {
+      "start": 1348.08,
+      "duration": 5.68,
+      "text": "We work with"
+    },
+    {
+      "start": 1350.24,
+      "duration": 7.36,
+      "text": "many housing counseling agencies and as"
+    },
+    {
+      "start": 1353.76,
+      "duration": 7.2,
+      "text": "a housing agent housing counseling"
+    },
+    {
+      "start": 1357.6,
+      "duration": 5.84,
+      "text": "agency is important for them to talk"
+    },
+    {
+      "start": 1360.96,
+      "duration": 5.36,
+      "text": "about the pre and post housing"
+    },
+    {
+      "start": 1363.44,
+      "duration": 6.56,
+      "text": "counseling. You know we know that the"
+    },
+    {
+      "start": 1366.32,
+      "duration": 6.56,
+      "text": "home buying process starts with you know"
+    },
+    {
+      "start": 1370.0,
+      "duration": 6.32,
+      "text": "education around the loan itself finding"
+    },
+    {
+      "start": 1372.88,
+      "duration": 6.24,
+      "text": "the great and the best loan product. But"
+    },
+    {
+      "start": 1376.32,
+      "duration": 6.239,
+      "text": "there is a cycle of that. Once you"
+    },
+    {
+      "start": 1379.12,
+      "duration": 6.0,
+      "text": "purchase that home, what happens after"
+    },
+    {
+      "start": 1382.559,
+      "duration": 4.881,
+      "text": "you purchase that home? How are you"
+    },
+    {
+      "start": 1385.12,
+      "duration": 4.32,
+      "text": "going to keep up with the maintenance?"
+    },
+    {
+      "start": 1387.44,
+      "duration": 6.16,
+      "text": "How are you going to keep your equity"
+    },
+    {
+      "start": 1389.44,
+      "duration": 7.76,
+      "text": "growing? Who does that home transfer to"
+    },
+    {
+      "start": 1393.6,
+      "duration": 6.88,
+      "text": "when you're transitioning? So, it's very"
+    },
+    {
+      "start": 1397.2,
+      "duration": 6.479,
+      "text": "important to connect with agencies"
+    },
+    {
+      "start": 1400.48,
+      "duration": 9.0,
+      "text": "um to better understand"
+    },
+    {
+      "start": 1403.679,
+      "duration": 5.801,
+      "text": "the full cycle of home ownership."
+    },
+    {
+      "start": 1410.48,
+      "duration": 3.72,
+      "text": "Next slide, please."
+    },
+    {
+      "start": 1415.6,
+      "duration": 8.4,
+      "text": "That's my time. Um thank you and I will"
+    },
+    {
+      "start": 1419.039,
+      "duration": 7.921,
+      "text": "pass it back over to uh Christopher."
+    },
+    {
+      "start": 1424.0,
+      "duration": 4.64,
+      "text": ">> Hey, thanks Janelle. I think uh Ellie uh"
+    },
+    {
+      "start": 1426.96,
+      "duration": 4.32,
+      "text": "and folks are going to take it from here"
+    },
+    {
+      "start": 1428.64,
+      "duration": 3.68,
+      "text": "and lead the Q&A. Is that right?"
+    },
+    {
+      "start": 1431.28,
+      "duration": 1.44,
+      "text": ">> Yes, sir."
+    },
+    {
+      "start": 1432.32,
+      "duration": 3.599,
+      "text": ">> All right."
+    },
+    {
+      "start": 1432.72,
+      "duration": 5.36,
+      "text": ">> Um so, one thing I do want to say uh"
+    },
+    {
+      "start": 1435.919,
+      "duration": 4.64,
+      "text": "here at NHRC, we've done a couple of"
+    },
+    {
+      "start": 1438.08,
+      "duration": 5.2,
+      "text": "other webinars on errors property and"
+    },
+    {
+      "start": 1440.559,
+      "duration": 5.921,
+      "text": "Miss Ivy will uh pop those into the"
+    },
+    {
+      "start": 1443.28,
+      "duration": 7.44,
+      "text": "chat. We've done uh one specifically"
+    },
+    {
+      "start": 1446.48,
+      "duration": 7.199,
+      "text": "with National Housing uh excuse me at"
+    },
+    {
+      "start": 1450.72,
+      "duration": 4.24,
+      "text": "National uh National Consumer Law"
+    },
+    {
+      "start": 1453.679,
+      "duration": 3.521,
+      "text": "Center. Having a little bit of trouble"
+    },
+    {
+      "start": 1454.96,
+      "duration": 5.44,
+      "text": "with my alphabets this this morning,"
+    },
+    {
+      "start": 1457.2,
+      "duration": 5.2,
+      "text": "this afternoon. Anyway, they did a a"
+    },
+    {
+      "start": 1460.4,
+      "duration": 5.04,
+      "text": "session with us that was very specific"
+    },
+    {
+      "start": 1462.4,
+      "duration": 5.12,
+      "text": "on on heirs properties, all of the legal"
+    },
+    {
+      "start": 1465.44,
+      "duration": 4.8,
+      "text": "stuff. Uh so you might find that very"
+    },
+    {
+      "start": 1467.52,
+      "duration": 5.039,
+      "text": "helpful. we kind of had it out there on"
+    },
+    {
+      "start": 1470.24,
+      "duration": 4.799,
+      "text": "our website for quite a while as a as a"
+    },
+    {
+      "start": 1472.559,
+      "duration": 4.48,
+      "text": "really great training tool. Um, so"
+    },
+    {
+      "start": 1475.039,
+      "duration": 3.441,
+      "text": "there's that one and then there's a uh a"
+    },
+    {
+      "start": 1477.039,
+      "duration": 4.0,
+      "text": "second one that we did that you might"
+    },
+    {
+      "start": 1478.48,
+      "duration": 4.72,
+      "text": "also find useful. And then finally,"
+    },
+    {
+      "start": 1481.039,
+      "duration": 6.721,
+      "text": "we're going to pop into the chat a link"
+    },
+    {
+      "start": 1483.2,
+      "duration": 6.479,
+      "text": "to a document a paper that was done um"
+    },
+    {
+      "start": 1487.76,
+      "duration": 4.399,
+      "text": "with in conjunction with Lisk and"
+    },
+    {
+      "start": 1489.679,
+      "duration": 5.281,
+      "text": "National Consumer Law Center around"
+    },
+    {
+      "start": 1492.159,
+      "duration": 5.041,
+      "text": "heirs property and disaster recovery um"
+    },
+    {
+      "start": 1494.96,
+      "duration": 7.12,
+      "text": "and and what is happening there and what"
+    },
+    {
+      "start": 1497.2,
+      "duration": 8.32,
+      "text": "are some possible solutions there. So"
+    },
+    {
+      "start": 1502.08,
+      "duration": 7.12,
+      "text": "questions there are a few questions. So,"
+    },
+    {
+      "start": 1505.52,
+      "duration": 8.84,
+      "text": "is uh is freewill.com a legitimate place"
+    },
+    {
+      "start": 1509.2,
+      "duration": 5.16,
+      "text": "for folks to write up a simple will?"
+    },
+    {
+      "start": 1514.72,
+      "duration": 3.36,
+      "text": "Yeah. So, so Elliot, I think there's a"
+    },
+    {
+      "start": 1516.24,
+      "duration": 4.88,
+      "text": "couple things to introduce here. One is"
+    },
+    {
+      "start": 1518.08,
+      "duration": 6.4,
+      "text": "uh just everybody's understanding of"
+    },
+    {
+      "start": 1521.12,
+      "duration": 7.52,
+      "text": "UPL, unauthorized practice of law. And"
+    },
+    {
+      "start": 1524.48,
+      "duration": 5.92,
+      "text": "so it's important um for folks to um"
+    },
+    {
+      "start": 1528.64,
+      "duration": 5.76,
+      "text": "make contact with their local bar"
+    },
+    {
+      "start": 1530.4,
+      "duration": 6.0,
+      "text": "association or um understand the"
+    },
+    {
+      "start": 1534.4,
+      "duration": 6.8,
+      "text": "resources that are available to them"
+    },
+    {
+      "start": 1536.4,
+      "duration": 7.2,
+      "text": "like NCLC or others. So I would defer"
+    },
+    {
+      "start": 1541.2,
+      "duration": 4.4,
+      "text": "that question or or suggest that they"
+    },
+    {
+      "start": 1543.6,
+      "duration": 5.439,
+      "text": "reach out to a local partner for that"
+    },
+    {
+      "start": 1545.6,
+      "duration": 5.439,
+      "text": "answer. The other part of that answer is"
+    },
+    {
+      "start": 1549.039,
+      "duration": 4.64,
+      "text": "there are groups around the country like"
+    },
+    {
+      "start": 1551.039,
+      "duration": 5.76,
+      "text": "uh heepen hpppn"
+    },
+    {
+      "start": 1553.679,
+      "duration": 5.041,
+      "text": "which is a network national network of"
+    },
+    {
+      "start": 1556.799,
+      "duration": 5.36,
+      "text": "legal service organizations around the"
+    },
+    {
+      "start": 1558.72,
+      "duration": 7.6,
+      "text": "country and they if you Google them they"
+    },
+    {
+      "start": 1562.159,
+      "duration": 6.721,
+      "text": "can also provide uh guidance around how"
+    },
+    {
+      "start": 1566.32,
+      "duration": 4.08,
+      "text": "to address some of these legal um"
+    },
+    {
+      "start": 1568.88,
+      "duration": 3.6,
+      "text": "questions that are being raised. So that"
+    },
+    {
+      "start": 1570.4,
+      "duration": 5.92,
+      "text": "would be my response to it. It's an it's"
+    },
+    {
+      "start": 1572.48,
+      "duration": 7.36,
+      "text": "a non-answer answer, but it's a way to"
+    },
+    {
+      "start": 1576.32,
+      "duration": 5.839,
+      "text": "say look definitely look at your state,"
+    },
+    {
+      "start": 1579.84,
+      "duration": 5.92,
+      "text": "it's individual, it's state law, and"
+    },
+    {
+      "start": 1582.159,
+      "duration": 5.12,
+      "text": "look for local re uh resources in your"
+    },
+    {
+      "start": 1585.76,
+      "duration": 5.48,
+      "text": "jurisdiction such as your bar"
+    },
+    {
+      "start": 1587.279,
+      "duration": 3.961,
+      "text": "association or legal"
+    },
+    {
+      "start": 1591.919,
+      "duration": 4.401,
+      "text": ">> and I'm popping that into the chat, that"
+    },
+    {
+      "start": 1594.799,
+      "duration": 3.201,
+      "text": "HPNP"
+    },
+    {
+      "start": 1596.32,
+      "duration": 4.16,
+      "text": "link that you mentioned."
+    },
+    {
+      "start": 1598.0,
+      "duration": 4.159,
+      "text": ">> Thanks. Okay. So, uh this is a person"
+    },
+    {
+      "start": 1600.48,
+      "duration": 3.76,
+      "text": "who is working with a client who was"
+    },
+    {
+      "start": 1602.159,
+      "duration": 4.721,
+      "text": "given a property that she shared with a"
+    },
+    {
+      "start": 1604.24,
+      "duration": 5.679,
+      "text": "partner for 20 years through a transfer"
+    },
+    {
+      "start": 1606.88,
+      "duration": 4.64,
+      "text": "on death deed. Uh lost mitt won't accept"
+    },
+    {
+      "start": 1609.919,
+      "duration": 3.36,
+      "text": "her application for successor and"
+    },
+    {
+      "start": 1611.52,
+      "duration": 5.279,
+      "text": "interest as they say only a direct"
+    },
+    {
+      "start": 1613.279,
+      "duration": 5.681,
+      "text": "family member, spouse or a child can be"
+    },
+    {
+      "start": 1616.799,
+      "duration": 5.12,
+      "text": "si"
+    },
+    {
+      "start": 1618.96,
+      "duration": 6.16,
+      "text": "said even a will would not give her the"
+    },
+    {
+      "start": 1621.919,
+      "duration": 7.441,
+      "text": "right to be a successor and interest as"
+    },
+    {
+      "start": 1625.12,
+      "duration": 4.24,
+      "text": "they were not married. Is this true?"
+    },
+    {
+      "start": 1633.36,
+      "duration": 5.84,
+      "text": "Yeah. Again, I think the answer to that"
+    },
+    {
+      "start": 1635.76,
+      "duration": 7.2,
+      "text": "is make contact with your local bar and"
+    },
+    {
+      "start": 1639.2,
+      "duration": 6.16,
+      "text": "legal services partner to confirm what I"
+    },
+    {
+      "start": 1642.96,
+      "duration": 5.199,
+      "text": "believe is true, which is that depending"
+    },
+    {
+      "start": 1645.36,
+      "duration": 6.88,
+      "text": "on your state, you're going to find that"
+    },
+    {
+      "start": 1648.159,
+      "duration": 7.921,
+      "text": "there is a need to have a formal um"
+    },
+    {
+      "start": 1652.24,
+      "duration": 6.72,
+      "text": "document in place for a successor and"
+    },
+    {
+      "start": 1656.08,
+      "duration": 6.92,
+      "text": "interest transfer. And thank you, Ellie,"
+    },
+    {
+      "start": 1658.96,
+      "duration": 4.04,
+      "text": "for putting those links in the chat."
+    },
+    {
+      "start": 1664.4,
+      "duration": 5.759,
+      "text": "Uh okay. What will be most beneficial"
+    },
+    {
+      "start": 1668.0,
+      "duration": 5.36,
+      "text": "and less expensive for homeowner and"
+    },
+    {
+      "start": 1670.159,
+      "duration": 6.201,
+      "text": "beneficiary? Uh todd or will pertaining"
+    },
+    {
+      "start": 1673.36,
+      "duration": 3.0,
+      "text": "taxes?"
+    },
+    {
+      "start": 1679.44,
+      "duration": 6.8,
+      "text": "Yeah, the preference is todd."
+    },
+    {
+      "start": 1682.559,
+      "duration": 6.401,
+      "text": "Okay. Transfer debt deeds are uh the"
+    },
+    {
+      "start": 1686.24,
+      "duration": 5.919,
+      "text": "only cost there. I think it's a 50 $55"
+    },
+    {
+      "start": 1688.96,
+      "duration": 6.56,
+      "text": "filing fee. um depending on the local"
+    },
+    {
+      "start": 1692.159,
+      "duration": 6.0,
+      "text": "clerk's office. But um the tax question"
+    },
+    {
+      "start": 1695.52,
+      "duration": 4.879,
+      "text": "is interesting because it depends on how"
+    },
+    {
+      "start": 1698.159,
+      "duration": 4.961,
+      "text": "that transfer is treated by the"
+    },
+    {
+      "start": 1700.399,
+      "duration": 7.28,
+      "text": "assessor's office and whether or not"
+    },
+    {
+      "start": 1703.12,
+      "duration": 8.08,
+      "text": "they will reset that home value in the"
+    },
+    {
+      "start": 1707.679,
+      "duration": 5.761,
+      "text": "upcoming tax year. Okay? And so it does"
+    },
+    {
+      "start": 1711.2,
+      "duration": 6.24,
+      "text": "depend on the home value in terms of"
+    },
+    {
+      "start": 1713.44,
+      "duration": 6.719,
+      "text": "whether or not that um property tax um"
+    },
+    {
+      "start": 1717.44,
+      "duration": 7.0,
+      "text": "will will actually increase"
+    },
+    {
+      "start": 1720.159,
+      "duration": 4.281,
+      "text": "in a todd scenario."
+    },
+    {
+      "start": 1725.6,
+      "duration": 4.64,
+      "text": ">> Okay. Is is anybody able to address the"
+    },
+    {
+      "start": 1728.24,
+      "duration": 4.0,
+      "text": "ethical issues in identifying"
+    },
+    {
+      "start": 1730.24,
+      "duration": 4.4,
+      "text": "neighborhoods with high concentration of"
+    },
+    {
+      "start": 1732.24,
+      "duration": 4.4,
+      "text": "heirs property? With that information,"
+    },
+    {
+      "start": 1734.64,
+      "duration": 3.84,
+      "text": "speculators can prey on heirs property"
+    },
+    {
+      "start": 1736.64,
+      "duration": 5.88,
+      "text": "owners with scams and partition actions"
+    },
+    {
+      "start": 1738.48,
+      "duration": 4.04,
+      "text": "to force a sale at auction."
+    },
+    {
+      "start": 1744.24,
+      "duration": 4.559,
+      "text": ">> Hey Ellie, I'm doing a lot of talking. I"
+    },
+    {
+      "start": 1746.08,
+      "duration": 3.199,
+      "text": "invite Carrie and Chanel to jump in if"
+    },
+    {
+      "start": 1748.799,
+      "duration": 4.36,
+      "text": "they have."
+    },
+    {
+      "start": 1749.279,
+      "duration": 3.88,
+      "text": ">> Yes, anybody can answer."
+    },
+    {
+      "start": 1755.36,
+      "duration": 4.08,
+      "text": ">> I could take that one. Um, as it relates"
+    },
+    {
+      "start": 1757.919,
+      "duration": 3.441,
+      "text": "to"
+    },
+    {
+      "start": 1759.44,
+      "duration": 3.359,
+      "text": "addressing ethical issues and"
+    },
+    {
+      "start": 1761.36,
+      "duration": 4.24,
+      "text": "identifying neighborhoods with high"
+    },
+    {
+      "start": 1762.799,
+      "duration": 4.801,
+      "text": "concentrations of airless property."
+    },
+    {
+      "start": 1765.6,
+      "duration": 5.36,
+      "text": "Well, um, if you know anything about"
+    },
+    {
+      "start": 1767.6,
+      "duration": 5.439,
+      "text": "developers and speculators, they are"
+    },
+    {
+      "start": 1770.96,
+      "duration": 5.839,
+      "text": "always online and they're looking at"
+    },
+    {
+      "start": 1773.039,
+      "duration": 6.321,
+      "text": "property tax. um um issues like"
+    },
+    {
+      "start": 1776.799,
+      "duration": 4.401,
+      "text": "individuals who haven't paid. So"
+    },
+    {
+      "start": 1779.36,
+      "duration": 4.559,
+      "text": "therefore, they're already looking."
+    },
+    {
+      "start": 1781.2,
+      "duration": 6.16,
+      "text": "Typically, there's a direct correlation"
+    },
+    {
+      "start": 1783.919,
+      "duration": 6.321,
+      "text": "between unpaid taxes and heirs property."
+    },
+    {
+      "start": 1787.36,
+      "duration": 5.52,
+      "text": "Again, that's why I circle back. We have"
+    },
+    {
+      "start": 1790.24,
+      "duration": 5.679,
+      "text": "to have the data so we'll know where to"
+    },
+    {
+      "start": 1792.88,
+      "duration": 5.36,
+      "text": "concentrate our services at. But again,"
+    },
+    {
+      "start": 1795.919,
+      "duration": 5.041,
+      "text": "that's why the role of a housing"
+    },
+    {
+      "start": 1798.24,
+      "duration": 5.439,
+      "text": "counselor is so important because we"
+    },
+    {
+      "start": 1800.96,
+      "duration": 5.92,
+      "text": "have to continue to educate and it's"
+    },
+    {
+      "start": 1803.679,
+      "duration": 5.681,
+      "text": "also important for us to align the act"
+    },
+    {
+      "start": 1806.88,
+      "duration": 6.12,
+      "text": "as a navigator to connect all of those"
+    },
+    {
+      "start": 1809.36,
+      "duration": 3.64,
+      "text": "services together."
+    },
+    {
+      "start": 1813.36,
+      "duration": 4.559,
+      "text": ">> And I would just piggyback off that,"
+    },
+    {
+      "start": 1815.44,
+      "duration": 5.44,
+      "text": "thank you, Carrie, thank you Chris, that"
+    },
+    {
+      "start": 1817.919,
+      "duration": 6.48,
+      "text": "we have to get out of the mindset of it"
+    },
+    {
+      "start": 1820.88,
+      "duration": 6.56,
+      "text": "being a embarrassing situation."
+    },
+    {
+      "start": 1824.399,
+      "duration": 5.921,
+      "text": "If we want to be able to take advantage"
+    },
+    {
+      "start": 1827.44,
+      "duration": 5.359,
+      "text": "of the resources that are available, we"
+    },
+    {
+      "start": 1830.32,
+      "duration": 6.16,
+      "text": "have to be comfortable talking about the"
+    },
+    {
+      "start": 1832.799,
+      "duration": 6.641,
+      "text": "issues that we face. And when we are"
+    },
+    {
+      "start": 1836.48,
+      "duration": 5.919,
+      "text": "inheriting property from our family"
+    },
+    {
+      "start": 1839.44,
+      "duration": 5.839,
+      "text": "members who have passed on, we often"
+    },
+    {
+      "start": 1842.399,
+      "duration": 5.121,
+      "text": "stay in the home knowing that we may not"
+    },
+    {
+      "start": 1845.279,
+      "duration": 6.4,
+      "text": "have the resources to keep the home. And"
+    },
+    {
+      "start": 1847.52,
+      "duration": 6.399,
+      "text": "by the time that we are able to or you"
+    },
+    {
+      "start": 1851.679,
+      "duration": 5.281,
+      "text": "know if we're able to it has gone"
+    },
+    {
+      "start": 1853.919,
+      "duration": 6.0,
+      "text": "through the um probate cycle and it may"
+    },
+    {
+      "start": 1856.96,
+      "duration": 6.4,
+      "text": "be too far along. So my message here"
+    },
+    {
+      "start": 1859.919,
+      "duration": 6.721,
+      "text": "would be make sure that we do have the"
+    },
+    {
+      "start": 1863.36,
+      "duration": 5.199,
+      "text": "educational resources available to put"
+    },
+    {
+      "start": 1866.64,
+      "duration": 6.08,
+      "text": "into the community and try to work with"
+    },
+    {
+      "start": 1868.559,
+      "duration": 6.48,
+      "text": "our local CDC partners to um interact"
+    },
+    {
+      "start": 1872.72,
+      "duration": 5.439,
+      "text": "with our residents because those are the"
+    },
+    {
+      "start": 1875.039,
+      "duration": 5.201,
+      "text": "individuals who touch and feel the um"
+    },
+    {
+      "start": 1878.159,
+      "duration": 5.681,
+      "text": "residents every day and help them with"
+    },
+    {
+      "start": 1880.24,
+      "duration": 5.679,
+      "text": "their ongoing issues that they may have."
+    },
+    {
+      "start": 1883.84,
+      "duration": 4.559,
+      "text": ">> Could I just jump in with a related"
+    },
+    {
+      "start": 1885.919,
+      "duration": 5.281,
+      "text": "question to all this? Um, one of the"
+    },
+    {
+      "start": 1888.399,
+      "duration": 6.241,
+      "text": "things that I've heard a bunch is that"
+    },
+    {
+      "start": 1891.2,
+      "duration": 5.359,
+      "text": "people who are um uh that they they talk"
+    },
+    {
+      "start": 1894.64,
+      "duration": 4.32,
+      "text": "to their parents about a will and they"
+    },
+    {
+      "start": 1896.559,
+      "duration": 4.161,
+      "text": "say, \"What? Do you want me dead?\" And"
+    },
+    {
+      "start": 1898.96,
+      "duration": 2.959,
+      "text": "they they're like, \"Oh, I don't like to"
+    },
+    {
+      "start": 1900.72,
+      "duration": 2.64,
+      "text": "talk about it. I don't like to talk"
+    },
+    {
+      "start": 1901.919,
+      "duration": 4.161,
+      "text": "about death.\" I mean, there's this kind"
+    },
+    {
+      "start": 1903.36,
+      "duration": 5.6,
+      "text": "of emotional thing that goes on. And how"
+    },
+    {
+      "start": 1906.08,
+      "duration": 5.839,
+      "text": "do you how do you overcome that? How do"
+    },
+    {
+      "start": 1908.96,
+      "duration": 6.319,
+      "text": "you address that?"
+    },
+    {
+      "start": 1911.919,
+      "duration": 7.36,
+      "text": ">> It's a very hard conversation to have."
+    },
+    {
+      "start": 1915.279,
+      "duration": 6.961,
+      "text": "Um even you know myself you know I my"
+    },
+    {
+      "start": 1919.279,
+      "duration": 5.76,
+      "text": "body of work is around heirs and I don't"
+    },
+    {
+      "start": 1922.24,
+      "duration": 5.279,
+      "text": "even have my um estate planning in"
+    },
+    {
+      "start": 1925.039,
+      "duration": 4.721,
+      "text": "place. You know we think at our age that"
+    },
+    {
+      "start": 1927.519,
+      "duration": 4.961,
+      "text": "we're a little young to be thinking that"
+    },
+    {
+      "start": 1929.76,
+      "duration": 6.08,
+      "text": "route but I think it's a conversation"
+    },
+    {
+      "start": 1932.48,
+      "duration": 5.919,
+      "text": "that we must have with our you know our"
+    },
+    {
+      "start": 1935.84,
+      "duration": 5.76,
+      "text": "families, our children. And as long as"
+    },
+    {
+      "start": 1938.399,
+      "duration": 5.28,
+      "text": "we're able to keep putting the resources"
+    },
+    {
+      "start": 1941.6,
+      "duration": 4.88,
+      "text": "out into the community and folks are"
+    },
+    {
+      "start": 1943.679,
+      "duration": 5.041,
+      "text": "hearing it over and over and over again,"
+    },
+    {
+      "start": 1946.48,
+      "duration": 4.0,
+      "text": "it starts to resonate and then that's"
+    },
+    {
+      "start": 1948.72,
+      "duration": 4.16,
+      "text": "when individuals are like, \"Well, yeah,"
+    },
+    {
+      "start": 1950.48,
+      "duration": 5.199,
+      "text": "maybe I should do it now.\" But it's a"
+    },
+    {
+      "start": 1952.88,
+      "duration": 4.88,
+      "text": "very hard conversation to have when"
+    },
+    {
+      "start": 1955.679,
+      "duration": 4.081,
+      "text": "you're thinking about completing your,"
+    },
+    {
+      "start": 1957.76,
+      "duration": 4.0,
+      "text": "you know, end of life planning um"
+    },
+    {
+      "start": 1959.76,
+      "duration": 4.24,
+      "text": "documents, but it's a conversation"
+    },
+    {
+      "start": 1961.76,
+      "duration": 5.039,
+      "text": "that's necessary. So, the more that"
+    },
+    {
+      "start": 1964.0,
+      "duration": 5.6,
+      "text": "we're able to educate the community, the"
+    },
+    {
+      "start": 1966.799,
+      "duration": 5.041,
+      "text": "residents, um I think it'll the message"
+    },
+    {
+      "start": 1969.6,
+      "duration": 4.559,
+      "text": "will resonate a little bit better and a"
+    },
+    {
+      "start": 1971.84,
+      "duration": 4.319,
+      "text": "little bit more."
+    },
+    {
+      "start": 1974.159,
+      "duration": 4.081,
+      "text": ">> I do want to point"
+    },
+    {
+      "start": 1976.159,
+      "duration": 4.081,
+      "text": ">> I do want to point out that somebody"
+    },
+    {
+      "start": 1978.24,
+      "duration": 4.0,
+      "text": "popped into the chat, you can share my"
+    },
+    {
+      "start": 1980.24,
+      "duration": 3.84,
+      "text": "story. My husband died at 32 and there"
+    },
+    {
+      "start": 1982.24,
+      "duration": 3.679,
+      "text": "was no will or trust."
+    },
+    {
+      "start": 1984.08,
+      "duration": 3.28,
+      "text": ">> I mean, I think that that's it's one of"
+    },
+    {
+      "start": 1985.919,
+      "duration": 2.961,
+      "text": "the things that's a that's a hard"
+    },
+    {
+      "start": 1987.36,
+      "duration": 4.159,
+      "text": "conversation to have, right? You never"
+    },
+    {
+      "start": 1988.88,
+      "duration": 4.88,
+      "text": "know. You just never know. And that's"
+    },
+    {
+      "start": 1991.519,
+      "duration": 4.801,
+      "text": "why I said earlier when we were kind of"
+    },
+    {
+      "start": 1993.76,
+      "duration": 5.6,
+      "text": "in uh in the backstage"
+    },
+    {
+      "start": 1996.32,
+      "duration": 4.719,
+      "text": "uh part of our session here that it"
+    },
+    {
+      "start": 1999.36,
+      "duration": 3.679,
+      "text": "doesn't matter how old you are, you"
+    },
+    {
+      "start": 2001.039,
+      "duration": 4.0,
+      "text": "should have estate planning if"
+    },
+    {
+      "start": 2003.039,
+      "duration": 2.961,
+      "text": "especially if you're a homeowner."
+    },
+    {
+      "start": 2005.039,
+      "duration": 3.841,
+      "text": ">> Absolutely."
+    },
+    {
+      "start": 2006.0,
+      "duration": 5.36,
+      "text": ">> Yeah. And Alec, I would just like to add"
+    },
+    {
+      "start": 2008.88,
+      "duration": 6.24,
+      "text": "one of the things that we've done, well,"
+    },
+    {
+      "start": 2011.36,
+      "duration": 7.76,
+      "text": "I've led in my office is to encourage"
+    },
+    {
+      "start": 2015.12,
+      "duration": 6.399,
+      "text": "each of my employees to get their estate"
+    },
+    {
+      "start": 2019.12,
+      "duration": 5.039,
+      "text": "plan in place through the partnership"
+    },
+    {
+      "start": 2021.519,
+      "duration": 5.28,
+      "text": "with Lisk. And Bruce, to answer your"
+    },
+    {
+      "start": 2024.159,
+      "duration": 5.36,
+      "text": "question, we have to stop talking about"
+    },
+    {
+      "start": 2026.799,
+      "duration": 5.76,
+      "text": "it in terms of death and talking about"
+    },
+    {
+      "start": 2029.519,
+      "duration": 6.481,
+      "text": "in terms of generational wealth building"
+    },
+    {
+      "start": 2032.559,
+      "duration": 5.36,
+      "text": "and also honoring wishes. So, it's about"
+    },
+    {
+      "start": 2036.0,
+      "duration": 5.519,
+      "text": "planning for wealth for future"
+    },
+    {
+      "start": 2037.919,
+      "duration": 6.88,
+      "text": "generations and, you know, creating"
+    },
+    {
+      "start": 2041.519,
+      "duration": 6.081,
+      "text": "conversational props that make people"
+    },
+    {
+      "start": 2044.799,
+      "duration": 6.88,
+      "text": "comfortable and encouraging them to do"
+    },
+    {
+      "start": 2047.6,
+      "duration": 7.519,
+      "text": "it at, you know, um, family reunions,"
+    },
+    {
+      "start": 2051.679,
+      "duration": 5.361,
+      "text": "etc., and places where it's not such a"
+    },
+    {
+      "start": 2055.119,
+      "duration": 3.841,
+      "text": "heavy topic."
+    },
+    {
+      "start": 2057.04,
+      "duration": 3.839,
+      "text": ">> Yeah, I think that I would just that's"
+    },
+    {
+      "start": 2058.96,
+      "duration": 4.08,
+      "text": "completely compelling. And the other"
+    },
+    {
+      "start": 2060.879,
+      "duration": 4.401,
+      "text": "thing I would add is that the ad that we"
+    },
+    {
+      "start": 2063.04,
+      "duration": 4.799,
+      "text": "just saw at the very beginning of the"
+    },
+    {
+      "start": 2065.28,
+      "duration": 6.0,
+      "text": "woman saying, \"I wish I had um done it"
+    },
+    {
+      "start": 2067.839,
+      "duration": 6.24,
+      "text": "earlier um where you see somebody who"
+    },
+    {
+      "start": 2071.28,
+      "duration": 4.16,
+      "text": "looks like you and is um compelling and"
+    },
+    {
+      "start": 2074.079,
+      "duration": 4.161,
+      "text": "looking you straight in the eye.\" I"
+    },
+    {
+      "start": 2075.44,
+      "duration": 4.8,
+      "text": "think that that resonates. I think I"
+    },
+    {
+      "start": 2078.24,
+      "duration": 4.24,
+      "text": "think it's it's very good to also talk"
+    },
+    {
+      "start": 2080.24,
+      "duration": 4.0,
+      "text": "about the the future orientation of it"
+    },
+    {
+      "start": 2082.48,
+      "duration": 3.76,
+      "text": "all."
+    },
+    {
+      "start": 2084.24,
+      "duration": 4.08,
+      "text": "Do it for the kids,"
+    },
+    {
+      "start": 2086.24,
+      "duration": 3.76,
+      "text": ">> right? And I just want to remind"
+    },
+    {
+      "start": 2088.32,
+      "duration": 3.599,
+      "text": "everybody, please put your questions in"
+    },
+    {
+      "start": 2090.0,
+      "duration": 3.28,
+      "text": "the Q&A, not in the chat. I will not be"
+    },
+    {
+      "start": 2091.919,
+      "duration": 3.76,
+      "text": "able to keep track of them in the chat"
+    },
+    {
+      "start": 2093.28,
+      "duration": 4.0,
+      "text": "because it keeps scrolling. So, if you"
+    },
+    {
+      "start": 2095.679,
+      "duration": 4.801,
+      "text": "really want me to ask the question,"
+    },
+    {
+      "start": 2097.28,
+      "duration": 4.88,
+      "text": "please put it in the Q&A box. Um, I I"
+    },
+    {
+      "start": 2100.48,
+      "duration": 4.32,
+      "text": "think we kind of answered this question"
+    },
+    {
+      "start": 2102.16,
+      "duration": 4.32,
+      "text": "already, but I will ask it again. Um, is"
+    },
+    {
+      "start": 2104.8,
+      "duration": 2.96,
+      "text": "there any national legal services group"
+    },
+    {
+      "start": 2106.48,
+      "duration": 3.2,
+      "text": "that would assist with the legal"
+    },
+    {
+      "start": 2107.76,
+      "duration": 4.0,
+      "text": "guidance and legal documents needed to"
+    },
+    {
+      "start": 2109.68,
+      "duration": 6.08,
+      "text": "help our clients? And I think Chris,"
+    },
+    {
+      "start": 2111.76,
+      "duration": 5.68,
+      "text": "that uh site that you mentioned is would"
+    },
+    {
+      "start": 2115.76,
+      "duration": 3.44,
+      "text": "uh would be a place for somebody to do"
+    },
+    {
+      "start": 2117.44,
+      "duration": 3.679,
+      "text": "that. And Carrie, you kind of came on"
+    },
+    {
+      "start": 2119.2,
+      "duration": 3.84,
+      "text": "camera. Is there anything you wanted to"
+    },
+    {
+      "start": 2121.119,
+      "duration": 4.641,
+      "text": "say about that?"
+    },
+    {
+      "start": 2123.04,
+      "duration": 4.4,
+      "text": ">> No, I'm good. I just Yeah, I want to"
+    },
+    {
+      "start": 2125.76,
+      "duration": 2.8,
+      "text": "make sure we get to as many questions as"
+    },
+    {
+      "start": 2127.44,
+      "duration": 3.36,
+      "text": "we can."
+    },
+    {
+      "start": 2128.56,
+      "duration": 4.799,
+      "text": ">> Okay."
+    },
+    {
+      "start": 2130.8,
+      "duration": 4.4,
+      "text": "Okay. Um, can anyone address the"
+    },
+    {
+      "start": 2133.359,
+      "duration": 3.441,
+      "text": "importance of looking at state specific"
+    },
+    {
+      "start": 2135.2,
+      "duration": 3.6,
+      "text": "law regarding estate planning and"
+    },
+    {
+      "start": 2136.8,
+      "duration": 3.92,
+      "text": "clearing titles? It varies quite a bit"
+    },
+    {
+      "start": 2138.8,
+      "duration": 5.12,
+      "text": "from state to state. Yeah, it's huge."
+    },
+    {
+      "start": 2140.72,
+      "duration": 6.16,
+      "text": "That's why I mentioned NCLC as the dep"
+    },
+    {
+      "start": 2143.92,
+      "duration": 5.919,
+      "text": "repository for that. I I would say go to"
+    },
+    {
+      "start": 2146.88,
+      "duration": 6.08,
+      "text": "NCLC's website and there's some reports"
+    },
+    {
+      "start": 2149.839,
+      "duration": 8.0,
+      "text": "there to be able to help you gauge what"
+    },
+    {
+      "start": 2152.96,
+      "duration": 7.92,
+      "text": "the uh state laws look like in Texas,"
+    },
+    {
+      "start": 2157.839,
+      "duration": 4.721,
+      "text": "Michigan, Florida, etc. So, look at"
+    },
+    {
+      "start": 2160.88,
+      "duration": 4.64,
+      "text": "that. They've done some landscape"
+    },
+    {
+      "start": 2162.56,
+      "duration": 4.799,
+      "text": "analysis around that work. Um, the other"
+    },
+    {
+      "start": 2165.52,
+      "duration": 3.76,
+      "text": "thing I'd say is you have some law"
+    },
+    {
+      "start": 2167.359,
+      "duration": 4.48,
+      "text": "schools, Ellie, that are getting in the"
+    },
+    {
+      "start": 2169.28,
+      "duration": 4.96,
+      "text": "heirs game and estate planning game. So,"
+    },
+    {
+      "start": 2171.839,
+      "duration": 5.201,
+      "text": "look at your local law school as to"
+    },
+    {
+      "start": 2174.24,
+      "duration": 5.599,
+      "text": "whether or not there's a law clinic that"
+    },
+    {
+      "start": 2177.04,
+      "duration": 6.079,
+      "text": "is available and doing work around"
+    },
+    {
+      "start": 2179.839,
+      "duration": 8.081,
+      "text": "providing initial intake, counseling,"
+    },
+    {
+      "start": 2183.119,
+      "duration": 8.441,
+      "text": "and or uh connection to resources um in"
+    },
+    {
+      "start": 2187.92,
+      "duration": 3.64,
+      "text": "your particular jurisdiction."
+    },
+    {
+      "start": 2191.68,
+      "duration": 3.6,
+      "text": "And what do we recommend families"
+    },
+    {
+      "start": 2193.359,
+      "duration": 3.361,
+      "text": "besides the legal advice of course when"
+    },
+    {
+      "start": 2195.28,
+      "duration": 5.64,
+      "text": "the will is not enough to keep your home"
+    },
+    {
+      "start": 2196.72,
+      "duration": 4.2,
+      "text": "in the family and you need a trust"
+    },
+    {
+      "start": 2202.88,
+      "duration": 4.08,
+      "text": ">> you we need more information about that"
+    },
+    {
+      "start": 2204.96,
+      "duration": 4.32,
+      "text": "situation. What I would say is you've"
+    },
+    {
+      "start": 2206.96,
+      "duration": 4.159,
+      "text": "got to look at all of the potential"
+    },
+    {
+      "start": 2209.28,
+      "duration": 4.48,
+      "text": "assets. So this brings up another point"
+    },
+    {
+      "start": 2211.119,
+      "duration": 4.881,
+      "text": "which may be that um for younger folks"
+    },
+    {
+      "start": 2213.76,
+      "duration": 4.319,
+      "text": "in particular they may not you may not"
+    },
+    {
+      "start": 2216.0,
+      "duration": 4.64,
+      "text": "be talking about a house Ellie it may be"
+    },
+    {
+      "start": 2218.079,
+      "duration": 5.361,
+      "text": "digital assets. I remember having a"
+    },
+    {
+      "start": 2220.64,
+      "duration": 4.88,
+      "text": "conversation with a military veteran. He"
+    },
+    {
+      "start": 2223.44,
+      "duration": 5.12,
+      "text": "was more interested in the medals and"
+    },
+    {
+      "start": 2225.52,
+      "duration": 4.72,
+      "text": "how he could pass those on than he was"
+    },
+    {
+      "start": 2228.56,
+      "duration": 3.519,
+      "text": "in his home."
+    },
+    {
+      "start": 2230.24,
+      "duration": 4.64,
+      "text": ">> And so I would say to you, it's a"
+    },
+    {
+      "start": 2232.079,
+      "duration": 6.561,
+      "text": "broader conversation about assets, not"
+    },
+    {
+      "start": 2234.88,
+      "duration": 7.44,
+      "text": "just homes. Um, and it's also bringing"
+    },
+    {
+      "start": 2238.64,
+      "duration": 7.04,
+      "text": "forward this idea of pay uh payable on"
+    },
+    {
+      "start": 2242.32,
+      "duration": 5.519,
+      "text": "death um programs. So payable on death"
+    },
+    {
+      "start": 2245.68,
+      "duration": 4.32,
+      "text": "are things like bank accounts, life"
+    },
+    {
+      "start": 2247.839,
+      "duration": 4.961,
+      "text": "insurance. What we found that's"
+    },
+    {
+      "start": 2250.0,
+      "duration": 5.68,
+      "text": "important is when you're in the intake"
+    },
+    {
+      "start": 2252.8,
+      "duration": 6.88,
+      "text": "process, having the ability to access"
+    },
+    {
+      "start": 2255.68,
+      "duration": 7.679,
+      "text": "the unclaimed assets database for your"
+    },
+    {
+      "start": 2259.68,
+      "duration": 7.28,
+      "text": "state because you may find that um a"
+    },
+    {
+      "start": 2263.359,
+      "duration": 7.041,
+      "text": "loved one may have left proceeds that"
+    },
+    {
+      "start": 2266.96,
+      "duration": 5.84,
+      "text": "were unclaimed that you could access um"
+    },
+    {
+      "start": 2270.4,
+      "duration": 5.52,
+      "text": "as you're going through potential estate"
+    },
+    {
+      "start": 2272.8,
+      "duration": 3.12,
+      "text": "planning process."
+    },
+    {
+      "start": 2277.52,
+      "duration": 5.839,
+      "text": "Uh, can anybody say anything about"
+    },
+    {
+      "start": 2279.28,
+      "duration": 5.68,
+      "text": "community property states?"
+    },
+    {
+      "start": 2283.359,
+      "duration": 3.76,
+      "text": "Oh, and before you answer that, I do"
+    },
+    {
+      "start": 2284.96,
+      "duration": 3.92,
+      "text": "want to just point out somebody in"
+    },
+    {
+      "start": 2287.119,
+      "duration": 4.321,
+      "text": "Arizona said that you can still go to"
+    },
+    {
+      "start": 2288.88,
+      "duration": 4.8,
+      "text": "probate with a will. Uh, a trust will"
+    },
+    {
+      "start": 2291.44,
+      "duration": 4.08,
+      "text": "ensure the property can be passed down."
+    },
+    {
+      "start": 2293.68,
+      "duration": 4.0,
+      "text": "So, just kind of highlighting the"
+    },
+    {
+      "start": 2295.52,
+      "duration": 4.72,
+      "text": "importance of looking at what is what"
+    },
+    {
+      "start": 2297.68,
+      "duration": 4.56,
+      "text": "are the rules in your specific state."
+    },
+    {
+      "start": 2300.24,
+      "duration": 6.28,
+      "text": "But anyway, back to the question of what"
+    },
+    {
+      "start": 2302.24,
+      "duration": 4.28,
+      "text": "about community property states."
+    },
+    {
+      "start": 2309.839,
+      "duration": 4.961,
+      "text": ">> That one, Ellie, I don't know. That's an"
+    },
+    {
+      "start": 2312.4,
+      "duration": 4.16,
+      "text": "I don't know for me."
+    },
+    {
+      "start": 2314.8,
+      "duration": 3.68,
+      "text": ">> All right. It sounds like maybe the the"
+    },
+    {
+      "start": 2316.56,
+      "duration": 5.2,
+      "text": "your heirs property that you're doing so"
+    },
+    {
+      "start": 2318.48,
+      "duration": 5.76,
+      "text": "far isn't in a community property state"
+    },
+    {
+      "start": 2321.76,
+      "duration": 4.319,
+      "text": "at this point. So, I would I would"
+    },
+    {
+      "start": 2324.24,
+      "duration": 5.68,
+      "text": "encourage people that have those kind of"
+    },
+    {
+      "start": 2326.079,
+      "duration": 6.641,
+      "text": "questions to reach out to uh NCLC"
+    },
+    {
+      "start": 2329.92,
+      "duration": 5.84,
+      "text": "and uh talk to them and and check out"
+    },
+    {
+      "start": 2332.72,
+      "duration": 6.72,
+      "text": "that webinar that we did uh that we that"
+    },
+    {
+      "start": 2335.76,
+      "duration": 5.599,
+      "text": "we linked you all to in the chat."
+    },
+    {
+      "start": 2339.44,
+      "duration": 3.44,
+      "text": "Okay. I have received inquiries from"
+    },
+    {
+      "start": 2341.359,
+      "duration": 4.24,
+      "text": "clients about how to protect their"
+    },
+    {
+      "start": 2342.88,
+      "duration": 5.12,
+      "text": "property from potential Medicaid leans"
+    },
+    {
+      "start": 2345.599,
+      "duration": 4.161,
+      "text": "after they pass away. Many individuals"
+    },
+    {
+      "start": 2348.0,
+      "duration": 3.52,
+      "text": "over the age of 50 are receiving letters"
+    },
+    {
+      "start": 2349.76,
+      "duration": 3.599,
+      "text": "from Mass Health, so this is in"
+    },
+    {
+      "start": 2351.52,
+      "duration": 3.44,
+      "text": "Massachusetts, I guess, Mass Health,"
+    },
+    {
+      "start": 2353.359,
+      "duration": 3.121,
+      "text": "indicating that they could be subject to"
+    },
+    {
+      "start": 2354.96,
+      "duration": 3.36,
+      "text": "future leans on their property upon"
+    },
+    {
+      "start": 2356.48,
+      "duration": 3.84,
+      "text": "their death to recover the funds used"
+    },
+    {
+      "start": 2358.32,
+      "duration": 5.0,
+      "text": "through Mass Health. Do you have any"
+    },
+    {
+      "start": 2360.32,
+      "duration": 3.0,
+      "text": "recommendations?"
+    },
+    {
+      "start": 2367.92,
+      "duration": 4.08,
+      "text": "you know, that hasn't been an issue in"
+    },
+    {
+      "start": 2370.24,
+      "duration": 3.76,
+      "text": "Florida that we've had to deal with, but"
+    },
+    {
+      "start": 2372.0,
+      "duration": 4.72,
+      "text": "there's a group, speaking of mass,"
+    },
+    {
+      "start": 2374.0,
+      "duration": 5.04,
+      "text": "there's a group in Boston, um, Boston"
+    },
+    {
+      "start": 2376.72,
+      "duration": 4.8,
+      "text": "College led by Professor Thomas"
+    },
+    {
+      "start": 2379.04,
+      "duration": 5.2,
+      "text": "Mitchell, and they've got an initiative"
+    },
+    {
+      "start": 2381.52,
+      "duration": 5.68,
+      "text": "there on Air's property and and could be"
+    },
+    {
+      "start": 2384.24,
+      "duration": 5.839,
+      "text": "a resource. I believe um one of the"
+    },
+    {
+      "start": 2387.2,
+      "duration": 6.0,
+      "text": "folks there that could be helpful is uh"
+    },
+    {
+      "start": 2390.079,
+      "duration": 5.121,
+      "text": "David Price and he's active in that"
+    },
+    {
+      "start": 2393.2,
+      "duration": 4.32,
+      "text": "program and could be able to help"
+    },
+    {
+      "start": 2395.2,
+      "duration": 3.6,
+      "text": "connect someone to local resources"
+    },
+    {
+      "start": 2397.52,
+      "duration": 2.96,
+      "text": "around that issue."
+    },
+    {
+      "start": 2398.8,
+      "duration": 2.08,
+      "text": ">> I'll find the link Elliot and send it to"
+    },
+    {
+      "start": 2400.48,
+      "duration": 3.04,
+      "text": "you."
+    },
+    {
+      "start": 2400.88,
+      "duration": 6.16,
+      "text": ">> Yes. Thank you. Thank you. But you said"
+    },
+    {
+      "start": 2403.52,
+      "duration": 5.12,
+      "text": "David Price at Bucks College in Boston."
+    },
+    {
+      "start": 2407.04,
+      "duration": 6.48,
+      "text": ">> Yeah, I'm going to send you the"
+    },
+    {
+      "start": 2408.64,
+      "duration": 8.08,
+      "text": ">> Okay. and Ellie, our um legal aid um"
+    },
+    {
+      "start": 2413.52,
+      "duration": 7.36,
+      "text": "society here in um Cleveland, Ohio has"
+    },
+    {
+      "start": 2416.72,
+      "duration": 7.6,
+      "text": "reached out to us um around um the"
+    },
+    {
+      "start": 2420.88,
+      "duration": 5.28,
+      "text": "Medicaid leans and um the Medicaid work"
+    },
+    {
+      "start": 2424.32,
+      "duration": 4.48,
+      "text": "that they're doing and that's going to"
+    },
+    {
+      "start": 2426.16,
+      "duration": 4.8,
+      "text": "be one of the opportunities here um in"
+    },
+    {
+      "start": 2428.8,
+      "duration": 5.6,
+      "text": "the Cleveland lisk office that we're"
+    },
+    {
+      "start": 2430.96,
+      "duration": 5.52,
+      "text": "going to tap into to try to provide more"
+    },
+    {
+      "start": 2434.4,
+      "duration": 5.36,
+      "text": "um legal assistance around that. So,"
+    },
+    {
+      "start": 2436.48,
+      "duration": 6.0,
+      "text": "great question. um look forward to"
+    },
+    {
+      "start": 2439.76,
+      "duration": 4.64,
+      "text": "learning a little bit more about that."
+    },
+    {
+      "start": 2442.48,
+      "duration": 3.84,
+      "text": ">> And people are popping things into the"
+    },
+    {
+      "start": 2444.4,
+      "duration": 3.76,
+      "text": "chat about where to find information in"
+    },
+    {
+      "start": 2446.32,
+      "duration": 4.72,
+      "text": "their particular state. So, thank you"
+    },
+    {
+      "start": 2448.16,
+      "duration": 3.28,
+      "text": "for that folks."
+    },
+    {
+      "start": 2451.04,
+      "duration": 2.88,
+      "text": ">> Okay,"
+    },
+    {
+      "start": 2451.44,
+      "duration": 5.44,
+      "text": ">> Kelly, if I could just add though from a"
+    },
+    {
+      "start": 2453.92,
+      "duration": 6.32,
+      "text": "housing counseling perspective, it is so"
+    },
+    {
+      "start": 2456.88,
+      "duration": 6.08,
+      "text": "important that as housing counselors, we"
+    },
+    {
+      "start": 2460.24,
+      "duration": 6.48,
+      "text": "don't try to provide legal advice. we"
+    },
+    {
+      "start": 2462.96,
+      "duration": 8.08,
+      "text": "are. And so that's why it's so critical"
+    },
+    {
+      "start": 2466.72,
+      "duration": 6.16,
+      "text": "when you have a coalition of individuals"
+    },
+    {
+      "start": 2471.04,
+      "duration": 5.279,
+      "text": "that you come together on a regular"
+    },
+    {
+      "start": 2472.88,
+      "duration": 5.52,
+      "text": "basis so that you can provide accurate"
+    },
+    {
+      "start": 2476.319,
+      "duration": 5.121,
+      "text": "information. But I want to make sure"
+    },
+    {
+      "start": 2478.4,
+      "duration": 5.679,
+      "text": "that I caution our agencies not to try"
+    },
+    {
+      "start": 2481.44,
+      "duration": 5.6,
+      "text": "to be attorneys and answer legal"
+    },
+    {
+      "start": 2484.079,
+      "duration": 4.641,
+      "text": "questions as simple as we may think they"
+    },
+    {
+      "start": 2487.04,
+      "duration": 5.52,
+      "text": "are. And we may even know the answer,"
+    },
+    {
+      "start": 2488.72,
+      "duration": 7.2,
+      "text": "but that's not our role."
+    },
+    {
+      "start": 2492.56,
+      "duration": 7.2,
+      "text": "Good point. Thanks, Carrie."
+    },
+    {
+      "start": 2495.92,
+      "duration": 7.439,
+      "text": "Okay. If a client is on title but not on"
+    },
+    {
+      "start": 2499.76,
+      "duration": 5.599,
+      "text": "a loan that his dad had, he passed away."
+    },
+    {
+      "start": 2503.359,
+      "duration": 5.121,
+      "text": "Now,"
+    },
+    {
+      "start": 2505.359,
+      "duration": 5.76,
+      "text": "okay, maybe it's her dad had, he passed"
+    },
+    {
+      "start": 2508.48,
+      "duration": 4.32,
+      "text": "away, now she is trying to work with the"
+    },
+    {
+      "start": 2511.119,
+      "duration": 4.401,
+      "text": "lender to pay mortgage and sent title"
+    },
+    {
+      "start": 2512.8,
+      "duration": 4.72,
+      "text": "info and the lender is not accepting it."
+    },
+    {
+      "start": 2515.52,
+      "duration": 4.64,
+      "text": "Uh, what is the best way to help this"
+    },
+    {
+      "start": 2517.52,
+      "duration": 3.92,
+      "text": "client resolve the issue?"
+    },
+    {
+      "start": 2520.16,
+      "duration": 3.28,
+      "text": "It sounds like from everything that"
+    },
+    {
+      "start": 2521.44,
+      "duration": 6.639,
+      "text": "we've been saying, connect them with"
+    },
+    {
+      "start": 2523.44,
+      "duration": 6.24,
+      "text": "your with a legal aid attorney."
+    },
+    {
+      "start": 2528.079,
+      "duration": 4.601,
+      "text": "Would would anybody answer that question"
+    },
+    {
+      "start": 2529.68,
+      "duration": 3.0,
+      "text": "differently?"
+    },
+    {
+      "start": 2534.88,
+      "duration": 3.68,
+      "text": ">> Nobody can see nobody can see anybody"
+    },
+    {
+      "start": 2536.8,
+      "duration": 2.799,
+      "text": "shaking their head. No. So, go ahead and"
+    },
+    {
+      "start": 2538.56,
+      "duration": 2.24,
+      "text": "say it out loud."
+    },
+    {
+      "start": 2539.599,
+      "duration": 2.72,
+      "text": ">> Yeah, I don't I don't think so. Other"
+    },
+    {
+      "start": 2540.8,
+      "duration": 3.92,
+      "text": "than I would broaden the answer to"
+    },
+    {
+      "start": 2542.319,
+      "duration": 5.201,
+      "text": "include the bar association and the"
+    },
+    {
+      "start": 2544.72,
+      "duration": 5.359,
+      "text": "university or law school and law"
+    },
+    {
+      "start": 2547.52,
+      "duration": 4.079,
+      "text": "clinics. I I I think legal aid is one"
+    },
+    {
+      "start": 2550.079,
+      "duration": 4.961,
+      "text": "resource. One of the challenges with"
+    },
+    {
+      "start": 2551.599,
+      "duration": 5.281,
+      "text": "legal aid is it's incomebased."
+    },
+    {
+      "start": 2555.04,
+      "duration": 4.24,
+      "text": "And so what we've had to do in working"
+    },
+    {
+      "start": 2556.88,
+      "duration": 6.08,
+      "text": "with our local legal aid partner is"
+    },
+    {
+      "start": 2559.28,
+      "duration": 6.88,
+      "text": "provide grants that remove that income"
+    },
+    {
+      "start": 2562.96,
+      "duration": 7.04,
+      "text": "restriction so that Ellie anyone could"
+    },
+    {
+      "start": 2566.16,
+      "duration": 7.6,
+      "text": "get counsel, get advice on what options"
+    },
+    {
+      "start": 2570.0,
+      "duration": 5.52,
+      "text": "are available to them. Okay. So, and and"
+    },
+    {
+      "start": 2573.76,
+      "duration": 3.359,
+      "text": "frankly to be honest with you, there's"
+    },
+    {
+      "start": 2575.52,
+      "duration": 2.799,
+      "text": "not enough legal aid attorneys to deal"
+    },
+    {
+      "start": 2577.119,
+      "duration": 1.521,
+      "text": "with the demand,"
+    },
+    {
+      "start": 2578.319,
+      "duration": 1.921,
+      "text": ">> right?"
+    },
+    {
+      "start": 2578.64,
+      "duration": 3.679,
+      "text": ">> And so, this is going to require what"
+    },
+    {
+      "start": 2580.24,
+      "duration": 5.119,
+      "text": "Carrie said, it's going to require more"
+    },
+    {
+      "start": 2582.319,
+      "duration": 6.321,
+      "text": "of a ecosystem type approach. Knowing"
+    },
+    {
+      "start": 2585.359,
+      "duration": 7.361,
+      "text": "who's available for what is as important"
+    },
+    {
+      "start": 2588.64,
+      "duration": 8.16,
+      "text": "as any aspect of this work."
+    },
+    {
+      "start": 2592.72,
+      "duration": 7.28,
+      "text": "So, um, so Belle LeBlanc mentioned that"
+    },
+    {
+      "start": 2596.8,
+      "duration": 5.279,
+      "text": "they work with their legal aid regularly"
+    },
+    {
+      "start": 2600.0,
+      "duration": 4.56,
+      "text": "who conducts workshops for their clients"
+    },
+    {
+      "start": 2602.079,
+      "duration": 5.601,
+      "text": "and then they refer back. And Belle,"
+    },
+    {
+      "start": 2604.56,
+      "duration": 4.96,
+      "text": "what state are you in? If you would just"
+    },
+    {
+      "start": 2607.68,
+      "duration": 3.919,
+      "text": "pop that into the chat. Just wondering"
+    },
+    {
+      "start": 2609.52,
+      "duration": 4.24,
+      "text": "what state you're in. But wherever you"
+    },
+    {
+      "start": 2611.599,
+      "duration": 4.081,
+      "text": "are, if this is not something that your"
+    },
+    {
+      "start": 2613.76,
+      "duration": 6.079,
+      "text": "legal aid"
+    },
+    {
+      "start": 2615.68,
+      "duration": 6.56,
+      "text": "Louisiana um if uh you know, if you have"
+    },
+    {
+      "start": 2619.839,
+      "duration": 4.161,
+      "text": "a relationship with your legal aid"
+    },
+    {
+      "start": 2622.24,
+      "duration": 5.28,
+      "text": "group, this would be a conversation to"
+    },
+    {
+      "start": 2624.0,
+      "duration": 7.119,
+      "text": "potentially have."
+    },
+    {
+      "start": 2627.52,
+      "duration": 6.839,
+      "text": "Uh is a beneficiary deed a good document"
+    },
+    {
+      "start": 2631.119,
+      "duration": 3.24,
+      "text": "to have?"
+    },
+    {
+      "start": 2642.48,
+      "duration": 4.56,
+      "text": "Yeah, I think the answer is it depends"
+    },
+    {
+      "start": 2644.8,
+      "duration": 4.64,
+      "text": "what's the situation. Like we need to"
+    },
+    {
+      "start": 2647.04,
+      "duration": 5.6,
+      "text": "know more about what's actually going on"
+    },
+    {
+      "start": 2649.44,
+      "duration": 5.2,
+      "text": "there. But yeah, it's a it's an option."
+    },
+    {
+      "start": 2652.64,
+      "duration": 4.32,
+      "text": "It's a tool in the toolkit, Ellie, that"
+    },
+    {
+      "start": 2654.64,
+      "duration": 4.64,
+      "text": "I would say depending on where what"
+    },
+    {
+      "start": 2656.96,
+      "duration": 5.76,
+      "text": "they're trying to do. So lead with what"
+    },
+    {
+      "start": 2659.28,
+      "duration": 5.52,
+      "text": "are you trying to do and then back into"
+    },
+    {
+      "start": 2662.72,
+      "duration": 5.56,
+      "text": "what might be the options available that"
+    },
+    {
+      "start": 2664.8,
+      "duration": 3.48,
+      "text": "help you get there."
+    },
+    {
+      "start": 2669.44,
+      "duration": 4.08,
+      "text": ">> Okay. Given the legal complexities and"
+    },
+    {
+      "start": 2671.44,
+      "duration": 4.399,
+      "text": "potential for significant financial"
+    },
+    {
+      "start": 2673.52,
+      "duration": 3.92,
+      "text": "consequences, how can someone accurately"
+    },
+    {
+      "start": 2675.839,
+      "duration": 3.841,
+      "text": "assess whether their estate is simple"
+    },
+    {
+      "start": 2677.44,
+      "duration": 5.6,
+      "text": "enough for a do-it-yourself approach or"
+    },
+    {
+      "start": 2679.68,
+      "duration": 6.8,
+      "text": "if they truly need professional legal"
+    },
+    {
+      "start": 2683.04,
+      "duration": 5.2,
+      "text": "guidance? So, I I I'll allow the other"
+    },
+    {
+      "start": 2686.48,
+      "duration": 3.76,
+      "text": "people to answer this question, but I"
+    },
+    {
+      "start": 2688.24,
+      "duration": 4.16,
+      "text": "will just answer from a very personal"
+    },
+    {
+      "start": 2690.24,
+      "duration": 4.0,
+      "text": "perspective. I never thought that I"
+    },
+    {
+      "start": 2692.4,
+      "duration": 3.439,
+      "text": "needed this. I never thought, \"Oh, it's"
+    },
+    {
+      "start": 2694.24,
+      "duration": 5.04,
+      "text": "no big deal. Of course, my kids are"
+    },
+    {
+      "start": 2695.839,
+      "duration": 5.76,
+      "text": "going to get this house.\" But, um, due"
+    },
+    {
+      "start": 2699.28,
+      "duration": 5.12,
+      "text": "to some medical things, I ended up"
+    },
+    {
+      "start": 2701.599,
+      "duration": 5.121,
+      "text": "meeting with an attorney. And it's"
+    },
+    {
+      "start": 2704.4,
+      "duration": 4.959,
+      "text": "amazing how even the most simple thing"
+    },
+    {
+      "start": 2706.72,
+      "duration": 5.76,
+      "text": "can become complex, as you mentioned."
+    },
+    {
+      "start": 2709.359,
+      "duration": 5.921,
+      "text": "And I feel like the do-it-yourself stuff"
+    },
+    {
+      "start": 2712.48,
+      "duration": 5.599,
+      "text": "is questionable"
+    },
+    {
+      "start": 2715.28,
+      "duration": 4.799,
+      "text": "in my humble opinion and that really the"
+    },
+    {
+      "start": 2718.079,
+      "duration": 4.721,
+      "text": "best thing is for somebody to seek"
+    },
+    {
+      "start": 2720.079,
+      "duration": 4.881,
+      "text": "professional guidance on this. So that's"
+    },
+    {
+      "start": 2722.8,
+      "duration": 5.12,
+      "text": "my personal opinion, Ellie Pepper, not"
+    },
+    {
+      "start": 2724.96,
+      "duration": 5.6,
+      "text": "NHRC, just me and my experience with"
+    },
+    {
+      "start": 2727.92,
+      "duration": 4.32,
+      "text": "doing kind of estate planning. And um"
+    },
+    {
+      "start": 2730.56,
+      "duration": 3.12,
+      "text": "now I I'll I'll open it for our"
+    },
+    {
+      "start": 2732.24,
+      "duration": 5.359,
+      "text": "panelists to answer the question as"
+    },
+    {
+      "start": 2733.68,
+      "duration": 8.0,
+      "text": "well. If I could just add to that,"
+    },
+    {
+      "start": 2737.599,
+      "duration": 6.801,
+      "text": "Ellie, is that if you have a program in"
+    },
+    {
+      "start": 2741.68,
+      "duration": 5.6,
+      "text": "your community and you have partners"
+    },
+    {
+      "start": 2744.4,
+      "duration": 5.52,
+      "text": "like Lisk who's financially supporting"
+    },
+    {
+      "start": 2747.28,
+      "duration": 6.799,
+      "text": "this work, there's absolutely no reason"
+    },
+    {
+      "start": 2749.92,
+      "duration": 7.04,
+      "text": "why we should be um directing homeowners"
+    },
+    {
+      "start": 2754.079,
+      "duration": 5.841,
+      "text": "or anyone to do it themselves. Do it"
+    },
+    {
+      "start": 2756.96,
+      "duration": 4.72,
+      "text": "with the legal profession because we"
+    },
+    {
+      "start": 2759.92,
+      "duration": 4.0,
+      "text": "don't want to miss anything. And again,"
+    },
+    {
+      "start": 2761.68,
+      "duration": 6.0,
+      "text": "we're not attorneys. they're not"
+    },
+    {
+      "start": 2763.92,
+      "duration": 5.679,
+      "text": "attorneys and so there's just impossible"
+    },
+    {
+      "start": 2767.68,
+      "duration": 4.72,
+      "text": "for you to get all the accurate"
+    },
+    {
+      "start": 2769.599,
+      "duration": 6.801,
+      "text": "information at that point. So I"
+    },
+    {
+      "start": 2772.4,
+      "duration": 7.919,
+      "text": "definitely recommend a making sure and"
+    },
+    {
+      "start": 2776.4,
+      "duration": 8.0,
+      "text": "and it starts with you everybody that is"
+    },
+    {
+      "start": 2780.319,
+      "duration": 6.321,
+      "text": "on this webinar. starts 185. If you have"
+    },
+    {
+      "start": 2784.4,
+      "duration": 5.28,
+      "text": "an AIS property initiative in your"
+    },
+    {
+      "start": 2786.64,
+      "duration": 5.28,
+      "text": "community and this service is available,"
+    },
+    {
+      "start": 2789.68,
+      "duration": 4.96,
+      "text": "take advantage of it and encourage your"
+    },
+    {
+      "start": 2791.92,
+      "duration": 5.76,
+      "text": "family members and your colleagues to do"
+    },
+    {
+      "start": 2794.64,
+      "duration": 5.439,
+      "text": "it as well. We should have a waiting"
+    },
+    {
+      "start": 2797.68,
+      "duration": 4.56,
+      "text": "list. We should have so many people on"
+    },
+    {
+      "start": 2800.079,
+      "duration": 6.04,
+      "text": "the waiting list that we should not have"
+    },
+    {
+      "start": 2802.24,
+      "duration": 3.879,
+      "text": "to do outreach."
+    },
+    {
+      "start": 2807.04,
+      "duration": 4.079,
+      "text": ">> Yeah."
+    },
+    {
+      "start": 2808.8,
+      "duration": 4.0,
+      "text": "Uh okay. Are there any fees for the"
+    },
+    {
+      "start": 2811.119,
+      "duration": 6.121,
+      "text": "clients? What if they can't afford the"
+    },
+    {
+      "start": 2812.8,
+      "duration": 4.44,
+      "text": "fees? Is there financial assistance?"
+    },
+    {
+      "start": 2819.28,
+      "duration": 4.24,
+      "text": ">> Yeah, I mean building on Car's comment,"
+    },
+    {
+      "start": 2820.88,
+      "duration": 5.52,
+      "text": "I mean that's where group like Lisk or"
+    },
+    {
+      "start": 2823.52,
+      "duration": 5.76,
+      "text": "others neighbor works, other CDFIs can"
+    },
+    {
+      "start": 2826.4,
+      "duration": 6.719,
+      "text": "play a role. It's to aggregate grant"
+    },
+    {
+      "start": 2829.28,
+      "duration": 9.76,
+      "text": "support to help local legal partners"
+    },
+    {
+      "start": 2833.119,
+      "duration": 7.521,
+      "text": "provide low to no cost u legal access."
+    },
+    {
+      "start": 2839.04,
+      "duration": 4.96,
+      "text": "You know, Ellie, if we were talking"
+    },
+    {
+      "start": 2840.64,
+      "duration": 7.36,
+      "text": "about a uh trafficking ticket, a moving"
+    },
+    {
+      "start": 2844.0,
+      "duration": 7.359,
+      "text": "violation, or some form of criminal"
+    },
+    {
+      "start": 2848.0,
+      "duration": 5.359,
+      "text": "issue, the public defender's office is"
+    },
+    {
+      "start": 2851.359,
+      "duration": 5.601,
+      "text": "at no cost, right? Everybody's entitled"
+    },
+    {
+      "start": 2853.359,
+      "duration": 7.361,
+      "text": "to a lawyer. For civil, which this is"
+    },
+    {
+      "start": 2856.96,
+      "duration": 6.56,
+      "text": "under civil law, there isn't access to"
+    },
+    {
+      "start": 2860.72,
+      "duration": 5.52,
+      "text": "CI free civil legal support. It's"
+    },
+    {
+      "start": 2863.52,
+      "duration": 5.36,
+      "text": "limited. And that's your legal aids and"
+    },
+    {
+      "start": 2866.24,
+      "duration": 5.119,
+      "text": "your law. So, so really one of the gaps"
+    },
+    {
+      "start": 2868.88,
+      "duration": 6.479,
+      "text": "here is how do you help people get"
+    },
+    {
+      "start": 2871.359,
+      "duration": 7.281,
+      "text": "access to CI free civil legal support in"
+    },
+    {
+      "start": 2875.359,
+      "duration": 5.521,
+      "text": "a time that they need it most, right?"
+    },
+    {
+      "start": 2878.64,
+      "duration": 5.52,
+      "text": "So, that's what I would say to folks is"
+    },
+    {
+      "start": 2880.88,
+      "duration": 6.4,
+      "text": "is get familiar, as Carrie said, with"
+    },
+    {
+      "start": 2884.16,
+      "duration": 4.159,
+      "text": "what's going on in your jurisdiction."
+    },
+    {
+      "start": 2887.28,
+      "duration": 3.2,
+      "text": "Understand where there may be"
+    },
+    {
+      "start": 2888.319,
+      "duration": 5.361,
+      "text": "opportunity to build relationships and"
+    },
+    {
+      "start": 2890.48,
+      "duration": 5.839,
+      "text": "bridges so that you're not waiting,"
+    },
+    {
+      "start": 2893.68,
+      "duration": 5.36,
+      "text": "you're not responding in the moment. you"
+    },
+    {
+      "start": 2896.319,
+      "duration": 5.28,
+      "text": "actually have got a database of partners"
+    },
+    {
+      "start": 2899.04,
+      "duration": 5.36,
+      "text": "who to call for whether it's legal,"
+    },
+    {
+      "start": 2901.599,
+      "duration": 6.401,
+      "text": "whether it's outreach and you can rely"
+    },
+    {
+      "start": 2904.4,
+      "duration": 6.56,
+      "text": "on them to build sort of confidence in"
+    },
+    {
+      "start": 2908.0,
+      "duration": 5.599,
+      "text": "your local market so people aren't"
+    },
+    {
+      "start": 2910.96,
+      "duration": 4.879,
+      "text": "concerned about whether or not this is"
+    },
+    {
+      "start": 2913.599,
+      "duration": 4.24,
+      "text": "actually real. They'll actually know"
+    },
+    {
+      "start": 2915.839,
+      "duration": 4.321,
+      "text": "someone who's going through it. Which is"
+    },
+    {
+      "start": 2917.839,
+      "duration": 5.041,
+      "text": "another piece to this, Ellie, is to say"
+    },
+    {
+      "start": 2920.16,
+      "duration": 5.52,
+      "text": "one of the things that ACAs can do is"
+    },
+    {
+      "start": 2922.88,
+      "duration": 6.32,
+      "text": "get successful stories out there. If you"
+    },
+    {
+      "start": 2925.68,
+      "duration": 6.8,
+      "text": "Google heirs property estate planning"
+    },
+    {
+      "start": 2929.2,
+      "duration": 6.32,
+      "text": "and fill in the blank Chicago, Port"
+    },
+    {
+      "start": 2932.48,
+      "duration": 6.96,
+      "text": "Smith, Houston, the stories on the"
+    },
+    {
+      "start": 2935.52,
+      "duration": 6.96,
+      "text": "internet mainly are reactive things that"
+    },
+    {
+      "start": 2939.44,
+      "duration": 5.28,
+      "text": "happened to people. What we want to do"
+    },
+    {
+      "start": 2942.48,
+      "duration": 4.4,
+      "text": "is as we are generating positive"
+    },
+    {
+      "start": 2944.72,
+      "duration": 5.52,
+      "text": "stories, your group is able to help"
+    },
+    {
+      "start": 2946.88,
+      "duration": 5.52,
+      "text": "folks share that with others so that we"
+    },
+    {
+      "start": 2950.24,
+      "duration": 4.72,
+      "text": "can overwhelm the internet with more"
+    },
+    {
+      "start": 2952.4,
+      "duration": 6.32,
+      "text": "successful stories and people can see"
+    },
+    {
+      "start": 2954.96,
+      "duration": 5.68,
+      "text": "that and feel confidence in the system."
+    },
+    {
+      "start": 2958.72,
+      "duration": 5.599,
+      "text": ">> And I will point out that uh Connie from"
+    },
+    {
+      "start": 2960.64,
+      "duration": 6.16,
+      "text": "BA rep did put into the chat that uh the"
+    },
+    {
+      "start": 2964.319,
+      "duration": 4.561,
+      "text": "legal aids are difficult because they"
+    },
+    {
+      "start": 2966.8,
+      "duration": 5.36,
+      "text": "don't have the financing, they don't"
+    },
+    {
+      "start": 2968.88,
+      "duration": 6.64,
+      "text": "have the time. um and that she is trying"
+    },
+    {
+      "start": 2972.16,
+      "duration": 5.12,
+      "text": "to figure out a way to partner on a"
+    },
+    {
+      "start": 2975.52,
+      "duration": 4.48,
+      "text": "grant application with a legal service"
+    },
+    {
+      "start": 2977.28,
+      "duration": 6.079,
+      "text": "provider to help provide this type of"
+    },
+    {
+      "start": 2980.0,
+      "duration": 5.76,
+      "text": "assistance. Um so I think that that's"
+    },
+    {
+      "start": 2983.359,
+      "duration": 5.921,
+      "text": "one thing to consider for groups where"
+    },
+    {
+      "start": 2985.76,
+      "duration": 5.839,
+      "text": "maybe there isn't a lot of resource uh"
+    },
+    {
+      "start": 2989.28,
+      "duration": 4.4,
+      "text": "and looking at how to grow some"
+    },
+    {
+      "start": 2991.599,
+      "duration": 4.321,
+      "text": "resources."
+    },
+    {
+      "start": 2993.68,
+      "duration": 6.6,
+      "text": "So, can you speak to enhanced life"
+    },
+    {
+      "start": 2995.92,
+      "duration": 4.36,
+      "text": "estate deed versus will"
+    },
+    {
+      "start": 3001.68,
+      "duration": 6.24,
+      "text": ">> or is that more of a legal"
+    },
+    {
+      "start": 3005.119,
+      "duration": 4.641,
+      "text": "question?"
+    },
+    {
+      "start": 3007.92,
+      "duration": 4.32,
+      "text": ">> Yeah, it is a legal question, but the"
+    },
+    {
+      "start": 3009.76,
+      "duration": 7.28,
+      "text": "here's the here's the non-legal answer."
+    },
+    {
+      "start": 3012.24,
+      "duration": 8.24,
+      "text": "A will is expressing intent. That's it."
+    },
+    {
+      "start": 3017.04,
+      "duration": 7.12,
+      "text": "Okay. And so the enhanced deed is"
+    },
+    {
+      "start": 3020.48,
+      "duration": 6.96,
+      "text": "actually saying who would like who they"
+    },
+    {
+      "start": 3024.16,
+      "duration": 6.24,
+      "text": "would like to to be the beneficiary"
+    },
+    {
+      "start": 3027.44,
+      "duration": 6.08,
+      "text": "and on that deed they can ex they can"
+    },
+    {
+      "start": 3030.4,
+      "duration": 6.32,
+      "text": "list who that is. So an enhanced deed"
+    },
+    {
+      "start": 3033.52,
+      "duration": 6.88,
+      "text": "and it is is for a particular purpose. A"
+    },
+    {
+      "start": 3036.72,
+      "duration": 6.0,
+      "text": "will is to state hey here's my intent. I"
+    },
+    {
+      "start": 3040.4,
+      "duration": 4.159,
+      "text": "want to leave my car to this person. I"
+    },
+    {
+      "start": 3042.72,
+      "duration": 5.68,
+      "text": "want to leave my home to this person."
+    },
+    {
+      "start": 3044.559,
+      "duration": 5.361,
+      "text": "But it does not enter into the actual"
+    },
+    {
+      "start": 3048.4,
+      "duration": 4.08,
+      "text": "asset"
+    },
+    {
+      "start": 3049.92,
+      "duration": 5.56,
+      "text": "transaction that is necessary to be"
+    },
+    {
+      "start": 3052.48,
+      "duration": 3.0,
+      "text": "bind."
+    },
+    {
+      "start": 3056.559,
+      "duration": 3.441,
+      "text": "Okay. Uh this person has a client that"
+    },
+    {
+      "start": 3058.24,
+      "duration": 4.56,
+      "text": "had several properties and forgot to"
+    },
+    {
+      "start": 3060.0,
+      "duration": 6.64,
+      "text": "include one of them in the trust then"
+    },
+    {
+      "start": 3062.8,
+      "duration": 6.4,
+      "text": "passed away. Son has power of attorney"
+    },
+    {
+      "start": 3066.64,
+      "duration": 5.28,
+      "text": "for the trust. Wants to add property"
+    },
+    {
+      "start": 3069.2,
+      "duration": 4.96,
+      "text": "into trust but can't. How can he sell"
+    },
+    {
+      "start": 3071.92,
+      "duration": 4.08,
+      "text": "the property? Power of attorney only"
+    },
+    {
+      "start": 3074.16,
+      "duration": 3.679,
+      "text": "works while the person is alive. Once"
+    },
+    {
+      "start": 3076.0,
+      "duration": 4.319,
+      "text": "the person is dead, there's no more"
+    },
+    {
+      "start": 3077.839,
+      "duration": 6.0,
+      "text": "power of attorney. So, it means nothing"
+    },
+    {
+      "start": 3080.319,
+      "duration": 6.561,
+      "text": "once somebody has died. Just FYI."
+    },
+    {
+      "start": 3083.839,
+      "duration": 5.441,
+      "text": "Um, but anyway, any thoughts about how"
+    },
+    {
+      "start": 3086.88,
+      "duration": 5.4,
+      "text": "this client might be able to sell the"
+    },
+    {
+      "start": 3089.28,
+      "duration": 3.0,
+      "text": "property?"
+    },
+    {
+      "start": 3100.079,
+      "duration": 5.601,
+      "text": "Sounds like a legal question."
+    },
+    {
+      "start": 3102.96,
+      "duration": 6.48,
+      "text": "Well, I'm curious. I would be curious"
+    },
+    {
+      "start": 3105.68,
+      "duration": 6.72,
+      "text": "who currently do members go to for some"
+    },
+    {
+      "start": 3109.44,
+      "duration": 3.6,
+      "text": "of these answers."
+    },
+    {
+      "start": 3112.4,
+      "duration": 2.24,
+      "text": ">> Like,"
+    },
+    {
+      "start": 3113.04,
+      "duration": 4.079,
+      "text": ">> if people want to just kind of throw in"
+    },
+    {
+      "start": 3114.64,
+      "duration": 5.6,
+      "text": "the chat, if you have these questions,"
+    },
+    {
+      "start": 3117.119,
+      "duration": 4.401,
+      "text": "where do you often try to go to get your"
+    },
+    {
+      "start": 3120.24,
+      "duration": 2.96,
+      "text": "answers? Because maybe some of the"
+    },
+    {
+      "start": 3121.52,
+      "duration": 3.12,
+      "text": "people asking questions can go to those"
+    },
+    {
+      "start": 3123.2,
+      "duration": 3.28,
+      "text": "places."
+    },
+    {
+      "start": 3124.64,
+      "duration": 6.32,
+      "text": ">> And one of the places that I would"
+    },
+    {
+      "start": 3126.48,
+      "duration": 6.56,
+      "text": "suggest people really go to is NCLC. Um"
+    },
+    {
+      "start": 3130.96,
+      "duration": 5.04,
+      "text": "Sarah Bowling Mancini is the one who did"
+    },
+    {
+      "start": 3133.04,
+      "duration": 5.84,
+      "text": "our presentation a couple of years ago."
+    },
+    {
+      "start": 3136.0,
+      "duration": 5.839,
+      "text": "Um yeah, somebody said, \"I refer people"
+    },
+    {
+      "start": 3138.88,
+      "duration": 5.439,
+      "text": "I refer clients to legal aid.\" Um but"
+    },
+    {
+      "start": 3141.839,
+      "duration": 6.561,
+      "text": "Sarah Bowling Mancini is uh one of the"
+    },
+    {
+      "start": 3144.319,
+      "duration": 6.961,
+      "text": "top minds around um"
+    },
+    {
+      "start": 3148.4,
+      "duration": 6.24,
+      "text": "eras property. And so you uh you know I"
+    },
+    {
+      "start": 3151.28,
+      "duration": 7.36,
+      "text": "would encourage people to email uh Sarah"
+    },
+    {
+      "start": 3154.64,
+      "duration": 6.32,
+      "text": "and I will uh pop the pop her"
+    },
+    {
+      "start": 3158.64,
+      "duration": 4.88,
+      "text": "information into the chat and uh Patty"
+    },
+    {
+      "start": 3160.96,
+      "duration": 6.72,
+      "text": "Elim said yes she is. So apparently"
+    },
+    {
+      "start": 3163.52,
+      "duration": 6.64,
+      "text": "Patty's reached out to her. Um"
+    },
+    {
+      "start": 3167.68,
+      "duration": 5.28,
+      "text": "okay. Um,"
+    },
+    {
+      "start": 3170.16,
+      "duration": 4.8,
+      "text": ">> Ellie, if I could real quick, one of the"
+    },
+    {
+      "start": 3172.96,
+      "duration": 5.119,
+      "text": "things I would suggest too with the"
+    },
+    {
+      "start": 3174.96,
+      "duration": 6.24,
+      "text": "organizations is do a ask an attorney"
+    },
+    {
+      "start": 3178.079,
+      "duration": 6.401,
+      "text": "event. Perhaps you can have a day where"
+    },
+    {
+      "start": 3181.2,
+      "duration": 6.159,
+      "text": "your legal aid u partner comes into the"
+    },
+    {
+      "start": 3184.48,
+      "duration": 6.48,
+      "text": "office or to an event and you just have"
+    },
+    {
+      "start": 3187.359,
+      "duration": 6.161,
+      "text": "a ask an attorney question um day. And"
+    },
+    {
+      "start": 3190.96,
+      "duration": 4.879,
+      "text": "that might be beneficial for not just"
+    },
+    {
+      "start": 3193.52,
+      "duration": 5.52,
+      "text": "the homeowners but for the agencies as"
+    },
+    {
+      "start": 3195.839,
+      "duration": 6.201,
+      "text": "well to start building that those"
+    },
+    {
+      "start": 3199.04,
+      "duration": 3.0,
+      "text": "relationships."
+    },
+    {
+      "start": 3204.96,
+      "duration": 5.359,
+      "text": "So guess what? David Price is actually"
+    },
+    {
+      "start": 3208.0,
+      "duration": 4.079,
+      "text": "here"
+    },
+    {
+      "start": 3210.319,
+      "duration": 3.921,
+      "text": "and I am going to paste his information"
+    },
+    {
+      "start": 3212.079,
+      "duration": 5.601,
+      "text": "into the chat"
+    },
+    {
+      "start": 3214.24,
+      "duration": 6.079,
+      "text": "because he offered it. Um, and David, if"
+    },
+    {
+      "start": 3217.68,
+      "duration": 4.639,
+      "text": "you're interested, I can actually make"
+    },
+    {
+      "start": 3220.319,
+      "duration": 4.721,
+      "text": "you a panelist if you think you can"
+    },
+    {
+      "start": 3222.319,
+      "duration": 5.681,
+      "text": "answer any questions."
+    },
+    {
+      "start": 3225.04,
+      "duration": 5.279,
+      "text": "Uh, let me know in the chat and I will"
+    },
+    {
+      "start": 3228.0,
+      "duration": 4.559,
+      "text": "bring you on as another panelist to"
+    },
+    {
+      "start": 3230.319,
+      "duration": 5.961,
+      "text": "answer questions. Can somebody try to"
+    },
+    {
+      "start": 3232.559,
+      "duration": 3.721,
+      "text": "assume the loan?"
+    },
+    {
+      "start": 3246.4,
+      "duration": 4.52,
+      "text": "There's somebody saying apply for a"
+    },
+    {
+      "start": 3247.92,
+      "duration": 3.0,
+      "text": "loan."
+    },
+    {
+      "start": 3252.4,
+      "duration": 4.88,
+      "text": ">> Okay. So, David is not available. He has"
+    },
+    {
+      "start": 3255.2,
+      "duration": 6.32,
+      "text": "to head out. I mean I think on the"
+    },
+    {
+      "start": 3257.28,
+      "duration": 10.24,
+      "text": "assuming the loan so it's if you are um"
+    },
+    {
+      "start": 3261.52,
+      "duration": 8.319,
+      "text": "a relative and um somebody has passed um"
+    },
+    {
+      "start": 3267.52,
+      "duration": 4.88,
+      "text": "the successor and interests I think they"
+    },
+    {
+      "start": 3269.839,
+      "duration": 6.24,
+      "text": "addressed that question in the in the"
+    },
+    {
+      "start": 3272.4,
+      "duration": 5.679,
+      "text": "webinar from a couple years ago."
+    },
+    {
+      "start": 3276.079,
+      "duration": 3.601,
+      "text": "It would be best to ask a lawyer in your"
+    },
+    {
+      "start": 3278.079,
+      "duration": 4.321,
+      "text": "state, but um"
+    },
+    {
+      "start": 3279.68,
+      "duration": 6.48,
+      "text": ">> yeah."
+    },
+    {
+      "start": 3282.4,
+      "duration": 6.64,
+      "text": ">> Okay. Um will a todd affect the"
+    },
+    {
+      "start": 3286.16,
+      "duration": 4.88,
+      "text": "beneficiary and income tax properties"
+    },
+    {
+      "start": 3289.04,
+      "duration": 5.0,
+      "text": "since it is not an inheritance or"
+    },
+    {
+      "start": 3291.04,
+      "duration": 3.0,
+      "text": "acquisition?"
+    },
+    {
+      "start": 3298.16,
+      "duration": 3.36,
+      "text": ">> Yeah, Ellie, I think that depends on the"
+    },
+    {
+      "start": 3300.24,
+      "duration": 2.879,
+      "text": "state."
+    },
+    {
+      "start": 3301.52,
+      "duration": 2.88,
+      "text": ">> Okay."
+    },
+    {
+      "start": 3303.119,
+      "duration": 3.681,
+      "text": "All right. So, people have popped into"
+    },
+    {
+      "start": 3304.4,
+      "duration": 6.4,
+      "text": "the Q&A places where they go. They go to"
+    },
+    {
+      "start": 3306.8,
+      "duration": 7.2,
+      "text": "legal aid, uh, Maricopa County, the bar"
+    },
+    {
+      "start": 3310.8,
+      "duration": 6.6,
+      "text": "referral program, legal aid, community"
+    },
+    {
+      "start": 3314.0,
+      "duration": 3.4,
+      "text": "legal services,"
+    },
+    {
+      "start": 3317.839,
+      "duration": 5.561,
+      "text": "uh,"
+    },
+    {
+      "start": 3319.839,
+      "duration": 3.561,
+      "text": "ask an attorney."
+    },
+    {
+      "start": 3325.04,
+      "duration": 2.319,
+      "text": ">> Hey, can I mention one other thing,"
+    },
+    {
+      "start": 3326.319,
+      "duration": 1.441,
+      "text": "Ellie?"
+    },
+    {
+      "start": 3327.359,
+      "duration": 3.521,
+      "text": ">> Yes."
+    },
+    {
+      "start": 3327.76,
+      "duration": 4.64,
+      "text": ">> Been helpful. Um, is working with anchor"
+    },
+    {
+      "start": 3330.88,
+      "duration": 3.76,
+      "text": "employers."
+    },
+    {
+      "start": 3332.4,
+      "duration": 5.199,
+      "text": "And so it might be helpful for folks to"
+    },
+    {
+      "start": 3334.64,
+      "duration": 7.199,
+      "text": "check whether or not their client works"
+    },
+    {
+      "start": 3337.599,
+      "duration": 6.72,
+      "text": "for an employer that offers um employee"
+    },
+    {
+      "start": 3341.839,
+      "duration": 4.72,
+      "text": "assistance programs. And within that"
+    },
+    {
+      "start": 3344.319,
+      "duration": 5.681,
+      "text": "employee assistance program, there may"
+    },
+    {
+      "start": 3346.559,
+      "duration": 6.081,
+      "text": "be access to free legal support."
+    },
+    {
+      "start": 3350.0,
+      "duration": 7.359,
+      "text": "And so that might be another avenue to"
+    },
+    {
+      "start": 3352.64,
+      "duration": 7.52,
+      "text": "consider is in large um employer systems"
+    },
+    {
+      "start": 3357.359,
+      "duration": 6.081,
+      "text": "like your health care system um your"
+    },
+    {
+      "start": 3360.16,
+      "duration": 7.52,
+      "text": "local government systems oftent times"
+    },
+    {
+      "start": 3363.44,
+      "duration": 7.76,
+      "text": "they offer this free se uh legal support"
+    },
+    {
+      "start": 3367.68,
+      "duration": 5.84,
+      "text": "um that could be helpful to initially"
+    },
+    {
+      "start": 3371.2,
+      "duration": 6.24,
+      "text": "understand what's the nature of the"
+    },
+    {
+      "start": 3373.52,
+      "duration": 3.92,
+      "text": "issue and what options might be"
+    },
+    {
+      "start": 3380.64,
+      "duration": 4.24,
+      "text": "Well, that is all of our questions."
+    },
+    {
+      "start": 3383.04,
+      "duration": 4.559,
+      "text": "There's um been a few things popped into"
+    },
+    {
+      "start": 3384.88,
+      "duration": 6.4,
+      "text": "the chat. So, somebody pointed out using"
+    },
+    {
+      "start": 3387.599,
+      "duration": 8.48,
+      "text": "uh law school clinics and EAP programs"
+    },
+    {
+      "start": 3391.28,
+      "duration": 6.72,
+      "text": "to help um get legal services. Um Patty"
+    },
+    {
+      "start": 3396.079,
+      "duration": 4.641,
+      "text": "Elam said New York State Department of"
+    },
+    {
+      "start": 3398.0,
+      "duration": 5.92,
+      "text": "Education has legal support for all who"
+    },
+    {
+      "start": 3400.72,
+      "duration": 5.76,
+      "text": "belong to that union. So, there's some"
+    },
+    {
+      "start": 3403.92,
+      "duration": 6.56,
+      "text": "uh creative ways to try to seek legal"
+    },
+    {
+      "start": 3406.48,
+      "duration": 5.92,
+      "text": "assistance that has lower or no fees."
+    },
+    {
+      "start": 3410.48,
+      "duration": 3.68,
+      "text": "With that, I'm going to hand it back to"
+    },
+    {
+      "start": 3412.4,
+      "duration": 4.24,
+      "text": "I want to say thank you first to all of"
+    },
+    {
+      "start": 3414.16,
+      "duration": 5.439,
+      "text": "our panelists for for all of this"
+    },
+    {
+      "start": 3416.64,
+      "duration": 5.76,
+      "text": "information. I do want to ask uh the"
+    },
+    {
+      "start": 3419.599,
+      "duration": 4.561,
+      "text": "LISK folks. It sounds like you have been"
+    },
+    {
+      "start": 3422.4,
+      "duration": 3.76,
+      "text": "creating these partnerships in different"
+    },
+    {
+      "start": 3424.16,
+      "duration": 4.8,
+      "text": "areas around the country. Are you"
+    },
+    {
+      "start": 3426.16,
+      "duration": 5.8,
+      "text": "looking to create and grow your"
+    },
+    {
+      "start": 3428.96,
+      "duration": 3.0,
+      "text": "partnerships?"
+    },
+    {
+      "start": 3432.079,
+      "duration": 2.72,
+      "text": "Yes,"
+    },
+    {
+      "start": 3432.96,
+      "duration": 4.08,
+      "text": ">> absolutely."
+    },
+    {
+      "start": 3434.799,
+      "duration": 4.241,
+      "text": ">> Okay. And so if people are interested in"
+    },
+    {
+      "start": 3437.04,
+      "duration": 3.759,
+      "text": "getting involved in this program with"
+    },
+    {
+      "start": 3439.04,
+      "duration": 4.72,
+      "text": "you, where should they go and how should"
+    },
+    {
+      "start": 3440.799,
+      "duration": 4.32,
+      "text": "they reach out?"
+    },
+    {
+      "start": 3443.76,
+      "duration": 2.799,
+      "text": ">> You know, I'd say nationally, if they"
+    },
+    {
+      "start": 3445.119,
+      "duration": 3.361,
+      "text": "want to reach out to me, that's fine."
+    },
+    {
+      "start": 3446.559,
+      "duration": 4.401,
+      "text": "They can uh just pop my email in the"
+    },
+    {
+      "start": 3448.48,
+      "duration": 5.119,
+      "text": "chat and be happy to talk with them. If"
+    },
+    {
+      "start": 3450.96,
+      "duration": 4.48,
+      "text": "they're in the Cleveland area, they"
+    },
+    {
+      "start": 3453.599,
+      "duration": 4.24,
+      "text": "reach out to Chanel."
+    },
+    {
+      "start": 3455.44,
+      "duration": 4.24,
+      "text": ">> Absolutely. Thank you."
+    },
+    {
+      "start": 3457.839,
+      "duration": 4.321,
+      "text": ">> All right. and we did put their contact"
+    },
+    {
+      "start": 3459.68,
+      "duration": 4.24,
+      "text": "information into the chat earlier and"
+    },
+    {
+      "start": 3462.16,
+      "duration": 4.24,
+      "text": "when we send out the recording we'll"
+    },
+    {
+      "start": 3463.92,
+      "duration": 4.24,
+      "text": "have all of the links that uh that we"
+    },
+    {
+      "start": 3466.4,
+      "duration": 3.679,
+      "text": "provided and that got popped into the"
+    },
+    {
+      "start": 3468.16,
+      "duration": 4.159,
+      "text": "chat. They'll all be part of the email"
+    },
+    {
+      "start": 3470.079,
+      "duration": 4.0,
+      "text": "that goes out to everybody. So, thanks"
+    },
+    {
+      "start": 3472.319,
+      "duration": 5.441,
+      "text": "again for your time and I'm going to"
+    },
+    {
+      "start": 3474.079,
+      "duration": 16.3,
+      "text": "hand it over to Bruce to close us up."
+    },
+    {
+      "start": 3477.76,
+      "duration": 12.619,
+      "text": "[Music]"
+    }
+  ],
+  "full_text": "[Music] With that, I want to go ahead and introduce our panelists for our webinar today. Our first speaker is Christopher Smith who is the senior community development program officer at Lisk. Uh Christopher brings nearly 20 years of experience in community engagement and development, grant making and capacity building to the organization. Following him is Carrie Davis who's the president and CEO of Wealth Watchers Inc. a HUD certified housing counseling agency and a chartered neighborworks organization. She has over 20 years of experience in urban and rural community development, housing counseling, and consumer financial education. And the final presenter is Chanel Starks, who is the senior program officer of housing at Lisk Cleveland. She has extensive knowledge in HUD regulatory compliance in both the low-income public housing and housing choice voucher programs. And with that, I'm going to hand it right over to Christopher to take us through the presentation. Christopher. >> Thanks, Ellie. And welcome everyone. Glad to be with y'all. I'm going to run through a few quick slides and then hand it off to my colleague Carrie to really dig into HCA role in this space. So, you can go to the next slide. My work has been around uh how do we think about this uh notion of housing counseling and estate planning as a potential onramp for home ownership. Um given the price of new construction, we think that this notion of encouraging um the legal transfer of housing is a way quiet way for folks to be able to enter the formal housing market. Here's why that's important. Because you see on your screen sort of the heir's property challenge. On the left is what it is. And I won't read this to you, but on the right some of the challenges from this notion of tango title, which essentially means folks who inherit a home without a will. And so they're unable in that situation to tap into home equity, to be able to access housing assistance programs, and they're also vulnerable to things like property tax foreclosure. And so our work is both twofold. One, how do we prevent future heirs properties? That means how do we ramp up estate planning? And that that's critically important for the work that y'all do. um Lisk provides sort of backbone support, grants, convening and technical assistance for local efforts to occur. And so if we can think about this notion of prevention, helping folks get access to estate planning, integrating estate planning in the housing counseling culture and systems, not to say that it's not happening now, but it is to actually ramp it up. How do we amplify it? Turn it up is the work that's yet to be done. We can go to the next slide. And so more of the work that we're doing with Lisk um has been around this notion of thinking about potential um ways and you can capture this. You can go to the next slide. Um and that is understanding sort of the pathway. And so here's a just a quick notion of if you have an estate plan, what the clear path to ownership might look like. And if you don't, here's what could occur, which is this fractured um notion of ownership that restricts one person from being able to access the equity of the home, even if they live in the home, even if they're paying the taxes. So that no estate plan scenario exposes the home and the fractured owners to potential loss because investors oftent times can purchase a share from one of those owners and then petition to court to actually sell the ent sell the entire property without the consent of the other owners. I know there's a lot of legal ease. The bottom line is we need more estate planning to avoid a avoid this notion of fractional ownership. Next slide. Here's our list is thinking a bet. So turn your eyes to the arrow on the right, the orange and title continuence and estate planning is our big bet. We want to invest and bet in bet on increasing turning up this issue of estate planning as a way to increase home ownership rates across the country. Next slide. The the strategy is laid out pretty pretty clearly here. We can send this to you. Next slide. You can go ahead to the next slide. Thank you. So, in Jacksonville since 2021, just to give you a feel for how the work has played out, um we've made an investment and in this work around estate planning specifically, um around $1.7 million. Um and and the blue line, if you look at that blue line, that is the the idea of resolved heirs properties. That's both prevention, that's estate planning, as well as u this notion of folks being in this um tangled title um and getting legal support to resolve them to to create clear title. And so that blue line means we resolved and we prevented more cases in 2023 than were created. Okay? Because if you see that new HP, those are new cases. New cases can occur when an owner passes away without a will. And so the the local jurisdiction can track those. So the idea here is simple folks. We want to increase the number of estate plans filed. We want to increase the number of heirs properties resolved while at the same time we want to decrease the number that are created. If we do that, we think over a period of time, let's say three to five years, we can tip the market towards generational wealth and that creates a stability for local government that we think is a win-win. Next slide. Here's some communication tips uh or tools rather for HCAS. So, if you if you scan the QR code, that'll give you access to our toolkit. There's handouts, postcards, scripts that we've found to be effective to help people move from thinking about this and understanding the importance to actually making a phone call, connecting with their housing counseling agency or their legal partner to actually walk through the process of estate planning. So, I encourage you to um go ahead and take a picture of that and take this note in as well on October 20th. That is the first day of National State Planning Week. We will be releasing a 2.0 of our communications toolkit and that will have new field guides and information for HCAS and for local legal partners to help think about ways they can spread the word more effective. Next slide. Here's just a couple of or one way we have thought about getting the word out using infographics and messaging that resonate potentially resonates with folks. Here's one that's basically saying, \"Hey, I've been putting it off and now I think I need to do something about it.\" And so that infographic has worked. that has led people to actually um pick up the phone and make a phone call or email their local partner, the HCA or the legal partner. Next slide. I think we're going to see one more of these. Yes. So, I'm going to pause here and say this is um the point in which I want to mention the value of working with HAS. as an intermediary, we've been fortunate to work with NeighborWorks um um and and a NeighborWorks affiliate rather that's called Wealth Watchers and Carrie Davis, my colleague, is going to pick it up from here and talk about the work we've been doing together. Thank you. >> Thank you, Christopher. So, I want to take a moment to give you some background about myself. So, I've been in this business for about 30 years. Um I started out as a community organizer. So that will always be the direction that all of my work falls from. In addition to that, I've been the president and CEO of Wealth Watchers for almost 18 years. And if you look at our tagline for almost 25 years, we'll be selling our 25th anniversary um next year. Our tagline is building wealth through future generations. And I apologize for the background noise. I'm actually in the airport. Um, but one of the things that is always important to us as we think about building wealth for future generations is the fact that we know that for most individuals, they're doing that through home ownership. So, we provide one-on-one counseling as well as education. As Christopher said, we've been working with List Jacksonville on their heirs property initiative since 2021, but our work at Aerys Property goes back probably to 2007208 when we were working with farmers. And we still work with farmers that assist with land retention as well as building up their wealth in their land and their homes and passing it down for generations. One of the things that we know is critical as agencies is that we have to be able to go where the homeowners are, where the individuals are. And so the PowerPoint that you're seeing is uh our mobile unit that we call wheels on wheels. And what that does is it allows us to go to communities and provide the information on estate planning right there in the community. In addition to that, as housing counseling agencies, our role is critical in terms of preventing errors property and ensuring that everyone has estate planning. In our office, we start talking about estate planning in the pre-purchase phase. And so in our a and also so that's our counseling as well as our education, our home buyer education. In addition to talking about and ensuring that potential homeowners have their tax exemption, etc. We're very deliberate about also said and you need a will. And that's where the partnership with list comes in. We provide a link that they can complete the intake application online and it goes directly to one of our other partners which is Three River Legal Services. Also, we I know we're seeing and I'm sure a lot of other housing counseling agencies are seeing it as well that we're starting to see a lot of foreclosures again. That is also an opportunity for you to do a temperature check to ensure if they have an estate plan in place. So there's various different points in the counseling and education and the homeownership pathway that we can reiterate the importance of having an estate plan. In addition to that, we can also and in our office we talk about what happens when you don't have one. So that's part of the education process as well. So again, being a partner oftent times as housing counseling agencies, we're not in a position to lead that work. You need a partner like List Jacksonville who has a broader reach that can lead that work. But we're we're very fortunate that Christopher and his team sees the value of housing counseling and ensuring that that piece is interweaving into interwoven into the entire process. So I'll stop right there and I know we'll have an opportunity to answer questions and I'll also turn it over to our colleague Chanel. Thank you, Carrie. Um, thank you, Chris. Um, Chris has pretty much provided the the meat of the heirs property. Um, Chris and his team are the um ones who have made this model pretty much go national. Chris has done an excellent job with um implementing heirs property in the Jacksonville office and our national housing team is now picking up his model and carrying it throughout the um the list organization. So from the national team um heirs property um where we do the work um there are six offices that are supported by list community research and impact those six um offices if you could change the slide please. Um Atlanta, Detroit, Jacksonville, Richmond, San Antonio, Pine Bluff. Um, moving more toward the Midwest is where, um, I sit. Um, we're supported by the National List Housing. And in Cleveland, we implemented our heirs property program in February of 2025. And since implementation with our program partner, we have been able to assist 131 individuals with the state planning and we just started tapping into the um tangled title resolution piece. Um and we currently have six active cases that are being worked. We can change the slide please. Building generational wealth is something that is very important when we're thinking about heirs property. Um, list housing uh the national housing team supports the one list platform by connecting housing production with our four affiliates and leveraging innovative financing, impactful programs and national messaging. The role of the national housing team is to be strategic in the areas in which they feel that is most impactful for um the results to be seen around generational wealth and housing. Those areas are capacity building, capacity training programs for developers to be able to learn those skills necessary to bring more affordable housing into communities. Heir's property initiatives to create generational wealth. You know, we grow up in homes. We stay in homes with our grandparents and parents. Some of us want to be able to keep those assets in the family. um home repair support. That's more around preservation, preserving the home that you're currently in. As Carrie said, it's very important to get the post and pre-education around the home buying process. And when you do have those educational resources at your fingertips, you're able to keep your property in good repair or be able to take advantage of resources that may be out there. Homeownership readiness and faith-based missiondriven affordable housing development is also one of the programmatic areas that we focus on. Next slide, please. We all know that he's property is a silent threat. So, LIS has uplifted this body of work. The project program objectives for list heirs property programs increase awareness and causes of heirs property through community education. If we don't know what heir's property is, we cannot provide the resources that are necessary to help mitigate the issue. We need to be able to connect impacted households with legal service providers for estate counseling, estate planning, and probate litigation to preserve generational wealth through home ownership. The key thing there is legal services could be very important. Lisk is being very intentional with partnerships to try to get as much funding as possible to be able to help families and individuals who are experiencing any issues around heirs property. When we are able to address issues around tangled titles, we unlock what's called dead capital. We clear those titles and we allow households to be able to access more traditional financing products. Those could be home repair resources. Those could be utility assistance. Those could be weatherization, uh, refinancing the homes to make it more affordable. So, making sure that you have those clear titles, you're able to access many more resources. By doing so, it improves housing stock through increased property values. Next slide, please. We've talked about a lot of what heirs property is, how heirs property affects our communities, what additional resources are available. Um, our key learnings, um, you definitely need to know the data. Um, the data will tell you where the issue is. The data will tell you what resources need to be put into the community. The data unveils a lot and we are being very intentional in doing research around where the problem exists. So we are able to put those resources in the community by awareness, education, and the legal services. Unclear ownership negatively impacts home values. When you're in neighborhoods where families are living in homes that are passed down or inherited, but titles have not been properly cared for, you run into issues with the taxes not being paid, the maintenance not keeping being kept up on the home. So, all of that impacts your home and the values in the neighborhood. Once the title is clear, there is an opportunity to make referrals. as we said earlier in the previous slide for home repair for qualifying households and you're able to address issues that may have been, you know, going on for quite some time. But what it does is unlock the opportunity and the potential for you to be able to take advantage of other resources that are available. We know it's a hard conversation. Can you switch the slide, please? We know it's a hard conversation to have, but it's a conversation that everybody needs to have at one point. And the conversation is around having your affairs in order. It starts with estate planning as a preservation tool. As my colleague Christopher and my colleague Carrie have already stated, we have to make sure that we are educating the community, educating home buyers at the beginning of the home buying process about wheels, estate planning, toss. So as they're going through the process and understanding the process, they're able to have this estate planning end of life docu end of life planning documents in order. So when everybody does come to that point, we don't have to create additional heirs property issues. So having your wills in place, having your trust in place, having your toss in place will make it so much easier when we have to have that hard conversation about end of life planning. The roles uh change the slide please. We work with many housing counseling agencies and as a housing agent housing counseling agency is important for them to talk about the pre and post housing counseling. You know we know that the home buying process starts with you know education around the loan itself finding the great and the best loan product. But there is a cycle of that. Once you purchase that home, what happens after you purchase that home? How are you going to keep up with the maintenance? How are you going to keep your equity growing? Who does that home transfer to when you're transitioning? So, it's very important to connect with agencies um to better understand the full cycle of home ownership. Next slide, please. That's my time. Um thank you and I will pass it back over to uh Christopher. >> Hey, thanks Janelle. I think uh Ellie uh and folks are going to take it from here and lead the Q&A. Is that right? >> Yes, sir. >> All right. >> Um so, one thing I do want to say uh here at NHRC, we've done a couple of other webinars on errors property and Miss Ivy will uh pop those into the chat. We've done uh one specifically with National Housing uh excuse me at National uh National Consumer Law Center. Having a little bit of trouble with my alphabets this this morning, this afternoon. Anyway, they did a a session with us that was very specific on on heirs properties, all of the legal stuff. Uh so you might find that very helpful. we kind of had it out there on our website for quite a while as a as a really great training tool. Um, so there's that one and then there's a uh a second one that we did that you might also find useful. And then finally, we're going to pop into the chat a link to a document a paper that was done um with in conjunction with Lisk and National Consumer Law Center around heirs property and disaster recovery um and and what is happening there and what are some possible solutions there. So questions there are a few questions. So, is uh is freewill.com a legitimate place for folks to write up a simple will? Yeah. So, so Elliot, I think there's a couple things to introduce here. One is uh just everybody's understanding of UPL, unauthorized practice of law. And so it's important um for folks to um make contact with their local bar association or um understand the resources that are available to them like NCLC or others. So I would defer that question or or suggest that they reach out to a local partner for that answer. The other part of that answer is there are groups around the country like uh heepen hpppn which is a network national network of legal service organizations around the country and they if you Google them they can also provide uh guidance around how to address some of these legal um questions that are being raised. So that would be my response to it. It's an it's a non-answer answer, but it's a way to say look definitely look at your state, it's individual, it's state law, and look for local re uh resources in your jurisdiction such as your bar association or legal >> and I'm popping that into the chat, that HPNP link that you mentioned. >> Thanks. Okay. So, uh this is a person who is working with a client who was given a property that she shared with a partner for 20 years through a transfer on death deed. Uh lost mitt won't accept her application for successor and interest as they say only a direct family member, spouse or a child can be si said even a will would not give her the right to be a successor and interest as they were not married. Is this true? Yeah. Again, I think the answer to that is make contact with your local bar and legal services partner to confirm what I believe is true, which is that depending on your state, you're going to find that there is a need to have a formal um document in place for a successor and interest transfer. And thank you, Ellie, for putting those links in the chat. Uh okay. What will be most beneficial and less expensive for homeowner and beneficiary? Uh todd or will pertaining taxes? Yeah, the preference is todd. Okay. Transfer debt deeds are uh the only cost there. I think it's a 50 $55 filing fee. um depending on the local clerk's office. But um the tax question is interesting because it depends on how that transfer is treated by the assessor's office and whether or not they will reset that home value in the upcoming tax year. Okay? And so it does depend on the home value in terms of whether or not that um property tax um will will actually increase in a todd scenario. >> Okay. Is is anybody able to address the ethical issues in identifying neighborhoods with high concentration of heirs property? With that information, speculators can prey on heirs property owners with scams and partition actions to force a sale at auction. >> Hey Ellie, I'm doing a lot of talking. I invite Carrie and Chanel to jump in if they have. >> Yes, anybody can answer. >> I could take that one. Um, as it relates to addressing ethical issues and identifying neighborhoods with high concentrations of airless property. Well, um, if you know anything about developers and speculators, they are always online and they're looking at property tax. um um issues like individuals who haven't paid. So therefore, they're already looking. Typically, there's a direct correlation between unpaid taxes and heirs property. Again, that's why I circle back. We have to have the data so we'll know where to concentrate our services at. But again, that's why the role of a housing counselor is so important because we have to continue to educate and it's also important for us to align the act as a navigator to connect all of those services together. >> And I would just piggyback off that, thank you, Carrie, thank you Chris, that we have to get out of the mindset of it being a embarrassing situation. If we want to be able to take advantage of the resources that are available, we have to be comfortable talking about the issues that we face. And when we are inheriting property from our family members who have passed on, we often stay in the home knowing that we may not have the resources to keep the home. And by the time that we are able to or you know if we're able to it has gone through the um probate cycle and it may be too far along. So my message here would be make sure that we do have the educational resources available to put into the community and try to work with our local CDC partners to um interact with our residents because those are the individuals who touch and feel the um residents every day and help them with their ongoing issues that they may have. >> Could I just jump in with a related question to all this? Um, one of the things that I've heard a bunch is that people who are um uh that they they talk to their parents about a will and they say, \"What? Do you want me dead?\" And they they're like, \"Oh, I don't like to talk about it. I don't like to talk about death.\" I mean, there's this kind of emotional thing that goes on. And how do you how do you overcome that? How do you address that? >> It's a very hard conversation to have. Um even you know myself you know I my body of work is around heirs and I don't even have my um estate planning in place. You know we think at our age that we're a little young to be thinking that route but I think it's a conversation that we must have with our you know our families, our children. And as long as we're able to keep putting the resources out into the community and folks are hearing it over and over and over again, it starts to resonate and then that's when individuals are like, \"Well, yeah, maybe I should do it now.\" But it's a very hard conversation to have when you're thinking about completing your, you know, end of life planning um documents, but it's a conversation that's necessary. So, the more that we're able to educate the community, the residents, um I think it'll the message will resonate a little bit better and a little bit more. >> I do want to point >> I do want to point out that somebody popped into the chat, you can share my story. My husband died at 32 and there was no will or trust. >> I mean, I think that that's it's one of the things that's a that's a hard conversation to have, right? You never know. You just never know. And that's why I said earlier when we were kind of in uh in the backstage uh part of our session here that it doesn't matter how old you are, you should have estate planning if especially if you're a homeowner. >> Absolutely. >> Yeah. And Alec, I would just like to add one of the things that we've done, well, I've led in my office is to encourage each of my employees to get their estate plan in place through the partnership with Lisk. And Bruce, to answer your question, we have to stop talking about it in terms of death and talking about in terms of generational wealth building and also honoring wishes. So, it's about planning for wealth for future generations and, you know, creating conversational props that make people comfortable and encouraging them to do it at, you know, um, family reunions, etc., and places where it's not such a heavy topic. >> Yeah, I think that I would just that's completely compelling. And the other thing I would add is that the ad that we just saw at the very beginning of the woman saying, \"I wish I had um done it earlier um where you see somebody who looks like you and is um compelling and looking you straight in the eye.\" I think that that resonates. I think I think it's it's very good to also talk about the the future orientation of it all. Do it for the kids, >> right? And I just want to remind everybody, please put your questions in the Q&A, not in the chat. I will not be able to keep track of them in the chat because it keeps scrolling. So, if you really want me to ask the question, please put it in the Q&A box. Um, I I think we kind of answered this question already, but I will ask it again. Um, is there any national legal services group that would assist with the legal guidance and legal documents needed to help our clients? And I think Chris, that uh site that you mentioned is would uh would be a place for somebody to do that. And Carrie, you kind of came on camera. Is there anything you wanted to say about that? >> No, I'm good. I just Yeah, I want to make sure we get to as many questions as we can. >> Okay. Okay. Um, can anyone address the importance of looking at state specific law regarding estate planning and clearing titles? It varies quite a bit from state to state. Yeah, it's huge. That's why I mentioned NCLC as the dep repository for that. I I would say go to NCLC's website and there's some reports there to be able to help you gauge what the uh state laws look like in Texas, Michigan, Florida, etc. So, look at that. They've done some landscape analysis around that work. Um, the other thing I'd say is you have some law schools, Ellie, that are getting in the heirs game and estate planning game. So, look at your local law school as to whether or not there's a law clinic that is available and doing work around providing initial intake, counseling, and or uh connection to resources um in your particular jurisdiction. And what do we recommend families besides the legal advice of course when the will is not enough to keep your home in the family and you need a trust >> you we need more information about that situation. What I would say is you've got to look at all of the potential assets. So this brings up another point which may be that um for younger folks in particular they may not you may not be talking about a house Ellie it may be digital assets. I remember having a conversation with a military veteran. He was more interested in the medals and how he could pass those on than he was in his home. >> And so I would say to you, it's a broader conversation about assets, not just homes. Um, and it's also bringing forward this idea of pay uh payable on death um programs. So payable on death are things like bank accounts, life insurance. What we found that's important is when you're in the intake process, having the ability to access the unclaimed assets database for your state because you may find that um a loved one may have left proceeds that were unclaimed that you could access um as you're going through potential estate planning process. Uh, can anybody say anything about community property states? Oh, and before you answer that, I do want to just point out somebody in Arizona said that you can still go to probate with a will. Uh, a trust will ensure the property can be passed down. So, just kind of highlighting the importance of looking at what is what are the rules in your specific state. But anyway, back to the question of what about community property states. >> That one, Ellie, I don't know. That's an I don't know for me. >> All right. It sounds like maybe the the your heirs property that you're doing so far isn't in a community property state at this point. So, I would I would encourage people that have those kind of questions to reach out to uh NCLC and uh talk to them and and check out that webinar that we did uh that we that we linked you all to in the chat. Okay. I have received inquiries from clients about how to protect their property from potential Medicaid leans after they pass away. Many individuals over the age of 50 are receiving letters from Mass Health, so this is in Massachusetts, I guess, Mass Health, indicating that they could be subject to future leans on their property upon their death to recover the funds used through Mass Health. Do you have any recommendations? you know, that hasn't been an issue in Florida that we've had to deal with, but there's a group, speaking of mass, there's a group in Boston, um, Boston College led by Professor Thomas Mitchell, and they've got an initiative there on Air's property and and could be a resource. I believe um one of the folks there that could be helpful is uh David Price and he's active in that program and could be able to help connect someone to local resources around that issue. >> I'll find the link Elliot and send it to you. >> Yes. Thank you. Thank you. But you said David Price at Bucks College in Boston. >> Yeah, I'm going to send you the >> Okay. and Ellie, our um legal aid um society here in um Cleveland, Ohio has reached out to us um around um the Medicaid leans and um the Medicaid work that they're doing and that's going to be one of the opportunities here um in the Cleveland lisk office that we're going to tap into to try to provide more um legal assistance around that. So, great question. um look forward to learning a little bit more about that. >> And people are popping things into the chat about where to find information in their particular state. So, thank you for that folks. >> Okay, >> Kelly, if I could just add though from a housing counseling perspective, it is so important that as housing counselors, we don't try to provide legal advice. we are. And so that's why it's so critical when you have a coalition of individuals that you come together on a regular basis so that you can provide accurate information. But I want to make sure that I caution our agencies not to try to be attorneys and answer legal questions as simple as we may think they are. And we may even know the answer, but that's not our role. Good point. Thanks, Carrie. Okay. If a client is on title but not on a loan that his dad had, he passed away. Now, okay, maybe it's her dad had, he passed away, now she is trying to work with the lender to pay mortgage and sent title info and the lender is not accepting it. Uh, what is the best way to help this client resolve the issue? It sounds like from everything that we've been saying, connect them with your with a legal aid attorney. Would would anybody answer that question differently? >> Nobody can see nobody can see anybody shaking their head. No. So, go ahead and say it out loud. >> Yeah, I don't I don't think so. Other than I would broaden the answer to include the bar association and the university or law school and law clinics. I I I think legal aid is one resource. One of the challenges with legal aid is it's incomebased. And so what we've had to do in working with our local legal aid partner is provide grants that remove that income restriction so that Ellie anyone could get counsel, get advice on what options are available to them. Okay. So, and and frankly to be honest with you, there's not enough legal aid attorneys to deal with the demand, >> right? >> And so, this is going to require what Carrie said, it's going to require more of a ecosystem type approach. Knowing who's available for what is as important as any aspect of this work. So, um, so Belle LeBlanc mentioned that they work with their legal aid regularly who conducts workshops for their clients and then they refer back. And Belle, what state are you in? If you would just pop that into the chat. Just wondering what state you're in. But wherever you are, if this is not something that your legal aid Louisiana um if uh you know, if you have a relationship with your legal aid group, this would be a conversation to potentially have. Uh is a beneficiary deed a good document to have? Yeah, I think the answer is it depends what's the situation. Like we need to know more about what's actually going on there. But yeah, it's a it's an option. It's a tool in the toolkit, Ellie, that I would say depending on where what they're trying to do. So lead with what are you trying to do and then back into what might be the options available that help you get there. >> Okay. Given the legal complexities and potential for significant financial consequences, how can someone accurately assess whether their estate is simple enough for a do-it-yourself approach or if they truly need professional legal guidance? So, I I I'll allow the other people to answer this question, but I will just answer from a very personal perspective. I never thought that I needed this. I never thought, \"Oh, it's no big deal. Of course, my kids are going to get this house.\" But, um, due to some medical things, I ended up meeting with an attorney. And it's amazing how even the most simple thing can become complex, as you mentioned. And I feel like the do-it-yourself stuff is questionable in my humble opinion and that really the best thing is for somebody to seek professional guidance on this. So that's my personal opinion, Ellie Pepper, not NHRC, just me and my experience with doing kind of estate planning. And um now I I'll I'll open it for our panelists to answer the question as well. If I could just add to that, Ellie, is that if you have a program in your community and you have partners like Lisk who's financially supporting this work, there's absolutely no reason why we should be um directing homeowners or anyone to do it themselves. Do it with the legal profession because we don't want to miss anything. And again, we're not attorneys. they're not attorneys and so there's just impossible for you to get all the accurate information at that point. So I definitely recommend a making sure and and it starts with you everybody that is on this webinar. starts 185. If you have an AIS property initiative in your community and this service is available, take advantage of it and encourage your family members and your colleagues to do it as well. We should have a waiting list. We should have so many people on the waiting list that we should not have to do outreach. >> Yeah. Uh okay. Are there any fees for the clients? What if they can't afford the fees? Is there financial assistance? >> Yeah, I mean building on Car's comment, I mean that's where group like Lisk or others neighbor works, other CDFIs can play a role. It's to aggregate grant support to help local legal partners provide low to no cost u legal access. You know, Ellie, if we were talking about a uh trafficking ticket, a moving violation, or some form of criminal issue, the public defender's office is at no cost, right? Everybody's entitled to a lawyer. For civil, which this is under civil law, there isn't access to CI free civil legal support. It's limited. And that's your legal aids and your law. So, so really one of the gaps here is how do you help people get access to CI free civil legal support in a time that they need it most, right? So, that's what I would say to folks is is get familiar, as Carrie said, with what's going on in your jurisdiction. Understand where there may be opportunity to build relationships and bridges so that you're not waiting, you're not responding in the moment. you actually have got a database of partners who to call for whether it's legal, whether it's outreach and you can rely on them to build sort of confidence in your local market so people aren't concerned about whether or not this is actually real. They'll actually know someone who's going through it. Which is another piece to this, Ellie, is to say one of the things that ACAs can do is get successful stories out there. If you Google heirs property estate planning and fill in the blank Chicago, Port Smith, Houston, the stories on the internet mainly are reactive things that happened to people. What we want to do is as we are generating positive stories, your group is able to help folks share that with others so that we can overwhelm the internet with more successful stories and people can see that and feel confidence in the system. >> And I will point out that uh Connie from BA rep did put into the chat that uh the legal aids are difficult because they don't have the financing, they don't have the time. um and that she is trying to figure out a way to partner on a grant application with a legal service provider to help provide this type of assistance. Um so I think that that's one thing to consider for groups where maybe there isn't a lot of resource uh and looking at how to grow some resources. So, can you speak to enhanced life estate deed versus will >> or is that more of a legal question? >> Yeah, it is a legal question, but the here's the here's the non-legal answer. A will is expressing intent. That's it. Okay. And so the enhanced deed is actually saying who would like who they would like to to be the beneficiary and on that deed they can ex they can list who that is. So an enhanced deed and it is is for a particular purpose. A will is to state hey here's my intent. I want to leave my car to this person. I want to leave my home to this person. But it does not enter into the actual asset transaction that is necessary to be bind. Okay. Uh this person has a client that had several properties and forgot to include one of them in the trust then passed away. Son has power of attorney for the trust. Wants to add property into trust but can't. How can he sell the property? Power of attorney only works while the person is alive. Once the person is dead, there's no more power of attorney. So, it means nothing once somebody has died. Just FYI. Um, but anyway, any thoughts about how this client might be able to sell the property? Sounds like a legal question. Well, I'm curious. I would be curious who currently do members go to for some of these answers. >> Like, >> if people want to just kind of throw in the chat, if you have these questions, where do you often try to go to get your answers? Because maybe some of the people asking questions can go to those places. >> And one of the places that I would suggest people really go to is NCLC. Um Sarah Bowling Mancini is the one who did our presentation a couple of years ago. Um yeah, somebody said, \"I refer people I refer clients to legal aid.\" Um but Sarah Bowling Mancini is uh one of the top minds around um eras property. And so you uh you know I would encourage people to email uh Sarah and I will uh pop the pop her information into the chat and uh Patty Elim said yes she is. So apparently Patty's reached out to her. Um okay. Um, >> Ellie, if I could real quick, one of the things I would suggest too with the organizations is do a ask an attorney event. Perhaps you can have a day where your legal aid u partner comes into the office or to an event and you just have a ask an attorney question um day. And that might be beneficial for not just the homeowners but for the agencies as well to start building that those relationships. So guess what? David Price is actually here and I am going to paste his information into the chat because he offered it. Um, and David, if you're interested, I can actually make you a panelist if you think you can answer any questions. Uh, let me know in the chat and I will bring you on as another panelist to answer questions. Can somebody try to assume the loan? There's somebody saying apply for a loan. >> Okay. So, David is not available. He has to head out. I mean I think on the assuming the loan so it's if you are um a relative and um somebody has passed um the successor and interests I think they addressed that question in the in the webinar from a couple years ago. It would be best to ask a lawyer in your state, but um >> yeah. >> Okay. Um will a todd affect the beneficiary and income tax properties since it is not an inheritance or acquisition? >> Yeah, Ellie, I think that depends on the state. >> Okay. All right. So, people have popped into the Q&A places where they go. They go to legal aid, uh, Maricopa County, the bar referral program, legal aid, community legal services, uh, ask an attorney. >> Hey, can I mention one other thing, Ellie? >> Yes. >> Been helpful. Um, is working with anchor employers. And so it might be helpful for folks to check whether or not their client works for an employer that offers um employee assistance programs. And within that employee assistance program, there may be access to free legal support. And so that might be another avenue to consider is in large um employer systems like your health care system um your local government systems oftent times they offer this free se uh legal support um that could be helpful to initially understand what's the nature of the issue and what options might be Well, that is all of our questions. There's um been a few things popped into the chat. So, somebody pointed out using uh law school clinics and EAP programs to help um get legal services. Um Patty Elam said New York State Department of Education has legal support for all who belong to that union. So, there's some uh creative ways to try to seek legal assistance that has lower or no fees. With that, I'm going to hand it back to I want to say thank you first to all of our panelists for for all of this information. I do want to ask uh the LISK folks. It sounds like you have been creating these partnerships in different areas around the country. Are you looking to create and grow your partnerships? Yes, >> absolutely. >> Okay. And so if people are interested in getting involved in this program with you, where should they go and how should they reach out? >> You know, I'd say nationally, if they want to reach out to me, that's fine. They can uh just pop my email in the chat and be happy to talk with them. If they're in the Cleveland area, they reach out to Chanel. >> Absolutely. Thank you. >> All right. and we did put their contact information into the chat earlier and when we send out the recording we'll have all of the links that uh that we provided and that got popped into the chat. They'll all be part of the email that goes out to everybody. So, thanks again for your time and I'm going to hand it over to Bruce to close us up. [Music]",
+  "attempts": [
+    {
+      "client": "IOS",
+      "playability": {
+        "status": "OK",
+        "playableInEmbed": true,
+        "offlineability": {
+          "buttonRenderer": {
+            "navigationEndpoint": {
+              "clickTrackingParams": "CAkQ6ewBIhMIl8HFkuzblwMVG0hMCB10SCqsygEEK_Pcrw==",
+              "ypcGetOfflineUpsellEndpoint": {
+                "params": "ChPqqN25AQ0KC1ZGU25iSUlmeS1NIgtWRlNuYklJZnktTSoVCAkYAVIPCgtWRlNuYklJZnktTSAB"
+              }
+            },
+            "trackingParams": "CAkQ6ewBIhMIl8HFkuzblwMVG0hMCB10SCqs"
+          }
+        },
+        "pictureInPicture": {
+          "pictureInPictureRenderer": {
+            "playableInPip": true,
+            "offByDefault": false,
+            "shouldResumeOnHead": false
+          }
+        },
+        "miniplayer": {
+          "miniplayerRenderer": {
+            "playbackMode": "PLAYBACK_MODE_ALLOW"
+          }
+        },
+        "contextParams": "Q0FFU0FnZ0M="
+      },
+      "outcome": "ok"
+    }
+  ],
+  "fetched_at": "2026-10-28T04:11:36.841484+00:00",
+  "client": "IOS",
+  "json_path": "transcripts/143_VFSnbIIfy-M.json",
+  "text_path": "transcripts/143_VFSnbIIfy-M.txt"
+}

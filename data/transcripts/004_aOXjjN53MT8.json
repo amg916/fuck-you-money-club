@@ -1,0 +1,524 @@
+{
+  "index": 4,
+  "url": "https://www.youtube.com/watch?v=aOXjjN53MT8",
+  "video_id": "aOXjjN53MT8",
+  "status": "ok",
+  "metadata": {
+    "title": "HeirSearch | Consanguinity Chart Walk-Through",
+    "author": "HeirSearch",
+    "channelId": "UClhVGsmEOT1FaDMUuJuPh9w",
+    "lengthSeconds": "197",
+    "viewCount": "326",
+    "shortDescription": "According to the ABA, approximately 60% of Americans die without a will. This means that many legal professionals administering estates may have to probate an intestacy.\n\nWho inherits the estate of an intestate person is determined by consanguinity and can vary based on each state’s descent and distribution laws.\n\nOne helpful tool for this purpose is our Consanguinity Chart.\n\nIn this video, HeirSearch walks legal professionals through our process of harnessing consanguinity to satisfy the courts.\n\n_________\n\nJoin the HeirSearch community by subscribing to our monthly HeirMail newsletter for industry news and updates straight to your inbox: https://heirsearch.com/joinourcommunity/\n\n_________\n\nVisit HeirSearch's website and connect with us on social media:\n\nWebsite: https://heirsearch.com/\nLinkedIn: https://www.linkedin.com/company/heirsearch/\nFacebook: https://www.facebook.com/HeirSearchBetterWay/\nTwitter: https://twitter.com/heirsearch",
+    "keywords": [
+      "probate",
+      "intestate",
+      "heirsearch",
+      "heir search",
+      "living will"
+    ]
+  },
+  "caption_tracks": [
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=aOXjjN53MT8&ei=4HXhapitObXssfIP4Li6wQY&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185872&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=161837E0611844DB8449F1E3128C8E50273EF461.2FC946BFDA34C61A85F9DFD75F59DF5BBF0C31FF&key=yt8&kind=asr&lang=en",
+      "name": {
+        "runs": [
+          {
+            "text": "English (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.en",
+      "languageCode": "en",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    }
+  ],
+  "selected_track": {
+    "baseUrl": "https://www.youtube.com/api/timedtext?v=aOXjjN53MT8&ei=4HXhapitObXssfIP4Li6wQY&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185872&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=161837E0611844DB8449F1E3128C8E50273EF461.2FC946BFDA34C61A85F9DFD75F59DF5BBF0C31FF&key=yt8&kind=asr&lang=en",
+    "name": {
+      "runs": [
+        {
+          "text": "English (auto-generated)"
+        }
+      ]
+    },
+    "vssId": "a.en",
+    "languageCode": "en",
+    "kind": "asr",
+    "isTranslatable": true,
+    "trackName": ""
+  },
+  "segments": [
+    {
+      "start": 3.16,
+      "duration": 3.96,
+      "text": "[Music]"
+    },
+    {
+      "start": 4.96,
+      "duration": 4.4,
+      "text": "did you know that approximately 68 of"
+    },
+    {
+      "start": 7.12,
+      "duration": 4.16,
+      "text": "americans die without a will"
+    },
+    {
+      "start": 9.36,
+      "duration": 3.76,
+      "text": "this means that many legal professionals"
+    },
+    {
+      "start": 11.28,
+      "duration": 4.239,
+      "text": "administrating estates may have to"
+    },
+    {
+      "start": 13.12,
+      "duration": 4.159,
+      "text": "probate an intestacy"
+    },
+    {
+      "start": 15.519,
+      "duration": 4.321,
+      "text": "who inherits the estate of an intestate"
+    },
+    {
+      "start": 17.279,
+      "duration": 4.321,
+      "text": "person is determined by consanguinity"
+    },
+    {
+      "start": 19.84,
+      "duration": 4.48,
+      "text": "and can vary based on each state's"
+    },
+    {
+      "start": 21.6,
+      "duration": 4.96,
+      "text": "dissent and distribution laws"
+    },
+    {
+      "start": 24.32,
+      "duration": 3.84,
+      "text": "usually in estates recipients are in"
+    },
+    {
+      "start": 26.56,
+      "duration": 2.479,
+      "text": "order spouse"
+    },
+    {
+      "start": 28.16,
+      "duration": 4.399,
+      "text": "issue"
+    },
+    {
+      "start": 29.039,
+      "duration": 5.841,
+      "text": "parents siblings nieces and nephews"
+    },
+    {
+      "start": 32.559,
+      "duration": 4.641,
+      "text": "and the next of kin including adopted"
+    },
+    {
+      "start": 34.88,
+      "duration": 4.32,
+      "text": "and half-blood relatives"
+    },
+    {
+      "start": 37.2,
+      "duration": 3.92,
+      "text": "if the intestate person died with none"
+    },
+    {
+      "start": 39.2,
+      "duration": 3.92,
+      "text": "of the listed relatives surviving them"
+    },
+    {
+      "start": 41.12,
+      "duration": 4.32,
+      "text": "we must determine the decedent's lawful"
+    },
+    {
+      "start": 43.12,
+      "duration": 4.4,
+      "text": "heirs"
+    },
+    {
+      "start": 45.44,
+      "duration": 4.56,
+      "text": "one helpful tool for this purpose is our"
+    },
+    {
+      "start": 47.52,
+      "duration": 4.48,
+      "text": "consanguinity chart"
+    },
+    {
+      "start": 50.0,
+      "duration": 4.8,
+      "text": "this chart outlines the relation between"
+    },
+    {
+      "start": 52.0,
+      "duration": 4.879,
+      "text": "a decedent and their family members"
+    },
+    {
+      "start": 54.8,
+      "duration": 3.599,
+      "text": "each box on the chart has a generational"
+    },
+    {
+      "start": 56.879,
+      "duration": 5.121,
+      "text": "title and a number representing the"
+    },
+    {
+      "start": 58.399,
+      "duration": 5.361,
+      "text": "degrees of consanguinity or relationship"
+    },
+    {
+      "start": 62.0,
+      "duration": 3.76,
+      "text": "to begin reading the chart place the"
+    },
+    {
+      "start": 63.76,
+      "duration": 4.8,
+      "text": "decedent let's call him john smith in"
+    },
+    {
+      "start": 65.76,
+      "duration": 4.64,
+      "text": "the blank box"
+    },
+    {
+      "start": 68.56,
+      "duration": 3.599,
+      "text": "the first step is determining if john"
+    },
+    {
+      "start": 70.4,
+      "duration": 2.88,
+      "text": "has a living spouse and lineal"
+    },
+    {
+      "start": 72.159,
+      "duration": 2.721,
+      "text": "descendants"
+    },
+    {
+      "start": 73.28,
+      "duration": 3.92,
+      "text": "this is established by following the"
+    },
+    {
+      "start": 74.88,
+      "duration": 4.4,
+      "text": "line directly below him to identify his"
+    },
+    {
+      "start": 77.2,
+      "duration": 4.48,
+      "text": "children grandchildren and"
+    },
+    {
+      "start": 79.28,
+      "duration": 4.32,
+      "text": "great-grandchildren"
+    },
+    {
+      "start": 81.68,
+      "duration": 3.439,
+      "text": "if john smith has no living spouse or"
+    },
+    {
+      "start": 83.6,
+      "duration": 3.28,
+      "text": "lineal descendants"
+    },
+    {
+      "start": 85.119,
+      "duration": 3.36,
+      "text": "we move on to the next level of the"
+    },
+    {
+      "start": 86.88,
+      "duration": 3.599,
+      "text": "chart"
+    },
+    {
+      "start": 88.479,
+      "duration": 4.081,
+      "text": "we call this a level one search as it"
+    },
+    {
+      "start": 90.479,
+      "duration": 4.881,
+      "text": "begins with his parents who are one"
+    },
+    {
+      "start": 92.56,
+      "duration": 5.199,
+      "text": "degree of consanguinity away"
+    },
+    {
+      "start": 95.36,
+      "duration": 4.24,
+      "text": "by identifying the decedent's parents we"
+    },
+    {
+      "start": 97.759,
+      "duration": 2.961,
+      "text": "verify that we have the correct family"
+    },
+    {
+      "start": 99.6,
+      "duration": 2.64,
+      "text": "unit"
+    },
+    {
+      "start": 100.72,
+      "duration": 3.52,
+      "text": "and confirm the number of children"
+    },
+    {
+      "start": 102.24,
+      "duration": 4.0,
+      "text": "within the family"
+    },
+    {
+      "start": 104.24,
+      "duration": 4.08,
+      "text": "we then move down the chart to identify"
+    },
+    {
+      "start": 106.24,
+      "duration": 5.28,
+      "text": "his brothers and sisters nephews and"
+    },
+    {
+      "start": 108.32,
+      "duration": 5.439,
+      "text": "nieces and if necessary his grand or"
+    },
+    {
+      "start": 111.52,
+      "duration": 4.72,
+      "text": "great grand nephews and nieces until we"
+    },
+    {
+      "start": 113.759,
+      "duration": 4.881,
+      "text": "identify living heirs"
+    },
+    {
+      "start": 116.24,
+      "duration": 4.879,
+      "text": "if john has no siblings and no living"
+    },
+    {
+      "start": 118.64,
+      "duration": 4.479,
+      "text": "level one heirs we continue to the next"
+    },
+    {
+      "start": 121.119,
+      "duration": 4.161,
+      "text": "level of the chart"
+    },
+    {
+      "start": 123.119,
+      "duration": 4.401,
+      "text": "we call this a level two search"
+    },
+    {
+      "start": 125.28,
+      "duration": 5.44,
+      "text": "as it begins with his grandparents who"
+    },
+    {
+      "start": 127.52,
+      "duration": 5.04,
+      "text": "are two degrees of consanguinity away"
+    },
+    {
+      "start": 130.72,
+      "duration": 3.68,
+      "text": "his aunts uncles and first cousins on"
+    },
+    {
+      "start": 132.56,
+      "duration": 4.72,
+      "text": "both the paternal and maternal sides of"
+    },
+    {
+      "start": 134.4,
+      "duration": 5.44,
+      "text": "the family are included in this search"
+    },
+    {
+      "start": 137.28,
+      "duration": 4.959,
+      "text": "as well as his first cousins one time"
+    },
+    {
+      "start": 139.84,
+      "duration": 5.2,
+      "text": "two times or three times removed when"
+    },
+    {
+      "start": 142.239,
+      "duration": 4.72,
+      "text": "state law requires"
+    },
+    {
+      "start": 145.04,
+      "duration": 4.08,
+      "text": "the higher we go up the consanguinity"
+    },
+    {
+      "start": 146.959,
+      "duration": 4.56,
+      "text": "chart the further back we go into the"
+    },
+    {
+      "start": 149.12,
+      "duration": 6.0,
+      "text": "decedent's genealogy and the more"
+    },
+    {
+      "start": 151.519,
+      "duration": 5.44,
+      "text": "complex the family tree becomes"
+    },
+    {
+      "start": 155.12,
+      "duration": 4.0,
+      "text": "each level up the chart requires that"
+    },
+    {
+      "start": 156.959,
+      "duration": 5.521,
+      "text": "the previous level of search has proven"
+    },
+    {
+      "start": 159.12,
+      "duration": 3.36,
+      "text": "there are no living errors"
+    },
+    {
+      "start": 162.879,
+      "duration": 4.161,
+      "text": "we hope you found this walkthrough of"
+    },
+    {
+      "start": 164.319,
+      "duration": 4.721,
+      "text": "our consanguinity chart helpful"
+    },
+    {
+      "start": 167.04,
+      "duration": 4.64,
+      "text": "no matter how complex your probate case"
+    },
+    {
+      "start": 169.04,
+      "duration": 6.24,
+      "text": "seems airsearch has the genealogical"
+    },
+    {
+      "start": 171.68,
+      "duration": 5.36,
+      "text": "expertise you need to satisfy the court"
+    },
+    {
+      "start": 175.28,
+      "duration": 4.16,
+      "text": "with fees quoted in advance and"
+    },
+    {
+      "start": 177.04,
+      "duration": 4.24,
+      "text": "determined by a set fee schedule based"
+    },
+    {
+      "start": 179.44,
+      "duration": 3.2,
+      "text": "on the type of search and never as a"
+    },
+    {
+      "start": 181.28,
+      "duration": 3.36,
+      "text": "percentage"
+    },
+    {
+      "start": 182.64,
+      "duration": 4.56,
+      "text": "we're ready to help you identify unknown"
+    },
+    {
+      "start": 184.64,
+      "duration": 4.54,
+      "text": "or missing heirs and beneficiaries"
+    },
+    {
+      "start": 187.2,
+      "duration": 5.369,
+      "text": "a better way"
+    },
+    {
+      "start": 189.18,
+      "duration": 3.389,
+      "text": "[Music]"
+    }
+  ],
+  "full_text": "[Music] did you know that approximately 68 of americans die without a will this means that many legal professionals administrating estates may have to probate an intestacy who inherits the estate of an intestate person is determined by consanguinity and can vary based on each state's dissent and distribution laws usually in estates recipients are in order spouse issue parents siblings nieces and nephews and the next of kin including adopted and half-blood relatives if the intestate person died with none of the listed relatives surviving them we must determine the decedent's lawful heirs one helpful tool for this purpose is our consanguinity chart this chart outlines the relation between a decedent and their family members each box on the chart has a generational title and a number representing the degrees of consanguinity or relationship to begin reading the chart place the decedent let's call him john smith in the blank box the first step is determining if john has a living spouse and lineal descendants this is established by following the line directly below him to identify his children grandchildren and great-grandchildren if john smith has no living spouse or lineal descendants we move on to the next level of the chart we call this a level one search as it begins with his parents who are one degree of consanguinity away by identifying the decedent's parents we verify that we have the correct family unit and confirm the number of children within the family we then move down the chart to identify his brothers and sisters nephews and nieces and if necessary his grand or great grand nephews and nieces until we identify living heirs if john has no siblings and no living level one heirs we continue to the next level of the chart we call this a level two search as it begins with his grandparents who are two degrees of consanguinity away his aunts uncles and first cousins on both the paternal and maternal sides of the family are included in this search as well as his first cousins one time two times or three times removed when state law requires the higher we go up the consanguinity chart the further back we go into the decedent's genealogy and the more complex the family tree becomes each level up the chart requires that the previous level of search has proven there are no living errors we hope you found this walkthrough of our consanguinity chart helpful no matter how complex your probate case seems airsearch has the genealogical expertise you need to satisfy the court with fees quoted in advance and determined by a set fee schedule based on the type of search and never as a percentage we're ready to help you identify unknown or missing heirs and beneficiaries a better way [Music]",
+  "attempts": [
+    {
+      "client": "IOS",
+      "playability": {
+        "status": "OK",
+        "playableInEmbed": true,
+        "offlineability": {
+          "buttonRenderer": {
+            "navigationEndpoint": {
+              "clickTrackingParams": "CAkQ6ewBIhMImJ2-h-zblwMVNXZMCB1gnC5oygEE1PpFOA==",
+              "ypcGetOfflineUpsellEndpoint": {
+                "params": "ChPqqN25AQ0KC2FPWGpqTjUzTVQ4IgthT1hqak41M01UOCoVCAkYAVIPCgthT1hqak41M01UOCAB"
+              }
+            },
+            "trackingParams": "CAkQ6ewBIhMImJ2-h-zblwMVNXZMCB1gnC5o"
+          }
+        },
+        "pictureInPicture": {
+          "pictureInPictureRenderer": {
+            "playableInPip": true,
+            "offByDefault": false,
+            "shouldResumeOnHead": false
+          }
+        },
+        "miniplayer": {
+          "miniplayerRenderer": {
+            "playbackMode": "PLAYBACK_MODE_ALLOW"
+          }
+        },
+        "contextParams": "Q0FFU0FnZ0M="
+      },
+      "outcome": "ok"
+    }
+  ],
+  "fetched_at": "2026-10-28T04:11:13.774254+00:00",
+  "client": "IOS",
+  "json_path": "transcripts/004_aOXjjN53MT8.json",
+  "text_path": "transcripts/004_aOXjjN53MT8.txt"
+}

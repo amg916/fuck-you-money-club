@@ -1,0 +1,2588 @@
+{
+  "index": 19,
+  "url": "https://www.youtube.com/watch?v=PfqiDmLnMIg",
+  "video_id": "PfqiDmLnMIg",
+  "status": "ok",
+  "metadata": {
+    "title": "Research Logs: A Variety of Styles to Suit Your Project, Part 1",
+    "author": "FamilySearch",
+    "channelId": "UC-9GZ7QHKOmLS0APnfz2g1Q",
+    "lengthSeconds": "1204",
+    "viewCount": "2561",
+    "shortDescription": "Rebecca Whitman Koford, CG, CGL, finds effective research with organization. This lecture, Research Logs: A Variety of Styles to Suit Your Project, discusses the value of research logs and introduces the first of three styles to choose from.\n\nThis is part one of a three-part series.\n\nThis presentation was part of RootsTech Connect 2021. Find hundreds of free family history classes, keynotes, and more. http://familysearch.me/RootsTech \n\n#rootstechconnect\n\nRootsTech is hosted by FamilySearch, a global nonprofit organization dedicated to creating inspiring family discovery experiences. RootsTech is the premier global event and learning resource for making family connections and receiving guidance to help people learn more about their families.  \n\nFamilySearch is an international, nonprofit organization dedicated to helping people all over the world connect with their family: past, present, and future. Our partnerships with thousands of record custodians and major genealogical organizations allow us to make billions of records available for you to research your family tree free of charge! Regardless of where or how you research your ancestry, we have specialists all over the world to help you experience the joy of connecting with your heritage.\n\nOur desire to Connect with the Past, Present, and Future https://youtu.be/3cmj5kGm2Xw   \n\nSubscribe:  \nhttp://familysearch.me/youtube   \nhttp://familysearch.me/youtubeportuguese   \nhttp://familysearch.me/youtubespanish   \nhttp://familysearch.me/youtubeeurope   \n\nConnect with FamilySearch:  \nVisit: http://familysearch.me/home   \nLike FamilySearch on Facebook: http://familysearch.me/facebook   \nFollow FamilySearch on Twitter: http://familysearch.me/twitter   \nFollow FamilySearch on Instagram: http://familysearch.me/instagram",
+    "keywords": [
+      "Research Logs: A Variety of Styles to Suit Your Project",
+      "Part 1",
+      "research logs",
+      "A Variety of Styles to Suit Your Project",
+      "genealogy research",
+      "genealogy research project",
+      "research project",
+      "genealogy research log",
+      "rootstech 2021",
+      "rootstech connect",
+      "rootstech",
+      "rootstech connect 2021",
+      "genealogy research logs",
+      "organized genealogy research",
+      "organized research",
+      "familysearch",
+      "family history",
+      "genealogy",
+      "genealogy research tips"
+    ]
+  },
+  "caption_tracks": [
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=PfqiDmLnMIg&ei=43XharqwDJ7WsfIPnNW0EQ&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185875&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=4AA4334870CDFDC26CD49A95C182E75512A62442.2571800E55B28908398C6763E99CBCDB04BB3C3C&key=yt8&kind=asr&lang=en",
+      "name": {
+        "runs": [
+          {
+            "text": "English (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.en",
+      "languageCode": "en",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    }
+  ],
+  "selected_track": {
+    "baseUrl": "https://www.youtube.com/api/timedtext?v=PfqiDmLnMIg&ei=43XharqwDJ7WsfIPnNW0EQ&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185875&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=4AA4334870CDFDC26CD49A95C182E75512A62442.2571800E55B28908398C6763E99CBCDB04BB3C3C&key=yt8&kind=asr&lang=en",
+    "name": {
+      "runs": [
+        {
+          "text": "English (auto-generated)"
+        }
+      ]
+    },
+    "vssId": "a.en",
+    "languageCode": "en",
+    "kind": "asr",
+    "isTranslatable": true,
+    "trackName": ""
+  },
+  "segments": [
+    {
+      "start": 1.73,
+      "duration": 18.77,
+      "text": "[Music]"
+    },
+    {
+      "start": 21.68,
+      "duration": 5.2,
+      "text": "welcome to research logs"
+    },
+    {
+      "start": 23.6,
+      "duration": 6.4,
+      "text": "a variety of styles to suit your project"
+    },
+    {
+      "start": 26.88,
+      "duration": 6.24,
+      "text": "this is part one of three i'm rebecca"
+    },
+    {
+      "start": 30.0,
+      "duration": 6.559,
+      "text": "whitman coford certified genealogist and"
+    },
+    {
+      "start": 33.12,
+      "duration": 5.92,
+      "text": "certified genealogical lecturer"
+    },
+    {
+      "start": 36.559,
+      "duration": 3.121,
+      "text": "in this three-part series we will"
+    },
+    {
+      "start": 39.04,
+      "duration": 3.76,
+      "text": "explore"
+    },
+    {
+      "start": 39.68,
+      "duration": 7.12,
+      "text": "three research log style varieties"
+    },
+    {
+      "start": 42.8,
+      "duration": 7.439,
+      "text": "first date searched style second"
+    },
+    {
+      "start": 46.8,
+      "duration": 6.56,
+      "text": "the record category style and last"
+    },
+    {
+      "start": 50.239,
+      "duration": 9.601,
+      "text": "the plan and log style as we go we'll"
+    },
+    {
+      "start": 53.36,
+      "duration": 6.48,
+      "text": "also discuss the value of research logs"
+    },
+    {
+      "start": 60.079,
+      "duration": 5.601,
+      "text": "part one will focus on the basic style"
+    },
+    {
+      "start": 62.879,
+      "duration": 6.321,
+      "text": "that any research log can start with"
+    },
+    {
+      "start": 65.68,
+      "duration": 5.84,
+      "text": "the date research style"
+    },
+    {
+      "start": 69.2,
+      "duration": 3.36,
+      "text": "in each part i will also introduce a"
+    },
+    {
+      "start": 71.52,
+      "duration": 3.68,
+      "text": "complimentary"
+    },
+    {
+      "start": 72.56,
+      "duration": 4.8,
+      "text": "organizational technique to work with"
+    },
+    {
+      "start": 75.2,
+      "duration": 3.919,
+      "text": "any of the research log styles for more"
+    },
+    {
+      "start": 77.36,
+      "duration": 3.52,
+      "text": "effective analysis"
+    },
+    {
+      "start": 79.119,
+      "duration": 3.201,
+      "text": "the three that i will introduce in"
+    },
+    {
+      "start": 80.88,
+      "duration": 6.96,
+      "text": "detail will be"
+    },
+    {
+      "start": 82.32,
+      "duration": 5.52,
+      "text": "first data lists timelines and tables"
+    },
+    {
+      "start": 88.08,
+      "duration": 5.999,
+      "text": "so what do we need research logs for"
+    },
+    {
+      "start": 94.32,
+      "duration": 5.36,
+      "text": "research logs are a diary of all the"
+    },
+    {
+      "start": 96.88,
+      "duration": 5.44,
+      "text": "research we do for a single project"
+    },
+    {
+      "start": 99.68,
+      "duration": 3.92,
+      "text": "it is the progress of what we're doing"
+    },
+    {
+      "start": 102.32,
+      "duration": 4.56,
+      "text": "for that project"
+    },
+    {
+      "start": 103.6,
+      "duration": 4.72,
+      "text": "both the failures the successes the"
+    },
+    {
+      "start": 106.88,
+      "duration": 3.519,
+      "text": "in-betweens"
+    },
+    {
+      "start": 108.32,
+      "duration": 3.439,
+      "text": "it's the goals for our research the"
+    },
+    {
+      "start": 110.399,
+      "duration": 4.241,
+      "text": "future research"
+    },
+    {
+      "start": 111.759,
+      "duration": 4.72,
+      "text": "it's what we searched how we search"
+    },
+    {
+      "start": 114.64,
+      "duration": 2.88,
+      "text": "where we searched it whether it was on a"
+    },
+    {
+      "start": 116.479,
+      "duration": 4.0,
+      "text": "website which"
+    },
+    {
+      "start": 117.52,
+      "duration": 4.4,
+      "text": "website what part of the website whether"
+    },
+    {
+      "start": 120.479,
+      "duration": 3.841,
+      "text": "we were at a courthouse"
+    },
+    {
+      "start": 121.92,
+      "duration": 3.68,
+      "text": "looking through books and of course what"
+    },
+    {
+      "start": 124.32,
+      "duration": 3.36,
+      "text": "was found"
+    },
+    {
+      "start": 125.6,
+      "duration": 3.12,
+      "text": "or maybe what was not found that we"
+    },
+    {
+      "start": 127.68,
+      "duration": 4.559,
+      "text": "expected"
+    },
+    {
+      "start": 128.72,
+      "duration": 6.56,
+      "text": "to be able to find it's our analysis"
+    },
+    {
+      "start": 132.239,
+      "duration": 6.561,
+      "text": "our ideas and"
+    },
+    {
+      "start": 135.28,
+      "duration": 7.599,
+      "text": "anything anything at all and why"
+    },
+    {
+      "start": 138.8,
+      "duration": 6.88,
+      "text": "why we were looking for that"
+    },
+    {
+      "start": 142.879,
+      "duration": 3.841,
+      "text": "what it is not however is hit and"
+    },
+    {
+      "start": 145.68,
+      "duration": 3.04,
+      "text": "misreporting"
+    },
+    {
+      "start": 146.72,
+      "duration": 3.519,
+      "text": "a research log is no good if you don't"
+    },
+    {
+      "start": 148.72,
+      "duration": 4.239,
+      "text": "write down"
+    },
+    {
+      "start": 150.239,
+      "duration": 5.601,
+      "text": "everything that you were doing honestly"
+    },
+    {
+      "start": 152.959,
+      "duration": 5.521,
+      "text": "a research log is not genealogy software"
+    },
+    {
+      "start": 155.84,
+      "duration": 5.28,
+      "text": "genealogy software is wonderful"
+    },
+    {
+      "start": 158.48,
+      "duration": 3.759,
+      "text": "but it's really only everything you"
+    },
+    {
+      "start": 161.12,
+      "duration": 4.399,
+      "text": "found"
+    },
+    {
+      "start": 162.239,
+      "duration": 6.481,
+      "text": "not really anything you didn't find"
+    },
+    {
+      "start": 165.519,
+      "duration": 4.08,
+      "text": "or a report of other people of the same"
+    },
+    {
+      "start": 168.72,
+      "duration": 3.84,
+      "text": "name"
+    },
+    {
+      "start": 169.599,
+      "duration": 5.28,
+      "text": "who are not your ancestor it's not the"
+    },
+    {
+      "start": 172.56,
+      "duration": 6.56,
+      "text": "same as an online family tree"
+    },
+    {
+      "start": 174.879,
+      "duration": 4.241,
+      "text": "and it's certainly not a pile of papers"
+    },
+    {
+      "start": 180.56,
+      "duration": 3.44,
+      "text": "when we record in any research log"
+    },
+    {
+      "start": 183.44,
+      "duration": 3.12,
+      "text": "regardless"
+    },
+    {
+      "start": 184.0,
+      "duration": 4.56,
+      "text": "of the style that we use there are basic"
+    },
+    {
+      "start": 186.56,
+      "duration": 5.52,
+      "text": "pieces of information we want in"
+    },
+    {
+      "start": 188.56,
+      "duration": 6.56,
+      "text": "every research log first of all details"
+    },
+    {
+      "start": 192.08,
+      "duration": 4.799,
+      "text": "of the records that we find names of the"
+    },
+    {
+      "start": 195.12,
+      "duration": 3.52,
+      "text": "people and the witnesses within that"
+    },
+    {
+      "start": 196.879,
+      "duration": 4.481,
+      "text": "record and"
+    },
+    {
+      "start": 198.64,
+      "duration": 3.519,
+      "text": "where that record is where can we find"
+    },
+    {
+      "start": 201.36,
+      "duration": 3.28,
+      "text": "it again"
+    },
+    {
+      "start": 202.159,
+      "duration": 3.041,
+      "text": "the book and the page numbers of say a"
+    },
+    {
+      "start": 204.64,
+      "duration": 4.159,
+      "text": "deed"
+    },
+    {
+      "start": 205.2,
+      "duration": 7.119,
+      "text": "or a will image numbers"
+    },
+    {
+      "start": 208.799,
+      "duration": 7.36,
+      "text": "in in websites urls"
+    },
+    {
+      "start": 212.319,
+      "duration": 5.92,
+      "text": "the website itself maybe the titles of"
+    },
+    {
+      "start": 216.159,
+      "duration": 5.681,
+      "text": "what it's called within that website"
+    },
+    {
+      "start": 218.239,
+      "duration": 6.56,
+      "text": "book titles group numbers within"
+    },
+    {
+      "start": 221.84,
+      "duration": 3.92,
+      "text": "repositories the dates of the record"
+    },
+    {
+      "start": 224.799,
+      "duration": 5.281,
+      "text": "anything that will"
+    },
+    {
+      "start": 225.76,
+      "duration": 4.32,
+      "text": "identify those records uniquely"
+    },
+    {
+      "start": 230.64,
+      "duration": 4.08,
+      "text": "here is a fictitious example found the"
+    },
+    {
+      "start": 234.08,
+      "duration": 3.12,
+      "text": "death"
+    },
+    {
+      "start": 234.72,
+      "duration": 3.28,
+      "text": "record for mary johnson her parents were"
+    },
+    {
+      "start": 237.2,
+      "duration": 4.72,
+      "text": "mr and mrs"
+    },
+    {
+      "start": 238.0,
+      "duration": 7.12,
+      "text": "unk she died in may it was on ancestry"
+    },
+    {
+      "start": 241.92,
+      "duration": 6.239,
+      "text": "well this is an ineffective way to"
+    },
+    {
+      "start": 245.12,
+      "duration": 3.839,
+      "text": "make notes in your log like i said it's"
+    },
+    {
+      "start": 248.159,
+      "duration": 3.36,
+      "text": "fictitious"
+    },
+    {
+      "start": 248.959,
+      "duration": 3.881,
+      "text": "because in fact this was not on ancestry"
+    },
+    {
+      "start": 251.519,
+      "duration": 4.241,
+      "text": "it was"
+    },
+    {
+      "start": 252.84,
+      "duration": 4.44,
+      "text": "transcribed in someone's online tree and"
+    },
+    {
+      "start": 255.76,
+      "duration": 4.159,
+      "text": "ancestry"
+    },
+    {
+      "start": 257.28,
+      "duration": 4.239,
+      "text": "i always want to chase down those"
+    },
+    {
+      "start": 259.919,
+      "duration": 3.84,
+      "text": "sources like this"
+    },
+    {
+      "start": 261.519,
+      "duration": 3.361,
+      "text": "to its original in case there are more"
+    },
+    {
+      "start": 263.759,
+      "duration": 2.801,
+      "text": "clues"
+    },
+    {
+      "start": 264.88,
+      "duration": 3.12,
+      "text": "these notes are ineffective because they"
+    },
+    {
+      "start": 266.56,
+      "duration": 3.76,
+      "text": "don't really say where the fact"
+    },
+    {
+      "start": 268.0,
+      "duration": 4.88,
+      "text": "came from in other words from an"
+    },
+    {
+      "start": 270.32,
+      "duration": 5.84,
+      "text": "ancestry tree"
+    },
+    {
+      "start": 272.88,
+      "duration": 5.84,
+      "text": "the original source again fictitious"
+    },
+    {
+      "start": 276.16,
+      "duration": 4.8,
+      "text": "would have been more like this found the"
+    },
+    {
+      "start": 278.72,
+      "duration": 4.96,
+      "text": "death record from mrs mary johnson"
+    },
+    {
+      "start": 280.96,
+      "duration": 3.679,
+      "text": "her parents were listed as unk probably"
+    },
+    {
+      "start": 283.68,
+      "duration": 3.84,
+      "text": "unknown"
+    },
+    {
+      "start": 284.639,
+      "duration": 4.56,
+      "text": "the informant was james nelson he's"
+    },
+    {
+      "start": 287.52,
+      "duration": 4.32,
+      "text": "known to be the son-in-law"
+    },
+    {
+      "start": 289.199,
+      "duration": 3.601,
+      "text": "she died of thrombosis on 24 january"
+    },
+    {
+      "start": 291.84,
+      "duration": 3.52,
+      "text": "1909"
+    },
+    {
+      "start": 292.8,
+      "duration": 3.679,
+      "text": "age 79 at towson baltimore county"
+    },
+    {
+      "start": 295.36,
+      "duration": 3.119,
+      "text": "maryland"
+    },
+    {
+      "start": 296.479,
+      "duration": 3.28,
+      "text": "birthplace listed as philadelphia"
+    },
+    {
+      "start": 298.479,
+      "duration": 4.641,
+      "text": "pennsylvania"
+    },
+    {
+      "start": 299.759,
+      "duration": 6.241,
+      "text": "burial at mount olivet in the city"
+    },
+    {
+      "start": 303.12,
+      "duration": 3.28,
+      "text": "and then i write in brackets isn't that"
+    },
+    {
+      "start": 306.0,
+      "duration": 3.6,
+      "text": "run"
+    },
+    {
+      "start": 306.4,
+      "duration": 4.239,
+      "text": "by the methodist episcopal church so in"
+    },
+    {
+      "start": 309.6,
+      "duration": 3.52,
+      "text": "a research log"
+    },
+    {
+      "start": 310.639,
+      "duration": 4.721,
+      "text": "i can write any notes i want this is a"
+    },
+    {
+      "start": 313.12,
+      "duration": 5.359,
+      "text": "working document for my own"
+    },
+    {
+      "start": 315.36,
+      "duration": 5.36,
+      "text": "thoughts to go down on paper death"
+    },
+    {
+      "start": 318.479,
+      "duration": 2.72,
+      "text": "certificate number oh it's not listed in"
+    },
+    {
+      "start": 320.72,
+      "duration": 4.0,
+      "text": "the"
+    },
+    {
+      "start": 321.199,
+      "duration": 4.161,
+      "text": "in this and i list exactly where i found"
+    },
+    {
+      "start": 324.72,
+      "duration": 2.479,
+      "text": "it what"
+    },
+    {
+      "start": 325.36,
+      "duration": 3.679,
+      "text": "that it's at the maryland state archives"
+    },
+    {
+      "start": 327.199,
+      "duration": 4.641,
+      "text": "what the series number is"
+    },
+    {
+      "start": 329.039,
+      "duration": 4.561,
+      "text": "and the fact that this particular death"
+    },
+    {
+      "start": 331.84,
+      "duration": 4.24,
+      "text": "certificate is viewable"
+    },
+    {
+      "start": 333.6,
+      "duration": 3.2,
+      "text": "at the maryland state archives what the"
+    },
+    {
+      "start": 336.08,
+      "duration": 2.8,
+      "text": "url"
+    },
+    {
+      "start": 336.8,
+      "duration": 4.0,
+      "text": "complete would be and the image number"
+    },
+    {
+      "start": 338.88,
+      "duration": 2.8,
+      "text": "so i can find it again and share it with"
+    },
+    {
+      "start": 340.8,
+      "duration": 3.28,
+      "text": "others"
+    },
+    {
+      "start": 341.68,
+      "duration": 3.359,
+      "text": "this would be an example of more"
+    },
+    {
+      "start": 344.08,
+      "duration": 5.04,
+      "text": "effective"
+    },
+    {
+      "start": 345.039,
+      "duration": 5.041,
+      "text": "log notes so how do we start a research"
+    },
+    {
+      "start": 349.12,
+      "duration": 4.799,
+      "text": "log"
+    },
+    {
+      "start": 350.08,
+      "duration": 6.959,
+      "text": "i started with a very specific goal"
+    },
+    {
+      "start": 353.919,
+      "duration": 6.081,
+      "text": "my project goal has to be focused"
+    },
+    {
+      "start": 357.039,
+      "duration": 4.961,
+      "text": "something like find all my whitman's may"
+    },
+    {
+      "start": 360.0,
+      "duration": 5.28,
+      "text": "not be very effective"
+    },
+    {
+      "start": 362.0,
+      "duration": 4.56,
+      "text": "something more focused like find the"
+    },
+    {
+      "start": 365.28,
+      "duration": 6.56,
+      "text": "parents of james"
+    },
+    {
+      "start": 366.56,
+      "duration": 8.56,
+      "text": "whitman born about 1794"
+    },
+    {
+      "start": 371.84,
+      "duration": 7.44,
+      "text": "in saratoga county new york"
+    },
+    {
+      "start": 375.12,
+      "duration": 6.639,
+      "text": "is much more effective i put together"
+    },
+    {
+      "start": 379.28,
+      "duration": 4.08,
+      "text": "a paragraph of what i know about the"
+    },
+    {
+      "start": 381.759,
+      "duration": 4.641,
+      "text": "background information"
+    },
+    {
+      "start": 383.36,
+      "duration": 4.959,
+      "text": "and i get that by reviewing all the past"
+    },
+    {
+      "start": 386.4,
+      "duration": 5.12,
+      "text": "research i have on him"
+    },
+    {
+      "start": 388.319,
+      "duration": 4.16,
+      "text": "and putting source citations in it for"
+    },
+    {
+      "start": 391.52,
+      "duration": 4.239,
+      "text": "all the information"
+    },
+    {
+      "start": 392.479,
+      "duration": 4.801,
+      "text": "i know about him i put in all of his"
+    },
+    {
+      "start": 395.759,
+      "duration": 3.921,
+      "text": "known family"
+    },
+    {
+      "start": 397.28,
+      "duration": 3.6,
+      "text": "and dates and places and events and if i"
+    },
+    {
+      "start": 399.68,
+      "duration": 3.92,
+      "text": "don't know something"
+    },
+    {
+      "start": 400.88,
+      "duration": 3.2,
+      "text": "i leave a place blank and let myself"
+    },
+    {
+      "start": 403.6,
+      "duration": 2.96,
+      "text": "know"
+    },
+    {
+      "start": 404.08,
+      "duration": 4.239,
+      "text": "that i don't know it and if my source"
+    },
+    {
+      "start": 406.56,
+      "duration": 3.919,
+      "text": "citation is"
+    },
+    {
+      "start": 408.319,
+      "duration": 4.16,
+      "text": "aunt myrtle told me then that's what i"
+    },
+    {
+      "start": 410.479,
+      "duration": 3.921,
+      "text": "put because i want to know where i got"
+    },
+    {
+      "start": 412.479,
+      "duration": 2.641,
+      "text": "the information so i can evaluate it"
+    },
+    {
+      "start": 414.4,
+      "duration": 4.4,
+      "text": "later"
+    },
+    {
+      "start": 415.12,
+      "duration": 3.68,
+      "text": "when compared with other evidence"
+    },
+    {
+      "start": 420.96,
+      "duration": 6.4,
+      "text": "again the purpose of research logs"
+    },
+    {
+      "start": 424.479,
+      "duration": 4.16,
+      "text": "george santayana said those who cannot"
+    },
+    {
+      "start": 427.36,
+      "duration": 4.64,
+      "text": "remember the past"
+    },
+    {
+      "start": 428.639,
+      "duration": 4.96,
+      "text": "are condemned to repeat it"
+    },
+    {
+      "start": 432.0,
+      "duration": 3.68,
+      "text": "in one of my favorite movies the"
+    },
+    {
+      "start": 433.599,
+      "duration": 3.6,
+      "text": "character dr henry jones said of his"
+    },
+    {
+      "start": 435.68,
+      "duration": 3.68,
+      "text": "grail diary"
+    },
+    {
+      "start": 437.199,
+      "duration": 3.521,
+      "text": "i wrote it down so i didn't have to"
+    },
+    {
+      "start": 439.36,
+      "duration": 3.2,
+      "text": "remember"
+    },
+    {
+      "start": 440.72,
+      "duration": 4.319,
+      "text": "i don't know about you but i have a lot"
+    },
+    {
+      "start": 442.56,
+      "duration": 5.199,
+      "text": "of ancestors i'm working on"
+    },
+    {
+      "start": 445.039,
+      "duration": 3.44,
+      "text": "i can't remember every last thing i do"
+    },
+    {
+      "start": 447.759,
+      "duration": 3.521,
+      "text": "so i"
+    },
+    {
+      "start": 448.479,
+      "duration": 4.0,
+      "text": "write research logs for them because"
+    },
+    {
+      "start": 451.28,
+      "duration": 4.16,
+      "text": "life happens"
+    },
+    {
+      "start": 452.479,
+      "duration": 4.0,
+      "text": "distractions happen and when i have to"
+    },
+    {
+      "start": 455.44,
+      "duration": 3.039,
+      "text": "put them aside"
+    },
+    {
+      "start": 456.479,
+      "duration": 4.881,
+      "text": "i want to go back and be able to start"
+    },
+    {
+      "start": 458.479,
+      "duration": 2.881,
+      "text": "from where i was"
+    },
+    {
+      "start": 462.4,
+      "duration": 3.84,
+      "text": "so paper or plastic"
+    },
+    {
+      "start": 466.479,
+      "duration": 3.84,
+      "text": "in other words should our research logs"
+    },
+    {
+      "start": 468.8,
+      "duration": 4.32,
+      "text": "be written on paper"
+    },
+    {
+      "start": 470.319,
+      "duration": 3.28,
+      "text": "or in word documents well that's up to"
+    },
+    {
+      "start": 473.12,
+      "duration": 3.84,
+      "text": "you"
+    },
+    {
+      "start": 473.599,
+      "duration": 5.681,
+      "text": "and how you process information best"
+    },
+    {
+      "start": 476.96,
+      "duration": 3.679,
+      "text": "personally i prefer word documents and"
+    },
+    {
+      "start": 479.28,
+      "duration": 5.28,
+      "text": "this is why"
+    },
+    {
+      "start": 480.639,
+      "duration": 5.921,
+      "text": "word documents are easiest for me"
+    },
+    {
+      "start": 484.56,
+      "duration": 4.4,
+      "text": "because they're easiest to print and"
+    },
+    {
+      "start": 486.56,
+      "duration": 5.359,
+      "text": "share they're very easy to search"
+    },
+    {
+      "start": 488.96,
+      "duration": 5.12,
+      "text": "by hitting the control button then at"
+    },
+    {
+      "start": 491.919,
+      "duration": 4.881,
+      "text": "the same time pressing f"
+    },
+    {
+      "start": 494.08,
+      "duration": 3.2,
+      "text": "and that's the find feature so if i know"
+    },
+    {
+      "start": 496.8,
+      "duration": 3.6,
+      "text": "that i"
+    },
+    {
+      "start": 497.28,
+      "duration": 4.4,
+      "text": "found aloysius somewhere and he's"
+    },
+    {
+      "start": 500.4,
+      "duration": 5.76,
+      "text": "somewhere in my"
+    },
+    {
+      "start": 501.68,
+      "duration": 7.44,
+      "text": "17 page research log"
+    },
+    {
+      "start": 506.16,
+      "duration": 3.84,
+      "text": "i can just hit control f and i'll find"
+    },
+    {
+      "start": 509.12,
+      "duration": 3.76,
+      "text": "where else"
+    },
+    {
+      "start": 510.0,
+      "duration": 5.76,
+      "text": "i put aloysius in that research log and"
+    },
+    {
+      "start": 512.88,
+      "duration": 5.92,
+      "text": "it's easy to adjust and reformat"
+    },
+    {
+      "start": 515.76,
+      "duration": 5.44,
+      "text": "now i could use a word document"
+    },
+    {
+      "start": 518.8,
+      "duration": 4.479,
+      "text": "or i can use a specialized program like"
+    },
+    {
+      "start": 521.2,
+      "duration": 3.28,
+      "text": "onenote or scrivener if i'm familiar"
+    },
+    {
+      "start": 523.279,
+      "duration": 3.68,
+      "text": "with those"
+    },
+    {
+      "start": 524.48,
+      "duration": 3.2,
+      "text": "personally i just use word just because"
+    },
+    {
+      "start": 526.959,
+      "duration": 3.201,
+      "text": "it's"
+    },
+    {
+      "start": 527.68,
+      "duration": 6.32,
+      "text": "something i'm familiar with you use what"
+    },
+    {
+      "start": 530.16,
+      "duration": 6.16,
+      "text": "you are familiar with"
+    },
+    {
+      "start": 534.0,
+      "duration": 4.72,
+      "text": "now to the date search style of research"
+    },
+    {
+      "start": 536.32,
+      "duration": 2.4,
+      "text": "logs"
+    },
+    {
+      "start": 538.88,
+      "duration": 3.76,
+      "text": "remember this is a diary of what you"
+    },
+    {
+      "start": 541.76,
+      "duration": 3.12,
+      "text": "searched"
+    },
+    {
+      "start": 542.64,
+      "duration": 4.24,
+      "text": "why you searched for this and what you"
+    },
+    {
+      "start": 544.88,
+      "duration": 4.639,
+      "text": "found"
+    },
+    {
+      "start": 546.88,
+      "duration": 4.16,
+      "text": "this is the most basic and"
+    },
+    {
+      "start": 549.519,
+      "duration": 3.44,
+      "text": "straightforward way"
+    },
+    {
+      "start": 551.04,
+      "duration": 3.919,
+      "text": "to put together a research log and the"
+    },
+    {
+      "start": 552.959,
+      "duration": 4.32,
+      "text": "most commonly used"
+    },
+    {
+      "start": 554.959,
+      "duration": 4.161,
+      "text": "enter things that you searched in the"
+    },
+    {
+      "start": 557.279,
+      "duration": 4.401,
+      "text": "order that you search them"
+    },
+    {
+      "start": 559.12,
+      "duration": 3.92,
+      "text": "you can do each with bullet points or in"
+    },
+    {
+      "start": 561.68,
+      "duration": 4.159,
+      "text": "a table"
+    },
+    {
+      "start": 563.04,
+      "duration": 3.52,
+      "text": "and with any research log you talk it"
+    },
+    {
+      "start": 565.839,
+      "duration": 3.041,
+      "text": "out"
+    },
+    {
+      "start": 566.56,
+      "duration": 3.76,
+      "text": "put in your theories your plans any"
+    },
+    {
+      "start": 568.88,
+      "duration": 4.32,
+      "text": "conflicts"
+    },
+    {
+      "start": 570.32,
+      "duration": 4.959,
+      "text": "in every document with citations now"
+    },
+    {
+      "start": 573.2,
+      "duration": 3.199,
+      "text": "that doesn't mean you need to put in the"
+    },
+    {
+      "start": 575.279,
+      "duration": 4.801,
+      "text": "documents"
+    },
+    {
+      "start": 576.399,
+      "duration": 5.521,
+      "text": "i keep a folder with i keep a separate"
+    },
+    {
+      "start": 580.08,
+      "duration": 3.6,
+      "text": "digital folder with copies of the"
+    },
+    {
+      "start": 581.92,
+      "duration": 4.32,
+      "text": "documents and i always"
+    },
+    {
+      "start": 583.68,
+      "duration": 3.76,
+      "text": "put in my research log that there is a"
+    },
+    {
+      "start": 586.24,
+      "duration": 4.64,
+      "text": "copy of the document"
+    },
+    {
+      "start": 587.44,
+      "duration": 4.24,
+      "text": "in my separate folder and i put in my"
+    },
+    {
+      "start": 590.88,
+      "duration": 4.32,
+      "text": "positive"
+    },
+    {
+      "start": 591.68,
+      "duration": 5.68,
+      "text": "and negative search results"
+    },
+    {
+      "start": 595.2,
+      "duration": 4.96,
+      "text": "so this is a visual of what the first"
+    },
+    {
+      "start": 597.36,
+      "duration": 5.919,
+      "text": "page might look like"
+    },
+    {
+      "start": 600.16,
+      "duration": 4.239,
+      "text": "i have my title at the top of who i'm"
+    },
+    {
+      "start": 603.279,
+      "duration": 4.24,
+      "text": "researching"
+    },
+    {
+      "start": 604.399,
+      "duration": 4.961,
+      "text": "the goal of my research the paragraph of"
+    },
+    {
+      "start": 607.519,
+      "duration": 5.44,
+      "text": "my background information"
+    },
+    {
+      "start": 609.36,
+      "duration": 7.2,
+      "text": "and then just one at a time by bullets"
+    },
+    {
+      "start": 612.959,
+      "duration": 6.401,
+      "text": "what i'm searching in when i search it"
+    },
+    {
+      "start": 616.56,
+      "duration": 3.04,
+      "text": "i just write down every time i go back"
+    },
+    {
+      "start": 619.36,
+      "duration": 2.56,
+      "text": "in"
+    },
+    {
+      "start": 619.6,
+      "duration": 3.28,
+      "text": "and search and so if i have to put it"
+    },
+    {
+      "start": 621.92,
+      "duration": 5.12,
+      "text": "down"
+    },
+    {
+      "start": 622.88,
+      "duration": 4.16,
+      "text": "i can come back in anytime"
+    },
+    {
+      "start": 627.519,
+      "duration": 4.88,
+      "text": "so let's get a research log started one"
+    },
+    {
+      "start": 629.92,
+      "duration": 5.68,
+      "text": "step at a time"
+    },
+    {
+      "start": 632.399,
+      "duration": 4.481,
+      "text": "first gather your documents your papers"
+    },
+    {
+      "start": 635.6,
+      "duration": 4.0,
+      "text": "your photographs"
+    },
+    {
+      "start": 636.88,
+      "duration": 4.399,
+      "text": "online trees digital files get them all"
+    },
+    {
+      "start": 639.6,
+      "duration": 4.56,
+      "text": "together"
+    },
+    {
+      "start": 641.279,
+      "duration": 4.961,
+      "text": "create a title with your ancestor's name"
+    },
+    {
+      "start": 644.16,
+      "duration": 4.88,
+      "text": "we're going to identify a goal"
+    },
+    {
+      "start": 646.24,
+      "duration": 3.92,
+      "text": "fill in our ancestor background cite our"
+    },
+    {
+      "start": 649.04,
+      "duration": 4.4,
+      "text": "sources"
+    },
+    {
+      "start": 650.16,
+      "duration": 3.28,
+      "text": "research and write"
+    },
+    {
+      "start": 653.76,
+      "duration": 4.8,
+      "text": "this is a fictitious ancestor we'll"
+    },
+    {
+      "start": 656.72,
+      "duration": 5.359,
+      "text": "start with our title"
+    },
+    {
+      "start": 658.56,
+      "duration": 6.88,
+      "text": "research log for edwin irwin porter"
+    },
+    {
+      "start": 662.079,
+      "duration": 5.2,
+      "text": "and we'll just start with i like to put"
+    },
+    {
+      "start": 665.44,
+      "duration": 4.72,
+      "text": "when they're born and died"
+    },
+    {
+      "start": 667.279,
+      "duration": 4.721,
+      "text": "and where they're basically from if you"
+    },
+    {
+      "start": 670.16,
+      "duration": 2.72,
+      "text": "want to put more than that sometimes i"
+    },
+    {
+      "start": 672.0,
+      "duration": 5.6,
+      "text": "put in"
+    },
+    {
+      "start": 672.88,
+      "duration": 4.72,
+      "text": "the spouse's names whatever you like"
+    },
+    {
+      "start": 679.519,
+      "duration": 4.56,
+      "text": "then i add on the goal discover if erwin"
+    },
+    {
+      "start": 682.399,
+      "duration": 7.041,
+      "text": "served in the civil war and married"
+    },
+    {
+      "start": 684.079,
+      "duration": 8.481,
+      "text": "before the end of the war"
+    },
+    {
+      "start": 689.44,
+      "duration": 7.28,
+      "text": "next background information"
+    },
+    {
+      "start": 692.56,
+      "duration": 7.2,
+      "text": "erwin porter was born about 1846 to abel"
+    },
+    {
+      "start": 696.72,
+      "duration": 5.76,
+      "text": "r porter and mary l thomas probably in"
+    },
+    {
+      "start": 699.76,
+      "duration": 4.8,
+      "text": "charleston tioga county pennsylvania"
+    },
+    {
+      "start": 702.48,
+      "duration": 4.4,
+      "text": "he lived with his family in that city in"
+    },
+    {
+      "start": 704.56,
+      "duration": 3.36,
+      "text": "1850 and 1860 but was not with them in"
+    },
+    {
+      "start": 706.88,
+      "duration": 4.0,
+      "text": "1870"
+    },
+    {
+      "start": 707.92,
+      "duration": 5.919,
+      "text": "the civil war started in 1861 when"
+    },
+    {
+      "start": 710.88,
+      "duration": 4.56,
+      "text": "edward would have been about 15."
+    },
+    {
+      "start": 713.839,
+      "duration": 3.44,
+      "text": "and i'm going to tell myself i don't"
+    },
+    {
+      "start": 715.44,
+      "duration": 3.519,
+      "text": "always but in this case i'm going to"
+    },
+    {
+      "start": 717.279,
+      "duration": 2.401,
+      "text": "tell myself where i found this"
+    },
+    {
+      "start": 718.959,
+      "duration": 3.921,
+      "text": "information"
+    },
+    {
+      "start": 719.68,
+      "duration": 6.64,
+      "text": "particularly because i found him"
+    },
+    {
+      "start": 722.88,
+      "duration": 4.24,
+      "text": "in the familysearch family tree and his"
+    },
+    {
+      "start": 726.32,
+      "duration": 3.6,
+      "text": "identity i"
+    },
+    {
+      "start": 727.12,
+      "duration": 3.44,
+      "text": "put in his identification number then i"
+    },
+    {
+      "start": 729.92,
+      "duration": 3.76,
+      "text": "put in"
+    },
+    {
+      "start": 730.56,
+      "duration": 4.0,
+      "text": "that his parents are buried in and"
+    },
+    {
+      "start": 733.68,
+      "duration": 3.44,
+      "text": "realized i"
+    },
+    {
+      "start": 734.56,
+      "duration": 3.04,
+      "text": "didn't know where his parents are buried"
+    },
+    {
+      "start": 737.12,
+      "duration": 2.24,
+      "text": "and i"
+    },
+    {
+      "start": 737.6,
+      "duration": 3.84,
+      "text": "so i just put a line there because i"
+    },
+    {
+      "start": 739.36,
+      "duration": 4.0,
+      "text": "figured if i knew where his parents were"
+    },
+    {
+      "start": 741.44,
+      "duration": 2.56,
+      "text": "buried he might be buried with him and"
+    },
+    {
+      "start": 743.36,
+      "duration": 4.159,
+      "text": "that might be"
+    },
+    {
+      "start": 744.0,
+      "duration": 5.839,
+      "text": "an important clue that would bring me to"
+    },
+    {
+      "start": 747.519,
+      "duration": 4.161,
+      "text": "a conclusion or bring me to my goal"
+    },
+    {
+      "start": 749.839,
+      "duration": 3.44,
+      "text": "so anytime i kind of thought of"
+    },
+    {
+      "start": 751.68,
+      "duration": 3.52,
+      "text": "something like that i"
+    },
+    {
+      "start": 753.279,
+      "duration": 3.601,
+      "text": "i put a blank because i think that"
+    },
+    {
+      "start": 755.2,
+      "duration": 4.48,
+      "text": "that's something important and i"
+    },
+    {
+      "start": 756.88,
+      "duration": 3.44,
+      "text": "like big blanks so that i have those"
+    },
+    {
+      "start": 759.68,
+      "duration": 2.719,
+      "text": "goals"
+    },
+    {
+      "start": 760.32,
+      "duration": 5.28,
+      "text": "to reach or those mini goals to help me"
+    },
+    {
+      "start": 762.399,
+      "duration": 3.201,
+      "text": "to my major goal"
+    },
+    {
+      "start": 767.36,
+      "duration": 4.0,
+      "text": "so you'll notice that i have source"
+    },
+    {
+      "start": 770.399,
+      "duration": 4.961,
+      "text": "citations"
+    },
+    {
+      "start": 771.36,
+      "duration": 6.4,
+      "text": "in footnoted numbers and"
+    },
+    {
+      "start": 775.36,
+      "duration": 4.4,
+      "text": "down below underneath my research log"
+    },
+    {
+      "start": 777.76,
+      "duration": 2.48,
+      "text": "maybe in endnotes or in footnotes i"
+    },
+    {
+      "start": 779.76,
+      "duration": 3.84,
+      "text": "prefer"
+    },
+    {
+      "start": 780.24,
+      "duration": 6.24,
+      "text": "footnotes i've got my"
+    },
+    {
+      "start": 783.6,
+      "duration": 4.0,
+      "text": "source citations and they're anecdoted"
+    },
+    {
+      "start": 786.48,
+      "duration": 4.24,
+      "text": "annotated here"
+    },
+    {
+      "start": 787.6,
+      "duration": 3.6,
+      "text": "just you know just for to keep it short"
+    },
+    {
+      "start": 790.72,
+      "duration": 3.52,
+      "text": "for the"
+    },
+    {
+      "start": 791.2,
+      "duration": 6.319,
+      "text": "this lecture but i've got the censuses"
+    },
+    {
+      "start": 794.24,
+      "duration": 5.2,
+      "text": "that i've got that i've referenced"
+    },
+    {
+      "start": 797.519,
+      "duration": 3.521,
+      "text": "and i've got the personal identifier in"
+    },
+    {
+      "start": 799.44,
+      "duration": 2.56,
+      "text": "the family search tree that i've"
+    },
+    {
+      "start": 801.04,
+      "duration": 2.96,
+      "text": "identified"
+    },
+    {
+      "start": 802.0,
+      "duration": 4.56,
+      "text": "but number four you'll see i've got"
+    },
+    {
+      "start": 804.0,
+      "duration": 4.399,
+      "text": "questions and that's perfectly good to"
+    },
+    {
+      "start": 806.56,
+      "duration": 2.719,
+      "text": "do i could put it here i could put it"
+    },
+    {
+      "start": 808.399,
+      "duration": 2.401,
+      "text": "anywhere"
+    },
+    {
+      "start": 809.279,
+      "duration": 4.961,
+      "text": "but i wanted to know where are they"
+    },
+    {
+      "start": 810.8,
+      "duration": 5.52,
+      "text": "buried maybe edward is buried with them"
+    },
+    {
+      "start": 814.24,
+      "duration": 3.279,
+      "text": "this is a working document something"
+    },
+    {
+      "start": 816.32,
+      "duration": 5.84,
+      "text": "that you"
+    },
+    {
+      "start": 817.519,
+      "duration": 4.641,
+      "text": "are just putting your brain on paper"
+    },
+    {
+      "start": 823.839,
+      "duration": 3.12,
+      "text": "now i'm going to go ahead and start my"
+    },
+    {
+      "start": 826.0,
+      "duration": 3.44,
+      "text": "research"
+    },
+    {
+      "start": 826.959,
+      "duration": 3.041,
+      "text": "we'll start from the top i looked up"
+    },
+    {
+      "start": 829.44,
+      "duration": 2.56,
+      "text": "irwin"
+    },
+    {
+      "start": 830.0,
+      "duration": 3.76,
+      "text": "in the civil war pension index and"
+    },
+    {
+      "start": 832.0,
+      "duration": 4.72,
+      "text": "service record index on"
+    },
+    {
+      "start": 833.76,
+      "duration": 4.319,
+      "text": "ancestry and i didn't find any irwin"
+    },
+    {
+      "start": 836.72,
+      "duration": 3.52,
+      "text": "from pennsylvania"
+    },
+    {
+      "start": 838.079,
+      "duration": 4.161,
+      "text": "so i went next to fold three and this is"
+    },
+    {
+      "start": 840.24,
+      "duration": 3.44,
+      "text": "a very important point in any kind of"
+    },
+    {
+      "start": 842.24,
+      "duration": 6.08,
+      "text": "research we don't stop at"
+    },
+    {
+      "start": 843.68,
+      "duration": 6.88,
+      "text": "one particular index or one website"
+    },
+    {
+      "start": 848.32,
+      "duration": 4.639,
+      "text": "there's a lot of places we can go for"
+    },
+    {
+      "start": 850.56,
+      "duration": 5.519,
+      "text": "the same kind of information because"
+    },
+    {
+      "start": 852.959,
+      "duration": 6.721,
+      "text": "not all indexes are equal the civil war"
+    },
+    {
+      "start": 856.079,
+      "duration": 5.681,
+      "text": "service index of union soldiers on fold"
+    },
+    {
+      "start": 859.68,
+      "duration": 5.12,
+      "text": "three that's where i found an erwin"
+    },
+    {
+      "start": 861.76,
+      "duration": 4.8,
+      "text": "e porter of company g at the 45th"
+    },
+    {
+      "start": 864.8,
+      "duration": 5.279,
+      "text": "pennsylvania infantry"
+    },
+    {
+      "start": 866.56,
+      "duration": 6.8,
+      "text": "but that says to see an original"
+    },
+    {
+      "start": 870.079,
+      "duration": 6.161,
+      "text": "card under irwin with an i a porter and"
+    },
+    {
+      "start": 873.36,
+      "duration": 6.479,
+      "text": "i found that on fold three"
+    },
+    {
+      "start": 876.24,
+      "duration": 6.8,
+      "text": "so what do i do next with that"
+    },
+    {
+      "start": 879.839,
+      "duration": 6.081,
+      "text": "this looked like a long card"
+    },
+    {
+      "start": 883.04,
+      "duration": 4.479,
+      "text": "of a military service record and so i"
+    },
+    {
+      "start": 885.92,
+      "duration": 3.359,
+      "text": "went to family search wiki"
+    },
+    {
+      "start": 887.519,
+      "duration": 4.641,
+      "text": "because if i don't know what something"
+    },
+    {
+      "start": 889.279,
+      "duration": 4.24,
+      "text": "is my first instinct is to find out more"
+    },
+    {
+      "start": 892.16,
+      "duration": 3.039,
+      "text": "about that record"
+    },
+    {
+      "start": 893.519,
+      "duration": 3.44,
+      "text": "where do i find the record what does the"
+    },
+    {
+      "start": 895.199,
+      "duration": 3.361,
+      "text": "record mean what can the record do for"
+    },
+    {
+      "start": 896.959,
+      "duration": 3.921,
+      "text": "my research"
+    },
+    {
+      "start": 898.56,
+      "duration": 4.32,
+      "text": "and one of my favorite things to do is"
+    },
+    {
+      "start": 900.88,
+      "duration": 2.639,
+      "text": "to go to family search wiki to find out"
+    },
+    {
+      "start": 902.88,
+      "duration": 3.199,
+      "text": "more"
+    },
+    {
+      "start": 903.519,
+      "duration": 4.641,
+      "text": "or to go to a reference book that will"
+    },
+    {
+      "start": 906.079,
+      "duration": 4.0,
+      "text": "help me understand the record"
+    },
+    {
+      "start": 908.16,
+      "duration": 3.2,
+      "text": "well family search wiki tells me that"
+    },
+    {
+      "start": 910.079,
+      "duration": 3.601,
+      "text": "civil records"
+    },
+    {
+      "start": 911.36,
+      "duration": 4.24,
+      "text": "for this kind of thing are the national"
+    },
+    {
+      "start": 913.68,
+      "duration": 3.04,
+      "text": "archives in washington dc for the"
+    },
+    {
+      "start": 915.6,
+      "duration": 5.12,
+      "text": "originals"
+    },
+    {
+      "start": 916.72,
+      "duration": 8.119,
+      "text": "i might decide to plan a trip there"
+    },
+    {
+      "start": 920.72,
+      "duration": 5.44,
+      "text": "or hire a researcher a couple days later"
+    },
+    {
+      "start": 924.839,
+      "duration": 3.8,
+      "text": "i"
+    },
+    {
+      "start": 926.16,
+      "duration": 4.32,
+      "text": "found another record and i put it in"
+    },
+    {
+      "start": 928.639,
+      "duration": 5.921,
+      "text": "where i found that irwin"
+    },
+    {
+      "start": 930.48,
+      "duration": 6.0,
+      "text": "e porter of that was buried at the u.s"
+    },
+    {
+      "start": 934.56,
+      "duration": 4.56,
+      "text": "national cemetery intermittent control"
+    },
+    {
+      "start": 936.48,
+      "duration": 4.159,
+      "text": "forms and i found that on ancestry"
+    },
+    {
+      "start": 939.12,
+      "duration": 3.36,
+      "text": "which was interesting because i hadn't"
+    },
+    {
+      "start": 940.639,
+      "duration": 3.76,
+      "text": "found my ancestry before"
+    },
+    {
+      "start": 942.48,
+      "duration": 3.44,
+      "text": "so it's always good to go back to the"
+    },
+    {
+      "start": 944.399,
+      "duration": 4.961,
+      "text": "same websites and try"
+    },
+    {
+      "start": 945.92,
+      "duration": 6.56,
+      "text": "under different categories of record"
+    },
+    {
+      "start": 949.36,
+      "duration": 5.36,
+      "text": "groups that website has"
+    },
+    {
+      "start": 952.48,
+      "duration": 4.32,
+      "text": "i also found him on find a grave under"
+    },
+    {
+      "start": 954.72,
+      "duration": 4.88,
+      "text": "ee porter"
+    },
+    {
+      "start": 956.8,
+      "duration": 4.24,
+      "text": "and that was at the same ex with the"
+    },
+    {
+      "start": 959.6,
+      "duration": 4.72,
+      "text": "same exact"
+    },
+    {
+      "start": 961.04,
+      "duration": 4.239,
+      "text": "unit company g the 43rd pennsylvania"
+    },
+    {
+      "start": 964.32,
+      "duration": 3.4,
+      "text": "infantry"
+    },
+    {
+      "start": 965.279,
+      "duration": 4.56,
+      "text": "the death date was the 15th of july"
+    },
+    {
+      "start": 967.72,
+      "duration": 4.919,
+      "text": "1864."
+    },
+    {
+      "start": 969.839,
+      "duration": 3.92,
+      "text": "i later couple days later found a death"
+    },
+    {
+      "start": 972.639,
+      "duration": 4.401,
+      "text": "certificate"
+    },
+    {
+      "start": 973.759,
+      "duration": 6.481,
+      "text": "in an index as e a porter"
+    },
+    {
+      "start": 977.04,
+      "duration": 5.76,
+      "text": "who died 15 july 1864."
+    },
+    {
+      "start": 980.24,
+      "duration": 3.599,
+      "text": "there's no image it's just an index but"
+    },
+    {
+      "start": 982.8,
+      "duration": 6.32,
+      "text": "it referenced"
+    },
+    {
+      "start": 983.839,
+      "duration": 7.68,
+      "text": "a film 1986474"
+    },
+    {
+      "start": 989.12,
+      "duration": 3.519,
+      "text": "well when i went to that family history"
+    },
+    {
+      "start": 991.519,
+      "duration": 3.68,
+      "text": "film"
+    },
+    {
+      "start": 992.639,
+      "duration": 3.44,
+      "text": "that film has been digitized and it"
+    },
+    {
+      "start": 995.199,
+      "duration": 4.241,
+      "text": "referenced"
+    },
+    {
+      "start": 996.079,
+      "duration": 6.081,
+      "text": "a new film the digital film"
+    },
+    {
+      "start": 999.44,
+      "duration": 3.199,
+      "text": "which now is a zero zero four zero zero"
+    },
+    {
+      "start": 1002.16,
+      "duration": 4.32,
+      "text": "zero"
+    },
+    {
+      "start": 1002.639,
+      "duration": 5.921,
+      "text": "nine six zero film so you kind of have"
+    },
+    {
+      "start": 1006.48,
+      "duration": 4.24,
+      "text": "to know that family search is digitizing"
+    },
+    {
+      "start": 1008.56,
+      "duration": 4.8,
+      "text": "a lot of their films"
+    },
+    {
+      "start": 1010.72,
+      "duration": 3.6,
+      "text": "and i found that and i found the image"
+    },
+    {
+      "start": 1013.36,
+      "duration": 4.08,
+      "text": "number"
+    },
+    {
+      "start": 1014.32,
+      "duration": 5.12,
+      "text": "and that is one of those"
+    },
+    {
+      "start": 1017.44,
+      "duration": 5.92,
+      "text": "big log books and it was called"
+    },
+    {
+      "start": 1019.44,
+      "duration": 7.28,
+      "text": "philadelphia registration of desk 1964."
+    },
+    {
+      "start": 1023.36,
+      "duration": 4.319,
+      "text": "in that book it showed that no parents"
+    },
+    {
+      "start": 1026.72,
+      "duration": 4.64,
+      "text": "were listed"
+    },
+    {
+      "start": 1027.679,
+      "duration": 6.481,
+      "text": "only that he died by a gunshot wound"
+    },
+    {
+      "start": 1031.36,
+      "duration": 2.8,
+      "text": "and here it is"
+    },
+    {
+      "start": 1035.28,
+      "duration": 6.0,
+      "text": "ea porter no age"
+    },
+    {
+      "start": 1038.319,
+      "duration": 4.401,
+      "text": "just that he died on the 15th wounds"
+    },
+    {
+      "start": 1041.28,
+      "duration": 3.919,
+      "text": "from a gunshot"
+    },
+    {
+      "start": 1042.72,
+      "duration": 2.479,
+      "text": "that's it"
+    },
+    {
+      "start": 1045.76,
+      "duration": 4.799,
+      "text": "we see that this is the young man who"
+    },
+    {
+      "start": 1049.44,
+      "duration": 4.239,
+      "text": "was with"
+    },
+    {
+      "start": 1050.559,
+      "duration": 5.441,
+      "text": "that company and so further research can"
+    },
+    {
+      "start": 1053.679,
+      "duration": 4.161,
+      "text": "help us to identify if this truly was"
+    },
+    {
+      "start": 1056.0,
+      "duration": 5.12,
+      "text": "the son of abel"
+    },
+    {
+      "start": 1057.84,
+      "duration": 3.6,
+      "text": "but at this point we we think that if"
+    },
+    {
+      "start": 1061.12,
+      "duration": 3.12,
+      "text": "this"
+    },
+    {
+      "start": 1061.44,
+      "duration": 5.119,
+      "text": "is the man that we're looking for this"
+    },
+    {
+      "start": 1064.24,
+      "duration": 3.12,
+      "text": "is very unlikely to be somebody who was"
+    },
+    {
+      "start": 1066.559,
+      "duration": 4.161,
+      "text": "married"
+    },
+    {
+      "start": 1067.36,
+      "duration": 6.72,
+      "text": "at the age of 18 when he died so"
+    },
+    {
+      "start": 1070.72,
+      "duration": 5.52,
+      "text": "we can continue our research but this is"
+    },
+    {
+      "start": 1074.08,
+      "duration": 3.92,
+      "text": "the example here is a straightforward"
+    },
+    {
+      "start": 1076.24,
+      "duration": 4.0,
+      "text": "case it doesn't need"
+    },
+    {
+      "start": 1078.0,
+      "duration": 4.48,
+      "text": "more complex treatment for its research"
+    },
+    {
+      "start": 1080.24,
+      "duration": 2.24,
+      "text": "log"
+    },
+    {
+      "start": 1083.76,
+      "duration": 5.68,
+      "text": "so a summary of style one the log by"
+    },
+    {
+      "start": 1086.96,
+      "duration": 5.36,
+      "text": "date searched"
+    },
+    {
+      "start": 1089.44,
+      "duration": 4.0,
+      "text": "log by date searched is a diary of"
+    },
+    {
+      "start": 1092.32,
+      "duration": 3.44,
+      "text": "research they're all"
+    },
+    {
+      "start": 1093.44,
+      "duration": 4.16,
+      "text": "a diary of research no matter what style"
+    },
+    {
+      "start": 1095.76,
+      "duration": 4.4,
+      "text": "of log you use"
+    },
+    {
+      "start": 1097.6,
+      "duration": 3.76,
+      "text": "the negative positive searches without"
+    },
+    {
+      "start": 1100.16,
+      "duration": 3.759,
+      "text": "result they all go"
+    },
+    {
+      "start": 1101.36,
+      "duration": 3.04,
+      "text": "in there because no matter what you're"
+    },
+    {
+      "start": 1103.919,
+      "duration": 4.241,
+      "text": "doing"
+    },
+    {
+      "start": 1104.4,
+      "duration": 5.92,
+      "text": "if you can't find it you can't use it"
+    },
+    {
+      "start": 1108.16,
+      "duration": 3.519,
+      "text": "and i don't know how many times if i've"
+    },
+    {
+      "start": 1110.32,
+      "duration": 4.239,
+      "text": "just gotten excited"
+    },
+    {
+      "start": 1111.679,
+      "duration": 4.0,
+      "text": "and followed something and not written"
+    },
+    {
+      "start": 1114.559,
+      "duration": 2.881,
+      "text": "it down"
+    },
+    {
+      "start": 1115.679,
+      "duration": 3.441,
+      "text": "too many times i've needed that"
+    },
+    {
+      "start": 1117.44,
+      "duration": 2.88,
+      "text": "information and not been able to find it"
+    },
+    {
+      "start": 1119.12,
+      "duration": 4.0,
+      "text": "again"
+    },
+    {
+      "start": 1120.32,
+      "duration": 5.12,
+      "text": "simple word documents are very effective"
+    },
+    {
+      "start": 1123.12,
+      "duration": 5.12,
+      "text": "i don't have to get too complicated"
+    },
+    {
+      "start": 1125.44,
+      "duration": 5.04,
+      "text": "but what i have to do is stop and write"
+    },
+    {
+      "start": 1128.24,
+      "duration": 5.6,
+      "text": "to absorb the information"
+    },
+    {
+      "start": 1130.48,
+      "duration": 5.6,
+      "text": "so that i can cite my source understand"
+    },
+    {
+      "start": 1133.84,
+      "duration": 4.24,
+      "text": "my source is this just an index or am i"
+    },
+    {
+      "start": 1136.08,
+      "duration": 4.16,
+      "text": "looking at an original source and"
+    },
+    {
+      "start": 1138.08,
+      "duration": 4.16,
+      "text": "and how was this original source created"
+    },
+    {
+      "start": 1140.24,
+      "duration": 5.04,
+      "text": "and under what context did they"
+    },
+    {
+      "start": 1142.24,
+      "duration": 5.52,
+      "text": "really is this my porter or"
+    },
+    {
+      "start": 1145.28,
+      "duration": 5.04,
+      "text": "is this another one of the same name and"
+    },
+    {
+      "start": 1147.76,
+      "duration": 4.96,
+      "text": "really give some analyzation to this"
+    },
+    {
+      "start": 1150.32,
+      "duration": 3.44,
+      "text": "i always start each project with a"
+    },
+    {
+      "start": 1152.72,
+      "duration": 4.4,
+      "text": "summary of the goal"
+    },
+    {
+      "start": 1153.76,
+      "duration": 5.44,
+      "text": "in the background and again this isn't"
+    },
+    {
+      "start": 1157.12,
+      "duration": 3.2,
+      "text": "the same as notes in a genealogy program"
+    },
+    {
+      "start": 1159.2,
+      "duration": 3.52,
+      "text": "or an online tree"
+    },
+    {
+      "start": 1160.32,
+      "duration": 4.0,
+      "text": "this is your whole brain giving the"
+    },
+    {
+      "start": 1162.72,
+      "duration": 5.199,
+      "text": "whole project"
+    },
+    {
+      "start": 1164.32,
+      "duration": 5.68,
+      "text": "a thorough analyzation"
+    },
+    {
+      "start": 1167.919,
+      "duration": 4.321,
+      "text": "well i hope you've enjoyed this part and"
+    },
+    {
+      "start": 1170.0,
+      "duration": 4.96,
+      "text": "will join me again for part two"
+    },
+    {
+      "start": 1172.24,
+      "duration": 4.24,
+      "text": "of research logs a variety of styles to"
+    },
+    {
+      "start": 1174.96,
+      "duration": 4.88,
+      "text": "suit your project"
+    },
+    {
+      "start": 1176.48,
+      "duration": 3.36,
+      "text": "thank you"
+    },
+    {
+      "start": 1203.52,
+      "duration": 2.08,
+      "text": "you"
+    }
+  ],
+  "full_text": "[Music] welcome to research logs a variety of styles to suit your project this is part one of three i'm rebecca whitman coford certified genealogist and certified genealogical lecturer in this three-part series we will explore three research log style varieties first date searched style second the record category style and last the plan and log style as we go we'll also discuss the value of research logs part one will focus on the basic style that any research log can start with the date research style in each part i will also introduce a complimentary organizational technique to work with any of the research log styles for more effective analysis the three that i will introduce in detail will be first data lists timelines and tables so what do we need research logs for research logs are a diary of all the research we do for a single project it is the progress of what we're doing for that project both the failures the successes the in-betweens it's the goals for our research the future research it's what we searched how we search where we searched it whether it was on a website which website what part of the website whether we were at a courthouse looking through books and of course what was found or maybe what was not found that we expected to be able to find it's our analysis our ideas and anything anything at all and why why we were looking for that what it is not however is hit and misreporting a research log is no good if you don't write down everything that you were doing honestly a research log is not genealogy software genealogy software is wonderful but it's really only everything you found not really anything you didn't find or a report of other people of the same name who are not your ancestor it's not the same as an online family tree and it's certainly not a pile of papers when we record in any research log regardless of the style that we use there are basic pieces of information we want in every research log first of all details of the records that we find names of the people and the witnesses within that record and where that record is where can we find it again the book and the page numbers of say a deed or a will image numbers in in websites urls the website itself maybe the titles of what it's called within that website book titles group numbers within repositories the dates of the record anything that will identify those records uniquely here is a fictitious example found the death record for mary johnson her parents were mr and mrs unk she died in may it was on ancestry well this is an ineffective way to make notes in your log like i said it's fictitious because in fact this was not on ancestry it was transcribed in someone's online tree and ancestry i always want to chase down those sources like this to its original in case there are more clues these notes are ineffective because they don't really say where the fact came from in other words from an ancestry tree the original source again fictitious would have been more like this found the death record from mrs mary johnson her parents were listed as unk probably unknown the informant was james nelson he's known to be the son-in-law she died of thrombosis on 24 january 1909 age 79 at towson baltimore county maryland birthplace listed as philadelphia pennsylvania burial at mount olivet in the city and then i write in brackets isn't that run by the methodist episcopal church so in a research log i can write any notes i want this is a working document for my own thoughts to go down on paper death certificate number oh it's not listed in the in this and i list exactly where i found it what that it's at the maryland state archives what the series number is and the fact that this particular death certificate is viewable at the maryland state archives what the url complete would be and the image number so i can find it again and share it with others this would be an example of more effective log notes so how do we start a research log i started with a very specific goal my project goal has to be focused something like find all my whitman's may not be very effective something more focused like find the parents of james whitman born about 1794 in saratoga county new york is much more effective i put together a paragraph of what i know about the background information and i get that by reviewing all the past research i have on him and putting source citations in it for all the information i know about him i put in all of his known family and dates and places and events and if i don't know something i leave a place blank and let myself know that i don't know it and if my source citation is aunt myrtle told me then that's what i put because i want to know where i got the information so i can evaluate it later when compared with other evidence again the purpose of research logs george santayana said those who cannot remember the past are condemned to repeat it in one of my favorite movies the character dr henry jones said of his grail diary i wrote it down so i didn't have to remember i don't know about you but i have a lot of ancestors i'm working on i can't remember every last thing i do so i write research logs for them because life happens distractions happen and when i have to put them aside i want to go back and be able to start from where i was so paper or plastic in other words should our research logs be written on paper or in word documents well that's up to you and how you process information best personally i prefer word documents and this is why word documents are easiest for me because they're easiest to print and share they're very easy to search by hitting the control button then at the same time pressing f and that's the find feature so if i know that i found aloysius somewhere and he's somewhere in my 17 page research log i can just hit control f and i'll find where else i put aloysius in that research log and it's easy to adjust and reformat now i could use a word document or i can use a specialized program like onenote or scrivener if i'm familiar with those personally i just use word just because it's something i'm familiar with you use what you are familiar with now to the date search style of research logs remember this is a diary of what you searched why you searched for this and what you found this is the most basic and straightforward way to put together a research log and the most commonly used enter things that you searched in the order that you search them you can do each with bullet points or in a table and with any research log you talk it out put in your theories your plans any conflicts in every document with citations now that doesn't mean you need to put in the documents i keep a folder with i keep a separate digital folder with copies of the documents and i always put in my research log that there is a copy of the document in my separate folder and i put in my positive and negative search results so this is a visual of what the first page might look like i have my title at the top of who i'm researching the goal of my research the paragraph of my background information and then just one at a time by bullets what i'm searching in when i search it i just write down every time i go back in and search and so if i have to put it down i can come back in anytime so let's get a research log started one step at a time first gather your documents your papers your photographs online trees digital files get them all together create a title with your ancestor's name we're going to identify a goal fill in our ancestor background cite our sources research and write this is a fictitious ancestor we'll start with our title research log for edwin irwin porter and we'll just start with i like to put when they're born and died and where they're basically from if you want to put more than that sometimes i put in the spouse's names whatever you like then i add on the goal discover if erwin served in the civil war and married before the end of the war next background information erwin porter was born about 1846 to abel r porter and mary l thomas probably in charleston tioga county pennsylvania he lived with his family in that city in 1850 and 1860 but was not with them in 1870 the civil war started in 1861 when edward would have been about 15. and i'm going to tell myself i don't always but in this case i'm going to tell myself where i found this information particularly because i found him in the familysearch family tree and his identity i put in his identification number then i put in that his parents are buried in and realized i didn't know where his parents are buried and i so i just put a line there because i figured if i knew where his parents were buried he might be buried with him and that might be an important clue that would bring me to a conclusion or bring me to my goal so anytime i kind of thought of something like that i i put a blank because i think that that's something important and i like big blanks so that i have those goals to reach or those mini goals to help me to my major goal so you'll notice that i have source citations in footnoted numbers and down below underneath my research log maybe in endnotes or in footnotes i prefer footnotes i've got my source citations and they're anecdoted annotated here just you know just for to keep it short for the this lecture but i've got the censuses that i've got that i've referenced and i've got the personal identifier in the family search tree that i've identified but number four you'll see i've got questions and that's perfectly good to do i could put it here i could put it anywhere but i wanted to know where are they buried maybe edward is buried with them this is a working document something that you are just putting your brain on paper now i'm going to go ahead and start my research we'll start from the top i looked up irwin in the civil war pension index and service record index on ancestry and i didn't find any irwin from pennsylvania so i went next to fold three and this is a very important point in any kind of research we don't stop at one particular index or one website there's a lot of places we can go for the same kind of information because not all indexes are equal the civil war service index of union soldiers on fold three that's where i found an erwin e porter of company g at the 45th pennsylvania infantry but that says to see an original card under irwin with an i a porter and i found that on fold three so what do i do next with that this looked like a long card of a military service record and so i went to family search wiki because if i don't know what something is my first instinct is to find out more about that record where do i find the record what does the record mean what can the record do for my research and one of my favorite things to do is to go to family search wiki to find out more or to go to a reference book that will help me understand the record well family search wiki tells me that civil records for this kind of thing are the national archives in washington dc for the originals i might decide to plan a trip there or hire a researcher a couple days later i found another record and i put it in where i found that irwin e porter of that was buried at the u.s national cemetery intermittent control forms and i found that on ancestry which was interesting because i hadn't found my ancestry before so it's always good to go back to the same websites and try under different categories of record groups that website has i also found him on find a grave under ee porter and that was at the same ex with the same exact unit company g the 43rd pennsylvania infantry the death date was the 15th of july 1864. i later couple days later found a death certificate in an index as e a porter who died 15 july 1864. there's no image it's just an index but it referenced a film 1986474 well when i went to that family history film that film has been digitized and it referenced a new film the digital film which now is a zero zero four zero zero zero nine six zero film so you kind of have to know that family search is digitizing a lot of their films and i found that and i found the image number and that is one of those big log books and it was called philadelphia registration of desk 1964. in that book it showed that no parents were listed only that he died by a gunshot wound and here it is ea porter no age just that he died on the 15th wounds from a gunshot that's it we see that this is the young man who was with that company and so further research can help us to identify if this truly was the son of abel but at this point we we think that if this is the man that we're looking for this is very unlikely to be somebody who was married at the age of 18 when he died so we can continue our research but this is the example here is a straightforward case it doesn't need more complex treatment for its research log so a summary of style one the log by date searched log by date searched is a diary of research they're all a diary of research no matter what style of log you use the negative positive searches without result they all go in there because no matter what you're doing if you can't find it you can't use it and i don't know how many times if i've just gotten excited and followed something and not written it down too many times i've needed that information and not been able to find it again simple word documents are very effective i don't have to get too complicated but what i have to do is stop and write to absorb the information so that i can cite my source understand my source is this just an index or am i looking at an original source and and how was this original source created and under what context did they really is this my porter or is this another one of the same name and really give some analyzation to this i always start each project with a summary of the goal in the background and again this isn't the same as notes in a genealogy program or an online tree this is your whole brain giving the whole project a thorough analyzation well i hope you've enjoyed this part and will join me again for part two of research logs a variety of styles to suit your project thank you you",
+  "attempts": [
+    {
+      "client": "IOS",
+      "playability": {
+        "status": "OK",
+        "playableInEmbed": true,
+        "offlineability": {
+          "buttonRenderer": {
+            "navigationEndpoint": {
+              "clickTrackingParams": "CBIQ6ewBIhMI-q3IiOzblwMVHmtMCB2cKi0CygEEfSW8Hg==",
+              "ypcGetOfflineUpsellEndpoint": {
+                "params": "ChPqqN25AQ0KC1BmcWlEbUxuTUlnIgtQZnFpRG1Mbk1JZyoVCAkYAVIPCgtQZnFpRG1Mbk1JZyAB"
+              }
+            },
+            "trackingParams": "CBIQ6ewBIhMI-q3IiOzblwMVHmtMCB2cKi0C"
+          }
+        },
+        "pictureInPicture": {
+          "pictureInPictureRenderer": {
+            "playableInPip": true,
+            "offByDefault": false,
+            "shouldResumeOnHead": false
+          }
+        },
+        "miniplayer": {
+          "miniplayerRenderer": {
+            "playbackMode": "PLAYBACK_MODE_ALLOW"
+          }
+        },
+        "contextParams": "Q0FFU0FnZ0M="
+      },
+      "outcome": "ok"
+    }
+  ],
+  "fetched_at": "2026-10-28T04:11:15.610343+00:00",
+  "client": "IOS",
+  "json_path": "transcripts/019_PfqiDmLnMIg.json",
+  "text_path": "transcripts/019_PfqiDmLnMIg.txt"
+}

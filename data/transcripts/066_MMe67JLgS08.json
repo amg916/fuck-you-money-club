@@ -1,0 +1,4305 @@
+{
+  "index": 66,
+  "url": "https://www.youtube.com/watch?v=MMe67JLgS08",
+  "video_id": "MMe67JLgS08",
+  "status": "ok",
+  "metadata": {
+    "title": "FamilySearch Catalog: Digging Deeper – Christine Moss Pack (26 September 2024)",
+    "author": "BYU Library Family History Center",
+    "channelId": "UC7hqNOQt-2AfeVEpDuc7sCA",
+    "lengthSeconds": "2549",
+    "viewCount": "776",
+    "shortDescription": "Christine Moss Pack goes over ways to navigate the FamilySearch catalog. \nFor more information: https://familyhistory.lib.byu.edu/all-webinars/familysearch-catalog-digging-deeper",
+    "keywords": [
+      "BYU",
+      "Webinar",
+      "Family History",
+      "Library",
+      "Genealogy",
+      "Ancestor"
+    ]
+  },
+  "caption_tracks": [
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=MMe67JLgS08&ei=63XhaoXnGseUsfIPzJKIIA&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185883&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=26F545DFDDEB5BF407747CE612A54E8DD626998E.BE87076A74B2EB620F83B95FDE74E0CF548181CF&key=yt8&kind=asr&lang=en",
+      "name": {
+        "runs": [
+          {
+            "text": "English (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.en",
+      "languageCode": "en",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    }
+  ],
+  "selected_track": {
+    "baseUrl": "https://www.youtube.com/api/timedtext?v=MMe67JLgS08&ei=63XhaoXnGseUsfIPzJKIIA&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185883&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=26F545DFDDEB5BF407747CE612A54E8DD626998E.BE87076A74B2EB620F83B95FDE74E0CF548181CF&key=yt8&kind=asr&lang=en",
+    "name": {
+      "runs": [
+        {
+          "text": "English (auto-generated)"
+        }
+      ]
+    },
+    "vssId": "a.en",
+    "languageCode": "en",
+    "kind": "asr",
+    "isTranslatable": true,
+    "trackName": ""
+  },
+  "segments": [
+    {
+      "start": 0.24,
+      "duration": 3.12,
+      "text": "welcome to the BYU Library family"
+    },
+    {
+      "start": 1.8,
+      "duration": 3.88,
+      "text": "history webinar we're glad you could"
+    },
+    {
+      "start": 3.36,
+      "duration": 4.559,
+      "text": "join us today my name is Olivia tuler"
+    },
+    {
+      "start": 5.68,
+      "duration": 3.64,
+      "text": "and I'll be your host for this webinar"
+    },
+    {
+      "start": 7.919,
+      "duration": 3.041,
+      "text": "if you have technical difficulties"
+    },
+    {
+      "start": 9.32,
+      "duration": 3.92,
+      "text": "during the webinar please use the chat"
+    },
+    {
+      "start": 10.96,
+      "duration": 3.879,
+      "text": "box that I can address your concerns"
+    },
+    {
+      "start": 13.24,
+      "duration": 3.28,
+      "text": "you're welcome to use the chat box"
+    },
+    {
+      "start": 14.839,
+      "duration": 3.841,
+      "text": "during the webinar for comments insights"
+    },
+    {
+      "start": 16.52,
+      "duration": 3.679,
+      "text": "and questions however all questions will"
+    },
+    {
+      "start": 18.68,
+      "duration": 3.64,
+      "text": "be addressed at the end of the"
+    },
+    {
+      "start": 20.199,
+      "duration": 4.361,
+      "text": "presentation our next webinar is on"
+    },
+    {
+      "start": 22.32,
+      "duration": 5.44,
+      "text": "October 3rd with James Taylor on don't"
+    },
+    {
+      "start": 24.56,
+      "duration": 4.799,
+      "text": "be haunted by genealogical MTH if you"
+    },
+    {
+      "start": 27.76,
+      "duration": 3.8,
+      "text": "would like to access a previous webinar"
+    },
+    {
+      "start": 29.359,
+      "duration": 4.161,
+      "text": "of ours please visit our webinar index"
+    },
+    {
+      "start": 31.56,
+      "duration": 4.44,
+      "text": "on our website or search on our YouTube"
+    },
+    {
+      "start": 33.52,
+      "duration": 4.199,
+      "text": "channel all of our webinars are recorded"
+    },
+    {
+      "start": 36.0,
+      "duration": 4.2,
+      "text": "and uploaded by the following Monday for"
+    },
+    {
+      "start": 37.719,
+      "duration": 4.041,
+      "text": "your convenience we also post links to"
+    },
+    {
+      "start": 40.2,
+      "duration": 3.76,
+      "text": "recordings and other updates on our"
+    },
+    {
+      "start": 41.76,
+      "duration": 3.84,
+      "text": "Facebook and Twitter accounts for"
+    },
+    {
+      "start": 43.96,
+      "duration": 4.079,
+      "text": "today's webinar we are pleased to hear"
+    },
+    {
+      "start": 45.6,
+      "duration": 5.4,
+      "text": "from Christin Moss Pac on the family"
+    },
+    {
+      "start": 48.039,
+      "duration": 4.561,
+      "text": "search catalog digging deeper before we"
+    },
+    {
+      "start": 51.0,
+      "duration": 3.76,
+      "text": "begin here's a little bit about"
+    },
+    {
+      "start": 52.6,
+      "duration": 3.92,
+      "text": "Christine Christin gained the love of"
+    },
+    {
+      "start": 54.76,
+      "duration": 3.68,
+      "text": "genealogy as a teenager from some"
+    },
+    {
+      "start": 56.52,
+      "duration": 3.48,
+      "text": "dedicated Sunday school teachers who"
+    },
+    {
+      "start": 58.44,
+      "duration": 4.04,
+      "text": "encouraged her to index from printed"
+    },
+    {
+      "start": 60.0,
+      "duration": 5.199,
+      "text": "document images on 3x5 cards and there"
+    },
+    {
+      "start": 62.48,
+      "duration": 4.44,
+      "text": "was food almost a decade later she"
+    },
+    {
+      "start": 65.199,
+      "duration": 3.121,
+      "text": "graduated from Bram Young University"
+    },
+    {
+      "start": 66.92,
+      "duration": 4.04,
+      "text": "with a bachelor's degree in family"
+    },
+    {
+      "start": 68.32,
+      "duration": 4.439,
+      "text": "history genealogy before too long she"
+    },
+    {
+      "start": 70.96,
+      "duration": 3.199,
+      "text": "was in the Throgs of motherhood she"
+    },
+    {
+      "start": 72.759,
+      "duration": 2.761,
+      "text": "found that being a stay-at-home mom"
+    },
+    {
+      "start": 74.159,
+      "duration": 3.521,
+      "text": "brought her the greatest satisfaction"
+    },
+    {
+      "start": 75.52,
+      "duration": 3.599,
+      "text": "and joy so she put her career on hold"
+    },
+    {
+      "start": 77.68,
+      "duration": 3.72,
+      "text": "while she raised her five independent"
+    },
+    {
+      "start": 79.119,
+      "duration": 4.281,
+      "text": "children she stayed active in the family"
+    },
+    {
+      "start": 81.4,
+      "duration": 3.8,
+      "text": "history world as a presenter Sunday"
+    },
+    {
+      "start": 83.4,
+      "duration": 4.64,
+      "text": "school teacher Community volunteer and"
+    },
+    {
+      "start": 85.2,
+      "duration": 5.239,
+      "text": "helper she hired on as an a faculty"
+    },
+    {
+      "start": 88.04,
+      "duration": 3.92,
+      "text": "member at Buu Idaho a few years ago"
+    },
+    {
+      "start": 90.439,
+      "duration": 3.761,
+      "text": "something she could do while so caring"
+    },
+    {
+      "start": 91.96,
+      "duration": 3.88,
+      "text": "for the last of her children currently"
+    },
+    {
+      "start": 94.2,
+      "duration": 4.32,
+      "text": "she lives in Utah County and enjoys"
+    },
+    {
+      "start": 95.84,
+      "duration": 3.88,
+      "text": "gazing at her Majestic mountains and"
+    },
+    {
+      "start": 98.52,
+      "duration": 4.52,
+      "text": "we'll now turn the time over to"
+    },
+    {
+      "start": 99.72,
+      "duration": 6.24,
+      "text": "Christine to share her screen hi so yes"
+    },
+    {
+      "start": 103.04,
+      "duration": 7.24,
+      "text": "I am Christine Moss Pac"
+    },
+    {
+      "start": 105.96,
+      "duration": 7.799,
+      "text": "and I am privileged and feel honored to"
+    },
+    {
+      "start": 110.28,
+      "duration": 4.799,
+      "text": "be part of this webinar series at BYU"
+    },
+    {
+      "start": 113.759,
+      "duration": 4.4,
+      "text": "found my History"
+    },
+    {
+      "start": 115.079,
+      "duration": 5.521,
+      "text": "Center um as you heard from my bio I"
+    },
+    {
+      "start": 118.159,
+      "duration": 4.401,
+      "text": "have a deep love for genealogy and I'm"
+    },
+    {
+      "start": 120.6,
+      "duration": 5.6,
+      "text": "grateful to have been able to stay"
+    },
+    {
+      "start": 122.56,
+      "duration": 5.28,
+      "text": "active in it while raising a family I"
+    },
+    {
+      "start": 126.2,
+      "duration": 6.6,
+      "text": "know that's can be"
+    },
+    {
+      "start": 127.84,
+      "duration": 8.6,
+      "text": "hard but I have enjoyed staying up to"
+    },
+    {
+      "start": 132.8,
+      "duration": 8.68,
+      "text": "date um and because when I started you"
+    },
+    {
+      "start": 136.44,
+      "duration": 7.84,
+      "text": "know in my field at BYU Provo I they"
+    },
+    {
+      "start": 141.48,
+      "duration": 4.44,
+      "text": "didn't have the use of computers and so"
+    },
+    {
+      "start": 144.28,
+      "duration": 4.8,
+      "text": "that has been a"
+    },
+    {
+      "start": 145.92,
+      "duration": 4.52,
+      "text": "big big gap to fill but I've enjoyed"
+    },
+    {
+      "start": 149.08,
+      "duration": 5.64,
+      "text": "getting"
+    },
+    {
+      "start": 150.44,
+      "duration": 6.04,
+      "text": "um on board with all of the fun"
+    },
+    {
+      "start": 154.72,
+      "duration": 5.84,
+      "text": "tools"
+    },
+    {
+      "start": 156.48,
+      "duration": 6.399,
+      "text": "um I call my family a living genealogy"
+    },
+    {
+      "start": 160.56,
+      "duration": 6.92,
+      "text": "because they are the most important"
+    },
+    {
+      "start": 162.879,
+      "duration": 8.881,
+      "text": "right now and family history is and"
+    },
+    {
+      "start": 167.48,
+      "duration": 4.28,
+      "text": "genealogy is about"
+    },
+    {
+      "start": 173.08,
+      "duration": 7.48,
+      "text": "family you might get a kick out of this"
+    },
+    {
+      "start": 176.319,
+      "duration": 6.84,
+      "text": "picture it's my husband who dug"
+    },
+    {
+      "start": 180.56,
+      "duration": 6.52,
+      "text": "uh a spot in our yard to put an"
+    },
+    {
+      "start": 183.159,
+      "duration": 6.041,
+      "text": "aquaponics Pond or a greenhouse so but I"
+    },
+    {
+      "start": 187.08,
+      "duration": 6.36,
+      "text": "thought it would fit right in with our"
+    },
+    {
+      "start": 189.2,
+      "duration": 4.24,
+      "text": "topic of family search catalog digging"
+    },
+    {
+      "start": 193.799,
+      "duration": 7.201,
+      "text": "deeper my objective is to increase your"
+    },
+    {
+      "start": 197.319,
+      "duration": 6.161,
+      "text": "desire and love for research by digging"
+    },
+    {
+      "start": 201.0,
+      "duration": 6.959,
+      "text": "deeper into the family search"
+    },
+    {
+      "start": 203.48,
+      "duration": 7.28,
+      "text": "catalog as we seek to find our people I"
+    },
+    {
+      "start": 207.959,
+      "duration": 7.0,
+      "text": "say our people because I'm fond of them"
+    },
+    {
+      "start": 210.76,
+      "duration": 7.759,
+      "text": "I know you probably are"
+    },
+    {
+      "start": 214.959,
+      "duration": 5.401,
+      "text": "too and just as a kind of overviewer"
+    },
+    {
+      "start": 218.519,
+      "duration": 4.521,
+      "text": "outline I will"
+    },
+    {
+      "start": 220.36,
+      "duration": 5.56,
+      "text": "be basically contrasting the difference"
+    },
+    {
+      "start": 223.04,
+      "duration": 5.759,
+      "text": "between searching from the main records"
+    },
+    {
+      "start": 225.92,
+      "duration": 5.28,
+      "text": "page through family search versus"
+    },
+    {
+      "start": 228.799,
+      "duration": 6.041,
+      "text": "getting into the whole family search"
+    },
+    {
+      "start": 231.2,
+      "duration": 6.599,
+      "text": "catalog and then you'll also"
+    },
+    {
+      "start": 234.84,
+      "duration": 6.84,
+      "text": "see all the many options the catalog"
+    },
+    {
+      "start": 237.799,
+      "duration": 8.921,
+      "text": "search offers and how it applies you"
+    },
+    {
+      "start": 241.68,
+      "duration": 5.04,
+      "text": "know in a pseudo research"
+    },
+    {
+      "start": 249.04,
+      "duration": 6.479,
+      "text": "project I call it scratching the surface"
+    },
+    {
+      "start": 252.159,
+      "duration": 8.48,
+      "text": "when we go to say our"
+    },
+    {
+      "start": 255.519,
+      "duration": 9.561,
+      "text": "ancestors personal page and we look to"
+    },
+    {
+      "start": 260.639,
+      "duration": 8.441,
+      "text": "our right and and notice any research"
+    },
+    {
+      "start": 265.08,
+      "duration": 5.28,
+      "text": "helps um this particular relative does"
+    },
+    {
+      "start": 269.08,
+      "duration": 4.559,
+      "text": "not have any"
+    },
+    {
+      "start": 270.36,
+      "duration": 5.08,
+      "text": "any actual like records listed under her"
+    },
+    {
+      "start": 273.639,
+      "duration": 5.801,
+      "text": "but that that's where you would find any"
+    },
+    {
+      "start": 275.44,
+      "duration": 5.96,
+      "text": "that family search had automatically"
+    },
+    {
+      "start": 279.44,
+      "duration": 6.88,
+      "text": "populated"
+    },
+    {
+      "start": 281.4,
+      "duration": 6.96,
+      "text": "um I also tend to go to the easy access"
+    },
+    {
+      "start": 286.32,
+      "duration": 5.04,
+      "text": "search"
+    },
+    {
+      "start": 288.36,
+      "duration": 4.64,
+      "text": "records um window that shows me all the"
+    },
+    {
+      "start": 291.36,
+      "duration": 5.44,
+      "text": "different places I might be able to find"
+    },
+    {
+      "start": 293.0,
+      "duration": 7.8,
+      "text": "records for my ancestor in and and it"
+    },
+    {
+      "start": 296.8,
+      "duration": 4.0,
+      "text": "takes me directly there"
+    },
+    {
+      "start": 305.08,
+      "duration": 4.88,
+      "text": "um I believe that these are for the"
+    },
+    {
+      "start": 307.28,
+      "duration": 4.72,
+      "text": "benefit of just you know like I said"
+    },
+    {
+      "start": 309.96,
+      "duration": 5.76,
+      "text": "scratching the surface and making it so"
+    },
+    {
+      "start": 312.0,
+      "duration": 6.84,
+      "text": "that people don't have to to know as"
+    },
+    {
+      "start": 315.72,
+      "duration": 5.44,
+      "text": "much at the beginning and then as we get"
+    },
+    {
+      "start": 318.84,
+      "duration": 5.84,
+      "text": "more familiar with genealogy then we can"
+    },
+    {
+      "start": 321.16,
+      "duration": 5.479,
+      "text": "dig a Little Deeper um most of these"
+    },
+    {
+      "start": 324.68,
+      "duration": 5.44,
+      "text": "standard"
+    },
+    {
+      "start": 326.639,
+      "duration": 7.801,
+      "text": "searches are"
+    },
+    {
+      "start": 330.12,
+      "duration": 6.72,
+      "text": "going to look like what I will um go"
+    },
+    {
+      "start": 334.44,
+      "duration": 5.0,
+      "text": "over in this"
+    },
+    {
+      "start": 336.84,
+      "duration": 5.919,
+      "text": "presentation so what does it look like"
+    },
+    {
+      "start": 339.44,
+      "duration": 7.92,
+      "text": "with family search well if we go"
+    },
+    {
+      "start": 342.759,
+      "duration": 8.601,
+      "text": "to the family search page and"
+    },
+    {
+      "start": 347.36,
+      "duration": 6.52,
+      "text": "we click select the search menu you'll"
+    },
+    {
+      "start": 351.36,
+      "duration": 4.92,
+      "text": "see that records is the first option on"
+    },
+    {
+      "start": 353.88,
+      "duration": 4.599,
+      "text": "that menu and that takes you to this"
+    },
+    {
+      "start": 356.28,
+      "duration": 3.96,
+      "text": "search historical records page that you"
+    },
+    {
+      "start": 358.479,
+      "duration": 4.041,
+      "text": "see behind it"
+    },
+    {
+      "start": 360.24,
+      "duration": 4.679,
+      "text": "with a with a"
+    },
+    {
+      "start": 362.52,
+      "duration": 6.32,
+      "text": "basic"
+    },
+    {
+      "start": 364.919,
+      "duration": 7.84,
+      "text": "um ability to type in names and a place"
+    },
+    {
+      "start": 368.84,
+      "duration": 5.88,
+      "text": "and maybe a date and then family search"
+    },
+    {
+      "start": 372.759,
+      "duration": 5.201,
+      "text": "will"
+    },
+    {
+      "start": 374.72,
+      "duration": 5.479,
+      "text": "then um show us results for all of those"
+    },
+    {
+      "start": 377.96,
+      "duration": 3.679,
+      "text": "different for for our relative and"
+    },
+    {
+      "start": 380.199,
+      "duration": 3.201,
+      "text": "different records that they have in"
+    },
+    {
+      "start": 381.639,
+      "duration": 5.0,
+      "text": "their"
+    },
+    {
+      "start": 383.4,
+      "duration": 5.32,
+      "text": "database we can even search more"
+    },
+    {
+      "start": 386.639,
+      "duration": 3.641,
+      "text": "specifically by clicking on the more"
+    },
+    {
+      "start": 388.72,
+      "duration": 3.919,
+      "text": "option"
+    },
+    {
+      "start": 390.28,
+      "duration": 8.479,
+      "text": "link down at the bottom and that just"
+    },
+    {
+      "start": 392.639,
+      "duration": 9.881,
+      "text": "brings up more fields to add information"
+    },
+    {
+      "start": 398.759,
+      "duration": 6.16,
+      "text": "and other people spouses maybe a"
+    },
+    {
+      "start": 402.52,
+      "duration": 5.679,
+      "text": "different life event"
+    },
+    {
+      "start": 404.919,
+      "duration": 6.201,
+      "text": "Etc that just so that just is going to"
+    },
+    {
+      "start": 408.199,
+      "duration": 4.881,
+      "text": "refine or filter our search even more"
+    },
+    {
+      "start": 411.12,
+      "duration": 5.0,
+      "text": "but it's still a basic level of"
+    },
+    {
+      "start": 413.08,
+      "duration": 6.08,
+      "text": "searching and it will give"
+    },
+    {
+      "start": 416.12,
+      "duration": 5.4,
+      "text": "us everything that family search has"
+    },
+    {
+      "start": 419.16,
+      "duration": 5.159,
+      "text": "trans transcribed or"
+    },
+    {
+      "start": 421.52,
+      "duration": 5.56,
+      "text": "indexed so that's my basic emphasis for"
+    },
+    {
+      "start": 424.319,
+      "duration": 8.241,
+      "text": "this presentation is that when you're"
+    },
+    {
+      "start": 427.08,
+      "duration": 7.88,
+      "text": "searching in this um particular"
+    },
+    {
+      "start": 432.56,
+      "duration": 4.56,
+      "text": "records page or on this particular"
+    },
+    {
+      "start": 434.96,
+      "duration": 5.639,
+      "text": "records page it is searching only what's"
+    },
+    {
+      "start": 437.12,
+      "duration": 6.28,
+      "text": "been transcribed and indexed thus"
+    },
+    {
+      "start": 440.599,
+      "duration": 5.28,
+      "text": "far and just as a kind of a heads up if"
+    },
+    {
+      "start": 443.4,
+      "duration": 5.6,
+      "text": "we scroll down this"
+    },
+    {
+      "start": 445.879,
+      "duration": 4.16,
+      "text": "page you'll find that there are a few"
+    },
+    {
+      "start": 449.0,
+      "duration": 2.919,
+      "text": "ways to"
+    },
+    {
+      "start": 450.039,
+      "duration": 5.88,
+      "text": "to dig a Little Deeper but I call it"
+    },
+    {
+      "start": 451.919,
+      "duration": 7.441,
+      "text": "shallow digging so you might"
+    },
+    {
+      "start": 455.919,
+      "duration": 7.481,
+      "text": "see the search field for finding a"
+    },
+    {
+      "start": 459.36,
+      "duration": 8.559,
+      "text": "collection and it sends you to enter a"
+    },
+    {
+      "start": 463.4,
+      "duration": 7.0,
+      "text": "place that your ancestor may be in um"
+    },
+    {
+      "start": 467.919,
+      "duration": 5.84,
+      "text": "and as you know notice it"
+    },
+    {
+      "start": 470.4,
+      "duration": 5.479,
+      "text": "says or sorry I got ahead of myself so"
+    },
+    {
+      "start": 473.759,
+      "duration": 5.321,
+      "text": "you'll find in the find a collection it"
+    },
+    {
+      "start": 475.879,
+      "duration": 8.16,
+      "text": "will it will search for a specific"
+    },
+    {
+      "start": 479.08,
+      "duration": 8.16,
+      "text": "collection so when I type in um probate"
+    },
+    {
+      "start": 484.039,
+      "duration": 7.0,
+      "text": "records for San PE County it will take"
+    },
+    {
+      "start": 487.24,
+      "duration": 7.0,
+      "text": "me to any matches that it has and the"
+    },
+    {
+      "start": 491.039,
+      "duration": 6.481,
+      "text": "collection for that County and then it"
+    },
+    {
+      "start": 494.24,
+      "duration": 5.519,
+      "text": "will have me again repeat the process of"
+    },
+    {
+      "start": 497.52,
+      "duration": 4.16,
+      "text": "putting in names and dates and places"
+    },
+    {
+      "start": 499.759,
+      "duration": 2.84,
+      "text": "again and then it will search just in"
+    },
+    {
+      "start": 501.68,
+      "duration": 2.88,
+      "text": "that"
+    },
+    {
+      "start": 502.599,
+      "duration": 5.921,
+      "text": "collection there's"
+    },
+    {
+      "start": 504.56,
+      "duration": 7.599,
+      "text": "also if you um scroll even further down"
+    },
+    {
+      "start": 508.52,
+      "duration": 6.48,
+      "text": "there's a field called search by place"
+    },
+    {
+      "start": 512.159,
+      "duration": 5.24,
+      "text": "and it will take you to the country or"
+    },
+    {
+      "start": 515.0,
+      "duration": 6.719,
+      "text": "Province or state that you feel like"
+    },
+    {
+      "start": 517.399,
+      "duration": 5.921,
+      "text": "your relative is in and and then again"
+    },
+    {
+      "start": 521.719,
+      "duration": 4.721,
+      "text": "once again you'll type in all of the"
+    },
+    {
+      "start": 523.32,
+      "duration": 5.959,
+      "text": "fields for that"
+    },
+    {
+      "start": 526.44,
+      "duration": 5.32,
+      "text": "ancestor um so that you can search only"
+    },
+    {
+      "start": 529.279,
+      "duration": 5.161,
+      "text": "in that specified"
+    },
+    {
+      "start": 531.76,
+      "duration": 5.519,
+      "text": "location so what does the family search"
+    },
+    {
+      "start": 534.44,
+      "duration": 6.839,
+      "text": "catalog"
+    },
+    {
+      "start": 537.279,
+      "duration": 4.0,
+      "text": "offer um"
+    },
+    {
+      "start": 542.959,
+      "duration": 6.281,
+      "text": "well instead of limiting our searches to"
+    },
+    {
+      "start": 545.04,
+      "duration": 6.52,
+      "text": "just the index material we can access"
+    },
+    {
+      "start": 549.24,
+      "duration": 3.599,
+      "text": "all of the Holdings found found at"
+    },
+    {
+      "start": 551.56,
+      "duration": 4.839,
+      "text": "family"
+    },
+    {
+      "start": 552.839,
+      "duration": 6.12,
+      "text": "search and at the family search Library"
+    },
+    {
+      "start": 556.399,
+      "duration": 4.68,
+      "text": "family search has more material they are"
+    },
+    {
+      "start": 558.959,
+      "duration": 6.0,
+      "text": "digitizing and collecting than can"
+    },
+    {
+      "start": 561.079,
+      "duration": 5.601,
+      "text": "possibly be transcribed in a timely way"
+    },
+    {
+      "start": 564.959,
+      "duration": 6.401,
+      "text": "so there are many items that can't be"
+    },
+    {
+      "start": 566.68,
+      "duration": 4.68,
+      "text": "searched in the usual way these items"
+    },
+    {
+      "start": 571.399,
+      "duration": 2.521,
+      "text": "include"
+    },
+    {
+      "start": 572.42,
+      "duration": 5.02,
+      "text": "[Music]"
+    },
+    {
+      "start": 573.92,
+      "duration": 5.64,
+      "text": "um microfilms magazines online and"
+    },
+    {
+      "start": 577.44,
+      "duration": 4.0,
+      "text": "offline collections"
+    },
+    {
+      "start": 579.56,
+      "duration": 5.2,
+      "text": "books"
+    },
+    {
+      "start": 581.44,
+      "duration": 5.399,
+      "text": "Maps anything that a library would would"
+    },
+    {
+      "start": 584.76,
+      "duration": 4.759,
+      "text": "collect for their physical Library"
+    },
+    {
+      "start": 586.839,
+      "duration": 5.68,
+      "text": "location as well as online"
+    },
+    {
+      "start": 589.519,
+      "duration": 3.0,
+      "text": "digitized"
+    },
+    {
+      "start": 593.44,
+      "duration": 4.48,
+      "text": "collections the family search catalog"
+    },
+    {
+      "start": 595.72,
+      "duration": 5.16,
+      "text": "gives us the ability to search those"
+    },
+    {
+      "start": 597.92,
+      "duration": 4.919,
+      "text": "items that have not been transcribed"
+    },
+    {
+      "start": 600.88,
+      "duration": 5.399,
+      "text": "into searchable form you'll notice that"
+    },
+    {
+      "start": 602.839,
+      "duration": 5.321,
+      "text": "I've been saying that over and over and"
+    },
+    {
+      "start": 606.279,
+      "duration": 4.081,
+      "text": "because that's where we're going to get"
+    },
+    {
+      "start": 608.16,
+      "duration": 5.64,
+      "text": "to it might feel like you're going back"
+    },
+    {
+      "start": 610.36,
+      "duration": 5.68,
+      "text": "to the methods we used pre computer era"
+    },
+    {
+      "start": 613.8,
+      "duration": 5.4,
+      "text": "which I'm very familiar with in my"
+    },
+    {
+      "start": 616.04,
+      "duration": 5.56,
+      "text": "degree at BYU but we still search for"
+    },
+    {
+      "start": 619.2,
+      "duration": 5.96,
+      "text": "any item but we can still search for any"
+    },
+    {
+      "start": 621.6,
+      "duration": 5.359,
+      "text": "item in the catalog via the Internet on"
+    },
+    {
+      "start": 625.16,
+      "duration": 4.52,
+      "text": "their family search"
+    },
+    {
+      "start": 626.959,
+      "duration": 6.801,
+      "text": "website there are many records that can"
+    },
+    {
+      "start": 629.68,
+      "duration": 7.88,
+      "text": "even be seen in digital format so"
+    },
+    {
+      "start": 633.76,
+      "duration": 6.8,
+      "text": "records that um may not have like I said"
+    },
+    {
+      "start": 637.56,
+      "duration": 6.959,
+      "text": "been transcribed or index but they are"
+    },
+    {
+      "start": 640.56,
+      "duration": 6.48,
+      "text": "still available to Us online for"
+    },
+    {
+      "start": 644.519,
+      "duration": 4.601,
+      "text": "example or for example you may be able"
+    },
+    {
+      "start": 647.04,
+      "duration": 5.359,
+      "text": "to get a book from the"
+    },
+    {
+      "start": 649.12,
+      "duration": 6.839,
+      "text": "library um and have it inter Library"
+    },
+    {
+      "start": 652.399,
+      "duration": 6.161,
+      "text": "loaned to a to another library in your"
+    },
+    {
+      "start": 655.959,
+      "duration": 4.081,
+      "text": "community if that's a possibility"
+    },
+    {
+      "start": 658.56,
+      "duration": 4.48,
+      "text": "sometimes it's not"
+    },
+    {
+      "start": 660.04,
+      "duration": 6.52,
+      "text": "there's also collections that family"
+    },
+    {
+      "start": 663.04,
+      "duration": 7.12,
+      "text": "search centers around the world have um"
+    },
+    {
+      "start": 666.56,
+      "duration": 7.56,
+      "text": "put together that you can also visit one"
+    },
+    {
+      "start": 670.16,
+      "duration": 6.359,
+      "text": "of those sites and and find those"
+    },
+    {
+      "start": 674.12,
+      "duration": 4.92,
+      "text": "materials while we patiently wait for"
+    },
+    {
+      "start": 676.519,
+      "duration": 4.521,
+      "text": "the time and manpower to chip away at"
+    },
+    {
+      "start": 679.04,
+      "duration": 5.12,
+      "text": "the many records being"
+    },
+    {
+      "start": 681.04,
+      "duration": 6.76,
+      "text": "collected by family search we can look"
+    },
+    {
+      "start": 684.16,
+      "duration": 7.08,
+      "text": "for the harder records to find and dig"
+    },
+    {
+      "start": 687.8,
+      "duration": 3.44,
+      "text": "even that much deeper"
+    },
+    {
+      "start": 692.2,
+      "duration": 5.48,
+      "text": "so as I showed you before you can get to"
+    },
+    {
+      "start": 694.079,
+      "duration": 6.681,
+      "text": "the catalog by selecting the search Tab"
+    },
+    {
+      "start": 697.68,
+      "duration": 6.64,
+      "text": "and clicking on the"
+    },
+    {
+      "start": 700.76,
+      "duration": 3.56,
+      "text": "catalog item in the"
+    },
+    {
+      "start": 705.16,
+      "duration": 4.6,
+      "text": "menu I'll quickly outline the parts of"
+    },
+    {
+      "start": 707.72,
+      "duration": 6.28,
+      "text": "the family search"
+    },
+    {
+      "start": 709.76,
+      "duration": 7.4,
+      "text": "catalog page and you'll notice that"
+    },
+    {
+      "start": 714.0,
+      "duration": 6.959,
+      "text": "there's now at the top of this"
+    },
+    {
+      "start": 717.16,
+      "duration": 5.08,
+      "text": "page uh"
+    },
+    {
+      "start": 720.959,
+      "duration": 3.721,
+      "text": "a new"
+    },
+    {
+      "start": 722.24,
+      "duration": 5.12,
+      "text": "subcategory bar I would call"
+    },
+    {
+      "start": 724.68,
+      "duration": 6.2,
+      "text": "it underneath the"
+    },
+    {
+      "start": 727.36,
+      "duration": 7.56,
+      "text": "original and it has all of"
+    },
+    {
+      "start": 730.88,
+      "duration": 6.319,
+      "text": "your search menu options listed across"
+    },
+    {
+      "start": 734.92,
+      "duration": 5.76,
+      "text": "the top now that's just a side"
+    },
+    {
+      "start": 737.199,
+      "duration": 6.521,
+      "text": "note okay so if you're looking at the"
+    },
+    {
+      "start": 740.68,
+      "duration": 7.48,
+      "text": "family search catalog page you'll notice"
+    },
+    {
+      "start": 743.72,
+      "duration": 7.799,
+      "text": "that it starts with search by"
+    },
+    {
+      "start": 748.16,
+      "duration": 7.2,
+      "text": "place and each time you select one of"
+    },
+    {
+      "start": 751.519,
+      "duration": 7.56,
+      "text": "the CATE one of the search options it"
+    },
+    {
+      "start": 755.36,
+      "duration": 5.8,
+      "text": "will change this field"
+    },
+    {
+      "start": 759.079,
+      "duration": 5.681,
+      "text": "position and but we're going to start"
+    },
+    {
+      "start": 761.16,
+      "duration": 7.52,
+      "text": "with paid place so for place you'll find"
+    },
+    {
+      "start": 764.76,
+      "duration": 5.8,
+      "text": "records by places obviously from and you"
+    },
+    {
+      "start": 768.68,
+      "duration": 3.36,
+      "text": "can go from the largest jurisdiction all"
+    },
+    {
+      "start": 770.56,
+      "duration": 3.8,
+      "text": "the way down to the smallest"
+    },
+    {
+      "start": 772.04,
+      "duration": 5.12,
+      "text": "jurisdiction"
+    },
+    {
+      "start": 774.36,
+      "duration": 6.919,
+      "text": "meaning um if I am researching a"
+    },
+    {
+      "start": 777.16,
+      "duration": 6.039,
+      "text": "relative in say Italy I could either"
+    },
+    {
+      "start": 781.279,
+      "duration": 3.8,
+      "text": "search for"
+    },
+    {
+      "start": 783.199,
+      "duration": 5.161,
+      "text": "them"
+    },
+    {
+      "start": 785.079,
+      "duration": 5.961,
+      "text": "um obviously starting with the entire"
+    },
+    {
+      "start": 788.36,
+      "duration": 6.919,
+      "text": "country or I can narrow it down to"
+    },
+    {
+      "start": 791.04,
+      "duration": 8.08,
+      "text": "smaller provinces or cities or Villages"
+    },
+    {
+      "start": 795.279,
+      "duration": 3.841,
+      "text": "and things like that"
+    },
+    {
+      "start": 799.72,
+      "duration": 6.6,
+      "text": "surnames um gives you the ability to"
+    },
+    {
+      "start": 803.199,
+      "duration": 5.721,
+      "text": "find records by a specific"
+    },
+    {
+      "start": 806.32,
+      "duration": 4.04,
+      "text": "suring oh and I just want to add in here"
+    },
+    {
+      "start": 808.92,
+      "duration": 4.32,
+      "text": "that I will go through each of these"
+    },
+    {
+      "start": 810.36,
+      "duration": 4.479,
+      "text": "options separately in a different slide"
+    },
+    {
+      "start": 813.24,
+      "duration": 3.64,
+      "text": "so you'll get to see examples of each"
+    },
+    {
+      "start": 814.839,
+      "duration": 3.201,
+      "text": "one but for now I just wanted to give"
+    },
+    {
+      "start": 816.88,
+      "duration": 3.04,
+      "text": "you kind of an"
+    },
+    {
+      "start": 818.04,
+      "duration": 5.88,
+      "text": "not"
+    },
+    {
+      "start": 819.92,
+      "duration": 7.039,
+      "text": "then and I just add to the surname that"
+    },
+    {
+      "start": 823.92,
+      "duration": 4.76,
+      "text": "if it's a surname that's obviously"
+    },
+    {
+      "start": 826.959,
+      "duration": 4.961,
+      "text": "common you're not going to have as much"
+    },
+    {
+      "start": 828.68,
+      "duration": 5.2,
+      "text": "luck finding exact things for it but you"
+    },
+    {
+      "start": 831.92,
+      "duration": 5.12,
+      "text": "know the the more unique your name is"
+    },
+    {
+      "start": 833.88,
+      "duration": 5.399,
+      "text": "the the more you'll find in the titles"
+    },
+    {
+      "start": 837.04,
+      "duration": 4.64,
+      "text": "category"
+    },
+    {
+      "start": 839.279,
+      "duration": 4.68,
+      "text": "or the search option um you can search"
+    },
+    {
+      "start": 841.68,
+      "duration": 5.0,
+      "text": "for words that might be found in the"
+    },
+    {
+      "start": 843.959,
+      "duration": 6.281,
+      "text": "actual book title and I'll give you an"
+    },
+    {
+      "start": 846.68,
+      "duration": 5.36,
+      "text": "example of that later in the author"
+    },
+    {
+      "start": 850.24,
+      "duration": 5.08,
+      "text": "option"
+    },
+    {
+      "start": 852.04,
+      "duration": 6.159,
+      "text": "you search for any author of any"
+    },
+    {
+      "start": 855.32,
+      "duration": 6.199,
+      "text": "collection or book that the library"
+    },
+    {
+      "start": 858.199,
+      "duration": 7.601,
+      "text": "has and for subjects you'll you can"
+    },
+    {
+      "start": 861.519,
+      "duration": 9.44,
+      "text": "search for subjects such as migration"
+    },
+    {
+      "start": 865.8,
+      "duration": 8.64,
+      "text": "or there you know comes a time when"
+    },
+    {
+      "start": 870.959,
+      "duration": 3.481,
+      "text": "um you'll find things"
+    },
+    {
+      "start": 877.399,
+      "duration": 5.521,
+      "text": "like you know minority groups or things"
+    },
+    {
+      "start": 880.399,
+      "duration": 5.521,
+      "text": "like that sorry you'll have to bear with"
+    },
+    {
+      "start": 882.92,
+      "duration": 5.479,
+      "text": "me I'm not as good at this PowerPoint"
+    },
+    {
+      "start": 885.92,
+      "duration": 3.24,
+      "text": "presentation as I thought I would be um"
+    },
+    {
+      "start": 888.399,
+      "duration": 4.281,
+      "text": "the"
+    },
+    {
+      "start": 889.16,
+      "duration": 6.32,
+      "text": "keywords search is generally for any"
+    },
+    {
+      "start": 892.68,
+      "duration": 5.959,
+      "text": "word that may help you discover unique"
+    },
+    {
+      "start": 895.48,
+      "duration": 4.2,
+      "text": "records for your ancestor and it's"
+    },
+    {
+      "start": 898.639,
+      "duration": 2.841,
+      "text": "probably"
+    },
+    {
+      "start": 899.68,
+      "duration": 4.159,
+      "text": "what I would consider the most General"
+    },
+    {
+      "start": 901.48,
+      "duration": 5.76,
+      "text": "search you can make in the"
+    },
+    {
+      "start": 903.839,
+      "duration": 6.401,
+      "text": "catalog for example I'll show you later"
+    },
+    {
+      "start": 907.24,
+      "duration": 5.959,
+      "text": "about my search for migrant"
+    },
+    {
+      "start": 910.24,
+      "duration": 5.36,
+      "text": "workers that's something that you know"
+    },
+    {
+      "start": 913.199,
+      "duration": 5.44,
+      "text": "we can't often find just by looking for"
+    },
+    {
+      "start": 915.6,
+      "duration": 6.0,
+      "text": "names and places of"
+    },
+    {
+      "start": 918.639,
+      "duration": 5.601,
+      "text": "ancestors then you'll notice at the"
+    },
+    {
+      "start": 921.6,
+      "duration": 4.679,
+      "text": "bottom well it's kind of the middle of"
+    },
+    {
+      "start": 924.24,
+      "duration": 5.36,
+      "text": "this but the bottom of the"
+    },
+    {
+      "start": 926.279,
+      "duration": 7.321,
+      "text": "area it says search for call number film"
+    },
+    {
+      "start": 929.6,
+      "duration": 8.159,
+      "text": "fish group number Etc Image Group number"
+    },
+    {
+      "start": 933.6,
+      "duration": 6.96,
+      "text": "and those are handy when you you may"
+    },
+    {
+      "start": 937.759,
+      "duration": 6.44,
+      "text": "have looked at a record say previous to"
+    },
+    {
+      "start": 940.56,
+      "duration": 6.719,
+      "text": "This urrent research session and you you"
+    },
+    {
+      "start": 944.199,
+      "duration": 4.721,
+      "text": "would have noticed that a certain film"
+    },
+    {
+      "start": 947.279,
+      "duration": 5.281,
+      "text": "that your ancestors"
+    },
+    {
+      "start": 948.92,
+      "duration": 6.44,
+      "text": "on um may may be useful for a different"
+    },
+    {
+      "start": 952.56,
+      "duration": 7.279,
+      "text": "ancestor say a child or a"
+    },
+    {
+      "start": 955.36,
+      "duration": 6.76,
+      "text": "parent and you can s select that and"
+    },
+    {
+      "start": 959.839,
+      "duration": 6.8,
+      "text": "actually go straight to the same film or"
+    },
+    {
+      "start": 962.12,
+      "duration": 5.959,
+      "text": "F or image group number also if you"
+    },
+    {
+      "start": 966.639,
+      "duration": 3.0,
+      "text": "recently checked out a book from the"
+    },
+    {
+      "start": 968.079,
+      "duration": 3.361,
+      "text": "library and have the call number and you"
+    },
+    {
+      "start": 969.639,
+      "duration": 4.921,
+      "text": "want to go right straight back to that"
+    },
+    {
+      "start": 971.44,
+      "duration": 5.28,
+      "text": "call number you can use that feature as"
+    },
+    {
+      "start": 974.56,
+      "duration": 5.32,
+      "text": "well and then the last thing on this"
+    },
+    {
+      "start": 976.72,
+      "duration": 6.119,
+      "text": "page it has the"
+    },
+    {
+      "start": 979.88,
+      "duration": 7.399,
+      "text": "availability"
+    },
+    {
+      "start": 982.839,
+      "duration": 6.081,
+      "text": "and that comes into play when say like I"
+    },
+    {
+      "start": 987.279,
+      "duration": 4.601,
+      "text": "talked about before when the family"
+    },
+    {
+      "start": 988.92,
+      "duration": 6.56,
+      "text": "search centers have their own"
+    },
+    {
+      "start": 991.88,
+      "duration": 6.12,
+      "text": "collections if you feel like you know"
+    },
+    {
+      "start": 995.48,
+      "duration": 5.52,
+      "text": "I'm I'm living in this space and I need"
+    },
+    {
+      "start": 998.0,
+      "duration": 4.319,
+      "text": "only the stuff that I can access in the"
+    },
+    {
+      "start": 1001.0,
+      "duration": 3.92,
+      "text": "family search center then you're going"
+    },
+    {
+      "start": 1002.319,
+      "duration": 4.801,
+      "text": "to go to and maybe"
+    },
+    {
+      "start": 1004.92,
+      "duration": 3.919,
+      "text": "select when you're searching that you"
+    },
+    {
+      "start": 1007.12,
+      "duration": 4.04,
+      "text": "want only the collections found in that"
+    },
+    {
+      "start": 1008.839,
+      "duration": 5.201,
+      "text": "family search center and then it will it"
+    },
+    {
+      "start": 1011.16,
+      "duration": 5.599,
+      "text": "will actually give you a drop- down menu"
+    },
+    {
+      "start": 1014.04,
+      "duration": 8.239,
+      "text": "of all the family search centers in the"
+    },
+    {
+      "start": 1016.759,
+      "duration": 5.52,
+      "text": "world and you can narrow it down from"
+    },
+    {
+      "start": 1023.88,
+      "duration": 6.24,
+      "text": "there so like I said I wanted to show"
+    },
+    {
+      "start": 1026.88,
+      "duration": 5.4,
+      "text": "you an example of each one of these"
+    },
+    {
+      "start": 1030.12,
+      "duration": 6.28,
+      "text": "searches"
+    },
+    {
+      "start": 1032.28,
+      "duration": 6.519,
+      "text": "and I started by typing in San Pete"
+    },
+    {
+      "start": 1036.4,
+      "duration": 4.2,
+      "text": "because I have a relative from there and"
+    },
+    {
+      "start": 1038.799,
+      "duration": 4.721,
+      "text": "I wasn't sure exactly how to spell it"
+    },
+    {
+      "start": 1040.6,
+      "duration": 5.92,
+      "text": "and you'll notice that even when I"
+    },
+    {
+      "start": 1043.52,
+      "duration": 5.92,
+      "text": "incorrectly spell it it gives me the"
+    },
+    {
+      "start": 1046.52,
+      "duration": 6.0,
+      "text": "exact standardized spelling"
+    },
+    {
+      "start": 1049.44,
+      "duration": 5.28,
+      "text": "option and once you have select one of"
+    },
+    {
+      "start": 1052.52,
+      "duration": 4.08,
+      "text": "those matches that"
+    },
+    {
+      "start": 1054.72,
+      "duration": 5.36,
+      "text": "you"
+    },
+    {
+      "start": 1056.6,
+      "duration": 6.16,
+      "text": "um would prefer then it brings you to"
+    },
+    {
+      "start": 1060.08,
+      "duration": 5.92,
+      "text": "the search results page and you'll"
+    },
+    {
+      "start": 1062.76,
+      "duration": 4.88,
+      "text": "notice on that this page"
+    },
+    {
+      "start": 1066.0,
+      "duration": 4.24,
+      "text": "that"
+    },
+    {
+      "start": 1067.64,
+      "duration": 8.2,
+      "text": "um that it lists"
+    },
+    {
+      "start": 1070.24,
+      "duration": 8.76,
+      "text": "every category of record in that"
+    },
+    {
+      "start": 1075.84,
+      "duration": 5.04,
+      "text": "jurisdiction so you'll notice you'll see"
+    },
+    {
+      "start": 1079.0,
+      "duration": 3.799,
+      "text": "you know in this example there's"
+    },
+    {
+      "start": 1080.88,
+      "duration": 5.039,
+      "text": "archives and libraries biography"
+    },
+    {
+      "start": 1082.799,
+      "duration": 3.12,
+      "text": "buildings and dwellings"
+    },
+    {
+      "start": 1088.08,
+      "duration": 8.52,
+      "text": "Etc and in the parentheses you'll see"
+    },
+    {
+      "start": 1091.88,
+      "duration": 6.919,
+      "text": "that the the amount of Records in that"
+    },
+    {
+      "start": 1096.6,
+      "duration": 6.0,
+      "text": "category now"
+    },
+    {
+      "start": 1098.799,
+      "duration": 7.321,
+      "text": "I now in the surname"
+    },
+    {
+      "start": 1102.6,
+      "duration": 6.68,
+      "text": "section I typed in sat Earth weight"
+    },
+    {
+      "start": 1106.12,
+      "duration": 5.919,
+      "text": "which is a unique name one of the few"
+    },
+    {
+      "start": 1109.28,
+      "duration": 6.96,
+      "text": "remember and it resulted"
+    },
+    {
+      "start": 1112.039,
+      "duration": 6.201,
+      "text": "in all of these different records and as"
+    },
+    {
+      "start": 1116.24,
+      "duration": 3.72,
+      "text": "you'll notice that this actually gives"
+    },
+    {
+      "start": 1118.24,
+      "duration": 3.28,
+      "text": "me the list of Records whereas the"
+    },
+    {
+      "start": 1119.96,
+      "duration": 4.839,
+      "text": "previous one for"
+    },
+    {
+      "start": 1121.52,
+      "duration": 6.0,
+      "text": "place it it will bring up the categories"
+    },
+    {
+      "start": 1124.799,
+      "duration": 4.841,
+      "text": "and then as you click on every drop-"
+    },
+    {
+      "start": 1127.52,
+      "duration": 5.72,
+      "text": "down me menu for that category you'll"
+    },
+    {
+      "start": 1129.64,
+      "duration": 3.6,
+      "text": "see the same kind of list"
+    },
+    {
+      "start": 1136.52,
+      "duration": 5.96,
+      "text": "so also I wanted to make a note that"
+    },
+    {
+      "start": 1139.28,
+      "duration": 5.48,
+      "text": "this particular my slideshow shows you"
+    },
+    {
+      "start": 1142.48,
+      "duration": 4.96,
+      "text": "how you can access the same search"
+    },
+    {
+      "start": 1144.76,
+      "duration": 6.12,
+      "text": "options from the sidebar as well and"
+    },
+    {
+      "start": 1147.44,
+      "duration": 5.479,
+      "text": "you'll notice that over here on the left"
+    },
+    {
+      "start": 1150.88,
+      "duration": 4.799,
+      "text": "and to save time I'm just going to stick"
+    },
+    {
+      "start": 1152.919,
+      "duration": 5.041,
+      "text": "with that left sidebar"
+    },
+    {
+      "start": 1155.679,
+      "duration": 4.681,
+      "text": "format"
+    },
+    {
+      "start": 1157.96,
+      "duration": 4.88,
+      "text": "and and when you're actually getting"
+    },
+    {
+      "start": 1160.36,
+      "duration": 4.88,
+      "text": "into the research yourself you'll notice"
+    },
+    {
+      "start": 1162.84,
+      "duration": 6.64,
+      "text": "that you can toggle between options you"
+    },
+    {
+      "start": 1165.24,
+      "duration": 6.919,
+      "text": "just will need to x out of the current"
+    },
+    {
+      "start": 1169.48,
+      "duration": 7.72,
+      "text": "option and then"
+    },
+    {
+      "start": 1172.159,
+      "duration": 7.52,
+      "text": "select an additional option"
+    },
+    {
+      "start": 1177.2,
+      "duration": 6.24,
+      "text": "separately just remember that you'll"
+    },
+    {
+      "start": 1179.679,
+      "duration": 6.641,
+      "text": "want to click update each time you"
+    },
+    {
+      "start": 1183.44,
+      "duration": 5.96,
+      "text": "change your search"
+    },
+    {
+      "start": 1186.32,
+      "duration": 5.76,
+      "text": "option you also have the option of"
+    },
+    {
+      "start": 1189.4,
+      "duration": 7.32,
+      "text": "filtering by these different"
+    },
+    {
+      "start": 1192.08,
+      "duration": 6.88,
+      "text": "categories availabilities language and"
+    },
+    {
+      "start": 1196.72,
+      "duration": 5.439,
+      "text": "format and I won't go through all of"
+    },
+    {
+      "start": 1198.96,
+      "duration": 5.0,
+      "text": "those today because I believe that the"
+    },
+    {
+      "start": 1202.159,
+      "duration": 5.201,
+      "text": "more you can do Hands-On the more you"
+    },
+    {
+      "start": 1203.96,
+      "duration": 6.8,
+      "text": "learn and so it'll be fun for you to go"
+    },
+    {
+      "start": 1207.36,
+      "duration": 5.96,
+      "text": "into those filters"
+    },
+    {
+      "start": 1210.76,
+      "duration": 5.52,
+      "text": "yourself and if you find that you might"
+    },
+    {
+      "start": 1213.32,
+      "duration": 2.96,
+      "text": "be getting lost in"
+    },
+    {
+      "start": 1216.4,
+      "duration": 6.8,
+      "text": "a in a filter of one kind or another you"
+    },
+    {
+      "start": 1220.159,
+      "duration": 4.681,
+      "text": "can always hit the back button on your"
+    },
+    {
+      "start": 1223.2,
+      "duration": 3.56,
+      "text": "web browser and it will take you back to"
+    },
+    {
+      "start": 1224.84,
+      "duration": 5.24,
+      "text": "where you've"
+    },
+    {
+      "start": 1226.76,
+      "duration": 6.159,
+      "text": "been okay so the next one I wanted to"
+    },
+    {
+      "start": 1230.08,
+      "duration": 4.64,
+      "text": "show you an example of is titles I"
+    },
+    {
+      "start": 1232.919,
+      "duration": 5.361,
+      "text": "happened to use one of my famous"
+    },
+    {
+      "start": 1234.72,
+      "duration": 6.319,
+      "text": "relatives John Pac and you'll notice"
+    },
+    {
+      "start": 1238.28,
+      "duration": 6.92,
+      "text": "that it"
+    },
+    {
+      "start": 1241.039,
+      "duration": 7.241,
+      "text": "didn't only just bring up a title name"
+    },
+    {
+      "start": 1245.2,
+      "duration": 5.2,
+      "text": "John pack but also anything with that"
+    },
+    {
+      "start": 1248.28,
+      "duration": 4.68,
+      "text": "those search words in"
+    },
+    {
+      "start": 1250.4,
+      "duration": 5.44,
+      "text": "it and then from there you"
+    },
+    {
+      "start": 1252.96,
+      "duration": 6.48,
+      "text": "can find out details and whatnot and"
+    },
+    {
+      "start": 1255.84,
+      "duration": 5.48,
+      "text": "I'll show you that in a minute"
+    },
+    {
+      "start": 1259.44,
+      "duration": 3.719,
+      "text": "I'm sure you're getting excited already"
+    },
+    {
+      "start": 1261.32,
+      "duration": 4.32,
+      "text": "to try this out because there's a gold"
+    },
+    {
+      "start": 1263.159,
+      "duration": 2.481,
+      "text": "mine of"
+    },
+    {
+      "start": 1265.76,
+      "duration": 4.68,
+      "text": "information and as we keep going you'll"
+    },
+    {
+      "start": 1267.96,
+      "duration": 5.719,
+      "text": "notice I tried an author's"
+    },
+    {
+      "start": 1270.44,
+      "duration": 6.56,
+      "text": "name Peter"
+    },
+    {
+      "start": 1273.679,
+      "duration": 5.201,
+      "text": "corer and it just so happens that he has"
+    },
+    {
+      "start": 1277.0,
+      "duration": 4.36,
+      "text": "written three different"
+    },
+    {
+      "start": 1278.88,
+      "duration": 5.24,
+      "text": "books and the way that I got to all"
+    },
+    {
+      "start": 1281.36,
+      "duration": 5.799,
+      "text": "three books was to click on"
+    },
+    {
+      "start": 1284.12,
+      "duration": 5.52,
+      "text": "this drop down"
+    },
+    {
+      "start": 1287.159,
+      "duration": 5.841,
+      "text": "arrow and then as"
+    },
+    {
+      "start": 1289.64,
+      "duration": 6.2,
+      "text": "I want to see each one of these books I"
+    },
+    {
+      "start": 1293.0,
+      "duration": 7.0,
+      "text": "just click on the link for each"
+    },
+    {
+      "start": 1295.84,
+      "duration": 6.56,
+      "text": "one then we're into subjects so"
+    },
+    {
+      "start": 1300.0,
+      "duration": 3.72,
+      "text": "subjects that I mentioned earlier one"
+    },
+    {
+      "start": 1302.4,
+      "duration": 4.84,
+      "text": "could be"
+    },
+    {
+      "start": 1303.72,
+      "duration": 6.76,
+      "text": "migration and in this case it has every"
+    },
+    {
+      "start": 1307.24,
+      "duration": 5.52,
+      "text": "country and every record that has"
+    },
+    {
+      "start": 1310.48,
+      "duration": 4.12,
+      "text": "something to do with migration for that"
+    },
+    {
+      "start": 1312.76,
+      "duration": 4.279,
+      "text": "country and it gives you that"
+    },
+    {
+      "start": 1314.6,
+      "duration": 5.439,
+      "text": "comprehensive list so you know at times"
+    },
+    {
+      "start": 1317.039,
+      "duration": 6.441,
+      "text": "when you're just Stu at a brick wall"
+    },
+    {
+      "start": 1320.039,
+      "duration": 6.0,
+      "text": "this may be a great way to open a door"
+    },
+    {
+      "start": 1323.48,
+      "duration": 5.36,
+      "text": "and and discern you know visually what"
+    },
+    {
+      "start": 1326.039,
+      "duration": 2.801,
+      "text": "is actually an"
+    },
+    {
+      "start": 1332.76,
+      "duration": 5.039,
+      "text": "option now for keywords I used um"
+    },
+    {
+      "start": 1336.64,
+      "duration": 2.88,
+      "text": "migrant"
+    },
+    {
+      "start": 1337.799,
+      "duration": 4.841,
+      "text": "workers"
+    },
+    {
+      "start": 1339.52,
+      "duration": 6.72,
+      "text": "and like I said if you want"
+    },
+    {
+      "start": 1342.64,
+      "duration": 6.12,
+      "text": "to reach records that are more generally"
+    },
+    {
+      "start": 1346.24,
+      "duration": 7.36,
+      "text": "given that might not have anything"
+    },
+    {
+      "start": 1348.76,
+      "duration": 9.24,
+      "text": "connected to even a place or a person"
+    },
+    {
+      "start": 1353.6,
+      "duration": 6.88,
+      "text": "um then you can use this keyword"
+    },
+    {
+      "start": 1358.0,
+      "duration": 4.24,
+      "text": "option and now another little hint when"
+    },
+    {
+      "start": 1360.48,
+      "duration": 5.04,
+      "text": "you're typing in your search words"
+    },
+    {
+      "start": 1362.24,
+      "duration": 6.919,
+      "text": "you'll find come to find that the search"
+    },
+    {
+      "start": 1365.52,
+      "duration": 6.08,
+      "text": "engine accounts for the same words in a"
+    },
+    {
+      "start": 1369.159,
+      "duration": 5.241,
+      "text": "different language so I don't have to"
+    },
+    {
+      "start": 1371.6,
+      "duration": 6.28,
+      "text": "know German or I don't have to know"
+    },
+    {
+      "start": 1374.4,
+      "duration": 6.8,
+      "text": "check when I'm typing in those words or"
+    },
+    {
+      "start": 1377.88,
+      "duration": 5.2,
+      "text": "vice versa if you have if you you know"
+    },
+    {
+      "start": 1381.2,
+      "duration": 3.959,
+      "text": "are familiar with a a different language"
+    },
+    {
+      "start": 1383.08,
+      "duration": 3.839,
+      "text": "and need to type in those words from"
+    },
+    {
+      "start": 1385.159,
+      "duration": 5.161,
+      "text": "that different language then it will"
+    },
+    {
+      "start": 1386.919,
+      "duration": 8.041,
+      "text": "also populate the results"
+    },
+    {
+      "start": 1390.32,
+      "duration": 8.32,
+      "text": "using an English version of that search"
+    },
+    {
+      "start": 1394.96,
+      "duration": 5.959,
+      "text": "I think is an incredible feature to"
+    },
+    {
+      "start": 1398.64,
+      "duration": 6.2,
+      "text": "this search"
+    },
+    {
+      "start": 1400.919,
+      "duration": 5.521,
+      "text": "engine now I selected one of those"
+    },
+    {
+      "start": 1404.84,
+      "duration": 5.6,
+      "text": "migration"
+    },
+    {
+      "start": 1406.44,
+      "duration": 4.0,
+      "text": "records and"
+    },
+    {
+      "start": 1410.799,
+      "duration": 6.041,
+      "text": "and I'm going to play this video and"
+    },
+    {
+      "start": 1413.72,
+      "duration": 6.0,
+      "text": "describe it as I as I'm going through"
+    },
+    {
+      "start": 1416.84,
+      "duration": 5.92,
+      "text": "this detailed"
+    },
+    {
+      "start": 1419.72,
+      "duration": 5.68,
+      "text": "um view of this"
+    },
+    {
+      "start": 1422.76,
+      "duration": 7.0,
+      "text": "record so at the top you'll notice that"
+    },
+    {
+      "start": 1425.4,
+      "duration": 6.879,
+      "text": "it has the title and who is responsible"
+    },
+    {
+      "start": 1429.76,
+      "duration": 5.56,
+      "text": "for it who authored it what the format"
+    },
+    {
+      "start": 1432.279,
+      "duration": 4.961,
+      "text": "is it's like books and monographs it's"
+    },
+    {
+      "start": 1435.32,
+      "duration": 3.44,
+      "text": "in English language where it was"
+    },
+    {
+      "start": 1437.24,
+      "duration": 3.72,
+      "text": "published"
+    },
+    {
+      "start": 1438.76,
+      "duration": 6.44,
+      "text": "how many pages it"
+    },
+    {
+      "start": 1440.96,
+      "duration": 8.44,
+      "text": "has ISBN in America and the subject"
+    },
+    {
+      "start": 1445.2,
+      "duration": 6.64,
+      "text": "class meaning this the call"
+    },
+    {
+      "start": 1449.4,
+      "duration": 4.84,
+      "text": "number and then you want to be careful"
+    },
+    {
+      "start": 1451.84,
+      "duration": 5.079,
+      "text": "to to read the notes and make sure that"
+    },
+    {
+      "start": 1454.24,
+      "duration": 6.36,
+      "text": "it's a document that will"
+    },
+    {
+      "start": 1456.919,
+      "duration": 5.401,
+      "text": "cover or help you discern or find the"
+    },
+    {
+      "start": 1460.6,
+      "duration": 4.72,
+      "text": "record you need for your"
+    },
+    {
+      "start": 1462.32,
+      "duration": 6.52,
+      "text": "ancestor um and you also see that"
+    },
+    {
+      "start": 1465.32,
+      "duration": 3.52,
+      "text": "there's a view"
+    },
+    {
+      "start": 1469.64,
+      "duration": 6.159,
+      "text": "how to view it in other possible"
+    },
+    {
+      "start": 1472.2,
+      "duration": 6.719,
+      "text": "locations so it's it may you know be"
+    },
+    {
+      "start": 1475.799,
+      "duration": 5.641,
+      "text": "that you're looking at the Dominican"
+    },
+    {
+      "start": 1478.919,
+      "duration": 4.081,
+      "text": "Republic um and maybe you're living in"
+    },
+    {
+      "start": 1481.44,
+      "duration": 3.4,
+      "text": "Texas or somewhere that where they"
+    },
+    {
+      "start": 1483.0,
+      "duration": 6.039,
+      "text": "migrated"
+    },
+    {
+      "start": 1484.84,
+      "duration": 6.4,
+      "text": "then um a library in that location may"
+    },
+    {
+      "start": 1489.039,
+      "duration": 4.24,
+      "text": "have the same or similar book and that"
+    },
+    {
+      "start": 1491.24,
+      "duration": 4.96,
+      "text": "will help you get"
+    },
+    {
+      "start": 1493.279,
+      "duration": 5.361,
+      "text": "there and then at the very bottom you'll"
+    },
+    {
+      "start": 1496.2,
+      "duration": 4.8,
+      "text": "see that it is located at the family"
+    },
+    {
+      "start": 1498.64,
+      "duration": 4.56,
+      "text": "history Library it's call"
+    },
+    {
+      "start": 1501.0,
+      "duration": 5.48,
+      "text": "number"
+    },
+    {
+      "start": 1503.2,
+      "duration": 6.24,
+      "text": "97293 WTF and you'll if you're familiar"
+    },
+    {
+      "start": 1506.48,
+      "duration": 5.199,
+      "text": "with libraries you you'll note that most"
+    },
+    {
+      "start": 1509.44,
+      "duration": 3.479,
+      "text": "of the books in that category will be in"
+    },
+    {
+      "start": 1511.679,
+      "duration": 5.48,
+      "text": "that"
+    },
+    {
+      "start": 1512.919,
+      "duration": 4.24,
+      "text": "location and because it's an in-person"
+    },
+    {
+      "start": 1518.44,
+      "duration": 5.2,
+      "text": "option you'll have to do that at the"
+    },
+    {
+      "start": 1521.64,
+      "duration": 3.48,
+      "text": "family history library or like I said if"
+    },
+    {
+      "start": 1523.64,
+      "duration": 6.68,
+      "text": "if there's the possibility of doing"
+    },
+    {
+      "start": 1525.12,
+      "duration": 5.2,
+      "text": "inter Library loan that look as well"
+    },
+    {
+      "start": 1532.96,
+      "duration": 6.48,
+      "text": "now if"
+    },
+    {
+      "start": 1534.679,
+      "duration": 7.48,
+      "text": "we want to filter or search more"
+    },
+    {
+      "start": 1539.44,
+      "duration": 5.2,
+      "text": "specifically there's also the option to"
+    },
+    {
+      "start": 1542.159,
+      "duration": 7.0,
+      "text": "add a"
+    },
+    {
+      "start": 1544.64,
+      "duration": 6.44,
+      "text": "search um field so I stayed in keywords"
+    },
+    {
+      "start": 1549.159,
+      "duration": 6.0,
+      "text": "myor workers and now I'm going to add"
+    },
+    {
+      "start": 1551.08,
+      "duration": 5.4,
+      "text": "the word under place or the the search"
+    },
+    {
+      "start": 1555.159,
+      "duration": 5.081,
+      "text": "under place is"
+    },
+    {
+      "start": 1556.48,
+      "duration": 3.76,
+      "text": "Germany and"
+    },
+    {
+      "start": 1561.84,
+      "duration": 6.199,
+      "text": "it when I hit update it brought up two"
+    },
+    {
+      "start": 1564.64,
+      "duration": 5.2,
+      "text": "different record groups"
+    },
+    {
+      "start": 1568.039,
+      "duration": 5.52,
+      "text": "immigration and"
+    },
+    {
+      "start": 1569.84,
+      "duration": 6.559,
+      "text": "migration a history with two records it"
+    },
+    {
+      "start": 1573.559,
+      "duration": 6.84,
+      "text": "also brought brought up Germany"
+    },
+    {
+      "start": 1576.399,
+      "duration": 5.961,
+      "text": "migration with one record and if you'll"
+    },
+    {
+      "start": 1580.399,
+      "duration": 4.88,
+      "text": "notice if you click on the drop down"
+    },
+    {
+      "start": 1582.36,
+      "duration": 6.919,
+      "text": "arrow next"
+    },
+    {
+      "start": 1585.279,
+      "duration": 4.0,
+      "text": "to um"
+    },
+    {
+      "start": 1592.919,
+      "duration": 6.441,
+      "text": "next to the record field collection"
+    },
+    {
+      "start": 1595.72,
+      "duration": 7.959,
+      "text": "field it will give you the specific"
+    },
+    {
+      "start": 1599.36,
+      "duration": 6.199,
+      "text": "items in the library that you can"
+    },
+    {
+      "start": 1603.679,
+      "duration": 7.0,
+      "text": "access and"
+    },
+    {
+      "start": 1605.559,
+      "duration": 8.12,
+      "text": "then I just really quickly went"
+    },
+    {
+      "start": 1610.679,
+      "duration": 6.6,
+      "text": "through or went back to"
+    },
+    {
+      "start": 1613.679,
+      "duration": 5.081,
+      "text": "my original place because I wanted to"
+    },
+    {
+      "start": 1617.279,
+      "duration": 4.88,
+      "text": "show you kind of"
+    },
+    {
+      "start": 1618.76,
+      "duration": 6.639,
+      "text": "the thought process I go through as as"
+    },
+    {
+      "start": 1622.159,
+      "duration": 6.0,
+      "text": "I'm looking for these Collections and"
+    },
+    {
+      "start": 1625.399,
+      "duration": 6.16,
+      "text": "records and I wanted to find my ancestor"
+    },
+    {
+      "start": 1628.159,
+      "duration": 7.52,
+      "text": "in church records in s County Utah"
+    },
+    {
+      "start": 1631.559,
+      "duration": 6.6,
+      "text": "so I I looked for the"
+    },
+    {
+      "start": 1635.679,
+      "duration": 5.401,
+      "text": "specific title of the record to see if"
+    },
+    {
+      "start": 1638.159,
+      "duration": 4.4,
+      "text": "it would give me any more indicators of"
+    },
+    {
+      "start": 1641.08,
+      "duration": 5.44,
+      "text": "dates"
+    },
+    {
+      "start": 1642.559,
+      "duration": 7.041,
+      "text": "or of um what the record covers and so"
+    },
+    {
+      "start": 1646.52,
+      "duration": 5.039,
+      "text": "you want to make sure that you the"
+    },
+    {
+      "start": 1649.6,
+      "duration": 5.199,
+      "text": "appropriate"
+    },
+    {
+      "start": 1651.559,
+      "duration": 5.84,
+      "text": "category um of time right this the"
+    },
+    {
+      "start": 1654.799,
+      "duration": 4.281,
+      "text": "specific times and when I go into the"
+    },
+    {
+      "start": 1657.399,
+      "duration": 4.801,
+      "text": "record you'll see that there will be"
+    },
+    {
+      "start": 1659.08,
+      "duration": 5.079,
+      "text": "icons for different available formats as"
+    },
+    {
+      "start": 1662.2,
+      "duration": 6.52,
+      "text": "you get to the bottom and the location"
+    },
+    {
+      "start": 1664.159,
+      "duration": 8.52,
+      "text": "of that that item and you'll see in this"
+    },
+    {
+      "start": 1668.72,
+      "duration": 6.52,
+      "text": "format that it's a real to real not a"
+    },
+    {
+      "start": 1672.679,
+      "duration": 6.24,
+      "text": "real toore a reel a microfilm reel I"
+    },
+    {
+      "start": 1675.24,
+      "duration": 5.36,
+      "text": "should say and that re"
+    },
+    {
+      "start": 1678.919,
+      "duration": 5.24,
+      "text": "can be viewed at the family history"
+    },
+    {
+      "start": 1680.6,
+      "duration": 7.959,
+      "text": "Library as I said before and you would"
+    },
+    {
+      "start": 1684.159,
+      "duration": 4.4,
+      "text": "look it up by the film number"
+    },
+    {
+      "start": 1691.12,
+      "duration": 4.399,
+      "text": "Etc"
+    },
+    {
+      "start": 1692.88,
+      "duration": 4.48,
+      "text": "um I also looked for the same relative"
+    },
+    {
+      "start": 1695.519,
+      "duration": 4.361,
+      "text": "in the probate"
+    },
+    {
+      "start": 1697.36,
+      "duration": 7.199,
+      "text": "records"
+    },
+    {
+      "start": 1699.88,
+      "duration": 10.039,
+      "text": "and and found the appropriate date span"
+    },
+    {
+      "start": 1704.559,
+      "duration": 5.36,
+      "text": "and so when I clicked on that"
+    },
+    {
+      "start": 1711.84,
+      "duration": 6.199,
+      "text": "I noticed that the"
+    },
+    {
+      "start": 1715.6,
+      "duration": 5.04,
+      "text": "actual that it breaks it down even more"
+    },
+    {
+      "start": 1718.039,
+      "duration": 5.52,
+      "text": "into different year spans and so I"
+    },
+    {
+      "start": 1720.64,
+      "duration": 6.279,
+      "text": "picked the one that fit my ancestors"
+    },
+    {
+      "start": 1723.559,
+      "duration": 6.801,
+      "text": "information and I so excited that I"
+    },
+    {
+      "start": 1726.919,
+      "duration": 6.12,
+      "text": "saw this little camera icon"
+    },
+    {
+      "start": 1730.36,
+      "duration": 4.28,
+      "text": "which notes that it's actually been"
+    },
+    {
+      "start": 1733.039,
+      "duration": 5.76,
+      "text": "digitized in"
+    },
+    {
+      "start": 1734.64,
+      "duration": 7.24,
+      "text": "a in a you know online format"
+    },
+    {
+      "start": 1738.799,
+      "duration": 6.801,
+      "text": "and you'll notice that when you click on"
+    },
+    {
+      "start": 1741.88,
+      "duration": 6.96,
+      "text": "that camera icon that it will bring up"
+    },
+    {
+      "start": 1745.6,
+      "duration": 4.36,
+      "text": "an image screen just like this one and"
+    },
+    {
+      "start": 1748.84,
+      "duration": 4.12,
+      "text": "as"
+    },
+    {
+      "start": 1749.96,
+      "duration": 5.4,
+      "text": "you look through and click on different"
+    },
+    {
+      "start": 1752.96,
+      "duration": 5.439,
+      "text": "images you'll you'll want to get to know"
+    },
+    {
+      "start": 1755.36,
+      "duration": 6.559,
+      "text": "the format of this collection if it has"
+    },
+    {
+      "start": 1758.399,
+      "duration": 5.441,
+      "text": "an index say at the beginning of the"
+    },
+    {
+      "start": 1761.919,
+      "duration": 5.561,
+      "text": "manuscript"
+    },
+    {
+      "start": 1763.84,
+      "duration": 6.16,
+      "text": "book um you can also just browse Page by"
+    },
+    {
+      "start": 1767.48,
+      "duration": 4.88,
+      "text": "Page by using the forward and back"
+    },
+    {
+      "start": 1770.0,
+      "duration": 5.44,
+      "text": "buttons those of you that have index"
+    },
+    {
+      "start": 1772.36,
+      "duration": 4.0,
+      "text": "would be familiar with the the format of"
+    },
+    {
+      "start": 1775.44,
+      "duration": 3.68,
+      "text": "this"
+    },
+    {
+      "start": 1776.36,
+      "duration": 5.559,
+      "text": "page"
+    },
+    {
+      "start": 1779.12,
+      "duration": 6.12,
+      "text": "um and if you don't have time to just"
+    },
+    {
+      "start": 1781.919,
+      "duration": 6.12,
+      "text": "browse and give your you know whole"
+    },
+    {
+      "start": 1785.24,
+      "duration": 5.799,
+      "text": "attention to the entire"
+    },
+    {
+      "start": 1788.039,
+      "duration": 5.201,
+      "text": "manuscript um I ended up going back and"
+    },
+    {
+      "start": 1791.039,
+      "duration": 4.88,
+      "text": "just looking to make sure there wasn't"
+    },
+    {
+      "start": 1793.24,
+      "duration": 6.439,
+      "text": "an index and sure enough there"
+    },
+    {
+      "start": 1795.919,
+      "duration": 5.281,
+      "text": "was and so I"
+    },
+    {
+      "start": 1799.679,
+      "duration": 4.041,
+      "text": "found"
+    },
+    {
+      "start": 1801.2,
+      "duration": 6.359,
+      "text": "um that it covers a certain number of"
+    },
+    {
+      "start": 1803.72,
+      "duration": 7.16,
+      "text": "years once again and may not be an index"
+    },
+    {
+      "start": 1807.559,
+      "duration": 5.441,
+      "text": "for the years that I need but that"
+    },
+    {
+      "start": 1810.88,
+      "duration": 4.72,
+      "text": "doesn't stop me from wanting to to"
+    },
+    {
+      "start": 1813.0,
+      "duration": 5.08,
+      "text": "browse it and to to dig a Little Deeper"
+    },
+    {
+      "start": 1815.6,
+      "duration": 5.4,
+      "text": "so because I want more clues right I"
+    },
+    {
+      "start": 1818.08,
+      "duration": 5.319,
+      "text": "want to find maybe other relatives that"
+    },
+    {
+      "start": 1821.0,
+      "duration": 5.559,
+      "text": "will lead to the specific one I'm"
+    },
+    {
+      "start": 1823.399,
+      "duration": 4.76,
+      "text": "looking for and when I clicked in and"
+    },
+    {
+      "start": 1826.559,
+      "duration": 5.12,
+      "text": "and"
+    },
+    {
+      "start": 1828.159,
+      "duration": 5.841,
+      "text": "and went to the name group that I needed"
+    },
+    {
+      "start": 1831.679,
+      "duration": 7.401,
+      "text": "I I noticed"
+    },
+    {
+      "start": 1834.0,
+      "duration": 8.08,
+      "text": "that my ancestors relatives are listed"
+    },
+    {
+      "start": 1839.08,
+      "duration": 3.0,
+      "text": "here"
+    },
+    {
+      "start": 1842.6,
+      "duration": 7.48,
+      "text": "and one thing you want to"
+    },
+    {
+      "start": 1846.519,
+      "duration": 4.961,
+      "text": "um make sure that you do is record as"
+    },
+    {
+      "start": 1850.08,
+      "duration": 3.8,
+      "text": "you're going through your research you"
+    },
+    {
+      "start": 1851.48,
+      "duration": 5.88,
+      "text": "want to record all the"
+    },
+    {
+      "start": 1853.88,
+      "duration": 6.6,
+      "text": "names you know surnames and first names"
+    },
+    {
+      "start": 1857.36,
+      "duration": 5.279,
+      "text": "of those anyone that could possibly and"
+    },
+    {
+      "start": 1860.48,
+      "duration": 4.36,
+      "text": "potentially be one of your relatives and"
+    },
+    {
+      "start": 1862.639,
+      "duration": 5.601,
+      "text": "that will save you so much time in the"
+    },
+    {
+      "start": 1864.84,
+      "duration": 5.88,
+      "text": "future as you're you know as you"
+    },
+    {
+      "start": 1868.24,
+      "duration": 5.48,
+      "text": "actually put the pieces together of the"
+    },
+    {
+      "start": 1870.72,
+      "duration": 6.0,
+      "text": "puzzle and and each of these names that"
+    },
+    {
+      "start": 1873.72,
+      "duration": 5.72,
+      "text": "you've recorded end up being part of"
+    },
+    {
+      "start": 1876.72,
+      "duration": 7.16,
+      "text": "that puzzle and then because you've"
+    },
+    {
+      "start": 1879.44,
+      "duration": 6.76,
+      "text": "researched say one ancestor then you can"
+    },
+    {
+      "start": 1883.88,
+      "duration": 6.24,
+      "text": "go back to the same record and look at"
+    },
+    {
+      "start": 1886.2,
+      "duration": 6.04,
+      "text": "for that that same answer Anor or the"
+    },
+    {
+      "start": 1890.12,
+      "duration": 4.399,
+      "text": "the the extended pieces I should say the"
+    },
+    {
+      "start": 1892.24,
+      "duration": 4.919,
+      "text": "different"
+    },
+    {
+      "start": 1894.519,
+      "duration": 5.081,
+      "text": "ancestors um and"
+    },
+    {
+      "start": 1897.159,
+      "duration": 5.921,
+      "text": "especially helpful if they're all from"
+    },
+    {
+      "start": 1899.6,
+      "duration": 4.959,
+      "text": "the same area or it's kind of like you"
+    },
+    {
+      "start": 1903.08,
+      "duration": 3.079,
+      "text": "know the census when you go through the"
+    },
+    {
+      "start": 1904.559,
+      "duration": 5.12,
+      "text": "census you want to check for neighbors"
+    },
+    {
+      "start": 1906.159,
+      "duration": 3.52,
+      "text": "and things like that"
+    },
+    {
+      "start": 1910.039,
+      "duration": 7.48,
+      "text": "so anyway um that's all I have for this"
+    },
+    {
+      "start": 1914.32,
+      "duration": 4.44,
+      "text": "for this portion I I'm sure you have"
+    },
+    {
+      "start": 1917.519,
+      "duration": 5.12,
+      "text": "many"
+    },
+    {
+      "start": 1918.76,
+      "duration": 8.799,
+      "text": "questions um we may be able to get"
+    },
+    {
+      "start": 1922.639,
+      "duration": 7.601,
+      "text": "online and try a few things as well um I"
+    },
+    {
+      "start": 1927.559,
+      "duration": 6.201,
+      "text": "hope that it's created an excitement to"
+    },
+    {
+      "start": 1930.24,
+      "duration": 8.679,
+      "text": "to dig a little deeper and to to"
+    },
+    {
+      "start": 1933.76,
+      "duration": 7.56,
+      "text": "find more than just your ancestor um but"
+    },
+    {
+      "start": 1938.919,
+      "duration": 4.321,
+      "text": "maybe more information about where they"
+    },
+    {
+      "start": 1941.32,
+      "duration": 5.239,
+      "text": "lived how they lived you"
+    },
+    {
+      "start": 1943.24,
+      "duration": 7.72,
+      "text": "know their probate records their the"
+    },
+    {
+      "start": 1946.559,
+      "duration": 4.401,
+      "text": "histories of their town Etc"
+    },
+    {
+      "start": 1953.2,
+      "duration": 4.88,
+      "text": "so all right um thank you so much cred"
+    },
+    {
+      "start": 1956.279,
+      "duration": 4.36,
+      "text": "we do have a few"
+    },
+    {
+      "start": 1958.08,
+      "duration": 5.88,
+      "text": "questions already in the Q&A if you're"
+    },
+    {
+      "start": 1960.639,
+      "duration": 6.081,
+      "text": "open to answering those right now yes"
+    },
+    {
+      "start": 1963.96,
+      "duration": 6.559,
+      "text": "okay let's"
+    },
+    {
+      "start": 1966.72,
+      "duration": 5.76,
+      "text": "see from Lori we have can we search by"
+    },
+    {
+      "start": 1970.519,
+      "duration": 3.921,
+      "text": "more than one category at the same time"
+    },
+    {
+      "start": 1972.48,
+      "duration": 6.28,
+      "text": "like place the name"
+    },
+    {
+      "start": 1974.44,
+      "duration": 7.68,
+      "text": "together yes and you can actually"
+    },
+    {
+      "start": 1978.76,
+      "duration": 3.36,
+      "text": "um if I go back"
+    },
+    {
+      "start": 1983.159,
+      "duration": 7.801,
+      "text": "to this screen you'll notice that I"
+    },
+    {
+      "start": 1987.72,
+      "duration": 4.36,
+      "text": "search by place and keyword and you can"
+    },
+    {
+      "start": 1990.96,
+      "duration": 4.92,
+      "text": "actually"
+    },
+    {
+      "start": 1992.08,
+      "duration": 6.36,
+      "text": "add if you you know potentially wanted"
+    },
+    {
+      "start": 1995.88,
+      "duration": 4.48,
+      "text": "to or could it's also you know you can"
+    },
+    {
+      "start": 1998.44,
+      "duration": 4.839,
+      "text": "actually open each one of these search"
+    },
+    {
+      "start": 2000.36,
+      "duration": 5.319,
+      "text": "fields and search by each one now that"
+    },
+    {
+      "start": 2003.279,
+      "duration": 5.52,
+      "text": "would narrow your search you know"
+    },
+    {
+      "start": 2005.679,
+      "duration": 6.281,
+      "text": "dramatically but so say for example I"
+    },
+    {
+      "start": 2008.799,
+      "duration": 4.24,
+      "text": "wanted to look for surnames in Germany I"
+    },
+    {
+      "start": 2011.96,
+      "duration": 3.92,
+      "text": "could"
+    },
+    {
+      "start": 2013.039,
+      "duration": 4.801,
+      "text": "look um I could open the German the"
+    },
+    {
+      "start": 2015.88,
+      "duration": 5.84,
+      "text": "place field and the surname"
+    },
+    {
+      "start": 2017.84,
+      "duration": 7.0,
+      "text": "field and maybe I can actually get on to"
+    },
+    {
+      "start": 2021.72,
+      "duration": 3.12,
+      "text": "the web and show"
+    },
+    {
+      "start": 2029.32,
+      "duration": 3.959,
+      "text": "you of this really"
+    },
+    {
+      "start": 2035.36,
+      "duration": 5.319,
+      "text": "quick are there any other questions"
+    },
+    {
+      "start": 2038.08,
+      "duration": 2.599,
+      "text": "pulling that"
+    },
+    {
+      "start": 2042.399,
+      "duration": 4.481,
+      "text": "up um actually no I don't think we have"
+    },
+    {
+      "start": 2044.96,
+      "duration": 4.919,
+      "text": "any other specific questions I think"
+    },
+    {
+      "start": 2046.88,
+      "duration": 5.68,
+      "text": "they were just comments but yeah if"
+    },
+    {
+      "start": 2049.879,
+      "duration": 5.72,
+      "text": "anyone else has any questions please ask"
+    },
+    {
+      "start": 2052.56,
+      "duration": 3.039,
+      "text": "them in the Q&A or the"
+    },
+    {
+      "start": 2060.52,
+      "duration": 5.639,
+      "text": "chat is everyone seeing my my screen"
+    },
+    {
+      "start": 2063.32,
+      "duration": 4.799,
+      "text": "okay Olivia can you see that okay yes"
+    },
+    {
+      "start": 2066.159,
+      "duration": 3.601,
+      "text": "I'm seeing your web browser on the"
+    },
+    {
+      "start": 2068.119,
+      "duration": 3.441,
+      "text": "family search"
+    },
+    {
+      "start": 2069.76,
+      "duration": 5.0,
+      "text": "catalog"
+    },
+    {
+      "start": 2071.56,
+      "duration": 3.2,
+      "text": "so for"
+    },
+    {
+      "start": 2074.96,
+      "duration": 5.24,
+      "text": "example if we go to Germany and I just"
+    },
+    {
+      "start": 2077.639,
+      "duration": 2.561,
+      "text": "search"
+    },
+    {
+      "start": 2080.879,
+      "duration": 4.2,
+      "text": "Germany um if I wanted to add the"
+    },
+    {
+      "start": 2085.359,
+      "duration": 2.76,
+      "text": "surname"
+    },
+    {
+      "start": 2086.37,
+      "duration": 4.309,
+      "text": "[Music]"
+    },
+    {
+      "start": 2088.119,
+      "duration": 6.841,
+      "text": "um"
+    },
+    {
+      "start": 2090.679,
+      "duration": 7.241,
+      "text": "know then I can click update and it will"
+    },
+    {
+      "start": 2094.96,
+      "duration": 5.92,
+      "text": "just search for Germany and that surname"
+    },
+    {
+      "start": 2097.92,
+      "duration": 5.32,
+      "text": "looks like we have no results let's try"
+    },
+    {
+      "start": 2100.88,
+      "duration": 6.36,
+      "text": "something a little bit easier maybe a"
+    },
+    {
+      "start": 2103.24,
+      "duration": 4.0,
+      "text": "different place let's"
+    },
+    {
+      "start": 2108.4,
+      "duration": 5.28,
+      "text": "try"
+    },
+    {
+      "start": 2110.88,
+      "duration": 6.76,
+      "text": "oops"
+    },
+    {
+      "start": 2113.68,
+      "duration": 3.96,
+      "text": "SP and we'll try"
+    },
+    {
+      "start": 2121.119,
+      "duration": 5.561,
+      "text": "Moss it's not up with anything either"
+    },
+    {
+      "start": 2128.079,
+      "duration": 5.081,
+      "text": "H okay well this must mean that I don't"
+    },
+    {
+      "start": 2131.119,
+      "duration": 4.841,
+      "text": "have I can't specifically search just"
+    },
+    {
+      "start": 2133.16,
+      "duration": 5.24,
+      "text": "for those two things but let's say I try"
+    },
+    {
+      "start": 2135.96,
+      "duration": 6.44,
+      "text": "a subject and we put in"
+    },
+    {
+      "start": 2138.4,
+      "duration": 8.48,
+      "text": "there um ship for ship"
+    },
+    {
+      "start": 2142.4,
+      "duration": 8.36,
+      "text": "records then in this case it brought"
+    },
+    {
+      "start": 2146.88,
+      "duration": 7.239,
+      "text": "up the place right the category of"
+    },
+    {
+      "start": 2150.76,
+      "duration": 6.04,
+      "text": "record or collection once again you"
+    },
+    {
+      "start": 2154.119,
+      "duration": 4.641,
+      "text": "click on these down arrows and it will"
+    },
+    {
+      "start": 2156.8,
+      "duration": 4.24,
+      "text": "bring up this specific collection that"
+    },
+    {
+      "start": 2158.76,
+      "duration": 2.28,
+      "text": "they"
+    },
+    {
+      "start": 2164.56,
+      "duration": 6.08,
+      "text": "have um if we"
+    },
+    {
+      "start": 2167.2,
+      "duration": 6.44,
+      "text": "try say a"
+    },
+    {
+      "start": 2170.64,
+      "duration": 3.0,
+      "text": "keyword"
+    },
+    {
+      "start": 2173.839,
+      "duration": 4.841,
+      "text": "of just work in"
+    },
+    {
+      "start": 2182.2,
+      "duration": 5.399,
+      "text": "general that may be a little bit too"
+    },
+    {
+      "start": 2184.599,
+      "duration": 3.0,
+      "text": "General"
+    },
+    {
+      "start": 2188.68,
+      "duration": 4.84,
+      "text": "let's look at this"
+    },
+    {
+      "start": 2190.0,
+      "duration": 3.52,
+      "text": "history 11th"
+    },
+    {
+      "start": 2198.0,
+      "duration": 5.359,
+      "text": "century and there's a few other things"
+    },
+    {
+      "start": 2200.68,
+      "duration": 4.8,
+      "text": "that I'm seeing here in this record as"
+    },
+    {
+      "start": 2203.359,
+      "duration": 4.0,
+      "text": "you can tell it says under notes you can"
+    },
+    {
+      "start": 2205.48,
+      "duration": 4.68,
+      "text": "view a digital version of this which is"
+    },
+    {
+      "start": 2207.359,
+      "duration": 2.801,
+      "text": "an incredible"
+    },
+    {
+      "start": 2210.839,
+      "duration": 4.681,
+      "text": "option once again you'll want to read"
+    },
+    {
+      "start": 2213.319,
+      "duration": 6.201,
+      "text": "everything you can about"
+    },
+    {
+      "start": 2215.52,
+      "duration": 4.0,
+      "text": "each record"
+    },
+    {
+      "start": 2220.2,
+      "duration": 3.0,
+      "text": "and it will take me"
+    },
+    {
+      "start": 2225.48,
+      "duration": 3.639,
+      "text": "to the actual"
+    },
+    {
+      "start": 2235.28,
+      "duration": 4.76,
+      "text": "record looks like it's good"
+    },
+    {
+      "start": 2247.76,
+      "duration": 5.24,
+      "text": "and then you would just go into this and"
+    },
+    {
+      "start": 2250.48,
+      "duration": 5.4,
+      "text": "you know because like I said you know a"
+    },
+    {
+      "start": 2253.0,
+      "duration": 4.56,
+      "text": "lot of well the ones that were because"
+    },
+    {
+      "start": 2255.88,
+      "duration": 3.36,
+      "text": "we're searching the entire catalog"
+    },
+    {
+      "start": 2257.56,
+      "duration": 4.559,
+      "text": "they're not always going to be indexed"
+    },
+    {
+      "start": 2259.24,
+      "duration": 5.52,
+      "text": "and transcribed and so you would have to"
+    },
+    {
+      "start": 2262.119,
+      "duration": 5.121,
+      "text": "browse Page by Page and just keep your"
+    },
+    {
+      "start": 2264.76,
+      "duration": 7.4,
+      "text": "eye open for"
+    },
+    {
+      "start": 2267.24,
+      "duration": 9.4,
+      "text": "any um you know gems hidden gems hidden"
+    },
+    {
+      "start": 2272.16,
+      "duration": 4.48,
+      "text": "information as you go along"
+    },
+    {
+      "start": 2279.599,
+      "duration": 3.76,
+      "text": "okay well I think"
+    },
+    {
+      "start": 2280.96,
+      "duration": 4.359,
+      "text": "that's that's it someone's asking if"
+    },
+    {
+      "start": 2283.359,
+      "duration": 5.48,
+      "text": "there's a"
+    },
+    {
+      "start": 2285.319,
+      "duration": 6.481,
+      "text": "handout um it's my first time and I"
+    },
+    {
+      "start": 2288.839,
+      "duration": 5.201,
+      "text": "wasn't aware of that but I don't know if"
+    },
+    {
+      "start": 2291.8,
+      "duration": 5.48,
+      "text": "Olivia can help"
+    },
+    {
+      "start": 2294.04,
+      "duration": 5.68,
+      "text": "me work something like that"
+    },
+    {
+      "start": 2297.28,
+      "duration": 4.319,
+      "text": "out yeah some of our speakers have hand"
+    },
+    {
+      "start": 2299.72,
+      "duration": 4.08,
+      "text": "outs some of them don't so it's up to"
+    },
+    {
+      "start": 2301.599,
+      "duration": 5.561,
+      "text": "you if you'd like to have one um if you"
+    },
+    {
+      "start": 2303.8,
+      "duration": 6.559,
+      "text": "want to make one later then that' be"
+    },
+    {
+      "start": 2307.16,
+      "duration": 5.679,
+      "text": "great but yeah it's up to you okay"
+    },
+    {
+      "start": 2310.359,
+      "duration": 4.521,
+      "text": "sounds good well if there's not any more"
+    },
+    {
+      "start": 2312.839,
+      "duration": 3.961,
+      "text": "questions I think we have one more"
+    },
+    {
+      "start": 2314.88,
+      "duration": 4.239,
+      "text": "question from Margaret she just asked a"
+    },
+    {
+      "start": 2316.8,
+      "duration": 4.16,
+      "text": "couple minutes ago she says does the ad"
+    },
+    {
+      "start": 2319.119,
+      "duration": 4.041,
+      "text": "on the right side make a list of items"
+    },
+    {
+      "start": 2320.96,
+      "duration": 2.2,
+      "text": "you"
+    },
+    {
+      "start": 2327.92,
+      "duration": 5.52,
+      "text": "found let's"
+    },
+    {
+      "start": 2331.16,
+      "duration": 8.12,
+      "text": "see I gu she's talking about like the"
+    },
+    {
+      "start": 2333.44,
+      "duration": 7.52,
+      "text": "add button I'm not sure yeah so"
+    },
+    {
+      "start": 2339.28,
+      "duration": 4.319,
+      "text": "yeah and you'll notice up here that if"
+    },
+    {
+      "start": 2340.96,
+      "duration": 4.24,
+      "text": "you wanted say to print the entire page"
+    },
+    {
+      "start": 2343.599,
+      "duration": 6.24,
+      "text": "you would click the print button and it"
+    },
+    {
+      "start": 2345.2,
+      "duration": 8.44,
+      "text": "would print all of your hits um or"
+    },
+    {
+      "start": 2349.839,
+      "duration": 6.921,
+      "text": "results and yes if I click on"
+    },
+    {
+      "start": 2353.64,
+      "duration": 5.92,
+      "text": "each of these because I want to come"
+    },
+    {
+      "start": 2356.76,
+      "duration": 5.88,
+      "text": "back to it later say or keep track of"
+    },
+    {
+      "start": 2359.56,
+      "duration": 6.12,
+      "text": "what I've researched then I could add"
+    },
+    {
+      "start": 2362.64,
+      "duration": 5.52,
+      "text": "those all to this catalog print list and"
+    },
+    {
+      "start": 2365.68,
+      "duration": 4.76,
+      "text": "then obviously it look print those just"
+    },
+    {
+      "start": 2368.16,
+      "duration": 5.64,
+      "text": "those specific ones that was a great"
+    },
+    {
+      "start": 2370.44,
+      "duration": 3.36,
+      "text": "question it's a"
+    },
+    {
+      "start": 2376.599,
+      "duration": 4.681,
+      "text": "handy all right another question a white"
+    },
+    {
+      "start": 2379.76,
+      "duration": 5.0,
+      "text": "says once you have found something"
+    },
+    {
+      "start": 2381.28,
+      "duration": 9.559,
+      "text": "promising how do you add it to the"
+    },
+    {
+      "start": 2384.76,
+      "duration": 10.8,
+      "text": "person right okay um so I'm not sure I"
+    },
+    {
+      "start": 2390.839,
+      "duration": 9.041,
+      "text": "could get there quickly but if you"
+    },
+    {
+      "start": 2395.56,
+      "duration": 7.279,
+      "text": "did let's say we quick on this"
+    },
+    {
+      "start": 2399.88,
+      "duration": 6.04,
+      "text": "one got to find one that's I think you"
+    },
+    {
+      "start": 2402.839,
+      "duration": 6.681,
+      "text": "can only let's"
+    },
+    {
+      "start": 2405.92,
+      "duration": 6.12,
+      "text": "see I'm not sure I've added books to"
+    },
+    {
+      "start": 2409.52,
+      "duration": 2.52,
+      "text": "specific"
+    },
+    {
+      "start": 2416.45,
+      "duration": 3.92,
+      "text": "[Music]"
+    },
+    {
+      "start": 2421.24,
+      "duration": 5.24,
+      "text": "ancestors as I've seen on the other"
+    },
+    {
+      "start": 2428.359,
+      "duration": 5.921,
+      "text": "Pages where you can just attach it to"
+    },
+    {
+      "start": 2431.17,
+      "duration": 3.11,
+      "text": "[Music]"
+    },
+    {
+      "start": 2437.44,
+      "duration": 6.32,
+      "text": "your or and I should have come up with"
+    },
+    {
+      "start": 2439.68,
+      "duration": 4.08,
+      "text": "an example of that let's"
+    },
+    {
+      "start": 2444.48,
+      "duration": 3.48,
+      "text": "see maybe we can"
+    },
+    {
+      "start": 2450.359,
+      "duration": 4.081,
+      "text": "justes ping up all of my"
+    },
+    {
+      "start": 2454.839,
+      "duration": 4.401,
+      "text": "computer we'll do some"
+    },
+    {
+      "start": 2468.52,
+      "duration": 3.16,
+      "text": "it will give me that"
+    },
+    {
+      "start": 2474.8,
+      "duration": 4.6,
+      "text": "option not seeing it on this"
+    },
+    {
+      "start": 2481.319,
+      "duration": 6.8,
+      "text": "either yeah I'm not sure then I I"
+    },
+    {
+      "start": 2485.119,
+      "duration": 3.0,
+      "text": "believe"
+    },
+    {
+      "start": 2490.4,
+      "duration": 5.439,
+      "text": "thought there was a"
+    },
+    {
+      "start": 2491.76,
+      "duration": 6.599,
+      "text": "quick connecting way um so because"
+    },
+    {
+      "start": 2495.839,
+      "duration": 5.121,
+      "text": "that's a question that I wasn't prepared"
+    },
+    {
+      "start": 2498.359,
+      "duration": 6.081,
+      "text": "for um I would just direct you straight"
+    },
+    {
+      "start": 2500.96,
+      "duration": 5.96,
+      "text": "to family search help section they"
+    },
+    {
+      "start": 2504.44,
+      "duration": 6.2,
+      "text": "actually I just was browsing through"
+    },
+    {
+      "start": 2506.92,
+      "duration": 7.0,
+      "text": "their YouTube videos and they have one"
+    },
+    {
+      "start": 2510.64,
+      "duration": 5.6,
+      "text": "specifically about um the catalog as"
+    },
+    {
+      "start": 2513.92,
+      "duration": 4.12,
+      "text": "well and he goes through the process of"
+    },
+    {
+      "start": 2516.24,
+      "duration": 3.44,
+      "text": "adding that record"
+    },
+    {
+      "start": 2518.04,
+      "duration": 3.2,
+      "text": "thank you everyone for joining us today"
+    },
+    {
+      "start": 2519.68,
+      "duration": 3.32,
+      "text": "we hope you will join us for our next"
+    },
+    {
+      "start": 2521.24,
+      "duration": 4.16,
+      "text": "webinar which is on October 3rd with"
+    },
+    {
+      "start": 2523.0,
+      "duration": 5.2,
+      "text": "James Tanner called don't be haunted by"
+    },
+    {
+      "start": 2525.4,
+      "duration": 4.719,
+      "text": "genealogical m if you would like to"
+    },
+    {
+      "start": 2528.2,
+      "duration": 4.68,
+      "text": "access a previous webinar of ours you"
+    },
+    {
+      "start": 2530.119,
+      "duration": 5.0,
+      "text": "can access that on our website which is"
+    },
+    {
+      "start": 2532.88,
+      "duration": 6.52,
+      "text": "a new one actually family"
+    },
+    {
+      "start": 2535.119,
+      "duration": 6.161,
+      "text": "history. um lib.byu.edu"
+    },
+    {
+      "start": 2539.4,
+      "duration": 6.52,
+      "text": "and"
+    },
+    {
+      "start": 2541.28,
+      "duration": 7.039,
+      "text": "um yeah this webinar will be posted by"
+    },
+    {
+      "start": 2545.92,
+      "duration": 5.399,
+      "text": "Monday and and we hope you have a"
+    },
+    {
+      "start": 2548.319,
+      "duration": 3.0,
+      "text": "wonderful week"
+    }
+  ],
+  "full_text": "welcome to the BYU Library family history webinar we're glad you could join us today my name is Olivia tuler and I'll be your host for this webinar if you have technical difficulties during the webinar please use the chat box that I can address your concerns you're welcome to use the chat box during the webinar for comments insights and questions however all questions will be addressed at the end of the presentation our next webinar is on October 3rd with James Taylor on don't be haunted by genealogical MTH if you would like to access a previous webinar of ours please visit our webinar index on our website or search on our YouTube channel all of our webinars are recorded and uploaded by the following Monday for your convenience we also post links to recordings and other updates on our Facebook and Twitter accounts for today's webinar we are pleased to hear from Christin Moss Pac on the family search catalog digging deeper before we begin here's a little bit about Christine Christin gained the love of genealogy as a teenager from some dedicated Sunday school teachers who encouraged her to index from printed document images on 3x5 cards and there was food almost a decade later she graduated from Bram Young University with a bachelor's degree in family history genealogy before too long she was in the Throgs of motherhood she found that being a stay-at-home mom brought her the greatest satisfaction and joy so she put her career on hold while she raised her five independent children she stayed active in the family history world as a presenter Sunday school teacher Community volunteer and helper she hired on as an a faculty member at Buu Idaho a few years ago something she could do while so caring for the last of her children currently she lives in Utah County and enjoys gazing at her Majestic mountains and we'll now turn the time over to Christine to share her screen hi so yes I am Christine Moss Pac and I am privileged and feel honored to be part of this webinar series at BYU found my History Center um as you heard from my bio I have a deep love for genealogy and I'm grateful to have been able to stay active in it while raising a family I know that's can be hard but I have enjoyed staying up to date um and because when I started you know in my field at BYU Provo I they didn't have the use of computers and so that has been a big big gap to fill but I've enjoyed getting um on board with all of the fun tools um I call my family a living genealogy because they are the most important right now and family history is and genealogy is about family you might get a kick out of this picture it's my husband who dug uh a spot in our yard to put an aquaponics Pond or a greenhouse so but I thought it would fit right in with our topic of family search catalog digging deeper my objective is to increase your desire and love for research by digging deeper into the family search catalog as we seek to find our people I say our people because I'm fond of them I know you probably are too and just as a kind of overviewer outline I will be basically contrasting the difference between searching from the main records page through family search versus getting into the whole family search catalog and then you'll also see all the many options the catalog search offers and how it applies you know in a pseudo research project I call it scratching the surface when we go to say our ancestors personal page and we look to our right and and notice any research helps um this particular relative does not have any any actual like records listed under her but that that's where you would find any that family search had automatically populated um I also tend to go to the easy access search records um window that shows me all the different places I might be able to find records for my ancestor in and and it takes me directly there um I believe that these are for the benefit of just you know like I said scratching the surface and making it so that people don't have to to know as much at the beginning and then as we get more familiar with genealogy then we can dig a Little Deeper um most of these standard searches are going to look like what I will um go over in this presentation so what does it look like with family search well if we go to the family search page and we click select the search menu you'll see that records is the first option on that menu and that takes you to this search historical records page that you see behind it with a with a basic um ability to type in names and a place and maybe a date and then family search will then um show us results for all of those different for for our relative and different records that they have in their database we can even search more specifically by clicking on the more option link down at the bottom and that just brings up more fields to add information and other people spouses maybe a different life event Etc that just so that just is going to refine or filter our search even more but it's still a basic level of searching and it will give us everything that family search has trans transcribed or indexed so that's my basic emphasis for this presentation is that when you're searching in this um particular records page or on this particular records page it is searching only what's been transcribed and indexed thus far and just as a kind of a heads up if we scroll down this page you'll find that there are a few ways to to dig a Little Deeper but I call it shallow digging so you might see the search field for finding a collection and it sends you to enter a place that your ancestor may be in um and as you know notice it says or sorry I got ahead of myself so you'll find in the find a collection it will it will search for a specific collection so when I type in um probate records for San PE County it will take me to any matches that it has and the collection for that County and then it will have me again repeat the process of putting in names and dates and places again and then it will search just in that collection there's also if you um scroll even further down there's a field called search by place and it will take you to the country or Province or state that you feel like your relative is in and and then again once again you'll type in all of the fields for that ancestor um so that you can search only in that specified location so what does the family search catalog offer um well instead of limiting our searches to just the index material we can access all of the Holdings found found at family search and at the family search Library family search has more material they are digitizing and collecting than can possibly be transcribed in a timely way so there are many items that can't be searched in the usual way these items include [Music] um microfilms magazines online and offline collections books Maps anything that a library would would collect for their physical Library location as well as online digitized collections the family search catalog gives us the ability to search those items that have not been transcribed into searchable form you'll notice that I've been saying that over and over and because that's where we're going to get to it might feel like you're going back to the methods we used pre computer era which I'm very familiar with in my degree at BYU but we still search for any item but we can still search for any item in the catalog via the Internet on their family search website there are many records that can even be seen in digital format so records that um may not have like I said been transcribed or index but they are still available to Us online for example or for example you may be able to get a book from the library um and have it inter Library loaned to a to another library in your community if that's a possibility sometimes it's not there's also collections that family search centers around the world have um put together that you can also visit one of those sites and and find those materials while we patiently wait for the time and manpower to chip away at the many records being collected by family search we can look for the harder records to find and dig even that much deeper so as I showed you before you can get to the catalog by selecting the search Tab and clicking on the catalog item in the menu I'll quickly outline the parts of the family search catalog page and you'll notice that there's now at the top of this page uh a new subcategory bar I would call it underneath the original and it has all of your search menu options listed across the top now that's just a side note okay so if you're looking at the family search catalog page you'll notice that it starts with search by place and each time you select one of the CATE one of the search options it will change this field position and but we're going to start with paid place so for place you'll find records by places obviously from and you can go from the largest jurisdiction all the way down to the smallest jurisdiction meaning um if I am researching a relative in say Italy I could either search for them um obviously starting with the entire country or I can narrow it down to smaller provinces or cities or Villages and things like that surnames um gives you the ability to find records by a specific suring oh and I just want to add in here that I will go through each of these options separately in a different slide so you'll get to see examples of each one but for now I just wanted to give you kind of an not then and I just add to the surname that if it's a surname that's obviously common you're not going to have as much luck finding exact things for it but you know the the more unique your name is the the more you'll find in the titles category or the search option um you can search for words that might be found in the actual book title and I'll give you an example of that later in the author option you search for any author of any collection or book that the library has and for subjects you'll you can search for subjects such as migration or there you know comes a time when um you'll find things like you know minority groups or things like that sorry you'll have to bear with me I'm not as good at this PowerPoint presentation as I thought I would be um the keywords search is generally for any word that may help you discover unique records for your ancestor and it's probably what I would consider the most General search you can make in the catalog for example I'll show you later about my search for migrant workers that's something that you know we can't often find just by looking for names and places of ancestors then you'll notice at the bottom well it's kind of the middle of this but the bottom of the area it says search for call number film fish group number Etc Image Group number and those are handy when you you may have looked at a record say previous to This urrent research session and you you would have noticed that a certain film that your ancestors on um may may be useful for a different ancestor say a child or a parent and you can s select that and actually go straight to the same film or F or image group number also if you recently checked out a book from the library and have the call number and you want to go right straight back to that call number you can use that feature as well and then the last thing on this page it has the availability and that comes into play when say like I talked about before when the family search centers have their own collections if you feel like you know I'm I'm living in this space and I need only the stuff that I can access in the family search center then you're going to go to and maybe select when you're searching that you want only the collections found in that family search center and then it will it will actually give you a drop- down menu of all the family search centers in the world and you can narrow it down from there so like I said I wanted to show you an example of each one of these searches and I started by typing in San Pete because I have a relative from there and I wasn't sure exactly how to spell it and you'll notice that even when I incorrectly spell it it gives me the exact standardized spelling option and once you have select one of those matches that you um would prefer then it brings you to the search results page and you'll notice on that this page that um that it lists every category of record in that jurisdiction so you'll notice you'll see you know in this example there's archives and libraries biography buildings and dwellings Etc and in the parentheses you'll see that the the amount of Records in that category now I now in the surname section I typed in sat Earth weight which is a unique name one of the few remember and it resulted in all of these different records and as you'll notice that this actually gives me the list of Records whereas the previous one for place it it will bring up the categories and then as you click on every drop- down me menu for that category you'll see the same kind of list so also I wanted to make a note that this particular my slideshow shows you how you can access the same search options from the sidebar as well and you'll notice that over here on the left and to save time I'm just going to stick with that left sidebar format and and when you're actually getting into the research yourself you'll notice that you can toggle between options you just will need to x out of the current option and then select an additional option separately just remember that you'll want to click update each time you change your search option you also have the option of filtering by these different categories availabilities language and format and I won't go through all of those today because I believe that the more you can do Hands-On the more you learn and so it'll be fun for you to go into those filters yourself and if you find that you might be getting lost in a in a filter of one kind or another you can always hit the back button on your web browser and it will take you back to where you've been okay so the next one I wanted to show you an example of is titles I happened to use one of my famous relatives John Pac and you'll notice that it didn't only just bring up a title name John pack but also anything with that those search words in it and then from there you can find out details and whatnot and I'll show you that in a minute I'm sure you're getting excited already to try this out because there's a gold mine of information and as we keep going you'll notice I tried an author's name Peter corer and it just so happens that he has written three different books and the way that I got to all three books was to click on this drop down arrow and then as I want to see each one of these books I just click on the link for each one then we're into subjects so subjects that I mentioned earlier one could be migration and in this case it has every country and every record that has something to do with migration for that country and it gives you that comprehensive list so you know at times when you're just Stu at a brick wall this may be a great way to open a door and and discern you know visually what is actually an option now for keywords I used um migrant workers and like I said if you want to reach records that are more generally given that might not have anything connected to even a place or a person um then you can use this keyword option and now another little hint when you're typing in your search words you'll find come to find that the search engine accounts for the same words in a different language so I don't have to know German or I don't have to know check when I'm typing in those words or vice versa if you have if you you know are familiar with a a different language and need to type in those words from that different language then it will also populate the results using an English version of that search I think is an incredible feature to this search engine now I selected one of those migration records and and I'm going to play this video and describe it as I as I'm going through this detailed um view of this record so at the top you'll notice that it has the title and who is responsible for it who authored it what the format is it's like books and monographs it's in English language where it was published how many pages it has ISBN in America and the subject class meaning this the call number and then you want to be careful to to read the notes and make sure that it's a document that will cover or help you discern or find the record you need for your ancestor um and you also see that there's a view how to view it in other possible locations so it's it may you know be that you're looking at the Dominican Republic um and maybe you're living in Texas or somewhere that where they migrated then um a library in that location may have the same or similar book and that will help you get there and then at the very bottom you'll see that it is located at the family history Library it's call number 97293 WTF and you'll if you're familiar with libraries you you'll note that most of the books in that category will be in that location and because it's an in-person option you'll have to do that at the family history library or like I said if if there's the possibility of doing inter Library loan that look as well now if we want to filter or search more specifically there's also the option to add a search um field so I stayed in keywords myor workers and now I'm going to add the word under place or the the search under place is Germany and it when I hit update it brought up two different record groups immigration and migration a history with two records it also brought brought up Germany migration with one record and if you'll notice if you click on the drop down arrow next to um next to the record field collection field it will give you the specific items in the library that you can access and then I just really quickly went through or went back to my original place because I wanted to show you kind of the thought process I go through as as I'm looking for these Collections and records and I wanted to find my ancestor in church records in s County Utah so I I looked for the specific title of the record to see if it would give me any more indicators of dates or of um what the record covers and so you want to make sure that you the appropriate category um of time right this the specific times and when I go into the record you'll see that there will be icons for different available formats as you get to the bottom and the location of that that item and you'll see in this format that it's a real to real not a real toore a reel a microfilm reel I should say and that re can be viewed at the family history Library as I said before and you would look it up by the film number Etc um I also looked for the same relative in the probate records and and found the appropriate date span and so when I clicked on that I noticed that the actual that it breaks it down even more into different year spans and so I picked the one that fit my ancestors information and I so excited that I saw this little camera icon which notes that it's actually been digitized in a in a you know online format and you'll notice that when you click on that camera icon that it will bring up an image screen just like this one and as you look through and click on different images you'll you'll want to get to know the format of this collection if it has an index say at the beginning of the manuscript book um you can also just browse Page by Page by using the forward and back buttons those of you that have index would be familiar with the the format of this page um and if you don't have time to just browse and give your you know whole attention to the entire manuscript um I ended up going back and just looking to make sure there wasn't an index and sure enough there was and so I found um that it covers a certain number of years once again and may not be an index for the years that I need but that doesn't stop me from wanting to to browse it and to to dig a Little Deeper so because I want more clues right I want to find maybe other relatives that will lead to the specific one I'm looking for and when I clicked in and and and went to the name group that I needed I I noticed that my ancestors relatives are listed here and one thing you want to um make sure that you do is record as you're going through your research you want to record all the names you know surnames and first names of those anyone that could possibly and potentially be one of your relatives and that will save you so much time in the future as you're you know as you actually put the pieces together of the puzzle and and each of these names that you've recorded end up being part of that puzzle and then because you've researched say one ancestor then you can go back to the same record and look at for that that same answer Anor or the the the extended pieces I should say the different ancestors um and especially helpful if they're all from the same area or it's kind of like you know the census when you go through the census you want to check for neighbors and things like that so anyway um that's all I have for this for this portion I I'm sure you have many questions um we may be able to get online and try a few things as well um I hope that it's created an excitement to to dig a little deeper and to to find more than just your ancestor um but maybe more information about where they lived how they lived you know their probate records their the histories of their town Etc so all right um thank you so much cred we do have a few questions already in the Q&A if you're open to answering those right now yes okay let's see from Lori we have can we search by more than one category at the same time like place the name together yes and you can actually um if I go back to this screen you'll notice that I search by place and keyword and you can actually add if you you know potentially wanted to or could it's also you know you can actually open each one of these search fields and search by each one now that would narrow your search you know dramatically but so say for example I wanted to look for surnames in Germany I could look um I could open the German the place field and the surname field and maybe I can actually get on to the web and show you of this really quick are there any other questions pulling that up um actually no I don't think we have any other specific questions I think they were just comments but yeah if anyone else has any questions please ask them in the Q&A or the chat is everyone seeing my my screen okay Olivia can you see that okay yes I'm seeing your web browser on the family search catalog so for example if we go to Germany and I just search Germany um if I wanted to add the surname [Music] um know then I can click update and it will just search for Germany and that surname looks like we have no results let's try something a little bit easier maybe a different place let's try oops SP and we'll try Moss it's not up with anything either H okay well this must mean that I don't have I can't specifically search just for those two things but let's say I try a subject and we put in there um ship for ship records then in this case it brought up the place right the category of record or collection once again you click on these down arrows and it will bring up this specific collection that they have um if we try say a keyword of just work in general that may be a little bit too General let's look at this history 11th century and there's a few other things that I'm seeing here in this record as you can tell it says under notes you can view a digital version of this which is an incredible option once again you'll want to read everything you can about each record and it will take me to the actual record looks like it's good and then you would just go into this and you know because like I said you know a lot of well the ones that were because we're searching the entire catalog they're not always going to be indexed and transcribed and so you would have to browse Page by Page and just keep your eye open for any um you know gems hidden gems hidden information as you go along okay well I think that's that's it someone's asking if there's a handout um it's my first time and I wasn't aware of that but I don't know if Olivia can help me work something like that out yeah some of our speakers have hand outs some of them don't so it's up to you if you'd like to have one um if you want to make one later then that' be great but yeah it's up to you okay sounds good well if there's not any more questions I think we have one more question from Margaret she just asked a couple minutes ago she says does the ad on the right side make a list of items you found let's see I gu she's talking about like the add button I'm not sure yeah so yeah and you'll notice up here that if you wanted say to print the entire page you would click the print button and it would print all of your hits um or results and yes if I click on each of these because I want to come back to it later say or keep track of what I've researched then I could add those all to this catalog print list and then obviously it look print those just those specific ones that was a great question it's a handy all right another question a white says once you have found something promising how do you add it to the person right okay um so I'm not sure I could get there quickly but if you did let's say we quick on this one got to find one that's I think you can only let's see I'm not sure I've added books to specific [Music] ancestors as I've seen on the other Pages where you can just attach it to [Music] your or and I should have come up with an example of that let's see maybe we can justes ping up all of my computer we'll do some it will give me that option not seeing it on this either yeah I'm not sure then I I believe thought there was a quick connecting way um so because that's a question that I wasn't prepared for um I would just direct you straight to family search help section they actually I just was browsing through their YouTube videos and they have one specifically about um the catalog as well and he goes through the process of adding that record thank you everyone for joining us today we hope you will join us for our next webinar which is on October 3rd with James Tanner called don't be haunted by genealogical m if you would like to access a previous webinar of ours you can access that on our website which is a new one actually family history. um lib.byu.edu and um yeah this webinar will be posted by Monday and and we hope you have a wonderful week",
+  "attempts": [
+    {
+      "client": "IOS",
+      "playability": {
+        "status": "OK",
+        "playableInEmbed": true,
+        "offlineability": {
+          "buttonRenderer": {
+            "navigationEndpoint": {
+              "clickTrackingParams": "CAkQ6ewBIhMIxYi_jOzblwMVR0pMCB1MCQIEygEEQohIMw==",
+              "ypcGetOfflineUpsellEndpoint": {
+                "params": "ChPqqN25AQ0KC01NZTY3SkxnUzA4IgtNTWU2N0pMZ1MwOCoVCAkYAVIPCgtNTWU2N0pMZ1MwOCAB"
+              }
+            },
+            "trackingParams": "CAkQ6ewBIhMIxYi_jOzblwMVR0pMCB1MCQIE"
+          }
+        },
+        "pictureInPicture": {
+          "pictureInPictureRenderer": {
+            "playableInPip": true,
+            "offByDefault": false,
+            "shouldResumeOnHead": false
+          }
+        },
+        "miniplayer": {
+          "miniplayerRenderer": {
+            "playbackMode": "PLAYBACK_MODE_ALLOW"
+          }
+        },
+        "contextParams": "Q0FFU0FnZ0M="
+      },
+      "outcome": "ok"
+    }
+  ],
+  "fetched_at": "2026-10-28T04:11:24.019631+00:00",
+  "client": "IOS",
+  "json_path": "transcripts/066_MMe67JLgS08.json",
+  "text_path": "transcripts/066_MMe67JLgS08.txt"
+}

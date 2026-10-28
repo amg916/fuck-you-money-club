@@ -1,0 +1,3491 @@
+{
+  "index": 171,
+  "url": "https://www.youtube.com/watch?v=NtfeEhpvcuk",
+  "video_id": "NtfeEhpvcuk",
+  "status": "ok",
+  "metadata": {
+    "title": "NODES 2024 - Beyond the Silos  Achieving Data Harmony With Graph Based ER",
+    "author": "Neo4j",
+    "channelId": "UCvze3hU6OZBkB1vkhH2lH9Q",
+    "lengthSeconds": "1813",
+    "viewCount": "149",
+    "shortDescription": "Entity Resolution (ER) serves to interlink fragmented and dispersed data, facilitating the identification of records representing identical real-world entities. This function is pivotal for intelligence analysis, enriching investigations by ensuring comprehensive and uniform data merging.\n This session will showcase a robust end-to-end approach for precise and effective data consolidation, adaptable to batch or incremental processing and predominantly reliant on graphs. Key themes will encompass customizable similarity rules, harnessing node attributes and relationship patterns, and strategic utilization of Neo4j indexes and GDS. Additionally, we’ll delve into diverse data modeling strategies, evaluating their advantages and drawbacks and how to accommodate dynamic data changes.\n\nWith Federica Ventruto\n\n\nGet certified with GraphAcademy: https://dev.neo4j.com/learngraph\nNeo4j AuraDB https://dev.neo4j.com/auradb\nKnowledge Graph Builder https://dev.neo4j.com/KGBuilder\nNeo4j GenAI https://dev.neo4j.com/graphrag",
+    "keywords": [
+      "neo4j",
+      "graph databases",
+      "graphs",
+      "nosql",
+      "LLM",
+      "retrieval augmented generation",
+      "RAG",
+      "vector database",
+      "vector search",
+      "GenAI",
+      "AI",
+      "Artificial intelligence"
+    ]
+  },
+  "caption_tracks": [
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=NtfeEhpvcuk&ei=_nXhauiWFP6ZsfIP7rrN6Qk&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185902&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=C3632E68AF064645EA537EBC8547FFDECDECCC34.1A3C23E49034B71CC2E5A53ACFC37C2CF2866450&key=yt8&kind=asr&lang=en",
+      "name": {
+        "runs": [
+          {
+            "text": "English (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.en",
+      "languageCode": "en",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    }
+  ],
+  "selected_track": {
+    "baseUrl": "https://www.youtube.com/api/timedtext?v=NtfeEhpvcuk&ei=_nXhauiWFP6ZsfIP7rrN6Qk&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185902&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=C3632E68AF064645EA537EBC8547FFDECDECCC34.1A3C23E49034B71CC2E5A53ACFC37C2CF2866450&key=yt8&kind=asr&lang=en",
+    "name": {
+      "runs": [
+        {
+          "text": "English (auto-generated)"
+        }
+      ]
+    },
+    "vssId": "a.en",
+    "languageCode": "en",
+    "kind": "asr",
+    "isTranslatable": true,
+    "trackName": ""
+  },
+  "segments": [
+    {
+      "start": 8.8,
+      "duration": 5.64,
+      "text": "hello everyone and thank you for joining"
+    },
+    {
+      "start": 11.679,
+      "duration": 4.881,
+      "text": "I'm fed ventrudo the scientist at graph"
+    },
+    {
+      "start": 14.44,
+      "duration": 4.44,
+      "text": "hour and graph hour is a globally"
+    },
+    {
+      "start": 16.56,
+      "duration": 5.6,
+      "text": "recognized graph technology company and"
+    },
+    {
+      "start": 18.88,
+      "duration": 5.76,
+      "text": "the creator of yum our connected data"
+    },
+    {
+      "start": 22.16,
+      "duration": 4.92,
+      "text": "analytics platform and we'll present"
+    },
+    {
+      "start": 24.64,
+      "duration": 4.719,
+      "text": "today's session about a graph based"
+    },
+    {
+      "start": 27.08,
+      "duration": 5.479,
+      "text": "entity resolution approach in order to"
+    },
+    {
+      "start": 29.359,
+      "duration": 5.761,
+      "text": "achieve data Harmony so we will start"
+    },
+    {
+      "start": 32.559,
+      "duration": 4.68,
+      "text": "with a bit of context and applications"
+    },
+    {
+      "start": 35.12,
+      "duration": 4.4,
+      "text": "why and when you should apply HD"
+    },
+    {
+      "start": 37.239,
+      "duration": 4.041,
+      "text": "resolution then we'll discuss the"
+    },
+    {
+      "start": 39.52,
+      "duration": 3.48,
+      "text": "process from a technical point of view"
+    },
+    {
+      "start": 41.28,
+      "duration": 4.68,
+      "text": "and in particular we will focus our"
+    },
+    {
+      "start": 43.0,
+      "duration": 5.44,
+      "text": "attention on the incremental or realtime"
+    },
+    {
+      "start": 45.96,
+      "duration": 4.279,
+      "text": "process next we'll discuss a few data"
+    },
+    {
+      "start": 48.44,
+      "duration": 4.68,
+      "text": "modeling options that we have in order"
+    },
+    {
+      "start": 50.239,
+      "duration": 5.881,
+      "text": "to represent the resolution results and"
+    },
+    {
+      "start": 53.12,
+      "duration": 5.64,
+      "text": "after that we will see a y demo we"
+    },
+    {
+      "start": 56.12,
+      "duration": 5.56,
+      "text": "conclude with a few takeaways and"
+    },
+    {
+      "start": 58.76,
+      "duration": 5.439,
+      "text": "question and answers"
+    },
+    {
+      "start": 61.68,
+      "duration": 5.04,
+      "text": "so entity resolution is a crucial"
+    },
+    {
+      "start": 64.199,
+      "duration": 4.361,
+      "text": "process in data management that involves"
+    },
+    {
+      "start": 66.72,
+      "duration": 4.64,
+      "text": "establishing connections between"
+    },
+    {
+      "start": 68.56,
+      "duration": 5.12,
+      "text": "scattered and incomplete records to"
+    },
+    {
+      "start": 71.36,
+      "duration": 4.6,
+      "text": "resolve the same real world entity or"
+    },
+    {
+      "start": 73.68,
+      "duration": 5.2,
+      "text": "the same real world profile so let's"
+    },
+    {
+      "start": 75.96,
+      "duration": 4.88,
+      "text": "suppose that we are ingesting data about"
+    },
+    {
+      "start": 78.88,
+      "duration": 4.599,
+      "text": "people coming from different data"
+    },
+    {
+      "start": 80.84,
+      "duration": 4.68,
+      "text": "sources now according to the source of"
+    },
+    {
+      "start": 83.479,
+      "duration": 4.6,
+      "text": "our data we might have that the same"
+    },
+    {
+      "start": 85.52,
+      "duration": 5.279,
+      "text": "person is referred to by using different"
+    },
+    {
+      "start": 88.079,
+      "duration": 5.161,
+      "text": "identifiers different ID that are for"
+    },
+    {
+      "start": 90.799,
+      "duration": 5.441,
+      "text": "instance the license ID the insurance ID"
+    },
+    {
+      "start": 93.24,
+      "duration": 6.04,
+      "text": "and so on there are many options also"
+    },
+    {
+      "start": 96.24,
+      "duration": 5.199,
+      "text": "the same um attribute could be written"
+    },
+    {
+      "start": 99.28,
+      "duration": 4.839,
+      "text": "in different ways so here we have the"
+    },
+    {
+      "start": 101.439,
+      "duration": 5.401,
+      "text": "name including the middle name we might"
+    },
+    {
+      "start": 104.119,
+      "duration": 5.04,
+      "text": "have the name written as last name comma"
+    },
+    {
+      "start": 106.84,
+      "duration": 7.16,
+      "text": "first name or two different attributes"
+    },
+    {
+      "start": 109.159,
+      "duration": 6.96,
+      "text": "for first name and last name so having"
+    },
+    {
+      "start": 114.0,
+      "duration": 5.159,
+      "text": "the process having a process that allows"
+    },
+    {
+      "start": 116.119,
+      "duration": 5.561,
+      "text": "us to resolve and disambiguate these"
+    },
+    {
+      "start": 119.159,
+      "duration": 4.841,
+      "text": "entities these records is fundamental"
+    },
+    {
+      "start": 121.68,
+      "duration": 6.96,
+      "text": "because allows us to reach a unified"
+    },
+    {
+      "start": 124.0,
+      "duration": 8.08,
+      "text": "view of your entities of of our entities"
+    },
+    {
+      "start": 128.64,
+      "duration": 5.56,
+      "text": "in order to reach a cohesive"
+    },
+    {
+      "start": 132.08,
+      "duration": 4.12,
+      "text": "understanding this allows us to go"
+    },
+    {
+      "start": 134.2,
+      "duration": 3.759,
+      "text": "beyond the classic Silo situation in"
+    },
+    {
+      "start": 136.2,
+      "duration": 3.72,
+      "text": "which different data sources do not"
+    },
+    {
+      "start": 137.959,
+      "duration": 4.321,
+      "text": "interact to each other and instead"
+    },
+    {
+      "start": 139.92,
+      "duration": 4.88,
+      "text": "reaching a system in which we can create"
+    },
+    {
+      "start": 142.28,
+      "duration": 5.16,
+      "text": "a real knowledge and different sources"
+    },
+    {
+      "start": 144.8,
+      "duration": 5.88,
+      "text": "interact so we can merge the information"
+    },
+    {
+      "start": 147.44,
+      "duration": 6.48,
+      "text": "that we have from them for this reason"
+    },
+    {
+      "start": 150.68,
+      "duration": 6.48,
+      "text": "entity resolution helps in reducing"
+    },
+    {
+      "start": 153.92,
+      "duration": 7.0,
+      "text": "complexity of the data and perform more"
+    },
+    {
+      "start": 157.16,
+      "duration": 6.04,
+      "text": "accurate analyses and predictions in our"
+    },
+    {
+      "start": 160.92,
+      "duration": 4.72,
+      "text": "approach entity resolution is a two"
+    },
+    {
+      "start": 163.2,
+      "duration": 4.759,
+      "text": "phases process the first phase that we"
+    },
+    {
+      "start": 165.64,
+      "duration": 4.84,
+      "text": "call candidate selection and ranking"
+    },
+    {
+      "start": 167.959,
+      "duration": 5.721,
+      "text": "essentially involves some custom defined"
+    },
+    {
+      "start": 170.48,
+      "duration": 6.32,
+      "text": "rules in order to compute to identify"
+    },
+    {
+      "start": 173.68,
+      "duration": 5.08,
+      "text": "potential matches in the graph so at the"
+    },
+    {
+      "start": 176.8,
+      "duration": 4.48,
+      "text": "end of this process we will have our"
+    },
+    {
+      "start": 178.76,
+      "duration": 4.64,
+      "text": "graph with the some additional"
+    },
+    {
+      "start": 181.28,
+      "duration": 6.0,
+      "text": "similarity relationship each of them"
+    },
+    {
+      "start": 183.4,
+      "duration": 5.88,
+      "text": "with uh the related similarity score at"
+    },
+    {
+      "start": 187.28,
+      "duration": 4.48,
+      "text": "the end of this step there is the"
+    },
+    {
+      "start": 189.28,
+      "duration": 4.56,
+      "text": "resolution phase in which we employ some"
+    },
+    {
+      "start": 191.76,
+      "duration": 4.559,
+      "text": "Community detection algorithms to"
+    },
+    {
+      "start": 193.84,
+      "duration": 6.759,
+      "text": "identify uh communities of nodes that"
+    },
+    {
+      "start": 196.319,
+      "duration": 7.0,
+      "text": "are closely uh connected and each"
+    },
+    {
+      "start": 200.599,
+      "duration": 4.601,
+      "text": "Community is likely to represent the"
+    },
+    {
+      "start": 203.319,
+      "duration": 5.721,
+      "text": "same real world entity so these"
+    },
+    {
+      "start": 205.2,
+      "duration": 5.319,
+      "text": "communities are in the end the final um"
+    },
+    {
+      "start": 209.04,
+      "duration": 4.68,
+      "text": "the final"
+    },
+    {
+      "start": 210.519,
+      "duration": 6.841,
+      "text": "s so let's see these two phases in"
+    },
+    {
+      "start": 213.72,
+      "duration": 6.0,
+      "text": "detail the first step the first phase is"
+    },
+    {
+      "start": 217.36,
+      "duration": 4.519,
+      "text": "the candidate selection and ranking and"
+    },
+    {
+      "start": 219.72,
+      "duration": 4.28,
+      "text": "it is a single process in our approach"
+    },
+    {
+      "start": 221.879,
+      "duration": 5.0,
+      "text": "in the sense that we perform it by using"
+    },
+    {
+      "start": 224.0,
+      "duration": 4.76,
+      "text": "a single query but I'd like for a moment"
+    },
+    {
+      "start": 226.879,
+      "duration": 5.0,
+      "text": "to keep them separated so that we can"
+    },
+    {
+      "start": 228.76,
+      "duration": 6.72,
+      "text": "start explaining the um the selection"
+    },
+    {
+      "start": 231.879,
+      "duration": 5.92,
+      "text": "and then see the rank phase so candidate"
+    },
+    {
+      "start": 235.48,
+      "duration": 5.679,
+      "text": "selection i'ms to identify potential"
+    },
+    {
+      "start": 237.799,
+      "duration": 6.44,
+      "text": "matches among records based on custom"
+    },
+    {
+      "start": 241.159,
+      "duration": 4.72,
+      "text": "rotes when it come to the rots we can"
+    },
+    {
+      "start": 244.239,
+      "duration": 3.881,
+      "text": "distinguish them according to the type"
+    },
+    {
+      "start": 245.879,
+      "duration": 4.881,
+      "text": "of information that they leverage in the"
+    },
+    {
+      "start": 248.12,
+      "duration": 6.039,
+      "text": "graph and the first type of rules is of"
+    },
+    {
+      "start": 250.76,
+      "duration": 6.96,
+      "text": "course the the ones that depend on nod"
+    },
+    {
+      "start": 254.159,
+      "duration": 5.521,
+      "text": "attributes here in in this picture there"
+    },
+    {
+      "start": 257.72,
+      "duration": 4.359,
+      "text": "is an example that is the same social"
+    },
+    {
+      "start": 259.68,
+      "duration": 4.72,
+      "text": "security number this is a rule of type"
+    },
+    {
+      "start": 262.079,
+      "duration": 4.4,
+      "text": "node attribute because it is using the"
+    },
+    {
+      "start": 264.4,
+      "duration": 4.48,
+      "text": "social security number that is indeed an"
+    },
+    {
+      "start": 266.479,
+      "duration": 5.321,
+      "text": "attribute of our person nodes that we"
+    },
+    {
+      "start": 268.88,
+      "duration": 5.879,
+      "text": "are supposed in to resolve in this"
+    },
+    {
+      "start": 271.8,
+      "duration": 6.04,
+      "text": "case now these rules are very easy to"
+    },
+    {
+      "start": 274.759,
+      "duration": 4.961,
+      "text": "manage but usually they are not enough"
+    },
+    {
+      "start": 277.84,
+      "duration": 4.199,
+      "text": "because the problem I mean the problem"
+    },
+    {
+      "start": 279.72,
+      "duration": 5.319,
+      "text": "that we have with the resolution is that"
+    },
+    {
+      "start": 282.039,
+      "duration": 4.88,
+      "text": "we usually do not have uh unique"
+    },
+    {
+      "start": 285.039,
+      "duration": 5.121,
+      "text": "identifiers that we can use to"
+    },
+    {
+      "start": 286.919,
+      "duration": 5.441,
+      "text": "distinguish among uh different entities"
+    },
+    {
+      "start": 290.16,
+      "duration": 5.759,
+      "text": "so for this reason we need to leverage"
+    },
+    {
+      "start": 292.36,
+      "duration": 6.24,
+      "text": "the context of of the graph and the"
+    },
+    {
+      "start": 295.919,
+      "duration": 5.361,
+      "text": "indirect uh relationship linked to the"
+    },
+    {
+      "start": 298.6,
+      "duration": 5.64,
+      "text": "nodes and this is why there are other"
+    },
+    {
+      "start": 301.28,
+      "duration": 6.12,
+      "text": "type of rules that we can Define and"
+    },
+    {
+      "start": 304.24,
+      "duration": 5.72,
+      "text": "among them there are graph pattern rules"
+    },
+    {
+      "start": 307.4,
+      "duration": 5.359,
+      "text": "we say that two entities are similar"
+    },
+    {
+      "start": 309.96,
+      "duration": 4.92,
+      "text": "according to Gap pattern rules when"
+    },
+    {
+      "start": 312.759,
+      "duration": 4.521,
+      "text": "these two entities are linked to some"
+    },
+    {
+      "start": 314.88,
+      "duration": 5.2,
+      "text": "common nodes through relationship or"
+    },
+    {
+      "start": 317.28,
+      "duration": 4.6,
+      "text": "Paths of the same type in this case for"
+    },
+    {
+      "start": 320.08,
+      "duration": 6.16,
+      "text": "instance we can say that the two person"
+    },
+    {
+      "start": 321.88,
+      "duration": 6.36,
+      "text": "are um satisfy a rule of type same"
+    },
+    {
+      "start": 326.24,
+      "duration": 4.239,
+      "text": "address if they are linked to the same"
+    },
+    {
+      "start": 328.24,
+      "duration": 5.16,
+      "text": "address or the same location through the"
+    },
+    {
+      "start": 330.479,
+      "duration": 6.041,
+      "text": "same type of relationship in this case"
+    },
+    {
+      "start": 333.4,
+      "duration": 6.32,
+      "text": "as address there are also composite"
+    },
+    {
+      "start": 336.52,
+      "duration": 5.84,
+      "text": "rules that combine both node attributes"
+    },
+    {
+      "start": 339.72,
+      "duration": 6.52,
+      "text": "and graph patterns so similar name and"
+    },
+    {
+      "start": 342.36,
+      "duration": 5.92,
+      "text": "same address is a rule of this type as"
+    },
+    {
+      "start": 346.24,
+      "duration": 3.88,
+      "text": "the name is essentially a property of"
+    },
+    {
+      "start": 348.28,
+      "duration": 5.479,
+      "text": "the person nodes and for the same"
+    },
+    {
+      "start": 350.12,
+      "duration": 7.28,
+      "text": "address we are checking a pattern in the"
+    },
+    {
+      "start": 353.759,
+      "duration": 6.641,
+      "text": "graph now the rank process has to score"
+    },
+    {
+      "start": 357.4,
+      "duration": 5.56,
+      "text": "potential matches in the graph"
+    },
+    {
+      "start": 360.4,
+      "duration": 4.88,
+      "text": "and in our proposal we have two levels"
+    },
+    {
+      "start": 362.96,
+      "duration": 4.44,
+      "text": "of scoring the first one is represented"
+    },
+    {
+      "start": 365.28,
+      "duration": 5.56,
+      "text": "by the similarity score that is competed"
+    },
+    {
+      "start": 367.4,
+      "duration": 6.88,
+      "text": "by using a similarity measure it returns"
+    },
+    {
+      "start": 370.84,
+      "duration": 6.32,
+      "text": "usually results that goes from zero to"
+    },
+    {
+      "start": 374.28,
+      "duration": 4.84,
+      "text": "to one and here we have a few examples"
+    },
+    {
+      "start": 377.16,
+      "duration": 3.68,
+      "text": "so in the case of same social security"
+    },
+    {
+      "start": 379.12,
+      "duration": 3.84,
+      "text": "number these two entities have a"
+    },
+    {
+      "start": 380.84,
+      "duration": 5.68,
+      "text": "similarity score of one as we are"
+    },
+    {
+      "start": 382.96,
+      "duration": 7.28,
+      "text": "checking the exact matching of the"
+    },
+    {
+      "start": 386.52,
+      "duration": 7.84,
+      "text": "social securities so the score is uh is"
+    },
+    {
+      "start": 390.24,
+      "duration": 6.16,
+      "text": "exact is one while for the similar name"
+    },
+    {
+      "start": 394.36,
+      "duration": 4.04,
+      "text": "and same address we are considering a"
+    },
+    {
+      "start": 396.4,
+      "duration": 4.079,
+      "text": "similarity measure the similarity of the"
+    },
+    {
+      "start": 398.4,
+      "duration": 5.96,
+      "text": "names of this person so in this case"
+    },
+    {
+      "start": 400.479,
+      "duration": 6.481,
+      "text": "this similarity score is uh obtained by"
+    },
+    {
+      "start": 404.36,
+      "duration": 4.239,
+      "text": "Computing the similarity of the two"
+    },
+    {
+      "start": 406.96,
+      "duration": 4.48,
+      "text": "record"
+    },
+    {
+      "start": 408.599,
+      "duration": 5.04,
+      "text": "names with this approach is also"
+    },
+    {
+      "start": 411.44,
+      "duration": 4.439,
+      "text": "possible to Define optionally a"
+    },
+    {
+      "start": 413.639,
+      "duration": 4.081,
+      "text": "threshold so that we Define a similar"
+    },
+    {
+      "start": 415.879,
+      "duration": 4.121,
+      "text": "only pair of notes that have a"
+    },
+    {
+      "start": 417.72,
+      "duration": 3.479,
+      "text": "similarity that is higher than the fixed"
+    },
+    {
+      "start": 420.0,
+      "duration": 4.199,
+      "text": "threshold so that we have the"
+    },
+    {
+      "start": 421.199,
+      "duration": 5.84,
+      "text": "possibility to filter out some"
+    },
+    {
+      "start": 424.199,
+      "duration": 4.881,
+      "text": "payers the second level of scoring is"
+    },
+    {
+      "start": 427.039,
+      "duration": 4.16,
+      "text": "represented by the importance of the"
+    },
+    {
+      "start": 429.08,
+      "duration": 6.48,
+      "text": "rule this is a property of the rule"
+    },
+    {
+      "start": 431.199,
+      "duration": 6.72,
+      "text": "itself and allows us to um score the"
+    },
+    {
+      "start": 435.56,
+      "duration": 4.759,
+      "text": "rules according to their"
+    },
+    {
+      "start": 437.919,
+      "duration": 5.441,
+      "text": "importance what we will consider in the"
+    },
+    {
+      "start": 440.319,
+      "duration": 5.28,
+      "text": "end is the final value that we got by"
+    },
+    {
+      "start": 443.36,
+      "duration": 4.959,
+      "text": "multiplying the similarity score and the"
+    },
+    {
+      "start": 445.599,
+      "duration": 5.961,
+      "text": "importance score of the rule so this"
+    },
+    {
+      "start": 448.319,
+      "duration": 5.521,
+      "text": "value that we you can see here is the"
+    },
+    {
+      "start": 451.56,
+      "duration": 5.68,
+      "text": "final value that we will consider later"
+    },
+    {
+      "start": 453.84,
+      "duration": 6.56,
+      "text": "on during the resolution phase and it's"
+    },
+    {
+      "start": 457.24,
+      "duration": 6.44,
+      "text": "what we will call um similarity"
+    },
+    {
+      "start": 460.4,
+      "duration": 6.32,
+      "text": "similarity value or similarity score now"
+    },
+    {
+      "start": 463.68,
+      "duration": 4.84,
+      "text": "I'd like to show you a few examples of"
+    },
+    {
+      "start": 466.72,
+      "duration": 3.479,
+      "text": "the queries that we can use during the"
+    },
+    {
+      "start": 468.52,
+      "duration": 5.639,
+      "text": "candidate selection and the ranking"
+    },
+    {
+      "start": 470.199,
+      "duration": 6.0,
+      "text": "phase and you as you can see these step"
+    },
+    {
+      "start": 474.159,
+      "duration": 4.48,
+      "text": "can be performed by just using the"
+    },
+    {
+      "start": 476.199,
+      "duration": 4.481,
+      "text": "cipher queries and this is the the query"
+    },
+    {
+      "start": 478.639,
+      "duration": 4.321,
+      "text": "that we are using that we can use for"
+    },
+    {
+      "start": 480.68,
+      "duration": 4.639,
+      "text": "same social security number"
+    },
+    {
+      "start": 482.96,
+      "duration": 5.079,
+      "text": "rule this process the candidate"
+    },
+    {
+      "start": 485.319,
+      "duration": 4.6,
+      "text": "selection is a process that we execute"
+    },
+    {
+      "start": 488.039,
+      "duration": 4.761,
+      "text": "in a streaming mode in the sense that"
+    },
+    {
+      "start": 489.919,
+      "duration": 5.881,
+      "text": "for each input node we identify all the"
+    },
+    {
+      "start": 492.8,
+      "duration": 4.92,
+      "text": "entities that match the uh the the rule"
+    },
+    {
+      "start": 495.8,
+      "duration": 3.76,
+      "text": "that we are considering in this case all"
+    },
+    {
+      "start": 497.72,
+      "duration": 4.28,
+      "text": "the person no that have essentially the"
+    },
+    {
+      "start": 499.56,
+      "duration": 5.72,
+      "text": "same social security number then we"
+    },
+    {
+      "start": 502.0,
+      "duration": 6.12,
+      "text": "compute the score as I said before by"
+    },
+    {
+      "start": 505.28,
+      "duration": 6.72,
+      "text": "multiplying uh the the rule score in"
+    },
+    {
+      "start": 508.12,
+      "duration": 7.32,
+      "text": "this case the same sociality number as a"
+    },
+    {
+      "start": 512.0,
+      "duration": 6.959,
+      "text": "rule score of 0.8 and the similarity"
+    },
+    {
+      "start": 515.44,
+      "duration": 5.719,
+      "text": "score and then we return for each input"
+    },
+    {
+      "start": 518.959,
+      "duration": 4.56,
+      "text": "node that is represented by this node ID"
+    },
+    {
+      "start": 521.159,
+      "duration": 4.401,
+      "text": "so in this case start node identity we"
+    },
+    {
+      "start": 523.519,
+      "duration": 3.681,
+      "text": "will have the list the collection"
+    },
+    {
+      "start": 525.56,
+      "duration": 4.92,
+      "text": "essentially because we are collecting"
+    },
+    {
+      "start": 527.2,
+      "duration": 6.079,
+      "text": "them um the the list of entities that"
+    },
+    {
+      "start": 530.48,
+      "duration": 5.4,
+      "text": "match for each of them we we have the ID"
+    },
+    {
+      "start": 533.279,
+      "duration": 4.961,
+      "text": "and the similarity score so that later"
+    },
+    {
+      "start": 535.88,
+      "duration": 4.12,
+      "text": "on we can create the similarity"
+    },
+    {
+      "start": 538.24,
+      "duration": 3.48,
+      "text": "relationships"
+    },
+    {
+      "start": 540.0,
+      "duration": 3.76,
+      "text": "here there is another example in this"
+    },
+    {
+      "start": 541.72,
+      "duration": 4.76,
+      "text": "case we are considering similar name and"
+    },
+    {
+      "start": 543.76,
+      "duration": 5.759,
+      "text": "same address rule again we execute the"
+    },
+    {
+      "start": 546.48,
+      "duration": 5.24,
+      "text": "process in a streaming mode but in this"
+    },
+    {
+      "start": 549.519,
+      "duration": 4.241,
+      "text": "um in this situation we have two"
+    },
+    {
+      "start": 551.72,
+      "duration": 4.679,
+      "text": "different pieces of the query that are"
+    },
+    {
+      "start": 553.76,
+      "duration": 5.4,
+      "text": "dealing with the selection part and the"
+    },
+    {
+      "start": 556.399,
+      "duration": 6.521,
+      "text": "ranking part so for this selection we"
+    },
+    {
+      "start": 559.16,
+      "duration": 7.04,
+      "text": "are using a f text index on the"
+    },
+    {
+      "start": 562.92,
+      "duration": 7.039,
+      "text": "name of the person and these in order to"
+    },
+    {
+      "start": 566.2,
+      "duration": 6.8,
+      "text": "streamline the process then we check the"
+    },
+    {
+      "start": 569.959,
+      "duration": 4.961,
+      "text": "we check the condition that is we filter"
+    },
+    {
+      "start": 573.0,
+      "duration": 3.56,
+      "text": "essentially according to the same"
+    },
+    {
+      "start": 574.92,
+      "duration": 4.52,
+      "text": "address"
+    },
+    {
+      "start": 576.56,
+      "duration": 5.36,
+      "text": "condition then there is the ranking phe"
+    },
+    {
+      "start": 579.44,
+      "duration": 4.639,
+      "text": "and in this case we are using the S"
+    },
+    {
+      "start": 581.92,
+      "duration": 5.159,
+      "text": "similarity string similarity"
+    },
+    {
+      "start": 584.079,
+      "duration": 5.241,
+      "text": "function computed by considering the"
+    },
+    {
+      "start": 587.079,
+      "duration": 4.801,
+      "text": "names of the two person the reason why"
+    },
+    {
+      "start": 589.32,
+      "duration": 5.079,
+      "text": "we are using this function is because it"
+    },
+    {
+      "start": 591.88,
+      "duration": 4.92,
+      "text": "return returns normalized values between"
+    },
+    {
+      "start": 594.399,
+      "duration": 5.12,
+      "text": "zero and and one so instead of"
+    },
+    {
+      "start": 596.8,
+      "duration": 5.0,
+      "text": "normalizing the results of the PO text"
+    },
+    {
+      "start": 599.519,
+      "duration": 4.801,
+      "text": "just used this this other function that"
+    },
+    {
+      "start": 601.8,
+      "duration": 5.0,
+      "text": "is another option that we have but this"
+    },
+    {
+      "start": 604.32,
+      "duration": 5.199,
+      "text": "is important because allows us to to"
+    },
+    {
+      "start": 606.8,
+      "duration": 6.36,
+      "text": "show the way in which we can customize"
+    },
+    {
+      "start": 609.519,
+      "duration": 6.281,
+      "text": "Our Roots by using different ranking"
+    },
+    {
+      "start": 613.16,
+      "duration": 5.799,
+      "text": "functions similarity functions or"
+    },
+    {
+      "start": 615.8,
+      "duration": 6.159,
+      "text": "splitting the candidate selection and"
+    },
+    {
+      "start": 618.959,
+      "duration": 5.44,
+      "text": "then the candidate ranking as we prefer"
+    },
+    {
+      "start": 621.959,
+      "duration": 4.601,
+      "text": "in this case we are also defining the"
+    },
+    {
+      "start": 624.399,
+      "duration": 5.481,
+      "text": "similarity threshold so that we will"
+    },
+    {
+      "start": 626.56,
+      "duration": 5.399,
+      "text": "consider only um entities that matched"
+    },
+    {
+      "start": 629.88,
+      "duration": 3.519,
+      "text": "that have a similarity score that is the"
+    },
+    {
+      "start": 631.959,
+      "duration": 5.161,
+      "text": "S"
+    },
+    {
+      "start": 633.399,
+      "duration": 5.841,
+      "text": "is string similarity value higher than"
+    },
+    {
+      "start": 637.12,
+      "duration": 4.92,
+      "text": "the fixed threshold and then also in"
+    },
+    {
+      "start": 639.24,
+      "duration": 5.64,
+      "text": "this case we compute the final score by"
+    },
+    {
+      "start": 642.04,
+      "duration": 4.08,
+      "text": "multiplying the importance of the rule"
+    },
+    {
+      "start": 644.88,
+      "duration": 4.32,
+      "text": "in this case"
+    },
+    {
+      "start": 646.12,
+      "duration": 7.279,
+      "text": "0.5 it's just a value that we assigned"
+    },
+    {
+      "start": 649.2,
+      "duration": 6.56,
+      "text": "according to um the our the quality of"
+    },
+    {
+      "start": 653.399,
+      "duration": 4.801,
+      "text": "the data set that we add and the"
+    },
+    {
+      "start": 655.76,
+      "duration": 5.48,
+      "text": "similarity that is obtained by using the"
+    },
+    {
+      "start": 658.2,
+      "duration": 3.04,
+      "text": "s data"
+    },
+    {
+      "start": 661.36,
+      "duration": 5.919,
+      "text": "now at the end of this process we will"
+    },
+    {
+      "start": 663.399,
+      "duration": 7.88,
+      "text": "have our uh similarity added into the"
+    },
+    {
+      "start": 667.279,
+      "duration": 6.321,
+      "text": "graph so that among possible matches we"
+    },
+    {
+      "start": 671.279,
+      "duration": 6.68,
+      "text": "create this similarity relationship with"
+    },
+    {
+      "start": 673.6,
+      "duration": 7.16,
+      "text": "the similarity value then we perform the"
+    },
+    {
+      "start": 677.959,
+      "duration": 4.801,
+      "text": "resolution phase that employs Community"
+    },
+    {
+      "start": 680.76,
+      "duration": 4.48,
+      "text": "detection algorithms to identify"
+    },
+    {
+      "start": 682.76,
+      "duration": 6.16,
+      "text": "Community subn likely to represent the"
+    },
+    {
+      "start": 685.24,
+      "duration": 6.159,
+      "text": "same entity in our approach we are using"
+    },
+    {
+      "start": 688.92,
+      "duration": 4.64,
+      "text": "we and we can use two different"
+    },
+    {
+      "start": 691.399,
+      "duration": 4.921,
+      "text": "algorithms from the new 4J graph data"
+    },
+    {
+      "start": 693.56,
+      "duration": 6.12,
+      "text": "science Library the first one is weekly"
+    },
+    {
+      "start": 696.32,
+      "duration": 6.319,
+      "text": "connected component or WCC that offers a"
+    },
+    {
+      "start": 699.68,
+      "duration": 5.92,
+      "text": "broad resolution value uh resolution"
+    },
+    {
+      "start": 702.639,
+      "duration": 4.681,
+      "text": "level in the sense that this algorithm"
+    },
+    {
+      "start": 705.6,
+      "duration": 4.0,
+      "text": "works by identifying the connected"
+    },
+    {
+      "start": 707.32,
+      "duration": 5.0,
+      "text": "component in the graph that are groups"
+    },
+    {
+      "start": 709.6,
+      "duration": 5.4,
+      "text": "of connected node so every time two"
+    },
+    {
+      "start": 712.32,
+      "duration": 5.319,
+      "text": "entities are linked by a relationship"
+    },
+    {
+      "start": 715.0,
+      "duration": 4.44,
+      "text": "they they will be in the same connec"
+    },
+    {
+      "start": 717.639,
+      "duration": 4.76,
+      "text": "component"
+    },
+    {
+      "start": 719.44,
+      "duration": 6.32,
+      "text": "this is an extremely uh valuable"
+    },
+    {
+      "start": 722.399,
+      "duration": 6.68,
+      "text": "algorithm in the sense that if our data"
+    },
+    {
+      "start": 725.76,
+      "duration": 5.519,
+      "text": "is lacking or dirty it avoids us to miss"
+    },
+    {
+      "start": 729.079,
+      "duration": 5.841,
+      "text": "some important information but in other"
+    },
+    {
+      "start": 731.279,
+      "duration": 5.601,
+      "text": "cases we can get very big components but"
+    },
+    {
+      "start": 734.92,
+      "duration": 4.279,
+      "text": "on the other hand we can use the other"
+    },
+    {
+      "start": 736.88,
+      "duration": 5.8,
+      "text": "algorithm that is Lan that offers a"
+    },
+    {
+      "start": 739.199,
+      "duration": 6.64,
+      "text": "finer re level of resolution Lan is a"
+    },
+    {
+      "start": 742.68,
+      "duration": 6.159,
+      "text": "hierarchical algorithm that can work in"
+    },
+    {
+      "start": 745.839,
+      "duration": 8.321,
+      "text": "a weighted mode in the sense that it can"
+    },
+    {
+      "start": 748.839,
+      "duration": 8.041,
+      "text": "take into account uh the similarity uh"
+    },
+    {
+      "start": 754.16,
+      "duration": 5.16,
+      "text": "values so that these these weights that"
+    },
+    {
+      "start": 756.88,
+      "duration": 4.84,
+      "text": "we assigned to the relationship and it"
+    },
+    {
+      "start": 759.32,
+      "duration": 5.0,
+      "text": "is able to distinguish between"
+    },
+    {
+      "start": 761.72,
+      "duration": 4.559,
+      "text": "communities of not that are strongly"
+    },
+    {
+      "start": 764.32,
+      "duration": 5.36,
+      "text": "connected among them and the ones that"
+    },
+    {
+      "start": 766.279,
+      "duration": 5.601,
+      "text": "are not so in this in this example that"
+    },
+    {
+      "start": 769.68,
+      "duration": 6.0,
+      "text": "we are considering with these four"
+    },
+    {
+      "start": 771.88,
+      "duration": 5.56,
+      "text": "Michael Alon while WCC returns a single"
+    },
+    {
+      "start": 775.68,
+      "duration": 4.839,
+      "text": "Community because essentially these nods"
+    },
+    {
+      "start": 777.44,
+      "duration": 5.199,
+      "text": "are linked among them Blan identifies"
+    },
+    {
+      "start": 780.519,
+      "duration": 4.0,
+      "text": "two communities and these communities"
+    },
+    {
+      "start": 782.639,
+      "duration": 4.121,
+      "text": "are composed by notes that share the"
+    },
+    {
+      "start": 784.519,
+      "duration": 5.0,
+      "text": "same social security number this is not"
+    },
+    {
+      "start": 786.76,
+      "duration": 5.12,
+      "text": "the case it's because the same social"
+    },
+    {
+      "start": 789.519,
+      "duration": 6.68,
+      "text": "security number relationship has a n"
+    },
+    {
+      "start": 791.88,
+      "duration": 7.12,
+      "text": "Gear value so this shows us uh the the"
+    },
+    {
+      "start": 796.199,
+      "duration": 5.64,
+      "text": "importance of defining the the proper"
+    },
+    {
+      "start": 799.0,
+      "duration": 4.76,
+      "text": "rules and assigning to them the right"
+    },
+    {
+      "start": 801.839,
+      "duration": 4.761,
+      "text": "thresholds and"
+    },
+    {
+      "start": 803.76,
+      "duration": 5.36,
+      "text": "importance now here we have the queries"
+    },
+    {
+      "start": 806.6,
+      "duration": 4.239,
+      "text": "that we are using during this uh this"
+    },
+    {
+      "start": 809.12,
+      "duration": 4.12,
+      "text": "the resolution phase so this is the"
+    },
+    {
+      "start": 810.839,
+      "duration": 5.201,
+      "text": "first one that we are using for creating"
+    },
+    {
+      "start": 813.24,
+      "duration": 4.839,
+      "text": "the IM memory projected graph so we"
+    },
+    {
+      "start": 816.04,
+      "duration": 3.84,
+      "text": "consider the person nodes that are the"
+    },
+    {
+      "start": 818.079,
+      "duration": 4.281,
+      "text": "ones that we are resolving and the"
+    },
+    {
+      "start": 819.88,
+      "duration": 5.079,
+      "text": "similarity relationship among them we"
+    },
+    {
+      "start": 822.36,
+      "duration": 4.88,
+      "text": "are also considering the scores of the"
+    },
+    {
+      "start": 824.959,
+      "duration": 5.88,
+      "text": "relationship and in the case of multiple"
+    },
+    {
+      "start": 827.24,
+      "duration": 5.12,
+      "text": "relationship we are summing the summing"
+    },
+    {
+      "start": 830.839,
+      "duration": 4.961,
+      "text": "up the"
+    },
+    {
+      "start": 832.36,
+      "duration": 5.839,
+      "text": "scores then we run WCC without"
+    },
+    {
+      "start": 835.8,
+      "duration": 4.92,
+      "text": "considering these these weights this"
+    },
+    {
+      "start": 838.199,
+      "duration": 3.961,
+      "text": "this score and the Lan in a waited mode"
+    },
+    {
+      "start": 840.72,
+      "duration": 3.32,
+      "text": "because as you can see we are taking"
+    },
+    {
+      "start": 842.16,
+      "duration": 5.2,
+      "text": "into account the total score that we"
+    },
+    {
+      "start": 844.04,
+      "duration": 5.239,
+      "text": "computed before also in this case we are"
+    },
+    {
+      "start": 847.36,
+      "duration": 3.8,
+      "text": "enabling the briting of intermediate"
+    },
+    {
+      "start": 849.279,
+      "duration": 3.8,
+      "text": "communities because Lan is a"
+    },
+    {
+      "start": 851.16,
+      "duration": 4.0,
+      "text": "hierarchical algorithm so it offers the"
+    },
+    {
+      "start": 853.079,
+      "duration": 4.2,
+      "text": "possibility to return all the"
+    },
+    {
+      "start": 855.16,
+      "duration": 5.119,
+      "text": "intermediate communities identified by"
+    },
+    {
+      "start": 857.279,
+      "duration": 5.56,
+      "text": "the algorithm before getting the final"
+    },
+    {
+      "start": 860.279,
+      "duration": 4.841,
+      "text": "um the final the optimal configuration"
+    },
+    {
+      "start": 862.839,
+      "duration": 6.721,
+      "text": "of the communities and so this is"
+    },
+    {
+      "start": 865.12,
+      "duration": 6.92,
+      "text": "another a further level of"
+    },
+    {
+      "start": 869.56,
+      "duration": 5.519,
+      "text": "customization that we can select a"
+    },
+    {
+      "start": 872.04,
+      "duration": 6.68,
+      "text": "further level of uh"
+    },
+    {
+      "start": 875.079,
+      "duration": 7.041,
+      "text": "yeah resolution that we can assign or we"
+    },
+    {
+      "start": 878.72,
+      "duration": 6.44,
+      "text": "can Define according to our data and the"
+    },
+    {
+      "start": 882.12,
+      "duration": 7.839,
+      "text": "data sets that we are we are working"
+    },
+    {
+      "start": 885.16,
+      "duration": 7.4,
+      "text": "on now what we described so far is uh"
+    },
+    {
+      "start": 889.959,
+      "duration": 5.641,
+      "text": "what we call betcher resolution that is"
+    },
+    {
+      "start": 892.56,
+      "duration": 6.88,
+      "text": "a process that is useful in the case of"
+    },
+    {
+      "start": 895.6,
+      "duration": 6.2,
+      "text": "large scale and initial resolution but"
+    },
+    {
+      "start": 899.44,
+      "duration": 5.24,
+      "text": "the problem is that this process can"
+    },
+    {
+      "start": 901.8,
+      "duration": 6.2,
+      "text": "take a considerable amount of time while"
+    },
+    {
+      "start": 904.68,
+      "duration": 8.32,
+      "text": "we need a a resolution that is able to"
+    },
+    {
+      "start": 908.0,
+      "duration": 7.68,
+      "text": "keep our um to keep our resolution"
+    },
+    {
+      "start": 913.0,
+      "duration": 5.24,
+      "text": "results up to date and it's quick enough"
+    },
+    {
+      "start": 915.68,
+      "duration": 4.48,
+      "text": "because usually data changes over time"
+    },
+    {
+      "start": 918.24,
+      "duration": 5.32,
+      "text": "and in small increments so we need for"
+    },
+    {
+      "start": 920.16,
+      "duration": 5.679,
+      "text": "this reason a process that is able to um"
+    },
+    {
+      "start": 923.56,
+      "duration": 5.719,
+      "text": "address all the changes happening the"
+    },
+    {
+      "start": 925.839,
+      "duration": 5.92,
+      "text": "data almost in a real time and this is"
+    },
+    {
+      "start": 929.279,
+      "duration": 4.36,
+      "text": "the process that we call incremental uh"
+    },
+    {
+      "start": 931.759,
+      "duration": 3.961,
+      "text": "resolution that essentially works by"
+    },
+    {
+      "start": 933.639,
+      "duration": 4.68,
+      "text": "identifying only the portion of the"
+    },
+    {
+      "start": 935.72,
+      "duration": 6.119,
+      "text": "graphs that are affected by some changes"
+    },
+    {
+      "start": 938.319,
+      "duration": 6.161,
+      "text": "according to um I mean compared to the"
+    },
+    {
+      "start": 941.839,
+      "duration": 6.48,
+      "text": "previous status of the graph while the"
+    },
+    {
+      "start": 944.48,
+      "duration": 6.799,
+      "text": "previous resolution was run and uh it"
+    },
+    {
+      "start": 948.319,
+      "duration": 5.88,
+      "text": "updates the resolution only on this"
+    },
+    {
+      "start": 951.279,
+      "duration": 5.721,
+      "text": "portion of the graph only on this"
+    },
+    {
+      "start": 954.199,
+      "duration": 5.921,
+      "text": "subgraph while remaining the while"
+    },
+    {
+      "start": 957.0,
+      "duration": 6.839,
+      "text": "leaving the remaining Nots untouched"
+    },
+    {
+      "start": 960.12,
+      "duration": 5.8,
+      "text": "so this process starts by identifying"
+    },
+    {
+      "start": 963.839,
+      "duration": 4.041,
+      "text": "the items that are affected by some"
+    },
+    {
+      "start": 965.92,
+      "duration": 5.159,
+      "text": "changes and this is possible thanks to"
+    },
+    {
+      "start": 967.88,
+      "duration": 6.8,
+      "text": "the new forj change data capture feature"
+    },
+    {
+      "start": 971.079,
+      "duration": 7.2,
+      "text": "in our um example we can suppose that"
+    },
+    {
+      "start": 974.68,
+      "duration": 5.68,
+      "text": "these red node changed and that it's the"
+    },
+    {
+      "start": 978.279,
+      "duration": 5.281,
+      "text": "social security number of the node that"
+    },
+    {
+      "start": 980.36,
+      "duration": 7.0,
+      "text": "was updated now after detecting this"
+    },
+    {
+      "start": 983.56,
+      "duration": 5.959,
+      "text": "event what we uh we do is to run the"
+    },
+    {
+      "start": 987.36,
+      "duration": 4.599,
+      "text": "candidate selection and the rank"
+    },
+    {
+      "start": 989.519,
+      "duration": 5.601,
+      "text": "only on the connecting component of this"
+    },
+    {
+      "start": 991.959,
+      "duration": 5.401,
+      "text": "red node that is the affected node why"
+    },
+    {
+      "start": 995.12,
+      "duration": 4.279,
+      "text": "are we considering the entire connected"
+    },
+    {
+      "start": 997.36,
+      "duration": 4.12,
+      "text": "component well if the social security"
+    },
+    {
+      "start": 999.399,
+      "duration": 3.841,
+      "text": "number of this node changed the"
+    },
+    {
+      "start": 1001.48,
+      "duration": 3.599,
+      "text": "previously established similarity"
+    },
+    {
+      "start": 1003.24,
+      "duration": 3.64,
+      "text": "relationship involving this node because"
+    },
+    {
+      "start": 1005.079,
+      "duration": 3.88,
+      "text": "of the social security number are not"
+    },
+    {
+      "start": 1006.88,
+      "duration": 5.92,
+      "text": "valid anymore and we need to recompute"
+    },
+    {
+      "start": 1008.959,
+      "duration": 6.081,
+      "text": "them so with these um with these updates"
+    },
+    {
+      "start": 1012.8,
+      "duration": 5.519,
+      "text": "the entire connected component might be"
+    },
+    {
+      "start": 1015.04,
+      "duration": 5.159,
+      "text": "affected so in order to um keep our"
+    },
+    {
+      "start": 1018.319,
+      "duration": 4.481,
+      "text": "resolution"
+    },
+    {
+      "start": 1020.199,
+      "duration": 4.321,
+      "text": "correct and there we need to rerun the"
+    },
+    {
+      "start": 1022.8,
+      "duration": 2.999,
+      "text": "similarity process on the entire"
+    },
+    {
+      "start": 1024.52,
+      "duration": 3.88,
+      "text": "connected"
+    },
+    {
+      "start": 1025.799,
+      "duration": 4.921,
+      "text": "component now after doing this it can"
+    },
+    {
+      "start": 1028.4,
+      "duration": 5.039,
+      "text": "happen that the social security number"
+    },
+    {
+      "start": 1030.72,
+      "duration": 4.56,
+      "text": "of the red node is now the same of"
+    },
+    {
+      "start": 1033.439,
+      "duration": 3.681,
+      "text": "another node in another connected"
+    },
+    {
+      "start": 1035.28,
+      "duration": 5.44,
+      "text": "component so while running the"
+    },
+    {
+      "start": 1037.12,
+      "duration": 7.64,
+      "text": "resolution we need to consider to apply"
+    },
+    {
+      "start": 1040.72,
+      "duration": 6.199,
+      "text": "the community algorithms on both the um"
+    },
+    {
+      "start": 1044.76,
+      "duration": 5.32,
+      "text": "connected component of the affected"
+    },
+    {
+      "start": 1046.919,
+      "duration": 5.521,
+      "text": "nodes and the nodes that are involved in"
+    },
+    {
+      "start": 1050.08,
+      "duration": 4.8,
+      "text": "newly established similarity"
+    },
+    {
+      "start": 1052.44,
+      "duration": 6.44,
+      "text": "relationship this process is effective"
+    },
+    {
+      "start": 1054.88,
+      "duration": 7.039,
+      "text": "in the sense that we can address and uh"
+    },
+    {
+      "start": 1058.88,
+      "duration": 5.76,
+      "text": "resolve in a in a proper way"
+    },
+    {
+      "start": 1061.919,
+      "duration": 4.721,
+      "text": "according uh by by addressing any"
+    },
+    {
+      "start": 1064.64,
+      "duration": 3.6,
+      "text": "different type of changes that can"
+    },
+    {
+      "start": 1066.64,
+      "duration": 4.399,
+      "text": "happen to the database for instance the"
+    },
+    {
+      "start": 1068.24,
+      "duration": 5.799,
+      "text": "addition of items notd or relationship"
+    },
+    {
+      "start": 1071.039,
+      "duration": 5.081,
+      "text": "or the updating the deletion of them and"
+    },
+    {
+      "start": 1074.039,
+      "duration": 6.241,
+      "text": "all these possible cases can be"
+    },
+    {
+      "start": 1076.12,
+      "duration": 7.16,
+      "text": "addressed with this process and it's uh"
+    },
+    {
+      "start": 1080.28,
+      "duration": 6.96,
+      "text": "efficient because we are only updating a"
+    },
+    {
+      "start": 1083.28,
+      "duration": 9.399,
+      "text": "subgraph uh a subset of our graph and uh"
+    },
+    {
+      "start": 1087.24,
+      "duration": 9.439,
+      "text": "uh we we can it can run in um"
+    },
+    {
+      "start": 1092.679,
+      "duration": 6.721,
+      "text": "Bast now let's say that we run our uh"
+    },
+    {
+      "start": 1096.679,
+      "duration": 4.88,
+      "text": "resolution now it comes to the data"
+    },
+    {
+      "start": 1099.4,
+      "duration": 4.639,
+      "text": "modeling to the representation of the"
+    },
+    {
+      "start": 1101.559,
+      "duration": 4.841,
+      "text": "resolution results there are a few"
+    },
+    {
+      "start": 1104.039,
+      "duration": 5.241,
+      "text": "options that are possible the first one"
+    },
+    {
+      "start": 1106.4,
+      "duration": 4.759,
+      "text": "is storing the resolution result as"
+    },
+    {
+      "start": 1109.28,
+      "duration": 4.68,
+      "text": "attribute of the Nots in this case we"
+    },
+    {
+      "start": 1111.159,
+      "duration": 5.241,
+      "text": "use the ID of the resolution but other"
+    },
+    {
+      "start": 1113.96,
+      "duration": 4.8,
+      "text": "options are possible so the main thing"
+    },
+    {
+      "start": 1116.4,
+      "duration": 5.48,
+      "text": "is that we are using we are storing"
+    },
+    {
+      "start": 1118.76,
+      "duration": 6.159,
+      "text": "these um these this result as an"
+    },
+    {
+      "start": 1121.88,
+      "duration": 6.12,
+      "text": "attribute of our"
+    },
+    {
+      "start": 1124.919,
+      "duration": 5.12,
+      "text": "records the other option is represented"
+    },
+    {
+      "start": 1128.0,
+      "duration": 4.12,
+      "text": "by the hyperlink approach so in this"
+    },
+    {
+      "start": 1130.039,
+      "duration": 4.52,
+      "text": "case we are creating an empty node that"
+    },
+    {
+      "start": 1132.12,
+      "duration": 5.28,
+      "text": "is linked to all the entities resolved"
+    },
+    {
+      "start": 1134.559,
+      "duration": 4.641,
+      "text": "through it and the third approach is"
+    },
+    {
+      "start": 1137.4,
+      "duration": 4.48,
+      "text": "very similar to the second one but in"
+    },
+    {
+      "start": 1139.2,
+      "duration": 4.359,
+      "text": "this case this node will be a fused node"
+    },
+    {
+      "start": 1141.88,
+      "duration": 4.279,
+      "text": "in the sense that it contains some"
+    },
+    {
+      "start": 1143.559,
+      "duration": 4.6,
+      "text": "Consolidated attributes so which one"
+    },
+    {
+      "start": 1146.159,
+      "duration": 4.361,
+      "text": "which option to prefer depends of course"
+    },
+    {
+      "start": 1148.159,
+      "duration": 4.081,
+      "text": "on the use cases and the requirements"
+    },
+    {
+      "start": 1150.52,
+      "duration": 3.6,
+      "text": "for instance if you are working in a"
+    },
+    {
+      "start": 1152.24,
+      "duration": 5.6,
+      "text": "street Access Control scenario you"
+    },
+    {
+      "start": 1154.12,
+      "duration": 6.32,
+      "text": "should prefer you can prefer the first"
+    },
+    {
+      "start": 1157.84,
+      "duration": 5.12,
+      "text": "option the attribute option or the"
+    },
+    {
+      "start": 1160.44,
+      "duration": 5.2,
+      "text": "hyperlink because allows us allows you"
+    },
+    {
+      "start": 1162.96,
+      "duration": 4.36,
+      "text": "to uh check the information check the"
+    },
+    {
+      "start": 1165.64,
+      "duration": 4.159,
+      "text": "resolution of your node without"
+    },
+    {
+      "start": 1167.32,
+      "duration": 5.52,
+      "text": "disclosing information about other Nots"
+    },
+    {
+      "start": 1169.799,
+      "duration": 7.841,
+      "text": "that you cannot you you do not have"
+    },
+    {
+      "start": 1172.84,
+      "duration": 8.44,
+      "text": "privileges to see while if you need to"
+    },
+    {
+      "start": 1177.64,
+      "duration": 5.919,
+      "text": "um Traverse essentially these these"
+    },
+    {
+      "start": 1181.28,
+      "duration": 4.6,
+      "text": "resolution results in your queries"
+    },
+    {
+      "start": 1183.559,
+      "duration": 4.6,
+      "text": "because for instance you want to merge"
+    },
+    {
+      "start": 1185.88,
+      "duration": 5.159,
+      "text": "data coming from different data sources"
+    },
+    {
+      "start": 1188.159,
+      "duration": 4.961,
+      "text": "and jump from this Michael Alon to other"
+    },
+    {
+      "start": 1191.039,
+      "duration": 4.041,
+      "text": "coming from other sources you should"
+    },
+    {
+      "start": 1193.12,
+      "duration": 4.48,
+      "text": "prefer the approaches that indeed that"
+    },
+    {
+      "start": 1195.08,
+      "duration": 5.079,
+      "text": "essentially create this no because the"
+    },
+    {
+      "start": 1197.6,
+      "duration": 6.12,
+      "text": "queries will be uh"
+    },
+    {
+      "start": 1200.159,
+      "duration": 6.561,
+      "text": "simpler now I'd like to show you a"
+    },
+    {
+      "start": 1203.72,
+      "duration": 5.839,
+      "text": "demo through yum so this is the"
+    },
+    {
+      "start": 1206.72,
+      "duration": 5.36,
+      "text": "visualization of yum and here we have"
+    },
+    {
+      "start": 1209.559,
+      "duration": 5.6,
+      "text": "five notes that we will consider doing"
+    },
+    {
+      "start": 1212.08,
+      "duration": 4.56,
+      "text": "this this example while about the rules"
+    },
+    {
+      "start": 1215.159,
+      "duration": 3.441,
+      "text": "the similarity rules that we are"
+    },
+    {
+      "start": 1216.64,
+      "duration": 4.039,
+      "text": "defining we are considering the two"
+    },
+    {
+      "start": 1218.6,
+      "duration": 4.76,
+      "text": "rules that we explained before so same"
+    },
+    {
+      "start": 1220.679,
+      "duration": 4.88,
+      "text": "social security number and similar name"
+    },
+    {
+      "start": 1223.36,
+      "duration": 3.72,
+      "text": "and same address and then there is"
+    },
+    {
+      "start": 1225.559,
+      "duration": 4.12,
+      "text": "another rule that considers the"
+    },
+    {
+      "start": 1227.08,
+      "duration": 6.12,
+      "text": "similarity of the names and the match of"
+    },
+    {
+      "start": 1229.679,
+      "duration": 5.601,
+      "text": "the date of birth Now by observing this"
+    },
+    {
+      "start": 1233.2,
+      "duration": 3.719,
+      "text": "notes we can notice that these two notes"
+    },
+    {
+      "start": 1235.28,
+      "duration": 4.879,
+      "text": "have essentially the same social"
+    },
+    {
+      "start": 1236.919,
+      "duration": 5.921,
+      "text": "security number and this is the fourth"
+    },
+    {
+      "start": 1240.159,
+      "duration": 6.041,
+      "text": "uh line that we can see in the caption"
+    },
+    {
+      "start": 1242.84,
+      "duration": 6.839,
+      "text": "so this number and again by these two"
+    },
+    {
+      "start": 1246.2,
+      "duration": 6.12,
+      "text": "nodes share the same dat of B of these"
+    },
+    {
+      "start": 1249.679,
+      "duration": 5.841,
+      "text": "third one so these three notd are for"
+    },
+    {
+      "start": 1252.32,
+      "duration": 4.839,
+      "text": "sure similar among them also these two"
+    },
+    {
+      "start": 1255.52,
+      "duration": 3.92,
+      "text": "notes have the same social security"
+    },
+    {
+      "start": 1257.159,
+      "duration": 4.681,
+      "text": "number again this property so they will"
+    },
+    {
+      "start": 1259.44,
+      "duration": 5.239,
+      "text": "be similar according to the first rule"
+    },
+    {
+      "start": 1261.84,
+      "duration": 4.719,
+      "text": "and these two others share the same"
+    },
+    {
+      "start": 1264.679,
+      "duration": 5.521,
+      "text": "address so will be similar because of"
+    },
+    {
+      "start": 1266.559,
+      "duration": 5.761,
+      "text": "the address pattern now let me run the"
+    },
+    {
+      "start": 1270.2,
+      "duration": 5.24,
+      "text": "bch resolution supposing that we are"
+    },
+    {
+      "start": 1272.32,
+      "duration": 5.479,
+      "text": "running the first uh resolution process"
+    },
+    {
+      "start": 1275.44,
+      "duration": 4.64,
+      "text": "the initial um"
+    },
+    {
+      "start": 1277.799,
+      "duration": 4.401,
+      "text": "phase this is a workflow that"
+    },
+    {
+      "start": 1280.08,
+      "duration": 4.52,
+      "text": "essentially implements our bet"
+    },
+    {
+      "start": 1282.2,
+      "duration": 4.64,
+      "text": "resolution and we created by using"
+    },
+    {
+      "start": 1284.6,
+      "duration": 4.76,
+      "text": "orchestra that is our orchestrator that"
+    },
+    {
+      "start": 1286.84,
+      "duration": 5.0,
+      "text": "allows to uh create"
+    },
+    {
+      "start": 1289.36,
+      "duration": 5.6,
+      "text": "workflows that can Implement complex"
+    },
+    {
+      "start": 1291.84,
+      "duration": 6.88,
+      "text": "business Logics in a Lo code setting now"
+    },
+    {
+      "start": 1294.96,
+      "duration": 5.959,
+      "text": "let me run it while I explain how it"
+    },
+    {
+      "start": 1298.72,
+      "duration": 4.36,
+      "text": "works in the meantime so in the first"
+    },
+    {
+      "start": 1300.919,
+      "duration": 3.481,
+      "text": "Branch we are just setting a few things"
+    },
+    {
+      "start": 1303.08,
+      "duration": 3.839,
+      "text": "such as the entities that we are"
+    },
+    {
+      "start": 1304.4,
+      "duration": 5.08,
+      "text": "resolving and creating some indes that"
+    },
+    {
+      "start": 1306.919,
+      "duration": 4.521,
+      "text": "we will need during the process then in"
+    },
+    {
+      "start": 1309.48,
+      "duration": 4.12,
+      "text": "the second one we PCH the entities that"
+    },
+    {
+      "start": 1311.44,
+      "duration": 4.479,
+      "text": "we want to resolve in this case all the"
+    },
+    {
+      "start": 1313.6,
+      "duration": 5.64,
+      "text": "person that we have in the"
+    },
+    {
+      "start": 1315.919,
+      "duration": 5.76,
+      "text": "database and adding to them a temporary"
+    },
+    {
+      "start": 1319.24,
+      "duration": 4.76,
+      "text": "label that is this to be Sim process"
+    },
+    {
+      "start": 1321.679,
+      "duration": 4.041,
+      "text": "label the reason of this is because we"
+    },
+    {
+      "start": 1324.0,
+      "duration": 3.52,
+      "text": "want to track the status of the"
+    },
+    {
+      "start": 1325.72,
+      "duration": 3.8,
+      "text": "similarity computation because the"
+    },
+    {
+      "start": 1327.52,
+      "duration": 4.159,
+      "text": "similarity computation is essentially"
+    },
+    {
+      "start": 1329.52,
+      "duration": 5.399,
+      "text": "the process that takes the most of the"
+    },
+    {
+      "start": 1331.679,
+      "duration": 5.48,
+      "text": "time so case something goes wrong but uh"
+    },
+    {
+      "start": 1334.919,
+      "duration": 5.561,
+      "text": "also for checking the status we want to"
+    },
+    {
+      "start": 1337.159,
+      "duration": 5.921,
+      "text": "add this label so here this bigger"
+    },
+    {
+      "start": 1340.48,
+      "duration": 4.96,
+      "text": "Branch uh deals with the similarity"
+    },
+    {
+      "start": 1343.08,
+      "duration": 4.52,
+      "text": "computation so we have three rules and"
+    },
+    {
+      "start": 1345.44,
+      "duration": 5.4,
+      "text": "essentially this Branch starts with"
+    },
+    {
+      "start": 1347.6,
+      "duration": 5.0,
+      "text": "three lines one for each rule for each"
+    },
+    {
+      "start": 1350.84,
+      "duration": 3.92,
+      "text": "rule we are fetching the entities that"
+    },
+    {
+      "start": 1352.6,
+      "duration": 5.4,
+      "text": "we want to process according to the"
+    },
+    {
+      "start": 1354.76,
+      "duration": 5.48,
+      "text": "label that we added and then we apply"
+    },
+    {
+      "start": 1358.0,
+      "duration": 4.2,
+      "text": "the rule this is very similar to the one"
+    },
+    {
+      "start": 1360.24,
+      "duration": 4.919,
+      "text": "that we have seen before just a few"
+    },
+    {
+      "start": 1362.2,
+      "duration": 5.479,
+      "text": "Automation and this is the case of same"
+    },
+    {
+      "start": 1365.159,
+      "duration": 6.041,
+      "text": "social security number now at the end of"
+    },
+    {
+      "start": 1367.679,
+      "duration": 5.721,
+      "text": "the of the branch we check uh and every"
+    },
+    {
+      "start": 1371.2,
+      "duration": 4.32,
+      "text": "time an entity has been processed"
+    },
+    {
+      "start": 1373.4,
+      "duration": 4.159,
+      "text": "according to all the rotes that that are"
+    },
+    {
+      "start": 1375.52,
+      "duration": 5.12,
+      "text": "defined here we remove the temporary"
+    },
+    {
+      "start": 1377.559,
+      "duration": 4.961,
+      "text": "label so that in the following bench in"
+    },
+    {
+      "start": 1380.64,
+      "duration": 3.8,
+      "text": "this one we are just counting the number"
+    },
+    {
+      "start": 1382.52,
+      "duration": 5.159,
+      "text": "of notes that still have the temporary"
+    },
+    {
+      "start": 1384.44,
+      "duration": 6.04,
+      "text": "label so we know that the similarity"
+    },
+    {
+      "start": 1387.679,
+      "duration": 5.161,
+      "text": "process finished when the number of"
+    },
+    {
+      "start": 1390.48,
+      "duration": 5.24,
+      "text": "these notes is zero and we essentially"
+    },
+    {
+      "start": 1392.84,
+      "duration": 4.92,
+      "text": "can start the solution pH here we"
+    },
+    {
+      "start": 1395.72,
+      "duration": 4.12,
+      "text": "perform the resolution phase we are"
+    },
+    {
+      "start": 1397.76,
+      "duration": 5.039,
+      "text": "projecting the graph the query is very"
+    },
+    {
+      "start": 1399.84,
+      "duration": 6.839,
+      "text": "similar to the one that we have seen"
+    },
+    {
+      "start": 1402.799,
+      "duration": 6.041,
+      "text": "before and then we run WCC and L now I"
+    },
+    {
+      "start": 1406.679,
+      "duration": 3.921,
+      "text": "just want to show you the number of that"
+    },
+    {
+      "start": 1408.84,
+      "duration": 5.28,
+      "text": "we are considering in the"
+    },
+    {
+      "start": 1410.6,
+      "duration": 6.36,
+      "text": "projection that is the entire sides"
+    },
+    {
+      "start": 1414.12,
+      "duration": 5.24,
+      "text": "of essentially all the person that we"
+    },
+    {
+      "start": 1416.96,
+      "duration": 5.36,
+      "text": "have in our data set and we process"
+    },
+    {
+      "start": 1419.36,
+      "duration": 6.04,
+      "text": "according to theity because it is this"
+    },
+    {
+      "start": 1422.32,
+      "duration": 6.32,
+      "text": "number that we have seen here"
+    },
+    {
+      "start": 1425.4,
+      "duration": 6.0,
+      "text": "400 then we store the results and in"
+    },
+    {
+      "start": 1428.64,
+      "duration": 7.36,
+      "text": "this case we are using the attribute"
+    },
+    {
+      "start": 1431.4,
+      "duration": 7.12,
+      "text": "mode so let me reload these"
+    },
+    {
+      "start": 1436.0,
+      "duration": 4.24,
+      "text": "Nots and we can notice that now we we"
+    },
+    {
+      "start": 1438.52,
+      "duration": 5.32,
+      "text": "have two uh"
+    },
+    {
+      "start": 1440.24,
+      "duration": 6.84,
+      "text": "new attributes that are the result of"
+    },
+    {
+      "start": 1443.84,
+      "duration": 5.16,
+      "text": "WCC and the result of Lan now if I"
+    },
+    {
+      "start": 1447.08,
+      "duration": 3.24,
+      "text": "enable the grouping strategy according"
+    },
+    {
+      "start": 1449.0,
+      "duration": 3.6,
+      "text": "to"
+    },
+    {
+      "start": 1450.32,
+      "duration": 5.599,
+      "text": "WCC we can notice that all these"
+    },
+    {
+      "start": 1452.6,
+      "duration": 6.559,
+      "text": "entities belong to the same Community"
+    },
+    {
+      "start": 1455.919,
+      "duration": 6.681,
+      "text": "while if I enable L we have two"
+    },
+    {
+      "start": 1459.159,
+      "duration": 6.64,
+      "text": "different communities one is composed by"
+    },
+    {
+      "start": 1462.6,
+      "duration": 5.0,
+      "text": "people that are born in 1994 these two"
+    },
+    {
+      "start": 1465.799,
+      "duration": 4.041,
+      "text": "have also the same social security"
+    },
+    {
+      "start": 1467.6,
+      "duration": 4.079,
+      "text": "number while in these other we have"
+    },
+    {
+      "start": 1469.84,
+      "duration": 5.079,
+      "text": "people that again have the same Social"
+    },
+    {
+      "start": 1471.679,
+      "duration": 7.88,
+      "text": "Security number so these results seem"
+    },
+    {
+      "start": 1474.919,
+      "duration": 7.321,
+      "text": "promising now if we want to check the"
+    },
+    {
+      "start": 1479.559,
+      "duration": 5.0,
+      "text": "resolution the the similarity rules and"
+    },
+    {
+      "start": 1482.24,
+      "duration": 4.24,
+      "text": "the similarity relationship created we"
+    },
+    {
+      "start": 1484.559,
+      "duration": 3.801,
+      "text": "need to change the visualization because"
+    },
+    {
+      "start": 1486.48,
+      "duration": 4.04,
+      "text": "something that I didn't mention before"
+    },
+    {
+      "start": 1488.36,
+      "duration": 5.08,
+      "text": "is that we usually suggest the usage of"
+    },
+    {
+      "start": 1490.52,
+      "duration": 5.399,
+      "text": "an alare database in which uh we can"
+    },
+    {
+      "start": 1493.44,
+      "duration": 4.239,
+      "text": "store the similarity relationship and"
+    },
+    {
+      "start": 1495.919,
+      "duration": 2.921,
+      "text": "also run the graph data science"
+    },
+    {
+      "start": 1497.679,
+      "duration": 3.041,
+      "text": "algorithms"
+    },
+    {
+      "start": 1498.84,
+      "duration": 5.04,
+      "text": "this because in this way we can avoid"
+    },
+    {
+      "start": 1500.72,
+      "duration": 5.16,
+      "text": "polluting the main graph with all these"
+    },
+    {
+      "start": 1503.88,
+      "duration": 4.2,
+      "text": "details that are only relevant for the"
+    },
+    {
+      "start": 1505.88,
+      "duration": 4.32,
+      "text": "purpose of the resolution otherwise if"
+    },
+    {
+      "start": 1508.08,
+      "duration": 3.479,
+      "text": "an analyst wants to see them can just"
+    },
+    {
+      "start": 1510.2,
+      "duration": 4.4,
+      "text": "change the"
+    },
+    {
+      "start": 1511.559,
+      "duration": 5.72,
+      "text": "visualization okay now let me copy this"
+    },
+    {
+      "start": 1514.6,
+      "duration": 7.679,
+      "text": "component ID and if I change the"
+    },
+    {
+      "start": 1517.279,
+      "duration": 7.241,
+      "text": "visualization and I I open one"
+    },
+    {
+      "start": 1522.279,
+      "duration": 6.561,
+      "text": "visualization linked to the helper"
+    },
+    {
+      "start": 1524.52,
+      "duration": 6.519,
+      "text": "database we should now see our entities"
+    },
+    {
+      "start": 1528.84,
+      "duration": 5.76,
+      "text": "because we run the workflow so we have"
+    },
+    {
+      "start": 1531.039,
+      "duration": 7.12,
+      "text": "now the enties that are visible in this"
+    },
+    {
+      "start": 1534.6,
+      "duration": 6.079,
+      "text": "in in this visualization so if I expand"
+    },
+    {
+      "start": 1538.159,
+      "duration": 2.52,
+      "text": "the person"
+    },
+    {
+      "start": 1541.2,
+      "duration": 7.76,
+      "text": "nodes that"
+    },
+    {
+      "start": 1543.64,
+      "duration": 7.88,
+      "text": "have the component ID equals uh"
+    },
+    {
+      "start": 1548.96,
+      "duration": 5.56,
+      "text": "sorry the one that I copied before we"
+    },
+    {
+      "start": 1551.52,
+      "duration": 3.0,
+      "text": "should see our"
+    },
+    {
+      "start": 1555.2,
+      "duration": 4.88,
+      "text": "entities okay let me disable the"
+    },
+    {
+      "start": 1557.32,
+      "duration": 5.16,
+      "text": "grouping strategy"
+    },
+    {
+      "start": 1560.08,
+      "duration": 4.599,
+      "text": "and uh expand all the similarity"
+    },
+    {
+      "start": 1562.48,
+      "duration": 5.04,
+      "text": "relationship so we can understand the"
+    },
+    {
+      "start": 1564.679,
+      "duration": 4.88,
+      "text": "way in which they are connected in"
+    },
+    {
+      "start": 1567.52,
+      "duration": 4.519,
+      "text": "particular we can notice that the"
+    },
+    {
+      "start": 1569.559,
+      "duration": 4.441,
+      "text": "connection that goes from a community to"
+    },
+    {
+      "start": 1572.039,
+      "duration": 4.561,
+      "text": "the other according to Lan is because of"
+    },
+    {
+      "start": 1574.0,
+      "duration": 4.64,
+      "text": "the same address now I just want to show"
+    },
+    {
+      "start": 1576.6,
+      "duration": 4.4,
+      "text": "you the incremental part so let's"
+    },
+    {
+      "start": 1578.64,
+      "duration": 4.96,
+      "text": "suppose that an analyst noticed that"
+    },
+    {
+      "start": 1581.0,
+      "duration": 5.32,
+      "text": "this relationship is wrong this person"
+    },
+    {
+      "start": 1583.6,
+      "duration": 5.4,
+      "text": "has not dis address I can drop it by"
+    },
+    {
+      "start": 1586.32,
+      "duration": 5.239,
+      "text": "using our graph editing tool"
+    },
+    {
+      "start": 1589.0,
+      "duration": 6.679,
+      "text": "and let me submit the changes so that it"
+    },
+    {
+      "start": 1591.559,
+      "duration": 6.401,
+      "text": "will be persist to the database now let"
+    },
+    {
+      "start": 1595.679,
+      "duration": 3.921,
+      "text": "me run the incremental workflow this is"
+    },
+    {
+      "start": 1597.96,
+      "duration": 3.56,
+      "text": "a workflow that is meant to run"
+    },
+    {
+      "start": 1599.6,
+      "duration": 4.799,
+      "text": "continuously but in this case just for"
+    },
+    {
+      "start": 1601.52,
+      "duration": 5.12,
+      "text": "the demo I'm starting it manually so it"
+    },
+    {
+      "start": 1604.399,
+      "duration": 5.52,
+      "text": "is very similar to the batch workflow"
+    },
+    {
+      "start": 1606.64,
+      "duration": 6.279,
+      "text": "but it starts by using a new 4J change"
+    },
+    {
+      "start": 1609.919,
+      "duration": 5.681,
+      "text": "data capture component you can see here"
+    },
+    {
+      "start": 1612.919,
+      "duration": 5.601,
+      "text": "and we are essentially monitoring the"
+    },
+    {
+      "start": 1615.6,
+      "duration": 6.0,
+      "text": "changes that involve any item you used"
+    },
+    {
+      "start": 1618.52,
+      "duration": 5.56,
+      "text": "in our similarity Roots so this selector"
+    },
+    {
+      "start": 1621.6,
+      "duration": 4.439,
+      "text": "is defined according to our Roots so for"
+    },
+    {
+      "start": 1624.08,
+      "duration": 6.12,
+      "text": "instance we have S security number the"
+    },
+    {
+      "start": 1626.039,
+      "duration": 7.201,
+      "text": "names does address relationship now when"
+    },
+    {
+      "start": 1630.2,
+      "duration": 5.16,
+      "text": "an event happens what we are doing is to"
+    },
+    {
+      "start": 1633.24,
+      "duration": 4.84,
+      "text": "identify the connected component of the"
+    },
+    {
+      "start": 1635.36,
+      "duration": 5.0,
+      "text": "affected item and we are processing all"
+    },
+    {
+      "start": 1638.08,
+      "duration": 4.479,
+      "text": "the entities belonging to the affected"
+    },
+    {
+      "start": 1640.36,
+      "duration": 4.679,
+      "text": "to the connected component so here we"
+    },
+    {
+      "start": 1642.559,
+      "duration": 6.641,
+      "text": "are running the similarity only for five"
+    },
+    {
+      "start": 1645.039,
+      "duration": 7.52,
+      "text": "notes then we also run the solution when"
+    },
+    {
+      "start": 1649.2,
+      "duration": 5.52,
+      "text": "this uh yeah here in this branch and I"
+    },
+    {
+      "start": 1652.559,
+      "duration": 4.081,
+      "text": "can show you again the sides of the"
+    },
+    {
+      "start": 1654.72,
+      "duration": 3.959,
+      "text": "projection that we are considering for"
+    },
+    {
+      "start": 1656.64,
+      "duration": 4.48,
+      "text": "which we are running a resolution only"
+    },
+    {
+      "start": 1658.679,
+      "duration": 6.641,
+      "text": "five notes the five affected"
+    },
+    {
+      "start": 1661.12,
+      "duration": 6.08,
+      "text": "notes the process finished so I can go"
+    },
+    {
+      "start": 1665.32,
+      "duration": 3.959,
+      "text": "back to the main visualization and"
+    },
+    {
+      "start": 1667.2,
+      "duration": 5.319,
+      "text": "reload all these"
+    },
+    {
+      "start": 1669.279,
+      "duration": 6.921,
+      "text": "nodes and we can notice that now"
+    },
+    {
+      "start": 1672.519,
+      "duration": 6.601,
+      "text": "enabling again WCC we have two"
+    },
+    {
+      "start": 1676.2,
+      "duration": 4.52,
+      "text": "different um two different communities"
+    },
+    {
+      "start": 1679.12,
+      "duration": 3.399,
+      "text": "according to this algorithm because"
+    },
+    {
+      "start": 1680.72,
+      "duration": 5.28,
+      "text": "essentially we broke the relationship"
+    },
+    {
+      "start": 1682.519,
+      "duration": 5.4,
+      "text": "that was connecting the two of"
+    },
+    {
+      "start": 1686.0,
+      "duration": 5.799,
+      "text": "them"
+    },
+    {
+      "start": 1687.919,
+      "duration": 7.24,
+      "text": "now this concludes our demo uh we have"
+    },
+    {
+      "start": 1691.799,
+      "duration": 7.36,
+      "text": "seen both bch resolution and the"
+    },
+    {
+      "start": 1695.159,
+      "duration": 5.841,
+      "text": "incremental one in our case I think that"
+    },
+    {
+      "start": 1699.159,
+      "duration": 4.12,
+      "text": "it took less than a minute but in"
+    },
+    {
+      "start": 1701.0,
+      "duration": 5.32,
+      "text": "general the incremental is a is a very"
+    },
+    {
+      "start": 1703.279,
+      "duration": 5.561,
+      "text": "fast process and also"
+    },
+    {
+      "start": 1706.32,
+      "duration": 5.599,
+      "text": "effective I just want to to conclude"
+    },
+    {
+      "start": 1708.84,
+      "duration": 6.0,
+      "text": "just mentioning uh that we have seen"
+    },
+    {
+      "start": 1711.919,
+      "duration": 4.88,
+      "text": "that GS offer a natural way to address F"
+    },
+    {
+      "start": 1714.84,
+      "duration": 4.12,
+      "text": "resolution we can for instance mention"
+    },
+    {
+      "start": 1716.799,
+      "duration": 4.161,
+      "text": "the Simplicity in defining the"
+    },
+    {
+      "start": 1718.96,
+      "duration": 3.959,
+      "text": "similarity relationship even in the case"
+    },
+    {
+      "start": 1720.96,
+      "duration": 4.12,
+      "text": "in which we are considering contextual"
+    },
+    {
+      "start": 1722.919,
+      "duration": 4.921,
+      "text": "information of our nodes in direct"
+    },
+    {
+      "start": 1725.08,
+      "duration": 5.839,
+      "text": "associations all the links it is very"
+    },
+    {
+      "start": 1727.84,
+      "duration": 6.559,
+      "text": "simple to write uh queries because of"
+    },
+    {
+      "start": 1730.919,
+      "duration": 5.561,
+      "text": "the graph structure also our community"
+    },
+    {
+      "start": 1734.399,
+      "duration": 4.12,
+      "text": "detection algorithms are very fast"
+    },
+    {
+      "start": 1736.48,
+      "duration": 4.199,
+      "text": "because we are working uh they are"
+    },
+    {
+      "start": 1738.519,
+      "duration": 5.121,
+      "text": "optimized to work"
+    },
+    {
+      "start": 1740.679,
+      "duration": 6.081,
+      "text": "on relationships and this is the way in"
+    },
+    {
+      "start": 1743.64,
+      "duration": 5.96,
+      "text": "which we stored our similarities we have"
+    },
+    {
+      "start": 1746.76,
+      "duration": 5.2,
+      "text": "discussed some of the useful features"
+    },
+    {
+      "start": 1749.6,
+      "duration": 4.799,
+      "text": "that new forj provides for managing the"
+    },
+    {
+      "start": 1751.96,
+      "duration": 5.12,
+      "text": "real scenarios for instance the change"
+    },
+    {
+      "start": 1754.399,
+      "duration": 5.681,
+      "text": "data capture that we used in the"
+    },
+    {
+      "start": 1757.08,
+      "duration": 5.52,
+      "text": "incremental or real time process but"
+    },
+    {
+      "start": 1760.08,
+      "duration": 6.319,
+      "text": "also the community detection algorithms"
+    },
+    {
+      "start": 1762.6,
+      "duration": 6.559,
+      "text": "that we use them and uh yeah the variety"
+    },
+    {
+      "start": 1766.399,
+      "duration": 4.601,
+      "text": "of indexes that that exist"
+    },
+    {
+      "start": 1769.159,
+      "duration": 4.12,
+      "text": "and we have described the fully"
+    },
+    {
+      "start": 1771.0,
+      "duration": 4.96,
+      "text": "customizable and explainable ntid"
+    },
+    {
+      "start": 1773.279,
+      "duration": 4.52,
+      "text": "resolution process that y offers in"
+    },
+    {
+      "start": 1775.96,
+      "duration": 3.92,
+      "text": "which the only responsibility that is"
+    },
+    {
+      "start": 1777.799,
+      "duration": 4.321,
+      "text": "left to the analyst is the definition of"
+    },
+    {
+      "start": 1779.88,
+      "duration": 4.2,
+      "text": "the rules according to the data"
+    },
+    {
+      "start": 1782.12,
+      "duration": 4.32,
+      "text": "otherwise if you would prefer an out of"
+    },
+    {
+      "start": 1784.08,
+      "duration": 4.24,
+      "text": "the box solution yum also natively"
+    },
+    {
+      "start": 1786.44,
+      "duration": 4.719,
+      "text": "integrates with the sensing that is a"
+    },
+    {
+      "start": 1788.32,
+      "duration": 5.56,
+      "text": "leading entity resolution library but"
+    },
+    {
+      "start": 1791.159,
+      "duration": 5.441,
+      "text": "that's maybe for another talk so I'd"
+    },
+    {
+      "start": 1793.88,
+      "duration": 5.279,
+      "text": "like to thank you all for attending this"
+    },
+    {
+      "start": 1796.6,
+      "duration": 5.679,
+      "text": "session I hope that you found it"
+    },
+    {
+      "start": 1799.159,
+      "duration": 7.12,
+      "text": "interesting and useful and let me check"
+    },
+    {
+      "start": 1802.279,
+      "duration": 4.0,
+      "text": "if there are any questions"
+    }
+  ],
+  "full_text": "hello everyone and thank you for joining I'm fed ventrudo the scientist at graph hour and graph hour is a globally recognized graph technology company and the creator of yum our connected data analytics platform and we'll present today's session about a graph based entity resolution approach in order to achieve data Harmony so we will start with a bit of context and applications why and when you should apply HD resolution then we'll discuss the process from a technical point of view and in particular we will focus our attention on the incremental or realtime process next we'll discuss a few data modeling options that we have in order to represent the resolution results and after that we will see a y demo we conclude with a few takeaways and question and answers so entity resolution is a crucial process in data management that involves establishing connections between scattered and incomplete records to resolve the same real world entity or the same real world profile so let's suppose that we are ingesting data about people coming from different data sources now according to the source of our data we might have that the same person is referred to by using different identifiers different ID that are for instance the license ID the insurance ID and so on there are many options also the same um attribute could be written in different ways so here we have the name including the middle name we might have the name written as last name comma first name or two different attributes for first name and last name so having the process having a process that allows us to resolve and disambiguate these entities these records is fundamental because allows us to reach a unified view of your entities of of our entities in order to reach a cohesive understanding this allows us to go beyond the classic Silo situation in which different data sources do not interact to each other and instead reaching a system in which we can create a real knowledge and different sources interact so we can merge the information that we have from them for this reason entity resolution helps in reducing complexity of the data and perform more accurate analyses and predictions in our approach entity resolution is a two phases process the first phase that we call candidate selection and ranking essentially involves some custom defined rules in order to compute to identify potential matches in the graph so at the end of this process we will have our graph with the some additional similarity relationship each of them with uh the related similarity score at the end of this step there is the resolution phase in which we employ some Community detection algorithms to identify uh communities of nodes that are closely uh connected and each Community is likely to represent the same real world entity so these communities are in the end the final um the final s so let's see these two phases in detail the first step the first phase is the candidate selection and ranking and it is a single process in our approach in the sense that we perform it by using a single query but I'd like for a moment to keep them separated so that we can start explaining the um the selection and then see the rank phase so candidate selection i'ms to identify potential matches among records based on custom rotes when it come to the rots we can distinguish them according to the type of information that they leverage in the graph and the first type of rules is of course the the ones that depend on nod attributes here in in this picture there is an example that is the same social security number this is a rule of type node attribute because it is using the social security number that is indeed an attribute of our person nodes that we are supposed in to resolve in this case now these rules are very easy to manage but usually they are not enough because the problem I mean the problem that we have with the resolution is that we usually do not have uh unique identifiers that we can use to distinguish among uh different entities so for this reason we need to leverage the context of of the graph and the indirect uh relationship linked to the nodes and this is why there are other type of rules that we can Define and among them there are graph pattern rules we say that two entities are similar according to Gap pattern rules when these two entities are linked to some common nodes through relationship or Paths of the same type in this case for instance we can say that the two person are um satisfy a rule of type same address if they are linked to the same address or the same location through the same type of relationship in this case as address there are also composite rules that combine both node attributes and graph patterns so similar name and same address is a rule of this type as the name is essentially a property of the person nodes and for the same address we are checking a pattern in the graph now the rank process has to score potential matches in the graph and in our proposal we have two levels of scoring the first one is represented by the similarity score that is competed by using a similarity measure it returns usually results that goes from zero to to one and here we have a few examples so in the case of same social security number these two entities have a similarity score of one as we are checking the exact matching of the social securities so the score is uh is exact is one while for the similar name and same address we are considering a similarity measure the similarity of the names of this person so in this case this similarity score is uh obtained by Computing the similarity of the two record names with this approach is also possible to Define optionally a threshold so that we Define a similar only pair of notes that have a similarity that is higher than the fixed threshold so that we have the possibility to filter out some payers the second level of scoring is represented by the importance of the rule this is a property of the rule itself and allows us to um score the rules according to their importance what we will consider in the end is the final value that we got by multiplying the similarity score and the importance score of the rule so this value that we you can see here is the final value that we will consider later on during the resolution phase and it's what we will call um similarity similarity value or similarity score now I'd like to show you a few examples of the queries that we can use during the candidate selection and the ranking phase and you as you can see these step can be performed by just using the cipher queries and this is the the query that we are using that we can use for same social security number rule this process the candidate selection is a process that we execute in a streaming mode in the sense that for each input node we identify all the entities that match the uh the the rule that we are considering in this case all the person no that have essentially the same social security number then we compute the score as I said before by multiplying uh the the rule score in this case the same sociality number as a rule score of 0.8 and the similarity score and then we return for each input node that is represented by this node ID so in this case start node identity we will have the list the collection essentially because we are collecting them um the the list of entities that match for each of them we we have the ID and the similarity score so that later on we can create the similarity relationships here there is another example in this case we are considering similar name and same address rule again we execute the process in a streaming mode but in this um in this situation we have two different pieces of the query that are dealing with the selection part and the ranking part so for this selection we are using a f text index on the name of the person and these in order to streamline the process then we check the we check the condition that is we filter essentially according to the same address condition then there is the ranking phe and in this case we are using the S similarity string similarity function computed by considering the names of the two person the reason why we are using this function is because it return returns normalized values between zero and and one so instead of normalizing the results of the PO text just used this this other function that is another option that we have but this is important because allows us to to show the way in which we can customize Our Roots by using different ranking functions similarity functions or splitting the candidate selection and then the candidate ranking as we prefer in this case we are also defining the similarity threshold so that we will consider only um entities that matched that have a similarity score that is the S is string similarity value higher than the fixed threshold and then also in this case we compute the final score by multiplying the importance of the rule in this case 0.5 it's just a value that we assigned according to um the our the quality of the data set that we add and the similarity that is obtained by using the s data now at the end of this process we will have our uh similarity added into the graph so that among possible matches we create this similarity relationship with the similarity value then we perform the resolution phase that employs Community detection algorithms to identify Community subn likely to represent the same entity in our approach we are using we and we can use two different algorithms from the new 4J graph data science Library the first one is weekly connected component or WCC that offers a broad resolution value uh resolution level in the sense that this algorithm works by identifying the connected component in the graph that are groups of connected node so every time two entities are linked by a relationship they they will be in the same connec component this is an extremely uh valuable algorithm in the sense that if our data is lacking or dirty it avoids us to miss some important information but in other cases we can get very big components but on the other hand we can use the other algorithm that is Lan that offers a finer re level of resolution Lan is a hierarchical algorithm that can work in a weighted mode in the sense that it can take into account uh the similarity uh values so that these these weights that we assigned to the relationship and it is able to distinguish between communities of not that are strongly connected among them and the ones that are not so in this in this example that we are considering with these four Michael Alon while WCC returns a single Community because essentially these nods are linked among them Blan identifies two communities and these communities are composed by notes that share the same social security number this is not the case it's because the same social security number relationship has a n Gear value so this shows us uh the the importance of defining the the proper rules and assigning to them the right thresholds and importance now here we have the queries that we are using during this uh this the resolution phase so this is the first one that we are using for creating the IM memory projected graph so we consider the person nodes that are the ones that we are resolving and the similarity relationship among them we are also considering the scores of the relationship and in the case of multiple relationship we are summing the summing up the scores then we run WCC without considering these these weights this this score and the Lan in a waited mode because as you can see we are taking into account the total score that we computed before also in this case we are enabling the briting of intermediate communities because Lan is a hierarchical algorithm so it offers the possibility to return all the intermediate communities identified by the algorithm before getting the final um the final the optimal configuration of the communities and so this is another a further level of customization that we can select a further level of uh yeah resolution that we can assign or we can Define according to our data and the data sets that we are we are working on now what we described so far is uh what we call betcher resolution that is a process that is useful in the case of large scale and initial resolution but the problem is that this process can take a considerable amount of time while we need a a resolution that is able to keep our um to keep our resolution results up to date and it's quick enough because usually data changes over time and in small increments so we need for this reason a process that is able to um address all the changes happening the data almost in a real time and this is the process that we call incremental uh resolution that essentially works by identifying only the portion of the graphs that are affected by some changes according to um I mean compared to the previous status of the graph while the previous resolution was run and uh it updates the resolution only on this portion of the graph only on this subgraph while remaining the while leaving the remaining Nots untouched so this process starts by identifying the items that are affected by some changes and this is possible thanks to the new forj change data capture feature in our um example we can suppose that these red node changed and that it's the social security number of the node that was updated now after detecting this event what we uh we do is to run the candidate selection and the rank only on the connecting component of this red node that is the affected node why are we considering the entire connected component well if the social security number of this node changed the previously established similarity relationship involving this node because of the social security number are not valid anymore and we need to recompute them so with these um with these updates the entire connected component might be affected so in order to um keep our resolution correct and there we need to rerun the similarity process on the entire connected component now after doing this it can happen that the social security number of the red node is now the same of another node in another connected component so while running the resolution we need to consider to apply the community algorithms on both the um connected component of the affected nodes and the nodes that are involved in newly established similarity relationship this process is effective in the sense that we can address and uh resolve in a in a proper way according uh by by addressing any different type of changes that can happen to the database for instance the addition of items notd or relationship or the updating the deletion of them and all these possible cases can be addressed with this process and it's uh efficient because we are only updating a subgraph uh a subset of our graph and uh uh we we can it can run in um Bast now let's say that we run our uh resolution now it comes to the data modeling to the representation of the resolution results there are a few options that are possible the first one is storing the resolution result as attribute of the Nots in this case we use the ID of the resolution but other options are possible so the main thing is that we are using we are storing these um these this result as an attribute of our records the other option is represented by the hyperlink approach so in this case we are creating an empty node that is linked to all the entities resolved through it and the third approach is very similar to the second one but in this case this node will be a fused node in the sense that it contains some Consolidated attributes so which one which option to prefer depends of course on the use cases and the requirements for instance if you are working in a street Access Control scenario you should prefer you can prefer the first option the attribute option or the hyperlink because allows us allows you to uh check the information check the resolution of your node without disclosing information about other Nots that you cannot you you do not have privileges to see while if you need to um Traverse essentially these these resolution results in your queries because for instance you want to merge data coming from different data sources and jump from this Michael Alon to other coming from other sources you should prefer the approaches that indeed that essentially create this no because the queries will be uh simpler now I'd like to show you a demo through yum so this is the visualization of yum and here we have five notes that we will consider doing this this example while about the rules the similarity rules that we are defining we are considering the two rules that we explained before so same social security number and similar name and same address and then there is another rule that considers the similarity of the names and the match of the date of birth Now by observing this notes we can notice that these two notes have essentially the same social security number and this is the fourth uh line that we can see in the caption so this number and again by these two nodes share the same dat of B of these third one so these three notd are for sure similar among them also these two notes have the same social security number again this property so they will be similar according to the first rule and these two others share the same address so will be similar because of the address pattern now let me run the bch resolution supposing that we are running the first uh resolution process the initial um phase this is a workflow that essentially implements our bet resolution and we created by using orchestra that is our orchestrator that allows to uh create workflows that can Implement complex business Logics in a Lo code setting now let me run it while I explain how it works in the meantime so in the first Branch we are just setting a few things such as the entities that we are resolving and creating some indes that we will need during the process then in the second one we PCH the entities that we want to resolve in this case all the person that we have in the database and adding to them a temporary label that is this to be Sim process label the reason of this is because we want to track the status of the similarity computation because the similarity computation is essentially the process that takes the most of the time so case something goes wrong but uh also for checking the status we want to add this label so here this bigger Branch uh deals with the similarity computation so we have three rules and essentially this Branch starts with three lines one for each rule for each rule we are fetching the entities that we want to process according to the label that we added and then we apply the rule this is very similar to the one that we have seen before just a few Automation and this is the case of same social security number now at the end of the of the branch we check uh and every time an entity has been processed according to all the rotes that that are defined here we remove the temporary label so that in the following bench in this one we are just counting the number of notes that still have the temporary label so we know that the similarity process finished when the number of these notes is zero and we essentially can start the solution pH here we perform the resolution phase we are projecting the graph the query is very similar to the one that we have seen before and then we run WCC and L now I just want to show you the number of that we are considering in the projection that is the entire sides of essentially all the person that we have in our data set and we process according to theity because it is this number that we have seen here 400 then we store the results and in this case we are using the attribute mode so let me reload these Nots and we can notice that now we we have two uh new attributes that are the result of WCC and the result of Lan now if I enable the grouping strategy according to WCC we can notice that all these entities belong to the same Community while if I enable L we have two different communities one is composed by people that are born in 1994 these two have also the same social security number while in these other we have people that again have the same Social Security number so these results seem promising now if we want to check the resolution the the similarity rules and the similarity relationship created we need to change the visualization because something that I didn't mention before is that we usually suggest the usage of an alare database in which uh we can store the similarity relationship and also run the graph data science algorithms this because in this way we can avoid polluting the main graph with all these details that are only relevant for the purpose of the resolution otherwise if an analyst wants to see them can just change the visualization okay now let me copy this component ID and if I change the visualization and I I open one visualization linked to the helper database we should now see our entities because we run the workflow so we have now the enties that are visible in this in in this visualization so if I expand the person nodes that have the component ID equals uh sorry the one that I copied before we should see our entities okay let me disable the grouping strategy and uh expand all the similarity relationship so we can understand the way in which they are connected in particular we can notice that the connection that goes from a community to the other according to Lan is because of the same address now I just want to show you the incremental part so let's suppose that an analyst noticed that this relationship is wrong this person has not dis address I can drop it by using our graph editing tool and let me submit the changes so that it will be persist to the database now let me run the incremental workflow this is a workflow that is meant to run continuously but in this case just for the demo I'm starting it manually so it is very similar to the batch workflow but it starts by using a new 4J change data capture component you can see here and we are essentially monitoring the changes that involve any item you used in our similarity Roots so this selector is defined according to our Roots so for instance we have S security number the names does address relationship now when an event happens what we are doing is to identify the connected component of the affected item and we are processing all the entities belonging to the affected to the connected component so here we are running the similarity only for five notes then we also run the solution when this uh yeah here in this branch and I can show you again the sides of the projection that we are considering for which we are running a resolution only five notes the five affected notes the process finished so I can go back to the main visualization and reload all these nodes and we can notice that now enabling again WCC we have two different um two different communities according to this algorithm because essentially we broke the relationship that was connecting the two of them now this concludes our demo uh we have seen both bch resolution and the incremental one in our case I think that it took less than a minute but in general the incremental is a is a very fast process and also effective I just want to to conclude just mentioning uh that we have seen that GS offer a natural way to address F resolution we can for instance mention the Simplicity in defining the similarity relationship even in the case in which we are considering contextual information of our nodes in direct associations all the links it is very simple to write uh queries because of the graph structure also our community detection algorithms are very fast because we are working uh they are optimized to work on relationships and this is the way in which we stored our similarities we have discussed some of the useful features that new forj provides for managing the real scenarios for instance the change data capture that we used in the incremental or real time process but also the community detection algorithms that we use them and uh yeah the variety of indexes that that exist and we have described the fully customizable and explainable ntid resolution process that y offers in which the only responsibility that is left to the analyst is the definition of the rules according to the data otherwise if you would prefer an out of the box solution yum also natively integrates with the sensing that is a leading entity resolution library but that's maybe for another talk so I'd like to thank you all for attending this session I hope that you found it interesting and useful and let me check if there are any questions",
+  "attempts": [
+    {
+      "client": "IOS",
+      "playability": {
+        "status": "OK",
+        "playableInEmbed": true,
+        "offlineability": {
+          "buttonRenderer": {
+            "navigationEndpoint": {
+              "clickTrackingParams": "CBEQ6ewBIhMI6I3AlezblwMV_kxMCB1uXTOdygEEfTKtQg==",
+              "ypcGetOfflineUpsellEndpoint": {
+                "params": "ChPqqN25AQ0KC050ZmVFaHB2Y3VrIgtOdGZlRWhwdmN1ayoVCAkYAVIPCgtOdGZlRWhwdmN1ayAB"
+              }
+            },
+            "trackingParams": "CBEQ6ewBIhMI6I3AlezblwMV_kxMCB1uXTOd"
+          }
+        },
+        "pictureInPicture": {
+          "pictureInPictureRenderer": {
+            "playableInPip": true,
+            "offByDefault": false,
+            "shouldResumeOnHead": false
+          }
+        },
+        "miniplayer": {
+          "miniplayerRenderer": {
+            "playbackMode": "PLAYBACK_MODE_ALLOW"
+          }
+        },
+        "contextParams": "Q0FFU0FnZ0M="
+      },
+      "outcome": "ok"
+    }
+  ],
+  "fetched_at": "2026-10-28T04:11:43.133446+00:00",
+  "client": "IOS",
+  "json_path": "transcripts/171_NtfeEhpvcuk.json",
+  "text_path": "transcripts/171_NtfeEhpvcuk.txt"
+}

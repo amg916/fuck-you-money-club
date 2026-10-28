@@ -1,0 +1,784 @@
+{
+  "index": 189,
+  "url": "https://www.youtube.com/watch?v=2ThZ61aal9k",
+  "video_id": "2ThZ61aal9k",
+  "status": "ok",
+  "metadata": {
+    "title": "DataTree Hacks: TaxSource Reports and Property Tax Verification",
+    "author": "REtipster",
+    "channelId": "UC4f3qDE9qKqoRy5_9R6y_pw",
+    "lengthSeconds": "476",
+    "viewCount": "899",
+    "shortDescription": "Get the DataTree Discount: https://retipster.com/go/datatree/yt-2ThZ61aal9k (REtipster Affiliate Link)\nFull Blog Post: https://retipster.com/datatree-hacks/?utm_source=youtube&utm_medium=social&utm_campaign=blog&utm_content=2ThZ61aal9k\nJoin Our Community: https://retipster.com/follow/?utm_source=youtube&utm_medium=social&utm_campaign=blog&utm_content=2ThZ61aal9k\n\nWhen you buy a property, one of the many things you should be checking is the annual property tax expense because once you own the property, this expense will be yours to pay.\n\nLikewise, one of the many things you or your closing agent will want to do before closing on a real estate transaction is to verify that the property taxes are paid current and not past due.\n\nYou can do both of these things with DataTree. I'll show you how it works in this video.\n\nOf course, you can also get this information by calling your city, township, or county tax collector to verify these numbers, but DataTree makes it much easier.\n\n0:00 - Intro\n0:33 - What does it cost to order a TaxSource Report?\n0:57 - How to order a TaxSource Report\n1:19 - What information is included with a TaxSource Report?\n2:28 - The difference between an \"automatic\" and \"manual\" pull\n3:50 - Tracking the status of your recent order activity and property searches\n3:57 - Generating a direct mail marketing list based on the delinquent tax status - does it work?\n5:47 - Using DataTree's Advanced Data Solutions (ADS) to get a delinquent tax list\n7:13 - Who is DataTree most useful for?\n7:39 - Get a discount on DataTree: https://retipster.com/go/datatree/yt-2ThZ61aal9k",
+    "keywords": [
+      "retipster",
+      "property tax",
+      "real estate",
+      "property taxes",
+      "real estate tax",
+      "property tax lien investing",
+      "property tax assessment",
+      "property taxes real estate",
+      "property taxes by state",
+      "real estate business",
+      "delinquent property taxes",
+      "property tax status",
+      "taxsource report",
+      "datatree tutorial",
+      "datatree lessons",
+      "datatree demo",
+      "how datatree works",
+      "datatree property taxes",
+      "how to check property taxes",
+      "how to see a property tax bill",
+      "land investing",
+      "due diligence"
+    ]
+  },
+  "caption_tracks": [
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=2ThZ61aal9k&ei=AXbhaov4D5OLsfIPr7fouAw&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185905&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=9F727049D8471FEBCC52761611D6E4CEA2E9783D.8BE94928F7D017211B4F4E526C5EEA7AA229836A&key=yt8&lang=en",
+      "name": {
+        "runs": [
+          {
+            "text": "English"
+          }
+        ]
+      },
+      "vssId": ".en",
+      "languageCode": "en",
+      "isTranslatable": true,
+      "trackName": ""
+    }
+  ],
+  "selected_track": {
+    "baseUrl": "https://www.youtube.com/api/timedtext?v=2ThZ61aal9k&ei=AXbhaov4D5OLsfIPr7fouAw&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185905&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=9F727049D8471FEBCC52761611D6E4CEA2E9783D.8BE94928F7D017211B4F4E526C5EEA7AA229836A&key=yt8&lang=en",
+    "name": {
+      "runs": [
+        {
+          "text": "English"
+        }
+      ]
+    },
+    "vssId": ".en",
+    "languageCode": "en",
+    "isTranslatable": true,
+    "trackName": ""
+  },
+  "segments": [
+    {
+      "start": 9.44,
+      "duration": 1.6,
+      "text": "Hey guys, what's going on? It’s Seth here."
+    },
+    {
+      "start": 11.04,
+      "duration": 1.6,
+      "text": "In this video, I'm going to show you"
+    },
+    {
+      "start": 12.64,
+      "duration": 2.553,
+      "text": "a few tricks you can use in DataTree"
+    },
+    {
+      "start": 15.193,
+      "duration": 3.127,
+      "text": "to check on a properties tax status."
+    },
+    {
+      "start": 18.32,
+      "duration": 4.859,
+      "text": "And what I mean by that is finding out how much the annual property tax bill is for that property"
+    },
+    {
+      "start": 23.179,
+      "duration": 5.141,
+      "text": "when that tax bill is due each year, whether or not it's paid current, and if it's not paid current,"
+    },
+    {
+      "start": 28.32,
+      "duration": 1.775,
+      "text": "how far delinquent it is."
+    },
+    {
+      "start": 30.095,
+      "duration": 2.42,
+      "text": "And you can do this nationwide in DataTree."
+    },
+    {
+      "start": 32.515,
+      "duration": 5.933,
+      "text": "And there's a little pricing sheet right here that explains how much it costs. So in most states you are able"
+    },
+    {
+      "start": 38.448,
+      "duration": 2.737,
+      "text": "to pull this information automatically and very quickly."
+    },
+    {
+      "start": 41.185,
+      "duration": 1.935,
+      "text": "And when you do that, it costs usually"
+    },
+    {
+      "start": 43.12,
+      "duration": 3.003,
+      "text": "about three to four bucks per time that you do that."
+    },
+    {
+      "start": 46.123,
+      "duration": 3.747,
+      "text": "And when it's not automatically available, you can manually pull it."
+    },
+    {
+      "start": 49.87,
+      "duration": 2.61,
+      "text": "And in those cases, it's going to cost six to eight bucks."
+    },
+    {
+      "start": 52.48,
+      "duration": 5.058,
+      "text": "In some rare cases, it'll be more than that as you can see down here, but usually the cost isn't too crazy"
+    },
+    {
+      "start": 57.538,
+      "duration": 1.201,
+      "text": "So I'm going to show you how this works."
+    },
+    {
+      "start": 58.739,
+      "duration": 2.701,
+      "text": "If we go back here to the main DataTree dashboard,"
+    },
+    {
+      "start": 61.44,
+      "duration": 4.478,
+      "text": "and I'm just going to search for a random name and we will pick out the first one that shows up here."
+    },
+    {
+      "start": 65.918,
+      "duration": 3.442,
+      "text": "And what we have to do is go over here to property data reports,"
+    },
+    {
+      "start": 69.36,
+      "duration": 3.76,
+      "text": "and right here, where we see tax source report that's what we're going to click on."
+    },
+    {
+      "start": 73.12,
+      "duration": 2.0,
+      "text": "So we're going to click that and then click order."
+    },
+    {
+      "start": 75.12,
+      "duration": 2.607,
+      "text": "And it's going to take just a few seconds for this to pop up"
+    },
+    {
+      "start": 77.727,
+      "duration": 1.477,
+      "text": "and I'll show you what we can see here."
+    },
+    {
+      "start": 79.204,
+      "duration": 1.141,
+      "text": "All right. So here it is."
+    },
+    {
+      "start": 80.345,
+      "duration": 5.895,
+      "text": "So we can see a lot of the basic inform about the property and the tax agency that collects the tax bills."
+    },
+    {
+      "start": 86.24,
+      "duration": 5.04,
+      "text": "And right here, we can see when the tax bills are due each year. It looks like there's"
+    },
+    {
+      "start": 91.28,
+      "duration": 3.609,
+      "text": "one due on November one and another one due on February one."
+    },
+    {
+      "start": 94.889,
+      "duration": 1.911,
+      "text": "It looks like this first one is paid."
+    },
+    {
+      "start": 96.8,
+      "duration": 2.048,
+      "text": "This other one is not paid yet."
+    },
+    {
+      "start": 98.848,
+      "duration": 2.991,
+      "text": "And we can see the date at which it's going to be delinquent."
+    },
+    {
+      "start": 101.839,
+      "duration": 3.01,
+      "text": "And we can also see when this data was last updated."
+    },
+    {
+      "start": 104.849,
+      "duration": 3.598,
+      "text": "So I'm recording this on February 18th, 2022"
+    },
+    {
+      "start": 108.447,
+      "duration": 3.226,
+      "text": "And this was last updated on February 9th, 2022."
+    },
+    {
+      "start": 111.673,
+      "duration": 2.727,
+      "text": "So this isn't up to date as of like today,"
+    },
+    {
+      "start": 114.4,
+      "duration": 1.61,
+      "text": "but it's reasonably current."
+    },
+    {
+      "start": 116.01,
+      "duration": 3.257,
+      "text": "And if we did want to find out, okay, what's the status right now,"
+    },
+    {
+      "start": 119.267,
+      "duration": 3.603,
+      "text": "we could pick up the phone and call the tax collector right here at this phone number"
+    },
+    {
+      "start": 122.87,
+      "duration": 4.38,
+      "text": "and we could give them a parcel number or the address to say, Hey, is this paid current? Yes or no."
+    },
+    {
+      "start": 127.25,
+      "duration": 2.565,
+      "text": "And then we would get the information as of right now,"
+    },
+    {
+      "start": 129.815,
+      "duration": 2.435,
+      "text": "but even without doing that, this isn't that old."
+    },
+    {
+      "start": 132.25,
+      "duration": 3.91,
+      "text": "And it's reasonably accurate because the information is only one week old at this point."
+    },
+    {
+      "start": 136.16,
+      "duration": 2.91,
+      "text": "And that cost us three bucks to pull that report."
+    },
+    {
+      "start": 139.07,
+      "duration": 2.77,
+      "text": "So it's not like you have to use DataTree to do this,"
+    },
+    {
+      "start": 141.84,
+      "duration": 4.497,
+      "text": "but it is a very consistent, convenient way to get this information everywhere"
+    },
+    {
+      "start": 146.337,
+      "duration": 1.701,
+      "text": "regardless of the state and county."
+    },
+    {
+      "start": 148.038,
+      "duration": 2.972,
+      "text": "So that's how it works when you do an automatic pull like that,"
+    },
+    {
+      "start": 151.01,
+      "duration": 2.056,
+      "text": "when the information is just readily available."
+    },
+    {
+      "start": 153.066,
+      "duration": 1.403,
+      "text": "I'm going to go try another one now,"
+    },
+    {
+      "start": 154.469,
+      "duration": 2.245,
+      "text": "so we can see how that process works."
+    },
+    {
+      "start": 156.714,
+      "duration": 2.182,
+      "text": "So I'm going to go here, try this one here."
+    },
+    {
+      "start": 159.52,
+      "duration": 3.342,
+      "text": "All right. So now we have a totally different property, totally different part of the country."
+    },
+    {
+      "start": 162.862,
+      "duration": 5.068,
+      "text": "Let's go ahead and order this thing and we can see t's thinking about it and processing it right now."
+    },
+    {
+      "start": 167.93,
+      "duration": 3.43,
+      "text": "All right. So I just skipped forward a little bit. I was waiting here for about 60 seconds,"
+    },
+    {
+      "start": 171.36,
+      "duration": 4.735,
+      "text": "and then this little thing popped up and said, your order has been submitted for manual fulfillment."
+    },
+    {
+      "start": 176.095,
+      "duration": 5.026,
+      "text": "Once your order is complete, you may access it on the subject property page or in the order of portal."
+    },
+    {
+      "start": 181.121,
+      "duration": 4.132,
+      "text": "And if we go back here to this pricing sheet, because this is in Minnesota,"
+    },
+    {
+      "start": 185.253,
+      "duration": 5.617,
+      "text": "which is right here, and this is a manual poll, what I just did there is costing me $6 to get this."
+    },
+    {
+      "start": 190.87,
+      "duration": 4.17,
+      "text": "And it usually takes about 24 to 48 hours for that order to be fulfilled."
+    },
+    {
+      "start": 195.04,
+      "duration": 4.0,
+      "text": "So it's not quite as fast or cheap, but it is still pretty convenient and again,"
+    },
+    {
+      "start": 199.04,
+      "duration": 4.027,
+      "text": "alternatively, I could get on Google, try to do a Google search for whatever"
+    },
+    {
+      "start": 203.067,
+      "duration": 4.609,
+      "text": "tax agency collects these taxes. It might take me a few more minutes. If I got really lucky,"
+    },
+    {
+      "start": 207.676,
+      "duration": 4.884,
+      "text": "they might have a website where I could see this information publicly. And if not, I could possibly"
+    },
+    {
+      "start": 212.56,
+      "duration": 3.68,
+      "text": "pick up the phone and call them and maybe I could find the right person and ask them that way."
+    },
+    {
+      "start": 216.24,
+      "duration": 4.4,
+      "text": "So it's not like DataTree is your only option for getting this done. But again, just going back to"
+    },
+    {
+      "start": 220.64,
+      "duration": 5.229,
+      "text": "convenience, if you're already a DataTree user and you have access to everything else that DataTree does"
+    },
+    {
+      "start": 225.869,
+      "duration": 4.181,
+      "text": "this is just one of many things that it can help in making that process easier."
+    },
+    {
+      "start": 230.05,
+      "duration": 4.27,
+      "text": "And when we go back here to home, we can see our recent property searches. We can also click on this"
+    },
+    {
+      "start": 234.32,
+      "duration": 3.189,
+      "text": "and see the status of the different orders that we've been placing."
+    },
+    {
+      "start": 237.509,
+      "duration": 1.686,
+      "text": "Now, one other thing worth touching on here"
+    },
+    {
+      "start": 239.195,
+      "duration": 4.425,
+      "text": "that's kind of related to this whole issue of properties and their tax status"
+    },
+    {
+      "start": 243.62,
+      "duration": 5.013,
+      "text": "is if you're ever trying to generate a direct mail marketing list from DataTree"
+    },
+    {
+      "start": 248.633,
+      "duration": 2.203,
+      "text": "and I have a whole other video explaining how to do this,"
+    },
+    {
+      "start": 250.836,
+      "duration": 3.923,
+      "text": "it's kind of a huge subject in of itself, but you can do that up here"
+    },
+    {
+      "start": 254.759,
+      "duration": 1.913,
+      "text": "when you click on advanced search."
+    },
+    {
+      "start": 256.672,
+      "duration": 5.127,
+      "text": "And one thing that DataTree allows you to used as a filtering option"
+    },
+    {
+      "start": 261.799,
+      "duration": 3.721,
+      "text": "is right down here under assessor information where it says delinquent,"
+    },
+    {
+      "start": 265.52,
+      "duration": 1.83,
+      "text": "and you can click yes."
+    },
+    {
+      "start": 267.35,
+      "duration": 3.99,
+      "text": "And the idea behind this is if you click yes, there, it's only supposed"
+    },
+    {
+      "start": 271.34,
+      "duration": 4.443,
+      "text": "to include properties and property owners that are currently delinquent on their taxes,"
+    },
+    {
+      "start": 275.783,
+      "duration": 2.426,
+      "text": "or at least that's in theory, what it's trying to do."
+    },
+    {
+      "start": 278.209,
+      "duration": 2.285,
+      "text": "However, there's one issue with this"
+    },
+    {
+      "start": 280.494,
+      "duration": 5.206,
+      "text": "that's worth being aware of when it's retrieving this information on the advanced search area,"
+    },
+    {
+      "start": 285.7,
+      "duration": 3.35,
+      "text": "it's not pulling this information from the tax collector,"
+    },
+    {
+      "start": 289.05,
+      "duration": 1.812,
+      "text": "it's pulling it from the assessor."
+    },
+    {
+      "start": 290.862,
+      "duration": 3.51,
+      "text": "And assessor data is only sourced annually in DataTree,"
+    },
+    {
+      "start": 294.372,
+      "duration": 3.598,
+      "text": "which basically means that in the counties where this works at all,"
+    },
+    {
+      "start": 297.97,
+      "duration": 3.885,
+      "text": "and it only works in about half the country, it can be up to a year old."
+    },
+    {
+      "start": 301.855,
+      "duration": 5.281,
+      "text": "So it's not really an adequate indicator saying, yes, it's delinquent or current as of today,"
+    },
+    {
+      "start": 307.136,
+      "duration": 5.344,
+      "text": "if you click yes, here, it's basically saying at some point in the past year it was delinquent."
+    },
+    {
+      "start": 312.48,
+      "duration": 3.391,
+      "text": "It doesn't mean it's delinquent now. So this is not really the same thing"
+    },
+    {
+      "start": 315.871,
+      "duration": 3.11,
+      "text": "as getting a delinquent tax list directly from the county,"
+    },
+    {
+      "start": 318.981,
+      "duration": 1.319,
+      "text": "because when you get it from the county,"
+    },
+    {
+      "start": 320.3,
+      "duration": 3.626,
+      "text": "which in many cases can be a huge pain, but when you do get it directly from the county,"
+    },
+    {
+      "start": 323.926,
+      "duration": 2.81,
+      "text": "that information is current as of that day."
+    },
+    {
+      "start": 326.736,
+      "duration": 4.504,
+      "text": "Like very, very current. Whereas this information oftentimes is not current at all."
+    },
+    {
+      "start": 331.24,
+      "duration": 2.655,
+      "text": "It's just indicated that at some point in the past year,"
+    },
+    {
+      "start": 333.895,
+      "duration": 2.41,
+      "text": "there was a delinquency reported on these properties."
+    },
+    {
+      "start": 336.305,
+      "duration": 1.426,
+      "text": "So just want to point that out."
+    },
+    {
+      "start": 337.731,
+      "duration": 5.069,
+      "text": "If you are trying to filter a list by delinquent tax status, just be aware that this filter only works in"
+    },
+    {
+      "start": 342.8,
+      "duration": 4.0,
+      "text": "about half the country and even where it does work, it's not necessarily current."
+    },
+    {
+      "start": 346.8,
+      "duration": 3.854,
+      "text": "And with that big disclaimer out of the way, one last thing I will mention about this"
+    },
+    {
+      "start": 350.654,
+      "duration": 5.745,
+      "text": "is that there is something called advanced data solutions or ADS within DataTree."
+    },
+    {
+      "start": 356.399,
+      "duration": 4.241,
+      "text": "This is not something I've ever used before, but apparently it is possible through this"
+    },
+    {
+      "start": 360.64,
+      "duration": 6.89,
+      "text": "service to get current up to date delinquent tax records when you're pulling a full list like this,"
+    },
+    {
+      "start": 367.53,
+      "duration": 3.42,
+      "text": "but it's not available in the normal DataTree advanced search dashboard."
+    },
+    {
+      "start": 370.95,
+      "duration": 5.4,
+      "text": "If you want to do this, you have to contact your DataTree account manager to learn more about how it works."
+    },
+    {
+      "start": 376.35,
+      "duration": 4.499,
+      "text": "I got just a little bit of information on it. And it's not necessarily cheap to use this,"
+    },
+    {
+      "start": 380.849,
+      "duration": 4.529,
+      "text": "but it is very convenient if you don't want to deal with trying to contact your county"
+    },
+    {
+      "start": 385.378,
+      "duration": 3.982,
+      "text": "and all the headaches that go with that, you can't potentially get it right here through DataTree."
+    },
+    {
+      "start": 389.36,
+      "duration": 6.234,
+      "text": "And based on volume records, the cost per record could range anywhere from $1 to $3 per record."
+    },
+    {
+      "start": 395.594,
+      "duration": 2.7,
+      "text": "So like I said, definitely not the cheapest way to do this,"
+    },
+    {
+      "start": 398.294,
+      "duration": 4.123,
+      "text": "but sometimes there's just no other way because the county is so difficult to work with."
+    },
+    {
+      "start": 402.417,
+      "duration": 3.872,
+      "text": "Or maybe you just don't want to deal with those headaches and you're willing to pay that higher cost."
+    },
+    {
+      "start": 406.289,
+      "duration": 2.961,
+      "text": "Either way, whether you think that makes sense for you or not"
+    },
+    {
+      "start": 409.25,
+      "duration": 3.95,
+      "text": "I just wanted to make sure to mention that in this video, because it's very relevant to this whole"
+    },
+    {
+      "start": 413.2,
+      "duration": 4.83,
+      "text": "discussion of getting up to date delinquent tax data on properties through country"
+    },
+    {
+      "start": 418.03,
+      "duration": 2.157,
+      "text": "and this kind of service is available."
+    },
+    {
+      "start": 420.187,
+      "duration": 2.343,
+      "text": "So if you're already a DataTree user,"
+    },
+    {
+      "start": 422.53,
+      "duration": 4.438,
+      "text": "you can reach out to your account manager or just give them a call and ask for more information on this."
+    },
+    {
+      "start": 426.968,
+      "duration": 3.982,
+      "text": "And if you're not a DataTree user, you can get a discount on the service if you think this is"
+    },
+    {
+      "start": 430.95,
+      "duration": 2.62,
+      "text": "right for you through the REtipster affiliate link."
+    },
+    {
+      "start": 433.57,
+      "duration": 3.25,
+      "text": "And DataTree is used by a lot of different industry professionals"
+    },
+    {
+      "start": 436.82,
+      "duration": 1.67,
+      "text": "for all kinds of different reasons."
+    },
+    {
+      "start": 438.49,
+      "duration": 3.37,
+      "text": "As a real estate investor, I personally use it most often for"
+    },
+    {
+      "start": 441.86,
+      "duration": 2.997,
+      "text": "generating marketing lists for my direct mail campaigns"
+    },
+    {
+      "start": 444.857,
+      "duration": 3.903,
+      "text": "and also for doing individual property research, kind of like what I just showed you here,"
+    },
+    {
+      "start": 448.76,
+      "duration": 4.36,
+      "text": "but there's a lot more you can do beyond this and I have a whole playlist with several other videos"
+    },
+    {
+      "start": 453.12,
+      "duration": 3.05,
+      "text": "explaining some of the other things you can do and how you can do them."
+    },
+    {
+      "start": 456.17,
+      "duration": 3.325,
+      "text": "And DataTree is a paid subscription and software."
+    },
+    {
+      "start": 459.495,
+      "duration": 3.425,
+      "text": "But if you want to get a discount for the life of your subscription you can get that"
+    },
+    {
+      "start": 462.92,
+      "duration": 2.56,
+      "text": "if you sign up through the REtipster affiliate link,"
+    },
+    {
+      "start": 465.48,
+      "duration": 1.804,
+      "text": "which I'm going to have right beneath this video."
+    },
+    {
+      "start": 467.284,
+      "duration": 3.546,
+      "text": "That's retipster.com/datatree."
+    },
+    {
+      "start": 470.83,
+      "duration": 2.645,
+      "text": "And again, if you want to see some of the other things DataTree can do"
+    },
+    {
+      "start": 473.475,
+      "duration": 2.233,
+      "text": "check out this next video and I'll see you there."
+    }
+  ],
+  "full_text": "Hey guys, what's going on? It’s Seth here. In this video, I'm going to show you a few tricks you can use in DataTree to check on a properties tax status. And what I mean by that is finding out how much the annual property tax bill is for that property when that tax bill is due each year, whether or not it's paid current, and if it's not paid current, how far delinquent it is. And you can do this nationwide in DataTree. And there's a little pricing sheet right here that explains how much it costs. So in most states you are able to pull this information automatically and very quickly. And when you do that, it costs usually about three to four bucks per time that you do that. And when it's not automatically available, you can manually pull it. And in those cases, it's going to cost six to eight bucks. In some rare cases, it'll be more than that as you can see down here, but usually the cost isn't too crazy So I'm going to show you how this works. If we go back here to the main DataTree dashboard, and I'm just going to search for a random name and we will pick out the first one that shows up here. And what we have to do is go over here to property data reports, and right here, where we see tax source report that's what we're going to click on. So we're going to click that and then click order. And it's going to take just a few seconds for this to pop up and I'll show you what we can see here. All right. So here it is. So we can see a lot of the basic inform about the property and the tax agency that collects the tax bills. And right here, we can see when the tax bills are due each year. It looks like there's one due on November one and another one due on February one. It looks like this first one is paid. This other one is not paid yet. And we can see the date at which it's going to be delinquent. And we can also see when this data was last updated. So I'm recording this on February 18th, 2022 And this was last updated on February 9th, 2022. So this isn't up to date as of like today, but it's reasonably current. And if we did want to find out, okay, what's the status right now, we could pick up the phone and call the tax collector right here at this phone number and we could give them a parcel number or the address to say, Hey, is this paid current? Yes or no. And then we would get the information as of right now, but even without doing that, this isn't that old. And it's reasonably accurate because the information is only one week old at this point. And that cost us three bucks to pull that report. So it's not like you have to use DataTree to do this, but it is a very consistent, convenient way to get this information everywhere regardless of the state and county. So that's how it works when you do an automatic pull like that, when the information is just readily available. I'm going to go try another one now, so we can see how that process works. So I'm going to go here, try this one here. All right. So now we have a totally different property, totally different part of the country. Let's go ahead and order this thing and we can see t's thinking about it and processing it right now. All right. So I just skipped forward a little bit. I was waiting here for about 60 seconds, and then this little thing popped up and said, your order has been submitted for manual fulfillment. Once your order is complete, you may access it on the subject property page or in the order of portal. And if we go back here to this pricing sheet, because this is in Minnesota, which is right here, and this is a manual poll, what I just did there is costing me $6 to get this. And it usually takes about 24 to 48 hours for that order to be fulfilled. So it's not quite as fast or cheap, but it is still pretty convenient and again, alternatively, I could get on Google, try to do a Google search for whatever tax agency collects these taxes. It might take me a few more minutes. If I got really lucky, they might have a website where I could see this information publicly. And if not, I could possibly pick up the phone and call them and maybe I could find the right person and ask them that way. So it's not like DataTree is your only option for getting this done. But again, just going back to convenience, if you're already a DataTree user and you have access to everything else that DataTree does this is just one of many things that it can help in making that process easier. And when we go back here to home, we can see our recent property searches. We can also click on this and see the status of the different orders that we've been placing. Now, one other thing worth touching on here that's kind of related to this whole issue of properties and their tax status is if you're ever trying to generate a direct mail marketing list from DataTree and I have a whole other video explaining how to do this, it's kind of a huge subject in of itself, but you can do that up here when you click on advanced search. And one thing that DataTree allows you to used as a filtering option is right down here under assessor information where it says delinquent, and you can click yes. And the idea behind this is if you click yes, there, it's only supposed to include properties and property owners that are currently delinquent on their taxes, or at least that's in theory, what it's trying to do. However, there's one issue with this that's worth being aware of when it's retrieving this information on the advanced search area, it's not pulling this information from the tax collector, it's pulling it from the assessor. And assessor data is only sourced annually in DataTree, which basically means that in the counties where this works at all, and it only works in about half the country, it can be up to a year old. So it's not really an adequate indicator saying, yes, it's delinquent or current as of today, if you click yes, here, it's basically saying at some point in the past year it was delinquent. It doesn't mean it's delinquent now. So this is not really the same thing as getting a delinquent tax list directly from the county, because when you get it from the county, which in many cases can be a huge pain, but when you do get it directly from the county, that information is current as of that day. Like very, very current. Whereas this information oftentimes is not current at all. It's just indicated that at some point in the past year, there was a delinquency reported on these properties. So just want to point that out. If you are trying to filter a list by delinquent tax status, just be aware that this filter only works in about half the country and even where it does work, it's not necessarily current. And with that big disclaimer out of the way, one last thing I will mention about this is that there is something called advanced data solutions or ADS within DataTree. This is not something I've ever used before, but apparently it is possible through this service to get current up to date delinquent tax records when you're pulling a full list like this, but it's not available in the normal DataTree advanced search dashboard. If you want to do this, you have to contact your DataTree account manager to learn more about how it works. I got just a little bit of information on it. And it's not necessarily cheap to use this, but it is very convenient if you don't want to deal with trying to contact your county and all the headaches that go with that, you can't potentially get it right here through DataTree. And based on volume records, the cost per record could range anywhere from $1 to $3 per record. So like I said, definitely not the cheapest way to do this, but sometimes there's just no other way because the county is so difficult to work with. Or maybe you just don't want to deal with those headaches and you're willing to pay that higher cost. Either way, whether you think that makes sense for you or not I just wanted to make sure to mention that in this video, because it's very relevant to this whole discussion of getting up to date delinquent tax data on properties through country and this kind of service is available. So if you're already a DataTree user, you can reach out to your account manager or just give them a call and ask for more information on this. And if you're not a DataTree user, you can get a discount on the service if you think this is right for you through the REtipster affiliate link. And DataTree is used by a lot of different industry professionals for all kinds of different reasons. As a real estate investor, I personally use it most often for generating marketing lists for my direct mail campaigns and also for doing individual property research, kind of like what I just showed you here, but there's a lot more you can do beyond this and I have a whole playlist with several other videos explaining some of the other things you can do and how you can do them. And DataTree is a paid subscription and software. But if you want to get a discount for the life of your subscription you can get that if you sign up through the REtipster affiliate link, which I'm going to have right beneath this video. That's retipster.com/datatree. And again, if you want to see some of the other things DataTree can do check out this next video and I'll see you there.",
+  "attempts": [
+    {
+      "client": "IOS",
+      "playability": {
+        "status": "OK",
+        "playableInEmbed": true,
+        "offlineability": {
+          "buttonRenderer": {
+            "navigationEndpoint": {
+              "clickTrackingParams": "CBEQ6ewBIhMIy_zyluzblwMVk0VMCB2vGxrHygEE7pfY3A==",
+              "ypcGetOfflineUpsellEndpoint": {
+                "params": "ChPqqN25AQ0KCzJUaFo2MWFhbDlrIgsyVGhaNjFhYWw5ayoVCAkYAVIPCgsyVGhaNjFhYWw5ayAB"
+              }
+            },
+            "trackingParams": "CBEQ6ewBIhMIy_zyluzblwMVk0VMCB2vGxrH"
+          }
+        },
+        "pictureInPicture": {
+          "pictureInPictureRenderer": {
+            "playableInPip": true,
+            "offByDefault": false,
+            "shouldResumeOnHead": false
+          }
+        },
+        "miniplayer": {
+          "miniplayerRenderer": {
+            "playbackMode": "PLAYBACK_MODE_ALLOW"
+          }
+        },
+        "contextParams": "Q0FFU0FnZ0M="
+      },
+      "outcome": "ok"
+    }
+  ],
+  "fetched_at": "2026-10-28T04:11:45.736531+00:00",
+  "client": "IOS",
+  "json_path": "transcripts/189_2ThZ61aal9k.json",
+  "text_path": "transcripts/189_2ThZ61aal9k.txt"
+}

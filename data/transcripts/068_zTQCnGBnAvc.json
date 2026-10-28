@@ -1,0 +1,887 @@
+{
+  "index": 68,
+  "url": "https://www.youtube.com/watch?v=zTQCnGBnAvc",
+  "video_id": "zTQCnGBnAvc",
+  "status": "ok",
+  "metadata": {
+    "title": "How to Link Unindexed Images to FS by Ann Tanner    10 minutes",
+    "author": "BYU Library Family History Center",
+    "channelId": "UC7hqNOQt-2AfeVEpDuc7sCA",
+    "lengthSeconds": "614",
+    "viewCount": "641",
+    "shortDescription": "This brief video will walk you through the process of linking unindexed images in FamilySearch to the person to whom it belongs.",
+    "keywords": [
+      "FamilySearch",
+      "Genealogy",
+      "Family History"
+    ]
+  },
+  "caption_tracks": [
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=zTQCnGBnAvc&ei=63Xhav38KLD5sfIP-MfIuQo&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185883&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=C948F8E6003CFC76D2A9DBD0EBC29FAFA9EFD6F4.935530AD607D785F4B8D4E64B9786ECE2998EFBB&key=yt8&kind=asr&lang=en",
+      "name": {
+        "runs": [
+          {
+            "text": "English (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.en",
+      "languageCode": "en",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    }
+  ],
+  "selected_track": {
+    "baseUrl": "https://www.youtube.com/api/timedtext?v=zTQCnGBnAvc&ei=63Xhav38KLD5sfIP-MfIuQo&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185883&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=C948F8E6003CFC76D2A9DBD0EBC29FAFA9EFD6F4.935530AD607D785F4B8D4E64B9786ECE2998EFBB&key=yt8&kind=asr&lang=en",
+    "name": {
+      "runs": [
+        {
+          "text": "English (auto-generated)"
+        }
+      ]
+    },
+    "vssId": "a.en",
+    "languageCode": "en",
+    "kind": "asr",
+    "isTranslatable": true,
+    "trackName": ""
+  },
+  "segments": [
+    {
+      "start": 0.5,
+      "duration": 5.259,
+      "text": "familysearch family tree is a great"
+    },
+    {
+      "start": 3.209,
+      "duration": 6.361,
+      "text": "place to store your research on your"
+    },
+    {
+      "start": 5.759,
+      "duration": 6.571,
+      "text": "ancestors and their descendants I find"
+    },
+    {
+      "start": 9.57,
+      "duration": 5.04,
+      "text": "that I collaborate with relatives that I"
+    },
+    {
+      "start": 12.33,
+      "duration": 5.51,
+      "text": "didn't even know I had and together"
+    },
+    {
+      "start": 14.61,
+      "duration": 5.43,
+      "text": "we're adding sources and documenting and"
+    },
+    {
+      "start": 17.84,
+      "duration": 6.43,
+      "text": "correcting and straightening out and"
+    },
+    {
+      "start": 20.04,
+      "duration": 9.78,
+      "text": "making as good a record as we can about"
+    },
+    {
+      "start": 24.27,
+      "duration": 7.2,
+      "text": "our ancestors since 1938"
+    },
+    {
+      "start": 29.82,
+      "duration": 3.96,
+      "text": "the Church of Jesus Christ of latter-day"
+    },
+    {
+      "start": 31.47,
+      "duration": 4.65,
+      "text": "saints has been microfilming records"
+    },
+    {
+      "start": 33.78,
+      "duration": 4.309,
+      "text": "around the world so that these records"
+    },
+    {
+      "start": 36.12,
+      "duration": 5.279,
+      "text": "are then more accessible and available"
+    },
+    {
+      "start": 38.089,
+      "duration": 7.961,
+      "text": "for research they've accumulated in that"
+    },
+    {
+      "start": 41.399,
+      "duration": 7.23,
+      "text": "time 2.4 million rolls of microfilm well"
+    },
+    {
+      "start": 46.05,
+      "duration": 6.12,
+      "text": "that's a great resource but what's the"
+    },
+    {
+      "start": 48.629,
+      "duration": 6.421,
+      "text": "downside you had to order them in and go"
+    },
+    {
+      "start": 52.17,
+      "duration": 6.119,
+      "text": "to a family history Center around the"
+    },
+    {
+      "start": 55.05,
+      "duration": 6.989,
+      "text": "world to look at these but over the past"
+    },
+    {
+      "start": 58.289,
+      "duration": 7.02,
+      "text": "several years the church has been"
+    },
+    {
+      "start": 62.039,
+      "duration": 5.971,
+      "text": "digitizing these records so that these"
+    },
+    {
+      "start": 65.309,
+      "duration": 4.561,
+      "text": "will be available on computer and we"
+    },
+    {
+      "start": 68.01,
+      "duration": 8.31,
+      "text": "won't have to deal with rolls of"
+    },
+    {
+      "start": 69.87,
+      "duration": 9.77,
+      "text": "microfilm anymore so this brings up an"
+    },
+    {
+      "start": 76.32,
+      "duration": 5.4,
+      "text": "interesting point I have a"
+    },
+    {
+      "start": 79.64,
+      "duration": 6.16,
+      "text": "great-great-grandmother Amanda Mathilde"
+    },
+    {
+      "start": 81.72,
+      "duration": 7.53,
+      "text": "Hall and occasionally for the people in"
+    },
+    {
+      "start": 85.8,
+      "duration": 6.78,
+      "text": "our tree there will be some research"
+    },
+    {
+      "start": 89.25,
+      "duration": 6.02,
+      "text": "help some hints showing here where do"
+    },
+    {
+      "start": 92.58,
+      "duration": 6.51,
+      "text": "these hints come from they are from"
+    },
+    {
+      "start": 95.27,
+      "duration": 6.22,
+      "text": "indexed records because the computer as"
+    },
+    {
+      "start": 99.09,
+      "duration": 7.14,
+      "text": "yet doesn't do a great job of reading"
+    },
+    {
+      "start": 101.49,
+      "duration": 6.93,
+      "text": "handwriting ok so how many of their"
+    },
+    {
+      "start": 106.23,
+      "duration": 5.37,
+      "text": "records have been indexed on family"
+    },
+    {
+      "start": 108.42,
+      "duration": 6.09,
+      "text": "search that's a good question"
+    },
+    {
+      "start": 111.6,
+      "duration": 6.48,
+      "text": "but an estimate that we've heard is"
+    },
+    {
+      "start": 114.51,
+      "duration": 6.35,
+      "text": "between five and ten percent which is"
+    },
+    {
+      "start": 118.08,
+      "duration": 6.6,
+      "text": "not very many of the 2.4 million rolls"
+    },
+    {
+      "start": 120.86,
+      "duration": 6.09,
+      "text": "so how do we get access to all of the"
+    },
+    {
+      "start": 124.68,
+      "duration": 5.18,
+      "text": "rest of these valuable valuable"
+    },
+    {
+      "start": 126.95,
+      "duration": 6.1,
+      "text": "wonderful records"
+    },
+    {
+      "start": 129.86,
+      "duration": 6.85,
+      "text": "okay I have done research on Amanda"
+    },
+    {
+      "start": 133.05,
+      "duration": 6.45,
+      "text": "Matilda and you can see I have a lot of"
+    },
+    {
+      "start": 136.71,
+      "duration": 6.3,
+      "text": "very specific and great information"
+    },
+    {
+      "start": 139.5,
+      "duration": 6.78,
+      "text": "about her but I have found a birth"
+    },
+    {
+      "start": 143.01,
+      "duration": 9.71,
+      "text": "record is now available on Family Search"
+    },
+    {
+      "start": 146.28,
+      "duration": 9.45,
+      "text": "and I would like to attach this original"
+    },
+    {
+      "start": 152.72,
+      "duration": 5.83,
+      "text": "digitized copy of this original record"
+    },
+    {
+      "start": 155.73,
+      "duration": 5.37,
+      "text": "to this person so everybody can see it"
+    },
+    {
+      "start": 158.55,
+      "duration": 4.11,
+      "text": "now I've already done the research so"
+    },
+    {
+      "start": 161.1,
+      "duration": 3.56,
+      "text": "I'm not going to tell you how to do"
+    },
+    {
+      "start": 162.66,
+      "duration": 4.59,
+      "text": "research that's up to you"
+    },
+    {
+      "start": 164.66,
+      "duration": 6.75,
+      "text": "but I'm going to show you the process"
+    },
+    {
+      "start": 167.25,
+      "duration": 8.16,
+      "text": "and how you can access these records"
+    },
+    {
+      "start": 171.41,
+      "duration": 6.58,
+      "text": "first of all we're going to go to search"
+    },
+    {
+      "start": 175.41,
+      "duration": 5.79,
+      "text": "it's one of the tabs across the top and"
+    },
+    {
+      "start": 177.99,
+      "duration": 10.98,
+      "text": "we're going to search the catalog okay"
+    },
+    {
+      "start": 181.2,
+      "duration": 10.17,
+      "text": "catalog she was born in Sweden so we'll"
+    },
+    {
+      "start": 188.97,
+      "duration": 8.87,
+      "text": "go ahead and select that and search for"
+    },
+    {
+      "start": 191.37,
+      "duration": 12.21,
+      "text": "Sweden and I'm going to places within"
+    },
+    {
+      "start": 197.84,
+      "duration": 7.99,
+      "text": "Sweden and I know that excuse my"
+    },
+    {
+      "start": 203.58,
+      "duration": 5.58,
+      "text": "pronunciation that yoshipro got bought"
+    },
+    {
+      "start": 205.83,
+      "duration": 8.58,
+      "text": "house it's close enough and then I'm"
+    },
+    {
+      "start": 209.16,
+      "duration": 9.0,
+      "text": "going to go to places within that and I"
+    },
+    {
+      "start": 214.41,
+      "duration": 7.11,
+      "text": "see that she's from tanum so I was will"
+    },
+    {
+      "start": 218.16,
+      "duration": 6.96,
+      "text": "select Onam which brings us to church"
+    },
+    {
+      "start": 221.52,
+      "duration": 6.84,
+      "text": "records we are getting close to the"
+    },
+    {
+      "start": 225.12,
+      "duration": 8.58,
+      "text": "record that I want here we see Kirk a"
+    },
+    {
+      "start": 228.36,
+      "duration": 8.13,
+      "text": "Bakker twitcher Church book 1672 - 1894"
+    },
+    {
+      "start": 233.7,
+      "duration": 6.36,
+      "text": "and this includes a time frame of her"
+    },
+    {
+      "start": 236.49,
+      "duration": 7.44,
+      "text": "birth by the way this would hold true"
+    },
+    {
+      "start": 240.06,
+      "duration": 8.52,
+      "text": "for any area of the world or any record"
+    },
+    {
+      "start": 243.93,
+      "duration": 6.54,
+      "text": "set that you are researching so don't"
+    },
+    {
+      "start": 248.58,
+      "duration": 4.86,
+      "text": "worry if you don't read Swedish that's"
+    },
+    {
+      "start": 250.47,
+      "duration": 7.73,
+      "text": "okay I don't either very well but the"
+    },
+    {
+      "start": 253.44,
+      "duration": 8.63,
+      "text": "process is the same we have the"
+    },
+    {
+      "start": 258.2,
+      "duration": 6.21,
+      "text": "information here about the source"
+    },
+    {
+      "start": 262.07,
+      "duration": 7.74,
+      "text": "in the notes it says this is available"
+    },
+    {
+      "start": 264.41,
+      "duration": 7.56,
+      "text": "online okay that brings this up and it"
+    },
+    {
+      "start": 269.81,
+      "duration": 3.63,
+      "text": "says I can browse through five hundred"
+    },
+    {
+      "start": 271.97,
+      "duration": 4.8,
+      "text": "and two thousand eight hundred and"
+    },
+    {
+      "start": 273.44,
+      "duration": 7.43,
+      "text": "thirty six images that sounds a bit"
+    },
+    {
+      "start": 276.77,
+      "duration": 7.59,
+      "text": "daunting but that's okay"
+    },
+    {
+      "start": 280.87,
+      "duration": 7.63,
+      "text": "we can do this we're going to go to"
+    },
+    {
+      "start": 284.36,
+      "duration": 7.5,
+      "text": "tantum again and since I'm looking for"
+    },
+    {
+      "start": 288.5,
+      "duration": 6.66,
+      "text": "her birth record this is the word in"
+    },
+    {
+      "start": 291.86,
+      "duration": 6.06,
+      "text": "Sweden and I'm going to choose that then"
+    },
+    {
+      "start": 295.16,
+      "duration": 7.49,
+      "text": "we have here the years in different"
+    },
+    {
+      "start": 297.92,
+      "duration": 8.67,
+      "text": "books and I'm going to go to number five"
+    },
+    {
+      "start": 302.65,
+      "duration": 10.15,
+      "text": "so that this includes the year when she"
+    },
+    {
+      "start": 306.59,
+      "duration": 12.6,
+      "text": "was four in 1848 okay here we have the"
+    },
+    {
+      "start": 312.8,
+      "duration": 10.35,
+      "text": "records and so now this starts in 1838"
+    },
+    {
+      "start": 319.19,
+      "duration": 6.42,
+      "text": "she was born in 48 so I could go through"
+    },
+    {
+      "start": 323.15,
+      "duration": 4.83,
+      "text": "these one at a time but I'm not going to"
+    },
+    {
+      "start": 325.61,
+      "duration": 5.91,
+      "text": "I'm going to take a guess and I'm going"
+    },
+    {
+      "start": 327.98,
+      "duration": 8.46,
+      "text": "to go to image 90 and see how close that"
+    },
+    {
+      "start": 331.52,
+      "duration": 8.66,
+      "text": "gets us to 1848 this will come in and"
+    },
+    {
+      "start": 336.44,
+      "duration": 9.81,
+      "text": "get clear in just a second"
+    },
+    {
+      "start": 340.18,
+      "duration": 11.65,
+      "text": "and we see 1852 okay we're close so"
+    },
+    {
+      "start": 346.25,
+      "duration": 10.32,
+      "text": "let's go back to image 65 and see where"
+    },
+    {
+      "start": 351.83,
+      "duration": 9.57,
+      "text": "that gets us okay we're - 1848 you can"
+    },
+    {
+      "start": 356.57,
+      "duration": 7.44,
+      "text": "see that but we have July and August so"
+    },
+    {
+      "start": 361.4,
+      "duration": 10.71,
+      "text": "I need to go back a little bit so let's"
+    },
+    {
+      "start": 364.01,
+      "duration": 13.14,
+      "text": "go back one page 264 here we have 1848"
+    },
+    {
+      "start": 372.11,
+      "duration": 8.34,
+      "text": "okay correct here I'll bring this up a"
+    },
+    {
+      "start": 377.15,
+      "duration": 7.59,
+      "text": "little bit so you can see April master"
+    },
+    {
+      "start": 380.45,
+      "duration": 6.12,
+      "text": "month the 7th of April these are the"
+    },
+    {
+      "start": 384.74,
+      "duration": 4.38,
+      "text": "birthdays these are the christening"
+    },
+    {
+      "start": 386.57,
+      "duration": 6.27,
+      "text": "dates and as I look down here here she"
+    },
+    {
+      "start": 389.12,
+      "duration": 7.47,
+      "text": "is Amanda Matilda born on the seventh"
+    },
+    {
+      "start": 392.84,
+      "duration": 6.48,
+      "text": "christened on the 16th of April in 1848"
+    },
+    {
+      "start": 396.59,
+      "duration": 6.6,
+      "text": "this shows her father this is where I"
+    },
+    {
+      "start": 399.32,
+      "duration": 9.2,
+      "text": "use my split screen so I can verify"
+    },
+    {
+      "start": 403.19,
+      "duration": 8.64,
+      "text": "Anders Hall and iam Brune is her mother"
+    },
+    {
+      "start": 408.52,
+      "duration": 5.77,
+      "text": "she's age 21 and she is from run stung"
+    },
+    {
+      "start": 411.83,
+      "duration": 5.19,
+      "text": "and I know that is correct so this is"
+    },
+    {
+      "start": 414.29,
+      "duration": 5.87,
+      "text": "the correct record and the correct birth"
+    },
+    {
+      "start": 417.02,
+      "duration": 7.23,
+      "text": "record for for Amanda Mathilde Hall I"
+    },
+    {
+      "start": 420.16,
+      "duration": 6.85,
+      "text": "loved how the priest kept these records"
+    },
+    {
+      "start": 424.25,
+      "duration": 7.94,
+      "text": "so carefully the handwriting is so"
+    },
+    {
+      "start": 427.01,
+      "duration": 8.34,
+      "text": "beautiful and so readable and I just"
+    },
+    {
+      "start": 432.19,
+      "duration": 5.74,
+      "text": "really enjoy seeing as this one was a"
+    },
+    {
+      "start": 435.35,
+      "duration": 5.48,
+      "text": "delight to research I'm going to go"
+    },
+    {
+      "start": 437.93,
+      "duration": 6.6,
+      "text": "ahead and attach this now to family tree"
+    },
+    {
+      "start": 440.83,
+      "duration": 7.87,
+      "text": "okay the source is already in here it"
+    },
+    {
+      "start": 444.53,
+      "duration": 8.52,
+      "text": "gives us that what is in this record I'm"
+    },
+    {
+      "start": 448.7,
+      "duration": 6.83,
+      "text": "going to say birth and christening"
+    },
+    {
+      "start": 453.05,
+      "duration": 2.48,
+      "text": "record"
+    },
+    {
+      "start": 463.72,
+      "duration": 14.229,
+      "text": "and we'll use the patronymic Anders"
+    },
+    {
+      "start": 467.36,
+      "duration": 19.29,
+      "text": "daughter Hall showing her parents then"
+    },
+    {
+      "start": 477.949,
+      "duration": 11.37,
+      "text": "we are going to select a person and"
+    },
+    {
+      "start": 486.65,
+      "duration": 4.769,
+      "text": "again this is so easy and elegant and"
+    },
+    {
+      "start": 489.319,
+      "duration": 8.6,
+      "text": "this is a very new feature of Family"
+    },
+    {
+      "start": 491.419,
+      "duration": 11.611,
+      "text": "Search so we select Amanda Matilda I"
+    },
+    {
+      "start": 497.919,
+      "duration": 16.151,
+      "text": "check her ID number to make sure I've"
+    },
+    {
+      "start": 503.03,
+      "duration": 15.179,
+      "text": "got the correct person there we go"
+    },
+    {
+      "start": 514.07,
+      "duration": 6.57,
+      "text": "and since this also has her father and"
+    },
+    {
+      "start": 518.209,
+      "duration": 4.7,
+      "text": "mother we're going to select them and"
+    },
+    {
+      "start": 520.64,
+      "duration": 5.879,
+      "text": "then we go next"
+    },
+    {
+      "start": 522.909,
+      "duration": 6.37,
+      "text": "why is this a match okay again we'd like"
+    },
+    {
+      "start": 526.519,
+      "duration": 5.091,
+      "text": "to give reasons for everything that we"
+    },
+    {
+      "start": 529.279,
+      "duration": 2.331,
+      "text": "do"
+    },
+    {
+      "start": 544.57,
+      "duration": 8.04,
+      "text": "we'll just say that everything matches"
+    },
+    {
+      "start": 546.829,
+      "duration": 8.641,
+      "text": "and we'll go ahead and attach this so we"
+    },
+    {
+      "start": 552.61,
+      "duration": 5.74,
+      "text": "attach the source successfully to three"
+    },
+    {
+      "start": 555.47,
+      "duration": 7.14,
+      "text": "people so let's go back over here and"
+    },
+    {
+      "start": 558.35,
+      "duration": 19.739,
+      "text": "check this I will need to reload the"
+    },
+    {
+      "start": 562.61,
+      "duration": 18.57,
+      "text": "page it should just take a minute so we"
+    },
+    {
+      "start": 578.089,
+      "duration": 6.091,
+      "text": "come down here and here is the record"
+    },
+    {
+      "start": 581.18,
+      "duration": 6.149,
+      "text": "which has a link that would take me back"
+    },
+    {
+      "start": 584.18,
+      "duration": 6.69,
+      "text": "to this record so everybody can see the"
+    },
+    {
+      "start": 587.329,
+      "duration": 6.391,
+      "text": "record of her birth and that way we've"
+    },
+    {
+      "start": 590.87,
+      "duration": 6.3,
+      "text": "documented her again this is a newer"
+    },
+    {
+      "start": 593.72,
+      "duration": 7.08,
+      "text": "feature of attaching the onion dext"
+    },
+    {
+      "start": 597.17,
+      "duration": 7.289,
+      "text": "records to the family tree it's an easy"
+    },
+    {
+      "start": 600.8,
+      "duration": 6.659,
+      "text": "and wonderful way to source and to"
+    },
+    {
+      "start": 604.459,
+      "duration": 6.361,
+      "text": "document your family so have fun and I"
+    },
+    {
+      "start": 607.459,
+      "duration": 5.931,
+      "text": "hope you enjoy this wonderful new"
+    },
+    {
+      "start": 610.82,
+      "duration": 2.57,
+      "text": "resource"
+    }
+  ],
+  "full_text": "familysearch family tree is a great place to store your research on your ancestors and their descendants I find that I collaborate with relatives that I didn't even know I had and together we're adding sources and documenting and correcting and straightening out and making as good a record as we can about our ancestors since 1938 the Church of Jesus Christ of latter-day saints has been microfilming records around the world so that these records are then more accessible and available for research they've accumulated in that time 2.4 million rolls of microfilm well that's a great resource but what's the downside you had to order them in and go to a family history Center around the world to look at these but over the past several years the church has been digitizing these records so that these will be available on computer and we won't have to deal with rolls of microfilm anymore so this brings up an interesting point I have a great-great-grandmother Amanda Mathilde Hall and occasionally for the people in our tree there will be some research help some hints showing here where do these hints come from they are from indexed records because the computer as yet doesn't do a great job of reading handwriting ok so how many of their records have been indexed on family search that's a good question but an estimate that we've heard is between five and ten percent which is not very many of the 2.4 million rolls so how do we get access to all of the rest of these valuable valuable wonderful records okay I have done research on Amanda Matilda and you can see I have a lot of very specific and great information about her but I have found a birth record is now available on Family Search and I would like to attach this original digitized copy of this original record to this person so everybody can see it now I've already done the research so I'm not going to tell you how to do research that's up to you but I'm going to show you the process and how you can access these records first of all we're going to go to search it's one of the tabs across the top and we're going to search the catalog okay catalog she was born in Sweden so we'll go ahead and select that and search for Sweden and I'm going to places within Sweden and I know that excuse my pronunciation that yoshipro got bought house it's close enough and then I'm going to go to places within that and I see that she's from tanum so I was will select Onam which brings us to church records we are getting close to the record that I want here we see Kirk a Bakker twitcher Church book 1672 - 1894 and this includes a time frame of her birth by the way this would hold true for any area of the world or any record set that you are researching so don't worry if you don't read Swedish that's okay I don't either very well but the process is the same we have the information here about the source in the notes it says this is available online okay that brings this up and it says I can browse through five hundred and two thousand eight hundred and thirty six images that sounds a bit daunting but that's okay we can do this we're going to go to tantum again and since I'm looking for her birth record this is the word in Sweden and I'm going to choose that then we have here the years in different books and I'm going to go to number five so that this includes the year when she was four in 1848 okay here we have the records and so now this starts in 1838 she was born in 48 so I could go through these one at a time but I'm not going to I'm going to take a guess and I'm going to go to image 90 and see how close that gets us to 1848 this will come in and get clear in just a second and we see 1852 okay we're close so let's go back to image 65 and see where that gets us okay we're - 1848 you can see that but we have July and August so I need to go back a little bit so let's go back one page 264 here we have 1848 okay correct here I'll bring this up a little bit so you can see April master month the 7th of April these are the birthdays these are the christening dates and as I look down here here she is Amanda Matilda born on the seventh christened on the 16th of April in 1848 this shows her father this is where I use my split screen so I can verify Anders Hall and iam Brune is her mother she's age 21 and she is from run stung and I know that is correct so this is the correct record and the correct birth record for for Amanda Mathilde Hall I loved how the priest kept these records so carefully the handwriting is so beautiful and so readable and I just really enjoy seeing as this one was a delight to research I'm going to go ahead and attach this now to family tree okay the source is already in here it gives us that what is in this record I'm going to say birth and christening record and we'll use the patronymic Anders daughter Hall showing her parents then we are going to select a person and again this is so easy and elegant and this is a very new feature of Family Search so we select Amanda Matilda I check her ID number to make sure I've got the correct person there we go and since this also has her father and mother we're going to select them and then we go next why is this a match okay again we'd like to give reasons for everything that we do we'll just say that everything matches and we'll go ahead and attach this so we attach the source successfully to three people so let's go back over here and check this I will need to reload the page it should just take a minute so we come down here and here is the record which has a link that would take me back to this record so everybody can see the record of her birth and that way we've documented her again this is a newer feature of attaching the onion dext records to the family tree it's an easy and wonderful way to source and to document your family so have fun and I hope you enjoy this wonderful new resource",
+  "attempts": [
+    {
+      "client": "IOS",
+      "playability": {
+        "status": "OK",
+        "playableInEmbed": true,
+        "offlineability": {
+          "buttonRenderer": {
+            "navigationEndpoint": {
+              "clickTrackingParams": "CAkQ6ewBIhMIvZ7NjOzblwMVsHxMCB34IzKnygEEislmiw==",
+              "ypcGetOfflineUpsellEndpoint": {
+                "params": "ChPqqN25AQ0KC3pUUUNuR0JuQXZjIgt6VFFDbkdCbkF2YyoVCAkYAVIPCgt6VFFDbkdCbkF2YyAB"
+              }
+            },
+            "trackingParams": "CAkQ6ewBIhMIvZ7NjOzblwMVsHxMCB34IzKn"
+          }
+        },
+        "pictureInPicture": {
+          "pictureInPictureRenderer": {
+            "playableInPip": true,
+            "offByDefault": false,
+            "shouldResumeOnHead": false
+          }
+        },
+        "miniplayer": {
+          "miniplayerRenderer": {
+            "playbackMode": "PLAYBACK_MODE_ALLOW"
+          }
+        },
+        "contextParams": "Q0FFU0FnZ0M="
+      },
+      "outcome": "ok"
+    }
+  ],
+  "fetched_at": "2026-10-28T04:11:24.199344+00:00",
+  "client": "IOS",
+  "json_path": "transcripts/068_zTQCnGBnAvc.json",
+  "text_path": "transcripts/068_zTQCnGBnAvc.txt"
+}

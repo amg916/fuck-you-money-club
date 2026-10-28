@@ -1,0 +1,567 @@
+{
+  "index": 40,
+  "url": "https://www.youtube.com/watch?v=A437gHrrk2s",
+  "video_id": "A437gHrrk2s",
+  "status": "ok",
+  "metadata": {
+    "title": "Finding repositories for probate records",
+    "author": "Five-minute genealogy",
+    "channelId": "UC6qnMgXP1jQMuUP8vTVoU3g",
+    "lengthSeconds": "358",
+    "viewCount": "177",
+    "shortDescription": "The catalog of probate records you can search by name is slim. Eventually, you'll need to browse through scanned images online, visit the library for indexes, and even order microfilms. Problem is, they're not easy to find: with over 3,000 counties in the United States, each of which with having a probate court, it can take some effort to figure out where your ancestor's will is recorded. This video will cover how to find the right repository.",
+    "keywords": [
+      "genealogy",
+      "probate",
+      "will",
+      "intestate",
+      "intestacy"
+    ]
+  },
+  "caption_tracks": [
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=A437gHrrk2s&ei=53XharG5EtGKsfIP1Ov6uAo&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185879&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=155DEF007809C650D1CD705C20636A8BFE90BC14.91A34384ADB034D932EC2BA26DEEFAC4665A54EA&key=yt8&lang=en",
+      "name": {
+        "runs": [
+          {
+            "text": "English"
+          }
+        ]
+      },
+      "vssId": ".en",
+      "languageCode": "en",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=A437gHrrk2s&ei=53XharG5EtGKsfIP1Ov6uAo&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185879&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=155DEF007809C650D1CD705C20636A8BFE90BC14.91A34384ADB034D932EC2BA26DEEFAC4665A54EA&key=yt8&kind=asr&lang=en",
+      "name": {
+        "runs": [
+          {
+            "text": "English (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.en",
+      "languageCode": "en",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    }
+  ],
+  "selected_track": {
+    "baseUrl": "https://www.youtube.com/api/timedtext?v=A437gHrrk2s&ei=53XharG5EtGKsfIP1Ov6uAo&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185879&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=155DEF007809C650D1CD705C20636A8BFE90BC14.91A34384ADB034D932EC2BA26DEEFAC4665A54EA&key=yt8&lang=en",
+    "name": {
+      "runs": [
+        {
+          "text": "English"
+        }
+      ]
+    },
+    "vssId": ".en",
+    "languageCode": "en",
+    "isTranslatable": true,
+    "trackName": ""
+  },
+  "segments": [
+    {
+      "start": 0.179,
+      "duration": 6.041,
+      "text": "Probate documents can be goldmines for genealogical research, but few documents are both digitized"
+    },
+    {
+      "start": 6.22,
+      "duration": 4.95,
+      "text": "and digitally indexed, so expect to put in some real effort to find these."
+    },
+    {
+      "start": 11.17,
+      "duration": 4.19,
+      "text": "In this video, I’ll cover the prep work you’ll need to do to find a repository for"
+    },
+    {
+      "start": 15.36,
+      "duration": 1.0,
+      "text": "probate records."
+    },
+    {
+      "start": 16.36,
+      "duration": 3.77,
+      "text": "I’ll cover finding documents in a second video."
+    },
+    {
+      "start": 20.13,
+      "duration": 6.52,
+      "text": "Short version: You’ll need a probable year and place of death."
+    },
+    {
+      "start": 26.65,
+      "duration": 5.2,
+      "text": "Check Wikipedia to see if county boundaries changed."
+    },
+    {
+      "start": 31.85,
+      "duration": 4.44,
+      "text": "Records can be lost—check the county’s history."
+    },
+    {
+      "start": 36.29,
+      "duration": 5.25,
+      "text": "Start with Ancestry.com, then go to FamilySearch, then get to the library."
+    },
+    {
+      "start": 41.54,
+      "duration": 1.72,
+      "text": "Let’s dig into the meat of this."
+    },
+    {
+      "start": 43.26,
+      "duration": 5.24,
+      "text": "To get started, U.S. records are stored chronologically at the county level."
+    },
+    {
+      "start": 48.5,
+      "duration": 3.94,
+      "text": "You’ll need a rough idea when your ancestor died, and where."
+    },
+    {
+      "start": 52.44,
+      "duration": 3.76,
+      "text": "Death certificates, Find-a-grave, even census records can help."
+    },
+    {
+      "start": 56.2,
+      "duration": 6.629,
+      "text": "The where can be tricky, though: county boundaries changed, especially in frontier areas, such"
+    },
+    {
+      "start": 62.829,
+      "duration": 5.241,
+      "text": "as Ohio in the early 1800s or Pennsylvania in the 1700s."
+    },
+    {
+      "start": 68.07,
+      "duration": 4.32,
+      "text": "Court records remain in the original county courthouse."
+    },
+    {
+      "start": 72.39,
+      "duration": 6.57,
+      "text": "For example, if your ancestor died in Gettysburg, Pennsylvania in 1799, you would find a probate"
+    },
+    {
+      "start": 78.96,
+      "duration": 2.4,
+      "text": "record in York County."
+    },
+    {
+      "start": 81.36,
+      "duration": 4.65,
+      "text": "If they died a year later, however, you would find the record in Adams County, which was"
+    },
+    {
+      "start": 86.01,
+      "duration": 2.41,
+      "text": "carved out of York County in 1800."
+    },
+    {
+      "start": 88.42,
+      "duration": 5.29,
+      "text": "I’ve found Wikipedia is a great source for understanding how counties are partitioned"
+    },
+    {
+      "start": 93.71,
+      "duration": 1.0,
+      "text": "over time."
+    },
+    {
+      "start": 94.71,
+      "duration": 5.71,
+      "text": "Also, be aware that records may have been lost, through water damage, fire or even the"
+    },
+    {
+      "start": 100.42,
+      "duration": 1.33,
+      "text": "ravages of war."
+    },
+    {
+      "start": 101.75,
+      "duration": 5.73,
+      "text": "I’ve had a lot of difficulty finding pre-1865 probate records in southern states that saw"
+    },
+    {
+      "start": 107.48,
+      "duration": 1.7,
+      "text": "heavy fighting in the Civil War."
+    },
+    {
+      "start": 109.18,
+      "duration": 4.93,
+      "text": "So, with all of that in mind, start your search on Ancestry.com or another site where probate"
+    },
+    {
+      "start": 114.11,
+      "duration": 2.53,
+      "text": "records are digitally indexed by name of decedent."
+    },
+    {
+      "start": 116.64,
+      "duration": 5.42,
+      "text": "I wish it were that easy, but it’s pretty rare when I can find what want via a digital"
+    },
+    {
+      "start": 122.06,
+      "duration": 1.0,
+      "text": "index."
+    },
+    {
+      "start": 123.06,
+      "duration": 4.339,
+      "text": "The next step is to check the probate inventory on FamilySearch.org."
+    },
+    {
+      "start": 127.399,
+      "duration": 3.191,
+      "text": "Some probate records are digitized, though not indexed."
+    },
+    {
+      "start": 130.59,
+      "duration": 3.369,
+      "text": "But many aren’t, which means you need to go old school."
+    },
+    {
+      "start": 133.959,
+      "duration": 2.61,
+      "text": "I’m a big fan of the library at this stage."
+    },
+    {
+      "start": 136.569,
+      "duration": 4.59,
+      "text": "If you’re lucky, like me, you live close to a city with a great genealogy section."
+    },
+    {
+      "start": 141.159,
+      "duration": 5.181,
+      "text": "If you don’t, inter-library loans can bring great libraries to your local branch."
+    },
+    {
+      "start": 146.34,
+      "duration": 4.989,
+      "text": "Let’s take a glance at Family Search’s probate information for Highland County, Ohio."
+    },
+    {
+      "start": 151.329,
+      "duration": 1.45,
+      "text": "See those books with authors?"
+    },
+    {
+      "start": 152.779,
+      "duration": 5.83,
+      "text": "You’ll often find a handful of books published in the last 20 to 50 years that have indices"
+    },
+    {
+      "start": 158.609,
+      "duration": 6.11,
+      "text": "and abstracts, not just of probate, but of all sorts of county records with genealogical"
+    },
+    {
+      "start": 164.719,
+      "duration": 1.0,
+      "text": "value."
+    },
+    {
+      "start": 165.719,
+      "duration": 4.401,
+      "text": "Book links on FamilySearch will take you to worldcat.org, which is a huge database of"
+    },
+    {
+      "start": 170.12,
+      "duration": 2.0,
+      "text": "library catalogs."
+    },
+    {
+      "start": 172.12,
+      "duration": 5.81,
+      "text": "Worldcat provides more than enough info to have your local library request the book via"
+    },
+    {
+      "start": 177.93,
+      "duration": 1.33,
+      "text": "inter-library loan."
+    },
+    {
+      "start": 179.26,
+      "duration": 1.839,
+      "text": "And these books are goldmines."
+    },
+    {
+      "start": 181.099,
+      "duration": 5.831,
+      "text": "A lot of these books will index anyone referenced in their abstract of a probate proceeding,"
+    },
+    {
+      "start": 186.93,
+      "duration": 5.009,
+      "text": "meaning you can find probate proceedings that mention your ancestor but are centered on"
+    },
+    {
+      "start": 191.939,
+      "duration": 4.06,
+      "text": "your ancestor’s family, friends, associates and neighbors."
+    },
+    {
+      "start": 195.999,
+      "duration": 4.261,
+      "text": "Ancestry.com and FamilySearch can’t do that, and that kind of information can help you"
+    },
+    {
+      "start": 200.26,
+      "duration": 1.789,
+      "text": "break down brick walls."
+    },
+    {
+      "start": 202.049,
+      "duration": 4.5,
+      "text": "Take a look at the notes I took from Records of the Recorder’s Office of Highland County,"
+    },
+    {
+      "start": 206.549,
+      "duration": 1.0,
+      "text": "Ohio."
+    },
+    {
+      "start": 207.549,
+      "duration": 3.8,
+      "text": "I was looking for information about the probate proceedings for William Huggins, led by his"
+    },
+    {
+      "start": 211.349,
+      "duration": 1.74,
+      "text": "son-in-law Thomas Chew."
+    },
+    {
+      "start": 213.089,
+      "duration": 3.721,
+      "text": "I expected to find the first two entries, but not the third."
+    },
+    {
+      "start": 216.81,
+      "duration": 2.719,
+      "text": "Who were Nancy & Zebulon Overman?"
+    },
+    {
+      "start": 219.529,
+      "duration": 5.91,
+      "text": "This is a topic for another video, but that unexpected entry resulted in a complete restructuring"
+    },
+    {
+      "start": 225.439,
+      "duration": 2.541,
+      "text": "of one branch of my wife’s family tree."
+    },
+    {
+      "start": 227.98,
+      "duration": 5.979,
+      "text": "Ideally, an old book abstracting probate records will point you right back to FamilySearch.org’s"
+    },
+    {
+      "start": 233.959,
+      "duration": 4.46,
+      "text": "digitized records, but there’s a good chance you’ll have to order a microfilm from the"
+    },
+    {
+      "start": 238.419,
+      "duration": 1.4,
+      "text": "Family History Library."
+    },
+    {
+      "start": 239.819,
+      "duration": 4.67,
+      "text": "If your public library isn’t a partner with the Family History Library, you can have the"
+    },
+    {
+      "start": 244.489,
+      "duration": 3.84,
+      "text": "microfilm sent to a nearby Mormon family history center."
+    },
+    {
+      "start": 248.329,
+      "duration": 4.97,
+      "text": "Now, as a fellow who doesn’t believe in a god of miracles, a personal god, I felt"
+    },
+    {
+      "start": 253.299,
+      "duration": 3.921,
+      "text": "a little awkward showing my face in a Mormon building."
+    },
+    {
+      "start": 257.22,
+      "duration": 5.5,
+      "text": "Like my preference for Einstein’s “old man” was somehow tattooed on my face."
+    },
+    {
+      "start": 262.72,
+      "duration": 4.41,
+      "text": "Mormon co-workers told me not to worry about it, and they were right: everyone was very"
+    },
+    {
+      "start": 267.13,
+      "duration": 1.0,
+      "text": "welcoming."
+    },
+    {
+      "start": 268.13,
+      "duration": 1.41,
+      "text": "So don’t feel shy."
+    },
+    {
+      "start": 269.54,
+      "duration": 3.66,
+      "text": "Important point, though: you won't be visiting a Mormon temple."
+    },
+    {
+      "start": 273.2,
+      "duration": 3.18,
+      "text": "So don't go to those beautiful buildings with the spires and all that."
+    },
+    {
+      "start": 276.38,
+      "duration": 2.0,
+      "text": "You're going to be going to a ward building"
+    },
+    {
+      "start": 278.38,
+      "duration": 0.94,
+      "text": "which isn't a holy site."
+    },
+    {
+      "start": 279.62,
+      "duration": 6.18,
+      "text": "If you're not sure where you're going? Well... if you enter the building and there's a guy wearing a full white suit..."
+    },
+    {
+      "start": 285.8,
+      "duration": 1.86,
+      "text": "you've got the wrong place."
+    },
+    {
+      "start": 287.66,
+      "duration": 3.88,
+      "text": "If you can’t find what you need via the Family History Library’s microfilms, though,"
+    },
+    {
+      "start": 291.54,
+      "duration": 4.52,
+      "text": "you have to ask yourself how dedicated you really are, because now you have to find a"
+    },
+    {
+      "start": 296.069,
+      "duration": 3.57,
+      "text": "repository for the probate books that contain the docs you want."
+    },
+    {
+      "start": 299.639,
+      "duration": 2.971,
+      "text": "Sometimes, you can order them from the county directly."
+    },
+    {
+      "start": 302.61,
+      "duration": 4.41,
+      "text": "Other times, a local historical society may have the documents and are set-up to help"
+    },
+    {
+      "start": 307.02,
+      "duration": 1.03,
+      "text": "you acquire them."
+    },
+    {
+      "start": 308.05,
+      "duration": 2.79,
+      "text": "But you're still going to have to go find that repository."
+    },
+    {
+      "start": 310.86,
+      "duration": 4.72,
+      "text": "But the worst case scenario—and I’ve been here—is that you have to physically visit"
+    },
+    {
+      "start": 315.59,
+      "duration": 2.53,
+      "text": "the county courthouse to view their records."
+    },
+    {
+      "start": 318.12,
+      "duration": 2.199,
+      "text": "Which could be hugely expensive."
+    },
+    {
+      "start": 320.319,
+      "duration": 5.09,
+      "text": "As a last resort, if you can’t make the trip, you could hire a process server."
+    },
+    {
+      "start": 325.409,
+      "duration": 5.461,
+      "text": "I’ve done that, but… a process server is accustomed to finding modern court documents"
+    },
+    {
+      "start": 330.87,
+      "duration": 4.539,
+      "text": "on deadline or serving subpoenas to people who don’t want to receive them."
+    },
+    {
+      "start": 335.409,
+      "duration": 5.07,
+      "text": "Asking them to find a court case from the 1750s… they’ll take your money but expect"
+    },
+    {
+      "start": 340.479,
+      "duration": 4.47,
+      "text": "to it to cost several hundred dollars and multiple trips."
+    },
+    {
+      "start": 344.949,
+      "duration": 3.511,
+      "text": "And even then, they may not be able to find what you want."
+    }
+  ],
+  "full_text": "Probate documents can be goldmines for genealogical research, but few documents are both digitized and digitally indexed, so expect to put in some real effort to find these. In this video, I’ll cover the prep work you’ll need to do to find a repository for probate records. I’ll cover finding documents in a second video. Short version: You’ll need a probable year and place of death. Check Wikipedia to see if county boundaries changed. Records can be lost—check the county’s history. Start with Ancestry.com, then go to FamilySearch, then get to the library. Let’s dig into the meat of this. To get started, U.S. records are stored chronologically at the county level. You’ll need a rough idea when your ancestor died, and where. Death certificates, Find-a-grave, even census records can help. The where can be tricky, though: county boundaries changed, especially in frontier areas, such as Ohio in the early 1800s or Pennsylvania in the 1700s. Court records remain in the original county courthouse. For example, if your ancestor died in Gettysburg, Pennsylvania in 1799, you would find a probate record in York County. If they died a year later, however, you would find the record in Adams County, which was carved out of York County in 1800. I’ve found Wikipedia is a great source for understanding how counties are partitioned over time. Also, be aware that records may have been lost, through water damage, fire or even the ravages of war. I’ve had a lot of difficulty finding pre-1865 probate records in southern states that saw heavy fighting in the Civil War. So, with all of that in mind, start your search on Ancestry.com or another site where probate records are digitally indexed by name of decedent. I wish it were that easy, but it’s pretty rare when I can find what want via a digital index. The next step is to check the probate inventory on FamilySearch.org. Some probate records are digitized, though not indexed. But many aren’t, which means you need to go old school. I’m a big fan of the library at this stage. If you’re lucky, like me, you live close to a city with a great genealogy section. If you don’t, inter-library loans can bring great libraries to your local branch. Let’s take a glance at Family Search’s probate information for Highland County, Ohio. See those books with authors? You’ll often find a handful of books published in the last 20 to 50 years that have indices and abstracts, not just of probate, but of all sorts of county records with genealogical value. Book links on FamilySearch will take you to worldcat.org, which is a huge database of library catalogs. Worldcat provides more than enough info to have your local library request the book via inter-library loan. And these books are goldmines. A lot of these books will index anyone referenced in their abstract of a probate proceeding, meaning you can find probate proceedings that mention your ancestor but are centered on your ancestor’s family, friends, associates and neighbors. Ancestry.com and FamilySearch can’t do that, and that kind of information can help you break down brick walls. Take a look at the notes I took from Records of the Recorder’s Office of Highland County, Ohio. I was looking for information about the probate proceedings for William Huggins, led by his son-in-law Thomas Chew. I expected to find the first two entries, but not the third. Who were Nancy & Zebulon Overman? This is a topic for another video, but that unexpected entry resulted in a complete restructuring of one branch of my wife’s family tree. Ideally, an old book abstracting probate records will point you right back to FamilySearch.org’s digitized records, but there’s a good chance you’ll have to order a microfilm from the Family History Library. If your public library isn’t a partner with the Family History Library, you can have the microfilm sent to a nearby Mormon family history center. Now, as a fellow who doesn’t believe in a god of miracles, a personal god, I felt a little awkward showing my face in a Mormon building. Like my preference for Einstein’s “old man” was somehow tattooed on my face. Mormon co-workers told me not to worry about it, and they were right: everyone was very welcoming. So don’t feel shy. Important point, though: you won't be visiting a Mormon temple. So don't go to those beautiful buildings with the spires and all that. You're going to be going to a ward building which isn't a holy site. If you're not sure where you're going? Well... if you enter the building and there's a guy wearing a full white suit... you've got the wrong place. If you can’t find what you need via the Family History Library’s microfilms, though, you have to ask yourself how dedicated you really are, because now you have to find a repository for the probate books that contain the docs you want. Sometimes, you can order them from the county directly. Other times, a local historical society may have the documents and are set-up to help you acquire them. But you're still going to have to go find that repository. But the worst case scenario—and I’ve been here—is that you have to physically visit the county courthouse to view their records. Which could be hugely expensive. As a last resort, if you can’t make the trip, you could hire a process server. I’ve done that, but… a process server is accustomed to finding modern court documents on deadline or serving subpoenas to people who don’t want to receive them. Asking them to find a court case from the 1750s… they’ll take your money but expect to it to cost several hundred dollars and multiple trips. And even then, they may not be able to find what you want.",
+  "attempts": [
+    {
+      "client": "IOS",
+      "playability": {
+        "status": "OK",
+        "playableInEmbed": true,
+        "offlineability": {
+          "buttonRenderer": {
+            "navigationEndpoint": {
+              "clickTrackingParams": "CBEQ6ewBIhMI8cjCiuzblwMVUUVMCB3UtR6nygEEI0wl9g==",
+              "ypcGetOfflineUpsellEndpoint": {
+                "params": "ChPqqN25AQ0KC0E0MzdnSHJyazJzIgtBNDM3Z0hycmsycyoVCAkYAVIPCgtBNDM3Z0hycmsycyAB"
+              }
+            },
+            "trackingParams": "CBEQ6ewBIhMI8cjCiuzblwMVUUVMCB3UtR6n"
+          }
+        },
+        "pictureInPicture": {
+          "pictureInPictureRenderer": {
+            "playableInPip": true,
+            "offByDefault": false,
+            "shouldResumeOnHead": false
+          }
+        },
+        "miniplayer": {
+          "miniplayerRenderer": {
+            "playbackMode": "PLAYBACK_MODE_ALLOW"
+          }
+        },
+        "contextParams": "Q0FFU0FnZ0M="
+      },
+      "outcome": "ok"
+    }
+  ],
+  "fetched_at": "2026-10-28T04:11:19.741743+00:00",
+  "client": "IOS",
+  "json_path": "transcripts/040_A437gHrrk2s.json",
+  "text_path": "transcripts/040_A437gHrrk2s.txt"
+}

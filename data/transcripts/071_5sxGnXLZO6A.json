@@ -1,0 +1,1520 @@
+{
+  "index": 71,
+  "url": "https://www.youtube.com/watch?v=5sxGnXLZO6A",
+  "video_id": "5sxGnXLZO6A",
+  "status": "ok",
+  "metadata": {
+    "title": "No Death Certificate?",
+    "author": "FamilySearch",
+    "channelId": "UC-9GZ7QHKOmLS0APnfz2g1Q",
+    "lengthSeconds": "1255",
+    "viewCount": "883",
+    "shortDescription": "When researching our family we should for completeness , follow them from birth to  the  end of life. Civil registration started quite late in many jurisdictions so a death certificate  may not be available so how do you determne the date of death?"
+  },
+  "caption_tracks": [
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=5sxGnXLZO6A&ei=7HXhapfVF6vGlu8Ppdnl0AQ&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185884&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=554587B5082D42CFDCD5561A75982E82783045BA.3A93CBEFD98CE367634BFC5A9FB3B9402256AABF&key=yt8&kind=asr&lang=en",
+      "name": {
+        "runs": [
+          {
+            "text": "English (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.en",
+      "languageCode": "en",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=5sxGnXLZO6A&ei=7HXhapfVF6vGlu8Ppdnl0AQ&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185884&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=554587B5082D42CFDCD5561A75982E82783045BA.3A93CBEFD98CE367634BFC5A9FB3B9402256AABF&key=yt8&lang=en&name=English",
+      "name": {
+        "runs": [
+          {
+            "text": "English - English"
+          }
+        ]
+      },
+      "vssId": ".en.eEY6OEpapPo",
+      "languageCode": "en",
+      "isTranslatable": true,
+      "trackName": "English"
+    }
+  ],
+  "selected_track": {
+    "baseUrl": "https://www.youtube.com/api/timedtext?v=5sxGnXLZO6A&ei=7HXhapfVF6vGlu8Ppdnl0AQ&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185884&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=554587B5082D42CFDCD5561A75982E82783045BA.3A93CBEFD98CE367634BFC5A9FB3B9402256AABF&key=yt8&lang=en&name=English",
+    "name": {
+      "runs": [
+        {
+          "text": "English - English"
+        }
+      ]
+    },
+    "vssId": ".en.eEY6OEpapPo",
+    "languageCode": "en",
+    "isTranslatable": true,
+    "trackName": "English"
+  },
+  "segments": [
+    {
+      "start": 5.436,
+      "duration": 5.52,
+      "text": "Hello, everyone. Welcome to Rootstech presentation. No death certificate."
+    },
+    {
+      "start": 11.076,
+      "duration": 3.28,
+      "text": "What name? By Helen Smith."
+    },
+    {
+      "start": 22.876,
+      "duration": 2.2,
+      "text": "In Australia. We're quite lucky"
+    },
+    {
+      "start": 25.076,
+      "duration": 4.08,
+      "text": "because civil registration start dates were quite early."
+    },
+    {
+      "start": 29.716,
+      "duration": 7.36,
+      "text": "Certainly some of the, um. Amount of information on."
+    },
+    {
+      "start": 37.876,
+      "duration": 5.84,
+      "text": "Tasmanian and South Australian certificates is not as complete"
+    },
+    {
+      "start": 43.716,
+      "duration": 6.32,
+      "text": "as we would like because they were working on copying the English system,"
+    },
+    {
+      "start": 50.036,
+      "duration": 4.76,
+      "text": "which had fairly limited information on the certificates."
+    },
+    {
+      "start": 54.916,
+      "duration": 4.32,
+      "text": "The death certificate is going to give you the date of death,"
+    },
+    {
+      "start": 59.236,
+      "duration": 7.24,
+      "text": "the cause of death. Place of death and the name and age and occupation of"
+    },
+    {
+      "start": 66.476,
+      "duration": 2.6,
+      "text": "the person as known by the informant."
+    },
+    {
+      "start": 71.396,
+      "duration": 8.56,
+      "text": "New South Wales started their death registrations in 1st of March 1856,"
+    },
+    {
+      "start": 80.196,
+      "duration": 5.0,
+      "text": "and they gave more detail, working more along the Scottish system."
+    },
+    {
+      "start": 85.436,
+      "duration": 5.0,
+      "text": "And on those ones you're going to actually get more information such"
+    },
+    {
+      "start": 90.436,
+      "duration": 5.96,
+      "text": "as, again, it depends on the informant, on parents names."
+    },
+    {
+      "start": 96.396,
+      "duration": 4.32,
+      "text": "If the person who died was married, if they were married,"
+    },
+    {
+      "start": 100.796,
+      "duration": 5.36,
+      "text": "the names of their children and the ages of them at the time of"
+    },
+    {
+      "start": 106.156,
+      "duration": 1.4,
+      "text": "the person's death."
+    },
+    {
+      "start": 109.756,
+      "duration": 3.12,
+      "text": "The amount of information extra."
+    },
+    {
+      "start": 112.876,
+      "duration": 4.76,
+      "text": "Apart from that, basic death information varies by time and place."
+    },
+    {
+      "start": 117.756,
+      "duration": 2.92,
+      "text": "And with civil registration in Australia,"
+    },
+    {
+      "start": 120.676,
+      "duration": 5.4,
+      "text": "each state territory is responsible for its own civil registration."
+    },
+    {
+      "start": 129.916,
+      "duration": 5.6,
+      "text": "Not everywhere in the world is has as early a registration."
+    },
+    {
+      "start": 135.516,
+      "duration": 2.64,
+      "text": "There are places quite a number of places,"
+    },
+    {
+      "start": 138.156,
+      "duration": 1.68,
+      "text": "including quite a number of the states in"
+    },
+    {
+      "start": 139.836,
+      "duration": 5.72,
+      "text": "the United States who don't actually start statewide civil registration"
+    },
+    {
+      "start": 145.556,
+      "duration": 7.48,
+      "text": "until the 1900s. So for those particular places and to determine"
+    },
+    {
+      "start": 153.036,
+      "duration": 4.12,
+      "text": "the start dates, you've got the research wiki for FamilySearch,"
+    },
+    {
+      "start": 157.156,
+      "duration": 1.8,
+      "text": "but you've also got Cindy's lists,"
+    },
+    {
+      "start": 158.956,
+      "duration": 3.92,
+      "text": "and Cindy's list provides quite an amount of information."
+    },
+    {
+      "start": 163.796,
+      "duration": 2.0,
+      "text": "For people to be able to look up."
+    },
+    {
+      "start": 165.796,
+      "duration": 3.44,
+      "text": "So to great place to be able to look for some general information."
+    },
+    {
+      "start": 169.236,
+      "duration": 3.16,
+      "text": "Same as the research wiki on family search."
+    },
+    {
+      "start": 172.636,
+      "duration": 4.44,
+      "text": "So what do you do if you don't have a death certificate?"
+    },
+    {
+      "start": 177.076,
+      "duration": 2.52,
+      "text": "Because as family history researchers,"
+    },
+    {
+      "start": 179.596,
+      "duration": 5.72,
+      "text": "we really do want to be looking at our ancestors from birth to death"
+    },
+    {
+      "start": 185.316,
+      "duration": 3.68,
+      "text": "because that way we have the completeness of their life."
+    },
+    {
+      "start": 189.476,
+      "duration": 3.16,
+      "text": "It gives us the social history, context of their life,"
+    },
+    {
+      "start": 192.636,
+      "duration": 2.16,
+      "text": "what occurred in their life."
+    },
+    {
+      "start": 194.876,
+      "duration": 5.96,
+      "text": "And so we really do need to start and to end their life"
+    },
+    {
+      "start": 200.836,
+      "duration": 2.68,
+      "text": "for completeness of our research."
+    },
+    {
+      "start": 203.676,
+      "duration": 3.56,
+      "text": "So if you don't have a death certificate,"
+    },
+    {
+      "start": 207.236,
+      "duration": 4.88,
+      "text": "you do need to think about the situations that occur around"
+    },
+    {
+      "start": 212.116,
+      "duration": 4.92,
+      "text": "a death to be able to determine other potential records that you may have."
+    },
+    {
+      "start": 217.796,
+      "duration": 4.76,
+      "text": "So this is a mind map I did using Kaggle and just thinking about deaths"
+    },
+    {
+      "start": 222.556,
+      "duration": 2.96,
+      "text": "and places where deaths could actually be mentioned."
+    },
+    {
+      "start": 225.516,
+      "duration": 4.36,
+      "text": "So you've got the civil registration, you've got funeral directors records,"
+    },
+    {
+      "start": 229.876,
+      "duration": 5.16,
+      "text": "you've got perhaps hospital records, inquest records, police records."
+    },
+    {
+      "start": 235.516,
+      "duration": 2.52,
+      "text": "Um, you've gotten potentially an obituary."
+    },
+    {
+      "start": 238.036,
+      "duration": 2.88,
+      "text": "There's a funeral director who's involved."
+    },
+    {
+      "start": 240.916,
+      "duration": 3.08,
+      "text": "There's actually a cemetery where the body's been placed,"
+    },
+    {
+      "start": 243.996,
+      "duration": 4.96,
+      "text": "maybe a crematorium in later, um, in the more modern time frames."
+    },
+    {
+      "start": 249.716,
+      "duration": 3.88,
+      "text": "You might find that you don't actually have a date of death,"
+    },
+    {
+      "start": 253.596,
+      "duration": 3.72,
+      "text": "but you have dates of burial in church parish registers."
+    },
+    {
+      "start": 258.156,
+      "duration": 3.88,
+      "text": "Maybe in England with the poor and the poor little unions."
+    },
+    {
+      "start": 262.076,
+      "duration": 5.16,
+      "text": "You've got, um, a workhouse record that they've died in the workhouse."
+    },
+    {
+      "start": 267.636,
+      "duration": 4.12,
+      "text": "You perhaps got a will. Maybe you've got a county history or"
+    },
+    {
+      "start": 271.756,
+      "duration": 3.92,
+      "text": "a local history book that mentions pioneers of the area,"
+    },
+    {
+      "start": 275.676,
+      "duration": 1.84,
+      "text": "which gives some indication."
+    },
+    {
+      "start": 277.596,
+      "duration": 5.0,
+      "text": "Newspapers are always a wonderful thing, and we'll talk more about them later."
+    },
+    {
+      "start": 282.956,
+      "duration": 4.08,
+      "text": "Cemeteries, of course. And again, we'll talk more about those."
+    },
+    {
+      "start": 287.036,
+      "duration": 3.08,
+      "text": "So it's worth thinking around all"
+    },
+    {
+      "start": 290.116,
+      "duration": 5.4,
+      "text": "the different things that can happen around a death and the people involved,"
+    },
+    {
+      "start": 295.516,
+      "duration": 2.64,
+      "text": "the laws that need to be in place,"
+    },
+    {
+      "start": 298.156,
+      "duration": 4.56,
+      "text": "and what people have to do to actually notify appropriate authorities to be"
+    },
+    {
+      "start": 302.716,
+      "duration": 4.96,
+      "text": "able to work out potentially where you may be able to get information."
+    },
+    {
+      "start": 307.956,
+      "duration": 2.92,
+      "text": "Maybe it's a situation that your person,"
+    },
+    {
+      "start": 310.876,
+      "duration": 3.08,
+      "text": "you find out that they're no longer present in an area"
+    },
+    {
+      "start": 313.956,
+      "duration": 2.6,
+      "text": "because they're no longer paying taxes in an area."
+    },
+    {
+      "start": 316.996,
+      "duration": 2.52,
+      "text": "Maybe there's a transfer of land."
+    },
+    {
+      "start": 320.876,
+      "duration": 3.68,
+      "text": "These are all things to consider if you're not lucky enough to have civil."
+    },
+    {
+      "start": 324.916,
+      "duration": 3.76,
+      "text": "Availability of civil registration for your ancestor."
+    },
+    {
+      "start": 329.516,
+      "duration": 4.76,
+      "text": "It is important to actually look around your own home for family ephemera."
+    },
+    {
+      "start": 334.276,
+      "duration": 3.52,
+      "text": "That's letters. Diaries. Perhaps on the back of"
+    },
+    {
+      "start": 337.796,
+      "duration": 3.16,
+      "text": "a photo of someone's actually put some information down about this person"
+    },
+    {
+      "start": 340.956,
+      "duration": 2.68,
+      "text": "died in a car accident or something."
+    },
+    {
+      "start": 343.636,
+      "duration": 5.44,
+      "text": "Maybe you've actually got a receipt for the headstone."
+    },
+    {
+      "start": 349.076,
+      "duration": 2.48,
+      "text": "Maybe you got the undertaker's receipt."
+    },
+    {
+      "start": 352.396,
+      "duration": 3.28,
+      "text": "Frequently people do have things in their own home."
+    },
+    {
+      "start": 355.876,
+      "duration": 5.28,
+      "text": "Something that's quite often seen is memorial cards and In Memoriam."
+    },
+    {
+      "start": 361.156,
+      "duration": 3.12,
+      "text": "And these can be very, very useful because it generally tells you"
+    },
+    {
+      "start": 364.276,
+      "duration": 5.16,
+      "text": "the name of the person when they died may tell you where they're being buried."
+    },
+    {
+      "start": 369.436,
+      "duration": 4.4,
+      "text": "This one for Annie Allison has actually got a photograph there."
+    },
+    {
+      "start": 373.836,
+      "duration": 4.08,
+      "text": "Sometimes you can actually get a bit of information as to perhaps a bit about"
+    },
+    {
+      "start": 377.916,
+      "duration": 3.48,
+      "text": "the ethnicity, and perhaps some information about"
+    },
+    {
+      "start": 381.396,
+      "duration": 2.68,
+      "text": "the religion may come through from how"
+    },
+    {
+      "start": 384.076,
+      "duration": 3.12,
+      "text": "the memorial memorial cards actually are."
+    },
+    {
+      "start": 388.436,
+      "duration": 5.8,
+      "text": "Of course, cemetery headstones can be extremely useful as well to"
+    },
+    {
+      "start": 394.236,
+      "duration": 3.4,
+      "text": "for dates of death, except you do have to have a few caveats."
+    },
+    {
+      "start": 397.636,
+      "duration": 5.16,
+      "text": "Remembering that the headstone, um, is not put on place straight away,"
+    },
+    {
+      "start": 402.796,
+      "duration": 2.04,
+      "text": "the ground has to be allowed to settle,"
+    },
+    {
+      "start": 404.836,
+      "duration": 3.92,
+      "text": "so it could be up to a year or maybe many, many years."
+    },
+    {
+      "start": 409.156,
+      "duration": 2.88,
+      "text": "Um, if a family doesn't have a lot of money,"
+    },
+    {
+      "start": 412.036,
+      "duration": 2.28,
+      "text": "putting up a headstone is not necessarily"
+    },
+    {
+      "start": 414.316,
+      "duration": 4.12,
+      "text": "the first priority if that money is better used for feeding the family."
+    },
+    {
+      "start": 418.436,
+      "duration": 4.32,
+      "text": "So maybe it's a later generation that puts up the headstone."
+    },
+    {
+      "start": 422.756,
+      "duration": 4.04,
+      "text": "So you obviously do need to verify all dates and work that out."
+    },
+    {
+      "start": 426.796,
+      "duration": 5.36,
+      "text": "And remembering not everyone in the plot is actually on the headstone."
+    },
+    {
+      "start": 432.156,
+      "duration": 5.92,
+      "text": "So this headstone has got William Busby, but his wife died eight years later."
+    },
+    {
+      "start": 438.076,
+      "duration": 2.76,
+      "text": "Her name has never been put on the stone."
+    },
+    {
+      "start": 441.956,
+      "duration": 1.36,
+      "text": "And of course, you've always got"
+    },
+    {
+      "start": 443.316,
+      "duration": 3.56,
+      "text": "the other situations that not everyone who's on"
+    },
+    {
+      "start": 446.876,
+      "duration": 3.0,
+      "text": "the stone is actually buried in the plot."
+    },
+    {
+      "start": 449.876,
+      "duration": 2.24,
+      "text": "And again, you need to take care of this."
+    },
+    {
+      "start": 452.116,
+      "duration": 4.48,
+      "text": "So this is Lieutenant Cassidy's memorial in Toowong Cemetery in"
+    },
+    {
+      "start": 456.596,
+      "duration": 3.44,
+      "text": "Brisbane. Now he's actually buried in South Africa,"
+    },
+    {
+      "start": 460.156,
+      "duration": 3.4,
+      "text": "but his friends and students, he was a teacher."
+    },
+    {
+      "start": 465.996,
+      "duration": 4.96,
+      "text": "Um, raised lots of money and they put up this really quite spectacular"
+    },
+    {
+      "start": 470.956,
+      "duration": 7.4,
+      "text": "memorial stone for him. And this is not uncommon where you will find that"
+    },
+    {
+      "start": 478.356,
+      "duration": 1.76,
+      "text": "there is an additional name on"
+    },
+    {
+      "start": 480.116,
+      "duration": 3.76,
+      "text": "a stone now that still hopefully will give you a death date."
+    },
+    {
+      "start": 483.876,
+      "duration": 3.56,
+      "text": "But again, you need to still be considering that into account."
+    },
+    {
+      "start": 487.436,
+      "duration": 3.24,
+      "text": "And we're quite lucky now because we actually do have quite"
+    },
+    {
+      "start": 490.676,
+      "duration": 3.4,
+      "text": "a few different places that we can actually find information about"
+    },
+    {
+      "start": 494.076,
+      "duration": 1.88,
+      "text": "headstones. And then a lot of these,"
+    },
+    {
+      "start": 495.956,
+      "duration": 7.28,
+      "text": "we actually have photographs when they've been taken deceased online is"
+    },
+    {
+      "start": 503.676,
+      "duration": 3.28,
+      "text": "um, has been digitizing cemetery registers."
+    },
+    {
+      "start": 506.956,
+      "duration": 6.68,
+      "text": "And this is particularly important for the UK because in England"
+    },
+    {
+      "start": 513.636,
+      "duration": 4.64,
+      "text": "and Wales the death certificate does not tell you where they're buried."
+    },
+    {
+      "start": 518.276,
+      "duration": 4.76,
+      "text": "So having cemetery registers is really important to be able to do that in"
+    },
+    {
+      "start": 523.036,
+      "duration": 3.08,
+      "text": "the hope of being able to find a headstone."
+    },
+    {
+      "start": 526.156,
+      "duration": 2.8,
+      "text": "Of course, death certificates."
+    },
+    {
+      "start": 528.956,
+      "duration": 2.84,
+      "text": "Civil registration in England and Wales started on"
+    },
+    {
+      "start": 531.796,
+      "duration": 3.4,
+      "text": "the 1st of July 1837, which is quite early,"
+    },
+    {
+      "start": 536.156,
+      "duration": 1.84,
+      "text": "so you got a good chance for that."
+    },
+    {
+      "start": 537.996,
+      "duration": 1.88,
+      "text": "So registration for Scotland,"
+    },
+    {
+      "start": 539.876,
+      "duration": 8.28,
+      "text": "of course was a bit later was 1855 and in Ireland 1864. You've also got."
+    },
+    {
+      "start": 549.196,
+      "duration": 5.6,
+      "text": "Frequently databases which may or may not be online. Of city cemeteries."
+    },
+    {
+      "start": 554.796,
+      "duration": 6.36,
+      "text": "County cemeteries. Um family history societies have often indexed burial"
+    },
+    {
+      "start": 561.156,
+      "duration": 4.28,
+      "text": "registers, so you've got chances of being able to find those."
+    },
+    {
+      "start": 565.436,
+      "duration": 4.56,
+      "text": "You've got church parish registers in many places."
+    },
+    {
+      "start": 569.996,
+      "duration": 5.68,
+      "text": "Now, remembering a church parish register frequently is only the burial."
+    },
+    {
+      "start": 575.956,
+      "duration": 1.52,
+      "text": "That's the usual scenario,"
+    },
+    {
+      "start": 577.476,
+      "duration": 4.96,
+      "text": "although sometimes you may end up finding a death date there."
+    },
+    {
+      "start": 582.436,
+      "duration": 3.84,
+      "text": "But if you've got a burial date, you do have to be dead to be buried,"
+    },
+    {
+      "start": 586.276,
+      "duration": 4.56,
+      "text": "so you can know that the death had to occur on or before that date."
+    },
+    {
+      "start": 591.036,
+      "duration": 2.52,
+      "text": "Obviously, prior to refrigeration,"
+    },
+    {
+      "start": 593.556,
+      "duration": 4.72,
+      "text": "people didn't tend to leave bodies out for too long."
+    },
+    {
+      "start": 598.276,
+      "duration": 3.68,
+      "text": "So generally it's close to the time of burial,"
+    },
+    {
+      "start": 601.956,
+      "duration": 4.32,
+      "text": "although sometimes you've got situations where the ground is frozen."
+    },
+    {
+      "start": 606.276,
+      "duration": 5.6,
+      "text": "So in those instances it may be longer. So consider the time of year."
+    },
+    {
+      "start": 612.756,
+      "duration": 5.28,
+      "text": "Newspapers, of course, are always a wonderful extra resource."
+    },
+    {
+      "start": 618.316,
+      "duration": 5.72,
+      "text": "Funeral notices, death notices, probate notices."
+    },
+    {
+      "start": 624.036,
+      "duration": 4.76,
+      "text": "Maybe there's a notice of the accident where someone was killed. Maybe."
+    },
+    {
+      "start": 628.796,
+      "duration": 2.44,
+      "text": "And then you also get legal notices."
+    },
+    {
+      "start": 631.236,
+      "duration": 5.0,
+      "text": "And these will be such things as transfers of lands, probate of wills."
+    },
+    {
+      "start": 636.236,
+      "duration": 3.16,
+      "text": "So newspapers are extremely useful"
+    },
+    {
+      "start": 639.396,
+      "duration": 5.28,
+      "text": "for being able to determine dates of death. In Australia."
+    },
+    {
+      "start": 644.676,
+      "duration": 2.44,
+      "text": "We're extremely lucky because we've got trove,"
+    },
+    {
+      "start": 647.116,
+      "duration": 3.64,
+      "text": "the National Library of Australia, which is a free newspapers,"
+    },
+    {
+      "start": 650.756,
+      "duration": 3.36,
+      "text": "they've been digitized, many have been digitized up to 1954,"
+    },
+    {
+      "start": 654.116,
+      "duration": 1.56,
+      "text": "which is a cut out of copyright."
+    },
+    {
+      "start": 656.956,
+      "duration": 4.28,
+      "text": "Now, not every newspaper up to 1954 has been digitized."
+    },
+    {
+      "start": 661.236,
+      "duration": 1.12,
+      "text": "There are still quite a number"
+    },
+    {
+      "start": 662.356,
+      "duration": 2.92,
+      "text": "on microphone that have never been digitized and put online."
+    },
+    {
+      "start": 666.076,
+      "duration": 5.32,
+      "text": "The equivalent also free site in New Zealand is papers passed."
+    },
+    {
+      "start": 673.876,
+      "duration": 3.2,
+      "text": "In Australia we have the rise and index"
+    },
+    {
+      "start": 677.076,
+      "duration": 5.16,
+      "text": "because whilst we have civil registration quite early."
+    },
+    {
+      "start": 683.116,
+      "duration": 2.16,
+      "text": "We do have privacy requirements,"
+    },
+    {
+      "start": 685.276,
+      "duration": 3.44,
+      "text": "and there's generally a closure for the civil registration indexes"
+    },
+    {
+      "start": 688.716,
+      "duration": 2.28,
+      "text": "for deaths of around 30 years."
+    },
+    {
+      "start": 691.996,
+      "duration": 1.6,
+      "text": "So the rise and index were"
+    },
+    {
+      "start": 693.596,
+      "duration": 4.32,
+      "text": "a group of enthusiastic people who've been indexing newspapers back to"
+    },
+    {
+      "start": 697.916,
+      "duration": 5.0,
+      "text": "the dates of printing. In some places where they're looking at death notices,"
+    },
+    {
+      "start": 702.916,
+      "duration": 3.92,
+      "text": "funeral notices, probate notices, in memoriam notices."
+    },
+    {
+      "start": 707.156,
+      "duration": 1.28,
+      "text": "But excuse me."
+    },
+    {
+      "start": 709.716,
+      "duration": 4.6,
+      "text": "And currently this over 9 million entries in this index."
+    },
+    {
+      "start": 714.636,
+      "duration": 3.76,
+      "text": "In more modern times, there's been issues because of course, as we know,"
+    },
+    {
+      "start": 718.396,
+      "duration": 2.16,
+      "text": "print newspapers are decreasing."
+    },
+    {
+      "start": 721.436,
+      "duration": 3.0,
+      "text": "Plus, with the cost of putting in memorial notices,"
+    },
+    {
+      "start": 724.436,
+      "duration": 3.12,
+      "text": "people have been not putting them into the paper."
+    },
+    {
+      "start": 727.556,
+      "duration": 4.52,
+      "text": "So the people, the volunteers have continued to index"
+    },
+    {
+      "start": 732.076,
+      "duration": 4.08,
+      "text": "the online newspaper in memoriam notices and funeral notices."
+    },
+    {
+      "start": 736.156,
+      "duration": 2.88,
+      "text": "And they've also been doing some work with the agreements"
+    },
+    {
+      "start": 739.036,
+      "duration": 3.92,
+      "text": "and some funeral directors and indexing their notices."
+    },
+    {
+      "start": 745.756,
+      "duration": 3.36,
+      "text": "Of course, in the US, you've got Chronicling America."
+    },
+    {
+      "start": 750.476,
+      "duration": 7.24,
+      "text": "And the pay site, the British Newspaper Archive has a lot of UK newspapers."
+    },
+    {
+      "start": 759.356,
+      "duration": 3.32,
+      "text": "Family Bibles. Um, these are part of"
+    },
+    {
+      "start": 762.676,
+      "duration": 2.12,
+      "text": "the ephemera you're going to potentially have."
+    },
+    {
+      "start": 765.076,
+      "duration": 2.4,
+      "text": "Um, and there are certainly sites."
+    },
+    {
+      "start": 768.316,
+      "duration": 4.2,
+      "text": "And that actually do have images from family Bibles that"
+    },
+    {
+      "start": 772.516,
+      "duration": 1.32,
+      "text": "you can actually look."
+    },
+    {
+      "start": 775.196,
+      "duration": 1.0,
+      "text": "Wills."
+    },
+    {
+      "start": 776.556,
+      "duration": 4.28,
+      "text": "Obviously, before a will is probated, someone has to have died."
+    },
+    {
+      "start": 780.836,
+      "duration": 5.72,
+      "text": "Now on a number of them, you're going to actually be told that this person,"
+    },
+    {
+      "start": 786.996,
+      "duration": 3.84,
+      "text": "um, the will was probated for the person who died on such and such"
+    },
+    {
+      "start": 790.836,
+      "duration": 5.8,
+      "text": "a date. But sometimes you may simply be in the scenario of"
+    },
+    {
+      "start": 796.636,
+      "duration": 5.32,
+      "text": "the will was written at X time frame. It was probated at Y time frame."
+    },
+    {
+      "start": 801.956,
+      "duration": 2.72,
+      "text": "The person had to have died somewhere in between."
+    },
+    {
+      "start": 804.676,
+      "duration": 3.56,
+      "text": "That, and hopefully it's not too long a gap in between,"
+    },
+    {
+      "start": 808.236,
+      "duration": 4.92,
+      "text": "but probate packets often do have extra information around that."
+    },
+    {
+      "start": 816.836,
+      "duration": 4.12,
+      "text": "In Australia. We have government gazettes for each state and also"
+    },
+    {
+      "start": 820.956,
+      "duration": 3.56,
+      "text": "for the Commonwealth, and we also have police gazettes"
+    },
+    {
+      "start": 824.516,
+      "duration": 4.2,
+      "text": "and they often have information relating to death."
+    },
+    {
+      "start": 828.876,
+      "duration": 4.44,
+      "text": "Now this could be for inquests in this instance for Rockhampton Gaol."
+    },
+    {
+      "start": 833.316,
+      "duration": 2.84,
+      "text": "It's actually about someone who's going to be hung."
+    },
+    {
+      "start": 836.756,
+      "duration": 2.64,
+      "text": "Um you've got transmission of real estate."
+    },
+    {
+      "start": 839.396,
+      "duration": 2.52,
+      "text": "So it's actually reported in the,"
+    },
+    {
+      "start": 842.196,
+      "duration": 4.28,
+      "text": "in the Government Gazette that this land was transferred and it gives"
+    },
+    {
+      "start": 846.476,
+      "duration": 3.0,
+      "text": "a date of death as well as the will."
+    },
+    {
+      "start": 850.996,
+      "duration": 4.44,
+      "text": "You've also got such things as friendly societies,"
+    },
+    {
+      "start": 855.436,
+      "duration": 6.24,
+      "text": "Masonic lodges who are helping each other, helping their members,"
+    },
+    {
+      "start": 861.676,
+      "duration": 4.2,
+      "text": "and frequently, one of the things they help their members with is providing"
+    },
+    {
+      "start": 865.876,
+      "duration": 2.16,
+      "text": "some money for funeral costs."
+    },
+    {
+      "start": 868.036,
+      "duration": 3.6,
+      "text": "And so this is one for the Independent Order of Rabbits."
+    },
+    {
+      "start": 871.636,
+      "duration": 4.0,
+      "text": "And the person of interest for me here was Brother Richard John Rollinson,"
+    },
+    {
+      "start": 875.796,
+      "duration": 5.2,
+      "text": "and they gave the family 55 pounds to help with the funeral costs."
+    },
+    {
+      "start": 881.116,
+      "duration": 4.64,
+      "text": "And this one doesn't give the exact date of death,"
+    },
+    {
+      "start": 885.756,
+      "duration": 3.2,
+      "text": "but it does tell you when they were helping with the funeral,"
+    },
+    {
+      "start": 889.116,
+      "duration": 1.56,
+      "text": "when they were approving the money."
+    },
+    {
+      "start": 890.676,
+      "duration": 3.36,
+      "text": "So, you know, it's within a certain timeframe close to that."
+    },
+    {
+      "start": 894.036,
+      "duration": 6.52,
+      "text": "And sometimes you're going to get a a time frame rather than an exact date."
+    },
+    {
+      "start": 902.436,
+      "duration": 3.52,
+      "text": "So this is the Manchester Unity Order of Oddfellows."
+    },
+    {
+      "start": 905.956,
+      "duration": 3.6,
+      "text": "And you can see on this one where it's got some of the wives who've died,"
+    },
+    {
+      "start": 909.556,
+      "duration": 2.56,
+      "text": "and it tells you the exact date of death."
+    },
+    {
+      "start": 912.276,
+      "duration": 5.76,
+      "text": "So our Fanny Eliza died on the 19th of the 11th, 1907."
+    },
+    {
+      "start": 921.396,
+      "duration": 3.72,
+      "text": "Professional organizations often have a newsletter or journal,"
+    },
+    {
+      "start": 925.276,
+      "duration": 2.88,
+      "text": "and they frequently put an obituary."
+    },
+    {
+      "start": 928.156,
+      "duration": 3.0,
+      "text": "Sometimes it's an obituary where it gives you lots of information about"
+    },
+    {
+      "start": 931.156,
+      "duration": 4.0,
+      "text": "the person. Sometimes it's simply telling you that they died and"
+    },
+    {
+      "start": 935.156,
+      "duration": 4.4,
+      "text": "the date of death. So this is the this is for medical profession."
+    },
+    {
+      "start": 939.556,
+      "duration": 2.16,
+      "text": "So this is the medical journal of Australia"
+    },
+    {
+      "start": 941.716,
+      "duration": 2.08,
+      "text": "and it's giving some information."
+    },
+    {
+      "start": 943.796,
+      "duration": 6.0,
+      "text": "So Walter Justin Adams gained his qualifications in um and it was from"
+    },
+    {
+      "start": 949.796,
+      "duration": 6.16,
+      "text": "the USA. And he died in Newtown near Sydney in 1882 and February the 6th."
+    },
+    {
+      "start": 957.436,
+      "duration": 6.24,
+      "text": "Military records will often give you exact dates of death in Australia."
+    },
+    {
+      "start": 963.916,
+      "duration": 5.32,
+      "text": "If someone died in World War one and World War two outside Australia."
+    },
+    {
+      "start": 970.316,
+      "duration": 4.24,
+      "text": "They are not given an Australian death certificate."
+    },
+    {
+      "start": 977.236,
+      "duration": 2.84,
+      "text": "Queensland and South Australia,"
+    },
+    {
+      "start": 980.076,
+      "duration": 3.52,
+      "text": "with the two states that actually did give death certificates"
+    },
+    {
+      "start": 983.596,
+      "duration": 2.8,
+      "text": "for World War One and World War Two soldiers,"
+    },
+    {
+      "start": 986.396,
+      "duration": 2.28,
+      "text": "but they were actually done later."
+    },
+    {
+      "start": 988.676,
+      "duration": 7.36,
+      "text": "So for any Queensland person who enlisted who died in World War 1 in"
+    },
+    {
+      "start": 996.036,
+      "duration": 4.08,
+      "text": "1922, the registrar felt that they deserve to have"
+    },
+    {
+      "start": 1000.116,
+      "duration": 4.36,
+      "text": "a Queensland death certificate, so he collated information there."
+    },
+    {
+      "start": 1004.516,
+      "duration": 5.72,
+      "text": "Now this, of course, is remembering World War One for Australia was from"
+    },
+    {
+      "start": 1010.236,
+      "duration": 6.76,
+      "text": "1914 to 1918. So those people could have died any time in those number of"
+    },
+    {
+      "start": 1016.996,
+      "duration": 4.76,
+      "text": "years. And then but it wasn't till 1922 and the families were asked"
+    },
+    {
+      "start": 1021.756,
+      "duration": 5.64,
+      "text": "for information. But the date of death will generally be correct if they died"
+    },
+    {
+      "start": 1027.396,
+      "duration": 6.84,
+      "text": "in war actions on the attestation file or service record, it will be listed."
+    },
+    {
+      "start": 1034.236,
+      "duration": 4.56,
+      "text": "Now. New Zealand is better on their attestation records."
+    },
+    {
+      "start": 1038.796,
+      "duration": 6.32,
+      "text": "They actually put the date of death, even if it's into like into the 1960s."
+    },
+    {
+      "start": 1045.116,
+      "duration": 2.84,
+      "text": "So they became quite useful."
+    },
+    {
+      "start": 1049.116,
+      "duration": 3.12,
+      "text": "Commonwealth War Graves Commission for Commonwealth."
+    },
+    {
+      "start": 1053.396,
+      "duration": 6.04,
+      "text": "Uh, people do have the date of death."
+    },
+    {
+      "start": 1059.756,
+      "duration": 4.44,
+      "text": "And if there was a body that was buried where it was buried,"
+    },
+    {
+      "start": 1064.196,
+      "duration": 4.4,
+      "text": "or if there wasn't a body buried, they will have a."
+    },
+    {
+      "start": 1069.556,
+      "duration": 3.84,
+      "text": "The war in which they're commemorated because sadly, of course,"
+    },
+    {
+      "start": 1073.396,
+      "duration": 2.64,
+      "text": "in World War One, particularly on the Western Front,"
+    },
+    {
+      "start": 1076.036,
+      "duration": 6.0,
+      "text": "there are thousands upon thousands of soldiers where no body was recovered"
+    },
+    {
+      "start": 1082.036,
+      "duration": 2.52,
+      "text": "or no body was identified."
+    },
+    {
+      "start": 1084.556,
+      "duration": 3.72,
+      "text": "And there are many, many unknown soldiers who were buried."
+    },
+    {
+      "start": 1090.436,
+      "duration": 3.72,
+      "text": "Memorial books for the military were also done."
+    },
+    {
+      "start": 1094.156,
+      "duration": 3.68,
+      "text": "Now the dates of death on these should be correct,"
+    },
+    {
+      "start": 1097.836,
+      "duration": 3.72,
+      "text": "but the other information was provided by families."
+    },
+    {
+      "start": 1101.556,
+      "duration": 1.68,
+      "text": "Not every soldier, of course,"
+    },
+    {
+      "start": 1103.236,
+      "duration": 3.48,
+      "text": "is memorialized in these honor roll style books,"
+    },
+    {
+      "start": 1107.156,
+      "duration": 5.88,
+      "text": "and sometimes the information given may not be 100% correct,"
+    },
+    {
+      "start": 1113.036,
+      "duration": 5.36,
+      "text": "but still is a way of being able to find out those dates of death."
+    },
+    {
+      "start": 1120.596,
+      "duration": 3.52,
+      "text": "Amongst the possessions. You're going to have such things"
+    },
+    {
+      "start": 1124.116,
+      "duration": 2.2,
+      "text": "as this sort of ephemera."
+    },
+    {
+      "start": 1126.316,
+      "duration": 4.4,
+      "text": "So again, this is the dead man's penny that was given to Commonwealth soldiers"
+    },
+    {
+      "start": 1130.716,
+      "duration": 3.48,
+      "text": "families if they died in World War one."
+    },
+    {
+      "start": 1134.196,
+      "duration": 6.08,
+      "text": "And commemorative scrolls also occurred, thanking them for the service."
+    },
+    {
+      "start": 1140.276,
+      "duration": 6.76,
+      "text": "And these were provided to the soldiers family if they died or to"
+    },
+    {
+      "start": 1147.036,
+      "duration": 4.36,
+      "text": "the soldier himself or herself when they came back."
+    },
+    {
+      "start": 1152.836,
+      "duration": 5.36,
+      "text": "So if you're not in a situation where you have civil registration,"
+    },
+    {
+      "start": 1158.196,
+      "duration": 2.56,
+      "text": "it's not a situation of despair."
+    },
+    {
+      "start": 1160.756,
+      "duration": 5.64,
+      "text": "You just need to think about the other possibilities and other places where"
+    },
+    {
+      "start": 1166.396,
+      "duration": 2.0,
+      "text": "a death could be recorded."
+    },
+    {
+      "start": 1168.476,
+      "duration": 6.12,
+      "text": "Now sit down and do a mind map, same as I did there, and think about things,"
+    },
+    {
+      "start": 1174.596,
+      "duration": 5.92,
+      "text": "because you may have something specific within your geographic locality,"
+    },
+    {
+      "start": 1180.516,
+      "duration": 4.44,
+      "text": "within your particular religious. Um."
+    },
+    {
+      "start": 1186.236,
+      "duration": 4.2,
+      "text": "Ways of doing things, or within cultural ways of doing things,"
+    },
+    {
+      "start": 1190.436,
+      "duration": 4.96,
+      "text": "which could be. Could be an additional thing that you could consider that"
+    },
+    {
+      "start": 1195.396,
+      "duration": 3.16,
+      "text": "I wouldn't be. Seeing amongst my particular culture"
+    },
+    {
+      "start": 1198.556,
+      "duration": 2.48,
+      "text": "and geographic location being in Australia."
+    },
+    {
+      "start": 1201.556,
+      "duration": 4.64,
+      "text": "So not having a death certificate is not the end of the world,"
+    },
+    {
+      "start": 1206.196,
+      "duration": 3.4,
+      "text": "but we do need to complete our research"
+    },
+    {
+      "start": 1209.596,
+      "duration": 7.0,
+      "text": "and make sure that we have researched our ancestors and have their life from"
+    },
+    {
+      "start": 1216.596,
+      "duration": 2.36,
+      "text": "the beginning to the end."
+    },
+    {
+      "start": 1219.956,
+      "duration": 1.04,
+      "text": "Thank you."
+    },
+    {
+      "start": 1221.676,
+      "duration": 6.08,
+      "text": "And my contact information is there. And there is a handout."
+    },
+    {
+      "start": 1228.596,
+      "duration": 3.16,
+      "text": "With the syllabus. Thank you very much."
+    }
+  ],
+  "full_text": "Hello, everyone. Welcome to Rootstech presentation. No death certificate. What name? By Helen Smith. In Australia. We're quite lucky because civil registration start dates were quite early. Certainly some of the, um. Amount of information on. Tasmanian and South Australian certificates is not as complete as we would like because they were working on copying the English system, which had fairly limited information on the certificates. The death certificate is going to give you the date of death, the cause of death. Place of death and the name and age and occupation of the person as known by the informant. New South Wales started their death registrations in 1st of March 1856, and they gave more detail, working more along the Scottish system. And on those ones you're going to actually get more information such as, again, it depends on the informant, on parents names. If the person who died was married, if they were married, the names of their children and the ages of them at the time of the person's death. The amount of information extra. Apart from that, basic death information varies by time and place. And with civil registration in Australia, each state territory is responsible for its own civil registration. Not everywhere in the world is has as early a registration. There are places quite a number of places, including quite a number of the states in the United States who don't actually start statewide civil registration until the 1900s. So for those particular places and to determine the start dates, you've got the research wiki for FamilySearch, but you've also got Cindy's lists, and Cindy's list provides quite an amount of information. For people to be able to look up. So to great place to be able to look for some general information. Same as the research wiki on family search. So what do you do if you don't have a death certificate? Because as family history researchers, we really do want to be looking at our ancestors from birth to death because that way we have the completeness of their life. It gives us the social history, context of their life, what occurred in their life. And so we really do need to start and to end their life for completeness of our research. So if you don't have a death certificate, you do need to think about the situations that occur around a death to be able to determine other potential records that you may have. So this is a mind map I did using Kaggle and just thinking about deaths and places where deaths could actually be mentioned. So you've got the civil registration, you've got funeral directors records, you've got perhaps hospital records, inquest records, police records. Um, you've gotten potentially an obituary. There's a funeral director who's involved. There's actually a cemetery where the body's been placed, maybe a crematorium in later, um, in the more modern time frames. You might find that you don't actually have a date of death, but you have dates of burial in church parish registers. Maybe in England with the poor and the poor little unions. You've got, um, a workhouse record that they've died in the workhouse. You perhaps got a will. Maybe you've got a county history or a local history book that mentions pioneers of the area, which gives some indication. Newspapers are always a wonderful thing, and we'll talk more about them later. Cemeteries, of course. And again, we'll talk more about those. So it's worth thinking around all the different things that can happen around a death and the people involved, the laws that need to be in place, and what people have to do to actually notify appropriate authorities to be able to work out potentially where you may be able to get information. Maybe it's a situation that your person, you find out that they're no longer present in an area because they're no longer paying taxes in an area. Maybe there's a transfer of land. These are all things to consider if you're not lucky enough to have civil. Availability of civil registration for your ancestor. It is important to actually look around your own home for family ephemera. That's letters. Diaries. Perhaps on the back of a photo of someone's actually put some information down about this person died in a car accident or something. Maybe you've actually got a receipt for the headstone. Maybe you got the undertaker's receipt. Frequently people do have things in their own home. Something that's quite often seen is memorial cards and In Memoriam. And these can be very, very useful because it generally tells you the name of the person when they died may tell you where they're being buried. This one for Annie Allison has actually got a photograph there. Sometimes you can actually get a bit of information as to perhaps a bit about the ethnicity, and perhaps some information about the religion may come through from how the memorial memorial cards actually are. Of course, cemetery headstones can be extremely useful as well to for dates of death, except you do have to have a few caveats. Remembering that the headstone, um, is not put on place straight away, the ground has to be allowed to settle, so it could be up to a year or maybe many, many years. Um, if a family doesn't have a lot of money, putting up a headstone is not necessarily the first priority if that money is better used for feeding the family. So maybe it's a later generation that puts up the headstone. So you obviously do need to verify all dates and work that out. And remembering not everyone in the plot is actually on the headstone. So this headstone has got William Busby, but his wife died eight years later. Her name has never been put on the stone. And of course, you've always got the other situations that not everyone who's on the stone is actually buried in the plot. And again, you need to take care of this. So this is Lieutenant Cassidy's memorial in Toowong Cemetery in Brisbane. Now he's actually buried in South Africa, but his friends and students, he was a teacher. Um, raised lots of money and they put up this really quite spectacular memorial stone for him. And this is not uncommon where you will find that there is an additional name on a stone now that still hopefully will give you a death date. But again, you need to still be considering that into account. And we're quite lucky now because we actually do have quite a few different places that we can actually find information about headstones. And then a lot of these, we actually have photographs when they've been taken deceased online is um, has been digitizing cemetery registers. And this is particularly important for the UK because in England and Wales the death certificate does not tell you where they're buried. So having cemetery registers is really important to be able to do that in the hope of being able to find a headstone. Of course, death certificates. Civil registration in England and Wales started on the 1st of July 1837, which is quite early, so you got a good chance for that. So registration for Scotland, of course was a bit later was 1855 and in Ireland 1864. You've also got. Frequently databases which may or may not be online. Of city cemeteries. County cemeteries. Um family history societies have often indexed burial registers, so you've got chances of being able to find those. You've got church parish registers in many places. Now, remembering a church parish register frequently is only the burial. That's the usual scenario, although sometimes you may end up finding a death date there. But if you've got a burial date, you do have to be dead to be buried, so you can know that the death had to occur on or before that date. Obviously, prior to refrigeration, people didn't tend to leave bodies out for too long. So generally it's close to the time of burial, although sometimes you've got situations where the ground is frozen. So in those instances it may be longer. So consider the time of year. Newspapers, of course, are always a wonderful extra resource. Funeral notices, death notices, probate notices. Maybe there's a notice of the accident where someone was killed. Maybe. And then you also get legal notices. And these will be such things as transfers of lands, probate of wills. So newspapers are extremely useful for being able to determine dates of death. In Australia. We're extremely lucky because we've got trove, the National Library of Australia, which is a free newspapers, they've been digitized, many have been digitized up to 1954, which is a cut out of copyright. Now, not every newspaper up to 1954 has been digitized. There are still quite a number on microphone that have never been digitized and put online. The equivalent also free site in New Zealand is papers passed. In Australia we have the rise and index because whilst we have civil registration quite early. We do have privacy requirements, and there's generally a closure for the civil registration indexes for deaths of around 30 years. So the rise and index were a group of enthusiastic people who've been indexing newspapers back to the dates of printing. In some places where they're looking at death notices, funeral notices, probate notices, in memoriam notices. But excuse me. And currently this over 9 million entries in this index. In more modern times, there's been issues because of course, as we know, print newspapers are decreasing. Plus, with the cost of putting in memorial notices, people have been not putting them into the paper. So the people, the volunteers have continued to index the online newspaper in memoriam notices and funeral notices. And they've also been doing some work with the agreements and some funeral directors and indexing their notices. Of course, in the US, you've got Chronicling America. And the pay site, the British Newspaper Archive has a lot of UK newspapers. Family Bibles. Um, these are part of the ephemera you're going to potentially have. Um, and there are certainly sites. And that actually do have images from family Bibles that you can actually look. Wills. Obviously, before a will is probated, someone has to have died. Now on a number of them, you're going to actually be told that this person, um, the will was probated for the person who died on such and such a date. But sometimes you may simply be in the scenario of the will was written at X time frame. It was probated at Y time frame. The person had to have died somewhere in between. That, and hopefully it's not too long a gap in between, but probate packets often do have extra information around that. In Australia. We have government gazettes for each state and also for the Commonwealth, and we also have police gazettes and they often have information relating to death. Now this could be for inquests in this instance for Rockhampton Gaol. It's actually about someone who's going to be hung. Um you've got transmission of real estate. So it's actually reported in the, in the Government Gazette that this land was transferred and it gives a date of death as well as the will. You've also got such things as friendly societies, Masonic lodges who are helping each other, helping their members, and frequently, one of the things they help their members with is providing some money for funeral costs. And so this is one for the Independent Order of Rabbits. And the person of interest for me here was Brother Richard John Rollinson, and they gave the family 55 pounds to help with the funeral costs. And this one doesn't give the exact date of death, but it does tell you when they were helping with the funeral, when they were approving the money. So, you know, it's within a certain timeframe close to that. And sometimes you're going to get a a time frame rather than an exact date. So this is the Manchester Unity Order of Oddfellows. And you can see on this one where it's got some of the wives who've died, and it tells you the exact date of death. So our Fanny Eliza died on the 19th of the 11th, 1907. Professional organizations often have a newsletter or journal, and they frequently put an obituary. Sometimes it's an obituary where it gives you lots of information about the person. Sometimes it's simply telling you that they died and the date of death. So this is the this is for medical profession. So this is the medical journal of Australia and it's giving some information. So Walter Justin Adams gained his qualifications in um and it was from the USA. And he died in Newtown near Sydney in 1882 and February the 6th. Military records will often give you exact dates of death in Australia. If someone died in World War one and World War two outside Australia. They are not given an Australian death certificate. Queensland and South Australia, with the two states that actually did give death certificates for World War One and World War Two soldiers, but they were actually done later. So for any Queensland person who enlisted who died in World War 1 in 1922, the registrar felt that they deserve to have a Queensland death certificate, so he collated information there. Now this, of course, is remembering World War One for Australia was from 1914 to 1918. So those people could have died any time in those number of years. And then but it wasn't till 1922 and the families were asked for information. But the date of death will generally be correct if they died in war actions on the attestation file or service record, it will be listed. Now. New Zealand is better on their attestation records. They actually put the date of death, even if it's into like into the 1960s. So they became quite useful. Commonwealth War Graves Commission for Commonwealth. Uh, people do have the date of death. And if there was a body that was buried where it was buried, or if there wasn't a body buried, they will have a. The war in which they're commemorated because sadly, of course, in World War One, particularly on the Western Front, there are thousands upon thousands of soldiers where no body was recovered or no body was identified. And there are many, many unknown soldiers who were buried. Memorial books for the military were also done. Now the dates of death on these should be correct, but the other information was provided by families. Not every soldier, of course, is memorialized in these honor roll style books, and sometimes the information given may not be 100% correct, but still is a way of being able to find out those dates of death. Amongst the possessions. You're going to have such things as this sort of ephemera. So again, this is the dead man's penny that was given to Commonwealth soldiers families if they died in World War one. And commemorative scrolls also occurred, thanking them for the service. And these were provided to the soldiers family if they died or to the soldier himself or herself when they came back. So if you're not in a situation where you have civil registration, it's not a situation of despair. You just need to think about the other possibilities and other places where a death could be recorded. Now sit down and do a mind map, same as I did there, and think about things, because you may have something specific within your geographic locality, within your particular religious. Um. Ways of doing things, or within cultural ways of doing things, which could be. Could be an additional thing that you could consider that I wouldn't be. Seeing amongst my particular culture and geographic location being in Australia. So not having a death certificate is not the end of the world, but we do need to complete our research and make sure that we have researched our ancestors and have their life from the beginning to the end. Thank you. And my contact information is there. And there is a handout. With the syllabus. Thank you very much.",
+  "attempts": [
+    {
+      "client": "IOS",
+      "playability": {
+        "status": "OK",
+        "playableInEmbed": true,
+        "offlineability": {
+          "buttonRenderer": {
+            "navigationEndpoint": {
+              "clickTrackingParams": "CAoQ6ewBIhMIl_v4jOzblwMVK6PlBx2lbBlKygEEza81XA==",
+              "ypcGetOfflineUpsellEndpoint": {
+                "params": "CiXqqN25AR8KCzVzeEduWExaTzZBShAwZ2NKQ1NRRkptUC1qYXJCIgs1c3hHblhMWk82QSoVCAkYAVIPCgs1c3hHblhMWk82QSAB"
+              }
+            },
+            "trackingParams": "CAoQ6ewBIhMIl_v4jOzblwMVK6PlBx2lbBlK"
+          }
+        },
+        "pictureInPicture": {
+          "pictureInPictureRenderer": {
+            "playableInPip": true,
+            "offByDefault": false,
+            "shouldResumeOnHead": false
+          }
+        },
+        "miniplayer": {
+          "miniplayerRenderer": {
+            "playbackMode": "PLAYBACK_MODE_ALLOW"
+          }
+        },
+        "contextParams": "Q0FFU0FnZ0M="
+      },
+      "outcome": "ok"
+    }
+  ],
+  "fetched_at": "2026-10-28T04:11:25.022797+00:00",
+  "client": "IOS",
+  "json_path": "transcripts/071_5sxGnXLZO6A.json",
+  "text_path": "transcripts/071_5sxGnXLZO6A.txt"
+}

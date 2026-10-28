@@ -1,0 +1,1672 @@
+{
+  "index": 10,
+  "url": "https://www.youtube.com/watch?v=oZiYbKNvxJY",
+  "video_id": "oZiYbKNvxJY",
+  "status": "ok",
+  "metadata": {
+    "title": "Probate   Part 6  \"Finding Probate Documents\" by James Tanner",
+    "author": "BYU Library Family History Center",
+    "channelId": "UC7hqNOQt-2AfeVEpDuc7sCA",
+    "lengthSeconds": "951",
+    "viewCount": "521",
+    "shortDescription": "This is part 6 of our Probate Series by James Tanner",
+    "keywords": [
+      "Genealogy",
+      "Probate",
+      "Family History"
+    ]
+  },
+  "caption_tracks": [
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=oZiYbKNvxJY&ei=4nXhatrXA7yRsfIP5KLgqQQ&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185874&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=77FB93118E98AA7226B2FDB4B1C9F7CF4F872F04.2E8EFB8DDE5F1BBF532D9921939D3B27ECE21B90&key=yt8&kind=asr&lang=en",
+      "name": {
+        "runs": [
+          {
+            "text": "English (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.en",
+      "languageCode": "en",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    }
+  ],
+  "selected_track": {
+    "baseUrl": "https://www.youtube.com/api/timedtext?v=oZiYbKNvxJY&ei=4nXhatrXA7yRsfIP5KLgqQQ&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185874&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=77FB93118E98AA7226B2FDB4B1C9F7CF4F872F04.2E8EFB8DDE5F1BBF532D9921939D3B27ECE21B90&key=yt8&kind=asr&lang=en",
+    "name": {
+      "runs": [
+        {
+          "text": "English (auto-generated)"
+        }
+      ]
+    },
+    "vssId": "a.en",
+    "languageCode": "en",
+    "kind": "asr",
+    "isTranslatable": true,
+    "trackName": ""
+  },
+  "segments": [
+    {
+      "start": 3.65,
+      "duration": 6.55,
+      "text": "hello welcome to another ends and outs"
+    },
+    {
+      "start": 6.87,
+      "duration": 6.599,
+      "text": "of probate for genealogists this is one"
+    },
+    {
+      "start": 10.2,
+      "duration": 5.81,
+      "text": "in a series of 9 videos which are"
+    },
+    {
+      "start": 13.469,
+      "duration": 6.111,
+      "text": "located on the Brigham Young University"
+    },
+    {
+      "start": 16.01,
+      "duration": 7.75,
+      "text": "YouTube channel this particular episode"
+    },
+    {
+      "start": 19.58,
+      "duration": 9.64,
+      "text": "is number six and it is entitled where"
+    },
+    {
+      "start": 23.76,
+      "duration": 8.299,
+      "text": "do I find probate documents probate"
+    },
+    {
+      "start": 29.22,
+      "duration": 5.79,
+      "text": "documents can become quite a challenge"
+    },
+    {
+      "start": 32.059,
+      "duration": 5.351,
+      "text": "first of all the probate actions"
+    },
+    {
+      "start": 35.01,
+      "duration": 4.319,
+      "text": "generate a series of documents that are"
+    },
+    {
+      "start": 37.41,
+      "duration": 5.43,
+      "text": "filed with the court handling the"
+    },
+    {
+      "start": 39.329,
+      "duration": 5.55,
+      "text": "probate action and all of these probate"
+    },
+    {
+      "start": 42.84,
+      "duration": 4.59,
+      "text": "documents or pleadings filed with the"
+    },
+    {
+      "start": 44.879,
+      "duration": 5.011,
+      "text": "court are preserved and they're"
+    },
+    {
+      "start": 47.43,
+      "duration": 5.789,
+      "text": "preserved by the courts understanding"
+    },
+    {
+      "start": 49.89,
+      "duration": 5.61,
+      "text": "that the courts do not preserve probate"
+    },
+    {
+      "start": 53.219,
+      "duration": 4.801,
+      "text": "documents because of interest by"
+    },
+    {
+      "start": 55.5,
+      "duration": 5.969,
+      "text": "genealogists they are preserved because"
+    },
+    {
+      "start": 58.02,
+      "duration": 6.539,
+      "text": "of legal implications of the transfer of"
+    },
+    {
+      "start": 61.469,
+      "duration": 6.541,
+      "text": "the property from the probate to the"
+    },
+    {
+      "start": 64.559,
+      "duration": 7.38,
+      "text": "heirs in each of those circumstances"
+    },
+    {
+      "start": 68.01,
+      "duration": 7.17,
+      "text": "there may be taxes or other interests"
+    },
+    {
+      "start": 71.939,
+      "duration": 5.491,
+      "text": "involved if real property is involved in"
+    },
+    {
+      "start": 75.18,
+      "duration": 5.549,
+      "text": "probate action and transferred from the"
+    },
+    {
+      "start": 77.43,
+      "duration": 6.5,
+      "text": "probate estate that it's the decedent to"
+    },
+    {
+      "start": 80.729,
+      "duration": 6.511,
+      "text": "the heirs then that probate estate"
+    },
+    {
+      "start": 83.93,
+      "duration": 7.149,
+      "text": "property is handled like any other real"
+    },
+    {
+      "start": 87.24,
+      "duration": 6.78,
+      "text": "property but the transfer of the"
+    },
+    {
+      "start": 91.079,
+      "duration": 5.161,
+      "text": "property may be subject to questions and"
+    },
+    {
+      "start": 94.02,
+      "duration": 5.459,
+      "text": "so the probate files are generally"
+    },
+    {
+      "start": 96.24,
+      "duration": 6.419,
+      "text": "preserved in order to provide future"
+    },
+    {
+      "start": 99.479,
+      "duration": 8.491,
+      "text": "insurance that the land can be cleared"
+    },
+    {
+      "start": 102.659,
+      "duration": 7.92,
+      "text": "of any title claims the first question"
+    },
+    {
+      "start": 107.97,
+      "duration": 7.679,
+      "text": "you need to answer in finding a probate"
+    },
+    {
+      "start": 110.579,
+      "duration": 7.231,
+      "text": "file is the jurisdiction this word means"
+    },
+    {
+      "start": 115.649,
+      "duration": 7.5,
+      "text": "the type of case handled by a particular"
+    },
+    {
+      "start": 117.81,
+      "duration": 7.559,
+      "text": "cord and that may be divided either by"
+    },
+    {
+      "start": 123.149,
+      "duration": 5.571,
+      "text": "the district county or the nature of the"
+    },
+    {
+      "start": 125.369,
+      "duration": 5.851,
+      "text": "claim or controversy so for example"
+    },
+    {
+      "start": 128.72,
+      "duration": 4.599,
+      "text": "finding out which of the courts within"
+    },
+    {
+      "start": 131.22,
+      "duration": 5.76,
+      "text": "the particular jurisdiction"
+    },
+    {
+      "start": 133.319,
+      "duration": 6.601,
+      "text": "a particular area had jurisdiction over"
+    },
+    {
+      "start": 136.98,
+      "duration": 7.019,
+      "text": "the probate action is one of the"
+    },
+    {
+      "start": 139.92,
+      "duration": 8.25,
+      "text": "challenges currently it's fairly simple"
+    },
+    {
+      "start": 143.999,
+      "duration": 6.96,
+      "text": "you would need to sent to look up the"
+    },
+    {
+      "start": 148.17,
+      "duration": 5.31,
+      "text": "area where the decedent died and it's"
+    },
+    {
+      "start": 150.959,
+      "duration": 5.64,
+      "text": "very possible that the court system in"
+    },
+    {
+      "start": 153.48,
+      "duration": 6.959,
+      "text": "that state is clearly defined as to"
+    },
+    {
+      "start": 156.599,
+      "duration": 7.11,
+      "text": "which cord handles probate matters but"
+    },
+    {
+      "start": 160.439,
+      "duration": 5.761,
+      "text": "in as you go back in time it may become"
+    },
+    {
+      "start": 163.709,
+      "duration": 5.071,
+      "text": "more of a challenge because of the"
+    },
+    {
+      "start": 166.2,
+      "duration": 7.619,
+      "text": "different ways that probe a actions were"
+    },
+    {
+      "start": 168.78,
+      "duration": 7.109,
+      "text": "signed out to different courts there are"
+    },
+    {
+      "start": 173.819,
+      "duration": 3.931,
+      "text": "two types of jurisdiction out there"
+    },
+    {
+      "start": 175.889,
+      "duration": 3.72,
+      "text": "under the law one is called subject"
+    },
+    {
+      "start": 177.75,
+      "duration": 5.159,
+      "text": "matter jurisdiction and the other one is"
+    },
+    {
+      "start": 179.609,
+      "duration": 6.21,
+      "text": "the location jurisdiction so for example"
+    },
+    {
+      "start": 182.909,
+      "duration": 5.16,
+      "text": "of the idea of a subject matter"
+    },
+    {
+      "start": 185.819,
+      "duration": 4.021,
+      "text": "jurisdiction means where would the"
+    },
+    {
+      "start": 188.069,
+      "duration": 4.681,
+      "text": "appropriate in what court would a"
+    },
+    {
+      "start": 189.84,
+      "duration": 4.799,
+      "text": "probate action be filed that's being"
+    },
+    {
+      "start": 192.75,
+      "duration": 5.189,
+      "text": "that the subject of the action was a"
+    },
+    {
+      "start": 194.639,
+      "duration": 6.81,
+      "text": "probate it may also be determined by the"
+    },
+    {
+      "start": 197.939,
+      "duration": 6.211,
+      "text": "by different considerations about where"
+    },
+    {
+      "start": 201.449,
+      "duration": 4.38,
+      "text": "the decedent died or where the property"
+    },
+    {
+      "start": 204.15,
+      "duration": 5.19,
+      "text": "was located that would be called"
+    },
+    {
+      "start": 205.829,
+      "duration": 6.351,
+      "text": "locational jurisdiction so a court can"
+    },
+    {
+      "start": 209.34,
+      "duration": 6.509,
+      "text": "have a specific geographical location"
+    },
+    {
+      "start": 212.18,
+      "duration": 5.35,
+      "text": "where it has jurisdiction for example"
+    },
+    {
+      "start": 215.849,
+      "duration": 4.081,
+      "text": "there might be a county court and the"
+    },
+    {
+      "start": 217.53,
+      "duration": 5.4,
+      "text": "county court it's only jurisdiction or"
+    },
+    {
+      "start": 219.93,
+      "duration": 5.85,
+      "text": "can only make rulings within that county"
+    },
+    {
+      "start": 222.93,
+      "duration": 4.649,
+      "text": "or it may be a statewide chord in which"
+    },
+    {
+      "start": 225.78,
+      "duration": 4.379,
+      "text": "case the court may have what's called"
+    },
+    {
+      "start": 227.579,
+      "duration": 5.671,
+      "text": "statewide jurisdiction meaning they can"
+    },
+    {
+      "start": 230.159,
+      "duration": 9.871,
+      "text": "make rulings concerning actions anywhere"
+    },
+    {
+      "start": 233.25,
+      "duration": 8.43,
+      "text": "in the state it's also important to"
+    },
+    {
+      "start": 240.03,
+      "duration": 4.289,
+      "text": "understand that probate law and"
+    },
+    {
+      "start": 241.68,
+      "duration": 6.35,
+      "text": "procedures change over time and they"
+    },
+    {
+      "start": 244.319,
+      "duration": 7.25,
+      "text": "will continue to change so in order to"
+    },
+    {
+      "start": 248.03,
+      "duration": 7.0,
+      "text": "understand the probate law and the"
+    },
+    {
+      "start": 251.569,
+      "duration": 7.54,
+      "text": "changes that have occurred in a file"
+    },
+    {
+      "start": 255.03,
+      "duration": 5.879,
+      "text": "which may affect your ancestors you need"
+    },
+    {
+      "start": 259.109,
+      "duration": 3.691,
+      "text": "to know the history a little brief"
+    },
+    {
+      "start": 260.909,
+      "duration": 4.471,
+      "text": "history at least of the probate law in"
+    },
+    {
+      "start": 262.8,
+      "duration": 4.32,
+      "text": "your area of research so if you're"
+    },
+    {
+      "start": 265.38,
+      "duration": 4.68,
+      "text": "looking in the east and new engl"
+    },
+    {
+      "start": 267.12,
+      "duration": 7.79,
+      "text": "perhaps you find probate goes back to"
+    },
+    {
+      "start": 270.06,
+      "duration": 7.38,
+      "text": "the earliest years in the 1600s however"
+    },
+    {
+      "start": 274.91,
+      "duration": 5.02,
+      "text": "at that point in time they were being"
+    },
+    {
+      "start": 277.44,
+      "duration": 4.65,
+      "text": "handled by the english courts obviously"
+    },
+    {
+      "start": 279.93,
+      "duration": 7.68,
+      "text": "because the colonies were part of"
+    },
+    {
+      "start": 282.09,
+      "duration": 8.91,
+      "text": "England or Britain and then in later"
+    },
+    {
+      "start": 287.61,
+      "duration": 6.11,
+      "text": "years you would need to know how or"
+    },
+    {
+      "start": 291.0,
+      "duration": 6.169,
+      "text": "where when the probate court changed"
+    },
+    {
+      "start": 293.72,
+      "duration": 7.62,
+      "text": "from one court to another or from one"
+    },
+    {
+      "start": 297.169,
+      "duration": 8.461,
+      "text": "area of jurisdiction meaning the the"
+    },
+    {
+      "start": 301.34,
+      "duration": 4.29,
+      "text": "geographic jurisdiction of the court"
+    },
+    {
+      "start": 307.55,
+      "duration": 4.39,
+      "text": "this is kind of restating it at a"
+    },
+    {
+      "start": 310.05,
+      "duration": 5.04,
+      "text": "different way that the names and the"
+    },
+    {
+      "start": 311.94,
+      "duration": 5.97,
+      "text": "jurisdictions meaning the areas of which"
+    },
+    {
+      "start": 315.09,
+      "duration": 6.359,
+      "text": "of which the court had or could make"
+    },
+    {
+      "start": 317.91,
+      "duration": 4.92,
+      "text": "rulings have have changed over time so"
+    },
+    {
+      "start": 321.449,
+      "duration": 4.701,
+      "text": "this is something that you need to be"
+    },
+    {
+      "start": 322.83,
+      "duration": 6.45,
+      "text": "aware of now here are some examples of"
+    },
+    {
+      "start": 326.15,
+      "duration": 5.11,
+      "text": "some probe different probate courts"
+    },
+    {
+      "start": 329.28,
+      "duration": 4.8,
+      "text": "throughout the United States meaning the"
+    },
+    {
+      "start": 331.26,
+      "duration": 5.43,
+      "text": "names change in Arizona they're called"
+    },
+    {
+      "start": 334.08,
+      "duration": 4.55,
+      "text": "the Arizona Superior Court and it's the"
+    },
+    {
+      "start": 336.69,
+      "duration": 5.01,
+      "text": "probate division of the Superior Court"
+    },
+    {
+      "start": 338.63,
+      "duration": 6.18,
+      "text": "in Utah they're called district courts"
+    },
+    {
+      "start": 341.7,
+      "duration": 5.7,
+      "text": "and there's a probate district court"
+    },
+    {
+      "start": 344.81,
+      "duration": 6.419,
+      "text": "California they're called superior cords"
+    },
+    {
+      "start": 347.4,
+      "duration": 6.03,
+      "text": "they have jurisdiction over probate"
+    },
+    {
+      "start": 351.229,
+      "duration": 6.101,
+      "text": "Wisconsin once again they're called"
+    },
+    {
+      "start": 353.43,
+      "duration": 7.35,
+      "text": "circuit courts and Texas they're called"
+    },
+    {
+      "start": 357.33,
+      "duration": 5.79,
+      "text": "the probate court in Pennsylvania the"
+    },
+    {
+      "start": 360.78,
+      "duration": 5.37,
+      "text": "court called the courts of common pleas"
+    },
+    {
+      "start": 363.12,
+      "duration": 6.63,
+      "text": "and in Tennessee they're called Chancery"
+    },
+    {
+      "start": 366.15,
+      "duration": 5.76,
+      "text": "courts so depending on the area of the"
+    },
+    {
+      "start": 369.75,
+      "duration": 4.8,
+      "text": "united states that the the way that the"
+    },
+    {
+      "start": 371.91,
+      "duration": 4.89,
+      "text": "probate court is handled and the"
+    },
+    {
+      "start": 374.55,
+      "duration": 5.76,
+      "text": "jurisdiction of the court meaning which"
+    },
+    {
+      "start": 376.8,
+      "duration": 7.02,
+      "text": "court had the right to handle probate"
+    },
+    {
+      "start": 380.31,
+      "duration": 5.639,
+      "text": "matters not only varies in the way that"
+    },
+    {
+      "start": 383.82,
+      "duration": 3.93,
+      "text": "the matters are handled by that"
+    },
+    {
+      "start": 385.949,
+      "duration": 3.69,
+      "text": "particular court but they also vary"
+    },
+    {
+      "start": 387.75,
+      "duration": 5.28,
+      "text": "because the names of the courts change"
+    },
+    {
+      "start": 389.639,
+      "duration": 5.641,
+      "text": "from state to state so where would you"
+    },
+    {
+      "start": 393.03,
+      "duration": 4.98,
+      "text": "go to live or probate files where are"
+    },
+    {
+      "start": 395.28,
+      "duration": 4.889,
+      "text": "these files first of all you need the"
+    },
+    {
+      "start": 398.01,
+      "duration": 2.79,
+      "text": "name the jurisdiction in the location of"
+    },
+    {
+      "start": 400.169,
+      "duration": 4.761,
+      "text": "the record"
+    },
+    {
+      "start": 400.8,
+      "duration": 4.13,
+      "text": "and that may have changed over time"
+    },
+    {
+      "start": 406.159,
+      "duration": 5.921,
+      "text": "secondly you need to track down the"
+    },
+    {
+      "start": 409.65,
+      "duration": 4.29,
+      "text": "documents that can be can be a real"
+    },
+    {
+      "start": 412.08,
+      "duration": 6.0,
+      "text": "challenge checking those documents down"
+    },
+    {
+      "start": 413.94,
+      "duration": 6.689,
+      "text": "can be a real challenge and they may"
+    },
+    {
+      "start": 418.08,
+      "duration": 4.679,
+      "text": "actually be in paper form sitting in the"
+    },
+    {
+      "start": 420.629,
+      "duration": 5.07,
+      "text": "basement of some courthouse someplace in"
+    },
+    {
+      "start": 422.759,
+      "duration": 6.15,
+      "text": "the United States although there is a"
+    },
+    {
+      "start": 425.699,
+      "duration": 6.09,
+      "text": "tremendous effort going forward to"
+    },
+    {
+      "start": 428.909,
+      "duration": 6.451,
+      "text": "digitize and make records available"
+    },
+    {
+      "start": 431.789,
+      "duration": 6.12,
+      "text": "online that may be different between two"
+    },
+    {
+      "start": 435.36,
+      "duration": 4.89,
+      "text": "counties one County and the state may"
+    },
+    {
+      "start": 437.909,
+      "duration": 4.56,
+      "text": "have their records digitized whereas"
+    },
+    {
+      "start": 440.25,
+      "duration": 4.49,
+      "text": "another County in the same state may"
+    },
+    {
+      "start": 442.469,
+      "duration": 7.281,
+      "text": "still have paper records stored in boxes"
+    },
+    {
+      "start": 444.74,
+      "duration": 5.01,
+      "text": "someplace in the courthouse or elsewhere"
+    },
+    {
+      "start": 450.949,
+      "duration": 5.71,
+      "text": "determining where the court which court"
+    },
+    {
+      "start": 454.56,
+      "duration": 4.349,
+      "text": "had jurisdiction meaning which court is"
+    },
+    {
+      "start": 456.659,
+      "duration": 5.521,
+      "text": "going to be the one where the action was"
+    },
+    {
+      "start": 458.909,
+      "duration": 7.201,
+      "text": "filed and heard by the by the probate"
+    },
+    {
+      "start": 462.18,
+      "duration": 6.03,
+      "text": "judge or Commissioner there are several"
+    },
+    {
+      "start": 466.11,
+      "duration": 4.709,
+      "text": "different considerations in the first"
+    },
+    {
+      "start": 468.21,
+      "duration": 5.519,
+      "text": "case you need to look in the court where"
+    },
+    {
+      "start": 470.819,
+      "duration": 4.801,
+      "text": "the decedent died so whatever courts had"
+    },
+    {
+      "start": 473.729,
+      "duration": 4.111,
+      "text": "jurisdiction at the time of the"
+    },
+    {
+      "start": 475.62,
+      "duration": 3.81,
+      "text": "decedent's death where they lived those"
+    },
+    {
+      "start": 477.84,
+      "duration": 3.75,
+      "text": "are the ones that you would begin to"
+    },
+    {
+      "start": 479.43,
+      "duration": 4.26,
+      "text": "look at secondly you would look in a"
+    },
+    {
+      "start": 481.59,
+      "duration": 4.919,
+      "text": "court where the decedent resided if that"
+    },
+    {
+      "start": 483.69,
+      "duration": 6.479,
+      "text": "was someplace else besides where they"
+    },
+    {
+      "start": 486.509,
+      "duration": 5.671,
+      "text": "died usually residence means permanent"
+    },
+    {
+      "start": 490.169,
+      "duration": 6.391,
+      "text": "residence where they had a house or post"
+    },
+    {
+      "start": 492.18,
+      "duration": 7.32,
+      "text": "office address or were declared to be a"
+    },
+    {
+      "start": 496.56,
+      "duration": 4.74,
+      "text": "resident of the particular area you can"
+    },
+    {
+      "start": 499.5,
+      "duration": 5.879,
+      "text": "also check in a court where the desene"
+    },
+    {
+      "start": 501.3,
+      "duration": 6.63,
+      "text": "own property in some cases probates were"
+    },
+    {
+      "start": 505.379,
+      "duration": 4.561,
+      "text": "filed had to be filed in other"
+    },
+    {
+      "start": 507.93,
+      "duration": 6.0,
+      "text": "jurisdictions where the probate owned"
+    },
+    {
+      "start": 509.94,
+      "duration": 7.17,
+      "text": "real property also you will check in a"
+    },
+    {
+      "start": 513.93,
+      "duration": 5.13,
+      "text": "court where the airs reside in some"
+    },
+    {
+      "start": 517.11,
+      "duration": 6.109,
+      "text": "cases they may have filed the probate"
+    },
+    {
+      "start": 519.06,
+      "duration": 9.6,
+      "text": "where the airs lived simply for"
+    },
+    {
+      "start": 523.219,
+      "duration": 8.051,
+      "text": "convenience purposes in many cases if"
+    },
+    {
+      "start": 528.66,
+      "duration": 5.94,
+      "text": "the pro if the decedent owned land in"
+    },
+    {
+      "start": 531.27,
+      "duration": 5.64,
+      "text": "more than one state it was necessary to"
+    },
+    {
+      "start": 534.6,
+      "duration": 5.609,
+      "text": "file what's called an ancillary probate"
+    },
+    {
+      "start": 536.91,
+      "duration": 5.4,
+      "text": "that's a probate filed in a court where"
+    },
+    {
+      "start": 540.209,
+      "duration": 3.781,
+      "text": "the property is located and that's"
+    },
+    {
+      "start": 542.31,
+      "duration": 3.87,
+      "text": "usually an estate other than the one"
+    },
+    {
+      "start": 543.99,
+      "duration": 7.5,
+      "text": "where the decedent lived or even where"
+    },
+    {
+      "start": 546.18,
+      "duration": 7.38,
+      "text": "the decedent died an ancillary probate"
+    },
+    {
+      "start": 551.49,
+      "duration": 4.2,
+      "text": "is not a full probate action it's based"
+    },
+    {
+      "start": 553.56,
+      "duration": 8.73,
+      "text": "on the filings in the court where the"
+    },
+    {
+      "start": 555.69,
+      "duration": 10.319,
+      "text": "the original probate was filed there are"
+    },
+    {
+      "start": 562.29,
+      "duration": 7.049,
+      "text": "a variety of steps to finding a probate"
+    },
+    {
+      "start": 566.009,
+      "duration": 6.39,
+      "text": "case file and I suggest the following"
+    },
+    {
+      "start": 569.339,
+      "duration": 7.531,
+      "text": "steps first of all determine the date of"
+    },
+    {
+      "start": 572.399,
+      "duration": 6.661,
+      "text": "death of the ancestor more specific the"
+    },
+    {
+      "start": 576.87,
+      "duration": 3.6,
+      "text": "date can be the better that's easier"
+    },
+    {
+      "start": 579.06,
+      "duration": 4.529,
+      "text": "it's going to be to find the probate"
+    },
+    {
+      "start": 580.47,
+      "duration": 5.729,
+      "text": "file but necessarily you need to know at"
+    },
+    {
+      "start": 583.589,
+      "duration": 4.531,
+      "text": "least the year if not if you only have a"
+    },
+    {
+      "start": 586.199,
+      "duration": 4.56,
+      "text": "range of years in which the probate was"
+    },
+    {
+      "start": 588.12,
+      "duration": 5.19,
+      "text": "filed excuse me in which the person died"
+    },
+    {
+      "start": 590.759,
+      "duration": 4.741,
+      "text": "then finding the probate file may"
+    },
+    {
+      "start": 593.31,
+      "duration": 7.079,
+      "text": "involve searching through multiple years"
+    },
+    {
+      "start": 595.5,
+      "duration": 8.31,
+      "text": "of court records important to determine"
+    },
+    {
+      "start": 600.389,
+      "duration": 6.091,
+      "text": "the exact place of death the place of"
+    },
+    {
+      "start": 603.81,
+      "duration": 5.219,
+      "text": "death can can often determine whether or"
+    },
+    {
+      "start": 606.48,
+      "duration": 5.4,
+      "text": "not we're in a probate action could be"
+    },
+    {
+      "start": 609.029,
+      "duration": 7.591,
+      "text": "filed and even whether or not a probate"
+    },
+    {
+      "start": 611.88,
+      "duration": 9.059,
+      "text": "action was necessary important to"
+    },
+    {
+      "start": 616.62,
+      "duration": 6.449,
+      "text": "investigate and determine which of the"
+    },
+    {
+      "start": 620.939,
+      "duration": 3.9,
+      "text": "courts or other entity handled the"
+    },
+    {
+      "start": 623.069,
+      "duration": 5.551,
+      "text": "probate matters at the time and place of"
+    },
+    {
+      "start": 624.839,
+      "duration": 7.73,
+      "text": "the ancestors death those kinds of"
+    },
+    {
+      "start": 628.62,
+      "duration": 7.409,
+      "text": "historical facts are quite readily"
+    },
+    {
+      "start": 632.569,
+      "duration": 6.101,
+      "text": "discoverable most states have a history"
+    },
+    {
+      "start": 636.029,
+      "duration": 5.281,
+      "text": "of their court system in some form or"
+    },
+    {
+      "start": 638.67,
+      "duration": 4.74,
+      "text": "another and by going through that"
+    },
+    {
+      "start": 641.31,
+      "duration": 5.219,
+      "text": "history you can determine at a white"
+    },
+    {
+      "start": 643.41,
+      "duration": 7.289,
+      "text": "time period different courts handled the"
+    },
+    {
+      "start": 646.529,
+      "duration": 6.0,
+      "text": "probate actions in addition you need to"
+    },
+    {
+      "start": 650.699,
+      "duration": 5.041,
+      "text": "determine where the surviving records"
+    },
+    {
+      "start": 652.529,
+      "duration": 5.821,
+      "text": "are stored even though the probate may"
+    },
+    {
+      "start": 655.74,
+      "duration": 4.92,
+      "text": "have been handled in a particular court"
+    },
+    {
+      "start": 658.35,
+      "duration": 6.0,
+      "text": "that does not mean that the records are"
+    },
+    {
+      "start": 660.66,
+      "duration": 6.86,
+      "text": "still in that court or that they aren't"
+    },
+    {
+      "start": 664.35,
+      "duration": 5.39,
+      "text": "stored someplace in a state archive"
+    },
+    {
+      "start": 667.52,
+      "duration": 7.26,
+      "text": "in a central location for the courts in"
+    },
+    {
+      "start": 669.74,
+      "duration": 9.44,
+      "text": "that state or someplace else that in a"
+    },
+    {
+      "start": 674.78,
+      "duration": 4.4,
+      "text": "library museum or a library or whatever"
+    },
+    {
+      "start": 679.39,
+      "duration": 4.33,
+      "text": "it is also important to determine"
+    },
+    {
+      "start": 681.92,
+      "duration": 4.68,
+      "text": "whether or not the records are available"
+    },
+    {
+      "start": 683.72,
+      "duration": 6.15,
+      "text": "online in a digitized format and you may"
+    },
+    {
+      "start": 686.6,
+      "duration": 5.64,
+      "text": "need to search several online databases"
+    },
+    {
+      "start": 689.87,
+      "duration": 6.84,
+      "text": "to determine if they have probate"
+    },
+    {
+      "start": 692.24,
+      "duration": 6.36,
+      "text": "records for a particular location next"
+    },
+    {
+      "start": 696.71,
+      "duration": 4.43,
+      "text": "it's important to search the cord or"
+    },
+    {
+      "start": 698.6,
+      "duration": 5.37,
+      "text": "other entity records birth before and"
+    },
+    {
+      "start": 701.14,
+      "duration": 6.64,
+      "text": "for a time period after the death of the"
+    },
+    {
+      "start": 703.97,
+      "duration": 5.88,
+      "text": "ancestor you can really find that the"
+    },
+    {
+      "start": 707.78,
+      "duration": 5.43,
+      "text": "probate actions could be filed up two"
+    },
+    {
+      "start": 709.85,
+      "duration": 6.27,
+      "text": "years after the date of death sometimes"
+    },
+    {
+      "start": 713.21,
+      "duration": 6.09,
+      "text": "the heirs simply did not take any action"
+    },
+    {
+      "start": 716.12,
+      "duration": 5.15,
+      "text": "to probate the estate until some events"
+    },
+    {
+      "start": 719.3,
+      "duration": 4.35,
+      "text": "as the sale of the real property"
+    },
+    {
+      "start": 721.27,
+      "duration": 4.24,
+      "text": "required a probate and that could have"
+    },
+    {
+      "start": 723.65,
+      "duration": 5.88,
+      "text": "happened years after the person actually"
+    },
+    {
+      "start": 725.51,
+      "duration": 6.24,
+      "text": "died so my rule of course is that you"
+    },
+    {
+      "start": 729.53,
+      "duration": 4.74,
+      "text": "look for probate records from the date"
+    },
+    {
+      "start": 731.75,
+      "duration": 6.68,
+      "text": "of death until the present but that's a"
+    },
+    {
+      "start": 734.27,
+      "duration": 6.93,
+      "text": "little excessive at least until the"
+    },
+    {
+      "start": 738.43,
+      "duration": 7.27,
+      "text": "possibility of finding after years and"
+    },
+    {
+      "start": 741.2,
+      "duration": 10.43,
+      "text": "years is not not available so important"
+    },
+    {
+      "start": 745.7,
+      "duration": 5.93,
+      "text": "to check with the following other areas"
+    },
+    {
+      "start": 752.11,
+      "duration": 4.45,
+      "text": "be sure and check the court where the"
+    },
+    {
+      "start": 754.7,
+      "duration": 4.53,
+      "text": "probate action may have been filed at"
+    },
+    {
+      "start": 756.56,
+      "duration": 5.37,
+      "text": "the time of the decedent but in addition"
+    },
+    {
+      "start": 759.23,
+      "duration": 5.7,
+      "text": "to that you need to check adjoining"
+    },
+    {
+      "start": 761.93,
+      "duration": 5.07,
+      "text": "counties and cords so almost always"
+    },
+    {
+      "start": 764.93,
+      "duration": 4.08,
+      "text": "possible that the probate was filed in"
+    },
+    {
+      "start": 767.0,
+      "duration": 4.74,
+      "text": "an adjoining County for whatever reason"
+    },
+    {
+      "start": 769.01,
+      "duration": 6.21,
+      "text": "perhaps the probate judge was a relative"
+    },
+    {
+      "start": 771.74,
+      "duration": 6.15,
+      "text": "of the deceased or a friend or even an"
+    },
+    {
+      "start": 775.22,
+      "duration": 4.53,
+      "text": "enemy and they may have been required to"
+    },
+    {
+      "start": 777.89,
+      "duration": 7.02,
+      "text": "profile the action in an adjoining"
+    },
+    {
+      "start": 779.75,
+      "duration": 8.49,
+      "text": "County simply to avoid a conflict it's"
+    },
+    {
+      "start": 784.91,
+      "duration": 5.52,
+      "text": "also possible that those actions that as"
+    },
+    {
+      "start": 788.24,
+      "duration": 4.47,
+      "text": "I mentioned a moment ago that the"
+    },
+    {
+      "start": 790.43,
+      "duration": 4.76,
+      "text": "records have been transferred to a State"
+    },
+    {
+      "start": 792.71,
+      "duration": 6.3,
+      "text": "Archives a library or historical site of"
+    },
+    {
+      "start": 795.19,
+      "duration": 6.07,
+      "text": "society they may even be in a university"
+    },
+    {
+      "start": 799.01,
+      "duration": 4.36,
+      "text": "special collections"
+    },
+    {
+      "start": 801.26,
+      "duration": 7.45,
+      "text": "department in the library of a"
+    },
+    {
+      "start": 803.37,
+      "duration": 7.89,
+      "text": "university and always check online now"
+    },
+    {
+      "start": 808.71,
+      "duration": 4.65,
+      "text": "it's a couple of places that seem"
+    },
+    {
+      "start": 811.26,
+      "duration": 4.86,
+      "text": "unrelated to probate but are good places"
+    },
+    {
+      "start": 813.36,
+      "duration": 5.91,
+      "text": "to check for probate records is the"
+    },
+    {
+      "start": 816.12,
+      "duration": 5.76,
+      "text": "newspapers many of the procedures for"
+    },
+    {
+      "start": 819.27,
+      "duration": 4.98,
+      "text": "probates required notices to be posted"
+    },
+    {
+      "start": 821.88,
+      "duration": 5.61,
+      "text": "and it was most common for those notices"
+    },
+    {
+      "start": 824.25,
+      "duration": 5.34,
+      "text": "to be posted in a newspaper so seed"
+    },
+    {
+      "start": 827.49,
+      "duration": 5.07,
+      "text": "search all the newspapers in the county"
+    },
+    {
+      "start": 829.59,
+      "duration": 9.45,
+      "text": "I recommend looking on the Library of"
+    },
+    {
+      "start": 832.56,
+      "duration": 9.86,
+      "text": "Congress that's loc.gov govt newspaper"
+    },
+    {
+      "start": 839.04,
+      "duration": 5.79,
+      "text": "project for a list of all of the"
+    },
+    {
+      "start": 842.42,
+      "duration": 4.78,
+      "text": "newspapers published in a particular"
+    },
+    {
+      "start": 844.83,
+      "duration": 8.19,
+      "text": "County from the beginning of the county"
+    },
+    {
+      "start": 847.2,
+      "duration": 7.86,
+      "text": "until the present it's also important to"
+    },
+    {
+      "start": 853.02,
+      "duration": 3.75,
+      "text": "research land and property records if"
+    },
+    {
+      "start": 855.06,
+      "duration": 3.39,
+      "text": "you're searching for deeds and you're"
+    },
+    {
+      "start": 856.77,
+      "duration": 3.87,
+      "text": "going through the land and property"
+    },
+    {
+      "start": 858.45,
+      "duration": 5.07,
+      "text": "records concerning your ancestors"
+    },
+    {
+      "start": 860.64,
+      "duration": 6.03,
+      "text": "property and you find a deed that is"
+    },
+    {
+      "start": 863.52,
+      "duration": 5.97,
+      "text": "designated an executor or administrators"
+    },
+    {
+      "start": 866.67,
+      "duration": 5.58,
+      "text": "deed then these deeds indicate that"
+    },
+    {
+      "start": 869.49,
+      "duration": 6.84,
+      "text": "there has been a probate action filed"
+    },
+    {
+      "start": 872.25,
+      "duration": 7.02,
+      "text": "and it is then appropriate to start"
+    },
+    {
+      "start": 876.33,
+      "duration": 8.01,
+      "text": "looking at the time and place indicated"
+    },
+    {
+      "start": 879.27,
+      "duration": 8.73,
+      "text": "by the deed for the probate even if you"
+    },
+    {
+      "start": 884.34,
+      "duration": 6.42,
+      "text": "don't aren't looking for land and"
+    },
+    {
+      "start": 888.0,
+      "duration": 5.67,
+      "text": "property records it's important to see"
+    },
+    {
+      "start": 890.76,
+      "duration": 5.94,
+      "text": "how the property real property of your"
+    },
+    {
+      "start": 893.67,
+      "duration": 7.08,
+      "text": "ancestors was transferred at the time of"
+    },
+    {
+      "start": 896.7,
+      "duration": 5.99,
+      "text": "their death may not have may have been"
+    },
+    {
+      "start": 900.75,
+      "duration": 5.94,
+      "text": "transferred through an estate and"
+    },
+    {
+      "start": 902.69,
+      "duration": 6.88,
+      "text": "knowing that the time of death can be it"
+    },
+    {
+      "start": 906.69,
+      "duration": 6.15,
+      "text": "be helpful in determining where to begin"
+    },
+    {
+      "start": 909.57,
+      "duration": 7.01,
+      "text": "looking into the land and property"
+    },
+    {
+      "start": 912.84,
+      "duration": 8.31,
+      "text": "records to find a transfer that"
+    },
+    {
+      "start": 916.58,
+      "duration": 7.45,
+      "text": "apparently goes to an heir this may have"
+    },
+    {
+      "start": 921.15,
+      "duration": 5.13,
+      "text": "also happened shortly before the the"
+    },
+    {
+      "start": 924.03,
+      "duration": 4.56,
+      "text": "decedent passed away so land records"
+    },
+    {
+      "start": 926.28,
+      "duration": 4.08,
+      "text": "should look you should also look for"
+    },
+    {
+      "start": 928.59,
+      "duration": 4.2,
+      "text": "transfers of property that may have"
+    },
+    {
+      "start": 930.36,
+      "duration": 3.2,
+      "text": "occurred before you believe that the"
+    },
+    {
+      "start": 932.79,
+      "duration": 5.9,
+      "text": "person"
+    },
+    {
+      "start": 933.56,
+      "duration": 7.17,
+      "text": "the ancestor died okay well thanks for"
+    },
+    {
+      "start": 938.69,
+      "duration": 3.69,
+      "text": "watching this segment and hopefully"
+    },
+    {
+      "start": 940.73,
+      "duration": 3.54,
+      "text": "you'll tune in for the next and"
+    },
+    {
+      "start": 942.38,
+      "duration": 4.34,
+      "text": "following segments in this probate"
+    },
+    {
+      "start": 944.27,
+      "duration": 2.45,
+      "text": "series"
+    }
+  ],
+  "full_text": "hello welcome to another ends and outs of probate for genealogists this is one in a series of 9 videos which are located on the Brigham Young University YouTube channel this particular episode is number six and it is entitled where do I find probate documents probate documents can become quite a challenge first of all the probate actions generate a series of documents that are filed with the court handling the probate action and all of these probate documents or pleadings filed with the court are preserved and they're preserved by the courts understanding that the courts do not preserve probate documents because of interest by genealogists they are preserved because of legal implications of the transfer of the property from the probate to the heirs in each of those circumstances there may be taxes or other interests involved if real property is involved in probate action and transferred from the probate estate that it's the decedent to the heirs then that probate estate property is handled like any other real property but the transfer of the property may be subject to questions and so the probate files are generally preserved in order to provide future insurance that the land can be cleared of any title claims the first question you need to answer in finding a probate file is the jurisdiction this word means the type of case handled by a particular cord and that may be divided either by the district county or the nature of the claim or controversy so for example finding out which of the courts within the particular jurisdiction a particular area had jurisdiction over the probate action is one of the challenges currently it's fairly simple you would need to sent to look up the area where the decedent died and it's very possible that the court system in that state is clearly defined as to which cord handles probate matters but in as you go back in time it may become more of a challenge because of the different ways that probe a actions were signed out to different courts there are two types of jurisdiction out there under the law one is called subject matter jurisdiction and the other one is the location jurisdiction so for example of the idea of a subject matter jurisdiction means where would the appropriate in what court would a probate action be filed that's being that the subject of the action was a probate it may also be determined by the by different considerations about where the decedent died or where the property was located that would be called locational jurisdiction so a court can have a specific geographical location where it has jurisdiction for example there might be a county court and the county court it's only jurisdiction or can only make rulings within that county or it may be a statewide chord in which case the court may have what's called statewide jurisdiction meaning they can make rulings concerning actions anywhere in the state it's also important to understand that probate law and procedures change over time and they will continue to change so in order to understand the probate law and the changes that have occurred in a file which may affect your ancestors you need to know the history a little brief history at least of the probate law in your area of research so if you're looking in the east and new engl perhaps you find probate goes back to the earliest years in the 1600s however at that point in time they were being handled by the english courts obviously because the colonies were part of England or Britain and then in later years you would need to know how or where when the probate court changed from one court to another or from one area of jurisdiction meaning the the geographic jurisdiction of the court this is kind of restating it at a different way that the names and the jurisdictions meaning the areas of which of which the court had or could make rulings have have changed over time so this is something that you need to be aware of now here are some examples of some probe different probate courts throughout the United States meaning the names change in Arizona they're called the Arizona Superior Court and it's the probate division of the Superior Court in Utah they're called district courts and there's a probate district court California they're called superior cords they have jurisdiction over probate Wisconsin once again they're called circuit courts and Texas they're called the probate court in Pennsylvania the court called the courts of common pleas and in Tennessee they're called Chancery courts so depending on the area of the united states that the the way that the probate court is handled and the jurisdiction of the court meaning which court had the right to handle probate matters not only varies in the way that the matters are handled by that particular court but they also vary because the names of the courts change from state to state so where would you go to live or probate files where are these files first of all you need the name the jurisdiction in the location of the record and that may have changed over time secondly you need to track down the documents that can be can be a real challenge checking those documents down can be a real challenge and they may actually be in paper form sitting in the basement of some courthouse someplace in the United States although there is a tremendous effort going forward to digitize and make records available online that may be different between two counties one County and the state may have their records digitized whereas another County in the same state may still have paper records stored in boxes someplace in the courthouse or elsewhere determining where the court which court had jurisdiction meaning which court is going to be the one where the action was filed and heard by the by the probate judge or Commissioner there are several different considerations in the first case you need to look in the court where the decedent died so whatever courts had jurisdiction at the time of the decedent's death where they lived those are the ones that you would begin to look at secondly you would look in a court where the decedent resided if that was someplace else besides where they died usually residence means permanent residence where they had a house or post office address or were declared to be a resident of the particular area you can also check in a court where the desene own property in some cases probates were filed had to be filed in other jurisdictions where the probate owned real property also you will check in a court where the airs reside in some cases they may have filed the probate where the airs lived simply for convenience purposes in many cases if the pro if the decedent owned land in more than one state it was necessary to file what's called an ancillary probate that's a probate filed in a court where the property is located and that's usually an estate other than the one where the decedent lived or even where the decedent died an ancillary probate is not a full probate action it's based on the filings in the court where the the original probate was filed there are a variety of steps to finding a probate case file and I suggest the following steps first of all determine the date of death of the ancestor more specific the date can be the better that's easier it's going to be to find the probate file but necessarily you need to know at least the year if not if you only have a range of years in which the probate was filed excuse me in which the person died then finding the probate file may involve searching through multiple years of court records important to determine the exact place of death the place of death can can often determine whether or not we're in a probate action could be filed and even whether or not a probate action was necessary important to investigate and determine which of the courts or other entity handled the probate matters at the time and place of the ancestors death those kinds of historical facts are quite readily discoverable most states have a history of their court system in some form or another and by going through that history you can determine at a white time period different courts handled the probate actions in addition you need to determine where the surviving records are stored even though the probate may have been handled in a particular court that does not mean that the records are still in that court or that they aren't stored someplace in a state archive in a central location for the courts in that state or someplace else that in a library museum or a library or whatever it is also important to determine whether or not the records are available online in a digitized format and you may need to search several online databases to determine if they have probate records for a particular location next it's important to search the cord or other entity records birth before and for a time period after the death of the ancestor you can really find that the probate actions could be filed up two years after the date of death sometimes the heirs simply did not take any action to probate the estate until some events as the sale of the real property required a probate and that could have happened years after the person actually died so my rule of course is that you look for probate records from the date of death until the present but that's a little excessive at least until the possibility of finding after years and years is not not available so important to check with the following other areas be sure and check the court where the probate action may have been filed at the time of the decedent but in addition to that you need to check adjoining counties and cords so almost always possible that the probate was filed in an adjoining County for whatever reason perhaps the probate judge was a relative of the deceased or a friend or even an enemy and they may have been required to profile the action in an adjoining County simply to avoid a conflict it's also possible that those actions that as I mentioned a moment ago that the records have been transferred to a State Archives a library or historical site of society they may even be in a university special collections department in the library of a university and always check online now it's a couple of places that seem unrelated to probate but are good places to check for probate records is the newspapers many of the procedures for probates required notices to be posted and it was most common for those notices to be posted in a newspaper so seed search all the newspapers in the county I recommend looking on the Library of Congress that's loc.gov govt newspaper project for a list of all of the newspapers published in a particular County from the beginning of the county until the present it's also important to research land and property records if you're searching for deeds and you're going through the land and property records concerning your ancestors property and you find a deed that is designated an executor or administrators deed then these deeds indicate that there has been a probate action filed and it is then appropriate to start looking at the time and place indicated by the deed for the probate even if you don't aren't looking for land and property records it's important to see how the property real property of your ancestors was transferred at the time of their death may not have may have been transferred through an estate and knowing that the time of death can be it be helpful in determining where to begin looking into the land and property records to find a transfer that apparently goes to an heir this may have also happened shortly before the the decedent passed away so land records should look you should also look for transfers of property that may have occurred before you believe that the person the ancestor died okay well thanks for watching this segment and hopefully you'll tune in for the next and following segments in this probate series",
+  "attempts": [
+    {
+      "client": "IOS",
+      "playability": {
+        "status": "OK",
+        "playableInEmbed": true,
+        "offlineability": {
+          "buttonRenderer": {
+            "navigationEndpoint": {
+              "clickTrackingParams": "CAkQ6ewBIhMI2tCCiOzblwMVvEhMCB1kEThFygEEfoRLAA==",
+              "ypcGetOfflineUpsellEndpoint": {
+                "params": "ChPqqN25AQ0KC29aaVliS052eEpZIgtvWmlZYktOdnhKWSoVCAkYAVIPCgtvWmlZYktOdnhKWSAB"
+              }
+            },
+            "trackingParams": "CAkQ6ewBIhMI2tCCiOzblwMVvEhMCB1kEThF"
+          }
+        },
+        "pictureInPicture": {
+          "pictureInPictureRenderer": {
+            "playableInPip": true,
+            "offByDefault": false,
+            "shouldResumeOnHead": false
+          }
+        },
+        "miniplayer": {
+          "miniplayerRenderer": {
+            "playbackMode": "PLAYBACK_MODE_ALLOW"
+          }
+        },
+        "contextParams": "Q0FFU0FnZ0M="
+      },
+      "outcome": "ok"
+    }
+  ],
+  "fetched_at": "2026-10-28T04:11:14.554244+00:00",
+  "client": "IOS",
+  "json_path": "transcripts/010_oZiYbKNvxJY.json",
+  "text_path": "transcripts/010_oZiYbKNvxJY.txt"
+}

@@ -1,0 +1,612 @@
+{
+  "index": 23,
+  "url": "https://www.youtube.com/watch?v=DjxOkXDU2cY",
+  "video_id": "DjxOkXDU2cY",
+  "status": "ok",
+  "metadata": {
+    "title": "GenealogyMagazine, Episode 1: Courthouse Research",
+    "author": "GenealogyMagazine",
+    "channelId": "UCpPiD9qAyuUvKRi8YiE-uMg",
+    "lengthSeconds": "324",
+    "viewCount": "3112",
+    "shortDescription": "Have you searched courthouse records in the places where your ancestors lived? Learn the basics about what can be found at the county clerk’s office.",
+    "keywords": [
+      "genealogy",
+      "ancestors",
+      "courthouse research",
+      "family tree",
+      "what does a courthouse researcher do",
+      "genealogy research tips",
+      "organizing",
+      "brick wall",
+      "family history",
+      "family history help",
+      "guide to starting family history",
+      "tracing ancestors",
+      "free family history lessons",
+      "genealogy tips and tricks",
+      "organization",
+      "search",
+      "genealogy for beginners",
+      "historical records",
+      "starting",
+      "beginning",
+      "pedigree",
+      "genealogy for dummies",
+      "genealogy research basics"
+    ]
+  },
+  "caption_tracks": [
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=DjxOkXDU2cY&ei=5HXharCiFNKjt7EP7fWD0Ao&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185876&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=7BD200708436B394085E01DA214E06236C2B3BDC.3865004EE63C80E1F6DF7D7F686E1F9C6ED5094E&key=yt8&kind=asr&lang=en",
+      "name": {
+        "runs": [
+          {
+            "text": "English (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.en",
+      "languageCode": "en",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    }
+  ],
+  "selected_track": {
+    "baseUrl": "https://www.youtube.com/api/timedtext?v=DjxOkXDU2cY&ei=5HXharCiFNKjt7EP7fWD0Ao&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185876&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=7BD200708436B394085E01DA214E06236C2B3BDC.3865004EE63C80E1F6DF7D7F686E1F9C6ED5094E&key=yt8&kind=asr&lang=en",
+    "name": {
+      "runs": [
+        {
+          "text": "English (auto-generated)"
+        }
+      ]
+    },
+    "vssId": "a.en",
+    "languageCode": "en",
+    "kind": "asr",
+    "isTranslatable": true,
+    "trackName": ""
+  },
+  "segments": [
+    {
+      "start": 0.98,
+      "duration": 20.76,
+      "text": "a few years ago Time magazine called"
+    },
+    {
+      "start": 19.099,
+      "duration": 5.19,
+      "text": "genealogy the second most popular hobby"
+    },
+    {
+      "start": 21.74,
+      "duration": 5.939,
+      "text": "in the US and the second most visited"
+    },
+    {
+      "start": 24.289,
+      "duration": 5.07,
+      "text": "category of websites yes"
+    },
+    {
+      "start": 27.679,
+      "duration": 3.66,
+      "text": "the Internet's where many people begin"
+    },
+    {
+      "start": 29.359,
+      "duration": 4.47,
+      "text": "their journey into genealogy and for"
+    },
+    {
+      "start": 31.339,
+      "duration": 4.411,
+      "text": "some it's their only destination except"
+    },
+    {
+      "start": 33.829,
+      "duration": 4.951,
+      "text": "for a pit stop now and then at the"
+    },
+    {
+      "start": 35.75,
+      "duration": 4.649,
+      "text": "public library but what about"
+    },
+    {
+      "start": 38.78,
+      "duration": 5.49,
+      "text": "researching courthouse records into"
+    },
+    {
+      "start": 40.399,
+      "duration": 5.991,
+      "text": "places where your ancestors lived what"
+    },
+    {
+      "start": 44.27,
+      "duration": 4.62,
+      "text": "can you find at a county courthouse a"
+    },
+    {
+      "start": 46.39,
+      "duration": 7.21,
+      "text": "special interest to genealogists our"
+    },
+    {
+      "start": 48.89,
+      "duration": 6.78,
+      "text": "days probates and vital records that"
+    },
+    {
+      "start": 53.6,
+      "duration": 6.119,
+      "text": "includes birth certificates marriage"
+    },
+    {
+      "start": 55.67,
+      "duration": 6.029,
+      "text": "licenses and death certificates these"
+    },
+    {
+      "start": 59.719,
+      "duration": 4.23,
+      "text": "records are usually found in the county"
+    },
+    {
+      "start": 61.699,
+      "duration": 5.611,
+      "text": "clerk's office or in the county"
+    },
+    {
+      "start": 63.949,
+      "duration": 5.551,
+      "text": "recorders office in some places both"
+    },
+    {
+      "start": 67.31,
+      "duration": 4.16,
+      "text": "final records in the state files are"
+    },
+    {
+      "start": 69.5,
+      "duration": 5.43,
+      "text": "kept in the office of the probate judge"
+    },
+    {
+      "start": 71.47,
+      "duration": 6.58,
+      "text": "yet in other places model records are"
+    },
+    {
+      "start": 74.93,
+      "duration": 5.94,
+      "text": "maintained at town halls or and separate"
+    },
+    {
+      "start": 78.05,
+      "duration": 4.53,
+      "text": "offices of the county courthouse but"
+    },
+    {
+      "start": 80.87,
+      "duration": 3.78,
+      "text": "wait there's more"
+    },
+    {
+      "start": 82.58,
+      "duration": 4.2,
+      "text": "other volumes found in the county"
+    },
+    {
+      "start": 84.65,
+      "duration": 5.07,
+      "text": "clerk's office buried from courthouse to"
+    },
+    {
+      "start": 86.78,
+      "duration": 6.92,
+      "text": "courthouse including a registry and"
+    },
+    {
+      "start": 89.72,
+      "duration": 7.71,
+      "text": "physicians military discharges and"
+    },
+    {
+      "start": 93.7,
+      "duration": 6.4,
+      "text": "arrest records records I've found to"
+    },
+    {
+      "start": 97.43,
+      "duration": 6.51,
+      "text": "include a clerk's copy of the 1880"
+    },
+    {
+      "start": 100.1,
+      "duration": 5.97,
+      "text": "federal census and my great-great grand"
+    },
+    {
+      "start": 103.94,
+      "duration": 4.41,
+      "text": "uncle's name on a list of confirmed"
+    },
+    {
+      "start": 106.07,
+      "duration": 4.83,
+      "text": "soldiers with the notation he'd been"
+    },
+    {
+      "start": 108.35,
+      "duration": 5.31,
+      "text": "killed at Fort Donelson which confirmed"
+    },
+    {
+      "start": 110.9,
+      "duration": 4.74,
+      "text": "a family story in the basement of an"
+    },
+    {
+      "start": 113.66,
+      "duration": 4.26,
+      "text": "Alabama courthouse I came across a"
+    },
+    {
+      "start": 115.64,
+      "duration": 4.59,
+      "text": "newspaper collection dating back to the"
+    },
+    {
+      "start": 117.92,
+      "duration": 3.93,
+      "text": "1880s and this is how I found an"
+    },
+    {
+      "start": 120.23,
+      "duration": 4.62,
+      "text": "obituary for my three-times"
+    },
+    {
+      "start": 121.85,
+      "duration": 5.76,
+      "text": "great-grandmother that alone is enough"
+    },
+    {
+      "start": 124.85,
+      "duration": 7.04,
+      "text": "to make a genealogist do a happy dance"
+    },
+    {
+      "start": 127.61,
+      "duration": 4.28,
+      "text": "before you rush off to the courthouse"
+    },
+    {
+      "start": 132.11,
+      "duration": 6.849,
+      "text": "be prepared you never know what lurks"
+    },
+    {
+      "start": 135.3,
+      "duration": 6.18,
+      "text": "behind these doors in my experience I"
+    },
+    {
+      "start": 138.959,
+      "duration": 12.151,
+      "text": "have found most clerks are nice but not"
+    },
+    {
+      "start": 141.48,
+      "duration": 11.4,
+      "text": "always get out get out come back maybe"
+    },
+    {
+      "start": 151.11,
+      "duration": 5.16,
+      "text": "this clerk has met one too many"
+    },
+    {
+      "start": 152.88,
+      "duration": 5.91,
+      "text": "genealogists unlike some public"
+    },
+    {
+      "start": 156.27,
+      "duration": 4.98,
+      "text": "libraries courthouses are not stacked"
+    },
+    {
+      "start": 158.79,
+      "duration": 5.669,
+      "text": "with clerks specializing in genealogy"
+    },
+    {
+      "start": 161.25,
+      "duration": 7.5,
+      "text": "and please don't hold him hostage with"
+    },
+    {
+      "start": 164.459,
+      "duration": 6.691,
+      "text": "stories about your ancestors I've had"
+    },
+    {
+      "start": 168.75,
+      "duration": 5.94,
+      "text": "more kisses from clerks than hisses and"
+    },
+    {
+      "start": 171.15,
+      "duration": 6.089,
+      "text": "smirks by being prepared do your"
+    },
+    {
+      "start": 174.69,
+      "duration": 5.31,
+      "text": "homework learn as much as possible about"
+    },
+    {
+      "start": 177.239,
+      "duration": 5.851,
+      "text": "the courthouse know what records are"
+    },
+    {
+      "start": 180.0,
+      "duration": 8.34,
+      "text": "available and the hours it's opened"
+    },
+    {
+      "start": 183.09,
+      "duration": 7.2,
+      "text": "do they close for lunch one of my"
+    },
+    {
+      "start": 188.34,
+      "duration": 4.47,
+      "text": "friends made a long distance trip to a"
+    },
+    {
+      "start": 190.29,
+      "duration": 4.53,
+      "text": "courthouse only to find that the county"
+    },
+    {
+      "start": 192.81,
+      "duration": 4.59,
+      "text": "clerk's office has set aside special"
+    },
+    {
+      "start": 194.82,
+      "duration": 8.31,
+      "text": "days and hours Virginie illogical"
+    },
+    {
+      "start": 197.4,
+      "duration": 8.03,
+      "text": "inquiries Oh before you go make a list"
+    },
+    {
+      "start": 203.13,
+      "duration": 7.8,
+      "text": "of documents that you would like to find"
+    },
+    {
+      "start": 205.43,
+      "duration": 7.45,
+      "text": "have the records in microfilm check"
+    },
+    {
+      "start": 210.93,
+      "duration": 6.899,
+      "text": "familysearch.org to see what's been"
+    },
+    {
+      "start": 212.88,
+      "duration": 6.93,
+      "text": "filmed and digitized by the LDS have any"
+    },
+    {
+      "start": 217.829,
+      "duration": 4.491,
+      "text": "of these records been transcribed for"
+    },
+    {
+      "start": 219.81,
+      "duration": 5.489,
+      "text": "publication in books periodicals or"
+    },
+    {
+      "start": 222.32,
+      "duration": 5.289,
+      "text": "online databases transcriptions and"
+    },
+    {
+      "start": 225.299,
+      "duration": 4.801,
+      "text": "abstracts are extremely helpful but"
+    },
+    {
+      "start": 227.609,
+      "duration": 5.19,
+      "text": "think of them as guides to records not"
+    },
+    {
+      "start": 230.1,
+      "duration": 5.16,
+      "text": "substitutes the District Clerk's office"
+    },
+    {
+      "start": 232.799,
+      "duration": 4.081,
+      "text": "has criminal records as well as civil"
+    },
+    {
+      "start": 235.26,
+      "duration": 4.8,
+      "text": "suits which is where you'll find"
+    },
+    {
+      "start": 236.88,
+      "duration": 5.609,
+      "text": "divorced cases these documents are"
+    },
+    {
+      "start": 240.06,
+      "duration": 5.09,
+      "text": "usually stored in vaults so you'll need"
+    },
+    {
+      "start": 242.489,
+      "duration": 5.881,
+      "text": "permission for access to these files"
+    },
+    {
+      "start": 245.15,
+      "duration": 6.19,
+      "text": "except for vinyl records copies usually"
+    },
+    {
+      "start": 248.37,
+      "duration": 4.92,
+      "text": "cost $1.00 per page and higher if the"
+    },
+    {
+      "start": 251.34,
+      "duration": 4.56,
+      "text": "copy needs to be certified some"
+    },
+    {
+      "start": 253.29,
+      "duration": 5.34,
+      "text": "courthouses offer self-service copiers"
+    },
+    {
+      "start": 255.9,
+      "duration": 5.049,
+      "text": "while others require that all coffees"
+    },
+    {
+      "start": 258.63,
+      "duration": 5.48,
+      "text": "must be made by clerks"
+    },
+    {
+      "start": 260.949,
+      "duration": 7.72,
+      "text": "each state mandates the fees for copies"
+    },
+    {
+      "start": 264.11,
+      "duration": 8.67,
+      "text": "of vital records be prepared to pay $5"
+    },
+    {
+      "start": 268.669,
+      "duration": 6.661,
+      "text": "to $20 for each certified document often"
+    },
+    {
+      "start": 272.78,
+      "duration": 6.63,
+      "text": "clerks require that copies be made 15 to"
+    },
+    {
+      "start": 275.33,
+      "duration": 7.559,
+      "text": "45 minutes before closing time we're"
+    },
+    {
+      "start": 279.41,
+      "duration": 5.37,
+      "text": "almost out of time this is intended as"
+    },
+    {
+      "start": 282.889,
+      "duration": 4.441,
+      "text": "an overview of what you can find at a"
+    },
+    {
+      "start": 284.78,
+      "duration": 4.68,
+      "text": "County Courthouse especially Ana County"
+    },
+    {
+      "start": 287.33,
+      "duration": 3.959,
+      "text": "Clerk's office in other videos I'll give"
+    },
+    {
+      "start": 289.46,
+      "duration": 4.079,
+      "text": "research tips and examples of how"
+    },
+    {
+      "start": 291.289,
+      "duration": 4.821,
+      "text": "courthouse records can help you trace"
+    },
+    {
+      "start": 293.539,
+      "duration": 2.571,
+      "text": "your family tree"
+    },
+    {
+      "start": 297.43,
+      "duration": 3.84,
+      "text": "you may go play now"
+    },
+    {
+      "start": 318.1,
+      "duration": 4.349,
+      "text": "[Music]"
+    },
+    {
+      "start": 322.969,
+      "duration": 2.06,
+      "text": "you"
+    }
+  ],
+  "full_text": "a few years ago Time magazine called genealogy the second most popular hobby in the US and the second most visited category of websites yes the Internet's where many people begin their journey into genealogy and for some it's their only destination except for a pit stop now and then at the public library but what about researching courthouse records into places where your ancestors lived what can you find at a county courthouse a special interest to genealogists our days probates and vital records that includes birth certificates marriage licenses and death certificates these records are usually found in the county clerk's office or in the county recorders office in some places both final records in the state files are kept in the office of the probate judge yet in other places model records are maintained at town halls or and separate offices of the county courthouse but wait there's more other volumes found in the county clerk's office buried from courthouse to courthouse including a registry and physicians military discharges and arrest records records I've found to include a clerk's copy of the 1880 federal census and my great-great grand uncle's name on a list of confirmed soldiers with the notation he'd been killed at Fort Donelson which confirmed a family story in the basement of an Alabama courthouse I came across a newspaper collection dating back to the 1880s and this is how I found an obituary for my three-times great-grandmother that alone is enough to make a genealogist do a happy dance before you rush off to the courthouse be prepared you never know what lurks behind these doors in my experience I have found most clerks are nice but not always get out get out come back maybe this clerk has met one too many genealogists unlike some public libraries courthouses are not stacked with clerks specializing in genealogy and please don't hold him hostage with stories about your ancestors I've had more kisses from clerks than hisses and smirks by being prepared do your homework learn as much as possible about the courthouse know what records are available and the hours it's opened do they close for lunch one of my friends made a long distance trip to a courthouse only to find that the county clerk's office has set aside special days and hours Virginie illogical inquiries Oh before you go make a list of documents that you would like to find have the records in microfilm check familysearch.org to see what's been filmed and digitized by the LDS have any of these records been transcribed for publication in books periodicals or online databases transcriptions and abstracts are extremely helpful but think of them as guides to records not substitutes the District Clerk's office has criminal records as well as civil suits which is where you'll find divorced cases these documents are usually stored in vaults so you'll need permission for access to these files except for vinyl records copies usually cost $1.00 per page and higher if the copy needs to be certified some courthouses offer self-service copiers while others require that all coffees must be made by clerks each state mandates the fees for copies of vital records be prepared to pay $5 to $20 for each certified document often clerks require that copies be made 15 to 45 minutes before closing time we're almost out of time this is intended as an overview of what you can find at a County Courthouse especially Ana County Clerk's office in other videos I'll give research tips and examples of how courthouse records can help you trace your family tree you may go play now [Music] you",
+  "attempts": [
+    {
+      "client": "IOS",
+      "playability": {
+        "status": "OK",
+        "playableInEmbed": true,
+        "offlineability": {
+          "buttonRenderer": {
+            "navigationEndpoint": {
+              "clickTrackingParams": "CAoQ6ewBIhMIsKSNiezblwMV0tEtAB3t-gCqygEE2KjvFg==",
+              "ypcGetOfflineUpsellEndpoint": {
+                "params": "ChPqqN25AQ0KC0RqeE9rWERVMmNZIgtEanhPa1hEVTJjWSoVCAkYAVIPCgtEanhPa1hEVTJjWSAB"
+              }
+            },
+            "trackingParams": "CAoQ6ewBIhMIsKSNiezblwMV0tEtAB3t-gCq"
+          }
+        },
+        "pictureInPicture": {
+          "pictureInPictureRenderer": {
+            "playableInPip": true,
+            "offByDefault": false,
+            "shouldResumeOnHead": false
+          }
+        },
+        "miniplayer": {
+          "miniplayerRenderer": {
+            "playbackMode": "PLAYBACK_MODE_ALLOW"
+          }
+        },
+        "contextParams": "Q0FFU0FnZ0M="
+      },
+      "outcome": "ok"
+    }
+  ],
+  "fetched_at": "2026-10-28T04:11:27.043463+00:00",
+  "client": "IOS",
+  "json_path": "transcripts/023_DjxOkXDU2cY.json",
+  "text_path": "transcripts/023_DjxOkXDU2cY.txt"
+}

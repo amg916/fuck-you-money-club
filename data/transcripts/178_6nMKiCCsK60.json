@@ -1,0 +1,648 @@
+{
+  "index": 178,
+  "url": "https://www.youtube.com/watch?v=6nMKiCCsK60",
+  "video_id": "6nMKiCCsK60",
+  "status": "ok",
+  "metadata": {
+    "title": "Import Your Own Property Data - Regrid Property App (Web)",
+    "author": "Regrid",
+    "channelId": "UCY6_FliC-rX76wQMYyow-1A",
+    "lengthSeconds": "234",
+    "viewCount": "1188",
+    "shortDescription": "Unlock the full potential of the Regrid Property App with our step-by-step tutorial on importing your property data seamlessly into our web platform. Users with spreadsheets of property data can match it to our data via parcel number, address, or lat/long coordinate.\n\nGet started at https://app.regrid.com/",
+    "keywords": [
+      "import",
+      "property data",
+      "regrid",
+      "parcels"
+    ]
+  },
+  "caption_tracks": [
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=6nMKiCCsK60&ei=_3XhaqTZEZ6QsfIPi8GRoQc&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185903&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=50E5A0862B32713F60A69356150A2FB1FE8C7575.86F6FA01273689E33744935747E28F14332BA0EA&key=yt8&kind=asr&lang=en",
+      "name": {
+        "runs": [
+          {
+            "text": "English (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.en",
+      "languageCode": "en",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    }
+  ],
+  "selected_track": {
+    "baseUrl": "https://www.youtube.com/api/timedtext?v=6nMKiCCsK60&ei=_3XhaqTZEZ6QsfIPi8GRoQc&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185903&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=50E5A0862B32713F60A69356150A2FB1FE8C7575.86F6FA01273689E33744935747E28F14332BA0EA&key=yt8&kind=asr&lang=en",
+    "name": {
+      "runs": [
+        {
+          "text": "English (auto-generated)"
+        }
+      ]
+    },
+    "vssId": "a.en",
+    "languageCode": "en",
+    "kind": "asr",
+    "isTranslatable": true,
+    "trackName": ""
+  },
+  "segments": [
+    {
+      "start": 1.64,
+      "duration": 2.96,
+      "text": "welcome to the regrid property app today"
+    },
+    {
+      "start": 3.679,
+      "duration": 3.361,
+      "text": "we're going to be talking about"
+    },
+    {
+      "start": 4.6,
+      "duration": 3.6,
+      "text": "importing data that you have into regrid"
+    },
+    {
+      "start": 7.04,
+      "duration": 2.679,
+      "text": "the first thing to cover here is that"
+    },
+    {
+      "start": 8.2,
+      "duration": 3.399,
+      "text": "regrid only supports data that can be"
+    },
+    {
+      "start": 9.719,
+      "duration": 3.321,
+      "text": "tied to individual properties so that"
+    },
+    {
+      "start": 11.599,
+      "duration": 3.481,
+      "text": "means you're going to need an address a"
+    },
+    {
+      "start": 13.04,
+      "duration": 3.92,
+      "text": "parcel number or a latl coordinate to"
+    },
+    {
+      "start": 15.08,
+      "duration": 3.68,
+      "text": "match what you have to our properties"
+    },
+    {
+      "start": 16.96,
+      "duration": 4.52,
+      "text": "census data or other aggregate data"
+    },
+    {
+      "start": 18.76,
+      "duration": 4.04,
+      "text": "isn't going to work here so let's say"
+    },
+    {
+      "start": 21.48,
+      "duration": 3.879,
+      "text": "that you do have some property level"
+    },
+    {
+      "start": 22.8,
+      "duration": 3.719,
+      "text": "data that you want to import for example"
+    },
+    {
+      "start": 25.359,
+      "duration": 2.281,
+      "text": "you know you've got a list of properties"
+    },
+    {
+      "start": 26.519,
+      "duration": 2.481,
+      "text": "that interest you that you got from"
+    },
+    {
+      "start": 27.64,
+      "duration": 3.08,
+      "text": "somewhere else or you downloaded a data"
+    },
+    {
+      "start": 29.0,
+      "duration": 3.84,
+      "text": "set from your accy your city open data"
+    },
+    {
+      "start": 30.72,
+      "duration": 3.48,
+      "text": "portal something like that so the first"
+    },
+    {
+      "start": 32.84,
+      "duration": 3.0,
+      "text": "step is to open up the file that you"
+    },
+    {
+      "start": 34.2,
+      "duration": 2.96,
+      "text": "want to import and make sure everything"
+    },
+    {
+      "start": 35.84,
+      "duration": 3.239,
+      "text": "looks good uh you're going to want a"
+    },
+    {
+      "start": 37.16,
+      "duration": 3.44,
+      "text": "column with one of those three Fields uh"
+    },
+    {
+      "start": 39.079,
+      "duration": 4.401,
+      "text": "so again that's address or partial"
+    },
+    {
+      "start": 40.6,
+      "duration": 4.08,
+      "text": "number or latitude longitude coordinate"
+    },
+    {
+      "start": 43.48,
+      "duration": 2.399,
+      "text": "um here you'll see that we've got a"
+    },
+    {
+      "start": 44.68,
+      "duration": 3.28,
+      "text": "partial number column which is going to"
+    },
+    {
+      "start": 45.879,
+      "duration": 4.561,
+      "text": "be nice uh parcel number is definitely"
+    },
+    {
+      "start": 47.96,
+      "duration": 4.88,
+      "text": "the gold standard for uh type to match"
+    },
+    {
+      "start": 50.44,
+      "duration": 4.959,
+      "text": "on um so if you do have that that's the"
+    },
+    {
+      "start": 52.84,
+      "duration": 5.679,
+      "text": "best way to go um so looking at this"
+    },
+    {
+      "start": 55.399,
+      "duration": 5.64,
+      "text": "each uh property or parcel is a row here"
+    },
+    {
+      "start": 58.519,
+      "duration": 4.04,
+      "text": "um so that's going to work well to match"
+    },
+    {
+      "start": 61.039,
+      "duration": 4.4,
+      "text": "um all my other data looks like I would"
+    },
+    {
+      "start": 62.559,
+      "duration": 4.6,
+      "text": "expect it to so that's all good here uh"
+    },
+    {
+      "start": 65.439,
+      "duration": 3.841,
+      "text": "and we're ready to import note that the"
+    },
+    {
+      "start": 67.159,
+      "duration": 5.401,
+      "text": "two file types that you want to save as"
+    },
+    {
+      "start": 69.28,
+      "duration": 5.56,
+      "text": "is ideally a CSV um you can also work"
+    },
+    {
+      "start": 72.56,
+      "duration": 4.32,
+      "text": "with a an Excel file but we do recommend"
+    },
+    {
+      "start": 74.84,
+      "duration": 5.0,
+      "text": "CSV if you have the option uh tends to"
+    },
+    {
+      "start": 76.88,
+      "duration": 5.559,
+      "text": "work a little bit better so you've got"
+    },
+    {
+      "start": 79.84,
+      "duration": 5.76,
+      "text": "your data set here next step is to bring"
+    },
+    {
+      "start": 82.439,
+      "duration": 5.121,
+      "text": "it actually into the import setup so I'm"
+    },
+    {
+      "start": 85.6,
+      "duration": 4.08,
+      "text": "going to go to the import tool here"
+    },
+    {
+      "start": 87.56,
+      "duration": 4.36,
+      "text": "select a file click on the file that I"
+    },
+    {
+      "start": 89.68,
+      "duration": 4.24,
+      "text": "want want to open uh you'll see the"
+    },
+    {
+      "start": 91.92,
+      "duration": 3.159,
+      "text": "progress bars working away here um and"
+    },
+    {
+      "start": 93.92,
+      "duration": 3.32,
+      "text": "what you see up at the top is just a"
+    },
+    {
+      "start": 95.079,
+      "duration": 5.601,
+      "text": "preview of the file itself so the number"
+    },
+    {
+      "start": 97.24,
+      "duration": 4.96,
+      "text": "of Records here uh the file name as well"
+    },
+    {
+      "start": 100.68,
+      "duration": 3.04,
+      "text": "as the field names for each of the"
+    },
+    {
+      "start": 102.2,
+      "duration": 3.519,
+      "text": "columns uh that's been pulled from the"
+    },
+    {
+      "start": 103.72,
+      "duration": 5.039,
+      "text": "sheet that you had as well as the file"
+    },
+    {
+      "start": 105.719,
+      "duration": 5.161,
+      "text": "type or rather sorry the column"
+    },
+    {
+      "start": 108.759,
+      "duration": 3.96,
+      "text": "type um this has gone through the"
+    },
+    {
+      "start": 110.88,
+      "duration": 5.199,
+      "text": "testing and we can see it's 100% matched"
+    },
+    {
+      "start": 112.719,
+      "duration": 4.801,
+      "text": "here now uh it's worth uh looking at"
+    },
+    {
+      "start": 116.079,
+      "duration": 3.08,
+      "text": "that match rate of course is an"
+    },
+    {
+      "start": 117.52,
+      "duration": 2.72,
+      "text": "important part and then also to scroll"
+    },
+    {
+      "start": 119.159,
+      "duration": 2.64,
+      "text": "down to the other section sections in"
+    },
+    {
+      "start": 120.24,
+      "duration": 4.44,
+      "text": "this import dialogue just to make sure"
+    },
+    {
+      "start": 121.799,
+      "duration": 5.161,
+      "text": "things are working so uh kyoga county is"
+    },
+    {
+      "start": 124.68,
+      "duration": 4.24,
+      "text": "right for the data we have here uh and"
+    },
+    {
+      "start": 126.96,
+      "duration": 3.84,
+      "text": "then special columns uh this is where"
+    },
+    {
+      "start": 128.92,
+      "duration": 3.72,
+      "text": "the matching happens so here we really"
+    },
+    {
+      "start": 130.8,
+      "duration": 4.799,
+      "text": "care most about this parcel ID to the"
+    },
+    {
+      "start": 132.64,
+      "duration": 5.44,
+      "text": "field parcel num that's uh as expected"
+    },
+    {
+      "start": 135.599,
+      "duration": 3.36,
+      "text": "um so we can go ahead and click finish"
+    },
+    {
+      "start": 138.08,
+      "duration": 2.4,
+      "text": "uh that's going to work through this"
+    },
+    {
+      "start": 138.959,
+      "duration": 3.761,
+      "text": "final progress bar and then when it's"
+    },
+    {
+      "start": 140.48,
+      "duration": 5.759,
+      "text": "done an add to the map button will pop"
+    },
+    {
+      "start": 142.72,
+      "duration": 5.799,
+      "text": "up uh and you want to click that and"
+    },
+    {
+      "start": 146.239,
+      "duration": 3.761,
+      "text": "here you can see that all the properties"
+    },
+    {
+      "start": 148.519,
+      "duration": 4.201,
+      "text": "that you've imported sort of highlight"
+    },
+    {
+      "start": 150.0,
+      "duration": 5.8,
+      "text": "on the map uh if I zoom in here and I"
+    },
+    {
+      "start": 152.72,
+      "duration": 4.36,
+      "text": "look at a given property I click on it"
+    },
+    {
+      "start": 155.8,
+      "duration": 3.32,
+      "text": "you can see that now in addition to sort"
+    },
+    {
+      "start": 157.08,
+      "duration": 4.64,
+      "text": "of our regular parcel data tab um"
+    },
+    {
+      "start": 159.12,
+      "duration": 4.399,
+      "text": "there's another tab that shows uh with"
+    },
+    {
+      "start": 161.72,
+      "duration": 4.439,
+      "text": "the information from the spreadsheet"
+    },
+    {
+      "start": 163.519,
+      "duration": 4.241,
+      "text": "that you have uh similarly if you go"
+    },
+    {
+      "start": 166.159,
+      "duration": 3.961,
+      "text": "over to list and you want to look at"
+    },
+    {
+      "start": 167.76,
+      "duration": 4.08,
+      "text": "these things in a spreadsheet view uh"
+    },
+    {
+      "start": 170.12,
+      "duration": 4.96,
+      "text": "when this loads you'll see that there"
+    },
+    {
+      "start": 171.84,
+      "duration": 5.119,
+      "text": "are uh sort of different colors and"
+    },
+    {
+      "start": 175.08,
+      "duration": 4.28,
+      "text": "basically what we're looking at here is"
+    },
+    {
+      "start": 176.959,
+      "duration": 4.841,
+      "text": "uh the furthest left group so in the"
+    },
+    {
+      "start": 179.36,
+      "duration": 5.68,
+      "text": "sort of light blue color uh that's your"
+    },
+    {
+      "start": 181.8,
+      "duration": 5.519,
+      "text": "imported data and then this yellow color"
+    },
+    {
+      "start": 185.04,
+      "duration": 3.44,
+      "text": "that is uh the base data and if you"
+    },
+    {
+      "start": 187.319,
+      "duration": 3.321,
+      "text": "scroll to the right you can see that we"
+    },
+    {
+      "start": 188.48,
+      "duration": 5.399,
+      "text": "have a lot of fields uh there as you"
+    },
+    {
+      "start": 190.64,
+      "duration": 5.64,
+      "text": "would expect uh from here you can click"
+    },
+    {
+      "start": 193.879,
+      "duration": 5.72,
+      "text": "export and then you could export your"
+    },
+    {
+      "start": 196.28,
+      "duration": 4.879,
+      "text": "data uh in one of these files um and so"
+    },
+    {
+      "start": 199.599,
+      "duration": 4.441,
+      "text": "that would give you a file output that"
+    },
+    {
+      "start": 201.159,
+      "duration": 4.761,
+      "text": "has your spreadsheets data matched to"
+    },
+    {
+      "start": 204.04,
+      "duration": 4.479,
+      "text": "the parcels uh that they match to with"
+    },
+    {
+      "start": 205.92,
+      "duration": 4.76,
+      "text": "our data so for example this parcel you"
+    },
+    {
+      "start": 208.519,
+      "duration": 3.881,
+      "text": "would get the stuff that is attached to"
+    },
+    {
+      "start": 210.68,
+      "duration": 4.04,
+      "text": "that parcel in your data set as well as"
+    },
+    {
+      "start": 212.4,
+      "duration": 4.68,
+      "text": "all of our data for"
+    },
+    {
+      "start": 214.72,
+      "duration": 4.32,
+      "text": "there uh let's see what else do we need"
+    },
+    {
+      "start": 217.08,
+      "duration": 4.56,
+      "text": "to talk about"
+    },
+    {
+      "start": 219.04,
+      "duration": 5.759,
+      "text": "so basically that's all the News That's"
+    },
+    {
+      "start": 221.64,
+      "duration": 4.84,
+      "text": "fit to print for export um bring it in"
+    },
+    {
+      "start": 224.799,
+      "duration": 3.601,
+      "text": "we'll have another tutorial video that I"
+    },
+    {
+      "start": 226.48,
+      "duration": 2.8,
+      "text": "will go through shortly that we can talk"
+    },
+    {
+      "start": 228.4,
+      "duration": 2.36,
+      "text": "a little bit more about like"
+    },
+    {
+      "start": 229.28,
+      "duration": 3.72,
+      "text": "troubleshooting and import but this is"
+    },
+    {
+      "start": 230.76,
+      "duration": 5.24,
+      "text": "the basic overall"
+    },
+    {
+      "start": 233.0,
+      "duration": 3.0,
+      "text": "setup"
+    }
+  ],
+  "full_text": "welcome to the regrid property app today we're going to be talking about importing data that you have into regrid the first thing to cover here is that regrid only supports data that can be tied to individual properties so that means you're going to need an address a parcel number or a latl coordinate to match what you have to our properties census data or other aggregate data isn't going to work here so let's say that you do have some property level data that you want to import for example you know you've got a list of properties that interest you that you got from somewhere else or you downloaded a data set from your accy your city open data portal something like that so the first step is to open up the file that you want to import and make sure everything looks good uh you're going to want a column with one of those three Fields uh so again that's address or partial number or latitude longitude coordinate um here you'll see that we've got a partial number column which is going to be nice uh parcel number is definitely the gold standard for uh type to match on um so if you do have that that's the best way to go um so looking at this each uh property or parcel is a row here um so that's going to work well to match um all my other data looks like I would expect it to so that's all good here uh and we're ready to import note that the two file types that you want to save as is ideally a CSV um you can also work with a an Excel file but we do recommend CSV if you have the option uh tends to work a little bit better so you've got your data set here next step is to bring it actually into the import setup so I'm going to go to the import tool here select a file click on the file that I want want to open uh you'll see the progress bars working away here um and what you see up at the top is just a preview of the file itself so the number of Records here uh the file name as well as the field names for each of the columns uh that's been pulled from the sheet that you had as well as the file type or rather sorry the column type um this has gone through the testing and we can see it's 100% matched here now uh it's worth uh looking at that match rate of course is an important part and then also to scroll down to the other section sections in this import dialogue just to make sure things are working so uh kyoga county is right for the data we have here uh and then special columns uh this is where the matching happens so here we really care most about this parcel ID to the field parcel num that's uh as expected um so we can go ahead and click finish uh that's going to work through this final progress bar and then when it's done an add to the map button will pop up uh and you want to click that and here you can see that all the properties that you've imported sort of highlight on the map uh if I zoom in here and I look at a given property I click on it you can see that now in addition to sort of our regular parcel data tab um there's another tab that shows uh with the information from the spreadsheet that you have uh similarly if you go over to list and you want to look at these things in a spreadsheet view uh when this loads you'll see that there are uh sort of different colors and basically what we're looking at here is uh the furthest left group so in the sort of light blue color uh that's your imported data and then this yellow color that is uh the base data and if you scroll to the right you can see that we have a lot of fields uh there as you would expect uh from here you can click export and then you could export your data uh in one of these files um and so that would give you a file output that has your spreadsheets data matched to the parcels uh that they match to with our data so for example this parcel you would get the stuff that is attached to that parcel in your data set as well as all of our data for there uh let's see what else do we need to talk about so basically that's all the News That's fit to print for export um bring it in we'll have another tutorial video that I will go through shortly that we can talk a little bit more about like troubleshooting and import but this is the basic overall setup",
+  "attempts": [
+    {
+      "client": "IOS",
+      "playability": {
+        "status": "OK",
+        "playableInEmbed": true,
+        "offlineability": {
+          "buttonRenderer": {
+            "navigationEndpoint": {
+              "clickTrackingParams": "CAoQ6ewBIhMI5NT6lezblwMVHkhMCB2LYCR0ygEE30z3Aw==",
+              "ypcGetOfflineUpsellEndpoint": {
+                "params": "ChPqqN25AQ0KCzZuTUtpQ0NzSzYwIgs2bk1LaUNDc0s2MCoVCAkYAVIPCgs2bk1LaUNDc0s2MCAB"
+              }
+            },
+            "trackingParams": "CAoQ6ewBIhMI5NT6lezblwMVHkhMCB2LYCR0"
+          }
+        },
+        "pictureInPicture": {
+          "pictureInPictureRenderer": {
+            "playableInPip": true,
+            "offByDefault": false,
+            "shouldResumeOnHead": false
+          }
+        },
+        "miniplayer": {
+          "miniplayerRenderer": {
+            "playbackMode": "PLAYBACK_MODE_ALLOW"
+          }
+        },
+        "contextParams": "Q0FFU0FnZ0M="
+      },
+      "outcome": "ok"
+    }
+  ],
+  "fetched_at": "2026-10-28T04:11:43.932477+00:00",
+  "client": "IOS",
+  "json_path": "transcripts/178_6nMKiCCsK60.json",
+  "text_path": "transcripts/178_6nMKiCCsK60.txt"
+}

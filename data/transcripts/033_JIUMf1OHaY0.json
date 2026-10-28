@@ -1,0 +1,4020 @@
+{
+  "index": 33,
+  "url": "https://www.youtube.com/watch?v=JIUMf1OHaY0",
+  "video_id": "JIUMf1OHaY0",
+  "status": "ok",
+  "metadata": {
+    "title": "Extracting Evidence: Strategies for Analyzing Genealogical Sources",
+    "author": "FamilySearch",
+    "channelId": "UC-9GZ7QHKOmLS0APnfz2g1Q",
+    "lengthSeconds": "3597",
+    "viewCount": "698",
+    "shortDescription": "In this interactive session, participants will learn how to determine the reliability of evidence and employ decision-making skills when encountering conflicting details in their research. Participants will practice principles of evidence analysis using in-session polls, then participate in a “choose your own adventure” style case study to see the value of evidence analysis in action."
+  },
+  "caption_tracks": [
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=JIUMf1OHaY0&ei=5XXhap_UPKKpsfIP5N7jyQU&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185878&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=2A4CBA0B82738066C898A4F3441F8EF951206A84.A704ECF0B6843B4A2609D8EFFBC20804B010B96A&key=yt8&lang=en",
+      "name": {
+        "runs": [
+          {
+            "text": "English"
+          }
+        ]
+      },
+      "vssId": ".en",
+      "languageCode": "en",
+      "isTranslatable": true,
+      "trackName": ""
+    }
+  ],
+  "selected_track": {
+    "baseUrl": "https://www.youtube.com/api/timedtext?v=JIUMf1OHaY0&ei=5XXhap_UPKKpsfIP5N7jyQU&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185878&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=2A4CBA0B82738066C898A4F3441F8EF951206A84.A704ECF0B6843B4A2609D8EFFBC20804B010B96A&key=yt8&lang=en",
+    "name": {
+      "runs": [
+        {
+          "text": "English"
+        }
+      ]
+    },
+    "vssId": ".en",
+    "languageCode": "en",
+    "isTranslatable": true,
+    "trackName": ""
+  },
+  "segments": [
+    {
+      "start": 0.409,
+      "duration": 2.94,
+      "text": "Hello everyone, I'm so excited that you're here."
+    },
+    {
+      "start": 3.569,
+      "duration": 2.191,
+      "text": "Uh, it's been a really great week at Roots Tech for me."
+    },
+    {
+      "start": 5.8,
+      "duration": 1.529,
+      "text": "I hope you feel the same."
+    },
+    {
+      "start": 7.719,
+      "duration": 5.4,
+      "text": "It's the last class of the last day, so I hope that we'll be able to have fun together and"
+    },
+    {
+      "start": 13.119,
+      "duration": 6.27,
+      "text": "learn something about extracting evidence and strategies for analyzing genealogical sources."
+    },
+    {
+      "start": 20.04,
+      "duration": 3.919,
+      "text": "So during this presentation, I just wanna remind you one final time that we need to"
+    },
+    {
+      "start": 23.959,
+      "duration": 5.721,
+      "text": "silence all our electronic devices and that there's no audio or video recording or photos."
+    },
+    {
+      "start": 31.069,
+      "duration": 3.73,
+      "text": "And just by way of introduction, my name is Alice Childs,"
+    },
+    {
+      "start": 35.049,
+      "duration": 5.761,
+      "text": "and I'm an accredited genealogist professional. I worked in the private client research world"
+    },
+    {
+      "start": 40.81,
+      "duration": 6.0,
+      "text": "for several years and I currently serve as the assistant director at the BYU Center for Family"
+    },
+    {
+      "start": 46.81,
+      "duration": 1.359,
+      "text": "History and Genealogy."
+    },
+    {
+      "start": 48.639,
+      "duration": 5.34,
+      "text": "And this is an academic research center where we employ students who are family history"
+    },
+    {
+      "start": 53.979,
+      "duration": 4.881,
+      "text": "majors and minors, and they, we give them experiential learning where they can learn more"
+    },
+    {
+      "start": 58.86,
+      "duration": 3.309,
+      "text": "about the science and methodology of family history research."
+    },
+    {
+      "start": 62.86,
+      "duration": 5.779,
+      "text": "Um, our mission is twofold to provide this experience to the students and also to provide"
+    },
+    {
+      "start": 68.639,
+      "duration": 5.401,
+      "text": "quality online sources for the public, and these resources are available to you at no cost."
+    },
+    {
+      "start": 74.16,
+      "duration": 3.929,
+      "text": "So if you would like to learn more about the projects that are on the screen or any of our"
+    },
+    {
+      "start": 78.089,
+      "duration": 4.3,
+      "text": "other projects, you can visit us at CFHG."
+    },
+    {
+      "start": 82.76,
+      "duration": 1.699,
+      "text": "BYU.edu."
+    },
+    {
+      "start": 87.72,
+      "duration": 6.03,
+      "text": "OK, so before class started for the people here that are live we had a QR code up on the screen"
+    },
+    {
+      "start": 94.04,
+      "duration": 4.029,
+      "text": "and there's a question that you can ask this class today is going to be interactive."
+    },
+    {
+      "start": 98.279,
+      "duration": 3.411,
+      "text": "We're going to have quite a few questions that you're going to get to answer throughout the"
+    },
+    {
+      "start": 101.69,
+      "duration": 3.869,
+      "text": "presentation. So if you did not see this slide when you first"
+    },
+    {
+      "start": 105.559,
+      "duration": 6.14,
+      "text": "came in or if you're watching from home, go ahead and scan the QR code and answer this"
+    },
+    {
+      "start": 111.699,
+      "duration": 4.211,
+      "text": "first question. And then we will be having questions throughout"
+    },
+    {
+      "start": 115.91,
+      "duration": 4.03,
+      "text": "the presentation and the way that this is designed is you'll just keep this open on your"
+    },
+    {
+      "start": 119.94,
+      "duration": 5.079,
+      "text": "phone, this window open on your phone and as I go to the slide where there's a question,"
+    },
+    {
+      "start": 125.11,
+      "duration": 5.6,
+      "text": "a new question is gonna pop up on your screen so that's the way it's gonna work and if you"
+    },
+    {
+      "start": 130.71,
+      "duration": 3.31,
+      "text": "lose track of this QR code and you can't find it, don't worry,"
+    },
+    {
+      "start": 134.259,
+      "duration": 3.89,
+      "text": "you can just think about the question in your mind and answer and compare to what everyone"
+    },
+    {
+      "start": 138.149,
+      "duration": 1.72,
+      "text": "else uh answers so."
+    },
+    {
+      "start": 140.419,
+      "duration": 3.961,
+      "text": "Let's just talk about our first question. This was our practice question how would you"
+    },
+    {
+      "start": 144.38,
+      "duration": 3.129,
+      "text": "describe your level of genealogy experience?"
+    },
+    {
+      "start": 147.88,
+      "duration": 4.09,
+      "text": "And uh, we have a good mix. I'm excited for all of you to be here today."
+    },
+    {
+      "start": 152.3,
+      "duration": 4.27,
+      "text": "I think that we will have a good experience no matter what your level is,"
+    },
+    {
+      "start": 156.82,
+      "duration": 4.079,
+      "text": "and I hope that it will be fun to interact in this way throughout the presentation."
+    },
+    {
+      "start": 163.33,
+      "duration": 5.039,
+      "text": "When I first started doing my genealogy research and for a long time after I started"
+    },
+    {
+      "start": 168.369,
+      "duration": 5.16,
+      "text": "doing my genealogy research, I often wondered when I was looking at information that I had"
+    },
+    {
+      "start": 173.529,
+      "duration": 5.911,
+      "text": "found about my ancestors how reliable is this information that I see on these records?"
+    },
+    {
+      "start": 179.85,
+      "duration": 2.879,
+      "text": "I, I wondered if I could trust what they were telling me."
+    },
+    {
+      "start": 183.949,
+      "duration": 5.271,
+      "text": "Another question that I often ask myself when I was faced with records that said two different"
+    },
+    {
+      "start": 189.22,
+      "duration": 4.44,
+      "text": "things, which one is correct and how do I know which one is correct?"
+    },
+    {
+      "start": 195.899,
+      "duration": 3.201,
+      "text": "Also, I often wondered how much evidence do I really need?"
+    },
+    {
+      "start": 199.169,
+      "duration": 4.801,
+      "text": "How many records do I need to find to make sure that I am making a correct conclusion?"
+    },
+    {
+      "start": 204.61,
+      "duration": 5.309,
+      "text": "So my goal is that after our session today that you will be able to answer those questions and"
+    },
+    {
+      "start": 209.919,
+      "duration": 2.39,
+      "text": "that you will be more confident in your research."
+    },
+    {
+      "start": 214.149,
+      "duration": 3.94,
+      "text": "The principles that I am going to be talking to you about are outlined in a book called"
+    },
+    {
+      "start": 218.089,
+      "duration": 6.371,
+      "text": "Genealogy Standards, and this is a book that um some certified genealogists have put together"
+    },
+    {
+      "start": 224.46,
+      "duration": 6.12,
+      "text": "that tell standards for the genealogy industry and they have standards in several different"
+    },
+    {
+      "start": 230.58,
+      "duration": 4.16,
+      "text": "areas today we're gonna be discussing standards for researching."
+    },
+    {
+      "start": 238.52,
+      "duration": 6.81,
+      "text": "We gather evidence from historical records and there are many types of historical records"
+    },
+    {
+      "start": 245.6,
+      "duration": 5.079,
+      "text": "but what we have to know is that those records were not created with us as genealogists in"
+    },
+    {
+      "start": 250.679,
+      "duration": 2.921,
+      "text": "mind. There were other purposes for these records."
+    },
+    {
+      "start": 254.544,
+      "duration": 6.591,
+      "text": "For instance, vital records were used they were created for legal use in court proceedings,"
+    },
+    {
+      "start": 261.475,
+      "duration": 5.35,
+      "text": "uh, around issues surrounding inheritance and parentage, and they've also been a really"
+    },
+    {
+      "start": 266.825,
+      "duration": 2.19,
+      "text": "useful tool in the field of public health."
+    },
+    {
+      "start": 269.859,
+      "duration": 5.72,
+      "text": "Censuses were ordered by the Constitution. Section 2 of the Constitution required an"
+    },
+    {
+      "start": 275.579,
+      "duration": 5.32,
+      "text": "apportionment of representatives among the states must be carried out every 10 years,"
+    },
+    {
+      "start": 281.019,
+      "duration": 4.84,
+      "text": "and these were used to determine how federal funding would be used for schools and hospitals"
+    },
+    {
+      "start": 285.859,
+      "duration": 1.92,
+      "text": "and public works and things like that."
+    },
+    {
+      "start": 288.64,
+      "duration": 6.919,
+      "text": "Uh, probate is the process by which someone's estate gets allotted out to their descendants"
+    },
+    {
+      "start": 295.559,
+      "duration": 1.761,
+      "text": "after they after they die."
+    },
+    {
+      "start": 297.799,
+      "duration": 3.16,
+      "text": "So these are created for reasons that are not related to genealogy,"
+    },
+    {
+      "start": 301.079,
+      "duration": 6.121,
+      "text": "but we are the beneficiaries, and we need to be able to analyze these records and correlate the"
+    },
+    {
+      "start": 307.2,
+      "duration": 3.359,
+      "text": "evidence that we find in them in order to make conclusions."
+    },
+    {
+      "start": 312.5,
+      "duration": 4.559,
+      "text": "One thing I really want to emphasize as we're getting started here is that when we are doing"
+    },
+    {
+      "start": 317.059,
+      "duration": 4.831,
+      "text": "our research, we want to always look at the original document when it's available."
+    },
+    {
+      "start": 323.089,
+      "duration": 1.94,
+      "text": "I want to give you an example."
+    },
+    {
+      "start": 325.399,
+      "duration": 6.44,
+      "text": "This is the New York US state census of 1865, and this is just the"
+    },
+    {
+      "start": 331.839,
+      "duration": 3.71,
+      "text": "indexed information that popped up when I looked at this record on ancestry."
+    },
+    {
+      "start": 335.92,
+      "duration": 3.639,
+      "text": "and just looking at what was typed on the screen, I found out a fair amount of"
+    },
+    {
+      "start": 339.559,
+      "duration": 3.75,
+      "text": "information. I found that her name and gender,"
+    },
+    {
+      "start": 343.5,
+      "duration": 2.929,
+      "text": "uh, the relation to the head, she was the head of the household."
+    },
+    {
+      "start": 346.44,
+      "duration": 3.919,
+      "text": "She was 60 years old and she lived in Pauling, Duchess County,"
+    },
+    {
+      "start": 350.399,
+      "duration": 4.72,
+      "text": "New York. And she had 3 sons living with her in 1865,"
+    },
+    {
+      "start": 355.2,
+      "duration": 1.909,
+      "text": "so that's a fair amount of information."
+    },
+    {
+      "start": 358.049,
+      "duration": 5.611,
+      "text": "But when I opened the original document, I got a lot of extra information."
+    },
+    {
+      "start": 363.95,
+      "duration": 3.829,
+      "text": "I also learned her birthplace of Putnam County, New York."
+    },
+    {
+      "start": 368.109,
+      "duration": 4.04,
+      "text": "I learned that she was the mother of 10 children, that she was only married once,"
+    },
+    {
+      "start": 372.269,
+      "duration": 4.241,
+      "text": "but that she was now widowed, and she did not have an occupation listed,"
+    },
+    {
+      "start": 376.589,
+      "duration": 1.78,
+      "text": "but her sons were carpenters."
+    },
+    {
+      "start": 379.14,
+      "duration": 5.78,
+      "text": "And two of her sons were currently serving in the army and one had previously served and"
+    },
+    {
+      "start": 384.92,
+      "duration": 4.47,
+      "text": "finally the youngest son in the household was named Aiken Ingersoll,"
+    },
+    {
+      "start": 389.76,
+      "duration": 5.28,
+      "text": "and there was a 62 year old man living next door with his wife who was named Albert Aiken."
+    },
+    {
+      "start": 395.519,
+      "duration": 4.85,
+      "text": "And with that Aiken name in common, I felt like that was a clue about Francis's maiden name."
+    },
+    {
+      "start": 400.529,
+      "duration": 5.37,
+      "text": "Perhaps she was an Aiken and her brother was living next door so you can see that by looking"
+    },
+    {
+      "start": 405.899,
+      "duration": 4.791,
+      "text": "at the original document you get a lot more information than you did from that index."
+    },
+    {
+      "start": 410.82,
+      "duration": 2.88,
+      "text": "So that's one principle that we always need to keep in mind."
+    },
+    {
+      "start": 416.429,
+      "duration": 5.93,
+      "text": "So there are 3 questions that we want to be able to answer as we are looking at our"
+    },
+    {
+      "start": 422.359,
+      "duration": 4.88,
+      "text": "documents. The first one is associated with when and how"
+    },
+    {
+      "start": 427.239,
+      "duration": 1.431,
+      "text": "was the source created."
+    },
+    {
+      "start": 428.88,
+      "duration": 4.799,
+      "text": "We want to know if the document was created close to the time that the event happened or if"
+    },
+    {
+      "start": 433.679,
+      "duration": 4.961,
+      "text": "it was created many years later because things that are created closer to the time of the"
+    },
+    {
+      "start": 438.64,
+      "duration": 1.789,
+      "text": "event happened are more reliable."
+    },
+    {
+      "start": 441.459,
+      "duration": 5.451,
+      "text": "We also want to know who provided the information for the source was it an eyewitness"
+    },
+    {
+      "start": 446.91,
+      "duration": 4.109,
+      "text": "to the event or was it someone who learned the information from someone else?"
+    },
+    {
+      "start": 451.269,
+      "duration": 5.121,
+      "text": "And as you can imagine, if it's an eye witness, it will be considered more reliable than if"
+    },
+    {
+      "start": 456.39,
+      "duration": 4.36,
+      "text": "it's someone who heard it from someone else think about the old telephone game where."
+    },
+    {
+      "start": 461.239,
+      "duration": 3.801,
+      "text": "Someone says something in your ear and then you say it in the next person's ear,"
+    },
+    {
+      "start": 465.049,
+      "duration": 2.98,
+      "text": "and by the time it gets around the circle, it's completely changed."
+    },
+    {
+      "start": 468.399,
+      "duration": 3.801,
+      "text": "So that's another principle that we use when we're looking at the evidence that we find in"
+    },
+    {
+      "start": 472.2,
+      "duration": 4.06,
+      "text": "sources. And the other question we wanna ask ask"
+    },
+    {
+      "start": 476.26,
+      "duration": 4.68,
+      "text": "ourselves is do the facts in the source directly or indirectly answer the research"
+    },
+    {
+      "start": 480.94,
+      "duration": 5.269,
+      "text": "question now as genealogists we love and wish that all the sources always gave us a direct"
+    },
+    {
+      "start": 486.209,
+      "duration": 5.16,
+      "text": "answer that was provided by an eyewitness on the original document that was created at the"
+    },
+    {
+      "start": 491.369,
+      "duration": 2.99,
+      "text": "time of the event, but we don't always get that. In fact,"
+    },
+    {
+      "start": 494.45,
+      "duration": 2.56,
+      "text": "quite often we don't have that ideal situation."
+    },
+    {
+      "start": 497.399,
+      "duration": 5.021,
+      "text": "So we can use what's called indirect evidence from records and correlate that with other"
+    },
+    {
+      "start": 502.42,
+      "duration": 2.74,
+      "text": "records to come to our conclusions."
+    },
+    {
+      "start": 507.609,
+      "duration": 4.99,
+      "text": "Uh, in genealogical terms you might hear these questions referred to as questions about the"
+    },
+    {
+      "start": 512.599,
+      "duration": 6.531,
+      "text": "source, questions about the information or the informant for the info for the record,"
+    },
+    {
+      "start": 519.52,
+      "duration": 3.63,
+      "text": "and the evidence we're talking about direct or indirect evidence."
+    },
+    {
+      "start": 523.239,
+      "duration": 2.911,
+      "text": "So if you see those terms, that's what those are referring to."
+    },
+    {
+      "start": 528.359,
+      "duration": 6.36,
+      "text": "As we are doing our evidence analysis, we need to make sure that we are always guided by a"
+    },
+    {
+      "start": 534.719,
+      "duration": 3.101,
+      "text": "research question. And a research question is what will provide"
+    },
+    {
+      "start": 537.82,
+      "duration": 6.919,
+      "text": "the context for our uh analysis and depending on what our question is the answers might"
+    },
+    {
+      "start": 544.739,
+      "duration": 5.67,
+      "text": "change because there could be various pieces of evidence in every document that would answer"
+    },
+    {
+      "start": 550.409,
+      "duration": 4.931,
+      "text": "different research questions so one document might be analyzed one way for one research"
+    },
+    {
+      "start": 555.34,
+      "duration": 3.16,
+      "text": "question and a different way for a different research question."
+    },
+    {
+      "start": 560.13,
+      "duration": 5.0,
+      "text": "So here's an example research question When did Polina Eliza Phelps die?"
+    },
+    {
+      "start": 566.309,
+      "duration": 4.521,
+      "text": "So I knew a little bit about her. She was born on the 20th of March 1827 in"
+    },
+    {
+      "start": 570.83,
+      "duration": 4.07,
+      "text": "Illinois, and her parents were Morris Phelps and Laura Clark Phelps,"
+    },
+    {
+      "start": 575.07,
+      "duration": 6.279,
+      "text": "and she married a man named Amaa Mason Lyman on the 16th of January 1846 in Navo,"
+    },
+    {
+      "start": 581.59,
+      "duration": 1.94,
+      "text": "Hancock County, Illinois."
+    },
+    {
+      "start": 583.989,
+      "duration": 3.44,
+      "text": "Let's look at a source that will help us answer this research question."
+    },
+    {
+      "start": 589.27,
+      "duration": 6.68,
+      "text": "So we are going to look and see when and how was this source created so"
+    },
+    {
+      "start": 596.289,
+      "duration": 5.08,
+      "text": "this is a death certificate when someone dies, the law requires a medical professional to"
+    },
+    {
+      "start": 601.369,
+      "duration": 3.831,
+      "text": "certify the date of death and the time and cause of death,"
+    },
+    {
+      "start": 605.28,
+      "duration": 4.97,
+      "text": "and then the undertaker or the funeral home director will help a family member fill out the"
+    },
+    {
+      "start": 610.25,
+      "duration": 2.76,
+      "text": "other information on the on the certificate."
+    },
+    {
+      "start": 613.369,
+      "duration": 3.831,
+      "text": "So here we get to have a question that you guys can answer."
+    },
+    {
+      "start": 617.69,
+      "duration": 4.719,
+      "text": "And we are going to have to click a button right here,"
+    },
+    {
+      "start": 622.489,
+      "duration": 1.471,
+      "text": "so that this will actually work."
+    },
+    {
+      "start": 625.299,
+      "duration": 6.601,
+      "text": "So you should be seeing a question that says when thinking about Polina's death when was"
+    },
+    {
+      "start": 631.9,
+      "duration": 5.8,
+      "text": "this source created and you can go ahead and answer that question and click submit and if"
+    },
+    {
+      "start": 637.7,
+      "duration": 5.349,
+      "text": "you can't see this I'll read the near the time of the event many years later or unknown."
+    },
+    {
+      "start": 643.82,
+      "duration": 4.909,
+      "text": "It looks like we have answers that have come in and you guys are mostly all in agreement."
+    },
+    {
+      "start": 648.809,
+      "duration": 6.881,
+      "text": "This is correct when this record was created right at the time of Polina's death or uh hours"
+    },
+    {
+      "start": 655.69,
+      "duration": 3.19,
+      "text": "later, so it was created really close to her death."
+    },
+    {
+      "start": 661.289,
+      "duration": 4.01,
+      "text": "So when we talk about when and how was the source created,"
+    },
+    {
+      "start": 665.679,
+      "duration": 6.821,
+      "text": "um, we, we know that this was created near the time of death it's the first recording of this"
+    },
+    {
+      "start": 672.789,
+      "duration": 5.961,
+      "text": "event and so this would be considered an original source created at or near the time of"
+    },
+    {
+      "start": 678.75,
+      "duration": 4.9,
+      "text": "death. Now we need to look at who provided the"
+    },
+    {
+      "start": 683.65,
+      "duration": 1.949,
+      "text": "information for this record."
+    },
+    {
+      "start": 685.969,
+      "duration": 4.721,
+      "text": "So on a death certificate, we usually have 3 places where it tells us who provided"
+    },
+    {
+      "start": 690.69,
+      "duration": 5.219,
+      "text": "information. Uh, the intending physician is listed on the"
+    },
+    {
+      "start": 695.909,
+      "duration": 4.39,
+      "text": "right hand side, and he usually signs stating the time and death of date."
+    },
+    {
+      "start": 700.63,
+      "duration": 4.039,
+      "text": "We have the undertaker's signature on the bottom right and then on the left hand column"
+    },
+    {
+      "start": 704.669,
+      "duration": 5.8,
+      "text": "it tells us who provided the information about her birth and family and other information that"
+    },
+    {
+      "start": 710.469,
+      "duration": 3.33,
+      "text": "way. In this case, the informant for that"
+    },
+    {
+      "start": 713.799,
+      "duration": 2.57,
+      "text": "information, it, it was the same, it was the physician."
+    },
+    {
+      "start": 719.049,
+      "duration": 4.75,
+      "text": "So let's just test if you're just paying attention, who provided the death information"
+    },
+    {
+      "start": 723.799,
+      "duration": 5.18,
+      "text": "for this source. Everybody agrees."
+    },
+    {
+      "start": 729.07,
+      "duration": 1.13,
+      "text": "OK, good."
+    },
+    {
+      "start": 730.469,
+      "duration": 4.041,
+      "text": "It was the physician, OK, but it was an eyewitness."
+    },
+    {
+      "start": 734.59,
+      "duration": 2.11,
+      "text": "He was there to see when she died."
+    },
+    {
+      "start": 741.13,
+      "duration": 5.65,
+      "text": "All right. So he also said that he attended Polina from"
+    },
+    {
+      "start": 746.78,
+      "duration": 3.029,
+      "text": "October 7th to her death date on the 11th of October."
+    },
+    {
+      "start": 749.89,
+      "duration": 2.31,
+      "text": "So, and this is his signature on the record."
+    },
+    {
+      "start": 755.19,
+      "duration": 4.029,
+      "text": "So since this document directly answers the research question,"
+    },
+    {
+      "start": 759.25,
+      "duration": 3.53,
+      "text": "when did Polina die? This is considered direct evidence,"
+    },
+    {
+      "start": 763.07,
+      "duration": 3.26,
+      "text": "OK? Now let's look at another question that we"
+    },
+    {
+      "start": 766.33,
+      "duration": 1.68,
+      "text": "might ask. We already know the answer to this one,"
+    },
+    {
+      "start": 768.049,
+      "duration": 6.17,
+      "text": "but we want to consider, uh, the same questions when we're thinking about when was Polina born."
+    },
+    {
+      "start": 775.549,
+      "duration": 5.221,
+      "text": "So like I said, the same person, Joseph F. McGregor was the physician and he was also the"
+    },
+    {
+      "start": 780.77,
+      "duration": 4.73,
+      "text": "informant for the birth information and parent information on this record,"
+    },
+    {
+      "start": 785.77,
+      "duration": 4.269,
+      "text": "and he stated that Polina was born on March 20, 1827."
+    },
+    {
+      "start": 792.369,
+      "duration": 5.35,
+      "text": "So, when thinking about Polina's birth, who provided the information for this source?"
+    },
+    {
+      "start": 797.809,
+      "duration": 4.591,
+      "text": "Was it an eyewitness, someone who heard about Polina's birth secondhand,"
+    },
+    {
+      "start": 802.77,
+      "duration": 1.87,
+      "text": "or an unknown informant?"
+    },
+    {
+      "start": 809.989,
+      "duration": 3.511,
+      "text": "OK, we have a little bit of variation here."
+    },
+    {
+      "start": 813.849,
+      "duration": 4.89,
+      "text": "When the person is named who provided the information, we don't consider them unknown."
+    },
+    {
+      "start": 819.89,
+      "duration": 3.31,
+      "text": "We might get confused and think that's unknown to the family or something,"
+    },
+    {
+      "start": 823.28,
+      "duration": 3.11,
+      "text": "but we know the person's name. We know who provided the information,"
+    },
+    {
+      "start": 826.479,
+      "duration": 5.671,
+      "text": "so then we need to think about would that doctor have been alive and at Polina's birth."
+    },
+    {
+      "start": 832.28,
+      "duration": 4.709,
+      "text": "She died when she was almost 100 years. She was between 90 and 100 years old,"
+    },
+    {
+      "start": 837.239,
+      "duration": 3.57,
+      "text": "so he probably was not the the doctor who delivered her when she was born."
+    },
+    {
+      "start": 841.119,
+      "duration": 4.24,
+      "text": "So I imagine that he knows this information because he heard it from someone else."
+    },
+    {
+      "start": 845.479,
+      "duration": 1.521,
+      "text": "So this is a secondary."
+    },
+    {
+      "start": 847.409,
+      "duration": 3.351,
+      "text": "Informant someone who heard it from someone else."
+    },
+    {
+      "start": 853.599,
+      "duration": 2.151,
+      "text": "All right, now comes the next question."
+    },
+    {
+      "start": 856.609,
+      "duration": 4.921,
+      "text": "Do you think this source will be more reliable when you are seeking an answer to questions"
+    },
+    {
+      "start": 861.53,
+      "duration": 2.87,
+      "text": "about Polina's birth or about her death?"
+    },
+    {
+      "start": 866.82,
+      "duration": 2.149,
+      "text": "We have exact dates for both of them."
+    },
+    {
+      "start": 871.76,
+      "duration": 5.83,
+      "text": "All right, the majority agree that it's going to be more reliable for her death,"
+    },
+    {
+      "start": 877.75,
+      "duration": 4.609,
+      "text": "and when I say more reliable, I'm not talking about accuracy both dates could be wrong and"
+    },
+    {
+      "start": 882.359,
+      "duration": 1.43,
+      "text": "both dates could be right."
+    },
+    {
+      "start": 884.159,
+      "duration": 5.64,
+      "text": "We just want to know which one is most likely to be correct and the death date would be the"
+    },
+    {
+      "start": 889.799,
+      "duration": 5.201,
+      "text": "answer to that because it was created right near the time of the event by someone who"
+    },
+    {
+      "start": 895.0,
+      "duration": 1.169,
+      "text": "witnessed the event."
+    },
+    {
+      "start": 897.989,
+      "duration": 4.351,
+      "text": "For the birth, it was created many years later by a secondary witness."
+    },
+    {
+      "start": 904.989,
+      "duration": 3.951,
+      "text": "All right, let's look at another record now so we're gonna go through these questions again"
+    },
+    {
+      "start": 908.94,
+      "duration": 2.159,
+      "text": "when and how was this source created?"
+    },
+    {
+      "start": 911.39,
+      "duration": 5.49,
+      "text": "So this is a baptism record and the parents, this was in a Lutheran church in Pennsylvania,"
+    },
+    {
+      "start": 916.989,
+      "duration": 2.36,
+      "text": "Pennsylvania German, uh, family."
+    },
+    {
+      "start": 919.7,
+      "duration": 4.99,
+      "text": "And the parents presented the child to the minister for the baptism and the minister"
+    },
+    {
+      "start": 924.69,
+      "duration": 6.029,
+      "text": "recorded the ordinance in his parish record and the reason that these were created was because"
+    },
+    {
+      "start": 930.719,
+      "duration": 6.08,
+      "text": "sacramental records or membership proof is required for a person to be confirmed or"
+    },
+    {
+      "start": 937.169,
+      "duration": 3.43,
+      "text": "married in the church and so that's why baptismal records were kept."
+    },
+    {
+      "start": 941.46,
+      "duration": 5.389,
+      "text": "Uh, the originals were created in German, written in a in a register by the minister,"
+    },
+    {
+      "start": 947.219,
+      "duration": 5.731,
+      "text": "and then many years later they were translated and transcribed into English and put into books."
+    },
+    {
+      "start": 953.26,
+      "duration": 5.839,
+      "text": "The process of the record getting copied and put into a book like this might leave room for"
+    },
+    {
+      "start": 959.099,
+      "duration": 2.991,
+      "text": "error. Perhaps there was an error in the transcription,"
+    },
+    {
+      "start": 962.5,
+      "duration": 4.719,
+      "text": "and this is considered a derivative source. This is not considered an original source that"
+    },
+    {
+      "start": 967.219,
+      "duration": 2.161,
+      "text": "was created close to the time of the event."
+    },
+    {
+      "start": 969.849,
+      "duration": 3.091,
+      "text": "So it's a derivative source created many years later."
+    },
+    {
+      "start": 975.32,
+      "duration": 4.57,
+      "text": "So when we think about who provided the information for this source,"
+    },
+    {
+      "start": 980.33,
+      "duration": 4.94,
+      "text": "the parents again were the ones who took the child to be baptized they were eyewitnesses to"
+    },
+    {
+      "start": 985.27,
+      "duration": 6.56,
+      "text": "the child's birth and the birth record is given here uh the parents and the minister were all"
+    },
+    {
+      "start": 991.83,
+      "duration": 6.219,
+      "text": "eyewitnesses to the child's baptism, so we have the minister writing down that the child was"
+    },
+    {
+      "start": 998.049,
+      "duration": 5.75,
+      "text": "baptized on a certain day so the information on this source was provided by eyewitnesses to the"
+    },
+    {
+      "start": 1003.799,
+      "duration": 5.451,
+      "text": "event. So if we're asking ourselves when was Alfred"
+    },
+    {
+      "start": 1009.25,
+      "duration": 5.799,
+      "text": "Beck baptized we have direct evidence for this because it directly answers the research"
+    },
+    {
+      "start": 1015.049,
+      "duration": 5.721,
+      "text": "question and again I want to emphasize even if it directly answers the research question it"
+    },
+    {
+      "start": 1020.77,
+      "duration": 4.959,
+      "text": "may or may not be correct so we often have to correlate with other records."
+    },
+    {
+      "start": 1028.078,
+      "duration": 5.671,
+      "text": "It also directly answers the question who were Alfred Beck's parents because the parents are"
+    },
+    {
+      "start": 1033.749,
+      "duration": 3.4,
+      "text": "named on the record, William Beck and Mary A Beck."
+    },
+    {
+      "start": 1037.928,
+      "duration": 2.86,
+      "text": "So we have a good record here. It is a derivative record,"
+    },
+    {
+      "start": 1040.828,
+      "duration": 4.63,
+      "text": "but it gives us a lot of answers to research questions from eyewitnesses."
+    },
+    {
+      "start": 1046.688,
+      "duration": 5.431,
+      "text": "So here's a question for you what factors might contribute to the reliability of this record,"
+    },
+    {
+      "start": 1052.208,
+      "duration": 5.88,
+      "text": "and this is multiple answers are correct. So think about what might contribute to the"
+    },
+    {
+      "start": 1058.088,
+      "duration": 1.151,
+      "text": "reliability."
+    },
+    {
+      "start": 1059.489,
+      "duration": 5.52,
+      "text": "So would it be the process of transcribing the record from the original might introduce errors."
+    },
+    {
+      "start": 1066.469,
+      "duration": 2.72,
+      "text": "The information was provided by an eyewitness."
+    },
+    {
+      "start": 1070.52,
+      "duration": 2.86,
+      "text": "Exact dates are provided for each child."
+    },
+    {
+      "start": 1074.53,
+      "duration": 3.28,
+      "text": "And the record was created many years after the event occurred."
+    },
+    {
+      "start": 1081.219,
+      "duration": 3.531,
+      "text": "It's fun to see all these answers coming in. You guys are doing a great job."
+    },
+    {
+      "start": 1086.91,
+      "duration": 2.029,
+      "text": "All right, let's talk about this for just a minute."
+    },
+    {
+      "start": 1089.069,
+      "duration": 4.851,
+      "text": "When we're talking about reliability, we want to know which factors are making it so we would"
+    },
+    {
+      "start": 1093.92,
+      "duration": 6.71,
+      "text": "say this holds more weight than something else. So the process of transcription does affect the"
+    },
+    {
+      "start": 1100.63,
+      "duration": 2.87,
+      "text": "reliability because we know errors might have occurred."
+    },
+    {
+      "start": 1104.839,
+      "duration": 6.53,
+      "text": "The information was provided by an eyewitness and so that affects the reliability because"
+    },
+    {
+      "start": 1111.369,
+      "duration": 5.61,
+      "text": "firsthand accounts are more reliable than secondhand accounts and the record was created"
+    },
+    {
+      "start": 1116.979,
+      "duration": 4.84,
+      "text": "many years after the event occurred that affects the reliability because it's a long"
+    },
+    {
+      "start": 1121.819,
+      "duration": 3.0,
+      "text": "time ago it wasn't created right around the time of the event."
+    },
+    {
+      "start": 1124.859,
+      "duration": 1.24,
+      "text": "The original wasn't."
+    },
+    {
+      "start": 1126.51,
+      "duration": 5.65,
+      "text": "But exact dates are provided for each child does not necessarily affect the reliability of"
+    },
+    {
+      "start": 1132.16,
+      "duration": 6.159,
+      "text": "the record because you could anyone could write any date down an exact date could be written by"
+    },
+    {
+      "start": 1138.319,
+      "duration": 4.27,
+      "text": "anyone and it doesn't mean it was correct so we're weighing who provided the information of"
+    },
+    {
+      "start": 1142.589,
+      "duration": 4.971,
+      "text": "where it came from that affects the reliability more than the fact that there are exact dates"
+    },
+    {
+      "start": 1147.56,
+      "duration": 2.309,
+      "text": "on the record. Does that make sense?"
+    },
+    {
+      "start": 1152.66,
+      "duration": 4.949,
+      "text": "Alright, the next question or the next record that we're going to be looking at is uh"
+    },
+    {
+      "start": 1157.609,
+      "duration": 6.521,
+      "text": "authored narrative, and this is a book that was written about it's a chapter in a book chapter"
+    },
+    {
+      "start": 1164.13,
+      "duration": 3.51,
+      "text": "about Joseph Stevens in a book called From the Waves of the Past,"
+    },
+    {
+      "start": 1167.93,
+      "duration": 5.164,
+      "text": "and this was created by a committee. Of descendants of the Munford family from"
+    },
+    {
+      "start": 1173.094,
+      "duration": 5.0,
+      "text": "England and they pulled information from many different sources and then they pulled it all"
+    },
+    {
+      "start": 1178.094,
+      "duration": 4.441,
+      "text": "together into this book and when they didn't have sources they would interview the oldest"
+    },
+    {
+      "start": 1182.535,
+      "duration": 2.4,
+      "text": "living relatives and try and find out."
+    },
+    {
+      "start": 1186.14,
+      "duration": 3.719,
+      "text": "Anything that the oldest people in the family knew and they put it into this book and this is"
+    },
+    {
+      "start": 1189.859,
+      "duration": 3.801,
+      "text": "a fantastic resource for the Munford uh descendants."
+    },
+    {
+      "start": 1194.069,
+      "duration": 3.63,
+      "text": "So again this is called an authored narrative and."
+    },
+    {
+      "start": 1198.5,
+      "duration": 6.329,
+      "text": "We want to think about who provided the information for this source was it the authors"
+    },
+    {
+      "start": 1205.329,
+      "duration": 2.461,
+      "text": "or was it the people they interviewed?"
+    },
+    {
+      "start": 1208.079,
+      "duration": 4.801,
+      "text": "Sometimes it was the people they interviewed and we don't know who those people were and we"
+    },
+    {
+      "start": 1212.88,
+      "duration": 4.839,
+      "text": "don't know what records they used to be able to analyze who provided that information in the"
+    },
+    {
+      "start": 1217.719,
+      "duration": 6.52,
+      "text": "records so we just have to keep in mind that they are unknown informants and so we can't"
+    },
+    {
+      "start": 1224.239,
+      "duration": 3.075,
+      "text": "judge. How accurate the information is because we"
+    },
+    {
+      "start": 1227.314,
+      "duration": 5.0,
+      "text": "don't know if it was firsthand or secondhand and I will tell you that often a lot of times,"
+    },
+    {
+      "start": 1232.435,
+      "duration": 4.639,
+      "text": "most often in records whether they're authored records or original records,"
+    },
+    {
+      "start": 1237.155,
+      "duration": 4.159,
+      "text": "the informant is unknown we don't know who the informant was so we always have to keep that in"
+    },
+    {
+      "start": 1241.314,
+      "duration": 2.831,
+      "text": "mind when we're deciding how accurate things are."
+    },
+    {
+      "start": 1245.959,
+      "duration": 4.12,
+      "text": "So if we have a research question, when did Joseph come to the US?"
+    },
+    {
+      "start": 1250.449,
+      "duration": 3.471,
+      "text": "This narrative directly answers the research question."
+    },
+    {
+      "start": 1254.25,
+      "duration": 5.599,
+      "text": "It says he sailed from Liverpool on the ship Amazon on the 4th of June 1863."
+    },
+    {
+      "start": 1261.13,
+      "duration": 2.67,
+      "text": "So we have another question for you to answer."
+    },
+    {
+      "start": 1264.05,
+      "duration": 3.51,
+      "text": "How reliable do you feel the evidence from this record is?"
+    },
+    {
+      "start": 1267.729,
+      "duration": 1.431,
+      "text": "So we have a few choices here."
+    },
+    {
+      "start": 1269.489,
+      "duration": 3.681,
+      "text": "Very reliable. It provides direct direct answers about"
+    },
+    {
+      "start": 1273.17,
+      "duration": 2.35,
+      "text": "Joseph's. I can't even read that."
+    },
+    {
+      "start": 1275.53,
+      "duration": 6.559,
+      "text": "That's so small, about Joseph's life events, very reliable because my aunt and uncle wrote"
+    },
+    {
+      "start": 1282.089,
+      "duration": 3.28,
+      "text": "the wrote the book and they know a lot about our genealogy."
+    },
+    {
+      "start": 1286.16,
+      "duration": 4.549,
+      "text": "Or I need to find original records before I can determine its reliability."
+    },
+    {
+      "start": 1291.689,
+      "duration": 4.42,
+      "text": "You guys are all so smart that is true when you have an authored source,"
+    },
+    {
+      "start": 1296.16,
+      "duration": 5.6,
+      "text": "you do want to be able to test what is in the book with original records with a lot of the"
+    },
+    {
+      "start": 1301.76,
+      "duration": 4.51,
+      "text": "older histories that were written sources didn't get added to the book,"
+    },
+    {
+      "start": 1306.479,
+      "duration": 1.96,
+      "text": "so you don't know where the information came from."
+    },
+    {
+      "start": 1308.479,
+      "duration": 3.35,
+      "text": "If they do have source citations, that's a really good bonus."
+    },
+    {
+      "start": 1312.04,
+      "duration": 4.279,
+      "text": "I would still encourage people to look at the original sources just to make sure you agree"
+    },
+    {
+      "start": 1316.319,
+      "duration": 4.321,
+      "text": "with with what's written in the book, but especially when there are no sources."
+    },
+    {
+      "start": 1320.92,
+      "duration": 3.899,
+      "text": "You can't trust that it's 100% reliable. I'm not saying it's not."
+    },
+    {
+      "start": 1324.949,
+      "duration": 3.79,
+      "text": "It might be very reliable and very accurate, and a lot of times it does,"
+    },
+    {
+      "start": 1329.15,
+      "duration": 4.839,
+      "text": "it does check out, but you need to make sure that you feel confident because you have looked"
+    },
+    {
+      "start": 1333.989,
+      "duration": 3.921,
+      "text": "at the original records to verify what's written in these books."
+    },
+    {
+      "start": 1340.14,
+      "duration": 3.349,
+      "text": "Now I want to talk for a minute about negative evidence."
+    },
+    {
+      "start": 1343.939,
+      "duration": 5.17,
+      "text": "So I have a 1910 census and oh before I describe the census,"
+    },
+    {
+      "start": 1349.18,
+      "duration": 2.039,
+      "text": "I want to tell you what negative evidence is."
+    },
+    {
+      "start": 1351.5,
+      "duration": 5.199,
+      "text": "So negative evidence is the absence of information that you would expect to find in"
+    },
+    {
+      "start": 1356.699,
+      "duration": 3.681,
+      "text": "the record. So a really good example of this is a census"
+    },
+    {
+      "start": 1360.38,
+      "duration": 3.319,
+      "text": "record. If a person wasn't listed on the record that"
+    },
+    {
+      "start": 1363.699,
+      "duration": 5.24,
+      "text": "you think should have been there, that's negative evidence that perhaps that person."
+    },
+    {
+      "start": 1369.63,
+      "duration": 6.89,
+      "text": "Died Moved somewhere else, was living elsewhere, got old enough to get married and leave"
+    },
+    {
+      "start": 1376.52,
+      "duration": 3.089,
+      "text": "the household. So that's negative evidence that you can use in"
+    },
+    {
+      "start": 1379.609,
+      "duration": 4.23,
+      "text": "your research when you're trying to decide and learn the story of your ancestors."
+    },
+    {
+      "start": 1384.369,
+      "duration": 4.311,
+      "text": "Now you have to be really careful when you're making assumptions about negative evidence"
+    },
+    {
+      "start": 1389.13,
+      "duration": 4.959,
+      "text": "because sometimes your hypothesis is correct and sometimes it isn't so this example is a"
+    },
+    {
+      "start": 1394.089,
+      "duration": 4.75,
+      "text": "good illustration of that. So this was a 1910 census for my great"
+    },
+    {
+      "start": 1398.839,
+      "duration": 2.89,
+      "text": "grandparents Alexander and Kate Sanders."
+    },
+    {
+      "start": 1402.53,
+      "duration": 2.62,
+      "text": "The record says they had been married for one year."
+    },
+    {
+      "start": 1406.089,
+      "duration": 4.961,
+      "text": "And Kate had no children, 0 children, 0 living, the record said,"
+    },
+    {
+      "start": 1411.3,
+      "duration": 3.909,
+      "text": "said that Alexander was born in Alabama and Kate was born in Indiana."
+    },
+    {
+      "start": 1415.619,
+      "duration": 2.99,
+      "text": "Now there's a few problems with this record first."
+    },
+    {
+      "start": 1419.29,
+      "duration": 6.049,
+      "text": "I know that the couple had a son named Eldon in 1907, and where would he be?"
+    },
+    {
+      "start": 1425.459,
+      "duration": 3.061,
+      "text": "He's 3 years old. He should be with the family in this record."
+    },
+    {
+      "start": 1428.989,
+      "duration": 3.891,
+      "text": "Um. Also I know that Alexander and Kate were both"
+    },
+    {
+      "start": 1432.88,
+      "duration": 3.79,
+      "text": "born in Utah, and I know that this was them because they were living in the place,"
+    },
+    {
+      "start": 1436.709,
+      "duration": 6.171,
+      "text": "a really small town where I, I know they lived and the sister was living next door so I don't"
+    },
+    {
+      "start": 1442.88,
+      "duration": 3.4,
+      "text": "know what's going on here, but where was Eldon 3 year old Eldon,"
+    },
+    {
+      "start": 1446.359,
+      "duration": 5.08,
+      "text": "so we might be tempted to think that perhaps he passed away and so that's why he doesn't appear"
+    },
+    {
+      "start": 1451.439,
+      "duration": 1.711,
+      "text": "in the census with his parents."
+    },
+    {
+      "start": 1453.969,
+      "duration": 4.01,
+      "text": "But I can't just trust that just by looking at this one record."
+    },
+    {
+      "start": 1458.109,
+      "duration": 4.35,
+      "text": "I need to find other evidence to make sure that that was actually the case."
+    },
+    {
+      "start": 1464.099,
+      "duration": 5.551,
+      "text": "So I looked at the 1920 census and in 1920, Alexander is still married,"
+    },
+    {
+      "start": 1469.9,
+      "duration": 2.39,
+      "text": "his wife is not in the household though."
+    },
+    {
+      "start": 1472.5,
+      "duration": 4.469,
+      "text": "He's living in his sister-in-law's house with his mother-in-law and brother-in-law and"
+    },
+    {
+      "start": 1476.969,
+      "duration": 1.411,
+      "text": "13-year-old Eldon."
+    },
+    {
+      "start": 1479.609,
+      "duration": 4.431,
+      "text": "So Eldon apparently didn't die. I don't know where he was in 1910."
+    },
+    {
+      "start": 1484.449,
+      "duration": 4.601,
+      "text": "I haven't been able to find him in the 1910 census, and the only thing I can think is that"
+    },
+    {
+      "start": 1489.05,
+      "duration": 4.269,
+      "text": "they lived in a small community of people who are working on the railroad."
+    },
+    {
+      "start": 1493.41,
+      "duration": 1.84,
+      "text": "It was a very transient community."
+    },
+    {
+      "start": 1495.589,
+      "duration": 5.74,
+      "text": "And I think maybe someone besides Alexander or Kate provided the information to the census"
+    },
+    {
+      "start": 1501.329,
+      "duration": 4.86,
+      "text": "enumerator when he came around because there were a lot of errors about the family."
+    },
+    {
+      "start": 1506.439,
+      "duration": 3.05,
+      "text": "I have ruled out any I have not found them anywhere else,"
+    },
+    {
+      "start": 1509.719,
+      "duration": 2.791,
+      "text": "so I'm pretty sure that's them with all the evidence I have,"
+    },
+    {
+      "start": 1512.8,
+      "duration": 4.47,
+      "text": "and I think that the person who provided the information we don't know who it was,"
+    },
+    {
+      "start": 1517.31,
+      "duration": 3.809,
+      "text": "but I'm guessing they didn't know them very well and they just gave their best guess and"
+    },
+    {
+      "start": 1521.119,
+      "duration": 2.441,
+      "text": "somehow missed the fact that they actually had a son."
+    },
+    {
+      "start": 1524.839,
+      "duration": 2.971,
+      "text": "And I know he lived for a good long time because he's my grandpa,"
+    },
+    {
+      "start": 1528.01,
+      "duration": 2.319,
+      "text": "so I would not have been here without him."
+    },
+    {
+      "start": 1531.43,
+      "duration": 6.48,
+      "text": "So doing this is what we call correlating evidence uh so this this standard of"
+    },
+    {
+      "start": 1537.91,
+      "duration": 5.0,
+      "text": "researching teaches us that we can never rely on evidence from one record alone we need to"
+    },
+    {
+      "start": 1542.91,
+      "duration": 4.709,
+      "text": "find evidence in multiple records and compare them against one another."
+    },
+    {
+      "start": 1547.709,
+      "duration": 1.91,
+      "text": "Do they say the same thing?"
+    },
+    {
+      "start": 1549.989,
+      "duration": 2.48,
+      "text": "Does each record have different information?"
+    },
+    {
+      "start": 1552.819,
+      "duration": 5.341,
+      "text": "And then if they differ you need to decide and determine the credibility of each of the"
+    },
+    {
+      "start": 1558.16,
+      "duration": 5.0,
+      "text": "sources so you can make a decision about which one's correct or maybe you keep researching and"
+    },
+    {
+      "start": 1563.16,
+      "duration": 6.559,
+      "text": "find more records and see which item you have more evidence for and you also need to resolve"
+    },
+    {
+      "start": 1569.719,
+      "duration": 2.961,
+      "text": "any conflicts that you come across as you're researching."
+    },
+    {
+      "start": 1574.65,
+      "duration": 3.939,
+      "text": "Another principle I wanna talk about and introduce you to is called evidence"
+    },
+    {
+      "start": 1578.589,
+      "duration": 1.23,
+      "text": "independence."
+    },
+    {
+      "start": 1580.439,
+      "duration": 6.191,
+      "text": "So if we have an obituary and uh information on a headstone,"
+    },
+    {
+      "start": 1586.959,
+      "duration": 3.831,
+      "text": "what happens when someone dies? A family member will write the obituary,"
+    },
+    {
+      "start": 1591.079,
+      "duration": 5.12,
+      "text": "then they'll go work with the memorial company to choose a headstone and give them the"
+    },
+    {
+      "start": 1596.199,
+      "duration": 2.04,
+      "text": "information to inscribe on the headstone."
+    },
+    {
+      "start": 1598.53,
+      "duration": 4.75,
+      "text": "It's very likely that the information in the obituary and the information on the headstone"
+    },
+    {
+      "start": 1603.28,
+      "duration": 5.669,
+      "text": "came from the same person, so you cannot say that those are two sources."
+    },
+    {
+      "start": 1609.52,
+      "duration": 3.99,
+      "text": "They're two different records, but the information on them came from the same person."
+    },
+    {
+      "start": 1613.839,
+      "duration": 4.36,
+      "text": "So when you're weighing evidence that only counts as one source because it's given by one"
+    },
+    {
+      "start": 1618.199,
+      "duration": 3.63,
+      "text": "person. So that is something that you need to think"
+    },
+    {
+      "start": 1621.829,
+      "duration": 5.841,
+      "text": "about when you are weighing evidence and seeing different uh evidence on different records you"
+    },
+    {
+      "start": 1627.67,
+      "duration": 5.84,
+      "text": "want group the records with the same informant together and then just weigh that as heavily as"
+    },
+    {
+      "start": 1633.51,
+      "duration": 2.479,
+      "text": "the strongest evidence in that group."
+    },
+    {
+      "start": 1638.39,
+      "duration": 4.92,
+      "text": "Another thing that we wanna look at when we're working on our ancestral research and trying to"
+    },
+    {
+      "start": 1643.31,
+      "duration": 6.259,
+      "text": "correlate and determine what's accurate and what's going on is background information."
+    },
+    {
+      "start": 1650.06,
+      "duration": 6.48,
+      "text": "There are things like historical context, customs and laws that impacted the the reasons"
+    },
+    {
+      "start": 1656.54,
+      "duration": 1.399,
+      "text": "the records were created."
+    },
+    {
+      "start": 1658.39,
+      "duration": 5.729,
+      "text": "And I recently heard someone say that you can't make sense of the text unless you know the"
+    },
+    {
+      "start": 1664.119,
+      "duration": 5.6,
+      "text": "context and that is really true when you are studying genealogy you need to know what was"
+    },
+    {
+      "start": 1669.719,
+      "duration": 5.88,
+      "text": "going on in the area understand why the records were created and then that can help you to make"
+    },
+    {
+      "start": 1675.599,
+      "duration": 1.24,
+      "text": "conclusions as well."
+    },
+    {
+      "start": 1678.66,
+      "duration": 3.97,
+      "text": "So the 1910 census instructions is a good example of this."
+    },
+    {
+      "start": 1682.709,
+      "duration": 4.91,
+      "text": "So remember we had Eldon, who was missing in 1910 on that census,"
+    },
+    {
+      "start": 1687.91,
+      "duration": 2.189,
+      "text": "and here are what the instructions said."
+    },
+    {
+      "start": 1690.43,
+      "duration": 3.439,
+      "text": "They said that the enumerator was supposed to visit every home personally."
+    },
+    {
+      "start": 1694.52,
+      "duration": 4.64,
+      "text": "Talk with a family member over the age of 21 and if the residents are absent,"
+    },
+    {
+      "start": 1699.479,
+      "duration": 5.96,
+      "text": "obtain the facts from their families, relatives, acquaintances, or other persons and then as"
+    },
+    {
+      "start": 1705.439,
+      "duration": 4.191,
+      "text": "they were making subsequent copies they would go row by row not in columns,"
+    },
+    {
+      "start": 1709.88,
+      "duration": 4.074,
+      "text": "use a ruler to keep the. Take place and take great pains to see that the"
+    },
+    {
+      "start": 1713.954,
+      "duration": 5.27,
+      "text": "ruler is not displaced so that reminds me I need to tell you about census records."
+    },
+    {
+      "start": 1719.594,
+      "duration": 4.841,
+      "text": "So census records are considered original records, but the enumerator went out and"
+    },
+    {
+      "start": 1724.435,
+      "duration": 3.519,
+      "text": "gathered the information went house to house and gathered the information,"
+    },
+    {
+      "start": 1728.265,
+      "duration": 5.03,
+      "text": "and then he was required, he or she was required to make two additional copies one to"
+    },
+    {
+      "start": 1733.295,
+      "duration": 2.98,
+      "text": "send to the state government, one to send to the federal government."
+    },
+    {
+      "start": 1736.579,
+      "duration": 5.181,
+      "text": "And so when making the copies they had specific instructions on how they were to do this to"
+    },
+    {
+      "start": 1741.76,
+      "duration": 6.76,
+      "text": "ensure that they would not be creating uh errors in the census so this"
+    },
+    {
+      "start": 1748.52,
+      "duration": 2.319,
+      "text": "could explain why we had that um."
+    },
+    {
+      "start": 1752.05,
+      "duration": 3.72,
+      "text": "Case where a lot of information was wrong about our ancestor,"
+    },
+    {
+      "start": 1755.849,
+      "duration": 4.311,
+      "text": "it says if the residents are absent basically obtain the facts from anyone,"
+    },
+    {
+      "start": 1760.969,
+      "duration": 3.15,
+      "text": "anyone who's available so it might have been anyone, you know,"
+    },
+    {
+      "start": 1764.17,
+      "duration": 4.72,
+      "text": "that didn't know them very well so understanding what the instructions were and"
+    },
+    {
+      "start": 1768.89,
+      "duration": 5.0,
+      "text": "other context about records is really helpful when we're trying to evaluate and analyze if"
+    },
+    {
+      "start": 1773.89,
+      "duration": 3.37,
+      "text": "things are accurate. Now if you're curious and you want to know"
+    },
+    {
+      "start": 1777.26,
+      "duration": 6.679,
+      "text": "where you can find census instructions you can just go to census.gov and it has links to the"
+    },
+    {
+      "start": 1783.939,
+      "duration": 5.441,
+      "text": "census instructions for every US census there so that's a fantastic resource for learning"
+    },
+    {
+      "start": 1789.38,
+      "duration": 4.25,
+      "text": "context. All right, now that you've looked at a whole"
+    },
+    {
+      "start": 1793.63,
+      "duration": 6.349,
+      "text": "bunch of different records for an ancestor, you are going to weigh the evidence determine which"
+    },
+    {
+      "start": 1799.979,
+      "duration": 6.571,
+      "text": "evidence items hold the most weight do you have more weighty items here and a couple of iffy"
+    },
+    {
+      "start": 1806.55,
+      "duration": 4.08,
+      "text": "items on the other side, and that's how you're going to draw your conclusions."
+    },
+    {
+      "start": 1812.39,
+      "duration": 2.549,
+      "text": "Let's do a little practice here."
+    },
+    {
+      "start": 1815.14,
+      "duration": 4.77,
+      "text": "We're just going to think about a research question who were Robert and Betty Hedrick's"
+    },
+    {
+      "start": 1819.91,
+      "duration": 4.52,
+      "text": "parents? So this is what we have on a census record."
+    },
+    {
+      "start": 1824.92,
+      "duration": 4.35,
+      "text": "This was the household of Moody Beck and Fern Beck, his wife,"
+    },
+    {
+      "start": 1829.68,
+      "duration": 6.639,
+      "text": "and I believe this was the 1930 census, and Moody and Fern lived in"
+    },
+    {
+      "start": 1836.319,
+      "duration": 4.111,
+      "text": "Ohio and there was some information on the census that was helpful here."
+    },
+    {
+      "start": 1840.64,
+      "duration": 4.439,
+      "text": "It said that Moody was 39 and his age at first marriage was 34."
+    },
+    {
+      "start": 1845.67,
+      "duration": 4.799,
+      "text": "Fern was 34 and her age at first marriage was 29, so both of them had their first marriage in"
+    },
+    {
+      "start": 1850.469,
+      "duration": 1.211,
+      "text": "1925."
+    },
+    {
+      "start": 1851.949,
+      "duration": 4.551,
+      "text": "I'm guessing that they probably were married to each other in their first marriage,"
+    },
+    {
+      "start": 1856.829,
+      "duration": 2.74,
+      "text": "and they have two daughters in the household, Martha and Donna,"
+    },
+    {
+      "start": 1859.829,
+      "duration": 4.431,
+      "text": "and Martha's almost 4 years old, which makes sense if the couple was married 5 years ago."
+    },
+    {
+      "start": 1864.63,
+      "duration": 2.689,
+      "text": "And Donna was 2 1/2."
+    },
+    {
+      "start": 1867.65,
+      "duration": 3.319,
+      "text": "Then there were these other two children in the household Robert and Betty,"
+    },
+    {
+      "start": 1871.05,
+      "duration": 1.909,
+      "text": "and they had the last name Hedrick."
+    },
+    {
+      "start": 1873.17,
+      "duration": 5.76,
+      "text": "Robert was 11. Betty was 10, and she, so they were born before"
+    },
+    {
+      "start": 1878.93,
+      "duration": 3.96,
+      "text": "this couple would have been married, but they were both listed as children of the head of"
+    },
+    {
+      "start": 1882.89,
+      "duration": 3.87,
+      "text": "household, and Moody was the head, so they're listed as Moody's children."
+    },
+    {
+      "start": 1887.88,
+      "duration": 1.689,
+      "text": "So let's think about this record."
+    },
+    {
+      "start": 1890.859,
+      "duration": 4.441,
+      "text": "So when was this record created? It was created if we're asking who were the"
+    },
+    {
+      "start": 1895.3,
+      "duration": 4.36,
+      "text": "children in this family, who were their parents, this was created several years after the"
+    },
+    {
+      "start": 1899.66,
+      "duration": 5.85,
+      "text": "children's birth, births, and with the census copies there is a possibility for errors on"
+    },
+    {
+      "start": 1905.51,
+      "duration": 6.069,
+      "text": "duplicate copies, although an entire different last name for two children seems like probably"
+    },
+    {
+      "start": 1911.579,
+      "duration": 1.441,
+      "text": "not an error that might have occurred."
+    },
+    {
+      "start": 1913.51,
+      "duration": 4.01,
+      "text": "Uh, we don't know who gave the information to the, the census taker,"
+    },
+    {
+      "start": 1917.689,
+      "duration": 5.92,
+      "text": "but we can always, we can always make a guess that might help us in our analysis so we can"
+    },
+    {
+      "start": 1923.609,
+      "duration": 5.5,
+      "text": "think it was probably Moody or his wife, um, but we don't know that for sure,"
+    },
+    {
+      "start": 1929.569,
+      "duration": 4.601,
+      "text": "but it does directly state that Robert and Betty are Moody's kids so it directly answers"
+    },
+    {
+      "start": 1934.17,
+      "duration": 3.549,
+      "text": "the research question who were Robert and Betty's children,"
+    },
+    {
+      "start": 1938.29,
+      "duration": 2.789,
+      "text": "but there is a conflict because they have a different last name."
+    },
+    {
+      "start": 1942.849,
+      "duration": 2.99,
+      "text": "So this is just a recap. They were married for 5 years."
+    },
+    {
+      "start": 1945.89,
+      "duration": 1.299,
+      "text": "It was their first marriage."
+    },
+    {
+      "start": 1947.489,
+      "duration": 3.681,
+      "text": "Robert and Betty were older than that would make sense with that,"
+    },
+    {
+      "start": 1951.18,
+      "duration": 5.59,
+      "text": "and both of them were the head of household. So let's just have you answer this question"
+    },
+    {
+      "start": 1956.77,
+      "duration": 5.429,
+      "text": "What might have been going on in this scenario? This is where you get to as a genealogist think"
+    },
+    {
+      "start": 1962.65,
+      "duration": 4.0,
+      "text": "what do I think is happening? And then you get to test that by trying to find"
+    },
+    {
+      "start": 1966.65,
+      "duration": 2.5,
+      "text": "more records. So we have choices."
+    },
+    {
+      "start": 1969.189,
+      "duration": 2.52,
+      "text": "The children were adopted by Moody and Fern."
+    },
+    {
+      "start": 1972.03,
+      "duration": 2.949,
+      "text": "The children were Moody's children from a previous marriage."
+    },
+    {
+      "start": 1975.31,
+      "duration": 3.059,
+      "text": "The children were Fern's children from a previous marriage,"
+    },
+    {
+      "start": 1978.469,
+      "duration": 2.87,
+      "text": "and this was not Fern's first marriage."
+    },
+    {
+      "start": 1987.619,
+      "duration": 2.291,
+      "text": "OK, so."
+    },
+    {
+      "start": 1990.469,
+      "duration": 1.38,
+      "text": "Let's think about this."
+    },
+    {
+      "start": 1992.069,
+      "duration": 3.811,
+      "text": "I think that you are all thinking very correctly, uh,"
+    },
+    {
+      "start": 1995.949,
+      "duration": 4.591,
+      "text": "either the children were adopted by Moody and Fern or probably they were,"
+    },
+    {
+      "start": 2000.869,
+      "duration": 2.151,
+      "text": "uh, Fern's children from her first marriage."
+    },
+    {
+      "start": 2003.27,
+      "duration": 2.91,
+      "text": "A few of you thought they might be Moody's children from a previous marriage,"
+    },
+    {
+      "start": 2006.229,
+      "duration": 1.71,
+      "text": "and that could very well be the case."
+    },
+    {
+      "start": 2008.15,
+      "duration": 3.919,
+      "text": "They do have a different surname, and so that makes me question whether or not that might be"
+    },
+    {
+      "start": 2012.069,
+      "duration": 5.4,
+      "text": "the case, but let's go ahead and see what other records we can find that will help us answer"
+    },
+    {
+      "start": 2017.469,
+      "duration": 4.13,
+      "text": "this question. So the first thing I did was look for a"
+    },
+    {
+      "start": 2021.599,
+      "duration": 4.551,
+      "text": "marriage record for Moody and Fern, and I was able to find that."
+    },
+    {
+      "start": 2026.439,
+      "duration": 2.991,
+      "text": "It does state that they were married in Richland County,"
+    },
+    {
+      "start": 2029.489,
+      "duration": 2.1,
+      "text": "Ohio in 1924."
+    },
+    {
+      "start": 2031.88,
+      "duration": 3.359,
+      "text": "So the fact that the couple had been married for about 5 years was accurate."
+    },
+    {
+      "start": 2037.64,
+      "duration": 2.719,
+      "text": "So, 23rd of September 1924."
+    },
+    {
+      "start": 2041.199,
+      "duration": 5.931,
+      "text": "But lower down on the side that talked about Fern there was an interesting notation uh up at"
+    },
+    {
+      "start": 2047.13,
+      "duration": 5.999,
+      "text": "the top it gives her maiden name of Shepherd, and it says she was once previously married and"
+    },
+    {
+      "start": 2053.129,
+      "duration": 4.391,
+      "text": "is a divorced woman, her married name being Mrs. Fern Hedrick."
+    },
+    {
+      "start": 2058.02,
+      "duration": 3.8,
+      "text": "So now I think OK those were her children from another marriage,"
+    },
+    {
+      "start": 2062.03,
+      "duration": 4.07,
+      "text": "but why would it have said she her first marriage happened only 5 years ago?"
+    },
+    {
+      "start": 2066.429,
+      "duration": 4.111,
+      "text": "Well, in that time if we think about the historical and social context,"
+    },
+    {
+      "start": 2070.75,
+      "duration": 4.76,
+      "text": "divorce was frowned upon and so maybe they didn't want people around them to know that she"
+    },
+    {
+      "start": 2075.51,
+      "duration": 5.439,
+      "text": "was a divorced woman and so they just said that they were first married in uh the date of their"
+    },
+    {
+      "start": 2080.949,
+      "duration": 2.321,
+      "text": "first marriage was 5 years ago so."
+    },
+    {
+      "start": 2083.82,
+      "duration": 4.01,
+      "text": "You have to think about these things and the reasons why the information might have been"
+    },
+    {
+      "start": 2087.83,
+      "duration": 2.2,
+      "text": "falsified on documents."
+    },
+    {
+      "start": 2091.529,
+      "duration": 6.159,
+      "text": "Then I went ahead and looked at the 1920 census and I was able to find Fern and the son Robert"
+    },
+    {
+      "start": 2097.688,
+      "duration": 4.92,
+      "text": "living with a man named Paul Hedrick in 1920 and I could have kept going and found other"
+    },
+    {
+      "start": 2102.608,
+      "duration": 5.241,
+      "text": "documents but I think it's pretty clear that their their parents were Fern and Paul Hedrick,"
+    },
+    {
+      "start": 2107.928,
+      "duration": 1.29,
+      "text": "not Moody Beck."
+    },
+    {
+      "start": 2111.31,
+      "duration": 1.98,
+      "text": "All right, let's do another little exercise."
+    },
+    {
+      "start": 2113.5,
+      "duration": 4.629,
+      "text": "This one is when and where was Millard Roberts born, and I don't know if any of you have ever"
+    },
+    {
+      "start": 2118.129,
+      "duration": 2.961,
+      "text": "encountered this, but I would be really surprised if you have not."
+    },
+    {
+      "start": 2121.54,
+      "duration": 4.439,
+      "text": "Census records, ages on census records vary all the time."
+    },
+    {
+      "start": 2126.469,
+      "duration": 4.051,
+      "text": "They're different and sometimes you wanna know what's most accurate."
+    },
+    {
+      "start": 2130.55,
+      "duration": 1.03,
+      "text": "So let's look at this."
+    },
+    {
+      "start": 2131.87,
+      "duration": 2.789,
+      "text": "Uh, we have one other record besides the census record."
+    },
+    {
+      "start": 2134.699,
+      "duration": 3.601,
+      "text": "It was in 1929 and there was an obituary for Millard."
+    },
+    {
+      "start": 2138.59,
+      "duration": 4.96,
+      "text": "It stated that he was born in 18, well he was 61, so you could calculate that he was born in"
+    },
+    {
+      "start": 2143.55,
+      "duration": 1.429,
+      "text": "1868."
+    },
+    {
+      "start": 2145.59,
+      "duration": 1.72,
+      "text": "Then moving backward in time."
+    },
+    {
+      "start": 2147.699,
+      "duration": 6.591,
+      "text": "In 1920 he had his own household and he was born in 1869 in Missouri,"
+    },
+    {
+      "start": 2154.399,
+      "duration": 4.381,
+      "text": "it said, so at one year difference that doesn't usually bother us too much."
+    },
+    {
+      "start": 2159.439,
+      "duration": 4.79,
+      "text": "Then when we go to the 1910 census, it says he was born in 1866 in Missouri,"
+    },
+    {
+      "start": 2164.399,
+      "duration": 3.151,
+      "text": "so that's three years different than the previous census."
+    },
+    {
+      "start": 2169.739,
+      "duration": 5.551,
+      "text": "We go backward in time to 1880 and that one says he was born in 1866,"
+    },
+    {
+      "start": 2175.739,
+      "duration": 2.091,
+      "text": "not in Missouri but in Illinois."
+    },
+    {
+      "start": 2179.159,
+      "duration": 6.371,
+      "text": "And in 1870, he was 4 years old, living in the household of his parents and this one says he"
+    },
+    {
+      "start": 2185.53,
+      "duration": 2.929,
+      "text": "was born in 1866 in Illinois."
+    },
+    {
+      "start": 2189.889,
+      "duration": 4.141,
+      "text": "So let's think about this. These documents were created at various times"
+    },
+    {
+      "start": 2194.03,
+      "duration": 5.32,
+      "text": "after the event and there is some possibility for error on duplicate copies."
+    },
+    {
+      "start": 2199.719,
+      "duration": 4.641,
+      "text": "We don't know who provided the information, but we can presume that the information for each"
+    },
+    {
+      "start": 2204.36,
+      "duration": 5.599,
+      "text": "census might have been provided by the head of household or the the husband or wife in the"
+    },
+    {
+      "start": 2209.959,
+      "duration": 1.96,
+      "text": "household and."
+    },
+    {
+      "start": 2212.26,
+      "duration": 3.869,
+      "text": "It does give all of these senses do give a direct answer to the research question when was"
+    },
+    {
+      "start": 2216.129,
+      "duration": 5.0,
+      "text": "he born, and that makes me want to stop and tell you just because I have to calculate the"
+    },
+    {
+      "start": 2221.129,
+      "duration": 2.51,
+      "text": "date, it doesn't mean that it's not a direct answer."
+    },
+    {
+      "start": 2223.81,
+      "duration": 4.0,
+      "text": "I don't have to combine that with any other record to know the answer to the question when"
+    },
+    {
+      "start": 2227.81,
+      "duration": 4.339,
+      "text": "was he born? It tells me directly his age and I can just do"
+    },
+    {
+      "start": 2232.149,
+      "duration": 5.82,
+      "text": "a little math, so that's direct answer on that and the birth years differ from census to"
+    },
+    {
+      "start": 2237.969,
+      "duration": 2.52,
+      "text": "census. So let's do another question."
+    },
+    {
+      "start": 2241.889,
+      "duration": 2.631,
+      "text": "What year was Millard Roberts Most Likely Born?"
+    },
+    {
+      "start": 2246.649,
+      "duration": 3.101,
+      "text": "Well, now we have to go back over here."
+    },
+    {
+      "start": 2249.959,
+      "duration": 1.95,
+      "text": "I don't know why this is so finicky sometimes."
+    },
+    {
+      "start": 2252.199,
+      "duration": 4.48,
+      "text": "Let me start this again. OK."
+    },
+    {
+      "start": 2257.78,
+      "duration": 6.56,
+      "text": "So, many of you think 1866 and some of you think 1868 to 1969."
+    },
+    {
+      "start": 2265.05,
+      "duration": 5.369,
+      "text": "So let's now, we'll talk about this in a second, but let's also ask ourselves"
+    },
+    {
+      "start": 2271.51,
+      "duration": 5.02,
+      "text": "what. OK, sorry, we'll just get our mouse."
+    },
+    {
+      "start": 2276.61,
+      "duration": 2.319,
+      "text": "I should probably leave my mouse really close to this button."
+    },
+    {
+      "start": 2280.909,
+      "duration": 3.99,
+      "text": "Where was Millard Roberts most likely born? Was he born in Missouri or Illinois?"
+    },
+    {
+      "start": 2285.129,
+      "duration": 4.981,
+      "text": "So a lot of you think, I would say the majority think he was born in 1866 in Illinois."
+    },
+    {
+      "start": 2290.449,
+      "duration": 6.851,
+      "text": "And I would agree with that because the census when he was just 4 years old was probably"
+    },
+    {
+      "start": 2297.3,
+      "duration": 4.649,
+      "text": "the information was probably provided by the parents and if he would have been later he"
+    },
+    {
+      "start": 2301.949,
+      "duration": 4.76,
+      "text": "would have only been like 1 year old and it's kind of hard to mistake a 1 year old for a 4"
+    },
+    {
+      "start": 2306.709,
+      "duration": 5.661,
+      "text": "year old so I think the difference when you're that young is pretty big so he was most likely"
+    },
+    {
+      "start": 2312.37,
+      "duration": 2.849,
+      "text": "born in that earlier year in Illinois."
+    },
+    {
+      "start": 2316.06,
+      "duration": 1.21,
+      "text": "So good job everybody."
+    },
+    {
+      "start": 2318.989,
+      "duration": 4.72,
+      "text": "Alright, now the next thing we're going to do is you guys get to choose what we're gonna do"
+    },
+    {
+      "start": 2323.709,
+      "duration": 2.641,
+      "text": "next. We have two research questions and I want to"
+    },
+    {
+      "start": 2326.35,
+      "duration": 5.319,
+      "text": "illustrate these principles all correlated together in a little case study so it's story"
+    },
+    {
+      "start": 2331.669,
+      "duration": 6.441,
+      "text": "time, but you guys get to choose your story for this rest of the of the presentation."
+    },
+    {
+      "start": 2338.52,
+      "duration": 5.75,
+      "text": "So the first option is we are going to try and figure out who were Jacob Fisher's parents,"
+    },
+    {
+      "start": 2344.639,
+      "duration": 5.641,
+      "text": "and we are going to be testing the reliability of information on online trees so online trees"
+    },
+    {
+      "start": 2350.28,
+      "duration": 4.669,
+      "text": "tell us who his parents are we want to know if that information is reliable."
+    },
+    {
+      "start": 2357.05,
+      "duration": 6.359,
+      "text": "Our next question is has to do with separating fact from fiction in authored narratives so"
+    },
+    {
+      "start": 2363.409,
+      "duration": 4.72,
+      "text": "we're gonna be talking about a man named John Norman who lived in New York in the time of the"
+    },
+    {
+      "start": 2368.129,
+      "duration": 6.28,
+      "text": "Revolutionary War, and there are a lot of things written about him in books and different"
+    },
+    {
+      "start": 2374.409,
+      "duration": 4.161,
+      "text": "articles and a couple of newspaper articles that I found about him."
+    },
+    {
+      "start": 2378.889,
+      "duration": 6.361,
+      "text": "And we want to know if those accounts are accurate so you guys get a vote and if it's a"
+    },
+    {
+      "start": 2385.25,
+      "duration": 4.07,
+      "text": "tie, I get to choose. So we'll just make sure we have time for oh"
+    },
+    {
+      "start": 2389.32,
+      "duration": 2.389,
+      "text": "look at that it's 50/50."
+    },
+    {
+      "start": 2392.32,
+      "duration": 2.649,
+      "text": "0, it's a race. OK, I'm just gonna give just one more minute"
+    },
+    {
+      "start": 2394.969,
+      "duration": 2.111,
+      "text": "just to make sure everyone's been able to vote."
+    },
+    {
+      "start": 2400.78,
+      "duration": 2.03,
+      "text": "All right, this is so fun."
+    },
+    {
+      "start": 2403.1,
+      "duration": 1.99,
+      "text": "OK, I'm just gonna go with that."
+    },
+    {
+      "start": 2405.3,
+      "duration": 5.169,
+      "text": "It looks like we want to know who Jacob Fisher's parents were and look at the accuracy"
+    },
+    {
+      "start": 2410.469,
+      "duration": 3.341,
+      "text": "of online trees. That one's gaining every minute."
+    },
+    {
+      "start": 2414.139,
+      "duration": 1.33,
+      "text": "So now I need to."
+    },
+    {
+      "start": 2416.489,
+      "duration": 3.74,
+      "text": "OK, just give me one second. I gotta go make sure I get the right slides for"
+    },
+    {
+      "start": 2420.229,
+      "duration": 2.2,
+      "text": "this story. I gotta get the right book out here."
+    },
+    {
+      "start": 2423.889,
+      "duration": 5.1,
+      "text": "OK. So who were Jacob Fisher's parents?"
+    },
+    {
+      "start": 2430.52,
+      "duration": 3.389,
+      "text": "All right, so this is an ancestor I studied quite a few years ago,"
+    },
+    {
+      "start": 2434.159,
+      "duration": 3.03,
+      "text": "and when I first started studying him, I looked at ancestry,"
+    },
+    {
+      "start": 2437.199,
+      "duration": 5.661,
+      "text": "and there were a lot of ancestry trees who said that his parents were Captain Christian Fisher"
+    },
+    {
+      "start": 2442.86,
+      "duration": 3.809,
+      "text": "and Maria Magdalena Gebhardt, lots of trees, said this,"
+    },
+    {
+      "start": 2447.199,
+      "duration": 4.081,
+      "text": "and Jacob was buried in Westmoreland County in 1847."
+    },
+    {
+      "start": 2451.719,
+      "duration": 5.861,
+      "text": "And I just want to analyze whether this Christian Fischer and Maria Magdalena Gephardt"
+    },
+    {
+      "start": 2457.58,
+      "duration": 1.829,
+      "text": "were actually his parents."
+    },
+    {
+      "start": 2459.78,
+      "duration": 4.72,
+      "text": "So let's just first of all think about this online tree or all the online trees that we're"
+    },
+    {
+      "start": 2464.5,
+      "duration": 4.379,
+      "text": "looking at. So an online tree would be considered an"
+    },
+    {
+      "start": 2468.879,
+      "duration": 5.421,
+      "text": "authored narrative because someone has pulled together a lot of facts from a lot of different"
+    },
+    {
+      "start": 2474.3,
+      "duration": 4.07,
+      "text": "places and they have created a story about the ancestor."
+    },
+    {
+      "start": 2479.57,
+      "duration": 3.369,
+      "text": "Uh, we don't know who create sometimes we know who created the tree,"
+    },
+    {
+      "start": 2483.11,
+      "duration": 4.309,
+      "text": "but we don't know who provided all of the information and especially if the information"
+    },
+    {
+      "start": 2487.419,
+      "duration": 5.451,
+      "text": "is not backed up by historical records, we don't know who put that information on there or"
+    },
+    {
+      "start": 2492.87,
+      "duration": 5.4,
+      "text": "where they got the information from, but this record does provide a direct answer to the"
+    },
+    {
+      "start": 2498.27,
+      "duration": 3.23,
+      "text": "research question. So is this information reliable?"
+    },
+    {
+      "start": 2501.909,
+      "duration": 4.51,
+      "text": "Well, we need to consider a few things before we automatically assume that this tree is"
+    },
+    {
+      "start": 2506.419,
+      "duration": 3.01,
+      "text": "trustworthy. First, we need to try to confirm the"
+    },
+    {
+      "start": 2509.429,
+      "duration": 2.48,
+      "text": "information with original documents."
+    },
+    {
+      "start": 2513.04,
+      "duration": 5.28,
+      "text": "So the first thing that I thought would be really helpful is if I could find a will for a"
+    },
+    {
+      "start": 2518.32,
+      "duration": 6.829,
+      "text": "Christian Fisher that um had a son named Jacob and so I did find a will for Christian Fisher."
+    },
+    {
+      "start": 2525.199,
+      "duration": 5.581,
+      "text": "He lived in a place called Upper Milford in Northampton County in Pennsylvania."
+    },
+    {
+      "start": 2531.12,
+      "duration": 3.779,
+      "text": "This county later became Lehigh County. They were right next to each other."
+    },
+    {
+      "start": 2535.25,
+      "duration": 4.379,
+      "text": "um, Christian named his wife Maria and several children in his will,"
+    },
+    {
+      "start": 2539.77,
+      "duration": 1.869,
+      "text": "and he did have a son named Jacob."
+    },
+    {
+      "start": 2542.229,
+      "duration": 3.291,
+      "text": "So that's great evidence that Christian had a son named Jacob,"
+    },
+    {
+      "start": 2545.669,
+      "duration": 5.27,
+      "text": "but does that solidify the fact that our Jacob belongs to this man?"
+    },
+    {
+      "start": 2552.189,
+      "duration": 1.79,
+      "text": "I think we need to find some more records."
+    },
+    {
+      "start": 2555.229,
+      "duration": 4.131,
+      "text": "But let's analyze this source first. So this was an original source."
+    },
+    {
+      "start": 2559.659,
+      "duration": 4.51,
+      "text": "uh, Will was usually dictated by the person writing the will or he wrote it himself one way"
+    },
+    {
+      "start": 2564.169,
+      "duration": 4.04,
+      "text": "or the other. Uh, it was often copied into a will book at the"
+    },
+    {
+      "start": 2568.209,
+      "duration": 6.0,
+      "text": "county, but if you have a copy that would, you know, duplicate copies like that are considered"
+    },
+    {
+      "start": 2574.209,
+      "duration": 2.571,
+      "text": "original sources still, even though we have to keep in mind,"
+    },
+    {
+      "start": 2576.81,
+      "duration": 2.24,
+      "text": "somebody might have gotten some of the details a little bit wrong."
+    },
+    {
+      "start": 2579.52,
+      "duration": 2.26,
+      "text": "But the information was provided by an eyewitness."
+    },
+    {
+      "start": 2581.889,
+      "duration": 4.921,
+      "text": "He knew who his children were, so he's the one that was telling who his children were,"
+    },
+    {
+      "start": 2587.139,
+      "duration": 3.28,
+      "text": "and it does give us direct evidence for this relationship."
+    },
+    {
+      "start": 2591.86,
+      "duration": 4.97,
+      "text": "But even when we have an original document with an eyewitness and direct evidence,"
+    },
+    {
+      "start": 2596.909,
+      "duration": 1.27,
+      "text": "we have to dig deeper."
+    },
+    {
+      "start": 2599.479,
+      "duration": 5.51,
+      "text": "So one of the things that I wanted to explore is the fact that Jacob Fisher lived clear over"
+    },
+    {
+      "start": 2604.989,
+      "duration": 2.631,
+      "text": "in Westmoreland County on the western side of the state,"
+    },
+    {
+      "start": 2607.879,
+      "duration": 4.51,
+      "text": "and Christian Fisher lived clear over on the eastern side of the state and this was not"
+    },
+    {
+      "start": 2612.389,
+      "duration": 2.961,
+      "text": "uncommon in that day. A lot of people who lived in eastern"
+    },
+    {
+      "start": 2615.35,
+      "duration": 4.51,
+      "text": "Pennsylvania migrated west into counties in the western part of Pennsylvania,"
+    },
+    {
+      "start": 2620.189,
+      "duration": 3.27,
+      "text": "but making this big of a leap to connect a father and son,"
+    },
+    {
+      "start": 2623.629,
+      "duration": 4.231,
+      "text": "you shouldn't do it without more evidence to help connect the people together."
+    },
+    {
+      "start": 2628.699,
+      "duration": 1.68,
+      "text": "So let's start with what we knew."
+    },
+    {
+      "start": 2630.86,
+      "duration": 6.16,
+      "text": "Uh, we had the headstone for Jacob Fisher. He was buried in Brush Creek Cemetery in Irwin,"
+    },
+    {
+      "start": 2637.139,
+      "duration": 5.361,
+      "text": "Westmoreland County, Pennsylvania, and his death date and age of death are described are"
+    },
+    {
+      "start": 2642.5,
+      "duration": 5.239,
+      "text": "inscribed on the tombstone and using his age at death, I was able to calculate when he would"
+    },
+    {
+      "start": 2647.739,
+      "duration": 4.44,
+      "text": "have been born, and that's the 20th of April 1761."
+    },
+    {
+      "start": 2653.129,
+      "duration": 5.05,
+      "text": "So let's think about this source. This was an old decaying stone of material that"
+    },
+    {
+      "start": 2658.179,
+      "duration": 3.871,
+      "text": "indicates it was likely placed fairly soon after the time of death."
+    },
+    {
+      "start": 2662.3,
+      "duration": 4.31,
+      "text": "I'm gonna consider this an original source we don't know who provided the information for"
+    },
+    {
+      "start": 2666.61,
+      "duration": 5.049,
+      "text": "this, um, but it does give us direct evidence of his birth and death dates."
+    },
+    {
+      "start": 2674.29,
+      "duration": 5.699,
+      "text": "Another piece of evidence that I had was a baptism record for three of Jacob's children,"
+    },
+    {
+      "start": 2680.32,
+      "duration": 5.55,
+      "text": "and they were baptized in Westmoreland County on the 3rd of January 1808."
+    },
+    {
+      "start": 2686.11,
+      "duration": 3.65,
+      "text": "Again, this was a German church record, Pennsylvania German church record that had been"
+    },
+    {
+      "start": 2689.76,
+      "duration": 5.719,
+      "text": "copied and translated and transcribed into a book, but it shows that these children were"
+    },
+    {
+      "start": 2695.479,
+      "duration": 5.91,
+      "text": "born. It was John and uh or Johannes or John Hannah"
+    },
+    {
+      "start": 2701.389,
+      "duration": 1.85,
+      "text": "and Katerina or Catherine."
+    },
+    {
+      "start": 2703.56,
+      "duration": 6.909,
+      "text": "And they were born between 1799 and 1808, and they were all baptized or I guess"
+    },
+    {
+      "start": 2710.469,
+      "duration": 3.351,
+      "text": "the last date was 1804, but they were all baptized in 1808."
+    },
+    {
+      "start": 2714.07,
+      "duration": 4.0,
+      "text": "Usually Pennsylvania German children were baptized uh two or three days after they were"
+    },
+    {
+      "start": 2718.07,
+      "duration": 4.034,
+      "text": "born, so the fact that they were. Baptized a few days later that historical and"
+    },
+    {
+      "start": 2722.104,
+      "duration": 5.571,
+      "text": "social context made me think, OK, maybe the family was migrating during these years maybe"
+    },
+    {
+      "start": 2727.675,
+      "duration": 3.95,
+      "text": "they were on the move and they didn't really have a church that they went to so that was a"
+    },
+    {
+      "start": 2731.625,
+      "duration": 4.169,
+      "text": "little bit of indirect evidence that I had that I wanted to keep in mind."
+    },
+    {
+      "start": 2737.229,
+      "duration": 4.561,
+      "text": "So this is a derivative source and I looked for the originals because I always like to find the"
+    },
+    {
+      "start": 2741.79,
+      "duration": 7.0,
+      "text": "originals if I can but they are not no longer available um the the people who provided"
+    },
+    {
+      "start": 2748.79,
+      "duration": 5.76,
+      "text": "the information were the parents and the minister again eyewitnesses to these events and"
+    },
+    {
+      "start": 2754.55,
+      "duration": 4.649,
+      "text": "it does give us direct evidence of the birth and baptism dates and like I said indirect"
+    },
+    {
+      "start": 2759.199,
+      "duration": 3.061,
+      "text": "evidence that maybe the family was migrating at this time."
+    },
+    {
+      "start": 2764.05,
+      "duration": 4.03,
+      "text": "So I needed to go a little bit farther and see if I could find more information that would"
+    },
+    {
+      "start": 2768.08,
+      "duration": 6.839,
+      "text": "help connect Jacob to Christian in Pennsylvania so I looked for a will for"
+    },
+    {
+      "start": 2774.919,
+      "duration": 1.191,
+      "text": "my Jacob Fisher."
+    },
+    {
+      "start": 2776.479,
+      "duration": 4.301,
+      "text": "I just wanted to see if you had any more kids, if I could learn more about the family in some"
+    },
+    {
+      "start": 2780.78,
+      "duration": 3.0,
+      "text": "way. And I did find a will for a Jacob Fisher,"
+    },
+    {
+      "start": 2783.86,
+      "duration": 3.839,
+      "text": "but this will took place. It was proved or presented to the court to say"
+    },
+    {
+      "start": 2787.699,
+      "duration": 3.591,
+      "text": "that the person had died and their estate needed to be taken care of."
+    },
+    {
+      "start": 2791.659,
+      "duration": 4.47,
+      "text": "It was proved in 1846, which is a full year before our Jacob Fisher died."
+    },
+    {
+      "start": 2796.54,
+      "duration": 5.96,
+      "text": "There could be an inscription error on the headstone or maybe this is a different Jacob,"
+    },
+    {
+      "start": 2802.659,
+      "duration": 4.711,
+      "text": "so I needed to look into what this will said so that I can figure out what's going on."
+    },
+    {
+      "start": 2808.939,
+      "duration": 2.821,
+      "text": "There were a number of people named in this Jacob's will,"
+    },
+    {
+      "start": 2811.899,
+      "duration": 1.83,
+      "text": "and I recognized a few of them."
+    },
+    {
+      "start": 2814.06,
+      "duration": 4.829,
+      "text": "There was, uh, Jacob and Elizabeth Fisher. Those were the parents on that baptism record,"
+    },
+    {
+      "start": 2819.139,
+      "duration": 4.79,
+      "text": "and there were 3 kids or 3 people. One was a brother named John Fisher,"
+    },
+    {
+      "start": 2823.939,
+      "duration": 5.04,
+      "text": "and then I had a Hannah and a Catherine as well, and I recognized those names from the baptism"
+    },
+    {
+      "start": 2828.979,
+      "duration": 1.16,
+      "text": "records, so I'm wondering."
+    },
+    {
+      "start": 2830.629,
+      "duration": 5.441,
+      "text": "If this might be a family, um, perhaps Jacob was Jacob Junior,"
+    },
+    {
+      "start": 2836.08,
+      "duration": 4.71,
+      "text": "the one that wrote the will, um, so I studied each member of this family and a lot of"
+    },
+    {
+      "start": 2840.79,
+      "duration": 5.08,
+      "text": "different records, and I was able to piece together who everyone was so this Jacob left"
+    },
+    {
+      "start": 2845.87,
+      "duration": 2.68,
+      "text": "his farm to a John L. Miller, which I thought was weird."
+    },
+    {
+      "start": 2848.59,
+      "duration": 2.399,
+      "text": "It wasn't a family member, but as I studied John L."
+    },
+    {
+      "start": 2851.02,
+      "duration": 3.5,
+      "text": "Miller, I realized that he was married to you and Elizabeth Fisher,"
+    },
+    {
+      "start": 2854.59,
+      "duration": 1.75,
+      "text": "who turned out to be Jacob's sister."
+    },
+    {
+      "start": 2857.189,
+      "duration": 4.3,
+      "text": "Uh, this Jacob also married a woman named Elizabeth, so this is confusing because there's"
+    },
+    {
+      "start": 2861.489,
+      "duration": 4.44,
+      "text": "two couples named Jacob and Elizabeth Fisher, but the father was named in the will."
+    },
+    {
+      "start": 2866.05,
+      "duration": 4.27,
+      "text": "He was Jacob, the mother was Elizabeth, and then we had uh several siblings,"
+    },
+    {
+      "start": 2870.489,
+      "duration": 6.591,
+      "text": "uh, Sarah Shots, John Fisher, Hannah Peck, the, the Will said P E C K,"
+    },
+    {
+      "start": 2877.449,
+      "duration": 3.391,
+      "text": "but she was married to a man named Daniel Beck, and I,"
+    },
+    {
+      "start": 2881.209,
+      "duration": 4.68,
+      "text": "the Beck family is who I was studying, so I presumed that that was an error in copying the"
+    },
+    {
+      "start": 2885.889,
+      "duration": 3.461,
+      "text": "will. And then a sister named Katherine Ferry or"
+    },
+    {
+      "start": 2889.35,
+      "duration": 2.96,
+      "text": "Furry. She was married to Leonard and another sister"
+    },
+    {
+      "start": 2892.31,
+      "duration": 4.04,
+      "text": "named Susanna Cruc, also a possible mother-in-law, nephew,"
+    },
+    {
+      "start": 2896.469,
+      "duration": 3.121,
+      "text": "and a neighbor. So by studying more records, I was able to"
+    },
+    {
+      "start": 2899.59,
+      "duration": 3.47,
+      "text": "piece together who these family members might be."
+    },
+    {
+      "start": 2904.34,
+      "duration": 5.18,
+      "text": "So this was an original source and information provided by eyewitnesses he knew his family"
+    },
+    {
+      "start": 2909.52,
+      "duration": 5.04,
+      "text": "members um he was able to provide information about them and it gives us direct evidence for"
+    },
+    {
+      "start": 2914.56,
+      "duration": 5.52,
+      "text": "some of the relationships some relationships were stated and indirect evidence for other"
+    },
+    {
+      "start": 2920.08,
+      "duration": 4.909,
+      "text": "relationships. So this was a really good record and it led me"
+    },
+    {
+      "start": 2924.989,
+      "duration": 5.41,
+      "text": "to my study led me to baptism records for all of the other children named in this will."
+    },
+    {
+      "start": 2930.79,
+      "duration": 5.28,
+      "text": "And they were again in books like this that transcribed and translated baptism records for"
+    },
+    {
+      "start": 2936.07,
+      "duration": 6.51,
+      "text": "Pennsylvania Germans and these children were all born in Northampton County in a place"
+    },
+    {
+      "start": 2942.58,
+      "duration": 3.28,
+      "text": "called Whitehall so this was really interesting to me."
+    },
+    {
+      "start": 2945.899,
+      "duration": 6.04,
+      "text": "I thought, OK, I have seen that R Jacob did come from that eastern county and moved to"
+    },
+    {
+      "start": 2951.939,
+      "duration": 1.151,
+      "text": "Westmoreland County."
+    },
+    {
+      "start": 2955.08,
+      "duration": 3.299,
+      "text": "So this is just a summary of what I found in the baptism records."
+    },
+    {
+      "start": 2958.389,
+      "duration": 3.32,
+      "text": "There were 5 children. The oldest, Magdalene,"
+    },
+    {
+      "start": 2961.899,
+      "duration": 3.401,
+      "text": "uh, passed away young, but we had Susanna, Jacob, Elizabeth,"
+    },
+    {
+      "start": 2965.34,
+      "duration": 3.28,
+      "text": "and Sarah. So Jacob, the son of Jacob and Elizabeth,"
+    },
+    {
+      "start": 2968.659,
+      "duration": 1.681,
+      "text": "was the person who wrote this will."
+    },
+    {
+      "start": 2971.75,
+      "duration": 3.84,
+      "text": "So let's think about these sources. They are derivative sources,"
+    },
+    {
+      "start": 2975.6,
+      "duration": 4.309,
+      "text": "transcriptions, but the information was again provided by eyewitnesses,"
+    },
+    {
+      "start": 2980.239,
+      "duration": 4.19,
+      "text": "and this provided direct evidence for the family's residents in Whitehall,"
+    },
+    {
+      "start": 2984.6,
+      "duration": 2.589,
+      "text": "Northampton County in Pennsylvania."
+    },
+    {
+      "start": 2988.01,
+      "duration": 4.969,
+      "text": "So at this point we might think we have maybe solidified the fact that this was our Jacob,"
+    },
+    {
+      "start": 2993.06,
+      "duration": 4.76,
+      "text": "but guess what? In Pennsylvania, in Pennsylvania Germans there"
+    },
+    {
+      "start": 2997.82,
+      "duration": 2.03,
+      "text": "are so many people with the same name."
+    },
+    {
+      "start": 3000.179,
+      "duration": 6.28,
+      "text": "So what we need to do is identify if there are any other candidates for this Jacob Fisher."
+    },
+    {
+      "start": 3007.969,
+      "duration": 6.19,
+      "text": "So I looked at the 1790 census and there were two Jacob Fishers in Northampton County in"
+    },
+    {
+      "start": 3014.409,
+      "duration": 4.56,
+      "text": "1790. 1 lived in Upper Milford where Christian Fisher"
+    },
+    {
+      "start": 3018.969,
+      "duration": 3.641,
+      "text": "lived. One lived in Whitehall, which I'm presuming was"
+    },
+    {
+      "start": 3022.61,
+      "duration": 4.349,
+      "text": "my Jacob Fisher because that's where all of his children were born about that time."
+    },
+    {
+      "start": 3027.57,
+      "duration": 5.629,
+      "text": "So I'm now starting to think maybe Christian Fisher is not the father for my Jacob Fisher."
+    },
+    {
+      "start": 3034.679,
+      "duration": 4.601,
+      "text": "So these, the censuses are original sources. We don't know who provided the information,"
+    },
+    {
+      "start": 3039.33,
+      "duration": 4.2,
+      "text": "but it does give us direct evidence for two Jacob Fishers in the area."
+    },
+    {
+      "start": 3044.87,
+      "duration": 5.079,
+      "text": "So I studied Jacob Fisher of Upper Milford a little bit further and I learned that he was"
+    },
+    {
+      "start": 3049.949,
+      "duration": 4.871,
+      "text": "getting married and having children and I think he had one of his wives died or maybe a couple"
+    },
+    {
+      "start": 3054.82,
+      "duration": 4.53,
+      "text": "of his wives died and he ended up uh marrying other women and having children."
+    },
+    {
+      "start": 3059.429,
+      "duration": 5.28,
+      "text": "He was having children in the Upper Milford area at the same time that our Jacob Fisher was"
+    },
+    {
+      "start": 3064.709,
+      "duration": 4.161,
+      "text": "having children in the Whitehall area. So these were two distinct people about the"
+    },
+    {
+      "start": 3068.87,
+      "duration": 6.14,
+      "text": "same age. So What do we think about this one?"
+    },
+    {
+      "start": 3075.129,
+      "duration": 4.981,
+      "text": "At this point I feel like it's pretty clear that the Jacob Fisher of Upper Milford is not"
+    },
+    {
+      "start": 3080.11,
+      "duration": 6.779,
+      "text": "our research subject, and the Jacob in um Whitehall Township is the correct"
+    },
+    {
+      "start": 3086.889,
+      "duration": 4.51,
+      "text": "person, but have we answered our research question who were Jacob Fisher's parents?"
+    },
+    {
+      "start": 3092.59,
+      "duration": 3.76,
+      "text": "No, we've only eliminated people, right? We haven't gotten any closer."
+    },
+    {
+      "start": 3096.469,
+      "duration": 2.871,
+      "text": "Well, we have gotten closer because we know a lot about Jacob,"
+    },
+    {
+      "start": 3099.709,
+      "duration": 4.96,
+      "text": "so I went to the church records for Whitehall Township and I was able to find a baptism"
+    },
+    {
+      "start": 3104.669,
+      "duration": 6.861,
+      "text": "record for Philip Jacob Fisher who was born on the 21st of May 1761 in Whitehall Township,"
+    },
+    {
+      "start": 3111.83,
+      "duration": 3.19,
+      "text": "and it named his parents Adam and Magdalena Fisher."
+    },
+    {
+      "start": 3115.229,
+      "duration": 3.801,
+      "text": "Now I don't know if you remember the date on the headstone that I showed at the very"
+    },
+    {
+      "start": 3119.03,
+      "duration": 3.51,
+      "text": "beginning. But his birth date as calculated from what was"
+    },
+    {
+      "start": 3122.54,
+      "duration": 3.879,
+      "text": "inscribed on the headstone was the 20th of May 1761."
+    },
+    {
+      "start": 3126.699,
+      "duration": 6.391,
+      "text": "So this correlates within one day of what was on the headstone and it's in the same place"
+    },
+    {
+      "start": 3133.09,
+      "duration": 3.569,
+      "text": "where his children were baptized at the beginning of his marriage."
+    },
+    {
+      "start": 3136.969,
+      "duration": 5.361,
+      "text": "Now you might wonder about this because it says his name was Philip Jacob Fisher so this is"
+    },
+    {
+      "start": 3142.33,
+      "duration": 4.809,
+      "text": "where I need to know more about the social context and what people did when they were"
+    },
+    {
+      "start": 3147.139,
+      "duration": 1.181,
+      "text": "naming their children."
+    },
+    {
+      "start": 3148.57,
+      "duration": 2.72,
+      "text": "Pennsylvania Germans had what was called uh."
+    },
+    {
+      "start": 3151.709,
+      "duration": 4.43,
+      "text": "A saint's name that they gave for the first name for their children and they would name"
+    },
+    {
+      "start": 3156.139,
+      "duration": 4.32,
+      "text": "their child after their favorite saint and actually if they had 5 sons and their favorite"
+    },
+    {
+      "start": 3160.459,
+      "duration": 4.48,
+      "text": "saint was Philip they would all be named Philip and then they would have a middle name that"
+    },
+    {
+      "start": 3164.939,
+      "duration": 4.561,
+      "text": "would distinguish them from one another and the middle name was known as their call name and"
+    },
+    {
+      "start": 3169.5,
+      "duration": 3.239,
+      "text": "that's the name that they were called throughout their life the saint's name was just"
+    },
+    {
+      "start": 3172.739,
+      "duration": 6.041,
+      "text": "a formality and even on official documents they were always listed with their call name."
+    },
+    {
+      "start": 3179.05,
+      "duration": 4.75,
+      "text": "So it would make sense that Jacob Fisher in Westmoreland County would not be going by"
+    },
+    {
+      "start": 3183.8,
+      "duration": 2.679,
+      "text": "Philip. He would be named Jacob."
+    },
+    {
+      "start": 3187.459,
+      "duration": 5.581,
+      "text": "So I felt pretty good about this conclusion that this was probably the correct record for"
+    },
+    {
+      "start": 3193.04,
+      "duration": 3.55,
+      "text": "my Jacob and that I had identified his parents, Adam and Magdalena."
+    },
+    {
+      "start": 3197.629,
+      "duration": 4.491,
+      "text": "So this was a derivative source, but there were eyewitnesses, and it did give us direct"
+    },
+    {
+      "start": 3202.12,
+      "duration": 2.269,
+      "text": "evidence for the names of Jacob's parents."
+    },
+    {
+      "start": 3205.149,
+      "duration": 6.03,
+      "text": "And when we look at all the evidence together we can see that his birthday matches we've"
+    },
+    {
+      "start": 3211.179,
+      "duration": 5.121,
+      "text": "traced the location we've traced him to this place in Whitehall Township where his children"
+    },
+    {
+      "start": 3216.3,
+      "duration": 6.56,
+      "text": "were born and he was born and we ruled out the other Jacob we determined that Christian had"
+    },
+    {
+      "start": 3222.86,
+      "duration": 3.15,
+      "text": "another son. Named Jacob and that they lived in a different"
+    },
+    {
+      "start": 3226.01,
+      "duration": 4.32,
+      "text": "township. So my conclusion after analyzing the records"
+    },
+    {
+      "start": 3230.33,
+      "duration": 4.68,
+      "text": "and correlating all of the evidence that I was able to pull out of those records was that"
+    },
+    {
+      "start": 3235.01,
+      "duration": 5.28,
+      "text": "Jacob Fisher was born in Whitehall, Northampton County, Pennsylvania to Adam and Magdalena"
+    },
+    {
+      "start": 3240.29,
+      "duration": 4.97,
+      "text": "Fisher. I hope that you can see that as you dive in and"
+    },
+    {
+      "start": 3245.26,
+      "duration": 3.659,
+      "text": "really take a look at the records including the social context,"
+    },
+    {
+      "start": 3249.3,
+      "duration": 5.659,
+      "text": "why the records were created, who provided the evidence, and what kind of evidence you're"
+    },
+    {
+      "start": 3254.959,
+      "duration": 4.581,
+      "text": "getting out of the record that you can gain more confidence in your research and come to"
+    },
+    {
+      "start": 3259.54,
+      "duration": 1.929,
+      "text": "credible. Conclusions."
+    },
+    {
+      "start": 3262.0,
+      "duration": 2.879,
+      "text": "So with that I just wanna thank you for being here."
+    },
+    {
+      "start": 3264.959,
+      "duration": 5.121,
+      "text": "I wanna ask you to give feedback in the app and we will have time for just a handful of"
+    },
+    {
+      "start": 3270.08,
+      "duration": 3.21,
+      "text": "questions and if you wanna contact me, I would love to hear from you."
+    },
+    {
+      "start": 3273.36,
+      "duration": 4.789,
+      "text": "This is my presenter contact information so thank you for being here."
+    },
+    {
+      "start": 3286.02,
+      "duration": 5.83,
+      "text": "Oh, I don't know if I can put that back up. Can I put the presenter slide back up?"
+    },
+    {
+      "start": 3291.969,
+      "duration": 1.47,
+      "text": "Oh, it is great."
+    },
+    {
+      "start": 3293.689,
+      "duration": 3.76,
+      "text": "OK, so we're gonna have questions now if you are going to ask a question,"
+    },
+    {
+      "start": 3297.53,
+      "duration": 1.909,
+      "text": "we want you to come there are mics back here."
+    },
+    {
+      "start": 3299.649,
+      "duration": 5.08,
+      "text": "We would like you to come back to the mic and ask your question so that the people at home"
+    },
+    {
+      "start": 3304.729,
+      "duration": 3.841,
+      "text": "can hear you. Does anyone have any questions about anything"
+    },
+    {
+      "start": 3308.57,
+      "duration": 1.0,
+      "text": "we've talked about today?"
+    },
+    {
+      "start": 3316.189,
+      "duration": 3.611,
+      "text": "All right, you guys are so there is a question. Thank you."
+    },
+    {
+      "start": 3320.07,
+      "duration": 5.79,
+      "text": "So where did you, um, find the, the, the, the Whitehall document,"
+    },
+    {
+      "start": 3326.149,
+      "duration": 3.111,
+      "text": "um, you said that you, um."
+    },
+    {
+      "start": 3330.8,
+      "duration": 3.889,
+      "text": "Because I walked in like, um, that to, to find that paper,"
+    },
+    {
+      "start": 3334.729,
+      "duration": 2.551,
+      "text": "you went to the family history library."
+    },
+    {
+      "start": 3337.81,
+      "duration": 3.829,
+      "text": "Um, for the church records that said Whitehall, yeah, I,"
+    },
+    {
+      "start": 3341.84,
+      "duration": 5.68,
+      "text": "I'm trying to remember some of those records are at the library and those books that there"
+    },
+    {
+      "start": 3347.52,
+      "duration": 4.48,
+      "text": "are books that have been transcribed and translated and a lot of them are at the family"
+    },
+    {
+      "start": 3352.0,
+      "duration": 4.0,
+      "text": "history library. Some of them you can't find there and you can"
+    },
+    {
+      "start": 3356.0,
+      "duration": 4.399,
+      "text": "go to local genealogical societies or historical societies or archives in"
+    },
+    {
+      "start": 3360.399,
+      "duration": 4.81,
+      "text": "Pennsylvania if you can't get there, you can call and ask if they have them or look at their"
+    },
+    {
+      "start": 3365.209,
+      "duration": 1.865,
+      "text": "online. Catalogs and see if they have them and they can"
+    },
+    {
+      "start": 3367.074,
+      "duration": 4.68,
+      "text": "look them up for you but much of those, many of those are online at FamilySearch yeah where"
+    },
+    {
+      "start": 3371.915,
+      "duration": 2.179,
+      "text": "where where did you find yours?"
+    },
+    {
+      "start": 3374.354,
+      "duration": 5.561,
+      "text": "Um, I think it varied depending on which one. Some of them I just go to the catalog at Family"
+    },
+    {
+      "start": 3379.915,
+      "duration": 5.589,
+      "text": "Search and search for the place of interest, yeah, so you go search and catalog when you're"
+    },
+    {
+      "start": 3385.504,
+      "duration": 3.671,
+      "text": "on Family Search and that will tell you what they have there."
+    },
+    {
+      "start": 3389.514,
+      "duration": 3.35,
+      "text": "If I didn't find them there, then I started looking in other places."
+    },
+    {
+      "start": 3393.475,
+      "duration": 1.48,
+      "text": "Thank you. That was a good question."
+    },
+    {
+      "start": 3396.449,
+      "duration": 4.26,
+      "text": "So I have a question about how you knew that the."
+    },
+    {
+      "start": 3402.199,
+      "duration": 1.591,
+      "text": "German people."
+    },
+    {
+      "start": 3404.439,
+      "duration": 5.23,
+      "text": "Named their children all with that saint's name. How, how would you know that information?"
+    },
+    {
+      "start": 3409.8,
+      "duration": 6.109,
+      "text": "OK, so when you are embarking on genealogy research and you wanna get really good at"
+    },
+    {
+      "start": 3415.909,
+      "duration": 4.48,
+      "text": "researching a certain, uh, group of people or people who lived in a certain place,"
+    },
+    {
+      "start": 3420.58,
+      "duration": 6.819,
+      "text": "it's really wise to start studying things about the area and the people and so I was doing"
+    },
+    {
+      "start": 3427.399,
+      "duration": 2.361,
+      "text": "that. I was trying to become accredited in"
+    },
+    {
+      "start": 3429.76,
+      "duration": 2.639,
+      "text": "Mid-Atlantic research so I needed to know about."
+    },
+    {
+      "start": 3432.78,
+      "duration": 5.429,
+      "text": "Pennsylvania Germans and their customs and so I found an article online that talked about"
+    },
+    {
+      "start": 3438.209,
+      "duration": 4.68,
+      "text": "Pennsylvania German naming customs so that's where I gained that piece of information but as"
+    },
+    {
+      "start": 3442.889,
+      "duration": 4.201,
+      "text": "you start studying a locality things you'll start seeing things like that because those are"
+    },
+    {
+      "start": 3447.33,
+      "duration": 6.079,
+      "text": "that's a common thing that if if you're really digging deep into a study of the people and"
+    },
+    {
+      "start": 3453.409,
+      "duration": 4.361,
+      "text": "doing genealogy there you'll find that you'll you'll be able to find it but you do wanna"
+    },
+    {
+      "start": 3457.77,
+      "duration": 3.23,
+      "text": "search for resources that tell you more about the people and their customs."
+    },
+    {
+      "start": 3462.62,
+      "duration": 6.45,
+      "text": "Thank you. Do you give more credibility to one source over"
+    },
+    {
+      "start": 3469.07,
+      "duration": 3.27,
+      "text": "another? Yes, I do."
+    },
+    {
+      "start": 3472.429,
+      "duration": 5.321,
+      "text": "If, if I'm comparing a source where the information was provided by an eyewitness and"
+    },
+    {
+      "start": 3477.75,
+      "duration": 3.76,
+      "text": "created close to the time of the event, I'm gonna give that more credibility."
+    },
+    {
+      "start": 3481.59,
+      "duration": 4.24,
+      "text": "So say it's a baptism record that was created, you know,"
+    },
+    {
+      "start": 3485.87,
+      "duration": 4.444,
+      "text": "the parents were there and gave the. Child's birth date I'm gonna give that more"
+    },
+    {
+      "start": 3490.314,
+      "duration": 5.72,
+      "text": "weight than say a death certificate where a neighbor provided the birth date like the one"
+    },
+    {
+      "start": 3496.034,
+      "duration": 3.8,
+      "text": "where the parents provided the information and it was created close to the time of the event"
+    },
+    {
+      "start": 3499.834,
+      "duration": 4.44,
+      "text": "holds more weight than the one that was created a lot of years later and the information was"
+    },
+    {
+      "start": 3504.274,
+      "duration": 1.28,
+      "text": "provided by someone who."
+    },
+    {
+      "start": 3506.379,
+      "duration": 1.911,
+      "text": "Doesn't really know the person that well."
+    },
+    {
+      "start": 3508.82,
+      "duration": 3.399,
+      "text": "So you have to think about who provided the information and when it was created,"
+    },
+    {
+      "start": 3512.26,
+      "duration": 1.439,
+      "text": "all those things that we talked about."
+    },
+    {
+      "start": 3515.429,
+      "duration": 5.49,
+      "text": "Thank you. I find it really interesting that you would use"
+    },
+    {
+      "start": 3520.919,
+      "duration": 1.151,
+      "text": "this example."
+    },
+    {
+      "start": 3522.399,
+      "duration": 5.04,
+      "text": "I work I work at the Family Search library and yesterday someone who was here for Roots Tech"
+    },
+    {
+      "start": 3527.439,
+      "duration": 6.72,
+      "text": "came in and had German records in Lehigh County in Pennsylvania."
+    },
+    {
+      "start": 3534.949,
+      "duration": 3.641,
+      "text": "might be cousins, uh, and, uh, my question is."
+    },
+    {
+      "start": 3539.27,
+      "duration": 3.51,
+      "text": "Uh, when we were talking about contextual clues and things,"
+    },
+    {
+      "start": 3542.83,
+      "duration": 6.99,
+      "text": "I asked him to go to the research wiki, but, um, I'm feeling and sensing that"
+    },
+    {
+      "start": 3549.83,
+      "duration": 3.5,
+      "text": "that wouldn't be your first place to go for contextual clues."
+    },
+    {
+      "start": 3553.409,
+      "duration": 1.891,
+      "text": "Tell me what you did."
+    },
+    {
+      "start": 3555.55,
+      "duration": 4.56,
+      "text": "OK, I'm gonna answer your question, but I'm just going to pause for just a moment because"
+    },
+    {
+      "start": 3560.11,
+      "duration": 3.555,
+      "text": "our live stream is. Going to end in just a few seconds so I'm gonna"
+    },
+    {
+      "start": 3563.665,
+      "duration": 5.899,
+      "text": "thank everyone here and at home for coming and we will just let that live stream end in about"
+    },
+    {
+      "start": 3569.564,
+      "duration": 5.121,
+      "text": "15 seconds here and then I will answer your question, OK?"
+    },
+    {
+      "start": 3574.844,
+      "duration": 3.44,
+      "text": "So thank you again to everyone again if you have questions for me,"
+    },
+    {
+      "start": 3578.445,
+      "duration": 3.379,
+      "text": "please don't hesitate to reach out. I love hearing from people who have attended my"
+    },
+    {
+      "start": 3581.824,
+      "duration": 3.04,
+      "text": "classes and go ahead and fill out the survey."
+    },
+    {
+      "start": 3585.084,
+      "duration": 0.591,
+      "text": "Thank you."
+    }
+  ],
+  "full_text": "Hello everyone, I'm so excited that you're here. Uh, it's been a really great week at Roots Tech for me. I hope you feel the same. It's the last class of the last day, so I hope that we'll be able to have fun together and learn something about extracting evidence and strategies for analyzing genealogical sources. So during this presentation, I just wanna remind you one final time that we need to silence all our electronic devices and that there's no audio or video recording or photos. And just by way of introduction, my name is Alice Childs, and I'm an accredited genealogist professional. I worked in the private client research world for several years and I currently serve as the assistant director at the BYU Center for Family History and Genealogy. And this is an academic research center where we employ students who are family history majors and minors, and they, we give them experiential learning where they can learn more about the science and methodology of family history research. Um, our mission is twofold to provide this experience to the students and also to provide quality online sources for the public, and these resources are available to you at no cost. So if you would like to learn more about the projects that are on the screen or any of our other projects, you can visit us at CFHG. BYU.edu. OK, so before class started for the people here that are live we had a QR code up on the screen and there's a question that you can ask this class today is going to be interactive. We're going to have quite a few questions that you're going to get to answer throughout the presentation. So if you did not see this slide when you first came in or if you're watching from home, go ahead and scan the QR code and answer this first question. And then we will be having questions throughout the presentation and the way that this is designed is you'll just keep this open on your phone, this window open on your phone and as I go to the slide where there's a question, a new question is gonna pop up on your screen so that's the way it's gonna work and if you lose track of this QR code and you can't find it, don't worry, you can just think about the question in your mind and answer and compare to what everyone else uh answers so. Let's just talk about our first question. This was our practice question how would you describe your level of genealogy experience? And uh, we have a good mix. I'm excited for all of you to be here today. I think that we will have a good experience no matter what your level is, and I hope that it will be fun to interact in this way throughout the presentation. When I first started doing my genealogy research and for a long time after I started doing my genealogy research, I often wondered when I was looking at information that I had found about my ancestors how reliable is this information that I see on these records? I, I wondered if I could trust what they were telling me. Another question that I often ask myself when I was faced with records that said two different things, which one is correct and how do I know which one is correct? Also, I often wondered how much evidence do I really need? How many records do I need to find to make sure that I am making a correct conclusion? So my goal is that after our session today that you will be able to answer those questions and that you will be more confident in your research. The principles that I am going to be talking to you about are outlined in a book called Genealogy Standards, and this is a book that um some certified genealogists have put together that tell standards for the genealogy industry and they have standards in several different areas today we're gonna be discussing standards for researching. We gather evidence from historical records and there are many types of historical records but what we have to know is that those records were not created with us as genealogists in mind. There were other purposes for these records. For instance, vital records were used they were created for legal use in court proceedings, uh, around issues surrounding inheritance and parentage, and they've also been a really useful tool in the field of public health. Censuses were ordered by the Constitution. Section 2 of the Constitution required an apportionment of representatives among the states must be carried out every 10 years, and these were used to determine how federal funding would be used for schools and hospitals and public works and things like that. Uh, probate is the process by which someone's estate gets allotted out to their descendants after they after they die. So these are created for reasons that are not related to genealogy, but we are the beneficiaries, and we need to be able to analyze these records and correlate the evidence that we find in them in order to make conclusions. One thing I really want to emphasize as we're getting started here is that when we are doing our research, we want to always look at the original document when it's available. I want to give you an example. This is the New York US state census of 1865, and this is just the indexed information that popped up when I looked at this record on ancestry. and just looking at what was typed on the screen, I found out a fair amount of information. I found that her name and gender, uh, the relation to the head, she was the head of the household. She was 60 years old and she lived in Pauling, Duchess County, New York. And she had 3 sons living with her in 1865, so that's a fair amount of information. But when I opened the original document, I got a lot of extra information. I also learned her birthplace of Putnam County, New York. I learned that she was the mother of 10 children, that she was only married once, but that she was now widowed, and she did not have an occupation listed, but her sons were carpenters. And two of her sons were currently serving in the army and one had previously served and finally the youngest son in the household was named Aiken Ingersoll, and there was a 62 year old man living next door with his wife who was named Albert Aiken. And with that Aiken name in common, I felt like that was a clue about Francis's maiden name. Perhaps she was an Aiken and her brother was living next door so you can see that by looking at the original document you get a lot more information than you did from that index. So that's one principle that we always need to keep in mind. So there are 3 questions that we want to be able to answer as we are looking at our documents. The first one is associated with when and how was the source created. We want to know if the document was created close to the time that the event happened or if it was created many years later because things that are created closer to the time of the event happened are more reliable. We also want to know who provided the information for the source was it an eyewitness to the event or was it someone who learned the information from someone else? And as you can imagine, if it's an eye witness, it will be considered more reliable than if it's someone who heard it from someone else think about the old telephone game where. Someone says something in your ear and then you say it in the next person's ear, and by the time it gets around the circle, it's completely changed. So that's another principle that we use when we're looking at the evidence that we find in sources. And the other question we wanna ask ask ourselves is do the facts in the source directly or indirectly answer the research question now as genealogists we love and wish that all the sources always gave us a direct answer that was provided by an eyewitness on the original document that was created at the time of the event, but we don't always get that. In fact, quite often we don't have that ideal situation. So we can use what's called indirect evidence from records and correlate that with other records to come to our conclusions. Uh, in genealogical terms you might hear these questions referred to as questions about the source, questions about the information or the informant for the info for the record, and the evidence we're talking about direct or indirect evidence. So if you see those terms, that's what those are referring to. As we are doing our evidence analysis, we need to make sure that we are always guided by a research question. And a research question is what will provide the context for our uh analysis and depending on what our question is the answers might change because there could be various pieces of evidence in every document that would answer different research questions so one document might be analyzed one way for one research question and a different way for a different research question. So here's an example research question When did Polina Eliza Phelps die? So I knew a little bit about her. She was born on the 20th of March 1827 in Illinois, and her parents were Morris Phelps and Laura Clark Phelps, and she married a man named Amaa Mason Lyman on the 16th of January 1846 in Navo, Hancock County, Illinois. Let's look at a source that will help us answer this research question. So we are going to look and see when and how was this source created so this is a death certificate when someone dies, the law requires a medical professional to certify the date of death and the time and cause of death, and then the undertaker or the funeral home director will help a family member fill out the other information on the on the certificate. So here we get to have a question that you guys can answer. And we are going to have to click a button right here, so that this will actually work. So you should be seeing a question that says when thinking about Polina's death when was this source created and you can go ahead and answer that question and click submit and if you can't see this I'll read the near the time of the event many years later or unknown. It looks like we have answers that have come in and you guys are mostly all in agreement. This is correct when this record was created right at the time of Polina's death or uh hours later, so it was created really close to her death. So when we talk about when and how was the source created, um, we, we know that this was created near the time of death it's the first recording of this event and so this would be considered an original source created at or near the time of death. Now we need to look at who provided the information for this record. So on a death certificate, we usually have 3 places where it tells us who provided information. Uh, the intending physician is listed on the right hand side, and he usually signs stating the time and death of date. We have the undertaker's signature on the bottom right and then on the left hand column it tells us who provided the information about her birth and family and other information that way. In this case, the informant for that information, it, it was the same, it was the physician. So let's just test if you're just paying attention, who provided the death information for this source. Everybody agrees. OK, good. It was the physician, OK, but it was an eyewitness. He was there to see when she died. All right. So he also said that he attended Polina from October 7th to her death date on the 11th of October. So, and this is his signature on the record. So since this document directly answers the research question, when did Polina die? This is considered direct evidence, OK? Now let's look at another question that we might ask. We already know the answer to this one, but we want to consider, uh, the same questions when we're thinking about when was Polina born. So like I said, the same person, Joseph F. McGregor was the physician and he was also the informant for the birth information and parent information on this record, and he stated that Polina was born on March 20, 1827. So, when thinking about Polina's birth, who provided the information for this source? Was it an eyewitness, someone who heard about Polina's birth secondhand, or an unknown informant? OK, we have a little bit of variation here. When the person is named who provided the information, we don't consider them unknown. We might get confused and think that's unknown to the family or something, but we know the person's name. We know who provided the information, so then we need to think about would that doctor have been alive and at Polina's birth. She died when she was almost 100 years. She was between 90 and 100 years old, so he probably was not the the doctor who delivered her when she was born. So I imagine that he knows this information because he heard it from someone else. So this is a secondary. Informant someone who heard it from someone else. All right, now comes the next question. Do you think this source will be more reliable when you are seeking an answer to questions about Polina's birth or about her death? We have exact dates for both of them. All right, the majority agree that it's going to be more reliable for her death, and when I say more reliable, I'm not talking about accuracy both dates could be wrong and both dates could be right. We just want to know which one is most likely to be correct and the death date would be the answer to that because it was created right near the time of the event by someone who witnessed the event. For the birth, it was created many years later by a secondary witness. All right, let's look at another record now so we're gonna go through these questions again when and how was this source created? So this is a baptism record and the parents, this was in a Lutheran church in Pennsylvania, Pennsylvania German, uh, family. And the parents presented the child to the minister for the baptism and the minister recorded the ordinance in his parish record and the reason that these were created was because sacramental records or membership proof is required for a person to be confirmed or married in the church and so that's why baptismal records were kept. Uh, the originals were created in German, written in a in a register by the minister, and then many years later they were translated and transcribed into English and put into books. The process of the record getting copied and put into a book like this might leave room for error. Perhaps there was an error in the transcription, and this is considered a derivative source. This is not considered an original source that was created close to the time of the event. So it's a derivative source created many years later. So when we think about who provided the information for this source, the parents again were the ones who took the child to be baptized they were eyewitnesses to the child's birth and the birth record is given here uh the parents and the minister were all eyewitnesses to the child's baptism, so we have the minister writing down that the child was baptized on a certain day so the information on this source was provided by eyewitnesses to the event. So if we're asking ourselves when was Alfred Beck baptized we have direct evidence for this because it directly answers the research question and again I want to emphasize even if it directly answers the research question it may or may not be correct so we often have to correlate with other records. It also directly answers the question who were Alfred Beck's parents because the parents are named on the record, William Beck and Mary A Beck. So we have a good record here. It is a derivative record, but it gives us a lot of answers to research questions from eyewitnesses. So here's a question for you what factors might contribute to the reliability of this record, and this is multiple answers are correct. So think about what might contribute to the reliability. So would it be the process of transcribing the record from the original might introduce errors. The information was provided by an eyewitness. Exact dates are provided for each child. And the record was created many years after the event occurred. It's fun to see all these answers coming in. You guys are doing a great job. All right, let's talk about this for just a minute. When we're talking about reliability, we want to know which factors are making it so we would say this holds more weight than something else. So the process of transcription does affect the reliability because we know errors might have occurred. The information was provided by an eyewitness and so that affects the reliability because firsthand accounts are more reliable than secondhand accounts and the record was created many years after the event occurred that affects the reliability because it's a long time ago it wasn't created right around the time of the event. The original wasn't. But exact dates are provided for each child does not necessarily affect the reliability of the record because you could anyone could write any date down an exact date could be written by anyone and it doesn't mean it was correct so we're weighing who provided the information of where it came from that affects the reliability more than the fact that there are exact dates on the record. Does that make sense? Alright, the next question or the next record that we're going to be looking at is uh authored narrative, and this is a book that was written about it's a chapter in a book chapter about Joseph Stevens in a book called From the Waves of the Past, and this was created by a committee. Of descendants of the Munford family from England and they pulled information from many different sources and then they pulled it all together into this book and when they didn't have sources they would interview the oldest living relatives and try and find out. Anything that the oldest people in the family knew and they put it into this book and this is a fantastic resource for the Munford uh descendants. So again this is called an authored narrative and. We want to think about who provided the information for this source was it the authors or was it the people they interviewed? Sometimes it was the people they interviewed and we don't know who those people were and we don't know what records they used to be able to analyze who provided that information in the records so we just have to keep in mind that they are unknown informants and so we can't judge. How accurate the information is because we don't know if it was firsthand or secondhand and I will tell you that often a lot of times, most often in records whether they're authored records or original records, the informant is unknown we don't know who the informant was so we always have to keep that in mind when we're deciding how accurate things are. So if we have a research question, when did Joseph come to the US? This narrative directly answers the research question. It says he sailed from Liverpool on the ship Amazon on the 4th of June 1863. So we have another question for you to answer. How reliable do you feel the evidence from this record is? So we have a few choices here. Very reliable. It provides direct direct answers about Joseph's. I can't even read that. That's so small, about Joseph's life events, very reliable because my aunt and uncle wrote the wrote the book and they know a lot about our genealogy. Or I need to find original records before I can determine its reliability. You guys are all so smart that is true when you have an authored source, you do want to be able to test what is in the book with original records with a lot of the older histories that were written sources didn't get added to the book, so you don't know where the information came from. If they do have source citations, that's a really good bonus. I would still encourage people to look at the original sources just to make sure you agree with with what's written in the book, but especially when there are no sources. You can't trust that it's 100% reliable. I'm not saying it's not. It might be very reliable and very accurate, and a lot of times it does, it does check out, but you need to make sure that you feel confident because you have looked at the original records to verify what's written in these books. Now I want to talk for a minute about negative evidence. So I have a 1910 census and oh before I describe the census, I want to tell you what negative evidence is. So negative evidence is the absence of information that you would expect to find in the record. So a really good example of this is a census record. If a person wasn't listed on the record that you think should have been there, that's negative evidence that perhaps that person. Died Moved somewhere else, was living elsewhere, got old enough to get married and leave the household. So that's negative evidence that you can use in your research when you're trying to decide and learn the story of your ancestors. Now you have to be really careful when you're making assumptions about negative evidence because sometimes your hypothesis is correct and sometimes it isn't so this example is a good illustration of that. So this was a 1910 census for my great grandparents Alexander and Kate Sanders. The record says they had been married for one year. And Kate had no children, 0 children, 0 living, the record said, said that Alexander was born in Alabama and Kate was born in Indiana. Now there's a few problems with this record first. I know that the couple had a son named Eldon in 1907, and where would he be? He's 3 years old. He should be with the family in this record. Um. Also I know that Alexander and Kate were both born in Utah, and I know that this was them because they were living in the place, a really small town where I, I know they lived and the sister was living next door so I don't know what's going on here, but where was Eldon 3 year old Eldon, so we might be tempted to think that perhaps he passed away and so that's why he doesn't appear in the census with his parents. But I can't just trust that just by looking at this one record. I need to find other evidence to make sure that that was actually the case. So I looked at the 1920 census and in 1920, Alexander is still married, his wife is not in the household though. He's living in his sister-in-law's house with his mother-in-law and brother-in-law and 13-year-old Eldon. So Eldon apparently didn't die. I don't know where he was in 1910. I haven't been able to find him in the 1910 census, and the only thing I can think is that they lived in a small community of people who are working on the railroad. It was a very transient community. And I think maybe someone besides Alexander or Kate provided the information to the census enumerator when he came around because there were a lot of errors about the family. I have ruled out any I have not found them anywhere else, so I'm pretty sure that's them with all the evidence I have, and I think that the person who provided the information we don't know who it was, but I'm guessing they didn't know them very well and they just gave their best guess and somehow missed the fact that they actually had a son. And I know he lived for a good long time because he's my grandpa, so I would not have been here without him. So doing this is what we call correlating evidence uh so this this standard of researching teaches us that we can never rely on evidence from one record alone we need to find evidence in multiple records and compare them against one another. Do they say the same thing? Does each record have different information? And then if they differ you need to decide and determine the credibility of each of the sources so you can make a decision about which one's correct or maybe you keep researching and find more records and see which item you have more evidence for and you also need to resolve any conflicts that you come across as you're researching. Another principle I wanna talk about and introduce you to is called evidence independence. So if we have an obituary and uh information on a headstone, what happens when someone dies? A family member will write the obituary, then they'll go work with the memorial company to choose a headstone and give them the information to inscribe on the headstone. It's very likely that the information in the obituary and the information on the headstone came from the same person, so you cannot say that those are two sources. They're two different records, but the information on them came from the same person. So when you're weighing evidence that only counts as one source because it's given by one person. So that is something that you need to think about when you are weighing evidence and seeing different uh evidence on different records you want group the records with the same informant together and then just weigh that as heavily as the strongest evidence in that group. Another thing that we wanna look at when we're working on our ancestral research and trying to correlate and determine what's accurate and what's going on is background information. There are things like historical context, customs and laws that impacted the the reasons the records were created. And I recently heard someone say that you can't make sense of the text unless you know the context and that is really true when you are studying genealogy you need to know what was going on in the area understand why the records were created and then that can help you to make conclusions as well. So the 1910 census instructions is a good example of this. So remember we had Eldon, who was missing in 1910 on that census, and here are what the instructions said. They said that the enumerator was supposed to visit every home personally. Talk with a family member over the age of 21 and if the residents are absent, obtain the facts from their families, relatives, acquaintances, or other persons and then as they were making subsequent copies they would go row by row not in columns, use a ruler to keep the. Take place and take great pains to see that the ruler is not displaced so that reminds me I need to tell you about census records. So census records are considered original records, but the enumerator went out and gathered the information went house to house and gathered the information, and then he was required, he or she was required to make two additional copies one to send to the state government, one to send to the federal government. And so when making the copies they had specific instructions on how they were to do this to ensure that they would not be creating uh errors in the census so this could explain why we had that um. Case where a lot of information was wrong about our ancestor, it says if the residents are absent basically obtain the facts from anyone, anyone who's available so it might have been anyone, you know, that didn't know them very well so understanding what the instructions were and other context about records is really helpful when we're trying to evaluate and analyze if things are accurate. Now if you're curious and you want to know where you can find census instructions you can just go to census.gov and it has links to the census instructions for every US census there so that's a fantastic resource for learning context. All right, now that you've looked at a whole bunch of different records for an ancestor, you are going to weigh the evidence determine which evidence items hold the most weight do you have more weighty items here and a couple of iffy items on the other side, and that's how you're going to draw your conclusions. Let's do a little practice here. We're just going to think about a research question who were Robert and Betty Hedrick's parents? So this is what we have on a census record. This was the household of Moody Beck and Fern Beck, his wife, and I believe this was the 1930 census, and Moody and Fern lived in Ohio and there was some information on the census that was helpful here. It said that Moody was 39 and his age at first marriage was 34. Fern was 34 and her age at first marriage was 29, so both of them had their first marriage in 1925. I'm guessing that they probably were married to each other in their first marriage, and they have two daughters in the household, Martha and Donna, and Martha's almost 4 years old, which makes sense if the couple was married 5 years ago. And Donna was 2 1/2. Then there were these other two children in the household Robert and Betty, and they had the last name Hedrick. Robert was 11. Betty was 10, and she, so they were born before this couple would have been married, but they were both listed as children of the head of household, and Moody was the head, so they're listed as Moody's children. So let's think about this record. So when was this record created? It was created if we're asking who were the children in this family, who were their parents, this was created several years after the children's birth, births, and with the census copies there is a possibility for errors on duplicate copies, although an entire different last name for two children seems like probably not an error that might have occurred. Uh, we don't know who gave the information to the, the census taker, but we can always, we can always make a guess that might help us in our analysis so we can think it was probably Moody or his wife, um, but we don't know that for sure, but it does directly state that Robert and Betty are Moody's kids so it directly answers the research question who were Robert and Betty's children, but there is a conflict because they have a different last name. So this is just a recap. They were married for 5 years. It was their first marriage. Robert and Betty were older than that would make sense with that, and both of them were the head of household. So let's just have you answer this question What might have been going on in this scenario? This is where you get to as a genealogist think what do I think is happening? And then you get to test that by trying to find more records. So we have choices. The children were adopted by Moody and Fern. The children were Moody's children from a previous marriage. The children were Fern's children from a previous marriage, and this was not Fern's first marriage. OK, so. Let's think about this. I think that you are all thinking very correctly, uh, either the children were adopted by Moody and Fern or probably they were, uh, Fern's children from her first marriage. A few of you thought they might be Moody's children from a previous marriage, and that could very well be the case. They do have a different surname, and so that makes me question whether or not that might be the case, but let's go ahead and see what other records we can find that will help us answer this question. So the first thing I did was look for a marriage record for Moody and Fern, and I was able to find that. It does state that they were married in Richland County, Ohio in 1924. So the fact that the couple had been married for about 5 years was accurate. So, 23rd of September 1924. But lower down on the side that talked about Fern there was an interesting notation uh up at the top it gives her maiden name of Shepherd, and it says she was once previously married and is a divorced woman, her married name being Mrs. Fern Hedrick. So now I think OK those were her children from another marriage, but why would it have said she her first marriage happened only 5 years ago? Well, in that time if we think about the historical and social context, divorce was frowned upon and so maybe they didn't want people around them to know that she was a divorced woman and so they just said that they were first married in uh the date of their first marriage was 5 years ago so. You have to think about these things and the reasons why the information might have been falsified on documents. Then I went ahead and looked at the 1920 census and I was able to find Fern and the son Robert living with a man named Paul Hedrick in 1920 and I could have kept going and found other documents but I think it's pretty clear that their their parents were Fern and Paul Hedrick, not Moody Beck. All right, let's do another little exercise. This one is when and where was Millard Roberts born, and I don't know if any of you have ever encountered this, but I would be really surprised if you have not. Census records, ages on census records vary all the time. They're different and sometimes you wanna know what's most accurate. So let's look at this. Uh, we have one other record besides the census record. It was in 1929 and there was an obituary for Millard. It stated that he was born in 18, well he was 61, so you could calculate that he was born in 1868. Then moving backward in time. In 1920 he had his own household and he was born in 1869 in Missouri, it said, so at one year difference that doesn't usually bother us too much. Then when we go to the 1910 census, it says he was born in 1866 in Missouri, so that's three years different than the previous census. We go backward in time to 1880 and that one says he was born in 1866, not in Missouri but in Illinois. And in 1870, he was 4 years old, living in the household of his parents and this one says he was born in 1866 in Illinois. So let's think about this. These documents were created at various times after the event and there is some possibility for error on duplicate copies. We don't know who provided the information, but we can presume that the information for each census might have been provided by the head of household or the the husband or wife in the household and. It does give all of these senses do give a direct answer to the research question when was he born, and that makes me want to stop and tell you just because I have to calculate the date, it doesn't mean that it's not a direct answer. I don't have to combine that with any other record to know the answer to the question when was he born? It tells me directly his age and I can just do a little math, so that's direct answer on that and the birth years differ from census to census. So let's do another question. What year was Millard Roberts Most Likely Born? Well, now we have to go back over here. I don't know why this is so finicky sometimes. Let me start this again. OK. So, many of you think 1866 and some of you think 1868 to 1969. So let's now, we'll talk about this in a second, but let's also ask ourselves what. OK, sorry, we'll just get our mouse. I should probably leave my mouse really close to this button. Where was Millard Roberts most likely born? Was he born in Missouri or Illinois? So a lot of you think, I would say the majority think he was born in 1866 in Illinois. And I would agree with that because the census when he was just 4 years old was probably the information was probably provided by the parents and if he would have been later he would have only been like 1 year old and it's kind of hard to mistake a 1 year old for a 4 year old so I think the difference when you're that young is pretty big so he was most likely born in that earlier year in Illinois. So good job everybody. Alright, now the next thing we're going to do is you guys get to choose what we're gonna do next. We have two research questions and I want to illustrate these principles all correlated together in a little case study so it's story time, but you guys get to choose your story for this rest of the of the presentation. So the first option is we are going to try and figure out who were Jacob Fisher's parents, and we are going to be testing the reliability of information on online trees so online trees tell us who his parents are we want to know if that information is reliable. Our next question is has to do with separating fact from fiction in authored narratives so we're gonna be talking about a man named John Norman who lived in New York in the time of the Revolutionary War, and there are a lot of things written about him in books and different articles and a couple of newspaper articles that I found about him. And we want to know if those accounts are accurate so you guys get a vote and if it's a tie, I get to choose. So we'll just make sure we have time for oh look at that it's 50/50. 0, it's a race. OK, I'm just gonna give just one more minute just to make sure everyone's been able to vote. All right, this is so fun. OK, I'm just gonna go with that. It looks like we want to know who Jacob Fisher's parents were and look at the accuracy of online trees. That one's gaining every minute. So now I need to. OK, just give me one second. I gotta go make sure I get the right slides for this story. I gotta get the right book out here. OK. So who were Jacob Fisher's parents? All right, so this is an ancestor I studied quite a few years ago, and when I first started studying him, I looked at ancestry, and there were a lot of ancestry trees who said that his parents were Captain Christian Fisher and Maria Magdalena Gebhardt, lots of trees, said this, and Jacob was buried in Westmoreland County in 1847. And I just want to analyze whether this Christian Fischer and Maria Magdalena Gephardt were actually his parents. So let's just first of all think about this online tree or all the online trees that we're looking at. So an online tree would be considered an authored narrative because someone has pulled together a lot of facts from a lot of different places and they have created a story about the ancestor. Uh, we don't know who create sometimes we know who created the tree, but we don't know who provided all of the information and especially if the information is not backed up by historical records, we don't know who put that information on there or where they got the information from, but this record does provide a direct answer to the research question. So is this information reliable? Well, we need to consider a few things before we automatically assume that this tree is trustworthy. First, we need to try to confirm the information with original documents. So the first thing that I thought would be really helpful is if I could find a will for a Christian Fisher that um had a son named Jacob and so I did find a will for Christian Fisher. He lived in a place called Upper Milford in Northampton County in Pennsylvania. This county later became Lehigh County. They were right next to each other. um, Christian named his wife Maria and several children in his will, and he did have a son named Jacob. So that's great evidence that Christian had a son named Jacob, but does that solidify the fact that our Jacob belongs to this man? I think we need to find some more records. But let's analyze this source first. So this was an original source. uh, Will was usually dictated by the person writing the will or he wrote it himself one way or the other. Uh, it was often copied into a will book at the county, but if you have a copy that would, you know, duplicate copies like that are considered original sources still, even though we have to keep in mind, somebody might have gotten some of the details a little bit wrong. But the information was provided by an eyewitness. He knew who his children were, so he's the one that was telling who his children were, and it does give us direct evidence for this relationship. But even when we have an original document with an eyewitness and direct evidence, we have to dig deeper. So one of the things that I wanted to explore is the fact that Jacob Fisher lived clear over in Westmoreland County on the western side of the state, and Christian Fisher lived clear over on the eastern side of the state and this was not uncommon in that day. A lot of people who lived in eastern Pennsylvania migrated west into counties in the western part of Pennsylvania, but making this big of a leap to connect a father and son, you shouldn't do it without more evidence to help connect the people together. So let's start with what we knew. Uh, we had the headstone for Jacob Fisher. He was buried in Brush Creek Cemetery in Irwin, Westmoreland County, Pennsylvania, and his death date and age of death are described are inscribed on the tombstone and using his age at death, I was able to calculate when he would have been born, and that's the 20th of April 1761. So let's think about this source. This was an old decaying stone of material that indicates it was likely placed fairly soon after the time of death. I'm gonna consider this an original source we don't know who provided the information for this, um, but it does give us direct evidence of his birth and death dates. Another piece of evidence that I had was a baptism record for three of Jacob's children, and they were baptized in Westmoreland County on the 3rd of January 1808. Again, this was a German church record, Pennsylvania German church record that had been copied and translated and transcribed into a book, but it shows that these children were born. It was John and uh or Johannes or John Hannah and Katerina or Catherine. And they were born between 1799 and 1808, and they were all baptized or I guess the last date was 1804, but they were all baptized in 1808. Usually Pennsylvania German children were baptized uh two or three days after they were born, so the fact that they were. Baptized a few days later that historical and social context made me think, OK, maybe the family was migrating during these years maybe they were on the move and they didn't really have a church that they went to so that was a little bit of indirect evidence that I had that I wanted to keep in mind. So this is a derivative source and I looked for the originals because I always like to find the originals if I can but they are not no longer available um the the people who provided the information were the parents and the minister again eyewitnesses to these events and it does give us direct evidence of the birth and baptism dates and like I said indirect evidence that maybe the family was migrating at this time. So I needed to go a little bit farther and see if I could find more information that would help connect Jacob to Christian in Pennsylvania so I looked for a will for my Jacob Fisher. I just wanted to see if you had any more kids, if I could learn more about the family in some way. And I did find a will for a Jacob Fisher, but this will took place. It was proved or presented to the court to say that the person had died and their estate needed to be taken care of. It was proved in 1846, which is a full year before our Jacob Fisher died. There could be an inscription error on the headstone or maybe this is a different Jacob, so I needed to look into what this will said so that I can figure out what's going on. There were a number of people named in this Jacob's will, and I recognized a few of them. There was, uh, Jacob and Elizabeth Fisher. Those were the parents on that baptism record, and there were 3 kids or 3 people. One was a brother named John Fisher, and then I had a Hannah and a Catherine as well, and I recognized those names from the baptism records, so I'm wondering. If this might be a family, um, perhaps Jacob was Jacob Junior, the one that wrote the will, um, so I studied each member of this family and a lot of different records, and I was able to piece together who everyone was so this Jacob left his farm to a John L. Miller, which I thought was weird. It wasn't a family member, but as I studied John L. Miller, I realized that he was married to you and Elizabeth Fisher, who turned out to be Jacob's sister. Uh, this Jacob also married a woman named Elizabeth, so this is confusing because there's two couples named Jacob and Elizabeth Fisher, but the father was named in the will. He was Jacob, the mother was Elizabeth, and then we had uh several siblings, uh, Sarah Shots, John Fisher, Hannah Peck, the, the Will said P E C K, but she was married to a man named Daniel Beck, and I, the Beck family is who I was studying, so I presumed that that was an error in copying the will. And then a sister named Katherine Ferry or Furry. She was married to Leonard and another sister named Susanna Cruc, also a possible mother-in-law, nephew, and a neighbor. So by studying more records, I was able to piece together who these family members might be. So this was an original source and information provided by eyewitnesses he knew his family members um he was able to provide information about them and it gives us direct evidence for some of the relationships some relationships were stated and indirect evidence for other relationships. So this was a really good record and it led me to my study led me to baptism records for all of the other children named in this will. And they were again in books like this that transcribed and translated baptism records for Pennsylvania Germans and these children were all born in Northampton County in a place called Whitehall so this was really interesting to me. I thought, OK, I have seen that R Jacob did come from that eastern county and moved to Westmoreland County. So this is just a summary of what I found in the baptism records. There were 5 children. The oldest, Magdalene, uh, passed away young, but we had Susanna, Jacob, Elizabeth, and Sarah. So Jacob, the son of Jacob and Elizabeth, was the person who wrote this will. So let's think about these sources. They are derivative sources, transcriptions, but the information was again provided by eyewitnesses, and this provided direct evidence for the family's residents in Whitehall, Northampton County in Pennsylvania. So at this point we might think we have maybe solidified the fact that this was our Jacob, but guess what? In Pennsylvania, in Pennsylvania Germans there are so many people with the same name. So what we need to do is identify if there are any other candidates for this Jacob Fisher. So I looked at the 1790 census and there were two Jacob Fishers in Northampton County in 1790. 1 lived in Upper Milford where Christian Fisher lived. One lived in Whitehall, which I'm presuming was my Jacob Fisher because that's where all of his children were born about that time. So I'm now starting to think maybe Christian Fisher is not the father for my Jacob Fisher. So these, the censuses are original sources. We don't know who provided the information, but it does give us direct evidence for two Jacob Fishers in the area. So I studied Jacob Fisher of Upper Milford a little bit further and I learned that he was getting married and having children and I think he had one of his wives died or maybe a couple of his wives died and he ended up uh marrying other women and having children. He was having children in the Upper Milford area at the same time that our Jacob Fisher was having children in the Whitehall area. So these were two distinct people about the same age. So What do we think about this one? At this point I feel like it's pretty clear that the Jacob Fisher of Upper Milford is not our research subject, and the Jacob in um Whitehall Township is the correct person, but have we answered our research question who were Jacob Fisher's parents? No, we've only eliminated people, right? We haven't gotten any closer. Well, we have gotten closer because we know a lot about Jacob, so I went to the church records for Whitehall Township and I was able to find a baptism record for Philip Jacob Fisher who was born on the 21st of May 1761 in Whitehall Township, and it named his parents Adam and Magdalena Fisher. Now I don't know if you remember the date on the headstone that I showed at the very beginning. But his birth date as calculated from what was inscribed on the headstone was the 20th of May 1761. So this correlates within one day of what was on the headstone and it's in the same place where his children were baptized at the beginning of his marriage. Now you might wonder about this because it says his name was Philip Jacob Fisher so this is where I need to know more about the social context and what people did when they were naming their children. Pennsylvania Germans had what was called uh. A saint's name that they gave for the first name for their children and they would name their child after their favorite saint and actually if they had 5 sons and their favorite saint was Philip they would all be named Philip and then they would have a middle name that would distinguish them from one another and the middle name was known as their call name and that's the name that they were called throughout their life the saint's name was just a formality and even on official documents they were always listed with their call name. So it would make sense that Jacob Fisher in Westmoreland County would not be going by Philip. He would be named Jacob. So I felt pretty good about this conclusion that this was probably the correct record for my Jacob and that I had identified his parents, Adam and Magdalena. So this was a derivative source, but there were eyewitnesses, and it did give us direct evidence for the names of Jacob's parents. And when we look at all the evidence together we can see that his birthday matches we've traced the location we've traced him to this place in Whitehall Township where his children were born and he was born and we ruled out the other Jacob we determined that Christian had another son. Named Jacob and that they lived in a different township. So my conclusion after analyzing the records and correlating all of the evidence that I was able to pull out of those records was that Jacob Fisher was born in Whitehall, Northampton County, Pennsylvania to Adam and Magdalena Fisher. I hope that you can see that as you dive in and really take a look at the records including the social context, why the records were created, who provided the evidence, and what kind of evidence you're getting out of the record that you can gain more confidence in your research and come to credible. Conclusions. So with that I just wanna thank you for being here. I wanna ask you to give feedback in the app and we will have time for just a handful of questions and if you wanna contact me, I would love to hear from you. This is my presenter contact information so thank you for being here. Oh, I don't know if I can put that back up. Can I put the presenter slide back up? Oh, it is great. OK, so we're gonna have questions now if you are going to ask a question, we want you to come there are mics back here. We would like you to come back to the mic and ask your question so that the people at home can hear you. Does anyone have any questions about anything we've talked about today? All right, you guys are so there is a question. Thank you. So where did you, um, find the, the, the, the Whitehall document, um, you said that you, um. Because I walked in like, um, that to, to find that paper, you went to the family history library. Um, for the church records that said Whitehall, yeah, I, I'm trying to remember some of those records are at the library and those books that there are books that have been transcribed and translated and a lot of them are at the family history library. Some of them you can't find there and you can go to local genealogical societies or historical societies or archives in Pennsylvania if you can't get there, you can call and ask if they have them or look at their online. Catalogs and see if they have them and they can look them up for you but much of those, many of those are online at FamilySearch yeah where where where did you find yours? Um, I think it varied depending on which one. Some of them I just go to the catalog at Family Search and search for the place of interest, yeah, so you go search and catalog when you're on Family Search and that will tell you what they have there. If I didn't find them there, then I started looking in other places. Thank you. That was a good question. So I have a question about how you knew that the. German people. Named their children all with that saint's name. How, how would you know that information? OK, so when you are embarking on genealogy research and you wanna get really good at researching a certain, uh, group of people or people who lived in a certain place, it's really wise to start studying things about the area and the people and so I was doing that. I was trying to become accredited in Mid-Atlantic research so I needed to know about. Pennsylvania Germans and their customs and so I found an article online that talked about Pennsylvania German naming customs so that's where I gained that piece of information but as you start studying a locality things you'll start seeing things like that because those are that's a common thing that if if you're really digging deep into a study of the people and doing genealogy there you'll find that you'll you'll be able to find it but you do wanna search for resources that tell you more about the people and their customs. Thank you. Do you give more credibility to one source over another? Yes, I do. If, if I'm comparing a source where the information was provided by an eyewitness and created close to the time of the event, I'm gonna give that more credibility. So say it's a baptism record that was created, you know, the parents were there and gave the. Child's birth date I'm gonna give that more weight than say a death certificate where a neighbor provided the birth date like the one where the parents provided the information and it was created close to the time of the event holds more weight than the one that was created a lot of years later and the information was provided by someone who. Doesn't really know the person that well. So you have to think about who provided the information and when it was created, all those things that we talked about. Thank you. I find it really interesting that you would use this example. I work I work at the Family Search library and yesterday someone who was here for Roots Tech came in and had German records in Lehigh County in Pennsylvania. might be cousins, uh, and, uh, my question is. Uh, when we were talking about contextual clues and things, I asked him to go to the research wiki, but, um, I'm feeling and sensing that that wouldn't be your first place to go for contextual clues. Tell me what you did. OK, I'm gonna answer your question, but I'm just going to pause for just a moment because our live stream is. Going to end in just a few seconds so I'm gonna thank everyone here and at home for coming and we will just let that live stream end in about 15 seconds here and then I will answer your question, OK? So thank you again to everyone again if you have questions for me, please don't hesitate to reach out. I love hearing from people who have attended my classes and go ahead and fill out the survey. Thank you.",
+  "attempts": [
+    {
+      "client": "IOS",
+      "playability": {
+        "status": "OK",
+        "playableInEmbed": true,
+        "offlineability": {
+          "buttonRenderer": {
+            "navigationEndpoint": {
+              "clickTrackingParams": "CAoQ6ewBIhMI39ryiezblwMVolRMCB1k7zhZygEEY6Sh9g==",
+              "ypcGetOfflineUpsellEndpoint": {
+                "params": "ChPqqN25AQ0KC0pJVU1mMU9IYVkwIgtKSVVNZjFPSGFZMCoVCAkYAVIPCgtKSVVNZjFPSGFZMCAB"
+              }
+            },
+            "trackingParams": "CAoQ6ewBIhMI39ryiezblwMVolRMCB1k7zhZ"
+          }
+        },
+        "pictureInPicture": {
+          "pictureInPictureRenderer": {
+            "playableInPip": true,
+            "offByDefault": false,
+            "shouldResumeOnHead": false
+          }
+        },
+        "miniplayer": {
+          "miniplayerRenderer": {
+            "playbackMode": "PLAYBACK_MODE_ALLOW"
+          }
+        },
+        "contextParams": "Q0FFU0FnZ0M="
+      },
+      "outcome": "ok"
+    }
+  ],
+  "fetched_at": "2026-10-28T04:11:18.495571+00:00",
+  "client": "IOS",
+  "json_path": "transcripts/033_JIUMf1OHaY0.json",
+  "text_path": "transcripts/033_JIUMf1OHaY0.txt"
+}

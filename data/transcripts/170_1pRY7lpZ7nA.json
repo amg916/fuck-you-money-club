@@ -1,0 +1,982 @@
+{
+  "index": 170,
+  "url": "https://www.youtube.com/watch?v=1pRY7lpZ7nA",
+  "video_id": "1pRY7lpZ7nA",
+  "status": "ok",
+  "metadata": {
+    "title": "Getting Started with Digital Preservation: Fixity Pro",
+    "author": "ScottishArchivesTV",
+    "channelId": "UCKceI_qvtLd0s19Os1izi6w",
+    "lengthSeconds": "614",
+    "viewCount": "378",
+    "shortDescription": "In this short video Karyn Williamson, Digikive, will explore using Fixity-Pro to check and maintain your digital collections. Fixity Pro is an integrity checking tool specifically designed for digital preservation, and maintained by an organisation called AVP."
+  },
+  "caption_tracks": [
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=1pRY7lpZ7nA&ei=_nXharLeFJq5-coP_8uokQQ&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185902&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=1FF40D433B34E10DD927796596DDFB00E43437EE.9352DDCF3C76CD6FC33EADC0B14B53F2D8FF97A7&key=yt8&kind=asr&lang=en",
+      "name": {
+        "runs": [
+          {
+            "text": "English (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.en",
+      "languageCode": "en",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    }
+  ],
+  "selected_track": {
+    "baseUrl": "https://www.youtube.com/api/timedtext?v=1pRY7lpZ7nA&ei=_nXharLeFJq5-coP_8uokQQ&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185902&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=1FF40D433B34E10DD927796596DDFB00E43437EE.9352DDCF3C76CD6FC33EADC0B14B53F2D8FF97A7&key=yt8&kind=asr&lang=en",
+    "name": {
+      "runs": [
+        {
+          "text": "English (auto-generated)"
+        }
+      ]
+    },
+    "vssId": "a.en",
+    "languageCode": "en",
+    "kind": "asr",
+    "isTranslatable": true,
+    "trackName": ""
+  },
+  "segments": [
+    {
+      "start": 7.4,
+      "duration": 6.279,
+      "text": "welcome welcome to this fixity Pro how"
+    },
+    {
+      "start": 10.24,
+      "duration": 5.879,
+      "text": "to guide this tutorial will show you how"
+    },
+    {
+      "start": 13.679,
+      "duration": 4.801,
+      "text": "to use fixity Pro to check your digital"
+    },
+    {
+      "start": 16.119,
+      "duration": 4.24,
+      "text": "collections for any errors or changes"
+    },
+    {
+      "start": 18.48,
+      "duration": 4.4,
+      "text": "that could make them"
+    },
+    {
+      "start": 20.359,
+      "duration": 4.521,
+      "text": "inaccessible you can then take action as"
+    },
+    {
+      "start": 22.88,
+      "duration": 4.84,
+      "text": "needed to ensure your files remain"
+    },
+    {
+      "start": 24.88,
+      "duration": 6.239,
+      "text": "readable as long as"
+    },
+    {
+      "start": 27.72,
+      "duration": 5.76,
+      "text": "possible fixity Pro is a file Integrity"
+    },
+    {
+      "start": 31.119,
+      "duration": 5.321,
+      "text": "checking tool developed by"
+    },
+    {
+      "start": 33.48,
+      "duration": 5.56,
+      "text": "AVP it is free to access for the first"
+    },
+    {
+      "start": 36.44,
+      "duration": 6.639,
+      "text": "30 days and then you have the option to"
+    },
+    {
+      "start": 39.04,
+      "duration": 7.12,
+      "text": "pay $4.99 per month or £50 a"
+    },
+    {
+      "start": 43.079,
+      "duration": 5.841,
+      "text": "year using fixity Pro takes a guess work"
+    },
+    {
+      "start": 46.16,
+      "duration": 6.239,
+      "text": "out of preserving your digital files and"
+    },
+    {
+      "start": 48.92,
+      "duration": 6.24,
+      "text": "in this tutorial we will cover how to"
+    },
+    {
+      "start": 52.399,
+      "duration": 3.84,
+      "text": "set up and run the program and how to"
+    },
+    {
+      "start": 55.16,
+      "duration": 5.719,
+      "text": "read your"
+    },
+    {
+      "start": 56.239,
+      "duration": 4.64,
+      "text": "reports so let's get started"
+    },
+    {
+      "start": 65.0,
+      "duration": 4.439,
+      "text": "double click the icon to open fixity"
+    },
+    {
+      "start": 71.56,
+      "duration": 8.16,
+      "text": "Pro it will take some time to load but"
+    },
+    {
+      "start": 75.119,
+      "duration": 7.96,
+      "text": "when it opens the program will look like"
+    },
+    {
+      "start": 79.72,
+      "duration": 5.88,
+      "text": "this the first time you use the program"
+    },
+    {
+      "start": 83.079,
+      "duration": 8.04,
+      "text": "you need to change some settings so for"
+    },
+    {
+      "start": 85.6,
+      "duration": 8.32,
+      "text": "now click cancel in the new project box"
+    },
+    {
+      "start": 91.119,
+      "duration": 4.64,
+      "text": "first you need to tell fixity Pro where"
+    },
+    {
+      "start": 93.92,
+      "duration": 7.04,
+      "text": "you want it to store the reports that it"
+    },
+    {
+      "start": 95.759,
+      "duration": 9.04,
+      "text": "will create to do this click"
+    },
+    {
+      "start": 100.96,
+      "duration": 3.839,
+      "text": "preferences then reports"
+    },
+    {
+      "start": 105.0,
+      "duration": 7.84,
+      "text": "location under history path click"
+    },
+    {
+      "start": 110.159,
+      "duration": 5.64,
+      "text": "browse and navigate to the folder that"
+    },
+    {
+      "start": 112.84,
+      "duration": 7.36,
+      "text": "you want to store your reports"
+    },
+    {
+      "start": 115.799,
+      "duration": 4.401,
+      "text": "in Click open"
+    },
+    {
+      "start": 120.96,
+      "duration": 5.479,
+      "text": "repeat the same steps using the browse"
+    },
+    {
+      "start": 123.039,
+      "duration": 3.4,
+      "text": "button under the report"
+    },
+    {
+      "start": 128.679,
+      "duration": 4.521,
+      "text": "path for ease of use use the same"
+    },
+    {
+      "start": 131.48,
+      "duration": 5.399,
+      "text": "location for both"
+    },
+    {
+      "start": 133.2,
+      "duration": 6.44,
+      "text": "paths and then click"
+    },
+    {
+      "start": 136.879,
+      "duration": 4.521,
+      "text": "save all the reports that fixity Pro"
+    },
+    {
+      "start": 139.64,
+      "duration": 4.2,
+      "text": "produces when you run it will now be"
+    },
+    {
+      "start": 141.4,
+      "duration": 4.96,
+      "text": "sent to this"
+    },
+    {
+      "start": 143.84,
+      "duration": 5.0,
+      "text": "folder you also have the option to have"
+    },
+    {
+      "start": 146.36,
+      "duration": 5.4,
+      "text": "reports sent to your email"
+    },
+    {
+      "start": 148.84,
+      "duration": 4.72,
+      "text": "address this is not required but if you"
+    },
+    {
+      "start": 151.76,
+      "duration": 3.88,
+      "text": "would like to do this you need to"
+    },
+    {
+      "start": 153.56,
+      "duration": 4.039,
+      "text": "establish a connection between fixity"
+    },
+    {
+      "start": 155.64,
+      "duration": 3.28,
+      "text": "Pro and the email address that you would"
+    },
+    {
+      "start": 157.599,
+      "duration": 4.241,
+      "text": "like to"
+    },
+    {
+      "start": 158.92,
+      "duration": 5.239,
+      "text": "use the process and information needed"
+    },
+    {
+      "start": 161.84,
+      "duration": 5.24,
+      "text": "to do this is different for each email"
+    },
+    {
+      "start": 164.159,
+      "duration": 4.281,
+      "text": "provider so we can't cover this step in"
+    },
+    {
+      "start": 167.08,
+      "duration": 4.0,
+      "text": "this"
+    },
+    {
+      "start": 168.44,
+      "duration": 5.04,
+      "text": "tutorial more information on this can be"
+    },
+    {
+      "start": 171.08,
+      "duration": 5.28,
+      "text": "found in the user manual which can be"
+    },
+    {
+      "start": 173.48,
+      "duration": 6.679,
+      "text": "found under the support section of the"
+    },
+    {
+      "start": 176.36,
+      "duration": 3.799,
+      "text": "fixity pro website"
+    },
+    {
+      "start": 186.68,
+      "duration": 4.76,
+      "text": "now that the setup is complete let's run"
+    },
+    {
+      "start": 189.239,
+      "duration": 2.201,
+      "text": "a"
+    },
+    {
+      "start": 196.319,
+      "duration": 5.92,
+      "text": "project to create a new project click"
+    },
+    {
+      "start": 200.0,
+      "duration": 6.28,
+      "text": "the new project"
+    },
+    {
+      "start": 202.239,
+      "duration": 4.041,
+      "text": "button give your project a"
+    },
+    {
+      "start": 206.56,
+      "duration": 6.2,
+      "text": "name and click create"
+    },
+    {
+      "start": 210.519,
+      "duration": 4.121,
+      "text": "your project name appears at the top of"
+    },
+    {
+      "start": 212.76,
+      "duration": 4.52,
+      "text": "the"
+    },
+    {
+      "start": 214.64,
+      "duration": 7.4,
+      "text": "screen to add the folder you want to"
+    },
+    {
+      "start": 217.28,
+      "duration": 4.76,
+      "text": "create checksums 4 click add"
+    },
+    {
+      "start": 222.519,
+      "duration": 6.481,
+      "text": "directory if the folder is located on"
+    },
+    {
+      "start": 225.28,
+      "duration": 6.92,
+      "text": "your computer click internal if it is on"
+    },
+    {
+      "start": 229.0,
+      "duration": 7.239,
+      "text": "an external hard drive or server change"
+    },
+    {
+      "start": 232.2,
+      "duration": 4.039,
+      "text": "to external and click"
+    },
+    {
+      "start": 236.76,
+      "duration": 4.96,
+      "text": "save navigate to the folder you want to"
+    },
+    {
+      "start": 239.36,
+      "duration": 2.36,
+      "text": "work on"
+    },
+    {
+      "start": 243.239,
+      "duration": 3.601,
+      "text": "on and click"
+    },
+    {
+      "start": 247.56,
+      "duration": 7.12,
+      "text": "open to add more folders to the same"
+    },
+    {
+      "start": 250.48,
+      "duration": 4.2,
+      "text": "project repeat the steps from ad"
+    },
+    {
+      "start": 255.239,
+      "duration": 4.881,
+      "text": "directory once you have added all the"
+    },
+    {
+      "start": 257.479,
+      "duration": 4.521,
+      "text": "folders you want to process you then"
+    },
+    {
+      "start": 260.12,
+      "duration": 4.76,
+      "text": "have to decide if you want to run your"
+    },
+    {
+      "start": 262.0,
+      "duration": 4.84,
+      "text": "project scan manually yourself each time"
+    },
+    {
+      "start": 264.88,
+      "duration": 5.12,
+      "text": "or if you want to set up an automatic"
+    },
+    {
+      "start": 266.84,
+      "duration": 5.72,
+      "text": "scan to run periodically"
+    },
+    {
+      "start": 270.0,
+      "duration": 6.8,
+      "text": "we will run a manual scan in this"
+    },
+    {
+      "start": 272.56,
+      "duration": 6.6,
+      "text": "tutorial but to set up an automatic scan"
+    },
+    {
+      "start": 276.8,
+      "duration": 5.0,
+      "text": "use the drop-down menu under schedule"
+    },
+    {
+      "start": 279.16,
+      "duration": 5.28,
+      "text": "the scan to decide how often you want to"
+    },
+    {
+      "start": 281.8,
+      "duration": 4.88,
+      "text": "run the project and then complete the"
+    },
+    {
+      "start": 284.44,
+      "duration": 4.16,
+      "text": "other information to show either the day"
+    },
+    {
+      "start": 286.68,
+      "duration": 4.079,
+      "text": "or date and the time you want the scan"
+    },
+    {
+      "start": 288.6,
+      "duration": 2.159,
+      "text": "to"
+    },
+    {
+      "start": 295.6,
+      "duration": 6.2,
+      "text": "run then click the save project button"
+    },
+    {
+      "start": 299.16,
+      "duration": 5.479,
+      "text": "and when you're if your PC is on and fix"
+    },
+    {
+      "start": 301.8,
+      "duration": 5.76,
+      "text": "it to open at the specified day and time"
+    },
+    {
+      "start": 304.639,
+      "duration": 6.601,
+      "text": "the scan will run for"
+    },
+    {
+      "start": 307.56,
+      "duration": 6.24,
+      "text": "you to run a manual scan make sure that"
+    },
+    {
+      "start": 311.24,
+      "duration": 4.72,
+      "text": "manual only is selected under schedule"
+    },
+    {
+      "start": 313.8,
+      "duration": 2.16,
+      "text": "the"
+    },
+    {
+      "start": 316.039,
+      "duration": 5.16,
+      "text": "scan if you set up an email address to"
+    },
+    {
+      "start": 318.6,
+      "duration": 4.76,
+      "text": "send your reports to you can enter it"
+    },
+    {
+      "start": 321.199,
+      "duration": 4.961,
+      "text": "now by clicking add report recipient"
+    },
+    {
+      "start": 323.36,
+      "duration": 6.32,
+      "text": "email entering your email address and"
+    },
+    {
+      "start": 326.16,
+      "duration": 3.52,
+      "text": "clicking add"
+    },
+    {
+      "start": 331.44,
+      "duration": 7.479,
+      "text": "to run your manual scan click scan now"
+    },
+    {
+      "start": 334.919,
+      "duration": 4.0,
+      "text": "under run manual scan to"
+    },
+    {
+      "start": 339.72,
+      "duration": 4.72,
+      "text": "start click yes to save your project"
+    },
+    {
+      "start": 345.479,
+      "duration": 5.761,
+      "text": "changes click okay and the scan will"
+    },
+    {
+      "start": 351.919,
+      "duration": 5.361,
+      "text": "start the progress bar shows what"
+    },
+    {
+      "start": 354.4,
+      "duration": 4.72,
+      "text": "percentage of files have been scanned"
+    },
+    {
+      "start": 357.28,
+      "duration": 4.639,
+      "text": "and the scan is complete when the"
+    },
+    {
+      "start": 359.12,
+      "duration": 2.799,
+      "text": "progress bar bar"
+    },
+    {
+      "start": 364.8,
+      "duration": 6.959,
+      "text": "disappears navigate to the folder that"
+    },
+    {
+      "start": 367.639,
+      "duration": 4.12,
+      "text": "you asked fixity to store your reports"
+    },
+    {
+      "start": 376.88,
+      "duration": 6.0,
+      "text": "in Click fixity reports and open the"
+    },
+    {
+      "start": 381.039,
+      "duration": 6.16,
+      "text": "reports"
+    },
+    {
+      "start": 382.88,
+      "duration": 6.92,
+      "text": "folder your scan report will be in"
+    },
+    {
+      "start": 387.199,
+      "duration": 5.0,
+      "text": "here you're now ready to read your"
+    },
+    {
+      "start": 389.8,
+      "duration": 2.399,
+      "text": "report"
+    },
+    {
+      "start": 397.039,
+      "duration": 5.16,
+      "text": "data double click on your report to open"
+    },
+    {
+      "start": 404.599,
+      "duration": 4.561,
+      "text": "it this file gives you all the"
+    },
+    {
+      "start": 407.039,
+      "duration": 4.481,
+      "text": "information gathered from the scan that"
+    },
+    {
+      "start": 409.16,
+      "duration": 2.36,
+      "text": "you just"
+    },
+    {
+      "start": 414.56,
+      "duration": 5.12,
+      "text": "run the project name is"
+    },
+    {
+      "start": 417.36,
+      "duration": 5.279,
+      "text": "first followed by whether or not the"
+    },
+    {
+      "start": 419.68,
+      "duration": 2.959,
+      "text": "scan was completed"
+    },
+    {
+      "start": 424.16,
+      "duration": 6.28,
+      "text": "successfully it also shows the date that"
+    },
+    {
+      "start": 426.52,
+      "duration": 5.84,
+      "text": "the scan took place and how long it took"
+    },
+    {
+      "start": 430.44,
+      "duration": 3.439,
+      "text": "and it then shows the status of all the"
+    },
+    {
+      "start": 432.36,
+      "duration": 5.2,
+      "text": "files that were"
+    },
+    {
+      "start": 433.879,
+      "duration": 6.841,
+      "text": "scanned so let's talk about this a bit"
+    },
+    {
+      "start": 437.56,
+      "duration": 5.52,
+      "text": "more fixity Pro works by scanning your"
+    },
+    {
+      "start": 440.72,
+      "duration": 4.319,
+      "text": "files and allocating each one a unique"
+    },
+    {
+      "start": 443.08,
+      "duration": 5.119,
+      "text": "reference number called a"
+    },
+    {
+      "start": 445.039,
+      "duration": 5.84,
+      "text": "checkm the first time you run a scan all"
+    },
+    {
+      "start": 448.199,
+      "duration": 6.481,
+      "text": "files are confirmed as new files as"
+    },
+    {
+      "start": 450.879,
+      "duration": 3.801,
+      "text": "fixity pro has never seen them"
+    },
+    {
+      "start": 454.96,
+      "duration": 5.28,
+      "text": "before"
+    },
+    {
+      "start": 457.24,
+      "duration": 7.0,
+      "text": "however if we go back to fixity"
+    },
+    {
+      "start": 460.24,
+      "duration": 4.0,
+      "text": "Pro and we run the scan"
+    },
+    {
+      "start": 465.24,
+      "duration": 4.76,
+      "text": "again the report will go to the same"
+    },
+    {
+      "start": 477.599,
+      "duration": 6.04,
+      "text": "location we can see that the status of"
+    },
+    {
+      "start": 480.479,
+      "duration": 5.921,
+      "text": "all files has now changed to"
+    },
+    {
+      "start": 483.639,
+      "duration": 4.56,
+      "text": "confirmed this is because fixity pro has"
+    },
+    {
+      "start": 486.4,
+      "duration": 4.04,
+      "text": "compared the files with the data from"
+    },
+    {
+      "start": 488.199,
+      "duration": 3.201,
+      "text": "the first scan and found that nothing"
+    },
+    {
+      "start": 490.44,
+      "duration": 3.759,
+      "text": "has"
+    },
+    {
+      "start": 491.4,
+      "duration": 4.84,
+      "text": "changed this is ideal as it means your"
+    },
+    {
+      "start": 494.199,
+      "duration": 4.481,
+      "text": "files are still"
+    },
+    {
+      "start": 496.24,
+      "duration": 4.6,
+      "text": "accessible but what happens if there is"
+    },
+    {
+      "start": 498.68,
+      "duration": 3.04,
+      "text": "an error or your files have changed in"
+    },
+    {
+      "start": 500.84,
+      "duration": 3.919,
+      "text": "some"
+    },
+    {
+      "start": 501.72,
+      "duration": 5.479,
+      "text": "way if we open the folder that we're"
+    },
+    {
+      "start": 504.759,
+      "duration": 6.681,
+      "text": "running the scans"
+    },
+    {
+      "start": 507.199,
+      "duration": 4.241,
+      "text": "on and open a file"
+    },
+    {
+      "start": 516.24,
+      "duration": 5.08,
+      "text": "and make a small"
+    },
+    {
+      "start": 518.08,
+      "duration": 3.24,
+      "text": "change and"
+    },
+    {
+      "start": 525.08,
+      "duration": 6.04,
+      "text": "save and then we'll run the scan again"
+    },
+    {
+      "start": 543.519,
+      "duration": 6.721,
+      "text": "so as you can"
+    },
+    {
+      "start": 546.12,
+      "duration": 6.719,
+      "text": "see the alter filed now shows as"
+    },
+    {
+      "start": 550.24,
+      "duration": 4.68,
+      "text": "changed this is because fixity Pro"
+    },
+    {
+      "start": 552.839,
+      "duration": 5.0,
+      "text": "checks the file information and"
+    },
+    {
+      "start": 554.92,
+      "duration": 6.359,
+      "text": "highlights any changes at all and this"
+    },
+    {
+      "start": 557.839,
+      "duration": 6.601,
+      "text": "includes deleted or moved files as"
+    },
+    {
+      "start": 561.279,
+      "duration": 5.8,
+      "text": "well in many cases you might know that"
+    },
+    {
+      "start": 564.44,
+      "duration": 4.959,
+      "text": "the change to the file was made by you"
+    },
+    {
+      "start": 567.079,
+      "duration": 4.481,
+      "text": "but if you didn't make the change more"
+    },
+    {
+      "start": 569.399,
+      "duration": 3.961,
+      "text": "investigation is needed as an unknown"
+    },
+    {
+      "start": 571.56,
+      "duration": 4.92,
+      "text": "change could have damaged the file or"
+    },
+    {
+      "start": 573.36,
+      "duration": 5.599,
+      "text": "corrupted it which makes it"
+    },
+    {
+      "start": 576.48,
+      "duration": 5.599,
+      "text": "inaccessible this is why fixity pro is"
+    },
+    {
+      "start": 578.959,
+      "duration": 4.681,
+      "text": "so important knowledge is power and"
+    },
+    {
+      "start": 582.079,
+      "duration": 3.601,
+      "text": "knowing exactly what is happening with"
+    },
+    {
+      "start": 583.64,
+      "duration": 5.639,
+      "text": "your files mean that you can now take"
+    },
+    {
+      "start": 585.68,
+      "duration": 3.599,
+      "text": "steps to ensure that no files are"
+    },
+    {
+      "start": 593.0,
+      "duration": 4.48,
+      "text": "lost you have just run and read your"
+    },
+    {
+      "start": 595.72,
+      "duration": 4.359,
+      "text": "first fixity pro"
+    },
+    {
+      "start": 597.48,
+      "duration": 5.2,
+      "text": "report we hope you found that tutorial"
+    },
+    {
+      "start": 600.079,
+      "duration": 5.361,
+      "text": "useful for further information please"
+    },
+    {
+      "start": 602.68,
+      "duration": 5.12,
+      "text": "refer to the fixity pro user manual or"
+    },
+    {
+      "start": 605.44,
+      "duration": 5.6,
+      "text": "contact the Scottish cemil and archives"
+    },
+    {
+      "start": 607.8,
+      "duration": 3.24,
+      "text": "or dig"
+    }
+  ],
+  "full_text": "welcome welcome to this fixity Pro how to guide this tutorial will show you how to use fixity Pro to check your digital collections for any errors or changes that could make them inaccessible you can then take action as needed to ensure your files remain readable as long as possible fixity Pro is a file Integrity checking tool developed by AVP it is free to access for the first 30 days and then you have the option to pay $4.99 per month or £50 a year using fixity Pro takes a guess work out of preserving your digital files and in this tutorial we will cover how to set up and run the program and how to read your reports so let's get started double click the icon to open fixity Pro it will take some time to load but when it opens the program will look like this the first time you use the program you need to change some settings so for now click cancel in the new project box first you need to tell fixity Pro where you want it to store the reports that it will create to do this click preferences then reports location under history path click browse and navigate to the folder that you want to store your reports in Click open repeat the same steps using the browse button under the report path for ease of use use the same location for both paths and then click save all the reports that fixity Pro produces when you run it will now be sent to this folder you also have the option to have reports sent to your email address this is not required but if you would like to do this you need to establish a connection between fixity Pro and the email address that you would like to use the process and information needed to do this is different for each email provider so we can't cover this step in this tutorial more information on this can be found in the user manual which can be found under the support section of the fixity pro website now that the setup is complete let's run a project to create a new project click the new project button give your project a name and click create your project name appears at the top of the screen to add the folder you want to create checksums 4 click add directory if the folder is located on your computer click internal if it is on an external hard drive or server change to external and click save navigate to the folder you want to work on on and click open to add more folders to the same project repeat the steps from ad directory once you have added all the folders you want to process you then have to decide if you want to run your project scan manually yourself each time or if you want to set up an automatic scan to run periodically we will run a manual scan in this tutorial but to set up an automatic scan use the drop-down menu under schedule the scan to decide how often you want to run the project and then complete the other information to show either the day or date and the time you want the scan to run then click the save project button and when you're if your PC is on and fix it to open at the specified day and time the scan will run for you to run a manual scan make sure that manual only is selected under schedule the scan if you set up an email address to send your reports to you can enter it now by clicking add report recipient email entering your email address and clicking add to run your manual scan click scan now under run manual scan to start click yes to save your project changes click okay and the scan will start the progress bar shows what percentage of files have been scanned and the scan is complete when the progress bar bar disappears navigate to the folder that you asked fixity to store your reports in Click fixity reports and open the reports folder your scan report will be in here you're now ready to read your report data double click on your report to open it this file gives you all the information gathered from the scan that you just run the project name is first followed by whether or not the scan was completed successfully it also shows the date that the scan took place and how long it took and it then shows the status of all the files that were scanned so let's talk about this a bit more fixity Pro works by scanning your files and allocating each one a unique reference number called a checkm the first time you run a scan all files are confirmed as new files as fixity pro has never seen them before however if we go back to fixity Pro and we run the scan again the report will go to the same location we can see that the status of all files has now changed to confirmed this is because fixity pro has compared the files with the data from the first scan and found that nothing has changed this is ideal as it means your files are still accessible but what happens if there is an error or your files have changed in some way if we open the folder that we're running the scans on and open a file and make a small change and save and then we'll run the scan again so as you can see the alter filed now shows as changed this is because fixity Pro checks the file information and highlights any changes at all and this includes deleted or moved files as well in many cases you might know that the change to the file was made by you but if you didn't make the change more investigation is needed as an unknown change could have damaged the file or corrupted it which makes it inaccessible this is why fixity pro is so important knowledge is power and knowing exactly what is happening with your files mean that you can now take steps to ensure that no files are lost you have just run and read your first fixity pro report we hope you found that tutorial useful for further information please refer to the fixity pro user manual or contact the Scottish cemil and archives or dig",
+  "attempts": [
+    {
+      "client": "IOS",
+      "playability": {
+        "status": "OK",
+        "playableInEmbed": true,
+        "offlineability": {
+          "buttonRenderer": {
+            "navigationEndpoint": {
+              "clickTrackingParams": "CAkQ6ewBIhMIstXAlezblwMVmlxeAx3_JSpCygEEcS5bHQ==",
+              "ypcGetOfflineUpsellEndpoint": {
+                "params": "CiXqqN25AR8KCzFwUlk3bHBaN25BShAwZ2NKQ1NRRkptUC1qYXJCIgsxcFJZN2xwWjduQSoVCAkYAVIPCgsxcFJZN2xwWjduQSAB"
+              }
+            },
+            "trackingParams": "CAkQ6ewBIhMIstXAlezblwMVmlxeAx3_JSpC"
+          }
+        },
+        "pictureInPicture": {
+          "pictureInPictureRenderer": {
+            "playableInPip": true,
+            "offByDefault": false,
+            "shouldResumeOnHead": false
+          }
+        },
+        "miniplayer": {
+          "miniplayerRenderer": {
+            "playbackMode": "PLAYBACK_MODE_ALLOW"
+          }
+        },
+        "contextParams": "Q0FFU0FnZ0M="
+      },
+      "outcome": "ok"
+    }
+  ],
+  "fetched_at": "2026-10-28T04:11:42.962493+00:00",
+  "client": "IOS",
+  "json_path": "transcripts/170_1pRY7lpZ7nA.json",
+  "text_path": "transcripts/170_1pRY7lpZ7nA.txt"
+}

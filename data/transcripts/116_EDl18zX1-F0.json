@@ -1,0 +1,512 @@
+{
+  "index": 116,
+  "url": "https://www.youtube.com/watch?v=EDl18zX1-F0",
+  "video_id": "EDl18zX1-F0",
+  "status": "ok",
+  "metadata": {
+    "title": "Quick tip: How to do an Online Title Search",
+    "author": "San Luis Obispo County Clerk-Recorder",
+    "channelId": "UCSZPEFZuq8YWmRFCvb8GElw",
+    "lengthSeconds": "185",
+    "viewCount": "5723",
+    "shortDescription": "The San Luis Obispo County Clerk-Recorder's Office created a 3-minute video to walk viewers through the process of searching for property title documentation online"
+  },
+  "caption_tracks": [
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=EDl18zX1-F0&ei=83Xhau7pM-eTsfIPk-GxsQk&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185891&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=03C219CF856A66778334403AB6585A77D776F2B9.68CDD4F6D59D30343F2C7002D6E1F69046B88B23&key=yt8&kind=asr&lang=en&variant=gemini",
+      "name": {
+        "runs": [
+          {
+            "text": "English (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.en",
+      "languageCode": "en",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    }
+  ],
+  "selected_track": {
+    "baseUrl": "https://www.youtube.com/api/timedtext?v=EDl18zX1-F0&ei=83Xhau7pM-eTsfIPk-GxsQk&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185891&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=03C219CF856A66778334403AB6585A77D776F2B9.68CDD4F6D59D30343F2C7002D6E1F69046B88B23&key=yt8&kind=asr&lang=en&variant=gemini",
+    "name": {
+      "runs": [
+        {
+          "text": "English (auto-generated)"
+        }
+      ]
+    },
+    "vssId": "a.en",
+    "languageCode": "en",
+    "kind": "asr",
+    "isTranslatable": true,
+    "trackName": ""
+  },
+  "segments": [
+    {
+      "start": 2.12,
+      "duration": 3.32,
+      "text": "The County of San Luis Obispo"
+    },
+    {
+      "start": 3.44,
+      "duration": 3.72,
+      "text": "Clerk-Recorder's Office serves a number"
+    },
+    {
+      "start": 5.44,
+      "duration": 4.24,
+      "text": "of important functions on behalf of"
+    },
+    {
+      "start": 7.16,
+      "duration": 4.56,
+      "text": "local residents. One of these functions"
+    },
+    {
+      "start": 9.68,
+      "duration": 4.08,
+      "text": "is recording and maintaining records of"
+    },
+    {
+      "start": 11.72,
+      "duration": 3.76,
+      "text": "land ownership within the county. The"
+    },
+    {
+      "start": 13.76,
+      "duration": 4.24,
+      "text": "recorder's official records provide"
+    },
+    {
+      "start": 15.48,
+      "duration": 5.4,
+      "text": "public access to information regarding"
+    },
+    {
+      "start": 18.0,
+      "duration": 5.04,
+      "text": "land and land ownership. Recent media"
+    },
+    {
+      "start": 20.88,
+      "duration": 4.24,
+      "text": "stories regarding fraud scams have led"
+    },
+    {
+      "start": 23.04,
+      "duration": 4.76,
+      "text": "to some property owners wanting to check"
+    },
+    {
+      "start": 25.12,
+      "duration": 4.24,
+      "text": "on the status of their recorded title."
+    },
+    {
+      "start": 27.8,
+      "duration": 3.6,
+      "text": "We'd like to take a few minutes to walk"
+    },
+    {
+      "start": 29.36,
+      "duration": 3.32,
+      "text": "you through exactly how to do this"
+    },
+    {
+      "start": 31.4,
+      "duration": 2.8,
+      "text": "online."
+    },
+    {
+      "start": 32.68,
+      "duration": 3.92,
+      "text": "The Clerk-Recorder's website can be"
+    },
+    {
+      "start": 34.2,
+      "duration": 4.96,
+      "text": "reached at slovote.com."
+    },
+    {
+      "start": 36.6,
+      "duration": 4.92,
+      "text": "The simplest way to access the document"
+    },
+    {
+      "start": 39.16,
+      "duration": 4.92,
+      "text": "search function is by clicking on this"
+    },
+    {
+      "start": 41.52,
+      "duration": 4.96,
+      "text": "graphic depicting books, which says"
+    },
+    {
+      "start": 44.08,
+      "duration": 4.16,
+      "text": "begin your recorded document search."
+    },
+    {
+      "start": 46.48,
+      "duration": 4.0,
+      "text": "That will take you to this official"
+    },
+    {
+      "start": 48.24,
+      "duration": 4.36,
+      "text": "record search portal."
+    },
+    {
+      "start": 50.48,
+      "duration": 4.4,
+      "text": "One way to conduct a title search is by"
+    },
+    {
+      "start": 52.6,
+      "duration": 3.48,
+      "text": "clicking the top button, which says name"
+    },
+    {
+      "start": 54.88,
+      "duration": 2.84,
+      "text": "search."
+    },
+    {
+      "start": 56.08,
+      "duration": 3.96,
+      "text": "From there, you can enter the property"
+    },
+    {
+      "start": 57.72,
+      "duration": 4.72,
+      "text": "owner's name, but be sure to follow the"
+    },
+    {
+      "start": 60.04,
+      "duration": 5.199,
+      "text": "format of last name, then first name"
+    },
+    {
+      "start": 62.44,
+      "duration": 4.48,
+      "text": "with no comma, then click search. Keep"
+    },
+    {
+      "start": 65.239,
+      "duration": 3.761,
+      "text": "in mind, the more information you"
+    },
+    {
+      "start": 66.92,
+      "duration": 4.64,
+      "text": "include here, the tighter the search"
+    },
+    {
+      "start": 69.0,
+      "duration": 4.88,
+      "text": "will be. So, don't include a middle name"
+    },
+    {
+      "start": 71.56,
+      "duration": 5.2,
+      "text": "or middle initial unless you're certain"
+    },
+    {
+      "start": 73.88,
+      "duration": 4.64,
+      "text": "that is in the original paperwork."
+    },
+    {
+      "start": 76.76,
+      "duration": 4.2,
+      "text": "The search results will display in a"
+    },
+    {
+      "start": 78.52,
+      "duration": 4.48,
+      "text": "list like this. We've redacted the names"
+    },
+    {
+      "start": 80.96,
+      "duration": 4.72,
+      "text": "from this particular search because they"
+    },
+    {
+      "start": 83.0,
+      "duration": 4.76,
+      "text": "aren't important. What is important is"
+    },
+    {
+      "start": 85.68,
+      "duration": 4.08,
+      "text": "to now look for a recording entry that"
+    },
+    {
+      "start": 87.76,
+      "duration": 3.68,
+      "text": "says deed and is followed by"
+    },
+    {
+      "start": 89.76,
+      "duration": 3.0,
+      "text": "parentheses."
+    },
+    {
+      "start": 91.44,
+      "duration": 2.84,
+      "text": "In this case, you aren't looking for"
+    },
+    {
+      "start": 92.76,
+      "duration": 4.48,
+      "text": "other entries that include the word"
+    },
+    {
+      "start": 94.28,
+      "duration": 5.64,
+      "text": "deed, like deed of trust. Next, look at"
+    },
+    {
+      "start": 97.24,
+      "duration": 4.76,
+      "text": "the name or names listed under grantee."
+    },
+    {
+      "start": 99.92,
+      "duration": 4.56,
+      "text": "That is who was recorded as the title"
+    },
+    {
+      "start": 102.0,
+      "duration": 4.48,
+      "text": "holder in this transaction. What you're"
+    },
+    {
+      "start": 104.48,
+      "duration": 4.8,
+      "text": "looking for is an accurate listing of"
+    },
+    {
+      "start": 106.48,
+      "duration": 5.08,
+      "text": "the grantor, who relinquished the title,"
+    },
+    {
+      "start": 109.28,
+      "duration": 4.6,
+      "text": "and the grantee, whoever took possession"
+    },
+    {
+      "start": 111.56,
+      "duration": 4.28,
+      "text": "of it. Another method of looking up the"
+    },
+    {
+      "start": 113.88,
+      "duration": 4.28,
+      "text": "same information is to go to the"
+    },
+    {
+      "start": 115.84,
+      "duration": 4.76,
+      "text": "advanced search option down here at the"
+    },
+    {
+      "start": 118.16,
+      "duration": 4.88,
+      "text": "bottom of the record search page. You"
+    },
+    {
+      "start": 120.6,
+      "duration": 4.72,
+      "text": "can search for deed and again select the"
+    },
+    {
+      "start": 123.04,
+      "duration": 4.2,
+      "text": "option with those parentheses, then"
+    },
+    {
+      "start": 125.32,
+      "duration": 3.04,
+      "text": "enter your last name and first name"
+    },
+    {
+      "start": 127.24,
+      "duration": 3.08,
+      "text": "here."
+    },
+    {
+      "start": 128.36,
+      "duration": 3.84,
+      "text": "You are able to purchase a copy of any"
+    },
+    {
+      "start": 130.32,
+      "duration": 4.44,
+      "text": "document from your search by adding the"
+    },
+    {
+      "start": 132.2,
+      "duration": 4.88,
+      "text": "appropriate entry to your shopping cart."
+    },
+    {
+      "start": 134.76,
+      "duration": 4.84,
+      "text": "Please note, only images from records"
+    },
+    {
+      "start": 137.08,
+      "duration": 4.52,
+      "text": "from August 8th, 2001 through the"
+    },
+    {
+      "start": 139.6,
+      "duration": 4.08,
+      "text": "present are available for purchase this"
+    },
+    {
+      "start": 141.6,
+      "duration": 3.48,
+      "text": "way. Older document copies can be"
+    },
+    {
+      "start": 143.68,
+      "duration": 3.52,
+      "text": "purchased by contacting the"
+    },
+    {
+      "start": 145.08,
+      "duration": 3.84,
+      "text": "Clerk-Recorder's Office."
+    },
+    {
+      "start": 147.2,
+      "duration": 3.2,
+      "text": "You should also note that the document"
+    },
+    {
+      "start": 148.92,
+      "duration": 3.56,
+      "text": "will not be mailed to you as a hard"
+    },
+    {
+      "start": 150.4,
+      "duration": 5.08,
+      "text": "copy, but made available for you to"
+    },
+    {
+      "start": 152.48,
+      "duration": 4.56,
+      "text": "download and save or print. If you see"
+    },
+    {
+      "start": 155.48,
+      "duration": 4.28,
+      "text": "something concerning in your search"
+    },
+    {
+      "start": 157.04,
+      "duration": 6.0,
+      "text": "results or just have questions, contact"
+    },
+    {
+      "start": 159.76,
+      "duration": 5.44,
+      "text": "the County Assessor's Office."
+    },
+    {
+      "start": 163.04,
+      "duration": 4.48,
+      "text": "Unfortunately, there is no way to lock"
+    },
+    {
+      "start": 165.2,
+      "duration": 4.8,
+      "text": "or freeze your title. While fraud is"
+    },
+    {
+      "start": 167.52,
+      "duration": 4.2,
+      "text": "relatively rare, the best precaution you"
+    },
+    {
+      "start": 170.0,
+      "duration": 3.76,
+      "text": "can take is to check your title"
+    },
+    {
+      "start": 171.72,
+      "duration": 4.239,
+      "text": "regularly and reach out if you see"
+    },
+    {
+      "start": 173.76,
+      "duration": 3.92,
+      "text": "something that doesn't look right. We"
+    },
+    {
+      "start": 175.959,
+      "duration": 3.601,
+      "text": "hope this video was useful in helping"
+    },
+    {
+      "start": 177.68,
+      "duration": 3.76,
+      "text": "you find what you need. That's what we"
+    },
+    {
+      "start": 179.56,
+      "duration": 4.48,
+      "text": "strive to do in the Clerk-Recorder's"
+    },
+    {
+      "start": 181.44,
+      "duration": 2.6,
+      "text": "Office."
+    }
+  ],
+  "full_text": "The County of San Luis Obispo Clerk-Recorder's Office serves a number of important functions on behalf of local residents. One of these functions is recording and maintaining records of land ownership within the county. The recorder's official records provide public access to information regarding land and land ownership. Recent media stories regarding fraud scams have led to some property owners wanting to check on the status of their recorded title. We'd like to take a few minutes to walk you through exactly how to do this online. The Clerk-Recorder's website can be reached at slovote.com. The simplest way to access the document search function is by clicking on this graphic depicting books, which says begin your recorded document search. That will take you to this official record search portal. One way to conduct a title search is by clicking the top button, which says name search. From there, you can enter the property owner's name, but be sure to follow the format of last name, then first name with no comma, then click search. Keep in mind, the more information you include here, the tighter the search will be. So, don't include a middle name or middle initial unless you're certain that is in the original paperwork. The search results will display in a list like this. We've redacted the names from this particular search because they aren't important. What is important is to now look for a recording entry that says deed and is followed by parentheses. In this case, you aren't looking for other entries that include the word deed, like deed of trust. Next, look at the name or names listed under grantee. That is who was recorded as the title holder in this transaction. What you're looking for is an accurate listing of the grantor, who relinquished the title, and the grantee, whoever took possession of it. Another method of looking up the same information is to go to the advanced search option down here at the bottom of the record search page. You can search for deed and again select the option with those parentheses, then enter your last name and first name here. You are able to purchase a copy of any document from your search by adding the appropriate entry to your shopping cart. Please note, only images from records from August 8th, 2001 through the present are available for purchase this way. Older document copies can be purchased by contacting the Clerk-Recorder's Office. You should also note that the document will not be mailed to you as a hard copy, but made available for you to download and save or print. If you see something concerning in your search results or just have questions, contact the County Assessor's Office. Unfortunately, there is no way to lock or freeze your title. While fraud is relatively rare, the best precaution you can take is to check your title regularly and reach out if you see something that doesn't look right. We hope this video was useful in helping you find what you need. That's what we strive to do in the Clerk-Recorder's Office.",
+  "attempts": [
+    {
+      "client": "IOS",
+      "playability": {
+        "status": "OK",
+        "playableInEmbed": true,
+        "offlineability": {
+          "buttonRenderer": {
+            "navigationEndpoint": {
+              "clickTrackingParams": "CAkQ6ewBIhMIrq_AkOzblwMV50lMCB2TcCyWygEE5v_viQ==",
+              "ypcGetOfflineUpsellEndpoint": {
+                "params": "ChPqqN25AQ0KC0VEbDE4elgxLUYwIgtFRGwxOHpYMS1GMCoVCAkYAVIPCgtFRGwxOHpYMS1GMCAB"
+              }
+            },
+            "trackingParams": "CAkQ6ewBIhMIrq_AkOzblwMV50lMCB2TcCyW"
+          }
+        },
+        "pictureInPicture": {
+          "pictureInPictureRenderer": {
+            "playableInPip": true,
+            "offByDefault": false,
+            "shouldResumeOnHead": false
+          }
+        },
+        "miniplayer": {
+          "miniplayerRenderer": {
+            "playbackMode": "PLAYBACK_MODE_ALLOW"
+          }
+        },
+        "contextParams": "Q0FFU0FnZ0M="
+      },
+      "outcome": "ok"
+    }
+  ],
+  "fetched_at": "2026-10-28T04:11:32.868241+00:00",
+  "client": "IOS",
+  "json_path": "transcripts/116_EDl18zX1-F0.json",
+  "text_path": "transcripts/116_EDl18zX1-F0.txt"
+}

@@ -1,0 +1,2498 @@
+{
+  "index": 20,
+  "url": "https://www.youtube.com/watch?v=J1h18kFbXKU",
+  "video_id": "J1h18kFbXKU",
+  "status": "ok",
+  "metadata": {
+    "title": "Research Logs: A Variety of Styles to Suit Your Project, Part 2",
+    "author": "FamilySearch",
+    "channelId": "UC-9GZ7QHKOmLS0APnfz2g1Q",
+    "lengthSeconds": "1218",
+    "viewCount": "1812",
+    "shortDescription": "Rebecca Whitman Koford, CG, CGL, finds effective research with organization. This lecture, Research Logs: A Variety of Styles to Suit Your Project, discusses the value of research logs and introduces the second of three styles to choose from—logging research by record type.\n\nThis video is part two of a three-part series.\n\nThis presentation was part of RootsTech Connect 2021. Find hundreds of free family history classes, keynotes, and more. http://familysearch.me/RootsTech \n\n#rootstechconnect\n\nRootsTech is hosted by FamilySearch, a global nonprofit organization dedicated to creating inspiring family discovery experiences. RootsTech is the premier global event and learning resource for making family connections and receiving guidance to help people learn more about their families.  \n\nFamilySearch is an international, nonprofit organization dedicated to helping people all over the world connect with their family: past, present, and future. Our partnerships with thousands of record custodians and major genealogical organizations allow us to make billions of records available for you to research your family tree free of charge! Regardless of where or how you research your ancestry, we have specialists all over the world to help you experience the joy of connecting with your heritage.\n\nOur desire to Connect with the Past, Present, and Future https://youtu.be/3cmj5kGm2Xw   \n\nSubscribe:  \nhttp://familysearch.me/youtube   \nhttp://familysearch.me/youtubeportuguese   \nhttp://familysearch.me/youtubespanish   \nhttp://familysearch.me/youtubeeurope   \n\nConnect with FamilySearch:  \nVisit: http://familysearch.me/home   \nLike FamilySearch on Facebook: http://familysearch.me/facebook   \nFollow FamilySearch on Twitter: http://familysearch.me/twitter   \nFollow FamilySearch on Instagram: http://familysearch.me/instagram",
+    "keywords": [
+      "Research Logs: A Variety of Styles to Suit Your Project",
+      "Part 2",
+      "research logs",
+      "A Variety of Styles to Suit Your Project",
+      "genealogy research",
+      "genealogy research project",
+      "research project",
+      "genealogy research log",
+      "rootstech 2021",
+      "rootstech connect",
+      "rootstech",
+      "rootstech connect 2021",
+      "genealogy research logs",
+      "organized genealogy research",
+      "organized research",
+      "familysearch",
+      "family history",
+      "genealogy",
+      "genealogy research tips"
+    ]
+  },
+  "caption_tracks": [
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=J1h18kFbXKU&ei=43XhaveIKbWYsfIPo_nO4QM&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185875&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=671BEFA9FDE5D7C590036EB58F2A66228A08B26F.94FB3392FEFF138504E685B057F8CEAC32A3427B&key=yt8&kind=asr&lang=en",
+      "name": {
+        "runs": [
+          {
+            "text": "English (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.en",
+      "languageCode": "en",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    }
+  ],
+  "selected_track": {
+    "baseUrl": "https://www.youtube.com/api/timedtext?v=J1h18kFbXKU&ei=43XhaveIKbWYsfIPo_nO4QM&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185875&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=671BEFA9FDE5D7C590036EB58F2A66228A08B26F.94FB3392FEFF138504E685B057F8CEAC32A3427B&key=yt8&kind=asr&lang=en",
+    "name": {
+      "runs": [
+        {
+          "text": "English (auto-generated)"
+        }
+      ]
+    },
+    "vssId": "a.en",
+    "languageCode": "en",
+    "kind": "asr",
+    "isTranslatable": true,
+    "trackName": ""
+  },
+  "segments": [
+    {
+      "start": 1.73,
+      "duration": 23.709,
+      "text": "[Music]"
+    },
+    {
+      "start": 23.359,
+      "duration": 5.441,
+      "text": "welcome to research logs"
+    },
+    {
+      "start": 25.439,
+      "duration": 6.64,
+      "text": "a variety of styles to suit your project"
+    },
+    {
+      "start": 28.8,
+      "duration": 4.56,
+      "text": "this is part two of three i am rebecca"
+    },
+    {
+      "start": 32.079,
+      "duration": 3.681,
+      "text": "whitman coford"
+    },
+    {
+      "start": 33.36,
+      "duration": 5.519,
+      "text": "certified genealogist and certified"
+    },
+    {
+      "start": 35.76,
+      "duration": 5.52,
+      "text": "genealogical lecturer"
+    },
+    {
+      "start": 38.879,
+      "duration": 3.121,
+      "text": "in this three-part series we will"
+    },
+    {
+      "start": 41.28,
+      "duration": 3.84,
+      "text": "explore"
+    },
+    {
+      "start": 42.0,
+      "duration": 6.32,
+      "text": "three research log style varieties"
+    },
+    {
+      "start": 45.12,
+      "duration": 5.119,
+      "text": "first the date search style second the"
+    },
+    {
+      "start": 48.32,
+      "duration": 5.759,
+      "text": "record category style"
+    },
+    {
+      "start": 50.239,
+      "duration": 6.601,
+      "text": "and last the plan and log style as we go"
+    },
+    {
+      "start": 54.079,
+      "duration": 4.16,
+      "text": "we'll also discuss the value of research"
+    },
+    {
+      "start": 56.84,
+      "duration": 4.44,
+      "text": "logs"
+    },
+    {
+      "start": 58.239,
+      "duration": 6.48,
+      "text": "in this part 2 we will focus on the"
+    },
+    {
+      "start": 61.28,
+      "duration": 3.439,
+      "text": "record category style"
+    },
+    {
+      "start": 64.96,
+      "duration": 3.04,
+      "text": "in each part i'll also introduce a"
+    },
+    {
+      "start": 67.2,
+      "duration": 3.52,
+      "text": "complementary"
+    },
+    {
+      "start": 68.0,
+      "duration": 4.88,
+      "text": "organizational technique to work with"
+    },
+    {
+      "start": 70.72,
+      "duration": 4.0,
+      "text": "any of the research log styles for more"
+    },
+    {
+      "start": 72.88,
+      "duration": 4.4,
+      "text": "effective analysis"
+    },
+    {
+      "start": 74.72,
+      "duration": 5.52,
+      "text": "this lecture will introduce data lists"
+    },
+    {
+      "start": 77.28,
+      "duration": 2.96,
+      "text": "and timelines"
+    },
+    {
+      "start": 80.64,
+      "duration": 3.76,
+      "text": "are research log worth the effort"
+    },
+    {
+      "start": 85.119,
+      "duration": 6.561,
+      "text": "a research log represents four basic"
+    },
+    {
+      "start": 88.159,
+      "duration": 8.241,
+      "text": "habits of successful researchers"
+    },
+    {
+      "start": 91.68,
+      "duration": 8.079,
+      "text": "search stop summarize"
+    },
+    {
+      "start": 96.4,
+      "duration": 7.039,
+      "text": "and repeat we're really good at the"
+    },
+    {
+      "start": 99.759,
+      "duration": 3.68,
+      "text": "search and repeat parts aren't we"
+    },
+    {
+      "start": 105.759,
+      "duration": 7.841,
+      "text": "however it is the stop and the summarize"
+    },
+    {
+      "start": 109.439,
+      "duration": 4.161,
+      "text": "that makes us truly effective"
+    },
+    {
+      "start": 113.68,
+      "duration": 3.2,
+      "text": "when we stop and really look at what we"
+    },
+    {
+      "start": 116.399,
+      "duration": 3.921,
+      "text": "have"
+    },
+    {
+      "start": 116.88,
+      "duration": 6.239,
+      "text": "we need patience it's so hard"
+    },
+    {
+      "start": 120.32,
+      "duration": 3.36,
+      "text": "not to get excited and run off to that"
+    },
+    {
+      "start": 123.119,
+      "duration": 4.081,
+      "text": "next"
+    },
+    {
+      "start": 123.68,
+      "duration": 5.279,
+      "text": "shiny little fact or shiny little record"
+    },
+    {
+      "start": 127.2,
+      "duration": 4.399,
+      "text": "we have to stop and think about the"
+    },
+    {
+      "start": 128.959,
+      "duration": 5.681,
+      "text": "record we're looking at now"
+    },
+    {
+      "start": 131.599,
+      "duration": 5.681,
+      "text": "give us give ourselves time to analyze"
+    },
+    {
+      "start": 134.64,
+      "duration": 3.76,
+      "text": "to think about the record we do what my"
+    },
+    {
+      "start": 137.28,
+      "duration": 4.88,
+      "text": "mentor"
+    },
+    {
+      "start": 138.4,
+      "duration": 4.8,
+      "text": "richard g sayer cgcgl has always drilled"
+    },
+    {
+      "start": 142.16,
+      "duration": 4.24,
+      "text": "into me"
+    },
+    {
+      "start": 143.2,
+      "duration": 5.679,
+      "text": "read every word"
+    },
+    {
+      "start": 146.4,
+      "duration": 6.08,
+      "text": "i tend to skim if i'm not careful and i"
+    },
+    {
+      "start": 148.879,
+      "duration": 3.601,
+      "text": "can misread things that way"
+    },
+    {
+      "start": 152.879,
+      "duration": 4.241,
+      "text": "we summarize and this is what the whole"
+    },
+    {
+      "start": 155.68,
+      "duration": 5.6,
+      "text": "point of research logs"
+    },
+    {
+      "start": 157.12,
+      "duration": 6.8,
+      "text": "are to stop and make us"
+    },
+    {
+      "start": 161.28,
+      "duration": 3.679,
+      "text": "write things down and we start analyzing"
+    },
+    {
+      "start": 163.92,
+      "duration": 3.36,
+      "text": "when we write"
+    },
+    {
+      "start": 164.959,
+      "duration": 3.441,
+      "text": "we talk out our ideas we write"
+    },
+    {
+      "start": 167.28,
+      "duration": 3.039,
+      "text": "conclusions"
+    },
+    {
+      "start": 168.4,
+      "duration": 3.52,
+      "text": "we write about future research and"
+    },
+    {
+      "start": 170.319,
+      "duration": 5.841,
+      "text": "evidence and what"
+    },
+    {
+      "start": 171.92,
+      "duration": 7.84,
+      "text": "all of this means a research log"
+    },
+    {
+      "start": 176.16,
+      "duration": 6.64,
+      "text": "is a working document for you it's"
+    },
+    {
+      "start": 179.76,
+      "duration": 3.52,
+      "text": "as i said before in part one it's your"
+    },
+    {
+      "start": 182.8,
+      "duration": 3.2,
+      "text": "brain"
+    },
+    {
+      "start": 183.28,
+      "duration": 4.319,
+      "text": "on paper and i'm saying it again you're"
+    },
+    {
+      "start": 186.0,
+      "duration": 4.879,
+      "text": "making calculations"
+    },
+    {
+      "start": 187.599,
+      "duration": 6.56,
+      "text": "in writing right here"
+    },
+    {
+      "start": 190.879,
+      "duration": 7.28,
+      "text": "the only wrong way is to not record"
+    },
+    {
+      "start": 194.159,
+      "duration": 5.921,
+      "text": "your searches now to introduce the"
+    },
+    {
+      "start": 198.159,
+      "duration": 5.761,
+      "text": "record type research log"
+    },
+    {
+      "start": 200.08,
+      "duration": 3.84,
+      "text": "it's one of my favorites to use"
+    },
+    {
+      "start": 204.56,
+      "duration": 3.599,
+      "text": "when we use the record type research log"
+    },
+    {
+      "start": 207.2,
+      "duration": 4.0,
+      "text": "it's simply"
+    },
+    {
+      "start": 208.159,
+      "duration": 4.0,
+      "text": "that we take notes by category of record"
+    },
+    {
+      "start": 211.2,
+      "duration": 3.52,
+      "text": "type"
+    },
+    {
+      "start": 212.159,
+      "duration": 4.241,
+      "text": "because it operates as a checklist of"
+    },
+    {
+      "start": 214.72,
+      "duration": 5.68,
+      "text": "resources"
+    },
+    {
+      "start": 216.4,
+      "duration": 5.839,
+      "text": "we like in any research log we document"
+    },
+    {
+      "start": 220.4,
+      "duration": 4.399,
+      "text": "every record that we look at with"
+    },
+    {
+      "start": 222.239,
+      "duration": 4.0,
+      "text": "citations even if the record didn't"
+    },
+    {
+      "start": 224.799,
+      "duration": 4.321,
+      "text": "produce something"
+    },
+    {
+      "start": 226.239,
+      "duration": 5.041,
+      "text": "we put in all our positive results all"
+    },
+    {
+      "start": 229.12,
+      "duration": 4.72,
+      "text": "our negative search results"
+    },
+    {
+      "start": 231.28,
+      "duration": 4.48,
+      "text": "if we have multiple jurisdictions say"
+    },
+    {
+      "start": 233.84,
+      "duration": 4.64,
+      "text": "we've looked at probate records"
+    },
+    {
+      "start": 235.76,
+      "duration": 3.28,
+      "text": "in multiple counties we just simply"
+    },
+    {
+      "start": 238.48,
+      "duration": 2.959,
+      "text": "write"
+    },
+    {
+      "start": 239.04,
+      "duration": 4.24,
+      "text": "probate records in albany county probate"
+    },
+    {
+      "start": 241.439,
+      "duration": 2.961,
+      "text": "records in schenectady county and keep"
+    },
+    {
+      "start": 243.28,
+      "duration": 4.0,
+      "text": "those all under"
+    },
+    {
+      "start": 244.4,
+      "duration": 2.88,
+      "text": "probate records"
+    },
+    {
+      "start": 247.439,
+      "duration": 4.72,
+      "text": "but if you want to do it a different way"
+    },
+    {
+      "start": 249.76,
+      "duration": 6.08,
+      "text": "it's your brain working on the paper"
+    },
+    {
+      "start": 252.159,
+      "duration": 3.681,
+      "text": "do it the way it makes sense to you"
+    },
+    {
+      "start": 255.92,
+      "duration": 4.4,
+      "text": "here's a visual for how it could look if"
+    },
+    {
+      "start": 258.4,
+      "duration": 5.2,
+      "text": "used in a word document"
+    },
+    {
+      "start": 260.32,
+      "duration": 5.36,
+      "text": "with simple headers as each record type"
+    },
+    {
+      "start": 263.6,
+      "duration": 3.12,
+      "text": "birth and death records for example"
+    },
+    {
+      "start": 265.68,
+      "duration": 4.32,
+      "text": "marriage records"
+    },
+    {
+      "start": 266.72,
+      "duration": 6.479,
+      "text": "land records military or online trees"
+    },
+    {
+      "start": 270.0,
+      "duration": 5.52,
+      "text": "and then bullet points following"
+    },
+    {
+      "start": 273.199,
+      "duration": 4.321,
+      "text": "each of those headers to discuss your"
+    },
+    {
+      "start": 275.52,
+      "duration": 4.16,
+      "text": "findings or ideas"
+    },
+    {
+      "start": 277.52,
+      "duration": 3.36,
+      "text": "anything that you've done it's very"
+    },
+    {
+      "start": 279.68,
+      "duration": 3.6,
+      "text": "simple then you take"
+    },
+    {
+      "start": 280.88,
+      "duration": 4.0,
+      "text": "all of the research that you're doing or"
+    },
+    {
+      "start": 283.28,
+      "duration": 4.0,
+      "text": "have done in the past"
+    },
+    {
+      "start": 284.88,
+      "duration": 4.56,
+      "text": "and put them under those different"
+    },
+    {
+      "start": 287.28,
+      "duration": 4.96,
+      "text": "headers"
+    },
+    {
+      "start": 289.44,
+      "duration": 4.72,
+      "text": "i like using tables in word which would"
+    },
+    {
+      "start": 292.24,
+      "duration": 4.08,
+      "text": "look a lot more like this"
+    },
+    {
+      "start": 294.16,
+      "duration": 3.759,
+      "text": "if you use spreadsheets it could look"
+    },
+    {
+      "start": 296.32,
+      "duration": 3.28,
+      "text": "some similar to this"
+    },
+    {
+      "start": 297.919,
+      "duration": 3.441,
+      "text": "but make sure in spreadsheets that"
+    },
+    {
+      "start": 299.6,
+      "duration": 5.039,
+      "text": "you're having space"
+    },
+    {
+      "start": 301.36,
+      "duration": 3.279,
+      "text": "for source citations"
+    },
+    {
+      "start": 306.479,
+      "duration": 4.321,
+      "text": "here's an example of research i filled"
+    },
+    {
+      "start": 308.479,
+      "duration": 2.641,
+      "text": "in here's some notes on the mortgage"
+    },
+    {
+      "start": 310.8,
+      "duration": 2.959,
+      "text": "that"
+    },
+    {
+      "start": 311.12,
+      "duration": 5.28,
+      "text": "asa whiteman did in albany county new"
+    },
+    {
+      "start": 313.759,
+      "duration": 6.081,
+      "text": "york in 1783."
+    },
+    {
+      "start": 316.4,
+      "duration": 7.12,
+      "text": "i put in where i found it and some notes"
+    },
+    {
+      "start": 319.84,
+      "duration": 6.56,
+      "text": "about where it was when it happened"
+    },
+    {
+      "start": 323.52,
+      "duration": 5.28,
+      "text": "and also at the very last line i noted"
+    },
+    {
+      "start": 326.4,
+      "duration": 4.72,
+      "text": "the film was a typewritten copy"
+    },
+    {
+      "start": 328.8,
+      "duration": 4.959,
+      "text": "of the clerk's record it can contain"
+    },
+    {
+      "start": 331.12,
+      "duration": 6.88,
+      "text": "errors but the original clerk's copy"
+    },
+    {
+      "start": 333.759,
+      "duration": 6.641,
+      "text": "is now gone"
+    },
+    {
+      "start": 338.0,
+      "duration": 3.919,
+      "text": "as i scroll down my research log i've"
+    },
+    {
+      "start": 340.4,
+      "duration": 3.76,
+      "text": "put in notes about"
+    },
+    {
+      "start": 341.919,
+      "duration": 4.161,
+      "text": "other things probate abstracts are under"
+    },
+    {
+      "start": 344.16,
+      "duration": 5.12,
+      "text": "the category of wills and probate"
+    },
+    {
+      "start": 346.08,
+      "duration": 4.88,
+      "text": "from a book on albany county estates"
+    },
+    {
+      "start": 349.28,
+      "duration": 3.84,
+      "text": "but look down at the bottom under the"
+    },
+    {
+      "start": 350.96,
+      "duration": 5.44,
+      "text": "category of tax records"
+    },
+    {
+      "start": 353.12,
+      "duration": 4.16,
+      "text": "it turns out i have so many tax records"
+    },
+    {
+      "start": 356.4,
+      "duration": 3.359,
+      "text": "collected"
+    },
+    {
+      "start": 357.28,
+      "duration": 5.359,
+      "text": "that it would overwhelm my research log"
+    },
+    {
+      "start": 359.759,
+      "duration": 4.961,
+      "text": "and i just didn't feel it belonged"
+    },
+    {
+      "start": 362.639,
+      "duration": 3.84,
+      "text": "so this takes us to the next"
+    },
+    {
+      "start": 364.72,
+      "duration": 3.759,
+      "text": "organizational tool"
+    },
+    {
+      "start": 366.479,
+      "duration": 3.601,
+      "text": "i note in my research log that i've"
+    },
+    {
+      "start": 368.479,
+      "duration": 4.321,
+      "text": "created a data list"
+    },
+    {
+      "start": 370.08,
+      "duration": 3.76,
+      "text": "in a separate spreadsheet for taxes for"
+    },
+    {
+      "start": 372.8,
+      "duration": 5.44,
+      "text": "whitman's"
+    },
+    {
+      "start": 373.84,
+      "duration": 4.4,
+      "text": "in the counties of albany saratoga and"
+    },
+    {
+      "start": 378.84,
+      "duration": 3.0,
+      "text": "schenectady"
+    },
+    {
+      "start": 381.919,
+      "duration": 3.921,
+      "text": "organizational tool number one to"
+    },
+    {
+      "start": 384.0,
+      "duration": 4.479,
+      "text": "accompany research logs"
+    },
+    {
+      "start": 385.84,
+      "duration": 2.639,
+      "text": "data lists"
+    },
+    {
+      "start": 388.96,
+      "duration": 4.72,
+      "text": "data lists compile multiple entries of a"
+    },
+    {
+      "start": 392.0,
+      "duration": 3.919,
+      "text": "single type of record"
+    },
+    {
+      "start": 393.68,
+      "duration": 4.959,
+      "text": "you could do multiple types of records"
+    },
+    {
+      "start": 395.919,
+      "duration": 5.84,
+      "text": "too if you felt that they went together"
+    },
+    {
+      "start": 398.639,
+      "duration": 6.801,
+      "text": "such as tax records and land records"
+    },
+    {
+      "start": 401.759,
+      "duration": 6.241,
+      "text": "or tax and census things like that"
+    },
+    {
+      "start": 405.44,
+      "duration": 3.199,
+      "text": "they can be separate from research logs"
+    },
+    {
+      "start": 408.0,
+      "duration": 2.56,
+      "text": "if"
+    },
+    {
+      "start": 408.639,
+      "duration": 4.4,
+      "text": "like i said they overwhelm your research"
+    },
+    {
+      "start": 410.56,
+      "duration": 5.44,
+      "text": "logs or if you want to use them"
+    },
+    {
+      "start": 413.039,
+      "duration": 3.841,
+      "text": "to compare and contrast a single type of"
+    },
+    {
+      "start": 416.0,
+      "duration": 2.96,
+      "text": "data"
+    },
+    {
+      "start": 416.88,
+      "duration": 3.2,
+      "text": "you could use word tables or"
+    },
+    {
+      "start": 418.96,
+      "duration": 3.6,
+      "text": "spreadsheets"
+    },
+    {
+      "start": 420.08,
+      "duration": 3.28,
+      "text": "or even specialized programs if you're"
+    },
+    {
+      "start": 422.56,
+      "duration": 3.84,
+      "text": "looking at"
+    },
+    {
+      "start": 423.36,
+      "duration": 4.32,
+      "text": "plats for land records you could have"
+    },
+    {
+      "start": 426.4,
+      "duration": 4.639,
+      "text": "multiple plats"
+    },
+    {
+      "start": 427.68,
+      "duration": 7.16,
+      "text": "in a program called deed mapper or"
+    },
+    {
+      "start": 431.039,
+      "duration": 6.321,
+      "text": "other things in other specialized"
+    },
+    {
+      "start": 434.84,
+      "duration": 4.68,
+      "text": "programs"
+    },
+    {
+      "start": 437.36,
+      "duration": 4.399,
+      "text": "you format this in the way that you need"
+    },
+    {
+      "start": 439.52,
+      "duration": 5.04,
+      "text": "to understand this there's no right way"
+    },
+    {
+      "start": 441.759,
+      "duration": 4.0,
+      "text": "except not doing it that's the only"
+    },
+    {
+      "start": 444.56,
+      "duration": 2.96,
+      "text": "wrong way"
+    },
+    {
+      "start": 445.759,
+      "duration": 3.761,
+      "text": "and of course not including source"
+    },
+    {
+      "start": 447.52,
+      "duration": 8.079,
+      "text": "citations is definitely"
+    },
+    {
+      "start": 449.52,
+      "duration": 6.079,
+      "text": "not helpful looking closer at this"
+    },
+    {
+      "start": 455.84,
+      "duration": 4.4,
+      "text": "whether it's a word table or spreadsheet"
+    },
+    {
+      "start": 458.16,
+      "duration": 3.92,
+      "text": "these can be easily rearranged to"
+    },
+    {
+      "start": 460.24,
+      "duration": 3.679,
+      "text": "chronological order or alphabetical"
+    },
+    {
+      "start": 462.08,
+      "duration": 2.959,
+      "text": "order depending on how i want to look at"
+    },
+    {
+      "start": 463.919,
+      "duration": 3.12,
+      "text": "it at the time"
+    },
+    {
+      "start": 465.039,
+      "duration": 3.84,
+      "text": "and i just use these with lots of"
+    },
+    {
+      "start": 467.039,
+      "duration": 4.801,
+      "text": "questions and notes"
+    },
+    {
+      "start": 468.879,
+      "duration": 5.121,
+      "text": "i just kind of put them in and rearrange"
+    },
+    {
+      "start": 471.84,
+      "duration": 7.52,
+      "text": "them to decide what i want to look at at"
+    },
+    {
+      "start": 474.0,
+      "duration": 7.759,
+      "text": "the time"
+    },
+    {
+      "start": 479.36,
+      "duration": 3.839,
+      "text": "these kind of notes help me to formulate"
+    },
+    {
+      "start": 481.759,
+      "duration": 4.641,
+      "text": "more research plans"
+    },
+    {
+      "start": 483.199,
+      "duration": 4.321,
+      "text": "such as when i'm looking at things like"
+    },
+    {
+      "start": 486.4,
+      "duration": 3.28,
+      "text": "who's"
+    },
+    {
+      "start": 487.52,
+      "duration": 3.28,
+      "text": "sitting next to who or what spelling"
+    },
+    {
+      "start": 489.68,
+      "duration": 4.16,
+      "text": "variations"
+    },
+    {
+      "start": 490.8,
+      "duration": 3.04,
+      "text": "might be coming up"
+    },
+    {
+      "start": 495.199,
+      "duration": 3.84,
+      "text": "from there we can jump right into"
+    },
+    {
+      "start": 497.28,
+      "duration": 4.8,
+      "text": "another organizational tool"
+    },
+    {
+      "start": 499.039,
+      "duration": 6.961,
+      "text": "that i feel is required"
+    },
+    {
+      "start": 502.08,
+      "duration": 6.72,
+      "text": "for every research log this accompanies"
+    },
+    {
+      "start": 506.0,
+      "duration": 4.639,
+      "text": "every single research type of research"
+    },
+    {
+      "start": 508.8,
+      "duration": 4.96,
+      "text": "log that you do"
+    },
+    {
+      "start": 510.639,
+      "duration": 7.121,
+      "text": "regardless it's the timeline"
+    },
+    {
+      "start": 513.76,
+      "duration": 6.56,
+      "text": "always have timelines whenever i"
+    },
+    {
+      "start": 517.76,
+      "duration": 3.519,
+      "text": "volunteer at the local family history"
+    },
+    {
+      "start": 520.32,
+      "duration": 4.4,
+      "text": "center"
+    },
+    {
+      "start": 521.279,
+      "duration": 5.441,
+      "text": "i have people write up a timeline for"
+    },
+    {
+      "start": 524.72,
+      "duration": 3.6,
+      "text": "the ancestor they're looking at"
+    },
+    {
+      "start": 526.72,
+      "duration": 4.16,
+      "text": "and at first they don't always want to"
+    },
+    {
+      "start": 528.32,
+      "duration": 6.0,
+      "text": "do it but by the time we"
+    },
+    {
+      "start": 530.88,
+      "duration": 6.56,
+      "text": "sit down and start creating a timeline"
+    },
+    {
+      "start": 534.32,
+      "duration": 5.84,
+      "text": "it just opens"
+    },
+    {
+      "start": 537.44,
+      "duration": 4.16,
+      "text": "their eyes to how much they thought they"
+    },
+    {
+      "start": 540.16,
+      "duration": 3.359,
+      "text": "knew about their ancestor"
+    },
+    {
+      "start": 541.6,
+      "duration": 5.28,
+      "text": "that they did know or that they didn't"
+    },
+    {
+      "start": 543.519,
+      "duration": 3.361,
+      "text": "know about their ancestor"
+    },
+    {
+      "start": 547.2,
+      "duration": 5.759,
+      "text": "basically chronology is the best policy"
+    },
+    {
+      "start": 549.76,
+      "duration": 6.88,
+      "text": "it's very easy to compile a timeline"
+    },
+    {
+      "start": 552.959,
+      "duration": 6.32,
+      "text": "and it gives us so much"
+    },
+    {
+      "start": 556.64,
+      "duration": 4.0,
+      "text": "contributes so much to plan development"
+    },
+    {
+      "start": 559.279,
+      "duration": 3.601,
+      "text": "i maintain"
+    },
+    {
+      "start": 560.64,
+      "duration": 4.319,
+      "text": "separate timelines from the research log"
+    },
+    {
+      "start": 562.88,
+      "duration": 5.28,
+      "text": "does this cause me extra work"
+    },
+    {
+      "start": 564.959,
+      "duration": 4.161,
+      "text": "yes does it cause me that much extra"
+    },
+    {
+      "start": 568.16,
+      "duration": 3.52,
+      "text": "work"
+    },
+    {
+      "start": 569.12,
+      "duration": 4.399,
+      "text": "not if i'm using research logs on my"
+    },
+    {
+      "start": 571.68,
+      "duration": 2.64,
+      "text": "computer because then i just copy and"
+    },
+    {
+      "start": 573.519,
+      "duration": 3.76,
+      "text": "paste"
+    },
+    {
+      "start": 574.32,
+      "duration": 5.199,
+      "text": "so if i find a piece of information and"
+    },
+    {
+      "start": 577.279,
+      "duration": 4.0,
+      "text": "i put it in my research log"
+    },
+    {
+      "start": 579.519,
+      "duration": 4.0,
+      "text": "then i take that same piece of"
+    },
+    {
+      "start": 581.279,
+      "duration": 4.56,
+      "text": "information that"
+    },
+    {
+      "start": 583.519,
+      "duration": 3.841,
+      "text": "can be put in my timeline and i copy and"
+    },
+    {
+      "start": 585.839,
+      "duration": 5.041,
+      "text": "i paste it into my timeline"
+    },
+    {
+      "start": 587.36,
+      "duration": 5.36,
+      "text": "on a separate word document analysis"
+    },
+    {
+      "start": 590.88,
+      "duration": 3.519,
+      "text": "happens in timelines"
+    },
+    {
+      "start": 592.72,
+      "duration": 3.36,
+      "text": "we can make connections between people"
+    },
+    {
+      "start": 594.399,
+      "duration": 5.12,
+      "text": "or events we can see"
+    },
+    {
+      "start": 596.08,
+      "duration": 7.28,
+      "text": "conflicts missing years missing events"
+    },
+    {
+      "start": 599.519,
+      "duration": 6.32,
+      "text": "compare national events we can"
+    },
+    {
+      "start": 603.36,
+      "duration": 3.2,
+      "text": "do math things like they can't have"
+    },
+    {
+      "start": 605.839,
+      "duration": 4.0,
+      "text": "children"
+    },
+    {
+      "start": 606.56,
+      "duration": 6.16,
+      "text": "10 years after they're born or logic"
+    },
+    {
+      "start": 609.839,
+      "duration": 4.0,
+      "text": "a man you know can't be living in two"
+    },
+    {
+      "start": 612.72,
+      "duration": 4.08,
+      "text": "different states"
+    },
+    {
+      "start": 613.839,
+      "duration": 3.521,
+      "text": "having two sets of families at the same"
+    },
+    {
+      "start": 616.8,
+      "duration": 3.44,
+      "text": "time"
+    },
+    {
+      "start": 617.36,
+      "duration": 4.4,
+      "text": "things like that and we can really"
+    },
+    {
+      "start": 620.24,
+      "duration": 3.92,
+      "text": "analyze our citations"
+    },
+    {
+      "start": 621.76,
+      "duration": 3.68,
+      "text": "and say how do i really know that how"
+    },
+    {
+      "start": 624.16,
+      "duration": 4.48,
+      "text": "valuable"
+    },
+    {
+      "start": 625.44,
+      "duration": 4.8,
+      "text": "is this is this record and and how does"
+    },
+    {
+      "start": 628.64,
+      "duration": 4.48,
+      "text": "it compare with this other record that"
+    },
+    {
+      "start": 630.24,
+      "duration": 5.2,
+      "text": "has a contrasting fact"
+    },
+    {
+      "start": 633.12,
+      "duration": 4.24,
+      "text": "it's so valuable if you're doing any"
+    },
+    {
+      "start": 635.44,
+      "duration": 5.76,
+      "text": "research for men of the same name"
+    },
+    {
+      "start": 637.36,
+      "duration": 3.84,
+      "text": "timelines are your lifeline"
+    },
+    {
+      "start": 644.56,
+      "duration": 6.399,
+      "text": "when you're putting together a timeline"
+    },
+    {
+      "start": 647.92,
+      "duration": 5.44,
+      "text": "you consider all kinds of facts censuses"
+    },
+    {
+      "start": 650.959,
+      "duration": 3.521,
+      "text": "births bursts of children bursts of"
+    },
+    {
+      "start": 653.36,
+      "duration": 3.84,
+      "text": "siblings"
+    },
+    {
+      "start": 654.48,
+      "duration": 4.0,
+      "text": "deaths battles in the area taxes"
+    },
+    {
+      "start": 657.2,
+      "duration": 4.639,
+      "text": "migrations"
+    },
+    {
+      "start": 658.48,
+      "duration": 5.68,
+      "text": "land anything that affected the"
+    },
+    {
+      "start": 661.839,
+      "duration": 4.481,
+      "text": "ancestors"
+    },
+    {
+      "start": 664.16,
+      "duration": 3.04,
+      "text": "talk to yourself about when it happened"
+    },
+    {
+      "start": 666.32,
+      "duration": 4.0,
+      "text": "where it happened"
+    },
+    {
+      "start": 667.2,
+      "duration": 4.24,
+      "text": "and why was there a contextual need for"
+    },
+    {
+      "start": 670.32,
+      "duration": 3.04,
+      "text": "it to happen"
+    },
+    {
+      "start": 671.44,
+      "duration": 4.88,
+      "text": "did it happen without the families"
+    },
+    {
+      "start": 673.36,
+      "duration": 5.76,
+      "text": "wanting it to was there a sheriff's sale"
+    },
+    {
+      "start": 676.32,
+      "duration": 3.84,
+      "text": "was there an epidemic are you sure it"
+    },
+    {
+      "start": 679.12,
+      "duration": 4.399,
+      "text": "happened"
+    },
+    {
+      "start": 680.16,
+      "duration": 6.4,
+      "text": "was it was it in a family"
+    },
+    {
+      "start": 683.519,
+      "duration": 3.521,
+      "text": "story that was just legend or do you"
+    },
+    {
+      "start": 686.56,
+      "duration": 4.32,
+      "text": "have an"
+    },
+    {
+      "start": 687.04,
+      "duration": 5.84,
+      "text": "actual original"
+    },
+    {
+      "start": 690.88,
+      "duration": 4.0,
+      "text": "document that says that the event"
+    },
+    {
+      "start": 692.88,
+      "duration": 4.639,
+      "text": "happened who was involved"
+    },
+    {
+      "start": 694.88,
+      "duration": 4.16,
+      "text": "do you have fan club and how does it"
+    },
+    {
+      "start": 697.519,
+      "duration": 3.121,
+      "text": "affect the research"
+    },
+    {
+      "start": 699.04,
+      "duration": 3.919,
+      "text": "compare with other people in the"
+    },
+    {
+      "start": 700.64,
+      "duration": 3.6,
+      "text": "locations and definitely compare with"
+    },
+    {
+      "start": 702.959,
+      "duration": 2.961,
+      "text": "historic maps"
+    },
+    {
+      "start": 704.24,
+      "duration": 4.08,
+      "text": "how is this important to the research"
+    },
+    {
+      "start": 705.92,
+      "duration": 2.4,
+      "text": "question"
+    },
+    {
+      "start": 709.279,
+      "duration": 3.761,
+      "text": "let's look at a sample of a timeline put"
+    },
+    {
+      "start": 711.36,
+      "duration": 4.08,
+      "text": "together with elements"
+    },
+    {
+      "start": 713.04,
+      "duration": 4.479,
+      "text": "of my research log and data lists on the"
+    },
+    {
+      "start": 715.44,
+      "duration": 3.839,
+      "text": "whitman's in albany saratoga and"
+    },
+    {
+      "start": 717.519,
+      "duration": 3.44,
+      "text": "schenectady counties"
+    },
+    {
+      "start": 719.279,
+      "duration": 3.841,
+      "text": "and see what kind of connections we can"
+    },
+    {
+      "start": 720.959,
+      "duration": 4.961,
+      "text": "find note that my"
+    },
+    {
+      "start": 723.12,
+      "duration": 3.839,
+      "text": "facts in my timeline never go naked in"
+    },
+    {
+      "start": 725.92,
+      "duration": 4.08,
+      "text": "fact i've got"
+    },
+    {
+      "start": 726.959,
+      "duration": 4.88,
+      "text": "more source citations here"
+    },
+    {
+      "start": 730.0,
+      "duration": 3.2,
+      "text": "then i have timeline and that's"
+    },
+    {
+      "start": 731.839,
+      "duration": 4.481,
+      "text": "perfectly fine"
+    },
+    {
+      "start": 733.2,
+      "duration": 6.319,
+      "text": "source citations always follow no"
+    },
+    {
+      "start": 736.32,
+      "duration": 4.8,
+      "text": "naked facts there's no point in analysis"
+    },
+    {
+      "start": 739.519,
+      "duration": 6.32,
+      "text": "if you don't know where the fact came"
+    },
+    {
+      "start": 741.12,
+      "duration": 4.719,
+      "text": "from in the first place"
+    },
+    {
+      "start": 747.44,
+      "duration": 4.16,
+      "text": "timelines can be very simple and"
+    },
+    {
+      "start": 749.839,
+      "duration": 3.841,
+      "text": "wonderfully effective"
+    },
+    {
+      "start": 751.6,
+      "duration": 3.359,
+      "text": "i targeted in on the towns of"
+    },
+    {
+      "start": 753.68,
+      "duration": 4.32,
+      "text": "schenectady"
+    },
+    {
+      "start": 754.959,
+      "duration": 4.961,
+      "text": "and half moon in albany county these"
+    },
+    {
+      "start": 758.0,
+      "duration": 3.44,
+      "text": "towns are now in separate counties but"
+    },
+    {
+      "start": 759.92,
+      "duration": 4.56,
+      "text": "at the time of"
+    },
+    {
+      "start": 761.44,
+      "duration": 5.28,
+      "text": "my ancestors birth james"
+    },
+    {
+      "start": 764.48,
+      "duration": 6.64,
+      "text": "they were both in albany county and"
+    },
+    {
+      "start": 766.72,
+      "duration": 4.4,
+      "text": "right on the waters of the mohawk river"
+    },
+    {
+      "start": 771.279,
+      "duration": 3.441,
+      "text": "rivers are super highways to our"
+    },
+    {
+      "start": 773.68,
+      "duration": 3.839,
+      "text": "ancestors"
+    },
+    {
+      "start": 774.72,
+      "duration": 3.6,
+      "text": "so travel between cities that seem far"
+    },
+    {
+      "start": 777.519,
+      "duration": 3.521,
+      "text": "away"
+    },
+    {
+      "start": 778.32,
+      "duration": 4.24,
+      "text": "really can be minimized significantly if"
+    },
+    {
+      "start": 781.04,
+      "duration": 3.799,
+      "text": "connected by a river"
+    },
+    {
+      "start": 782.56,
+      "duration": 4.64,
+      "text": "so this is another reason we check our"
+    },
+    {
+      "start": 784.839,
+      "duration": 5.401,
+      "text": "maps"
+    },
+    {
+      "start": 787.2,
+      "duration": 3.04,
+      "text": "as i do so"
+    },
+    {
+      "start": 794.88,
+      "duration": 6.88,
+      "text": "i see that half moon over on the right"
+    },
+    {
+      "start": 798.639,
+      "duration": 4.64,
+      "text": "is connected right up the mohawk"
+    },
+    {
+      "start": 801.76,
+      "duration": 3.6,
+      "text": "to the west boundaries of the"
+    },
+    {
+      "start": 803.279,
+      "duration": 5.761,
+      "text": "schenectady township"
+    },
+    {
+      "start": 805.36,
+      "duration": 3.68,
+      "text": "where whitman's later lived"
+    },
+    {
+      "start": 809.839,
+      "duration": 5.601,
+      "text": "so i have a noted ancestor in blue"
+    },
+    {
+      "start": 812.88,
+      "duration": 5.28,
+      "text": "shubal reynolds even though he's not a"
+    },
+    {
+      "start": 815.44,
+      "duration": 6.16,
+      "text": "whitman he is the double uncle-in-law"
+    },
+    {
+      "start": 818.16,
+      "duration": 6.64,
+      "text": "of james's wife elizabeth kennicut"
+    },
+    {
+      "start": 821.6,
+      "duration": 5.44,
+      "text": "and a second cousin to her mother"
+    },
+    {
+      "start": 824.8,
+      "duration": 5.68,
+      "text": "i want to watch for those connections i"
+    },
+    {
+      "start": 827.04,
+      "duration": 5.84,
+      "text": "also know any county line changes"
+    },
+    {
+      "start": 830.48,
+      "duration": 4.4,
+      "text": "such as the formations of saratoga and"
+    },
+    {
+      "start": 832.88,
+      "duration": 4.319,
+      "text": "schenectady counties in albany"
+    },
+    {
+      "start": 834.88,
+      "duration": 4.639,
+      "text": "so i can watch when records may not be"
+    },
+    {
+      "start": 837.199,
+      "duration": 5.281,
+      "text": "where i thought they could be"
+    },
+    {
+      "start": 839.519,
+      "duration": 4.961,
+      "text": "half moon and ballston are in saratoga"
+    },
+    {
+      "start": 842.48,
+      "duration": 5.44,
+      "text": "after 1791"
+    },
+    {
+      "start": 844.48,
+      "duration": 4.32,
+      "text": "and i end up with five prospective"
+    },
+    {
+      "start": 847.92,
+      "duration": 3.359,
+      "text": "whitman men"
+    },
+    {
+      "start": 848.8,
+      "duration": 7.68,
+      "text": "in these areas who are of an age to"
+    },
+    {
+      "start": 851.279,
+      "duration": 8.321,
+      "text": "possibly be the father of james"
+    },
+    {
+      "start": 856.48,
+      "duration": 5.84,
+      "text": "asa elijah james richard"
+    },
+    {
+      "start": 859.6,
+      "duration": 4.72,
+      "text": "and george some i've identified in my"
+    },
+    {
+      "start": 862.32,
+      "duration": 3.6,
+      "text": "research log as i've pursued them and"
+    },
+    {
+      "start": 864.32,
+      "duration": 4.519,
+      "text": "now i know their wives and"
+    },
+    {
+      "start": 865.92,
+      "duration": 4.08,
+      "text": "age ranges and what may have happened to"
+    },
+    {
+      "start": 868.839,
+      "duration": 4.921,
+      "text": "them"
+    },
+    {
+      "start": 870.0,
+      "duration": 6.079,
+      "text": "later on for example george whitman"
+    },
+    {
+      "start": 873.76,
+      "duration": 3.04,
+      "text": "and catherine stewart they're out of the"
+    },
+    {
+      "start": 876.079,
+      "duration": 3.361,
+      "text": "running"
+    },
+    {
+      "start": 876.8,
+      "duration": 4.64,
+      "text": "there i have them and their two known"
+    },
+    {
+      "start": 879.44,
+      "duration": 2.959,
+      "text": "sons identified and neither of their"
+    },
+    {
+      "start": 881.44,
+      "duration": 4.48,
+      "text": "sons"
+    },
+    {
+      "start": 882.399,
+      "duration": 6.8,
+      "text": "are are james born in 1794."
+    },
+    {
+      "start": 885.92,
+      "duration": 6.479,
+      "text": "so this timeline has developed"
+    },
+    {
+      "start": 889.199,
+      "duration": 6.241,
+      "text": "and been annotated and and grown"
+    },
+    {
+      "start": 892.399,
+      "duration": 3.841,
+      "text": "and changed as my research has"
+    },
+    {
+      "start": 895.44,
+      "duration": 3.36,
+      "text": "progressed"
+    },
+    {
+      "start": 896.24,
+      "duration": 4.719,
+      "text": "and my research log has been annotated"
+    },
+    {
+      "start": 898.8,
+      "duration": 2.64,
+      "text": "so these are working documents as i've"
+    },
+    {
+      "start": 900.959,
+      "duration": 3.841,
+      "text": "made"
+    },
+    {
+      "start": 901.44,
+      "duration": 6.399,
+      "text": "mentioned before but here's something"
+    },
+    {
+      "start": 904.8,
+      "duration": 6.159,
+      "text": "that kept cropping up"
+    },
+    {
+      "start": 907.839,
+      "duration": 6.401,
+      "text": "between 1783 and 1808"
+    },
+    {
+      "start": 910.959,
+      "duration": 7.44,
+      "text": "two sets of whitman's and shubo reynolds"
+    },
+    {
+      "start": 914.24,
+      "duration": 4.159,
+      "text": "bought land on all skill"
+    },
+    {
+      "start": 922.72,
+      "duration": 6.799,
+      "text": "there it is all skill or eel"
+    },
+    {
+      "start": 926.0,
+      "duration": 4.48,
+      "text": "place creek it runs off the creek to"
+    },
+    {
+      "start": 929.519,
+      "duration": 3.821,
+      "text": "long lake"
+    },
+    {
+      "start": 930.48,
+      "duration": 5.76,
+      "text": "here in yellow hmm"
+    },
+    {
+      "start": 933.34,
+      "duration": 4.98,
+      "text": "[Music]"
+    },
+    {
+      "start": 936.24,
+      "duration": 3.68,
+      "text": "the timeline has made us think in a"
+    },
+    {
+      "start": 938.32,
+      "duration": 3.199,
+      "text": "different way and made connections"
+    },
+    {
+      "start": 939.92,
+      "duration": 4.88,
+      "text": "between the family"
+    },
+    {
+      "start": 941.519,
+      "duration": 5.921,
+      "text": "names dates and geography"
+    },
+    {
+      "start": 944.8,
+      "duration": 4.959,
+      "text": "but a timeline doesn't have to be static"
+    },
+    {
+      "start": 947.44,
+      "duration": 5.44,
+      "text": "you can make it into whatever you need"
+    },
+    {
+      "start": 949.759,
+      "duration": 6.481,
+      "text": "such as turning this timeline on its ear"
+    },
+    {
+      "start": 952.88,
+      "duration": 4.8,
+      "text": "to review in a different aspect this is"
+    },
+    {
+      "start": 956.24,
+      "duration": 3.76,
+      "text": "the same information"
+    },
+    {
+      "start": 957.68,
+      "duration": 3.2,
+      "text": "dates and people but the columns i"
+    },
+    {
+      "start": 960.0,
+      "duration": 2.88,
+      "text": "modified"
+    },
+    {
+      "start": 960.88,
+      "duration": 4.48,
+      "text": "so that each person has their own column"
+    },
+    {
+      "start": 962.88,
+      "duration": 5.92,
+      "text": "to show when they were in the same place"
+    },
+    {
+      "start": 965.36,
+      "duration": 6.56,
+      "text": "at the same time or doing the same thing"
+    },
+    {
+      "start": 968.8,
+      "duration": 6.56,
+      "text": "here's a group elijah james and chubal"
+    },
+    {
+      "start": 971.92,
+      "duration": 6.24,
+      "text": "all in the town of half moon in 1790."
+    },
+    {
+      "start": 975.36,
+      "duration": 3.12,
+      "text": "what this tells me is that i need to go"
+    },
+    {
+      "start": 978.16,
+      "duration": 2.88,
+      "text": "back"
+    },
+    {
+      "start": 978.48,
+      "duration": 3.599,
+      "text": "and make note of all their neighbors and"
+    },
+    {
+      "start": 981.04,
+      "duration": 4.4,
+      "text": "c"
+    },
+    {
+      "start": 982.079,
+      "duration": 6.081,
+      "text": "if any of those neighbors also ended up"
+    },
+    {
+      "start": 985.44,
+      "duration": 4.88,
+      "text": "in schenectady"
+    },
+    {
+      "start": 988.16,
+      "duration": 5.359,
+      "text": "elijah ended up on half moon's"
+    },
+    {
+      "start": 990.32,
+      "duration": 4.639,
+      "text": "delinquent tax list of 1799 the same"
+    },
+    {
+      "start": 993.519,
+      "duration": 3.76,
+      "text": "time he paid tax"
+    },
+    {
+      "start": 994.959,
+      "duration": 3.68,
+      "text": "in his new home in schenectady in the"
+    },
+    {
+      "start": 997.279,
+      "duration": 4.641,
+      "text": "fourth ward"
+    },
+    {
+      "start": 998.639,
+      "duration": 5.2,
+      "text": "so did richard move to"
+    },
+    {
+      "start": 1001.92,
+      "duration": 3.68,
+      "text": "where and is he part of the great"
+    },
+    {
+      "start": 1003.839,
+      "duration": 4.56,
+      "text": "whitman reynolds migration to"
+    },
+    {
+      "start": 1005.6,
+      "duration": 2.799,
+      "text": "schenectady"
+    },
+    {
+      "start": 1008.72,
+      "duration": 4.32,
+      "text": "here's the same group elijah james"
+    },
+    {
+      "start": 1011.199,
+      "duration": 4.721,
+      "text": "shubal and now asa"
+    },
+    {
+      "start": 1013.04,
+      "duration": 3.68,
+      "text": "and another thing that connects them is"
+    },
+    {
+      "start": 1015.92,
+      "duration": 5.039,
+      "text": "the land"
+    },
+    {
+      "start": 1016.72,
+      "duration": 8.64,
+      "text": "at all plus skill can it coincidences"
+    },
+    {
+      "start": 1020.959,
+      "duration": 6.801,
+      "text": "are are not all that coincidental"
+    },
+    {
+      "start": 1025.36,
+      "duration": 3.36,
+      "text": "not in genealogy not with relationships"
+    },
+    {
+      "start": 1027.76,
+      "duration": 4.559,
+      "text": "like this in"
+    },
+    {
+      "start": 1028.72,
+      "duration": 7.119,
+      "text": "in small communities follow them"
+    },
+    {
+      "start": 1032.319,
+      "duration": 4.801,
+      "text": "and tables like this timelines like this"
+    },
+    {
+      "start": 1035.839,
+      "duration": 3.521,
+      "text": "can help you"
+    },
+    {
+      "start": 1037.12,
+      "duration": 5.199,
+      "text": "narrow in on them focus in on them a"
+    },
+    {
+      "start": 1039.36,
+      "duration": 2.959,
+      "text": "little more quickly"
+    },
+    {
+      "start": 1043.76,
+      "duration": 5.439,
+      "text": "so summarizing style 2 log by record"
+    },
+    {
+      "start": 1046.88,
+      "duration": 2.319,
+      "text": "type"
+    },
+    {
+      "start": 1049.28,
+      "duration": 4.48,
+      "text": "if you can't find it you can't use it"
+    },
+    {
+      "start": 1051.919,
+      "duration": 4.081,
+      "text": "i'm going to keep saying that"
+    },
+    {
+      "start": 1053.76,
+      "duration": 4.08,
+      "text": "this is a diary of searches no matter"
+    },
+    {
+      "start": 1056.0,
+      "duration": 4.799,
+      "text": "what type of record"
+    },
+    {
+      "start": 1057.84,
+      "duration": 3.92,
+      "text": "log you use put in your negative your"
+    },
+    {
+      "start": 1060.799,
+      "duration": 3.76,
+      "text": "positive"
+    },
+    {
+      "start": 1061.76,
+      "duration": 3.52,
+      "text": "and those searches that don't result in"
+    },
+    {
+      "start": 1064.559,
+      "duration": 2.0,
+      "text": "anything"
+    },
+    {
+      "start": 1065.28,
+      "duration": 4.16,
+      "text": "because you don't want to search those"
+    },
+    {
+      "start": 1066.559,
+      "duration": 6.081,
+      "text": "again whether you use a cert"
+    },
+    {
+      "start": 1069.44,
+      "duration": 5.76,
+      "text": "a word document you use a piece of paper"
+    },
+    {
+      "start": 1072.64,
+      "duration": 3.52,
+      "text": "if you're writing it's effective but"
+    },
+    {
+      "start": 1075.2,
+      "duration": 3.44,
+      "text": "writing"
+    },
+    {
+      "start": 1076.16,
+      "duration": 4.72,
+      "text": "helps you to stop and absorb the"
+    },
+    {
+      "start": 1078.64,
+      "duration": 4.0,
+      "text": "information with cited sources and helps"
+    },
+    {
+      "start": 1080.88,
+      "duration": 3.84,
+      "text": "you analyze"
+    },
+    {
+      "start": 1082.64,
+      "duration": 3.279,
+      "text": "start with the summary and the goal in"
+    },
+    {
+      "start": 1084.72,
+      "duration": 3.36,
+      "text": "the background"
+    },
+    {
+      "start": 1085.919,
+      "duration": 4.401,
+      "text": "and again it's not the same as notes in"
+    },
+    {
+      "start": 1088.08,
+      "duration": 3.44,
+      "text": "a genealogy program or an online tree we"
+    },
+    {
+      "start": 1090.32,
+      "duration": 3.28,
+      "text": "can see that"
+    },
+    {
+      "start": 1091.52,
+      "duration": 3.6,
+      "text": "because we wouldn't have been able to"
+    },
+    {
+      "start": 1093.6,
+      "duration": 5.12,
+      "text": "have a timeline"
+    },
+    {
+      "start": 1095.12,
+      "duration": 5.84,
+      "text": "or have data lists in an online tree"
+    },
+    {
+      "start": 1098.72,
+      "duration": 4.48,
+      "text": "and the type of logging style will"
+    },
+    {
+      "start": 1100.96,
+      "duration": 4.32,
+      "text": "really depend on the complexity"
+    },
+    {
+      "start": 1103.2,
+      "duration": 4.0,
+      "text": "as i saw the whitman's moving from"
+    },
+    {
+      "start": 1105.28,
+      "duration": 4.639,
+      "text": "county to county and the county lines"
+    },
+    {
+      "start": 1107.2,
+      "duration": 5.2,
+      "text": "moving i really needed a more complex"
+    },
+    {
+      "start": 1109.919,
+      "duration": 2.481,
+      "text": "style"
+    },
+    {
+      "start": 1113.12,
+      "duration": 4.4,
+      "text": "record type logs act more as checklists"
+    },
+    {
+      "start": 1116.0,
+      "duration": 3.679,
+      "text": "so i can say to myself"
+    },
+    {
+      "start": 1117.52,
+      "duration": 5.039,
+      "text": "did i really check all the probate i"
+    },
+    {
+      "start": 1119.679,
+      "duration": 4.801,
+      "text": "wonder if i should go back and check"
+    },
+    {
+      "start": 1122.559,
+      "duration": 3.761,
+      "text": "other types of things you know what i"
+    },
+    {
+      "start": 1124.48,
+      "duration": 4.16,
+      "text": "haven't checked church records"
+    },
+    {
+      "start": 1126.32,
+      "duration": 4.0,
+      "text": "because that whole section is blank so"
+    },
+    {
+      "start": 1128.64,
+      "duration": 4.56,
+      "text": "that's what i want to go see"
+    },
+    {
+      "start": 1130.32,
+      "duration": 4.719,
+      "text": "did i check court minutes they're very"
+    },
+    {
+      "start": 1133.2,
+      "duration": 5.04,
+      "text": "good for complex studies"
+    },
+    {
+      "start": 1135.039,
+      "duration": 6.801,
+      "text": "this type of record this type of log"
+    },
+    {
+      "start": 1138.24,
+      "duration": 5.84,
+      "text": "and you could separate the record"
+    },
+    {
+      "start": 1141.84,
+      "duration": 4.48,
+      "text": "sections by locations if you like you"
+    },
+    {
+      "start": 1144.08,
+      "duration": 4.88,
+      "text": "could keep them together"
+    },
+    {
+      "start": 1146.32,
+      "duration": 4.16,
+      "text": "but always record who should have shown"
+    },
+    {
+      "start": 1148.96,
+      "duration": 4.32,
+      "text": "up in the record too"
+    },
+    {
+      "start": 1150.48,
+      "duration": 4.64,
+      "text": "if you expected asa to show up in the"
+    },
+    {
+      "start": 1153.28,
+      "duration": 5.12,
+      "text": "tax records or the probate"
+    },
+    {
+      "start": 1155.12,
+      "duration": 7.04,
+      "text": "write that down always keep your mind"
+    },
+    {
+      "start": 1158.4,
+      "duration": 7.04,
+      "text": "on your paper too put down your thoughts"
+    },
+    {
+      "start": 1162.16,
+      "duration": 3.759,
+      "text": "and pair any log with separate data"
+    },
+    {
+      "start": 1165.44,
+      "duration": 4.239,
+      "text": "lists"
+    },
+    {
+      "start": 1165.919,
+      "duration": 7.201,
+      "text": "and always with timelines"
+    },
+    {
+      "start": 1169.679,
+      "duration": 6.561,
+      "text": "above all be effective"
+    },
+    {
+      "start": 1173.12,
+      "duration": 3.919,
+      "text": "by creating the habit to stop and"
+    },
+    {
+      "start": 1176.24,
+      "duration": 5.36,
+      "text": "summarize"
+    },
+    {
+      "start": 1177.039,
+      "duration": 4.561,
+      "text": "in your research log starting today"
+    },
+    {
+      "start": 1181.76,
+      "duration": 4.799,
+      "text": "i hope you've enjoyed this part and will"
+    },
+    {
+      "start": 1184.24,
+      "duration": 5.2,
+      "text": "join me again for part three"
+    },
+    {
+      "start": 1186.559,
+      "duration": 4.641,
+      "text": "of research logs a variety of styles to"
+    },
+    {
+      "start": 1189.44,
+      "duration": 4.4,
+      "text": "suit your project"
+    },
+    {
+      "start": 1191.2,
+      "duration": 2.64,
+      "text": "thank you"
+    },
+    {
+      "start": 1218.159,
+      "duration": 2.081,
+      "text": "you"
+    }
+  ],
+  "full_text": "[Music] welcome to research logs a variety of styles to suit your project this is part two of three i am rebecca whitman coford certified genealogist and certified genealogical lecturer in this three-part series we will explore three research log style varieties first the date search style second the record category style and last the plan and log style as we go we'll also discuss the value of research logs in this part 2 we will focus on the record category style in each part i'll also introduce a complementary organizational technique to work with any of the research log styles for more effective analysis this lecture will introduce data lists and timelines are research log worth the effort a research log represents four basic habits of successful researchers search stop summarize and repeat we're really good at the search and repeat parts aren't we however it is the stop and the summarize that makes us truly effective when we stop and really look at what we have we need patience it's so hard not to get excited and run off to that next shiny little fact or shiny little record we have to stop and think about the record we're looking at now give us give ourselves time to analyze to think about the record we do what my mentor richard g sayer cgcgl has always drilled into me read every word i tend to skim if i'm not careful and i can misread things that way we summarize and this is what the whole point of research logs are to stop and make us write things down and we start analyzing when we write we talk out our ideas we write conclusions we write about future research and evidence and what all of this means a research log is a working document for you it's as i said before in part one it's your brain on paper and i'm saying it again you're making calculations in writing right here the only wrong way is to not record your searches now to introduce the record type research log it's one of my favorites to use when we use the record type research log it's simply that we take notes by category of record type because it operates as a checklist of resources we like in any research log we document every record that we look at with citations even if the record didn't produce something we put in all our positive results all our negative search results if we have multiple jurisdictions say we've looked at probate records in multiple counties we just simply write probate records in albany county probate records in schenectady county and keep those all under probate records but if you want to do it a different way it's your brain working on the paper do it the way it makes sense to you here's a visual for how it could look if used in a word document with simple headers as each record type birth and death records for example marriage records land records military or online trees and then bullet points following each of those headers to discuss your findings or ideas anything that you've done it's very simple then you take all of the research that you're doing or have done in the past and put them under those different headers i like using tables in word which would look a lot more like this if you use spreadsheets it could look some similar to this but make sure in spreadsheets that you're having space for source citations here's an example of research i filled in here's some notes on the mortgage that asa whiteman did in albany county new york in 1783. i put in where i found it and some notes about where it was when it happened and also at the very last line i noted the film was a typewritten copy of the clerk's record it can contain errors but the original clerk's copy is now gone as i scroll down my research log i've put in notes about other things probate abstracts are under the category of wills and probate from a book on albany county estates but look down at the bottom under the category of tax records it turns out i have so many tax records collected that it would overwhelm my research log and i just didn't feel it belonged so this takes us to the next organizational tool i note in my research log that i've created a data list in a separate spreadsheet for taxes for whitman's in the counties of albany saratoga and schenectady organizational tool number one to accompany research logs data lists data lists compile multiple entries of a single type of record you could do multiple types of records too if you felt that they went together such as tax records and land records or tax and census things like that they can be separate from research logs if like i said they overwhelm your research logs or if you want to use them to compare and contrast a single type of data you could use word tables or spreadsheets or even specialized programs if you're looking at plats for land records you could have multiple plats in a program called deed mapper or other things in other specialized programs you format this in the way that you need to understand this there's no right way except not doing it that's the only wrong way and of course not including source citations is definitely not helpful looking closer at this whether it's a word table or spreadsheet these can be easily rearranged to chronological order or alphabetical order depending on how i want to look at it at the time and i just use these with lots of questions and notes i just kind of put them in and rearrange them to decide what i want to look at at the time these kind of notes help me to formulate more research plans such as when i'm looking at things like who's sitting next to who or what spelling variations might be coming up from there we can jump right into another organizational tool that i feel is required for every research log this accompanies every single research type of research log that you do regardless it's the timeline always have timelines whenever i volunteer at the local family history center i have people write up a timeline for the ancestor they're looking at and at first they don't always want to do it but by the time we sit down and start creating a timeline it just opens their eyes to how much they thought they knew about their ancestor that they did know or that they didn't know about their ancestor basically chronology is the best policy it's very easy to compile a timeline and it gives us so much contributes so much to plan development i maintain separate timelines from the research log does this cause me extra work yes does it cause me that much extra work not if i'm using research logs on my computer because then i just copy and paste so if i find a piece of information and i put it in my research log then i take that same piece of information that can be put in my timeline and i copy and i paste it into my timeline on a separate word document analysis happens in timelines we can make connections between people or events we can see conflicts missing years missing events compare national events we can do math things like they can't have children 10 years after they're born or logic a man you know can't be living in two different states having two sets of families at the same time things like that and we can really analyze our citations and say how do i really know that how valuable is this is this record and and how does it compare with this other record that has a contrasting fact it's so valuable if you're doing any research for men of the same name timelines are your lifeline when you're putting together a timeline you consider all kinds of facts censuses births bursts of children bursts of siblings deaths battles in the area taxes migrations land anything that affected the ancestors talk to yourself about when it happened where it happened and why was there a contextual need for it to happen did it happen without the families wanting it to was there a sheriff's sale was there an epidemic are you sure it happened was it was it in a family story that was just legend or do you have an actual original document that says that the event happened who was involved do you have fan club and how does it affect the research compare with other people in the locations and definitely compare with historic maps how is this important to the research question let's look at a sample of a timeline put together with elements of my research log and data lists on the whitman's in albany saratoga and schenectady counties and see what kind of connections we can find note that my facts in my timeline never go naked in fact i've got more source citations here then i have timeline and that's perfectly fine source citations always follow no naked facts there's no point in analysis if you don't know where the fact came from in the first place timelines can be very simple and wonderfully effective i targeted in on the towns of schenectady and half moon in albany county these towns are now in separate counties but at the time of my ancestors birth james they were both in albany county and right on the waters of the mohawk river rivers are super highways to our ancestors so travel between cities that seem far away really can be minimized significantly if connected by a river so this is another reason we check our maps as i do so i see that half moon over on the right is connected right up the mohawk to the west boundaries of the schenectady township where whitman's later lived so i have a noted ancestor in blue shubal reynolds even though he's not a whitman he is the double uncle-in-law of james's wife elizabeth kennicut and a second cousin to her mother i want to watch for those connections i also know any county line changes such as the formations of saratoga and schenectady counties in albany so i can watch when records may not be where i thought they could be half moon and ballston are in saratoga after 1791 and i end up with five prospective whitman men in these areas who are of an age to possibly be the father of james asa elijah james richard and george some i've identified in my research log as i've pursued them and now i know their wives and age ranges and what may have happened to them later on for example george whitman and catherine stewart they're out of the running there i have them and their two known sons identified and neither of their sons are are james born in 1794. so this timeline has developed and been annotated and and grown and changed as my research has progressed and my research log has been annotated so these are working documents as i've made mentioned before but here's something that kept cropping up between 1783 and 1808 two sets of whitman's and shubo reynolds bought land on all skill there it is all skill or eel place creek it runs off the creek to long lake here in yellow hmm [Music] the timeline has made us think in a different way and made connections between the family names dates and geography but a timeline doesn't have to be static you can make it into whatever you need such as turning this timeline on its ear to review in a different aspect this is the same information dates and people but the columns i modified so that each person has their own column to show when they were in the same place at the same time or doing the same thing here's a group elijah james and chubal all in the town of half moon in 1790. what this tells me is that i need to go back and make note of all their neighbors and c if any of those neighbors also ended up in schenectady elijah ended up on half moon's delinquent tax list of 1799 the same time he paid tax in his new home in schenectady in the fourth ward so did richard move to where and is he part of the great whitman reynolds migration to schenectady here's the same group elijah james shubal and now asa and another thing that connects them is the land at all plus skill can it coincidences are are not all that coincidental not in genealogy not with relationships like this in in small communities follow them and tables like this timelines like this can help you narrow in on them focus in on them a little more quickly so summarizing style 2 log by record type if you can't find it you can't use it i'm going to keep saying that this is a diary of searches no matter what type of record log you use put in your negative your positive and those searches that don't result in anything because you don't want to search those again whether you use a cert a word document you use a piece of paper if you're writing it's effective but writing helps you to stop and absorb the information with cited sources and helps you analyze start with the summary and the goal in the background and again it's not the same as notes in a genealogy program or an online tree we can see that because we wouldn't have been able to have a timeline or have data lists in an online tree and the type of logging style will really depend on the complexity as i saw the whitman's moving from county to county and the county lines moving i really needed a more complex style record type logs act more as checklists so i can say to myself did i really check all the probate i wonder if i should go back and check other types of things you know what i haven't checked church records because that whole section is blank so that's what i want to go see did i check court minutes they're very good for complex studies this type of record this type of log and you could separate the record sections by locations if you like you could keep them together but always record who should have shown up in the record too if you expected asa to show up in the tax records or the probate write that down always keep your mind on your paper too put down your thoughts and pair any log with separate data lists and always with timelines above all be effective by creating the habit to stop and summarize in your research log starting today i hope you've enjoyed this part and will join me again for part three of research logs a variety of styles to suit your project thank you you",
+  "attempts": [
+    {
+      "client": "IOS",
+      "playability": {
+        "status": "OK",
+        "playableInEmbed": true,
+        "offlineability": {
+          "buttonRenderer": {
+            "navigationEndpoint": {
+              "clickTrackingParams": "CBIQ6ewBIhMIt4bliOzblwMVNUxMCB2jvDM8ygEE4Cge-Q==",
+              "ypcGetOfflineUpsellEndpoint": {
+                "params": "ChPqqN25AQ0KC0oxaDE4a0ZiWEtVIgtKMWgxOGtGYlhLVSoVCAkYAVIPCgtKMWgxOGtGYlhLVSAB"
+              }
+            },
+            "trackingParams": "CBIQ6ewBIhMIt4bliOzblwMVNUxMCB2jvDM8"
+          }
+        },
+        "pictureInPicture": {
+          "pictureInPictureRenderer": {
+            "playableInPip": true,
+            "offByDefault": false,
+            "shouldResumeOnHead": false
+          }
+        },
+        "miniplayer": {
+          "miniplayerRenderer": {
+            "playbackMode": "PLAYBACK_MODE_ALLOW"
+          }
+        },
+        "contextParams": "Q0FFU0FnZ0M="
+      },
+      "outcome": "ok"
+    }
+  ],
+  "fetched_at": "2026-10-28T04:11:20.006092+00:00",
+  "client": "IOS",
+  "json_path": "transcripts/020_J1h18kFbXKU.json",
+  "text_path": "transcripts/020_J1h18kFbXKU.txt"
+}

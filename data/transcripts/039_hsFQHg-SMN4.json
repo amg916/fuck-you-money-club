@@ -1,0 +1,395 @@
+{
+  "index": 39,
+  "url": "https://www.youtube.com/watch?v=hsFQHg-SMN4",
+  "video_id": "hsFQHg-SMN4",
+  "status": "ok",
+  "metadata": {
+    "title": "Finding probate records by browsing through images on FamilySearch.org",
+    "author": "Five-minute genealogy",
+    "channelId": "UC6qnMgXP1jQMuUP8vTVoU3g",
+    "lengthSeconds": "253",
+    "viewCount": "181",
+    "shortDescription": "The catalog of probate records you can search by name is slim. Eventually, you'll need to browse through scanned images online, visit the library for indexes, and even order microfilms. This video covers how to extend your probate record search beyond digital indices.",
+    "keywords": [
+      "genealogy",
+      "probate",
+      "wills",
+      "intestate",
+      "executor",
+      "administration",
+      "family research",
+      "family history"
+    ]
+  },
+  "caption_tracks": [
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=hsFQHg-SMN4&ei=53XhaqSjDaSKsfIP4LK_qQc&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185879&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=8D4212EFACF1AEC19F3479576904997FB6B2932A.6B303F55E985F21DA583F2DBCBC78039BBB8D3FC&key=yt8&lang=en",
+      "name": {
+        "runs": [
+          {
+            "text": "English"
+          }
+        ]
+      },
+      "vssId": ".en",
+      "languageCode": "en",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=hsFQHg-SMN4&ei=53XhaqSjDaSKsfIP4LK_qQc&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185879&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=8D4212EFACF1AEC19F3479576904997FB6B2932A.6B303F55E985F21DA583F2DBCBC78039BBB8D3FC&key=yt8&kind=asr&lang=en",
+      "name": {
+        "runs": [
+          {
+            "text": "English (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.en",
+      "languageCode": "en",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    }
+  ],
+  "selected_track": {
+    "baseUrl": "https://www.youtube.com/api/timedtext?v=hsFQHg-SMN4&ei=53XhaqSjDaSKsfIP4LK_qQc&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185879&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=8D4212EFACF1AEC19F3479576904997FB6B2932A.6B303F55E985F21DA583F2DBCBC78039BBB8D3FC&key=yt8&lang=en",
+    "name": {
+      "runs": [
+        {
+          "text": "English"
+        }
+      ]
+    },
+    "vssId": ".en",
+    "languageCode": "en",
+    "isTranslatable": true,
+    "trackName": ""
+  },
+  "segments": [
+    {
+      "start": 0.08,
+      "duration": 6.48,
+      "text": "Probate documents can be goldmines for genealogical research, few documents are both digitized"
+    },
+    {
+      "start": 6.56,
+      "duration": 5.17,
+      "text": "and indexed, so expect to put in some real effort to find these."
+    },
+    {
+      "start": 11.73,
+      "duration": 5.07,
+      "text": "In this video, I’ll cover how to find things in digitized probate records once you find"
+    },
+    {
+      "start": 16.8,
+      "duration": 1.0,
+      "text": "the repository."
+    },
+    {
+      "start": 17.8,
+      "duration": 3.45,
+      "text": "I’ve covered finding the repository in a previous video."
+    },
+    {
+      "start": 21.25,
+      "duration": 6.84,
+      "text": "Short version: Not every death results in a probate record."
+    },
+    {
+      "start": 28.09,
+      "duration": 4.88,
+      "text": "Start with digitally indexed repositories, but…."
+    },
+    {
+      "start": 32.97,
+      "duration": 4.87,
+      "text": "Expect to browse through hand-written indices in digitized court records,"
+    },
+    {
+      "start": 37.88,
+      "duration": 6.38,
+      "text": "and fourth, always include the source citation to make it easier to find those records again."
+    },
+    {
+      "start": 44.26,
+      "duration": 6.17,
+      "text": "Before we get too far, it’s really important to remind yourself that not every death results"
+    },
+    {
+      "start": 50.43,
+      "duration": 1.31,
+      "text": "in probate records."
+    },
+    {
+      "start": 51.74,
+      "duration": 5.56,
+      "text": "For example, a person who lived hand-to-mouth isn’t going to make out a will."
+    },
+    {
+      "start": 57.3,
+      "duration": 4.59,
+      "text": "Wills made out by people without debts or real estate might not need to be recorded"
+    },
+    {
+      "start": 61.89,
+      "duration": 3.7,
+      "text": "with the county court—the executor could just distribute the assets."
+    },
+    {
+      "start": 65.59,
+      "duration": 5.71,
+      "text": "So, with that in mind, start you search on Ancestry.com or another site where probate"
+    },
+    {
+      "start": 71.3,
+      "duration": 3.99,
+      "text": "records are digitally indexed by name of decedent."
+    },
+    {
+      "start": 75.29,
+      "duration": 5.62,
+      "text": "I wish it were that easy, but it’s pretty rare when I can find what want via a digital"
+    },
+    {
+      "start": 80.91,
+      "duration": 1.0,
+      "text": "index."
+    },
+    {
+      "start": 81.91,
+      "duration": 2.04,
+      "text": "That’s when it’s time to start browsing through images."
+    },
+    {
+      "start": 83.95,
+      "duration": 5.03,
+      "text": "I prefer doing this on FamilySearch.org because the site just feels well suited to browsing."
+    },
+    {
+      "start": 88.98,
+      "duration": 3.75,
+      "text": "You’ll need to create a free account, but after that, just search in the catalog for"
+    },
+    {
+      "start": 92.73,
+      "duration": 1.45,
+      "text": "the county you need."
+    },
+    {
+      "start": 94.18,
+      "duration": 4.6,
+      "text": "let’s look at Lancaster Cty, Pennsylvania for sources where the author is something"
+    },
+    {
+      "start": 98.78,
+      "duration": 1.02,
+      "text": "like “Pennsylvania."
+    },
+    {
+      "start": 99.8,
+      "duration": 4.0,
+      "text": "Orphan’s Court” rather than a person’s name."
+    },
+    {
+      "start": 103.8,
+      "duration": 2.0,
+      "text": "When you see a person's name, it means it's a book."
+    },
+    {
+      "start": 105.8,
+      "duration": 3.74,
+      "text": "When it's the orphan's court, it means it's the actual court records"
+    },
+    {
+      "start": 111.38,
+      "duration": 5.06,
+      "text": "We’re looking for Jacob Slough of Lancaster county who died around 1750."
+    },
+    {
+      "start": 116.44,
+      "duration": 3.28,
+      "text": "Conveniently, Lancaster county has an index of wills."
+    },
+    {
+      "start": 119.9,
+      "duration": 4.18,
+      "text": "Indexes can be sorted in many methods, and this is my favorite: it uses the first letter"
+    },
+    {
+      "start": 124.08,
+      "duration": 4.819,
+      "text": "of the surname, the first letter of the forename, and the year of the document."
+    },
+    {
+      "start": 128.899,
+      "duration": 1.091,
+      "text": "Why do I like this?"
+    },
+    {
+      "start": 129.99,
+      "duration": 5.81,
+      "text": "Well, surname spellings can vary—I’ve seen a dozen different variants of Slough—so"
+    },
+    {
+      "start": 135.8,
+      "duration": 3.06,
+      "text": "just having the first letter makes it much easier."
+    },
+    {
+      "start": 138.86,
+      "duration": 3.73,
+      "text": "I find the J’s, and there is Jacob from 1750."
+    },
+    {
+      "start": 142.59,
+      "duration": 4.39,
+      "text": "Note down the book and page— that’s book A, page 204."
+    },
+    {
+      "start": 146.98,
+      "duration": 6.1,
+      "text": "You’ll have to jump around a bit to find the right page, but once you do... well, here it is."
+    },
+    {
+      "start": 153.08,
+      "duration": 2.59,
+      "text": "Jacob’s 1750 will."
+    },
+    {
+      "start": 155.67,
+      "duration": 6.53,
+      "text": "That county’s records appear straightforward, but wills are just one type of probate record."
+    },
+    {
+      "start": 162.2,
+      "duration": 3.64,
+      "text": "There are a ton of other ones, and they're not there on FamilySearch.org."
+    },
+    {
+      "start": 166.06,
+      "duration": 5.38,
+      "text": "I’ve got some videos on the types of documents involved in probate, but the quick version"
+    },
+    {
+      "start": 171.45,
+      "duration": 6.01,
+      "text": "is that intestate administrations, inventories and other documents should exist elsewhere."
+    },
+    {
+      "start": 177.46,
+      "duration": 3.139,
+      "text": "Take Belmont County, Ohio."
+    },
+    {
+      "start": 180.599,
+      "duration": 5.011,
+      "text": "This is a much bigger list of documents than in Lancaster county, and the index is much"
+    },
+    {
+      "start": 185.61,
+      "duration": 1.57,
+      "text": "more complicated than in Lancaster."
+    },
+    {
+      "start": 187.18,
+      "duration": 5.72,
+      "text": "The case number here is pretty important: Belmont County put most probate records into"
+    },
+    {
+      "start": 192.9,
+      "duration": 4.96,
+      "text": "files by decedent, though wills are still recorded chronologically in books"
+    },
+    {
+      "start": 197.86,
+      "duration": 2.0,
+      "text": "like they were in Lancaster County."
+    },
+    {
+      "start": 199.86,
+      "duration": 1.6,
+      "text": "My final point,"
+    },
+    {
+      "start": 201.46,
+      "duration": 4.98,
+      "text": "if you’re extracting images from FamilySearch.org to add to your tree on another site—I bring"
+    },
+    {
+      "start": 206.44,
+      "duration": 4.74,
+      "text": "them over to ancestry.com—there’s a really critical step you don't want to forget."
+    },
+    {
+      "start": 211.18,
+      "duration": 5.84,
+      "text": "When you copy the image, make sure you also copy the citation text in the Information"
+    },
+    {
+      "start": 217.02,
+      "duration": 4.32,
+      "text": "tab at the bottom of the screen, and include that in the metadata of the image."
+    },
+    {
+      "start": 221.34,
+      "duration": 5.48,
+      "text": "For example, on ancestry.com there's a \"description\" attribute for images, and I put the citation right there."
+    },
+    {
+      "start": 227.38,
+      "duration": 6.3,
+      "text": "If you forget to do that and have a need to revisit the docs, you don’t want to go browsing"
+    },
+    {
+      "start": 233.68,
+      "duration": 5.04,
+      "text": "through FamilySearch again, find your person in the index, etc. etc."
+    },
+    {
+      "start": 238.72,
+      "duration": 4.14,
+      "text": "It's a lot faster if you have that citation, which includes the URL of the image."
+    }
+  ],
+  "full_text": "Probate documents can be goldmines for genealogical research, few documents are both digitized and indexed, so expect to put in some real effort to find these. In this video, I’ll cover how to find things in digitized probate records once you find the repository. I’ve covered finding the repository in a previous video. Short version: Not every death results in a probate record. Start with digitally indexed repositories, but…. Expect to browse through hand-written indices in digitized court records, and fourth, always include the source citation to make it easier to find those records again. Before we get too far, it’s really important to remind yourself that not every death results in probate records. For example, a person who lived hand-to-mouth isn’t going to make out a will. Wills made out by people without debts or real estate might not need to be recorded with the county court—the executor could just distribute the assets. So, with that in mind, start you search on Ancestry.com or another site where probate records are digitally indexed by name of decedent. I wish it were that easy, but it’s pretty rare when I can find what want via a digital index. That’s when it’s time to start browsing through images. I prefer doing this on FamilySearch.org because the site just feels well suited to browsing. You’ll need to create a free account, but after that, just search in the catalog for the county you need. let’s look at Lancaster Cty, Pennsylvania for sources where the author is something like “Pennsylvania. Orphan’s Court” rather than a person’s name. When you see a person's name, it means it's a book. When it's the orphan's court, it means it's the actual court records We’re looking for Jacob Slough of Lancaster county who died around 1750. Conveniently, Lancaster county has an index of wills. Indexes can be sorted in many methods, and this is my favorite: it uses the first letter of the surname, the first letter of the forename, and the year of the document. Why do I like this? Well, surname spellings can vary—I’ve seen a dozen different variants of Slough—so just having the first letter makes it much easier. I find the J’s, and there is Jacob from 1750. Note down the book and page— that’s book A, page 204. You’ll have to jump around a bit to find the right page, but once you do... well, here it is. Jacob’s 1750 will. That county’s records appear straightforward, but wills are just one type of probate record. There are a ton of other ones, and they're not there on FamilySearch.org. I’ve got some videos on the types of documents involved in probate, but the quick version is that intestate administrations, inventories and other documents should exist elsewhere. Take Belmont County, Ohio. This is a much bigger list of documents than in Lancaster county, and the index is much more complicated than in Lancaster. The case number here is pretty important: Belmont County put most probate records into files by decedent, though wills are still recorded chronologically in books like they were in Lancaster County. My final point, if you’re extracting images from FamilySearch.org to add to your tree on another site—I bring them over to ancestry.com—there’s a really critical step you don't want to forget. When you copy the image, make sure you also copy the citation text in the Information tab at the bottom of the screen, and include that in the metadata of the image. For example, on ancestry.com there's a \"description\" attribute for images, and I put the citation right there. If you forget to do that and have a need to revisit the docs, you don’t want to go browsing through FamilySearch again, find your person in the index, etc. etc. It's a lot faster if you have that citation, which includes the URL of the image.",
+  "attempts": [
+    {
+      "client": "IOS",
+      "playability": {
+        "status": "OK",
+        "playableInEmbed": true,
+        "offlineability": {
+          "buttonRenderer": {
+            "navigationEndpoint": {
+              "clickTrackingParams": "CBEQ6ewBIhMI5LK9iuzblwMVJEVMCB1g2S91ygEENkpuVw==",
+              "ypcGetOfflineUpsellEndpoint": {
+                "params": "ChPqqN25AQ0KC2hzRlFIZy1TTU40Igtoc0ZRSGctU01ONCoVCAkYAVIPCgtoc0ZRSGctU01ONCAB"
+              }
+            },
+            "trackingParams": "CBEQ6ewBIhMI5LK9iuzblwMVJEVMCB1g2S91"
+          }
+        },
+        "pictureInPicture": {
+          "pictureInPictureRenderer": {
+            "playableInPip": true,
+            "offByDefault": false,
+            "shouldResumeOnHead": false
+          }
+        },
+        "miniplayer": {
+          "miniplayerRenderer": {
+            "playbackMode": "PLAYBACK_MODE_ALLOW"
+          }
+        },
+        "contextParams": "Q0FFU0FnZ0M="
+      },
+      "outcome": "ok"
+    }
+  ],
+  "fetched_at": "2026-10-28T04:11:19.619368+00:00",
+  "client": "IOS",
+  "json_path": "transcripts/039_hsFQHg-SMN4.json",
+  "text_path": "transcripts/039_hsFQHg-SMN4.txt"
+}

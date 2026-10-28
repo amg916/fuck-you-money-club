@@ -1,0 +1,5212 @@
+{
+  "index": 38,
+  "url": "https://www.youtube.com/watch?v=VwfAeN31cTw",
+  "video_id": "VwfAeN31cTw",
+  "status": "ok",
+  "metadata": {
+    "title": "Using Indirect and Negative Evidence to Prove Unrecorded Events",
+    "author": "FamilySearch",
+    "channelId": "UC-9GZ7QHKOmLS0APnfz2g1Q",
+    "lengthSeconds": "2914",
+    "viewCount": "1523",
+    "shortDescription": "Information that is hidden below the surface or totally absent can help genealogists reconstruct unrecorded events, identities, and relationships. Learn how to break through genealogical brick walls through strategies taught in this session."
+  },
+  "caption_tracks": [
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=VwfAeN31cTw&ei=53XhaouNBsuYsfIP1fPU4Qk&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185879&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=BDDF1DE002F17E5692BF7F1DF0595656B0242814.AEE8F34C06510F9FACA680E63F1699BF3D46D484&key=yt8&kind=asr&lang=en",
+      "name": {
+        "runs": [
+          {
+            "text": "English (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.en",
+      "languageCode": "en",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    }
+  ],
+  "selected_track": {
+    "baseUrl": "https://www.youtube.com/api/timedtext?v=VwfAeN31cTw&ei=53XhaouNBsuYsfIP1fPU4Qk&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185879&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=BDDF1DE002F17E5692BF7F1DF0595656B0242814.AEE8F34C06510F9FACA680E63F1699BF3D46D484&key=yt8&kind=asr&lang=en",
+    "name": {
+      "runs": [
+        {
+          "text": "English (auto-generated)"
+        }
+      ]
+    },
+    "vssId": "a.en",
+    "languageCode": "en",
+    "kind": "asr",
+    "isTranslatable": true,
+    "trackName": ""
+  },
+  "segments": [
+    {
+      "start": 3.679,
+      "duration": 3.361,
+      "text": "hello"
+    },
+    {
+      "start": 5.12,
+      "duration": 5.36,
+      "text": "and welcome to this session on using"
+    },
+    {
+      "start": 7.04,
+      "duration": 3.44,
+      "text": "genealogical evidence"
+    },
+    {
+      "start": 12.88,
+      "duration": 5.52,
+      "text": "this slide is a reminder from the"
+    },
+    {
+      "start": 15.12,
+      "duration": 3.28,
+      "text": "conference's sponsors"
+    },
+    {
+      "start": 20.24,
+      "duration": 4.48,
+      "text": "indirect and negative genealogical"
+    },
+    {
+      "start": 23.519,
+      "duration": 4.561,
+      "text": "evidence"
+    },
+    {
+      "start": 24.72,
+      "duration": 5.12,
+      "text": "are two of three kinds of genealogical"
+    },
+    {
+      "start": 28.08,
+      "duration": 4.96,
+      "text": "evidence"
+    },
+    {
+      "start": 29.84,
+      "duration": 5.52,
+      "text": "two that are complicated and difficult"
+    },
+    {
+      "start": 33.04,
+      "duration": 5.839,
+      "text": "to understand"
+    },
+    {
+      "start": 35.36,
+      "duration": 4.879,
+      "text": "evidence however is a core genealogical"
+    },
+    {
+      "start": 38.879,
+      "duration": 3.68,
+      "text": "concept"
+    },
+    {
+      "start": 40.239,
+      "duration": 4.32,
+      "text": "it's essential to doing what we"
+    },
+    {
+      "start": 42.559,
+      "duration": 5.041,
+      "text": "genealogists do"
+    },
+    {
+      "start": 44.559,
+      "duration": 7.121,
+      "text": "and to doing it well"
+    },
+    {
+      "start": 47.6,
+      "duration": 7.04,
+      "text": "but first i want to address four points"
+    },
+    {
+      "start": 51.68,
+      "duration": 6.08,
+      "text": "that some people might have to unlearn"
+    },
+    {
+      "start": 54.64,
+      "duration": 6.32,
+      "text": "to correct their prior misconceptions"
+    },
+    {
+      "start": 57.76,
+      "duration": 6.64,
+      "text": "about genealogical evidence"
+    },
+    {
+      "start": 60.96,
+      "duration": 7.28,
+      "text": "first evidence labeling is much"
+    },
+    {
+      "start": 64.4,
+      "duration": 7.36,
+      "text": "more than an academic exercise"
+    },
+    {
+      "start": 68.24,
+      "duration": 6.239,
+      "text": "instead it is a thinking process"
+    },
+    {
+      "start": 71.76,
+      "duration": 5.6,
+      "text": "that considers different ways that the"
+    },
+    {
+      "start": 74.479,
+      "duration": 6.241,
+      "text": "information that our research uncovers"
+    },
+    {
+      "start": 77.36,
+      "duration": 7.28,
+      "text": "could reveal something about the past"
+    },
+    {
+      "start": 80.72,
+      "duration": 7.759,
+      "text": "using genealogical evidence is fluid"
+    },
+    {
+      "start": 84.64,
+      "duration": 4.96,
+      "text": "and flexible in fact you can bias your"
+    },
+    {
+      "start": 88.479,
+      "duration": 4.0,
+      "text": "search"
+    },
+    {
+      "start": 89.6,
+      "duration": 4.8,
+      "text": "with premature decisions about your"
+    },
+    {
+      "start": 92.479,
+      "duration": 5.121,
+      "text": "evidence"
+    },
+    {
+      "start": 94.4,
+      "duration": 6.8,
+      "text": "this includes trying to label evidence"
+    },
+    {
+      "start": 97.6,
+      "duration": 7.6,
+      "text": "as direct indirect or negative evidence"
+    },
+    {
+      "start": 101.2,
+      "duration": 6.64,
+      "text": "too soon too early in your research"
+    },
+    {
+      "start": 105.2,
+      "duration": 3.76,
+      "text": "or categorizing evidence as right or"
+    },
+    {
+      "start": 107.84,
+      "duration": 4.559,
+      "text": "wrong"
+    },
+    {
+      "start": 108.96,
+      "duration": 6.4,
+      "text": "too early in your research before"
+    },
+    {
+      "start": 112.399,
+      "duration": 4.08,
+      "text": "you've amassed enough evidence to know"
+    },
+    {
+      "start": 115.36,
+      "duration": 4.16,
+      "text": "which is right"
+    },
+    {
+      "start": 116.479,
+      "duration": 3.041,
+      "text": "and which is wrong"
+    },
+    {
+      "start": 119.68,
+      "duration": 3.92,
+      "text": "definitively labeling and categorizing"
+    },
+    {
+      "start": 122.24,
+      "duration": 3.919,
+      "text": "your evidence"
+    },
+    {
+      "start": 123.6,
+      "duration": 3.04,
+      "text": "and deciding which information is right"
+    },
+    {
+      "start": 126.159,
+      "duration": 4.561,
+      "text": "and which"
+    },
+    {
+      "start": 126.64,
+      "duration": 6.0,
+      "text": "is wrong is possible only"
+    },
+    {
+      "start": 130.72,
+      "duration": 3.76,
+      "text": "after you've assembled evidence from"
+    },
+    {
+      "start": 132.64,
+      "duration": 4.88,
+      "text": "thorough research"
+    },
+    {
+      "start": 134.48,
+      "duration": 4.16,
+      "text": "resolve conflicts within the assembled"
+    },
+    {
+      "start": 137.52,
+      "duration": 4.24,
+      "text": "evidence"
+    },
+    {
+      "start": 138.64,
+      "duration": 5.52,
+      "text": "and use that assemblage to support a"
+    },
+    {
+      "start": 141.76,
+      "duration": 4.559,
+      "text": "conclusion"
+    },
+    {
+      "start": 144.16,
+      "duration": 3.68,
+      "text": "well why are genealogical evidence"
+    },
+    {
+      "start": 146.319,
+      "duration": 3.92,
+      "text": "concepts"
+    },
+    {
+      "start": 147.84,
+      "duration": 3.679,
+      "text": "especially indirect and negative"
+    },
+    {
+      "start": 150.239,
+      "duration": 6.08,
+      "text": "evidence"
+    },
+    {
+      "start": 151.519,
+      "duration": 9.281,
+      "text": "important to us genealogists"
+    },
+    {
+      "start": 156.319,
+      "duration": 6.721,
+      "text": "the simple answer is that when we use"
+    },
+    {
+      "start": 160.8,
+      "duration": 3.519,
+      "text": "indirect and negative evidence we can"
+    },
+    {
+      "start": 163.04,
+      "duration": 5.36,
+      "text": "break through"
+    },
+    {
+      "start": 164.319,
+      "duration": 7.2,
+      "text": "genealogical brick walls that's because"
+    },
+    {
+      "start": 168.4,
+      "duration": 7.28,
+      "text": "brick walls most often occur"
+    },
+    {
+      "start": 171.519,
+      "duration": 6.881,
+      "text": "when direct evidence is absent or scarce"
+    },
+    {
+      "start": 175.68,
+      "duration": 4.4,
+      "text": "and the researcher does not understand"
+    },
+    {
+      "start": 178.4,
+      "duration": 4.96,
+      "text": "or consider"
+    },
+    {
+      "start": 180.08,
+      "duration": 4.56,
+      "text": "what indirect and negative evidence have"
+    },
+    {
+      "start": 183.36,
+      "duration": 4.64,
+      "text": "to offer"
+    },
+    {
+      "start": 184.64,
+      "duration": 6.48,
+      "text": "what information has to offer indirectly"
+    },
+    {
+      "start": 188.0,
+      "duration": 6.4,
+      "text": "not directly or what an absence"
+    },
+    {
+      "start": 191.12,
+      "duration": 4.24,
+      "text": "of information has to offer the good"
+    },
+    {
+      "start": 194.4,
+      "duration": 3.44,
+      "text": "news"
+    },
+    {
+      "start": 195.36,
+      "duration": 3.68,
+      "text": "is that indirect and negative evidence"
+    },
+    {
+      "start": 197.84,
+      "duration": 4.56,
+      "text": "items"
+    },
+    {
+      "start": 199.04,
+      "duration": 6.479,
+      "text": "often are more bountiful than direct"
+    },
+    {
+      "start": 202.4,
+      "duration": 3.119,
+      "text": "evidence items"
+    },
+    {
+      "start": 205.68,
+      "duration": 4.479,
+      "text": "let's start this session with a basic"
+    },
+    {
+      "start": 207.76,
+      "duration": 3.6,
+      "text": "overview of genealogical research and"
+    },
+    {
+      "start": 210.159,
+      "duration": 4.241,
+      "text": "reasoning"
+    },
+    {
+      "start": 211.36,
+      "duration": 5.68,
+      "text": "that shows how we use evidence"
+    },
+    {
+      "start": 214.4,
+      "duration": 4.0,
+      "text": "we genealogists want to see into the"
+    },
+    {
+      "start": 217.04,
+      "duration": 3.279,
+      "text": "past"
+    },
+    {
+      "start": 218.4,
+      "duration": 3.04,
+      "text": "we want to understand people and"
+    },
+    {
+      "start": 220.319,
+      "duration": 5.2,
+      "text": "relationships"
+    },
+    {
+      "start": 221.44,
+      "duration": 7.439,
+      "text": "as well as sometimes even better than"
+    },
+    {
+      "start": 225.519,
+      "duration": 6.8,
+      "text": "people understood those ancestors"
+    },
+    {
+      "start": 228.879,
+      "duration": 5.601,
+      "text": "during their lifetimes we use evidence"
+    },
+    {
+      "start": 232.319,
+      "duration": 5.2,
+      "text": "from seeable information"
+    },
+    {
+      "start": 234.48,
+      "duration": 6.08,
+      "text": "information that we can see today"
+    },
+    {
+      "start": 237.519,
+      "duration": 6.8,
+      "text": "we use that evidence to help us see"
+    },
+    {
+      "start": 240.56,
+      "duration": 5.84,
+      "text": "into the unseeable past"
+    },
+    {
+      "start": 244.319,
+      "duration": 3.681,
+      "text": "assembling the evidence that information"
+    },
+    {
+      "start": 246.4,
+      "duration": 5.36,
+      "text": "provides helps us"
+    },
+    {
+      "start": 248.0,
+      "duration": 5.36,
+      "text": "see into the past here's a relatively"
+    },
+    {
+      "start": 251.76,
+      "duration": 4.64,
+      "text": "simple example"
+    },
+    {
+      "start": 253.36,
+      "duration": 3.999,
+      "text": "of the three processes that we use for"
+    },
+    {
+      "start": 256.4,
+      "duration": 4.239,
+      "text": "helping us"
+    },
+    {
+      "start": 257.359,
+      "duration": 5.601,
+      "text": "understand the past"
+    },
+    {
+      "start": 260.639,
+      "duration": 3.201,
+      "text": "the first of the three phases is to have"
+    },
+    {
+      "start": 262.96,
+      "duration": 4.48,
+      "text": "a research"
+    },
+    {
+      "start": 263.84,
+      "duration": 6.639,
+      "text": "purpose we pose that purpose"
+    },
+    {
+      "start": 267.44,
+      "duration": 4.0,
+      "text": "as a research question usually about the"
+    },
+    {
+      "start": 270.479,
+      "duration": 4.801,
+      "text": "past"
+    },
+    {
+      "start": 271.44,
+      "duration": 6.96,
+      "text": "what we want to learn in this case"
+    },
+    {
+      "start": 275.28,
+      "duration": 5.6,
+      "text": "the question is who was the mother of"
+    },
+    {
+      "start": 278.4,
+      "duration": 5.76,
+      "text": "zeviah and lydia burton"
+    },
+    {
+      "start": 280.88,
+      "duration": 7.84,
+      "text": "born in norwich in 1767"
+    },
+    {
+      "start": 284.16,
+      "duration": 8.16,
+      "text": "in 1768 and identified as daughters"
+    },
+    {
+      "start": 288.72,
+      "duration": 4.88,
+      "text": "of josiah burton as you can see from the"
+    },
+    {
+      "start": 292.32,
+      "duration": 3.84,
+      "text": "slide"
+    },
+    {
+      "start": 293.6,
+      "duration": 3.92,
+      "text": "their birth record does not name their"
+    },
+    {
+      "start": 296.16,
+      "duration": 5.84,
+      "text": "mother"
+    },
+    {
+      "start": 297.52,
+      "duration": 7.84,
+      "text": "she was unrecorded who was she"
+    },
+    {
+      "start": 302.0,
+      "duration": 7.36,
+      "text": "the 1794 recording date"
+    },
+    {
+      "start": 305.36,
+      "duration": 6.8,
+      "text": "25 and 27 years after the births"
+    },
+    {
+      "start": 309.36,
+      "duration": 5.44,
+      "text": "and the absence of the mother's name"
+    },
+    {
+      "start": 312.16,
+      "duration": 6.8,
+      "text": "suggests she was deceased"
+    },
+    {
+      "start": 314.8,
+      "duration": 6.72,
+      "text": "at the time the births were recorded"
+    },
+    {
+      "start": 318.96,
+      "duration": 3.92,
+      "text": "this late recording could be evidence of"
+    },
+    {
+      "start": 321.52,
+      "duration": 4.72,
+      "text": "something about the father"
+    },
+    {
+      "start": 322.88,
+      "duration": 5.36,
+      "text": "josiah burton but for now"
+    },
+    {
+      "start": 326.24,
+      "duration": 3.76,
+      "text": "we're interested in identifying the"
+    },
+    {
+      "start": 328.24,
+      "duration": 5.76,
+      "text": "mother"
+    },
+    {
+      "start": 330.0,
+      "duration": 6.639,
+      "text": "we apply the second process research"
+    },
+    {
+      "start": 334.0,
+      "duration": 5.84,
+      "text": "to see what we can learn about the"
+    },
+    {
+      "start": 336.639,
+      "duration": 3.201,
+      "text": "sister's mother"
+    },
+    {
+      "start": 341.36,
+      "duration": 3.679,
+      "text": "the research initially focused on the"
+    },
+    {
+      "start": 343.919,
+      "duration": 5.601,
+      "text": "sisters"
+    },
+    {
+      "start": 345.039,
+      "duration": 8.641,
+      "text": "zervaya and midia and the father josiah"
+    },
+    {
+      "start": 349.52,
+      "duration": 7.2,
+      "text": "no record of either sister even hints"
+    },
+    {
+      "start": 353.68,
+      "duration": 5.76,
+      "text": "at their mother's name despite"
+    },
+    {
+      "start": 356.72,
+      "duration": 3.84,
+      "text": "thorough research we found only four"
+    },
+    {
+      "start": 359.44,
+      "duration": 4.56,
+      "text": "sources"
+    },
+    {
+      "start": 360.56,
+      "duration": 6.16,
+      "text": "relevant to the research question"
+    },
+    {
+      "start": 364.0,
+      "duration": 3.6,
+      "text": "only one of those sources the birth"
+    },
+    {
+      "start": 366.72,
+      "duration": 3.84,
+      "text": "record"
+    },
+    {
+      "start": 367.6,
+      "duration": 4.159,
+      "text": "is in norwich then in the province of"
+    },
+    {
+      "start": 370.56,
+      "duration": 4.8,
+      "text": "new york"
+    },
+    {
+      "start": 371.759,
+      "duration": 4.321,
+      "text": "but in today's vermont the other three"
+    },
+    {
+      "start": 375.36,
+      "duration": 3.48,
+      "text": "sources"
+    },
+    {
+      "start": 376.08,
+      "duration": 5.36,
+      "text": "are records from another colony"
+    },
+    {
+      "start": 378.84,
+      "duration": 4.919,
+      "text": "connecticut"
+    },
+    {
+      "start": 381.44,
+      "duration": 4.96,
+      "text": "once we've completed the research we're"
+    },
+    {
+      "start": 383.759,
+      "duration": 5.121,
+      "text": "ready to assemble the information"
+    },
+    {
+      "start": 386.4,
+      "duration": 3.84,
+      "text": "and consider the evidence that"
+    },
+    {
+      "start": 388.88,
+      "duration": 4.96,
+      "text": "considering"
+    },
+    {
+      "start": 390.24,
+      "duration": 6.959,
+      "text": "is the third process of using evidence"
+    },
+    {
+      "start": 393.84,
+      "duration": 5.52,
+      "text": "reasoning this table"
+    },
+    {
+      "start": 397.199,
+      "duration": 3.44,
+      "text": "the table on this slide also is"
+    },
+    {
+      "start": 399.36,
+      "duration": 3.6,
+      "text": "reproduced"
+    },
+    {
+      "start": 400.639,
+      "duration": 3.68,
+      "text": "in your syllabus material for this"
+    },
+    {
+      "start": 402.96,
+      "duration": 4.079,
+      "text": "session"
+    },
+    {
+      "start": 404.319,
+      "duration": 3.841,
+      "text": "the first line refers to the birth"
+    },
+    {
+      "start": 407.039,
+      "duration": 4.0,
+      "text": "record"
+    },
+    {
+      "start": 408.16,
+      "duration": 3.84,
+      "text": "that's the source the information is"
+    },
+    {
+      "start": 411.039,
+      "duration": 3.041,
+      "text": "that the"
+    },
+    {
+      "start": 412.0,
+      "duration": 4.72,
+      "text": "two women the two daughters sir and"
+    },
+    {
+      "start": 414.08,
+      "duration": 6.64,
+      "text": "lydia were josiah burton's daughters"
+    },
+    {
+      "start": 416.72,
+      "duration": 6.879,
+      "text": "and they were born on those dates"
+    },
+    {
+      "start": 420.72,
+      "duration": 4.8,
+      "text": "since our question focuses on the mother"
+    },
+    {
+      "start": 423.599,
+      "duration": 2.801,
+      "text": "and the birth record does not mention"
+    },
+    {
+      "start": 425.52,
+      "duration": 3.519,
+      "text": "her"
+    },
+    {
+      "start": 426.4,
+      "duration": 3.199,
+      "text": "it does not directly address the"
+    },
+    {
+      "start": 429.039,
+      "duration": 4.16,
+      "text": "research"
+    },
+    {
+      "start": 429.599,
+      "duration": 6.88,
+      "text": "question that doesn't rule out however"
+    },
+    {
+      "start": 433.199,
+      "duration": 6.081,
+      "text": "the possibility that combined with"
+    },
+    {
+      "start": 436.479,
+      "duration": 3.361,
+      "text": "other evidence it could answer the"
+    },
+    {
+      "start": 439.28,
+      "duration": 3.6,
+      "text": "research"
+    },
+    {
+      "start": 439.84,
+      "duration": 6.0,
+      "text": "question indirectly"
+    },
+    {
+      "start": 442.88,
+      "duration": 4.8,
+      "text": "the second source is a deed record in"
+    },
+    {
+      "start": 445.84,
+      "duration": 6.96,
+      "text": "preston connecticut"
+    },
+    {
+      "start": 447.68,
+      "duration": 8.639,
+      "text": "in which josiah and mary burton in 1769"
+    },
+    {
+      "start": 452.8,
+      "duration": 5.119,
+      "text": "identified in that year as of cumberland"
+    },
+    {
+      "start": 456.319,
+      "duration": 5.521,
+      "text": "county new york"
+    },
+    {
+      "start": 457.919,
+      "duration": 7.12,
+      "text": "later vermont sold land in preston"
+    },
+    {
+      "start": 461.84,
+      "duration": 5.12,
+      "text": "the third source is from a different"
+    },
+    {
+      "start": 465.039,
+      "duration": 5.28,
+      "text": "repository"
+    },
+    {
+      "start": 466.96,
+      "duration": 6.72,
+      "text": "a probate district"
+    },
+    {
+      "start": 470.319,
+      "duration": 6.641,
+      "text": "in connecticut showing that mary"
+    },
+    {
+      "start": 473.68,
+      "duration": 6.639,
+      "text": "leonard had inherited that"
+    },
+    {
+      "start": 476.96,
+      "duration": 6.0,
+      "text": "land from her father samuel leonard"
+    },
+    {
+      "start": 480.319,
+      "duration": 5.201,
+      "text": "and then our fourth source is from a"
+    },
+    {
+      "start": 482.96,
+      "duration": 5.519,
+      "text": "church in preston connecticut"
+    },
+    {
+      "start": 485.52,
+      "duration": 4.32,
+      "text": "showing that josiah burton had married"
+    },
+    {
+      "start": 488.479,
+      "duration": 5.361,
+      "text": "mary lennon"
+    },
+    {
+      "start": 489.84,
+      "duration": 7.12,
+      "text": "in 1765. four years"
+    },
+    {
+      "start": 493.84,
+      "duration": 4.4,
+      "text": "before they jointly sold land that she"
+    },
+    {
+      "start": 496.96,
+      "duration": 5.679,
+      "text": "had inherited"
+    },
+    {
+      "start": 498.24,
+      "duration": 4.399,
+      "text": "from her father before their marriage"
+    },
+    {
+      "start": 503.44,
+      "duration": 6.4,
+      "text": "so indirectly this evidence"
+    },
+    {
+      "start": 506.56,
+      "duration": 4.24,
+      "text": "makes the case that mary leonard was the"
+    },
+    {
+      "start": 509.84,
+      "duration": 4.8,
+      "text": "mother"
+    },
+    {
+      "start": 510.8,
+      "duration": 8.32,
+      "text": "of josiah burton's daughters"
+    },
+    {
+      "start": 514.64,
+      "duration": 8.24,
+      "text": "in fact she was in norwich in 1769"
+    },
+    {
+      "start": 519.12,
+      "duration": 6.08,
+      "text": "as his wife in the year that the second"
+    },
+    {
+      "start": 522.88,
+      "duration": 5.2,
+      "text": "daughter was born"
+    },
+    {
+      "start": 525.2,
+      "duration": 6.0,
+      "text": "that's indirect evidence but we can add"
+    },
+    {
+      "start": 528.08,
+      "duration": 6.24,
+      "text": "negative evidence to this assemblage"
+    },
+    {
+      "start": 531.2,
+      "duration": 4.079,
+      "text": "no town or county record suggests the"
+    },
+    {
+      "start": 534.32,
+      "duration": 5.12,
+      "text": "presence of"
+    },
+    {
+      "start": 535.279,
+      "duration": 7.201,
+      "text": "more than one josiah burton in norwich"
+    },
+    {
+      "start": 539.44,
+      "duration": 5.04,
+      "text": "when the children were born so all of"
+    },
+    {
+      "start": 542.48,
+      "duration": 6.08,
+      "text": "that evidence pertains"
+    },
+    {
+      "start": 544.48,
+      "duration": 7.12,
+      "text": "to one man the same man"
+    },
+    {
+      "start": 548.56,
+      "duration": 6.959,
+      "text": "this is a simple evidence assemblage"
+    },
+    {
+      "start": 551.6,
+      "duration": 6.56,
+      "text": "assemblages can be mental or they can be"
+    },
+    {
+      "start": 555.519,
+      "duration": 3.521,
+      "text": "in tabular form a table like this"
+    },
+    {
+      "start": 558.16,
+      "duration": 4.56,
+      "text": "example"
+    },
+    {
+      "start": 559.04,
+      "duration": 7.28,
+      "text": "from the syllabus material assemblages"
+    },
+    {
+      "start": 562.72,
+      "duration": 6.4,
+      "text": "help us understand evidence"
+    },
+    {
+      "start": 566.32,
+      "duration": 3.76,
+      "text": "assembled evidence not an individual"
+    },
+    {
+      "start": 569.12,
+      "duration": 5.04,
+      "text": "item"
+    },
+    {
+      "start": 570.08,
+      "duration": 7.04,
+      "text": "but the information items combined"
+    },
+    {
+      "start": 574.16,
+      "duration": 6.48,
+      "text": "give us trustworthy answers to"
+    },
+    {
+      "start": 577.12,
+      "duration": 3.52,
+      "text": "genealogical questions"
+    },
+    {
+      "start": 583.76,
+      "duration": 5.759,
+      "text": "besides identifying the sister's mother"
+    },
+    {
+      "start": 586.88,
+      "duration": 3.6,
+      "text": "marrying leonard burton the same"
+    },
+    {
+      "start": 589.519,
+      "duration": 4.0,
+      "text": "indirect"
+    },
+    {
+      "start": 590.48,
+      "duration": 5.359,
+      "text": "evidence assemblage shows that she lived"
+    },
+    {
+      "start": 593.519,
+      "duration": 5.521,
+      "text": "in cumberland county new york"
+    },
+    {
+      "start": 595.839,
+      "duration": 4.801,
+      "text": "later vermont even though no cumberland"
+    },
+    {
+      "start": 599.04,
+      "duration": 4.56,
+      "text": "county or norwich"
+    },
+    {
+      "start": 600.64,
+      "duration": 4.24,
+      "text": "or vermont record mentions mary"
+    },
+    {
+      "start": 603.6,
+      "duration": 4.56,
+      "text": "whatsoever"
+    },
+    {
+      "start": 604.88,
+      "duration": 6.959,
+      "text": "we see that from the combined evidence"
+    },
+    {
+      "start": 608.16,
+      "duration": 3.679,
+      "text": "from four sources"
+    },
+    {
+      "start": 614.959,
+      "duration": 3.041,
+      "text": "in that example the information came"
+    },
+    {
+      "start": 617.519,
+      "duration": 4.721,
+      "text": "from the"
+    },
+    {
+      "start": 618.0,
+      "duration": 7.68,
+      "text": "four sources which we can see"
+    },
+    {
+      "start": 622.24,
+      "duration": 4.159,
+      "text": "the fact is the identification of the"
+    },
+    {
+      "start": 625.68,
+      "duration": 4.32,
+      "text": "mother as"
+    },
+    {
+      "start": 626.399,
+      "duration": 7.521,
+      "text": "josiah burton's wife mary leonard"
+    },
+    {
+      "start": 630.0,
+      "duration": 5.36,
+      "text": "whom we can't see we have we cannot be"
+    },
+    {
+      "start": 633.92,
+      "duration": 4.96,
+      "text": "eyewitnesses"
+    },
+    {
+      "start": 635.36,
+      "duration": 6.08,
+      "text": "uh to that relationship"
+    },
+    {
+      "start": 638.88,
+      "duration": 3.6,
+      "text": "so we work with information that has"
+    },
+    {
+      "start": 641.44,
+      "duration": 4.24,
+      "text": "survived"
+    },
+    {
+      "start": 642.48,
+      "duration": 6.56,
+      "text": "to the present those can be words"
+    },
+    {
+      "start": 645.68,
+      "duration": 4.719,
+      "text": "or images such as photographs and the"
+    },
+    {
+      "start": 649.04,
+      "duration": 4.72,
+      "text": "context"
+    },
+    {
+      "start": 650.399,
+      "duration": 3.841,
+      "text": "of those words and images that we can"
+    },
+    {
+      "start": 653.76,
+      "duration": 4.24,
+      "text": "see"
+    },
+    {
+      "start": 654.24,
+      "duration": 7.279,
+      "text": "or hear and examine and re-examine"
+    },
+    {
+      "start": 658.0,
+      "duration": 6.959,
+      "text": "until we fully understand them we use"
+    },
+    {
+      "start": 661.519,
+      "duration": 6.56,
+      "text": "information to understand facts"
+    },
+    {
+      "start": 664.959,
+      "duration": 4.081,
+      "text": "about the past and as genealogists were"
+    },
+    {
+      "start": 668.079,
+      "duration": 4.641,
+      "text": "most interested"
+    },
+    {
+      "start": 669.04,
+      "duration": 4.799,
+      "text": "in identities relationships and events"
+    },
+    {
+      "start": 672.72,
+      "duration": 4.64,
+      "text": "in the past"
+    },
+    {
+      "start": 673.839,
+      "duration": 7.201,
+      "text": "which we cannot observe"
+    },
+    {
+      "start": 677.36,
+      "duration": 6.56,
+      "text": "so how do we transform the information"
+    },
+    {
+      "start": 681.04,
+      "duration": 3.84,
+      "text": "that we can see in the present into a"
+    },
+    {
+      "start": 683.92,
+      "duration": 4.56,
+      "text": "fact"
+    },
+    {
+      "start": 684.88,
+      "duration": 6.959,
+      "text": "about an event that we cannot see"
+    },
+    {
+      "start": 688.48,
+      "duration": 6.16,
+      "text": "that connection is evidence evidence"
+    },
+    {
+      "start": 691.839,
+      "duration": 5.841,
+      "text": "links the material we use in the present"
+    },
+    {
+      "start": 694.64,
+      "duration": 4.72,
+      "text": "to see what happened in the past in the"
+    },
+    {
+      "start": 697.68,
+      "duration": 4.399,
+      "text": "burton example"
+    },
+    {
+      "start": 699.36,
+      "duration": 4.0,
+      "text": "the fact was the identity of the woman"
+    },
+    {
+      "start": 702.079,
+      "duration": 5.44,
+      "text": "who bore"
+    },
+    {
+      "start": 703.36,
+      "duration": 7.44,
+      "text": "zervaya and lydia the information"
+    },
+    {
+      "start": 707.519,
+      "duration": 6.961,
+      "text": "came from church probate and town"
+    },
+    {
+      "start": 710.8,
+      "duration": 6.96,
+      "text": "records the evidence is the meaning"
+    },
+    {
+      "start": 714.48,
+      "duration": 6.56,
+      "text": "we obtained by assembling those"
+    },
+    {
+      "start": 717.76,
+      "duration": 7.44,
+      "text": "infrared information items from s4"
+    },
+    {
+      "start": 721.04,
+      "duration": 7.76,
+      "text": "sources this means"
+    },
+    {
+      "start": 725.2,
+      "duration": 6.8,
+      "text": "that evidence exists in your mind"
+    },
+    {
+      "start": 728.8,
+      "duration": 5.36,
+      "text": "evidence can change as you think about"
+    },
+    {
+      "start": 732.0,
+      "duration": 5.04,
+      "text": "information you found"
+    },
+    {
+      "start": 734.16,
+      "duration": 4.96,
+      "text": "you can't be sure of the labels until"
+    },
+    {
+      "start": 737.04,
+      "duration": 5.359,
+      "text": "you've assembled the evidence"
+    },
+    {
+      "start": 739.12,
+      "duration": 6.719,
+      "text": "to support a hypothesis"
+    },
+    {
+      "start": 742.399,
+      "duration": 3.44,
+      "text": "here's another example"
+    },
+    {
+      "start": 745.92,
+      "duration": 4.96,
+      "text": "our research question is when did rachel"
+    },
+    {
+      "start": 748.72,
+      "duration": 5.84,
+      "text": "burton die"
+    },
+    {
+      "start": 750.88,
+      "duration": 6.88,
+      "text": "her gravestone in norwich vermont"
+    },
+    {
+      "start": 754.56,
+      "duration": 6.36,
+      "text": "gives a direct answer to that question"
+    },
+    {
+      "start": 757.76,
+      "duration": 5.28,
+      "text": "it tells us that she died in november"
+    },
+    {
+      "start": 760.92,
+      "duration": 4.919,
+      "text": "1772."
+    },
+    {
+      "start": 763.04,
+      "duration": 3.359,
+      "text": "well we think about the possibilities"
+    },
+    {
+      "start": 765.839,
+      "duration": 2.881,
+      "text": "that the"
+    },
+    {
+      "start": 766.399,
+      "duration": 4.721,
+      "text": "weather that the gravestone is correct"
+    },
+    {
+      "start": 768.72,
+      "duration": 5.6,
+      "text": "or incorrect"
+    },
+    {
+      "start": 771.12,
+      "duration": 5.92,
+      "text": "we have two reasons to be cautious"
+    },
+    {
+      "start": 774.32,
+      "duration": 3.199,
+      "text": "one is that a find a grave contributor"
+    },
+    {
+      "start": 777.04,
+      "duration": 4.0,
+      "text": "tells"
+    },
+    {
+      "start": 777.519,
+      "duration": 4.481,
+      "text": "us without documentation that the stone"
+    },
+    {
+      "start": 781.04,
+      "duration": 5.12,
+      "text": "was erected"
+    },
+    {
+      "start": 782.0,
+      "duration": 7.68,
+      "text": "in 1800 that's 28 years"
+    },
+    {
+      "start": 786.16,
+      "duration": 6.479,
+      "text": "after the 1772 death date"
+    },
+    {
+      "start": 789.68,
+      "duration": 4.719,
+      "text": "was there somebody around who correctly"
+    },
+    {
+      "start": 792.639,
+      "duration": 4.64,
+      "text": "remembered that date"
+    },
+    {
+      "start": 794.399,
+      "duration": 4.481,
+      "text": "22 years later and the fact that there's"
+    },
+    {
+      "start": 797.279,
+      "duration": 5.441,
+      "text": "a month and a year"
+    },
+    {
+      "start": 798.88,
+      "duration": 7.36,
+      "text": "and no specific date of the month"
+    },
+    {
+      "start": 802.72,
+      "duration": 7.119,
+      "text": "suggests some uncertainty also"
+    },
+    {
+      "start": 806.24,
+      "duration": 7.44,
+      "text": "the year 1772"
+    },
+    {
+      "start": 809.839,
+      "duration": 8.401,
+      "text": "is uncorroborated uncorroborated"
+    },
+    {
+      "start": 813.68,
+      "duration": 7.68,
+      "text": "information always is suspect"
+    },
+    {
+      "start": 818.24,
+      "duration": 6.32,
+      "text": "can we get other sources to help us"
+    },
+    {
+      "start": 821.36,
+      "duration": 6.64,
+      "text": "answer this question about rachel's"
+    },
+    {
+      "start": 824.56,
+      "duration": 6.719,
+      "text": "death including a source that is better"
+    },
+    {
+      "start": 828.0,
+      "duration": 6.16,
+      "text": "than one created 28 years"
+    },
+    {
+      "start": 831.279,
+      "duration": 2.881,
+      "text": "after the fact"
+    },
+    {
+      "start": 836.24,
+      "duration": 3.44,
+      "text": "what you see on this slide is"
+    },
+    {
+      "start": 838.24,
+      "duration": 4.24,
+      "text": "information"
+    },
+    {
+      "start": 839.68,
+      "duration": 4.32,
+      "text": "from an autobiography written by"
+    },
+    {
+      "start": 842.48,
+      "duration": 5.919,
+      "text": "rachel's son"
+    },
+    {
+      "start": 844.0,
+      "duration": 6.44,
+      "text": "asa burton and these four quotations"
+    },
+    {
+      "start": 848.399,
+      "duration": 4.401,
+      "text": "come from different pages they are"
+    },
+    {
+      "start": 850.44,
+      "duration": 6.28,
+      "text": "non-consecutive sentences"
+    },
+    {
+      "start": 852.8,
+      "duration": 6.719,
+      "text": "in that autobiography arranged them"
+    },
+    {
+      "start": 856.72,
+      "duration": 3.359,
+      "text": "into an assemblage of four indirect"
+    },
+    {
+      "start": 859.519,
+      "duration": 3.841,
+      "text": "evidence"
+    },
+    {
+      "start": 860.079,
+      "duration": 6.401,
+      "text": "items that we can compare"
+    },
+    {
+      "start": 863.36,
+      "duration": 7.279,
+      "text": "to the one direct evidence item"
+    },
+    {
+      "start": 866.48,
+      "duration": 8.0,
+      "text": "the gravestone"
+    },
+    {
+      "start": 870.639,
+      "duration": 6.64,
+      "text": "when does it say that rachel died"
+    },
+    {
+      "start": 874.48,
+      "duration": 4.56,
+      "text": "first of all in the first statement asa"
+    },
+    {
+      "start": 877.279,
+      "duration": 6.481,
+      "text": "identifies his mother as"
+    },
+    {
+      "start": 879.04,
+      "duration": 8.0,
+      "text": "rachel benton wife of jacob burton"
+    },
+    {
+      "start": 883.76,
+      "duration": 4.0,
+      "text": "in the second sentence he indicates that"
+    },
+    {
+      "start": 887.04,
+      "duration": 4.96,
+      "text": "he began"
+    },
+    {
+      "start": 887.76,
+      "duration": 6.879,
+      "text": "to study latin on the 19th day of"
+    },
+    {
+      "start": 892.0,
+      "duration": 5.6,
+      "text": "october 1772"
+    },
+    {
+      "start": 894.639,
+      "duration": 3.44,
+      "text": "which was a very important date for him"
+    },
+    {
+      "start": 897.6,
+      "duration": 3.599,
+      "text": "because"
+    },
+    {
+      "start": 898.079,
+      "duration": 6.081,
+      "text": "this was his conversion in his decision"
+    },
+    {
+      "start": 901.199,
+      "duration": 4.32,
+      "text": "to pursue the ministry to pursue the"
+    },
+    {
+      "start": 904.16,
+      "duration": 4.4,
+      "text": "education"
+    },
+    {
+      "start": 905.519,
+      "duration": 3.841,
+      "text": "required to become a congregational"
+    },
+    {
+      "start": 908.56,
+      "duration": 4.8,
+      "text": "minister"
+    },
+    {
+      "start": 909.36,
+      "duration": 6.159,
+      "text": "in new england"
+    },
+    {
+      "start": 913.36,
+      "duration": 3.76,
+      "text": "in the next sentence he says the next"
+    },
+    {
+      "start": 915.519,
+      "duration": 5.601,
+      "text": "august on the 25th"
+    },
+    {
+      "start": 917.12,
+      "duration": 8.56,
+      "text": "day and that would be 1773"
+    },
+    {
+      "start": 921.12,
+      "duration": 8.24,
+      "text": "the next august act after october 1772"
+    },
+    {
+      "start": 925.68,
+      "duration": 6.0,
+      "text": "which was my birthday in less than nine"
+    },
+    {
+      "start": 929.36,
+      "duration": 3.52,
+      "text": "months and a half from the time i began"
+    },
+    {
+      "start": 931.68,
+      "duration": 4.519,
+      "text": "to study"
+    },
+    {
+      "start": 932.88,
+      "duration": 5.04,
+      "text": "so again he makes it clear that this is"
+    },
+    {
+      "start": 936.199,
+      "duration": 4.361,
+      "text": "1773"
+    },
+    {
+      "start": 937.92,
+      "duration": 3.44,
+      "text": "i was admitted a freshman in dartmouth"
+    },
+    {
+      "start": 940.56,
+      "duration": 3.279,
+      "text": "college"
+    },
+    {
+      "start": 941.36,
+      "duration": 3.36,
+      "text": "and asa had two reasons to remember that"
+    },
+    {
+      "start": 943.839,
+      "duration": 4.56,
+      "text": "date"
+    },
+    {
+      "start": 944.72,
+      "duration": 9.6,
+      "text": "his admission letter and"
+    },
+    {
+      "start": 948.399,
+      "duration": 9.041,
+      "text": "his birthday"
+    },
+    {
+      "start": 954.32,
+      "duration": 4.4,
+      "text": "the fourth statement acer again refers"
+    },
+    {
+      "start": 957.44,
+      "duration": 3.12,
+      "text": "to his mother"
+    },
+    {
+      "start": 958.72,
+      "duration": 3.119,
+      "text": "he says in the months of september"
+    },
+    {
+      "start": 960.56,
+      "duration": 6.279,
+      "text": "october november"
+    },
+    {
+      "start": 961.839,
+      "duration": 6.481,
+      "text": "after i entered college that would be"
+    },
+    {
+      "start": 966.839,
+      "duration": 4.601,
+      "text": "1773"
+    },
+    {
+      "start": 968.32,
+      "duration": 5.6,
+      "text": "that same year after that august"
+    },
+    {
+      "start": 971.44,
+      "duration": 4.8,
+      "text": "my father's family was visited with a"
+    },
+    {
+      "start": 973.92,
+      "duration": 4.8,
+      "text": "malignant putrid fever"
+    },
+    {
+      "start": 976.24,
+      "duration": 3.279,
+      "text": "in a few weeks of each other i lost my"
+    },
+    {
+      "start": 978.72,
+      "duration": 5.119,
+      "text": "mother"
+    },
+    {
+      "start": 979.519,
+      "duration": 8.56,
+      "text": "two sisters and my brother"
+    },
+    {
+      "start": 983.839,
+      "duration": 10.321,
+      "text": "so this gives us evidence that"
+    },
+    {
+      "start": 988.079,
+      "duration": 6.081,
+      "text": "rachel died in 1773."
+    },
+    {
+      "start": 995.68,
+      "duration": 4.159,
+      "text": "that means that the statement on the"
+    },
+    {
+      "start": 998.56,
+      "duration": 4.16,
+      "text": "gravestone"
+    },
+    {
+      "start": 999.839,
+      "duration": 5.201,
+      "text": "is incorrect what seemed to be direct"
+    },
+    {
+      "start": 1002.72,
+      "duration": 6.32,
+      "text": "evidence of the year of death"
+    },
+    {
+      "start": 1005.04,
+      "duration": 8.0,
+      "text": "now is not evidence of when rachel died"
+    },
+    {
+      "start": 1009.04,
+      "duration": 6.4,
+      "text": "we discard it none of aces statements"
+    },
+    {
+      "start": 1013.04,
+      "duration": 4.0,
+      "text": "by itself addresses the question when"
+    },
+    {
+      "start": 1015.44,
+      "duration": 4.639,
+      "text": "did she die"
+    },
+    {
+      "start": 1017.04,
+      "duration": 4.799,
+      "text": "but again when we put them together we"
+    },
+    {
+      "start": 1020.079,
+      "duration": 5.521,
+      "text": "get the answer"
+    },
+    {
+      "start": 1021.839,
+      "duration": 6.72,
+      "text": "fall of 1773."
+    },
+    {
+      "start": 1025.6,
+      "duration": 6.0,
+      "text": "ace's statements are hard to argue with"
+    },
+    {
+      "start": 1028.559,
+      "duration": 6.321,
+      "text": "because he was an eyewitness informant"
+    },
+    {
+      "start": 1031.6,
+      "duration": 6.719,
+      "text": "and we can see the importance"
+    },
+    {
+      "start": 1034.88,
+      "duration": 4.0,
+      "text": "of the information to him this is how"
+    },
+    {
+      "start": 1038.319,
+      "duration": 3.841,
+      "text": "indirect"
+    },
+    {
+      "start": 1038.88,
+      "duration": 4.64,
+      "text": "evidence works and in this case it"
+    },
+    {
+      "start": 1042.16,
+      "duration": 5.919,
+      "text": "overturns"
+    },
+    {
+      "start": 1043.52,
+      "duration": 4.559,
+      "text": "the date recorded on the gravestone"
+    },
+    {
+      "start": 1048.559,
+      "duration": 7.841,
+      "text": "genealogical research is the gathering"
+    },
+    {
+      "start": 1052.16,
+      "duration": 8.399,
+      "text": "of information genealogical evidence"
+    },
+    {
+      "start": 1056.4,
+      "duration": 7.279,
+      "text": "is the use we make of that information"
+    },
+    {
+      "start": 1060.559,
+      "duration": 6.961,
+      "text": "those uses imply five principles"
+    },
+    {
+      "start": 1063.679,
+      "duration": 6.801,
+      "text": "of using information and evidence"
+    },
+    {
+      "start": 1067.52,
+      "duration": 4.32,
+      "text": "not all the information we gather is"
+    },
+    {
+      "start": 1070.48,
+      "duration": 3.6,
+      "text": "evidence"
+    },
+    {
+      "start": 1071.84,
+      "duration": 3.76,
+      "text": "like much of what asa wrote about his"
+    },
+    {
+      "start": 1074.08,
+      "duration": 6.16,
+      "text": "mother"
+    },
+    {
+      "start": 1075.6,
+      "duration": 6.959,
+      "text": "it has no bearing on when she died"
+    },
+    {
+      "start": 1080.24,
+      "duration": 4.16,
+      "text": "some of the information we gather even"
+    },
+    {
+      "start": 1082.559,
+      "duration": 5.36,
+      "text": "from one source"
+    },
+    {
+      "start": 1084.4,
+      "duration": 5.04,
+      "text": "can be wrong and other information in"
+    },
+    {
+      "start": 1087.919,
+      "duration": 5.201,
+      "text": "the same source"
+    },
+    {
+      "start": 1089.44,
+      "duration": 5.119,
+      "text": "can be true and even the false"
+    },
+    {
+      "start": 1093.12,
+      "duration": 5.36,
+      "text": "information"
+    },
+    {
+      "start": 1094.559,
+      "duration": 6.24,
+      "text": "can provide evidence in this case"
+    },
+    {
+      "start": 1098.48,
+      "duration": 3.28,
+      "text": "it's some of it is close enough to the"
+    },
+    {
+      "start": 1100.799,
+      "duration": 4.641,
+      "text": "truth"
+    },
+    {
+      "start": 1101.76,
+      "duration": 8.08,
+      "text": "that it helps identify this man as part"
+    },
+    {
+      "start": 1105.44,
+      "duration": 4.4,
+      "text": "of a family group"
+    },
+    {
+      "start": 1110.559,
+      "duration": 3.681,
+      "text": "like rachel's gravestone some"
+    },
+    {
+      "start": 1113.039,
+      "duration": 4.561,
+      "text": "information"
+    },
+    {
+      "start": 1114.24,
+      "duration": 4.799,
+      "text": "provides evidence all by itself but we"
+    },
+    {
+      "start": 1117.6,
+      "duration": 4.16,
+      "text": "have to consider"
+    },
+    {
+      "start": 1119.039,
+      "duration": 4.321,
+      "text": "whether that information gives us"
+    },
+    {
+      "start": 1121.76,
+      "duration": 4.56,
+      "text": "correct evidence"
+    },
+    {
+      "start": 1123.36,
+      "duration": 2.96,
+      "text": "or no evidence"
+    },
+    {
+      "start": 1127.52,
+      "duration": 5.519,
+      "text": "evidence sometimes remains hidden until"
+    },
+    {
+      "start": 1130.559,
+      "duration": 5.841,
+      "text": "we combine it with other information"
+    },
+    {
+      "start": 1133.039,
+      "duration": 7.361,
+      "text": "like you saw with the"
+    },
+    {
+      "start": 1136.4,
+      "duration": 7.12,
+      "text": "it's two norwich examples"
+    },
+    {
+      "start": 1140.4,
+      "duration": 5.92,
+      "text": "sometimes an absence of information"
+    },
+    {
+      "start": 1143.52,
+      "duration": 4.64,
+      "text": "is meaningful like the absence of a"
+    },
+    {
+      "start": 1146.32,
+      "duration": 4.96,
+      "text": "second josiah burton"
+    },
+    {
+      "start": 1148.16,
+      "duration": 6.24,
+      "text": "in norwich and that is what we call"
+    },
+    {
+      "start": 1151.28,
+      "duration": 3.12,
+      "text": "negative evidence"
+    },
+    {
+      "start": 1156.32,
+      "duration": 7.28,
+      "text": "indirect evidence exists in two forms"
+    },
+    {
+      "start": 1160.799,
+      "duration": 4.24,
+      "text": "the first is that the information by"
+    },
+    {
+      "start": 1163.6,
+      "duration": 4.56,
+      "text": "itself"
+    },
+    {
+      "start": 1165.039,
+      "duration": 4.0,
+      "text": "suggests an identity relationship or"
+    },
+    {
+      "start": 1168.16,
+      "duration": 3.92,
+      "text": "status"
+    },
+    {
+      "start": 1169.039,
+      "duration": 5.601,
+      "text": "or event but does not state it"
+    },
+    {
+      "start": 1172.08,
+      "duration": 2.56,
+      "text": "directly"
+    },
+    {
+      "start": 1176.0,
+      "duration": 4.24,
+      "text": "calvin snell for example said in his"
+    },
+    {
+      "start": 1179.12,
+      "duration": 3.439,
+      "text": "will"
+    },
+    {
+      "start": 1180.24,
+      "duration": 3.84,
+      "text": "it is my will that my beloved daughter"
+    },
+    {
+      "start": 1182.559,
+      "duration": 3.521,
+      "text": "lydia snell"
+    },
+    {
+      "start": 1184.08,
+      "duration": 3.04,
+      "text": "should have the rest of the household"
+    },
+    {
+      "start": 1186.08,
+      "duration": 3.2,
+      "text": "furniture"
+    },
+    {
+      "start": 1187.12,
+      "duration": 4.08,
+      "text": "that belonged to her mother that is not"
+    },
+    {
+      "start": 1189.28,
+      "duration": 6.56,
+      "text": "disposed of"
+    },
+    {
+      "start": 1191.2,
+      "duration": 7.76,
+      "text": "and also the gold beads"
+    },
+    {
+      "start": 1195.84,
+      "duration": 5.12,
+      "text": "well if our research question is who was"
+    },
+    {
+      "start": 1198.96,
+      "duration": 4.959,
+      "text": "lydia's mother"
+    },
+    {
+      "start": 1200.96,
+      "duration": 2.959,
+      "text": "indirectly"
+    },
+    {
+      "start": 1204.72,
+      "duration": 4.16,
+      "text": "this snippet from calvin's will it does"
+    },
+    {
+      "start": 1207.2,
+      "duration": 4.8,
+      "text": "not name her"
+    },
+    {
+      "start": 1208.88,
+      "duration": 4.4,
+      "text": "but it does give us evidence that she"
+    },
+    {
+      "start": 1212.0,
+      "duration": 5.6,
+      "text": "had died"
+    },
+    {
+      "start": 1213.28,
+      "duration": 8.639,
+      "text": "recently she was not the mother of lydia"
+    },
+    {
+      "start": 1217.6,
+      "duration": 5.199,
+      "text": "was not calvin's widow she was the prior"
+    },
+    {
+      "start": 1221.919,
+      "duration": 3.76,
+      "text": "wife"
+    },
+    {
+      "start": 1222.799,
+      "duration": 2.88,
+      "text": "of her father"
+    },
+    {
+      "start": 1226.4,
+      "duration": 5.279,
+      "text": "the other kind of indirect evidence"
+    },
+    {
+      "start": 1228.88,
+      "duration": 6.32,
+      "text": "comes from combining informations"
+    },
+    {
+      "start": 1231.679,
+      "duration": 6.161,
+      "text": "to address a research question"
+    },
+    {
+      "start": 1235.2,
+      "duration": 5.359,
+      "text": "this is what we did to identify the"
+    },
+    {
+      "start": 1237.84,
+      "duration": 5.839,
+      "text": "mother of zervaya and lydia burton"
+    },
+    {
+      "start": 1240.559,
+      "duration": 4.24,
+      "text": "you've already seen this example let's"
+    },
+    {
+      "start": 1243.679,
+      "duration": 4.48,
+      "text": "look at one"
+    },
+    {
+      "start": 1244.799,
+      "duration": 6.561,
+      "text": "that's more complicated"
+    },
+    {
+      "start": 1248.159,
+      "duration": 6.801,
+      "text": "our research question is who when"
+    },
+    {
+      "start": 1251.36,
+      "duration": 7.12,
+      "text": "and where did frank grief greenfield"
+    },
+    {
+      "start": 1254.96,
+      "duration": 6.8,
+      "text": "marry until his death"
+    },
+    {
+      "start": 1258.48,
+      "duration": 7.28,
+      "text": "in 1870 frank lived"
+    },
+    {
+      "start": 1261.76,
+      "duration": 4.399,
+      "text": "in niagara county new york a place with"
+    },
+    {
+      "start": 1265.76,
+      "duration": 4.08,
+      "text": "no"
+    },
+    {
+      "start": 1266.159,
+      "duration": 6.88,
+      "text": "marriage records at that time"
+    },
+    {
+      "start": 1269.84,
+      "duration": 6.16,
+      "text": "frank never owned land"
+    },
+    {
+      "start": 1273.039,
+      "duration": 5.041,
+      "text": "when we finally identify a candidate for"
+    },
+    {
+      "start": 1276.0,
+      "duration": 5.76,
+      "text": "his father-in-law"
+    },
+    {
+      "start": 1278.08,
+      "duration": 4.8,
+      "text": "that man left no probate no record of"
+    },
+    {
+      "start": 1281.76,
+      "duration": 4.72,
+      "text": "that man"
+    },
+    {
+      "start": 1282.88,
+      "duration": 6.72,
+      "text": "mentions frank so we have no direct"
+    },
+    {
+      "start": 1286.48,
+      "duration": 6.079,
+      "text": "evidence for frank's"
+    },
+    {
+      "start": 1289.6,
+      "duration": 4.64,
+      "text": "first marriage that marriage is"
+    },
+    {
+      "start": 1292.559,
+      "duration": 5.12,
+      "text": "unrecorded"
+    },
+    {
+      "start": 1294.24,
+      "duration": 6.96,
+      "text": "so we do our research we look at sources"
+    },
+    {
+      "start": 1297.679,
+      "duration": 7.12,
+      "text": "and we gather information"
+    },
+    {
+      "start": 1301.2,
+      "duration": 4.56,
+      "text": "the 1850 census gives us evidence that"
+    },
+    {
+      "start": 1304.799,
+      "duration": 4.721,
+      "text": "franklin was"
+    },
+    {
+      "start": 1305.76,
+      "duration": 7.36,
+      "text": "unmarried in 1850 because we see"
+    },
+    {
+      "start": 1309.52,
+      "duration": 5.039,
+      "text": "no candidate for his wife he's the only"
+    },
+    {
+      "start": 1313.12,
+      "duration": 4.88,
+      "text": "greenfield"
+    },
+    {
+      "start": 1314.559,
+      "duration": 6.561,
+      "text": "in this hoffman household so this is the"
+    },
+    {
+      "start": 1318.0,
+      "duration": 5.919,
+      "text": "first part of an evidence assemblage"
+    },
+    {
+      "start": 1321.12,
+      "duration": 3.36,
+      "text": "from information that i'll show you on"
+    },
+    {
+      "start": 1323.919,
+      "duration": 6.88,
+      "text": "the"
+    },
+    {
+      "start": 1324.48,
+      "duration": 9.28,
+      "text": "series of slides by 1855"
+    },
+    {
+      "start": 1330.799,
+      "duration": 3.921,
+      "text": "franklin is married we have direct"
+    },
+    {
+      "start": 1333.76,
+      "duration": 4.159,
+      "text": "evidence"
+    },
+    {
+      "start": 1334.72,
+      "duration": 6.4,
+      "text": "from the 1855 state census"
+    },
+    {
+      "start": 1337.919,
+      "duration": 5.281,
+      "text": "that christina was his wife"
+    },
+    {
+      "start": 1341.12,
+      "duration": 3.039,
+      "text": "we have direct evidence that he was"
+    },
+    {
+      "start": 1343.2,
+      "duration": 5.52,
+      "text": "married"
+    },
+    {
+      "start": 1344.159,
+      "duration": 8.0,
+      "text": "that his wife was born in 1830 or 31"
+    },
+    {
+      "start": 1348.72,
+      "duration": 4.48,
+      "text": "in massachusetts and that they had a"
+    },
+    {
+      "start": 1352.159,
+      "duration": 4.4,
+      "text": "child"
+    },
+    {
+      "start": 1353.2,
+      "duration": 8.0,
+      "text": "uh born about 1853"
+    },
+    {
+      "start": 1356.559,
+      "duration": 8.0,
+      "text": "so in combination with the 1850 census"
+    },
+    {
+      "start": 1361.2,
+      "duration": 5.28,
+      "text": "we can date this marriage to between"
+    },
+    {
+      "start": 1364.559,
+      "duration": 6.801,
+      "text": "1850"
+    },
+    {
+      "start": 1366.48,
+      "duration": 4.88,
+      "text": "and probably before"
+    },
+    {
+      "start": 1372.84,
+      "duration": 5.16,
+      "text": "1853."
+    },
+    {
+      "start": 1374.88,
+      "duration": 6.0,
+      "text": "by 1860"
+    },
+    {
+      "start": 1378.0,
+      "duration": 4.72,
+      "text": "franklin christina and julia had aged"
+    },
+    {
+      "start": 1380.88,
+      "duration": 4.96,
+      "text": "five years"
+    },
+    {
+      "start": 1382.72,
+      "duration": 6.64,
+      "text": "christina now 29"
+    },
+    {
+      "start": 1385.84,
+      "duration": 6.4,
+      "text": "again was born in massachusetts in 1830"
+    },
+    {
+      "start": 1389.36,
+      "duration": 2.88,
+      "text": "or 31"
+    },
+    {
+      "start": 1393.12,
+      "duration": 7.679,
+      "text": "and they had added a daughter harriet"
+    },
+    {
+      "start": 1397.039,
+      "duration": 5.921,
+      "text": "to the family and this is"
+    },
+    {
+      "start": 1400.799,
+      "duration": 3.841,
+      "text": "this is a household that is spread"
+    },
+    {
+      "start": 1402.96,
+      "duration": 4.0,
+      "text": "across two pages"
+    },
+    {
+      "start": 1404.64,
+      "duration": 3.039,
+      "text": "which is why you see the gap between the"
+    },
+    {
+      "start": 1406.96,
+      "duration": 3.599,
+      "text": "two"
+    },
+    {
+      "start": 1407.679,
+      "duration": 2.88,
+      "text": "screenshots"
+    },
+    {
+      "start": 1411.52,
+      "duration": 7.6,
+      "text": "the family situation changed greatly"
+    },
+    {
+      "start": 1414.88,
+      "duration": 7.919,
+      "text": "by 1865 the next state census"
+    },
+    {
+      "start": 1419.12,
+      "duration": 8.159,
+      "text": "franklin was away at war"
+    },
+    {
+      "start": 1422.799,
+      "duration": 6.721,
+      "text": "christina and julia had disappeared"
+    },
+    {
+      "start": 1427.279,
+      "duration": 3.52,
+      "text": "christina and harriet had disappeared i"
+    },
+    {
+      "start": 1429.52,
+      "duration": 5.12,
+      "text": "should say"
+    },
+    {
+      "start": 1430.799,
+      "duration": 5.201,
+      "text": "only julia remained in a household with"
+    },
+    {
+      "start": 1434.64,
+      "duration": 4.639,
+      "text": "two connors"
+    },
+    {
+      "start": 1436.0,
+      "duration": 6.64,
+      "text": "two pecks and three talcotts"
+    },
+    {
+      "start": 1439.279,
+      "duration": 6.961,
+      "text": "why is julia in this household"
+    },
+    {
+      "start": 1442.64,
+      "duration": 7.2,
+      "text": "of all the households in niagara county"
+    },
+    {
+      "start": 1446.24,
+      "duration": 6.319,
+      "text": "she's the only green field there"
+    },
+    {
+      "start": 1449.84,
+      "duration": 5.839,
+      "text": "from our evidence assemblage so far we"
+    },
+    {
+      "start": 1452.559,
+      "duration": 5.761,
+      "text": "know that frank was single in 1850"
+    },
+    {
+      "start": 1455.679,
+      "duration": 6.48,
+      "text": "and then he married christina likely in"
+    },
+    {
+      "start": 1458.32,
+      "duration": 6.0,
+      "text": "niagara county in 1850 to 53"
+    },
+    {
+      "start": 1462.159,
+      "duration": 6.4,
+      "text": "we also know that christina was born in"
+    },
+    {
+      "start": 1464.32,
+      "duration": 8.64,
+      "text": "massachusetts in 1830 or 31"
+    },
+    {
+      "start": 1468.559,
+      "duration": 7.441,
+      "text": "in 1850 when franklin was living alone"
+    },
+    {
+      "start": 1472.96,
+      "duration": 4.959,
+      "text": "in niagara county christina also likely"
+    },
+    {
+      "start": 1476.0,
+      "duration": 6.559,
+      "text": "would be unmarried"
+    },
+    {
+      "start": 1477.919,
+      "duration": 4.64,
+      "text": "and living in her parental household"
+    },
+    {
+      "start": 1482.64,
+      "duration": 3.68,
+      "text": "when we search for the first name"
+    },
+    {
+      "start": 1485.12,
+      "duration": 5.12,
+      "text": "christina"
+    },
+    {
+      "start": 1486.32,
+      "duration": 8.32,
+      "text": "in niagara county in 1850"
+    },
+    {
+      "start": 1490.24,
+      "duration": 4.4,
+      "text": "we find christina talcott"
+    },
+    {
+      "start": 1495.12,
+      "duration": 6.159,
+      "text": "the only christina in the county"
+    },
+    {
+      "start": 1498.4,
+      "duration": 5.519,
+      "text": "she was born in massachusetts and the"
+    },
+    {
+      "start": 1501.279,
+      "duration": 6.161,
+      "text": "age is a perfect match"
+    },
+    {
+      "start": 1503.919,
+      "duration": 7.76,
+      "text": "19 years old here in 1850"
+    },
+    {
+      "start": 1507.44,
+      "duration": 8.479,
+      "text": "and 24 years old in 1855"
+    },
+    {
+      "start": 1511.679,
+      "duration": 7.36,
+      "text": "and 29 years old in 1860"
+    },
+    {
+      "start": 1515.919,
+      "duration": 6.801,
+      "text": "as franklin's wife"
+    },
+    {
+      "start": 1519.039,
+      "duration": 8.561,
+      "text": "when we compare this 1850"
+    },
+    {
+      "start": 1522.72,
+      "duration": 8.88,
+      "text": "talcott household with the 1865"
+    },
+    {
+      "start": 1527.6,
+      "duration": 8.319,
+      "text": "connor household where julia greenfield"
+    },
+    {
+      "start": 1531.6,
+      "duration": 8.16,
+      "text": "appeared in 1865"
+    },
+    {
+      "start": 1535.919,
+      "duration": 7.441,
+      "text": "we see that that 1865"
+    },
+    {
+      "start": 1539.76,
+      "duration": 6.96,
+      "text": "connor household contains the remnants"
+    },
+    {
+      "start": 1543.36,
+      "duration": 6.72,
+      "text": "of the 1850 talcott household"
+    },
+    {
+      "start": 1546.72,
+      "duration": 5.199,
+      "text": "plus julia greenfield"
+    },
+    {
+      "start": 1550.08,
+      "duration": 4.88,
+      "text": "who was the niece of the head of"
+    },
+    {
+      "start": 1551.919,
+      "duration": 9.201,
+      "text": "household or his wife"
+    },
+    {
+      "start": 1554.96,
+      "duration": 6.16,
+      "text": "and three spot talcott spouses"
+    },
+    {
+      "start": 1562.64,
+      "duration": 7.36,
+      "text": "all of this gives us indirect evidence"
+    },
+    {
+      "start": 1565.679,
+      "duration": 7.041,
+      "text": "of the name of julia greenfield's mother"
+    },
+    {
+      "start": 1570.0,
+      "duration": 3.36,
+      "text": "remember our original research question"
+    },
+    {
+      "start": 1572.72,
+      "duration": 3.52,
+      "text": "is"
+    },
+    {
+      "start": 1573.36,
+      "duration": 5.76,
+      "text": "who when and where did franklin"
+    },
+    {
+      "start": 1576.24,
+      "duration": 5.6,
+      "text": "greenfield marry"
+    },
+    {
+      "start": 1579.12,
+      "duration": 3.84,
+      "text": "the evidence assemblage shows us the"
+    },
+    {
+      "start": 1581.84,
+      "duration": 3.92,
+      "text": "answer"
+    },
+    {
+      "start": 1582.96,
+      "duration": 4.48,
+      "text": "that his wife was christina christina"
+    },
+    {
+      "start": 1585.76,
+      "duration": 4.159,
+      "text": "talcott"
+    },
+    {
+      "start": 1587.44,
+      "duration": 3.44,
+      "text": "and that they married likely in niagara"
+    },
+    {
+      "start": 1589.919,
+      "duration": 6.801,
+      "text": "county"
+    },
+    {
+      "start": 1590.88,
+      "duration": 9.6,
+      "text": "and certainly between 1850 and 1853"
+    },
+    {
+      "start": 1596.72,
+      "duration": 4.559,
+      "text": "so let's move on now away from indirect"
+    },
+    {
+      "start": 1600.48,
+      "duration": 4.079,
+      "text": "evidence"
+    },
+    {
+      "start": 1601.279,
+      "duration": 3.28,
+      "text": "to negative evidence"
+    },
+    {
+      "start": 1604.64,
+      "duration": 3.039,
+      "text": "this is the second kind of evidence that"
+    },
+    {
+      "start": 1606.72,
+      "duration": 3.28,
+      "text": "this session"
+    },
+    {
+      "start": 1607.679,
+      "duration": 3.6,
+      "text": "covers and the most difficult to"
+    },
+    {
+      "start": 1610.0,
+      "duration": 5.2,
+      "text": "understand"
+    },
+    {
+      "start": 1611.279,
+      "duration": 6.961,
+      "text": "recognize and use it requires"
+    },
+    {
+      "start": 1615.2,
+      "duration": 6.079,
+      "text": "two conditions first"
+    },
+    {
+      "start": 1618.24,
+      "duration": 7.439,
+      "text": "is that information about a hypothesized"
+    },
+    {
+      "start": 1621.279,
+      "duration": 7.841,
+      "text": "person is missing from an extant source"
+    },
+    {
+      "start": 1625.679,
+      "duration": 6.721,
+      "text": "or sources in which that person could"
+    },
+    {
+      "start": 1629.12,
+      "duration": 5.039,
+      "text": "or should appear so it's not that the"
+    },
+    {
+      "start": 1632.4,
+      "duration": 4.24,
+      "text": "source doesn't exist"
+    },
+    {
+      "start": 1634.159,
+      "duration": 3.361,
+      "text": "is that the person could or should"
+    },
+    {
+      "start": 1636.64,
+      "duration": 4.32,
+      "text": "appear"
+    },
+    {
+      "start": 1637.52,
+      "duration": 5.039,
+      "text": "in that source but does not that's the"
+    },
+    {
+      "start": 1640.96,
+      "duration": 4.0,
+      "text": "first condition"
+    },
+    {
+      "start": 1642.559,
+      "duration": 3.521,
+      "text": "the second condition is that that"
+    },
+    {
+      "start": 1644.96,
+      "duration": 4.48,
+      "text": "absence"
+    },
+    {
+      "start": 1646.08,
+      "duration": 7.28,
+      "text": "helps us answer a genealogical research"
+    },
+    {
+      "start": 1649.44,
+      "duration": 6.959,
+      "text": "question or solve a problem"
+    },
+    {
+      "start": 1653.36,
+      "duration": 7.6,
+      "text": "and you've seen this example already"
+    },
+    {
+      "start": 1656.399,
+      "duration": 8.321,
+      "text": "the hypothesized person who's missing"
+    },
+    {
+      "start": 1660.96,
+      "duration": 6.959,
+      "text": "is a second josiah that absence"
+    },
+    {
+      "start": 1664.72,
+      "duration": 4.559,
+      "text": "has meaning we add that absence to the"
+    },
+    {
+      "start": 1667.919,
+      "duration": 3.841,
+      "text": "assemblage"
+    },
+    {
+      "start": 1669.279,
+      "duration": 3.601,
+      "text": "to strengthen the case about the"
+    },
+    {
+      "start": 1671.76,
+      "duration": 4.48,
+      "text": "identity"
+    },
+    {
+      "start": 1672.88,
+      "duration": 5.76,
+      "text": "of josiah's daughter's mother mary"
+    },
+    {
+      "start": 1676.24,
+      "duration": 2.4,
+      "text": "leonard"
+    },
+    {
+      "start": 1679.12,
+      "duration": 3.52,
+      "text": "before we look at more examples of"
+    },
+    {
+      "start": 1681.12,
+      "duration": 4.32,
+      "text": "negative evidence"
+    },
+    {
+      "start": 1682.64,
+      "duration": 4.24,
+      "text": "let's look at what negative evidence is"
+    },
+    {
+      "start": 1685.44,
+      "duration": 4.16,
+      "text": "not"
+    },
+    {
+      "start": 1686.88,
+      "duration": 4.0,
+      "text": "more misconceptions that some of you"
+    },
+    {
+      "start": 1689.6,
+      "duration": 5.36,
+      "text": "might need"
+    },
+    {
+      "start": 1690.88,
+      "duration": 6.24,
+      "text": "to unlearn and this is in your syllabus"
+    },
+    {
+      "start": 1694.96,
+      "duration": 4.88,
+      "text": "material"
+    },
+    {
+      "start": 1697.12,
+      "duration": 4.4,
+      "text": "so the absence of records is not"
+    },
+    {
+      "start": 1699.84,
+      "duration": 5.12,
+      "text": "negative evidence"
+    },
+    {
+      "start": 1701.52,
+      "duration": 6.399,
+      "text": "an unproductive search that yields no"
+    },
+    {
+      "start": 1704.96,
+      "duration": 4.4,
+      "text": "genealogical genealogically useful"
+    },
+    {
+      "start": 1707.919,
+      "duration": 4.721,
+      "text": "information"
+    },
+    {
+      "start": 1709.36,
+      "duration": 5.72,
+      "text": "is not negative evidence and direct"
+    },
+    {
+      "start": 1712.64,
+      "duration": 4.48,
+      "text": "or indirect evidence of a"
+    },
+    {
+      "start": 1715.08,
+      "duration": 5.24,
+      "text": "non-relationship"
+    },
+    {
+      "start": 1717.12,
+      "duration": 6.32,
+      "text": "is not negative evidence"
+    },
+    {
+      "start": 1720.32,
+      "duration": 6.239,
+      "text": "let's look at some examples of not"
+    },
+    {
+      "start": 1723.44,
+      "duration": 3.119,
+      "text": "negative evidence"
+    },
+    {
+      "start": 1727.279,
+      "duration": 3.361,
+      "text": "the absence of information an absence"
+    },
+    {
+      "start": 1730.08,
+      "duration": 3.68,
+      "text": "from a"
+    },
+    {
+      "start": 1730.64,
+      "duration": 4.08,
+      "text": "of of a tax list or an absence of any"
+    },
+    {
+      "start": 1733.76,
+      "duration": 4.399,
+      "text": "source"
+    },
+    {
+      "start": 1734.72,
+      "duration": 6.24,
+      "text": "tells us nothing about the people"
+    },
+    {
+      "start": 1738.159,
+      "duration": 4.161,
+      "text": "that we're researching uh unless you"
+    },
+    {
+      "start": 1740.96,
+      "duration": 2.56,
+      "text": "know they're responsible for the"
+    },
+    {
+      "start": 1742.32,
+      "duration": 4.479,
+      "text": "disappearance"
+    },
+    {
+      "start": 1743.52,
+      "duration": 6.72,
+      "text": "of the record but you know the"
+    },
+    {
+      "start": 1746.799,
+      "duration": 4.321,
+      "text": "absence of one tax list tells or implies"
+    },
+    {
+      "start": 1750.24,
+      "duration": 5.039,
+      "text": "nothing"
+    },
+    {
+      "start": 1751.12,
+      "duration": 4.159,
+      "text": "about those taxpayers"
+    },
+    {
+      "start": 1757.44,
+      "duration": 4.4,
+      "text": "the second example john is in the 1810"
+    },
+    {
+      "start": 1760.08,
+      "duration": 4.88,
+      "text": "tax list"
+    },
+    {
+      "start": 1761.84,
+      "duration": 3.76,
+      "text": "but he does appear in tax list before"
+    },
+    {
+      "start": 1764.96,
+      "duration": 4.959,
+      "text": "and after"
+    },
+    {
+      "start": 1765.6,
+      "duration": 8.0,
+      "text": "1810 and in the 1810 census"
+    },
+    {
+      "start": 1769.919,
+      "duration": 4.961,
+      "text": "all in the same county so the absence"
+    },
+    {
+      "start": 1773.6,
+      "duration": 4.559,
+      "text": "gives us no"
+    },
+    {
+      "start": 1774.88,
+      "duration": 4.399,
+      "text": "useful information about john unless of"
+    },
+    {
+      "start": 1778.159,
+      "duration": 4.24,
+      "text": "course john was"
+    },
+    {
+      "start": 1779.279,
+      "duration": 3.921,
+      "text": "the tax assessor because somehow he was"
+    },
+    {
+      "start": 1782.399,
+      "duration": 5.921,
+      "text": "missed"
+    },
+    {
+      "start": 1783.2,
+      "duration": 5.12,
+      "text": "or avoided paying taxes that year"
+    },
+    {
+      "start": 1789.76,
+      "duration": 6.799,
+      "text": "rachel has no vermont death record"
+    },
+    {
+      "start": 1792.96,
+      "duration": 6.079,
+      "text": "well certainly rachel died"
+    },
+    {
+      "start": 1796.559,
+      "duration": 4.72,
+      "text": "and the absence of a death record is not"
+    },
+    {
+      "start": 1799.039,
+      "duration": 5.281,
+      "text": "genealogically useful"
+    },
+    {
+      "start": 1801.279,
+      "duration": 6.321,
+      "text": "the absence gives us no useful in"
+    },
+    {
+      "start": 1804.32,
+      "duration": 6.56,
+      "text": "evidence that we can use to help us"
+    },
+    {
+      "start": 1807.6,
+      "duration": 5.04,
+      "text": "understand rachel"
+    },
+    {
+      "start": 1810.88,
+      "duration": 3.279,
+      "text": "rachel's information gives wrong"
+    },
+    {
+      "start": 1812.64,
+      "duration": 5.36,
+      "text": "information"
+    },
+    {
+      "start": 1814.159,
+      "duration": 8.161,
+      "text": "that's neither genealogically useful nor"
+    },
+    {
+      "start": 1818.0,
+      "duration": 6.64,
+      "text": "an absence of information"
+    },
+    {
+      "start": 1822.32,
+      "duration": 4.64,
+      "text": "maddie and seven of eight other children"
+    },
+    {
+      "start": 1824.64,
+      "duration": 6.48,
+      "text": "listed as siblings in the 1900"
+    },
+    {
+      "start": 1826.96,
+      "duration": 5.439,
+      "text": "census do not appear in the family bible"
+    },
+    {
+      "start": 1831.12,
+      "duration": 4.08,
+      "text": "record"
+    },
+    {
+      "start": 1832.399,
+      "duration": 4.561,
+      "text": "again this is not genealogically useful"
+    },
+    {
+      "start": 1835.2,
+      "duration": 5.199,
+      "text": "yes it's an absence"
+    },
+    {
+      "start": 1836.96,
+      "duration": 8.8,
+      "text": "but it says nothing about maddie and her"
+    },
+    {
+      "start": 1840.399,
+      "duration": 7.52,
+      "text": "siblings that we can use genealogically"
+    },
+    {
+      "start": 1845.76,
+      "duration": 3.12,
+      "text": "descendants of julia greenfield do not"
+    },
+    {
+      "start": 1847.919,
+      "duration": 4.801,
+      "text": "appear"
+    },
+    {
+      "start": 1848.88,
+      "duration": 4.799,
+      "text": "in my dna match list i'm related to many"
+    },
+    {
+      "start": 1852.72,
+      "duration": 4.64,
+      "text": "people"
+    },
+    {
+      "start": 1853.679,
+      "duration": 6.48,
+      "text": "who do not appear in my dna match list"
+    },
+    {
+      "start": 1857.36,
+      "duration": 4.159,
+      "text": "this is just another absence that"
+    },
+    {
+      "start": 1860.159,
+      "duration": 5.681,
+      "text": "provides no"
+    },
+    {
+      "start": 1861.519,
+      "duration": 4.321,
+      "text": "useful genealogical information"
+    },
+    {
+      "start": 1866.399,
+      "duration": 5.28,
+      "text": "we can use negative evidence in two ways"
+    },
+    {
+      "start": 1872.159,
+      "duration": 3.201,
+      "text": "we'll start with uh the first use which"
+    },
+    {
+      "start": 1874.88,
+      "duration": 3.84,
+      "text": "is to"
+    },
+    {
+      "start": 1875.36,
+      "duration": 6.48,
+      "text": "establish aged status death"
+    },
+    {
+      "start": 1878.72,
+      "duration": 4.799,
+      "text": "or removal and let's start with a"
+    },
+    {
+      "start": 1881.84,
+      "duration": 4.559,
+      "text": "simpler example"
+    },
+    {
+      "start": 1883.519,
+      "duration": 4.241,
+      "text": "this evidence is from research by"
+    },
+    {
+      "start": 1886.399,
+      "duration": 4.321,
+      "text": "william lichman"
+    },
+    {
+      "start": 1887.76,
+      "duration": 4.799,
+      "text": "it's cited on the slide and also your"
+    },
+    {
+      "start": 1890.72,
+      "duration": 4.959,
+      "text": "syllabus material"
+    },
+    {
+      "start": 1892.559,
+      "duration": 4.96,
+      "text": "and i've taken information from his"
+    },
+    {
+      "start": 1895.679,
+      "duration": 3.521,
+      "text": "article on the national genealogical"
+    },
+    {
+      "start": 1897.519,
+      "duration": 6.241,
+      "text": "society quarterly"
+    },
+    {
+      "start": 1899.2,
+      "duration": 4.56,
+      "text": "and assembled it into a table"
+    },
+    {
+      "start": 1904.0,
+      "duration": 7.84,
+      "text": "and lichmann is using this data to"
+    },
+    {
+      "start": 1908.84,
+      "duration": 4.28,
+      "text": "re-establish to understand the"
+    },
+    {
+      "start": 1911.84,
+      "duration": 5.04,
+      "text": "composition"
+    },
+    {
+      "start": 1913.12,
+      "duration": 4.799,
+      "text": "of caleb's family in a virginia county"
+    },
+    {
+      "start": 1916.88,
+      "duration": 4.24,
+      "text": "where the courthouse"
+    },
+    {
+      "start": 1917.919,
+      "duration": 6.161,
+      "text": "burned and the only records that"
+    },
+    {
+      "start": 1921.12,
+      "duration": 3.76,
+      "text": "official records that unless that exists"
+    },
+    {
+      "start": 1924.08,
+      "duration": 5.04,
+      "text": "are state"
+    },
+    {
+      "start": 1924.88,
+      "duration": 4.24,
+      "text": "copies of the tax records"
+    },
+    {
+      "start": 1929.6,
+      "duration": 3.24,
+      "text": "so all of these entries in this table"
+    },
+    {
+      "start": 1932.159,
+      "duration": 5.201,
+      "text": "except"
+    },
+    {
+      "start": 1932.84,
+      "duration": 4.52,
+      "text": "1813 and 1815"
+    },
+    {
+      "start": 1938.48,
+      "duration": 4.319,
+      "text": "provide negative evidence"
+    },
+    {
+      "start": 1943.519,
+      "duration": 7.721,
+      "text": "so caleb could appear"
+    },
+    {
+      "start": 1946.96,
+      "duration": 7.76,
+      "text": "in the 1786 to 1800 tax list 1870"
+    },
+    {
+      "start": 1951.24,
+      "duration": 7.0,
+      "text": "1786 is the earliest tax list"
+    },
+    {
+      "start": 1954.72,
+      "duration": 6.559,
+      "text": "but he is absent he was not taxed"
+    },
+    {
+      "start": 1958.24,
+      "duration": 3.439,
+      "text": "and we can use that as evidence that he"
+    },
+    {
+      "start": 1961.279,
+      "duration": 3.681,
+      "text": "was"
+    },
+    {
+      "start": 1961.679,
+      "duration": 6.401,
+      "text": "under age for taxation"
+    },
+    {
+      "start": 1964.96,
+      "duration": 11.839,
+      "text": "which was 21 or 16"
+    },
+    {
+      "start": 1968.08,
+      "duration": 12.24,
+      "text": "depending on the tax year"
+    },
+    {
+      "start": 1976.799,
+      "duration": 7.201,
+      "text": "so in 1817"
+    },
+    {
+      "start": 1980.32,
+      "duration": 7.44,
+      "text": "there is an absence of the third"
+    },
+    {
+      "start": 1984.0,
+      "duration": 6.399,
+      "text": "male from 1815"
+    },
+    {
+      "start": 1987.76,
+      "duration": 5.44,
+      "text": "the number decreased is two that could"
+    },
+    {
+      "start": 1990.399,
+      "duration": 5.441,
+      "text": "be evidence that a taxable son"
+    },
+    {
+      "start": 1993.2,
+      "duration": 3.28,
+      "text": "had moved out of his household and the"
+    },
+    {
+      "start": 1995.84,
+      "duration": 4.48,
+      "text": "same thing"
+    },
+    {
+      "start": 1996.48,
+      "duration": 5.36,
+      "text": "happened in 1819 the absence of the"
+    },
+    {
+      "start": 2000.32,
+      "duration": 5.12,
+      "text": "second taxpayer"
+    },
+    {
+      "start": 2001.84,
+      "duration": 6.719,
+      "text": "from 1817. and then caleb"
+    },
+    {
+      "start": 2005.44,
+      "duration": 7.119,
+      "text": "disappears after 1840"
+    },
+    {
+      "start": 2008.559,
+      "duration": 5.041,
+      "text": "so we have evidence of his death in 1839"
+    },
+    {
+      "start": 2012.559,
+      "duration": 4.0,
+      "text": "or 50."
+    },
+    {
+      "start": 2013.6,
+      "duration": 4.079,
+      "text": "and i should say that these are just the"
+    },
+    {
+      "start": 2016.559,
+      "duration": 4.24,
+      "text": "years"
+    },
+    {
+      "start": 2017.679,
+      "duration": 4.161,
+      "text": "where the tax composition of caleb's"
+    },
+    {
+      "start": 2020.799,
+      "duration": 4.081,
+      "text": "household"
+    },
+    {
+      "start": 2021.84,
+      "duration": 6.64,
+      "text": "had changed these are not just the years"
+    },
+    {
+      "start": 2024.88,
+      "duration": 7.679,
+      "text": "that the tax lists exist they exist for"
+    },
+    {
+      "start": 2028.48,
+      "duration": 5.28,
+      "text": "all these years from 1786 to 1850 and"
+    },
+    {
+      "start": 2032.559,
+      "duration": 4.641,
+      "text": "beyond"
+    },
+    {
+      "start": 2033.76,
+      "duration": 6.0,
+      "text": "except for i believe it's 1806"
+    },
+    {
+      "start": 2037.2,
+      "duration": 4.079,
+      "text": "one year that the virginian legislature"
+    },
+    {
+      "start": 2039.76,
+      "duration": 4.48,
+      "text": "forgot to pass"
+    },
+    {
+      "start": 2041.279,
+      "duration": 2.961,
+      "text": "a tax bill"
+    },
+    {
+      "start": 2044.399,
+      "duration": 3.441,
+      "text": "so this negative evidence gives us"
+    },
+    {
+      "start": 2046.96,
+      "duration": 4.159,
+      "text": "evidence of"
+    },
+    {
+      "start": 2047.84,
+      "duration": 6.16,
+      "text": "three births and one death"
+    },
+    {
+      "start": 2051.119,
+      "duration": 4.161,
+      "text": "in the absence of any birth or death"
+    },
+    {
+      "start": 2054.0,
+      "duration": 3.72,
+      "text": "records"
+    },
+    {
+      "start": 2055.28,
+      "duration": 4.399,
+      "text": "now assemblages like this require"
+    },
+    {
+      "start": 2057.72,
+      "duration": 4.959,
+      "text": "corroboration"
+    },
+    {
+      "start": 2059.679,
+      "duration": 4.561,
+      "text": "and other indirect evidence supports the"
+    },
+    {
+      "start": 2062.679,
+      "duration": 5.72,
+      "text": "identifications"
+    },
+    {
+      "start": 2064.24,
+      "duration": 7.52,
+      "text": "of these sons because the each time"
+    },
+    {
+      "start": 2068.399,
+      "duration": 4.881,
+      "text": "the number of males in caleb's household"
+    },
+    {
+      "start": 2071.76,
+      "duration": 4.879,
+      "text": "decreased"
+    },
+    {
+      "start": 2073.28,
+      "duration": 6.48,
+      "text": "a taylor taxpayer appeared"
+    },
+    {
+      "start": 2076.639,
+      "duration": 7.04,
+      "text": "a new taylor taxpayer appeared"
+    },
+    {
+      "start": 2079.76,
+      "duration": 6.079,
+      "text": "in the same district uh corroborating"
+    },
+    {
+      "start": 2083.679,
+      "duration": 4.881,
+      "text": "the evidence that his son had moved out"
+    },
+    {
+      "start": 2085.839,
+      "duration": 7.28,
+      "text": "of k-m's household and became"
+    },
+    {
+      "start": 2088.56,
+      "duration": 4.559,
+      "text": "taxable under his own name"
+    },
+    {
+      "start": 2096.079,
+      "duration": 3.841,
+      "text": "this is part of an assemblage that"
+    },
+    {
+      "start": 2097.76,
+      "duration": 4.48,
+      "text": "you've already seen"
+    },
+    {
+      "start": 2099.92,
+      "duration": 5.04,
+      "text": "but now we're going to use it not to"
+    },
+    {
+      "start": 2102.24,
+      "duration": 6.64,
+      "text": "answer who was franklin's wife"
+    },
+    {
+      "start": 2104.96,
+      "duration": 9.119,
+      "text": "instead we're asking about her death"
+    },
+    {
+      "start": 2108.88,
+      "duration": 5.199,
+      "text": "when and where did christina die"
+    },
+    {
+      "start": 2114.56,
+      "duration": 4.48,
+      "text": "so we see her in franklin's household in"
+    },
+    {
+      "start": 2117.56,
+      "duration": 5.96,
+      "text": "1855"
+    },
+    {
+      "start": 2119.04,
+      "duration": 8.24,
+      "text": "in 1860 but after 1860"
+    },
+    {
+      "start": 2123.52,
+      "duration": 7.92,
+      "text": "she has disappeared as has"
+    },
+    {
+      "start": 2127.28,
+      "duration": 7.28,
+      "text": "harriet and so we have negative evidence"
+    },
+    {
+      "start": 2131.44,
+      "duration": 4.56,
+      "text": "that christina and harriet although our"
+    },
+    {
+      "start": 2134.56,
+      "duration": 5.6,
+      "text": "question focuses on"
+    },
+    {
+      "start": 2136.0,
+      "duration": 8.8,
+      "text": "christina had died between 1860"
+    },
+    {
+      "start": 2140.16,
+      "duration": 7.199,
+      "text": "and 1865."
+    },
+    {
+      "start": 2144.8,
+      "duration": 4.24,
+      "text": "we can corroborate that with further"
+    },
+    {
+      "start": 2147.359,
+      "duration": 5.921,
+      "text": "research"
+    },
+    {
+      "start": 2149.04,
+      "duration": 9.52,
+      "text": "in civil war pension application files"
+    },
+    {
+      "start": 2153.28,
+      "duration": 9.44,
+      "text": "where we find an affidavit a deposition"
+    },
+    {
+      "start": 2158.56,
+      "duration": 7.84,
+      "text": "about franklin's marrying sarah thorne"
+    },
+    {
+      "start": 2162.72,
+      "duration": 8.16,
+      "text": "in niagara county in 1866"
+    },
+    {
+      "start": 2166.4,
+      "duration": 7.28,
+      "text": "the year after that 1865 census"
+    },
+    {
+      "start": 2170.88,
+      "duration": 3.92,
+      "text": "franklin could not have done that"
+    },
+    {
+      "start": 2173.68,
+      "duration": 4.24,
+      "text": "legally"
+    },
+    {
+      "start": 2174.8,
+      "duration": 6.48,
+      "text": "if christina were still living"
+    },
+    {
+      "start": 2177.92,
+      "duration": 6.08,
+      "text": "so we can add this"
+    },
+    {
+      "start": 2181.28,
+      "duration": 4.079,
+      "text": "this testimony about franklin's marriage"
+    },
+    {
+      "start": 2184.0,
+      "duration": 5.76,
+      "text": "frank's marriage"
+    },
+    {
+      "start": 2185.359,
+      "duration": 7.601,
+      "text": "to our evidence assemblage"
+    },
+    {
+      "start": 2189.76,
+      "duration": 4.079,
+      "text": "so the first row is direct evidence but"
+    },
+    {
+      "start": 2192.96,
+      "duration": 4.32,
+      "text": "the second"
+    },
+    {
+      "start": 2193.839,
+      "duration": 6.481,
+      "text": "the disappearance of excuse me the"
+    },
+    {
+      "start": 2197.28,
+      "duration": 7.2,
+      "text": "um yes the disappearance of"
+    },
+    {
+      "start": 2200.32,
+      "duration": 7.279,
+      "text": "julia of excuse me of christine"
+    },
+    {
+      "start": 2204.48,
+      "duration": 6.72,
+      "text": "in 1865 is"
+    },
+    {
+      "start": 2207.599,
+      "duration": 4.161,
+      "text": "negative evidence of her death the third"
+    },
+    {
+      "start": 2211.2,
+      "duration": 4.24,
+      "text": "line"
+    },
+    {
+      "start": 2211.76,
+      "duration": 4.8,
+      "text": "is in direct evidence and the fourth"
+    },
+    {
+      "start": 2215.44,
+      "duration": 4.0,
+      "text": "line"
+    },
+    {
+      "start": 2216.56,
+      "duration": 4.559,
+      "text": "where christina has moved to excuse me"
+    },
+    {
+      "start": 2219.44,
+      "duration": 4.0,
+      "text": "julia has moved"
+    },
+    {
+      "start": 2221.119,
+      "duration": 3.441,
+      "text": "with christina with the connors to"
+    },
+    {
+      "start": 2223.44,
+      "duration": 3.919,
+      "text": "michigan"
+    },
+    {
+      "start": 2224.56,
+      "duration": 3.84,
+      "text": "and christina and harriet still are not"
+    },
+    {
+      "start": 2227.359,
+      "duration": 3.921,
+      "text": "found"
+    },
+    {
+      "start": 2228.4,
+      "duration": 3.6,
+      "text": "anywhere near julia her mother and her"
+    },
+    {
+      "start": 2231.28,
+      "duration": 4.079,
+      "text": "sister"
+    },
+    {
+      "start": 2232.0,
+      "duration": 6.56,
+      "text": "they're not near her in 1865"
+    },
+    {
+      "start": 2235.359,
+      "duration": 5.521,
+      "text": "and they're not near her in 1870"
+    },
+    {
+      "start": 2238.56,
+      "duration": 3.6,
+      "text": "and in the interim her father has"
+    },
+    {
+      "start": 2240.88,
+      "duration": 4.479,
+      "text": "remarried"
+    },
+    {
+      "start": 2242.16,
+      "duration": 7.76,
+      "text": "so we can answer our research question"
+    },
+    {
+      "start": 2245.359,
+      "duration": 12.401,
+      "text": "about christina's death"
+    },
+    {
+      "start": 2249.92,
+      "duration": 10.72,
+      "text": "despite the absence of any death record"
+    },
+    {
+      "start": 2257.76,
+      "duration": 4.16,
+      "text": "we also can use this example to see how"
+    },
+    {
+      "start": 2260.64,
+      "duration": 3.92,
+      "text": "we can use"
+    },
+    {
+      "start": 2261.92,
+      "duration": 3.84,
+      "text": "how the evidence that we can get from"
+    },
+    {
+      "start": 2264.56,
+      "duration": 5.039,
+      "text": "information"
+    },
+    {
+      "start": 2265.76,
+      "duration": 4.319,
+      "text": "can vary we can use the information"
+    },
+    {
+      "start": 2269.599,
+      "duration": 4.0,
+      "text": "about"
+    },
+    {
+      "start": 2270.079,
+      "duration": 6.721,
+      "text": "julia's appearance in this blended"
+    },
+    {
+      "start": 2273.599,
+      "duration": 8.321,
+      "text": "connor talcott peck household as"
+    },
+    {
+      "start": 2276.8,
+      "duration": 8.4,
+      "text": "all three kinds of genealogical evidence"
+    },
+    {
+      "start": 2281.92,
+      "duration": 6.8,
+      "text": "it gives us direct evidence it says that"
+    },
+    {
+      "start": 2285.2,
+      "duration": 6.56,
+      "text": "julia was theodore connor's niece"
+    },
+    {
+      "start": 2288.72,
+      "duration": 5.119,
+      "text": "that is wrong information she actually"
+    },
+    {
+      "start": 2291.76,
+      "duration": 5.2,
+      "text": "was the niece of theodore's"
+    },
+    {
+      "start": 2293.839,
+      "duration": 6.641,
+      "text": "wife who had been harriet"
+    },
+    {
+      "start": 2296.96,
+      "duration": 6.32,
+      "text": "talcut and because it's incorrect we can"
+    },
+    {
+      "start": 2300.48,
+      "duration": 2.8,
+      "text": "discard it"
+    },
+    {
+      "start": 2303.44,
+      "duration": 6.96,
+      "text": "one risk of direct evidence is believing"
+    },
+    {
+      "start": 2307.76,
+      "duration": 3.76,
+      "text": "that the conclusion is as easily"
+    },
+    {
+      "start": 2310.4,
+      "duration": 4.16,
+      "text": "determined"
+    },
+    {
+      "start": 2311.52,
+      "duration": 5.839,
+      "text": "as the evidence is found"
+    },
+    {
+      "start": 2314.56,
+      "duration": 4.72,
+      "text": "we have indirect evidence that julia was"
+    },
+    {
+      "start": 2317.359,
+      "duration": 4.401,
+      "text": "related to the talcuts"
+    },
+    {
+      "start": 2319.28,
+      "duration": 3.839,
+      "text": "through theodore's marriage to harriet"
+    },
+    {
+      "start": 2321.76,
+      "duration": 4.16,
+      "text": "talcott"
+    },
+    {
+      "start": 2323.119,
+      "duration": 5.281,
+      "text": "and frank greenfield's marriage to"
+    },
+    {
+      "start": 2325.92,
+      "duration": 5.84,
+      "text": "christina talcott"
+    },
+    {
+      "start": 2328.4,
+      "duration": 4.56,
+      "text": "and the uh information also shows us"
+    },
+    {
+      "start": 2331.76,
+      "duration": 3.12,
+      "text": "indirectly"
+    },
+    {
+      "start": 2332.96,
+      "duration": 3.36,
+      "text": "that julia was living with her late"
+    },
+    {
+      "start": 2334.88,
+      "duration": 5.36,
+      "text": "mother's siblings"
+    },
+    {
+      "start": 2336.32,
+      "duration": 6.16,
+      "text": "and in-laws and then the absence"
+    },
+    {
+      "start": 2340.24,
+      "duration": 3.28,
+      "text": "of information about christina and"
+    },
+    {
+      "start": 2342.48,
+      "duration": 4.56,
+      "text": "harriet"
+    },
+    {
+      "start": 2343.52,
+      "duration": 6.319,
+      "text": "is negative evidence that they had died"
+    },
+    {
+      "start": 2347.04,
+      "duration": 3.76,
+      "text": "so from the information in that one"
+    },
+    {
+      "start": 2349.839,
+      "duration": 6.0,
+      "text": "source"
+    },
+    {
+      "start": 2350.8,
+      "duration": 5.039,
+      "text": "we have all three kinds of evidence"
+    },
+    {
+      "start": 2356.48,
+      "duration": 4.08,
+      "text": "here's another assemblage that's in your"
+    },
+    {
+      "start": 2358.64,
+      "duration": 4.32,
+      "text": "syllabus material"
+    },
+    {
+      "start": 2360.56,
+      "duration": 3.519,
+      "text": "it addresses the genealogical research"
+    },
+    {
+      "start": 2362.96,
+      "duration": 6.32,
+      "text": "question"
+    },
+    {
+      "start": 2364.079,
+      "duration": 8.721,
+      "text": "when and where did james greenfield die"
+    },
+    {
+      "start": 2369.28,
+      "duration": 6.48,
+      "text": "well james appears in church records"
+    },
+    {
+      "start": 2372.8,
+      "duration": 3.92,
+      "text": "in uh what today is the town of galway"
+    },
+    {
+      "start": 2375.76,
+      "duration": 4.56,
+      "text": "new york"
+    },
+    {
+      "start": 2376.72,
+      "duration": 7.68,
+      "text": "on almost a weekly basis"
+    },
+    {
+      "start": 2380.32,
+      "duration": 8.08,
+      "text": "from 1789 through the 14th of february"
+    },
+    {
+      "start": 2384.4,
+      "duration": 6.0,
+      "text": "after 1801 this information doesn't"
+    },
+    {
+      "start": 2388.4,
+      "duration": 4.48,
+      "text": "mention james death"
+    },
+    {
+      "start": 2390.4,
+      "duration": 4.0,
+      "text": "so it does not directly address the"
+    },
+    {
+      "start": 2392.88,
+      "duration": 5.36,
+      "text": "research question"
+    },
+    {
+      "start": 2394.4,
+      "duration": 7.6,
+      "text": "it's going to provide indirect evidence"
+    },
+    {
+      "start": 2398.24,
+      "duration": 7.52,
+      "text": "from the next sunday after this date"
+    },
+    {
+      "start": 2402.0,
+      "duration": 7.04,
+      "text": "forward james no longer appears"
+    },
+    {
+      "start": 2405.76,
+      "duration": 6.48,
+      "text": "in those church records negatively"
+    },
+    {
+      "start": 2409.04,
+      "duration": 7.44,
+      "text": "suggesting that he had died"
+    },
+    {
+      "start": 2412.24,
+      "duration": 4.24,
+      "text": "after that mid-february date"
+    },
+    {
+      "start": 2416.72,
+      "duration": 7.599,
+      "text": "nearby but over the county line"
+    },
+    {
+      "start": 2420.079,
+      "duration": 8.0,
+      "text": "there is a james greenfield who is taxed"
+    },
+    {
+      "start": 2424.319,
+      "duration": 7.121,
+      "text": "in 1799 through 1801"
+    },
+    {
+      "start": 2428.079,
+      "duration": 6.961,
+      "text": "as james greenfield the second"
+    },
+    {
+      "start": 2431.44,
+      "duration": 6.879,
+      "text": "in 1800 james"
+    },
+    {
+      "start": 2435.04,
+      "duration": 8.48,
+      "text": "j excuse me that should be 17.99"
+    },
+    {
+      "start": 2438.319,
+      "duration": 7.76,
+      "text": "james greenfield jr in 1800"
+    },
+    {
+      "start": 2443.52,
+      "duration": 3.839,
+      "text": "and as james greenfield with no"
+    },
+    {
+      "start": 2446.079,
+      "duration": 5.52,
+      "text": "designator"
+    },
+    {
+      "start": 2447.359,
+      "duration": 8.081,
+      "text": "after his name in 1802"
+    },
+    {
+      "start": 2451.599,
+      "duration": 4.641,
+      "text": "so junior and 2nd imply that this is a"
+    },
+    {
+      "start": 2455.44,
+      "duration": 4.56,
+      "text": "younger"
+    },
+    {
+      "start": 2456.24,
+      "duration": 7.04,
+      "text": "james greenfield than the churchgoer"
+    },
+    {
+      "start": 2460.0,
+      "duration": 5.76,
+      "text": "in nearby galway"
+    },
+    {
+      "start": 2463.28,
+      "duration": 5.44,
+      "text": "he would be the senior james or the"
+    },
+    {
+      "start": 2465.76,
+      "duration": 7.359,
+      "text": "first james and he's the only candidate"
+    },
+    {
+      "start": 2468.72,
+      "duration": 7.599,
+      "text": "for that person so the absence"
+    },
+    {
+      "start": 2473.119,
+      "duration": 7.041,
+      "text": "of the designation as second or junior"
+    },
+    {
+      "start": 2476.319,
+      "duration": 7.04,
+      "text": "in 1802 is negative evidence"
+    },
+    {
+      "start": 2480.16,
+      "duration": 4.64,
+      "text": "supporting this negative evidence that"
+    },
+    {
+      "start": 2483.359,
+      "duration": 5.601,
+      "text": "james had died"
+    },
+    {
+      "start": 2484.8,
+      "duration": 5.519,
+      "text": "after 1801 and when we searched the"
+    },
+    {
+      "start": 2488.96,
+      "duration": 4.32,
+      "text": "probate records"
+    },
+    {
+      "start": 2490.319,
+      "duration": 3.76,
+      "text": "of all of the county where the older"
+    },
+    {
+      "start": 2493.28,
+      "duration": 4.16,
+      "text": "james"
+    },
+    {
+      "start": 2494.079,
+      "duration": 7.601,
+      "text": "and his children had lived we find"
+    },
+    {
+      "start": 2497.44,
+      "duration": 5.6,
+      "text": "no record of this older james in any of"
+    },
+    {
+      "start": 2501.68,
+      "duration": 5.84,
+      "text": "those counties"
+    },
+    {
+      "start": 2503.04,
+      "duration": 8.0,
+      "text": "including saratoga where galway is"
+    },
+    {
+      "start": 2507.52,
+      "duration": 5.599,
+      "text": "so though again the absence negatively"
+    },
+    {
+      "start": 2511.04,
+      "duration": 5.92,
+      "text": "supports the conclusion"
+    },
+    {
+      "start": 2513.119,
+      "duration": 7.441,
+      "text": "that james died in saratoga county"
+    },
+    {
+      "start": 2516.96,
+      "duration": 6.879,
+      "text": "after he was no longer able to appear to"
+    },
+    {
+      "start": 2520.56,
+      "duration": 3.279,
+      "text": "in church"
+    },
+    {
+      "start": 2524.72,
+      "duration": 4.28,
+      "text": "the second use of negative evidence is"
+    },
+    {
+      "start": 2526.96,
+      "duration": 3.84,
+      "text": "to help us eliminate competing"
+    },
+    {
+      "start": 2529.0,
+      "duration": 5.96,
+      "text": "hypotheses"
+    },
+    {
+      "start": 2530.8,
+      "duration": 4.16,
+      "text": "a process of elimination"
+    },
+    {
+      "start": 2535.119,
+      "duration": 4.401,
+      "text": "here's another example from bill"
+    },
+    {
+      "start": 2537.04,
+      "duration": 2.48,
+      "text": "mitchman"
+    },
+    {
+      "start": 2539.839,
+      "duration": 4.801,
+      "text": "set in warren county missouri miranda"
+    },
+    {
+      "start": 2543.44,
+      "duration": 7.2,
+      "text": "taylor"
+    },
+    {
+      "start": 2544.64,
+      "duration": 10.08,
+      "text": "um married in 1847"
+    },
+    {
+      "start": 2550.64,
+      "duration": 7.28,
+      "text": "in in warren county missouri"
+    },
+    {
+      "start": 2554.72,
+      "duration": 4.879,
+      "text": "the question is who are her parents in"
+    },
+    {
+      "start": 2557.92,
+      "duration": 3.919,
+      "text": "1850"
+    },
+    {
+      "start": 2559.599,
+      "duration": 3.601,
+      "text": "she and her husband are living in their"
+    },
+    {
+      "start": 2561.839,
+      "duration": 4.721,
+      "text": "household"
+    },
+    {
+      "start": 2563.2,
+      "duration": 7.28,
+      "text": "not in warren county but not near"
+    },
+    {
+      "start": 2566.56,
+      "duration": 3.92,
+      "text": "any taylor household"
+    },
+    {
+      "start": 2570.64,
+      "duration": 6.0,
+      "text": "there are seven tavare households"
+    },
+    {
+      "start": 2576.839,
+      "duration": 6.28,
+      "text": "in"
+    },
+    {
+      "start": 2578.24,
+      "duration": 7.599,
+      "text": "county in 1840 before miranda's marriage"
+    },
+    {
+      "start": 2583.119,
+      "duration": 3.281,
+      "text": "but six of those households contain no"
+    },
+    {
+      "start": 2585.839,
+      "duration": 3.841,
+      "text": "girl"
+    },
+    {
+      "start": 2586.4,
+      "duration": 4.48,
+      "text": "of miranda's age that's negative"
+    },
+    {
+      "start": 2589.68,
+      "duration": 4.159,
+      "text": "evidence"
+    },
+    {
+      "start": 2590.88,
+      "duration": 3.76,
+      "text": "supporting the evidence that miranda's"
+    },
+    {
+      "start": 2593.839,
+      "duration": 4.0,
+      "text": "father was"
+    },
+    {
+      "start": 2594.64,
+      "duration": 6.64,
+      "text": "vincent whose household does occur"
+    },
+    {
+      "start": 2597.839,
+      "duration": 7.361,
+      "text": "include a girl of miranda's age"
+    },
+    {
+      "start": 2601.28,
+      "duration": 6.88,
+      "text": "each of these individually is eliminated"
+    },
+    {
+      "start": 2605.2,
+      "duration": 3.36,
+      "text": "by a negative evidence there are also"
+    },
+    {
+      "start": 2608.16,
+      "duration": 4.159,
+      "text": "two"
+    },
+    {
+      "start": 2608.56,
+      "duration": 7.36,
+      "text": "other tailors who have"
+    },
+    {
+      "start": 2612.319,
+      "duration": 7.441,
+      "text": "children of record or a child of record"
+    },
+    {
+      "start": 2615.92,
+      "duration": 4.88,
+      "text": "only a son no daughter is named if"
+    },
+    {
+      "start": 2619.76,
+      "duration": 4.48,
+      "text": "miranda"
+    },
+    {
+      "start": 2620.8,
+      "duration": 6.559,
+      "text": "was a daughter of this unnamed taylor or"
+    },
+    {
+      "start": 2624.24,
+      "duration": 5.04,
+      "text": "of the of jesse taylor the record that"
+    },
+    {
+      "start": 2627.359,
+      "duration": 5.361,
+      "text": "named the minor son"
+    },
+    {
+      "start": 2629.28,
+      "duration": 6.24,
+      "text": "would also name the minor daughter or"
+    },
+    {
+      "start": 2632.72,
+      "duration": 4.24,
+      "text": "a minor daughter unnamed and those"
+    },
+    {
+      "start": 2635.52,
+      "duration": 4.96,
+      "text": "records don't"
+    },
+    {
+      "start": 2636.96,
+      "duration": 5.119,
+      "text": "so we have all these absences supporting"
+    },
+    {
+      "start": 2640.48,
+      "duration": 6.4,
+      "text": "the conclusion"
+    },
+    {
+      "start": 2642.079,
+      "duration": 4.801,
+      "text": "that vincent was miranda's father"
+    },
+    {
+      "start": 2647.44,
+      "duration": 6.08,
+      "text": "so the process of elimination"
+    },
+    {
+      "start": 2650.48,
+      "duration": 7.359,
+      "text": "we've eliminated eight out of nine"
+    },
+    {
+      "start": 2653.52,
+      "duration": 6.72,
+      "text": "possible father fathers the aggregation"
+    },
+    {
+      "start": 2657.839,
+      "duration": 3.681,
+      "text": "of indirect evidence corroborates"
+    },
+    {
+      "start": 2660.24,
+      "duration": 3.599,
+      "text": "vincent"
+    },
+    {
+      "start": 2661.52,
+      "duration": 5.12,
+      "text": "despite the absence of a birth record"
+    },
+    {
+      "start": 2663.839,
+      "duration": 2.801,
+      "text": "for miranda"
+    },
+    {
+      "start": 2667.04,
+      "duration": 4.079,
+      "text": "here's another example cited in your"
+    },
+    {
+      "start": 2669.359,
+      "duration": 5.921,
+      "text": "syllabus material"
+    },
+    {
+      "start": 2671.119,
+      "duration": 7.441,
+      "text": "no record of philip names his parents"
+    },
+    {
+      "start": 2675.28,
+      "duration": 6.72,
+      "text": "thorough research and tax land probate"
+    },
+    {
+      "start": 2678.56,
+      "duration": 6.48,
+      "text": "court and church records reveals four"
+    },
+    {
+      "start": 2682.0,
+      "duration": 6.48,
+      "text": "candidates william"
+    },
+    {
+      "start": 2685.04,
+      "duration": 3.92,
+      "text": "who married in 1742 about 20 years"
+    },
+    {
+      "start": 2688.48,
+      "duration": 4.56,
+      "text": "before"
+    },
+    {
+      "start": 2688.96,
+      "duration": 4.639,
+      "text": "philip was born appears in no other"
+    },
+    {
+      "start": 2693.04,
+      "duration": 3.68,
+      "text": "record"
+    },
+    {
+      "start": 2693.599,
+      "duration": 6.321,
+      "text": "in a county near where philip"
+    },
+    {
+      "start": 2696.72,
+      "duration": 6.72,
+      "text": "ever lived so that"
+    },
+    {
+      "start": 2699.92,
+      "duration": 6.56,
+      "text": "absence we can eliminate him"
+    },
+    {
+      "start": 2703.44,
+      "duration": 6.159,
+      "text": "philip also married in 1742"
+    },
+    {
+      "start": 2706.48,
+      "duration": 5.599,
+      "text": "same name but this man"
+    },
+    {
+      "start": 2709.599,
+      "duration": 3.921,
+      "text": "left records of his heirs and there was"
+    },
+    {
+      "start": 2712.079,
+      "duration": 4.561,
+      "text": "no sun"
+    },
+    {
+      "start": 2713.52,
+      "duration": 4.72,
+      "text": "so the absence of a sun is negative"
+    },
+    {
+      "start": 2716.64,
+      "duration": 4.64,
+      "text": "evidence that we can use"
+    },
+    {
+      "start": 2718.24,
+      "duration": 6.16,
+      "text": "to eliminate this philip"
+    },
+    {
+      "start": 2721.28,
+      "duration": 3.68,
+      "text": "philip associated quite a bit with this"
+    },
+    {
+      "start": 2724.4,
+      "duration": 3.28,
+      "text": "louis"
+    },
+    {
+      "start": 2724.96,
+      "duration": 4.0,
+      "text": "pritchett and they could have been"
+    },
+    {
+      "start": 2727.68,
+      "duration": 4.72,
+      "text": "father and son"
+    },
+    {
+      "start": 2728.96,
+      "duration": 4.0,
+      "text": "except lewis was too young and again the"
+    },
+    {
+      "start": 2732.4,
+      "duration": 3.6,
+      "text": "negative"
+    },
+    {
+      "start": 2732.96,
+      "duration": 6.48,
+      "text": "evidence from his heirs which do not"
+    },
+    {
+      "start": 2736.0,
+      "duration": 5.599,
+      "text": "include an heir named philip rule him"
+    },
+    {
+      "start": 2739.44,
+      "duration": 4.8,
+      "text": "out"
+    },
+    {
+      "start": 2741.599,
+      "duration": 5.281,
+      "text": "louis pritchett married mary lattimore"
+    },
+    {
+      "start": 2744.24,
+      "duration": 6.48,
+      "text": "in 1844"
+    },
+    {
+      "start": 2746.88,
+      "duration": 6.959,
+      "text": "18 years or so before phillips birth"
+    },
+    {
+      "start": 2750.72,
+      "duration": 3.599,
+      "text": "they had multiple children but records"
+    },
+    {
+      "start": 2753.839,
+      "duration": 4.0,
+      "text": "name"
+    },
+    {
+      "start": 2754.319,
+      "duration": 6.881,
+      "text": "only lewis as their child"
+    },
+    {
+      "start": 2757.839,
+      "duration": 7.361,
+      "text": "so he is left as the only candidate"
+    },
+    {
+      "start": 2761.2,
+      "duration": 7.119,
+      "text": "for our phillips father and he lived"
+    },
+    {
+      "start": 2765.2,
+      "duration": 4.159,
+      "text": "in the earliest county of residence for"
+    },
+    {
+      "start": 2768.319,
+      "duration": 3.601,
+      "text": "our philip"
+    },
+    {
+      "start": 2769.359,
+      "duration": 3.76,
+      "text": "and probably was the lewis pritchett not"
+    },
+    {
+      "start": 2771.92,
+      "duration": 4.32,
+      "text": "this man"
+    },
+    {
+      "start": 2773.119,
+      "duration": 6.641,
+      "text": "who represented him as a minor"
+    },
+    {
+      "start": 2776.24,
+      "duration": 3.52,
+      "text": "in a trespass case"
+    },
+    {
+      "start": 2781.599,
+      "duration": 4.641,
+      "text": "you've probably heard the saying that"
+    },
+    {
+      "start": 2784.319,
+      "duration": 5.76,
+      "text": "absence of evidence"
+    },
+    {
+      "start": 2786.24,
+      "duration": 6.4,
+      "text": "is not evidence of absence"
+    },
+    {
+      "start": 2790.079,
+      "duration": 4.24,
+      "text": "well genealogists would not exactly"
+    },
+    {
+      "start": 2792.64,
+      "duration": 5.6,
+      "text": "agree with this"
+    },
+    {
+      "start": 2794.319,
+      "duration": 7.681,
+      "text": "we would say that absence of information"
+    },
+    {
+      "start": 2798.24,
+      "duration": 6.8,
+      "text": "could be evidence of absence"
+    },
+    {
+      "start": 2802.0,
+      "duration": 5.119,
+      "text": "but it is not proof of absence"
+    },
+    {
+      "start": 2805.04,
+      "duration": 3.68,
+      "text": "and these examples that i've shown you"
+    },
+    {
+      "start": 2807.119,
+      "duration": 4.801,
+      "text": "of negative evidence"
+    },
+    {
+      "start": 2808.72,
+      "duration": 6.8,
+      "text": "are genealogical examples"
+    },
+    {
+      "start": 2811.92,
+      "duration": 5.12,
+      "text": "of using evidence of absence of"
+    },
+    {
+      "start": 2815.52,
+      "duration": 5.28,
+      "text": "information"
+    },
+    {
+      "start": 2817.04,
+      "duration": 7.68,
+      "text": "as evidence of absence and the"
+    },
+    {
+      "start": 2820.8,
+      "duration": 6.96,
+      "text": "eminent philosopher irving coppai"
+    },
+    {
+      "start": 2824.72,
+      "duration": 6.399,
+      "text": "agrees with this"
+    },
+    {
+      "start": 2827.76,
+      "duration": 7.28,
+      "text": "this view this genealogical view"
+    },
+    {
+      "start": 2831.119,
+      "duration": 6.881,
+      "text": "using non-genealogical terminology"
+    },
+    {
+      "start": 2835.04,
+      "duration": 4.72,
+      "text": "he writes in some circumstances it can"
+    },
+    {
+      "start": 2838.0,
+      "duration": 5.04,
+      "text": "be safely assumed"
+    },
+    {
+      "start": 2839.76,
+      "duration": 6.24,
+      "text": "that if a certain event had occurred"
+    },
+    {
+      "start": 2843.04,
+      "duration": 5.36,
+      "text": "evidence of it could be discovered by"
+    },
+    {
+      "start": 2846.0,
+      "duration": 4.64,
+      "text": "qualified investigators"
+    },
+    {
+      "start": 2848.4,
+      "duration": 4.4,
+      "text": "by genealogists doing reasonably"
+    },
+    {
+      "start": 2850.64,
+      "duration": 4.959,
+      "text": "thorough research"
+    },
+    {
+      "start": 2852.8,
+      "duration": 4.96,
+      "text": "he says in such circumstances it is"
+    },
+    {
+      "start": 2855.599,
+      "duration": 4.96,
+      "text": "perfectly reasonable"
+    },
+    {
+      "start": 2857.76,
+      "duration": 4.64,
+      "text": "to take the absence of proof of an"
+    },
+    {
+      "start": 2860.559,
+      "duration": 7.52,
+      "text": "events occurrence"
+    },
+    {
+      "start": 2862.4,
+      "duration": 9.04,
+      "text": "as positive proof of its non-occurrence"
+    },
+    {
+      "start": 2868.079,
+      "duration": 7.441,
+      "text": "this philosopher takes us full circle"
+    },
+    {
+      "start": 2871.44,
+      "duration": 7.84,
+      "text": "to where we started evidence exists"
+    },
+    {
+      "start": 2875.52,
+      "duration": 7.28,
+      "text": "in your mind evidence can change"
+    },
+    {
+      "start": 2879.28,
+      "duration": 6.319,
+      "text": "as you think about it you can't be sure"
+    },
+    {
+      "start": 2882.8,
+      "duration": 4.08,
+      "text": "of the labels until you have assembled"
+    },
+    {
+      "start": 2885.599,
+      "duration": 6.161,
+      "text": "the evidence"
+    },
+    {
+      "start": 2886.88,
+      "duration": 4.88,
+      "text": "and used it to support a hypothesis"
+    },
+    {
+      "start": 2891.839,
+      "duration": 3.601,
+      "text": "this has been using indirect and"
+    },
+    {
+      "start": 2894.16,
+      "duration": 4.399,
+      "text": "negative evidence"
+    },
+    {
+      "start": 2895.44,
+      "duration": 6.879,
+      "text": "to prove unrecorded events"
+    },
+    {
+      "start": 2898.559,
+      "duration": 6.8,
+      "text": "i hope this session helps you identify"
+    },
+    {
+      "start": 2902.319,
+      "duration": 13.52,
+      "text": "your ancestors"
+    },
+    {
+      "start": 2905.359,
+      "duration": 10.48,
+      "text": "thank you"
+    }
+  ],
+  "full_text": "hello and welcome to this session on using genealogical evidence this slide is a reminder from the conference's sponsors indirect and negative genealogical evidence are two of three kinds of genealogical evidence two that are complicated and difficult to understand evidence however is a core genealogical concept it's essential to doing what we genealogists do and to doing it well but first i want to address four points that some people might have to unlearn to correct their prior misconceptions about genealogical evidence first evidence labeling is much more than an academic exercise instead it is a thinking process that considers different ways that the information that our research uncovers could reveal something about the past using genealogical evidence is fluid and flexible in fact you can bias your search with premature decisions about your evidence this includes trying to label evidence as direct indirect or negative evidence too soon too early in your research or categorizing evidence as right or wrong too early in your research before you've amassed enough evidence to know which is right and which is wrong definitively labeling and categorizing your evidence and deciding which information is right and which is wrong is possible only after you've assembled evidence from thorough research resolve conflicts within the assembled evidence and use that assemblage to support a conclusion well why are genealogical evidence concepts especially indirect and negative evidence important to us genealogists the simple answer is that when we use indirect and negative evidence we can break through genealogical brick walls that's because brick walls most often occur when direct evidence is absent or scarce and the researcher does not understand or consider what indirect and negative evidence have to offer what information has to offer indirectly not directly or what an absence of information has to offer the good news is that indirect and negative evidence items often are more bountiful than direct evidence items let's start this session with a basic overview of genealogical research and reasoning that shows how we use evidence we genealogists want to see into the past we want to understand people and relationships as well as sometimes even better than people understood those ancestors during their lifetimes we use evidence from seeable information information that we can see today we use that evidence to help us see into the unseeable past assembling the evidence that information provides helps us see into the past here's a relatively simple example of the three processes that we use for helping us understand the past the first of the three phases is to have a research purpose we pose that purpose as a research question usually about the past what we want to learn in this case the question is who was the mother of zeviah and lydia burton born in norwich in 1767 in 1768 and identified as daughters of josiah burton as you can see from the slide their birth record does not name their mother she was unrecorded who was she the 1794 recording date 25 and 27 years after the births and the absence of the mother's name suggests she was deceased at the time the births were recorded this late recording could be evidence of something about the father josiah burton but for now we're interested in identifying the mother we apply the second process research to see what we can learn about the sister's mother the research initially focused on the sisters zervaya and midia and the father josiah no record of either sister even hints at their mother's name despite thorough research we found only four sources relevant to the research question only one of those sources the birth record is in norwich then in the province of new york but in today's vermont the other three sources are records from another colony connecticut once we've completed the research we're ready to assemble the information and consider the evidence that considering is the third process of using evidence reasoning this table the table on this slide also is reproduced in your syllabus material for this session the first line refers to the birth record that's the source the information is that the two women the two daughters sir and lydia were josiah burton's daughters and they were born on those dates since our question focuses on the mother and the birth record does not mention her it does not directly address the research question that doesn't rule out however the possibility that combined with other evidence it could answer the research question indirectly the second source is a deed record in preston connecticut in which josiah and mary burton in 1769 identified in that year as of cumberland county new york later vermont sold land in preston the third source is from a different repository a probate district in connecticut showing that mary leonard had inherited that land from her father samuel leonard and then our fourth source is from a church in preston connecticut showing that josiah burton had married mary lennon in 1765. four years before they jointly sold land that she had inherited from her father before their marriage so indirectly this evidence makes the case that mary leonard was the mother of josiah burton's daughters in fact she was in norwich in 1769 as his wife in the year that the second daughter was born that's indirect evidence but we can add negative evidence to this assemblage no town or county record suggests the presence of more than one josiah burton in norwich when the children were born so all of that evidence pertains to one man the same man this is a simple evidence assemblage assemblages can be mental or they can be in tabular form a table like this example from the syllabus material assemblages help us understand evidence assembled evidence not an individual item but the information items combined give us trustworthy answers to genealogical questions besides identifying the sister's mother marrying leonard burton the same indirect evidence assemblage shows that she lived in cumberland county new york later vermont even though no cumberland county or norwich or vermont record mentions mary whatsoever we see that from the combined evidence from four sources in that example the information came from the four sources which we can see the fact is the identification of the mother as josiah burton's wife mary leonard whom we can't see we have we cannot be eyewitnesses uh to that relationship so we work with information that has survived to the present those can be words or images such as photographs and the context of those words and images that we can see or hear and examine and re-examine until we fully understand them we use information to understand facts about the past and as genealogists were most interested in identities relationships and events in the past which we cannot observe so how do we transform the information that we can see in the present into a fact about an event that we cannot see that connection is evidence evidence links the material we use in the present to see what happened in the past in the burton example the fact was the identity of the woman who bore zervaya and lydia the information came from church probate and town records the evidence is the meaning we obtained by assembling those infrared information items from s4 sources this means that evidence exists in your mind evidence can change as you think about information you found you can't be sure of the labels until you've assembled the evidence to support a hypothesis here's another example our research question is when did rachel burton die her gravestone in norwich vermont gives a direct answer to that question it tells us that she died in november 1772. well we think about the possibilities that the weather that the gravestone is correct or incorrect we have two reasons to be cautious one is that a find a grave contributor tells us without documentation that the stone was erected in 1800 that's 28 years after the 1772 death date was there somebody around who correctly remembered that date 22 years later and the fact that there's a month and a year and no specific date of the month suggests some uncertainty also the year 1772 is uncorroborated uncorroborated information always is suspect can we get other sources to help us answer this question about rachel's death including a source that is better than one created 28 years after the fact what you see on this slide is information from an autobiography written by rachel's son asa burton and these four quotations come from different pages they are non-consecutive sentences in that autobiography arranged them into an assemblage of four indirect evidence items that we can compare to the one direct evidence item the gravestone when does it say that rachel died first of all in the first statement asa identifies his mother as rachel benton wife of jacob burton in the second sentence he indicates that he began to study latin on the 19th day of october 1772 which was a very important date for him because this was his conversion in his decision to pursue the ministry to pursue the education required to become a congregational minister in new england in the next sentence he says the next august on the 25th day and that would be 1773 the next august act after october 1772 which was my birthday in less than nine months and a half from the time i began to study so again he makes it clear that this is 1773 i was admitted a freshman in dartmouth college and asa had two reasons to remember that date his admission letter and his birthday the fourth statement acer again refers to his mother he says in the months of september october november after i entered college that would be 1773 that same year after that august my father's family was visited with a malignant putrid fever in a few weeks of each other i lost my mother two sisters and my brother so this gives us evidence that rachel died in 1773. that means that the statement on the gravestone is incorrect what seemed to be direct evidence of the year of death now is not evidence of when rachel died we discard it none of aces statements by itself addresses the question when did she die but again when we put them together we get the answer fall of 1773. ace's statements are hard to argue with because he was an eyewitness informant and we can see the importance of the information to him this is how indirect evidence works and in this case it overturns the date recorded on the gravestone genealogical research is the gathering of information genealogical evidence is the use we make of that information those uses imply five principles of using information and evidence not all the information we gather is evidence like much of what asa wrote about his mother it has no bearing on when she died some of the information we gather even from one source can be wrong and other information in the same source can be true and even the false information can provide evidence in this case it's some of it is close enough to the truth that it helps identify this man as part of a family group like rachel's gravestone some information provides evidence all by itself but we have to consider whether that information gives us correct evidence or no evidence evidence sometimes remains hidden until we combine it with other information like you saw with the it's two norwich examples sometimes an absence of information is meaningful like the absence of a second josiah burton in norwich and that is what we call negative evidence indirect evidence exists in two forms the first is that the information by itself suggests an identity relationship or status or event but does not state it directly calvin snell for example said in his will it is my will that my beloved daughter lydia snell should have the rest of the household furniture that belonged to her mother that is not disposed of and also the gold beads well if our research question is who was lydia's mother indirectly this snippet from calvin's will it does not name her but it does give us evidence that she had died recently she was not the mother of lydia was not calvin's widow she was the prior wife of her father the other kind of indirect evidence comes from combining informations to address a research question this is what we did to identify the mother of zervaya and lydia burton you've already seen this example let's look at one that's more complicated our research question is who when and where did frank grief greenfield marry until his death in 1870 frank lived in niagara county new york a place with no marriage records at that time frank never owned land when we finally identify a candidate for his father-in-law that man left no probate no record of that man mentions frank so we have no direct evidence for frank's first marriage that marriage is unrecorded so we do our research we look at sources and we gather information the 1850 census gives us evidence that franklin was unmarried in 1850 because we see no candidate for his wife he's the only greenfield in this hoffman household so this is the first part of an evidence assemblage from information that i'll show you on the series of slides by 1855 franklin is married we have direct evidence from the 1855 state census that christina was his wife we have direct evidence that he was married that his wife was born in 1830 or 31 in massachusetts and that they had a child uh born about 1853 so in combination with the 1850 census we can date this marriage to between 1850 and probably before 1853. by 1860 franklin christina and julia had aged five years christina now 29 again was born in massachusetts in 1830 or 31 and they had added a daughter harriet to the family and this is this is a household that is spread across two pages which is why you see the gap between the two screenshots the family situation changed greatly by 1865 the next state census franklin was away at war christina and julia had disappeared christina and harriet had disappeared i should say only julia remained in a household with two connors two pecks and three talcotts why is julia in this household of all the households in niagara county she's the only green field there from our evidence assemblage so far we know that frank was single in 1850 and then he married christina likely in niagara county in 1850 to 53 we also know that christina was born in massachusetts in 1830 or 31 in 1850 when franklin was living alone in niagara county christina also likely would be unmarried and living in her parental household when we search for the first name christina in niagara county in 1850 we find christina talcott the only christina in the county she was born in massachusetts and the age is a perfect match 19 years old here in 1850 and 24 years old in 1855 and 29 years old in 1860 as franklin's wife when we compare this 1850 talcott household with the 1865 connor household where julia greenfield appeared in 1865 we see that that 1865 connor household contains the remnants of the 1850 talcott household plus julia greenfield who was the niece of the head of household or his wife and three spot talcott spouses all of this gives us indirect evidence of the name of julia greenfield's mother remember our original research question is who when and where did franklin greenfield marry the evidence assemblage shows us the answer that his wife was christina christina talcott and that they married likely in niagara county and certainly between 1850 and 1853 so let's move on now away from indirect evidence to negative evidence this is the second kind of evidence that this session covers and the most difficult to understand recognize and use it requires two conditions first is that information about a hypothesized person is missing from an extant source or sources in which that person could or should appear so it's not that the source doesn't exist is that the person could or should appear in that source but does not that's the first condition the second condition is that that absence helps us answer a genealogical research question or solve a problem and you've seen this example already the hypothesized person who's missing is a second josiah that absence has meaning we add that absence to the assemblage to strengthen the case about the identity of josiah's daughter's mother mary leonard before we look at more examples of negative evidence let's look at what negative evidence is not more misconceptions that some of you might need to unlearn and this is in your syllabus material so the absence of records is not negative evidence an unproductive search that yields no genealogical genealogically useful information is not negative evidence and direct or indirect evidence of a non-relationship is not negative evidence let's look at some examples of not negative evidence the absence of information an absence from a of of a tax list or an absence of any source tells us nothing about the people that we're researching uh unless you know they're responsible for the disappearance of the record but you know the absence of one tax list tells or implies nothing about those taxpayers the second example john is in the 1810 tax list but he does appear in tax list before and after 1810 and in the 1810 census all in the same county so the absence gives us no useful information about john unless of course john was the tax assessor because somehow he was missed or avoided paying taxes that year rachel has no vermont death record well certainly rachel died and the absence of a death record is not genealogically useful the absence gives us no useful in evidence that we can use to help us understand rachel rachel's information gives wrong information that's neither genealogically useful nor an absence of information maddie and seven of eight other children listed as siblings in the 1900 census do not appear in the family bible record again this is not genealogically useful yes it's an absence but it says nothing about maddie and her siblings that we can use genealogically descendants of julia greenfield do not appear in my dna match list i'm related to many people who do not appear in my dna match list this is just another absence that provides no useful genealogical information we can use negative evidence in two ways we'll start with uh the first use which is to establish aged status death or removal and let's start with a simpler example this evidence is from research by william lichman it's cited on the slide and also your syllabus material and i've taken information from his article on the national genealogical society quarterly and assembled it into a table and lichmann is using this data to re-establish to understand the composition of caleb's family in a virginia county where the courthouse burned and the only records that official records that unless that exists are state copies of the tax records so all of these entries in this table except 1813 and 1815 provide negative evidence so caleb could appear in the 1786 to 1800 tax list 1870 1786 is the earliest tax list but he is absent he was not taxed and we can use that as evidence that he was under age for taxation which was 21 or 16 depending on the tax year so in 1817 there is an absence of the third male from 1815 the number decreased is two that could be evidence that a taxable son had moved out of his household and the same thing happened in 1819 the absence of the second taxpayer from 1817. and then caleb disappears after 1840 so we have evidence of his death in 1839 or 50. and i should say that these are just the years where the tax composition of caleb's household had changed these are not just the years that the tax lists exist they exist for all these years from 1786 to 1850 and beyond except for i believe it's 1806 one year that the virginian legislature forgot to pass a tax bill so this negative evidence gives us evidence of three births and one death in the absence of any birth or death records now assemblages like this require corroboration and other indirect evidence supports the identifications of these sons because the each time the number of males in caleb's household decreased a taylor taxpayer appeared a new taylor taxpayer appeared in the same district uh corroborating the evidence that his son had moved out of k-m's household and became taxable under his own name this is part of an assemblage that you've already seen but now we're going to use it not to answer who was franklin's wife instead we're asking about her death when and where did christina die so we see her in franklin's household in 1855 in 1860 but after 1860 she has disappeared as has harriet and so we have negative evidence that christina and harriet although our question focuses on christina had died between 1860 and 1865. we can corroborate that with further research in civil war pension application files where we find an affidavit a deposition about franklin's marrying sarah thorne in niagara county in 1866 the year after that 1865 census franklin could not have done that legally if christina were still living so we can add this this testimony about franklin's marriage frank's marriage to our evidence assemblage so the first row is direct evidence but the second the disappearance of excuse me the um yes the disappearance of julia of excuse me of christine in 1865 is negative evidence of her death the third line is in direct evidence and the fourth line where christina has moved to excuse me julia has moved with christina with the connors to michigan and christina and harriet still are not found anywhere near julia her mother and her sister they're not near her in 1865 and they're not near her in 1870 and in the interim her father has remarried so we can answer our research question about christina's death despite the absence of any death record we also can use this example to see how we can use how the evidence that we can get from information can vary we can use the information about julia's appearance in this blended connor talcott peck household as all three kinds of genealogical evidence it gives us direct evidence it says that julia was theodore connor's niece that is wrong information she actually was the niece of theodore's wife who had been harriet talcut and because it's incorrect we can discard it one risk of direct evidence is believing that the conclusion is as easily determined as the evidence is found we have indirect evidence that julia was related to the talcuts through theodore's marriage to harriet talcott and frank greenfield's marriage to christina talcott and the uh information also shows us indirectly that julia was living with her late mother's siblings and in-laws and then the absence of information about christina and harriet is negative evidence that they had died so from the information in that one source we have all three kinds of evidence here's another assemblage that's in your syllabus material it addresses the genealogical research question when and where did james greenfield die well james appears in church records in uh what today is the town of galway new york on almost a weekly basis from 1789 through the 14th of february after 1801 this information doesn't mention james death so it does not directly address the research question it's going to provide indirect evidence from the next sunday after this date forward james no longer appears in those church records negatively suggesting that he had died after that mid-february date nearby but over the county line there is a james greenfield who is taxed in 1799 through 1801 as james greenfield the second in 1800 james j excuse me that should be 17.99 james greenfield jr in 1800 and as james greenfield with no designator after his name in 1802 so junior and 2nd imply that this is a younger james greenfield than the churchgoer in nearby galway he would be the senior james or the first james and he's the only candidate for that person so the absence of the designation as second or junior in 1802 is negative evidence supporting this negative evidence that james had died after 1801 and when we searched the probate records of all of the county where the older james and his children had lived we find no record of this older james in any of those counties including saratoga where galway is so though again the absence negatively supports the conclusion that james died in saratoga county after he was no longer able to appear to in church the second use of negative evidence is to help us eliminate competing hypotheses a process of elimination here's another example from bill mitchman set in warren county missouri miranda taylor um married in 1847 in in warren county missouri the question is who are her parents in 1850 she and her husband are living in their household not in warren county but not near any taylor household there are seven tavare households in county in 1840 before miranda's marriage but six of those households contain no girl of miranda's age that's negative evidence supporting the evidence that miranda's father was vincent whose household does occur include a girl of miranda's age each of these individually is eliminated by a negative evidence there are also two other tailors who have children of record or a child of record only a son no daughter is named if miranda was a daughter of this unnamed taylor or of the of jesse taylor the record that named the minor son would also name the minor daughter or a minor daughter unnamed and those records don't so we have all these absences supporting the conclusion that vincent was miranda's father so the process of elimination we've eliminated eight out of nine possible father fathers the aggregation of indirect evidence corroborates vincent despite the absence of a birth record for miranda here's another example cited in your syllabus material no record of philip names his parents thorough research and tax land probate court and church records reveals four candidates william who married in 1742 about 20 years before philip was born appears in no other record in a county near where philip ever lived so that absence we can eliminate him philip also married in 1742 same name but this man left records of his heirs and there was no sun so the absence of a sun is negative evidence that we can use to eliminate this philip philip associated quite a bit with this louis pritchett and they could have been father and son except lewis was too young and again the negative evidence from his heirs which do not include an heir named philip rule him out louis pritchett married mary lattimore in 1844 18 years or so before phillips birth they had multiple children but records name only lewis as their child so he is left as the only candidate for our phillips father and he lived in the earliest county of residence for our philip and probably was the lewis pritchett not this man who represented him as a minor in a trespass case you've probably heard the saying that absence of evidence is not evidence of absence well genealogists would not exactly agree with this we would say that absence of information could be evidence of absence but it is not proof of absence and these examples that i've shown you of negative evidence are genealogical examples of using evidence of absence of information as evidence of absence and the eminent philosopher irving coppai agrees with this this view this genealogical view using non-genealogical terminology he writes in some circumstances it can be safely assumed that if a certain event had occurred evidence of it could be discovered by qualified investigators by genealogists doing reasonably thorough research he says in such circumstances it is perfectly reasonable to take the absence of proof of an events occurrence as positive proof of its non-occurrence this philosopher takes us full circle to where we started evidence exists in your mind evidence can change as you think about it you can't be sure of the labels until you have assembled the evidence and used it to support a hypothesis this has been using indirect and negative evidence to prove unrecorded events i hope this session helps you identify your ancestors thank you",
+  "attempts": [
+    {
+      "client": "IOS",
+      "playability": {
+        "status": "OK",
+        "playableInEmbed": true,
+        "offlineability": {
+          "buttonRenderer": {
+            "navigationEndpoint": {
+              "clickTrackingParams": "CAoQ6ewBIhMIy5y2iuzblwMVS0xMCB3VOTWcygEEsm2ynw==",
+              "ypcGetOfflineUpsellEndpoint": {
+                "params": "ChPqqN25AQ0KC1Z3ZkFlTjMxY1R3IgtWd2ZBZU4zMWNUdyoVCAkYAVIPCgtWd2ZBZU4zMWNUdyAB"
+              }
+            },
+            "trackingParams": "CAoQ6ewBIhMIy5y2iuzblwMVS0xMCB3VOTWc"
+          }
+        },
+        "pictureInPicture": {
+          "pictureInPictureRenderer": {
+            "playableInPip": true,
+            "offByDefault": false,
+            "shouldResumeOnHead": false
+          }
+        },
+        "miniplayer": {
+          "miniplayerRenderer": {
+            "playbackMode": "PLAYBACK_MODE_ALLOW"
+          }
+        },
+        "contextParams": "Q0FFU0FnZ0M="
+      },
+      "outcome": "ok"
+    }
+  ],
+  "fetched_at": "2026-10-28T04:11:19.623337+00:00",
+  "client": "IOS",
+  "json_path": "transcripts/038_VwfAeN31cTw.json",
+  "text_path": "transcripts/038_VwfAeN31cTw.txt"
+}

@@ -1,0 +1,5387 @@
+{
+  "index": 24,
+  "url": "https://www.youtube.com/watch?v=1Ptl1u6wRoY",
+  "video_id": "1Ptl1u6wRoY",
+  "status": "ok",
+  "metadata": {
+    "title": "Online Digital Newspaper Sources - James Tanner",
+    "author": "BYU Library Family History Center",
+    "channelId": "UC7hqNOQt-2AfeVEpDuc7sCA",
+    "lengthSeconds": "2595",
+    "viewCount": "2217",
+    "shortDescription": "Learn how to enhance your genealogy research using newspapers.\nFor information on upcoming webinars go to: https://familyhistory.lib.byu.edu/all-webinars/introduction-to-the-familysearch-app-gallery\nFollow the links to view the websites mentioned during the presentation:\nhttps://www.myheritage.com/\nhttp://newspaperarchive.com/\nhttps://www.elephind.com/\nhttp://trove.nla.gov.au/\nhttp://www.britishnewspaperarchive.co.uk/\nhttp://genealogysstar.blogspot.com/2014/07/online-digital-newspaper-collections-by.html",
+    "keywords": [
+      "Newspaper",
+      "Genealogy",
+      "Family History",
+      "BYU",
+      "Ancestor",
+      "Research"
+    ]
+  },
+  "caption_tracks": [
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=1Ptl1u6wRoY&ei=43Xhasb-PNCdsfIPk9SW-QE&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185876&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=6BC702423CEC21E979A2A7A6C1931610985909E5.B46B06141A493B836D6F09A58FC39F512C2E3CE4&key=yt8&kind=asr&lang=ar&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Arabic (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.ar",
+      "languageCode": "ar",
+      "kind": "asr",
+      "rtl": true,
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=1Ptl1u6wRoY&ei=43Xhasb-PNCdsfIPk9SW-QE&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185876&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=6BC702423CEC21E979A2A7A6C1931610985909E5.B46B06141A493B836D6F09A58FC39F512C2E3CE4&key=yt8&kind=asr&lang=bn&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Bangla (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.bn",
+      "languageCode": "bn",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=1Ptl1u6wRoY&ei=43Xhasb-PNCdsfIPk9SW-QE&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185876&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=6BC702423CEC21E979A2A7A6C1931610985909E5.B46B06141A493B836D6F09A58FC39F512C2E3CE4&key=yt8&kind=asr&lang=nl-NL&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Dutch (Netherlands) (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.nl-NL",
+      "languageCode": "nl-NL",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=1Ptl1u6wRoY&ei=43Xhasb-PNCdsfIPk9SW-QE&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185876&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=6BC702423CEC21E979A2A7A6C1931610985909E5.B46B06141A493B836D6F09A58FC39F512C2E3CE4&key=yt8&kind=asr&lang=en",
+      "name": {
+        "runs": [
+          {
+            "text": "English (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.en",
+      "languageCode": "en",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=1Ptl1u6wRoY&ei=43Xhasb-PNCdsfIPk9SW-QE&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185876&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=6BC702423CEC21E979A2A7A6C1931610985909E5.B46B06141A493B836D6F09A58FC39F512C2E3CE4&key=yt8&kind=asr&lang=fr-FR&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "French (France) (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.fr-FR",
+      "languageCode": "fr-FR",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=1Ptl1u6wRoY&ei=43Xhasb-PNCdsfIPk9SW-QE&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185876&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=6BC702423CEC21E979A2A7A6C1931610985909E5.B46B06141A493B836D6F09A58FC39F512C2E3CE4&key=yt8&kind=asr&lang=de-DE&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "German (Germany) (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.de-DE",
+      "languageCode": "de-DE",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=1Ptl1u6wRoY&ei=43Xhasb-PNCdsfIPk9SW-QE&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185876&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=6BC702423CEC21E979A2A7A6C1931610985909E5.B46B06141A493B836D6F09A58FC39F512C2E3CE4&key=yt8&kind=asr&lang=iw&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Hebrew (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.iw",
+      "languageCode": "iw",
+      "kind": "asr",
+      "rtl": true,
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=1Ptl1u6wRoY&ei=43Xhasb-PNCdsfIPk9SW-QE&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185876&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=6BC702423CEC21E979A2A7A6C1931610985909E5.B46B06141A493B836D6F09A58FC39F512C2E3CE4&key=yt8&kind=asr&lang=hi&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Hindi (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.hi",
+      "languageCode": "hi",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=1Ptl1u6wRoY&ei=43Xhasb-PNCdsfIPk9SW-QE&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185876&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=6BC702423CEC21E979A2A7A6C1931610985909E5.B46B06141A493B836D6F09A58FC39F512C2E3CE4&key=yt8&kind=asr&lang=id&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Indonesian (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.id",
+      "languageCode": "id",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=1Ptl1u6wRoY&ei=43Xhasb-PNCdsfIPk9SW-QE&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185876&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=6BC702423CEC21E979A2A7A6C1931610985909E5.B46B06141A493B836D6F09A58FC39F512C2E3CE4&key=yt8&kind=asr&lang=it&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Italian (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.it",
+      "languageCode": "it",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=1Ptl1u6wRoY&ei=43Xhasb-PNCdsfIPk9SW-QE&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185876&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=6BC702423CEC21E979A2A7A6C1931610985909E5.B46B06141A493B836D6F09A58FC39F512C2E3CE4&key=yt8&kind=asr&lang=ja&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Japanese (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.ja",
+      "languageCode": "ja",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=1Ptl1u6wRoY&ei=43Xhasb-PNCdsfIPk9SW-QE&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185876&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=6BC702423CEC21E979A2A7A6C1931610985909E5.B46B06141A493B836D6F09A58FC39F512C2E3CE4&key=yt8&kind=asr&lang=ko&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Korean (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.ko",
+      "languageCode": "ko",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=1Ptl1u6wRoY&ei=43Xhasb-PNCdsfIPk9SW-QE&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185876&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=6BC702423CEC21E979A2A7A6C1931610985909E5.B46B06141A493B836D6F09A58FC39F512C2E3CE4&key=yt8&kind=asr&lang=ml&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Malayalam (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.ml",
+      "languageCode": "ml",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=1Ptl1u6wRoY&ei=43Xhasb-PNCdsfIPk9SW-QE&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185876&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=6BC702423CEC21E979A2A7A6C1931610985909E5.B46B06141A493B836D6F09A58FC39F512C2E3CE4&key=yt8&kind=asr&lang=pl&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Polish (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.pl",
+      "languageCode": "pl",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=1Ptl1u6wRoY&ei=43Xhasb-PNCdsfIPk9SW-QE&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185876&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=6BC702423CEC21E979A2A7A6C1931610985909E5.B46B06141A493B836D6F09A58FC39F512C2E3CE4&key=yt8&kind=asr&lang=pt-BR&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Portuguese (Brazil) (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.pt-BR",
+      "languageCode": "pt-BR",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=1Ptl1u6wRoY&ei=43Xhasb-PNCdsfIPk9SW-QE&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185876&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=6BC702423CEC21E979A2A7A6C1931610985909E5.B46B06141A493B836D6F09A58FC39F512C2E3CE4&key=yt8&kind=asr&lang=ru&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Russian (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.ru",
+      "languageCode": "ru",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=1Ptl1u6wRoY&ei=43Xhasb-PNCdsfIPk9SW-QE&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185876&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=6BC702423CEC21E979A2A7A6C1931610985909E5.B46B06141A493B836D6F09A58FC39F512C2E3CE4&key=yt8&kind=asr&lang=es-US&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Spanish (United States) (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.es-US",
+      "languageCode": "es-US",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=1Ptl1u6wRoY&ei=43Xhasb-PNCdsfIPk9SW-QE&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185876&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=6BC702423CEC21E979A2A7A6C1931610985909E5.B46B06141A493B836D6F09A58FC39F512C2E3CE4&key=yt8&kind=asr&lang=ta&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Tamil (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.ta",
+      "languageCode": "ta",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=1Ptl1u6wRoY&ei=43Xhasb-PNCdsfIPk9SW-QE&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185876&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=6BC702423CEC21E979A2A7A6C1931610985909E5.B46B06141A493B836D6F09A58FC39F512C2E3CE4&key=yt8&kind=asr&lang=te&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Telugu (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.te",
+      "languageCode": "te",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    },
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=1Ptl1u6wRoY&ei=43Xhasb-PNCdsfIPk9SW-QE&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185876&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=6BC702423CEC21E979A2A7A6C1931610985909E5.B46B06141A493B836D6F09A58FC39F512C2E3CE4&key=yt8&kind=asr&lang=uk&variant=timing-optimized",
+      "name": {
+        "runs": [
+          {
+            "text": "Ukrainian (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.uk",
+      "languageCode": "uk",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    }
+  ],
+  "selected_track": {
+    "baseUrl": "https://www.youtube.com/api/timedtext?v=1Ptl1u6wRoY&ei=43Xhasb-PNCdsfIPk9SW-QE&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185876&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=6BC702423CEC21E979A2A7A6C1931610985909E5.B46B06141A493B836D6F09A58FC39F512C2E3CE4&key=yt8&kind=asr&lang=en",
+    "name": {
+      "runs": [
+        {
+          "text": "English (auto-generated)"
+        }
+      ]
+    },
+    "vssId": "a.en",
+    "languageCode": "en",
+    "kind": "asr",
+    "isTranslatable": true,
+    "trackName": ""
+  },
+  "segments": [
+    {
+      "start": 1.639,
+      "duration": 4.241,
+      "text": "welcome to the Brigham Young University"
+    },
+    {
+      "start": 3.899,
+      "duration": 4.381,
+      "text": "family history Library webinar series"
+    },
+    {
+      "start": 5.88,
+      "duration": 4.259,
+      "text": "feel free to use the chat box for any"
+    },
+    {
+      "start": 8.28,
+      "duration": 3.239,
+      "text": "questions if we're unable to get to them"
+    },
+    {
+      "start": 10.139,
+      "duration": 3.42,
+      "text": "during the presentation we will answer"
+    },
+    {
+      "start": 11.519,
+      "duration": 3.78,
+      "text": "them at the end my name is Braden"
+    },
+    {
+      "start": 13.559,
+      "duration": 4.201,
+      "text": "Knutson I will be your host for this"
+    },
+    {
+      "start": 15.299,
+      "duration": 4.441,
+      "text": "webinar today we will be pleased to hear"
+    },
+    {
+      "start": 17.76,
+      "duration": 4.019,
+      "text": "from James Tanner who will be giving a"
+    },
+    {
+      "start": 19.74,
+      "duration": 3.72,
+      "text": "presentation titled online digital"
+    },
+    {
+      "start": 21.779,
+      "duration": 3.721,
+      "text": "newspaper sources"
+    },
+    {
+      "start": 23.46,
+      "duration": 3.72,
+      "text": "James Tanner has a bachelor's degree in"
+    },
+    {
+      "start": 25.5,
+      "duration": 4.22,
+      "text": "Spanish and a master's degree in"
+    },
+    {
+      "start": 27.18,
+      "duration": 5.099,
+      "text": "linguistics from the University of Utah"
+    },
+    {
+      "start": 29.72,
+      "duration": 5.38,
+      "text": "he received a Juris doctorate degree in"
+    },
+    {
+      "start": 32.279,
+      "duration": 4.861,
+      "text": "law at Arizona State University he"
+    },
+    {
+      "start": 35.1,
+      "duration": 5.22,
+      "text": "served for two years as an intelligence"
+    },
+    {
+      "start": 37.14,
+      "duration": 4.98,
+      "text": "analyst for the U.S army and 39 years as"
+    },
+    {
+      "start": 40.32,
+      "duration": 4.02,
+      "text": "an Arizona trial attorney"
+    },
+    {
+      "start": 42.12,
+      "duration": 4.2,
+      "text": "he has previously owned a retail"
+    },
+    {
+      "start": 44.34,
+      "duration": 4.86,
+      "text": "computer business in an Apple Macintosh"
+    },
+    {
+      "start": 46.32,
+      "duration": 5.1,
+      "text": "software company James has over 32 years"
+    },
+    {
+      "start": 49.2,
+      "duration": 4.5,
+      "text": "experience in genealogical research and"
+    },
+    {
+      "start": 51.42,
+      "duration": 4.44,
+      "text": "is an avid blogger of genealogy star"
+    },
+    {
+      "start": 53.7,
+      "duration": 3.66,
+      "text": "blog and rejoiced and be exceedingly"
+    },
+    {
+      "start": 55.86,
+      "duration": 3.78,
+      "text": "glad"
+    },
+    {
+      "start": 57.36,
+      "duration": 4.019,
+      "text": "he served for 10 years as a missionary"
+    },
+    {
+      "start": 59.64,
+      "duration": 3.899,
+      "text": "at the Mesa Arizona family search"
+    },
+    {
+      "start": 61.379,
+      "duration": 4.56,
+      "text": "library and is currently serving at the"
+    },
+    {
+      "start": 63.539,
+      "duration": 4.141,
+      "text": "BYU family history Library he has"
+    },
+    {
+      "start": 65.939,
+      "duration": 4.141,
+      "text": "presented at expos in conferences around"
+    },
+    {
+      "start": 67.68,
+      "duration": 4.86,
+      "text": "the U.S in Canada James has seven"
+    },
+    {
+      "start": 70.08,
+      "duration": 6.24,
+      "text": "children and 33 grandchildren"
+    },
+    {
+      "start": 72.54,
+      "duration": 7.38,
+      "text": "we are online we're trying to talk about"
+    },
+    {
+      "start": 76.32,
+      "duration": 5.46,
+      "text": "online digital newspaper sources now one"
+    },
+    {
+      "start": 79.92,
+      "duration": 4.559,
+      "text": "of the things that"
+    },
+    {
+      "start": 81.78,
+      "duration": 3.72,
+      "text": "um interesting about this particular"
+    },
+    {
+      "start": 84.479,
+      "duration": 5.761,
+      "text": "topic"
+    },
+    {
+      "start": 85.5,
+      "duration": 7.2,
+      "text": "is that very commonly I will talk to"
+    },
+    {
+      "start": 90.24,
+      "duration": 5.22,
+      "text": "people who have come to me and they'll"
+    },
+    {
+      "start": 92.7,
+      "duration": 4.68,
+      "text": "say the same kind of formulaic thing"
+    },
+    {
+      "start": 95.46,
+      "duration": 3.72,
+      "text": "that they say to me when they're when"
+    },
+    {
+      "start": 97.38,
+      "duration": 3.3,
+      "text": "they haven't when they've reached some"
+    },
+    {
+      "start": 99.18,
+      "duration": 3.54,
+      "text": "point they can't find what they're"
+    },
+    {
+      "start": 100.68,
+      "duration": 4.5,
+      "text": "looking for"
+    },
+    {
+      "start": 102.72,
+      "duration": 4.56,
+      "text": "um it goes something like this they'll"
+    },
+    {
+      "start": 105.18,
+      "duration": 4.86,
+      "text": "come and they'll say oh"
+    },
+    {
+      "start": 107.28,
+      "duration": 6.06,
+      "text": "um I I need some help finding my great"
+    },
+    {
+      "start": 110.04,
+      "duration": 6.42,
+      "text": "great whoever great grandfather and"
+    },
+    {
+      "start": 113.34,
+      "duration": 5.099,
+      "text": "we've been looking for him for years and"
+    },
+    {
+      "start": 116.46,
+      "duration": 5.159,
+      "text": "we've looked everywhere in fact we even"
+    },
+    {
+      "start": 118.439,
+      "duration": 6.241,
+      "text": "hired a professional genealogist to look"
+    },
+    {
+      "start": 121.619,
+      "duration": 4.561,
+      "text": "for him and I always say well yeah why"
+    },
+    {
+      "start": 124.68,
+      "duration": 3.84,
+      "text": "did you come to me no I don't say that"
+    },
+    {
+      "start": 126.18,
+      "duration": 4.38,
+      "text": "but I do say"
+    },
+    {
+      "start": 128.52,
+      "duration": 4.62,
+      "text": "um oh you've looked everywhere have you"
+    },
+    {
+      "start": 130.56,
+      "duration": 5.1,
+      "text": "oh well I have a lot of standard"
+    },
+    {
+      "start": 133.14,
+      "duration": 4.44,
+      "text": "responses to that but one of them that I"
+    },
+    {
+      "start": 135.66,
+      "duration": 4.02,
+      "text": "would say is very applicable here is"
+    },
+    {
+      "start": 137.58,
+      "duration": 4.2,
+      "text": "that have you read the newspapers and"
+    },
+    {
+      "start": 139.68,
+      "duration": 5.76,
+      "text": "they'll say newspapers"
+    },
+    {
+      "start": 141.78,
+      "duration": 6.179,
+      "text": "L like that and it's sort of an idea"
+    },
+    {
+      "start": 145.44,
+      "duration": 5.76,
+      "text": "that that doesn't really uh hasn't"
+    },
+    {
+      "start": 147.959,
+      "duration": 6.42,
+      "text": "really gotten into this mainstream of of"
+    },
+    {
+      "start": 151.2,
+      "duration": 4.8,
+      "text": "genealogical resources to understand"
+    },
+    {
+      "start": 154.379,
+      "duration": 5.101,
+      "text": "that"
+    },
+    {
+      "start": 156.0,
+      "duration": 5.879,
+      "text": "um for the past uh 300 years newspapers"
+    },
+    {
+      "start": 159.48,
+      "duration": 4.32,
+      "text": "have been published in America and now"
+    },
+    {
+      "start": 161.879,
+      "duration": 3.72,
+      "text": "the United States and in all the in"
+    },
+    {
+      "start": 163.8,
+      "duration": 3.719,
+      "text": "other countries of the world"
+    },
+    {
+      "start": 165.599,
+      "duration": 4.86,
+      "text": "and these newspapers have been stacked"
+    },
+    {
+      "start": 167.519,
+      "duration": 5.58,
+      "text": "up and accumulating and are presently in"
+    },
+    {
+      "start": 170.459,
+      "duration": 4.381,
+      "text": "the process of being digitized so we're"
+    },
+    {
+      "start": 173.099,
+      "duration": 3.901,
+      "text": "going to talk about where to find these"
+    },
+    {
+      "start": 174.84,
+      "duration": 6.06,
+      "text": "newspapers and what kinds of sources"
+    },
+    {
+      "start": 177.0,
+      "duration": 5.519,
+      "text": "that that you can find to get to get"
+    },
+    {
+      "start": 180.9,
+      "duration": 2.28,
+      "text": "into them"
+    },
+    {
+      "start": 182.519,
+      "duration": 3.961,
+      "text": "um"
+    },
+    {
+      "start": 183.18,
+      "duration": 5.82,
+      "text": "first of all we need to understand a"
+    },
+    {
+      "start": 186.48,
+      "duration": 6.0,
+      "text": "little bit about searching on the end on"
+    },
+    {
+      "start": 189.0,
+      "duration": 7.56,
+      "text": "the internet because newspapers"
+    },
+    {
+      "start": 192.48,
+      "duration": 7.679,
+      "text": "are generally held in some kind of a"
+    },
+    {
+      "start": 196.56,
+      "duration": 5.819,
+      "text": "repository archive large online database"
+    },
+    {
+      "start": 200.159,
+      "duration": 3.901,
+      "text": "program or whatever"
+    },
+    {
+      "start": 202.379,
+      "duration": 3.541,
+      "text": "first of all there's there's difference"
+    },
+    {
+      "start": 204.06,
+      "duration": 4.86,
+      "text": "when you're searching on the web between"
+    },
+    {
+      "start": 205.92,
+      "duration": 5.099,
+      "text": "static and dynamic pages"
+    },
+    {
+      "start": 208.92,
+      "duration": 6.42,
+      "text": "a static page is like what you're"
+    },
+    {
+      "start": 211.019,
+      "duration": 6.841,
+      "text": "looking at when you go on to any of the"
+    },
+    {
+      "start": 215.34,
+      "duration": 5.58,
+      "text": "websites and a bunch of text comes up on"
+    },
+    {
+      "start": 217.86,
+      "duration": 5.22,
+      "text": "the screen and you can search and you"
+    },
+    {
+      "start": 220.92,
+      "duration": 4.86,
+      "text": "search in a Google Search and you find"
+    },
+    {
+      "start": 223.08,
+      "duration": 4.68,
+      "text": "uh you know a movie or a store or a"
+    },
+    {
+      "start": 225.78,
+      "duration": 4.56,
+      "text": "doctor whatever you're looking for"
+    },
+    {
+      "start": 227.76,
+      "duration": 5.699,
+      "text": "those are static websites meaning that"
+    },
+    {
+      "start": 230.34,
+      "duration": 5.64,
+      "text": "the information is posted onto a web"
+    },
+    {
+      "start": 233.459,
+      "duration": 5.36,
+      "text": "page and it's searchable by a search"
+    },
+    {
+      "start": 235.98,
+      "duration": 2.839,
+      "text": "engine like Google"
+    },
+    {
+      "start": 238.86,
+      "duration": 5.879,
+      "text": "a dynamic web page on the other hand is"
+    },
+    {
+      "start": 242.04,
+      "duration": 6.72,
+      "text": "maintained behind a firewall that means"
+    },
+    {
+      "start": 244.739,
+      "duration": 8.101,
+      "text": "that the Google search engine can't get"
+    },
+    {
+      "start": 248.76,
+      "duration": 6.3,
+      "text": "access to that information directly the"
+    },
+    {
+      "start": 252.84,
+      "duration": 4.859,
+      "text": "information is only made available when"
+    },
+    {
+      "start": 255.06,
+      "duration": 4.079,
+      "text": "a search is made in the database and"
+    },
+    {
+      "start": 257.699,
+      "duration": 3.361,
+      "text": "then put on the web and then it"
+    },
+    {
+      "start": 259.139,
+      "duration": 3.381,
+      "text": "disappears and the common thing for"
+    },
+    {
+      "start": 261.06,
+      "duration": 4.26,
+      "text": "example is if you go to a library"
+    },
+    {
+      "start": 262.52,
+      "duration": 4.959,
+      "text": "catalog and you go to look up a book"
+    },
+    {
+      "start": 265.32,
+      "duration": 4.439,
+      "text": "when you look up a book in the library"
+    },
+    {
+      "start": 267.479,
+      "duration": 3.741,
+      "text": "catalog the library catalog goes to"
+    },
+    {
+      "start": 269.759,
+      "duration": 5.461,
+      "text": "their their"
+    },
+    {
+      "start": 271.22,
+      "duration": 6.16,
+      "text": "computer their hard drive finds the book"
+    },
+    {
+      "start": 275.22,
+      "duration": 4.56,
+      "text": "you're looking for displays it on the"
+    },
+    {
+      "start": 277.38,
+      "duration": 4.8,
+      "text": "screen and when you either copy down the"
+    },
+    {
+      "start": 279.78,
+      "duration": 4.08,
+      "text": "information or go find the book then"
+    },
+    {
+      "start": 282.18,
+      "duration": 2.76,
+      "text": "that disappears and it's no longer"
+    },
+    {
+      "start": 283.86,
+      "duration": 4.68,
+      "text": "online"
+    },
+    {
+      "start": 284.94,
+      "duration": 5.46,
+      "text": "uh in very frequently those that"
+    },
+    {
+      "start": 288.54,
+      "duration": 4.68,
+      "text": "particular database will not be"
+    },
+    {
+      "start": 290.4,
+      "duration": 4.56,
+      "text": "available to um to a Google search so if"
+    },
+    {
+      "start": 293.22,
+      "duration": 4.259,
+      "text": "you did a Google search for that same"
+    },
+    {
+      "start": 294.96,
+      "duration": 5.64,
+      "text": "book in that same Library the the"
+    },
+    {
+      "start": 297.479,
+      "duration": 6.241,
+      "text": "computer would not find it the search"
+    },
+    {
+      "start": 300.6,
+      "duration": 4.98,
+      "text": "engine would not find it so what we're"
+    },
+    {
+      "start": 303.72,
+      "duration": 4.46,
+      "text": "what we're looking at here when we're"
+    },
+    {
+      "start": 305.58,
+      "duration": 5.82,
+      "text": "talking about having large online"
+    },
+    {
+      "start": 308.18,
+      "duration": 5.64,
+      "text": "databases of newspapers is that you"
+    },
+    {
+      "start": 311.4,
+      "duration": 4.5,
+      "text": "actually have to go to each individual"
+    },
+    {
+      "start": 313.82,
+      "duration": 4.3,
+      "text": "Catalog online"
+    },
+    {
+      "start": 315.9,
+      "duration": 4.62,
+      "text": "so what you're doing when you're looking"
+    },
+    {
+      "start": 318.12,
+      "duration": 4.68,
+      "text": "for newspapers and online digital"
+    },
+    {
+      "start": 320.52,
+      "duration": 3.44,
+      "text": "newspapers meaning newspapers that have"
+    },
+    {
+      "start": 322.8,
+      "duration": 4.86,
+      "text": "been"
+    },
+    {
+      "start": 323.96,
+      "duration": 7.06,
+      "text": "scanned into a database and available to"
+    },
+    {
+      "start": 327.66,
+      "duration": 7.62,
+      "text": "be viewed online that but that"
+    },
+    {
+      "start": 331.02,
+      "duration": 5.519,
+      "text": "particular type of of a website is where"
+    },
+    {
+      "start": 335.28,
+      "duration": 3.3,
+      "text": "you're going to be looking for the"
+    },
+    {
+      "start": 336.539,
+      "duration": 4.261,
+      "text": "websites rather than for individual"
+    },
+    {
+      "start": 338.58,
+      "duration": 4.559,
+      "text": "newspaper articles or searching for the"
+    },
+    {
+      "start": 340.8,
+      "duration": 4.619,
+      "text": "name of your ancestor so you could"
+    },
+    {
+      "start": 343.139,
+      "duration": 5.161,
+      "text": "search all day on the internet on Google"
+    },
+    {
+      "start": 345.419,
+      "duration": 4.801,
+      "text": "for the for your ancestors name and he"
+    },
+    {
+      "start": 348.3,
+      "duration": 4.26,
+      "text": "may be in a thousand newspaper articles"
+    },
+    {
+      "start": 350.22,
+      "duration": 4.8,
+      "text": "but they would never show up online"
+    },
+    {
+      "start": 352.56,
+      "duration": 4.5,
+      "text": "so we need to uh to understand there's"
+    },
+    {
+      "start": 355.02,
+      "duration": 4.26,
+      "text": "that that you really do have to go to"
+    },
+    {
+      "start": 357.06,
+      "duration": 4.139,
+      "text": "each of these websites and do a search"
+    },
+    {
+      "start": 359.28,
+      "duration": 3.96,
+      "text": "with their search engine on their"
+    },
+    {
+      "start": 361.199,
+      "duration": 4.261,
+      "text": "website in order to see if they have the"
+    },
+    {
+      "start": 363.24,
+      "duration": 4.34,
+      "text": "information that you need"
+    },
+    {
+      "start": 365.46,
+      "duration": 5.76,
+      "text": "uh next big"
+    },
+    {
+      "start": 367.58,
+      "duration": 8.02,
+      "text": "point is free versus subscription"
+    },
+    {
+      "start": 371.22,
+      "duration": 6.66,
+      "text": "um we all like free it sounds good"
+    },
+    {
+      "start": 375.6,
+      "duration": 4.14,
+      "text": "um there are some very very large free"
+    },
+    {
+      "start": 377.88,
+      "duration": 3.06,
+      "text": "sites out there that have a lot of"
+    },
+    {
+      "start": 379.74,
+      "duration": 4.26,
+      "text": "newspapers"
+    },
+    {
+      "start": 380.94,
+      "duration": 5.3,
+      "text": "but by and large newspapers are"
+    },
+    {
+      "start": 384.0,
+      "duration": 5.94,
+      "text": "commercial Enterprises"
+    },
+    {
+      "start": 386.24,
+      "duration": 6.7,
+      "text": "and even if the newspaper publishing"
+    },
+    {
+      "start": 389.94,
+      "duration": 6.78,
+      "text": "company is still in effect then a lot of"
+    },
+    {
+      "start": 392.94,
+      "duration": 6.36,
+      "text": "the newspaper uh is is copyrighted"
+    },
+    {
+      "start": 396.72,
+      "duration": 5.64,
+      "text": "so what you're going to have is a"
+    },
+    {
+      "start": 399.3,
+      "duration": 5.28,
+      "text": "situation where they're not going to"
+    },
+    {
+      "start": 402.36,
+      "duration": 4.52,
+      "text": "want to allow people to look at their"
+    },
+    {
+      "start": 404.58,
+      "duration": 5.1,
+      "text": "newspaper archives without"
+    },
+    {
+      "start": 406.88,
+      "duration": 6.939,
+      "text": "receiving compensation"
+    },
+    {
+      "start": 409.68,
+      "duration": 6.959,
+      "text": "and even if they allow a large online"
+    },
+    {
+      "start": 413.819,
+      "duration": 4.621,
+      "text": "database to look at their or have their"
+    },
+    {
+      "start": 416.639,
+      "duration": 5.221,
+      "text": "newspapers available they'll probably"
+    },
+    {
+      "start": 418.44,
+      "duration": 6.44,
+      "text": "want some kind of a payment for that for"
+    },
+    {
+      "start": 421.86,
+      "duration": 6.119,
+      "text": "having that access so"
+    },
+    {
+      "start": 424.88,
+      "duration": 6.099,
+      "text": "by and large the largest and the most"
+    },
+    {
+      "start": 427.979,
+      "duration": 3.0,
+      "text": "available"
+    },
+    {
+      "start": 431.039,
+      "duration": 4.761,
+      "text": "newspaper"
+    },
+    {
+      "start": 433.139,
+      "duration": 4.921,
+      "text": "websites the ones that have huge"
+    },
+    {
+      "start": 435.8,
+      "duration": 5.2,
+      "text": "collections are all subscription"
+    },
+    {
+      "start": 438.06,
+      "duration": 5.52,
+      "text": "websites so you just kind of have to"
+    },
+    {
+      "start": 441.0,
+      "duration": 4.199,
+      "text": "understand that that's the reality of"
+    },
+    {
+      "start": 443.58,
+      "duration": 3.839,
+      "text": "the situation now there are lots and"
+    },
+    {
+      "start": 445.199,
+      "duration": 5.641,
+      "text": "lots of free websites out there there's"
+    },
+    {
+      "start": 447.419,
+      "duration": 4.081,
+      "text": "another issue here one is that"
+    },
+    {
+      "start": 450.84,
+      "duration": 3.66,
+      "text": "um"
+    },
+    {
+      "start": 451.5,
+      "duration": 4.979,
+      "text": "we're getting used to in genealogy we're"
+    },
+    {
+      "start": 454.5,
+      "duration": 5.0,
+      "text": "getting used to having four large online"
+    },
+    {
+      "start": 456.479,
+      "duration": 5.461,
+      "text": "websites family search myheritage"
+    },
+    {
+      "start": 459.5,
+      "duration": 4.84,
+      "text": "ancestry find my past"
+    },
+    {
+      "start": 461.94,
+      "duration": 5.46,
+      "text": "and a lot of other large other large"
+    },
+    {
+      "start": 464.34,
+      "duration": 6.96,
+      "text": "websites out there that have information"
+    },
+    {
+      "start": 467.4,
+      "duration": 6.239,
+      "text": "uh what is the the State of Affairs in"
+    },
+    {
+      "start": 471.3,
+      "duration": 4.679,
+      "text": "uh with newspapers is that they're"
+    },
+    {
+      "start": 473.639,
+      "duration": 4.261,
+      "text": "scattered all over the world in a lot of"
+    },
+    {
+      "start": 475.979,
+      "duration": 5.821,
+      "text": "little websites"
+    },
+    {
+      "start": 477.9,
+      "duration": 6.9,
+      "text": "so you have oh depending on the state"
+    },
+    {
+      "start": 481.8,
+      "duration": 6.56,
+      "text": "you have anywhere from uh half a dozen"
+    },
+    {
+      "start": 484.8,
+      "duration": 7.679,
+      "text": "to maybe 20 or 30 different websites"
+    },
+    {
+      "start": 488.36,
+      "duration": 6.58,
+      "text": "hosting different newspapers uh some for"
+    },
+    {
+      "start": 492.479,
+      "duration": 6.801,
+      "text": "by subscription some for free"
+    },
+    {
+      "start": 494.94,
+      "duration": 7.22,
+      "text": "and it begins to be a real task to"
+    },
+    {
+      "start": 499.28,
+      "duration": 6.4,
+      "text": "discover where these particular"
+    },
+    {
+      "start": 502.16,
+      "duration": 5.92,
+      "text": "newspaper Holdings are being kept online"
+    },
+    {
+      "start": 505.68,
+      "duration": 5.16,
+      "text": "now first of all"
+    },
+    {
+      "start": 508.08,
+      "duration": 6.36,
+      "text": "um notwithstanding what I said about the"
+    },
+    {
+      "start": 510.84,
+      "duration": 7.439,
+      "text": "static versus Dynamic it is worth your"
+    },
+    {
+      "start": 514.44,
+      "duration": 8.159,
+      "text": "worth your trouble to search Google and"
+    },
+    {
+      "start": 518.279,
+      "duration": 6.12,
+      "text": "Wikipedia for newspaper titles now the"
+    },
+    {
+      "start": 522.599,
+      "duration": 4.341,
+      "text": "concept here is that as you're doing"
+    },
+    {
+      "start": 524.399,
+      "duration": 4.741,
+      "text": "research for your ancestor"
+    },
+    {
+      "start": 526.94,
+      "duration": 4.959,
+      "text": "the process that you're going to go"
+    },
+    {
+      "start": 529.14,
+      "duration": 5.699,
+      "text": "through generally is to try to locate a"
+    },
+    {
+      "start": 531.899,
+      "duration": 5.94,
+      "text": "place where a specific a specific place"
+    },
+    {
+      "start": 534.839,
+      "duration": 4.5,
+      "text": "where a specific event occurred in your"
+    },
+    {
+      "start": 537.839,
+      "duration": 4.921,
+      "text": "ancestors life"
+    },
+    {
+      "start": 539.339,
+      "duration": 5.761,
+      "text": "uh be that a birth death marriage uh"
+    },
+    {
+      "start": 542.76,
+      "duration": 4.199,
+      "text": "sale of a piece of property uh getting"
+    },
+    {
+      "start": 545.1,
+      "duration": 4.26,
+      "text": "arrested whatever it is that they've"
+    },
+    {
+      "start": 546.959,
+      "duration": 3.781,
+      "text": "that's happened to that person"
+    },
+    {
+      "start": 549.36,
+      "duration": 4.26,
+      "text": "and"
+    },
+    {
+      "start": 550.74,
+      "duration": 6.12,
+      "text": "um for and because of that once you have"
+    },
+    {
+      "start": 553.62,
+      "duration": 5.76,
+      "text": "a location then you can use uh the"
+    },
+    {
+      "start": 556.86,
+      "duration": 4.86,
+      "text": "location to find what newspapers may"
+    },
+    {
+      "start": 559.38,
+      "duration": 5.639,
+      "text": "have been available at the time and"
+    },
+    {
+      "start": 561.72,
+      "duration": 5.58,
+      "text": "place that that event occurred so here's"
+    },
+    {
+      "start": 565.019,
+      "duration": 4.681,
+      "text": "here's the the situation let's suppose"
+    },
+    {
+      "start": 567.3,
+      "duration": 6.479,
+      "text": "we're looking for a marriage"
+    },
+    {
+      "start": 569.7,
+      "duration": 7.199,
+      "text": "um now marriage records uh are usually"
+    },
+    {
+      "start": 573.779,
+      "duration": 7.201,
+      "text": "kept by some type of government agency"
+    },
+    {
+      "start": 576.899,
+      "duration": 6.781,
+      "text": "sometimes by Churches uh sometimes in in"
+    },
+    {
+      "start": 580.98,
+      "duration": 5.419,
+      "text": "other kinds of Records land and property"
+    },
+    {
+      "start": 583.68,
+      "duration": 5.159,
+      "text": "records may have evidence of marriages"
+    },
+    {
+      "start": 586.399,
+      "duration": 4.241,
+      "text": "there's lots of different places to go"
+    },
+    {
+      "start": 588.839,
+      "duration": 4.161,
+      "text": "search for a marriage but one of those"
+    },
+    {
+      "start": 590.64,
+      "duration": 4.8,
+      "text": "primary ones is newspapers because"
+    },
+    {
+      "start": 593.0,
+      "duration": 5.92,
+      "text": "newspapers report in the news in the"
+    },
+    {
+      "start": 595.44,
+      "duration": 5.94,
+      "text": "news generally includes who got married"
+    },
+    {
+      "start": 598.92,
+      "duration": 5.46,
+      "text": "um and so if you're looking in the"
+    },
+    {
+      "start": 601.38,
+      "duration": 5.04,
+      "text": "newspapers during at the place where the"
+    },
+    {
+      "start": 604.38,
+      "duration": 3.78,
+      "text": "marriage may have occurred then you need"
+    },
+    {
+      "start": 606.42,
+      "duration": 4.02,
+      "text": "to know which newspapers may have been"
+    },
+    {
+      "start": 608.16,
+      "duration": 4.38,
+      "text": "available at that time so there's some"
+    },
+    {
+      "start": 610.44,
+      "duration": 3.959,
+      "text": "and we'll get to this in a minute uh"
+    },
+    {
+      "start": 612.54,
+      "duration": 4.2,
+      "text": "there's some places where you can go to"
+    },
+    {
+      "start": 614.399,
+      "duration": 4.5,
+      "text": "get lists of all the newspapers that"
+    },
+    {
+      "start": 616.74,
+      "duration": 4.14,
+      "text": "have been published in a certain area at"
+    },
+    {
+      "start": 618.899,
+      "duration": 5.181,
+      "text": "a certain time"
+    },
+    {
+      "start": 620.88,
+      "duration": 6.6,
+      "text": "and so you can use these General online"
+    },
+    {
+      "start": 624.08,
+      "duration": 5.56,
+      "text": "uh searches searches through Google and"
+    },
+    {
+      "start": 627.48,
+      "duration": 4.62,
+      "text": "uh the references that are in Wikipedia"
+    },
+    {
+      "start": 629.64,
+      "duration": 5.18,
+      "text": "to find out information about about the"
+    },
+    {
+      "start": 632.1,
+      "duration": 5.04,
+      "text": "newspapers themselves"
+    },
+    {
+      "start": 634.82,
+      "duration": 4.72,
+      "text": "excuse me"
+    },
+    {
+      "start": 637.14,
+      "duration": 3.96,
+      "text": "now when we're talking about digital"
+    },
+    {
+      "start": 639.54,
+      "duration": 4.62,
+      "text": "newspapers we're talking about"
+    },
+    {
+      "start": 641.1,
+      "duration": 5.82,
+      "text": "newspapers not the paper but the paper"
+    },
+    {
+      "start": 644.16,
+      "duration": 3.739,
+      "text": "has had a an image made through a"
+    },
+    {
+      "start": 646.92,
+      "duration": 4.5,
+      "text": "scanner"
+    },
+    {
+      "start": 647.899,
+      "duration": 7.961,
+      "text": "that has transferred that the photograph"
+    },
+    {
+      "start": 651.42,
+      "duration": 6.9,
+      "text": "the image of that newspaper page onto a"
+    },
+    {
+      "start": 655.86,
+      "duration": 4.159,
+      "text": "uh into a file format that can be read"
+    },
+    {
+      "start": 658.32,
+      "duration": 5.759,
+      "text": "by a computer"
+    },
+    {
+      "start": 660.019,
+      "duration": 6.521,
+      "text": "and then searched most of the larger"
+    },
+    {
+      "start": 664.079,
+      "duration": 4.681,
+      "text": "digital newspaper websites have what"
+    },
+    {
+      "start": 666.54,
+      "duration": 5.16,
+      "text": "have have used what is called optical"
+    },
+    {
+      "start": 668.76,
+      "duration": 4.34,
+      "text": "character recognition or OCR"
+    },
+    {
+      "start": 671.7,
+      "duration": 4.44,
+      "text": "to"
+    },
+    {
+      "start": 673.1,
+      "duration": 5.32,
+      "text": "read through all of the articles in the"
+    },
+    {
+      "start": 676.14,
+      "duration": 4.92,
+      "text": "newspaper and make the text available"
+    },
+    {
+      "start": 678.42,
+      "duration": 3.78,
+      "text": "online for to be searched by their"
+    },
+    {
+      "start": 681.06,
+      "duration": 4.62,
+      "text": "search engine"
+    },
+    {
+      "start": 682.2,
+      "duration": 6.12,
+      "text": "so when you start searching in the"
+    },
+    {
+      "start": 685.68,
+      "duration": 4.5,
+      "text": "newspapers you may find if you've got a"
+    },
+    {
+      "start": 688.32,
+      "duration": 4.019,
+      "text": "common name an ancestor with a very"
+    },
+    {
+      "start": 690.18,
+      "duration": 4.86,
+      "text": "common name you may find thousands of"
+    },
+    {
+      "start": 692.339,
+      "duration": 4.68,
+      "text": "references to to John Smith this and"
+    },
+    {
+      "start": 695.04,
+      "duration": 5.22,
+      "text": "that and you're going to have to spend"
+    },
+    {
+      "start": 697.019,
+      "duration": 6.781,
+      "text": "additional time uh refining your"
+    },
+    {
+      "start": 700.26,
+      "duration": 6.6,
+      "text": "searches or being more specific about"
+    },
+    {
+      "start": 703.8,
+      "duration": 5.219,
+      "text": "the places and Associated things that"
+    },
+    {
+      "start": 706.86,
+      "duration": 5.34,
+      "text": "may have occurred in your ancestors life"
+    },
+    {
+      "start": 709.019,
+      "duration": 4.5,
+      "text": "to differentiate that ancestor from all"
+    },
+    {
+      "start": 712.2,
+      "duration": 3.54,
+      "text": "the other people with the same or"
+    },
+    {
+      "start": 713.519,
+      "duration": 5.101,
+      "text": "similar name"
+    },
+    {
+      "start": 715.74,
+      "duration": 5.7,
+      "text": "okay so I'm going to give an example of"
+    },
+    {
+      "start": 718.62,
+      "duration": 6.3,
+      "text": "what kind of of things you might find in"
+    },
+    {
+      "start": 721.44,
+      "duration": 5.639,
+      "text": "a newspaper that are quite uh may be"
+    },
+    {
+      "start": 724.92,
+      "duration": 6.78,
+      "text": "surprising some of them may be"
+    },
+    {
+      "start": 727.079,
+      "duration": 7.38,
+      "text": "disturbing I uh I debated whether to"
+    },
+    {
+      "start": 731.7,
+      "duration": 6.86,
+      "text": "read this article or part of this"
+    },
+    {
+      "start": 734.459,
+      "duration": 7.261,
+      "text": "article uh into this"
+    },
+    {
+      "start": 738.56,
+      "duration": 5.38,
+      "text": "webinar but I decided that it wasn't"
+    },
+    {
+      "start": 741.72,
+      "duration": 5.64,
+      "text": "suitable for younger audiences so I"
+    },
+    {
+      "start": 743.94,
+      "duration": 5.28,
+      "text": "would probably not not do that but this"
+    },
+    {
+      "start": 747.36,
+      "duration": 3.659,
+      "text": "is an interesting kind of thing that"
+    },
+    {
+      "start": 749.22,
+      "duration": 3.9,
+      "text": "would show up in a newspaper that you"
+    },
+    {
+      "start": 751.019,
+      "duration": 4.38,
+      "text": "may never have found in any other way"
+    },
+    {
+      "start": 753.12,
+      "duration": 6.74,
+      "text": "this is a story about one of my uh one"
+    },
+    {
+      "start": 755.399,
+      "duration": 8.101,
+      "text": "of my relatives up in Flagstaff Arizona"
+    },
+    {
+      "start": 759.86,
+      "duration": 7.24,
+      "text": "and uh he came back from being in uh in"
+    },
+    {
+      "start": 763.5,
+      "duration": 5.339,
+      "text": "the war in uh World War one and had what"
+    },
+    {
+      "start": 767.1,
+      "duration": 6.06,
+      "text": "we would call today"
+    },
+    {
+      "start": 768.839,
+      "duration": 7.74,
+      "text": "um uh battle fatigue or or uh flashbacks"
+    },
+    {
+      "start": 773.16,
+      "duration": 7.08,
+      "text": "or or uh whatever they call syndromes"
+    },
+    {
+      "start": 776.579,
+      "duration": 8.82,
+      "text": "that uh you get when you get fired in a"
+    },
+    {
+      "start": 780.24,
+      "duration": 8.279,
+      "text": "war and uh unfortunately he uh he"
+    },
+    {
+      "start": 785.399,
+      "duration": 6.06,
+      "text": "came into Flagstaff on his horse and"
+    },
+    {
+      "start": 788.519,
+      "duration": 5.101,
+      "text": "then wandered off and it was discovered"
+    },
+    {
+      "start": 791.459,
+      "duration": 4.981,
+      "text": "after a few days that he was missing and"
+    },
+    {
+      "start": 793.62,
+      "duration": 4.86,
+      "text": "that there was no way they didn't know"
+    },
+    {
+      "start": 796.44,
+      "duration": 5.519,
+      "text": "where he was or what had happened to him"
+    },
+    {
+      "start": 798.48,
+      "duration": 6.24,
+      "text": "well the sheriff in Flagstaff decided"
+    },
+    {
+      "start": 801.959,
+      "duration": 6.301,
+      "text": "that he was going to find this person"
+    },
+    {
+      "start": 804.72,
+      "duration": 5.66,
+      "text": "and so he employed two"
+    },
+    {
+      "start": 808.26,
+      "duration": 2.12,
+      "text": "um"
+    },
+    {
+      "start": 811.1,
+      "duration": 7.0,
+      "text": "Native Americans a Hopi Indian and a"
+    },
+    {
+      "start": 813.72,
+      "duration": 6.96,
+      "text": "Navajo Indian to help him track down the"
+    },
+    {
+      "start": 818.1,
+      "duration": 4.979,
+      "text": "um the the young man"
+    },
+    {
+      "start": 820.68,
+      "duration": 5.099,
+      "text": "and so they went out in the desert but"
+    },
+    {
+      "start": 823.079,
+      "duration": 4.44,
+      "text": "meanwhile it had rained and so it made a"
+    },
+    {
+      "start": 825.779,
+      "duration": 2.641,
+      "text": "little difficult to follow any kind of a"
+    },
+    {
+      "start": 827.519,
+      "duration": 3.541,
+      "text": "trail"
+    },
+    {
+      "start": 828.42,
+      "duration": 4.02,
+      "text": "and it had been a few days since he"
+    },
+    {
+      "start": 831.06,
+      "duration": 2.94,
+      "text": "disappeared"
+    },
+    {
+      "start": 832.44,
+      "duration": 3.48,
+      "text": "and they"
+    },
+    {
+      "start": 834.0,
+      "duration": 4.94,
+      "text": "they didn't find anything and as a"
+    },
+    {
+      "start": 835.92,
+      "duration": 4.979,
+      "text": "matter of fact when both of the Indians"
+    },
+    {
+      "start": 838.94,
+      "duration": 3.459,
+      "text": "figured out that they were looking for"
+    },
+    {
+      "start": 840.899,
+      "duration": 3.841,
+      "text": "somebody who might be a dead man they"
+    },
+    {
+      "start": 842.399,
+      "duration": 6.541,
+      "text": "decided they didn't want to do that so"
+    },
+    {
+      "start": 844.74,
+      "duration": 8.159,
+      "text": "they quit the sheriff went back to uh to"
+    },
+    {
+      "start": 848.94,
+      "duration": 8.04,
+      "text": "Flagstaff and he uh he asked around and"
+    },
+    {
+      "start": 852.899,
+      "duration": 6.18,
+      "text": "found a a Tracker and so he had implied"
+    },
+    {
+      "start": 856.98,
+      "duration": 3.599,
+      "text": "this man as a Tracker and now you'd gone"
+    },
+    {
+      "start": 859.079,
+      "duration": 5.7,
+      "text": "out and it was about a week and a half"
+    },
+    {
+      "start": 860.579,
+      "duration": 5.161,
+      "text": "or two or so after after the uh"
+    },
+    {
+      "start": 864.779,
+      "duration": 4.201,
+      "text": "um"
+    },
+    {
+      "start": 865.74,
+      "duration": 5.159,
+      "text": "the young man had disappeared and they"
+    },
+    {
+      "start": 868.98,
+      "duration": 3.659,
+      "text": "went out to the last in the direction"
+    },
+    {
+      "start": 870.899,
+      "duration": 3.841,
+      "text": "that they'd gone and pretty soon the"
+    },
+    {
+      "start": 872.639,
+      "duration": 3.0,
+      "text": "tracker kind of picked up a bit of a"
+    },
+    {
+      "start": 874.74,
+      "duration": 3.659,
+      "text": "trail"
+    },
+    {
+      "start": 875.639,
+      "duration": 4.801,
+      "text": "and they found the man's horse"
+    },
+    {
+      "start": 878.399,
+      "duration": 3.601,
+      "text": "and it was sort of tied up to a bush and"
+    },
+    {
+      "start": 880.44,
+      "duration": 3.12,
+      "text": "they got the horse loose because the"
+    },
+    {
+      "start": 882.0,
+      "duration": 4.44,
+      "text": "horse wasn't in too good of shape after"
+    },
+    {
+      "start": 883.56,
+      "duration": 6.839,
+      "text": "that sitting out there for a long time"
+    },
+    {
+      "start": 886.44,
+      "duration": 6.06,
+      "text": "so uh then he got down the tracker got"
+    },
+    {
+      "start": 890.399,
+      "duration": 4.201,
+      "text": "down and the story this is this all in"
+    },
+    {
+      "start": 892.5,
+      "duration": 4.62,
+      "text": "this newspaper story this whole thing is"
+    },
+    {
+      "start": 894.6,
+      "duration": 4.08,
+      "text": "in this newspaper story he gets down on"
+    },
+    {
+      "start": 897.12,
+      "duration": 2.88,
+      "text": "the ground and he starts crawling around"
+    },
+    {
+      "start": 898.68,
+      "duration": 3.719,
+      "text": "on the ground"
+    },
+    {
+      "start": 900.0,
+      "duration": 4.26,
+      "text": "and pretty soon he picks up a trail"
+    },
+    {
+      "start": 902.399,
+      "duration": 4.68,
+      "text": "and he starts falling this trail out"
+    },
+    {
+      "start": 904.26,
+      "duration": 4.86,
+      "text": "across the desert and you have to"
+    },
+    {
+      "start": 907.079,
+      "duration": 4.32,
+      "text": "imagine this in Flagstaff Arizona which"
+    },
+    {
+      "start": 909.12,
+      "duration": 3.959,
+      "text": "is high Plateau up above around six"
+    },
+    {
+      "start": 911.399,
+      "duration": 5.041,
+      "text": "seven thousand feet"
+    },
+    {
+      "start": 913.079,
+      "duration": 5.88,
+      "text": "and it's just desert I mean it's just"
+    },
+    {
+      "start": 916.44,
+      "duration": 4.68,
+      "text": "absolutely Barren desert and he's"
+    },
+    {
+      "start": 918.959,
+      "duration": 3.901,
+      "text": "following this this Trail often across"
+    },
+    {
+      "start": 921.12,
+      "duration": 3.48,
+      "text": "the desert he goes for about two or"
+    },
+    {
+      "start": 922.86,
+      "duration": 4.38,
+      "text": "three miles across the desert and they"
+    },
+    {
+      "start": 924.6,
+      "duration": 4.679,
+      "text": "find the body of the man that that died"
+    },
+    {
+      "start": 927.24,
+      "duration": 4.44,
+      "text": "apparently suicide"
+    },
+    {
+      "start": 929.279,
+      "duration": 4.5,
+      "text": "but uh the remarkable thing was this"
+    },
+    {
+      "start": 931.68,
+      "duration": 5.04,
+      "text": "tracker who after all more than a week"
+    },
+    {
+      "start": 933.779,
+      "duration": 4.8,
+      "text": "or so after a rainstorm and all sorts of"
+    },
+    {
+      "start": 936.72,
+      "duration": 3.359,
+      "text": "other things could track this guy across"
+    },
+    {
+      "start": 938.579,
+      "duration": 3.901,
+      "text": "the plateau"
+    },
+    {
+      "start": 940.079,
+      "duration": 4.801,
+      "text": "so we've uh you know it was kind of an"
+    },
+    {
+      "start": 942.48,
+      "duration": 5.159,
+      "text": "interesting story unfortunate uh ending"
+    },
+    {
+      "start": 944.88,
+      "duration": 4.98,
+      "text": "to it but this is the kind of thing for"
+    },
+    {
+      "start": 947.639,
+      "duration": 5.221,
+      "text": "example my great grandfather great great"
+    },
+    {
+      "start": 949.86,
+      "duration": 7.02,
+      "text": "grandfather uh there's an article in the"
+    },
+    {
+      "start": 952.86,
+      "duration": 5.7,
+      "text": "uh in the newspaper in Beaver Utah about"
+    },
+    {
+      "start": 956.88,
+      "duration": 3.959,
+      "text": "the fact that he got all of his wash"
+    },
+    {
+      "start": 958.56,
+      "duration": 3.719,
+      "text": "stolen off the line I mean you never"
+    },
+    {
+      "start": 960.839,
+      "duration": 3.0,
+      "text": "know what they're going to come and and"
+    },
+    {
+      "start": 962.279,
+      "duration": 3.541,
+      "text": "there was there was not a lot of stuff"
+    },
+    {
+      "start": 963.839,
+      "duration": 5.041,
+      "text": "happening in these small towns across"
+    },
+    {
+      "start": 965.82,
+      "duration": 5.16,
+      "text": "the United States and the amazing things"
+    },
+    {
+      "start": 968.88,
+      "duration": 4.56,
+      "text": "reported every time somebody came into"
+    },
+    {
+      "start": 970.98,
+      "duration": 5.88,
+      "text": "town they would report it every time a"
+    },
+    {
+      "start": 973.44,
+      "duration": 6.6,
+      "text": "visitor came in uh any visitors any"
+    },
+    {
+      "start": 976.86,
+      "duration": 5.4,
+      "text": "relatives uh anybody had a baby anybody"
+    },
+    {
+      "start": 980.04,
+      "duration": 4.739,
+      "text": "got married uh anything happened"
+    },
+    {
+      "start": 982.26,
+      "duration": 3.66,
+      "text": "somebody got sick it's all there in the"
+    },
+    {
+      "start": 984.779,
+      "duration": 4.581,
+      "text": "newspapers"
+    },
+    {
+      "start": 985.92,
+      "duration": 6.3,
+      "text": "and uh so it's it's but it's interesting"
+    },
+    {
+      "start": 989.36,
+      "duration": 4.599,
+      "text": "that we now have ability to search some"
+    },
+    {
+      "start": 992.22,
+      "duration": 3.919,
+      "text": "of these newspapers because the ones"
+    },
+    {
+      "start": 993.959,
+      "duration": 5.88,
+      "text": "that have been digitized you can search"
+    },
+    {
+      "start": 996.139,
+      "duration": 6.041,
+      "text": "uh some of the websites have uh the"
+    },
+    {
+      "start": 999.839,
+      "duration": 4.74,
+      "text": "ability to actually highlight any search"
+    },
+    {
+      "start": 1002.18,
+      "duration": 5.12,
+      "text": "term so you can go right to the Articles"
+    },
+    {
+      "start": 1004.579,
+      "duration": 5.101,
+      "text": "and see where the where the news is"
+    },
+    {
+      "start": 1007.3,
+      "duration": 3.58,
+      "text": "others just give you the news page and"
+    },
+    {
+      "start": 1009.68,
+      "duration": 3.12,
+      "text": "then you have to sit there and read the"
+    },
+    {
+      "start": 1010.88,
+      "duration": 4.92,
+      "text": "whole page to figure out which where"
+    },
+    {
+      "start": 1012.8,
+      "duration": 6.18,
+      "text": "your guy has mentioned so it may be very"
+    },
+    {
+      "start": 1015.8,
+      "duration": 5.82,
+      "text": "difficult to take a little bit of time"
+    },
+    {
+      "start": 1018.98,
+      "duration": 5.4,
+      "text": "okay well we're going to start off with"
+    },
+    {
+      "start": 1021.62,
+      "duration": 5.579,
+      "text": "the Library of Congress and uh I"
+    },
+    {
+      "start": 1024.38,
+      "duration": 5.459,
+      "text": "mentioned that there was a way of"
+    },
+    {
+      "start": 1027.199,
+      "duration": 5.1,
+      "text": "determining which newspapers had been"
+    },
+    {
+      "start": 1029.839,
+      "duration": 3.901,
+      "text": "printed in any particular place in the"
+    },
+    {
+      "start": 1032.299,
+      "duration": 5.64,
+      "text": "United States"
+    },
+    {
+      "start": 1033.74,
+      "duration": 7.439,
+      "text": "and this is this is the U.S newspaper"
+    },
+    {
+      "start": 1037.939,
+      "duration": 5.88,
+      "text": "directory 1690 to the present this is"
+    },
+    {
+      "start": 1041.179,
+      "duration": 8.761,
+      "text": "free it's Loc"
+    },
+    {
+      "start": 1043.819,
+      "duration": 7.74,
+      "text": "dot gov l o c dot gov and that is the"
+    },
+    {
+      "start": 1049.94,
+      "duration": 5.099,
+      "text": "Library of Congress"
+    },
+    {
+      "start": 1051.559,
+      "duration": 6.0,
+      "text": "the U.S newspaper directory is in the"
+    },
+    {
+      "start": 1055.039,
+      "duration": 3.781,
+      "text": "chronicling America digital newspaper"
+    },
+    {
+      "start": 1057.559,
+      "duration": 3.541,
+      "text": "project"
+    },
+    {
+      "start": 1058.82,
+      "duration": 5.64,
+      "text": "and they have over 10 million Pages"
+    },
+    {
+      "start": 1061.1,
+      "duration": 5.4,
+      "text": "completely searchable word for word uh"
+    },
+    {
+      "start": 1064.46,
+      "duration": 3.36,
+      "text": "for free online from the Library of"
+    },
+    {
+      "start": 1066.5,
+      "duration": 4.08,
+      "text": "Congress so this is where I would"
+    },
+    {
+      "start": 1067.82,
+      "duration": 4.92,
+      "text": "usually start because Nay it's when it's"
+    },
+    {
+      "start": 1070.58,
+      "duration": 5.459,
+      "text": "free and it they have a very good search"
+    },
+    {
+      "start": 1072.74,
+      "duration": 5.1,
+      "text": "engine you can put in uh exact words on"
+    },
+    {
+      "start": 1076.039,
+      "duration": 4.14,
+      "text": "their advanced search and come up with"
+    },
+    {
+      "start": 1077.84,
+      "duration": 4.86,
+      "text": "the names of your people and I've had"
+    },
+    {
+      "start": 1080.179,
+      "duration": 5.581,
+      "text": "some very good results in finding uh"
+    },
+    {
+      "start": 1082.7,
+      "duration": 7.2,
+      "text": "some interesting articles uh about my"
+    },
+    {
+      "start": 1085.76,
+      "duration": 7.919,
+      "text": "ancestors from the Library of Congress"
+    },
+    {
+      "start": 1089.9,
+      "duration": 7.32,
+      "text": "the U.S newspapers directory uh goes"
+    },
+    {
+      "start": 1093.679,
+      "duration": 5.401,
+      "text": "back as it says to 1690 and in that what"
+    },
+    {
+      "start": 1097.22,
+      "duration": 4.56,
+      "text": "it does is it gives you the ability to"
+    },
+    {
+      "start": 1099.08,
+      "duration": 4.979,
+      "text": "search through a state and a county and"
+    },
+    {
+      "start": 1101.78,
+      "duration": 4.2,
+      "text": "what I usually do is when someone is"
+    },
+    {
+      "start": 1104.059,
+      "duration": 4.441,
+      "text": "looking for"
+    },
+    {
+      "start": 1105.98,
+      "duration": 4.68,
+      "text": "um a newspaper article about their"
+    },
+    {
+      "start": 1108.5,
+      "duration": 4.64,
+      "text": "ancestor I'll say well where'd they live"
+    },
+    {
+      "start": 1110.66,
+      "duration": 5.22,
+      "text": "and we'll finally come up with a county"
+    },
+    {
+      "start": 1113.14,
+      "duration": 5.44,
+      "text": "and I'll say okay the time period"
+    },
+    {
+      "start": 1115.88,
+      "duration": 4.98,
+      "text": "involved and so then we would look in"
+    },
+    {
+      "start": 1118.58,
+      "duration": 3.839,
+      "text": "the U.S newspaper directory and we put"
+    },
+    {
+      "start": 1120.86,
+      "duration": 3.78,
+      "text": "in the name of the state and the county"
+    },
+    {
+      "start": 1122.419,
+      "duration": 4.26,
+      "text": "and you immediate and you get a list"
+    },
+    {
+      "start": 1124.64,
+      "duration": 3.72,
+      "text": "back of all the newspapers that were"
+    },
+    {
+      "start": 1126.679,
+      "duration": 3.081,
+      "text": "printed in that county"
+    },
+    {
+      "start": 1128.36,
+      "duration": 5.1,
+      "text": "ever"
+    },
+    {
+      "start": 1129.76,
+      "duration": 5.02,
+      "text": "and the the advantage of that is that it"
+    },
+    {
+      "start": 1133.46,
+      "duration": 3.48,
+      "text": "tells you all the newspapers the"
+    },
+    {
+      "start": 1134.78,
+      "duration": 4.86,
+      "text": "disadvantage is most of the people look"
+    },
+    {
+      "start": 1136.94,
+      "duration": 4.739,
+      "text": "at the list and sometimes they're 60 or"
+    },
+    {
+      "start": 1139.64,
+      "duration": 5.34,
+      "text": "70 or 80 newspapers that have been"
+    },
+    {
+      "start": 1141.679,
+      "duration": 5.341,
+      "text": "published in that one County and you go"
+    },
+    {
+      "start": 1144.98,
+      "duration": 4.38,
+      "text": "through and find that maybe there's 10"
+    },
+    {
+      "start": 1147.02,
+      "duration": 3.659,
+      "text": "or 15 that were being published at the"
+    },
+    {
+      "start": 1149.36,
+      "duration": 2.76,
+      "text": "time that your people lived in the"
+    },
+    {
+      "start": 1150.679,
+      "duration": 3.421,
+      "text": "county"
+    },
+    {
+      "start": 1152.12,
+      "duration": 3.059,
+      "text": "and my answer is go read the newspapers"
+    },
+    {
+      "start": 1154.1,
+      "duration": 2.88,
+      "text": "and they say well what do you mean read"
+    },
+    {
+      "start": 1155.179,
+      "duration": 4.38,
+      "text": "the newspapers I said yeah I mean start"
+    },
+    {
+      "start": 1156.98,
+      "duration": 5.699,
+      "text": "on page one and read the newspapers"
+    },
+    {
+      "start": 1159.559,
+      "duration": 4.86,
+      "text": "every one of the pages and they go"
+    },
+    {
+      "start": 1162.679,
+      "duration": 3.421,
+      "text": "you're kidding"
+    },
+    {
+      "start": 1164.419,
+      "duration": 3.661,
+      "text": "and I said no I'm not kidding that's"
+    },
+    {
+      "start": 1166.1,
+      "duration": 3.78,
+      "text": "exactly what the process is it's it's"
+    },
+    {
+      "start": 1168.08,
+      "duration": 4.5,
+      "text": "called reading the newspapers just go"
+    },
+    {
+      "start": 1169.88,
+      "duration": 4.56,
+      "text": "through and you read for Content you try"
+    },
+    {
+      "start": 1172.58,
+      "duration": 4.32,
+      "text": "to find anything about your ancestor"
+    },
+    {
+      "start": 1174.44,
+      "duration": 5.099,
+      "text": "that may be in the paper now that's what"
+    },
+    {
+      "start": 1176.9,
+      "duration": 5.279,
+      "text": "happens when the papers are on microfilm"
+    },
+    {
+      "start": 1179.539,
+      "duration": 5.461,
+      "text": "so if you have to read a microfilm copy"
+    },
+    {
+      "start": 1182.179,
+      "duration": 4.801,
+      "text": "then you are basically in the in the"
+    },
+    {
+      "start": 1185.0,
+      "duration": 5.22,
+      "text": "process of reading the newspaper now"
+    },
+    {
+      "start": 1186.98,
+      "duration": 6.78,
+      "text": "that it becomes interestingly enough it"
+    },
+    {
+      "start": 1190.22,
+      "duration": 7.56,
+      "text": "becomes a very good incentive to do good"
+    },
+    {
+      "start": 1193.76,
+      "duration": 5.94,
+      "text": "genealogical research because if you"
+    },
+    {
+      "start": 1197.78,
+      "duration": 4.259,
+      "text": "know when they got married then it's"
+    },
+    {
+      "start": 1199.7,
+      "duration": 4.26,
+      "text": "pretty easy to get to the newspaper that"
+    },
+    {
+      "start": 1202.039,
+      "duration": 4.441,
+      "text": "you're looking for and find the date and"
+    },
+    {
+      "start": 1203.96,
+      "duration": 5.579,
+      "text": "maybe a week or two before and after for"
+    },
+    {
+      "start": 1206.48,
+      "duration": 5.819,
+      "text": "announcements and whatever you can get"
+    },
+    {
+      "start": 1209.539,
+      "duration": 4.621,
+      "text": "to that information but if you just have"
+    },
+    {
+      "start": 1212.299,
+      "duration": 3.24,
+      "text": "kind of a vague idea that they may have"
+    },
+    {
+      "start": 1214.16,
+      "duration": 3.48,
+      "text": "lived in this County"
+    },
+    {
+      "start": 1215.539,
+      "duration": 5.461,
+      "text": "you've got a lot of pages to read and"
+    },
+    {
+      "start": 1217.64,
+      "duration": 5.159,
+      "text": "you but the answer is now going back to"
+    },
+    {
+      "start": 1221.0,
+      "duration": 3.84,
+      "text": "my original example when they come in"
+    },
+    {
+      "start": 1222.799,
+      "duration": 4.141,
+      "text": "and say I we've looked everywhere"
+    },
+    {
+      "start": 1224.84,
+      "duration": 4.38,
+      "text": "and my answer is after I've shown them"
+    },
+    {
+      "start": 1226.94,
+      "duration": 3.599,
+      "text": "the list of 30 or 40 newspapers to say"
+    },
+    {
+      "start": 1229.22,
+      "duration": 3.24,
+      "text": "Oh you mean you've read every one of"
+    },
+    {
+      "start": 1230.539,
+      "duration": 4.441,
+      "text": "these newspapers all the way through"
+    },
+    {
+      "start": 1232.46,
+      "duration": 3.839,
+      "text": "and they go what are you talking about I"
+    },
+    {
+      "start": 1234.98,
+      "duration": 3.66,
+      "text": "said well you said everywhere and that"
+    },
+    {
+      "start": 1236.299,
+      "duration": 6.541,
+      "text": "would include all of these newspapers"
+    },
+    {
+      "start": 1238.64,
+      "duration": 6.899,
+      "text": "so that that's the the key here is that"
+    },
+    {
+      "start": 1242.84,
+      "duration": 4.98,
+      "text": "it is a it's a great Boon to us a"
+    },
+    {
+      "start": 1245.539,
+      "duration": 5.341,
+      "text": "benefit to the news to the genealogical"
+    },
+    {
+      "start": 1247.82,
+      "duration": 5.76,
+      "text": "researcher to have digitized newspapers"
+    },
+    {
+      "start": 1250.88,
+      "duration": 4.08,
+      "text": "that have been uh been had all their"
+    },
+    {
+      "start": 1253.58,
+      "duration": 3.9,
+      "text": "characters read through optical"
+    },
+    {
+      "start": 1254.96,
+      "duration": 5.52,
+      "text": "character recognition because then we"
+    },
+    {
+      "start": 1257.48,
+      "duration": 6.059,
+      "text": "can sort of short make a shortcut and"
+    },
+    {
+      "start": 1260.48,
+      "duration": 5.579,
+      "text": "not have to go through and read every"
+    },
+    {
+      "start": 1263.539,
+      "duration": 5.041,
+      "text": "single page of every single newspaper"
+    },
+    {
+      "start": 1266.059,
+      "duration": 4.681,
+      "text": "and I kept mentioned I just remembered"
+    },
+    {
+      "start": 1268.58,
+      "duration": 5.94,
+      "text": "another good example of some things that"
+    },
+    {
+      "start": 1270.74,
+      "duration": 5.34,
+      "text": "were pretty uh unusual my wife for"
+    },
+    {
+      "start": 1274.52,
+      "duration": 4.26,
+      "text": "example we went out and looked for her"
+    },
+    {
+      "start": 1276.08,
+      "duration": 5.24,
+      "text": "father we just stuck his name into one"
+    },
+    {
+      "start": 1278.78,
+      "duration": 6.18,
+      "text": "of the big databases and came up with a"
+    },
+    {
+      "start": 1281.32,
+      "duration": 5.979,
+      "text": "uh an article a whole bunch of articles"
+    },
+    {
+      "start": 1284.96,
+      "duration": 4.92,
+      "text": "in fact it looked like once once a week"
+    },
+    {
+      "start": 1287.299,
+      "duration": 5.221,
+      "text": "there was an article about him in the"
+    },
+    {
+      "start": 1289.88,
+      "duration": 6.0,
+      "text": "Ogden examiner up in Ogden Utah"
+    },
+    {
+      "start": 1292.52,
+      "duration": 4.74,
+      "text": "and uh so we found the paper and"
+    },
+    {
+      "start": 1295.88,
+      "duration": 3.12,
+      "text": "searched all over the page we couldn't"
+    },
+    {
+      "start": 1297.26,
+      "duration": 3.48,
+      "text": "find out what it was but we found it in"
+    },
+    {
+      "start": 1299.0,
+      "duration": 4.559,
+      "text": "little advertisement for radio station"
+    },
+    {
+      "start": 1300.74,
+      "duration": 6.0,
+      "text": "that he was he and her brother were on"
+    },
+    {
+      "start": 1303.559,
+      "duration": 4.62,
+      "text": "the radio every Wednesday night he"
+    },
+    {
+      "start": 1306.74,
+      "duration": 2.819,
+      "text": "played the accordion and his brother"
+    },
+    {
+      "start": 1308.179,
+      "duration": 3.24,
+      "text": "played the guitar"
+    },
+    {
+      "start": 1309.559,
+      "duration": 3.781,
+      "text": "and so they had a little announcement in"
+    },
+    {
+      "start": 1311.419,
+      "duration": 3.841,
+      "text": "the newspaper every week about this"
+    },
+    {
+      "start": 1313.34,
+      "duration": 3.839,
+      "text": "radio show they were doing and my wife"
+    },
+    {
+      "start": 1315.26,
+      "duration": 4.08,
+      "text": "was saying I never knew that I had no"
+    },
+    {
+      "start": 1317.179,
+      "duration": 4.801,
+      "text": "idea that's what he did so you find all"
+    },
+    {
+      "start": 1319.34,
+      "duration": 4.02,
+      "text": "sorts of things that you're uh uh you"
+    },
+    {
+      "start": 1321.98,
+      "duration": 3.179,
+      "text": "know you're not looking for you might"
+    },
+    {
+      "start": 1323.36,
+      "duration": 3.96,
+      "text": "find like I have on occasion that a few"
+    },
+    {
+      "start": 1325.159,
+      "duration": 4.38,
+      "text": "of my ancestors ended up in court on a"
+    },
+    {
+      "start": 1327.32,
+      "duration": 4.38,
+      "text": "various criminal charges but that's"
+    },
+    {
+      "start": 1329.539,
+      "duration": 4.14,
+      "text": "that's just the one of the benefits of"
+    },
+    {
+      "start": 1331.7,
+      "duration": 4.68,
+      "text": "doing genealogical research"
+    },
+    {
+      "start": 1333.679,
+      "duration": 4.321,
+      "text": "Okay so"
+    },
+    {
+      "start": 1336.38,
+      "duration": 2.76,
+      "text": "one of the things that happened a few"
+    },
+    {
+      "start": 1338.0,
+      "duration": 2.96,
+      "text": "years ago"
+    },
+    {
+      "start": 1339.14,
+      "duration": 4.86,
+      "text": "was that Google"
+    },
+    {
+      "start": 1340.96,
+      "duration": 5.44,
+      "text": "Google did two things one is they they"
+    },
+    {
+      "start": 1344.0,
+      "duration": 4.02,
+      "text": "had a goal of digitizing every book"
+    },
+    {
+      "start": 1346.4,
+      "duration": 4.5,
+      "text": "every published"
+    },
+    {
+      "start": 1348.02,
+      "duration": 5.159,
+      "text": "and then they had a goal they decided to"
+    },
+    {
+      "start": 1350.9,
+      "duration": 3.68,
+      "text": "expand that to digitizing every"
+    },
+    {
+      "start": 1353.179,
+      "duration": 4.921,
+      "text": "newspaper"
+    },
+    {
+      "start": 1354.58,
+      "duration": 5.579,
+      "text": "well books or books but newspapers"
+    },
+    {
+      "start": 1358.1,
+      "duration": 4.98,
+      "text": "turned out to be a real real challenge"
+    },
+    {
+      "start": 1360.159,
+      "duration": 5.981,
+      "text": "the reason why we have so many different"
+    },
+    {
+      "start": 1363.08,
+      "duration": 5.219,
+      "text": "online websites and so many different"
+    },
+    {
+      "start": 1366.14,
+      "duration": 3.84,
+      "text": "places where newspapers are kept is just"
+    },
+    {
+      "start": 1368.299,
+      "duration": 4.981,
+      "text": "because of the nature of the newspaper"
+    },
+    {
+      "start": 1369.98,
+      "duration": 6.48,
+      "text": "it's also extremely difficult to get"
+    },
+    {
+      "start": 1373.28,
+      "duration": 6.42,
+      "text": "what you call full runs or all of the"
+    },
+    {
+      "start": 1376.46,
+      "duration": 5.88,
+      "text": "additions of a specific newspaper"
+    },
+    {
+      "start": 1379.7,
+      "duration": 4.38,
+      "text": "um a lot of times there's those only"
+    },
+    {
+      "start": 1382.34,
+      "duration": 4.28,
+      "text": "place that they were kept would been"
+    },
+    {
+      "start": 1384.08,
+      "duration": 5.94,
+      "text": "would have been in a in a local library"
+    },
+    {
+      "start": 1386.62,
+      "duration": 6.039,
+      "text": "that where the librarian just piled the"
+    },
+    {
+      "start": 1390.02,
+      "duration": 5.94,
+      "text": "newspapers up as they came in and and"
+    },
+    {
+      "start": 1392.659,
+      "duration": 5.281,
+      "text": "had a big pile of newspapers well you're"
+    },
+    {
+      "start": 1395.96,
+      "duration": 3.66,
+      "text": "going to go in there and and make sure"
+    },
+    {
+      "start": 1397.94,
+      "duration": 3.84,
+      "text": "you've got the whole thing Incorrect and"
+    },
+    {
+      "start": 1399.62,
+      "duration": 3.66,
+      "text": "then you know in order and correct and"
+    },
+    {
+      "start": 1401.78,
+      "duration": 3.36,
+      "text": "everything and then you're going to take"
+    },
+    {
+      "start": 1403.28,
+      "duration": 5.58,
+      "text": "these very large sheets of paper and"
+    },
+    {
+      "start": 1405.14,
+      "duration": 5.88,
+      "text": "scan them into a computer uh it's quite"
+    },
+    {
+      "start": 1408.86,
+      "duration": 4.02,
+      "text": "a challenge well after a few years of"
+    },
+    {
+      "start": 1411.02,
+      "duration": 3.84,
+      "text": "trying to do this Google just said okay"
+    },
+    {
+      "start": 1412.88,
+      "duration": 4.44,
+      "text": "well we're not doing that anymore"
+    },
+    {
+      "start": 1414.86,
+      "duration": 5.16,
+      "text": "but they did end up with a very large"
+    },
+    {
+      "start": 1417.32,
+      "duration": 5.28,
+      "text": "collection of newspapers online"
+    },
+    {
+      "start": 1420.02,
+      "duration": 4.56,
+      "text": "and if you go to Google newspaper"
+    },
+    {
+      "start": 1422.6,
+      "duration": 4.439,
+      "text": "archive and just do a search on Google"
+    },
+    {
+      "start": 1424.58,
+      "duration": 4.979,
+      "text": "for the newspapers you'll come up with"
+    },
+    {
+      "start": 1427.039,
+      "duration": 5.041,
+      "text": "their directory for the additions that"
+    },
+    {
+      "start": 1429.559,
+      "duration": 4.98,
+      "text": "they have and once again we're back to"
+    },
+    {
+      "start": 1432.08,
+      "duration": 4.62,
+      "text": "the situation where you need to know"
+    },
+    {
+      "start": 1434.539,
+      "duration": 5.52,
+      "text": "where your ancestors where an event"
+    },
+    {
+      "start": 1436.7,
+      "duration": 6.3,
+      "text": "occurred in your ancestors life and you"
+    },
+    {
+      "start": 1440.059,
+      "duration": 5.1,
+      "text": "need to be able to localize it and get"
+    },
+    {
+      "start": 1443.0,
+      "duration": 4.26,
+      "text": "it to the point where you know which"
+    },
+    {
+      "start": 1445.159,
+      "duration": 4.02,
+      "text": "newspapers now here's the here's the"
+    },
+    {
+      "start": 1447.26,
+      "duration": 3.12,
+      "text": "kind of good news bad news about that"
+    },
+    {
+      "start": 1449.179,
+      "duration": 3.901,
+      "text": "situation"
+    },
+    {
+      "start": 1450.38,
+      "duration": 4.56,
+      "text": "the good news is is if you find out that"
+    },
+    {
+      "start": 1453.08,
+      "duration": 4.38,
+      "text": "they were married or they died or"
+    },
+    {
+      "start": 1454.94,
+      "duration": 4.44,
+      "text": "whatever happened to their lives in a"
+    },
+    {
+      "start": 1457.46,
+      "duration": 3.66,
+      "text": "specific location and you search the"
+    },
+    {
+      "start": 1459.38,
+      "duration": 4.62,
+      "text": "newspapers and you search the local"
+    },
+    {
+      "start": 1461.12,
+      "duration": 4.62,
+      "text": "newspapers that may be you may think"
+    },
+    {
+      "start": 1464.0,
+      "duration": 4.14,
+      "text": "well a great pat yourself on the back"
+    },
+    {
+      "start": 1465.74,
+      "duration": 3.66,
+      "text": "you've done a great job and the answer"
+    },
+    {
+      "start": 1468.14,
+      "duration": 4.08,
+      "text": "is"
+    },
+    {
+      "start": 1469.4,
+      "duration": 4.62,
+      "text": "you haven't even begun starting for"
+    },
+    {
+      "start": 1472.22,
+      "duration": 4.14,
+      "text": "example that great great grandfather"
+    },
+    {
+      "start": 1474.02,
+      "duration": 4.8,
+      "text": "that I mentioned in Beaver Utah which is"
+    },
+    {
+      "start": 1476.36,
+      "duration": 4.92,
+      "text": "uh not really Southern Utah more in"
+    },
+    {
+      "start": 1478.82,
+      "duration": 4.62,
+      "text": "Central Utah but it's a little tiny Town"
+    },
+    {
+      "start": 1481.28,
+      "duration": 3.72,
+      "text": "out on the now it's on the freeway well"
+    },
+    {
+      "start": 1483.44,
+      "duration": 3.479,
+      "text": "he didn't have a freeway back when he"
+    },
+    {
+      "start": 1485.0,
+      "duration": 4.08,
+      "text": "lived there he would have liked it I'm"
+    },
+    {
+      "start": 1486.919,
+      "duration": 3.421,
+      "text": "sure but he did they didn't have the"
+    },
+    {
+      "start": 1489.08,
+      "duration": 4.8,
+      "text": "freeway but"
+    },
+    {
+      "start": 1490.34,
+      "duration": 5.819,
+      "text": "the his his death notices his obituaries"
+    },
+    {
+      "start": 1493.88,
+      "duration": 5.4,
+      "text": "and death notices ended up in the"
+    },
+    {
+      "start": 1496.159,
+      "duration": 4.5,
+      "text": "newspapers in Salt Lake and Ogden uh 300"
+    },
+    {
+      "start": 1499.28,
+      "duration": 4.92,
+      "text": "miles north"
+    },
+    {
+      "start": 1500.659,
+      "duration": 6.781,
+      "text": "so you can't really uh you know you"
+    },
+    {
+      "start": 1504.2,
+      "duration": 5.04,
+      "text": "really can't uh stop looking just"
+    },
+    {
+      "start": 1507.44,
+      "duration": 3.78,
+      "text": "because you've identified the specific"
+    },
+    {
+      "start": 1509.24,
+      "duration": 4.439,
+      "text": "place you really have to think in terms"
+    },
+    {
+      "start": 1511.22,
+      "duration": 4.439,
+      "text": "of regional newspapers and that might"
+    },
+    {
+      "start": 1513.679,
+      "duration": 4.74,
+      "text": "have picked up a story from a Small Town"
+    },
+    {
+      "start": 1515.659,
+      "duration": 5.76,
+      "text": "Newspaper and republished it"
+    },
+    {
+      "start": 1518.419,
+      "duration": 6.301,
+      "text": "okay so Google gives you a pretty good"
+    },
+    {
+      "start": 1521.419,
+      "duration": 5.841,
+      "text": "one now one of the largest online"
+    },
+    {
+      "start": 1524.72,
+      "duration": 5.64,
+      "text": "newspaper archives today is called"
+    },
+    {
+      "start": 1527.26,
+      "duration": 5.44,
+      "text": "newspaperarchive.com and it is owned by"
+    },
+    {
+      "start": 1530.36,
+      "duration": 6.12,
+      "text": "myheritage or at least licensed by my"
+    },
+    {
+      "start": 1532.7,
+      "duration": 7.14,
+      "text": "Heritage and they have over 140 million"
+    },
+    {
+      "start": 1536.48,
+      "duration": 5.36,
+      "text": "uh Records meaning 140 million pages of"
+    },
+    {
+      "start": 1539.84,
+      "duration": 5.219,
+      "text": "newspaper"
+    },
+    {
+      "start": 1541.84,
+      "duration": 5.02,
+      "text": "compared that to the 10 million pages in"
+    },
+    {
+      "start": 1545.059,
+      "duration": 5.701,
+      "text": "The Net in the Library of Congress for"
+    },
+    {
+      "start": 1546.86,
+      "duration": 7.26,
+      "text": "example so it's more than uh 10 times as"
+    },
+    {
+      "start": 1550.76,
+      "duration": 6.48,
+      "text": "many newspaper pages and so when you"
+    },
+    {
+      "start": 1554.12,
+      "duration": 4.98,
+      "text": "have this huge collection you can do uh"
+    },
+    {
+      "start": 1557.24,
+      "duration": 4.38,
+      "text": "you can keep searching the advantage of"
+    },
+    {
+      "start": 1559.1,
+      "duration": 4.199,
+      "text": "course of myheritage is that if you if"
+    },
+    {
+      "start": 1561.62,
+      "duration": 4.439,
+      "text": "you have a this is a subscription"
+    },
+    {
+      "start": 1563.299,
+      "duration": 5.341,
+      "text": "website if you have a subscription you"
+    },
+    {
+      "start": 1566.059,
+      "duration": 6.6,
+      "text": "can put your uh pedigree on there your"
+    },
+    {
+      "start": 1568.64,
+      "duration": 5.58,
+      "text": "your file uh your family file and they"
+    },
+    {
+      "start": 1572.659,
+      "duration": 3.781,
+      "text": "will automatically search all these"
+    },
+    {
+      "start": 1574.22,
+      "duration": 5.819,
+      "text": "newspapers for you and provide you with"
+    },
+    {
+      "start": 1576.44,
+      "duration": 6.239,
+      "text": "record matches uh or record hints that"
+    },
+    {
+      "start": 1580.039,
+      "duration": 5.161,
+      "text": "tell you that you have a newspaper"
+    },
+    {
+      "start": 1582.679,
+      "duration": 4.261,
+      "text": "article about your ancestor and this is"
+    },
+    {
+      "start": 1585.2,
+      "duration": 4.26,
+      "text": "really one of the more surprising things"
+    },
+    {
+      "start": 1586.94,
+      "duration": 4.979,
+      "text": "that people find when they uh when"
+    },
+    {
+      "start": 1589.46,
+      "duration": 4.199,
+      "text": "they're involved with myheritage is they"
+    },
+    {
+      "start": 1591.919,
+      "duration": 4.26,
+      "text": "get all this information out of the"
+    },
+    {
+      "start": 1593.659,
+      "duration": 4.62,
+      "text": "newspapers that they didn't know existed"
+    },
+    {
+      "start": 1596.179,
+      "duration": 4.5,
+      "text": "so this is one of the more"
+    },
+    {
+      "start": 1598.279,
+      "duration": 6.9,
+      "text": "um one of the very active newspaper"
+    },
+    {
+      "start": 1600.679,
+      "duration": 7.921,
+      "text": "archives uh elephind is another huge"
+    },
+    {
+      "start": 1605.179,
+      "duration": 7.86,
+      "text": "online newspaper website actually this"
+    },
+    {
+      "start": 1608.6,
+      "duration": 8.34,
+      "text": "particular company is in New Zealand"
+    },
+    {
+      "start": 1613.039,
+      "duration": 6.421,
+      "text": "and they have over uh two million 745"
+    },
+    {
+      "start": 1616.94,
+      "duration": 5.339,
+      "text": "000 newspapers that's not Pages that's"
+    },
+    {
+      "start": 1619.46,
+      "duration": 6.66,
+      "text": "the number of newspapers they have and"
+    },
+    {
+      "start": 1622.279,
+      "duration": 8.28,
+      "text": "uh over 2 000 different newspaper titles"
+    },
+    {
+      "start": 1626.12,
+      "duration": 8.34,
+      "text": "indexed on there on their website"
+    },
+    {
+      "start": 1630.559,
+      "duration": 6.841,
+      "text": "and then we have the uh granddaddy of"
+    },
+    {
+      "start": 1634.46,
+      "duration": 7.199,
+      "text": "all websites on the internet"
+    },
+    {
+      "start": 1637.4,
+      "duration": 7.92,
+      "text": "um probably the largest of one uh"
+    },
+    {
+      "start": 1641.659,
+      "duration": 5.481,
+      "text": "website with more digitized pages and"
+    },
+    {
+      "start": 1645.32,
+      "duration": 4.38,
+      "text": "digital information than any other"
+    },
+    {
+      "start": 1647.14,
+      "duration": 4.12,
+      "text": "website that we that I'm aware of and"
+    },
+    {
+      "start": 1649.7,
+      "duration": 4.979,
+      "text": "that's trove"
+    },
+    {
+      "start": 1651.26,
+      "duration": 6.06,
+      "text": "dot nla.gov dot a u this is the National"
+    },
+    {
+      "start": 1654.679,
+      "duration": 5.341,
+      "text": "Library of Australia it's governmental"
+    },
+    {
+      "start": 1657.32,
+      "duration": 4.8,
+      "text": "the Australian governmental"
+    },
+    {
+      "start": 1660.02,
+      "duration": 5.399,
+      "text": "um"
+    },
+    {
+      "start": 1662.12,
+      "duration": 6.02,
+      "text": "National Library and they at the time I"
+    },
+    {
+      "start": 1665.419,
+      "duration": 9.36,
+      "text": "did this slide they had"
+    },
+    {
+      "start": 1668.14,
+      "duration": 6.639,
+      "text": "472 million almost 473 million digitized"
+    },
+    {
+      "start": 1675.58,
+      "duration": 6.339,
+      "text": "items in their vast resources"
+    },
+    {
+      "start": 1679.22,
+      "duration": 4.14,
+      "text": "uh one of the one of the comments that I"
+    },
+    {
+      "start": 1681.919,
+      "duration": 4.14,
+      "text": "always get back"
+    },
+    {
+      "start": 1683.36,
+      "duration": 4.319,
+      "text": "when I mentioned Trove is that well"
+    },
+    {
+      "start": 1686.059,
+      "duration": 3.48,
+      "text": "they're in Australia and they say well I"
+    },
+    {
+      "start": 1687.679,
+      "duration": 3.301,
+      "text": "don't have any family in Australia and I"
+    },
+    {
+      "start": 1689.539,
+      "duration": 4.62,
+      "text": "say well where did your family come from"
+    },
+    {
+      "start": 1690.98,
+      "duration": 4.559,
+      "text": "and they say well you know England Great"
+    },
+    {
+      "start": 1694.159,
+      "duration": 3.9,
+      "text": "Britain"
+    },
+    {
+      "start": 1695.539,
+      "duration": 3.961,
+      "text": "Western Europe and I say well where do"
+    },
+    {
+      "start": 1698.059,
+      "duration": 2.521,
+      "text": "you think the people in Australia came"
+    },
+    {
+      "start": 1699.5,
+      "duration": 3.419,
+      "text": "from"
+    },
+    {
+      "start": 1700.58,
+      "duration": 4.02,
+      "text": "and they say well probably the same"
+    },
+    {
+      "start": 1702.919,
+      "duration": 3.24,
+      "text": "place and I said yeah and they're"
+    },
+    {
+      "start": 1704.6,
+      "duration": 3.66,
+      "text": "probably got your relatives there in"
+    },
+    {
+      "start": 1706.159,
+      "duration": 3.541,
+      "text": "Australia and you just don't know it"
+    },
+    {
+      "start": 1708.26,
+      "duration": 5.1,
+      "text": "and"
+    },
+    {
+      "start": 1709.7,
+      "duration": 5.459,
+      "text": "um so that's the case and and plus the"
+    },
+    {
+      "start": 1713.36,
+      "duration": 4.58,
+      "text": "fact when you get a website that that's"
+    },
+    {
+      "start": 1715.159,
+      "duration": 5.941,
+      "text": "that is this big now"
+    },
+    {
+      "start": 1717.94,
+      "duration": 7.54,
+      "text": "good news bad news about this one"
+    },
+    {
+      "start": 1721.1,
+      "duration": 8.4,
+      "text": "is that most of this is is available for"
+    },
+    {
+      "start": 1725.48,
+      "duration": 7.4,
+      "text": "free and readily accessible uh some of"
+    },
+    {
+      "start": 1729.5,
+      "duration": 3.38,
+      "text": "the content is not available"
+    },
+    {
+      "start": 1765.559,
+      "duration": 4.201,
+      "text": "um it's a separate subscription so if"
+    },
+    {
+      "start": 1767.6,
+      "duration": 4.14,
+      "text": "you have a a subscription to find my"
+    },
+    {
+      "start": 1769.76,
+      "duration": 3.659,
+      "text": "pass that does not automatically get you"
+    },
+    {
+      "start": 1771.74,
+      "duration": 3.179,
+      "text": "a subscription to the British newspaper"
+    },
+    {
+      "start": 1773.419,
+      "duration": 3.901,
+      "text": "archive"
+    },
+    {
+      "start": 1774.919,
+      "duration": 5.221,
+      "text": "um and they have another 13 and a half"
+    },
+    {
+      "start": 1777.32,
+      "duration": 5.219,
+      "text": "million pages of of information all the"
+    },
+    {
+      "start": 1780.14,
+      "duration": 5.22,
+      "text": "numbers that I quote here are are"
+    },
+    {
+      "start": 1782.539,
+      "duration": 5.041,
+      "text": "definitely approximate because the"
+    },
+    {
+      "start": 1785.36,
+      "duration": 4.799,
+      "text": "numbers of uh as they they're"
+    },
+    {
+      "start": 1787.58,
+      "duration": 5.599,
+      "text": "continually digitizing additional"
+    },
+    {
+      "start": 1790.159,
+      "duration": 5.76,
+      "text": "newspapers so the numbers"
+    },
+    {
+      "start": 1793.179,
+      "duration": 5.1,
+      "text": "are going to go up on every one of these"
+    },
+    {
+      "start": 1795.919,
+      "duration": 2.36,
+      "text": "second"
+    },
+    {
+      "start": 1804.14,
+      "duration": 5.22,
+      "text": "okay"
+    },
+    {
+      "start": 1806.419,
+      "duration": 5.701,
+      "text": "and of course we have some here at home"
+    },
+    {
+      "start": 1809.36,
+      "duration": 6.12,
+      "text": "here at BYU family history Library we"
+    },
+    {
+      "start": 1812.12,
+      "duration": 6.0,
+      "text": "have a huge Bank of of cabinets and we"
+    },
+    {
+      "start": 1815.48,
+      "duration": 5.579,
+      "text": "also have uh through the computers here"
+    },
+    {
+      "start": 1818.12,
+      "duration": 5.939,
+      "text": "in the library we have access to a"
+    },
+    {
+      "start": 1821.059,
+      "duration": 5.34,
+      "text": "number of these large online digital"
+    },
+    {
+      "start": 1824.059,
+      "duration": 4.021,
+      "text": "newspapers"
+    },
+    {
+      "start": 1826.399,
+      "duration": 5.28,
+      "text": "um I think I've I don't think I"
+    },
+    {
+      "start": 1828.08,
+      "duration": 6.24,
+      "text": "mentioned ancestry.com ancestry.com has"
+    },
+    {
+      "start": 1831.679,
+      "duration": 4.88,
+      "text": "quite a few newspapers in ancestry but"
+    },
+    {
+      "start": 1834.32,
+      "duration": 6.359,
+      "text": "they also have their newspapers.com"
+    },
+    {
+      "start": 1836.559,
+      "duration": 7.081,
+      "text": "website where they have a huge"
+    },
+    {
+      "start": 1840.679,
+      "duration": 2.961,
+      "text": "collection online"
+    },
+    {
+      "start": 1845.059,
+      "duration": 6.36,
+      "text": "um I I you know I this is kind of an"
+    },
+    {
+      "start": 1847.7,
+      "duration": 6.68,
+      "text": "interesting situation because uh in"
+    },
+    {
+      "start": 1851.419,
+      "duration": 2.961,
+      "text": "doing a a"
+    },
+    {
+      "start": 1854.72,
+      "duration": 5.1,
+      "text": "webinar on a subject like digital"
+    },
+    {
+      "start": 1857.0,
+      "duration": 6.48,
+      "text": "newspapers it's it's it's sort of a"
+    },
+    {
+      "start": 1859.82,
+      "duration": 6.42,
+      "text": "balance uh you could simply sit here for"
+    },
+    {
+      "start": 1863.48,
+      "duration": 5.34,
+      "text": "an entire hour and and give you slide"
+    },
+    {
+      "start": 1866.24,
+      "duration": 4.799,
+      "text": "after slide of newspaper sites"
+    },
+    {
+      "start": 1868.82,
+      "duration": 6.92,
+      "text": "um and I'm going to have a reference to"
+    },
+    {
+      "start": 1871.039,
+      "duration": 4.701,
+      "text": "a list that I did uh last year"
+    },
+    {
+      "start": 1876.14,
+      "duration": 3.36,
+      "text": "um I was"
+    },
+    {
+      "start": 1877.52,
+      "duration": 3.72,
+      "text": "I thought about it and I thought well"
+    },
+    {
+      "start": 1879.5,
+      "duration": 3.899,
+      "text": "I'm just going to list all the newspaper"
+    },
+    {
+      "start": 1881.24,
+      "duration": 4.08,
+      "text": "digital newspaper sites that I know"
+    },
+    {
+      "start": 1883.399,
+      "duration": 4.02,
+      "text": "about in the United States so I started"
+    },
+    {
+      "start": 1885.32,
+      "duration": 4.5,
+      "text": "through my list and then I started"
+    },
+    {
+      "start": 1887.419,
+      "duration": 4.98,
+      "text": "working on it more consistently"
+    },
+    {
+      "start": 1889.82,
+      "duration": 5.459,
+      "text": "well eventually I figured out that I had"
+    },
+    {
+      "start": 1892.399,
+      "duration": 5.101,
+      "text": "been off a rather large project which"
+    },
+    {
+      "start": 1895.279,
+      "duration": 4.981,
+      "text": "took me over three months of searching"
+    },
+    {
+      "start": 1897.5,
+      "duration": 5.1,
+      "text": "online and listing newspaper sites in"
+    },
+    {
+      "start": 1900.26,
+      "duration": 4.919,
+      "text": "every single state in the United States"
+    },
+    {
+      "start": 1902.6,
+      "duration": 7.1,
+      "text": "and uh literally hundreds of different"
+    },
+    {
+      "start": 1905.179,
+      "duration": 7.681,
+      "text": "websites that had digital newspapers so"
+    },
+    {
+      "start": 1909.7,
+      "duration": 5.8,
+      "text": "uh it's no way in the world that we can"
+    },
+    {
+      "start": 1912.86,
+      "duration": 4.439,
+      "text": "cover all of the all of the newspaper"
+    },
+    {
+      "start": 1915.5,
+      "duration": 3.779,
+      "text": "sites that are out there and that's why"
+    },
+    {
+      "start": 1917.299,
+      "duration": 4.801,
+      "text": "I suggested"
+    },
+    {
+      "start": 1919.279,
+      "duration": 5.52,
+      "text": "um it's doing Google searches at right"
+    },
+    {
+      "start": 1922.1,
+      "duration": 4.98,
+      "text": "at the beginning and it's easy it's"
+    },
+    {
+      "start": 1924.799,
+      "duration": 4.321,
+      "text": "relatively easy to find the listings of"
+    },
+    {
+      "start": 1927.08,
+      "duration": 4.56,
+      "text": "all these sites because they keep they"
+    },
+    {
+      "start": 1929.12,
+      "duration": 6.24,
+      "text": "just keep going and going so what I was"
+    },
+    {
+      "start": 1931.64,
+      "duration": 6.3,
+      "text": "using as a search was I would put in in"
+    },
+    {
+      "start": 1935.36,
+      "duration": 5.64,
+      "text": "newspaper then I put the word digital"
+    },
+    {
+      "start": 1937.94,
+      "duration": 6.54,
+      "text": "and then I put online and then I put the"
+    },
+    {
+      "start": 1941.0,
+      "duration": 5.34,
+      "text": "state that I was looking for so here if"
+    },
+    {
+      "start": 1944.48,
+      "duration": 4.559,
+      "text": "I was looking for California online"
+    },
+    {
+      "start": 1946.34,
+      "duration": 6.14,
+      "text": "newspapers I would put in"
+    },
+    {
+      "start": 1949.039,
+      "duration": 6.12,
+      "text": "uh newspaper digital online California"
+    },
+    {
+      "start": 1952.48,
+      "duration": 3.78,
+      "text": "and then all of the"
+    },
+    {
+      "start": 1955.159,
+      "duration": 3.721,
+      "text": "the"
+    },
+    {
+      "start": 1956.26,
+      "duration": 5.919,
+      "text": "locations for newspapers that were"
+    },
+    {
+      "start": 1958.88,
+      "duration": 6.12,
+      "text": "online uh from and digitized for"
+    },
+    {
+      "start": 1962.179,
+      "duration": 4.821,
+      "text": "California would come up uh sometimes"
+    },
+    {
+      "start": 1965.0,
+      "duration": 5.88,
+      "text": "I'd have to vary the words a little bit"
+    },
+    {
+      "start": 1967.0,
+      "duration": 6.94,
+      "text": "to get more information uh find a few"
+    },
+    {
+      "start": 1970.88,
+      "duration": 4.86,
+      "text": "more websites but generally they you"
+    },
+    {
+      "start": 1973.94,
+      "duration": 4.739,
+      "text": "know they're pretty much out there"
+    },
+    {
+      "start": 1975.74,
+      "duration": 4.74,
+      "text": "uh once again uh reminding you that they"
+    },
+    {
+      "start": 1978.679,
+      "duration": 5.161,
+      "text": "may be free and they may not be free"
+    },
+    {
+      "start": 1980.48,
+      "duration": 6.0,
+      "text": "they may be a subscription or or a lot"
+    },
+    {
+      "start": 1983.84,
+      "duration": 7.62,
+      "text": "of different varieties of ways charging"
+    },
+    {
+      "start": 1986.48,
+      "duration": 8.699,
+      "text": "per uh even per copy or per view"
+    },
+    {
+      "start": 1991.46,
+      "duration": 6.959,
+      "text": "um this is a sample State newspaper"
+    },
+    {
+      "start": 1995.179,
+      "duration": 4.74,
+      "text": "collection uh California uh digital"
+    },
+    {
+      "start": 1998.419,
+      "duration": 4.801,
+      "text": "newspapers"
+    },
+    {
+      "start": 1999.919,
+      "duration": 4.941,
+      "text": "and these came about as a result of the"
+    },
+    {
+      "start": 2003.22,
+      "duration": 5.1,
+      "text": "Library of Congress"
+    },
+    {
+      "start": 2004.86,
+      "duration": 6.76,
+      "text": "their digital newspaper the chronicling"
+    },
+    {
+      "start": 2008.32,
+      "duration": 5.219,
+      "text": "America digital newspaper project"
+    },
+    {
+      "start": 2011.62,
+      "duration": 4.08,
+      "text": "and what they did was they said well"
+    },
+    {
+      "start": 2013.539,
+      "duration": 4.98,
+      "text": "we'll digitize the papers put them on"
+    },
+    {
+      "start": 2015.7,
+      "duration": 4.979,
+      "text": "the Library of Congress website or we"
+    },
+    {
+      "start": 2018.519,
+      "duration": 5.16,
+      "text": "will provide funding for the states to"
+    },
+    {
+      "start": 2020.679,
+      "duration": 6.061,
+      "text": "set up their own uh state"
+    },
+    {
+      "start": 2023.679,
+      "duration": 5.761,
+      "text": "uh digital newspaper projects so many of"
+    },
+    {
+      "start": 2026.74,
+      "duration": 4.919,
+      "text": "the states have taken advantage of that"
+    },
+    {
+      "start": 2029.44,
+      "duration": 4.859,
+      "text": "funding that was available"
+    },
+    {
+      "start": 2031.659,
+      "duration": 4.74,
+      "text": "and created their own digital newspapers"
+    },
+    {
+      "start": 2034.299,
+      "duration": 3.12,
+      "text": "websites"
+    },
+    {
+      "start": 2036.399,
+      "duration": 3.301,
+      "text": "um"
+    },
+    {
+      "start": 2037.419,
+      "duration": 4.26,
+      "text": "for each of the each of the states so"
+    },
+    {
+      "start": 2039.7,
+      "duration": 5.88,
+      "text": "you need to go back and look through"
+    },
+    {
+      "start": 2041.679,
+      "duration": 7.5,
+      "text": "each State's records so here we have uh"
+    },
+    {
+      "start": 2045.58,
+      "duration": 6.96,
+      "text": "about a million 1.2 million Pages now"
+    },
+    {
+      "start": 2049.179,
+      "duration": 5.94,
+      "text": "the number of pages is it gives you an"
+    },
+    {
+      "start": 2052.54,
+      "duration": 6.42,
+      "text": "idea of the possibility of finding"
+    },
+    {
+      "start": 2055.119,
+      "duration": 6.901,
+      "text": "information but the same rule applies to"
+    },
+    {
+      "start": 2058.96,
+      "duration": 4.8,
+      "text": "any big law uh online database that is"
+    },
+    {
+      "start": 2062.02,
+      "duration": 3.599,
+      "text": "if they have what you're looking for"
+    },
+    {
+      "start": 2063.76,
+      "duration": 3.54,
+      "text": "it's wonderful if they don't have what"
+    },
+    {
+      "start": 2065.619,
+      "duration": 5.881,
+      "text": "you're looking for then doesn't matter"
+    },
+    {
+      "start": 2067.3,
+      "duration": 5.879,
+      "text": "how many pages they have uh so uh the"
+    },
+    {
+      "start": 2071.5,
+      "duration": 3.359,
+      "text": "just because they have that many pages"
+    },
+    {
+      "start": 2073.179,
+      "duration": 4.68,
+      "text": "does not mean they necessarily have"
+    },
+    {
+      "start": 2074.859,
+      "duration": 4.621,
+      "text": "anything about your ancestor and it also"
+    },
+    {
+      "start": 2077.859,
+      "duration": 3.421,
+      "text": "does not mean that when you've looked at"
+    },
+    {
+      "start": 2079.48,
+      "duration": 3.6,
+      "text": "this one website that you've done"
+    },
+    {
+      "start": 2081.28,
+      "duration": 4.68,
+      "text": "anything that that you could call a"
+    },
+    {
+      "start": 2083.08,
+      "duration": 6.599,
+      "text": "complete search of the newspapers for"
+    },
+    {
+      "start": 2085.96,
+      "duration": 5.879,
+      "text": "for California now ultimately"
+    },
+    {
+      "start": 2089.679,
+      "duration": 4.021,
+      "text": "ultimately I'm going to have to say that"
+    },
+    {
+      "start": 2091.839,
+      "duration": 4.08,
+      "text": "regardless we know I understand we're"
+    },
+    {
+      "start": 2093.7,
+      "duration": 3.84,
+      "text": "talking about online digital newspapers"
+    },
+    {
+      "start": 2095.919,
+      "duration": 4.081,
+      "text": "but"
+    },
+    {
+      "start": 2097.54,
+      "duration": 4.799,
+      "text": "um eventually you run out of the of the"
+    },
+    {
+      "start": 2100.0,
+      "duration": 5.46,
+      "text": "digital newspapers you may go through"
+    },
+    {
+      "start": 2102.339,
+      "duration": 5.641,
+      "text": "every every page that's online for for"
+    },
+    {
+      "start": 2105.46,
+      "duration": 5.22,
+      "text": "some specific County or whatever"
+    },
+    {
+      "start": 2107.98,
+      "duration": 4.92,
+      "text": "and it still is a good idea to always"
+    },
+    {
+      "start": 2110.68,
+      "duration": 5.82,
+      "text": "either contact directly or go to the"
+    },
+    {
+      "start": 2112.9,
+      "duration": 5.939,
+      "text": "place and start asking in museums and"
+    },
+    {
+      "start": 2116.5,
+      "duration": 4.68,
+      "text": "local libraries about their newspaper"
+    },
+    {
+      "start": 2118.839,
+      "duration": 4.681,
+      "text": "collections because because these are"
+    },
+    {
+      "start": 2121.18,
+      "duration": 4.74,
+      "text": "very very local newspapers may only"
+    },
+    {
+      "start": 2123.52,
+      "duration": 5.4,
+      "text": "still be sitting in in a pile of paper"
+    },
+    {
+      "start": 2125.92,
+      "duration": 5.52,
+      "text": "someplace in a in a storage room or on a"
+    },
+    {
+      "start": 2128.92,
+      "duration": 5.12,
+      "text": "library shelf someplace in the one of"
+    },
+    {
+      "start": 2131.44,
+      "duration": 2.6,
+      "text": "these libraries"
+    },
+    {
+      "start": 2135.24,
+      "duration": 5.8,
+      "text": "here's another sample this is Illinois"
+    },
+    {
+      "start": 2138.06,
+      "duration": 4.9,
+      "text": "uh understanding this that these"
+    },
+    {
+      "start": 2141.04,
+      "duration": 5.52,
+      "text": "collection this collection of newspapers"
+    },
+    {
+      "start": 2142.96,
+      "duration": 6.72,
+      "text": "of 57 newspaper titles with over a"
+    },
+    {
+      "start": 2146.56,
+      "duration": 4.559,
+      "text": "million pages in in Illinois"
+    },
+    {
+      "start": 2149.68,
+      "duration": 5.7,
+      "text": "is"
+    },
+    {
+      "start": 2151.119,
+      "duration": 7.101,
+      "text": "um is basically in addition to any of"
+    },
+    {
+      "start": 2155.38,
+      "duration": 4.4,
+      "text": "the other websites so if you looked on"
+    },
+    {
+      "start": 2158.22,
+      "duration": 4.56,
+      "text": "in"
+    },
+    {
+      "start": 2159.78,
+      "duration": 6.94,
+      "text": "newspapers.com or newspaperarchives.com"
+    },
+    {
+      "start": 2162.78,
+      "duration": 6.52,
+      "text": "or any of the other large online digital"
+    },
+    {
+      "start": 2166.72,
+      "duration": 6.48,
+      "text": "websites"
+    },
+    {
+      "start": 2169.3,
+      "duration": 6.72,
+      "text": "like news bank that is another one uh"
+    },
+    {
+      "start": 2173.2,
+      "duration": 5.879,
+      "text": "most of the time I they have a a partner"
+    },
+    {
+      "start": 2176.02,
+      "duration": 5.46,
+      "text": "program called genealogy bank that is a"
+    },
+    {
+      "start": 2179.079,
+      "duration": 5.54,
+      "text": "subscription and they have a huge"
+    },
+    {
+      "start": 2181.48,
+      "duration": 6.84,
+      "text": "collection of uh of digital newspapers"
+    },
+    {
+      "start": 2184.619,
+      "duration": 5.74,
+      "text": "but these uh these local sites may have"
+    },
+    {
+      "start": 2188.32,
+      "duration": 4.5,
+      "text": "newspapers and probably do have"
+    },
+    {
+      "start": 2190.359,
+      "duration": 5.22,
+      "text": "newspapers that are not"
+    },
+    {
+      "start": 2192.82,
+      "duration": 5.6,
+      "text": "duplicated in the very large online"
+    },
+    {
+      "start": 2195.579,
+      "duration": 2.841,
+      "text": "websites"
+    },
+    {
+      "start": 2199.06,
+      "duration": 4.14,
+      "text": "and then we have another one here is"
+    },
+    {
+      "start": 2201.579,
+      "duration": 5.401,
+      "text": "Missouri"
+    },
+    {
+      "start": 2203.2,
+      "duration": 5.159,
+      "text": "and the Missouri digital newspaper"
+    },
+    {
+      "start": 2206.98,
+      "duration": 4.5,
+      "text": "project"
+    },
+    {
+      "start": 2208.359,
+      "duration": 5.22,
+      "text": "and that's this as I mentioned earlier"
+    },
+    {
+      "start": 2211.48,
+      "duration": 5.16,
+      "text": "um finding these is simply a matter of"
+    },
+    {
+      "start": 2213.579,
+      "duration": 4.981,
+      "text": "putting in newspaper as a search plus"
+    },
+    {
+      "start": 2216.64,
+      "duration": 2.58,
+      "text": "digital plus"
+    },
+    {
+      "start": 2218.56,
+      "duration": 4.7,
+      "text": "um"
+    },
+    {
+      "start": 2219.22,
+      "duration": 4.04,
+      "text": "online and then the name of the state"
+    },
+    {
+      "start": 2223.56,
+      "duration": 7.059,
+      "text": "now this is one that that's pretty close"
+    },
+    {
+      "start": 2227.14,
+      "duration": 5.82,
+      "text": "to home here in Utah the Utah digital"
+    },
+    {
+      "start": 2230.619,
+      "duration": 3.181,
+      "text": "newspaper project"
+    },
+    {
+      "start": 2232.96,
+      "duration": 2.46,
+      "text": "um"
+    },
+    {
+      "start": 2233.8,
+      "duration": 3.66,
+      "text": "one of the things that's happened in"
+    },
+    {
+      "start": 2235.42,
+      "duration": 4.26,
+      "text": "this news the Utah digital newspaper"
+    },
+    {
+      "start": 2237.46,
+      "duration": 4.26,
+      "text": "project is that it's very very complete"
+    },
+    {
+      "start": 2239.68,
+      "duration": 3.679,
+      "text": "this one was sponsored by the University"
+    },
+    {
+      "start": 2241.72,
+      "duration": 4.56,
+      "text": "of Utah"
+    },
+    {
+      "start": 2243.359,
+      "duration": 5.74,
+      "text": "and it has and through the national"
+    },
+    {
+      "start": 2246.28,
+      "duration": 6.059,
+      "text": "project with the Library of Congress"
+    },
+    {
+      "start": 2249.099,
+      "duration": 5.52,
+      "text": "but this this covers"
+    },
+    {
+      "start": 2252.339,
+      "duration": 5.341,
+      "text": "a very high percentage of all the"
+    },
+    {
+      "start": 2254.619,
+      "duration": 6.0,
+      "text": "newspapers published in Utah since uh"
+    },
+    {
+      "start": 2257.68,
+      "duration": 6.12,
+      "text": "the Europeans began to get here in the"
+    },
+    {
+      "start": 2260.619,
+      "duration": 6.361,
+      "text": "1840s early 1850s"
+    },
+    {
+      "start": 2263.8,
+      "duration": 6.48,
+      "text": "so this is a tremendous resource for"
+    },
+    {
+      "start": 2266.98,
+      "duration": 5.46,
+      "text": "information uh in Utah that the website"
+    },
+    {
+      "start": 2270.28,
+      "duration": 4.68,
+      "text": "works very well"
+    },
+    {
+      "start": 2272.44,
+      "duration": 5.46,
+      "text": "um you can get into this website just by"
+    },
+    {
+      "start": 2274.96,
+      "duration": 4.379,
+      "text": "typing in Utah digital newspapers"
+    },
+    {
+      "start": 2277.9,
+      "duration": 2.1,
+      "text": "and"
+    },
+    {
+      "start": 2279.339,
+      "duration": 3.181,
+      "text": "um"
+    },
+    {
+      "start": 2280.0,
+      "duration": 4.74,
+      "text": "basically"
+    },
+    {
+      "start": 2282.52,
+      "duration": 3.48,
+      "text": "um the interesting here is this is where"
+    },
+    {
+      "start": 2284.74,
+      "duration": 3.599,
+      "text": "I've gotten a lot of the information"
+    },
+    {
+      "start": 2286.0,
+      "duration": 4.74,
+      "text": "about my ancestors is out of this"
+    },
+    {
+      "start": 2288.339,
+      "duration": 4.081,
+      "text": "particular website one one of the things"
+    },
+    {
+      "start": 2290.74,
+      "duration": 4.08,
+      "text": "in the comments that I've had when I've"
+    },
+    {
+      "start": 2292.42,
+      "duration": 4.5,
+      "text": "told people about this is that I say"
+    },
+    {
+      "start": 2294.82,
+      "duration": 4.259,
+      "text": "this is the kind of site uh you know"
+    },
+    {
+      "start": 2296.92,
+      "duration": 4.14,
+      "text": "they'll come back and they'll say"
+    },
+    {
+      "start": 2299.079,
+      "duration": 3.661,
+      "text": "I wish you hadn't told me about that I"
+    },
+    {
+      "start": 2301.06,
+      "duration": 4.62,
+      "text": "spent my whole week reading all those"
+    },
+    {
+      "start": 2302.74,
+      "duration": 5.7,
+      "text": "old newspapers it was just a kick all of"
+    },
+    {
+      "start": 2305.68,
+      "duration": 4.98,
+      "text": "the things is there so you really you"
+    },
+    {
+      "start": 2308.44,
+      "duration": 5.1,
+      "text": "know you really have to uh you know"
+    },
+    {
+      "start": 2310.66,
+      "duration": 6.419,
+      "text": "understand that these there is a lot of"
+    },
+    {
+      "start": 2313.54,
+      "duration": 5.819,
+      "text": "information here and it may have even"
+    },
+    {
+      "start": 2317.079,
+      "duration": 4.621,
+      "text": "overwhelming on the other hand it's just"
+    },
+    {
+      "start": 2319.359,
+      "duration": 4.021,
+      "text": "like I said it's sort of a can be boom"
+    },
+    {
+      "start": 2321.7,
+      "duration": 3.84,
+      "text": "or bust you could be in the situation"
+    },
+    {
+      "start": 2323.38,
+      "duration": 4.56,
+      "text": "where you could search through all these"
+    },
+    {
+      "start": 2325.54,
+      "duration": 5.039,
+      "text": "different newspaper projects and still"
+    },
+    {
+      "start": 2327.94,
+      "duration": 4.86,
+      "text": "not find any mention of your ancestors"
+    },
+    {
+      "start": 2330.579,
+      "duration": 4.081,
+      "text": "maybe your guys were very good at"
+    },
+    {
+      "start": 2332.8,
+      "duration": 3.6,
+      "text": "avoiding uh they're getting their names"
+    },
+    {
+      "start": 2334.66,
+      "duration": 3.6,
+      "text": "in the newspapers"
+    },
+    {
+      "start": 2336.4,
+      "duration": 4.62,
+      "text": "now there are a lot of specialty"
+    },
+    {
+      "start": 2338.26,
+      "duration": 5.4,
+      "text": "newspaper collections these are usually"
+    },
+    {
+      "start": 2341.02,
+      "duration": 5.579,
+      "text": "associated with University library or a"
+    },
+    {
+      "start": 2343.66,
+      "duration": 4.98,
+      "text": "university uh some kind of a university"
+    },
+    {
+      "start": 2346.599,
+      "duration": 4.681,
+      "text": "Department sometimes the communications"
+    },
+    {
+      "start": 2348.64,
+      "duration": 4.8,
+      "text": "or journalism Department"
+    },
+    {
+      "start": 2351.28,
+      "duration": 5.76,
+      "text": "and in this case there was a Portuguese"
+    },
+    {
+      "start": 2353.44,
+      "duration": 6.12,
+      "text": "American digital newspaper so uh it's"
+    },
+    {
+      "start": 2357.04,
+      "duration": 5.64,
+      "text": "it's also helpful this is the University"
+    },
+    {
+      "start": 2359.56,
+      "duration": 4.559,
+      "text": "of Massachusetts at Dartmouth that"
+    },
+    {
+      "start": 2362.68,
+      "duration": 5.72,
+      "text": "um"
+    },
+    {
+      "start": 2364.119,
+      "duration": 4.281,
+      "text": "has this particular collection online"
+    },
+    {
+      "start": 2369.3,
+      "duration": 4.18,
+      "text": "sometimes with the university"
+    },
+    {
+      "start": 2371.38,
+      "duration": 5.1,
+      "text": "collections if they have a special"
+    },
+    {
+      "start": 2373.48,
+      "duration": 5.82,
+      "text": "collection department in their library"
+    },
+    {
+      "start": 2376.48,
+      "duration": 4.859,
+      "text": "that they they may have used that that"
+    },
+    {
+      "start": 2379.3,
+      "duration": 3.9,
+      "text": "part of the library to"
+    },
+    {
+      "start": 2381.339,
+      "duration": 3.721,
+      "text": "um to put this type of information"
+    },
+    {
+      "start": 2383.2,
+      "duration": 3.899,
+      "text": "online"
+    },
+    {
+      "start": 2385.06,
+      "duration": 5.34,
+      "text": "and um"
+    },
+    {
+      "start": 2387.099,
+      "duration": 4.621,
+      "text": "in these cases once again sometimes"
+    },
+    {
+      "start": 2390.4,
+      "duration": 3.24,
+      "text": "they're free"
+    },
+    {
+      "start": 2391.72,
+      "duration": 4.32,
+      "text": "sometimes they're free but they're only"
+    },
+    {
+      "start": 2393.64,
+      "duration": 4.14,
+      "text": "accessible through the University's"
+    },
+    {
+      "start": 2396.04,
+      "duration": 4.44,
+      "text": "computers in other words you have to be"
+    },
+    {
+      "start": 2397.78,
+      "duration": 5.94,
+      "text": "on the campus or in the library to to"
+    },
+    {
+      "start": 2400.48,
+      "duration": 6.24,
+      "text": "gain access to the to these particular"
+    },
+    {
+      "start": 2403.72,
+      "duration": 5.399,
+      "text": "records it it depends on the the"
+    },
+    {
+      "start": 2406.72,
+      "duration": 4.02,
+      "text": "conditions that have been imposed by"
+    },
+    {
+      "start": 2409.119,
+      "duration": 4.881,
+      "text": "whoever it is that supplied the"
+    },
+    {
+      "start": 2410.74,
+      "duration": 3.26,
+      "text": "information to the university"
+    },
+    {
+      "start": 2414.22,
+      "duration": 5.879,
+      "text": "uh I mentioned my article and this is"
+    },
+    {
+      "start": 2417.099,
+      "duration": 5.341,
+      "text": "genealogy star and if you look under uh"
+    },
+    {
+      "start": 2420.099,
+      "duration": 4.681,
+      "text": "my name or you put in genealogy star and"
+    },
+    {
+      "start": 2422.44,
+      "duration": 5.22,
+      "text": "then you put digital newspapers it'll"
+    },
+    {
+      "start": 2424.78,
+      "duration": 5.22,
+      "text": "take you right to the long list that I"
+    },
+    {
+      "start": 2427.66,
+      "duration": 4.32,
+      "text": "spent three months compiling of all the"
+    },
+    {
+      "start": 2430.0,
+      "duration": 3.78,
+      "text": "digital newspapers that were the"
+    },
+    {
+      "start": 2431.98,
+      "duration": 3.48,
+      "text": "websites that I could find in the United"
+    },
+    {
+      "start": 2433.78,
+      "duration": 3.24,
+      "text": "States"
+    },
+    {
+      "start": 2435.46,
+      "duration": 3.659,
+      "text": "um sorry if some of them have gone out"
+    },
+    {
+      "start": 2437.02,
+      "duration": 5.7,
+      "text": "of business in the last year"
+    },
+    {
+      "start": 2439.119,
+      "duration": 6.061,
+      "text": "and maybe some more have come online"
+    },
+    {
+      "start": 2442.72,
+      "duration": 5.66,
+      "text": "um no plans right now to update the"
+    },
+    {
+      "start": 2445.18,
+      "duration": 7.26,
+      "text": "project it took too long"
+    },
+    {
+      "start": 2448.38,
+      "duration": 4.979,
+      "text": "the answer here folks is to keep looking"
+    },
+    {
+      "start": 2452.44,
+      "duration": 3.96,
+      "text": "um"
+    },
+    {
+      "start": 2453.359,
+      "duration": 5.321,
+      "text": "it is it is virtually impossible and one"
+    },
+    {
+      "start": 2456.4,
+      "duration": 5.219,
+      "text": "of the things I like to say in a lot of"
+    },
+    {
+      "start": 2458.68,
+      "duration": 4.86,
+      "text": "classes when I look around at the at the"
+    },
+    {
+      "start": 2461.619,
+      "duration": 4.441,
+      "text": "people in tenants and I say none of us"
+    },
+    {
+      "start": 2463.54,
+      "duration": 3.96,
+      "text": "even if you're a lot younger than I am"
+    },
+    {
+      "start": 2466.06,
+      "duration": 3.0,
+      "text": "none of us are going to live long enough"
+    },
+    {
+      "start": 2467.5,
+      "duration": 3.66,
+      "text": "to look everywhere"
+    },
+    {
+      "start": 2469.06,
+      "duration": 4.019,
+      "text": "so we can just keep looking and we'll"
+    },
+    {
+      "start": 2471.16,
+      "duration": 4.86,
+      "text": "keep finding more information about our"
+    },
+    {
+      "start": 2473.079,
+      "duration": 5.941,
+      "text": "ancestors but I I would recommend that"
+    },
+    {
+      "start": 2476.02,
+      "duration": 6.24,
+      "text": "digital newspaper projects around the"
+    },
+    {
+      "start": 2479.02,
+      "duration": 6.18,
+      "text": "world have now been created that will"
+    },
+    {
+      "start": 2482.26,
+      "duration": 5.64,
+      "text": "provide a huge amount of information now"
+    },
+    {
+      "start": 2485.2,
+      "duration": 4.68,
+      "text": "as a kind of a coda the end of the"
+    },
+    {
+      "start": 2487.9,
+      "duration": 3.3,
+      "text": "little add-on here at the end of the"
+    },
+    {
+      "start": 2489.88,
+      "duration": 3.42,
+      "text": "broadcast"
+    },
+    {
+      "start": 2491.2,
+      "duration": 5.46,
+      "text": "what I would what I would point out is"
+    },
+    {
+      "start": 2493.3,
+      "duration": 5.7,
+      "text": "that that nationally internationally uh"
+    },
+    {
+      "start": 2496.66,
+      "duration": 4.919,
+      "text": "there are a lot of countries that are"
+    },
+    {
+      "start": 2499.0,
+      "duration": 4.4,
+      "text": "involved in preserving what they call"
+    },
+    {
+      "start": 2501.579,
+      "duration": 4.621,
+      "text": "their National Heritage through"
+    },
+    {
+      "start": 2503.4,
+      "duration": 6.1,
+      "text": "digitizing their newspapers"
+    },
+    {
+      "start": 2506.2,
+      "duration": 7.02,
+      "text": "so in places like Netherlands uh even"
+    },
+    {
+      "start": 2509.5,
+      "duration": 6.72,
+      "text": "some Germany countries like Germany uh"
+    },
+    {
+      "start": 2513.22,
+      "duration": 5.28,
+      "text": "England uh France uh many of these"
+    },
+    {
+      "start": 2516.22,
+      "duration": 3.78,
+      "text": "countries today are involved it's even"
+    },
+    {
+      "start": 2518.5,
+      "duration": 3.839,
+      "text": "some of the smaller countries of the"
+    },
+    {
+      "start": 2520.0,
+      "duration": 5.16,
+      "text": "world are involved in digitizing their"
+    },
+    {
+      "start": 2522.339,
+      "duration": 6.121,
+      "text": "newspapers so if you keep looking online"
+    },
+    {
+      "start": 2525.16,
+      "duration": 6.9,
+      "text": "that you should be able to find uh the"
+    },
+    {
+      "start": 2528.46,
+      "duration": 6.42,
+      "text": "access some way or another to uh to"
+    },
+    {
+      "start": 2532.06,
+      "duration": 6.24,
+      "text": "large newspaper collections in most of"
+    },
+    {
+      "start": 2534.88,
+      "duration": 5.58,
+      "text": "the uh most of the larger online company"
+    },
+    {
+      "start": 2538.3,
+      "duration": 4.92,
+      "text": "countries of the world"
+    },
+    {
+      "start": 2540.46,
+      "duration": 6.06,
+      "text": "thanks for watching uh for listening and"
+    },
+    {
+      "start": 2543.22,
+      "duration": 5.94,
+      "text": "or watching and tune in next time for"
+    },
+    {
+      "start": 2546.52,
+      "duration": 5.64,
+      "text": "another webinar our schedule for"
+    },
+    {
+      "start": 2549.16,
+      "duration": 5.959,
+      "text": "webinars at BYU family history library"
+    },
+    {
+      "start": 2552.16,
+      "duration": 6.78,
+      "text": "is on our BYU family history Library"
+    },
+    {
+      "start": 2555.119,
+      "duration": 7.0,
+      "text": "webpage with a link to the schedules"
+    },
+    {
+      "start": 2558.94,
+      "duration": 6.24,
+      "text": "coming up in the next couple of months"
+    },
+    {
+      "start": 2562.119,
+      "duration": 7.5,
+      "text": "the videos are also all of these"
+    },
+    {
+      "start": 2565.18,
+      "duration": 7.679,
+      "text": "webinars are also being uh recorded and"
+    },
+    {
+      "start": 2569.619,
+      "duration": 5.641,
+      "text": "will be available on that on the BYU"
+    },
+    {
+      "start": 2572.859,
+      "duration": 4.861,
+      "text": "family history Library website and also"
+    },
+    {
+      "start": 2575.26,
+      "duration": 6.54,
+      "text": "on the BYU family history Library"
+    },
+    {
+      "start": 2577.72,
+      "duration": 6.66,
+      "text": "YouTube page at youtube.com to search"
+    },
+    {
+      "start": 2581.8,
+      "duration": 5.18,
+      "text": "for BYU family history Library thank you"
+    },
+    {
+      "start": 2584.38,
+      "duration": 2.6,
+      "text": "for watching"
+    }
+  ],
+  "full_text": "welcome to the Brigham Young University family history Library webinar series feel free to use the chat box for any questions if we're unable to get to them during the presentation we will answer them at the end my name is Braden Knutson I will be your host for this webinar today we will be pleased to hear from James Tanner who will be giving a presentation titled online digital newspaper sources James Tanner has a bachelor's degree in Spanish and a master's degree in linguistics from the University of Utah he received a Juris doctorate degree in law at Arizona State University he served for two years as an intelligence analyst for the U.S army and 39 years as an Arizona trial attorney he has previously owned a retail computer business in an Apple Macintosh software company James has over 32 years experience in genealogical research and is an avid blogger of genealogy star blog and rejoiced and be exceedingly glad he served for 10 years as a missionary at the Mesa Arizona family search library and is currently serving at the BYU family history Library he has presented at expos in conferences around the U.S in Canada James has seven children and 33 grandchildren we are online we're trying to talk about online digital newspaper sources now one of the things that um interesting about this particular topic is that very commonly I will talk to people who have come to me and they'll say the same kind of formulaic thing that they say to me when they're when they haven't when they've reached some point they can't find what they're looking for um it goes something like this they'll come and they'll say oh um I I need some help finding my great great whoever great grandfather and we've been looking for him for years and we've looked everywhere in fact we even hired a professional genealogist to look for him and I always say well yeah why did you come to me no I don't say that but I do say um oh you've looked everywhere have you oh well I have a lot of standard responses to that but one of them that I would say is very applicable here is that have you read the newspapers and they'll say newspapers L like that and it's sort of an idea that that doesn't really uh hasn't really gotten into this mainstream of of genealogical resources to understand that um for the past uh 300 years newspapers have been published in America and now the United States and in all the in other countries of the world and these newspapers have been stacked up and accumulating and are presently in the process of being digitized so we're going to talk about where to find these newspapers and what kinds of sources that that you can find to get to get into them um first of all we need to understand a little bit about searching on the end on the internet because newspapers are generally held in some kind of a repository archive large online database program or whatever first of all there's there's difference when you're searching on the web between static and dynamic pages a static page is like what you're looking at when you go on to any of the websites and a bunch of text comes up on the screen and you can search and you search in a Google Search and you find uh you know a movie or a store or a doctor whatever you're looking for those are static websites meaning that the information is posted onto a web page and it's searchable by a search engine like Google a dynamic web page on the other hand is maintained behind a firewall that means that the Google search engine can't get access to that information directly the information is only made available when a search is made in the database and then put on the web and then it disappears and the common thing for example is if you go to a library catalog and you go to look up a book when you look up a book in the library catalog the library catalog goes to their their computer their hard drive finds the book you're looking for displays it on the screen and when you either copy down the information or go find the book then that disappears and it's no longer online uh in very frequently those that particular database will not be available to um to a Google search so if you did a Google search for that same book in that same Library the the computer would not find it the search engine would not find it so what we're what we're looking at here when we're talking about having large online databases of newspapers is that you actually have to go to each individual Catalog online so what you're doing when you're looking for newspapers and online digital newspapers meaning newspapers that have been scanned into a database and available to be viewed online that but that particular type of of a website is where you're going to be looking for the websites rather than for individual newspaper articles or searching for the name of your ancestor so you could search all day on the internet on Google for the for your ancestors name and he may be in a thousand newspaper articles but they would never show up online so we need to uh to understand there's that that you really do have to go to each of these websites and do a search with their search engine on their website in order to see if they have the information that you need uh next big point is free versus subscription um we all like free it sounds good um there are some very very large free sites out there that have a lot of newspapers but by and large newspapers are commercial Enterprises and even if the newspaper publishing company is still in effect then a lot of the newspaper uh is is copyrighted so what you're going to have is a situation where they're not going to want to allow people to look at their newspaper archives without receiving compensation and even if they allow a large online database to look at their or have their newspapers available they'll probably want some kind of a payment for that for having that access so by and large the largest and the most available newspaper websites the ones that have huge collections are all subscription websites so you just kind of have to understand that that's the reality of the situation now there are lots and lots of free websites out there there's another issue here one is that um we're getting used to in genealogy we're getting used to having four large online websites family search myheritage ancestry find my past and a lot of other large other large websites out there that have information uh what is the the State of Affairs in uh with newspapers is that they're scattered all over the world in a lot of little websites so you have oh depending on the state you have anywhere from uh half a dozen to maybe 20 or 30 different websites hosting different newspapers uh some for by subscription some for free and it begins to be a real task to discover where these particular newspaper Holdings are being kept online now first of all um notwithstanding what I said about the static versus Dynamic it is worth your worth your trouble to search Google and Wikipedia for newspaper titles now the concept here is that as you're doing research for your ancestor the process that you're going to go through generally is to try to locate a place where a specific a specific place where a specific event occurred in your ancestors life uh be that a birth death marriage uh sale of a piece of property uh getting arrested whatever it is that they've that's happened to that person and um for and because of that once you have a location then you can use uh the location to find what newspapers may have been available at the time and place that that event occurred so here's here's the the situation let's suppose we're looking for a marriage um now marriage records uh are usually kept by some type of government agency sometimes by Churches uh sometimes in in other kinds of Records land and property records may have evidence of marriages there's lots of different places to go search for a marriage but one of those primary ones is newspapers because newspapers report in the news in the news generally includes who got married um and so if you're looking in the newspapers during at the place where the marriage may have occurred then you need to know which newspapers may have been available at that time so there's some and we'll get to this in a minute uh there's some places where you can go to get lists of all the newspapers that have been published in a certain area at a certain time and so you can use these General online uh searches searches through Google and uh the references that are in Wikipedia to find out information about about the newspapers themselves excuse me now when we're talking about digital newspapers we're talking about newspapers not the paper but the paper has had a an image made through a scanner that has transferred that the photograph the image of that newspaper page onto a uh into a file format that can be read by a computer and then searched most of the larger digital newspaper websites have what have have used what is called optical character recognition or OCR to read through all of the articles in the newspaper and make the text available online for to be searched by their search engine so when you start searching in the newspapers you may find if you've got a common name an ancestor with a very common name you may find thousands of references to to John Smith this and that and you're going to have to spend additional time uh refining your searches or being more specific about the places and Associated things that may have occurred in your ancestors life to differentiate that ancestor from all the other people with the same or similar name okay so I'm going to give an example of what kind of of things you might find in a newspaper that are quite uh may be surprising some of them may be disturbing I uh I debated whether to read this article or part of this article uh into this webinar but I decided that it wasn't suitable for younger audiences so I would probably not not do that but this is an interesting kind of thing that would show up in a newspaper that you may never have found in any other way this is a story about one of my uh one of my relatives up in Flagstaff Arizona and uh he came back from being in uh in the war in uh World War one and had what we would call today um uh battle fatigue or or uh flashbacks or or uh whatever they call syndromes that uh you get when you get fired in a war and uh unfortunately he uh he came into Flagstaff on his horse and then wandered off and it was discovered after a few days that he was missing and that there was no way they didn't know where he was or what had happened to him well the sheriff in Flagstaff decided that he was going to find this person and so he employed two um Native Americans a Hopi Indian and a Navajo Indian to help him track down the um the the young man and so they went out in the desert but meanwhile it had rained and so it made a little difficult to follow any kind of a trail and it had been a few days since he disappeared and they they didn't find anything and as a matter of fact when both of the Indians figured out that they were looking for somebody who might be a dead man they decided they didn't want to do that so they quit the sheriff went back to uh to Flagstaff and he uh he asked around and found a a Tracker and so he had implied this man as a Tracker and now you'd gone out and it was about a week and a half or two or so after after the uh um the young man had disappeared and they went out to the last in the direction that they'd gone and pretty soon the tracker kind of picked up a bit of a trail and they found the man's horse and it was sort of tied up to a bush and they got the horse loose because the horse wasn't in too good of shape after that sitting out there for a long time so uh then he got down the tracker got down and the story this is this all in this newspaper story this whole thing is in this newspaper story he gets down on the ground and he starts crawling around on the ground and pretty soon he picks up a trail and he starts falling this trail out across the desert and you have to imagine this in Flagstaff Arizona which is high Plateau up above around six seven thousand feet and it's just desert I mean it's just absolutely Barren desert and he's following this this Trail often across the desert he goes for about two or three miles across the desert and they find the body of the man that that died apparently suicide but uh the remarkable thing was this tracker who after all more than a week or so after a rainstorm and all sorts of other things could track this guy across the plateau so we've uh you know it was kind of an interesting story unfortunate uh ending to it but this is the kind of thing for example my great grandfather great great grandfather uh there's an article in the uh in the newspaper in Beaver Utah about the fact that he got all of his wash stolen off the line I mean you never know what they're going to come and and there was there was not a lot of stuff happening in these small towns across the United States and the amazing things reported every time somebody came into town they would report it every time a visitor came in uh any visitors any relatives uh anybody had a baby anybody got married uh anything happened somebody got sick it's all there in the newspapers and uh so it's it's but it's interesting that we now have ability to search some of these newspapers because the ones that have been digitized you can search uh some of the websites have uh the ability to actually highlight any search term so you can go right to the Articles and see where the where the news is others just give you the news page and then you have to sit there and read the whole page to figure out which where your guy has mentioned so it may be very difficult to take a little bit of time okay well we're going to start off with the Library of Congress and uh I mentioned that there was a way of determining which newspapers had been printed in any particular place in the United States and this is this is the U.S newspaper directory 1690 to the present this is free it's Loc dot gov l o c dot gov and that is the Library of Congress the U.S newspaper directory is in the chronicling America digital newspaper project and they have over 10 million Pages completely searchable word for word uh for free online from the Library of Congress so this is where I would usually start because Nay it's when it's free and it they have a very good search engine you can put in uh exact words on their advanced search and come up with the names of your people and I've had some very good results in finding uh some interesting articles uh about my ancestors from the Library of Congress the U.S newspapers directory uh goes back as it says to 1690 and in that what it does is it gives you the ability to search through a state and a county and what I usually do is when someone is looking for um a newspaper article about their ancestor I'll say well where'd they live and we'll finally come up with a county and I'll say okay the time period involved and so then we would look in the U.S newspaper directory and we put in the name of the state and the county and you immediate and you get a list back of all the newspapers that were printed in that county ever and the the advantage of that is that it tells you all the newspapers the disadvantage is most of the people look at the list and sometimes they're 60 or 70 or 80 newspapers that have been published in that one County and you go through and find that maybe there's 10 or 15 that were being published at the time that your people lived in the county and my answer is go read the newspapers and they say well what do you mean read the newspapers I said yeah I mean start on page one and read the newspapers every one of the pages and they go you're kidding and I said no I'm not kidding that's exactly what the process is it's it's called reading the newspapers just go through and you read for Content you try to find anything about your ancestor that may be in the paper now that's what happens when the papers are on microfilm so if you have to read a microfilm copy then you are basically in the in the process of reading the newspaper now that it becomes interestingly enough it becomes a very good incentive to do good genealogical research because if you know when they got married then it's pretty easy to get to the newspaper that you're looking for and find the date and maybe a week or two before and after for announcements and whatever you can get to that information but if you just have kind of a vague idea that they may have lived in this County you've got a lot of pages to read and you but the answer is now going back to my original example when they come in and say I we've looked everywhere and my answer is after I've shown them the list of 30 or 40 newspapers to say Oh you mean you've read every one of these newspapers all the way through and they go what are you talking about I said well you said everywhere and that would include all of these newspapers so that that's the the key here is that it is a it's a great Boon to us a benefit to the news to the genealogical researcher to have digitized newspapers that have been uh been had all their characters read through optical character recognition because then we can sort of short make a shortcut and not have to go through and read every single page of every single newspaper and I kept mentioned I just remembered another good example of some things that were pretty uh unusual my wife for example we went out and looked for her father we just stuck his name into one of the big databases and came up with a uh an article a whole bunch of articles in fact it looked like once once a week there was an article about him in the Ogden examiner up in Ogden Utah and uh so we found the paper and searched all over the page we couldn't find out what it was but we found it in little advertisement for radio station that he was he and her brother were on the radio every Wednesday night he played the accordion and his brother played the guitar and so they had a little announcement in the newspaper every week about this radio show they were doing and my wife was saying I never knew that I had no idea that's what he did so you find all sorts of things that you're uh uh you know you're not looking for you might find like I have on occasion that a few of my ancestors ended up in court on a various criminal charges but that's that's just the one of the benefits of doing genealogical research Okay so one of the things that happened a few years ago was that Google Google did two things one is they they had a goal of digitizing every book every published and then they had a goal they decided to expand that to digitizing every newspaper well books or books but newspapers turned out to be a real real challenge the reason why we have so many different online websites and so many different places where newspapers are kept is just because of the nature of the newspaper it's also extremely difficult to get what you call full runs or all of the additions of a specific newspaper um a lot of times there's those only place that they were kept would been would have been in a in a local library that where the librarian just piled the newspapers up as they came in and and had a big pile of newspapers well you're going to go in there and and make sure you've got the whole thing Incorrect and then you know in order and correct and everything and then you're going to take these very large sheets of paper and scan them into a computer uh it's quite a challenge well after a few years of trying to do this Google just said okay well we're not doing that anymore but they did end up with a very large collection of newspapers online and if you go to Google newspaper archive and just do a search on Google for the newspapers you'll come up with their directory for the additions that they have and once again we're back to the situation where you need to know where your ancestors where an event occurred in your ancestors life and you need to be able to localize it and get it to the point where you know which newspapers now here's the here's the kind of good news bad news about that situation the good news is is if you find out that they were married or they died or whatever happened to their lives in a specific location and you search the newspapers and you search the local newspapers that may be you may think well a great pat yourself on the back you've done a great job and the answer is you haven't even begun starting for example that great great grandfather that I mentioned in Beaver Utah which is uh not really Southern Utah more in Central Utah but it's a little tiny Town out on the now it's on the freeway well he didn't have a freeway back when he lived there he would have liked it I'm sure but he did they didn't have the freeway but the his his death notices his obituaries and death notices ended up in the newspapers in Salt Lake and Ogden uh 300 miles north so you can't really uh you know you really can't uh stop looking just because you've identified the specific place you really have to think in terms of regional newspapers and that might have picked up a story from a Small Town Newspaper and republished it okay so Google gives you a pretty good one now one of the largest online newspaper archives today is called newspaperarchive.com and it is owned by myheritage or at least licensed by my Heritage and they have over 140 million uh Records meaning 140 million pages of newspaper compared that to the 10 million pages in The Net in the Library of Congress for example so it's more than uh 10 times as many newspaper pages and so when you have this huge collection you can do uh you can keep searching the advantage of course of myheritage is that if you if you have a this is a subscription website if you have a subscription you can put your uh pedigree on there your your file uh your family file and they will automatically search all these newspapers for you and provide you with record matches uh or record hints that tell you that you have a newspaper article about your ancestor and this is really one of the more surprising things that people find when they uh when they're involved with myheritage is they get all this information out of the newspapers that they didn't know existed so this is one of the more um one of the very active newspaper archives uh elephind is another huge online newspaper website actually this particular company is in New Zealand and they have over uh two million 745 000 newspapers that's not Pages that's the number of newspapers they have and uh over 2 000 different newspaper titles indexed on there on their website and then we have the uh granddaddy of all websites on the internet um probably the largest of one uh website with more digitized pages and digital information than any other website that we that I'm aware of and that's trove dot nla.gov dot a u this is the National Library of Australia it's governmental the Australian governmental um National Library and they at the time I did this slide they had 472 million almost 473 million digitized items in their vast resources uh one of the one of the comments that I always get back when I mentioned Trove is that well they're in Australia and they say well I don't have any family in Australia and I say well where did your family come from and they say well you know England Great Britain Western Europe and I say well where do you think the people in Australia came from and they say well probably the same place and I said yeah and they're probably got your relatives there in Australia and you just don't know it and um so that's the case and and plus the fact when you get a website that that's that is this big now good news bad news about this one is that most of this is is available for free and readily accessible uh some of the content is not available um it's a separate subscription so if you have a a subscription to find my pass that does not automatically get you a subscription to the British newspaper archive um and they have another 13 and a half million pages of of information all the numbers that I quote here are are definitely approximate because the numbers of uh as they they're continually digitizing additional newspapers so the numbers are going to go up on every one of these second okay and of course we have some here at home here at BYU family history Library we have a huge Bank of of cabinets and we also have uh through the computers here in the library we have access to a number of these large online digital newspapers um I think I've I don't think I mentioned ancestry.com ancestry.com has quite a few newspapers in ancestry but they also have their newspapers.com website where they have a huge collection online um I I you know I this is kind of an interesting situation because uh in doing a a webinar on a subject like digital newspapers it's it's it's sort of a balance uh you could simply sit here for an entire hour and and give you slide after slide of newspaper sites um and I'm going to have a reference to a list that I did uh last year um I was I thought about it and I thought well I'm just going to list all the newspaper digital newspaper sites that I know about in the United States so I started through my list and then I started working on it more consistently well eventually I figured out that I had been off a rather large project which took me over three months of searching online and listing newspaper sites in every single state in the United States and uh literally hundreds of different websites that had digital newspapers so uh it's no way in the world that we can cover all of the all of the newspaper sites that are out there and that's why I suggested um it's doing Google searches at right at the beginning and it's easy it's relatively easy to find the listings of all these sites because they keep they just keep going and going so what I was using as a search was I would put in in newspaper then I put the word digital and then I put online and then I put the state that I was looking for so here if I was looking for California online newspapers I would put in uh newspaper digital online California and then all of the the locations for newspapers that were online uh from and digitized for California would come up uh sometimes I'd have to vary the words a little bit to get more information uh find a few more websites but generally they you know they're pretty much out there uh once again uh reminding you that they may be free and they may not be free they may be a subscription or or a lot of different varieties of ways charging per uh even per copy or per view um this is a sample State newspaper collection uh California uh digital newspapers and these came about as a result of the Library of Congress their digital newspaper the chronicling America digital newspaper project and what they did was they said well we'll digitize the papers put them on the Library of Congress website or we will provide funding for the states to set up their own uh state uh digital newspaper projects so many of the states have taken advantage of that funding that was available and created their own digital newspapers websites um for each of the each of the states so you need to go back and look through each State's records so here we have uh about a million 1.2 million Pages now the number of pages is it gives you an idea of the possibility of finding information but the same rule applies to any big law uh online database that is if they have what you're looking for it's wonderful if they don't have what you're looking for then doesn't matter how many pages they have uh so uh the just because they have that many pages does not mean they necessarily have anything about your ancestor and it also does not mean that when you've looked at this one website that you've done anything that that you could call a complete search of the newspapers for for California now ultimately ultimately I'm going to have to say that regardless we know I understand we're talking about online digital newspapers but um eventually you run out of the of the digital newspapers you may go through every every page that's online for for some specific County or whatever and it still is a good idea to always either contact directly or go to the place and start asking in museums and local libraries about their newspaper collections because because these are very very local newspapers may only still be sitting in in a pile of paper someplace in a in a storage room or on a library shelf someplace in the one of these libraries here's another sample this is Illinois uh understanding this that these collection this collection of newspapers of 57 newspaper titles with over a million pages in in Illinois is um is basically in addition to any of the other websites so if you looked on in newspapers.com or newspaperarchives.com or any of the other large online digital websites like news bank that is another one uh most of the time I they have a a partner program called genealogy bank that is a subscription and they have a huge collection of uh of digital newspapers but these uh these local sites may have newspapers and probably do have newspapers that are not duplicated in the very large online websites and then we have another one here is Missouri and the Missouri digital newspaper project and that's this as I mentioned earlier um finding these is simply a matter of putting in newspaper as a search plus digital plus um online and then the name of the state now this is one that that's pretty close to home here in Utah the Utah digital newspaper project um one of the things that's happened in this news the Utah digital newspaper project is that it's very very complete this one was sponsored by the University of Utah and it has and through the national project with the Library of Congress but this this covers a very high percentage of all the newspapers published in Utah since uh the Europeans began to get here in the 1840s early 1850s so this is a tremendous resource for information uh in Utah that the website works very well um you can get into this website just by typing in Utah digital newspapers and um basically um the interesting here is this is where I've gotten a lot of the information about my ancestors is out of this particular website one one of the things in the comments that I've had when I've told people about this is that I say this is the kind of site uh you know they'll come back and they'll say I wish you hadn't told me about that I spent my whole week reading all those old newspapers it was just a kick all of the things is there so you really you know you really have to uh you know understand that these there is a lot of information here and it may have even overwhelming on the other hand it's just like I said it's sort of a can be boom or bust you could be in the situation where you could search through all these different newspaper projects and still not find any mention of your ancestors maybe your guys were very good at avoiding uh they're getting their names in the newspapers now there are a lot of specialty newspaper collections these are usually associated with University library or a university uh some kind of a university Department sometimes the communications or journalism Department and in this case there was a Portuguese American digital newspaper so uh it's it's also helpful this is the University of Massachusetts at Dartmouth that um has this particular collection online sometimes with the university collections if they have a special collection department in their library that they they may have used that that part of the library to um to put this type of information online and um in these cases once again sometimes they're free sometimes they're free but they're only accessible through the University's computers in other words you have to be on the campus or in the library to to gain access to the to these particular records it it depends on the the conditions that have been imposed by whoever it is that supplied the information to the university uh I mentioned my article and this is genealogy star and if you look under uh my name or you put in genealogy star and then you put digital newspapers it'll take you right to the long list that I spent three months compiling of all the digital newspapers that were the websites that I could find in the United States um sorry if some of them have gone out of business in the last year and maybe some more have come online um no plans right now to update the project it took too long the answer here folks is to keep looking um it is it is virtually impossible and one of the things I like to say in a lot of classes when I look around at the at the people in tenants and I say none of us even if you're a lot younger than I am none of us are going to live long enough to look everywhere so we can just keep looking and we'll keep finding more information about our ancestors but I I would recommend that digital newspaper projects around the world have now been created that will provide a huge amount of information now as a kind of a coda the end of the little add-on here at the end of the broadcast what I would what I would point out is that that nationally internationally uh there are a lot of countries that are involved in preserving what they call their National Heritage through digitizing their newspapers so in places like Netherlands uh even some Germany countries like Germany uh England uh France uh many of these countries today are involved it's even some of the smaller countries of the world are involved in digitizing their newspapers so if you keep looking online that you should be able to find uh the access some way or another to uh to large newspaper collections in most of the uh most of the larger online company countries of the world thanks for watching uh for listening and or watching and tune in next time for another webinar our schedule for webinars at BYU family history library is on our BYU family history Library webpage with a link to the schedules coming up in the next couple of months the videos are also all of these webinars are also being uh recorded and will be available on that on the BYU family history Library website and also on the BYU family history Library YouTube page at youtube.com to search for BYU family history Library thank you for watching",
+  "attempts": [
+    {
+      "client": "IOS",
+      "playability": {
+        "status": "OK",
+        "playableInEmbed": true,
+        "offlineability": {
+          "buttonRenderer": {
+            "navigationEndpoint": {
+              "clickTrackingParams": "CAkQ6ewBIhMIhvz4iOzblwMV0E5MCB0TqiUfygEENM8cyg==",
+              "ypcGetOfflineUpsellEndpoint": {
+                "params": "CiXqqN25AR8KCzFQdGwxdTZ3Um9ZShAwZ2NKQ1NRRkptUC1qYXJCIgsxUHRsMXU2d1JvWSoVCAkYAVIPCgsxUHRsMXU2d1JvWSAB"
+              }
+            },
+            "trackingParams": "CAkQ6ewBIhMIhvz4iOzblwMV0E5MCB0TqiUf"
+          }
+        },
+        "pictureInPicture": {
+          "pictureInPictureRenderer": {
+            "playableInPip": true,
+            "offByDefault": false,
+            "shouldResumeOnHead": false
+          }
+        },
+        "miniplayer": {
+          "miniplayerRenderer": {
+            "playbackMode": "PLAYBACK_MODE_ALLOW"
+          }
+        },
+        "contextParams": "Q0FFU0FnZ0M="
+      },
+      "outcome": "ok"
+    }
+  ],
+  "fetched_at": "2026-10-28T04:11:18.285897+00:00",
+  "client": "IOS",
+  "json_path": "transcripts/024_1Ptl1u6wRoY.json",
+  "text_path": "transcripts/024_1Ptl1u6wRoY.txt"
+}

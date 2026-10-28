@@ -1,0 +1,5532 @@
+{
+  "index": 128,
+  "url": "https://www.youtube.com/watch?v=GH5TN_iIdMs",
+  "video_id": "GH5TN_iIdMs",
+  "status": "ok",
+  "metadata": {
+    "title": "Curative Title Explained: How Investors Make Money When Deals Can’t Close",
+    "author": "Courtney Fricke",
+    "channelId": "UCfZlfkGpNzcMuDh6NX7xVpQ",
+    "lengthSeconds": "2185",
+    "viewCount": "1596",
+    "shortDescription": "In this first episode of the Messy Money Podcast, Courtney Fricke sits down with Ellis San Jose, a 30+ year Real Estate investor who specializes in curative title work, the side of Real Estate most people avoid.\n\nATTENTION: The information shared in this episode is for educational and informational purposes only and reflects personal experiences and opinions. It is not intended as legal, tax, financial, or investment advice. Real Estate laws, tax rules, and regulations vary by state and situation. Always consult with a qualified attorney, CPA, or other licensed professional before making any Real Estate or financial decisions.\n\nThis conversation breaks down what curative title actually means in practical terms, why uninsurable properties often hide the biggest margins, and how experienced investors turn broken paperwork, ownership issues, and distressed documents into real profit. Instead of focusing on cosmetic rehabs and HGTV-style transformations, this episode looks at how value is created by solving problems on paper.\n\nCourtney and Ellis also dig into why curative work pairs so well with creative strategies like seller financing and subject-to, how to evaluate whether a curative issue is solvable or a trap, and why time, risk analysis, and legal relationships matter more here than speed.\n\nIf you are interested in making money where other deals get stuck, this episode sets the foundation.\n\nTopics covered in this episode:\n- What curative title really means and why title insurance matters\n- The difference between uninsurable and insurable property\n- Why curative deals offer less competition and bigger safety margins\n- How creative finance and curative strategies work together\n- Common mistakes investors make when analyzing curative deals\n- How to decide if the juice is worth the squeeze\n\nConnect Further with Ellis San Jose\nInstagram: https://www.instagram.com/deedclear/ \nFacebook: https://www.facebook.com/ellis.s.jose \nDM If You Have a Curative Lead in California\nJoin his Skool community to learn more about Curative Title here: https://www.skool.com/dirtytitlegoldmine/about?ref=5df750735b234076b6a76b2bf0382a82\n\nConnect Further with Courtney Fricke\nWebsite: www.CourtneyFricke.com\nInstagram: https://instagram.com/courtneyfricke\nYouTube: https://www.youtube.com/@UCfZlfkGpNzcMuDh6NX7xVpQ\nTikTok: https://tiktok.com/@courtney.fricke\nFacebook: https://www.facebook.com/courtneyfricke19/\nX: https://x.com/courtneyfricke\nDM If You Have a Curative Lead in South Louisiana or Central Florida (Tampa Bay area)  \n\nSubscribe to the Messy Money Podcast for more conversations about solving complicated Real Estate problems and finding opportunity in the mess others avoid."
+  },
+  "caption_tracks": [
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=GH5TN_iIdMs&ei=9XXhatObJfL1sfIPiNjHcQ&caps=asr&opi=112496729&xoaf=5&xowf=1&xospf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185893&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=5CF671F2AA797924F8E06218CEA41AB55DB55107.B7378970B584F16D804A8D45651D458BD79F92C9&key=yt8&kind=asr&lang=en",
+      "name": {
+        "runs": [
+          {
+            "text": "English (auto-generated)"
+          }
+        ]
+      },
+      "vssId": "a.en",
+      "languageCode": "en",
+      "kind": "asr",
+      "isTranslatable": true,
+      "trackName": ""
+    }
+  ],
+  "selected_track": {
+    "baseUrl": "https://www.youtube.com/api/timedtext?v=GH5TN_iIdMs&ei=9XXhatObJfL1sfIPiNjHcQ&caps=asr&opi=112496729&xoaf=5&xowf=1&xospf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185893&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=5CF671F2AA797924F8E06218CEA41AB55DB55107.B7378970B584F16D804A8D45651D458BD79F92C9&key=yt8&kind=asr&lang=en",
+    "name": {
+      "runs": [
+        {
+          "text": "English (auto-generated)"
+        }
+      ]
+    },
+    "vssId": "a.en",
+    "languageCode": "en",
+    "kind": "asr",
+    "isTranslatable": true,
+    "trackName": ""
+  },
+  "segments": [
+    {
+      "start": 0.96,
+      "duration": 3.68,
+      "text": "If you think the money in real estate is"
+    },
+    {
+      "start": 2.56,
+      "duration": 4.56,
+      "text": "made by granite countertops and paint"
+    },
+    {
+      "start": 4.64,
+      "duration": 5.12,
+      "text": "colors, you're missing where the real"
+    },
+    {
+      "start": 7.12,
+      "duration": 5.04,
+      "text": "margin lives. I would argue that that's"
+    },
+    {
+      "start": 9.76,
+      "duration": 4.48,
+      "text": "HGTV syndrome, but that's another topic"
+    },
+    {
+      "start": 12.16,
+      "duration": 5.119,
+      "text": "for another day. You see, the biggest"
+    },
+    {
+      "start": 14.24,
+      "duration": 4.48,
+      "text": "checks usually come when the deals"
+    },
+    {
+      "start": 17.279,
+      "duration": 3.121,
+      "text": "cannot be closed. Like there's some sort"
+    },
+    {
+      "start": 18.72,
+      "duration": 3.04,
+      "text": "of big problem. You know, it's been"
+    },
+    {
+      "start": 20.4,
+      "duration": 4.24,
+      "text": "said, the bigger the problem you solve,"
+    },
+    {
+      "start": 21.76,
+      "duration": 4.48,
+      "text": "the bigger the check you get paid. And"
+    },
+    {
+      "start": 24.64,
+      "duration": 4.799,
+      "text": "these types of deals, I mean, they're"
+    },
+    {
+      "start": 26.24,
+      "duration": 5.359,
+      "text": "the ones with the messed up paperwork."
+    },
+    {
+      "start": 29.439,
+      "duration": 4.481,
+      "text": "there's something going on that's broken"
+    },
+    {
+      "start": 31.599,
+      "duration": 4.001,
+      "text": "in the title. There's owners that are"
+    },
+    {
+      "start": 33.92,
+      "duration": 3.36,
+      "text": "fighting and refusing, you know,"
+    },
+    {
+      "start": 35.6,
+      "duration": 4.0,
+      "text": "someone's refusing to sell or you can't"
+    },
+    {
+      "start": 37.28,
+      "duration": 5.439,
+      "text": "even find them. Something maybe even in"
+    },
+    {
+      "start": 39.6,
+      "duration": 4.639,
+      "text": "litigation. At the end of the day, these"
+    },
+    {
+      "start": 42.719,
+      "duration": 4.881,
+      "text": "are the deals that a lot of investors"
+    },
+    {
+      "start": 44.239,
+      "duration": 6.0,
+      "text": "walk away from. And a lot of times"
+    },
+    {
+      "start": 47.6,
+      "duration": 5.2,
+      "text": "they're just a ball of problems. Some"
+    },
+    {
+      "start": 50.239,
+      "duration": 4.561,
+      "text": "easier to resolve than others. But you"
+    },
+    {
+      "start": 52.8,
+      "duration": 3.759,
+      "text": "see, my name's Courtney Fricky and in"
+    },
+    {
+      "start": 54.8,
+      "duration": 4.64,
+      "text": "this first episode I'm sitting down with"
+    },
+    {
+      "start": 56.559,
+      "duration": 4.32,
+      "text": "my good friend Ella San Jose. Now, Ellis"
+    },
+    {
+      "start": 59.44,
+      "duration": 4.08,
+      "text": "has been investing for over 30 years,"
+    },
+    {
+      "start": 60.879,
+      "duration": 6.161,
+      "text": "but over the last decade, he's been"
+    },
+    {
+      "start": 63.52,
+      "duration": 5.04,
+      "text": "specializing in these messier deals. And"
+    },
+    {
+      "start": 67.04,
+      "duration": 4.24,
+      "text": "so, that's what this episode's going to"
+    },
+    {
+      "start": 68.56,
+      "duration": 4.8,
+      "text": "be about. We're going to define what"
+    },
+    {
+      "start": 71.28,
+      "duration": 5.28,
+      "text": "curative title looks like. We're going"
+    },
+    {
+      "start": 73.36,
+      "duration": 6.32,
+      "text": "to define, you know, really"
+    },
+    {
+      "start": 76.56,
+      "duration": 5.68,
+      "text": "how that can easily pair and really pair"
+    },
+    {
+      "start": 79.68,
+      "duration": 4.799,
+      "text": "well with the creative world and talk"
+    },
+    {
+      "start": 82.24,
+      "duration": 3.919,
+      "text": "through some of the um some of the"
+    },
+    {
+      "start": 84.479,
+      "duration": 4.561,
+      "text": "pitfalls like the good, the bad, and the"
+    },
+    {
+      "start": 86.159,
+      "duration": 5.201,
+      "text": "ugly so that you can tell the difference"
+    },
+    {
+      "start": 89.04,
+      "duration": 5.2,
+      "text": "between [clears throat] a problem that"
+    },
+    {
+      "start": 91.36,
+      "duration": 6.56,
+      "text": "can be solved and really something that"
+    },
+    {
+      "start": 94.24,
+      "duration": 6.64,
+      "text": "is a trap that it'll eat your time, your"
+    },
+    {
+      "start": 97.92,
+      "duration": 4.32,
+      "text": "money, and your energy, right? So, if"
+    },
+    {
+      "start": 100.88,
+      "duration": 3.76,
+      "text": "you want to make money where other"
+    },
+    {
+      "start": 102.24,
+      "duration": 4.0,
+      "text": "investors get stuck, you're in the right"
+    },
+    {
+      "start": 104.64,
+      "duration": 4.32,
+      "text": "place. I'm looking forward to getting"
+    },
+    {
+      "start": 106.24,
+      "duration": 7.199,
+      "text": "into it, talking about this messy money"
+    },
+    {
+      "start": 108.96,
+      "duration": 6.799,
+      "text": "concept. Let's get into it."
+    },
+    {
+      "start": 113.439,
+      "duration": 4.32,
+      "text": "So, I'm excited to talk about how the"
+    },
+    {
+      "start": 115.759,
+      "duration": 4.161,
+      "text": "money in real estate is often made"
+    },
+    {
+      "start": 117.759,
+      "duration": 3.921,
+      "text": "through the messy side. So, we're going"
+    },
+    {
+      "start": 119.92,
+      "duration": 4.08,
+      "text": "to get jumping right into it with my"
+    },
+    {
+      "start": 121.68,
+      "duration": 4.16,
+      "text": "good friend Ellis San Jose. Ellis, I'm"
+    },
+    {
+      "start": 124.0,
+      "duration": 3.439,
+      "text": "excited to have you on the podcast. I've"
+    },
+    {
+      "start": 125.84,
+      "duration": 4.16,
+      "text": "been uh I know we've done like a little"
+    },
+    {
+      "start": 127.439,
+      "duration": 5.281,
+      "text": "micro interview uh and stuff like that"
+    },
+    {
+      "start": 130.0,
+      "duration": 3.92,
+      "text": "before, but I'm excited to have you on."
+    },
+    {
+      "start": 132.72,
+      "duration": 1.92,
+      "text": "Um"
+    },
+    {
+      "start": 133.92,
+      "duration": 2.0,
+      "text": ">> same here."
+    },
+    {
+      "start": 134.64,
+      "duration": 2.56,
+      "text": ">> And and like and the things we're"
+    },
+    {
+      "start": 135.92,
+      "duration": 1.92,
+      "text": "talking about, I'm excited about that,"
+    },
+    {
+      "start": 137.2,
+      "duration": 1.759,
+      "text": "too."
+    },
+    {
+      "start": 137.84,
+      "duration": 4.16,
+      "text": ">> Right."
+    },
+    {
+      "start": 138.959,
+      "duration": 4.961,
+      "text": ">> Yeah. So, I I want to make today's"
+    },
+    {
+      "start": 142.0,
+      "duration": 5.12,
+      "text": "episode really focus on the curative"
+    },
+    {
+      "start": 143.92,
+      "duration": 5.28,
+      "text": "title side. And so many investors are"
+    },
+    {
+      "start": 147.12,
+      "duration": 4.08,
+      "text": "like, wait, I've kind of heard that word"
+    },
+    {
+      "start": 149.2,
+      "duration": 4.64,
+      "text": "before in my contract where there's like"
+    },
+    {
+      "start": 151.2,
+      "duration": 3.2,
+      "text": "that curative title phase. you know, if"
+    },
+    {
+      "start": 153.84,
+      "duration": 2.16,
+      "text": "uh"
+    },
+    {
+      "start": 154.4,
+      "duration": 3.52,
+      "text": ">> it's a part of like a an extension"
+    },
+    {
+      "start": 156.0,
+      "duration": 3.84,
+      "text": "deadline or whatever with your tit like"
+    },
+    {
+      "start": 157.92,
+      "duration": 4.48,
+      "text": "with your uh purchase agreement."
+    },
+    {
+      "start": 159.84,
+      "duration": 4.24,
+      "text": ">> Um so let's start off by defining"
+    },
+    {
+      "start": 162.4,
+      "duration": 5.199,
+      "text": "curative title."
+    },
+    {
+      "start": 164.08,
+      "duration": 6.4,
+      "text": ">> Um what when people when you talk about"
+    },
+    {
+      "start": 167.599,
+      "duration": 4.321,
+      "text": "it, how do you define it?"
+    },
+    {
+      "start": 170.48,
+      "duration": 3.44,
+      "text": ">> I've been thinking about this a lot"
+    },
+    {
+      "start": 171.92,
+      "duration": 3.76,
+      "text": "lately and kind of the iteration that"
+    },
+    {
+      "start": 173.92,
+      "duration": 3.52,
+      "text": "I've arrived at now is that there's"
+    },
+    {
+      "start": 175.68,
+      "duration": 4.559,
+      "text": "actually in real estate there's two"
+    },
+    {
+      "start": 177.44,
+      "duration": 4.799,
+      "text": "values. There's value of something that"
+    },
+    {
+      "start": 180.239,
+      "duration": 5.441,
+      "text": "can't get title insurance and something"
+    },
+    {
+      "start": 182.239,
+      "duration": 5.601,
+      "text": "that can because the the the industry"
+    },
+    {
+      "start": 185.68,
+      "duration": 4.24,
+      "text": "standard is when you buy a piece of real"
+    },
+    {
+      "start": 187.84,
+      "duration": 4.0,
+      "text": "estate or property, it needs to come"
+    },
+    {
+      "start": 189.92,
+      "duration": 4.08,
+      "text": "along with title insurance because that"
+    },
+    {
+      "start": 191.84,
+      "duration": 4.319,
+      "text": "title insurance is protecting you and"
+    },
+    {
+      "start": 194.0,
+      "duration": 4.08,
+      "text": "saying, \"Yeah, this this is clear."
+    },
+    {
+      "start": 196.159,
+      "duration": 3.681,
+      "text": "Everything's good. What you're buying is"
+    },
+    {
+      "start": 198.08,
+      "duration": 4.32,
+      "text": "what you're buying.\" When you don't have"
+    },
+    {
+      "start": 199.84,
+      "duration": 4.24,
+      "text": "that insurance, it's kind of like, well,"
+    },
+    {
+      "start": 202.4,
+      "duration": 2.559,
+      "text": ">> it's up to you to know what you really"
+    },
+    {
+      "start": 204.08,
+      "duration": 4.079,
+      "text": "have."
+    },
+    {
+      "start": 204.959,
+      "duration": 5.681,
+      "text": "And curative title is the gap between"
+    },
+    {
+      "start": 208.159,
+      "duration": 4.241,
+      "text": "uninsurable title and insurable title."
+    },
+    {
+      "start": 210.64,
+      "duration": 3.76,
+      "text": "So that's kind of what I've come up with"
+    },
+    {
+      "start": 212.4,
+      "duration": 4.0,
+      "text": "as far as a way to define it."
+    },
+    {
+      "start": 214.4,
+      "duration": 3.6,
+      "text": ">> I I like that, you know, cuz I think"
+    },
+    {
+      "start": 216.4,
+      "duration": 5.44,
+      "text": "it's always been hard for me to explain"
+    },
+    {
+      "start": 218.0,
+      "duration": 6.799,
+      "text": "it too. Um um and so"
+    },
+    {
+      "start": 221.84,
+      "duration": 5.039,
+      "text": "elevator pitch 30,000 foot view. What's"
+    },
+    {
+      "start": 224.799,
+      "duration": 4.401,
+      "text": "your like what's your your background"
+    },
+    {
+      "start": 226.879,
+      "duration": 3.44,
+      "text": "with curative if you know when when"
+    },
+    {
+      "start": 229.2,
+      "duration": 3.2,
+      "text": "someone asks?"
+    },
+    {
+      "start": 230.319,
+      "duration": 3.121,
+      "text": ">> Okay. So, I have this kind of elevator"
+    },
+    {
+      "start": 232.4,
+      "duration": 2.64,
+      "text": "speech that I've been using in my"
+    },
+    {
+      "start": 233.44,
+      "duration": 2.96,
+      "text": "networking group for the last 13 years."
+    },
+    {
+      "start": 235.04,
+      "duration": 2.88,
+      "text": "So, I say everybody's heard of the three"
+    },
+    {
+      "start": 236.4,
+      "duration": 3.759,
+      "text": "L's of real estate, location, location,"
+    },
+    {
+      "start": 237.92,
+      "duration": 4.0,
+      "text": "location. I specialize in the ugly L's"
+    },
+    {
+      "start": 240.159,
+      "duration": 3.681,
+      "text": "of real estate, which is litigation,"
+    },
+    {
+      "start": 241.92,
+      "duration": 5.039,
+      "text": "long-distance ownership, and a long"
+    },
+    {
+      "start": 243.84,
+      "duration": 5.52,
+      "text": "story why somebody cannot buy or get a"
+    },
+    {
+      "start": 246.959,
+      "duration": 4.48,
+      "text": "loan on their property. So, that kind of"
+    },
+    {
+      "start": 249.36,
+      "duration": 3.36,
+      "text": "brings it to life of like, oh yeah, I've"
+    },
+    {
+      "start": 251.439,
+      "duration": 2.481,
+      "text": "known somebody or I've heard of somebody"
+    },
+    {
+      "start": 252.72,
+      "duration": 2.56,
+      "text": "where they can't sell their property"
+    },
+    {
+      "start": 253.92,
+      "duration": 3.039,
+      "text": "because they can't, you know, they don't"
+    },
+    {
+      "start": 255.28,
+      "duration": 3.28,
+      "text": "know who owns it or there's some lean on"
+    },
+    {
+      "start": 256.959,
+      "duration": 4.481,
+      "text": "there that they don't know how to get"
+    },
+    {
+      "start": 258.56,
+      "duration": 4.16,
+      "text": "rid of. So that's kind of my my elevator"
+    },
+    {
+      "start": 261.44,
+      "duration": 3.44,
+      "text": "pitch for that."
+    },
+    {
+      "start": 262.72,
+      "duration": 2.64,
+      "text": ">> And you're you're based in Southern"
+    },
+    {
+      "start": 264.88,
+      "duration": 1.84,
+      "text": "California."
+    },
+    {
+      "start": 265.36,
+      "duration": 2.559,
+      "text": ">> I'm in Southern California, right? Just"
+    },
+    {
+      "start": 266.72,
+      "duration": 4.08,
+      "text": "outside Los Angeles."
+    },
+    {
+      "start": 267.919,
+      "duration": 5.121,
+      "text": ">> And how long you been doing curative?"
+    },
+    {
+      "start": 270.8,
+      "duration": 4.24,
+      "text": ">> I would say that I started dipping my"
+    },
+    {
+      "start": 273.04,
+      "duration": 4.64,
+      "text": "toe at about 12 years ago. And now I'm"
+    },
+    {
+      "start": 275.04,
+      "duration": 5.2,
+      "text": "kind of I I would say I'm 8020 80% I"
+    },
+    {
+      "start": 277.68,
+      "duration": 4.16,
+      "text": "only look for curative or messy issues."
+    },
+    {
+      "start": 280.24,
+      "duration": 3.519,
+      "text": "And then the 20% I do kind of my"
+    },
+    {
+      "start": 281.84,
+      "duration": 2.72,
+      "text": "traditional uh investing that I've"
+    },
+    {
+      "start": 283.759,
+      "duration": 2.561,
+      "text": "always done."
+    },
+    {
+      "start": 284.56,
+      "duration": 2.96,
+      "text": ">> And you've been investing for like 30"
+    },
+    {
+      "start": 286.32,
+      "duration": 3.439,
+      "text": "plus years."
+    },
+    {
+      "start": 287.52,
+      "duration": 4.32,
+      "text": ">> Yeah. A long time. Yeah. So, so that's"
+    },
+    {
+      "start": 289.759,
+      "duration": 3.601,
+      "text": "kind of like the overview synopsis. Um,"
+    },
+    {
+      "start": 291.84,
+      "duration": 4.4,
+      "text": "yeah. Someone was asking me with it. I'm"
+    },
+    {
+      "start": 293.36,
+      "duration": 5.44,
+      "text": "like, you know, I've done dozens of"
+    },
+    {
+      "start": 296.24,
+      "duration": 4.32,
+      "text": "curative deals, but I sprinkled them in"
+    },
+    {
+      "start": 298.8,
+      "duration": 5.119,
+      "text": "with all these other strate like it"
+    },
+    {
+      "start": 300.56,
+      "duration": 5.199,
+      "text": "wasn't my main strategy, you know? You"
+    },
+    {
+      "start": 303.919,
+      "duration": 3.441,
+      "text": "know, I did it to, you know, reduce some"
+    },
+    {
+      "start": 305.759,
+      "duration": 3.28,
+      "text": "leans on a property that I bought"
+    },
+    {
+      "start": 307.36,
+      "duration": 4.08,
+      "text": "subject to, you know, just to get a"
+    },
+    {
+      "start": 309.039,
+      "duration": 4.081,
+      "text": "better deal or, you know, or we were"
+    },
+    {
+      "start": 311.44,
+      "duration": 3.039,
+      "text": "wholesaling and it, you know,"
+    },
+    {
+      "start": 313.12,
+      "duration": 2.56,
+      "text": ">> we had to figure this out so we could"
+    },
+    {
+      "start": 314.479,
+      "duration": 1.601,
+      "text": "actually close it, you know."
+    },
+    {
+      "start": 315.68,
+      "duration": 2.48,
+      "text": ">> Yeah."
+    },
+    {
+      "start": 316.08,
+      "duration": 3.76,
+      "text": ">> Um, that's kind of high. I stumbled on"
+    },
+    {
+      "start": 318.16,
+      "duration": 4.24,
+      "text": "it too is because I started buying notes"
+    },
+    {
+      "start": 319.84,
+      "duration": 4.639,
+      "text": "and judgments and then I was like, \"Wow,"
+    },
+    {
+      "start": 322.4,
+      "duration": 3.92,
+      "text": "wait a second. This all kind of ties"
+    },
+    {
+      "start": 324.479,
+      "duration": 3.361,
+      "text": "together. If I ever saw property and I"
+    },
+    {
+      "start": 326.32,
+      "duration": 3.84,
+      "text": "saw a note or judgment or some sort of"
+    },
+    {
+      "start": 327.84,
+      "duration": 4.96,
+      "text": "lean, I was like, I could probably"
+    },
+    {
+      "start": 330.16,
+      "duration": 5.36,
+      "text": "create a little bit more profit.\" So,"
+    },
+    {
+      "start": 332.8,
+      "duration": 4.239,
+      "text": ">> well, and and so like it's funny, my"
+    },
+    {
+      "start": 335.52,
+      "duration": 3.2,
+      "text": "elevator pitch is very similar to yours."
+    },
+    {
+      "start": 337.039,
+      "duration": 3.841,
+      "text": "When I like when I especially here in"
+    },
+    {
+      "start": 338.72,
+      "duration": 3.44,
+      "text": "Florida, I feel like every investor"
+    },
+    {
+      "start": 340.88,
+      "duration": 2.96,
+      "text": "meeting you have to stand up and"
+    },
+    {
+      "start": 342.16,
+      "duration": 3.759,
+      "text": "introduce yourself and give give your"
+    },
+    {
+      "start": 343.84,
+      "duration": 4.56,
+      "text": "phone [laughter] number. And so I I"
+    },
+    {
+      "start": 345.919,
+      "duration": 4.161,
+      "text": "literally um yeah, we were at a meeting"
+    },
+    {
+      "start": 348.4,
+      "duration": 3.76,
+      "text": "last night and we were at because Pete"
+    },
+    {
+      "start": 350.08,
+      "duration": 4.24,
+      "text": "was talking somewhere locally and so"
+    },
+    {
+      "start": 352.16,
+      "duration": 4.08,
+      "text": "everyone's there and this guy came and"
+    },
+    {
+      "start": 354.32,
+      "duration": 5.12,
+      "text": "he was like he's like I don't I don't"
+    },
+    {
+      "start": 356.24,
+      "duration": 5.04,
+      "text": "want to introduce myself. I was like"
+    },
+    {
+      "start": 359.44,
+      "duration": 4.4,
+      "text": ">> you should you should really want to but"
+    },
+    {
+      "start": 361.28,
+      "duration": 4.88,
+      "text": "anyway um but he's retired so I can"
+    },
+    {
+      "start": 363.84,
+      "duration": 4.16,
+      "text": "understand. Uh but no like I always say"
+    },
+    {
+      "start": 366.16,
+      "duration": 3.12,
+      "text": "you know for me I'm you know I"
+    },
+    {
+      "start": 368.0,
+      "duration": 3.12,
+      "text": "specialize in the [snorts] properties"
+    },
+    {
+      "start": 369.28,
+      "duration": 4.479,
+      "text": "that are so complicated they need a"
+    },
+    {
+      "start": 371.12,
+      "duration": 4.72,
+      "text": "therapist. That's a good one. the owners"
+    },
+    {
+      "start": 373.759,
+      "duration": 4.16,
+      "text": "are fighting. You can't find the own an"
+    },
+    {
+      "start": 375.84,
+      "duration": 3.6,
+      "text": "owner, you know, it needs litigation"
+    },
+    {
+      "start": 377.919,
+      "duration": 2.56,
+      "text": "there. You know, the title is so messed"
+    },
+    {
+      "start": 379.44,
+      "duration": 1.28,
+      "text": "up, whatever,"
+    },
+    {
+      "start": 380.479,
+      "duration": 2.401,
+      "text": ">> right? [snorts]"
+    },
+    {
+      "start": 380.72,
+      "duration": 3.36,
+      "text": ">> Uh that that traditionally it can't move"
+    },
+    {
+      "start": 382.88,
+      "duration": 2.64,
+      "text": "forward itself. So, like as you're"
+    },
+    {
+      "start": 384.08,
+      "duration": 3.04,
+      "text": "talking about like getting that title"
+    },
+    {
+      "start": 385.52,
+      "duration": 5.28,
+      "text": "insurance part, right?"
+    },
+    {
+      "start": 387.12,
+      "duration": 5.919,
+      "text": ">> Um so, what what you know, you've done"
+    },
+    {
+      "start": 390.8,
+      "duration": 3.76,
+      "text": "all these other strategies when you"
+    },
+    {
+      "start": 393.039,
+      "duration": 2.561,
+      "text": "started getting into these cur deals and"
+    },
+    {
+      "start": 394.56,
+      "duration": 2.639,
+      "text": "then you started saying, \"Hey, well,"
+    },
+    {
+      "start": 395.6,
+      "duration": 5.039,
+      "text": "what if I focus on it?\""
+    },
+    {
+      "start": 397.199,
+      "duration": 6.641,
+      "text": ">> Um what attracted you to that?"
+    },
+    {
+      "start": 400.639,
+      "duration": 5.28,
+      "text": "mainly it's because um it just it felt"
+    },
+    {
+      "start": 403.84,
+      "duration": 4.799,
+      "text": "logical to me that the lower I can buy"
+    },
+    {
+      "start": 405.919,
+      "duration": 4.641,
+      "text": "something the greater safety margin that"
+    },
+    {
+      "start": 408.639,
+      "duration": 4.0,
+      "text": "I'm going to have and less likelihood of"
+    },
+    {
+      "start": 410.56,
+      "duration": 3.84,
+      "text": "making a mistake. So, you know, there's"
+    },
+    {
+      "start": 412.639,
+      "duration": 4.721,
+      "text": "like this kind of old rule of thumb,"
+    },
+    {
+      "start": 414.4,
+      "duration": 4.4,
+      "text": "hey, if you buy it 65% of ARV blah plus"
+    },
+    {
+      "start": 417.36,
+      "duration": 3.279,
+      "text": "repairs, blah blah blah, right? So,"
+    },
+    {
+      "start": 418.8,
+      "duration": 4.399,
+      "text": "there's a lot of people stuck in kind of"
+    },
+    {
+      "start": 420.639,
+      "duration": 4.241,
+      "text": "that thought. And then I was like, well,"
+    },
+    {
+      "start": 423.199,
+      "duration": 4.961,
+      "text": "what if I just kind of threw that out"
+    },
+    {
+      "start": 424.88,
+      "duration": 7.2,
+      "text": "and see how far below market value could"
+    },
+    {
+      "start": 428.16,
+      "duration": 5.599,
+      "text": "buy it? and the the the transactions"
+    },
+    {
+      "start": 432.08,
+      "duration": 5.119,
+      "text": "that lend itself to going where you're"
+    },
+    {
+      "start": 433.759,
+      "duration": 5.521,
+      "text": "buying at 10 20 30 40 50 cents on the"
+    },
+    {
+      "start": 437.199,
+      "duration": 4.0,
+      "text": "dollar. That's what attracted me to"
+    },
+    {
+      "start": 439.28,
+      "duration": 4.96,
+      "text": "because now I can build in a huge margin"
+    },
+    {
+      "start": 441.199,
+      "duration": 4.881,
+      "text": "of safety. And plus, because on the"
+    },
+    {
+      "start": 444.24,
+      "duration": 4.64,
+      "text": "surface it seems so complex and"
+    },
+    {
+      "start": 446.08,
+      "duration": 4.48,
+      "text": "complicated, most of the the typical"
+    },
+    {
+      "start": 448.88,
+      "duration": 3.039,
+      "text": "investors are just going to walk away. I"
+    },
+    {
+      "start": 450.56,
+      "duration": 3.199,
+      "text": "certainly did for many years. I didn't"
+    },
+    {
+      "start": 451.919,
+      "duration": 4.161,
+      "text": "know what the heck was going on."
+    },
+    {
+      "start": 453.759,
+      "duration": 4.081,
+      "text": ">> So, um I like a lot of those elements."
+    },
+    {
+      "start": 456.08,
+      "duration": 3.44,
+      "text": "Number one, it's, you know, you're"
+    },
+    {
+      "start": 457.84,
+      "duration": 3.6,
+      "text": "building in safety for your deal. Number"
+    },
+    {
+      "start": 459.52,
+      "duration": 3.84,
+      "text": "two, you have less competition. And"
+    },
+    {
+      "start": 461.44,
+      "duration": 3.199,
+      "text": "because of that, I was just mentioning"
+    },
+    {
+      "start": 463.36,
+      "duration": 3.44,
+      "text": "this to somebody else. I said, you know"
+    },
+    {
+      "start": 464.639,
+      "duration": 4.241,
+      "text": "what, you don't have that kind of hair"
+    },
+    {
+      "start": 466.8,
+      "duration": 3.92,
+      "text": "on fire time constraints that you do if"
+    },
+    {
+      "start": 468.88,
+      "duration": 3.12,
+      "text": "you're like, you know, five, six other"
+    },
+    {
+      "start": 470.72,
+      "duration": 2.879,
+      "text": "people are bidding on a property and"
+    },
+    {
+      "start": 472.0,
+      "duration": 3.919,
+      "text": "you, you know, you got to be first. You"
+    },
+    {
+      "start": 473.599,
+      "duration": 3.681,
+      "text": "have time to to really thoughtfully"
+    },
+    {
+      "start": 475.919,
+      "duration": 2.56,
+      "text": "think it through. Call your other"
+    },
+    {
+      "start": 477.28,
+      "duration": 3.039,
+      "text": "friends that are doing curative and say,"
+    },
+    {
+      "start": 478.479,
+      "duration": 4.081,
+      "text": "\"Hey, how would you handle this?\" And"
+    },
+    {
+      "start": 480.319,
+      "duration": 4.0,
+      "text": "then it just, it really has an element"
+    },
+    {
+      "start": 482.56,
+      "duration": 4.079,
+      "text": "where we can reduce your mistakes. And"
+    },
+    {
+      "start": 484.319,
+      "duration": 3.841,
+      "text": "that's that to me is a huge benefit of"
+    },
+    {
+      "start": 486.639,
+      "duration": 3.68,
+      "text": "doing curative."
+    },
+    {
+      "start": 488.16,
+      "duration": 5.759,
+      "text": ">> Yeah. And so I think that's important"
+    },
+    {
+      "start": 490.319,
+      "duration": 5.201,
+      "text": "because like um well you and I have"
+    },
+    {
+      "start": 493.919,
+      "duration": 4.241,
+      "text": "talked through this before. So I just"
+    },
+    {
+      "start": 495.52,
+      "duration": 3.04,
+      "text": "moved from Louisiana to central Florida,"
+    },
+    {
+      "start": 498.16,
+      "duration": 2.879,
+      "text": ">> right?"
+    },
+    {
+      "start": 498.56,
+      "duration": 3.919,
+      "text": ">> Uh it is it is no secret that the cost"
+    },
+    {
+      "start": 501.039,
+      "duration": 2.401,
+      "text": "of living here is higher than New"
+    },
+    {
+      "start": 502.479,
+      "duration": 2.72,
+      "text": "Orleans."
+    },
+    {
+      "start": 503.44,
+      "duration": 3.759,
+      "text": ">> Um but there's so there's benefits to"
+    },
+    {
+      "start": 505.199,
+      "duration": 4.081,
+      "text": "that, right? Part of that's lifestyle,"
+    },
+    {
+      "start": 507.199,
+      "duration": 4.0,
+      "text": "part of that is um you know the"
+    },
+    {
+      "start": 509.28,
+      "duration": 2.16,
+      "text": "appreciation here, things like that,"
+    },
+    {
+      "start": 511.199,
+      "duration": 2.561,
+      "text": "right?"
+    },
+    {
+      "start": 511.44,
+      "duration": 4.64,
+      "text": ">> And you face something very similar. So"
+    },
+    {
+      "start": 513.76,
+      "duration": 4.159,
+      "text": "talk to me how that applies to your"
+    },
+    {
+      "start": 516.08,
+      "duration": 3.519,
+      "text": "portfolio in Southern California where"
+    },
+    {
+      "start": 517.919,
+      "duration": 3.36,
+      "text": "everyone says you can't own real estate"
+    },
+    {
+      "start": 519.599,
+      "duration": 2.56,
+      "text": "in California. It the numbers don't"
+    },
+    {
+      "start": 521.279,
+      "duration": 2.32,
+      "text": "work."
+    },
+    {
+      "start": 522.159,
+      "duration": 3.841,
+      "text": ">> It's very funny. I was at a real estate"
+    },
+    {
+      "start": 523.599,
+      "duration": 4.081,
+      "text": "club meeting last night and there was an"
+    },
+    {
+      "start": 526.0,
+      "duration": 3.44,
+      "text": "investor in the room saying I don't know"
+    },
+    {
+      "start": 527.68,
+      "duration": 3.839,
+      "text": "how you can buy in California. I had to"
+    },
+    {
+      "start": 529.44,
+      "duration": 4.48,
+      "text": "put 50% down in order for it to break"
+    },
+    {
+      "start": 531.519,
+      "duration": 4.561,
+      "text": "even. Even then it was hard or you know"
+    },
+    {
+      "start": 533.92,
+      "duration": 4.32,
+      "text": "I was but you know and then uh so"
+    },
+    {
+      "start": 536.08,
+      "duration": 4.56,
+      "text": "everybody's looking at a state. So, so"
+    },
+    {
+      "start": 538.24,
+      "duration": 3.52,
+      "text": "in my personal life, I was kind of the"
+    },
+    {
+      "start": 540.64,
+      "duration": 2.879,
+      "text": "same. I'm like, \"Oh my god, it's so hard"
+    },
+    {
+      "start": 541.76,
+      "duration": 4.96,
+      "text": "to cash flow here in California. Let me"
+    },
+    {
+      "start": 543.519,
+      "duration": 5.121,
+      "text": "go buy out of state.\" So, there are a"
+    },
+    {
+      "start": 546.72,
+      "duration": 3.2,
+      "text": "whole lot of issues with owning stuff"
+    },
+    {
+      "start": 548.64,
+      "duration": 3.28,
+      "text": "out of state. There's probably people"
+    },
+    {
+      "start": 549.92,
+      "duration": 3.359,
+      "text": "that are way better than I am. But, I"
+    },
+    {
+      "start": 551.92,
+      "duration": 2.8,
+      "text": "just found that it wasn't the right fit"
+    },
+    {
+      "start": 553.279,
+      "duration": 4.401,
+      "text": "for me. So, I wanted to bring it all"
+    },
+    {
+      "start": 554.72,
+      "duration": 4.559,
+      "text": "back. And in order for me to buy where"
+    },
+    {
+      "start": 557.68,
+      "duration": 3.68,
+      "text": "it made sense, you could cash in"
+    },
+    {
+      "start": 559.279,
+      "duration": 4.881,
+      "text": "California. You have to have like kind"
+    },
+    {
+      "start": 561.36,
+      "duration": 4.32,
+      "text": "of special uh skills and knowledge. And"
+    },
+    {
+      "start": 564.16,
+      "duration": 3.44,
+      "text": "I said, I'm I'm all in. I'm going to"
+    },
+    {
+      "start": 565.68,
+      "duration": 3.76,
+      "text": "learn whatever it takes to be able to do"
+    },
+    {
+      "start": 567.6,
+      "duration": 4.799,
+      "text": "it where I can buy something that makes"
+    },
+    {
+      "start": 569.44,
+      "duration": 4.399,
+      "text": "sense and that is profitable in my own"
+    },
+    {
+      "start": 572.399,
+      "duration": 3.201,
+      "text": "backyard. That's what I'm going to do."
+    },
+    {
+      "start": 573.839,
+      "duration": 3.44,
+      "text": "And that's how I mean that's how I kind"
+    },
+    {
+      "start": 575.6,
+      "duration": 3.6,
+      "text": "of started on this journey because it"
+    },
+    {
+      "start": 577.279,
+      "duration": 3.68,
+      "text": "was a necessity. I did not want to buy"
+    },
+    {
+      "start": 579.2,
+      "duration": 4.319,
+      "text": "out of state real estate."
+    },
+    {
+      "start": 580.959,
+      "duration": 3.761,
+      "text": ">> You know, very similar. So, like I"
+    },
+    {
+      "start": 583.519,
+      "duration": 3.201,
+      "text": "mentioned over the last few years"
+    },
+    {
+      "start": 584.72,
+      "duration": 4.16,
+      "text": "curate,"
+    },
+    {
+      "start": 586.72,
+      "duration": 4.0,
+      "text": "not my main strategy. And then when I"
+    },
+    {
+      "start": 588.88,
+      "duration": 4.32,
+      "text": "moved, my biggest concern was number"
+    },
+    {
+      "start": 590.72,
+      "duration": 3.84,
+      "text": "one, my portfolio. you've seen some of"
+    },
+    {
+      "start": 593.2,
+      "duration": 2.96,
+      "text": "the numbers on some of my deals where"
+    },
+    {
+      "start": 594.56,
+      "duration": 3.2,
+      "text": "it's like the insurance crisis. You you"
+    },
+    {
+      "start": 596.16,
+      "duration": 2.4,
+      "text": "have the insurance crisis as well,"
+    },
+    {
+      "start": 597.76,
+      "duration": 3.84,
+      "text": ">> right?"
+    },
+    {
+      "start": 598.56,
+      "duration": 4.719,
+      "text": ">> It has impacted my um you know cash flow"
+    },
+    {
+      "start": 601.6,
+      "duration": 4.0,
+      "text": "with you know all of that. So I'm seeing"
+    },
+    {
+      "start": 603.279,
+      "duration": 4.24,
+      "text": "that back in Louisiana where we're not"
+    },
+    {
+      "start": 605.6,
+      "duration": 3.44,
+      "text": "getting appreciation but hey cash flow"
+    },
+    {
+      "start": 607.519,
+      "duration": 3.681,
+      "text": "is impacted and so like right now I'm"
+    },
+    {
+      "start": 609.04,
+      "duration": 4.88,
+      "text": "getting like tax benefits and"
+    },
+    {
+      "start": 611.2,
+      "duration": 4.4,
+      "text": "amortization uh and maybe if I'm lucky"
+    },
+    {
+      "start": 613.92,
+      "duration": 4.72,
+      "text": "cash flow right"
+    },
+    {
+      "start": 615.6,
+      "duration": 4.96,
+      "text": ">> and okay those are benefits but like no"
+    },
+    {
+      "start": 618.64,
+      "duration": 3.439,
+      "text": "one's getting excited over that. And"
+    },
+    {
+      "start": 620.56,
+      "duration": 4.08,
+      "text": "then I'm coming into a market like"
+    },
+    {
+      "start": 622.079,
+      "duration": 4.641,
+      "text": "Florida where number one there's people"
+    },
+    {
+      "start": 624.64,
+      "duration": 3.68,
+      "text": "spending 50 to 100 grand a month, you"
+    },
+    {
+      "start": 626.72,
+      "duration": 3.52,
+      "text": "know, marketing. I'm not competing with"
+    },
+    {
+      "start": 628.32,
+      "duration": 4.48,
+      "text": "that. But then I also have properties"
+    },
+    {
+      "start": 630.24,
+      "duration": 4.8,
+      "text": "here with same thing insurance but um"
+    },
+    {
+      "start": 632.8,
+      "duration": 3.76,
+      "text": "issues but also property taxes. And so a"
+    },
+    {
+      "start": 635.04,
+      "duration": 3.919,
+      "text": "lot of people here are struggling to"
+    },
+    {
+      "start": 636.56,
+      "duration": 6.959,
+      "text": "cash flow. And so I was like, \"All"
+    },
+    {
+      "start": 638.959,
+      "duration": 6.961,
+      "text": "right, let me re-evaluate and pivot um"
+    },
+    {
+      "start": 643.519,
+      "duration": 4.081,
+      "text": "and not just gung-ho and and buy like I"
+    },
+    {
+      "start": 645.92,
+      "duration": 4.159,
+      "text": "normally have even with creative"
+    },
+    {
+      "start": 647.6,
+      "duration": 3.919,
+      "text": "financing.\" um what are what are some"
+    },
+    {
+      "start": 650.079,
+      "duration": 3.121,
+      "text": "other tools in tool belt? And so that's"
+    },
+    {
+      "start": 651.519,
+      "duration": 3.921,
+      "text": "really where it's like looking at the"
+    },
+    {
+      "start": 653.2,
+      "duration": 4.427,
+      "text": "the curative and you've mentioned before"
+    },
+    {
+      "start": 655.44,
+      "duration": 3.28,
+      "text": "that like"
+    },
+    {
+      "start": 657.627,
+      "duration": 3.652,
+      "text": "[sighs and gasps]"
+    },
+    {
+      "start": 658.72,
+      "duration": 4.08,
+      "text": ">> like that the curative and the creative"
+    },
+    {
+      "start": 661.279,
+      "duration": 3.601,
+      "text": "world so like creative like seller"
+    },
+    {
+      "start": 662.8,
+      "duration": 6.08,
+      "text": "financing subject two things like that"
+    },
+    {
+      "start": 664.88,
+      "duration": 7.519,
+      "text": ">> that they um they fit so well together."
+    },
+    {
+      "start": 668.88,
+      "duration": 5.6,
+      "text": ">> Um what what do you mean by that?"
+    },
+    {
+      "start": 672.399,
+      "duration": 5.361,
+      "text": ">> So I'm gonna have a little bit of a rant"
+    },
+    {
+      "start": 674.48,
+      "duration": 5.28,
+      "text": "here. So, a lot of people that that are"
+    },
+    {
+      "start": 677.76,
+      "duration": 4.48,
+      "text": "kind of"
+    },
+    {
+      "start": 679.76,
+      "duration": 3.92,
+      "text": "marketing, the creative finance"
+    },
+    {
+      "start": 682.24,
+      "duration": 2.24,
+      "text": "specialty, whatever."
+    },
+    {
+      "start": 683.68,
+      "duration": 4.08,
+      "text": ">> Mhm."
+    },
+    {
+      "start": 684.48,
+      "duration": 5.599,
+      "text": ">> I I think what they leave out is that if"
+    },
+    {
+      "start": 687.76,
+      "duration": 5.44,
+      "text": "you're in a market where a seller can"
+    },
+    {
+      "start": 690.079,
+      "duration": 5.281,
+      "text": "sell retail and not have a problem,"
+    },
+    {
+      "start": 693.2,
+      "duration": 4.56,
+      "text": "what really"
+    },
+    {
+      "start": 695.36,
+      "duration": 6.4,
+      "text": "gives you any sort of leverage with them"
+    },
+    {
+      "start": 697.76,
+      "duration": 5.759,
+      "text": "to to go with a creative strategy? Mh."
+    },
+    {
+      "start": 701.76,
+      "duration": 2.8,
+      "text": ">> And what happens is people say, \"Oh,"
+    },
+    {
+      "start": 703.519,
+      "duration": 2.88,
+      "text": "they get all excited about creative,"
+    },
+    {
+      "start": 704.56,
+      "duration": 3.279,
+      "text": "they go to a seminar, blah blah blah,"
+    },
+    {
+      "start": 706.399,
+      "duration": 3.841,
+      "text": "and they go and try it and they get"
+    },
+    {
+      "start": 707.839,
+      "duration": 5.68,
+      "text": "there's so many nos, right? But what if"
+    },
+    {
+      "start": 710.24,
+      "duration": 5.039,
+      "text": "you found somebody that can't sell to"
+    },
+    {
+      "start": 713.519,
+      "duration": 3.601,
+      "text": "any anybody because they can't get title"
+    },
+    {
+      "start": 715.279,
+      "duration": 3.041,
+      "text": "insurance, so there's nobody really"
+    },
+    {
+      "start": 717.12,
+      "duration": 2.24,
+      "text": "calling them and and even the people"
+    },
+    {
+      "start": 718.32,
+      "duration": 2.72,
+      "text": "that call them, they don't know how to"
+    },
+    {
+      "start": 719.36,
+      "duration": 4.32,
+      "text": "solve the problem. But then you"
+    },
+    {
+      "start": 721.04,
+      "duration": 4.799,
+      "text": "introduce a solution and now you also"
+    },
+    {
+      "start": 723.68,
+      "duration": 4.719,
+      "text": "have a compelling reason why you need to"
+    },
+    {
+      "start": 725.839,
+      "duration": 4.721,
+      "text": "do creative.\" So I was like, \"Oh my god,"
+    },
+    {
+      "start": 728.399,
+      "duration": 3.521,
+      "text": "this is like mana from heaven.\" because"
+    },
+    {
+      "start": 730.56,
+      "duration": 3.279,
+      "text": "you know I've learned from Pete and all"
+    },
+    {
+      "start": 731.92,
+      "duration": 3.52,
+      "text": "those guys and I was like well how can I"
+    },
+    {
+      "start": 733.839,
+      "duration": 2.721,
+      "text": "use in California cuz you know people"
+    },
+    {
+      "start": 735.44,
+      "duration": 2.16,
+      "text": "will tell you the real estate club"
+    },
+    {
+      "start": 736.56,
+      "duration": 2.959,
+      "text": "meetings oh you can't do creative in"
+    },
+    {
+      "start": 737.6,
+      "duration": 3.6,
+      "text": "California people go just you know put"
+    },
+    {
+      "start": 739.519,
+      "duration": 3.44,
+      "text": "it on the MLS and sell it why would they"
+    },
+    {
+      "start": 741.2,
+      "duration": 3.52,
+      "text": "want to you know carry it for you know"
+    },
+    {
+      "start": 742.959,
+      "duration": 5.12,
+      "text": "200 months or you know all the stuff we"
+    },
+    {
+      "start": 744.72,
+      "duration": 6.0,
+      "text": "learn and because you combine the two"
+    },
+    {
+      "start": 748.079,
+      "duration": 4.721,
+      "text": "now you are actually solving the problem"
+    },
+    {
+      "start": 750.72,
+      "duration": 3.28,
+      "text": "but you're also building in a way to"
+    },
+    {
+      "start": 752.8,
+      "duration": 3.599,
+      "text": "kind of protect yourself by using"
+    },
+    {
+      "start": 754.0,
+      "duration": 4.399,
+      "text": "creative right these so there's ways to"
+    },
+    {
+      "start": 756.399,
+      "duration": 4.24,
+      "text": "to I mean it's just it's just a marriage"
+    },
+    {
+      "start": 758.399,
+      "duration": 4.0,
+      "text": "that works really well together is when"
+    },
+    {
+      "start": 760.639,
+      "duration": 3.601,
+      "text": "you find the curative and then you bring"
+    },
+    {
+      "start": 762.399,
+      "duration": 3.201,
+      "text": "the creative solution."
+    },
+    {
+      "start": 764.24,
+      "duration": 2.88,
+      "text": ">> It's not like there's a lot of people,"
+    },
+    {
+      "start": 765.6,
+      "duration": 2.88,
+      "text": "you know, beating down the door to solve"
+    },
+    {
+      "start": 767.12,
+      "duration": 2.88,
+      "text": "that problem."
+    },
+    {
+      "start": 768.48,
+      "duration": 3.84,
+      "text": ">> So, um I love it"
+    },
+    {
+      "start": 770.0,
+      "duration": 4.959,
+      "text": ">> and and and I I agree with that because"
+    },
+    {
+      "start": 772.32,
+      "duration": 6.0,
+      "text": "it's like um so I remember one of the"
+    },
+    {
+      "start": 774.959,
+      "duration": 4.88,
+      "text": "curative deals I did. Um it was it was"
+    },
+    {
+      "start": 778.32,
+      "duration": 3.28,
+      "text": "probably one of my chunkier files. Like"
+    },
+    {
+      "start": 779.839,
+      "duration": 4.721,
+      "text": "I I I had to I had to bite through a lot"
+    },
+    {
+      "start": 781.6,
+      "duration": 5.28,
+      "text": "to really solve the issues on this deal."
+    },
+    {
+      "start": 784.56,
+      "duration": 4.959,
+      "text": ">> Um I I had to convince the owner that he"
+    },
+    {
+      "start": 786.88,
+      "duration": 5.519,
+      "text": "even still owned it. Um, and and then I"
+    },
+    {
+      "start": 789.519,
+      "duration": 5.361,
+      "text": "had to work through so so so much to to"
+    },
+    {
+      "start": 792.399,
+      "duration": 4.321,
+      "text": "clear it. And I remember this guy pulled"
+    },
+    {
+      "start": 794.88,
+      "duration": 4.24,
+      "text": "in one day. So I was there at the I was"
+    },
+    {
+      "start": 796.72,
+      "duration": 4.0,
+      "text": "checking in on the property and um this"
+    },
+    {
+      "start": 799.12,
+      "duration": 3.04,
+      "text": "guy pulls in to the driveway and I'm"
+    },
+    {
+      "start": 800.72,
+      "duration": 3.2,
+      "text": "like, \"All right, who's this?\" You know,"
+    },
+    {
+      "start": 802.16,
+      "duration": 3.44,
+      "text": "like I'm I'm like my guard's up. I'm"
+    },
+    {
+      "start": 803.92,
+      "duration": 2.96,
+      "text": "like, \"Who?\" Yeah. And he came and he"
+    },
+    {
+      "start": 805.6,
+      "duration": 2.16,
+      "text": "was like a little bit foaming at the"
+    },
+    {
+      "start": 806.88,
+      "duration": 2.56,
+      "text": "mouth. He was like, \"How'd [laughter]"
+    },
+    {
+      "start": 807.76,
+      "duration": 3.519,
+      "text": "you do it? How'd you do it?\" He's like,"
+    },
+    {
+      "start": 809.44,
+      "duration": 4.079,
+      "text": "\"I spent years trying to fix this"
+    },
+    {
+      "start": 811.279,
+      "duration": 4.24,
+      "text": "house.\" He said, \"Are you the lady that"
+    },
+    {
+      "start": 813.519,
+      "duration": 3.361,
+      "text": "um that owns it now?\" and someone told"
+    },
+    {
+      "start": 815.519,
+      "duration": 3.681,
+      "text": "me a lady owns it now and she's getting"
+    },
+    {
+      "start": 816.88,
+      "duration": 3.44,
+      "text": "it sorted out. How'd you do it? Yeah. I"
+    },
+    {
+      "start": 819.2,
+      "duration": 2.319,
+      "text": "was like, man, if you would at least"
+    },
+    {
+      "start": 820.32,
+      "duration": 2.4,
+      "text": "approached me a little bit different, we"
+    },
+    {
+      "start": 821.519,
+      "duration": 3.041,
+      "text": "probably would have had to like gone and"
+    },
+    {
+      "start": 822.72,
+      "duration": 2.88,
+      "text": "had lunch. I like, hey, just take me to"
+    },
+    {
+      "start": 824.56,
+      "duration": 1.44,
+      "text": "lunch and I'll tell you,"
+    },
+    {
+      "start": 825.6,
+      "duration": 4.32,
+      "text": ">> right?"
+    },
+    {
+      "start": 826.0,
+      "duration": 6.16,
+      "text": ">> Um but he was so like,"
+    },
+    {
+      "start": 829.92,
+      "duration": 4.88,
+      "text": "you know, butt hurt because he had tried"
+    },
+    {
+      "start": 832.16,
+      "duration": 4.0,
+      "text": "so hard but like couldn't figure it out."
+    },
+    {
+      "start": 834.8,
+      "duration": 4.32,
+      "text": ">> And um"
+    },
+    {
+      "start": 836.16,
+      "duration": 5.2,
+      "text": ">> but there's a level that"
+    },
+    {
+      "start": 839.12,
+      "duration": 3.6,
+      "text": "um it comes back to very similar to so"
+    },
+    {
+      "start": 841.36,
+      "duration": 2.719,
+      "text": "very similar to some of the core"
+    },
+    {
+      "start": 842.72,
+      "duration": 2.64,
+      "text": "principles with creative. It's like"
+    },
+    {
+      "start": 844.079,
+      "duration": 3.521,
+      "text": "looking at your different tools that you"
+    },
+    {
+      "start": 845.36,
+      "duration": 6.2,
+      "text": "have in your tool belt and then seeing"
+    },
+    {
+      "start": 847.6,
+      "duration": 3.96,
+      "text": "it as, you know,"
+    },
+    {
+      "start": 851.68,
+      "duration": 4.24,
+      "text": "offering it. You know, people accept"
+    },
+    {
+      "start": 853.68,
+      "duration": 2.959,
+      "text": "creative offers because of the benefit."
+    },
+    {
+      "start": 855.92,
+      "duration": 2.64,
+      "text": ">> Mhm."
+    },
+    {
+      "start": 856.639,
+      "duration": 3.361,
+      "text": ">> And you know, you've got to get more"
+    },
+    {
+      "start": 858.56,
+      "duration": 2.88,
+      "text": "creative with that with seller financing"
+    },
+    {
+      "start": 860.0,
+      "duration": 3.76,
+      "text": "and subject to things like that. There"
+    },
+    {
+      "start": 861.44,
+      "duration": 3.68,
+      "text": "needs to be some, you know, level of I"
+    },
+    {
+      "start": 863.76,
+      "duration": 2.56,
+      "text": "even believe that even with creative,"
+    },
+    {
+      "start": 865.12,
+      "duration": 3.36,
+      "text": "there needs to be some level of a"
+    },
+    {
+      "start": 866.32,
+      "duration": 4.48,
+      "text": "problem being solved, right? Still,"
+    },
+    {
+      "start": 868.48,
+      "duration": 4.88,
+      "text": ">> I agree. Um but then with curative it's"
+    },
+    {
+      "start": 870.8,
+      "duration": 5.279,
+      "text": "like a very obvious problem like hey you"
+    },
+    {
+      "start": 873.36,
+      "duration": 3.76,
+      "text": "you can't sell otherwise"
+    },
+    {
+      "start": 876.079,
+      "duration": 6.0,
+      "text": ">> um"
+    },
+    {
+      "start": 877.12,
+      "duration": 7.44,
+      "text": ">> and so now where do you think people get"
+    },
+    {
+      "start": 882.079,
+      "duration": 5.041,
+      "text": "curative completely wrong? So like"
+    },
+    {
+      "start": 884.56,
+      "duration": 4.639,
+      "text": "solving these title and ownership issues"
+    },
+    {
+      "start": 887.12,
+      "duration": 3.68,
+      "text": "that you know often lead to litigation"
+    },
+    {
+      "start": 889.199,
+      "duration": 3.121,
+      "text": "and lose money because they didn't"
+    },
+    {
+      "start": 890.8,
+      "duration": 2.8,
+      "text": "understand what they were fixing. What"
+    },
+    {
+      "start": 892.32,
+      "duration": 2.48,
+      "text": "do what do you think are some of those"
+    },
+    {
+      "start": 893.6,
+      "duration": 2.64,
+      "text": "pitfalls?"
+    },
+    {
+      "start": 894.8,
+      "duration": 3.839,
+      "text": ">> There's a couple of pitfalls that I've"
+    },
+    {
+      "start": 896.24,
+      "duration": 3.92,
+      "text": "seen. Number one is you know that old"
+    },
+    {
+      "start": 898.639,
+      "duration": 4.32,
+      "text": "saying is the juice worth the squeeze."
+    },
+    {
+      "start": 900.16,
+      "duration": 5.039,
+      "text": "So people get so enamored with kind of"
+    },
+    {
+      "start": 902.959,
+      "duration": 3.68,
+      "text": "the surface what they see and then they"
+    },
+    {
+      "start": 905.199,
+      "duration": 4.481,
+      "text": "just start digging because they think oh"
+    },
+    {
+      "start": 906.639,
+      "duration": 7.2,
+      "text": "I can fix this problem but they fail to"
+    },
+    {
+      "start": 909.68,
+      "duration": 6.8,
+      "text": "to do a very uh educated risk analysis"
+    },
+    {
+      "start": 913.839,
+      "duration": 4.881,
+      "text": "about okay I could fix this problem but"
+    },
+    {
+      "start": 916.48,
+      "duration": 3.84,
+      "text": "by the time I'm done with all this"
+    },
+    {
+      "start": 918.72,
+      "duration": 3.2,
+      "text": "here's what I'm going to end up with at"
+    },
+    {
+      "start": 920.32,
+      "duration": 3.519,
+      "text": "the end of the day if I if everything"
+    },
+    {
+      "start": 921.92,
+      "duration": 3.919,
+      "text": "goes well. and if if things don't go"
+    },
+    {
+      "start": 923.839,
+      "duration": 3.841,
+      "text": "well, I may end up with a negative or"
+    },
+    {
+      "start": 925.839,
+      "duration": 4.641,
+      "text": "zero or or you know, something like"
+    },
+    {
+      "start": 927.68,
+      "duration": 5.2,
+      "text": "that. So, sometimes people get sucked"
+    },
+    {
+      "start": 930.48,
+      "duration": 4.32,
+      "text": "into the drama of being able to fix it."
+    },
+    {
+      "start": 932.88,
+      "duration": 3.84,
+      "text": "But they, you know, just cuz you can"
+    },
+    {
+      "start": 934.8,
+      "duration": 3.039,
+      "text": "doesn't mean you should, right? So,"
+    },
+    {
+      "start": 936.72,
+      "duration": 2.32,
+      "text": "that's that's one thing. And then"
+    },
+    {
+      "start": 937.839,
+      "duration": 1.921,
+      "text": "there's other ones where they just kind"
+    },
+    {
+      "start": 939.04,
+      "duration": 2.159,
+      "text": "of,"
+    },
+    {
+      "start": 939.76,
+      "duration": 3.04,
+      "text": ">> you know, they they they read about they"
+    },
+    {
+      "start": 941.199,
+      "duration": 3.921,
+      "text": "take a summer and they just go jump in"
+    },
+    {
+      "start": 942.8,
+      "duration": 4.96,
+      "text": "and they don't understand kind of the"
+    },
+    {
+      "start": 945.12,
+      "duration": 4.8,
+      "text": "the the rules of the road, the potential"
+    },
+    {
+      "start": 947.76,
+      "duration": 6.24,
+      "text": "pitfalls. like there there are leans"
+    },
+    {
+      "start": 949.92,
+      "duration": 6.8,
+      "text": "that you can that you're going to be uh"
+    },
+    {
+      "start": 954.0,
+      "duration": 4.24,
+      "text": "subject to, but it's not recorded."
+    },
+    {
+      "start": 956.72,
+      "duration": 3.76,
+      "text": ">> So, how do you protect yourself from"
+    },
+    {
+      "start": 958.24,
+      "duration": 3.519,
+      "text": "that? Right? And if you don't know,"
+    },
+    {
+      "start": 960.48,
+      "duration": 3.2,
+      "text": ">> right? It's not going to help you. So,"
+    },
+    {
+      "start": 961.759,
+      "duration": 3.281,
+      "text": "if you don't know, you don't know."
+    },
+    {
+      "start": 963.68,
+      "duration": 2.959,
+      "text": ">> And there's people that are"
+    },
+    {
+      "start": 965.04,
+      "duration": 4.32,
+      "text": "miscalculating that. And"
+    },
+    {
+      "start": 966.639,
+      "duration": 3.601,
+      "text": ">> so, like, for example, so so because"
+    },
+    {
+      "start": 969.36,
+      "duration": 2.32,
+      "text": "some people are going to be like,"
+    },
+    {
+      "start": 970.24,
+      "duration": 3.44,
+      "text": "Courtney, you have to ask that. So, like"
+    },
+    {
+      "start": 971.68,
+      "duration": 3.36,
+      "text": "what are some of those leans that you"
+    },
+    {
+      "start": 973.68,
+      "duration": 3.36,
+      "text": "would be subject to if you bought a"
+    },
+    {
+      "start": 975.04,
+      "duration": 3.2,
+      "text": "house, but it may not be recorded or"
+    },
+    {
+      "start": 977.04,
+      "duration": 3.359,
+      "text": "it's not recorded?"
+    },
+    {
+      "start": 978.24,
+      "duration": 3.2,
+      "text": ">> There's a medical Yeah, medical claim is"
+    },
+    {
+      "start": 980.399,
+      "duration": 2.0,
+      "text": "one of them."
+    },
+    {
+      "start": 981.44,
+      "duration": 2.319,
+      "text": ">> What is that?"
+    },
+    {
+      "start": 982.399,
+      "duration": 3.761,
+      "text": ">> Medical claims."
+    },
+    {
+      "start": 983.759,
+      "duration": 3.841,
+      "text": ">> Okay. So, that's uh tied to the state of"
+    },
+    {
+      "start": 986.16,
+      "duration": 1.76,
+      "text": "California."
+    },
+    {
+      "start": 987.6,
+      "duration": 1.919,
+      "text": ">> Um,"
+    },
+    {
+      "start": 987.92,
+      "duration": 3.44,
+      "text": ">> but there's there's an equivalent type"
+    },
+    {
+      "start": 989.519,
+      "duration": 3.44,
+      "text": "of thing in but they they do things a"
+    },
+    {
+      "start": 991.36,
+      "duration": 4.0,
+      "text": "little bit different per state, but"
+    },
+    {
+      "start": 992.959,
+      "duration": 4.401,
+      "text": "those aren't recorded in California."
+    },
+    {
+      "start": 995.36,
+      "duration": 4.24,
+      "text": "What are some other ones that you think"
+    },
+    {
+      "start": 997.36,
+      "duration": 4.159,
+      "text": "the one that came to mind is utilities"
+    },
+    {
+      "start": 999.6,
+      "duration": 4.96,
+      "text": "um that could potentially be tied to the"
+    },
+    {
+      "start": 1001.519,
+      "duration": 4.88,
+      "text": "property depending on if you know if it"
+    },
+    {
+      "start": 1004.56,
+      "duration": 3.12,
+      "text": "is with the property versus if it's with"
+    },
+    {
+      "start": 1006.399,
+      "duration": 3.521,
+      "text": "the individual."
+    },
+    {
+      "start": 1007.68,
+      "duration": 4.24,
+      "text": ">> Some some areas do it they follow the"
+    },
+    {
+      "start": 1009.92,
+      "duration": 3.44,
+      "text": "individual. Some areas"
+    },
+    {
+      "start": 1011.92,
+      "duration": 4.4,
+      "text": ">> um I mean I just had a friend buy a"
+    },
+    {
+      "start": 1013.36,
+      "duration": 4.88,
+      "text": "house um up north and they like closed"
+    },
+    {
+      "start": 1016.32,
+      "duration": 3.84,
+      "text": "on this flip and then all of a sudden"
+    },
+    {
+      "start": 1018.24,
+      "duration": 4.56,
+      "text": "after closing they get notified of a of"
+    },
+    {
+      "start": 1020.16,
+      "duration": 4.24,
+      "text": "a large utility bill that was not"
+    },
+    {
+      "start": 1022.8,
+      "duration": 3.44,
+      "text": ">> not a part of the situation. Right."
+    },
+    {
+      "start": 1024.4,
+      "duration": 4.48,
+      "text": "Right. Yeah. Yeah."
+    },
+    {
+      "start": 1026.24,
+      "duration": 4.719,
+      "text": ">> Um stuff like that. Um you you kind of"
+    },
+    {
+      "start": 1028.88,
+      "duration": 5.679,
+      "text": "alluded to it. One of the other pitfalls"
+    },
+    {
+      "start": 1030.959,
+      "duration": 5.36,
+      "text": "I see is that people who are very"
+    },
+    {
+      "start": 1034.559,
+      "duration": 4.0,
+      "text": "businessminded, like so think like"
+    },
+    {
+      "start": 1036.319,
+      "duration": 3.841,
+      "text": "wholesalers, stuff like that, who some"
+    },
+    {
+      "start": 1038.559,
+      "duration": 3.12,
+      "text": "people are converting from that world"
+    },
+    {
+      "start": 1040.16,
+      "duration": 5.2,
+      "text": "into this world."
+    },
+    {
+      "start": 1041.679,
+      "duration": 5.76,
+      "text": ">> Um they're so used to just flippantly"
+    },
+    {
+      "start": 1045.36,
+      "duration": 3.679,
+      "text": "going into a new market,"
+    },
+    {
+      "start": 1047.439,
+      "duration": 3.841,
+      "text": ">> i.e. a new state,"
+    },
+    {
+      "start": 1049.039,
+      "duration": 4.161,
+      "text": ">> right? and they think that that is a um"
+    },
+    {
+      "start": 1051.28,
+      "duration": 3.04,
+      "text": "a flippant thing like oh I can just go"
+    },
+    {
+      "start": 1053.2,
+      "duration": 1.599,
+      "text": "to you know"
+    },
+    {
+      "start": 1054.32,
+      "duration": 3.92,
+      "text": ">> right"
+    },
+    {
+      "start": 1054.799,
+      "duration": 5.76,
+      "text": ">> and um so I personally am from Louisiana"
+    },
+    {
+      "start": 1058.24,
+      "duration": 4.559,
+      "text": "my you know so the Louisiana market"
+    },
+    {
+      "start": 1060.559,
+      "duration": 4.24,
+      "text": "which by the way is a very weird title"
+    },
+    {
+      "start": 1062.799,
+      "duration": 4.0,
+      "text": "state you know in general Napoleonic law"
+    },
+    {
+      "start": 1064.799,
+      "duration": 3.441,
+      "text": "is different than other states"
+    },
+    {
+      "start": 1066.799,
+      "duration": 3.521,
+      "text": ">> um and I've done a lot of work in"
+    },
+    {
+      "start": 1068.24,
+      "duration": 3.52,
+      "text": "Mississippi as well uh and then I just"
+    },
+    {
+      "start": 1070.32,
+      "duration": 3.52,
+      "text": "moved to Florida. All three of those"
+    },
+    {
+      "start": 1071.76,
+      "duration": 4.0,
+      "text": "states are very different, you know, but"
+    },
+    {
+      "start": 1073.84,
+      "duration": 4.56,
+      "text": "and there's some there's some carryover,"
+    },
+    {
+      "start": 1075.76,
+      "duration": 4.88,
+      "text": "but it's like people get lost in the the"
+    },
+    {
+      "start": 1078.4,
+      "duration": 4.48,
+      "text": "pitfall of thinking that one thing"
+    },
+    {
+      "start": 1080.64,
+      "duration": 3.919,
+      "text": "applies everywhere and sometimes it"
+    },
+    {
+      "start": 1082.88,
+      "duration": 3.84,
+      "text": "does, but sometimes it doesn't. You"
+    },
+    {
+      "start": 1084.559,
+      "duration": 4.0,
+      "text": "know, it can be very state by state. It"
+    },
+    {
+      "start": 1086.72,
+      "duration": 2.4,
+      "text": "can be, you know, the city based on the"
+    },
+    {
+      "start": 1088.559,
+      "duration": 1.12,
+      "text": "city,"
+    },
+    {
+      "start": 1089.12,
+      "duration": 1.439,
+      "text": ">> right?"
+    },
+    {
+      "start": 1089.679,
+      "duration": 2.721,
+      "text": ">> Um,"
+    },
+    {
+      "start": 1090.559,
+      "duration": 4.321,
+      "text": ">> and yeah, because I think some people,"
+    },
+    {
+      "start": 1092.4,
+      "duration": 4.159,
+      "text": "again, I like how you said, you know, is"
+    },
+    {
+      "start": 1094.88,
+      "duration": 4.0,
+      "text": "a juice worth a squeeze? It's like, you"
+    },
+    {
+      "start": 1096.559,
+      "duration": 4.24,
+      "text": "know, every house that, you know, has,"
+    },
+    {
+      "start": 1098.88,
+      "duration": 3.36,
+      "text": "you know, maintenance issues and is a a"
+    },
+    {
+      "start": 1100.799,
+      "duration": 2.321,
+      "text": "fixer upper doesn't mean it's a good"
+    },
+    {
+      "start": 1102.24,
+      "duration": 2.08,
+      "text": "flip,"
+    },
+    {
+      "start": 1103.12,
+      "duration": 3.28,
+      "text": ">> right?"
+    },
+    {
+      "start": 1104.32,
+      "duration": 5.12,
+      "text": ">> Yeah. 100% agree."
+    },
+    {
+      "start": 1106.4,
+      "duration": 5.92,
+      "text": ">> And it takes it takes a lot of wisdom to"
+    },
+    {
+      "start": 1109.44,
+      "duration": 4.96,
+      "text": "help you develop that sense of saying,"
+    },
+    {
+      "start": 1112.32,
+      "duration": 5.44,
+      "text": "\"Okay, let me really truly evaluate the"
+    },
+    {
+      "start": 1114.4,
+      "duration": 5.76,
+      "text": "risk here.\" And that takes time."
+    },
+    {
+      "start": 1117.76,
+      "duration": 5.039,
+      "text": ">> Yeah. you know, someone I I've really"
+    },
+    {
+      "start": 1120.16,
+      "duration": 5.2,
+      "text": "enjoyed this idea of like risk analysis"
+    },
+    {
+      "start": 1122.799,
+      "duration": 6.0,
+      "text": "and that being"
+    },
+    {
+      "start": 1125.36,
+      "duration": 4.8,
+      "text": "like a really strong muscle that you"
+    },
+    {
+      "start": 1128.799,
+      "duration": 3.041,
+      "text": "have to build"
+    },
+    {
+      "start": 1130.16,
+      "duration": 3.68,
+      "text": ">> in this business. Um, it's something"
+    },
+    {
+      "start": 1131.84,
+      "duration": 4.32,
+      "text": "that I'm surely trying to like build for"
+    },
+    {
+      "start": 1133.84,
+      "duration": 4.16,
+      "text": "myself is like that risk analysis to"
+    },
+    {
+      "start": 1136.16,
+      "duration": 3.68,
+      "text": "understand which deals are a yes and"
+    },
+    {
+      "start": 1138.0,
+      "duration": 4.0,
+      "text": "which deals are a no."
+    },
+    {
+      "start": 1139.84,
+      "duration": 3.68,
+      "text": ">> Um, do you have any like rules of thumb"
+    },
+    {
+      "start": 1142.0,
+      "duration": 3.039,
+      "text": "like when you're looking at deals of"
+    },
+    {
+      "start": 1143.52,
+      "duration": 4.88,
+      "text": "like"
+    },
+    {
+      "start": 1145.039,
+      "duration": 5.361,
+      "text": ">> you know how you do that analysis? Uh,"
+    },
+    {
+      "start": 1148.4,
+      "duration": 4.399,
+      "text": "you know, a lot of it is gut. I mean, I"
+    },
+    {
+      "start": 1150.4,
+      "duration": 3.68,
+      "text": "do the math and I and I think, okay, if"
+    },
+    {
+      "start": 1152.799,
+      "duration": 3.361,
+      "text": "everything goes well, here's what I"
+    },
+    {
+      "start": 1154.08,
+      "duration": 5.599,
+      "text": "think I'm going to make. Uh, and I look"
+    },
+    {
+      "start": 1156.16,
+      "duration": 4.639,
+      "text": "for possible trouble spots that, um, you"
+    },
+    {
+      "start": 1159.679,
+      "duration": 3.12,
+      "text": "know, could throw the whole thing"
+    },
+    {
+      "start": 1160.799,
+      "duration": 3.841,
+      "text": "sideways. And you're always learning"
+    },
+    {
+      "start": 1162.799,
+      "duration": 3.12,
+      "text": "about, you know, the things you didn't"
+    },
+    {
+      "start": 1164.64,
+      "duration": 3.6,
+      "text": "account for."
+    },
+    {
+      "start": 1165.919,
+      "duration": 4.88,
+      "text": ">> And, uh, the, you know, that's why I say"
+    },
+    {
+      "start": 1168.24,
+      "duration": 4.799,
+      "text": "the only real thing you have under your"
+    },
+    {
+      "start": 1170.799,
+      "duration": 3.921,
+      "text": "control is how deep of a discount you"
+    },
+    {
+      "start": 1173.039,
+      "duration": 4.0,
+      "text": "buy it. So, that gives you some"
+    },
+    {
+      "start": 1174.72,
+      "duration": 3.76,
+      "text": "insulation from it. uh and that's the"
+    },
+    {
+      "start": 1177.039,
+      "duration": 3.76,
+      "text": "best you can do or you know just saying"
+    },
+    {
+      "start": 1178.48,
+      "duration": 4.64,
+      "text": "no and saying no to those deals and I"
+    },
+    {
+      "start": 1180.799,
+      "duration": 3.921,
+      "text": "think that's one of the best lessons in"
+    },
+    {
+      "start": 1183.12,
+      "duration": 3.919,
+      "text": "curative because everything looks like a"
+    },
+    {
+      "start": 1184.72,
+      "duration": 5.839,
+      "text": "deal but then say that you get caught up"
+    },
+    {
+      "start": 1187.039,
+      "duration": 4.801,
+      "text": "in one and it's very tempting to just"
+    },
+    {
+      "start": 1190.559,
+      "duration": 4.081,
+      "text": "kind of see it through because you've"
+    },
+    {
+      "start": 1191.84,
+      "duration": 4.56,
+      "text": "invested so much time in it already but"
+    },
+    {
+      "start": 1194.64,
+      "duration": 2.8,
+      "text": "there is some wisdom to just saying hey"
+    },
+    {
+      "start": 1196.4,
+      "duration": 3.279,
+      "text": "I'm going to cut this loose because"
+    },
+    {
+      "start": 1197.44,
+      "duration": 4.56,
+      "text": "there's other stuff that's probably"
+    },
+    {
+      "start": 1199.679,
+      "duration": 3.521,
+      "text": "easier to monetize that I could I could"
+    },
+    {
+      "start": 1202.0,
+      "duration": 3.44,
+      "text": "do that or or have a greater"
+    },
+    {
+      "start": 1203.2,
+      "duration": 4.08,
+      "text": "monetization I saw somebody that did a"
+    },
+    {
+      "start": 1205.44,
+      "duration": 3.52,
+      "text": "curative with and you know he was"
+    },
+    {
+      "start": 1207.28,
+      "duration": 3.759,
+      "text": "excited and not to not to you know put"
+    },
+    {
+      "start": 1208.96,
+      "duration": 3.76,
+      "text": "him down cuz he did make some money but"
+    },
+    {
+      "start": 1211.039,
+      "duration": 4.561,
+      "text": "it took him over a year or close to a"
+    },
+    {
+      "start": 1212.72,
+      "duration": 4.8,
+      "text": "year to do it and and to me there were"
+    },
+    {
+      "start": 1215.6,
+      "duration": 3.6,
+      "text": "so many other possible deals out there"
+    },
+    {
+      "start": 1217.52,
+      "duration": 3.039,
+      "text": "that he could have used his skills and"
+    },
+    {
+      "start": 1219.2,
+      "duration": 3.68,
+      "text": "he would have made six figures instead"
+    },
+    {
+      "start": 1220.559,
+      "duration": 4.081,
+      "text": "of five. So yeah, I mean I'm playing"
+    },
+    {
+      "start": 1222.88,
+      "duration": 3.28,
+      "text": "kind of armchair quarterback and you"
+    },
+    {
+      "start": 1224.64,
+      "duration": 3.6,
+      "text": "know he did make money so there's you"
+    },
+    {
+      "start": 1226.16,
+      "duration": 3.759,
+      "text": "know nothing wrong with that but it's a"
+    },
+    {
+      "start": 1228.24,
+      "duration": 5.28,
+      "text": "good reminder for me at least to say"
+    },
+    {
+      "start": 1229.919,
+      "duration": 6.561,
+      "text": "okay don't get enamored with you know"
+    },
+    {
+      "start": 1233.52,
+      "duration": 4.8,
+      "text": "the deal really think about I have you"
+    },
+    {
+      "start": 1236.48,
+      "duration": 3.6,
+      "text": "know limited energy limited resources"
+    },
+    {
+      "start": 1238.32,
+      "duration": 3.12,
+      "text": "let me make sure I apply it in the most"
+    },
+    {
+      "start": 1240.08,
+      "duration": 2.719,
+      "text": "optimal way"
+    },
+    {
+      "start": 1241.44,
+      "duration": 3.599,
+      "text": ">> that's probably been some of the biggest"
+    },
+    {
+      "start": 1242.799,
+      "duration": 4.081,
+      "text": "feedback I have for myself like doing"
+    },
+    {
+      "start": 1245.039,
+      "duration": 2.801,
+      "text": "this I don't want to say haphazardly but"
+    },
+    {
+      "start": 1246.88,
+      "duration": 4.159,
+      "text": "like"
+    },
+    {
+      "start": 1247.84,
+      "duration": 5.12,
+      "text": ">> you know over the years is I often like"
+    },
+    {
+      "start": 1251.039,
+      "duration": 4.0,
+      "text": "one of the biggest mistakes with"
+    },
+    {
+      "start": 1252.96,
+      "duration": 3.92,
+      "text": "curative is time because that's so ex"
+    },
+    {
+      "start": 1255.039,
+      "duration": 2.64,
+      "text": "time is so much more expensive than we"
+    },
+    {
+      "start": 1256.88,
+      "duration": 2.08,
+      "text": "realize."
+    },
+    {
+      "start": 1257.679,
+      "duration": 3.041,
+      "text": ">> Yeah. Yeah."
+    },
+    {
+      "start": 1258.96,
+      "duration": 4.079,
+      "text": ">> And like getting just letting something"
+    },
+    {
+      "start": 1260.72,
+      "duration": 4.56,
+      "text": "draw and for me it was like because it"
+    },
+    {
+      "start": 1263.039,
+      "duration": 4.481,
+      "text": "wasn't my main business it was like oh"
+    },
+    {
+      "start": 1265.28,
+      "duration": 3.92,
+      "text": "well this takes a lot of you know"
+    },
+    {
+      "start": 1267.52,
+      "duration": 3.68,
+      "text": ">> touches right like we have to focus on"
+    },
+    {
+      "start": 1269.2,
+      "duration": 5.68,
+      "text": "this like be involved with this."
+    },
+    {
+      "start": 1271.2,
+      "duration": 5.2,
+      "text": ">> Um and so for me I had some files that"
+    },
+    {
+      "start": 1274.88,
+      "duration": 2.88,
+      "text": "took a year or two years and I I"
+    },
+    {
+      "start": 1276.4,
+      "duration": 4.08,
+      "text": "basically gave it more time than it"
+    },
+    {
+      "start": 1277.76,
+      "duration": 3.84,
+      "text": "should have. Thankfully, um you know,"
+    },
+    {
+      "start": 1280.48,
+      "duration": 2.8,
+      "text": "you know, one of them I doubled my"
+    },
+    {
+      "start": 1281.6,
+      "duration": 5.199,
+      "text": "money, the other one I made, you know,"
+    },
+    {
+      "start": 1283.28,
+      "duration": 5.12,
+      "text": "$130,000 on it. And so, like, yeah, you"
+    },
+    {
+      "start": 1286.799,
+      "duration": 2.641,
+      "text": "you make money, but like, man, it would"
+    },
+    {
+      "start": 1288.4,
+      "duration": 2.88,
+      "text": "have been very different if I would have"
+    },
+    {
+      "start": 1289.44,
+      "duration": 2.8,
+      "text": "made that money in 6 months versus in"
+    },
+    {
+      "start": 1291.28,
+      "duration": 1.759,
+      "text": "two years, you know?"
+    },
+    {
+      "start": 1292.24,
+      "duration": 4.96,
+      "text": ">> Right. Right."
+    },
+    {
+      "start": 1293.039,
+      "duration": 5.601,
+      "text": ">> Or whatever. And so, what when"
+    },
+    {
+      "start": 1297.2,
+      "duration": 4.24,
+      "text": "the difference between a cured problem"
+    },
+    {
+      "start": 1298.64,
+      "duration": 5.039,
+      "text": "that's solvable and one that's a trap?"
+    },
+    {
+      "start": 1301.44,
+      "duration": 3.359,
+      "text": "What do you what do you think that you"
+    },
+    {
+      "start": 1303.679,
+      "duration": 4.161,
+      "text": "know, and"
+    },
+    {
+      "start": 1304.799,
+      "duration": 5.12,
+      "text": ">> take that for what you will, right? Like"
+    },
+    {
+      "start": 1307.84,
+      "duration": 4.4,
+      "text": "are there such things as like money pits"
+    },
+    {
+      "start": 1309.919,
+      "duration": 3.841,
+      "text": "or like you know curative that can go"
+    },
+    {
+      "start": 1312.24,
+      "duration": 4.88,
+      "text": "south?"
+    },
+    {
+      "start": 1313.76,
+      "duration": 6.64,
+      "text": ">> For sure. I think if there is just from"
+    },
+    {
+      "start": 1317.12,
+      "duration": 4.48,
+      "text": "all the the elements of the situation,"
+    },
+    {
+      "start": 1320.4,
+      "duration": 2.72,
+      "text": "it looks like there's going to be a lot"
+    },
+    {
+      "start": 1321.6,
+      "duration": 4.079,
+      "text": "of litigation and a lot of people"
+    },
+    {
+      "start": 1323.12,
+      "duration": 5.039,
+      "text": "fighting back that are and have the"
+    },
+    {
+      "start": 1325.679,
+      "duration": 4.641,
+      "text": "means to fight back with you to to even"
+    },
+    {
+      "start": 1328.159,
+      "duration": 4.241,
+      "text": "if you're right, there's a price tag"
+    },
+    {
+      "start": 1330.32,
+      "duration": 3.76,
+      "text": "attached to proving you're right. And"
+    },
+    {
+      "start": 1332.4,
+      "duration": 3.2,
+      "text": "you have to be able to separate your ego"
+    },
+    {
+      "start": 1334.08,
+      "duration": 3.68,
+      "text": "from saying, you know, I I may be right,"
+    },
+    {
+      "start": 1335.6,
+      "duration": 4.4,
+      "text": "but the the price of being right and"
+    },
+    {
+      "start": 1337.76,
+      "duration": 3.6,
+      "text": "fighting this other, you know, person"
+    },
+    {
+      "start": 1340.0,
+      "duration": 3.84,
+      "text": "that could be an air, it could be an"
+    },
+    {
+      "start": 1341.36,
+      "duration": 3.84,
+      "text": "agency or whatever."
+    },
+    {
+      "start": 1343.84,
+      "duration": 3.12,
+      "text": "Do you want to really expend your"
+    },
+    {
+      "start": 1345.2,
+      "duration": 3.44,
+      "text": "capital and energy and your your mind,"
+    },
+    {
+      "start": 1346.96,
+      "duration": 2.88,
+      "text": "you know, your brain space, right?"
+    },
+    {
+      "start": 1348.64,
+      "duration": 3.44,
+      "text": "Because that's going to occupy your"
+    },
+    {
+      "start": 1349.84,
+      "duration": 3.839,
+      "text": "brain if you're involved in a in in a"
+    },
+    {
+      "start": 1352.08,
+      "duration": 3.92,
+      "text": "situation that you're you're constantly"
+    },
+    {
+      "start": 1353.679,
+      "duration": 5.521,
+      "text": "thinking about. I know I do. uh I I"
+    },
+    {
+      "start": 1356.0,
+      "duration": 4.32,
+      "text": "better make sure that uh that that it's"
+    },
+    {
+      "start": 1359.2,
+      "duration": 3.76,
+      "text": "worth it and that I want to see it"
+    },
+    {
+      "start": 1360.32,
+      "duration": 5.04,
+      "text": "through and that the uh the reward is is"
+    },
+    {
+      "start": 1362.96,
+      "duration": 3.68,
+      "text": "uh measure it with all the energy that"
+    },
+    {
+      "start": 1365.36,
+      "duration": 2.88,
+      "text": "I'm expending whether I'm working on the"
+    },
+    {
+      "start": 1366.64,
+      "duration": 4.0,
+      "text": "case or just just you know thinking"
+    },
+    {
+      "start": 1368.24,
+      "duration": 5.679,
+      "text": "about it throughout the day. So, the"
+    },
+    {
+      "start": 1370.64,
+      "duration": 5.039,
+      "text": "ones that are are traps,"
+    },
+    {
+      "start": 1373.919,
+      "duration": 3.361,
+      "text": "I think it it has a lot to do with"
+    },
+    {
+      "start": 1375.679,
+      "duration": 3.761,
+      "text": "litigation because once you start once"
+    },
+    {
+      "start": 1377.28,
+      "duration": 3.6,
+      "text": "you pull that litigation lever and you"
+    },
+    {
+      "start": 1379.44,
+      "duration": 2.8,
+      "text": "need to bring in professional help. I"
+    },
+    {
+      "start": 1380.88,
+      "duration": 3.76,
+      "text": "mean, you know, you're looking at four"
+    },
+    {
+      "start": 1382.24,
+      "duration": 3.76,
+      "text": "or 500 bucks an hour with, you know, you"
+    },
+    {
+      "start": 1384.64,
+      "duration": 2.88,
+      "text": "know, the favorite thing attorneys say"
+    },
+    {
+      "start": 1386.0,
+      "duration": 2.559,
+      "text": "was, you know, well, it depends. Well,"
+    },
+    {
+      "start": 1387.52,
+      "duration": 2.639,
+      "text": "you say, well, how much is it going to"
+    },
+    {
+      "start": 1388.559,
+      "duration": 3.521,
+      "text": "cost you to solve this problem? It"
+    },
+    {
+      "start": 1390.159,
+      "duration": 3.201,
+      "text": "depends, right? So, you don't know what"
+    },
+    {
+      "start": 1392.08,
+      "duration": 4.479,
+      "text": "you don't know until you kind of dig"
+    },
+    {
+      "start": 1393.36,
+      "duration": 5.28,
+      "text": "into it. And, uh, remember, we're not in"
+    },
+    {
+      "start": 1396.559,
+      "duration": 4.641,
+      "text": "this thing to to win. we're in this"
+    },
+    {
+      "start": 1398.64,
+      "duration": 4.72,
+      "text": "thing to make some money, right? So,"
+    },
+    {
+      "start": 1401.2,
+      "duration": 4.0,
+      "text": ">> well, and I think that's why in the anal"
+    },
+    {
+      "start": 1403.36,
+      "duration": 3.52,
+      "text": "like the risk analysis phase, there"
+    },
+    {
+      "start": 1405.2,
+      "duration": 2.64,
+      "text": "needs to be a level of how can this go"
+    },
+    {
+      "start": 1406.88,
+      "duration": 3.44,
+      "text": "wrong,"
+    },
+    {
+      "start": 1407.84,
+      "duration": 5.12,
+      "text": ">> right? And some of this, like a lot of"
+    },
+    {
+      "start": 1410.32,
+      "duration": 4.239,
+      "text": "this is litigation, right? So, in the"
+    },
+    {
+      "start": 1412.96,
+      "duration": 3.28,
+      "text": "litigation, you know, some of that could"
+    },
+    {
+      "start": 1414.559,
+      "duration": 3.201,
+      "text": "be time."
+    },
+    {
+      "start": 1416.24,
+      "duration": 4.319,
+      "text": ">> Um, you know, what you know, what are"
+    },
+    {
+      "start": 1417.76,
+      "duration": 4.48,
+      "text": "some of those other ways? Um, and and"
+    },
+    {
+      "start": 1420.559,
+      "duration": 2.881,
+      "text": "it's just not just saying, oh, how much"
+    },
+    {
+      "start": 1422.24,
+      "duration": 3.04,
+      "text": "money could I make? and like being"
+    },
+    {
+      "start": 1423.44,
+      "duration": 4.56,
+      "text": "greedy and like you know stuff like that"
+    },
+    {
+      "start": 1425.28,
+      "duration": 4.24,
+      "text": "but it's also like what's my downside"
+    },
+    {
+      "start": 1428.0,
+      "duration": 3.52,
+      "text": ">> and you know I think this is where"
+    },
+    {
+      "start": 1429.52,
+      "duration": 4.08,
+      "text": "Charlie Mer and Warren Buffett and the"
+    },
+    {
+      "start": 1431.52,
+      "duration": 4.56,
+      "text": "likes um have done well to kind of teach"
+    },
+    {
+      "start": 1433.6,
+      "duration": 4.079,
+      "text": "us to to be mindful of that. Like I"
+    },
+    {
+      "start": 1436.08,
+      "duration": 3.76,
+      "text": "think the investor world doesn't talk"
+    },
+    {
+      "start": 1437.679,
+      "duration": 2.88,
+      "text": "about you know offense and defense very"
+    },
+    {
+      "start": 1439.84,
+      "duration": 2.319,
+      "text": "well"
+    },
+    {
+      "start": 1440.559,
+      "duration": 4.561,
+      "text": ">> that much. That's also why I really"
+    },
+    {
+      "start": 1442.159,
+      "duration": 5.361,
+      "text": "enjoy like Pete and John Sha and them um"
+    },
+    {
+      "start": 1445.12,
+      "duration": 5.439,
+      "text": "cuz they were the first real taste of"
+    },
+    {
+      "start": 1447.52,
+      "duration": 6.96,
+      "text": "defense that I was ever really taught of"
+    },
+    {
+      "start": 1450.559,
+      "duration": 5.441,
+      "text": "um like in in the sense of you know"
+    },
+    {
+      "start": 1454.48,
+      "duration": 3.04,
+      "text": "playing defense with my portfolio"
+    },
+    {
+      "start": 1456.0,
+      "duration": 3.36,
+      "text": "different things like that where it"
+    },
+    {
+      "start": 1457.52,
+      "duration": 4.159,
+      "text": "started to incorporate this idea of risk"
+    },
+    {
+      "start": 1459.36,
+      "duration": 4.799,
+      "text": "assessment and um you know things along"
+    },
+    {
+      "start": 1461.679,
+      "duration": 4.321,
+      "text": "those lines. Um,"
+    },
+    {
+      "start": 1464.159,
+      "duration": 3.76,
+      "text": ">> well, you know, defense is defense is"
+    },
+    {
+      "start": 1466.0,
+      "duration": 2.48,
+      "text": "not a very sexy marketing message,"
+    },
+    {
+      "start": 1467.919,
+      "duration": 1.76,
+      "text": "right? But it's"
+    },
+    {
+      "start": 1468.48,
+      "duration": 1.92,
+      "text": ">> No, it doesn't sell it doesn't sell"
+    },
+    {
+      "start": 1469.679,
+      "duration": 3.281,
+      "text": "horses,"
+    },
+    {
+      "start": 1470.4,
+      "duration": 4.8,
+      "text": ">> but it's so essential to to know and"
+    },
+    {
+      "start": 1472.96,
+      "duration": 3.76,
+      "text": "learn from guys like John and Pete and"
+    },
+    {
+      "start": 1475.2,
+      "duration": 6.32,
+      "text": ">> Yeah. Yeah."
+    },
+    {
+      "start": 1476.72,
+      "duration": 9.36,
+      "text": ">> Yeah. So, you know,"
+    },
+    {
+      "start": 1481.52,
+      "duration": 7.56,
+      "text": "you you mentioned to me recently um that"
+    },
+    {
+      "start": 1486.08,
+      "duration": 3.0,
+      "text": "you"
+    },
+    {
+      "start": 1489.679,
+      "duration": 7.841,
+      "text": "that you basically used a poorly drafted"
+    },
+    {
+      "start": 1494.64,
+      "duration": 4.24,
+      "text": "note and you recently did that deal. Y"
+    },
+    {
+      "start": 1497.52,
+      "duration": 3.279,
+      "text": ">> um"
+    },
+    {
+      "start": 1498.88,
+      "duration": 5.6,
+      "text": ">> so cuz a lot of times when people think"
+    },
+    {
+      "start": 1500.799,
+      "duration": 5.921,
+      "text": "about curative they think you know um"
+    },
+    {
+      "start": 1504.48,
+      "duration": 4.319,
+      "text": "partial interest they think you know"
+    },
+    {
+      "start": 1506.72,
+      "duration": 4.24,
+      "text": "some sort of litigation or something but"
+    },
+    {
+      "start": 1508.799,
+      "duration": 4.161,
+      "text": "you brought up poorly drafted documents"
+    },
+    {
+      "start": 1510.96,
+      "duration": 4.24,
+      "text": "and like as a part of a definition of"
+    },
+    {
+      "start": 1512.96,
+      "duration": 4.88,
+      "text": "curative right cuz hey sometimes that"
+    },
+    {
+      "start": 1515.2,
+      "duration": 4.16,
+      "text": "that poorly drafted document either is a"
+    },
+    {
+      "start": 1517.84,
+      "duration": 4.319,
+      "text": "break in the the chain of title like"
+    },
+    {
+      "start": 1519.36,
+      "duration": 6.08,
+      "text": "there's an issue there um it it also"
+    },
+    {
+      "start": 1522.159,
+      "duration": 4.961,
+      "text": "could be that that um"
+    },
+    {
+      "start": 1525.44,
+      "duration": 3.28,
+      "text": "could have basically been a deed gone"
+    },
+    {
+      "start": 1527.12,
+      "duration": 2.08,
+      "text": "wild or something. It could be a lot of"
+    },
+    {
+      "start": 1528.72,
+      "duration": 0.88,
+      "text": "things,"
+    },
+    {
+      "start": 1529.2,
+      "duration": 3.44,
+      "text": ">> right?"
+    },
+    {
+      "start": 1529.6,
+      "duration": 6.24,
+      "text": ">> Uh but talk to me about what that looked"
+    },
+    {
+      "start": 1532.64,
+      "duration": 4.96,
+      "text": "like. Um and and and you know why you"
+    },
+    {
+      "start": 1535.84,
+      "duration": 2.8,
+      "text": "include that with curative, you know,"
+    },
+    {
+      "start": 1537.6,
+      "duration": 2.64,
+      "text": "stuff like that."
+    },
+    {
+      "start": 1538.64,
+      "duration": 3.76,
+      "text": ">> Yeah, I include it with curative because"
+    },
+    {
+      "start": 1540.24,
+      "duration": 5.36,
+      "text": "it has that same sort of mindset about"
+    },
+    {
+      "start": 1542.4,
+      "duration": 5.2,
+      "text": "hey this thing has a very"
+    },
+    {
+      "start": 1545.6,
+      "duration": 3.84,
+      "text": "reduced value in the marketplace because"
+    },
+    {
+      "start": 1547.6,
+      "duration": 3.52,
+      "text": "of something that's wrong with the"
+    },
+    {
+      "start": 1549.44,
+      "duration": 4.16,
+      "text": "documentation because that's basically"
+    },
+    {
+      "start": 1551.12,
+      "duration": 5.679,
+      "text": "what title is, right? So although it it"
+    },
+    {
+      "start": 1553.6,
+      "duration": 5.84,
+      "text": "it wasn't a title issue per se, it was"
+    },
+    {
+      "start": 1556.799,
+      "duration": 5.441,
+      "text": "it was a document issue where the it was"
+    },
+    {
+      "start": 1559.44,
+      "duration": 5.2,
+      "text": "a seller carryback note that was so"
+    },
+    {
+      "start": 1562.24,
+      "duration": 4.48,
+      "text": "poorly drafted that if and that this you"
+    },
+    {
+      "start": 1564.64,
+      "duration": 4.88,
+      "text": "know this per note holder wanted to"
+    },
+    {
+      "start": 1566.72,
+      "duration": 4.959,
+      "text": "liquidate it and the gap between the"
+    },
+    {
+      "start": 1569.52,
+      "duration": 4.48,
+      "text": "value of where it was when I enter the"
+    },
+    {
+      "start": 1571.679,
+      "duration": 4.081,
+      "text": "picture and where we ended was about"
+    },
+    {
+      "start": 1574.0,
+      "duration": 3.76,
+      "text": "$200,000."
+    },
+    {
+      "start": 1575.76,
+      "duration": 3.44,
+      "text": "Right. significant because the paper was"
+    },
+    {
+      "start": 1577.76,
+      "duration": 3.68,
+      "text": ">> huge. Huge."
+    },
+    {
+      "start": 1579.2,
+      "duration": 3.599,
+      "text": ">> And it was funny just because of not"
+    },
+    {
+      "start": 1581.44,
+      "duration": 4.4,
+      "text": "only just the fact pattern but actually"
+    },
+    {
+      "start": 1582.799,
+      "duration": 4.641,
+      "text": "how it was drafted. And so, you know,"
+    },
+    {
+      "start": 1585.84,
+      "duration": 3.28,
+      "text": "when I looked at it, I said, you know,"
+    },
+    {
+      "start": 1587.44,
+      "duration": 3.52,
+      "text": "here's some good news and bad news is,"
+    },
+    {
+      "start": 1589.12,
+      "duration": 5.039,
+      "text": "yeah, the good news is I could I can get"
+    },
+    {
+      "start": 1590.96,
+      "duration": 5.52,
+      "text": "you money for the note as is, but here's"
+    },
+    {
+      "start": 1594.159,
+      "duration": 4.081,
+      "text": "the haircut you would have to take."
+    },
+    {
+      "start": 1596.48,
+      "duration": 4.16,
+      "text": ">> So, let let's figure out a way to get"
+    },
+    {
+      "start": 1598.24,
+      "duration": 3.76,
+      "text": "you better value for it because I think"
+    },
+    {
+      "start": 1600.64,
+      "duration": 2.56,
+      "text": "it would be worth it."
+    },
+    {
+      "start": 1602.0,
+      "duration": 2.64,
+      "text": ">> And so, I really hope the service and"
+    },
+    {
+      "start": 1603.2,
+      "duration": 3.599,
+      "text": "they were so thankful."
+    },
+    {
+      "start": 1604.64,
+      "duration": 3.68,
+      "text": ">> Um, yeah. you know, I got"
+    },
+    {
+      "start": 1606.799,
+      "duration": 2.24,
+      "text": ">> do like a modification or something like"
+    },
+    {
+      "start": 1608.32,
+      "duration": 2.64,
+      "text": "that."
+    },
+    {
+      "start": 1609.039,
+      "duration": 4.88,
+      "text": ">> Yeah, we had to get some legal help to"
+    },
+    {
+      "start": 1610.96,
+      "duration": 5.68,
+      "text": "kind of uh rece"
+    },
+    {
+      "start": 1613.919,
+      "duration": 4.401,
+      "text": "Yeah. redraft the note and um that's not"
+    },
+    {
+      "start": 1616.64,
+      "duration": 3.44,
+      "text": "always easy to do when you have a you"
+    },
+    {
+      "start": 1618.32,
+      "duration": 3.839,
+      "text": "know a um"
+    },
+    {
+      "start": 1620.08,
+      "duration": 3.839,
+      "text": ">> cooperative borrower involved, right?"
+    },
+    {
+      "start": 1622.159,
+      "duration": 3.76,
+      "text": ">> So, but we had some other things up our"
+    },
+    {
+      "start": 1623.919,
+      "duration": 3.921,
+      "text": "sleeve. So, but I was so happy. I was"
+    },
+    {
+      "start": 1625.919,
+      "duration": 4.481,
+      "text": "like, \"Hey, you know, I just basically"
+    },
+    {
+      "start": 1627.84,
+      "duration": 4.48,
+      "text": "gave these guys a $200,000 bonus for"
+    },
+    {
+      "start": 1630.4,
+      "duration": 3.2,
+      "text": "their for their note.\" And I was happy"
+    },
+    {
+      "start": 1632.32,
+      "duration": 5.04,
+      "text": "to do it because you know I also was"
+    },
+    {
+      "start": 1633.6,
+      "duration": 5.92,
+      "text": "rewarded as well. But um you know it's"
+    },
+    {
+      "start": 1637.36,
+      "duration": 3.199,
+      "text": "it's really satisfying because I know a"
+    },
+    {
+      "start": 1639.52,
+      "duration": 3.039,
+      "text": "lot of people would have turned it away"
+    },
+    {
+      "start": 1640.559,
+      "duration": 4.72,
+      "text": "and say hey this is this is all you got."
+    },
+    {
+      "start": 1642.559,
+      "duration": 6.161,
+      "text": ">> Well and so many people"
+    },
+    {
+      "start": 1645.279,
+      "duration": 5.841,
+      "text": "so many people see real estate as uh"
+    },
+    {
+      "start": 1648.72,
+      "duration": 4.88,
+      "text": "what HGTV shows which is let me go"
+    },
+    {
+      "start": 1651.12,
+      "duration": 4.24,
+      "text": "create value from taking an ugly house"
+    },
+    {
+      "start": 1653.6,
+      "duration": 4.079,
+      "text": "and making it pretty. [snorts]"
+    },
+    {
+      "start": 1655.36,
+      "duration": 4.64,
+      "text": ">> And I I got sucked into that um very"
+    },
+    {
+      "start": 1657.679,
+      "duration": 4.88,
+      "text": "early on. I did I did a ton. But you"
+    },
+    {
+      "start": 1660.0,
+      "duration": 5.12,
+      "text": "know that deal I mentioned earlier where"
+    },
+    {
+      "start": 1662.559,
+      "duration": 4.321,
+      "text": "um you know that the guy came up. He was"
+    },
+    {
+      "start": 1665.12,
+      "duration": 4.08,
+      "text": "like, \"How do you do it?\" That deal I"
+    },
+    {
+      "start": 1666.88,
+      "duration": 4.08,
+      "text": "had a huge revelation. Um cuz I was"
+    },
+    {
+      "start": 1669.2,
+      "duration": 3.44,
+      "text": "actually I think that day I was there"
+    },
+    {
+      "start": 1670.96,
+      "duration": 3.52,
+      "text": "because they had just delivered some"
+    },
+    {
+      "start": 1672.64,
+      "duration": 2.88,
+      "text": "supplies. So like a lumber stack or"
+    },
+    {
+      "start": 1674.48,
+      "duration": 4.48,
+      "text": "whatever."
+    },
+    {
+      "start": 1675.52,
+      "duration": 5.92,
+      "text": ">> And it was in that deal that I decided I"
+    },
+    {
+      "start": 1678.96,
+      "duration": 4.959,
+      "text": "was going to stop doing major gut rehabs"
+    },
+    {
+      "start": 1681.44,
+      "duration": 4.4,
+      "text": "that um and I had already started. I put"
+    },
+    {
+      "start": 1683.919,
+      "duration": 3.681,
+      "text": "a new roof on it. I had gutted it and I"
+    },
+    {
+      "start": 1685.84,
+      "duration": 3.52,
+      "text": "had the lumber stack delivered because"
+    },
+    {
+      "start": 1687.6,
+      "duration": 3.36,
+      "text": "we were going to go and and redo the"
+    },
+    {
+      "start": 1689.36,
+      "duration": 2.08,
+      "text": "studs from the termite damage."
+    },
+    {
+      "start": 1690.96,
+      "duration": 2.56,
+      "text": ">> Yeah."
+    },
+    {
+      "start": 1691.44,
+      "duration": 4.16,
+      "text": ">> And so like getting ready to do the"
+    },
+    {
+      "start": 1693.52,
+      "duration": 4.639,
+      "text": "scope of work, all of that."
+    },
+    {
+      "start": 1695.6,
+      "duration": 4.0,
+      "text": ">> And that's when I realized that like I"
+    },
+    {
+      "start": 1698.159,
+      "duration": 3.12,
+      "text": "had this quote on my desk from Jimmy"
+    },
+    {
+      "start": 1699.6,
+      "duration": 3.12,
+      "text": "Napier that says real estate is a"
+    },
+    {
+      "start": 1701.279,
+      "duration": 3.28,
+      "text": "thinking person's game."
+    },
+    {
+      "start": 1702.72,
+      "duration": 3.52,
+      "text": ">> Um and he also said that I'd made you"
+    },
+    {
+      "start": 1704.559,
+      "duration": 2.881,
+      "text": "know I made my most money in real estate"
+    },
+    {
+      "start": 1706.24,
+      "duration": 2.72,
+      "text": "by thinking."
+    },
+    {
+      "start": 1707.44,
+      "duration": 3.119,
+      "text": ">> And that was the deal that when I"
+    },
+    {
+      "start": 1708.96,
+      "duration": 3.76,
+      "text": "abandoned it, you know, I moved forward"
+    },
+    {
+      "start": 1710.559,
+      "duration": 4.401,
+      "text": "and I made six figures on that deal, but"
+    },
+    {
+      "start": 1712.72,
+      "duration": 3.679,
+      "text": "I didn't renovate it. I sold it as is,"
+    },
+    {
+      "start": 1714.96,
+      "duration": 2.48,
+      "text": "you know, with the lumber stack and, you"
+    },
+    {
+      "start": 1716.399,
+      "duration": 1.841,
+      "text": "know, all that. But,"
+    },
+    {
+      "start": 1717.44,
+      "duration": 3.359,
+      "text": ">> right,"
+    },
+    {
+      "start": 1718.24,
+      "duration": 4.559,
+      "text": ">> um, and I think going back to, you know,"
+    },
+    {
+      "start": 1720.799,
+      "duration": 5.841,
+      "text": "defining curative, it's it's bringing"
+    },
+    {
+      "start": 1722.799,
+      "duration": 6.0,
+      "text": "value to a deal that's not, you know,"
+    },
+    {
+      "start": 1726.64,
+      "duration": 4.399,
+      "text": ">> you can make money selling that that the"
+    },
+    {
+      "start": 1728.799,
+      "duration": 4.24,
+      "text": "the sticks and bricks of the house is"
+    },
+    {
+      "start": 1731.039,
+      "duration": 4.721,
+      "text": "irrelevant because you can, you know,"
+    },
+    {
+      "start": 1733.039,
+      "duration": 4.481,
+      "text": "sell it as is or whatever. do some"
+    },
+    {
+      "start": 1735.76,
+      "duration": 3.519,
+      "text": "strategy with it as is, but what you're"
+    },
+    {
+      "start": 1737.52,
+      "duration": 4.08,
+      "text": "really doing is cleaning up the"
+    },
+    {
+      "start": 1739.279,
+      "duration": 4.241,
+      "text": "paperwork, the title, the ownership"
+    },
+    {
+      "start": 1741.6,
+      "duration": 3.199,
+      "text": "situation, all of that."
+    },
+    {
+      "start": 1743.52,
+      "duration": 4.56,
+      "text": ">> Um,"
+    },
+    {
+      "start": 1744.799,
+      "duration": 5.12,
+      "text": ">> and and that right there is a huge way"
+    },
+    {
+      "start": 1748.08,
+      "duration": 3.599,
+      "text": "that I think, you know, the people that"
+    },
+    {
+      "start": 1749.919,
+      "duration": 3.521,
+      "text": "are attracted these to these types of"
+    },
+    {
+      "start": 1751.679,
+      "duration": 3.36,
+      "text": "deals are people who, you know, maybe"
+    },
+    {
+      "start": 1753.44,
+      "duration": 3.119,
+      "text": "they appreciate the research side, they"
+    },
+    {
+      "start": 1755.039,
+      "duration": 4.081,
+      "text": "like the thinking side, they like the"
+    },
+    {
+      "start": 1756.559,
+      "duration": 4.401,
+      "text": "more, you know, people confuse us for"
+    },
+    {
+      "start": 1759.12,
+      "duration": 3.12,
+      "text": "attorneys, you know, we're not attorney,"
+    },
+    {
+      "start": 1760.96,
+      "duration": 3.839,
+      "text": "you know, stuff like that,"
+    },
+    {
+      "start": 1762.24,
+      "duration": 4.4,
+      "text": ">> right? Um, and I I don't know. I guess"
+    },
+    {
+      "start": 1764.799,
+      "duration": 6.0,
+      "text": "I've enjoyed that part, right? Like I I"
+    },
+    {
+      "start": 1766.64,
+      "duration": 7.039,
+      "text": "I gravitate towards it because I enjoy"
+    },
+    {
+      "start": 1770.799,
+      "duration": 4.721,
+      "text": "like sometimes it's playing chess, you"
+    },
+    {
+      "start": 1773.679,
+      "duration": 2.961,
+      "text": "know, with with it. Like, okay, if this"
+    },
+    {
+      "start": 1775.52,
+      "duration": 2.8,
+      "text": "then that."
+    },
+    {
+      "start": 1776.64,
+      "duration": 3.84,
+      "text": ">> Um, but other part of that is really"
+    },
+    {
+      "start": 1778.32,
+      "duration": 3.839,
+      "text": "just, you know,"
+    },
+    {
+      "start": 1780.48,
+      "duration": 3.439,
+      "text": "being able to fix something that, yeah,"
+    },
+    {
+      "start": 1782.159,
+      "duration": 3.361,
+      "text": "like I said, most people"
+    },
+    {
+      "start": 1783.919,
+      "duration": 3.281,
+      "text": ">> most people can't fix."
+    },
+    {
+      "start": 1785.52,
+      "duration": 4.24,
+      "text": ">> Yeah. So, I' I've coined this term that"
+    },
+    {
+      "start": 1787.2,
+      "duration": 3.12,
+      "text": "I should probably trademark and I want"
+    },
+    {
+      "start": 1789.76,
+      "duration": 1.519,
+      "text": "to make it like"
+    },
+    {
+      "start": 1790.32,
+      "duration": 2.719,
+      "text": ">> Careful."
+    },
+    {
+      "start": 1791.279,
+      "duration": 3.76,
+      "text": ">> Yeah. I I want to, you know, I want to"
+    },
+    {
+      "start": 1793.039,
+      "duration": 4.561,
+      "text": "make it like a chapter title of a book"
+    },
+    {
+      "start": 1795.039,
+      "duration": 5.12,
+      "text": "or or a title of a book, but you know, I"
+    },
+    {
+      "start": 1797.6,
+      "duration": 5.28,
+      "text": "a phrase I use a lot is is is paper over"
+    },
+    {
+      "start": 1800.159,
+      "duration": 4.561,
+      "text": "hammers because,"
+    },
+    {
+      "start": 1802.88,
+      "duration": 3.84,
+      "text": "you know, I got sucked into the same"
+    },
+    {
+      "start": 1804.72,
+      "duration": 3.76,
+      "text": "HGTV thing where I only looked at the"
+    },
+    {
+      "start": 1806.72,
+      "duration": 2.079,
+      "text": "physical distress of a property."
+    },
+    {
+      "start": 1808.48,
+      "duration": 2.0,
+      "text": ">> Yeah."
+    },
+    {
+      "start": 1808.799,
+      "duration": 2.961,
+      "text": ">> Right. Oh man, I got to put on a new"
+    },
+    {
+      "start": 1810.48,
+      "duration": 2.72,
+      "text": "roof. I got to, you know, fix the"
+    },
+    {
+      "start": 1811.76,
+      "duration": 2.88,
+      "text": "foundation, put in new plumbing, blah"
+    },
+    {
+      "start": 1813.2,
+      "duration": 4.32,
+      "text": "blah blah, and that's how I'm going to"
+    },
+    {
+      "start": 1814.64,
+      "duration": 4.639,
+      "text": "get that that lift in value. When I"
+    },
+    {
+      "start": 1817.52,
+      "duration": 4.0,
+      "text": "started discovering that if I kind of"
+    },
+    {
+      "start": 1819.279,
+      "duration": 4.561,
+      "text": "know what papers to shuffle around and"
+    },
+    {
+      "start": 1821.52,
+      "duration": 3.92,
+      "text": "get the right signatures on it, I made"
+    },
+    {
+      "start": 1823.84,
+      "duration": 3.04,
+      "text": "way more money and I didn't break any"
+    },
+    {
+      "start": 1825.44,
+      "duration": 3.92,
+      "text": "fingernails, you know. So,"
+    },
+    {
+      "start": 1826.88,
+      "duration": 4.88,
+      "text": ">> right. Or"
+    },
+    {
+      "start": 1829.36,
+      "duration": 4.08,
+      "text": "exactly hurt. Yeah. Or hurting pads with"
+    },
+    {
+      "start": 1831.76,
+      "duration": 3.68,
+      "text": "subcontractors and stuff. I mean"
+    },
+    {
+      "start": 1833.44,
+      "duration": 3.92,
+      "text": ">> Yeah. Yeah. Yeah. So, I always kind of"
+    },
+    {
+      "start": 1835.44,
+      "duration": 3.52,
+      "text": "remind myself when I rehabbed a house on"
+    },
+    {
+      "start": 1837.36,
+      "duration": 3.439,
+      "text": "my own way back when"
+    },
+    {
+      "start": 1838.96,
+      "duration": 3.439,
+      "text": ">> and I threw my back out because I was"
+    },
+    {
+      "start": 1840.799,
+      "duration": 3.281,
+      "text": "lifting the uh you know, I was I was"
+    },
+    {
+      "start": 1842.399,
+      "duration": 4.721,
+      "text": "going to m do some mudding and taping."
+    },
+    {
+      "start": 1844.08,
+      "duration": 5.36,
+      "text": "So, I'm lifting, you know, all the mud"
+    },
+    {
+      "start": 1847.12,
+      "duration": 3.679,
+      "text": "in onto the Home Depot cart and my my"
+    },
+    {
+      "start": 1849.44,
+      "duration": 3.599,
+      "text": "buddy who was doing the help I was like,"
+    },
+    {
+      "start": 1850.799,
+      "duration": 3.441,
+      "text": "\"Dude, I think I threw up my back.\" And"
+    },
+    {
+      "start": 1853.039,
+      "duration": 2.481,
+      "text": "he's like, \"No, you're lying. You want"
+    },
+    {
+      "start": 1854.24,
+      "duration": 3.439,
+      "text": "me to do all this work?\" I went, \"No,"
+    },
+    {
+      "start": 1855.52,
+      "duration": 4.0,
+      "text": "I'm serious. I throat my back.\" So, I"
+    },
+    {
+      "start": 1857.679,
+      "duration": 2.961,
+      "text": "always think about, \"Okay, don't do the"
+    },
+    {
+      "start": 1859.52,
+      "duration": 2.72,
+      "text": "heavy lifting.\""
+    },
+    {
+      "start": 1860.64,
+      "duration": 3.12,
+      "text": ">> You know, let Yeah. Yeah. Take me to the"
+    },
+    {
+      "start": 1862.24,
+      "duration": 3.36,
+      "text": "hospital. So, I'm like, \"Okay, there's"
+    },
+    {
+      "start": 1863.76,
+      "duration": 3.68,
+      "text": "got to be a better way.\" And thankfully"
+    },
+    {
+      "start": 1865.6,
+      "duration": 3.84,
+      "text": "through a lot of, you know, uh, learning"
+    },
+    {
+      "start": 1867.44,
+      "duration": 3.599,
+      "text": "and mentoring that people have helped"
+    },
+    {
+      "start": 1869.44,
+      "duration": 2.959,
+      "text": "me, I developed more of that kind of,"
+    },
+    {
+      "start": 1871.039,
+      "duration": 4.401,
+      "text": "hey, I could I could solve a lot of"
+    },
+    {
+      "start": 1872.399,
+      "duration": 4.721,
+      "text": "problems with paper and be rewarded way"
+    },
+    {
+      "start": 1875.44,
+      "duration": 3.599,
+      "text": "more handsomely than if I was good with"
+    },
+    {
+      "start": 1877.12,
+      "duration": 3.439,
+      "text": "swinging a hammer."
+    },
+    {
+      "start": 1879.039,
+      "duration": 3.281,
+      "text": ">> And and I think, you know, some people"
+    },
+    {
+      "start": 1880.559,
+      "duration": 4.24,
+      "text": "are going to naturally be inclined to"
+    },
+    {
+      "start": 1882.32,
+      "duration": 4.16,
+      "text": "like prefer"
+    },
+    {
+      "start": 1884.799,
+      "duration": 3.681,
+      "text": "like the swinging the hammer type."
+    },
+    {
+      "start": 1886.48,
+      "duration": 2.64,
+      "text": ">> Hey, they both work. Hey, they both"
+    },
+    {
+      "start": 1888.48,
+      "duration": 2.4,
+      "text": "work. Yeah,"
+    },
+    {
+      "start": 1889.12,
+      "duration": 4.559,
+      "text": ">> they both work. Look, I know some"
+    },
+    {
+      "start": 1890.88,
+      "duration": 5.6,
+      "text": "builders and developers and, you know,"
+    },
+    {
+      "start": 1893.679,
+      "duration": 4.161,
+      "text": "contractors who make six figures that do"
+    },
+    {
+      "start": 1896.48,
+      "duration": 2.24,
+      "text": "well, like that do."
+    },
+    {
+      "start": 1897.84,
+      "duration": 3.679,
+      "text": ">> Absolutely."
+    },
+    {
+      "start": 1898.72,
+      "duration": 5.12,
+      "text": ">> And I'm like all for you. I"
+    },
+    {
+      "start": 1901.519,
+      "duration": 5.28,
+      "text": ">> I very quickly got fired that like when"
+    },
+    {
+      "start": 1903.84,
+      "duration": 4.64,
+      "text": "I would design or like um you know,"
+    },
+    {
+      "start": 1906.799,
+      "duration": 3.281,
+      "text": "stage a property, the the agent was"
+    },
+    {
+      "start": 1908.48,
+      "duration": 3.12,
+      "text": "like, \"Girl, put that back in your car."
+    },
+    {
+      "start": 1910.08,
+      "duration": 2.16,
+      "text": "It is uh it's going to like make the"
+    },
+    {
+      "start": 1911.6,
+      "duration": 1.679,
+      "text": "value go down.\""
+    },
+    {
+      "start": 1912.24,
+      "duration": 1.76,
+      "text": ">> That's not your Yeah. That's not your"
+    },
+    {
+      "start": 1913.279,
+      "duration": 2.161,
+      "text": "strength. Yeah."
+    },
+    {
+      "start": 1914.0,
+      "duration": 4.64,
+      "text": ">> No, it's not. I was like, \"Okay, okay."
+    },
+    {
+      "start": 1915.44,
+      "duration": 6.16,
+      "text": "I'll stay in my lane.\" I um"
+    },
+    {
+      "start": 1918.64,
+      "duration": 4.48,
+      "text": ">> and so the goal here is like I I love"
+    },
+    {
+      "start": 1921.6,
+      "duration": 3.439,
+      "text": "like having these conversations with"
+    },
+    {
+      "start": 1923.12,
+      "duration": 4.0,
+      "text": "you. I've really enjoyed our friendship"
+    },
+    {
+      "start": 1925.039,
+      "duration": 5.12,
+      "text": "over the years and so I was really glad"
+    },
+    {
+      "start": 1927.12,
+      "duration": 4.48,
+      "text": "to have you on. Um and I'm hoping to"
+    },
+    {
+      "start": 1930.159,
+      "duration": 3.601,
+      "text": "have you on some more. We can talk about"
+    },
+    {
+      "start": 1931.6,
+      "duration": 2.88,
+      "text": "how the money can be made in the mess."
+    },
+    {
+      "start": 1933.76,
+      "duration": 2.24,
+      "text": ">> Absolutely."
+    },
+    {
+      "start": 1934.48,
+      "duration": 4.319,
+      "text": ">> Cuz so many people will avoid the"
+    },
+    {
+      "start": 1936.0,
+      "duration": 4.48,
+      "text": "messiness. But look, I'll take I'll take"
+    },
+    {
+      "start": 1938.799,
+      "duration": 4.321,
+      "text": "you know the messy money situations all"
+    },
+    {
+      "start": 1940.48,
+      "duration": 7.76,
+      "text": "day long. Um and so if someone is"
+    },
+    {
+      "start": 1943.12,
+      "duration": 8.32,
+      "text": "listening and wants to um"
+    },
+    {
+      "start": 1948.24,
+      "duration": 5.6,
+      "text": "you know they want to for example"
+    },
+    {
+      "start": 1951.44,
+      "duration": 3.839,
+      "text": "explore this this curative stuff one I"
+    },
+    {
+      "start": 1953.84,
+      "duration": 3.52,
+      "text": "want to invite them to subscribe and"
+    },
+    {
+      "start": 1955.279,
+      "duration": 5.441,
+      "text": "come back to these conversations um"
+    },
+    {
+      "start": 1957.36,
+      "duration": 4.96,
+      "text": "because I think number one it's you"
+    },
+    {
+      "start": 1960.72,
+      "duration": 3.36,
+      "text": "someone once gave me some advice early"
+    },
+    {
+      "start": 1962.32,
+      "duration": 3.52,
+      "text": "on was like you grow into the"
+    },
+    {
+      "start": 1964.08,
+      "duration": 3.04,
+      "text": "conversations you're around and so if"
+    },
+    {
+      "start": 1965.84,
+      "duration": 3.679,
+      "text": "all you're doing is standing around"
+    },
+    {
+      "start": 1967.12,
+      "duration": 4.159,
+      "text": "flippers well you can grow as a flipper"
+    },
+    {
+      "start": 1969.519,
+      "duration": 3.841,
+      "text": "but you might not grow well as a"
+    },
+    {
+      "start": 1971.279,
+      "duration": 2.64,
+      "text": "landlord or as a curative title person."
+    },
+    {
+      "start": 1973.36,
+      "duration": 0.88,
+      "text": "Right."
+    },
+    {
+      "start": 1973.919,
+      "duration": 4.081,
+      "text": ">> Right."
+    },
+    {
+      "start": 1974.24,
+      "duration": 7.279,
+      "text": ">> Um and so so talk to me about um some"
+    },
+    {
+      "start": 1978.0,
+      "duration": 4.88,
+      "text": "some general there's a lot more people"
+    },
+    {
+      "start": 1981.519,
+      "duration": 3.201,
+      "text": "getting interested in curative now. So"
+    },
+    {
+      "start": 1982.88,
+      "duration": 3.279,
+      "text": "what are some general thoughts and"
+    },
+    {
+      "start": 1984.72,
+      "duration": 3.04,
+      "text": "advice you have for people who were"
+    },
+    {
+      "start": 1986.159,
+      "duration": 3.601,
+      "text": "interested in in doing some more"
+    },
+    {
+      "start": 1987.76,
+      "duration": 4.56,
+      "text": "curative stuff?"
+    },
+    {
+      "start": 1989.76,
+      "duration": 4.399,
+      "text": "I think having the realistic expectation"
+    },
+    {
+      "start": 1992.32,
+      "duration": 3.76,
+      "text": "that a lot of times these take a lot"
+    },
+    {
+      "start": 1994.159,
+      "duration": 3.921,
+      "text": "longer to monetize."
+    },
+    {
+      "start": 1996.08,
+      "duration": 3.28,
+      "text": ">> Uh and that you need to have it's just"
+    },
+    {
+      "start": 1998.08,
+      "duration": 2.56,
+      "text": "like if you're starting a business, what"
+    },
+    {
+      "start": 1999.36,
+      "duration": 3.36,
+      "text": "if you were starting a business where"
+    },
+    {
+      "start": 2000.64,
+      "duration": 4.32,
+      "text": "you were putting a lot of money out, but"
+    },
+    {
+      "start": 2002.72,
+      "duration": 3.679,
+      "text": "you weren't getting any you had a lot of"
+    },
+    {
+      "start": 2004.96,
+      "duration": 3.199,
+      "text": "accounts receivable that weren't being"
+    },
+    {
+      "start": 2006.399,
+      "duration": 3.921,
+      "text": "paid yet, right? So you don't want to"
+    },
+    {
+      "start": 2008.159,
+      "duration": 3.76,
+      "text": "you don't want to run out of runway"
+    },
+    {
+      "start": 2010.32,
+      "duration": 3.52,
+      "text": "where you could still operate and then"
+    },
+    {
+      "start": 2011.919,
+      "duration": 4.081,
+      "text": "collect, you know, the gold at the end."
+    },
+    {
+      "start": 2013.84,
+      "duration": 4.8,
+      "text": "So be very realistic about what time"
+    },
+    {
+      "start": 2016.0,
+      "duration": 4.799,
+      "text": "frames that would be. really dive into"
+    },
+    {
+      "start": 2018.64,
+      "duration": 3.759,
+      "text": "your like you said about your state."
+    },
+    {
+      "start": 2020.799,
+      "duration": 3.441,
+      "text": "Every state has kind of a little bit"
+    },
+    {
+      "start": 2022.399,
+      "duration": 3.361,
+      "text": "different way they do things. Make sure"
+    },
+    {
+      "start": 2024.24,
+      "duration": 3.439,
+      "text": "you take the time to figure it out. Make"
+    },
+    {
+      "start": 2025.76,
+      "duration": 4.0,
+      "text": "good connections with legal"
+    },
+    {
+      "start": 2027.679,
+      "duration": 4.48,
+      "text": "professionals. I think that has been one"
+    },
+    {
+      "start": 2029.76,
+      "duration": 4.399,
+      "text": "of the the most uh valuable things I've"
+    },
+    {
+      "start": 2032.159,
+      "duration": 3.841,
+      "text": "done is I've made very good connections"
+    },
+    {
+      "start": 2034.159,
+      "duration": 2.64,
+      "text": "with my legal community"
+    },
+    {
+      "start": 2036.0,
+      "duration": 1.679,
+      "text": ">> and um"
+    },
+    {
+      "start": 2036.799,
+      "duration": 3.201,
+      "text": ">> similar."
+    },
+    {
+      "start": 2037.679,
+      "duration": 3.681,
+      "text": ">> Yeah. So those are very very important"
+    },
+    {
+      "start": 2040.0,
+      "duration": 4.0,
+      "text": "things to consider. So, if you're not"
+    },
+    {
+      "start": 2041.36,
+      "duration": 4.72,
+      "text": "comfortable kind of with digging deep"
+    },
+    {
+      "start": 2044.0,
+      "duration": 4.56,
+      "text": "and figuring out putting you're"
+    },
+    {
+      "start": 2046.08,
+      "duration": 3.92,
+      "text": "basically putting together a puzzle um"
+    },
+    {
+      "start": 2048.56,
+      "duration": 3.92,
+      "text": "and if you want kind of instant"
+    },
+    {
+      "start": 2050.0,
+      "duration": 4.56,
+      "text": "gratification, this is probably not"
+    },
+    {
+      "start": 2052.48,
+      "duration": 2.72,
+      "text": "something that you would enjoy."
+    },
+    {
+      "start": 2054.56,
+      "duration": 2.559,
+      "text": ">> So,"
+    },
+    {
+      "start": 2055.2,
+      "duration": 3.919,
+      "text": ">> yeah, and and realizing, you know, if"
+    },
+    {
+      "start": 2057.119,
+      "duration": 4.8,
+      "text": "it's a good fit for you or not and then,"
+    },
+    {
+      "start": 2059.119,
+      "duration": 5.921,
+      "text": "you know, things along those lines. Um"
+    },
+    {
+      "start": 2061.919,
+      "duration": 5.68,
+      "text": "yeah, understanding, you know, that deal"
+    },
+    {
+      "start": 2065.04,
+      "duration": 6.72,
+      "text": "analysis that is the juice worth the"
+    },
+    {
+      "start": 2067.599,
+      "duration": 6.56,
+      "text": "squeeze is so critical. And most people"
+    },
+    {
+      "start": 2071.76,
+      "duration": 5.52,
+      "text": "um you know, you got to build that"
+    },
+    {
+      "start": 2074.159,
+      "duration": 5.041,
+      "text": "muscle, right? And uh and and to be able"
+    },
+    {
+      "start": 2077.28,
+      "duration": 4.48,
+      "text": "to assess what's your downsides to stuff"
+    },
+    {
+      "start": 2079.2,
+      "duration": 5.199,
+      "text": "like this. And so a huge part to that is"
+    },
+    {
+      "start": 2081.76,
+      "duration": 5.76,
+      "text": "a competent attorney. And attorneys are"
+    },
+    {
+      "start": 2084.399,
+      "duration": 4.24,
+      "text": "like, you know, they're like doctors."
+    },
+    {
+      "start": 2087.52,
+      "duration": 3.359,
+      "text": "you know, you're not you don't want to"
+    },
+    {
+      "start": 2088.639,
+      "duration": 3.2,
+      "text": "go to a foot guy for your heart and vice"
+    },
+    {
+      "start": 2090.879,
+      "duration": 2.48,
+      "text": "versa, right?"
+    },
+    {
+      "start": 2091.839,
+      "duration": 2.961,
+      "text": ">> Um, so same thing with an attorney. I"
+    },
+    {
+      "start": 2093.359,
+      "duration": 2.72,
+      "text": "see people, one of the mistakes people"
+    },
+    {
+      "start": 2094.8,
+      "duration": 2.88,
+      "text": "make is that they go to the wrong type"
+    },
+    {
+      "start": 2096.079,
+      "duration": 3.681,
+      "text": "of attorney for this stuff because that"
+    },
+    {
+      "start": 2097.68,
+      "duration": 4.08,
+      "text": "attorney just happens to be a yes person"
+    },
+    {
+      "start": 2099.76,
+      "duration": 2.72,
+      "text": "who said, \"Yeah, like I'll do that for"
+    },
+    {
+      "start": 2101.76,
+      "duration": 1.44,
+      "text": "you.\" You know,"
+    },
+    {
+      "start": 2102.48,
+      "duration": 2.16,
+      "text": ">> right?"
+    },
+    {
+      "start": 2103.2,
+      "duration": 3.919,
+      "text": ">> Um,"
+    },
+    {
+      "start": 2104.64,
+      "duration": 4.16,
+      "text": ">> well, Alice, I'm I'm looking forward to"
+    },
+    {
+      "start": 2107.119,
+      "duration": 6.561,
+      "text": "having some more curative conversations"
+    },
+    {
+      "start": 2108.8,
+      "duration": 6.0,
+      "text": "with you. Um, so, so as we wrap this up,"
+    },
+    {
+      "start": 2113.68,
+      "duration": 2.64,
+      "text": "um,"
+    },
+    {
+      "start": 2114.8,
+      "duration": 2.799,
+      "text": ">> if people want to get in touch with you,"
+    },
+    {
+      "start": 2116.32,
+      "duration": 2.56,
+      "text": "I know I know you're doing some"
+    },
+    {
+      "start": 2117.599,
+      "duration": 2.161,
+      "text": "revamping on your socials."
+    },
+    {
+      "start": 2118.88,
+      "duration": 2.719,
+      "text": ">> I am."
+    },
+    {
+      "start": 2119.76,
+      "duration": 2.56,
+      "text": ">> Um, so where can people get in touch"
+    },
+    {
+      "start": 2121.599,
+      "duration": 2.48,
+      "text": "with you?"
+    },
+    {
+      "start": 2122.32,
+      "duration": 4.88,
+      "text": ">> So, my new social is going to be"
+    },
+    {
+      "start": 2124.079,
+      "duration": 5.52,
+      "text": "deedclear on Instagram. Um, the one that"
+    },
+    {
+      "start": 2127.2,
+      "duration": 5.28,
+      "text": "I've been using for, you know, years now"
+    },
+    {
+      "start": 2129.599,
+      "duration": 4.48,
+      "text": "is FIBUSA because that was a networking"
+    },
+    {
+      "start": 2132.48,
+      "duration": 3.68,
+      "text": "group I started called for investors by"
+    },
+    {
+      "start": 2134.079,
+      "duration": 3.921,
+      "text": "investors. So, I've been using that for"
+    },
+    {
+      "start": 2136.16,
+      "duration": 3.679,
+      "text": "forever. But the new place where I'm"
+    },
+    {
+      "start": 2138.0,
+      "duration": 3.52,
+      "text": "going to kind of connect with people on"
+    },
+    {
+      "start": 2139.839,
+      "duration": 3.121,
+      "text": "a business level is going to be the Deed"
+    },
+    {
+      "start": 2141.52,
+      "duration": 2.72,
+      "text": "Clear site."
+    },
+    {
+      "start": 2142.96,
+      "duration": 2.8,
+      "text": ">> So, I'm I'm going to make sure to put"
+    },
+    {
+      "start": 2144.24,
+      "duration": 4.0,
+      "text": "that in the show notes. Okay."
+    },
+    {
+      "start": 2145.76,
+      "duration": 4.48,
+      "text": ">> Um and and you know, as we share some of"
+    },
+    {
+      "start": 2148.24,
+      "duration": 4.48,
+      "text": "the clips from this episode, I'll uh"
+    },
+    {
+      "start": 2150.24,
+      "duration": 4.56,
+      "text": "collaborate with you on there so folks"
+    },
+    {
+      "start": 2152.72,
+      "duration": 2.48,
+      "text": "can can see it. Um"
+    },
+    {
+      "start": 2154.8,
+      "duration": 2.72,
+      "text": ">> Great,"
+    },
+    {
+      "start": 2155.2,
+      "duration": 4.56,
+      "text": ">> Alice. I'm always excited with when we"
+    },
+    {
+      "start": 2157.52,
+      "duration": 4.24,
+      "text": "get to chat. And I think I know a lot of"
+    },
+    {
+      "start": 2159.76,
+      "duration": 4.079,
+      "text": "folks have been excited to to see more"
+    },
+    {
+      "start": 2161.76,
+      "duration": 3.44,
+      "text": "see more from you. So, so whatever"
+    },
+    {
+      "start": 2163.839,
+      "duration": 2.401,
+      "text": "you're willing to give, we're excited"
+    },
+    {
+      "start": 2165.2,
+      "duration": 2.48,
+      "text": "for that. And um"
+    },
+    {
+      "start": 2166.24,
+      "duration": 3.04,
+      "text": ">> Oh, I'm very thankful for the"
+    },
+    {
+      "start": 2167.68,
+      "duration": 3.6,
+      "text": "invitation. Thank you, Courtney."
+    },
+    {
+      "start": 2169.28,
+      "duration": 3.76,
+      "text": ">> Yeah. Yeah. Well, guys, make sure you"
+    },
+    {
+      "start": 2171.28,
+      "duration": 2.88,
+      "text": "subscribe. Stay tuned for the next"
+    },
+    {
+      "start": 2173.04,
+      "duration": 4.0,
+      "text": "episode. We're looking forward to"
+    },
+    {
+      "start": 2174.16,
+      "duration": 5.12,
+      "text": "sharing with you guys about um you know,"
+    },
+    {
+      "start": 2177.04,
+      "duration": 3.92,
+      "text": "how to not avoid the messy the messy"
+    },
+    {
+      "start": 2179.28,
+      "duration": 3.68,
+      "text": "situations that definitely can bring in"
+    },
+    {
+      "start": 2180.96,
+      "duration": 5.32,
+      "text": "the money. So, all right. See you guys"
+    },
+    {
+      "start": 2182.96,
+      "duration": 3.32,
+      "text": "next episode."
+    }
+  ],
+  "full_text": "If you think the money in real estate is made by granite countertops and paint colors, you're missing where the real margin lives. I would argue that that's HGTV syndrome, but that's another topic for another day. You see, the biggest checks usually come when the deals cannot be closed. Like there's some sort of big problem. You know, it's been said, the bigger the problem you solve, the bigger the check you get paid. And these types of deals, I mean, they're the ones with the messed up paperwork. there's something going on that's broken in the title. There's owners that are fighting and refusing, you know, someone's refusing to sell or you can't even find them. Something maybe even in litigation. At the end of the day, these are the deals that a lot of investors walk away from. And a lot of times they're just a ball of problems. Some easier to resolve than others. But you see, my name's Courtney Fricky and in this first episode I'm sitting down with my good friend Ella San Jose. Now, Ellis has been investing for over 30 years, but over the last decade, he's been specializing in these messier deals. And so, that's what this episode's going to be about. We're going to define what curative title looks like. We're going to define, you know, really how that can easily pair and really pair well with the creative world and talk through some of the um some of the pitfalls like the good, the bad, and the ugly so that you can tell the difference between [clears throat] a problem that can be solved and really something that is a trap that it'll eat your time, your money, and your energy, right? So, if you want to make money where other investors get stuck, you're in the right place. I'm looking forward to getting into it, talking about this messy money concept. Let's get into it. So, I'm excited to talk about how the money in real estate is often made through the messy side. So, we're going to get jumping right into it with my good friend Ellis San Jose. Ellis, I'm excited to have you on the podcast. I've been uh I know we've done like a little micro interview uh and stuff like that before, but I'm excited to have you on. Um >> same here. >> And and like and the things we're talking about, I'm excited about that, too. >> Right. >> Yeah. So, I I want to make today's episode really focus on the curative title side. And so many investors are like, wait, I've kind of heard that word before in my contract where there's like that curative title phase. you know, if uh >> it's a part of like a an extension deadline or whatever with your tit like with your uh purchase agreement. >> Um so let's start off by defining curative title. >> Um what when people when you talk about it, how do you define it? >> I've been thinking about this a lot lately and kind of the iteration that I've arrived at now is that there's actually in real estate there's two values. There's value of something that can't get title insurance and something that can because the the the industry standard is when you buy a piece of real estate or property, it needs to come along with title insurance because that title insurance is protecting you and saying, \"Yeah, this this is clear. Everything's good. What you're buying is what you're buying.\" When you don't have that insurance, it's kind of like, well, >> it's up to you to know what you really have. And curative title is the gap between uninsurable title and insurable title. So that's kind of what I've come up with as far as a way to define it. >> I I like that, you know, cuz I think it's always been hard for me to explain it too. Um um and so elevator pitch 30,000 foot view. What's your like what's your your background with curative if you know when when someone asks? >> Okay. So, I have this kind of elevator speech that I've been using in my networking group for the last 13 years. So, I say everybody's heard of the three L's of real estate, location, location, location. I specialize in the ugly L's of real estate, which is litigation, long-distance ownership, and a long story why somebody cannot buy or get a loan on their property. So, that kind of brings it to life of like, oh yeah, I've known somebody or I've heard of somebody where they can't sell their property because they can't, you know, they don't know who owns it or there's some lean on there that they don't know how to get rid of. So that's kind of my my elevator pitch for that. >> And you're you're based in Southern California. >> I'm in Southern California, right? Just outside Los Angeles. >> And how long you been doing curative? >> I would say that I started dipping my toe at about 12 years ago. And now I'm kind of I I would say I'm 8020 80% I only look for curative or messy issues. And then the 20% I do kind of my traditional uh investing that I've always done. >> And you've been investing for like 30 plus years. >> Yeah. A long time. Yeah. So, so that's kind of like the overview synopsis. Um, yeah. Someone was asking me with it. I'm like, you know, I've done dozens of curative deals, but I sprinkled them in with all these other strate like it wasn't my main strategy, you know? You know, I did it to, you know, reduce some leans on a property that I bought subject to, you know, just to get a better deal or, you know, or we were wholesaling and it, you know, >> we had to figure this out so we could actually close it, you know. >> Yeah. >> Um, that's kind of high. I stumbled on it too is because I started buying notes and judgments and then I was like, \"Wow, wait a second. This all kind of ties together. If I ever saw property and I saw a note or judgment or some sort of lean, I was like, I could probably create a little bit more profit.\" So, >> well, and and so like it's funny, my elevator pitch is very similar to yours. When I like when I especially here in Florida, I feel like every investor meeting you have to stand up and introduce yourself and give give your phone [laughter] number. And so I I literally um yeah, we were at a meeting last night and we were at because Pete was talking somewhere locally and so everyone's there and this guy came and he was like he's like I don't I don't want to introduce myself. I was like >> you should you should really want to but anyway um but he's retired so I can understand. Uh but no like I always say you know for me I'm you know I specialize in the [snorts] properties that are so complicated they need a therapist. That's a good one. the owners are fighting. You can't find the own an owner, you know, it needs litigation there. You know, the title is so messed up, whatever, >> right? [snorts] >> Uh that that traditionally it can't move forward itself. So, like as you're talking about like getting that title insurance part, right? >> Um so, what what you know, you've done all these other strategies when you started getting into these cur deals and then you started saying, \"Hey, well, what if I focus on it?\" >> Um what attracted you to that? mainly it's because um it just it felt logical to me that the lower I can buy something the greater safety margin that I'm going to have and less likelihood of making a mistake. So, you know, there's like this kind of old rule of thumb, hey, if you buy it 65% of ARV blah plus repairs, blah blah blah, right? So, there's a lot of people stuck in kind of that thought. And then I was like, well, what if I just kind of threw that out and see how far below market value could buy it? and the the the transactions that lend itself to going where you're buying at 10 20 30 40 50 cents on the dollar. That's what attracted me to because now I can build in a huge margin of safety. And plus, because on the surface it seems so complex and complicated, most of the the typical investors are just going to walk away. I certainly did for many years. I didn't know what the heck was going on. >> So, um I like a lot of those elements. Number one, it's, you know, you're building in safety for your deal. Number two, you have less competition. And because of that, I was just mentioning this to somebody else. I said, you know what, you don't have that kind of hair on fire time constraints that you do if you're like, you know, five, six other people are bidding on a property and you, you know, you got to be first. You have time to to really thoughtfully think it through. Call your other friends that are doing curative and say, \"Hey, how would you handle this?\" And then it just, it really has an element where we can reduce your mistakes. And that's that to me is a huge benefit of doing curative. >> Yeah. And so I think that's important because like um well you and I have talked through this before. So I just moved from Louisiana to central Florida, >> right? >> Uh it is it is no secret that the cost of living here is higher than New Orleans. >> Um but there's so there's benefits to that, right? Part of that's lifestyle, part of that is um you know the appreciation here, things like that, right? >> And you face something very similar. So talk to me how that applies to your portfolio in Southern California where everyone says you can't own real estate in California. It the numbers don't work. >> It's very funny. I was at a real estate club meeting last night and there was an investor in the room saying I don't know how you can buy in California. I had to put 50% down in order for it to break even. Even then it was hard or you know I was but you know and then uh so everybody's looking at a state. So, so in my personal life, I was kind of the same. I'm like, \"Oh my god, it's so hard to cash flow here in California. Let me go buy out of state.\" So, there are a whole lot of issues with owning stuff out of state. There's probably people that are way better than I am. But, I just found that it wasn't the right fit for me. So, I wanted to bring it all back. And in order for me to buy where it made sense, you could cash in California. You have to have like kind of special uh skills and knowledge. And I said, I'm I'm all in. I'm going to learn whatever it takes to be able to do it where I can buy something that makes sense and that is profitable in my own backyard. That's what I'm going to do. And that's how I mean that's how I kind of started on this journey because it was a necessity. I did not want to buy out of state real estate. >> You know, very similar. So, like I mentioned over the last few years curate, not my main strategy. And then when I moved, my biggest concern was number one, my portfolio. you've seen some of the numbers on some of my deals where it's like the insurance crisis. You you have the insurance crisis as well, >> right? >> It has impacted my um you know cash flow with you know all of that. So I'm seeing that back in Louisiana where we're not getting appreciation but hey cash flow is impacted and so like right now I'm getting like tax benefits and amortization uh and maybe if I'm lucky cash flow right >> and okay those are benefits but like no one's getting excited over that. And then I'm coming into a market like Florida where number one there's people spending 50 to 100 grand a month, you know, marketing. I'm not competing with that. But then I also have properties here with same thing insurance but um issues but also property taxes. And so a lot of people here are struggling to cash flow. And so I was like, \"All right, let me re-evaluate and pivot um and not just gung-ho and and buy like I normally have even with creative financing.\" um what are what are some other tools in tool belt? And so that's really where it's like looking at the the curative and you've mentioned before that like [sighs and gasps] >> like that the curative and the creative world so like creative like seller financing subject two things like that >> that they um they fit so well together. >> Um what what do you mean by that? >> So I'm gonna have a little bit of a rant here. So, a lot of people that that are kind of marketing, the creative finance specialty, whatever. >> Mhm. >> I I think what they leave out is that if you're in a market where a seller can sell retail and not have a problem, what really gives you any sort of leverage with them to to go with a creative strategy? Mh. >> And what happens is people say, \"Oh, they get all excited about creative, they go to a seminar, blah blah blah, and they go and try it and they get there's so many nos, right? But what if you found somebody that can't sell to any anybody because they can't get title insurance, so there's nobody really calling them and and even the people that call them, they don't know how to solve the problem. But then you introduce a solution and now you also have a compelling reason why you need to do creative.\" So I was like, \"Oh my god, this is like mana from heaven.\" because you know I've learned from Pete and all those guys and I was like well how can I use in California cuz you know people will tell you the real estate club meetings oh you can't do creative in California people go just you know put it on the MLS and sell it why would they want to you know carry it for you know 200 months or you know all the stuff we learn and because you combine the two now you are actually solving the problem but you're also building in a way to kind of protect yourself by using creative right these so there's ways to to I mean it's just it's just a marriage that works really well together is when you find the curative and then you bring the creative solution. >> It's not like there's a lot of people, you know, beating down the door to solve that problem. >> So, um I love it >> and and and I I agree with that because it's like um so I remember one of the curative deals I did. Um it was it was probably one of my chunkier files. Like I I I had to I had to bite through a lot to really solve the issues on this deal. >> Um I I had to convince the owner that he even still owned it. Um, and and then I had to work through so so so much to to clear it. And I remember this guy pulled in one day. So I was there at the I was checking in on the property and um this guy pulls in to the driveway and I'm like, \"All right, who's this?\" You know, like I'm I'm like my guard's up. I'm like, \"Who?\" Yeah. And he came and he was like a little bit foaming at the mouth. He was like, \"How'd [laughter] you do it? How'd you do it?\" He's like, \"I spent years trying to fix this house.\" He said, \"Are you the lady that um that owns it now?\" and someone told me a lady owns it now and she's getting it sorted out. How'd you do it? Yeah. I was like, man, if you would at least approached me a little bit different, we probably would have had to like gone and had lunch. I like, hey, just take me to lunch and I'll tell you, >> right? >> Um but he was so like, you know, butt hurt because he had tried so hard but like couldn't figure it out. >> And um >> but there's a level that um it comes back to very similar to so very similar to some of the core principles with creative. It's like looking at your different tools that you have in your tool belt and then seeing it as, you know, offering it. You know, people accept creative offers because of the benefit. >> Mhm. >> And you know, you've got to get more creative with that with seller financing and subject to things like that. There needs to be some, you know, level of I even believe that even with creative, there needs to be some level of a problem being solved, right? Still, >> I agree. Um but then with curative it's like a very obvious problem like hey you you can't sell otherwise >> um >> and so now where do you think people get curative completely wrong? So like solving these title and ownership issues that you know often lead to litigation and lose money because they didn't understand what they were fixing. What do what do you think are some of those pitfalls? >> There's a couple of pitfalls that I've seen. Number one is you know that old saying is the juice worth the squeeze. So people get so enamored with kind of the surface what they see and then they just start digging because they think oh I can fix this problem but they fail to to do a very uh educated risk analysis about okay I could fix this problem but by the time I'm done with all this here's what I'm going to end up with at the end of the day if I if everything goes well. and if if things don't go well, I may end up with a negative or zero or or you know, something like that. So, sometimes people get sucked into the drama of being able to fix it. But they, you know, just cuz you can doesn't mean you should, right? So, that's that's one thing. And then there's other ones where they just kind of, >> you know, they they they read about they take a summer and they just go jump in and they don't understand kind of the the the rules of the road, the potential pitfalls. like there there are leans that you can that you're going to be uh subject to, but it's not recorded. >> So, how do you protect yourself from that? Right? And if you don't know, >> right? It's not going to help you. So, if you don't know, you don't know. >> And there's people that are miscalculating that. And >> so, like, for example, so so because some people are going to be like, Courtney, you have to ask that. So, like what are some of those leans that you would be subject to if you bought a house, but it may not be recorded or it's not recorded? >> There's a medical Yeah, medical claim is one of them. >> What is that? >> Medical claims. >> Okay. So, that's uh tied to the state of California. >> Um, >> but there's there's an equivalent type of thing in but they they do things a little bit different per state, but those aren't recorded in California. What are some other ones that you think the one that came to mind is utilities um that could potentially be tied to the property depending on if you know if it is with the property versus if it's with the individual. >> Some some areas do it they follow the individual. Some areas >> um I mean I just had a friend buy a house um up north and they like closed on this flip and then all of a sudden after closing they get notified of a of a large utility bill that was not >> not a part of the situation. Right. Right. Yeah. Yeah. >> Um stuff like that. Um you you kind of alluded to it. One of the other pitfalls I see is that people who are very businessminded, like so think like wholesalers, stuff like that, who some people are converting from that world into this world. >> Um they're so used to just flippantly going into a new market, >> i.e. a new state, >> right? and they think that that is a um a flippant thing like oh I can just go to you know >> right >> and um so I personally am from Louisiana my you know so the Louisiana market which by the way is a very weird title state you know in general Napoleonic law is different than other states >> um and I've done a lot of work in Mississippi as well uh and then I just moved to Florida. All three of those states are very different, you know, but and there's some there's some carryover, but it's like people get lost in the the pitfall of thinking that one thing applies everywhere and sometimes it does, but sometimes it doesn't. You know, it can be very state by state. It can be, you know, the city based on the city, >> right? >> Um, >> and yeah, because I think some people, again, I like how you said, you know, is a juice worth a squeeze? It's like, you know, every house that, you know, has, you know, maintenance issues and is a a fixer upper doesn't mean it's a good flip, >> right? >> Yeah. 100% agree. >> And it takes it takes a lot of wisdom to help you develop that sense of saying, \"Okay, let me really truly evaluate the risk here.\" And that takes time. >> Yeah. you know, someone I I've really enjoyed this idea of like risk analysis and that being like a really strong muscle that you have to build >> in this business. Um, it's something that I'm surely trying to like build for myself is like that risk analysis to understand which deals are a yes and which deals are a no. >> Um, do you have any like rules of thumb like when you're looking at deals of like >> you know how you do that analysis? Uh, you know, a lot of it is gut. I mean, I do the math and I and I think, okay, if everything goes well, here's what I think I'm going to make. Uh, and I look for possible trouble spots that, um, you know, could throw the whole thing sideways. And you're always learning about, you know, the things you didn't account for. >> And, uh, the, you know, that's why I say the only real thing you have under your control is how deep of a discount you buy it. So, that gives you some insulation from it. uh and that's the best you can do or you know just saying no and saying no to those deals and I think that's one of the best lessons in curative because everything looks like a deal but then say that you get caught up in one and it's very tempting to just kind of see it through because you've invested so much time in it already but there is some wisdom to just saying hey I'm going to cut this loose because there's other stuff that's probably easier to monetize that I could I could do that or or have a greater monetization I saw somebody that did a curative with and you know he was excited and not to not to you know put him down cuz he did make some money but it took him over a year or close to a year to do it and and to me there were so many other possible deals out there that he could have used his skills and he would have made six figures instead of five. So yeah, I mean I'm playing kind of armchair quarterback and you know he did make money so there's you know nothing wrong with that but it's a good reminder for me at least to say okay don't get enamored with you know the deal really think about I have you know limited energy limited resources let me make sure I apply it in the most optimal way >> that's probably been some of the biggest feedback I have for myself like doing this I don't want to say haphazardly but like >> you know over the years is I often like one of the biggest mistakes with curative is time because that's so ex time is so much more expensive than we realize. >> Yeah. Yeah. >> And like getting just letting something draw and for me it was like because it wasn't my main business it was like oh well this takes a lot of you know >> touches right like we have to focus on this like be involved with this. >> Um and so for me I had some files that took a year or two years and I I basically gave it more time than it should have. Thankfully, um you know, you know, one of them I doubled my money, the other one I made, you know, $130,000 on it. And so, like, yeah, you you make money, but like, man, it would have been very different if I would have made that money in 6 months versus in two years, you know? >> Right. Right. >> Or whatever. And so, what when the difference between a cured problem that's solvable and one that's a trap? What do you what do you think that you know, and >> take that for what you will, right? Like are there such things as like money pits or like you know curative that can go south? >> For sure. I think if there is just from all the the elements of the situation, it looks like there's going to be a lot of litigation and a lot of people fighting back that are and have the means to fight back with you to to even if you're right, there's a price tag attached to proving you're right. And you have to be able to separate your ego from saying, you know, I I may be right, but the the price of being right and fighting this other, you know, person that could be an air, it could be an agency or whatever. Do you want to really expend your capital and energy and your your mind, you know, your brain space, right? Because that's going to occupy your brain if you're involved in a in in a situation that you're you're constantly thinking about. I know I do. uh I I better make sure that uh that that it's worth it and that I want to see it through and that the uh the reward is is uh measure it with all the energy that I'm expending whether I'm working on the case or just just you know thinking about it throughout the day. So, the ones that are are traps, I think it it has a lot to do with litigation because once you start once you pull that litigation lever and you need to bring in professional help. I mean, you know, you're looking at four or 500 bucks an hour with, you know, you know, the favorite thing attorneys say was, you know, well, it depends. Well, you say, well, how much is it going to cost you to solve this problem? It depends, right? So, you don't know what you don't know until you kind of dig into it. And, uh, remember, we're not in this thing to to win. we're in this thing to make some money, right? So, >> well, and I think that's why in the anal like the risk analysis phase, there needs to be a level of how can this go wrong, >> right? And some of this, like a lot of this is litigation, right? So, in the litigation, you know, some of that could be time. >> Um, you know, what you know, what are some of those other ways? Um, and and it's just not just saying, oh, how much money could I make? and like being greedy and like you know stuff like that but it's also like what's my downside >> and you know I think this is where Charlie Mer and Warren Buffett and the likes um have done well to kind of teach us to to be mindful of that. Like I think the investor world doesn't talk about you know offense and defense very well >> that much. That's also why I really enjoy like Pete and John Sha and them um cuz they were the first real taste of defense that I was ever really taught of um like in in the sense of you know playing defense with my portfolio different things like that where it started to incorporate this idea of risk assessment and um you know things along those lines. Um, >> well, you know, defense is defense is not a very sexy marketing message, right? But it's >> No, it doesn't sell it doesn't sell horses, >> but it's so essential to to know and learn from guys like John and Pete and >> Yeah. Yeah. >> Yeah. So, you know, you you mentioned to me recently um that you that you basically used a poorly drafted note and you recently did that deal. Y >> um >> so cuz a lot of times when people think about curative they think you know um partial interest they think you know some sort of litigation or something but you brought up poorly drafted documents and like as a part of a definition of curative right cuz hey sometimes that that poorly drafted document either is a break in the the chain of title like there's an issue there um it it also could be that that um could have basically been a deed gone wild or something. It could be a lot of things, >> right? >> Uh but talk to me about what that looked like. Um and and and you know why you include that with curative, you know, stuff like that. >> Yeah, I include it with curative because it has that same sort of mindset about hey this thing has a very reduced value in the marketplace because of something that's wrong with the documentation because that's basically what title is, right? So although it it it wasn't a title issue per se, it was it was a document issue where the it was a seller carryback note that was so poorly drafted that if and that this you know this per note holder wanted to liquidate it and the gap between the value of where it was when I enter the picture and where we ended was about $200,000. Right. significant because the paper was >> huge. Huge. >> And it was funny just because of not only just the fact pattern but actually how it was drafted. And so, you know, when I looked at it, I said, you know, here's some good news and bad news is, yeah, the good news is I could I can get you money for the note as is, but here's the haircut you would have to take. >> So, let let's figure out a way to get you better value for it because I think it would be worth it. >> And so, I really hope the service and they were so thankful. >> Um, yeah. you know, I got >> do like a modification or something like that. >> Yeah, we had to get some legal help to kind of uh rece Yeah. redraft the note and um that's not always easy to do when you have a you know a um >> cooperative borrower involved, right? >> So, but we had some other things up our sleeve. So, but I was so happy. I was like, \"Hey, you know, I just basically gave these guys a $200,000 bonus for their for their note.\" And I was happy to do it because you know I also was rewarded as well. But um you know it's it's really satisfying because I know a lot of people would have turned it away and say hey this is this is all you got. >> Well and so many people so many people see real estate as uh what HGTV shows which is let me go create value from taking an ugly house and making it pretty. [snorts] >> And I I got sucked into that um very early on. I did I did a ton. But you know that deal I mentioned earlier where um you know that the guy came up. He was like, \"How do you do it?\" That deal I had a huge revelation. Um cuz I was actually I think that day I was there because they had just delivered some supplies. So like a lumber stack or whatever. >> And it was in that deal that I decided I was going to stop doing major gut rehabs that um and I had already started. I put a new roof on it. I had gutted it and I had the lumber stack delivered because we were going to go and and redo the studs from the termite damage. >> Yeah. >> And so like getting ready to do the scope of work, all of that. >> And that's when I realized that like I had this quote on my desk from Jimmy Napier that says real estate is a thinking person's game. >> Um and he also said that I'd made you know I made my most money in real estate by thinking. >> And that was the deal that when I abandoned it, you know, I moved forward and I made six figures on that deal, but I didn't renovate it. I sold it as is, you know, with the lumber stack and, you know, all that. But, >> right, >> um, and I think going back to, you know, defining curative, it's it's bringing value to a deal that's not, you know, >> you can make money selling that that the the sticks and bricks of the house is irrelevant because you can, you know, sell it as is or whatever. do some strategy with it as is, but what you're really doing is cleaning up the paperwork, the title, the ownership situation, all of that. >> Um, >> and and that right there is a huge way that I think, you know, the people that are attracted these to these types of deals are people who, you know, maybe they appreciate the research side, they like the thinking side, they like the more, you know, people confuse us for attorneys, you know, we're not attorney, you know, stuff like that, >> right? Um, and I I don't know. I guess I've enjoyed that part, right? Like I I I gravitate towards it because I enjoy like sometimes it's playing chess, you know, with with it. Like, okay, if this then that. >> Um, but other part of that is really just, you know, being able to fix something that, yeah, like I said, most people >> most people can't fix. >> Yeah. So, I' I've coined this term that I should probably trademark and I want to make it like >> Careful. >> Yeah. I I want to, you know, I want to make it like a chapter title of a book or or a title of a book, but you know, I a phrase I use a lot is is is paper over hammers because, you know, I got sucked into the same HGTV thing where I only looked at the physical distress of a property. >> Yeah. >> Right. Oh man, I got to put on a new roof. I got to, you know, fix the foundation, put in new plumbing, blah blah blah, and that's how I'm going to get that that lift in value. When I started discovering that if I kind of know what papers to shuffle around and get the right signatures on it, I made way more money and I didn't break any fingernails, you know. So, >> right. Or exactly hurt. Yeah. Or hurting pads with subcontractors and stuff. I mean >> Yeah. Yeah. Yeah. So, I always kind of remind myself when I rehabbed a house on my own way back when >> and I threw my back out because I was lifting the uh you know, I was I was going to m do some mudding and taping. So, I'm lifting, you know, all the mud in onto the Home Depot cart and my my buddy who was doing the help I was like, \"Dude, I think I threw up my back.\" And he's like, \"No, you're lying. You want me to do all this work?\" I went, \"No, I'm serious. I throat my back.\" So, I always think about, \"Okay, don't do the heavy lifting.\" >> You know, let Yeah. Yeah. Take me to the hospital. So, I'm like, \"Okay, there's got to be a better way.\" And thankfully through a lot of, you know, uh, learning and mentoring that people have helped me, I developed more of that kind of, hey, I could I could solve a lot of problems with paper and be rewarded way more handsomely than if I was good with swinging a hammer. >> And and I think, you know, some people are going to naturally be inclined to like prefer like the swinging the hammer type. >> Hey, they both work. Hey, they both work. Yeah, >> they both work. Look, I know some builders and developers and, you know, contractors who make six figures that do well, like that do. >> Absolutely. >> And I'm like all for you. I >> I very quickly got fired that like when I would design or like um you know, stage a property, the the agent was like, \"Girl, put that back in your car. It is uh it's going to like make the value go down.\" >> That's not your Yeah. That's not your strength. Yeah. >> No, it's not. I was like, \"Okay, okay. I'll stay in my lane.\" I um >> and so the goal here is like I I love like having these conversations with you. I've really enjoyed our friendship over the years and so I was really glad to have you on. Um and I'm hoping to have you on some more. We can talk about how the money can be made in the mess. >> Absolutely. >> Cuz so many people will avoid the messiness. But look, I'll take I'll take you know the messy money situations all day long. Um and so if someone is listening and wants to um you know they want to for example explore this this curative stuff one I want to invite them to subscribe and come back to these conversations um because I think number one it's you someone once gave me some advice early on was like you grow into the conversations you're around and so if all you're doing is standing around flippers well you can grow as a flipper but you might not grow well as a landlord or as a curative title person. Right. >> Right. >> Um and so so talk to me about um some some general there's a lot more people getting interested in curative now. So what are some general thoughts and advice you have for people who were interested in in doing some more curative stuff? I think having the realistic expectation that a lot of times these take a lot longer to monetize. >> Uh and that you need to have it's just like if you're starting a business, what if you were starting a business where you were putting a lot of money out, but you weren't getting any you had a lot of accounts receivable that weren't being paid yet, right? So you don't want to you don't want to run out of runway where you could still operate and then collect, you know, the gold at the end. So be very realistic about what time frames that would be. really dive into your like you said about your state. Every state has kind of a little bit different way they do things. Make sure you take the time to figure it out. Make good connections with legal professionals. I think that has been one of the the most uh valuable things I've done is I've made very good connections with my legal community >> and um >> similar. >> Yeah. So those are very very important things to consider. So, if you're not comfortable kind of with digging deep and figuring out putting you're basically putting together a puzzle um and if you want kind of instant gratification, this is probably not something that you would enjoy. >> So, >> yeah, and and realizing, you know, if it's a good fit for you or not and then, you know, things along those lines. Um yeah, understanding, you know, that deal analysis that is the juice worth the squeeze is so critical. And most people um you know, you got to build that muscle, right? And uh and and to be able to assess what's your downsides to stuff like this. And so a huge part to that is a competent attorney. And attorneys are like, you know, they're like doctors. you know, you're not you don't want to go to a foot guy for your heart and vice versa, right? >> Um, so same thing with an attorney. I see people, one of the mistakes people make is that they go to the wrong type of attorney for this stuff because that attorney just happens to be a yes person who said, \"Yeah, like I'll do that for you.\" You know, >> right? >> Um, >> well, Alice, I'm I'm looking forward to having some more curative conversations with you. Um, so, so as we wrap this up, um, >> if people want to get in touch with you, I know I know you're doing some revamping on your socials. >> I am. >> Um, so where can people get in touch with you? >> So, my new social is going to be deedclear on Instagram. Um, the one that I've been using for, you know, years now is FIBUSA because that was a networking group I started called for investors by investors. So, I've been using that for forever. But the new place where I'm going to kind of connect with people on a business level is going to be the Deed Clear site. >> So, I'm I'm going to make sure to put that in the show notes. Okay. >> Um and and you know, as we share some of the clips from this episode, I'll uh collaborate with you on there so folks can can see it. Um >> Great, >> Alice. I'm always excited with when we get to chat. And I think I know a lot of folks have been excited to to see more see more from you. So, so whatever you're willing to give, we're excited for that. And um >> Oh, I'm very thankful for the invitation. Thank you, Courtney. >> Yeah. Yeah. Well, guys, make sure you subscribe. Stay tuned for the next episode. We're looking forward to sharing with you guys about um you know, how to not avoid the messy the messy situations that definitely can bring in the money. So, all right. See you guys next episode.",
+  "attempts": [
+    {
+      "client": "IOS",
+      "playability": {
+        "status": "OK",
+        "playableInEmbed": true,
+        "offlineability": {
+          "buttonRenderer": {
+            "navigationEndpoint": {
+              "clickTrackingParams": "CBEQ6ewBIhMIk-qrkezblwMV8npMCB0I7DEOygEEf5_jfg==",
+              "ypcGetOfflineUpsellEndpoint": {
+                "params": "ChPqqN25AQ0KC0dINVROX2lJZE1zIgtHSDVUTl9pSWRNcyoVCAkYAVIPCgtHSDVUTl9pSWRNcyABMAM%3D"
+              }
+            },
+            "trackingParams": "CBEQ6ewBIhMIk-qrkezblwMV8npMCB0I7DEO"
+          }
+        },
+        "pictureInPicture": {
+          "pictureInPictureRenderer": {
+            "playableInPip": true,
+            "offByDefault": false,
+            "shouldResumeOnHead": false
+          }
+        },
+        "miniplayer": {
+          "miniplayerRenderer": {
+            "playbackMode": "PLAYBACK_MODE_ALLOW"
+          }
+        },
+        "contextParams": "Q0FFU0FnZ0M="
+      },
+      "outcome": "ok"
+    }
+  ],
+  "fetched_at": "2026-10-28T04:11:34.231115+00:00",
+  "client": "IOS",
+  "json_path": "transcripts/128_GH5TN_iIdMs.json",
+  "text_path": "transcripts/128_GH5TN_iIdMs.txt"
+}

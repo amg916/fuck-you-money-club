@@ -1,0 +1,3260 @@
+{
+  "index": 30,
+  "url": "https://www.youtube.com/watch?v=tljNDoj74TI",
+  "video_id": "tljNDoj74TI",
+  "status": "ok",
+  "metadata": {
+    "title": "Analyzing Evidence: A Research Game Changer",
+    "author": "FamilySearch",
+    "channelId": "UC-9GZ7QHKOmLS0APnfz2g1Q",
+    "lengthSeconds": "3283",
+    "viewCount": "716",
+    "shortDescription": "If conclusions in genealogy are rarely 100% certain, how do you know your genealogical conclusions are as correct as possible? How much evidence do you need? If two sources say different things, how can you decide which source is most likely correct? Come learn how to analyze and correlate sources, information, and evidence using generally recognized principles. Analyzing the evidence will help you look for original records, alert you to errors, and strengthen the credibility of your conclusions so you can be confident in your genealogical research results. Attendees should have an understanding of genealogy research to be successful in this advanced class."
+  },
+  "caption_tracks": [
+    {
+      "baseUrl": "https://www.youtube.com/api/timedtext?v=tljNDoj74TI&ei=5XXhasf9E-yBsfIP64TMUA&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185877&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=E9F90E0E4EF193AADD04A5DF72CC06616B49FDA2.179E4EFA1343D8F436B845BA7B9A3EA973D2D163&key=yt8&lang=en",
+      "name": {
+        "runs": [
+          {
+            "text": "English"
+          }
+        ]
+      },
+      "vssId": ".en",
+      "languageCode": "en",
+      "isTranslatable": true,
+      "trackName": ""
+    }
+  ],
+  "selected_track": {
+    "baseUrl": "https://www.youtube.com/api/timedtext?v=tljNDoj74TI&ei=5XXhasf9E-yBsfIP64TMUA&caps=asr&opi=112496729&xoaf=5&xowf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1793185877&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=E9F90E0E4EF193AADD04A5DF72CC06616B49FDA2.179E4EFA1343D8F436B845BA7B9A3EA973D2D163&key=yt8&lang=en",
+    "name": {
+      "runs": [
+        {
+          "text": "English"
+        }
+      ]
+    },
+    "vssId": ".en",
+    "languageCode": "en",
+    "isTranslatable": true,
+    "trackName": ""
+  },
+  "segments": [
+    {
+      "start": 0.66,
+      "duration": 2.26,
+      "text": "Hello everyone and welcome."
+    },
+    {
+      "start": 3.17,
+      "duration": 2.27,
+      "text": "I'm really excited to be here with you today."
+    },
+    {
+      "start": 5.65,
+      "duration": 1.67,
+      "text": "My name is Mindy Taylor."
+    },
+    {
+      "start": 7.929,
+      "duration": 3.51,
+      "text": "I'm an accredited professional genealogist in the England region."
+    },
+    {
+      "start": 11.77,
+      "duration": 5.469,
+      "text": "Um, I also do contract research in the US and um British Isles in Canada,"
+    },
+    {
+      "start": 17.319,
+      "duration": 2.08,
+      "text": "so I do research all day long."
+    },
+    {
+      "start": 20.01,
+      "duration": 4.43,
+      "text": "um, that's my email up there so you can contact me if you have any questions."
+    },
+    {
+      "start": 25.26,
+      "duration": 6.43,
+      "text": "We're gonna start by um a little bit of housekeeping um please silence all of your"
+    },
+    {
+      "start": 31.69,
+      "duration": 5.62,
+      "text": "electronic devices in one of my classes yesterday I announced this to everybody and"
+    },
+    {
+      "start": 37.31,
+      "duration": 1.44,
+      "text": "guess whose phone went off."
+    },
+    {
+      "start": 40.59,
+      "duration": 4.5,
+      "text": "So we're just gonna double check and make sure that everything's off and we don't get"
+    },
+    {
+      "start": 45.09,
+      "duration": 7.0,
+      "text": "disturbed um also there's no audio video recording and no photos I'd also like to ask"
+    },
+    {
+      "start": 52.09,
+      "duration": 5.88,
+      "text": "you to just hold your questions till the end. We do have microphones and we will have some"
+    },
+    {
+      "start": 57.97,
+      "duration": 1.75,
+      "text": "time at the end for questions."
+    },
+    {
+      "start": 60.779,
+      "duration": 5.401,
+      "text": "All right, so if you're wondering what class you stumbled into so early this morning and"
+    },
+    {
+      "start": 66.18,
+      "duration": 5.199,
+      "text": "thank you for being here so early this morning, this is analyzing evidence a research game"
+    },
+    {
+      "start": 71.379,
+      "duration": 3.521,
+      "text": "changer and it really is a research game changer."
+    },
+    {
+      "start": 75.319,
+      "duration": 6.121,
+      "text": "Um, this class is labeled advanced professional, but you don't have to be advanced professional"
+    },
+    {
+      "start": 81.44,
+      "duration": 1.47,
+      "text": "to be learning this stuff."
+    },
+    {
+      "start": 83.25,
+      "duration": 6.04,
+      "text": "We are just talking about advanced concepts, and I actually think that the sooner in your"
+    },
+    {
+      "start": 89.29,
+      "duration": 5.349,
+      "text": "research journey you learn these concepts, the better researcher you will be,"
+    },
+    {
+      "start": 94.97,
+      "duration": 5.11,
+      "text": "and you have to go back and visit these all the time some of these concepts kind of."
+    },
+    {
+      "start": 100.62,
+      "duration": 2.63,
+      "text": "Um, need to be drilled into your head."
+    },
+    {
+      "start": 103.5,
+      "duration": 4.019,
+      "text": "And so it's OK to come back and review these things over and over again."
+    },
+    {
+      "start": 108.22,
+      "duration": 6.07,
+      "text": "I've also entitled this uh analyzing evidence but we're also gonna be talking about analyzing"
+    },
+    {
+      "start": 114.29,
+      "duration": 5.989,
+      "text": "our sources and our information and we're gonna be using context to help us"
+    },
+    {
+      "start": 120.73,
+      "duration": 3.799,
+      "text": "solve complex problems and come to really solid conclusions."
+    },
+    {
+      "start": 125.699,
+      "duration": 6.84,
+      "text": "All right, so there's a big whole process that is involved in this and the very first step of"
+    },
+    {
+      "start": 132.539,
+      "duration": 5.871,
+      "text": "this process is you have to have a research question you actually cannot analyze evidence"
+    },
+    {
+      "start": 138.41,
+      "duration": 5.97,
+      "text": "if you do not have a research question so sometimes we call this our objective."
+    },
+    {
+      "start": 145.24,
+      "duration": 3.72,
+      "text": "And it has to be narrow enough for us to have an answer."
+    },
+    {
+      "start": 149.83,
+      "duration": 6.949,
+      "text": "And then moving on in the process we have to do exhaustive research we are already working"
+    },
+    {
+      "start": 156.779,
+      "duration": 6.441,
+      "text": "with very small pieces of a person's life and so the more pieces of information that we can"
+    },
+    {
+      "start": 163.22,
+      "duration": 5.86,
+      "text": "collect that will answer our research question, the better the uh totality of our evidence will"
+    },
+    {
+      "start": 169.08,
+      "duration": 3.61,
+      "text": "be so exhaustive research is really important."
+    },
+    {
+      "start": 173.149,
+      "duration": 6.791,
+      "text": "All right, then we move to the analysis part of the process and this is where the process"
+    },
+    {
+      "start": 179.94,
+      "duration": 1.369,
+      "text": "slows way down."
+    },
+    {
+      "start": 182.259,
+      "duration": 6.72,
+      "text": "This is where we look at the details we pick apart things we look very closely at the"
+    },
+    {
+      "start": 188.979,
+      "duration": 6.47,
+      "text": "context then we move on to the correlation phase where we put those pieces of"
+    },
+    {
+      "start": 195.449,
+      "duration": 6.72,
+      "text": "evidence together and look at them in different ways so that we can see patterns similarities,"
+    },
+    {
+      "start": 202.339,
+      "duration": 7.0,
+      "text": "differences, conflicts in evidence, and then we can weigh our evidence to"
+    },
+    {
+      "start": 209.339,
+      "duration": 5.741,
+      "text": "see. By the quality whether or not, um, that"
+    },
+    {
+      "start": 215.08,
+      "duration": 1.69,
+      "text": "evidence is reliable."
+    },
+    {
+      "start": 217.66,
+      "duration": 6.489,
+      "text": "All right, now another step that I think a lot of people look over or forget"
+    },
+    {
+      "start": 224.5,
+      "duration": 1.97,
+      "text": "is to write about it."
+    },
+    {
+      "start": 227.139,
+      "duration": 6.191,
+      "text": "Writing about it is a valuable tool because it helps you see holes in your research."
+    },
+    {
+      "start": 233.699,
+      "duration": 6.801,
+      "text": "It also helps you see inconsistencies, helps you make connections and when you are thinking"
+    },
+    {
+      "start": 240.5,
+      "duration": 3.199,
+      "text": "about how you have come to this conclusion."
+    },
+    {
+      "start": 244.22,
+      "duration": 4.53,
+      "text": "It helps you to reason more logically."
+    },
+    {
+      "start": 249.0,
+      "duration": 2.72,
+      "text": "So writing about it can really be beneficial."
+    },
+    {
+      "start": 253.029,
+      "duration": 6.59,
+      "text": "All right, there's some things I want you to keep in mind when we're doing this first of all,"
+    },
+    {
+      "start": 259.829,
+      "duration": 6.88,
+      "text": "we have to keep in mind that no source is immune to error any source"
+    },
+    {
+      "start": 266.709,
+      "duration": 4.361,
+      "text": "can have a mistake or an error in it, so keep that in mind."
+    },
+    {
+      "start": 272.029,
+      "duration": 3.791,
+      "text": "Then we always want to try and find the original record."
+    },
+    {
+      "start": 276.64,
+      "duration": 5.939,
+      "text": "The original record 90% of the time, maybe even more will have more information,"
+    },
+    {
+      "start": 282.67,
+      "duration": 4.8,
+      "text": "more clues, more context for us when we're doing our research."
+    },
+    {
+      "start": 287.48,
+      "duration": 6.349,
+      "text": "So finding the original is important and when we're doing research in databases such as"
+    },
+    {
+      "start": 293.829,
+      "duration": 6.651,
+      "text": "ancestry or Find My Past, quite often the digital image of the original will be attached"
+    },
+    {
+      "start": 300.779,
+      "duration": 3.49,
+      "text": "so it's really easy to just click on that image and look at it and read it."
+    },
+    {
+      "start": 305.41,
+      "duration": 3.09,
+      "text": "Sometimes we have to take extra steps."
+    },
+    {
+      "start": 308.809,
+      "duration": 3.55,
+      "text": "We have to go find the original, but it's always worth the effort,"
+    },
+    {
+      "start": 312.529,
+      "duration": 1.721,
+      "text": "so make sure that you're making that effort."
+    },
+    {
+      "start": 315.239,
+      "duration": 5.671,
+      "text": "All right, finally, you need to find as many independent sources as you can."
+    },
+    {
+      "start": 321.769,
+      "duration": 3.54,
+      "text": "And I want to explain independent sources a little bit better."
+    },
+    {
+      "start": 326.0,
+      "duration": 6.739,
+      "text": "So I have this example independent sources are created by different entities."
+    },
+    {
+      "start": 333.839,
+      "duration": 5.77,
+      "text": "For different purposes and at different times, so take for example,"
+    },
+    {
+      "start": 339.959,
+      "duration": 5.961,
+      "text": "if I, if my research question was to try and find the birth date of my grandfather."
+    },
+    {
+      "start": 347.04,
+      "duration": 5.139,
+      "text": "I have these 3 records. They all give me that information of his birth"
+    },
+    {
+      "start": 352.179,
+      "duration": 5.291,
+      "text": "date. But all of these records I have a I have a"
+    },
+    {
+      "start": 357.47,
+      "duration": 3.559,
+      "text": "death certificate. I have an obituary and I have this tombstone."
+    },
+    {
+      "start": 362.6,
+      "duration": 6.799,
+      "text": "But all of these records were created at the same time for the same purpose and very"
+    },
+    {
+      "start": 369.399,
+      "duration": 6.96,
+      "text": "likely the person who gave the information was my grandmother so it really is not"
+    },
+    {
+      "start": 376.359,
+      "duration": 5.081,
+      "text": "independent information this probably all came from the same purpose for the same from the"
+    },
+    {
+      "start": 381.44,
+      "duration": 1.709,
+      "text": "same person for the same purpose."
+    },
+    {
+      "start": 384.089,
+      "duration": 5.911,
+      "text": "All right. Now moving on, if we take that same death"
+    },
+    {
+      "start": 390.0,
+      "duration": 6.2,
+      "text": "certificate and we add in a World War 2 draft and my grandfather's birth"
+    },
+    {
+      "start": 396.2,
+      "duration": 6.909,
+      "text": "certificate. Then these are independent sources because they"
+    },
+    {
+      "start": 403.109,
+      "duration": 6.95,
+      "text": "were all created at different times for different purposes by different people."
+    },
+    {
+      "start": 410.589,
+      "duration": 1.911,
+      "text": "I'm gonna grab a drink really quick."
+    },
+    {
+      "start": 416.66,
+      "duration": 2.22,
+      "text": "Sorry, much better. OK."
+    },
+    {
+      "start": 422.47,
+      "duration": 3.299,
+      "text": "Now, another thing that I want to drill into your head."
+    },
+    {
+      "start": 426.41,
+      "duration": 4.26,
+      "text": "Is that the quality of a source is more important than the quantity."
+    },
+    {
+      "start": 431.2,
+      "duration": 6.28,
+      "text": "So one really good record can trump 5 records that are copying"
+    },
+    {
+      "start": 437.48,
+      "duration": 2.569,
+      "text": "incorrect information over and over and over again."
+    },
+    {
+      "start": 440.85,
+      "duration": 4.07,
+      "text": "All right. So just to demonstrate what I mean by quality"
+    },
+    {
+      "start": 445.17,
+      "duration": 3.27,
+      "text": "of source, let's look at those same three documents again."
+    },
+    {
+      "start": 448.609,
+      "duration": 3.95,
+      "text": "We have the death certificate, we have the World War 2 draft,"
+    },
+    {
+      "start": 452.85,
+      "duration": 1.63,
+      "text": "and we have the birth certificate."
+    },
+    {
+      "start": 455.32,
+      "duration": 5.519,
+      "text": "Now, the birth certificate was created at the time the event happened."
+    },
+    {
+      "start": 461.589,
+      "duration": 5.601,
+      "text": "It was also created by an eyewitness, the midwife who delivered the baby,"
+    },
+    {
+      "start": 467.72,
+      "duration": 1.63,
+      "text": "who signed the document."
+    },
+    {
+      "start": 470.04,
+      "duration": 4.44,
+      "text": "So when I'm looking at these 3 for the birth date of my grandfather."
+    },
+    {
+      "start": 475.44,
+      "duration": 5.959,
+      "text": "They all tell me the birth date, but the birth certificate is a little higher"
+    },
+    {
+      "start": 481.399,
+      "duration": 4.951,
+      "text": "quality because of when it was recorded and the purpose it was recorded for."
+    },
+    {
+      "start": 486.519,
+      "duration": 2.04,
+      "text": "Does that make sense? OK."
+    },
+    {
+      "start": 489.299,
+      "duration": 4.871,
+      "text": "All right. The other thing I wanna discuss is preconceived"
+    },
+    {
+      "start": 494.17,
+      "duration": 4.52,
+      "text": "notions. These are our opinions that are formed without"
+    },
+    {
+      "start": 498.69,
+      "duration": 4.91,
+      "text": "adequate evidence so these are sometimes just our hypothesis or our theories,"
+    },
+    {
+      "start": 503.85,
+      "duration": 3.519,
+      "text": "but we have to be really really careful we're not swayed by them."
+    },
+    {
+      "start": 508.339,
+      "duration": 6.47,
+      "text": "We have to stay neutral and open-minded and we have to let the information speak for itself."
+    },
+    {
+      "start": 515.419,
+      "duration": 5.521,
+      "text": "OK? So evidence can actually point to more than one"
+    },
+    {
+      "start": 520.94,
+      "duration": 6.71,
+      "text": "conclusion. Especially if we glance over the gaps or the"
+    },
+    {
+      "start": 527.65,
+      "duration": 6.12,
+      "text": "conflicts that we see in the evidence, so we have to then"
+    },
+    {
+      "start": 533.77,
+      "duration": 5.73,
+      "text": "decide which explanation fits the totality of the evidence that we have found,"
+    },
+    {
+      "start": 539.82,
+      "duration": 3.58,
+      "text": "not just some of the evidence because it fits our preconceived notion."
+    },
+    {
+      "start": 543.929,
+      "duration": 4.471,
+      "text": "It's got to fit the totality, everything that we have evidence wise."
+    },
+    {
+      "start": 548.789,
+      "duration": 6.58,
+      "text": "So we are trying to disprove our conclusions as much as we are trying to prove them."
+    },
+    {
+      "start": 555.849,
+      "duration": 3.241,
+      "text": "We have to make sure that we are looking at it objectively."
+    },
+    {
+      "start": 560.409,
+      "duration": 6.921,
+      "text": "All right, when I first started doing research, I knew that records were really important that"
+    },
+    {
+      "start": 567.33,
+      "duration": 5.81,
+      "text": "I needed to prove birth, marriage, death, and connect between parents and children."
+    },
+    {
+      "start": 573.169,
+      "duration": 6.731,
+      "text": "I understood that concept, but when I would find two records that said two different"
+    },
+    {
+      "start": 579.9,
+      "duration": 6.509,
+      "text": "things that I didn't know what to do with that if the year was just slightly different or the"
+    },
+    {
+      "start": 586.409,
+      "duration": 1.591,
+      "text": "date was a little off."
+    },
+    {
+      "start": 588.799,
+      "duration": 2.731,
+      "text": "I didn't know. OK, do I just put both?"
+    },
+    {
+      "start": 591.859,
+      "duration": 1.75,
+      "text": "because there's a document for both?"
+    },
+    {
+      "start": 594.51,
+      "duration": 5.919,
+      "text": "Well, after learning these principles I was able to figure out which one of those would be"
+    },
+    {
+      "start": 600.429,
+      "duration": 6.63,
+      "text": "more correct so hopefully after going through all this you will also have a little bit better"
+    },
+    {
+      "start": 607.429,
+      "duration": 6.841,
+      "text": "um feeling of what might be more correct when you're looking at documents right now because"
+    },
+    {
+      "start": 614.27,
+      "duration": 5.32,
+      "text": "we cannot cover everything thoroughly today there's just not enough time."
+    },
+    {
+      "start": 620.0,
+      "duration": 6.549,
+      "text": "I'm gonna highly suggest these two books Mastering Genealogical proof by Tom Jones and"
+    },
+    {
+      "start": 626.549,
+      "duration": 2.63,
+      "text": "um Evidence Explained by Elizabeth Show Mills."
+    },
+    {
+      "start": 629.549,
+      "duration": 3.951,
+      "text": "Both of these books have really great examples."
+    },
+    {
+      "start": 633.789,
+      "duration": 2.991,
+      "text": "They also go through all this in much more detail."
+    },
+    {
+      "start": 636.95,
+      "duration": 5.959,
+      "text": "So if you want to go back and study something more, this is a really good place to go back to."
+    },
+    {
+      "start": 644.94,
+      "duration": 4.31,
+      "text": "All right, so now we get to start with our evidence analysis."
+    },
+    {
+      "start": 649.299,
+      "duration": 1.42,
+      "text": "What is analyze?"
+    },
+    {
+      "start": 651.14,
+      "duration": 6.3,
+      "text": "Analyzing is um discovering or revealing something through a detailed"
+    },
+    {
+      "start": 657.44,
+      "duration": 1.07,
+      "text": "examination."
+    },
+    {
+      "start": 658.9,
+      "duration": 2.68,
+      "text": "This especially applies to information."
+    },
+    {
+      "start": 662.76,
+      "duration": 6.12,
+      "text": "So it's typically for purposes of explanation or interpretation."
+    },
+    {
+      "start": 669.679,
+      "duration": 3.48,
+      "text": "So this is where we dissect everything we look at the math,"
+    },
+    {
+      "start": 673.26,
+      "duration": 4.63,
+      "text": "we think about the context, we get into the details of what we're looking at."
+    },
+    {
+      "start": 678.549,
+      "duration": 2.351,
+      "text": "And this is the magical formula."
+    },
+    {
+      "start": 681.599,
+      "duration": 2.401,
+      "text": "This has kind of become industry standard."
+    },
+    {
+      "start": 684.39,
+      "duration": 4.919,
+      "text": "We have 3 different columns. We have the source which can be original"
+    },
+    {
+      "start": 689.309,
+      "duration": 2.75,
+      "text": "records, derivative records, or authored works."
+    },
+    {
+      "start": 692.799,
+      "duration": 5.82,
+      "text": "We have information that can be primary, secondary, or indeterminable or unknown,"
+    },
+    {
+      "start": 699.109,
+      "duration": 4.07,
+      "text": "and we have evidence which is direct, indirect, or negative."
+    },
+    {
+      "start": 703.469,
+      "duration": 2.84,
+      "text": "We're gonna talk about each of these in detail."
+    },
+    {
+      "start": 708.28,
+      "duration": 3.189,
+      "text": "All right, so first off, we start with the source."
+    },
+    {
+      "start": 712.08,
+      "duration": 2.43,
+      "text": "Your source is the container."
+    },
+    {
+      "start": 714.96,
+      "duration": 3.089,
+      "text": "This is what holds the information."
+    },
+    {
+      "start": 718.52,
+      "duration": 4.63,
+      "text": "So this can be an original record, derivative record or authored work."
+    },
+    {
+      "start": 724.59,
+      "duration": 4.67,
+      "text": "Sources are published, they're unpublished they're artifacts,"
+    },
+    {
+      "start": 729.429,
+      "duration": 5.151,
+      "text": "photographs, registers, websites, anything where we get information,"
+    },
+    {
+      "start": 734.909,
+      "duration": 5.921,
+      "text": "but they are not things like finding aids or indexes or search engines that help us find"
+    },
+    {
+      "start": 740.83,
+      "duration": 6.839,
+      "text": "that information. Now a record documents an action or"
+    },
+    {
+      "start": 747.669,
+      "duration": 6.69,
+      "text": "an event. So an original record is not based on any prior"
+    },
+    {
+      "start": 754.359,
+      "duration": 3.5,
+      "text": "records. This is the first time something has been"
+    },
+    {
+      "start": 757.859,
+      "duration": 6.68,
+      "text": "written down. A derivative record is copies or it's created"
+    },
+    {
+      "start": 764.539,
+      "duration": 5.301,
+      "text": "from the prior record, so this is gonna include things like transcriptions,"
+    },
+    {
+      "start": 770.09,
+      "duration": 5.769,
+      "text": "abstractions, translations or databases where we get our information."
+    },
+    {
+      "start": 776.859,
+      "duration": 6.521,
+      "text": "Now the more times that something is copied, the more chances there are"
+    },
+    {
+      "start": 783.38,
+      "duration": 5.44,
+      "text": "to introduce error so that's why we want to always look for the original because the"
+    },
+    {
+      "start": 788.82,
+      "duration": 5.359,
+      "text": "original is the first time it was written down and sometimes after it's been copied those"
+    },
+    {
+      "start": 794.179,
+      "duration": 2.68,
+      "text": "little errors might be introduced in."
+    },
+    {
+      "start": 797.919,
+      "duration": 3.281,
+      "text": "All right. Now authored works."
+    },
+    {
+      "start": 804.419,
+      "duration": 4.2,
+      "text": "Are based on information from prior sources."
+    },
+    {
+      "start": 808.929,
+      "duration": 3.271,
+      "text": "So authored works include things like your family histories,"
+    },
+    {
+      "start": 812.809,
+      "duration": 2.87,
+      "text": "obituaries, and one name studies."
+    },
+    {
+      "start": 817.14,
+      "duration": 6.76,
+      "text": "Their credibility relies on whether or not they have been sourced and how"
+    },
+    {
+      "start": 823.9,
+      "duration": 3.399,
+      "text": "well those sources or how good those sources are."
+    },
+    {
+      "start": 828.84,
+      "duration": 6.759,
+      "text": "So if there are no sources say your grandmother wrote a little history about your grandfather"
+    },
+    {
+      "start": 835.969,
+      "duration": 5.88,
+      "text": "and she didn't write any sources there's nothing in there you have to find documents to"
+    },
+    {
+      "start": 841.849,
+      "duration": 7.0,
+      "text": "prove um the information that's in there if you have a work that has been sourced really"
+    },
+    {
+      "start": 848.849,
+      "duration": 4.471,
+      "text": "well. You still need to find those sources and take a"
+    },
+    {
+      "start": 853.32,
+      "duration": 6.64,
+      "text": "look at them yourself because if it was if it's been done in time back a ways there's so much"
+    },
+    {
+      "start": 859.96,
+      "duration": 5.519,
+      "text": "more information that is available to us now that we need to look at what has been done in"
+    },
+    {
+      "start": 865.479,
+      "duration": 5.601,
+      "text": "the past and see if it's still working if that is still the hypothesis or the conclusion that"
+    },
+    {
+      "start": 871.08,
+      "duration": 1.8,
+      "text": "you would come to as a researcher."
+    },
+    {
+      "start": 874.76,
+      "duration": 6.31,
+      "text": "All right, our next column over is information and this is the content"
+    },
+    {
+      "start": 881.44,
+      "duration": 2.19,
+      "text": "that we find in the source."
+    },
+    {
+      "start": 883.96,
+      "duration": 5.949,
+      "text": "So this can be primary, secondary, or indeterminable or unknown depending on the book"
+    },
+    {
+      "start": 889.909,
+      "duration": 3.95,
+      "text": "you read. The term that it will be different in those"
+    },
+    {
+      "start": 893.859,
+      "duration": 6.25,
+      "text": "different books. All right, but the information is always judged"
+    },
+    {
+      "start": 900.109,
+      "duration": 6.791,
+      "text": "by the informant's degree of participation or knowledge so information"
+    },
+    {
+      "start": 906.9,
+      "duration": 6.81,
+      "text": "also tends to be more reliable the closer in time that it was recorded to the"
+    },
+    {
+      "start": 913.71,
+      "duration": 6.8,
+      "text": "event so it'll be a little bit more reliable the closer in time it's recorded to the event."
+    },
+    {
+      "start": 922.169,
+      "duration": 5.541,
+      "text": "All right, so primary information, this is firsthand knowledge."
+    },
+    {
+      "start": 928.119,
+      "duration": 3.891,
+      "text": "Somebody was there, they saw it happen, they recorded it."
+    },
+    {
+      "start": 933.039,
+      "duration": 3.591,
+      "text": "Secondary information is secondhand knowledge."
+    },
+    {
+      "start": 937.0,
+      "duration": 4.729,
+      "text": "This is when somebody has been told this information, for example,"
+    },
+    {
+      "start": 941.88,
+      "duration": 2.909,
+      "text": "none of us remember our birth."
+    },
+    {
+      "start": 945.159,
+      "duration": 5.64,
+      "text": "Somebody told us our birth date, so that's secondhand information for us even though we"
+    },
+    {
+      "start": 950.799,
+      "duration": 4.99,
+      "text": "were there, we couldn't remember it, so that is secondary information."
+    },
+    {
+      "start": 956.849,
+      "duration": 6.291,
+      "text": "Now indeterminable or unknown information simply means that we cannot determine who the"
+    },
+    {
+      "start": 963.14,
+      "duration": 6.8,
+      "text": "informant was so information can only be primary or secondary when we"
+    },
+    {
+      "start": 969.94,
+      "duration": 3.95,
+      "text": "can determine or infer who the informant was."
+    },
+    {
+      "start": 975.39,
+      "duration": 5.64,
+      "text": "Alright, we're just gonna give a few examples now so that you can kind of get these um more"
+    },
+    {
+      "start": 981.03,
+      "duration": 1.379,
+      "text": "solid in your head."
+    },
+    {
+      "start": 982.869,
+      "duration": 6.881,
+      "text": "So this World War II draft record of my grandfather, he signed it and he is the"
+    },
+    {
+      "start": 989.75,
+      "duration": 1.679,
+      "text": "person who gave his birth date."
+    },
+    {
+      "start": 992.179,
+      "duration": 4.091,
+      "text": "But this is still secondary information just as I just explained,"
+    },
+    {
+      "start": 996.359,
+      "duration": 6.68,
+      "text": "he cannot remember his birth he was told this information so even though he signed it and he"
+    },
+    {
+      "start": 1003.039,
+      "duration": 3.611,
+      "text": "knows his birth date it's still secondary information."
+    },
+    {
+      "start": 1008.69,
+      "duration": 5.969,
+      "text": "The birth certificate from my grandfather is signed by the midwife."
+    },
+    {
+      "start": 1015.77,
+      "duration": 5.219,
+      "text": "She was there she was an eyewitness she recorded the date and the time the event"
+    },
+    {
+      "start": 1020.989,
+      "duration": 6.661,
+      "text": "happened, so this is primary information she gave us eyewitness"
+    },
+    {
+      "start": 1027.65,
+      "duration": 1.03,
+      "text": "accounts of this."
+    },
+    {
+      "start": 1030.319,
+      "duration": 4.27,
+      "text": "All right now most of us use censuses and we love them they are fabulous,"
+    },
+    {
+      "start": 1034.92,
+      "duration": 6.679,
+      "text": "but most censuses we cannot determine who the informant was there are a few censuses that"
+    },
+    {
+      "start": 1041.599,
+      "duration": 5.321,
+      "text": "have been signed or something like that, but for the most part censuses are unknown or"
+    },
+    {
+      "start": 1046.92,
+      "duration": 1.72,
+      "text": "indeterminable informants."
+    },
+    {
+      "start": 1050.55,
+      "duration": 1.919,
+      "text": "All right, now information."
+    },
+    {
+      "start": 1053.56,
+      "duration": 6.72,
+      "text": "There can be one informant that can give primary and secondary information in the same"
+    },
+    {
+      "start": 1060.28,
+      "duration": 6.26,
+      "text": "document. And if we create a derivative record from an"
+    },
+    {
+      "start": 1066.54,
+      "duration": 6.899,
+      "text": "original that doesn't change whether the information is primary or secondary so"
+    },
+    {
+      "start": 1073.439,
+      "duration": 5.701,
+      "text": "if it's a copy of an original that doesn't change the degree of participation of the"
+    },
+    {
+      "start": 1079.14,
+      "duration": 4.799,
+      "text": "informant. Now there may, there may be more than one"
+    },
+    {
+      "start": 1083.939,
+      "duration": 2.111,
+      "text": "informant on a document as well."
+    },
+    {
+      "start": 1086.42,
+      "duration": 3.789,
+      "text": "So just as an example, we're gonna take my grandfather's death certificate."
+    },
+    {
+      "start": 1091.8,
+      "duration": 3.47,
+      "text": "On this death certificate there are 3 informants."
+    },
+    {
+      "start": 1095.8,
+      "duration": 4.95,
+      "text": "All 3 of these informants give us primary information but for different things."
+    },
+    {
+      "start": 1101.28,
+      "duration": 4.909,
+      "text": "The wife gives primary information of his death date and his parents' names because she knew"
+    },
+    {
+      "start": 1106.189,
+      "duration": 4.731,
+      "text": "the parents. The doctor gives primary information of the"
+    },
+    {
+      "start": 1110.92,
+      "duration": 4.99,
+      "text": "cause of death. The funeral director gives primary information"
+    },
+    {
+      "start": 1115.91,
+      "duration": 1.88,
+      "text": "of where the burial took place."
+    },
+    {
+      "start": 1118.76,
+      "duration": 4.76,
+      "text": "Now there's also secondary information in this, and we've already talked about it."
+    },
+    {
+      "start": 1123.579,
+      "duration": 3.53,
+      "text": "This is his birth date and this was given by his wife."
+    },
+    {
+      "start": 1127.479,
+      "duration": 5.321,
+      "text": "So in the same document, the wife has given primary and secondary information and there are"
+    },
+    {
+      "start": 1132.8,
+      "duration": 6.47,
+      "text": "3 different informants so we can look at each piece of information separately"
+    },
+    {
+      "start": 1139.64,
+      "duration": 5.92,
+      "text": "and determine which one answers our research question and then whether or not that was"
+    },
+    {
+      "start": 1145.56,
+      "duration": 1.649,
+      "text": "primary secondary information."
+    },
+    {
+      "start": 1149.04,
+      "duration": 3.63,
+      "text": "All right, moving on to that 3rd column, the last column,"
+    },
+    {
+      "start": 1152.88,
+      "duration": 5.449,
+      "text": "evidence. Evidence is how we use information items so"
+    },
+    {
+      "start": 1158.329,
+      "duration": 4.341,
+      "text": "evidence does not exist without a research question."
+    },
+    {
+      "start": 1163.0,
+      "duration": 3.51,
+      "text": "It has to apply or answer a research question."
+    },
+    {
+      "start": 1168.43,
+      "duration": 2.47,
+      "text": "Evidence can be direct."
+    },
+    {
+      "start": 1171.979,
+      "duration": 1.99,
+      "text": "Indirect or negative."
+    },
+    {
+      "start": 1174.18,
+      "duration": 5.789,
+      "text": "So direct evidence answers a research question directly."
+    },
+    {
+      "start": 1180.3,
+      "duration": 2.63,
+      "text": "It can be right or it can be wrong."
+    },
+    {
+      "start": 1184.069,
+      "duration": 5.78,
+      "text": "Indirect evidence is the most tricky one for people to understand,"
+    },
+    {
+      "start": 1190.3,
+      "duration": 5.919,
+      "text": "so I'm going to give you lots of examples, but this is kind of the definition when there are"
+    },
+    {
+      "start": 1196.219,
+      "duration": 6.801,
+      "text": "two or more information items that suggest an answer to your research question only when"
+    },
+    {
+      "start": 1203.02,
+      "duration": 2.439,
+      "text": "they are combined, OK?"
+    },
+    {
+      "start": 1206.619,
+      "duration": 6.59,
+      "text": "Should we read it again? When 2 or more information items suggest an"
+    },
+    {
+      "start": 1213.209,
+      "duration": 5.0,
+      "text": "answer to your research question only when they are combined."
+    },
+    {
+      "start": 1218.989,
+      "duration": 6.681,
+      "text": "OK, now negative um evidence is the absence of information that answers the"
+    },
+    {
+      "start": 1225.67,
+      "duration": 1.23,
+      "text": "research question."
+    },
+    {
+      "start": 1227.469,
+      "duration": 3.47,
+      "text": "I really love Elizabeth Sho Mill's definition of this."
+    },
+    {
+      "start": 1231.229,
+      "duration": 6.76,
+      "text": "She calls it contextually suggestive silence because you have to"
+    },
+    {
+      "start": 1237.989,
+      "duration": 6.34,
+      "text": "have context in order to make that absence of information"
+    },
+    {
+      "start": 1244.989,
+      "duration": 2.921,
+      "text": "significant, OK? It can't just be they're not there."
+    },
+    {
+      "start": 1248.369,
+      "duration": 2.391,
+      "text": "There has to be a reason, OK?"
+    },
+    {
+      "start": 1252.3,
+      "duration": 6.85,
+      "text": "All right, so combining information from different sources does"
+    },
+    {
+      "start": 1259.15,
+      "duration": 2.339,
+      "text": "not make evidence indirect."
+    },
+    {
+      "start": 1262.369,
+      "duration": 6.97,
+      "text": "And needing to do calculations to a piece of information does not make"
+    },
+    {
+      "start": 1269.339,
+      "duration": 1.441,
+      "text": "evidence indirect."
+    },
+    {
+      "start": 1271.76,
+      "duration": 3.589,
+      "text": "We're gonna give you some examples hopefully this will solidify things."
+    },
+    {
+      "start": 1275.699,
+      "duration": 4.851,
+      "text": "OK, in Tom Jones' book he gives this example and I don't remember what the research question"
+    },
+    {
+      "start": 1280.55,
+      "duration": 6.08,
+      "text": "was but what year was Anne born? That's my research question"
+    },
+    {
+      "start": 1287.119,
+      "duration": 4.23,
+      "text": "same information that Tom Jones gives, but I don't remember what his research question was"
+    },
+    {
+      "start": 1291.68,
+      "duration": 2.029,
+      "text": "so what year was Anne born?"
+    },
+    {
+      "start": 1295.01,
+      "duration": 4.39,
+      "text": "We've got the 1850 census. It says that she was 49."
+    },
+    {
+      "start": 1299.89,
+      "duration": 6.599,
+      "text": "We do some calculations and we say, OK, that means she was born about 1800 to 1801."
+    },
+    {
+      "start": 1307.479,
+      "duration": 5.171,
+      "text": "Then we have the 1860 census, which states she was aged 60."
+    },
+    {
+      "start": 1313.239,
+      "duration": 4.761,
+      "text": "So that means she was born about 1700 to 1800."
+    },
+    {
+      "start": 1318.839,
+      "duration": 4.61,
+      "text": "If we put these two pieces of information together, we can deduce that her birth was"
+    },
+    {
+      "start": 1323.449,
+      "duration": 1.64,
+      "text": "probably in 1800."
+    },
+    {
+      "start": 1325.92,
+      "duration": 5.63,
+      "text": "However, combining those two pieces of evidence do not make it indirect."
+    },
+    {
+      "start": 1332.859,
+      "duration": 3.71,
+      "text": "Both of those documents are direct."
+    },
+    {
+      "start": 1336.9,
+      "duration": 5.27,
+      "text": "They are directly answering our research question of what year Anne was born,"
+    },
+    {
+      "start": 1342.219,
+      "duration": 2.281,
+      "text": "even though we have to do a calculation."
+    },
+    {
+      "start": 1345.17,
+      "duration": 3.409,
+      "text": "It still is answering directly a research question."
+    },
+    {
+      "start": 1348.869,
+      "duration": 3.87,
+      "text": "Putting those two items together does not make it indirect evidence."
+    },
+    {
+      "start": 1353.88,
+      "duration": 6.319,
+      "text": "Hey, this one indirect evidence on this one is indirect evidence,"
+    },
+    {
+      "start": 1360.27,
+      "duration": 7.0,
+      "text": "so I'm gonna kind of show you how this will work so that the research question is when was"
+    },
+    {
+      "start": 1367.27,
+      "duration": 1.15,
+      "text": "William married?"
+    },
+    {
+      "start": 1369.18,
+      "duration": 3.83,
+      "text": "So William's first child was born in 1786."
+    },
+    {
+      "start": 1374.189,
+      "duration": 5.591,
+      "text": "William was found in a tax record with his father in 1783."
+    },
+    {
+      "start": 1381.219,
+      "duration": 5.36,
+      "text": "So we put these two pieces of information together and we can determine he was likely"
+    },
+    {
+      "start": 1386.579,
+      "duration": 4.931,
+      "text": "married between 1783 and 1786."
+    },
+    {
+      "start": 1391.8,
+      "duration": 3.63,
+      "text": "So this is indirect evidence, OK?"
+    },
+    {
+      "start": 1396.079,
+      "duration": 4.28,
+      "text": "Can you see the difference? It's gonna start becoming real here."
+    },
+    {
+      "start": 1401.14,
+      "duration": 5.52,
+      "text": "All right. Now we're going to get into a much more"
+    },
+    {
+      "start": 1407.03,
+      "duration": 4.39,
+      "text": "detailed example so that we can really dig deep in a real case study."
+    },
+    {
+      "start": 1413.01,
+      "duration": 6.609,
+      "text": "OK. This is my great"
+    },
+    {
+      "start": 1419.619,
+      "duration": 4.031,
+      "text": "grandfather, my 4 times great grandfather on my mother's side."
+    },
+    {
+      "start": 1424.219,
+      "duration": 1.311,
+      "text": "This is George Taylor."
+    },
+    {
+      "start": 1426.14,
+      "duration": 3.199,
+      "text": "We're gonna be looking at indirect evidence, negative evidence,"
+    },
+    {
+      "start": 1429.38,
+      "duration": 6.27,
+      "text": "and context to answer our research question, which is when was George Taylor"
+    },
+    {
+      "start": 1435.65,
+      "duration": 1.0,
+      "text": "baptized?"
+    },
+    {
+      "start": 1436.9,
+      "duration": 6.48,
+      "text": "This is an England research, um, example, but it does apply to any research that you're doing"
+    },
+    {
+      "start": 1443.38,
+      "duration": 3.229,
+      "text": "other than the context is a little different because it happened in England."
+    },
+    {
+      "start": 1447.65,
+      "duration": 3.78,
+      "text": "All right. So in order for you to understand this case"
+    },
+    {
+      "start": 1451.43,
+      "duration": 3.039,
+      "text": "study I have to tell you what we already know."
+    },
+    {
+      "start": 1456.02,
+      "duration": 6.76,
+      "text": "George Taylor was born the 25th of September 1776, and this we do not have a"
+    },
+    {
+      "start": 1462.78,
+      "duration": 4.189,
+      "text": "document for. This is handed down through our family so we"
+    },
+    {
+      "start": 1466.969,
+      "duration": 3.281,
+      "text": "have all the birth dates of these of his family and children,"
+    },
+    {
+      "start": 1470.819,
+      "duration": 4.201,
+      "text": "um, but we don't have documents that state this information."
+    },
+    {
+      "start": 1476.599,
+      "duration": 5.24,
+      "text": "All right, in a settlement examination dated the 13th of December 1819."
+    },
+    {
+      "start": 1482.719,
+      "duration": 6.911,
+      "text": "George stated he was age 43 and he was born in Harthill Parish in Yorkshire,"
+    },
+    {
+      "start": 1490.03,
+      "duration": 3.4,
+      "text": "so that places his birth in 1776."
+    },
+    {
+      "start": 1494.599,
+      "duration": 6.64,
+      "text": "George's burial states he was aged 71 in April of 1848,"
+    },
+    {
+      "start": 1501.439,
+      "duration": 6.68,
+      "text": "so this places his birth in 1776 because he would be aged 72 in"
+    },
+    {
+      "start": 1508.119,
+      "duration": 3.48,
+      "text": "September of 1848. We did the math, OK?"
+    },
+    {
+      "start": 1512.55,
+      "duration": 6.96,
+      "text": "Now George is listed as the oldest son of Thomas Taylor in a settlement certificate that"
+    },
+    {
+      "start": 1519.51,
+      "duration": 4.24,
+      "text": "was dated the 15th of April 1793."
+    },
+    {
+      "start": 1524.75,
+      "duration": 6.079,
+      "text": "And all of his other 8 siblings have baptisms, all of them."
+    },
+    {
+      "start": 1533.109,
+      "duration": 5.88,
+      "text": "All right, so we went to the Hart Hill, Yorkshire parish registers to try and find his"
+    },
+    {
+      "start": 1538.989,
+      "duration": 6.38,
+      "text": "baptism and what we found was a baptism for a Sarah Taylor,"
+    },
+    {
+      "start": 1545.949,
+      "duration": 1.52,
+      "text": "daughter of Thomas Taylor."
+    },
+    {
+      "start": 1548.319,
+      "duration": 6.091,
+      "text": "Um, baptized the 27th of September 1776. OK."
+    },
+    {
+      "start": 1556.589,
+      "duration": 6.48,
+      "text": "We didn't find a baptism that said George, this is the only baptism we found and it's still"
+    },
+    {
+      "start": 1563.069,
+      "duration": 1.88,
+      "text": "though for the father Thomas."
+    },
+    {
+      "start": 1568.01,
+      "duration": 5.349,
+      "text": "We had to say, OK, is it possible that there is another child named Sarah?"
+    },
+    {
+      "start": 1574.53,
+      "duration": 6.76,
+      "text": "So I, um, correlated all of the birth information from the other children and we did"
+    },
+    {
+      "start": 1581.29,
+      "duration": 6.669,
+      "text": "math and it really is not possible to have two children born in the space of"
+    },
+    {
+      "start": 1587.959,
+      "duration": 6.64,
+      "text": "time between when George, we know he was the oldest child and the next child Hannah"
+    },
+    {
+      "start": 1594.93,
+      "duration": 3.679,
+      "text": "was born. So we know that there is not space for two"
+    },
+    {
+      "start": 1598.609,
+      "duration": 6.521,
+      "text": "children in there. We also had to analyze this and say that if"
+    },
+    {
+      "start": 1605.13,
+      "duration": 6.559,
+      "text": "George is born in 1776 and the ages on his burial and the ages that he gives in his"
+    },
+    {
+      "start": 1611.689,
+      "duration": 4.91,
+      "text": "settlement examination, they all corroborate this that he was born in 1776."
+    },
+    {
+      "start": 1617.609,
+      "duration": 6.96,
+      "text": "So it's not likely that Thomas Taylor would have had um a child named Sarah"
+    },
+    {
+      "start": 1624.569,
+      "duration": 4.55,
+      "text": "born in 1776 and a child named George unless they were twins."
+    },
+    {
+      "start": 1629.949,
+      "duration": 4.941,
+      "text": "And twins would both those names would be written in the parish register if they were"
+    },
+    {
+      "start": 1634.89,
+      "duration": 6.729,
+      "text": "twins. All right, so we had to continue analyzing the"
+    },
+    {
+      "start": 1641.619,
+      "duration": 4.791,
+      "text": "situation. George also already had a sister named Sarah"
+    },
+    {
+      "start": 1646.41,
+      "duration": 4.809,
+      "text": "who was born a decade after in 1786."
+    },
+    {
+      "start": 1651.63,
+      "duration": 6.719,
+      "text": "If there was an older sister named Sarah, it's really common in England to"
+    },
+    {
+      "start": 1658.349,
+      "duration": 5.1,
+      "text": "name another child, Sarah, but only after that first child died,"
+    },
+    {
+      "start": 1664.03,
+      "duration": 4.799,
+      "text": "so we couldn't find a burial anywhere in any of the parishes the other children were born there"
+    },
+    {
+      "start": 1668.829,
+      "duration": 2.951,
+      "text": "is not a burial for an older Sarah Taylor."
+    },
+    {
+      "start": 1673.619,
+      "duration": 6.191,
+      "text": "So either this older Sarah Taylor did not exist or she should have died."
+    },
+    {
+      "start": 1682.199,
+      "duration": 3.99,
+      "text": "So we go back to that parish register and we take a deeper look."
+    },
+    {
+      "start": 1686.239,
+      "duration": 3.161,
+      "text": "We're going to analyze this source much deeper."
+    },
+    {
+      "start": 1690.859,
+      "duration": 4.72,
+      "text": "First thing that I noticed when I looked through the parish register is there is a"
+    },
+    {
+      "start": 1695.579,
+      "duration": 6.831,
+      "text": "second Sarah Taylor who was the daughter of William Taylor who was born in 1776"
+    },
+    {
+      "start": 1702.66,
+      "duration": 4.949,
+      "text": "but a few months before um that second Sarah Taylor."
+    },
+    {
+      "start": 1708.089,
+      "duration": 5.681,
+      "text": "So in my head I'm thinking, hm I wonder if the parish clerk made a mistake."
+    },
+    {
+      "start": 1714.42,
+      "duration": 5.99,
+      "text": "Did he just write that same Sarah twice and and write a different father for her."
+    },
+    {
+      "start": 1721.15,
+      "duration": 2.16,
+      "text": "OK, so that was my thinking."
+    },
+    {
+      "start": 1723.63,
+      "duration": 1.79,
+      "text": "There might be a mistake here."
+    },
+    {
+      "start": 1726.03,
+      "duration": 2.88,
+      "text": "The other thing that I noticed about this parish register,"
+    },
+    {
+      "start": 1728.989,
+      "duration": 4.12,
+      "text": "if you look at the handwriting, it's all consistent."
+    },
+    {
+      "start": 1734.04,
+      "duration": 4.559,
+      "text": "All the ink's the same color, so this was all written at the same time."
+    },
+    {
+      "start": 1738.64,
+      "duration": 6.469,
+      "text": "This wasn't written as events happened and it's very common in England for your parish clerk"
+    },
+    {
+      "start": 1745.52,
+      "duration": 5.64,
+      "text": "to write down events on little slips of paper and stuff them in his desk until the end of the"
+    },
+    {
+      "start": 1751.16,
+      "duration": 5.039,
+      "text": "year then he'll pull them out and write it all nice and neat in the parish register."
+    },
+    {
+      "start": 1757.26,
+      "duration": 5.429,
+      "text": "This makes this document a derivative record. It's not the original."
+    },
+    {
+      "start": 1762.739,
+      "duration": 3.35,
+      "text": "It's not the first time this information was likely written down."
+    },
+    {
+      "start": 1766.699,
+      "duration": 5.27,
+      "text": "So that introduces a little chance of error that something got copied incorrectly."
+    },
+    {
+      "start": 1773.829,
+      "duration": 3.851,
+      "text": "All right. So now we have to come to that really great"
+    },
+    {
+      "start": 1777.68,
+      "duration": 1.95,
+      "text": "tool about writing it down."
+    },
+    {
+      "start": 1780.119,
+      "duration": 6.921,
+      "text": "So this is what I would call my conclusion or just a statement that kind of clarifies"
+    },
+    {
+      "start": 1787.04,
+      "duration": 1.74,
+      "text": "what I'm thinking at this time."
+    },
+    {
+      "start": 1789.17,
+      "duration": 5.36,
+      "text": "So the baptism found in Hart Hill, Yorkshire Parish register dated the 27th of September"
+    },
+    {
+      "start": 1794.53,
+      "duration": 6.789,
+      "text": "1776 for for Sarah Taylor, daughter of Thomas Taylor, was probably the baptism of"
+    },
+    {
+      "start": 1801.319,
+      "duration": 1.0,
+      "text": "George Taylor."
+    },
+    {
+      "start": 1803.239,
+      "duration": 6.34,
+      "text": "According to tradition, George was born the 25th of September 1776,"
+    },
+    {
+      "start": 1809.869,
+      "duration": 6.791,
+      "text": "and it was common um to baptize a baby a few days to a few weeks after the child's birth,"
+    },
+    {
+      "start": 1817.229,
+      "duration": 5.0,
+      "text": "so it is possible that the parish clerk made a mistake when copying the baptism entries into"
+    },
+    {
+      "start": 1822.229,
+      "duration": 4.6,
+      "text": "the parish register as there was also another Sarah Taylor,"
+    },
+    {
+      "start": 1827.069,
+      "duration": 4.071,
+      "text": "daughter of William, who was baptized in May of the same year."
+    },
+    {
+      "start": 1831.609,
+      "duration": 4.25,
+      "text": "So I'm writing down my thought process, my reasoning, and what I'm thinking."
+    },
+    {
+      "start": 1837.579,
+      "duration": 4.191,
+      "text": "All right, now what was our indirect evidence?"
+    },
+    {
+      "start": 1842.54,
+      "duration": 6.96,
+      "text": "Our indirect evidence comes in the settlement certificate that's with the"
+    },
+    {
+      "start": 1849.5,
+      "duration": 2.63,
+      "text": "children of Thomas Taylor in birth order."
+    },
+    {
+      "start": 1852.54,
+      "duration": 4.439,
+      "text": "There is the oldest son George. We know he is their son."
+    },
+    {
+      "start": 1857.689,
+      "duration": 4.17,
+      "text": "And there is no Sarah listed on here until that later Sarah,"
+    },
+    {
+      "start": 1861.89,
+      "duration": 3.069,
+      "text": "who was born in, um, a decade after."
+    },
+    {
+      "start": 1866.109,
+      "duration": 5.88,
+      "text": "Then the other second piece of indirect evidence was the um settlement examination for"
+    },
+    {
+      "start": 1871.989,
+      "duration": 6.191,
+      "text": "George Taylor where he states he is age 43 and he was born in the parish of Hart Hill."
+    },
+    {
+      "start": 1878.829,
+      "duration": 6.24,
+      "text": "So we put these two pieces of evidence together it suggests that that baptism should be for"
+    },
+    {
+      "start": 1885.069,
+      "duration": 4.88,
+      "text": "George. All right, now here's the kicker."
+    },
+    {
+      "start": 1891.099,
+      "duration": 5.921,
+      "text": "This baptism is actually direct evidence it answers our research question but it's wrong."
+    },
+    {
+      "start": 1898.25,
+      "duration": 5.41,
+      "text": "OK, so like we said, direct evidence can be right or it can be wrong,"
+    },
+    {
+      "start": 1904.349,
+      "duration": 6.11,
+      "text": "but this is answering our research question. This is a baptism for a child of Thomas Taylor"
+    },
+    {
+      "start": 1910.67,
+      "duration": 1.59,
+      "text": "and it was likely for George."
+    },
+    {
+      "start": 1913.689,
+      "duration": 4.941,
+      "text": "Alright, negative evidence. What negative evidence did we have in this,"
+    },
+    {
+      "start": 1918.8,
+      "duration": 1.269,
+      "text": "um, example?"
+    },
+    {
+      "start": 1920.56,
+      "duration": 4.789,
+      "text": "Well, first of all, all of Georgia's siblings had baptism records,"
+    },
+    {
+      "start": 1925.68,
+      "duration": 4.439,
+      "text": "but there was no baptism found that had Georgia's name on it in Harthill,"
+    },
+    {
+      "start": 1930.199,
+      "duration": 3.801,
+      "text": "Yorkshire. So if all the other children had a baptism,"
+    },
+    {
+      "start": 1934.04,
+      "duration": 4.35,
+      "text": "we would expect to find a baptism for George."
+    },
+    {
+      "start": 1940.0,
+      "duration": 6.469,
+      "text": "Another piece of negative evidence is that usually a family would not name a child"
+    },
+    {
+      "start": 1946.469,
+      "duration": 6.65,
+      "text": "Sarah unless the first Sarah died and we didn't find any burials so not finding a"
+    },
+    {
+      "start": 1953.119,
+      "duration": 4.441,
+      "text": "burial contextually, um, that was silence, right?"
+    },
+    {
+      "start": 1957.67,
+      "duration": 1.309,
+      "text": "That's negative evidence."
+    },
+    {
+      "start": 1960.569,
+      "duration": 5.39,
+      "text": "All right, so context can be historical, it can be legal,"
+    },
+    {
+      "start": 1966.05,
+      "duration": 6.84,
+      "text": "religious or cultural, and in this situation we had quite a bit of religious"
+    },
+    {
+      "start": 1972.89,
+      "duration": 1.79,
+      "text": "context that we were working with."
+    },
+    {
+      "start": 1975.43,
+      "duration": 5.82,
+      "text": "First of all, the fact that in Anglican in the Anglican Church of the Church of England babies"
+    },
+    {
+      "start": 1981.25,
+      "duration": 3.839,
+      "text": "were baptized a few days to a few weeks after their birth."
+    },
+    {
+      "start": 1985.75,
+      "duration": 5.989,
+      "text": "And then another piece of context is that parish clerks would often keep events on little"
+    },
+    {
+      "start": 1991.739,
+      "duration": 3.661,
+      "text": "scraps of paper and write it in the parish register at the end of the year."
+    },
+    {
+      "start": 1996.16,
+      "duration": 1.529,
+      "text": "So those are just some."
+    },
+    {
+      "start": 1998.699,
+      "duration": 4.4,
+      "text": "Pieces of religious context that kind of help us figure out this situation,"
+    },
+    {
+      "start": 2003.14,
+      "duration": 4.03,
+      "text": "this problem. A piece of cultural context would be that"
+    },
+    {
+      "start": 2007.17,
+      "duration": 2.909,
+      "text": "families generally would not name a second child, Sarah,"
+    },
+    {
+      "start": 2010.109,
+      "duration": 2.421,
+      "text": "unless the first child, Sarah had passed away."
+    },
+    {
+      "start": 2015.069,
+      "duration": 4.191,
+      "text": "All right, so how do we learn context? How do we do this?"
+    },
+    {
+      "start": 2019.91,
+      "duration": 5.84,
+      "text": "Well, it's more about just understanding the records that you're looking at who created the"
+    },
+    {
+      "start": 2025.75,
+      "duration": 1.229,
+      "text": "documents and why."
+    },
+    {
+      "start": 2027.329,
+      "duration": 5.87,
+      "text": "It's also learning the customs, the traditions, and the culture in the location that you're"
+    },
+    {
+      "start": 2033.199,
+      "duration": 6.24,
+      "text": "doing research so local histories and things like that can be very valuable anything that"
+    },
+    {
+      "start": 2039.439,
+      "duration": 3.91,
+      "text": "will teach you history about the location um can be very,"
+    },
+    {
+      "start": 2043.599,
+      "duration": 4.56,
+      "text": "very valuable when you're trying to solve a really tough research question."
+    },
+    {
+      "start": 2049.02,
+      "duration": 5.439,
+      "text": "Knowing the dating systems, knowing laws, regulations, things like that that governs your"
+    },
+    {
+      "start": 2054.459,
+      "duration": 7.0,
+      "text": "ancestors' lives is all going to help you solve your research questions when"
+    },
+    {
+      "start": 2061.459,
+      "duration": 2.03,
+      "text": "you get into those tough situations."
+    },
+    {
+      "start": 2065.09,
+      "duration": 6.579,
+      "text": "Alright now if you want to practice this it's really really fun"
+    },
+    {
+      "start": 2072.04,
+      "duration": 6.839,
+      "text": "um it can be mind bending sometimes but this is what I suggest if you already use"
+    },
+    {
+      "start": 2078.879,
+      "duration": 6.57,
+      "text": "a research log all you have to do is add a few columns to your research log the objective,"
+    },
+    {
+      "start": 2085.52,
+      "duration": 4.07,
+      "text": "the source information and evidence, and then you can."
+    },
+    {
+      "start": 2090.159,
+      "duration": 4.161,
+      "text": "Um, analyze each of these pieces. If you don't keep a research log,"
+    },
+    {
+      "start": 2094.36,
+      "duration": 3.76,
+      "text": "then just go ahead and make a chart that has these five columns."
+    },
+    {
+      "start": 2098.439,
+      "duration": 6.44,
+      "text": "You need a full source citation in there so that you can really look at the source."
+    },
+    {
+      "start": 2105.82,
+      "duration": 2.109,
+      "text": "So that will be the first column."
+    },
+    {
+      "start": 2108.649,
+      "duration": 2.461,
+      "text": "And if you've already got this in your research log, great."
+    },
+    {
+      "start": 2112.03,
+      "duration": 5.28,
+      "text": "Then your second column will be the objective. That's your research question that is what you"
+    },
+    {
+      "start": 2117.31,
+      "duration": 3.349,
+      "text": "were trying to answer using this document."
+    },
+    {
+      "start": 2121.27,
+      "duration": 6.949,
+      "text": "So then you can look at that document and say was the source original derivative,"
+    },
+    {
+      "start": 2128.229,
+      "duration": 1.15,
+      "text": "or an authored work?"
+    },
+    {
+      "start": 2130.25,
+      "duration": 4.389,
+      "text": "Was the information primary, secondary, or indeterminable?"
+    },
+    {
+      "start": 2135.209,
+      "duration": 3.27,
+      "text": "Was the evidence direct, indirect, or negative?"
+    },
+    {
+      "start": 2139.09,
+      "duration": 4.389,
+      "text": "So let's just take a look at that very top one just really quickly together."
+    },
+    {
+      "start": 2143.81,
+      "duration": 5.149,
+      "text": "The top one is a certified copy of an entry of death for George Taylor."
+    },
+    {
+      "start": 2149.689,
+      "duration": 6.0,
+      "text": "The research question I was trying to answer was what was the date of death for George"
+    },
+    {
+      "start": 2155.689,
+      "duration": 4.76,
+      "text": "Taylor? So taking a look at this one document,"
+    },
+    {
+      "start": 2161.04,
+      "duration": 6.899,
+      "text": "it is a derivative record because it's a copy. It's a certified"
+    },
+    {
+      "start": 2167.939,
+      "duration": 3.071,
+      "text": "copy of the, uh, entry of death."
+    },
+    {
+      "start": 2171.939,
+      "duration": 4.081,
+      "text": "The information is primary information because on that."
+    },
+    {
+      "start": 2176.79,
+      "duration": 4.48,
+      "text": "You have the son, William Taylor, who was the informant."
+    },
+    {
+      "start": 2181.32,
+      "duration": 2.01,
+      "text": "He was there when his father died."
+    },
+    {
+      "start": 2184.179,
+      "duration": 3.121,
+      "text": "So we know that this is primary information. He was an eyewitness."
+    },
+    {
+      "start": 2188.459,
+      "duration": 7.0,
+      "text": "Then the evidence is direct because it directly answers the research question and you can"
+    },
+    {
+      "start": 2195.459,
+      "duration": 7.0,
+      "text": "do this on every source for a research project and really get your mind thinking about"
+    },
+    {
+      "start": 2202.459,
+      "duration": 5.2,
+      "text": "we what each source individually and what exactly you are looking at."
+    },
+    {
+      "start": 2209.86,
+      "duration": 4.47,
+      "text": "All right, now I want to move on to correlation."
+    },
+    {
+      "start": 2215.3,
+      "duration": 6.79,
+      "text": "And give you some really solid ideas of how to correlate these pieces of evidence"
+    },
+    {
+      "start": 2222.09,
+      "duration": 4.589,
+      "text": "once you've analyzed them and you've looked at them in detail,"
+    },
+    {
+      "start": 2227.129,
+      "duration": 6.191,
+      "text": "then you need to put them together in a way that you can look at them see patterns,"
+    },
+    {
+      "start": 2233.729,
+      "duration": 1.881,
+      "text": "see the conflicts in them."
+    },
+    {
+      "start": 2236.03,
+      "duration": 4.459,
+      "text": "And there's lots of different ways you can do it and they all just kind of apply to your"
+    },
+    {
+      "start": 2240.82,
+      "duration": 5.119,
+      "text": "different situation so I'm gonna give you a bunch of examples of ways you can do this and"
+    },
+    {
+      "start": 2245.939,
+      "duration": 6.0,
+      "text": "you can just use it to your best advantage however you decide you need it."
+    },
+    {
+      "start": 2253.86,
+      "duration": 6.66,
+      "text": "All right. So timelines every time I do a research"
+    },
+    {
+      "start": 2260.52,
+      "duration": 3.919,
+      "text": "project I will put together some kind of a timeline."
+    },
+    {
+      "start": 2264.729,
+      "duration": 6.561,
+      "text": "It can be really simple it does not have to be very fancy but your timelines always show"
+    },
+    {
+      "start": 2271.29,
+      "duration": 5.56,
+      "text": "gaps in your research places where you have no information."
+    },
+    {
+      "start": 2277.5,
+      "duration": 6.59,
+      "text": "The other really great thing about timelines is they are very good at showing you locations"
+    },
+    {
+      "start": 2284.399,
+      "duration": 6.721,
+      "text": "and if you are looking for more information you need to know what location to look in in"
+    },
+    {
+      "start": 2291.12,
+      "duration": 6.91,
+      "text": "order to find your best sources so on this timeline I was trying to figure"
+    },
+    {
+      "start": 2298.03,
+      "duration": 4.53,
+      "text": "out um some more information about this person's death."
+    },
+    {
+      "start": 2303.149,
+      "duration": 6.101,
+      "text": "And automatically when you're looking at a person's life if you don't write down where"
+    },
+    {
+      "start": 2309.25,
+      "duration": 4.55,
+      "text": "they were, you may start just doing research in Columbiana, Ohio,"
+    },
+    {
+      "start": 2314.489,
+      "duration": 1.23,
+      "text": "where he was married."
+    },
+    {
+      "start": 2316.37,
+      "duration": 5.589,
+      "text": "And you don't realize oh wait he wasn't even there by the time he died he was in Williams,"
+    },
+    {
+      "start": 2322.04,
+      "duration": 2.81,
+      "text": "Ohio. I need to be looking in Williams, Ohio for more"
+    },
+    {
+      "start": 2324.85,
+      "duration": 6.359,
+      "text": "records there so putting a timeline together helps your brain think in the right"
+    },
+    {
+      "start": 2331.209,
+      "duration": 4.661,
+      "text": "place looking for the records that you need in the right location,"
+    },
+    {
+      "start": 2335.879,
+      "duration": 2.161,
+      "text": "otherwise you're spending your wheels wasting time."
+    },
+    {
+      "start": 2339.57,
+      "duration": 4.04,
+      "text": "All right. Another way to do a timeline, this was for my,"
+    },
+    {
+      "start": 2343.679,
+      "duration": 4.411,
+      "text": "um, ancestor Samuel Taylor. We had a settlement examination for him."
+    },
+    {
+      "start": 2348.959,
+      "duration": 6.601,
+      "text": "Where he listed all of his employers and the age he was when he um was employed by them."
+    },
+    {
+      "start": 2356.62,
+      "duration": 6.319,
+      "text": "Sadly he started working at age 10, but I wanted to know the locations he was at at"
+    },
+    {
+      "start": 2362.939,
+      "duration": 4.55,
+      "text": "different points in his life so that I could look for records in those different locations."
+    },
+    {
+      "start": 2367.889,
+      "duration": 6.731,
+      "text": "Putting it all together and giving um some general years into this"
+    },
+    {
+      "start": 2374.62,
+      "duration": 6.119,
+      "text": "timeline helped me be able to look for records in a really pinpointed way in that location."
+    },
+    {
+      "start": 2382.959,
+      "duration": 6.371,
+      "text": "All right, you can also put together tables of your documents for a specific research"
+    },
+    {
+      "start": 2389.33,
+      "duration": 4.389,
+      "text": "question. So in this research question we were trying to"
+    },
+    {
+      "start": 2393.719,
+      "duration": 3.641,
+      "text": "figure out the birth date and birthplace for this person."
+    },
+    {
+      "start": 2398.139,
+      "duration": 6.74,
+      "text": "And we had 6 documents, 5 or 6 documents, and they all said something different,"
+    },
+    {
+      "start": 2405.26,
+      "duration": 6.909,
+      "text": "so we were trying to figure out which of these documents had the best informant so that we"
+    },
+    {
+      "start": 2412.169,
+      "duration": 3.871,
+      "text": "knew which one was giving us primary information, secondary information,"
+    },
+    {
+      "start": 2416.05,
+      "duration": 3.919,
+      "text": "etc. So if you put all of your sources together at a"
+    },
+    {
+      "start": 2419.969,
+      "duration": 4.831,
+      "text": "table, it can help you clarify the information you have."
+    },
+    {
+      "start": 2424.81,
+      "duration": 5.349,
+      "text": "You can see which ones kind of go together, which ones are far off,"
+    },
+    {
+      "start": 2430.53,
+      "duration": 5.929,
+      "text": "and then you can analyze the informant and in this case our informant Arthur Byford was the"
+    },
+    {
+      "start": 2436.459,
+      "duration": 2.351,
+      "text": "person we were trying to find the birth date for."
+    },
+    {
+      "start": 2439.25,
+      "duration": 5.33,
+      "text": "And he turned out to be the only one who identified his birthplace as Bellechamp Oton in"
+    },
+    {
+      "start": 2444.58,
+      "duration": 2.51,
+      "text": "Essex, and that's exactly where we found it."
+    },
+    {
+      "start": 2447.54,
+      "duration": 1.52,
+      "text": "OK? So."
+    },
+    {
+      "start": 2449.959,
+      "duration": 6.321,
+      "text": "Put your information together, analyze it as a whole, and it can help you figure out what"
+    },
+    {
+      "start": 2456.28,
+      "duration": 1.629,
+      "text": "you're actually looking at."
+    },
+    {
+      "start": 2458.6,
+      "duration": 6.059,
+      "text": "Um, another one of my very most favorite things to do with tables is using it on censuses that"
+    },
+    {
+      "start": 2464.659,
+      "duration": 6.72,
+      "text": "just have those tick marks because when you put those little tick marks in a pattern and then"
+    },
+    {
+      "start": 2471.379,
+      "duration": 6.04,
+      "text": "you can see the next year everybody moves up or they don't move up you can figure out things"
+    },
+    {
+      "start": 2477.419,
+      "duration": 5.441,
+      "text": "about the family sometimes you have the wrong family it's just the same name and the the tick"
+    },
+    {
+      "start": 2482.86,
+      "duration": 2.519,
+      "text": "marks don't match up at all they don't correlate."
+    },
+    {
+      "start": 2486.03,
+      "duration": 6.419,
+      "text": "So this is one way that you can see that either the pattern is correlating or it is not"
+    },
+    {
+      "start": 2492.449,
+      "duration": 6.96,
+      "text": "correlating. Maps location"
+    },
+    {
+      "start": 2499.489,
+      "duration": 6.051,
+      "text": "location location locations are so important to your family research every person in your"
+    },
+    {
+      "start": 2505.54,
+      "duration": 6.48,
+      "text": "family, if you can figure out the very piece of land or an address or something to solve your"
+    },
+    {
+      "start": 2512.02,
+      "duration": 4.52,
+      "text": "really difficult research problems, this can be the biggest help."
+    },
+    {
+      "start": 2517.05,
+      "duration": 6.06,
+      "text": "It helps you determine between people of the same name because if you know that that record"
+    },
+    {
+      "start": 2523.11,
+      "duration": 6.16,
+      "text": "is in the location that's near your person's piece of property you can determine that that"
+    },
+    {
+      "start": 2529.27,
+      "duration": 3.03,
+      "text": "is him versus somebody who's in the next county."
+    },
+    {
+      "start": 2533.27,
+      "duration": 6.879,
+      "text": "Very, very helpful to always look at as much detail as you can with the location sometimes"
+    },
+    {
+      "start": 2540.149,
+      "duration": 5.961,
+      "text": "that takes time. Sometimes you have to find a map that's more um"
+    },
+    {
+      "start": 2546.11,
+      "duration": 1.829,
+      "text": "at the time period you're doing research."
+    },
+    {
+      "start": 2548.389,
+      "duration": 6.8,
+      "text": "Sometimes you have to go to Randy Majors and do the um section town range county thing from"
+    },
+    {
+      "start": 2555.189,
+      "duration": 4.671,
+      "text": "a deed that you have, but it always is worth it um when I did this one."
+    },
+    {
+      "start": 2560.31,
+      "duration": 6.01,
+      "text": "I could see all of the neighbors and some of these neighbors had signed as witnesses for"
+    },
+    {
+      "start": 2566.32,
+      "duration": 4.129,
+      "text": "some other things that we were looking at so very, very valuable."
+    },
+    {
+      "start": 2570.489,
+      "duration": 2.43,
+      "text": "It can help you figure out who your people are."
+    },
+    {
+      "start": 2574.58,
+      "duration": 1.359,
+      "text": "All right, lists."
+    },
+    {
+      "start": 2576.899,
+      "duration": 5.99,
+      "text": "When I do research, I always want to put a list together of the children of the family."
+    },
+    {
+      "start": 2583.179,
+      "duration": 5.641,
+      "text": "It helps me see if there are gaps in the birth order where I may need to be looking for"
+    },
+    {
+      "start": 2588.82,
+      "duration": 4.48,
+      "text": "children who are missing, who maybe died young, or something like that."
+    },
+    {
+      "start": 2593.659,
+      "duration": 6.961,
+      "text": "In this instance, it helped me see that there were 5 children who died between the"
+    },
+    {
+      "start": 2600.62,
+      "duration": 2.72,
+      "text": "between the years 1830 and 1832."
+    },
+    {
+      "start": 2604.389,
+      "duration": 4.881,
+      "text": "And we were able to figure out that there was a cholera outbreak in their,"
+    },
+    {
+      "start": 2609.51,
+      "duration": 3.919,
+      "text": "um, area that probably is what took all of those children."
+    },
+    {
+      "start": 2614.439,
+      "duration": 1.311,
+      "text": "If not a lot of them."
+    },
+    {
+      "start": 2617.629,
+      "duration": 4.921,
+      "text": "All right then just your basic charts, your pedigree charts,"
+    },
+    {
+      "start": 2622.669,
+      "duration": 6.76,
+      "text": "your family group sheets, they help us see gaps, they help us see the information we"
+    },
+    {
+      "start": 2629.429,
+      "duration": 2.831,
+      "text": "have and the information that we do not have."
+    },
+    {
+      "start": 2633.719,
+      "duration": 3.051,
+      "text": "All right. Now, once we can see the information,"
+    },
+    {
+      "start": 2637.239,
+      "duration": 4.67,
+      "text": "we will sometimes run into conflicts and we need to resolve those conflicts."
+    },
+    {
+      "start": 2642.54,
+      "duration": 4.82,
+      "text": "So usually we're going to ask, OK, what is going to explain this conflict?"
+    },
+    {
+      "start": 2649.27,
+      "duration": 4.35,
+      "text": "This is where we weigh the evidence for quality and reliability."
+    },
+    {
+      "start": 2654.429,
+      "duration": 4.161,
+      "text": "Um, we're gonna look for a lack of corroboration."
+    },
+    {
+      "start": 2659.28,
+      "duration": 4.56,
+      "text": "What doesn't fit into the timeline or the location for our family."
+    },
+    {
+      "start": 2665.919,
+      "duration": 6.141,
+      "text": "We're gonna ask ourselves questions which source is the closest in time to the event?"
+    },
+    {
+      "start": 2672.389,
+      "duration": 3.07,
+      "text": "Is this original or is a derivative?"
+    },
+    {
+      "start": 2675.83,
+      "duration": 2.53,
+      "text": "Did the informant have a reason to lie?"
+    },
+    {
+      "start": 2678.989,
+      "duration": 1.41,
+      "text": "Could this be a mistake?"
+    },
+    {
+      "start": 2680.87,
+      "duration": 3.029,
+      "text": "Is the person present at the event?"
+    },
+    {
+      "start": 2684.709,
+      "duration": 6.071,
+      "text": "What fits best in the birth order of the family or the timeline of this person's life?"
+    },
+    {
+      "start": 2692.439,
+      "duration": 4.621,
+      "text": "Then we are going to write about it. We're gonna get all of that reasoning down on"
+    },
+    {
+      "start": 2697.06,
+      "duration": 5.619,
+      "text": "paper. Writing about it helps you see holes in your"
+    },
+    {
+      "start": 2702.679,
+      "duration": 2.48,
+      "text": "research. If you are trying to explain how you proved"
+    },
+    {
+      "start": 2705.159,
+      "duration": 6.841,
+      "text": "something, you will notice when you don't have enough proof for what you're trying to explain."
+    },
+    {
+      "start": 2712.739,
+      "duration": 3.92,
+      "text": "It'll help you make connections between people, between locations,"
+    },
+    {
+      "start": 2717.11,
+      "duration": 1.789,
+      "text": "between the evidence that you have."
+    },
+    {
+      "start": 2719.85,
+      "duration": 5.73,
+      "text": "Um, it also helps you communicate to other people your reasoning and honestly it'll help"
+    },
+    {
+      "start": 2725.58,
+      "duration": 5.119,
+      "text": "you remember if you come back a month later and all you've done is just write it out for"
+    },
+    {
+      "start": 2730.699,
+      "duration": 6.2,
+      "text": "yourself, it will help you remember what you thought at the time and what you found"
+    },
+    {
+      "start": 2737.27,
+      "duration": 3.629,
+      "text": "so don't forget at the end of your little process to write it down."
+    },
+    {
+      "start": 2741.83,
+      "duration": 6.97,
+      "text": "Then I have a little caution don't use the terms in your writing that we just discussed."
+    },
+    {
+      "start": 2749.09,
+      "duration": 6.28,
+      "text": "The reason why is because we're not writing for other genealogists usually usually we're"
+    },
+    {
+      "start": 2755.37,
+      "duration": 3.759,
+      "text": "writing for a broader audience and so they're not gonna understand those terms."
+    },
+    {
+      "start": 2759.504,
+      "duration": 5.171,
+      "text": "So you don't need to call it primary information or secondary information just"
+    },
+    {
+      "start": 2764.675,
+      "duration": 6.349,
+      "text": "explain it in concise and simple terms and um just explain it like you would your best friend."
+    },
+    {
+      "start": 2771.155,
+      "duration": 7.0,
+      "text": "This is what I found this is how I found it and keep it simple and concise right now"
+    },
+    {
+      "start": 2778.155,
+      "duration": 4.05,
+      "text": "it could be something as simple as just a proof statement."
+    },
+    {
+      "start": 2782.715,
+      "duration": 2.24,
+      "text": "This happened, I believe it was this."
+    },
+    {
+      "start": 2785.54,
+      "duration": 4.24,
+      "text": "It could be just a summary, a few paragraphs or bullet points,"
+    },
+    {
+      "start": 2790.219,
+      "duration": 5.75,
+      "text": "something that will remind you how you were thinking it can also become a proof argument"
+    },
+    {
+      "start": 2795.969,
+      "duration": 6.45,
+      "text": "which is pages and pages of explanation of the documents and the evidence and things that you"
+    },
+    {
+      "start": 2802.419,
+      "duration": 4.891,
+      "text": "have found. Always use qualifiers in your writing."
+    },
+    {
+      "start": 2808.29,
+      "duration": 6.649,
+      "text": "Things like probably possibly likely or almost certainly"
+    },
+    {
+      "start": 2815.489,
+      "duration": 6.48,
+      "text": "the reason why is because we are only using very few puzzle pieces to the"
+    },
+    {
+      "start": 2821.969,
+      "duration": 5.72,
+      "text": "whole life of this person and like I said we are getting more and more information all the"
+    },
+    {
+      "start": 2827.689,
+      "duration": 4.2,
+      "text": "time. So our conclusions or the totality of our"
+    },
+    {
+      "start": 2831.889,
+      "duration": 5.57,
+      "text": "evidence could shift if we have another piece of evidence come to light so we always want to"
+    },
+    {
+      "start": 2837.459,
+      "duration": 6.401,
+      "text": "leave a little bit of space for those new discoveries, and that is the way to do it is"
+    },
+    {
+      "start": 2843.86,
+      "duration": 4.26,
+      "text": "just by using qualifiers because we cannot ever be 100,"
+    },
+    {
+      "start": 2848.129,
+      "duration": 5.76,
+      "text": "100, 100% sure about something, OK? We can be almost certain about it,"
+    },
+    {
+      "start": 2854.419,
+      "duration": 2.651,
+      "text": "but rarely are we 100%."
+    },
+    {
+      "start": 2858.969,
+      "duration": 6.351,
+      "text": "All right, however, by analyzing our sources, our information and our evidence,"
+    },
+    {
+      "start": 2866.05,
+      "duration": 5.599,
+      "text": "we can come to some pretty solid conclusions and we can be a lot more confident about our"
+    },
+    {
+      "start": 2871.649,
+      "duration": 4.52,
+      "text": "conclusions when we have those two conflicting documents that say something just slightly"
+    },
+    {
+      "start": 2876.169,
+      "duration": 5.05,
+      "text": "different. This can always help us figure things out a"
+    },
+    {
+      "start": 2881.219,
+      "duration": 5.131,
+      "text": "little bit better and become a lot more confident about our conclusions right,"
+    },
+    {
+      "start": 2886.419,
+      "duration": 2.431,
+      "text": "that is the end of what I have for today."
+    },
+    {
+      "start": 2889.139,
+      "duration": 5.481,
+      "text": "Please do not forget to fill out the um feedback on your app."
+    },
+    {
+      "start": 2894.699,
+      "duration": 5.111,
+      "text": "I always like to hear how I did or if there's any suggestions or anything like that,"
+    },
+    {
+      "start": 2899.82,
+      "duration": 2.43,
+      "text": "and we now have time for questions."
+    },
+    {
+      "start": 2903.169,
+      "duration": 6.55,
+      "text": "I would ask you to come up to the microphone to ask your question because we need to be able to"
+    },
+    {
+      "start": 2909.719,
+      "duration": 3.571,
+      "text": "have the people at home hear the question as well."
+    },
+    {
+      "start": 2913.439,
+      "duration": 3.921,
+      "text": "OK, go ahead. So in doing research in England I find often"
+    },
+    {
+      "start": 2917.36,
+      "duration": 6.0,
+      "text": "they list the quarter that a person was born rather than the exact month or day you know why"
+    },
+    {
+      "start": 2923.36,
+      "duration": 3.4,
+      "text": "that is and what time period did that cover and."
+    },
+    {
+      "start": 2927.149,
+      "duration": 1.701,
+      "text": "Is that still the case today?"
+    },
+    {
+      "start": 2929.06,
+      "duration": 2.599,
+      "text": "Is that wait, start with your beginning of the question."
+    },
+    {
+      "start": 2931.739,
+      "duration": 5.631,
+      "text": "Yeah, I see a quarter like January through. OK, this that is civil registration."
+    },
+    {
+      "start": 2937.78,
+      "duration": 5.56,
+      "text": "So the civil registration in England, they did everything they registered everything by the"
+    },
+    {
+      "start": 2943.34,
+      "duration": 6.079,
+      "text": "quarter, so he was just asking why can it give me the exact date and it will give you the"
+    },
+    {
+      "start": 2949.419,
+      "duration": 2.161,
+      "text": "exact date if you order the document."
+    },
+    {
+      "start": 2952.209,
+      "duration": 4.411,
+      "text": "So if you order the document, they will send it to you and you will have the exact birth date,"
+    },
+    {
+      "start": 2956.699,
+      "duration": 3.051,
+      "text": "marriage date, or death date. Hi. Hi."
+    },
+    {
+      "start": 2961.28,
+      "duration": 4.439,
+      "text": "What about oral history? If that's the only thing that has been handed"
+    },
+    {
+      "start": 2965.719,
+      "duration": 4.92,
+      "text": "down and nobody else, you know, there are no records, just oral history."
+    },
+    {
+      "start": 2970.719,
+      "duration": 4.781,
+      "text": "How do you weigh that and how do you know, did, did that person have?"
+    },
+    {
+      "start": 2976.1,
+      "duration": 3.819,
+      "text": "You know, a good enough memory to have what was given to him,"
+    },
+    {
+      "start": 2980.01,
+      "duration": 6.59,
+      "text": "you know, or her, um, you know, yeah, all that just like in George Taylor's example,"
+    },
+    {
+      "start": 2987.09,
+      "duration": 4.309,
+      "text": "his birth date was oral history it was handed down to us,"
+    },
+    {
+      "start": 2991.81,
+      "duration": 5.839,
+      "text": "so all we can do is rely on it until we find something that disproves it."
+    },
+    {
+      "start": 2998.229,
+      "duration": 5.841,
+      "text": "So if it's an oral history that really is all we have for some situations some cultures I"
+    },
+    {
+      "start": 3004.07,
+      "duration": 3.919,
+      "text": "know in Africa and places like that they are recording those oral histories because that's"
+    },
+    {
+      "start": 3007.989,
+      "duration": 2.39,
+      "text": "all there is and that's valuable."
+    },
+    {
+      "start": 3010.879,
+      "duration": 6.55,
+      "text": "In and of itself, um, we're talking about when we have a lot of documents and we're trying to"
+    },
+    {
+      "start": 3017.429,
+      "duration": 5.671,
+      "text": "put together that evidence so yeah I mean there is that difficulty for sure because some like"
+    },
+    {
+      "start": 3023.11,
+      "duration": 5.279,
+      "text": "like you said, some countries don't have documents exactly all they have is what's here"
+    },
+    {
+      "start": 3028.389,
+      "duration": 6.84,
+      "text": "exactly and all that we can do is accept it for it's the best we have and thank heaven"
+    },
+    {
+      "start": 3035.229,
+      "duration": 3.68,
+      "text": "we have it right because at least we have something you yeah uh-huh."
+    },
+    {
+      "start": 3041.35,
+      "duration": 6.879,
+      "text": "How do you organize your um thoughts, your writing so that other people can"
+    },
+    {
+      "start": 3048.229,
+      "duration": 4.641,
+      "text": "see that like on Family Search or ancestry or wherever you're working."
+    },
+    {
+      "start": 3053.11,
+      "duration": 6.829,
+      "text": "That OK, when I first started this is gonna sum up everything for me."
+    },
+    {
+      "start": 3060.61,
+      "duration": 4.98,
+      "text": "I had somebody tell me right as if you are explaining it to your friend."
+    },
+    {
+      "start": 3065.84,
+      "duration": 6.67,
+      "text": "Your friend doesn't understand research at all so you explain it to your friend what you found"
+    },
+    {
+      "start": 3072.51,
+      "duration": 6.409,
+      "text": "and how you found it and if you start writing it as if you were telling your friend."
+    },
+    {
+      "start": 3079.399,
+      "duration": 6.861,
+      "text": "You will find a pattern you will see what led you to the next conclusion and the next piece"
+    },
+    {
+      "start": 3086.26,
+      "duration": 5.659,
+      "text": "and stuff like that you can always go back and modify it at any time to kind of clear clean it"
+    },
+    {
+      "start": 3091.919,
+      "duration": 6.701,
+      "text": "up or fix it, but for me it became a pattern of how did I come to the"
+    },
+    {
+      "start": 3098.62,
+      "duration": 2.64,
+      "text": "conclusion like. Where did I start?"
+    },
+    {
+      "start": 3101.409,
+      "duration": 3.82,
+      "text": "What led me to my next clue what led me to my next clue?"
+    },
+    {
+      "start": 3105.3,
+      "duration": 3.48,
+      "text": "And that will show the proof as I was finding it."
+    },
+    {
+      "start": 3108.83,
+      "duration": 1.309,
+      "text": "Does that help?"
+    },
+    {
+      "start": 3110.35,
+      "duration": 6.72,
+      "text": "Do you enter that into like your you you absolutely you just write a paragraph"
+    },
+    {
+      "start": 3117.07,
+      "duration": 5.44,
+      "text": "write write whatever you can and you can just put it on family search or something um it"
+    },
+    {
+      "start": 3122.51,
+      "duration": 2.199,
+      "text": "doesn't have to be a professional."
+    },
+    {
+      "start": 3125.32,
+      "duration": 4.669,
+      "text": "Thing but make sure you source it so other people can see the sources themselves."
+    },
+    {
+      "start": 3130.86,
+      "duration": 2.029,
+      "text": "OK. Yes."
+    },
+    {
+      "start": 3133.199,
+      "duration": 4.03,
+      "text": "Uh, in regards to the baptism entry in the parish register that was in error."
+    },
+    {
+      "start": 3137.439,
+      "duration": 4.04,
+      "text": "Yes, uh, with a bishop's transcript have helped maybe resolve some of that?"
+    },
+    {
+      "start": 3141.59,
+      "duration": 3.44,
+      "text": "He actually did check the bishop's transcript. It's exactly the same."
+    },
+    {
+      "start": 3145.6,
+      "duration": 6.629,
+      "text": "So this is why it was such a hard problem for me because the name seems to connect us very,"
+    },
+    {
+      "start": 3152.33,
+      "duration": 4.43,
+      "text": "very solidly to most of our records and when the name was incorrect that threw me."
+    },
+    {
+      "start": 3157.679,
+      "duration": 3.47,
+      "text": "Quite a bit so I had to do a ton of math."
+    },
+    {
+      "start": 3161.399,
+      "duration": 6.631,
+      "text": "I had to make sure that this was the option that was there that was like the only option."
+    },
+    {
+      "start": 3168.399,
+      "duration": 4.381,
+      "text": "So yeah, I, I would love to have all those pieces of paper that the clerk had originally"
+    },
+    {
+      "start": 3172.78,
+      "duration": 2.959,
+      "text": "written it down on. I wanna know, but I don't,"
+    },
+    {
+      "start": 3175.879,
+      "duration": 6.52,
+      "text": "you know, all I can do is analyze it and say, OK, this is my thinking this this date"
+    },
+    {
+      "start": 3182.399,
+      "duration": 2.03,
+      "text": "works it's got the right father."
+    },
+    {
+      "start": 3185.659,
+      "duration": 3.341,
+      "text": "You know, so we couldn't find a burial for Sarah."
+    },
+    {
+      "start": 3189.1,
+      "duration": 1.76,
+      "text": "It's, it's the best option."
+    },
+    {
+      "start": 3191.469,
+      "duration": 6.551,
+      "text": "I have a follow up question you described um a uh certified copy from the GRO as being uh a"
+    },
+    {
+      "start": 3198.02,
+      "duration": 5.56,
+      "text": "derivative, um, but, uh, I've read in some, uh, books, uh,"
+    },
+    {
+      "start": 3203.659,
+      "duration": 5.52,
+      "text": "some authors suggest that that could be considered uh an original record if it's"
+    },
+    {
+      "start": 3209.179,
+      "duration": 3.911,
+      "text": "photocopied or scanned in such a way that it, uh, uh,"
+    },
+    {
+      "start": 3213.1,
+      "duration": 5.079,
+      "text": "you know, it reasonably represents what the original looks like what's your feeling on that?"
+    },
+    {
+      "start": 3218.669,
+      "duration": 6.841,
+      "text": "Um, for me, uh, if it's a digital image of the original then I would take it as an"
+    },
+    {
+      "start": 3225.51,
+      "duration": 5.129,
+      "text": "original. The, the copy for the death record that I had,"
+    },
+    {
+      "start": 3231.199,
+      "duration": 6.831,
+      "text": "it was not a certificate. It was like a PDF so to me that was a"
+    },
+    {
+      "start": 3238.03,
+      "duration": 2.139,
+      "text": "little less official."
+    },
+    {
+      "start": 3240.939,
+      "duration": 6.8,
+      "text": "you could have gone either way probably on that depending on which copy you actually ordered"
+    },
+    {
+      "start": 3247.739,
+      "duration": 4.121,
+      "text": "or got because they have different options you can have the certificate you can have a PDF or"
+    },
+    {
+      "start": 3251.86,
+      "duration": 1.76,
+      "text": "you can have the digital download."
+    },
+    {
+      "start": 3254.78,
+      "duration": 2.349,
+      "text": "All right. Any more questions?"
+    },
+    {
+      "start": 3258.449,
+      "duration": 4.71,
+      "text": "All right, I think we're good thank you so much everyone for coming."
+    },
+    {
+      "start": 3263.76,
+      "duration": 0.889,
+      "text": "I appreciate it."
+    }
+  ],
+  "full_text": "Hello everyone and welcome. I'm really excited to be here with you today. My name is Mindy Taylor. I'm an accredited professional genealogist in the England region. Um, I also do contract research in the US and um British Isles in Canada, so I do research all day long. um, that's my email up there so you can contact me if you have any questions. We're gonna start by um a little bit of housekeeping um please silence all of your electronic devices in one of my classes yesterday I announced this to everybody and guess whose phone went off. So we're just gonna double check and make sure that everything's off and we don't get disturbed um also there's no audio video recording and no photos I'd also like to ask you to just hold your questions till the end. We do have microphones and we will have some time at the end for questions. All right, so if you're wondering what class you stumbled into so early this morning and thank you for being here so early this morning, this is analyzing evidence a research game changer and it really is a research game changer. Um, this class is labeled advanced professional, but you don't have to be advanced professional to be learning this stuff. We are just talking about advanced concepts, and I actually think that the sooner in your research journey you learn these concepts, the better researcher you will be, and you have to go back and visit these all the time some of these concepts kind of. Um, need to be drilled into your head. And so it's OK to come back and review these things over and over again. I've also entitled this uh analyzing evidence but we're also gonna be talking about analyzing our sources and our information and we're gonna be using context to help us solve complex problems and come to really solid conclusions. All right, so there's a big whole process that is involved in this and the very first step of this process is you have to have a research question you actually cannot analyze evidence if you do not have a research question so sometimes we call this our objective. And it has to be narrow enough for us to have an answer. And then moving on in the process we have to do exhaustive research we are already working with very small pieces of a person's life and so the more pieces of information that we can collect that will answer our research question, the better the uh totality of our evidence will be so exhaustive research is really important. All right, then we move to the analysis part of the process and this is where the process slows way down. This is where we look at the details we pick apart things we look very closely at the context then we move on to the correlation phase where we put those pieces of evidence together and look at them in different ways so that we can see patterns similarities, differences, conflicts in evidence, and then we can weigh our evidence to see. By the quality whether or not, um, that evidence is reliable. All right, now another step that I think a lot of people look over or forget is to write about it. Writing about it is a valuable tool because it helps you see holes in your research. It also helps you see inconsistencies, helps you make connections and when you are thinking about how you have come to this conclusion. It helps you to reason more logically. So writing about it can really be beneficial. All right, there's some things I want you to keep in mind when we're doing this first of all, we have to keep in mind that no source is immune to error any source can have a mistake or an error in it, so keep that in mind. Then we always want to try and find the original record. The original record 90% of the time, maybe even more will have more information, more clues, more context for us when we're doing our research. So finding the original is important and when we're doing research in databases such as ancestry or Find My Past, quite often the digital image of the original will be attached so it's really easy to just click on that image and look at it and read it. Sometimes we have to take extra steps. We have to go find the original, but it's always worth the effort, so make sure that you're making that effort. All right, finally, you need to find as many independent sources as you can. And I want to explain independent sources a little bit better. So I have this example independent sources are created by different entities. For different purposes and at different times, so take for example, if I, if my research question was to try and find the birth date of my grandfather. I have these 3 records. They all give me that information of his birth date. But all of these records I have a I have a death certificate. I have an obituary and I have this tombstone. But all of these records were created at the same time for the same purpose and very likely the person who gave the information was my grandmother so it really is not independent information this probably all came from the same purpose for the same from the same person for the same purpose. All right. Now moving on, if we take that same death certificate and we add in a World War 2 draft and my grandfather's birth certificate. Then these are independent sources because they were all created at different times for different purposes by different people. I'm gonna grab a drink really quick. Sorry, much better. OK. Now, another thing that I want to drill into your head. Is that the quality of a source is more important than the quantity. So one really good record can trump 5 records that are copying incorrect information over and over and over again. All right. So just to demonstrate what I mean by quality of source, let's look at those same three documents again. We have the death certificate, we have the World War 2 draft, and we have the birth certificate. Now, the birth certificate was created at the time the event happened. It was also created by an eyewitness, the midwife who delivered the baby, who signed the document. So when I'm looking at these 3 for the birth date of my grandfather. They all tell me the birth date, but the birth certificate is a little higher quality because of when it was recorded and the purpose it was recorded for. Does that make sense? OK. All right. The other thing I wanna discuss is preconceived notions. These are our opinions that are formed without adequate evidence so these are sometimes just our hypothesis or our theories, but we have to be really really careful we're not swayed by them. We have to stay neutral and open-minded and we have to let the information speak for itself. OK? So evidence can actually point to more than one conclusion. Especially if we glance over the gaps or the conflicts that we see in the evidence, so we have to then decide which explanation fits the totality of the evidence that we have found, not just some of the evidence because it fits our preconceived notion. It's got to fit the totality, everything that we have evidence wise. So we are trying to disprove our conclusions as much as we are trying to prove them. We have to make sure that we are looking at it objectively. All right, when I first started doing research, I knew that records were really important that I needed to prove birth, marriage, death, and connect between parents and children. I understood that concept, but when I would find two records that said two different things that I didn't know what to do with that if the year was just slightly different or the date was a little off. I didn't know. OK, do I just put both? because there's a document for both? Well, after learning these principles I was able to figure out which one of those would be more correct so hopefully after going through all this you will also have a little bit better um feeling of what might be more correct when you're looking at documents right now because we cannot cover everything thoroughly today there's just not enough time. I'm gonna highly suggest these two books Mastering Genealogical proof by Tom Jones and um Evidence Explained by Elizabeth Show Mills. Both of these books have really great examples. They also go through all this in much more detail. So if you want to go back and study something more, this is a really good place to go back to. All right, so now we get to start with our evidence analysis. What is analyze? Analyzing is um discovering or revealing something through a detailed examination. This especially applies to information. So it's typically for purposes of explanation or interpretation. So this is where we dissect everything we look at the math, we think about the context, we get into the details of what we're looking at. And this is the magical formula. This has kind of become industry standard. We have 3 different columns. We have the source which can be original records, derivative records, or authored works. We have information that can be primary, secondary, or indeterminable or unknown, and we have evidence which is direct, indirect, or negative. We're gonna talk about each of these in detail. All right, so first off, we start with the source. Your source is the container. This is what holds the information. So this can be an original record, derivative record or authored work. Sources are published, they're unpublished they're artifacts, photographs, registers, websites, anything where we get information, but they are not things like finding aids or indexes or search engines that help us find that information. Now a record documents an action or an event. So an original record is not based on any prior records. This is the first time something has been written down. A derivative record is copies or it's created from the prior record, so this is gonna include things like transcriptions, abstractions, translations or databases where we get our information. Now the more times that something is copied, the more chances there are to introduce error so that's why we want to always look for the original because the original is the first time it was written down and sometimes after it's been copied those little errors might be introduced in. All right. Now authored works. Are based on information from prior sources. So authored works include things like your family histories, obituaries, and one name studies. Their credibility relies on whether or not they have been sourced and how well those sources or how good those sources are. So if there are no sources say your grandmother wrote a little history about your grandfather and she didn't write any sources there's nothing in there you have to find documents to prove um the information that's in there if you have a work that has been sourced really well. You still need to find those sources and take a look at them yourself because if it was if it's been done in time back a ways there's so much more information that is available to us now that we need to look at what has been done in the past and see if it's still working if that is still the hypothesis or the conclusion that you would come to as a researcher. All right, our next column over is information and this is the content that we find in the source. So this can be primary, secondary, or indeterminable or unknown depending on the book you read. The term that it will be different in those different books. All right, but the information is always judged by the informant's degree of participation or knowledge so information also tends to be more reliable the closer in time that it was recorded to the event so it'll be a little bit more reliable the closer in time it's recorded to the event. All right, so primary information, this is firsthand knowledge. Somebody was there, they saw it happen, they recorded it. Secondary information is secondhand knowledge. This is when somebody has been told this information, for example, none of us remember our birth. Somebody told us our birth date, so that's secondhand information for us even though we were there, we couldn't remember it, so that is secondary information. Now indeterminable or unknown information simply means that we cannot determine who the informant was so information can only be primary or secondary when we can determine or infer who the informant was. Alright, we're just gonna give a few examples now so that you can kind of get these um more solid in your head. So this World War II draft record of my grandfather, he signed it and he is the person who gave his birth date. But this is still secondary information just as I just explained, he cannot remember his birth he was told this information so even though he signed it and he knows his birth date it's still secondary information. The birth certificate from my grandfather is signed by the midwife. She was there she was an eyewitness she recorded the date and the time the event happened, so this is primary information she gave us eyewitness accounts of this. All right now most of us use censuses and we love them they are fabulous, but most censuses we cannot determine who the informant was there are a few censuses that have been signed or something like that, but for the most part censuses are unknown or indeterminable informants. All right, now information. There can be one informant that can give primary and secondary information in the same document. And if we create a derivative record from an original that doesn't change whether the information is primary or secondary so if it's a copy of an original that doesn't change the degree of participation of the informant. Now there may, there may be more than one informant on a document as well. So just as an example, we're gonna take my grandfather's death certificate. On this death certificate there are 3 informants. All 3 of these informants give us primary information but for different things. The wife gives primary information of his death date and his parents' names because she knew the parents. The doctor gives primary information of the cause of death. The funeral director gives primary information of where the burial took place. Now there's also secondary information in this, and we've already talked about it. This is his birth date and this was given by his wife. So in the same document, the wife has given primary and secondary information and there are 3 different informants so we can look at each piece of information separately and determine which one answers our research question and then whether or not that was primary secondary information. All right, moving on to that 3rd column, the last column, evidence. Evidence is how we use information items so evidence does not exist without a research question. It has to apply or answer a research question. Evidence can be direct. Indirect or negative. So direct evidence answers a research question directly. It can be right or it can be wrong. Indirect evidence is the most tricky one for people to understand, so I'm going to give you lots of examples, but this is kind of the definition when there are two or more information items that suggest an answer to your research question only when they are combined, OK? Should we read it again? When 2 or more information items suggest an answer to your research question only when they are combined. OK, now negative um evidence is the absence of information that answers the research question. I really love Elizabeth Sho Mill's definition of this. She calls it contextually suggestive silence because you have to have context in order to make that absence of information significant, OK? It can't just be they're not there. There has to be a reason, OK? All right, so combining information from different sources does not make evidence indirect. And needing to do calculations to a piece of information does not make evidence indirect. We're gonna give you some examples hopefully this will solidify things. OK, in Tom Jones' book he gives this example and I don't remember what the research question was but what year was Anne born? That's my research question same information that Tom Jones gives, but I don't remember what his research question was so what year was Anne born? We've got the 1850 census. It says that she was 49. We do some calculations and we say, OK, that means she was born about 1800 to 1801. Then we have the 1860 census, which states she was aged 60. So that means she was born about 1700 to 1800. If we put these two pieces of information together, we can deduce that her birth was probably in 1800. However, combining those two pieces of evidence do not make it indirect. Both of those documents are direct. They are directly answering our research question of what year Anne was born, even though we have to do a calculation. It still is answering directly a research question. Putting those two items together does not make it indirect evidence. Hey, this one indirect evidence on this one is indirect evidence, so I'm gonna kind of show you how this will work so that the research question is when was William married? So William's first child was born in 1786. William was found in a tax record with his father in 1783. So we put these two pieces of information together and we can determine he was likely married between 1783 and 1786. So this is indirect evidence, OK? Can you see the difference? It's gonna start becoming real here. All right. Now we're going to get into a much more detailed example so that we can really dig deep in a real case study. OK. This is my great grandfather, my 4 times great grandfather on my mother's side. This is George Taylor. We're gonna be looking at indirect evidence, negative evidence, and context to answer our research question, which is when was George Taylor baptized? This is an England research, um, example, but it does apply to any research that you're doing other than the context is a little different because it happened in England. All right. So in order for you to understand this case study I have to tell you what we already know. George Taylor was born the 25th of September 1776, and this we do not have a document for. This is handed down through our family so we have all the birth dates of these of his family and children, um, but we don't have documents that state this information. All right, in a settlement examination dated the 13th of December 1819. George stated he was age 43 and he was born in Harthill Parish in Yorkshire, so that places his birth in 1776. George's burial states he was aged 71 in April of 1848, so this places his birth in 1776 because he would be aged 72 in September of 1848. We did the math, OK? Now George is listed as the oldest son of Thomas Taylor in a settlement certificate that was dated the 15th of April 1793. And all of his other 8 siblings have baptisms, all of them. All right, so we went to the Hart Hill, Yorkshire parish registers to try and find his baptism and what we found was a baptism for a Sarah Taylor, daughter of Thomas Taylor. Um, baptized the 27th of September 1776. OK. We didn't find a baptism that said George, this is the only baptism we found and it's still though for the father Thomas. We had to say, OK, is it possible that there is another child named Sarah? So I, um, correlated all of the birth information from the other children and we did math and it really is not possible to have two children born in the space of time between when George, we know he was the oldest child and the next child Hannah was born. So we know that there is not space for two children in there. We also had to analyze this and say that if George is born in 1776 and the ages on his burial and the ages that he gives in his settlement examination, they all corroborate this that he was born in 1776. So it's not likely that Thomas Taylor would have had um a child named Sarah born in 1776 and a child named George unless they were twins. And twins would both those names would be written in the parish register if they were twins. All right, so we had to continue analyzing the situation. George also already had a sister named Sarah who was born a decade after in 1786. If there was an older sister named Sarah, it's really common in England to name another child, Sarah, but only after that first child died, so we couldn't find a burial anywhere in any of the parishes the other children were born there is not a burial for an older Sarah Taylor. So either this older Sarah Taylor did not exist or she should have died. So we go back to that parish register and we take a deeper look. We're going to analyze this source much deeper. First thing that I noticed when I looked through the parish register is there is a second Sarah Taylor who was the daughter of William Taylor who was born in 1776 but a few months before um that second Sarah Taylor. So in my head I'm thinking, hm I wonder if the parish clerk made a mistake. Did he just write that same Sarah twice and and write a different father for her. OK, so that was my thinking. There might be a mistake here. The other thing that I noticed about this parish register, if you look at the handwriting, it's all consistent. All the ink's the same color, so this was all written at the same time. This wasn't written as events happened and it's very common in England for your parish clerk to write down events on little slips of paper and stuff them in his desk until the end of the year then he'll pull them out and write it all nice and neat in the parish register. This makes this document a derivative record. It's not the original. It's not the first time this information was likely written down. So that introduces a little chance of error that something got copied incorrectly. All right. So now we have to come to that really great tool about writing it down. So this is what I would call my conclusion or just a statement that kind of clarifies what I'm thinking at this time. So the baptism found in Hart Hill, Yorkshire Parish register dated the 27th of September 1776 for for Sarah Taylor, daughter of Thomas Taylor, was probably the baptism of George Taylor. According to tradition, George was born the 25th of September 1776, and it was common um to baptize a baby a few days to a few weeks after the child's birth, so it is possible that the parish clerk made a mistake when copying the baptism entries into the parish register as there was also another Sarah Taylor, daughter of William, who was baptized in May of the same year. So I'm writing down my thought process, my reasoning, and what I'm thinking. All right, now what was our indirect evidence? Our indirect evidence comes in the settlement certificate that's with the children of Thomas Taylor in birth order. There is the oldest son George. We know he is their son. And there is no Sarah listed on here until that later Sarah, who was born in, um, a decade after. Then the other second piece of indirect evidence was the um settlement examination for George Taylor where he states he is age 43 and he was born in the parish of Hart Hill. So we put these two pieces of evidence together it suggests that that baptism should be for George. All right, now here's the kicker. This baptism is actually direct evidence it answers our research question but it's wrong. OK, so like we said, direct evidence can be right or it can be wrong, but this is answering our research question. This is a baptism for a child of Thomas Taylor and it was likely for George. Alright, negative evidence. What negative evidence did we have in this, um, example? Well, first of all, all of Georgia's siblings had baptism records, but there was no baptism found that had Georgia's name on it in Harthill, Yorkshire. So if all the other children had a baptism, we would expect to find a baptism for George. Another piece of negative evidence is that usually a family would not name a child Sarah unless the first Sarah died and we didn't find any burials so not finding a burial contextually, um, that was silence, right? That's negative evidence. All right, so context can be historical, it can be legal, religious or cultural, and in this situation we had quite a bit of religious context that we were working with. First of all, the fact that in Anglican in the Anglican Church of the Church of England babies were baptized a few days to a few weeks after their birth. And then another piece of context is that parish clerks would often keep events on little scraps of paper and write it in the parish register at the end of the year. So those are just some. Pieces of religious context that kind of help us figure out this situation, this problem. A piece of cultural context would be that families generally would not name a second child, Sarah, unless the first child, Sarah had passed away. All right, so how do we learn context? How do we do this? Well, it's more about just understanding the records that you're looking at who created the documents and why. It's also learning the customs, the traditions, and the culture in the location that you're doing research so local histories and things like that can be very valuable anything that will teach you history about the location um can be very, very valuable when you're trying to solve a really tough research question. Knowing the dating systems, knowing laws, regulations, things like that that governs your ancestors' lives is all going to help you solve your research questions when you get into those tough situations. Alright now if you want to practice this it's really really fun um it can be mind bending sometimes but this is what I suggest if you already use a research log all you have to do is add a few columns to your research log the objective, the source information and evidence, and then you can. Um, analyze each of these pieces. If you don't keep a research log, then just go ahead and make a chart that has these five columns. You need a full source citation in there so that you can really look at the source. So that will be the first column. And if you've already got this in your research log, great. Then your second column will be the objective. That's your research question that is what you were trying to answer using this document. So then you can look at that document and say was the source original derivative, or an authored work? Was the information primary, secondary, or indeterminable? Was the evidence direct, indirect, or negative? So let's just take a look at that very top one just really quickly together. The top one is a certified copy of an entry of death for George Taylor. The research question I was trying to answer was what was the date of death for George Taylor? So taking a look at this one document, it is a derivative record because it's a copy. It's a certified copy of the, uh, entry of death. The information is primary information because on that. You have the son, William Taylor, who was the informant. He was there when his father died. So we know that this is primary information. He was an eyewitness. Then the evidence is direct because it directly answers the research question and you can do this on every source for a research project and really get your mind thinking about we what each source individually and what exactly you are looking at. All right, now I want to move on to correlation. And give you some really solid ideas of how to correlate these pieces of evidence once you've analyzed them and you've looked at them in detail, then you need to put them together in a way that you can look at them see patterns, see the conflicts in them. And there's lots of different ways you can do it and they all just kind of apply to your different situation so I'm gonna give you a bunch of examples of ways you can do this and you can just use it to your best advantage however you decide you need it. All right. So timelines every time I do a research project I will put together some kind of a timeline. It can be really simple it does not have to be very fancy but your timelines always show gaps in your research places where you have no information. The other really great thing about timelines is they are very good at showing you locations and if you are looking for more information you need to know what location to look in in order to find your best sources so on this timeline I was trying to figure out um some more information about this person's death. And automatically when you're looking at a person's life if you don't write down where they were, you may start just doing research in Columbiana, Ohio, where he was married. And you don't realize oh wait he wasn't even there by the time he died he was in Williams, Ohio. I need to be looking in Williams, Ohio for more records there so putting a timeline together helps your brain think in the right place looking for the records that you need in the right location, otherwise you're spending your wheels wasting time. All right. Another way to do a timeline, this was for my, um, ancestor Samuel Taylor. We had a settlement examination for him. Where he listed all of his employers and the age he was when he um was employed by them. Sadly he started working at age 10, but I wanted to know the locations he was at at different points in his life so that I could look for records in those different locations. Putting it all together and giving um some general years into this timeline helped me be able to look for records in a really pinpointed way in that location. All right, you can also put together tables of your documents for a specific research question. So in this research question we were trying to figure out the birth date and birthplace for this person. And we had 6 documents, 5 or 6 documents, and they all said something different, so we were trying to figure out which of these documents had the best informant so that we knew which one was giving us primary information, secondary information, etc. So if you put all of your sources together at a table, it can help you clarify the information you have. You can see which ones kind of go together, which ones are far off, and then you can analyze the informant and in this case our informant Arthur Byford was the person we were trying to find the birth date for. And he turned out to be the only one who identified his birthplace as Bellechamp Oton in Essex, and that's exactly where we found it. OK? So. Put your information together, analyze it as a whole, and it can help you figure out what you're actually looking at. Um, another one of my very most favorite things to do with tables is using it on censuses that just have those tick marks because when you put those little tick marks in a pattern and then you can see the next year everybody moves up or they don't move up you can figure out things about the family sometimes you have the wrong family it's just the same name and the the tick marks don't match up at all they don't correlate. So this is one way that you can see that either the pattern is correlating or it is not correlating. Maps location location location locations are so important to your family research every person in your family, if you can figure out the very piece of land or an address or something to solve your really difficult research problems, this can be the biggest help. It helps you determine between people of the same name because if you know that that record is in the location that's near your person's piece of property you can determine that that is him versus somebody who's in the next county. Very, very helpful to always look at as much detail as you can with the location sometimes that takes time. Sometimes you have to find a map that's more um at the time period you're doing research. Sometimes you have to go to Randy Majors and do the um section town range county thing from a deed that you have, but it always is worth it um when I did this one. I could see all of the neighbors and some of these neighbors had signed as witnesses for some other things that we were looking at so very, very valuable. It can help you figure out who your people are. All right, lists. When I do research, I always want to put a list together of the children of the family. It helps me see if there are gaps in the birth order where I may need to be looking for children who are missing, who maybe died young, or something like that. In this instance, it helped me see that there were 5 children who died between the between the years 1830 and 1832. And we were able to figure out that there was a cholera outbreak in their, um, area that probably is what took all of those children. If not a lot of them. All right then just your basic charts, your pedigree charts, your family group sheets, they help us see gaps, they help us see the information we have and the information that we do not have. All right. Now, once we can see the information, we will sometimes run into conflicts and we need to resolve those conflicts. So usually we're going to ask, OK, what is going to explain this conflict? This is where we weigh the evidence for quality and reliability. Um, we're gonna look for a lack of corroboration. What doesn't fit into the timeline or the location for our family. We're gonna ask ourselves questions which source is the closest in time to the event? Is this original or is a derivative? Did the informant have a reason to lie? Could this be a mistake? Is the person present at the event? What fits best in the birth order of the family or the timeline of this person's life? Then we are going to write about it. We're gonna get all of that reasoning down on paper. Writing about it helps you see holes in your research. If you are trying to explain how you proved something, you will notice when you don't have enough proof for what you're trying to explain. It'll help you make connections between people, between locations, between the evidence that you have. Um, it also helps you communicate to other people your reasoning and honestly it'll help you remember if you come back a month later and all you've done is just write it out for yourself, it will help you remember what you thought at the time and what you found so don't forget at the end of your little process to write it down. Then I have a little caution don't use the terms in your writing that we just discussed. The reason why is because we're not writing for other genealogists usually usually we're writing for a broader audience and so they're not gonna understand those terms. So you don't need to call it primary information or secondary information just explain it in concise and simple terms and um just explain it like you would your best friend. This is what I found this is how I found it and keep it simple and concise right now it could be something as simple as just a proof statement. This happened, I believe it was this. It could be just a summary, a few paragraphs or bullet points, something that will remind you how you were thinking it can also become a proof argument which is pages and pages of explanation of the documents and the evidence and things that you have found. Always use qualifiers in your writing. Things like probably possibly likely or almost certainly the reason why is because we are only using very few puzzle pieces to the whole life of this person and like I said we are getting more and more information all the time. So our conclusions or the totality of our evidence could shift if we have another piece of evidence come to light so we always want to leave a little bit of space for those new discoveries, and that is the way to do it is just by using qualifiers because we cannot ever be 100, 100, 100% sure about something, OK? We can be almost certain about it, but rarely are we 100%. All right, however, by analyzing our sources, our information and our evidence, we can come to some pretty solid conclusions and we can be a lot more confident about our conclusions when we have those two conflicting documents that say something just slightly different. This can always help us figure things out a little bit better and become a lot more confident about our conclusions right, that is the end of what I have for today. Please do not forget to fill out the um feedback on your app. I always like to hear how I did or if there's any suggestions or anything like that, and we now have time for questions. I would ask you to come up to the microphone to ask your question because we need to be able to have the people at home hear the question as well. OK, go ahead. So in doing research in England I find often they list the quarter that a person was born rather than the exact month or day you know why that is and what time period did that cover and. Is that still the case today? Is that wait, start with your beginning of the question. Yeah, I see a quarter like January through. OK, this that is civil registration. So the civil registration in England, they did everything they registered everything by the quarter, so he was just asking why can it give me the exact date and it will give you the exact date if you order the document. So if you order the document, they will send it to you and you will have the exact birth date, marriage date, or death date. Hi. Hi. What about oral history? If that's the only thing that has been handed down and nobody else, you know, there are no records, just oral history. How do you weigh that and how do you know, did, did that person have? You know, a good enough memory to have what was given to him, you know, or her, um, you know, yeah, all that just like in George Taylor's example, his birth date was oral history it was handed down to us, so all we can do is rely on it until we find something that disproves it. So if it's an oral history that really is all we have for some situations some cultures I know in Africa and places like that they are recording those oral histories because that's all there is and that's valuable. In and of itself, um, we're talking about when we have a lot of documents and we're trying to put together that evidence so yeah I mean there is that difficulty for sure because some like like you said, some countries don't have documents exactly all they have is what's here exactly and all that we can do is accept it for it's the best we have and thank heaven we have it right because at least we have something you yeah uh-huh. How do you organize your um thoughts, your writing so that other people can see that like on Family Search or ancestry or wherever you're working. That OK, when I first started this is gonna sum up everything for me. I had somebody tell me right as if you are explaining it to your friend. Your friend doesn't understand research at all so you explain it to your friend what you found and how you found it and if you start writing it as if you were telling your friend. You will find a pattern you will see what led you to the next conclusion and the next piece and stuff like that you can always go back and modify it at any time to kind of clear clean it up or fix it, but for me it became a pattern of how did I come to the conclusion like. Where did I start? What led me to my next clue what led me to my next clue? And that will show the proof as I was finding it. Does that help? Do you enter that into like your you you absolutely you just write a paragraph write write whatever you can and you can just put it on family search or something um it doesn't have to be a professional. Thing but make sure you source it so other people can see the sources themselves. OK. Yes. Uh, in regards to the baptism entry in the parish register that was in error. Yes, uh, with a bishop's transcript have helped maybe resolve some of that? He actually did check the bishop's transcript. It's exactly the same. So this is why it was such a hard problem for me because the name seems to connect us very, very solidly to most of our records and when the name was incorrect that threw me. Quite a bit so I had to do a ton of math. I had to make sure that this was the option that was there that was like the only option. So yeah, I, I would love to have all those pieces of paper that the clerk had originally written it down on. I wanna know, but I don't, you know, all I can do is analyze it and say, OK, this is my thinking this this date works it's got the right father. You know, so we couldn't find a burial for Sarah. It's, it's the best option. I have a follow up question you described um a uh certified copy from the GRO as being uh a derivative, um, but, uh, I've read in some, uh, books, uh, some authors suggest that that could be considered uh an original record if it's photocopied or scanned in such a way that it, uh, uh, you know, it reasonably represents what the original looks like what's your feeling on that? Um, for me, uh, if it's a digital image of the original then I would take it as an original. The, the copy for the death record that I had, it was not a certificate. It was like a PDF so to me that was a little less official. you could have gone either way probably on that depending on which copy you actually ordered or got because they have different options you can have the certificate you can have a PDF or you can have the digital download. All right. Any more questions? All right, I think we're good thank you so much everyone for coming. I appreciate it.",
+  "attempts": [
+    {
+      "client": "IOS",
+      "playability": {
+        "status": "OK",
+        "playableInEmbed": true,
+        "offlineability": {
+          "buttonRenderer": {
+            "navigationEndpoint": {
+              "clickTrackingParams": "CAoQ6ewBIhMIh4TKiezblwMV7EBMCB1rAhMKygEE8h6lQw==",
+              "ypcGetOfflineUpsellEndpoint": {
+                "params": "ChPqqN25AQ0KC3Rsak5Eb2o3NFRJIgt0bGpORG9qNzRUSSoVCAkYAVIPCgt0bGpORG9qNzRUSSAB"
+              }
+            },
+            "trackingParams": "CAoQ6ewBIhMIh4TKiezblwMV7EBMCB1rAhMK"
+          }
+        },
+        "pictureInPicture": {
+          "pictureInPictureRenderer": {
+            "playableInPip": true,
+            "offByDefault": false,
+            "shouldResumeOnHead": false
+          }
+        },
+        "miniplayer": {
+          "miniplayerRenderer": {
+            "playbackMode": "PLAYBACK_MODE_ALLOW"
+          }
+        },
+        "contextParams": "Q0FFU0FnZ0M="
+      },
+      "outcome": "ok"
+    }
+  ],
+  "fetched_at": "2026-10-28T04:11:17.992971+00:00",
+  "client": "IOS",
+  "json_path": "transcripts/030_tljNDoj74TI.json",
+  "text_path": "transcripts/030_tljNDoj74TI.txt"
+}
