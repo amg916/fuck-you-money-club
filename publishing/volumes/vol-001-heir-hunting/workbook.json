@@ -1,0 +1,247 @@
+{
+  "workbook_id": "wb-001-heir-hunting",
+  "title": "Heir Hunting Operator Companion Workbook",
+  "subtitle": "6 Field Worksheets, Deal Qualification Matrices & 30-Day Execution Logs",
+  "worksheets": [
+    {
+      "worksheet_number": 1,
+      "slug": "case-intake-and-jurisdiction",
+      "title": "Case Intake & Jurisdiction Screen",
+      "purpose": "Classify the opportunity before research spending or contact.",
+      "instructions": "Complete from verified records; mark unknowns and hold work requiring unresolved legal approval.",
+      "fields": [
+        {
+          "field_label": "Case identifier and source",
+          "input_type": "text",
+          "guidance": "Use a non-sensitive internal ID and official source citation."
+        },
+        {
+          "field_label": "Jurisdiction and domicile",
+          "input_type": "text",
+          "guidance": "Record known facts, evidence, and unresolved choice-of-law questions."
+        },
+        {
+          "field_label": "Asset regime",
+          "input_type": "text",
+          "guidance": "Distinguish probate estate, state-held unclaimed property, or unknown."
+        },
+        {
+          "field_label": "Licensing and legal review",
+          "input_type": "textarea",
+          "guidance": "Name the reviewer, review date, scope, and outstanding conditions."
+        },
+        {
+          "field_label": "Intake disposition",
+          "input_type": "text",
+          "guidance": "Choose accept, hold, or decline and explain the evidence for that decision."
+        }
+      ],
+      "completion_checklist": [
+        "Verify the source proceeding.",
+        "Classify the asset regime.",
+        "Record licensing questions.",
+        "Approve or hold intake explicitly."
+      ]
+    },
+    {
+      "worksheet_number": 2,
+      "slug": "kinship-proof-register",
+      "title": "Kinship Evidence & Conflict Register",
+      "purpose": "Connect every material relationship to evidence and unresolved issues.",
+      "instructions": "Use one copy per relationship; distinguish direct evidence, inference, and missing evidence.",
+      "fields": [
+        {
+          "field_label": "Relationship claim",
+          "input_type": "text",
+          "guidance": "Identify people by case IDs and state the exact relationship being tested."
+        },
+        {
+          "field_label": "Source citations",
+          "input_type": "textarea",
+          "guidance": "Include collection, record identifier, page, and retrieval date."
+        },
+        {
+          "field_label": "Evidence analysis",
+          "input_type": "textarea",
+          "guidance": "Explain reliability, informant knowledge, and corroboration."
+        },
+        {
+          "field_label": "Conflicts and missing records",
+          "input_type": "textarea",
+          "guidance": "Preserve contradictions and negative-search results."
+        },
+        {
+          "field_label": "Independent review",
+          "input_type": "textarea",
+          "guidance": "Record reviewer, date, evidence status, and required follow-up."
+        }
+      ],
+      "completion_checklist": [
+        "Cite material claims.",
+        "Correlate independent records.",
+        "Resolve or flag conflicts.",
+        "Obtain independent sign-off."
+      ]
+    },
+    {
+      "worksheet_number": 3,
+      "slug": "distribution-and-economics",
+      "title": "Distribution & Deal Qualification Matrix",
+      "purpose": "Separate hypothetical inheritance shares from lawful collectible fees and costs.",
+      "instructions": "Use counsel-confirmed distribution rules; label every estimate and model noncollection.",
+      "fields": [
+        {
+          "field_label": "Net distributable residue",
+          "input_type": "number",
+          "guidance": "Enter the assumed or verified amount and document debts and expense assumptions separately."
+        },
+        {
+          "field_label": "Share allocation",
+          "input_type": "textarea",
+          "guidance": "State the governing rule, recipients, fractions, and arithmetic reconciliation."
+        },
+        {
+          "field_label": "Covered distributions and fee basis",
+          "input_type": "textarea",
+          "guidance": "Identify represented interests and reviewed compensation terms; never presume legality."
+        },
+        {
+          "field_label": "Cost and collection scenarios",
+          "input_type": "textarea",
+          "guidance": "Include labor, records, review, overhead, delay, and zero collection."
+        },
+        {
+          "field_label": "Qualification decision",
+          "input_type": "text",
+          "guidance": "Choose proceed, revise, or decline with budget cap and approval owner."
+        }
+      ],
+      "completion_checklist": [
+        "Confirm the distribution rule.",
+        "Reconcile shares to the residue.",
+        "Validate compensation terms.",
+        "Approve affordable downside exposure."
+      ]
+    },
+    {
+      "worksheet_number": 4,
+      "slug": "outreach-and-contract-review",
+      "title": "Ethical Outreach & Contract Review",
+      "purpose": "Ensure contact and engagement are truthful, lawful, and voluntary.",
+      "instructions": "Complete before external contact; keep sensitive identification data out of this worksheet.",
+      "fields": [
+        {
+          "field_label": "Recipient and verification route",
+          "input_type": "text",
+          "guidance": "Use a case ID and safe independent verification method."
+        },
+        {
+          "field_label": "Channel permission review",
+          "input_type": "textarea",
+          "guidance": "Record applicable calling, texting, email, privacy, and consent checks."
+        },
+        {
+          "field_label": "Approved message",
+          "input_type": "textarea",
+          "guidance": "Identify the private business, state uncertainty, and avoid guaranteed outcomes."
+        },
+        {
+          "field_label": "Agreement review",
+          "input_type": "textarea",
+          "guidance": "Record jurisdiction, asset regime, counsel approval, fee terms, and required disclosures."
+        },
+        {
+          "field_label": "Contact preference and disposition",
+          "input_type": "text",
+          "guidance": "Record permission, opt-out, no response, or follow-up date without pressure."
+        }
+      ],
+      "completion_checklist": [
+        "Verify accurate sender identity.",
+        "Clear channel-specific requirements.",
+        "Approve the exact agreement scope.",
+        "Honor contact preferences and opt-outs."
+      ]
+    },
+    {
+      "worksheet_number": 5,
+      "slug": "case-operations-and-quality",
+      "title": "Case Operations & Quality-Control Log",
+      "purpose": "Allocate work while preserving independent review and secure evidence handling.",
+      "instructions": "Update weekly and after a material error; distinguish completion from approval.",
+      "fields": [
+        {
+          "field_label": "Role assignments",
+          "input_type": "textarea",
+          "guidance": "Name research, review, operations, principal, and legal escalation owners."
+        },
+        {
+          "field_label": "Work queue and capacity",
+          "input_type": "textarea",
+          "guidance": "List remaining tasks, expected hours, dependencies, and due dates."
+        },
+        {
+          "field_label": "Automation review results",
+          "input_type": "textarea",
+          "guidance": "Record source-linked extraction checks and any unsupported output."
+        },
+        {
+          "field_label": "Access and retention check",
+          "input_type": "textarea",
+          "guidance": "Document permission changes, backup checks, and retention decisions."
+        },
+        {
+          "field_label": "Defects and corrective actions",
+          "input_type": "textarea",
+          "guidance": "State impact, containment, owner, deadline, and restart approval."
+        }
+      ],
+      "completion_checklist": [
+        "Assign accountable owners.",
+        "Complete independent evidence review.",
+        "Reconcile workload and costs.",
+        "Close or explicitly hold corrective actions."
+      ]
+    },
+    {
+      "worksheet_number": 6,
+      "slug": "thirty-day-execution-log",
+      "title": "30-Day Execution & Decision Log",
+      "purpose": "Track a controlled pilot through a documented continuation decision.",
+      "instructions": "Use dated entries for every day from 1 through 30, including blocked days; do not treat forecasts as collections.",
+      "fields": [
+        {
+          "field_label": "Daily execution entries",
+          "input_type": "textarea",
+          "guidance": "For each day record date, planned task, actual work, evidence link, hours, and blockers."
+        },
+        {
+          "field_label": "Weekly gate reviews",
+          "input_type": "textarea",
+          "guidance": "Record day-7, day-14, day-21, and day-30 deliverables and unresolved prerequisites."
+        },
+        {
+          "field_label": "Actual costs and collections",
+          "input_type": "textarea",
+          "guidance": "Separate paid costs, commitments, collected cash, and uncollected projections."
+        },
+        {
+          "field_label": "Open risks and next actions",
+          "input_type": "textarea",
+          "guidance": "Assign each issue an owner, due date, and stop or escalation condition."
+        },
+        {
+          "field_label": "Day-30 decision",
+          "input_type": "text",
+          "guidance": "Choose continue, revise, or stop; document approvals, rationale, and next-period budget."
+        }
+      ],
+      "completion_checklist": [
+        "Account for all thirty days.",
+        "Link deliverables to review evidence.",
+        "Reconcile cash and downside exposure.",
+        "Approve a documented next-step decision."
+      ]
+    }
+  ]
+}

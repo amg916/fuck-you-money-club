@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>Publishing Studio · The Big Money Playbooks</title>
+<style>
+:root{--bg:#090d12;--panel:#111820;--raised:#18222c;--line:#34424e;--ink:#f3f5f7;--muted:#b4c0ca;--gold:#edc773;--cyan:#76dce5;--danger:#ffb4b4;--radius:14px;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--bg);color-scheme:dark}
+*{box-sizing:border-box}body{margin:0}button,input,select,textarea{font:inherit}button,a,input,select,textarea{touch-action:manipulation}button,.button{border:1px solid var(--line);border-radius:8px;padding:10px 14px;background:var(--raised);color:var(--ink);cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px}button:hover,.button:hover{border-color:var(--cyan);background:#20323e}button:disabled{opacity:.5;cursor:wait}.primary{background:var(--gold);color:#111820;border-color:var(--gold);font-weight:750}.primary:hover{background:#ffe0a0;color:#111820}.danger{color:var(--danger)}a{color:var(--cyan)}:focus-visible{outline:3px solid var(--cyan);outline-offset:4px}[hidden]{display:none!important}
+.skip{position:fixed;top:-70px;left:16px;z-index:20;background:var(--gold);color:#090d12;padding:12px}.skip:focus{top:12px}.sidebar{position:fixed;inset:0 auto 0 0;width:244px;padding:28px 18px;background:#0d131a;border-right:1px solid var(--line);display:flex;flex-direction:column;z-index:5}.brand{padding:0 12px 25px;border-bottom:1px solid var(--line)}.monogram{color:var(--gold);font-family:Georgia,serif;font-size:35px;font-weight:bold;letter-spacing:-2px}.brand p{font-size:10px;letter-spacing:2px;line-height:1.8;color:var(--muted)}.sidebar nav{display:grid;gap:5px;margin-top:24px}.sidebar nav a{padding:11px 13px;border-radius:7px;display:flex;gap:12px;color:var(--muted);text-decoration:none;font-size:14px;min-height:44px}.sidebar nav a span{font:11px ui-monospace,monospace;align-self:center;color:var(--gold)}.sidebar nav a:hover{background:var(--raised);color:var(--ink)}.sidebar nav a[aria-current="page"]{background:#29251d;color:var(--gold);box-shadow:inset 3px 0 var(--gold)}.sidebar footer{margin-top:auto;padding:22px 12px 0;color:var(--muted);font-size:11px;line-height:1.8}.sidebar footer strong{color:var(--ink)}
+.workspace{margin-left:244px;min-height:100vh}.topbar{min-height:76px;padding:16px 36px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:15px;background:#0d131a}.eyebrow{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);font-weight:700}.topbar .eyebrow{letter-spacing:1.2px}.topbar a{font-size:13px}.status{font-size:12px;color:var(--muted)}main{padding:36px;max-width:1680px;margin:auto}section{scroll-margin-top:24px}.heading{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:28px}.heading h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(32px,4vw,48px);font-weight:400;letter-spacing:-1.4px;margin:8px 0 10px}.heading p{color:var(--muted);line-height:1.6;max-width:720px;margin:0}.heading .edition{color:var(--gold);font:12px ui-monospace,monospace;white-space:nowrap}
+h2{font-size:20px;letter-spacing:-.4px;margin:0 0 18px}h3{font-size:16px;margin:0 0 12px}p{line-height:1.7}small,.muted{color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:20px}.two{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:22px}.three{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:24px;min-width:0}.card p:last-child{margin-bottom:0}.stack{display:grid;gap:20px}.spaced{margin-top:24px}.hero{background:linear-gradient(115deg,#25241c,#101d26 70%);padding:34px;border:1px solid #72613c;border-radius:var(--radius);position:relative;overflow:hidden}.hero h2{font:clamp(29px,3.4vw,43px)/1.12 Georgia,serif;max-width:650px;margin:16px 0}.hero p{max-width:600px;color:var(--muted)}.rule{height:1px;background:var(--line);margin:24px 0}.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin:24px 0}.stat{border:1px solid var(--line);border-radius:12px;padding:20px;background:var(--panel)}.stat strong{display:block;font-size:32px;font-weight:550;letter-spacing:-1px;margin:8px 0}.stat small{font-size:12px}.tag{display:inline-block;border:1px solid var(--line);border-radius:5px;padding:4px 8px;font-size:11px;line-height:1.5;color:var(--muted);overflow-wrap:anywhere}.tag.gold{border-color:#7f6b43;color:var(--gold)}.tag.cyan{border-color:#3b747e;color:var(--cyan)}.toolbar{display:flex;gap:12px;flex-wrap:wrap;align-items:end;margin:18px 0}.toolbar label{flex:1;min-width:150px}.toolbar .check{flex:0 0 auto;min-width:auto;display:flex;align-items:center;gap:8px;min-height:44px}.toolbar .check input{width:auto}.actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center}.empty{border:1px dashed var(--line);padding:26px;border-radius:12px;color:var(--muted);line-height:1.7}.error{color:var(--danger);border-color:#8b5252}.notice{border-left:3px solid var(--gold);padding:14px 18px;background:#25221b;color:var(--ink);font-size:13px;line-height:1.7}
+label{display:block;color:var(--muted);font-size:12px;font-weight:650;line-height:1.7}input,select,textarea{display:block;width:100%;background:#0b1118;color:var(--ink);border:1px solid var(--line);border-radius:7px;padding:11px 12px;margin-top:6px;min-height:44px}textarea{resize:vertical;min-height:140px;line-height:1.7}input[type=checkbox]{width:auto;min-height:20px;accent-color:var(--gold)}form label+label{margin-top:18px}.table-wrap{overflow:auto}table{border-collapse:collapse;width:100%;font-size:13px;text-align:left}caption{text-align:left;color:var(--muted);padding:0 0 12px}th{color:var(--muted);font-size:11px;letter-spacing:.6px;text-transform:uppercase}td,th{padding:15px 12px;border-bottom:1px solid var(--line);vertical-align:top}td{line-height:1.6}.book{display:flex;flex-direction:column;gap:14px}.book h3{font:24px/1.2 Georgia,serif}.book .actions{margin-top:auto}.book-number{font:11px ui-monospace,monospace;color:var(--gold);letter-spacing:2px}.book p{font-size:13px;color:var(--muted);margin:0}.split{display:grid;grid-template-columns:260px minmax(0,1fr);gap:22px}.chapter-list{display:grid;gap:6px;align-content:start}.chapter-list button{justify-content:start;text-align:left;font-size:13px}.chapter-list button[aria-current=true]{border-color:var(--gold);color:var(--gold)}.reader{font:18px/1.85 Georgia,serif;max-width:850px;overflow-wrap:anywhere}.reader h2{font:31px/1.2 Georgia,serif}.reader h3{font:23px/1.4 Georgia,serif}.reader p{white-space:pre-wrap}.reader ul{padding-left:24px}.reader li{margin:8px 0}.field{margin-bottom:20px}.field-title{font:11px ui-sans-serif,system-ui,sans-serif;letter-spacing:1px;color:var(--muted);text-transform:uppercase;margin-bottom:8px}.details{overflow-wrap:anywhere}.details dl{display:grid;gap:8px;margin:0}.details dt{font-size:11px;text-transform:uppercase;letter-spacing:.8px;color:var(--muted);margin-top:10px}.details dd{margin:0;line-height:1.7}.details ul{padding-left:20px}details{border-top:1px solid var(--line);padding-top:14px;margin-top:14px}summary{cursor:pointer;min-height:34px;line-height:1.6}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:12px/1.7 ui-monospace,monospace}
+.asset{margin:0;min-width:0}.asset button{display:block;width:100%;padding:0;background:#0a1016;overflow:hidden}.asset img{display:block;width:100%;height:245px;object-fit:contain}.asset figcaption{padding:12px 0;color:var(--muted);font-size:12px;line-height:1.6}.concept img{height:330px}.preview-shell{background:#06090d;border:1px solid var(--line);border-radius:12px;overflow:auto;padding:20px;min-height:500px}.preview-shell iframe{display:block;border:0;background:white;margin:0 auto;min-height:880px;max-width:100%}.diagram img{height:340px}.review{display:grid;gap:10px;border-top:1px solid var(--line);padding-top:12px}.review textarea{min-height:72px;font-size:13px}.review .actions button{padding:8px 10px;font-size:12px}.step-list{list-style:none;padding:0;margin:0;counter-reset:stage}.step-list li{counter-increment:stage;padding:13px 0;border-bottom:1px solid var(--line);font-size:13px;display:flex;gap:15px}.step-list li:before{content:counter(stage,decimal-leading-zero);font:12px ui-monospace,monospace;color:var(--muted)}
+.factor-hit{position:relative;min-height:44px;padding:16px 0}.factor-track{height:10px;border:1px solid var(--line);background:var(--bg)}.factor-track span{display:block;height:100%;background:var(--cyan);border-radius:0 4px 4px 0}.factor-tip{display:none;margin:10px 0 0;font-size:12px;color:var(--ink)}.factor-hit:hover .factor-tip,.factor-hit:focus .factor-tip{display:block}button[aria-pressed=true]{border-color:var(--gold);box-shadow:inset 0 -2px var(--gold)}fieldset{margin:0}legend{padding:0 8px;color:var(--ink)}@media print, (forced-colors:active){.factor-track span{background:repeating-linear-gradient(45deg,CanvasText 0 2px,Canvas 2px 4px);border:1px solid CanvasText}.factor-tip{display:block}}
+ dialog{background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:16px;padding:0;box-shadow:0 25px 100px #0009;max-width:calc(100vw - 32px)}dialog::backdrop{background:#030609dc;backdrop-filter:blur(5px)}.dialog-head{display:flex;justify-content:space-between;gap:18px;align-items:center;padding:16px 22px;border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--panel);z-index:2}.dialog-head h2{font-size:16px;margin:0}.dialog-body{padding:24px;overflow:auto}.drawer{margin:0 0 0 auto;height:100dvh;max-height:100dvh;width:600px;border-radius:16px 0 0 16px}.zoom{width:96vw;height:94dvh;max-height:94dvh}.zoom-stage{height:calc(100% - 82px);overflow:auto;background:#070b10;padding:24px}.zoom-stage img{display:block;width:100%;max-width:none;height:auto;margin:0 auto}.zoom-controls{display:flex;gap:8px;align-items:center}.zoom-controls output{font:12px ui-monospace,monospace;min-width:44px}.toast{position:fixed;bottom:24px;right:24px;z-index:30;max-width:min(520px,calc(100vw - 48px));padding:16px 20px;border:1px solid var(--cyan);border-radius:10px;background:#14242d;box-shadow:0 12px 40px #0008;line-height:1.6}.toast:empty{display:none}.loading{animation:pulse 1.5s infinite;color:var(--muted)}@keyframes pulse{50%{opacity:.45}}.fatal{margin-bottom:24px}
+@media(min-width:1600px){main{padding:44px 50px}}@media(max-width:1100px){.three{grid-template-columns:1fr 1fr}.two{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}.split{grid-template-columns:210px minmax(0,1fr)}.sidebar{width:215px}.workspace{margin-left:215px}main{padding:28px}.topbar{padding:16px 28px}}
+@media(max-width:760px){.sidebar{position:relative;width:auto;padding:16px;border-right:0;border-bottom:1px solid var(--line)}.brand{display:flex;gap:16px;padding:0 0 12px;align-items:center}.brand p{margin:0}.sidebar nav{display:flex;overflow:auto;margin-top:12px;gap:6px}.sidebar nav a{white-space:nowrap}.sidebar footer{display:none}.workspace{margin:0}.topbar{padding:14px 18px}.topbar .eyebrow{font-size:9px}.topbar .status{display:none}main{padding:24px 18px}.heading{align-items:start}.heading .edition{display:none}.three,.split{grid-template-columns:1fr}.chapter-list{max-height:240px;overflow:auto}.stats{gap:10px}.stat{padding:16px}.card{padding:20px}.hero{padding:24px}.dialog-head{flex-wrap:wrap}.zoom-stage{height:calc(100% - 140px)}.zoom-controls{flex-wrap:wrap}.toolbar label{min-width:130px}.reader{font-size:17px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;scroll-behavior:auto!important}}@media(forced-colors:active){button,.card,.tag,.stat,.sidebar nav a[aria-current=page]{border:1px solid CanvasText}}@media print{.sidebar,.topbar,.toolbar,.actions,.toast,dialog{display:none!important}.workspace{margin:0}main{padding:0}.card,.hero{break-inside:avoid}body{background:white;color:black}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to workspace</a>
+<aside class="sidebar" aria-label="Publishing studio">
+<div class="brand"><div class="monogram">FYMC<span style="color:var(--cyan)">.</span></div><p>THE BIG MONEY PLAYBOOKS<br>EDITORIAL OPERATING SYSTEM</p></div>
+<nav aria-label="Main navigation">
+<a id="nav-dashboard" href="#dashboard" aria-current="page"><span>01</span>Dashboard</a>
+<a id="nav-library" href="#library"><span>02</span>Book Library</a>
+<a id="nav-research" href="#research"><span>03</span>Research</a>
+<a id="nav-manuscript" href="#manuscript"><span>04</span>Manuscript</a>
+<a id="nav-design-studio" href="#design-studio"><span>05</span>Design Studio</a>
+<a id="nav-scorecards" href="#scorecards"><span>06</span>Scorecards</a>
+<a id="nav-exports" href="#exports"><span>07</span>Exports &amp; QA</a>
+<a id="nav-publishing" href="#publishing"><span>08</span>Publishing</a>
+<a id="nav-settings" href="#settings"><span>09</span>Settings</a>
+</nav>
+<footer><strong>Big Money. Small Teams.<br>No Bullshit.</strong><br>Private workspace · Owner-led approval</footer>
+</aside>
+<div class="workspace">
+<header class="topbar"><div class="eyebrow">The Fuck You Money Club / Publishing Studio</div><div class="actions"><span id="connection" class="status" role="status">Connecting to workspace…</span><a href="/site">Public site ↗</a></div></header>
+<main id="main" tabindex="-1">
+<div id="bootstrap-errors" class="fatal" role="alert" hidden></div>
+<section id="sec-dashboard" aria-labelledby="title-dashboard"><div class="heading"><div><div class="eyebrow">The editorial desk</div><h1 id="title-dashboard" tabindex="-1">Make the next move count.</h1><p>Your publishing pipeline, from first signal to final approval.</p></div><div class="edition">STUDIO / 001</div></div><div id="dashboard-content" class="loading">Loading dashboard…</div></section>
+<section id="sec-library" aria-labelledby="title-library" hidden><div class="heading"><div><div class="eyebrow">The opportunity shelf</div><h1 id="title-library" tabindex="-1">Book Library</h1><p>Explore the 29-book pipeline. Compare the opportunity, not the hype.</p></div></div><div id="library-content" class="loading">Loading book library…</div></section>
+<section id="sec-research" aria-labelledby="title-research" hidden><div class="heading"><div><div class="eyebrow">Evidence before conviction</div><h1 id="title-research" tabindex="-1">Research intelligence</h1><p>Eight research topics, source consensus, and a transparent permissions ledger.</p></div></div><div id="research-content" class="loading">Loading research…</div></section>
+<section id="sec-manuscript" aria-labelledby="title-manuscript" hidden><div class="heading"><div><div class="eyebrow">Volume 001 / editorial</div><h1 id="title-manuscript" tabindex="-1">The manuscript</h1><p>A 12-chapter reader and six practical worksheets. Edit one chapter without rebuilding the book.</p></div></div><div id="manuscript-content" class="loading">Loading manuscript…</div></section>
+<section id="sec-design-studio" aria-labelledby="title-design-studio" hidden><div class="heading"><div><div class="eyebrow">Art direction / not approval</div><h1 id="title-design-studio" tabindex="-1">Design Studio</h1><p>Compare three directions. Inspect every page. Previewing a concept never approves it.</p></div></div><div id="design-studio-content" class="loading">Loading design studio…</div></section>
+<section id="sec-scorecards" aria-labelledby="title-scorecards" hidden><div class="heading"><div><div class="eyebrow">A disciplined comparison</div><h1 id="title-scorecards" tabindex="-1">Money-to-Manpower Score</h1><p>A decision aid, not an earnings promise. Inspect assumptions alongside every score.</p></div></div><div id="scorecards-content" class="loading">Loading scorecards…</div></section>
+<section id="sec-exports" aria-labelledby="title-exports" hidden><div class="heading"><div><div class="eyebrow">Production / quality assurance</div><h1 id="title-exports" tabindex="-1">Ready for the next stage.</h1><p>Download working files, build export packages, and inspect live quality checks.</p></div></div><div id="exports-content" class="loading">Loading exports…</div></section>
+<section id="sec-publishing" aria-labelledby="title-publishing" hidden><div class="heading"><div><div class="eyebrow">Positioning / governance</div><h1 id="title-publishing" tabindex="-1">Publish with intention.</h1><p>Review positioning alternatives and the owner approval gate before release.</p></div></div><div id="publishing-content" class="loading">Loading publishing…</div></section>
+<section id="sec-settings" aria-labelledby="title-settings" hidden><div class="heading"><div><div class="eyebrow">Workspace controls</div><h1 id="title-settings" tabindex="-1">Settings</h1><p>Pricing hypotheses are experiments, not validated market prices.</p></div></div><div id="settings-content" class="loading">Loading settings…</div></section>
+<noscript><p class="notice">JavaScript is required to load the publishing workspace. No third-party scripts are used.</p></noscript>
+</main>
+</div>
+<dialog id="book-drawer" class="drawer" aria-labelledby="drawer-title"><div class="dialog-head"><h2 id="drawer-title">Book details</h2><button type="button" data-close="book-drawer" aria-label="Close book details">Close ×</button></div><div id="drawer-body" class="dialog-body details"></div></dialog>
+<dialog id="svg-modal" class="zoom" aria-labelledby="svg-title"><div class="dialog-head"><h2 id="svg-title">Full-resolution artwork</h2><div class="zoom-controls"><button type="button" id="zoom-out" aria-label="Zoom out">−</button><output id="zoom-value" aria-live="polite">100%</output><button type="button" id="zoom-in" aria-label="Zoom in">+</button><button type="button" id="zoom-fit">Fit</button><a id="svg-original" class="button" target="_blank" rel="noopener">Open SVG ↗</a><button type="button" data-close="svg-modal">Close ×</button></div></div><div class="zoom-stage"><img id="svg-full" alt="Full-resolution artwork preview"></div></dialog>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script>
+'use strict';
+const $ = (selector, root = document) => root.querySelector(selector);
+const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
+const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const label = value => String(value ?? '').replace(/[_-]/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+const list = value => Array.isArray(value) ? value : value && typeof value === 'object' ? Object.entries(value).map(([key, item]) => typeof item === 'object' && item !== null ? {id:key,...item} : {id:key,title:key,value:item}) : [];
+const firstList = (...values) => { for (const value of values) { const rows = list(value); if (rows.length) return rows; } return []; };
+const nameOf = row => typeof row === 'string' ? row : row?.title || row?.name || row?.label || row?.business_name || row?.topic || row?.id || 'Untitled';
+const unwrap = payload => payload?.data && typeof payload.data === 'object' ? payload.data : payload;
+const S = {overview:{},catalog:{},research:{},manuscript:{},books:[],chapters:[],worksheets:[],concept:'concept_a',chapter:0,dirty:false,errors:{},loaded:{}};
+const sections = ['dashboard','library','research','manuscript','design-studio','scorecards','exports','publishing','settings'];
+const empty = message => `<div class="empty">${esc(message)}</div>`;
+const badge = (text, tone = '') => `<span class="tag ${esc(tone)}">${esc(text)}</span>`;
+const endpoint = (path, params = {}) => `/api/fymc/${path}${Object.keys(params).length ? '?'+new URLSearchParams(params) : ''}`;
+function safeLink(value) { try { const u = new URL(String(value), location.origin); return ['https:','http:'].includes(u.protocol) ? u.href : ''; } catch { return ''; } }
+function details(value, depth = 0) {
+ if (value === null || value === undefined || value === '') return '<span class="muted">Not supplied</span>';
+ if (typeof value === 'boolean') return value ? 'Yes' : 'No';
+ if (typeof value !== 'object') { const url = /^https?:\/\//.test(String(value)) ? safeLink(value) : ''; return url ? `<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(value)}</a>` : esc(value); }
+ if (depth > 5) return `<pre>${esc(JSON.stringify(value,null,2))}</pre>`;
+ if (Array.isArray(value)) return value.length ? `<ul>${value.map(v=>`<li>${details(v,depth+1)}</li>`).join('')}</ul>` : '<span class="muted">None recorded</span>';
+ return `<dl>${Object.entries(value).map(([k,v])=>`<dt>${esc(label(k))}</dt><dd>${details(v,depth+1)}</dd>`).join('')}</dl>`;
+}
+function panel(id, html) { const node = $(`#${id}-content`); node.classList.remove('loading'); node.innerHTML = html; }
+let toastTimer;
+function notify(message, error = false) { clearTimeout(toastTimer); const node = $('#toast'); node.textContent = message; node.classList.toggle('error',error); toastTimer = setTimeout(()=>node.textContent='',error ? 14000 : 7000); }
+async function api(path, body) {
+ const controller = new AbortController(); const timer = setTimeout(()=>controller.abort(),120000);
+ try { const response = await fetch(path.startsWith('/') ? path : endpoint(path), {method:body === undefined ? 'GET' : 'POST',headers:body === undefined ? {'Accept':'application/json'} : {'Content-Type':'application/json','Accept':'application/json'},body:body === undefined ? undefined : JSON.stringify(body),signal:controller.signal,credentials:'same-origin'});
+  const text = await response.text(); let data; try { data = JSON.parse(text); } catch { throw new Error(`Expected JSON from ${path} (HTTP ${response.status}). Check that the FYMC API is running.`); }
+  if (!response.ok || data.ok === false || data.success === false) throw new Error(typeof data.error === 'string' ? data.error : JSON.stringify(data.error || data.detail || `HTTP ${response.status}`));
+  return unwrap(data);
+ } finally { clearTimeout(timer); }
+}
+async function busy(button, task) { if (button.disabled) return; const text = button.textContent; button.disabled = true; button.textContent = 'Working…'; try { return await task(); } catch (error) { notify(error.message,true); } finally { button.disabled = false; button.textContent = text; } }
+function brand() { return S.overview.brand_system || S.overview.state?.brand_system || S.overview.brand || {}; }
+function volume() { return S.manuscript.volume || S.overview.volume || {}; }
+function normalize() {
+ S.books = firstList(S.catalog.candidates,S.catalog.pipeline_29_candidates,S.catalog.books,S.catalog.catalog?.candidates,S.catalog.catalog,S.catalog.volumes,Array.isArray(S.catalog)?S.catalog:null);
+ const m = S.manuscript.manuscript || volume().manuscript || S.manuscript;
+ S.chapters = firstList(m.chapters,S.manuscript.chapters);
+ const w = S.manuscript.workbook || volume().workbook || S.overview.volume?.workbook || {};
+ S.worksheets = firstList(w.worksheets,w.sheets,Array.isArray(w)?w:null);
+ S.concept = brand().active_preview_concept || S.concept;
+}
+function switchSection(id, focus = false) {
+ if (!sections.includes(id)) id = 'dashboard';
+ sections.forEach(key=>{ $(`#sec-${key}`).hidden = key !== id; const nav = $(`#nav-${key}`); if (key===id) nav.setAttribute('aria-current','page'); else nav.removeAttribute('aria-current'); });
+ if (focus) $(`#title-${id}`).focus({preventScroll:true});
+ document.title = `${$(`#nav-${id}`).textContent.replace(/^\d+\s*/, '').trim()} · FYMC Studio`;
+}
+$$('.sidebar nav a').forEach(a=>a.addEventListener('click',()=>switchSection(a.hash.slice(1),true)));
+window.addEventListener('hashchange',()=>switchSection(location.hash.slice(1)));
+$$('[data-close]').forEach(button=>button.addEventListener('click',()=>$('#'+button.dataset.close).close()));
+let zoom = 100;
+function setZoom(value) { zoom = Math.max(25,Math.min(400,value)); $('#svg-full').style.width = zoom+'%'; $('#zoom-value').textContent = zoom+'%'; }
+function openSVG(url, title) { $('#svg-title').textContent = title; $('#svg-full').alt = title; $('#svg-full').src = url; $('#svg-original').href = url; setZoom(100); $('#svg-modal').showModal(); }
+$('#zoom-in').addEventListener('click',()=>setZoom(zoom+25)); $('#zoom-out').addEventListener('click',()=>setZoom(zoom-25)); $('#zoom-fit').addEventListener('click',()=>setZoom(100));
+$('#svg-full').addEventListener('error',()=>notify('This artwork could not be loaded. Check the SVG endpoint.',true));
+document.addEventListener('click',event=>{ const art = event.target.closest('[data-svg]'); if (art) openSVG(art.dataset.svg,art.dataset.title || 'Artwork'); });
+function renderDashboard() {
+ const o=S.overview, b=brand(), meta=volume().metadata || o.metadata || {}, stages=firstList(b.workflow_stages,o.workflow_stages);
+ const gates=b.gates || o.gates || {};
+ panel('dashboard',`<div class="hero"><div class="eyebrow">The Big Money Playbooks / flagship volume</div><h2>${esc(meta.title || 'Heir Hunting')}</h2><p>${esc(meta.subtitle || 'Build an evidence-led playbook. Shape the manuscript, pressure-test the economics, and make every page earn its place.')}</p><div class="actions"><a class="button primary" href="#manuscript">Open manuscript →</a><a class="button" href="#design-studio">Explore design directions</a></div></div><div class="stats">${[['Candidate books',S.loaded.catalog?S.books.length:'—','Pipeline inventory'],['Chapters',S.loaded.manuscript?S.chapters.length:'—','Flagship manuscript'],['Worksheets',S.loaded.manuscript?S.worksheets.length:'—','Operator companion'],['Design approval',gates.approved_concept_id?'Recorded':'Pending','Owner decision required']].map(([t,n,note])=>`<div class="stat"><small>${esc(t)}</small><strong>${esc(n)}</strong><small>${esc(note)}</small></div>`).join('')}</div><div class="two"><div class="card"><h2>From research to release</h2>${stages.length?`<ol class="step-list">${stages.map(s=>`<li><span>${esc(nameOf(s))}${s.status?` · ${esc(label(s.status))}`:''}</span></li>`).join('')}</ol>`:empty('Workflow stages are not available in the overview response.')}</div><div class="stack"><div class="card"><h2>The approval boundary</h2><p>Concept previews and graphic reviews are editorial decisions. They do not authorize a public deployment or paid sales.</p><div class="details">${details(gates)}</div><a class="button spaced" href="#publishing">Review publishing gates →</a></div><div class="card"><h2>Evidence, not certainty</h2><p>Use the Money-to-Manpower Score alongside source quality, legal verification, and operational assumptions.</p><a href="#research">Inspect the research ledger →</a></div></div></div>`);
+}
+function renderLibrary() {
+ const categories=[...new Set(S.books.map(b=>b.category || b.sector || b.business_category).filter(Boolean))];
+ panel('library',`<div class="toolbar"><label>Find a book<input id="book-search" type="search" placeholder="Title, model, or keyword…"></label><label>Category<select id="book-category"><option value="">All categories</option>${categories.map(c=>`<option>${esc(c)}</option>`).join('')}</select></label><label>Sort by<select id="book-sort"><option value="pipeline">Pipeline order</option><option value="title">Title</option><option value="score">Score · highest first</option></select></label></div><p id="book-count" class="muted" role="status"></p><div id="book-grid" class="grid"></div>`);
+ const draw = ()=>{
+  const q=$('#book-search').value.trim().toLowerCase(), category=$('#book-category').value, sort=$('#book-sort').value;
+  const rows=S.books.map((book,index)=>({book,index})).filter(({book})=>(!q || JSON.stringify(book).toLowerCase().includes(q)) && (!category || (book.category || book.sector || book.business_category)===category));
+  const score=b=>Number(b.scorecard?.total_score ?? b.scorecard?.score ?? b.money_to_manpower_score ?? b.score ?? 0);
+  if(sort==='title') rows.sort((a,b)=>nameOf(a.book).localeCompare(nameOf(b.book))); if(sort==='score') rows.sort((a,b)=>score(b.book)-score(a.book));
+  $('#book-count').textContent=`${rows.length} of ${S.books.length} candidate books`;
+  $('#book-grid').innerHTML=rows.length?rows.map(({book:b,index:i})=>`<article class="card book"><div class="book-number">PLAYBOOK / ${String(i+1).padStart(3,'0')}</div><h3>${esc(nameOf(b))}</h3><div>${badge(b.status || b.tier || 'Candidate')}${b.category?' '+badge(b.category):''}</div><p>${esc(b.subtitle || b.one_line_thesis || b.description || b.summary || b.business_model || 'Open the dossier to inspect this opportunity.')}</p><div class="actions"><button type="button" data-book="${i}">Open dossier ↗</button></div></article>`).join(''):empty('No books match this filter. If the catalog is unavailable, retry the connection above.');
+  $$('[data-book]').forEach(button=>button.addEventListener('click',()=>{const book=S.books[Number(button.dataset.book)]; $('#drawer-title').textContent=nameOf(book); $('#drawer-body').innerHTML=details(book); $('#book-drawer').showModal();}));
+ };
+ ['book-search','book-category','book-sort'].forEach(id=>$('#'+id).addEventListener(id==='book-search'?'input':'change',draw)); draw();
+}
+function renderResearch() {
+ const r=S.research.research_database || S.research.research || S.research;
+ const topics=firstList(r.topics,r.topic_intelligence,r.topic_clusters,r.topic_reports);
+ panel('research',`<div class="notice">Source availability does not establish reuse permission. Treat unresolved rights and factual claims as open checks.</div><div class="toolbar"><label>Research topic<select id="topic-select"><option value="">All ${topics.length} available topics</option>${topics.map((t,i)=>`<option value="${i}">${esc(nameOf(t))}</option>`).join('')}</select></label></div><div id="topic-grid" class="grid"></div><div class="two spaced"><div class="card details"><h2>Consensus findings</h2>${details(r.consensus_findings || r.consensus || [])}</div><div class="card details"><h2>Conflicting views &amp; verification</h2>${details(r.conflicting_views || r.claims_requiring_verification || [])}</div></div><div class="card details spaced"><h2>Permissions ledger</h2><div class="table-wrap">${details(r.permissions_ledger || [])}</div></div><details class="details"><summary>Corpus metrics and research metadata</summary>${details(r.corpus_metrics || r.summary || {})}</details>`);
+ const draw=()=>{const value=$('#topic-select').value; const rows=value===''?topics:[topics[Number(value)]]; $('#topic-grid').innerHTML=rows.length?rows.map(t=>`<article class="card details"><h2>${esc(nameOf(t))}</h2>${details(t)}</article>`).join(''):empty('No topic records were returned. Research has not been synthesized or this API is unavailable.');}; $('#topic-select').addEventListener('change',draw); draw();
+}
+function chapterNumber(chapter,index=S.chapter) { return Number(chapter.chapter_number ?? chapter.number ?? index+1); }
+function renderManuscript() {
+ panel('manuscript',`<div class="split"><nav id="chapter-list" class="chapter-list" aria-label="Chapters"></nav><div><div id="chapter-reader" class="card reader"></div><div id="chapter-editor" class="card spaced" hidden></div></div></div><div class="card spaced"><div class="heading"><div><div class="eyebrow">Operator companion</div><h2>Workbook · ${S.worksheets.length} worksheets</h2></div></div><label>Worksheet<select id="worksheet-select">${S.worksheets.map((w,i)=>`<option value="${i}">${esc(nameOf(w))}</option>`).join('')}</select></label><div id="worksheet-body" class="details spaced"></div></div>`);
+ $('#chapter-list').innerHTML=S.chapters.length?S.chapters.map((c,i)=>`<button type="button" data-chapter="${i}">${String(chapterNumber(c,i)).padStart(2,'0')} / ${esc(nameOf(c))}</button>`).join(''):empty('No chapters returned.');
+ $$('[data-chapter]').forEach(button=>button.addEventListener('click',()=>{if(S.dirty){notify('Save or discard the current chapter edit before switching chapters.',true);return;} S.chapter=Number(button.dataset.chapter); renderChapter();}));
+ const showWorksheet=()=>{const w=S.worksheets[Number($('#worksheet-select').value)]; $('#worksheet-body').innerHTML=w?details(w):empty('No worksheets returned with the manuscript.');}; $('#worksheet-select').addEventListener('change',showWorksheet); showWorksheet(); renderChapter();
+}
+function renderChapter() {
+ const c=S.chapters[S.chapter]; if(!c){$('#chapter-reader').innerHTML=empty('Select a chapter when the manuscript is available.');return;}
+ $$('[data-chapter]').forEach(button=>button.setAttribute('aria-current',String(Number(button.dataset.chapter)===S.chapter)));
+ $('#chapter-editor').hidden=true;
+ $('#chapter-reader').innerHTML=`<div class="eyebrow">Chapter ${esc(chapterNumber(c))}</div><h2>${esc(nameOf(c))}</h2><div class="actions"><button id="edit-chapter" type="button">Edit this chapter</button></div><div class="rule"></div><div class="details">${details(Object.fromEntries(Object.entries(c).filter(([k])=>!['title','id','chapter_number','number'].includes(k))))}</div>`;
+ $('#edit-chapter').addEventListener('click',()=>editChapter(c));
+}
+function editChapter(c) {
+ const advertised=S.manuscript.editable_fields;
+ const allowed=Array.isArray(advertised)?advertised:['title','subtitle','opening_hook','introduction','sections','key_takeaways','action_steps','summary','content','body','citations','sources','checklist','callouts'];
+ const fields=allowed.filter(k=>Object.hasOwn(c,k));
+ const editor=$('#chapter-editor'); editor.hidden=false;
+ editor.innerHTML=`<h2>Partial chapter edit</h2><p class="muted">Only changed fields are sent. Structured fields use JSON; unchanged chapter content is preserved.</p><form id="chapter-form">${fields.map((key,i)=>`<label>${esc(label(key))}${typeof c[key]==='object'?' · JSON':''}<textarea data-field="${esc(key)}" id="chapter-field-${i}" rows="${typeof c[key]==='object'?9:3}">${esc(typeof c[key]==='object'?JSON.stringify(c[key],null,2):c[key])}</textarea></label>`).join('')}<div class="actions spaced"><button class="primary" type="submit" ${fields.length?'':'disabled'}>Save chapter changes</button><button id="discard-chapter" type="button">Discard edit</button><span id="chapter-save-status" role="status" class="muted"></span></div></form>`;
+ let editSeq=0;
+ $('#chapter-form').addEventListener('input',()=>{editSeq++;S.dirty=true;$('#chapter-save-status').textContent='Unsaved changes';});
+ $('#discard-chapter').addEventListener('click',()=>{S.dirty=false;editor.hidden=true;$('#edit-chapter').focus();});
+ $('#chapter-form').addEventListener('submit',event=>{event.preventDefault();busy($('#chapter-form button[type=submit]'),async()=>{
+  const patch={}; $$('[data-field]',editor).forEach(input=>{const key=input.dataset.field;let value=input.value;if(typeof c[key]==='object'){try{value=JSON.parse(value);}catch{throw new Error(`${label(key)} must be valid JSON.`);}}if(JSON.stringify(value)!==JSON.stringify(c[key]))patch[key]=value;});
+  if(!Object.keys(patch).length){notify('No changes to save.');return;}
+  const submitSeq=editSeq;
+  const controls=$$('textarea, #discard-chapter',editor);
+  controls.forEach(control=>control.disabled=true);
+  try {
+   const result=await api('manuscript/update',{chapter_number:chapterNumber(c),patch,expected_revision:c.revision});
+   if(result.rejected_fields?.length) throw new Error(`Fields rejected: ${result.rejected_fields.join(', ')}. Reload before continuing.`);
+   c=result.chapter || {...c,...patch}; S.chapters[S.chapter]=c;
+   if(editSeq===submitSeq){S.dirty=false;renderChapter();}
+   notify('Chapter changes saved. Other chapters were not changed.');
+  } finally {if(!editor.hidden)controls.forEach(control=>control.disabled=false);}
+ });});
+ editor.scrollIntoView({behavior:'auto',block:'nearest'}); $('textarea',editor)?.focus();
+}
+window.addEventListener('beforeunload',event=>{if(S.dirty){event.preventDefault();event.returnValue='';}});
+async function bootstrap() {
+ $('#connection').textContent='Loading workspace…';
+ const keys=['overview','catalog','research','manuscript'];
+ await Promise.all(keys.map(async key=>{try{S[key]=await api(key);S.loaded[key]=true;delete S.errors[key];}catch(error){S.errors[key]=error.message;}}));
+ normalize();
+ const failures=Object.entries(S.errors); const errorNode=$('#bootstrap-errors');errorNode.hidden=!failures.length;
+ errorNode.innerHTML=failures.length?`<div class="empty error"><strong>Some workspace data could not be loaded.</strong><ul>${failures.map(([k,v])=>`<li>${esc(label(k))}: ${esc(v)}</li>`).join('')}</ul><button id="retry-bootstrap" type="button">Retry connection</button></div>`:'';
+ $('#retry-bootstrap')?.addEventListener('click',()=>{if(S.dirty){notify('Save or discard chapter edits before reloading.',true);return;}bootstrap();});
+ $('#connection').textContent=failures.length?'Partial connection · see details':'Workspace connected';
+ const renderers=[renderDashboard,renderLibrary,renderResearch,renderManuscript,renderDesignStudio,renderScorecards,renderExports,renderPublishing,renderSettings];
+ renderers.forEach((render,i)=>{try{render();}catch(error){panel(sections[i],empty(`Unable to render this section: ${error.message}`));}});
+ switchSection(location.hash.slice(1));
+}
+const studioConcepts = {concept_a:'Black & Gold Executive',concept_b:'Bold Editorial',concept_c:'Modern Wealth Intelligence'};
+const coverAssets = ['01_front_cover','02_paperback_wrap','03_hardcover_concept','04_ebook_cover','05_3d_hardcover_mockup','06_paperback_mockup','07_ereader_mockup','08_phone_tablet_mockup','09_series_collection_mockup','10_social_promo_pack'];
+const pageTemplates = ['chapter_opener','executive_summary','opportunity_overview','step_by_step_sop','expert_insights','financial_breakdown','case_study_walkthrough','comparison_table','research_exhibit','legal_compliance_notes','resource_directory','action_checklist','thirty_day_plan','scorecard_page'];
+const fallbackDiagrams = ['diag-01-end-to-end-workflow','diag-02-opportunity-funnel','diag-03-profit-waterfall','diag-04-startup-costs','diag-05-compliance-decision-tree','diag-06-team-architecture','diag-07-scenario-comparison','diag-08-30-day-roadmap'];
+S.clean = 0; S.template = pageTemplates[0]; S.previewChapter = 1; S.viewport = 'desktop'; S.guides = false; S.reviewCache = {}; S.reviewDrafts = {};
+function conceptOptions(current) { return Object.entries(studioConcepts).map(([id,title])=>`<option value="${id}" ${id===current?'selected':''}>${esc(label(id))} · ${esc(title)}</option>`).join(''); }
+function openSvgModal(url,title) { openSVG(url,title); }
+function artwork(url,title,extra='') {
+ return `<figure class="asset ${esc(extra)}"><button type="button" data-art-url="${esc(url)}" data-art-title="${esc(title)}" aria-label="Zoom: ${esc(title)}"><img loading="lazy" src="${esc(url)}" alt="${esc(title)}"></button><figcaption>${esc(title)} · Select to zoom</figcaption></figure>`;
+}
+document.addEventListener('click',event=>{const button=event.target.closest('[data-art-url]');if(button)openSvgModal(button.dataset.artUrl,button.dataset.artTitle);});
+function graphicReview(id,concept) {
+ const key=concept+':'+id;
+ const stored=S.overview.graphics_reviews || volume().graphics_reviews || {};
+ return S.reviewCache[key] || stored.reviews?.[id]?.[concept] || {status:'pending_review',notes:''};
+}
+function reviewControls(id,concept) {
+ const review=graphicReview(id,concept), key=concept+':'+id;
+ return `<div class="review" data-review-id="${esc(id)}" data-review-concept="${esc(concept)}"><div class="review-status" role="status">${badge(label(review.status))}</div><label>Reviewer notes for ${esc(label(id))}<textarea data-review-notes>${esc(S.reviewDrafts[key] ?? review.notes ?? '')}</textarea></label><div class="actions">${[['approved','Approve'],['changes_requested','Request Changes'],['rejected','Reject']].map(([status,title])=>`<button type="button" data-review-action="${status}">${title}</button>`).join('')}</div></div>`;
+}
+function wireReviews(root) {
+ $$('[data-review-id]',root).forEach(node=>{
+  const id=node.dataset.reviewId, concept=node.dataset.reviewConcept, key=concept+':'+id;
+  $('[data-review-notes]',node).addEventListener('input',event=>S.reviewDrafts[key]=event.target.value);
+  $$('[data-review-action]',node).forEach(button=>button.addEventListener('click',()=>busy(button,async()=>{
+   const controls=$$('button,textarea',node); controls.forEach(control=>control.disabled=true);
+   try {
+    const result=await api('graphics/review',{graphic_id:id,concept_id:concept,status:button.dataset.reviewAction,notes:$('[data-review-notes]',node).value});
+    const review=result.review || result;
+    if(!review.status)throw new Error('The review response did not confirm a status.');
+    S.reviewCache[key]=review; delete S.reviewDrafts[key];
+    $('.review-status',node).innerHTML=badge(label(review.status));
+    $('[data-review-notes]',node).value=review.notes ?? '';
+    notify('Single graphic review saved. No rebuild or owner design approval was triggered.');
+   } finally {controls.forEach(control=>control.disabled=false);}
+  })));
+ });
+}
+function renderDesignStudio() {
+ if(!studioConcepts[S.concept])S.concept='concept_a';
+ panel('design-studio',`<div class="hero" role="note"><div class="eyebrow">Owner Design Approval Gate</div><h2>Awaiting Owner Approval</h2><p>Awaiting Owner Approval — Previewing concepts never auto-approves a visual direction</p><p>Graphic approval is asset-level feedback only. Public deployment and paid sales remain separate owner decisions.</p></div><div class="toolbar"><label>Active preview concept<select id="design-concept">${conceptOptions(S.concept)}</select></label><label class="check"><input id="marketplace-clean" type="checkbox" ${S.clean?'checked':''}>Marketplace-Clean Colophon</label></div><h2 class="spaced">3-Concept Comparison Strip</h2><div id="concept-comparison" class="three"></div><h2 class="spaced">10 Cover &amp; Mockup Deliverables</h2><div id="cover-gallery" class="grid"></div><div class="card spaced"><h2>Live Interactive Interior Page Previewer</h2><div class="toolbar"><label>Section-5 template<select id="interior-template">${pageTemplates.map(t=>`<option value="${t}" ${t===S.template?'selected':''}>${esc(label(t))}</option>`).join('')}</select></label><label>Chapter<select id="interior-chapter">${Array.from({length:12},(_,i)=>`<option value="${i+1}" ${i+1===S.previewChapter?'selected':''}>Chapter ${i+1}</option>`).join('')}</select></label><label class="check"><input id="interior-guides" type="checkbox" ${S.guides?'checked':''}>6×9 Trim/Bleed/Gutter Guide</label></div><div class="actions" role="group" aria-label="Viewport Mode">${['desktop','tablet','print'].map(mode=>`<button type="button" data-viewport="${mode}" aria-pressed="${mode===S.viewport}">${label(mode)}</button>`).join('')}</div><p id="interior-status" class="muted" role="status"></p><div class="preview-shell"><iframe id="interior-preview-frame" title="Interactive interior page preview" sandbox="allow-same-origin"></iframe></div></div><h2 class="spaced">8 Structured Vector Diagrams Inspector</h2><div id="diagram-gallery" class="grid"></div>`);
+ const refresh=()=>{drawDesignAssets();updateInteriorPreview();};
+ $('#design-concept').addEventListener('change',event=>{S.concept=event.target.value;refresh();renderScorecards();renderExports();});
+ $('#marketplace-clean').addEventListener('change',event=>{S.clean=event.target.checked?1:0;drawDesignAssets();});
+ $('#interior-template').addEventListener('change',event=>{S.template=event.target.value;updateInteriorPreview();});
+ $('#interior-chapter').addEventListener('change',event=>{S.previewChapter=Number(event.target.value);updateInteriorPreview();});
+ $('#interior-guides').addEventListener('change',event=>{S.guides=event.target.checked;updateInteriorPreview();});
+ $$('[data-viewport]').forEach(button=>button.addEventListener('click',()=>{S.viewport=button.dataset.viewport;updateInteriorPreview();}));
+ $('#interior-preview-frame').addEventListener('load',()=>{
+  const frame=$('#interior-preview-frame');
+  try {const text=frame.contentDocument?.body?.textContent || '';$('#interior-status').textContent=/^\s*\{"(?:error|detail)"/.test(text)?'Preview endpoint returned an error.':'Preview loaded. Inspect layout and guide geometry before approval.';} catch {$('#interior-status').textContent='Preview loaded; inspect the page below.';}
+ });
+ refresh();
+}
+function drawDesignAssets() {
+ const concept=S.concept, clean=S.clean;
+ $('#concept-comparison').innerHTML=Object.entries(studioConcepts).map(([id,title])=>`<article class="card">${artwork(endpoint('svg/mockup',{concept:id,asset:'01_front_cover',clean}),title,'concept')}<button type="button" data-select-concept="${id}" aria-pressed="${id===concept}">Preview ${esc(label(id))}</button></article>`).join('');
+ $$('[data-select-concept]').forEach(button=>button.addEventListener('click',()=>{S.concept=button.dataset.selectConcept;$('#design-concept').value=S.concept;drawDesignAssets();updateInteriorPreview();renderScorecards();renderExports();}));
+ $('#cover-gallery').innerHTML=coverAssets.map(asset=>`<article class="card">${artwork(endpoint('svg/mockup',{concept,asset,clean}),label(asset))}${reviewControls(asset,concept)}</article>`).join('');
+ const records=firstList(S.manuscript.diagrams,volume().diagrams_data?.diagrams,volume().diagrams?.diagrams,volume().diagrams,S.overview.diagrams?.diagrams,S.overview.diagrams);
+ const ids=records.map(row=>typeof row==='string'?row:row.diagram_id || row.id).filter(id=>/^diag-0[1-8]-/.test(id));
+ const diagrams=Array.from({length:8},(_,i)=>ids.find(id=>id.startsWith(`diag-0${i+1}-`)) || fallbackDiagrams[i]);
+ $('#diagram-gallery').innerHTML=diagrams.map(id=>`<article class="card">${artwork(endpoint('svg/diagram',{concept,diagram:id}),label(id),'diagram')}${reviewControls(id,concept)}</article>`).join('');
+ wireReviews($('#cover-gallery'));wireReviews($('#diagram-gallery'));
+ $$('#design-studio-content img').forEach(img=>img.addEventListener('error',()=>{const caption=img.closest('figure').querySelector('figcaption');caption.textContent=img.alt+' — preview unavailable; check the API response.';},{once:true}));
+}
+function updateInteriorPreview() {
+ const frame=$('#interior-preview-frame');
+ frame.style.width=({desktop:'1100px',tablet:'768px',print:'600px'})[S.viewport];
+ frame.src=endpoint('preview-page',{concept:S.concept,template:S.template,chapter:S.previewChapter,viewport:S.viewport,guides:S.guides?1:0});
+ frame.title=`${label(S.template)} · Chapter ${S.previewChapter} · ${S.viewport}`;
+ $('#interior-status').textContent='Loading interior preview…';
+ $$('[data-viewport]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.viewport===S.viewport)));
+}
+function renderScorecards() {
+ const rows=S.books.map((book,index)=>({book,card:book.scorecard || book,index})).sort((a,b)=>(b.card.total_score ?? -1)-(a.card.total_score ?? -1));
+ if(!rows.length){panel('scorecards',empty('No ranked candidates returned by the catalog. Retry the workspace connection.'));return;}
+ if(!rows.some(row=>String(row.card.candidate_number ?? row.book.candidate_number ?? row.index+1)===String(S.scoreCandidate)))S.scoreCandidate=rows[0].card.candidate_number ?? rows[0].book.candidate_number ?? rows[0].index+1;
+ panel('scorecards',`<div class="notice">Money-to-Manpower Score (0–100) · Editorial comparison, not verified earnings or an investment recommendation. A new operator can earn nothing or lose capital.</div><div class="toolbar"><label>Ranked candidate · ${rows.length} available<select id="score-candidate">${rows.map(({book,card,index},rank)=>{const id=card.candidate_number ?? book.candidate_number ?? index+1;return `<option value="${esc(id)}" ${String(id)===String(S.scoreCandidate)?'selected':''}>#${rank+1} · ${esc(nameOf(book))} · ${esc(card.total_score ?? 'Not scored')}/100</option>`;}).join('')}</select></label><label>Scorecard preview concept<select id="score-concept">${conceptOptions(S.scoreConcept || S.concept)}</select></label></div><div id="score-explorer"></div>`);
+ const draw=()=>{
+  S.scoreCandidate=$('#score-candidate').value;S.scoreConcept=$('#score-concept').value;
+  const row=rows.find(({book,card,index})=>String(card.candidate_number ?? book.candidate_number ?? index+1)===S.scoreCandidate), c=row.card, economics=c.economics || {}, scenarios=c.scenarios || {};
+  const dimensions={revenue_potential:25,profit_margin_potential:25,team_efficiency:20,startup_accessibility:15,automation_potential:15};
+  const factors=Object.entries(dimensions).map(([key,max])=>({key,max,value:c.scores?.[key],note:c.score_rationale?.[key]}));
+  const valid=f=>typeof f.value==='number' && Number.isFinite(f.value) && f.value>=0 && f.value<=f.max;
+  const money=value=>typeof value==='number' && Number.isFinite(value)?new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(value):'Not supplied';
+  const scenarioRows=[['Conservative',scenarios.conservative],['Base',scenarios.base_case || scenarios.base],['Exceptional / scaled small team',scenarios.exceptional || scenarios.scaled_small_team]];
+  $('#score-explorer').innerHTML=`<div class="two"><div class="card"><h2>${esc(nameOf(row.book))}</h2>${artwork(endpoint('svg/scorecard',{concept:S.scoreConcept,candidate:S.scoreCandidate}),`${nameOf(row.book)} · Money-to-Manpower Score`,'concept')}<p><strong>${esc(c.total_score ?? 'Not supplied')} / 100</strong> · ${esc(c.tier_label || 'Unclassified')}</p><p>Uncertainty band: <strong>${esc(c.uncertainty_band || 'Not supplied')}</strong><br>${esc(c.evidence_confidence || 'Confidence not supplied')}</p><p class="muted">${esc(c.uncertainty_note || 'Editorial sensitivity band, not a statistical confidence interval.')}</p></div><div class="card"><h2>5-factor breakdown</h2><p class="muted">Weighted score contributions. All bars share a 0–25 point scale; each factor’s cap is labeled.</p>${factors.map(f=>`<div class="field"><div id="factor-label-${f.key}">${esc(label(f.key))} · <strong>${valid(f)?esc(f.value):'Not supplied'} / ${f.max}</strong></div><div tabindex="0" class="factor-hit" aria-labelledby="factor-label-${f.key}" aria-describedby="factor-note-${f.key}"><div class="factor-track" aria-hidden="true"><span style="width:${valid(f)?f.value/25*100:0}%"></span></div><p class="factor-tip" id="factor-note-${f.key}">${esc(f.note || 'Rationale not supplied.')}</p></div></div>`).join('')}<details><summary>Accessible factor data table</summary><div class="table-wrap"><table><caption>Weighted points contributing to the 100-point total</caption><thead><tr><th scope="col">Factor</th><th scope="col">Points</th><th scope="col">Maximum</th></tr></thead><tbody>${factors.map(f=>`<tr><th scope="row">${esc(label(f.key))}</th><td>${valid(f)?esc(f.value):'Not supplied'}</td><td>${f.max}</td></tr>`).join('')}</tbody></table></div></details></div></div><div class="card spaced"><h2>Net owner profit · illustrative annual scenarios</h2><div class="table-wrap"><table><caption>USD, before personal taxes and reinvestment. Exceptional denotes the supplied scaled scenario, not a promised outcome.</caption><thead><tr><th scope="col">Scenario</th><th scope="col">Gross revenue</th><th scope="col">Net owner profit</th><th scope="col">Full-time incl. owner</th><th scope="col">Contractors</th><th scope="col">Total people</th><th scope="col">Labor hours</th></tr></thead><tbody>${scenarioRows.map(([title,s])=>`<tr><th scope="row">${title}</th><td>${money(s?.annual_gross_revenue_usd)}</td><td>${money(s?.annual_owner_net_profit_usd)}</td><td>${esc(s?.full_time_including_owner ?? 'Not supplied')}</td><td>${esc(s?.contractors ?? 'Not supplied')}</td><td>${esc(s?.total_people ?? 'Not supplied')}</td><td>${esc(s?.labor_hours_per_week != null?s.labor_hours_per_week+' / week':'Not supplied')}</td></tr>`).join('')}</tbody></table></div><p class="muted">${esc(economics.cost_basis || 'Operating assumptions must be verified independently.')}</p><details class="details"><summary>Scenario assumptions</summary>${details(Object.fromEntries(scenarioRows.map(([title,s])=>[title,s?.assumption || 'Not supplied'])))}</details></div><div class="two spaced"><div class="card details"><h2>Labor, headcount &amp; economics</h2>${details(economics)}<p>Owner labor hours: ${esc(economics.owner_hours_per_week != null?economics.owner_hours_per_week+' / week':'Not supplied — headcount does not establish hours or FTEs.')}</p></div><div class="card details"><h2>Risks &amp; automation</h2>${details({automation_levers:c.automation_levers,key_risks:c.key_risks,regulatory_notes:c.regulatory_notes})}</div></div>`;
+ };
+ $('#score-candidate').addEventListener('change',draw);$('#score-concept').addEventListener('change',draw);draw();
+}
+const exportFormats = [['digital_pdf','Executive Digital PDF','8.5×11 digital reading edition'],['print_6x9_pdf','6×9 Print PDF','Trim, bleed and gutter proof required'],['epub','EPUB 3.0','Reflowable Apple Books / Kobo preview'],['workbook_pdf','Companion Workbook PDF','Operator worksheets'],['bundle_zip','Complete Bundle ZIP','Concept preview package']];
+function renderExports() {
+ panel('exports',`<div class="notice">Preview files only. Downloads, export builds and automated QA never authorize publication or paid sales.</div><div class="card spaced"><h2>Format Matrix &amp; 1-Click Concept Preview Downloads</h2><div class="table-wrap"><table><caption>Three visual directions × five delivery formats</caption><thead><tr><th scope="col">Format</th>${Object.entries(studioConcepts).map(([id,title])=>`<th scope="col">${esc(label(id))}<br>${esc(title)}</th>`).join('')}</tr></thead><tbody>${exportFormats.map(([fmt,title,note])=>`<tr><th scope="row">${title}<br><small>${note}</small></th>${Object.keys(studioConcepts).map(concept=>`<td><a class="button" href="${esc(endpoint('download',{concept,fmt}))}" download aria-label="Download ${title}, ${esc(label(concept))}">Download ↓</a></td>`).join('')}</tr>`).join('')}</tbody></table></div><div class="toolbar"><label>Concept to rebuild<select id="export-concept">${conceptOptions(S.exportConcept || S.concept)}</select></label><button id="rebuild-preview" type="button" class="primary">Rebuild Concept Preview</button></div><p id="export-status" role="status" class="muted">Rebuild only when you want to regenerate the selected concept’s preview files.</p></div><div class="card spaced"><h2>Live Automated QA Suite Runner</h2><p>Checks SVG XML, PDF /TrimBox, EPUB 3.0, third-party imagery restrictions, and profanity/trademark policy. Automated checks do not replace visual proofing or release approval.</p><button id="run-qa" type="button">Run live automated QA</button><div id="qa-results" class="spaced" aria-live="polite"></div></div>`);
+ $('#export-concept').addEventListener('change',event=>S.exportConcept=event.target.value);
+ $('#rebuild-preview').addEventListener('click',event=>busy(event.currentTarget,async()=>{
+  const concept=$('#export-concept').value;$('#export-status').textContent='Building '+studioConcepts[concept]+'…';
+  try {const result=await api('export',{concept,concept_id:concept});S.qa=null;drawQaResults();$('#export-status').textContent='Concept preview rebuild completed. Run QA again on the regenerated output.';notify('Concept preview rebuilt; approval gates were not changed.');if(result.warnings?.length)notify(result.warnings.join(' '),true);}
+  catch(error){$('#export-status').textContent='Build failed: '+error.message;throw error;}
+ }));
+ $('#run-qa').addEventListener('click',event=>busy(event.currentTarget,async()=>{
+  $('#qa-results').innerHTML='<p class="loading">Running live QA across all concepts…</p>';
+  try {S.qa=await api(endpoint('qa',{refresh:1}));S.qaTime=new Date().toLocaleString();drawQaResults();}
+  catch(error){S.qa=null;$('#qa-results').innerHTML=empty('QA request failed: '+error.message);throw error;}
+ }));drawQaResults();
+}
+function drawQaResults() {
+ const node=$('#qa-results');if(!node)return;
+ const q=S.qa?.qa_report || S.qa?.qa || S.qa;
+ if(!q){node.innerHTML=empty('Not run in this session. No passing checks are assumed.');return;}
+ const status=value=>value===true?'PASS':value===false?'FAIL':'NOT REPORTED';
+ const reports=q.concept_exports || {}, rows=Object.entries(reports).flatMap(([concept,modes])=>Object.entries(modes).map(([fmt,result])=>({concept,fmt,result})));
+ const issueList=firstList(q.issues).map(issue=>typeof issue==='string'?issue:JSON.stringify(issue));
+ const svgPass=q.passed_svg_count ?? q.svg_pass_count ?? (q.overall_pass===true?q.checked_svg_count:null);
+ const printRows=rows.filter(row=>row.fmt==='print_6x9_pdf'), epubRows=rows.filter(row=>row.fmt==='epub');
+ const groupStatus=group=>group.length===3?status(group.every(row=>row.result.passed===true)): 'INCOMPLETE';
+ const policyIssues=issueList.filter(issue=>/profan|prohibited|trademark|third.party|raster/i.test(issue));
+ node.innerHTML=`<p>${badge(status(q.overall_pass))} · Last run ${esc(S.qaTime || 'Time not reported')}</p><div class="table-wrap"><table><caption>Live structural results; unavailable counts remain unknown</caption><thead><tr><th scope="col">Check</th><th scope="col">Result</th><th scope="col">Scope</th></tr></thead><tbody><tr><th scope="row">SVG XML validation</th><td>${esc(svgPass ?? 'Pass count not reported')} passed / ${esc(q.checked_svg_count ?? 'Unknown')} checked</td><td>57 expected across three concepts</td></tr><tr><th scope="row">PDF /TrimBox check</th><td>${groupStatus(printRows)}</td><td>6×9 print structure, all concepts; not press certification</td></tr><tr><th scope="row">EPUB 3.0 / zero-third-party-frame policy</th><td>${groupStatus(epubRows)}</td><td>Package XML and prohibited imagery checks; inspect report scope below</td></tr><tr><th scope="row">Profanity / trademark policy</th><td>${policyIssues.length?'FAIL':q.overall_pass===true?'PASS':'NOT INDEPENDENTLY CONFIRMED'}</td><td>Restricted symbols and cover profanity checks, not legal trademark clearance</td></tr></tbody></table></div>${issueList.length?`<div class="notice error"><strong>Issues requiring attention</strong><ul>${issueList.map(issue=>`<li>${esc(issue)}</li>`).join('')}</ul></div>`:''}<div class="grid spaced">${rows.map(({concept,fmt,result})=>`<div class="card details"><h3>${esc(label(concept))} · ${esc(label(fmt))}</h3>${badge(status(result.passed))}${details(result)}</div>`).join('')}</div><details class="details"><summary>Complete QA report and validation boundaries</summary>${details(q)}</details>`;
+}
+function renderPublishing() {
+ const meta=volume().metadata || S.overview.metadata || {}, gates=brand().gates || S.overview.gates || {};
+ const supplied=firstList(meta.positioning_alternatives,meta.title_alternatives,volume().positioning_alternatives,S.overview.positioning_alternatives);
+ const alternatives=supplied.length?supplied:[
+  {title:meta.title || 'Heir Hunting',subtitle:meta.subtitle || 'The Money-to-Manpower Playbook for Unclaimed Estate Recovery',positioning:'Current working positioning · specialist operator playbook'},
+  {title:'The Estate Recovery Playbook',subtitle:'Research, Compliance, and Small-Team Operations for Heir Hunting',positioning:'Proposed alternative · process-led and marketplace-oriented'},
+  {title:'Heir Hunting: The Evidence-First Operator',subtitle:'Build a Disciplined Estate Research Practice Without the Earnings Hype',positioning:'Proposed alternative · diligence and credibility first'}
+ ];
+ const channelData=S.overview.distribution_channels || volume().distribution_channels || {};
+ const channels=[['direct_club','Direct Club Staging','Private staging only. Confirm fulfillment, support and checkout policies before release.'],['kdp','KDP Digital / 6×9 Print','Proof the cover and interior; confirm bleed, trim, gutter, metadata and platform acceptance.'],['epub','Apple Books / Kobo EPUB 3','Run EPUBCheck and proof in target readers; confirm accessibility and distribution metadata.'],['workbook','Companion Workbook','Review worksheet completeness, writing space and consistency with the final manuscript.']];
+ panel('publishing',`<div class="card"><h2>Volume 001 Title/Subtitle Positioning Alternatives</h2><p class="muted">Comparison only. None of these options is selected or approved by viewing this page.</p><div class="three">${alternatives.map((item,index)=>`<article class="card"><div class="eyebrow">Positioning ${String(index+1).padStart(2,'0')}</div><h3 class="spaced">${esc(typeof item==='string'?item:item.title || item.name || 'Untitled alternative')}</h3><p>${esc(item.subtitle || 'Subtitle not supplied')}</p><p class="muted">${esc(item.positioning || item.rationale || item.angle || 'Editorial alternative — owner review required')}</p></article>`).join('')}</div></div><div class="card spaced"><h2>Owner Approval Gates</h2><div class="notice">Previewing, downloading, rebuilding, and reviewing graphics never grants release authorization.</div><div class="table-wrap spaced"><table><caption>Recorded governance state · no gate-changing actions on this page</caption><thead><tr><th scope="col">Gate</th><th scope="col">Recorded status</th><th scope="col">Release implication</th></tr></thead><tbody><tr><th scope="row">design_approval_status</th><td>${esc(gates.design_approval_status || 'awaiting_owner_approval')}</td><td>${esc(gates.approved_concept_id || 'No concept approved')}</td></tr><tr><th scope="row">public_deploy_approved</th><td>${gates.public_deploy_approved===true?'true':'false'}</td><td>${gates.public_deploy_approved===true?'Owner authorization recorded; deployment not performed here.':'Public deployment blocked.'}</td></tr><tr><th scope="row">paid_sales_approved</th><td>${gates.paid_sales_approved===true?'true':'false'}</td><td>${gates.paid_sales_approved===true?'Owner authorization recorded; checkout not enabled here.':'Paid sales blocked.'}</td></tr></tbody></table></div>${!S.loaded.overview?'<p class="error">Overview unavailable. Gates default to blocked; recorded approval could not be verified.</p>':''}</div><h2 class="spaced">Distribution Channel Readiness</h2><div class="grid">${channels.map(([id,title,note])=>`<article class="card details"><h3>${title}</h3>${badge(channelData[id]?.status || 'Readiness not verified')}<p>${note}</p>${channelData[id]?details(channelData[id]):'<p class="muted">No channel acceptance or release confirmation has been supplied.</p>'}<a href="#exports">Inspect previews &amp; QA →</a></article>`).join('')}</div>`);
+}
+const pricingTiers = [
+ ['digital_playbook','Digital Playbook Edition','$19–$39',29],
+ ['operator_bundle','Print + Companion Workbook Bundle','$49–$99',69],
+ ['founder_collection','Multi-Volume Playbook Collection','$199–$399',249],
+ ['club_membership','Club Membership','$19–$49/mo',39]
+];
+function renderSettings() {
+ const pricing=brand().pricing_hypotheses || {}, audit=S.overview.audit || S.overview.existing_work_audit || S.overview.audit_summary || {}, backup=audit.backup_details || {};
+ panel('settings',`<div class="notice">Pricing hypotheses to test — not validated market prices, offers, or enabled checkout. Saving does not authorize paid sales.</div><form id="pricing-form" class="card spaced"><h2>Configurable Pricing Hypothesis Editor</h2><div class="grid">${pricingTiers.map(([id,title,range,price])=>{const tier=pricing[id] || {};return `<fieldset class="card" data-price-tier="${id}"><legend>${esc(tier.label || title)}</legend><p>${badge('Hypothesis to test')} ${badge('Checkout disabled')}</p><label>Test range<input name="range_label" required maxlength="100" value="${esc(tier.range_label || range)}"></label><label>Test price · USD${id==='club_membership'?' / month':''}<input name="test_price_usd" type="number" min="0" max="1000000" step="0.01" required value="${esc(tier.test_price_usd ?? price)}"></label><p class="muted">Baseline hypothesis: ${esc(range)}</p></fieldset>`;}).join('')}</div><div class="actions spaced"><button type="submit" class="primary">Save pricing hypotheses</button><span id="pricing-status" role="status" class="muted">Only pricing fields will be submitted.</span></div><p class="muted">The settings service enforces the owner design gate. Saving settings may return the design status to awaiting owner approval; it never approves a concept.</p></form><div class="two spaced"><div class="card details"><h2>Backup Policy</h2><p>Preserve a verified pre-modification archive before changing source content or regenerating publishing assets. This editor does not create or verify a backup.</p>${badge(audit.backup_verified===true?'Archive reported present; restore not tested':audit.backup_verified===false?'No backup verified':'Backup status not supplied')}<div class="spaced">${details(backup)}</div></div><div class="card details"><h2>Epistemic Policy</h2><p>Separate verified evidence from estimates, inferences, hypotheses, frameworks, and operator opinion. Financial projections are illustrative assumptions, not earnings promises.</p><p>Source availability is not reuse permission. Independently verify legal, rights, and compliance claims. Score uncertainty bands are editorial sensitivity ranges, not statistical intervals.</p>${details(brand().epistemic_policy || S.overview.epistemic_policy || {publication_rule:'Unresolved claims, rights and owner approval gates remain open checks.'})}</div></div><div class="card spaced"><h2>Workspace Navigation</h2><div class="actions"><a class="button" href="/site">Public site preview ↗</a><a class="button" href="/">Main application ↗</a></div><p class="muted">Opening a local preview does not approve public deployment.</p></div>`);
+ $('#pricing-form').addEventListener('input',()=>$('#pricing-status').textContent='Unsaved pricing hypotheses');
+ $('#pricing-form').addEventListener('submit',event=>{event.preventDefault();const form=event.currentTarget;busy($('button[type=submit]',form),async()=>{
+  const pricing_hypotheses={};
+  $$('[data-price-tier]',form).forEach(field=>{
+   const price=Number($('[name=test_price_usd]',field).value), range=$('[name=range_label]',field).value.trim();
+   if(!range || !Number.isFinite(price) || price<0)throw new Error('Every tier needs a range label and a nonnegative finite test price.');
+   pricing_hypotheses[field.dataset.priceTier]={range_label:range,test_price_usd:price};
+  });
+  const controls=$$('input',form);controls.forEach(input=>input.disabled=true);
+  $('#pricing-status').textContent='Saving pricing hypotheses…';
+  try {
+   const result=await api('settings',{pricing_hypotheses});
+   const b=brand();b.pricing_hypotheses=result.pricing_hypotheses || {...pricing,...pricing_hypotheses};if(result.gates)b.gates=result.gates;
+   S.overview.brand_system=b;
+   if(result.rejected?.length || result.rejected_fields?.length)throw new Error('Some settings were rejected: '+(result.rejected || result.rejected_fields).join(', '));
+   $('#pricing-status').textContent='Pricing hypotheses saved. Checkout remains disabled.';
+   renderPublishing();renderDashboard();notify('Pricing hypotheses saved; no sales or deployment permission was granted.');
+  } catch(error){$('#pricing-status').textContent='Save not confirmed: '+error.message;throw error;}
+  finally {controls.forEach(input=>input.disabled=false);}
+ });});
+}
+bootstrap();
+</script>
+</body>
+</html>

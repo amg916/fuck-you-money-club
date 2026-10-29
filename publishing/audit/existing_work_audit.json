@@ -1,0 +1,401 @@
+{
+  "generated_at": "2026-10-29T23:18:57+00:00",
+  "root_dir": "/Users/macbookpro/.gemini/antigravity/scratch/yt-transcript-report",
+  "transcripts_dir": "/Users/macbookpro/.gemini/antigravity/scratch/yt-transcript-report/data/transcripts",
+  "ebook_dir": "/Users/macbookpro/.gemini/antigravity/scratch/yt-transcript-report/exports/heir-hunting-ebook",
+  "ebook_dir_exists": true,
+  "total_files": 189,
+  "ok_files": 189,
+  "failed_files": 0,
+  "raw_segment_words": 812038,
+  "total_duration_seconds": 287809,
+  "total_hours": 79.95,
+  "abridged_words_benchmark": 371246,
+  "extracted_pro_tips_benchmark": 1806,
+  "transcript_corpus": {
+    "transcripts_dir": "/Users/macbookpro/.gemini/antigravity/scratch/yt-transcript-report/data/transcripts",
+    "transcripts_dir_exists": true,
+    "total_files": 189,
+    "ok_files": 189,
+    "failed_files": 0,
+    "unreadable_files": 0,
+    "unreadable_file_names": [],
+    "status_counts": {
+      "ok": 189
+    },
+    "total_segments": 116183,
+    "raw_segment_words": 812038,
+    "total_duration_seconds": 287809,
+    "total_hours": 79.95,
+    "distinct_channels": 59,
+    "top_channels": [
+      {
+        "author": "FamilySearch",
+        "video_count": 17
+      },
+      {
+        "author": "BYU Library Family History Center",
+        "video_count": 16
+      },
+      {
+        "author": "Surplus Funds 101",
+        "video_count": 16
+      },
+      {
+        "author": "Courtney Fricke",
+        "video_count": 15
+      },
+      {
+        "author": "Probate Mastery",
+        "video_count": 10
+      },
+      {
+        "author": "Regrid",
+        "video_count": 10
+      },
+      {
+        "author": "Ancestry",
+        "video_count": 9
+      },
+      {
+        "author": "Money Making Juggernaut",
+        "video_count": 8
+      },
+      {
+        "author": "Five-minute genealogy",
+        "video_count": 6
+      },
+      {
+        "author": "REtipster",
+        "video_count": 6
+      },
+      {
+        "author": "Genealogy TV",
+        "video_count": 5
+      },
+      {
+        "author": "Logan Fullmer",
+        "video_count": 5
+      },
+      {
+        "author": "California State Controller's Office",
+        "video_count": 4
+      },
+      {
+        "author": "ohiocommerce",
+        "video_count": 4
+      },
+      {
+        "author": "Ancestry Aimee",
+        "video_count": 3
+      }
+    ]
+  },
+  "assets": {
+    "heir-hunting-digital-8.5x11.pdf": {
+      "name": "heir-hunting-digital-8.5x11.pdf",
+      "path": "/Users/macbookpro/.gemini/antigravity/scratch/yt-transcript-report/exports/heir-hunting-ebook/heir-hunting-digital-8.5x11.pdf",
+      "exists": true,
+      "kind": "pdf",
+      "size_bytes": 5139278,
+      "size_kb": 5018.83,
+      "modified": "2026-10-28T19:16:22+00:00",
+      "page_count": 519,
+      "pdf_header": "%PDF-1.4",
+      "notes": "519 page object(s) detected via /Type /Page scan."
+    },
+    "heir-hunting-kdp-print-6x9.pdf": {
+      "name": "heir-hunting-kdp-print-6x9.pdf",
+      "path": "/Users/macbookpro/.gemini/antigravity/scratch/yt-transcript-report/exports/heir-hunting-ebook/heir-hunting-kdp-print-6x9.pdf",
+      "exists": true,
+      "kind": "pdf",
+      "size_bytes": 5838755,
+      "size_kb": 5701.91,
+      "modified": "2026-10-28T19:16:23+00:00",
+      "page_count": 838,
+      "pdf_header": "%PDF-1.4",
+      "notes": "838 page object(s) detected via /Type /Page scan."
+    },
+    "heir-hunting-action-workbook.pdf": {
+      "name": "heir-hunting-action-workbook.pdf",
+      "path": "/Users/macbookpro/.gemini/antigravity/scratch/yt-transcript-report/exports/heir-hunting-ebook/heir-hunting-action-workbook.pdf",
+      "exists": true,
+      "kind": "pdf",
+      "size_bytes": 5349049,
+      "size_kb": 5223.68,
+      "modified": "2026-10-28T19:16:23+00:00",
+      "page_count": 559,
+      "pdf_header": "%PDF-1.4",
+      "notes": "559 page object(s) detected via /Type /Page scan."
+    },
+    "heir-hunting-kindle.epub": {
+      "name": "heir-hunting-kindle.epub",
+      "path": "/Users/macbookpro/.gemini/antigravity/scratch/yt-transcript-report/exports/heir-hunting-ebook/heir-hunting-kindle.epub",
+      "exists": true,
+      "kind": "epub",
+      "size_bytes": 692678,
+      "size_kb": 676.44,
+      "modified": "2026-10-28T19:16:23+00:00",
+      "archive_valid": true,
+      "entry_count": 38,
+      "entry_names": [
+        "mimetype",
+        "META-INF/container.xml",
+        "OEBPS/styles.css",
+        "OEBPS/images/cover.svg",
+        "OEBPS/cover.xhtml",
+        "OEBPS/chapter_1.xhtml",
+        "OEBPS/chapter_2.xhtml",
+        "OEBPS/chapter_3.xhtml",
+        "OEBPS/chapter_4.xhtml",
+        "OEBPS/chapter_5.xhtml",
+        "OEBPS/images/exhibit_01.jpg",
+        "OEBPS/images/exhibit_01.svg",
+        "OEBPS/images/exhibit_02.jpg",
+        "OEBPS/images/exhibit_02.svg",
+        "OEBPS/images/exhibit_03.jpg",
+        "OEBPS/images/exhibit_03.svg",
+        "OEBPS/images/exhibit_04.jpg",
+        "OEBPS/images/exhibit_04.svg",
+        "OEBPS/images/exhibit_05.jpg",
+        "OEBPS/images/exhibit_05.svg",
+        "OEBPS/images/exhibit_06.jpg",
+        "OEBPS/images/exhibit_06.svg",
+        "OEBPS/images/exhibit_07.jpg",
+        "OEBPS/images/exhibit_07.svg",
+        "OEBPS/images/exhibit_08.jpg",
+        "OEBPS/images/exhibit_08.svg",
+        "OEBPS/images/exhibit_09.jpg",
+        "OEBPS/images/exhibit_09.svg",
+        "OEBPS/images/exhibit_10.jpg",
+        "OEBPS/images/exhibit_10.svg"
+      ],
+      "corrupt_entry": null,
+      "archive_integrity_ok": true,
+      "has_mimetype_entry": true,
+      "has_container_xml": true,
+      "notes": "Archive opens cleanly with 38 entries."
+    },
+    "heir-hunting-amazon-etsy-ebay-bundle.zip": {
+      "name": "heir-hunting-amazon-etsy-ebay-bundle.zip",
+      "path": "/Users/macbookpro/.gemini/antigravity/scratch/yt-transcript-report/exports/heir-hunting-ebook/heir-hunting-amazon-etsy-ebay-bundle.zip",
+      "exists": true,
+      "kind": "zip",
+      "size_bytes": 5871893,
+      "size_kb": 5734.27,
+      "modified": "2026-10-28T19:16:25+00:00",
+      "archive_valid": true,
+      "entry_count": 43,
+      "entry_names": [
+        "01-Amazon-KDP/Amazon-Kindle-Edition.epub",
+        "01-Amazon-KDP/Amazon-KDP-Print-Paperback-6x9.pdf",
+        "01-Amazon-KDP/KDP-Cover-Art.svg",
+        "02-Etsy-Digital-Product-Bundle/Master-Illustrated-Ebook-8.5x11.pdf",
+        "02-Etsy-Digital-Product-Bundle/Printable-Action-Workbook-8.5x11.pdf",
+        "03-eBay-Listing-Bundle/Collector-Illustrated-Playbook-8.5x11.pdf",
+        "03-eBay-Listing-Bundle/ebay-listing-template.html",
+        "04-Source-Manuscript-and-Evidence/manuscript.md",
+        "04-Source-Manuscript-and-Evidence/evidence-exhibits.json",
+        "01-Amazon-KDP/amazon-kdp-listing-metadata.json",
+        "01-Amazon-KDP/amazon-kdp-listing-copy.txt",
+        "02-Etsy-Digital-Product-Bundle/etsy-listing-metadata.json",
+        "02-Etsy-Digital-Product-Bundle/etsy-listing-copy.txt",
+        "03-eBay-Listing-Bundle/ebay-listing-metadata.json",
+        "02-Etsy-Digital-Product-Bundle/Mockups/01-3d-book-cover-mockup.svg",
+        "02-Etsy-Digital-Product-Bundle/Mockups/02-inside-chapter-spread-preview.svg",
+        "02-Etsy-Digital-Product-Bundle/Mockups/03-visual-evidence-and-protips-preview.svg",
+        "02-Etsy-Digital-Product-Bundle/Mockups/04-printable-workbook-and-checklists-preview.svg",
+        "02-Etsy-Digital-Product-Bundle/Mockups/05-bundle-whats-included-overview.svg",
+        "04-Source-Manuscript-and-Evidence/images/exhibit_01.svg",
+        "04-Source-Manuscript-and-Evidence/images/exhibit_01.jpg",
+        "04-Source-Manuscript-and-Evidence/images/exhibit_02.svg",
+        "04-Source-Manuscript-and-Evidence/images/exhibit_02.jpg",
+        "04-Source-Manuscript-and-Evidence/images/exhibit_03.svg",
+        "04-Source-Manuscript-and-Evidence/images/exhibit_03.jpg",
+        "04-Source-Manuscript-and-Evidence/images/exhibit_04.svg",
+        "04-Source-Manuscript-and-Evidence/images/exhibit_04.jpg",
+        "04-Source-Manuscript-and-Evidence/images/exhibit_05.svg",
+        "04-Source-Manuscript-and-Evidence/images/exhibit_05.jpg",
+        "04-Source-Manuscript-and-Evidence/images/exhibit_06.svg"
+      ],
+      "corrupt_entry": null,
+      "archive_integrity_ok": true,
+      "notes": "Archive opens cleanly with 43 entries."
+    },
+    "heir-hunting-manuscript.md": {
+      "name": "heir-hunting-manuscript.md",
+      "path": "/Users/macbookpro/.gemini/antigravity/scratch/yt-transcript-report/exports/heir-hunting-ebook/heir-hunting-manuscript.md",
+      "exists": false,
+      "kind": "md",
+      "size_bytes": 0,
+      "notes": "Missing — asset has not been generated in this workspace."
+    },
+    "cover-3d.svg": {
+      "name": "cover-3d.svg",
+      "path": "/Users/macbookpro/.gemini/antigravity/scratch/yt-transcript-report/exports/heir-hunting-ebook/cover-3d.svg",
+      "exists": true,
+      "kind": "svg",
+      "size_bytes": 1058,
+      "size_kb": 1.03,
+      "modified": "2026-10-28T19:16:25+00:00",
+      "element_count": 13,
+      "has_raster_image": false,
+      "text_node_count": 9,
+      "notes": "Flat geometric vector cover: 13 elements, 9 text nodes, no raster content."
+    },
+    "exhibits/": {
+      "name": "exhibits/",
+      "path": "/Users/macbookpro/.gemini/antigravity/scratch/yt-transcript-report/exports/heir-hunting-ebook/exhibits",
+      "exists": true,
+      "kind": "directory",
+      "size_bytes": 548206,
+      "file_count": 24,
+      "image_count": 12,
+      "file_names": [
+        "exhibit-01-diagram.svg",
+        "exhibit-01.jpg",
+        "exhibit-02-diagram.svg",
+        "exhibit-02.jpg",
+        "exhibit-03-diagram.svg",
+        "exhibit-03.jpg",
+        "exhibit-04-diagram.svg",
+        "exhibit-04.jpg",
+        "exhibit-05-diagram.svg",
+        "exhibit-05.jpg",
+        "exhibit-06-diagram.svg",
+        "exhibit-06.jpg",
+        "exhibit-07-diagram.svg",
+        "exhibit-07.jpg",
+        "exhibit-08-diagram.svg",
+        "exhibit-08.jpg",
+        "exhibit-09-diagram.svg",
+        "exhibit-09.jpg",
+        "exhibit-10-diagram.svg",
+        "exhibit-10.jpg",
+        "exhibit-11-diagram.svg",
+        "exhibit-11.jpg",
+        "exhibit-12-diagram.svg",
+        "exhibit-12.jpg"
+      ],
+      "third_party_media": true,
+      "notes": "Contains 12 bitmap exhibit(s) sourced from third-party video frames."
+    }
+  },
+  "missing_assets": [
+    "heir-hunting-manuscript.md"
+  ],
+  "invalid_archives": [],
+  "categorized_summary": {
+    "reusable_foundation": [
+      {
+        "asset": "189 verified YouTube transcripts",
+        "path": "data/transcripts/*.json",
+        "evidence": "189 JSON files on disk, 189 with status=ok, 812,038 raw segment words, 79.95 hours of source audio across 59 channels.",
+        "verdict": "reuse_as_is",
+        "rationale": "Primary research substrate; already normalized and deduplicated."
+      },
+      {
+        "asset": "[HH:MM:SS] timestamp deep-link index",
+        "path": "data/transcripts/*.json -> segments[].start",
+        "evidence": "116,183 timed segments provide second-accurate &t= deep links for every claim.",
+        "verdict": "reuse_as_is",
+        "rationale": "Citation backbone — every manual assertion stays traceable."
+      },
+      {
+        "asset": "ProTip & Finite-Detail extraction engine",
+        "path": "src/abridge_engine.py",
+        "evidence": "Produced the 371,246-word abridged layer and 1,806 scored pro tips benchmark.",
+        "verdict": "reuse_as_is",
+        "rationale": "Deterministic, stdlib-only, already tuned to this corpus."
+      },
+      {
+        "asset": "Topic Discovery engine",
+        "path": "src/topic_discovery.py",
+        "evidence": "Zero-question topic discovery already proven against the corpus.",
+        "verdict": "reuse_as_is",
+        "rationale": "Feeds the 8-topic research taxonomy without manual curation."
+      },
+      {
+        "asset": "Local stdlib PDF/EPUB container writers",
+        "path": "exports/heir-hunting-ebook/ (writers)",
+        "evidence": "digital PDF=519 pages, print PDF=838 pages, EPUB container valid=True, bundle ZIP valid=True — containers open cleanly.",
+        "verdict": "reuse_as_is",
+        "rationale": "Container generation is sound; only the typography inside needs work."
+      }
+    ],
+    "needs_improvement": [
+      {
+        "asset": "Companion workbook structure",
+        "path": "/Users/macbookpro/.gemini/antigravity/scratch/yt-transcript-report/exports/heir-hunting-ebook/heir-hunting-action-workbook.pdf",
+        "evidence": "559 page(s); content is raw transcript checklists rather than worksheets.",
+        "verdict": "improve",
+        "required_change": "Convert raw transcript checklists into 6 structured operator worksheets: (1) County Docket Sourcing Sheet, (2) Unclaimed Property Claim Tracker, (3) Kinship Chart & Proof-of-Heirship Builder, (4) Skip-Trace & Contact Log, (5) Fee Agreement / Escrow Checklist, (6) Jurisdiction Compliance Matrix."
+      },
+      {
+        "asset": "Marketplace listing copy",
+        "path": "/Users/macbookpro/.gemini/antigravity/scratch/yt-transcript-report/exports/heir-hunting-ebook/heir-hunting-amazon-etsy-ebay-bundle.zip",
+        "evidence": "Bundle holds 43 entries of listing copy carrying legacy imprint branding.",
+        "verdict": "improve",
+        "required_change": "Realign all Amazon KDP / Etsy / eBay copy to THE BIG MONEY PLAYBOOKS and THE FUCK YOU MONEY CLUB branding, with zero unverified earnings claims, zero income guarantees, and no implied professional licensure."
+      },
+      {
+        "asset": "PDF/EPUB typography & page grid",
+        "path": "exports/heir-hunting-ebook/*.pdf, *.epub",
+        "evidence": "8.5x11 digital=519 pages and 6x9 print=838 pages share one undifferentiated text block; EPUB entries=38.",
+        "verdict": "improve",
+        "required_change": "Adapt the grid per trim: 8.5x11 two-column reference layout, 6x9 KDP-safe margins and gutters with running heads, reflowable EPUB with semantic headings and no fixed page furniture."
+      }
+    ],
+    "must_redesign": [
+      {
+        "asset": "Concatenated bullet manuscripts (519-page / 838-page)",
+        "path": "/Users/macbookpro/.gemini/antigravity/scratch/yt-transcript-report/exports/heir-hunting-ebook/heir-hunting-manuscript.md",
+        "evidence": "Manuscript measures 0 words, 0 headings, 0% bullet lines; rendered as 519-page digital and 838-page print PDFs — a concatenation, not a book.",
+        "verdict": "must_redesign",
+        "required_change": "Replace with a cohesive, original 12-chapter business reference manual in continuous prose that answers all 12 standardized questions, with paraphrased insights and timestamped citations instead of pasted bullets."
+      },
+      {
+        "asset": "Legacy 'Apex Field Intelligence Press' geometric covers & mockups",
+        "path": "/Users/macbookpro/.gemini/antigravity/scratch/yt-transcript-report/exports/heir-hunting-ebook/cover-3d.svg",
+        "evidence": "Cover artwork is a 1.03 KB flat SVG with 13 elements — within the 1KB-2.6KB legacy placeholder range and carrying the retired imprint name.",
+        "verdict": "must_redesign",
+        "required_change": "Replace with 3 genuinely distinct creative cover concepts, each rendered as 10 realistic mockups (front, spine, back, 3D hardcover, paperback stack, tablet, phone, desk scene, bundle shot, social tile) under the new imprint."
+      },
+      {
+        "asset": "exhibits/exhibit-01..12.jpg downloaded YouTube frames",
+        "path": "/Users/macbookpro/.gemini/antigravity/scratch/yt-transcript-report/exports/heir-hunting-ebook/exhibits",
+        "evidence": "12 image file(s) totalling 548,206 bytes, all captured from third-party video.",
+        "verdict": "must_redesign",
+        "permission_flag": "research_only_requires_permission",
+        "required_change": "Flag all 12 exhibits research_only_requires_permission and replace them in every commercial export with 100% original structured-data vector diagrams generated from the research database."
+      }
+    ]
+  },
+  "asset_counts": {
+    "reusable_foundation": 5,
+    "needs_improvement": 3,
+    "must_redesign": 3
+  },
+  "backup_verified": true,
+  "backup_details": {
+    "backups_dir": "/Users/macbookpro/.gemini/antigravity/scratch/yt-transcript-report/backups",
+    "exists": true,
+    "archive_count": 1,
+    "archives": [
+      {
+        "name": "yt-transcript-report-pre-fymc-20261029.tar.gz",
+        "size_bytes": 29774230,
+        "modified": "2026-10-29T13:37:07+00:00"
+      }
+    ],
+    "total_bytes": 29774230,
+    "notes": "1 pre-modification archive(s) present."
+  },
+  "audit_notes": [
+    "Transcript corpus is the only primary source; all export assets are derived.",
+    "PDF page counts come from a /Type /Page object scan, not a full PDF parse.",
+    "EPUB and bundle integrity verified with zipfile.is_zipfile plus testzip().",
+    "Commercial export policy: Zero third-party YouTube frames, portal screenshots, or >25-word verbatim transcript passages permitted in commercial exports without written license.",
+    "Backup archive verified before modification."
+  ]
+}

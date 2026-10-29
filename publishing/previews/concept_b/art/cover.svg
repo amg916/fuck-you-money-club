@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="900" viewBox="0 0 600 900" role="img" aria-labelledby="art-title art-desc"><title id="art-title">THE BIG MONEY PLAYBOOKS / Front cover</title><desc id="art-desc">Original vector cover concept and presentation artwork. Mockups illustrate proposed formats, not manufactured products.</desc><defs>
+      <linearGradient id="stage" x2="0.25" y2="1">
+        <stop stop-color="#F5F2EC"/><stop offset="1" stop-color="#CEC8BC"/>
+      </linearGradient>
+      <linearGradient id="pages" x2="1" y2="0">
+        <stop stop-color="#AAA69C"/><stop offset="0.22" stop-color="#FFFDF5"/>
+        <stop offset="0.8" stop-color="#E4DFD3"/><stop offset="1" stop-color="#BAB4A6"/>
+      </linearGradient>
+      <linearGradient id="foil" x2="1" y2="0.3">
+        <stop stop-color="#FFFFFF" stop-opacity="0.18"/>
+        <stop offset="0.3" stop-color="#FFFFFF" stop-opacity="0"/>
+        <stop offset="1" stop-color="#000000" stop-opacity="0.2"/>
+      </linearGradient>
+      <linearGradient id="metal" x2="1" y2="1">
+        <stop stop-color="#797D80"/><stop offset="0.35" stop-color="#272A2D"/>
+        <stop offset="0.72" stop-color="#090B0C"/><stop offset="1" stop-color="#63676A"/>
+      </linearGradient>
+      <linearGradient id="glass" x2="1" y2="1">
+        <stop stop-color="#FFFFFF" stop-opacity="0.14"/>
+        <stop offset="0.48" stop-color="#FFFFFF" stop-opacity="0"/>
+      </linearGradient>
+      <filter id="shadow" x="-50%" y="-100%" width="200%" height="300%">
+        <feGaussianBlur stdDeviation="15"/>
+      </filter>
+    </defs><rect x="0" y="0" width="600" height="900" rx="0" fill="#131313" stroke="none" stroke-width="1"/><text x="38" y="56" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" text-anchor="start">FYMC / FIELD EDITIONS</text><text x="562" y="56" fill="#FFD400" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="800" text-anchor="end">001</text><path d="M38 80 H562" fill="none" stroke="#FFFFFF" stroke-width="2"/><text x="32" y="184" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="87" font-weight="900" text-anchor="start">THE BIG</text><text x="32" y="294" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="110" font-weight="900" text-anchor="start">MONEY</text><text x="32" y="390" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="76" font-weight="900" text-anchor="start">PLAYBOOKS</text><path d="M0 502 L600 404 L600 558 L0 656 Z" fill="#FFD400" stroke="none" stroke-width="1"/><g transform="rotate(-9.3 35 540)" ><text x="35" y="540" fill="#131313" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="900" text-anchor="start">CAPITAL / LEVERAGE / FREEDOM</text></g><text x="38" y="700" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" text-anchor="start">HEIR HUNTING</text><text x="38" y="739.0" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" text-anchor="start">The Complete Playbook for Finding Missing Heirs,</text><text x="38" y="760.6" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" text-anchor="start">Researching Unclaimed Estates &amp; Building a Probate…</text><text x="300" y="828" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" text-anchor="middle">FYMC</text><text x="300" y="855" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle">The Fuck You Money Club</text></svg>

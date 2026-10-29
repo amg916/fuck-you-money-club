@@ -1,0 +1,63 @@
+{
+  "concept_id": "concept_c",
+  "approved": false,
+  "preview_only": true,
+  "files": {
+    "digital_pdf.pdf": {
+      "bytes": 159969,
+      "sha256": "d9cf934bdd5c447f0b473d65c7d73956631531013b6a8b9ee7c39dc87fc85bce"
+    },
+    "print_6x9_pdf.pdf": {
+      "bytes": 184489,
+      "sha256": "4c49b6a0d232637cf1d894ca05ba492128ff2bf313b192920654606642411b2f"
+    },
+    "workbook_pdf.pdf": {
+      "bytes": 26637,
+      "sha256": "3fbfc8c77eb1f3ba6fbf7d991f71bdc3b0c779c79db33f1afafcb73788f7251f"
+    },
+    "book.epub": {
+      "bytes": 56271,
+      "sha256": "ad6418c1e2ad85d3d51d882192917e4db2865b5e58a4873e7c0f2bc855574c00"
+    },
+    "art/cover.svg": {
+      "bytes": 4090,
+      "sha256": "bd8ad95a01fb26c3a0687cce063f97db02ad68848b2f383cd89308d211a9f209"
+    },
+    "art/scorecard.svg": {
+      "bytes": 19607,
+      "sha256": "99f729ba34bed2179aed978753893d90a3788919b0c08b23949879ffc6edfcb1"
+    },
+    "art/diag_01.svg": {
+      "bytes": 8277,
+      "sha256": "7c2861df5aac2360b0865b066b23f8ed976ea29a3575c0a015d763c1dc6b7756"
+    },
+    "art/diag_02.svg": {
+      "bytes": 5770,
+      "sha256": "796a5340874be580fb3feb99493421ab22d1bb4960c48ec7efb25f1833bf7ad9"
+    },
+    "art/diag_03.svg": {
+      "bytes": 7683,
+      "sha256": "0114fec74587485e384651fa4fbfb024ecbd8a2275accde30b37a86d722377db"
+    },
+    "art/diag_04.svg": {
+      "bytes": 6238,
+      "sha256": "3885aca7a23ddcfc265b0c8db677aa90c6c32fb798c1e2855519398f9ea3d4b2"
+    },
+    "art/diag_05.svg": {
+      "bytes": 7095,
+      "sha256": "13b31c85fe834f43c0511aea16ae4f1caa3def84384b28d81c0a992a11b57955"
+    },
+    "art/diag_06.svg": {
+      "bytes": 6610,
+      "sha256": "12c2dcebf54a7fd63265c5c0cf6e85f40588b437712c9343e968ec0cdb4d83a4"
+    },
+    "art/diag_07.svg": {
+      "bytes": 5949,
+      "sha256": "631f0f2da724fddd2315f9b6a809666141e98ecafb14695c53f88b436cdb98d1"
+    },
+    "art/diag_08.svg": {
+      "bytes": 6026,
+      "sha256": "fa7099a42ad829dc4605d9daecb34346e9c6bfc4aadc24cab8fab59203175ef5"
+    }
+  }
+}

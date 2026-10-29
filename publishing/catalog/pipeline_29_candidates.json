@@ -1,0 +1,2825 @@
+{
+  "parent_brand": "THE FUCK YOU MONEY CLUB",
+  "book_series": "THE BIG MONEY PLAYBOOKS",
+  "rating_system": "Money-to-Manpower Score",
+  "candidate_count": 29,
+  "flagship_volume_id": "vol-001-heir-hunting",
+  "candidates": [
+    {
+      "candidate_number": 27,
+      "slug": "digital-product-empire",
+      "title": "Digital Product Empire",
+      "category": "Digital education and tools",
+      "production_stage": "candidate_scored",
+      "scores": {
+        "revenue_potential": 22,
+        "profit_margin_potential": 23,
+        "team_efficiency": 19,
+        "startup_accessibility": 12,
+        "automation_potential": 14
+      },
+      "dimension_max": {
+        "revenue_potential": 25,
+        "profit_margin_potential": 25,
+        "team_efficiency": 20,
+        "startup_accessibility": 15,
+        "automation_potential": 15
+      },
+      "total_score": 90,
+      "tier_label": "Elite Small-Team Cash Machine",
+      "evidence_confidence": "Moderate",
+      "uncertainty_band": "±6 pts",
+      "uncertainty_bounds": {
+        "low": 84,
+        "high": 96
+      },
+      "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
+      "score_rationale": {
+        "revenue_potential": "Revenue Potential: 22/25. Reusable products have low delivery costs, but audience building, refunds and updates absorb profit.",
+        "profit_margin_potential": "Profit Margin Potential: 23/25. Reusable products have low delivery costs, but audience building, refunds and updates absorb profit.",
+        "team_efficiency": "Team Efficiency: 19/20. Reusable products have low delivery costs, but audience building, refunds and updates absorb profit.",
+        "startup_accessibility": "Startup Accessibility: 12/15. Reusable products have low delivery costs, but audience building, refunds and updates absorb profit.",
+        "automation_potential": "Automation Potential: 14/15. Reusable products have low delivery costs, but audience building, refunds and updates absorb profit."
+      },
+      "economics": {
+        "gross_revenue_range": "$50,000–$800,000 USD annually",
+        "net_profit_margin_range": "20–55%",
+        "owner_net_profit_potential": "$10,000–$440,000 USD annually, before personal taxes and reinvestment",
+        "startup_capital_range": "$5,000–$60,000 USD",
+        "monthly_opex_range": "$1,500–$15,000 USD",
+        "time_to_first_deal": "1–6 months",
+        "typical_team_size": {
+          "full_time_including_owner": 1,
+          "contractors": 3,
+          "total_people": 4
+        },
+        "includes_contractors_note": "Headcount includes the working owner and recurring contractors as people, not FTE equivalents. Contractors may be part-time. Scaled scenario adds one employee and one contractor; external vendor workforces are not counted as internal team members.",
+        "revenue_basis": "Digital product sales net of refunds; acquisition, platform and support costs included in margin",
+        "cost_basis": "Annual net margins include operating expenses and non-owner labor; monthly opex is fixed/semi-fixed overhead only. No owner salary is deducted. Capital needs may grow beyond startup range.",
+        "estimate_status": "Illustrative assumptions; not verified earnings data"
+      },
+      "scenarios": {
+        "conservative": {
+          "annual_gross_revenue_usd": 50000,
+          "net_profit_margin_pct": 20,
+          "annual_owner_net_profit_usd": 10000,
+          "full_time_including_owner": 1,
+          "contractors": 3,
+          "total_people": 4,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        },
+        "base_case": {
+          "annual_gross_revenue_usd": 425000.0,
+          "net_profit_margin_pct": 37.5,
+          "annual_owner_net_profit_usd": 159375,
+          "full_time_including_owner": 1,
+          "contractors": 3,
+          "total_people": 4,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        },
+        "scaled_small_team": {
+          "annual_gross_revenue_usd": 800000,
+          "net_profit_margin_pct": 55,
+          "annual_owner_net_profit_usd": 440000,
+          "full_time_including_owner": 2,
+          "contractors": 4,
+          "total_people": 6,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        }
+      },
+      "automation_levers": [
+        "Digital fulfillment",
+        "Customer onboarding",
+        "Sales-tax reporting"
+      ],
+      "key_risks": [
+        "Weak demand",
+        "Piracy",
+        "Paid acquisition losses"
+      ],
+      "regulatory_notes": [
+        "Verify content rights, consumer refund rules, digital sales taxes and truthful marketing."
+      ],
+      "rank": 1
+    },
+    {
+      "candidate_number": 22,
+      "slug": "ai-powered-micro-saas",
+      "title": "AI-Powered Micro SaaS",
+      "category": "Subscription software",
+      "production_stage": "candidate_scored",
+      "scores": {
+        "revenue_potential": 22,
+        "profit_margin_potential": 22,
+        "team_efficiency": 19,
+        "startup_accessibility": 11,
+        "automation_potential": 14
+      },
+      "dimension_max": {
+        "revenue_potential": 25,
+        "profit_margin_potential": 25,
+        "team_efficiency": 20,
+        "startup_accessibility": 15,
+        "automation_potential": 15
+      },
+      "total_score": 88,
+      "tier_label": "Elite Small-Team Cash Machine",
+      "evidence_confidence": "Preliminary — Uncertainty Range",
+      "uncertainty_band": "±10 pts",
+      "uncertainty_bounds": {
+        "low": 78,
+        "high": 98
+      },
+      "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
+      "score_rationale": {
+        "revenue_potential": "Revenue Potential: 22/25. Narrow software products support lean recurring revenue, but inference costs and churn limit margins.",
+        "profit_margin_potential": "Profit Margin Potential: 22/25. Narrow software products support lean recurring revenue, but inference costs and churn limit margins.",
+        "team_efficiency": "Team Efficiency: 19/20. Narrow software products support lean recurring revenue, but inference costs and churn limit margins.",
+        "startup_accessibility": "Startup Accessibility: 11/15. Narrow software products support lean recurring revenue, but inference costs and churn limit margins.",
+        "automation_potential": "Automation Potential: 14/15. Narrow software products support lean recurring revenue, but inference costs and churn limit margins."
+      },
+      "economics": {
+        "gross_revenue_range": "$50,000–$700,000 USD annually",
+        "net_profit_margin_range": "15–45%",
+        "owner_net_profit_potential": "$7,500–$315,000 USD annually, before personal taxes and reinvestment",
+        "startup_capital_range": "$10,000–$100,000 USD",
+        "monthly_opex_range": "$2,000–$15,000 USD",
+        "time_to_first_deal": "2–9 months",
+        "typical_team_size": {
+          "full_time_including_owner": 1,
+          "contractors": 2,
+          "total_people": 3
+        },
+        "includes_contractors_note": "Headcount includes the working owner and recurring contractors as people, not FTE equivalents. Contractors may be part-time. Scaled scenario adds one employee and one contractor; external vendor workforces are not counted as internal team members.",
+        "revenue_basis": "Subscription and usage fees; hosting, model usage and support included in margin",
+        "cost_basis": "Annual net margins include operating expenses and non-owner labor; monthly opex is fixed/semi-fixed overhead only. No owner salary is deducted. Capital needs may grow beyond startup range.",
+        "estimate_status": "Illustrative assumptions; not verified earnings data"
+      },
+      "scenarios": {
+        "conservative": {
+          "annual_gross_revenue_usd": 50000,
+          "net_profit_margin_pct": 15,
+          "annual_owner_net_profit_usd": 7500,
+          "full_time_including_owner": 1,
+          "contractors": 2,
+          "total_people": 3,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        },
+        "base_case": {
+          "annual_gross_revenue_usd": 375000.0,
+          "net_profit_margin_pct": 30.0,
+          "annual_owner_net_profit_usd": 112500,
+          "full_time_including_owner": 1,
+          "contractors": 2,
+          "total_people": 3,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        },
+        "scaled_small_team": {
+          "annual_gross_revenue_usd": 700000,
+          "net_profit_margin_pct": 45,
+          "annual_owner_net_profit_usd": 315000,
+          "full_time_including_owner": 2,
+          "contractors": 3,
+          "total_people": 5,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        }
+      },
+      "automation_levers": [
+        "Subscription billing",
+        "Usage metering",
+        "Onboarding workflows"
+      ],
+      "key_risks": [
+        "Weak product-market fit",
+        "Model-provider dependency",
+        "Security incidents"
+      ],
+      "regulatory_notes": [
+        "Review data privacy, model and content licenses, subscription terms and sector obligations.",
+        "Validate consequential outputs and avoid unsupported accuracy claims."
+      ],
+      "rank": 2
+    },
+    {
+      "candidate_number": 1,
+      "slug": "heir-hunting",
+      "title": "Heir Hunting",
+      "category": "Estate research",
+      "production_stage": "flagship_in_design_review",
+      "scores": {
+        "revenue_potential": 22,
+        "profit_margin_potential": 23,
+        "team_efficiency": 18,
+        "startup_accessibility": 12,
+        "automation_potential": 12
+      },
+      "dimension_max": {
+        "revenue_potential": 25,
+        "profit_margin_potential": 25,
+        "team_efficiency": 20,
+        "startup_accessibility": 15,
+        "automation_potential": 15
+      },
+      "total_score": 87,
+      "tier_label": "Elite Small-Team Cash Machine",
+      "evidence_confidence": "High",
+      "uncertainty_band": "±3 pts",
+      "uncertainty_bounds": {
+        "low": 84,
+        "high": 90
+      },
+      "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
+      "score_rationale": {
+        "revenue_potential": "Revenue Potential: 22/25. Contingent fees support lean research teams, but estate delays defer cash.",
+        "profit_margin_potential": "Profit Margin Potential: 23/25. Contingent fees support lean research teams, but estate delays defer cash.",
+        "team_efficiency": "Team Efficiency: 18/20. Contingent fees support lean research teams, but estate delays defer cash.",
+        "startup_accessibility": "Startup Accessibility: 12/15. Contingent fees support lean research teams, but estate delays defer cash.",
+        "automation_potential": "Automation Potential: 12/15. Contingent fees support lean research teams, but estate delays defer cash."
+      },
+      "economics": {
+        "gross_revenue_range": "$80,000–$600,000 USD annually",
+        "net_profit_margin_range": "25–50%",
+        "owner_net_profit_potential": "$20,000–$300,000 USD annually, before personal taxes and reinvestment",
+        "startup_capital_range": "$10,000–$50,000 USD",
+        "monthly_opex_range": "$2,000–$10,000 USD",
+        "time_to_first_deal": "6–24 months",
+        "typical_team_size": {
+          "full_time_including_owner": 1,
+          "contractors": 3,
+          "total_people": 4
+        },
+        "includes_contractors_note": "Headcount includes the working owner and recurring contractors as people, not FTE equivalents. Contractors may be part-time. Scaled scenario adds one employee and one contractor; external vendor workforces are not counted as internal team members.",
+        "revenue_basis": "Recognized service fees, not client asset value",
+        "cost_basis": "Annual net margins include operating expenses and non-owner labor; monthly opex is fixed/semi-fixed overhead only. No owner salary is deducted. Capital needs may grow beyond startup range.",
+        "estimate_status": "Illustrative assumptions; not verified earnings data"
+      },
+      "scenarios": {
+        "conservative": {
+          "annual_gross_revenue_usd": 80000,
+          "net_profit_margin_pct": 25,
+          "annual_owner_net_profit_usd": 20000,
+          "full_time_including_owner": 1,
+          "contractors": 3,
+          "total_people": 4,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        },
+        "base_case": {
+          "annual_gross_revenue_usd": 340000.0,
+          "net_profit_margin_pct": 37.5,
+          "annual_owner_net_profit_usd": 127500,
+          "full_time_including_owner": 1,
+          "contractors": 3,
+          "total_people": 4,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        },
+        "scaled_small_team": {
+          "annual_gross_revenue_usd": 600000,
+          "net_profit_margin_pct": 50,
+          "annual_owner_net_profit_usd": 300000,
+          "full_time_including_owner": 2,
+          "contractors": 4,
+          "total_people": 6,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        }
+      },
+      "automation_levers": [
+        "Public-record alerts",
+        "Genealogy case tracking",
+        "Document indexing"
+      ],
+      "key_risks": [
+        "Unsuccessful research",
+        "Contested kinship",
+        "Long collection cycles"
+      ],
+      "regulatory_notes": [
+        "Check heir-finder fee restrictions and solicitation rules by jurisdiction.",
+        "Do not provide legal representation without appropriate authorization."
+      ],
+      "rank": 3
+    },
+    {
+      "candidate_number": 24,
+      "slug": "high-ticket-affiliate-marketing",
+      "title": "High-Ticket Affiliate Marketing",
+      "category": "Referral publishing",
+      "production_stage": "candidate_scored",
+      "scores": {
+        "revenue_potential": 21,
+        "profit_margin_potential": 22,
+        "team_efficiency": 19,
+        "startup_accessibility": 12,
+        "automation_potential": 13
+      },
+      "dimension_max": {
+        "revenue_potential": 25,
+        "profit_margin_potential": 25,
+        "team_efficiency": 20,
+        "startup_accessibility": 15,
+        "automation_potential": 15
+      },
+      "total_score": 87,
+      "tier_label": "Elite Small-Team Cash Machine",
+      "evidence_confidence": "Moderate",
+      "uncertainty_band": "±6 pts",
+      "uncertainty_bounds": {
+        "low": 81,
+        "high": 93
+      },
+      "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
+      "score_rationale": {
+        "revenue_potential": "Revenue Potential: 21/25. Commission income avoids fulfillment, but traffic costs and merchant dependence create volatility.",
+        "profit_margin_potential": "Profit Margin Potential: 22/25. Commission income avoids fulfillment, but traffic costs and merchant dependence create volatility.",
+        "team_efficiency": "Team Efficiency: 19/20. Commission income avoids fulfillment, but traffic costs and merchant dependence create volatility.",
+        "startup_accessibility": "Startup Accessibility: 12/15. Commission income avoids fulfillment, but traffic costs and merchant dependence create volatility.",
+        "automation_potential": "Automation Potential: 13/15. Commission income avoids fulfillment, but traffic costs and merchant dependence create volatility."
+      },
+      "economics": {
+        "gross_revenue_range": "$50,000–$600,000 USD annually",
+        "net_profit_margin_range": "20–50%",
+        "owner_net_profit_potential": "$10,000–$300,000 USD annually, before personal taxes and reinvestment",
+        "startup_capital_range": "$5,000–$50,000 USD",
+        "monthly_opex_range": "$1,500–$12,000 USD",
+        "time_to_first_deal": "3–12 months",
+        "typical_team_size": {
+          "full_time_including_owner": 1,
+          "contractors": 2,
+          "total_people": 3
+        },
+        "includes_contractors_note": "Headcount includes the working owner and recurring contractors as people, not FTE equivalents. Contractors may be part-time. Scaled scenario adds one employee and one contractor; external vendor workforces are not counted as internal team members.",
+        "revenue_basis": "Earned affiliate commissions net of reversals; excludes referred purchase values",
+        "cost_basis": "Annual net margins include operating expenses and non-owner labor; monthly opex is fixed/semi-fixed overhead only. No owner salary is deducted. Capital needs may grow beyond startup range.",
+        "estimate_status": "Illustrative assumptions; not verified earnings data"
+      },
+      "scenarios": {
+        "conservative": {
+          "annual_gross_revenue_usd": 50000,
+          "net_profit_margin_pct": 20,
+          "annual_owner_net_profit_usd": 10000,
+          "full_time_including_owner": 1,
+          "contractors": 2,
+          "total_people": 3,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        },
+        "base_case": {
+          "annual_gross_revenue_usd": 325000.0,
+          "net_profit_margin_pct": 35.0,
+          "annual_owner_net_profit_usd": 113750,
+          "full_time_including_owner": 1,
+          "contractors": 2,
+          "total_people": 3,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        },
+        "scaled_small_team": {
+          "annual_gross_revenue_usd": 600000,
+          "net_profit_margin_pct": 50,
+          "annual_owner_net_profit_usd": 300000,
+          "full_time_including_owner": 2,
+          "contractors": 3,
+          "total_people": 5,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        }
+      },
+      "automation_levers": [
+        "Link validation",
+        "Conversion reporting",
+        "Content scheduling"
+      ],
+      "key_risks": [
+        "Commission cuts",
+        "Refund clawbacks",
+        "Traffic loss"
+      ],
+      "regulatory_notes": [
+        "Clearly disclose affiliate relationships and substantiate advertising and earnings claims.",
+        "Check sector-specific restrictions on paid referrals."
+      ],
+      "rank": 4
+    },
+    {
+      "candidate_number": 2,
+      "slug": "surplus-funds-recovery",
+      "title": "Surplus Funds Recovery",
+      "category": "Recovery services",
+      "production_stage": "research_corpus_ready",
+      "scores": {
+        "revenue_potential": 22,
+        "profit_margin_potential": 22,
+        "team_efficiency": 18,
+        "startup_accessibility": 12,
+        "automation_potential": 12
+      },
+      "dimension_max": {
+        "revenue_potential": 25,
+        "profit_margin_potential": 25,
+        "team_efficiency": 20,
+        "startup_accessibility": 15,
+        "automation_potential": 15
+      },
+      "total_score": 86,
+      "tier_label": "Elite Small-Team Cash Machine",
+      "evidence_confidence": "High",
+      "uncertainty_band": "±3 pts",
+      "uncertainty_bounds": {
+        "low": 83,
+        "high": 89
+      },
+      "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
+      "score_rationale": {
+        "revenue_potential": "Revenue Potential: 22/25. Fee-based recovery has low inventory needs but uneven claim conversion.",
+        "profit_margin_potential": "Profit Margin Potential: 22/25. Fee-based recovery has low inventory needs but uneven claim conversion.",
+        "team_efficiency": "Team Efficiency: 18/20. Fee-based recovery has low inventory needs but uneven claim conversion.",
+        "startup_accessibility": "Startup Accessibility: 12/15. Fee-based recovery has low inventory needs but uneven claim conversion.",
+        "automation_potential": "Automation Potential: 12/15. Fee-based recovery has low inventory needs but uneven claim conversion."
+      },
+      "economics": {
+        "gross_revenue_range": "$100,000–$750,000 USD annually",
+        "net_profit_margin_range": "25–45%",
+        "owner_net_profit_potential": "$25,000–$337,500 USD annually, before personal taxes and reinvestment",
+        "startup_capital_range": "$10,000–$60,000 USD",
+        "monthly_opex_range": "$2,500–$14,000 USD",
+        "time_to_first_deal": "3–18 months",
+        "typical_team_size": {
+          "full_time_including_owner": 2,
+          "contractors": 2,
+          "total_people": 4
+        },
+        "includes_contractors_note": "Headcount includes the working owner and recurring contractors as people, not FTE equivalents. Contractors may be part-time. Scaled scenario adds one employee and one contractor; external vendor workforces are not counted as internal team members.",
+        "revenue_basis": "Recognized service fees, not client asset value",
+        "cost_basis": "Annual net margins include operating expenses and non-owner labor; monthly opex is fixed/semi-fixed overhead only. No owner salary is deducted. Capital needs may grow beyond startup range.",
+        "estimate_status": "Illustrative assumptions; not verified earnings data"
+      },
+      "scenarios": {
+        "conservative": {
+          "annual_gross_revenue_usd": 100000,
+          "net_profit_margin_pct": 25,
+          "annual_owner_net_profit_usd": 25000,
+          "full_time_including_owner": 2,
+          "contractors": 2,
+          "total_people": 4,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        },
+        "base_case": {
+          "annual_gross_revenue_usd": 425000.0,
+          "net_profit_margin_pct": 35.0,
+          "annual_owner_net_profit_usd": 148750,
+          "full_time_including_owner": 2,
+          "contractors": 2,
+          "total_people": 4,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        },
+        "scaled_small_team": {
+          "annual_gross_revenue_usd": 750000,
+          "net_profit_margin_pct": 45,
+          "annual_owner_net_profit_usd": 337500,
+          "full_time_including_owner": 3,
+          "contractors": 3,
+          "total_people": 6,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        }
+      },
+      "automation_levers": [
+        "Auction-result monitoring",
+        "Claim deadlines",
+        "Document checklists"
+      ],
+      "key_risks": [
+        "Competing claims",
+        "Denied claims",
+        "Fee compression"
+      ],
+      "regulatory_notes": [
+        "Surplus recovery fee caps, assignment validity and waiting periods vary.",
+        "Court filings may require licensed counsel."
+      ],
+      "rank": 5
+    },
+    {
+      "candidate_number": 29,
+      "slug": "productized-ai-agencies",
+      "title": "Productized AI Agencies",
+      "category": "Technology implementation services",
+      "production_stage": "candidate_scored",
+      "scores": {
+        "revenue_potential": 23,
+        "profit_margin_potential": 21,
+        "team_efficiency": 17,
+        "startup_accessibility": 12,
+        "automation_potential": 13
+      },
+      "dimension_max": {
+        "revenue_potential": 25,
+        "profit_margin_potential": 25,
+        "team_efficiency": 20,
+        "startup_accessibility": 15,
+        "automation_potential": 15
+      },
+      "total_score": 86,
+      "tier_label": "Elite Small-Team Cash Machine",
+      "evidence_confidence": "Preliminary — Uncertainty Range",
+      "uncertainty_band": "±10 pts",
+      "uncertainty_bounds": {
+        "low": 76,
+        "high": 96
+      },
+      "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
+      "score_rationale": {
+        "revenue_potential": "Revenue Potential: 23/25. Standardized implementations improve repeatability, but integration exceptions and human review remain costly.",
+        "profit_margin_potential": "Profit Margin Potential: 21/25. Standardized implementations improve repeatability, but integration exceptions and human review remain costly.",
+        "team_efficiency": "Team Efficiency: 17/20. Standardized implementations improve repeatability, but integration exceptions and human review remain costly.",
+        "startup_accessibility": "Startup Accessibility: 12/15. Standardized implementations improve repeatability, but integration exceptions and human review remain costly.",
+        "automation_potential": "Automation Potential: 13/15. Standardized implementations improve repeatability, but integration exceptions and human review remain costly."
+      },
+      "economics": {
+        "gross_revenue_range": "$100,000–$1,000,000 USD annually",
+        "net_profit_margin_range": "20–40%",
+        "owner_net_profit_potential": "$20,000–$400,000 USD annually, before personal taxes and reinvestment",
+        "startup_capital_range": "$5,000–$60,000 USD",
+        "monthly_opex_range": "$2,500–$18,000 USD",
+        "time_to_first_deal": "1–4 months",
+        "typical_team_size": {
+          "full_time_including_owner": 2,
+          "contractors": 3,
+          "total_people": 5
+        },
+        "includes_contractors_note": "Headcount includes the working owner and recurring contractors as people, not FTE equivalents. Contractors may be part-time. Scaled scenario adds one employee and one contractor; external vendor workforces are not counted as internal team members.",
+        "revenue_basis": "Implementation fees and support retainers; excludes client revenue attributed to automation",
+        "cost_basis": "Annual net margins include operating expenses and non-owner labor; monthly opex is fixed/semi-fixed overhead only. No owner salary is deducted. Capital needs may grow beyond startup range.",
+        "estimate_status": "Illustrative assumptions; not verified earnings data"
+      },
+      "scenarios": {
+        "conservative": {
+          "annual_gross_revenue_usd": 100000,
+          "net_profit_margin_pct": 20,
+          "annual_owner_net_profit_usd": 20000,
+          "full_time_including_owner": 2,
+          "contractors": 3,
+          "total_people": 5,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        },
+        "base_case": {
+          "annual_gross_revenue_usd": 550000.0,
+          "net_profit_margin_pct": 30.0,
+          "annual_owner_net_profit_usd": 165000,
+          "full_time_including_owner": 2,
+          "contractors": 3,
+          "total_people": 5,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        },
+        "scaled_small_team": {
+          "annual_gross_revenue_usd": 1000000,
+          "net_profit_margin_pct": 40,
+          "annual_owner_net_profit_usd": 400000,
+          "full_time_including_owner": 3,
+          "contractors": 4,
+          "total_people": 7,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        }
+      },
+      "automation_levers": [
+        "Client intake workflows",
+        "Deployment checklists",
+        "Usage and quality monitoring"
+      ],
+      "key_risks": [
+        "Scope creep",
+        "Unreliable outputs",
+        "Client data exposure"
+      ],
+      "regulatory_notes": [
+        "Obtain authorization for client-system access and define data-processing and IP terms.",
+        "Maintain human review for consequential decisions and substantiate performance claims."
+      ],
+      "rank": 6
+    },
+    {
+      "candidate_number": 5,
+      "slug": "unclaimed-property-recovery",
+      "title": "Unclaimed Property Recovery",
+      "category": "Recovery services",
+      "production_stage": "research_corpus_ready",
+      "scores": {
+        "revenue_potential": 20,
+        "profit_margin_potential": 22,
+        "team_efficiency": 18,
+        "startup_accessibility": 13,
+        "automation_potential": 12
+      },
+      "dimension_max": {
+        "revenue_potential": 25,
+        "profit_margin_potential": 25,
+        "team_efficiency": 20,
+        "startup_accessibility": 15,
+        "automation_potential": 15
+      },
+      "total_score": 85,
+      "tier_label": "Elite Small-Team Cash Machine",
+      "evidence_confidence": "High",
+      "uncertainty_band": "±3 pts",
+      "uncertainty_bounds": {
+        "low": 82,
+        "high": 88
+      },
+      "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
+      "score_rationale": {
+        "revenue_potential": "Revenue Potential: 20/25. Low-capital research scales moderately; free state claims constrain pricing.",
+        "profit_margin_potential": "Profit Margin Potential: 22/25. Low-capital research scales moderately; free state claims constrain pricing.",
+        "team_efficiency": "Team Efficiency: 18/20. Low-capital research scales moderately; free state claims constrain pricing.",
+        "startup_accessibility": "Startup Accessibility: 13/15. Low-capital research scales moderately; free state claims constrain pricing.",
+        "automation_potential": "Automation Potential: 12/15. Low-capital research scales moderately; free state claims constrain pricing."
+      },
+      "economics": {
+        "gross_revenue_range": "$60,000–$450,000 USD annually",
+        "net_profit_margin_range": "25–50%",
+        "owner_net_profit_potential": "$15,000–$225,000 USD annually, before personal taxes and reinvestment",
+        "startup_capital_range": "$5,000–$35,000 USD",
+        "monthly_opex_range": "$1,500–$8,000 USD",
+        "time_to_first_deal": "3–12 months",
+        "typical_team_size": {
+          "full_time_including_owner": 1,
+          "contractors": 2,
+          "total_people": 3
+        },
+        "includes_contractors_note": "Headcount includes the working owner and recurring contractors as people, not FTE equivalents. Contractors may be part-time. Scaled scenario adds one employee and one contractor; external vendor workforces are not counted as internal team members.",
+        "revenue_basis": "Recognized service fees, not client asset value",
+        "cost_basis": "Annual net margins include operating expenses and non-owner labor; monthly opex is fixed/semi-fixed overhead only. No owner salary is deducted. Capital needs may grow beyond startup range.",
+        "estimate_status": "Illustrative assumptions; not verified earnings data"
+      },
+      "scenarios": {
+        "conservative": {
+          "annual_gross_revenue_usd": 60000,
+          "net_profit_margin_pct": 25,
+          "annual_owner_net_profit_usd": 15000,
+          "full_time_including_owner": 1,
+          "contractors": 2,
+          "total_people": 3,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        },
+        "base_case": {
+          "annual_gross_revenue_usd": 255000.0,
+          "net_profit_margin_pct": 37.5,
+          "annual_owner_net_profit_usd": 95625,
+          "full_time_including_owner": 1,
+          "contractors": 2,
+          "total_people": 3,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        },
+        "scaled_small_team": {
+          "annual_gross_revenue_usd": 450000,
+          "net_profit_margin_pct": 50,
+          "annual_owner_net_profit_usd": 225000,
+          "full_time_including_owner": 2,
+          "contractors": 3,
+          "total_people": 5,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        }
+      },
+      "automation_levers": [
+        "Record matching",
+        "Claim status tracking"
+      ],
+      "key_risks": [
+        "Identity mismatch",
+        "Low claim values",
+        "Customer distrust"
+      ],
+      "regulatory_notes": [
+        "Check finder registration, fee caps, waiting periods and privacy obligations.",
+        "Disclose the owner's ability to claim directly without a recovery service."
+      ],
+      "rank": 7
+    },
+    {
+      "candidate_number": 18,
+      "slug": "commercial-lead-generation",
+      "title": "Commercial Lead Generation",
+      "category": "B2B marketing services",
+      "production_stage": "candidate_scored",
+      "scores": {
+        "revenue_potential": 21,
+        "profit_margin_potential": 21,
+        "team_efficiency": 18,
+        "startup_accessibility": 12,
+        "automation_potential": 13
+      },
+      "dimension_max": {
+        "revenue_potential": 25,
+        "profit_margin_potential": 25,
+        "team_efficiency": 20,
+        "startup_accessibility": 15,
+        "automation_potential": 15
+      },
+      "total_score": 85,
+      "tier_label": "Elite Small-Team Cash Machine",
+      "evidence_confidence": "Moderate",
+      "uncertainty_band": "±6 pts",
+      "uncertainty_bounds": {
+        "low": 79,
+        "high": 91
+      },
+      "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
+      "score_rationale": {
+        "revenue_potential": "Revenue Potential: 21/25. Recurring prospecting fees support lean delivery, but qualification and retention need oversight.",
+        "profit_margin_potential": "Profit Margin Potential: 21/25. Recurring prospecting fees support lean delivery, but qualification and retention need oversight.",
+        "team_efficiency": "Team Efficiency: 18/20. Recurring prospecting fees support lean delivery, but qualification and retention need oversight.",
+        "startup_accessibility": "Startup Accessibility: 12/15. Recurring prospecting fees support lean delivery, but qualification and retention need oversight.",
+        "automation_potential": "Automation Potential: 13/15. Recurring prospecting fees support lean delivery, but qualification and retention need oversight."
+      },
+      "economics": {
+        "gross_revenue_range": "$100,000–$750,000 USD annually",
+        "net_profit_margin_range": "20–40%",
+        "owner_net_profit_potential": "$20,000–$300,000 USD annually, before personal taxes and reinvestment",
+        "startup_capital_range": "$5,000–$40,000 USD",
+        "monthly_opex_range": "$2,000–$12,000 USD",
+        "time_to_first_deal": "1–4 months",
+        "typical_team_size": {
+          "full_time_including_owner": 1,
+          "contractors": 3,
+          "total_people": 4
+        },
+        "includes_contractors_note": "Headcount includes the working owner and recurring contractors as people, not FTE equivalents. Contractors may be part-time. Scaled scenario adds one employee and one contractor; external vendor workforces are not counted as internal team members.",
+        "revenue_basis": "Retainers and accepted-lead fees; excludes client-funded advertising pass-through",
+        "cost_basis": "Annual net margins include operating expenses and non-owner labor; monthly opex is fixed/semi-fixed overhead only. No owner salary is deducted. Capital needs may grow beyond startup range.",
+        "estimate_status": "Illustrative assumptions; not verified earnings data"
+      },
+      "scenarios": {
+        "conservative": {
+          "annual_gross_revenue_usd": 100000,
+          "net_profit_margin_pct": 20,
+          "annual_owner_net_profit_usd": 20000,
+          "full_time_including_owner": 1,
+          "contractors": 3,
+          "total_people": 4,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        },
+        "base_case": {
+          "annual_gross_revenue_usd": 425000.0,
+          "net_profit_margin_pct": 30.0,
+          "annual_owner_net_profit_usd": 127500,
+          "full_time_including_owner": 1,
+          "contractors": 3,
+          "total_people": 4,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        },
+        "scaled_small_team": {
+          "annual_gross_revenue_usd": 750000,
+          "net_profit_margin_pct": 40,
+          "annual_owner_net_profit_usd": 300000,
+          "full_time_including_owner": 2,
+          "contractors": 4,
+          "total_people": 6,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        }
+      },
+      "automation_levers": [
+        "Consent tracking",
+        "CRM routing",
+        "Lead-quality reporting"
+      ],
+      "key_risks": [
+        "Poor lead quality",
+        "Client churn",
+        "Rising acquisition costs"
+      ],
+      "regulatory_notes": [
+        "Observe applicable privacy, email marketing, telemarketing and opt-out requirements."
+      ],
+      "rank": 8
+    },
+    {
+      "candidate_number": 21,
+      "slug": "million-dollar-lead-generation",
+      "title": "Million-Dollar Lead Generation",
+      "category": "Enterprise demand generation",
+      "production_stage": "candidate_scored",
+      "scores": {
+        "revenue_potential": 24,
+        "profit_margin_potential": 21,
+        "team_efficiency": 16,
+        "startup_accessibility": 9,
+        "automation_potential": 12
+      },
+      "dimension_max": {
+        "revenue_potential": 25,
+        "profit_margin_potential": 25,
+        "team_efficiency": 20,
+        "startup_accessibility": 15,
+        "automation_potential": 15
+      },
+      "total_score": 82,
+      "tier_label": "High-Leverage Operator Play",
+      "evidence_confidence": "Preliminary — Uncertainty Range",
+      "uncertainty_band": "±10 pts",
+      "uncertainty_bounds": {
+        "low": 72,
+        "high": 92
+      },
+      "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
+      "score_rationale": {
+        "revenue_potential": "Revenue Potential: 24/25. Targets buyers of million-dollar contracts, not guaranteed million-dollar lead fees or earnings.",
+        "profit_margin_potential": "Profit Margin Potential: 21/25. Targets buyers of million-dollar contracts, not guaranteed million-dollar lead fees or earnings.",
+        "team_efficiency": "Team Efficiency: 16/20. Targets buyers of million-dollar contracts, not guaranteed million-dollar lead fees or earnings.",
+        "startup_accessibility": "Startup Accessibility: 9/15. Targets buyers of million-dollar contracts, not guaranteed million-dollar lead fees or earnings.",
+        "automation_potential": "Automation Potential: 12/15. Targets buyers of million-dollar contracts, not guaranteed million-dollar lead fees or earnings."
+      },
+      "economics": {
+        "gross_revenue_range": "$150,000–$1,200,000 USD annually",
+        "net_profit_margin_range": "20–40%",
+        "owner_net_profit_potential": "$30,000–$480,000 USD annually, before personal taxes and reinvestment",
+        "startup_capital_range": "$15,000–$100,000 USD",
+        "monthly_opex_range": "$4,000–$20,000 USD",
+        "time_to_first_deal": "3–12 months",
+        "typical_team_size": {
+          "full_time_including_owner": 2,
+          "contractors": 3,
+          "total_people": 5
+        },
+        "includes_contractors_note": "Headcount includes the working owner and recurring contractors as people, not FTE equivalents. Contractors may be part-time. Scaled scenario adds one employee and one contractor; external vendor workforces are not counted as internal team members.",
+        "revenue_basis": "Retainers and qualified-opportunity fees; excludes client contract values",
+        "cost_basis": "Annual net margins include operating expenses and non-owner labor; monthly opex is fixed/semi-fixed overhead only. No owner salary is deducted. Capital needs may grow beyond startup range.",
+        "estimate_status": "Illustrative assumptions; not verified earnings data"
+      },
+      "scenarios": {
+        "conservative": {
+          "annual_gross_revenue_usd": 150000,
+          "net_profit_margin_pct": 20,
+          "annual_owner_net_profit_usd": 30000,
+          "full_time_including_owner": 2,
+          "contractors": 3,
+          "total_people": 5,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        },
+        "base_case": {
+          "annual_gross_revenue_usd": 675000.0,
+          "net_profit_margin_pct": 30.0,
+          "annual_owner_net_profit_usd": 202500,
+          "full_time_including_owner": 2,
+          "contractors": 3,
+          "total_people": 5,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        },
+        "scaled_small_team": {
+          "annual_gross_revenue_usd": 1200000,
+          "net_profit_margin_pct": 40,
+          "annual_owner_net_profit_usd": 480000,
+          "full_time_including_owner": 3,
+          "contractors": 4,
+          "total_people": 7,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        }
+      },
+      "automation_levers": [
+        "Account qualification",
+        "CRM attribution",
+        "Meeting scheduling"
+      ],
+      "key_risks": [
+        "Long sales cycles",
+        "Attribution disputes",
+        "Customer concentration"
+      ],
+      "regulatory_notes": [
+        "Check privacy, outreach consent and sector-specific referral or contingent-fee restrictions."
+      ],
+      "rank": 9
+    },
+    {
+      "candidate_number": 25,
+      "slug": "building-an-seo-empire",
+      "title": "Building an SEO Empire",
+      "category": "Search-driven publishing",
+      "production_stage": "candidate_scored",
+      "scores": {
+        "revenue_potential": 22,
+        "profit_margin_potential": 21,
+        "team_efficiency": 17,
+        "startup_accessibility": 10,
+        "automation_potential": 12
+      },
+      "dimension_max": {
+        "revenue_potential": 25,
+        "profit_margin_potential": 25,
+        "team_efficiency": 20,
+        "startup_accessibility": 15,
+        "automation_potential": 15
+      },
+      "total_score": 82,
+      "tier_label": "High-Leverage Operator Play",
+      "evidence_confidence": "Moderate",
+      "uncertainty_band": "±6 pts",
+      "uncertainty_bounds": {
+        "low": 76,
+        "high": 88
+      },
+      "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
+      "score_rationale": {
+        "revenue_potential": "Revenue Potential: 22/25. A site portfolio can monetize recurring traffic, but editorial quality and search volatility require investment.",
+        "profit_margin_potential": "Profit Margin Potential: 21/25. A site portfolio can monetize recurring traffic, but editorial quality and search volatility require investment.",
+        "team_efficiency": "Team Efficiency: 17/20. A site portfolio can monetize recurring traffic, but editorial quality and search volatility require investment.",
+        "startup_accessibility": "Startup Accessibility: 10/15. A site portfolio can monetize recurring traffic, but editorial quality and search volatility require investment.",
+        "automation_potential": "Automation Potential: 12/15. A site portfolio can monetize recurring traffic, but editorial quality and search volatility require investment."
+      },
+      "economics": {
+        "gross_revenue_range": "$80,000–$900,000 USD annually",
+        "net_profit_margin_range": "20–45%",
+        "owner_net_profit_potential": "$16,000–$405,000 USD annually, before personal taxes and reinvestment",
+        "startup_capital_range": "$15,000–$120,000 USD",
+        "monthly_opex_range": "$3,000–$20,000 USD",
+        "time_to_first_deal": "6–24 months",
+        "typical_team_size": {
+          "full_time_including_owner": 2,
+          "contractors": 4,
+          "total_people": 6
+        },
+        "includes_contractors_note": "Headcount includes the working owner and recurring contractors as people, not FTE equivalents. Contractors may be part-time. Scaled scenario adds one employee and one contractor; external vendor workforces are not counted as internal team members.",
+        "revenue_basis": "Advertising, affiliate and sponsorship revenue; excludes referred merchant sales",
+        "cost_basis": "Annual net margins include operating expenses and non-owner labor; monthly opex is fixed/semi-fixed overhead only. No owner salary is deducted. Capital needs may grow beyond startup range.",
+        "estimate_status": "Illustrative assumptions; not verified earnings data"
+      },
+      "scenarios": {
+        "conservative": {
+          "annual_gross_revenue_usd": 80000,
+          "net_profit_margin_pct": 20,
+          "annual_owner_net_profit_usd": 16000,
+          "full_time_including_owner": 2,
+          "contractors": 4,
+          "total_people": 6,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        },
+        "base_case": {
+          "annual_gross_revenue_usd": 490000.0,
+          "net_profit_margin_pct": 32.5,
+          "annual_owner_net_profit_usd": 159250,
+          "full_time_including_owner": 2,
+          "contractors": 4,
+          "total_people": 6,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        },
+        "scaled_small_team": {
+          "annual_gross_revenue_usd": 900000,
+          "net_profit_margin_pct": 45,
+          "annual_owner_net_profit_usd": 405000,
+          "full_time_including_owner": 3,
+          "contractors": 5,
+          "total_people": 8,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        }
+      },
+      "automation_levers": [
+        "Technical site audits",
+        "Content refresh queues",
+        "Revenue reporting"
+      ],
+      "key_risks": [
+        "Ranking losses",
+        "Slow audience growth",
+        "Revenue concentration"
+      ],
+      "regulatory_notes": [
+        "Respect copyright, advertising disclosures, privacy requirements and search platform policies."
+      ],
+      "rank": 10
+    },
+    {
+      "candidate_number": 26,
+      "slug": "high-ticket-brokerage",
+      "title": "High-Ticket Brokerage",
+      "category": "Specialist transaction services",
+      "production_stage": "candidate_scored",
+      "scores": {
+        "revenue_potential": 23,
+        "profit_margin_potential": 22,
+        "team_efficiency": 18,
+        "startup_accessibility": 10,
+        "automation_potential": 9
+      },
+      "dimension_max": {
+        "revenue_potential": 25,
+        "profit_margin_potential": 25,
+        "team_efficiency": 20,
+        "startup_accessibility": 15,
+        "automation_potential": 15
+      },
+      "total_score": 82,
+      "tier_label": "High-Leverage Operator Play",
+      "evidence_confidence": "Moderate",
+      "uncertainty_band": "±6 pts",
+      "uncertainty_bounds": {
+        "low": 76,
+        "high": 88
+      },
+      "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
+      "score_rationale": {
+        "revenue_potential": "Revenue Potential: 23/25. Large specialist transactions can yield substantial commissions, but closing frequency is uneven.",
+        "profit_margin_potential": "Profit Margin Potential: 22/25. Large specialist transactions can yield substantial commissions, but closing frequency is uneven.",
+        "team_efficiency": "Team Efficiency: 18/20. Large specialist transactions can yield substantial commissions, but closing frequency is uneven.",
+        "startup_accessibility": "Startup Accessibility: 10/15. Large specialist transactions can yield substantial commissions, but closing frequency is uneven.",
+        "automation_potential": "Automation Potential: 9/15. Large specialist transactions can yield substantial commissions, but closing frequency is uneven."
+      },
+      "economics": {
+        "gross_revenue_range": "$100,000–$1,000,000 USD annually",
+        "net_profit_margin_range": "25–50%",
+        "owner_net_profit_potential": "$25,000–$500,000 USD annually, before personal taxes and reinvestment",
+        "startup_capital_range": "$15,000–$100,000 USD",
+        "monthly_opex_range": "$3,000–$18,000 USD",
+        "time_to_first_deal": "3–12 months",
+        "typical_team_size": {
+          "full_time_including_owner": 1,
+          "contractors": 3,
+          "total_people": 4
+        },
+        "includes_contractors_note": "Headcount includes the working owner and recurring contractors as people, not FTE equivalents. Contractors may be part-time. Scaled scenario adds one employee and one contractor; external vendor workforces are not counted as internal team members.",
+        "revenue_basis": "Retained transaction commissions only; excludes underlying asset values",
+        "cost_basis": "Annual net margins include operating expenses and non-owner labor; monthly opex is fixed/semi-fixed overhead only. No owner salary is deducted. Capital needs may grow beyond startup range.",
+        "estimate_status": "Illustrative assumptions; not verified earnings data"
+      },
+      "scenarios": {
+        "conservative": {
+          "annual_gross_revenue_usd": 100000,
+          "net_profit_margin_pct": 25,
+          "annual_owner_net_profit_usd": 25000,
+          "full_time_including_owner": 1,
+          "contractors": 3,
+          "total_people": 4,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        },
+        "base_case": {
+          "annual_gross_revenue_usd": 550000.0,
+          "net_profit_margin_pct": 37.5,
+          "annual_owner_net_profit_usd": 206250,
+          "full_time_including_owner": 1,
+          "contractors": 3,
+          "total_people": 4,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        },
+        "scaled_small_team": {
+          "annual_gross_revenue_usd": 1000000,
+          "net_profit_margin_pct": 50,
+          "annual_owner_net_profit_usd": 500000,
+          "full_time_including_owner": 2,
+          "contractors": 4,
+          "total_people": 6,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        }
+      },
+      "automation_levers": [
+        "Buyer-seller matching",
+        "Deal milestone tracking",
+        "Document checklists"
+      ],
+      "key_risks": [
+        "Failed closings",
+        "Misrepresentation claims",
+        "Lumpy cash flow"
+      ],
+      "regulatory_notes": [
+        "Confirm asset-specific brokerage licenses, agency disclosures and client-fund handling rules."
+      ],
+      "rank": 11
+    },
+    {
+      "candidate_number": 11,
+      "slug": "equipment-brokerage",
+      "title": "Equipment Brokerage",
+      "category": "Industrial brokerage",
+      "production_stage": "candidate_scored",
+      "scores": {
+        "revenue_potential": 22,
+        "profit_margin_potential": 20,
+        "team_efficiency": 18,
+        "startup_accessibility": 11,
+        "automation_potential": 10
+      },
+      "dimension_max": {
+        "revenue_potential": 25,
+        "profit_margin_potential": 25,
+        "team_efficiency": 20,
+        "startup_accessibility": 15,
+        "automation_potential": 15
+      },
+      "total_score": 81,
+      "tier_label": "High-Leverage Operator Play",
+      "evidence_confidence": "Moderate",
+      "uncertainty_band": "±6 pts",
+      "uncertainty_bounds": {
+        "low": 75,
+        "high": 87
+      },
+      "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
+      "score_rationale": {
+        "revenue_potential": "Revenue Potential: 22/25. Fee-only brokerage avoids inventory, while inspections and deal sourcing remain manual.",
+        "profit_margin_potential": "Profit Margin Potential: 20/25. Fee-only brokerage avoids inventory, while inspections and deal sourcing remain manual.",
+        "team_efficiency": "Team Efficiency: 18/20. Fee-only brokerage avoids inventory, while inspections and deal sourcing remain manual.",
+        "startup_accessibility": "Startup Accessibility: 11/15. Fee-only brokerage avoids inventory, while inspections and deal sourcing remain manual.",
+        "automation_potential": "Automation Potential: 10/15. Fee-only brokerage avoids inventory, while inspections and deal sourcing remain manual."
+      },
+      "economics": {
+        "gross_revenue_range": "$100,000–$800,000 USD annually",
+        "net_profit_margin_range": "25–45%",
+        "owner_net_profit_potential": "$25,000–$360,000 USD annually, before personal taxes and reinvestment",
+        "startup_capital_range": "$10,000–$75,000 USD",
+        "monthly_opex_range": "$2,500–$14,000 USD",
+        "time_to_first_deal": "2–9 months",
+        "typical_team_size": {
+          "full_time_including_owner": 1,
+          "contractors": 3,
+          "total_people": 4
+        },
+        "includes_contractors_note": "Headcount includes the working owner and recurring contractors as people, not FTE equivalents. Contractors may be part-time. Scaled scenario adds one employee and one contractor; external vendor workforces are not counted as internal team members.",
+        "revenue_basis": "Broker commissions only; excludes equipment transaction value",
+        "cost_basis": "Annual net margins include operating expenses and non-owner labor; monthly opex is fixed/semi-fixed overhead only. No owner salary is deducted. Capital needs may grow beyond startup range.",
+        "estimate_status": "Illustrative assumptions; not verified earnings data"
+      },
+      "scenarios": {
+        "conservative": {
+          "annual_gross_revenue_usd": 100000,
+          "net_profit_margin_pct": 25,
+          "annual_owner_net_profit_usd": 25000,
+          "full_time_including_owner": 1,
+          "contractors": 3,
+          "total_people": 4,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        },
+        "base_case": {
+          "annual_gross_revenue_usd": 450000.0,
+          "net_profit_margin_pct": 35.0,
+          "annual_owner_net_profit_usd": 157500,
+          "full_time_including_owner": 1,
+          "contractors": 3,
+          "total_people": 4,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        },
+        "scaled_small_team": {
+          "annual_gross_revenue_usd": 800000,
+          "net_profit_margin_pct": 45,
+          "annual_owner_net_profit_usd": 360000,
+          "full_time_including_owner": 2,
+          "contractors": 4,
+          "total_people": 6,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        }
+      },
+      "automation_levers": [
+        "Inventory matching",
+        "Buyer alerts"
+      ],
+      "key_risks": [
+        "Equipment defects",
+        "Fraud",
+        "Lumpy commissions"
+      ],
+      "regulatory_notes": [
+        "Check dealer licensing, lien releases, warranties and export controls."
+      ],
+      "rank": 12
+    },
+    {
+      "candidate_number": 19,
+      "slug": "intellectual-property-licensing",
+      "title": "Intellectual Property Licensing",
+      "category": "Licensing services",
+      "production_stage": "candidate_scored",
+      "scores": {
+        "revenue_potential": 22,
+        "profit_margin_potential": 23,
+        "team_efficiency": 18,
+        "startup_accessibility": 6,
+        "automation_potential": 10
+      },
+      "dimension_max": {
+        "revenue_potential": 25,
+        "profit_margin_potential": 25,
+        "team_efficiency": 20,
+        "startup_accessibility": 15,
+        "automation_potential": 15
+      },
+      "total_score": 79,
+      "tier_label": "High-Leverage Operator Play",
+      "evidence_confidence": "Preliminary — Uncertainty Range",
+      "uncertainty_band": "±10 pts",
+      "uncertainty_bounds": {
+        "low": 69,
+        "high": 89
+      },
+      "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
+      "score_rationale": {
+        "revenue_potential": "Revenue Potential: 22/25. Reusable rights can earn royalties, but defensible IP and licensee adoption are costly to establish.",
+        "profit_margin_potential": "Profit Margin Potential: 23/25. Reusable rights can earn royalties, but defensible IP and licensee adoption are costly to establish.",
+        "team_efficiency": "Team Efficiency: 18/20. Reusable rights can earn royalties, but defensible IP and licensee adoption are costly to establish.",
+        "startup_accessibility": "Startup Accessibility: 6/15. Reusable rights can earn royalties, but defensible IP and licensee adoption are costly to establish.",
+        "automation_potential": "Automation Potential: 10/15. Reusable rights can earn royalties, but defensible IP and licensee adoption are costly to establish."
+      },
+      "economics": {
+        "gross_revenue_range": "$50,000–$800,000 USD annually",
+        "net_profit_margin_range": "25–60%",
+        "owner_net_profit_potential": "$12,500–$480,000 USD annually, before personal taxes and reinvestment",
+        "startup_capital_range": "$25,000–$250,000 USD",
+        "monthly_opex_range": "$2,000–$15,000 USD",
+        "time_to_first_deal": "6–24 months",
+        "typical_team_size": {
+          "full_time_including_owner": 1,
+          "contractors": 3,
+          "total_people": 4
+        },
+        "includes_contractors_note": "Headcount includes the working owner and recurring contractors as people, not FTE equivalents. Contractors may be part-time. Scaled scenario adds one employee and one contractor; external vendor workforces are not counted as internal team members.",
+        "revenue_basis": "License fees and royalties; excludes licensees' underlying product sales",
+        "cost_basis": "Annual net margins include operating expenses and non-owner labor; monthly opex is fixed/semi-fixed overhead only. No owner salary is deducted. Capital needs may grow beyond startup range.",
+        "estimate_status": "Illustrative assumptions; not verified earnings data"
+      },
+      "scenarios": {
+        "conservative": {
+          "annual_gross_revenue_usd": 50000,
+          "net_profit_margin_pct": 25,
+          "annual_owner_net_profit_usd": 12500,
+          "full_time_including_owner": 1,
+          "contractors": 3,
+          "total_people": 4,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        },
+        "base_case": {
+          "annual_gross_revenue_usd": 425000.0,
+          "net_profit_margin_pct": 42.5,
+          "annual_owner_net_profit_usd": 180625,
+          "full_time_including_owner": 1,
+          "contractors": 3,
+          "total_people": 4,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        },
+        "scaled_small_team": {
+          "annual_gross_revenue_usd": 800000,
+          "net_profit_margin_pct": 60,
+          "annual_owner_net_profit_usd": 480000,
+          "full_time_including_owner": 2,
+          "contractors": 4,
+          "total_people": 6,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        }
+      },
+      "automation_levers": [
+        "Royalty reporting",
+        "License renewal alerts",
+        "Contract obligation tracking"
+      ],
+      "key_risks": [
+        "Unproven demand",
+        "Infringement disputes",
+        "Licensee underreporting"
+      ],
+      "regulatory_notes": [
+        "Verify chain of title, permitted uses, territorial rights and competition-law constraints."
+      ],
+      "rank": 13
+    },
+    {
+      "candidate_number": 20,
+      "slug": "specialty-finance-brokerage",
+      "title": "Specialty Finance Brokerage",
+      "category": "Finance intermediary services",
+      "production_stage": "candidate_scored",
+      "scores": {
+        "revenue_potential": 23,
+        "profit_margin_potential": 21,
+        "team_efficiency": 17,
+        "startup_accessibility": 8,
+        "automation_potential": 10
+      },
+      "dimension_max": {
+        "revenue_potential": 25,
+        "profit_margin_potential": 25,
+        "team_efficiency": 20,
+        "startup_accessibility": 15,
+        "automation_potential": 15
+      },
+      "total_score": 79,
+      "tier_label": "High-Leverage Operator Play",
+      "evidence_confidence": "Moderate",
+      "uncertainty_band": "±6 pts",
+      "uncertainty_bounds": {
+        "low": 73,
+        "high": 85
+      },
+      "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
+      "score_rationale": {
+        "revenue_potential": "Revenue Potential: 23/25. Fee-only placement avoids lending capital, but underwriting coordination and licensing constrain scale.",
+        "profit_margin_potential": "Profit Margin Potential: 21/25. Fee-only placement avoids lending capital, but underwriting coordination and licensing constrain scale.",
+        "team_efficiency": "Team Efficiency: 17/20. Fee-only placement avoids lending capital, but underwriting coordination and licensing constrain scale.",
+        "startup_accessibility": "Startup Accessibility: 8/15. Fee-only placement avoids lending capital, but underwriting coordination and licensing constrain scale.",
+        "automation_potential": "Automation Potential: 10/15. Fee-only placement avoids lending capital, but underwriting coordination and licensing constrain scale."
+      },
+      "economics": {
+        "gross_revenue_range": "$120,000–$1,000,000 USD annually",
+        "net_profit_margin_range": "25–45%",
+        "owner_net_profit_potential": "$30,000–$450,000 USD annually, before personal taxes and reinvestment",
+        "startup_capital_range": "$20,000–$100,000 USD",
+        "monthly_opex_range": "$4,000–$18,000 USD",
+        "time_to_first_deal": "3–9 months",
+        "typical_team_size": {
+          "full_time_including_owner": 2,
+          "contractors": 2,
+          "total_people": 4
+        },
+        "includes_contractors_note": "Headcount includes the working owner and recurring contractors as people, not FTE equivalents. Contractors may be part-time. Scaled scenario adds one employee and one contractor; external vendor workforces are not counted as internal team members.",
+        "revenue_basis": "Retained origination or referral fees only; excludes loan principal",
+        "cost_basis": "Annual net margins include operating expenses and non-owner labor; monthly opex is fixed/semi-fixed overhead only. No owner salary is deducted. Capital needs may grow beyond startup range.",
+        "estimate_status": "Illustrative assumptions; not verified earnings data"
+      },
+      "scenarios": {
+        "conservative": {
+          "annual_gross_revenue_usd": 120000,
+          "net_profit_margin_pct": 25,
+          "annual_owner_net_profit_usd": 30000,
+          "full_time_including_owner": 2,
+          "contractors": 2,
+          "total_people": 4,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        },
+        "base_case": {
+          "annual_gross_revenue_usd": 560000.0,
+          "net_profit_margin_pct": 35.0,
+          "annual_owner_net_profit_usd": 196000,
+          "full_time_including_owner": 2,
+          "contractors": 2,
+          "total_people": 4,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        },
+        "scaled_small_team": {
+          "annual_gross_revenue_usd": 1000000,
+          "net_profit_margin_pct": 45,
+          "annual_owner_net_profit_usd": 450000,
+          "full_time_including_owner": 3,
+          "contractors": 3,
+          "total_people": 6,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        }
+      },
+      "automation_levers": [
+        "Application checklists",
+        "Lender matching",
+        "Renewal tracking"
+      ],
+      "key_risks": [
+        "Failed closings",
+        "Lender concentration",
+        "Commission clawbacks"
+      ],
+      "regulatory_notes": [
+        "Check loan-broker licensing, fee disclosures, fair-lending and data-security duties.",
+        "Securities placements may require separate broker-dealer registration."
+      ],
+      "rank": 14
+    },
+    {
+      "candidate_number": 8,
+      "slug": "judgment-recovery",
+      "title": "Judgment Recovery",
+      "category": "Recovery services",
+      "production_stage": "candidate_scored",
+      "scores": {
+        "revenue_potential": 20,
+        "profit_margin_potential": 21,
+        "team_efficiency": 16,
+        "startup_accessibility": 10,
+        "automation_potential": 10
+      },
+      "dimension_max": {
+        "revenue_potential": 25,
+        "profit_margin_potential": 25,
+        "team_efficiency": 20,
+        "startup_accessibility": 15,
+        "automation_potential": 15
+      },
+      "total_score": 77,
+      "tier_label": "High-Leverage Operator Play",
+      "evidence_confidence": "Moderate",
+      "uncertainty_band": "±6 pts",
+      "uncertainty_bounds": {
+        "low": 71,
+        "high": 83
+      },
+      "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
+      "score_rationale": {
+        "revenue_potential": "Revenue Potential: 20/25. Contingent collections can be efficient but many judgments are uncollectible.",
+        "profit_margin_potential": "Profit Margin Potential: 21/25. Contingent collections can be efficient but many judgments are uncollectible.",
+        "team_efficiency": "Team Efficiency: 16/20. Contingent collections can be efficient but many judgments are uncollectible.",
+        "startup_accessibility": "Startup Accessibility: 10/15. Contingent collections can be efficient but many judgments are uncollectible.",
+        "automation_potential": "Automation Potential: 10/15. Contingent collections can be efficient but many judgments are uncollectible."
+      },
+      "economics": {
+        "gross_revenue_range": "$60,000–$500,000 USD annually",
+        "net_profit_margin_range": "20–40%",
+        "owner_net_profit_potential": "$12,000–$200,000 USD annually, before personal taxes and reinvestment",
+        "startup_capital_range": "$10,000–$75,000 USD",
+        "monthly_opex_range": "$2,000–$12,000 USD",
+        "time_to_first_deal": "6–24 months",
+        "typical_team_size": {
+          "full_time_including_owner": 1,
+          "contractors": 3,
+          "total_people": 4
+        },
+        "includes_contractors_note": "Headcount includes the working owner and recurring contractors as people, not FTE equivalents. Contractors may be part-time. Scaled scenario adds one employee and one contractor; external vendor workforces are not counted as internal team members.",
+        "revenue_basis": "Recognized service fees, not client asset value",
+        "cost_basis": "Annual net margins include operating expenses and non-owner labor; monthly opex is fixed/semi-fixed overhead only. No owner salary is deducted. Capital needs may grow beyond startup range.",
+        "estimate_status": "Illustrative assumptions; not verified earnings data"
+      },
+      "scenarios": {
+        "conservative": {
+          "annual_gross_revenue_usd": 60000,
+          "net_profit_margin_pct": 20,
+          "annual_owner_net_profit_usd": 12000,
+          "full_time_including_owner": 1,
+          "contractors": 3,
+          "total_people": 4,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        },
+        "base_case": {
+          "annual_gross_revenue_usd": 280000.0,
+          "net_profit_margin_pct": 30.0,
+          "annual_owner_net_profit_usd": 84000,
+          "full_time_including_owner": 1,
+          "contractors": 3,
+          "total_people": 4,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        },
+        "scaled_small_team": {
+          "annual_gross_revenue_usd": 500000,
+          "net_profit_margin_pct": 40,
+          "annual_owner_net_profit_usd": 200000,
+          "full_time_including_owner": 2,
+          "contractors": 4,
+          "total_people": 6,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        }
+      },
+      "automation_levers": [
+        "Court deadline tracking",
+        "Payment reconciliation"
+      ],
+      "key_risks": [
+        "Insolvent debtors",
+        "Bankruptcy stays",
+        "Enforcement costs"
+      ],
+      "regulatory_notes": [
+        "Check collection licensing, consumer-debt rules, exemptions and lawful data access."
+      ],
+      "rank": 15
+    },
+    {
+      "candidate_number": 9,
+      "slug": "probate-real-estate",
+      "title": "Probate Real Estate",
+      "category": "Real estate services",
+      "production_stage": "research_corpus_ready",
+      "scores": {
+        "revenue_potential": 23,
+        "profit_margin_potential": 18,
+        "team_efficiency": 16,
+        "startup_accessibility": 9,
+        "automation_potential": 10
+      },
+      "dimension_max": {
+        "revenue_potential": 25,
+        "profit_margin_potential": 25,
+        "team_efficiency": 20,
+        "startup_accessibility": 15,
+        "automation_potential": 15
+      },
+      "total_score": 76,
+      "tier_label": "High-Leverage Operator Play",
+      "evidence_confidence": "High",
+      "uncertainty_band": "±3 pts",
+      "uncertainty_bounds": {
+        "low": 73,
+        "high": 79
+      },
+      "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
+      "score_rationale": {
+        "revenue_potential": "Revenue Potential: 23/25. Modeled as licensed brokerage rather than capital-heavy property acquisition.",
+        "profit_margin_potential": "Profit Margin Potential: 18/25. Modeled as licensed brokerage rather than capital-heavy property acquisition.",
+        "team_efficiency": "Team Efficiency: 16/20. Modeled as licensed brokerage rather than capital-heavy property acquisition.",
+        "startup_accessibility": "Startup Accessibility: 9/15. Modeled as licensed brokerage rather than capital-heavy property acquisition.",
+        "automation_potential": "Automation Potential: 10/15. Modeled as licensed brokerage rather than capital-heavy property acquisition."
+      },
+      "economics": {
+        "gross_revenue_range": "$120,000–$900,000 USD annually",
+        "net_profit_margin_range": "20–35%",
+        "owner_net_profit_potential": "$24,000–$315,000 USD annually, before personal taxes and reinvestment",
+        "startup_capital_range": "$15,000–$100,000 USD",
+        "monthly_opex_range": "$3,000–$18,000 USD",
+        "time_to_first_deal": "4–18 months",
+        "typical_team_size": {
+          "full_time_including_owner": 2,
+          "contractors": 3,
+          "total_people": 5
+        },
+        "includes_contractors_note": "Headcount includes the working owner and recurring contractors as people, not FTE equivalents. Contractors may be part-time. Scaled scenario adds one employee and one contractor; external vendor workforces are not counted as internal team members.",
+        "revenue_basis": "Retained brokerage commissions after brokerage splits, not home sale values",
+        "cost_basis": "Annual net margins include operating expenses and non-owner labor; monthly opex is fixed/semi-fixed overhead only. No owner salary is deducted. Capital needs may grow beyond startup range.",
+        "estimate_status": "Illustrative assumptions; not verified earnings data"
+      },
+      "scenarios": {
+        "conservative": {
+          "annual_gross_revenue_usd": 120000,
+          "net_profit_margin_pct": 20,
+          "annual_owner_net_profit_usd": 24000,
+          "full_time_including_owner": 2,
+          "contractors": 3,
+          "total_people": 5,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        },
+        "base_case": {
+          "annual_gross_revenue_usd": 510000.0,
+          "net_profit_margin_pct": 27.5,
+          "annual_owner_net_profit_usd": 140250,
+          "full_time_including_owner": 2,
+          "contractors": 3,
+          "total_people": 5,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        },
+        "scaled_small_team": {
+          "annual_gross_revenue_usd": 900000,
+          "net_profit_margin_pct": 35,
+          "annual_owner_net_profit_usd": 315000,
+          "full_time_including_owner": 3,
+          "contractors": 4,
+          "total_people": 7,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        }
+      },
+      "automation_levers": [
+        "Docket alerts",
+        "Transaction checklists"
+      ],
+      "key_risks": [
+        "Court delays",
+        "Family disputes",
+        "Housing-market cycles"
+      ],
+      "regulatory_notes": [
+        "Real estate licensing, fiduciary duties and court-sale approvals may apply."
+      ],
+      "rank": 16
+    },
+    {
+      "candidate_number": 16,
+      "slug": "domain-investing",
+      "title": "Domain Investing",
+      "category": "Digital asset trading",
+      "production_stage": "candidate_scored",
+      "scores": {
+        "revenue_potential": 17,
+        "profit_margin_potential": 18,
+        "team_efficiency": 19,
+        "startup_accessibility": 9,
+        "automation_potential": 11
+      },
+      "dimension_max": {
+        "revenue_potential": 25,
+        "profit_margin_potential": 25,
+        "team_efficiency": 20,
+        "startup_accessibility": 15,
+        "automation_potential": 15
+      },
+      "total_score": 74,
+      "tier_label": "Disciplined Specialist Play",
+      "evidence_confidence": "Moderate",
+      "uncertainty_band": "±6 pts",
+      "uncertainty_bounds": {
+        "low": 68,
+        "high": 80
+      },
+      "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
+      "score_rationale": {
+        "revenue_potential": "Revenue Potential: 17/25. Lean portfolios can produce high-margin sales, but low sell-through ties up capital.",
+        "profit_margin_potential": "Profit Margin Potential: 18/25. Lean portfolios can produce high-margin sales, but low sell-through ties up capital.",
+        "team_efficiency": "Team Efficiency: 19/20. Lean portfolios can produce high-margin sales, but low sell-through ties up capital.",
+        "startup_accessibility": "Startup Accessibility: 9/15. Lean portfolios can produce high-margin sales, but low sell-through ties up capital.",
+        "automation_potential": "Automation Potential: 11/15. Lean portfolios can produce high-margin sales, but low sell-through ties up capital."
+      },
+      "economics": {
+        "gross_revenue_range": "$20,000–$300,000 USD annually",
+        "net_profit_margin_range": "15–40%",
+        "owner_net_profit_potential": "$3,000–$120,000 USD annually, before personal taxes and reinvestment",
+        "startup_capital_range": "$10,000–$150,000 USD",
+        "monthly_opex_range": "$500–$5,000 USD",
+        "time_to_first_deal": "3–24 months",
+        "typical_team_size": {
+          "full_time_including_owner": 1,
+          "contractors": 1,
+          "total_people": 2
+        },
+        "includes_contractors_note": "Headcount includes the working owner and recurring contractors as people, not FTE equivalents. Contractors may be part-time. Scaled scenario adds one employee and one contractor; external vendor workforces are not counted as internal team members.",
+        "revenue_basis": "Gross domain sale proceeds; acquisition and renewal costs included in margin",
+        "cost_basis": "Annual net margins include operating expenses and non-owner labor; monthly opex is fixed/semi-fixed overhead only. No owner salary is deducted. Capital needs may grow beyond startup range.",
+        "estimate_status": "Illustrative assumptions; not verified earnings data"
+      },
+      "scenarios": {
+        "conservative": {
+          "annual_gross_revenue_usd": 20000,
+          "net_profit_margin_pct": 15,
+          "annual_owner_net_profit_usd": 3000,
+          "full_time_including_owner": 1,
+          "contractors": 1,
+          "total_people": 2,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        },
+        "base_case": {
+          "annual_gross_revenue_usd": 160000.0,
+          "net_profit_margin_pct": 27.5,
+          "annual_owner_net_profit_usd": 44000,
+          "full_time_including_owner": 1,
+          "contractors": 1,
+          "total_people": 2,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        },
+        "scaled_small_team": {
+          "annual_gross_revenue_usd": 300000,
+          "net_profit_margin_pct": 40,
+          "annual_owner_net_profit_usd": 120000,
+          "full_time_including_owner": 2,
+          "contractors": 2,
+          "total_people": 4,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        }
+      },
+      "automation_levers": [
+        "Renewal tracking",
+        "Comparable-sale monitoring",
+        "Inbound inquiry routing"
+      ],
+      "key_risks": [
+        "Illiquid inventory",
+        "Renewal costs",
+        "Trademark disputes"
+      ],
+      "regulatory_notes": [
+        "Review trademark conflicts, domain dispute policies and anti-cybersquatting laws."
+      ],
+      "rank": 17
+    },
+    {
+      "candidate_number": 6,
+      "slug": "land-flipping",
+      "title": "Land Flipping",
+      "category": "Real estate trading",
+      "production_stage": "candidate_scored",
+      "scores": {
+        "revenue_potential": 21,
+        "profit_margin_potential": 18,
+        "team_efficiency": 17,
+        "startup_accessibility": 6,
+        "automation_potential": 10
+      },
+      "dimension_max": {
+        "revenue_potential": 25,
+        "profit_margin_potential": 25,
+        "team_efficiency": 20,
+        "startup_accessibility": 15,
+        "automation_potential": 15
+      },
+      "total_score": 72,
+      "tier_label": "Disciplined Specialist Play",
+      "evidence_confidence": "Moderate",
+      "uncertainty_band": "±6 pts",
+      "uncertainty_bounds": {
+        "low": 66,
+        "high": 78
+      },
+      "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
+      "score_rationale": {
+        "revenue_potential": "Revenue Potential: 21/25. Small teams can trade parcels, but inventory capital and due diligence limit access.",
+        "profit_margin_potential": "Profit Margin Potential: 18/25. Small teams can trade parcels, but inventory capital and due diligence limit access.",
+        "team_efficiency": "Team Efficiency: 17/20. Small teams can trade parcels, but inventory capital and due diligence limit access.",
+        "startup_accessibility": "Startup Accessibility: 6/15. Small teams can trade parcels, but inventory capital and due diligence limit access.",
+        "automation_potential": "Automation Potential: 10/15. Small teams can trade parcels, but inventory capital and due diligence limit access."
+      },
+      "economics": {
+        "gross_revenue_range": "$200,000–$1,500,000 USD annually",
+        "net_profit_margin_range": "12–25%",
+        "owner_net_profit_potential": "$24,000–$375,000 USD annually, before personal taxes and reinvestment",
+        "startup_capital_range": "$50,000–$400,000 USD",
+        "monthly_opex_range": "$3,000–$15,000 USD",
+        "time_to_first_deal": "3–12 months",
+        "typical_team_size": {
+          "full_time_including_owner": 1,
+          "contractors": 3,
+          "total_people": 4
+        },
+        "includes_contractors_note": "Headcount includes the working owner and recurring contractors as people, not FTE equivalents. Contractors may be part-time. Scaled scenario adds one employee and one contractor; external vendor workforces are not counted as internal team members.",
+        "revenue_basis": "Gross parcel sale proceeds; acquisition costs included in net margin",
+        "cost_basis": "Annual net margins include operating expenses and non-owner labor; monthly opex is fixed/semi-fixed overhead only. No owner salary is deducted. Capital needs may grow beyond startup range.",
+        "estimate_status": "Illustrative assumptions; not verified earnings data"
+      },
+      "scenarios": {
+        "conservative": {
+          "annual_gross_revenue_usd": 200000,
+          "net_profit_margin_pct": 12,
+          "annual_owner_net_profit_usd": 24000,
+          "full_time_including_owner": 1,
+          "contractors": 3,
+          "total_people": 4,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        },
+        "base_case": {
+          "annual_gross_revenue_usd": 850000.0,
+          "net_profit_margin_pct": 18.5,
+          "annual_owner_net_profit_usd": 157250,
+          "full_time_including_owner": 1,
+          "contractors": 3,
+          "total_people": 4,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        },
+        "scaled_small_team": {
+          "annual_gross_revenue_usd": 1500000,
+          "net_profit_margin_pct": 25,
+          "annual_owner_net_profit_usd": 375000,
+          "full_time_including_owner": 2,
+          "contractors": 4,
+          "total_people": 6,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        }
+      },
+      "automation_levers": [
+        "Parcel screening",
+        "Comparable-sale tracking"
+      ],
+      "key_risks": [
+        "Illiquidity",
+        "No legal access",
+        "Environmental constraints"
+      ],
+      "regulatory_notes": [
+        "Review zoning, title, disclosures and broker licensing when representing others."
+      ],
+      "rank": 18
+    },
+    {
+      "candidate_number": 23,
+      "slug": "enterprise-software-reselling",
+      "title": "Enterprise Software Reselling",
+      "category": "Software channel sales",
+      "production_stage": "candidate_scored",
+      "scores": {
+        "revenue_potential": 23,
+        "profit_margin_potential": 14,
+        "team_efficiency": 15,
+        "startup_accessibility": 9,
+        "automation_potential": 11
+      },
+      "dimension_max": {
+        "revenue_potential": 25,
+        "profit_margin_potential": 25,
+        "team_efficiency": 20,
+        "startup_accessibility": 15,
+        "automation_potential": 15
+      },
+      "total_score": 72,
+      "tier_label": "Disciplined Specialist Play",
+      "evidence_confidence": "Moderate",
+      "uncertainty_band": "±6 pts",
+      "uncertainty_bounds": {
+        "low": 66,
+        "high": 78
+      },
+      "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
+      "score_rationale": {
+        "revenue_potential": "Revenue Potential: 23/25. Large license billings mask vendor costs; renewals help but enterprise sales need specialist labor.",
+        "profit_margin_potential": "Profit Margin Potential: 14/25. Large license billings mask vendor costs; renewals help but enterprise sales need specialist labor.",
+        "team_efficiency": "Team Efficiency: 15/20. Large license billings mask vendor costs; renewals help but enterprise sales need specialist labor.",
+        "startup_accessibility": "Startup Accessibility: 9/15. Large license billings mask vendor costs; renewals help but enterprise sales need specialist labor.",
+        "automation_potential": "Automation Potential: 11/15. Large license billings mask vendor costs; renewals help but enterprise sales need specialist labor."
+      },
+      "economics": {
+        "gross_revenue_range": "$300,000–$2,500,000 USD annually",
+        "net_profit_margin_range": "8–20%",
+        "owner_net_profit_potential": "$24,000–$500,000 USD annually, before personal taxes and reinvestment",
+        "startup_capital_range": "$25,000–$150,000 USD",
+        "monthly_opex_range": "$5,000–$25,000 USD",
+        "time_to_first_deal": "3–12 months",
+        "typical_team_size": {
+          "full_time_including_owner": 2,
+          "contractors": 3,
+          "total_people": 5
+        },
+        "includes_contractors_note": "Headcount includes the working owner and recurring contractors as people, not FTE equivalents. Contractors may be part-time. Scaled scenario adds one employee and one contractor; external vendor workforces are not counted as internal team members.",
+        "revenue_basis": "Gross license resale and service billings; vendor costs included in margin",
+        "cost_basis": "Annual net margins include operating expenses and non-owner labor; monthly opex is fixed/semi-fixed overhead only. No owner salary is deducted. Capital needs may grow beyond startup range.",
+        "estimate_status": "Illustrative assumptions; not verified earnings data"
+      },
+      "scenarios": {
+        "conservative": {
+          "annual_gross_revenue_usd": 300000,
+          "net_profit_margin_pct": 8,
+          "annual_owner_net_profit_usd": 24000,
+          "full_time_including_owner": 2,
+          "contractors": 3,
+          "total_people": 5,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        },
+        "base_case": {
+          "annual_gross_revenue_usd": 1400000.0,
+          "net_profit_margin_pct": 14.0,
+          "annual_owner_net_profit_usd": 196000,
+          "full_time_including_owner": 2,
+          "contractors": 3,
+          "total_people": 5,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        },
+        "scaled_small_team": {
+          "annual_gross_revenue_usd": 2500000,
+          "net_profit_margin_pct": 20,
+          "annual_owner_net_profit_usd": 500000,
+          "full_time_including_owner": 3,
+          "contractors": 4,
+          "total_people": 7,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        }
+      },
+      "automation_levers": [
+        "Renewal alerts",
+        "Quote generation",
+        "License reconciliation"
+      ],
+      "key_risks": [
+        "Vendor policy changes",
+        "Slow collections",
+        "Channel competition"
+      ],
+      "regulatory_notes": [
+        "Verify reseller authorization, license terms, procurement requirements and data-processing duties."
+      ],
+      "rank": 19
+    },
+    {
+      "candidate_number": 4,
+      "slug": "government-contract-brokering",
+      "title": "Government Contract Brokering",
+      "category": "Procurement services",
+      "production_stage": "candidate_scored",
+      "scores": {
+        "revenue_potential": 22,
+        "profit_margin_potential": 16,
+        "team_efficiency": 14,
+        "startup_accessibility": 8,
+        "automation_potential": 10
+      },
+      "dimension_max": {
+        "revenue_potential": 25,
+        "profit_margin_potential": 25,
+        "team_efficiency": 20,
+        "startup_accessibility": 15,
+        "automation_potential": 15
+      },
+      "total_score": 70,
+      "tier_label": "Disciplined Specialist Play",
+      "evidence_confidence": "Moderate",
+      "uncertainty_band": "±6 pts",
+      "uncertainty_bounds": {
+        "low": 64,
+        "high": 76
+      },
+      "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
+      "score_rationale": {
+        "revenue_potential": "Revenue Potential: 22/25. Large awards do not translate to large fees; compliance and sales require labor.",
+        "profit_margin_potential": "Profit Margin Potential: 16/25. Large awards do not translate to large fees; compliance and sales require labor.",
+        "team_efficiency": "Team Efficiency: 14/20. Large awards do not translate to large fees; compliance and sales require labor.",
+        "startup_accessibility": "Startup Accessibility: 8/15. Large awards do not translate to large fees; compliance and sales require labor.",
+        "automation_potential": "Automation Potential: 10/15. Large awards do not translate to large fees; compliance and sales require labor."
+      },
+      "economics": {
+        "gross_revenue_range": "$120,000–$1,000,000 USD annually",
+        "net_profit_margin_range": "15–30%",
+        "owner_net_profit_potential": "$18,000–$300,000 USD annually, before personal taxes and reinvestment",
+        "startup_capital_range": "$25,000–$150,000 USD",
+        "monthly_opex_range": "$5,000–$25,000 USD",
+        "time_to_first_deal": "6–18 months",
+        "typical_team_size": {
+          "full_time_including_owner": 2,
+          "contractors": 3,
+          "total_people": 5
+        },
+        "includes_contractors_note": "Headcount includes the working owner and recurring contractors as people, not FTE equivalents. Contractors may be part-time. Scaled scenario adds one employee and one contractor; external vendor workforces are not counted as internal team members.",
+        "revenue_basis": "Recognized service fees, not client asset value",
+        "cost_basis": "Annual net margins include operating expenses and non-owner labor; monthly opex is fixed/semi-fixed overhead only. No owner salary is deducted. Capital needs may grow beyond startup range.",
+        "estimate_status": "Illustrative assumptions; not verified earnings data"
+      },
+      "scenarios": {
+        "conservative": {
+          "annual_gross_revenue_usd": 120000,
+          "net_profit_margin_pct": 15,
+          "annual_owner_net_profit_usd": 18000,
+          "full_time_including_owner": 2,
+          "contractors": 3,
+          "total_people": 5,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        },
+        "base_case": {
+          "annual_gross_revenue_usd": 560000.0,
+          "net_profit_margin_pct": 22.5,
+          "annual_owner_net_profit_usd": 126000,
+          "full_time_including_owner": 2,
+          "contractors": 3,
+          "total_people": 5,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        },
+        "scaled_small_team": {
+          "annual_gross_revenue_usd": 1000000,
+          "net_profit_margin_pct": 30,
+          "annual_owner_net_profit_usd": 300000,
+          "full_time_including_owner": 3,
+          "contractors": 4,
+          "total_people": 7,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        }
+      },
+      "automation_levers": [
+        "Solicitation alerts",
+        "Bid calendars",
+        "Compliance checklists"
+      ],
+      "key_risks": [
+        "Award uncertainty",
+        "Payment delays",
+        "Supplier failure"
+      ],
+      "regulatory_notes": [
+        "Review contingent-fee restrictions, procurement integrity and anti-kickback rules.",
+        "Pass-through restrictions and set-aside rules can prohibit proposed structures."
+      ],
+      "rank": 20
+    },
+    {
+      "candidate_number": 28,
+      "slug": "automated-e-commerce",
+      "title": "Automated E-Commerce",
+      "category": "Online retail",
+      "production_stage": "candidate_scored",
+      "scores": {
+        "revenue_potential": 23,
+        "profit_margin_potential": 13,
+        "team_efficiency": 14,
+        "startup_accessibility": 8,
+        "automation_potential": 12
+      },
+      "dimension_max": {
+        "revenue_potential": 25,
+        "profit_margin_potential": 25,
+        "team_efficiency": 20,
+        "startup_accessibility": 15,
+        "automation_potential": 15
+      },
+      "total_score": 70,
+      "tier_label": "Disciplined Specialist Play",
+      "evidence_confidence": "Moderate",
+      "uncertainty_band": "±6 pts",
+      "uncertainty_bounds": {
+        "low": 64,
+        "high": 76
+      },
+      "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
+      "score_rationale": {
+        "revenue_potential": "Revenue Potential: 23/25. Automation reduces routine order work, not inventory exposure, returns or supplier oversight.",
+        "profit_margin_potential": "Profit Margin Potential: 13/25. Automation reduces routine order work, not inventory exposure, returns or supplier oversight.",
+        "team_efficiency": "Team Efficiency: 14/20. Automation reduces routine order work, not inventory exposure, returns or supplier oversight.",
+        "startup_accessibility": "Startup Accessibility: 8/15. Automation reduces routine order work, not inventory exposure, returns or supplier oversight.",
+        "automation_potential": "Automation Potential: 12/15. Automation reduces routine order work, not inventory exposure, returns or supplier oversight."
+      },
+      "economics": {
+        "gross_revenue_range": "$250,000–$2,000,000 USD annually",
+        "net_profit_margin_range": "5–18%",
+        "owner_net_profit_potential": "$12,500–$360,000 USD annually, before personal taxes and reinvestment",
+        "startup_capital_range": "$30,000–$250,000 USD",
+        "monthly_opex_range": "$4,000–$25,000 USD",
+        "time_to_first_deal": "2–6 months",
+        "typical_team_size": {
+          "full_time_including_owner": 2,
+          "contractors": 3,
+          "total_people": 5
+        },
+        "includes_contractors_note": "Headcount includes the working owner and recurring contractors as people, not FTE equivalents. Contractors may be part-time. Scaled scenario adds one employee and one contractor; external vendor workforces are not counted as internal team members.",
+        "revenue_basis": "Retail sales net of refunds; goods, fulfillment and advertising included in margin",
+        "cost_basis": "Annual net margins include operating expenses and non-owner labor; monthly opex is fixed/semi-fixed overhead only. No owner salary is deducted. Capital needs may grow beyond startup range.",
+        "estimate_status": "Illustrative assumptions; not verified earnings data"
+      },
+      "scenarios": {
+        "conservative": {
+          "annual_gross_revenue_usd": 250000,
+          "net_profit_margin_pct": 5,
+          "annual_owner_net_profit_usd": 12500,
+          "full_time_including_owner": 2,
+          "contractors": 3,
+          "total_people": 5,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        },
+        "base_case": {
+          "annual_gross_revenue_usd": 1125000.0,
+          "net_profit_margin_pct": 11.5,
+          "annual_owner_net_profit_usd": 129375,
+          "full_time_including_owner": 2,
+          "contractors": 3,
+          "total_people": 5,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        },
+        "scaled_small_team": {
+          "annual_gross_revenue_usd": 2000000,
+          "net_profit_margin_pct": 18,
+          "annual_owner_net_profit_usd": 360000,
+          "full_time_including_owner": 3,
+          "contractors": 4,
+          "total_people": 7,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        }
+      },
+      "automation_levers": [
+        "Order routing",
+        "Inventory alerts",
+        "Returns tracking"
+      ],
+      "key_risks": [
+        "Ad-cost inflation",
+        "Stockouts",
+        "Product liability"
+      ],
+      "regulatory_notes": [
+        "Check product safety, import duties, sales taxes, privacy and consumer protection requirements."
+      ],
+      "rank": 21
+    },
+    {
+      "candidate_number": 14,
+      "slug": "medical-equipment-resale",
+      "title": "Medical Equipment Resale",
+      "category": "Equipment trading",
+      "production_stage": "candidate_scored",
+      "scores": {
+        "revenue_potential": 21,
+        "profit_margin_potential": 16,
+        "team_efficiency": 13,
+        "startup_accessibility": 6,
+        "automation_potential": 8
+      },
+      "dimension_max": {
+        "revenue_potential": 25,
+        "profit_margin_potential": 25,
+        "team_efficiency": 20,
+        "startup_accessibility": 15,
+        "automation_potential": 15
+      },
+      "total_score": 64,
+      "tier_label": "Capital / Labor Intensive",
+      "evidence_confidence": "Moderate",
+      "uncertainty_band": "±6 pts",
+      "uncertainty_bounds": {
+        "low": 58,
+        "high": 70
+      },
+      "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
+      "score_rationale": {
+        "revenue_potential": "Revenue Potential: 21/25. Specialist refurbishment, inventory and traceability reduce lean-team economics.",
+        "profit_margin_potential": "Profit Margin Potential: 16/25. Specialist refurbishment, inventory and traceability reduce lean-team economics.",
+        "team_efficiency": "Team Efficiency: 13/20. Specialist refurbishment, inventory and traceability reduce lean-team economics.",
+        "startup_accessibility": "Startup Accessibility: 6/15. Specialist refurbishment, inventory and traceability reduce lean-team economics.",
+        "automation_potential": "Automation Potential: 8/15. Specialist refurbishment, inventory and traceability reduce lean-team economics."
+      },
+      "economics": {
+        "gross_revenue_range": "$250,000–$1,800,000 USD annually",
+        "net_profit_margin_range": "10–22%",
+        "owner_net_profit_potential": "$25,000–$396,000 USD annually, before personal taxes and reinvestment",
+        "startup_capital_range": "$75,000–$400,000 USD",
+        "monthly_opex_range": "$5,000–$22,000 USD",
+        "time_to_first_deal": "3–9 months",
+        "typical_team_size": {
+          "full_time_including_owner": 2,
+          "contractors": 4,
+          "total_people": 6
+        },
+        "includes_contractors_note": "Headcount includes the working owner and recurring contractors as people, not FTE equivalents. Contractors may be part-time. Scaled scenario adds one employee and one contractor; external vendor workforces are not counted as internal team members.",
+        "revenue_basis": "Gross equipment resale proceeds; acquisition and refurbishment included in margin",
+        "cost_basis": "Annual net margins include operating expenses and non-owner labor; monthly opex is fixed/semi-fixed overhead only. No owner salary is deducted. Capital needs may grow beyond startup range.",
+        "estimate_status": "Illustrative assumptions; not verified earnings data"
+      },
+      "scenarios": {
+        "conservative": {
+          "annual_gross_revenue_usd": 250000,
+          "net_profit_margin_pct": 10,
+          "annual_owner_net_profit_usd": 25000,
+          "full_time_including_owner": 2,
+          "contractors": 4,
+          "total_people": 6,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        },
+        "base_case": {
+          "annual_gross_revenue_usd": 1025000.0,
+          "net_profit_margin_pct": 16.0,
+          "annual_owner_net_profit_usd": 164000,
+          "full_time_including_owner": 2,
+          "contractors": 4,
+          "total_people": 6,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        },
+        "scaled_small_team": {
+          "annual_gross_revenue_usd": 1800000,
+          "net_profit_margin_pct": 22,
+          "annual_owner_net_profit_usd": 396000,
+          "full_time_including_owner": 3,
+          "contractors": 5,
+          "total_people": 8,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        }
+      },
+      "automation_levers": [
+        "Inventory tracking",
+        "Service-history indexing"
+      ],
+      "key_risks": [
+        "Device liability",
+        "Obsolescence",
+        "Unsellable inventory"
+      ],
+      "regulatory_notes": [
+        "Check device-specific FDA obligations, servicing versus remanufacturing and state licensing.",
+        "Sanitize stored patient data and verify decontamination procedures."
+      ],
+      "rank": 22
+    },
+    {
+      "candidate_number": 7,
+      "slug": "mineral-rights",
+      "title": "Mineral Rights",
+      "category": "Resource assets",
+      "production_stage": "candidate_scored",
+      "scores": {
+        "revenue_potential": 20,
+        "profit_margin_potential": 17,
+        "team_efficiency": 16,
+        "startup_accessibility": 3,
+        "automation_potential": 7
+      },
+      "dimension_max": {
+        "revenue_potential": 25,
+        "profit_margin_potential": 25,
+        "team_efficiency": 20,
+        "startup_accessibility": 15,
+        "automation_potential": 15
+      },
+      "total_score": 63,
+      "tier_label": "Capital / Labor Intensive",
+      "evidence_confidence": "Moderate",
+      "uncertainty_band": "±6 pts",
+      "uncertainty_bounds": {
+        "low": 57,
+        "high": 69
+      },
+      "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
+      "score_rationale": {
+        "revenue_potential": "Revenue Potential: 20/25. Specialist title work and substantial capital outweigh passive-income appeal.",
+        "profit_margin_potential": "Profit Margin Potential: 17/25. Specialist title work and substantial capital outweigh passive-income appeal.",
+        "team_efficiency": "Team Efficiency: 16/20. Specialist title work and substantial capital outweigh passive-income appeal.",
+        "startup_accessibility": "Startup Accessibility: 3/15. Specialist title work and substantial capital outweigh passive-income appeal.",
+        "automation_potential": "Automation Potential: 7/15. Specialist title work and substantial capital outweigh passive-income appeal."
+      },
+      "economics": {
+        "gross_revenue_range": "$30,000–$400,000 USD annually",
+        "net_profit_margin_range": "20–45%",
+        "owner_net_profit_potential": "$6,000–$180,000 USD annually, before personal taxes and reinvestment",
+        "startup_capital_range": "$150,000–$2,000,000 USD",
+        "monthly_opex_range": "$1,000–$12,000 USD",
+        "time_to_first_deal": "6–24 months",
+        "typical_team_size": {
+          "full_time_including_owner": 1,
+          "contractors": 3,
+          "total_people": 4
+        },
+        "includes_contractors_note": "Headcount includes the working owner and recurring contractors as people, not FTE equivalents. Contractors may be part-time. Scaled scenario adds one employee and one contractor; external vendor workforces are not counted as internal team members.",
+        "revenue_basis": "Royalty receipts and realized rights-trading gains, excluding returned basis",
+        "cost_basis": "Annual net margins include operating expenses and non-owner labor; monthly opex is fixed/semi-fixed overhead only. No owner salary is deducted. Capital needs may grow beyond startup range.",
+        "estimate_status": "Illustrative assumptions; not verified earnings data"
+      },
+      "scenarios": {
+        "conservative": {
+          "annual_gross_revenue_usd": 30000,
+          "net_profit_margin_pct": 20,
+          "annual_owner_net_profit_usd": 6000,
+          "full_time_including_owner": 1,
+          "contractors": 3,
+          "total_people": 4,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        },
+        "base_case": {
+          "annual_gross_revenue_usd": 215000.0,
+          "net_profit_margin_pct": 32.5,
+          "annual_owner_net_profit_usd": 69875,
+          "full_time_including_owner": 1,
+          "contractors": 3,
+          "total_people": 4,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        },
+        "scaled_small_team": {
+          "annual_gross_revenue_usd": 400000,
+          "net_profit_margin_pct": 45,
+          "annual_owner_net_profit_usd": 180000,
+          "full_time_including_owner": 2,
+          "contractors": 4,
+          "total_people": 6,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        }
+      },
+      "automation_levers": [
+        "Royalty reconciliation",
+        "Production monitoring"
+      ],
+      "key_risks": [
+        "Commodity prices",
+        "Depletion",
+        "Title disputes"
+      ],
+      "regulatory_notes": [
+        "Review severed mineral title, leases, tax obligations and securities rules if pooling funds."
+      ],
+      "rank": 23
+    },
+    {
+      "candidate_number": 3,
+      "slug": "tax-lien-investing",
+      "title": "Tax Lien Investing",
+      "category": "Asset investing",
+      "production_stage": "candidate_scored",
+      "scores": {
+        "revenue_potential": 17,
+        "profit_margin_potential": 15,
+        "team_efficiency": 17,
+        "startup_accessibility": 5,
+        "automation_potential": 8
+      },
+      "dimension_max": {
+        "revenue_potential": 25,
+        "profit_margin_potential": 25,
+        "team_efficiency": 20,
+        "startup_accessibility": 15,
+        "automation_potential": 15
+      },
+      "total_score": 62,
+      "tier_label": "Capital / Labor Intensive",
+      "evidence_confidence": "Moderate",
+      "uncertainty_band": "±6 pts",
+      "uncertainty_bounds": {
+        "low": 56,
+        "high": 68
+      },
+      "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
+      "score_rationale": {
+        "revenue_potential": "Revenue Potential: 17/25. Lean administration cannot offset capital lockup and adverse property selection.",
+        "profit_margin_potential": "Profit Margin Potential: 15/25. Lean administration cannot offset capital lockup and adverse property selection.",
+        "team_efficiency": "Team Efficiency: 17/20. Lean administration cannot offset capital lockup and adverse property selection.",
+        "startup_accessibility": "Startup Accessibility: 5/15. Lean administration cannot offset capital lockup and adverse property selection.",
+        "automation_potential": "Automation Potential: 8/15. Lean administration cannot offset capital lockup and adverse property selection."
+      },
+      "economics": {
+        "gross_revenue_range": "$15,000–$180,000 USD annually",
+        "net_profit_margin_range": "30–55%",
+        "owner_net_profit_potential": "$4,500–$99,000 USD annually, before personal taxes and reinvestment",
+        "startup_capital_range": "$100,000–$1,500,000 USD",
+        "monthly_opex_range": "$500–$4,000 USD",
+        "time_to_first_deal": "6–36 months",
+        "typical_team_size": {
+          "full_time_including_owner": 1,
+          "contractors": 2,
+          "total_people": 3
+        },
+        "includes_contractors_note": "Headcount includes the working owner and recurring contractors as people, not FTE equivalents. Contractors may be part-time. Scaled scenario adds one employee and one contractor; external vendor workforces are not counted as internal team members.",
+        "revenue_basis": "Realized interest, penalties and disposition gains; excludes returned principal",
+        "cost_basis": "Annual net margins include operating expenses and non-owner labor; monthly opex is fixed/semi-fixed overhead only. No owner salary is deducted. Capital needs may grow beyond startup range.",
+        "estimate_status": "Illustrative assumptions; not verified earnings data"
+      },
+      "scenarios": {
+        "conservative": {
+          "annual_gross_revenue_usd": 15000,
+          "net_profit_margin_pct": 30,
+          "annual_owner_net_profit_usd": 4500,
+          "full_time_including_owner": 1,
+          "contractors": 2,
+          "total_people": 3,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        },
+        "base_case": {
+          "annual_gross_revenue_usd": 97500.0,
+          "net_profit_margin_pct": 42.5,
+          "annual_owner_net_profit_usd": 41438,
+          "full_time_including_owner": 1,
+          "contractors": 2,
+          "total_people": 3,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        },
+        "scaled_small_team": {
+          "annual_gross_revenue_usd": 180000,
+          "net_profit_margin_pct": 55,
+          "annual_owner_net_profit_usd": 99000,
+          "full_time_including_owner": 2,
+          "contractors": 3,
+          "total_people": 5,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        }
+      },
+      "automation_levers": [
+        "Auction screening",
+        "Redemption tracking"
+      ],
+      "key_risks": [
+        "Nonredeeming liens",
+        "Title defects",
+        "Capital loss"
+      ],
+      "regulatory_notes": [
+        "Auction eligibility, interest limits and foreclosure procedures are local."
+      ],
+      "rank": 24
+    },
+    {
+      "candidate_number": 12,
+      "slug": "freight-brokerage",
+      "title": "Freight Brokerage",
+      "category": "Logistics",
+      "production_stage": "candidate_scored",
+      "scores": {
+        "revenue_potential": 23,
+        "profit_margin_potential": 10,
+        "team_efficiency": 10,
+        "startup_accessibility": 7,
+        "automation_potential": 12
+      },
+      "dimension_max": {
+        "revenue_potential": 25,
+        "profit_margin_potential": 25,
+        "team_efficiency": 20,
+        "startup_accessibility": 15,
+        "automation_potential": 15
+      },
+      "total_score": 62,
+      "tier_label": "Capital / Labor Intensive",
+      "evidence_confidence": "Moderate",
+      "uncertainty_band": "±6 pts",
+      "uncertainty_bounds": {
+        "low": 56,
+        "high": 68
+      },
+      "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
+      "score_rationale": {
+        "revenue_potential": "Revenue Potential: 23/25. Large billings conceal carrier costs, thin net margins and intensive exception handling.",
+        "profit_margin_potential": "Profit Margin Potential: 10/25. Large billings conceal carrier costs, thin net margins and intensive exception handling.",
+        "team_efficiency": "Team Efficiency: 10/20. Large billings conceal carrier costs, thin net margins and intensive exception handling.",
+        "startup_accessibility": "Startup Accessibility: 7/15. Large billings conceal carrier costs, thin net margins and intensive exception handling.",
+        "automation_potential": "Automation Potential: 12/15. Large billings conceal carrier costs, thin net margins and intensive exception handling."
+      },
+      "economics": {
+        "gross_revenue_range": "$1,000,000–$5,000,000 USD annually",
+        "net_profit_margin_range": "3–8%",
+        "owner_net_profit_potential": "$30,000–$400,000 USD annually, before personal taxes and reinvestment",
+        "startup_capital_range": "$50,000–$250,000 USD",
+        "monthly_opex_range": "$6,000–$30,000 USD",
+        "time_to_first_deal": "2–6 months",
+        "typical_team_size": {
+          "full_time_including_owner": 3,
+          "contractors": 2,
+          "total_people": 5
+        },
+        "includes_contractors_note": "Headcount includes the working owner and recurring contractors as people, not FTE equivalents. Contractors may be part-time. Scaled scenario adds one employee and one contractor; external vendor workforces are not counted as internal team members.",
+        "revenue_basis": "Gross shipper billings including carrier costs; accounting presentation can differ",
+        "cost_basis": "Annual net margins include operating expenses and non-owner labor; monthly opex is fixed/semi-fixed overhead only. No owner salary is deducted. Capital needs may grow beyond startup range.",
+        "estimate_status": "Illustrative assumptions; not verified earnings data"
+      },
+      "scenarios": {
+        "conservative": {
+          "annual_gross_revenue_usd": 1000000,
+          "net_profit_margin_pct": 3,
+          "annual_owner_net_profit_usd": 30000,
+          "full_time_including_owner": 3,
+          "contractors": 2,
+          "total_people": 5,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        },
+        "base_case": {
+          "annual_gross_revenue_usd": 3000000.0,
+          "net_profit_margin_pct": 5.5,
+          "annual_owner_net_profit_usd": 165000,
+          "full_time_including_owner": 3,
+          "contractors": 2,
+          "total_people": 5,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        },
+        "scaled_small_team": {
+          "annual_gross_revenue_usd": 5000000,
+          "net_profit_margin_pct": 8,
+          "annual_owner_net_profit_usd": 400000,
+          "full_time_including_owner": 4,
+          "contractors": 3,
+          "total_people": 7,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        }
+      },
+      "automation_levers": [
+        "Load matching",
+        "Shipment tracking",
+        "Invoice reconciliation"
+      ],
+      "key_risks": [
+        "Carrier fraud",
+        "Claims",
+        "Shipper nonpayment"
+      ],
+      "regulatory_notes": [
+        "US property brokers generally need FMCSA authority and $75,000 bond or trust security.",
+        "Verify current financial-responsibility and carrier-vetting requirements."
+      ],
+      "rank": 25
+    },
+    {
+      "candidate_number": 17,
+      "slug": "government-surplus-auctions",
+      "title": "Government Surplus Auctions",
+      "category": "Surplus asset trading",
+      "production_stage": "candidate_scored",
+      "scores": {
+        "revenue_potential": 20,
+        "profit_margin_potential": 14,
+        "team_efficiency": 12,
+        "startup_accessibility": 8,
+        "automation_potential": 8
+      },
+      "dimension_max": {
+        "revenue_potential": 25,
+        "profit_margin_potential": 25,
+        "team_efficiency": 20,
+        "startup_accessibility": 15,
+        "automation_potential": 15
+      },
+      "total_score": 62,
+      "tier_label": "Capital / Labor Intensive",
+      "evidence_confidence": "Moderate",
+      "uncertainty_band": "±6 pts",
+      "uncertainty_bounds": {
+        "low": 56,
+        "high": 68
+      },
+      "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
+      "score_rationale": {
+        "revenue_potential": "Revenue Potential: 20/25. Discounted lots offer resale spreads, but transport, storage and defects consume margin.",
+        "profit_margin_potential": "Profit Margin Potential: 14/25. Discounted lots offer resale spreads, but transport, storage and defects consume margin.",
+        "team_efficiency": "Team Efficiency: 12/20. Discounted lots offer resale spreads, but transport, storage and defects consume margin.",
+        "startup_accessibility": "Startup Accessibility: 8/15. Discounted lots offer resale spreads, but transport, storage and defects consume margin.",
+        "automation_potential": "Automation Potential: 8/15. Discounted lots offer resale spreads, but transport, storage and defects consume margin."
+      },
+      "economics": {
+        "gross_revenue_range": "$150,000–$1,000,000 USD annually",
+        "net_profit_margin_range": "8–20%",
+        "owner_net_profit_potential": "$12,000–$200,000 USD annually, before personal taxes and reinvestment",
+        "startup_capital_range": "$25,000–$200,000 USD",
+        "monthly_opex_range": "$3,000–$15,000 USD",
+        "time_to_first_deal": "1–6 months",
+        "typical_team_size": {
+          "full_time_including_owner": 2,
+          "contractors": 3,
+          "total_people": 5
+        },
+        "includes_contractors_note": "Headcount includes the working owner and recurring contractors as people, not FTE equivalents. Contractors may be part-time. Scaled scenario adds one employee and one contractor; external vendor workforces are not counted as internal team members.",
+        "revenue_basis": "Gross resale proceeds; purchase, transport and refurbishment included in margin",
+        "cost_basis": "Annual net margins include operating expenses and non-owner labor; monthly opex is fixed/semi-fixed overhead only. No owner salary is deducted. Capital needs may grow beyond startup range.",
+        "estimate_status": "Illustrative assumptions; not verified earnings data"
+      },
+      "scenarios": {
+        "conservative": {
+          "annual_gross_revenue_usd": 150000,
+          "net_profit_margin_pct": 8,
+          "annual_owner_net_profit_usd": 12000,
+          "full_time_including_owner": 2,
+          "contractors": 3,
+          "total_people": 5,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        },
+        "base_case": {
+          "annual_gross_revenue_usd": 575000.0,
+          "net_profit_margin_pct": 14.0,
+          "annual_owner_net_profit_usd": 80500,
+          "full_time_including_owner": 2,
+          "contractors": 3,
+          "total_people": 5,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        },
+        "scaled_small_team": {
+          "annual_gross_revenue_usd": 1000000,
+          "net_profit_margin_pct": 20,
+          "annual_owner_net_profit_usd": 200000,
+          "full_time_including_owner": 3,
+          "contractors": 4,
+          "total_people": 7,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        }
+      },
+      "automation_levers": [
+        "Auction alerts",
+        "Bid-limit worksheets",
+        "Inventory tracking"
+      ],
+      "key_risks": [
+        "As-is defects",
+        "Removal deadlines",
+        "Unsold inventory"
+      ],
+      "regulatory_notes": [
+        "Check auction eligibility, resale permits, title transfer and restricted-item rules."
+      ],
+      "rank": 26
+    },
+    {
+      "candidate_number": 13,
+      "slug": "business-acquisition",
+      "title": "Business Acquisition",
+      "category": "Operating business ownership",
+      "production_stage": "candidate_scored",
+      "scores": {
+        "revenue_potential": 24,
+        "profit_margin_potential": 16,
+        "team_efficiency": 7,
+        "startup_accessibility": 2,
+        "automation_potential": 8
+      },
+      "dimension_max": {
+        "revenue_potential": 25,
+        "profit_margin_potential": 25,
+        "team_efficiency": 20,
+        "startup_accessibility": 15,
+        "automation_potential": 15
+      },
+      "total_score": 57,
+      "tier_label": "Capital / Labor Intensive",
+      "evidence_confidence": "Moderate",
+      "uncertainty_band": "±6 pts",
+      "uncertainty_bounds": {
+        "low": 51,
+        "high": 63
+      },
+      "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
+      "score_rationale": {
+        "revenue_potential": "Revenue Potential: 24/25. Existing cash flow requires purchase capital, retained staff and debt-service discipline.",
+        "profit_margin_potential": "Profit Margin Potential: 16/25. Existing cash flow requires purchase capital, retained staff and debt-service discipline.",
+        "team_efficiency": "Team Efficiency: 7/20. Existing cash flow requires purchase capital, retained staff and debt-service discipline.",
+        "startup_accessibility": "Startup Accessibility: 2/15. Existing cash flow requires purchase capital, retained staff and debt-service discipline.",
+        "automation_potential": "Automation Potential: 8/15. Existing cash flow requires purchase capital, retained staff and debt-service discipline."
+      },
+      "economics": {
+        "gross_revenue_range": "$750,000–$3,000,000 USD annually",
+        "net_profit_margin_range": "8–18%",
+        "owner_net_profit_potential": "$60,000–$540,000 USD annually, before personal taxes and reinvestment",
+        "startup_capital_range": "$200,000–$1,000,000 USD",
+        "monthly_opex_range": "$15,000–$70,000 USD",
+        "time_to_first_deal": "6–18 months",
+        "typical_team_size": {
+          "full_time_including_owner": 7,
+          "contractors": 3,
+          "total_people": 10
+        },
+        "includes_contractors_note": "Headcount includes the working owner and recurring contractors as people, not FTE equivalents. Contractors may be part-time. Scaled scenario adds one employee and one contractor; external vendor workforces are not counted as internal team members.",
+        "revenue_basis": "Acquired business sales; margin after interest, before principal repayments",
+        "cost_basis": "Annual net margins include operating expenses and non-owner labor; monthly opex is fixed/semi-fixed overhead only. No owner salary is deducted. Capital needs may grow beyond startup range.",
+        "estimate_status": "Illustrative assumptions; not verified earnings data"
+      },
+      "scenarios": {
+        "conservative": {
+          "annual_gross_revenue_usd": 750000,
+          "net_profit_margin_pct": 8,
+          "annual_owner_net_profit_usd": 60000,
+          "full_time_including_owner": 7,
+          "contractors": 3,
+          "total_people": 10,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        },
+        "base_case": {
+          "annual_gross_revenue_usd": 1875000.0,
+          "net_profit_margin_pct": 13.0,
+          "annual_owner_net_profit_usd": 243750,
+          "full_time_including_owner": 7,
+          "contractors": 3,
+          "total_people": 10,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        },
+        "scaled_small_team": {
+          "annual_gross_revenue_usd": 3000000,
+          "net_profit_margin_pct": 18,
+          "annual_owner_net_profit_usd": 540000,
+          "full_time_including_owner": 8,
+          "contractors": 4,
+          "total_people": 12,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        }
+      },
+      "automation_levers": [
+        "Financial reporting",
+        "Back-office workflows"
+      ],
+      "key_risks": [
+        "Hidden liabilities",
+        "Customer attrition",
+        "Leverage"
+      ],
+      "regulatory_notes": [
+        "Review employment, tax, licenses, lender covenants and transaction disclosures."
+      ],
+      "rank": 27
+    },
+    {
+      "candidate_number": 10,
+      "slug": "commercial-cleaning-contracts",
+      "title": "Commercial Cleaning Contracts",
+      "category": "Facility services",
+      "production_stage": "candidate_scored",
+      "scores": {
+        "revenue_potential": 21,
+        "profit_margin_potential": 12,
+        "team_efficiency": 6,
+        "startup_accessibility": 11,
+        "automation_potential": 6
+      },
+      "dimension_max": {
+        "revenue_potential": 25,
+        "profit_margin_potential": 25,
+        "team_efficiency": 20,
+        "startup_accessibility": 15,
+        "automation_potential": 15
+      },
+      "total_score": 56,
+      "tier_label": "Capital / Labor Intensive",
+      "evidence_confidence": "Moderate",
+      "uncertainty_band": "±6 pts",
+      "uncertainty_bounds": {
+        "low": 50,
+        "high": 62
+      },
+      "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
+      "score_rationale": {
+        "revenue_potential": "Revenue Potential: 21/25. Recurring contracts are attractive, but delivery headcount grows with revenue.",
+        "profit_margin_potential": "Profit Margin Potential: 12/25. Recurring contracts are attractive, but delivery headcount grows with revenue.",
+        "team_efficiency": "Team Efficiency: 6/20. Recurring contracts are attractive, but delivery headcount grows with revenue.",
+        "startup_accessibility": "Startup Accessibility: 11/15. Recurring contracts are attractive, but delivery headcount grows with revenue.",
+        "automation_potential": "Automation Potential: 6/15. Recurring contracts are attractive, but delivery headcount grows with revenue."
+      },
+      "economics": {
+        "gross_revenue_range": "$250,000–$1,200,000 USD annually",
+        "net_profit_margin_range": "8–16%",
+        "owner_net_profit_potential": "$20,000–$192,000 USD annually, before personal taxes and reinvestment",
+        "startup_capital_range": "$15,000–$90,000 USD",
+        "monthly_opex_range": "$4,000–$18,000 USD",
+        "time_to_first_deal": "1–4 months",
+        "typical_team_size": {
+          "full_time_including_owner": 5,
+          "contractors": 4,
+          "total_people": 9
+        },
+        "includes_contractors_note": "Headcount includes the working owner and recurring contractors as people, not FTE equivalents. Contractors may be part-time. Scaled scenario adds one employee and one contractor; external vendor workforces are not counted as internal team members.",
+        "revenue_basis": "Cleaning contract revenue; scalable only with more paid crew hours",
+        "cost_basis": "Annual net margins include operating expenses and non-owner labor; monthly opex is fixed/semi-fixed overhead only. No owner salary is deducted. Capital needs may grow beyond startup range.",
+        "estimate_status": "Illustrative assumptions; not verified earnings data"
+      },
+      "scenarios": {
+        "conservative": {
+          "annual_gross_revenue_usd": 250000,
+          "net_profit_margin_pct": 8,
+          "annual_owner_net_profit_usd": 20000,
+          "full_time_including_owner": 5,
+          "contractors": 4,
+          "total_people": 9,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        },
+        "base_case": {
+          "annual_gross_revenue_usd": 725000.0,
+          "net_profit_margin_pct": 12.0,
+          "annual_owner_net_profit_usd": 87000,
+          "full_time_including_owner": 5,
+          "contractors": 4,
+          "total_people": 9,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        },
+        "scaled_small_team": {
+          "annual_gross_revenue_usd": 1200000,
+          "net_profit_margin_pct": 16,
+          "annual_owner_net_profit_usd": 192000,
+          "full_time_including_owner": 6,
+          "contractors": 5,
+          "total_people": 11,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        }
+      },
+      "automation_levers": [
+        "Scheduling",
+        "Inspection logs",
+        "Billing"
+      ],
+      "key_risks": [
+        "Labor turnover",
+        "Underpriced contracts",
+        "Customer concentration"
+      ],
+      "regulatory_notes": [
+        "Observe wage laws, worker classification, chemical safety and insurance requirements."
+      ],
+      "rank": 28
+    },
+    {
+      "candidate_number": 15,
+      "slug": "insurance-restoration",
+      "title": "Insurance Restoration",
+      "category": "Property restoration",
+      "production_stage": "candidate_scored",
+      "scores": {
+        "revenue_potential": 24,
+        "profit_margin_potential": 13,
+        "team_efficiency": 5,
+        "startup_accessibility": 5,
+        "automation_potential": 7
+      },
+      "dimension_max": {
+        "revenue_potential": 25,
+        "profit_margin_potential": 25,
+        "team_efficiency": 20,
+        "startup_accessibility": 15,
+        "automation_potential": 15
+      },
+      "total_score": 54,
+      "tier_label": "Capital / Labor Intensive",
+      "evidence_confidence": "Moderate",
+      "uncertainty_band": "±6 pts",
+      "uncertainty_bounds": {
+        "low": 48,
+        "high": 60
+      },
+      "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
+      "score_rationale": {
+        "revenue_potential": "Revenue Potential: 24/25. High ticket sizes require field crews, working capital and demanding project oversight.",
+        "profit_margin_potential": "Profit Margin Potential: 13/25. High ticket sizes require field crews, working capital and demanding project oversight.",
+        "team_efficiency": "Team Efficiency: 5/20. High ticket sizes require field crews, working capital and demanding project oversight.",
+        "startup_accessibility": "Startup Accessibility: 5/15. High ticket sizes require field crews, working capital and demanding project oversight.",
+        "automation_potential": "Automation Potential: 7/15. High ticket sizes require field crews, working capital and demanding project oversight."
+      },
+      "economics": {
+        "gross_revenue_range": "$500,000–$2,500,000 USD annually",
+        "net_profit_margin_range": "8–18%",
+        "owner_net_profit_potential": "$40,000–$450,000 USD annually, before personal taxes and reinvestment",
+        "startup_capital_range": "$75,000–$350,000 USD",
+        "monthly_opex_range": "$10,000–$45,000 USD",
+        "time_to_first_deal": "1–6 months",
+        "typical_team_size": {
+          "full_time_including_owner": 5,
+          "contractors": 6,
+          "total_people": 11
+        },
+        "includes_contractors_note": "Headcount includes the working owner and recurring contractors as people, not FTE equivalents. Contractors may be part-time. Scaled scenario adds one employee and one contractor; external vendor workforces are not counted as internal team members.",
+        "revenue_basis": "Gross restoration billings; subcontractor and material costs included in margin",
+        "cost_basis": "Annual net margins include operating expenses and non-owner labor; monthly opex is fixed/semi-fixed overhead only. No owner salary is deducted. Capital needs may grow beyond startup range.",
+        "estimate_status": "Illustrative assumptions; not verified earnings data"
+      },
+      "scenarios": {
+        "conservative": {
+          "annual_gross_revenue_usd": 500000,
+          "net_profit_margin_pct": 8,
+          "annual_owner_net_profit_usd": 40000,
+          "full_time_including_owner": 5,
+          "contractors": 6,
+          "total_people": 11,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        },
+        "base_case": {
+          "annual_gross_revenue_usd": 1500000.0,
+          "net_profit_margin_pct": 13.0,
+          "annual_owner_net_profit_usd": 195000,
+          "full_time_including_owner": 5,
+          "contractors": 6,
+          "total_people": 11,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        },
+        "scaled_small_team": {
+          "annual_gross_revenue_usd": 2500000,
+          "net_profit_margin_pct": 18,
+          "annual_owner_net_profit_usd": 450000,
+          "full_time_including_owner": 6,
+          "contractors": 7,
+          "total_people": 13,
+          "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+        }
+      },
+      "automation_levers": [
+        "Dispatch",
+        "Photo documentation",
+        "Job-cost tracking"
+      ],
+      "key_risks": [
+        "Claim disputes",
+        "Cash-flow gaps",
+        "Safety incidents"
+      ],
+      "regulatory_notes": [
+        "Check contractor and remediation licensing; public adjusting may require a separate license.",
+        "Do not promise insurer coverage or waive deductibles unlawfully."
+      ],
+      "rank": 29
+    }
+  ],
+  "generated_at": "2026-10-29T23:18:57Z"
+}

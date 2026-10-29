@@ -1,0 +1,63 @@
+{
+  "concept_id": "concept_a",
+  "approved": false,
+  "preview_only": true,
+  "files": {
+    "digital_pdf.pdf": {
+      "bytes": 160323,
+      "sha256": "340cf7c7b31d6271e3c129defd3fd81b18315e8ba2ba04894b253588f9a7aecd"
+    },
+    "print_6x9_pdf.pdf": {
+      "bytes": 185254,
+      "sha256": "b8451334c6eea700c32b6bc942086ff60bad2c080b650a4eaa11800400bfaccf"
+    },
+    "workbook_pdf.pdf": {
+      "bytes": 26635,
+      "sha256": "4e992d693e352469f296f4dcb3f36434685356d7b366a6d1a9b9101f81d3d05e"
+    },
+    "book.epub": {
+      "bytes": 57417,
+      "sha256": "0bebe2f7f6af6f4c661bfd78834671894ada83d23b5aabb53247fb6d7e63b91f"
+    },
+    "art/cover.svg": {
+      "bytes": 4001,
+      "sha256": "0e325fc236526d966fbe548f1ea90bbb16ef6c821489090b45c92f8c6029d7fc"
+    },
+    "art/scorecard.svg": {
+      "bytes": 24330,
+      "sha256": "36cc1d4cf5e699e230f8a21406d1775bc93c58bc98817600030ad83b904a034d"
+    },
+    "art/diag_01.svg": {
+      "bytes": 8518,
+      "sha256": "0af0314dc3f824a9e679ce72a61fea3d257e3e009623c01d9b82bedaead0c65f"
+    },
+    "art/diag_02.svg": {
+      "bytes": 6067,
+      "sha256": "e21ae433421ccc0eb000aacbd9a61aff4a158c2d60b73f73541b199245747b9f"
+    },
+    "art/diag_03.svg": {
+      "bytes": 7818,
+      "sha256": "202ff3f20c9aa15dbcbcff56bd1f1bc56237885aa96c2df6580e0861c343e96d"
+    },
+    "art/diag_04.svg": {
+      "bytes": 6515,
+      "sha256": "4b0a1f67b0d347877279f3731d38077fcc7bf803ba31c9faf5bbff03f227ff5e"
+    },
+    "art/diag_05.svg": {
+      "bytes": 7605,
+      "sha256": "cb2a0c7396947b43fb5f656f5ffd43caf0cf122f64f39dfa0ba97a4c0f142c22"
+    },
+    "art/diag_06.svg": {
+      "bytes": 7152,
+      "sha256": "978adbe5a15fe82731d373d413f0bb12af313ba7a22e109f930480533c66172b"
+    },
+    "art/diag_07.svg": {
+      "bytes": 6554,
+      "sha256": "640c804f98a85ec05092e6802a959b25e1a929cf19fa533657ea7e4411b79c02"
+    },
+    "art/diag_08.svg": {
+      "bytes": 6223,
+      "sha256": "51cafa70aa744c6f86f05a57588cbecc150d699bca02335a2912fb72adbacbaf"
+    }
+  }
+}

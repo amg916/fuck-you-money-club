@@ -1,0 +1,619 @@
+{
+  "abridged_video_count": 0,
+  "raw_video_count": 0,
+  "summary": {
+    "type": "dict",
+    "keys": [
+      "claims_requiring_verification",
+      "consensus_findings",
+      "corpus_metrics",
+      "coverage",
+      "generated_at",
+      "permissions_ledger",
+      "schema_version",
+      "topics"
+    ],
+    "counts": {
+      "corpus_metrics": 7,
+      "topics": 8,
+      "consensus_findings": 8,
+      "claims_requiring_verification": 6,
+      "permissions_ledger": 6,
+      "coverage": 6
+    },
+    "values": {
+      "generated_at": "2026-10-29T23:18:57+00:00",
+      "schema_version": "1.0"
+    }
+  },
+  "generated_at": "2026-10-29T23:18:57Z",
+  "counts": {
+    "topics": 8
+  },
+  "topics": [
+    {
+      "topic_id": "business_model_and_economics",
+      "title": "Business Model, Contingency Economics & Deal Scale",
+      "video_count": 0,
+      "tip_count": 0,
+      "channel_count": 0,
+      "top_sources": [],
+      "top_timestamped_insights": [],
+      "statutes_and_forms": [],
+      "tools_and_portals": []
+    },
+    {
+      "topic_id": "probate_and_docket_sourcing",
+      "title": "County Probate Dockets, Intestate Filings & Estate Leads",
+      "video_count": 0,
+      "tip_count": 0,
+      "channel_count": 0,
+      "top_sources": [],
+      "top_timestamped_insights": [],
+      "statutes_and_forms": [],
+      "tools_and_portals": []
+    },
+    {
+      "topic_id": "unclaimed_property_and_escheat",
+      "title": "State Unclaimed Property, Escheated Funds & Treasury Claims",
+      "video_count": 0,
+      "tip_count": 0,
+      "channel_count": 0,
+      "top_sources": [],
+      "top_timestamped_insights": [],
+      "statutes_and_forms": [],
+      "tools_and_portals": []
+    },
+    {
+      "topic_id": "genealogy_and_heirship_proof",
+      "title": "Forensic Genealogy, Per-Stirpes Kinship & Proof of Heirship",
+      "video_count": 0,
+      "tip_count": 0,
+      "channel_count": 0,
+      "top_sources": [],
+      "top_timestamped_insights": [],
+      "statutes_and_forms": [],
+      "tools_and_portals": []
+    },
+    {
+      "topic_id": "skip_tracing_and_outreach",
+      "title": "Skip Tracing, Ethical Heir Contact & Trust Building",
+      "video_count": 0,
+      "tip_count": 0,
+      "channel_count": 0,
+      "top_sources": [],
+      "top_timestamped_insights": [],
+      "statutes_and_forms": [],
+      "tools_and_portals": []
+    },
+    {
+      "topic_id": "contracts_and_compensation",
+      "title": "Fee Agreements, Assignments of Interest & Escrow Disbursement",
+      "video_count": 0,
+      "tip_count": 0,
+      "channel_count": 0,
+      "top_sources": [],
+      "top_timestamped_insights": [],
+      "statutes_and_forms": [],
+      "tools_and_portals": []
+    },
+    {
+      "topic_id": "statutory_caps_and_licensing",
+      "title": "State Fee Caps, Waiting Periods, PI Licensing & UPL Rules",
+      "video_count": 0,
+      "tip_count": 0,
+      "channel_count": 0,
+      "top_sources": [],
+      "top_timestamped_insights": [],
+      "statutes_and_forms": [],
+      "tools_and_portals": []
+    },
+    {
+      "topic_id": "automation_and_small_team_ops",
+      "title": "Docket Automation, AI Abstracting & Small-Team Operations",
+      "video_count": 0,
+      "tip_count": 0,
+      "channel_count": 0,
+      "top_sources": [],
+      "top_timestamped_insights": [],
+      "statutes_and_forms": [],
+      "tools_and_portals": []
+    }
+  ],
+  "consensus_findings": [
+    {
+      "finding_id": "contingency_only_compensation",
+      "topic_id": "business_model_and_economics",
+      "topic_title": "Business Model, Contingency Economics & Deal Scale",
+      "headline": "Heir location is paid on contingency, never on up-front fees.",
+      "summary": "Across the corpus, operators converge on a pure contingency model: the heir pays nothing out of pocket, the locator advances all research cost, and the fee is a negotiated percentage released only when the estate or state agency actually disburses funds. Charging an heir an advance fee is treated as the single clearest marker of a predatory or unlicensed operator.",
+      "epistemic_status": "Practitioner Consensus",
+      "channel_count": 0,
+      "video_count": 0,
+      "corroborating_tip_count": 0,
+      "supporting_links": [],
+      "caveat": "Consensus among the sampled operators — not legal advice and not a substitute for the governing statute in the reader's jurisdiction."
+    },
+    {
+      "finding_id": "county_docket_is_the_lead_engine",
+      "topic_id": "probate_and_docket_sourcing",
+      "topic_title": "County Probate Dockets, Intestate Filings & Estate Leads",
+      "headline": "Fresh county probate and intestate dockets outperform purchased lead lists.",
+      "summary": "Practitioners consistently build pipeline from newly filed probate and administration matters pulled directly from county clerk portals rather than resold lists. Filings naming an administrator but no located heirs, and estates sitting open past the local notice period, are the recurring high-value signal.",
+      "epistemic_status": "Practitioner Consensus",
+      "channel_count": 0,
+      "video_count": 0,
+      "corroborating_tip_count": 0,
+      "supporting_links": [],
+      "caveat": "Consensus among the sampled operators — not legal advice and not a substitute for the governing statute in the reader's jurisdiction."
+    },
+    {
+      "finding_id": "state_unclaimed_property_is_the_volume_channel",
+      "topic_id": "unclaimed_property_and_escheat",
+      "topic_title": "State Unclaimed Property, Escheated Funds & Treasury Claims",
+      "headline": "State unclaimed-property and escheat databases supply the repeatable volume.",
+      "summary": "Every state treasury or controller maintains a searchable unclaimed-property register, and the consensus workflow is to cross-reference deceased owners there against probate filings. Volume comes from systematic register sweeps; size comes from the rarer escheated estate, surplus-funds and safe-deposit categories.",
+      "epistemic_status": "Practitioner Consensus",
+      "channel_count": 0,
+      "video_count": 0,
+      "corroborating_tip_count": 0,
+      "supporting_links": [],
+      "caveat": "Consensus among the sampled operators — not legal advice and not a substitute for the governing statute in the reader's jurisdiction."
+    },
+    {
+      "finding_id": "documented_kinship_chain_is_the_product",
+      "topic_id": "genealogy_and_heirship_proof",
+      "topic_title": "Forensic Genealogy, Per-Stirpes Kinship & Proof of Heirship",
+      "headline": "The deliverable is a document-backed kinship chain, not a name on a list.",
+      "summary": "Operators agree that claims succeed or fail on the evidentiary chain: each generational link supported by vital records, each branch mapped per stirpes, and every gap closed before contact. Tree hints from consumer genealogy sites are treated as leads to verify, never as proof to submit.",
+      "epistemic_status": "Practitioner Consensus",
+      "channel_count": 0,
+      "video_count": 0,
+      "corroborating_tip_count": 0,
+      "supporting_links": [],
+      "caveat": "Consensus among the sampled operators — not legal advice and not a substitute for the governing statute in the reader's jurisdiction."
+    },
+    {
+      "finding_id": "skip_tracing_then_restrained_first_contact",
+      "topic_id": "skip_tracing_and_outreach",
+      "topic_title": "Skip Tracing, Ethical Heir Contact & Trust Building",
+      "headline": "Verify identity before contact, then lead with restraint, not the dollar figure.",
+      "summary": "The recurring outreach pattern is: skip trace to a confirmed current address and phone, open by letter or a short calm call, state that funds may be owed to the family without naming an amount, and give the heir a way to independently verify the operator. Pressure tactics and inflated figures are consistently reported as the fastest way to lose a signed file.",
+      "epistemic_status": "Practitioner Consensus",
+      "channel_count": 0,
+      "video_count": 0,
+      "corroborating_tip_count": 0,
+      "supporting_links": [],
+      "caveat": "Consensus among the sampled operators — not legal advice and not a substitute for the governing statute in the reader's jurisdiction."
+    },
+    {
+      "finding_id": "written_agreement_and_third_party_escrow",
+      "topic_id": "contracts_and_compensation",
+      "topic_title": "Fee Agreements, Assignments of Interest & Escrow Disbursement",
+      "headline": "No work proceeds without a signed fee agreement and third-party escrow.",
+      "summary": "Consensus practice is a plain-language, notarized or e-signed agreement that names the estate, states the percentage, discloses the heir's right to claim independently, and routes funds through attorney trust or licensed escrow so the locator never holds the heir's money directly.",
+      "epistemic_status": "Practitioner Consensus",
+      "channel_count": 0,
+      "video_count": 0,
+      "corroborating_tip_count": 0,
+      "supporting_links": [],
+      "caveat": "Consensus among the sampled operators — not legal advice and not a substitute for the governing statute in the reader's jurisdiction."
+    },
+    {
+      "finding_id": "jurisdiction_rules_govern_every_file",
+      "topic_id": "statutory_caps_and_licensing",
+      "topic_title": "State Fee Caps, Waiting Periods, PI Licensing & UPL Rules",
+      "headline": "Fee caps, waiting periods and licensing are decided per state, before the first call.",
+      "summary": "Operators repeatedly stress that the governing rules — percentage caps on unclaimed-property recoveries, mandatory waiting periods after escheat or sale, private-investigator licensing triggers, and the line against practicing law — vary by jurisdiction and must be read in the local statute for every file rather than generalized from another state.",
+      "epistemic_status": "Practitioner Consensus",
+      "channel_count": 0,
+      "video_count": 0,
+      "corroborating_tip_count": 0,
+      "supporting_links": [],
+      "caveat": "Consensus among the sampled operators — not legal advice and not a substitute for the governing statute in the reader's jurisdiction."
+    },
+    {
+      "finding_id": "automation_multiplies_a_small_team",
+      "topic_id": "automation_and_small_team_ops",
+      "topic_title": "Docket Automation, AI Abstracting & Small-Team Operations",
+      "headline": "Automated docket monitoring plus AI abstracting lets one or two people run real volume.",
+      "summary": "The operational consensus is to automate the repetitive layer — scheduled docket and register pulls, structured intake into a sheet or CRM, AI-assisted abstracting of filings — while keeping genealogy judgment, heir contact and contract execution human. That split is what keeps a two-person shop competitive against staffed firms.",
+      "epistemic_status": "Practitioner Consensus",
+      "channel_count": 0,
+      "video_count": 0,
+      "corroborating_tip_count": 0,
+      "supporting_links": [],
+      "caveat": "Consensus among the sampled operators — not legal advice and not a substitute for the governing statute in the reader's jurisdiction."
+    }
+  ],
+  "claims_requiring_verification": [
+    {
+      "claim_id": "ca_ccp_1582_10pct_cap_vs_probate_court_assignments",
+      "topic": "statutory_caps_and_licensing",
+      "topic_title": "State Fee Caps, Waiting Periods, PI Licensing & UPL Rules",
+      "question": "Does the California 10% statutory cap on unclaimed-property recovery agreements also bind heir-finder fees in probate estate assignments?",
+      "conflicting_views": [
+        "Sources treat the ~10% ceiling in California Code of Civil Procedure § 1582 as a blanket cap on every heir-finder fee charged in the state.",
+        "Other sources describe the cap as specific to agreements to recover property held by the state controller after escheat, leaving probate-court estate assignments to a reasonableness review by the probate judge.",
+        "A third group reports negotiating 15-35% on probate matters in California without objection, which only makes sense if the statutory cap is not universal."
+      ],
+      "editorial_resolution": "Present the cap as scope-limited rather than universal: quote the statute's own description of the agreements it governs, note that probate assignments are separately subject to court approval and reasonableness review, and instruct the reader to confirm which track their file is on before quoting a percentage.",
+      "verification_status": "Jurisdiction-Dependent — Must Cite Local Statute",
+      "priority": "high",
+      "corpus_references": []
+    },
+    {
+      "claim_id": "pi_license_triggers_fl_tx_az",
+      "topic": "statutory_caps_and_licensing",
+      "topic_title": "State Fee Caps, Waiting Periods, PI Licensing & UPL Rules",
+      "question": "Does locating heirs for compensation require a private investigator license in Florida, Texas or Arizona?",
+      "conflicting_views": [
+        "Several operators state flatly that searching for a person for pay is regulated investigative activity in these states and requires a licensed PI or an agency affiliation.",
+        "Others argue that public-record genealogy research is exempt and that the license only attaches when surveillance or investigation of a living subject's conduct is involved.",
+        "A further view is that the trigger is the business activity of locating a person for a fee, regardless of whether the research is conducted from public records."
+      ],
+      "editorial_resolution": "Treat licensing as a threshold compliance question, not a footnote: direct the reader to the named state licensing authority, describe the fact patterns that commonly trigger review, and avoid asserting any state-specific exemption as settled.",
+      "verification_status": "Jurisdiction-Dependent — Must Cite Local Statute",
+      "priority": "high",
+      "corpus_references": []
+    },
+    {
+      "claim_id": "post_sale_waiting_periods_and_rescission_windows",
+      "topic": "statutory_caps_and_licensing",
+      "topic_title": "State Fee Caps, Waiting Periods, PI Licensing & UPL Rules",
+      "question": "How long must an operator wait after escheat or a tax/foreclosure sale before a recovery agreement is enforceable, and how long can the claimant rescind?",
+      "conflicting_views": [
+        "Some sources cite a mandatory dormancy or waiting period measured from the date funds are reported to the state, during which no fee agreement may be signed.",
+        "Others describe the clock as running from the sale or distribution date, not the reporting date.",
+        "Rescission windows are variously described as a few days, ten days, or absent entirely depending on the state and the fund type."
+      ],
+      "editorial_resolution": "Publish the waiting period and rescission window as a per-state worksheet the reader fills in from the governing statute, with the structural warning that an agreement signed inside a prohibited window may be void and the fee unrecoverable.",
+      "verification_status": "Jurisdiction-Dependent — Must Cite Local Statute",
+      "priority": "high",
+      "corpus_references": []
+    },
+    {
+      "claim_id": "champerty_and_assignment_of_heirship_scrutiny",
+      "topic": "contracts_and_compensation",
+      "topic_title": "Fee Agreements, Assignments of Interest & Escrow Disbursement",
+      "question": "Is taking an assignment of a heir's interest in an estate enforceable, or vulnerable as champerty or an unconscionable bargain?",
+      "conflicting_views": [
+        "Operators report using outright assignments of interest as the cleanest way to secure payment directly from the estate.",
+        "Others warn that courts in champerty-sensitive jurisdictions have voided or reduced such assignments where the heir was uninformed of the estate's value.",
+        "A middle view holds that a percentage fee agreement with an irrevocable direction to pay from escrow survives scrutiny where a bare assignment does not."
+      ],
+      "editorial_resolution": "Recommend the disclosure-forward structure as the default — fee agreement plus escrow direction, with the estate identified once the heir signs — and present bare assignment as a jurisdiction-specific instrument requiring local counsel.",
+      "verification_status": "Jurisdiction-Dependent — Must Cite Local Statute",
+      "priority": "high",
+      "corpus_references": []
+    },
+    {
+      "claim_id": "upl_attorney_filing_boundaries",
+      "topic": "statutory_caps_and_licensing",
+      "topic_title": "State Fee Caps, Waiting Periods, PI Licensing & UPL Rules",
+      "question": "Where is the line between permissible heir-location work and the unauthorized practice of law?",
+      "conflicting_views": [
+        "Some sources describe preparing and filing the heir's probate or claim paperwork as routine clerical support.",
+        "Others hold that selecting the filing, advising on entitlement, or appearing for the heir is law practice and must be routed to a licensed attorney.",
+        "A third position is that the locator may assemble and transmit evidence but must never advise the heir on legal rights or strategy."
+      ],
+      "editorial_resolution": "Draw the line conservatively in the manual: research, document assembly and introductions on the locator's side; advice, pleadings and appearances with counsel — and tell the reader to confirm the boundary with their state bar before building a workflow around it.",
+      "verification_status": "Jurisdiction-Dependent — Must Cite Local Statute",
+      "priority": "high",
+      "corpus_references": []
+    },
+    {
+      "claim_id": "gross_estate_vs_net_distributable_equity_math",
+      "topic": "business_model_and_economics",
+      "topic_title": "Business Model, Contingency Economics & Deal Scale",
+      "question": "Is the contingency percentage computed on the gross estate value or on the net amount actually distributable to the located heir?",
+      "conflicting_views": [
+        "Headline case figures in the corpus are quoted against gross estate or gross property value.",
+        "Operators describing actual settlement statements compute the fee on the heir's net distributable share after debts, liens, taxes, administration costs and co-heir splits.",
+        "Some agreements are described as fixing the percentage on recovered funds received, which differs again where property is sold rather than distributed in kind."
+      ],
+      "editorial_resolution": "Standardize on net distributable share to the specific heir as the manual's arithmetic base, show the gross-to-net waterfall explicitly, and label any gross-value figures drawn from the corpus as illustrative rather than as expected earnings.",
+      "verification_status": "Jurisdiction-Dependent — Must Cite Local Statute",
+      "priority": "high",
+      "corpus_references": []
+    }
+  ],
+  "permissions_ledger": {
+    "commercial_export_policy": "Zero third-party YouTube frames, portal screenshots, or >25-word verbatim transcript passages permitted in commercial exports without written license.",
+    "paraphrase_word_ceiling": 24,
+    "attribution_rule": "Every paraphrased insight keeps its original YouTube URL and [HH:MM:SS] deep link so the reader can verify the source directly.",
+    "flagged_asset_count": 14,
+    "flagged_assets": [
+      {
+        "asset_id": "exhibit_01",
+        "asset": "exports/heir-hunting-ebook/exhibits/exhibit-01.jpg",
+        "asset_type": "downloaded_youtube_video_frame",
+        "source": "Third-party YouTube video frame capture",
+        "research_reference_only": true,
+        "commercial_republish_allowed": false,
+        "commercial_use_allowed": false,
+        "status": "research_only_requires_permission",
+        "replacement": "Original structured-data vector diagram generated from the research database (no captured pixels)."
+      },
+      {
+        "asset_id": "exhibit_02",
+        "asset": "exports/heir-hunting-ebook/exhibits/exhibit-02.jpg",
+        "asset_type": "downloaded_youtube_video_frame",
+        "source": "Third-party YouTube video frame capture",
+        "research_reference_only": true,
+        "commercial_republish_allowed": false,
+        "commercial_use_allowed": false,
+        "status": "research_only_requires_permission",
+        "replacement": "Original structured-data vector diagram generated from the research database (no captured pixels)."
+      },
+      {
+        "asset_id": "exhibit_03",
+        "asset": "exports/heir-hunting-ebook/exhibits/exhibit-03.jpg",
+        "asset_type": "downloaded_youtube_video_frame",
+        "source": "Third-party YouTube video frame capture",
+        "research_reference_only": true,
+        "commercial_republish_allowed": false,
+        "commercial_use_allowed": false,
+        "status": "research_only_requires_permission",
+        "replacement": "Original structured-data vector diagram generated from the research database (no captured pixels)."
+      },
+      {
+        "asset_id": "exhibit_04",
+        "asset": "exports/heir-hunting-ebook/exhibits/exhibit-04.jpg",
+        "asset_type": "downloaded_youtube_video_frame",
+        "source": "Third-party YouTube video frame capture",
+        "research_reference_only": true,
+        "commercial_republish_allowed": false,
+        "commercial_use_allowed": false,
+        "status": "research_only_requires_permission",
+        "replacement": "Original structured-data vector diagram generated from the research database (no captured pixels)."
+      },
+      {
+        "asset_id": "exhibit_05",
+        "asset": "exports/heir-hunting-ebook/exhibits/exhibit-05.jpg",
+        "asset_type": "downloaded_youtube_video_frame",
+        "source": "Third-party YouTube video frame capture",
+        "research_reference_only": true,
+        "commercial_republish_allowed": false,
+        "commercial_use_allowed": false,
+        "status": "research_only_requires_permission",
+        "replacement": "Original structured-data vector diagram generated from the research database (no captured pixels)."
+      },
+      {
+        "asset_id": "exhibit_06",
+        "asset": "exports/heir-hunting-ebook/exhibits/exhibit-06.jpg",
+        "asset_type": "downloaded_youtube_video_frame",
+        "source": "Third-party YouTube video frame capture",
+        "research_reference_only": true,
+        "commercial_republish_allowed": false,
+        "commercial_use_allowed": false,
+        "status": "research_only_requires_permission",
+        "replacement": "Original structured-data vector diagram generated from the research database (no captured pixels)."
+      },
+      {
+        "asset_id": "exhibit_07",
+        "asset": "exports/heir-hunting-ebook/exhibits/exhibit-07.jpg",
+        "asset_type": "downloaded_youtube_video_frame",
+        "source": "Third-party YouTube video frame capture",
+        "research_reference_only": true,
+        "commercial_republish_allowed": false,
+        "commercial_use_allowed": false,
+        "status": "research_only_requires_permission",
+        "replacement": "Original structured-data vector diagram generated from the research database (no captured pixels)."
+      },
+      {
+        "asset_id": "exhibit_08",
+        "asset": "exports/heir-hunting-ebook/exhibits/exhibit-08.jpg",
+        "asset_type": "downloaded_youtube_video_frame",
+        "source": "Third-party YouTube video frame capture",
+        "research_reference_only": true,
+        "commercial_republish_allowed": false,
+        "commercial_use_allowed": false,
+        "status": "research_only_requires_permission",
+        "replacement": "Original structured-data vector diagram generated from the research database (no captured pixels)."
+      },
+      {
+        "asset_id": "exhibit_09",
+        "asset": "exports/heir-hunting-ebook/exhibits/exhibit-09.jpg",
+        "asset_type": "downloaded_youtube_video_frame",
+        "source": "Third-party YouTube video frame capture",
+        "research_reference_only": true,
+        "commercial_republish_allowed": false,
+        "commercial_use_allowed": false,
+        "status": "research_only_requires_permission",
+        "replacement": "Original structured-data vector diagram generated from the research database (no captured pixels)."
+      },
+      {
+        "asset_id": "exhibit_10",
+        "asset": "exports/heir-hunting-ebook/exhibits/exhibit-10.jpg",
+        "asset_type": "downloaded_youtube_video_frame",
+        "source": "Third-party YouTube video frame capture",
+        "research_reference_only": true,
+        "commercial_republish_allowed": false,
+        "commercial_use_allowed": false,
+        "status": "research_only_requires_permission",
+        "replacement": "Original structured-data vector diagram generated from the research database (no captured pixels)."
+      },
+      {
+        "asset_id": "exhibit_11",
+        "asset": "exports/heir-hunting-ebook/exhibits/exhibit-11.jpg",
+        "asset_type": "downloaded_youtube_video_frame",
+        "source": "Third-party YouTube video frame capture",
+        "research_reference_only": true,
+        "commercial_republish_allowed": false,
+        "commercial_use_allowed": false,
+        "status": "research_only_requires_permission",
+        "replacement": "Original structured-data vector diagram generated from the research database (no captured pixels)."
+      },
+      {
+        "asset_id": "exhibit_12",
+        "asset": "exports/heir-hunting-ebook/exhibits/exhibit-12.jpg",
+        "asset_type": "downloaded_youtube_video_frame",
+        "source": "Third-party YouTube video frame capture",
+        "research_reference_only": true,
+        "commercial_republish_allowed": false,
+        "commercial_use_allowed": false,
+        "status": "research_only_requires_permission",
+        "replacement": "Original structured-data vector diagram generated from the research database (no captured pixels)."
+      },
+      {
+        "asset_id": "youtube_thumbnails",
+        "asset": "https://i.ytimg.com/vi/<video_id>/*.jpg",
+        "asset_type": "youtube_thumbnail_image",
+        "source": "YouTube CDN thumbnails for the 0 corpus videos",
+        "instance_count": 0,
+        "instances": [],
+        "research_reference_only": true,
+        "commercial_republish_allowed": false,
+        "commercial_use_allowed": false,
+        "status": "research_only_requires_permission",
+        "replacement": "Text-only source citation (title, channel, URL, [HH:MM:SS] deep link) with no image reproduction."
+      },
+      {
+        "asset_id": "verbatim_transcript_quotes",
+        "asset": "data/transcripts/*.json -> segments[].text",
+        "asset_type": "verbatim_transcript_passage",
+        "source": "Spoken content of 0 third-party videos (0 captured tips)",
+        "research_reference_only": true,
+        "commercial_republish_allowed": false,
+        "commercial_use_allowed": false,
+        "status": "research_only_requires_permission",
+        "replacement": "Abstractive paraphrase capped at 24 words per insight, plus an attributed timestamp deep link back to the original video."
+      }
+    ],
+    "clearance_required_before": [
+      "Amazon KDP print and Kindle upload",
+      "Etsy digital download listing",
+      "eBay bundle listing",
+      "Any paid or free public distribution of the compiled manual"
+    ]
+  },
+  "corpus_metrics": {
+    "video_count": 0,
+    "channel_count": 0,
+    "total_words": 0,
+    "total_hours": 0.0,
+    "total_pro_tips": 0,
+    "unique_statutes_and_forms": 0,
+    "unique_tools_and_portals": 0
+  },
+  "coverage": {
+    "videos_classified": 0,
+    "videos_with_multiple_topics": 0,
+    "tips_classified": 0,
+    "raw_transcripts_joined": 0,
+    "topic_video_counts": {
+      "business_model_and_economics": 0,
+      "probate_and_docket_sourcing": 0,
+      "unclaimed_property_and_escheat": 0,
+      "genealogy_and_heirship_proof": 0,
+      "skip_tracing_and_outreach": 0,
+      "contracts_and_compensation": 0,
+      "statutory_caps_and_licensing": 0,
+      "automation_and_small_team_ops": 0
+    },
+    "topic_tip_counts": {
+      "business_model_and_economics": 0,
+      "probate_and_docket_sourcing": 0,
+      "unclaimed_property_and_escheat": 0,
+      "genealogy_and_heirship_proof": 0,
+      "skip_tracing_and_outreach": 0,
+      "contracts_and_compensation": 0,
+      "statutory_caps_and_licensing": 0,
+      "automation_and_small_team_ops": 0
+    }
+  },
+  "schema_version": "1.0",
+  "conflicting_views": [
+    {
+      "claim_id": "ca_ccp_1582_10pct_cap_vs_probate_court_assignments",
+      "topic": "statutory_caps_and_licensing",
+      "topic_title": "State Fee Caps, Waiting Periods, PI Licensing & UPL Rules",
+      "question": "Does the California 10% statutory cap on unclaimed-property recovery agreements also bind heir-finder fees in probate estate assignments?",
+      "conflicting_views": [
+        "Sources treat the ~10% ceiling in California Code of Civil Procedure § 1582 as a blanket cap on every heir-finder fee charged in the state.",
+        "Other sources describe the cap as specific to agreements to recover property held by the state controller after escheat, leaving probate-court estate assignments to a reasonableness review by the probate judge.",
+        "A third group reports negotiating 15-35% on probate matters in California without objection, which only makes sense if the statutory cap is not universal."
+      ],
+      "editorial_resolution": "Present the cap as scope-limited rather than universal: quote the statute's own description of the agreements it governs, note that probate assignments are separately subject to court approval and reasonableness review, and instruct the reader to confirm which track their file is on before quoting a percentage.",
+      "verification_status": "Jurisdiction-Dependent — Must Cite Local Statute",
+      "priority": "high",
+      "corpus_references": []
+    },
+    {
+      "claim_id": "pi_license_triggers_fl_tx_az",
+      "topic": "statutory_caps_and_licensing",
+      "topic_title": "State Fee Caps, Waiting Periods, PI Licensing & UPL Rules",
+      "question": "Does locating heirs for compensation require a private investigator license in Florida, Texas or Arizona?",
+      "conflicting_views": [
+        "Several operators state flatly that searching for a person for pay is regulated investigative activity in these states and requires a licensed PI or an agency affiliation.",
+        "Others argue that public-record genealogy research is exempt and that the license only attaches when surveillance or investigation of a living subject's conduct is involved.",
+        "A further view is that the trigger is the business activity of locating a person for a fee, regardless of whether the research is conducted from public records."
+      ],
+      "editorial_resolution": "Treat licensing as a threshold compliance question, not a footnote: direct the reader to the named state licensing authority, describe the fact patterns that commonly trigger review, and avoid asserting any state-specific exemption as settled.",
+      "verification_status": "Jurisdiction-Dependent — Must Cite Local Statute",
+      "priority": "high",
+      "corpus_references": []
+    },
+    {
+      "claim_id": "post_sale_waiting_periods_and_rescission_windows",
+      "topic": "statutory_caps_and_licensing",
+      "topic_title": "State Fee Caps, Waiting Periods, PI Licensing & UPL Rules",
+      "question": "How long must an operator wait after escheat or a tax/foreclosure sale before a recovery agreement is enforceable, and how long can the claimant rescind?",
+      "conflicting_views": [
+        "Some sources cite a mandatory dormancy or waiting period measured from the date funds are reported to the state, during which no fee agreement may be signed.",
+        "Others describe the clock as running from the sale or distribution date, not the reporting date.",
+        "Rescission windows are variously described as a few days, ten days, or absent entirely depending on the state and the fund type."
+      ],
+      "editorial_resolution": "Publish the waiting period and rescission window as a per-state worksheet the reader fills in from the governing statute, with the structural warning that an agreement signed inside a prohibited window may be void and the fee unrecoverable.",
+      "verification_status": "Jurisdiction-Dependent — Must Cite Local Statute",
+      "priority": "high",
+      "corpus_references": []
+    },
+    {
+      "claim_id": "champerty_and_assignment_of_heirship_scrutiny",
+      "topic": "contracts_and_compensation",
+      "topic_title": "Fee Agreements, Assignments of Interest & Escrow Disbursement",
+      "question": "Is taking an assignment of a heir's interest in an estate enforceable, or vulnerable as champerty or an unconscionable bargain?",
+      "conflicting_views": [
+        "Operators report using outright assignments of interest as the cleanest way to secure payment directly from the estate.",
+        "Others warn that courts in champerty-sensitive jurisdictions have voided or reduced such assignments where the heir was uninformed of the estate's value.",
+        "A middle view holds that a percentage fee agreement with an irrevocable direction to pay from escrow survives scrutiny where a bare assignment does not."
+      ],
+      "editorial_resolution": "Recommend the disclosure-forward structure as the default — fee agreement plus escrow direction, with the estate identified once the heir signs — and present bare assignment as a jurisdiction-specific instrument requiring local counsel.",
+      "verification_status": "Jurisdiction-Dependent — Must Cite Local Statute",
+      "priority": "high",
+      "corpus_references": []
+    },
+    {
+      "claim_id": "upl_attorney_filing_boundaries",
+      "topic": "statutory_caps_and_licensing",
+      "topic_title": "State Fee Caps, Waiting Periods, PI Licensing & UPL Rules",
+      "question": "Where is the line between permissible heir-location work and the unauthorized practice of law?",
+      "conflicting_views": [
+        "Some sources describe preparing and filing the heir's probate or claim paperwork as routine clerical support.",
+        "Others hold that selecting the filing, advising on entitlement, or appearing for the heir is law practice and must be routed to a licensed attorney.",
+        "A third position is that the locator may assemble and transmit evidence but must never advise the heir on legal rights or strategy."
+      ],
+      "editorial_resolution": "Draw the line conservatively in the manual: research, document assembly and introductions on the locator's side; advice, pleadings and appearances with counsel — and tell the reader to confirm the boundary with their state bar before building a workflow around it.",
+      "verification_status": "Jurisdiction-Dependent — Must Cite Local Statute",
+      "priority": "high",
+      "corpus_references": []
+    },
+    {
+      "claim_id": "gross_estate_vs_net_distributable_equity_math",
+      "topic": "business_model_and_economics",
+      "topic_title": "Business Model, Contingency Economics & Deal Scale",
+      "question": "Is the contingency percentage computed on the gross estate value or on the net amount actually distributable to the located heir?",
+      "conflicting_views": [
+        "Headline case figures in the corpus are quoted against gross estate or gross property value.",
+        "Operators describing actual settlement statements compute the fee on the heir's net distributable share after debts, liens, taxes, administration costs and co-heir splits.",
+        "Some agreements are described as fixing the percentage on recovered funds received, which differs again where property is sold rather than distributed in kind."
+      ],
+      "editorial_resolution": "Standardize on net distributable share to the specific heir as the manual's arithmetic base, show the gross-to-net waterfall explicitly, and label any gross-value figures drawn from the corpus as illustrative rather than as expected earnings.",
+      "verification_status": "Jurisdiction-Dependent — Must Cite Local Statute",
+      "priority": "high",
+      "corpus_references": []
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "concept_id": "concept_b",
+  "approved": false,
+  "preview_only": true,
+  "files": {
+    "digital_pdf.pdf": {
+      "bytes": 165553,
+      "sha256": "33d23739884e137532c316acf2e197048c341f7e2955b0e49aa26fbdb621f40f"
+    },
+    "print_6x9_pdf.pdf": {
+      "bytes": 190298,
+      "sha256": "45e491e298dd47b361b20c770587e0e797b0c616434a30cd72ff052b6d77458e"
+    },
+    "workbook_pdf.pdf": {
+      "bytes": 26688,
+      "sha256": "4aacccb2f829df789aead9db08da818ea194a5e187217ce0625a0c1692db9cc2"
+    },
+    "book.epub": {
+      "bytes": 56887,
+      "sha256": "b2d5c9f67b8fe5e4bb044ad9061a6d41de52f8cbfb790c219cdcd0e51509b856"
+    },
+    "art/cover.svg": {
+      "bytes": 3647,
+      "sha256": "ec0eb4799bb7135b796b33119fd9e8312cb4c98945771275b920185513cdb3c2"
+    },
+    "art/scorecard.svg": {
+      "bytes": 44035,
+      "sha256": "fb0d430ca9cb5c1fca6381b676a70473c5b992211f1ae38ccd6ef0753aa14d57"
+    },
+    "art/diag_01.svg": {
+      "bytes": 7568,
+      "sha256": "ec0ecdbf51afb92ceaf5266af0b336b3446d5c6061d7bdc2470ef972540a66ae"
+    },
+    "art/diag_02.svg": {
+      "bytes": 5488,
+      "sha256": "50eab5f86d2a3e6634e3c632b9f8580ed049bdd6ac47df01e019da17e583cfb7"
+    },
+    "art/diag_03.svg": {
+      "bytes": 7425,
+      "sha256": "b0a4bb73ea1621972439518dc77ff274b095b3d674738227df63640bf8a00339"
+    },
+    "art/diag_04.svg": {
+      "bytes": 6077,
+      "sha256": "177cd8608421db304212f9688a028131f420e74317806329e4ad100490fe26c6"
+    },
+    "art/diag_05.svg": {
+      "bytes": 6957,
+      "sha256": "9890ab8afcd54a5d5e1bb0327ffce73d8468f02f64fe5efffc60e17cd75573ce"
+    },
+    "art/diag_06.svg": {
+      "bytes": 6481,
+      "sha256": "1144532aa9fe09adc25b3e8eb0925a056a10efaecfce2b5476536bcbad3623da"
+    },
+    "art/diag_07.svg": {
+      "bytes": 6093,
+      "sha256": "a489fcc4c9e9a02b39f71f1d953cebd4bf1d7d8a0925d16b07a39c49faa7ad3c"
+    },
+    "art/diag_08.svg": {
+      "bytes": 6214,
+      "sha256": "c41fc79fd2ffeafd70ba5566476283bb0ef69a5d5a94d4d0001ede67c438ce1f"
+    }
+  }
+}

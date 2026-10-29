@@ -494,7 +494,8 @@ class PublishingTest(unittest.TestCase):
             book = self.state.generate_ebook(topics='probate', discover_first=True)
         discover.assert_called_once()
         self.assertEqual(book['telemetry']['video_count'], 1)
-        self.assertIs(self.state.last_ebook, book)
+        self.assertEqual(self.state.last_ebook, book)
+        self.assertIsNot(self.state.last_ebook, book)
         with self.assertRaises(ValueError):
             self.state.generate_ebook(video_ids=[])
         self.assertEqual(self.state.generate_ebook(max_videos=1)['telemetry']['video_count'], 1)

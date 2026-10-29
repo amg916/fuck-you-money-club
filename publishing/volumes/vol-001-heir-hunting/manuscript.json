@@ -1,0 +1,1561 @@
+{
+  "volume_id": "vol-001-heir-hunting",
+  "volume_number": "001",
+  "series_title": "THE BIG MONEY PLAYBOOKS",
+  "parent_brand": "THE FUCK YOU MONEY CLUB",
+  "tagline": "Big Money. Small Teams. No Bullshit.",
+  "title": "HEIR HUNTING",
+  "subtitle": "The Complete Playbook for Finding Missing Heirs, Researching Unclaimed Estates & Building a Probate Research Business",
+  "positioning_alternatives": [
+    {
+      "title": "The Probate Research Operator",
+      "subtitle": "Build documented kinship cases, not inheritance promises.",
+      "audience": "Researchers building a narrow probate service",
+      "research_basis": "State-law succession makes evidence and jurisdictional scope central to a defensible service.",
+      "sources": [
+        "https://www.law.cornell.edu/wex/intestacy"
+      ],
+      "validation_status": "Source-informed editorial positioning; not market-tested."
+    },
+    {
+      "title": "Evidence Before Inheritance",
+      "subtitle": "A risk-first guide to finding heirs and screening estates.",
+      "audience": "Operators who need stronger liability and solvency triage",
+      "research_basis": "Federal Medicaid recovery provisions demonstrate why gross estate value cannot stand in for distributable value.",
+      "sources": [
+        "https://www.law.cornell.edu/uscode/text/42/1396p"
+      ],
+      "validation_status": "Source-informed editorial positioning; not market-tested."
+    },
+    {
+      "title": "The Missing-Heir Research Desk",
+      "subtitle": "A small-team workflow from public records to reviewable proof.",
+      "audience": "Genealogists developing a professional research workflow",
+      "research_basis": "Intestacy identifies heirs under state law; positioning around sourced relationship research avoids promising a legal distribution result.",
+      "sources": [
+        "https://www.law.cornell.edu/wex/intestacy"
+      ],
+      "validation_status": "Source-informed editorial positioning; not market-tested."
+    }
+  ],
+  "epistemic_framework": [
+    {
+      "tier": 1,
+      "tag": "statutory_fact",
+      "label": "Primary legal authority",
+      "standard": "Read the cited current law and applicable state implementation; citations are not individualized legal advice. California links are reference pointers, not certification of current text."
+    },
+    {
+      "tier": 2,
+      "tag": "attributed_practitioner_claim",
+      "label": "Attributed source commentary",
+      "standard": "Timestamped pro-tips identify who said what; they do not establish consensus or verify a legal or earnings claim."
+    },
+    {
+      "tier": 3,
+      "tag": "operating_framework",
+      "label": "Editorial operating guidance",
+      "standard": "Recommended controls and workflows require local adaptation and pilot validation; they are not measured industry norms."
+    },
+    {
+      "tier": 4,
+      "tag": "illustrative_model",
+      "label": "Explicit hypothetical",
+      "standard": "Invented budgets, conversion counts and fee examples explain mechanics, not actual market performance, legal ceilings or guaranteed results."
+    }
+  ],
+  "total_word_count": 6214,
+  "chapter_count": 12,
+  "chapters": [
+    {
+      "id": "Q1",
+      "chapter_id": "Q1",
+      "chapter_number": 1,
+      "question_number": 1,
+      "slug": "what-is-heir-hunting",
+      "question_prompt": "Q1: What Exactly Is Heir Hunting?",
+      "kicker": "Q1 / THE BIG MONEY PLAYBOOKS",
+      "title": "What Exactly Is Heir Hunting?",
+      "subtitle": "Three adjacent businesses with different claimants, rules and evidence.",
+      "layout_template": "opportunity_overview",
+      "reading_time_minutes": 4,
+      "executive_summary": "Heir hunting is paid identity and relationship research used to locate people who may have inheritance rights. It is not a universal license to recover every kind of abandoned money. Start by identifying the legal lane and the decision-maker.",
+      "key_metrics": [
+        {
+          "label": "Legal lanes",
+          "value": "3",
+          "context": "Probate, custodial property and sale surplus must not be conflated."
+        },
+        {
+          "label": "Proof standard",
+          "value": "Case-specific",
+          "context": "A family-tree hint is not an adjudicated entitlement."
+        },
+        {
+          "label": "Revenue timing",
+          "value": "Uncertain",
+          "context": "Research completion does not equal distribution."
+        }
+      ],
+      "sections": [
+        {
+          "heading": "Probate research follows the estate",
+          "epistemic_status": "statutory_fact",
+          "paragraphs": [
+            "A probate researcher locates potential heirs and documents relationships. Intestacy statutes govern succession where applicable; a will, trust, spousal rights and other facts can change who receives property.",
+            "The court or authorized fiduciary determines the administration path. Researchers should describe evidence and uncertainty, not promise a share or represent that discovering a relative proves entitlement."
+          ],
+          "table": {
+            "headers": [
+              "Lane",
+              "Typical decision-maker",
+              "Central evidence"
+            ],
+            "rows": [
+              [
+                "Probate heir research",
+                "Court / estate fiduciary",
+                "Vital records, instruments and kinship chain"
+              ],
+              [
+                "State-held unclaimed property",
+                "State custodian",
+                "Owner identity and statutory successor authority"
+              ],
+              [
+                "Foreclosure or tax surplus",
+                "Court / trustee / county under local law",
+                "Title history, liens, sale record and priority"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Custodial property is a different workflow",
+          "epistemic_status": "operating_framework",
+          "paragraphs": [
+            "State-held accounts, checks and other property are claimed through the relevant custodian. A deceased owner's claimant may need estate authority, but that does not turn every custodial claim into an open probate lead.",
+            "Owners can generally use official state claim channels without hiring a finder. Disclose that option, check finder-agreement restrictions and never imply affiliation with the government."
+          ],
+          "callout": {
+            "title": "Name the lane",
+            "body": "Write the asset holder, claim type and governing jurisdiction at the top of every intake record."
+          }
+        },
+        {
+          "heading": "Sale surplus follows its own priority rules",
+          "epistemic_status": "operating_framework",
+          "paragraphs": [
+            "Foreclosure and tax-sale surplus concerns proceeds remaining after legally specified payments. The claimant may be an owner, successor or lienholder, and the priority analysis differs from identifying an intestate heir.",
+            "Before outreach, identify the specific sale process and current filing procedure. A large posted surplus can produce no payable amount for the person you found once senior claims and eligibility are considered."
+          ],
+          "sop_steps": [
+            "Record the official case or property identifier.",
+            "Classify the asset and the authority handling it.",
+            "List unresolved entitlement and priority questions.",
+            "Refer legal questions before drafting an offer."
+          ]
+        }
+      ],
+      "pull_quote": "The opportunity is not finding a name. It is building a lawful, provable path from an asset to the right claimant.",
+      "diagram_id": "diag-01-end-to-end-workflow",
+      "action_checklist": [
+        "Choose one claim lane.",
+        "Identify the governing jurisdiction.",
+        "Save the official source record.",
+        "Separate identity from entitlement.",
+        "Have counsel review the service boundary."
+      ],
+      "statutory_citations": [
+        {
+          "title": "California Probate Code section 6402",
+          "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PROB&sectionNum=6402.",
+          "relevance": "Illustrative intestate succession authority; not a nationwide rule."
+        },
+        {
+          "title": "California Civil Code section 2924k",
+          "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=2924k.",
+          "relevance": "Illustrates allocation of trustee-sale proceeds, distinct from probate succession."
+        }
+      ],
+      "source_citations": [],
+      "revision": "730cda542bf0f3f4"
+    },
+    {
+      "id": "Q2",
+      "chapter_id": "Q2",
+      "chapter_number": 2,
+      "question_number": 2,
+      "slug": "who-pays-and-where-capital-sits",
+      "question_prompt": "Q2: Who Pays, Why They Pay & Where Estate Capital Sits",
+      "kicker": "Q2 / THE BIG MONEY PLAYBOOKS",
+      "title": "Who Pays, Why They Pay & Where Estate Capital Sits",
+      "subtitle": "Find the payer, the asset holder and the authority to act before discussing price.",
+      "layout_template": "executive_summary",
+      "reading_time_minutes": 4,
+      "executive_summary": "People pay for documented research, coordination and reduced administrative burden, not for secret access to public funds. Payment depends on a lawful engagement and its actual terms. A claimant, fiduciary and asset custodian are different roles.",
+      "key_metrics": [
+        {
+          "label": "Payer",
+          "value": "Contract-specific",
+          "context": "Do not assume the court or state pays the finder."
+        },
+        {
+          "label": "Asset value",
+          "value": "Not distributable cash",
+          "context": "Debts, costs and competing rights matter."
+        },
+        {
+          "label": "DIY route",
+          "value": "Disclose",
+          "context": "Explain available official claim channels."
+        }
+      ],
+      "sections": [
+        {
+          "heading": "Who can authorize and who can pay",
+          "epistemic_status": "operating_framework",
+          "paragraphs": [
+            "A potential heir might retain a researcher; a fiduciary might commission genealogy within their authority. Those arrangements have different approval, expense and conflict considerations, so the client and payer must be explicit.",
+            "Do not charge an estate merely because a relative signed a contract. Determine who has authority, whether approval is required and whether a fee is payable from a claimant's recovery or under a separate professional engagement."
+          ],
+          "table": {
+            "headers": [
+              "Role",
+              "Typical responsibility",
+              "Do not assume"
+            ],
+            "rows": [
+              [
+                "Claimant",
+                "Provide identity and authorize permitted assistance",
+                "Authority over the whole estate"
+              ],
+              [
+                "Fiduciary",
+                "Administer within legal authority",
+                "Unlimited power to approve expenses"
+              ],
+              [
+                "Custodian",
+                "Evaluate claims and release property",
+                "Liability for your private fee"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Where capital actually sits",
+          "epistemic_status": "operating_framework",
+          "paragraphs": [
+            "Estate assets may sit in bank accounts, real property or investments controlled through administration. State unclaimed property is held by a statutory custodian; sale surplus is held under a separate distribution process.",
+            "An inventory is a snapshot, not a fee base. Verify liquidity, ownership, restrictions and whether the listed amount is still available. Treat an old docket entry or commercial lead list as a research pointer until the official record confirms it."
+          ],
+          "sop_steps": [
+            "Identify the current asset holder.",
+            "Check the record's date and status.",
+            "Separate gross value from likely distributable value.",
+            "Document who can sign and who would pay."
+          ]
+        },
+        {
+          "heading": "Value without pressure",
+          "epistemic_status": "operating_framework",
+          "paragraphs": [
+            "A credible offer describes the records to be obtained, the work excluded, the applicable fee arrangement and the client's alternatives. Give people time to verify your identity through independently located contact details.",
+            "Fee restrictions depend on jurisdiction and claim lane. The accompanying graphic is a sensitivity exercise, not a state comparison: hypothetical ceilings show why legal screening precedes acquisition spending."
+          ],
+          "callout": {
+            "title": "No government-affiliation claim",
+            "body": "Use your own business identity and explain that hiring assistance is optional where a direct claim route exists."
+          }
+        }
+      ],
+      "pull_quote": "Locate the authority to pay before treating an asset as revenue.",
+      "diagram_id": "diag-04-jurisdiction-fee-caps",
+      "action_checklist": [
+        "Name the client and payer separately.",
+        "Verify the current custodian.",
+        "Estimate net distributable value.",
+        "Explain direct-claim alternatives.",
+        "Review compensation and timing restrictions locally."
+      ],
+      "statutory_citations": [
+        {
+          "title": "California Code of Civil Procedure section 1582",
+          "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=1582.",
+          "relevance": "Investigate current finder-agreement restrictions for state-held property; do not transplant them to probate."
+        },
+        {
+          "title": "California Probate Code section 8800",
+          "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PROB&sectionNum=8800.",
+          "relevance": "Inventory and appraisal framework; gross inventory is not a promised distribution."
+        }
+      ],
+      "source_citations": [],
+      "revision": "72e27ebfb9ad29bc"
+    },
+    {
+      "id": "Q3",
+      "chapter_id": "Q3",
+      "chapter_number": 3,
+      "question_number": 3,
+      "slug": "contingency-fees-and-unit-economics",
+      "question_prompt": "Q3: How the Business Makes Money: Contingency Structures, Fee Caps & Unit Economics",
+      "kicker": "Q3 / THE BIG MONEY PLAYBOOKS",
+      "title": "How the Business Makes Money: Contingency Structures, Fee Caps & Unit Economics",
+      "subtitle": "Model collected fees after failed leads, costs and delay.",
+      "layout_template": "financial_breakdown",
+      "reading_time_minutes": 5,
+      "executive_summary": "A contingency model earns compensation only on the contract's lawful trigger. The percentage, fee base, expenses, cancellation provisions and timing restrictions require local review. Measure contribution and cash flow separately from headline recoveries.",
+      "key_metrics": [
+        {
+          "label": "Illustrative recovery",
+          "value": "$60,000",
+          "context": "Assumed client recovery, not business revenue."
+        },
+        {
+          "label": "Illustrative fee",
+          "value": "$6,000",
+          "context": "Assumed lawful 10%; not a recommended or universal rate."
+        },
+        {
+          "label": "Contribution",
+          "value": "$3,000",
+          "context": "Before fixed overhead, owner pay and taxes in this example."
+        }
+      ],
+      "sections": [
+        {
+          "heading": "Write the economic contract clearly",
+          "epistemic_status": "operating_framework",
+          "paragraphs": [
+            "Specify the services, authorized claimant, payment trigger and amount on which any percentage is calculated. Address unsuccessful cases, document charges and termination without implying that a signed agreement guarantees a valid fee.",
+            "A percentage below a nominal ceiling can still be unlawful if the agreement is premature, the service is regulated or mandatory disclosures are missing. Do not repackage prohibited compensation as expenses or obtain broad control of client assets to evade restrictions."
+          ],
+          "callout": {
+            "title": "Legal gate before pricing",
+            "body": "Confirm the current statute, agency procedure and permitted agreement timing for the exact claim lane."
+          }
+        },
+        {
+          "heading": "Walk the fee down to contribution",
+          "epistemic_status": "illustrative_model",
+          "paragraphs": [
+            "Assume a $60,000 actual recovery and a lawful 10% fee: collected business revenue is $6,000. Subtract $1,200 in research and records, $800 in professional review and $1,000 allocated acquisition cost to obtain $3,000 contribution.",
+            "This is not owner net profit. Fixed overhead, owner compensation, taxes and financing costs remain. Allocate unsuccessful lead costs across the cohort; otherwise successful files appear more profitable than the business really is."
+          ],
+          "table": {
+            "headers": [
+              "Line",
+              "USD",
+              "Treatment"
+            ],
+            "rows": [
+              [
+                "Collected fee",
+                "6,000",
+                "Revenue"
+              ],
+              [
+                "Research and records",
+                "-1,200",
+                "Direct costs"
+              ],
+              [
+                "Professional review",
+                "-800",
+                "Direct costs"
+              ],
+              [
+                "Acquisition allocation",
+                "-1,000",
+                "Includes failed leads"
+              ],
+              [
+                "Contribution",
+                "3,000",
+                "Before fixed costs, owner pay and tax"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Cash timing can defeat paper margins",
+          "epistemic_status": "illustrative_model",
+          "paragraphs": [
+            "For a hypothetical 20-lead cohort with two paid cases at $6,000 each, revenue is $12,000. If all cohort research, review and acquisition spend totals $9,000, contribution is $3,000. One paid case at the same spending produces a $3,000 loss.",
+            "Track when money leaves as well as when it returns. A fee that arrives after a long administration cannot fund next month's expenses without reserves. Model no recovery, half the expected recoveries and twice the expected wait before expanding."
+          ],
+          "sop_steps": [
+            "Track cohort-level spend, including dead leads.",
+            "Record actual collections rather than unsigned forecasts.",
+            "Calculate contribution before owner profit.",
+            "Stress-test both conversion and collection delay."
+          ]
+        }
+      ],
+      "pull_quote": "Gross recovery belongs to the claimant; only lawful collected fees belong in your revenue model.",
+      "diagram_id": "diag-03-fee-waterfall",
+      "action_checklist": [
+        "Obtain local agreement review.",
+        "Define the permitted fee base.",
+        "Allocate unsuccessful lead costs.",
+        "Build a cash-flow reserve model.",
+        "Reconcile every collection against the signed terms."
+      ],
+      "statutory_citations": [
+        {
+          "title": "California Code of Civil Procedure section 1582",
+          "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=1582.",
+          "relevance": "Example of statutory restrictions on unclaimed-property compensation agreements."
+        },
+        {
+          "title": "California Probate Code section 11420",
+          "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PROB&sectionNum=11420.",
+          "relevance": "Estate payment priorities affect available distributions; this is not a finder fee schedule."
+        }
+      ],
+      "source_citations": [],
+      "revision": "861b192f13153cf1"
+    },
+    {
+      "id": "Q4",
+      "chapter_id": "Q4",
+      "chapter_number": 4,
+      "question_number": 4,
+      "slug": "realistic-startup-requirements",
+      "question_prompt": "Q4: Realistic Startup Requirements",
+      "kicker": "Q4 / THE BIG MONEY PLAYBOOKS",
+      "title": "Realistic Startup Requirements",
+      "subtitle": "A bounded research pilot, professional review and enough cash to wait.",
+      "layout_template": "comparison_table",
+      "reading_time_minutes": 4,
+      "executive_summary": "The essential startup investment is a reliable evidence and compliance process. Begin in one jurisdiction with a defined research budget, secure records, reviewed contracts and a reserve. Do not confuse inexpensive access to records with low business risk.",
+      "key_metrics": [
+        {
+          "label": "Pilot cash",
+          "value": "$5,000",
+          "context": "Illustrative business-only budget, not a market estimate."
+        },
+        {
+          "label": "Operating scope",
+          "value": "One lane",
+          "context": "Limit initial legal and procedural complexity."
+        },
+        {
+          "label": "Owner runway",
+          "value": "Separate",
+          "context": "Living expenses are excluded from the example."
+        }
+      ],
+      "sections": [
+        {
+          "heading": "Buy capacity, not a stack of subscriptions",
+          "epistemic_status": "illustrative_model",
+          "paragraphs": [
+            "An illustrative $5,000 pilot allocates $1,500 to setup and review, $600 to tools, $900 to pilot case costs and $2,000 to reserve. Actual legal, insurance and document costs vary substantially; obtain quotes before relying on these amounts.",
+            "Purchase only the sources your initial cases require. Free official indexes may identify a lead, while certified records and specialist work can determine whether the relationship chain is usable. Budget for the evidence rather than collecting software subscriptions."
+          ],
+          "table": {
+            "headers": [
+              "Component",
+              "Illustrative USD",
+              "Boundary"
+            ],
+            "rows": [
+              [
+                "Setup and professional review",
+                "1,500",
+                "Replace with quotes"
+              ],
+              [
+                "Tools for a short pilot",
+                "600",
+                "No implied vendor prices"
+              ],
+              [
+                "Pilot case costs",
+                "900",
+                "Bounded research spend"
+              ],
+              [
+                "Business reserve",
+                "2,000",
+                "Not owner living costs"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Build defensible operating controls",
+          "epistemic_status": "operating_framework",
+          "paragraphs": [
+            "Use a case register, source log, budget tracker and access-controlled document store. Capture record provenance and maintain a clear distinction between verified identities, possible matches and disproved hypotheses.",
+            "Collect only the personal information needed for the claim and use secure transfer channels. Confirm licensing, registration, insurance and unauthorized-practice boundaries with qualified local advisers before offering services or accepting sensitive client records."
+          ],
+          "sop_steps": [
+            "Define the lane and permitted services.",
+            "Obtain local professional review and actual quotes.",
+            "Create case, consent and evidence templates.",
+            "Set retention, access and deletion policies."
+          ]
+        },
+        {
+          "heading": "Validate demand before committing overhead",
+          "epistemic_status": "operating_framework",
+          "paragraphs": [
+            "A small pilot tests whether official leads can be screened, evidence can be obtained and eligible people value assistance at a lawful price. Set a fixed amount of time and cash you can afford to lose; an unresolved pilot is not a reason to keep spending indefinitely.",
+            "Avoid commitments that depend on rapid distributions. A home-based researcher can still face extended collections and failed files. Continue only when the pilot shows a repeatable process and economics that survive realistic unsuccessful cases."
+          ],
+          "callout": {
+            "title": "Stop rule",
+            "body": "Pause when the approved research budget is exhausted, a legal gate fails or the evidence no longer supports a plausible claim."
+          }
+        }
+      ],
+      "pull_quote": "Start small enough to discover the process is wrong without putting your household at risk.",
+      "diagram_id": "diag-07-startup-budget-stack",
+      "action_checklist": [
+        "Select one jurisdiction and lane.",
+        "Get professional and insurance quotes.",
+        "Create secure evidence storage.",
+        "Fund business and personal reserves separately.",
+        "Set a written pilot budget and stop date."
+      ],
+      "statutory_citations": [
+        {
+          "title": "California Business and Professions Code section 6125",
+          "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=6125.",
+          "relevance": "Illustrates restrictions on practicing law; research services must respect local professional boundaries."
+        },
+        {
+          "title": "California Code of Civil Procedure section 1582",
+          "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=1582.",
+          "relevance": "Review applicable finder-agreement constraints before budgeting for a state-property service."
+        }
+      ],
+      "source_citations": [],
+      "revision": "3a834d9d935d2878"
+    },
+    {
+      "id": "Q5",
+      "chapter_id": "Q5",
+      "chapter_number": 5,
+      "question_number": 5,
+      "slug": "what-experienced-operators-know",
+      "question_prompt": "Q5: What Experienced Operators Know That Beginners Miss",
+      "kicker": "Q5 / THE BIG MONEY PLAYBOOKS",
+      "title": "What Experienced Operators Know That Beginners Miss",
+      "subtitle": "The best early decision is often a documented no-go.",
+      "layout_template": "expert_insights",
+      "reading_time_minutes": 5,
+      "executive_summary": "Experienced case screening asks what can reach the claimant after priority claims, administration costs and legal restrictions. Liens, Medicaid estate recovery and insolvency can change the economics completely. Treat operator advice as a hypothesis until official records and professional review support it.",
+      "key_metrics": [
+        {
+          "label": "Gross versus net",
+          "value": "Different",
+          "context": "A listed asset is not a payable inheritance."
+        },
+        {
+          "label": "Research budget",
+          "value": "Capped",
+          "context": "Use staged approvals rather than unlimited investigation."
+        },
+        {
+          "label": "Dead leads",
+          "value": "Log reasons",
+          "context": "Disqualification data improves the next cohort."
+        }
+      ],
+      "sections": [
+        {
+          "heading": "Lien priority comes before the exciting headline",
+          "epistemic_status": "operating_framework",
+          "paragraphs": [
+            "A property value or sale-surplus amount is only the beginning. Secured claims, taxes, administration expenses and competing rights can consume the amount that appeared available. Obtain the relevant title, docket and payment records rather than assuming the first person located receives the balance.",
+            "Priority rules differ between estate administration, trustee sales and tax sales. Record each known claim, its source, the unresolved amount and the legal question it raises. Have qualified counsel resolve priority disputes; a researcher should not turn an incomplete spreadsheet into a legal distribution opinion."
+          ],
+          "table": {
+            "headers": [
+              "Risk",
+              "Evidence to obtain",
+              "Triage response"
+            ],
+            "rows": [
+              [
+                "Secured claim",
+                "Recorded instrument and current payoff evidence",
+                "Recalculate plausible net value"
+              ],
+              [
+                "Competing priority",
+                "Official claims and court orders",
+                "Seek legal allocation review"
+              ],
+              [
+                "Uncertain estate solvency",
+                "Inventory, allowed debts and administration costs",
+                "Pause optimistic recovery assumptions"
+              ],
+              [
+                "Stale or duplicate lead",
+                "Current docket and custodian confirmation",
+                "Close or merge with an audit trail"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Medicaid estate recovery is not a universal clawback",
+          "epistemic_status": "statutory_fact",
+          "paragraphs": [
+            "Federal Medicaid law requires estate recovery for certain assistance and allows states choices within the statutory framework. For people receiving covered assistance at age 55 or older, specified long-term-care services are central to the mandatory recovery rules. States can differ in covered recoveries and in whether their estate definition reaches certain nonprobate interests.",
+            "Surviving-spouse and qualifying-child protections, deferral rules and hardship-waiver procedures can affect recovery. Do not assume that every Medicaid beneficiary's estate owes the same claim, or that every family qualifies for an exception. Obtain the state program's current notice and have counsel assess enforceability, timing and any applicable waiver before estimating distributions."
+          ],
+          "callout": {
+            "title": "MERP review gate",
+            "body": "42 U.S.C. section 1396p(b) supplies a federal framework, not a case-specific payoff figure. State law and the actual facts remain essential."
+          }
+        },
+        {
+          "heading": "Insolvent estates and dead-lead triage",
+          "epistemic_status": "operating_framework",
+          "paragraphs": [
+            "An estate can contain valuable property and still have nothing distributable to heirs. If assets are insufficient after legally prior payments, locating additional relatives does not create a recovery. Record whether the problem is insolvency, missing authority, inadequate evidence, a closed deadline or an uneconomic research path.",
+            "Use staged research: inexpensive source confirmation first, a bounded evidence search second, and specialist escalation only after the file passes the earlier gates. Close a lead with a reason and a reopening condition rather than repeatedly rediscovering it. This preserves both cash and respectful treatment of families."
+          ],
+          "sop_steps": [
+            "Confirm current asset and claim status.",
+            "List debts, liens and unresolved priority issues.",
+            "Check Medicaid recovery questions where relevant.",
+            "Estimate a conservative range of distributable value.",
+            "Close, pause or approve the next research stage in writing."
+          ]
+        }
+      ],
+      "pull_quote": "The discipline is not chasing every estate. It is knowing which uncertainty deserves another dollar.",
+      "diagram_id": "diag-02-deal-funnel",
+      "action_checklist": [
+        "Build a priority and liability checklist.",
+        "Flag potential Medicaid recovery for legal review.",
+        "Test estate solvency before deep genealogy.",
+        "Cap each stage's research spend.",
+        "Record dead-lead reasons and reopening conditions."
+      ],
+      "statutory_citations": [
+        {
+          "title": "42 U.S.C. section 1396p(b)",
+          "url": "https://www.law.cornell.edu/uscode/text/42/1396p",
+          "relevance": "Federal Medicaid estate-recovery framework, protections and hardship-waiver requirements; state implementation must also be checked."
+        },
+        {
+          "title": "California Probate Code section 11420",
+          "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PROB&sectionNum=11420.",
+          "relevance": "Illustrative order of payment of estate debts; do not generalize this state's priorities nationwide."
+        }
+      ],
+      "source_citations": [],
+      "revision": "06a0e5dc6a9a0746"
+    },
+    {
+      "id": "Q6",
+      "chapter_id": "Q6",
+      "chapter_number": 6,
+      "question_number": 6,
+      "slug": "finding-qualified-opportunities",
+      "question_prompt": "Q6: Finding Your First Qualified Opportunities",
+      "kicker": "Q6 / THE BIG MONEY PLAYBOOKS",
+      "title": "Finding Your First Qualified Opportunities",
+      "subtitle": "A repeatable official-source workflow beats an indiscriminate lead list.",
+      "layout_template": "step_by_step_sop",
+      "reading_time_minutes": 5,
+      "executive_summary": "Choose one claim lane, screen a small batch of official records and advance only leads with plausible entitlement, net value and a feasible evidence path. Keep discovery separate from permission to contact, contract or file. The output is a qualified research queue, not a list of guaranteed recoveries.",
+      "key_metrics": [
+        {
+          "label": "Initial batch",
+          "value": "20 records",
+          "context": "Suggested pilot size, not an evidence-based optimum."
+        },
+        {
+          "label": "Required gates",
+          "value": "4",
+          "context": "Status, eligibility, net value and proof feasibility."
+        },
+        {
+          "label": "Success measure",
+          "value": "Paid cohort economics",
+          "context": "Do not substitute raw lead count for useful outcomes."
+        }
+      ],
+      "sections": [
+        {
+          "heading": "Choose sources that match the lane",
+          "epistemic_status": "operating_framework",
+          "paragraphs": [
+            "For probate, begin with accessible court dockets and official public-administrator information in the selected jurisdiction. For custodial property, use the state's official search and claim instructions. For sale surplus, identify the responsible court, trustee or county and its specific official records.",
+            "A listing's existence does not establish that the case is open, the money remains available or your proposed client is eligible. Respect access terms, record restrictions and privacy rules. Do not bypass access controls or use a commercial lead vendor's eligibility claim as a substitute for official confirmation."
+          ],
+          "table": {
+            "headers": [
+              "Source lane",
+              "Capture",
+              "Verify next"
+            ],
+            "rows": [
+              [
+                "Probate docket",
+                "Case number, decedent and fiduciary",
+                "Current status and governing instruments"
+              ],
+              [
+                "State property record",
+                "Property identifier and custodian",
+                "Owner identity and successor requirements"
+              ],
+              [
+                "Sale-surplus record",
+                "Sale identifier and holding authority",
+                "Priority, deadlines and remaining balance"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Run four qualification gates",
+          "epistemic_status": "operating_framework",
+          "paragraphs": [
+            "First verify status and current availability. Second identify a plausible claimant and the authority they would need. Third estimate net distributable value after known claims, costs and uncertainty. Fourth assess whether the necessary records can be obtained within the pilot budget.",
+            "For a suggested 20-record batch, time-box preliminary screening and escalate only documented survivors. The separate 100-record funnel is an invented teaching example, not a conversion target. Track observed outcomes in your own batch before making acquisition or staffing decisions."
+          ],
+          "sop_steps": [
+            "Save the official source URL, retrieval date and identifier.",
+            "Confirm case status, availability and deadlines.",
+            "Document the claimant hypothesis and missing authority.",
+            "Estimate net value with unresolved claims explicitly flagged.",
+            "Approve a bounded evidence search or close the lead."
+          ]
+        },
+        {
+          "heading": "Approach qualified people without manufacturing urgency",
+          "epistemic_status": "operating_framework",
+          "paragraphs": [
+            "Use a clear introduction identifying your business, the general nature of the matter and an independent way to verify your identity. Do not expose sensitive family details to an unverified recipient or demand identity documents through an insecure channel. A plausible match is not permission to reveal someone else's personal records.",
+            "Before presenting an agreement, explain the scope, fee basis, available direct-claim route and limitations. Check contact, privacy and consumer-protection rules for the channel you use. Declined assistance is a valid outcome; log it and respect any request not to be contacted again."
+          ],
+          "callout": {
+            "title": "A qualified opportunity is not a signed client",
+            "body": "Keep lead qualification, identity verification, informed consent and lawful representation as separate gates."
+          }
+        }
+      ],
+      "pull_quote": "Find the official record first, the evidence path second and the commercial opportunity last.",
+      "diagram_id": "diag-02-deal-funnel",
+      "action_checklist": [
+        "Pick one official source and claim lane.",
+        "Screen a bounded pilot batch.",
+        "Record provenance and status for every lead.",
+        "Advance only leads that pass all four gates.",
+        "Use reviewed, privacy-conscious outreach and consent procedures."
+      ],
+      "statutory_citations": [
+        {
+          "title": "California Probate Code section 6402",
+          "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PROB&sectionNum=6402.",
+          "relevance": "Illustrates why a claimant hypothesis needs jurisdiction-specific succession analysis."
+        },
+        {
+          "title": "California Code of Civil Procedure section 1582",
+          "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=1582.",
+          "relevance": "Check current restrictions before offering a compensated custodial-property recovery agreement."
+        }
+      ],
+      "source_citations": [],
+      "revision": "9523a3a0caffc846"
+    },
+    {
+      "chapter_number": 7,
+      "slug": "genealogical-proof-and-distribution",
+      "question_number": 7,
+      "question_prompt": "How do we prove kinship and model an inheritance?",
+      "kicker": "Evidence before entitlement",
+      "title": "The Complete Operating Process: Genealogical Proof Standard & Per-Stirpes Math",
+      "subtitle": "Turn documented family relationships into a reviewable research exhibit.",
+      "layout_template": "research_exhibit",
+      "reading_time_minutes": 12,
+      "executive_summary": "Separate genealogical identity, legally qualifying relationships, and distribution math. Use the Genealogical Proof Standard as a research discipline, not as a substitute for the jurisdiction's evidentiary rules or a court's determination of heirship.",
+      "key_metrics": [
+        {
+          "label": "Research standard",
+          "value": "5 elements",
+          "note": "Exhaustive research, citations, analysis, conflict resolution, written conclusion."
+        },
+        {
+          "label": "Illustrative residue",
+          "value": "$180,000",
+          "note": "Assumed net distributable estate, not a verified opportunity."
+        },
+        {
+          "label": "Review gate",
+          "value": "Before outreach",
+          "note": "Unresolved identity conflicts prevent claims of entitlement."
+        }
+      ],
+      "sections": [
+        {
+          "heading": "Build a proof packet, not a name list",
+          "epistemic_status": "Professional research method; not a statutory proof rule.",
+          "paragraphs": [
+            "Start with the decedent's identity, domicile, death record, and probate file. Document each parent-child and marital link with source citations, record images where permitted, and an explanation of what each record actually establishes.",
+            "Apply the Genealogical Proof Standard: reasonably exhaustive research, complete and accurate citations, analysis and correlation, resolution of conflicting evidence, and a sound written conclusion. An index or family tree is a lead, not conclusive proof."
+          ],
+          "sop_steps": [
+            {
+              "step": 1,
+              "title": "Define the question",
+              "detail": "Record the relevant identity, relationship, jurisdiction, and missing evidence."
+            },
+            {
+              "step": 2,
+              "title": "Correlate independent sources",
+              "detail": "Compare dates, locations, relatives, and informants; record negative searches."
+            },
+            {
+              "step": 3,
+              "title": "Resolve and review",
+              "detail": "Write the conflict analysis and obtain independent review before labeling a link supported."
+            }
+          ]
+        },
+        {
+          "heading": "Calculate only after the legal rule is selected",
+          "epistemic_status": "Illustrative arithmetic under expressly assumed branch representation.",
+          "paragraphs": [
+            "Assume a $180,000 net intestate estate, no surviving spouse, and three child branches. Two children survive; the third predeceased the decedent leaving two qualifying children. Under the assumed branch-based rule, each branch receives $60,000 and each grandchild in the third branch receives $30,000.",
+            "Do not apply this example automatically. Representation rules, the generation at which division begins, survival periods, adoption, disclaimers, and spouse shares vary. Have counsel identify the governing statute and facts before treating a calculation as a distribution proposal."
+          ],
+          "table": {
+            "headers": [
+              "Recipient",
+              "Illustrative share",
+              "Illustrative dollars"
+            ],
+            "rows": [
+              [
+                "Surviving child A",
+                "1/3",
+                "$60,000"
+              ],
+              [
+                "Surviving child B",
+                "1/3",
+                "$60,000"
+              ],
+              [
+                "Grandchild C1",
+                "1/6",
+                "$30,000"
+              ],
+              [
+                "Grandchild C2",
+                "1/6",
+                "$30,000"
+              ],
+              [
+                "Total",
+                "1",
+                "$180,000"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Package uncertainty explicitly",
+          "epistemic_status": "Internal quality-control policy.",
+          "paragraphs": [
+            "Give every relationship an evidence status and every exhibit a stable identifier. Preserve contrary evidence rather than deleting inconvenient records. Distinguish an unsupported relationship from one disproved by reliable evidence.",
+            "Deliver a relationship chart, source register, unresolved-issues log, and versioned arithmetic sheet. Counsel or the authorized fiduciary should decide which material belongs in a filing and which additional proof the court requires."
+          ],
+          "callout": {
+            "type": "warning",
+            "title": "Research confidence is not legal entitlement",
+            "body": "A plausible family tree does not establish a payable claim.",
+            "items": [
+              "Flag missing vital records.",
+              "Reconcile namesakes and date conflicts.",
+              "Obtain review of the applicable succession rule."
+            ]
+          }
+        }
+      ],
+      "pull_quote": "A defensible conclusion shows both its evidence and its unresolved limits.",
+      "diagram_id": "diag-05-kinship-decision-tree",
+      "action_checklist": [
+        "Confirm decedent identity and domicile.",
+        "Cite every relationship link.",
+        "Resolve or flag contradictory records.",
+        "Reconcile modeled shares to the full residue.",
+        "Obtain independent research and legal review."
+      ],
+      "statutory_citations": [
+        "California Probate Code § 6402 (intestate succession; verify applicable version).",
+        "California Probate Code § 240 (distribution by representation; jurisdiction-specific example)."
+      ],
+      "id": "Q7",
+      "chapter_id": "Q7",
+      "source_citations": [],
+      "revision": "edc8ce8769c1b2ae"
+    },
+    {
+      "chapter_number": 8,
+      "slug": "tools-and-public-records",
+      "question_number": 8,
+      "question_prompt": "Which tools improve research without creating avoidable risk?",
+      "kicker": "A traceable investigative stack",
+      "title": "Tools, Public Databases & Investigative Stack",
+      "subtitle": "Choose authoritative records, lawful access, and reproducible source capture.",
+      "layout_template": "resource_directory",
+      "reading_time_minutes": 10,
+      "executive_summary": "Build a small stack around official dockets, lawful vital-record access, historical collections, and a restricted case register. Availability online does not make a record accurate, reusable, or unrestricted.",
+      "key_metrics": [
+        {
+          "label": "Source tiers",
+          "value": "3",
+          "note": "Official records, historical collections, and discovery-only leads."
+        },
+        {
+          "label": "Record traceability",
+          "value": "Every material fact",
+          "note": "Keep a citation and retrieval date."
+        },
+        {
+          "label": "Access model",
+          "value": "Least privilege",
+          "note": "Limit sensitive records to assigned personnel."
+        }
+      ],
+      "sections": [
+        {
+          "heading": "Use a source hierarchy",
+          "epistemic_status": "Research guidance; availability and access rules vary.",
+          "paragraphs": [
+            "Begin with the court clerk's official docket and the responsible vital-record agency. Use county land records and historical census collections to corroborate identity and geography. Certified copies may be required even when an online image is available.",
+            "Treat obituaries, cemetery listings, user-contributed family trees, and search-engine snippets as leads. Corroborate material statements and note whether the source creator had firsthand knowledge. Do not present a commercial directory match as a verified heir."
+          ],
+          "table": {
+            "headers": [
+              "Resource",
+              "Best use",
+              "Control"
+            ],
+            "rows": [
+              [
+                "Official probate docket",
+                "Case posture and fiduciary details",
+                "Confirm current docket and access terms"
+              ],
+              [
+                "Vital-record agency",
+                "Birth, marriage, and death links",
+                "Check eligibility and certification requirements"
+              ],
+              [
+                "Archives and census collections",
+                "Historical household context",
+                "Preserve image and collection citation"
+              ],
+              [
+                "Obituaries and family trees",
+                "Generate hypotheses",
+                "Corroborate independently"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Keep a reproducible research register",
+          "epistemic_status": "Operational recommendation.",
+          "paragraphs": [
+            "Use a case register with stable case, person, source, and relationship identifiers. Store retrieval dates, exact collection references, search variants, and access restrictions. A saved URL alone is insufficient when a portal uses expiring links.",
+            "Keep originals separate from working transcriptions and redacted exports. Use an encrypted document store with access logging and tested backups. Record a retention decision for each category instead of keeping sensitive records indefinitely."
+          ],
+          "sop_steps": [
+            {
+              "step": 1,
+              "title": "Capture",
+              "detail": "Save permitted source material with provenance and retrieval date."
+            },
+            {
+              "step": 2,
+              "title": "Link",
+              "detail": "Associate the source with specific claims and competing interpretations."
+            },
+            {
+              "step": 3,
+              "title": "Review access",
+              "detail": "Remove obsolete permissions and verify backup restoration on a recurring schedule."
+            }
+          ]
+        },
+        {
+          "heading": "Reject shortcuts with hidden legal costs",
+          "epistemic_status": "Compliance screening; legal advice required for specific access questions.",
+          "paragraphs": [
+            "Do not bypass logins, CAPTCHAs, sealed-record restrictions, or portal limits. Prefer official exports or licensed access. Public availability does not authorize impersonation, pretexting, or unrestricted redistribution of living people's information.",
+            "Screen specialty databases for permissible-purpose requirements and contract restrictions before purchase. Motor-vehicle information is subject to specific federal restrictions; do not assume heir research is a qualifying purpose. Use a documented approval gate for restricted datasets."
+          ],
+          "callout": {
+            "type": "caution",
+            "title": "A subscription is not universal authorization",
+            "body": "Evaluate the intended use, data source, and disclosure rules before importing records.",
+            "items": [
+              "Record license terms.",
+              "Exclude unnecessary sensitive identifiers.",
+              "Escalate restricted-source requests for legal review."
+            ]
+          }
+        }
+      ],
+      "pull_quote": "The best research stack makes every important conclusion reproducible.",
+      "diagram_id": "diag-01-end-to-end-workflow",
+      "action_checklist": [
+        "Inventory approved sources.",
+        "Document access terms.",
+        "Create stable source identifiers.",
+        "Test restoration of a sample case.",
+        "Review sensitive-data permissions."
+      ],
+      "statutory_citations": [
+        "18 U.S.C. § 2721 (restrictions on disclosure and use of motor-vehicle personal information).",
+        "18 U.S.C. § 1030 (computer-access offenses; obtain advice on authorized access)."
+      ],
+      "id": "Q8",
+      "chapter_id": "Q8",
+      "source_citations": [],
+      "revision": "d40447aa992f1781"
+    },
+    {
+      "chapter_number": 9,
+      "slug": "ethical-outreach-and-contracting",
+      "question_number": 9,
+      "question_prompt": "When may we contact an heir and offer a paid service?",
+      "kicker": "Permission before persuasion",
+      "title": "Ethical Outreach, Contracting & Jurisdictional Restrictions",
+      "subtitle": "Separate probate assignments, unclaimed-property recovery, licensing, and legal representation.",
+      "layout_template": "legal_compliance_notes",
+      "reading_time_minutes": 12,
+      "executive_summary": "Use truthful, low-pressure outreach and a jurisdiction-specific contract review. Probate interests and state-held unclaimed property are different regimes; a fee term acceptable in one is not automatically lawful in another.",
+      "key_metrics": [
+        {
+          "label": "Legal review",
+          "value": "Before offer",
+          "note": "Confirm current law, covered assets, timing, and required disclosures."
+        },
+        {
+          "label": "Outreach identity",
+          "value": "Transparent",
+          "note": "State who you are and that you are not a court or government agency."
+        },
+        {
+          "label": "Stop requests",
+          "value": "Honor promptly",
+          "note": "Suppress further marketing contact and retain minimal suppression information."
+        }
+      ],
+      "sections": [
+        {
+          "heading": "Map the asset and jurisdiction first",
+          "epistemic_status": "Issue-spotting references, not a current-law fee schedule or legal opinion.",
+          "paragraphs": [
+            "California Probate Code § 11604.5 addresses specified agreements involving estate interests. Florida Statutes § 717.135 and Texas Property Code § 74.507 concern unclaimed-property recovery arrangements. New York SCPA § 2225 concerns the determination of distributees in its statutory setting, not a universal finder-fee authorization.",
+            "Have local counsel confirm statutory scope, current text, amendments, waiting periods, fee limitations, contract formalities, and any court review before offering services. Record the effective date and asset category. Do not copy a fee cap or contract across probate and unclaimed-property matters."
+          ],
+          "table": {
+            "headers": [
+              "Jurisdiction",
+              "Reference",
+              "Review question"
+            ],
+            "rows": [
+              [
+                "California",
+                "Probate Code § 11604.5",
+                "Does this estate-interest agreement fall within the provision?"
+              ],
+              [
+                "Florida",
+                "Statutes § 717.135",
+                "What requirements govern this unclaimed-property recovery agreement?"
+              ],
+              [
+                "Texas",
+                "Property Code § 74.507",
+                "Which timing, compensation, and agreement restrictions apply?"
+              ],
+              [
+                "New York",
+                "SCPA § 2225",
+                "What distributee-determination procedures apply in this proceeding?"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Make the first contact verifiable",
+          "epistemic_status": "Ethical operating policy; channel-specific laws require separate review.",
+          "paragraphs": [
+            "Identify your business and explain that you conduct private genealogical research. Say a possible relationship is under investigation rather than promising money. Offer independently verifiable contact details and explain that recipients may seek independent advice or pursue available direct claim routes.",
+            "Do not request payment, banking credentials, or sensitive identity documents in an unsolicited first message. Check applicable calling, texting, email, and privacy requirements before choosing a channel. Record consent where required, contact preferences, and opt-outs without pressuring grieving families."
+          ],
+          "sop_steps": [
+            {
+              "step": 1,
+              "title": "Approve the message",
+              "detail": "Remove guarantees, artificial urgency, and implications of government affiliation."
+            },
+            {
+              "step": 2,
+              "title": "Offer verification",
+              "detail": "Provide public business details and a way to verify the underlying proceeding independently."
+            },
+            {
+              "step": 3,
+              "title": "Document the response",
+              "detail": "Record permission, questions, and suppression requests before any follow-up."
+            }
+          ]
+        },
+        {
+          "heading": "Keep licensing and legal practice separate",
+          "epistemic_status": "Jurisdiction-dependent legal boundary; obtain qualified advice.",
+          "paragraphs": [
+            "Paid locating and investigative work may trigger private-investigator licensing, registration, bonding, or exemptions that vary by location and activity. Check both where work occurs and where clients or subjects are located; a genealogy label does not itself establish an exemption.",
+            "Researchers may organize evidence but should not give individualized legal advice, select legal remedies for clients, or represent others in court without authorization. Route legal interpretation, contested heirship, and client-specific contract advice to licensed counsel. Clearly state services, compensation, expenses, cancellation terms, and complaint routes in reviewed agreements."
+          ],
+          "callout": {
+            "type": "warning",
+            "title": "Stop at the UPL boundary",
+            "body": "Unauthorized practice of law and PI licensing are distinct checks; satisfying one does not satisfy the other.",
+            "items": [
+              "Obtain a written licensing assessment.",
+              "Use counsel-approved agreements for the exact asset regime.",
+              "Escalate disputed relationships and legal advice requests."
+            ]
+          }
+        }
+      ],
+      "pull_quote": "An heir's informed choice matters more than a fast signature.",
+      "diagram_id": "diag-04-jurisdiction-fee-caps",
+      "action_checklist": [
+        "Classify the asset regime.",
+        "Verify current statutes with local counsel.",
+        "Check PI licensing and UPL boundaries.",
+        "Approve truthful outreach and channel compliance.",
+        "Record informed agreement and contact preferences."
+      ],
+      "statutory_citations": [
+        "California Probate Code § 11604.5; Florida Statutes § 717.135 (distinct agreement regimes).",
+        "Texas Property Code § 74.507; New York SCPA § 2225 (verify scope and current text separately)."
+      ],
+      "id": "Q9",
+      "chapter_id": "Q9",
+      "source_citations": [],
+      "revision": "c1d22e6eabad9ce4"
+    },
+    {
+      "chapter_number": 10,
+      "slug": "automation-and-case-economics",
+      "question_number": 10,
+      "question_prompt": "What can automation accelerate without deciding heirship?",
+      "kicker": "Automate preparation, preserve judgment",
+      "title": "Automation & AI Leverage: Docket Scrapers, OCR Triage & Case Walkthrough",
+      "subtitle": "Use bounded collection and evidence-linked triage with human approval gates.",
+      "layout_template": "case_study_walkthrough",
+      "reading_time_minutes": 11,
+      "executive_summary": "Use permitted docket collection, OCR, and language-model assistance to organize records, never to fabricate relationships or make legal determinations. Evaluate economics using collected revenue and documented costs, not estate headlines.",
+      "key_metrics": [
+        {
+          "label": "Illustrative estate",
+          "value": "$180,000",
+          "note": "Assumed net distributable residue; not the firm's revenue."
+        },
+        {
+          "label": "Illustrative gross fee",
+          "value": "$9,000",
+          "note": "10% of $90,000 represented distributions, only if lawful and collected."
+        },
+        {
+          "label": "Illustrative contribution",
+          "value": "$4,300",
+          "note": "Gross fee less $4,700 direct costs, before overhead and tax."
+        }
+      ],
+      "sections": [
+        {
+          "heading": "Bound the collection and OCR pipeline",
+          "epistemic_status": "Technical design recommendation; portal authorization must be verified.",
+          "paragraphs": [
+            "Prefer official feeds or exports. Run a docket scraper only where automated access is permitted, with conservative request rates, caching, duplicate detection, and backoff. Stop on access denial; do not evade access controls or use automation against sealed material.",
+            "Preserve originals and attach page references to OCR output. Flag names, dates, amounts, handwriting, and low-confidence text for human comparison. Model-generated summaries must cite source passages; unsupported statements remain unverified and cannot populate a proven relationship."
+          ],
+          "sop_steps": [
+            {
+              "step": 1,
+              "title": "Collect with provenance",
+              "detail": "Log authorization basis, retrieval time, docket identifier, and source file checksum."
+            },
+            {
+              "step": 2,
+              "title": "Triage locally where feasible",
+              "detail": "Redact unnecessary personal data and approve vendor retention terms before external processing."
+            },
+            {
+              "step": 3,
+              "title": "Require human sign-off",
+              "detail": "Verify extracted facts against originals before outreach, contracts, or filing preparation."
+            }
+          ]
+        },
+        {
+          "heading": "Illustrative Economic Model",
+          "epistemic_status": "Hypothetical scenario; not a forecast, permitted-fee assertion, or investment claim.",
+          "paragraphs": [
+            "Assume the branch structure in Chapter 7 and a $180,000 net distributable intestate estate. Suppose the firm lawfully contracts with child A ($60,000) and grandchild C1 ($30,000), representing $90,000 in eventual distributions. A hypothetical 10% fee on those distributions produces $9,000 only if valid, payable, and collected.",
+            "Assume 60 research hours at a fully burdened $45 per hour ($2,700), $500 in records, $1,200 in external legal review, and $300 in outreach costs. Direct costs total $4,700; contribution is $4,300 before overhead and tax. With zero collection and all costs incurred, the case loses $4,700; delays also consume working capital."
+          ],
+          "table": {
+            "headers": [
+              "Model component",
+              "Calculation",
+              "Result"
+            ],
+            "rows": [
+              [
+                "Represented distributions",
+                "$60,000 + $30,000",
+                "$90,000"
+              ],
+              [
+                "Hypothetical gross fee",
+                "$90,000 × 10%",
+                "$9,000"
+              ],
+              [
+                "Direct costs",
+                "$2,700 + $500 + $1,200 + $300",
+                "$4,700"
+              ],
+              [
+                "Contribution",
+                "$9,000 - $4,700",
+                "$4,300"
+              ],
+              [
+                "Contribution margin",
+                "$4,300 / $9,000",
+                "47.8%"
+              ],
+              [
+                "Zero-collection scenario",
+                "$0 - $4,700",
+                "-$4,700"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Keep authority outside the model",
+          "epistemic_status": "Human-oversight and information-security policy.",
+          "paragraphs": [
+            "Treat docket text and uploaded documents as untrusted data, including instructions embedded inside them. Extraction tools should have no independent authority to send messages, modify contracts, change payment instructions, or disclose case records.",
+            "Review a sample of outputs after every parser or model change and record errors by field type. Stop automation when identity mismatches or fabricated citations appear. Preserve a manual path so a tool outage does not compromise evidence handling or deadlines."
+          ],
+          "callout": {
+            "type": "control",
+            "title": "No autonomous entitlement decisions",
+            "body": "Automation prepares a review queue; qualified people approve consequential decisions.",
+            "items": [
+              "Verify every material extraction.",
+              "Block unapproved external disclosure.",
+              "Log approvals and retain a rollback path."
+            ]
+          }
+        }
+      ],
+      "pull_quote": "Automate the queue, not the conclusion.",
+      "diagram_id": "diag-06-small-team-org",
+      "action_checklist": [
+        "Confirm permitted docket access.",
+        "Preserve originals and page-linked OCR.",
+        "Approve data-processing safeguards.",
+        "Stress-test economics against noncollection.",
+        "Require human approval for consequential actions."
+      ],
+      "statutory_citations": [
+        "18 U.S.C. § 1030 (computer-access restrictions relevant to collection workflows).",
+        "California Probate Code § 11604.5 (review covered estate-interest agreements; the modeled fee is not legal guidance)."
+      ],
+      "id": "Q10",
+      "chapter_id": "Q10",
+      "source_citations": [],
+      "revision": "048b30de61058d49"
+    },
+    {
+      "chapter_number": 11,
+      "slug": "small-team-scaling",
+      "question_number": 11,
+      "question_prompt": "How can a two-to-four-person team scale without sacrificing proof quality?",
+      "kicker": "Capacity follows controls",
+      "title": "Small-Team Scaling: Running a High-Margin 2-to-4 Person Firm",
+      "subtitle": "Design for disciplined contribution margins, not guaranteed profitability.",
+      "layout_template": "action_checklist",
+      "reading_time_minutes": 10,
+      "executive_summary": "Assign research, review, operations, and principal accountability explicitly. A small firm can combine roles, but high margin is a business objective rather than an assured outcome. Scale only after quality, collection, and cash controls work.",
+      "key_metrics": [
+        {
+          "label": "Core team",
+          "value": "2–4 people",
+          "note": "Illustrative staffing range, supplemented by qualified outside counsel."
+        },
+        {
+          "label": "Material proof review",
+          "value": "Second reviewer",
+          "note": "Do not let the original researcher be the only approver."
+        },
+        {
+          "label": "Capacity planning",
+          "value": "Weekly",
+          "note": "Base intake on available hours and observed case effort."
+        }
+      ],
+      "sections": [
+        {
+          "heading": "Assign roles before adding headcount",
+          "epistemic_status": "Illustrative organizational design; licensing requirements remain independent.",
+          "paragraphs": [
+            "In a two-person firm, one person may lead research while the other handles operations and independent evidence review, provided both are qualified for their tasks. The principal owns intake, budget, and compliance escalation. Retain qualified outside counsel for legal work rather than treating a research reviewer as legal counsel.",
+            "At three or four people, separate research production, quality review, and outreach operations where workload supports it. Where internal review competence is insufficient, buy independent review instead of approving unsupported conclusions. Document who can approve contact, spending, data disclosure, and case closure."
+          ],
+          "table": {
+            "headers": [
+              "Function",
+              "Accountability",
+              "Release gate"
+            ],
+            "rows": [
+              [
+                "Research",
+                "Source collection and relationship analysis",
+                "Evidence packet ready for review"
+              ],
+              [
+                "Quality review",
+                "Independent conflict and citation check",
+                "Material issues resolved or explicitly held"
+              ],
+              [
+                "Operations",
+                "Scheduling, approved contact, and records",
+                "Consent and approved templates checked"
+              ],
+              [
+                "Principal and outside counsel",
+                "Business approval and legal advice respectively",
+                "Legal and budget questions cleared by appropriate owner"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Measure collected contribution and work in progress",
+          "epistemic_status": "Management method; targets should come from observed results.",
+          "paragraphs": [
+            "Track cash collected, direct labor, record costs, approved external services, and allocated overhead separately. An estate's value is not revenue, and a signed agreement is not cash. Include failed searches and unrecovered cases when evaluating the portfolio rather than showing only successful files.",
+            "Set a work-in-progress limit using available research and review hours. For example, 40 weekly production hours divided by 10 expected hours per active case supports four case-equivalents of that week's work, not four guaranteed closures. Reserve capacity for corrections, court delays, and urgent record requests."
+          ],
+          "sop_steps": [
+            {
+              "step": 1,
+              "title": "Estimate remaining effort",
+              "detail": "Update research, review, and external-dependency estimates for each open case."
+            },
+            {
+              "step": 2,
+              "title": "Reconcile cash and costs",
+              "detail": "Compare actual collections and case costs with the approved model; separate overhead."
+            },
+            {
+              "step": 3,
+              "title": "Gate new intake",
+              "detail": "Accept work only when budget, review capacity, and compliance approvals are available."
+            }
+          ]
+        },
+        {
+          "heading": "Protect quality while delegating",
+          "epistemic_status": "Internal control recommendations, not a certification standard.",
+          "paragraphs": [
+            "Use role-based access, documented onboarding, and a checklist for reviewer sign-off. Sample closed files for unsupported links, inconsistent calculations, missing consent, and retention errors. Record corrective actions with an owner and due date rather than quietly fixing the exported report alone.",
+            "Define suspension triggers for repeated evidence errors, unauthorized access, misleading outreach, or uncertain licensing. Revoke departing personnel's access promptly and preserve required records. Have counsel assess worker classification and vendor agreements; calling a worker a contractor does not determine their legal status."
+          ],
+          "callout": {
+            "type": "control",
+            "title": "Never scale an unresolved failure",
+            "body": "Pause the affected workflow before increasing volume when a material control fails.",
+            "items": [
+              "Assign a corrective-action owner.",
+              "Review other potentially affected cases.",
+              "Document the evidence supporting restart."
+            ]
+          }
+        }
+      ],
+      "pull_quote": "A small team scales through repeatable review, not unreviewed volume.",
+      "diagram_id": "diag-06-small-team-org",
+      "action_checklist": [
+        "Assign accountable owners and backup coverage.",
+        "Require independent material-proof review.",
+        "Track portfolio-level collected contribution.",
+        "Set capacity-based intake limits.",
+        "Audit access and corrective actions weekly."
+      ],
+      "statutory_citations": [
+        "29 U.S.C. § 203 (FLSA definitions relevant to employment analysis; obtain classification advice).",
+        "California Business and Professions Code § 7521 (private-investigator scope; jurisdiction-specific licensing review)."
+      ],
+      "id": "Q11",
+      "chapter_id": "Q11",
+      "source_citations": [],
+      "revision": "701b47fc0e4a4aa9"
+    },
+    {
+      "chapter_number": 12,
+      "slug": "first-thirty-days",
+      "question_number": 12,
+      "question_prompt": "What should a new operator accomplish in the first thirty days?",
+      "kicker": "A controlled pilot, not a revenue promise",
+      "title": "The First 30 Days: Step-by-Step Implementation Plan",
+      "subtitle": "Build one reviewed pilot workflow with explicit stop and continuation criteria.",
+      "layout_template": "thirty_day_plan",
+      "reading_time_minutes": 10,
+      "executive_summary": "Use the first month to establish legal boundaries, source access, evidence quality, and cash discipline. A completed pilot may end in a documented no-go decision; a distribution or paid engagement is not a thirty-day deliverable.",
+      "key_metrics": [
+        {
+          "label": "Planning horizon",
+          "value": "30 days",
+          "note": "A setup and validation schedule, not an estate-settlement timetable."
+        },
+        {
+          "label": "Initial scope",
+          "value": "1 jurisdiction",
+          "note": "Start with one defined asset regime and expand only after review."
+        },
+        {
+          "label": "Pilot evidence packet",
+          "value": "1 reviewed case",
+          "note": "Use a lawful public, authorized, or synthetic case without implying entitlement."
+        }
+      ],
+      "sections": [
+        {
+          "heading": "Days 1–7: establish lawful operating boundaries",
+          "epistemic_status": "Suggested implementation schedule; external approvals may take longer.",
+          "paragraphs": [
+            "Choose one jurisdiction and distinguish probate research from state-held unclaimed-property recovery. Prepare a concise scope for local counsel covering PI licensing, unauthorized-practice boundaries, outreach channels, contracts, privacy, and fees. Do not launch regulated work while these questions remain unresolved.",
+            "Inventory approved sources, establish a restricted case store, and create a source register and retention policy. Use synthetic records to test intake and evidence capture if access or licensing is not yet cleared. Assign owners and dates to unresolved decisions instead of assuming silence means approval."
+          ],
+          "sop_steps": [
+            {
+              "step": 1,
+              "title": "Days 1–2: scope",
+              "detail": "Record jurisdiction, asset regime, intended services, budget, and counsel-review questions."
+            },
+            {
+              "step": 2,
+              "title": "Days 3–4: controls",
+              "detail": "Configure access, backup, retention, incident escalation, and source authorization records."
+            },
+            {
+              "step": 3,
+              "title": "Days 5–7: readiness review",
+              "detail": "Approve only the activities whose legal and operational prerequisites are satisfied."
+            }
+          ]
+        },
+        {
+          "heading": "Days 8–21: run an evidence-first pilot",
+          "epistemic_status": "Operational plan, conditional on permissions and review capacity.",
+          "paragraphs": [
+            "During days 8–14, collect permitted pilot records, build the relationship chart, and test page-linked transcription. Track search time and record costs. Keep unresolved identity questions in a hold queue rather than optimizing for a complete-looking tree.",
+            "During days 15–21, obtain independent proof review and a jurisdiction-specific legal review of proposed outreach and terms. If cleared, conduct limited truthful outreach with appropriate channel compliance; otherwise rehearse internally. Record the outcome even when no contact or contract is appropriate."
+          ],
+          "table": {
+            "headers": [
+              "Window",
+              "Deliverable",
+              "Advance only if"
+            ],
+            "rows": [
+              [
+                "Days 8–10",
+                "Source register and initial chart",
+                "Access is permitted and claims are source-linked"
+              ],
+              [
+                "Days 11–14",
+                "Conflict log and cost baseline",
+                "Missing evidence is visible and costs are recorded"
+              ],
+              [
+                "Days 15–18",
+                "Independent review packet",
+                "Reviewer competence and independence are adequate"
+              ],
+              [
+                "Days 19–21",
+                "Approved outreach or internal rehearsal",
+                "Licensing, channel rules, and wording are cleared"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Days 22–30: decide whether to continue",
+          "epistemic_status": "Management decision framework; no earnings or settlement guarantee.",
+          "paragraphs": [
+            "Reconcile actual hours, records expense, review cost, defects, and unresolved legal questions. Compare the revised economic model with a zero-collection scenario. Estimate working-capital needs for delays without assuming an estate will settle on your calendar.",
+            "At day 30, choose continue, revise, or stop. Continue only with an approved scope, a reviewable evidence packet, lawful outreach controls, and an affordable downside. Carry unanswered questions into the next plan with named owners; do not present pilot projections as realized income."
+          ],
+          "callout": {
+            "type": "decision",
+            "title": "The day-30 gate",
+            "body": "A documented stop can be the correct result of a well-run pilot.",
+            "items": [
+              "Continue when prerequisites and budget are satisfied.",
+              "Revise when a remediable control or evidence gap remains.",
+              "Stop when legality, evidence, or affordable economics cannot be established."
+            ]
+          }
+        }
+      ],
+      "pull_quote": "The first month should prove the process, not promise a payout.",
+      "diagram_id": "diag-08-30-day-roadmap",
+      "action_checklist": [
+        "Choose one jurisdiction and asset regime.",
+        "Resolve licensing and legal-scope questions.",
+        "Complete a source-linked pilot packet.",
+        "Reconcile actual effort and downside exposure.",
+        "Document the day-30 continue, revise, or stop decision."
+      ],
+      "statutory_citations": [
+        "California Business and Professions Code § 6125 (California practice-of-law restriction; check local equivalents).",
+        "Texas Property Code § 74.507 (unclaimed-property recovery agreements; relevant only when that regime applies)."
+      ],
+      "id": "Q12",
+      "chapter_id": "Q12",
+      "source_citations": [],
+      "revision": "a59514cdd0f2ecbc"
+    }
+  ],
+  "updated_at": "2026-10-29T23:18:57Z"
+}

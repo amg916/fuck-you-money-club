@@ -7,6 +7,7 @@ No third-party packages, no credentials, no outbound calls except YouTube ingest
 from __future__ import annotations
 
 import argparse
+import copy
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 import importlib
 import json
@@ -21,12 +22,14 @@ if __package__:
                                  extract_video_urls, fetch_video)
     from .build_agent_report import EvidenceIndex, load_corpus
     from .report_playbook import DOMAINS
+    from .fymc.http_routes import handle_fymc_http, is_fymc_route
 else:  # pragma: no cover - top-level script usage
     from abridge_engine import (ROOT, Transport, abridge_video, atomic_write,
                                 build_custom_agent_report, combine_videos,
                                 extract_video_urls, fetch_video)
     from build_agent_report import EvidenceIndex, load_corpus
     from report_playbook import DOMAINS
+    from fymc.http_routes import handle_fymc_http, is_fymc_route
 
 if __package__:
     from .topic_discovery import parse_topics, discover_topic_videos, relevance_score
@@ -112,6 +115,17 @@ class AppState:
         self.abridged_list = [abridge_video(v) for v in self.raw_videos]
         self.abridged_by_id = {a["video_id"]: a for a in self.abridged_list}
         self.raw_by_id = {v["video_id"]: v for v in self.raw_videos}
+        self._last_ebook = None
+
+    @property
+    def last_ebook(self):
+        with self.lock:
+            return copy.deepcopy(self._last_ebook) if self._last_ebook is not None else None
+
+    @last_ebook.setter
+    def last_ebook(self, value):
+        with self.lock:
+            self._last_ebook = copy.deepcopy(value) if value is not None else None
 
     def _load_videos(self) -> list[dict]:
         videos, known = [], set()
@@ -175,7 +189,7 @@ class AppState:
                 hit = self.abridged_by_id.get(vid)
             if hit:
                 cached += 1
-                results.append({"video_id": vid, "status": "cached", "video": hit})
+                results.append({"video_id": vid, "status": "cached", "video": copy.deepcopy(hit)})
                 continue
             try:
                 record = fetch_video(len(self.raw_videos) + 1, url,
@@ -194,24 +208,44 @@ class AppState:
                     hit = self.abridged_by_id.get(vid)
                     if hit:
                         cached += 1
-                        results.append({'video_id': vid, 'status': 'cached', 'video': hit})
+                        results.append({'video_id': vid, 'status': 'cached', 'video': copy.deepcopy(hit)})
                         continue
                     record['video_id'] = vid
                     record['index'] = len(self.raw_videos) + 1
                     record['word_count'] = len(record['full_text'].split())
                     ab = abridge_video(record)
-                    self._persist(record)
-                    self.evidence_index.add_record(record)
-                    self.raw_videos.append(record)
-                    self.raw_by_id[vid] = record
-                    self.abridged_list.append(ab)
-                    self.abridged_by_id[vid] = ab
+                    custom_path = self.data_dir / 'custom_videos.json'
+                    prior_bytes = custom_path.read_bytes() if custom_path.exists() else None
+                    prior_raw = list(self.raw_videos)
+                    prior_abridged = list(self.abridged_list)
+                    try:
+                        self._persist(record)
+                        self.evidence_index.add_record(record)
+                        self.raw_videos.append(record)
+                        self.raw_by_id[vid] = record
+                        self.abridged_list.append(ab)
+                        self.abridged_by_id[vid] = ab
+                    except Exception:
+                        if prior_bytes is None:
+                            custom_path.unlink(missing_ok=True)
+                        else:
+                            if __package__:
+                                from .fymc.brand_and_catalog import _write_bytes
+                            else:
+                                from fymc.brand_and_catalog import _write_bytes
+                            _write_bytes(custom_path, prior_bytes)
+                        self.raw_videos = prior_raw
+                        self.abridged_list = prior_abridged
+                        self.raw_by_id = {v['video_id']: v for v in prior_raw}
+                        self.abridged_by_id = {v['video_id']: v for v in prior_abridged}
+                        self.evidence_index = EvidenceIndex(prior_raw)
+                        raise
             except Exception as exc:
                 failed += 1
                 results.append({'video_id': vid, 'status': 'error', 'error': f'{type(exc).__name__}: {exc}'})
                 continue
             ingested += 1
-            results.append({"video_id": vid, "status": "ok", "video": ab})
+            results.append({"video_id": vid, "status": "ok", "video": copy.deepcopy(ab)})
         return {"results": results, "ingested_count": ingested, "cached_count": cached,
                 "failed_count": failed, "total_videos": len(self.abridged_list)}
 
@@ -241,7 +275,7 @@ class AppState:
         ebook = build_full_ebook(selected, topics=parsed, custom_title=title)
         ebook['topic_fallback_used'] = fallback
         if discovery is not None:
-            ebook['discovery'] = discovery
+            ebook['discovery'] = copy.deepcopy(discovery)
         with self.lock:
             self.last_ebook = ebook
         return ebook
@@ -262,7 +296,7 @@ class AppState:
 
     def search(self, domain=None, query=None) -> list[dict]:
         with self.lock:
-            items = list(self.abridged_list)
+            items = copy.deepcopy(self.abridged_list)
         if domain:
             items = [v for v in items if str(v.get("domain")) == str(domain)]
         q = (query or "").strip().lower()
@@ -281,8 +315,8 @@ class AppState:
     def resolve(self, video_ids) -> list[dict]:
         with self.lock:
             if video_ids in (None, "all") or (isinstance(video_ids, str) and video_ids.lower() == "all"):
-                return list(self.abridged_list)
-            return [self.abridged_by_id[v] for v in video_ids if v in self.abridged_by_id]
+                return copy.deepcopy(self.abridged_list)
+            return copy.deepcopy([self.abridged_by_id[v] for v in video_ids if v in self.abridged_by_id])
 
 
 def create_handler(state: AppState):
@@ -363,9 +397,11 @@ def create_handler(state: AppState):
                         use_codex_cli=params.get('use_codex_cli', False)))
                 generation_keys = ('topics', 'video_ids', 'title', 'discover_first', 'max_videos', 'use_codex_cli')
                 with state.lock:
-                    ebook = getattr(state, 'last_ebook', None)
+                    cached_ebook = getattr(state, 'last_ebook', None)
+                    ebook = copy.deepcopy(cached_ebook) if cached_ebook is not None else None
                 if path == '/api/ebook/generate' or any(k in params for k in generation_keys) or ebook is None:
-                    ebook = state.generate_ebook(**{k: params[k] for k in generation_keys if k in params})
+                    generated = state.generate_ebook(**{k: params[k] for k in generation_keys if k in params})
+                    ebook = copy.deepcopy(generated)
                 if path == '/api/ebook/generate':
                     return self._json(ebook)
                 if path == '/api/ebook/pdf':
@@ -384,6 +420,8 @@ def create_handler(state: AppState):
             path, query = parts.path.rstrip("/") or "/", urllib.parse.parse_qs(parts.query, keep_blank_values=True)
             one = lambda key: (query.get(key) or [None])[0]
             try:
+                if is_fymc_route(path):
+                    return handle_fymc_http(self, state, "GET", path, query, None)
                 if path in EBOOK_ROUTES:
                     params = {k: v[0] for k, v in query.items()}
                     for k in ('trim', 'pdf_mode', 'mode', 'video_id'):
@@ -463,6 +501,8 @@ def create_handler(state: AppState):
             path = urllib.parse.urlsplit(self.path).path.rstrip("/") or "/"
             try:
                 payload = self._body()
+                if is_fymc_route(path):
+                    return handle_fymc_http(self, state, "POST", path, {}, payload)
                 validate_params(payload)
                 if path in EBOOK_ROUTES:
                     return self._ebook(path, payload)
@@ -491,6 +531,18 @@ def create_handler(state: AppState):
                 return self._json({'error': str(exc)}, 400)
             except Exception as exc:
                 return self._json({"error": f"{type(exc).__name__}: {exc}"}, 500)
+
+        def do_PATCH(self):
+            path = urllib.parse.urlsplit(self.path).path.rstrip("/") or "/"
+            try:
+                if is_fymc_route(path):
+                    return handle_fymc_http(self, state, "PATCH", path, {}, self._body())
+                self.close_connection = True
+                return self._json({"ok": False, "error": f"not found: {path}"}, 404)
+            except BadRequestError as exc:
+                return self._json({"ok": False, "error": str(exc)}, 400)
+            except Exception as exc:
+                return self._json({"ok": False, "error": f"{type(exc).__name__}: {exc}"}, 500)
 
     return Handler
 

@@ -1,0 +1,139 @@
+{
+  "parent_brand": "THE FUCK YOU MONEY CLUB",
+  "book_series": "THE BIG MONEY PLAYBOOKS",
+  "tagline": "Big Money. Small Teams. No Bullshit.",
+  "rating_system": {
+    "name": "Money-to-Manpower Score",
+    "scale": "0-100",
+    "trademark_symbol_policy": "No TM or R symbols used pending formal trademark clearance."
+  },
+  "cover_profanity_policy": {
+    "series_dominant": true,
+    "parent_brand_placement": "Subtle single publisher colophon / imprint mark only",
+    "never_repeat_profanity_across_cover": true,
+    "marketplace_safe_cover_ready": true
+  },
+  "gates": {
+    "design_approval_status": "awaiting_owner_approval",
+    "approved_concept_id": null,
+    "public_deploy_approved": false,
+    "paid_sales_approved": false
+  },
+  "active_preview_concept": "concept_a",
+  "pricing_hypotheses": {
+    "digital_playbook": {
+      "label": "Digital Playbook Edition",
+      "range_label": "$19–$39",
+      "test_price_usd": 29,
+      "includes": [
+        "8.5×11 Executive Digital PDF",
+        "Reflowable EPUB 3.0",
+        "Clickable Source Index"
+      ],
+      "hypothesis": true,
+      "paid_checkout_enabled": false
+    },
+    "operator_bundle": {
+      "label": "Print + Companion Workbook Bundle",
+      "range_label": "$49–$99",
+      "test_price_usd": 69,
+      "includes": [
+        "6×9 Print Edition",
+        "Digital PDF + EPUB",
+        "6-Worksheet Operator Companion Workbook"
+      ],
+      "hypothesis": true,
+      "paid_checkout_enabled": false
+    },
+    "founder_collection": {
+      "label": "Multi-Volume Playbook Collection",
+      "range_label": "$199–$399",
+      "test_price_usd": 249,
+      "includes": [
+        "5-Volume Flagship Boxed/Digital Set",
+        "29-Business Money-to-Manpower Atlas",
+        "All Companion Workbooks"
+      ],
+      "hypothesis": true,
+      "paid_checkout_enabled": false
+    },
+    "club_membership": {
+      "label": "The Fuck You Money Club Membership",
+      "range_label": "$19–$49/mo",
+      "test_price_usd": 39,
+      "billing_period": "monthly",
+      "includes": [
+        "New Playbook Releases",
+        "Live Money-to-Manpower Deal Scorecards",
+        "Research Briefings & Operator Templates"
+      ],
+      "hypothesis": true,
+      "paid_checkout_enabled": false
+    }
+  },
+  "workflow_stages": [
+    {
+      "order": 1,
+      "name": "Research",
+      "status": "completed"
+    },
+    {
+      "order": 2,
+      "name": "Source Review",
+      "status": "completed"
+    },
+    {
+      "order": 3,
+      "name": "Editorial Outline",
+      "status": "completed"
+    },
+    {
+      "order": 4,
+      "name": "Manuscript",
+      "status": "completed"
+    },
+    {
+      "order": 5,
+      "name": "Fact-Checking",
+      "status": "completed"
+    },
+    {
+      "order": 6,
+      "name": "Design",
+      "status": "awaiting_owner_approval"
+    },
+    {
+      "order": 7,
+      "name": "Graphics",
+      "status": "awaiting_owner_approval"
+    },
+    {
+      "order": 8,
+      "name": "Scorecard",
+      "status": "completed"
+    },
+    {
+      "order": 9,
+      "name": "Proofreading",
+      "status": "staged_preview"
+    },
+    {
+      "order": 10,
+      "name": "Export",
+      "status": "staged_preview"
+    },
+    {
+      "order": 11,
+      "name": "Quality Assurance",
+      "status": "staged_preview"
+    },
+    {
+      "order": 12,
+      "name": "Publication Approval",
+      "status": "staged_preview"
+    }
+  ],
+  "editorial_notes": "",
+  "generated_at": "2026-10-29T23:18:57Z",
+  "updated_at": "2026-10-29T23:18:57Z"
+}

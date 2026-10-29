@@ -1,0 +1,23 @@
+{
+  "volume_id": "vol-001-heir-hunting",
+  "volume_slug": "vol-001-heir-hunting",
+  "volume_number": 1,
+  "parent_brand": "THE FUCK YOU MONEY CLUB",
+  "book_series": "THE BIG MONEY PLAYBOOKS",
+  "tagline": "Big Money. Small Teams. No Bullshit.",
+  "title": "HEIR HUNTING",
+  "subtitle": "The Complete Playbook for Finding Missing Heirs, Researching Unclaimed Estates & Building a Probate Research Business",
+  "chapter_count": 12,
+  "rating_system": "Money-to-Manpower Score",
+  "composite_score": 87,
+  "formats": [
+    "8.5×11 Executive Digital PDF",
+    "6×9 Print Edition",
+    "Reflowable EPUB 3.0"
+  ],
+  "isbn": null,
+  "publication_status": "staged_preview",
+  "public_deploy_approved": false,
+  "paid_sales_approved": false,
+  "updated_at": "2026-10-29T23:18:57Z"
+}

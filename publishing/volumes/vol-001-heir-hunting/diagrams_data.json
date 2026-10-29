@@ -1,0 +1,310 @@
+{
+  "diagrams": [
+    {
+      "diagram_id": "diag-01-end-to-end-workflow",
+      "chart_type": "process_flow",
+      "title": "From lead to documented recovery",
+      "subtitle": "Five gates, not a promise of payment",
+      "chapter_number": 1,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Ordinal numeric values indicate sequence, not elapsed time or success probability.",
+      "caption": "Identify the legal lane before researching relatives or offering a recovery contract.",
+      "stages": [
+        {
+          "label": "Classify",
+          "value": "Gate 1",
+          "numeric_value": 1.0,
+          "detail": "Separate probate, custodial unclaimed property and sale surplus."
+        },
+        {
+          "label": "Qualify",
+          "value": "Gate 2",
+          "numeric_value": 2.0,
+          "detail": "Verify the record, claimant eligibility, deadlines and likely net value."
+        },
+        {
+          "label": "Prove",
+          "value": "Gate 3",
+          "numeric_value": 3.0,
+          "detail": "Build a sourced relationship chain and resolve contradictory records."
+        },
+        {
+          "label": "Authorize",
+          "value": "Gate 4",
+          "numeric_value": 4.0,
+          "detail": "Obtain lawful consent and locally reviewed contractual authority."
+        },
+        {
+          "label": "Resolve",
+          "value": "Gate 5",
+          "numeric_value": 5.0,
+          "detail": "Submit through the authorized channel and reconcile actual distributions."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-02-deal-funnel",
+      "chart_type": "funnel",
+      "title": "A qualification funnel worth measuring",
+      "subtitle": "Illustrative cohort of 100 records",
+      "chapter_number": 6,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Invented nested cohort; these counts are not observed conversion rates or a forecast.",
+      "caption": "Measure why records leave each gate; signed clients and completed distributions are different outcomes.",
+      "stages": [
+        {
+          "label": "Records screened",
+          "value": "100",
+          "numeric_value": 100.0,
+          "detail": "Deduplicated records with identifiable custodians or case numbers."
+        },
+        {
+          "label": "Plausible net value",
+          "value": "30",
+          "numeric_value": 30.0,
+          "detail": "Illustrative survivors after preliminary eligibility and liability checks."
+        },
+        {
+          "label": "Evidence feasible",
+          "value": "12",
+          "numeric_value": 12.0,
+          "detail": "A credible document path exists within a defined research budget."
+        },
+        {
+          "label": "Authorized clients",
+          "value": "4",
+          "numeric_value": 4.0,
+          "detail": "Eligible claimants choose assistance under lawful agreements."
+        },
+        {
+          "label": "Paid resolutions",
+          "value": "2",
+          "numeric_value": 2.0,
+          "detail": "Actual collected fees, potentially many months after intake."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-03-fee-waterfall",
+      "chart_type": "waterfall",
+      "title": "What remains of a collected fee",
+      "subtitle": "Business contribution, not the estate distribution",
+      "chapter_number": 3,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "USD; first and last bars are totals, middle bars are signed deductions. Assumed lawful fee is $6,000 on $60,000 recovered.",
+      "caption": "A $6,000 fee less $1,200 records, $800 review and $1,000 allocated acquisition leaves $3,000 before overhead, owner pay and tax.",
+      "stages": [
+        {
+          "label": "Collected fee",
+          "value": "$6,000",
+          "numeric_value": 6000.0,
+          "detail": "Opening total: a hypothetical 10% fee, only if lawful for this claim."
+        },
+        {
+          "label": "Records and research",
+          "value": "-$1,200",
+          "numeric_value": -1200.0,
+          "detail": "Direct evidence costs, including paid research labor."
+        },
+        {
+          "label": "Professional review",
+          "value": "-$800",
+          "numeric_value": -800.0,
+          "detail": "Business-paid review; not an asserted statutory charge."
+        },
+        {
+          "label": "Acquisition allocation",
+          "value": "-$1,000",
+          "numeric_value": -1000.0,
+          "detail": "Allocated costs include unsuccessful leads, not just this winner."
+        },
+        {
+          "label": "Contribution",
+          "value": "$3,000",
+          "numeric_value": 3000.0,
+          "detail": "Closing total, not an additional movement and not owner net profit."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-04-jurisdiction-fee-caps",
+      "chart_type": "horizontal_bars",
+      "title": "Fee-cap sensitivity before choosing a market",
+      "subtitle": "Hypothetical legal ceilings, not a state-law comparison",
+      "chapter_number": 2,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Percent of a $40,000 recovery. A-D are hypothetical jurisdictions; no bar states an actual legal limit. Replace only after current legal review.",
+      "caption": "Identical recoveries can support different maximum fees; timing restrictions can make an agreement unavailable regardless of percentage.",
+      "stages": [
+        {
+          "label": "Hypothetical A",
+          "value": "5% / $2,000",
+          "numeric_value": 5.0,
+          "detail": "Assumed ceiling only; agreement eligibility still requires review."
+        },
+        {
+          "label": "Hypothetical B",
+          "value": "10% / $4,000",
+          "numeric_value": 10.0,
+          "detail": "Assumed ceiling, not a recommendation to charge the maximum."
+        },
+        {
+          "label": "Hypothetical C",
+          "value": "15% / $6,000",
+          "numeric_value": 15.0,
+          "detail": "Assumed ceiling; the allowable compensation base may differ."
+        },
+        {
+          "label": "Hypothetical D",
+          "value": "20% / $8,000",
+          "numeric_value": 20.0,
+          "detail": "Assumed ceiling; expense reimbursement can also be regulated."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-05-kinship-decision-tree",
+      "chart_type": "decision_tree",
+      "title": "Build proof before naming an heir",
+      "subtitle": "A research triage tree, not a distribution formula",
+      "chapter_number": 7,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Numeric values identify nodes. Edges are stated in detail; local law decides succession, representation and shares.",
+      "caption": "Relationship evidence supports legal analysis; it does not replace a court's finding of entitlement.",
+      "stages": [
+        {
+          "label": "Governing instrument?",
+          "value": "Node 1",
+          "numeric_value": 1.0,
+          "detail": "Valid will or trust: follow counsel's instrument analysis; otherwise continue to node 2."
+        },
+        {
+          "label": "Spouse or descendants?",
+          "value": "Node 2",
+          "numeric_value": 2.0,
+          "detail": "Yes: document and refer for allocation; no: continue to node 3. Spousal rights may coexist with descendants."
+        },
+        {
+          "label": "Parents or collateral kin?",
+          "value": "Node 3",
+          "numeric_value": 3.0,
+          "detail": "Yes: prove each link and refer for statutory priority; no or uncertain: continue to node 4."
+        },
+        {
+          "label": "Evidence unresolved?",
+          "value": "Node 4",
+          "numeric_value": 4.0,
+          "detail": "Stop distribution assumptions; obtain missing records and counsel's direction on further classes or escheat."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-06-small-team-org",
+      "chart_type": "org_architecture",
+      "title": "Separate research, review and client care",
+      "subtitle": "Roles may be fractional; authority must remain distinct",
+      "chapter_number": 9,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Numeric values are role identifiers, not headcounts, hierarchy ranks or compensation.",
+      "caption": "The owner coordinates researchers and client care; independent licensed advisers retain professional judgment.",
+      "stages": [
+        {
+          "label": "Owner / case lead",
+          "value": "Role 1",
+          "numeric_value": 1.0,
+          "detail": "Accountable for intake gates, budgets and secure case access."
+        },
+        {
+          "label": "Research specialist",
+          "value": "Role 2",
+          "numeric_value": 2.0,
+          "detail": "Reports case evidence to the lead; does not decide legal entitlement."
+        },
+        {
+          "label": "Client coordinator",
+          "value": "Role 3",
+          "numeric_value": 3.0,
+          "detail": "Reports to the lead; tracks consent, requests and plain-language updates."
+        },
+        {
+          "label": "Independent counsel",
+          "value": "Role 4",
+          "numeric_value": 4.0,
+          "detail": "Advises within a separate engagement; not controlled by a research sales target."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-07-startup-budget-stack",
+      "chart_type": "stacked_comparison",
+      "title": "A lean pilot's startup cash stack",
+      "subtitle": "Compare cost composition, not promised earnings",
+      "chapter_number": 4,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "USD; one scenario with four additive components totaling $5,000. This is not a vendor quote or paired market comparison; living expenses are excluded.",
+      "caption": "Keep a reserve for failed cases and delays; a cheap subscription does not make the business fully funded.",
+      "stages": [
+        {
+          "label": "Setup and review",
+          "value": "$1,500",
+          "numeric_value": 1500.0,
+          "detail": "Illustrative formation, contract review and insurance allowance; obtain actual quotes."
+        },
+        {
+          "label": "Research tools",
+          "value": "$600",
+          "numeric_value": 600.0,
+          "detail": "Illustrative three-month subscriptions and basic secure working tools."
+        },
+        {
+          "label": "Pilot case costs",
+          "value": "$900",
+          "numeric_value": 900.0,
+          "detail": "Illustrative records, postage and limited paid research."
+        },
+        {
+          "label": "Business reserve",
+          "value": "$2,000",
+          "numeric_value": 2000.0,
+          "detail": "Uncommitted buffer; owner living costs and taxes require a separate plan."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-08-30-day-roadmap",
+      "chart_type": "timeline_roadmap",
+      "title": "Thirty days to a controlled pilot",
+      "subtitle": "Readiness milestones, not a collection deadline",
+      "chapter_number": 12,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Numeric values are milestone end-days; ranges are calendar targets, not statutory deadlines.",
+      "caption": "The first month should produce a reviewable process and documented cases, not an unsupported income promise.",
+      "stages": [
+        {
+          "label": "Choose the lane",
+          "value": "Days 1-7",
+          "numeric_value": 7.0,
+          "detail": "Select one jurisdiction, custodian and claim type; get legal gates reviewed."
+        },
+        {
+          "label": "Build the controls",
+          "value": "Days 8-14",
+          "numeric_value": 14.0,
+          "detail": "Set record provenance, privacy, case budgets and written stop rules."
+        },
+        {
+          "label": "Run a small cohort",
+          "value": "Days 15-21",
+          "numeric_value": 21.0,
+          "detail": "Screen a bounded batch and build evidence only for qualified leads."
+        },
+        {
+          "label": "Review and decide",
+          "value": "Days 22-30",
+          "numeric_value": 30.0,
+          "detail": "Audit economics and compliance; continue, redesign or stop the pilot."
+        }
+      ]
+    }
+  ]
+}
