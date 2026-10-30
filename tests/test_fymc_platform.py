@@ -2010,7 +2010,7 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
             get_flagship_scorecard,
         )
         self.assertEqual(set(TRACK_DEFINITIONS), {"track_1", "track_2"})
-        self.assertEqual(len(PLAY_DEFINITIONS), 75)
+        self.assertEqual(len(PLAY_DEFINITIONS), 93)
         self.assertEqual(
             set(PLAY_DEFINITIONS),
             {
@@ -2089,6 +2089,24 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
                 "high_risk_payfac_iso_mid_cascading_arbitrage",
                 "transferable_tax_credit_brokerage_syndication",
                 "litigation_finance_mass_tort_docket_securitization",
+                "hoa_super_lien_tax_deed_redemption_arbitrage",
+                "gis_landlocked_parcel_easement_assemblage",
+                "forced_pooling_mineral_lease_curve_jumping",
+                "gsa_municipal_set_aside_facility_ghost_brokering",
+                "con_decommissioned_medical_imaging_arbitrage",
+                "cipa_vppa_wiretap_pixel_settlement_arbitrage",
+                "public_adjuster_appraisal_clause_storm_arbitrage",
+                "fractional_heir_share_partition_forcing",
+                "chapter11_trade_claim_convenience_class_rollup",
+                "out_of_statute_zombie_debt_portfolio_settlement",
+                "aged_shelf_corp_tradeline_credit_stacking",
+                "cell_tower_billboard_easement_strip_out",
+                "ferc_grid_interconnection_queue_land_speculation",
+                "copyright_phash_reverse_image_statutory_settlement",
+                "mca_ucc_stacking_default_restructure_brokerage",
+                "web2app_quiz_subscription_billing_bypass",
+                "agency_ad_spend_card_multiplier_rebate_cycling",
+                "tcpa_litigator_scrub_honeypot_arbitrage",
             },
         )
         for play_id, play in PLAY_DEFINITIONS.items():
@@ -2099,6 +2117,96 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
             for risk in play["platform_risks"]:
                 for req_key in ("failure_mode", "trigger", "impact", "detection_metric", "fallback"):
                     self.assertTrue(risk.get(req_key), (play_id, req_key))
+
+        self.assertEqual(set(CANDIDATE_PLAY_MAP), set(range(1, 30)))
+        self.assertEqual(sum(p["track_id"] == "track_1" for p in PLAY_DEFINITIONS.values()), 52)
+        self.assertEqual(sum(p["track_id"] == "track_2" for p in PLAY_DEFINITIONS.values()), 41)
+        self.assertEqual(CANDIDATE_PLAY_MAP[1][0], "public_record_api_intelligence")
+        self.assertTrue(all(PLAY_DEFINITIONS[pid]["track_id"] == "track_1" for pid in CANDIDATE_PLAY_MAP[1]))
+        self.assertFalse(any(symbol in repr(PLAY_DEFINITIONS) for symbol in ("™", "®")))
+        new_play_ids = {
+            "hoa_super_lien_tax_deed_redemption_arbitrage",
+            "gis_landlocked_parcel_easement_assemblage",
+            "forced_pooling_mineral_lease_curve_jumping",
+            "gsa_municipal_set_aside_facility_ghost_brokering",
+            "con_decommissioned_medical_imaging_arbitrage",
+            "cipa_vppa_wiretap_pixel_settlement_arbitrage",
+            "public_adjuster_appraisal_clause_storm_arbitrage",
+            "fractional_heir_share_partition_forcing",
+            "chapter11_trade_claim_convenience_class_rollup",
+            "out_of_statute_zombie_debt_portfolio_settlement",
+            "aged_shelf_corp_tradeline_credit_stacking",
+            "cell_tower_billboard_easement_strip_out",
+            "ferc_grid_interconnection_queue_land_speculation",
+            "copyright_phash_reverse_image_statutory_settlement",
+            "mca_ucc_stacking_default_restructure_brokerage",
+            "web2app_quiz_subscription_billing_bypass",
+            "agency_ad_spend_card_multiplier_rebate_cycling",
+            "tcpa_litigator_scrub_honeypot_arbitrage",
+        }
+        for play_id in new_play_ids:
+            play = PLAY_DEFINITIONS[play_id]
+            self.assertEqual(len(play["inputs"]), 3, play_id)
+            self.assertEqual(len(play["workflow"]), 4, play_id)
+            self.assertEqual(len(play["metrics"]), 3, play_id)
+            self.assertEqual(len(play["platform_risks"]), 1, play_id)
+            for number, step in enumerate(play["workflow"], 1):
+                self.assertTrue(step.startswith(f"{number}. "), (play_id, step))
+        expected_additions = {
+            3: (
+                "hoa_super_lien_tax_deed_redemption_arbitrage",
+                "fractional_heir_share_partition_forcing",
+                "agency_ad_spend_card_multiplier_rebate_cycling",
+                "tcpa_litigator_scrub_honeypot_arbitrage",
+            ),
+            6: (
+                "gis_landlocked_parcel_easement_assemblage",
+                "forced_pooling_mineral_lease_curve_jumping",
+                "fractional_heir_share_partition_forcing",
+                "cell_tower_billboard_easement_strip_out",
+                "ferc_grid_interconnection_queue_land_speculation",
+                "tcpa_litigator_scrub_honeypot_arbitrage",
+            ),
+            7: (
+                "forced_pooling_mineral_lease_curve_jumping",
+                "fractional_heir_share_partition_forcing",
+                "cell_tower_billboard_easement_strip_out",
+                "ferc_grid_interconnection_queue_land_speculation",
+                "tcpa_litigator_scrub_honeypot_arbitrage",
+            ),
+            10: (
+                "gsa_municipal_set_aside_facility_ghost_brokering",
+                "public_adjuster_appraisal_clause_storm_arbitrage",
+                "mca_ucc_stacking_default_restructure_brokerage",
+                "tcpa_litigator_scrub_honeypot_arbitrage",
+            ),
+            14: (
+                "con_decommissioned_medical_imaging_arbitrage",
+                "chapter11_trade_claim_convenience_class_rollup",
+                "mca_ucc_stacking_default_restructure_brokerage",
+            ),
+            18: (
+                "gis_landlocked_parcel_easement_assemblage",
+                "gsa_municipal_set_aside_facility_ghost_brokering",
+                "cipa_vppa_wiretap_pixel_settlement_arbitrage",
+                "public_adjuster_appraisal_clause_storm_arbitrage",
+                "aged_shelf_corp_tradeline_credit_stacking",
+                "mca_ucc_stacking_default_restructure_brokerage",
+                "agency_ad_spend_card_multiplier_rebate_cycling",
+                "tcpa_litigator_scrub_honeypot_arbitrage",
+            ),
+            22: (
+                "copyright_phash_reverse_image_statutory_settlement",
+                "web2app_quiz_subscription_billing_bypass",
+                "tcpa_litigator_scrub_honeypot_arbitrage",
+            ),
+            25: ("copyright_phash_reverse_image_statutory_settlement",),
+        }
+        for candidate, expected in expected_additions.items():
+            actual = tuple(p["id"] for p in get_candidate_track_metadata(candidate)["plays"])
+            self.assertEqual(actual[-len(expected):], expected, candidate)
+            if candidate in (3, 6, 7, 10, 14):
+                self.assertEqual(actual, expected, candidate)
 
         mapped_plays: set[str] = set()
         for cand_num, play_tuple in CANDIDATE_PLAY_MAP.items():
@@ -2113,7 +2221,7 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
         meta_25_a = get_candidate_track_metadata(25)
         meta_25_b = get_candidate_track_metadata(25)
         self.assertEqual(meta_25_a["track_ids"], ["track_1", "track_2"])
-        self.assertEqual(len(meta_25_a["plays"]), 29)
+        self.assertEqual(len(meta_25_a["plays"]), 30)
         for req_play in (
             "serp_signal_navboost_engineering",
             "newly_registered_domain_trigger_arbitrage",
@@ -2173,9 +2281,9 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
         self.assertIn("ctv_mfa_programmatic_supply_arbitrage", [p["id"] for p in meta_22["plays"]])
         self.assertIn("high_risk_payfac_iso_mid_cascading_arbitrage", [p["id"] for p in meta_22["plays"]])
 
-        # Unmapped candidates get empty arrays cleanly
-        meta_10 = get_candidate_track_metadata(10)
-        self.assertEqual(meta_10, {"track_ids": [], "track_labels": [], "plays": [], "platform_risks": []})
+        # Out-of-range candidates get empty arrays cleanly
+        meta_99 = get_candidate_track_metadata(99)
+        self.assertEqual(meta_99, {"track_ids": [], "track_labels": [], "plays": [], "platform_risks": []})
 
         # Flagship score remains 87 and carries Track 1 metadata
         flagship = get_flagship_scorecard()
@@ -2196,11 +2304,11 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
         t2_cands = [c["candidate_number"] for c in pipeline if "track_2" in c["track_ids"]]
         self.assertEqual(
             sorted(t1_cands),
-            [1, 2, 4, 5, 8, 9, 11, 12, 13, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29],
+            list(range(1, 30)),
         )
         self.assertEqual(
             sorted(t2_cands),
-            [4, 9, 13, 15, 16, 17, 18, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29],
+            [3, 4, 6, 7, 8, 9, 10, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29],
         )
 
         # Store & UI HTML include track filters and platform risk sections while preserving persisted brand settings

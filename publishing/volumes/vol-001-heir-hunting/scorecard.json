@@ -190,6 +190,68 @@
           "fallback": "Monetize strictly via flat-fee marketing/data subscriptions to licensed probate agents or close transactions through a licensed brokerage of record"
         }
       ]
+    },
+    {
+      "id": "forced_pooling_mineral_lease_curve_jumping",
+      "track_id": "track_1",
+      "name": "Forced-Pooling Docket & Non-Consent Mineral Lease Curve-Jumping Arbitrage",
+      "mechanism": "Use public pooling applications and drilling schedules to identify unleased mineral interests before election deadlines, pricing royalty upside against title defects and non-consent cost exposure.",
+      "inputs": [
+        "State pooling dockets and election orders",
+        "Mineral ownership chain and lease abstracts",
+        "Operator development plans and local lease comparables"
+      ],
+      "workflow": [
+        "1. Monitor pooling applications and map affected mineral tracts and hearing dates",
+        "2. Verify net mineral acres, ownership authority, and election consequences with specialist counsel",
+        "3. Negotiate disclosed lease or option terms and fund obligations before applicable deadlines",
+        "4. Assign permitted interests or administer royalty receipts with division-order reconciliation"
+      ],
+      "metrics": [
+        "Verified net mineral acres acquired",
+        "Election deadlines met (%)",
+        "Net royalty or assignment proceeds per invested dollar"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Missed election or unexpected non-consent penalty",
+          "trigger": "Stale docket feed or misread state-specific pooling order",
+          "impact": "Delayed royalties and unbudgeted development-cost exposure",
+          "detection_metric": "Unverified order changes and days remaining to election",
+          "fallback": "Stop acquisitions pending counsel review and choose only timely, fully understood permitted elections"
+        }
+      ]
+    },
+    {
+      "id": "fractional_heir_share_partition_forcing",
+      "track_id": "track_1",
+      "name": "Fractional Heir-Share Acquisition & Tenancy-in-Common Partition Buyout Forcing",
+      "mechanism": "Acquire documented fractional heir interests at a discount reflecting illiquidity, then seek consensual buyouts or counsel-supervised partition subject to heirs-property protections and co-owner rights.",
+      "inputs": [
+        "Probate files and verified heirship records",
+        "Title chain, occupancy facts, and independent appraisal",
+        "Applicable partition and heirs-property protection rules"
+      ],
+      "workflow": [
+        "1. Establish ownership fractions, probate authority, and encumbrances before contacting sellers",
+        "2. Provide transparent offers with independent-advice opportunity and modeled partition costs",
+        "3. Seek voluntary co-owner buyouts or an agreed market sale before considering litigation",
+        "4. If unresolved, use counsel-led statutory procedures honoring notice, appraisal, and buyout rights"
+      ],
+      "metrics": [
+        "Verified ownership share acquired",
+        "Consensual resolution rate",
+        "Net proceeds after carrying and legal costs"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Heirs-property protections defeat assumed forced-sale economics",
+          "trigger": "Mandatory co-owner buyout, partition-in-kind preference, or defective heirship",
+          "impact": "Long holding period and lower realizable value",
+          "detection_metric": "Unresolved heirs and statutory buyout conditions per property",
+          "fallback": "Renegotiate voluntary exits or retain the interest without threatening unavailable remedies"
+        }
+      ]
     }
   ],
   "platform_risks": [
@@ -221,6 +283,26 @@
       "fallback": "Monetize strictly via flat-fee marketing/data subscriptions to licensed probate agents or close transactions through a licensed brokerage of record",
       "play_id": "probate_docket_inheritance_arbitrage",
       "play_name": "Probate Docket & Pre-Foreclosure Notice-of-Default (NOD) Scraping",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Missed election or unexpected non-consent penalty",
+      "trigger": "Stale docket feed or misread state-specific pooling order",
+      "impact": "Delayed royalties and unbudgeted development-cost exposure",
+      "detection_metric": "Unverified order changes and days remaining to election",
+      "fallback": "Stop acquisitions pending counsel review and choose only timely, fully understood permitted elections",
+      "play_id": "forced_pooling_mineral_lease_curve_jumping",
+      "play_name": "Forced-Pooling Docket & Non-Consent Mineral Lease Curve-Jumping Arbitrage",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Heirs-property protections defeat assumed forced-sale economics",
+      "trigger": "Mandatory co-owner buyout, partition-in-kind preference, or defective heirship",
+      "impact": "Long holding period and lower realizable value",
+      "detection_metric": "Unresolved heirs and statutory buyout conditions per property",
+      "fallback": "Renegotiate voluntary exits or retain the interest without threatening unavailable remedies",
+      "play_id": "fractional_heir_share_partition_forcing",
+      "play_name": "Fractional Heir-Share Acquisition & Tenancy-in-Common Partition Buyout Forcing",
       "track_id": "track_1"
     }
   ]
