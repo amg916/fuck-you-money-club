@@ -2026,6 +2026,13 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
                 "serp_signal_navboost_engineering",
                 "public_filing_trigger_mail_arbitrage",
                 "newly_registered_domain_trigger_arbitrage",
+                "identity_graph_pixel_arbitrage",
+                "competitor_intent_comparison_hijacking",
+                "social_to_search_ping_post_arbitrage",
+                "chrome_extension_contextual_arbitrage",
+                "rank_and_rent_pay_per_call_routing",
+                "ego_bait_directory_badge_arbitrage",
+                "b2b_class_action_contingency_recovery",
             },
         )
         for play_id, play in PLAY_DEFINITIONS.items():
@@ -2040,17 +2047,36 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
         meta_25_a = get_candidate_track_metadata(25)
         meta_25_b = get_candidate_track_metadata(25)
         self.assertEqual(meta_25_a["track_ids"], ["track_1", "track_2"])
-        self.assertEqual(len(meta_25_a["plays"]), 6)
-        self.assertIn("serp_signal_navboost_engineering", [p["id"] for p in meta_25_a["plays"]])
-        self.assertIn("newly_registered_domain_trigger_arbitrage", [p["id"] for p in meta_25_a["plays"]])
+        self.assertEqual(len(meta_25_a["plays"]), 10)
+        for req_play in (
+            "serp_signal_navboost_engineering",
+            "newly_registered_domain_trigger_arbitrage",
+            "identity_graph_pixel_arbitrage",
+            "ego_bait_directory_badge_arbitrage",
+            "competitor_intent_comparison_hijacking",
+            "rank_and_rent_pay_per_call_routing",
+        ):
+            self.assertIn(req_play, [p["id"] for p in meta_25_a["plays"]])
         meta_25_a["plays"][0]["name"] = "Mutated"
         self.assertNotEqual(meta_25_b["plays"][0]["name"], "Mutated")
 
         meta_18 = get_candidate_track_metadata(18)
-        self.assertIn("telegram_channel_signal_scraping", [p["id"] for p in meta_18["plays"]])
-        self.assertIn("high_velocity_dm_outbound_systems", [p["id"] for p in meta_18["plays"]])
-        self.assertIn("public_filing_trigger_mail_arbitrage", [p["id"] for p in meta_18["plays"]])
-        self.assertIn("newly_registered_domain_trigger_arbitrage", [p["id"] for p in meta_18["plays"]])
+        for req_play in (
+            "telegram_channel_signal_scraping",
+            "high_velocity_dm_outbound_systems",
+            "public_filing_trigger_mail_arbitrage",
+            "newly_registered_domain_trigger_arbitrage",
+            "identity_graph_pixel_arbitrage",
+            "social_to_search_ping_post_arbitrage",
+            "rank_and_rent_pay_per_call_routing",
+            "ego_bait_directory_badge_arbitrage",
+        ):
+            self.assertIn(req_play, [p["id"] for p in meta_18["plays"]])
+
+        meta_5 = get_candidate_track_metadata(5)
+        self.assertIn("b2b_class_action_contingency_recovery", [p["id"] for p in meta_5["plays"]])
+        meta_22 = get_candidate_track_metadata(22)
+        self.assertIn("chrome_extension_contextual_arbitrage", [p["id"] for p in meta_22["plays"]])
 
         # Unmapped candidates get empty arrays cleanly
         meta_10 = get_candidate_track_metadata(10)
@@ -2073,8 +2099,8 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
         self.assertEqual(len(pipeline), 29)
         t1_cands = [c["candidate_number"] for c in pipeline if "track_1" in c["track_ids"]]
         t2_cands = [c["candidate_number"] for c in pipeline if "track_2" in c["track_ids"]]
-        self.assertEqual(sorted(t1_cands), [1, 2, 5, 8, 9, 11, 13, 16, 17, 18, 20, 21, 22, 25, 26, 27, 29])
-        self.assertEqual(sorted(t2_cands), [18, 21, 22, 24, 25, 26, 27, 28, 29])
+        self.assertEqual(sorted(t1_cands), [1, 2, 4, 5, 8, 9, 11, 12, 13, 16, 17, 18, 20, 21, 22, 25, 26, 27, 29])
+        self.assertEqual(sorted(t2_cands), [9, 15, 18, 20, 21, 22, 24, 25, 26, 27, 28, 29])
 
         # Store & UI HTML include track filters and platform risk sections while preserving persisted brand settings
         state = self.store.load_publishing_state(self.root, verify_manifest=True)

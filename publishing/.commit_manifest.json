@@ -3,7 +3,7 @@
   "sha256": {
     "audit/existing_work_audit.json": "84bb802a94f9a7480938746a25015f1b4d632135c356ffacf83acd9299993008",
     "brand/brand_system.json": "8b1e761b184d5e547445995409ba970a251025834a9f71ef27dd9ffaf0450f68",
-    "catalog/pipeline_29_candidates.json": "7d064d94684e456410fdb2b3eaeb049a159492f30783a83dc777b1618687b4af",
+    "catalog/pipeline_29_candidates.json": "7b13583087f027ca80efeecf3d693bd933674cef5fe3ee29034a919bccfe8acc",
     "research/research_database_summary.json": "59bdc47a842c1176e5fac5a1768a6abb7f017930fe973424fa1b0f6cc3e71af1",
     "site/newsletter_signups.json": "5a97fe09f877c0fccee940246e74f27dc5b6bc83148037af241946b350933794",
     "volumes/vol-001-heir-hunting/chapters/chapter-01.md": "195a67f163ab2ea16d2d2e15929e2ecd36b835c5d3995eb73816670786ad7de8",

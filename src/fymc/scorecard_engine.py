@@ -123,24 +123,24 @@ PLAY_DEFINITIONS = {
     "expired_domain_traffic_arbitrage": {
         "id": "expired_domain_traffic_arbitrage",
         "track_id": "track_1",
-        "name": "Expired Domain & Traffic Arbitrage",
+        "name": "Expired Authority Domain (.gov/.edu/Media) Rebuilds & Traffic Arbitrage",
         "mechanism": (
-            "Acquire dropped or auctioned domains with clean historical link equity and residual "
-            "type-in/referral traffic, then rebuild topical authority hubs or monetize intent via "
-            "high-payout lead and affiliate offers."
+            "Acquire dropped or auctioned domains carrying clean historical backlinks from .gov, .edu, "
+            "major media, and trade publications, then rebuild strict topical-continuity authority hubs "
+            "and monetize via high-payout lead routing and affiliate offers."
         ),
-        "inputs": ["Registrar drop lists & closeout auctions", "Historical archive snapshots", "Backlink & anchor-text profiles"],
+        "inputs": ["Registrar drop lists & closeout auctions", "Historical archive snapshots (.gov/.edu/editorial link equity)", "Backlink & anchor-text profiles"],
         "workflow": [
-            "Screen auction and drop feeds for non-trademarked domains with editorial backlinks",
+            "Screen auction and drop feeds for non-trademarked domains with clean editorial/.gov/.edu backlinks",
             "Verify clean indexing history and absence of toxic spam penalties",
-            "Restore relevant topical architecture and route qualified traffic to high-margin offers",
+            "Restore strict topical continuity with the historical archive theme and route qualified traffic to high-margin lead/affiliate offers",
         ],
         "inputs_note": "Strictly excludes trademarked terms or deceptive brand impersonation.",
         "metrics": ["Acquisition cost vs. 6-month traffic value", "Indexation retention %", "RPM / revenue per visitor"],
         "platform_risks": [
             {
                 "failure_mode": "Search engine expired-domain abuse classification / deindexing",
-                "trigger": "Abrupt topical pivot or thin auto-generated content on repurposed domains",
+                "trigger": "Abrupt topical pivot (e.g., defunct civic site to unrelated casino/loan spam) or thin auto-generated content",
                 "impact": "Loss of historical ranking authority and organic search impressions",
                 "detection_metric": "Indexed page ratio and non-brand impression trend in Search Console",
                 "fallback": "Keep strict topical continuity with historical archive theme and capture first-party email opt-ins on entry",
@@ -202,26 +202,26 @@ PLAY_DEFINITIONS = {
     "parasitic_seo": {
         "id": "parasitic_seo",
         "track_id": "track_2",
-        "name": "Parasitic SEO",
+        "name": "Parasitic SEO & High-DR Subfolder Leasing",
         "mechanism": (
-            "Publish deeply researched commercial comparisons and buyer guides on high-authority "
-            "third-party host platforms, publications, and community domains to rank for competitive "
-            "buyer keywords faster than a new standalone domain."
+            "Publish deeply researched commercial comparisons, calculators, and buyer guides on "
+            "high-authority third-party trade publications, leased DR 80+ '/guides/' subfolders, "
+            "and community domains to rank #1–#3 for competitive buyer keywords within 48 hours."
         ),
-        "inputs": ["High-DR third-party publishing hosts", "High-CPC buyer-intent keyword clusters", "Conversion-tested comparison modules"],
+        "inputs": ["High-DR niche trade publications & leased subfolders", "High-CPC buyer-intent keyword clusters", "Conversion-tested quiz & comparison bridge modules"],
         "workflow": [
-            "Identify authority platforms that index rapidly for commercial review and comparison queries",
-            "Deploy substantive, data-backed comparison placements with tracked referral CTAs",
-            "Bridge third-party placement traffic immediately into owned landing pages and email lists",
+            "Partner with topically relevant high-DR trade publications or authority platforms that index rapidly for commercial queries",
+            "Deploy substantive, data-backed comparison and calculator placements with tracked referral CTAs",
+            "Siphon third-party placement traffic immediately into owned quiz/calculator bridge pages and first-party email/SMS lists",
         ],
         "metrics": ["Time-to-top-3 ranking (days)", "Click-through rate to owned bridge page", "Net commission per placement"],
         "platform_risks": [
             {
-                "failure_mode": "Host removal or search site-reputation policy enforcement",
-                "trigger": "Host platform moderates outbound affiliate links or search engines demote third-party subdirectories",
+                "failure_mode": "Host removal or Google Site Reputation Abuse manual/algorithmic demotion",
+                "trigger": "Leasing subfolders on generic news sites for unrelated coupon/casino topics or host moderation of outbound links",
                 "impact": "Sudden removal or ranking drop of hosted placement URLs",
                 "detection_metric": "HTTP status/canonical monitor on hosted URLs and SERP rank tracker alerts",
-                "fallback": "Treat hosted placements strictly as top-of-funnel feeders into owned domains and first-party email lists",
+                "fallback": "Partner strictly with topically aligned trade publications and treat hosted placements as top-of-funnel feeders into owned email/SMS lists",
             },
         ],
     },
@@ -474,16 +474,264 @@ PLAY_DEFINITIONS = {
             },
         ],
     },
+    "identity_graph_pixel_arbitrage": {
+        "id": "identity_graph_pixel_arbitrage",
+        "track_id": "track_2",
+        "name": "Identity-Graph Pixel & Search-Intent Deanonymization",
+        "mechanism": (
+            "Deploy first-party CNAME identity-resolution pixels and pre-click search/bidstream intent "
+            "feeds (syncing visitor IP/device hashes against publisher co-op SHA-256 rainbow tables and "
+            "property/B2B graphs) to resolve 35–55% of anonymous bouncing search visitors into verified "
+            "names, emails, LinkedIn profiles, and physical home addresses."
+        ),
+        "inputs": [
+            "First-party CNAME identity-resolution pixel & Google Ads ValueTrack ({keyword}) URL tags",
+            "Publisher co-op SHA-256 HEM spine + County Assessor / B2B LinkedIn enrichment graph",
+            "Automated physical postcard API (Lob / PostGrid), B2B Slack routing, & Custom Audience sync",
+        ],
+        "workflow": [
+            "Geo-fence pixel execution at the CDN edge (US-only, excluding EU/UK GDPR traffic) and capture exact referring search keywords via ValueTrack parameters",
+            "Resolve anonymous bouncing visitors against the identity spine within 200ms to append homeowner address, work email, and LinkedIn URL",
+            "Route resolved B2B executives to instant Slack/LinkedIn warm outreach, trigger physical next-day postcards to resolved homeowner addresses, and sync SHA-256 hashes into Meta/Google Custom Audiences",
+        ],
+        "metrics": [
+            "Anonymous visitor-to-identity match rate (35–55% target)",
+            "Cost per resolved identity ($0.10–$0.25) vs. net recovered revenue per 1,000 bounces",
+            "Postcard & B2B LinkedIn intercept conversion rate (%)",
+        ],
+        "platform_risks": [
+            {
+                "failure_mode": "Primary email domain blacklisting (>0.3% spam complaint rate) or California CIPA / state privacy demand letters",
+                "trigger": "Blasting cold consumer Gmail addresses from primary brand domains saying 'we saw you on our site' or firing third-party pixels without geo-fencing/consent notice",
+                "impact": "Google Workspace / ESP domain suspension or statutory privacy settlement costs",
+                "detection_metric": "Postmaster Tools spam rate >0.1%, bounce rate >2%, and edge geo-fence block verification",
+                "fallback": "Never cold-email unconsented consumer Gmail addresses from primary domains; monetize consumer matches strictly via CAN-SPAM-exempt physical trigger mail and SHA-256 ad-audience sync, and enforce US-only edge geo-gating",
+            },
+        ],
+    },
+    "competitor_intent_comparison_hijacking": {
+        "id": "competitor_intent_comparison_hijacking",
+        "track_id": "track_2",
+        "name": "Programmatic 'Alternative To / Pricing / Cancel' Intent Hijacking",
+        "mechanism": (
+            "Generate programmatic nominative-fair-use comparison matrices, live fee calculators, and "
+            "migration guides targeting bottom-of-funnel '[Competitor] pricing', '[Competitor] cancel', "
+            "and '[Competitor] vs [Offer]' queries to intercept buyers with 10–18% conversion rates."
+        ),
+        "inputs": [
+            "Competitor pricing tiers, hidden-fee schedules, & cancellation friction data",
+            "Bottom-of-funnel '[Brand] pricing / alternative / vs' keyword taxonomy",
+            "Interactive side-by-side TCO (Total Cost of Ownership) switching calculator",
+        ],
+        "workflow": [
+            "Ingest verified public pricing, contract lock-in terms, and fee schedules across 100+ incumbent providers in the target vertical",
+            "Publish objective, factual side-by-side comparison matrices and switching calculators under nominative fair use",
+            "Offer a 1-click migration concierge or instant savings quote that routes high-intent switchers into owned SaaS, agency, or high-ticket affiliate offers",
+        ],
+        "metrics": [
+            "Bottom-of-funnel visitor-to-lead conversion % (10–18% target)",
+            "Earnings per click (EPC) on switching-intent queries",
+            "Organic top-3 SERP share across '[Competitor] pricing/alternative' clusters",
+        ],
+        "platform_risks": [
+            {
+                "failure_mode": "UDRP trademark complaint, DMCA notice, or false-advertising cease-and-desist",
+                "trigger": "Impersonating competitor login pages, using trademarked logos deceptively, or publishing fabricated competitor pricing",
+                "impact": "Page takedown demand or affiliate partner account review",
+                "detection_metric": "Quarterly pricing fact-check audit log and legal/compliance inbox alerts",
+                "fallback": "Rely strictly on nominative fair use (text-only brand names, timestamped public pricing citations, and zero logo spoofing)",
+            },
+        ],
+    },
+    "social_to_search_ping_post_arbitrage": {
+        "id": "social_to_search_ping_post_arbitrage",
+        "track_id": "track_2",
+        "name": "Social-to-Search Ad Feed & Ping-Post Lead Arbitrage",
+        "mechanism": (
+            "Buy $0.05–$0.12 curiosity clicks on Meta, TikTok, NewsBreak, and native ad networks and "
+            "route them through a 4-question qualification bridge—replacing fragile $1.50 RSOC/AFD "
+            "search-feed clicks with direct $45–$180 Ping-Post lead auctions."
+        ),
+        "inputs": [
+            "Low-CPC social/native ad hooks ($0.05–$0.12 CPC)",
+            "Fast 4-question conditional qualification quiz + TCPA consent capture",
+            "Real-time Ping-Post lead distribution engine (Boberdoo / Leadspedia / Phonexa) + RSOC downsell feed",
+        ],
+        "workflow": [
+            "Acquire low-cost social and native clicks using compliant consumer-benefit hooks (tax appeals, solar rebates, insurance audits, surplus claims)",
+            "Pre-qualify zip code, homeowner/business status, and urgency inside a zero-friction 4-step quiz bridge",
+            "Auction verified exclusive leads in real time via Ping-Post for $45–$180/lead and monetize non-qualifying traffic via compliant secondary search/affiliate offers",
+        ],
+        "metrics": [
+            "Effective media cost per qualified lead (CPL) vs. Ping-Post auction payout",
+            "Ping-to-Post acceptance rate (%) and sub-500ms auction response time",
+            "Net arbitrage margin after ad spend and buyer returns",
+        ],
+        "platform_risks": [
+            {
+                "failure_mode": "Ad-account ban, RSOC/AFD feed termination, or TCPA consent challenge",
+                "trigger": "Using fake 'government stimulus' ad bait, forcing accidental ad clicks, or selling leads without one-to-one TCPA consent logs",
+                "impact": "Ad account suspension, feed clawbacks, or buyer lead rejections",
+                "detection_metric": "Ad disapproval rate, buyer return rate >5%, and TrustedForm/Jornaya certificate match rate (100% required)",
+                "fallback": "Enforce 100% factual ad hooks, log cryptographic TrustedForm/Jornaya session certificates on every form submit, and diversify across 5+ direct lead buyers",
+            },
+        ],
+    },
+    "chrome_extension_contextual_arbitrage": {
+        "id": "chrome_extension_contextual_arbitrage",
+        "track_id": "track_2",
+        "name": "Chrome Extension & Micro-Tool Contextual Deal/Fee Arbitrage",
+        "mechanism": (
+            "Acquire or launch free high-utility Chrome extensions and browser calculators (50,000+ users) "
+            "that surface visible, opt-in savings, fee-cap, or vendor comparisons at the exact moment a "
+            "user views a target docket, SaaS checkout, or supplier portal—without blackhat cookie stuffing."
+        ),
+        "inputs": [
+            "Chrome Web Store utility extension (docket helper, fee calculator, B2B price checker)",
+            "Manifest V3 declarative URL/DOM contextual trigger rules",
+            "Opt-in comparison drawer with high-payout affiliate and lead-gen endpoints",
+        ],
+        "workflow": [
+            "Grow or acquire a niche Manifest V3 Chrome extension solving a recurring daily workflow (e.g., parcel lookup, e-commerce fee calculator, freight rate check)",
+            "Detect when the user visits a high-intent commercial URL and display a clean, non-intrusive opt-in badge ('3 lower-fee providers available for this state/item')",
+            "Credit affiliate or lead bounty only when the user explicitly clicks the comparison prompt",
+        ],
+        "metrics": [
+            "Weekly active extension users (WAU) & uninstall rate (<2%/mo)",
+            "Contextual prompt CTR (%) and monthly revenue per 1,000 active users",
+            "Customer acquisition cost ($0 organic CWS search + micro-acquisitions)",
+        ],
+        "platform_risks": [
+            {
+                "failure_mode": "Chrome Web Store removal or affiliate network termination for cookie stuffing",
+                "trigger": "Firing hidden background iframes/tabs to overwrite affiliate cookies without explicit user click or requesting excessive host permissions",
+                "impact": "Immediate Chrome Web Store delisting and forfeiture of unpaid affiliate commissions",
+                "detection_metric": "CWS policy warning alerts and 100% user-initiated click-event attestation per affiliate redirect",
+                "fallback": "Never auto-fire background affiliate links; use narrow activeTab/declarativeContent permissions and require an explicit user click on every offer",
+            },
+        ],
+    },
+    "rank_and_rent_pay_per_call_routing": {
+        "id": "rank_and_rent_pay_per_call_routing",
+        "track_id": "track_2",
+        "name": "Rank-and-Rent Digital Real Estate & Pay-Per-Call Routing",
+        "mechanism": (
+            "Build and rank local high-ticket service hubs (foundation repair, water restoration, probate "
+            "liquidation, commercial roofing) wired to dynamic call-tracking switches (Ringba / Twilio) "
+            "that auto-bill local operators $75–$300 per inbound call lasting over 90 seconds."
+        ),
+        "inputs": [
+            "City + high-ticket emergency/specialty service domain portfolio",
+            "Ringba / Twilio dynamic number insertion (DNI) & IVR duration billing switch",
+            "Co-verified local contractor partner agreements with card-on-file auto-recharge",
+        ],
+        "workflow": [
+            "Launch fast programmatic local service pages and cost calculators for high-ticket, high-urgency verticals ($5,000+ average job ticket)",
+            "Partner with a licensed brick-and-mortar operator in each city for legitimate Google Business Profile co-verification while retaining ownership of the domain and tracking numbers",
+            "Route inbound prospect calls through Ringba with a 90-second duration threshold, automatically charging the partner's card on file per qualified call",
+        ],
+        "metrics": [
+            "Inbound calls per site per month & % of calls >90 seconds",
+            "Revenue per qualified call ($75–$300) and contractor retention rate",
+            "Portfolio gross margin (80–90% once ranked)",
+        ],
+        "platform_risks": [
+            {
+                "failure_mode": "Google Business Profile suspension or contractor payment default",
+                "trigger": "Registering fake Google Maps pins at UPS stores/virtual offices or delivering calls before collecting prepaid credit balances",
+                "impact": "Loss of Map Pack call volume or uncollected call receivables",
+                "detection_metric": "Organic-vs-Maps call split and prepaid Stripe wallet balance per partner",
+                "fallback": "Anchor traffic in organic city/calculator pages (immune to GBP suspension), co-verify Maps only with real partner physical addresses, and enforce prepaid auto-refill call wallets",
+            },
+        ],
+    },
+    "ego_bait_directory_badge_arbitrage": {
+        "id": "ego_bait_directory_badge_arbitrage",
+        "track_id": "track_1",
+        "name": "Industry Award & Verified Directory 'Ego-Bait' Badge Arbitrage",
+        "mechanism": (
+            "Publish data-scored state and city rankings ('Top 15 Verified Specialists in [City]') and "
+            "issue free embeddable 'Top Rated' winner badges to ranked firms—earning hundreds of free "
+            "high-DR backlinks when firms post the badge on their own sites, while upselling $299–$799/mo "
+            "Featured #1 Lead-Capture placements."
+        ),
+        "inputs": [
+            "Public state licensing, inspection, & review dataset for 500+ firms per vertical",
+            "Transparent algorithmic scoring rubric + auto-generated SVG 'Verified Top 10%' embed badges",
+            "Self-serve $299–$799/mo Featured Placement & exclusive lead-routing checkout",
+        ],
+        "workflow": [
+            "Score all licensed operators in a high-ticket vertical using objective public records (years licensed, zero disciplinary actions, review velocity)",
+            "Notify top-scoring firms with their free embeddable HTML/SVG '2026 Top-Scored Provider' badge (driving natural dofollow backlinks back to your directory)",
+            "Convert 5–10% of shortlisted firms into $299–$799/mo Featured Top-Spot subscribers who receive priority inbound quote requests",
+        ],
+        "metrics": [
+            "Badge embed rate (% of notified firms linking back to directory)",
+            "Domain Rating (DR) growth and organic city-ranking velocity",
+            "Monthly recurring revenue (MRR) from Featured Profile subscriptions",
+        ],
+        "platform_risks": [
+            {
+                "failure_mode": "FTC endorsement/ranking disclosure scrutiny or Google widget-link spam filtering",
+                "trigger": "Manipulating objective scores solely for pay-to-play without 'Sponsored' labels or stuffing keyword-anchor links inside badge HTML",
+                "impact": "Loss of editorial credibility or discounting of badge backlinks",
+                "detection_metric": "Anchor-text naturalness ratio and clear visual separation of 'Sponsored Featured Partner' vs. algorithmic score",
+                "fallback": "Keep the underlying algorithmic score 100% objective and immutable, clearly label paid top-spot placements as 'Sponsored / Featured', and use clean branded anchor text in badge embeds",
+            },
+        ],
+    },
+    "b2b_class_action_contingency_recovery": {
+        "id": "b2b_class_action_contingency_recovery",
+        "track_id": "track_1",
+        "name": "B2B Class-Action & Antitrust Settlement Contingency Recovery",
+        "mechanism": (
+            "Monitor multibillion-dollar corporate antitrust and commercial class-action settlement funds "
+            "(payment-card interchange, freight, auto parts, commercial insurance, SaaS) where 85–90% of "
+            "eligible small businesses never file, and recover verified payouts on a 25–33% contingency fee."
+        ),
+        "inputs": [
+            "Active federal B2B class-action settlement docket calendar & claims-administrator portals",
+            "B2B merchant-processing, fleet, & vendor spend intake pipeline",
+            "Contingency claim-preparation & court-authorized third-party filing agreements",
+        ],
+        "workflow": [
+            "Track open and upcoming commercial class-action settlements with verified court-appointed claims administrators and $50M–$5B+ settlement pools",
+            "Sign zero-upfront-cost (25–33% contingency) authorization agreements with operating restaurants, medical practices, retailers, and fleets",
+            "Extract historical merchant statements or vendor invoices, submit audited claim packages to the settlement administrator, and reconcile fee splits upon disbursement",
+        ],
+        "metrics": [
+            "Average gross settlement recovery per enrolled business ($5,000–$150,000+)",
+            "Claim acceptance rate by court-appointed administrator (%)",
+            "Net contingency fee per operator hour invested",
+        ],
+        "platform_risks": [
+            {
+                "failure_mode": "Claim rejection, administrator audit hold, or court cap on third-party filer fees",
+                "trigger": "Submitting unsubstantiated spend estimates, missing court bar dates, or failing to include required third-party filer disclosures",
+                "impact": "Delayed payout disbursement or court-mandated fee reduction",
+                "detection_metric": "Deficiency-notice rate (<2% target) and 100% court-approved disclosure compliance",
+                "fallback": "File strictly for verified operating businesses with primary processor/vendor statements and use court-approved third-party claim-filing riders",
+            },
+        ],
+    },
 }
 
 CANDIDATE_PLAY_MAP: dict[int, tuple[str, ...]] = {
     1: ("public_record_api_intelligence",),
     2: ("public_record_api_intelligence", "distressed_asset_recovery"),
-    5: ("public_record_api_intelligence", "distressed_asset_recovery"),
-    8: ("public_record_api_intelligence", "distressed_asset_recovery"),
-    9: ("public_record_api_intelligence", "public_filing_trigger_mail_arbitrage"),
-    11: ("telegram_channel_signal_scraping",),
+    4: ("public_record_api_intelligence", "ego_bait_directory_badge_arbitrage"),
+    5: ("public_record_api_intelligence", "distressed_asset_recovery", "b2b_class_action_contingency_recovery"),
+    8: ("public_record_api_intelligence", "distressed_asset_recovery", "b2b_class_action_contingency_recovery"),
+    9: (
+        "public_record_api_intelligence",
+        "public_filing_trigger_mail_arbitrage",
+        "rank_and_rent_pay_per_call_routing",
+        "identity_graph_pixel_arbitrage",
+    ),
+    11: ("telegram_channel_signal_scraping", "ego_bait_directory_badge_arbitrage"),
+    12: ("public_filing_trigger_mail_arbitrage", "ego_bait_directory_badge_arbitrage"),
     13: ("distressed_asset_recovery",),
+    15: ("rank_and_rent_pay_per_call_routing",),
     16: ("expired_domain_traffic_arbitrage", "newly_registered_domain_trigger_arbitrage"),
     17: ("distressed_asset_recovery",),
     18: (
@@ -492,42 +740,80 @@ CANDIDATE_PLAY_MAP: dict[int, tuple[str, ...]] = {
         "newly_registered_domain_trigger_arbitrage",
         "telegram_channel_signal_scraping",
         "programmatic_seo",
+        "ego_bait_directory_badge_arbitrage",
+        "rank_and_rent_pay_per_call_routing",
+        "social_to_search_ping_post_arbitrage",
         "high_velocity_dm_outbound_systems",
+        "identity_graph_pixel_arbitrage",
         "paid_to_organic_media_arbitrage",
     ),
-    20: ("public_filing_trigger_mail_arbitrage",),
+    20: (
+        "public_filing_trigger_mail_arbitrage",
+        "b2b_class_action_contingency_recovery",
+        "identity_graph_pixel_arbitrage",
+    ),
     21: (
         "public_filing_trigger_mail_arbitrage",
         "telegram_channel_signal_scraping",
+        "rank_and_rent_pay_per_call_routing",
+        "social_to_search_ping_post_arbitrage",
         "high_velocity_dm_outbound_systems",
+        "identity_graph_pixel_arbitrage",
     ),
-    22: ("public_record_api_intelligence", "viral_distribution_loops"),
+    22: (
+        "public_record_api_intelligence",
+        "competitor_intent_comparison_hijacking",
+        "chrome_extension_contextual_arbitrage",
+        "viral_distribution_loops",
+        "identity_graph_pixel_arbitrage",
+    ),
     24: (
         "parasitic_seo",
+        "competitor_intent_comparison_hijacking",
         "high_velocity_affiliate_funnels",
+        "social_to_search_ping_post_arbitrage",
+        "chrome_extension_contextual_arbitrage",
         "high_velocity_dm_outbound_systems",
         "serp_signal_navboost_engineering",
+        "identity_graph_pixel_arbitrage",
         "paid_to_organic_media_arbitrage",
     ),
     25: (
         "expired_domain_traffic_arbitrage",
         "newly_registered_domain_trigger_arbitrage",
         "programmatic_seo",
+        "ego_bait_directory_badge_arbitrage",
         "parasitic_seo",
+        "competitor_intent_comparison_hijacking",
+        "rank_and_rent_pay_per_call_routing",
         "serp_signal_navboost_engineering",
+        "identity_graph_pixel_arbitrage",
         "paid_to_organic_media_arbitrage",
     ),
-    26: ("telegram_channel_signal_scraping", "high_velocity_dm_outbound_systems"),
+    26: (
+        "telegram_channel_signal_scraping",
+        "ego_bait_directory_badge_arbitrage",
+        "high_velocity_dm_outbound_systems",
+        "identity_graph_pixel_arbitrage",
+    ),
     27: (
         "public_filing_trigger_mail_arbitrage",
+        "chrome_extension_contextual_arbitrage",
         "viral_distribution_loops",
         "high_velocity_dm_outbound_systems",
+        "identity_graph_pixel_arbitrage",
     ),
-    28: ("viral_distribution_loops",),
+    28: (
+        "chrome_extension_contextual_arbitrage",
+        "viral_distribution_loops",
+        "identity_graph_pixel_arbitrage",
+    ),
     29: (
         "newly_registered_domain_trigger_arbitrage",
         "telegram_channel_signal_scraping",
+        "competitor_intent_comparison_hijacking",
         "high_velocity_dm_outbound_systems",
+        "identity_graph_pixel_arbitrage",
     ),
 }
 
