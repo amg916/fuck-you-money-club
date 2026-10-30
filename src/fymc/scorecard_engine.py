@@ -74,9 +74,9 @@ TRACK_DEFINITIONS = {
         "short_label": "Track 1 · Asymmetric & Data Arbitrage",
         "summary": (
             "100% legal, high-edge operator models built on public-record and API "
-            "intelligence, expired domain/traffic arbitrage, programmatic SEO, and "
-            "distressed asset recovery where small automated teams exploit data latency "
-            "and fragmented public registries."
+            "intelligence, public Telegram channel/deal-room signal scraping, expired "
+            "domain/traffic arbitrage, programmatic SEO, and distressed asset recovery "
+            "where small automated teams exploit data latency and fragmented registries."
         ),
     },
     "track_2": {
@@ -86,9 +86,9 @@ TRACK_DEFINITIONS = {
         "short_label": "Track 2 · Grey-Zone Growth & Traffic Arbitrage",
         "summary": (
             "Aggressive, high-velocity acquisition mechanics—parasitic SEO, high-velocity "
-            "affiliate funnels, viral distribution loops, and paid-to-organic media "
-            "arbitrage—paired with explicit platform-policy risk analysis and durable "
-            "owned-audience fallbacks."
+            "affiliate funnels, trigger-based DM outbound systems, SERP Navboost CTR "
+            "engineering, viral distribution loops, and paid-to-organic media arbitrage—"
+            "paired with forensic teardowns of naive blackhat traps and explicit platform-policy fallbacks."
         ),
     },
 }
@@ -301,6 +301,108 @@ PLAY_DEFINITIONS = {
             },
         ],
     },
+    "telegram_channel_signal_scraping": {
+        "id": "telegram_channel_signal_scraping",
+        "track_id": "track_1",
+        "name": "Telegram Channel & Deal-Room Signal Scraping",
+        "mechanism": (
+            "Ingest public Telegram channel broadcasts, OTC deal rooms, wholesale distress feeds, "
+            "and niche community message streams in real time to extract high-intent buyer/seller "
+            "triggers before they hit public search—while avoiding naive member-list scraping traps."
+        ),
+        "inputs": [
+            "Public Telegram channel & group broadcast streams",
+            "Keyword & entity-regex signal filters",
+            "Inbound utility-bot & deal-desk capture endpoints",
+        ],
+        "workflow": [
+            "Monitor public channel message history and live broadcast streams for high-intent deal keywords (buying, distressed lot, urgent allocation, broker needed)",
+            "Score and deduplicate message authors and deal metadata against minimum ticket thresholds without scraping hidden member rosters",
+            "Route verified deal signals to an operator desk or deploy a pinned niche utility bot (alert/calculator/directory) that converts channel readers into inbound leads",
+        ],
+        "metrics": [
+            "Signal-to-response latency (seconds)",
+            "Qualified deal triggers per 1,000 messages",
+            "Inbound bot opt-in & close rate",
+        ],
+        "platform_risks": [
+            {
+                "failure_mode": "MTProto session ban (UserDeactivatedBanError) or FloodWaitError throttling",
+                "trigger": "Aggressive GetParticipantsRequest calls on hidden member lists or high-frequency polling from VoIP virtual SIMs",
+                "impact": "Immediate termination of listener sessions and loss of real-time channel feed ingestion",
+                "detection_metric": "Telegram FloodWaitError seconds per hour and session disconnect rate",
+                "fallback": "Restrict ingestion to passive read-only public broadcast listeners and capture prospects inbound via official Bot API utility bots",
+            },
+        ],
+    },
+    "high_velocity_dm_outbound_systems": {
+        "id": "high_velocity_dm_outbound_systems",
+        "track_id": "track_2",
+        "name": "High-Velocity DM Outbound & Trigger Funnels",
+        "mechanism": (
+            "Replace blind cold mass-DM blasts (which die to PeerFloodError and silent Message Request "
+            "graveyards) with high-velocity comment-to-DM triggers, hand-raiser reaction hooks, and "
+            "multi-inbox warm signal routing."
+        ),
+        "inputs": [
+            "Short-form / community trigger posts ('Comment KEYWORD')",
+            "Signal-verified prospect handles",
+            "Automated DM qualification & booking bridge",
+        ],
+        "workflow": [
+            "Publish high-curiosity teardown or resource posts where prospects comment a trigger keyword or react to unlock a playbook or calculator",
+            "Deliver instant automated DM replies to warm hand-raisers (bypassing cold-DM filters because the user initiated interaction) or send contextual 1-to-1 DMs referencing an active public request",
+            "Qualify budget and timeline inside a 3-message DM micro-funnel and transition immediately to a booked call, checkout link, or owned SMS/email list",
+        ],
+        "metrics": [
+            "Trigger-comment to DM delivery rate",
+            "DM reply-to-qualified-conversation %",
+            "Revenue per 100 DM threads",
+        ],
+        "platform_risks": [
+            {
+                "failure_mode": "PeerFloodError, shadow-filtering into 'Hidden Requests', or link-domain blacklisting",
+                "trigger": "Sending identical unsolicited cold DMs with raw external URLs across freshly registered or SIM-farmed accounts",
+                "impact": "Near-0% inbox placement, outbound DM block, or permanent account suspension",
+                "detection_metric": "Seen/reply ratio below 10% and outbound PeerFloodError / action-block frequency",
+                "fallback": "Require user-initiated trigger action (comment/reaction/inbound message) before automated DM dispatch and send external links only after the prospect replies",
+            },
+        ],
+    },
+    "serp_signal_navboost_engineering": {
+        "id": "serp_signal_navboost_engineering",
+        "track_id": "track_2",
+        "name": "SERP Signal & Navboost CTR Engineering",
+        "mechanism": (
+            "Target Google's Navboost and Glue click-log re-ranking systems (goodClicks vs. badClicks "
+            "and lastLongestClicks) not with synthetic proxy click-bots—which get squashed by Chrome "
+            "session/entropy filters—but by engineering real-human Branded Search Seeding and high-dwell interactive pages."
+        ),
+        "inputs": [
+            "Search Console #3-#10 high-impression query targets",
+            "Short-form / newsletter Branded Search Seeding prompts",
+            "Above-the-fold interactive calculator / lookup tools",
+        ],
+        "workflow": [
+            "Identify commercial queries ranking positions #3-#10 where beating the expected positional CTR curve triggers Navboost promotion",
+            "Seed real human search demand via social videos, communities, and newsletters instructing users to Google '[Target Keyword] + [Brand]' instead of clicking a direct URL",
+            "Capture the click onto an interactive calculator or live database table so the user spends 3+ minutes on-page and terminates their search session without pogo-sticking (lastLongestClick)",
+        ],
+        "metrics": [
+            "Positional CTR delta vs. SERP baseline",
+            "Search Console branded + target keyword impression growth",
+            "Average engaged dwell time & lastLongestClick retention",
+        ],
+        "platform_risks": [
+            {
+                "failure_mode": "Navboost click squashing or Search Console spam-classifier demotion",
+                "trigger": "Using headless browsers, 4G/residential proxy rotators, or automated click farms lacking real signed-in Chrome profile entropy",
+                "impact": "Zero ranking lift (phantom impressions purged from Search Console) or algorithmic ranking demotion",
+                "detection_metric": "Divergence between Search Console reported clicks and verified human tool interactions",
+                "fallback": "Never use synthetic proxy click-bots; drive 100% real human Chrome searchers via Branded Search Seeding and optimize title/snippet hooks for organic CTR",
+            },
+        ],
+    },
 }
 
 CANDIDATE_PLAY_MAP: dict[int, tuple[str, ...]] = {
@@ -308,15 +410,37 @@ CANDIDATE_PLAY_MAP: dict[int, tuple[str, ...]] = {
     2: ("public_record_api_intelligence", "distressed_asset_recovery"),
     5: ("public_record_api_intelligence", "distressed_asset_recovery"),
     8: ("public_record_api_intelligence", "distressed_asset_recovery"),
+    11: ("telegram_channel_signal_scraping",),
     13: ("distressed_asset_recovery",),
     16: ("expired_domain_traffic_arbitrage",),
     17: ("distressed_asset_recovery",),
-    18: ("public_record_api_intelligence", "programmatic_seo", "paid_to_organic_media_arbitrage"),
+    18: (
+        "public_record_api_intelligence",
+        "telegram_channel_signal_scraping",
+        "programmatic_seo",
+        "high_velocity_dm_outbound_systems",
+        "paid_to_organic_media_arbitrage",
+    ),
+    21: ("telegram_channel_signal_scraping", "high_velocity_dm_outbound_systems"),
     22: ("public_record_api_intelligence", "viral_distribution_loops"),
-    24: ("parasitic_seo", "high_velocity_affiliate_funnels", "paid_to_organic_media_arbitrage"),
-    25: ("expired_domain_traffic_arbitrage", "programmatic_seo", "parasitic_seo", "paid_to_organic_media_arbitrage"),
-    27: ("viral_distribution_loops",),
+    24: (
+        "parasitic_seo",
+        "high_velocity_affiliate_funnels",
+        "high_velocity_dm_outbound_systems",
+        "serp_signal_navboost_engineering",
+        "paid_to_organic_media_arbitrage",
+    ),
+    25: (
+        "expired_domain_traffic_arbitrage",
+        "programmatic_seo",
+        "parasitic_seo",
+        "serp_signal_navboost_engineering",
+        "paid_to_organic_media_arbitrage",
+    ),
+    26: ("telegram_channel_signal_scraping", "high_velocity_dm_outbound_systems"),
+    27: ("viral_distribution_loops", "high_velocity_dm_outbound_systems"),
     28: ("viral_distribution_loops",),
+    29: ("telegram_channel_signal_scraping", "high_velocity_dm_outbound_systems"),
 }
 
 

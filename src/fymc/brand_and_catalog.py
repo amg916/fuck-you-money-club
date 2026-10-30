@@ -1716,6 +1716,7 @@ def sync_publishing_store(
             "candidate_count": len(pipeline),
             "flagship_volume_id": FLAGSHIP_VOLUME_ID,
             "editorial_tracks": deepcopy(TRACK_DEFINITIONS),
+            "editorial_plays": deepcopy(PLAY_DEFINITIONS),
             "candidates": pipeline,
             "generated_at": _now_iso(),
         }
