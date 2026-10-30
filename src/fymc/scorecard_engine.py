@@ -403,6 +403,42 @@ PLAY_DEFINITIONS = {
             },
         ],
     },
+    "public_filing_trigger_mail_arbitrage": {
+        "id": "public_filing_trigger_mail_arbitrage",
+        "track_id": "track_1",
+        "name": "New-LLC & Recorded-Deed Trigger-Mail Arbitrage",
+        "mechanism": (
+            "Ingest daily Secretary of State new-LLC filings and County Recorder new-deed/mortgage "
+            "recordings to trigger programmatic direct mail via API—replacing illegal government-lookalike "
+            "poster/deed invoices (which violate 39 U.S.C. § 3001 and state deed-solicitation laws) with "
+            "high-LTV recurring workplace compliance subscriptions, property-tax appeal contingency offers, "
+            "and exclusive new-mover/B2B lead monetization."
+        ),
+        "inputs": [
+            "Daily Secretary of State new-entity (LLC/Corp) bulk feeds",
+            "County Recorder grant/warranty deed & mortgage recording dockets",
+            "Programmatic print-and-mail API (Lob / PostGrid) + QR intake bridge",
+        ],
+        "workflow": [
+            "Pull daily new-LLC formations (filtering for employer/commercial NAICS or multi-member filings) and newly recorded residential deeds with purchase price and loan metadata",
+            "Dispatch transparent, non-governmental trigger mailers within 24–48 hours of filing with personalized QR codes pre-populating entity or parcel data",
+            "Monetize new LLCs via recurring annual labor-poster/registered-agent compliance memberships and B2B partner referrals; monetize new deeds via contingency property-tax appeal filings or high-ticket homeowner lead sales",
+        ],
+        "metrics": [
+            "Filing-to-mailbox latency (hours)",
+            "QR scan & intake conversion % per 1,000 mailers",
+            "Annualized LTV / net revenue per mailed piece",
+        ],
+        "platform_risks": [
+            {
+                "failure_mode": "USPS 39 U.S.C. § 3001(h)-(i) mail-stop order, State AG UDAP enforcement, or payment-processor freeze",
+                "trigger": "Styling mailers as fake government penalty notices, invoices, or charging $89-$195 solely for a $3 public deed copy without statutory disclaimers",
+                "impact": "Civil restitution penalties, merchant account termination, and 30%+ chargeback rates",
+                "detection_metric": "Refund/chargeback ratio >1% and customer support inquiries mistaking the mailer for a government agency",
+                "fallback": "Use unambiguous private commercial branding, never mimic government seals or citation numbers, and sell genuine value-add subscriptions (annual compliance updates, tax-assessment appeals, or B2B services)",
+            },
+        ],
+    },
 }
 
 CANDIDATE_PLAY_MAP: dict[int, tuple[str, ...]] = {
@@ -410,18 +446,25 @@ CANDIDATE_PLAY_MAP: dict[int, tuple[str, ...]] = {
     2: ("public_record_api_intelligence", "distressed_asset_recovery"),
     5: ("public_record_api_intelligence", "distressed_asset_recovery"),
     8: ("public_record_api_intelligence", "distressed_asset_recovery"),
+    9: ("public_record_api_intelligence", "public_filing_trigger_mail_arbitrage"),
     11: ("telegram_channel_signal_scraping",),
     13: ("distressed_asset_recovery",),
     16: ("expired_domain_traffic_arbitrage",),
     17: ("distressed_asset_recovery",),
     18: (
         "public_record_api_intelligence",
+        "public_filing_trigger_mail_arbitrage",
         "telegram_channel_signal_scraping",
         "programmatic_seo",
         "high_velocity_dm_outbound_systems",
         "paid_to_organic_media_arbitrage",
     ),
-    21: ("telegram_channel_signal_scraping", "high_velocity_dm_outbound_systems"),
+    20: ("public_filing_trigger_mail_arbitrage",),
+    21: (
+        "public_filing_trigger_mail_arbitrage",
+        "telegram_channel_signal_scraping",
+        "high_velocity_dm_outbound_systems",
+    ),
     22: ("public_record_api_intelligence", "viral_distribution_loops"),
     24: (
         "parasitic_seo",
@@ -438,7 +481,11 @@ CANDIDATE_PLAY_MAP: dict[int, tuple[str, ...]] = {
         "paid_to_organic_media_arbitrage",
     ),
     26: ("telegram_channel_signal_scraping", "high_velocity_dm_outbound_systems"),
-    27: ("viral_distribution_loops", "high_velocity_dm_outbound_systems"),
+    27: (
+        "public_filing_trigger_mail_arbitrage",
+        "viral_distribution_loops",
+        "high_velocity_dm_outbound_systems",
+    ),
     28: ("viral_distribution_loops",),
     29: ("telegram_channel_signal_scraping", "high_velocity_dm_outbound_systems"),
 }

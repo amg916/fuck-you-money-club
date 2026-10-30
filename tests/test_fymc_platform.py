@@ -2024,6 +2024,7 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
                 "telegram_channel_signal_scraping",
                 "high_velocity_dm_outbound_systems",
                 "serp_signal_navboost_engineering",
+                "public_filing_trigger_mail_arbitrage",
             },
         )
         for play_id, play in PLAY_DEFINITIONS.items():
@@ -2046,6 +2047,7 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
         meta_18 = get_candidate_track_metadata(18)
         self.assertIn("telegram_channel_signal_scraping", [p["id"] for p in meta_18["plays"]])
         self.assertIn("high_velocity_dm_outbound_systems", [p["id"] for p in meta_18["plays"]])
+        self.assertIn("public_filing_trigger_mail_arbitrage", [p["id"] for p in meta_18["plays"]])
 
         # Unmapped candidates get empty arrays cleanly
         meta_10 = get_candidate_track_metadata(10)
@@ -2068,7 +2070,7 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
         self.assertEqual(len(pipeline), 29)
         t1_cands = [c["candidate_number"] for c in pipeline if "track_1" in c["track_ids"]]
         t2_cands = [c["candidate_number"] for c in pipeline if "track_2" in c["track_ids"]]
-        self.assertEqual(sorted(t1_cands), [1, 2, 5, 8, 11, 13, 16, 17, 18, 21, 22, 25, 26, 29])
+        self.assertEqual(sorted(t1_cands), [1, 2, 5, 8, 9, 11, 13, 16, 17, 18, 20, 21, 22, 25, 26, 27, 29])
         self.assertEqual(sorted(t2_cands), [18, 21, 22, 24, 25, 26, 27, 28, 29])
 
         # Store & UI HTML include track filters and platform risk sections while preserving persisted brand settings

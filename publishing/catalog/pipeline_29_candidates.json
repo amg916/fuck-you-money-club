@@ -117,12 +117,44 @@
         "Verify content rights, consumer refund rules, digital sales taxes and truthful marketing."
       ],
       "track_ids": [
+        "track_1",
         "track_2"
       ],
       "track_labels": [
+        "Asymmetric & Data-Arbitrage Plays",
         "Grey-Zone Growth & Traffic Arbitrage"
       ],
       "plays": [
+        {
+          "id": "public_filing_trigger_mail_arbitrage",
+          "track_id": "track_1",
+          "name": "New-LLC & Recorded-Deed Trigger-Mail Arbitrage",
+          "mechanism": "Ingest daily Secretary of State new-LLC filings and County Recorder new-deed/mortgage recordings to trigger programmatic direct mail via API—replacing illegal government-lookalike poster/deed invoices (which violate 39 U.S.C. § 3001 and state deed-solicitation laws) with high-LTV recurring workplace compliance subscriptions, property-tax appeal contingency offers, and exclusive new-mover/B2B lead monetization.",
+          "inputs": [
+            "Daily Secretary of State new-entity (LLC/Corp) bulk feeds",
+            "County Recorder grant/warranty deed & mortgage recording dockets",
+            "Programmatic print-and-mail API (Lob / PostGrid) + QR intake bridge"
+          ],
+          "workflow": [
+            "Pull daily new-LLC formations (filtering for employer/commercial NAICS or multi-member filings) and newly recorded residential deeds with purchase price and loan metadata",
+            "Dispatch transparent, non-governmental trigger mailers within 24–48 hours of filing with personalized QR codes pre-populating entity or parcel data",
+            "Monetize new LLCs via recurring annual labor-poster/registered-agent compliance memberships and B2B partner referrals; monetize new deeds via contingency property-tax appeal filings or high-ticket homeowner lead sales"
+          ],
+          "metrics": [
+            "Filing-to-mailbox latency (hours)",
+            "QR scan & intake conversion % per 1,000 mailers",
+            "Annualized LTV / net revenue per mailed piece"
+          ],
+          "platform_risks": [
+            {
+              "failure_mode": "USPS 39 U.S.C. § 3001(h)-(i) mail-stop order, State AG UDAP enforcement, or payment-processor freeze",
+              "trigger": "Styling mailers as fake government penalty notices, invoices, or charging $89-$195 solely for a $3 public deed copy without statutory disclaimers",
+              "impact": "Civil restitution penalties, merchant account termination, and 30%+ chargeback rates",
+              "detection_metric": "Refund/chargeback ratio >1% and customer support inquiries mistaking the mailer for a government agency",
+              "fallback": "Use unambiguous private commercial branding, never mimic government seals or citation numbers, and sell genuine value-add subscriptions (annual compliance updates, tax-assessment appeals, or B2B services)"
+            }
+          ]
+        },
         {
           "id": "viral_distribution_loops",
           "track_id": "track_2",
@@ -185,6 +217,16 @@
         }
       ],
       "platform_risks": [
+        {
+          "failure_mode": "USPS 39 U.S.C. § 3001(h)-(i) mail-stop order, State AG UDAP enforcement, or payment-processor freeze",
+          "trigger": "Styling mailers as fake government penalty notices, invoices, or charging $89-$195 solely for a $3 public deed copy without statutory disclaimers",
+          "impact": "Civil restitution penalties, merchant account termination, and 30%+ chargeback rates",
+          "detection_metric": "Refund/chargeback ratio >1% and customer support inquiries mistaking the mailer for a government agency",
+          "fallback": "Use unambiguous private commercial branding, never mimic government seals or citation numbers, and sell genuine value-add subscriptions (annual compliance updates, tax-assessment appeals, or B2B services)",
+          "play_id": "public_filing_trigger_mail_arbitrage",
+          "play_name": "New-LLC & Recorded-Deed Trigger-Mail Arbitrage",
+          "track_id": "track_1"
+        },
         {
           "failure_mode": "Algorithmic reach throttling or account shadow-limiting",
           "trigger": "Social platforms penalize repetitive template formats or aggressive outbound link prompts",
@@ -1575,6 +1617,36 @@
           ]
         },
         {
+          "id": "public_filing_trigger_mail_arbitrage",
+          "track_id": "track_1",
+          "name": "New-LLC & Recorded-Deed Trigger-Mail Arbitrage",
+          "mechanism": "Ingest daily Secretary of State new-LLC filings and County Recorder new-deed/mortgage recordings to trigger programmatic direct mail via API—replacing illegal government-lookalike poster/deed invoices (which violate 39 U.S.C. § 3001 and state deed-solicitation laws) with high-LTV recurring workplace compliance subscriptions, property-tax appeal contingency offers, and exclusive new-mover/B2B lead monetization.",
+          "inputs": [
+            "Daily Secretary of State new-entity (LLC/Corp) bulk feeds",
+            "County Recorder grant/warranty deed & mortgage recording dockets",
+            "Programmatic print-and-mail API (Lob / PostGrid) + QR intake bridge"
+          ],
+          "workflow": [
+            "Pull daily new-LLC formations (filtering for employer/commercial NAICS or multi-member filings) and newly recorded residential deeds with purchase price and loan metadata",
+            "Dispatch transparent, non-governmental trigger mailers within 24–48 hours of filing with personalized QR codes pre-populating entity or parcel data",
+            "Monetize new LLCs via recurring annual labor-poster/registered-agent compliance memberships and B2B partner referrals; monetize new deeds via contingency property-tax appeal filings or high-ticket homeowner lead sales"
+          ],
+          "metrics": [
+            "Filing-to-mailbox latency (hours)",
+            "QR scan & intake conversion % per 1,000 mailers",
+            "Annualized LTV / net revenue per mailed piece"
+          ],
+          "platform_risks": [
+            {
+              "failure_mode": "USPS 39 U.S.C. § 3001(h)-(i) mail-stop order, State AG UDAP enforcement, or payment-processor freeze",
+              "trigger": "Styling mailers as fake government penalty notices, invoices, or charging $89-$195 solely for a $3 public deed copy without statutory disclaimers",
+              "impact": "Civil restitution penalties, merchant account termination, and 30%+ chargeback rates",
+              "detection_metric": "Refund/chargeback ratio >1% and customer support inquiries mistaking the mailer for a government agency",
+              "fallback": "Use unambiguous private commercial branding, never mimic government seals or citation numbers, and sell genuine value-add subscriptions (annual compliance updates, tax-assessment appeals, or B2B services)"
+            }
+          ]
+        },
+        {
           "id": "telegram_channel_signal_scraping",
           "track_id": "track_1",
           "name": "Telegram Channel & Deal-Room Signal Scraping",
@@ -1704,6 +1776,16 @@
           "fallback": "Switch to scheduled bulk FOIA/public-record exports, official data feeds, and low-frequency cached queues",
           "play_id": "public_record_api_intelligence",
           "play_name": "Public-Record & API Intelligence",
+          "track_id": "track_1"
+        },
+        {
+          "failure_mode": "USPS 39 U.S.C. § 3001(h)-(i) mail-stop order, State AG UDAP enforcement, or payment-processor freeze",
+          "trigger": "Styling mailers as fake government penalty notices, invoices, or charging $89-$195 solely for a $3 public deed copy without statutory disclaimers",
+          "impact": "Civil restitution penalties, merchant account termination, and 30%+ chargeback rates",
+          "detection_metric": "Refund/chargeback ratio >1% and customer support inquiries mistaking the mailer for a government agency",
+          "fallback": "Use unambiguous private commercial branding, never mimic government seals or citation numbers, and sell genuine value-add subscriptions (annual compliance updates, tax-assessment appeals, or B2B services)",
+          "play_id": "public_filing_trigger_mail_arbitrage",
+          "play_name": "New-LLC & Recorded-Deed Trigger-Mail Arbitrage",
           "track_id": "track_1"
         },
         {
@@ -1857,6 +1939,36 @@
       ],
       "plays": [
         {
+          "id": "public_filing_trigger_mail_arbitrage",
+          "track_id": "track_1",
+          "name": "New-LLC & Recorded-Deed Trigger-Mail Arbitrage",
+          "mechanism": "Ingest daily Secretary of State new-LLC filings and County Recorder new-deed/mortgage recordings to trigger programmatic direct mail via API—replacing illegal government-lookalike poster/deed invoices (which violate 39 U.S.C. § 3001 and state deed-solicitation laws) with high-LTV recurring workplace compliance subscriptions, property-tax appeal contingency offers, and exclusive new-mover/B2B lead monetization.",
+          "inputs": [
+            "Daily Secretary of State new-entity (LLC/Corp) bulk feeds",
+            "County Recorder grant/warranty deed & mortgage recording dockets",
+            "Programmatic print-and-mail API (Lob / PostGrid) + QR intake bridge"
+          ],
+          "workflow": [
+            "Pull daily new-LLC formations (filtering for employer/commercial NAICS or multi-member filings) and newly recorded residential deeds with purchase price and loan metadata",
+            "Dispatch transparent, non-governmental trigger mailers within 24–48 hours of filing with personalized QR codes pre-populating entity or parcel data",
+            "Monetize new LLCs via recurring annual labor-poster/registered-agent compliance memberships and B2B partner referrals; monetize new deeds via contingency property-tax appeal filings or high-ticket homeowner lead sales"
+          ],
+          "metrics": [
+            "Filing-to-mailbox latency (hours)",
+            "QR scan & intake conversion % per 1,000 mailers",
+            "Annualized LTV / net revenue per mailed piece"
+          ],
+          "platform_risks": [
+            {
+              "failure_mode": "USPS 39 U.S.C. § 3001(h)-(i) mail-stop order, State AG UDAP enforcement, or payment-processor freeze",
+              "trigger": "Styling mailers as fake government penalty notices, invoices, or charging $89-$195 solely for a $3 public deed copy without statutory disclaimers",
+              "impact": "Civil restitution penalties, merchant account termination, and 30%+ chargeback rates",
+              "detection_metric": "Refund/chargeback ratio >1% and customer support inquiries mistaking the mailer for a government agency",
+              "fallback": "Use unambiguous private commercial branding, never mimic government seals or citation numbers, and sell genuine value-add subscriptions (annual compliance updates, tax-assessment appeals, or B2B services)"
+            }
+          ]
+        },
+        {
           "id": "telegram_channel_signal_scraping",
           "track_id": "track_1",
           "name": "Telegram Channel & Deal-Room Signal Scraping",
@@ -1918,6 +2030,16 @@
         }
       ],
       "platform_risks": [
+        {
+          "failure_mode": "USPS 39 U.S.C. § 3001(h)-(i) mail-stop order, State AG UDAP enforcement, or payment-processor freeze",
+          "trigger": "Styling mailers as fake government penalty notices, invoices, or charging $89-$195 solely for a $3 public deed copy without statutory disclaimers",
+          "impact": "Civil restitution penalties, merchant account termination, and 30%+ chargeback rates",
+          "detection_metric": "Refund/chargeback ratio >1% and customer support inquiries mistaking the mailer for a government agency",
+          "fallback": "Use unambiguous private commercial branding, never mimic government seals or citation numbers, and sell genuine value-add subscriptions (annual compliance updates, tax-assessment appeals, or B2B services)",
+          "play_id": "public_filing_trigger_mail_arbitrage",
+          "play_name": "New-LLC & Recorded-Deed Trigger-Mail Arbitrage",
+          "track_id": "track_1"
+        },
         {
           "failure_mode": "MTProto session ban (UserDeactivatedBanError) or FloodWaitError throttling",
           "trigger": "Aggressive GetParticipantsRequest calls on hidden member lists or high-frequency polling from VoIP virtual SIMs",
@@ -2798,10 +2920,56 @@
         "Check loan-broker licensing, fee disclosures, fair-lending and data-security duties.",
         "Securities placements may require separate broker-dealer registration."
       ],
-      "track_ids": [],
-      "track_labels": [],
-      "plays": [],
-      "platform_risks": [],
+      "track_ids": [
+        "track_1"
+      ],
+      "track_labels": [
+        "Asymmetric & Data-Arbitrage Plays"
+      ],
+      "plays": [
+        {
+          "id": "public_filing_trigger_mail_arbitrage",
+          "track_id": "track_1",
+          "name": "New-LLC & Recorded-Deed Trigger-Mail Arbitrage",
+          "mechanism": "Ingest daily Secretary of State new-LLC filings and County Recorder new-deed/mortgage recordings to trigger programmatic direct mail via API—replacing illegal government-lookalike poster/deed invoices (which violate 39 U.S.C. § 3001 and state deed-solicitation laws) with high-LTV recurring workplace compliance subscriptions, property-tax appeal contingency offers, and exclusive new-mover/B2B lead monetization.",
+          "inputs": [
+            "Daily Secretary of State new-entity (LLC/Corp) bulk feeds",
+            "County Recorder grant/warranty deed & mortgage recording dockets",
+            "Programmatic print-and-mail API (Lob / PostGrid) + QR intake bridge"
+          ],
+          "workflow": [
+            "Pull daily new-LLC formations (filtering for employer/commercial NAICS or multi-member filings) and newly recorded residential deeds with purchase price and loan metadata",
+            "Dispatch transparent, non-governmental trigger mailers within 24–48 hours of filing with personalized QR codes pre-populating entity or parcel data",
+            "Monetize new LLCs via recurring annual labor-poster/registered-agent compliance memberships and B2B partner referrals; monetize new deeds via contingency property-tax appeal filings or high-ticket homeowner lead sales"
+          ],
+          "metrics": [
+            "Filing-to-mailbox latency (hours)",
+            "QR scan & intake conversion % per 1,000 mailers",
+            "Annualized LTV / net revenue per mailed piece"
+          ],
+          "platform_risks": [
+            {
+              "failure_mode": "USPS 39 U.S.C. § 3001(h)-(i) mail-stop order, State AG UDAP enforcement, or payment-processor freeze",
+              "trigger": "Styling mailers as fake government penalty notices, invoices, or charging $89-$195 solely for a $3 public deed copy without statutory disclaimers",
+              "impact": "Civil restitution penalties, merchant account termination, and 30%+ chargeback rates",
+              "detection_metric": "Refund/chargeback ratio >1% and customer support inquiries mistaking the mailer for a government agency",
+              "fallback": "Use unambiguous private commercial branding, never mimic government seals or citation numbers, and sell genuine value-add subscriptions (annual compliance updates, tax-assessment appeals, or B2B services)"
+            }
+          ]
+        }
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "USPS 39 U.S.C. § 3001(h)-(i) mail-stop order, State AG UDAP enforcement, or payment-processor freeze",
+          "trigger": "Styling mailers as fake government penalty notices, invoices, or charging $89-$195 solely for a $3 public deed copy without statutory disclaimers",
+          "impact": "Civil restitution penalties, merchant account termination, and 30%+ chargeback rates",
+          "detection_metric": "Refund/chargeback ratio >1% and customer support inquiries mistaking the mailer for a government agency",
+          "fallback": "Use unambiguous private commercial branding, never mimic government seals or citation numbers, and sell genuine value-add subscriptions (annual compliance updates, tax-assessment appeals, or B2B services)",
+          "play_id": "public_filing_trigger_mail_arbitrage",
+          "play_name": "New-LLC & Recorded-Deed Trigger-Mail Arbitrage",
+          "track_id": "track_1"
+        }
+      ],
       "rank": 14,
       "min_expert_youtube_links": 150,
       "target_expert_youtube_links": "150-200+",
@@ -3090,10 +3258,96 @@
       "regulatory_notes": [
         "Real estate licensing, fiduciary duties and court-sale approvals may apply."
       ],
-      "track_ids": [],
-      "track_labels": [],
-      "plays": [],
-      "platform_risks": [],
+      "track_ids": [
+        "track_1"
+      ],
+      "track_labels": [
+        "Asymmetric & Data-Arbitrage Plays"
+      ],
+      "plays": [
+        {
+          "id": "public_record_api_intelligence",
+          "track_id": "track_1",
+          "name": "Public-Record & API Intelligence",
+          "mechanism": "Ingest fragmented county dockets, probate registries, unclaimed property ledgers, and public APIs to surface uncontested claims or high-intent B2B triggers before manual competitors.",
+          "inputs": [
+            "Court & probate dockets",
+            "State controller ledgers",
+            "Public licensing & entity APIs"
+          ],
+          "workflow": [
+            "Poll and normalize county/state record releases on an automated cadence",
+            "Cross-match entity/kinship/lien records and filter by minimum net fee threshold",
+            "Route verified dossiers into compliant outreach and claim execution"
+          ],
+          "metrics": [
+            "Cost per verified lead",
+            "Docket-to-contact latency (hours)",
+            "Net recovery / conversion rate"
+          ],
+          "platform_risks": [
+            {
+              "failure_mode": "Portal rate-limiting or CAPTCHA gating",
+              "trigger": "High-frequency automated polling against county or agency web portals",
+              "impact": "Delayed lead ingestion or temporary IP block on target registry",
+              "detection_metric": "HTTP 429/403 rate and daily record ingestion delta",
+              "fallback": "Switch to scheduled bulk FOIA/public-record exports, official data feeds, and low-frequency cached queues"
+            }
+          ]
+        },
+        {
+          "id": "public_filing_trigger_mail_arbitrage",
+          "track_id": "track_1",
+          "name": "New-LLC & Recorded-Deed Trigger-Mail Arbitrage",
+          "mechanism": "Ingest daily Secretary of State new-LLC filings and County Recorder new-deed/mortgage recordings to trigger programmatic direct mail via API—replacing illegal government-lookalike poster/deed invoices (which violate 39 U.S.C. § 3001 and state deed-solicitation laws) with high-LTV recurring workplace compliance subscriptions, property-tax appeal contingency offers, and exclusive new-mover/B2B lead monetization.",
+          "inputs": [
+            "Daily Secretary of State new-entity (LLC/Corp) bulk feeds",
+            "County Recorder grant/warranty deed & mortgage recording dockets",
+            "Programmatic print-and-mail API (Lob / PostGrid) + QR intake bridge"
+          ],
+          "workflow": [
+            "Pull daily new-LLC formations (filtering for employer/commercial NAICS or multi-member filings) and newly recorded residential deeds with purchase price and loan metadata",
+            "Dispatch transparent, non-governmental trigger mailers within 24–48 hours of filing with personalized QR codes pre-populating entity or parcel data",
+            "Monetize new LLCs via recurring annual labor-poster/registered-agent compliance memberships and B2B partner referrals; monetize new deeds via contingency property-tax appeal filings or high-ticket homeowner lead sales"
+          ],
+          "metrics": [
+            "Filing-to-mailbox latency (hours)",
+            "QR scan & intake conversion % per 1,000 mailers",
+            "Annualized LTV / net revenue per mailed piece"
+          ],
+          "platform_risks": [
+            {
+              "failure_mode": "USPS 39 U.S.C. § 3001(h)-(i) mail-stop order, State AG UDAP enforcement, or payment-processor freeze",
+              "trigger": "Styling mailers as fake government penalty notices, invoices, or charging $89-$195 solely for a $3 public deed copy without statutory disclaimers",
+              "impact": "Civil restitution penalties, merchant account termination, and 30%+ chargeback rates",
+              "detection_metric": "Refund/chargeback ratio >1% and customer support inquiries mistaking the mailer for a government agency",
+              "fallback": "Use unambiguous private commercial branding, never mimic government seals or citation numbers, and sell genuine value-add subscriptions (annual compliance updates, tax-assessment appeals, or B2B services)"
+            }
+          ]
+        }
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Portal rate-limiting or CAPTCHA gating",
+          "trigger": "High-frequency automated polling against county or agency web portals",
+          "impact": "Delayed lead ingestion or temporary IP block on target registry",
+          "detection_metric": "HTTP 429/403 rate and daily record ingestion delta",
+          "fallback": "Switch to scheduled bulk FOIA/public-record exports, official data feeds, and low-frequency cached queues",
+          "play_id": "public_record_api_intelligence",
+          "play_name": "Public-Record & API Intelligence",
+          "track_id": "track_1"
+        },
+        {
+          "failure_mode": "USPS 39 U.S.C. § 3001(h)-(i) mail-stop order, State AG UDAP enforcement, or payment-processor freeze",
+          "trigger": "Styling mailers as fake government penalty notices, invoices, or charging $89-$195 solely for a $3 public deed copy without statutory disclaimers",
+          "impact": "Civil restitution penalties, merchant account termination, and 30%+ chargeback rates",
+          "detection_metric": "Refund/chargeback ratio >1% and customer support inquiries mistaking the mailer for a government agency",
+          "fallback": "Use unambiguous private commercial branding, never mimic government seals or citation numbers, and sell genuine value-add subscriptions (annual compliance updates, tax-assessment appeals, or B2B services)",
+          "play_id": "public_filing_trigger_mail_arbitrage",
+          "play_name": "New-LLC & Recorded-Deed Trigger-Mail Arbitrage",
+          "track_id": "track_1"
+        }
+      ],
       "rank": 16,
       "min_expert_youtube_links": 150,
       "target_expert_youtube_links": "150-200+",
@@ -4966,6 +5220,36 @@
           "impact": "Zero ranking lift (phantom impressions purged from Search Console) or algorithmic ranking demotion",
           "detection_metric": "Divergence between Search Console reported clicks and verified human tool interactions",
           "fallback": "Never use synthetic proxy click-bots; drive 100% real human Chrome searchers via Branded Search Seeding and optimize title/snippet hooks for organic CTR"
+        }
+      ]
+    },
+    "public_filing_trigger_mail_arbitrage": {
+      "id": "public_filing_trigger_mail_arbitrage",
+      "track_id": "track_1",
+      "name": "New-LLC & Recorded-Deed Trigger-Mail Arbitrage",
+      "mechanism": "Ingest daily Secretary of State new-LLC filings and County Recorder new-deed/mortgage recordings to trigger programmatic direct mail via API—replacing illegal government-lookalike poster/deed invoices (which violate 39 U.S.C. § 3001 and state deed-solicitation laws) with high-LTV recurring workplace compliance subscriptions, property-tax appeal contingency offers, and exclusive new-mover/B2B lead monetization.",
+      "inputs": [
+        "Daily Secretary of State new-entity (LLC/Corp) bulk feeds",
+        "County Recorder grant/warranty deed & mortgage recording dockets",
+        "Programmatic print-and-mail API (Lob / PostGrid) + QR intake bridge"
+      ],
+      "workflow": [
+        "Pull daily new-LLC formations (filtering for employer/commercial NAICS or multi-member filings) and newly recorded residential deeds with purchase price and loan metadata",
+        "Dispatch transparent, non-governmental trigger mailers within 24–48 hours of filing with personalized QR codes pre-populating entity or parcel data",
+        "Monetize new LLCs via recurring annual labor-poster/registered-agent compliance memberships and B2B partner referrals; monetize new deeds via contingency property-tax appeal filings or high-ticket homeowner lead sales"
+      ],
+      "metrics": [
+        "Filing-to-mailbox latency (hours)",
+        "QR scan & intake conversion % per 1,000 mailers",
+        "Annualized LTV / net revenue per mailed piece"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "USPS 39 U.S.C. § 3001(h)-(i) mail-stop order, State AG UDAP enforcement, or payment-processor freeze",
+          "trigger": "Styling mailers as fake government penalty notices, invoices, or charging $89-$195 solely for a $3 public deed copy without statutory disclaimers",
+          "impact": "Civil restitution penalties, merchant account termination, and 30%+ chargeback rates",
+          "detection_metric": "Refund/chargeback ratio >1% and customer support inquiries mistaking the mailer for a government agency",
+          "fallback": "Use unambiguous private commercial branding, never mimic government seals or citation numbers, and sell genuine value-add subscriptions (annual compliance updates, tax-assessment appeals, or B2B services)"
         }
       ]
     }
