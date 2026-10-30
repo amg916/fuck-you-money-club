@@ -40,6 +40,10 @@ from . import (
     BRAND_TAGLINE,
     RATING_SYSTEM_NAME,
     FLAGSHIP_VOLUME_ID,
+    MIN_EXPERT_YOUTUBE_LINKS_PER_BOOK,
+    TARGET_EXPERT_YOUTUBE_LINKS_PER_BOOK,
+    MIN_EXPERT_YOUTUBE_LINKS_PER_CHAPTER,
+    count_manuscript_youtube_links,
     WORKFLOW_STAGES,
 )
 from .scorecard_engine import (
@@ -963,6 +967,13 @@ def build_default_brand_system() -> dict:
             },
         },
         "workflow_stages": _build_workflow_stages(),
+        "expert_youtube_links_policy": {
+            "min_links_per_book": MIN_EXPERT_YOUTUBE_LINKS_PER_BOOK,
+            "target_links_per_book": TARGET_EXPERT_YOUTUBE_LINKS_PER_BOOK,
+            "min_links_per_chapter": MIN_EXPERT_YOUTUBE_LINKS_PER_CHAPTER,
+            "require_timestamp_deep_links": True,
+            "require_across_all_editions": True,
+        },
         "editorial_notes": "",
     }
 
@@ -1594,6 +1605,10 @@ def _merge_manuscript(fresh: dict, existing: dict | None, force: bool) -> dict:
     result["chapters"] = merged_chapters
     result["chapter_count"] = len(merged_chapters)
     result["total_word_count"] = compute_manuscript_word_count(merged_chapters)
+    result["min_expert_youtube_links_per_book"] = MIN_EXPERT_YOUTUBE_LINKS_PER_BOOK
+    result["target_expert_youtube_links_per_book"] = TARGET_EXPERT_YOUTUBE_LINKS_PER_BOOK
+    result["min_expert_youtube_links_per_chapter"] = MIN_EXPERT_YOUTUBE_LINKS_PER_CHAPTER
+    result["expert_youtube_link_count"] = count_manuscript_youtube_links(merged_chapters)
     result.setdefault("volume_id", FLAGSHIP_VOLUME_ID)
     result["updated_at"] = _now_iso()
     return result
@@ -1601,6 +1616,7 @@ def _merge_manuscript(fresh: dict, existing: dict | None, force: bool) -> dict:
 
 def _build_volume_metadata(scorecard: dict, manuscript: dict) -> dict:
     chapters = _as_list(manuscript.get("chapters", manuscript), "chapters")
+    yt_count = count_manuscript_youtube_links(chapters)
     return {
         "volume_id": FLAGSHIP_VOLUME_ID,
         "volume_slug": VOLUME_SLUG,
@@ -1620,6 +1636,10 @@ def _build_volume_metadata(scorecard: dict, manuscript: dict) -> dict:
             )
         ),
         "chapter_count": len(chapters),
+        "expert_youtube_link_count": yt_count,
+        "min_expert_youtube_links_required": MIN_EXPERT_YOUTUBE_LINKS_PER_BOOK,
+        "target_expert_youtube_links": TARGET_EXPERT_YOUTUBE_LINKS_PER_BOOK,
+        "min_expert_youtube_links_per_chapter": MIN_EXPERT_YOUTUBE_LINKS_PER_CHAPTER,
         "rating_system": RATING_SYSTEM_NAME,
         "composite_score": resolve_score_value(scorecard, default=None),
         "formats": [
@@ -2108,9 +2128,19 @@ def update_chapter_content(root_dir: Path, chapter_number: int | str, patch=None
         manuscript["chapters"] = chapters
         manuscript["chapter_count"] = len(chapters)
         manuscript["total_word_count"] = compute_manuscript_word_count(chapters)
+        manuscript["expert_youtube_link_count"] = count_manuscript_youtube_links(chapters)
         manuscript["updated_at"] = _now_iso()
         markdown_path = volume / "chapters" / _chapter_filename(target_number)
-        _commit_store_transaction(root, [(manuscript_path, manuscript)],
+        json_writes = [(manuscript_path, manuscript)]
+        metadata_path = volume / "metadata.json"
+        if "source_citations" in applied and metadata_path.is_file():
+            metadata = _read_json(metadata_path, {}, strict=True)
+            if isinstance(metadata, dict):
+                metadata = dict(metadata)
+                metadata["expert_youtube_link_count"] = manuscript["expert_youtube_link_count"]
+                metadata["updated_at"] = manuscript["updated_at"]
+                json_writes.append((metadata_path, metadata))
+        _commit_store_transaction(root, json_writes,
                                   [(markdown_path, rendered_md)])
 
         return {
@@ -2121,6 +2151,7 @@ def update_chapter_content(root_dir: Path, chapter_number: int | str, patch=None
             "manuscript_path": str(manuscript_path),
             "markdown_path": str(markdown_path),
             "chapter": updated,
+            "expert_youtube_link_count": manuscript["expert_youtube_link_count"],
             "updated_at": manuscript["updated_at"],
         }
 

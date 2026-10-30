@@ -440,8 +440,16 @@ _CANDIDATE_SPECS.extend([
 
 def build_29_candidate_pipeline() -> list[dict]:
     """Return all 29 normalized scorecards ranked by score, then candidate number."""
+    from . import (
+        MIN_EXPERT_YOUTUBE_LINKS_PER_BOOK,
+        TARGET_EXPERT_YOUTUBE_LINKS_PER_BOOK,
+        MIN_EXPERT_YOUTUBE_LINKS_PER_CHAPTER,
+    )
     pipeline = [compute_scorecard(spec) for spec in _CANDIDATE_SPECS]
     pipeline.sort(key=lambda card: (-card["total_score"], card["candidate_number"]))
     for rank, card in enumerate(pipeline, start=1):
         card["rank"] = rank
+        card["min_expert_youtube_links"] = MIN_EXPERT_YOUTUBE_LINKS_PER_BOOK
+        card["target_expert_youtube_links"] = TARGET_EXPERT_YOUTUBE_LINKS_PER_BOOK
+        card["min_expert_youtube_links_per_chapter"] = MIN_EXPERT_YOUTUBE_LINKS_PER_CHAPTER
     return pipeline

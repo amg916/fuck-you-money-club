@@ -1867,6 +1867,139 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
                 bad_svg = f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10">{smil_frag}</svg>'
                 self.assertFalse(validate_svg_asset(bad_svg, 'smil_bad')['passed'])
 
+    def test_26_expert_youtube_links_floor_150_200(self) -> None:
+        from copy import deepcopy
+        import re
+        from src.fymc import (
+            MIN_EXPERT_YOUTUBE_LINKS_PER_BOOK,
+            MIN_EXPERT_YOUTUBE_LINKS_PER_CHAPTER,
+            TARGET_EXPERT_YOUTUBE_LINKS_PER_BOOK,
+        )
+        from src.fymc.volume_001_manuscript import build_volume_001_manuscript
+        from src.fymc.qa_validator import validate_manuscript_youtube_links
+
+        self.assertEqual(MIN_EXPERT_YOUTUBE_LINKS_PER_BOOK, 150)
+        self.assertEqual(MIN_EXPERT_YOUTUBE_LINKS_PER_CHAPTER, 12)
+        self.assertEqual(TARGET_EXPERT_YOUTUBE_LINKS_PER_BOOK, "150-200+")
+
+        ms = build_volume_001_manuscript()
+        self.assertGreaterEqual(ms["expert_youtube_link_count"], 150)
+        self.assertEqual(ms["expert_youtube_link_count"], 180)
+        channels = set()
+        for ch in ms["chapters"]:
+            cites = ch["source_citations"]
+            self.assertGreaterEqual(len(cites), 12)
+            self.assertEqual(len(cites), 15)
+            for c in cites:
+                self.assertIn("https://www.youtube.com/watch?v=", c["url"])
+                self.assertIn("&t=", c["url"])
+                if c.get("channel"):
+                    channels.add(c["channel"])
+        self.assertEqual(len(channels), 59)
+
+        report = validate_manuscript_youtube_links(ms)
+        self.assertTrue(report["passed"], report)
+        self.assertEqual(report["unique_links"], 180)
+
+        # Boundary check: 11 links in chapter 1 fails per-chapter floor
+        under_chapter = deepcopy(ms)
+        under_chapter["chapters"][0]["source_citations"] = under_chapter["chapters"][0]["source_citations"][:11]
+        rep_under_ch = validate_manuscript_youtube_links(under_chapter)
+        self.assertFalse(rep_under_ch["passed"])
+        self.assertTrue(any("Chapter Q1" in issue for issue in rep_under_ch["issues"]))
+
+        # Boundary check: 12 per chapter * 12 = 144 (< 150 per-book floor) fails per-book floor
+        under_book = deepcopy(ms)
+        for ch in under_book["chapters"]:
+            ch["source_citations"] = ch["source_citations"][:12]
+        rep_under_book = validate_manuscript_youtube_links(under_book)
+        self.assertFalse(rep_under_book["passed"])
+        self.assertEqual(rep_under_book["unique_links"], 144)
+        self.assertTrue(any("below minimum floor of 150" in issue for issue in rep_under_book["issues"]))
+
+        # Untimestamped URLs, FTP URLs, invalid ports, and non-YouTube URLs are rejected even if timestamp_seconds metadata is present
+        from src.fymc import parse_expert_youtube_deep_link
+        for bad_u in (
+            "https://www.youtube.com/watch?v=1AMk1-SB5ic",
+            "ftp://www.youtube.com/watch?v=1AMk1-SB5ic&t=10s",
+            "https://www.youtube.com:invalid/watch?v=1AMk1-SB5ic&t=10s",
+            "https://www.youtube.com:99999/watch?v=1AMk1-SB5ic&t=10s",
+            "https://www.youtube.com:443/watch?v=1AMk1-SB5ic&t=10s",
+        ):
+            self.assertIsNone(parse_expert_youtube_deep_link(bad_u), bad_u)
+        bad_urls_ms = deepcopy(ms)
+        for idx, ch in enumerate(bad_urls_ms["chapters"]):
+            for c_idx, c in enumerate(ch["source_citations"]):
+                c["url"] = (
+                    "https://www.youtube.com/watch?v=1AMk1-SB5ic"
+                    if c_idx % 3 == 0
+                    else (
+                        "https://www.youtube.com:invalid/watch?v=1AMk1-SB5ic&t=10s"
+                        if c_idx % 3 == 1
+                        else "https://www.youtube.com:99999/watch?v=1AMk1-SB5ic&t=10s"
+                    )
+                )
+        rep_bad_urls = validate_manuscript_youtube_links(bad_urls_ms)
+        self.assertFalse(rep_bad_urls["passed"])
+        self.assertEqual(rep_bad_urls["unique_links"], 0)
+
+        # Updating chapter source_citations updates both manuscript and metadata counts consistently and ignores non-YouTube citations
+        non_yt = [{"title": f"Non-YT {i}", "url": f"https://example.com/source-{i}", "text": "Note"} for i in range(20)]
+        upd_res = self.store.update_chapter_content(self.root, 1, {"source_citations": non_yt})
+        self.assertEqual(upd_res["expert_youtube_link_count"], 165)
+        st_after = self.store.load_publishing_state(self.root, verify_manifest=True)
+        self.assertEqual(st_after["volume"]["manuscript"]["expert_youtube_link_count"], 165)
+        self.assertEqual(st_after["volume"]["metadata"]["expert_youtube_link_count"], 165)
+
+        # Restore full 180 citations and verify clickable links across exported PDF and EPUB editions
+        self.store.update_chapter_content(self.root, 1, {"source_citations": ms["chapters"][0]["source_citations"]})
+        st_full = self.store.load_publishing_state(self.root, verify_manifest=True)
+        self.assertEqual(st_full["volume"]["manuscript"]["expert_youtube_link_count"], 180)
+        self.assertEqual(st_full["volume"]["metadata"]["expert_youtube_link_count"], 180)
+        from src.fymc.exporters import render_fymc_pdf_bytes, render_fymc_epub_bytes, _wrap_with_links
+        from src.fymc.qa_validator import validate_pdf_bytes, validate_epub_bytes
+        for mode in ("digital_pdf", "print_6x9_pdf", "workbook_pdf"):
+            raw_pdf = render_fymc_pdf_bytes(st_full, "concept_b", mode)
+            pdf_rep = validate_pdf_bytes(raw_pdf, mode)
+            self.assertTrue(pdf_rep["passed"], pdf_rep)
+            self.assertEqual(pdf_rep["youtube_link_count"], 180)
+            # Stripping /Annots from pages drops reachable clickable links to 0
+            stripped_pdf = re.sub(rb'/Annots\s*\[[^\]]*\]', lambda m: b' ' * len(m.group(0)), raw_pdf)
+            self.assertEqual(validate_pdf_bytes(stripped_pdf, mode)["youtube_link_count"], 0)
+        epub_rep = validate_epub_bytes(render_fymc_epub_bytes(st_full, "concept_b"))
+        self.assertTrue(epub_rep["passed"], epub_rep)
+        self.assertEqual(epub_rep["youtube_link_count"], 180)
+
+        # Wrapped long URL preserves full timestamped target on every fragment; two URLs on one line get distinct x-bounds
+        long_url = "https://www.youtube.com/watch?v=1AMk1-SB5ic&list=" + ("A" * 90) + "&t=42s"
+        wrapped_rows = _wrap_with_links(long_url, "Helvetica", 9, 180)
+        self.assertGreater(len(wrapped_rows), 1)
+        for frag_line, frag_links in wrapped_rows:
+            self.assertEqual(len(frag_links), 1)
+            self.assertEqual(frag_links[0][2], long_url)
+        two_urls = "https://www.youtube.com/watch?v=1AMk1-SB5ic&t=1s https://www.youtube.com/watch?v=1N1Z99kUvRw&t=303s"
+        two_rows = _wrap_with_links(two_urls, "Helvetica", 8, 500)
+        self.assertEqual(len(two_rows), 1)
+        self.assertEqual(len(two_rows[0][1]), 2)
+        self.assertNotEqual(two_rows[0][1][0][:2], two_rows[0][1][1][:2])
+
+        # Uppercase HTTPS:// scheme still produces clickable links in _wrap_with_links and _markup
+        from src.fymc.exporters import _markup, _PDF
+        upper_url = "HTTPS://www.youtube.com/watch?v=1AMk1-SB5ic&t=12s"
+        upper_rows = _wrap_with_links(upper_url, "Helvetica", 9, 400)
+        self.assertEqual(len(upper_rows[0][1]), 1)
+        self.assertEqual(upper_rows[0][1][0][2], upper_url)
+        self.assertIn('<a href="HTTPS://www.youtube.com/watch?v=1AMk1-SB5ic&amp;t=12s">', _markup(upper_url))
+
+        # Alternating print margins update text_x after page break inside paragraph()
+        pdf_doc = _PDF("concept_b", "print_6x9_pdf")
+        pdf_doc.new("Test")
+        pdf_doc.y = 80  # Force mid-paragraph page break between line 1 and line 2
+        pdf_doc.paragraph("LineOne\n" + upper_url, size=10, font=1, boxed=False)
+        self.assertEqual(len(pdf_doc.pages), 2)
+        self.assertEqual(len(pdf_doc.annots[1]), 1)
+        self.assertAlmostEqual(pdf_doc.annots[1][0][0], pdf_doc.left, places=2)
+
 
 if __name__ == "__main__":
     unittest.main()

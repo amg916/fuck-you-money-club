@@ -100,7 +100,10 @@
       "regulatory_notes": [
         "Verify content rights, consumer refund rules, digital sales taxes and truthful marketing."
       ],
-      "rank": 1
+      "rank": 1,
+      "min_expert_youtube_links": 150,
+      "target_expert_youtube_links": "150-200+",
+      "min_expert_youtube_links_per_chapter": 12
     },
     {
       "candidate_number": 22,
@@ -198,7 +201,10 @@
         "Review data privacy, model and content licenses, subscription terms and sector obligations.",
         "Validate consequential outputs and avoid unsupported accuracy claims."
       ],
-      "rank": 2
+      "rank": 2,
+      "min_expert_youtube_links": 150,
+      "target_expert_youtube_links": "150-200+",
+      "min_expert_youtube_links_per_chapter": 12
     },
     {
       "candidate_number": 1,
@@ -296,7 +302,10 @@
         "Check heir-finder fee restrictions and solicitation rules by jurisdiction.",
         "Do not provide legal representation without appropriate authorization."
       ],
-      "rank": 3
+      "rank": 3,
+      "min_expert_youtube_links": 150,
+      "target_expert_youtube_links": "150-200+",
+      "min_expert_youtube_links_per_chapter": 12
     },
     {
       "candidate_number": 24,
@@ -394,7 +403,10 @@
         "Clearly disclose affiliate relationships and substantiate advertising and earnings claims.",
         "Check sector-specific restrictions on paid referrals."
       ],
-      "rank": 4
+      "rank": 4,
+      "min_expert_youtube_links": 150,
+      "target_expert_youtube_links": "150-200+",
+      "min_expert_youtube_links_per_chapter": 12
     },
     {
       "candidate_number": 2,
@@ -492,7 +504,10 @@
         "Surplus recovery fee caps, assignment validity and waiting periods vary.",
         "Court filings may require licensed counsel."
       ],
-      "rank": 5
+      "rank": 5,
+      "min_expert_youtube_links": 150,
+      "target_expert_youtube_links": "150-200+",
+      "min_expert_youtube_links_per_chapter": 12
     },
     {
       "candidate_number": 29,
@@ -590,7 +605,10 @@
         "Obtain authorization for client-system access and define data-processing and IP terms.",
         "Maintain human review for consequential decisions and substantiate performance claims."
       ],
-      "rank": 6
+      "rank": 6,
+      "min_expert_youtube_links": 150,
+      "target_expert_youtube_links": "150-200+",
+      "min_expert_youtube_links_per_chapter": 12
     },
     {
       "candidate_number": 5,
@@ -687,7 +705,10 @@
         "Check finder registration, fee caps, waiting periods and privacy obligations.",
         "Disclose the owner's ability to claim directly without a recovery service."
       ],
-      "rank": 7
+      "rank": 7,
+      "min_expert_youtube_links": 150,
+      "target_expert_youtube_links": "150-200+",
+      "min_expert_youtube_links_per_chapter": 12
     },
     {
       "candidate_number": 18,
@@ -784,7 +805,10 @@
       "regulatory_notes": [
         "Observe applicable privacy, email marketing, telemarketing and opt-out requirements."
       ],
-      "rank": 8
+      "rank": 8,
+      "min_expert_youtube_links": 150,
+      "target_expert_youtube_links": "150-200+",
+      "min_expert_youtube_links_per_chapter": 12
     },
     {
       "candidate_number": 21,
@@ -881,7 +905,10 @@
       "regulatory_notes": [
         "Check privacy, outreach consent and sector-specific referral or contingent-fee restrictions."
       ],
-      "rank": 9
+      "rank": 9,
+      "min_expert_youtube_links": 150,
+      "target_expert_youtube_links": "150-200+",
+      "min_expert_youtube_links_per_chapter": 12
     },
     {
       "candidate_number": 25,
@@ -978,7 +1005,10 @@
       "regulatory_notes": [
         "Respect copyright, advertising disclosures, privacy requirements and search platform policies."
       ],
-      "rank": 10
+      "rank": 10,
+      "min_expert_youtube_links": 150,
+      "target_expert_youtube_links": "150-200+",
+      "min_expert_youtube_links_per_chapter": 12
     },
     {
       "candidate_number": 26,
@@ -1075,7 +1105,10 @@
       "regulatory_notes": [
         "Confirm asset-specific brokerage licenses, agency disclosures and client-fund handling rules."
       ],
-      "rank": 11
+      "rank": 11,
+      "min_expert_youtube_links": 150,
+      "target_expert_youtube_links": "150-200+",
+      "min_expert_youtube_links_per_chapter": 12
     },
     {
       "candidate_number": 11,
@@ -1171,7 +1204,10 @@
       "regulatory_notes": [
         "Check dealer licensing, lien releases, warranties and export controls."
       ],
-      "rank": 12
+      "rank": 12,
+      "min_expert_youtube_links": 150,
+      "target_expert_youtube_links": "150-200+",
+      "min_expert_youtube_links_per_chapter": 12
     },
     {
       "candidate_number": 19,
@@ -1268,7 +1304,10 @@
       "regulatory_notes": [
         "Verify chain of title, permitted uses, territorial rights and competition-law constraints."
       ],
-      "rank": 13
+      "rank": 13,
+      "min_expert_youtube_links": 150,
+      "target_expert_youtube_links": "150-200+",
+      "min_expert_youtube_links_per_chapter": 12
     },
     {
       "candidate_number": 20,
@@ -1366,7 +1405,10 @@
         "Check loan-broker licensing, fee disclosures, fair-lending and data-security duties.",
         "Securities placements may require separate broker-dealer registration."
       ],
-      "rank": 14
+      "rank": 14,
+      "min_expert_youtube_links": 150,
+      "target_expert_youtube_links": "150-200+",
+      "min_expert_youtube_links_per_chapter": 12
     },
     {
       "candidate_number": 8,
@@ -1462,7 +1504,10 @@
       "regulatory_notes": [
         "Check collection licensing, consumer-debt rules, exemptions and lawful data access."
       ],
-      "rank": 15
+      "rank": 15,
+      "min_expert_youtube_links": 150,
+      "target_expert_youtube_links": "150-200+",
+      "min_expert_youtube_links_per_chapter": 12
     },
     {
       "candidate_number": 9,
@@ -1558,7 +1603,10 @@
       "regulatory_notes": [
         "Real estate licensing, fiduciary duties and court-sale approvals may apply."
       ],
-      "rank": 16
+      "rank": 16,
+      "min_expert_youtube_links": 150,
+      "target_expert_youtube_links": "150-200+",
+      "min_expert_youtube_links_per_chapter": 12
     },
     {
       "candidate_number": 16,
@@ -1655,7 +1703,10 @@
       "regulatory_notes": [
         "Review trademark conflicts, domain dispute policies and anti-cybersquatting laws."
       ],
-      "rank": 17
+      "rank": 17,
+      "min_expert_youtube_links": 150,
+      "target_expert_youtube_links": "150-200+",
+      "min_expert_youtube_links_per_chapter": 12
     },
     {
       "candidate_number": 6,
@@ -1751,7 +1802,10 @@
       "regulatory_notes": [
         "Review zoning, title, disclosures and broker licensing when representing others."
       ],
-      "rank": 18
+      "rank": 18,
+      "min_expert_youtube_links": 150,
+      "target_expert_youtube_links": "150-200+",
+      "min_expert_youtube_links_per_chapter": 12
     },
     {
       "candidate_number": 23,
@@ -1848,7 +1902,10 @@
       "regulatory_notes": [
         "Verify reseller authorization, license terms, procurement requirements and data-processing duties."
       ],
-      "rank": 19
+      "rank": 19,
+      "min_expert_youtube_links": 150,
+      "target_expert_youtube_links": "150-200+",
+      "min_expert_youtube_links_per_chapter": 12
     },
     {
       "candidate_number": 4,
@@ -1946,7 +2003,10 @@
         "Review contingent-fee restrictions, procurement integrity and anti-kickback rules.",
         "Pass-through restrictions and set-aside rules can prohibit proposed structures."
       ],
-      "rank": 20
+      "rank": 20,
+      "min_expert_youtube_links": 150,
+      "target_expert_youtube_links": "150-200+",
+      "min_expert_youtube_links_per_chapter": 12
     },
     {
       "candidate_number": 28,
@@ -2043,7 +2103,10 @@
       "regulatory_notes": [
         "Check product safety, import duties, sales taxes, privacy and consumer protection requirements."
       ],
-      "rank": 21
+      "rank": 21,
+      "min_expert_youtube_links": 150,
+      "target_expert_youtube_links": "150-200+",
+      "min_expert_youtube_links_per_chapter": 12
     },
     {
       "candidate_number": 14,
@@ -2140,7 +2203,10 @@
         "Check device-specific FDA obligations, servicing versus remanufacturing and state licensing.",
         "Sanitize stored patient data and verify decontamination procedures."
       ],
-      "rank": 22
+      "rank": 22,
+      "min_expert_youtube_links": 150,
+      "target_expert_youtube_links": "150-200+",
+      "min_expert_youtube_links_per_chapter": 12
     },
     {
       "candidate_number": 7,
@@ -2236,7 +2302,10 @@
       "regulatory_notes": [
         "Review severed mineral title, leases, tax obligations and securities rules if pooling funds."
       ],
-      "rank": 23
+      "rank": 23,
+      "min_expert_youtube_links": 150,
+      "target_expert_youtube_links": "150-200+",
+      "min_expert_youtube_links_per_chapter": 12
     },
     {
       "candidate_number": 3,
@@ -2332,7 +2401,10 @@
       "regulatory_notes": [
         "Auction eligibility, interest limits and foreclosure procedures are local."
       ],
-      "rank": 24
+      "rank": 24,
+      "min_expert_youtube_links": 150,
+      "target_expert_youtube_links": "150-200+",
+      "min_expert_youtube_links_per_chapter": 12
     },
     {
       "candidate_number": 12,
@@ -2430,7 +2502,10 @@
         "US property brokers generally need FMCSA authority and $75,000 bond or trust security.",
         "Verify current financial-responsibility and carrier-vetting requirements."
       ],
-      "rank": 25
+      "rank": 25,
+      "min_expert_youtube_links": 150,
+      "target_expert_youtube_links": "150-200+",
+      "min_expert_youtube_links_per_chapter": 12
     },
     {
       "candidate_number": 17,
@@ -2527,7 +2602,10 @@
       "regulatory_notes": [
         "Check auction eligibility, resale permits, title transfer and restricted-item rules."
       ],
-      "rank": 26
+      "rank": 26,
+      "min_expert_youtube_links": 150,
+      "target_expert_youtube_links": "150-200+",
+      "min_expert_youtube_links_per_chapter": 12
     },
     {
       "candidate_number": 13,
@@ -2623,7 +2701,10 @@
       "regulatory_notes": [
         "Review employment, tax, licenses, lender covenants and transaction disclosures."
       ],
-      "rank": 27
+      "rank": 27,
+      "min_expert_youtube_links": 150,
+      "target_expert_youtube_links": "150-200+",
+      "min_expert_youtube_links_per_chapter": 12
     },
     {
       "candidate_number": 10,
@@ -2720,7 +2801,10 @@
       "regulatory_notes": [
         "Observe wage laws, worker classification, chemical safety and insurance requirements."
       ],
-      "rank": 28
+      "rank": 28,
+      "min_expert_youtube_links": 150,
+      "target_expert_youtube_links": "150-200+",
+      "min_expert_youtube_links_per_chapter": 12
     },
     {
       "candidate_number": 15,
@@ -2818,8 +2902,11 @@
         "Check contractor and remediation licensing; public adjusting may require a separate license.",
         "Do not promise insurer coverage or waive deductibles unlawfully."
       ],
-      "rank": 29
+      "rank": 29,
+      "min_expert_youtube_links": 150,
+      "target_expert_youtube_links": "150-200+",
+      "min_expert_youtube_links_per_chapter": 12
     }
   ],
-  "generated_at": "2026-10-29T23:18:57Z"
+  "generated_at": "2026-10-30T04:15:31Z"
 }

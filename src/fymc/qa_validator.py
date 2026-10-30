@@ -7,6 +7,11 @@ import re
 import xml.etree.ElementTree as ET
 import zipfile
 
+from . import (
+    MIN_EXPERT_YOUTUBE_LINKS_PER_BOOK,
+    MIN_EXPERT_YOUTUBE_LINKS_PER_CHAPTER,
+    parse_expert_youtube_deep_link,
+)
 from .design_concepts import CONCEPTS, render_scorecard_svg
 from .diagrams_engine import render_all_diagrams_for_concept
 from .cover_and_mockups import render_all_concept_mockups
@@ -184,7 +189,39 @@ def validate_pdf_bytes(pdf_bytes: bytes, expected_mode: str = 'digital_pdf') -> 
                     raise ValueError(f'object {obj} offset mismatch')
         except (IndexError, ValueError) as exc:
             issues.append(f'Invalid cross-reference table: {exc}')
+    yt_uris = set()
+    obj_map = {
+        int(m.group(1)): m.group(2)
+        for m in re.finditer(rb'\b(\d+)\s+0\s+obj\s*(.*?)\s*endobj', pdf_bytes, re.S)
+    }
+    for page in pages:
+        annots_m = re.search(rb'/Annots\s*\[([^\]]*)\]', page)
+        if not annots_m:
+            continue
+        for ref_num in re.findall(rb'(\d+)\s+0\s+R\b', annots_m.group(1)):
+            annot_obj = obj_map.get(int(ref_num), b'')
+            if not (
+                re.search(rb'/Type\s*/Annot\b', annot_obj)
+                and re.search(rb'/Subtype\s*/Link\b', annot_obj)
+            ):
+                continue
+            rect_m = re.search(rb'/Rect\s*\[([^\]]+)\]', annot_obj)
+            if not rect_m:
+                continue
+            try:
+                rx1, ry1, rx2, ry2 = [float(v) for v in rect_m.group(1).split()]
+            except ValueError:
+                continue
+            if not (rx2 > rx1 and ry2 > ry1):
+                continue
+            uri_m = re.search(rb'/S\s*/URI\b[^>]*/URI\s*\(([^)]+)\)', annot_obj, re.S)
+            if not uri_m:
+                continue
+            parsed_yt = parse_expert_youtube_deep_link(uri_m.group(1).decode('latin-1', 'ignore'))
+            if parsed_yt is not None:
+                yt_uris.add(parsed_yt)
     return _result(issues, page_count=page_count, expected_mode=expected_mode,
+                   youtube_link_count=len(yt_uris),
                    validation_scope='Uncompressed PDF 1.4 preview structure; not a general PDF parser')
 
 
@@ -271,6 +308,7 @@ def validate_epub_bytes(epub_bytes: bytes) -> dict:
                 for name in names:
                     if name.startswith('OEBPS/') and name != 'OEBPS/content.opf' and name not in hrefs:
                         issues.append('Resource absent from manifest: ' + name)
+            yt_hrefs = set()
             for name, root in roots.items():
                 if not name.endswith(('.xhtml', '.ncx')):
                     continue
@@ -280,16 +318,99 @@ def validate_epub_bytes(epub_bytes: bytes) -> dict:
                         if target and not re.match(r'^(?:https?:|mailto:)', target):
                             if _resolve(name, target) not in names:
                                 issues.append(f'{name}: unresolved resource {target}')
+                        elif (
+                            attr == 'href'
+                            and target
+                            and name.endswith('.xhtml')
+                            and node.tag.rsplit('}', 1)[-1] == 'a'
+                            and ''.join(node.itertext()).strip()
+                        ):
+                            parsed_yt = parse_expert_youtube_deep_link(target)
+                            if parsed_yt is not None:
+                                yt_hrefs.add(parsed_yt)
     except (zipfile.BadZipFile, KeyError, ValueError, UnicodeError, RuntimeError, OSError) as exc:
         issues.append('EPUB validation failed: ' + str(exc))
+        yt_hrefs = set()
     return _result(issues, checked_xml_count=xml_count,
+                   youtube_link_count=len(yt_hrefs),
                    validation_scope='Structural checks only; external EPUBCheck and reader proofing still required')
+
+
+def validate_manuscript_youtube_links(
+    manuscript: dict,
+    min_per_book: int = MIN_EXPERT_YOUTUBE_LINKS_PER_BOOK,
+    min_per_chapter: int = MIN_EXPERT_YOUTUBE_LINKS_PER_CHAPTER,
+) -> dict:
+    """Validate that a book manuscript meets the expert YouTube deep-link floor."""
+    issues: list[str] = []
+    chapters = manuscript.get('chapters') if isinstance(manuscript, dict) else []
+    if not isinstance(chapters, list) or len(chapters) != 12:
+        issues.append(f'Expected 12 chapters for YouTube link floor check, got {len(chapters) if isinstance(chapters, list) else 0}')
+        return _result(
+            issues,
+            min_required_per_book=min_per_book,
+            min_required_per_chapter=min_per_chapter,
+            total_links=0,
+            unique_links=0,
+            per_chapter_counts={},
+        )
+
+    unique_keys: set[tuple[str, int]] = set()
+    total_valid_links = 0
+    per_chapter_counts: dict[str, int] = {}
+
+    for idx, ch in enumerate(chapters, start=1):
+        ch_num = ch.get('chapter_number', idx) if isinstance(ch, dict) else idx
+        cites = (ch.get('source_citations') or []) if isinstance(ch, dict) else []
+        if not isinstance(cites, list):
+            cites = []
+        ch_valid = 0
+        ch_seen: set[tuple[str, int]] = set()
+        for cite in cites:
+            if not isinstance(cite, dict):
+                continue
+            parsed = parse_expert_youtube_deep_link(cite.get('url'))
+            if parsed is None:
+                continue
+            vid, t_val = parsed
+            if cite.get('video_id') not in (None, '', vid):
+                continue
+            ts = cite.get('timestamp_seconds', cite.get('timestamp'))
+            if ts is not None and (isinstance(ts, bool) or not isinstance(ts, int) or ts != t_val):
+                continue
+            if parsed not in ch_seen:
+                ch_seen.add(parsed)
+                ch_valid += 1
+            unique_keys.add(parsed)
+            total_valid_links += 1
+        per_chapter_counts[f'Q{ch_num}'] = ch_valid
+        if ch_valid < min_per_chapter:
+            issues.append(
+                f'Chapter Q{ch_num}: has {ch_valid} expert YouTube deep links, below minimum {min_per_chapter}'
+            )
+
+    unique_count = len(unique_keys)
+    if unique_count < min_per_book:
+        issues.append(
+            f'Book total unique expert YouTube deep links is {unique_count}, below minimum floor of {min_per_book}'
+        )
+
+    return _result(
+        issues,
+        min_required_per_book=min_per_book,
+        min_required_per_chapter=min_per_chapter,
+        total_links=total_valid_links,
+        unique_links=unique_count,
+        per_chapter_counts=per_chapter_counts,
+    )
 
 
 def run_full_qa_suite(root_dir: Path, state: dict) -> dict:
     """Run in memory; do not overwrite previews while validating."""
     metadata, manuscript, workbook, diagrams, scorecard, approved = _unpack_state(state)
     issues, exports, svg_count, template_count = [], {}, 0, 0
+    yt_report = validate_manuscript_youtube_links(manuscript)
+    issues.extend(yt_report['issues'])
     concepts = ('concept_a', 'concept_b', 'concept_c')
     templates = list(INTERIOR_TEMPLATES) if isinstance(INTERIOR_TEMPLATES, dict) else [t.get('id', t.get('template_id')) if isinstance(t, dict) else t for t in INTERIOR_TEMPLATES]
     for concept_id in concepts:
@@ -325,6 +446,11 @@ def run_full_qa_suite(root_dir: Path, state: dict) -> dict:
         for mode in ('digital_pdf', 'print_6x9_pdf', 'workbook_pdf', 'epub'):
             try:
                 report = validate_epub_bytes(render_fymc_epub_bytes(state, concept_id)) if mode == 'epub' else validate_pdf_bytes(render_fymc_pdf_bytes(state, concept_id, mode), mode)
+                if report.get('youtube_link_count', 0) < MIN_EXPERT_YOUTUBE_LINKS_PER_BOOK:
+                    report['issues'].append(
+                        f'Exported clickable YouTube deep links ({report.get("youtube_link_count", 0)}) below minimum floor of {MIN_EXPERT_YOUTUBE_LINKS_PER_BOOK}'
+                    )
+                    report['passed'] = False
             except Exception as exc:
                 report = _result([f'{type(exc).__name__}: {exc}'])
             exports[concept_id][mode] = report
@@ -333,10 +459,16 @@ def run_full_qa_suite(root_dir: Path, state: dict) -> dict:
         issues.append(f'Expected 57 SVG checks, completed {svg_count}')
     if template_count != 42:
         issues.append(f'Expected 42 template renders, attempted {template_count}')
+    exports_yt_ok = all(
+        r.get('youtube_link_count', 0) >= MIN_EXPERT_YOUTUBE_LINKS_PER_BOOK
+        for modes in exports.values() for r in modes.values()
+    )
     gates = {'svg_count': svg_count == 57, 'template_count': template_count == 42,
              'exports_pass': all(r['passed'] for modes in exports.values() for r in modes.values()),
+             'youtube_links_floor': yt_report['passed'] and exports_yt_ok,
              'owner_design_approved': approved in concepts,
              'visual_proofing': 'not_performed', 'epubcheck': 'not_performed', 'press_preflight': 'not_performed'}
     return {'overall_pass': not issues, 'checked_svg_count': svg_count,
             'checked_template_renders': template_count, 'concept_exports': exports,
+            'youtube_links_report': yt_report,
             'gates': gates, 'issues': issues, 'scope': 'automated preview QA, not release authorization'}

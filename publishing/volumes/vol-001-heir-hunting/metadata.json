@@ -8,6 +8,10 @@
   "title": "HEIR HUNTING",
   "subtitle": "The Complete Playbook for Finding Missing Heirs, Researching Unclaimed Estates & Building a Probate Research Business",
   "chapter_count": 12,
+  "expert_youtube_link_count": 180,
+  "min_expert_youtube_links_required": 150,
+  "target_expert_youtube_links": "150-200+",
+  "min_expert_youtube_links_per_chapter": 12,
   "rating_system": "Money-to-Manpower Score",
   "composite_score": 87,
   "formats": [
@@ -19,5 +23,5 @@
   "publication_status": "staged_preview",
   "public_deploy_approved": false,
   "paid_sales_approved": false,
-  "updated_at": "2026-10-29T23:18:57Z"
+  "updated_at": "2026-10-30T04:15:31Z"
 }

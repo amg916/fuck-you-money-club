@@ -81,28 +81,54 @@ def _width(text, font, size):
                for c in _ascii(text) if 32 <= ord(c) <= 126) * size / 1000
 
 
-def _wrap(text, font, size, width):
+def _wrap_with_links(text, font, size, width):
     width = max(float(width), 1e-4)
-    lines = []
+    rows = []
     for paragraph in _ascii(text).splitlines() or ['']:
         line = ''
-        for word in paragraph.split():
+        line_links = []
+        for raw_word in paragraph.split():
+            word_urls = []
+            for m in re.finditer(r'https?://[^\s()<>]+', raw_word, re.IGNORECASE):
+                uri = m.group(0).rstrip('.,;]')
+                if uri:
+                    word_urls.append((m.start(), m.start() + len(uri), uri))
+            word = raw_word
+            offset = 0
             if line and _width(line + ' ' + word, font, size) > width:
-                lines.append(line)
-                line = ''
+                rows.append((line, line_links))
+                line, line_links = '', []
             while word and _width(word, font, size) > width:
                 cut = 1
                 while cut < len(word) and _width(word[:cut + 1], font, size) <= width:
                     cut += 1
                 if line:
-                    lines.append(line)
-                    line = ''
-                lines.append(word[:cut])
+                    rows.append((line, line_links))
+                    line, line_links = '', []
+                frag = word[:cut]
+                frag_links = []
+                for u_start, u_end, uri in word_urls:
+                    ov_s = max(offset, u_start)
+                    ov_e = min(offset + cut, u_end)
+                    if ov_e > ov_s:
+                        frag_links.append((ov_s - offset, ov_e - offset, uri))
+                rows.append((frag, frag_links))
                 word = word[cut:]
+                offset += cut
             if word:
-                line = (line + ' ' + word).strip()
-        lines.append(line)
-    return lines
+                prefix_len = (len(line) + 1) if line else 0
+                line = (line + ' ' + word) if line else word
+                for u_start, u_end, uri in word_urls:
+                    ov_s = max(offset, u_start)
+                    ov_e = min(offset + len(word), u_end)
+                    if ov_e > ov_s:
+                        line_links.append((prefix_len + (ov_s - offset), prefix_len + (ov_e - offset), uri))
+        rows.append((line, line_links))
+    return rows
+
+
+def _wrap(text, font, size, width):
+    return [line for line, _ in _wrap_with_links(text, font, size, width)]
 
 
 def _aligned_row_cells(row, headers, keys=None):
@@ -134,10 +160,11 @@ class _PDF:
                       'concept_c': ('Times-Bold', 'Times-Roman', 'Helvetica')}[concept_id]
         self.accent = {'concept_a': '.18 .27 .22', 'concept_b': '.13 .25 .40',
                        'concept_c': '.40 .22 .17'}[concept_id]
-        self.pages, self.toc = [], []
+        self.pages, self.annots, self.toc = [], [], []
 
     def new(self, title=''):
         self.pages.append([])
+        self.annots.append([])
         self.left = (63 if len(self.pages) % 2 else 45) if self.print_mode else 54
         self.right = (45 if len(self.pages) % 2 else 63) if self.print_mode else 54
         self.usable = self.w - self.left - self.right
@@ -168,11 +195,18 @@ class _PDF:
             self.new(self.title)
 
     def paragraph(self, value, size=10.5, font=1, boxed=False):
-        for line in _wrap(_text(value), self.fonts[font], size, self.usable - (16 if boxed else 0)):
+        raw_text = _text(value)
+        for line, line_links in _wrap_with_links(raw_text, self.fonts[font], size, self.usable - (16 if boxed else 0)):
             self.need(size * 1.45)
+            text_x = self.left + (8 if boxed else 0)
             if boxed:
                 self.box(self.left, self.y - 4, self.usable, size * 1.45)
-            self.draw(line, self.left + (8 if boxed else 0), self.y, size, font)
+            self.draw(line, text_x, self.y, size, font)
+            if self.annots and line_links:
+                for s_idx, e_idx, uri in line_links:
+                    x1 = text_x + _width(line[:s_idx], self.fonts[font], size)
+                    x2 = max(x1 + 4.0, text_x + _width(line[:e_idx], self.fonts[font], size))
+                    self.annots[-1].append((x1, self.y - 2, x2, self.y + size, uri))
             self.y -= size * 1.45
         self.y -= 7
 
@@ -224,12 +258,24 @@ class _PDF:
         objects = [b'<< /Type /Catalog /Pages 2 0 R >>', b'']
         objects += [f'<< /Type /Font /Subtype /Type1 /BaseFont /{f} /Encoding /WinAnsiEncoding >>'.encode() for f in self.fonts]
         kids = []
-        for commands in self.pages:
+        for page_idx, commands in enumerate(self.pages):
+            page_annots = self.annots[page_idx] if page_idx < len(self.annots) else []
+            annot_refs = []
+            for x1, y1, x2, y2, uri in page_annots:
+                safe_uri = ''.join(c for c in _ascii(uri) if 32 <= ord(c) <= 126)
+                safe_uri = safe_uri.replace('\\', '\\\\').replace('(', '\\(').replace(')', '\\)')
+                annot_id = len(objects) + 1
+                annot_refs.append(f'{annot_id} 0 R')
+                objects.append(
+                    f'<< /Type /Annot /Subtype /Link /Rect [{x1:.2f} {y1:.2f} {x2:.2f} {y2:.2f}] '
+                    f'/Border [0 0 0] /A << /S /URI /URI ({safe_uri}) >> >>'.encode()
+                )
             page_id = len(objects) + 1
             kids.append(f'{page_id} 0 R')
             trim = ' /TrimBox [9 9 441 657]' if self.print_mode else ''
+            annots_clause = f' /Annots [{" ".join(annot_refs)}]' if annot_refs else ''
             objects.append((f'<< /Type /Page /Parent 2 0 R /MediaBox [0 0 {self.w} {self.h}]'
-                            f'{trim} /Resources << /Font << /F0 3 0 R /F1 4 0 R /F2 5 0 R >> >> '
+                            f'{trim}{annots_clause} /Resources << /Font << /F0 3 0 R /F1 4 0 R /F2 5 0 R >> >> '
                             f'/Contents {page_id + 1} 0 R >>').encode())
             stream = '\n'.join(commands).encode('ascii')
             objects.append(f'<< /Length {len(stream)} >>\nstream\n'.encode() + stream + b'\nendstream')
@@ -372,6 +418,13 @@ def render_fymc_pdf_bytes(state: dict, concept_id: str = 'concept_a', fmt: str =
                 combined_citations.extend(cval if isinstance(cval, (list, tuple)) else [cval])
         pdf.paragraph('Statutory & source citations', 10, 0)
         pdf.paragraph(combined_citations or 'No source timestamps supplied; verify before publication.', 9)
+    if workbook and isinstance(manuscript.get('chapters'), list) and manuscript['chapters']:
+        pdf.new('Expert YouTube Reference Index')
+        pdf.heading('Expert YouTube Deep-Link Reference Index')
+        for ch_idx, ch in enumerate(manuscript['chapters'], 1):
+            if isinstance(ch, dict) and ch.get('source_citations'):
+                pdf.paragraph(f"Chapter {ch_idx:02d}: {ch.get('title', '')}", 10, 0)
+                pdf.paragraph(ch.get('source_citations'), 8.5)
     if not workbook:
         pdf.new('Appendix')
         pdf.heading('Appendix / source and operating notes')
@@ -485,7 +538,15 @@ def _markup(value):
         return '<ul>' + ''.join('<li>' + _markup(item) + '</li>' for item in value) + '</ul>'
     if value is None:
         return ''
-    return ''.join('<p>' + _escape(line) + '</p>' for line in str(value).splitlines())
+    out_lines = []
+    for line in str(value).splitlines():
+        stripped = line.strip()
+        if re.fullmatch(r'https?://[^\s<>"\']+', stripped, re.IGNORECASE):
+            esc_url = _escape(stripped)
+            out_lines.append('<p><a href="' + esc_url + '">' + esc_url + '</a></p>')
+        else:
+            out_lines.append('<p>' + _escape(line) + '</p>')
+    return ''.join(out_lines)
 
 
 def render_fymc_epub_bytes(state: dict, concept_id: str = 'concept_a', _art=None) -> bytes:

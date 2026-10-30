@@ -180,19 +180,22 @@ def build_volume_001_manuscript(abridged_videos: list[dict] | None = None) -> di
     import math
     import re
     from urllib.parse import parse_qs, urlparse
+    from . import (
+        MIN_EXPERT_YOUTUBE_LINKS_PER_BOOK,
+        TARGET_EXPERT_YOUTUBE_LINKS_PER_BOOK,
+        MIN_EXPERT_YOUTUBE_LINKS_PER_CHAPTER,
+        count_manuscript_youtube_links,
+    )
+    from .volume_001_citations import (
+        BASELINE_EXPERT_CITATIONS_BY_CHAPTER,
+        CHAPTER_KEYWORDS,
+    )
 
     chapters = deepcopy(CHAPTERS_1_TO_6 + CHAPTERS_7_TO_12)
     for ch in chapters:
         ch.setdefault("id", f"Q{ch['chapter_number']}")
         ch.setdefault("chapter_id", f"Q{ch['chapter_number']}")
-    keywords = {
-        1: {"probate", "intestacy", "heir", "hunting", "surplus"},
-        2: {"payer", "custodian", "fiduciary", "capital", "assets"},
-        3: {"fee", "fees", "contingency", "economics", "profit", "margin", "cashflow"},
-        4: {"startup", "budget", "tools", "demand", "validate", "insurance"},
-        5: {"lien", "liens", "medicaid", "merp", "insolvent", "insolvency", "triage"},
-        6: {"leads", "opportunities", "prospecting", "outreach", "docket"},
-    }
+    keywords = CHAPTER_KEYWORDS
 
     def seconds_of(value):
         if value is None or isinstance(value, bool):
@@ -216,9 +219,8 @@ def build_volume_001_manuscript(abridged_videos: list[dict] | None = None) -> di
 
     for chapter in chapters:
         chapter["source_citations"] = []
-    for video in abridged_videos or []:
-        if not isinstance(video, dict):
-            continue
+    valid_videos = [v for v in (abridged_videos or []) if isinstance(v, dict)]
+    for video in valid_videos:
         video_id = str(video.get("video_id") or "")
         if not re.fullmatch(r"[A-Za-z0-9_-]{11}", video_id):
             try:
@@ -266,7 +268,9 @@ def build_volume_001_manuscript(abridged_videos: list[dict] | None = None) -> di
             label = f"{seconds // 3600:02d}:{seconds % 3600 // 60:02d}:{seconds % 60:02d}"
             url = f"https://www.youtube.com/watch?v={video_id}&t={seconds}s"
             citation = dict(source_type="video_pro_tip", video_id=video_id,
-                            title=str(video.get("title") or video_id), text=text,
+                            title=str(video.get("title") or video_id),
+                            channel=str(video.get("channel") or video.get("channel_title") or ""),
+                            text=text, tip=text,
                             timestamp=seconds, timestamp_seconds=seconds, timestamp_label=f"[{label}]",
                             url=url, markdown=f"[{label}]({url})", epistemic_status="attributed_practitioner_claim",
                             relevance="Matched source commentary; not independent verification or legal authority.")
@@ -276,12 +280,39 @@ def build_volume_001_manuscript(abridged_videos: list[dict] | None = None) -> di
                     if not any(item["url"] == url and item["text"] == text for item in existing):
                         existing.append(deepcopy(citation))
 
+    cap_per_chapter = 18 if len(valid_videos) > 20 else None
+    for chapter in chapters:
+        number = chapter["chapter_number"]
+        existing = chapter["source_citations"]
+        for base_cit in BASELINE_EXPERT_CITATIONS_BY_CHAPTER.get(number, []):
+            if not any(
+                item.get("url") == base_cit.get("url") and item.get("text") == base_cit.get("text")
+                for item in existing
+            ):
+                cloned = deepcopy(base_cit)
+                if cloned.get("author") and not cloned.get("channel"):
+                    cloned["channel"] = cloned["author"]
+                if cloned.get("text") and not cloned.get("tip"):
+                    cloned["tip"] = cloned["text"]
+                existing.append(cloned)
+        if cap_per_chapter is not None and len(existing) > cap_per_chapter:
+            # Retain baseline 15 plus top custom matches up to cap_per_chapter
+            base_urls = {c.get("url") for c in BASELINE_EXPERT_CITATIONS_BY_CHAPTER.get(number, [])}
+            baseline_items = [item for item in existing if item.get("url") in base_urls]
+            extra_items = [item for item in existing if item.get("url") not in base_urls]
+            chapter["source_citations"] = baseline_items + extra_items[: max(0, cap_per_chapter - len(baseline_items))]
+
     total_words = compute_manuscript_word_count(chapters)
+    total_yt_links = count_manuscript_youtube_links(chapters)
     return {
         "volume_id": "vol-001-heir-hunting", "volume_number": "001",
         "series_title": "THE BIG MONEY PLAYBOOKS", "parent_brand": "THE FUCK YOU MONEY CLUB",
         "tagline": "Big Money. Small Teams. No Bullshit.", "title": "HEIR HUNTING",
         "subtitle": "The Complete Playbook for Finding Missing Heirs, Researching Unclaimed Estates & Building a Probate Research Business",
+        "min_expert_youtube_links_per_book": MIN_EXPERT_YOUTUBE_LINKS_PER_BOOK,
+        "target_expert_youtube_links_per_book": TARGET_EXPERT_YOUTUBE_LINKS_PER_BOOK,
+        "min_expert_youtube_links_per_chapter": MIN_EXPERT_YOUTUBE_LINKS_PER_CHAPTER,
+        "expert_youtube_link_count": total_yt_links,
         "positioning_alternatives": [
             {"title": "The Probate Research Operator", "subtitle": "Build documented kinship cases, not inheritance promises.",
              "audience": "Researchers building a narrow probate service", "research_basis": "State-law succession makes evidence and jurisdictional scope central to a defensible service.",
