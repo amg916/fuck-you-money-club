@@ -2,7 +2,7 @@
   "scope": "publishing_store_excluding_previews",
   "sha256": {
     "audit/existing_work_audit.json": "71d067896ced00190d87cc3382a961210bf91049ca818ead6f1edb47d77c5f5f",
-    "brand/brand_system.json": "4218734f00fdb69bc0805ba29ddb2ac205ed46eda9bbc44a58a0570f64e9163d",
+    "brand/brand_system.json": "a5664ee4f4c70ba7791ee693b7e5a35a8bd7d16a9d6f3bf782353d3f36c605b9",
     "catalog/pipeline_29_candidates.json": "f8a006915bc1eb8573e78e0a5337e534ce644c218e9b5a4f31618daa047383a2",
     "research/research_database_summary.json": "59bdc47a842c1176e5fac5a1768a6abb7f017930fe973424fa1b0f6cc3e71af1",
     "site/newsletter_signups.json": "5a97fe09f877c0fccee940246e74f27dc5b6bc83148037af241946b350933794",

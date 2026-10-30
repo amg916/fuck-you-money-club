@@ -19,11 +19,11 @@
     "public_deploy_approved": false,
     "paid_sales_approved": false
   },
-  "active_preview_concept": "concept_a",
+  "active_preview_concept": "concept_b",
   "pricing_hypotheses": {
     "digital_playbook": {
-      "label": "Digital Playbook Edition",
-      "range_label": "$19–$39",
+      "label": "Digital Playbook Edition (Concept B)",
+      "range_label": "$29 Approved ($19–$39 Band)",
       "test_price_usd": 29,
       "includes": [
         "8.5×11 Executive Digital PDF",
@@ -31,19 +31,21 @@
         "Clickable Source Index"
       ],
       "hypothesis": true,
-      "paid_checkout_enabled": false
+      "paid_checkout_enabled": false,
+      "notes": "8.5x11 Executive Digital PDF + Reflowable EPUB 3.0 + Clickable Source Index (97.1% direct net margin)."
     },
     "operator_bundle": {
-      "label": "Print + Companion Workbook Bundle",
-      "range_label": "$49–$99",
-      "test_price_usd": 69,
+      "label": "Complete Operator Bundle (Print + Digital + Workbook)",
+      "range_label": "$79 Approved ($49–$99 Band)",
+      "test_price_usd": 79,
       "includes": [
         "6×9 Print Edition",
         "Digital PDF + EPUB",
         "6-Worksheet Operator Companion Workbook"
       ],
       "hypothesis": true,
-      "paid_checkout_enabled": false
+      "paid_checkout_enabled": false,
+      "notes": "6x9 Print Paperback + 8.5x11 Digital PDF + EPUB 3.0 + 6-Worksheet Operator Companion Workbook."
     },
     "founder_collection": {
       "label": "Multi-Volume Playbook Collection",
@@ -58,15 +60,24 @@
       "paid_checkout_enabled": false
     },
     "club_membership": {
-      "label": "The Fuck You Money Club Membership",
-      "range_label": "$19–$49/mo",
-      "test_price_usd": 39,
+      "label": "The Fuck You Money Club Charter Membership",
+      "range_label": "$290/yr ($39/mo Charter Tier)",
+      "test_price_usd": 290,
       "billing_period": "monthly",
       "includes": [
         "New Playbook Releases",
         "Live Money-to-Manpower Deal Scorecards",
         "Research Briefings & Operator Templates"
       ],
+      "hypothesis": true,
+      "paid_checkout_enabled": false,
+      "notes": "All Big Money Playbook releases, live 29-business Money-to-Manpower deal scorecards, and operator templates."
+    },
+    "print_paperback": {
+      "label": "6×9 Print Paperback Edition (Concept B)",
+      "range_label": "$34 Approved ($2.99–$4.36 KDP COGS)",
+      "test_price_usd": 34,
+      "notes": "Spec B (78pp Standard Color: $2.99 KDP COGS, +$17.41 KDP net, +$28.56 Direct net) & Spec D (280pp Expanded B&W: $4.36 KDP COGS, +$16.04 KDP net, +$27.11 Direct net).",
       "hypothesis": true,
       "paid_checkout_enabled": false
     }
@@ -133,7 +144,7 @@
       "status": "staged_preview"
     }
   ],
-  "editorial_notes": "",
+  "editorial_notes": "OWNER APPROVED: (1) Concept B — Bold Editorial (#09090B / #FFD400 / #FFFFFF) locked as Volume 001 & Series Default visual system; (2) Volume 002 — Tax Sale Overages & Excess Proceeds Recovery (91/100) approved as next volume in pipeline; (3) $34 6x9 Paperback pricing approved ($2.99 KDP COGS / $17.41 KDP net / $28.56 Direct net for 78pp Standard Color; $4.36 KDP COGS / $16.04 KDP net / $27.11 Direct net for 280pp Expanded Reference B&W).",
   "generated_at": "2026-10-29T23:18:57Z",
-  "updated_at": "2026-10-29T23:18:57Z"
+  "updated_at": "2026-10-30T00:14:40Z"
 }
