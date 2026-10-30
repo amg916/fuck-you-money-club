@@ -66,6 +66,286 @@ _CONFIDENCE_BANDS = {
     "Preliminary — Uncertainty Range": "±10 pts",
 }
 
+TRACK_DEFINITIONS = {
+    "track_1": {
+        "id": "track_1",
+        "code": "TRACK 01",
+        "name": "Asymmetric & Data-Arbitrage Plays",
+        "short_label": "Track 1 · Asymmetric & Data Arbitrage",
+        "summary": (
+            "100% legal, high-edge operator models built on public-record and API "
+            "intelligence, expired domain/traffic arbitrage, programmatic SEO, and "
+            "distressed asset recovery where small automated teams exploit data latency "
+            "and fragmented public registries."
+        ),
+    },
+    "track_2": {
+        "id": "track_2",
+        "code": "TRACK 02",
+        "name": "Grey-Zone Growth & Traffic Arbitrage",
+        "short_label": "Track 2 · Grey-Zone Growth & Traffic Arbitrage",
+        "summary": (
+            "Aggressive, high-velocity acquisition mechanics—parasitic SEO, high-velocity "
+            "affiliate funnels, viral distribution loops, and paid-to-organic media "
+            "arbitrage—paired with explicit platform-policy risk analysis and durable "
+            "owned-audience fallbacks."
+        ),
+    },
+}
+
+PLAY_DEFINITIONS = {
+    "public_record_api_intelligence": {
+        "id": "public_record_api_intelligence",
+        "track_id": "track_1",
+        "name": "Public-Record & API Intelligence",
+        "mechanism": (
+            "Ingest fragmented county dockets, probate registries, unclaimed property ledgers, "
+            "and public APIs to surface uncontested claims or high-intent B2B triggers before "
+            "manual competitors."
+        ),
+        "inputs": ["Court & probate dockets", "State controller ledgers", "Public licensing & entity APIs"],
+        "workflow": [
+            "Poll and normalize county/state record releases on an automated cadence",
+            "Cross-match entity/kinship/lien records and filter by minimum net fee threshold",
+            "Route verified dossiers into compliant outreach and claim execution",
+        ],
+        "metrics": ["Cost per verified lead", "Docket-to-contact latency (hours)", "Net recovery / conversion rate"],
+        "platform_risks": [
+            {
+                "failure_mode": "Portal rate-limiting or CAPTCHA gating",
+                "trigger": "High-frequency automated polling against county or agency web portals",
+                "impact": "Delayed lead ingestion or temporary IP block on target registry",
+                "detection_metric": "HTTP 429/403 rate and daily record ingestion delta",
+                "fallback": "Switch to scheduled bulk FOIA/public-record exports, official data feeds, and low-frequency cached queues",
+            },
+        ],
+    },
+    "expired_domain_traffic_arbitrage": {
+        "id": "expired_domain_traffic_arbitrage",
+        "track_id": "track_1",
+        "name": "Expired Domain & Traffic Arbitrage",
+        "mechanism": (
+            "Acquire dropped or auctioned domains with clean historical link equity and residual "
+            "type-in/referral traffic, then rebuild topical authority hubs or monetize intent via "
+            "high-payout lead and affiliate offers."
+        ),
+        "inputs": ["Registrar drop lists & closeout auctions", "Historical archive snapshots", "Backlink & anchor-text profiles"],
+        "workflow": [
+            "Screen auction and drop feeds for non-trademarked domains with editorial backlinks",
+            "Verify clean indexing history and absence of toxic spam penalties",
+            "Restore relevant topical architecture and route qualified traffic to high-margin offers",
+        ],
+        "inputs_note": "Strictly excludes trademarked terms or deceptive brand impersonation.",
+        "metrics": ["Acquisition cost vs. 6-month traffic value", "Indexation retention %", "RPM / revenue per visitor"],
+        "platform_risks": [
+            {
+                "failure_mode": "Search engine expired-domain abuse classification / deindexing",
+                "trigger": "Abrupt topical pivot or thin auto-generated content on repurposed domains",
+                "impact": "Loss of historical ranking authority and organic search impressions",
+                "detection_metric": "Indexed page ratio and non-brand impression trend in Search Console",
+                "fallback": "Keep strict topical continuity with historical archive theme and capture first-party email opt-ins on entry",
+            },
+        ],
+    },
+    "programmatic_seo": {
+        "id": "programmatic_seo",
+        "track_id": "track_1",
+        "name": "Programmatic SEO",
+        "mechanism": (
+            "Combine structured proprietary datasets (pricing benchmarks, local regulations, "
+            "provider directories, calculator matrices) with high-utility page templates to capture "
+            "thousands of long-tail commercial-intent queries."
+        ),
+        "inputs": ["Normalized proprietary dataset", "Long-tail intent taxonomy", "Interactive calculator / comparison templates"],
+        "workflow": [
+            "Assemble verifiable structured data rows with unique per-entity attributes",
+            "Render fast, high-utility comparison and calculator pages with zero duplicate boilerplate",
+            "Monetize high-intent visitors via B2B lead routing, SaaS signups, or high-ticket referrals",
+        ],
+        "metrics": ["Indexed-to-submitted sitemap ratio", "Organic conversions per 1,000 pages", "Customer acquisition cost (CAC)"],
+        "platform_risks": [
+            {
+                "failure_mode": "Scaled content / thin-page deindexing during core search updates",
+                "trigger": "Publishing near-identical template pages without unique underlying data value",
+                "impact": "Crawl-budget throttling or sitewide organic traffic drop",
+                "detection_metric": "'Crawled - currently not indexed' count and average time-on-page",
+                "fallback": "Enforce minimum data-density gates per URL, prune zero-impression pages, and funnel traffic into owned tools/newsletters",
+            },
+        ],
+    },
+    "distressed_asset_recovery": {
+        "id": "distressed_asset_recovery",
+        "track_id": "track_1",
+        "name": "Distressed Asset Recovery",
+        "mechanism": (
+            "Locate mispriced, orphaned, or administratively stranded assets—tax-sale overages, "
+            "unclaimed state funds, dormant judgments, government surplus lots, or distressed "
+            "micro-businesses—and capture a contingent recovery fee or acquisition spread."
+        ),
+        "inputs": ["Tax-sale excess proceeds ledgers", "Unclaimed property & judgment dockets", "Surplus auction manifests"],
+        "workflow": [
+            "Audit statutory fee caps, claim windows, and chain-of-title encumbrances",
+            "Execute skip-tracing or asset inspection to confirm net realizable value",
+            "Lock in contingent recovery agreements or below-intrinsic buyouts",
+        ],
+        "metrics": ["Gross spread / contingent fee per case", "Claim approval rate", "Days from filing to disbursement"],
+        "platform_risks": [
+            {
+                "failure_mode": "Statutory fee-cap compression or administrative hold",
+                "trigger": "Jurisdiction updates finder fee limits, waiting periods, or filing documentation rules",
+                "impact": "Reduced net fee margin or extended cash conversion cycle",
+                "detection_metric": "County/state rejection notice rate and days-to-payout variance",
+                "fallback": "Diversify across multi-state dockets and use attorney-backed filing partnerships where required",
+            },
+        ],
+    },
+    "parasitic_seo": {
+        "id": "parasitic_seo",
+        "track_id": "track_2",
+        "name": "Parasitic SEO",
+        "mechanism": (
+            "Publish deeply researched commercial comparisons and buyer guides on high-authority "
+            "third-party host platforms, publications, and community domains to rank for competitive "
+            "buyer keywords faster than a new standalone domain."
+        ),
+        "inputs": ["High-DR third-party publishing hosts", "High-CPC buyer-intent keyword clusters", "Conversion-tested comparison modules"],
+        "workflow": [
+            "Identify authority platforms that index rapidly for commercial review and comparison queries",
+            "Deploy substantive, data-backed comparison placements with tracked referral CTAs",
+            "Bridge third-party placement traffic immediately into owned landing pages and email lists",
+        ],
+        "metrics": ["Time-to-top-3 ranking (days)", "Click-through rate to owned bridge page", "Net commission per placement"],
+        "platform_risks": [
+            {
+                "failure_mode": "Host removal or search site-reputation policy enforcement",
+                "trigger": "Host platform moderates outbound affiliate links or search engines demote third-party subdirectories",
+                "impact": "Sudden removal or ranking drop of hosted placement URLs",
+                "detection_metric": "HTTP status/canonical monitor on hosted URLs and SERP rank tracker alerts",
+                "fallback": "Treat hosted placements strictly as top-of-funnel feeders into owned domains and first-party email lists",
+            },
+        ],
+    },
+    "high_velocity_affiliate_funnels": {
+        "id": "high_velocity_affiliate_funnels",
+        "track_id": "track_2",
+        "name": "High-Velocity Affiliate Funnels",
+        "mechanism": (
+            "Pair rapid-deployment pre-sell bridge pages, comparison quizzes, and automated follow-up "
+            "sequences with high-ticket recurring or CPA offers to maximize earnings per click (EPC)."
+        ),
+        "inputs": ["High-ticket / recurring merchant offers", "Pre-sell quiz & comparison bridge funnels", "Server-side conversion tracking"],
+        "workflow": [
+            "Route intent-matched traffic to a fast pre-qualification bridge page rather than raw merchant links",
+            "Capture lead opt-in before handoff so non-converting clicks enter automated follow-up sequences",
+            "Split-test offer routing dynamically by EPC and reversal rate",
+        ],
+        "metrics": ["Earnings per click (EPC)", "Bridge-page opt-in rate", "Net payout after reversals/clawbacks"],
+        "platform_risks": [
+            {
+                "failure_mode": "Affiliate commission cuts, clawbacks, or attribution loss",
+                "trigger": "Merchant changes payout terms, cookie windows expire, or ad platforms reject bridge pages",
+                "impact": "Margin compression or retroactive commission reversals",
+                "detection_metric": "EPC drop >15% or reversal/refund rate exceeding historical baseline",
+                "fallback": "Maintain multi-merchant offer rotation on owned bridge links and monetize captured email leads directly",
+            },
+        ],
+    },
+    "viral_distribution_loops": {
+        "id": "viral_distribution_loops",
+        "track_id": "track_2",
+        "name": "Viral Distribution Loops",
+        "mechanism": (
+            "Engineer shareable interactive outputs, programmatic short-form media variants, and "
+            "incentivized referral unlocks so every user action or content batch seeds organic distribution."
+        ),
+        "inputs": ["Interactive tool / template assets", "Short-form distribution accounts", "Referral milestone unlock mechanics"],
+        "workflow": [
+            "Embed native watermark/attribution or referral-unlock hooks into user-generated outputs",
+            "Syndicate high-retention hooks across short-form and community feeds pointing to a central capture hub",
+            "Convert viral spikes into durable product sales, SaaS trials, or subscriber cohorts",
+        ],
+        "metrics": ["Viral K-factor / share rate", "Organic impressions per asset batch", "Visitor-to-owned-subscriber conversion %"],
+        "platform_risks": [
+            {
+                "failure_mode": "Algorithmic reach throttling or account shadow-limiting",
+                "trigger": "Social platforms penalize repetitive template formats or aggressive outbound link prompts",
+                "impact": "Sharp decay in organic feed impressions and click-through volume",
+                "detection_metric": "Non-follower reach ratio and outbound link CTR per post",
+                "fallback": "Rotate native creative formats, avoid spammy engagement bait, and convert viewers into owned email/SMS channels",
+            },
+        ],
+    },
+    "paid_to_organic_media_arbitrage": {
+        "id": "paid_to_organic_media_arbitrage",
+        "track_id": "track_2",
+        "name": "Paid-to-Organic Media Arbitrage",
+        "mechanism": (
+            "Acquire underpriced clicks from secondary ad networks, newsletter sponsorships, and "
+            "long-tail search queries, then monetize the spread via higher-yield B2B lead sales, "
+            "high-ticket affiliate payouts, and organic retargeting loops."
+        ),
+        "inputs": ["Low-CPC ad & sponsorship inventory", "High-RPM / high-CPL monetization endpoints", "Cohort ROAS & LTV attribution ledger"],
+        "workflow": [
+            "Buy targeted traffic where CPC is priced below the realized first-session + 30-day email value",
+            "Segment incoming visitors via instant qualification prompts to route high-value leads to premium buyers",
+            "Recycle organic search and newsletter return visits at zero marginal media cost",
+        ],
+        "metrics": ["Day-1 vs. Day-30 ROAS spread", "Realized RPM minus effective CPC", "Lead acceptance rate"],
+        "platform_risks": [
+            {
+                "failure_mode": "Traffic-cost spikes, ad-account restrictions, or attribution blind spots",
+                "trigger": "Auction CPC inflation, ad-network creative disapprovals, or browser tracking restrictions",
+                "impact": "Negative front-end arbitrage spread and wasted ad spend",
+                "detection_metric": "Hourly CPC-to-EPC ratio and server-side conversion match rate",
+                "fallback": "Enforce automated spend circuit-breakers when spread narrows and rely on first-party newsletter monetization",
+            },
+        ],
+    },
+}
+
+CANDIDATE_PLAY_MAP: dict[int, tuple[str, ...]] = {
+    1: ("public_record_api_intelligence",),
+    2: ("public_record_api_intelligence", "distressed_asset_recovery"),
+    5: ("public_record_api_intelligence", "distressed_asset_recovery"),
+    8: ("public_record_api_intelligence", "distressed_asset_recovery"),
+    13: ("distressed_asset_recovery",),
+    16: ("expired_domain_traffic_arbitrage",),
+    17: ("distressed_asset_recovery",),
+    18: ("public_record_api_intelligence", "programmatic_seo", "paid_to_organic_media_arbitrage"),
+    22: ("public_record_api_intelligence", "viral_distribution_loops"),
+    24: ("parasitic_seo", "high_velocity_affiliate_funnels", "paid_to_organic_media_arbitrage"),
+    25: ("expired_domain_traffic_arbitrage", "programmatic_seo", "parasitic_seo", "paid_to_organic_media_arbitrage"),
+    27: ("viral_distribution_loops",),
+    28: ("viral_distribution_loops",),
+}
+
+
+def get_candidate_track_metadata(candidate_number: object) -> dict:
+    """Return detached ``track_ids``, ``track_labels``, ``plays``, and ``platform_risks`` for ``candidate_number``."""
+    num: int | None = None
+    if not isinstance(candidate_number, bool) and isinstance(candidate_number, int):
+        num = candidate_number
+    play_ids = CANDIDATE_PLAY_MAP.get(num, ()) if num is not None else ()
+    plays = [deepcopy(PLAY_DEFINITIONS[pid]) for pid in play_ids if pid in PLAY_DEFINITIONS]
+    track_ids: list[str] = []
+    for play in plays:
+        tid = play.get("track_id")
+        if isinstance(tid, str) and tid in TRACK_DEFINITIONS and tid not in track_ids:
+            track_ids.append(tid)
+    track_labels = [TRACK_DEFINITIONS[tid]["name"] for tid in track_ids]
+    platform_risks = [
+        deepcopy({**risk, "play_id": play["id"], "play_name": play["name"], "track_id": play["track_id"]})
+        for play in plays
+        for risk in play.get("platform_risks", [])
+        if isinstance(risk, dict)
+    ]
+    return {
+        "track_ids": track_ids,
+        "track_labels": track_labels,
+        "plays": plays,
+        "platform_risks": platform_risks,
+    }
+
 
 def compute_scorecard(spec: dict) -> dict:
     """Validate weighted subscores and return a detached, normalized scorecard."""
@@ -93,6 +373,26 @@ def compute_scorecard(spec: dict) -> dict:
         tier = "Disciplined Specialist Play"
     else:
         tier = "Capital / Labor Intensive"
+    track_meta = get_candidate_track_metadata(spec.get("candidate_number"))
+    raw_track_ids = spec.get("track_ids")
+    raw_plays = spec.get("plays")
+    raw_platform_risks = spec.get("platform_risks")
+    track_ids = (
+        [str(t) for t in raw_track_ids if isinstance(t, str) and t in TRACK_DEFINITIONS]
+        if isinstance(raw_track_ids, list)
+        else track_meta["track_ids"]
+    )
+    track_labels = [TRACK_DEFINITIONS[tid]["name"] for tid in track_ids if tid in TRACK_DEFINITIONS]
+    plays = (
+        [deepcopy(p) for p in raw_plays if isinstance(p, dict)]
+        if isinstance(raw_plays, list)
+        else track_meta["plays"]
+    )
+    platform_risks = (
+        [deepcopy(r) for r in raw_platform_risks if isinstance(r, dict)]
+        if isinstance(raw_platform_risks, list)
+        else track_meta["platform_risks"]
+    )
     result = {
         "candidate_number": spec.get("candidate_number"),
         "slug": spec.get("slug", ""),
@@ -119,6 +419,10 @@ def compute_scorecard(spec: dict) -> dict:
         "automation_levers": spec.get("automation_levers", []),
         "key_risks": spec.get("key_risks", []),
         "regulatory_notes": spec.get("regulatory_notes", []),
+        "track_ids": track_ids,
+        "track_labels": track_labels,
+        "plays": plays,
+        "platform_risks": platform_risks,
     }
     return deepcopy(result)
 

@@ -31,6 +31,7 @@ import os
 import re
 import tempfile
 import threading
+from copy import deepcopy
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -47,6 +48,9 @@ from . import (
     WORKFLOW_STAGES,
 )
 from .scorecard_engine import (
+    TRACK_DEFINITIONS,
+    PLAY_DEFINITIONS,
+    get_candidate_track_metadata,
     build_29_candidate_pipeline,
     get_flagship_scorecard,
     compute_scorecard,
@@ -974,6 +978,7 @@ def build_default_brand_system() -> dict:
             "require_timestamp_deep_links": True,
             "require_across_all_editions": True,
         },
+        "editorial_tracks": deepcopy(TRACK_DEFINITIONS),
         "editorial_notes": "",
     }
 
@@ -1710,6 +1715,7 @@ def sync_publishing_store(
             "rating_system": RATING_SYSTEM_NAME,
             "candidate_count": len(pipeline),
             "flagship_volume_id": FLAGSHIP_VOLUME_ID,
+            "editorial_tracks": deepcopy(TRACK_DEFINITIONS),
             "candidates": pipeline,
             "generated_at": _now_iso(),
         }
@@ -1921,6 +1927,16 @@ def load_publishing_state(root_dir: Path, *, verify_manifest: bool = False) -> d
         }
         state["manifest_verified"] = manifest_report["passed"]
         state["brand_system"]["gates"] = _normalize_gates(state["brand_system"].get("gates"))
+        state["brand_system"].setdefault("editorial_tracks", deepcopy(TRACK_DEFINITIONS))
+        if isinstance(state.get("pipeline_29_candidates"), dict):
+            state["pipeline_29_candidates"].setdefault("editorial_tracks", deepcopy(TRACK_DEFINITIONS))
+            for cand in _as_list(state["pipeline_29_candidates"].get("candidates", []), "candidates"):
+                if isinstance(cand, dict) and "track_ids" not in cand:
+                    cand.update(get_candidate_track_metadata(cand.get("candidate_number")))
+        if isinstance(state.get("volume", {}).get("scorecard"), dict) and "track_ids" not in state["volume"]["scorecard"]:
+            state["volume"]["scorecard"].update(
+                get_candidate_track_metadata(state["volume"]["scorecard"].get("candidate_number", 1))
+            )
         state["gates"] = dict(state["brand_system"]["gates"])
         state["settings"] = dict(state["brand_system"].get("gates", {}))
         state["counts"] = {

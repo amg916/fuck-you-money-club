@@ -93,5 +93,55 @@
   "regulatory_notes": [
     "Check heir-finder fee restrictions and solicitation rules by jurisdiction.",
     "Do not provide legal representation without appropriate authorization."
+  ],
+  "track_ids": [
+    "track_1"
+  ],
+  "track_labels": [
+    "Asymmetric & Data-Arbitrage Plays"
+  ],
+  "plays": [
+    {
+      "id": "public_record_api_intelligence",
+      "track_id": "track_1",
+      "name": "Public-Record & API Intelligence",
+      "mechanism": "Ingest fragmented county dockets, probate registries, unclaimed property ledgers, and public APIs to surface uncontested claims or high-intent B2B triggers before manual competitors.",
+      "inputs": [
+        "Court & probate dockets",
+        "State controller ledgers",
+        "Public licensing & entity APIs"
+      ],
+      "workflow": [
+        "Poll and normalize county/state record releases on an automated cadence",
+        "Cross-match entity/kinship/lien records and filter by minimum net fee threshold",
+        "Route verified dossiers into compliant outreach and claim execution"
+      ],
+      "metrics": [
+        "Cost per verified lead",
+        "Docket-to-contact latency (hours)",
+        "Net recovery / conversion rate"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Portal rate-limiting or CAPTCHA gating",
+          "trigger": "High-frequency automated polling against county or agency web portals",
+          "impact": "Delayed lead ingestion or temporary IP block on target registry",
+          "detection_metric": "HTTP 429/403 rate and daily record ingestion delta",
+          "fallback": "Switch to scheduled bulk FOIA/public-record exports, official data feeds, and low-frequency cached queues"
+        }
+      ]
+    }
+  ],
+  "platform_risks": [
+    {
+      "failure_mode": "Portal rate-limiting or CAPTCHA gating",
+      "trigger": "High-frequency automated polling against county or agency web portals",
+      "impact": "Delayed lead ingestion or temporary IP block on target registry",
+      "detection_metric": "HTTP 429/403 rate and daily record ingestion delta",
+      "fallback": "Switch to scheduled bulk FOIA/public-record exports, official data feeds, and low-frequency cached queues",
+      "play_id": "public_record_api_intelligence",
+      "play_name": "Public-Record & API Intelligence",
+      "track_id": "track_1"
+    }
   ]
 }

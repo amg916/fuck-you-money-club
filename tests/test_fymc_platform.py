@@ -2000,6 +2000,78 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
         self.assertEqual(len(pdf_doc.annots[1]), 1)
         self.assertAlmostEqual(pdf_doc.annots[1][0][0], pdf_doc.left, places=2)
 
+    def test_27_asymmetric_and_greyzone_arbitrage_tracks(self):
+        from src.fymc.scorecard_engine import (
+            TRACK_DEFINITIONS,
+            PLAY_DEFINITIONS,
+            CANDIDATE_PLAY_MAP,
+            get_candidate_track_metadata,
+            build_29_candidate_pipeline,
+            get_flagship_scorecard,
+        )
+        self.assertEqual(set(TRACK_DEFINITIONS), {"track_1", "track_2"})
+        self.assertEqual(
+            set(PLAY_DEFINITIONS),
+            {
+                "public_record_api_intelligence",
+                "expired_domain_traffic_arbitrage",
+                "programmatic_seo",
+                "distressed_asset_recovery",
+                "parasitic_seo",
+                "high_velocity_affiliate_funnels",
+                "viral_distribution_loops",
+                "paid_to_organic_media_arbitrage",
+            },
+        )
+        for play_id, play in PLAY_DEFINITIONS.items():
+            self.assertIn(play["track_id"], TRACK_DEFINITIONS)
+            self.assertTrue(play["name"] and play["mechanism"] and play["inputs"] and play["workflow"] and play["metrics"])
+            self.assertTrue(play["platform_risks"], play_id)
+            for risk in play["platform_risks"]:
+                for req_key in ("failure_mode", "trigger", "impact", "detection_metric", "fallback"):
+                    self.assertTrue(risk.get(req_key), (play_id, req_key))
+
+        # Detached copy isolation & overlap verification
+        meta_25_a = get_candidate_track_metadata(25)
+        meta_25_b = get_candidate_track_metadata(25)
+        self.assertEqual(meta_25_a["track_ids"], ["track_1", "track_2"])
+        self.assertEqual(len(meta_25_a["plays"]), 4)
+        meta_25_a["plays"][0]["name"] = "Mutated"
+        self.assertNotEqual(meta_25_b["plays"][0]["name"], "Mutated")
+
+        # Unmapped candidates get empty arrays cleanly
+        meta_10 = get_candidate_track_metadata(10)
+        self.assertEqual(meta_10, {"track_ids": [], "track_labels": [], "plays": [], "platform_risks": []})
+
+        # Flagship score remains 87 and carries Track 1 metadata
+        flagship = get_flagship_scorecard()
+        self.assertEqual(flagship["total_score"], 87)
+        self.assertEqual(flagship["track_ids"], ["track_1"])
+        self.assertEqual(flagship["plays"][0]["id"], "public_record_api_intelligence")
+
+        # Malformed None play/risk entries are filtered out cleanly
+        from src.fymc.scorecard_engine import compute_scorecard
+        filtered_card = compute_scorecard({**flagship, "plays": [None, flagship["plays"][0]], "platform_risks": [None]})
+        self.assertEqual(len(filtered_card["plays"]), 1)
+        self.assertEqual(filtered_card["platform_risks"], [])
+
+        # Pipeline of 29 candidates preserves ranks 1..29 and includes both tracks
+        pipeline = build_29_candidate_pipeline()
+        self.assertEqual(len(pipeline), 29)
+        t1_cands = [c["candidate_number"] for c in pipeline if "track_1" in c["track_ids"]]
+        t2_cands = [c["candidate_number"] for c in pipeline if "track_2" in c["track_ids"]]
+        self.assertEqual(sorted(t1_cands), [1, 2, 5, 8, 13, 16, 17, 18, 22, 25])
+        self.assertEqual(sorted(t2_cands), [18, 22, 24, 25, 27, 28])
+
+        # Store & UI HTML include track filters and platform risk sections
+        state = self.store.load_publishing_state(self.root, verify_manifest=True)
+        self.assertIn("editorial_tracks", state["pipeline_29_candidates"])
+        studio_html = (ROOT / "src" / "static" / "studio.html").read_text(encoding="utf-8")
+        site_html = (ROOT / "src" / "static" / "site.html").read_text(encoding="utf-8")
+        self.assertIn('id="book-track"', studio_html)
+        self.assertIn('id="score-tracks-and-risks"', studio_html)
+        self.assertIn('id="business-track"', site_html)
+
 
 if __name__ == "__main__":
     unittest.main()
