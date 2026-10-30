@@ -439,6 +439,41 @@ PLAY_DEFINITIONS = {
             },
         ],
     },
+    "newly_registered_domain_trigger_arbitrage": {
+        "id": "newly_registered_domain_trigger_arbitrage",
+        "track_id": "track_1",
+        "name": "Newly Registered Domain (NRD) & DNS-Diagnostic Trigger Arbitrage",
+        "mechanism": (
+            "Ingest daily ICANN CZDS Newly Registered Domain (NRD) zone diffs and .us unredacted RDAP "
+            "feeds, cross-match domain tokens against Secretary of State LLC filings to resolve physical "
+            "mailing addresses despite WHOIS privacy, and run automated 72-hour DNS/HTTP probes (0 Google "
+            "indexed pages, missing sitemap.xml, missing SPF/DMARC) to trigger personalized diagnostic mailers."
+        ),
+        "inputs": [
+            "ICANN CZDS daily zone-file diffs & unredacted .us RDAP feeds",
+            "30-day Secretary of State LLC/Corp & USPTO entity cross-match index",
+            "Automated 72-hour DNS (SPF/DKIM/DMARC) & HTTP (sitemap.xml / Google index) scanner",
+        ],
+        "workflow": [
+            "Cross-match daily NRD registrations against new SOS LLC filings and .us RDAP records to resolve founder name and street address",
+            "Probe each resolved domain at 72 hours for unindexed status, missing sitemap.xml/robots.txt, and unconfigured SPF/DMARC email authentication",
+            "Dispatch a personalized diagnostic scorecard mailer with a QR code offering a $149 1-click Search Console + IndexNow + DNS/DMARC launch fix, recurring local SEO retainers, and high-CPA SaaS/hosting referrals",
+        ],
+        "metrics": [
+            "NRD-to-physical-address resolution rate (%)",
+            "QR diagnostic scan & $149 tripwire conversion %",
+            "Upsell rate to recurring SEO/AI agency retainers + affiliate EPC",
+        ],
+        "platform_risks": [
+            {
+                "failure_mode": "39 U.S.C. § 3001(h)-(i) deceptive invoice enforcement, registrar abuse complaints, or WHOIS redaction blind spots",
+                "trigger": "Sending fake 'Domain Registry / Google Activation' bills or scraping RDAP endpoints above rate limits",
+                "impact": "USPS mail-stop orders, merchant processor termination, or RDAP IP rate-limiting",
+                "detection_metric": "Customer confusion inquiries, chargeback ratio >1%, and RDAP HTTP 429 response rate",
+                "fallback": "Use ICANN CZDS bulk zone files + SOS LLC cross-matching instead of high-frequency WHOIS scraping, and present mailers strictly as a private technical diagnostic audit with real DNS/sitemap fixes",
+            },
+        ],
+    },
 }
 
 CANDIDATE_PLAY_MAP: dict[int, tuple[str, ...]] = {
@@ -449,11 +484,12 @@ CANDIDATE_PLAY_MAP: dict[int, tuple[str, ...]] = {
     9: ("public_record_api_intelligence", "public_filing_trigger_mail_arbitrage"),
     11: ("telegram_channel_signal_scraping",),
     13: ("distressed_asset_recovery",),
-    16: ("expired_domain_traffic_arbitrage",),
+    16: ("expired_domain_traffic_arbitrage", "newly_registered_domain_trigger_arbitrage"),
     17: ("distressed_asset_recovery",),
     18: (
         "public_record_api_intelligence",
         "public_filing_trigger_mail_arbitrage",
+        "newly_registered_domain_trigger_arbitrage",
         "telegram_channel_signal_scraping",
         "programmatic_seo",
         "high_velocity_dm_outbound_systems",
@@ -475,6 +511,7 @@ CANDIDATE_PLAY_MAP: dict[int, tuple[str, ...]] = {
     ),
     25: (
         "expired_domain_traffic_arbitrage",
+        "newly_registered_domain_trigger_arbitrage",
         "programmatic_seo",
         "parasitic_seo",
         "serp_signal_navboost_engineering",
@@ -487,7 +524,11 @@ CANDIDATE_PLAY_MAP: dict[int, tuple[str, ...]] = {
         "high_velocity_dm_outbound_systems",
     ),
     28: ("viral_distribution_loops",),
-    29: ("telegram_channel_signal_scraping", "high_velocity_dm_outbound_systems"),
+    29: (
+        "newly_registered_domain_trigger_arbitrage",
+        "telegram_channel_signal_scraping",
+        "high_velocity_dm_outbound_systems",
+    ),
 }
 
 

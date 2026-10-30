@@ -2025,6 +2025,7 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
                 "high_velocity_dm_outbound_systems",
                 "serp_signal_navboost_engineering",
                 "public_filing_trigger_mail_arbitrage",
+                "newly_registered_domain_trigger_arbitrage",
             },
         )
         for play_id, play in PLAY_DEFINITIONS.items():
@@ -2039,8 +2040,9 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
         meta_25_a = get_candidate_track_metadata(25)
         meta_25_b = get_candidate_track_metadata(25)
         self.assertEqual(meta_25_a["track_ids"], ["track_1", "track_2"])
-        self.assertEqual(len(meta_25_a["plays"]), 5)
+        self.assertEqual(len(meta_25_a["plays"]), 6)
         self.assertIn("serp_signal_navboost_engineering", [p["id"] for p in meta_25_a["plays"]])
+        self.assertIn("newly_registered_domain_trigger_arbitrage", [p["id"] for p in meta_25_a["plays"]])
         meta_25_a["plays"][0]["name"] = "Mutated"
         self.assertNotEqual(meta_25_b["plays"][0]["name"], "Mutated")
 
@@ -2048,6 +2050,7 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
         self.assertIn("telegram_channel_signal_scraping", [p["id"] for p in meta_18["plays"]])
         self.assertIn("high_velocity_dm_outbound_systems", [p["id"] for p in meta_18["plays"]])
         self.assertIn("public_filing_trigger_mail_arbitrage", [p["id"] for p in meta_18["plays"]])
+        self.assertIn("newly_registered_domain_trigger_arbitrage", [p["id"] for p in meta_18["plays"]])
 
         # Unmapped candidates get empty arrays cleanly
         meta_10 = get_candidate_track_metadata(10)
