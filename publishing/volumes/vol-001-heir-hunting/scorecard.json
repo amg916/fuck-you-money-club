@@ -130,6 +130,66 @@
           "fallback": "Switch to scheduled bulk FOIA/public-record exports, official data feeds, and low-frequency cached queues"
         }
       ]
+    },
+    {
+      "id": "unclaimed_property_escheatment_arbitrage",
+      "track_id": "track_1",
+      "name": "State Treasury Escheatment & Unclaimed Corporate Warrant Recovery",
+      "mechanism": "Ingest state controller/treasury escheatment ledgers and uncashed municipal/corporate warrant registries above $25,000, cross-match corporate officers via Secretary of State filings, and execute statutory recovery agreements for a 10–25% contingent finder fee.",
+      "inputs": [
+        "State controller/treasury escheatment bulk ledgers",
+        "Uncashed municipal warrant & vendor-credit registries",
+        "Secretary of State officer & FEIN cross-match index"
+      ],
+      "workflow": [
+        "Filter state unclaimed-property and uncashed-warrant ledgers for high-value corporate and estate accounts exceeding $25,000",
+        "Resolve active corporate officers, successor entities, or authorized fiduciaries via SOS and skip-trace databases",
+        "Execute state-compliant finder agreements with statutory fee caps and submit notarized claim packages to the treasury administrator"
+      ],
+      "metrics": [
+        "Average gross warrant/escheatment claim size ($25k+)",
+        "Treasury claim approval rate (%)",
+        "Days from notarized filing to state disbursement"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Statutory finder-fee cap violation or waiting-period rejection",
+          "trigger": "Charging above state statutory fee limits (e.g., 10% in CA/FL/NY) or soliciting claims during restricted post-escheatment windows",
+          "impact": "Voided recovery contract, state controller rejection, or administrative penalty",
+          "detection_metric": "State-by-state fee-cap compliance check (100% pass) and claim rejection notice rate",
+          "fallback": "Enforce per-state statutory fee caps and waiting-period rules in intake templates and disclose the owner's right to claim directly for free"
+        }
+      ]
+    },
+    {
+      "id": "probate_docket_inheritance_arbitrage",
+      "track_id": "track_1",
+      "name": "Probate Docket & Pre-Foreclosure Notice-of-Default (NOD) Scraping",
+      "mechanism": "Parse county probate petitions (Letters Testamentary / Letters of Administration) and daily Notice-of-Default (NOD) filings before national aggregators index them, matching out-of-state personal representatives and distressed owners to licensed probate brokers and cash buyers.",
+      "inputs": [
+        "County probate court register of actions & Letters Testamentary filings",
+        "County recorder daily Notice-of-Default (NOD) & Notice-of-Trustee-Sale feeds",
+        "Skip-tracing & out-of-state personal-representative matching pipeline"
+      ],
+      "workflow": [
+        "Extract newly appointed estate personal representatives and real-property inventory from county probate dockets within 24 hours of filing",
+        "Cross-match parcel equity and mortgage balances against county assessor and recorder records",
+        "Deliver empathetic estate-liquidation checklists, property-preservation referrals, or licensed brokerage introductions"
+      ],
+      "metrics": [
+        "Docket-to-first-contact speed vs. national data aggregators (days)",
+        "Personal-representative response & appointment rate (%)",
+        "Commission or referral fee per closed probate/pre-foreclosure parcel"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "State Foreclosure Consultant Act violations or unlicensed brokerage fee-splitting",
+          "trigger": "Charging upfront fees to distressed homeowners in NOD or taking unlicensed real-estate commission splits",
+          "impact": "Voided contracts, treble damages under state foreclosure-protection statutes, or DRE enforcement",
+          "detection_metric": "100% licensed broker co-marketing compliance and zero upfront homeowner fee charges",
+          "fallback": "Monetize strictly via flat-fee marketing/data subscriptions to licensed probate agents or close transactions through a licensed brokerage of record"
+        }
+      ]
     }
   ],
   "platform_risks": [
@@ -141,6 +201,26 @@
       "fallback": "Switch to scheduled bulk FOIA/public-record exports, official data feeds, and low-frequency cached queues",
       "play_id": "public_record_api_intelligence",
       "play_name": "Public-Record & API Intelligence",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Statutory finder-fee cap violation or waiting-period rejection",
+      "trigger": "Charging above state statutory fee limits (e.g., 10% in CA/FL/NY) or soliciting claims during restricted post-escheatment windows",
+      "impact": "Voided recovery contract, state controller rejection, or administrative penalty",
+      "detection_metric": "State-by-state fee-cap compliance check (100% pass) and claim rejection notice rate",
+      "fallback": "Enforce per-state statutory fee caps and waiting-period rules in intake templates and disclose the owner's right to claim directly for free",
+      "play_id": "unclaimed_property_escheatment_arbitrage",
+      "play_name": "State Treasury Escheatment & Unclaimed Corporate Warrant Recovery",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "State Foreclosure Consultant Act violations or unlicensed brokerage fee-splitting",
+      "trigger": "Charging upfront fees to distressed homeowners in NOD or taking unlicensed real-estate commission splits",
+      "impact": "Voided contracts, treble damages under state foreclosure-protection statutes, or DRE enforcement",
+      "detection_metric": "100% licensed broker co-marketing compliance and zero upfront homeowner fee charges",
+      "fallback": "Monetize strictly via flat-fee marketing/data subscriptions to licensed probate agents or close transactions through a licensed brokerage of record",
+      "play_id": "probate_docket_inheritance_arbitrage",
+      "play_name": "Probate Docket & Pre-Foreclosure Notice-of-Default (NOD) Scraping",
       "track_id": "track_1"
     }
   ]

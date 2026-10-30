@@ -2010,6 +2010,7 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
             get_flagship_scorecard,
         )
         self.assertEqual(set(TRACK_DEFINITIONS), {"track_1", "track_2"})
+        self.assertEqual(len(PLAY_DEFINITIONS), 49)
         self.assertEqual(
             set(PLAY_DEFINITIONS),
             {
@@ -2034,9 +2035,38 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
                 "ego_bait_directory_badge_arbitrage",
                 "b2b_class_action_contingency_recovery",
                 "arizona_abs_mass_tort_cocounsel",
+                "unclaimed_property_escheatment_arbitrage",
+                "municipal_code_violation_trigger_arbitrage",
+                "freight_detention_audit_contingency",
+                "ucc1_expiration_refi_trigger_arbitrage",
+                "probate_docket_inheritance_arbitrage",
+                "fmcsa_dot_inspection_trigger_arbitrage",
+                "ad_library_spend_velocity_arbitrage",
+                "saas_technographic_churn_pixel_scraping",
+                "sec_edgar_8k_vendor_trigger_arbitrage",
+                "patent_trademark_office_action_arbitrage",
+                "review_gating_reputation_extortion_funnels",
+                "government_rfp_subcontractor_brokerage",
+                "hospital_lien_medical_receivables_arbitrage",
+                "amazon_asin_hijack_brand_protection_trigger",
+                "property_tax_assessment_appeal_contingency",
+                "ssl_ada_wcag_compliance_scanner_outbound",
+                "typo_squatting_brand_bid_hijacking",
+                "reddit_quora_aged_thread_injection",
+                "google_maps_gbp_lead_gen_network",
+                "expired_chrome_extension_acquisitions",
+                "llm_citation_geo_poisoning",
+                "youtube_faceless_high_cpc_compilation_arbitrage",
+                "newsletter_co_reg_sparkloop_arbitrage",
+                "expired_podcast_rss_redirect_arbitrage",
+                "coupon_checkout_tab_under_injection",
+                "pinterest_flipboard_visual_serp_arbitrage",
+                "job_board_xml_feed_programmatic_arbitrage",
+                "domain_drop_catch_backlink_parking_arbitrage",
             },
         )
         for play_id, play in PLAY_DEFINITIONS.items():
+            self.assertEqual(play["id"], play_id)
             self.assertIn(play["track_id"], TRACK_DEFINITIONS)
             self.assertTrue(play["name"] and play["mechanism"] and play["inputs"] and play["workflow"] and play["metrics"])
             self.assertTrue(play["platform_risks"], play_id)
@@ -2044,11 +2074,20 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
                 for req_key in ("failure_mode", "trigger", "impact", "detection_metric", "fallback"):
                     self.assertTrue(risk.get(req_key), (play_id, req_key))
 
+        mapped_plays: set[str] = set()
+        for cand_num, play_tuple in CANDIDATE_PLAY_MAP.items():
+            self.assertTrue(1 <= cand_num <= 29, cand_num)
+            self.assertEqual(len(play_tuple), len(set(play_tuple)), cand_num)
+            for pid in play_tuple:
+                self.assertIn(pid, PLAY_DEFINITIONS)
+                mapped_plays.add(pid)
+        self.assertEqual(mapped_plays, set(PLAY_DEFINITIONS))
+
         # Detached copy isolation & overlap verification
         meta_25_a = get_candidate_track_metadata(25)
         meta_25_b = get_candidate_track_metadata(25)
         self.assertEqual(meta_25_a["track_ids"], ["track_1", "track_2"])
-        self.assertEqual(len(meta_25_a["plays"]), 10)
+        self.assertEqual(len(meta_25_a["plays"]), 22)
         for req_play in (
             "serp_signal_navboost_engineering",
             "newly_registered_domain_trigger_arbitrage",
@@ -2056,6 +2095,9 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
             "ego_bait_directory_badge_arbitrage",
             "competitor_intent_comparison_hijacking",
             "rank_and_rent_pay_per_call_routing",
+            "llm_citation_geo_poisoning",
+            "reddit_quora_aged_thread_injection",
+            "domain_drop_catch_backlink_parking_arbitrage",
         ):
             self.assertIn(req_play, [p["id"] for p in meta_25_a["plays"]])
         meta_25_a["plays"][0]["name"] = "Mutated"
@@ -2072,6 +2114,9 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
             "rank_and_rent_pay_per_call_routing",
             "ego_bait_directory_badge_arbitrage",
             "arizona_abs_mass_tort_cocounsel",
+            "municipal_code_violation_trigger_arbitrage",
+            "saas_technographic_churn_pixel_scraping",
+            "sec_edgar_8k_vendor_trigger_arbitrage",
         ):
             self.assertIn(req_play, [p["id"] for p in meta_18["plays"]])
 
@@ -2080,8 +2125,10 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
 
         meta_5 = get_candidate_track_metadata(5)
         self.assertIn("b2b_class_action_contingency_recovery", [p["id"] for p in meta_5["plays"]])
+        self.assertIn("unclaimed_property_escheatment_arbitrage", [p["id"] for p in meta_5["plays"]])
         meta_22 = get_candidate_track_metadata(22)
         self.assertIn("chrome_extension_contextual_arbitrage", [p["id"] for p in meta_22["plays"]])
+        self.assertIn("expired_chrome_extension_acquisitions", [p["id"] for p in meta_22["plays"]])
 
         # Unmapped candidates get empty arrays cleanly
         meta_10 = get_candidate_track_metadata(10)
@@ -2104,8 +2151,14 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
         self.assertEqual(len(pipeline), 29)
         t1_cands = [c["candidate_number"] for c in pipeline if "track_1" in c["track_ids"]]
         t2_cands = [c["candidate_number"] for c in pipeline if "track_2" in c["track_ids"]]
-        self.assertEqual(sorted(t1_cands), [1, 2, 4, 5, 8, 9, 11, 12, 13, 16, 17, 18, 20, 21, 22, 25, 26, 27, 29])
-        self.assertEqual(sorted(t2_cands), [9, 15, 18, 20, 21, 22, 24, 25, 26, 27, 28, 29])
+        self.assertEqual(
+            sorted(t1_cands),
+            [1, 2, 4, 5, 8, 9, 11, 12, 13, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29],
+        )
+        self.assertEqual(
+            sorted(t2_cands),
+            [9, 13, 15, 16, 18, 20, 21, 22, 24, 25, 26, 27, 28, 29],
+        )
 
         # Store & UI HTML include track filters and platform risk sections while preserving persisted brand settings
         state = self.store.load_publishing_state(self.root, verify_manifest=True)
