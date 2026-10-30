@@ -1,9 +1,9 @@
 {
   "scope": "publishing_store_excluding_previews",
   "sha256": {
-    "audit/existing_work_audit.json": "9fccc7eda9b94a0dd68c6d052d0c84ee454a2e53d5d74111fe553f21c854c361",
-    "brand/brand_system.json": "e68a1fce964a140469b1ef2e334fe4d634e0a721b949cc68b50d5cf5600ae9c1",
-    "catalog/pipeline_29_candidates.json": "8300e0ed755e37f69c8f20108d7730894ce28cc933743ad734b80d1e440968ac",
+    "audit/existing_work_audit.json": "d0287ca9960bc1c4cba82e0297fe71d507b5387b89bfccbe82080f540d78d17c",
+    "brand/brand_system.json": "861e03a4c8c4d332446c959688595b37c38b36860486283d15d01a9a684e48e7",
+    "catalog/pipeline_29_candidates.json": "e3aa9504f3d41326fb258ce0c5771821b4e53ebb2f611cde88203c617fe99d45",
     "research/research_database_summary.json": "59bdc47a842c1176e5fac5a1768a6abb7f017930fe973424fa1b0f6cc3e71af1",
     "site/newsletter_signups.json": "5a97fe09f877c0fccee940246e74f27dc5b6bc83148037af241946b350933794",
     "volumes/vol-001-heir-hunting/chapters/chapter-01.md": "195a67f163ab2ea16d2d2e15929e2ecd36b835c5d3995eb73816670786ad7de8",
@@ -19,9 +19,9 @@
     "volumes/vol-001-heir-hunting/chapters/chapter-11.md": "a1177aeb916db26df3cb275ba6df6e7b6b5e90df06c35a110f61c58d82dad32c",
     "volumes/vol-001-heir-hunting/chapters/chapter-12.md": "6d43da1a3e917b5e3058e2579f814c0cd07bd7688aa92cdbe50804c571b40d58",
     "volumes/vol-001-heir-hunting/diagrams_data.json": "a9b51f9ab8465cd4291406baeba6edf4d2b222ce12035cb5d4941dee840b9924",
-    "volumes/vol-001-heir-hunting/graphics_reviews.json": "65e865ae91780de4c8978c57b4cc1c06806fd49de3ac99f9c745bfd683b5c12c",
-    "volumes/vol-001-heir-hunting/manuscript.json": "4f8e5d0317d61905d404f305ac18c7f5805d49719a17aa9b6f86bc006fcbbe6d",
-    "volumes/vol-001-heir-hunting/metadata.json": "2654d6ef72a45fbac4043c5727d35a5e19de79ab312e31e4354753fa4177ce38",
+    "volumes/vol-001-heir-hunting/graphics_reviews.json": "85ad94e990eb06832fd04e92f3250a907e412bac95478697192957eba15077cd",
+    "volumes/vol-001-heir-hunting/manuscript.json": "98795c1669984ea60cc9064a77c0bd8a0f33aa09f8140c8a9618ee0c04cc1567",
+    "volumes/vol-001-heir-hunting/metadata.json": "024e327d7afed089377f7ee61f24443807f44f87b24f309cba6c867435990198",
     "volumes/vol-001-heir-hunting/scorecard.json": "6f73fe7d5fc7d5508502b9857f4aebdcae943e37babed6c6ade92e2c898b45df",
     "volumes/vol-001-heir-hunting/workbook.json": "be04d461c49045134b5ce73bc96ec9efed535a759b6c0d26becedb7ae9507962"
   }

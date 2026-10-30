@@ -2010,7 +2010,7 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
             get_flagship_scorecard,
         )
         self.assertEqual(set(TRACK_DEFINITIONS), {"track_1", "track_2"})
-        self.assertEqual(len(PLAY_DEFINITIONS), 49)
+        self.assertEqual(len(PLAY_DEFINITIONS), 61)
         self.assertEqual(
             set(PLAY_DEFINITIONS),
             {
@@ -2063,6 +2063,18 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
                 "pinterest_flipboard_visual_serp_arbitrage",
                 "job_board_xml_feed_programmatic_arbitrage",
                 "domain_drop_catch_backlink_parking_arbitrage",
+                "cloud_ai_startup_credit_aggregation_arbitrage",
+                "free_llc_fintech_bounty_stacking",
+                "free_tier_api_waterfall_multiplexing",
+                "serverless_edge_free_tier_empire_hosting",
+                "free_trial_concierge_cpa_arbitrage",
+                "sportsbook_promo_ev_matched_betting_syndicates",
+                "aged_high_karma_social_account_brokerage",
+                "platform_privilege_tier_account_arbitrage",
+                "multi_inbox_free_workspace_outbound_clusters",
+                "verified_fan_ticketing_and_drop_allocation_farming",
+                "airdrop_points_sybil_cluster_farming",
+                "parasitic_free_publishing_account_serp_monopoly",
             },
         )
         for play_id, play in PLAY_DEFINITIONS.items():
@@ -2087,7 +2099,7 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
         meta_25_a = get_candidate_track_metadata(25)
         meta_25_b = get_candidate_track_metadata(25)
         self.assertEqual(meta_25_a["track_ids"], ["track_1", "track_2"])
-        self.assertEqual(len(meta_25_a["plays"]), 22)
+        self.assertEqual(len(meta_25_a["plays"]), 27)
         for req_play in (
             "serp_signal_navboost_engineering",
             "newly_registered_domain_trigger_arbitrage",
@@ -2098,6 +2110,8 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
             "llm_citation_geo_poisoning",
             "reddit_quora_aged_thread_injection",
             "domain_drop_catch_backlink_parking_arbitrage",
+            "serverless_edge_free_tier_empire_hosting",
+            "parasitic_free_publishing_account_serp_monopoly",
         ):
             self.assertIn(req_play, [p["id"] for p in meta_25_a["plays"]])
         meta_25_a["plays"][0]["name"] = "Mutated"
@@ -2117,6 +2131,10 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
             "municipal_code_violation_trigger_arbitrage",
             "saas_technographic_churn_pixel_scraping",
             "sec_edgar_8k_vendor_trigger_arbitrage",
+            "cloud_ai_startup_credit_aggregation_arbitrage",
+            "free_llc_fintech_bounty_stacking",
+            "free_tier_api_waterfall_multiplexing",
+            "multi_inbox_free_workspace_outbound_clusters",
         ):
             self.assertIn(req_play, [p["id"] for p in meta_18["plays"]])
 
@@ -2129,6 +2147,8 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
         meta_22 = get_candidate_track_metadata(22)
         self.assertIn("chrome_extension_contextual_arbitrage", [p["id"] for p in meta_22["plays"]])
         self.assertIn("expired_chrome_extension_acquisitions", [p["id"] for p in meta_22["plays"]])
+        self.assertIn("sportsbook_promo_ev_matched_betting_syndicates", [p["id"] for p in meta_22["plays"]])
+        self.assertIn("airdrop_points_sybil_cluster_farming", [p["id"] for p in meta_22["plays"]])
 
         # Unmapped candidates get empty arrays cleanly
         meta_10 = get_candidate_track_metadata(10)
@@ -2157,7 +2177,7 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
         )
         self.assertEqual(
             sorted(t2_cands),
-            [9, 13, 15, 16, 18, 20, 21, 22, 24, 25, 26, 27, 28, 29],
+            [9, 13, 15, 16, 17, 18, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29],
         )
 
         # Store & UI HTML include track filters and platform risk sections while preserving persisted brand settings
