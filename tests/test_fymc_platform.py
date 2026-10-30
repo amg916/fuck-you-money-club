@@ -2033,6 +2033,7 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
                 "rank_and_rent_pay_per_call_routing",
                 "ego_bait_directory_badge_arbitrage",
                 "b2b_class_action_contingency_recovery",
+                "arizona_abs_mass_tort_cocounsel",
             },
         )
         for play_id, play in PLAY_DEFINITIONS.items():
@@ -2070,8 +2071,12 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
             "social_to_search_ping_post_arbitrage",
             "rank_and_rent_pay_per_call_routing",
             "ego_bait_directory_badge_arbitrage",
+            "arizona_abs_mass_tort_cocounsel",
         ):
             self.assertIn(req_play, [p["id"] for p in meta_18["plays"]])
+
+        meta_21 = get_candidate_track_metadata(21)
+        self.assertIn("arizona_abs_mass_tort_cocounsel", [p["id"] for p in meta_21["plays"]])
 
         meta_5 = get_candidate_track_metadata(5)
         self.assertIn("b2b_class_action_contingency_recovery", [p["id"] for p in meta_5["plays"]])

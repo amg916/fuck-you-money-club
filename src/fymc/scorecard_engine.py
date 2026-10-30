@@ -714,6 +714,43 @@ PLAY_DEFINITIONS = {
             },
         ],
     },
+    "arizona_abs_mass_tort_cocounsel": {
+        "id": "arizona_abs_mass_tort_cocounsel",
+        "track_id": "track_1",
+        "name": "Arizona ABS Law-Firm Ownership & Survivor/Mass-Tort Co-Counsel Arbitrage",
+        "mechanism": (
+            "Leverage Arizona Supreme Court Rule 31.1(c) and ACJA § 7-209 (which abolished ABA Rule 5.4 "
+            "in Arizona via Alternative Business Structure [ABS] licensing) so non-lawyer acquisition "
+            "operators can legally own an Arizona law firm, acquire inbound institutional sexual assault "
+            "survivor claims (juvenile detention facilities, rideshare MDLs, clergy/boarding-school/medical "
+            "lookback windows) and catastrophic mass torts, and participate in lawful co-counsel contingency "
+            "fee splits ($50k–$400k+ per settled case) instead of capped flat marketing fees."
+        ),
+        "inputs": [
+            "Arizona Supreme Court ABS license + designated Compliance Lawyer (ACJA § 7-209)",
+            "Trauma-informed inbound acquisition funnels for state sexual-assault lookback windows & federal MDLs",
+            "24/7 HIPAA-compliant survivor intake, facility/ride-receipt verification, & national trial co-counsel network",
+        ],
+        "workflow": [
+            "Form or partner with a licensed Arizona ABS law firm with an appointed Arizona-bar Compliance Lawyer to legally bridge digital acquisition and legal representation",
+            "Run empathetic, 100% inbound survivor-advocacy campaigns across open statutory lookback windows (juvenile detention centers, Uber/Lyft rideshare MDL 3084, institutional/youth-facility abuse)",
+            "Execute trauma-informed intake, verify facility/detention/rideshare records, and co-counsel with specialized trial litigators under Rule 1.5(e) joint-responsibility agreements to share in back-end settlement fees",
+        ],
+        "metrics": [
+            "Cost per signed & record-verified survivor retainer ($1,200–$3,500 media cost)",
+            "Facility/rideshare corroboration pass rate (%) & zero-fraud docket quality",
+            "Realized co-counsel contingency fee per settled case ($50,000–$400,000+ vs. $3k lead sale)",
+        ],
+        "platform_risks": [
+            {
+                "failure_mode": "Cross-jurisdictional Rule 5.4 fee-splitting challenges, MDL claimant-fraud rejections, or 24–48 month settlement lockup",
+                "trigger": "Splitting fees in non-ABS jurisdictions without genuine legal services/joint responsibility by ABS attorneys, accepting unverified lead-brokered retainers, or undercapitalizing multi-year MDL hold times",
+                "impact": "Disallowance of co-counsel fee division in restrictive states, court dismissal of uncorroborated claims, or working-capital exhaustion before settlement payout",
+                "detection_metric": "100% primary-record corroboration rate (detention/medical/ride logs) and state-by-state Rule 1.5(e)/5.4 ethics opinion sign-off",
+                "fallback": "Ensure licensed ABS attorneys perform substantive legal intake/case-work or pair with an MSO (Management Services Organization) structure in restrictive states, enforce strict primary-document verification before filing, and blend fast-settling single-event injury cases with multi-year institutional dockets",
+            },
+        ],
+    },
 }
 
 CANDIDATE_PLAY_MAP: dict[int, tuple[str, ...]] = {
@@ -721,7 +758,12 @@ CANDIDATE_PLAY_MAP: dict[int, tuple[str, ...]] = {
     2: ("public_record_api_intelligence", "distressed_asset_recovery"),
     4: ("public_record_api_intelligence", "ego_bait_directory_badge_arbitrage"),
     5: ("public_record_api_intelligence", "distressed_asset_recovery", "b2b_class_action_contingency_recovery"),
-    8: ("public_record_api_intelligence", "distressed_asset_recovery", "b2b_class_action_contingency_recovery"),
+    8: (
+        "public_record_api_intelligence",
+        "distressed_asset_recovery",
+        "b2b_class_action_contingency_recovery",
+        "arizona_abs_mass_tort_cocounsel",
+    ),
     9: (
         "public_record_api_intelligence",
         "public_filing_trigger_mail_arbitrage",
@@ -741,6 +783,7 @@ CANDIDATE_PLAY_MAP: dict[int, tuple[str, ...]] = {
         "telegram_channel_signal_scraping",
         "programmatic_seo",
         "ego_bait_directory_badge_arbitrage",
+        "arizona_abs_mass_tort_cocounsel",
         "rank_and_rent_pay_per_call_routing",
         "social_to_search_ping_post_arbitrage",
         "high_velocity_dm_outbound_systems",
@@ -750,10 +793,12 @@ CANDIDATE_PLAY_MAP: dict[int, tuple[str, ...]] = {
     20: (
         "public_filing_trigger_mail_arbitrage",
         "b2b_class_action_contingency_recovery",
+        "arizona_abs_mass_tort_cocounsel",
         "identity_graph_pixel_arbitrage",
     ),
     21: (
         "public_filing_trigger_mail_arbitrage",
+        "arizona_abs_mass_tort_cocounsel",
         "telegram_channel_signal_scraping",
         "rank_and_rent_pay_per_call_routing",
         "social_to_search_ping_post_arbitrage",
@@ -791,6 +836,7 @@ CANDIDATE_PLAY_MAP: dict[int, tuple[str, ...]] = {
         "paid_to_organic_media_arbitrage",
     ),
     26: (
+        "arizona_abs_mass_tort_cocounsel",
         "telegram_channel_signal_scraping",
         "ego_bait_directory_badge_arbitrage",
         "high_velocity_dm_outbound_systems",

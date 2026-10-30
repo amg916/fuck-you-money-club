@@ -2287,6 +2287,36 @@
           ]
         },
         {
+          "id": "arizona_abs_mass_tort_cocounsel",
+          "track_id": "track_1",
+          "name": "Arizona ABS Law-Firm Ownership & Survivor/Mass-Tort Co-Counsel Arbitrage",
+          "mechanism": "Leverage Arizona Supreme Court Rule 31.1(c) and ACJA § 7-209 (which abolished ABA Rule 5.4 in Arizona via Alternative Business Structure [ABS] licensing) so non-lawyer acquisition operators can legally own an Arizona law firm, acquire inbound institutional sexual assault survivor claims (juvenile detention facilities, rideshare MDLs, clergy/boarding-school/medical lookback windows) and catastrophic mass torts, and participate in lawful co-counsel contingency fee splits ($50k–$400k+ per settled case) instead of capped flat marketing fees.",
+          "inputs": [
+            "Arizona Supreme Court ABS license + designated Compliance Lawyer (ACJA § 7-209)",
+            "Trauma-informed inbound acquisition funnels for state sexual-assault lookback windows & federal MDLs",
+            "24/7 HIPAA-compliant survivor intake, facility/ride-receipt verification, & national trial co-counsel network"
+          ],
+          "workflow": [
+            "Form or partner with a licensed Arizona ABS law firm with an appointed Arizona-bar Compliance Lawyer to legally bridge digital acquisition and legal representation",
+            "Run empathetic, 100% inbound survivor-advocacy campaigns across open statutory lookback windows (juvenile detention centers, Uber/Lyft rideshare MDL 3084, institutional/youth-facility abuse)",
+            "Execute trauma-informed intake, verify facility/detention/rideshare records, and co-counsel with specialized trial litigators under Rule 1.5(e) joint-responsibility agreements to share in back-end settlement fees"
+          ],
+          "metrics": [
+            "Cost per signed & record-verified survivor retainer ($1,200–$3,500 media cost)",
+            "Facility/rideshare corroboration pass rate (%) & zero-fraud docket quality",
+            "Realized co-counsel contingency fee per settled case ($50,000–$400,000+ vs. $3k lead sale)"
+          ],
+          "platform_risks": [
+            {
+              "failure_mode": "Cross-jurisdictional Rule 5.4 fee-splitting challenges, MDL claimant-fraud rejections, or 24–48 month settlement lockup",
+              "trigger": "Splitting fees in non-ABS jurisdictions without genuine legal services/joint responsibility by ABS attorneys, accepting unverified lead-brokered retainers, or undercapitalizing multi-year MDL hold times",
+              "impact": "Disallowance of co-counsel fee division in restrictive states, court dismissal of uncorroborated claims, or working-capital exhaustion before settlement payout",
+              "detection_metric": "100% primary-record corroboration rate (detention/medical/ride logs) and state-by-state Rule 1.5(e)/5.4 ethics opinion sign-off",
+              "fallback": "Ensure licensed ABS attorneys perform substantive legal intake/case-work or pair with an MSO (Management Services Organization) structure in restrictive states, enforce strict primary-document verification before filing, and blend fast-settling single-event injury cases with multi-year institutional dockets"
+            }
+          ]
+        },
+        {
           "id": "rank_and_rent_pay_per_call_routing",
           "track_id": "track_2",
           "name": "Rank-and-Rent Digital Real Estate & Pay-Per-Call Routing",
@@ -2499,6 +2529,16 @@
           "track_id": "track_1"
         },
         {
+          "failure_mode": "Cross-jurisdictional Rule 5.4 fee-splitting challenges, MDL claimant-fraud rejections, or 24–48 month settlement lockup",
+          "trigger": "Splitting fees in non-ABS jurisdictions without genuine legal services/joint responsibility by ABS attorneys, accepting unverified lead-brokered retainers, or undercapitalizing multi-year MDL hold times",
+          "impact": "Disallowance of co-counsel fee division in restrictive states, court dismissal of uncorroborated claims, or working-capital exhaustion before settlement payout",
+          "detection_metric": "100% primary-record corroboration rate (detention/medical/ride logs) and state-by-state Rule 1.5(e)/5.4 ethics opinion sign-off",
+          "fallback": "Ensure licensed ABS attorneys perform substantive legal intake/case-work or pair with an MSO (Management Services Organization) structure in restrictive states, enforce strict primary-document verification before filing, and blend fast-settling single-event injury cases with multi-year institutional dockets",
+          "play_id": "arizona_abs_mass_tort_cocounsel",
+          "play_name": "Arizona ABS Law-Firm Ownership & Survivor/Mass-Tort Co-Counsel Arbitrage",
+          "track_id": "track_1"
+        },
+        {
           "failure_mode": "Google Business Profile suspension or contractor payment default",
           "trigger": "Registering fake Google Maps pins at UPS stores/virtual offices or delivering calls before collecting prepaid credit balances",
           "impact": "Loss of Map Pack call volume or uncollected call receivables",
@@ -2689,6 +2729,36 @@
           ]
         },
         {
+          "id": "arizona_abs_mass_tort_cocounsel",
+          "track_id": "track_1",
+          "name": "Arizona ABS Law-Firm Ownership & Survivor/Mass-Tort Co-Counsel Arbitrage",
+          "mechanism": "Leverage Arizona Supreme Court Rule 31.1(c) and ACJA § 7-209 (which abolished ABA Rule 5.4 in Arizona via Alternative Business Structure [ABS] licensing) so non-lawyer acquisition operators can legally own an Arizona law firm, acquire inbound institutional sexual assault survivor claims (juvenile detention facilities, rideshare MDLs, clergy/boarding-school/medical lookback windows) and catastrophic mass torts, and participate in lawful co-counsel contingency fee splits ($50k–$400k+ per settled case) instead of capped flat marketing fees.",
+          "inputs": [
+            "Arizona Supreme Court ABS license + designated Compliance Lawyer (ACJA § 7-209)",
+            "Trauma-informed inbound acquisition funnels for state sexual-assault lookback windows & federal MDLs",
+            "24/7 HIPAA-compliant survivor intake, facility/ride-receipt verification, & national trial co-counsel network"
+          ],
+          "workflow": [
+            "Form or partner with a licensed Arizona ABS law firm with an appointed Arizona-bar Compliance Lawyer to legally bridge digital acquisition and legal representation",
+            "Run empathetic, 100% inbound survivor-advocacy campaigns across open statutory lookback windows (juvenile detention centers, Uber/Lyft rideshare MDL 3084, institutional/youth-facility abuse)",
+            "Execute trauma-informed intake, verify facility/detention/rideshare records, and co-counsel with specialized trial litigators under Rule 1.5(e) joint-responsibility agreements to share in back-end settlement fees"
+          ],
+          "metrics": [
+            "Cost per signed & record-verified survivor retainer ($1,200–$3,500 media cost)",
+            "Facility/rideshare corroboration pass rate (%) & zero-fraud docket quality",
+            "Realized co-counsel contingency fee per settled case ($50,000–$400,000+ vs. $3k lead sale)"
+          ],
+          "platform_risks": [
+            {
+              "failure_mode": "Cross-jurisdictional Rule 5.4 fee-splitting challenges, MDL claimant-fraud rejections, or 24–48 month settlement lockup",
+              "trigger": "Splitting fees in non-ABS jurisdictions without genuine legal services/joint responsibility by ABS attorneys, accepting unverified lead-brokered retainers, or undercapitalizing multi-year MDL hold times",
+              "impact": "Disallowance of co-counsel fee division in restrictive states, court dismissal of uncorroborated claims, or working-capital exhaustion before settlement payout",
+              "detection_metric": "100% primary-record corroboration rate (detention/medical/ride logs) and state-by-state Rule 1.5(e)/5.4 ethics opinion sign-off",
+              "fallback": "Ensure licensed ABS attorneys perform substantive legal intake/case-work or pair with an MSO (Management Services Organization) structure in restrictive states, enforce strict primary-document verification before filing, and blend fast-settling single-event injury cases with multi-year institutional dockets"
+            }
+          ]
+        },
+        {
           "id": "telegram_channel_signal_scraping",
           "track_id": "track_1",
           "name": "Telegram Channel & Deal-Room Signal Scraping",
@@ -2848,6 +2918,16 @@
           "fallback": "Use unambiguous private commercial branding, never mimic government seals or citation numbers, and sell genuine value-add subscriptions (annual compliance updates, tax-assessment appeals, or B2B services)",
           "play_id": "public_filing_trigger_mail_arbitrage",
           "play_name": "New-LLC & Recorded-Deed Trigger-Mail Arbitrage",
+          "track_id": "track_1"
+        },
+        {
+          "failure_mode": "Cross-jurisdictional Rule 5.4 fee-splitting challenges, MDL claimant-fraud rejections, or 24–48 month settlement lockup",
+          "trigger": "Splitting fees in non-ABS jurisdictions without genuine legal services/joint responsibility by ABS attorneys, accepting unverified lead-brokered retainers, or undercapitalizing multi-year MDL hold times",
+          "impact": "Disallowance of co-counsel fee division in restrictive states, court dismissal of uncorroborated claims, or working-capital exhaustion before settlement payout",
+          "detection_metric": "100% primary-record corroboration rate (detention/medical/ride logs) and state-by-state Rule 1.5(e)/5.4 ethics opinion sign-off",
+          "fallback": "Ensure licensed ABS attorneys perform substantive legal intake/case-work or pair with an MSO (Management Services Organization) structure in restrictive states, enforce strict primary-document verification before filing, and blend fast-settling single-event injury cases with multi-year institutional dockets",
+          "play_id": "arizona_abs_mass_tort_cocounsel",
+          "play_name": "Arizona ABS Law-Firm Ownership & Survivor/Mass-Tort Co-Counsel Arbitrage",
           "track_id": "track_1"
         },
         {
@@ -3524,6 +3604,36 @@
       ],
       "plays": [
         {
+          "id": "arizona_abs_mass_tort_cocounsel",
+          "track_id": "track_1",
+          "name": "Arizona ABS Law-Firm Ownership & Survivor/Mass-Tort Co-Counsel Arbitrage",
+          "mechanism": "Leverage Arizona Supreme Court Rule 31.1(c) and ACJA § 7-209 (which abolished ABA Rule 5.4 in Arizona via Alternative Business Structure [ABS] licensing) so non-lawyer acquisition operators can legally own an Arizona law firm, acquire inbound institutional sexual assault survivor claims (juvenile detention facilities, rideshare MDLs, clergy/boarding-school/medical lookback windows) and catastrophic mass torts, and participate in lawful co-counsel contingency fee splits ($50k–$400k+ per settled case) instead of capped flat marketing fees.",
+          "inputs": [
+            "Arizona Supreme Court ABS license + designated Compliance Lawyer (ACJA § 7-209)",
+            "Trauma-informed inbound acquisition funnels for state sexual-assault lookback windows & federal MDLs",
+            "24/7 HIPAA-compliant survivor intake, facility/ride-receipt verification, & national trial co-counsel network"
+          ],
+          "workflow": [
+            "Form or partner with a licensed Arizona ABS law firm with an appointed Arizona-bar Compliance Lawyer to legally bridge digital acquisition and legal representation",
+            "Run empathetic, 100% inbound survivor-advocacy campaigns across open statutory lookback windows (juvenile detention centers, Uber/Lyft rideshare MDL 3084, institutional/youth-facility abuse)",
+            "Execute trauma-informed intake, verify facility/detention/rideshare records, and co-counsel with specialized trial litigators under Rule 1.5(e) joint-responsibility agreements to share in back-end settlement fees"
+          ],
+          "metrics": [
+            "Cost per signed & record-verified survivor retainer ($1,200–$3,500 media cost)",
+            "Facility/rideshare corroboration pass rate (%) & zero-fraud docket quality",
+            "Realized co-counsel contingency fee per settled case ($50,000–$400,000+ vs. $3k lead sale)"
+          ],
+          "platform_risks": [
+            {
+              "failure_mode": "Cross-jurisdictional Rule 5.4 fee-splitting challenges, MDL claimant-fraud rejections, or 24–48 month settlement lockup",
+              "trigger": "Splitting fees in non-ABS jurisdictions without genuine legal services/joint responsibility by ABS attorneys, accepting unverified lead-brokered retainers, or undercapitalizing multi-year MDL hold times",
+              "impact": "Disallowance of co-counsel fee division in restrictive states, court dismissal of uncorroborated claims, or working-capital exhaustion before settlement payout",
+              "detection_metric": "100% primary-record corroboration rate (detention/medical/ride logs) and state-by-state Rule 1.5(e)/5.4 ethics opinion sign-off",
+              "fallback": "Ensure licensed ABS attorneys perform substantive legal intake/case-work or pair with an MSO (Management Services Organization) structure in restrictive states, enforce strict primary-document verification before filing, and blend fast-settling single-event injury cases with multi-year institutional dockets"
+            }
+          ]
+        },
+        {
           "id": "telegram_channel_signal_scraping",
           "track_id": "track_1",
           "name": "Telegram Channel & Deal-Room Signal Scraping",
@@ -3645,6 +3755,16 @@
         }
       ],
       "platform_risks": [
+        {
+          "failure_mode": "Cross-jurisdictional Rule 5.4 fee-splitting challenges, MDL claimant-fraud rejections, or 24–48 month settlement lockup",
+          "trigger": "Splitting fees in non-ABS jurisdictions without genuine legal services/joint responsibility by ABS attorneys, accepting unverified lead-brokered retainers, or undercapitalizing multi-year MDL hold times",
+          "impact": "Disallowance of co-counsel fee division in restrictive states, court dismissal of uncorroborated claims, or working-capital exhaustion before settlement payout",
+          "detection_metric": "100% primary-record corroboration rate (detention/medical/ride logs) and state-by-state Rule 1.5(e)/5.4 ethics opinion sign-off",
+          "fallback": "Ensure licensed ABS attorneys perform substantive legal intake/case-work or pair with an MSO (Management Services Organization) structure in restrictive states, enforce strict primary-document verification before filing, and blend fast-settling single-event injury cases with multi-year institutional dockets",
+          "play_id": "arizona_abs_mass_tort_cocounsel",
+          "play_name": "Arizona ABS Law-Firm Ownership & Survivor/Mass-Tort Co-Counsel Arbitrage",
+          "track_id": "track_1"
+        },
         {
           "failure_mode": "MTProto session ban (UserDeactivatedBanError) or FloodWaitError throttling",
           "trigger": "Aggressive GetParticipantsRequest calls on hidden member lists or high-frequency polling from VoIP virtual SIMs",
@@ -4150,6 +4270,36 @@
           ]
         },
         {
+          "id": "arizona_abs_mass_tort_cocounsel",
+          "track_id": "track_1",
+          "name": "Arizona ABS Law-Firm Ownership & Survivor/Mass-Tort Co-Counsel Arbitrage",
+          "mechanism": "Leverage Arizona Supreme Court Rule 31.1(c) and ACJA § 7-209 (which abolished ABA Rule 5.4 in Arizona via Alternative Business Structure [ABS] licensing) so non-lawyer acquisition operators can legally own an Arizona law firm, acquire inbound institutional sexual assault survivor claims (juvenile detention facilities, rideshare MDLs, clergy/boarding-school/medical lookback windows) and catastrophic mass torts, and participate in lawful co-counsel contingency fee splits ($50k–$400k+ per settled case) instead of capped flat marketing fees.",
+          "inputs": [
+            "Arizona Supreme Court ABS license + designated Compliance Lawyer (ACJA § 7-209)",
+            "Trauma-informed inbound acquisition funnels for state sexual-assault lookback windows & federal MDLs",
+            "24/7 HIPAA-compliant survivor intake, facility/ride-receipt verification, & national trial co-counsel network"
+          ],
+          "workflow": [
+            "Form or partner with a licensed Arizona ABS law firm with an appointed Arizona-bar Compliance Lawyer to legally bridge digital acquisition and legal representation",
+            "Run empathetic, 100% inbound survivor-advocacy campaigns across open statutory lookback windows (juvenile detention centers, Uber/Lyft rideshare MDL 3084, institutional/youth-facility abuse)",
+            "Execute trauma-informed intake, verify facility/detention/rideshare records, and co-counsel with specialized trial litigators under Rule 1.5(e) joint-responsibility agreements to share in back-end settlement fees"
+          ],
+          "metrics": [
+            "Cost per signed & record-verified survivor retainer ($1,200–$3,500 media cost)",
+            "Facility/rideshare corroboration pass rate (%) & zero-fraud docket quality",
+            "Realized co-counsel contingency fee per settled case ($50,000–$400,000+ vs. $3k lead sale)"
+          ],
+          "platform_risks": [
+            {
+              "failure_mode": "Cross-jurisdictional Rule 5.4 fee-splitting challenges, MDL claimant-fraud rejections, or 24–48 month settlement lockup",
+              "trigger": "Splitting fees in non-ABS jurisdictions without genuine legal services/joint responsibility by ABS attorneys, accepting unverified lead-brokered retainers, or undercapitalizing multi-year MDL hold times",
+              "impact": "Disallowance of co-counsel fee division in restrictive states, court dismissal of uncorroborated claims, or working-capital exhaustion before settlement payout",
+              "detection_metric": "100% primary-record corroboration rate (detention/medical/ride logs) and state-by-state Rule 1.5(e)/5.4 ethics opinion sign-off",
+              "fallback": "Ensure licensed ABS attorneys perform substantive legal intake/case-work or pair with an MSO (Management Services Organization) structure in restrictive states, enforce strict primary-document verification before filing, and blend fast-settling single-event injury cases with multi-year institutional dockets"
+            }
+          ]
+        },
+        {
           "id": "identity_graph_pixel_arbitrage",
           "track_id": "track_2",
           "name": "Identity-Graph Pixel & Search-Intent Deanonymization",
@@ -4199,6 +4349,16 @@
           "fallback": "File strictly for verified operating businesses with primary processor/vendor statements and use court-approved third-party claim-filing riders",
           "play_id": "b2b_class_action_contingency_recovery",
           "play_name": "B2B Class-Action & Antitrust Settlement Contingency Recovery",
+          "track_id": "track_1"
+        },
+        {
+          "failure_mode": "Cross-jurisdictional Rule 5.4 fee-splitting challenges, MDL claimant-fraud rejections, or 24–48 month settlement lockup",
+          "trigger": "Splitting fees in non-ABS jurisdictions without genuine legal services/joint responsibility by ABS attorneys, accepting unverified lead-brokered retainers, or undercapitalizing multi-year MDL hold times",
+          "impact": "Disallowance of co-counsel fee division in restrictive states, court dismissal of uncorroborated claims, or working-capital exhaustion before settlement payout",
+          "detection_metric": "100% primary-record corroboration rate (detention/medical/ride logs) and state-by-state Rule 1.5(e)/5.4 ethics opinion sign-off",
+          "fallback": "Ensure licensed ABS attorneys perform substantive legal intake/case-work or pair with an MSO (Management Services Organization) structure in restrictive states, enforce strict primary-document verification before filing, and blend fast-settling single-event injury cases with multi-year institutional dockets",
+          "play_id": "arizona_abs_mass_tort_cocounsel",
+          "play_name": "Arizona ABS Law-Firm Ownership & Survivor/Mass-Tort Co-Counsel Arbitrage",
           "track_id": "track_1"
         },
         {
@@ -4407,6 +4567,36 @@
               "fallback": "File strictly for verified operating businesses with primary processor/vendor statements and use court-approved third-party claim-filing riders"
             }
           ]
+        },
+        {
+          "id": "arizona_abs_mass_tort_cocounsel",
+          "track_id": "track_1",
+          "name": "Arizona ABS Law-Firm Ownership & Survivor/Mass-Tort Co-Counsel Arbitrage",
+          "mechanism": "Leverage Arizona Supreme Court Rule 31.1(c) and ACJA § 7-209 (which abolished ABA Rule 5.4 in Arizona via Alternative Business Structure [ABS] licensing) so non-lawyer acquisition operators can legally own an Arizona law firm, acquire inbound institutional sexual assault survivor claims (juvenile detention facilities, rideshare MDLs, clergy/boarding-school/medical lookback windows) and catastrophic mass torts, and participate in lawful co-counsel contingency fee splits ($50k–$400k+ per settled case) instead of capped flat marketing fees.",
+          "inputs": [
+            "Arizona Supreme Court ABS license + designated Compliance Lawyer (ACJA § 7-209)",
+            "Trauma-informed inbound acquisition funnels for state sexual-assault lookback windows & federal MDLs",
+            "24/7 HIPAA-compliant survivor intake, facility/ride-receipt verification, & national trial co-counsel network"
+          ],
+          "workflow": [
+            "Form or partner with a licensed Arizona ABS law firm with an appointed Arizona-bar Compliance Lawyer to legally bridge digital acquisition and legal representation",
+            "Run empathetic, 100% inbound survivor-advocacy campaigns across open statutory lookback windows (juvenile detention centers, Uber/Lyft rideshare MDL 3084, institutional/youth-facility abuse)",
+            "Execute trauma-informed intake, verify facility/detention/rideshare records, and co-counsel with specialized trial litigators under Rule 1.5(e) joint-responsibility agreements to share in back-end settlement fees"
+          ],
+          "metrics": [
+            "Cost per signed & record-verified survivor retainer ($1,200–$3,500 media cost)",
+            "Facility/rideshare corroboration pass rate (%) & zero-fraud docket quality",
+            "Realized co-counsel contingency fee per settled case ($50,000–$400,000+ vs. $3k lead sale)"
+          ],
+          "platform_risks": [
+            {
+              "failure_mode": "Cross-jurisdictional Rule 5.4 fee-splitting challenges, MDL claimant-fraud rejections, or 24–48 month settlement lockup",
+              "trigger": "Splitting fees in non-ABS jurisdictions without genuine legal services/joint responsibility by ABS attorneys, accepting unverified lead-brokered retainers, or undercapitalizing multi-year MDL hold times",
+              "impact": "Disallowance of co-counsel fee division in restrictive states, court dismissal of uncorroborated claims, or working-capital exhaustion before settlement payout",
+              "detection_metric": "100% primary-record corroboration rate (detention/medical/ride logs) and state-by-state Rule 1.5(e)/5.4 ethics opinion sign-off",
+              "fallback": "Ensure licensed ABS attorneys perform substantive legal intake/case-work or pair with an MSO (Management Services Organization) structure in restrictive states, enforce strict primary-document verification before filing, and blend fast-settling single-event injury cases with multi-year institutional dockets"
+            }
+          ]
         }
       ],
       "platform_risks": [
@@ -4438,6 +4628,16 @@
           "fallback": "File strictly for verified operating businesses with primary processor/vendor statements and use court-approved third-party claim-filing riders",
           "play_id": "b2b_class_action_contingency_recovery",
           "play_name": "B2B Class-Action & Antitrust Settlement Contingency Recovery",
+          "track_id": "track_1"
+        },
+        {
+          "failure_mode": "Cross-jurisdictional Rule 5.4 fee-splitting challenges, MDL claimant-fraud rejections, or 24–48 month settlement lockup",
+          "trigger": "Splitting fees in non-ABS jurisdictions without genuine legal services/joint responsibility by ABS attorneys, accepting unverified lead-brokered retainers, or undercapitalizing multi-year MDL hold times",
+          "impact": "Disallowance of co-counsel fee division in restrictive states, court dismissal of uncorroborated claims, or working-capital exhaustion before settlement payout",
+          "detection_metric": "100% primary-record corroboration rate (detention/medical/ride logs) and state-by-state Rule 1.5(e)/5.4 ethics opinion sign-off",
+          "fallback": "Ensure licensed ABS attorneys perform substantive legal intake/case-work or pair with an MSO (Management Services Organization) structure in restrictive states, enforce strict primary-document verification before filing, and blend fast-settling single-event injury cases with multi-year institutional dockets",
+          "play_id": "arizona_abs_mass_tort_cocounsel",
+          "play_name": "Arizona ABS Law-Firm Ownership & Survivor/Mass-Tort Co-Counsel Arbitrage",
           "track_id": "track_1"
         }
       ],
@@ -7192,6 +7392,36 @@
           "impact": "Delayed payout disbursement or court-mandated fee reduction",
           "detection_metric": "Deficiency-notice rate (<2% target) and 100% court-approved disclosure compliance",
           "fallback": "File strictly for verified operating businesses with primary processor/vendor statements and use court-approved third-party claim-filing riders"
+        }
+      ]
+    },
+    "arizona_abs_mass_tort_cocounsel": {
+      "id": "arizona_abs_mass_tort_cocounsel",
+      "track_id": "track_1",
+      "name": "Arizona ABS Law-Firm Ownership & Survivor/Mass-Tort Co-Counsel Arbitrage",
+      "mechanism": "Leverage Arizona Supreme Court Rule 31.1(c) and ACJA § 7-209 (which abolished ABA Rule 5.4 in Arizona via Alternative Business Structure [ABS] licensing) so non-lawyer acquisition operators can legally own an Arizona law firm, acquire inbound institutional sexual assault survivor claims (juvenile detention facilities, rideshare MDLs, clergy/boarding-school/medical lookback windows) and catastrophic mass torts, and participate in lawful co-counsel contingency fee splits ($50k–$400k+ per settled case) instead of capped flat marketing fees.",
+      "inputs": [
+        "Arizona Supreme Court ABS license + designated Compliance Lawyer (ACJA § 7-209)",
+        "Trauma-informed inbound acquisition funnels for state sexual-assault lookback windows & federal MDLs",
+        "24/7 HIPAA-compliant survivor intake, facility/ride-receipt verification, & national trial co-counsel network"
+      ],
+      "workflow": [
+        "Form or partner with a licensed Arizona ABS law firm with an appointed Arizona-bar Compliance Lawyer to legally bridge digital acquisition and legal representation",
+        "Run empathetic, 100% inbound survivor-advocacy campaigns across open statutory lookback windows (juvenile detention centers, Uber/Lyft rideshare MDL 3084, institutional/youth-facility abuse)",
+        "Execute trauma-informed intake, verify facility/detention/rideshare records, and co-counsel with specialized trial litigators under Rule 1.5(e) joint-responsibility agreements to share in back-end settlement fees"
+      ],
+      "metrics": [
+        "Cost per signed & record-verified survivor retainer ($1,200–$3,500 media cost)",
+        "Facility/rideshare corroboration pass rate (%) & zero-fraud docket quality",
+        "Realized co-counsel contingency fee per settled case ($50,000–$400,000+ vs. $3k lead sale)"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Cross-jurisdictional Rule 5.4 fee-splitting challenges, MDL claimant-fraud rejections, or 24–48 month settlement lockup",
+          "trigger": "Splitting fees in non-ABS jurisdictions without genuine legal services/joint responsibility by ABS attorneys, accepting unverified lead-brokered retainers, or undercapitalizing multi-year MDL hold times",
+          "impact": "Disallowance of co-counsel fee division in restrictive states, court dismissal of uncorroborated claims, or working-capital exhaustion before settlement payout",
+          "detection_metric": "100% primary-record corroboration rate (detention/medical/ride logs) and state-by-state Rule 1.5(e)/5.4 ethics opinion sign-off",
+          "fallback": "Ensure licensed ABS attorneys perform substantive legal intake/case-work or pair with an MSO (Management Services Organization) structure in restrictive states, enforce strict primary-document verification before filing, and blend fast-settling single-event injury cases with multi-year institutional dockets"
         }
       ]
     }
