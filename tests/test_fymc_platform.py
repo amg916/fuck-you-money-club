@@ -2010,7 +2010,7 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
             get_flagship_scorecard,
         )
         self.assertEqual(set(TRACK_DEFINITIONS), {"track_1", "track_2"})
-        self.assertEqual(len(PLAY_DEFINITIONS), 93)
+        self.assertEqual(len(PLAY_DEFINITIONS), 97)
         self.assertEqual(
             set(PLAY_DEFINITIONS),
             {
@@ -2107,6 +2107,10 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
                 "web2app_quiz_subscription_billing_bypass",
                 "agency_ad_spend_card_multiplier_rebate_cycling",
                 "tcpa_litigator_scrub_honeypot_arbitrage",
+                "section_179d_municipal_deduction_allocation_arbitrage",
+                "wotc_hourly_payroll_tax_credit_contingency_engine",
+                "state_film_historic_brownfield_tax_credit_brokerage",
+                "solar_tax_equity_depreciation_strip_syndication",
             },
         )
         for play_id, play in PLAY_DEFINITIONS.items():
@@ -2119,7 +2123,7 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
                     self.assertTrue(risk.get(req_key), (play_id, req_key))
 
         self.assertEqual(set(CANDIDATE_PLAY_MAP), set(range(1, 30)))
-        self.assertEqual(sum(p["track_id"] == "track_1" for p in PLAY_DEFINITIONS.values()), 52)
+        self.assertEqual(sum(p["track_id"] == "track_1" for p in PLAY_DEFINITIONS.values()), 56)
         self.assertEqual(sum(p["track_id"] == "track_2" for p in PLAY_DEFINITIONS.values()), 41)
         self.assertEqual(CANDIDATE_PLAY_MAP[1][0], "public_record_api_intelligence")
         self.assertTrue(all(PLAY_DEFINITIONS[pid]["track_id"] == "track_1" for pid in CANDIDATE_PLAY_MAP[1]))
@@ -2143,7 +2147,21 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
             "web2app_quiz_subscription_billing_bypass",
             "agency_ad_spend_card_multiplier_rebate_cycling",
             "tcpa_litigator_scrub_honeypot_arbitrage",
+            "section_179d_municipal_deduction_allocation_arbitrage",
+            "wotc_hourly_payroll_tax_credit_contingency_engine",
+            "state_film_historic_brownfield_tax_credit_brokerage",
+            "solar_tax_equity_depreciation_strip_syndication",
         }
+        tax_credit_play_ids = {
+            "section_179d_municipal_deduction_allocation_arbitrage",
+            "wotc_hourly_payroll_tax_credit_contingency_engine",
+            "state_film_historic_brownfield_tax_credit_brokerage",
+            "solar_tax_equity_depreciation_strip_syndication",
+        }
+        for candidate in (20, 26):
+            self.assertTrue(tax_credit_play_ids.issubset(CANDIDATE_PLAY_MAP[candidate]), candidate)
+        self.assertIn("section_179d_municipal_deduction_allocation_arbitrage", CANDIDATE_PLAY_MAP[4])
+        self.assertIn("wotc_hourly_payroll_tax_credit_contingency_engine", CANDIDATE_PLAY_MAP[13])
         for play_id in new_play_ids:
             play = PLAY_DEFINITIONS[play_id]
             self.assertEqual(len(play["inputs"]), 3, play_id)
