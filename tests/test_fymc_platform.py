@@ -250,7 +250,7 @@ class PlatformTests(unittest.TestCase):
                  settings=settings, payload=settings, updates=settings)
             state = call("load_publishing_state", **context)
             guarded = state.get("settings", state)
-            self.assertIsNone(guarded["approved_concept_id"])
+            self.assertEqual(guarded["approved_concept_id"], "concept_b")
             self.assertIs(guarded["public_deploy_approved"], False)
             self.assertIs(guarded["paid_sales_approved"], False)
             signup = {"email": "reader@example.com", "consent": True}
@@ -324,7 +324,7 @@ class LiveHTTPTests(unittest.TestCase):
                 with zipfile.ZipFile(io.BytesIO(request("/api/fymc/download?concept=b&fmt=epub"))) as archive:
                     self.assertEqual(archive.read("mimetype"), b"application/epub+zip")
                 settings = request("/api/fymc/settings", {"approved_concept_id": "concept_a"})
-                self.assertIsNone(settings.get("settings", settings)["approved_concept_id"])
+                self.assertEqual(settings.get("settings", settings)["approved_concept_id"], "concept_b")
                 request("/api/fymc/newsletter", {"email": "http-reader@example.com", "consent": True})
             finally:
                 server.shutdown()
@@ -358,10 +358,10 @@ class ExistingRegressionAuditTests:
             self.assertEqual(set(result["rejected"]), set(changes))
             self.assertTrue(result["design_approval_gate_enforced"])
             gates = result["gates"]
-            self.assertIsNone(gates["approved_concept_id"])
+            self.assertEqual(gates["approved_concept_id"], "concept_b")
             self.assertFalse(gates["public_deploy_approved"])
             self.assertFalse(gates["paid_sales_approved"])
-            self.assertEqual(gates["design_approval_status"], "awaiting_owner_approval")
+            self.assertEqual(gates["design_approval_status"], "approved")
             self.assertNotIn("design_approved_at", gates)
 
     def test_http_pricing_and_invalid_sections(self):
@@ -412,13 +412,13 @@ class ExistingRegressionAuditTests:
             brand_path.write_text(json.dumps(brand))
             status, overview = request("/api/fymc/overview")
             self.assertEqual(status, 200)
-            self.assertIsNone(overview["gates"]["approved_concept_id"])
+            self.assertEqual(overview["gates"]["approved_concept_id"], "concept_b")
             for method in ("POST", "PATCH"):
                 status, result = request("/api/fymc/settings",
                     {"pricing_hypotheses": {"digital": {"price": 29}}}, method)
                 self.assertEqual(status, 200)
                 self.assertEqual(result["rejected"], [])
-                self.assertIsNone(result["gates"]["approved_concept_id"])
+                self.assertEqual(result["gates"]["approved_concept_id"], "concept_b")
                 self.assertFalse(result["gates"]["public_deploy_approved"])
                 self.assertFalse(result["gates"]["paid_sales_approved"])
         finally:
@@ -617,8 +617,8 @@ for i in range(8):
                               public_deploy_approved=True, paid_sales_approved=True)
         path.write_text(json.dumps(brand))
         loaded = load_publishing_state(self.root)
-        self.assertIsNone(loaded["gates"]["approved_concept_id"])
-        self.assertIsNone(sync_publishing_store(self.root)["gates"]["approved_concept_id"])
+        self.assertEqual(loaded["gates"]["approved_concept_id"], "concept_b")
+        self.assertEqual(sync_publishing_store(self.root)["gates"]["approved_concept_id"], "concept_b")
         self.assertNotIn("design_approved_at", json.loads(path.read_text())["gates"])
         loaded["brand_system"]["gates"]["approved_concept_id"] = "concept_a"
         with zipfile.ZipFile(io.BytesIO(exporters.render_fymc_epub_bytes(loaded))) as epub:
@@ -2343,6 +2343,174 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
         self.assertIn('id="book-track"', studio_html)
         self.assertIn('id="score-tracks-and-risks"', studio_html)
         self.assertIn('id="business-track"', site_html)
+
+    def test_28_concept_b_master_vol001_5layer_and_vol002_surplus_funds(self):
+        import re
+        from src.app_server import create_server
+        from src.fymc import (
+            FLAGSHIP_VOLUME_ID,
+            VOLUME_002_ID,
+            PUBLISHED_VOLUME_IDS,
+            OWNER_APPROVED_CONCEPT_ID,
+        )
+        from src.fymc.exporters import (
+            export_concept_package,
+            render_fymc_epub_bytes,
+            render_fymc_pdf_bytes,
+        )
+        from src.fymc.qa_validator import run_full_qa_suite, validate_epub_bytes, validate_pdf_bytes
+        from src.fymc.scorecard_engine import get_volume_002_scorecard, get_volume_scorecard
+
+        self.assertEqual(OWNER_APPROVED_CONCEPT_ID, "concept_b")
+        self.assertEqual(PUBLISHED_VOLUME_IDS, (FLAGSHIP_VOLUME_ID, VOLUME_002_ID))
+
+        # 1. Concept B is Owner-Approved Series Master; deploy & sales remain False
+        state = self.store.load_publishing_state(self.root, verify_manifest=True)
+        gates = state["gates"]
+        self.assertEqual(gates["approved_concept_id"], "concept_b")
+        self.assertEqual(gates["design_approval_status"], "approved")
+        self.assertFalse(gates["public_deploy_approved"])
+        self.assertFalse(gates["paid_sales_approved"])
+        stages = state["brand_system"]["workflow_stages"]
+        self.assertEqual(len(stages), 12)
+        for st in stages[:11]:
+            self.assertEqual(st["status"], "completed", st)
+        self.assertEqual(stages[11]["name"], "Publication Approval")
+        self.assertEqual(stages[11]["status"], "staged_preview")
+
+        # 2. Concept B renders as OWNER-APPROVED MASTER EDITION; Concept A/C stay preview
+        pdf_b = render_fymc_pdf_bytes(state, "concept_b", "digital_pdf")
+        pdf_a = render_fymc_pdf_bytes(state, "concept_a", "digital_pdf")
+        self.assertIn(b"OWNER-APPROVED MASTER EDITION - CONCEPT B", pdf_b)
+        self.assertNotIn(b"AWAITING OWNER DESIGN APPROVAL", pdf_b)
+        self.assertIn(b"CONCEPT PREVIEW EDITION - AWAITING OWNER DESIGN APPROVAL", pdf_a)
+        with zipfile.ZipFile(io.BytesIO(render_fymc_epub_bytes(state, "concept_b"))) as epub_b:
+            cover_b = epub_b.read("OEBPS/cover.xhtml")
+            self.assertIn(b"OWNER-APPROVED MASTER EDITION - CONCEPT B", cover_b)
+            self.assertNotIn(b"AWAITING OWNER DESIGN APPROVAL", cover_b)
+        with zipfile.ZipFile(io.BytesIO(render_fymc_epub_bytes(state, "concept_c"))) as epub_c:
+            self.assertIn(b"AWAITING OWNER DESIGN APPROVAL", epub_c.read("OEBPS/cover.xhtml"))
+
+        exp_b_v1 = export_concept_package(self.root, state, "concept_b", volume_id=FLAGSHIP_VOLUME_ID)
+        exp_a_v1 = export_concept_package(self.root, state, "concept_a", volume_id=FLAGSHIP_VOLUME_ID)
+        man_b_v1 = json.loads(Path(exp_b_v1["files"]["manifest.json"]).read_text(encoding="utf-8"))
+        man_a_v1 = json.loads(Path(exp_a_v1["files"]["manifest.json"]).read_text(encoding="utf-8"))
+        self.assertTrue(man_b_v1["approved"])
+        self.assertEqual(man_b_v1["edition_status"], "approved_master")
+        self.assertTrue(man_b_v1["preview_only"])
+        self.assertFalse(man_a_v1["approved"])
+        self.assertEqual(man_a_v1["edition_status"], "concept_preview")
+
+        # 3. Volume 001 (Heir Hunting, 87/100) 5-layer content structure
+        v1 = state["volumes"][FLAGSHIP_VOLUME_ID]
+        self.assertEqual(v1["scorecard"]["total_score"], 87)
+        self.assertEqual(len(v1["manuscript"]["operator_plays"]), 5)
+        self.assertGreater(v1["manuscript"]["total_word_count"], 30000)
+        self.assertGreaterEqual(v1["manuscript"]["expert_youtube_link_count"], 180)
+        for ch in v1["manuscript"]["chapters"]:
+            prose_words = sum(
+                len(re.findall(r"\b\w+\b", str(p)))
+                for sec in ch.get("sections", [])
+                for p in sec.get("paragraphs", [])
+            )
+            self.assertGreaterEqual(prose_words, 1250, f"Vol 001 Q{ch['chapter_number']} prose words={prose_words}")
+            self.assertGreaterEqual(len(ch.get("statutory_citations", [])), 2)
+            self.assertGreaterEqual(len(ch.get("source_citations", [])), 15)
+
+        # 4. Volume 002 (Surplus Funds Recovery, 86/100) 5-layer content structure & exports
+        sc2 = get_volume_002_scorecard()
+        self.assertEqual(sc2["total_score"], 86)
+        self.assertEqual(get_volume_scorecard("vol-002")["candidate_number"], 2)
+        state_v2 = self.store.load_publishing_state(self.root, volume_id=VOLUME_002_ID, verify_manifest=True)
+        self.assertEqual(state_v2["active_volume_id"], VOLUME_002_ID)
+        v2 = state_v2["volume"]
+        self.assertEqual(v2["metadata"]["volume_number"], 2)
+        self.assertEqual(v2["scorecard"]["total_score"], 86)
+        self.assertEqual(len(v2["manuscript"]["operator_plays"]), 6)
+        self.assertGreater(v2["manuscript"]["total_word_count"], 30000)
+        self.assertGreaterEqual(v2["manuscript"]["expert_youtube_link_count"], 180)
+        self.assertEqual(len(v2["workbook"]["worksheets"]), 6)
+        for ch in v2["manuscript"]["chapters"]:
+            prose_words = sum(
+                len(re.findall(r"\b\w+\b", str(p)))
+                for sec in ch.get("sections", [])
+                for p in sec.get("paragraphs", [])
+            )
+            self.assertGreaterEqual(prose_words, 1250, f"Vol 002 Q{ch['chapter_number']} prose words={prose_words}")
+            self.assertGreaterEqual(len(ch.get("statutory_citations", [])), 2)
+            self.assertGreaterEqual(len(ch.get("source_citations", [])), 15)
+
+        pdf_v2_b = render_fymc_pdf_bytes(state_v2, "concept_b", "digital_pdf", volume_id=VOLUME_002_ID)
+        self.assertTrue(validate_pdf_bytes(pdf_v2_b, "digital_pdf")["passed"])
+        self.assertIn(b"VOLUME 002", pdf_v2_b)
+        self.assertIn(b"OWNER-APPROVED MASTER EDITION - CONCEPT B", pdf_v2_b)
+        epub_v2_b = render_fymc_epub_bytes(state_v2, "concept_b", volume_id=VOLUME_002_ID)
+        self.assertTrue(validate_epub_bytes(epub_v2_b)["passed"])
+        exp_b_v2 = export_concept_package(self.root, state_v2, "concept_b")
+        self.assertIn(VOLUME_002_ID, exp_b_v2["files"]["manifest.json"])
+        man_b_v2 = json.loads(Path(exp_b_v2["files"]["manifest.json"]).read_text(encoding="utf-8"))
+        self.assertEqual(man_b_v2["volume_id"], VOLUME_002_ID)
+        self.assertTrue(man_b_v2["approved"])
+        # Ensure omitting volume_id with active Volume 002 state never overwrites Volume 001's export dir
+        man_b_v1_after = json.loads(Path(exp_b_v1["files"]["manifest.json"]).read_text(encoding="utf-8"))
+        self.assertEqual(man_b_v1_after["volume_id"], FLAGSHIP_VOLUME_ID)
+        self.assertTrue(self.store.verify_commit_manifest(self.root, strict=True)["passed"])
+
+        # 5. Full QA across both volumes + multi-volume HTTP routes
+        qa = run_full_qa_suite(self.root, state)
+        self.assertTrue(qa["overall_pass"], qa["issues"])
+        self.assertTrue(qa["gates"]["owner_design_approved"])
+        self.assertTrue(qa["gates"]["all_volumes_pass"])
+        self.assertEqual(set(qa["volume_reports"]), {FLAGSHIP_VOLUME_ID, VOLUME_002_ID})
+
+        server = create_server("127.0.0.1", 0, str(self.root))
+        thread = threading.Thread(target=server.serve_forever, daemon=True)
+        thread.start()
+        base = f"http://127.0.0.1:{server.server_address[1]}"
+
+        def http_req(path, payload=None):
+            req = urllib.request.Request(
+                base + path,
+                data=None if payload is None else json.dumps(payload).encode("utf-8"),
+                headers={"Content-Type": "application/json"},
+            )
+            try:
+                resp = urllib.request.urlopen(req, timeout=60)
+            except urllib.error.HTTPError as err:
+                resp = err
+            with resp:
+                raw = resp.read()
+                ctype = resp.headers.get("Content-Type", "")
+                return resp.code, (json.loads(raw) if "application/json" in ctype else raw)
+
+        try:
+            code, ov2 = http_req(f"/api/fymc/overview?volume={VOLUME_002_ID}")
+            self.assertEqual(code, 200)
+            self.assertEqual(ov2["active_volume_id"], VOLUME_002_ID)
+            self.assertEqual(len(ov2["published_volumes"]), 2)
+            self.assertEqual(ov2["volumes"][1]["status"], "approved_master")
+
+            code, svg2 = http_req(f"/api/fymc/svg/mockup?volume={VOLUME_002_ID}&concept=b&asset=01_front_cover")
+            self.assertEqual(code, 200)
+            self.assertIn(b"002", svg2)
+
+            v1_q1_before = (self.root / "publishing/volumes" / FLAGSHIP_VOLUME_ID / "chapters/chapter-01.md").read_bytes()
+            code, upd = http_req(
+                f"/api/fymc/manuscript/update?volume={VOLUME_002_ID}",
+                {"chapter_id": "Q1", "pull_quote": "Surplus recovery requires verified custody and clean lien priority."},
+            )
+            self.assertEqual(code, 200)
+            self.assertTrue(upd["ok"])
+            v1_q1_after = (self.root / "publishing/volumes" / FLAGSHIP_VOLUME_ID / "chapters/chapter-01.md").read_bytes()
+            self.assertEqual(v1_q1_before, v1_q1_after)
+
+            code, bad_vol = http_req("/api/fymc/overview?volume=vol-999-nonexistent")
+            self.assertEqual(code, 400)
+            self.assertFalse(bad_vol["ok"])
+        finally:
+            server.shutdown()
+            server.server_close()
+            thread.join(timeout=10)
 
 
 if __name__ == "__main__":

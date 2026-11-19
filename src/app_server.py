@@ -498,11 +498,13 @@ def create_handler(state: AppState):
             self.do_GET()
 
         def do_POST(self):
-            path = urllib.parse.urlsplit(self.path).path.rstrip("/") or "/"
+            parts = urllib.parse.urlsplit(self.path)
+            path = parts.path.rstrip("/") or "/"
+            query = urllib.parse.parse_qs(parts.query, keep_blank_values=True)
             try:
                 payload = self._body()
                 if is_fymc_route(path):
-                    return handle_fymc_http(self, state, "POST", path, {}, payload)
+                    return handle_fymc_http(self, state, "POST", path, query, payload)
                 validate_params(payload)
                 if path in EBOOK_ROUTES:
                     return self._ebook(path, payload)
@@ -533,10 +535,12 @@ def create_handler(state: AppState):
                 return self._json({"error": f"{type(exc).__name__}: {exc}"}, 500)
 
         def do_PATCH(self):
-            path = urllib.parse.urlsplit(self.path).path.rstrip("/") or "/"
+            parts = urllib.parse.urlsplit(self.path)
+            path = parts.path.rstrip("/") or "/"
+            query = urllib.parse.parse_qs(parts.query, keep_blank_values=True)
             try:
                 if is_fymc_route(path):
-                    return handle_fymc_http(self, state, "PATCH", path, {}, self._body())
+                    return handle_fymc_http(self, state, "PATCH", path, query, self._body())
                 self.close_connection = True
                 return self._json({"ok": False, "error": f"not found: {path}"}, 404)
             except BadRequestError as exc:

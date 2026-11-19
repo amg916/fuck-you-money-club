@@ -1,0 +1,348 @@
+{
+  "candidate_number": 2,
+  "slug": "surplus-funds-recovery",
+  "title": "Surplus Funds Recovery",
+  "category": "Recovery services",
+  "production_stage": "approved_master",
+  "scores": {
+    "revenue_potential": 22,
+    "profit_margin_potential": 22,
+    "team_efficiency": 18,
+    "startup_accessibility": 12,
+    "automation_potential": 12
+  },
+  "dimension_max": {
+    "revenue_potential": 25,
+    "profit_margin_potential": 25,
+    "team_efficiency": 20,
+    "startup_accessibility": 15,
+    "automation_potential": 15
+  },
+  "total_score": 86,
+  "tier_label": "Elite Small-Team Cash Machine",
+  "evidence_confidence": "High",
+  "uncertainty_band": "±3 pts",
+  "uncertainty_bounds": {
+    "low": 83,
+    "high": 89
+  },
+  "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
+  "score_rationale": {
+    "revenue_potential": "Revenue Potential: 22/25. Fee-based recovery has low inventory needs but uneven claim conversion.",
+    "profit_margin_potential": "Profit Margin Potential: 22/25. Fee-based recovery has low inventory needs but uneven claim conversion.",
+    "team_efficiency": "Team Efficiency: 18/20. Fee-based recovery has low inventory needs but uneven claim conversion.",
+    "startup_accessibility": "Startup Accessibility: 12/15. Fee-based recovery has low inventory needs but uneven claim conversion.",
+    "automation_potential": "Automation Potential: 12/15. Fee-based recovery has low inventory needs but uneven claim conversion."
+  },
+  "economics": {
+    "gross_revenue_range": "$100,000–$750,000 USD annually",
+    "net_profit_margin_range": "25–45%",
+    "owner_net_profit_potential": "$25,000–$337,500 USD annually, before personal taxes and reinvestment",
+    "startup_capital_range": "$10,000–$60,000 USD",
+    "monthly_opex_range": "$2,500–$14,000 USD",
+    "time_to_first_deal": "3–18 months",
+    "typical_team_size": {
+      "full_time_including_owner": 2,
+      "contractors": 2,
+      "total_people": 4
+    },
+    "includes_contractors_note": "Headcount includes the working owner and recurring contractors as people, not FTE equivalents. Contractors may be part-time. Scaled scenario adds one employee and one contractor; external vendor workforces are not counted as internal team members.",
+    "revenue_basis": "Recognized service fees, not client asset value",
+    "cost_basis": "Annual net margins include operating expenses and non-owner labor; monthly opex is fixed/semi-fixed overhead only. No owner salary is deducted. Capital needs may grow beyond startup range.",
+    "estimate_status": "Illustrative assumptions; not verified earnings data"
+  },
+  "scenarios": {
+    "conservative": {
+      "annual_gross_revenue_usd": 100000,
+      "net_profit_margin_pct": 25,
+      "annual_owner_net_profit_usd": 25000,
+      "full_time_including_owner": 2,
+      "contractors": 2,
+      "total_people": 4,
+      "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+    },
+    "base_case": {
+      "annual_gross_revenue_usd": 425000.0,
+      "net_profit_margin_pct": 35.0,
+      "annual_owner_net_profit_usd": 148750,
+      "full_time_including_owner": 2,
+      "contractors": 2,
+      "total_people": 4,
+      "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+    },
+    "scaled_small_team": {
+      "annual_gross_revenue_usd": 750000,
+      "net_profit_margin_pct": 45,
+      "annual_owner_net_profit_usd": 337500,
+      "full_time_including_owner": 3,
+      "contractors": 3,
+      "total_people": 6,
+      "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+    }
+  },
+  "automation_levers": [
+    "Auction-result monitoring",
+    "Claim deadlines",
+    "Document checklists"
+  ],
+  "key_risks": [
+    "Competing claims",
+    "Denied claims",
+    "Fee compression"
+  ],
+  "regulatory_notes": [
+    "Surplus recovery fee caps, assignment validity and waiting periods vary.",
+    "Court filings may require licensed counsel."
+  ],
+  "track_ids": [
+    "track_1"
+  ],
+  "track_labels": [
+    "Asymmetric & Data-Arbitrage Plays"
+  ],
+  "plays": [
+    {
+      "id": "public_record_api_intelligence",
+      "track_id": "track_1",
+      "name": "Public-Record & API Intelligence",
+      "mechanism": "Ingest fragmented county dockets, probate registries, unclaimed property ledgers, and public APIs to surface uncontested claims or high-intent B2B triggers before manual competitors.",
+      "inputs": [
+        "Court & probate dockets",
+        "State controller ledgers",
+        "Public licensing & entity APIs"
+      ],
+      "workflow": [
+        "Poll and normalize county/state record releases on an automated cadence",
+        "Cross-match entity/kinship/lien records and filter by minimum net fee threshold",
+        "Route verified dossiers into compliant outreach and claim execution"
+      ],
+      "metrics": [
+        "Cost per verified lead",
+        "Docket-to-contact latency (hours)",
+        "Net recovery / conversion rate"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Portal rate-limiting or CAPTCHA gating",
+          "trigger": "High-frequency automated polling against county or agency web portals",
+          "impact": "Delayed lead ingestion or temporary IP block on target registry",
+          "detection_metric": "HTTP 429/403 rate and daily record ingestion delta",
+          "fallback": "Switch to scheduled bulk FOIA/public-record exports, official data feeds, and low-frequency cached queues"
+        }
+      ]
+    },
+    {
+      "id": "distressed_asset_recovery",
+      "track_id": "track_1",
+      "name": "Distressed Asset Recovery",
+      "mechanism": "Locate mispriced, orphaned, or administratively stranded assets—tax-sale overages, unclaimed state funds, dormant judgments, government surplus lots, or distressed micro-businesses—and capture a contingent recovery fee or acquisition spread.",
+      "inputs": [
+        "Tax-sale excess proceeds ledgers",
+        "Unclaimed property & judgment dockets",
+        "Surplus auction manifests"
+      ],
+      "workflow": [
+        "Audit statutory fee caps, claim windows, and chain-of-title encumbrances",
+        "Execute skip-tracing or asset inspection to confirm net realizable value",
+        "Lock in contingent recovery agreements or below-intrinsic buyouts"
+      ],
+      "metrics": [
+        "Gross spread / contingent fee per case",
+        "Claim approval rate",
+        "Days from filing to disbursement"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Statutory fee-cap compression or administrative hold",
+          "trigger": "Jurisdiction updates finder fee limits, waiting periods, or filing documentation rules",
+          "impact": "Reduced net fee margin or extended cash conversion cycle",
+          "detection_metric": "County/state rejection notice rate and days-to-payout variance",
+          "fallback": "Diversify across multi-state dockets and use attorney-backed filing partnerships where required"
+        }
+      ]
+    },
+    {
+      "id": "unclaimed_property_escheatment_arbitrage",
+      "track_id": "track_1",
+      "name": "State Treasury Escheatment & Unclaimed Corporate Warrant Recovery",
+      "mechanism": "Ingest state controller/treasury escheatment ledgers and uncashed municipal/corporate warrant registries above $25,000, cross-match corporate officers via Secretary of State filings, and execute statutory recovery agreements for a 10–25% contingent finder fee.",
+      "inputs": [
+        "State controller/treasury escheatment bulk ledgers",
+        "Uncashed municipal warrant & vendor-credit registries",
+        "Secretary of State officer & FEIN cross-match index"
+      ],
+      "workflow": [
+        "Filter state unclaimed-property and uncashed-warrant ledgers for high-value corporate and estate accounts exceeding $25,000",
+        "Resolve active corporate officers, successor entities, or authorized fiduciaries via SOS and skip-trace databases",
+        "Execute state-compliant finder agreements with statutory fee caps and submit notarized claim packages to the treasury administrator"
+      ],
+      "metrics": [
+        "Average gross warrant/escheatment claim size ($25k+)",
+        "Treasury claim approval rate (%)",
+        "Days from notarized filing to state disbursement"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Statutory finder-fee cap violation or waiting-period rejection",
+          "trigger": "Charging above state statutory fee limits (e.g., 10% in CA/FL/NY) or soliciting claims during restricted post-escheatment windows",
+          "impact": "Voided recovery contract, state controller rejection, or administrative penalty",
+          "detection_metric": "State-by-state fee-cap compliance check (100% pass) and claim rejection notice rate",
+          "fallback": "Enforce per-state statutory fee caps and waiting-period rules in intake templates and disclose the owner's right to claim directly for free"
+        }
+      ]
+    },
+    {
+      "id": "probate_docket_inheritance_arbitrage",
+      "track_id": "track_1",
+      "name": "Probate Docket & Pre-Foreclosure Notice-of-Default (NOD) Scraping",
+      "mechanism": "Parse county probate petitions (Letters Testamentary / Letters of Administration) and daily Notice-of-Default (NOD) filings before national aggregators index them, matching out-of-state personal representatives and distressed owners to licensed probate brokers and cash buyers.",
+      "inputs": [
+        "County probate court register of actions & Letters Testamentary filings",
+        "County recorder daily Notice-of-Default (NOD) & Notice-of-Trustee-Sale feeds",
+        "Skip-tracing & out-of-state personal-representative matching pipeline"
+      ],
+      "workflow": [
+        "Extract newly appointed estate personal representatives and real-property inventory from county probate dockets within 24 hours of filing",
+        "Cross-match parcel equity and mortgage balances against county assessor and recorder records",
+        "Deliver empathetic estate-liquidation checklists, property-preservation referrals, or licensed brokerage introductions"
+      ],
+      "metrics": [
+        "Docket-to-first-contact speed vs. national data aggregators (days)",
+        "Personal-representative response & appointment rate (%)",
+        "Commission or referral fee per closed probate/pre-foreclosure parcel"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "State Foreclosure Consultant Act violations or unlicensed brokerage fee-splitting",
+          "trigger": "Charging upfront fees to distressed homeowners in NOD or taking unlicensed real-estate commission splits",
+          "impact": "Voided contracts, treble damages under state foreclosure-protection statutes, or DRE enforcement",
+          "detection_metric": "100% licensed broker co-marketing compliance and zero upfront homeowner fee charges",
+          "fallback": "Monetize strictly via flat-fee marketing/data subscriptions to licensed probate agents or close transactions through a licensed brokerage of record"
+        }
+      ]
+    },
+    {
+      "id": "property_tax_assessment_appeal_contingency",
+      "track_id": "track_1",
+      "name": "Automated Commercial/Residential Property-Tax Appeal Arbitrage",
+      "mechanism": "Ingest county tax-assessor valuation rolls upon annual notice release, run an automated valuation model (AVM) flagging parcels assessed above comparable neighbor equity ratios, and file bulk administrative tax protests for 30–50% of the first year's verified tax reduction.",
+      "inputs": [
+        "Annual county tax-assessor preliminary valuation rolls & parcel GIS characteristics",
+        "Equity-ratio & recent-sale comparable AVM engine",
+        "Bulk administrative ARB (Appraisal Review Board) protest filing & hearing pipeline"
+      ],
+      "workflow": [
+        "Ingest county assessment rolls the day annual valuation notices drop and compute each parcel's assessed-per-sqft percentile against direct neighborhood peers",
+        "Mail personalized pre-filled protest postcards showing the owner's exact estimated over-assessment and a QR code to sign a zero-upfront-cost contingency authorization",
+        "Auto-generate uniform comparable-equity evidence packets, file bulk administrative protests before the county bar date, and collect 30–50% of Year-1 tax savings"
+      ],
+      "metrics": [
+        "Protest-window mail-to-signed-authorization conversion %",
+        "Percentage of appealed parcels receiving an assessment reduction (65–85% target)",
+        "Average net contingency fee per residential ($150–$450) and commercial ($2,000–$15,000) parcel"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "State property-tax consultant licensing requirements or missed county protest bar dates",
+          "trigger": "Representing property owners for a fee without required state registration (e.g., Texas TDLR Property Tax Consultant license) or missing the 30/45-day county filing deadline",
+          "impact": "Rejected bulk filings, administrative fines, or zero contingency revenue for the tax year",
+          "detection_metric": "100% licensed tax-agent sign-off in regulated states and T-minus-7-day bulk filing completion",
+          "fallback": "Partner with licensed local property-tax consultants/attorneys of record in regulated states and automate pre-deadline batch electronic filing"
+        }
+      ]
+    },
+    {
+      "id": "hoa_super_lien_tax_deed_redemption_arbitrage",
+      "track_id": "track_1",
+      "name": "HOA Super-Lien & Sub-Threshold Tax-Deed Statutory Redemption Arbitrage",
+      "mechanism": "Price small HOA priority liens and tax-sale interests using jurisdiction-specific priority, notice, and redemption rules; returns depend on enforceable rights, not assumed title extinguishment.",
+      "inputs": [
+        "County tax-sale and HOA lien records",
+        "Title report and statutory redemption calendar",
+        "Local counsel priority and notice opinion"
+      ],
+      "workflow": [
+        "1. Screen small-balance liens against property value, senior debt, and sale eligibility",
+        "2. Have local counsel verify priority, service, redemption rights, and purchaser restrictions",
+        "3. Bid within a net-recovery ceiling and calendar every payment and notice deadline",
+        "4. Reconcile redemption proceeds or pursue counsel-supervised title resolution after rights expire"
+      ],
+      "metrics": [
+        "Net realized recovery after legal costs",
+        "Capital days outstanding",
+        "Notice and redemption deadline compliance rate"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Sale invalidation or surviving senior lien",
+          "trigger": "Defective notice or incorrect assumption about statutory lien priority",
+          "impact": "Loss of expected recovery and extended title litigation",
+          "detection_metric": "Unresolved title exceptions and notice defects per acquisition",
+          "fallback": "Suspend bidding, seek available statutory refunds, and limit acquisitions to counsel-cleared interests"
+        }
+      ]
+    }
+  ],
+  "platform_risks": [
+    {
+      "failure_mode": "Portal rate-limiting or CAPTCHA gating",
+      "trigger": "High-frequency automated polling against county or agency web portals",
+      "impact": "Delayed lead ingestion or temporary IP block on target registry",
+      "detection_metric": "HTTP 429/403 rate and daily record ingestion delta",
+      "fallback": "Switch to scheduled bulk FOIA/public-record exports, official data feeds, and low-frequency cached queues",
+      "play_id": "public_record_api_intelligence",
+      "play_name": "Public-Record & API Intelligence",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Statutory fee-cap compression or administrative hold",
+      "trigger": "Jurisdiction updates finder fee limits, waiting periods, or filing documentation rules",
+      "impact": "Reduced net fee margin or extended cash conversion cycle",
+      "detection_metric": "County/state rejection notice rate and days-to-payout variance",
+      "fallback": "Diversify across multi-state dockets and use attorney-backed filing partnerships where required",
+      "play_id": "distressed_asset_recovery",
+      "play_name": "Distressed Asset Recovery",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Statutory finder-fee cap violation or waiting-period rejection",
+      "trigger": "Charging above state statutory fee limits (e.g., 10% in CA/FL/NY) or soliciting claims during restricted post-escheatment windows",
+      "impact": "Voided recovery contract, state controller rejection, or administrative penalty",
+      "detection_metric": "State-by-state fee-cap compliance check (100% pass) and claim rejection notice rate",
+      "fallback": "Enforce per-state statutory fee caps and waiting-period rules in intake templates and disclose the owner's right to claim directly for free",
+      "play_id": "unclaimed_property_escheatment_arbitrage",
+      "play_name": "State Treasury Escheatment & Unclaimed Corporate Warrant Recovery",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "State Foreclosure Consultant Act violations or unlicensed brokerage fee-splitting",
+      "trigger": "Charging upfront fees to distressed homeowners in NOD or taking unlicensed real-estate commission splits",
+      "impact": "Voided contracts, treble damages under state foreclosure-protection statutes, or DRE enforcement",
+      "detection_metric": "100% licensed broker co-marketing compliance and zero upfront homeowner fee charges",
+      "fallback": "Monetize strictly via flat-fee marketing/data subscriptions to licensed probate agents or close transactions through a licensed brokerage of record",
+      "play_id": "probate_docket_inheritance_arbitrage",
+      "play_name": "Probate Docket & Pre-Foreclosure Notice-of-Default (NOD) Scraping",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "State property-tax consultant licensing requirements or missed county protest bar dates",
+      "trigger": "Representing property owners for a fee without required state registration (e.g., Texas TDLR Property Tax Consultant license) or missing the 30/45-day county filing deadline",
+      "impact": "Rejected bulk filings, administrative fines, or zero contingency revenue for the tax year",
+      "detection_metric": "100% licensed tax-agent sign-off in regulated states and T-minus-7-day bulk filing completion",
+      "fallback": "Partner with licensed local property-tax consultants/attorneys of record in regulated states and automate pre-deadline batch electronic filing",
+      "play_id": "property_tax_assessment_appeal_contingency",
+      "play_name": "Automated Commercial/Residential Property-Tax Appeal Arbitrage",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Sale invalidation or surviving senior lien",
+      "trigger": "Defective notice or incorrect assumption about statutory lien priority",
+      "impact": "Loss of expected recovery and extended title litigation",
+      "detection_metric": "Unresolved title exceptions and notice defects per acquisition",
+      "fallback": "Suspend bidding, seek available statutory refunds, and limit acquisitions to counsel-cleared interests",
+      "play_id": "hoa_super_lien_tax_deed_redemption_arbitrage",
+      "play_name": "HOA Super-Lien & Sub-Threshold Tax-Deed Statutory Redemption Arbitrage",
+      "track_id": "track_1"
+    }
+  ]
+}

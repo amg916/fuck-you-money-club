@@ -1,31 +1,33 @@
 {
   "concept_id": "concept_a",
+  "volume_id": "vol-001-heir-hunting",
   "approved": false,
+  "edition_status": "concept_preview",
   "preview_only": true,
   "files": {
     "digital_pdf.pdf": {
-      "bytes": 551268,
-      "sha256": "4ac6ef9c7074f718512a150c94f71c948db9d064b2f49003ce8018275c0aecdb"
+      "bytes": 975339,
+      "sha256": "4d1de1cb9677cad66eff1370bf964fa688f71a1d764966d6ce18511a8ce64dff"
     },
     "print_6x9_pdf.pdf": {
-      "bytes": 609314,
-      "sha256": "7b746a66b54dab7a915770d3fc4ae4b2514b9866a012232217fd5aee0503dee0"
+      "bytes": 1102789,
+      "sha256": "29d1b559398d65a26e9304e9a180383f0250b8825282c3fa7a2661d4fe4edbdb"
     },
     "workbook_pdf.pdf": {
-      "bytes": 422095,
-      "sha256": "dc4b9957972b00870c635efb5f19fa1daafeb189b9c841003d5a63d656d3a2eb"
+      "bytes": 612823,
+      "sha256": "0d2cea17f37e9354b775386d6081aedddb9dd12f58b103b9f851e08d9c124369"
     },
     "book.epub": {
-      "bytes": 90848,
-      "sha256": "04326f741602372987fa1cf3a4d87f8ea4ff3f0831062cdbe922275e1ceb633d"
+      "bytes": 158048,
+      "sha256": "73ed7062444485dd0330667ee69e25d22846179cc69359d7f3fe1eca3f3a2a06"
     },
     "art/cover.svg": {
       "bytes": 4001,
       "sha256": "0e325fc236526d966fbe548f1ea90bbb16ef6c821489090b45c92f8c6029d7fc"
     },
     "art/scorecard.svg": {
-      "bytes": 24330,
-      "sha256": "36cc1d4cf5e699e230f8a21406d1775bc93c58bc98817600030ad83b904a034d"
+      "bytes": 35073,
+      "sha256": "85a562eb17c16f11833f109a62a2a9491bd726f9a342ebd57b823afec28f661c"
     },
     "art/diag_01.svg": {
       "bytes": 8518,

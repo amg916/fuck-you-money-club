@@ -11,6 +11,7 @@ from . import (
     MIN_EXPERT_YOUTUBE_LINKS_PER_BOOK,
     MIN_EXPERT_YOUTUBE_LINKS_PER_CHAPTER,
     parse_expert_youtube_deep_link,
+    resolve_volume_slug,
 )
 from .design_concepts import CONCEPTS, render_scorecard_svg
 from .diagrams_engine import render_all_diagrams_for_concept
@@ -405,9 +406,39 @@ def validate_manuscript_youtube_links(
     )
 
 
-def run_full_qa_suite(root_dir: Path, state: dict) -> dict:
-    """Run in memory; do not overwrite previews while validating."""
-    metadata, manuscript, workbook, diagrams, scorecard, approved = _unpack_state(state)
+def run_full_qa_suite(root_dir: Path, state: dict, *, volume_id: object = None) -> dict:
+    """Run in memory, retaining primary-volume counts when aggregating volumes."""
+    report = _run_single_volume_qa(state, volume_id)
+    volumes = state.get('volumes')
+    if volume_id is None and isinstance(volumes, dict) and volumes:
+        metadata, _, _, _, _, _ = _unpack_state(state)
+        active_volume = state.get('volume')
+        active_slug = next((slug for slug, vol in volumes.items() if vol is active_volume), None)
+        if active_slug is None:
+            active_slug = resolve_volume_slug(metadata.get('volume_slug') or metadata.get('volume_id')
+                                              or metadata.get('volume_number'))
+        volume_reports = {active_slug: report}
+        issues = list(report['issues'])
+        for slug in volumes:
+            if slug == active_slug:
+                continue
+            try:
+                sub_report = _run_single_volume_qa(state, slug)
+            except Exception as exc:
+                sub_report = {'overall_pass': False,
+                              'issues': [f'{type(exc).__name__}: {exc}']}
+            volume_reports[slug] = sub_report
+            issues.extend(f'{slug}: {issue}' for issue in sub_report['issues'])
+        report = {**report, 'issues': issues, 'overall_pass': not issues,
+                  'volume_reports': volume_reports,
+                  'gates': {**report['gates'],
+                            'all_volumes_pass': all(r['overall_pass'] for r in volume_reports.values())}}
+    return report
+
+
+def _run_single_volume_qa(state: dict, volume_id: object = None) -> dict:
+    """Validate one volume without overwriting previews or aggregating counts."""
+    metadata, manuscript, workbook, diagrams, scorecard, approved = _unpack_state(state, volume_id=volume_id)
     issues, exports, svg_count, template_count = [], {}, 0, 0
     yt_report = validate_manuscript_youtube_links(manuscript)
     issues.extend(yt_report['issues'])
@@ -445,7 +476,7 @@ def run_full_qa_suite(root_dir: Path, state: dict) -> dict:
         exports[concept_id] = {}
         for mode in ('digital_pdf', 'print_6x9_pdf', 'workbook_pdf', 'epub'):
             try:
-                report = validate_epub_bytes(render_fymc_epub_bytes(state, concept_id)) if mode == 'epub' else validate_pdf_bytes(render_fymc_pdf_bytes(state, concept_id, mode), mode)
+                report = validate_epub_bytes(render_fymc_epub_bytes(state, concept_id, volume_id=volume_id)) if mode == 'epub' else validate_pdf_bytes(render_fymc_pdf_bytes(state, concept_id, mode, volume_id=volume_id), mode)
                 if report.get('youtube_link_count', 0) < MIN_EXPERT_YOUTUBE_LINKS_PER_BOOK:
                     report['issues'].append(
                         f'Exported clickable YouTube deep links ({report.get("youtube_link_count", 0)}) below minimum floor of {MIN_EXPERT_YOUTUBE_LINKS_PER_BOOK}'

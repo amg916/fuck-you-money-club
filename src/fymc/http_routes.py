@@ -4,7 +4,7 @@ from __future__ import annotations
 import hashlib
 from pathlib import Path
 
-from . import WORKFLOW_STAGES
+from . import PUBLISHED_VOLUME_IDS, WORKFLOW_STAGES, resolve_volume_slug
 from .brand_and_catalog import (EDITABLE_CHAPTER_FIELDS, VOLUME_SLUG,
                                 CorruptStoreError, _resolve_contained,
                                 load_publishing_state,
@@ -49,7 +49,7 @@ def is_fymc_route(path: str) -> bool:
     return path in ("/studio", "/site") or path.startswith("/api/fymc/")
 
 
-def _norm_concept(val, default="concept_a"):
+def _norm_concept(val, default="concept_b"):
     val = default if val is None or val == "" else val
     aliases = {"a": "concept_a", "b": "concept_b", "c": "concept_c",
                "concept_a": "concept_a", "concept_b": "concept_b", "concept_c": "concept_c"}
@@ -74,12 +74,18 @@ def _candidate_summary(candidate):
 
 
 def _five_volume_collection(pub):
-    metadata = pub["volume"]["metadata"]
-    volumes = [dict(metadata, status=metadata.get("publication_status", "staged_preview"))]
-    for number in range(2, 6):
-        volumes.append({"volume_number": number, "title": "Title pending",
-                        "status": "proposed", "public_deploy_approved": False,
-                        "paid_sales_approved": False})
+    metadata = (pub["volumes"]["vol-001-heir-hunting"]["metadata"]
+                if "volumes" in pub else pub["volume"]["metadata"])
+    volumes = [dict(metadata, status="approved_master")]
+    for number, title in enumerate(("Surplus Funds Recovery", "Digital Product Empire",
+                                    "AI-Powered Micro SaaS", "High-Ticket Affiliate Marketing"), 2):
+        if number == 2 and "vol-002-surplus-funds-recovery" in pub.get("volumes", {}):
+            volumes.append(dict(pub["volumes"]["vol-002-surplus-funds-recovery"]["metadata"],
+                                status="approved_master"))
+        else:
+            volumes.append({"volume_number": number, "title": title,
+                            "status": "proposed", "public_deploy_approved": False,
+                            "paid_sales_approved": False})
     return volumes
 
 
@@ -113,6 +119,10 @@ def handle_fymc_http(handler, state, method: str, path: str, query: dict, body: 
             body = {}
         if not isinstance(body, dict):
             raise ValueError("JSON body must be an object")
+        raw_vol = q("volume") if q("volume") is not None else (
+            q("volume_id") if q("volume_id") is not None else (
+                body.get("volume_id") if "volume_id" in body else body.get("volume")))
+        vol_slug = resolve_volume_slug(raw_vol)
         root_dir = Path(getattr(state, "fymc_root_dir", None) or (
             ROOT if state.data_dir.resolve() == (ROOT / "data").resolve() else state.data_dir))
         with state.lock:
@@ -120,16 +130,21 @@ def handle_fymc_http(handler, state, method: str, path: str, query: dict, body: 
             initialized = getattr(state, "_fymc_initialized_roots", set())
             if root_key not in initialized:
                 if not ((root_dir / "publishing" / "brand" / "brand_system.json").is_file()
-                        and (root_dir / "publishing" / "volumes" / VOLUME_SLUG / "manuscript.json").is_file()):
+                        and all((root_dir / "publishing" / "volumes" / slug / "manuscript.json").is_file()
+                                for slug in PUBLISHED_VOLUME_IDS)):
                     sync_publishing_store(root_dir, state.abridged_list, state.raw_videos, force=False)
                 state._fymc_initialized_roots = initialized | {root_key}
-            pub = load_publishing_state(root_dir)
+            pub = load_publishing_state(root_dir, volume_id=vol_slug)
         volume = pub["volume"]
+        default_concept = pub["brand_system"].get("active_preview_concept", "concept_b")
         if method == "GET" and path == "/api/fymc/overview":
             return handler._json({"ok": True, "brand_system": pub["brand_system"],
                 "gates": pub["brand_system"].get("gates", {}), "workflow_stages": WORKFLOW_STAGES,
                 "concepts": get_all_concepts(), "mockup_specs": MOCKUP_SPECS,
                 "interior_templates": INTERIOR_TEMPLATES,
+                "active_volume_id": pub.get("active_volume_id", vol_slug),
+                "published_volumes": [pub["volumes"][s]["metadata"] for s in PUBLISHED_VOLUME_IDS
+                                      if s in pub.get("volumes", {})],
                 "volume": {key: volume[key] for key in (
                     "metadata", "scorecard", "diagrams_data", "graphics_reviews")},
                 "counts": pub["counts"],
@@ -164,11 +179,13 @@ def handle_fymc_http(handler, state, method: str, path: str, query: dict, body: 
             if isinstance(raw_ch, bool) or raw_ch is None:
                 raise ValueError("invalid_chapter_number")
             patch = body.get("patch", {
-                k: v for k, v in body.items() if k not in ("chapter_number", "chapter_id")
+                k: v for k, v in body.items()
+                if k not in ("chapter_number", "chapter_id", "volume", "volume_id", "expected_revision")
             })
             if not isinstance(patch, dict):
                 raise ValueError("patch must be an object")
-            res = mutation(update_chapter_content, raw_ch, patch, body.get("expected_revision"))
+            res = mutation(lambda r, *a: update_chapter_content(r, *a, volume_id=vol_slug),
+                           raw_ch, patch, body.get("expected_revision"))
             if res.get("error") == "revision_conflict":
                 return handler._json(res, 409)
             if res.get("error") == "invalid_chapter_number":
@@ -176,13 +193,13 @@ def handle_fymc_http(handler, state, method: str, path: str, query: dict, body: 
             status = 200 if res["ok"] else (404 if res.get("error") == "chapter_not_found" else 400)
             return handler._json(res, status)
         if method == "GET" and path == "/api/fymc/svg/mockup":
-            concept = _norm_concept(q("concept"))
+            concept = _norm_concept(q("concept"), default_concept)
             asset = q("asset") or "05_3d_hardcover_mockup"
             clean = str(q("clean") or "0").lower() in ("1", "true", "yes")
             return text_response(render_cover_or_mockup_svg(concept, asset, volume["metadata"],
                 volume["scorecard"], marketplace_clean=clean), "image/svg+xml")
         if method == "GET" and path == "/api/fymc/svg/diagram":
-            concept = _norm_concept(q("concept"))
+            concept = _norm_concept(q("concept"), default_concept)
             diag_id = q("diagram") or "diag-01-end-to-end-workflow"
             diag = next((d for i, d in enumerate(_diagrams_list(pub), 1)
                          if str(diag_id) in (str(d.get("diagram_id")), str(i))), None)
@@ -190,7 +207,7 @@ def handle_fymc_http(handler, state, method: str, path: str, query: dict, body: 
                 return handler._json({"ok": False, "error": "Unknown diagram"}, 404)
             return text_response(render_diagram_svg(diag, concept), "image/svg+xml")
         if method == "GET" and path == "/api/fymc/svg/scorecard":
-            concept = _norm_concept(q("concept"))
+            concept = _norm_concept(q("concept"), default_concept)
             selector = q("candidate") or q("candidate_number") or q("business_id") or q("slug")
             target = str(selector or "1")
             cand = next((c for c in _candidates(pub) if target in (
@@ -199,7 +216,7 @@ def handle_fymc_http(handler, state, method: str, path: str, query: dict, body: 
                 return handler._json({"ok": False, "error": "Unknown candidate"}, 404)
             return text_response(render_scorecard_svg(cand, concept), "image/svg+xml")
         if method == "GET" and path == "/api/fymc/preview-page":
-            concept = _norm_concept(q("concept"))
+            concept = _norm_concept(q("concept"), default_concept)
             chapter = q("chapter") or q("page")
             ch = int(chapter or 1) if chapter else None
             guides = str(q("guides") or "0").lower() in ("1", "true", "yes")
@@ -209,17 +226,19 @@ def handle_fymc_http(handler, state, method: str, path: str, query: dict, body: 
                 show_print_guides=guides), "text/html")
         if method == "POST" and path == "/api/fymc/graphics/review":
             concept = _norm_concept(body.get("concept_id") or body.get("concept"))
-            res = mutation(update_graphic_review, str(body.get("graphic_id") or body.get("asset_id") or ""),
+            res = mutation(lambda r, *a: update_graphic_review(r, *a, volume_id=vol_slug),
+                           str(body.get("graphic_id") or body.get("asset_id") or ""),
                            concept, str(body.get("status") or ""), body.get("notes") if "notes" in body else None)
             return handler._json(res, 200 if res["ok"] else 400)
         if method == "POST" and path == "/api/fymc/export":
             concept = _norm_concept(body.get("concept_id") or body.get("concept"))
             with state.lock:
-                res = export_concept_package(root_dir, load_publishing_state(root_dir), concept)
+                res = export_concept_package(root_dir,
+                    load_publishing_state(root_dir, volume_id=vol_slug), concept, volume_id=vol_slug)
                 state._fymc_qa_cache = None
             return handler._json({"ok": True, **res})
         if method == "GET" and path == "/api/fymc/download":
-            concept = _norm_concept(q("concept"))
+            concept = _norm_concept(q("concept"), default_concept)
             raw_fmt = (q("fmt") or q("format") or "digital_pdf").lower()
             fmt = {"pdf": "digital_pdf", "digital_pdf": "digital_pdf", "print": "print_6x9_pdf",
                    "print_6x9_pdf": "print_6x9_pdf", "epub": "epub", "workbook": "workbook_pdf",
@@ -227,20 +246,28 @@ def handle_fymc_http(handler, state, method: str, path: str, query: dict, body: 
             if fmt is None:
                 raise ValueError("Invalid download format")
             if fmt == "epub":
-                data, mime, ext = render_fymc_epub_bytes(pub, concept), "application/epub+zip", "epub"
+                data = render_fymc_epub_bytes(pub, concept, volume_id=vol_slug)
+                mime, ext = "application/epub+zip", "epub"
             elif fmt == "bundle_zip":
-                data, mime, ext = render_fymc_bundle_zip_bytes(pub, concept), "application/zip", "zip"
+                data = render_fymc_bundle_zip_bytes(pub, concept, volume_id=vol_slug)
+                mime, ext = "application/zip", "zip"
             else:
-                data, mime, ext = render_fymc_pdf_bytes(pub, concept, fmt), "application/pdf", "pdf"
+                data = render_fymc_pdf_bytes(pub, concept, fmt, volume_id=vol_slug)
+                mime, ext = "application/pdf", "pdf"
+            filename_prefix = "fymc" if vol_slug == VOLUME_SLUG else f"fymc-{vol_slug}"
             return handler._raw(200, data, mime, {"Content-Disposition":
-                f'attachment; filename="fymc-{concept}-{fmt}.{ext}"'})
+                f'attachment; filename="{filename_prefix}-{concept}-{fmt}.{ext}"'})
         if method == "GET" and path == "/api/fymc/qa":
             refresh = str(q("refresh") or "0").lower() in ("1", "true")
             with state.lock:
                 cache = getattr(state, "_fymc_qa_cache", None)
-                cache_key = (root_key, _store_revision(root_dir))
+                cache_key = (root_key,
+                    vol_slug if (q("volume") is not None or q("volume_id") is not None) else "all",
+                    _store_revision(root_dir))
                 if refresh or cache is None or cache[0] != cache_key:
-                    report = run_full_qa_suite(root_dir, load_publishing_state(root_dir))
+                    report = run_full_qa_suite(root_dir,
+                        load_publishing_state(root_dir, volume_id=vol_slug),
+                        volume_id=vol_slug if (q("volume") is not None or q("volume_id") is not None) else None)
                     state._fymc_qa_cache = (cache_key, report)
                 else:
                     report = cache[1]
@@ -255,6 +282,7 @@ def handle_fymc_http(handler, state, method: str, path: str, query: dict, body: 
                 patch.pop("owner_explicit_deploy_approval", None)
                 patch.pop("owner_explicit_sales_approval", None)
                 patch.pop("owner_explicit_concept_approval", None)
+                patch.pop("gates", None)
                 for key in ("active_preview_concept", "approved_concept_id"):
                     if key in patch and patch[key] is not None:
                         patch[key] = _norm_concept(patch[key])

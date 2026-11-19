@@ -41,10 +41,14 @@ from . import (
     BRAND_TAGLINE,
     RATING_SYSTEM_NAME,
     FLAGSHIP_VOLUME_ID,
+    VOLUME_002_ID,
+    PUBLISHED_VOLUME_IDS,
+    OWNER_APPROVED_CONCEPT_ID,
     MIN_EXPERT_YOUTUBE_LINKS_PER_BOOK,
     TARGET_EXPERT_YOUTUBE_LINKS_PER_BOOK,
     MIN_EXPERT_YOUTUBE_LINKS_PER_CHAPTER,
     count_manuscript_youtube_links,
+    resolve_volume_slug,
     WORKFLOW_STAGES,
 )
 from .scorecard_engine import (
@@ -53,6 +57,7 @@ from .scorecard_engine import (
     get_candidate_track_metadata,
     build_29_candidate_pipeline,
     get_flagship_scorecard,
+    get_volume_002_scorecard,
     compute_scorecard,
     resolve_score_value,
 )
@@ -63,11 +68,18 @@ from .volume_001_manuscript import (
     build_volume_001_workbook,
     compute_manuscript_word_count,
 )
+from .volume_002_manuscript import (
+    build_volume_002_manuscript,
+    build_volume_002_diagrams_data,
+)
+from .volume_002_chapters_b import build_volume_002_workbook
 
 __all__ = [
     "CorruptStoreError",
     "PUBLISHING_DIRNAME",
     "VOLUME_SLUG",
+    "VOLUME_002_SLUG",
+    "PUBLISHED_VOLUME_SLUGS",
     "CONCEPT_IDS",
     "CONCEPT_LABELS",
     "COVER_GRAPHIC_IDS",
@@ -95,6 +107,8 @@ PUBLISHING_DIRNAME = "publishing"
 # The on-disk folder for the flagship volume is pinned by the publishing spec;
 # ``FLAGSHIP_VOLUME_ID`` is carried inside the metadata payload instead.
 VOLUME_SLUG = "vol-001-heir-hunting"
+VOLUME_002_SLUG = VOLUME_002_ID
+PUBLISHED_VOLUME_SLUGS = PUBLISHED_VOLUME_IDS
 
 CONCEPT_IDS = ("concept_a", "concept_b", "concept_c")
 
@@ -170,13 +184,15 @@ _COMPLETED_STAGES = (
     "Editorial Outline",
     "Manuscript",
     "Fact-Checking",
+    "Design",
+    "Graphics",
     "Scorecard",
-)
-_AWAITING_APPROVAL_STAGES = ("Design", "Graphics")
-_STAGED_PREVIEW_STAGES = (
     "Proofreading",
     "Export",
     "Quality Assurance",
+)
+_AWAITING_APPROVAL_STAGES = ()
+_STAGED_PREVIEW_STAGES = (
     "Publication Approval",
 )
 
@@ -371,8 +387,9 @@ def _publishing_dir(root_dir: Path) -> Path:
     return _resolve_contained(root, root / PUBLISHING_DIRNAME)
 
 
-def _volume_dir(root_dir: Path) -> Path:
-    return _publishing_dir(root_dir) / "volumes" / VOLUME_SLUG
+def _volume_dir(root_dir: Path, volume_id: object = None) -> Path:
+    slug = resolve_volume_slug(volume_id)
+    return _resolve_contained(root_dir, _publishing_dir(root_dir) / "volumes" / slug)
 
 
 def _write_json(path: Path, payload: object) -> Path:
@@ -505,10 +522,7 @@ def _write_bytes(path, data):
             temporary.unlink(missing_ok=True)
 
 
-def _recover_export_journals(root_dir):
-    root = Path(root_dir).resolve()
-    pub = _resolve_contained(root, root / PUBLISHING_DIRNAME)
-    previews_dir = _resolve_contained(root, pub / "previews")
+def _recover_single_previews_dir(root: Path, previews_dir: Path):
     if not previews_dir.exists() and not previews_dir.is_symlink():
         return
     if not previews_dir.is_dir():
@@ -566,6 +580,20 @@ def _recover_export_journals(root_dir):
             dirty = True
     if dirty:
         _fsync_dir(previews_dir)
+
+
+def _recover_export_journals(root_dir):
+    root = Path(root_dir).resolve()
+    pub = _resolve_contained(root, root / PUBLISHING_DIRNAME)
+    previews_dir = _resolve_contained(root, pub / "previews")
+    _recover_single_previews_dir(root, previews_dir)
+    if previews_dir.is_dir() and not previews_dir.is_symlink():
+        for slug in PUBLISHED_VOLUME_SLUGS:
+            if slug == VOLUME_SLUG:
+                continue
+            nested = _resolve_contained(root, previews_dir / slug)
+            if nested.exists() or nested.is_symlink():
+                _recover_single_previews_dir(root, nested)
 
 
 def _recover_journal(root_dir):
@@ -887,9 +915,12 @@ def _build_workflow_stages() -> list:
 
 def _normalize_gates(gates):
     result = dict(gates) if isinstance(gates, dict) else {}
-    result.update(design_approval_status="awaiting_owner_approval",
-                  approved_concept_id=None, public_deploy_approved=False,
-                  paid_sales_approved=False)
+    result.update(
+        design_approval_status="approved",
+        approved_concept_id=OWNER_APPROVED_CONCEPT_ID,
+        public_deploy_approved=False,
+        paid_sales_approved=False,
+    )
     result.pop("design_approved_at", None)
     return result
 
@@ -916,13 +947,11 @@ def build_default_brand_system() -> dict:
             "marketplace_safe_cover_ready": True,
         },
         "gates": _normalize_gates({}),
-        # Preview-only: drives which concept tab opens first in the UI.
-        # It is NOT an approval signal — see gates.approved_concept_id.
-        "active_preview_concept": "concept_a",
+        "active_preview_concept": OWNER_APPROVED_CONCEPT_ID,
         "pricing_hypotheses": {
             "digital_playbook": {
-                "label": "Digital Playbook Edition",
-                "range_label": "$19–$39",
+                "label": "Digital Playbook Edition (Concept B)",
+                "range_label": "$29 Approved ($19–$39 Band)",
                 "test_price_usd": 29,
                 "includes": [
                     "8.5×11 Executive Digital PDF",
@@ -931,11 +960,25 @@ def build_default_brand_system() -> dict:
                 ],
                 "hypothesis": True,
                 "paid_checkout_enabled": False,
+                "notes": "8.5x11 Executive Digital PDF + Reflowable EPUB 3.0 + Clickable Source Index (97.1% direct net margin).",
+            },
+            "print_paperback": {
+                "label": "6×9 Print Paperback Edition (Concept B)",
+                "range_label": "$34 Approved ($2.99–$4.36 KDP COGS)",
+                "test_price_usd": 34,
+                "includes": [
+                    "6×9 Print Paperback Edition",
+                    "14 Editorial Interior Templates",
+                    "8 Structured Vector Diagrams",
+                ],
+                "notes": "Spec B (78pp Standard Color: $2.99 KDP COGS, +$17.41 KDP net, +$28.56 Direct net) & Spec D (280pp Expanded B&W: $4.36 KDP COGS, +$16.04 KDP net, +$27.11 Direct net).",
+                "hypothesis": True,
+                "paid_checkout_enabled": False,
             },
             "operator_bundle": {
-                "label": "Print + Companion Workbook Bundle",
-                "range_label": "$49–$99",
-                "test_price_usd": 69,
+                "label": "Complete Operator Bundle (Print + Digital + Workbook)",
+                "range_label": "$79 Approved ($49–$99 Band)",
+                "test_price_usd": 79,
                 "includes": [
                     "6×9 Print Edition",
                     "Digital PDF + EPUB",
@@ -943,6 +986,7 @@ def build_default_brand_system() -> dict:
                 ],
                 "hypothesis": True,
                 "paid_checkout_enabled": False,
+                "notes": "6x9 Print Paperback + 8.5x11 Digital PDF + EPUB 3.0 + 6-Worksheet Operator Companion Workbook.",
             },
             "founder_collection": {
                 "label": "Multi-Volume Playbook Collection",
@@ -957,9 +1001,9 @@ def build_default_brand_system() -> dict:
                 "paid_checkout_enabled": False,
             },
             "club_membership": {
-                "label": "The Fuck You Money Club Membership",
-                "range_label": "$19–$49/mo",
-                "test_price_usd": 39,
+                "label": "The Fuck You Money Club Charter Membership",
+                "range_label": "$290/yr ($39/mo Charter Tier)",
+                "test_price_usd": 290,
                 "billing_period": "monthly",
                 "includes": [
                     "New Playbook Releases",
@@ -968,6 +1012,7 @@ def build_default_brand_system() -> dict:
                 ],
                 "hypothesis": True,
                 "paid_checkout_enabled": False,
+                "notes": "All Big Money Playbook releases, live 29-business Money-to-Manpower deal scorecards, and operator templates.",
             },
         },
         "workflow_stages": _build_workflow_stages(),
@@ -979,7 +1024,13 @@ def build_default_brand_system() -> dict:
             "require_across_all_editions": True,
         },
         "editorial_tracks": deepcopy(TRACK_DEFINITIONS),
-        "editorial_notes": "",
+        "editorial_notes": (
+            "OWNER APPROVED: (1) Concept B — Bold Editorial (#09090B / #FFD400 / #FFFFFF) locked as "
+            "Owner-Approved Series Master; (2) Volume 001 — Heir Hunting (87/100) and Volume 002 — "
+            "Surplus Funds Recovery (86/100) completed through Quality Assurance with 5-layer FYMC "
+            "content architecture; (3) Public deploy and paid checkout remain disabled pending final "
+            "Publication Approval."
+        ),
     }
 
 
@@ -1405,6 +1456,17 @@ def _flagship_scorecard(pipeline: list) -> dict:
     return {}
 
 
+def _volume_scorecard_for_slug(pipeline: list, volume_slug: str) -> dict:
+    if volume_slug == VOLUME_002_SLUG:
+        scorecard = _as_dict(_invoke(get_volume_002_scorecard), "scorecard")
+        if scorecard:
+            return scorecard
+        for candidate in pipeline:
+            if isinstance(candidate, dict) and candidate.get("candidate_number") == 2:
+                return recompute_candidate_scorecard(candidate)
+    return _flagship_scorecard(pipeline)
+
+
 # --------------------------------------------------------------------------
 # Graphics review scaffolding
 # --------------------------------------------------------------------------
@@ -1451,7 +1513,12 @@ def _diagram_labels(diagrams_data: dict, ids: list) -> dict:
     return labels
 
 
-def _build_graphics_reviews(diagrams_data: dict, existing: dict | None) -> dict:
+def _build_graphics_reviews(
+    diagrams_data: dict,
+    existing: dict | None,
+    *,
+    volume_slug: str = VOLUME_SLUG,
+) -> dict:
     existing = existing if isinstance(existing, dict) else {}
     previous = existing.get("reviews") if isinstance(existing.get("reviews"), dict) else {}
 
@@ -1495,8 +1562,8 @@ def _build_graphics_reviews(diagrams_data: dict, existing: dict | None) -> dict:
         reviews[graphic_id] = per_concept
 
     return {
-        "volume_id": FLAGSHIP_VOLUME_ID,
-        "volume_slug": VOLUME_SLUG,
+        "volume_id": volume_slug,
+        "volume_slug": volume_slug,
         "concepts": [
             {"id": concept_id, "label": CONCEPT_LABELS.get(concept_id, concept_id)}
             for concept_id in CONCEPT_IDS
@@ -1541,7 +1608,13 @@ def _merge_brand_system(default: dict, existing: dict | None, force: bool) -> di
     return merged
 
 
-def _merge_manuscript(fresh: dict, existing: dict | None, force: bool) -> dict:
+def _merge_manuscript(
+    fresh: dict,
+    existing: dict | None,
+    force: bool,
+    *,
+    volume_slug: str = VOLUME_SLUG,
+) -> dict:
     """Keep saved chapter edits, refresh empty citation blocks."""
     if force or not isinstance(existing, dict) or not existing.get("chapters"):
         result = dict(fresh)
@@ -1549,7 +1622,7 @@ def _merge_manuscript(fresh: dict, existing: dict | None, force: bool) -> dict:
         result["chapters"] = fresh_ch
         result["chapter_count"] = len(fresh_ch)
         result["total_word_count"] = compute_manuscript_word_count(fresh_ch)
-        result.setdefault("volume_id", FLAGSHIP_VOLUME_ID)
+        result.setdefault("volume_id", volume_slug)
         result["updated_at"] = _now_iso()
         return result
 
@@ -1614,33 +1687,46 @@ def _merge_manuscript(fresh: dict, existing: dict | None, force: bool) -> dict:
     result["target_expert_youtube_links_per_book"] = TARGET_EXPERT_YOUTUBE_LINKS_PER_BOOK
     result["min_expert_youtube_links_per_chapter"] = MIN_EXPERT_YOUTUBE_LINKS_PER_CHAPTER
     result["expert_youtube_link_count"] = count_manuscript_youtube_links(merged_chapters)
-    result.setdefault("volume_id", FLAGSHIP_VOLUME_ID)
+    result.setdefault("volume_id", volume_slug)
     result["updated_at"] = _now_iso()
     return result
 
 
-def _build_volume_metadata(scorecard: dict, manuscript: dict) -> dict:
+def _build_volume_metadata(
+    scorecard: dict,
+    manuscript: dict,
+    *,
+    volume_slug: str = VOLUME_SLUG,
+) -> dict:
     chapters = _as_list(manuscript.get("chapters", manuscript), "chapters")
     yt_count = count_manuscript_youtube_links(chapters)
+    is_vol2 = volume_slug == VOLUME_002_SLUG
+    default_title = "Surplus Funds Recovery" if is_vol2 else "Heir Hunting"
+    default_subtitle = (
+        "The Money-to-Manpower Playbook for Tax-Sale Overages & Foreclosure Excess Proceeds"
+        if is_vol2
+        else "The Money-to-Manpower Playbook for Unclaimed Estate Recovery"
+    )
     return {
-        "volume_id": FLAGSHIP_VOLUME_ID,
-        "volume_slug": VOLUME_SLUG,
-        "volume_number": 1,
+        "volume_id": volume_slug,
+        "volume_slug": volume_slug,
+        "volume_number": 2 if is_vol2 else 1,
         "parent_brand": PARENT_BRAND,
         "book_series": BOOK_SERIES,
         "tagline": BRAND_TAGLINE,
         "title": _text(
-            _first(manuscript, "title", "book_title", default="Heir Hunting")
+            _first(manuscript, "title", "book_title", default=default_title)
         )
-        or "Heir Hunting",
+        or default_title,
         "subtitle": _text(
             _first(
                 manuscript,
                 "subtitle",
-                default="The Money-to-Manpower Playbook for Unclaimed Estate Recovery",
+                default=default_subtitle,
             )
         ),
         "chapter_count": len(chapters),
+        "total_word_count": manuscript.get("total_word_count", compute_manuscript_word_count(chapters)),
         "expert_youtube_link_count": yt_count,
         "min_expert_youtube_links_required": MIN_EXPERT_YOUTUBE_LINKS_PER_BOOK,
         "target_expert_youtube_links": TARGET_EXPERT_YOUTUBE_LINKS_PER_BOOK,
@@ -1653,11 +1739,23 @@ def _build_volume_metadata(scorecard: dict, manuscript: dict) -> dict:
             "Reflowable EPUB 3.0",
         ],
         "isbn": None,
-        "publication_status": "staged_preview",
+        "publication_status": "approved_master",
         "public_deploy_approved": False,
         "paid_sales_approved": False,
         "updated_at": _now_iso(),
     }
+
+
+def _fresh_volume_builders(volume_slug: str, abridged: list[dict]) -> tuple[dict, dict, dict]:
+    if volume_slug == VOLUME_002_SLUG:
+        diagrams_data = _as_dict(_invoke(build_volume_002_diagrams_data), "diagrams")
+        workbook = _as_dict(_invoke(build_volume_002_workbook), "worksheets")
+        fresh_manuscript = _as_dict(_invoke(build_volume_002_manuscript, abridged), "chapters")
+        return diagrams_data, workbook, fresh_manuscript
+    diagrams_data = _as_dict(_invoke(build_volume_001_diagrams_data), "diagrams")
+    workbook = _as_dict(_invoke(build_volume_001_workbook), "worksheets")
+    fresh_manuscript = _as_dict(_invoke(build_volume_001_manuscript, abridged), "chapters")
+    return diagrams_data, workbook, fresh_manuscript
 
 
 def sync_publishing_store(
@@ -1676,8 +1774,7 @@ def sync_publishing_store(
         root = Path(root_dir).resolve()
         _recover_journal(root)
         pub = _publishing_dir(root)
-        volume = _volume_dir(root)
-        chapters_dir = _resolve_contained(root, volume / "chapters")
+        volume = _volume_dir(root, VOLUME_SLUG)
         json_writes = []
         text_writes = []
 
@@ -1715,6 +1812,7 @@ def sync_publishing_store(
             "rating_system": RATING_SYSTEM_NAME,
             "candidate_count": len(pipeline),
             "flagship_volume_id": FLAGSHIP_VOLUME_ID,
+            "published_volume_ids": list(PUBLISHED_VOLUME_SLUGS),
             "editorial_tracks": deepcopy(TRACK_DEFINITIONS),
             "editorial_plays": deepcopy(PLAY_DEFINITIONS),
             "candidates": pipeline,
@@ -1750,48 +1848,71 @@ def sync_publishing_store(
             research_summary.update(prior_research)
         stage_json(research_path, research_summary)
 
-        # --- volume payloads -------------------------------------------------
-        scorecard = _flagship_scorecard(pipeline)
-        diagrams_data = _as_dict(_invoke(build_volume_001_diagrams_data), "diagrams")
-        workbook = _as_dict(_invoke(build_volume_001_workbook), "worksheets")
-        fresh_manuscript = _as_dict(_invoke(build_volume_001_manuscript, abridged), "chapters")
+        # --- volume payloads (all published volumes) -------------------------
+        volume_paths_by_slug: dict[str, dict] = {}
+        flagship_chapter_files: list[str] = []
+        flagship_graphics_reviews: dict = {}
+        flagship_workbook: dict = {}
 
-        manuscript_path = volume / "manuscript.json"
-        existing_manuscript = _read_json(manuscript_path, None, strict=not force)
-        manuscript = _merge_manuscript(
-            fresh_manuscript,
-            existing_manuscript if isinstance(existing_manuscript, dict) else None,
-            force,
-        )
+        for vol_slug in PUBLISHED_VOLUME_SLUGS:
+            vol_dir = _volume_dir(root, vol_slug)
+            vol_chapters_dir = _resolve_contained(root, vol_dir / "chapters")
+            vol_scorecard = _volume_scorecard_for_slug(pipeline, vol_slug)
+            vol_diagrams_data, vol_workbook, vol_fresh_manuscript = _fresh_volume_builders(
+                vol_slug, abridged
+            )
+            vol_manuscript_path = vol_dir / "manuscript.json"
+            existing_manuscript = _read_json(vol_manuscript_path, None, strict=not force)
+            vol_manuscript = _merge_manuscript(
+                vol_fresh_manuscript,
+                existing_manuscript if isinstance(existing_manuscript, dict) else None,
+                force,
+                volume_slug=vol_slug,
+            )
+            vol_metadata = _build_volume_metadata(
+                vol_scorecard, vol_manuscript, volume_slug=vol_slug
+            )
+            for chapter in vol_manuscript.get("chapters", []):
+                chapter["revision"] = _chapter_revision(chapter)
+            stage_json(vol_dir / "metadata.json", vol_metadata)
+            stage_json(vol_dir / "scorecard.json", vol_scorecard)
+            stage_json(vol_dir / "diagrams_data.json", vol_diagrams_data)
+            stage_json(vol_manuscript_path, vol_manuscript)
+            stage_json(vol_dir / "workbook.json", vol_workbook)
 
-        metadata = _build_volume_metadata(scorecard, manuscript)
+            vol_reviews_path = vol_dir / "graphics_reviews.json"
+            existing_reviews = _read_json(vol_reviews_path, None, strict=not force)
+            vol_graphics_reviews = _build_graphics_reviews(
+                vol_diagrams_data,
+                None if force else (existing_reviews if isinstance(existing_reviews, dict) else None),
+                volume_slug=vol_slug,
+            )
+            stage_json(vol_reviews_path, vol_graphics_reviews)
 
-        for chapter in manuscript.get("chapters", []):
-            chapter["revision"] = _chapter_revision(chapter)
-        stage_json(volume / "metadata.json", metadata)
-        stage_json(volume / "scorecard.json", scorecard)
-        stage_json(volume / "diagrams_data.json", diagrams_data)
-        stage_json(manuscript_path, manuscript)
-        stage_json(volume / "workbook.json", workbook)
+            chapters = _as_list(vol_manuscript.get("chapters", vol_manuscript), "chapters")
+            vol_chapter_files: list[str] = []
+            for position, chapter in enumerate(chapters, start=1):
+                if not isinstance(chapter, dict):
+                    continue
+                number = _chapter_number(chapter, position)
+                cpath = vol_chapters_dir / _chapter_filename(number)
+                text_writes.append((cpath, chapter_to_markdown(chapter)))
+                vol_chapter_files.append(str(cpath))
 
-        reviews_path = volume / "graphics_reviews.json"
-        existing_reviews = _read_json(reviews_path, None, strict=not force)
-        graphics_reviews = _build_graphics_reviews(
-            diagrams_data,
-            None if force else (existing_reviews if isinstance(existing_reviews, dict) else None),
-        )
-        stage_json(reviews_path, graphics_reviews)
-
-        # --- chapter markdown ------------------------------------------------
-        chapters = _as_list(manuscript.get("chapters", manuscript), "chapters")
-        chapter_files: list = []
-        for position, chapter in enumerate(chapters, start=1):
-            if not isinstance(chapter, dict):
-                continue
-            number = _chapter_number(chapter, position)
-            path = chapters_dir / _chapter_filename(number)
-            text_writes.append((path, chapter_to_markdown(chapter)))
-            chapter_files.append(str(path))
+            volume_paths_by_slug[vol_slug] = {
+                "volume_dir": str(vol_dir),
+                "metadata": str(vol_dir / "metadata.json"),
+                "scorecard": str(vol_dir / "scorecard.json"),
+                "diagrams_data": str(vol_dir / "diagrams_data.json"),
+                "manuscript": str(vol_manuscript_path),
+                "workbook": str(vol_dir / "workbook.json"),
+                "graphics_reviews": str(vol_reviews_path),
+                "chapters": vol_chapter_files,
+            }
+            if vol_slug == VOLUME_SLUG:
+                flagship_chapter_files = vol_chapter_files
+                flagship_graphics_reviews = vol_graphics_reviews
+                flagship_workbook = vol_workbook
 
         # --- site ------------------------------------------------------------
         signup_path = pub / "site" / "newsletter_signups.json"
@@ -1806,6 +1927,7 @@ def sync_publishing_store(
             "forced": bool(force),
             "publishing_dir": str(pub),
             "volume_dir": str(volume),
+            "volumes": volume_paths_by_slug,
             "paths": {
                 "brand_system": str(brand_path),
                 "existing_work_audit": str(audit_path),
@@ -1814,22 +1936,23 @@ def sync_publishing_store(
                 "metadata": str(volume / "metadata.json"),
                 "scorecard": str(volume / "scorecard.json"),
                 "diagrams_data": str(volume / "diagrams_data.json"),
-                "manuscript": str(manuscript_path),
+                "manuscript": str(volume / "manuscript.json"),
                 "workbook": str(volume / "workbook.json"),
-                "graphics_reviews": str(reviews_path),
+                "graphics_reviews": str(volume / "graphics_reviews.json"),
                 "newsletter_signups": str(signup_path),
-                "chapters": chapter_files,
+                "chapters": flagship_chapter_files,
             },
             "counts": {
                 "candidates": len(pipeline),
-                "chapters": len(chapter_files),
-                "diagrams": len(graphics_reviews.get("diagram_graphic_ids", [])),
-                "covers": len(graphics_reviews.get("cover_graphic_ids", [])),
+                "published_volumes": len(PUBLISHED_VOLUME_SLUGS),
+                "chapters": len(flagship_chapter_files),
+                "diagrams": len(flagship_graphics_reviews.get("diagram_graphic_ids", [])),
+                "covers": len(flagship_graphics_reviews.get("cover_graphic_ids", [])),
                 "graphics_review_entries": sum(
-                    len(entry) for entry in graphics_reviews.get("reviews", {}).values()
+                    len(entry) for entry in flagship_graphics_reviews.get("reviews", {}).values()
                 ),
                 "workbook_worksheets": len(
-                    _as_list(workbook.get("worksheets", []), "worksheets")
+                    _as_list(flagship_workbook.get("worksheets", []), "worksheets")
                 ),
                 "abridged_videos": len(abridged),
                 "raw_videos": len(raw),
@@ -1848,26 +1971,78 @@ def sync_publishing_store(
 def _ensure_initialized(root_dir: Path) -> None:
     _recover_journal(root_dir)
     pub = _publishing_dir(root_dir)
-    volume = _volume_dir(root_dir)
-    required = [pub / "brand" / "brand_system.json",
-                pub / "catalog" / "pipeline_29_candidates.json",
-                pub / "audit" / "existing_work_audit.json",
-                pub / "research" / "research_database_summary.json",
-                pub / "site" / "newsletter_signups.json"]
-    required.extend(volume / name for name in (
-        "manuscript.json", "metadata.json", "scorecard.json", "diagrams_data.json",
-        "workbook.json", "graphics_reviews.json"))
+    required = [
+        pub / "brand" / "brand_system.json",
+        pub / "catalog" / "pipeline_29_candidates.json",
+        pub / "audit" / "existing_work_audit.json",
+        pub / "research" / "research_database_summary.json",
+        pub / "site" / "newsletter_signups.json",
+    ]
+    for vol_slug in PUBLISHED_VOLUME_SLUGS:
+        vol_dir = _volume_dir(root_dir, vol_slug)
+        required.extend(
+            vol_dir / name
+            for name in (
+                "manuscript.json",
+                "metadata.json",
+                "scorecard.json",
+                "diagrams_data.json",
+                "workbook.json",
+                "graphics_reviews.json",
+            )
+        )
     for path in required:
         _resolve_contained(root_dir, path)
         _read_json(path, strict=True)
-    required.extend(volume / "chapters" / _chapter_filename(i)
-                    for i in range(1, CHAPTER_COUNT + 1))
+    for vol_slug in PUBLISHED_VOLUME_SLUGS:
+        vol_dir = _volume_dir(root_dir, vol_slug)
+        required.extend(
+            vol_dir / "chapters" / _chapter_filename(i)
+            for i in range(1, CHAPTER_COUNT + 1)
+        )
     if not all(path.is_file() for path in required):
         sync_publishing_store(root_dir)
 
 
-def load_publishing_state(root_dir: Path, *, verify_manifest: bool = False) -> dict:
+def _load_single_volume_bundle(root: Path, vol_slug: str, read_store) -> dict:
+    vol_dir = _volume_dir(root, vol_slug)
+    chapters_dir = vol_dir / "chapters"
+    chapter_markdown: dict = {}
+    if chapters_dir.is_dir():
+        for path in sorted(chapters_dir.glob("chapter-*.md")):
+            try:
+                _resolve_contained(root, path)
+                chapter_markdown[path.stem] = path.read_text(encoding="utf-8")
+            except OSError:
+                continue
+    manuscript = read_store(vol_dir / "manuscript.json", {}) or {}
+    for chapter in manuscript.get("chapters", []):
+        chapter["revision"] = _chapter_revision(chapter)
+    scorecard = read_store(vol_dir / "scorecard.json", {}) or {}
+    default_cand_num = 2 if vol_slug == VOLUME_002_SLUG else 1
+    if isinstance(scorecard, dict) and "track_ids" not in scorecard:
+        scorecard.update(
+            get_candidate_track_metadata(scorecard.get("candidate_number", default_cand_num))
+        )
+    return {
+        "metadata": read_store(vol_dir / "metadata.json", {}) or {},
+        "scorecard": scorecard,
+        "diagrams_data": read_store(vol_dir / "diagrams_data.json", {}) or {},
+        "manuscript": manuscript,
+        "workbook": read_store(vol_dir / "workbook.json", {}) or {},
+        "graphics_reviews": read_store(vol_dir / "graphics_reviews.json", {}) or {},
+        "chapter_markdown": chapter_markdown,
+    }
+
+
+def load_publishing_state(
+    root_dir: Path,
+    volume_id: object = None,
+    *,
+    verify_manifest: bool = False,
+) -> dict:
     """Read the entire ``publishing/`` store into one dict (auto-initializing)."""
+    active_slug = resolve_volume_slug(volume_id)
     with _root_lock(root_dir):
         root = Path(root_dir)
         if verify_manifest:
@@ -1877,21 +2052,8 @@ def load_publishing_state(root_dir: Path, *, verify_manifest: bool = False) -> d
             _ensure_initialized(root)
             manifest_report = verify_commit_manifest(root, strict=False)
         pub = _publishing_dir(root)
-        volume = _volume_dir(root)
-        chapters_dir = volume / "chapters"
+        active_volume_dir = _volume_dir(root, active_slug)
 
-        chapter_markdown: dict = {}
-        if chapters_dir.is_dir():
-            for path in sorted(chapters_dir.glob("chapter-*.md")):
-                try:
-                    _resolve_contained(root, path)
-                    chapter_markdown[path.stem] = path.read_text(encoding="utf-8")
-                except OSError:
-                    continue
-
-        manuscript = _read_json(volume / "manuscript.json", {}, strict=True) or {}
-        for chapter in manuscript.get("chapters", []):
-            chapter["revision"] = _chapter_revision(chapter)
         signups = _read_json(pub / "site" / "newsletter_signups.json", {"subscribers": []}, strict=True)
         if not isinstance(signups, dict):
             signups = {"subscribers": []}
@@ -1899,10 +2061,17 @@ def load_publishing_state(root_dir: Path, *, verify_manifest: bool = False) -> d
         def read_store(path, default=None):
             return _read_json(path, default, strict=True)
 
+        volumes_map: dict[str, dict] = {
+            slug: _load_single_volume_bundle(root, slug, read_store)
+            for slug in PUBLISHED_VOLUME_SLUGS
+        }
+        active_bundle = volumes_map[active_slug]
+
         state = {
             "root_dir": str(root),
             "publishing_dir": str(pub),
-            "volume_dir": str(volume),
+            "volume_dir": str(active_volume_dir),
+            "active_volume_id": active_slug,
             "brand_system": read_store(pub / "brand" / "brand_system.json", {}) or {},
             "existing_work_audit": read_store(pub / "audit" / "existing_work_audit.json", {})
             or {},
@@ -1914,15 +2083,8 @@ def load_publishing_state(root_dir: Path, *, verify_manifest: bool = False) -> d
                 pub / "research" / "research_database_summary.json", {}
             )
             or {},
-            "volume": {
-                "metadata": read_store(volume / "metadata.json", {}) or {},
-                "scorecard": read_store(volume / "scorecard.json", {}) or {},
-                "diagrams_data": read_store(volume / "diagrams_data.json", {}) or {},
-                "manuscript": manuscript,
-                "workbook": read_store(volume / "workbook.json", {}) or {},
-                "graphics_reviews": read_store(volume / "graphics_reviews.json", {}) or {},
-                "chapter_markdown": chapter_markdown,
-            },
+            "volumes": volumes_map,
+            "volume": active_bundle,
             "newsletter_signups": signups,
             "loaded_at": _now_iso(),
         }
@@ -1934,13 +2096,12 @@ def load_publishing_state(root_dir: Path, *, verify_manifest: bool = False) -> d
             for cand in _as_list(state["pipeline_29_candidates"].get("candidates", []), "candidates"):
                 if isinstance(cand, dict) and "track_ids" not in cand:
                     cand.update(get_candidate_track_metadata(cand.get("candidate_number")))
-        if isinstance(state.get("volume", {}).get("scorecard"), dict) and "track_ids" not in state["volume"]["scorecard"]:
-            state["volume"]["scorecard"].update(
-                get_candidate_track_metadata(state["volume"]["scorecard"].get("candidate_number", 1))
-            )
         state["gates"] = dict(state["brand_system"]["gates"])
         state["settings"] = dict(state["brand_system"].get("gates", {}))
+        manuscript = active_bundle["manuscript"]
+        chapter_markdown = active_bundle["chapter_markdown"]
         state["counts"] = {
+            "published_volumes": len(volumes_map),
             "chapters": len(_as_list(manuscript.get("chapters", []), "chapters")),
             "chapter_markdown_files": len(chapter_markdown),
             "candidates": len(
@@ -2048,12 +2209,15 @@ def _valid_chapter_field(key, value):
 
 
 def update_chapter_content(root_dir: Path, chapter_number: int | str, patch=None,
-                           expected_revision: str | None = None) -> dict:
+                           expected_revision: str | None = None,
+                           *,
+                           volume_id: object = None) -> dict:
     """Patch one chapter in ``manuscript.json`` and rewrite only its Markdown."""
+    vol_slug = resolve_volume_slug(volume_id)
     with _root_lock(root_dir):
         root = Path(root_dir)
         _ensure_initialized(root)
-        volume = _volume_dir(root)
+        volume = _volume_dir(root, vol_slug)
         manuscript_path = volume / "manuscript.json"
 
         manuscript = _read_json(manuscript_path, {}, strict=True)
@@ -2179,12 +2343,16 @@ def update_graphic_review(
     concept_id: str = "concept_a",
     status: str = "pending_review",
     notes: str | None = None,
+    *,
+    volume_id: object = None,
 ) -> dict:
     """Record one cover/diagram review without touching any other state."""
+    vol_slug = resolve_volume_slug(volume_id)
     with _root_lock(root_dir):
         root = Path(root_dir)
         _ensure_initialized(root)
-        reviews_path = _volume_dir(root) / "graphics_reviews.json"
+        vol_dir = _volume_dir(root, vol_slug)
+        reviews_path = vol_dir / "graphics_reviews.json"
 
         status = {"reviewed": "approved", "pending": "pending_review"}.get(status, status)
         if status not in REVIEW_STATUSES:
@@ -2197,9 +2365,11 @@ def update_graphic_review(
 
         payload = _read_json(reviews_path, None, strict=True)
         if not isinstance(payload, dict) or not isinstance(payload.get("reviews"), dict):
-            diagrams_data = _read_json(_volume_dir(root) / "diagrams_data.json", {}) or {}
+            diagrams_data = _read_json(vol_dir / "diagrams_data.json", {}) or {}
             payload = _build_graphics_reviews(
-                diagrams_data if isinstance(diagrams_data, dict) else {}, None
+                diagrams_data if isinstance(diagrams_data, dict) else {},
+                None,
+                volume_slug=vol_slug,
             )
 
         reviews = payload["reviews"]

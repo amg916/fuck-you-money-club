@@ -14,8 +14,8 @@
     "marketplace_safe_cover_ready": true
   },
   "gates": {
-    "design_approval_status": "awaiting_owner_approval",
-    "approved_concept_id": null,
+    "design_approval_status": "approved",
+    "approved_concept_id": "concept_b",
     "public_deploy_approved": false,
     "paid_sales_approved": false
   },
@@ -33,6 +33,19 @@
       "hypothesis": true,
       "paid_checkout_enabled": false,
       "notes": "8.5x11 Executive Digital PDF + Reflowable EPUB 3.0 + Clickable Source Index (97.1% direct net margin)."
+    },
+    "print_paperback": {
+      "label": "6×9 Print Paperback Edition (Concept B)",
+      "range_label": "$34 Approved ($2.99–$4.36 KDP COGS)",
+      "test_price_usd": 34,
+      "includes": [
+        "6×9 Print Paperback Edition",
+        "14 Editorial Interior Templates",
+        "8 Structured Vector Diagrams"
+      ],
+      "notes": "Spec B (78pp Standard Color: $2.99 KDP COGS, +$17.41 KDP net, +$28.56 Direct net) & Spec D (280pp Expanded B&W: $4.36 KDP COGS, +$16.04 KDP net, +$27.11 Direct net).",
+      "hypothesis": true,
+      "paid_checkout_enabled": false
     },
     "operator_bundle": {
       "label": "Complete Operator Bundle (Print + Digital + Workbook)",
@@ -72,14 +85,6 @@
       "hypothesis": true,
       "paid_checkout_enabled": false,
       "notes": "All Big Money Playbook releases, live 29-business Money-to-Manpower deal scorecards, and operator templates."
-    },
-    "print_paperback": {
-      "label": "6×9 Print Paperback Edition (Concept B)",
-      "range_label": "$34 Approved ($2.99–$4.36 KDP COGS)",
-      "test_price_usd": 34,
-      "notes": "Spec B (78pp Standard Color: $2.99 KDP COGS, +$17.41 KDP net, +$28.56 Direct net) & Spec D (280pp Expanded B&W: $4.36 KDP COGS, +$16.04 KDP net, +$27.11 Direct net).",
-      "hypothesis": true,
-      "paid_checkout_enabled": false
     }
   },
   "workflow_stages": [
@@ -111,12 +116,12 @@
     {
       "order": 6,
       "name": "Design",
-      "status": "awaiting_owner_approval"
+      "status": "completed"
     },
     {
       "order": 7,
       "name": "Graphics",
-      "status": "awaiting_owner_approval"
+      "status": "completed"
     },
     {
       "order": 8,
@@ -126,17 +131,17 @@
     {
       "order": 9,
       "name": "Proofreading",
-      "status": "staged_preview"
+      "status": "completed"
     },
     {
       "order": 10,
       "name": "Export",
-      "status": "staged_preview"
+      "status": "completed"
     },
     {
       "order": 11,
       "name": "Quality Assurance",
-      "status": "staged_preview"
+      "status": "completed"
     },
     {
       "order": 12,
@@ -167,7 +172,7 @@
       "summary": "Aggressive, high-velocity acquisition mechanics—parasitic SEO, high-velocity affiliate funnels, trigger-based DM outbound systems, SERP Navboost CTR engineering, viral distribution loops, and paid-to-organic media arbitrage—paired with forensic teardowns of naive blackhat traps and explicit platform-policy fallbacks."
     }
   },
-  "editorial_notes": "OWNER APPROVED: (1) Concept B — Bold Editorial (#09090B / #FFD400 / #FFFFFF) locked as Volume 001 & Series Default visual system; (2) Volume 002 — Tax Sale Overages & Excess Proceeds Recovery (91/100) approved as next volume in pipeline; (3) $34 6x9 Paperback pricing approved ($2.99 KDP COGS / $17.41 KDP net / $28.56 Direct net for 78pp Standard Color; $4.36 KDP COGS / $16.04 KDP net / $27.11 Direct net for 280pp Expanded Reference B&W).",
-  "generated_at": "2026-10-29T23:18:57Z",
-  "updated_at": "2026-11-02T13:30:02Z"
+  "editorial_notes": "OWNER APPROVED: (1) Concept B — Bold Editorial (#09090B / #FFD400 / #FFFFFF) locked as Owner-Approved Series Master; (2) Volume 001 — Heir Hunting (87/100) and Volume 002 — Surplus Funds Recovery (86/100) completed through Quality Assurance with 5-layer FYMC content architecture; (3) Public deploy and paid checkout remain disabled pending final Publication Approval.",
+  "generated_at": "2026-11-19T22:19:34Z",
+  "updated_at": "2026-11-19T22:19:34Z"
 }

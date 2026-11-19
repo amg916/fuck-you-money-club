@@ -1,0 +1,10 @@
+*.pdf binary
+*.epub binary
+*.zip binary
+publishing/previews/** -diff
+publishing/volumes/** -diff
+publishing/catalog/** -diff
+publishing/audit/** -diff
+publishing/research/** -diff
+publishing/.commit_manifest.json -diff
+src/fymc/volume_002_citations.py linguist-generated=true -diff

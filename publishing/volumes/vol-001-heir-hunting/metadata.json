@@ -8,7 +8,8 @@
   "title": "HEIR HUNTING",
   "subtitle": "The Complete Playbook for Finding Missing Heirs, Researching Unclaimed Estates & Building a Probate Research Business",
   "chapter_count": 12,
-  "expert_youtube_link_count": 180,
+  "total_word_count": 51383,
+  "expert_youtube_link_count": 188,
   "min_expert_youtube_links_required": 150,
   "target_expert_youtube_links": "150-200+",
   "min_expert_youtube_links_per_chapter": 12,
@@ -20,8 +21,8 @@
     "Reflowable EPUB 3.0"
   ],
   "isbn": null,
-  "publication_status": "staged_preview",
+  "publication_status": "approved_master",
   "public_deploy_approved": false,
   "paid_sales_approved": false,
-  "updated_at": "2026-11-02T13:30:03Z"
+  "updated_at": "2026-11-19T22:19:45Z"
 }

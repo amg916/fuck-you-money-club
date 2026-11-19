@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="900" viewBox="0 0 600 900" role="img" aria-labelledby="art-title art-desc"><title id="art-title">THE BIG MONEY PLAYBOOKS / Front cover</title><desc id="art-desc">Original vector cover concept and presentation artwork. Mockups illustrate proposed formats, not manufactured products.</desc><defs>
+      <linearGradient id="stage" x2="0.25" y2="1">
+        <stop stop-color="#F5F2EC"/><stop offset="1" stop-color="#CEC8BC"/>
+      </linearGradient>
+      <linearGradient id="pages" x2="1" y2="0">
+        <stop stop-color="#AAA69C"/><stop offset="0.22" stop-color="#FFFDF5"/>
+        <stop offset="0.8" stop-color="#E4DFD3"/><stop offset="1" stop-color="#BAB4A6"/>
+      </linearGradient>
+      <linearGradient id="foil" x2="1" y2="0.3">
+        <stop stop-color="#FFFFFF" stop-opacity="0.18"/>
+        <stop offset="0.3" stop-color="#FFFFFF" stop-opacity="0"/>
+        <stop offset="1" stop-color="#000000" stop-opacity="0.2"/>
+      </linearGradient>
+      <linearGradient id="metal" x2="1" y2="1">
+        <stop stop-color="#797D80"/><stop offset="0.35" stop-color="#272A2D"/>
+        <stop offset="0.72" stop-color="#090B0C"/><stop offset="1" stop-color="#63676A"/>
+      </linearGradient>
+      <linearGradient id="glass" x2="1" y2="1">
+        <stop stop-color="#FFFFFF" stop-opacity="0.14"/>
+        <stop offset="0.48" stop-color="#FFFFFF" stop-opacity="0"/>
+      </linearGradient>
+      <filter id="shadow" x="-50%" y="-100%" width="200%" height="300%">
+        <feGaussianBlur stdDeviation="15"/>
+      </filter>
+    </defs><rect x="0" y="0" width="600" height="900" rx="0" fill="#F4EFE6" stroke="none" stroke-width="1"/><path d="M27 0 V900 M34 0 V900" fill="none" stroke="#D5CCBD" stroke-width="1"/><text x="60" y="55" fill="#11382B" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" text-anchor="start">WEALTH INTELLIGENCE / VOL. 002</text><path d="M60 76 H554" fill="none" stroke="#11382B" stroke-width="1"/><path d="M48 116 H327 L352 141 H564 V568 H48 Z" fill="#11382B" stroke="none" stroke-width="1"/><text x="72" y="166" fill="#F4EFE6" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" text-anchor="start">FYMC / STRATEGY DOSSIER</text><text x="72" y="258" fill="#F4EFE6" font-family="Arial, Helvetica, sans-serif" font-size="65" font-weight="800" text-anchor="start">THE BIG</text><text x="72" y="350" fill="#F4EFE6" font-family="Arial, Helvetica, sans-serif" font-size="90" font-weight="800" text-anchor="start">MONEY</text><text x="72" y="435" fill="#F4EFE6" font-family="Arial, Helvetica, sans-serif" font-size="60" font-weight="800" text-anchor="start">PLAYBOOKS</text><text x="72" y="511" fill="#F4EFE6" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="600" text-anchor="start">SURPLUS FUNDS RECOVERY</text><rect x="64" y="594" width="484" height="174" rx="2" fill="#D9D1C3" stroke="none" stroke-width="1"/><rect x="58" y="588" width="484" height="174" rx="2" fill="#FFFCF5" stroke="#BDB5A6" stroke-width="1"/><text x="76" y="617" fill="#11382B" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" text-anchor="start">ANALYTICAL INDEX / 002</text><path d="M76 630 H524 M76 711 H524" fill="none" stroke="#D5CCBD" stroke-width="1"/><text x="76" y="656" fill="#11382B" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" text-anchor="start">Money-to-Manpower Score</text><text x="76" y="694" fill="#11382B" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700" text-anchor="start">86 / 100</text><text x="76" y="741" fill="#11382B" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="start">Elite Small-Team Cash Machine</text><text x="300" y="825" fill="#11382B" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" text-anchor="middle">FYMC</text><text x="300" y="852" fill="#11382B" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle">The Fuck You Money Club</text></svg>

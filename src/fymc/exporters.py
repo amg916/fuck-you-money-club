@@ -15,7 +15,10 @@ from uuid import uuid4
 import xml.etree.ElementTree as ET
 import zipfile
 
-from . import PARENT_BRAND, BOOK_SERIES, BRAND_TAGLINE, RATING_SYSTEM_NAME
+from . import (
+    PARENT_BRAND, BOOK_SERIES, BRAND_TAGLINE, RATING_SYSTEM_NAME,
+    FLAGSHIP_VOLUME_ID, resolve_volume_slug,
+)
 from .design_concepts import CONCEPTS, get_concept, render_scorecard_svg
 from .diagrams_engine import render_all_diagrams_for_concept, render_diagram_svg
 from .cover_and_mockups import render_all_concept_mockups, render_cover_or_mockup_svg
@@ -30,9 +33,50 @@ from .brand_and_catalog import (
 )
 
 
-def _unpack_state(state: dict) -> tuple[dict, dict, dict, list[dict], dict, str | None]:
+def _resolve_state_volume_slug(state: dict, volume_id: object = None) -> str:
+    """Resolve explicit volume_id or infer the active volume carried by state."""
+    if volume_id is not None:
+        return resolve_volume_slug(volume_id)
+    if isinstance(state, dict):
+        vol = state.get('volume') if isinstance(state.get('volume'), dict) else {}
+        meta = vol.get('metadata') if isinstance(vol.get('metadata'), dict) else (
+            state.get('metadata') if isinstance(state.get('metadata'), dict) else {}
+        )
+        ms = vol.get('manuscript') if isinstance(vol.get('manuscript'), dict) else (
+            state.get('manuscript') if isinstance(state.get('manuscript'), dict) else {}
+        )
+        for candidate in (
+            meta.get('volume_slug'),
+            meta.get('volume_id'),
+            ms.get('volume_id'),
+            state.get('active_volume_id'),
+            meta.get('volume_number'),
+        ):
+            if candidate not in (None, ''):
+                try:
+                    return resolve_volume_slug(candidate)
+                except ValueError:
+                    continue
+    return FLAGSHIP_VOLUME_ID
+
+
+def _unpack_state(state: dict, volume_id: object = None) -> tuple[dict, dict, dict, list[dict], dict, str | None]:
     """Normalize loaded publishing state and standalone preview state."""
-    vol = state.get('volume') if isinstance(state.get('volume'), dict) else {}
+    if volume_id is not None:
+        slug = resolve_volume_slug(volume_id)
+        if isinstance(state.get('volumes'), dict) and slug in state['volumes']:
+            vol = state['volumes'][slug]
+        elif (isinstance(state.get('volume'), dict)
+              and state['volume'].get('metadata', {}).get('volume_slug') == slug):
+            vol = state['volume']
+        else:
+            raise ValueError(f'Volume {slug} not present in state')
+    else:
+        vol = state.get('volume') if isinstance(state.get('volume'), dict) else {}
+        if not vol and isinstance(state.get('volumes'), dict):
+            inferred = _resolve_state_volume_slug(state, None)
+            if inferred in state['volumes']:
+                vol = state['volumes'][inferred]
     metadata = vol.get('metadata') or state.get('metadata') or {
         'volume_number': '001', 'title': 'HEIR HUNTING', 'subtitle': 'The Complete Playbook'}
     manuscript = vol.get('manuscript') or state.get('manuscript') or {}
@@ -41,6 +85,9 @@ def _unpack_state(state: dict) -> tuple[dict, dict, dict, list[dict], dict, str 
     raw_diags = vol.get('diagrams_data') if 'diagrams_data' in vol else state.get('diagrams_data', [])
     diagrams = raw_diags.get('diagrams', []) if isinstance(raw_diags, dict) else (list(raw_diags) if isinstance(raw_diags, list) else [])
     approved = None
+    if isinstance(state.get('gates'), dict):
+        raw_app = state['gates'].get('approved_concept_id')
+        approved = raw_app if isinstance(raw_app, str) and raw_app in {'concept_a', 'concept_b', 'concept_c'} else None
     return metadata, manuscript, workbook, diagrams, scorecard, approved
 
 
@@ -292,6 +339,15 @@ class _PDF:
         return bytes(out)
 
 
+def _fmt_vol_number(raw: object) -> str:
+    if not isinstance(raw, bool) and isinstance(raw, int):
+        return f'{max(1, min(999, raw)):03d}'
+    s = str(raw if raw is not None else '001').strip()
+    if s.isdigit():
+        return f'{max(1, min(999, int(s))):03d}'
+    return s or '001'
+
+
 def _records(state, group, key, count):
     records = state.get(group, {}).get(key, [])
     records = list(records.values()) if isinstance(records, dict) else list(records)
@@ -300,10 +356,11 @@ def _records(state, group, key, count):
     return [r if isinstance(r, dict) else {'body': r} for r in records]
 
 
-def render_fymc_pdf_bytes(state: dict, concept_id: str = 'concept_a', fmt: str = 'digital_pdf') -> bytes:
+def render_fymc_pdf_bytes(state: dict, concept_id: str = 'concept_a', fmt: str = 'digital_pdf', *, volume_id: object = None) -> bytes:
     if fmt not in {'digital_pdf', 'print_6x9_pdf', 'workbook_pdf'}:
         raise ValueError('Unsupported PDF format: ' + fmt)
-    metadata, manuscript, workbook_data, diagrams, scorecard, approved = _unpack_state(state)
+    metadata, manuscript, workbook_data, diagrams, scorecard, approved = _unpack_state(state, volume_id=volume_id)
+    is_approved_master = approved is not None and approved == concept_id
     workbook = fmt == 'workbook_pdf'
     records = _records({'manuscript': manuscript, 'workbook': workbook_data},
                        'workbook' if workbook else 'manuscript',
@@ -316,15 +373,18 @@ def render_fymc_pdf_bytes(state: dict, concept_id: str = 'concept_a', fmt: str =
         pdf.emit('q 1 1 1 RG')
         pdf.line(x, 145, x, 155 + n * 21)
         pdf.emit('Q')
+    vol_num_label = _fmt_vol_number(metadata.get('volume_number', '001'))
     pdf.paragraph(BOOK_SERIES, 30, 0)
     pdf.paragraph(metadata.get('title', 'HEIR HUNTING'), 23, 0)
-    pdf.paragraph('VOLUME ' + str(metadata.get('volume_number', '001')), 12, 2)
+    pdf.paragraph('VOLUME ' + vol_num_label, 12, 2)
     pdf.paragraph('OPERATOR WORKBOOK' if workbook else metadata.get('subtitle', 'The Complete Playbook'), 12)
     pdf.draw('THE FUCK YOU MONEY CLUB', pdf.left, 85, 8, 2)
     if not workbook:
         pdf.new('Title / Contents')
-        pdf.heading(f"{metadata.get('title', 'HEIR HUNTING')} - VOLUME {metadata.get('volume_number', '001')}")
-        if approved is None:
+        pdf.heading(f"{metadata.get('title', 'HEIR HUNTING')} - VOLUME {vol_num_label}")
+        if is_approved_master:
+            pdf.paragraph('OWNER-APPROVED MASTER EDITION - ' + concept_id.upper().replace('_', ' '), 10, 2, True)
+        else:
             pdf.paragraph('CONCEPT PREVIEW EDITION - AWAITING OWNER DESIGN APPROVAL', 10, 2, True)
         toc_page = len(pdf.pages) - 1
         pdf.new('Scorecard')
@@ -483,8 +543,8 @@ def _original_svg(svg):
     return svg
 
 
-def _epub_art(state, concept_id):
-    metadata, manuscript, workbook, diagrams, scorecard, approved = _unpack_state(state)
+def _epub_art(state, concept_id, volume_id=None):
+    metadata, manuscript, workbook, diagrams, scorecard, approved = _unpack_state(state, volume_id=volume_id)
     diagram_assets = _svg_assets(render_all_diagrams_for_concept(diagrams, concept_id))
     mockups = _svg_assets(render_all_concept_mockups(concept_id, metadata, scorecard))
     if len(diagram_assets) != 8:
@@ -549,11 +609,12 @@ def _markup(value):
     return ''.join(out_lines)
 
 
-def render_fymc_epub_bytes(state: dict, concept_id: str = 'concept_a', _art=None) -> bytes:
+def render_fymc_epub_bytes(state: dict, concept_id: str = 'concept_a', _art=None, *, volume_id: object = None) -> bytes:
     get_concept(concept_id)
-    metadata, manuscript, workbook, diagrams, scorecard, approved = _unpack_state(state)
+    metadata, manuscript, workbook, diagrams, scorecard, approved = _unpack_state(state, volume_id=volume_id)
+    is_approved_master = approved is not None and approved == concept_id
     chapters = _records({'manuscript': manuscript}, 'manuscript', 'chapters', 12)
-    art = _epub_art(state, concept_id) if _art is None else _art
+    art = _epub_art(state, concept_id, volume_id=volume_id) if _art is None else _art
     diagram_keys = sorted(str(diagram.get('id', diagram.get('diagram_id', f'diagram_{i + 1:02d}')))
                           for i, diagram in enumerate(diagrams))
     diagram_map: dict[str, int] = {}
@@ -564,12 +625,19 @@ def render_fymc_epub_bytes(state: dict, concept_id: str = 'concept_a', _art=None
             for separator in ('_', '-'):
                 diagram_map[f'{prefix}{separator}{i:02d}'] = i
                 diagram_map[f'{prefix}{separator}{i}'] = i
-    title = f"{BOOK_SERIES}: {metadata.get('title', 'HEIR HUNTING')}, Volume {metadata.get('volume_number', '001')}"
+    vol_num_label = _fmt_vol_number(metadata.get('volume_number', '001'))
+    title = f"{BOOK_SERIES}: {metadata.get('title', 'HEIR HUNTING')}, Volume {vol_num_label}"
     digest = hashlib.sha256(json.dumps(state, sort_keys=True, default=str).encode()).hexdigest()
-    identifier = 'urn:sha256:' + hashlib.sha256((concept_id + digest).encode()).hexdigest()
+    volume_identity = metadata.get('volume_slug') or (
+        resolve_volume_slug(volume_id) if volume_id is not None else metadata.get('volume_number', '001'))
+    identifier_data = json.dumps([concept_id, digest, str(metadata.get('volume_id', '')), str(volume_identity)])
+    identifier = 'urn:sha256:' + hashlib.sha256(identifier_data.encode()).hexdigest()
     pages = [('cover.xhtml', 'Cover', '<h1>' + _escape(title) + '</h1><img src="images/cover.svg" alt="Original concept cover"/>')]
-    if approved is None:
-        pages[0] = (pages[0][0], pages[0][1], pages[0][2] + '<p>CONCEPT PREVIEW EDITION - AWAITING OWNER DESIGN APPROVAL</p>')
+    if is_approved_master:
+        edition = '<p>OWNER-APPROVED MASTER EDITION - ' + _escape(concept_id.upper().replace('_', ' ')) + '</p>'
+    else:
+        edition = '<p>CONCEPT PREVIEW EDITION - AWAITING OWNER DESIGN APPROVAL</p>'
+    pages[0] = (pages[0][0], pages[0][1], pages[0][2] + edition)
     pages.append(('scorecard.xhtml', 'Money-to-Manpower Scorecard', '<h1>Money-to-Manpower Scorecard</h1><img src="images/scorecard.svg" alt="Five-factor Money-to-Manpower Scorecard and three operating scenarios"/>' + _markup(scorecard)))
     for index, chapter in enumerate(chapters, 1):
         heading = str(chapter.get('title', f'Chapter {index}'))
@@ -623,16 +691,20 @@ def render_fymc_epub_bytes(state: dict, concept_id: str = 'concept_a', _art=None
     return output.getvalue()
 
 
-def _package_files(state, concept_id):
-    metadata, manuscript, workbook, diagrams, scorecard, approved = _unpack_state(state)
-    files = {fmt + '.pdf': render_fymc_pdf_bytes(state, concept_id, fmt)
+def _package_files(state, concept_id, volume_id=None):
+    metadata, manuscript, workbook, diagrams, scorecard, approved = _unpack_state(state, volume_id=volume_id)
+    files = {fmt + '.pdf': render_fymc_pdf_bytes(state, concept_id, fmt, volume_id=volume_id)
              for fmt in ('digital_pdf', 'print_6x9_pdf', 'workbook_pdf')}
-    art = _epub_art(state, concept_id)
-    files['book.epub'] = render_fymc_epub_bytes(state, concept_id, _art=art)
+    art = _epub_art(state, concept_id, volume_id=volume_id)
+    files['book.epub'] = render_fymc_epub_bytes(state, concept_id, _art=art, volume_id=volume_id)
     for name, svg in art.items():
         files['art/' + name] = svg.encode('utf-8')
-    manifest = {'concept_id': concept_id, 'approved': approved == concept_id,
-                'preview_only': True, 'files': {name: {'bytes': len(data), 'sha256': hashlib.sha256(data).hexdigest()} for name, data in files.items()}}
+    manifest = {'concept_id': concept_id,
+                'volume_id': str(metadata.get('volume_id') or metadata.get('volume_slug') or FLAGSHIP_VOLUME_ID),
+                'approved': approved == concept_id,
+                'edition_status': 'approved_master' if approved == concept_id else 'concept_preview',
+                'preview_only': not bool(isinstance(state.get('gates'), dict) and state['gates'].get('public_deploy_approved')),
+                'files': {name: {'bytes': len(data), 'sha256': hashlib.sha256(data).hexdigest()} for name, data in files.items()}}
     files['manifest.json'] = json.dumps(manifest, indent=2).encode('utf-8')
     return files
 
@@ -645,8 +717,9 @@ def _zip_files(files):
     return output.getvalue()
 
 
-def render_fymc_bundle_zip_bytes(state: dict, concept_id: str = 'concept_a') -> bytes:
-    return _zip_files(_package_files(state, concept_id))
+def render_fymc_bundle_zip_bytes(state: dict, concept_id: str = 'concept_a', *, volume_id: object = None) -> bytes:
+    pkg = _package_files(state, concept_id) if volume_id is None else _package_files(state, concept_id, volume_id=volume_id)
+    return _zip_files(pkg)
 
 
 def _write_durable_file(path: Path, data: bytes) -> None:
@@ -676,14 +749,62 @@ def _write_export_journal(previews_dir: Path, journal_path: Path, concept_id: st
             tmp_path.unlink(missing_ok=True)
 
 
-def export_concept_package(root_dir: Path, state: dict, concept_id: str = 'concept_a') -> dict:
+def _recover_volume_export_journal(directory: Path, concept_id: str) -> None:
+    """Roll back an interrupted nested-volume swap before starting another export."""
+    previews_dir = directory.parent
+    journal_path = previews_dir / f'.export_journal_{concept_id}.json'
+    if not journal_path.exists():
+        return
+    if journal_path.is_symlink():
+        raise ValueError('Invalid export journal')
+    payload = json.loads(journal_path.read_text(encoding='utf-8'))
+    if (not isinstance(payload, dict) or payload.get('concept_id') != concept_id
+            or payload.get('target') != directory.name
+            or not isinstance(payload.get('had_existing'), bool)):
+        raise ValueError('Invalid export journal')
+    paths = {}
+    for key, prefix in (('stage', concept_id + '.stage.'), ('backup', concept_id + '.prev.')):
+        name = payload.get(key)
+        if (not isinstance(name, str) or not name.startswith(prefix)
+                or Path(name).name != name or '/' in name or '\\' in name):
+            raise ValueError('Invalid export journal path')
+        path = previews_dir / name
+        if path.is_symlink() or (path.exists() and not path.is_dir()):
+            raise ValueError('Invalid export recovery directory')
+        paths[key] = path
+    stage, backup = paths['stage'], paths['backup']
+    if directory.is_symlink() or (directory.exists() and not directory.is_dir()):
+        raise ValueError('Invalid export recovery target')
+    if payload['had_existing']:
+        if backup.exists():
+            if directory.exists():
+                shutil.rmtree(directory)
+            os.replace(backup, directory)
+            _fsync_dir(previews_dir)
+        elif not directory.exists():
+            raise ValueError('Export recovery is missing the previous package')
+    elif directory.exists():
+        shutil.rmtree(directory)
+        _fsync_dir(previews_dir)
+    if stage.exists():
+        shutil.rmtree(stage)
+        _fsync_dir(previews_dir)
+    journal_path.unlink()
+    _fsync_dir(previews_dir)
+
+
+def export_concept_package(root_dir: Path, state: dict, concept_id: str = 'concept_a', *, volume_id: object = None) -> dict:
     if concept_id not in {'concept_a', 'concept_b', 'concept_c'}:
         raise ValueError('Unknown concept id')
     root = Path(root_dir).resolve()
-    directory = root / 'publishing' / 'previews' / concept_id
+    slug = _resolve_state_volume_slug(state, volume_id)
+    directory = root / 'publishing' / 'previews'
+    if slug != FLAGSHIP_VOLUME_ID:
+        directory = directory / slug
+    directory = directory / concept_id
     if os.path.commonpath([str(root), str(directory.resolve())]) != str(root):
         raise ValueError('Preview directory escapes the project root')
-    files = _package_files(state, concept_id)
+    files = _package_files(state, concept_id) if volume_id is None else _package_files(state, concept_id, volume_id=slug)
     files['bundle.zip'] = _zip_files(files)
     with _root_lock(root):
         previews_dir = directory.parent
@@ -691,6 +812,9 @@ def export_concept_package(root_dir: Path, state: dict, concept_id: str = 'conce
         _recover_export_journals(root)
         if os.path.commonpath([str(root), str(directory.resolve())]) != str(root):
             raise ValueError('Preview directory escapes the project root')
+        if slug != FLAGSHIP_VOLUME_ID:
+            _fsync_dir(previews_dir.parent)
+            _recover_volume_export_journal(directory, concept_id)
         stage_dir = Path(tempfile.mkdtemp(prefix=concept_id + '.stage.', dir=str(previews_dir)))
         backup = directory.with_name(concept_id + '.prev.' + uuid4().hex)
         journal_path = previews_dir / f'.export_journal_{concept_id}.json'
@@ -753,5 +877,6 @@ def export_concept_package(root_dir: Path, state: dict, concept_id: str = 'conce
                 shutil.rmtree(stage_dir)
                 _fsync_dir(previews_dir)
         return {'concept_id': concept_id, 'output_dir': str(directory),
-                'files': {name: str(directory / name) for name in files}, 'preview_only': True}
+                'files': {name: str(directory / name) for name in files},
+                'preview_only': json.loads(files['manifest.json'])['preview_only']}
 

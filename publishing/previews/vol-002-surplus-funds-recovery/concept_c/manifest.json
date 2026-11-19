@@ -1,0 +1,65 @@
+{
+  "concept_id": "concept_c",
+  "volume_id": "vol-002-surplus-funds-recovery",
+  "approved": false,
+  "edition_status": "concept_preview",
+  "preview_only": true,
+  "files": {
+    "digital_pdf.pdf": {
+      "bytes": 973667,
+      "sha256": "a86bfa4f950815f214476c8a7d3fbf73eebef1c446481741f205eec90c7102a4"
+    },
+    "print_6x9_pdf.pdf": {
+      "bytes": 1107464,
+      "sha256": "1ec973062474c3d85241779d6c541a16364e827ceaaf4d47427edaa0cbe9345e"
+    },
+    "workbook_pdf.pdf": {
+      "bytes": 594132,
+      "sha256": "1a4df29e9935b52d4cda48c25525e2793b2a08228ceea99f202be4bcef3b39ca"
+    },
+    "book.epub": {
+      "bytes": 176005,
+      "sha256": "6579592fd0f83dd1e3a210090d191cfd430ee5bcabb9711952af5470deb29f7b"
+    },
+    "art/cover.svg": {
+      "bytes": 4100,
+      "sha256": "afed92d8750817c704d09f93ed0ae52ac28a2a484e6c4bfbc9d48578c6e8a0f4"
+    },
+    "art/scorecard.svg": {
+      "bytes": 32896,
+      "sha256": "c39db1564f105aae8a37e8f5ac8c17d0a4cd7ab3e6fa2eb51aec5da64f24cb8b"
+    },
+    "art/diag_01.svg": {
+      "bytes": 9118,
+      "sha256": "54c84e3315f57c8273cbb5661e220da04e7297212b2c9fd2f5b90822d184b992"
+    },
+    "art/diag_02.svg": {
+      "bytes": 5998,
+      "sha256": "860bda5d143f9da23a25f60a5ee076036b521de1184c0262ed96a0f63bd7039f"
+    },
+    "art/diag_03.svg": {
+      "bytes": 7959,
+      "sha256": "54e312618d31c069307d1978f62fd3fda853831400026f2ddaa6ef2ef785c3dd"
+    },
+    "art/diag_04.svg": {
+      "bytes": 6260,
+      "sha256": "6a8863250e451203e0cca0994e92512112d5a042874a7e2cbb2273e7cd71ee7e"
+    },
+    "art/diag_05.svg": {
+      "bytes": 7402,
+      "sha256": "ca9e423f0cd1e8d50d694e614ffb4436f20d1958cbd465169a342ea5b8c88962"
+    },
+    "art/diag_06.svg": {
+      "bytes": 7443,
+      "sha256": "b0ac3cd6d452b4e39953d48ccc6404402c1006c0557ba64ab5631393f81267b8"
+    },
+    "art/diag_07.svg": {
+      "bytes": 6242,
+      "sha256": "731ea5b5e57006affef60e65be9794b21301d329030f241e6c7488201959f9cf"
+    },
+    "art/diag_08.svg": {
+      "bytes": 6580,
+      "sha256": "f23a95efd4e8674aa607fe3e8b3ae6db7ee538054591d9f7cd05a22497bbd37c"
+    }
+  }
+}

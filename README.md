@@ -4,7 +4,7 @@
 > **Signature Rating System:** **Money-to-Manpower Score (0–100)**  
 > **Standalone Reference:** [FYMC_MASTER_PLAN_AND_INVENTORY.md](FYMC_MASTER_PLAN_AND_INVENTORY.md) · **Operational Manual:** [ADVANCED_AGENT_HOW_TO_REPORT.md](ADVANCED_AGENT_HOW_TO_REPORT.md) · **189-Video Compendium:** [VIDEO_BY_VIDEO_COMPENDIUM.md](VIDEO_BY_VIDEO_COMPENDIUM.md)
 
-Complete publishing brand, editorial design system, 29-volume catalog, **97 canonical asymmetric & grey-zone operator plays**, Flagship **Volume 001 — Heir Hunting** multi-format release, 9-module Internal Publishing Studio (`/studio`), Public Brand Storefront (`/site`), and 189-video research corpus—built entirely on the Python 3.9+ standard library with zero third-party runtime dependencies.
+Complete publishing brand with **Concept B locked as Owner-Approved Series Master**, 29-volume catalog, **97 canonical asymmetric & grey-zone operator plays** (**56 Track 01 + 41 Track 02**), and two built 5-Layer playbooks: **Volume 001 — Heir Hunting (`87/100`)** and **Volume 002 — Surplus Funds Recovery (`86/100`, 100% Built & QA-Verified)**. The 9-module Internal Publishing Studio (`/studio`) and Public Brand Staging Storefront (`/site`) support multi-volume switching, backed by a 189-video research corpus—built entirely on the Python 3.9+ standard library with zero third-party runtime dependencies. Public deployment and paid sales remain closed until public launch cutover.
 
 ---
 
@@ -32,9 +32,24 @@ python3 -m unittest discover -s tests -v
 * **Series-Dominant & Marketplace-Safe Cover Policy:** **THE BIG MONEY PLAYBOOKS** is the primary display title across every cover, with *The Fuck You Money Club* placed as a single publisher colophon—plus automatic `marketplace_clean=True` cover variants (`FYMC Publishing`) for Amazon KDP, Apple Books, Etsy, eBay, and paid ad channels ([`src/fymc/cover_and_mockups.py`](src/fymc/cover_and_mockups.py)).
 * **Money-to-Manpower Score (`0–100`):** Weighted across **Revenue Potential (`25`)**, **Profit Margin Potential (`25`)**, **Team Efficiency (`20`)**, **Startup Accessibility (`15`)**, and **Automation Potential (`15`)**, modeling Conservative / Base / Scaled scenarios, full contractor headcount, and sensitivity bands (`±3`, `±6`, `±10` pts) ([`src/fymc/scorecard_engine.py`](src/fymc/scorecard_engine.py)).
 
-### Visual Design Systems (`Concept B — Bold Editorial` Approved Default)
+### Visual Design Systems — Owner-Approved Series Master
 
-| Concept B — Bold Editorial *(Approved Default)* | Concept A — Black & Gold Executive | Concept C — Modern Wealth Intelligence |
+**Concept B (`concept_b` — Bold Editorial)** is locked as the **Owner-Approved Series Master**: `#09090B` black, `#FFD400` vivid yellow, and `#FFFFFF` paper. Concepts A and C remain comparison previews, not alternate approved masters.
+
+`OWNER_APPROVED_CONCEPT_ID = "concept_b"`. The authoritative `gates` in [`brand_system.json`](publishing/brand/brand_system.json) and `_normalize_gates()` are:
+
+```json
+{
+  "design_approval_status": "approved",
+  "approved_concept_id": "concept_b",
+  "public_deploy_approved": false,
+  "paid_sales_approved": false
+}
+```
+
+Thus `gates.approved_concept_id = "concept_b"` and `gates.design_approval_status = "approved"` record design approval only; public deployment and paid sales stay closed until public launch cutover. Normalization always removes `design_approved_at`. `/api/fymc/settings` and `update_publishing_settings` reject patches to `approved_concept_id`, `public_deploy_approved`, `paid_sales_approved`, and `owner_explicit_*`, and normalize back to this canonical state.
+
+| Concept B — Bold Editorial *(Owner-Approved Series Master)* | Concept A — Black & Gold Executive | Concept C — Modern Wealth Intelligence |
 | :---: | :---: | :---: |
 | ![Concept B Cover](publishing/previews/concept_b/art/cover.svg) | ![Concept A Cover](publishing/previews/concept_a/art/cover.svg) | ![Concept C Cover](publishing/previews/concept_c/art/cover.svg) |
 | `#09090B` black · `#FFD400` yellow · `#FFFFFF` paper<br>12-col Swiss brutalist magazine grid | `#0B0D11` charcoal · `#C9A45C` gold · `#FAF7F0` cream<br>2-col private-bank marginalia grid | `#F4EFE6` vellum · `#11382B` forest green · `#B68D40` brass<br>3-col Tufte analytical dossier grid |
@@ -42,6 +57,12 @@ python3 -m unittest discover -s tests -v
 | Volume 001 Scorecard (`87 / 100`) | End-to-End Workflow (`diag_01`) | Contingency Fee Waterfall (`diag_03`) |
 | :---: | :---: | :---: |
 | ![Concept B Scorecard](publishing/previews/concept_b/art/scorecard.svg) | ![Workflow Diagram](publishing/previews/concept_b/art/diag_01.svg) | ![Fee Waterfall Diagram](publishing/previews/concept_b/art/diag_03.svg) |
+
+### Volume 002 — Concept B SVG Showcase
+
+| Volume 002 Concept B Cover | Volume 002 Scorecard (`86 / 100`) | Fee Waterfall (`diag_03.svg`) |
+| :---: | :---: | :---: |
+| ![Volume 002 Surplus Funds Recovery Cover](publishing/previews/vol-002-surplus-funds-recovery/concept_b/art/cover.svg) | ![Volume 002 Scorecard — 86 / 100](publishing/previews/vol-002-surplus-funds-recovery/concept_b/art/scorecard.svg) | ![Volume 002 Fee Waterfall](publishing/previews/vol-002-surplus-funds-recovery/concept_b/art/diag_03.svg) |
 
 ---
 
@@ -61,16 +82,47 @@ python3 -m unittest discover -s tests -v
 
 Every volume in **The Big Money Playbooks** is produced on the same deterministic 5-layer specification:
 1. **12-Chapter Operating Spine (`Q1–Q12`):** `Q1` Business Definition & Lanes -> `Q2` Who Pays & Capital Custodians -> `Q3` Fee Structures & Unit Economics -> `Q4` Startup Capital & Stack -> `Q5` Expert Edge vs. Beginner Traps -> `Q6` Sourcing Qualified Deals -> `Q7` Proof & Underwriting Process -> `Q8` Public Databases & Scrapers -> `Q9` Outreach, Contracts & Jurisdictional Rules -> `Q10` Automation & AI Leverage -> `Q11` Scaling a 2-to-5 Person Firm -> `Q12` First 30-Day Execution Plan.
-2. **Mandatory Expert Evidence Floor (`150–200+` Clickable YouTube Deep Links):** Minimum `12` timestamped `[HH:MM:SS]` expert citations per chapter (`180` in Volume 001 via [`src/fymc/volume_001_citations.py`](src/fymc/volume_001_citations.py)).
+2. **Mandatory Expert Evidence Floor (`150–200+` Clickable YouTube Deep Links):** Minimum `12` timestamped `[HH:MM:SS]` expert citations per chapter (`180` in each built volume: [Volume 001 citations](src/fymc/volume_001_citations.py) and [Volume 002 source modules](src/fymc/)).
 3. **14 Custom Editorial Layout Plates (`Concept B`):** Rendered across `desktop`, `tablet`, and `6×9` print proof modes ([`src/fymc/interior_templates.py`](src/fymc/interior_templates.py)).
 4. **8 Data-Driven Vector Diagrams + 10 Cover/Mockup Assets:** 100% original SVG plates ([`src/fymc/diagrams_engine.py`](src/fymc/diagrams_engine.py)).
 5. **6 Companion Operator Worksheets:** Printable execution logs and underwriting sheets.
 
+### Completed Deliverables — Two Built Volumes
+
+**Volume 001 — Heir Hunting (`87/100`)** — `vol-001-heir-hunting` is upgraded to the full **5-Layer FYMC Content Structure**: **12 deep `Q1–Q12` chapters**, each with **>=1,250 body prose words** in `sections[].paragraphs`. All **5 mapped Track 01 operator plays** and forensic **naive-trap vs durable-operator fallback matrices** are integrated directly into the chapters, alongside Conservative/Base/Scaled unit economics. The package includes **180 clickable `[HH:MM:SS]` expert YouTube deep links**, **8 vector diagrams**, **10 cover/mockup SVGs**, and **6 printable worksheets**. See the [manuscript source](src/fymc/volume_001_manuscript.py), [volume package](publishing/volumes/vol-001-heir-hunting/), and [Concept B exports](publishing/previews/concept_b/).
+
+Mapped plays: `public_record_api_intelligence`, `unclaimed_property_escheatment_arbitrage`, `probate_docket_inheritance_arbitrage`, `forced_pooling_mineral_lease_curve_jumping`, and `fractional_heir_share_partition_forcing`.
+
+**Volume 002 — Surplus Funds Recovery (`86/100`) — 100% Built & QA-Verified** — `vol-002-surplus-funds-recovery`, subtitled *The Complete Playbook for Tax-Sale Overages, Foreclosure Excess Proceeds & Building a Contingent Recovery Firm*, is complete across the `src/fymc/volume_002_*.py` [source modules](src/fymc/), [volume package](publishing/volumes/vol-002-surplus-funds-recovery/), and [Concept B preview/export package](publishing/previews/vol-002-surplus-funds-recovery/concept_b/). Its **12 deep `Q1–Q12` chapters**, each with **>=1,250 body prose words**, integrate all **6 mapped Track 01 operator plays**, forensic teardowns, and naive-trap vs durable-operator fallback matrices. The package includes **180 real corpus-verified clickable `[HH:MM:SS]` YouTube deep links**, **8 vector diagrams**, **10 `VOLUME 002` cover/mockup SVGs**, and **6 Surplus Funds companion worksheets**. Both `/studio` and `/site` support switching between the two built volumes.
+
+Mapped plays: `public_record_api_intelligence`, `distressed_asset_recovery`, `unclaimed_property_escheatment_arbitrage`, `probate_docket_inheritance_arbitrage`, `property_tax_assessment_appeal_contingency`, and `hoa_super_lien_tax_deed_redemption_arbitrage`.
+
+#### Conservative / Base / Scaled Unit Economics
+
+Annual modeled gross revenue and owner net profit are distinct; `FT` counts full-time staff and `C` counts recurring contractors.
+
+| Volume | Scenario | Gross Revenue | Owner Net Margin | Owner Net Profit | Team |
+| :--- | :--- | ---: | ---: | ---: | :--- |
+| 001 — Heir Hunting | Conservative | \$80,000 | 25% | \$20,000 | 1 FT + 3 C |
+| 001 — Heir Hunting | Base | \$340,000 | 37.5% | \$127,500 | 1 FT + 3 C |
+| 001 — Heir Hunting | Scaled | \$600,000 | 50% | \$300,000 | 2 FT + 4 C |
+| 002 — Surplus Funds Recovery | Conservative | \$100,000 | 25% | \$25,000 | 2 FT + 2 C |
+| 002 — Surplus Funds Recovery | Base | \$425,000 | 35% | \$148,750 | 2 FT + 2 C |
+| 002 — Surplus Funds Recovery | Scaled | \$750,000 | 45% | \$337,500 | 3 FT + 3 C |
+
+Volume 001 sub-scores are `22/23/18/12/12`; Volume 002 sub-scores are `22/22/18/12/12`. Both carry **±3 points, High confidence**.
+
+#### Workflow & Multi-Volume Store
+
+Stages **1–11** — Research, Source Review, Editorial Outline, Manuscript, Fact-Checking, Design, Graphics, Scorecard, Proofreading, Export, and Quality Assurance — have `status="completed"`. Stage **12**, Publication Approval, has `status="staged_preview"`. Built and QA-verified does not mean publicly deployed or open for paid sales.
+
+`PUBLISHED_VOLUME_IDS = ("vol-001-heir-hunting", "vol-002-surplus-funds-recovery")` identifies the two built store entries. `resolve_volume_slug(volume_id=None)` defaults to Volume 001 for `None` or `""`; accepts `1`, `"1"`, `"001"`, `"vol-001"`, `"vol-001-heir-hunting"`, or `"heir-hunting"` for Volume 001, and `2`, `"2"`, `"002"`, `"vol-002"`, `"vol-002-surplus-funds-recovery"`, or `"surplus-funds-recovery"` for Volume 002. Booleans and all other values raise `ValueError("Invalid volume_id")`.
+
 ### Phased Rollout Plan
-* **Phase 1 *(Complete)*:** 189-video corpus (`79.95h` / `812k` words / `1,806` pro tips), **Concept B** visual system, **29 scored candidate volumes**, **97 canonical Track 1 / Track 2 operator plays**, **Volume 001 — Heir Hunting (`87/100`)**, `/studio`, and `/site`.
-* **Phase 2 *(Next Priority)*:** Build **Volume 002 — Surplus Funds / Tax Sale Overages & Excess Proceeds Recovery**, followed by the remaining initial 5-Volume Founder Collection shelf (`#01 Digital Product Empire`, `#02 AI-Powered Micro SaaS`, `#04 High-Ticket Affiliate Marketing`, `#08 Commercial Lead Generation`).
+* **Phase 1 *(Complete)*:** 189-video corpus (`79.95h` / `812k` words / `1,806` pro tips), **Concept B Owner-Approved Series Master**, **29 scored candidate volumes**, **97 canonical Track 01 / Track 02 operator plays**, and the full 5-Layer **Volume 001 — Heir Hunting (`87/100`)**.
+* **Phase 2 *(Volume 002 Complete; Shelf Expansion Next)*:** **Volume 002 — Surplus Funds Recovery (`86/100`) is 100% Built & QA-Verified**, with multi-volume switching in `/studio` and `/site`. Continue the Founder Collection shelf using the remaining top-ranked candidates (`#01 Digital Product Empire`, `#02 AI-Powered Micro SaaS`, `#04 High-Ticket Affiliate Marketing`, `#08 Commercial Lead Generation`); Volume 002 is no longer a pending build.
 * **Phase 3 *(Launch Cutover)*:** Connect production domain + Stripe checkout (`public_deploy_approved` / `paid_sales_approved` currently `false` by design) and roll out across **Direct DTC**, **Amazon KDP**, **Etsy**, and **eBay**.
-* **Phase 4 *(Scale)*:** Ship all 29 volumes systematically and feed recurring \$290/yr Charter Members with new volumes, live scorecards, and Track 1/Track 2 teardowns.
+* **Phase 4 *(Scale)*:** Ship all 29 volumes systematically and feed recurring \$290/yr Charter Members with new volumes, live scorecards, and Track 01/Track 02 teardowns.
 
 ---
 
@@ -84,7 +136,7 @@ Source: [`publishing/catalog/pipeline_29_candidates.json`](publishing/catalog/pi
 | **#02** | **AI-Powered Micro SaaS** | Subscription software | **88/100** (`±10` Prelim) | `22/22/19/11/14` | 3 (`1 FT + 2 C`) | \$50k–\$700k | \$7,500–\$315,000 | T1, T2 | `27` |
 | **#03** | **Heir Hunting** *(Vol. 001 Flagship)* | Estate research | **87/100** (`±3` High) | `22/23/18/12/12` | 4 (`1 FT + 3 C`) | \$80k–\$600k | \$20,000–\$300,000 | T1 | `5` |
 | **#04** | **High-Ticket Affiliate Marketing** | Referral publishing | **87/100** (`±6` Mod) | `21/22/19/12/13` | 3 (`1 FT + 2 C`) | \$50k–\$600k | \$10,000–\$300,000 | T2, T1 | `35` |
-| **#05** | **Surplus Funds Recovery** *(Vol. 002 Priority)* | Recovery services | **86/100** (`±3` High) | `22/22/18/12/12` | 4 (`2 FT + 2 C`) | \$100k–\$750k | \$25,000–\$337,500 | T1 | `6` |
+| **#05** | **Surplus Funds Recovery** *(Vol. 002 Built & QA-Verified)* | Recovery services | **86/100** (`±3` High) | `22/22/18/12/12` | 4 (`2 FT + 2 C`) | \$100k–\$750k | \$25,000–\$337,500 | T1 | `6` |
 | **#06** | **Productized AI Agencies** | Tech implementation | **86/100** (`±10` Prelim) | `23/21/17/12/13` | 5 (`2 FT + 3 C`) | \$100k–\$1.0M | \$20,000–\$400,000 | T1, T2 | `23` |
 | **#07** | **Unclaimed Property Recovery** | Recovery services | **85/100** (`±3` High) | `20/22/18/13/12` | 3 (`1 FT + 2 C`) | \$60k–\$450k | \$15,000–\$225,000 | T1 | `12` |
 | **#08** | **Commercial Lead Generation** | B2B marketing services | **85/100** (`±6` Mod) | `21/21/18/12/13` | 4 (`1 FT + 3 C`) | \$100k–\$750k | \$20,000–\$300,000 | T1, T2 | `54` |

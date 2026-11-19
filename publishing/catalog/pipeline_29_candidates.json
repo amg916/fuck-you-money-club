@@ -4,6 +4,10 @@
   "rating_system": "Money-to-Manpower Score",
   "candidate_count": 29,
   "flagship_volume_id": "vol-001-heir-hunting",
+  "published_volume_ids": [
+    "vol-001-heir-hunting",
+    "vol-002-surplus-funds-recovery"
+  ],
   "editorial_tracks": {
     "track_1": {
       "id": "track_1",
@@ -5319,7 +5323,7 @@
       "slug": "heir-hunting",
       "title": "Heir Hunting",
       "category": "Estate research",
-      "production_stage": "flagship_in_design_review",
+      "production_stage": "approved_master",
       "scores": {
         "revenue_potential": 22,
         "profit_margin_potential": 23,
@@ -7159,7 +7163,7 @@
       "slug": "surplus-funds-recovery",
       "title": "Surplus Funds Recovery",
       "category": "Recovery services",
-      "production_stage": "research_corpus_ready",
+      "production_stage": "approved_master",
       "scores": {
         "revenue_potential": 22,
         "profit_margin_potential": 22,
@@ -23403,5 +23407,5 @@
       "min_expert_youtube_links_per_chapter": 12
     }
   ],
-  "generated_at": "2026-11-02T13:30:03Z"
+  "generated_at": "2026-11-19T22:19:34Z"
 }
