@@ -2545,9 +2545,37 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
         self.assertEqual(len(v4["manuscript"]["operator_plays"]), 27)
         self.assertGreater(v4["manuscript"]["total_word_count"], 50000)
         repo_v4 = self.store.load_publishing_state(ROOT, volume_id=VOLUME_004_ID, verify_manifest=True)["volume"]
-        self.assertGreater(repo_v4["manuscript"]["total_word_count"], 56000)
+        self.assertGreater(repo_v4["manuscript"]["total_word_count"], 59000)
         self.assertGreaterEqual(v4["manuscript"]["expert_youtube_link_count"], 180)
         self.assertEqual(len(v4["workbook"]["worksheets"]), 6)
+        self.assertGreaterEqual(len(json.dumps(v4["workbook"]).split()), 5000)
+        v4_serialized = json.dumps({"manuscript": v4["manuscript"], "workbook": v4["workbook"]})
+        for required_v4_marker in (
+            "15-Vertical B2B AI Micro-SaaS Wedge Scorecard Matrix",
+            "8-Rail B2B Billing, Embedded Fintech & Global Tax Comparison Matrix",
+            "12-Program Cloud, GPU & LLM Startup Credit Grant Directory",
+            "Postgres RLS + Atomic Token-Budget Engineering Blueprint",
+            "Enterprise ZDR DPA, Liability-Cap & IP Assignment Clauses",
+            "FORCE ROW LEVEL SECURITY",
+            "Zero-Data-Retention",
+        ):
+            self.assertIn(required_v4_marker, v4_serialized)
+        v4_table_rows = sum(
+            len(sec["table"].get("rows", []))
+            for ch in v4["manuscript"]["chapters"]
+            for sec in ch.get("sections", [])
+            if isinstance(sec.get("table"), dict)
+        )
+        self.assertGreaterEqual(v4_table_rows, 180)
+        off_domain_re = re.compile(
+            r"\b(genealogy|genealogist|ancestry|familysearch|marriage\s+records|probate|"
+            r"surplus\s+funds|tax\s+sale|tax\s+overage|foreclosure|curative\s+title)\b",
+            re.IGNORECASE,
+        )
+        for ch in repo_v4["manuscript"]["chapters"]:
+            for cit in ch.get("source_citations", []):
+                hay = f"{cit.get('title', '')} {cit.get('channel', '')}"
+                self.assertIsNone(off_domain_re.search(hay), f"Off-domain Vol 004 citation: {cit}")
         for ch in v4["manuscript"]["chapters"]:
             prose_words = sum(
                 len(re.findall(r"\b\w+\b", str(p)))

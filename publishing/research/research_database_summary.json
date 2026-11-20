@@ -1,6 +1,6 @@
 {
-  "abridged_video_count": 411,
-  "raw_video_count": 411,
+  "abridged_video_count": 441,
+  "raw_video_count": 441,
   "summary": {
     "type": "dict",
     "keys": [
@@ -22,11 +22,11 @@
       "coverage": 6
     },
     "values": {
-      "generated_at": "2026-11-20T17:54:18+00:00",
+      "generated_at": "2026-11-20T18:28:05+00:00",
       "schema_version": "1.0"
     }
   },
-  "generated_at": "2026-11-20T17:54:18Z",
+  "generated_at": "2026-11-20T18:28:05Z",
   "counts": {
     "topics": 8
   },
@@ -34,9 +34,9 @@
     {
       "topic_id": "business_model_and_economics",
       "title": "Business Model, Contingency Economics & Deal Scale",
-      "video_count": 292,
-      "tip_count": 538,
-      "channel_count": 166,
+      "video_count": 307,
+      "tip_count": 563,
+      "channel_count": 179,
       "top_sources": [
         {
           "video_id": "8eHInIdNfa0",
@@ -190,40 +190,40 @@
       "statutes_and_forms": [
         "form and",
         "form of",
-        "form to",
         "form that",
+        "form to",
         "form for",
-        "form is",
         "form the",
+        "form is",
         "form you",
         "letters of administration",
         "form below",
         "form on",
         "form or",
+        "form so",
         "form where",
         "quiet title",
         "form content",
-        "form so",
+        "form with",
         "letters testamentary",
         "property Act",
         "form in",
         "form like",
         "form partition",
         "form an",
+        "form as",
         "form our",
         "form page",
-        "form with",
+        "form this",
         "warranty deed",
         "affidavit of heirship",
         "court order",
         "form a",
-        "form as",
         "form called",
         "form if",
         "form law",
         "form probate",
         "form state",
-        "form this",
         "form uh",
         "form video",
         "form your",
@@ -233,8 +233,8 @@
         "Facebook",
         "Google",
         "Ancestry",
-        "FamilySearch",
         "LinkedIn",
+        "FamilySearch",
         "Excel",
         "https://excesselite.com",
         "https://www.facebook.com/groups/assetrecovery",
@@ -275,9 +275,9 @@
     {
       "topic_id": "probate_and_docket_sourcing",
       "title": "County Probate Dockets, Intestate Filings & Estate Leads",
-      "video_count": 325,
+      "video_count": 347,
       "tip_count": 645,
-      "channel_count": 152,
+      "channel_count": 173,
       "top_sources": [
         {
           "video_id": "oZiYbKNvxJY",
@@ -435,17 +435,17 @@
         "form the",
         "form to",
         "form is",
-        "form for",
         "form that",
+        "form for",
         "form you",
         "letters of administration",
         "form a",
         "form so",
+        "form on",
+        "form or",
         "form where",
         "quiet title",
         "form in",
-        "form on",
-        "form or",
         "letters testamentary",
         "property Act",
         "affidavit of heirship",
@@ -453,22 +453,22 @@
         "form our",
         "form partition",
         "form today",
+        "form we",
+        "form will",
         "warranty deed",
         "affidavit of airship",
         "court order",
         "form features",
-        "form we",
-        "form will",
         "form your",
         "Information Act",
         "summary administration",
+        "balancing act",
         "form as",
         "form due",
         "form if",
         "form law",
         "form page",
-        "form probate",
-        "form state"
+        "form probate"
       ],
       "tools_and_portals": [
         "Facebook",
@@ -482,13 +482,13 @@
         "https://www.surplusfunds101.com/freecallingscript",
         "https://www.instagram.com/erizzyy/",
         "https://www.youtube.com/surplusfunds101",
+        "Excel",
         "https://instagram.com/courtneyfricke",
         "https://tiktok.com/@courtney.fricke",
         "https://www.facebook.com/courtneyfricke19/",
         "https://www.youtube.com/@courtneyfricke",
         "https://x.com/courtneyfricke",
         "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
-        "Excel",
         "https://www.instagram.com/thedavidwilkerson",
         "http://familysearch.me/facebook",
         "http://familysearch.me/home",
@@ -516,9 +516,9 @@
     {
       "topic_id": "unclaimed_property_and_escheat",
       "title": "State Unclaimed Property, Escheated Funds & Treasury Claims",
-      "video_count": 156,
+      "video_count": 177,
       "tip_count": 582,
-      "channel_count": 70,
+      "channel_count": 90,
       "top_sources": [
         {
           "video_id": "bsbWDqAXsrE",
@@ -674,42 +674,42 @@
         "form below",
         "Form is",
         "form that",
-        "form you",
         "form the",
-        "form of",
+        "form you",
         "form to",
+        "form of",
         "form for",
         "form today",
         "form our",
+        "form so",
+        "form we",
         "affidavit of heirship",
         "form as",
         "form due",
         "form in",
-        "form so",
-        "form we",
+        "form on",
+        "form this",
+        "Form uh",
+        "form will",
         "form your",
         "Information Act",
         "summary administration",
+        "balancing act",
         "form a",
         "form all",
         "form an",
+        "form but",
         "form from",
         "form it",
         "Form located",
         "form now",
-        "form on",
         "form online",
+        "form or",
         "form research",
         "form some",
         "form them",
         "form then",
-        "form this",
-        "Form uh",
-        "form where",
-        "form which",
-        "form will",
-        "form with",
-        "section 3"
+        "form um"
       ],
       "tools_and_portals": [
         "Facebook",
@@ -722,16 +722,16 @@
         "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
         "https://www.instagram.com/thedavidwilkerson",
         "https://www.instagram.com/erizzyy/",
+        "LinkedIn",
         "Regrid",
         "https://www.facebook.com/groups/770825015084618",
-        "LinkedIn",
         "CSV",
         "https://www.instagram.com/erizzyy",
+        "Excel",
         "https://skool.com/surplusfunds",
         "https://surplusfunds.ai",
         "Ancestry",
         "DataTree",
-        "Excel",
         "http://YouTube.com/c/NateWoodbury",
         "https://bobdiamond.com/",
         "https://live.americastaxsaleattorney.com/s/WSOZag",
@@ -743,6 +743,7 @@
         "https://www.youtube.com/channel/UCg3-ZteFRfElxY7NFR1ZjjQ/?sub_confirmation=1",
         "https://youtu.be/IAWBIUKJkho",
         "ClaimIt.ca.gov",
+        "https://supabase.com/docs",
         "https://www.facebook.com/OverageAcquisition",
         "https://www.instagram.com/overageacquisition/",
         "https://www.overageacquisition.com/",
@@ -750,16 +751,15 @@
         "ArcGIS",
         "GeoJSON",
         "https://22pagemillionaire.com/1",
-        "https://calendly.com/surplusfundssecrets-info/30min",
-        "https://course.moneymakingjuggernaut.com/users/checkout/auth?"
+        "https://app.supabase.com"
       ]
     },
     {
       "topic_id": "genealogy_and_heirship_proof",
       "title": "Forensic Genealogy, Per-Stirpes Kinship & Proof of Heirship",
-      "video_count": 355,
-      "tip_count": 585,
-      "channel_count": 182,
+      "video_count": 365,
+      "tip_count": 592,
+      "channel_count": 190,
       "top_sources": [
         {
           "video_id": "7M3XZfN7814",
@@ -913,8 +913,8 @@
       "statutes_and_forms": [
         "form and",
         "form of",
-        "form to",
         "form that",
+        "form to",
         "form you",
         "form below",
         "form is",
@@ -923,17 +923,19 @@
         "letters of administration",
         "form a",
         "form on",
+        "form so",
         "form content",
         "form in",
         "form or",
-        "form so",
         "form where",
         "quiet title",
+        "form as",
+        "form with",
         "property Act",
         "affidavit of heirship",
-        "form as",
         "form like",
         "form partition",
+        "form this",
         "form will",
         "form your",
         "letters testamentary",
@@ -943,10 +945,8 @@
         "form if",
         "form our",
         "form page",
-        "form this",
         "Form uh",
         "form video",
-        "form with",
         "Information Act",
         "summary administration",
         "warranty deed",
@@ -998,9 +998,9 @@
     {
       "topic_id": "skip_tracing_and_outreach",
       "title": "Skip Tracing, Ethical Heir Contact & Trust Building",
-      "video_count": 171,
-      "tip_count": 83,
-      "channel_count": 94,
+      "video_count": 178,
+      "tip_count": 84,
+      "channel_count": 101,
       "top_sources": [
         {
           "video_id": "dJ-LTFmMsTg",
@@ -1155,9 +1155,9 @@
         "form of",
         "form and",
         "form to",
+        "form that",
         "form below",
         "form for",
-        "form that",
         "form the",
         "form you",
         "quiet title",
@@ -1239,9 +1239,9 @@
     {
       "topic_id": "contracts_and_compensation",
       "title": "Fee Agreements, Assignments of Interest & Escrow Disbursement",
-      "video_count": 325,
-      "tip_count": 341,
-      "channel_count": 173,
+      "video_count": 338,
+      "tip_count": 345,
+      "channel_count": 184,
       "top_sources": [
         {
           "video_id": "VBvaq5etzV4",
@@ -1395,8 +1395,8 @@
       "statutes_and_forms": [
         "form and",
         "form of",
-        "form to",
         "form that",
+        "form to",
         "form below",
         "form you",
         "Form is",
@@ -1407,24 +1407,24 @@
         "form content",
         "form where",
         "form a",
+        "form as",
         "form like",
+        "form so",
+        "form this",
+        "form with",
         "letters testamentary",
         "property Act",
         "quiet title",
         "affidavit of heirship",
-        "form as",
         "form in",
         "form or",
         "form our",
         "form partition",
-        "form so",
         "court order",
-        "form this",
         "Form uh",
         "form video",
         "form we",
         "form will",
-        "form with",
         "form your",
         "Information Act",
         "summary administration",
@@ -1437,8 +1437,8 @@
       "tools_and_portals": [
         "Facebook",
         "Google",
-        "Ancestry",
         "LinkedIn",
+        "Ancestry",
         "https://excesselite.com",
         "https://www.facebook.com/groups/assetrecovery",
         "FamilySearch",
@@ -1480,9 +1480,9 @@
     {
       "topic_id": "statutory_caps_and_licensing",
       "title": "State Fee Caps, Waiting Periods, PI Licensing & UPL Rules",
-      "video_count": 342,
-      "tip_count": 272,
-      "channel_count": 169,
+      "video_count": 366,
+      "tip_count": 317,
+      "channel_count": 191,
       "top_sources": [
         {
           "video_id": "TA4mtGUeNo8",
@@ -1588,6 +1588,15 @@
           "verbatim_research_only": true
         },
         {
+          "tip_paraphrase_summary": "With spend, roughly one request per second for every dollar, capped at 500. OpenRouter wins on the two tests that decide how fast you…",
+          "category": "Sequence / Alternative",
+          "timestamp": "00:05:16",
+          "link": "https://www.youtube.com/watch?v=SDB5hKMHUA8&t=316s",
+          "video_title": "OpenRouter vs LiteLLM: Which Should You Self-Host?",
+          "author": "Bryan Software",
+          "verbatim_research_only": true
+        },
+        {
           "tip_paraphrase_summary": "Grab that right now and start using it immediately to go get deals, but with that being said, you guys... Let's get into the…",
           "category": "Non-Negotiable Rule",
           "timestamp": "00:01:12",
@@ -1622,15 +1631,6 @@
           "video_title": "✅ 💰 CALIFORNIA Unclaimed Property Investigations - Tips from a Licensed Private Investigator!",
           "author": "Security and Investigations Leadership Channel",
           "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "They're glad to feed their person. And if they don't at a minimum, their CEO is being diligent and involved in that business. And…",
-          "category": "Pitfall / Hard No",
-          "timestamp": "00:05:29",
-          "link": "https://www.youtube.com/watch?v=PDnxvvPI7jU&t=329s",
-          "video_title": "Calling probates, probate marketing, and selling probate property: Live probate class w/ Bill Gross",
-          "author": "Probate Mastery",
-          "verbatim_research_only": true
         }
       ],
       "statutes_and_forms": [
@@ -1638,19 +1638,20 @@
         "form of",
         "form below",
         "form to",
-        "form for",
         "form that",
         "form the",
+        "form for",
         "form is",
         "form you",
         "letters of administration",
         "form a",
         "form on",
         "form so",
+        "form or",
         "form where",
         "quiet title",
         "form in",
-        "form or",
+        "form with",
         "letters testamentary",
         "property Act",
         "affidavit of heirship",
@@ -1658,22 +1659,21 @@
         "form our",
         "form partition",
         "form today",
+        "form we",
+        "form will",
         "form your",
         "warranty deed",
         "affidavit of airship",
         "court order",
         "form features",
-        "form we",
-        "form will",
-        "form with",
         "Information Act",
         "summary administration",
+        "balancing act",
         "form as",
         "form due",
         "form if",
         "form law",
-        "form like",
-        "form page"
+        "form like"
       ],
       "tools_and_portals": [
         "Facebook",
@@ -1684,8 +1684,8 @@
         "https://excesselite.com",
         "https://www.facebook.com/groups/assetrecovery",
         "https://www.moneymakingjug.com/inquiry",
-        "https://www.surplusfunds101.com/freecallingscript",
         "Excel",
+        "https://www.surplusfunds101.com/freecallingscript",
         "https://www.instagram.com/erizzyy/",
         "https://www.youtube.com/surplusfunds101",
         "https://instagram.com/courtneyfricke",
@@ -1721,9 +1721,9 @@
     {
       "topic_id": "automation_and_small_team_ops",
       "title": "Docket Automation, AI Abstracting & Small-Team Operations",
-      "video_count": 351,
-      "tip_count": 834,
-      "channel_count": 194,
+      "video_count": 381,
+      "tip_count": 1013,
+      "channel_count": 220,
       "top_sources": [
         {
           "video_id": "jHo-FO_OLv4",
@@ -1793,6 +1793,15 @@
           "verbatim_research_only": true
         },
         {
+          "tip_paraphrase_summary": "Sign up a second user and so obviously we're going to sign up ash's rival gary at pokemon.com and he's going to have the…",
+          "category": "Pitfall / Hard No",
+          "timestamp": "00:02:35",
+          "link": "https://www.youtube.com/watch?v=Ow_Uzedfohk&t=155s",
+          "video_title": "Implement Authorization using Row Level Security (RLS) with Supabase (Step By Step Guide)",
+          "author": "Supabase",
+          "verbatim_research_only": true
+        },
+        {
           "tip_paraphrase_summary": "Nutrition because everyone is unique so now you can have the AI interview the customer for their specific goals and their specific limitations and…",
           "category": "Pitfall / Hard No",
           "timestamp": "00:30:40",
@@ -1829,6 +1838,15 @@
           "verbatim_research_only": true
         },
         {
+          "tip_paraphrase_summary": "[Music] hey Jon from Supabase here and in this video we're going to learn all about row level policies now this is a concept…",
+          "category": "Legal / Deadline",
+          "timestamp": "00:00:07",
+          "link": "https://www.youtube.com/watch?v=Ow_Uzedfohk&t=7s",
+          "video_title": "Implement Authorization using Row Level Security (RLS) with Supabase (Step By Step Guide)",
+          "author": "Supabase",
+          "verbatim_research_only": true
+        },
+        {
           "tip_paraphrase_summary": "Cliente habiendo una base recurrente entonces era un poco raro en esto efectivamente el cálculo en nexo me da bastante importante que teníamos aquí…",
           "category": "Legal / Deadline",
           "timestamp": "00:49:46",
@@ -1854,24 +1872,6 @@
           "video_title": "State Funds Tutorial: 5 Tech Tools For Your State Funds Business",
           "author": "Surplus Funds 101",
           "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "0:05:56.0 S2: The regardless of professional email address, you guys... It's not gonna cost you anything to do. It really helps out merrier 0:06:06.1…",
-          "category": "Pitfall / Hard No",
-          "timestamp": "00:05:55",
-          "link": "https://www.youtube.com/watch?v=ES6y4iF-bBM&t=355s",
-          "video_title": "State Funds Tutorial: 5 Tech Tools For Your State Funds Business",
-          "author": "Surplus Funds 101",
-          "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "Towards your business. And right now is a great time to be in business. The fall is here. Contact rates have gone up, kids…",
-          "category": "Legal / Deadline",
-          "timestamp": "00:01:11",
-          "link": "https://www.youtube.com/watch?v=Gk0D4wVEXmc&t=71s",
-          "video_title": "Surplus Funds 101 Tutorial: Top 4 FREE Software Platforms For Your State Funds Business",
-          "author": "Surplus Funds 101",
-          "verbatim_research_only": true
         }
       ],
       "statutes_and_forms": [
@@ -1879,35 +1879,35 @@
         "form to",
         "form that",
         "form of",
-        "form below",
         "form is",
+        "form below",
+        "form the",
         "form you",
         "form for",
-        "form the",
-        "letters of administration",
-        "form where",
-        "form on",
         "form so",
-        "form content",
+        "letters of administration",
+        "form on",
+        "form where",
         "form or",
         "form as",
+        "form content",
+        "form with",
         "form in",
         "form like",
+        "form this",
+        "form will",
         "form a",
         "form our",
         "form today",
-        "form will",
-        "form with",
+        "Form uh",
+        "form we",
         "form your",
         "letters testamentary",
+        "balancing act",
         "form if",
-        "form this",
-        "Form uh",
         "form video",
-        "form we",
         "quiet title",
         "affidavit of heirship",
-        "balancing act",
         "court order",
         "form called",
         "form due",
@@ -1919,8 +1919,8 @@
       "tools_and_portals": [
         "Facebook",
         "Google",
-        "Ancestry",
         "LinkedIn",
+        "Ancestry",
         "FamilySearch",
         "https://excesselite.com",
         "https://www.facebook.com/groups/assetrecovery",
@@ -1956,7 +1956,7 @@
         "https://www.youtube.com/@courtneyfricke",
         "https://www.youtube.com/user/AncestryCom",
         "Newspapers.com",
-        "https://www.instagram.com/richardyuzee/"
+        "https://supabase.com/docs"
       ]
     }
   ],
@@ -1968,9 +1968,9 @@
       "headline": "Heir location is paid on contingency, never on up-front fees.",
       "summary": "Across the corpus, operators converge on a pure contingency model: the heir pays nothing out of pocket, the locator advances all research cost, and the fee is a negotiated percentage released only when the estate or state agency actually disburses funds. Charging an heir an advance fee is treated as the single clearest marker of a predatory or unlicensed operator.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 166,
-      "video_count": 292,
-      "corroborating_tip_count": 538,
+      "channel_count": 179,
+      "video_count": 307,
+      "corroborating_tip_count": 563,
       "supporting_links": [
         {
           "video_title": "State Funds Tutorial New Mexico: How To Register As A Property Locator In The State Of New Mexico.",
@@ -2018,8 +2018,8 @@
       "headline": "Fresh county probate and intestate dockets outperform purchased lead lists.",
       "summary": "Practitioners consistently build pipeline from newly filed probate and administration matters pulled directly from county clerk portals rather than resold lists. Filings naming an administrator but no located heirs, and estates sitting open past the local notice period, are the recurring high-value signal.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 152,
-      "video_count": 325,
+      "channel_count": 173,
+      "video_count": 347,
       "corroborating_tip_count": 645,
       "supporting_links": [
         {
@@ -2068,8 +2068,8 @@
       "headline": "State unclaimed-property and escheat databases supply the repeatable volume.",
       "summary": "Every state treasury or controller maintains a searchable unclaimed-property register, and the consensus workflow is to cross-reference deceased owners there against probate filings. Volume comes from systematic register sweeps; size comes from the rarer escheated estate, surplus-funds and safe-deposit categories.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 70,
-      "video_count": 156,
+      "channel_count": 90,
+      "video_count": 177,
       "corroborating_tip_count": 582,
       "supporting_links": [
         {
@@ -2118,9 +2118,9 @@
       "headline": "The deliverable is a document-backed kinship chain, not a name on a list.",
       "summary": "Operators agree that claims succeed or fail on the evidentiary chain: each generational link supported by vital records, each branch mapped per stirpes, and every gap closed before contact. Tree hints from consumer genealogy sites are treated as leads to verify, never as proof to submit.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 182,
-      "video_count": 355,
-      "corroborating_tip_count": 585,
+      "channel_count": 190,
+      "video_count": 365,
+      "corroborating_tip_count": 592,
       "supporting_links": [
         {
           "video_title": "Resolving Heirs' Property",
@@ -2168,9 +2168,9 @@
       "headline": "Verify identity before contact, then lead with restraint, not the dollar figure.",
       "summary": "The recurring outreach pattern is: skip trace to a confirmed current address and phone, open by letter or a short calm call, state that funds may be owed to the family without naming an amount, and give the heir a way to independently verify the operator. Pressure tactics and inflated figures are consistently reported as the fastest way to lose a signed file.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 94,
-      "video_count": 171,
-      "corroborating_tip_count": 83,
+      "channel_count": 101,
+      "video_count": 178,
+      "corroborating_tip_count": 84,
       "supporting_links": [
         {
           "video_title": "State Funds Tutorial: 5 Tech Tools For Your State Funds Business",
@@ -2218,9 +2218,9 @@
       "headline": "No work proceeds without a signed fee agreement and third-party escrow.",
       "summary": "Consensus practice is a plain-language, notarized or e-signed agreement that names the estate, states the percentage, discloses the heir's right to claim independently, and routes funds through attorney trust or licensed escrow so the locator never holds the heir's money directly.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 173,
-      "video_count": 325,
-      "corroborating_tip_count": 341,
+      "channel_count": 184,
+      "video_count": 338,
+      "corroborating_tip_count": 345,
       "supporting_links": [
         {
           "video_title": "DataTree Hacks: Find Full Legal Descriptions and Title Vesting Information",
@@ -2268,9 +2268,9 @@
       "headline": "Fee caps, waiting periods and licensing are decided per state, before the first call.",
       "summary": "Operators repeatedly stress that the governing rules — percentage caps on unclaimed-property recoveries, mandatory waiting periods after escheat or sale, private-investigator licensing triggers, and the line against practicing law — vary by jurisdiction and must be read in the local statute for every file rather than generalized from another state.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 169,
-      "video_count": 342,
-      "corroborating_tip_count": 272,
+      "channel_count": 191,
+      "video_count": 366,
+      "corroborating_tip_count": 317,
       "supporting_links": [
         {
           "video_title": "Surplus Funds Cold Calling Script: How to Not Sound Like a Scam",
@@ -2303,10 +2303,10 @@
           "link": "https://www.youtube.com/watch?v=vd__NHmQYgM&t=1209s"
         },
         {
-          "video_title": "State Funds Tutorial Delaware: Registering As A Property Locator For The State Of Delaware.",
-          "author": "Surplus Funds 101",
-          "timestamp": "00:01:12",
-          "link": "https://www.youtube.com/watch?v=TTfaOSBvLDc&t=72s"
+          "video_title": "OpenRouter vs LiteLLM: Which Should You Self-Host?",
+          "author": "Bryan Software",
+          "timestamp": "00:05:16",
+          "link": "https://www.youtube.com/watch?v=SDB5hKMHUA8&t=316s"
         }
       ],
       "caveat": "Consensus among the sampled operators — not legal advice and not a substitute for the governing statute in the reader's jurisdiction."
@@ -2318,15 +2318,21 @@
       "headline": "Automated docket monitoring plus AI abstracting lets one or two people run real volume.",
       "summary": "The operational consensus is to automate the repetitive layer — scheduled docket and register pulls, structured intake into a sheet or CRM, AI-assisted abstracting of filings — while keeping genealogy judgment, heir contact and contract execution human. That split is what keeps a two-person shop competitive against staffed firms.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 194,
-      "video_count": 351,
-      "corroborating_tip_count": 834,
+      "channel_count": 220,
+      "video_count": 381,
+      "corroborating_tip_count": 1013,
       "supporting_links": [
         {
           "video_title": "State Funds Tutorial: 5 Tech Tools For Your State Funds Business",
           "author": "Surplus Funds 101",
           "timestamp": "00:04:31",
           "link": "https://www.youtube.com/watch?v=ES6y4iF-bBM&t=271s"
+        },
+        {
+          "video_title": "Implement Authorization using Row Level Security (RLS) with Supabase (Step By Step Guide)",
+          "author": "Supabase",
+          "timestamp": "00:02:35",
+          "link": "https://www.youtube.com/watch?v=Ow_Uzedfohk&t=155s"
         },
         {
           "video_title": "How To Build Your First $10,000 Digital Product (Full Beginner Guide)",
@@ -2351,12 +2357,6 @@
           "author": "REtipster",
           "timestamp": "00:01:57",
           "link": "https://www.youtube.com/watch?v=y5XZp-4n_uc&t=117s"
-        },
-        {
-          "video_title": "Métricas SaaS y cómo modelarlas: MRR, ARR, churn y unit economics",
-          "author": "The Startup CFO",
-          "timestamp": "00:49:46",
-          "link": "https://www.youtube.com/watch?v=qgELHrlpUGo&t=2986s"
         }
       ],
       "caveat": "Consensus among the sampled operators — not legal advice and not a substitute for the governing statute in the reader's jurisdiction."
@@ -2746,8 +2746,8 @@
         "asset_id": "youtube_thumbnails",
         "asset": "https://i.ytimg.com/vi/<video_id>/*.jpg",
         "asset_type": "youtube_thumbnail_image",
-        "source": "YouTube CDN thumbnails for the 411 corpus videos",
-        "instance_count": 411,
+        "source": "YouTube CDN thumbnails for the 441 corpus videos",
+        "instance_count": 441,
         "instances": [
           {
             "video_id": "9Q4qYeK5DTg",
@@ -5625,6 +5625,216 @@
             "author": "IBM Technology",
             "thumbnail_url": "https://i.ytimg.com/vi/o0gkdZBtwEg/hqdefault.jpg",
             "source_url": "https://www.youtube.com/watch?v=o0gkdZBtwEg"
+          },
+          {
+            "video_id": "DabJ0hxiXAo",
+            "title": "PostgreSQL RLS for Safer Multi-Tenant SaaS",
+            "author": "International PHP Conference",
+            "thumbnail_url": "https://i.ytimg.com/vi/DabJ0hxiXAo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=DabJ0hxiXAo"
+          },
+          {
+            "video_id": "h1KAW_izGl8",
+            "title": "Postgres Row-Level Security for Multi-Tenant SaaS",
+            "author": "Past The Diagram",
+            "thumbnail_url": "https://i.ytimg.com/vi/h1KAW_izGl8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=h1KAW_izGl8"
+          },
+          {
+            "video_id": "vZT1Qx2xUCo",
+            "title": "Everything you need to know about Postgres Row Level Security | POSETTE 2024",
+            "author": "Microsoft Developer",
+            "thumbnail_url": "https://i.ytimg.com/vi/vZT1Qx2xUCo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=vZT1Qx2xUCo"
+          },
+          {
+            "video_id": "MEkM0aC1JaI",
+            "title": "PostgreSQL Row-Level Security Explained with Multi-Tenancy",
+            "author": "updownx",
+            "thumbnail_url": "https://i.ytimg.com/vi/MEkM0aC1JaI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=MEkM0aC1JaI"
+          },
+          {
+            "video_id": "VRoHkeV_-iI",
+            "title": "Data Isolation in Multitenant PostgreSQL",
+            "author": "Postgres Conference",
+            "thumbnail_url": "https://i.ytimg.com/vi/VRoHkeV_-iI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=VRoHkeV_-iI"
+          },
+          {
+            "video_id": "OwCgDPa0DnA",
+            "title": "Building Multi-Tenant APIs Using EF Core and Row-Level Security",
+            "author": "Milan Jovanović",
+            "thumbnail_url": "https://i.ytimg.com/vi/OwCgDPa0DnA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=OwCgDPa0DnA"
+          },
+          {
+            "video_id": "wrVKnQvDJy0",
+            "title": "Think Multi-Tenancy Is Easy? Think Again...",
+            "author": "Software Developer Diaries",
+            "thumbnail_url": "https://i.ytimg.com/vi/wrVKnQvDJy0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=wrVKnQvDJy0"
+          },
+          {
+            "video_id": "YaSPB2uNLYg",
+            "title": "Multi-Tenant: Database Per Tenant or Shared?",
+            "author": "CodeOpinion",
+            "thumbnail_url": "https://i.ytimg.com/vi/YaSPB2uNLYg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=YaSPB2uNLYg"
+          },
+          {
+            "video_id": "PdEutzhsrws",
+            "title": "Advanced Row Level Security (RLS) Policies // Authorization Deep Dive",
+            "author": "Supabase",
+            "thumbnail_url": "https://i.ytimg.com/vi/PdEutzhsrws/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=PdEutzhsrws"
+          },
+          {
+            "video_id": "ctJy5AxgVXM",
+            "title": "Claude Code + Prisma: Multi-Tenant Postgres API That Can't Leak Data",
+            "author": "Alex Rusin",
+            "thumbnail_url": "https://i.ytimg.com/vi/ctJy5AxgVXM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ctJy5AxgVXM"
+          },
+          {
+            "video_id": "Ow_Uzedfohk",
+            "title": "Implement Authorization using Row Level Security (RLS) with Supabase (Step By Step Guide)",
+            "author": "Supabase",
+            "thumbnail_url": "https://i.ytimg.com/vi/Ow_Uzedfohk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Ow_Uzedfohk"
+          },
+          {
+            "video_id": "Vx1q8Nfp0BE",
+            "title": "Row Level Security with @Supabase — Course part 10 (2025)",
+            "author": "Codewithguillaume",
+            "thumbnail_url": "https://i.ytimg.com/vi/Vx1q8Nfp0BE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Vx1q8Nfp0BE"
+          },
+          {
+            "video_id": "sfzubTrNiiU",
+            "title": "How To Create RLS Policies In Supabase [Step-By-Step 2026]",
+            "author": "SmartMoneyTutorials",
+            "thumbnail_url": "https://i.ytimg.com/vi/sfzubTrNiiU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=sfzubTrNiiU"
+          },
+          {
+            "video_id": "iNadOdD_hxI",
+            "title": "Supabase RLS: Cómo Proteger tus Datos con Row Level Security (Guía Completa)",
+            "author": "BuilderJoy",
+            "thumbnail_url": "https://i.ytimg.com/vi/iNadOdD_hxI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=iNadOdD_hxI"
+          },
+          {
+            "video_id": "hu2SQjvCXIw",
+            "title": "Use AI to enable and generate RLS policies for Postgres with Supabase",
+            "author": "Supabase",
+            "thumbnail_url": "https://i.ytimg.com/vi/hu2SQjvCXIw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=hu2SQjvCXIw"
+          },
+          {
+            "video_id": "Sctm5VrwWTw",
+            "title": "How To Enable Row Level Security In Supabase [RLS Guide 2026]",
+            "author": "SmartMoneyTutorials",
+            "thumbnail_url": "https://i.ytimg.com/vi/Sctm5VrwWTw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Sctm5VrwWTw"
+          },
+          {
+            "video_id": "3yDr4mrZXAw",
+            "title": "Supabase RLS Security Explained: How to Protect Your Database From Data Leaks | CyberSecurityTV",
+            "author": "CyberSecurityTV",
+            "thumbnail_url": "https://i.ytimg.com/vi/3yDr4mrZXAw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=3yDr4mrZXAw"
+          },
+          {
+            "video_id": "4ncm-XBGErs",
+            "title": "How to Create Policy (rls) in Supabase [2026 Full Guide]",
+            "author": "Shortcut Academy",
+            "thumbnail_url": "https://i.ytimg.com/vi/4ncm-XBGErs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=4ncm-XBGErs"
+          },
+          {
+            "video_id": "OBXv-uTBD7A",
+            "title": "How to Turn On Row Level Security in Supabase (Full Guide 2026)",
+            "author": "Money Tools Academy",
+            "thumbnail_url": "https://i.ytimg.com/vi/OBXv-uTBD7A/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=OBXv-uTBD7A"
+          },
+          {
+            "video_id": "raEBR_2VbXE",
+            "title": "AI Model Routing Explained: Cut LLM Costs With LiteLLM",
+            "author": "Hunter Sneed",
+            "thumbnail_url": "https://i.ytimg.com/vi/raEBR_2VbXE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=raEBR_2VbXE"
+          },
+          {
+            "video_id": "Nk7qDiLHyuU",
+            "title": "LiteLLM AI Gateway: Routing, API Keys, Budgets, and Guardrails for Local and Cloud Models",
+            "author": "Paul Zuradzki",
+            "thumbnail_url": "https://i.ytimg.com/vi/Nk7qDiLHyuU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Nk7qDiLHyuU"
+          },
+          {
+            "video_id": "NwDtEKBC_uo",
+            "title": "OpenRouter vs LiteLLM Which AI Gateway Should You Use",
+            "author": "TWiz",
+            "thumbnail_url": "https://i.ytimg.com/vi/NwDtEKBC_uo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=NwDtEKBC_uo"
+          },
+          {
+            "video_id": "SDB5hKMHUA8",
+            "title": "OpenRouter vs LiteLLM: Which Should You Self-Host?",
+            "author": "Bryan Software",
+            "thumbnail_url": "https://i.ytimg.com/vi/SDB5hKMHUA8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=SDB5hKMHUA8"
+          },
+          {
+            "video_id": "XZPNjgJ4E0c",
+            "title": "OpenRouter vs LiteLLM: Pay 5% or Host It Yourself? (2026)",
+            "author": "Jono Finds",
+            "thumbnail_url": "https://i.ytimg.com/vi/XZPNjgJ4E0c/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=XZPNjgJ4E0c"
+          },
+          {
+            "video_id": "6EoRbAAAE-8",
+            "title": "OpenRouter vs LiteLLM (2026): Which Is The Best LLM Tool For Production?",
+            "author": "YourTechGuru",
+            "thumbnail_url": "https://i.ytimg.com/vi/6EoRbAAAE-8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=6EoRbAAAE-8"
+          },
+          {
+            "video_id": "6rvk2w3y7K0",
+            "title": "LLM Model Routing: Cut AI API Costs by 80 Percent",
+            "author": "Webronaq",
+            "thumbnail_url": "https://i.ytimg.com/vi/6rvk2w3y7K0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=6rvk2w3y7K0"
+          },
+          {
+            "video_id": "QkElI_HcuT8",
+            "title": "I Built an Auto Router for Local LLMs with LiteLLM + Pi Coding Agent",
+            "author": "Execute Automation",
+            "thumbnail_url": "https://i.ytimg.com/vi/QkElI_HcuT8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=QkElI_HcuT8"
+          },
+          {
+            "video_id": "L1jV8eRvnKc",
+            "title": "Openrouter vs Litellm: Which Network Routing Software is BETTER in 2026?",
+            "author": "houdztech",
+            "thumbnail_url": "https://i.ytimg.com/vi/L1jV8eRvnKc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=L1jV8eRvnKc"
+          },
+          {
+            "video_id": "fGLomKpo_LI",
+            "title": "How to Set Up Stripe Billing for Subscriptions [2026 Full Tutorial]",
+            "author": "Ampvoro",
+            "thumbnail_url": "https://i.ytimg.com/vi/fGLomKpo_LI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=fGLomKpo_LI"
+          },
+          {
+            "video_id": "0K7i4CFP_qc",
+            "title": "Real-Time Token Usage Metering, Credit Ledgers & Stripe Billing Webhooks",
+            "author": "E Learning by AL SADDAT",
+            "thumbnail_url": "https://i.ytimg.com/vi/0K7i4CFP_qc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=0K7i4CFP_qc"
           }
         ],
         "research_reference_only": true,
@@ -5637,7 +5847,7 @@
         "asset_id": "verbatim_transcript_quotes",
         "asset": "data/transcripts/*.json -> segments[].text",
         "asset_type": "verbatim_transcript_passage",
-        "source": "Spoken content of 411 third-party videos (3880 captured tips)",
+        "source": "Spoken content of 441 third-party videos (4141 captured tips)",
         "research_reference_only": true,
         "commercial_republish_allowed": false,
         "commercial_use_allowed": false,
@@ -5653,38 +5863,38 @@
     ]
   },
   "corpus_metrics": {
-    "video_count": 411,
-    "channel_count": 210,
-    "total_words": 662641,
-    "total_hours": 133.39,
-    "total_pro_tips": 3880,
-    "unique_statutes_and_forms": 295,
-    "unique_tools_and_portals": 1111
+    "video_count": 441,
+    "channel_count": 236,
+    "total_words": 691208,
+    "total_hours": 138.6,
+    "total_pro_tips": 4141,
+    "unique_statutes_and_forms": 312,
+    "unique_tools_and_portals": 1236
   },
   "coverage": {
-    "videos_classified": 411,
-    "videos_with_multiple_topics": 411,
-    "tips_classified": 3880,
-    "raw_transcripts_joined": 411,
+    "videos_classified": 441,
+    "videos_with_multiple_topics": 441,
+    "tips_classified": 4141,
+    "raw_transcripts_joined": 441,
     "topic_video_counts": {
-      "business_model_and_economics": 292,
-      "probate_and_docket_sourcing": 325,
-      "unclaimed_property_and_escheat": 156,
-      "genealogy_and_heirship_proof": 355,
-      "skip_tracing_and_outreach": 171,
-      "contracts_and_compensation": 325,
-      "statutory_caps_and_licensing": 342,
-      "automation_and_small_team_ops": 351
+      "business_model_and_economics": 307,
+      "probate_and_docket_sourcing": 347,
+      "unclaimed_property_and_escheat": 177,
+      "genealogy_and_heirship_proof": 365,
+      "skip_tracing_and_outreach": 178,
+      "contracts_and_compensation": 338,
+      "statutory_caps_and_licensing": 366,
+      "automation_and_small_team_ops": 381
     },
     "topic_tip_counts": {
-      "business_model_and_economics": 538,
+      "business_model_and_economics": 563,
       "probate_and_docket_sourcing": 645,
       "unclaimed_property_and_escheat": 582,
-      "genealogy_and_heirship_proof": 585,
-      "skip_tracing_and_outreach": 83,
-      "contracts_and_compensation": 341,
-      "statutory_caps_and_licensing": 272,
-      "automation_and_small_team_ops": 834
+      "genealogy_and_heirship_proof": 592,
+      "skip_tracing_and_outreach": 84,
+      "contracts_and_compensation": 345,
+      "statutory_caps_and_licensing": 317,
+      "automation_and_small_team_ops": 1013
     }
   },
   "schema_version": "1.0",

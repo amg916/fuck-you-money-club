@@ -235,12 +235,25 @@ def build_volume_004_manuscript(abridged_videos: list[dict] | None = None) -> di
         except (ValueError, TypeError, OverflowError):
             return None
 
-    _saas_signals = (
-        "saas", "micro saas", "micro-saas", "software", "mrr", "arr", "churn",
-        "stripe", "paddle", "token", "llm", "rag", "openai", "anthropic",
-        "cloud", "aws", "serverless", "postgres", "chrome extension", "onboarding",
-        "plg", "pricing", "subscription", "b2b", "startup", "founder", "bootstrap",
-        "api", "webhook", "dunning", "soc 2", "gdpr", "geo",
+    _saas_allow_re = re.compile(
+        r"\b(?:"
+        r"micro[- ]saas|saas|stripe|paddle|lemon\s*squeezy|fastspring|"
+        r"llm|llms|openai|anthropic|claude|chatgpt|rag|pgvector|postgres|postgresql|supabase|neon|"
+        r"cloudflare|serverless|vercel|mrr|arr|arpu|dunning|chargeback|chargebacks|rosca|wayfair|"
+        r"webhook|webhooks|soc\s*2|gdpr|dpa|zdr|chrome\s+extension|manifest\s+v3|"
+        r"builtwith|wcag|litellm|openrouter|posthog|microacquire|acquire\.com|payfac|b2b\s+saas"
+        r")\b",
+        re.IGNORECASE,
+    )
+    _off_domain_deny_re = re.compile(
+        r"\b(?:"
+        r"genealogy|genealogical|genealogist|ancestry|familysearch|family\s+history|"
+        r"birth|marriage|death\s+records|cemeteries|obituary|obituaries|probate|heir|heirs|intestate|"
+        r"surplus\s+funds|tax\s+sale|tax\s+deed|tax\s+overage|overages|excess\s+proceeds|"
+        r"foreclosure|curative\s+title|title\s+search|title\s+problems|distressed\s+properties|"
+        r"unclaimed\s+property|state\s+funds|property\s+locator|escheat|escheatment|mineral\s+rights"
+        r")\b",
+        re.IGNORECASE,
     )
     _dangling_tail = {
         "a", "about", "after", "although", "am", "an", "and", "any", "are", "as", "at",
@@ -311,7 +324,10 @@ def build_volume_004_manuscript(abridged_videos: list[dict] | None = None) -> di
                     meta_obj.get("author"),
                 )
             ).lower()
-            if not any(sig in haystack for sig in _saas_signals):
+            source_corpus = str(video.get("source_corpus") or meta_obj.get("source_corpus") or "").lower()
+            if _off_domain_deny_re.search(haystack):
+                continue
+            if source_corpus != "vol004_ai_powered_micro_saas" and not _saas_allow_re.search(haystack):
                 continue
         video_id = str(video.get("video_id") or "")
         if not re.fullmatch(r"[A-Za-z0-9_-]{11}", video_id):
