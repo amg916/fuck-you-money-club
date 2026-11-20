@@ -1,6 +1,6 @@
 {
-  "abridged_video_count": 261,
-  "raw_video_count": 261,
+  "abridged_video_count": 336,
+  "raw_video_count": 336,
   "summary": {
     "type": "dict",
     "keys": [
@@ -22,11 +22,11 @@
       "coverage": 6
     },
     "values": {
-      "generated_at": "2026-11-20T16:23:37+00:00",
+      "generated_at": "2026-11-20T17:10:07+00:00",
       "schema_version": "1.0"
     }
   },
-  "generated_at": "2026-11-20T16:23:37Z",
+  "generated_at": "2026-11-20T17:10:07Z",
   "counts": {
     "topics": 8
   },
@@ -34,10 +34,52 @@
     {
       "topic_id": "business_model_and_economics",
       "title": "Business Model, Contingency Economics & Deal Scale",
-      "video_count": 167,
-      "tip_count": 141,
-      "channel_count": 62,
+      "video_count": 232,
+      "tip_count": 336,
+      "channel_count": 118,
       "top_sources": [
+        {
+          "video_id": "TGNTFquVxZU",
+          "title": "How to Start a Digital Product Business (& ACTUALLY Make Money)",
+          "author": "Tatyana Savage",
+          "url": "https://www.youtube.com/watch?v=TGNTFquVxZU",
+          "duration": "00:15:39"
+        },
+        {
+          "video_id": "zQQZEPMxT6U",
+          "title": "How To Turn Your $24 Digital Product Into $24,000 (Scaling Strategy That Works)",
+          "author": "Maria Wendt",
+          "url": "https://www.youtube.com/watch?v=zQQZEPMxT6U",
+          "duration": "00:14:27"
+        },
+        {
+          "video_id": "A-yBamfrXQs",
+          "title": "Copy This Method To Make $2,700/Week with Digital Products",
+          "author": "Iman Gadzhi",
+          "url": "https://www.youtube.com/watch?v=A-yBamfrXQs",
+          "duration": "00:39:21"
+        },
+        {
+          "video_id": "Qq-EyvVj7IM",
+          "title": "Paddle vs LemonSqueezy (2026) | Which One is Better?",
+          "author": "houdztech",
+          "url": "https://www.youtube.com/watch?v=Qq-EyvVj7IM",
+          "duration": "00:04:56"
+        },
+        {
+          "video_id": "RxypuPGBRPI",
+          "title": "I Made $32.7 Million Selling Simple Digital Products (Full Masterclass)",
+          "author": "Richard Yu",
+          "url": "https://www.youtube.com/watch?v=RxypuPGBRPI",
+          "duration": "00:26:02"
+        },
+        {
+          "video_id": "UxhtBuVj4gY",
+          "title": "The Complete Guide to Upsells ($8 Billion in Data)",
+          "author": "SamCart",
+          "url": "https://www.youtube.com/watch?v=UxhtBuVj4gY",
+          "duration": "00:27:30"
+        },
         {
           "video_id": "U_Eh790rq3o",
           "title": "How Wholesalers Can Turn Title Problems Into Profitable Curative Deals",
@@ -46,53 +88,11 @@
           "duration": "00:28:46"
         },
         {
-          "video_id": "ieI6zKICpKo",
-          "title": "$16,000 Live Cold Calling Commission",
-          "author": "Surplus Institute / David Church / Unclaimed Funds",
-          "url": "https://www.youtube.com/watch?v=ieI6zKICpKo",
-          "duration": "00:03:15"
-        },
-        {
-          "video_id": "-QzABvCmtVc",
-          "title": "How to Underwrite a Curative Title Deal (And Know When to Walk Away)",
-          "author": "Courtney Fricke",
-          "url": "https://www.youtube.com/watch?v=-QzABvCmtVc",
-          "duration": "00:10:59"
-        },
-        {
-          "video_id": "R8B06ovsDXI",
-          "title": "How to start a Surplus Funds Business (45 min raw free game)",
-          "author": "Money Making Juggernaut",
-          "url": "https://www.youtube.com/watch?v=R8B06ovsDXI",
-          "duration": "00:46:25"
-        },
-        {
-          "video_id": "TP6n8TBsCGs",
-          "title": "Resolving Heirs' Property",
-          "author": "MD Ag Law Education Initiative",
-          "url": "https://www.youtube.com/watch?v=TP6n8TBsCGs",
-          "duration": "01:03:04"
-        },
-        {
-          "video_id": "GH5TN_iIdMs",
-          "title": "Curative Title Explained: How Investors Make Money When Deals Can’t Close",
-          "author": "Courtney Fricke",
-          "url": "https://www.youtube.com/watch?v=GH5TN_iIdMs",
-          "duration": "00:36:25"
-        },
-        {
-          "video_id": "p9uUtcmNpbk",
-          "title": "How to Claim Tax Sale Overages (Step-by-Step Guide)",
-          "author": "Ted Thomas",
-          "url": "https://www.youtube.com/watch?v=p9uUtcmNpbk",
-          "duration": "00:08:05"
-        },
-        {
-          "video_id": "EPZo6YVIMi4",
-          "title": "A Guide To Our Fee Options • Fraser and Fraser",
-          "author": "Fraser and Fraser",
-          "url": "https://www.youtube.com/watch?v=EPZo6YVIMi4",
-          "duration": "00:05:42"
+          "video_id": "mf1WAw0FyaI",
+          "title": "Top 7 Secrets To Building a $45,000/Month Skool Community",
+          "author": "Adnan Pilditch",
+          "url": "https://www.youtube.com/watch?v=mf1WAw0FyaI",
+          "duration": "00:07:35"
         }
       ],
       "top_timestamped_insights": [
@@ -142,97 +142,97 @@
           "verbatim_research_only": true
         },
         {
-          "tip_paraphrase_summary": "I'll gladly put in two to four hours a day if if you really want to hit six figures a year. people I mean…",
+          "tip_paraphrase_summary": "I've got 6,610 people in a free community and my first thought was get rid of anybody and everybody who has never contributed, never…",
           "category": "Pitfall / Hard No",
-          "timestamp": "00:53:09",
-          "link": "https://www.youtube.com/watch?v=xqpLsq3JVlU&t=3189s",
-          "video_title": "Cold Calling for Surplus Funds: What Actually Works",
-          "author": "Surplus Institute / David Church / Unclaimed Funds",
+          "timestamp": "00:04:10",
+          "link": "https://www.youtube.com/watch?v=8lz_gy-Osw8&t=250s",
+          "video_title": "Are Free Skool Communities Dying? Why I Turned Mine Paid",
+          "author": "Doug Boughton",
           "verbatim_research_only": true
         },
         {
-          "tip_paraphrase_summary": "I got just a little bit of information on it. And it's not necessarily cheap to use this, but it is very convenient if…",
-          "category": "Pitfall / Hard No",
-          "timestamp": "00:06:16",
-          "link": "https://www.youtube.com/watch?v=2ThZ61aal9k&t=376s",
-          "video_title": "DataTree Hacks: TaxSource Reports and Property Tax Verification",
-          "author": "REtipster",
-          "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "Drop down so for example let's say that we want to style the properties on a gradated scale based on their acreage we can…",
+          "tip_paraphrase_summary": "Integral to making this work right so increasing prices over time as you add more value and then creating new offers and reoffering every…",
           "category": "Legal / Deadline",
-          "timestamp": "00:03:10",
-          "link": "https://www.youtube.com/watch?v=X-_cLY3_96Y&t=190s",
-          "video_title": "Feature Service Product Demo",
-          "author": "Regrid",
+          "timestamp": "00:28:08",
+          "link": "https://www.youtube.com/watch?v=By4MPc6yyFA&t=1688s",
+          "video_title": "How to make $1,000,000/mo using self liquidating funnels (FREE COURSE)",
+          "author": "Daniel Fazio",
           "verbatim_research_only": true
         },
         {
-          "tip_paraphrase_summary": "See some distressed properties. If you're watching my YouTube at all, I don't think we're heading to crash or crisis, but at the margins…",
+          "tip_paraphrase_summary": "Set up your store step by step, and how to market your store to make sales on autopilot. I've made over $5 million selling…",
+          "category": "Insider Tactic",
+          "timestamp": "00:00:51",
+          "link": "https://www.youtube.com/watch?v=dr37DaI8g3U&t=51s",
+          "video_title": "How to Sell AI Digital Products (beginner's guide)",
+          "author": "Nathan Nazareth",
+          "verbatim_research_only": true
+        },
+        {
+          "tip_paraphrase_summary": "Much, spending most of my time on things that really don't matter, that don't really help people, that don't make any money. And I…",
           "category": "Pitfall / Hard No",
-          "timestamp": "00:29:17",
-          "link": "https://www.youtube.com/watch?v=1BlzkVdGPAo&t=1757s",
-          "video_title": "I got free probate leads from the courthouse! Plus SOI and referral marketing | Podcast Episode 85",
-          "author": "Probate Mastery",
+          "timestamp": "00:02:21",
+          "link": "https://www.youtube.com/watch?v=8lz_gy-Osw8&t=141s",
+          "video_title": "Are Free Skool Communities Dying? Why I Turned Mine Paid",
+          "author": "Doug Boughton",
           "verbatim_research_only": true
         },
         {
-          "tip_paraphrase_summary": "It could or could not be split up. If it couldn’t be partitioned, Jacob could buy-out his siblings’ share of their fathers’ real estate.…",
-          "category": "Legal / Deadline",
-          "timestamp": "00:02:43",
-          "link": "https://www.youtube.com/watch?v=pGyFJ46jwTE&t=163s",
-          "video_title": "Primary sources: Intestate probate documents",
-          "author": "Five-minute genealogy",
+          "tip_paraphrase_summary": "Everything feels competitive when you're just getting started. And the main thing to remember is that nothing works if you don't work. That's just…",
+          "category": "Pitfall / Hard No",
+          "timestamp": "00:05:06",
+          "link": "https://www.youtube.com/watch?v=T-gfoXzz8k8&t=306s",
+          "video_title": "Build & Sell Digital Products with A.I. (Full Course)",
+          "author": "Alek",
           "verbatim_research_only": true
         }
       ],
       "statutes_and_forms": [
-        "form of",
         "form and",
-        "letters of administration",
+        "form of",
         "form that",
+        "form to",
+        "form for",
+        "form is",
+        "form you",
+        "letters of administration",
         "form the",
         "form below",
+        "form or",
         "quiet title",
-        "form is",
+        "form so",
         "letters testamentary",
         "property Act",
-        "form for",
+        "form on",
         "form partition",
-        "form to",
-        "form or",
+        "form where",
+        "form an",
+        "form content",
+        "form like",
         "form our",
-        "form you",
+        "form page",
         "warranty deed",
         "affidavit of heirship",
         "court order",
         "form a",
-        "form an",
         "form law",
-        "form on",
         "form probate",
-        "form so",
         "form state",
-        "form where",
+        "form your",
         "Information Act",
         "summary administration",
         "affidavit of airship",
-        "form screens",
-        "form sitting",
-        "form them",
-        "form we",
-        "just act",
-        "quitclaim deed",
-        "transfer on death deed",
-        "AB 2016",
-        "actually act",
-        "Affidavit of disent"
+        "form asks",
+        "form best",
+        "form called",
+        "form features",
+        "form first",
+        "form from"
       ],
       "tools_and_portals": [
         "Facebook",
-        "Ancestry",
         "Google",
+        "Ancestry",
         "FamilySearch",
         "LinkedIn",
         "https://excesselite.com",
@@ -254,11 +254,11 @@
         "https://www.youtube.com/@courtneyfricke",
         "https://x.com/courtneyfricke",
         "https://youtu.be/3cmj5kGm2Xw",
+        "Excel",
         "https://www.youtube.com/surplusfunds101",
         "https://www.instagram.com/thedavidwilkerson",
         "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
         "https://probatemastery.com",
-        "Excel",
         "Find a Grave",
         "http://www.youtube.com/channel/UCsc0AQkAh_2cQmxqwD6VWRw?sub_confirmation=1",
         "https://twitter.com/Ancestry",
@@ -275,9 +275,9 @@
     {
       "topic_id": "probate_and_docket_sourcing",
       "title": "County Probate Dockets, Intestate Filings & Estate Leads",
-      "video_count": 253,
-      "tip_count": 587,
-      "channel_count": 86,
+      "video_count": 290,
+      "tip_count": 630,
+      "channel_count": 119,
       "top_sources": [
         {
           "video_id": "oZiYbKNvxJY",
@@ -432,43 +432,43 @@
         "form and",
         "form of",
         "form below",
-        "form the",
-        "letters of administration",
         "form is",
-        "form that",
+        "form the",
         "form to",
-        "form you",
-        "form a",
         "form for",
+        "form that",
+        "form you",
+        "letters of administration",
+        "form a",
+        "form so",
         "quiet title",
+        "form on",
+        "form or",
+        "form where",
         "letters testamentary",
         "property Act",
         "affidavit of heirship",
-        "form on",
+        "form an",
         "form our",
         "form partition",
-        "form so",
         "form today",
         "warranty deed",
         "affidavit of airship",
         "court order",
-        "form an",
-        "form or",
+        "form features",
+        "form in",
         "form we",
-        "form where",
+        "form will",
+        "form your",
         "Information Act",
         "summary administration",
         "form as",
         "form due",
-        "form features",
-        "form in",
+        "form if",
         "form law",
+        "form page",
         "form probate",
-        "form state",
-        "form your",
-        "just act",
-        "quitclaim deed",
-        "balancing act"
+        "form state"
       ],
       "tools_and_portals": [
         "Facebook",
@@ -516,9 +516,9 @@
     {
       "topic_id": "unclaimed_property_and_escheat",
       "title": "State Unclaimed Property, Escheated Funds & Treasury Claims",
-      "video_count": 133,
+      "video_count": 135,
       "tip_count": 582,
-      "channel_count": 47,
+      "channel_count": 49,
       "top_sources": [
         {
           "video_id": "bsbWDqAXsrE",
@@ -676,10 +676,10 @@
         "form that",
         "form you",
         "form the",
+        "form for",
         "form of",
         "form to",
         "form today",
-        "form for",
         "form our",
         "affidavit of heirship",
         "form as",
@@ -757,9 +757,9 @@
     {
       "topic_id": "genealogy_and_heirship_proof",
       "title": "Forensic Genealogy, Per-Stirpes Kinship & Proof of Heirship",
-      "video_count": 228,
-      "tip_count": 501,
-      "channel_count": 78,
+      "video_count": 301,
+      "tip_count": 558,
+      "channel_count": 139,
       "top_sources": [
         {
           "video_id": "7M3XZfN7814",
@@ -892,6 +892,15 @@
           "verbatim_research_only": true
         },
         {
+          "tip_paraphrase_summary": "Built so therefore you're not scrambling constantly looking for new clients you are simply just moving the leads that you have through an incredible…",
+          "category": "Legal / Deadline",
+          "timestamp": "00:12:48",
+          "link": "https://www.youtube.com/watch?v=Kgj8rFDeRIs&t=768s",
+          "video_title": "How To Create A Self-liquidating Offer Funnel For Your Business",
+          "author": "Pam Obasa",
+          "verbatim_research_only": true
+        },
+        {
           "tip_paraphrase_summary": "In family tree maker and it's a little bit different image here because that same file has several different documents but each one of…",
           "category": "Insider Tactic",
           "timestamp": "00:07:25",
@@ -899,58 +908,49 @@
           "video_title": "Peeling Back the Layers: Citing Sources from Online Materials, Part 1",
           "author": "FamilySearch",
           "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "To find it I found it at ancestry.com and I accessed it on September 14th 2012 and why the date is really important especially…",
-          "category": "Non-Negotiable Rule",
-          "timestamp": "00:06:46",
-          "link": "https://www.youtube.com/watch?v=ih5iilWPvjI&t=406s",
-          "video_title": "Sourcing Your Vitals - Citations for Birth, Marriage and Death Records | Ancestry",
-          "author": "Ancestry",
-          "verbatim_research_only": true
         }
       ],
       "statutes_and_forms": [
         "form and",
-        "form below",
         "form of",
         "form that",
-        "letters of administration",
-        "form you",
-        "form a",
-        "form is",
-        "form the",
+        "form below",
         "form to",
-        "quiet title",
+        "form you",
+        "form is",
         "form for",
+        "form the",
+        "letters of administration",
+        "form a",
+        "form or",
+        "form so",
+        "quiet title",
+        "form on",
+        "form where",
         "property Act",
         "affidavit of heirship",
+        "form content",
         "form partition",
+        "form will",
+        "form your",
         "letters testamentary",
         "affidavit of airship",
-        "form on",
-        "form or",
+        "form an",
+        "form features",
+        "form in",
+        "form like",
         "form our",
-        "form so",
+        "form page",
         "Information Act",
         "summary administration",
         "warranty deed",
         "court order",
-        "form an",
+        "form as",
         "form due",
-        "form features",
-        "form in",
-        "form law",
-        "form probate",
-        "form state",
-        "form we",
-        "form where",
-        "form your",
-        "just act",
-        "quitclaim deed",
-        "balancing act",
-        "Chapter 13",
-        "due on sale"
+        "form from",
+        "form I",
+        "form if",
+        "form law"
       ],
       "tools_and_portals": [
         "Facebook",
@@ -960,10 +960,10 @@
         "https://excesselite.com",
         "https://www.facebook.com/groups/assetrecovery",
         "https://www.moneymakingjug.com/inquiry",
+        "LinkedIn",
         "https://www.surplusfunds101.com/freecallingscript",
         "https://www.youtube.com/surplusfunds101",
         "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
-        "LinkedIn",
         "https://www.instagram.com/thedavidwilkerson",
         "https://www.instagram.com/erizzyy/",
         "https://instagram.com/courtneyfricke",
@@ -981,6 +981,7 @@
         "http://familysearch.me/youtubespanish",
         "https://www.youtube.com/@courtneyfricke",
         "https://youtu.be/3cmj5kGm2Xw",
+        "Excel",
         "MyHeritage",
         "Find a Grave",
         "http://www.youtube.com/channel/UCsc0AQkAh_2cQmxqwD6VWRw?sub_confirmation=1",
@@ -989,7 +990,6 @@
         "https://www.facebook.com/Ancestry/",
         "https://www.instagram.com/ancestry",
         "https://www.youtube.com/user/AncestryCom",
-        "Excel",
         "Newspapers.com",
         "https://www.facebook.com/groups/curativetitle",
         "https://www.youtube.com/playlist?list=PL_t1CjX04xMsUc4TcAH_uyYDMPzzU6xRy"
@@ -998,9 +998,9 @@
     {
       "topic_id": "skip_tracing_and_outreach",
       "title": "Skip Tracing, Ethical Heir Contact & Trust Building",
-      "video_count": 122,
-      "tip_count": 67,
-      "channel_count": 51,
+      "video_count": 149,
+      "tip_count": 80,
+      "channel_count": 74,
       "top_sources": [
         {
           "video_id": "dJ-LTFmMsTg",
@@ -1038,6 +1038,13 @@
           "duration": "00:59:24"
         },
         {
+          "video_id": "B8Z2fA5X0J4",
+          "title": "I Sold Digital Products as a Beginner ‘To Prove It’s Not Luck’ Using Claude AI",
+          "author": "Money Talk With Leon",
+          "url": "https://www.youtube.com/watch?v=B8Z2fA5X0J4",
+          "duration": "00:16:37"
+        },
+        {
           "video_id": "t4w_wFimZ9A",
           "title": "State Funds Tutorial: Cold Calling Objections vs. Complaints. Surplus Funds 101",
           "author": "Surplus Funds 101",
@@ -1050,13 +1057,6 @@
           "author": "Courtney Fricke",
           "url": "https://www.youtube.com/watch?v=2agNOU2taXA",
           "duration": "00:32:23"
-        },
-        {
-          "video_id": "XHOqG0CY1KA",
-          "title": "Unclaimed Funds Tutorial: Cold Calling Basics For Your Unclaimed Funds Business. state funds.",
-          "author": "Surplus Funds 101",
-          "url": "https://www.youtube.com/watch?v=XHOqG0CY1KA",
-          "duration": "00:15:18"
         }
       ],
       "top_timestamped_insights": [
@@ -1106,6 +1106,15 @@
           "verbatim_research_only": true
         },
         {
+          "tip_paraphrase_summary": "For creator closer. And in the next video, when I'm choosing a winner, if that person is signed up for creator closer, that person…",
+          "category": "Pitfall / Hard No",
+          "timestamp": "00:16:02",
+          "link": "https://www.youtube.com/watch?v=B8Z2fA5X0J4&t=962s",
+          "video_title": "I Sold Digital Products as a Beginner ‘To Prove It’s Not Luck’ Using Claude AI",
+          "author": "Money Talk With Leon",
+          "verbatim_research_only": true
+        },
+        {
           "tip_paraphrase_summary": "So. I do not believe in direct marketing, in outbound direct mail and cold calling pre-probate lists. I just don't. And I probably never…",
           "category": "Pitfall / Hard No",
           "timestamp": "00:04:13",
@@ -1140,37 +1149,31 @@
           "video_title": "Free Surplus Funds Training - Indepth, full hour! SurplusFundsRiches",
           "author": "SurplusFundsRiches",
           "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "Keep on talking about this just make sure you're building that Rapport I've seen people I know people who have been told F you…",
-          "category": "Pitfall / Hard No",
-          "timestamp": "00:07:00",
-          "link": "https://www.youtube.com/watch?v=jNXoU7Ep1vY&t=420s",
-          "video_title": "Mastering Objection Handling: Proven Scripts for Overcoming Sales Challenges. #surplus_funds",
-          "author": "Surplus Institute / David Church / Unclaimed Funds",
-          "verbatim_research_only": true
         }
       ],
       "statutes_and_forms": [
         "form of",
         "form and",
         "form below",
-        "quiet title",
         "form to",
+        "form that",
+        "quiet title",
         "form a",
+        "form for",
+        "form the",
+        "form you",
         "form our",
         "form partition",
-        "form that",
-        "property act",
-        "form for",
         "form so",
-        "form the",
+        "form where",
+        "property act",
+        "form is",
+        "form on",
+        "form your",
         "affidavit of heirship",
         "court order",
-        "form on",
-        "form where",
-        "form you",
-        "form your",
+        "form content",
+        "form will",
         "just act",
         "summary administration",
         "warranty deed",
@@ -1180,18 +1183,15 @@
         "form due",
         "form in",
         "form Law",
+        "form like",
         "form online",
         "form research",
         "form screens",
+        "form then",
         "form this",
         "Form uh",
-        "form which",
-        "form will",
-        "Information Act",
-        "quitclaim deed",
-        "transfer on death deed",
-        "AB 2016",
-        "Affidavit of disent"
+        "form video",
+        "form what"
       ],
       "tools_and_portals": [
         "Facebook",
@@ -1232,16 +1232,16 @@
         "https://surplusfunds.ai",
         "https://www.instagram.com/erizzyy",
         "https://www.surplusfunds101.com/contractlibrary",
-        "https://www.youtube.com/playlist?list=PL_t1CjX04xMvxWaWZ6RTzx_Bmfe2Cx2xH",
-        "PropStream"
+        "https://www.instastore.ai",
+        "https://www.trendassist.ai"
       ]
     },
     {
       "topic_id": "contracts_and_compensation",
       "title": "Fee Agreements, Assignments of Interest & Escrow Disbursement",
-      "video_count": 212,
-      "tip_count": 230,
-      "channel_count": 81,
+      "video_count": 272,
+      "tip_count": 317,
+      "channel_count": 130,
       "top_sources": [
         {
           "video_id": "VBvaq5etzV4",
@@ -1320,6 +1320,15 @@
           "verbatim_research_only": true
         },
         {
+          "tip_paraphrase_summary": "Product it's kind of exactly like this right. But in the shape of a course. So here's an example of what the course looks…",
+          "category": "Pitfall / Hard No",
+          "timestamp": "00:12:35",
+          "link": "https://www.youtube.com/watch?v=VJ-JR7uMY34&t=755s",
+          "video_title": "How To Build Your First $10,000 Digital Product (Full Beginner Guide)",
+          "author": "Eden",
+          "verbatim_research_only": true
+        },
+        {
           "tip_paraphrase_summary": "Data site like Propwire.com. Then ask the office and ask the owner of the house. And treat it all as an estimate. Always say…",
           "category": "Pitfall / Hard No",
           "timestamp": "00:07:07",
@@ -1356,6 +1365,15 @@
           "verbatim_research_only": true
         },
         {
+          "tip_paraphrase_summary": "Jewelry for those people that might think, \"Oh my god, you don't make that much money.\" Those are Cardier bracelets. That's a love bracelet…",
+          "category": "Pitfall / Hard No",
+          "timestamp": "00:08:39",
+          "link": "https://www.youtube.com/watch?v=Qqjup9J9CdI&t=519s",
+          "video_title": "I Made $700K in 2 Days Selling Simple Digital Products (Step by Step)",
+          "author": "Money Talk With Leon",
+          "verbatim_research_only": true
+        },
+        {
           "tip_paraphrase_summary": "Gone, antidotal knowledge. You don't know how we would write a contract or a how to negotiate to a fees or even work with…",
           "category": "Pitfall / Hard No",
           "timestamp": "00:46:48",
@@ -1372,67 +1390,49 @@
           "video_title": "Give Me 17 Minutes, I’ll Give You 10,000 Hours of Surplus Funds Knowledge",
           "author": "Money Making Juggernaut",
           "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "Chad Corbett: That's why I'm suggesting that because we want to have clear general warranty deed proof out. The only lien we hope that…",
-          "category": "Legal / Deadline",
-          "timestamp": "00:11:20",
-          "link": "https://www.youtube.com/watch?v=coUYfNbBvq0&t=680s",
-          "video_title": "How to JV a probate deal with the estate as your partner | Probate Investing | Chad Corbett Probate",
-          "author": "Probate Mastery",
-          "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "While we're waiting on this, I'm just going to point out a couple other things. So if you do this in enough areas around…",
-          "category": "Legal / Deadline",
-          "timestamp": "00:02:49",
-          "link": "https://www.youtube.com/watch?v=aUiod-Jy68U&t=169s",
-          "video_title": "DataTree Hacks: Find Full Legal Descriptions and Title Vesting Information",
-          "author": "REtipster",
-          "verbatim_research_only": true
         }
       ],
       "statutes_and_forms": [
         "form and",
         "form of",
-        "form below",
         "form that",
-        "letters of administration",
+        "form below",
         "form to",
-        "Form is",
-        "form the",
         "form you",
+        "Form is",
         "form for",
+        "letters of administration",
+        "form the",
+        "form on",
+        "form a",
+        "form where",
         "letters testamentary",
         "property Act",
         "quiet title",
         "affidavit of heirship",
-        "form a",
-        "form on",
+        "form content",
+        "form like",
+        "form or",
         "form our",
         "form partition",
-        "court order",
         "form so",
+        "court order",
         "form we",
-        "form where",
+        "form will",
+        "form your",
         "Information Act",
         "summary administration",
         "warranty deed",
         "affidavit of airship",
-        "form due",
-        "form in",
-        "form law",
-        "form or",
-        "form probate",
-        "form state",
-        "form your",
-        "just act",
-        "balancing act",
-        "form an",
         "form as",
+        "form due",
         "form features",
         "form from",
-        "form if"
+        "form I",
+        "form in",
+        "form law",
+        "form probate",
+        "form state"
       ],
       "tools_and_portals": [
         "Facebook",
@@ -1443,9 +1443,9 @@
         "FamilySearch",
         "https://www.moneymakingjug.com/inquiry",
         "https://www.surplusfunds101.com/freecallingscript",
+        "LinkedIn",
         "https://www.youtube.com/surplusfunds101",
         "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
-        "LinkedIn",
         "https://www.instagram.com/thedavidwilkerson",
         "https://www.instagram.com/erizzyy/",
         "https://instagram.com/courtneyfricke",
@@ -1453,8 +1453,8 @@
         "https://www.facebook.com/courtneyfricke19/",
         "https://www.youtube.com/@courtneyfricke",
         "https://x.com/courtneyfricke",
-        "https://probatemastery.com",
         "Excel",
+        "https://probatemastery.com",
         "https://www.facebook.com/groups/770825015084618",
         "https://www.facebook.com/groups/curativetitle",
         "https://www.youtube.com/playlist?list=PL_t1CjX04xMsUc4TcAH_uyYDMPzzU6xRy",
@@ -1480,9 +1480,9 @@
     {
       "topic_id": "statutory_caps_and_licensing",
       "title": "State Fee Caps, Waiting Periods, PI Licensing & UPL Rules",
-      "video_count": 252,
-      "tip_count": 204,
-      "channel_count": 87,
+      "video_count": 299,
+      "tip_count": 223,
+      "channel_count": 129,
       "top_sources": [
         {
           "video_id": "TA4mtGUeNo8",
@@ -1497,6 +1497,13 @@
           "author": "Alfred Taren",
           "url": "https://www.youtube.com/watch?v=8-8koApqnYA",
           "duration": "00:11:45"
+        },
+        {
+          "video_id": "Sxl5Fxp0qVQ",
+          "title": "How to Upload Notion Template on Gumroad 2025 (QUICK GUIDE)",
+          "author": "How To Tutor",
+          "url": "https://www.youtube.com/watch?v=Sxl5Fxp0qVQ",
+          "duration": "00:02:20"
         },
         {
           "video_id": "4W8c0I28pxQ",
@@ -1532,13 +1539,6 @@
           "author": "ohiocommerce",
           "url": "https://www.youtube.com/watch?v=o1cc3hUtIv4",
           "duration": "00:16:26"
-        },
-        {
-          "video_id": "F4T35UFWesQ",
-          "title": "How To File A Surplus Funds Claim WITHOUT an Attorney (3 Things)",
-          "author": "Money Making Juggernaut",
-          "url": "https://www.youtube.com/watch?v=F4T35UFWesQ",
-          "duration": "00:05:50"
         }
       ],
       "top_timestamped_insights": [
@@ -1637,43 +1637,43 @@
         "form and",
         "form of",
         "form below",
-        "form the",
-        "letters of administration",
-        "form is",
-        "form that",
-        "form to",
-        "form you",
-        "form a",
         "form for",
+        "form that",
+        "form the",
+        "form to",
+        "form is",
+        "form you",
+        "letters of administration",
+        "form a",
+        "form so",
         "quiet title",
+        "form on",
+        "form or",
+        "form where",
         "letters testamentary",
         "property Act",
         "affidavit of heirship",
-        "form on",
+        "form an",
         "form our",
         "form partition",
-        "form so",
         "form today",
+        "form your",
         "warranty deed",
         "affidavit of airship",
         "court order",
-        "form an",
-        "form or",
+        "form features",
+        "form in",
         "form we",
-        "form where",
+        "form will",
         "Information Act",
         "summary administration",
         "form as",
         "form due",
-        "form features",
-        "form in",
+        "form if",
         "form law",
-        "form probate",
-        "form state",
-        "form your",
-        "just act",
-        "quitclaim deed",
-        "balancing act"
+        "form like",
+        "form page",
+        "form probate"
       ],
       "tools_and_portals": [
         "Facebook",
@@ -1693,8 +1693,8 @@
         "https://www.youtube.com/@courtneyfricke",
         "https://x.com/courtneyfricke",
         "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
-        "https://www.instagram.com/thedavidwilkerson",
         "Excel",
+        "https://www.instagram.com/thedavidwilkerson",
         "http://familysearch.me/facebook",
         "http://familysearch.me/home",
         "http://familysearch.me/instagram",
@@ -1721,10 +1721,38 @@
     {
       "topic_id": "automation_and_small_team_ops",
       "title": "Docket Automation, AI Abstracting & Small-Team Operations",
-      "video_count": 208,
-      "tip_count": 178,
-      "channel_count": 75,
+      "video_count": 278,
+      "tip_count": 436,
+      "channel_count": 135,
       "top_sources": [
+        {
+          "video_id": "jHo-FO_OLv4",
+          "title": "How I make $30,000/Month Selling Notion Templates",
+          "author": "Mike and Matty",
+          "url": "https://www.youtube.com/watch?v=jHo-FO_OLv4",
+          "duration": "00:11:35"
+        },
+        {
+          "video_id": "VEFf-FR0dxw",
+          "title": "How to Sell Notion Templates on Gumroad (2026 Revenue Snapshot)",
+          "author": "Tutorials At Desk",
+          "url": "https://www.youtube.com/watch?v=VEFf-FR0dxw",
+          "duration": "00:05:47"
+        },
+        {
+          "video_id": "GmI0MYeyMg0",
+          "title": "Sell Notion Templates on Gumroad: What a $29 Sale Really Keeps (2026)",
+          "author": "Smart Capital",
+          "url": "https://www.youtube.com/watch?v=GmI0MYeyMg0",
+          "duration": "00:38:23"
+        },
+        {
+          "video_id": "ciKrPZ_nIpQ",
+          "title": "How To Sell A Notion Template On Gumroad - Step by Step Guide | THELOSTOFFER #notion #gumroad",
+          "author": "Aeris Vale Tutorials",
+          "url": "https://www.youtube.com/watch?v=ciKrPZ_nIpQ",
+          "duration": "00:03:03"
+        },
         {
           "video_id": "01plOr9pFjQ",
           "title": "How to Start a Tax Overage Business | Complete and Easy to Follow Guide",
@@ -1733,53 +1761,25 @@
           "duration": "00:08:21"
         },
         {
-          "video_id": "NMsRlUhQbUI",
-          "title": "Best Real Estate Data APIs for Building a Deal Finder App",
-          "author": "REI Tech Club",
-          "url": "https://www.youtube.com/watch?v=NMsRlUhQbUI",
-          "duration": "00:05:54"
+          "video_id": "Sxl5Fxp0qVQ",
+          "title": "How to Upload Notion Template on Gumroad 2025 (QUICK GUIDE)",
+          "author": "How To Tutor",
+          "url": "https://www.youtube.com/watch?v=Sxl5Fxp0qVQ",
+          "duration": "00:02:20"
         },
         {
-          "video_id": "RVakKAvFa_M",
-          "title": "Quick Start Regrid's Interactive API Sandbox Guide",
-          "author": "Regrid",
-          "url": "https://www.youtube.com/watch?v=RVakKAvFa_M",
-          "duration": "00:12:19"
+          "video_id": "2zWJQPegtuk",
+          "title": "How to sell Notion templates on Gumroad[FULL GUIDE]",
+          "author": "Extreme Guides",
+          "url": "https://www.youtube.com/watch?v=2zWJQPegtuk",
+          "duration": "00:04:30"
         },
         {
-          "video_id": "VAtPDJ1KDjw",
-          "title": "Troubleshooting Data Import - Regrid Property App (Web)",
-          "author": "Regrid",
-          "url": "https://www.youtube.com/watch?v=VAtPDJ1KDjw",
-          "duration": "00:11:06"
-        },
-        {
-          "video_id": "ASO1JUOWTjA",
-          "title": "State Funds Tutorial Virtual Assistants: Top 3 Hiring Mistakes While Growing Your Surplus Business",
-          "author": "Surplus Funds 101",
-          "url": "https://www.youtube.com/watch?v=ASO1JUOWTjA",
-          "duration": "00:11:27"
-        },
-        {
-          "video_id": "ApkuK7OOL9w",
-          "title": "State Funds Tutorial Top 4 Tech Tools Needed For Your State Funds Business",
-          "author": "Surplus Funds 101",
-          "url": "https://www.youtube.com/watch?v=ApkuK7OOL9w",
-          "duration": "00:07:18"
-        },
-        {
-          "video_id": "EVN-9bqTEtM",
-          "title": "Exporting Regrid Data to ArcGIS - Regrid Property App (Web)",
-          "author": "Regrid",
-          "url": "https://www.youtube.com/watch?v=EVN-9bqTEtM",
-          "duration": "00:02:29"
-        },
-        {
-          "video_id": "MdSAG5LMn4I",
-          "title": "Parcel data by the state on the Regrid Data Store | Demo",
-          "author": "Regrid",
-          "url": "https://www.youtube.com/watch?v=MdSAG5LMn4I",
-          "duration": "00:02:02"
+          "video_id": "DNdWpxzzTQM",
+          "title": "How to sell Notion templates on Gumroad (Creative Earnings)",
+          "author": "GuideHatch Tutorials",
+          "url": "https://www.youtube.com/watch?v=DNdWpxzzTQM",
+          "duration": "00:02:51"
         }
       ],
       "top_timestamped_insights": [
@@ -1790,6 +1790,15 @@
           "link": "https://www.youtube.com/watch?v=ES6y4iF-bBM&t=271s",
           "video_title": "State Funds Tutorial: 5 Tech Tools For Your State Funds Business",
           "author": "Surplus Funds 101",
+          "verbatim_research_only": true
+        },
+        {
+          "tip_paraphrase_summary": "Nutrition because everyone is unique so now you can have the AI interview the customer for their specific goals and their specific limitations and…",
+          "category": "Pitfall / Hard No",
+          "timestamp": "00:30:40",
+          "link": "https://www.youtube.com/watch?v=VJ-JR7uMY34&t=1840s",
+          "video_title": "How To Build Your First $10,000 Digital Product (Full Beginner Guide)",
+          "author": "Eden",
           "verbatim_research_only": true
         },
         {
@@ -1863,58 +1872,49 @@
           "video_title": "State Funds Tutorial Virtual Assistants: Top 3 Hiring Mistakes While Growing Your Surplus Business",
           "author": "Surplus Funds 101",
           "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "Whoever you are, and whatever reason you would be looking for this, I just want to show you how can do that really quickly…",
-          "category": "Pitfall / Hard No",
-          "timestamp": "00:00:57",
-          "link": "https://www.youtube.com/watch?v=9RvXCiHUzlo&t=57s",
-          "video_title": "DataTree Hacks: How to Find Portfolio Owners With Multiple Properties",
-          "author": "REtipster",
-          "verbatim_research_only": true
         }
       ],
       "statutes_and_forms": [
         "form and",
-        "form below",
-        "form of",
         "form that",
+        "form to",
+        "form below",
         "form is",
+        "form you",
+        "form of",
+        "form for",
         "form the",
         "letters of administration",
-        "form to",
-        "form you",
-        "form for",
-        "form our",
         "form so",
-        "form today",
-        "letters testamentary",
-        "form a",
-        "form on",
         "form or",
-        "form we",
         "form where",
+        "form on",
+        "form a",
+        "form content",
+        "form like",
+        "form our",
+        "form today",
+        "form will",
+        "form your",
+        "letters testamentary",
+        "form as",
+        "form we",
         "quiet title",
         "affidavit of heirship",
         "court order",
-        "form as",
         "form due",
-        "form probate",
-        "form your",
-        "Information Act",
-        "summary administration",
-        "affidavit of airship",
-        "balancing act",
-        "form an",
         "form from",
+        "form I",
         "form if",
         "form in",
-        "form it",
-        "form law",
-        "Form located",
         "form okay",
-        "form online",
-        "form research"
+        "form page",
+        "form probate",
+        "form then",
+        "form video",
+        "Information Act",
+        "summary administration",
+        "affidavit of airship"
       ],
       "tools_and_portals": [
         "Facebook",
@@ -1926,11 +1926,11 @@
         "https://www.moneymakingjug.com/inquiry",
         "https://www.surplusfunds101.com/freecallingscript",
         "https://www.youtube.com/surplusfunds101",
+        "LinkedIn",
         "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
         "https://www.instagram.com/thedavidwilkerson",
-        "LinkedIn",
-        "https://www.instagram.com/erizzyy/",
         "Excel",
+        "https://www.instagram.com/erizzyy/",
         "Regrid",
         "https://probatemastery.com",
         "DataTree",
@@ -1956,7 +1956,7 @@
         "https://www.youtube.com/@courtneyfricke",
         "https://www.youtube.com/user/AncestryCom",
         "Newspapers.com",
-        "MyHeritage"
+        "https://www.instagram.com/richardyuzee/"
       ]
     }
   ],
@@ -1968,9 +1968,9 @@
       "headline": "Heir location is paid on contingency, never on up-front fees.",
       "summary": "Across the corpus, operators converge on a pure contingency model: the heir pays nothing out of pocket, the locator advances all research cost, and the fee is a negotiated percentage released only when the estate or state agency actually disburses funds. Charging an heir an advance fee is treated as the single clearest marker of a predatory or unlicensed operator.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 62,
-      "video_count": 167,
-      "corroborating_tip_count": 141,
+      "channel_count": 118,
+      "video_count": 232,
+      "corroborating_tip_count": 336,
       "supporting_links": [
         {
           "video_title": "State Funds Tutorial New Mexico: How To Register As A Property Locator In The State Of New Mexico.",
@@ -2003,10 +2003,10 @@
           "link": "https://www.youtube.com/watch?v=TTfaOSBvLDc&t=320s"
         },
         {
-          "video_title": "Cold Calling for Surplus Funds: What Actually Works",
-          "author": "Surplus Institute / David Church / Unclaimed Funds",
-          "timestamp": "00:53:09",
-          "link": "https://www.youtube.com/watch?v=xqpLsq3JVlU&t=3189s"
+          "video_title": "Are Free Skool Communities Dying? Why I Turned Mine Paid",
+          "author": "Doug Boughton",
+          "timestamp": "00:04:10",
+          "link": "https://www.youtube.com/watch?v=8lz_gy-Osw8&t=250s"
         }
       ],
       "caveat": "Consensus among the sampled operators — not legal advice and not a substitute for the governing statute in the reader's jurisdiction."
@@ -2018,9 +2018,9 @@
       "headline": "Fresh county probate and intestate dockets outperform purchased lead lists.",
       "summary": "Practitioners consistently build pipeline from newly filed probate and administration matters pulled directly from county clerk portals rather than resold lists. Filings naming an administrator but no located heirs, and estates sitting open past the local notice period, are the recurring high-value signal.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 86,
-      "video_count": 253,
-      "corroborating_tip_count": 587,
+      "channel_count": 119,
+      "video_count": 290,
+      "corroborating_tip_count": 630,
       "supporting_links": [
         {
           "video_title": "Unclaimed Estates & Abandoned Properties in Spain - tracing Heirs Worldwide",
@@ -2068,8 +2068,8 @@
       "headline": "State unclaimed-property and escheat databases supply the repeatable volume.",
       "summary": "Every state treasury or controller maintains a searchable unclaimed-property register, and the consensus workflow is to cross-reference deceased owners there against probate filings. Volume comes from systematic register sweeps; size comes from the rarer escheated estate, surplus-funds and safe-deposit categories.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 47,
-      "video_count": 133,
+      "channel_count": 49,
+      "video_count": 135,
       "corroborating_tip_count": 582,
       "supporting_links": [
         {
@@ -2118,9 +2118,9 @@
       "headline": "The deliverable is a document-backed kinship chain, not a name on a list.",
       "summary": "Operators agree that claims succeed or fail on the evidentiary chain: each generational link supported by vital records, each branch mapped per stirpes, and every gap closed before contact. Tree hints from consumer genealogy sites are treated as leads to verify, never as proof to submit.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 78,
-      "video_count": 228,
-      "corroborating_tip_count": 501,
+      "channel_count": 139,
+      "video_count": 301,
+      "corroborating_tip_count": 558,
       "supporting_links": [
         {
           "video_title": "Resolving Heirs' Property",
@@ -2168,9 +2168,9 @@
       "headline": "Verify identity before contact, then lead with restraint, not the dollar figure.",
       "summary": "The recurring outreach pattern is: skip trace to a confirmed current address and phone, open by letter or a short calm call, state that funds may be owed to the family without naming an amount, and give the heir a way to independently verify the operator. Pressure tactics and inflated figures are consistently reported as the fastest way to lose a signed file.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 51,
-      "video_count": 122,
-      "corroborating_tip_count": 67,
+      "channel_count": 74,
+      "video_count": 149,
+      "corroborating_tip_count": 80,
       "supporting_links": [
         {
           "video_title": "State Funds Tutorial: 5 Tech Tools For Your State Funds Business",
@@ -2203,10 +2203,10 @@
           "link": "https://www.youtube.com/watch?v=eiQ53kxE6ZA&t=147s"
         },
         {
-          "video_title": "Pre Probate Leads vs Probate Leads: How do you market to them and why cold calling isn't the best",
-          "author": "Probate Mastery",
-          "timestamp": "00:04:13",
-          "link": "https://www.youtube.com/watch?v=4Z6pgZnoWi4&t=253s"
+          "video_title": "I Sold Digital Products as a Beginner ‘To Prove It’s Not Luck’ Using Claude AI",
+          "author": "Money Talk With Leon",
+          "timestamp": "00:16:02",
+          "link": "https://www.youtube.com/watch?v=B8Z2fA5X0J4&t=962s"
         }
       ],
       "caveat": "Consensus among the sampled operators — not legal advice and not a substitute for the governing statute in the reader's jurisdiction."
@@ -2218,9 +2218,9 @@
       "headline": "No work proceeds without a signed fee agreement and third-party escrow.",
       "summary": "Consensus practice is a plain-language, notarized or e-signed agreement that names the estate, states the percentage, discloses the heir's right to claim independently, and routes funds through attorney trust or licensed escrow so the locator never holds the heir's money directly.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 81,
-      "video_count": 212,
-      "corroborating_tip_count": 230,
+      "channel_count": 130,
+      "video_count": 272,
+      "corroborating_tip_count": 317,
       "supporting_links": [
         {
           "video_title": "DataTree Hacks: Find Full Legal Descriptions and Title Vesting Information",
@@ -2233,6 +2233,12 @@
           "author": "Surplus Funds 101",
           "timestamp": "00:03:01",
           "link": "https://www.youtube.com/watch?v=t4w_wFimZ9A&t=181s"
+        },
+        {
+          "video_title": "How To Build Your First $10,000 Digital Product (Full Beginner Guide)",
+          "author": "Eden",
+          "timestamp": "00:12:35",
+          "link": "https://www.youtube.com/watch?v=VJ-JR7uMY34&t=755s"
         },
         {
           "video_title": "How to Check for Liens Before You Call About Surplus Funds",
@@ -2251,12 +2257,6 @@
           "author": "Nick Fullmer- Overage Syndicate",
           "timestamp": "00:02:47",
           "link": "https://www.youtube.com/watch?v=KOYBZFn2k7w&t=167s"
-        },
-        {
-          "video_title": "HOW TO FIND LIENS & TITLE SEARCH IN TEXAS",
-          "author": "AFX Research LLC",
-          "timestamp": "00:00:00",
-          "link": "https://www.youtube.com/watch?v=HPyO3dkjbCQ&t=0s"
         }
       ],
       "caveat": "Consensus among the sampled operators — not legal advice and not a substitute for the governing statute in the reader's jurisdiction."
@@ -2268,9 +2268,9 @@
       "headline": "Fee caps, waiting periods and licensing are decided per state, before the first call.",
       "summary": "Operators repeatedly stress that the governing rules — percentage caps on unclaimed-property recoveries, mandatory waiting periods after escheat or sale, private-investigator licensing triggers, and the line against practicing law — vary by jurisdiction and must be read in the local statute for every file rather than generalized from another state.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 87,
-      "video_count": 252,
-      "corroborating_tip_count": 204,
+      "channel_count": 129,
+      "video_count": 299,
+      "corroborating_tip_count": 223,
       "supporting_links": [
         {
           "video_title": "Surplus Funds Cold Calling Script: How to Not Sound Like a Scam",
@@ -2318,15 +2318,21 @@
       "headline": "Automated docket monitoring plus AI abstracting lets one or two people run real volume.",
       "summary": "The operational consensus is to automate the repetitive layer — scheduled docket and register pulls, structured intake into a sheet or CRM, AI-assisted abstracting of filings — while keeping genealogy judgment, heir contact and contract execution human. That split is what keeps a two-person shop competitive against staffed firms.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 75,
-      "video_count": 208,
-      "corroborating_tip_count": 178,
+      "channel_count": 135,
+      "video_count": 278,
+      "corroborating_tip_count": 436,
       "supporting_links": [
         {
           "video_title": "State Funds Tutorial: 5 Tech Tools For Your State Funds Business",
           "author": "Surplus Funds 101",
           "timestamp": "00:04:31",
           "link": "https://www.youtube.com/watch?v=ES6y4iF-bBM&t=271s"
+        },
+        {
+          "video_title": "How To Build Your First $10,000 Digital Product (Full Beginner Guide)",
+          "author": "Eden",
+          "timestamp": "00:30:40",
+          "link": "https://www.youtube.com/watch?v=VJ-JR7uMY34&t=1840s"
         },
         {
           "video_title": "Surplus Funds 101 Tutorial: Top 4 FREE Software Platforms For Your State Funds Business",
@@ -2351,12 +2357,6 @@
           "author": "Surplus Funds 101",
           "timestamp": "00:01:09",
           "link": "https://www.youtube.com/watch?v=ES6y4iF-bBM&t=69s"
-        },
-        {
-          "video_title": "State Funds Tutorial: 5 Tech Tools For Your State Funds Business",
-          "author": "Surplus Funds 101",
-          "timestamp": "00:05:55",
-          "link": "https://www.youtube.com/watch?v=ES6y4iF-bBM&t=355s"
         }
       ],
       "caveat": "Consensus among the sampled operators — not legal advice and not a substitute for the governing statute in the reader's jurisdiction."
@@ -2510,16 +2510,16 @@
           "link": "https://www.youtube.com/watch?v=t4w_wFimZ9A&t=181s"
         },
         {
+          "video_title": "How To Build Your First $10,000 Digital Product (Full Beginner Guide)",
+          "author": "Eden",
+          "timestamp": "00:12:35",
+          "link": "https://www.youtube.com/watch?v=VJ-JR7uMY34&t=755s"
+        },
+        {
           "video_title": "How to Check for Liens Before You Call About Surplus Funds",
           "author": "Alfred Taren",
           "timestamp": "00:07:07",
           "link": "https://www.youtube.com/watch?v=LdemHPCk0dk&t=427s"
-        },
-        {
-          "video_title": "DataTree Hacks: How to Do Title Research and Hire Abstractor Services",
-          "author": "REtipster",
-          "timestamp": "00:01:15",
-          "link": "https://www.youtube.com/watch?v=GfyX48eCbRY&t=75s"
         }
       ]
     },
@@ -2746,8 +2746,8 @@
         "asset_id": "youtube_thumbnails",
         "asset": "https://i.ytimg.com/vi/<video_id>/*.jpg",
         "asset_type": "youtube_thumbnail_image",
-        "source": "YouTube CDN thumbnails for the 261 corpus videos",
-        "instance_count": 261,
+        "source": "YouTube CDN thumbnails for the 336 corpus videos",
+        "instance_count": 336,
         "instances": [
           {
             "video_id": "9Q4qYeK5DTg",
@@ -4575,6 +4575,531 @@
             "author": "Surplus Funds 101",
             "thumbnail_url": "https://i.ytimg.com/vi/z_Y10SDCdp4/hqdefault.jpg",
             "source_url": "https://www.youtube.com/watch?v=z_Y10SDCdp4"
+          },
+          {
+            "video_id": "UE0ReGj5sjU",
+            "title": "How to Start Selling DONE FOR YOU Digital Products as a beginner (The easiest way)!",
+            "author": "Ceostacks",
+            "thumbnail_url": "https://i.ytimg.com/vi/UE0ReGj5sjU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=UE0ReGj5sjU"
+          },
+          {
+            "video_id": "EZ9234g-l7Q",
+            "title": "How to Start Selling Digital Products (STEP BY STEP) FREE COURSE",
+            "author": "Baddie In Business",
+            "thumbnail_url": "https://i.ytimg.com/vi/EZ9234g-l7Q/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=EZ9234g-l7Q"
+          },
+          {
+            "video_id": "4e4pRrWsJvU",
+            "title": "How to Start Selling Digital Products in 2026 (Step-by-Step Tutorial)",
+            "author": "Rochelle Be",
+            "thumbnail_url": "https://i.ytimg.com/vi/4e4pRrWsJvU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=4e4pRrWsJvU"
+          },
+          {
+            "video_id": "QopRRjoOyyg",
+            "title": "How to Start Selling Digital Products in 2026 (STEP BY STEP) FREE COURSE",
+            "author": "Baddie In Business",
+            "thumbnail_url": "https://i.ytimg.com/vi/QopRRjoOyyg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=QopRRjoOyyg"
+          },
+          {
+            "video_id": "6cm2o8zzuNw",
+            "title": "How to build & sell AI Digital Products (2026 full guide)",
+            "author": "Nathan Nazareth",
+            "thumbnail_url": "https://i.ytimg.com/vi/6cm2o8zzuNw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=6cm2o8zzuNw"
+          },
+          {
+            "video_id": "TGNTFquVxZU",
+            "title": "How to Start a Digital Product Business (& ACTUALLY Make Money)",
+            "author": "Tatyana Savage",
+            "thumbnail_url": "https://i.ytimg.com/vi/TGNTFquVxZU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=TGNTFquVxZU"
+          },
+          {
+            "video_id": "0plVE1LRxYo",
+            "title": "How to Sell Digital Products Online (The Beginner’s Blueprint)",
+            "author": "Brandon Timothy",
+            "thumbnail_url": "https://i.ytimg.com/vi/0plVE1LRxYo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=0plVE1LRxYo"
+          },
+          {
+            "video_id": "Qqjup9J9CdI",
+            "title": "I Made $700K in 2 Days Selling Simple Digital Products (Step by Step)",
+            "author": "Money Talk With Leon",
+            "thumbnail_url": "https://i.ytimg.com/vi/Qqjup9J9CdI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Qqjup9J9CdI"
+          },
+          {
+            "video_id": "UuQ3BacwIMU",
+            "title": "Create A Digital Product in 24hrs & Start Your 5 Figure Business",
+            "author": "AMBER SHARNIECE",
+            "thumbnail_url": "https://i.ytimg.com/vi/UuQ3BacwIMU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=UuQ3BacwIMU"
+          },
+          {
+            "video_id": "B8Z2fA5X0J4",
+            "title": "I Sold Digital Products as a Beginner ‘To Prove It’s Not Luck’ Using Claude AI",
+            "author": "Money Talk With Leon",
+            "thumbnail_url": "https://i.ytimg.com/vi/B8Z2fA5X0J4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=B8Z2fA5X0J4"
+          },
+          {
+            "video_id": "dr37DaI8g3U",
+            "title": "How to Sell AI Digital Products (beginner's guide)",
+            "author": "Nathan Nazareth",
+            "thumbnail_url": "https://i.ytimg.com/vi/dr37DaI8g3U/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=dr37DaI8g3U"
+          },
+          {
+            "video_id": "T-gfoXzz8k8",
+            "title": "Build & Sell Digital Products with A.I. (Full Course)",
+            "author": "Alek",
+            "thumbnail_url": "https://i.ytimg.com/vi/T-gfoXzz8k8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=T-gfoXzz8k8"
+          },
+          {
+            "video_id": "D237D2sGBRs",
+            "title": "How to Start Selling Digital Products (STEP BY STEP) FREE COURSE",
+            "author": "Baddie In Business",
+            "thumbnail_url": "https://i.ytimg.com/vi/D237D2sGBRs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=D237D2sGBRs"
+          },
+          {
+            "video_id": "gjffmgucDSw",
+            "title": "FULL COURSE: How to Build & Sell Digital Products With AI (Step by Step)",
+            "author": "Richard Yu",
+            "thumbnail_url": "https://i.ytimg.com/vi/gjffmgucDSw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=gjffmgucDSw"
+          },
+          {
+            "video_id": "RxypuPGBRPI",
+            "title": "I Made $32.7 Million Selling Simple Digital Products (Full Masterclass)",
+            "author": "Richard Yu",
+            "thumbnail_url": "https://i.ytimg.com/vi/RxypuPGBRPI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=RxypuPGBRPI"
+          },
+          {
+            "video_id": "OGyxSOcL1F0",
+            "title": "How I Built a $57K/Month Digital Product Business From Scratch (Full System)",
+            "author": "Richard Yu",
+            "thumbnail_url": "https://i.ytimg.com/vi/OGyxSOcL1F0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=OGyxSOcL1F0"
+          },
+          {
+            "video_id": "ow77v1CM31k",
+            "title": "How I Made 10 Million Selling Digital Products (By 22)",
+            "author": "Inayah McMillan",
+            "thumbnail_url": "https://i.ytimg.com/vi/ow77v1CM31k/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ow77v1CM31k"
+          },
+          {
+            "video_id": "VJ-JR7uMY34",
+            "title": "How To Build Your First $10,000 Digital Product (Full Beginner Guide)",
+            "author": "Eden",
+            "thumbnail_url": "https://i.ytimg.com/vi/VJ-JR7uMY34/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=VJ-JR7uMY34"
+          },
+          {
+            "video_id": "A-yBamfrXQs",
+            "title": "Copy This Method To Make $2,700/Week with Digital Products",
+            "author": "Iman Gadzhi",
+            "thumbnail_url": "https://i.ytimg.com/vi/A-yBamfrXQs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=A-yBamfrXQs"
+          },
+          {
+            "video_id": "kxg_sn2vJm8",
+            "title": "How I'd Build a Digital Product From Scratch (After Making $32 Million)",
+            "author": "Richard Yu",
+            "thumbnail_url": "https://i.ytimg.com/vi/kxg_sn2vJm8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=kxg_sn2vJm8"
+          },
+          {
+            "video_id": "JpNOwmwbf2s",
+            "title": "I Made $27 Million Selling Simple Digital Products (Step by Step)",
+            "author": "Richard Yu",
+            "thumbnail_url": "https://i.ytimg.com/vi/JpNOwmwbf2s/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=JpNOwmwbf2s"
+          },
+          {
+            "video_id": "gGW2IMNOz68",
+            "title": "Watch Me Create a 6 Figure Digital Product with AI in 14 Minutes | UPDATED Tutorial | Genspark",
+            "author": "Make Money with Stacy La",
+            "thumbnail_url": "https://i.ytimg.com/vi/gGW2IMNOz68/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=gGW2IMNOz68"
+          },
+          {
+            "video_id": "DNdWpxzzTQM",
+            "title": "How to sell Notion templates on Gumroad (Creative Earnings)",
+            "author": "GuideHatch Tutorials",
+            "thumbnail_url": "https://i.ytimg.com/vi/DNdWpxzzTQM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=DNdWpxzzTQM"
+          },
+          {
+            "video_id": "YiY_qBBHvvc",
+            "title": "How To Sell Notion Templates On Gumroad 2025 (Step by Step)",
+            "author": "Stellar Media",
+            "thumbnail_url": "https://i.ytimg.com/vi/YiY_qBBHvvc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=YiY_qBBHvvc"
+          },
+          {
+            "video_id": "VEFf-FR0dxw",
+            "title": "How to Sell Notion Templates on Gumroad (2026 Revenue Snapshot)",
+            "author": "Tutorials At Desk",
+            "thumbnail_url": "https://i.ytimg.com/vi/VEFf-FR0dxw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=VEFf-FR0dxw"
+          },
+          {
+            "video_id": "ciKrPZ_nIpQ",
+            "title": "How To Sell A Notion Template On Gumroad - Step by Step Guide | THELOSTOFFER #notion #gumroad",
+            "author": "Aeris Vale Tutorials",
+            "thumbnail_url": "https://i.ytimg.com/vi/ciKrPZ_nIpQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ciKrPZ_nIpQ"
+          },
+          {
+            "video_id": "zmw7OXf39rQ",
+            "title": "How To Make & Sell Notion Templates (Make $1000+ MONTH!)",
+            "author": "Bree and Steve",
+            "thumbnail_url": "https://i.ytimg.com/vi/zmw7OXf39rQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=zmw7OXf39rQ"
+          },
+          {
+            "video_id": "Sxl5Fxp0qVQ",
+            "title": "How to Upload Notion Template on Gumroad 2025 (QUICK GUIDE)",
+            "author": "How To Tutor",
+            "thumbnail_url": "https://i.ytimg.com/vi/Sxl5Fxp0qVQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Sxl5Fxp0qVQ"
+          },
+          {
+            "video_id": "GmI0MYeyMg0",
+            "title": "Sell Notion Templates on Gumroad: What a $29 Sale Really Keeps (2026)",
+            "author": "Smart Capital",
+            "thumbnail_url": "https://i.ytimg.com/vi/GmI0MYeyMg0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=GmI0MYeyMg0"
+          },
+          {
+            "video_id": "2zWJQPegtuk",
+            "title": "How to sell Notion templates on Gumroad[FULL GUIDE]",
+            "author": "Extreme Guides",
+            "thumbnail_url": "https://i.ytimg.com/vi/2zWJQPegtuk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=2zWJQPegtuk"
+          },
+          {
+            "video_id": "2j9bt8ET3Ec",
+            "title": "How to Make Money Selling Notion Templates [Gumroad Step-by-Step]",
+            "author": "Side Hustle Mastery",
+            "thumbnail_url": "https://i.ytimg.com/vi/2j9bt8ET3Ec/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=2j9bt8ET3Ec"
+          },
+          {
+            "video_id": "oMxSmqY3mzM",
+            "title": "How to Sell Notion Templates on Gumroad (Step By Step 2026)",
+            "author": "BrightGuide",
+            "thumbnail_url": "https://i.ytimg.com/vi/oMxSmqY3mzM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=oMxSmqY3mzM"
+          },
+          {
+            "video_id": "HXQD-vJDPyU",
+            "title": "How to make and sell aesthetic Notion templates with Typedream and Gumroad",
+            "author": "Typedream",
+            "thumbnail_url": "https://i.ytimg.com/vi/HXQD-vJDPyU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=HXQD-vJDPyU"
+          },
+          {
+            "video_id": "jHo-FO_OLv4",
+            "title": "How I make $30,000/Month Selling Notion Templates",
+            "author": "Mike and Matty",
+            "thumbnail_url": "https://i.ytimg.com/vi/jHo-FO_OLv4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=jHo-FO_OLv4"
+          },
+          {
+            "video_id": "RN0VWAvL-qc",
+            "title": "How to start selling your Framer templates through Lemon Squeezy",
+            "author": "Framer",
+            "thumbnail_url": "https://i.ytimg.com/vi/RN0VWAvL-qc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=RN0VWAvL-qc"
+          },
+          {
+            "video_id": "SK_-uXSKE88",
+            "title": "How to sell Notion templates on Gumroad[2026 Full Guide]",
+            "author": "Extreme How To's",
+            "thumbnail_url": "https://i.ytimg.com/vi/SK_-uXSKE88/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=SK_-uXSKE88"
+          },
+          {
+            "video_id": "IA4eosnOzIE",
+            "title": "Lemon Squeezy for Merchant of Record Honest Review - Watch Before Using",
+            "author": "HelperMan",
+            "thumbnail_url": "https://i.ytimg.com/vi/IA4eosnOzIE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=IA4eosnOzIE"
+          },
+          {
+            "video_id": "M61DsgB51BI",
+            "title": "Lemon Squeezy Winds Down After Stripe Acquisition",
+            "author": "Folioquest",
+            "thumbnail_url": "https://i.ytimg.com/vi/M61DsgB51BI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=M61DsgB51BI"
+          },
+          {
+            "video_id": "o3KRrFnoAgM",
+            "title": "Paddle for Merchant of Record Honest Review - Watch Before Using",
+            "author": "HelperMan",
+            "thumbnail_url": "https://i.ytimg.com/vi/o3KRrFnoAgM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=o3KRrFnoAgM"
+          },
+          {
+            "video_id": "5zGuxRrg_O0",
+            "title": "Stripe Managed Payments: The Threat to Paddle and the Future of MoR",
+            "author": "Captain Vova (Vova Feldman)",
+            "thumbnail_url": "https://i.ytimg.com/vi/5zGuxRrg_O0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=5zGuxRrg_O0"
+          },
+          {
+            "video_id": "KRdWGDk-GkY",
+            "title": "Stripe Just KILLED Paddle and Gumroad (Managed Payments)",
+            "author": "TechWealth Hub",
+            "thumbnail_url": "https://i.ytimg.com/vi/KRdWGDk-GkY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=KRdWGDk-GkY"
+          },
+          {
+            "video_id": "i05UCC3UvNY",
+            "title": "Stripe vs Lemon Squeezy vs Paddle (2026): Which Should You Use?",
+            "author": "SoloBuild",
+            "thumbnail_url": "https://i.ytimg.com/vi/i05UCC3UvNY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=i05UCC3UvNY"
+          },
+          {
+            "video_id": "IfaCBBIoVK0",
+            "title": "Lemon Squeezy Vs Stripe Checkout Vs Paddle (2026) Which One Is Better?",
+            "author": "Tutorly",
+            "thumbnail_url": "https://i.ytimg.com/vi/IfaCBBIoVK0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=IfaCBBIoVK0"
+          },
+          {
+            "video_id": "Y5VXhUB7aNM",
+            "title": "NEW* Paddle vs FastSpring — Best Checkout & Tax for Digital Products",
+            "author": "How2Genius",
+            "thumbnail_url": "https://i.ytimg.com/vi/Y5VXhUB7aNM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Y5VXhUB7aNM"
+          },
+          {
+            "video_id": "Qq-EyvVj7IM",
+            "title": "Paddle vs LemonSqueezy (2026) | Which One is Better?",
+            "author": "houdztech",
+            "thumbnail_url": "https://i.ytimg.com/vi/Qq-EyvVj7IM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Qq-EyvVj7IM"
+          },
+          {
+            "video_id": "F-WZgXuQIuQ",
+            "title": "Stripe's Merchant of Record (MoR) Solution: Adding Managed Payments to an Existing App #mcp",
+            "author": "Stephen S.",
+            "thumbnail_url": "https://i.ytimg.com/vi/F-WZgXuQIuQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=F-WZgXuQIuQ"
+          },
+          {
+            "video_id": "qUqLPLYblBI",
+            "title": "How to Add Order Bumps in GoHighLevel (Plus Easy One-Click Upsells)",
+            "author": "Marketing Mark",
+            "thumbnail_url": "https://i.ytimg.com/vi/qUqLPLYblBI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=qUqLPLYblBI"
+          },
+          {
+            "video_id": "pE2Z7vTYfSw",
+            "title": "I Upsold A $7 Product To $57 With DM Automation + Order Bump Setup ( Full System Explained )",
+            "author": "Maik Kleinert | Content-to-Conversion Systems",
+            "thumbnail_url": "https://i.ytimg.com/vi/pE2Z7vTYfSw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=pE2Z7vTYfSw"
+          },
+          {
+            "video_id": "BZ4rml1tc1U",
+            "title": "How to Set Up an Order Bump and Upsell",
+            "author": "Funnel Building Secrets",
+            "thumbnail_url": "https://i.ytimg.com/vi/BZ4rml1tc1U/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=BZ4rml1tc1U"
+          },
+          {
+            "video_id": "0u4Tmd6BlWA",
+            "title": "How to Build 1 Click Upsells in GoHighLevel",
+            "author": "Marketing Mark",
+            "thumbnail_url": "https://i.ytimg.com/vi/0u4Tmd6BlWA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=0u4Tmd6BlWA"
+          },
+          {
+            "video_id": "zQQZEPMxT6U",
+            "title": "How To Turn Your $24 Digital Product Into $24,000 (Scaling Strategy That Works)",
+            "author": "Maria Wendt",
+            "thumbnail_url": "https://i.ytimg.com/vi/zQQZEPMxT6U/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=zQQZEPMxT6U"
+          },
+          {
+            "video_id": "F73hzfI-XsE",
+            "title": "How to Setup Sell funnel Upsells, downsells, order bumps on Systemeio",
+            "author": "GROUNDTECHY",
+            "thumbnail_url": "https://i.ytimg.com/vi/F73hzfI-XsE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=F73hzfI-XsE"
+          },
+          {
+            "video_id": "-xCVVPZu48k",
+            "title": "GoHighLevel One-Click Upsell Setup: Payment Link Redirect + Auto-Delivery Workflow (Part 6)",
+            "author": "Social Nest Marketing",
+            "thumbnail_url": "https://i.ytimg.com/vi/-xCVVPZu48k/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=-xCVVPZu48k"
+          },
+          {
+            "video_id": "k8mwfZ9Nq_c",
+            "title": "How to Create a One-Click Upsell Funnel for your Shopify store in 2026",
+            "author": "LAUNCHTIP",
+            "thumbnail_url": "https://i.ytimg.com/vi/k8mwfZ9Nq_c/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=k8mwfZ9Nq_c"
+          },
+          {
+            "video_id": "u9nHXAMBUe4",
+            "title": "Order Bump or Upsell in Systeme.io: Which Should You Add First?",
+            "author": "Zero to Launch",
+            "thumbnail_url": "https://i.ytimg.com/vi/u9nHXAMBUe4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=u9nHXAMBUe4"
+          },
+          {
+            "video_id": "pz33EMSEtfY",
+            "title": "How to Set Up Main Product, Order Bump, Upsell & Downsell in GoHighLevel | Step-by-Step",
+            "author": "CRM Tutorials Library",
+            "thumbnail_url": "https://i.ytimg.com/vi/pz33EMSEtfY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=pz33EMSEtfY"
+          },
+          {
+            "video_id": "UxhtBuVj4gY",
+            "title": "The Complete Guide to Upsells ($8 Billion in Data)",
+            "author": "SamCart",
+            "thumbnail_url": "https://i.ytimg.com/vi/UxhtBuVj4gY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=UxhtBuVj4gY"
+          },
+          {
+            "video_id": "2V0NDEQHG0I",
+            "title": "I Added a 1-Click Upsell to My Systeme.io Funnel. Here’s What Happened",
+            "author": "Prompt On Fire",
+            "thumbnail_url": "https://i.ytimg.com/vi/2V0NDEQHG0I/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=2V0NDEQHG0I"
+          },
+          {
+            "video_id": "wYKYVjEiqLY",
+            "title": "How to launch your SELF-LIQUIDATING OFFER Funnel (with real-world examples!)",
+            "author": "Pete McPherson DYEB",
+            "thumbnail_url": "https://i.ytimg.com/vi/wYKYVjEiqLY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=wYKYVjEiqLY"
+          },
+          {
+            "video_id": "By4MPc6yyFA",
+            "title": "How to make $1,000,000/mo using self liquidating funnels (FREE COURSE)",
+            "author": "Daniel Fazio",
+            "thumbnail_url": "https://i.ytimg.com/vi/By4MPc6yyFA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=By4MPc6yyFA"
+          },
+          {
+            "video_id": "_csKVgudVVY",
+            "title": "How To Build A Self Liquidating Offer Funnel In HighLevel | Ryan Deiss (SLO)",
+            "author": "Sell Your Service",
+            "thumbnail_url": "https://i.ytimg.com/vi/_csKVgudVVY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=_csKVgudVVY"
+          },
+          {
+            "video_id": "QdGtcnjJSno",
+            "title": "Make STUPID Money With an SLO (Maximize Profits with a Self-Liquidating Offer & Affiliate Marketing)",
+            "author": "Jonathan Montoya",
+            "thumbnail_url": "https://i.ytimg.com/vi/QdGtcnjJSno/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=QdGtcnjJSno"
+          },
+          {
+            "video_id": "kmRwEjvxk-w",
+            "title": "How My $7 Sales Funnel Makes Me $18k/m",
+            "author": "Max Auren",
+            "thumbnail_url": "https://i.ytimg.com/vi/kmRwEjvxk-w/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=kmRwEjvxk-w"
+          },
+          {
+            "video_id": "Mw5p6Dsd_y8",
+            "title": "What Is Self Liquidating Offer Funnel - How To Generate Leads With SLO",
+            "author": "Nick Tsai",
+            "thumbnail_url": "https://i.ytimg.com/vi/Mw5p6Dsd_y8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Mw5p6Dsd_y8"
+          },
+          {
+            "video_id": "gba265EaF2g",
+            "title": "How to create a Sales Funnel that covers your Ad Costs (a.k.a. Self-Liquidating Funnel) for FREE",
+            "author": "Solo Marketer Funnels",
+            "thumbnail_url": "https://i.ytimg.com/vi/gba265EaF2g/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=gba265EaF2g"
+          },
+          {
+            "video_id": "lJzDn-Qma9o",
+            "title": "How A $5 Product Made Me MILLIONS - What is a Self Liquidating Offer (SLO)?",
+            "author": "Jonathan Montoya",
+            "thumbnail_url": "https://i.ytimg.com/vi/lJzDn-Qma9o/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=lJzDn-Qma9o"
+          },
+          {
+            "video_id": "ZWpExzy5MUg",
+            "title": "What Is a Self-Liquidating Offer & Why Should You Care?",
+            "author": "Matt from Growbo",
+            "thumbnail_url": "https://i.ytimg.com/vi/ZWpExzy5MUg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ZWpExzy5MUg"
+          },
+          {
+            "video_id": "Kgj8rFDeRIs",
+            "title": "How To Create A Self-liquidating Offer Funnel For Your Business",
+            "author": "Pam Obasa",
+            "thumbnail_url": "https://i.ytimg.com/vi/Kgj8rFDeRIs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Kgj8rFDeRIs"
+          },
+          {
+            "video_id": "_I5YFl6Ym_k",
+            "title": "Watch Me Build a Self-Liquidating Offer Funnel From Scratch (Ep. 1)",
+            "author": "Profitable Talents",
+            "thumbnail_url": "https://i.ytimg.com/vi/_I5YFl6Ym_k/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=_I5YFl6Ym_k"
+          },
+          {
+            "video_id": "g9_sJ3XLyHs",
+            "title": "Generate THOUSANDS of Leads - How to Build a Self-Liquidating Offer (Step-by-Step Guide)",
+            "author": "Jonathan Montoya",
+            "thumbnail_url": "https://i.ytimg.com/vi/g9_sJ3XLyHs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=g9_sJ3XLyHs"
+          },
+          {
+            "video_id": "Ii70ybaGJ68",
+            "title": "A Low-Ticket Tiny Offer SLO Funnel Fuels High-Ticket Sales with Allie Bjerk",
+            "author": "Mariana Henninger",
+            "thumbnail_url": "https://i.ytimg.com/vi/Ii70ybaGJ68/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Ii70ybaGJ68"
+          },
+          {
+            "video_id": "F5Le0mxyMhg",
+            "title": "Skool vs Circle (2026): The Best Online Communities & Courses?",
+            "author": "Click Guide",
+            "thumbnail_url": "https://i.ytimg.com/vi/F5Le0mxyMhg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=F5Le0mxyMhg"
+          },
+          {
+            "video_id": "Oeug9IgSFXc",
+            "title": "Membership TIERS Are Here | Skool News #33",
+            "author": "Skool News",
+            "thumbnail_url": "https://i.ytimg.com/vi/Oeug9IgSFXc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Oeug9IgSFXc"
+          },
+          {
+            "video_id": "mf1WAw0FyaI",
+            "title": "Top 7 Secrets To Building a $45,000/Month Skool Community",
+            "author": "Adnan Pilditch",
+            "thumbnail_url": "https://i.ytimg.com/vi/mf1WAw0FyaI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=mf1WAw0FyaI"
+          },
+          {
+            "video_id": "8lz_gy-Osw8",
+            "title": "Are Free Skool Communities Dying? Why I Turned Mine Paid",
+            "author": "Doug Boughton",
+            "thumbnail_url": "https://i.ytimg.com/vi/8lz_gy-Osw8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=8lz_gy-Osw8"
           }
         ],
         "research_reference_only": true,
@@ -4587,7 +5112,7 @@
         "asset_id": "verbatim_transcript_quotes",
         "asset": "data/transcripts/*.json -> segments[].text",
         "asset_type": "verbatim_transcript_passage",
-        "source": "Spoken content of 261 third-party videos (2490 captured tips)",
+        "source": "Spoken content of 336 third-party videos (3162 captured tips)",
         "research_reference_only": true,
         "commercial_republish_allowed": false,
         "commercial_use_allowed": false,
@@ -4603,38 +5128,38 @@
     ]
   },
   "corpus_metrics": {
-    "video_count": 261,
-    "channel_count": 87,
-    "total_words": 443649,
-    "total_hours": 93.93,
-    "total_pro_tips": 2490,
-    "unique_statutes_and_forms": 205,
-    "unique_tools_and_portals": 528
+    "video_count": 336,
+    "channel_count": 150,
+    "total_words": 549707,
+    "total_hours": 112.3,
+    "total_pro_tips": 3162,
+    "unique_statutes_and_forms": 253,
+    "unique_tools_and_portals": 817
   },
   "coverage": {
-    "videos_classified": 261,
-    "videos_with_multiple_topics": 261,
-    "tips_classified": 2490,
-    "raw_transcripts_joined": 261,
+    "videos_classified": 336,
+    "videos_with_multiple_topics": 336,
+    "tips_classified": 3162,
+    "raw_transcripts_joined": 336,
     "topic_video_counts": {
-      "business_model_and_economics": 167,
-      "probate_and_docket_sourcing": 253,
-      "unclaimed_property_and_escheat": 133,
-      "genealogy_and_heirship_proof": 228,
-      "skip_tracing_and_outreach": 122,
-      "contracts_and_compensation": 212,
-      "statutory_caps_and_licensing": 252,
-      "automation_and_small_team_ops": 208
+      "business_model_and_economics": 232,
+      "probate_and_docket_sourcing": 290,
+      "unclaimed_property_and_escheat": 135,
+      "genealogy_and_heirship_proof": 301,
+      "skip_tracing_and_outreach": 149,
+      "contracts_and_compensation": 272,
+      "statutory_caps_and_licensing": 299,
+      "automation_and_small_team_ops": 278
     },
     "topic_tip_counts": {
-      "business_model_and_economics": 141,
-      "probate_and_docket_sourcing": 587,
+      "business_model_and_economics": 336,
+      "probate_and_docket_sourcing": 630,
       "unclaimed_property_and_escheat": 582,
-      "genealogy_and_heirship_proof": 501,
-      "skip_tracing_and_outreach": 67,
-      "contracts_and_compensation": 230,
-      "statutory_caps_and_licensing": 204,
-      "automation_and_small_team_ops": 178
+      "genealogy_and_heirship_proof": 558,
+      "skip_tracing_and_outreach": 80,
+      "contracts_and_compensation": 317,
+      "statutory_caps_and_licensing": 223,
+      "automation_and_small_team_ops": 436
     }
   },
   "schema_version": "1.0",
@@ -4786,16 +5311,16 @@
           "link": "https://www.youtube.com/watch?v=t4w_wFimZ9A&t=181s"
         },
         {
+          "video_title": "How To Build Your First $10,000 Digital Product (Full Beginner Guide)",
+          "author": "Eden",
+          "timestamp": "00:12:35",
+          "link": "https://www.youtube.com/watch?v=VJ-JR7uMY34&t=755s"
+        },
+        {
           "video_title": "How to Check for Liens Before You Call About Surplus Funds",
           "author": "Alfred Taren",
           "timestamp": "00:07:07",
           "link": "https://www.youtube.com/watch?v=LdemHPCk0dk&t=427s"
-        },
-        {
-          "video_title": "DataTree Hacks: How to Do Title Research and Hire Abstractor Services",
-          "author": "REtipster",
-          "timestamp": "00:01:15",
-          "link": "https://www.youtube.com/watch?v=GfyX48eCbRY&t=75s"
         }
       ]
     },

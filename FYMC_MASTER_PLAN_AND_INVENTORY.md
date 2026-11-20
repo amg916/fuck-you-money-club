@@ -67,11 +67,15 @@ Three complete editorial systems are rendered dynamically in [`src/fymc/design_c
 | :---: | :---: | :---: |
 | ![Concept B Scorecard](publishing/previews/concept_b/art/scorecard.svg) | ![Workflow Diagram](publishing/previews/concept_b/art/diag_01.svg) | ![Fee Waterfall Diagram](publishing/previews/concept_b/art/diag_03.svg) |
 
-### Concept B Cover, Scorecard & Fee Waterfall (Volume 002)
+### Concept B Cover, Scorecard & Fee Waterfall (Volume 002 & Volume 003)
 
 | Volume 002 Concept B Cover | Volume 002 Scorecard (`86 / 100`) | Fee Waterfall (`diag_03.svg`) |
 | :---: | :---: | :---: |
 | ![Volume 002 Surplus Funds Recovery Cover](publishing/previews/vol-002-surplus-funds-recovery/concept_b/art/cover.svg) | ![Volume 002 Scorecard — 86 / 100](publishing/previews/vol-002-surplus-funds-recovery/concept_b/art/scorecard.svg) | ![Volume 002 Fee Waterfall](publishing/previews/vol-002-surplus-funds-recovery/concept_b/art/diag_03.svg) |
+
+| Volume 003 Concept B Cover | Volume 003 Scorecard (`90 / 100`) | SLO Contribution Waterfall (`diag_03.svg`) |
+| :---: | :---: | :---: |
+| ![Volume 003 Digital Product Empire Cover](publishing/previews/vol-003-digital-product-empire/concept_b/art/cover.svg) | ![Volume 003 Scorecard — 90 / 100](publishing/previews/vol-003-digital-product-empire/concept_b/art/scorecard.svg) | ![Volume 003 SLO Waterfall](publishing/previews/vol-003-digital-product-empire/concept_b/art/diag_03.svg) |
 
 ---
 
@@ -127,9 +131,17 @@ The full 5-Layer package includes **12 deep `Q1–Q12` chapters** (**`2,023–2,
 
 The ten mapped plays (`Track 01 + Track 02`) are `public_record_api_intelligence`, `distressed_asset_recovery`, `unclaimed_property_escheatment_arbitrage`, `probate_docket_inheritance_arbitrage`, `property_tax_assessment_appeal_contingency`, `hoa_super_lien_tax_deed_redemption_arbitrage`, `public_filing_trigger_mail_arbitrage`, `identity_graph_pixel_arbitrage`, `competitor_intent_comparison_hijacking`, and `social_to_search_ping_post_arbitrage`.
 
+### Completed Volume 003 — Digital Product Empire (`90/100`, Rank `#01` Overall)
+
+**10/10 Edition — 100% Built & QA-Verified** — **`vol-003-digital-product-empire`**, *The Complete Playbook for High-Margin Templates, Self-Liquidating Funnels, Merchant-of-Record Checkout & Scaling an \$800k/yr 4-Person Catalog*, is complete across `src/fymc/vol003_*.py` and [`src/fymc/volume_003_manuscript.py`](src/fymc/volume_003_manuscript.py), [`publishing/volumes/vol-003-digital-product-empire/`](publishing/volumes/vol-003-digital-product-empire/), and [`publishing/previews/vol-003-digital-product-empire/concept_b/`](publishing/previews/vol-003-digital-product-empire/concept_b/).
+
+The full 5-Layer package includes **12 deep `Q1–Q12` chapters** (**`1,903–2,172` body paragraph prose words per chapter**, **`59,252` total words**), Merchant-of-Record (`Paddle` / `Lemon Squeezy`) vs direct `Stripe` + *South Dakota v. Wayfair* (`585 U.S. 162`) / EU VAT compliance, Self-Liquidating Offer (`SLO`) & SparkLoop co-registration waterfalls, Visa `CE 3.0` chargeback defense, `15 U.S.C. § 8403` ROSCA click-to-cancel & `17 U.S.C. § 512(c)` DMCA templates, `GEO` citation seeding, `Web2App` external web checkout, all **25 mapped Track 01 + Track 02 operator plays with forensic teardowns**, **202 unique corpus-verified clickable `[HH:MM:SS]` YouTube deep links** (`216` sentence-clean citations across `72` videos and `63` channels mined from **75 newly harvested digital-product transcripts** in [`data/custom/vol003_digital_product_corpus.json`](data/custom/vol003_digital_product_corpus.json); `336` total corpus videos), **8 vector diagrams**, **10 `VOLUME 003` cover/mockup SVGs**, **6 Digital Product companion worksheets**, and Owner-Approved Concept B exports (`176`-page Digital PDF, `267`-page `6×9` Print PDF, `92`-page Workbook PDF, EPUB 3.0, and Bundle ZIP). Three-volume switching is live in both **`/studio` and `/site`**.
+
+The twenty-five mapped plays (`Track 01 + Track 02`) are `public_filing_trigger_mail_arbitrage`, `chrome_extension_contextual_arbitrage`, `viral_distribution_loops`, `high_velocity_dm_outbound_systems`, `identity_graph_pixel_arbitrage`, `ad_library_spend_velocity_arbitrage`, `reddit_quora_aged_thread_injection`, `expired_chrome_extension_acquisitions`, `llm_citation_geo_poisoning`, `youtube_faceless_high_cpc_compilation_arbitrage`, `newsletter_co_reg_sparkloop_arbitrage`, `expired_podcast_rss_redirect_arbitrage`, `pinterest_flipboard_visual_serp_arbitrage`, `cloud_ai_startup_credit_aggregation_arbitrage`, `free_llc_fintech_bounty_stacking`, `serverless_edge_free_tier_empire_hosting`, `free_trial_concierge_cpa_arbitrage`, `sportsbook_promo_ev_matched_betting_syndicates`, `verified_fan_ticketing_and_drop_allocation_farming`, `airdrop_points_sybil_cluster_farming`, `parasitic_free_publishing_account_serp_monopoly`, `tier1_search_feed_afd_rsoc_arbitrage`, `ctv_mfa_programmatic_supply_arbitrage`, `copyright_phash_reverse_image_statutory_settlement`, and `web2app_quiz_subscription_billing_bypass`.
+
 ### Built-Volume Unit Economics
 
-Annual illustrative operating scenarios distinguish gross revenue from owner net profit. `FT` means full-time staff; `C` means recurring contractors. Volume 001 scores **87/100** (`22/23/18/12/12`); Volume 002 scores **86/100** (`22/22/18/12/12`). Both have **±3-point sensitivity, High confidence**.
+Annual illustrative operating scenarios distinguish gross revenue from owner net profit. `FT` means full-time staff; `C` means recurring contractors. Volume 001 scores **87/100** (`22/23/18/12/12`); Volume 002 scores **86/100** (`22/22/18/12/12`); Volume 003 scores **90/100** (`22/23/19/12/14`). All three built volumes have **±3-point sensitivity, High confidence**.
 
 | Volume | Scenario | Gross Revenue | Owner Net Margin | Owner Net Profit | Team |
 | :--- | :--- | ---: | ---: | ---: | :--- |
@@ -139,6 +151,9 @@ Annual illustrative operating scenarios distinguish gross revenue from owner net
 | 002 — Surplus Funds Recovery | Conservative | \$100,000 | 25% | \$25,000 | 2 FT + 2 C |
 | 002 — Surplus Funds Recovery | Base | \$425,000 | 35% | \$148,750 | 2 FT + 2 C |
 | 002 — Surplus Funds Recovery | Scaled | \$750,000 | 45% | \$337,500 | 3 FT + 3 C |
+| 003 — Digital Product Empire | Conservative | \$50,000 | 20% | \$10,000 | 1 FT + 3 C |
+| 003 — Digital Product Empire | Base | \$425,000 | 37.5% | \$159,375 | 1 FT + 3 C |
+| 003 — Digital Product Empire | Scaled | \$800,000 | 55% | \$440,000 | 2 FT + 4 C |
 
 ### Chapter Records & Production State
 
@@ -154,9 +169,9 @@ Of the **12 workflow stages**, stages **1–11** — Research, Source Review, Ed
   * 189-video corpus (`79.95` hours, `812,038` raw segment words, `1,806` scored pro tips) indexed in [`data/`](data).
   * **Concept B (`concept_b` — Bold Editorial)** locked as **Owner-Approved Series Master**; all **29 candidate volumes** and **97 canonical operator plays (56 Track 01 + 41 Track 02)** retained.
   * **Volume 001 — Heir Hunting (`87/100`)** upgraded to the full 5-Layer structure: 12 deep chapters, all 5 mapped plays and forensic fallback matrices, 180 expert deep links, 8 vector diagrams, 10 cover/mockup SVGs, and 6 worksheets in the [volume package](publishing/volumes/vol-001-heir-hunting/) and [Concept B exports](publishing/previews/concept_b/).
-* **Phase 2 — Volume 002 *(COMPLETE)*; Founder Collection Expansion *(NEXT)*:**
-  * **Volume 002 — Surplus Funds Recovery (`86/100`, 10/10 Expanded Edition) is 100% Built & QA-Verified**, including all 10 mapped Track 01 + Track 02 plays, *Tyler v. Hennepin County* (`598 U.S. 631`) statutory frameworks, a 20-State Operator Target Matrix, verbatim clerk/FOIA/cold-call/ABA Rule 5.4 co-counsel scripts, 202 unique surplus-native deep links (`216` sentence-clean citations across `94` surplus videos & `40` channels), 8 vector diagrams, 10 `VOLUME 002` cover/mockup SVGs, and 6 companion worksheets. Both `/studio` and `/site` support multi-volume switching.
-  * Continue the Founder Collection shelf using the remaining top-ranked candidates (`#01 Digital Product Empire`, `#02 AI-Powered Micro SaaS`, `#04 High-Ticket Affiliate Marketing`, `#08 Commercial Lead Generation`). Volume 002 is no longer a pending build.
+* **Phase 2 — Volumes 002 & 003 *(COMPLETE)*; Volumes 004–005 *(NEXT)*:**
+  * **Volume 002 — Surplus Funds Recovery (`86/100`)** and **Volume 003 — Digital Product Empire (`90/100`, Rank `#01` Overall)** are **100% Built & QA-Verified** at `10/10` depth across `336` total corpus videos (`189` core + `72` surplus + `75` digital-product transcripts), with 3-volume switching in both `/studio` and `/site`.
+  * Complete the initial 5-volume Founder Collection shelf next with **Volume 004 — AI-Powered Micro SaaS (`88/100`)** and **Volume 005 — High-Ticket Affiliate Marketing (`87/100`)**.
 * **Phase 3 — Public Launch, Checkout & 4-Channel Distribution *(GATED ON OWNER LAUNCH APPROVAL)*:**
   * Connect production domain + live Stripe checkout on `/site` (`84–97%` direct net margin + \$290/yr Charter Memberships).
   * Distribute `marketplace_clean` editions across **Amazon KDP** (`6×9` Print + Kindle), **Etsy** (Digital Playbook + Printable Workbook bundles), and **eBay** (Collector print + bundle packs).
@@ -171,7 +186,7 @@ Source of truth: [`publishing/catalog/pipeline_29_candidates.json`](publishing/c
 
 | Rank | Candidate Title | Category | Score (Band) | Sub-Scores | Team | Annual Gross Revenue | Owner Net Profit Range | Tracks | Plays |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **#01** | **Digital Product Empire** | Digital education & tools | **90/100** (`±6` Mod) | `22/23/19/12/14` | 4 (`1 FT + 3 C`) | \$50k–\$800k | \$10,000–\$440,000 | T1, T2 | `25` |
+| **#01** | **Digital Product Empire** *(Vol. 003 Built & QA-Verified)* | Digital education & tools | **90/100** (`±3` High) | `22/23/19/12/14` | 4 (`1 FT + 3 C`) | \$50k–\$800k | \$10,000–\$440,000 | T1, T2 | `25` |
 | **#02** | **AI-Powered Micro SaaS** | Subscription software | **88/100** (`±10` Prelim) | `22/22/19/11/14` | 3 (`1 FT + 2 C`) | \$50k–\$700k | \$7,500–\$315,000 | T1, T2 | `27` |
 | **#03** | **Heir Hunting** *(Vol. 001 Flagship)* | Estate research | **87/100** (`±3` High) | `22/23/18/12/12` | 4 (`1 FT + 3 C`) | \$80k–\$600k | \$20,000–\$300,000 | T1 | `5` |
 | **#04** | **High-Ticket Affiliate Marketing** | Referral publishing | **87/100** (`±6` Mod) | `21/22/19/12/13` | 3 (`1 FT + 2 C`) | \$50k–\$600k | \$10,000–\$300,000 | T2, T1 | `35` |
@@ -361,16 +376,17 @@ flowchart LR
 
 ### Multi-Volume Store Contract
 
-`PUBLISHED_VOLUME_IDS = ("vol-001-heir-hunting", "vol-002-surplus-funds-recovery")` identifies the two built volumes exposed through the `/studio` and `/site` volume selectors; the constant does not open public deployment or paid sales.
+`PUBLISHED_VOLUME_IDS = ("vol-001-heir-hunting", "vol-002-surplus-funds-recovery", "vol-003-digital-product-empire")` identifies the three built volumes exposed through the `/studio` and `/site` volume selectors; the constant does not open public deployment or paid sales.
 
-`resolve_volume_slug(volume_id=None)` returns `vol-001-heir-hunting` for `None`, `""`, `1`, `"1"`, `"001"`, `"vol-001"`, `"vol-001-heir-hunting"`, or `"heir-hunting"`. It returns `vol-002-surplus-funds-recovery` for `2`, `"2"`, `"002"`, `"vol-002"`, `"vol-002-surplus-funds-recovery"`, or `"surplus-funds-recovery"`. Booleans and every other value raise `ValueError("Invalid volume_id")`.
+`resolve_volume_slug(volume_id=None)` returns `vol-001-heir-hunting` for `None`, `""`, `1`, `"1"`, `"001"`, `"vol-001"`, `"vol-001-heir-hunting"`, or `"heir-hunting"`; `vol-002-surplus-funds-recovery` for `2`, `"2"`, `"002"`, `"vol-002"`, `"vol-002-surplus-funds-recovery"`, or `"surplus-funds-recovery"`; and `vol-003-digital-product-empire` for `3`, `"3"`, `"003"`, `"vol-003"`, `"vol-003-digital-product-empire"`, or `"digital-product-empire"`. Booleans and every other value raise `ValueError("Invalid volume_id")`.
 
 ### Repository Map
 
 * [`publishing/brand/brand_system.json`](publishing/brand/brand_system.json) — Official brand architecture, Concept B Owner-Approved Series Master, pricing tiers, COGS specs, and canonical release state.
 * [`publishing/catalog/pipeline_29_candidates.json`](publishing/catalog/pipeline_29_candidates.json) — All 29 scored candidate volumes and all 97 canonical Track 01 / Track 02 plays.
-* [`publishing/volumes/vol-001-heir-hunting/`](publishing/volumes/vol-001-heir-hunting/) — Upgraded 5-Layer Volume 001 structured manuscript, 12 deep chapters with all 5 mapped plays and forensic fallback matrices, 180 timestamped citations, 8 diagrams, and 6 worksheets; 10 cover/mockup SVGs in the [Concept B art package](publishing/previews/concept_b/art/).
+* [`publishing/volumes/vol-001-heir-hunting/`](publishing/volumes/vol-001-heir-hunting/) — Upgraded 5-Layer Volume 001 structured manuscript, 12 deep chapters with all 5 mapped plays and forensic fallback matrices, 201 unique timestamped deep links, 8 diagrams, and 6 worksheets; 10 cover/mockup SVGs in the [Concept B art package](publishing/previews/concept_b/art/).
 * [`publishing/volumes/vol-002-surplus-funds-recovery/`](publishing/volumes/vol-002-surplus-funds-recovery/) — 100% Built & QA-Verified Volume 002 (`10/10` Expanded Edition) structured manuscript (`62,159` words), 12 deep chapters with all 10 mapped Track 01 + Track 02 plays and forensic teardowns, 202 unique surplus-native timestamped deep links (`216` sentence-clean citations), 8 diagrams, and 6 Surplus Funds worksheets.
+* [`publishing/volumes/vol-003-digital-product-empire/`](publishing/volumes/vol-003-digital-product-empire/) — 100% Built & QA-Verified Volume 003 (`10/10` Edition) structured manuscript (`59,252` words), 12 deep chapters with all 25 mapped Track 01 + Track 02 plays, 202 unique digital-product timestamped deep links (`216` sentence-clean citations across `72` videos & `63` channels), 8 diagrams, and 6 Digital Product worksheets, plus [Concept B exports](publishing/previews/vol-003-digital-product-empire/concept_b/).
 * [`publishing/previews/vol-002-surplus-funds-recovery/concept_b/`](publishing/previews/vol-002-surplus-funds-recovery/concept_b/) — Volume 002 Concept B preview/export package, including 10 `VOLUME 002` cover/mockup SVGs, the `86 / 100` scorecard, and the fee waterfall plate.
 * `src/fymc/volume_002_*.py` in [`src/fymc/`](src/fymc/) — Volume 002 production source modules.
 * [`publishing/previews/`](publishing/previews) — Reproducible Concept A, Concept B, and Concept C export packages (`digital_pdf.pdf`, `print_6x9_pdf.pdf`, `workbook_pdf.pdf`, `book.epub`, `bundle.zip`, and `art/*.svg`).

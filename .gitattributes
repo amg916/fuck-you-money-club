@@ -9,3 +9,5 @@ publishing/research/** -diff
 publishing/.commit_manifest.json -diff
 src/fymc/volume_002_citations.py linguist-generated=true -diff
 data/custom/vol002_surplus_funds_corpus.json linguist-generated=true -diff
+src/fymc/volume_003_citations.py linguist-generated=true -diff
+data/custom/vol003_digital_product_corpus.json linguist-generated=true -diff

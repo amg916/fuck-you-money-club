@@ -42,6 +42,7 @@ from . import (
     RATING_SYSTEM_NAME,
     FLAGSHIP_VOLUME_ID,
     VOLUME_002_ID,
+    VOLUME_003_ID,
     PUBLISHED_VOLUME_IDS,
     OWNER_APPROVED_CONCEPT_ID,
     MIN_EXPERT_YOUTUBE_LINKS_PER_BOOK,
@@ -58,6 +59,7 @@ from .scorecard_engine import (
     build_29_candidate_pipeline,
     get_flagship_scorecard,
     get_volume_002_scorecard,
+    get_volume_003_scorecard,
     compute_scorecard,
     resolve_score_value,
 )
@@ -73,12 +75,18 @@ from .volume_002_manuscript import (
     build_volume_002_diagrams_data,
 )
 from .volume_002_chapters_b import build_volume_002_workbook
+from .volume_003_manuscript import (
+    build_volume_003_manuscript,
+    build_volume_003_diagrams_data,
+    build_volume_003_workbook,
+)
 
 __all__ = [
     "CorruptStoreError",
     "PUBLISHING_DIRNAME",
     "VOLUME_SLUG",
     "VOLUME_002_SLUG",
+    "VOLUME_003_SLUG",
     "PUBLISHED_VOLUME_SLUGS",
     "CONCEPT_IDS",
     "CONCEPT_LABELS",
@@ -108,6 +116,7 @@ PUBLISHING_DIRNAME = "publishing"
 # ``FLAGSHIP_VOLUME_ID`` is carried inside the metadata payload instead.
 VOLUME_SLUG = "vol-001-heir-hunting"
 VOLUME_002_SLUG = VOLUME_002_ID
+VOLUME_003_SLUG = VOLUME_003_ID
 PUBLISHED_VOLUME_SLUGS = PUBLISHED_VOLUME_IDS
 
 CONCEPT_IDS = ("concept_a", "concept_b", "concept_c")
@@ -1464,6 +1473,13 @@ def _volume_scorecard_for_slug(pipeline: list, volume_slug: str) -> dict:
         for candidate in pipeline:
             if isinstance(candidate, dict) and candidate.get("candidate_number") == 2:
                 return recompute_candidate_scorecard(candidate)
+    if volume_slug == VOLUME_003_SLUG:
+        scorecard = _as_dict(_invoke(get_volume_003_scorecard), "scorecard")
+        if scorecard:
+            return scorecard
+        for candidate in pipeline:
+            if isinstance(candidate, dict) and candidate.get("candidate_number") == 27:
+                return recompute_candidate_scorecard(candidate)
     return _flagship_scorecard(pipeline)
 
 
@@ -1701,16 +1717,25 @@ def _build_volume_metadata(
     chapters = _as_list(manuscript.get("chapters", manuscript), "chapters")
     yt_count = count_manuscript_youtube_links(chapters)
     is_vol2 = volume_slug == VOLUME_002_SLUG
-    default_title = "Surplus Funds Recovery" if is_vol2 else "Heir Hunting"
+    is_vol3 = volume_slug == VOLUME_003_SLUG
+    default_title = (
+        "Digital Product Empire"
+        if is_vol3
+        else ("Surplus Funds Recovery" if is_vol2 else "Heir Hunting")
+    )
     default_subtitle = (
-        "The Money-to-Manpower Playbook for Tax-Sale Overages & Foreclosure Excess Proceeds"
-        if is_vol2
-        else "The Money-to-Manpower Playbook for Unclaimed Estate Recovery"
+        "The Money-to-Manpower Playbook for High-Margin Digital Products & Self-Liquidating Funnels"
+        if is_vol3
+        else (
+            "The Money-to-Manpower Playbook for Tax-Sale Overages & Foreclosure Excess Proceeds"
+            if is_vol2
+            else "The Money-to-Manpower Playbook for Unclaimed Estate Recovery"
+        )
     )
     return {
         "volume_id": volume_slug,
         "volume_slug": volume_slug,
-        "volume_number": 2 if is_vol2 else 1,
+        "volume_number": 3 if is_vol3 else (2 if is_vol2 else 1),
         "parent_brand": PARENT_BRAND,
         "book_series": BOOK_SERIES,
         "tagline": BRAND_TAGLINE,
@@ -1751,6 +1776,11 @@ def _fresh_volume_builders(volume_slug: str, abridged: list[dict]) -> tuple[dict
         diagrams_data = _as_dict(_invoke(build_volume_002_diagrams_data), "diagrams")
         workbook = _as_dict(_invoke(build_volume_002_workbook), "worksheets")
         fresh_manuscript = _as_dict(_invoke(build_volume_002_manuscript, abridged), "chapters")
+        return diagrams_data, workbook, fresh_manuscript
+    if volume_slug == VOLUME_003_SLUG:
+        diagrams_data = _as_dict(_invoke(build_volume_003_diagrams_data), "diagrams")
+        workbook = _as_dict(_invoke(build_volume_003_workbook), "worksheets")
+        fresh_manuscript = _as_dict(_invoke(build_volume_003_manuscript, abridged), "chapters")
         return diagrams_data, workbook, fresh_manuscript
     diagrams_data = _as_dict(_invoke(build_volume_001_diagrams_data), "diagrams")
     workbook = _as_dict(_invoke(build_volume_001_workbook), "worksheets")
@@ -2019,7 +2049,7 @@ def _load_single_volume_bundle(root: Path, vol_slug: str, read_store) -> dict:
     for chapter in manuscript.get("chapters", []):
         chapter["revision"] = _chapter_revision(chapter)
     scorecard = read_store(vol_dir / "scorecard.json", {}) or {}
-    default_cand_num = 2 if vol_slug == VOLUME_002_SLUG else 1
+    default_cand_num = 27 if vol_slug == VOLUME_003_SLUG else (2 if vol_slug == VOLUME_002_SLUG else 1)
     if isinstance(scorecard, dict) and "track_ids" not in scorecard:
         scorecard.update(
             get_candidate_track_metadata(scorecard.get("candidate_number", default_cand_num))

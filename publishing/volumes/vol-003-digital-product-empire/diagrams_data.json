@@ -1,0 +1,316 @@
+{
+  "diagrams": [
+    {
+      "diagram_id": "diag-01-value-ladder-workflow",
+      "chart_type": "process_flow",
+      "title": "From pain signal to recurring portfolio cashflow",
+      "subtitle": "Five-stage digital product value ladder",
+      "chapter_number": 1,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Numeric values indicate operating sequence, not guaranteed conversion rates.",
+      "caption": "Validate willingness to pay before full asset production, then compound LTV via order bumps, 1-click upsells, and recurring updates.",
+      "stages": [
+        {
+          "label": "Validate pain",
+          "value": "Step 1",
+          "numeric_value": 1.0,
+          "detail": "Mine Ad Libraries, search queries, and Reddit threads; pre-sell or smoke-test before full build."
+        },
+        {
+          "label": "Ship core SKU",
+          "value": "Step 2",
+          "numeric_value": 2.0,
+          "detail": "Package a modular template, toolkit, or micro-course that delivers a measurable win in 15 minutes."
+        },
+        {
+          "label": "Expand basket",
+          "value": "Step 3",
+          "numeric_value": 3.0,
+          "detail": "Attach a contextual $19-$29 order bump and a 1-click post-purchase implementation upsell."
+        },
+        {
+          "label": "Automate onboarding",
+          "value": "Step 4",
+          "numeric_value": 4.0,
+          "detail": "Deliver license tokens, Visa CE 3.0 receipts, and a 5-part activation sequence to cut refunds."
+        },
+        {
+          "label": "Ascend LTV",
+          "value": "Step 5",
+          "numeric_value": 5.0,
+          "detail": "Convert proven buyers into annual data feeds, paid communities, or quarterly template drops."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-02-demand-validation-funnel",
+      "chart_type": "funnel",
+      "title": "Self-liquidating acquisition to backend ascension",
+      "subtitle": "Illustrative cohort of 1,000 targeted visitors",
+      "chapter_number": 6,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Invented nested cohort counts illustrating funnel math; actual conversion varies by traffic source and offer.",
+      "caption": "Newsletter co-registration and front-end order bumps offset acquisition spend so backend community and bundle sales become high-margin profit.",
+      "stages": [
+        {
+          "label": "Targeted clicks",
+          "value": "1,000",
+          "numeric_value": 1000.0,
+          "detail": "High-intent visitors from YouTube tutorials, Reddit SERP threads, GEO citations, or paid tests."
+        },
+        {
+          "label": "Lead-magnet opt-ins",
+          "value": "380",
+          "numeric_value": 380.0,
+          "detail": "38% opt-in to a free calculator or lite template with optional paid newsletter co-registration."
+        },
+        {
+          "label": "Core SKU buyers",
+          "value": "34",
+          "numeric_value": 34.0,
+          "detail": "3.4% front-end conversion on a $49 operational toolkit or template system."
+        },
+        {
+          "label": "Bump & upsell buyers",
+          "value": "13",
+          "numeric_value": 13.0,
+          "detail": "38% order-bump attachment and 14% 1-click post-purchase bundle upgrades."
+        },
+        {
+          "label": "Annual subscribers",
+          "value": "5",
+          "numeric_value": 5.0,
+          "detail": "Ascended members on a $290-$490/yr update feed or operator community."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-03-slo-contribution-waterfall",
+      "chart_type": "waterfall",
+      "title": "Gross checkout receipts to net contribution margin",
+      "subtitle": "Illustrative $100 blended basket on Merchant-of-Record rails",
+      "chapter_number": 3,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "USD per $100 gross checkout basket; opening and closing bars are totals, middle bars are deductions.",
+      "caption": "$100 gross receipts less $5.50 MoR processing, $4.00 refund reserve, $12.00 affiliate/support allocation, and $23.50 media spend leaves $55.00 contribution.",
+      "stages": [
+        {
+          "label": "Gross basket",
+          "value": "$100.00",
+          "numeric_value": 100.0,
+          "detail": "Combined front-end SKU, order bump, and post-purchase upsell receipts excluding pass-through VAT."
+        },
+        {
+          "label": "MoR & payment fee",
+          "value": "-$5.50",
+          "numeric_value": -5.5,
+          "detail": "Merchant-of-Record 5% + $0.50 fee handling global VAT/sales-tax remittance and fraud screening."
+        },
+        {
+          "label": "Refunds & disputes",
+          "value": "-$4.00",
+          "numeric_value": -4.0,
+          "detail": "4% combined refund and dispute allowance under clear click-to-cancel terms."
+        },
+        {
+          "label": "Support & affiliates",
+          "value": "-$12.00",
+          "numeric_value": -12.0,
+          "detail": "Blended affiliate payout share and Tier-1 support/fulfillment automation cost."
+        },
+        {
+          "label": "Net ad spend",
+          "value": "-$23.50",
+          "numeric_value": -23.5,
+          "detail": "Paid media outlay net of Day-1 SparkLoop / co-registration lead-magnet liquidation."
+        },
+        {
+          "label": "Contribution margin",
+          "value": "$55.00",
+          "numeric_value": 55.0,
+          "detail": "Closing contribution before fixed studio opex, contractor retainers, and owner taxes."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-04-mor-vs-direct-fee-bars",
+      "chart_type": "horizontal_bars",
+      "title": "Effective take-rate across checkout & distribution rails",
+      "subtitle": "Illustrative % platform & payment fee on a $100 digital order",
+      "chapter_number": 2,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Percent of a $100 digital sale; excludes optional paid discovery boosts and state registration overhead.",
+      "caption": "Direct Stripe has the lowest card fee but leaves global VAT/Wayfair nexus compliance on the seller; MoR platforms absorb tax liability for ~2% more.",
+      "stages": [
+        {
+          "label": "Direct Stripe + Tax",
+          "value": "3.7% / $3.70",
+          "numeric_value": 3.7,
+          "detail": "2.9% + $0.30 card fee plus ~0.5% Stripe Tax; seller still owns state/VAT registrations."
+        },
+        {
+          "label": "MoR (Paddle / LS)",
+          "value": "5.5% / $5.50",
+          "numeric_value": 5.5,
+          "detail": "5% + $0.50 Merchant-of-Record fee; MoR acts as legal seller and remits global VAT/sales tax."
+        },
+        {
+          "label": "Gumroad Direct",
+          "value": "10.5% / $10.50",
+          "numeric_value": 10.5,
+          "detail": "10% + $0.50 direct-link fee; simple starter rail but expensive above $10k/mo volume."
+        },
+        {
+          "label": "App Store In-App",
+          "value": "30.0% / $30.00",
+          "numeric_value": 30.0,
+          "detail": "Standard 30% mobile store commission (15% Small Business Program) vs Web2App external web checkout."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-05-piracy-refund-triage-tree",
+      "chart_type": "decision_tree",
+      "title": "Checkout compliance, chargeback & piracy defense tree",
+      "subtitle": "Operational triage before scaling paid traffic",
+      "chapter_number": 5,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Numbers identify decision nodes; keep dispute ratio well below the 0.75% card-network threshold.",
+      "caption": "Prevent friendly-fraud chargebacks and group-buy leaks structurally through MoR tax handling, CE 3.0 logs, 1-click refunds, and fingerprinted files.",
+      "stages": [
+        {
+          "label": "Global tax covered?",
+          "value": "Node 1",
+          "numeric_value": 1.0,
+          "detail": "Yes via MoR or registered tax engine: advance to Node 2. No: route international/nexus checkout to MoR."
+        },
+        {
+          "label": "CE 3.0 telemetry?",
+          "value": "Node 2",
+          "numeric_value": 2.0,
+          "detail": "Log IP, device, timestamp, license activation, and download events to win friendly-fraud representments."
+        },
+        {
+          "label": "Dispute rate <0.4%?",
+          "value": "Node 3",
+          "numeric_value": 3.0,
+          "detail": "Yes: scale traffic. Elevated: enable self-serve 1-click refunds/cancellations so unhappy buyers refund instead of disputing."
+        },
+        {
+          "label": "Canary watermark?",
+          "value": "Node 4",
+          "numeric_value": 4.0,
+          "detail": "Embed buyer-specific canary hashes and automate 17 U.S.C. 512(c) DMCA notices on leaked repos."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-06-four-person-empire-org",
+      "chart_type": "org_architecture",
+      "title": "One full-time architect, three specialized contractors",
+      "subtitle": "Illustrative 4-person ($425k-$800k/yr) portfolio pod",
+      "chapter_number": 11,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Numeric values are role identifiers, not FTE salaries. All contractor work requires signed IP assignment.",
+      "caption": "Keep headcount lean by automating fulfillment, tax, and Tier-1 FAQ triage while focusing human talent on SKU quality and creative velocity.",
+      "stages": [
+        {
+          "label": "Owner / product architect",
+          "value": "1 FT",
+          "numeric_value": 1.0,
+          "detail": "Owns market selection, offer positioning, pricing, funnel math, and capital allocation."
+        },
+        {
+          "label": "Product & UI builder",
+          "value": "1 C",
+          "numeric_value": 2.0,
+          "detail": "Builds modular Notion/Sheets/Figma systems, calculators, and micro-extension updates under written IP assignment."
+        },
+        {
+          "label": "Video & ad editor",
+          "value": "1 C",
+          "numeric_value": 3.0,
+          "detail": "Produces faceless YouTube tutorials, VSL hooks, and weekly Meta/TikTok creative variants."
+        },
+        {
+          "label": "Ops & affiliate lead",
+          "value": "1 C",
+          "numeric_value": 4.0,
+          "detail": "Manages Tier-2 customer tickets, refund QA, DMCA sweeps, and affiliate/newsletter partner payouts."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-07-zero-cogs-startup-stack",
+      "chart_type": "stacked_comparison",
+      "title": "Disciplined $10,000 digital product launch allocation",
+      "subtitle": "Illustrative pilot budget with 50% untouched cash reserve",
+      "chapter_number": 4,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "USD; four additive components total $10,000 for a multi-SKU launch scenario. Serverless hosting and startup credits keep fixed tech COGS near zero.",
+      "caption": "Never sink $10,000 into unvalidated course production; cap initial build + legal setup and preserve liquidity for post-validation traffic scaling.",
+      "stages": [
+        {
+          "label": "Entity & IP setup",
+          "value": "$1,200",
+          "numeric_value": 1200.0,
+          "detail": "LLC formation, business banking, domain portfolio, and contractor work-made-for-hire / IP templates."
+        },
+        {
+          "label": "Design & tooling",
+          "value": "$1,300",
+          "numeric_value": 1300.0,
+          "detail": "Screen-recording gear, analytics, email engine, and modular design assets not covered by free tiers."
+        },
+        {
+          "label": "Validation ad tests",
+          "value": "$2,500",
+          "numeric_value": 2500.0,
+          "detail": "Bounded 72-hour pre-sale smoke tests and SLO creative experiments with strict kill gates."
+        },
+        {
+          "label": "Operating reserve",
+          "value": "$5,000",
+          "numeric_value": 5000.0,
+          "detail": "Untouched liquidity buffer for scaling proven ROAS winners and covering payout timing."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-08-thirty-day-launch-roadmap",
+      "chart_type": "timeline_roadmap",
+      "title": "Thirty days from pain signal to cash-flowing SKU",
+      "subtitle": "Four weekly validation, build, launch & optimization gates",
+      "chapter_number": 12,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Numeric values are milestone end-days. Advance to paid scaling only after front-end unit economics clear target thresholds.",
+      "caption": "Ship a focused v1.0 painkiller in 14 days, validate real checkout conversion in Week 3, and lock onboarding + affiliate leverage by Day 30.",
+      "stages": [
+        {
+          "label": "Mine & pre-sell",
+          "value": "Days 1-7",
+          "numeric_value": 7.0,
+          "detail": "Audit Ad Libraries and Reddit threads, wire MoR pre-sale lander, and confirm real buyer conversion."
+        },
+        {
+          "label": "Build & wire SKU",
+          "value": "Days 8-14",
+          "numeric_value": 14.0,
+          "detail": "Assemble modular v1.0 product, order bump, 1-click upsell, CE 3.0 webhooks, and 5-email onboarding."
+        },
+        {
+          "label": "Launch & liquidate",
+          "value": "Days 15-21",
+          "numeric_value": 21.0,
+          "detail": "Publish YouTube/Reddit/DM triggers, activate newsletter co-reg, and run $50/day SLO split tests."
+        },
+        {
+          "label": "Audit & scale",
+          "value": "Days 22-30",
+          "numeric_value": 30.0,
+          "detail": "Reconcile net contribution margin, cut refund friction, onboard affiliates, and scale winning hooks."
+        }
+      ]
+    }
+  ]
+}

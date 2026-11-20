@@ -1,0 +1,65 @@
+{
+  "concept_id": "concept_a",
+  "volume_id": "vol-003-digital-product-empire",
+  "approved": false,
+  "edition_status": "concept_preview",
+  "preview_only": true,
+  "files": {
+    "digital_pdf.pdf": {
+      "bytes": 1062270,
+      "sha256": "7cf995f4344379916bd8f2d222bc4bcc1ceebc4afe01540e257bb0a2650dd4a3"
+    },
+    "print_6x9_pdf.pdf": {
+      "bytes": 1228836,
+      "sha256": "58ff4781fa03f01137a08ec87f1e465f7556336301aa4b3b119ace1ba0440d99"
+    },
+    "workbook_pdf.pdf": {
+      "bytes": 589186,
+      "sha256": "b4f7547700cd0c9e2bc869625e6b149a6ca4c14a7cb3907293eaa034b617d56c"
+    },
+    "book.epub": {
+      "bytes": 239240,
+      "sha256": "1280557d163e3f3170faaf75da672dd2e021ff2bd4f1a2b02b596f94bfa9f220"
+    },
+    "art/cover.svg": {
+      "bytes": 4022,
+      "sha256": "78ebe2b7d31ba7dc3008884ff31b5cd21c60316f61d148b5754b8c433f827ebd"
+    },
+    "art/scorecard.svg": {
+      "bytes": 96409,
+      "sha256": "21df773f18926c68671ba26175650d419e7460cab08a9418db923dc860f9f4d2"
+    },
+    "art/diag_01.svg": {
+      "bytes": 9136,
+      "sha256": "0e1cc2777f48a0dfb3fa1994e566ff94a4f8615970b666bf5465d4cdb32fd3ec"
+    },
+    "art/diag_02.svg": {
+      "bytes": 6457,
+      "sha256": "3efb0417e4988ef31a52e33ea4af9da588a6cb148542da7c704a8c1cec85348e"
+    },
+    "art/diag_03.svg": {
+      "bytes": 9655,
+      "sha256": "0e73ef144de2513b35abac9a00c8f3f6b451fba1a11484b1d86b56e8f29af86b"
+    },
+    "art/diag_04.svg": {
+      "bytes": 6773,
+      "sha256": "54f9b89f3c7456a68599d6c38dff9676ddae2687feb73ef342e97678b0edc2db"
+    },
+    "art/diag_05.svg": {
+      "bytes": 7694,
+      "sha256": "a097a4f8a5cdbba27586961a60bfd46c7138f784783654379c12bdc125d0bcb3"
+    },
+    "art/diag_06.svg": {
+      "bytes": 7675,
+      "sha256": "c8c1f4583ef46e214a5b8094bc8e369cdb2b5b37ea1850c82edbfb5484236c6d"
+    },
+    "art/diag_07.svg": {
+      "bytes": 6938,
+      "sha256": "a5a14623afe797c5d970eacf43a1fd20ff7be78fc4ae7e96c9303ba3e2ac7679"
+    },
+    "art/diag_08.svg": {
+      "bytes": 6733,
+      "sha256": "7aa5dfcf15db876b4f7cc1a95ba2c1abad2f0ccc4cb59ab064bca9dc403b986d"
+    }
+  }
+}

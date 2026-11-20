@@ -77,11 +77,15 @@ def _five_volume_collection(pub):
     metadata = (pub["volumes"]["vol-001-heir-hunting"]["metadata"]
                 if "volumes" in pub else pub["volume"]["metadata"])
     volumes = [dict(metadata, status="approved_master")]
+    built_map = {
+        2: "vol-002-surplus-funds-recovery",
+        3: "vol-003-digital-product-empire",
+    }
     for number, title in enumerate(("Surplus Funds Recovery", "Digital Product Empire",
                                     "AI-Powered Micro SaaS", "High-Ticket Affiliate Marketing"), 2):
-        if number == 2 and "vol-002-surplus-funds-recovery" in pub.get("volumes", {}):
-            volumes.append(dict(pub["volumes"]["vol-002-surplus-funds-recovery"]["metadata"],
-                                status="approved_master"))
+        slug = built_map.get(number)
+        if slug and slug in pub.get("volumes", {}):
+            volumes.append(dict(pub["volumes"][slug]["metadata"], status="approved_master"))
         else:
             volumes.append({"volume_number": number, "title": title,
                             "status": "proposed", "public_deploy_approved": False,

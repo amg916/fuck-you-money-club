@@ -1,0 +1,449 @@
+{
+  "workbook_id": "wb-003-digital-product-empire",
+  "volume_id": "vol-003-digital-product-empire",
+  "title": "Digital Product Empire — Operator Companion Workbook",
+  "subtitle": "6 Printable Worksheets for Demand Validation, Offer Economics, Production & Portfolio Execution",
+  "worksheets": [
+    {
+      "worksheet_id": "ws-01",
+      "number": 1,
+      "title": "Demand & Ad-Library Spend-Velocity Validation Sheet",
+      "purpose": "Select a specific buyer problem using dated demand evidence, repeat ad-library observations, and a bounded purchase test rather than competitor popularity alone.",
+      "chapter_ref": "Q6",
+      "instructions": [
+        "Print one sheet per buyer/problem hypothesis. Use a shared experiment ID on this sheet and the offer, attribution, and sprint sheets.",
+        "Capture comparable ad-library snapshots on at least two dates. Deduplicate ad IDs and distinguish new creative, continuing ads, and retired ads.",
+        "Treat ad longevity and creative velocity as activity proxies, not proof of spending, sales, or profitability. Record actual spend only when the source exposes it; retain ranges as ranges.",
+        "Run a capped test with an explicit offer, price, audience, and purchase or preorder event. Label interviews, waitlist signups, and paid orders separately.",
+        "Use the thresholds chosen before the test to decide Build, Revise, or Stop. Retain contradictory evidence and transfer the selected offer to ws-02."
+      ],
+      "fields": [
+        {
+          "name": "Experiment identity and buyer",
+          "type": "text",
+          "prompt": "Enter experiment ID, owner, dates, narrow buyer segment, buying trigger, and candidate SKU.",
+          "example": "DP-01 | owner Alex | days 1-7 | freelance designers preparing client handoffs | handoff-kit-v1"
+        },
+        {
+          "name": "Problem and current workaround",
+          "type": "textarea",
+          "prompt": "Describe the recurring task, present workaround, cost of delay, and buyer language with dated interview references.",
+          "example": "Three of five interviewed designers rebuild handoff checklists for each client; interview notes INT-01 through INT-05."
+        },
+        {
+          "name": "Independent demand evidence",
+          "type": "textarea",
+          "prompt": "Record source URL or evidence ID, observation date, search phrase or quote, sample size, purchase intent, and counterevidence. Separate independent sources from syndicated copies.",
+          "example": "Marketplace review REV-04 requests editable files; INT-03 already uses a satisfactory free checklist; neither counts as a paid order."
+        },
+        {
+          "name": "Competitor offer register",
+          "type": "textarea",
+          "prompt": "For each comparable offer record seller, landing-page URL, audience, format, price, promise, observed date, and the gap your original product will address.",
+          "example": "COMP-A | landing capture C-01 | $39 template bundle | broad audience | gap: designer-specific acceptance checklist."
+        },
+        {
+          "name": "Ad-library observation ledger",
+          "type": "textarea",
+          "prompt": "Record platform, library URL, advertiser and ad IDs, first-seen dates, snapshot dates, active status, creative angle, destination, and saved evidence.",
+          "example": "LIB-A | snapshot day 1: 8 unique active ads; day 8: 11 active, including 4 newly observed and 1 retired; captures AL-01/AL-02."
+        },
+        {
+          "name": "Spend-velocity evidence and limits",
+          "type": "textarea",
+          "prompt": "Calculate newly observed unique ads / elapsed days and net active-ad change / elapsed days. Record disclosed spend with its exact reporting window; compare spend/day only across comparable windows and coverage. Mark undisclosed spend unknown.",
+          "example": "Over 7 elapsed days: 4 / 7 = 0.57 new ads/day; (11 - 8) / 7 = 0.43 net active ads/day. Spend unavailable; no dollar-spend inference."
+        },
+        {
+          "name": "Validation test and stop rules",
+          "type": "textarea",
+          "prompt": "Specify audience, original test asset, price, event definition, duration, cash cap, minimum evidence, and preselected success and stop thresholds.",
+          "example": "Seven-day $200 test for a $29 kit; target 8 paid preorders; stop at $200 or day 7; disclose the planned delivery date in the offer."
+        },
+        {
+          "name": "Observed funnel and unit cost",
+          "type": "textarea",
+          "prompt": "Record spend, eligible landing sessions, unique leads, paid orders, cancellations, and source exports. Purchase conversion = paid orders / eligible sessions; test CAC = spend / new paying customers. Use unavailable for zero denominators.",
+          "example": "$160 spend; 200 sessions; 25 leads; 8 new buyers; purchase conversion 4%; CAC $20; one later cancellation recorded separately."
+        },
+        {
+          "name": "Evidence-based selection",
+          "type": "textarea",
+          "prompt": "Choose Build, Revise, or Stop; explain the strongest evidence, counterevidence, uncertainty, next test, owner, and review date. Reference ws-02 economics before increasing spend.",
+          "example": "Revise | buyers paid, but refund-adjusted margin is thin | Alex tests clearer previews next week under the same $200 cap."
+        }
+      ],
+      "completion_gate": "The buyer problem has dated independent evidence, comparable ad snapshots distinguish activity from spend, and a capped test has actual counts, explicit unknowns, and a documented Build / Revise / Stop decision."
+    },
+    {
+      "worksheet_id": "ws-02",
+      "number": 2,
+      "title": "Value Ladder, Order-Bump & Self-Liquidating Offer (SLO) Calculator",
+      "purpose": "Calculate whether the front-end offer pays for acquisition after refunds, fees, and delivery costs, while keeping future ladder revenue separate from realized contribution.",
+      "chapter_ref": "Q1, Q3",
+      "instructions": [
+        "Use one currency, one acquisition cohort, and a stated measurement window. Label every input forecast or actual; the examples illustrate arithmetic rather than targets.",
+        "Map the free entry point, paid core SKU, optional order bump, upsell, and recurring or premium tier to distinct buyer outcomes.",
+        "For the initial-order model, express bump and upsell purchases per core order. If an upsell rate is conditional on bump buyers, convert it to a per-core-order rate first.",
+        "Exclude tax collected from revenue. Subtract refunds, processor or merchant-of-record fees, affiliate payouts, variable delivery, and support costs once; avoid overlapping fee lines.",
+        "Treat an SLO as self-liquidating only within the declared window when contribution before acquisition covers acquisition spend. Future renewals and unpaid receivables do not repair a failed day-zero calculation.",
+        "Show unavailable for division by zero and state whether fees and refund reserves are provisional. Reconcile actual order exports before the next spending increase."
+      ],
+      "fields": [
+        {
+          "name": "Cohort and calculation basis",
+          "type": "text",
+          "prompt": "Record experiment ID, SKU version, dates, currency, order count, new-customer count, and forecast/actual status. Explain repeat-buyer exclusions from CAC.",
+          "example": "DP-01 | kit-v1 | USD | launch week forecast | 100 core orders from 100 new customers | prices exclude tax."
+        },
+        {
+          "name": "Value ladder and delivery promise",
+          "type": "textarea",
+          "prompt": "List each tier, buyer outcome, price, included modules, delivery timing, and next-step trigger. Keep premium future sales outside initial-order AOV.",
+          "example": "Free audit checklist -> $29 handoff kit -> optional $9 email pack -> $79 implementation workshop -> $199 team license later."
+        },
+        {
+          "name": "Core offer price and orders",
+          "type": "textarea",
+          "prompt": "Enter realized core price P after discounts and core orders N. For mixed prices use core revenue / N, not the list price.",
+          "example": "P = $29; N = 100; core revenue = $2,900."
+        },
+        {
+          "name": "Order-bump contribution",
+          "type": "textarea",
+          "prompt": "Enter bump price B and take rate b = bump purchases / core orders; calculate B x b revenue per core order. Identify the incremental benefit.",
+          "example": "B = $9; 30 bump purchases / 100 core orders = 0.30; bump adds $2.70 per order and $270 to the cohort."
+        },
+        {
+          "name": "Upsell and gross order value",
+          "type": "textarea",
+          "prompt": "Enter upsell price U and per-core-order take rate u. Gross AOV = P + B x b + U x u; gross cohort revenue = N x AOV. Add other immediate items as separately documented terms.",
+          "example": "U = $79; u = 0.10; gross AOV = $29 + $2.70 + $7.90 = $39.60; gross revenue = $3,960."
+        },
+        {
+          "name": "Refunds, fees, and variable servicing",
+          "type": "textarea",
+          "prompt": "Itemize per-order refunds or reserve R, MoR/payment fees F, affiliate payouts A, and delivery/support V. Net contribution before acquisition M = gross AOV - R - F - A - V. Keep fixed production costs separate.",
+          "example": "R = $1.60; F = $2; A = $0; V = $3; M = $39.60 - $1.60 - $2 - $0 - $3 = $33 per core order."
+        },
+        {
+          "name": "CAC and SLO coverage",
+          "type": "textarea",
+          "prompt": "Record acquisition spend S and new customers C; CAC = S / C. Cohort contribution after acquisition = N x M - S; SLO coverage = N x M / S. When N equals C, break-even CAC equals M; otherwise compare full cohort totals.",
+          "example": "S = $2,800; C = N = 100; CAC $28; contribution $3,300 - $2,800 = $500; coverage 1.18x; break-even CAC $33."
+        },
+        {
+          "name": "Traffic ceiling and fixed-cost recovery",
+          "type": "textarea",
+          "prompt": "Record core-order conversion c = orders / eligible paid sessions. Break-even CPC = M x c for the matching paid cohort. Fixed-cost recovery orders = fixed production cost / positive per-order contribution after acquisition; round up and mark unavailable if contribution is nonpositive.",
+          "example": "100 orders / 5,000 paid sessions = 2%; break-even CPC $33 x 0.02 = $0.66; actual CPC $0.56; $1,000 production / $5 contribution = 200 orders."
+        },
+        {
+          "name": "Downside and cash timing",
+          "type": "textarea",
+          "prompt": "Recalculate with lower take rates, higher refunds, and higher CAC. Separately record settlement delay, withheld reserves, refund outflows, and required cash buffer; contribution is not bank cash.",
+          "example": "Without upsells, holding the other cost assumptions: AOV $31.70; M $25.10; at $28 CAC the cohort loses $290. Seven-day settlements require a separate acquisition cash buffer."
+        },
+        {
+          "name": "Offer decision and reconciliation",
+          "type": "textarea",
+          "prompt": "Set the maximum CAC and test budget supported by the downside case; record keep/change/drop for each tier, ledger references, owner, and next review. Report later ladder revenue by its own window.",
+          "example": "Keep core and bump; retest workshop; cap test at $200 pending lower-CAC evidence; reconcile orders, refunds, fees, and payouts on day 14."
+        }
+      ],
+      "completion_gate": "All ladder tiers have distinct outcomes, AOV and contribution arithmetic reconcile, CAC uses new customers, tax and costs are not double counted, and the SLO decision states its window, downside case, and cash requirement."
+    },
+    {
+      "worksheet_id": "ws-03",
+      "number": 3,
+      "title": "Merchant-of-Record, Global VAT/Sales-Tax & Visa CE 3.0 Telemetry Checklist",
+      "purpose": "Document who sells and remits tax in each channel, verify checkout-to-payout reconciliation, and preserve useful transaction evidence for applicable dispute workflows.",
+      "chapter_ref": "Q2, Q5, Q9",
+      "instructions": [
+        "Complete one channel/provider record and add rows for each intended market. Distinguish a merchant of record from a payment processor and a marketplace's channel-specific role.",
+        "Use dated provider terms and tax-source references for product classification, market coverage, registration responsibility, invoices, refunds, and filing ownership; do not infer global coverage from one checkout test.",
+        "Run labeled sandbox purchases, delivery events, and refunds for representative supported markets. Keep test transactions out of business KPI totals.",
+        "For Visa CE 3.0, verify current applicability, historical-transaction windows, matching requirements, and submission process with the processor. Telemetry alone does not establish eligibility or acceptance.",
+        "Use synthetic or redacted IDs on the printed sheet. Keep customer evidence in access-controlled storage and never copy full card numbers or security codes into this workbook."
+      ],
+      "fields": [
+        {
+          "name": "Channel and merchant responsibility",
+          "type": "textarea",
+          "prompt": "Record storefront, provider, seller shown on receipt, MoR or processor role, contract version/date, supported product category, and responsibility for refunds and disputes.",
+          "example": "Store A | provider contract MOR-01 | provider is seller for hosted checkout only; direct invoice channel tracked separately."
+        },
+        {
+          "name": "Market and tax responsibility matrix",
+          "type": "textarea",
+          "prompt": "For each country/state record B2B/B2C, digital-product classification, tax collection and remittance owner, coverage exclusions, registration or threshold questions, source/date, and resolution owner.",
+          "example": "Market row TAX-01 | B2C downloadable template | hosted provider covers collection/remittance per dated terms; direct sales responsibility remains separately assigned."
+        },
+        {
+          "name": "Location and business-tax evidence",
+          "type": "textarea",
+          "prompt": "List location evidence collected by the checkout, conflicting-evidence handling, business tax-ID validation method/result, and provider handling of any applicable exemption or reverse charge. Reference records rather than printing identifiers.",
+          "example": "TEST-01 | billing country and provider location result agree; business tax-ID scenario tested separately; validation receipt stored as TAX-E02."
+        },
+        {
+          "name": "Tax-inclusive and tax-exclusive pricing",
+          "type": "textarea",
+          "prompt": "Record price mode, applicable test rate and source, currency, invoice lines, rounding, and net revenue. Inclusive tax = total - total / (1 + rate); exclusive total = base x (1 + rate).",
+          "example": "Synthetic 20% test: $120 inclusive = $100 revenue + $20 tax; $100 exclusive produces $120 total; this is a test rate, not a market lookup."
+        },
+        {
+          "name": "Settlement and refund reconciliation",
+          "type": "textarea",
+          "prompt": "Record gross receipts, tax, refunds with tax reversals, fees, reserves, currency conversion, payout date, and bank reference. State whether provider reports are gross or already net before subtracting anything.",
+          "example": "Test ledger: $120 gross - $20 tax - $6 fees - $10 reserve = $84 payout; subsequent full refund and tax reversal reconciled in a separate event."
+        },
+        {
+          "name": "Purchase-to-access telemetry",
+          "type": "textarea",
+          "prompt": "Map order and transaction IDs to timestamp/timezone, SKU version, receipt, delivery acknowledgment, account login, and access/download events. Record event source, missing events, retention period, and authorized evidence owner.",
+          "example": "Synthetic order T-100 -> receipt E-01 -> account A-17 -> kit-v1 delivered -> first download at 10:04 UTC; delivery webhook retry deduplicated by event ID."
+        },
+        {
+          "name": "Visa CE 3.0 eligibility record",
+          "type": "textarea",
+          "prompt": "Record dispute reason/category, processor guidance version/date, applicable lookback and age rules, required prior undisputed transactions, same-payment-credential linkage, and eligibility result. Common CE 3.0 workflows concern qualifying fraud disputes and two prior transactions aged 120-365 days; verify exact current rules and exceptions before submission.",
+          "example": "Rehearsal only | processor checklist CE-01 | two prior transactions aged 150 and 210 days identified by provider token; reason-code applicability and undisputed status still require processor confirmation."
+        },
+        {
+          "name": "Historical matching evidence",
+          "type": "textarea",
+          "prompt": "Compare disputed and eligible historical transactions using processor-required data: account/login ID, delivery address where applicable, IP address, and device ID/fingerprint. Record exact matches, provenance, and gaps; verify the required combination, commonly at least two matching elements including IP or device.",
+          "example": "Synthetic comparison: account A-17 and device D-09 match across all three transactions; IP changed; no shipping address for download. Evidence references CE-E01 through CE-E03."
+        },
+        {
+          "name": "Dispute package and operating checklist",
+          "type": "textarea",
+          "prompt": "Record pass/missing/not-applicable with reason for receipt, product description, delivery, refund correspondence, eligible history, evidence export, deadline, submission acknowledgment, owner, and follow-up. Keep ordinary service-dispute evidence separate from CE 3.0 eligibility.",
+          "example": "Receipt pass; access log pass; history eligibility pending processor review; support owner Sam; export rehearsal complete; no live dispute submitted."
+        }
+      ],
+      "completion_gate": "Each launch channel has a sourced merchant/tax responsibility matrix, checkout and refund tests reconcile, telemetry links purchase to access, and CE 3.0 evidence is labeled eligible, ineligible, or unresolved with a processor reference and owner."
+    },
+    {
+      "worksheet_id": "ws-04",
+      "number": 4,
+      "title": "Modular SKU Production, IP Assignment & Onboarding Sequence Tracker",
+      "purpose": "Ship an original, versioned product assembled from reusable modules with documented rights, tested delivery, and a measurable first-value onboarding sequence.",
+      "chapter_ref": "Q4, Q7",
+      "instructions": [
+        "Use one sheet per release and repeat module rows as needed. Carry the experiment ID from ws-01 and the tier promises from ws-02.",
+        "Separate reusable source modules from customer-facing SKU bundles. Record dependency versions so updating a module does not silently change every sold product.",
+        "Track contributor assignments and third-party licenses before bundling assets. Purchased files, fonts, and stock media do not automatically include redistribution rights.",
+        "Rehearse checkout, entitlement, download, first-use task, and refund access handling using a labeled test account. Save evidence for both happy paths and failures.",
+        "Give each onboarding message one concrete next action. Measure first value with a defined product event rather than email opens alone."
+      ],
+      "fields": [
+        {
+          "name": "Release identity and outcome",
+          "type": "text",
+          "prompt": "Record experiment ID, SKU, version, audience, promised outcome, format, release owner, and target date.",
+          "example": "DP-01 | handoff-kit-v1.0 | freelance designers | prepare one client-ready handoff | editable docs plus PDF | owner Morgan | day 14."
+        },
+        {
+          "name": "Module and dependency inventory",
+          "type": "textarea",
+          "prompt": "List module ID, source version, reusable inputs, output format, owner, estimated hours, status, and all SKUs depending on it.",
+          "example": "MOD-01 acceptance checklist v1.0 | 3 hours | Morgan | ready; used in core kit and team bundle; MOD-02 email pack belongs to the bump only."
+        },
+        {
+          "name": "SKU packaging and entitlement",
+          "type": "textarea",
+          "prompt": "Map each paid tier to included module versions, exclusions, license scope, file manifest, access duration, and upgrade path. Verify the contents against the offer page.",
+          "example": "Core $29: MOD-01 v1.0 plus guide v1.0; bump $9: MOD-02 v1.0; core receipt does not unlock the bump."
+        },
+        {
+          "name": "Contributor IP assignment register",
+          "type": "textarea",
+          "prompt": "For each contributor record work scope, original-source handoff, signed assignment reference/date, covered rights, payment milestone, pre-existing asset exclusions, and any unresolved ownership item.",
+          "example": "Designer C-01 | cover and editable layout | assignment IP-01 signed day 8 | source files received | stock font excluded and tracked in license register."
+        },
+        {
+          "name": "Third-party asset and license register",
+          "type": "textarea",
+          "prompt": "Record asset, creator/source, acquisition evidence, license version, permitted commercial use and redistribution, attribution requirements, modification limits, and replacement plan for unsupported uses.",
+          "example": "FONT-01 | license LIC-01 allows rendered PDF use but not font-file redistribution; distribute PDF without font installer and supply a permitted editable fallback."
+        },
+        {
+          "name": "Production and acceptance checklist",
+          "type": "textarea",
+          "prompt": "For each module record draft, edit, factual/source check, file-open test, print readability, editable-field test, link check, and acceptance evidence. Give failed checks an owner and due date.",
+          "example": "MOD-01: draft/edit pass; PDF prints at A4 and Letter with readable margins; editable table pass; broken resource link assigned to Morgan for day 12."
+        },
+        {
+          "name": "Delivery and recovery rehearsal",
+          "type": "textarea",
+          "prompt": "Record test order IDs, webhook deduplication, correct entitlements, receipt and download outcomes, mobile access, expired-link recovery, refund/access behavior, and support escalation.",
+          "example": "TEST-04 purchased core only; correct files delivered once despite webhook retry; expired link regenerated; bump remained locked; refund event matched the documented access policy."
+        },
+        {
+          "name": "Onboarding sequence and first value",
+          "type": "textarea",
+          "prompt": "List message trigger, delay, subject/action, destination, owner, and measurable success event. Define stop/branch conditions for refunds, completion, and support needs.",
+          "example": "Immediately: receipt and download; day 1: fill client brief; day 3: finish first handoff; day 7: request feedback. First value = saved completed checklist; stop sales follow-ups after refund."
+        },
+        {
+          "name": "Release and improvement ledger",
+          "type": "textarea",
+          "prompt": "Record release manifest, outstanding defects, support themes, activation counts/window, revision decision, owner, and next review. Activation = eligible buyers reaching first value / eligible delivered buyers; use unavailable for zero buyers.",
+          "example": "REL-01 | 20 delivered buyers, 12 completed checklists within 7 days = 60% activation; clarify step 2 in v1.1; owner Morgan; review day 21."
+        }
+      ],
+      "completion_gate": "The release manifest matches sold entitlements, every bundled asset has a documented rights basis, acceptance and recovery tests have evidence, and onboarding has an owner, defined first-value event, and follow-up schedule."
+    },
+    {
+      "worksheet_id": "ws-05",
+      "number": 5,
+      "title": "Multi-Channel Traffic, GEO Citation, Extension & Co-Reg Attribution Log",
+      "purpose": "Compare paid, owned, partner, citation, and extension acquisition using consistent source IDs and deduplicated orders without confusing discovery signals with revenue.",
+      "chapter_ref": "Q8, Q10",
+      "instructions": [
+        "Use one row per channel/campaign/cohort and the same timezone, currency, and reporting window across exports. Preserve raw evidence references alongside normalized totals.",
+        "Choose one primary attribution rule and lookback window before comparing channels. Store assisting touches separately so one order never becomes multiple primary conversions.",
+        "For generative engine optimization (GEO), repeat a fixed prompt set and record engine, date, answer, and cited URL. Citation presence, referral clicks, and attributed purchases are separate measurements.",
+        "For a browser extension, distinguish store views, installs, activation, product clicks, and purchases. Record only the events needed for the defined workflow; installation is not a sale.",
+        "For co-registration, preserve partner source and permission scope, validate accepted leads, deduplicate overlaps, and reconcile billed versus accepted leads. Do not count partner claims as your verified orders.",
+        "Calculate ratios from the reconciled counts, use unavailable for zero denominators, and separate directly observed attribution from estimated or unknown attribution."
+      ],
+      "fields": [
+        {
+          "name": "Reporting identity and channel roster",
+          "type": "textarea",
+          "prompt": "Enter experiment/SKU, date window, timezone, currency, owner, and active channels including paid search/social, organic search, email, affiliates, GEO, extension, and co-reg as applicable.",
+          "example": "DP-01 | week 3 | UTC | USD | owner Riley | paid social, email, organic search, GEO test, extension beta, partner P-01."
+        },
+        {
+          "name": "Campaign taxonomy and tracking QA",
+          "type": "textarea",
+          "prompt": "Record source, medium, campaign, content/creative ID, landing URL, partner or extension ID, and test-click/order evidence. Check redirects preserve attribution and exclude test orders from totals.",
+          "example": "source=partner_p01; medium=coreg; campaign=handoff_w3; creative=c02; QA order TEST-07 retains campaign through checkout and is excluded."
+        },
+        {
+          "name": "Primary attribution and deduplication",
+          "type": "textarea",
+          "prompt": "Specify attribution model, lookback, direct-visit treatment, stable order/customer keys, cross-device limits, refund linkage, and the rule for unknown sources. Separate first-touch and assisted views from primary order totals.",
+          "example": "Last non-direct observed touch within 7 days; order ID is primary key; no eligible touch -> unknown; email assist retained but not added to primary paid-social orders."
+        },
+        {
+          "name": "Multi-channel traffic and economics rows",
+          "type": "textarea",
+          "prompt": "For each channel record spend, eligible sessions, accepted leads, new customers, orders, ex-tax revenue, refunds, fees, and servicing cost. CVR = orders / sessions; CAC = acquisition spend / new customers; contribution = revenue - refunds - fees - servicing - acquisition.",
+          "example": "Paid social: $280 spend; 500 sessions; 10 new customers/orders; $396 ex-tax revenue; $16 refunds; $20 fees; $30 servicing; CVR 2%; CAC $28; contribution $50."
+        },
+        {
+          "name": "GEO citation observation panel",
+          "type": "textarea",
+          "prompt": "Record fixed prompt ID/text, engine/version where available, locale, date, run count, answer evidence, cited URL, citation accuracy, observed referral sessions, and attributed orders. Citation rate = runs citing your site / valid panel runs; do not extrapolate to market share.",
+          "example": "Panel G-01: 10 valid runs of buyer-question set, 3 cite our original checklist page = 30%; 4 identifiable referral sessions; 0 attributed orders; other unattributed visits remain unknown."
+        },
+        {
+          "name": "Extension funnel and release attribution",
+          "type": "textarea",
+          "prompt": "Record store listing/version, install source, activated users and event definition, tagged product clicks, matched orders, crash/support events, permissions used, and event export reference. Define denominator cohorts and windows.",
+          "example": "Beta v0.2: 80 new installs; 40 create first checklist within 7 days = 50% activation; 12 product clicks; 2 matched orders; only tagged campaign events exported."
+        },
+        {
+          "name": "Co-reg partner and lead-quality ledger",
+          "type": "textarea",
+          "prompt": "Record partner, offer, lead batch, recorded opt-in wording/scope reference, delivered leads, duplicates, invalid or out-of-scope leads, accepted leads, suppression handling, cost, and matched new customers. Accepted CPL = cost / unique accepted leads.",
+          "example": "P-01 batch B-03: 100 delivered, 10 duplicates, 5 invalid, 5 outside recorded scope = 80 accepted; $120 cost -> $1.50 accepted CPL; 2 matched new customers -> $60 CAC."
+        },
+        {
+          "name": "Order and payout reconciliation",
+          "type": "textarea",
+          "prompt": "Reconcile primary orders across channels plus unknown to storefront unique orders; reconcile net revenue and partner payouts separately. Record duplicate claims, adjustments, evidence exports, owner, and unresolved amount.",
+          "example": "Storefront 20 orders = paid 10 + email 4 + extension 2 + co-reg 2 + unknown 2; 3 email assists are not additional orders; duplicate partner claim rejected by order ID."
+        },
+        {
+          "name": "Next channel experiment",
+          "type": "textarea",
+          "prompt": "Choose scale, maintain, revise, or stop by evidence and contribution. Record sample limitations, one changed variable, budget, target event, owner, and review date.",
+          "example": "Revise co-reg targeting: $60 CAC exceeds ws-02 margin; next batch capped at $60; inspect accepted-lead-to-buyer conversion after 7 days before buying more."
+        }
+      ],
+      "completion_gate": "Channel tracking has test evidence, primary orders reconcile without duplicate assists, GEO citations and extension installs remain separate from sales, co-reg economics use accepted unique leads, and the next experiment has a budget and owner."
+    },
+    {
+      "worksheet_id": "ws-06",
+      "number": 6,
+      "title": "30-Day Launch Sprint & 4-Person Portfolio Weekly KPI Scorecard",
+      "purpose": "Turn the first thirty days into saved deliverables and assign a four-person team weekly portfolio decisions based on reconciled demand, production, acquisition, activation, and cash evidence.",
+      "chapter_ref": "Q11, Q12",
+      "instructions": [
+        "Print a daily continuation row for each day 1-30 and a weekly scorecard for days 7, 14, 21, and 28, followed by the day-30 close. Enter actual outcomes or explained exceptions, not just checked plans.",
+        "Assign exactly four named owners across portfolio/economics, product/IP, growth/attribution, and customer operations/payments. Record backup coverage without hiding single-person accountability.",
+        "Carry evidence IDs from ws-01 through ws-05. Use consistent cohort windows, distinguish forecast from actual, and exclude sandbox transactions from production KPIs.",
+        "Calculate portfolio rates from summed numerators and denominators rather than averaging SKU percentages. Count shared costs once, state their allocation, and retain unknown attribution.",
+        "Keep contribution, fixed operating profit, and bank cash separate. Record payable costs, unsettled receipts, refund exposure, and provider reserves in the cash schedule.",
+        "Use the day-30 review to choose Continue, Revise, or Stop for each SKU and the portfolio; name one next action, budget, owner, and review date per decision."
+      ],
+      "fields": [
+        {
+          "name": "Sprint charter and resource envelope",
+          "type": "textarea",
+          "prompt": "Record sprint ID, start/end dates, target buyer/outcome, initial SKUs, available hours, production and acquisition budgets, minimum evidence, and stop conditions.",
+          "example": "SPR-01 | 30-day handoff-kit launch | one core SKU plus bump | 120 team hours | $1,000 production and $600 acquisition caps | no spend above the agreed test envelope."
+        },
+        {
+          "name": "Four-person ownership and capacity",
+          "type": "textarea",
+          "prompt": "Name the four people and assign accountable roles, weekly available hours, primary deliverables, backup person, and handoff cadence.",
+          "example": "Alex: portfolio/economics, 8 h/week; Morgan: product/IP, 10 h; Riley: growth/attribution, 8 h; Sam: customer operations/payments, 4 h. Alex backs up Sam; Morgan backs up Riley; daily written handoff."
+        },
+        {
+          "name": "Daily execution rows, days 1-30",
+          "type": "textarea",
+          "prompt": "Repeat for every day: day/date, owner, planned deliverable, actual result, evidence ID, hours, spend, blocker, next action, and due date. Include zero-activity days with a reason.",
+          "example": "Day 3 | Alex | compare ad snapshots | two captures saved, actual spend unknown | AL-01/AL-02 | 2 h | $0 | run capped offer test on day 4."
+        },
+        {
+          "name": "Days 1-7 demand and offer foundation",
+          "type": "textarea",
+          "prompt": "Track interviews and demand evidence, comparable ad observations, chosen audience, ladder pricing, SLO forecast, capped validation test, and end-of-week decision using ws-01/ws-02.",
+          "example": "Day 1 buyer interviews; days 2-3 competitor baseline and offer; days 4-7 purchase test; day 7 snapshot comparison and review; unresolved economics assigned to Alex."
+        },
+        {
+          "name": "Days 8-14 product and payment readiness",
+          "type": "textarea",
+          "prompt": "Track module drafts, signed IP records, third-party licenses, release manifest, MoR/tax responsibility matrix, checkout/refund rehearsal, telemetry, and onboarding test using ws-03/ws-04.",
+          "example": "Days 8-10 modules and rights register; days 11-12 file QA and checkout; day 13 refund/access rehearsal; day 14 release candidate and evidence review."
+        },
+        {
+          "name": "Days 15-21 launch and channel learning",
+          "type": "textarea",
+          "prompt": "Track live release, channel budgets, campaign QA, first-value onboarding, support issues, GEO panel, extension/co-reg pilots if used, and attribution reconciliation using ws-05.",
+          "example": "Day 15 small launch; days 16-18 inspect delivery and activation; days 19-20 compare channels at equal cohort age; day 21 reconcile orders and change one weak funnel step."
+        },
+        {
+          "name": "Days 22-30 optimization and close",
+          "type": "textarea",
+          "prompt": "Record days 22-28 iteration and weekly review, day 29 portfolio reconciliation, and day 30 decision. Preserve support and delivery commitments for any paused SKU.",
+          "example": "Days 22-24 improve preview and onboarding; days 25-28 retest within cap; day 29 close order/cost ledger; day 30 choose next SKU budget while Sam retains support ownership."
+        },
+        {
+          "name": "Weekly per-SKU and portfolio KPI rows",
+          "type": "textarea",
+          "prompt": "For each week/SKU enter target, actual, prior week, evidence, and owner for sessions, leads, orders, new customers, ex-tax gross revenue, refunds, fees, servicing, acquisition spend, activation, and support backlog. Compute net AOV = (revenue - refunds) / orders; CAC = spend / new customers; CVR = orders / sessions; contribution = revenue - refunds - fees - servicing - spend. Add cohort age and refund/dispute observation windows; use unavailable for zero denominators.",
+          "example": "Week 3 kit: 500 sessions; 50 leads; 10 new buyers/orders; revenue $396; refunds $16; fees $20; servicing $30; spend $280 -> net AOV $38, CAC $28, CVR 2%, contribution $50. Activation 6/10 within 7 days = 60%; backlog 2 tickets; later disputes still immature."
+        },
+        {
+          "name": "Portfolio cost and cash reconciliation",
+          "type": "textarea",
+          "prompt": "Sum SKU contribution, subtract shared/fixed costs once, and reconcile to the ledger. Separately list opening cash, bank receipts, paid outflows, closing cash, provider reserves, unsettled funds, upcoming obligations, and cash runway assumptions.",
+          "example": "$50 SKU contribution - $100 fixed cost = -$50 operating result for the period. Cash: $2,000 opening + $300 bank receipts - $430 paid outflows = $1,870 closing; $30 reserve excluded from available cash; obligations listed separately."
+        },
+        {
+          "name": "Weekly actions and day-30 portfolio decision",
+          "type": "textarea",
+          "prompt": "For each SKU and the portfolio record Continue/Revise/Stop, KPI bottleneck, evidence, assigned owner, next deliverable, cost/hour cap, due date, and review date. Explain missed deliverables and changes to the plan.",
+          "example": "Revise kit onboarding; 6/10 activation below the chosen 8/10 target; Morgan simplifies step 2 within 4 hours; Riley gets a $100 retest cap; Sam resolves 2 tickets; Alex reviews contribution and cash in 7 days."
+        }
+      ],
+      "completion_gate": "All thirty days and four weekly reviews have results or explained exceptions, exactly four owners have explicit responsibilities, SKU and portfolio KPI totals reconcile, cash is separated from contribution, and each day-30 decision has a bounded next action."
+    }
+  ]
+}

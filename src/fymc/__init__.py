@@ -11,7 +11,8 @@ BRAND_TAGLINE = "Big Money. Small Teams. No Bullshit."
 RATING_SYSTEM_NAME = "Money-to-Manpower Score"
 FLAGSHIP_VOLUME_ID = "vol-001-heir-hunting"
 VOLUME_002_ID = "vol-002-surplus-funds-recovery"
-PUBLISHED_VOLUME_IDS = (FLAGSHIP_VOLUME_ID, VOLUME_002_ID)
+VOLUME_003_ID = "vol-003-digital-product-empire"
+PUBLISHED_VOLUME_IDS = (FLAGSHIP_VOLUME_ID, VOLUME_002_ID, VOLUME_003_ID)
 OWNER_APPROVED_CONCEPT_ID = "concept_b"
 MIN_EXPERT_YOUTUBE_LINKS_PER_BOOK = 150
 TARGET_EXPERT_YOUTUBE_LINKS_PER_BOOK = "150-200+"
@@ -29,11 +30,15 @@ def resolve_volume_slug(volume_id: object = None) -> str:
             return FLAGSHIP_VOLUME_ID
         if volume_id == 2:
             return VOLUME_002_ID
+        if volume_id == 3:
+            return VOLUME_003_ID
     elif isinstance(volume_id, str):
         if volume_id in {"", "1", "001", "vol-001", FLAGSHIP_VOLUME_ID, "heir-hunting"}:
             return FLAGSHIP_VOLUME_ID
         if volume_id in {"2", "002", "vol-002", VOLUME_002_ID, "surplus-funds-recovery"}:
             return VOLUME_002_ID
+        if volume_id in {"3", "003", "vol-003", VOLUME_003_ID, "digital-product-empire"}:
+            return VOLUME_003_ID
     raise ValueError("Invalid volume_id")
 
 
