@@ -11,9 +11,37 @@
       "instructions": [
         "Complete one record per county and sale route; never transfer tax-deed assumptions into a mortgage-foreclosure file.",
         "Attach the official inventory and current forms, then extract each rule with its source, retrieval date, and unresolved questions.",
-        "Compare eligible inventory, record accessibility, counsel coverage, and deadlines; explain why the chosen pair outranks alternatives."
+        "Compare eligible inventory, record accessibility, counsel coverage, and deadlines; explain why the chosen pair outranks alternatives.",
+        "Cross-reference the same master file ID across all six worksheets. Worksheet 1 owns the 20-State Tier and post-Tyler notice matrix; worksheet 2 owns Clerk Registry balance verification; worksheet 4 owns cold-call objections and trigger-mail responses; worksheet 5 owns the eight-exhibit attorney handoff; worksheets 3 and 6 own cohort calculations and reconciliation respectively. Reference those source records here rather than creating conflicting copies.",
+        "For each applicable file, resolve Tier-1 administrative versus Tier-2 judicial-motion routing, preserve the actual statutory notice and deadline evidence, and distinguish Tyler v. Hennepin County from the controlling state procedure. For Michigan, record the applicable MCL 211.78t subsection and foreclosure-year July 1 notice cutoff separately from the subsequent motion window; flag historical-sale exceptions for counsel review.",
+        "Reconcile Track 01 ledger sourcing with Track 02 trigger-mail, comparison-calculator, and inbound quiz-bridge attribution using one primary cohort per case. Use collected firm fees, actual allocated costs, and equal-age cohorts; exclude claimant funds and unpaid pipeline from realized ROI. Document missing evidence and zero denominators explicitly."
       ],
       "fields": [
+        {
+          "field_label": "20-State Tier and Tyler notice matrix reference",
+          "input_type": "textarea",
+          "guidance": "Link worksheet 1's twenty-state research rows: state, county, sale route, Tier-1 or Tier-2, statutory section and effective version, official source, notice trigger, service evidence, claimant response cutoff, motion deadline, reviewer, and unresolved applicability. Cite Tyler v. Hennepin County, 598 U.S. 631 (2023), separately from state authority. For MCL 211.78t distinguish the applicable foreclosure-year July 1 notice and following-year motion dates. Mark unresearched entries unresolved, not nationwide coverage. Include public-record request batch ID, custodian, date range, state-law or court-record route, cost estimate, response status, and missing records; federal FOIA does not govern county records."
+        },
+        {
+          "field_label": "Clerk Registry balance-verification phone log reference",
+          "input_type": "textarea",
+          "guidance": "Link worksheet 2's call log: file and case ID, official telephone source, office, staff contact, call date and time, stated balance and as-of date, pending disbursements, competing claims reported, written-record request, corroborating document, discrepancy, and next owner. Script: 'What amount remains in the registry for this case as of today, and where can I obtain the supporting record?' Keep phone information provisional until corroborated; the balance alone does not establish entitlement."
+        },
+        {
+          "field_label": "Cold-call objection-rebuttal and trigger-mail response tracker reference",
+          "input_type": "textarea",
+          "guidance": "Link worksheet 4 by case and campaign ID. Record channel, script version, objection verbatim, response used, verified recipient, follow-up, suppression, mailed and delivered dates, return reason, and attributable reply. Script: 'We are a private firm, not the county. You may verify the record and file directly; our proposal explains our optional service fee.' Score private identity, official verification, direct filing option, fee accuracy, and absence of payout promises; QA pass rate equals interactions passing every criterion divided by audited interactions. Show sample count and unavailable for no audits. Distinguish mail, calculator, and quiz assists without duplicating engagements."
+        },
+        {
+          "field_label": "8-Exhibit Attorney Co-Counsel handoff checklist reference",
+          "input_type": "textarea",
+          "guidance": "Link worksheet 5's versioned exhibit index: 1 registry balance and sale; 2 vesting and legal description; 3 interests and waterfall; 4 identity and authority; 5 bankruptcy review; 6 notices and deadline calculations; 7 executed service and representation documents; 8 route-specific claim or motion and required service evidence. For each record source, date, reviewer, complete/missing/not-applicable status, and reason. Add county-specific requirements. Reference the signed term sheet naming client, lead and local attorneys, scope, permitted separate compensation, expense payer, replacement duties, and per-state acknowledgment, deficiency, draft, and filing SLAs. Nonlawyer administrative services are not attorney co-counsel representation."
+        },
+        {
+          "field_label": "Track 01 + Track 02 cohort ROI reconciliation reference",
+          "input_type": "textarea",
+          "guidance": "Link worksheet 3 calculations and worksheet 6 reconciliation by cohort start date, as-of date, unique case ID, primary source, and assisted channels. Record actual channel spend, allocated labor, firm-borne counsel and servicing costs, screened files, qualified contacts, engagements, filings, paid files, and bank-supported collected fees. Contribution equals collected firm fees minus acquisition and servicing costs; ROI equals contribution divided by those total costs. Count each cost once, document allocation method, label zero-cost ROI unavailable, and show unpaid pipeline separately. Reconcile channel totals to unique cases and the bank ledger; compare cohorts at equal age and record differences, owners, and resolution dates."
+        },
         {
           "field_label": "County, state, and sale route",
           "input_type": "text",
@@ -70,9 +98,37 @@
       "instructions": [
         "Create one sheet per file and attach the source instruments, not just a commercial title summary.",
         "Build a chronological vesting chain, then a separate counsel-reviewed priority waterfall; chronology alone does not decide legal priority.",
-        "Mark disputed interests and missing releases explicitly. Recalculate low and high equity estimates when unresolved claims change."
+        "Mark disputed interests and missing releases explicitly. Recalculate low and high equity estimates when unresolved claims change.",
+        "Cross-reference the same master file ID across all six worksheets. Worksheet 1 owns the 20-State Tier and post-Tyler notice matrix; worksheet 2 owns Clerk Registry balance verification; worksheet 4 owns cold-call objections and trigger-mail responses; worksheet 5 owns the eight-exhibit attorney handoff; worksheets 3 and 6 own cohort calculations and reconciliation respectively. Reference those source records here rather than creating conflicting copies.",
+        "For each applicable file, resolve Tier-1 administrative versus Tier-2 judicial-motion routing, preserve the actual statutory notice and deadline evidence, and distinguish Tyler v. Hennepin County from the controlling state procedure. For Michigan, record the applicable MCL 211.78t subsection and foreclosure-year July 1 notice cutoff separately from the subsequent motion window; flag historical-sale exceptions for counsel review.",
+        "Reconcile Track 01 ledger sourcing with Track 02 trigger-mail, comparison-calculator, and inbound quiz-bridge attribution using one primary cohort per case. Use collected firm fees, actual allocated costs, and equal-age cohorts; exclude claimant funds and unpaid pipeline from realized ROI. Document missing evidence and zero denominators explicitly."
       ],
       "fields": [
+        {
+          "field_label": "20-State Tier and Tyler notice matrix reference",
+          "input_type": "textarea",
+          "guidance": "Link worksheet 1's twenty-state research rows: state, county, sale route, Tier-1 or Tier-2, statutory section and effective version, official source, notice trigger, service evidence, claimant response cutoff, motion deadline, reviewer, and unresolved applicability. Cite Tyler v. Hennepin County, 598 U.S. 631 (2023), separately from state authority. For MCL 211.78t distinguish the applicable foreclosure-year July 1 notice and following-year motion dates. Mark unresearched entries unresolved, not nationwide coverage. Include public-record request batch ID, custodian, date range, state-law or court-record route, cost estimate, response status, and missing records; federal FOIA does not govern county records."
+        },
+        {
+          "field_label": "Clerk Registry balance-verification phone log reference",
+          "input_type": "textarea",
+          "guidance": "Link worksheet 2's call log: file and case ID, official telephone source, office, staff contact, call date and time, stated balance and as-of date, pending disbursements, competing claims reported, written-record request, corroborating document, discrepancy, and next owner. Script: 'What amount remains in the registry for this case as of today, and where can I obtain the supporting record?' Keep phone information provisional until corroborated; the balance alone does not establish entitlement."
+        },
+        {
+          "field_label": "Cold-call objection-rebuttal and trigger-mail response tracker reference",
+          "input_type": "textarea",
+          "guidance": "Link worksheet 4 by case and campaign ID. Record channel, script version, objection verbatim, response used, verified recipient, follow-up, suppression, mailed and delivered dates, return reason, and attributable reply. Script: 'We are a private firm, not the county. You may verify the record and file directly; our proposal explains our optional service fee.' Score private identity, official verification, direct filing option, fee accuracy, and absence of payout promises; QA pass rate equals interactions passing every criterion divided by audited interactions. Show sample count and unavailable for no audits. Distinguish mail, calculator, and quiz assists without duplicating engagements."
+        },
+        {
+          "field_label": "8-Exhibit Attorney Co-Counsel handoff checklist reference",
+          "input_type": "textarea",
+          "guidance": "Link worksheet 5's versioned exhibit index: 1 registry balance and sale; 2 vesting and legal description; 3 interests and waterfall; 4 identity and authority; 5 bankruptcy review; 6 notices and deadline calculations; 7 executed service and representation documents; 8 route-specific claim or motion and required service evidence. For each record source, date, reviewer, complete/missing/not-applicable status, and reason. Add county-specific requirements. Reference the signed term sheet naming client, lead and local attorneys, scope, permitted separate compensation, expense payer, replacement duties, and per-state acknowledgment, deficiency, draft, and filing SLAs. Nonlawyer administrative services are not attorney co-counsel representation."
+        },
+        {
+          "field_label": "Track 01 + Track 02 cohort ROI reconciliation reference",
+          "input_type": "textarea",
+          "guidance": "Link worksheet 3 calculations and worksheet 6 reconciliation by cohort start date, as-of date, unique case ID, primary source, and assisted channels. Record actual channel spend, allocated labor, firm-borne counsel and servicing costs, screened files, qualified contacts, engagements, filings, paid files, and bank-supported collected fees. Contribution equals collected firm fees minus acquisition and servicing costs; ROI equals contribution divided by those total costs. Count each cost once, document allocation method, label zero-cost ROI unavailable, and show unpaid pipeline separately. Reconcile channel totals to unique cases and the bank ledger; compare cohorts at equal age and record differences, owners, and resolution dates."
+        },
         {
           "field_label": "File, parcel, case, and sale identifiers",
           "input_type": "text",
@@ -134,9 +190,37 @@
       "instructions": [
         "Copy only dated, supported amounts from the title waterfall. These are calculation fields, not an automated legal-priority engine.",
         "Calculate claimant allocation after superior distributions, then apply the supported contractual fee basis and applicable restrictions.",
-        "Keep claimant-borne expenses separate from firm-borne costs and reconcile every deduction to avoid double counting."
+        "Keep claimant-borne expenses separate from firm-borne costs and reconcile every deduction to avoid double counting.",
+        "Cross-reference the same master file ID across all six worksheets. Worksheet 1 owns the 20-State Tier and post-Tyler notice matrix; worksheet 2 owns Clerk Registry balance verification; worksheet 4 owns cold-call objections and trigger-mail responses; worksheet 5 owns the eight-exhibit attorney handoff; worksheets 3 and 6 own cohort calculations and reconciliation respectively. Reference those source records here rather than creating conflicting copies.",
+        "For each applicable file, resolve Tier-1 administrative versus Tier-2 judicial-motion routing, preserve the actual statutory notice and deadline evidence, and distinguish Tyler v. Hennepin County from the controlling state procedure. For Michigan, record the applicable MCL 211.78t subsection and foreclosure-year July 1 notice cutoff separately from the subsequent motion window; flag historical-sale exceptions for counsel review.",
+        "Reconcile Track 01 ledger sourcing with Track 02 trigger-mail, comparison-calculator, and inbound quiz-bridge attribution using one primary cohort per case. Use collected firm fees, actual allocated costs, and equal-age cohorts; exclude claimant funds and unpaid pipeline from realized ROI. Document missing evidence and zero denominators explicitly."
       ],
       "fields": [
+        {
+          "field_label": "20-State Tier and Tyler notice matrix reference",
+          "input_type": "textarea",
+          "guidance": "Link worksheet 1's twenty-state research rows: state, county, sale route, Tier-1 or Tier-2, statutory section and effective version, official source, notice trigger, service evidence, claimant response cutoff, motion deadline, reviewer, and unresolved applicability. Cite Tyler v. Hennepin County, 598 U.S. 631 (2023), separately from state authority. For MCL 211.78t distinguish the applicable foreclosure-year July 1 notice and following-year motion dates. Mark unresearched entries unresolved, not nationwide coverage. Include public-record request batch ID, custodian, date range, state-law or court-record route, cost estimate, response status, and missing records; federal FOIA does not govern county records."
+        },
+        {
+          "field_label": "Clerk Registry balance-verification phone log reference",
+          "input_type": "textarea",
+          "guidance": "Link worksheet 2's call log: file and case ID, official telephone source, office, staff contact, call date and time, stated balance and as-of date, pending disbursements, competing claims reported, written-record request, corroborating document, discrepancy, and next owner. Script: 'What amount remains in the registry for this case as of today, and where can I obtain the supporting record?' Keep phone information provisional until corroborated; the balance alone does not establish entitlement."
+        },
+        {
+          "field_label": "Cold-call objection-rebuttal and trigger-mail response tracker reference",
+          "input_type": "textarea",
+          "guidance": "Link worksheet 4 by case and campaign ID. Record channel, script version, objection verbatim, response used, verified recipient, follow-up, suppression, mailed and delivered dates, return reason, and attributable reply. Script: 'We are a private firm, not the county. You may verify the record and file directly; our proposal explains our optional service fee.' Score private identity, official verification, direct filing option, fee accuracy, and absence of payout promises; QA pass rate equals interactions passing every criterion divided by audited interactions. Show sample count and unavailable for no audits. Distinguish mail, calculator, and quiz assists without duplicating engagements."
+        },
+        {
+          "field_label": "8-Exhibit Attorney Co-Counsel handoff checklist reference",
+          "input_type": "textarea",
+          "guidance": "Link worksheet 5's versioned exhibit index: 1 registry balance and sale; 2 vesting and legal description; 3 interests and waterfall; 4 identity and authority; 5 bankruptcy review; 6 notices and deadline calculations; 7 executed service and representation documents; 8 route-specific claim or motion and required service evidence. For each record source, date, reviewer, complete/missing/not-applicable status, and reason. Add county-specific requirements. Reference the signed term sheet naming client, lead and local attorneys, scope, permitted separate compensation, expense payer, replacement duties, and per-state acknowledgment, deficiency, draft, and filing SLAs. Nonlawyer administrative services are not attorney co-counsel representation."
+        },
+        {
+          "field_label": "Track 01 + Track 02 cohort ROI reconciliation reference",
+          "input_type": "textarea",
+          "guidance": "Link worksheet 3 calculations and worksheet 6 reconciliation by cohort start date, as-of date, unique case ID, primary source, and assisted channels. Record actual channel spend, allocated labor, firm-borne counsel and servicing costs, screened files, qualified contacts, engagements, filings, paid files, and bank-supported collected fees. Contribution equals collected firm fees minus acquisition and servicing costs; ROI equals contribution divided by those total costs. Count each cost once, document allocation method, label zero-cost ROI unavailable, and show unpaid pipeline separately. Reconcile channel totals to unique cases and the bank ledger; compare cohorts at equal age and record differences, owners, and resolution dates."
+        },
         {
           "field_label": "Verified county surplus",
           "input_type": "number",
@@ -198,9 +282,37 @@
       "instructions": [
         "Open one log per claimant; keep sensitive identifiers in the restricted repository and reference them by file ID here.",
         "Record each contact attempt with channel, time, script version, outcome, and next action. Suppress wrong parties and declined contact across channels.",
-        "Audit actual statements against the verification packet; preserve recordings only when recording requirements are satisfied."
+        "Audit actual statements against the verification packet; preserve recordings only when recording requirements are satisfied.",
+        "Cross-reference the same master file ID across all six worksheets. Worksheet 1 owns the 20-State Tier and post-Tyler notice matrix; worksheet 2 owns Clerk Registry balance verification; worksheet 4 owns cold-call objections and trigger-mail responses; worksheet 5 owns the eight-exhibit attorney handoff; worksheets 3 and 6 own cohort calculations and reconciliation respectively. Reference those source records here rather than creating conflicting copies.",
+        "For each applicable file, resolve Tier-1 administrative versus Tier-2 judicial-motion routing, preserve the actual statutory notice and deadline evidence, and distinguish Tyler v. Hennepin County from the controlling state procedure. For Michigan, record the applicable MCL 211.78t subsection and foreclosure-year July 1 notice cutoff separately from the subsequent motion window; flag historical-sale exceptions for counsel review.",
+        "Reconcile Track 01 ledger sourcing with Track 02 trigger-mail, comparison-calculator, and inbound quiz-bridge attribution using one primary cohort per case. Use collected firm fees, actual allocated costs, and equal-age cohorts; exclude claimant funds and unpaid pipeline from realized ROI. Document missing evidence and zero denominators explicitly."
       ],
       "fields": [
+        {
+          "field_label": "20-State Tier and Tyler notice matrix reference",
+          "input_type": "textarea",
+          "guidance": "Link worksheet 1's twenty-state research rows: state, county, sale route, Tier-1 or Tier-2, statutory section and effective version, official source, notice trigger, service evidence, claimant response cutoff, motion deadline, reviewer, and unresolved applicability. Cite Tyler v. Hennepin County, 598 U.S. 631 (2023), separately from state authority. For MCL 211.78t distinguish the applicable foreclosure-year July 1 notice and following-year motion dates. Mark unresearched entries unresolved, not nationwide coverage. Include public-record request batch ID, custodian, date range, state-law or court-record route, cost estimate, response status, and missing records; federal FOIA does not govern county records."
+        },
+        {
+          "field_label": "Clerk Registry balance-verification phone log reference",
+          "input_type": "textarea",
+          "guidance": "Link worksheet 2's call log: file and case ID, official telephone source, office, staff contact, call date and time, stated balance and as-of date, pending disbursements, competing claims reported, written-record request, corroborating document, discrepancy, and next owner. Script: 'What amount remains in the registry for this case as of today, and where can I obtain the supporting record?' Keep phone information provisional until corroborated; the balance alone does not establish entitlement."
+        },
+        {
+          "field_label": "Cold-call objection-rebuttal and trigger-mail response tracker reference",
+          "input_type": "textarea",
+          "guidance": "Link worksheet 4 by case and campaign ID. Record channel, script version, objection verbatim, response used, verified recipient, follow-up, suppression, mailed and delivered dates, return reason, and attributable reply. Script: 'We are a private firm, not the county. You may verify the record and file directly; our proposal explains our optional service fee.' Score private identity, official verification, direct filing option, fee accuracy, and absence of payout promises; QA pass rate equals interactions passing every criterion divided by audited interactions. Show sample count and unavailable for no audits. Distinguish mail, calculator, and quiz assists without duplicating engagements."
+        },
+        {
+          "field_label": "8-Exhibit Attorney Co-Counsel handoff checklist reference",
+          "input_type": "textarea",
+          "guidance": "Link worksheet 5's versioned exhibit index: 1 registry balance and sale; 2 vesting and legal description; 3 interests and waterfall; 4 identity and authority; 5 bankruptcy review; 6 notices and deadline calculations; 7 executed service and representation documents; 8 route-specific claim or motion and required service evidence. For each record source, date, reviewer, complete/missing/not-applicable status, and reason. Add county-specific requirements. Reference the signed term sheet naming client, lead and local attorneys, scope, permitted separate compensation, expense payer, replacement duties, and per-state acknowledgment, deficiency, draft, and filing SLAs. Nonlawyer administrative services are not attorney co-counsel representation."
+        },
+        {
+          "field_label": "Track 01 + Track 02 cohort ROI reconciliation reference",
+          "input_type": "textarea",
+          "guidance": "Link worksheet 3 calculations and worksheet 6 reconciliation by cohort start date, as-of date, unique case ID, primary source, and assisted channels. Record actual channel spend, allocated labor, firm-borne counsel and servicing costs, screened files, qualified contacts, engagements, filings, paid files, and bank-supported collected fees. Contribution equals collected firm fees minus acquisition and servicing costs; ROI equals contribution divided by those total costs. Count each cost once, document allocation method, label zero-cost ROI unavailable, and show unpaid pipeline separately. Reconcile channel totals to unique cases and the bank ledger; compare cohorts at equal age and record differences, owners, and resolution dates."
+        },
         {
           "field_label": "Candidate and underwriting reference",
           "input_type": "text",
@@ -257,9 +369,37 @@
       "instructions": [
         "Use the current county-route checklist and counsel's file-specific requirements; document deviations rather than silently omitting exhibits.",
         "Review execution before submission and retain the actual receipt. If unsigned, rehearse with labeled synthetic or redacted documents and do not submit.",
-        "After filing, preserve deficiencies and aging events without resetting the original acceptance date."
+        "After filing, preserve deficiencies and aging events without resetting the original acceptance date.",
+        "Cross-reference the same master file ID across all six worksheets. Worksheet 1 owns the 20-State Tier and post-Tyler notice matrix; worksheet 2 owns Clerk Registry balance verification; worksheet 4 owns cold-call objections and trigger-mail responses; worksheet 5 owns the eight-exhibit attorney handoff; worksheets 3 and 6 own cohort calculations and reconciliation respectively. Reference those source records here rather than creating conflicting copies.",
+        "For each applicable file, resolve Tier-1 administrative versus Tier-2 judicial-motion routing, preserve the actual statutory notice and deadline evidence, and distinguish Tyler v. Hennepin County from the controlling state procedure. For Michigan, record the applicable MCL 211.78t subsection and foreclosure-year July 1 notice cutoff separately from the subsequent motion window; flag historical-sale exceptions for counsel review.",
+        "Reconcile Track 01 ledger sourcing with Track 02 trigger-mail, comparison-calculator, and inbound quiz-bridge attribution using one primary cohort per case. Use collected firm fees, actual allocated costs, and equal-age cohorts; exclude claimant funds and unpaid pipeline from realized ROI. Document missing evidence and zero denominators explicitly."
       ],
       "fields": [
+        {
+          "field_label": "20-State Tier and Tyler notice matrix reference",
+          "input_type": "textarea",
+          "guidance": "Link worksheet 1's twenty-state research rows: state, county, sale route, Tier-1 or Tier-2, statutory section and effective version, official source, notice trigger, service evidence, claimant response cutoff, motion deadline, reviewer, and unresolved applicability. Cite Tyler v. Hennepin County, 598 U.S. 631 (2023), separately from state authority. For MCL 211.78t distinguish the applicable foreclosure-year July 1 notice and following-year motion dates. Mark unresearched entries unresolved, not nationwide coverage. Include public-record request batch ID, custodian, date range, state-law or court-record route, cost estimate, response status, and missing records; federal FOIA does not govern county records."
+        },
+        {
+          "field_label": "Clerk Registry balance-verification phone log reference",
+          "input_type": "textarea",
+          "guidance": "Link worksheet 2's call log: file and case ID, official telephone source, office, staff contact, call date and time, stated balance and as-of date, pending disbursements, competing claims reported, written-record request, corroborating document, discrepancy, and next owner. Script: 'What amount remains in the registry for this case as of today, and where can I obtain the supporting record?' Keep phone information provisional until corroborated; the balance alone does not establish entitlement."
+        },
+        {
+          "field_label": "Cold-call objection-rebuttal and trigger-mail response tracker reference",
+          "input_type": "textarea",
+          "guidance": "Link worksheet 4 by case and campaign ID. Record channel, script version, objection verbatim, response used, verified recipient, follow-up, suppression, mailed and delivered dates, return reason, and attributable reply. Script: 'We are a private firm, not the county. You may verify the record and file directly; our proposal explains our optional service fee.' Score private identity, official verification, direct filing option, fee accuracy, and absence of payout promises; QA pass rate equals interactions passing every criterion divided by audited interactions. Show sample count and unavailable for no audits. Distinguish mail, calculator, and quiz assists without duplicating engagements."
+        },
+        {
+          "field_label": "8-Exhibit Attorney Co-Counsel handoff checklist reference",
+          "input_type": "textarea",
+          "guidance": "Link worksheet 5's versioned exhibit index: 1 registry balance and sale; 2 vesting and legal description; 3 interests and waterfall; 4 identity and authority; 5 bankruptcy review; 6 notices and deadline calculations; 7 executed service and representation documents; 8 route-specific claim or motion and required service evidence. For each record source, date, reviewer, complete/missing/not-applicable status, and reason. Add county-specific requirements. Reference the signed term sheet naming client, lead and local attorneys, scope, permitted separate compensation, expense payer, replacement duties, and per-state acknowledgment, deficiency, draft, and filing SLAs. Nonlawyer administrative services are not attorney co-counsel representation."
+        },
+        {
+          "field_label": "Track 01 + Track 02 cohort ROI reconciliation reference",
+          "input_type": "textarea",
+          "guidance": "Link worksheet 3 calculations and worksheet 6 reconciliation by cohort start date, as-of date, unique case ID, primary source, and assisted channels. Record actual channel spend, allocated labor, firm-borne counsel and servicing costs, screened files, qualified contacts, engagements, filings, paid files, and bank-supported collected fees. Contribution equals collected firm fees minus acquisition and servicing costs; ROI equals contribution divided by those total costs. Count each cost once, document allocation method, label zero-cost ROI unavailable, and show unpaid pipeline separately. Reconcile channel totals to unique cases and the bank ledger; compare cohorts at equal age and record differences, owners, and resolution dates."
+        },
         {
           "field_label": "File and packet mode",
           "input_type": "text",
@@ -316,9 +456,37 @@
       "instructions": [
         "Create one daily row for days 1-30 using Q12's roadmap; record planned output, actual output, evidence reference, spending, and unresolved owner.",
         "Reconcile weekly totals without counting the same file twice. Report shortfalls rather than weakening underwriting thresholds.",
-        "At day thirty, record Continue, Revise, or Stop and preserve existing claimant-service obligations regardless of acquisition decisions."
+        "At day thirty, record Continue, Revise, or Stop and preserve existing claimant-service obligations regardless of acquisition decisions.",
+        "Cross-reference the same master file ID across all six worksheets. Worksheet 1 owns the 20-State Tier and post-Tyler notice matrix; worksheet 2 owns Clerk Registry balance verification; worksheet 4 owns cold-call objections and trigger-mail responses; worksheet 5 owns the eight-exhibit attorney handoff; worksheets 3 and 6 own cohort calculations and reconciliation respectively. Reference those source records here rather than creating conflicting copies.",
+        "For each applicable file, resolve Tier-1 administrative versus Tier-2 judicial-motion routing, preserve the actual statutory notice and deadline evidence, and distinguish Tyler v. Hennepin County from the controlling state procedure. For Michigan, record the applicable MCL 211.78t subsection and foreclosure-year July 1 notice cutoff separately from the subsequent motion window; flag historical-sale exceptions for counsel review.",
+        "Reconcile Track 01 ledger sourcing with Track 02 trigger-mail, comparison-calculator, and inbound quiz-bridge attribution using one primary cohort per case. Use collected firm fees, actual allocated costs, and equal-age cohorts; exclude claimant funds and unpaid pipeline from realized ROI. Document missing evidence and zero denominators explicitly."
       ],
       "fields": [
+        {
+          "field_label": "20-State Tier and Tyler notice matrix reference",
+          "input_type": "textarea",
+          "guidance": "Link worksheet 1's twenty-state research rows: state, county, sale route, Tier-1 or Tier-2, statutory section and effective version, official source, notice trigger, service evidence, claimant response cutoff, motion deadline, reviewer, and unresolved applicability. Cite Tyler v. Hennepin County, 598 U.S. 631 (2023), separately from state authority. For MCL 211.78t distinguish the applicable foreclosure-year July 1 notice and following-year motion dates. Mark unresearched entries unresolved, not nationwide coverage. Include public-record request batch ID, custodian, date range, state-law or court-record route, cost estimate, response status, and missing records; federal FOIA does not govern county records."
+        },
+        {
+          "field_label": "Clerk Registry balance-verification phone log reference",
+          "input_type": "textarea",
+          "guidance": "Link worksheet 2's call log: file and case ID, official telephone source, office, staff contact, call date and time, stated balance and as-of date, pending disbursements, competing claims reported, written-record request, corroborating document, discrepancy, and next owner. Script: 'What amount remains in the registry for this case as of today, and where can I obtain the supporting record?' Keep phone information provisional until corroborated; the balance alone does not establish entitlement."
+        },
+        {
+          "field_label": "Cold-call objection-rebuttal and trigger-mail response tracker reference",
+          "input_type": "textarea",
+          "guidance": "Link worksheet 4 by case and campaign ID. Record channel, script version, objection verbatim, response used, verified recipient, follow-up, suppression, mailed and delivered dates, return reason, and attributable reply. Script: 'We are a private firm, not the county. You may verify the record and file directly; our proposal explains our optional service fee.' Score private identity, official verification, direct filing option, fee accuracy, and absence of payout promises; QA pass rate equals interactions passing every criterion divided by audited interactions. Show sample count and unavailable for no audits. Distinguish mail, calculator, and quiz assists without duplicating engagements."
+        },
+        {
+          "field_label": "8-Exhibit Attorney Co-Counsel handoff checklist reference",
+          "input_type": "textarea",
+          "guidance": "Link worksheet 5's versioned exhibit index: 1 registry balance and sale; 2 vesting and legal description; 3 interests and waterfall; 4 identity and authority; 5 bankruptcy review; 6 notices and deadline calculations; 7 executed service and representation documents; 8 route-specific claim or motion and required service evidence. For each record source, date, reviewer, complete/missing/not-applicable status, and reason. Add county-specific requirements. Reference the signed term sheet naming client, lead and local attorneys, scope, permitted separate compensation, expense payer, replacement duties, and per-state acknowledgment, deficiency, draft, and filing SLAs. Nonlawyer administrative services are not attorney co-counsel representation."
+        },
+        {
+          "field_label": "Track 01 + Track 02 cohort ROI reconciliation reference",
+          "input_type": "textarea",
+          "guidance": "Link worksheet 3 calculations and worksheet 6 reconciliation by cohort start date, as-of date, unique case ID, primary source, and assisted channels. Record actual channel spend, allocated labor, firm-borne counsel and servicing costs, screened files, qualified contacts, engagements, filings, paid files, and bank-supported collected fees. Contribution equals collected firm fees minus acquisition and servicing costs; ROI equals contribution divided by those total costs. Count each cost once, document allocation method, label zero-cost ROI unavailable, and show unpaid pipeline separately. Reconcile channel totals to unique cases and the bank ledger; compare cohorts at equal age and record differences, owners, and resolution dates."
+        },
         {
           "field_label": "Daily execution rows",
           "input_type": "textarea",

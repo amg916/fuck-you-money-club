@@ -2990,6 +2990,10 @@ CANDIDATE_PLAY_MAP: dict[int, tuple[str, ...]] = {
         "probate_docket_inheritance_arbitrage",
         "property_tax_assessment_appeal_contingency",
         "hoa_super_lien_tax_deed_redemption_arbitrage",
+        "public_filing_trigger_mail_arbitrage",
+        "identity_graph_pixel_arbitrage",
+        "competitor_intent_comparison_hijacking",
+        "social_to_search_ping_post_arbitrage",
     ),
     3: (
         "hoa_super_lien_tax_deed_redemption_arbitrage",

@@ -2326,7 +2326,7 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
         )
         self.assertEqual(
             sorted(t2_cands),
-            [3, 4, 6, 7, 8, 9, 10, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29],
+            [2, 3, 4, 6, 7, 8, 9, 10, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29],
         )
 
         # Store & UI HTML include track filters and platform risk sections while preserving persisted brand settings
@@ -2416,8 +2416,12 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
             self.assertGreaterEqual(prose_words, 1250, f"Vol 001 Q{ch['chapter_number']} prose words={prose_words}")
             self.assertGreaterEqual(len(ch.get("statutory_citations", [])), 2)
             self.assertGreaterEqual(len(ch.get("source_citations", [])), 15)
+            for cit in ch.get("source_citations", []):
+                ch_name = str(cit.get("channel") or "").strip()
+                self.assertTrue(ch_name and ch_name.lower() != "unknown", cit)
+                self.assertRegex(str(cit.get("text") or "").strip(), r'[.!?]["\')\]]*$')
 
-        # 4. Volume 002 (Surplus Funds Recovery, 86/100) 5-layer content structure & exports
+        # 4. Volume 002 (Surplus Funds Recovery, 86/100) 10/10 5-layer content structure & exports
         sc2 = get_volume_002_scorecard()
         self.assertEqual(sc2["total_score"], 86)
         self.assertEqual(get_volume_scorecard("vol-002")["candidate_number"], 2)
@@ -2426,19 +2430,41 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
         v2 = state_v2["volume"]
         self.assertEqual(v2["metadata"]["volume_number"], 2)
         self.assertEqual(v2["scorecard"]["total_score"], 86)
-        self.assertEqual(len(v2["manuscript"]["operator_plays"]), 6)
-        self.assertGreater(v2["manuscript"]["total_word_count"], 30000)
+        self.assertEqual(len(v2["manuscript"]["operator_plays"]), 10)
+        v2_play_ids = {p["id"] for p in v2["manuscript"]["operator_plays"]}
+        for required_play in (
+            "public_filing_trigger_mail_arbitrage",
+            "identity_graph_pixel_arbitrage",
+            "competitor_intent_comparison_hijacking",
+            "social_to_search_ping_post_arbitrage",
+        ):
+            self.assertIn(required_play, v2_play_ids)
+        self.assertGreater(v2["manuscript"]["total_word_count"], 55000)
         self.assertGreaterEqual(v2["manuscript"]["expert_youtube_link_count"], 180)
         self.assertEqual(len(v2["workbook"]["worksheets"]), 6)
+        v2_serialized = json.dumps({"manuscript": v2["manuscript"], "workbook": v2["workbook"]})
+        for required_marker in (
+            "Tyler v. Hennepin County",
+            "598 U.S. 631",
+            "MCL 211.78t",
+            "Rule 5.4",
+            "45-21.31",
+            "39 U.S.C.",
+        ):
+            self.assertIn(required_marker, v2_serialized)
         for ch in v2["manuscript"]["chapters"]:
             prose_words = sum(
                 len(re.findall(r"\b\w+\b", str(p)))
                 for sec in ch.get("sections", [])
                 for p in sec.get("paragraphs", [])
             )
-            self.assertGreaterEqual(prose_words, 1250, f"Vol 002 Q{ch['chapter_number']} prose words={prose_words}")
+            self.assertGreaterEqual(prose_words, 1750, f"Vol 002 Q{ch['chapter_number']} prose words={prose_words}")
             self.assertGreaterEqual(len(ch.get("statutory_citations", [])), 2)
             self.assertGreaterEqual(len(ch.get("source_citations", [])), 15)
+            for cit in ch.get("source_citations", []):
+                ch_name = str(cit.get("channel") or "").strip()
+                self.assertTrue(ch_name and ch_name.lower() != "unknown", cit)
+                self.assertRegex(str(cit.get("text") or "").strip(), r'[.!?]["\')\]]*$')
 
         pdf_v2_b = render_fymc_pdf_bytes(state_v2, "concept_b", "digital_pdf", volume_id=VOLUME_002_ID)
         self.assertTrue(validate_pdf_bytes(pdf_v2_b, "digital_pdf")["passed"])

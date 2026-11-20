@@ -1,6 +1,6 @@
 {
-  "abridged_video_count": 189,
-  "raw_video_count": 189,
+  "abridged_video_count": 261,
+  "raw_video_count": 261,
   "summary": {
     "type": "dict",
     "keys": [
@@ -22,11 +22,11 @@
       "coverage": 6
     },
     "values": {
-      "generated_at": "2026-11-19T22:19:45+00:00",
+      "generated_at": "2026-11-20T16:23:37+00:00",
       "schema_version": "1.0"
     }
   },
-  "generated_at": "2026-11-19T22:19:45Z",
+  "generated_at": "2026-11-20T16:23:37Z",
   "counts": {
     "topics": 8
   },
@@ -34,9 +34,9 @@
     {
       "topic_id": "business_model_and_economics",
       "title": "Business Model, Contingency Economics & Deal Scale",
-      "video_count": 132,
-      "tip_count": 117,
-      "channel_count": 48,
+      "video_count": 167,
+      "tip_count": 141,
+      "channel_count": 62,
       "top_sources": [
         {
           "video_id": "U_Eh790rq3o",
@@ -46,11 +46,25 @@
           "duration": "00:28:46"
         },
         {
+          "video_id": "ieI6zKICpKo",
+          "title": "$16,000 Live Cold Calling Commission",
+          "author": "Surplus Institute / David Church / Unclaimed Funds",
+          "url": "https://www.youtube.com/watch?v=ieI6zKICpKo",
+          "duration": "00:03:15"
+        },
+        {
           "video_id": "-QzABvCmtVc",
           "title": "How to Underwrite a Curative Title Deal (And Know When to Walk Away)",
           "author": "Courtney Fricke",
           "url": "https://www.youtube.com/watch?v=-QzABvCmtVc",
           "duration": "00:10:59"
+        },
+        {
+          "video_id": "R8B06ovsDXI",
+          "title": "How to start a Surplus Funds Business (45 min raw free game)",
+          "author": "Money Making Juggernaut",
+          "url": "https://www.youtube.com/watch?v=R8B06ovsDXI",
+          "duration": "00:46:25"
         },
         {
           "video_id": "TP6n8TBsCGs",
@@ -67,32 +81,18 @@
           "duration": "00:36:25"
         },
         {
+          "video_id": "p9uUtcmNpbk",
+          "title": "How to Claim Tax Sale Overages (Step-by-Step Guide)",
+          "author": "Ted Thomas",
+          "url": "https://www.youtube.com/watch?v=p9uUtcmNpbk",
+          "duration": "00:08:05"
+        },
+        {
           "video_id": "EPZo6YVIMi4",
           "title": "A Guide To Our Fee Options • Fraser and Fraser",
           "author": "Fraser and Fraser",
           "url": "https://www.youtube.com/watch?v=EPZo6YVIMi4",
           "duration": "00:05:42"
-        },
-        {
-          "video_id": "ntT8V0gnpAs",
-          "title": "The Fastest Way to Research Any Property in the United States",
-          "author": "REtipster",
-          "url": "https://www.youtube.com/watch?v=ntT8V0gnpAs",
-          "duration": "00:27:06"
-        },
-        {
-          "video_id": "Gk0D4wVEXmc",
-          "title": "Surplus Funds 101 Tutorial: Top 4 FREE Software Platforms For Your State Funds Business",
-          "author": "Surplus Funds 101",
-          "url": "https://www.youtube.com/watch?v=Gk0D4wVEXmc",
-          "duration": "00:10:42"
-        },
-        {
-          "video_id": "X-Q-bm1y9no",
-          "title": "Locating Heirs",
-          "author": "Hull & Hull LLP",
-          "url": "https://www.youtube.com/watch?v=X-Q-bm1y9no",
-          "duration": "00:03:53"
         }
       ],
       "top_timestamped_insights": [
@@ -106,12 +106,48 @@
           "verbatim_research_only": true
         },
         {
+          "tip_paraphrase_summary": "For example, they might start at back taxes of say 10,000 but the property is worth a 100,000, wouldn't you like to buy it…",
+          "category": "Pitfall / Hard No",
+          "timestamp": "00:03:53",
+          "link": "https://www.youtube.com/watch?v=d5TLZqkPX14&t=233s",
+          "video_title": "How To Claim Tax Sale Overages",
+          "author": "Ted Thomas",
+          "verbatim_research_only": true
+        },
+        {
+          "tip_paraphrase_summary": "Could get anything. So this business is reaching out to those folks, letting know the good news, there's money they could claim and see…",
+          "category": "Legal / Deadline",
+          "timestamp": "00:05:14",
+          "link": "https://www.youtube.com/watch?v=lzU09FRqmhg&t=314s",
+          "video_title": "How To Claim Surplus Funds From Foreclosure",
+          "author": "Bob Diamond - America's Tax Sale Attorney",
+          "verbatim_research_only": true
+        },
+        {
+          "tip_paraphrase_summary": "You're going to reach out to them and give them the good news that there's some money that they could claim, and see if…",
+          "category": "Legal / Deadline",
+          "timestamp": "00:02:09",
+          "link": "https://www.youtube.com/watch?v=4O5XeYwMAts&t=129s",
+          "video_title": "How To Find Tax Sale Overages",
+          "author": "Bob Diamond - America's Tax Sale Attorney",
+          "verbatim_research_only": true
+        },
+        {
           "tip_paraphrase_summary": "Well, now the state has a 10% commission cap, the commission cap, at least for me, isn't nearly as important as this bottom part…",
           "category": "Pitfall / Hard No",
           "timestamp": "00:05:20",
           "link": "https://www.youtube.com/watch?v=TTfaOSBvLDc&t=320s",
           "video_title": "State Funds Tutorial Delaware: Registering As A Property Locator For The State Of Delaware.",
           "author": "Surplus Funds 101",
+          "verbatim_research_only": true
+        },
+        {
+          "tip_paraphrase_summary": "I'll gladly put in two to four hours a day if if you really want to hit six figures a year. people I mean…",
+          "category": "Pitfall / Hard No",
+          "timestamp": "00:53:09",
+          "link": "https://www.youtube.com/watch?v=xqpLsq3JVlU&t=3189s",
+          "video_title": "Cold Calling for Surplus Funds: What Actually Works",
+          "author": "Surplus Institute / David Church / Unclaimed Funds",
           "verbatim_research_only": true
         },
         {
@@ -149,92 +185,59 @@
           "video_title": "Primary sources: Intestate probate documents",
           "author": "Five-minute genealogy",
           "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "Or more importantly if you do have to go back there again you know exactly what you did and what spellings you used or…",
-          "category": "Insider Tactic",
-          "timestamp": "00:20:25",
-          "link": "https://www.youtube.com/watch?v=KpQQ3n37XXM&t=1225s",
-          "video_title": "Research Logs: A Variety of Styles to Suit Your Project, Part 3",
-          "author": "FamilySearch",
-          "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "Worth their while anyway, so they don't mess with land at all. So that's usually why I don't opt to use an agent. However…",
-          "category": "Pitfall / Hard No",
-          "timestamp": "00:20:27",
-          "link": "https://www.youtube.com/watch?v=ntT8V0gnpAs&t=1227s",
-          "video_title": "The Fastest Way to Research Any Property in the United States",
-          "author": "REtipster",
-          "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "From me, my name is Courtney Fricky, and I'm the host of the Messy Money Podcast. I've been investing since 2014, and I have…",
-          "category": "Legal / Deadline",
-          "timestamp": "00:00:43",
-          "link": "https://www.youtube.com/watch?v=-QzABvCmtVc&t=43s",
-          "video_title": "How to Underwrite a Curative Title Deal (And Know When to Walk Away)",
-          "author": "Courtney Fricke",
-          "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "It's important that you deal with facts, not assumptions. So, let's actually talk through what that 25%'s actually worth. So, we talked about the…",
-          "category": "Non-Negotiable Rule",
-          "timestamp": "00:05:22",
-          "link": "https://www.youtube.com/watch?v=-QzABvCmtVc&t=322s",
-          "video_title": "How to Underwrite a Curative Title Deal (And Know When to Walk Away)",
-          "author": "Courtney Fricke",
-          "verbatim_research_only": true
         }
       ],
       "statutes_and_forms": [
         "form of",
-        "letters of administration",
         "form and",
-        "quiet title",
+        "letters of administration",
+        "form that",
         "form the",
+        "form below",
+        "quiet title",
+        "form is",
         "letters testamentary",
         "property Act",
-        "form partition",
-        "form that",
-        "form to",
         "form for",
+        "form partition",
+        "form to",
+        "form or",
+        "form our",
+        "form you",
+        "warranty deed",
         "affidavit of heirship",
         "court order",
         "form a",
-        "form is",
+        "form an",
         "form law",
         "form on",
-        "form or",
-        "form our",
         "form probate",
-        "form where",
-        "warranty deed",
-        "affidavit of airship",
-        "form an",
-        "form screens",
-        "form sitting",
         "form so",
         "form state",
-        "just act",
+        "form where",
+        "Information Act",
         "summary administration",
+        "affidavit of airship",
+        "form screens",
+        "form sitting",
+        "form them",
+        "form we",
+        "just act",
+        "quitclaim deed",
         "transfer on death deed",
         "AB 2016",
         "actually act",
-        "Affidavit of disent",
-        "august act",
-        "balancing act",
-        "chapter 11",
-        "Chapter 13",
-        "criminal act",
-        "due on sale"
+        "Affidavit of disent"
       ],
       "tools_and_portals": [
         "Facebook",
         "Ancestry",
-        "FamilySearch",
         "Google",
+        "FamilySearch",
         "LinkedIn",
+        "https://excesselite.com",
+        "https://www.facebook.com/groups/assetrecovery",
+        "https://www.moneymakingjug.com/inquiry",
         "http://familysearch.me/facebook",
         "http://familysearch.me/home",
         "http://familysearch.me/instagram",
@@ -255,29 +258,26 @@
         "https://www.instagram.com/thedavidwilkerson",
         "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
         "https://probatemastery.com",
+        "Excel",
         "Find a Grave",
         "http://www.youtube.com/channel/UCsc0AQkAh_2cQmxqwD6VWRw?sub_confirmation=1",
         "https://twitter.com/Ancestry",
         "https://www.ancestry.com/",
         "https://www.facebook.com/Ancestry/",
         "https://www.instagram.com/ancestry",
+        "https://www.instagram.com/erizzyy/",
         "https://www.youtube.com/user/AncestryCom",
         "MyHeritage",
-        "Excel",
         "https://facebook.com/groups/estateprofessionalsmastermind",
-        "https://www.facebook.com/groups/curativetitle",
-        "Newspapers.com",
-        "https://genealogytv.org/",
-        "https://www.patreon.com/GenealogyTV",
-        "https://www.youtube.com/@LouisianaRealEstateTalks"
+        "https://www.facebook.com/groups/curativetitle"
       ]
     },
     {
       "topic_id": "probate_and_docket_sourcing",
       "title": "County Probate Dockets, Intestate Filings & Estate Leads",
-      "video_count": 182,
-      "tip_count": 559,
-      "channel_count": 59,
+      "video_count": 253,
+      "tip_count": 587,
+      "channel_count": 86,
       "top_sources": [
         {
           "video_id": "oZiYbKNvxJY",
@@ -431,58 +431,64 @@
       "statutes_and_forms": [
         "form and",
         "form of",
+        "form below",
+        "form the",
         "letters of administration",
+        "form is",
+        "form that",
         "form to",
+        "form you",
         "form a",
         "form for",
-        "form is",
-        "form the",
         "quiet title",
-        "form that",
         "letters testamentary",
         "property Act",
         "affidavit of heirship",
         "form on",
+        "form our",
         "form partition",
+        "form so",
         "form today",
-        "form you",
+        "warranty deed",
         "affidavit of airship",
         "court order",
-        "form below",
-        "form so",
-        "form where",
-        "warranty deed",
         "form an",
-        "form as",
-        "form features",
-        "form law",
         "form or",
-        "form our",
-        "form probate",
         "form we",
-        "just act",
+        "form where",
+        "Information Act",
         "summary administration",
-        "balancing act",
-        "Chapter 13",
-        "due on sale",
-        "due on sale clause",
+        "form as",
         "form due",
-        "form from",
-        "form if"
+        "form features",
+        "form in",
+        "form law",
+        "form probate",
+        "form state",
+        "form your",
+        "just act",
+        "quitclaim deed",
+        "balancing act"
       ],
       "tools_and_portals": [
         "Facebook",
-        "Ancestry",
         "Google",
+        "Ancestry",
         "FamilySearch",
+        "https://excesselite.com",
+        "https://www.facebook.com/groups/assetrecovery",
+        "https://www.moneymakingjug.com/inquiry",
         "LinkedIn",
+        "https://www.surplusfunds101.com/freecallingscript",
+        "https://www.instagram.com/erizzyy/",
+        "https://www.youtube.com/surplusfunds101",
         "https://instagram.com/courtneyfricke",
         "https://tiktok.com/@courtney.fricke",
         "https://www.facebook.com/courtneyfricke19/",
-        "https://www.surplusfunds101.com/freecallingscript",
         "https://www.youtube.com/@courtneyfricke",
         "https://x.com/courtneyfricke",
-        "https://www.youtube.com/surplusfunds101",
+        "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
+        "https://www.instagram.com/thedavidwilkerson",
         "http://familysearch.me/facebook",
         "http://familysearch.me/home",
         "http://familysearch.me/instagram",
@@ -493,8 +499,7 @@
         "http://familysearch.me/youtubeportuguese",
         "http://familysearch.me/youtubespanish",
         "https://youtu.be/3cmj5kGm2Xw",
-        "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
-        "https://www.instagram.com/thedavidwilkerson",
+        "Excel",
         "MyHeritage",
         "Regrid",
         "http://www.youtube.com/channel/UCsc0AQkAh_2cQmxqwD6VWRw?sub_confirmation=1",
@@ -504,21 +509,16 @@
         "https://www.facebook.com/Ancestry/",
         "https://www.instagram.com/ancestry",
         "https://www.youtube.com/user/AncestryCom",
-        "Excel",
         "Find a Grave",
-        "https://excesselite.com",
-        "https://www.facebook.com/groups/assetrecovery",
-        "Newspapers.com",
-        "https://www.facebook.com/groups/curativetitle",
-        "https://www.moneymakingjug.com/inquiry"
+        "Newspapers.com"
       ]
     },
     {
       "topic_id": "unclaimed_property_and_escheat",
       "title": "State Unclaimed Property, Escheated Funds & Treasury Claims",
-      "video_count": 65,
-      "tip_count": 200,
-      "channel_count": 23,
+      "video_count": 133,
+      "tip_count": 582,
+      "channel_count": 47,
       "top_sources": [
         {
           "video_id": "bsbWDqAXsrE",
@@ -528,11 +528,39 @@
           "duration": "00:05:39"
         },
         {
+          "video_id": "bpxSOg1_xbE",
+          "title": "Top 5 Things Nobody Tells You About the Surplus Funds Recovery Business",
+          "author": "Overage Acquisition",
+          "url": "https://www.youtube.com/watch?v=bpxSOg1_xbE",
+          "duration": "00:04:27"
+        },
+        {
+          "video_id": "2e4YGOesnUY",
+          "title": "Excess Proceeds List, Tax Sale Overages List, Surplus Funds List (Free resources + 10 examples)",
+          "author": "Next Level VA",
+          "url": "https://www.youtube.com/watch?v=2e4YGOesnUY",
+          "duration": "01:19:12"
+        },
+        {
+          "video_id": "01plOr9pFjQ",
+          "title": "How to Start a Tax Overage Business | Complete and Easy to Follow Guide",
+          "author": "BizMove",
+          "url": "https://www.youtube.com/watch?v=01plOr9pFjQ",
+          "duration": "00:08:21"
+        },
+        {
           "video_id": "TTMtgtc31k4",
           "title": "How To Become An Unclaimed Property Investigator",
           "author": "Surplus Funds 101",
           "url": "https://www.youtube.com/watch?v=TTMtgtc31k4",
           "duration": "00:06:19"
+        },
+        {
+          "video_id": "v0-thxE7IK4",
+          "title": "How To Find Surplus Funds Lists In 2026 (For Free)",
+          "author": "Surplus Funds Secrets",
+          "url": "https://www.youtube.com/watch?v=v0-thxE7IK4",
+          "duration": "00:07:53"
         },
         {
           "video_id": "ijLtjR0tTd8",
@@ -542,42 +570,32 @@
           "duration": "00:17:57"
         },
         {
-          "video_id": "cMCrrRkehJk",
-          "title": "Table of Heirship Tutorial",
-          "author": "California State Controller's Office",
-          "url": "https://www.youtube.com/watch?v=cMCrrRkehJk",
-          "duration": "00:04:35"
-        },
-        {
-          "video_id": "eRjGqaIOHWI",
-          "title": "How To File a Claim - PA Treasury Unclaimed Property Tutorial",
-          "author": "PA Treasury Department",
-          "url": "https://www.youtube.com/watch?v=eRjGqaIOHWI",
-          "duration": "00:07:57"
-        },
-        {
-          "video_id": "xAiBXreoVY0",
-          "title": "California Unclaimed Funds: What You Need To Know To Be A Property Investigator #unclaimedassets",
-          "author": "Surplus Funds 101",
-          "url": "https://www.youtube.com/watch?v=xAiBXreoVY0",
-          "duration": "00:00:54"
-        },
-        {
-          "video_id": "suJSu-vn6yI",
-          "title": "How to start a Surplus Funds Recovery Business in 2026 (for beginners)",
-          "author": "Money Making Juggernaut",
-          "url": "https://www.youtube.com/watch?v=suJSu-vn6yI",
-          "duration": "00:12:35"
-        },
-        {
-          "video_id": "nI1xm6ZA2qo",
-          "title": "✅ 💰 CALIFORNIA Unclaimed Property Investigations - Tips from a Licensed Private Investigator!",
-          "author": "Security and Investigations Leadership Channel",
-          "url": "https://www.youtube.com/watch?v=nI1xm6ZA2qo",
-          "duration": "00:09:30"
+          "video_id": "6UiKunbtUa0",
+          "title": "How To Find Excess Proceeds List In 2025 (Proven Strategies)",
+          "author": "Overage Acquisition",
+          "url": "https://www.youtube.com/watch?v=6UiKunbtUa0",
+          "duration": "00:07:55"
         }
       ],
       "top_timestamped_insights": [
+        {
+          "tip_paraphrase_summary": "Have a whole bunch of people working from their homes. That's a very modern kind of business, and it works great. I like it…",
+          "category": "Pitfall / Hard No",
+          "timestamp": "00:08:54",
+          "link": "https://www.youtube.com/watch?v=lzU09FRqmhg&t=534s",
+          "video_title": "How To Claim Surplus Funds From Foreclosure",
+          "author": "Bob Diamond - America's Tax Sale Attorney",
+          "verbatim_research_only": true
+        },
+        {
+          "tip_paraphrase_summary": "You're taking a percentage of that. For us, that's generally 30 to 40% it's a free country. Set your rates at what you want.…",
+          "category": "Legal / Deadline",
+          "timestamp": "00:02:30",
+          "link": "https://www.youtube.com/watch?v=4O5XeYwMAts&t=150s",
+          "video_title": "How To Find Tax Sale Overages",
+          "author": "Bob Diamond - America's Tax Sale Attorney",
+          "verbatim_research_only": true
+        },
         {
           "tip_paraphrase_summary": "If you don't have a printer, you can always go down to the public library, you can go down to the office depot, like…",
           "category": "Pitfall / Hard No",
@@ -615,6 +633,15 @@
           "verbatim_research_only": true
         },
         {
+          "tip_paraphrase_summary": "$100,000, and our client is typically getting $60,000 to $70,000 when they work with us. And can you imagine someone who goes from losing…",
+          "category": "Legal / Deadline",
+          "timestamp": "00:03:12",
+          "link": "https://www.youtube.com/watch?v=1Pp-cjYnY2k&t=192s",
+          "video_title": "How To Become A Surplus Funds Recovery Agent",
+          "author": "Bob Diamond - America's Tax Sale Attorney",
+          "verbatim_research_only": true
+        },
+        {
           "tip_paraphrase_summary": "Or being thorough with customers and honest, it's just really strange when you see stuff like that, but this isn't an uncommon. People will…",
           "category": "Legal / Deadline",
           "timestamp": "00:07:33",
@@ -640,126 +667,99 @@
           "video_title": "State Funds Tutorial New Mexico: How To Register As A Property Locator In The State Of New Mexico.",
           "author": "Surplus Funds 101",
           "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "Not know what to say, who to talk to or what to do first, so this is gonna give you the exact step-by-step system…",
-          "category": "Insider Tactic",
-          "timestamp": "00:01:16",
-          "link": "https://www.youtube.com/watch?v=foMCyYJ4LgY&t=76s",
-          "video_title": "State Funds Tutorial: What To Do When A Deal Cancels While Working Your State Funds Business.",
-          "author": "Surplus Funds 101",
-          "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "Working on, the more you know, the more confident we will be, and the more confidence will be, the more you'll be able to…",
-          "category": "Legal / Deadline",
-          "timestamp": "00:03:57",
-          "link": "https://www.youtube.com/watch?v=TTfaOSBvLDc&t=237s",
-          "video_title": "State Funds Tutorial Delaware: Registering As A Property Locator For The State Of Delaware.",
-          "author": "Surplus Funds 101",
-          "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "Paperwork that the state gives you, and usually in the investigator handbook, they will give you literally just like these slides, step by step…",
-          "category": "Pitfall / Hard No",
-          "timestamp": "00:07:50",
-          "link": "https://www.youtube.com/watch?v=TTfaOSBvLDc&t=470s",
-          "video_title": "State Funds Tutorial Delaware: Registering As A Property Locator For The State Of Delaware.",
-          "author": "Surplus Funds 101",
-          "verbatim_research_only": true
         }
       ],
       "statutes_and_forms": [
         "form and",
-        "Form is",
-        "form today",
         "form below",
-        "form of",
+        "Form is",
         "form that",
-        "form to",
         "form you",
+        "form the",
+        "form of",
+        "form to",
+        "form today",
+        "form for",
+        "form our",
         "affidavit of heirship",
         "form as",
-        "form for",
         "form due",
-        "form from",
         "form in",
+        "form so",
+        "form we",
+        "form your",
+        "Information Act",
+        "summary administration",
+        "form a",
+        "form an",
+        "form from",
         "form it",
         "Form located",
         "form on",
         "form online",
-        "form our",
-        "form so",
-        "form the",
+        "form research",
+        "form some",
+        "form them",
         "form then",
+        "form this",
         "Form uh",
-        "form we",
         "form which",
         "form will",
         "section 3",
+        "Section 4",
         "Section 5",
         "section 6",
-        "summary administration",
-        "actually act",
-        "affidavit of airship",
-        "balancing act",
-        "court order",
-        "form 711",
-        "form a",
-        "form about",
-        "form after",
-        "form an",
-        "form are"
+        "actually act"
       ],
       "tools_and_portals": [
         "Facebook",
         "Google",
+        "https://excesselite.com",
+        "https://www.facebook.com/groups/assetrecovery",
+        "https://www.moneymakingjug.com/inquiry",
         "https://www.surplusfunds101.com/freecallingscript",
         "https://www.youtube.com/surplusfunds101",
         "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
         "https://www.instagram.com/thedavidwilkerson",
+        "https://www.instagram.com/erizzyy/",
         "Regrid",
-        "https://excesselite.com",
-        "https://www.facebook.com/groups/assetrecovery",
-        "https://www.moneymakingjug.com/inquiry",
+        "https://www.facebook.com/groups/770825015084618",
+        "https://www.instagram.com/erizzyy",
         "CSV",
+        "https://skool.com/surplusfunds",
+        "https://surplusfunds.ai",
+        "LinkedIn",
         "Ancestry",
         "DataTree",
-        "https://www.instagram.com/erizzyy",
-        "https://www.instagram.com/erizzyy/",
-        "https://www.surplusfunds101.com/contractlibrary",
-        "ClaimIt.ca.gov",
-        "ArcGIS",
         "Excel",
+        "http://YouTube.com/c/NateWoodbury",
+        "https://bobdiamond.com/",
+        "https://live.americastaxsaleattorney.com/s/WSOZag",
+        "https://moneymakingjuggernaut.setmore.com",
+        "https://pathwaystoprosperityshow.com/",
+        "https://taxsaleblueprint.com/OverageAvengers",
+        "https://www.surplusfunds101.com/contractlibrary",
+        "https://www.taxsaleblueprint.com/FreeTrainingFromBob",
+        "https://www.youtube.com/channel/UCg3-ZteFRfElxY7NFR1ZjjQ/?sub_confirmation=1",
+        "https://youtu.be/IAWBIUKJkho",
+        "ClaimIt.ca.gov",
+        "https://www.facebook.com/OverageAcquisition",
+        "https://www.instagram.com/overageacquisition/",
+        "https://www.overageacquisition.com/",
+        "https://www.youtube.com/@overageacquisition?sub_confirmation=1",
+        "ArcGIS",
         "GeoJSON",
-        "https://regrid.com/feature-service",
-        "https://www.surplusfunds101.com/signaturecourse",
-        "https://www.youtube.com/@courtneyfricke",
-        "LinkedIn",
-        "Neo4j",
-        "Shapefile",
-        "13101",
-        "Declaration Under Probate Code 13101",
-        "Fixity Pro",
-        "GDB",
-        "GeoPackage",
-        "GPKG",
-        "HB 96",
-        "http://coaching.dpasummit.com",
-        "http://delcode.delaware.gov/title12/c011/sc02/index.html",
-        "https://amzn.to/3XFq31U",
-        "https://app.regrid.com",
-        "https://app.regrid.com/",
-        "https://app.regrid.com/plans",
-        "https://app.regrid.com/profile/api"
+        "https://22pagemillionaire.com/1",
+        "https://calendly.com/surplusfundssecrets-info/30min",
+        "https://course.moneymakingjuggernaut.com/users/checkout/auth?"
       ]
     },
     {
       "topic_id": "genealogy_and_heirship_proof",
       "title": "Forensic Genealogy, Per-Stirpes Kinship & Proof of Heirship",
-      "video_count": 157,
-      "tip_count": 435,
-      "channel_count": 50,
+      "video_count": 228,
+      "tip_count": 501,
+      "channel_count": 78,
       "top_sources": [
         {
           "video_id": "7M3XZfN7814",
@@ -911,61 +911,65 @@
         }
       ],
       "statutes_and_forms": [
-        "form of",
         "form and",
+        "form below",
+        "form of",
+        "form that",
         "letters of administration",
+        "form you",
         "form a",
+        "form is",
+        "form the",
         "form to",
         "quiet title",
-        "form that",
+        "form for",
         "property Act",
         "affidavit of heirship",
-        "form for",
-        "form is",
         "form partition",
-        "form you",
         "letters testamentary",
         "affidavit of airship",
-        "form below",
         "form on",
-        "form the",
-        "court order",
-        "form features",
-        "form law",
         "form or",
-        "form probate",
+        "form our",
         "form so",
-        "form where",
-        "just act",
+        "Information Act",
         "summary administration",
         "warranty deed",
+        "court order",
+        "form an",
+        "form due",
+        "form features",
+        "form in",
+        "form law",
+        "form probate",
+        "form state",
+        "form we",
+        "form where",
+        "form your",
+        "just act",
+        "quitclaim deed",
         "balancing act",
         "Chapter 13",
-        "due on sale",
-        "form an",
-        "form as",
-        "form due",
-        "form from",
-        "form if",
-        "form in",
-        "Form located",
-        "form okay",
-        "form online"
+        "due on sale"
       ],
       "tools_and_portals": [
         "Facebook",
-        "Ancestry",
         "Google",
+        "Ancestry",
         "FamilySearch",
+        "https://excesselite.com",
+        "https://www.facebook.com/groups/assetrecovery",
+        "https://www.moneymakingjug.com/inquiry",
         "https://www.surplusfunds101.com/freecallingscript",
         "https://www.youtube.com/surplusfunds101",
         "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
+        "LinkedIn",
+        "https://www.instagram.com/thedavidwilkerson",
+        "https://www.instagram.com/erizzyy/",
         "https://instagram.com/courtneyfricke",
         "https://tiktok.com/@courtney.fricke",
         "https://www.facebook.com/courtneyfricke19/",
-        "https://www.instagram.com/thedavidwilkerson",
         "https://x.com/courtneyfricke",
-        "LinkedIn",
         "http://familysearch.me/facebook",
         "http://familysearch.me/home",
         "http://familysearch.me/instagram",
@@ -985,22 +989,18 @@
         "https://www.facebook.com/Ancestry/",
         "https://www.instagram.com/ancestry",
         "https://www.youtube.com/user/AncestryCom",
-        "https://excesselite.com",
-        "https://www.facebook.com/groups/assetrecovery",
+        "Excel",
         "Newspapers.com",
         "https://www.facebook.com/groups/curativetitle",
-        "https://www.moneymakingjug.com/inquiry",
-        "https://www.youtube.com/playlist?list=PL_t1CjX04xMsUc4TcAH_uyYDMPzzU6xRy",
-        "https://www.youtube.com/playlist?list=PL_t1CjX04xMtBIyWGIO5Mvi2FDn2f436N",
-        "Chronicling America"
+        "https://www.youtube.com/playlist?list=PL_t1CjX04xMsUc4TcAH_uyYDMPzzU6xRy"
       ]
     },
     {
       "topic_id": "skip_tracing_and_outreach",
       "title": "Skip Tracing, Ethical Heir Contact & Trust Building",
-      "video_count": 83,
-      "tip_count": 37,
-      "channel_count": 36,
+      "video_count": 122,
+      "tip_count": 67,
+      "channel_count": 51,
       "top_sources": [
         {
           "video_id": "dJ-LTFmMsTg",
@@ -1015,6 +1015,20 @@
           "author": "Money Making Juggernaut",
           "url": "https://www.youtube.com/watch?v=DMdtmrWAO6c",
           "duration": "00:17:56"
+        },
+        {
+          "video_id": "alaKJIcbbLw",
+          "title": "Cold Calling for Surplus Funds in 2025: The Script That Actually Works!",
+          "author": "Surplus Institute / David Church / Unclaimed Funds",
+          "url": "https://www.youtube.com/watch?v=alaKJIcbbLw",
+          "duration": "00:06:02"
+        },
+        {
+          "video_id": "z_Y10SDCdp4",
+          "title": "Handling objections & complaints in your Surplus Business. state funds",
+          "author": "Surplus Funds 101",
+          "url": "https://www.youtube.com/watch?v=z_Y10SDCdp4",
+          "duration": "00:06:21"
         },
         {
           "video_id": "zMW-iFWYX9w",
@@ -1043,20 +1057,6 @@
           "author": "Surplus Funds 101",
           "url": "https://www.youtube.com/watch?v=XHOqG0CY1KA",
           "duration": "00:15:18"
-        },
-        {
-          "video_id": "eiQ53kxE6ZA",
-          "title": "How To Find family members of a deceased person!",
-          "author": "Surplus Institute / David Church / Unclaimed Funds",
-          "url": "https://www.youtube.com/watch?v=eiQ53kxE6ZA",
-          "duration": "00:05:59"
-        },
-        {
-          "video_id": "GK-4kFznJlA",
-          "title": "How Ex-FBI Agents Skip Trace Anyone for Real Estate Deals",
-          "author": "Logan Fullmer",
-          "url": "https://www.youtube.com/watch?v=GK-4kFznJlA",
-          "duration": "01:19:36"
         }
       ],
       "top_timestamped_insights": [
@@ -1124,99 +1124,102 @@
           "verbatim_research_only": true
         },
         {
-          "tip_paraphrase_summary": "Confirm to make sure you have the correct address. and your phone number is also necessary and we need your social security number. This…",
-          "category": "Non-Negotiable Rule",
-          "timestamp": "00:05:32",
-          "link": "https://www.youtube.com/watch?v=o1cc3hUtIv4&t=332s",
-          "video_title": "Watch our Demo on How to Claim Your Ohio Unclaimed Funds",
-          "author": "ohiocommerce",
+          "tip_paraphrase_summary": "Hey everyone. So, a lot of people ask me about cold calling. And I've done a few recent videos on cold calling. This video…",
+          "category": "Legal / Deadline",
+          "timestamp": "00:00:00",
+          "link": "https://www.youtube.com/watch?v=alaKJIcbbLw&t=0s",
+          "video_title": "Cold Calling for Surplus Funds in 2025: The Script That Actually Works!",
+          "author": "Surplus Institute / David Church / Unclaimed Funds",
           "verbatim_research_only": true
         },
         {
-          "tip_paraphrase_summary": "That, which justifies us getting our 25% fee on such a large claim. Now, how did I get this deal? Everything was through XCES…",
-          "category": "Legal / Deadline",
-          "timestamp": "00:01:55",
-          "link": "https://www.youtube.com/watch?v=MiiGrCZZAZk&t=115s",
-          "video_title": "$200,000 California Foreclosure Heir Claim Case Study",
-          "author": "Money Making Juggernaut",
+          "tip_paraphrase_summary": "Been amazed with how accurate white pages premium and i never would have said that before how accurate they are with their reverse lookup…",
+          "category": "Pitfall / Hard No",
+          "timestamp": "00:34:54",
+          "link": "https://www.youtube.com/watch?v=4W8c0I28pxQ&t=2094s",
+          "video_title": "Free Surplus Funds Training - Indepth, full hour! SurplusFundsRiches",
+          "author": "SurplusFundsRiches",
           "verbatim_research_only": true
         },
         {
-          "tip_paraphrase_summary": "With a profile or get the business card and have it available and then clients will be able to find that information on their…",
-          "category": "Legal / Deadline",
-          "timestamp": "00:48:34",
-          "link": "https://www.youtube.com/watch?v=R5XtgGL0gkQ&t=2914s",
-          "video_title": "TGP - 13 Leslie Lawson - Forensic Genealogist",
-          "author": "The Genealogy Professional Podcast",
+          "tip_paraphrase_summary": "Keep on talking about this just make sure you're building that Rapport I've seen people I know people who have been told F you…",
+          "category": "Pitfall / Hard No",
+          "timestamp": "00:07:00",
+          "link": "https://www.youtube.com/watch?v=jNXoU7Ep1vY&t=420s",
+          "video_title": "Mastering Objection Handling: Proven Scripts for Overcoming Sales Challenges. #surplus_funds",
+          "author": "Surplus Institute / David Church / Unclaimed Funds",
           "verbatim_research_only": true
         }
       ],
       "statutes_and_forms": [
         "form of",
         "form and",
+        "form below",
         "quiet title",
-        "form partition",
         "form to",
-        "property act",
         "form a",
-        "form for",
+        "form our",
+        "form partition",
         "form that",
+        "property act",
+        "form for",
+        "form so",
+        "form the",
         "affidavit of heirship",
         "court order",
         "form on",
-        "form our",
-        "form so",
         "form where",
+        "form you",
+        "form your",
         "just act",
+        "summary administration",
+        "warranty deed",
         "affidavit of airship",
         "balancing act",
-        "form below",
+        "form an",
+        "form due",
         "form in",
         "form Law",
         "form online",
+        "form research",
         "form screens",
-        "form the",
+        "form this",
         "Form uh",
         "form which",
         "form will",
-        "form you",
-        "summary administration",
+        "Information Act",
+        "quitclaim deed",
         "transfer on death deed",
-        "warranty deed",
         "AB 2016",
-        "Affidavit of disent",
-        "Chapter 13",
-        "due on sale",
-        "estate act",
-        "form about",
-        "form after",
-        "form an",
-        "form any"
+        "Affidavit of disent"
       ],
       "tools_and_portals": [
         "Facebook",
         "Google",
         "LinkedIn",
         "https://www.surplusfunds101.com/freecallingscript",
+        "https://www.youtube.com/surplusfunds101",
+        "https://excesselite.com",
+        "https://www.facebook.com/groups/assetrecovery",
+        "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
         "https://instagram.com/courtneyfricke",
         "https://tiktok.com/@courtney.fricke",
         "https://www.facebook.com/courtneyfricke19/",
-        "https://www.youtube.com/@courtneyfricke",
-        "https://www.youtube.com/surplusfunds101",
-        "https://x.com/courtneyfricke",
-        "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
         "https://www.instagram.com/thedavidwilkerson",
+        "https://www.moneymakingjug.com/inquiry",
+        "https://www.youtube.com/@courtneyfricke",
+        "https://x.com/courtneyfricke",
         "Ancestry",
+        "Excel",
         "https://probatemastery.com",
         "https://www.facebook.com/groups/curativetitle",
+        "https://www.instagram.com/erizzyy/",
         "https://www.youtube.com/playlist?list=PL_t1CjX04xMsUc4TcAH_uyYDMPzzU6xRy",
         "https://www.youtube.com/playlist?list=PL_t1CjX04xMtBIyWGIO5Mvi2FDn2f436N",
         "DataTree",
-        "Excel",
+        "https://www.facebook.com/groups/770825015084618",
         "http://coaching.dpasummit.com",
         "https://book.dpasummit.com/free-book-page?el=Book_In_Descrip_YT&htrafficsource=youtube&hcategory=Book_Funnel_Organic",
-        "https://excesselite.com",
-        "https://www.facebook.com/groups/assetrecovery",
         "https://www.instagram.com/logan_fullmer",
         "https://www.loganfullmer.com/",
         "https://www.tiktok.com/@loganfullmer_?is_from_webapp=1&sender_device=pc",
@@ -1225,24 +1228,56 @@
         "https://www.youtube.com/playlist?list=PL_t1CjX04xMtnNcKPG5LvTh-1m2QVIrY4",
         "Uniform Partition",
         "https://facebook.com/groups/estateprofessionalsmastermind",
-        "https://www.moneymakingjug.com/inquiry",
-        "https://www.surplusfunds101.com/contractlibrary",
+        "https://skool.com/surplusfunds",
+        "https://surplusfunds.ai",
         "https://www.instagram.com/erizzyy",
+        "https://www.surplusfunds101.com/contractlibrary",
         "https://www.youtube.com/playlist?list=PL_t1CjX04xMvxWaWZ6RTzx_Bmfe2Cx2xH",
-        "PropStream",
-        "Find a Grave",
-        "FindAGrave",
-        "https://homebuyerlouisiana.com/about-us/stephen-keighery/",
-        "https://instagram.com/courtneyfricke⁠"
+        "PropStream"
       ]
     },
     {
       "topic_id": "contracts_and_compensation",
       "title": "Fee Agreements, Assignments of Interest & Escrow Disbursement",
-      "video_count": 140,
-      "tip_count": 140,
-      "channel_count": 53,
+      "video_count": 212,
+      "tip_count": 230,
+      "channel_count": 81,
       "top_sources": [
+        {
+          "video_id": "VBvaq5etzV4",
+          "title": "How to Check for Property Liens - Complete Guide",
+          "author": "Rent Own Sell",
+          "url": "https://www.youtube.com/watch?v=VBvaq5etzV4",
+          "duration": "00:02:55"
+        },
+        {
+          "video_id": "HPyO3dkjbCQ",
+          "title": "HOW TO FIND LIENS & TITLE SEARCH IN TEXAS",
+          "author": "AFX Research LLC",
+          "url": "https://www.youtube.com/watch?v=HPyO3dkjbCQ",
+          "duration": "00:03:48"
+        },
+        {
+          "video_id": "GWuQIN0aSwQ",
+          "title": "What liens remain on a title search after foreclosure?",
+          "author": "Private Investigator Videos",
+          "url": "https://www.youtube.com/watch?v=GWuQIN0aSwQ",
+          "duration": "00:02:49"
+        },
+        {
+          "video_id": "LdemHPCk0dk",
+          "title": "How to Check for Liens Before You Call About Surplus Funds",
+          "author": "Alfred Taren",
+          "url": "https://www.youtube.com/watch?v=LdemHPCk0dk",
+          "duration": "00:07:47"
+        },
+        {
+          "video_id": "KOYBZFn2k7w",
+          "title": "Overages & Surplus Fund Debt & Title Research: Not As Easy As It Seems. Two tips To Help",
+          "author": "Nick Fullmer- Overage Syndicate",
+          "url": "https://www.youtube.com/watch?v=KOYBZFn2k7w",
+          "duration": "00:06:41"
+        },
         {
           "video_id": "Qn63DtrxFts",
           "title": "How to Build a Nationwide Notary Team (Step-by-Step)",
@@ -1258,46 +1293,11 @@
           "duration": "00:11:28"
         },
         {
-          "video_id": "lKsfBAioCYU",
-          "title": "Title Search Explained: The Hidden Liens Investors Miss",
-          "author": "Logan Fullmer",
-          "url": "https://www.youtube.com/watch?v=lKsfBAioCYU",
-          "duration": "00:48:59"
-        },
-        {
-          "video_id": "FgFrlIpbscs",
-          "title": "How to Find Curative Title Deals Nobody Else Is Chasing",
-          "author": "Courtney Fricke",
-          "url": "https://www.youtube.com/watch?v=FgFrlIpbscs",
-          "duration": "00:18:50"
-        },
-        {
-          "video_id": "z6h2w5h7oTQ",
-          "title": "Before You Go From Wholesaling to Curative Title, Watch This",
-          "author": "Courtney Fricke",
-          "url": "https://www.youtube.com/watch?v=z6h2w5h7oTQ",
-          "duration": "00:21:19"
-        },
-        {
-          "video_id": "TWPIHeWyybg",
-          "title": "How To Do A Property Title Search",
-          "author": "Jamel Gibbs",
-          "url": "https://www.youtube.com/watch?v=TWPIHeWyybg",
-          "duration": "00:24:33"
-        },
-        {
-          "video_id": "GK-4kFznJlA",
-          "title": "How Ex-FBI Agents Skip Trace Anyone for Real Estate Deals",
-          "author": "Logan Fullmer",
-          "url": "https://www.youtube.com/watch?v=GK-4kFznJlA",
-          "duration": "01:19:36"
-        },
-        {
-          "video_id": "MVCNlj7HQBQ",
-          "title": "Surplus Funds Recovery: COMPLETE Document List (2026 UPDATE)",
-          "author": "Money Making Juggernaut",
-          "url": "https://www.youtube.com/watch?v=MVCNlj7HQBQ",
-          "duration": "00:13:56"
+          "video_id": "L2oKpjOoh20",
+          "title": "How to Recover Foreclosure Surplus Funds (3-Step System)",
+          "author": "Hutch & Holmes",
+          "url": "https://www.youtube.com/watch?v=L2oKpjOoh20",
+          "duration": "00:03:56"
         }
       ],
       "top_timestamped_insights": [
@@ -1320,6 +1320,15 @@
           "verbatim_research_only": true
         },
         {
+          "tip_paraphrase_summary": "Data site like Propwire.com. Then ask the office and ask the owner of the house. And treat it all as an estimate. Always say…",
+          "category": "Pitfall / Hard No",
+          "timestamp": "00:07:07",
+          "link": "https://www.youtube.com/watch?v=LdemHPCk0dk&t=427s",
+          "video_title": "How to Check for Liens Before You Call About Surplus Funds",
+          "author": "Alfred Taren",
+          "verbatim_research_only": true
+        },
+        {
           "tip_paraphrase_summary": "You probably couldn't see everything in DataTree in this particular state and county, you'd have to go find a titled company to help you…",
           "category": "Non-Negotiable Rule",
           "timestamp": "00:01:15",
@@ -1329,12 +1338,39 @@
           "verbatim_research_only": true
         },
         {
+          "tip_paraphrase_summary": "Okay, so what do you do? What do you do when you face these obstacles? First, if you find a lien and it doesn't…",
+          "category": "Legal / Deadline",
+          "timestamp": "00:02:47",
+          "link": "https://www.youtube.com/watch?v=KOYBZFn2k7w&t=167s",
+          "video_title": "Overages & Surplus Fund Debt & Title Research: Not As Easy As It Seems. Two tips To Help",
+          "author": "Nick Fullmer- Overage Syndicate",
+          "verbatim_research_only": true
+        },
+        {
+          "tip_paraphrase_summary": "If you're buying real estate in Texas, there's one thing you absolutely need to do before you close — and that's check the title.…",
+          "category": "Legal / Deadline",
+          "timestamp": "00:00:00",
+          "link": "https://www.youtube.com/watch?v=HPyO3dkjbCQ&t=0s",
+          "video_title": "HOW TO FIND LIENS & TITLE SEARCH IN TEXAS",
+          "author": "AFX Research LLC",
+          "verbatim_research_only": true
+        },
+        {
           "tip_paraphrase_summary": "Gone, antidotal knowledge. You don't know how we would write a contract or a how to negotiate to a fees or even work with…",
           "category": "Pitfall / Hard No",
           "timestamp": "00:46:48",
           "link": "https://www.youtube.com/watch?v=OrEz4Qk-EZ0&t=2808s",
           "video_title": "Differentiating Yourself From The Competition: How To HASHTAG Your ELEVATOR PITCH | #10",
           "author": "Probate Mastery",
+          "verbatim_research_only": true
+        },
+        {
+          "tip_paraphrase_summary": "Agree to pay all attorney fees out of the client's share. So Caesar's 20% fee stayed whole. On a $52,000 Florida surplus, he made…",
+          "category": "Legal / Deadline",
+          "timestamp": "00:13:29",
+          "link": "https://www.youtube.com/watch?v=DK8BPV7WVvI&t=809s",
+          "video_title": "Give Me 17 Minutes, I’ll Give You 10,000 Hours of Surplus Funds Knowledge",
+          "author": "Money Making Juggernaut",
           "verbatim_research_only": true
         },
         {
@@ -1354,109 +1390,75 @@
           "video_title": "DataTree Hacks: Find Full Legal Descriptions and Title Vesting Information",
           "author": "REtipster",
           "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "Go on any future deed, getting transferred to anybody else. And it also shows us how they were holding title together. This is another…",
-          "category": "Legal / Deadline",
-          "timestamp": "00:06:56",
-          "link": "https://www.youtube.com/watch?v=aUiod-Jy68U&t=416s",
-          "video_title": "DataTree Hacks: Find Full Legal Descriptions and Title Vesting Information",
-          "author": "REtipster",
-          "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "Is available in DataTree in every single county, throughout the entire US, because some states and counties have more information and more current information…",
-          "category": "Pitfall / Hard No",
-          "timestamp": "00:00:28",
-          "link": "https://www.youtube.com/watch?v=GfyX48eCbRY&t=28s",
-          "video_title": "DataTree Hacks: How to Do Title Research and Hire Abstractor Services",
-          "author": "REtipster",
-          "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "Before you go taking the action at all, and now don't get me wrong, knowing how to fill out a contract the proper way...…",
-          "category": "Pitfall / Hard No",
-          "timestamp": "00:01:25",
-          "link": "https://www.youtube.com/watch?v=_8vyoTSh7Rs&t=85s",
-          "video_title": "State Funds California: Registration Process & Requirements To Work Unclaimed Funds.",
-          "author": "Surplus Funds 101",
-          "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "So, what was recovered? $210,404.44 to be exact. A 25% success fee amounting for over $52,000. So, the process, super simple. We get leads…",
-          "category": "Legal / Deadline",
-          "timestamp": "00:05:18",
-          "link": "https://www.youtube.com/watch?v=MiiGrCZZAZk&t=318s",
-          "video_title": "$200,000 California Foreclosure Heir Claim Case Study",
-          "author": "Money Making Juggernaut",
-          "verbatim_research_only": true
         }
       ],
       "statutes_and_forms": [
-        "form of",
         "form and",
+        "form of",
+        "form below",
+        "form that",
         "letters of administration",
         "form to",
-        "form that",
+        "Form is",
+        "form the",
+        "form you",
         "form for",
         "letters testamentary",
         "property Act",
         "quiet title",
         "affidavit of heirship",
-        "Form is",
+        "form a",
         "form on",
+        "form our",
         "form partition",
         "court order",
-        "form a",
-        "form below",
-        "form the",
-        "form where",
-        "form you",
-        "affidavit of airship",
-        "form law",
-        "form our",
-        "form probate",
         "form so",
         "form we",
-        "just act",
+        "form where",
+        "Information Act",
         "summary administration",
         "warranty deed",
-        "balancing act",
-        "form as",
+        "affidavit of airship",
         "form due",
+        "form in",
+        "form law",
+        "form or",
+        "form probate",
+        "form state",
+        "form your",
+        "just act",
+        "balancing act",
+        "form an",
+        "form as",
         "form features",
         "form from",
-        "form if",
-        "form in",
-        "Form located",
-        "form online",
-        "form or",
-        "form screens",
-        "form sitting"
+        "form if"
       ],
       "tools_and_portals": [
         "Facebook",
         "Google",
         "Ancestry",
+        "https://excesselite.com",
+        "https://www.facebook.com/groups/assetrecovery",
         "FamilySearch",
+        "https://www.moneymakingjug.com/inquiry",
         "https://www.surplusfunds101.com/freecallingscript",
         "https://www.youtube.com/surplusfunds101",
         "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
+        "LinkedIn",
+        "https://www.instagram.com/thedavidwilkerson",
+        "https://www.instagram.com/erizzyy/",
         "https://instagram.com/courtneyfricke",
         "https://tiktok.com/@courtney.fricke",
         "https://www.facebook.com/courtneyfricke19/",
-        "https://www.instagram.com/thedavidwilkerson",
         "https://www.youtube.com/@courtneyfricke",
         "https://x.com/courtneyfricke",
-        "LinkedIn",
         "https://probatemastery.com",
-        "https://excesselite.com",
-        "https://www.facebook.com/groups/assetrecovery",
+        "Excel",
+        "https://www.facebook.com/groups/770825015084618",
         "https://www.facebook.com/groups/curativetitle",
-        "https://www.moneymakingjug.com/inquiry",
         "https://www.youtube.com/playlist?list=PL_t1CjX04xMsUc4TcAH_uyYDMPzzU6xRy",
         "https://www.youtube.com/playlist?list=PL_t1CjX04xMtBIyWGIO5Mvi2FDn2f436N",
-        "Excel",
         "http://familysearch.me/facebook",
         "http://familysearch.me/home",
         "http://familysearch.me/instagram",
@@ -1467,22 +1469,20 @@
         "http://familysearch.me/youtubeportuguese",
         "http://familysearch.me/youtubespanish",
         "https://facebook.com/groups/estateprofessionalsmastermind",
+        "https://www.instagram.com/erizzyy",
         "https://youtu.be/3cmj5kGm2Xw",
         "MyHeritage",
         "Find a Grave",
         "http://coaching.dpasummit.com",
-        "https://book.dpasummit.com/free-book-page?el=Book_In_Descrip_YT&htrafficsource=youtube&hcategory=Book_Funnel_Organic",
-        "https://www.instagram.com/logan_fullmer",
-        "https://www.loganfullmer.com/",
-        "https://www.tiktok.com/@loganfullmer_?is_from_webapp=1&sender_device=pc"
+        "https://book.dpasummit.com/free-book-page?el=Book_In_Descrip_YT&htrafficsource=youtube&hcategory=Book_Funnel_Organic"
       ]
     },
     {
       "topic_id": "statutory_caps_and_licensing",
       "title": "State Fee Caps, Waiting Periods, PI Licensing & UPL Rules",
-      "video_count": 180,
-      "tip_count": 152,
-      "channel_count": 59,
+      "video_count": 252,
+      "tip_count": 204,
+      "channel_count": 87,
       "top_sources": [
         {
           "video_id": "TA4mtGUeNo8",
@@ -1492,11 +1492,32 @@
           "duration": "00:44:21"
         },
         {
+          "video_id": "8-8koApqnYA",
+          "title": "How to Start a Surplus Funds Business in 2026 (Step by Step)",
+          "author": "Alfred Taren",
+          "url": "https://www.youtube.com/watch?v=8-8koApqnYA",
+          "duration": "00:11:45"
+        },
+        {
+          "video_id": "4W8c0I28pxQ",
+          "title": "Free Surplus Funds Training - Indepth, full hour! SurplusFundsRiches",
+          "author": "SurplusFundsRiches",
+          "url": "https://www.youtube.com/watch?v=4W8c0I28pxQ",
+          "duration": "01:05:35"
+        },
+        {
           "video_id": "n8jP0gweIR4",
           "title": "Affidavits of Heirship and Other Texas Probate Pitfalls | TPRE Podcast Ep 3",
           "author": "Texas Probate Real Estate",
           "url": "https://www.youtube.com/watch?v=n8jP0gweIR4",
           "duration": "00:45:22"
+        },
+        {
+          "video_id": "ouYE5P3UJdQ",
+          "title": "Surplus Funds Claim Process Explained (What Nobody Tells You)",
+          "author": "Alfred Taren",
+          "url": "https://www.youtube.com/watch?v=ouYE5P3UJdQ",
+          "duration": "00:17:21"
         },
         {
           "video_id": "Xe2NEfqDwTQ",
@@ -1513,35 +1534,23 @@
           "duration": "00:16:26"
         },
         {
-          "video_id": "nI1xm6ZA2qo",
-          "title": "✅ 💰 CALIFORNIA Unclaimed Property Investigations - Tips from a Licensed Private Investigator!",
-          "author": "Security and Investigations Leadership Channel",
-          "url": "https://www.youtube.com/watch?v=nI1xm6ZA2qo",
-          "duration": "00:09:30"
-        },
-        {
-          "video_id": "bLXMXvhuz6k",
-          "title": "Transkribus Webinar for Beginners (English)",
-          "author": "Transkribus",
-          "url": "https://www.youtube.com/watch?v=bLXMXvhuz6k",
-          "duration": "01:02:35"
-        },
-        {
-          "video_id": "CyAfgfoF-eo",
-          "title": "Probate Part 2, Wills by James Tanner",
-          "author": "BYU Library Family History Center",
-          "url": "https://www.youtube.com/watch?v=CyAfgfoF-eo",
-          "duration": "00:16:48"
-        },
-        {
-          "video_id": "xAiBXreoVY0",
-          "title": "California Unclaimed Funds: What You Need To Know To Be A Property Investigator #unclaimedassets",
-          "author": "Surplus Funds 101",
-          "url": "https://www.youtube.com/watch?v=xAiBXreoVY0",
-          "duration": "00:00:54"
+          "video_id": "F4T35UFWesQ",
+          "title": "How To File A Surplus Funds Claim WITHOUT an Attorney (3 Things)",
+          "author": "Money Making Juggernaut",
+          "url": "https://www.youtube.com/watch?v=F4T35UFWesQ",
+          "duration": "00:05:50"
         }
       ],
       "top_timestamped_insights": [
+        {
+          "tip_paraphrase_summary": "Their time, so know your time zone. Also, be aware of the age of the person you're calling. If they're elderly, you may want…",
+          "category": "Pitfall / Hard No",
+          "timestamp": "00:00:56",
+          "link": "https://www.youtube.com/watch?v=CqlbwGPmv64&t=56s",
+          "video_title": "Surplus Funds Cold Calling Script: How to Not Sound Like a Scam",
+          "author": "Alfred Taren",
+          "verbatim_research_only": true
+        },
         {
           "tip_paraphrase_summary": "Go take a look at that. I know I just gave you a three different website links... Yes. Or probably say, Oh my God…",
           "category": "Pitfall / Hard No",
@@ -1570,6 +1579,15 @@
           "verbatim_research_only": true
         },
         {
+          "tip_paraphrase_summary": "You're going to be consed, learn. >> Be consistent, make the mistakes, and get through the nos to get the yeses. You will I…",
+          "category": "Pitfall / Hard No",
+          "timestamp": "00:20:09",
+          "link": "https://www.youtube.com/watch?v=vd__NHmQYgM&t=1209s",
+          "video_title": "8 Surplus Funds Deals Within 3 Months of Starting The Business",
+          "author": "Nick Fullmer- Overage Syndicate",
+          "verbatim_research_only": true
+        },
+        {
           "tip_paraphrase_summary": "Grab that right now and start using it immediately to go get deals, but with that being said, you guys... Let's get into the…",
           "category": "Non-Negotiable Rule",
           "timestamp": "00:01:12",
@@ -1585,6 +1603,15 @@
           "link": "https://www.youtube.com/watch?v=GrE0UUh_3BI&t=851s",
           "video_title": "Claiming your Unclaimed Funds",
           "author": "ohiocommerce",
+          "verbatim_research_only": true
+        },
+        {
+          "tip_paraphrase_summary": "Be able to do everything that's needed in regards to legal filings in the county, appraisers, working with trustees, and everything that needs to…",
+          "category": "Legal / Deadline",
+          "timestamp": "00:03:17",
+          "link": "https://www.youtube.com/watch?v=KKKIgl--DNo&t=197s",
+          "video_title": "Foreclosure - Surplus Funds Recovery - Attorney Assistance",
+          "author": "Attorney Jack",
           "verbatim_research_only": true
         },
         {
@@ -1604,91 +1631,70 @@
           "video_title": "Calling probates, probate marketing, and selling probate property: Live probate class w/ Bill Gross",
           "author": "Probate Mastery",
           "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "Are they with the wrong attorney? They're just following law. Like you, that any attorney is going to look at succession law and say…",
-          "category": "Pitfall / Hard No",
-          "timestamp": "00:01:59",
-          "link": "https://www.youtube.com/watch?v=OrEz4Qk-EZ0&t=119s",
-          "video_title": "Differentiating Yourself From The Competition: How To HASHTAG Your ELEVATOR PITCH | #10",
-          "author": "Probate Mastery",
-          "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "Generally even the successful ones are not great business people. They might be great attorneys. They might really know the law and how to…",
-          "category": "Pitfall / Hard No",
-          "timestamp": "00:38:20",
-          "link": "https://www.youtube.com/watch?v=TA4mtGUeNo8&t=2300s",
-          "video_title": "Probate Data and Property Lookups: Live Real Estate Coaching with Probate Mastery",
-          "author": "Probate Mastery",
-          "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "Now, if you want an email. You know, edit and send to an attorney, they'll find every little mistake in the air and that's…",
-          "category": "Pitfall / Hard No",
-          "timestamp": "00:39:31",
-          "link": "https://www.youtube.com/watch?v=TA4mtGUeNo8&t=2371s",
-          "video_title": "Probate Data and Property Lookups: Live Real Estate Coaching with Probate Mastery",
-          "author": "Probate Mastery",
-          "verbatim_research_only": true
         }
       ],
       "statutes_and_forms": [
         "form and",
         "form of",
+        "form below",
+        "form the",
         "letters of administration",
+        "form is",
+        "form that",
         "form to",
+        "form you",
         "form a",
         "form for",
-        "form is",
-        "form the",
         "quiet title",
-        "form that",
         "letters testamentary",
         "property Act",
         "affidavit of heirship",
         "form on",
+        "form our",
         "form partition",
+        "form so",
         "form today",
-        "form you",
+        "warranty deed",
         "affidavit of airship",
         "court order",
-        "form below",
-        "form so",
-        "form where",
-        "warranty deed",
         "form an",
-        "form as",
-        "form features",
-        "form law",
         "form or",
-        "form our",
-        "form probate",
         "form we",
-        "just act",
+        "form where",
+        "Information Act",
         "summary administration",
-        "balancing act",
-        "Chapter 13",
-        "due on sale",
-        "due on sale clause",
+        "form as",
         "form due",
-        "form from",
-        "form if"
+        "form features",
+        "form in",
+        "form law",
+        "form probate",
+        "form state",
+        "form your",
+        "just act",
+        "quitclaim deed",
+        "balancing act"
       ],
       "tools_and_portals": [
         "Facebook",
-        "Ancestry",
         "Google",
+        "Ancestry",
         "FamilySearch",
+        "https://excesselite.com",
+        "https://www.facebook.com/groups/assetrecovery",
+        "https://www.moneymakingjug.com/inquiry",
         "LinkedIn",
+        "https://www.surplusfunds101.com/freecallingscript",
+        "https://www.instagram.com/erizzyy/",
+        "https://www.youtube.com/surplusfunds101",
         "https://instagram.com/courtneyfricke",
         "https://tiktok.com/@courtney.fricke",
         "https://www.facebook.com/courtneyfricke19/",
-        "https://www.surplusfunds101.com/freecallingscript",
         "https://www.youtube.com/@courtneyfricke",
         "https://x.com/courtneyfricke",
-        "https://www.youtube.com/surplusfunds101",
         "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
+        "https://www.instagram.com/thedavidwilkerson",
+        "Excel",
         "http://familysearch.me/facebook",
         "http://familysearch.me/home",
         "http://familysearch.me/instagram",
@@ -1698,7 +1704,6 @@
         "http://familysearch.me/youtubeeurope",
         "http://familysearch.me/youtubeportuguese",
         "http://familysearch.me/youtubespanish",
-        "https://www.instagram.com/thedavidwilkerson",
         "https://youtu.be/3cmj5kGm2Xw",
         "MyHeritage",
         "Regrid",
@@ -1709,22 +1714,24 @@
         "https://www.facebook.com/Ancestry/",
         "https://www.instagram.com/ancestry",
         "https://www.youtube.com/user/AncestryCom",
-        "Excel",
         "Find a Grave",
-        "https://excesselite.com",
-        "https://www.facebook.com/groups/assetrecovery",
-        "Newspapers.com",
-        "https://www.facebook.com/groups/curativetitle",
-        "https://www.moneymakingjug.com/inquiry"
+        "Newspapers.com"
       ]
     },
     {
       "topic_id": "automation_and_small_team_ops",
       "title": "Docket Automation, AI Abstracting & Small-Team Operations",
-      "video_count": 139,
-      "tip_count": 166,
-      "channel_count": 48,
+      "video_count": 208,
+      "tip_count": 178,
+      "channel_count": 75,
       "top_sources": [
+        {
+          "video_id": "01plOr9pFjQ",
+          "title": "How to Start a Tax Overage Business | Complete and Easy to Follow Guide",
+          "author": "BizMove",
+          "url": "https://www.youtube.com/watch?v=01plOr9pFjQ",
+          "duration": "00:08:21"
+        },
         {
           "video_id": "NMsRlUhQbUI",
           "title": "Best Real Estate Data APIs for Building a Deal Finder App",
@@ -1773,13 +1780,6 @@
           "author": "Regrid",
           "url": "https://www.youtube.com/watch?v=MdSAG5LMn4I",
           "duration": "00:02:02"
-        },
-        {
-          "video_id": "EToN9mWFZWc",
-          "title": "Regrid Parcel Data - Overview & Coverage",
-          "author": "Regrid",
-          "url": "https://www.youtube.com/watch?v=EToN9mWFZWc",
-          "duration": "00:35:57"
         }
       ],
       "top_timestamped_insights": [
@@ -1876,59 +1876,63 @@
       ],
       "statutes_and_forms": [
         "form and",
+        "form below",
         "form of",
+        "form that",
+        "form is",
+        "form the",
         "letters of administration",
         "form to",
-        "form is",
-        "form that",
+        "form you",
         "form for",
-        "form the",
+        "form our",
+        "form so",
         "form today",
         "letters testamentary",
+        "form a",
         "form on",
-        "form so",
+        "form or",
+        "form we",
         "form where",
-        "form you",
         "quiet title",
         "affidavit of heirship",
         "court order",
-        "form a",
         "form as",
-        "form below",
-        "form or",
-        "form our",
+        "form due",
         "form probate",
-        "form we",
+        "form your",
+        "Information Act",
+        "summary administration",
         "affidavit of airship",
         "balancing act",
-        "form due",
+        "form an",
         "form from",
         "form if",
+        "form in",
         "form it",
         "form law",
         "Form located",
         "form okay",
         "form online",
-        "form screens",
-        "form sitting",
-        "form then",
-        "form they",
-        "Form uh",
-        "form which"
+        "form research"
       ],
       "tools_and_portals": [
         "Facebook",
         "Google",
         "Ancestry",
         "FamilySearch",
+        "https://excesselite.com",
+        "https://www.facebook.com/groups/assetrecovery",
+        "https://www.moneymakingjug.com/inquiry",
         "https://www.surplusfunds101.com/freecallingscript",
         "https://www.youtube.com/surplusfunds101",
         "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
         "https://www.instagram.com/thedavidwilkerson",
         "LinkedIn",
+        "https://www.instagram.com/erizzyy/",
+        "Excel",
         "Regrid",
         "https://probatemastery.com",
-        "Excel",
         "DataTree",
         "http://familysearch.me/facebook",
         "http://familysearch.me/home",
@@ -1939,8 +1943,7 @@
         "http://familysearch.me/youtubeeurope",
         "http://familysearch.me/youtubeportuguese",
         "http://familysearch.me/youtubespanish",
-        "https://excesselite.com",
-        "https://www.facebook.com/groups/assetrecovery",
+        "https://www.facebook.com/groups/770825015084618",
         "https://youtu.be/3cmj5kGm2Xw",
         "CSV",
         "http://www.youtube.com/channel/UCsc0AQkAh_2cQmxqwD6VWRw?sub_confirmation=1",
@@ -1949,14 +1952,11 @@
         "https://www.ancestry.com/",
         "https://www.facebook.com/Ancestry/",
         "https://www.instagram.com/ancestry",
-        "https://www.moneymakingjug.com/inquiry",
+        "https://www.instagram.com/erizzyy",
         "https://www.youtube.com/@courtneyfricke",
         "https://www.youtube.com/user/AncestryCom",
         "Newspapers.com",
-        "MyHeritage",
-        "https://instagram.com/courtneyfricke",
-        "https://probatemastery.com/how-to-jv-a-deal-in-probate-live-probate-real-estate-training-chad-corbett/",
-        "https://tiktok.com/@courtney.fricke"
+        "MyHeritage"
       ]
     }
   ],
@@ -1968,9 +1968,9 @@
       "headline": "Heir location is paid on contingency, never on up-front fees.",
       "summary": "Across the corpus, operators converge on a pure contingency model: the heir pays nothing out of pocket, the locator advances all research cost, and the fee is a negotiated percentage released only when the estate or state agency actually disburses funds. Charging an heir an advance fee is treated as the single clearest marker of a predatory or unlicensed operator.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 48,
-      "video_count": 132,
-      "corroborating_tip_count": 117,
+      "channel_count": 62,
+      "video_count": 167,
+      "corroborating_tip_count": 141,
       "supporting_links": [
         {
           "video_title": "State Funds Tutorial New Mexico: How To Register As A Property Locator In The State Of New Mexico.",
@@ -1979,34 +1979,34 @@
           "link": "https://www.youtube.com/watch?v=6yIKsJMj6Gk&t=194s"
         },
         {
+          "video_title": "How To Claim Tax Sale Overages",
+          "author": "Ted Thomas",
+          "timestamp": "00:03:53",
+          "link": "https://www.youtube.com/watch?v=d5TLZqkPX14&t=233s"
+        },
+        {
+          "video_title": "How To Claim Surplus Funds From Foreclosure",
+          "author": "Bob Diamond - America's Tax Sale Attorney",
+          "timestamp": "00:05:14",
+          "link": "https://www.youtube.com/watch?v=lzU09FRqmhg&t=314s"
+        },
+        {
+          "video_title": "How To Find Tax Sale Overages",
+          "author": "Bob Diamond - America's Tax Sale Attorney",
+          "timestamp": "00:02:09",
+          "link": "https://www.youtube.com/watch?v=4O5XeYwMAts&t=129s"
+        },
+        {
           "video_title": "State Funds Tutorial Delaware: Registering As A Property Locator For The State Of Delaware.",
           "author": "Surplus Funds 101",
           "timestamp": "00:05:20",
           "link": "https://www.youtube.com/watch?v=TTfaOSBvLDc&t=320s"
         },
         {
-          "video_title": "DataTree Hacks: TaxSource Reports and Property Tax Verification",
-          "author": "REtipster",
-          "timestamp": "00:06:16",
-          "link": "https://www.youtube.com/watch?v=2ThZ61aal9k&t=376s"
-        },
-        {
-          "video_title": "Feature Service Product Demo",
-          "author": "Regrid",
-          "timestamp": "00:03:10",
-          "link": "https://www.youtube.com/watch?v=X-_cLY3_96Y&t=190s"
-        },
-        {
-          "video_title": "I got free probate leads from the courthouse! Plus SOI and referral marketing | Podcast Episode 85",
-          "author": "Probate Mastery",
-          "timestamp": "00:29:17",
-          "link": "https://www.youtube.com/watch?v=1BlzkVdGPAo&t=1757s"
-        },
-        {
-          "video_title": "Primary sources: Intestate probate documents",
-          "author": "Five-minute genealogy",
-          "timestamp": "00:02:43",
-          "link": "https://www.youtube.com/watch?v=pGyFJ46jwTE&t=163s"
+          "video_title": "Cold Calling for Surplus Funds: What Actually Works",
+          "author": "Surplus Institute / David Church / Unclaimed Funds",
+          "timestamp": "00:53:09",
+          "link": "https://www.youtube.com/watch?v=xqpLsq3JVlU&t=3189s"
         }
       ],
       "caveat": "Consensus among the sampled operators — not legal advice and not a substitute for the governing statute in the reader's jurisdiction."
@@ -2018,9 +2018,9 @@
       "headline": "Fresh county probate and intestate dockets outperform purchased lead lists.",
       "summary": "Practitioners consistently build pipeline from newly filed probate and administration matters pulled directly from county clerk portals rather than resold lists. Filings naming an administrator but no located heirs, and estates sitting open past the local notice period, are the recurring high-value signal.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 59,
-      "video_count": 182,
-      "corroborating_tip_count": 559,
+      "channel_count": 86,
+      "video_count": 253,
+      "corroborating_tip_count": 587,
       "supporting_links": [
         {
           "video_title": "Unclaimed Estates & Abandoned Properties in Spain - tracing Heirs Worldwide",
@@ -2068,10 +2068,22 @@
       "headline": "State unclaimed-property and escheat databases supply the repeatable volume.",
       "summary": "Every state treasury or controller maintains a searchable unclaimed-property register, and the consensus workflow is to cross-reference deceased owners there against probate filings. Volume comes from systematic register sweeps; size comes from the rarer escheated estate, surplus-funds and safe-deposit categories.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 23,
-      "video_count": 65,
-      "corroborating_tip_count": 200,
+      "channel_count": 47,
+      "video_count": 133,
+      "corroborating_tip_count": 582,
       "supporting_links": [
+        {
+          "video_title": "How To Claim Surplus Funds From Foreclosure",
+          "author": "Bob Diamond - America's Tax Sale Attorney",
+          "timestamp": "00:08:54",
+          "link": "https://www.youtube.com/watch?v=lzU09FRqmhg&t=534s"
+        },
+        {
+          "video_title": "How To Find Tax Sale Overages",
+          "author": "Bob Diamond - America's Tax Sale Attorney",
+          "timestamp": "00:02:30",
+          "link": "https://www.youtube.com/watch?v=4O5XeYwMAts&t=150s"
+        },
         {
           "video_title": "State Funds California: Registration Process & Requirements To Work Unclaimed Funds.",
           "author": "Surplus Funds 101",
@@ -2095,18 +2107,6 @@
           "author": "Surplus Funds 101",
           "timestamp": "00:00:48",
           "link": "https://www.youtube.com/watch?v=t4w_wFimZ9A&t=48s"
-        },
-        {
-          "video_title": "State Funds Tutorial: What To Do When A Deal Cancels While Working Your State Funds Business.",
-          "author": "Surplus Funds 101",
-          "timestamp": "00:07:33",
-          "link": "https://www.youtube.com/watch?v=foMCyYJ4LgY&t=453s"
-        },
-        {
-          "video_title": "State Funds California: Registration Process & Requirements To Work Unclaimed Funds.",
-          "author": "Surplus Funds 101",
-          "timestamp": "00:02:22",
-          "link": "https://www.youtube.com/watch?v=_8vyoTSh7Rs&t=142s"
         }
       ],
       "caveat": "Consensus among the sampled operators — not legal advice and not a substitute for the governing statute in the reader's jurisdiction."
@@ -2118,9 +2118,9 @@
       "headline": "The deliverable is a document-backed kinship chain, not a name on a list.",
       "summary": "Operators agree that claims succeed or fail on the evidentiary chain: each generational link supported by vital records, each branch mapped per stirpes, and every gap closed before contact. Tree hints from consumer genealogy sites are treated as leads to verify, never as proof to submit.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 50,
-      "video_count": 157,
-      "corroborating_tip_count": 435,
+      "channel_count": 78,
+      "video_count": 228,
+      "corroborating_tip_count": 501,
       "supporting_links": [
         {
           "video_title": "Resolving Heirs' Property",
@@ -2168,9 +2168,9 @@
       "headline": "Verify identity before contact, then lead with restraint, not the dollar figure.",
       "summary": "The recurring outreach pattern is: skip trace to a confirmed current address and phone, open by letter or a short calm call, state that funds may be owed to the family without naming an amount, and give the heir a way to independently verify the operator. Pressure tactics and inflated figures are consistently reported as the fastest way to lose a signed file.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 36,
-      "video_count": 83,
-      "corroborating_tip_count": 37,
+      "channel_count": 51,
+      "video_count": 122,
+      "corroborating_tip_count": 67,
       "supporting_links": [
         {
           "video_title": "State Funds Tutorial: 5 Tech Tools For Your State Funds Business",
@@ -2218,9 +2218,9 @@
       "headline": "No work proceeds without a signed fee agreement and third-party escrow.",
       "summary": "Consensus practice is a plain-language, notarized or e-signed agreement that names the estate, states the percentage, discloses the heir's right to claim independently, and routes funds through attorney trust or licensed escrow so the locator never holds the heir's money directly.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 53,
-      "video_count": 140,
-      "corroborating_tip_count": 140,
+      "channel_count": 81,
+      "video_count": 212,
+      "corroborating_tip_count": 230,
       "supporting_links": [
         {
           "video_title": "DataTree Hacks: Find Full Legal Descriptions and Title Vesting Information",
@@ -2235,28 +2235,28 @@
           "link": "https://www.youtube.com/watch?v=t4w_wFimZ9A&t=181s"
         },
         {
+          "video_title": "How to Check for Liens Before You Call About Surplus Funds",
+          "author": "Alfred Taren",
+          "timestamp": "00:07:07",
+          "link": "https://www.youtube.com/watch?v=LdemHPCk0dk&t=427s"
+        },
+        {
           "video_title": "DataTree Hacks: How to Do Title Research and Hire Abstractor Services",
           "author": "REtipster",
           "timestamp": "00:01:15",
           "link": "https://www.youtube.com/watch?v=GfyX48eCbRY&t=75s"
         },
         {
-          "video_title": "Differentiating Yourself From The Competition: How To HASHTAG Your ELEVATOR PITCH | #10",
-          "author": "Probate Mastery",
-          "timestamp": "00:46:48",
-          "link": "https://www.youtube.com/watch?v=OrEz4Qk-EZ0&t=2808s"
+          "video_title": "Overages & Surplus Fund Debt & Title Research: Not As Easy As It Seems. Two tips To Help",
+          "author": "Nick Fullmer- Overage Syndicate",
+          "timestamp": "00:02:47",
+          "link": "https://www.youtube.com/watch?v=KOYBZFn2k7w&t=167s"
         },
         {
-          "video_title": "How to JV a probate deal with the estate as your partner | Probate Investing | Chad Corbett Probate",
-          "author": "Probate Mastery",
-          "timestamp": "00:11:20",
-          "link": "https://www.youtube.com/watch?v=coUYfNbBvq0&t=680s"
-        },
-        {
-          "video_title": "DataTree Hacks: Find Full Legal Descriptions and Title Vesting Information",
-          "author": "REtipster",
-          "timestamp": "00:02:49",
-          "link": "https://www.youtube.com/watch?v=aUiod-Jy68U&t=169s"
+          "video_title": "HOW TO FIND LIENS & TITLE SEARCH IN TEXAS",
+          "author": "AFX Research LLC",
+          "timestamp": "00:00:00",
+          "link": "https://www.youtube.com/watch?v=HPyO3dkjbCQ&t=0s"
         }
       ],
       "caveat": "Consensus among the sampled operators — not legal advice and not a substitute for the governing statute in the reader's jurisdiction."
@@ -2268,10 +2268,16 @@
       "headline": "Fee caps, waiting periods and licensing are decided per state, before the first call.",
       "summary": "Operators repeatedly stress that the governing rules — percentage caps on unclaimed-property recoveries, mandatory waiting periods after escheat or sale, private-investigator licensing triggers, and the line against practicing law — vary by jurisdiction and must be read in the local statute for every file rather than generalized from another state.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 59,
-      "video_count": 180,
-      "corroborating_tip_count": 152,
+      "channel_count": 87,
+      "video_count": 252,
+      "corroborating_tip_count": 204,
       "supporting_links": [
+        {
+          "video_title": "Surplus Funds Cold Calling Script: How to Not Sound Like a Scam",
+          "author": "Alfred Taren",
+          "timestamp": "00:00:56",
+          "link": "https://www.youtube.com/watch?v=CqlbwGPmv64&t=56s"
+        },
         {
           "video_title": "State Funds Tutorial Delaware: Registering As A Property Locator For The State Of Delaware.",
           "author": "Surplus Funds 101",
@@ -2291,22 +2297,16 @@
           "link": "https://www.youtube.com/watch?v=whDzDrFNADQ&t=983s"
         },
         {
+          "video_title": "8 Surplus Funds Deals Within 3 Months of Starting The Business",
+          "author": "Nick Fullmer- Overage Syndicate",
+          "timestamp": "00:20:09",
+          "link": "https://www.youtube.com/watch?v=vd__NHmQYgM&t=1209s"
+        },
+        {
           "video_title": "State Funds Tutorial Delaware: Registering As A Property Locator For The State Of Delaware.",
           "author": "Surplus Funds 101",
           "timestamp": "00:01:12",
           "link": "https://www.youtube.com/watch?v=TTfaOSBvLDc&t=72s"
-        },
-        {
-          "video_title": "Claiming your Unclaimed Funds",
-          "author": "ohiocommerce",
-          "timestamp": "00:14:11",
-          "link": "https://www.youtube.com/watch?v=GrE0UUh_3BI&t=851s"
-        },
-        {
-          "video_title": "✅ 💰 CALIFORNIA Unclaimed Property Investigations - Tips from a Licensed Private Investigator!",
-          "author": "Security and Investigations Leadership Channel",
-          "timestamp": "00:08:29",
-          "link": "https://www.youtube.com/watch?v=nI1xm6ZA2qo&t=509s"
         }
       ],
       "caveat": "Consensus among the sampled operators — not legal advice and not a substitute for the governing statute in the reader's jurisdiction."
@@ -2318,9 +2318,9 @@
       "headline": "Automated docket monitoring plus AI abstracting lets one or two people run real volume.",
       "summary": "The operational consensus is to automate the repetitive layer — scheduled docket and register pulls, structured intake into a sheet or CRM, AI-assisted abstracting of filings — while keeping genealogy judgment, heir contact and contract execution human. That split is what keeps a two-person shop competitive against staffed firms.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 48,
-      "video_count": 139,
-      "corroborating_tip_count": 166,
+      "channel_count": 75,
+      "video_count": 208,
+      "corroborating_tip_count": 178,
       "supporting_links": [
         {
           "video_title": "State Funds Tutorial: 5 Tech Tools For Your State Funds Business",
@@ -2378,6 +2378,12 @@
       "priority": "high",
       "corpus_references": [
         {
+          "video_title": "Surplus Funds Cold Calling Script: How to Not Sound Like a Scam",
+          "author": "Alfred Taren",
+          "timestamp": "00:00:56",
+          "link": "https://www.youtube.com/watch?v=CqlbwGPmv64&t=56s"
+        },
+        {
           "video_title": "State Funds Tutorial Delaware: Registering As A Property Locator For The State Of Delaware.",
           "author": "Surplus Funds 101",
           "timestamp": "00:03:31",
@@ -2394,12 +2400,6 @@
           "author": "FarmersGov",
           "timestamp": "00:16:23",
           "link": "https://www.youtube.com/watch?v=whDzDrFNADQ&t=983s"
-        },
-        {
-          "video_title": "State Funds Tutorial Delaware: Registering As A Property Locator For The State Of Delaware.",
-          "author": "Surplus Funds 101",
-          "timestamp": "00:01:12",
-          "link": "https://www.youtube.com/watch?v=TTfaOSBvLDc&t=72s"
         }
       ]
     },
@@ -2418,6 +2418,12 @@
       "priority": "high",
       "corpus_references": [
         {
+          "video_title": "Surplus Funds Cold Calling Script: How to Not Sound Like a Scam",
+          "author": "Alfred Taren",
+          "timestamp": "00:00:56",
+          "link": "https://www.youtube.com/watch?v=CqlbwGPmv64&t=56s"
+        },
+        {
           "video_title": "State Funds Tutorial Delaware: Registering As A Property Locator For The State Of Delaware.",
           "author": "Surplus Funds 101",
           "timestamp": "00:03:31",
@@ -2434,12 +2440,6 @@
           "author": "FarmersGov",
           "timestamp": "00:16:23",
           "link": "https://www.youtube.com/watch?v=whDzDrFNADQ&t=983s"
-        },
-        {
-          "video_title": "State Funds Tutorial Delaware: Registering As A Property Locator For The State Of Delaware.",
-          "author": "Surplus Funds 101",
-          "timestamp": "00:01:12",
-          "link": "https://www.youtube.com/watch?v=TTfaOSBvLDc&t=72s"
         }
       ]
     },
@@ -2458,6 +2458,12 @@
       "priority": "high",
       "corpus_references": [
         {
+          "video_title": "Surplus Funds Cold Calling Script: How to Not Sound Like a Scam",
+          "author": "Alfred Taren",
+          "timestamp": "00:00:56",
+          "link": "https://www.youtube.com/watch?v=CqlbwGPmv64&t=56s"
+        },
+        {
           "video_title": "State Funds Tutorial Delaware: Registering As A Property Locator For The State Of Delaware.",
           "author": "Surplus Funds 101",
           "timestamp": "00:03:31",
@@ -2474,12 +2480,6 @@
           "author": "FarmersGov",
           "timestamp": "00:16:23",
           "link": "https://www.youtube.com/watch?v=whDzDrFNADQ&t=983s"
-        },
-        {
-          "video_title": "State Funds Tutorial Delaware: Registering As A Property Locator For The State Of Delaware.",
-          "author": "Surplus Funds 101",
-          "timestamp": "00:01:12",
-          "link": "https://www.youtube.com/watch?v=TTfaOSBvLDc&t=72s"
         }
       ]
     },
@@ -2510,16 +2510,16 @@
           "link": "https://www.youtube.com/watch?v=t4w_wFimZ9A&t=181s"
         },
         {
+          "video_title": "How to Check for Liens Before You Call About Surplus Funds",
+          "author": "Alfred Taren",
+          "timestamp": "00:07:07",
+          "link": "https://www.youtube.com/watch?v=LdemHPCk0dk&t=427s"
+        },
+        {
           "video_title": "DataTree Hacks: How to Do Title Research and Hire Abstractor Services",
           "author": "REtipster",
           "timestamp": "00:01:15",
           "link": "https://www.youtube.com/watch?v=GfyX48eCbRY&t=75s"
-        },
-        {
-          "video_title": "Differentiating Yourself From The Competition: How To HASHTAG Your ELEVATOR PITCH | #10",
-          "author": "Probate Mastery",
-          "timestamp": "00:46:48",
-          "link": "https://www.youtube.com/watch?v=OrEz4Qk-EZ0&t=2808s"
         }
       ]
     },
@@ -2538,6 +2538,12 @@
       "priority": "high",
       "corpus_references": [
         {
+          "video_title": "Surplus Funds Cold Calling Script: How to Not Sound Like a Scam",
+          "author": "Alfred Taren",
+          "timestamp": "00:00:56",
+          "link": "https://www.youtube.com/watch?v=CqlbwGPmv64&t=56s"
+        },
+        {
           "video_title": "State Funds Tutorial Delaware: Registering As A Property Locator For The State Of Delaware.",
           "author": "Surplus Funds 101",
           "timestamp": "00:03:31",
@@ -2554,12 +2560,6 @@
           "author": "FarmersGov",
           "timestamp": "00:16:23",
           "link": "https://www.youtube.com/watch?v=whDzDrFNADQ&t=983s"
-        },
-        {
-          "video_title": "State Funds Tutorial Delaware: Registering As A Property Locator For The State Of Delaware.",
-          "author": "Surplus Funds 101",
-          "timestamp": "00:01:12",
-          "link": "https://www.youtube.com/watch?v=TTfaOSBvLDc&t=72s"
         }
       ]
     },
@@ -2584,22 +2584,22 @@
           "link": "https://www.youtube.com/watch?v=6yIKsJMj6Gk&t=194s"
         },
         {
-          "video_title": "State Funds Tutorial Delaware: Registering As A Property Locator For The State Of Delaware.",
-          "author": "Surplus Funds 101",
-          "timestamp": "00:05:20",
-          "link": "https://www.youtube.com/watch?v=TTfaOSBvLDc&t=320s"
+          "video_title": "How To Claim Tax Sale Overages",
+          "author": "Ted Thomas",
+          "timestamp": "00:03:53",
+          "link": "https://www.youtube.com/watch?v=d5TLZqkPX14&t=233s"
         },
         {
-          "video_title": "DataTree Hacks: TaxSource Reports and Property Tax Verification",
-          "author": "REtipster",
-          "timestamp": "00:06:16",
-          "link": "https://www.youtube.com/watch?v=2ThZ61aal9k&t=376s"
+          "video_title": "How To Claim Surplus Funds From Foreclosure",
+          "author": "Bob Diamond - America's Tax Sale Attorney",
+          "timestamp": "00:05:14",
+          "link": "https://www.youtube.com/watch?v=lzU09FRqmhg&t=314s"
         },
         {
-          "video_title": "Feature Service Product Demo",
-          "author": "Regrid",
-          "timestamp": "00:03:10",
-          "link": "https://www.youtube.com/watch?v=X-_cLY3_96Y&t=190s"
+          "video_title": "How To Find Tax Sale Overages",
+          "author": "Bob Diamond - America's Tax Sale Attorney",
+          "timestamp": "00:02:09",
+          "link": "https://www.youtube.com/watch?v=4O5XeYwMAts&t=129s"
         }
       ]
     }
@@ -2746,8 +2746,8 @@
         "asset_id": "youtube_thumbnails",
         "asset": "https://i.ytimg.com/vi/<video_id>/*.jpg",
         "asset_type": "youtube_thumbnail_image",
-        "source": "YouTube CDN thumbnails for the 189 corpus videos",
-        "instance_count": 189,
+        "source": "YouTube CDN thumbnails for the 261 corpus videos",
+        "instance_count": 261,
         "instances": [
           {
             "video_id": "9Q4qYeK5DTg",
@@ -4071,6 +4071,510 @@
             "author": "REtipster",
             "thumbnail_url": "https://i.ytimg.com/vi/2ThZ61aal9k/hqdefault.jpg",
             "source_url": "https://www.youtube.com/watch?v=2ThZ61aal9k"
+          },
+          {
+            "video_id": "2e4YGOesnUY",
+            "title": "Excess Proceeds List, Tax Sale Overages List, Surplus Funds List (Free resources + 10 examples)",
+            "author": "Next Level VA",
+            "thumbnail_url": "https://i.ytimg.com/vi/2e4YGOesnUY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=2e4YGOesnUY"
+          },
+          {
+            "video_id": "p9uUtcmNpbk",
+            "title": "How to Claim Tax Sale Overages (Step-by-Step Guide)",
+            "author": "Ted Thomas",
+            "thumbnail_url": "https://i.ytimg.com/vi/p9uUtcmNpbk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=p9uUtcmNpbk"
+          },
+          {
+            "video_id": "6ElvJMKfF9g",
+            "title": "How to Claim Tax Sale Overages",
+            "author": "Bob Diamond - America's Tax Sale Attorney",
+            "thumbnail_url": "https://i.ytimg.com/vi/6ElvJMKfF9g/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=6ElvJMKfF9g"
+          },
+          {
+            "video_id": "qGPsbhsEAVQ",
+            "title": "Tax Sale Overages Course",
+            "author": "Bob Diamond - America's Tax Sale Attorney",
+            "thumbnail_url": "https://i.ytimg.com/vi/qGPsbhsEAVQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=qGPsbhsEAVQ"
+          },
+          {
+            "video_id": "01plOr9pFjQ",
+            "title": "How to Start a Tax Overage Business | Complete and Easy to Follow Guide",
+            "author": "BizMove",
+            "thumbnail_url": "https://i.ytimg.com/vi/01plOr9pFjQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=01plOr9pFjQ"
+          },
+          {
+            "video_id": "1Pp-cjYnY2k",
+            "title": "How To Become A Surplus Funds Recovery Agent",
+            "author": "Bob Diamond - America's Tax Sale Attorney",
+            "thumbnail_url": "https://i.ytimg.com/vi/1Pp-cjYnY2k/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=1Pp-cjYnY2k"
+          },
+          {
+            "video_id": "_vsvjD8JvgU",
+            "title": "Surplus Funds Recovery Newbie? START HERE (Asset Recovery Business)",
+            "author": "Money Making Juggernaut",
+            "thumbnail_url": "https://i.ytimg.com/vi/_vsvjD8JvgU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=_vsvjD8JvgU"
+          },
+          {
+            "video_id": "d5TLZqkPX14",
+            "title": "How To Claim Tax Sale Overages",
+            "author": "Ted Thomas",
+            "thumbnail_url": "https://i.ytimg.com/vi/d5TLZqkPX14/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=d5TLZqkPX14"
+          },
+          {
+            "video_id": "1fbTnvEjC7M",
+            "title": "How to get started in Tax Overages with NO MONEY",
+            "author": "Money Making Juggernaut",
+            "thumbnail_url": "https://i.ytimg.com/vi/1fbTnvEjC7M/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=1fbTnvEjC7M"
+          },
+          {
+            "video_id": "snu6i8Dp6h8",
+            "title": "Tax Sale Excess Proceeds",
+            "author": "Tax Sale Academy",
+            "thumbnail_url": "https://i.ytimg.com/vi/snu6i8Dp6h8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=snu6i8Dp6h8"
+          },
+          {
+            "video_id": "6UiKunbtUa0",
+            "title": "How To Find Excess Proceeds List In 2025 (Proven Strategies)",
+            "author": "Overage Acquisition",
+            "thumbnail_url": "https://i.ytimg.com/vi/6UiKunbtUa0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=6UiKunbtUa0"
+          },
+          {
+            "video_id": "4O5XeYwMAts",
+            "title": "How To Find Tax Sale Overages",
+            "author": "Bob Diamond - America's Tax Sale Attorney",
+            "thumbnail_url": "https://i.ytimg.com/vi/4O5XeYwMAts/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=4O5XeYwMAts"
+          },
+          {
+            "video_id": "gUeG4eQdMy8",
+            "title": "How to Claim Surplus Funds from Foreclosure (Step by Step Tutorial)",
+            "author": "Consumer Action Law Group",
+            "thumbnail_url": "https://i.ytimg.com/vi/gUeG4eQdMy8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=gUeG4eQdMy8"
+          },
+          {
+            "video_id": "q2gk3WmK5xs",
+            "title": "The Most Overlooked Surplus Funds Recovery Business You Can Start With $0",
+            "author": "Overage Acquisition",
+            "thumbnail_url": "https://i.ytimg.com/vi/q2gk3WmK5xs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=q2gk3WmK5xs"
+          },
+          {
+            "video_id": "e309errLsBw",
+            "title": "Claim Tax Sale Overages/Surplus Funds - Step-by-Step Guide",
+            "author": "claimtaxsaleoverages",
+            "thumbnail_url": "https://i.ytimg.com/vi/e309errLsBw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=e309errLsBw"
+          },
+          {
+            "video_id": "R8B06ovsDXI",
+            "title": "How to start a Surplus Funds Business (45 min raw free game)",
+            "author": "Money Making Juggernaut",
+            "thumbnail_url": "https://i.ytimg.com/vi/R8B06ovsDXI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=R8B06ovsDXI"
+          },
+          {
+            "video_id": "8-8koApqnYA",
+            "title": "How to Start a Surplus Funds Business in 2026 (Step by Step)",
+            "author": "Alfred Taren",
+            "thumbnail_url": "https://i.ytimg.com/vi/8-8koApqnYA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=8-8koApqnYA"
+          },
+          {
+            "video_id": "vs2o6Zz48Oc",
+            "title": "How The Surplus Funds Recovery Business Works 🤑 [Step By Step Training]",
+            "author": "Money Making Juggernaut",
+            "thumbnail_url": "https://i.ytimg.com/vi/vs2o6Zz48Oc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=vs2o6Zz48Oc"
+          },
+          {
+            "video_id": "vd__NHmQYgM",
+            "title": "8 Surplus Funds Deals Within 3 Months of Starting The Business",
+            "author": "Nick Fullmer- Overage Syndicate",
+            "thumbnail_url": "https://i.ytimg.com/vi/vd__NHmQYgM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=vd__NHmQYgM"
+          },
+          {
+            "video_id": "GG8f_umaBfY",
+            "title": "Ultimate Surplus Fund/Overage Guide ($0-$12k Surplus Fund/Overage Course Part 1)",
+            "author": "Spencer Vann",
+            "thumbnail_url": "https://i.ytimg.com/vi/GG8f_umaBfY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=GG8f_umaBfY"
+          },
+          {
+            "video_id": "4W8c0I28pxQ",
+            "title": "Free Surplus Funds Training - Indepth, full hour! SurplusFundsRiches",
+            "author": "SurplusFundsRiches",
+            "thumbnail_url": "https://i.ytimg.com/vi/4W8c0I28pxQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=4W8c0I28pxQ"
+          },
+          {
+            "video_id": "Zh5fus4SGzc",
+            "title": "What Nobody Tells You About The Surplus Funds Recovery Business",
+            "author": "Money Making Juggernaut",
+            "thumbnail_url": "https://i.ytimg.com/vi/Zh5fus4SGzc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Zh5fus4SGzc"
+          },
+          {
+            "video_id": "lFoZDRAGylo",
+            "title": "How Much Money Can You *REALISTICALLY* Make With Surplus Funds Recovery",
+            "author": "Money Making Juggernaut",
+            "thumbnail_url": "https://i.ytimg.com/vi/lFoZDRAGylo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=lFoZDRAGylo"
+          },
+          {
+            "video_id": "bpxSOg1_xbE",
+            "title": "Top 5 Things Nobody Tells You About the Surplus Funds Recovery Business",
+            "author": "Overage Acquisition",
+            "thumbnail_url": "https://i.ytimg.com/vi/bpxSOg1_xbE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=bpxSOg1_xbE"
+          },
+          {
+            "video_id": "DK8BPV7WVvI",
+            "title": "Give Me 17 Minutes, I’ll Give You 10,000 Hours of Surplus Funds Knowledge",
+            "author": "Money Making Juggernaut",
+            "thumbnail_url": "https://i.ytimg.com/vi/DK8BPV7WVvI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=DK8BPV7WVvI"
+          },
+          {
+            "video_id": "lOnYUxDdOdI",
+            "title": "How to Run a Surplus Funds Business with One CRM: Full 2026 Walkthrough",
+            "author": "Surplus Funds List",
+            "thumbnail_url": "https://i.ytimg.com/vi/lOnYUxDdOdI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=lOnYUxDdOdI"
+          },
+          {
+            "video_id": "lzU09FRqmhg",
+            "title": "How To Claim Surplus Funds From Foreclosure",
+            "author": "Bob Diamond - America's Tax Sale Attorney",
+            "thumbnail_url": "https://i.ytimg.com/vi/lzU09FRqmhg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=lzU09FRqmhg"
+          },
+          {
+            "video_id": "0pjP-Sr15PA",
+            "title": "Are You Doing Mortgage Foreclosure Surplus Funds Recovery?",
+            "author": "Money Making Juggernaut",
+            "thumbnail_url": "https://i.ytimg.com/vi/0pjP-Sr15PA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=0pjP-Sr15PA"
+          },
+          {
+            "video_id": "F4T35UFWesQ",
+            "title": "How To File A Surplus Funds Claim WITHOUT an Attorney (3 Things)",
+            "author": "Money Making Juggernaut",
+            "thumbnail_url": "https://i.ytimg.com/vi/F4T35UFWesQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=F4T35UFWesQ"
+          },
+          {
+            "video_id": "z6jQuGWdtDY",
+            "title": "Surplus Funds After Foreclosure Explained | What Homeowners Must Know | Sternberg Law Group",
+            "author": "Sternberg Law Group",
+            "thumbnail_url": "https://i.ytimg.com/vi/z6jQuGWdtDY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=z6jQuGWdtDY"
+          },
+          {
+            "video_id": "dn1b-e6bUyo",
+            "title": "How Can You Get Surplus Funds After Your House is Sold at Foreclosure In 2023?",
+            "author": "Lenny the Lawyer-Live",
+            "thumbnail_url": "https://i.ytimg.com/vi/dn1b-e6bUyo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=dn1b-e6bUyo"
+          },
+          {
+            "video_id": "ouYE5P3UJdQ",
+            "title": "Surplus Funds Claim Process Explained (What Nobody Tells You)",
+            "author": "Alfred Taren",
+            "thumbnail_url": "https://i.ytimg.com/vi/ouYE5P3UJdQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ouYE5P3UJdQ"
+          },
+          {
+            "video_id": "7AHHRIbWG80",
+            "title": "Surplus Funds Case Study Texas Mortgage Foreclosure",
+            "author": "Money Making Juggernaut",
+            "thumbnail_url": "https://i.ytimg.com/vi/7AHHRIbWG80/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=7AHHRIbWG80"
+          },
+          {
+            "video_id": "kYJAnAiPgvc",
+            "title": "Judicial VS Non-Judicial Mortgage Foreclosures (Surplus Funds Recovery)",
+            "author": "Money Making Juggernaut",
+            "thumbnail_url": "https://i.ytimg.com/vi/kYJAnAiPgvc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=kYJAnAiPgvc"
+          },
+          {
+            "video_id": "FJj3hN2KbIg",
+            "title": "How to Do Surplus Funds in Georgia (Step-by-Step Guide)",
+            "author": "Money Making Juggernaut",
+            "thumbnail_url": "https://i.ytimg.com/vi/FJj3hN2KbIg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=FJj3hN2KbIg"
+          },
+          {
+            "video_id": "KKKIgl--DNo",
+            "title": "Foreclosure - Surplus Funds Recovery - Attorney Assistance",
+            "author": "Attorney Jack",
+            "thumbnail_url": "https://i.ytimg.com/vi/KKKIgl--DNo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=KKKIgl--DNo"
+          },
+          {
+            "video_id": "L2oKpjOoh20",
+            "title": "How to Recover Foreclosure Surplus Funds (3-Step System)",
+            "author": "Hutch & Holmes",
+            "thumbnail_url": "https://i.ytimg.com/vi/L2oKpjOoh20/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=L2oKpjOoh20"
+          },
+          {
+            "video_id": "gB8lD75eL5I",
+            "title": "Beginner Made $67k On His 1st Surplus Funds Recovery Deal (Tax Deed Surplus)",
+            "author": "Money Making Juggernaut",
+            "thumbnail_url": "https://i.ytimg.com/vi/gB8lD75eL5I/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=gB8lD75eL5I"
+          },
+          {
+            "video_id": "eLDEl33zxwY",
+            "title": "Picking Up a Surplus Funds Recovery Check LIVE (tax deed surplus check)",
+            "author": "Money Making Juggernaut",
+            "thumbnail_url": "https://i.ytimg.com/vi/eLDEl33zxwY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=eLDEl33zxwY"
+          },
+          {
+            "video_id": "DM0kjEZlbSk",
+            "title": "Florida Tax Deed Surplus Claim Forms: How to Claim Excess Funds",
+            "author": "Noble Notary & Legal Document Preparers",
+            "thumbnail_url": "https://i.ytimg.com/vi/DM0kjEZlbSk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=DM0kjEZlbSk"
+          },
+          {
+            "video_id": "MYo3k2Sxj1Q",
+            "title": "What Are Surplus Funds? How to Claim Money Owed to You After Foreclosure or Tax Sale",
+            "author": "Surplus_Prosperity",
+            "thumbnail_url": "https://i.ytimg.com/vi/MYo3k2Sxj1Q/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=MYo3k2Sxj1Q"
+          },
+          {
+            "video_id": "y94Ncg0WHn0",
+            "title": "Polk County Tax Deed Surplus",
+            "author": "Tax Deed Surplus & Lien-Research Records",
+            "thumbnail_url": "https://i.ytimg.com/vi/y94Ncg0WHn0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=y94Ncg0WHn0"
+          },
+          {
+            "video_id": "pSC1FfAjNuo",
+            "title": "Beginners Guide to Surplus Funds: How to Claim Money After Foreclosure- Step-by-Step Tutorial",
+            "author": "Dreams & Dollars: The Everyday Entrepreneur",
+            "thumbnail_url": "https://i.ytimg.com/vi/pSC1FfAjNuo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=pSC1FfAjNuo"
+          },
+          {
+            "video_id": "A47AbsTHlkY",
+            "title": "State Funds + Surplus Funds Contracts Tutorial Breakdown",
+            "author": "Surplus Institute / David Church / Unclaimed Funds",
+            "thumbnail_url": "https://i.ytimg.com/vi/A47AbsTHlkY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=A47AbsTHlkY"
+          },
+          {
+            "video_id": "v0-thxE7IK4",
+            "title": "How To Find Surplus Funds Lists In 2026 (For Free)",
+            "author": "Surplus Funds Secrets",
+            "thumbnail_url": "https://i.ytimg.com/vi/v0-thxE7IK4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=v0-thxE7IK4"
+          },
+          {
+            "video_id": "KO0CEgjhd4Q",
+            "title": "What is the Tax Deed Surplus Claims Process?",
+            "author": "Sterling Funds Discovery",
+            "thumbnail_url": "https://i.ytimg.com/vi/KO0CEgjhd4Q/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=KO0CEgjhd4Q"
+          },
+          {
+            "video_id": "HPyO3dkjbCQ",
+            "title": "HOW TO FIND LIENS & TITLE SEARCH IN TEXAS",
+            "author": "AFX Research LLC",
+            "thumbnail_url": "https://i.ytimg.com/vi/HPyO3dkjbCQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=HPyO3dkjbCQ"
+          },
+          {
+            "video_id": "GWuQIN0aSwQ",
+            "title": "What liens remain on a title search after foreclosure?",
+            "author": "Private Investigator Videos",
+            "thumbnail_url": "https://i.ytimg.com/vi/GWuQIN0aSwQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=GWuQIN0aSwQ"
+          },
+          {
+            "video_id": "ZU8-PRxVeCg",
+            "title": "How To Find If Surplus Fund Has Been CLAIMED Already (Excess Proceeds, Tax Deed Overages etc)",
+            "author": "Money Making Juggernaut",
+            "thumbnail_url": "https://i.ytimg.com/vi/ZU8-PRxVeCg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ZU8-PRxVeCg"
+          },
+          {
+            "video_id": "YCb5jYZX_A8",
+            "title": "How to Find Surplus Funds Lists (Tax Sales and Foreclosures)",
+            "author": "Alfred Taren",
+            "thumbnail_url": "https://i.ytimg.com/vi/YCb5jYZX_A8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=YCb5jYZX_A8"
+          },
+          {
+            "video_id": "Uj-vrJWHKQo",
+            "title": "Florida Foreclosure Surplus Funds Update: What is a Subordinate Lien Holder?",
+            "author": "Haynes Law Group",
+            "thumbnail_url": "https://i.ytimg.com/vi/Uj-vrJWHKQo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Uj-vrJWHKQo"
+          },
+          {
+            "video_id": "LdemHPCk0dk",
+            "title": "How to Check for Liens Before You Call About Surplus Funds",
+            "author": "Alfred Taren",
+            "thumbnail_url": "https://i.ytimg.com/vi/LdemHPCk0dk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=LdemHPCk0dk"
+          },
+          {
+            "video_id": "VBvaq5etzV4",
+            "title": "How to Check for Property Liens - Complete Guide",
+            "author": "Rent Own Sell",
+            "thumbnail_url": "https://i.ytimg.com/vi/VBvaq5etzV4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=VBvaq5etzV4"
+          },
+          {
+            "video_id": "6IAi_pcEgFY",
+            "title": "The 2 Minute Wholesale Title Search Strategy",
+            "author": "Dustin Hahn",
+            "thumbnail_url": "https://i.ytimg.com/vi/6IAi_pcEgFY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=6IAi_pcEgFY"
+          },
+          {
+            "video_id": "KOYBZFn2k7w",
+            "title": "Overages & Surplus Fund Debt & Title Research: Not As Easy As It Seems. Two tips To Help",
+            "author": "Nick Fullmer- Overage Syndicate",
+            "thumbnail_url": "https://i.ytimg.com/vi/KOYBZFn2k7w/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=KOYBZFn2k7w"
+          },
+          {
+            "video_id": "0xk7lNvAgn0",
+            "title": "Will Whitman, Esquire explains how to locate companies owed surplus funds",
+            "author": "William Whitman, Esquire",
+            "thumbnail_url": "https://i.ytimg.com/vi/0xk7lNvAgn0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=0xk7lNvAgn0"
+          },
+          {
+            "video_id": "JJObKyLY5YY",
+            "title": "Surplus Funds Cold Calling: The 4-Steps (1st Call)",
+            "author": "Money Making Juggernaut",
+            "thumbnail_url": "https://i.ytimg.com/vi/JJObKyLY5YY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=JJObKyLY5YY"
+          },
+          {
+            "video_id": "87zmv7-0D7s",
+            "title": "$40K+ LIVE COLD CALL! #SurplusFunds #RealEstate #Overages",
+            "author": "Surplus Institute / David Church / Unclaimed Funds",
+            "thumbnail_url": "https://i.ytimg.com/vi/87zmv7-0D7s/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=87zmv7-0D7s"
+          },
+          {
+            "video_id": "JQrEcneXSbk",
+            "title": "How I Call 200 SURPLUS Funds LEADS In 2 HOURS! (Unclaimed Funds Cold Calling)",
+            "author": "Money Making Juggernaut",
+            "thumbnail_url": "https://i.ytimg.com/vi/JQrEcneXSbk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=JQrEcneXSbk"
+          },
+          {
+            "video_id": "CqlbwGPmv64",
+            "title": "Surplus Funds Cold Calling Script: How to Not Sound Like a Scam",
+            "author": "Alfred Taren",
+            "thumbnail_url": "https://i.ytimg.com/vi/CqlbwGPmv64/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=CqlbwGPmv64"
+          },
+          {
+            "video_id": "alaKJIcbbLw",
+            "title": "Cold Calling for Surplus Funds in 2025: The Script That Actually Works!",
+            "author": "Surplus Institute / David Church / Unclaimed Funds",
+            "thumbnail_url": "https://i.ytimg.com/vi/alaKJIcbbLw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=alaKJIcbbLw"
+          },
+          {
+            "video_id": "HtbOqZK2He8",
+            "title": "Why Most Surplus Funds Calls Fail (And What To Say Instead)",
+            "author": "Surplus Funds Secrets",
+            "thumbnail_url": "https://i.ytimg.com/vi/HtbOqZK2He8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=HtbOqZK2He8"
+          },
+          {
+            "video_id": "gApaLMe_Eec",
+            "title": "How to Nail Cold Calling: 3 Killer Bonus Tips to Reach Your Leads | Surplus Funds Cold Calling 2024",
+            "author": "Surplus Institute / David Church / Unclaimed Funds",
+            "thumbnail_url": "https://i.ytimg.com/vi/gApaLMe_Eec/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=gApaLMe_Eec"
+          },
+          {
+            "video_id": "i7mng3-o1u0",
+            "title": "Avoid These Mistakes In Surplus Funds Cold Calling",
+            "author": "Surplus Funds Secrets",
+            "thumbnail_url": "https://i.ytimg.com/vi/i7mng3-o1u0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=i7mng3-o1u0"
+          },
+          {
+            "video_id": "xqpLsq3JVlU",
+            "title": "Cold Calling for Surplus Funds: What Actually Works",
+            "author": "Surplus Institute / David Church / Unclaimed Funds",
+            "thumbnail_url": "https://i.ytimg.com/vi/xqpLsq3JVlU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=xqpLsq3JVlU"
+          },
+          {
+            "video_id": "0FZrtOY2H5w",
+            "title": "Live Call with client DEAL CLOSED | Surplus Funds Excess Funds Overages",
+            "author": "Dexter Brown",
+            "thumbnail_url": "https://i.ytimg.com/vi/0FZrtOY2H5w/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=0FZrtOY2H5w"
+          },
+          {
+            "video_id": "ieI6zKICpKo",
+            "title": "$16,000 Live Cold Calling Commission",
+            "author": "Surplus Institute / David Church / Unclaimed Funds",
+            "thumbnail_url": "https://i.ytimg.com/vi/ieI6zKICpKo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ieI6zKICpKo"
+          },
+          {
+            "video_id": "MsxVzoHQCNk",
+            "title": "Surplus Funds The PERFECT Cold Call!",
+            "author": "Surplus Institute / David Church / Unclaimed Funds",
+            "thumbnail_url": "https://i.ytimg.com/vi/MsxVzoHQCNk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=MsxVzoHQCNk"
+          },
+          {
+            "video_id": "smhFDkvMwkM",
+            "title": "Best Cold Calling Script For Surplus Funds. overage syndicate surplus funds cold calling",
+            "author": "Surplus Funds 101",
+            "thumbnail_url": "https://i.ytimg.com/vi/smhFDkvMwkM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=smhFDkvMwkM"
+          },
+          {
+            "video_id": "ZEobF_ck678",
+            "title": "Surplus Fund Cold Calls: How to ACTUALLY close deals (99% have no clue)",
+            "author": "Spencer Vann",
+            "thumbnail_url": "https://i.ytimg.com/vi/ZEobF_ck678/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ZEobF_ck678"
+          },
+          {
+            "video_id": "jNXoU7Ep1vY",
+            "title": "Mastering Objection Handling: Proven Scripts for Overcoming Sales Challenges. #surplus_funds",
+            "author": "Surplus Institute / David Church / Unclaimed Funds",
+            "thumbnail_url": "https://i.ytimg.com/vi/jNXoU7Ep1vY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=jNXoU7Ep1vY"
+          },
+          {
+            "video_id": "z_Y10SDCdp4",
+            "title": "Handling objections & complaints in your Surplus Business. state funds",
+            "author": "Surplus Funds 101",
+            "thumbnail_url": "https://i.ytimg.com/vi/z_Y10SDCdp4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=z_Y10SDCdp4"
           }
         ],
         "research_reference_only": true,
@@ -4083,7 +4587,7 @@
         "asset_id": "verbatim_transcript_quotes",
         "asset": "data/transcripts/*.json -> segments[].text",
         "asset_type": "verbatim_transcript_passage",
-        "source": "Spoken content of 189 third-party videos (1806 captured tips)",
+        "source": "Spoken content of 261 third-party videos (2490 captured tips)",
         "research_reference_only": true,
         "commercial_republish_allowed": false,
         "commercial_use_allowed": false,
@@ -4099,38 +4603,38 @@
     ]
   },
   "corpus_metrics": {
-    "video_count": 189,
-    "channel_count": 59,
-    "total_words": 371246,
-    "total_hours": 79.95,
-    "total_pro_tips": 1806,
-    "unique_statutes_and_forms": 159,
-    "unique_tools_and_portals": 409
+    "video_count": 261,
+    "channel_count": 87,
+    "total_words": 443649,
+    "total_hours": 93.93,
+    "total_pro_tips": 2490,
+    "unique_statutes_and_forms": 205,
+    "unique_tools_and_portals": 528
   },
   "coverage": {
-    "videos_classified": 189,
-    "videos_with_multiple_topics": 189,
-    "tips_classified": 1806,
-    "raw_transcripts_joined": 189,
+    "videos_classified": 261,
+    "videos_with_multiple_topics": 261,
+    "tips_classified": 2490,
+    "raw_transcripts_joined": 261,
     "topic_video_counts": {
-      "business_model_and_economics": 132,
-      "probate_and_docket_sourcing": 182,
-      "unclaimed_property_and_escheat": 65,
-      "genealogy_and_heirship_proof": 157,
-      "skip_tracing_and_outreach": 83,
-      "contracts_and_compensation": 140,
-      "statutory_caps_and_licensing": 180,
-      "automation_and_small_team_ops": 139
+      "business_model_and_economics": 167,
+      "probate_and_docket_sourcing": 253,
+      "unclaimed_property_and_escheat": 133,
+      "genealogy_and_heirship_proof": 228,
+      "skip_tracing_and_outreach": 122,
+      "contracts_and_compensation": 212,
+      "statutory_caps_and_licensing": 252,
+      "automation_and_small_team_ops": 208
     },
     "topic_tip_counts": {
-      "business_model_and_economics": 117,
-      "probate_and_docket_sourcing": 559,
-      "unclaimed_property_and_escheat": 200,
-      "genealogy_and_heirship_proof": 435,
-      "skip_tracing_and_outreach": 37,
-      "contracts_and_compensation": 140,
-      "statutory_caps_and_licensing": 152,
-      "automation_and_small_team_ops": 166
+      "business_model_and_economics": 141,
+      "probate_and_docket_sourcing": 587,
+      "unclaimed_property_and_escheat": 582,
+      "genealogy_and_heirship_proof": 501,
+      "skip_tracing_and_outreach": 67,
+      "contracts_and_compensation": 230,
+      "statutory_caps_and_licensing": 204,
+      "automation_and_small_team_ops": 178
     }
   },
   "schema_version": "1.0",
@@ -4150,6 +4654,12 @@
       "priority": "high",
       "corpus_references": [
         {
+          "video_title": "Surplus Funds Cold Calling Script: How to Not Sound Like a Scam",
+          "author": "Alfred Taren",
+          "timestamp": "00:00:56",
+          "link": "https://www.youtube.com/watch?v=CqlbwGPmv64&t=56s"
+        },
+        {
           "video_title": "State Funds Tutorial Delaware: Registering As A Property Locator For The State Of Delaware.",
           "author": "Surplus Funds 101",
           "timestamp": "00:03:31",
@@ -4166,12 +4676,6 @@
           "author": "FarmersGov",
           "timestamp": "00:16:23",
           "link": "https://www.youtube.com/watch?v=whDzDrFNADQ&t=983s"
-        },
-        {
-          "video_title": "State Funds Tutorial Delaware: Registering As A Property Locator For The State Of Delaware.",
-          "author": "Surplus Funds 101",
-          "timestamp": "00:01:12",
-          "link": "https://www.youtube.com/watch?v=TTfaOSBvLDc&t=72s"
         }
       ]
     },
@@ -4190,6 +4694,12 @@
       "priority": "high",
       "corpus_references": [
         {
+          "video_title": "Surplus Funds Cold Calling Script: How to Not Sound Like a Scam",
+          "author": "Alfred Taren",
+          "timestamp": "00:00:56",
+          "link": "https://www.youtube.com/watch?v=CqlbwGPmv64&t=56s"
+        },
+        {
           "video_title": "State Funds Tutorial Delaware: Registering As A Property Locator For The State Of Delaware.",
           "author": "Surplus Funds 101",
           "timestamp": "00:03:31",
@@ -4206,12 +4716,6 @@
           "author": "FarmersGov",
           "timestamp": "00:16:23",
           "link": "https://www.youtube.com/watch?v=whDzDrFNADQ&t=983s"
-        },
-        {
-          "video_title": "State Funds Tutorial Delaware: Registering As A Property Locator For The State Of Delaware.",
-          "author": "Surplus Funds 101",
-          "timestamp": "00:01:12",
-          "link": "https://www.youtube.com/watch?v=TTfaOSBvLDc&t=72s"
         }
       ]
     },
@@ -4230,6 +4734,12 @@
       "priority": "high",
       "corpus_references": [
         {
+          "video_title": "Surplus Funds Cold Calling Script: How to Not Sound Like a Scam",
+          "author": "Alfred Taren",
+          "timestamp": "00:00:56",
+          "link": "https://www.youtube.com/watch?v=CqlbwGPmv64&t=56s"
+        },
+        {
           "video_title": "State Funds Tutorial Delaware: Registering As A Property Locator For The State Of Delaware.",
           "author": "Surplus Funds 101",
           "timestamp": "00:03:31",
@@ -4246,12 +4756,6 @@
           "author": "FarmersGov",
           "timestamp": "00:16:23",
           "link": "https://www.youtube.com/watch?v=whDzDrFNADQ&t=983s"
-        },
-        {
-          "video_title": "State Funds Tutorial Delaware: Registering As A Property Locator For The State Of Delaware.",
-          "author": "Surplus Funds 101",
-          "timestamp": "00:01:12",
-          "link": "https://www.youtube.com/watch?v=TTfaOSBvLDc&t=72s"
         }
       ]
     },
@@ -4282,16 +4786,16 @@
           "link": "https://www.youtube.com/watch?v=t4w_wFimZ9A&t=181s"
         },
         {
+          "video_title": "How to Check for Liens Before You Call About Surplus Funds",
+          "author": "Alfred Taren",
+          "timestamp": "00:07:07",
+          "link": "https://www.youtube.com/watch?v=LdemHPCk0dk&t=427s"
+        },
+        {
           "video_title": "DataTree Hacks: How to Do Title Research and Hire Abstractor Services",
           "author": "REtipster",
           "timestamp": "00:01:15",
           "link": "https://www.youtube.com/watch?v=GfyX48eCbRY&t=75s"
-        },
-        {
-          "video_title": "Differentiating Yourself From The Competition: How To HASHTAG Your ELEVATOR PITCH | #10",
-          "author": "Probate Mastery",
-          "timestamp": "00:46:48",
-          "link": "https://www.youtube.com/watch?v=OrEz4Qk-EZ0&t=2808s"
         }
       ]
     },
@@ -4310,6 +4814,12 @@
       "priority": "high",
       "corpus_references": [
         {
+          "video_title": "Surplus Funds Cold Calling Script: How to Not Sound Like a Scam",
+          "author": "Alfred Taren",
+          "timestamp": "00:00:56",
+          "link": "https://www.youtube.com/watch?v=CqlbwGPmv64&t=56s"
+        },
+        {
           "video_title": "State Funds Tutorial Delaware: Registering As A Property Locator For The State Of Delaware.",
           "author": "Surplus Funds 101",
           "timestamp": "00:03:31",
@@ -4326,12 +4836,6 @@
           "author": "FarmersGov",
           "timestamp": "00:16:23",
           "link": "https://www.youtube.com/watch?v=whDzDrFNADQ&t=983s"
-        },
-        {
-          "video_title": "State Funds Tutorial Delaware: Registering As A Property Locator For The State Of Delaware.",
-          "author": "Surplus Funds 101",
-          "timestamp": "00:01:12",
-          "link": "https://www.youtube.com/watch?v=TTfaOSBvLDc&t=72s"
         }
       ]
     },
@@ -4356,22 +4860,22 @@
           "link": "https://www.youtube.com/watch?v=6yIKsJMj6Gk&t=194s"
         },
         {
-          "video_title": "State Funds Tutorial Delaware: Registering As A Property Locator For The State Of Delaware.",
-          "author": "Surplus Funds 101",
-          "timestamp": "00:05:20",
-          "link": "https://www.youtube.com/watch?v=TTfaOSBvLDc&t=320s"
+          "video_title": "How To Claim Tax Sale Overages",
+          "author": "Ted Thomas",
+          "timestamp": "00:03:53",
+          "link": "https://www.youtube.com/watch?v=d5TLZqkPX14&t=233s"
         },
         {
-          "video_title": "DataTree Hacks: TaxSource Reports and Property Tax Verification",
-          "author": "REtipster",
-          "timestamp": "00:06:16",
-          "link": "https://www.youtube.com/watch?v=2ThZ61aal9k&t=376s"
+          "video_title": "How To Claim Surplus Funds From Foreclosure",
+          "author": "Bob Diamond - America's Tax Sale Attorney",
+          "timestamp": "00:05:14",
+          "link": "https://www.youtube.com/watch?v=lzU09FRqmhg&t=314s"
         },
         {
-          "video_title": "Feature Service Product Demo",
-          "author": "Regrid",
-          "timestamp": "00:03:10",
-          "link": "https://www.youtube.com/watch?v=X-_cLY3_96Y&t=190s"
+          "video_title": "How To Find Tax Sale Overages",
+          "author": "Bob Diamond - America's Tax Sale Attorney",
+          "timestamp": "00:02:09",
+          "link": "https://www.youtube.com/watch?v=4O5XeYwMAts&t=129s"
         }
       ]
     }

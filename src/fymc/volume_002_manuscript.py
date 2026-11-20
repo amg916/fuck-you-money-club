@@ -129,8 +129,82 @@ def build_volume_002_manuscript(abridged_videos: list[dict] | None = None) -> di
         except (ValueError, TypeError, OverflowError):
             return None
 
+    _surplus_signals = (
+        "surplus", "overage", "excess proceeds", "excess funds", "tax sale", "tax deed",
+        "foreclosure", "hennepin", "tyler", "unclaimed", "escheat", "curative title",
+        "skip trac", "overages", "state funds",
+    )
+    _dangling_tail = {
+        "a", "about", "after", "although", "am", "an", "and", "any", "are", "as", "at",
+        "be", "because", "been", "before", "being", "between", "both", "but", "by", "can",
+        "could", "did", "do", "does", "doing", "during", "each", "either", "for", "from",
+        "get", "getting", "go", "going", "had", "has", "have", "having", "he", "her", "his",
+        "how", "i", "i'll", "i'm", "i've", "if", "in", "into", "is", "it", "it's", "its",
+        "just", "like", "make", "many", "may", "might", "more", "most", "much", "must", "my",
+        "need", "no", "nor", "not", "of", "on", "onto", "or", "other", "our", "over", "put",
+        "really", "same", "say", "saying", "see", "she", "should", "since", "so", "some",
+        "still", "such", "than", "that", "that's", "the", "their", "them", "then", "there",
+        "these", "they", "they're", "this", "those", "though", "through", "to", "too",
+        "under", "unless", "until", "up", "upon", "very", "want", "was", "we", "we'll",
+        "we're", "were", "what", "when", "where", "whether", "which", "while", "who", "whom",
+        "whose", "why", "will", "with", "within", "without", "would", "you", "you'll",
+        "you're", "your",
+    }
+
+    def polish_excerpt(raw_text: str) -> str:
+        cleaned = re.sub(r"\s+", " ", str(raw_text or "")).strip()
+        if not cleaned:
+            return ""
+        if (
+            "|" not in cleaned
+            and not re.search(r"\b\d+:\d{2}(?::\d{2})?(?:\.\d+)?\s*S\d+\b", cleaned)
+            and re.search(r'[.!?]["\')\]]*$', cleaned)
+        ):
+            return cleaned
+        cleaned = re.sub(r"\b\d+:\d{2}(?::\d{2})?(?:\.\d+)?\s*S\d+\b", "", cleaned).strip()
+        if "|" in cleaned:
+            parts = [p.strip() for p in cleaned.split("|") if p.strip()]
+            cleaned = parts[0] if parts and len(parts[0]) >= 50 else ". ".join(parts)
+        was_char_clipped = len(raw_text or "") in range(215, 226) or len(raw_text or "") >= 455
+        if was_char_clipped and not re.search(r'[.!?]["\')\]]*$', cleaned):
+            cleaned = re.sub(r"\s+\S+$", "", cleaned).strip()
+        matches = list(re.finditer(r'[.!?]["\')\]]*(?=\s|$)', cleaned))
+        if matches and matches[-1].end() >= 55:
+            cleaned = cleaned[: matches[-1].end()].strip()
+        if not re.search(r'[.!?]["\')\]]*$', cleaned):
+            tokens_list = cleaned.split()
+            while len(tokens_list) > 6:
+                last_word = re.sub(r"^[^A-Za-z0-9']+|[^A-Za-z0-9']+$", "", tokens_list[-1]).lower()
+                if not last_word or (not any(ch.isdigit() for ch in last_word) and (last_word in _dangling_tail or len(last_word) <= 1)):
+                    tokens_list.pop()
+                else:
+                    break
+            cleaned = " ".join(tokens_list).rstrip(",;:- ")
+            if cleaned and cleaned[-1] not in ".!?":
+                cleaned += "."
+        if cleaned and cleaned[0].isalpha() and cleaned[0].islower():
+            cleaned = cleaned[0].upper() + cleaned[1:]
+        return cleaned
+
     valid_videos = [video for video in (abridged_videos or []) if isinstance(video, dict)]
+    large_corpus = len(valid_videos) > 20
     for video in valid_videos:
+        if large_corpus:
+            meta_obj = video.get("metadata") or {}
+            haystack = " ".join(
+                str(x or "")
+                for x in (
+                    video.get("title"),
+                    video.get("channel"),
+                    video.get("channel_title"),
+                    video.get("author"),
+                    meta_obj.get("title"),
+                    meta_obj.get("channel_title"),
+                    meta_obj.get("author"),
+                )
+            ).lower()
+            if not any(sig in haystack for sig in _surplus_signals):
+                continue
         video_id = str(video.get("video_id") or "")
         if not re.fullmatch(r"[A-Za-z0-9_-]{11}", video_id):
             try:
@@ -154,7 +228,8 @@ def build_volume_002_manuscript(abridged_videos: list[dict] | None = None) -> di
         for tip in tips:
             if not isinstance(tip, dict):
                 continue
-            text = str(tip.get("text") or tip.get("tip") or tip.get("summary") or "").strip()
+            raw_tip_text = str(tip.get("text") or tip.get("tip") or tip.get("summary") or "").strip()
+            text = polish_excerpt(raw_tip_text) if large_corpus else raw_tip_text
             seconds = None
             for key in ("timestamp", "start", "start_seconds", "timestamp_seconds"):
                 seconds = seconds_of(tip.get(key))
@@ -177,9 +252,17 @@ def build_volume_002_manuscript(abridged_videos: list[dict] | None = None) -> di
                        if explicit is not None else {number for score, number in scores if score == best_score and score > 0})
             label = f"{seconds // 3600:02d}:{seconds % 3600 // 60:02d}:{seconds % 60:02d}"
             url = f"https://www.youtube.com/watch?v={video_id}&t={seconds}s"
+            channel_name = str(
+                video.get("channel")
+                or video.get("channel_title")
+                or video.get("author")
+                or (video.get("metadata") or {}).get("author")
+                or "Independent Practitioner"
+            ).strip()
             citation = dict(source_type="video_pro_tip", video_id=video_id,
-                            title=str(video.get("title") or video_id),
-                            channel=str(video.get("channel") or video.get("channel_title") or ""),
+                            title=str(video.get("title") or (video.get("metadata") or {}).get("title") or video_id),
+                            channel=channel_name,
+                            author=channel_name,
                             text=text, tip=text, timestamp=seconds, timestamp_seconds=seconds,
                             timestamp_label=f"[{label}]", url=url, markdown=f"[{label}]({url})",
                             epistemic_status="attributed_practitioner_claim",
@@ -190,32 +273,28 @@ def build_volume_002_manuscript(abridged_videos: list[dict] | None = None) -> di
                     if not any(item["url"] == url and item["text"] == text for item in existing):
                         existing.append(deepcopy(citation))
 
-    cap_per_chapter = 18 if len(valid_videos) > 20 else None
+    cap_per_chapter = 18 if large_corpus else None
     for chapter in chapters:
         number = chapter["chapter_number"]
         existing = chapter["source_citations"]
         baseline = BASELINE_EXPERT_CITATIONS_BY_CHAPTER.get(number, [])
+        baseline_prepared = []
         for base_cit in baseline:
-            if not any(item.get("url") == base_cit.get("url") for item in existing):
-                cloned = deepcopy(base_cit)
-                if cloned.get("author") and not cloned.get("channel"):
-                    cloned["channel"] = cloned["author"]
-                if cloned.get("text") and not cloned.get("tip"):
-                    cloned["tip"] = cloned["text"]
-                existing.append(cloned)
-        if cap_per_chapter is not None and len(existing) > cap_per_chapter:
-            base_urls = {item.get("url") for item in baseline}
-            seen_base: set[str] = set()
-            baseline_items = []
-            extra_items = []
-            for item in existing:
-                u = str(item.get("url") or "")
-                if u in base_urls and u not in seen_base:
-                    seen_base.add(u)
-                    baseline_items.append(item)
-                else:
-                    extra_items.append(item)
-            chapter["source_citations"] = baseline_items + extra_items[:max(0, cap_per_chapter - len(baseline_items))]
+            cloned = deepcopy(base_cit)
+            if cloned.get("author") and not cloned.get("channel"):
+                cloned["channel"] = cloned["author"]
+            polished_base = polish_excerpt(str(cloned.get("text") or cloned.get("tip") or ""))
+            if polished_base:
+                cloned["text"] = polished_base
+                cloned["tip"] = polished_base
+            baseline_prepared.append(cloned)
+        base_urls = {item.get("url") for item in baseline_prepared}
+        non_base = [item for item in existing if item.get("url") not in base_urls]
+        merged = baseline_prepared + non_base
+        if cap_per_chapter is not None and len(merged) > cap_per_chapter:
+            chapter["source_citations"] = baseline_prepared + non_base[: max(0, cap_per_chapter - len(baseline_prepared))]
+        else:
+            chapter["source_citations"] = merged
 
     total_words = compute_manuscript_word_count(chapters)
     total_yt_links = count_manuscript_youtube_links(chapters)
