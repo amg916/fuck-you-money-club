@@ -1,0 +1,470 @@
+{
+  "workbook_id": "wb-005-high-ticket-affiliate-marketing",
+  "volume_id": "vol-005-high-ticket-affiliate-marketing",
+  "title": "High-Ticket Affiliate Marketing — Operator Companion Workbook",
+  "subtitle": "6 Printable Operator Worksheets for High-Ticket Offer Underwriting, Reversal-Adjusted EPC & Net-60 Float, S2S Postback QA, FTC 16 CFR Part 255 & TCPA Controls, Multi-Channel Arbitrage & 30x-45x Exit Readiness",
+  "worksheets": [
+    {
+      "worksheet_id": "ws-01",
+      "number": 1,
+      "title": "High-Ticket Offer Underwriting, Recurring LTV & Private CPA-Bump Sheet",
+      "purpose": "Underwrite at least three competing high-ticket merchants in one commercial vertical before building comparison pages or buying traffic, verifying real commission rails, clawback windows, merchant LTV-to-CAC headroom, and private payout-bump thresholds.",
+      "chapter_ref": "Q1, Q2, Q6",
+      "instructions": [
+        "Print one underwriting packet per vertical cluster (for example, B2B payroll/HRIS software, corporate charge cards, commercial fleet telematics, or inbound home-service pay-per-call) and assign a permanent cluster ID (AFF-V01) carried into EPC modeling (ws-02) and sprint tracking (ws-06).",
+        "Never build an entire comparison hub around a single merchant: approve at least three competing direct or network offers (Primary Winner, Runner-Up Alternative, Budget/Enterprise Fallback) so a sudden commission cut or cap pause requires only a 60-second routing swap.",
+        "Separate referred merchant gross merchandise value (GMV) or annual contract value (ACV) from actual earned affiliate commissions net of reversals, scrub deductions, and sub-network overrides—only net settled commissions pay media bills and owner distributions.",
+        "Verify exact attribution mechanics in the written partner contract before sending a single click: cookie duration, first-click vs last-click overwrite rules, coupon-extension stand-down protections, server-to-server (S2S) postback support, and recurring commission sunset clauses (12 months vs lifetime of active account).",
+        "Benchmark public baseline rates against private VIP tiers on PartnerStack, Impact.com, Everflow, or Ringba, and log concrete conversion-volume triggers (for example, 15 qualified demos or 10 funded accounts per 30 days) to request a 20%-35% private CPA or revenue-share bump."
+      ],
+      "fields": [
+        {
+          "name": "Vertical cluster ID, target buyer persona & commercial trigger",
+          "type": "text",
+          "prompt": "Record cluster ID, operator owner, underwriting date, commercial vertical, decision-maker job title, and the acute operational event that forces an immediate vendor switch or purchase.",
+          "example": "AFF-V01 | owner Alex | Days 1-3 | multi-state B2B payroll & contractor compliance SaaS (10-150 employees) | buyer: Controller / Head of People | trigger: hiring first out-of-state W-2 worker or receiving state payroll-tax penalty notice."
+        },
+        {
+          "name": "Three-merchant competitive basket & network rail mapping",
+          "type": "textarea",
+          "prompt": "List at least three approved merchants in the same buyer comparison basket, their tracking platform (PartnerStack, Impact.com, Everflow direct, Ringba), public payout structure, and approval status.",
+          "example": "Offer A (Primary): Rippling-tier HRIS via PartnerStack ($500 qualified demo + $1,000 closed-won bounty, approved) | Offer B (Runner-Up): Gusto/Deel-tier via Impact.com ($300-$1,200 tiered funded-payroll CPA, approved) | Offer C (Fallback): Patriot/OnPay-tier via Everflow ($250 CPA + 25% 12-mo revshare, approved)."
+        },
+        {
+          "name": "Merchant LTV-to-CAC headroom & payout sustainability check",
+          "type": "textarea",
+          "prompt": "Estimate the merchant's annual contract value (ACV), gross margin, expected retention, and implied customer LTV so you can verify whether a $400-$1,500 affiliate payout is economically sustainable or an unsustainable promo teaser likely to be slashed.",
+          "example": "Offer A average client = 28 seats x $18/seat/mo = $6,048 ACV x 82% software gross margin x 3.4-yr retention = ~$16,800 gross profit LTV -> $1,100 blended affiliate CAC is 6.5% of gross profit LTV (highly sustainable vs SaaS benchmark of 20%-30%)."
+        },
+        {
+          "name": "Attribution window, last-click poaching & S2S contract terms",
+          "type": "textarea",
+          "prompt": "Document exact cookie/click-ID duration, cross-device or email-domain matching rules, whether browser coupon toolbars can overwrite your click at checkout, and whether S2S postbacks fire on demo booked, trial started, and invoice paid.",
+          "example": "Offer A: 90-day first-party click_id tied to corporate work email domain at lead capture; toolbar coupon codes blocked on partner landing URL; real-time PartnerStack webhook fires on 'Lead Submitted' ($0), 'Demo Completed' ($500), and 'First Payroll Run' ($1,000)."
+        },
+        {
+          "name": "Clawback, scrub, reversal & negative-carryover clauses",
+          "type": "textarea",
+          "prompt": "Extract verbatim locking periods, refund/chargeback clawback windows, invalid-lead scrub criteria (disposable email, <5 seats, duplicate CRM lead within 180 days), and confirm zero negative-carryover traps on recurring shares.",
+          "example": "Locking window: 45 days post-conversion; scrub triggers: freemail domains (@gmail/@yahoo), <3 W-2 employees, or existing open AE opportunity within 120 days (historical partner scrub = 14%); zero negative carryover across monthly statements."
+        },
+        {
+          "name": "Stacked bounty & ecosystem cross-sell sequence",
+          "type": "textarea",
+          "prompt": "Map lawful sequential offers triggered by the same buyer journey (for example, LLC formation -> business checking -> corporate card -> payroll -> bookkeeping) so one high-intent visitor yields stacked multi-merchant bounties.",
+          "example": "New entity sequence: Step 1 state LLC filing partner ($150 CPA) -> Step 2 fintech business operating account ($350 funded-account bounty) -> Step 3 corporate spend card ($500 post-$2k spend CPA) -> Step 4 multi-state payroll SaaS ($750 CPA) = $1,750 stacked potential."
+        },
+        {
+          "name": "Regulated-vertical statutory red-line screen",
+          "type": "textarea",
+          "prompt": "Verify whether the vertical touches federal healthcare (42 U.S.C. section 1320a-7b(b) Anti-Kickback Statute), FCC Lifeline/telecom subsidies (47 CFR Part 54), consumer credit/tila, securities, or state-licensed insurance/gaming, and record mandatory structure limits.",
+          "example": "B2B payroll/fintech cluster: commercial B2B products only; zero Medicare/Medicaid healthcare referrals (percentage commissions prohibited under 42 U.S.C. 1320a-7b(b)); corporate card comparisons display exact issuer APR/fee schedules and issuer-approved marketing copy."
+        },
+        {
+          "name": "Ad-Library spend-velocity & SERP commercial intent proof",
+          "type": "textarea",
+          "prompt": "Log dated observations from Meta Ad Library, Google Ads Transparency Center, and SERP CPC benchmarks showing merchants actively buying the target problem keywords for >=30 consecutive days.",
+          "example": "Google Ads Transparency check (Day 2): all 3 payroll vendors running >=40 active search/video ads for >60 days on 'gusto vs rippling pricing', 'multi state payroll calculator', CPC $18-$34 -> confirms proven merchant conversion math."
+        },
+        {
+          "name": "Affiliate manager outreach & 25% private CPA-bump script",
+          "type": "textarea",
+          "prompt": "Record partner manager name, direct Slack/email handle, traffic-source pitch (interactive switching calculator + YouTube walkthroughs), daily cap limits, and agreed milestone for a private payout bump.",
+          "example": "Partner AM: Dana K. (PartnerStack message + Slack connect) | committed uncapped B2B US traffic | written Slack confirmation: after 10 verified demos with >=35% SQL-to-close rate inside 30 days, payout steps from $500/$1,000 to $650/$1,250 (+27% blended)."
+        },
+        {
+          "name": "Offer basket Pass / Hold / Reject underwriting verdict",
+          "type": "textarea",
+          "prompt": "Apply underwriting minimums (>=3 approved competing offers, >=$250 blended CPA or >=$600 12-month recurring LTV per conversion, S2S postback verified, <=20% expected scrub rate) and sign off.",
+          "example": "VERDICT: PASS — 3 competing B2B payroll offers approved, S2S webhooks active, blended net commission per funded customer = $880 after 14% CRM dedupe scrub, zero single-merchant lock-in."
+        }
+      ],
+      "completion_gate": "At least three competing high-ticket merchants in one vertical are approved in writing, S2S postback parameters and scrub/clawback terms are logged, and private CPA-bump milestones are confirmed with named partner managers."
+    },
+    {
+      "worksheet_id": "ws-02",
+      "number": 2,
+      "title": "Reversal-Adjusted EPC, Scrub Reserve & Net-60 Working-Capital Float Calculator",
+      "purpose": "Model true unit economics per 1,000 outbound clicks after lead scrubs, refund clawbacks, sub-network fees, media spend, and Net-30/Net-60 payout delays so scaling paid or hybrid acquisition never triggers a cash-flow crunch.",
+      "chapter_ref": "Q3, Q4",
+      "instructions": [
+        "Distinguish Gross Reported EPC (dashboard vanity commissions divided by clicks) from Reversal-Adjusted Net EPC (settled cash commissions after scrubs, chargebacks, and clawbacks divided by total bridge-page sessions).",
+        "Hold a dedicated 12%-20% Scrub & Clawback Reserve in book accounting until each merchant's contractual locking date passes; never spend unconfirmed 'pending' commissions on fixed payroll or owner draws.",
+        "Calculate your exact Working-Capital Float Gap in days: if Google/Meta charges your ad card every 30 days (or weekly threshold) while merchants lock on Day 45 and wire ACH on Day 60, fast profitable growth still requires dedicated cash reserves or low-APR credit float.",
+        "Account for corporate card cash-back or points rebates (for example, 2%-3% on media spend) strictly as a basis reduction against advertising expense rather than standalone operating profit, and never let rebate chasing justify negative-margin campaigns.",
+        "Reconcile monthly cohort run-rates directly against Candidate #24's three benchmark operating envelopes: Conservative ($50,000 net earned commissions / 20% = $10,000 owner net), Base ($325,000 / 35% = $113,750 owner net), and Scaled ($600,000 / 50% = $300,000 owner net)."
+      ],
+      "fields": [
+        {
+          "name": "Cohort period, traffic lane & click-to-merchant funnel assumptions",
+          "type": "text",
+          "prompt": "Specify modeling period, acquisition channel, inbound bridge-page sessions, bridge-to-merchant click-through rate (CTR), and merchant click-to-action conversion rate.",
+          "example": "Month 4 Base-Case Cohort | Non-brand B2B search + YouTube comparison hub | 12,000 bridge sessions -> 52% CTR = 6,240 outbound merchant clicks -> 5.5% qualified conversion rate = 343 gross reported actions."
+        },
+        {
+          "name": "Blended upfront CPA + recurring RevShare cohort schedule",
+          "type": "textarea",
+          "prompt": "Break down gross conversions across upfront CPA bounties, demo fees, and recurring SaaS revenue-share streams (discounted by observed monthly merchant logo churn).",
+          "example": "210 demo/CPA conversions x $115 avg = $24,150 upfront + 42 funded SaaS accounts x $48/mo recurring commission (modeled at 3.2% monthly logo decay -> $482 first-12-mo NPV, $192 realized in-quarter) -> $32,214 gross reported cohort value."
+        },
+        {
+          "name": "Scrub, duplicate-CRM & refund clawback reserve deduction",
+          "type": "textarea",
+          "prompt": "Apply empirical or conservative scrub percentages (duplicate CRM leads, unverified phone/email, trial cancellations inside 45-day lock, chargebacks) to compute Net Settled Commissions.",
+          "example": "Empirical scrub & reversal rate = 15.8% ($5,090 deducted across duplicate AE leads and <30-day trial cancels) -> Net Settled Earned Commissions = $27,124/mo ($325,488 annualized gross earned commissions net of reversals)."
+        },
+        {
+          "name": "Gross EPC vs Reversal-Adjusted Net EPC & EPV",
+          "type": "textarea",
+          "prompt": "Compute Gross EPC = Gross Commissions / Outbound Clicks, Net EPC = Net Settled Commissions / Outbound Clicks, and Net EPV (Earnings Per Bridge Visitor) = Net Settled Commissions / Inbound Sessions.",
+          "example": "Gross EPC = $32,214 / 6,240 clicks = $5.16 | Reversal-Adjusted Net EPC = $27,124 / 6,240 clicks = $4.35 | Net EPV = $27,124 / 12,000 bridge visitors = $2.26 per inbound visitor (hard ceiling for paid CPC)."
+        },
+        {
+          "name": "Direct traffic, content, S2S tooling & contractor cost ledger",
+          "type": "textarea",
+          "prompt": "Itemize all monthly variable and semi-fixed operating costs: paid search/social tests, SparkLoop co-reg spend (net of instant recoup), comparison research/video contractors (2 C), edge/tracker SaaS, and accounting/legal.",
+          "example": "Bounded exact-match comparison ads: $8,400 (less $168 2% card rebate = $8,232 net media) | 2 specialized contractors (technical writer + YouTube editor/QA): $6,800 | ClickFlare + Ringba + Ahrefs + Cloudflare + email ESP: $1,420 | legal/bookkeeping: $1,190 -> Total Opex = $17,642/mo."
+        },
+        {
+          "name": "Monthly & annualized owner net profit reconciliation",
+          "type": "textarea",
+          "prompt": "Subtract total operating expenses and non-owner contractor labor from Net Settled Earned Commissions to verify net profit margin (%) and annual owner net profit before personal taxes.",
+          "example": "Net Settled Commissions $27,124 - Total Opex $17,642 = $9,482/mo owner net profit ($113,784/yr = 35.0% net margin on $325,488 earned commissions with 1 FT + 2 C, matching Candidate #24 Base Case $325k / 35% / $113,750)."
+        },
+        {
+          "name": "Net-60 payout timeline & peak cash-trough float calculation",
+          "type": "textarea",
+          "prompt": "Map exact cash outflow day vs merchant locking day and ACH settlement day to compute Peak Working-Capital Float = Daily Paid Spend x (Settlement Lag Days - Card Grace Days) x 1.25 safety buffer.",
+          "example": "Ad spend billed Day 30 (card statement paid Day 50) vs merchant conversions locked Day 45 and wired Day 62 -> 12-day net cash gap + 30-day ramp overlap on $275/day ad spend = $11,550 peak trough x 1.25 = $14,438 dedicated liquid cash reserve locked before scaling."
+        },
+        {
+          "name": "Downside stress test (commission cut + CPC inflation shock)",
+          "type": "textarea",
+          "prompt": "Simulate a simultaneous 30% payout cut on Offer A plus a 25% spike in paid search CPCs, and record the exact automated routing swap and bid-cap circuit breaker that prevents operating losses.",
+          "example": "Shock test: Offer A cut from $500/$1,000 to $350/$700 drops Offer A Net EPC from $4.60 to $3.22 while CPC rises from $1.45 to $1.81 -> automated ClickFlare rule shifts 70% weight to Offer B ($4.18 Net EPC) within 2 hours and caps max CPC at 65% of trailing 7-day Net EPV ($1.47)."
+        },
+        {
+          "name": "Startup tranche allocation ($5k Organic / $20k Hybrid / $50k Desk)",
+          "type": "textarea",
+          "prompt": "Assign your available starting capital to the matching launch tier so fixed software overhead never exceeds 15% of liquid cash prior to first settled commission wire.",
+          "example": "Selected Tranche: $20,000 Hybrid Testbed -> $1,200 LLC/domain/legal, $1,800 3-mo edge/S2S tracker/SERP stack, $5,000 bounded comparison search + SparkLoop co-reg tests, $12,000 (60%) untouched Net-60 float & runway reserve."
+        },
+        {
+          "name": "Unit-economics sign-off & auto-pause circuit breakers",
+          "type": "textarea",
+          "prompt": "Set non-negotiable campaign stop-loss numbers: maximum unrecovered test spend per offer, minimum acceptable Net EPV-to-CPC ratio, and maximum single-merchant receivable exposure.",
+          "example": "STOP-LOSS RULES: Pause any ad group spending >2.5x target CPA ($750) with 0 verified S2S conversions; require Net EPV >= 1.45x paid CPC after 15% scrub reserve; cap unsettled receivables with any unproven merchant at $5,000 until first ACH clears."
+        }
+      ],
+      "completion_gate": "Reversal-adjusted Net EPC and Net EPV exceed traffic cost by >=45% after a 15%+ scrub reserve, Net-60 float cash is segregated in an operating reserve account, and hard spend circuit breakers are active."
+    },
+    {
+      "worksheet_id": "ws-03",
+      "number": 3,
+      "title": "Bridge-Page Calculator, First-Party Click-ID & S2S Postback QA Checklist",
+      "purpose": "Verify sub-second serverless comparison hub speed, interactive ROI/switching calculator math, first-party click_id persistence, idempotent S2S webhook ingestion, and offline ad-network conversion feedback before sending live traffic.",
+      "chapter_ref": "Q4, Q7",
+      "instructions": [
+        "Never direct-link cold paid or organic clicks straight to a raw merchant homepage where browser privacy protections (ITP/ETP), ad blockers, or cross-domain redirects strip affiliate parameters before signup.",
+        "Deploy comparison hubs and interactive fee/ROI calculators on edge networks (Cloudflare Pages/Workers or Vercel Edge) targeting <100ms TTFB and <1.2s Largest Contentful Paint on 4G mobile devices.",
+        "Mint a cryptographically unique first-party click_id on every inbound visit, store GCLID/FBCLID/MSCLKID + landing URL + timestamp in your server-side click_ledger, and pass click_id into the merchant's sub1/external_id parameter.",
+        "Enforce database-level idempotency (`UNIQUE (network, external_tx_id, event_status)`) and HMAC/secret-token verification on your S2S postback receiver so retried network webhooks never double-upload fake revenue into Google Ads or Meta CAPI.",
+        "Execute a full synthetic end-to-end test conversion (click -> calculator -> email capture -> merchant sandbox/test lead -> S2S webhook -> reversal event) with every merchant prior to launch."
+      ],
+      "fields": [
+        {
+          "name": "Comparison hub domain, edge runtime & speed benchmark",
+          "type": "text",
+          "prompt": "Record clean non-trademark domain name, edge hosting stack, mobile Lighthouse/CWV metrics (TTFB, LCP, CLS), and uptime/redirect health check interval.",
+          "example": "payrollswitchlab.com (verified zero USPTO trademark conflict & clean Wayback history) | Astro static + Cloudflare Workers + D1 | mobile TTFB 48ms, LCP 0.88s, CLS 0.01 | 5-min synthetic HTTP 200 + redirect chain monitor."
+        },
+        {
+          "name": "Interactive pre-sell calculator or diagnostic quiz specification",
+          "type": "textarea",
+          "prompt": "Document calculator inputs, deterministic formula, dated vendor fee table sources, and how the output dynamically ranks Offer A, Offer B, and Offer C based on the visitor's actual seat count or state footprint.",
+          "example": "Multi-State Payroll Cost & Penalty Calculator: user inputs W-2 headcount (1-250), 1099 contractors, US states (1-50), and HRIS integration need -> computes exact 12-mo total cost across 6 vendors (fee schedules verified Day 4) and routes >=20-seat multi-state buyers to Offer A."
+        },
+        {
+          "name": "Owned email / lead capture bridge before outbound redirect",
+          "type": "textarea",
+          "prompt": "Specify the optional or gated value exchange (printable vendor migration checklist, fee negotiation PDF, or custom quote breakdown) that captures first-party opt-in before redirecting to the merchant.",
+          "example": "1-step work-email bar ('Email me this 12-month vendor fee comparison + 14-point mid-year payroll migration checklist') converting at 28.4% of calculator completers -> triggers 5-email automated comparison sequence recovering delayed B2B buyers on Days 2, 5, 9, 14, and 21."
+        },
+        {
+          "name": "First-party click_ledger schema & parameter mapping",
+          "type": "textarea",
+          "prompt": "List exact columns stored on click creation and how `click_id` maps to each network's parameter (`ps_xid`, `irclickid`/`subId1`, `sub1`, `tid`, Ringba `tag:User:click_id`).",
+          "example": "click_ledger(click_id TEXT PK, created_at, offer_id, lander_slug, utm_source, gclid, fbclid, msclkid, ip_hash, ua_hash) | PartnerStack: ?ps_xid={click_id} | Impact: ?subId1={click_id} | Everflow: ?sub1={click_id} | Ringba dynamic number pool binds click_id to caller ANI."
+        },
+        {
+          "name": "S2S postback endpoint security & idempotency verification",
+          "type": "textarea",
+          "prompt": "Confirm webhook authentication (HMAC-SHA256 header or per-network secret token + IP allowlist), SQL unique constraint preventing duplicate conversion inserts, and raw payload dead-letter logging.",
+          "example": "POST /webhooks/s2s/{network} verifies X-Webhook-Signature HMAC-SHA256 (constant-time hmac.compare_digest) | INSERT INTO conversion_events ... ON CONFLICT (network, external_tx_id, event_status) DO NOTHING | all 4xx/5xx payloads written to webhook_dlq for replay."
+        },
+        {
+          "name": "Reversal, scrub & partial-clawback state machine test",
+          "type": "textarea",
+          "prompt": "Test how the ledger handles `pending` -> `approved` -> `reversed` transitions so negative postbacks (`payout < 0` or `status = 'reversed'`) decrement net EPC dashboards and send value adjustments.",
+          "example": "Synthetic reversal test passed: firing `status=reversed&external_tx_id=TEST_901&payout=-500.00` inserts negative ledger row, updates offer trailing-30d scrub rate from 0% to 14.2%, and flags Google Ads offline adjustment sheet."
+        },
+        {
+          "name": "Offline conversion upload (Google Ads GCLID & Meta CAPI) wiring",
+          "type": "textarea",
+          "prompt": "Specify which milestone feeds ad-network bidding algorithms (qualified demo / funded account rather than raw button clicks) and verify `event_id` deduplication between browser and server.",
+          "example": "Google Ads Enhanced Conversions for Leads uploads GCLID + net risk-adjusted value ($425 = $500 demo x 0.85 post-scrub factor) within 15 min of S2S webhook; Meta CAPI sends `Lead` / `Purchase` with deterministic `event_id = network:tx_id`."
+        },
+        {
+          "name": "Pay-Per-Call & Ping-Post dynamic routing check (if applicable)",
+          "type": "textarea",
+          "prompt": "For inbound phone or ping-post verticals, verify dynamic number insertion (DNI) pool sizing, IVR qualification prompt, buyer concurrency caps, minimum billable call duration (for example, >=90s), and failover waterfall.",
+          "example": "Ringba pool: 25 local/toll-free numbers (supports 60 concurrent visitors with 120s sticky session) -> 12-sec IVR filters out job seekers/existing support -> routes qualified commercial callers to Buyer 1 ($145 @ 90s), failover Buyer 2 ($115 @ 90s)."
+        },
+        {
+          "name": "Broken-link, cap-exhaustion & silent-redirect watchdog",
+          "type": "textarea",
+          "prompt": "Configure automated hourly probes that inspect final merchant destination HTTP status, SSL validity, landing-page out-of-stock/paused-program banners, and unexpected affiliate-parameter stripping.",
+          "example": "Cloudflare Cron Worker runs every 30 min across all 14 outbound offer slugs: alerts Slack + auto-swaps to Offer B if HTTP >= 400, redirect hops > 4, query string drops `ps_xid`/`subId1`, or destination HTML contains 'program paused' / '404'."
+        },
+        {
+          "name": "Synthetic end-to-end pre-flight sign-off log",
+          "type": "textarea",
+          "prompt": "Record timestamped test IDs for Offer A, Offer B, and Offer C proving click minting, calculator routing, email opt-in, S2S webhook receipt, idempotency replay rejection, and dashboard reconciliation.",
+          "example": "PRE-FLIGHT PASSED Day 11: clk_01J9A (Offer A PartnerStack S2S received in 1.8s; duplicate replay ignored), clk_01J9B (Offer B Impact S2S received in 2.4s), clk_01J9C (Offer C Everflow S2S + reversal test verified)."
+        }
+      ],
+      "completion_gate": "Comparison hub loads in <1.2s LCP on mobile, first-party click_id and HMAC-verified idempotent S2S postbacks pass synthetic conversion + duplicate-replay + reversal tests across all three merchants, and automated link-health failover is live."
+    },
+    {
+      "worksheet_id": "ws-04",
+      "number": 4,
+      "title": "FTC 16 CFR Part 255 Disclosure, Authorized TM+ Brand-Bidding & TCPA Consent Audit",
+      "purpose": "Eliminate commission forfeiture, network termination, and regulatory liability by auditing clear above-the-fold affiliate disclosures, written trademark-bidding authorizations, substantiated comparison claims, and seller-specific lead-gen consent.",
+      "chapter_ref": "Q5, Q9",
+      "instructions": [
+        "Audit every comparison page, calculator, YouTube video, newsletter issue, and social post against FTC Endorsement Guides (16 CFR Part 255): material connection disclosures must be unavoidable, plain-English, and placed BEFORE the first affiliate link or recommendation—never buried in footers or behind 'Read more' folds.",
+        "Treat unauthorized brand bidding (bidding on `[Merchant Name]`, `[Merchant] login`, or typosquatted lookalike domains without written permission) as a zero-tolerance balance-forfeiture risk; either run negative exact/phrase brand exclusions or secure a signed TM+ co-bidding addendum.",
+        "Substantiate every numerical pricing, fee, speed, or ROI comparison with dated primary vendor documentation and archive PDF/HTML snapshots so competitor legal challenges or merchant reviews can be answered in minutes.",
+        "In lead-generation and pay-per-call verticals, enforce explicit prior express written consent under 47 U.S.C. section 227 / 47 CFR section 64.1200, state mini-TCPA statutes (such as FTSA/OTSC), and buyer contract rules—logging TrustedForm or Jornaya session certificates on 100% of submitted leads.",
+        "Confirm zero prohibited referral structures in federally reimbursed healthcare (42 U.S.C. section 1320a-7b(b)), Lifeline telecom subsidies (47 CFR Part 54), or unlicensed securities/lending brokerage."
+      ],
+      "fields": [
+        {
+          "name": "Desktop & mobile above-the-fold FTC disclosure audit (16 CFR Part 255)",
+          "type": "textarea",
+          "prompt": "Verify exact disclosure wording, font contrast, and pixel position on 390px mobile and 1440px desktop viewports before the first CTA button, comparison table, or outbound affiliate link.",
+          "example": "Verified on 390x844 iPhone and 1440x900 desktop: 14px high-contrast disclosure box directly beneath H1 ('Disclosure: We earn referral commissions from partner vendors featured on this page at no extra cost to you. Commercial partnerships do not alter our fee-calculator formulas.') appears 180px above first link."
+        },
+        {
+          "name": "Video, audio & short-form platform native disclosure check",
+          "type": "textarea",
+          "prompt": "Confirm spoken + on-screen disclosure within the first 30 seconds of YouTube tutorials, pinned top description line above the fold, and platform paid-promotion toggles where applicable.",
+          "example": "YouTube comparison template locked: spoken + lower-third text at 00:14 ('When you book a demo through our comparison links below, our research desk earns a partner commission'), plus Line 1 of description before 'Show more' truncation."
+        },
+        {
+          "name": "Paid-search trademark negative list vs written TM+ authorization rider",
+          "type": "textarea",
+          "prompt": "Record either (a) the account-level negative keyword list excluding restricted partner brand terms across broad/phrase/exact match, or (b) the dated written TM+ co-bidding authorization signed by the merchant.",
+          "example": "Account-level negative list `NEG_PARTNER_BRANDS_V1` (64 brand + misspelling + 'login' exact/phrase negatives) applied to all Google/Bing campaigns for Offers A & B | Offer C signed written TM+ Rider (dated Day 6) authorizing `[Offer C] vs [Competitor]` headlines with approved landing URL."
+        },
+        {
+          "name": "Domain, ad-copy & nominative fair-use review (15 U.S.C. 1125)",
+          "type": "textarea",
+          "prompt": "Verify that owned domains, display paths, and ad headlines never impersonate official merchant sites, use zero typosquatted brand strings (ACPA 15 U.S.C. 1125(d)), and frame comparisons transparently as independent editorial analysis.",
+          "example": "Domain `payrollswitchlab.com` contains zero vendor marks; ad headlines state 'Independent 2026 Payroll Fee Calculator — Compare 6 Platforms' (zero 'Official Site' claims, zero dynamic keyword insertion of restricted trademarks)."
+        },
+        {
+          "name": "Dated pricing, feature & benchmark substantiation archive",
+          "type": "textarea",
+          "prompt": "Log the repository path and re-verification cadence (every 30 days) for timestamped vendor pricing pages, fee schedules, and test screenshots backing every claim in comparison tables.",
+          "example": "Archived in `/substantiation/2026-11/aff-v01/` with SHA-256 hashes + public pricing URLs + capture dates displayed beneath every comparison table ('Pricing verified November 2026; check vendor order form for custom seat quotes'); 30-day calendar refresh assigned."
+        },
+        {
+          "name": "TCPA prior express written consent & session-certificate verification",
+          "type": "textarea",
+          "prompt": "For any phone/SMS lead form, paste the unchecked Seller-Specific Consent language, confirm 47 CFR 64.1200 disclosures, state mini-TCPA quiet-hours/call-cap rules, and TrustedForm/Jornaya retention.",
+          "example": "B2B SaaS hub uses email-only self-serve redirect (zero automated outbound dialing/SMS). Secondary commercial insurance ping-post form enforces unchecked per-seller checkbox naming the exact matched carrier/agency + TrustedForm cert URL + IP + UTC timestamp archived 5 years."
+        },
+        {
+          "name": "CAN-SPAM (15 U.S.C. 7704) & newsletter co-registration hygiene",
+          "type": "textarea",
+          "prompt": "Confirm valid physical postal address, non-deceptive subject lines, 1-click RFC 8058 `List-Unsubscribe` headers, instant suppression sync, and explicit opt-in disclosure on SparkLoop/Beehiiv co-reg widgets.",
+          "example": "Verified: physical business suite in every footer, `List-Unsubscribe-Post: List-Unsubscribe=One-Click` live on Postmark/Beehiiv, unsubscribes suppressed in <5 seconds, SparkLoop partner recommendations clearly labeled 'Optional Free Partner Newsletters' with zero pre-checked boxes."
+        },
+        {
+          "name": "Privacy, CIPA wiretap/pixel boundary & cookie-stuffing ban check",
+          "type": "textarea",
+          "prompt": "Verify zero silent third-party session-replay or identity-resolution pixels firing prior to user notice/consent (Cal. Penal Code 631 / CCPA), and confirm zero auto-firing affiliate iframes, tab-unders, or forced link overwrites.",
+          "example": "Zero third-party identity-graph or keystroke-replay scripts installed; analytics uses cookieless first-party server logs + explicit click_id minted strictly when user clicks a labeled vendor CTA button (zero hidden iframes or forced background tabs)."
+        },
+        {
+          "name": "Browser extension & community-account policy audit (if used)",
+          "type": "textarea",
+          "prompt": "If operating a companion Chrome extension or community properties (Reddit, Medium, Substack), verify Chrome Web Store single-purpose & user-action rules and transparent brand/founder identity.",
+          "example": "Companion 'B2B SaaS Renewal & Fee Lookup' Manifest V3 extension displays fee comparisons strictly when user clicks toolbar icon on supported vendor pricing pages, never overwrites checkout attribution codes, and discloses affiliate relationship in Web Store listing & popup."
+        },
+        {
+          "name": "Pre-launch legal & network rules sign-off",
+          "type": "textarea",
+          "prompt": "Confirm all 9 checks above are green, archive screenshots of mobile/desktop disclosures for partner-network compliance reviews, and record reviewer sign-off date.",
+          "example": "SIGN-OFF COMPLETE Day 12 (owner Alex): mobile/desktop disclosure screenshots saved in `/compliance-proofs/aff-v01/`, negative trademark lists active, S2S & CAN-SPAM verified, zero unsubstantiated earnings or savings guarantees."
+        }
+      ],
+      "completion_gate": "Above-the-fold FTC 16 CFR Part 255 disclosures are live on mobile and desktop, negative trademark lists or signed TM+ riders are documented, comparison tables carry dated primary sources, and zero unconsented pixels or TCPA gaps exist."
+    },
+    {
+      "worksheet_id": "ws-05",
+      "number": 5,
+      "title": "Multi-Channel Traffic Arbitrage, SparkLoop Co-Reg, YouTube & GEO Attribution Tracker",
+      "purpose": "Orchestrate diversified bottom-of-funnel acquisition across high-intent search, faceless YouTube walkthroughs, SparkLoop newsletter co-registration, visual search, and LLM/GEO citations so no single platform algorithm controls >50% of commissions.",
+      "chapter_ref": "Q8, Q10",
+      "instructions": [
+        "Start 100% at the bottom of the commercial funnel: `[Incumbent] pricing`, `[Vendor A] vs [Vendor B]`, `[Incumbent] alternative for [use case]`, `how to cancel/migrate from [Incumbent]`, and interactive fee calculators convert 5x-12x higher than generic top-of-funnel listicles.",
+        "Pair every written comparison guide with a 6-to-12-minute screen-recorded YouTube walkthrough showing the live product interface, calculator math, and migration caveats—capturing both Google video carousels and high-trust buyer intent.",
+        "Use newsletter co-registration (SparkLoop / Beehiiv Boosts) to offset paid subscriber acquisition costs on Day 0, tracking 30-day subscriber open/click quality so partner publications never reject your referrals during quality scrubs.",
+        "Structure comparison pages for Generative Engine Optimization (GEO) across ChatGPT Search, Perplexity, Gemini, and Google AI Overviews using clean semantic HTML tables, explicit evaluation criteria, dated pricing facts, and JSON-LD schema—never deceptive hidden text.",
+        "Review channel-level Net EPV vs acquisition cost every Monday and enforce a hard <=50% single-traffic-source concentration target by Month 6."
+      ],
+      "fields": [
+        {
+          "name": "25 bottom-of-funnel buyer-intent query & video cluster map",
+          "type": "textarea",
+          "prompt": "List your initial 25 commercial-investigation keywords grouped by intent (`vs`, `pricing`, `alternatives`, `migration`, `calculator`), monthly search volume, CPC benchmark, and assigned URL + YouTube slug.",
+          "example": "Cluster 1 (`vs`, 8 pages): 'rippling vs gusto multi state', 'deel vs rippling contractor pay' ($24 CPC) | Cluster 2 (`pricing/calculator`, 7 pages): 'gusto hidden fees calculator', 'peo vs payroll software cost' ($29 CPC) | Cluster 3 (`cancel/switch`, 10 pages): 'switching payroll mid quarter checklist'."
+        },
+        {
+          "name": "Faceless / screen-recorded YouTube production & CTA cadence",
+          "type": "textarea",
+          "prompt": "Define weekly video output, screen-capture + clean-audio workflow, chapter timestamps, pinned top-link bridge URL (`?utm_source=youtube&utm_content=vid_id`), and observed view-to-bridge CTR.",
+          "example": "2 screen-recorded workflow comparisons/wk (founder voice + Loom/OBS 4K capture + contractor cut @ $125/video) | 8-min structure: 0:00 fee trap hook & FTC disclosure -> 0:45 live pricing calculator -> 3:30 side-by-side tax filing demo -> 6:45 who should NOT buy -> 3.8% view-to-bridge CTR."
+        },
+        {
+          "name": "Bounded exact-match paid search -> calculator arbitrage loop",
+          "type": "textarea",
+          "prompt": "Specify non-trademark exact/phrase ad groups, daily budget cap, landing calculator URL, target CPC, observed bridge CTR, and trailing Net EPV-to-CPC margin.",
+          "example": "12 exact-match ad groups (`[multi state payroll cost calculator]`, `[best gusto alternative 50 employees]`), $150/day cap | avg CPC $2.15 -> calculator completion 46% -> merchant CTR 54% -> Net EPV $3.48 (+61.8% gross media spread after 15% scrub reserve)."
+        },
+        {
+          "name": "SparkLoop / Beehiiv newsletter co-registration payback ledger",
+          "type": "textarea",
+          "prompt": "Track paid subscriber CAC, instant co-registration gross earnings per opt-in, partner quality-scrub rejection rate, net Day-0 unrecovered CAC, and 30-day backend affiliate commission per subscriber.",
+          "example": "B2B Finance & Ops Dispatch: Meta/LinkedIn lead CAC = $2.90/sub | 3 vetted B2B SparkLoop partner recommendations yield $1.85 gross -> $1.52 net verified Day-14 after 18% inactivity scrub -> net Day-14 CAC = $1.38/sub; 30-day email comparison sequence earns $2.64/sub = +$1.26 net profit by Day 30."
+        },
+        {
+          "name": "Multi-engine GEO (ChatGPT, Perplexity, AI Overviews) citation structure",
+          "type": "textarea",
+          "prompt": "Record structural elements added to every buyer guide (HTML `<table>` fee matrices, explicit 'Best For / Avoid If' criteria, primary vendor source links, `FAQPage` / `Dataset` JSON-LD) and monthly 20-prompt citation share.",
+          "example": "All 25 guides ship crawlable server-rendered HTML pricing tables (zero JS-gated tabs), explicit methodology block, and dated source links | Monthly 20-prompt audit (Day 24): cited in 9/20 Perplexity answers, 6/20 ChatGPT Search answers, and 5/20 Google AI Overviews -> 410 high-intent referral clicks ($5.90 Net EPC)."
+        },
+        {
+          "name": "Visual search (Pinterest / Google Images) & syndicated platform assets",
+          "type": "textarea",
+          "prompt": "Log original comparison charts, pricing flowcharts, and disclosed companion editions published on Medium, Substack, LinkedIn Articles, or GitHub Pages to capture secondary SERP slots legitimately.",
+          "example": "8 original SVG/PNG 'Payroll vs PEO Cost Crossover' decision charts indexed in Google Images & Pinterest (1,150 clicks/mo) + 6 disclosed LinkedIn/Substack founder teardown notes ranking #4-#7 beneath our primary domain on mid-tail comparison queries."
+        },
+        {
+          "name": "Opt-in social trigger & B2B community utility workflow",
+          "type": "textarea",
+          "prompt": "Document non-spam community distribution: disclosed founder subreddit/LinkedIn benchmark posts and opt-in comment/DM calculator delivery (zero purchased sockpuppet accounts or unsolicited blasts).",
+          "example": "Bi-weekly original '50-State Payroll Registration Fee Dataset' post on LinkedIn & owned r/LeanOpsStack hub -> readers requesting the editable Google Sheet / web calculator receive instant opt-in link -> 320 monthly bridge sessions at $0 media spend."
+        },
+        {
+          "name": "Interactive dwell-time & task-completion UX telemetry",
+          "type": "textarea",
+          "prompt": "Measure real human engagement signals (calculator interaction rate, scroll depth, bounce-back rate, email checklist saves) without artificial click-bots or deceptive popups.",
+          "example": "First-party telemetry across top 10 pages: 61% of visitors adjust >=2 calculator sliders, median engaged time = 3m 42s, pogo-stick bounce <24% -> top 3 pages moved from #8 to #2-#3 organic within 28 days."
+        },
+        {
+          "name": "Channel-mix concentration & Net EPC attribution matrix",
+          "type": "textarea",
+          "prompt": "Summarize monthly sessions, Net Settled Commissions, Net EPC, variable spend, contribution profit, and % revenue share across every active channel to verify zero >50% single-channel fragility.",
+          "example": "Month 6 mix ($29,400 net commissions): Organic Search Comparison Hub 38% ($11,172) | YouTube Walkthroughs 26% ($7,644) | Exact-Match Paid Search 21% ($6,174) | Newsletter + SparkLoop Sequence 10% ($2,940) | GEO / AI Search + Visual 5% ($1,470) -> largest channel = 38% (<=50% cap met)."
+        },
+        {
+          "name": "Weekly Traffic Reallocation (Scale / Hold / Prune) action log",
+          "type": "textarea",
+          "prompt": "Apply Monday allocation rules: double production/budget on clusters with Net EPV >= 1.6x cost, rewrite bridge copy on high-traffic/low-CTR pages (<25% CTR), and kill negative-spread ad groups.",
+          "example": "MONDAY ACTIONS: Scale 'PEO exit calculator' ad group from $40/day to $85/day (Net EPV $4.80 vs $2.10 CPC); record 3 follow-up YouTube migration videos; pause 2 broad HRIS comparison keywords ($1.95 CPC vs $1.55 Net EPV)."
+        }
+      ],
+      "completion_gate": "At least three independent acquisition channels generate verified S2S commissions, no single traffic platform accounts for >50% of net revenue, and weekly Net EPV vs CAC reallocation is running on first-party ledger data."
+    },
+    {
+      "worksheet_id": "ws-06",
+      "number": 6,
+      "title": "30-Day Commission Sprint, Merchant-Concentration Cap & 30x-45x Exit-Readiness Scorecard",
+      "purpose": "Execute the day-by-day 30-day launch roadmap from zero to verified commission run-rate while enforcing small-team pod discipline (1 FT + 2 C -> 2 FT + 3 C), <=25% single-merchant concentration caps, and Quiet Light / Empire Flippers exit-diligence standards.",
+      "chapter_ref": "Q11, Q12",
+      "instructions": [
+        "Follow the four sequential sprint phases strictly (`Days 1-7` Underwrite & Approve -> `Days 8-14` Edge Hub, Calculator & S2S Wiring -> `Days 15-21` Publish 10 Guides, 5 Videos & Bounded Search Test -> `Days 22-30` Ledger Reconciliation, CPA-Bump Ask & Kill/Fix/Scale).",
+        "Keep the operating pod deliberately tiny: 1 full-time founder + 2 specialized part-time contractors (`1 FT + 2 C`, 3 people total) through `$325,000` Base Case commissions, expanding to at most `2 FT + 3 C` (`5` people) at `$600,000` Scaled commissions.",
+        "Enforce a hard `<=25%` single-merchant revenue concentration ceiling across your portfolio by Month 6: whenever one merchant exceeds 25% of trailing 60-day net commissions, onboard a second vertical or elevate Runner-Up offers rather than deepening single-vendor dependency.",
+        "Maintain institutional-grade exit records from Day 1: separate LLC bank/card accounts, written `17 U.S.C. section 204(a)` contractor IP assignments, transferable affiliate network entities, dated pricing substantiation, and zero blackhat PBN/cookie-stuffing history.",
+        "Score your asset quarterly against the 30x-45x trailing-12-month (T12M) monthly net profit (`2.5x-3.75x` annual SDE) content/affiliate brokerage valuation rubric."
+      ],
+      "fields": [
+        {
+          "name": "Days 1-7 milestone log: vertical selection, 3+ merchant approvals & 25-query blueprint",
+          "type": "textarea",
+          "prompt": "Confirm completion of ws-01 offer underwriting, written approval across >=3 competing high-ticket offers, negative trademark lists, and the 25-keyword + 10-video bottom-of-funnel editorial spec.",
+          "example": "Days 1-7 COMPLETE: AFF-V01 B2B payroll/fintech cluster locked; Offers A, B, C approved on PartnerStack/Impact/Everflow; negative brand list uploaded; 25 BOFU comparison slugs & calculator spec finalized."
+        },
+        {
+          "name": "Days 8-14 milestone log: serverless comparison hub, ROI calculator & synthetic S2S test",
+          "type": "textarea",
+          "prompt": "Confirm edge deployment (<1.2s mobile LCP), interactive calculator accuracy, above-the-fold FTC 16 CFR Part 255 disclosure, email checklist capture, and verified synthetic S2S postback + duplicate rejection.",
+          "example": "Days 8-14 COMPLETE: `payrollswitchlab.com` live on Cloudflare Pages/Workers (0.88s LCP); multi-state fee calculator shipped; FTC disclosure bar verified at 390px/1440px; synthetic S2S webhooks confirmed across all 3 offers."
+        },
+        {
+          "name": "Days 15-21 milestone log: 10 comparison guides, 5 YouTube tutorials & $400 search validation",
+          "type": "textarea",
+          "prompt": "Record published URLs, YouTube video IDs, initial impressions/clicks, calculator completion rate, email opt-in rate, and bounded `$300-$500` exact-match search test clicks and early S2S conversions.",
+          "example": "Days 15-21 COMPLETE: 10 substantiated `vs`/pricing guides + 5 screen-recorded YouTube walkthroughs live | $420 exact-match non-brand search test -> 196 bridge visits -> 104 merchant clicks -> 6 S2S qualified demos ($3,000 gross / $2,550 post-scrub reserve = $13.01 Net EPV vs $2.14 CPC)."
+        },
+        {
+          "name": "Days 22-30 milestone log: S2S reconciliation, scrub audit & private payout-bump negotiation",
+          "type": "textarea",
+          "prompt": "Reconcile internal `click_ledger` against network dashboards, inspect any scrubbed leads, present conversion quality to Offer A/B partner managers for a 20%-30% CPA bump, and lock Month 2 budget.",
+          "example": "Days 22-30 COMPLETE: 11 total S2S demos across paid + early YouTube/organic (1 duplicate CRM lead scrubbed = 9.1% scrub vs 15% reserve); PartnerStack AM approved bump from $500 to $625/demo starting Day 31."
+        },
+        {
+          "name": "Day-30 numeric Kill / Fix / Scale gate decision",
+          "type": "textarea",
+          "prompt": "Apply pre-committed Day-30 thresholds: Scale (`Net EPV >= 1.45x CPC` and `>=5` verified S2S conversions), Fix (`bridge CTR <35%` or `merchant CR <2.5%` -> rebuild calculator/offer match), or Kill (`0` conversions after `250` high-intent BOFU clicks across 3 offers).",
+          "example": "DAY-30 DECISION: SCALE — 10 net verified S2S conversions, 53% bridge CTR, 5.8% click-to-demo CR, Net EPV $13.01 (6.0x CPC); expand hub to all 25 BOFU pages + 2 YouTube videos/wk + $150/day exact-match search."
+        },
+        {
+          "name": "Small-team pod division, SOP ownership & contractor IP (`17 U.S.C. 204(a)`)",
+          "type": "textarea",
+          "prompt": "Map weekly hours, KPIs, compensation, and signed work-made-for-hire + present IP assignment status across the `1 FT + 2 C` Base pod (and `2 FT + 3 C` Scaled trigger).",
+          "example": "Founder (1 FT, 38 hrs/wk): offer deals, S2S engineering, paid search & capital | Contractor 1 (B2B researcher/writer, $3,600/mo, IP signed Day 8): 4 substantiated guides + 30-day pricing refreshes | Contractor 2 (YouTube editor/QA, $3,200/mo, IP signed Day 9): 2 videos/wk + link QA."
+        },
+        {
+          "name": "Single-merchant & single-vertical concentration cap ledger (`<=25%`)",
+          "type": "textarea",
+          "prompt": "List your top 5 merchant relationships by trailing 60-day net commissions and verify that no single merchant exceeds 25% of portfolio revenue (or log the immediate diversification action).",
+          "example": "Trailing 60-day merchant share: Offer A 24.1%, Offer B 19.8%, Corporate Card Offer D 18.4%, Business Checking Offer E 15.2%, Offer C 12.0%, Other 6 offers 10.5% -> max single merchant = 24.1% (passes <=25% cap)."
+        },
+        {
+          "name": "Conservative / Base / Scaled annual trajectory benchmark tracker",
+          "type": "textarea",
+          "prompt": "Compare current annualized run-rate (earned commissions net of reversals, total opex, net margin %, headcount, and owner net profit) against Candidate #24's three reference scenarios.",
+          "example": "Current Month 6 annualized pace: $338,000 net earned commissions | 36.2% net margin = $122,356 owner net profit | headcount: 1 FT + 2 C (3 people) -> ahead of Base Case ($325k / 35% / $113,750); next milestone: add 2nd B2B vertical toward Scaled ($600k / 50% / $300k, 2 FT + 3 C)."
+        },
+        {
+          "name": "Brokerage exit-readiness diligence audit (Quiet Light / Empire Flippers / FE)",
+          "type": "textarea",
+          "prompt": "Audit the 6 value drivers buyers inspect for 30x-45x monthly net profit multiples: clean GAAP/accrual P&L, >=12 months traffic/merchant diversity, transferable LLC-owned network accounts, clean backlink profile, FTC/TCPA compliance, and <10 hrs/wk founder maintenance.",
+          "example": "Exit Readiness Score 9/10: LLC-owned PartnerStack/Impact/Everflow accounts (transferable via entity or partner-assignment consent), 5 traffic channels (max 38%), max merchant 24.1%, zero PBN/bought spam links, 100% signed contractor IP, founder ops reduced to 11 hrs/wk via SOPs."
+        },
+        {
+          "name": "Implied portfolio asset valuation & hold-vs-sell capital allocation rule",
+          "type": "textarea",
+          "prompt": "Compute T12M average monthly owner net profit x 32x-42x multiple = implied enterprise value, and state the exact return-on-equity rule for compounding vs selling.",
+          "example": "At Base run-rate ($9,479/mo net): 34x-40x = $322,286-$379,160 implied asset value; at Scaled run-rate ($25,000/mo net): 36x-44x = $900,000-$1,100,000 asset value | Rule: hold & compound while organic/recurring growth >25% YoY; consider exit when multiple >=40x monthly net."
+        }
+      ],
+      "completion_gate": "All four 30-day sprint phases are executed with reconciled S2S ledger proof, contractor IP assignments are signed, single-merchant concentration is <=25%, and monthly accrual books pass 30x-45x brokerage exit-diligence standards."
+    }
+  ]
+}

@@ -8,7 +8,8 @@
     "vol-001-heir-hunting",
     "vol-002-surplus-funds-recovery",
     "vol-003-digital-product-empire",
-    "vol-004-ai-powered-micro-saas"
+    "vol-004-ai-powered-micro-saas",
+    "vol-005-high-ticket-affiliate-marketing"
   ],
   "editorial_tracks": {
     "track_1": {
@@ -5638,7 +5639,7 @@
       "slug": "high-ticket-affiliate-marketing",
       "title": "High-Ticket Affiliate Marketing",
       "category": "Referral publishing",
-      "production_stage": "candidate_scored",
+      "production_stage": "approved_master",
       "scores": {
         "revenue_potential": 21,
         "profit_margin_potential": 22,
@@ -5655,11 +5656,11 @@
       },
       "total_score": 87,
       "tier_label": "Elite Small-Team Cash Machine",
-      "evidence_confidence": "Moderate",
-      "uncertainty_band": "±6 pts",
+      "evidence_confidence": "High",
+      "uncertainty_band": "±3 pts",
       "uncertainty_bounds": {
-        "low": 81,
-        "high": 93
+        "low": 84,
+        "high": 90
       },
       "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
       "score_rationale": {
@@ -23571,5 +23572,5 @@
       "min_expert_youtube_links_per_chapter": 12
     }
   ],
-  "generated_at": "2026-11-20T18:27:40Z"
+  "generated_at": "2026-11-20T19:09:16Z"
 }

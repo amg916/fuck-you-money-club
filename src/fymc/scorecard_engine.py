@@ -13,7 +13,13 @@ from copy import deepcopy
 from math import isfinite
 import re
 
-from . import VOLUME_002_ID, VOLUME_003_ID, VOLUME_004_ID, resolve_volume_slug
+from . import (
+    VOLUME_002_ID,
+    VOLUME_003_ID,
+    VOLUME_004_ID,
+    VOLUME_005_ID,
+    resolve_volume_slug,
+)
 
 SCORE_KEYS = ("money_to_manpower_score", "total_score", "composite_score", "score")
 _SCORE_STRING_RE = re.compile(r"^\s*([+-]?\d+(?:\.\d+)?)\s*(?:/\s*100)?\s*$")
@@ -3600,6 +3606,13 @@ def get_volume_004_scorecard() -> dict:
     ))
 
 
+def get_volume_005_scorecard() -> dict:
+    """Return candidate 24 (High-Ticket Affiliate Marketing, 87/100) irrespective of pipeline ranking."""
+    return compute_scorecard(next(
+        spec for spec in _CANDIDATE_SPECS if spec["candidate_number"] == 24
+    ))
+
+
 def get_volume_scorecard(volume_id: object = None) -> dict:
     """Return the scorecard for a supported volume alias."""
     slug = resolve_volume_slug(volume_id)
@@ -3609,6 +3622,8 @@ def get_volume_scorecard(volume_id: object = None) -> dict:
         return get_volume_003_scorecard()
     if slug == VOLUME_004_ID:
         return get_volume_004_scorecard()
+    if slug == VOLUME_005_ID:
+        return get_volume_005_scorecard()
     return get_flagship_scorecard()
 
 
@@ -3655,8 +3670,8 @@ def _candidate(number, title, category, points, gross, margins, capital, opex,
                 "additional demand, working capital and delivery capacity."
             ),
         }
-    confidence = "High" if number in {1, 2, 5, 9, 22, 27} else confidence
-    stage = ("approved_master" if number in {1, 2, 22, 27} else
+    confidence = "High" if number in {1, 2, 5, 9, 22, 24, 27} else confidence
+    stage = ("approved_master" if number in {1, 2, 22, 24, 27} else
              "research_corpus_ready" if number in {5, 9} else "candidate_scored")
     return {
         "candidate_number": number,

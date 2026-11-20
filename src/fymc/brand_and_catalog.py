@@ -44,6 +44,7 @@ from . import (
     VOLUME_002_ID,
     VOLUME_003_ID,
     VOLUME_004_ID,
+    VOLUME_005_ID,
     PUBLISHED_VOLUME_IDS,
     OWNER_APPROVED_CONCEPT_ID,
     MIN_EXPERT_YOUTUBE_LINKS_PER_BOOK,
@@ -62,6 +63,7 @@ from .scorecard_engine import (
     get_volume_002_scorecard,
     get_volume_003_scorecard,
     get_volume_004_scorecard,
+    get_volume_005_scorecard,
     compute_scorecard,
     resolve_score_value,
 )
@@ -87,6 +89,11 @@ from .volume_004_manuscript import (
     build_volume_004_diagrams_data,
     build_volume_004_workbook,
 )
+from .volume_005_manuscript import (
+    build_volume_005_manuscript,
+    build_volume_005_diagrams_data,
+    build_volume_005_workbook,
+)
 
 __all__ = [
     "CorruptStoreError",
@@ -95,6 +102,7 @@ __all__ = [
     "VOLUME_002_SLUG",
     "VOLUME_003_SLUG",
     "VOLUME_004_SLUG",
+    "VOLUME_005_SLUG",
     "PUBLISHED_VOLUME_SLUGS",
     "CONCEPT_IDS",
     "CONCEPT_LABELS",
@@ -126,6 +134,7 @@ VOLUME_SLUG = "vol-001-heir-hunting"
 VOLUME_002_SLUG = VOLUME_002_ID
 VOLUME_003_SLUG = VOLUME_003_ID
 VOLUME_004_SLUG = VOLUME_004_ID
+VOLUME_005_SLUG = VOLUME_005_ID
 PUBLISHED_VOLUME_SLUGS = PUBLISHED_VOLUME_IDS
 
 CONCEPT_IDS = ("concept_a", "concept_b", "concept_c")
@@ -1496,6 +1505,13 @@ def _volume_scorecard_for_slug(pipeline: list, volume_slug: str) -> dict:
         for candidate in pipeline:
             if isinstance(candidate, dict) and candidate.get("candidate_number") == 22:
                 return recompute_candidate_scorecard(candidate)
+    if volume_slug == VOLUME_005_SLUG:
+        scorecard = _as_dict(_invoke(get_volume_005_scorecard), "scorecard")
+        if scorecard:
+            return scorecard
+        for candidate in pipeline:
+            if isinstance(candidate, dict) and candidate.get("candidate_number") == 24:
+                return recompute_candidate_scorecard(candidate)
     return _flagship_scorecard(pipeline)
 
 
@@ -1735,32 +1751,41 @@ def _build_volume_metadata(
     is_vol2 = volume_slug == VOLUME_002_SLUG
     is_vol3 = volume_slug == VOLUME_003_SLUG
     is_vol4 = volume_slug == VOLUME_004_SLUG
+    is_vol5 = volume_slug == VOLUME_005_SLUG
     default_title = (
-        "AI-Powered Micro SaaS"
-        if is_vol4
+        "High-Ticket Affiliate Marketing"
+        if is_vol5
         else (
-            "Digital Product Empire"
-            if is_vol3
-            else ("Surplus Funds Recovery" if is_vol2 else "Heir Hunting")
+            "AI-Powered Micro SaaS"
+            if is_vol4
+            else (
+                "Digital Product Empire"
+                if is_vol3
+                else ("Surplus Funds Recovery" if is_vol2 else "Heir Hunting")
+            )
         )
     )
     default_subtitle = (
-        "The Money-to-Manpower Playbook for Vertical B2B AI Wedges, Token Metering & Lean SaaS Margins"
-        if is_vol4
+        "The Money-to-Manpower Playbook for Recurring B2B Software Shares, Fintech CPA Bounties & S2S Attribution"
+        if is_vol5
         else (
-            "The Money-to-Manpower Playbook for High-Margin Digital Products & Self-Liquidating Funnels"
-            if is_vol3
+            "The Money-to-Manpower Playbook for Vertical B2B AI Wedges, Token Metering & Lean SaaS Margins"
+            if is_vol4
             else (
-                "The Money-to-Manpower Playbook for Tax-Sale Overages & Foreclosure Excess Proceeds"
-                if is_vol2
-                else "The Money-to-Manpower Playbook for Unclaimed Estate Recovery"
+                "The Money-to-Manpower Playbook for High-Margin Digital Products & Self-Liquidating Funnels"
+                if is_vol3
+                else (
+                    "The Money-to-Manpower Playbook for Tax-Sale Overages & Foreclosure Excess Proceeds"
+                    if is_vol2
+                    else "The Money-to-Manpower Playbook for Unclaimed Estate Recovery"
+                )
             )
         )
     )
     return {
         "volume_id": volume_slug,
         "volume_slug": volume_slug,
-        "volume_number": 4 if is_vol4 else (3 if is_vol3 else (2 if is_vol2 else 1)),
+        "volume_number": 5 if is_vol5 else (4 if is_vol4 else (3 if is_vol3 else (2 if is_vol2 else 1))),
         "parent_brand": PARENT_BRAND,
         "book_series": BOOK_SERIES,
         "tagline": BRAND_TAGLINE,
@@ -1811,6 +1836,11 @@ def _fresh_volume_builders(volume_slug: str, abridged: list[dict]) -> tuple[dict
         diagrams_data = _as_dict(_invoke(build_volume_004_diagrams_data), "diagrams")
         workbook = _as_dict(_invoke(build_volume_004_workbook), "worksheets")
         fresh_manuscript = _as_dict(_invoke(build_volume_004_manuscript, abridged), "chapters")
+        return diagrams_data, workbook, fresh_manuscript
+    if volume_slug == VOLUME_005_SLUG:
+        diagrams_data = _as_dict(_invoke(build_volume_005_diagrams_data), "diagrams")
+        workbook = _as_dict(_invoke(build_volume_005_workbook), "worksheets")
+        fresh_manuscript = _as_dict(_invoke(build_volume_005_manuscript, abridged), "chapters")
         return diagrams_data, workbook, fresh_manuscript
     diagrams_data = _as_dict(_invoke(build_volume_001_diagrams_data), "diagrams")
     workbook = _as_dict(_invoke(build_volume_001_workbook), "worksheets")
@@ -2080,8 +2110,11 @@ def _load_single_volume_bundle(root: Path, vol_slug: str, read_store) -> dict:
         chapter["revision"] = _chapter_revision(chapter)
     scorecard = read_store(vol_dir / "scorecard.json", {}) or {}
     default_cand_num = (
-        22 if vol_slug == VOLUME_004_SLUG
-        else (27 if vol_slug == VOLUME_003_SLUG else (2 if vol_slug == VOLUME_002_SLUG else 1))
+        24 if vol_slug == VOLUME_005_SLUG
+        else (
+            22 if vol_slug == VOLUME_004_SLUG
+            else (27 if vol_slug == VOLUME_003_SLUG else (2 if vol_slug == VOLUME_002_SLUG else 1))
+        )
     )
     if isinstance(scorecard, dict) and "track_ids" not in scorecard:
         scorecard.update(

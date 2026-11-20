@@ -1,0 +1,65 @@
+{
+  "concept_id": "concept_b",
+  "volume_id": "vol-005-high-ticket-affiliate-marketing",
+  "approved": true,
+  "edition_status": "approved_master",
+  "preview_only": true,
+  "files": {
+    "digital_pdf.pdf": {
+      "bytes": 1228058,
+      "sha256": "e850be417b81eb376ac4d89a3a910a2f47865a6824ca738dda29c51b4a44054f"
+    },
+    "print_6x9_pdf.pdf": {
+      "bytes": 1468047,
+      "sha256": "eebaa23b85620198b7159a8452db780fa25e6674ff2df828be38a839563f5280"
+    },
+    "workbook_pdf.pdf": {
+      "bytes": 616262,
+      "sha256": "272e31618cedb4f9af407975e549ba523e92bebaa4614c1f1decabcd193edc9e"
+    },
+    "book.epub": {
+      "bytes": 265914,
+      "sha256": "e2a0f2d0bc363b750739e519972f7d14cfe0e2afe43c8bb79983eeb734d16149"
+    },
+    "art/cover.svg": {
+      "bytes": 3653,
+      "sha256": "459050300510b1a0eb379ac733a33818fae2134cd725b73b0c969a819b88ae41"
+    },
+    "art/scorecard.svg": {
+      "bytes": 145476,
+      "sha256": "f6b407c87fe6620e7e5141c49a5b6807f415ef34772f74a9e0f4552212c5d6fa"
+    },
+    "art/diag_01.svg": {
+      "bytes": 8873,
+      "sha256": "3c5d711e2616822f285f1667626c6365024a99cf78f335fc401d22155bbca9c2"
+    },
+    "art/diag_02.svg": {
+      "bytes": 6238,
+      "sha256": "a1b2259b9697eff6c5315ef1a62e622ae432c6754f6c6ced94ecb0a722371f55"
+    },
+    "art/diag_03.svg": {
+      "bytes": 9138,
+      "sha256": "c130071d698e8209c11d9a23cbbb9e159e3f6a8a05c104d120c97e1dd6ff3129"
+    },
+    "art/diag_04.svg": {
+      "bytes": 7611,
+      "sha256": "040519adbfea4df3009356455b29f2dbbb5083ef8acfe903f0a8067ad47de83f"
+    },
+    "art/diag_05.svg": {
+      "bytes": 7057,
+      "sha256": "78edf93182d46e4d80a02675c9cf14d67b098b600509e6a3eb3ca27f72a4c814"
+    },
+    "art/diag_06.svg": {
+      "bytes": 6087,
+      "sha256": "2a1f11977b085652b814ed786d12430c34154ac711b8ec83a61aa43fb34557d5"
+    },
+    "art/diag_07.svg": {
+      "bytes": 6874,
+      "sha256": "acbbb21fd2d962aa2d50b64199bf4c7ced0b4beac8d807945e98b709b4e3272d"
+    },
+    "art/diag_08.svg": {
+      "bytes": 6856,
+      "sha256": "37ae6149343112a31f987e55d42aee3a31f742f22d7274f2c3f7621b740137a2"
+    }
+  }
+}

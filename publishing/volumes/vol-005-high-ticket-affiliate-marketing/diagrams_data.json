@@ -1,0 +1,316 @@
+{
+  "diagrams": [
+    {
+      "diagram_id": "diag-01-affiliate-funnel-to-commission-loop",
+      "chart_type": "process_flow",
+      "title": "From commercial buyer intent to settled recurring & CPA commissions",
+      "subtitle": "Five-stage high-ticket referral publishing & S2S attribution loop",
+      "chapter_number": 1,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Numeric values indicate operating sequence; conversion and scrub rates vary by vertical.",
+      "caption": "Own the pre-sell comparison calculator, first-party click_id, and email relationship rather than sending cold clicks to raw vendor homepages.",
+      "stages": [
+        {
+          "label": "Intercept BOFU intent",
+          "value": "Step 1",
+          "numeric_value": 1.0,
+          "detail": "Capture '[Vendor] vs [Vendor]', pricing-calculator, and migration queries across search, YouTube, and AI engines."
+        },
+        {
+          "label": "Pre-sell & capture",
+          "value": "Step 2",
+          "numeric_value": 2.0,
+          "detail": "Run an interactive edge fee/ROI calculator with above-the-fold FTC disclosure and optional checklist email capture."
+        },
+        {
+          "label": "Mint S2S click_id",
+          "value": "Step 3",
+          "numeric_value": 3.0,
+          "detail": "Log GCLID/UTM context in click_ledger and pass unique click_id into 3+ competing high-ticket merchant offers."
+        },
+        {
+          "label": "Verify S2S & scrub",
+          "value": "Step 4",
+          "numeric_value": 4.0,
+          "detail": "Ingest HMAC-signed PartnerStack, Impact, Everflow, or Ringba webhooks and hold a 15% reversal/scrub reserve."
+        },
+        {
+          "label": "Compound & re-route",
+          "value": "Step 5",
+          "numeric_value": 5.0,
+          "detail": "Upload net offline values to ad platforms, stack sequential fintech/SaaS bounties, and cap single merchants at <=25%."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-02-click-to-commission-funnel",
+      "chart_type": "funnel",
+      "title": "Bottom-of-funnel comparison traffic to net settled commissions",
+      "subtitle": "Illustrative monthly cohort of 10,000 commercial-investigation visitors",
+      "chapter_number": 6,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Invented nested cohort counts illustrating high-intent B2B comparison math; not representative earnings.",
+      "caption": "Bottom-of-funnel switching and pricing queries convert 5x-10x higher than generic informational listicles.",
+      "stages": [
+        {
+          "label": "BOFU hub visitors",
+          "value": "10,000",
+          "numeric_value": 10000.0,
+          "detail": "Visitors landing on '[Incumbent] pricing calculator', 'vs', and mid-year migration guides."
+        },
+        {
+          "label": "Calculator / table users",
+          "value": "5,800",
+          "numeric_value": 5800.0,
+          "detail": "Engaged buyers filtering vendor pricing tiers by seat count, state footprint, or transaction volume."
+        },
+        {
+          "label": "Outbound merchant clicks",
+          "value": "4,600",
+          "numeric_value": 4600.0,
+          "detail": "Pre-qualified clicks routed with first-party click_id across Primary, Runner-Up, and Fallback offers."
+        },
+        {
+          "label": "Gross S2S conversions",
+          "value": "253",
+          "numeric_value": 253.0,
+          "detail": "Combined qualified B2B demos, funded fintech accounts, and recurring SaaS subscriptions reported."
+        },
+        {
+          "label": "Settled post-scrub payouts",
+          "value": "215",
+          "numeric_value": 215.0,
+          "detail": "Locked payable conversions after 15% duplicate-CRM, invalid-lead, and 45-day cancellation scrubs."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-03-epc-to-net-margin-waterfall",
+      "chart_type": "waterfall",
+      "title": "Gross reported commissions to net owner profit",
+      "subtitle": "Illustrative $1,000 gross reported affiliate commission cohort",
+      "chapter_number": 3,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "USD per $1,000 gross dashboard commissions; opening and closing bars are totals, middle bars are deductions.",
+      "caption": "Separate merchant GMV from gross reported commissions, deduct reversals first, and fund media/contractors out of settled Net EPC.",
+      "stages": [
+        {
+          "label": "Gross reported payouts",
+          "value": "$1,000",
+          "numeric_value": 1000.0,
+          "detail": "Initial CPA bounties, qualified call transfers, and recurring SaaS shares logged before locking."
+        },
+        {
+          "label": "Scrubs & clawbacks",
+          "value": "-$150",
+          "numeric_value": -150.0,
+          "detail": "15% duplicate-CRM leads, <45-day trial cancellations, and refund/chargeback reversals."
+        },
+        {
+          "label": "Paid media & co-reg",
+          "value": "-$265",
+          "numeric_value": -265.0,
+          "detail": "Bounded exact-match comparison search and SparkLoop co-reg spend net of Day-0 recoup."
+        },
+        {
+          "label": "Editorial & video pod",
+          "value": "-$210",
+          "numeric_value": -210.0,
+          "detail": "Two specialized part-time contractors producing substantiated guides, calculators, and YouTube demos."
+        },
+        {
+          "label": "Edge, S2S & compliance",
+          "value": "-$77",
+          "numeric_value": -77.0,
+          "detail": "ClickFlare/Everflow S2S tracking, Ringba routing, SERP/GEO intelligence, and substantiation ops."
+        },
+        {
+          "label": "Owner net profit",
+          "value": "$298",
+          "numeric_value": 298.0,
+          "detail": "35.1% Base-Case net margin on $850 net earned commissions (20% Conservative -> 50% Scaled)."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-04-attribution-rail-payout-rates",
+      "chart_type": "horizontal_bars",
+      "title": "Illustrative net commission per conversion across referral rails",
+      "subtitle": "Typical post-scrub USD realization per qualified conversion event",
+      "chapter_number": 2,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Illustrative midpoints across B2B/fintech/lead-gen rails; verify live partner contracts independently.",
+      "caption": "High-ticket B2B SaaS, stacked fintech bounties, and 90-second inbound calls dwarf 1%-4% retail affiliate links.",
+      "stages": [
+        {
+          "label": "Stacked B2B Fintech + SaaS",
+          "value": "$950 / conv",
+          "numeric_value": 950.0,
+          "detail": "Sequential LLC + business banking + corporate card + payroll software bounties on one new entity."
+        },
+        {
+          "label": "B2B SaaS 30% RevShare (12m)",
+          "value": "$640 / conv",
+          "numeric_value": 640.0,
+          "detail": "12-month realized recurring share on a $210/mo B2B software plan net of logo churn."
+        },
+        {
+          "label": "Enterprise Demo + Won CPA",
+          "value": "$525 / conv",
+          "numeric_value": 525.0,
+          "detail": "Blended PartnerStack / Impact payout combining qualified SQL demo fee plus closed-won bonus."
+        },
+        {
+          "label": "Inbound Pay-Per-Call (90s+)",
+          "value": "$135 / call",
+          "numeric_value": 135.0,
+          "detail": "Ringba/Phonexa qualified commercial insurance, legal, or home-service call lasting >=90 seconds."
+        },
+        {
+          "label": "Retail E-Commerce Cookie",
+          "value": "$6 / order",
+          "numeric_value": 6.0,
+          "detail": "3% commission on a $200 consumer cart exposed to 24-hour cookie expiry and coupon poaching."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-05-compliance-and-scrub-guardrail-tree",
+      "chart_type": "decision_tree",
+      "title": "Disclosure, trademark, TCPA & concentration guardrails",
+      "subtitle": "Mandatory pre-flight checks before activating traffic on any offer",
+      "chapter_number": 5,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Numbers identify sequential operating checks enforced prior to live click routing.",
+      "caption": "Eliminate retro-clawbacks and account bans by enforcing FTC disclosures, TM+ riders, S2S deduplication, and <=25% merchant caps.",
+      "stages": [
+        {
+          "label": "FTC 255 above fold?",
+          "value": "Check 1",
+          "numeric_value": 1.0,
+          "detail": "Plain-English material connection notice appears above first CTA on 390px mobile, desktop, and video."
+        },
+        {
+          "label": "TM+ or brand negs?",
+          "value": "Check 2",
+          "numeric_value": 2.0,
+          "detail": "Either signed written TM+ co-bidding addendum on file or account-level partner brand negatives active."
+        },
+        {
+          "label": "TCPA / statutory clean?",
+          "value": "Check 3",
+          "numeric_value": 3.0,
+          "detail": "Zero federal healthcare % kickbacks (42 U.S.C. 1320a-7b); Seller-specific consent + TrustedForm on calls/leads."
+        },
+        {
+          "label": "S2S + <=25% cap?",
+          "value": "Check 4",
+          "numeric_value": 4.0,
+          "detail": "HMAC S2S postback verified with >=2 fallback offers live so no merchant exceeds 25% of portfolio revenue."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-06-three-person-affiliate-pod",
+      "chart_type": "org_architecture",
+      "title": "One full-time founder, two specialized contractors",
+      "subtitle": "Illustrative 3-person ($325k earned-commission Base Case) pod",
+      "chapter_number": 11,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Numeric values are role identifiers; Scaled ($600k earned commissions) scenario expands to 2 FT + 3 C.",
+      "caption": "Keep fixed payroll near zero by pairing founder deal/attribution ownership with specialized research and video contractors.",
+      "stages": [
+        {
+          "label": "Founder / deal & media lead",
+          "value": "1 FT",
+          "numeric_value": 1.0,
+          "detail": "Owns merchant underwriting, private CPA bumps, S2S ledger ops, exact-match search caps, and capital float."
+        },
+        {
+          "label": "B2B research & hub editor",
+          "value": "1 C",
+          "numeric_value": 2.0,
+          "detail": "Publishes substantiated comparison calculators, maintains 30-day pricing archives, and optimizes GEO tables."
+        },
+        {
+          "label": "YouTube & link-QA specialist",
+          "value": "1 C",
+          "numeric_value": 3.0,
+          "detail": "Produces 2 screen-recorded product comparisons weekly, manages SparkLoop co-reg, and audits S2S link health."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-07-startup-media-and-edge-stack",
+      "chart_type": "stacked_comparison",
+      "title": "Disciplined $20,000 hybrid high-ticket affiliate launch budget",
+      "subtitle": "Illustrative allocation across Candidate #24's $5k-$50k startup range",
+      "chapter_number": 4,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "USD cash allocation; >=60% stays in liquid Net-60 payout float and working-capital reserve.",
+      "caption": "Edge comparison hubs cost pennies to host; preserve the majority of launch capital to bridge Net-45/Net-60 commission locking windows.",
+      "stages": [
+        {
+          "label": "Entity, clean domains & IP",
+          "value": "$1,200",
+          "numeric_value": 1200.0,
+          "detail": "LLC setup, dedicated bank/cards, non-trademark domain diligence, and 17 U.S.C. 204(a) contractor agreements."
+        },
+        {
+          "label": "Edge, S2S & SERP/GEO stack",
+          "value": "$1,800",
+          "numeric_value": 1800.0,
+          "detail": "Three months of Cloudflare Workers/D1, ClickFlare/Everflow S2S tracker, Ringba numbers, and SERP data."
+        },
+        {
+          "label": "Bounded BOFU & co-reg tests",
+          "value": "$5,000",
+          "numeric_value": 5000.0,
+          "detail": "Capped exact-match comparison search tests, SparkLoop co-reg seed budget, and initial video editing."
+        },
+        {
+          "label": "Net-60 float & cash reserve",
+          "value": "$12,000",
+          "numeric_value": 12000.0,
+          "detail": "Segregated working-capital buffer bridging 30-day ad-card billing against 45-to-60-day merchant ACH payouts."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-08-thirty-day-commission-sprint",
+      "chart_type": "timeline_roadmap",
+      "title": "Thirty days from partner approval to verified Net EPC run-rate",
+      "subtitle": "Four weekly underwriting, S2S build, BOFU launch & Kill/Fix/Scale phases",
+      "chapter_number": 12,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Numeric values are milestone end-days; full 3-12 month ramp applies to compounded organic/recurring cohorts.",
+      "caption": "Validate conversion rate and Net EPC on bottom-of-funnel comparison intent in Month 1 before scaling content headcount.",
+      "stages": [
+        {
+          "label": "Underwrite & approve",
+          "value": "Days 1-7",
+          "numeric_value": 7.0,
+          "detail": "Approve >=3 competing offers in 1 B2B/fintech vertical, audit clawback/TM+ terms, and map 25 BOFU queries."
+        },
+        {
+          "label": "Wire calculator & S2S",
+          "value": "Days 8-14",
+          "numeric_value": 14.0,
+          "detail": "Ship <1s edge comparison calculator, FTC 255 bar, checklist capture, and synthetic S2S webhook test."
+        },
+        {
+          "label": "Launch guides & video",
+          "value": "Days 15-21",
+          "numeric_value": 21.0,
+          "detail": "Publish 10 substantiated vs/pricing pages, 5 YouTube demos, and run a $300-$500 exact-match search test."
+        },
+        {
+          "label": "Reconcile & scale",
+          "value": "Days 22-30",
+          "numeric_value": 30.0,
+          "detail": "Audit scrub reasons, negotiate a 20%-30% private CPA bump on early volume, and apply Kill/Fix/Scale rules."
+        }
+      ]
+    }
+  ]
+}
