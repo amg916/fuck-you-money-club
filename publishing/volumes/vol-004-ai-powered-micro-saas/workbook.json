@@ -1,0 +1,392 @@
+{
+  "workbook_id": "wb-004-ai-powered-micro-saas",
+  "volume_id": "vol-004-ai-powered-micro-saas",
+  "title": "AI-Powered Micro SaaS — Operator Companion Workbook",
+  "subtitle": "6 Printable Worksheets for Paid Validation, SaaS Economics, Secure Delivery & Launch Execution",
+  "worksheets": [
+    {
+      "worksheet_id": "ws-01",
+      "number": 1,
+      "title": "Vertical B2B Wedge, G2 1-Star Pain & Paid-Pilot Validation Sheet",
+      "purpose": "Validate one recurring buyer problem with paid pilot evidence.",
+      "chapter_ref": "Q1, Q6",
+      "instructions": [
+        "Print one sheet per vertical and date every source.",
+        "Read negative reviews in context; distinguish old defects from current gaps.",
+        "Interview buyers about frequency, workaround costs, and purchasing authority.",
+        "Offer a bounded paid pilot and record cash separately from verbal interest."
+      ],
+      "fields": [
+        {
+          "name": "Vertical wedge",
+          "type": "textarea",
+          "prompt": "Name buyer, recurring task, and narrow outcome.",
+          "example": "Freight brokers: extract shipment exceptions into a review queue."
+        },
+        {
+          "name": "Review evidence",
+          "type": "textarea",
+          "prompt": "Record G2 URLs, dates, product versions, and short 1-star pain excerpts.",
+          "example": "REV-01, dated capture: manual re-entry; verify on current version."
+        },
+        {
+          "name": "Pain frequency",
+          "type": "textarea",
+          "prompt": "Record interviews, occurrences per month, and time lost.",
+          "example": "INT-03: 40 exceptions/month at 15 minutes each."
+        },
+        {
+          "name": "Workaround cost",
+          "type": "textarea",
+          "prompt": "Calculate hours times loaded hourly cost; label estimates.",
+          "example": "10 hours x $40 = $400/month estimated labor."
+        },
+        {
+          "name": "Buyer authority",
+          "type": "textarea",
+          "prompt": "Identify user, budget owner, and purchase path.",
+          "example": "Dispatcher uses; operations manager approves $200/month."
+        },
+        {
+          "name": "Pilot offer",
+          "type": "textarea",
+          "prompt": "Specify price, duration, scope, delivery, and acceptance test.",
+          "example": "$150 for 14 days; 50 records; buyer reviews extraction accuracy."
+        },
+        {
+          "name": "Paid evidence",
+          "type": "textarea",
+          "prompt": "Log prospects, offers, payments, refunds, and receipt references.",
+          "example": "10 interviews; 4 offers; 2 paid; $300 collected; no refunds."
+        },
+        {
+          "name": "Decision",
+          "type": "textarea",
+          "prompt": "Set thresholds before testing; record Build, Revise, or Stop and counterevidence.",
+          "example": "Build after 2 paid pilots; revise if both require unrelated workflows."
+        }
+      ],
+      "completion_gate": "Dated pain evidence, payment records, acceptance criteria, and a decision are recorded."
+    },
+    {
+      "worksheet_id": "ws-02",
+      "number": 2,
+      "title": "Hybrid Seat + Token Metering, Cloud-Credit Cliff & Gross-Margin Calculator",
+      "purpose": "Price usage sustainably before temporary cloud credits expire.",
+      "chapter_ref": "Q3, Q4",
+      "instructions": [
+        "Use one monthly period and currency; label forecasts and actuals.",
+        "Separate seat revenue, included usage, and billable overages.",
+        "Calculate uncapped provider cost, including retries and failed requests.",
+        "Compare subsidized and post-credit economics; use N/A for zero denominators."
+      ],
+      "fields": [
+        {
+          "name": "Seats",
+          "type": "textarea",
+          "prompt": "Enter paid seats and realized monthly seat price excluding tax.",
+          "example": "10 seats x $30 = $300."
+        },
+        {
+          "name": "Included allowance",
+          "type": "textarea",
+          "prompt": "Define pooled or per-seat token allowance and reset policy.",
+          "example": "Pooled 2 million tokens/month; no rollover."
+        },
+        {
+          "name": "Metering ledger",
+          "type": "textarea",
+          "prompt": "Define tenant attribution, token source, deduplication, and invoice reconciliation.",
+          "example": "Unique request ID; input/output counters; retries cost us but are not rebilled."
+        },
+        {
+          "name": "Overages",
+          "type": "textarea",
+          "prompt": "Compute max(0, billable usage - allowance) x overage rate.",
+          "example": "3M - 2M = 1M excess; $40/M yields $40."
+        },
+        {
+          "name": "Provider cost",
+          "type": "textarea",
+          "prompt": "Sum input, output, cache, tool, and retry charges at dated rates.",
+          "example": "Illustrative: input $12 + output $24 + retries $4 = $40."
+        },
+        {
+          "name": "Other COGS",
+          "type": "textarea",
+          "prompt": "Add hosting, storage, payment fees, and delivery support without double counting.",
+          "example": "$25 hosting + $10 fees + $25 support = $60."
+        },
+        {
+          "name": "Credit cliff",
+          "type": "textarea",
+          "prompt": "Record eligible credits, expiry, burn, and full-rate cost after expiry.",
+          "example": "$200 remaining; $40/month eligible burn; expiry in 2 months wins over 5-month runway."
+        },
+        {
+          "name": "Margin and limits",
+          "type": "textarea",
+          "prompt": "GM = (net revenue - full COGS) / net revenue; compare cash cost after credits and stress usage.",
+          "example": "$340 revenue; $100 COGS; GM 70.6%; $40 credit gives 82.4% subsidized margin; test 2x usage."
+        }
+      ],
+      "completion_gate": "Usage reconciles to invoices and post-credit margin supports the chosen price and usage limits."
+    },
+    {
+      "worksheet_id": "ws-03",
+      "number": 3,
+      "title": "Multi-Tenant RLS, Model-Router, Semantic-Cache & Prompt-Injection Audit",
+      "purpose": "Test tenant isolation and model execution boundaries before pilot access.",
+      "chapter_ref": "Q5, Q7",
+      "instructions": [
+        "Use synthetic data and two authorized test tenants.",
+        "Test reads, writes, exports, storage, and background jobs across tenant boundaries.",
+        "Exercise routing failures, cache separation, and hostile retrieved text.",
+        "Record expected versus actual results and rerun repaired failures."
+      ],
+      "fields": [
+        {
+          "name": "Tenant identities",
+          "type": "textarea",
+          "prompt": "Map authenticated users to server-validated tenant membership.",
+          "example": "User A belongs only to tenant A; forged tenant B header rejected."
+        },
+        {
+          "name": "RLS policies",
+          "type": "textarea",
+          "prompt": "Record Row-Level Security (RLS) read/write policy and privileged-role bypass handling.",
+          "example": "Tenant key required; service credentials never reach browser."
+        },
+        {
+          "name": "Isolation tests",
+          "type": "textarea",
+          "prompt": "Log attempts to access another tenant's IDs, exports, files, and jobs.",
+          "example": "TEST-12: tenant A cannot download tenant B export; denied."
+        },
+        {
+          "name": "Model router",
+          "type": "textarea",
+          "prompt": "Specify task tiers, quality threshold, budget, and fallback.",
+          "example": "Cheap extraction first; escalate low confidence; stop after one retry."
+        },
+        {
+          "name": "Semantic cache",
+          "type": "textarea",
+          "prompt": "Define tenant, permission, model, prompt-version keys and invalidation.",
+          "example": "Tenant-scoped cache; revoke access invalidates entries; no cross-tenant similarity hits."
+        },
+        {
+          "name": "Injection probes",
+          "type": "textarea",
+          "prompt": "Test retrieved instructions trying to override task or request secrets.",
+          "example": "Synthetic document requests unrelated export; ignored; no tool executed."
+        },
+        {
+          "name": "Tool boundary",
+          "type": "textarea",
+          "prompt": "List allowlisted operations and server-side authorization checks.",
+          "example": "Read shipment tool validates tenant membership on every call."
+        },
+        {
+          "name": "Audit outcomes",
+          "type": "textarea",
+          "prompt": "Record test ID, actual result, evidence, owner, and retest date.",
+          "example": "CACHE-02 failed; owner Alex adds tenant filter; retest passes with saved trace."
+        }
+      ],
+      "completion_gate": "Cross-tenant and injection probes pass; routing, cache, and tool failures have recorded outcomes."
+    },
+    {
+      "worksheet_id": "ws-04",
+      "number": 4,
+      "title": "Enterprise Trust, Zero-Data-Retention (ZDR) DPA & ROSCA Cancel Checklist",
+      "purpose": "Document verifiable data commitments and test subscription cancellation.",
+      "chapter_ref": "Q2, Q9",
+      "instructions": [
+        "Map customer data through every processor, log, backup, and support tool.",
+        "Verify ZDR eligibility by provider, endpoint, and account; do not infer it from no-training terms.",
+        "Match the DPA and trust answers to implemented controls and retention periods.",
+        "Review ROSCA applicability and test disclosures, express consent, and simple cancellation."
+      ],
+      "fields": [
+        {
+          "name": "Data map",
+          "type": "textarea",
+          "prompt": "List data categories, purpose, destination, and owner.",
+          "example": "Shipment text -> extraction endpoint; billing data -> payment processor."
+        },
+        {
+          "name": "ZDR evidence",
+          "type": "textarea",
+          "prompt": "Record written approval, covered endpoints, exclusions, and verification date.",
+          "example": "Approval Z-01 covers endpoint A; file uploads excluded and disabled."
+        },
+        {
+          "name": "Retention schedule",
+          "type": "textarea",
+          "prompt": "Separate provider retention from application logs, caches, and backups.",
+          "example": "Payload logs off; cache 24h; backup deletion window 30 days."
+        },
+        {
+          "name": "DPA register",
+          "type": "textarea",
+          "prompt": "Record controller/processor roles, subprocessors, transfers, deletion, and incident terms.",
+          "example": "DPA v2 lists hosting and inference providers; deletion request owner assigned."
+        },
+        {
+          "name": "Trust evidence",
+          "type": "textarea",
+          "prompt": "Link access controls, encryption, incident contact, and accurate assurance statements.",
+          "example": "MFA enabled; TLS tested; no certification claimed without evidence."
+        },
+        {
+          "name": "Subscription disclosure",
+          "type": "textarea",
+          "prompt": "Capture price, interval, trial conversion, renewal, and consent evidence before charging.",
+          "example": "$30/seat monthly displayed beside purchase; consent event stored with terms version."
+        },
+        {
+          "name": "Cancel test",
+          "type": "textarea",
+          "prompt": "Record customer path, effective date, receipt, and future-charge suppression.",
+          "example": "Settings -> Cancel; access ends at period end; next invoice suppressed in test."
+        },
+        {
+          "name": "Exceptions and owners",
+          "type": "textarea",
+          "prompt": "Record gaps, applicability review, remedy owner, and retest evidence.",
+          "example": "Upload route lacked ZDR coverage; disabled; endpoint inventory rechecked."
+        }
+      ],
+      "completion_gate": "Claims match documented controls; retention exceptions are explicit and cancellation stops future renewals."
+    },
+    {
+      "worksheet_id": "ws-05",
+      "number": 5,
+      "title": "Scanner Outbound, \"[Competitor] Alternative\", Chrome Extension & GEO Tracker",
+      "purpose": "Measure qualified acquisition across four channels without confusing visibility with revenue.",
+      "chapter_ref": "Q8, Q10",
+      "instructions": [
+        "Assign campaign IDs, dated evidence, and one conversion definition per channel.",
+        "Use permitted public observations for scanner outreach; honor opt-outs.",
+        "Publish accurate comparisons and keep extension permissions minimal.",
+        "Repeat generative engine optimization (GEO) queries with recorded context; attribute pilots separately."
+      ],
+      "fields": [
+        {
+          "name": "Channel hypothesis",
+          "type": "textarea",
+          "prompt": "Name buyer, pain signal, offer, and campaign owner.",
+          "example": "OPS-01: brokers with manual shipment intake; offer a paid pilot."
+        },
+        {
+          "name": "Scanner evidence",
+          "type": "textarea",
+          "prompt": "Record permitted source, observed issue, date, and validation before outreach.",
+          "example": "Public intake page requires copy/paste; manually verified; no private system probing."
+        },
+        {
+          "name": "Outbound funnel",
+          "type": "textarea",
+          "prompt": "Track delivered messages, positive replies, meetings, paid pilots, and opt-outs.",
+          "example": "40 delivered; 6 positive replies; 3 meetings; 1 paid pilot; 2 suppressed contacts."
+        },
+        {
+          "name": "Alternative page",
+          "type": "textarea",
+          "prompt": "Record competitor, comparison sources, dates, use-case fit, and landing-page conversion.",
+          "example": "Comparison v1: current published features cited; 100 sessions, 3 pilot requests."
+        },
+        {
+          "name": "Chrome extension",
+          "type": "textarea",
+          "prompt": "Define useful workflow, minimum permissions, activation event, and installation source.",
+          "example": "User-triggered extraction on selected tab; 20 installs, 8 first successful runs."
+        },
+        {
+          "name": "GEO observations",
+          "type": "textarea",
+          "prompt": "Log engine, date, query, locale, signed-in state, citations, and repeat count.",
+          "example": "Five fresh runs of a broker-software query; cited twice; not treated as two customers."
+        },
+        {
+          "name": "Attribution and CAC",
+          "type": "textarea",
+          "prompt": "Deduplicate customers; record attribution model, spend, labor, and new paying accounts.",
+          "example": "First-touch OPS-01; $120 spend + $80 labor / 2 new accounts = $100 CAC."
+        },
+        {
+          "name": "Channel decision",
+          "type": "textarea",
+          "prompt": "Compare qualified conversions and retained revenue; set next test budget.",
+          "example": "Continue outbound for 7 days at $100 cap; revise extension activation flow."
+        }
+      ],
+      "completion_gate": "All four channels have evidence or explicit not-tested status, deduplicated outcomes, and a next action."
+    },
+    {
+      "worksheet_id": "ws-06",
+      "number": 6,
+      "title": "30-Day MVP Launch Sprint, Smart-Dunning & Exit-Readiness MRR Scorecard",
+      "purpose": "Ship a bounded MVP and reconcile recurring revenue into an inspectable operating record.",
+      "chapter_ref": "Q11, Q12",
+      "instructions": [
+        "Assign one owner, dated deliverable, and acceptance test to each sprint week.",
+        "Launch only the validated workflow; track incidents and buyer acceptance.",
+        "Test dunning with synthetic payment failures and idempotent billing events.",
+        "Reconcile MRR movements to subscriptions; separate cash, pilots, and usage revenue."
+      ],
+      "fields": [
+        {
+          "name": "Days 1-7",
+          "type": "textarea",
+          "prompt": "Record paid-pilot target, interviews, scope, and stop criterion.",
+          "example": "Two paid pilots; one extraction workflow; stop if no buyer pays."
+        },
+        {
+          "name": "Days 8-14",
+          "type": "textarea",
+          "prompt": "Specify working vertical slice and isolation acceptance tests.",
+          "example": "Upload -> extract -> review -> export; both tenant isolation tests pass."
+        },
+        {
+          "name": "Days 15-21",
+          "type": "textarea",
+          "prompt": "Record billing, metering, cancellation, and onboarding tests.",
+          "example": "Synthetic checkout and cancellation pass; usage reconciles to invoice."
+        },
+        {
+          "name": "Days 22-30",
+          "type": "textarea",
+          "prompt": "Record pilot outcomes, incidents, launch decision, and next owner.",
+          "example": "Two pilots accepted; one converted; publish bounded offer on day 30."
+        },
+        {
+          "name": "Smart dunning",
+          "type": "textarea",
+          "prompt": "Define retry timing, decline handling, notices, grace period, and recovery evidence.",
+          "example": "Retry eligible soft declines on days 1/3/7; hard declines request payment update; duplicate webhook ignored."
+        },
+        {
+          "name": "MRR bridge",
+          "type": "textarea",
+          "prompt": "Closing MRR = opening + new + expansion - contraction - churn; state recognition policy.",
+          "example": "$1,000 + $300 + $100 - $50 - $150 = $1,200; exclude pilots and variable overages; annual plans / 12."
+        },
+        {
+          "name": "Retention and collections",
+          "type": "textarea",
+          "prompt": "NRR = (opening + expansion - contraction - churn) / opening; separate recovered cash.",
+          "example": "NRR = 900 / 1,000 = 90%; $60 recovered cash is not new MRR; zero opening means N/A."
+        },
+        {
+          "name": "Exit-readiness record",
+          "type": "textarea",
+          "prompt": "Link reconciled billing, churn cohorts, COGS, concentration, IP ownership, and runbooks; mark gaps.",
+          "example": "Billing export reconciled; top customer 25% MRR; contractor IP record missing, owner Alex due day 30."
+        }
+      ],
+      "completion_gate": "Sprint deliverables have evidence, dunning is tested, and the MRR bridge reconciles with explicit data gaps."
+    }
+  ]
+}

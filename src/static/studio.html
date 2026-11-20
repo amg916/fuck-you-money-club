@@ -39,7 +39,7 @@ label{display:block;color:var(--muted);font-size:12px;font-weight:650;line-heigh
 <footer><strong>Big Money. Small Teams.<br>No Bullshit.</strong><br>Private workspace · Owner-led approval</footer>
 </aside>
 <div class="workspace">
-<header class="topbar"><div class="eyebrow">The Fuck You Money Club / Publishing Studio</div><div class="actions"><select id="studio-volume-select" data-testid="volume-selector" aria-label="Active playbook volume"><option value="vol-001-heir-hunting">Vol. 001 · Heir Hunting (87/100)</option><option value="vol-002-surplus-funds-recovery">Vol. 002 · Surplus Funds Recovery (86/100)</option><option value="vol-003-digital-product-empire">Vol. 003 · Digital Product Empire (90/100)</option></select><span class="tag gold" data-testid="brand-master">Master: Concept B · Bold Editorial</span><span id="connection" class="status" role="status">Connecting to workspace…</span><a href="/site">Public site ↗</a></div></header>
+<header class="topbar"><div class="eyebrow">The Fuck You Money Club / Publishing Studio</div><div class="actions"><select id="studio-volume-select" data-testid="volume-selector" aria-label="Active playbook volume"><option value="vol-001-heir-hunting">Vol. 001 · Heir Hunting (87/100)</option><option value="vol-002-surplus-funds-recovery">Vol. 002 · Surplus Funds Recovery (86/100)</option><option value="vol-003-digital-product-empire">Vol. 003 · Digital Product Empire (90/100)</option><option value="vol-004-ai-powered-micro-saas">Vol. 004 · AI-Powered Micro SaaS (88/100)</option></select><span class="tag gold" data-testid="brand-master">Master: Concept B · Bold Editorial</span><span id="connection" class="status" role="status">Connecting to workspace…</span><a href="/site">Public site ↗</a></div></header>
 <main id="main" tabindex="-1">
 <div id="bootstrap-errors" class="fatal" role="alert" hidden></div>
 <section id="sec-dashboard" aria-labelledby="title-dashboard"><div class="heading"><div><div class="eyebrow">The editorial desk</div><h1 id="title-dashboard" tabindex="-1">Make the next move count.</h1><p>Your publishing pipeline, from first signal to final approval.</p></div><div class="edition">STUDIO / 001</div></div><div id="dashboard-content" class="loading">Loading dashboard…</div></section>
@@ -110,9 +110,9 @@ function switchSection(id, focus = false) {
  document.title = `${$(`#nav-${id}`).textContent.replace(/^\d+\s*/, '').trim()} · FYMC Studio`;
 }
 $$('.sidebar nav a').forEach(a=>a.addEventListener('click',()=>switchSection(a.hash.slice(1),true)));
-const volumeIds = ['vol-001-heir-hunting','vol-002-surplus-funds-recovery','vol-003-digital-product-empire'];
-const volumeNumber = () => S.volumeId===volumeIds[2]?'003':S.volumeId===volumeIds[1]?'002':'001';
-const volumeTitle = () => S.volumeId===volumeIds[2]?'Digital Product Empire':S.volumeId===volumeIds[1]?'Surplus Funds Recovery':'Heir Hunting';
+const volumeIds = ['vol-001-heir-hunting','vol-002-surplus-funds-recovery','vol-003-digital-product-empire','vol-004-ai-powered-micro-saas'];
+const volumeNumber = () => S.volumeId===volumeIds[3]?'004':S.volumeId===volumeIds[2]?'003':S.volumeId===volumeIds[1]?'002':'001';
+const volumeTitle = () => S.volumeId===volumeIds[3]?'AI-Powered Micro SaaS':S.volumeId===volumeIds[2]?'Digital Product Empire':S.volumeId===volumeIds[1]?'Surplus Funds Recovery':'Heir Hunting';
 function hashVolume() { const id=location.hash.slice(1).replace(/^volume\//,''); return location.hash.startsWith('#volume/') && volumeIds.includes(id)?id:null; }
 let volumeSeq=0, bootstrapping=false, loadedVolumeId=S.volumeId;
 async function changeVolume(id, openManuscript=false) {

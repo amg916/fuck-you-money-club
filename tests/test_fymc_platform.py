@@ -2351,6 +2351,7 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
             FLAGSHIP_VOLUME_ID,
             VOLUME_002_ID,
             VOLUME_003_ID,
+            VOLUME_004_ID,
             PUBLISHED_VOLUME_IDS,
             OWNER_APPROVED_CONCEPT_ID,
         )
@@ -2363,11 +2364,15 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
         from src.fymc.scorecard_engine import (
             get_volume_002_scorecard,
             get_volume_003_scorecard,
+            get_volume_004_scorecard,
             get_volume_scorecard,
         )
 
         self.assertEqual(OWNER_APPROVED_CONCEPT_ID, "concept_b")
-        self.assertEqual(PUBLISHED_VOLUME_IDS, (FLAGSHIP_VOLUME_ID, VOLUME_002_ID, VOLUME_003_ID))
+        self.assertEqual(
+            PUBLISHED_VOLUME_IDS,
+            (FLAGSHIP_VOLUME_ID, VOLUME_002_ID, VOLUME_003_ID, VOLUME_004_ID),
+        )
 
         # 1. Concept B is Owner-Approved Series Master; deploy & sales remain False
         state = self.store.load_publishing_state(self.root, verify_manifest=True)
@@ -2528,12 +2533,56 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
         self.assertEqual(man_b_v3["volume_id"], VOLUME_003_ID)
         self.assertTrue(man_b_v3["approved"])
 
-        # 6. Full QA across all three built volumes + multi-volume HTTP routes
+        # 6. Volume 004 (AI-Powered Micro SaaS, 88/100) 10/10 5-layer content structure & exports
+        sc4 = get_volume_004_scorecard()
+        self.assertEqual(sc4["total_score"], 88)
+        self.assertEqual(get_volume_scorecard("vol-004")["candidate_number"], 22)
+        state_v4 = self.store.load_publishing_state(self.root, volume_id=VOLUME_004_ID, verify_manifest=True)
+        self.assertEqual(state_v4["active_volume_id"], VOLUME_004_ID)
+        v4 = state_v4["volume"]
+        self.assertEqual(v4["metadata"]["volume_number"], 4)
+        self.assertEqual(v4["scorecard"]["total_score"], 88)
+        self.assertEqual(len(v4["manuscript"]["operator_plays"]), 27)
+        self.assertGreater(v4["manuscript"]["total_word_count"], 50000)
+        repo_v4 = self.store.load_publishing_state(ROOT, volume_id=VOLUME_004_ID, verify_manifest=True)["volume"]
+        self.assertGreater(repo_v4["manuscript"]["total_word_count"], 56000)
+        self.assertGreaterEqual(v4["manuscript"]["expert_youtube_link_count"], 180)
+        self.assertEqual(len(v4["workbook"]["worksheets"]), 6)
+        for ch in v4["manuscript"]["chapters"]:
+            prose_words = sum(
+                len(re.findall(r"\b\w+\b", str(p)))
+                for sec in ch.get("sections", [])
+                for p in sec.get("paragraphs", [])
+            )
+            self.assertGreaterEqual(prose_words, 1800, f"Vol 004 Q{ch['chapter_number']} prose words={prose_words}")
+            self.assertGreaterEqual(len(ch.get("statutory_citations", [])), 2)
+            self.assertGreaterEqual(len(ch.get("source_citations", [])), 15)
+            for cit in ch.get("source_citations", []):
+                ch_name = str(cit.get("channel") or "").strip()
+                self.assertTrue(ch_name and ch_name.lower() != "unknown", cit)
+                self.assertRegex(str(cit.get("text") or "").strip(), r'[.!?]["\')\]]*$')
+
+        pdf_v4_b = render_fymc_pdf_bytes(state_v4, "concept_b", "digital_pdf", volume_id=VOLUME_004_ID)
+        self.assertTrue(validate_pdf_bytes(pdf_v4_b, "digital_pdf")["passed"])
+        self.assertIn(b"VOLUME 004", pdf_v4_b)
+        self.assertIn(b"OWNER-APPROVED MASTER EDITION - CONCEPT B", pdf_v4_b)
+        epub_v4_b = render_fymc_epub_bytes(state_v4, "concept_b", volume_id=VOLUME_004_ID)
+        self.assertTrue(validate_epub_bytes(epub_v4_b)["passed"])
+        exp_b_v4 = export_concept_package(self.root, state_v4, "concept_b")
+        self.assertIn(VOLUME_004_ID, exp_b_v4["files"]["manifest.json"])
+        man_b_v4 = json.loads(Path(exp_b_v4["files"]["manifest.json"]).read_text(encoding="utf-8"))
+        self.assertEqual(man_b_v4["volume_id"], VOLUME_004_ID)
+        self.assertTrue(man_b_v4["approved"])
+
+        # 7. Full QA across all four built volumes + multi-volume HTTP routes
         qa = run_full_qa_suite(self.root, state)
         self.assertTrue(qa["overall_pass"], qa["issues"])
         self.assertTrue(qa["gates"]["owner_design_approved"])
         self.assertTrue(qa["gates"]["all_volumes_pass"])
-        self.assertEqual(set(qa["volume_reports"]), {FLAGSHIP_VOLUME_ID, VOLUME_002_ID, VOLUME_003_ID})
+        self.assertEqual(
+            set(qa["volume_reports"]),
+            {FLAGSHIP_VOLUME_ID, VOLUME_002_ID, VOLUME_003_ID, VOLUME_004_ID},
+        )
 
         server = create_server("127.0.0.1", 0, str(self.root))
         thread = threading.Thread(target=server.serve_forever, daemon=True)
@@ -2559,14 +2608,20 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
             code, ov2 = http_req(f"/api/fymc/overview?volume={VOLUME_002_ID}")
             self.assertEqual(code, 200)
             self.assertEqual(ov2["active_volume_id"], VOLUME_002_ID)
-            self.assertEqual(len(ov2["published_volumes"]), 3)
+            self.assertEqual(len(ov2["published_volumes"]), 4)
             self.assertEqual(ov2["volumes"][1]["status"], "approved_master")
             self.assertEqual(ov2["volumes"][2]["status"], "approved_master")
+            self.assertEqual(ov2["volumes"][3]["status"], "approved_master")
 
             code, ov3 = http_req(f"/api/fymc/overview?volume={VOLUME_003_ID}")
             self.assertEqual(code, 200)
             self.assertEqual(ov3["active_volume_id"], VOLUME_003_ID)
             self.assertEqual(ov3["volume"]["metadata"]["volume_number"], 3)
+
+            code, ov4 = http_req(f"/api/fymc/overview?volume={VOLUME_004_ID}")
+            self.assertEqual(code, 200)
+            self.assertEqual(ov4["active_volume_id"], VOLUME_004_ID)
+            self.assertEqual(ov4["volume"]["metadata"]["volume_number"], 4)
 
             code, svg2 = http_req(f"/api/fymc/svg/mockup?volume={VOLUME_002_ID}&concept=b&asset=01_front_cover")
             self.assertEqual(code, 200)
@@ -2575,6 +2630,10 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
             code, svg3 = http_req(f"/api/fymc/svg/mockup?volume={VOLUME_003_ID}&concept=b&asset=01_front_cover")
             self.assertEqual(code, 200)
             self.assertIn(b"003", svg3)
+
+            code, svg4 = http_req(f"/api/fymc/svg/mockup?volume={VOLUME_004_ID}&concept=b&asset=01_front_cover")
+            self.assertEqual(code, 200)
+            self.assertIn(b"004", svg4)
 
             v1_q1_before = (self.root / "publishing/volumes" / FLAGSHIP_VOLUME_ID / "chapters/chapter-01.md").read_bytes()
             code, upd = http_req(

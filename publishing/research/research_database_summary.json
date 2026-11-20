@@ -1,6 +1,6 @@
 {
-  "abridged_video_count": 336,
-  "raw_video_count": 336,
+  "abridged_video_count": 411,
+  "raw_video_count": 411,
   "summary": {
     "type": "dict",
     "keys": [
@@ -22,11 +22,11 @@
       "coverage": 6
     },
     "values": {
-      "generated_at": "2026-11-20T17:10:07+00:00",
+      "generated_at": "2026-11-20T17:54:18+00:00",
       "schema_version": "1.0"
     }
   },
-  "generated_at": "2026-11-20T17:10:07Z",
+  "generated_at": "2026-11-20T17:54:18Z",
   "counts": {
     "topics": 8
   },
@@ -34,65 +34,65 @@
     {
       "topic_id": "business_model_and_economics",
       "title": "Business Model, Contingency Economics & Deal Scale",
-      "video_count": 232,
-      "tip_count": 336,
-      "channel_count": 118,
+      "video_count": 292,
+      "tip_count": 538,
+      "channel_count": 166,
       "top_sources": [
+        {
+          "video_id": "8eHInIdNfa0",
+          "title": "The Ultimate SaaS Unit Economics Tutorial",
+          "author": "Eric Andrews",
+          "url": "https://www.youtube.com/watch?v=8eHInIdNfa0",
+          "duration": "00:19:07"
+        },
+        {
+          "video_id": "Ju9H1oq7CM8",
+          "title": "The Economics of Owning a SaaS Company",
+          "author": "Business Mechanics",
+          "url": "https://www.youtube.com/watch?v=Ju9H1oq7CM8",
+          "duration": "00:17:13"
+        },
+        {
+          "video_id": "9Rig_F79rWo",
+          "title": "Micro-SaaS in 2026 🚀 | Build a Profitable SaaS Business with Just $50/Month",
+          "author": "TechFuelAI",
+          "url": "https://www.youtube.com/watch?v=9Rig_F79rWo",
+          "duration": "00:09:34"
+        },
+        {
+          "video_id": "Xpw9vNbYna0",
+          "title": "Core Unit Economics: The Financial Formulas Behind SaaS, E-Commerce, and Marketplaces",
+          "author": "One Minute Finance",
+          "url": "https://www.youtube.com/watch?v=Xpw9vNbYna0",
+          "duration": "00:11:28"
+        },
+        {
+          "video_id": "aOKH0EoSCCc",
+          "title": "The Economics of Owning a SaaS Company",
+          "author": "Costoday",
+          "url": "https://www.youtube.com/watch?v=aOKH0EoSCCc",
+          "duration": "00:13:45"
+        },
+        {
+          "video_id": "hyC9WOKzUMc",
+          "title": "SaaS Metrics Explained: MRR, ARR, Churn, LTV & CAC | Product Management for Beginners",
+          "author": "CodeLucky",
+          "url": "https://www.youtube.com/watch?v=hyC9WOKzUMc",
+          "duration": "00:05:05"
+        },
+        {
+          "video_id": "zo3QHrXiprs",
+          "title": "11 essential SaaS metrics explained in 11 minutes",
+          "author": "ChartMogul",
+          "url": "https://www.youtube.com/watch?v=zo3QHrXiprs",
+          "duration": "00:11:04"
+        },
         {
           "video_id": "TGNTFquVxZU",
           "title": "How to Start a Digital Product Business (& ACTUALLY Make Money)",
           "author": "Tatyana Savage",
           "url": "https://www.youtube.com/watch?v=TGNTFquVxZU",
           "duration": "00:15:39"
-        },
-        {
-          "video_id": "zQQZEPMxT6U",
-          "title": "How To Turn Your $24 Digital Product Into $24,000 (Scaling Strategy That Works)",
-          "author": "Maria Wendt",
-          "url": "https://www.youtube.com/watch?v=zQQZEPMxT6U",
-          "duration": "00:14:27"
-        },
-        {
-          "video_id": "A-yBamfrXQs",
-          "title": "Copy This Method To Make $2,700/Week with Digital Products",
-          "author": "Iman Gadzhi",
-          "url": "https://www.youtube.com/watch?v=A-yBamfrXQs",
-          "duration": "00:39:21"
-        },
-        {
-          "video_id": "Qq-EyvVj7IM",
-          "title": "Paddle vs LemonSqueezy (2026) | Which One is Better?",
-          "author": "houdztech",
-          "url": "https://www.youtube.com/watch?v=Qq-EyvVj7IM",
-          "duration": "00:04:56"
-        },
-        {
-          "video_id": "RxypuPGBRPI",
-          "title": "I Made $32.7 Million Selling Simple Digital Products (Full Masterclass)",
-          "author": "Richard Yu",
-          "url": "https://www.youtube.com/watch?v=RxypuPGBRPI",
-          "duration": "00:26:02"
-        },
-        {
-          "video_id": "UxhtBuVj4gY",
-          "title": "The Complete Guide to Upsells ($8 Billion in Data)",
-          "author": "SamCart",
-          "url": "https://www.youtube.com/watch?v=UxhtBuVj4gY",
-          "duration": "00:27:30"
-        },
-        {
-          "video_id": "U_Eh790rq3o",
-          "title": "How Wholesalers Can Turn Title Problems Into Profitable Curative Deals",
-          "author": "Courtney Fricke",
-          "url": "https://www.youtube.com/watch?v=U_Eh790rq3o",
-          "duration": "00:28:46"
-        },
-        {
-          "video_id": "mf1WAw0FyaI",
-          "title": "Top 7 Secrets To Building a $45,000/Month Skool Community",
-          "author": "Adnan Pilditch",
-          "url": "https://www.youtube.com/watch?v=mf1WAw0FyaI",
-          "duration": "00:07:35"
         }
       ],
       "top_timestamped_insights": [
@@ -142,12 +142,39 @@
           "verbatim_research_only": true
         },
         {
+          "tip_paraphrase_summary": "Afirmó contratado esto es mr3 firmó un contrato de 34 mil y pone sobre su bien ticket en medio en un cliente así es…",
+          "category": "Legal / Deadline",
+          "timestamp": "00:48:19",
+          "link": "https://www.youtube.com/watch?v=qgELHrlpUGo&t=2899s",
+          "video_title": "Métricas SaaS y cómo modelarlas: MRR, ARR, churn y unit economics",
+          "author": "The Startup CFO",
+          "verbatim_research_only": true
+        },
+        {
           "tip_paraphrase_summary": "I've got 6,610 people in a free community and my first thought was get rid of anybody and everybody who has never contributed, never…",
           "category": "Pitfall / Hard No",
           "timestamp": "00:04:10",
           "link": "https://www.youtube.com/watch?v=8lz_gy-Osw8&t=250s",
           "video_title": "Are Free Skool Communities Dying? Why I Turned Mine Paid",
           "author": "Doug Boughton",
+          "verbatim_research_only": true
+        },
+        {
+          "tip_paraphrase_summary": "Make sure that we do the chapters thing on the description if you want to skip to the parts that you already know okay…",
+          "category": "Pitfall / Hard No",
+          "timestamp": "00:00:52",
+          "link": "https://www.youtube.com/watch?v=s8_Vax8VUmM&t=52s",
+          "video_title": "Every SaaS Acronym Explained",
+          "author": "The Startup Club by Slidebean",
+          "verbatim_research_only": true
+        },
+        {
+          "tip_paraphrase_summary": "Grow their business. But you don't want to be a bank. You don't want to be a credit card company. You don't want to…",
+          "category": "Pitfall / Hard No",
+          "timestamp": "00:32:19",
+          "link": "https://www.youtube.com/watch?v=y6eOdHpH5W8&t=1939s",
+          "video_title": "How to Build a Vertical SaaS Company AI Can’t Replace | Sahill Poddar",
+          "author": "Verticals: A Weekly Biz Show On Vertical AI",
           "verbatim_research_only": true
         },
         {
@@ -158,76 +185,49 @@
           "video_title": "How to make $1,000,000/mo using self liquidating funnels (FREE COURSE)",
           "author": "Daniel Fazio",
           "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "Set up your store step by step, and how to market your store to make sales on autopilot. I've made over $5 million selling…",
-          "category": "Insider Tactic",
-          "timestamp": "00:00:51",
-          "link": "https://www.youtube.com/watch?v=dr37DaI8g3U&t=51s",
-          "video_title": "How to Sell AI Digital Products (beginner's guide)",
-          "author": "Nathan Nazareth",
-          "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "Much, spending most of my time on things that really don't matter, that don't really help people, that don't make any money. And I…",
-          "category": "Pitfall / Hard No",
-          "timestamp": "00:02:21",
-          "link": "https://www.youtube.com/watch?v=8lz_gy-Osw8&t=141s",
-          "video_title": "Are Free Skool Communities Dying? Why I Turned Mine Paid",
-          "author": "Doug Boughton",
-          "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "Everything feels competitive when you're just getting started. And the main thing to remember is that nothing works if you don't work. That's just…",
-          "category": "Pitfall / Hard No",
-          "timestamp": "00:05:06",
-          "link": "https://www.youtube.com/watch?v=T-gfoXzz8k8&t=306s",
-          "video_title": "Build & Sell Digital Products with A.I. (Full Course)",
-          "author": "Alek",
-          "verbatim_research_only": true
         }
       ],
       "statutes_and_forms": [
         "form and",
         "form of",
-        "form that",
         "form to",
+        "form that",
         "form for",
         "form is",
+        "form the",
         "form you",
         "letters of administration",
-        "form the",
         "form below",
+        "form on",
         "form or",
+        "form where",
         "quiet title",
+        "form content",
         "form so",
         "letters testamentary",
         "property Act",
-        "form on",
-        "form partition",
-        "form where",
-        "form an",
-        "form content",
+        "form in",
         "form like",
+        "form partition",
+        "form an",
         "form our",
         "form page",
+        "form with",
         "warranty deed",
         "affidavit of heirship",
         "court order",
         "form a",
+        "form as",
+        "form called",
+        "form if",
         "form law",
         "form probate",
         "form state",
+        "form this",
+        "form uh",
+        "form video",
         "form your",
-        "Information Act",
-        "summary administration",
-        "affidavit of airship",
-        "form asks",
-        "form best",
-        "form called",
-        "form features",
-        "form first",
-        "form from"
+        "Information Act"
       ],
       "tools_and_portals": [
         "Facebook",
@@ -235,6 +235,7 @@
         "Ancestry",
         "FamilySearch",
         "LinkedIn",
+        "Excel",
         "https://excesselite.com",
         "https://www.facebook.com/groups/assetrecovery",
         "https://www.moneymakingjug.com/inquiry",
@@ -254,7 +255,6 @@
         "https://www.youtube.com/@courtneyfricke",
         "https://x.com/courtneyfricke",
         "https://youtu.be/3cmj5kGm2Xw",
-        "Excel",
         "https://www.youtube.com/surplusfunds101",
         "https://www.instagram.com/thedavidwilkerson",
         "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
@@ -275,9 +275,9 @@
     {
       "topic_id": "probate_and_docket_sourcing",
       "title": "County Probate Dockets, Intestate Filings & Estate Leads",
-      "video_count": 290,
-      "tip_count": 630,
-      "channel_count": 119,
+      "video_count": 325,
+      "tip_count": 645,
+      "channel_count": 152,
       "top_sources": [
         {
           "video_id": "oZiYbKNvxJY",
@@ -432,19 +432,20 @@
         "form and",
         "form of",
         "form below",
-        "form is",
         "form the",
         "form to",
+        "form is",
         "form for",
         "form that",
         "form you",
         "letters of administration",
         "form a",
         "form so",
+        "form where",
         "quiet title",
+        "form in",
         "form on",
         "form or",
-        "form where",
         "letters testamentary",
         "property Act",
         "affidavit of heirship",
@@ -456,7 +457,6 @@
         "affidavit of airship",
         "court order",
         "form features",
-        "form in",
         "form we",
         "form will",
         "form your",
@@ -475,10 +475,10 @@
         "Google",
         "Ancestry",
         "FamilySearch",
+        "LinkedIn",
         "https://excesselite.com",
         "https://www.facebook.com/groups/assetrecovery",
         "https://www.moneymakingjug.com/inquiry",
-        "LinkedIn",
         "https://www.surplusfunds101.com/freecallingscript",
         "https://www.instagram.com/erizzyy/",
         "https://www.youtube.com/surplusfunds101",
@@ -488,6 +488,7 @@
         "https://www.youtube.com/@courtneyfricke",
         "https://x.com/courtneyfricke",
         "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
+        "Excel",
         "https://www.instagram.com/thedavidwilkerson",
         "http://familysearch.me/facebook",
         "http://familysearch.me/home",
@@ -499,7 +500,6 @@
         "http://familysearch.me/youtubeportuguese",
         "http://familysearch.me/youtubespanish",
         "https://youtu.be/3cmj5kGm2Xw",
-        "Excel",
         "MyHeritage",
         "Regrid",
         "http://www.youtube.com/channel/UCsc0AQkAh_2cQmxqwD6VWRw?sub_confirmation=1",
@@ -516,9 +516,9 @@
     {
       "topic_id": "unclaimed_property_and_escheat",
       "title": "State Unclaimed Property, Escheated Funds & Treasury Claims",
-      "video_count": 135,
+      "video_count": 156,
       "tip_count": 582,
-      "channel_count": 49,
+      "channel_count": 70,
       "top_sources": [
         {
           "video_id": "bsbWDqAXsrE",
@@ -676,9 +676,9 @@
         "form that",
         "form you",
         "form the",
-        "form for",
         "form of",
         "form to",
+        "form for",
         "form today",
         "form our",
         "affidavit of heirship",
@@ -691,10 +691,12 @@
         "Information Act",
         "summary administration",
         "form a",
+        "form all",
         "form an",
         "form from",
         "form it",
         "Form located",
+        "form now",
         "form on",
         "form online",
         "form research",
@@ -703,13 +705,11 @@
         "form then",
         "form this",
         "Form uh",
+        "form where",
         "form which",
         "form will",
-        "section 3",
-        "Section 4",
-        "Section 5",
-        "section 6",
-        "actually act"
+        "form with",
+        "section 3"
       ],
       "tools_and_portals": [
         "Facebook",
@@ -724,11 +724,11 @@
         "https://www.instagram.com/erizzyy/",
         "Regrid",
         "https://www.facebook.com/groups/770825015084618",
-        "https://www.instagram.com/erizzyy",
+        "LinkedIn",
         "CSV",
+        "https://www.instagram.com/erizzyy",
         "https://skool.com/surplusfunds",
         "https://surplusfunds.ai",
-        "LinkedIn",
         "Ancestry",
         "DataTree",
         "Excel",
@@ -757,9 +757,9 @@
     {
       "topic_id": "genealogy_and_heirship_proof",
       "title": "Forensic Genealogy, Per-Stirpes Kinship & Proof of Heirship",
-      "video_count": 301,
-      "tip_count": 558,
-      "channel_count": 139,
+      "video_count": 355,
+      "tip_count": 585,
+      "channel_count": 182,
       "top_sources": [
         {
           "video_id": "7M3XZfN7814",
@@ -856,6 +856,15 @@
           "verbatim_research_only": true
         },
         {
+          "tip_paraphrase_summary": "Credits. So, if you have not yet gotten credits from your VC or from your accelerator, or if you got less than $100,000 in…",
+          "category": "Legal / Deadline",
+          "timestamp": "00:01:11",
+          "link": "https://www.youtube.com/watch?v=MO1ZQ4wyWeM&t=71s",
+          "video_title": "How to Get $100K in Credits for Claude as a Startup",
+          "author": "Neta Arbel | Growthgrid",
+          "verbatim_research_only": true
+        },
+        {
           "tip_paraphrase_summary": "On how far it goes back. And then start doing your research on finding out who those potential heirs are who are all the…",
           "category": "Pitfall / Hard No",
           "timestamp": "00:04:54",
@@ -899,37 +908,31 @@
           "video_title": "How To Create A Self-liquidating Offer Funnel For Your Business",
           "author": "Pam Obasa",
           "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "In family tree maker and it's a little bit different image here because that same file has several different documents but each one of…",
-          "category": "Insider Tactic",
-          "timestamp": "00:07:25",
-          "link": "https://www.youtube.com/watch?v=DUAbGD8rVzA&t=445s",
-          "video_title": "Peeling Back the Layers: Citing Sources from Online Materials, Part 1",
-          "author": "FamilySearch",
-          "verbatim_research_only": true
         }
       ],
       "statutes_and_forms": [
         "form and",
         "form of",
-        "form that",
-        "form below",
         "form to",
+        "form that",
         "form you",
+        "form below",
         "form is",
         "form for",
         "form the",
         "letters of administration",
         "form a",
+        "form on",
+        "form content",
+        "form in",
         "form or",
         "form so",
-        "quiet title",
-        "form on",
         "form where",
+        "quiet title",
         "property Act",
         "affidavit of heirship",
-        "form content",
+        "form as",
+        "form like",
         "form partition",
         "form will",
         "form your",
@@ -937,32 +940,30 @@
         "affidavit of airship",
         "form an",
         "form features",
-        "form in",
-        "form like",
+        "form if",
         "form our",
         "form page",
+        "form this",
+        "Form uh",
+        "form video",
+        "form with",
         "Information Act",
         "summary administration",
         "warranty deed",
-        "court order",
-        "form as",
-        "form due",
-        "form from",
-        "form I",
-        "form if",
-        "form law"
+        "balancing act"
       ],
       "tools_and_portals": [
         "Facebook",
         "Google",
         "Ancestry",
         "FamilySearch",
+        "LinkedIn",
         "https://excesselite.com",
         "https://www.facebook.com/groups/assetrecovery",
         "https://www.moneymakingjug.com/inquiry",
-        "LinkedIn",
         "https://www.surplusfunds101.com/freecallingscript",
         "https://www.youtube.com/surplusfunds101",
+        "Excel",
         "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
         "https://www.instagram.com/thedavidwilkerson",
         "https://www.instagram.com/erizzyy/",
@@ -981,7 +982,6 @@
         "http://familysearch.me/youtubespanish",
         "https://www.youtube.com/@courtneyfricke",
         "https://youtu.be/3cmj5kGm2Xw",
-        "Excel",
         "MyHeritage",
         "Find a Grave",
         "http://www.youtube.com/channel/UCsc0AQkAh_2cQmxqwD6VWRw?sub_confirmation=1",
@@ -998,9 +998,9 @@
     {
       "topic_id": "skip_tracing_and_outreach",
       "title": "Skip Tracing, Ethical Heir Contact & Trust Building",
-      "video_count": 149,
-      "tip_count": 80,
-      "channel_count": 74,
+      "video_count": 171,
+      "tip_count": 83,
+      "channel_count": 94,
       "top_sources": [
         {
           "video_id": "dJ-LTFmMsTg",
@@ -1154,44 +1154,44 @@
       "statutes_and_forms": [
         "form of",
         "form and",
-        "form below",
         "form to",
-        "form that",
-        "quiet title",
-        "form a",
+        "form below",
         "form for",
+        "form that",
         "form the",
         "form you",
+        "quiet title",
+        "form a",
+        "form is",
+        "form where",
         "form our",
         "form partition",
         "form so",
-        "form where",
         "property act",
-        "form is",
+        "form content",
         "form on",
+        "Form uh",
         "form your",
         "affidavit of heirship",
+        "balancing act",
         "court order",
-        "form content",
+        "form in",
+        "form this",
+        "form which",
         "form will",
+        "form with",
         "just act",
         "summary administration",
         "warranty deed",
         "affidavit of airship",
-        "balancing act",
+        "form all",
         "form an",
+        "form as",
+        "form called",
+        "form doesn",
+        "form doing",
         "form due",
-        "form in",
-        "form Law",
-        "form like",
-        "form online",
-        "form research",
-        "form screens",
-        "form then",
-        "form this",
-        "Form uh",
-        "form video",
-        "form what"
+        "form Law"
       ],
       "tools_and_portals": [
         "Facebook",
@@ -1209,8 +1209,8 @@
         "https://www.moneymakingjug.com/inquiry",
         "https://www.youtube.com/@courtneyfricke",
         "https://x.com/courtneyfricke",
-        "Ancestry",
         "Excel",
+        "Ancestry",
         "https://probatemastery.com",
         "https://www.facebook.com/groups/curativetitle",
         "https://www.instagram.com/erizzyy/",
@@ -1239,9 +1239,9 @@
     {
       "topic_id": "contracts_and_compensation",
       "title": "Fee Agreements, Assignments of Interest & Escrow Disbursement",
-      "video_count": 272,
-      "tip_count": 317,
-      "channel_count": 130,
+      "video_count": 325,
+      "tip_count": 341,
+      "channel_count": 173,
       "top_sources": [
         {
           "video_id": "VBvaq5etzV4",
@@ -1356,6 +1356,15 @@
           "verbatim_research_only": true
         },
         {
+          "tip_paraphrase_summary": "I applied and got a $1,000 AWS startup credit. AWS offers a $1,000 credit if you're building your startup. They also give up to…",
+          "category": "Sequence / Alternative",
+          "timestamp": "00:00:00",
+          "link": "https://www.youtube.com/watch?v=_oN2fQHccDc&t=0s",
+          "video_title": "How I Got $1,000 From AWS For My Startup!",
+          "author": "Vinod Sharma",
+          "verbatim_research_only": true
+        },
+        {
           "tip_paraphrase_summary": "If you're buying real estate in Texas, there's one thing you absolutely need to do before you close — and that's check the title.…",
           "category": "Legal / Deadline",
           "timestamp": "00:00:00",
@@ -1381,70 +1390,62 @@
           "video_title": "Differentiating Yourself From The Competition: How To HASHTAG Your ELEVATOR PITCH | #10",
           "author": "Probate Mastery",
           "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "Agree to pay all attorney fees out of the client's share. So Caesar's 20% fee stayed whole. On a $52,000 Florida surplus, he made…",
-          "category": "Legal / Deadline",
-          "timestamp": "00:13:29",
-          "link": "https://www.youtube.com/watch?v=DK8BPV7WVvI&t=809s",
-          "video_title": "Give Me 17 Minutes, I’ll Give You 10,000 Hours of Surplus Funds Knowledge",
-          "author": "Money Making Juggernaut",
-          "verbatim_research_only": true
         }
       ],
       "statutes_and_forms": [
         "form and",
         "form of",
+        "form to",
         "form that",
         "form below",
-        "form to",
         "form you",
         "Form is",
         "form for",
-        "letters of administration",
         "form the",
+        "letters of administration",
         "form on",
-        "form a",
+        "form content",
         "form where",
+        "form a",
+        "form like",
         "letters testamentary",
         "property Act",
         "quiet title",
         "affidavit of heirship",
-        "form content",
-        "form like",
+        "form as",
+        "form in",
         "form or",
         "form our",
         "form partition",
         "form so",
         "court order",
+        "form this",
+        "Form uh",
+        "form video",
         "form we",
         "form will",
+        "form with",
         "form your",
         "Information Act",
         "summary administration",
         "warranty deed",
         "affidavit of airship",
-        "form as",
-        "form due",
-        "form features",
-        "form from",
-        "form I",
-        "form in",
-        "form law",
-        "form probate",
-        "form state"
+        "balancing act",
+        "form called",
+        "form due"
       ],
       "tools_and_portals": [
         "Facebook",
         "Google",
         "Ancestry",
+        "LinkedIn",
         "https://excesselite.com",
         "https://www.facebook.com/groups/assetrecovery",
         "FamilySearch",
         "https://www.moneymakingjug.com/inquiry",
         "https://www.surplusfunds101.com/freecallingscript",
-        "LinkedIn",
         "https://www.youtube.com/surplusfunds101",
+        "Excel",
         "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
         "https://www.instagram.com/thedavidwilkerson",
         "https://www.instagram.com/erizzyy/",
@@ -1453,7 +1454,6 @@
         "https://www.facebook.com/courtneyfricke19/",
         "https://www.youtube.com/@courtneyfricke",
         "https://x.com/courtneyfricke",
-        "Excel",
         "https://probatemastery.com",
         "https://www.facebook.com/groups/770825015084618",
         "https://www.facebook.com/groups/curativetitle",
@@ -1480,9 +1480,9 @@
     {
       "topic_id": "statutory_caps_and_licensing",
       "title": "State Fee Caps, Waiting Periods, PI Licensing & UPL Rules",
-      "video_count": 299,
-      "tip_count": 223,
-      "channel_count": 129,
+      "video_count": 342,
+      "tip_count": 272,
+      "channel_count": 169,
       "top_sources": [
         {
           "video_id": "TA4mtGUeNo8",
@@ -1637,19 +1637,20 @@
         "form and",
         "form of",
         "form below",
+        "form to",
         "form for",
         "form that",
         "form the",
-        "form to",
         "form is",
         "form you",
         "letters of administration",
         "form a",
-        "form so",
-        "quiet title",
         "form on",
-        "form or",
+        "form so",
         "form where",
+        "quiet title",
+        "form in",
+        "form or",
         "letters testamentary",
         "property Act",
         "affidavit of heirship",
@@ -1662,9 +1663,9 @@
         "affidavit of airship",
         "court order",
         "form features",
-        "form in",
         "form we",
         "form will",
+        "form with",
         "Information Act",
         "summary administration",
         "form as",
@@ -1672,19 +1673,19 @@
         "form if",
         "form law",
         "form like",
-        "form page",
-        "form probate"
+        "form page"
       ],
       "tools_and_portals": [
         "Facebook",
         "Google",
         "Ancestry",
         "FamilySearch",
+        "LinkedIn",
         "https://excesselite.com",
         "https://www.facebook.com/groups/assetrecovery",
         "https://www.moneymakingjug.com/inquiry",
-        "LinkedIn",
         "https://www.surplusfunds101.com/freecallingscript",
+        "Excel",
         "https://www.instagram.com/erizzyy/",
         "https://www.youtube.com/surplusfunds101",
         "https://instagram.com/courtneyfricke",
@@ -1693,7 +1694,6 @@
         "https://www.youtube.com/@courtneyfricke",
         "https://x.com/courtneyfricke",
         "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
-        "Excel",
         "https://www.instagram.com/thedavidwilkerson",
         "http://familysearch.me/facebook",
         "http://familysearch.me/home",
@@ -1721,9 +1721,9 @@
     {
       "topic_id": "automation_and_small_team_ops",
       "title": "Docket Automation, AI Abstracting & Small-Team Operations",
-      "video_count": 278,
-      "tip_count": 436,
-      "channel_count": 135,
+      "video_count": 351,
+      "tip_count": 834,
+      "channel_count": 194,
       "top_sources": [
         {
           "video_id": "jHo-FO_OLv4",
@@ -1738,6 +1738,13 @@
           "author": "Tutorials At Desk",
           "url": "https://www.youtube.com/watch?v=VEFf-FR0dxw",
           "duration": "00:05:47"
+        },
+        {
+          "video_id": "UEHdYNXiIUU",
+          "title": "What Is SaaS? (Explained in 5 Minutes)",
+          "author": "Dan Martell",
+          "url": "https://www.youtube.com/watch?v=UEHdYNXiIUU",
+          "duration": "00:07:18"
         },
         {
           "video_id": "GmI0MYeyMg0",
@@ -1773,13 +1780,6 @@
           "author": "Extreme Guides",
           "url": "https://www.youtube.com/watch?v=2zWJQPegtuk",
           "duration": "00:04:30"
-        },
-        {
-          "video_id": "DNdWpxzzTQM",
-          "title": "How to sell Notion templates on Gumroad (Creative Earnings)",
-          "author": "GuideHatch Tutorials",
-          "url": "https://www.youtube.com/watch?v=DNdWpxzzTQM",
-          "duration": "00:02:51"
         }
       ],
       "top_timestamped_insights": [
@@ -1829,6 +1829,24 @@
           "verbatim_research_only": true
         },
         {
+          "tip_paraphrase_summary": "Cliente habiendo una base recurrente entonces era un poco raro en esto efectivamente el cálculo en nexo me da bastante importante que teníamos aquí…",
+          "category": "Legal / Deadline",
+          "timestamp": "00:49:46",
+          "link": "https://www.youtube.com/watch?v=qgELHrlpUGo&t=2986s",
+          "video_title": "Métricas SaaS y cómo modelarlas: MRR, ARR, churn y unit economics",
+          "author": "The Startup CFO",
+          "verbatim_research_only": true
+        },
+        {
+          "tip_paraphrase_summary": "It's going to be 50k plus 51k plus 54k plus 55k. And that can go exponentially very, very quickly if you are paying full…",
+          "category": "Insider Tactic",
+          "timestamp": "00:04:58",
+          "link": "https://www.youtube.com/watch?v=SkM4k4SKvCM&t=298s",
+          "video_title": "Prompt Caching Explained: Stop Overpaying for AI Agents",
+          "author": "Hugging Face",
+          "verbatim_research_only": true
+        },
+        {
           "tip_paraphrase_summary": "When you're just getting started to run your state funds business, the 0:01:13.1 S1: Very first thing you guys is a CRM stands for…",
           "category": "Pitfall / Hard No",
           "timestamp": "00:01:09",
@@ -1854,84 +1872,67 @@
           "video_title": "Surplus Funds 101 Tutorial: Top 4 FREE Software Platforms For Your State Funds Business",
           "author": "Surplus Funds 101",
           "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "0:06:44.8 S1: So they don't know their KPIS, they don't know the virtual assistants KPIS. And other thing is they don't use any tracking…",
-          "category": "Pitfall / Hard No",
-          "timestamp": "00:06:44",
-          "link": "https://www.youtube.com/watch?v=ASO1JUOWTjA&t=404s",
-          "video_title": "State Funds Tutorial Virtual Assistants: Top 3 Hiring Mistakes While Growing Your Surplus Business",
-          "author": "Surplus Funds 101",
-          "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "Know exactly what was in the future for you, and maybe that was the reason why you don't even like the job 'cause you…",
-          "category": "Pitfall / Hard No",
-          "timestamp": "00:09:02",
-          "link": "https://www.youtube.com/watch?v=ASO1JUOWTjA&t=542s",
-          "video_title": "State Funds Tutorial Virtual Assistants: Top 3 Hiring Mistakes While Growing Your Surplus Business",
-          "author": "Surplus Funds 101",
-          "verbatim_research_only": true
         }
       ],
       "statutes_and_forms": [
         "form and",
-        "form that",
         "form to",
+        "form that",
+        "form of",
         "form below",
         "form is",
         "form you",
-        "form of",
         "form for",
         "form the",
         "letters of administration",
-        "form so",
-        "form or",
         "form where",
         "form on",
-        "form a",
+        "form so",
         "form content",
+        "form or",
+        "form as",
+        "form in",
         "form like",
+        "form a",
         "form our",
         "form today",
         "form will",
+        "form with",
         "form your",
         "letters testamentary",
-        "form as",
+        "form if",
+        "form this",
+        "Form uh",
+        "form video",
         "form we",
         "quiet title",
         "affidavit of heirship",
+        "balancing act",
         "court order",
+        "form called",
         "form due",
         "form from",
         "form I",
-        "form if",
-        "form in",
-        "form okay",
-        "form page",
-        "form probate",
-        "form then",
-        "form video",
-        "Information Act",
-        "summary administration",
-        "affidavit of airship"
+        "form it",
+        "form okay"
       ],
       "tools_and_portals": [
         "Facebook",
         "Google",
         "Ancestry",
+        "LinkedIn",
         "FamilySearch",
         "https://excesselite.com",
         "https://www.facebook.com/groups/assetrecovery",
         "https://www.moneymakingjug.com/inquiry",
+        "Excel",
         "https://www.surplusfunds101.com/freecallingscript",
         "https://www.youtube.com/surplusfunds101",
-        "LinkedIn",
         "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
         "https://www.instagram.com/thedavidwilkerson",
-        "Excel",
         "https://www.instagram.com/erizzyy/",
         "Regrid",
+        "CSV",
         "https://probatemastery.com",
         "DataTree",
         "http://familysearch.me/facebook",
@@ -1945,7 +1946,6 @@
         "http://familysearch.me/youtubespanish",
         "https://www.facebook.com/groups/770825015084618",
         "https://youtu.be/3cmj5kGm2Xw",
-        "CSV",
         "http://www.youtube.com/channel/UCsc0AQkAh_2cQmxqwD6VWRw?sub_confirmation=1",
         "https://facebook.com/groups/estateprofessionalsmastermind",
         "https://twitter.com/Ancestry",
@@ -1968,9 +1968,9 @@
       "headline": "Heir location is paid on contingency, never on up-front fees.",
       "summary": "Across the corpus, operators converge on a pure contingency model: the heir pays nothing out of pocket, the locator advances all research cost, and the fee is a negotiated percentage released only when the estate or state agency actually disburses funds. Charging an heir an advance fee is treated as the single clearest marker of a predatory or unlicensed operator.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 118,
-      "video_count": 232,
-      "corroborating_tip_count": 336,
+      "channel_count": 166,
+      "video_count": 292,
+      "corroborating_tip_count": 538,
       "supporting_links": [
         {
           "video_title": "State Funds Tutorial New Mexico: How To Register As A Property Locator In The State Of New Mexico.",
@@ -2003,10 +2003,10 @@
           "link": "https://www.youtube.com/watch?v=TTfaOSBvLDc&t=320s"
         },
         {
-          "video_title": "Are Free Skool Communities Dying? Why I Turned Mine Paid",
-          "author": "Doug Boughton",
-          "timestamp": "00:04:10",
-          "link": "https://www.youtube.com/watch?v=8lz_gy-Osw8&t=250s"
+          "video_title": "Métricas SaaS y cómo modelarlas: MRR, ARR, churn y unit economics",
+          "author": "The Startup CFO",
+          "timestamp": "00:48:19",
+          "link": "https://www.youtube.com/watch?v=qgELHrlpUGo&t=2899s"
         }
       ],
       "caveat": "Consensus among the sampled operators — not legal advice and not a substitute for the governing statute in the reader's jurisdiction."
@@ -2018,9 +2018,9 @@
       "headline": "Fresh county probate and intestate dockets outperform purchased lead lists.",
       "summary": "Practitioners consistently build pipeline from newly filed probate and administration matters pulled directly from county clerk portals rather than resold lists. Filings naming an administrator but no located heirs, and estates sitting open past the local notice period, are the recurring high-value signal.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 119,
-      "video_count": 290,
-      "corroborating_tip_count": 630,
+      "channel_count": 152,
+      "video_count": 325,
+      "corroborating_tip_count": 645,
       "supporting_links": [
         {
           "video_title": "Unclaimed Estates & Abandoned Properties in Spain - tracing Heirs Worldwide",
@@ -2068,8 +2068,8 @@
       "headline": "State unclaimed-property and escheat databases supply the repeatable volume.",
       "summary": "Every state treasury or controller maintains a searchable unclaimed-property register, and the consensus workflow is to cross-reference deceased owners there against probate filings. Volume comes from systematic register sweeps; size comes from the rarer escheated estate, surplus-funds and safe-deposit categories.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 49,
-      "video_count": 135,
+      "channel_count": 70,
+      "video_count": 156,
       "corroborating_tip_count": 582,
       "supporting_links": [
         {
@@ -2118,9 +2118,9 @@
       "headline": "The deliverable is a document-backed kinship chain, not a name on a list.",
       "summary": "Operators agree that claims succeed or fail on the evidentiary chain: each generational link supported by vital records, each branch mapped per stirpes, and every gap closed before contact. Tree hints from consumer genealogy sites are treated as leads to verify, never as proof to submit.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 139,
-      "video_count": 301,
-      "corroborating_tip_count": 558,
+      "channel_count": 182,
+      "video_count": 355,
+      "corroborating_tip_count": 585,
       "supporting_links": [
         {
           "video_title": "Resolving Heirs' Property",
@@ -2147,16 +2147,16 @@
           "link": "https://www.youtube.com/watch?v=JIUMf1OHaY0&t=1436s"
         },
         {
+          "video_title": "How to Get $100K in Credits for Claude as a Startup",
+          "author": "Neta Arbel | Growthgrid",
+          "timestamp": "00:01:11",
+          "link": "https://www.youtube.com/watch?v=MO1ZQ4wyWeM&t=71s"
+        },
+        {
           "video_title": "USDA FSA Resources for Heirs: Join FSA as we talk with the Experts (Episode 1-Full Version)",
           "author": "FarmersGov",
           "timestamp": "00:04:54",
           "link": "https://www.youtube.com/watch?v=whDzDrFNADQ&t=294s"
-        },
-        {
-          "video_title": "Discovering Your Ancestors Using Probate Records- James Tanner",
-          "author": "BYU Library Family History Center",
-          "timestamp": "00:12:01",
-          "link": "https://www.youtube.com/watch?v=Yt91gmZt8sE&t=721s"
         }
       ],
       "caveat": "Consensus among the sampled operators — not legal advice and not a substitute for the governing statute in the reader's jurisdiction."
@@ -2168,9 +2168,9 @@
       "headline": "Verify identity before contact, then lead with restraint, not the dollar figure.",
       "summary": "The recurring outreach pattern is: skip trace to a confirmed current address and phone, open by letter or a short calm call, state that funds may be owed to the family without naming an amount, and give the heir a way to independently verify the operator. Pressure tactics and inflated figures are consistently reported as the fastest way to lose a signed file.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 74,
-      "video_count": 149,
-      "corroborating_tip_count": 80,
+      "channel_count": 94,
+      "video_count": 171,
+      "corroborating_tip_count": 83,
       "supporting_links": [
         {
           "video_title": "State Funds Tutorial: 5 Tech Tools For Your State Funds Business",
@@ -2218,9 +2218,9 @@
       "headline": "No work proceeds without a signed fee agreement and third-party escrow.",
       "summary": "Consensus practice is a plain-language, notarized or e-signed agreement that names the estate, states the percentage, discloses the heir's right to claim independently, and routes funds through attorney trust or licensed escrow so the locator never holds the heir's money directly.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 130,
-      "video_count": 272,
-      "corroborating_tip_count": 317,
+      "channel_count": 173,
+      "video_count": 325,
+      "corroborating_tip_count": 341,
       "supporting_links": [
         {
           "video_title": "DataTree Hacks: Find Full Legal Descriptions and Title Vesting Information",
@@ -2268,9 +2268,9 @@
       "headline": "Fee caps, waiting periods and licensing are decided per state, before the first call.",
       "summary": "Operators repeatedly stress that the governing rules — percentage caps on unclaimed-property recoveries, mandatory waiting periods after escheat or sale, private-investigator licensing triggers, and the line against practicing law — vary by jurisdiction and must be read in the local statute for every file rather than generalized from another state.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 129,
-      "video_count": 299,
-      "corroborating_tip_count": 223,
+      "channel_count": 169,
+      "video_count": 342,
+      "corroborating_tip_count": 272,
       "supporting_links": [
         {
           "video_title": "Surplus Funds Cold Calling Script: How to Not Sound Like a Scam",
@@ -2318,9 +2318,9 @@
       "headline": "Automated docket monitoring plus AI abstracting lets one or two people run real volume.",
       "summary": "The operational consensus is to automate the repetitive layer — scheduled docket and register pulls, structured intake into a sheet or CRM, AI-assisted abstracting of filings — while keeping genealogy judgment, heir contact and contract execution human. That split is what keeps a two-person shop competitive against staffed firms.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 135,
-      "video_count": 278,
-      "corroborating_tip_count": 436,
+      "channel_count": 194,
+      "video_count": 351,
+      "corroborating_tip_count": 834,
       "supporting_links": [
         {
           "video_title": "State Funds Tutorial: 5 Tech Tools For Your State Funds Business",
@@ -2353,10 +2353,10 @@
           "link": "https://www.youtube.com/watch?v=y5XZp-4n_uc&t=117s"
         },
         {
-          "video_title": "State Funds Tutorial: 5 Tech Tools For Your State Funds Business",
-          "author": "Surplus Funds 101",
-          "timestamp": "00:01:09",
-          "link": "https://www.youtube.com/watch?v=ES6y4iF-bBM&t=69s"
+          "video_title": "Métricas SaaS y cómo modelarlas: MRR, ARR, churn y unit economics",
+          "author": "The Startup CFO",
+          "timestamp": "00:49:46",
+          "link": "https://www.youtube.com/watch?v=qgELHrlpUGo&t=2986s"
         }
       ],
       "caveat": "Consensus among the sampled operators — not legal advice and not a substitute for the governing statute in the reader's jurisdiction."
@@ -2746,8 +2746,8 @@
         "asset_id": "youtube_thumbnails",
         "asset": "https://i.ytimg.com/vi/<video_id>/*.jpg",
         "asset_type": "youtube_thumbnail_image",
-        "source": "YouTube CDN thumbnails for the 336 corpus videos",
-        "instance_count": 336,
+        "source": "YouTube CDN thumbnails for the 411 corpus videos",
+        "instance_count": 411,
         "instances": [
           {
             "video_id": "9Q4qYeK5DTg",
@@ -5100,6 +5100,531 @@
             "author": "Doug Boughton",
             "thumbnail_url": "https://i.ytimg.com/vi/8lz_gy-Osw8/hqdefault.jpg",
             "source_url": "https://www.youtube.com/watch?v=8lz_gy-Osw8"
+          },
+          {
+            "video_id": "aQZkra1kEcg",
+            "title": "Micro Saas Tutorial for Beginners: How to Build a SaaS with AI (2026)",
+            "author": "Mikey No Code",
+            "thumbnail_url": "https://i.ytimg.com/vi/aQZkra1kEcg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=aQZkra1kEcg"
+          },
+          {
+            "video_id": "9T1yWEq5kP0",
+            "title": "SaaS is minting millionaires again (here's how)",
+            "author": "Greg Isenberg",
+            "thumbnail_url": "https://i.ytimg.com/vi/9T1yWEq5kP0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=9T1yWEq5kP0"
+          },
+          {
+            "video_id": "7MpAQeeep-U",
+            "title": "5 Micro SaaS Making $100,000/Month (Ai + No Code)",
+            "author": "Brett Malinowski",
+            "thumbnail_url": "https://i.ytimg.com/vi/7MpAQeeep-U/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=7MpAQeeep-U"
+          },
+          {
+            "video_id": "29mXPG15AGM",
+            "title": "it’s almost unfair how easy it is to build a SaaS that makes $15,000 a month",
+            "author": "Fomin Unscripted",
+            "thumbnail_url": "https://i.ytimg.com/vi/29mXPG15AGM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=29mXPG15AGM"
+          },
+          {
+            "video_id": "Nnpz1wsTjBI",
+            "title": "I Built A Micro-Version Of A $1B SaaS. Now I Make $50K/Month",
+            "author": "Starter Story",
+            "thumbnail_url": "https://i.ytimg.com/vi/Nnpz1wsTjBI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Nnpz1wsTjBI"
+          },
+          {
+            "video_id": "ndqX4vbR7Rc",
+            "title": "Making $$$ with MicroSaaS",
+            "author": "Greg Isenberg",
+            "thumbnail_url": "https://i.ytimg.com/vi/ndqX4vbR7Rc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ndqX4vbR7Rc"
+          },
+          {
+            "video_id": "9Rig_F79rWo",
+            "title": "Micro-SaaS in 2026 🚀 | Build a Profitable SaaS Business with Just $50/Month",
+            "author": "TechFuelAI",
+            "thumbnail_url": "https://i.ytimg.com/vi/9Rig_F79rWo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=9Rig_F79rWo"
+          },
+          {
+            "video_id": "pcAlM_s1Bz4",
+            "title": "We’re Done. AI Killed Micro SaaS.",
+            "author": "Simon Høiberg",
+            "thumbnail_url": "https://i.ytimg.com/vi/pcAlM_s1Bz4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=pcAlM_s1Bz4"
+          },
+          {
+            "video_id": "_KaFS4Dxs5k",
+            "title": "I Copied a $100M SaaS, Undercut Their Prices, and Hit $10K/Month",
+            "author": "Starter Story",
+            "thumbnail_url": "https://i.ytimg.com/vi/_KaFS4Dxs5k/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=_KaFS4Dxs5k"
+          },
+          {
+            "video_id": "8lmA9UgwNQs",
+            "title": "how to find saas ideas worth $10,000,000 (steal this method)",
+            "author": "Fomin Unscripted",
+            "thumbnail_url": "https://i.ytimg.com/vi/8lmA9UgwNQs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=8lmA9UgwNQs"
+          },
+          {
+            "video_id": "stJnOPyfbIQ",
+            "title": "7 Tiny Apps That You Can Build with AI",
+            "author": "Mikey No Code",
+            "thumbnail_url": "https://i.ytimg.com/vi/stJnOPyfbIQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=stJnOPyfbIQ"
+          },
+          {
+            "video_id": "I-4eEpO2G0Q",
+            "title": "The Micro SaaS Business Almost Nobody Is Building (Until Now)",
+            "author": "Zues Ordaz",
+            "thumbnail_url": "https://i.ytimg.com/vi/I-4eEpO2G0Q/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=I-4eEpO2G0Q"
+          },
+          {
+            "video_id": "6sgCo6fMSGY",
+            "title": "Give Me 36 Minutes and I'll Teach You How to Find $1M SaaS Ideas",
+            "author": "Rob Walling",
+            "thumbnail_url": "https://i.ytimg.com/vi/6sgCo6fMSGY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=6sgCo6fMSGY"
+          },
+          {
+            "video_id": "LRX8TWC2hTM",
+            "title": "I Make $60K/Month From the Most Boring SaaS on the Internet",
+            "author": "Starter Story",
+            "thumbnail_url": "https://i.ytimg.com/vi/LRX8TWC2hTM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=LRX8TWC2hTM"
+          },
+          {
+            "video_id": "Y6tSBvQhyak",
+            "title": "SaaS Metrics: MRR, churn and KPIs every startup should track",
+            "author": "The Startup CFO",
+            "thumbnail_url": "https://i.ytimg.com/vi/Y6tSBvQhyak/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Y6tSBvQhyak"
+          },
+          {
+            "video_id": "s8_Vax8VUmM",
+            "title": "Every SaaS Acronym Explained",
+            "author": "The Startup Club by Slidebean",
+            "thumbnail_url": "https://i.ytimg.com/vi/s8_Vax8VUmM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=s8_Vax8VUmM"
+          },
+          {
+            "video_id": "qgELHrlpUGo",
+            "title": "Métricas SaaS y cómo modelarlas: MRR, ARR, churn y unit economics",
+            "author": "The Startup CFO",
+            "thumbnail_url": "https://i.ytimg.com/vi/qgELHrlpUGo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=qgELHrlpUGo"
+          },
+          {
+            "video_id": "xWcG7R7Xm2Y",
+            "title": "how to scale a micro SaaS to $10k MRR with zero ad spend",
+            "author": "Fomin Unscripted",
+            "thumbnail_url": "https://i.ytimg.com/vi/xWcG7R7Xm2Y/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=xWcG7R7Xm2Y"
+          },
+          {
+            "video_id": "zo3QHrXiprs",
+            "title": "11 essential SaaS metrics explained in 11 minutes",
+            "author": "ChartMogul",
+            "thumbnail_url": "https://i.ytimg.com/vi/zo3QHrXiprs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=zo3QHrXiprs"
+          },
+          {
+            "video_id": "UEHdYNXiIUU",
+            "title": "What Is SaaS? (Explained in 5 Minutes)",
+            "author": "Dan Martell",
+            "thumbnail_url": "https://i.ytimg.com/vi/UEHdYNXiIUU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=UEHdYNXiIUU"
+          },
+          {
+            "video_id": "hyC9WOKzUMc",
+            "title": "SaaS Metrics Explained: MRR, ARR, Churn, LTV & CAC | Product Management for Beginners",
+            "author": "CodeLucky",
+            "thumbnail_url": "https://i.ytimg.com/vi/hyC9WOKzUMc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=hyC9WOKzUMc"
+          },
+          {
+            "video_id": "5RR6M_d6eKc",
+            "title": "The SaaS business model & metrics: Understand the key drivers for success",
+            "author": "Web Summit",
+            "thumbnail_url": "https://i.ytimg.com/vi/5RR6M_d6eKc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=5RR6M_d6eKc"
+          },
+          {
+            "video_id": "aOKH0EoSCCc",
+            "title": "The Economics of Owning a SaaS Company",
+            "author": "Costoday",
+            "thumbnail_url": "https://i.ytimg.com/vi/aOKH0EoSCCc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=aOKH0EoSCCc"
+          },
+          {
+            "video_id": "Xpw9vNbYna0",
+            "title": "Core Unit Economics: The Financial Formulas Behind SaaS, E-Commerce, and Marketplaces",
+            "author": "One Minute Finance",
+            "thumbnail_url": "https://i.ytimg.com/vi/Xpw9vNbYna0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Xpw9vNbYna0"
+          },
+          {
+            "video_id": "Ju9H1oq7CM8",
+            "title": "The Economics of Owning a SaaS Company",
+            "author": "Business Mechanics",
+            "thumbnail_url": "https://i.ytimg.com/vi/Ju9H1oq7CM8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Ju9H1oq7CM8"
+          },
+          {
+            "video_id": "iGqudu6WmHs",
+            "title": "Alex Hormozi: Fix SaaS Churn With This Onboarding Strategy (AMA)",
+            "author": "Business Beast Mode",
+            "thumbnail_url": "https://i.ytimg.com/vi/iGqudu6WmHs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=iGqudu6WmHs"
+          },
+          {
+            "video_id": "8eHInIdNfa0",
+            "title": "The Ultimate SaaS Unit Economics Tutorial",
+            "author": "Eric Andrews",
+            "thumbnail_url": "https://i.ytimg.com/vi/8eHInIdNfa0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=8eHInIdNfa0"
+          },
+          {
+            "video_id": "XaOgak-YulM",
+            "title": "SAAS Metrics- Revenue Churn + NRR | Venture Capitalist Explains",
+            "author": "VCPete",
+            "thumbnail_url": "https://i.ytimg.com/vi/XaOgak-YulM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=XaOgak-YulM"
+          },
+          {
+            "video_id": "FlJaIqI0N10",
+            "title": "Vertical SaaS vs Horizontal SaaS - Which is More Profitable?",
+            "author": "Rob Walling",
+            "thumbnail_url": "https://i.ytimg.com/vi/FlJaIqI0N10/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=FlJaIqI0N10"
+          },
+          {
+            "video_id": "GK9LZkd6aHM",
+            "title": "Vertical AI vs Traditional SaaS | Game Over",
+            "author": "Bootstrapper's Paradise",
+            "thumbnail_url": "https://i.ytimg.com/vi/GK9LZkd6aHM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=GK9LZkd6aHM"
+          },
+          {
+            "video_id": "orVropqNnCA",
+            "title": "What are Vertical Agents ?",
+            "author": "New Machina",
+            "thumbnail_url": "https://i.ytimg.com/vi/orVropqNnCA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=orVropqNnCA"
+          },
+          {
+            "video_id": "Avxi60Ny5SM",
+            "title": "AI Is Not Killing Vertical SaaS - It’s Practical Leverage",
+            "author": "Practical Founders - with Greg Head",
+            "thumbnail_url": "https://i.ytimg.com/vi/Avxi60Ny5SM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Avxi60Ny5SM"
+          },
+          {
+            "video_id": "RINTsdOTWfc",
+            "title": "Why Vertical SaaS Companies Will Win in the AI GTM Race",
+            "author": "Jordan Crawford (Blueprint)",
+            "thumbnail_url": "https://i.ytimg.com/vi/RINTsdOTWfc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=RINTsdOTWfc"
+          },
+          {
+            "video_id": "NwYdSzPW6yg",
+            "title": "The Harsh Truth About AI Wrappers (From a Venture Investor)",
+            "author": "Indy Pixels | Abdalla Emam",
+            "thumbnail_url": "https://i.ytimg.com/vi/NwYdSzPW6yg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=NwYdSzPW6yg"
+          },
+          {
+            "video_id": "eBVi_sLaYsc",
+            "title": "Why Vertical LLM Agents Are The New $1 Billion SaaS Opportunities",
+            "author": "Y Combinator",
+            "thumbnail_url": "https://i.ytimg.com/vi/eBVi_sLaYsc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=eBVi_sLaYsc"
+          },
+          {
+            "video_id": "QIA9Ry42Lbs",
+            "title": "Get rich building niche AI SaaS (...not another ChatGPT wrapper)",
+            "author": "Simon Høiberg",
+            "thumbnail_url": "https://i.ytimg.com/vi/QIA9Ry42Lbs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=QIA9Ry42Lbs"
+          },
+          {
+            "video_id": "y6eOdHpH5W8",
+            "title": "How to Build a Vertical SaaS Company AI Can’t Replace | Sahill Poddar",
+            "author": "Verticals: A Weekly Biz Show On Vertical AI",
+            "thumbnail_url": "https://i.ytimg.com/vi/y6eOdHpH5W8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=y6eOdHpH5W8"
+          },
+          {
+            "video_id": "CJf8KAHBVKA",
+            "title": "Death of SaaS Company in 2026 (said ChatGPT)",
+            "author": "Valen I AI Agent for Work",
+            "thumbnail_url": "https://i.ytimg.com/vi/CJf8KAHBVKA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=CJf8KAHBVKA"
+          },
+          {
+            "video_id": "ASABxNenD_U",
+            "title": "Vertical AI Agents Could Be 10X Bigger Than SaaS",
+            "author": "Y Combinator",
+            "thumbnail_url": "https://i.ytimg.com/vi/ASABxNenD_U/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ASABxNenD_U"
+          },
+          {
+            "video_id": "Uqr2U24uxOs",
+            "title": "What’s the Future of Vertical SaaS in an AGI World? Jamie Cuffe, CEO of Pace",
+            "author": "Sequoia Capital",
+            "thumbnail_url": "https://i.ytimg.com/vi/Uqr2U24uxOs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Uqr2U24uxOs"
+          },
+          {
+            "video_id": "-_NbEobmiAY",
+            "title": "The Death of SaaS | Why \"Vertical AI\" is Taking Over in 2026",
+            "author": "BergTube",
+            "thumbnail_url": "https://i.ytimg.com/vi/-_NbEobmiAY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=-_NbEobmiAY"
+          },
+          {
+            "video_id": "YVRP3QoP6bs",
+            "title": "I Ranked a B2B SaaS on ChatGPT in 30 Days With Reddit",
+            "author": "Sabyr Nurgaliyev",
+            "thumbnail_url": "https://i.ytimg.com/vi/YVRP3QoP6bs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=YVRP3QoP6bs"
+          },
+          {
+            "video_id": "00KM5yk235k",
+            "title": "Stripe Usage-Based Billing Guide [2026 Full Guide]",
+            "author": "This Works Tutorials",
+            "thumbnail_url": "https://i.ytimg.com/vi/00KM5yk235k/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=00KM5yk235k"
+          },
+          {
+            "video_id": "o_6aujJ5WbM",
+            "title": "Monetizing your APIs with usage-based billing",
+            "author": "Stripe Developers",
+            "thumbnail_url": "https://i.ytimg.com/vi/o_6aujJ5WbM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=o_6aujJ5WbM"
+          },
+          {
+            "video_id": "Hr9MP_3-QPg",
+            "title": "Enabling pay-as-you-go with usage based billing",
+            "author": "Stripe Developers",
+            "thumbnail_url": "https://i.ytimg.com/vi/Hr9MP_3-QPg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Hr9MP_3-QPg"
+          },
+          {
+            "video_id": "_lbbl0hdJIg",
+            "title": "Someone open-sourced Stripe Billing (Mistral uses it)",
+            "author": "Indie Hacker News",
+            "thumbnail_url": "https://i.ytimg.com/vi/_lbbl0hdJIg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=_lbbl0hdJIg"
+          },
+          {
+            "video_id": "xssyCPxzFWA",
+            "title": "How to update Stripe Billing to add usage-based pricing - Full Guide",
+            "author": "GuideFrame",
+            "thumbnail_url": "https://i.ytimg.com/vi/xssyCPxzFWA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=xssyCPxzFWA"
+          },
+          {
+            "video_id": "j7TlXzIV4uo",
+            "title": "Token billing for LLM apps | live demo with Metronome + Stripe",
+            "author": "Stripe Developers",
+            "thumbnail_url": "https://i.ytimg.com/vi/j7TlXzIV4uo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=j7TlXzIV4uo"
+          },
+          {
+            "video_id": "yo4GOxbqovo",
+            "title": "Make Your AI Chatbot Pay For Itself — Stripe Usage Metering, Paywalls & Caps (Chat Data)",
+            "author": "Medical Chat",
+            "thumbnail_url": "https://i.ytimg.com/vi/yo4GOxbqovo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=yo4GOxbqovo"
+          },
+          {
+            "video_id": "v8cN4pEofy8",
+            "title": "Usage based metered billing with Ruby on Rails and Stripe",
+            "author": "CJ Avilla (cjav_dev)",
+            "thumbnail_url": "https://i.ytimg.com/vi/v8cN4pEofy8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=v8cN4pEofy8"
+          },
+          {
+            "video_id": "8WJ85SV0c0U",
+            "title": "AWS Activate 2026: Get Up to $200K in Credits (Org ID Explained)",
+            "author": "XRaise",
+            "thumbnail_url": "https://i.ytimg.com/vi/8WJ85SV0c0U/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=8WJ85SV0c0U"
+          },
+          {
+            "video_id": "a3Sjk-St_ng",
+            "title": "Startup Credits 2026: Up to $48,000 With No Investor (AWS, Claude, Azure, Google)",
+            "author": "InnMind",
+            "thumbnail_url": "https://i.ytimg.com/vi/a3Sjk-St_ng/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=a3Sjk-St_ng"
+          },
+          {
+            "video_id": "UEllU5g4QdQ",
+            "title": "How To Get More AWS/GCP Credits After You Already Used Startup Credits",
+            "author": "Neta Arbel | Growthgrid",
+            "thumbnail_url": "https://i.ytimg.com/vi/UEllU5g4QdQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=UEllU5g4QdQ"
+          },
+          {
+            "video_id": "VmuCPx8GGTU",
+            "title": "Free Cloud Credits for Startups: Tech Stack on a Budget",
+            "author": "Trapture Explains",
+            "thumbnail_url": "https://i.ytimg.com/vi/VmuCPx8GGTU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=VmuCPx8GGTU"
+          },
+          {
+            "video_id": "vLchERSjKS8",
+            "title": "Google Cloud Credits for Startups 2026: $350K or $2K?",
+            "author": "XRaise",
+            "thumbnail_url": "https://i.ytimg.com/vi/vLchERSjKS8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=vLchERSjKS8"
+          },
+          {
+            "video_id": "MizcZWLYkk8",
+            "title": "I got $400k Cloud Credits for my AI SaaS Startup",
+            "author": "Harshith Vaddiparthy",
+            "thumbnail_url": "https://i.ytimg.com/vi/MizcZWLYkk8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=MizcZWLYkk8"
+          },
+          {
+            "video_id": "pX2JNv1VPsQ",
+            "title": "I Built an AI Startup | Got AWS Credits | AWS Activate Founder Tier",
+            "author": "Madhukar Reddy",
+            "thumbnail_url": "https://i.ytimg.com/vi/pX2JNv1VPsQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=pX2JNv1VPsQ"
+          },
+          {
+            "video_id": "_oN2fQHccDc",
+            "title": "How I Got $1,000 From AWS For My Startup!",
+            "author": "Vinod Sharma",
+            "thumbnail_url": "https://i.ytimg.com/vi/_oN2fQHccDc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=_oN2fQHccDc"
+          },
+          {
+            "video_id": "MO1ZQ4wyWeM",
+            "title": "How to Get $100K in Credits for Claude as a Startup",
+            "author": "Neta Arbel | Growthgrid",
+            "thumbnail_url": "https://i.ytimg.com/vi/MO1ZQ4wyWeM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=MO1ZQ4wyWeM"
+          },
+          {
+            "video_id": "ZWxdQDkf_Uw",
+            "title": "Very Good News For Startups- AWS Activate A Program to Support Startups, Founders, & Entrepreneurs",
+            "author": "Krish Naik",
+            "thumbnail_url": "https://i.ytimg.com/vi/ZWxdQDkf_Uw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ZWxdQDkf_Uw"
+          },
+          {
+            "video_id": "DmdDoIC4IgM",
+            "title": "Up to $350K Google Cloud Credits? How to ApplyGoogleCloud #StartupCredits #FoundersSecondary",
+            "author": "Founder Brief",
+            "thumbnail_url": "https://i.ytimg.com/vi/DmdDoIC4IgM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=DmdDoIC4IgM"
+          },
+          {
+            "video_id": "K3JxsrRNpBI",
+            "title": "How to Get $1,000 FREE AWS Credits for Your Startup (Step-by-Step 2026)",
+            "author": "Zero Degree Coder",
+            "thumbnail_url": "https://i.ytimg.com/vi/K3JxsrRNpBI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=K3JxsrRNpBI"
+          },
+          {
+            "video_id": "u57EnkQaUTY",
+            "title": "What is Prompt Caching? Optimize LLM Latency with AI Transformers",
+            "author": "IBM Technology",
+            "thumbnail_url": "https://i.ytimg.com/vi/u57EnkQaUTY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=u57EnkQaUTY"
+          },
+          {
+            "video_id": "SkM4k4SKvCM",
+            "title": "Prompt Caching Explained: Stop Overpaying for AI Agents",
+            "author": "Hugging Face",
+            "thumbnail_url": "https://i.ytimg.com/vi/SkM4k4SKvCM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=SkM4k4SKvCM"
+          },
+          {
+            "video_id": "uTTjkSZnkDI",
+            "title": "Stop Wasting AI Tokens: The Ultimate LLM Cost Reduction Guide (Save 90%!)",
+            "author": "The Macroscope",
+            "thumbnail_url": "https://i.ytimg.com/vi/uTTjkSZnkDI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=uTTjkSZnkDI"
+          },
+          {
+            "video_id": "QaVJRXlOcV4",
+            "title": "Prompt Caching & Cost Optimization for AI Agents | Reduce LLM Cost & Latency",
+            "author": "AmanAI Lab",
+            "thumbnail_url": "https://i.ytimg.com/vi/QaVJRXlOcV4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=QaVJRXlOcV4"
+          },
+          {
+            "video_id": "QaCS2XJLLm4",
+            "title": "Why Your Claude Code Limit Vanishes: Cut AI Coding Costs by 70% with Cache & Model Routing",
+            "author": "Spec & Ship",
+            "thumbnail_url": "https://i.ytimg.com/vi/QaCS2XJLLm4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=QaCS2XJLLm4"
+          },
+          {
+            "video_id": "xncObRtKRsw",
+            "title": "How Prompt Caching makes LLM calls 10x Cheaper",
+            "author": "cruxbits8",
+            "thumbnail_url": "https://i.ytimg.com/vi/xncObRtKRsw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=xncObRtKRsw"
+          },
+          {
+            "video_id": "4x4nM0uPmg0",
+            "title": "How I cut token costs by 90%: AI cost optimization guide",
+            "author": "ClankerEngineer",
+            "thumbnail_url": "https://i.ytimg.com/vi/4x4nM0uPmg0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=4x4nM0uPmg0"
+          },
+          {
+            "video_id": "0-5l8CAjz6I",
+            "title": "How to Reduce AI App Costs: Caching, Model Routing, and LLM Optimization",
+            "author": "Engineering Insider",
+            "thumbnail_url": "https://i.ytimg.com/vi/0-5l8CAjz6I/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=0-5l8CAjz6I"
+          },
+          {
+            "video_id": "aYNSsflxcwg",
+            "title": "Reduce LLM API Costs with Caching & Smart Model Routing | LangChain",
+            "author": "Skillfyme",
+            "thumbnail_url": "https://i.ytimg.com/vi/aYNSsflxcwg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=aYNSsflxcwg"
+          },
+          {
+            "video_id": "eBB0dBqfvuQ",
+            "title": "Prompt Caching Reduced My Agent Costs by 90%",
+            "author": "Mastra",
+            "thumbnail_url": "https://i.ytimg.com/vi/eBB0dBqfvuQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=eBB0dBqfvuQ"
+          },
+          {
+            "video_id": "Q_U4pRggC5I",
+            "title": "Why agents recompute the same prompt, and how prompt caching fixes it",
+            "author": "Efficient NLP",
+            "thumbnail_url": "https://i.ytimg.com/vi/Q_U4pRggC5I/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Q_U4pRggC5I"
+          },
+          {
+            "video_id": "rECbImLOxqg",
+            "title": "How Prompt Caching Saves 90% (GPT-6 Astra) – Cut Your LLM API Bill",
+            "author": "Learn with Vichu",
+            "thumbnail_url": "https://i.ytimg.com/vi/rECbImLOxqg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=rECbImLOxqg"
+          },
+          {
+            "video_id": "o0gkdZBtwEg",
+            "title": "How KV Cache Speeds Up LLMs for Faster AI Models on GPUs",
+            "author": "IBM Technology",
+            "thumbnail_url": "https://i.ytimg.com/vi/o0gkdZBtwEg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=o0gkdZBtwEg"
           }
         ],
         "research_reference_only": true,
@@ -5112,7 +5637,7 @@
         "asset_id": "verbatim_transcript_quotes",
         "asset": "data/transcripts/*.json -> segments[].text",
         "asset_type": "verbatim_transcript_passage",
-        "source": "Spoken content of 336 third-party videos (3162 captured tips)",
+        "source": "Spoken content of 411 third-party videos (3880 captured tips)",
         "research_reference_only": true,
         "commercial_republish_allowed": false,
         "commercial_use_allowed": false,
@@ -5128,38 +5653,38 @@
     ]
   },
   "corpus_metrics": {
-    "video_count": 336,
-    "channel_count": 150,
-    "total_words": 549707,
-    "total_hours": 112.3,
-    "total_pro_tips": 3162,
-    "unique_statutes_and_forms": 253,
-    "unique_tools_and_portals": 817
+    "video_count": 411,
+    "channel_count": 210,
+    "total_words": 662641,
+    "total_hours": 133.39,
+    "total_pro_tips": 3880,
+    "unique_statutes_and_forms": 295,
+    "unique_tools_and_portals": 1111
   },
   "coverage": {
-    "videos_classified": 336,
-    "videos_with_multiple_topics": 336,
-    "tips_classified": 3162,
-    "raw_transcripts_joined": 336,
+    "videos_classified": 411,
+    "videos_with_multiple_topics": 411,
+    "tips_classified": 3880,
+    "raw_transcripts_joined": 411,
     "topic_video_counts": {
-      "business_model_and_economics": 232,
-      "probate_and_docket_sourcing": 290,
-      "unclaimed_property_and_escheat": 135,
-      "genealogy_and_heirship_proof": 301,
-      "skip_tracing_and_outreach": 149,
-      "contracts_and_compensation": 272,
-      "statutory_caps_and_licensing": 299,
-      "automation_and_small_team_ops": 278
+      "business_model_and_economics": 292,
+      "probate_and_docket_sourcing": 325,
+      "unclaimed_property_and_escheat": 156,
+      "genealogy_and_heirship_proof": 355,
+      "skip_tracing_and_outreach": 171,
+      "contracts_and_compensation": 325,
+      "statutory_caps_and_licensing": 342,
+      "automation_and_small_team_ops": 351
     },
     "topic_tip_counts": {
-      "business_model_and_economics": 336,
-      "probate_and_docket_sourcing": 630,
+      "business_model_and_economics": 538,
+      "probate_and_docket_sourcing": 645,
       "unclaimed_property_and_escheat": 582,
-      "genealogy_and_heirship_proof": 558,
-      "skip_tracing_and_outreach": 80,
-      "contracts_and_compensation": 317,
-      "statutory_caps_and_licensing": 223,
-      "automation_and_small_team_ops": 436
+      "genealogy_and_heirship_proof": 585,
+      "skip_tracing_and_outreach": 83,
+      "contracts_and_compensation": 341,
+      "statutory_caps_and_licensing": 272,
+      "automation_and_small_team_ops": 834
     }
   },
   "schema_version": "1.0",

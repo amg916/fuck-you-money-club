@@ -7,7 +7,8 @@
   "published_volume_ids": [
     "vol-001-heir-hunting",
     "vol-002-surplus-funds-recovery",
-    "vol-003-digital-product-empire"
+    "vol-003-digital-product-empire",
+    "vol-004-ai-powered-micro-saas"
   ],
   "editorial_tracks": {
     "track_1": {
@@ -4116,7 +4117,7 @@
       "slug": "ai-powered-micro-saas",
       "title": "AI-Powered Micro SaaS",
       "category": "Subscription software",
-      "production_stage": "candidate_scored",
+      "production_stage": "approved_master",
       "scores": {
         "revenue_potential": 22,
         "profit_margin_potential": 22,
@@ -4133,11 +4134,11 @@
       },
       "total_score": 88,
       "tier_label": "Elite Small-Team Cash Machine",
-      "evidence_confidence": "Preliminary — Uncertainty Range",
-      "uncertainty_band": "±10 pts",
+      "evidence_confidence": "High",
+      "uncertainty_band": "±3 pts",
       "uncertainty_bounds": {
-        "low": 78,
-        "high": 98
+        "low": 85,
+        "high": 91
       },
       "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
       "score_rationale": {
@@ -23570,5 +23571,5 @@
       "min_expert_youtube_links_per_chapter": 12
     }
   ],
-  "generated_at": "2026-11-20T17:09:53Z"
+  "generated_at": "2026-11-20T17:53:55Z"
 }

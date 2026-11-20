@@ -11,3 +11,5 @@ src/fymc/volume_002_citations.py linguist-generated=true -diff
 data/custom/vol002_surplus_funds_corpus.json linguist-generated=true -diff
 src/fymc/volume_003_citations.py linguist-generated=true -diff
 data/custom/vol003_digital_product_corpus.json linguist-generated=true -diff
+src/fymc/volume_004_citations.py linguist-generated=true -diff
+data/custom/vol004_ai_micro_saas_corpus.json linguist-generated=true -diff

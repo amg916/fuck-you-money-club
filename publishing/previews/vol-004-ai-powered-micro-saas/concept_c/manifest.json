@@ -1,0 +1,65 @@
+{
+  "concept_id": "concept_c",
+  "volume_id": "vol-004-ai-powered-micro-saas",
+  "approved": false,
+  "edition_status": "concept_preview",
+  "preview_only": true,
+  "files": {
+    "digital_pdf.pdf": {
+      "bytes": 1019275,
+      "sha256": "18797ca5c1842463cf2613550b79cf5a7023af542f92c7f68aff5010b5367618"
+    },
+    "print_6x9_pdf.pdf": {
+      "bytes": 1164096,
+      "sha256": "41c96edae4dc708df62f3e7445568dc922167e8e3f114f605b9a14b22db156f4"
+    },
+    "workbook_pdf.pdf": {
+      "bytes": 566895,
+      "sha256": "c349f8f62209358be2d3fb9fefee6cc0ac8e45f8311dc1f7508e9aa422681e9e"
+    },
+    "book.epub": {
+      "bytes": 240230,
+      "sha256": "65b8393d66a7d4aad2ed883b1f96101154022be0c7be6a36dc1f7fb63564caeb"
+    },
+    "art/cover.svg": {
+      "bytes": 4099,
+      "sha256": "9a054f74a97b47ae84109b4db5fcf28b517f6b905e27599f62f36931e55bdfa0"
+    },
+    "art/scorecard.svg": {
+      "bytes": 97708,
+      "sha256": "e590165d3f707c3b19e95839c42ad85faaa8de0041168e1a94834c042ff0d976"
+    },
+    "art/diag_01.svg": {
+      "bytes": 9050,
+      "sha256": "9864a69799c2b56b0c1f3b94f46a86fdc4b4f9b12ec99e0c8246aeebb7c8aee2"
+    },
+    "art/diag_02.svg": {
+      "bytes": 6122,
+      "sha256": "e643022e97b684a4a0a8c7fe9835b60fa547ea0880988ef54790ee615b27094a"
+    },
+    "art/diag_03.svg": {
+      "bytes": 9349,
+      "sha256": "9e12b263b10b7bc2cd50ea62bb50e75f28c7c18c42e7ba934982bc04d13f48b8"
+    },
+    "art/diag_04.svg": {
+      "bytes": 6405,
+      "sha256": "02f8f0b315e2becdc724fde3416be2b9422ccae8d338bb25d5dd3f912b3af739"
+    },
+    "art/diag_05.svg": {
+      "bytes": 7013,
+      "sha256": "144df6debed8a44726664618058cbd2f80da6b220a6c524af2a001a20025c283"
+    },
+    "art/diag_06.svg": {
+      "bytes": 5897,
+      "sha256": "63598736cfb1407683ff0af226f73b6c4e1bdce24ffa52058b08ff9177604ad0"
+    },
+    "art/diag_07.svg": {
+      "bytes": 6355,
+      "sha256": "21ae1fa68536b3b84ed050c4e026ac1a0bcfc3a4aaf4e3478a69eaae57875c8f"
+    },
+    "art/diag_08.svg": {
+      "bytes": 6486,
+      "sha256": "1630c2d1f739491b7cae55d7b655e081c64e41b390b6d7261c0b7dee0ffd602b"
+    }
+  }
+}

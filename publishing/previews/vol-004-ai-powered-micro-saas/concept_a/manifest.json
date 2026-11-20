@@ -1,0 +1,65 @@
+{
+  "concept_id": "concept_a",
+  "volume_id": "vol-004-ai-powered-micro-saas",
+  "approved": false,
+  "edition_status": "concept_preview",
+  "preview_only": true,
+  "files": {
+    "digital_pdf.pdf": {
+      "bytes": 1019818,
+      "sha256": "03ced22e1f57d2a205d436880b4d4ad1535633dfb9831c32b96733b3255d5b1a"
+    },
+    "print_6x9_pdf.pdf": {
+      "bytes": 1165270,
+      "sha256": "f19928aa4ef5ddc95b84b69722e355569255cff018fd04992c74beed68c67a28"
+    },
+    "workbook_pdf.pdf": {
+      "bytes": 566893,
+      "sha256": "1d81614fe33315e56049b1838c3740ad6d5bb71e2772176b29dcea25d452ca27"
+    },
+    "book.epub": {
+      "bytes": 241424,
+      "sha256": "41be4632d698666e421f9064bf7bf9a7d01e25495947b4482b845cd8e79f00e4"
+    },
+    "art/cover.svg": {
+      "bytes": 4025,
+      "sha256": "778c3fcef01c03687e2d22ba1405d55829b66399c334a8876082988112e195ea"
+    },
+    "art/scorecard.svg": {
+      "bytes": 102431,
+      "sha256": "41378097d890f448dcf12127aadf05b5eb074bb377a5669e3ee7f810c8fe1670"
+    },
+    "art/diag_01.svg": {
+      "bytes": 9306,
+      "sha256": "122d39594ad438cefc21edb293dfc6d123b2668cb000f632382273ed92846b2c"
+    },
+    "art/diag_02.svg": {
+      "bytes": 6420,
+      "sha256": "9746d8d890da600bf842a5c4aac59e1542df8a02d771e1190510556e7bc97bdd"
+    },
+    "art/diag_03.svg": {
+      "bytes": 9689,
+      "sha256": "06171a1456b855515c2abbfb059e3cae70a6448d902b9e4c45b0c3d5d01bfa8d"
+    },
+    "art/diag_04.svg": {
+      "bytes": 6716,
+      "sha256": "5b674d4633eb47704b308b2982e7b33433b5fa9d77535b6eb2ee0b2206bcec0b"
+    },
+    "art/diag_05.svg": {
+      "bytes": 7496,
+      "sha256": "7be17435020f9a1bb6a53ddc3b77e3e45202b109a0fca2680ef182f1dd91cba8"
+    },
+    "art/diag_06.svg": {
+      "bytes": 6409,
+      "sha256": "a5d1024db102810cb22475ab4617ed78dcb70b5005d423f19dda60d3e8cdfcf1"
+    },
+    "art/diag_07.svg": {
+      "bytes": 6948,
+      "sha256": "362a925677dc0cea4f65fb1e67d5d838d72e73debac1deb191d03aa45a47c1a2"
+    },
+    "art/diag_08.svg": {
+      "bytes": 6683,
+      "sha256": "e50eab31763ad1d3229968f4fe4ff978a88972275d929c32d763b988e9ac5099"
+    }
+  }
+}

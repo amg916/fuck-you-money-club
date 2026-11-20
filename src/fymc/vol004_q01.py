@@ -1,0 +1,115 @@
+CHAPTER_1 = {
+    "id": "Q1", "chapter_id": "Q1", "chapter_number": 1, "question_number": 1,
+    "slug": "what-is-ai-powered-micro-saas",
+    "question_prompt": "What exactly is AI-powered micro SaaS?",
+    "kicker": "Q1 / THE BIG MONEY PLAYBOOKS",
+    "title": "What Exactly Is AI-Powered Micro SaaS?",
+    "subtitle": "Vertical B2B Workflow Systems, Proprietary Data Pipelines & Deterministic Guardrails vs. Fragile Single-Prompt ChatGPT Wrappers",
+    "layout_template": "opportunity_overview", "reading_time_minutes": 14,
+    "executive_summary": "AI-powered micro SaaS sells a narrow, recurring business outcome, not access to a clever prompt. The durable product captures authorized inputs, applies domain rules, produces reviewable work, and writes results into an existing workflow. Its moat is integration depth, accumulated exception knowledge, and reliable execution. This chapter distinguishes five product archetypes, translates three specialist plays into bounded software opportunities, and separates subscription billings from delivery costs and owner profit. Start with one buyer, one expensive recurring exception, and one measurable resolution. Expand only when customers keep paying after the novelty disappears and the actual support workload is visible.",
+    "key_metrics": [
+        {"label": "Series position", "value": "88/100; #02", "context": "Volume 004", "note": "Editorial score, not investment performance."},
+        {"label": "Base annual gross", "value": "$375,000", "context": "Subscription billings", "note": "Illustrative, before all delivery and operating costs."},
+        {"label": "Base annual owner profit", "value": "$112,500", "context": "30% margin; 1 FT + 2 C", "note": "Before owner income tax; labor assumptions matter."},
+    ],
+    "sections": [
+        {
+            "heading": "1. Sell a recurring job, not a model interface",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                "An AI micro SaaS is a small software business that owns a narrow recurring workflow for a defined buyer. The model may read messy documents, classify exceptions, or draft explanations, but the customer purchases completed work rather than tokens. A useful wedge connects an input source to an operational destination: a pharmacy reconciliation queue, an accounting exception ledger, or a browser task inside an existing application. Name the employee who currently performs the job, the event that triggers it, and the record that proves completion. If those three answers remain vague, the product is probably a demonstration. Small describes scope and team size, not an exemption from reliability. A single broken export can erase the time saved by hundreds of correct suggestions during an otherwise successful month.",
+                "Five archetypes expose the difference between convenience and embedded value. System integrations move validated work between tools. Domain reconciliation engines compare records against explicit rules. Browser copilots assist a worker at the point of action. Quantitative terminals maintain timely, normalized signals. Generic document chat adds a conversational layer without necessarily owning any subsequent action. None earns retention automatically. A connector with unreliable writes is replaceable; a document product with authoritative citations and a valuable downstream workflow can become durable. Treat the table as a hypothesis map rather than measured churn data. Interview buyers about what would break if the product disappeared tomorrow. A specific answer involving delayed collections, unresolved exceptions, or repeated manual work is stronger evidence than praise for a polished conversational interface or impressive generated prose.",
+                "Frontier model improvements compress the price of generic summarization because customers can often obtain a similar answer inside tools they already buy. Do not build the business around a temporary gap in model capability. Build around permissioned data access, durable identifiers, exception history, and a dependable route from recommendation to recorded action. Proprietary means rights and operational knowhow, not simply storing customer documents in your database. Preserve customer exportability; retention should follow utility rather than hostage data. Measure weekly completed workflows, correction minutes, and retained paying accounts by cohort. Separate cancellation from contraction and failed payments. A hundred signups say little when only four accounts finish a second workflow. Price against the recurring economic task, then verify that users return without founder reminders or subsidized manual intervention.",
+            ],
+            "table": {
+                "caption": "5-Archetype Micro-SaaS Moat & Churn Comparison Table: directional hypotheses, not benchmarks",
+                "headers": ["Archetype", "Moat / Churn Exposure", "Naive Trap", "Detection Metric", "Durable Operator Fallback"],
+                "rows": [
+                    ["System integration", "Mappings / connector failure", "Silent writes", "Failed write rate", "Replayable queue"],
+                    ["Domain reconciliation", "Rule history / bad matches", "AI decides eligibility", "Reviewer reversals", "Versioned rules"],
+                    ["Browser copilot", "Task context / UI drift", "Blind clicking", "Completion failures", "Preview and undo"],
+                    ["Signal terminal", "Fresh feeds / stale edge", "Backtest sells profit", "Executable quote age", "Expiry and provenance"],
+                    ["Generic document chat", "Thin moat / substitution", "Prompt is product", "Second workflow rate", "Own downstream resolution"],
+                ],
+            },
+        },
+        {
+            "heading": "2. Turn the 340B play into an auditable reconciliation wedge",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                "The mapped play section_340b_contract_pharmacy_spread_arbitrage becomes a software opportunity when the operator sells reconciliation infrastructure rather than assuming entitlement to a pharmacy spread. Covered entities and their service partners may need to reconcile dispensing records, purchasing transactions, accumulations, reversals, and contract fees. Start with one authorized customer and a defined file exchange. Identify which records belong together and which discrepancies require a trained reviewer. The statutory foundation is 42 U.S.C. section 256b, including restrictions concerning duplicate discounts and diversion. Contract pharmacy arrangements also depend on current agency positions, manufacturer policies, litigation, and contracts; the statute alone does not resolve every arrangement. Product value comes from traceable exception handling, not a claim that an AI system can certify eligibility or recover a predetermined amount of money from every prescription.",
+                "A split billing reconciliation engine should preserve original source rows, normalize identifiers, and distinguish a candidate match from a confirmed resolution. Apply deterministic matching to exact identifiers and documented tolerances; reserve language models for messy descriptions, reviewer summaries, and suggested investigation paths. Each exception needs source references, rule version, processing time, and a visible reason for its current status. Handle reversals as linked events instead of deleting the original transaction. Replaying the same batch must not create another charge or duplicate an accumulation. Reconcile record counts and monetary control totals before presenting an attractive savings number. If source feeds disagree, show the discrepancy rather than choosing whichever value produces a larger recovery estimate. This evidence trail is the product that survives a model vendor releasing better document extraction next quarter.",
+                "Sticky retainers arise when the software shortens a recurring close process and preserves knowledge that otherwise lives in spreadsheets and staff inboxes. Quote onboarding separately from recurring subscriptions, specify supported feeds, and cap included custom mapping work. A customer paying for three locations should understand whether additional locations increase the subscription, processing allowance, or both. Establish a baseline using actual review minutes and unresolved exceptions, then compare later periods with similar transaction volumes. Do not count every flagged dollar as recovered revenue: some alerts are duplicates, timing differences, or legitimate charges. Use minimum necessary data, tenant separation, access logging, and appropriate healthcare data agreements where applicable. Retention should rest on demonstrated operational improvement and accountable records, not on unsupported claims of universal HRSA approval or guaranteed pharmacy economics under changing commercial conditions.",
+            ],
+        },
+        {
+            "heading": "3. Package live signals without selling imaginary certainty",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                "The mapped play sportsbook_promo_ev_matched_betting_syndicates can inform a quantitative terminal that normalizes permitted odds feeds, tracks promotion terms, and calculates conditional expected value. The software subscription is separate from any customer's wagering bankroll or winnings. Show the timestamp, market, stake constraints, settlement assumptions, fees, and available liquidity behind each signal. Expected value is a probability weighted estimate, not cash already earned. Matched positions can still diverge when markets settle differently, a leg is rejected, limits change, or a quote disappears. A durable terminal explains these states and expires stale opportunities automatically. Sell analysis to eligible users only where the service and underlying activity are permitted. Do not build account sharing, false identities, or circumvention of operator restrictions into the value proposition; those dependencies destroy the reliability a recurring software subscription promises.",
+                "The mapped play airdrop_points_sybil_cluster_farming should be translated into authorized wallet telemetry and program analytics, not identity multiplication to defeat participation rules. A useful terminal tracks a customer's permitted wallets, transaction costs, published eligibility conditions, and changes in points accounting. It can also flag accidental duplicate participation or suspicious clusters for a program operator. Points are not revenue, and an announced allocation is not an unrestricted liquid asset. Model gas, bridge charges, slippage, lockups, and the possibility of zero distribution. Never imply that controlling more addresses creates legitimate eligibility. Preserve the exact program terms and observation time supporting a calculation, and distinguish inferred eligibility from an official determination. A customer can pay for clean operational visibility without the vendor promising rewards or facilitating participation that the underlying program explicitly excludes.",
+                "These terminals retain customers only if freshness, completeness, and interpretation remain useful after a speculative event ends. Measure the share of displayed signals whose source timestamps meet the promised freshness limit, not merely whether the application is online. Attribute each estimate to a feed version and a reproducible formula. Licensing and terms can prohibit redistribution even when information is visible in a browser; public visibility is not permission to scrape or resell. Maintain a fallback display that labels unavailable data rather than inventing continuity. Under 15 U.S.C. section 45, misleading performance representations can create exposure; keep evidence for advertised results and disclose material assumptions beside the claim. Copyright under 17 U.S.C. section 102 does not protect ideas or methods as such, but that distinction does not authorize copying protected expression or breaching data contracts.",
+            ],
+            "sop_steps": [
+                {"step": 1, "title": "Bound the feed", "action": "Record permitted sources and uses.", "detail": "Specify customer eligibility, territories, redistribution rights, and expiry."},
+                {"step": 2, "title": "Normalize", "action": "Store source timestamps and canonical identifiers.", "detail": "Retain raw evidence and reject malformed observations."},
+                {"step": 3, "title": "Calculate", "action": "Use versioned deterministic formulas.", "detail": "Include fees, missing inputs, and sensitivity ranges."},
+                {"step": 4, "title": "Expire", "action": "Suppress actionable labels on stale signals.", "detail": "Keep historical observations distinct from current opportunities."},
+                {"step": 5, "title": "Reconcile", "action": "Compare estimates with observed outcomes.", "detail": "Track coverage gaps without treating points or forecasts as cash."},
+            ],
+        },
+        {
+            "heading": "4. Put deterministic controls around probabilistic assistance",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                "The minimum durable architecture is an input adapter, a normalized event store, a deterministic rules layer, a bounded model task, and a recorded destination. Every input receives a stable identifier and processing version. Every proposed change carries its source evidence. The model can extract a candidate field or explain an exception, but typed validation decides whether the output is usable. Reject impossible dates, missing identifiers, unsupported currencies, and totals that fail reconciliation. A confident sentence is not a substitute for a valid record. Keep write credentials outside model prompts and give each connector only the operations it needs. Separate customer data at storage, retrieval, and caching boundaries. A shared cache that accidentally returns another tenant's result is a product failure even when the generated answer is otherwise accurate and elegantly phrased.",
+                "Browser embedded copilots require additional discipline because page layouts and interaction states change without your release schedule. Bind suggestions to the record the worker is viewing, and verify that record again before applying an action. Use supported application interfaces when available; never treat arbitrary text in a page or uploaded document as an instruction to the assistant. Offer a preview of material changes and reversible updates where the destination supports them. Preserve a receipt showing what changed, when, and from which input. If a button moves or an expected field disappears, stop that action and retain the draft rather than guessing. The competitive advantage is reliable completion inside the user's normal workflow, not the number of clicks automated in a staged video with unusually clean sample records and no interruptions.",
+                "Build a small evaluation set from authorized examples before selecting a more expensive model. Include ordinary records, ambiguous matches, reversals, missing fields, conflicting timestamps, and hostile instructions embedded in source text. Score the actual task: accepted fields, correct exceptions, duplicate suppression, and reviewer minutes. Track failures by customer and input type so a favorable average cannot conceal a broken important segment. Route easy cases through deterministic code and escalate only genuinely ambiguous work to a stronger model or trained reviewer. Budget retries, logging, storage, and human corrections alongside inference. Define explicit operating thresholds with the pilot buyer and record how they were chosen. The objective is not zero uncertainty; it is a bounded service that detects uncertainty, preserves evidence, and avoids turning an unverified suggestion into an irreversible business record.",
+            ],
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Earn the right to automate one write",
+                "body": "Before enabling a destination write, demonstrate the following properties on the agreed pilot sample. These are proposed engineering acceptance tests, not industry benchmarks.",
+                "items": ["Replaying an input creates no duplicate destination record.", "Every changed field links to its source and rule version.", "Missing or stale evidence produces an exception, not a fabricated answer.", "A failed connector preserves queued work for safe retry."],
+            },
+        },
+        {
+            "heading": "5. Underwrite subscriptions, delivery costs, and actual owner profit",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                "Use annual scenarios rather than presenting monthly subscription receipts as personal income. Conservative means $50,000 gross subscription billings at a 15% net margin, producing $7,500 net owner profit with 1 FT + 2 C. Base means $375,000 gross at 30%, producing $112,500 net with 1 FT + 2 C. Scaled means $700,000 gross at 45%, producing $315,000 net with 2 FT + 3 C. FT denotes a full time operator; C denotes a contractor, not another full time salary. These are planning cases, not observed outcomes or promises. Contractor counts say nothing about hours. The conservative budget cannot support three market rate full time workers. It assumes one founder supplies the full time role without a separate salary and two contractors provide tightly limited assignments within the stated expense envelope.",
+                "The worked table separates inference and hosting COGS from the broader costs of running the business. It assumes billings equal earned revenue for the modeled year, no sales tax included in revenue, and no refunds; adjust those assumptions before applying it to actual accounts. Delivery COGS also includes licensed feeds and direct service labor. Operating expenses cover acquisition, administration, tooling, and remaining paid labor. Owner profit here is the residual before owner income tax and financing costs, with no separate founder salary deducted. In the scaled case, paid staffing costs must fit within the expense rows, including the second full time worker. Impute a replacement salary for the founder to assess economic profit. For example, a $90,000 replacement cost turns the base residual into $22,500 before financing and owner taxes.",
+                "For a concrete base customer model, 125 accounts paying $250 monthly generate $31,250 monthly gross billings and $375,000 annually if all remain active for twelve months. The table allows $75,000 annual delivery COGS, equivalent to $50 per account per month, leaving $200 monthly contribution before operating expenses. At $800 acquisition cost, simple contribution payback is four months, excluding onboarding and churn effects. Do not extrapolate lifetime value from a young cohort or assume scaled margins arrive automatically. A high touch integration can consume the entire contribution with one support incident. Sell a paid pilot around one measurable job, log all founder intervention, and review renewals alongside usage. Expand only after the price covers actual delivery and support, the customer repeats the workflow, and the economics remain credible without treating unpaid founder labor as free forever.",
+            ],
+            "table": {
+                "caption": "Worked annual unit economics: illustrative budgets, USD; founder salary excluded",
+                "headers": ["Line Item", "Conservative", "Base", "Scaled"],
+                "rows": [
+                    ["Gross subscription billings", "$50,000", "$375,000", "$700,000"],
+                    ["Inference / hosting COGS", "$5,000", "$30,000", "$42,000"],
+                    ["Other delivery COGS", "$7,500", "$45,000", "$63,000"],
+                    ["Gross profit after delivery", "$37,500", "$300,000", "$595,000"],
+                    ["Operating expenses / paid labor", "$30,000", "$187,500", "$280,000"],
+                    ["Net owner profit, before owner tax", "$7,500", "$112,500", "$315,000"],
+                    ["Net margin", "15%", "30%", "45%"],
+                    ["Staffing footprint", "1 FT + 2 C", "1 FT + 2 C", "2 FT + 3 C"],
+                ],
+            },
+        },
+    ],
+    "pull_quote": "The moat is not the answer your model generates; it is the reliable, traceable work your customer no longer has to repeat.",
+    "diagram_id": "diag-01-micro-saas-wedge-workflow",
+    "action_checklist": [
+        "Name one buyer, trigger, and completion record.",
+        "Collect an authorized sample and baseline review minutes.",
+        "Document source rights, rule versions, and expiry limits.",
+        "Replay one batch and prove duplicate writes are suppressed.",
+        "Price a paid pilot with explicit usage and support limits.",
+        "Budget all labor and reconcile gross billings to owner profit.",
+    ],
+    "statutory_citations": [
+        {"title": "42 U.S.C. section 256b", "url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title42-section256b&num=0&edition=prelim", "relevance": "340B covered entities, duplicate discounts, and diversion restrictions."},
+        {"title": "15 U.S.C. section 45", "url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section45&num=0&edition=prelim", "relevance": "Unfair or deceptive acts; substantiate product and earnings representations."},
+        {"title": "17 U.S.C. section 102", "url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title17-section102&num=0&edition=prelim", "relevance": "Copyright subject matter and exclusion of ideas, systems, and methods; not a blanket data reuse license."},
+    ],
+}

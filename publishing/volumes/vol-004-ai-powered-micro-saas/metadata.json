@@ -1,0 +1,28 @@
+{
+  "volume_id": "vol-004-ai-powered-micro-saas",
+  "volume_slug": "vol-004-ai-powered-micro-saas",
+  "volume_number": 4,
+  "parent_brand": "THE FUCK YOU MONEY CLUB",
+  "book_series": "THE BIG MONEY PLAYBOOKS",
+  "tagline": "Big Money. Small Teams. No Bullshit.",
+  "title": "AI-POWERED MICRO SAAS",
+  "subtitle": "The Complete Playbook for Vertical B2B Wedges, Token Metering, Cloud-Credit Stacks & Scaling a $700k ARR 3-to-5 Person Software Firm",
+  "chapter_count": 12,
+  "total_word_count": 57624,
+  "expert_youtube_link_count": 204,
+  "min_expert_youtube_links_required": 150,
+  "target_expert_youtube_links": "150-200+",
+  "min_expert_youtube_links_per_chapter": 12,
+  "rating_system": "Money-to-Manpower Score",
+  "composite_score": 88,
+  "formats": [
+    "8.5×11 Executive Digital PDF",
+    "6×9 Print Edition",
+    "Reflowable EPUB 3.0"
+  ],
+  "isbn": null,
+  "publication_status": "approved_master",
+  "public_deploy_approved": false,
+  "paid_sales_approved": false,
+  "updated_at": "2026-11-20T17:54:20Z"
+}

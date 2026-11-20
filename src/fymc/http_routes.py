@@ -80,6 +80,7 @@ def _five_volume_collection(pub):
     built_map = {
         2: "vol-002-surplus-funds-recovery",
         3: "vol-003-digital-product-empire",
+        4: "vol-004-ai-powered-micro-saas",
     }
     for number, title in enumerate(("Surplus Funds Recovery", "Digital Product Empire",
                                     "AI-Powered Micro SaaS", "High-Ticket Affiliate Marketing"), 2):
