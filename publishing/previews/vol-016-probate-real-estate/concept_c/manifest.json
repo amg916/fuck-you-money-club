@@ -1,0 +1,65 @@
+{
+  "concept_id": "concept_c",
+  "volume_id": "vol-016-probate-real-estate",
+  "approved": false,
+  "edition_status": "concept_preview",
+  "preview_only": true,
+  "files": {
+    "digital_pdf.pdf": {
+      "bytes": 1879227,
+      "sha256": "d3a96f166aa940fd6f1b6f7a16fe93bf2181669c756aad6606ccb869a8aac927"
+    },
+    "print_6x9_pdf.pdf": {
+      "bytes": 2438354,
+      "sha256": "a52a6336918d7188dfb9cd057abf1cda9a7f7f0eb1ad54a04929c9fd748dbc03"
+    },
+    "workbook_pdf.pdf": {
+      "bytes": 532845,
+      "sha256": "9a1521d075c0bfd1b644241ee35f9a09be5876639337ade6350756dfc084fedd"
+    },
+    "book.epub": {
+      "bytes": 258148,
+      "sha256": "d40f0f231a277b08f7353fe4a62250d2fc75f953b576a3ed2814dfcf75379f29"
+    },
+    "art/cover.svg": {
+      "bytes": 4095,
+      "sha256": "7aae40cff41d2001badfb9328be258dae9b9e837cbb32c105793d2662a28da43"
+    },
+    "art/scorecard.svg": {
+      "bytes": 46778,
+      "sha256": "d2086d00906945d942a5ac9c23b7f70616da0cf744ccabf5950ad5ef04d22955"
+    },
+    "art/diag_01.svg": {
+      "bytes": 11482,
+      "sha256": "ed898a9bc8dc4290908dd06c9e90e6072596b9227d10a4ed201d7abf9ac225d5"
+    },
+    "art/diag_02.svg": {
+      "bytes": 8118,
+      "sha256": "c1812032cc9e2893a927d83bd79bc10c930d00d7b1ae2369dd9df0833d242e2c"
+    },
+    "art/diag_03.svg": {
+      "bytes": 11649,
+      "sha256": "2e4e3cc62e7726d1506484b4e24f8bea7e702bc71b411fbb009545673df5bb1c"
+    },
+    "art/diag_04.svg": {
+      "bytes": 9550,
+      "sha256": "d9dfffc75ae42aef37ad804599767f5713a32df8732e5ba2a792eb201630dd91"
+    },
+    "art/diag_05.svg": {
+      "bytes": 10023,
+      "sha256": "2a0e98eab8009f535708849302e798b3d04e37c27c5ea79bf8f955c167f06064"
+    },
+    "art/diag_06.svg": {
+      "bytes": 13686,
+      "sha256": "59f595821d8d3d5a2dc2be4a7e0f401bea01ef07e05be4b18469470813fd20eb"
+    },
+    "art/diag_07.svg": {
+      "bytes": 8564,
+      "sha256": "0feb9f06caafa7e3cba4e1ac40a95789526a0d5a9c6aa9895b2aad335d44a16f"
+    },
+    "art/diag_08.svg": {
+      "bytes": 8742,
+      "sha256": "92860983de48ff72f8afff0281ad0b2c99603f3b354db614161c16dc9e223d88"
+    }
+  }
+}

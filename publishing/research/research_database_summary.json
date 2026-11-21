@@ -1,6 +1,6 @@
 {
-  "abridged_video_count": 2416,
-  "raw_video_count": 2416,
+  "abridged_video_count": 2594,
+  "raw_video_count": 2594,
   "summary": {
     "type": "dict",
     "keys": [
@@ -22,11 +22,11 @@
       "coverage": 6
     },
     "values": {
-      "generated_at": "2026-11-21T22:03:50+00:00",
+      "generated_at": "2026-11-21T22:10:15+00:00",
       "schema_version": "1.0"
     }
   },
-  "generated_at": "2026-11-21T22:03:50Z",
+  "generated_at": "2026-11-21T22:10:15Z",
   "counts": {
     "topics": 8
   },
@@ -34,9 +34,9 @@
     {
       "topic_id": "business_model_and_economics",
       "title": "Business Model, Contingency Economics & Deal Scale",
-      "video_count": 1887,
-      "tip_count": 3972,
-      "channel_count": 1333,
+      "video_count": 2059,
+      "tip_count": 4113,
+      "channel_count": 1424,
       "top_sources": [
         {
           "video_id": "JVbzH2BD68w",
@@ -197,49 +197,57 @@
         "form or",
         "form you",
         "form the",
-        "form with",
-        "form on",
-        "form your",
+        "form a",
         "form in",
         "form where",
+        "form with",
+        "form your",
+        "form on",
         "form like",
-        "form a",
         "form so",
+        "court order",
+        "letters of administration",
         "form content",
+        "form as",
         "form if",
         "form it",
-        "court order",
-        "form as",
-        "form below",
         "form I",
+        "form below",
+        "form called",
         "form which",
         "Chapter 7",
-        "form called",
         "form uh",
         "form at",
-        "form right",
         "form um",
         "form here",
-        "form because",
+        "form right",
+        "form their",
+        "letters testamentary",
         "form builder",
-        "form submissions",
-        "form them",
-        "form videos",
         "property Act",
-        "Exchange Act",
-        "form but"
+        "form an",
+        "form because",
+        "form submissions"
       ],
       "tools_and_portals": [
         "Google",
-        "LinkedIn",
         "Facebook",
+        "LinkedIn",
         "Excel",
         "CSV",
         "Ancestry",
         "FamilySearch",
-        "https://excesselite.com",
+        "https://probatemastery.com",
         "Bing",
+        "https://www.youtube.com/@realestateinprobate",
+        "https://estateprofessionalsmastermind.buzzsprout.com/share",
+        "https://excesselite.com",
+        "https://probatemastery.com/earn-attorney-referrals-now-course-pricing/",
+        "https://www.facebook.com/ProbateMastery/",
+        "https://www.instagram.com/coachbrucehill/",
+        "https://probatemastery.com/discovery-call/",
         "https://www.facebook.com/groups/assetrecovery",
+        "https://facebook.com/groups/estateprofessionalsmastermind",
         "https://www.moneymakingjug.com/inquiry",
         "https://wise.com/invite/dic/todorivanovk1",
         "https://www.instagram.com/erizzyy/",
@@ -254,31 +262,58 @@
         "http://familysearch.me/youtubeportuguese",
         "http://familysearch.me/youtubespanish",
         "https://instagram.com/courtneyfricke",
+        "https://probatemastery.com/",
         "https://tiktok.com/@courtney.fricke",
         "https://www.facebook.com/courtneyfricke19/",
         "https://www.unclaimedceo.com/linkme",
         "https://www.youtube.com/@courtneyfricke",
         "https://www.youtube.com/surplusfunds101",
         "https://x.com/courtneyfricke",
-        "https://youtu.be/3cmj5kGm2Xw",
-        "https://www.instagram.com/thedavidwilkerson",
-        "https://www.unclaimedceo.com/freemasterclass",
-        "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
-        "PACER",
-        "http://amzn.to/1LGotjB",
-        "http://amzn.to/1T1dOU2",
-        "http://www.inventright.com",
-        "https://plus.google.com/u/0/+boberdoo",
-        "https://twitter.com/boberdoo"
+        "https://youtu.be/3cmj5kGm2Xw"
       ]
     },
     {
       "topic_id": "probate_and_docket_sourcing",
       "title": "County Probate Dockets, Intestate Filings & Estate Leads",
-      "video_count": 1773,
-      "tip_count": 3171,
-      "channel_count": 1171,
+      "video_count": 1950,
+      "tip_count": 4312,
+      "channel_count": 1266,
       "top_sources": [
+        {
+          "video_id": "Lt0e4PdSMmo",
+          "title": "What is Probate? Your Full Guide Through the Probate Process in California",
+          "author": "Horizon Real Estate & Probate and Trust Help",
+          "url": "https://www.youtube.com/watch?v=Lt0e4PdSMmo",
+          "duration": "00:09:59"
+        },
+        {
+          "video_id": "k-XM0z4Yjzs",
+          "title": "Independent Administration of Estates Act (IAEA) in Probate",
+          "author": "Meinzer Legal Briefs",
+          "url": "https://www.youtube.com/watch?v=k-XM0z4Yjzs",
+          "duration": "00:04:17"
+        },
+        {
+          "video_id": "_VnXEkxAEO0",
+          "title": "Understanding the Tennessee Probate Process",
+          "author": "Tennessee Probate Realty Group",
+          "url": "https://www.youtube.com/watch?v=_VnXEkxAEO0",
+          "duration": "00:05:37"
+        },
+        {
+          "video_id": "cDuy_EpieeM",
+          "title": "Probate Real Estate | Probate Value vs Market Value",
+          "author": "ProbateBiz: Probate Real Estate Training",
+          "url": "https://www.youtube.com/watch?v=cDuy_EpieeM",
+          "duration": "00:04:52"
+        },
+        {
+          "video_id": "C9alsmfSoC4",
+          "title": "Wholesaling Probate Properties Start to Finish - Part 1",
+          "author": "Rick Ginn",
+          "url": "https://www.youtube.com/watch?v=C9alsmfSoC4",
+          "duration": "00:18:14"
+        },
         {
           "video_id": "oZiYbKNvxJY",
           "title": "Probate Part 6 \"Finding Probate Documents\" by James Tanner",
@@ -287,56 +322,39 @@
           "duration": "00:15:51"
         },
         {
+          "video_id": "Ghymi1mvrRQ",
+          "title": "Probate From Start To Finish | How To Get Probate Letters | Probate Realtor | Probate Real Estate",
+          "author": "Wanda Rochelle, Probate Resource",
+          "url": "https://www.youtube.com/watch?v=Ghymi1mvrRQ",
+          "duration": "00:03:09"
+        },
+        {
           "video_id": "U6LsR1gr0oA",
           "title": "What If An Heir or Beneficary is Missing? How to Find a Missing Heir?",
           "author": "Win-Win Realtors TV",
           "url": "https://www.youtube.com/watch?v=U6LsR1gr0oA",
           "duration": "00:08:06"
-        },
-        {
-          "video_id": "1ahhduhMdd0",
-          "title": "Declaration Under Probate Code 13101 Tutorial",
-          "author": "California State Controller's Office",
-          "url": "https://www.youtube.com/watch?v=1ahhduhMdd0",
-          "duration": "00:03:27"
-        },
-        {
-          "video_id": "CyAfgfoF-eo",
-          "title": "Probate Part 2, Wills by James Tanner",
-          "author": "BYU Library Family History Center",
-          "url": "https://www.youtube.com/watch?v=CyAfgfoF-eo",
-          "duration": "00:16:48"
-        },
-        {
-          "video_id": "nxcVuXjUaaA",
-          "title": "Online Legal Research: Part 4 of 9: Court Dockets",
-          "author": "Wilhelmina Randtke",
-          "url": "https://www.youtube.com/watch?v=nxcVuXjUaaA",
-          "duration": "00:06:35"
-        },
-        {
-          "video_id": "TBB8OPPFSsM",
-          "title": "What’s in a Probate Record and How to Use it for Genealogical Research– James Tanner (10 Sep 2023)",
-          "author": "BYU Library Family History Center",
-          "url": "https://www.youtube.com/watch?v=TBB8OPPFSsM",
-          "duration": "00:50:53"
-        },
-        {
-          "video_id": "1BlzkVdGPAo",
-          "title": "I got free probate leads from the courthouse! Plus SOI and referral marketing | Podcast Episode 85",
-          "author": "Probate Mastery",
-          "url": "https://www.youtube.com/watch?v=1BlzkVdGPAo",
-          "duration": "00:38:47"
-        },
-        {
-          "video_id": "07zaZ3sQwi8",
-          "title": "Probate Part 7, \"Example of a Probate File\" by James Tanner",
-          "author": "BYU Library Family History Center",
-          "url": "https://www.youtube.com/watch?v=07zaZ3sQwi8",
-          "duration": "00:16:46"
         }
       ],
       "top_timestamped_insights": [
+        {
+          "tip_paraphrase_summary": "Every deal if we can put our prospects needs before our own we can monetize every deal if you're a one shot you know…",
+          "category": "Insider Tactic",
+          "timestamp": "00:06:27",
+          "link": "https://www.youtube.com/watch?v=d3g2CkHYVp4&t=387s",
+          "video_title": "Probate Mastery is more than Probate Training and Certification | Chad Corbett's Probate Course",
+          "author": "Probate Mastery",
+          "verbatim_research_only": true
+        },
+        {
+          "tip_paraphrase_summary": "What if i proactively reach out to everyone in my community that's in that situation knowing good and well that i they're better off…",
+          "category": "Legal / Deadline",
+          "timestamp": "00:05:06",
+          "link": "https://www.youtube.com/watch?v=d3g2CkHYVp4&t=306s",
+          "video_title": "Probate Mastery is more than Probate Training and Certification | Chad Corbett's Probate Course",
+          "author": "Probate Mastery",
+          "verbatim_research_only": true
+        },
         {
           "tip_paraphrase_summary": "I make sure to do two things with my landing pages for e-commerce products. One is to have a headline that is strongly related…",
           "category": "Non-Negotiable Rule",
@@ -374,6 +392,33 @@
           "verbatim_research_only": true
         },
         {
+          "tip_paraphrase_summary": "Is instant access to a digital course that digital course will walk you through exactly the way the live course does i've thrown in…",
+          "category": "Insider Tactic",
+          "timestamp": "00:03:34",
+          "link": "https://www.youtube.com/watch?v=svPbBkp8nRQ&t=214s",
+          "video_title": "Learn Probate and Build a Probate Business - Probate Training and Certification with Chad Corbett",
+          "author": "Probate Mastery",
+          "verbatim_research_only": true
+        },
+        {
+          "tip_paraphrase_summary": "It's quite a task and it's important to me that i get this right and build a community that's valuable to everybody so you'll…",
+          "category": "Non-Negotiable Rule",
+          "timestamp": "00:04:00",
+          "link": "https://www.youtube.com/watch?v=svPbBkp8nRQ&t=240s",
+          "video_title": "Learn Probate and Build a Probate Business - Probate Training and Certification with Chad Corbett",
+          "author": "Probate Mastery",
+          "verbatim_research_only": true
+        },
+        {
+          "tip_paraphrase_summary": "Price because of the way we handled the way we transaction engineered that and for me after every appointment i go home and usually…",
+          "category": "Pitfall / Hard No",
+          "timestamp": "00:04:39",
+          "link": "https://www.youtube.com/watch?v=d3g2CkHYVp4&t=279s",
+          "video_title": "Probate Mastery is more than Probate Training and Certification | Chad Corbett's Probate Course",
+          "author": "Probate Mastery",
+          "verbatim_research_only": true
+        },
+        {
           "tip_paraphrase_summary": "You don't really own any of that. It's not an asset. Now think about it like an entrepreneur, as you probably are. Your time…",
           "category": "Pitfall / Hard No",
           "timestamp": "00:05:03",
@@ -381,98 +426,53 @@
           "video_title": "The New Parasite SEO Loophole Hiding Inside Google",
           "author": "Alek Borisov",
           "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "To make sure that they're guided properly so they don't make any costly mistakes that would be devastating. So, I would say it's even…",
-          "category": "Pitfall / Hard No",
-          "timestamp": "00:13:41",
-          "link": "https://www.youtube.com/watch?v=wqPY1eV4vuQ&t=821s",
-          "video_title": "The truth about yacht brokers and boat sales",
-          "author": "Current Yachts",
-          "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "You could all a sudden, you know, get that knock on the door, you've inherited 2 million 2 million euro property in Portugal or…",
-          "category": "Pitfall / Hard No",
-          "timestamp": "00:32:03",
-          "link": "https://www.youtube.com/watch?v=ywaYY4cPtAY&t=1923s",
-          "video_title": "Unclaimed Estates & Abandoned Properties in Spain - tracing Heirs Worldwide",
-          "author": "My Lawyer In Spain",
-          "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "Both numbers are important to be looking at. So let's talk about really what is acceptable in terms of churn. How do I really…",
-          "category": "Non-Negotiable Rule",
-          "timestamp": "00:04:26",
-          "link": "https://www.youtube.com/watch?v=su9KuGnbAW8&t=266s",
-          "video_title": "AskAVC #2 - SaaS Churn: what is it?",
-          "author": "Ask a VC",
-          "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "Seller, it's not really their fault. They just really haven't had the tough questions asked to them and to put the numbers down and…",
-          "category": "Pitfall / Hard No",
-          "timestamp": "00:29:13",
-          "link": "https://www.youtube.com/watch?v=wqPY1eV4vuQ&t=1753s",
-          "video_title": "The truth about yacht brokers and boat sales",
-          "author": "Current Yachts",
-          "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "Of client that comes to you first. If it's an heir that comes to you or someone who's got an empty property, can you…",
-          "category": "Pitfall / Hard No",
-          "timestamp": "00:22:18",
-          "link": "https://www.youtube.com/watch?v=ywaYY4cPtAY&t=1338s",
-          "video_title": "Unclaimed Estates & Abandoned Properties in Spain - tracing Heirs Worldwide",
-          "author": "My Lawyer In Spain",
-          "verbatim_research_only": true
         }
       ],
       "statutes_and_forms": [
-        "form and",
         "form of",
+        "form and",
         "form that",
         "form to",
         "form is",
         "form for",
         "form the",
-        "form or",
         "form you",
         "form a",
-        "form below",
-        "form your",
-        "form in",
-        "form on",
+        "form or",
         "court order",
+        "form below",
+        "form in",
+        "form your",
+        "form on",
+        "letters of administration",
         "form with",
-        "Chapter 7",
         "form so",
-        "form Commercial",
         "form where",
-        "form like",
+        "Chapter 7",
+        "form Commercial",
         "form it",
+        "form like",
+        "letters testamentary",
         "Chapter 13",
         "form if",
         "Form uh",
-        "form which",
         "property Act",
-        "letters of administration",
         "form I",
-        "form we",
-        "form but",
+        "form which",
+        "form their",
+        "form as",
+        "protection act",
+        "form an",
         "form here",
         "form our",
-        "form them",
         "form um",
-        "practices act",
-        "protection act",
-        "chapter 11",
-        "form an",
-        "form as"
+        "form we",
+        "form but",
+        "form them"
       ],
       "tools_and_portals": [
-        "Google",
         "Facebook",
+        "Google",
         "LinkedIn",
         "Excel",
         "Ancestry",
@@ -481,9 +481,17 @@
         "https://www.facebook.com/groups/assetrecovery",
         "https://www.moneymakingjug.com/inquiry",
         "FamilySearch",
+        "https://probatemastery.com",
         "https://www.instagram.com/erizzyy/",
         "Bing",
+        "https://www.youtube.com/@realestateinprobate",
+        "https://estateprofessionalsmastermind.buzzsprout.com/share",
+        "https://probatemastery.com/earn-attorney-referrals-now-course-pricing/",
+        "https://www.facebook.com/ProbateMastery/",
+        "https://www.instagram.com/coachbrucehill/",
+        "https://probatemastery.com/discovery-call/",
         "https://wise.com/invite/dic/todorivanovk1",
+        "https://facebook.com/groups/estateprofessionalsmastermind",
         "https://www.surplusfunds101.com/freecallingscript",
         "https://www.youtube.com/surplusfunds101",
         "https://www.facebook.com/groups/770825015084618",
@@ -494,31 +502,23 @@
         "https://www.unclaimedceo.com/freemasterclass",
         "https://www.unclaimedceo.com/digitalcourse",
         "https://www.unclaimedceo.com/get-my-free-guide",
+        "Small Estate",
         "https://instagram.com/courtneyfricke",
         "https://tiktok.com/@courtney.fricke",
         "https://www.facebook.com/courtneyfricke19/",
         "https://www.youtube.com/@courtneyfricke",
         "https://x.com/courtneyfricke",
+        "PropStream",
         "http://familysearch.me/facebook",
-        "http://familysearch.me/home",
-        "http://familysearch.me/instagram",
-        "http://familysearch.me/RootsTech",
-        "http://familysearch.me/twitter",
-        "http://familysearch.me/youtube",
-        "http://familysearch.me/youtubeeurope",
-        "http://familysearch.me/youtubeportuguese",
-        "http://familysearch.me/youtubespanish",
-        "https://tinyurl.com/unclaimedmentor",
-        "https://youtu.be/3cmj5kGm2Xw",
-        "https://www.unclaimedceo.com/home-page-8750"
+        "http://familysearch.me/home"
       ]
     },
     {
       "topic_id": "unclaimed_property_and_escheat",
       "title": "State Unclaimed Property, Escheated Funds & Treasury Claims",
-      "video_count": 616,
-      "tip_count": 1803,
-      "channel_count": 387,
+      "video_count": 622,
+      "tip_count": 1804,
+      "channel_count": 393,
       "top_sources": [
         {
           "video_id": "D-PMjgNe-7s",
@@ -695,21 +695,21 @@
         "form in",
         "form them",
         "form um",
+        "court order",
         "form this",
         "form where",
         "form which",
         "affidavit of heirship",
-        "court order",
         "form because",
         "form due",
+        "form from",
         "form I",
         "form today",
+        "letters of administration",
         "Chapter 7",
         "form acts",
         "form all",
-        "form as",
-        "form fill",
-        "form from"
+        "form as"
       ],
       "tools_and_portals": [
         "Facebook",
@@ -757,9 +757,9 @@
     {
       "topic_id": "genealogy_and_heirship_proof",
       "title": "Forensic Genealogy, Per-Stirpes Kinship & Proof of Heirship",
-      "video_count": 1991,
-      "tip_count": 2476,
-      "channel_count": 1342,
+      "video_count": 2085,
+      "tip_count": 2519,
+      "channel_count": 1411,
       "top_sources": [
         {
           "video_id": "7M3XZfN7814",
@@ -921,36 +921,36 @@
         "form you",
         "form the",
         "form a",
-        "form with",
         "form on",
+        "form with",
         "form your",
         "form in",
-        "form so",
         "form where",
+        "form so",
         "form like",
         "form below",
         "form content",
-        "form if",
         "form as",
-        "form Commercial",
-        "form it",
         "form I",
+        "form if",
+        "form it",
+        "form Commercial",
         "form at",
-        "form which",
         "form called",
-        "Form uh",
+        "form which",
+        "letters of administration",
         "property Act",
         "form here",
-        "form right",
-        "letters of administration",
-        "Chapter 7",
+        "Form uh",
         "court order",
         "form builder",
-        "form submissions",
+        "form right",
         "form um",
+        "Chapter 7",
+        "form submissions",
+        "form they",
         "form videos",
-        "Chapter 13",
-        "Exchange Act"
+        "Chapter 13"
       ],
       "tools_and_portals": [
         "Google",
@@ -963,8 +963,8 @@
         "FamilySearch",
         "https://www.facebook.com/groups/assetrecovery",
         "https://www.moneymakingjug.com/inquiry",
-        "https://www.instagram.com/erizzyy/",
         "Bing",
+        "https://www.instagram.com/erizzyy/",
         "https://www.surplusfunds101.com/freecallingscript",
         "https://wise.com/invite/dic/todorivanovk1",
         "https://www.youtube.com/surplusfunds101",
@@ -989,18 +989,18 @@
         "http://familysearch.me/youtubeeurope",
         "http://familysearch.me/youtubeportuguese",
         "http://familysearch.me/youtubespanish",
+        "https://ProbateMastery.com",
         "https://www.youtube.com/@courtneyfricke",
         "https://youtu.be/3cmj5kGm2Xw",
-        "https://tinyurl.com/unclaimedmentor",
-        "https://www.unclaimedceo.com/home-page-8750"
+        "https://tinyurl.com/unclaimedmentor"
       ]
     },
     {
       "topic_id": "skip_tracing_and_outreach",
       "title": "Skip Tracing, Ethical Heir Contact & Trust Building",
-      "video_count": 1340,
-      "tip_count": 948,
-      "channel_count": 946,
+      "video_count": 1464,
+      "tip_count": 984,
+      "channel_count": 1015,
       "top_sources": [
         {
           "video_id": "DgzklijTLzE",
@@ -1160,38 +1160,38 @@
         "form or",
         "form is",
         "form you",
-        "form your",
         "form the",
+        "form your",
         "form a",
         "form where",
         "form on",
-        "form with",
         "form in",
+        "form with",
         "form like",
         "form so",
+        "court order",
         "form below",
         "form content",
         "Form uh",
         "form Commercial",
-        "court order",
-        "form which",
-        "form if",
         "form as",
         "form I",
-        "form um",
+        "form which",
         "Protection Act",
-        "Chapter 7",
+        "form if",
+        "form um",
         "form called",
         "form it",
+        "Chapter 7",
         "form here",
+        "form at",
         "form right",
         "Chapter 13",
-        "form at",
-        "form but",
-        "form them",
-        "form because",
         "form builder",
-        "form our"
+        "form but",
+        "form our",
+        "form them",
+        "form because"
       ],
       "tools_and_portals": [
         "LinkedIn",
@@ -1199,15 +1199,23 @@
         "Facebook",
         "Excel",
         "CSV",
-        "https://excesselite.com",
+        "https://probatemastery.com",
         "Bing",
+        "https://excesselite.com",
         "https://www.facebook.com/groups/assetrecovery",
         "https://www.moneymakingjug.com/inquiry",
         "https://www.surplusfunds101.com/freecallingscript",
         "https://www.youtube.com/surplusfunds101",
         "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
+        "https://facebook.com/groups/estateprofessionalsmastermind",
         "https://www.instagram.com/thedavidwilkerson",
         "https://www.instagram.com/erizzyy/",
+        "https://estateprofessionalsmastermind.buzzsprout.com/share",
+        "https://probatemastery.com/discovery-call/",
+        "https://probatemastery.com/earn-attorney-referrals-now-course-pricing/",
+        "https://www.facebook.com/ProbateMastery/",
+        "https://www.instagram.com/coachbrucehill/",
+        "https://www.youtube.com/@realestateinprobate",
         "https://instagram.com/courtneyfricke",
         "https://tiktok.com/@courtney.fricke",
         "https://www.facebook.com/courtneyfricke19/",
@@ -1215,6 +1223,7 @@
         "https://www.youtube.com/@courtneyfricke",
         "https://x.com/courtneyfricke",
         "https://www.unclaimedceo.com/linkme",
+        "PropStream",
         "Ancestry",
         "https://www.unclaimedceo.com/freemasterclass",
         "https://www.unclaimedceo.com/digitalcourse",
@@ -1224,24 +1233,15 @@
         "https://www.boberdoo.com",
         "https://www.facebook.com/boberdooLLC/",
         "https://www.linkedin.com/company/boberdoo-com-llc",
-        "https://www.pinterest.com/boberdoocom/",
-        "https://www.youtube.com/watch?v=5E-HfiCVYnc",
-        "https://www.youtube.com/watch?v=EKrBDZYFq2A",
-        "https://www.youtube.com/watch?v=UsgE1Y0oWSk",
-        "https://www.youtube.com/watch?v=VFmDI2izmrk",
-        "https://www.youtube.com/watch?v=yqu6OuHwKwo",
-        "PACER",
-        "https://tinyurl.com/unclaimedmentor",
-        "https://www.smartlead.ai",
-        "https://www.smartlead.ai/ebook-and-guide"
+        "https://www.pinterest.com/boberdoocom/"
       ]
     },
     {
       "topic_id": "contracts_and_compensation",
       "title": "Fee Agreements, Assignments of Interest & Escrow Disbursement",
-      "video_count": 1896,
-      "tip_count": 2507,
-      "channel_count": 1296,
+      "video_count": 2070,
+      "tip_count": 2580,
+      "channel_count": 1388,
       "top_sources": [
         {
           "video_id": "VBvaq5etzV4",
@@ -1402,37 +1402,37 @@
         "form or",
         "form you",
         "form the",
-        "form with",
         "form a",
+        "form with",
         "form on",
         "form in",
+        "court order",
         "form your",
         "form below",
         "form like",
         "form where",
         "form so",
-        "court order",
-        "Chapter 7",
-        "form content",
-        "form it",
+        "letters of administration",
         "form as",
+        "form content",
+        "Chapter 7",
+        "form I",
+        "form it",
         "form at",
         "form Commercial",
-        "form I",
         "Form uh",
-        "form if",
         "form called",
+        "form if",
         "form which",
-        "Chapter 13",
+        "letters testamentary",
         "form here",
         "form um",
         "property Act",
-        "letters of administration",
-        "form we",
+        "Chapter 13",
+        "form their",
+        "Protection Act",
         "form builder",
-        "form right",
-        "form submissions",
-        "Protection Act"
+        "form we"
       ],
       "tools_and_portals": [
         "Google",
@@ -1444,12 +1444,20 @@
         "https://www.facebook.com/groups/assetrecovery",
         "Ancestry",
         "https://www.moneymakingjug.com/inquiry",
+        "https://probatemastery.com",
         "https://www.instagram.com/erizzyy/",
         "Bing",
         "FamilySearch",
+        "https://www.youtube.com/@realestateinprobate",
+        "https://estateprofessionalsmastermind.buzzsprout.com/share",
+        "https://probatemastery.com/earn-attorney-referrals-now-course-pricing/",
+        "https://www.facebook.com/ProbateMastery/",
+        "https://www.instagram.com/coachbrucehill/",
         "https://www.surplusfunds101.com/freecallingscript",
+        "https://probatemastery.com/discovery-call/",
         "https://wise.com/invite/dic/todorivanovk1",
         "https://www.youtube.com/surplusfunds101",
+        "https://facebook.com/groups/estateprofessionalsmastermind",
         "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
         "https://www.instagram.com/thedavidwilkerson",
         "https://www.facebook.com/groups/770825015084618",
@@ -1458,31 +1466,23 @@
         "https://www.unclaimedceo.com/freemasterclass",
         "https://www.unclaimedceo.com/digitalcourse",
         "https://www.unclaimedceo.com/get-my-free-guide",
+        "Small Estate",
         "https://instagram.com/courtneyfricke",
         "https://tiktok.com/@courtney.fricke",
         "https://www.facebook.com/courtneyfricke19/",
         "https://www.youtube.com/@courtneyfricke",
         "https://x.com/courtneyfricke",
-        "https://tinyurl.com/unclaimedmentor",
-        "https://www.unclaimedceo.com/home-page-8750",
-        "http://springsolutionsllcwordpress.com/",
-        "https://plus.google.com/u/0/+boberdoo",
-        "https://probatemastery.com",
-        "https://recover-bankruptcy-unclaimed-funds.teachable.com/",
-        "https://recover-bankruptcy-unclaimed-funds.teachable.com/p/bankruptcy-unclaimed-funds-hack",
-        "https://recover-bankruptcy-unclaimed-funds.teachable.com/purchase?product_id=4503793",
-        "https://sso.teachable.com/secure/657120/checkout/4503791/state-unclaimed-funds-guide",
-        "https://twitter.com/boberdoo",
-        "https://www.boberdoo.com",
-        "https://www.facebook.com/boberdooLLC/"
+        "PropStream",
+        "https://probatemastery.com/",
+        "https://tinyurl.com/unclaimedmentor"
       ]
     },
     {
       "topic_id": "statutory_caps_and_licensing",
       "title": "State Fee Caps, Waiting Periods, PI Licensing & UPL Rules",
-      "video_count": 1969,
-      "tip_count": 2259,
-      "channel_count": 1303,
+      "video_count": 2146,
+      "tip_count": 2482,
+      "channel_count": 1397,
       "top_sources": [
         {
           "video_id": "ttoT3V6duzU",
@@ -1542,6 +1542,15 @@
         }
       ],
       "top_timestamped_insights": [
+        {
+          "tip_paraphrase_summary": "Then you can say, great, well, first off, I'm an agent but also an investor and will be acting as a buyer in this…",
+          "category": "Insider Tactic",
+          "timestamp": "00:30:38",
+          "link": "https://www.youtube.com/watch?v=M9iyZc2j_uQ&t=1838s",
+          "video_title": "How To Start Wholesale Real Estate In 2027 (15hrs/wk)!",
+          "author": "Real Estate Skills",
+          "verbatim_research_only": true
+        },
         {
           "tip_paraphrase_summary": "<b>that started, they heard</b> <b>about the regulation coming,</b> <b>so they jumped in</b> <b>front of it, did licensing.</b> <b>licensing, did that kind</b> <b>Oh, I see.</b>…",
           "category": "Pitfall / Hard No",
@@ -1615,65 +1624,56 @@
           "verbatim_research_only": true
         },
         {
-          "tip_paraphrase_summary": "Go take a look at that. I know I just gave you a three different website links... Yes. Or probably say, Oh my God…",
+          "tip_paraphrase_summary": "I put my deeded in a as a transfer on death deeded and as soon as I'm dead, boom it goes around. So transfer…",
           "category": "Pitfall / Hard No",
           "timestamp": "00:03:31",
-          "link": "https://www.youtube.com/watch?v=TTfaOSBvLDc&t=211s",
-          "video_title": "State Funds Tutorial Delaware: Registering As A Property Locator For The State Of Delaware.",
-          "author": "Surplus Funds 101",
-          "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "I have a document library, there's gonna be a link in the description, you can go and take advantage of that document library, it…",
-          "category": "Pitfall / Hard No",
-          "timestamp": "00:07:16",
-          "link": "https://www.youtube.com/watch?v=6yIKsJMj6Gk&t=436s",
-          "video_title": "State Funds Tutorial New Mexico: How To Register As A Property Locator In The State Of New Mexico.",
-          "author": "Surplus Funds 101",
+          "link": "https://www.youtube.com/watch?v=hvl2NRPSVTE&t=211s",
+          "video_title": "How To Save Your House From Medicaid Recovery (Lady Bird Deeds Explained)",
+          "author": "The Medicare Family",
           "verbatim_research_only": true
         }
       ],
       "statutes_and_forms": [
-        "form and",
         "form of",
+        "form and",
         "form that",
         "form to",
         "form for",
         "form is",
-        "form or",
         "form the",
+        "form or",
         "form you",
         "form a",
+        "court order",
         "form below",
         "form your",
-        "form on",
         "form in",
+        "form on",
         "form with",
         "form so",
         "form where",
-        "court order",
+        "letters of administration",
         "form like",
         "Chapter 7",
         "form Commercial",
-        "Form uh",
         "form it",
-        "form if",
-        "Chapter 13",
+        "Form uh",
         "form I",
+        "form if",
+        "letters testamentary",
+        "Chapter 13",
+        "form their",
         "property Act",
-        "form which",
-        "letters of administration",
-        "form um",
-        "form we",
         "Protection Act",
-        "form but",
+        "form um",
+        "form which",
+        "form as",
         "form content",
         "form here",
         "form our",
-        "form them",
-        "Exchange Act",
-        "form now",
-        "practices act"
+        "form we",
+        "form an",
+        "form but"
       ],
       "tools_and_portals": [
         "Google",
@@ -1686,9 +1686,17 @@
         "https://www.facebook.com/groups/assetrecovery",
         "https://www.moneymakingjug.com/inquiry",
         "FamilySearch",
-        "https://www.instagram.com/erizzyy/",
+        "https://probatemastery.com",
         "Bing",
+        "https://www.instagram.com/erizzyy/",
+        "https://www.youtube.com/@realestateinprobate",
+        "https://estateprofessionalsmastermind.buzzsprout.com/share",
+        "https://probatemastery.com/earn-attorney-referrals-now-course-pricing/",
+        "https://www.facebook.com/ProbateMastery/",
+        "https://www.instagram.com/coachbrucehill/",
+        "https://probatemastery.com/discovery-call/",
         "https://wise.com/invite/dic/todorivanovk1",
+        "https://facebook.com/groups/estateprofessionalsmastermind",
         "https://www.surplusfunds101.com/freecallingscript",
         "https://www.youtube.com/surplusfunds101",
         "https://www.facebook.com/groups/770825015084618",
@@ -1699,31 +1707,23 @@
         "https://www.unclaimedceo.com/freemasterclass",
         "https://www.unclaimedceo.com/digitalcourse",
         "https://www.unclaimedceo.com/get-my-free-guide",
+        "Small Estate",
         "https://instagram.com/courtneyfricke",
         "https://tiktok.com/@courtney.fricke",
         "https://www.facebook.com/courtneyfricke19/",
         "https://www.youtube.com/@courtneyfricke",
         "https://x.com/courtneyfricke",
-        "https://tinyurl.com/unclaimedmentor",
-        "http://amzn.to/1LGotjB",
-        "http://amzn.to/1T1dOU2",
-        "http://familysearch.me/facebook",
-        "http://familysearch.me/home",
-        "http://familysearch.me/instagram",
-        "http://familysearch.me/RootsTech",
-        "http://familysearch.me/twitter",
-        "http://familysearch.me/youtube",
-        "http://familysearch.me/youtubeeurope",
-        "http://familysearch.me/youtubeportuguese",
-        "http://familysearch.me/youtubespanish"
+        "PropStream",
+        "https://probatemastery.com/",
+        "https://tinyurl.com/unclaimedmentor"
       ]
     },
     {
       "topic_id": "automation_and_small_team_ops",
       "title": "Docket Automation, AI Abstracting & Small-Team Operations",
-      "video_count": 1828,
-      "tip_count": 5088,
-      "channel_count": 1257,
+      "video_count": 1958,
+      "tip_count": 5131,
+      "channel_count": 1323,
       "top_sources": [
         {
           "video_id": "zqtx1Soeq5E",
@@ -1884,37 +1884,37 @@
         "form or",
         "form the",
         "form you",
-        "form with",
         "form a",
+        "form with",
         "form where",
         "form so",
         "form your",
         "form on",
         "form below",
-        "form like",
         "form in",
+        "form like",
+        "court order",
+        "letters of administration",
         "form it",
         "form content",
+        "form as",
         "form which",
         "form if",
-        "court order",
-        "form as",
         "form at",
-        "Form uh",
-        "Chapter 7",
         "form I",
+        "Form uh",
         "form um",
+        "Chapter 7",
         "form we",
-        "form because",
-        "form but",
         "form called",
         "form here",
+        "letters testamentary",
+        "form because",
+        "form but",
         "form builder",
         "form submissions",
-        "form this",
-        "letters of administration",
-        "Chapter 13",
-        "form built"
+        "form their",
+        "form this"
       ],
       "tools_and_portals": [
         "Google",
@@ -1927,36 +1927,36 @@
         "https://www.facebook.com/groups/assetrecovery",
         "https://www.moneymakingjug.com/inquiry",
         "https://www.instagram.com/erizzyy/",
-        "FamilySearch",
+        "https://probatemastery.com",
         "Bing",
+        "FamilySearch",
         "https://www.surplusfunds101.com/freecallingscript",
+        "https://www.youtube.com/@realestateinprobate",
+        "https://estateprofessionalsmastermind.buzzsprout.com/share",
+        "https://probatemastery.com/earn-attorney-referrals-now-course-pricing/",
+        "https://www.facebook.com/ProbateMastery/",
+        "https://www.instagram.com/coachbrucehill/",
         "https://www.youtube.com/surplusfunds101",
+        "https://probatemastery.com/discovery-call/",
         "https://wise.com/invite/dic/todorivanovk1",
         "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
         "https://www.instagram.com/thedavidwilkerson",
         "https://www.facebook.com/groups/770825015084618",
         "https://www.unclaimedceo.com/linkme",
+        "https://facebook.com/groups/estateprofessionalsmastermind",
         "https://www.unclaimedceo.com/digitalcourse",
         "https://www.unclaimedceo.com/freemasterclass",
         "https://www.unclaimedceo.com/get-my-free-guide",
         "PACER",
+        "Small Estate",
+        "https://probatemastery.com/",
         "https://tinyurl.com/unclaimedmentor",
         "https://www.unclaimedceo.com/home-page-8750",
+        "PropStream",
         "Regrid",
         "http://springsolutionsllcwordpress.com/",
         "https://plus.google.com/u/0/+boberdoo",
-        "https://probatemastery.com",
-        "https://recover-bankruptcy-unclaimed-funds.teachable.com/",
-        "https://recover-bankruptcy-unclaimed-funds.teachable.com/p/bankruptcy-unclaimed-funds-hack",
-        "https://recover-bankruptcy-unclaimed-funds.teachable.com/purchase?product_id=4503793",
-        "https://sso.teachable.com/secure/657120/checkout/4503791/state-unclaimed-funds-guide",
-        "https://twitter.com/boberdoo",
-        "https://www.boberdoo.com",
-        "https://www.facebook.com/boberdooLLC/",
-        "https://www.linkedin.com/company/boberdoo-com-llc",
-        "https://www.pinterest.com/boberdoocom/",
-        "https://www.youtube.com/watch?v=5E-HfiCVYnc",
-        "https://www.youtube.com/watch?v=EKrBDZYFq2A"
+        "https://recover-bankruptcy-unclaimed-funds.teachable.com/"
       ]
     }
   ],
@@ -1968,9 +1968,9 @@
       "headline": "Heir location is paid on contingency, never on up-front fees.",
       "summary": "Across the corpus, operators converge on a pure contingency model: the heir pays nothing out of pocket, the locator advances all research cost, and the fee is a negotiated percentage released only when the estate or state agency actually disburses funds. Charging an heir an advance fee is treated as the single clearest marker of a predatory or unlicensed operator.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 1333,
-      "video_count": 1887,
-      "corroborating_tip_count": 3972,
+      "channel_count": 1424,
+      "video_count": 2059,
+      "corroborating_tip_count": 4113,
       "supporting_links": [
         {
           "video_title": "State Funds Tutorial New Mexico: How To Register As A Property Locator In The State Of New Mexico.",
@@ -2018,10 +2018,22 @@
       "headline": "Fresh county probate and intestate dockets outperform purchased lead lists.",
       "summary": "Practitioners consistently build pipeline from newly filed probate and administration matters pulled directly from county clerk portals rather than resold lists. Filings naming an administrator but no located heirs, and estates sitting open past the local notice period, are the recurring high-value signal.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 1171,
-      "video_count": 1773,
-      "corroborating_tip_count": 3171,
+      "channel_count": 1266,
+      "video_count": 1950,
+      "corroborating_tip_count": 4312,
       "supporting_links": [
+        {
+          "video_title": "Probate Mastery is more than Probate Training and Certification | Chad Corbett's Probate Course",
+          "author": "Probate Mastery",
+          "timestamp": "00:06:27",
+          "link": "https://www.youtube.com/watch?v=d3g2CkHYVp4&t=387s"
+        },
+        {
+          "video_title": "Probate Mastery is more than Probate Training and Certification | Chad Corbett's Probate Course",
+          "author": "Probate Mastery",
+          "timestamp": "00:05:06",
+          "link": "https://www.youtube.com/watch?v=d3g2CkHYVp4&t=306s"
+        },
         {
           "video_title": "$57 Affiliate Payouts With $35 Google Ads CPA (Full Funnel Breakdown)",
           "author": "Aldo Gomes",
@@ -2045,18 +2057,6 @@
           "author": "The Lab: Mortgage & Real Estate Business Academy",
           "timestamp": "00:03:19",
           "link": "https://www.youtube.com/watch?v=SulpxqBYams&t=199s"
-        },
-        {
-          "video_title": "The New Parasite SEO Loophole Hiding Inside Google",
-          "author": "Alek Borisov",
-          "timestamp": "00:05:03",
-          "link": "https://www.youtube.com/watch?v=BF1KHGKUa78&t=303s"
-        },
-        {
-          "video_title": "The truth about yacht brokers and boat sales",
-          "author": "Current Yachts",
-          "timestamp": "00:13:41",
-          "link": "https://www.youtube.com/watch?v=wqPY1eV4vuQ&t=821s"
         }
       ],
       "caveat": "Consensus among the sampled operators — not legal advice and not a substitute for the governing statute in the reader's jurisdiction."
@@ -2068,9 +2068,9 @@
       "headline": "State unclaimed-property and escheat databases supply the repeatable volume.",
       "summary": "Every state treasury or controller maintains a searchable unclaimed-property register, and the consensus workflow is to cross-reference deceased owners there against probate filings. Volume comes from systematic register sweeps; size comes from the rarer escheated estate, surplus-funds and safe-deposit categories.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 387,
-      "video_count": 616,
-      "corroborating_tip_count": 1803,
+      "channel_count": 393,
+      "video_count": 622,
+      "corroborating_tip_count": 1804,
       "supporting_links": [
         {
           "video_title": "How To Claim Surplus Funds From Foreclosure",
@@ -2118,9 +2118,9 @@
       "headline": "The deliverable is a document-backed kinship chain, not a name on a list.",
       "summary": "Operators agree that claims succeed or fail on the evidentiary chain: each generational link supported by vital records, each branch mapped per stirpes, and every gap closed before contact. Tree hints from consumer genealogy sites are treated as leads to verify, never as proof to submit.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 1342,
-      "video_count": 1991,
-      "corroborating_tip_count": 2476,
+      "channel_count": 1411,
+      "video_count": 2085,
+      "corroborating_tip_count": 2519,
       "supporting_links": [
         {
           "video_title": "Understanding Aircraft Brokerage: Standards, Risk, and Trust",
@@ -2168,9 +2168,9 @@
       "headline": "Verify identity before contact, then lead with restraint, not the dollar figure.",
       "summary": "The recurring outreach pattern is: skip trace to a confirmed current address and phone, open by letter or a short calm call, state that funds may be owed to the family without naming an amount, and give the heir a way to independently verify the operator. Pressure tactics and inflated figures are consistently reported as the fastest way to lose a signed file.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 946,
-      "video_count": 1340,
-      "corroborating_tip_count": 948,
+      "channel_count": 1015,
+      "video_count": 1464,
+      "corroborating_tip_count": 984,
       "supporting_links": [
         {
           "video_title": "How to Get Unlimited Leads Using Clay Enrichment Waterfall | clay.com Tutorial",
@@ -2218,9 +2218,9 @@
       "headline": "No work proceeds without a signed fee agreement and third-party escrow.",
       "summary": "Consensus practice is a plain-language, notarized or e-signed agreement that names the estate, states the percentage, discloses the heir's right to claim independently, and routes funds through attorney trust or licensed escrow so the locator never holds the heir's money directly.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 1296,
-      "video_count": 1896,
-      "corroborating_tip_count": 2507,
+      "channel_count": 1388,
+      "video_count": 2070,
+      "corroborating_tip_count": 2580,
       "supporting_links": [
         {
           "video_title": "Topical Authority With Koray Tuğberk GÜBÜR",
@@ -2268,10 +2268,16 @@
       "headline": "Fee caps, waiting periods and licensing are decided per state, before the first call.",
       "summary": "Operators repeatedly stress that the governing rules — percentage caps on unclaimed-property recoveries, mandatory waiting periods after escheat or sale, private-investigator licensing triggers, and the line against practicing law — vary by jurisdiction and must be read in the local statute for every file rather than generalized from another state.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 1303,
-      "video_count": 1969,
-      "corroborating_tip_count": 2259,
+      "channel_count": 1397,
+      "video_count": 2146,
+      "corroborating_tip_count": 2482,
       "supporting_links": [
+        {
+          "video_title": "How To Start Wholesale Real Estate In 2027 (15hrs/wk)!",
+          "author": "Real Estate Skills",
+          "timestamp": "00:30:38",
+          "link": "https://www.youtube.com/watch?v=M9iyZc2j_uQ&t=1838s"
+        },
         {
           "video_title": "Understanding Aircraft Brokerage: Standards, Risk, and Trust",
           "author": "Own The Jet",
@@ -2301,12 +2307,6 @@
           "author": "Alfred Taren",
           "timestamp": "00:00:56",
           "link": "https://www.youtube.com/watch?v=CqlbwGPmv64&t=56s"
-        },
-        {
-          "video_title": "Licensing Basics You NEED To Know In Business | Shark Tank's Daymond John",
-          "author": "Daymond John",
-          "timestamp": "00:08:49",
-          "link": "https://www.youtube.com/watch?v=knoob7eUS6Y&t=529s"
         }
       ],
       "caveat": "Consensus among the sampled operators — not legal advice and not a substitute for the governing statute in the reader's jurisdiction."
@@ -2318,9 +2318,9 @@
       "headline": "Automated docket monitoring plus AI abstracting lets one or two people run real volume.",
       "summary": "The operational consensus is to automate the repetitive layer — scheduled docket and register pulls, structured intake into a sheet or CRM, AI-assisted abstracting of filings — while keeping genealogy judgment, heir contact and contract execution human. That split is what keeps a two-person shop competitive against staffed firms.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 1257,
-      "video_count": 1828,
-      "corroborating_tip_count": 5088,
+      "channel_count": 1323,
+      "video_count": 1958,
+      "corroborating_tip_count": 5131,
       "supporting_links": [
         {
           "video_title": "State Funds Tutorial: 5 Tech Tools For Your State Funds Business",
@@ -2378,6 +2378,12 @@
       "priority": "high",
       "corpus_references": [
         {
+          "video_title": "How To Start Wholesale Real Estate In 2027 (15hrs/wk)!",
+          "author": "Real Estate Skills",
+          "timestamp": "00:30:38",
+          "link": "https://www.youtube.com/watch?v=M9iyZc2j_uQ&t=1838s"
+        },
+        {
           "video_title": "Understanding Aircraft Brokerage: Standards, Risk, and Trust",
           "author": "Own The Jet",
           "timestamp": "00:04:01",
@@ -2394,12 +2400,6 @@
           "author": "Patent pc",
           "timestamp": "00:02:21",
           "link": "https://www.youtube.com/watch?v=TYb3i3iIHEQ&t=141s"
-        },
-        {
-          "video_title": "State Funds Tutorial: First Steps For Somebody Brand New To Unclaimed Funds Business.",
-          "author": "Surplus Funds 101",
-          "timestamp": "00:14:47",
-          "link": "https://www.youtube.com/watch?v=PGvJEv9Y_Go&t=887s"
         }
       ]
     },
@@ -2418,6 +2418,12 @@
       "priority": "high",
       "corpus_references": [
         {
+          "video_title": "How To Start Wholesale Real Estate In 2027 (15hrs/wk)!",
+          "author": "Real Estate Skills",
+          "timestamp": "00:30:38",
+          "link": "https://www.youtube.com/watch?v=M9iyZc2j_uQ&t=1838s"
+        },
+        {
           "video_title": "Understanding Aircraft Brokerage: Standards, Risk, and Trust",
           "author": "Own The Jet",
           "timestamp": "00:04:01",
@@ -2434,12 +2440,6 @@
           "author": "Patent pc",
           "timestamp": "00:02:21",
           "link": "https://www.youtube.com/watch?v=TYb3i3iIHEQ&t=141s"
-        },
-        {
-          "video_title": "State Funds Tutorial: First Steps For Somebody Brand New To Unclaimed Funds Business.",
-          "author": "Surplus Funds 101",
-          "timestamp": "00:14:47",
-          "link": "https://www.youtube.com/watch?v=PGvJEv9Y_Go&t=887s"
         }
       ]
     },
@@ -2458,6 +2458,12 @@
       "priority": "high",
       "corpus_references": [
         {
+          "video_title": "How To Start Wholesale Real Estate In 2027 (15hrs/wk)!",
+          "author": "Real Estate Skills",
+          "timestamp": "00:30:38",
+          "link": "https://www.youtube.com/watch?v=M9iyZc2j_uQ&t=1838s"
+        },
+        {
           "video_title": "Understanding Aircraft Brokerage: Standards, Risk, and Trust",
           "author": "Own The Jet",
           "timestamp": "00:04:01",
@@ -2474,12 +2480,6 @@
           "author": "Patent pc",
           "timestamp": "00:02:21",
           "link": "https://www.youtube.com/watch?v=TYb3i3iIHEQ&t=141s"
-        },
-        {
-          "video_title": "State Funds Tutorial: First Steps For Somebody Brand New To Unclaimed Funds Business.",
-          "author": "Surplus Funds 101",
-          "timestamp": "00:14:47",
-          "link": "https://www.youtube.com/watch?v=PGvJEv9Y_Go&t=887s"
         }
       ]
     },
@@ -2538,6 +2538,12 @@
       "priority": "high",
       "corpus_references": [
         {
+          "video_title": "How To Start Wholesale Real Estate In 2027 (15hrs/wk)!",
+          "author": "Real Estate Skills",
+          "timestamp": "00:30:38",
+          "link": "https://www.youtube.com/watch?v=M9iyZc2j_uQ&t=1838s"
+        },
+        {
           "video_title": "Understanding Aircraft Brokerage: Standards, Risk, and Trust",
           "author": "Own The Jet",
           "timestamp": "00:04:01",
@@ -2554,12 +2560,6 @@
           "author": "Patent pc",
           "timestamp": "00:02:21",
           "link": "https://www.youtube.com/watch?v=TYb3i3iIHEQ&t=141s"
-        },
-        {
-          "video_title": "State Funds Tutorial: First Steps For Somebody Brand New To Unclaimed Funds Business.",
-          "author": "Surplus Funds 101",
-          "timestamp": "00:14:47",
-          "link": "https://www.youtube.com/watch?v=PGvJEv9Y_Go&t=887s"
         }
       ]
     },
@@ -2746,8 +2746,8 @@
         "asset_id": "youtube_thumbnails",
         "asset": "https://i.ytimg.com/vi/<video_id>/*.jpg",
         "asset_type": "youtube_thumbnail_image",
-        "source": "YouTube CDN thumbnails for the 2416 corpus videos",
-        "instance_count": 2416,
+        "source": "YouTube CDN thumbnails for the 2594 corpus videos",
+        "instance_count": 2594,
         "instances": [
           {
             "video_id": "9Q4qYeK5DTg",
@@ -19660,6 +19660,1252 @@
             "author": "Thompson Coburn LLP",
             "thumbnail_url": "https://i.ytimg.com/vi/LBVpN-q6M-A/hqdefault.jpg",
             "source_url": "https://www.youtube.com/watch?v=LBVpN-q6M-A"
+          },
+          {
+            "video_id": "b7b8x4Jqz6c",
+            "title": "Unlocking How to Wholesale MLS Property Probate Real Estate",
+            "author": "Academy of Probate",
+            "thumbnail_url": "https://i.ytimg.com/vi/b7b8x4Jqz6c/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=b7b8x4Jqz6c"
+          },
+          {
+            "video_id": "-lMVLigkZQI",
+            "title": "How to Secure Estate Attorney Partnerships for Probate Deals",
+            "author": "Probate Mastery",
+            "thumbnail_url": "https://i.ytimg.com/vi/-lMVLigkZQI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=-lMVLigkZQI"
+          },
+          {
+            "video_id": "8bwGbc8cjHo",
+            "title": "EARN ATTORNEY REFERRALS NOW: New Course for Real Estate Professionals",
+            "author": "Probate Mastery",
+            "thumbnail_url": "https://i.ytimg.com/vi/8bwGbc8cjHo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=8bwGbc8cjHo"
+          },
+          {
+            "video_id": "hxVdTk3sSHo",
+            "title": "Working with Probate Attorneys: What to Bring, What to Say, and What NOT to Do",
+            "author": "Probate Mastery",
+            "thumbnail_url": "https://i.ytimg.com/vi/hxVdTk3sSHo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=hxVdTk3sSHo"
+          },
+          {
+            "video_id": "_T085ecA9bI",
+            "title": "EARN ATTORNEY REFERRALS NOW: New Course for Real Estate Professionals",
+            "author": "Probate Mastery",
+            "thumbnail_url": "https://i.ytimg.com/vi/_T085ecA9bI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=_T085ecA9bI"
+          },
+          {
+            "video_id": "qquf8lhULDs",
+            "title": "Top 3 Ways To Get Estate Planning Clients",
+            "author": "Laura Cowan, Esq.",
+            "thumbnail_url": "https://i.ytimg.com/vi/qquf8lhULDs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=qquf8lhULDs"
+          },
+          {
+            "video_id": "jfeGte-B2tk",
+            "title": "Real Estate Agents: Turn Probate Lawyers into Referral Partners",
+            "author": "Your Dose of Real Estate With Tristan Ahumada",
+            "thumbnail_url": "https://i.ytimg.com/vi/jfeGte-B2tk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=jfeGte-B2tk"
+          },
+          {
+            "video_id": "WJr4n3V_2aY",
+            "title": "What Is Estate Planning? A Beginner's Guide for Massachusetts Residents",
+            "author": "Legacy Legal Planning, LLC | MA Estate Planning",
+            "thumbnail_url": "https://i.ytimg.com/vi/WJr4n3V_2aY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=WJr4n3V_2aY"
+          },
+          {
+            "video_id": "76c0h_es98E",
+            "title": "Get Real Estate LISTINGS From PROBATE Attorneys",
+            "author": "Probate Mastery",
+            "thumbnail_url": "https://i.ytimg.com/vi/76c0h_es98E/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=76c0h_es98E"
+          },
+          {
+            "video_id": "6dyFJnKpQDI",
+            "title": "Build Your Credibility as a Probate Professional",
+            "author": "Probate Mastery",
+            "thumbnail_url": "https://i.ytimg.com/vi/6dyFJnKpQDI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=6dyFJnKpQDI"
+          },
+          {
+            "video_id": "ouKH71PUV3E",
+            "title": "Starting an Estate Sale Business Tips | Free Estate Sale Business Plan Template Included",
+            "author": "BizMove",
+            "thumbnail_url": "https://i.ytimg.com/vi/ouKH71PUV3E/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ouKH71PUV3E"
+          },
+          {
+            "video_id": "uvfLAJ4V3PM",
+            "title": "Finding an Estate Sale Company | DON'T WASTE YOUR MONEY",
+            "author": "23ABC News | KERO",
+            "thumbnail_url": "https://i.ytimg.com/vi/uvfLAJ4V3PM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=uvfLAJ4V3PM"
+          },
+          {
+            "video_id": "0dYqJW59Zxg",
+            "title": "Estate Clean-out / Things to Consider When Pricing a Job / How to be Faster on Multiple Load Jobs",
+            "author": "JM Junk Removers",
+            "thumbnail_url": "https://i.ytimg.com/vi/0dYqJW59Zxg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=0dYqJW59Zxg"
+          },
+          {
+            "video_id": "eQ9rTXDlJQM",
+            "title": "Estate Sale Planning Basics: How to Clear Out a Home Without Feeling Overwhelmed",
+            "author": "At Home with Jody",
+            "thumbnail_url": "https://i.ytimg.com/vi/eQ9rTXDlJQM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=eQ9rTXDlJQM"
+          },
+          {
+            "video_id": "q0NbvHAFXsA",
+            "title": "DIY Estate Sale Guide: How We Made $10,839 in 48 Hours",
+            "author": "Smile Abroad with Sam & Spencer",
+            "thumbnail_url": "https://i.ytimg.com/vi/q0NbvHAFXsA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=q0NbvHAFXsA"
+          },
+          {
+            "video_id": "rnWBVJVgbTw",
+            "title": "Estate Cleanout Tips: How To Remove Items From A House After Death",
+            "author": "Selling Inherited Property - The Prepared Heir",
+            "thumbnail_url": "https://i.ytimg.com/vi/rnWBVJVgbTw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=rnWBVJVgbTw"
+          },
+          {
+            "video_id": "McUc7Xu_MHo",
+            "title": "Selling Inherited Property: 4 Crucial Steps for Executors",
+            "author": "Alix",
+            "thumbnail_url": "https://i.ytimg.com/vi/McUc7Xu_MHo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=McUc7Xu_MHo"
+          },
+          {
+            "video_id": "AMYbwbqYqY8",
+            "title": "What Happens If You Start an Estate Sale Company",
+            "author": "Gyd Path",
+            "thumbnail_url": "https://i.ytimg.com/vi/AMYbwbqYqY8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=AMYbwbqYqY8"
+          },
+          {
+            "video_id": "zQLAx7SK5ZI",
+            "title": "Learn How To Become an Estate Sale Liquidator",
+            "author": "My Jennarocity",
+            "thumbnail_url": "https://i.ytimg.com/vi/zQLAx7SK5ZI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=zQLAx7SK5ZI"
+          },
+          {
+            "video_id": "bx6BgPRa2JY",
+            "title": "EstateSail Full Walkthrough: From Inventory to Checkout and Online Sales",
+            "author": "EstateSail | The All-In-One Estate Sale Manager",
+            "thumbnail_url": "https://i.ytimg.com/vi/bx6BgPRa2JY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=bx6BgPRa2JY"
+          },
+          {
+            "video_id": "t0-A8dVrr1o",
+            "title": "Can Medicaid Take Your Parents’ House After They Die?",
+            "author": "MarcCormier",
+            "thumbnail_url": "https://i.ytimg.com/vi/t0-A8dVrr1o/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=t0-A8dVrr1o"
+          },
+          {
+            "video_id": "ZUxMEt0kKoU",
+            "title": "Medicaid Estate Recovery: 7 Ways to Protect Your Family Home Before 2027",
+            "author": "Carol Benning",
+            "thumbnail_url": "https://i.ytimg.com/vi/ZUxMEt0kKoU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ZUxMEt0kKoU"
+          },
+          {
+            "video_id": "X-vkv-PR3pY",
+            "title": "State Just Changed 3 Medicaid Estate Recovery Rules: Here's What Every Homeowner Must Do",
+            "author": "นพดล เกิดยิ้ม",
+            "thumbnail_url": "https://i.ytimg.com/vi/X-vkv-PR3pY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=X-vkv-PR3pY"
+          },
+          {
+            "video_id": "T3KZz5kBYZ4",
+            "title": "Will My Home Even Qualify for a Reverse Mortgage? Condo, Trust, Manufactured Home",
+            "author": "The Retirement Loan Guy",
+            "thumbnail_url": "https://i.ytimg.com/vi/T3KZz5kBYZ4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=T3KZz5kBYZ4"
+          },
+          {
+            "video_id": "306n65tYnxQ",
+            "title": "Medicaid Estate Recovery: A Primer",
+            "author": "Community Legal Services of Philadelphia",
+            "thumbnail_url": "https://i.ytimg.com/vi/306n65tYnxQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=306n65tYnxQ"
+          },
+          {
+            "video_id": "hvl2NRPSVTE",
+            "title": "How To Save Your House From Medicaid Recovery (Lady Bird Deeds Explained)",
+            "author": "The Medicare Family",
+            "thumbnail_url": "https://i.ytimg.com/vi/hvl2NRPSVTE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=hvl2NRPSVTE"
+          },
+          {
+            "video_id": "R4eJOKRQISs",
+            "title": "What Happens to a Reverse Mortgage When the Homeowner Dies?",
+            "author": "Reverse Mortgages by Tim Oddo",
+            "thumbnail_url": "https://i.ytimg.com/vi/R4eJOKRQISs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=R4eJOKRQISs"
+          },
+          {
+            "video_id": "Ghymi1mvrRQ",
+            "title": "Probate From Start To Finish | How To Get Probate Letters | Probate Realtor | Probate Real Estate",
+            "author": "Wanda Rochelle, Probate Resource",
+            "thumbnail_url": "https://i.ytimg.com/vi/Ghymi1mvrRQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Ghymi1mvrRQ"
+          },
+          {
+            "video_id": "lAC-1ovhHAo",
+            "title": "Letters Testamentary Explained: What They Are and How to Get Them",
+            "author": "SwiftProbate",
+            "thumbnail_url": "https://i.ytimg.com/vi/lAC-1ovhHAo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=lAC-1ovhHAo"
+          },
+          {
+            "video_id": "HPpVk5fp1No",
+            "title": "Probate, Plain and Simple: Filing, Letters Testamentary, and Your First Court Steps",
+            "author": "The Executor's Guide",
+            "thumbnail_url": "https://i.ytimg.com/vi/HPpVk5fp1No/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=HPpVk5fp1No"
+          },
+          {
+            "video_id": "URZzrpQSKmU",
+            "title": "Speaking to Probate Sellers with Kevin Ward, Chad Corbett | Probate Script for Cold Calling",
+            "author": "Probate Mastery",
+            "thumbnail_url": "https://i.ytimg.com/vi/URZzrpQSKmU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=URZzrpQSKmU"
+          },
+          {
+            "video_id": "et_msiK8rvo",
+            "title": "Probate Real Estate Scripts Training: Live Cold Call Role Play #59",
+            "author": "All The Leads",
+            "thumbnail_url": "https://i.ytimg.com/vi/et_msiK8rvo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=et_msiK8rvo"
+          },
+          {
+            "video_id": "xF9PxjJDUX0",
+            "title": "Direct Mail Hacks: A Step-by-Step Guide",
+            "author": "BatchTV",
+            "thumbnail_url": "https://i.ytimg.com/vi/xF9PxjJDUX0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=xF9PxjJDUX0"
+          },
+          {
+            "video_id": "FfQ1DIK5kHE",
+            "title": "Consumer Title Automates Direct Mail Marketing with Title ToolBox + PRINTgenie | No Minimums",
+            "author": "PRINTgenie",
+            "thumbnail_url": "https://i.ytimg.com/vi/FfQ1DIK5kHE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=FfQ1DIK5kHE"
+          },
+          {
+            "video_id": "MLoqvKtXJ20",
+            "title": "Starting out with direct mail?",
+            "author": "Open Letter Marketing",
+            "thumbnail_url": "https://i.ytimg.com/vi/MLoqvKtXJ20/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=MLoqvKtXJ20"
+          },
+          {
+            "video_id": "qlBYQPngO0o",
+            "title": "Do I Pay Capital Gains on an Inherited House?",
+            "author": "The Legacy Desk",
+            "thumbnail_url": "https://i.ytimg.com/vi/qlBYQPngO0o/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=qlBYQPngO0o"
+          },
+          {
+            "video_id": "qNeCeQehzRg",
+            "title": "$0 Taxable Gain on an $800,000 Sale? The Step-Up Basis Strategy Explained",
+            "author": "Tricia Garcia Real Estate",
+            "thumbnail_url": "https://i.ytimg.com/vi/qNeCeQehzRg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=qNeCeQehzRg"
+          },
+          {
+            "video_id": "RKZ0VLSjISY",
+            "title": "Step Up in Basis Real Estate: Sell Now or Hold Until Death? (2026)",
+            "author": "Hans Goldstein: Tax & Exit Planning",
+            "thumbnail_url": "https://i.ytimg.com/vi/RKZ0VLSjISY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=RKZ0VLSjISY"
+          },
+          {
+            "video_id": "oqbFju_2Muc",
+            "title": "No Step Up Basis for Capital Gains!",
+            "author": "Cortes Law Firm",
+            "thumbnail_url": "https://i.ytimg.com/vi/oqbFju_2Muc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=oqbFju_2Muc"
+          },
+          {
+            "video_id": "JsLnTFCaOUQ",
+            "title": "Heirs' Property: The Trap That Costs Families Their Land",
+            "author": "The Accidental Executor",
+            "thumbnail_url": "https://i.ytimg.com/vi/JsLnTFCaOUQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=JsLnTFCaOUQ"
+          },
+          {
+            "video_id": "Y515EhC17RU",
+            "title": "Shocked that more heirs property owners aren't doing this!",
+            "author": "The Family Land Lawyer",
+            "thumbnail_url": "https://i.ytimg.com/vi/Y515EhC17RU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Y515EhC17RU"
+          },
+          {
+            "video_id": "T42HfbxscSQ",
+            "title": "What is Heir Property?",
+            "author": "Lawyer Greg McIntyre",
+            "thumbnail_url": "https://i.ytimg.com/vi/T42HfbxscSQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=T42HfbxscSQ"
+          },
+          {
+            "video_id": "yyvDp4R_T84",
+            "title": "How Realtors Can Guide Clients Transitioning to Senior Living",
+            "author": "Florida Realtors YouTube",
+            "thumbnail_url": "https://i.ytimg.com/vi/yyvDp4R_T84/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=yyvDp4R_T84"
+          },
+          {
+            "video_id": "1kkoh35VCho",
+            "title": "Where to Start With Senior Placement",
+            "author": "Discover Colorado - The Cobb Home Team",
+            "thumbnail_url": "https://i.ytimg.com/vi/1kkoh35VCho/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=1kkoh35VCho"
+          },
+          {
+            "video_id": "fFnH_VM4S48",
+            "title": "How to Find & Prepare Property for Assisted Living | Step-by-Step Guide",
+            "author": "Brett Chotkevys",
+            "thumbnail_url": "https://i.ytimg.com/vi/fFnH_VM4S48/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=fFnH_VM4S48"
+          },
+          {
+            "video_id": "cxcqaoT1cxQ",
+            "title": "How to start a licensed residential assisted living, Step by Step.",
+            "author": "Ariana Jay",
+            "thumbnail_url": "https://i.ytimg.com/vi/cxcqaoT1cxQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=cxcqaoT1cxQ"
+          },
+          {
+            "video_id": "S5zYm8kcrug",
+            "title": "What You Need to Know Before Selling a Senior’s Home (Legal, Financial & Emotional Considerations)",
+            "author": "Simplify Senior Transitions with Dale Corpus",
+            "thumbnail_url": "https://i.ytimg.com/vi/S5zYm8kcrug/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=S5zYm8kcrug"
+          },
+          {
+            "video_id": "JUTV80jUHSI",
+            "title": "Starting an Assisted Living Home for beginners | Residential Assisted Living",
+            "author": "Serg Lupescu",
+            "thumbnail_url": "https://i.ytimg.com/vi/JUTV80jUHSI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=JUTV80jUHSI"
+          },
+          {
+            "video_id": "l7Esttpxsx0",
+            "title": "How to Start a Residential Assisted Living Business",
+            "author": "Residential Assisted Living Academy",
+            "thumbnail_url": "https://i.ytimg.com/vi/l7Esttpxsx0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=l7Esttpxsx0"
+          },
+          {
+            "video_id": "4pX2VabEor4",
+            "title": "Property Preservation 101: Foreclosures, Lock Changes & Big Money",
+            "author": "Property Preservation Insiders",
+            "thumbnail_url": "https://i.ytimg.com/vi/4pX2VabEor4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=4pX2VabEor4"
+          },
+          {
+            "video_id": "F1mwNdsm-HA",
+            "title": "How to Buy Out Your Siblings When You Inherit a House (Ontario)",
+            "author": "Michelle Bell - Realtor",
+            "thumbnail_url": "https://i.ytimg.com/vi/F1mwNdsm-HA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=F1mwNdsm-HA"
+          },
+          {
+            "video_id": "6xUa7KjeSSY",
+            "title": "6 Critical First Steps if You Just Inherited a House",
+            "author": "Sell That Wreck! With Stephanie Burt",
+            "thumbnail_url": "https://i.ytimg.com/vi/6xUa7KjeSSY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=6xUa7KjeSSY"
+          },
+          {
+            "video_id": "dtCGp46sZEg",
+            "title": "Sibling Showdown! How To Buyout Your Sibling On Inherited Property | Sacramento County",
+            "author": "Selling Inherited Property - The Prepared Heir",
+            "thumbnail_url": "https://i.ytimg.com/vi/dtCGp46sZEg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=dtCGp46sZEg"
+          },
+          {
+            "video_id": "mT_cRaJJe8A",
+            "title": "Inherited a House? Sell It As-Is — Complete Walkthrough",
+            "author": "Calvora Property Group",
+            "thumbnail_url": "https://i.ytimg.com/vi/mT_cRaJJe8A/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=mT_cRaJJe8A"
+          },
+          {
+            "video_id": "eC2q1zU3G2A",
+            "title": "How Do I Prepare to Receive an Inherited Property?",
+            "author": "Real Estate The Ramsey Way",
+            "thumbnail_url": "https://i.ytimg.com/vi/eC2q1zU3G2A/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=eC2q1zU3G2A"
+          },
+          {
+            "video_id": "lo2f0qbkjaQ",
+            "title": "Executor's 10 Guides to Selling an Inherited Home",
+            "author": "Horizon Real Estate & Probate and Trust Help",
+            "thumbnail_url": "https://i.ytimg.com/vi/lo2f0qbkjaQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=lo2f0qbkjaQ"
+          },
+          {
+            "video_id": "Bggg_tJ_y2g",
+            "title": "Can You Clean Out an Inherited House Before Probate in California?",
+            "author": "Local Probate Help",
+            "thumbnail_url": "https://i.ytimg.com/vi/Bggg_tJ_y2g/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Bggg_tJ_y2g"
+          },
+          {
+            "video_id": "_VnXEkxAEO0",
+            "title": "Understanding the Tennessee Probate Process",
+            "author": "Tennessee Probate Realty Group",
+            "thumbnail_url": "https://i.ytimg.com/vi/_VnXEkxAEO0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=_VnXEkxAEO0"
+          },
+          {
+            "video_id": "iJVCVwX-rmA",
+            "title": "Probate for Real Estate Investors (Step-by-Step Beginner Guide)",
+            "author": "Michael Franke",
+            "thumbnail_url": "https://i.ytimg.com/vi/iJVCVwX-rmA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=iJVCVwX-rmA"
+          },
+          {
+            "video_id": "XN-9ankgVNk",
+            "title": "Mastering Probate Real Estate: A Comprehensive Training Guide",
+            "author": "Carolynn Castillo",
+            "thumbnail_url": "https://i.ytimg.com/vi/XN-9ankgVNk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=XN-9ankgVNk"
+          },
+          {
+            "video_id": "Hi5epLariAQ",
+            "title": "Probate Process From Start To Finish",
+            "author": "American Estate Planning Series",
+            "thumbnail_url": "https://i.ytimg.com/vi/Hi5epLariAQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Hi5epLariAQ"
+          },
+          {
+            "video_id": "LqNx0dBk2f8",
+            "title": "Mastering Probate Wholesaling: Your Ultimate Guide to Real Estate Success in 2026",
+            "author": "Rick Ginn",
+            "thumbnail_url": "https://i.ytimg.com/vi/LqNx0dBk2f8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=LqNx0dBk2f8"
+          },
+          {
+            "video_id": "JG6VKzYq_uA",
+            "title": "Probate Process is a Trap (Unless You Know This) | Virginia Probate Explained 2025",
+            "author": "NOVA Real Estate Solutions",
+            "thumbnail_url": "https://i.ytimg.com/vi/JG6VKzYq_uA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=JG6VKzYq_uA"
+          },
+          {
+            "video_id": "C9alsmfSoC4",
+            "title": "Wholesaling Probate Properties Start to Finish - Part 1",
+            "author": "Rick Ginn",
+            "thumbnail_url": "https://i.ytimg.com/vi/C9alsmfSoC4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=C9alsmfSoC4"
+          },
+          {
+            "video_id": "ewbkVPWFtKM",
+            "title": "What Is the Probate Process? A Step-by-Step Breakdown for Realtors",
+            "author": "Carolynn Castillo",
+            "thumbnail_url": "https://i.ytimg.com/vi/ewbkVPWFtKM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ewbkVPWFtKM"
+          },
+          {
+            "video_id": "WU_DwL7k5ZE",
+            "title": "Mastering Probate Wholesaling: Your Ultimate Guide to Real Estate Success in 2024",
+            "author": "Rick Ginn",
+            "thumbnail_url": "https://i.ytimg.com/vi/WU_DwL7k5ZE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=WU_DwL7k5ZE"
+          },
+          {
+            "video_id": "tHKQUQ1PDts",
+            "title": "How to Get PROBATE LISTINGS from Probate Attorneys",
+            "author": "Brandon Mulrenin",
+            "thumbnail_url": "https://i.ytimg.com/vi/tHKQUQ1PDts/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=tHKQUQ1PDts"
+          },
+          {
+            "video_id": "M9iyZc2j_uQ",
+            "title": "How To Start Wholesale Real Estate In 2027 (15hrs/wk)!",
+            "author": "Real Estate Skills",
+            "thumbnail_url": "https://i.ytimg.com/vi/M9iyZc2j_uQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=M9iyZc2j_uQ"
+          },
+          {
+            "video_id": "AEDxCUhuyaQ",
+            "title": "What is probate in Texas?",
+            "author": "Probate Place",
+            "thumbnail_url": "https://i.ytimg.com/vi/AEDxCUhuyaQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=AEDxCUhuyaQ"
+          },
+          {
+            "video_id": "B4TEVmeFhLk",
+            "title": "How to Become a Real Estate Agent in 2026 | What Beginners Need to Know",
+            "author": "Grow with Juan Polanco",
+            "thumbnail_url": "https://i.ytimg.com/vi/B4TEVmeFhLk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=B4TEVmeFhLk"
+          },
+          {
+            "video_id": "RR9l10XmnC4",
+            "title": "Unlocking the Gold Rush of Probate Real Estate for 2026! 🎉",
+            "author": "Carolynn Castillo",
+            "thumbnail_url": "https://i.ytimg.com/vi/RR9l10XmnC4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=RR9l10XmnC4"
+          },
+          {
+            "video_id": "dQOLpmObWhY",
+            "title": "Orange County Commercial Real Estate Insights for Investors on Probate Costs",
+            "author": "Duc Minh Lam",
+            "thumbnail_url": "https://i.ytimg.com/vi/dQOLpmObWhY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=dQOLpmObWhY"
+          },
+          {
+            "video_id": "osCrPBaE5OY",
+            "title": "The Economics of Owning a Real Estate Business",
+            "author": "Wealth Pilot",
+            "thumbnail_url": "https://i.ytimg.com/vi/osCrPBaE5OY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=osCrPBaE5OY"
+          },
+          {
+            "video_id": "7E_4DS5bEAI",
+            "title": "What Is Probate In Real Estate?",
+            "author": "Pace Morby",
+            "thumbnail_url": "https://i.ytimg.com/vi/7E_4DS5bEAI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=7E_4DS5bEAI"
+          },
+          {
+            "video_id": "LPs1XDGVnWs",
+            "title": "The Economics of Owning a Real Estate Business #usa",
+            "author": "Finance Brief",
+            "thumbnail_url": "https://i.ytimg.com/vi/LPs1XDGVnWs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=LPs1XDGVnWs"
+          },
+          {
+            "video_id": "K_L_G6jbyAE",
+            "title": "How To Buy Probate Real Estate Cheap!",
+            "author": "Flipping Mastery TV",
+            "thumbnail_url": "https://i.ytimg.com/vi/K_L_G6jbyAE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=K_L_G6jbyAE"
+          },
+          {
+            "video_id": "ASuTQp-hvNU",
+            "title": "What is Probate in Real Estate?",
+            "author": "The Real Estate Lawyer",
+            "thumbnail_url": "https://i.ytimg.com/vi/ASuTQp-hvNU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ASuTQp-hvNU"
+          },
+          {
+            "video_id": "Tsd1Ymoso1Q",
+            "title": "How Real Estate Investors Actually Make Money From Rentals",
+            "author": "PROFITABLE",
+            "thumbnail_url": "https://i.ytimg.com/vi/Tsd1Ymoso1Q/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Tsd1Ymoso1Q"
+          },
+          {
+            "video_id": "i8GDo8WTXWw",
+            "title": "The Economics of Owning Rental Properties (The Hidden Costs That Eat Your Profits!)",
+            "author": "Unit Math",
+            "thumbnail_url": "https://i.ytimg.com/vi/i8GDo8WTXWw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=i8GDo8WTXWw"
+          },
+          {
+            "video_id": "fi8ZbbtnVgM",
+            "title": "How Do You Determine the Right Asking Price for a Probate Property? | California Probate",
+            "author": "Matt McGilvray",
+            "thumbnail_url": "https://i.ytimg.com/vi/fi8ZbbtnVgM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=fi8ZbbtnVgM"
+          },
+          {
+            "video_id": "44RbpWBPcbI",
+            "title": "The Probate Lead Strategy That Made This Real Estate Agent $50K",
+            "author": "The Aaron Novello Podcast",
+            "thumbnail_url": "https://i.ytimg.com/vi/44RbpWBPcbI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=44RbpWBPcbI"
+          },
+          {
+            "video_id": "dzqHqDnAl_E",
+            "title": "How to Build a Successful Probate Real Estate Business & Generate Consistent Leads (2025)",
+            "author": "Probate Mastery",
+            "thumbnail_url": "https://i.ytimg.com/vi/dzqHqDnAl_E/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=dzqHqDnAl_E"
+          },
+          {
+            "video_id": "uTFKO8zRNsI",
+            "title": "How I Convert Probate Leads Using a Resource Package & Follow-Up Plan ( + VA execution tips)",
+            "author": "Probate Mastery",
+            "thumbnail_url": "https://i.ytimg.com/vi/uTFKO8zRNsI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=uTFKO8zRNsI"
+          },
+          {
+            "video_id": "d-rZkDYaJhQ",
+            "title": "Become a Probate Real Estate Specialist & Close More Deals (Real Examples Inside!)",
+            "author": "Probate Mastery",
+            "thumbnail_url": "https://i.ytimg.com/vi/d-rZkDYaJhQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=d-rZkDYaJhQ"
+          },
+          {
+            "video_id": "kvSTArlGoMU",
+            "title": "How Probate Real Estate Specialists Find Leads, Real Life Court Visits & Atty Referral Strategies",
+            "author": "Probate Mastery",
+            "thumbnail_url": "https://i.ytimg.com/vi/kvSTArlGoMU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=kvSTArlGoMU"
+          },
+          {
+            "video_id": "6EHNu72T83s",
+            "title": "Probate Cold Calling Scripts That Work in 2025 (Watch This Before Your Next Call)",
+            "author": "Probate Mastery",
+            "thumbnail_url": "https://i.ytimg.com/vi/6EHNu72T83s/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=6EHNu72T83s"
+          },
+          {
+            "video_id": "QU_nb_NyIhU",
+            "title": "Probate Real Estate Specialist Guide: How Realtors & Investors Build Predictable Income",
+            "author": "Probate Mastery",
+            "thumbnail_url": "https://i.ytimg.com/vi/QU_nb_NyIhU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=QU_nb_NyIhU"
+          },
+          {
+            "video_id": "pgW-G0oZoa4",
+            "title": "How to Find and Convert Probate Leads for Real Estate Deals (Even If You're Just Starting Out)",
+            "author": "Probate Mastery",
+            "thumbnail_url": "https://i.ytimg.com/vi/pgW-G0oZoa4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=pgW-G0oZoa4"
+          },
+          {
+            "video_id": "7FoxQuVXm2k",
+            "title": "What Every Probate Real Estate Specialist Needs to Know Before Making Probate Their Main Focus",
+            "author": "Probate Mastery",
+            "thumbnail_url": "https://i.ytimg.com/vi/7FoxQuVXm2k/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=7FoxQuVXm2k"
+          },
+          {
+            "video_id": "Xt7XgZo03Nw",
+            "title": "5 Proven Ways to Grow Your Probate Real Estate Business (and Never Run Out of Leads)",
+            "author": "Probate Mastery",
+            "thumbnail_url": "https://i.ytimg.com/vi/Xt7XgZo03Nw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Xt7XgZo03Nw"
+          },
+          {
+            "video_id": "H-CW9uu5s-I",
+            "title": "How to Get Probate Real Estate Listings (The \"Courthouse\" Strategy)",
+            "author": "The Aaron Novello Podcast",
+            "thumbnail_url": "https://i.ytimg.com/vi/H-CW9uu5s-I/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=H-CW9uu5s-I"
+          },
+          {
+            "video_id": "Mash-3wq9zY",
+            "title": "Winning Probate Leads: Know the Process, Serve Your Market",
+            "author": "Probate Mastery",
+            "thumbnail_url": "https://i.ytimg.com/vi/Mash-3wq9zY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Mash-3wq9zY"
+          },
+          {
+            "video_id": "Gyb24k08sGk",
+            "title": "How to Leverage MLS Limited Authority for Probate Leads",
+            "author": "Bill Gross, the LA Probate Expert",
+            "thumbnail_url": "https://i.ytimg.com/vi/Gyb24k08sGk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Gyb24k08sGk"
+          },
+          {
+            "video_id": "WAsEf6usAg0",
+            "title": "The Reputation of a Probate Real Estate Specialist | with Chad Corbett",
+            "author": "Bill Gross, the LA Probate Expert",
+            "thumbnail_url": "https://i.ytimg.com/vi/WAsEf6usAg0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=WAsEf6usAg0"
+          },
+          {
+            "video_id": "d3g2CkHYVp4",
+            "title": "Probate Mastery is more than Probate Training and Certification | Chad Corbett's Probate Course",
+            "author": "Probate Mastery",
+            "thumbnail_url": "https://i.ytimg.com/vi/d3g2CkHYVp4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=d3g2CkHYVp4"
+          },
+          {
+            "video_id": "cbWbIqZ3KnU",
+            "title": "What Is the Best Way to Get Started with Probate Real Estate Investing? [Chad Corbett]",
+            "author": "Beau Eckstein, Business Ownership Coach",
+            "thumbnail_url": "https://i.ytimg.com/vi/cbWbIqZ3KnU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=cbWbIqZ3KnU"
+          },
+          {
+            "video_id": "0oMatPnporI",
+            "title": "How to become a probate real estate agent - 5 probate listings! Probate Training with Chad Corbett",
+            "author": "Probate Mastery",
+            "thumbnail_url": "https://i.ytimg.com/vi/0oMatPnporI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=0oMatPnporI"
+          },
+          {
+            "video_id": "svPbBkp8nRQ",
+            "title": "Learn Probate and Build a Probate Business - Probate Training and Certification with Chad Corbett",
+            "author": "Probate Mastery",
+            "thumbnail_url": "https://i.ytimg.com/vi/svPbBkp8nRQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=svPbBkp8nRQ"
+          },
+          {
+            "video_id": "sy23pOWuMEU",
+            "title": "Interview with Chad Corbett of Probate Mastery",
+            "author": "Bill Gross, the LA Probate Expert",
+            "thumbnail_url": "https://i.ytimg.com/vi/sy23pOWuMEU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=sy23pOWuMEU"
+          },
+          {
+            "video_id": "NH2VGynt0Wk",
+            "title": "Ending The Real Estate Feast Or Famine and Building a Successful Business | Certified Probate Course",
+            "author": "Probate Mastery",
+            "thumbnail_url": "https://i.ytimg.com/vi/NH2VGynt0Wk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=NH2VGynt0Wk"
+          },
+          {
+            "video_id": "D2NGOVJ2s6U",
+            "title": "What You Miss By Scrubbing Your Probate Real Estate Leads - Tips From Chad Corbett",
+            "author": "All The Leads",
+            "thumbnail_url": "https://i.ytimg.com/vi/D2NGOVJ2s6U/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=D2NGOVJ2s6U"
+          },
+          {
+            "video_id": "u46B4m0SDCw",
+            "title": "How Rosie Is Scaling Her Net Worth By Expanding Into Investment - Group Coaching with Chad Corbett",
+            "author": "Probate Mastery",
+            "thumbnail_url": "https://i.ytimg.com/vi/u46B4m0SDCw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=u46B4m0SDCw"
+          },
+          {
+            "video_id": "O0ZquS92FrQ",
+            "title": "The Magnum Opus Project with Chad Corbett",
+            "author": "Probate Mastery",
+            "thumbnail_url": "https://i.ytimg.com/vi/O0ZquS92FrQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=O0ZquS92FrQ"
+          },
+          {
+            "video_id": "4hp5f-_boUM",
+            "title": "Interview with Chad Corbett",
+            "author": "Bill Gross, the LA Probate Expert",
+            "thumbnail_url": "https://i.ytimg.com/vi/4hp5f-_boUM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=4hp5f-_boUM"
+          },
+          {
+            "video_id": "-ZhpzThVK5o",
+            "title": "Chad Corbett Explains Why Probate Calls are Important",
+            "author": "Bill Gross, the LA Probate Expert",
+            "thumbnail_url": "https://i.ytimg.com/vi/-ZhpzThVK5o/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=-ZhpzThVK5o"
+          },
+          {
+            "video_id": "z0GTjTG76ls",
+            "title": "Real Estate Cold Calling - Inbound probate leads role play | Real Estate Coaching with Chad Corbett",
+            "author": "Probate Mastery",
+            "thumbnail_url": "https://i.ytimg.com/vi/z0GTjTG76ls/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=z0GTjTG76ls"
+          },
+          {
+            "video_id": "LaCR15esK0k",
+            "title": "Marketing to Pre-Probate vs Probate Leads, Vendor Referrals, and Probate Attorney Script ideas",
+            "author": "Probate Mastery",
+            "thumbnail_url": "https://i.ytimg.com/vi/LaCR15esK0k/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=LaCR15esK0k"
+          },
+          {
+            "video_id": "3VpuIk5nId0",
+            "title": "Chad Corbett on Probate Weekly with Bill Gross",
+            "author": "Bill Gross, the LA Probate Expert",
+            "thumbnail_url": "https://i.ytimg.com/vi/3VpuIk5nId0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=3VpuIk5nId0"
+          },
+          {
+            "video_id": "9tTK_fAGgNE",
+            "title": "Success in Probate Deals, Inheritance, and Property Clean Out | Probate Mastermind #426",
+            "author": "All The Leads",
+            "thumbnail_url": "https://i.ytimg.com/vi/9tTK_fAGgNE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=9tTK_fAGgNE"
+          },
+          {
+            "video_id": "y1TInRM-Flc",
+            "title": "Cold Calling Probate or Mailing Letters — Which Gets Better Results?",
+            "author": "Probate Mastery",
+            "thumbnail_url": "https://i.ytimg.com/vi/y1TInRM-Flc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=y1TInRM-Flc"
+          },
+          {
+            "video_id": "omZ157LG-W8",
+            "title": "Probate Cold Calling vs Direct Mail: Which Gets More Listings?",
+            "author": "Probate Mastery",
+            "thumbnail_url": "https://i.ytimg.com/vi/omZ157LG-W8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=omZ157LG-W8"
+          },
+          {
+            "video_id": "LNsr_JuZvn8",
+            "title": "How to Work Probate Leads Before They Need to Sell",
+            "author": "Probate Mastery",
+            "thumbnail_url": "https://i.ytimg.com/vi/LNsr_JuZvn8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=LNsr_JuZvn8"
+          },
+          {
+            "video_id": "KirkNi05zPU",
+            "title": "Rapport and Prospecting Tips for Probate Real Estate Agents | Probate Mastermind #435",
+            "author": "All The Leads",
+            "thumbnail_url": "https://i.ytimg.com/vi/KirkNi05zPU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=KirkNi05zPU"
+          },
+          {
+            "video_id": "IRtAt7-sQHc",
+            "title": "Probate Direct Mail Marketing: Build Better Campaigns",
+            "author": "Probate Mastery",
+            "thumbnail_url": "https://i.ytimg.com/vi/IRtAt7-sQHc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=IRtAt7-sQHc"
+          },
+          {
+            "video_id": "9eNkvtVoeao",
+            "title": "Navigating the Competitive Probate Real Estate Market | Probate Mastermind #422",
+            "author": "All The Leads",
+            "thumbnail_url": "https://i.ytimg.com/vi/9eNkvtVoeao/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=9eNkvtVoeao"
+          },
+          {
+            "video_id": "CnMSGOG8ey0",
+            "title": "Probate Letters: How To Get These Magic Papers",
+            "author": "American Estate Planning Series",
+            "thumbnail_url": "https://i.ytimg.com/vi/CnMSGOG8ey0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=CnMSGOG8ey0"
+          },
+          {
+            "video_id": "6iVpjQj9wjc",
+            "title": "Direct Mail, Followups, + More! Marketing to Probate Real Estate Leads | Probate Mastermind #282",
+            "author": "All The Leads",
+            "thumbnail_url": "https://i.ytimg.com/vi/6iVpjQj9wjc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=6iVpjQj9wjc"
+          },
+          {
+            "video_id": "ZS8hjtChnG8",
+            "title": "How to Master Probate Marketing | Wholesaling Real Estate | Part 2",
+            "author": "Flip With Rick",
+            "thumbnail_url": "https://i.ytimg.com/vi/ZS8hjtChnG8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ZS8hjtChnG8"
+          },
+          {
+            "video_id": "HH0UX5IwhHM",
+            "title": "Text Every Heir on a Probate Lead at Once",
+            "author": "Phone Sniper — Real Estate Investor Software",
+            "thumbnail_url": "https://i.ytimg.com/vi/HH0UX5IwhHM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=HH0UX5IwhHM"
+          },
+          {
+            "video_id": "P5kUaYnRKbo",
+            "title": "Post-Election Prospecting, Probate Calling Tips & New Holiday Mailers! | ATL Mastermind 602",
+            "author": "All The Leads",
+            "thumbnail_url": "https://i.ytimg.com/vi/P5kUaYnRKbo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=P5kUaYnRKbo"
+          },
+          {
+            "video_id": "7NYfu3V_uSQ",
+            "title": "The Probate Letter That Actually Gets Callbacks",
+            "author": "Probate Mastery",
+            "thumbnail_url": "https://i.ytimg.com/vi/7NYfu3V_uSQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=7NYfu3V_uSQ"
+          },
+          {
+            "video_id": "nNLFW4SvPGo",
+            "title": "Innovative Strategies for Sellers and Investors in the Probate Market | Probate Mastermind #439",
+            "author": "All The Leads",
+            "thumbnail_url": "https://i.ytimg.com/vi/nNLFW4SvPGo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=nNLFW4SvPGo"
+          },
+          {
+            "video_id": "k-XM0z4Yjzs",
+            "title": "Independent Administration of Estates Act (IAEA) in Probate",
+            "author": "Meinzer Legal Briefs",
+            "thumbnail_url": "https://i.ytimg.com/vi/k-XM0z4Yjzs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=k-XM0z4Yjzs"
+          },
+          {
+            "video_id": "vslnvJCGR5c",
+            "title": "Independent Administration of Estates Act- IAEA",
+            "author": "Law Office of Amanda L. Rocha",
+            "thumbnail_url": "https://i.ytimg.com/vi/vslnvJCGR5c/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=vslnvJCGR5c"
+          },
+          {
+            "video_id": "-UQpV25bgAM",
+            "title": "Santa Clara Probate: Full Authority Sale Mistake Costs",
+            "author": "California Probate Real Estate Made Simple",
+            "thumbnail_url": "https://i.ytimg.com/vi/-UQpV25bgAM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=-UQpV25bgAM"
+          },
+          {
+            "video_id": "32VmI6oEsPQ",
+            "title": "How to Sell a House in Probate California (Step-by-Step Guide + Insider Tip)",
+            "author": "California Probate Real Estate Made Simple",
+            "thumbnail_url": "https://i.ytimg.com/vi/32VmI6oEsPQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=32VmI6oEsPQ"
+          },
+          {
+            "video_id": "1UT8pIVtejc",
+            "title": "California Probate Sales: Managing Property During Estate Transitions",
+            "author": "Duc Minh Lam",
+            "thumbnail_url": "https://i.ytimg.com/vi/1UT8pIVtejc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=1UT8pIVtejc"
+          },
+          {
+            "video_id": "lrpGu0nZK1E",
+            "title": "Start Probate in California: Step-by-Step Guide (2025)",
+            "author": "California Probate Real Estate Made Simple",
+            "thumbnail_url": "https://i.ytimg.com/vi/lrpGu0nZK1E/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=lrpGu0nZK1E"
+          },
+          {
+            "video_id": "Lt0e4PdSMmo",
+            "title": "What is Probate? Your Full Guide Through the Probate Process in California",
+            "author": "Horizon Real Estate & Probate and Trust Help",
+            "thumbnail_url": "https://i.ytimg.com/vi/Lt0e4PdSMmo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Lt0e4PdSMmo"
+          },
+          {
+            "video_id": "lNaVAVnUZTE",
+            "title": "How Long Does Probate Take in California?",
+            "author": "RLS Law Corporation",
+            "thumbnail_url": "https://i.ytimg.com/vi/lNaVAVnUZTE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=lNaVAVnUZTE"
+          },
+          {
+            "video_id": "nenCgIcDQpw",
+            "title": "HOW TO MAKE AN OVERBID ON A PROBATE PROPERTY IN CALIFORNIA?",
+            "author": "Win-Win Realtors TV",
+            "thumbnail_url": "https://i.ytimg.com/vi/nenCgIcDQpw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=nenCgIcDQpw"
+          },
+          {
+            "video_id": "GS1quJmfAA4",
+            "title": "What is The Probate Sale Overbid Process | California Court Confirmation | Brendan Mohr",
+            "author": "Sell a House in Probate California | Brendan Mohr",
+            "thumbnail_url": "https://i.ytimg.com/vi/GS1quJmfAA4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=GS1quJmfAA4"
+          },
+          {
+            "video_id": "8b2qxYk3wDs",
+            "title": "What Is a Probate Real Estate Auction in California? | Brendan Mohr",
+            "author": "Sell a House in Probate California | Brendan Mohr",
+            "thumbnail_url": "https://i.ytimg.com/vi/8b2qxYk3wDs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=8b2qxYk3wDs"
+          },
+          {
+            "video_id": "ih5FQvZZVck",
+            "title": "LA Probate Overbids: 1 in 6 Court Confirmation Sales Get Overbid",
+            "author": "Bill Gross, the LA Probate Expert",
+            "thumbnail_url": "https://i.ytimg.com/vi/ih5FQvZZVck/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ih5FQvZZVck"
+          },
+          {
+            "video_id": "Ivp-A8gsOnI",
+            "title": "Overbidding in Court for Probate Real Estate",
+            "author": "Aronsohn & So, Probate Real Estate",
+            "thumbnail_url": "https://i.ytimg.com/vi/Ivp-A8gsOnI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Ivp-A8gsOnI"
+          },
+          {
+            "video_id": "6YQBrw5g_-c",
+            "title": "The Probate Overbid Process Explained: How Probate Court Protects Heirs From a Low Sale Price.",
+            "author": "Frank Lopez Broker Group",
+            "thumbnail_url": "https://i.ytimg.com/vi/6YQBrw5g_-c/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=6YQBrw5g_-c"
+          },
+          {
+            "video_id": "WinbHNSQLbg",
+            "title": "Overbids in Probate Real Estate Sales",
+            "author": "Dan Collins",
+            "thumbnail_url": "https://i.ytimg.com/vi/WinbHNSQLbg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=WinbHNSQLbg"
+          },
+          {
+            "video_id": "P4n8gqfBg3M",
+            "title": "Can You Avoid Court Confirmation in Probate if an Heir Objects in California? | Brendan Mohr",
+            "author": "Sell a House in Probate California | Brendan Mohr",
+            "thumbnail_url": "https://i.ytimg.com/vi/P4n8gqfBg3M/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=P4n8gqfBg3M"
+          },
+          {
+            "video_id": "-1OrRi_sTzA",
+            "title": "Probate: How to Overbid on Real Property",
+            "author": "The Sanborn Team",
+            "thumbnail_url": "https://i.ytimg.com/vi/-1OrRi_sTzA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=-1OrRi_sTzA"
+          },
+          {
+            "video_id": "L_bEDREJSKQ",
+            "title": "WHAT IS A COURT CONFIRMATION OF THE SALE OF REAL PROPERTY? #Probate #executor #administrator",
+            "author": "Win-Win Realtors TV",
+            "thumbnail_url": "https://i.ytimg.com/vi/L_bEDREJSKQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=L_bEDREJSKQ"
+          },
+          {
+            "video_id": "G-_4Dz5R2z8",
+            "title": "What is a Probate Sale Without Court Confirmation | Full Authority | Brendan Mohr",
+            "author": "Sell a House in Probate California | Brendan Mohr",
+            "thumbnail_url": "https://i.ytimg.com/vi/G-_4Dz5R2z8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=G-_4Dz5R2z8"
+          },
+          {
+            "video_id": "Eysvzbieyro",
+            "title": "February 10th Las Vegas Probate Ct Results: 11 Properties Confirmed, 2 Overbid in INTENSE Auction",
+            "author": "Mario Joyner- Las Vegas RE - Probate & Commercial",
+            "thumbnail_url": "https://i.ytimg.com/vi/Eysvzbieyro/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Eysvzbieyro"
+          },
+          {
+            "video_id": "kLAKLVbvcQY",
+            "title": "Probate Overbid Auction: Watch a Real Los Angeles Sale",
+            "author": "Bill Gross, the LA Probate Expert",
+            "thumbnail_url": "https://i.ytimg.com/vi/kLAKLVbvcQY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=kLAKLVbvcQY"
+          },
+          {
+            "video_id": "98dpuziGiYY",
+            "title": "11 Ways to Make a Sale in Probate Real Estate | #6 - Court Confirmation Sales/Auctions",
+            "author": "Bill Gross, the LA Probate Expert",
+            "thumbnail_url": "https://i.ytimg.com/vi/98dpuziGiYY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=98dpuziGiYY"
+          },
+          {
+            "video_id": "Gz6Ih7tLzdQ",
+            "title": "What is a Probate Sale With Court Confirmation | Brendan Mohr",
+            "author": "Sell a House in Probate California | Brendan Mohr",
+            "thumbnail_url": "https://i.ytimg.com/vi/Gz6Ih7tLzdQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Gz6Ih7tLzdQ"
+          },
+          {
+            "video_id": "wmbh_a5UnqI",
+            "title": "Real Estate Wholesale Properties in Probate - A Conversation w/ Al Nicoletti",
+            "author": "Brent Daniels - Wholesaling Inc",
+            "thumbnail_url": "https://i.ytimg.com/vi/wmbh_a5UnqI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=wmbh_a5UnqI"
+          },
+          {
+            "video_id": "kVqHwTzx-bo",
+            "title": "Probate Real Estate Investing | Law Clerk on Demand",
+            "author": "Realestate Doru",
+            "thumbnail_url": "https://i.ytimg.com/vi/kVqHwTzx-bo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=kVqHwTzx-bo"
+          },
+          {
+            "video_id": "C0exaWWfFMk",
+            "title": "How to Find Inheritance & Pre-Probate Real Estate Deals in 2026 (Step-by-Step)",
+            "author": "The Professionalist: Real Estate Investing Podcast",
+            "thumbnail_url": "https://i.ytimg.com/vi/C0exaWWfFMk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=C0exaWWfFMk"
+          },
+          {
+            "video_id": "cDuy_EpieeM",
+            "title": "Probate Real Estate | Probate Value vs Market Value",
+            "author": "ProbateBiz: Probate Real Estate Training",
+            "thumbnail_url": "https://i.ytimg.com/vi/cDuy_EpieeM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=cDuy_EpieeM"
+          },
+          {
+            "video_id": "_VFauJR1UAw",
+            "title": "Wholesaling Probate Real Estate STEP BY STEP [Part 1]",
+            "author": "Flip With Rick",
+            "thumbnail_url": "https://i.ytimg.com/vi/_VFauJR1UAw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=_VFauJR1UAw"
+          },
+          {
+            "video_id": "gUS4TsLhgiY",
+            "title": "PROBATE IS DEAD (FOR BEGINNERS)",
+            "author": "Virtual Wholesaling Made Simple",
+            "thumbnail_url": "https://i.ytimg.com/vi/gUS4TsLhgiY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=gUS4TsLhgiY"
+          },
+          {
+            "video_id": "4-UlN2iP-_c",
+            "title": "How to Make $50,000 Per Month Wholesaling the Probate List",
+            "author": "Flip With Rick",
+            "thumbnail_url": "https://i.ytimg.com/vi/4-UlN2iP-_c/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=4-UlN2iP-_c"
+          },
+          {
+            "video_id": "LeQ9QiM4CLo",
+            "title": "How to Wholesale Probate Properties (Step by Step) 💀",
+            "author": "Maximilian Dier",
+            "thumbnail_url": "https://i.ytimg.com/vi/LeQ9QiM4CLo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=LeQ9QiM4CLo"
+          },
+          {
+            "video_id": "Owbx6t3ocjM",
+            "title": "Probate 101 for Realtors",
+            "author": "Justin Stivers",
+            "thumbnail_url": "https://i.ytimg.com/vi/Owbx6t3ocjM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Owbx6t3ocjM"
+          },
+          {
+            "video_id": "e3YN7RJaj6U",
+            "title": "How to Wholesale Probates (Full Course) 4 Hours",
+            "author": "Flip With Rick",
+            "thumbnail_url": "https://i.ytimg.com/vi/e3YN7RJaj6U/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=e3YN7RJaj6U"
+          },
+          {
+            "video_id": "OMiXHCnv8tU",
+            "title": "The Biggest Mistake People Make Wholesaling Probate Properties",
+            "author": "Rick Ginn",
+            "thumbnail_url": "https://i.ytimg.com/vi/OMiXHCnv8tU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=OMiXHCnv8tU"
+          },
+          {
+            "video_id": "utX5VR1nHk4",
+            "title": "The Perfect Cold Calling Script for Probate Leads in Wholesaling Real Estate",
+            "author": "More Flip with Rick",
+            "thumbnail_url": "https://i.ytimg.com/vi/utX5VR1nHk4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=utX5VR1nHk4"
+          },
+          {
+            "video_id": "CxNRQb9rqlw",
+            "title": "Probate and Real Estate - Why Attorneys should work with Investors",
+            "author": "Rilus Law",
+            "thumbnail_url": "https://i.ytimg.com/vi/CxNRQb9rqlw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=CxNRQb9rqlw"
+          },
+          {
+            "video_id": "uJxayMyF-i4",
+            "title": "Making cash offers fast, solving problems with probate real estate deals, and wholesaling ethics",
+            "author": "Probate Mastery",
+            "thumbnail_url": "https://i.ytimg.com/vi/uJxayMyF-i4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=uJxayMyF-i4"
+          },
+          {
+            "video_id": "PEzIdVcykYI",
+            "title": "Attorney prospecting: Real estate agent/investor tips for probate vs. Estate planning referrals",
+            "author": "Probate Mastery",
+            "thumbnail_url": "https://i.ytimg.com/vi/PEzIdVcykYI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=PEzIdVcykYI"
+          },
+          {
+            "video_id": "7cYFXxbOdbc",
+            "title": "Estate Planning Myths & Law Firm Growth with Alina Nuñez | Eric Rosen Podcast",
+            "author": "Rosen Injury Law",
+            "thumbnail_url": "https://i.ytimg.com/vi/7cYFXxbOdbc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=7cYFXxbOdbc"
+          },
+          {
+            "video_id": "e7NC2IktQnY",
+            "title": "Building a Six-Figure a Month, Client-Centered Probate and Estate Planning Law Practice",
+            "author": "Unbundled Attorney",
+            "thumbnail_url": "https://i.ytimg.com/vi/e7NC2IktQnY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=e7NC2IktQnY"
+          },
+          {
+            "video_id": "kOa87jAYRNs",
+            "title": "How to prospect attorneys and build impactful referral relationships in the estate planning space",
+            "author": "Probate Mastery",
+            "thumbnail_url": "https://i.ytimg.com/vi/kOa87jAYRNs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=kOa87jAYRNs"
+          },
+          {
+            "video_id": "wQcPBrtGgYY",
+            "title": "How to Start an Estate Planning Law Firm: What Lawyers Need To Know",
+            "author": "Darcel Lobo",
+            "thumbnail_url": "https://i.ytimg.com/vi/wQcPBrtGgYY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=wQcPBrtGgYY"
+          },
+          {
+            "video_id": "bTg9P9DMD1U",
+            "title": "Real Estate Referral Networking Ideas: Probate real estate coaching",
+            "author": "Probate Mastery",
+            "thumbnail_url": "https://i.ytimg.com/vi/bTg9P9DMD1U/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=bTg9P9DMD1U"
+          },
+          {
+            "video_id": "22eVzYFh7is",
+            "title": "Estate Planning Mastery: Keeping Your Wealth in the Family and Out of In-Laws' Reach",
+            "author": "National Referral Network",
+            "thumbnail_url": "https://i.ytimg.com/vi/22eVzYFh7is/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=22eVzYFh7is"
+          },
+          {
+            "video_id": "g3dWuQ30j4Y",
+            "title": "How Offering Help to Overloaded Probate Attorneys Can Get You More Referrals! 📈",
+            "author": "Probate Mastery",
+            "thumbnail_url": "https://i.ytimg.com/vi/g3dWuQ30j4Y/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=g3dWuQ30j4Y"
+          },
+          {
+            "video_id": "evd32pAim5s",
+            "title": "How to Get a Probate Attorney Referral (Timing + Nurture Tips)",
+            "author": "Probate Mastery",
+            "thumbnail_url": "https://i.ytimg.com/vi/evd32pAim5s/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=evd32pAim5s"
+          },
+          {
+            "video_id": "pryGLjB9I8k",
+            "title": "Effective Estate Planning for Business Owners",
+            "author": "National Referral Network",
+            "thumbnail_url": "https://i.ytimg.com/vi/pryGLjB9I8k/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=pryGLjB9I8k"
+          },
+          {
+            "video_id": "lA-S6Qgcqwo",
+            "title": "Probate Real Estate Strategies: Proven Marketing Tactics to Get More Leads & Attorney Referrals",
+            "author": "Probate Mastery",
+            "thumbnail_url": "https://i.ytimg.com/vi/lA-S6Qgcqwo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=lA-S6Qgcqwo"
+          },
+          {
+            "video_id": "hBucLBjJpwg",
+            "title": "Probate Attorney Referral Tips and Probate Attorney Referral Methods",
+            "author": "Probate Mastery",
+            "thumbnail_url": "https://i.ytimg.com/vi/hBucLBjJpwg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=hBucLBjJpwg"
+          },
+          {
+            "video_id": "6m0W2cil7rU",
+            "title": "Divorce & Probate Leads: How to Build a Strong Attorney Referral Network for Realtors & Investors",
+            "author": "Probate Mastery",
+            "thumbnail_url": "https://i.ytimg.com/vi/6m0W2cil7rU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=6m0W2cil7rU"
+          },
+          {
+            "video_id": "5JWPb5QsWx4",
+            "title": "Overview of Probate in NC // Ronald D. Payne II, Estate Planning and Probate Attorney",
+            "author": "Ronald D. Payne II - Estates Attorney",
+            "thumbnail_url": "https://i.ytimg.com/vi/5JWPb5QsWx4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=5JWPb5QsWx4"
+          },
+          {
+            "video_id": "zSsn_jeexks",
+            "title": "How to Organize an Estate Cleanout, Removing Items from House After Death",
+            "author": "Horizon Real Estate & Probate and Trust Help",
+            "thumbnail_url": "https://i.ytimg.com/vi/zSsn_jeexks/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=zSsn_jeexks"
+          },
+          {
+            "video_id": "aHu-G7VTUnc",
+            "title": "Talking Estate Cleanouts: Executor to Estate Cleanout Pro",
+            "author": "Executorium",
+            "thumbnail_url": "https://i.ytimg.com/vi/aHu-G7VTUnc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=aHu-G7VTUnc"
+          },
+          {
+            "video_id": "dHEXFlygm_8",
+            "title": "5 Don'ts Before Cleaning Out An Estate",
+            "author": "Illinois Probate Solutions",
+            "thumbnail_url": "https://i.ytimg.com/vi/dHEXFlygm_8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=dHEXFlygm_8"
+          },
+          {
+            "video_id": "L8fzGwXd_kk",
+            "title": "Estate Cleanout Business: Win Families, Executors & Realtors",
+            "author": "JunkRemovalWeb",
+            "thumbnail_url": "https://i.ytimg.com/vi/L8fzGwXd_kk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=L8fzGwXd_kk"
+          },
+          {
+            "video_id": "l68yR0_4B4g",
+            "title": "Estate Cleanout in Houston: 7 Things Executors Must Do | Realtor Cesar Espinoza",
+            "author": "Cesar Espinoza - Houston Probate Realtor",
+            "thumbnail_url": "https://i.ytimg.com/vi/l68yR0_4B4g/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=l68yR0_4B4g"
           }
         ],
         "research_reference_only": true,
@@ -19672,7 +20918,7 @@
         "asset_id": "verbatim_transcript_quotes",
         "asset": "data/transcripts/*.json -> segments[].text",
         "asset_type": "verbatim_transcript_passage",
-        "source": "Spoken content of 2416 third-party videos (22224 captured tips)",
+        "source": "Spoken content of 2594 third-party videos (23925 captured tips)",
         "research_reference_only": true,
         "commercial_republish_allowed": false,
         "commercial_use_allowed": false,
@@ -19688,38 +20934,38 @@
     ]
   },
   "corpus_metrics": {
-    "video_count": 2416,
-    "channel_count": 1603,
-    "total_words": 3342359,
-    "total_hours": 662.33,
-    "total_pro_tips": 22224,
-    "unique_statutes_and_forms": 1185,
-    "unique_tools_and_portals": 6775
+    "video_count": 2594,
+    "channel_count": 1698,
+    "total_words": 3689032,
+    "total_hours": 730.47,
+    "total_pro_tips": 23925,
+    "unique_statutes_and_forms": 1248,
+    "unique_tools_and_portals": 7216
   },
   "coverage": {
-    "videos_classified": 2416,
-    "videos_with_multiple_topics": 2414,
-    "tips_classified": 22224,
-    "raw_transcripts_joined": 2416,
+    "videos_classified": 2594,
+    "videos_with_multiple_topics": 2592,
+    "tips_classified": 23925,
+    "raw_transcripts_joined": 2594,
     "topic_video_counts": {
-      "business_model_and_economics": 1887,
-      "probate_and_docket_sourcing": 1773,
-      "unclaimed_property_and_escheat": 616,
-      "genealogy_and_heirship_proof": 1991,
-      "skip_tracing_and_outreach": 1340,
-      "contracts_and_compensation": 1896,
-      "statutory_caps_and_licensing": 1969,
-      "automation_and_small_team_ops": 1828
+      "business_model_and_economics": 2059,
+      "probate_and_docket_sourcing": 1950,
+      "unclaimed_property_and_escheat": 622,
+      "genealogy_and_heirship_proof": 2085,
+      "skip_tracing_and_outreach": 1464,
+      "contracts_and_compensation": 2070,
+      "statutory_caps_and_licensing": 2146,
+      "automation_and_small_team_ops": 1958
     },
     "topic_tip_counts": {
-      "business_model_and_economics": 3972,
-      "probate_and_docket_sourcing": 3171,
-      "unclaimed_property_and_escheat": 1803,
-      "genealogy_and_heirship_proof": 2476,
-      "skip_tracing_and_outreach": 948,
-      "contracts_and_compensation": 2507,
-      "statutory_caps_and_licensing": 2259,
-      "automation_and_small_team_ops": 5088
+      "business_model_and_economics": 4113,
+      "probate_and_docket_sourcing": 4312,
+      "unclaimed_property_and_escheat": 1804,
+      "genealogy_and_heirship_proof": 2519,
+      "skip_tracing_and_outreach": 984,
+      "contracts_and_compensation": 2580,
+      "statutory_caps_and_licensing": 2482,
+      "automation_and_small_team_ops": 5131
     }
   },
   "schema_version": "1.0",
@@ -19739,6 +20985,12 @@
       "priority": "high",
       "corpus_references": [
         {
+          "video_title": "How To Start Wholesale Real Estate In 2027 (15hrs/wk)!",
+          "author": "Real Estate Skills",
+          "timestamp": "00:30:38",
+          "link": "https://www.youtube.com/watch?v=M9iyZc2j_uQ&t=1838s"
+        },
+        {
           "video_title": "Understanding Aircraft Brokerage: Standards, Risk, and Trust",
           "author": "Own The Jet",
           "timestamp": "00:04:01",
@@ -19755,12 +21007,6 @@
           "author": "Patent pc",
           "timestamp": "00:02:21",
           "link": "https://www.youtube.com/watch?v=TYb3i3iIHEQ&t=141s"
-        },
-        {
-          "video_title": "State Funds Tutorial: First Steps For Somebody Brand New To Unclaimed Funds Business.",
-          "author": "Surplus Funds 101",
-          "timestamp": "00:14:47",
-          "link": "https://www.youtube.com/watch?v=PGvJEv9Y_Go&t=887s"
         }
       ]
     },
@@ -19779,6 +21025,12 @@
       "priority": "high",
       "corpus_references": [
         {
+          "video_title": "How To Start Wholesale Real Estate In 2027 (15hrs/wk)!",
+          "author": "Real Estate Skills",
+          "timestamp": "00:30:38",
+          "link": "https://www.youtube.com/watch?v=M9iyZc2j_uQ&t=1838s"
+        },
+        {
           "video_title": "Understanding Aircraft Brokerage: Standards, Risk, and Trust",
           "author": "Own The Jet",
           "timestamp": "00:04:01",
@@ -19795,12 +21047,6 @@
           "author": "Patent pc",
           "timestamp": "00:02:21",
           "link": "https://www.youtube.com/watch?v=TYb3i3iIHEQ&t=141s"
-        },
-        {
-          "video_title": "State Funds Tutorial: First Steps For Somebody Brand New To Unclaimed Funds Business.",
-          "author": "Surplus Funds 101",
-          "timestamp": "00:14:47",
-          "link": "https://www.youtube.com/watch?v=PGvJEv9Y_Go&t=887s"
         }
       ]
     },
@@ -19819,6 +21065,12 @@
       "priority": "high",
       "corpus_references": [
         {
+          "video_title": "How To Start Wholesale Real Estate In 2027 (15hrs/wk)!",
+          "author": "Real Estate Skills",
+          "timestamp": "00:30:38",
+          "link": "https://www.youtube.com/watch?v=M9iyZc2j_uQ&t=1838s"
+        },
+        {
           "video_title": "Understanding Aircraft Brokerage: Standards, Risk, and Trust",
           "author": "Own The Jet",
           "timestamp": "00:04:01",
@@ -19835,12 +21087,6 @@
           "author": "Patent pc",
           "timestamp": "00:02:21",
           "link": "https://www.youtube.com/watch?v=TYb3i3iIHEQ&t=141s"
-        },
-        {
-          "video_title": "State Funds Tutorial: First Steps For Somebody Brand New To Unclaimed Funds Business.",
-          "author": "Surplus Funds 101",
-          "timestamp": "00:14:47",
-          "link": "https://www.youtube.com/watch?v=PGvJEv9Y_Go&t=887s"
         }
       ]
     },
@@ -19899,6 +21145,12 @@
       "priority": "high",
       "corpus_references": [
         {
+          "video_title": "How To Start Wholesale Real Estate In 2027 (15hrs/wk)!",
+          "author": "Real Estate Skills",
+          "timestamp": "00:30:38",
+          "link": "https://www.youtube.com/watch?v=M9iyZc2j_uQ&t=1838s"
+        },
+        {
           "video_title": "Understanding Aircraft Brokerage: Standards, Risk, and Trust",
           "author": "Own The Jet",
           "timestamp": "00:04:01",
@@ -19915,12 +21167,6 @@
           "author": "Patent pc",
           "timestamp": "00:02:21",
           "link": "https://www.youtube.com/watch?v=TYb3i3iIHEQ&t=141s"
-        },
-        {
-          "video_title": "State Funds Tutorial: First Steps For Somebody Brand New To Unclaimed Funds Business.",
-          "author": "Surplus Funds 101",
-          "timestamp": "00:14:47",
-          "link": "https://www.youtube.com/watch?v=PGvJEv9Y_Go&t=887s"
         }
       ]
     },

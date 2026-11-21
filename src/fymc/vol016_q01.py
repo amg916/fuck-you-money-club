@@ -1,0 +1,658 @@
+from __future__ import annotations
+
+CHAPTER_1 = {
+    "id": "Q1",
+    "chapter_id": "Q1",
+    "chapter_number": 1,
+    "question_number": 1,
+    "slug": "what-exactly-is-probate-real-estate",
+    "question_prompt": "What exactly is probate real estate, how is real operator revenue recognized vs underlying asset/client GMV, and what separates durable small-team moats from fragile beginner hype?",
+    "kicker": "Q1 / THE BIG MONEY PLAYBOOKS",
+    "title": "What Exactly Is Probate Real Estate?",
+    "subtitle": "Court Authority, Executor Workflows, Retained Brokerage Commissions, and Counsel-Supervised Heir-Interest Acquisitions",
+    "layout_template": "opportunity_overview",
+    "reading_time_minutes": 14,
+    "executive_summary": (
+        "Probate real estate turns difficult estate-property transfers into a specialized brokerage operation, "
+        "not a claim on the estate's entire property value. Candidate #9 ranks #16 of 29 with a "
+        "76/100 Money-to-Manpower Score. This chapter maps 11 operator plays across docket intelligence, "
+        "executor service, attorney relationships, transaction execution, and carefully separated heir-interest "
+        "acquisitions. Recognized scorecard revenue means retained brokerage commissions after brokerage splits: "
+        "$120,000 Conservative, $510,000 Base, and $900,000 Scaled. Corresponding annual owner profits are "
+        "$24,000, $140,250, and $315,000. Durable operators verify representative authority, document fee "
+        "entitlement, control closing dependencies, and earn repeat professional referrals. Fragile operators "
+        "mistake estate value for revenue, public records for permission, or fractional ownership for unrestricted "
+        "power over other heirs."
+    ),
+    "key_metrics": [
+        {
+            "label": "Conservative",
+            "value": "$120,000",
+            "context": "Annual retained brokerage commissions after brokerage splits; excludes home sale values",
+            "note": "20% net margin; $24,000 annual owner net profit; 2 FT + 3 C",
+        },
+        {
+            "label": "Base",
+            "value": "$510,000",
+            "context": "Annual retained brokerage commissions after brokerage splits; excludes home sale values",
+            "note": "27.5% net margin; $140,250 annual owner net profit; 2 FT + 3 C",
+        },
+        {
+            "label": "Scaled",
+            "value": "$900,000",
+            "context": "Annual retained brokerage commissions after brokerage splits; excludes home sale values",
+            "note": "35% net margin; $315,000 annual owner net profit; 3 FT + 4 C",
+        },
+    ],
+    "sections": [
+        {
+            "heading": "1. Define the Estate Assignment Before Selling the Property",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Probate real estate is property whose transfer or disposition intersects with administration "
+                    "of a deceased owner's estate. The commercial opportunity is the work required to establish "
+                    "who can act, prepare a marketable property, find a buyer, and complete a valid transfer. "
+                    "A death does not automatically place every associated parcel inside a supervised probate "
+                    "sale. Trust ownership, survivorship arrangements, transfer instruments, and local succession "
+                    "procedures can produce different routes. Start with the vesting deed, death record where "
+                    "available, court file, appointment documents, and title company's requirements; do not "
+                    "classify a lead from an obituary alone. The client is ordinarily the properly authorized "
+                    "representative acting for the estate, rather than whichever relative answers first. Counsel "
+                    "determines disputed authority and legal strategy; the broker manages pricing, marketing, "
+                    "negotiation, and transaction execution within the permitted scope. The representative may "
+                    "owe duties to multiple beneficiaries and creditors whose preferences conflict. That makes "
+                    "documented alternatives, expense controls, and neutral reporting commercially valuable. A "
+                    "small team wins by reducing uncertainty for the representative and estate counsel, not by "
+                    "promising privileged court access or assuming that bereavement creates an automatic "
+                    "discount. Treat every property as an authority-and-title problem before treating it as "
+                    "saleable inventory."
+                ),
+                (
+                    "The scorecard business is a licensed brokerage service, with revenue measured as retained "
+                    "commissions after brokerage splits. A $750,000 sale at a negotiated 2.5% side commission "
+                    "produces $18,750 before an illustrative 20% brokerage split and $15,000 retained afterward. "
+                    "The $750,000 belongs in underlying transaction volume, not operator revenue. Rates are "
+                    "negotiable, and neither that rate nor that split is an industry requirement. Record "
+                    "revenue when the contracted brokerage service is earned and collection is supportable "
+                    "under the applicable accounting policy, commonly at a completed closing; a signed "
+                    "listing and an accepted offer remain pipeline. Reconcile the settlement statement to "
+                    "the commission disbursement authorization and brokerage remittance. Keep earnest money, "
+                    "estate repair funds, sale proceeds, and vendor reimbursements outside the retained-fee "
+                    "ledger unless a separately analyzed arrangement establishes an actual revenue component. "
+                    "An executor concierge may organize access, cleanout bids, utilities, and status reports, "
+                    "but must identify its contracting party, spending authority, and compensation. Direct "
+                    "acquisitions are a different capital business: purchase principal is an investment, sale "
+                    "proceeds are not automatically profit, and holding costs matter. Never blend acquisition "
+                    "gains or concierge invoices into these commission-only scenarios to make a weak brokerage "
+                    "funnel appear productive."
+                ),
+                (
+                    "Authority varies materially by state and by the powers actually granted in the case. "
+                    "California illustrates the distinction: Probate Code section 10538 permits certain real "
+                    "property sales under full independent-administration authority without ordinary court "
+                    "supervision, while sections 10580 and following establish notice-of-proposed-action "
+                    "requirements and exceptions. A supervised sale follows a different path, including "
+                    "applicable confirmation procedures under sections 10300 and following. Do not translate "
+                    "one county's checklist into a nationwide rule. Ask estate counsel to identify the "
+                    "authority route, required notices, objection periods, bond issues, and whether particular "
+                    "conflicts require additional court involvement. Give the title officer the same packet "
+                    "before accepting an aggressive closing schedule. Real estate licensing remains a "
+                    "separate requirement; California Business and Professions Code section 10130 generally "
+                    "requires a license to act as a broker or salesperson. The five archetypes below describe "
+                    "different service boundaries, not interchangeable permissions. One firm can coordinate "
+                    "several functions, but an investor buying an estate asset has interests different from "
+                    "a broker maximizing the estate's result. Disclose roles, separate contracts and ledgers, "
+                    "and arrange independent representation where appropriate rather than hiding an acquisition "
+                    "spread inside an executor-service relationship."
+                ),
+            ],
+            "table": {
+                "caption": "Five Probate Operator Archetypes and Their Commercial Boundaries",
+                "headers": [
+                    "Operator archetype",
+                    "Specific customer and deliverable",
+                    "Compensation and revenue boundary",
+                    "Durable advantage and failure exposure",
+                ],
+                "rows": [
+                    [
+                        "Licensed estate listing specialist serving appointed personal representatives",
+                        "Representative receives pricing analysis, property marketing, negotiations, and closing coordination",
+                        "Negotiated brokerage commission retained after the documented brokerage split",
+                        "Authority fluency builds referrals; defective appointments can prevent closing entirely",
+                    ],
+                    [
+                        "Executor concierge coordinating property readiness and access",
+                        "Representative receives vendor scheduling, inventory coordination, access logs, and expense reporting",
+                        "Separately contracted service fees remain outside the commission-only scorecard",
+                        "Reliable local vendors protect deadlines; unauthorized spending creates repayment disputes",
+                    ],
+                    [
+                        "Attorney-facing brokerage desk for repeat estate assignments",
+                        "Estate counsel receives consistent property updates and executable transaction documentation",
+                        "Earned brokerage compensation follows actual representation, never purchased client introductions",
+                        "Responsive reporting compounds relationships; improper referral payments jeopardize the channel",
+                    ],
+                    [
+                        "Direct estate-property investor purchasing an entire authorized interest",
+                        "Estate receives a documented purchase offer with disclosed buyer identity",
+                        "Acquisition principal and realized investment results use separate investment accounting",
+                        "Capital certainty supports execution; title defects and carrying costs consume returns",
+                    ],
+                    [
+                        "Fractional heir-interest investor managing documented co-owner relationships",
+                        "Selling heir receives agreed consideration for a legally transferable interest",
+                        "Interest acquisition and later disposition never become retained brokerage commissions",
+                        "Patient capital supports consensual exits; protected co-owner rights constrain remedies",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Verify Four Conditions Before Promising a Sale Timeline",
+                "body": "A commercially attractive parcel is not an executable assignment until authority, title, compensation, and dependencies agree.",
+                "items": [
+                    "Match the proposed signer's identity to current appointment documents, limitations, and counsel's written authority assessment.",
+                    "Obtain a preliminary title report and reconcile vesting, liens, deceased owners, co-owners, and required conveyance instruments.",
+                    "Document the listing party, negotiated compensation, brokerage split, and commission recipient before representing expected retained revenue.",
+                    "Put notices, objection periods, court dates, access restrictions, and title conditions into a dated closing dependency list.",
+                ],
+            },
+        },
+        {
+            "heading": "2. Map Eleven Plays Without Confusing Intelligence With Control",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "The eleven chapter-mapped plays comprise two specified cross-volume plays and nine "
+                    "descriptive operating applications shown in the matrix. Start with "
+                    "public_record_api_intelligence: combine permitted county docket access, probate registries, "
+                    "assessor records, and available public APIs into a case-to-parcel research queue. Unclaimed "
+                    "property ledgers can provide research context but do not establish property ownership, "
+                    "heirship, or authority to recover assets. An illustrative monthly batch of 200 records "
+                    "might yield 40 parcel matches, 12 verified representative contacts, three substantive "
+                    "conversations, one listing, and 0.5 eventual closings. At $10,000 retained per closing, "
+                    "that mature cohort implies $5,000 expected retained fees before research and selling "
+                    "costs, not immediately recognized monthly revenue. Spend $600 on data access and ten "
+                    "research hours at $30 each, and direct research cost is $900. Measure conversion by "
+                    "cohort because court delays separate research spending from cash collection. Respect "
+                    "access terms, redactions, sealed records, and contact restrictions. When an endpoint "
+                    "changes or automated access is unavailable, switch to scheduled bulk FOIA/public-record "
+                    "exports where applicable, official feeds, and low-frequency cached queues. State and "
+                    "local disclosure laws usually govern county records; federal FOIA does not compel "
+                    "a county probate clerk to provide an API."
+                ),
+                (
+                    "The second specified play, fractional_heir_share_partition_forcing, requires unusually "
+                    "careful separation from the brokerage proposition. Its legitimate operating path is "
+                    "to acquire a documented transferable fractional interest, then pursue consensual buyouts "
+                    "or counsel-supervised partition where legally available. A one-quarter interest in a "
+                    "debt-free property appraised at $400,000 has $100,000 of simple proportional value, "
+                    "but that arithmetic ignores illiquidity, possession, expenses, sale costs, and co-owner "
+                    "rights. Suppose acquisition costs $55,000, counsel and title work cost $8,000, and "
+                    "holding and settlement expenses total $7,000. A voluntary $85,000 buyout leaves "
+                    "$15,000 before taxes and other allocated costs; a $65,000 exit instead loses $5,000. "
+                    "Neither outcome belongs in the commission scorecard. An expectancy before distribution "
+                    "may not convey the same rights as a vested recorded interest. Counsel must verify "
+                    "what the seller owns and what an assignment actually transfers. California's heirs-property "
+                    "partition provisions, including Code of Civil Procedure sections 874.311 and 874.317, "
+                    "illustrate valuation and co-owner buyout protections. Never market litigation pressure "
+                    "as a guaranteed extraction mechanism. The fallback is a voluntary exit renegotiation "
+                    "or holding the interest within a funded reserve, without threatening remedies that "
+                    "the facts or jurisdiction do not permit."
+                ),
+                (
+                    "The remaining nine plays monetize execution rather than confidential access: representative "
+                    "verification, attorney relationship development, executor concierge coordination, title "
+                    "triage, vacant-property readiness, occupied-property coordination, court-sale execution, "
+                    "remote-heir communication, and transaction checklist automation. Their unit examples "
+                    "appear in the matrix as workload or cost math; they are not additional scorecard "
+                    "revenue streams. Platforms such as CourtListener, PropertyRadar, ATTOM, Clio, DocuSign, "
+                    "and Qualia solve different problems, and subscriptions never establish coverage, authority, "
+                    "or a right to redistribute records. Test county coverage with a sample before buying "
+                    "annual access. A docket index may omit useful probate detail, while an assessor "
+                    "record can lag a recent transfer. Attorney relationships should grow through accurate "
+                    "comparative market analyses, concise status reporting, and dependable execution, rather "
+                    "than payments for steering estate clients. Where a transaction involves a federally "
+                    "related mortgage loan, 12 U.S.C. section 2607 and its implementing rules restrict "
+                    "settlement-service referral kickbacks and unearned fee splitting. Genuine services "
+                    "need independently supportable scope and compensation; calling a referral payment "
+                    "marketing does not change its substance. For each application, define the work unit, "
+                    "the responsible person, the evidence required, and the fallback when the dependency "
+                    "fails. These controls make eleven plays one coherent brokerage system."
+                ),
+            ],
+            "table": {
+                "caption": "Sixteen Sub-Vertical Comparisons: Eleven Mapped Plays and Five Assignment Contexts; Costs Are Illustrative Budgets, Not Vendor Quotes",
+                "headers": [
+                    "Play or assignment context",
+                    "Named platform and concrete operating use",
+                    "Fee structure or unit economics",
+                    "Moat, failure trigger, and practical fallback",
+                ],
+                "rows": [
+                    [
+                        "Play 1: public_record_api_intelligence for county-specific estate discovery",
+                        "Official county portals plus ATTOM support permitted case-to-parcel matching",
+                        "Two hundred records cost $900 in illustrative access and research inputs",
+                        "Verified local coverage wins; broken access shifts work to official bulk exports",
+                    ],
+                    [
+                        "Play 2: fractional_heir_share_partition_forcing with documented transferable interests",
+                        "County recorder documents and counsel-supervised Qualia title workflows support diligence",
+                        "$55,000 purchase plus $15,000 costs against $85,000 exit yields $15,000",
+                        "Patient capital matters; unavailable remedies require voluntary renegotiation or continued holding",
+                    ],
+                    [
+                        "Play 3: Representative verification before listing solicitation or execution",
+                        "Official probate docket and Adobe Acrobat organize appointment evidence",
+                        "Ten files at 45 minutes each require 7.5 review hours",
+                        "Current authority records differentiate service; conflicting orders pause signature collection",
+                    ],
+                    [
+                        "Play 4: Attorney relationship development through substantive property support",
+                        "Clio-compatible reporting and Microsoft Outlook support permission-based professional communication",
+                        "Six consultations at one hour each consume six business-development hours",
+                        "Useful analysis earns repeat introductions; referral-payment demands require declining that arrangement",
+                    ],
+                    [
+                        "Play 5: Executor concierge coordination with explicit spending authority",
+                        "Trello and Google Drive organize bids, access schedules, and receipts",
+                        "Four coordination hours at $40 cost $160 before vendor charges",
+                        "Reliable vendors reduce representative workload; disputed scope requires written reauthorization",
+                    ],
+                    [
+                        "Play 6: Title triage before marketing promises become contractual obligations",
+                        "Qualia-connected title partners and county recorders identify conveyance dependencies",
+                        "Three title exceptions at two coordination hours each require six hours",
+                        "Early exception discovery protects schedules; unresolved ownership shifts resolution to counsel",
+                    ],
+                    [
+                        "Play 7: Vacant-property readiness without speculative renovation exposure",
+                        "CompanyCam and Jobber support condition photographs and documented vendor scheduling",
+                        "Three $150 inspection visits create $450 of authorized estate expenditure",
+                        "Time-stamped condition history protects accountability; insurance restrictions require revised access procedures",
+                    ],
+                    [
+                        "Play 8: Occupied-property coordination with documented occupant rights",
+                        "AppFolio exports and DocuSign support lease review and access acknowledgments",
+                        "Four occupied units at 30 minutes review require two hours",
+                        "Accurate occupancy facts support pricing; disputed possession requires local counsel involvement",
+                    ],
+                    [
+                        "Play 9: Court-sale execution with visible confirmation dependencies",
+                        "Official court calendars and DocuSign support hearing schedules and offer documentation",
+                        "Six milestones at 20 minutes tracking require two coordinator hours",
+                        "Calendar discipline protects buyers; continuances require revised dates rather than revenue recognition",
+                    ],
+                    [
+                        "Play 10: Remote-heir communication through a controlled reporting channel",
+                        "Microsoft Teams and SharePoint distribute authorized summaries with version history",
+                        "Eight updates at 15 minutes each require two reporting hours",
+                        "Consistent facts reduce conflict; disputed instructions return decisions to the authorized representative",
+                    ],
+                    [
+                        "Play 11: Transaction checklist automation with human exception ownership",
+                        "Airtable and Zapier route tasks without replacing counsel or title review",
+                        "Thirty files saving 20 minutes each release ten coordinator hours",
+                        "Reusable exception rules compound; incorrect triggers revert to reviewed manual checklists",
+                    ],
+                    [
+                        "Context A: Full-authority residential estate listing with straightforward title",
+                        "Local MLS and ShowingTime support ordinary exposure after authority verification",
+                        "$500,000 sale times 2.5% commission times 80% retention yields $10,000",
+                        "Fast preparation supports referrals; an objection can require a different sale route",
+                    ],
+                    [
+                        "Context B: Supervised sale requiring jurisdiction-specific confirmation procedures",
+                        "Official court portal and local MLS disclose the actual sale process",
+                        "$750,000 sale times 2.5% commission times 80% retention yields $15,000",
+                        "Procedure fluency attracts counsel; failed confirmation keeps fees out of earned revenue",
+                    ],
+                    [
+                        "Context C: Rural acreage with survey and access uncertainty",
+                        "Land id and county GIS assist screening alongside recorded survey evidence",
+                        "Two $250 site visits consume $500 before separately approved specialist work",
+                        "Local access knowledge matters; unresolved easements require surveyor and counsel review",
+                    ],
+                    [
+                        "Context D: Small rental estate with surviving occupant obligations",
+                        "AppFolio records and local MLS support rent verification and investor marketing",
+                        "$1,000,000 sale times 2.5% commission times 80% retention yields $20,000",
+                        "Verified leases support underwriting; inaccurate rent records require repricing before solicitation",
+                    ],
+                    [
+                        "Context E: Personal-property-heavy estate requiring coordinated cleanout sequencing",
+                        "EstateSales.NET and CompanyCam document separate vendors and property condition",
+                        "Two $1,500 cleanout stages require $3,000 in authorized estate spending",
+                        "Careful inventory preserves trust; disputed belongings remain untouched pending representative instructions",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Four Practices That Experienced Estate Brokers Protect",
+                "body": "The strongest advantages are quiet controls that prevent expensive surprises for representatives and counsel.",
+                "items": [
+                    "Ask the title officer for the conveyance and authority requirements before publishing a closing date; a court appointment alone may not satisfy every exception.",
+                    "Keep a separate field for the date authority was last verified, because a docket update can change who may sign or which procedure applies.",
+                    "Quote cleanout work in photographed stages with item exclusions, so disputed personal property does not contaminate the entire preparation schedule.",
+                    "Send counsel a one-page exception report showing owner, next action, due date, and cash consequence instead of forwarding an unfiltered email chain.",
+                ],
+            },
+        },
+        {
+            "heading": "3. Reconcile Every Scenario to Retained Commissions and Real Costs",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "The canonical Conservative case recognizes $120,000 annual retained brokerage revenue "
+                    "at a 20% net margin, producing $24,000 annual owner net profit with two full-time "
+                    "people and three contractors. An illustrative reconciliation is 12 completed sides "
+                    "at $500,000 each, a negotiated 2.5% side commission, and 80% retention after the "
+                    "brokerage split. That creates $6,000,000 of underlying property volume, $150,000 of "
+                    "pre-split commissions, a $30,000 brokerage split, and $120,000 retained revenue. "
+                    "Implied annual operating costs are $96,000. The Base case uses 34 sides at "
+                    "$750,000, the same illustrative rate and retention, and therefore $25,500,000 "
+                    "property volume, $637,500 pre-split commissions, $127,500 brokerage splits, and "
+                    "$510,000 retained revenue. Its 27.5% margin produces $140,250 owner profit and "
+                    "$369,750 implied operating costs, with the same two full-time people and three "
+                    "contractors. These deal counts explain the supplied totals; they are not forecasts "
+                    "of local demand or published commission norms. Use completed sides rather than "
+                    "loosely defined deals, and avoid counting both buyer and seller compensation unless "
+                    "both were actually earned and permitted. A pending $750,000 property adds no "
+                    "recognized retained fees merely because the representative accepted an offer."
+                ),
+                (
+                    "The Scaled case recognizes $900,000 retained revenue at a 35% margin, producing "
+                    "$315,000 annual owner net profit with three full-time people and four contractors, "
+                    "seven people total. Forty-five completed sides at $1,000,000, a negotiated 2.5% "
+                    "side commission, and 80% retention reconcile exactly: $45,000,000 property volume, "
+                    "$1,125,000 pre-split commissions, $225,000 brokerage splits, and $900,000 retained "
+                    "revenue. Implied annual operating costs are $585,000. The supplied startup range "
+                    "is $15,000 to $100,000, the monthly operating-expense screening range is $3,000 "
+                    "to $18,000, and the first-deal window is four to eighteen months. Those screening "
+                    "figures do not reconcile to every scenario as complete cost budgets: implied "
+                    "monthly total costs are $8,000 Conservative, $30,812.50 Base, and $48,750 Scaled. "
+                    "Keep the canonical scenarios intact and explicitly flag that scope mismatch when "
+                    "building a local plan. In particular, $96,000 annually may be insufficient for "
+                    "two full-time people plus contractor support at local compensation levels. Validate "
+                    "whether the owner occupies a full-time seat, which compensation is included, and "
+                    "how contractor costs behave before committing capital. Do not silently remove "
+                    "labor or call property proceeds revenue to preserve an attractive margin. Personal "
+                    "taxes and owner distributions require separate cash planning."
+                ),
+                (
+                    "Cash conversion is the critical stress test because a small number of delayed "
+                    "closings can consume a substantial share of annual profit. In the Base illustration, "
+                    "one closing contributes $15,000 retained revenue. If three scheduled closings move "
+                    "into the following year, annual recognized revenue falls by $45,000 unless other "
+                    "closings replace them. Holding the modeled $369,750 cost base constant solely "
+                    "for this sensitivity leaves $95,250 profit on $465,000 revenue; this downside "
+                    "test does not replace the canonical Base case. Separately, if $4,000 of variable "
+                    "cost can actually be avoided for each delayed closing, the same timing event "
+                    "reduces profit by $33,000 instead. Document which costs truly move with completed "
+                    "transactions. Maintain a case-level ledger with appointment status, listing date, "
+                    "offer status, notice deadline, hearing date where relevant, anticipated retained "
+                    "fee, collection evidence, and paid acquisition cost. Measure acquisition cost "
+                    "against collected retained fees, not gross property value. After closing, reconcile "
+                    "rebates, corrected disbursements, contractual refunds, and genuine fee disputes; "
+                    "do not assume every later complaint creates an automatic clawback. Before closing, "
+                    "a canceled transaction is usually lost pipeline rather than reversed earned "
+                    "revenue. Keep those categories separate so marketing and operations learn from "
+                    "the correct failure."
+                ),
+            ],
+            "table": {
+                "caption": "Canonical Annual Economics and Illustrative Commission Bridges",
+                "headers": [
+                    "Scenario or control",
+                    "Underlying volume and commission bridge",
+                    "Recognized revenue and operating costs",
+                    "Owner result and staffing interpretation",
+                ],
+                "rows": [
+                    [
+                        "Conservative canonical annual case with twelve illustrative completed sides",
+                        "$6,000,000 property volume produces $150,000 commissions less $30,000 brokerage splits",
+                        "$120,000 retained revenue less $96,000 costs equals the canonical result",
+                        "$24,000 owner profit at 20%; two full-time people plus three contractors",
+                    ],
+                    [
+                        "Base canonical annual case with thirty-four illustrative completed sides",
+                        "$25,500,000 property volume produces $637,500 commissions less $127,500 brokerage splits",
+                        "$510,000 retained revenue less $369,750 costs equals the canonical result",
+                        "$140,250 owner profit at 27.5%; two full-time people plus three contractors",
+                    ],
+                    [
+                        "Scaled canonical annual case with forty-five illustrative completed sides",
+                        "$45,000,000 property volume produces $1,125,000 commissions less $225,000 brokerage splits",
+                        "$900,000 retained revenue less $585,000 costs equals the canonical result",
+                        "$315,000 owner profit at 35%; three full-time people plus four contractors",
+                    ],
+                    [
+                        "Cost-scope reconciliation required before using the monthly screening range",
+                        "Property volume does not fund operations until actual compensation becomes collectible",
+                        "Implied monthly costs are $8,000, $30,812.50, and $48,750 respectively",
+                        "The $3,000–$18,000 screening range cannot describe every scenario's complete cost base",
+                    ],
+                    [
+                        "Base timing sensitivity with three closings shifted into another year",
+                        "Three delayed sides remove $45,000 retained fees from the current period",
+                        "$465,000 revenue less unchanged $369,750 costs leaves $95,250 in this sensitivity",
+                        "This stress test changes timing assumptions rather than the canonical scorecard",
+                    ],
+                    [
+                        "Closing reconciliation separating earned compensation from money held for others",
+                        "Settlement statement, disbursement authorization, and brokerage remittance must agree exactly",
+                        "Earnest money, estate proceeds, and pass-through vendor funds remain separately classified",
+                        "Investigate actual refund obligations rather than assuming complaints automatically reverse commissions",
+                    ],
+                ],
+            },
+        },
+        {
+            "heading": "4. Build a Small-Team Moat From Verified Exceptions and Repeat Referrals",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "A durable moat is a repeatable reduction in the representative's coordination burden "
+                    "that competing brokers cannot reproduce by buying the same lead list. Build it "
+                    "around county-specific authority checklists, title relationships, vendor reliability, "
+                    "and concise reporting to estate counsel. Airtable can hold case identifiers, parcel "
+                    "numbers, authority evidence, and next actions; DocuSign can manage permitted signatures; "
+                    "a brokerage-approved transaction system can preserve the executed file. None of "
+                    "these tools determines legal authority. Assign one human owner to every exception "
+                    "and preserve the source document supporting its resolution. In the two-full-time-person "
+                    "configuration, one seat can own licensed client representation and negotiation while "
+                    "the other owns permitted coordination and records work. Contractor seats might "
+                    "support field access, transaction overflow, and research, subject to local licensing "
+                    "limits. Do not assign negotiation or regulated advice to an unlicensed researcher "
+                    "because a checklist makes the task look administrative. In the seven-person Scaled "
+                    "case, add capacity only after measuring active files, unresolved exceptions, response "
+                    "times, and coordinator hours per closing. Calendar density alone does not prove "
+                    "productive workload. A court continuation may generate five extra touches without "
+                    "adding any retained revenue, so staffing should follow measured service demand "
+                    "rather than headline property volume."
+                ),
+                (
+                    "Protect the referral flywheel by making each matter easier for professionals who "
+                    "will handle another estate next month. Offer counsel a supported price range, "
+                    "a preparation budget with authorized alternatives, and a dated dependency report. "
+                    "Ask representatives for communication preferences and distinguish authorized case "
+                    "updates from marketing outreach. Public availability of a phone number does not "
+                    "eliminate calling restrictions or create permission for automated campaigns. Screen "
+                    "outreach against applicable federal and state rules, including relevant requirements "
+                    "under the Telephone Consumer Protection Act, 47 U.S.C. section 227, and the "
+                    "Telemarketing Sales Rule where applicable. Use a suppression list and record "
+                    "opt-outs promptly. Never imply that the brokerage is the court, the estate's "
+                    "existing lawyer, or a government recovery office. Store only the personal "
+                    "information needed for the assignment, restrict contractor access, and avoid "
+                    "broadcasting heir disputes through shared vendor folders. Track referral quality "
+                    "by completed assignments and collected fees, not by how many contacts attended "
+                    "a lunch. Eight professional conversations producing two qualified matters and one "
+                    "eventual $15,000 retained closing can outperform hundreds of poorly targeted "
+                    "messages. If the channel stops converting, interview referral partners about "
+                    "service failures before increasing outreach volume or offering compensation for "
+                    "introductions."
+                ),
+                (
+                    "The principal failure modes are court delays, family disputes, and housing-market "
+                    "cycles, but each becomes manageable only when translated into an observable "
+                    "condition and a fallback. A delayed hearing requires a revised calendar and "
+                    "cash forecast. Conflicting beneficiary instructions require referral back to the "
+                    "authorized representative and counsel, not an informal vote run by the broker. "
+                    "A stale price requires fresh comparable sales and documented marketing feedback. "
+                    "A buyer's failed loan condition requires requalification or replacement demand, "
+                    "not counting the original offer as completed volume. Review the exception "
+                    "queue weekly and the economics monthly. Compare retained fees per closing, "
+                    "research cost per qualified matter, days between listing and cash collection, "
+                    "and actual contractor hours against assumptions. Keep court-caused waiting "
+                    "separate from preventable operator delay so the team fixes what it controls. "
+                    "Use the four-step procedure below on the next authorized assignment before "
+                    "buying more leads. The objective is not to maximize the number of names "
+                    "in a database; it is to create a defensible chain from public signal "
+                    "to authorized service to collected compensation. Scale only after that chain "
+                    "works repeatedly without concealing labor, relying on pressure against heirs, "
+                    "or confusing the estate's asset value with the operator's earnings."
+                ),
+            ],
+            "table": {
+                "caption": "Small-Team Moat Controls With Observable Failure Triggers",
+                "headers": [
+                    "Operating control",
+                    "Evidence the team preserves",
+                    "Failure trigger requiring intervention",
+                    "Owner action and operating fallback",
+                ],
+                "rows": [
+                    [
+                        "Authority freshness review before each material transaction commitment",
+                        "Current appointment evidence, applicable orders, and counsel's identified sale procedure",
+                        "New docket filing changes the representative or limits previously documented authority",
+                        "Coordinator alerts the licensed lead; signatures wait for clarified authority",
+                    ],
+                    [
+                        "Title exception ownership established before aggressive marketing deadlines",
+                        "Preliminary report, recorded documents, and written title-company resolution requirements",
+                        "An unresolved lien, ownership issue, or missing instrument blocks insurability",
+                        "Licensed lead coordinates title and counsel; closing expectations are reset promptly",
+                    ],
+                    [
+                        "Vendor spending discipline tied to specific estate authorization",
+                        "Written scope, approved amount, photographs, invoice, and confirmation of completed work",
+                        "Vendor requests extra work or disputed belongings enter the disposal scope",
+                        "Coordinator stops the affected task and obtains revised representative instructions",
+                    ],
+                    [
+                        "Court and notice calendar maintained separately from sales optimism",
+                        "Actual notice dates, objection deadlines, hearing settings, and documented continuances",
+                        "Required procedure cannot finish before the contract's current closing date",
+                        "Transaction owner seeks appropriate amendments and updates the collection forecast",
+                    ],
+                    [
+                        "Referral channel quality measured through completed authorized assignments",
+                        "Source attribution, substantive consultations, signed engagements, and collected retained fees",
+                        "Introductions increase while appointment quality or collected-fee conversion declines materially",
+                        "Licensed lead interviews partners and corrects service defects before expanding outreach",
+                    ],
+                    [
+                        "Revenue closeout reconciled to third-party disbursement evidence",
+                        "Executed closing records, commission instructions, brokerage split, and actual remittance",
+                        "Recorded revenue exceeds earned retained fees or includes estate-controlled money",
+                        "Bookkeeper corrects classification and escalates genuine contractual repayment exposure",
+                    ],
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Convert a public signal into a verified research record",
+                    "action": "Match the case, parcel, and apparent representative using permitted official sources.",
+                    "detail": "Record source URLs, retrieval dates, access restrictions, and unresolved identity conflicts; do not infer authority from a matching surname.",
+                },
+                {
+                    "step": 2,
+                    "title": "Establish the authorized assignment and actual sale route",
+                    "action": "Collect appointment evidence, obtain title requirements, and ask estate counsel to identify applicable procedures.",
+                    "detail": "Execute the appropriate brokerage agreement with the authorized party and document compensation, role conflicts, notices, and court dependencies.",
+                },
+                {
+                    "step": 3,
+                    "title": "Run preparation and marketing through an exception-owned checklist",
+                    "action": "Assign access, bids, property disclosures, marketing, offers, and required procedural milestones to named owners.",
+                    "detail": "Use authorized spending limits and dated evidence; escalate disputed instructions instead of letting a task automation decide substantive rights.",
+                },
+                {
+                    "step": 4,
+                    "title": "Close the property file and reconcile the retained-fee ledger",
+                    "action": "Match the completed transaction to the settlement statement, brokerage split, and collected remittance.",
+                    "detail": "Separate property volume from revenue, resolve actual disbursement discrepancies, measure labor and acquisition costs, and send the representative a concise completion report.",
+                },
+            ],
+        },
+    ],
+    "pull_quote": "The estate owns the property value; the operator earns the fee by making authority, title, and execution agree.",
+    "diagram_id": "diag-01",
+    "action_checklist": [
+        "Choose one county and document its probate-record access methods, independent-administration route, supervised-sale procedure, and title-company requirements.",
+        "Build a five-file authority sample with appointment evidence, parcel matches, current vesting, unresolved exceptions, and counsel-reviewed procedural assumptions.",
+        "Model retained commissions using the exact $120,000, $510,000, and $900,000 scenarios while keeping property volume and acquisition results separate.",
+        "Reconcile local staffing costs against implied annual expenses of $96,000, $369,750, and $585,000 before relying on the stated monthly screening range.",
+        "Create an attorney-facing reporting template, an authorized vendor-spend log, and a dated transaction checklist with one accountable owner per exception.",
+        "Pilot one permitted research cohort and measure verified matters, completed sides, collected retained fees, elapsed time, and direct research cost before increasing volume.",
+    ],
+    "statutory_citations": [
+        {
+            "title": "California Probate Code section 10538 — Independent-administration real property sales",
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PROB&sectionNum=10538.",
+            "relevance": "Identifies sale powers under full independent-administration authority; verify the representative's actual powers and applicable exceptions.",
+        },
+        {
+            "title": "California Probate Code section 10580 — Notice of proposed action",
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PROB&sectionNum=10580.",
+            "relevance": "Provides the starting framework for notices of proposed action; apply the related provisions and exceptions to the actual estate transaction.",
+        },
+        {
+            "title": "California Probate Code section 10308 — Supervised real property sale confirmation conditions",
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PROB&sectionNum=10308.",
+            "relevance": "Supports a separate supervised-sale checklist addressing statutory confirmation conditions rather than assuming ordinary listing procedures suffice.",
+        },
+        {
+            "title": "California Business and Professions Code section 10130 — Real estate license requirement",
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=10130.",
+            "relevance": "Requires appropriate licensing for covered brokerage activity and informs the division between licensed representation and administrative support.",
+        },
+        {
+            "title": "California Code of Civil Procedure section 874.311 — Partition definitions",
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=874.311.",
+            "relevance": "Defines terms relevant to covered partition proceedings; counsel must determine statutory coverage before evaluating fractional-interest remedies.",
+        },
+        {
+            "title": "California Code of Civil Procedure section 874.317 — Co-owner buyout procedure",
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=874.317.",
+            "relevance": "Establishes buyout procedures in covered partition actions, limiting simplistic assumptions about forcing a property sale.",
+        },
+        {
+            "title": "12 U.S.C. section 2607 — Settlement-service kickbacks and unearned fees",
+            "url": "https://www.law.cornell.edu/uscode/text/12/2607",
+            "relevance": "Restricts covered settlement-service referral payments and unearned fee splitting in transactions involving federally related mortgage loans.",
+        },
+        {
+            "title": "12 CFR section 1024.14 — Prohibition against kickbacks and unearned fees",
+            "url": "https://www.ecfr.gov/current/title-12/chapter-X/part-1024/section-1024.14",
+            "relevance": "Provides implementing rules relevant to attorney referral relationships, settlement-service arrangements, and payment for actual services.",
+        },
+        {
+            "title": "47 U.S.C. section 227 — Restrictions on telephone equipment and solicitations",
+            "url": "https://www.law.cornell.edu/uscode/text/47/227",
+            "relevance": "Requires outreach design to account for applicable calling, messaging, and automated-contact restrictions rather than treating public records as permission.",
+        },
+        {
+            "title": "16 CFR section 310.4 — Abusive telemarketing acts or practices",
+            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-C/part-310/section-310.4",
+            "relevance": "Addresses covered telemarketing practices, including do-not-call protections and calling restrictions relevant to prospecting operations.",
+        },
+    ],
+}

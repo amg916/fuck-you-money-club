@@ -1,0 +1,739 @@
+from __future__ import annotations
+
+CHAPTER_4 = {
+    "id": "Q4",
+    "chapter_id": "Q4",
+    "chapter_number": 4,
+    "question_number": 4,
+    "slug": "startup-capital-lean-infrastructure-pre-flight-stack",
+    "question_prompt": "How do you allocate startup capital ($15,000–$100,000 USD) and configure a lean, low-opex ($3,000–$18,000 USD/mo) production stack without wasting cash on bloated overhead?",
+    "kicker": "Q4 / THE BIG MONEY PLAYBOOKS",
+    "title": "Startup Capital, Lean Infrastructure & Pre-Flight Stack",
+    "subtitle": "Reserve-First Probate Brokerage: Segregated Banking, Court Authority, Twelve Lean Software Layers, and Closing-Based Cash Controls",
+    "layout_template": "comparison_table",
+    "reading_time_minutes": 14,
+    "executive_summary": (
+        "Candidate #9, Probate Real Estate, holds Rank #16 with a Money-to-Manpower "
+        "Score of 76/100. Across the volume's 11 mapped plays, capital discipline "
+        "starts with retained brokerage commissions, never property sale values. "
+        "This chapter separates operating reserves from estate funds, budgets "
+        "a twelve-layer production stack, and tests the supplied "
+        "identity_graph_pixel_arbitrage play against consent, attribution, and "
+        "cash economics. Keep at least half of startup capital liquid, because "
+        "first deals can take 4–18 months. The canonical annual owner profit "
+        "cases remain $24,000 Conservative, $140,250 Base, and $315,000 Scaled. "
+        "Use broker-approved transaction systems, documented representative "
+        "authority, and measured direct-mail cohorts before adding subscriptions "
+        "or employees. A functioning intake pipeline is valuable only when "
+        "the business can survive delayed court proceedings and failed closings."
+    ),
+    "key_metrics": [
+        {
+            "label": "Conservative",
+            "value": "$120,000",
+            "context": "Annual retained brokerage commissions after brokerage splits",
+            "note": "20% net margin; $24,000 annual owner net profit; 2 FT + 3 C",
+        },
+        {
+            "label": "Base",
+            "value": "$510,000",
+            "context": "Annual retained brokerage commissions after brokerage splits",
+            "note": "27.5% net margin; $140,250 annual owner net profit; 2 FT + 3 C",
+        },
+        {
+            "label": "Scaled",
+            "value": "$900,000",
+            "context": "Annual retained brokerage commissions after brokerage splits",
+            "note": "35% net margin; $315,000 annual owner net profit; 3 FT + 4 C",
+        },
+    ],
+    "sections": [
+        {
+            "heading": "1. Protect the Cash Runway Before Buying a Pipeline",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "Allocate startup capital around the time between spending money and "
+                    "receiving a cleared commission, not around an attractive annual revenue "
+                    "target. The three budgets below reserve $9,000 of $15,000, $32,000 of "
+                    "$50,000, and $65,000 of $100,000: respectively 60%, 64%, and 65%. "
+                    "These are unrestricted business reserves, separate from earnest money, "
+                    "estate proceeds, and acquisition deposits. Release the remaining capital "
+                    "against invoices for licensing, insurance, equipment, and measured launch "
+                    "work. A representative can sign a listing before title defects, creditor "
+                    "claims, occupancy problems, or family disputes become visible. That "
+                    "signature creates workload rather than spendable cash. At illustrative "
+                    "monthly fixed burns of $3,000, $9,000, and $18,000, the respective "
+                    "reserves cover only 3.00, 3.56, and 3.61 months. None fully covers even "
+                    "a four-month first-deal interval. Four months requires $12,000, $36,000, "
+                    "or $72,000 before closing-specific costs, leaving shortfalls of $3,000, "
+                    "$4,000, and $7,000. At eighteen months, the corresponding requirements "
+                    "reach $54,000, $162,000, and $324,000. Close those gaps with documented "
+                    "outside income, additional committed capital, or lower actual burn. "
+                    "Do not treat a hoped-for commission, unsigned credit line, or estate "
+                    "reimbursement request as an available reserve."
+                ),
+                (
+                    "Reconcile the operating plan to the scorecard before choosing headcount. "
+                    "Conservative revenue of $120,000 less $96,000 of total modeled expenses "
+                    "produces $24,000 owner profit. Base revenue of $510,000 less $369,750 "
+                    "produces $140,250; Scaled revenue of $900,000 less $585,000 produces "
+                    "$315,000. These are retained commissions after brokerage splits, not "
+                    "gross property consideration. One illustrative bridge is fifteen closings "
+                    "at $400,000, a negotiated 2.5% brokerage commission on the represented "
+                    "side, and an 80% retention rate: $8,000 retained per closing and "
+                    "$120,000 annually. Sixty closings at $425,000 under the same assumptions "
+                    "yield $8,500 each and $510,000 annually. Ninety closings at $500,000 "
+                    "yield $10,000 each and $900,000 annually. Commission rates and splits "
+                    "are negotiated assumptions, never prescribed market rates. Annual fixed "
+                    "overhead of $36,000, $108,000, or $216,000 leaves $60,000, $261,750, "
+                    "or $369,000 for all remaining modeled expenses. Assign every expense "
+                    "once, including payroll, contractors, acquisition marketing, travel, and "
+                    "transaction support. The canonical teams remain 2 FT + 3 C, 2 FT + "
+                    "3 C, and 3 FT + 4 C. Those staffing counts describe operating capacity; "
+                    "they do not establish that local wages fit the budget."
+                ),
+                (
+                    "Keep owner distributions subordinate to reserve coverage and signed "
+                    "obligations. If the owner fills one full-time role, identify whether "
+                    "their cash compensation is an expense or the residual profit; never "
+                    "silently count the same dollars twice. Obtain actual wage, payroll-tax, "
+                    "benefit, and contractor quotes before committing to the canonical "
+                    "staffing footprint. The Conservative case can become uneconomic when "
+                    "two full-time market salaries are required from launch. Stage hiring "
+                    "against files that genuinely need coordination, rather than buying "
+                    "capacity because a spreadsheet labels the business high leverage. "
+                    "Maintain a rolling thirteen-week cash schedule with opening unrestricted "
+                    "cash, contractual payments, probability-weighted collections, and a "
+                    "separate zero-closing stress case. A transaction coordinator can quote "
+                    "per-file work, but define payment triggers when a sale falls through. "
+                    "Estate cleanouts, locksmiths, utilities, and emergency repairs should "
+                    "normally be contracted and paid by the authorized estate representative. "
+                    "If the brokerage advances any amount, record written authority, a "
+                    "reimbursement ceiling, and the collection risk before disbursement. "
+                    "Principal acquisition requires its own capital model and account "
+                    "structure; a purchase deposit cannot also serve as brokerage payroll "
+                    "runway. Reforecast weekly when a hearing moves, an heir contests "
+                    "authority, or a buyer loses funding."
+                ),
+            ],
+            "table": {
+                "caption": "Reserve-First Startup Allocations Across Three Capital Envelopes",
+                "headers": [
+                    "Capital destination and release rule",
+                    "$15,000 lean launch allocation",
+                    "$50,000 measured launch allocation",
+                    "$100,000 expanded launch allocation",
+                ],
+                "rows": [
+                    [
+                        "Unrestricted working reserve protected from discretionary purchasing",
+                        "$9,000 reserved; supports three months at $3,000 fixed burn",
+                        "$32,000 reserved; supports 3.56 months at $9,000 fixed burn",
+                        "$65,000 reserved; supports 3.61 months at $18,000 fixed burn",
+                    ],
+                    [
+                        "Entity, licensing, and brokerage onboarding against actual invoices",
+                        "$1,500 allowance; prioritize required registration and broker onboarding",
+                        "$3,000 allowance; fund local licensing and documented entity setup",
+                        "$5,000 allowance; absorb broader licensing and broker onboarding costs",
+                    ],
+                    [
+                        "Insurance deposits after reviewing exclusions and required endorsements",
+                        "$750 allowance; obtain binding quotes before committing remaining cash",
+                        "$2,000 allowance; cover quoted brokerage and cyber policy deposits",
+                        "$4,000 allowance; fund quoted expanded limits and applicable endorsements",
+                    ],
+                    [
+                        "Managed devices, secure access, and tested recovery equipment",
+                        "$1,000 allowance; reuse suitable hardware after security configuration",
+                        "$2,500 allowance; equip two operators with controlled business devices",
+                        "$4,000 allowance; equip expanded staff without purchasing redundant hardware",
+                    ],
+                    [
+                        "Docket research and bounded direct-mail acquisition experiments",
+                        "$1,000 allowance; run small verified-address mailing cohorts first",
+                        "$4,000 allowance; stagger mail cohorts against measured response quality",
+                        "$10,000 allowance; expand only cohorts producing attributable retained commissions",
+                    ],
+                    [
+                        "Website and software setup with annual commitments separately tracked",
+                        "$750 allowance; deploy one landing page and essential subscriptions",
+                        "$1,500 allowance; configure intake routing and broker-approved document workflows",
+                        "$3,000 allowance; add tested integrations only after manual validation",
+                    ],
+                    [
+                        "Specialist process design and transaction workflow rehearsal",
+                        "$1,000 allowance; purchase targeted accounting and local procedure review",
+                        "$5,000 allowance; document representative authority and exception handling procedures",
+                        "$9,000 allowance; rehearse multi-county operations with qualified local specialists",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Fund the Delay, Not the Appearance of Scale",
+                "body": (
+                    "Probate operators preserve cash by buying verified information and "
+                    "bounded execution capacity before buying broad lead volume."
+                ),
+                "items": [
+                    "Order a preliminary title review before paying for photography on a disputed estate; unreleased liens can make the launch calendar fictional.",
+                    "Ask the broker which transaction platform, forms library, and electronic signatures are already included before purchasing duplicate subscriptions.",
+                    "Quote cleanout and occupancy work directly to the authorized representative; separate estate expenditures from brokerage customer-acquisition costs.",
+                    "Track court continuances as cash events: move expected commission receipts immediately while leaving committed payroll and insurance payments unchanged.",
+                ],
+            },
+        },
+        {
+            "heading": "2. Assemble Twelve Infrastructure Layers Without Twelve Paid Contracts",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Build the stack around a case identifier, a responsible operator, and "
+                    "one authoritative transaction record. A probate matter should carry "
+                    "the court case number, county, property parcel, representative contact, "
+                    "authority status, next required action, and source-document link. Keep "
+                    "sensitive attachments inside the broker-approved repository instead of "
+                    "replicating them through every marketing application. The matrix uses "
+                    "named public tiers as procurement planning references, not verified "
+                    "current offers. Confirm each checkout price, renewal term, seat minimum, "
+                    "usage cap, tax, and broker requirement before purchase. For two operators, "
+                    "the illustrated paid configuration is Google Workspace Business Starter "
+                    "at $14 monthly equivalent, Bitwarden Teams at $8, Backblaze Computer "
+                    "Backup at $18, and one Docusign Personal seat at $10. That totals "
+                    "$50 monthly equivalent, or $600 annually, excluding domain registration, "
+                    "hosting, court charges, postal spending, and transaction-system fees. "
+                    "Workspace, Bitwarden, and Docusign prices here assume annual billing; "
+                    "their combined illustrated annual commitment is $384. Cheap software "
+                    "does not make a $3,000 operating budget unrealistic or unnecessary: "
+                    "labor, licensing, insurance, transportation, and marketing dominate "
+                    "the cash requirement. Replace the signature tier when its envelope "
+                    "limit becomes restrictive, rather than quietly relying on unpaid workarounds."
+                ),
+                (
+                    "CourtListener is a useful free research layer, but probate is "
+                    "predominantly a state-court workflow and its coverage cannot be assumed. "
+                    "Use the county clerk's official docket and alert service as the "
+                    "authoritative source wherever available. Test coverage with twenty "
+                    "known matters across the target counties, record missed events, and "
+                    "assign a human review cadence where automated alerts are incomplete. "
+                    "An Airtable checklist can schedule follow-up, but it cannot establish "
+                    "that letters remain effective or interpret the legal consequence of "
+                    "a contested petition. Likewise, HubSpot can record relationship history "
+                    "without becoming the storage location for identification documents, "
+                    "death certificates, estate account statements, or unredacted court "
+                    "attachments. Separate public property facts from restricted client "
+                    "documents and grant contractors access only to assigned work. Establish "
+                    "an export routine before importing the first live contact. A free "
+                    "tier that cannot produce usable exports, assign appropriate access, "
+                    "or meet the broker's retention requirements is expensive operational "
+                    "debt. Test one closed-file export containing its signed agreement, "
+                    "communications, authority evidence, deadline history, and commission "
+                    "reconciliation. Searchability and recoverability matter more than "
+                    "the number of automations advertised on a pricing page."
+                ),
+                (
+                    "Procure software in stages rather than annually prepaying an imagined "
+                    "team. Start with a shared mailbox convention, a single intake form, "
+                    "manual docket verification, and a weekly exception report. Add automated "
+                    "notifications only after the manual workflow has a named owner and "
+                    "a written response deadline. Protect Workspace and the password vault "
+                    "with strong multifactor authentication; use separate administrator "
+                    "accounts and recovery methods stored outside the primary laptop. "
+                    "Backblaze protects supported endpoints, not every cloud application's "
+                    "records, so schedule separate exports and test restoration of the "
+                    "transaction repository. Prohibit payment-instruction changes solely "
+                    "through email. Call a previously verified number before acting on "
+                    "new escrow wiring details, even when the message appears inside a "
+                    "real transaction thread. Reconcile subscription charges monthly against "
+                    "an owner, a purpose, and an observable usage measure. Remove departed "
+                    "contractors promptly, transfer file ownership, and revoke active "
+                    "sessions where supported. Before purchasing an integration, calculate "
+                    "its actual value: saving two hours monthly at $40 per hour creates "
+                    "$80 of capacity, not permission to buy a $150 connector. Keep the "
+                    "manual procedure available for clerk outages, vendor failures, and "
+                    "expired payment cards. Reliability comes from tested recovery, not "
+                    "a longer list of applications."
+                ),
+            ],
+            "table": {
+                "caption": "Twelve-Layer Procurement Matrix: Reference Tiers, Roles, and Lean Substitutes",
+                "headers": [
+                    "Infrastructure layer and named vendor",
+                    "Exact reference tier and pricing basis",
+                    "Probate operating role and purchase condition",
+                    "Cheaper operating alternative or bounded fallback",
+                ],
+                "rows": [
+                    [
+                        "01 — Business identity and correspondence through Google Workspace",
+                        "Business Starter: $7 per user monthly equivalent, annual commitment",
+                        "Use controlled business email and restricted client-document folders",
+                        "Use existing broker-managed accounts when separation and exports suffice",
+                    ],
+                    [
+                        "02 — Domain protection and routing through Cloudflare",
+                        "Free plan: $0 recurring platform charge; domain registration separate",
+                        "Manage DNS and basic website protection without identity enrichment",
+                        "Use registrar DNS when existing hosting already supplies protection",
+                    ],
+                    [
+                        "03 — Public intake website through self-hosted WordPress.org",
+                        "Open-source software: $0 license charge; hosting and domain separate",
+                        "Publish service scope and a minimal voluntary inquiry form",
+                        "Use the broker's existing profile page and approved intake form",
+                    ],
+                    [
+                        "04 — Relationship tracking through HubSpot free CRM",
+                        "Free Tools tier: $0 subscription within applicable account limits",
+                        "Record attorney relationships, inquiry permission, and next follow-up dates",
+                        "Use a restricted spreadsheet until permissions or capacity require migration",
+                    ],
+                    [
+                        "05 — Case checklist coordination through Airtable",
+                        "Free plan: $0 subscription within applicable record and automation limits",
+                        "Track authority checks, court milestones, and responsible task owners",
+                        "Use broker-approved spreadsheet checklists with scheduled human review",
+                    ],
+                    [
+                        "06 — Supplemental docket research through CourtListener",
+                        "Free website access: $0; paid services and court charges separate",
+                        "Research available records while verifying state probate coverage independently",
+                        "Use official county clerk searches and manual calendar checks",
+                    ],
+                    [
+                        "07 — Appointment scheduling through Calendly",
+                        "Free tier: $0 subscription with limited scheduling functionality",
+                        "Offer one controlled intake meeting type without collecting sensitive documents",
+                        "Schedule directly through existing email and shared calendar tools",
+                    ],
+                    [
+                        "08 — Electronic signatures through Docusign",
+                        "Personal: $10 monthly equivalent billed annually; five envelopes monthly",
+                        "Use only when broker-approved forms and envelope volume fit",
+                        "Use included brokerage signatures before buying a separate seat",
+                    ],
+                    [
+                        "09 — Operating bookkeeping through Wave",
+                        "Starter: $0 subscription; payment processing and optional services separate",
+                        "Classify retained commissions and operating expenses without mixing trust funds",
+                        "Use accountant-controlled ledgers when brokerage accounting already covers operations",
+                    ],
+                    [
+                        "10 — Shared credential management through Bitwarden",
+                        "Teams: $4 per user monthly equivalent with annual billing",
+                        "Assign controlled shared credentials and remove access after contractor departure",
+                        "Use an existing broker-managed vault with equivalent access controls",
+                    ],
+                    [
+                        "11 — Endpoint recovery through Backblaze",
+                        "Computer Backup: $9 per computer monthly on monthly billing",
+                        "Recover supported workstation files while separately protecting cloud records",
+                        "Use encrypted offline backups with documented rotation and restore tests",
+                    ],
+                    [
+                        "12 — Aggregate website measurement through Google Analytics",
+                        "Analytics Standard: $0 subscription; implementation and specialist labor separate",
+                        "Measure permitted aggregate conversion events without sending personal identifiers",
+                        "Use coarse server-side counts and manually attributed inquiry records",
+                    ],
+                ],
+            },
+        },
+        {
+            "heading": "3. Separate Brokerage Authority, Estate Money, and Acquisition Economics",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Create the entity and bank structure around the licensed activity "
+                    "actually being performed. An LLC registration and an EIN do not "
+                    "authorize real estate brokerage; confirm the individual license, "
+                    "supervising broker relationship, business-name permissions, and any "
+                    "required entity license in the operating jurisdiction. California "
+                    "Business and Professions Code section 10130, for example, prohibits "
+                    "acting as a real estate broker or salesperson without the required "
+                    "license. Maintain a business operating account and a separately "
+                    "identified reserve account. Client money belongs in the permitted "
+                    "escrow or trust arrangement, never in the working-capital pool. "
+                    "California section 10145 and title 10, section 2831 of the California "
+                    "Code of Regulations provide concrete handling and recordkeeping rules "
+                    "for broker trust funds. Assign bookkeeping responsibility, reconciliation "
+                    "frequency, and escalation ownership before receiving any deposit. "
+                    "If the brokerage never holds trust money, document the escrow routing "
+                    "and prohibit staff from accepting checks outside that process. Obtain "
+                    "errors-and-omissions, general liability, cyber, and employment-related "
+                    "coverage appropriate to actual exposures. Review exclusions for "
+                    "principal-owned properties, property management, referral arrangements, "
+                    "and wire fraud. A certificate of insurance establishes evidence "
+                    "of coverage; it does not resolve exclusions or replace policy review."
+                ),
+                (
+                    "Verify the representative's present authority instead of treating an "
+                    "obituary, will, or family introduction as permission to sell. Obtain "
+                    "current letters, relevant orders, ownership records, and the listing "
+                    "signer's identity through approved channels. In California, Probate "
+                    "Code section 10501 distinguishes transactions requiring court supervision "
+                    "under limited authority, including real-property sales. Section 10580 "
+                    "addresses notice of proposed action, subject to statutory exceptions. "
+                    "When court confirmation applies, section 10309 addresses the relationship "
+                    "between sale price and appraised value, while section 10311 supplies "
+                    "the initial increased-bid rule. These are jurisdiction-specific workflow "
+                    "inputs, not rules to copy into every state's checklist. Ask the "
+                    "estate's attorney to identify the controlling procedure and deadlines "
+                    "for the actual matter. Record whether occupants, co-owners, surviving "
+                    "spouses, liens, or litigation create additional constraints. Attorney "
+                    "relationships should develop through useful case execution rather than "
+                    "unreviewed payments for referrals. Where a transaction involves a "
+                    "federally related mortgage loan, 12 U.S.C. 2607 restricts settlement-service "
+                    "referral fees and unearned fee splits. A marketing invoice does not "
+                    "automatically convert a referral payment into a permissible service "
+                    "expense. Require a defined service, evidence of performance, and "
+                    "review of both federal and applicable state restrictions."
+                ),
+                (
+                    "Underwrite executor concierge work as a distinct service with explicit "
+                    "scope, pricing, and authorization. Coordinating a locksmith, arranging "
+                    "photographs, or obtaining cleanout estimates does not authorize staff "
+                    "to dispose of personal property, negotiate estate debts, or decide "
+                    "which beneficiary receives an asset. Use written work orders identifying "
+                    "who selects the vendor, who contracts, who pays, and who can approve "
+                    "changes. A $600 coordination fee against six hours of work at $45 "
+                    "per hour and $80 of direct costs leaves $250 before overhead. "
+                    "That example explains unit economics; it does not add concierge "
+                    "revenue to the canonical retained-commission scorecard. Treat property "
+                    "acquisitions similarly. A $300,000 purchase and $40,000 rehabilitation "
+                    "budget represent principal deployment and project costs, not brokerage "
+                    "revenue. If the operator becomes a buyer, disclose the capacity "
+                    "change and follow applicable fiduciary, brokerage, and court requirements. "
+                    "Keep acquisition underwriting, deposits, and carrying costs outside "
+                    "the brokerage reserve ledger. Do not use an estate relationship "
+                    "to obtain undisclosed advantages over represented parties. When "
+                    "authority or incentives become disputed, suspend the affected action, "
+                    "preserve the chronology, and route the issue to the supervising "
+                    "broker and estate counsel before spending more cash."
+                ),
+            ],
+            "table": {
+                "caption": "Authority, Banking, and Insurance Evidence Required Before Live Transactions",
+                "headers": [
+                    "Operating exposure requiring explicit ownership",
+                    "Evidence retained in the controlled case record",
+                    "Concrete verification and accounting procedure",
+                    "Failure response protecting clients and reserves",
+                ],
+                "rows": [
+                    [
+                        "Licensed brokerage activity and permitted business identity",
+                        "Current license evidence, broker agreement, and applicable entity permissions",
+                        "Confirm jurisdiction and license status before accepting representation duties",
+                        "Route activity through authorized supervision or postpone the engagement",
+                    ],
+                    [
+                        "Representative authority and transaction-specific court procedure",
+                        "Current letters, relevant orders, and attorney-confirmed sale procedure",
+                        "Record authority scope and identify notices or confirmation requirements",
+                        "Suspend affected transaction steps until authority evidence is resolved",
+                    ],
+                    [
+                        "Estate deposits and client funds entering transaction workflows",
+                        "Escrow instructions, trust procedures, and designated reconciliation ownership",
+                        "Trace every receipt to its authorized destination and ledger",
+                        "Reject operating-account deposits and escalate routing discrepancies immediately",
+                    ],
+                    [
+                        "Insurance responding to the actual operating activities",
+                        "Bound policies, exclusions, endorsements, and deductible funding provisions",
+                        "Compare brokerage, concierge, acquisition, and cyber exposures against coverage",
+                        "Remove uncovered activity or obtain suitable coverage before execution",
+                    ],
+                    [
+                        "Attorney relationships and paid settlement-service introductions",
+                        "Written service scope, delivered work, and referral-arrangement review",
+                        "Evaluate federal mortgage nexus and applicable state restrictions first",
+                        "Stop payments tied to prohibited referral or unearned-fee arrangements",
+                    ],
+                    [
+                        "Principal acquisitions competing with brokerage reserve requirements",
+                        "Separate acquisition underwriting, funding commitments, and capacity disclosures",
+                        "Exclude purchase principal and project receipts from commission revenue",
+                        "Decline acquisition commitments that consume protected brokerage operating reserves",
+                    ],
+                ],
+            },
+        },
+        {
+            "heading": "4. Test Acquisition Claims and Rehearse the Entire Closing Path",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Treat identity_graph_pixel_arbitrage as a procurement claim requiring "
+                    "rejection or redesign, not as a ready-made probate acquisition engine. "
+                    "The proposed 35–55% anonymous-visitor identification rate is unverified; "
+                    "neither a first-party CNAME nor a hashed identifier establishes "
+                    "permission to identify people or reuse their information. Do not "
+                    "implement covert matching of anonymous visitors to names, personal "
+                    "emails, profiles, or residential addresses. Probate-related browsing "
+                    "can expose highly sensitive family circumstances. Substitute explicit "
+                    "inquiry forms, permissioned relationship records, contextual advertising, "
+                    "and properly reviewed public-record mailing workflows. For a purely "
+                    "illustrative 1,000-visit cohort, a vendor's claimed match rate would "
+                    "produce 350–550 claimed matches, not 350–550 qualified sellers. A "
+                    "permission-based funnel with a 4% inquiry rate creates forty inquiries; "
+                    "a 25% qualification rate produces ten appointments; a 20% listing "
+                    "conversion produces two listings; and a 50% eventual closing rate "
+                    "produces one closing. At the Base illustration's $8,500 retained "
+                    "commission, that is $8,500 before acquisition spending and delivery "
+                    "costs, potentially many months after the initial visit. Require "
+                    "observed cohort evidence before substituting any of these assumptions "
+                    "into a hiring decision or reserve forecast."
+                ),
+                (
+                    "Evaluate the fallback channels with the same discipline. Do not "
+                    "cold-email unconsented consumer Gmail addresses from the primary "
+                    "business domain, and do not evade that restriction through disposable "
+                    "domains. Physical mail is outside CAN-SPAM's commercial-email framework, "
+                    "but that does not exempt it from deceptive-advertising rules or "
+                    "applicable state privacy requirements. A SHA-256 audience identifier "
+                    "also remains linkable information; upload audiences only when the "
+                    "collection, permission, platform terms, and applicable rules support "
+                    "that use. United States edge filtering can reduce irrelevant traffic "
+                    "but does not establish residence, erase state obligations, or supply "
+                    "permission. Test a reviewed mailing cohort independently: 500 letters "
+                    "at an assumed $1.25 fully loaded cost require $625. At a 2% response "
+                    "rate, ten responses cost $62.50 each; two appointments cost $312.50 "
+                    "each. If one listing ultimately closes, the postage-and-production "
+                    "cost per closing is $625, excluding research, labor, follow-up, "
+                    "and failed cohorts. Validate representative addresses rather than "
+                    "automatically mailing the decedent's vacant property. Suppress objections "
+                    "and duplicate households, identify the brokerage plainly, and never "
+                    "imitate a court notice. If no closing occurs, record the full "
+                    "cohort loss instead of assigning value to speculative pipeline."
+                ),
+                (
+                    "Before launch, run one synthetic matter from first inquiry through "
+                    "commission reconciliation, using invented test records rather than "
+                    "a real family's documents. Confirm intake permissions, case assignment, "
+                    "authority review, listing preparation, court milestones, escrow routing, "
+                    "and archive export. Then inject four failures: an expired representative "
+                    "appointment, a hearing continued sixty days, changed wire instructions, "
+                    "and a contractor account that must be removed immediately. Every "
+                    "failure needs a named decision owner, an observable stop condition, "
+                    "and a documented recovery path. Recompute cash after the sixty-day "
+                    "delay; at $9,000 monthly fixed burn, the added requirement is $18,000 "
+                    "before transaction-specific spending. That single event consumes more "
+                    "than half the Base launch's $32,000 reserve. Keep launch spending "
+                    "bounded until the team demonstrates that records survive an outage, "
+                    "client money never enters operating accounts, and a listing cannot "
+                    "advance without documented authority. Review actual versus planned "
+                    "spending weekly for the first ninety days. Expand a county, mailing "
+                    "cohort, or contractor assignment only when the existing workflow "
+                    "has measured capacity and funded downside. The practical production "
+                    "stack is the combination of people, records, cash, and verified "
+                    "handoffs; subscription count is merely a purchasing detail."
+                ),
+            ],
+            "table": {
+                "caption": "Pre-Launch Acceptance Tests and Measurable Cash Consequences",
+                "headers": [
+                    "Test event and accountable operating owner",
+                    "Evidence required for a passing result",
+                    "Unit economics or objective acceptance threshold",
+                    "Fallback when the test exposes weakness",
+                ],
+                "rows": [
+                    [
+                        "Owner tests four-month runway before releasing launch spending",
+                        "Cash schedule excludes estate funds and unsigned credit commitments",
+                        "Fund shortfalls of $3,000, $4,000, or $7,000 respectively",
+                        "Lower fixed burn or secure additional committed outside capital",
+                    ],
+                    [
+                        "Coordinator verifies twenty known matters against official dockets",
+                        "Coverage log records each missed event and correction owner",
+                        "Every missed event receives a documented manual review cadence",
+                        "Use clerk searches until automated coverage demonstrates adequate reliability",
+                    ],
+                    [
+                        "Marketing owner measures permission-based inquiry conversion by cohort",
+                        "Source records connect visits, appointments, listings, and cleared commissions",
+                        "Illustrative thousand-visit funnel produces one closing under stated assumptions",
+                        "Reduce acquisition spending when observed appointments cannot support costs",
+                    ],
+                    [
+                        "Mail owner audits a five-hundred-letter public-record campaign",
+                        "Address verification, suppression records, and actual production invoices retained",
+                        "$625 illustrative campaign cost precedes research and staff expenses",
+                        "Stop weak cohorts and revise addressing before buying volume",
+                    ],
+                    [
+                        "Transaction owner rehearses sixty-day court postponement and wire change",
+                        "Revised cash forecast and independently verified payment instructions documented",
+                        "Base fixed burn requires another $18,000 across two months",
+                        "Freeze discretionary expansion and reject unverified payment-routing changes",
+                    ],
+                    [
+                        "System owner restores records and removes contractor access",
+                        "Usable file export and access-removal evidence pass independent review",
+                        "All critical documents remain accessible to authorized replacement staff",
+                        "Repair recovery procedures before admitting additional live client matters",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Four Pre-Flight Checks Before Accepting Live Volume",
+                "body": (
+                    "Launch only the activities supported by verified authority, funded "
+                    "downside, controlled records, and a reproducible transaction process."
+                ),
+                "items": [
+                    "Verify unrestricted reserves remain at least 50% of initial capital and separately fund the modeled first-deal cash shortfall.",
+                    "Verify licenses, broker supervision, insurance, account separation, and local representative-authority procedures against actual documents.",
+                    "Verify lead-source permissions and mailing provenance; exclude covert identity matching and unsupported personal-data audience uploads.",
+                    "Verify the synthetic case passes docket failure, court delay, payment-change verification, record restoration, and contractor offboarding tests.",
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Lock the capital envelope",
+                    "action": "Transfer the protected reserve and document permitted launch expenditures.",
+                    "detail": (
+                        "Assign each invoice to the seven-row budget, forecast zero closings "
+                        "through the first-deal stress horizon, and identify committed gap funding."
+                    ),
+                },
+                {
+                    "step": 2,
+                    "title": "Configure the minimum production record",
+                    "action": "Create one case identifier, restricted repository, and named task owner.",
+                    "detail": (
+                        "Record the clerk source, authority evidence, next deadline, document "
+                        "location, contact permissions, and export procedure before adding integrations."
+                    ),
+                },
+                {
+                    "step": 3,
+                    "title": "Run bounded acquisition experiments",
+                    "action": "Launch a small permission-based inquiry test or reviewed mailing cohort.",
+                    "detail": (
+                        "Capture actual spending and conversion dates; measure retained commission "
+                        "receipts separately from responses, appointments, listings, and property values."
+                    ),
+                },
+                {
+                    "step": 4,
+                    "title": "Rehearse exceptions and authorize capacity",
+                    "action": "Complete the synthetic transaction and resolve every failed control.",
+                    "detail": (
+                        "Reforecast a sixty-day delay, verify payment instructions independently, "
+                        "restore the archive, remove test contractor access, and release only funded capacity."
+                    ),
+                },
+            ],
+        },
+    ],
+    "pull_quote": (
+        "A probate pipeline becomes a business only when its cash survives the court calendar."
+    ),
+    "diagram_id": "diag-07",
+    "action_checklist": [
+        "Allocate $9,000, $32,000, or $65,000 to protected operating reserves and document additional funding required by the first-deal timeline.",
+        "Reconcile retained commissions to $120,000, $510,000, and $900,000 of annual revenue without counting property values or acquisition principal.",
+        "Confirm current vendor prices and broker-provided tools before purchasing the twelve-layer stack; record annual prepayments separately from monthly expense equivalents.",
+        "Establish licensed supervision, segregated banking, applicable insurance, and an attorney-confirmed representative-authority checklist for each operating jurisdiction.",
+        "Replace anonymous-person identification with permission-based inquiries and reviewed public-record mail; calculate acquisition cost through cleared commissions.",
+        "Pass the synthetic transaction, sixty-day delay, payment-change verification, archive restoration, and contractor offboarding tests before expanding live volume.",
+    ],
+    "statutory_citations": [
+        {
+            "title": "California Business and Professions Code § 10130 — Real Estate Licensing",
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=10130.",
+            "relevance": (
+                "Requires the appropriate license for covered brokerage activity; entity "
+                "formation alone does not authorize representation."
+            ),
+        },
+        {
+            "title": "California Business and Professions Code § 10145 — Broker Trust Funds",
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=10145.",
+            "relevance": (
+                "Governs handling of funds received for others and supports separating "
+                "client money from operating reserves."
+            ),
+        },
+        {
+            "title": "10 CCR § 2831 — Trust Fund Records",
+            "url": "https://www.law.cornell.edu/regulations/california/10-CCR-2831",
+            "relevance": (
+                "Specifies broker trust-fund recordkeeping requirements used to design "
+                "receipt tracking and reconciliation responsibilities."
+            ),
+        },
+        {
+            "title": "California Probate Code § 10501 — Limited Independent Administration Authority",
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PROB&sectionNum=10501.",
+            "relevance": (
+                "Identifies actions requiring court supervision under limited authority, "
+                "including real-property sales."
+            ),
+        },
+        {
+            "title": "California Probate Code § 10580 — Notice of Proposed Action",
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PROB&sectionNum=10580.",
+            "relevance": (
+                "Establishes the notice framework for proposed actions, subject to "
+                "statutory exceptions, affecting transaction sequencing."
+            ),
+        },
+        {
+            "title": "California Probate Code § 10309 — Appraisal and Sale-Price Conditions",
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PROB&sectionNum=10309.",
+            "relevance": (
+                "Provides appraisal and sale-price conditions relevant to applicable "
+                "court-confirmed real-property sales."
+            ),
+        },
+        {
+            "title": "California Probate Code § 10311 — Increased Bids at Confirmation",
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PROB&sectionNum=10311.",
+            "relevance": (
+                "Sets the initial increased-bid framework that can affect buyer "
+                "expectations and confirmation-stage closing risk."
+            ),
+        },
+        {
+            "title": "12 U.S.C. § 2607 — Settlement-Service Referral Fees and Fee Splits",
+            "url": "https://www.law.cornell.edu/uscode/text/12/2607",
+            "relevance": (
+                "Restricts covered referral fees and unearned fee splits in transactions "
+                "involving federally related mortgage loans."
+            ),
+        },
+        {
+            "title": "15 U.S.C. § 7704 — Commercial Electronic Mail Requirements",
+            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
+            "relevance": (
+                "Governs covered commercial email; physical mail sits outside this "
+                "email statute but remains subject to other applicable rules."
+            ),
+        },
+        {
+            "title": "15 U.S.C. § 45 — Unfair or Deceptive Acts or Practices",
+            "url": "https://www.law.cornell.edu/uscode/text/15/45",
+            "relevance": (
+                "Supports truthful marketing claims, accurate data-use representations, "
+                "and avoidance of misleading court-like solicitations."
+            ),
+        },
+        {
+            "title": "California Civil Code § 1798.100 — Personal Information Collection Duties",
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1798.100.",
+            "relevance": (
+                "For covered businesses, establishes collection-related duties relevant "
+                "to intake notices, purpose limits, and personal-information handling."
+            ),
+        },
+    ],
+}

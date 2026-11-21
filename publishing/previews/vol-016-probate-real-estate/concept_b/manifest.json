@@ -1,0 +1,65 @@
+{
+  "concept_id": "concept_b",
+  "volume_id": "vol-016-probate-real-estate",
+  "approved": true,
+  "edition_status": "approved_master",
+  "preview_only": true,
+  "files": {
+    "digital_pdf.pdf": {
+      "bytes": 1978458,
+      "sha256": "1f9c89af65b5bfe764c543a90202401a45baeaaa119c955aaaad941a0a7e6140"
+    },
+    "print_6x9_pdf.pdf": {
+      "bytes": 2600181,
+      "sha256": "f3d12853afcf3afc922429aaec296f64d3ba3d7e653782d24270fbb5dbaae7e7"
+    },
+    "workbook_pdf.pdf": {
+      "bytes": 539136,
+      "sha256": "77ceb6fc2f44ebded07024c241373f8548677043c66442d6f391cd7b5ba7bae6"
+    },
+    "book.epub": {
+      "bytes": 258133,
+      "sha256": "93196905395ed5a2df2b2b1157ca4f1b836152ef4b303e67ea726a1be9e21180"
+    },
+    "art/cover.svg": {
+      "bytes": 3650,
+      "sha256": "2d27fc08a4d0a6a105ff760445552b557d6d6146615453aa90d8389a6dd713bf"
+    },
+    "art/scorecard.svg": {
+      "bytes": 71450,
+      "sha256": "f5c0640fb8088a886ec3956b9ddbe213dfa7ef3832318402e9fdd74915f42163"
+    },
+    "art/diag_01.svg": {
+      "bytes": 10797,
+      "sha256": "a6ffb6e31bc57b46559f3054d4cc2f093328d6eaed502945b9579f7eaa881a85"
+    },
+    "art/diag_02.svg": {
+      "bytes": 7847,
+      "sha256": "ddd7bd71237d9d8239ab0c0a4d7061ed6ef9c44425278618a42f38d5caf6c405"
+    },
+    "art/diag_03.svg": {
+      "bytes": 11353,
+      "sha256": "975c6eb2409249516bd7a6b36e2600d949648916e110b482a47e0d9827ea5073"
+    },
+    "art/diag_04.svg": {
+      "bytes": 9323,
+      "sha256": "5f76a38aa2569b38636eb713f21b9aefffe623c9e30d37aad807a73395276b40"
+    },
+    "art/diag_05.svg": {
+      "bytes": 9839,
+      "sha256": "2b1f4653bb6b9ebfe9067f0949ccb275c13fc24c14eb31bf814f9f55b8ebc4f6"
+    },
+    "art/diag_06.svg": {
+      "bytes": 13348,
+      "sha256": "7adfc1f1d4ddb65b4b14447ed43227daa8f7091ae8202e4c2b8513350a4189db"
+    },
+    "art/diag_07.svg": {
+      "bytes": 8708,
+      "sha256": "3786decf81b265f0aef35d553eccf8065044ba99204f7a0a2d3ce79df641c0b0"
+    },
+    "art/diag_08.svg": {
+      "bytes": 8930,
+      "sha256": "1a2f98eead61a851b31027e15a126e6b9b8b07f55bd6760880402a07615e4c67"
+    }
+  }
+}

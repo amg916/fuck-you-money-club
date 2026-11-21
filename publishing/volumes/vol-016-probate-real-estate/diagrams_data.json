@@ -1,0 +1,340 @@
+{
+  "diagrams": [
+    {
+      "diagram_id": "diag-01-authority-to-retained-commission",
+      "chart_type": "process_flow",
+      "title": "From Probate Signal to Collected Commission",
+      "subtitle": "Five operating stages separate estate authority from brokerage execution.",
+      "chapter_number": 1,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Use the property's jurisdiction, current court orders, and actual appointment documents. California statutes illustrate routing rules, not uniform national procedure. Initial deal timing is 4–18 months.",
+      "caption": "Docket alerts identify possible work; verified authority permits the appropriate next step. Recognized operator revenue is retained brokerage commission after brokerage splits, never property sale value.",
+      "stages": [
+        {
+          "label": "Detect and qualify",
+          "value": "Create one deduplicated estate opportunity record",
+          "numeric_value": 1.0,
+          "detail": "Use permitted court docket alerts and county property records to connect the estate, parcel, representative, and counsel. Record source dates; a filing alone does not establish sale intent."
+        },
+        {
+          "label": "Verify authority",
+          "value": "Document who can authorize each transaction action",
+          "numeric_value": 2.0,
+          "detail": "Obtain appointment documents, current orders, and counsel's sale-path assessment. California Probate Code section 10501 requires different treatment for full and limited authority."
+        },
+        {
+          "label": "Engage and prepare",
+          "value": "Execute brokerage scope and property preparation plan",
+          "numeric_value": 3.0,
+          "detail": "Confirm licensing, agency relationships, occupancy, insurance, access, and vendor budgets. Executor concierge work coordinates property tasks without replacing the representative or estate counsel."
+        },
+        {
+          "label": "Market and transact",
+          "value": "Track offers alongside notices and court dependencies",
+          "numeric_value": 4.0,
+          "detail": "Use transaction checklists for disclosures, title exceptions, notice delivery, objections, and required confirmation. Avoid promising possession before occupancy and closing conditions resolve."
+        },
+        {
+          "label": "Close and reconcile",
+          "value": "Match closing evidence to retained brokerage revenue",
+          "numeric_value": 5.0,
+          "detail": "Reconcile the closing statement, brokerage split, collection, and transaction expenses. Exclude escrow principal, estate proceeds, vendor reimbursements, and acquisition resale proceeds from this brokerage scorecard."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-02-mature-cohort-conversion",
+      "chart_type": "funnel",
+      "title": "A Mature Cohort Producing 30 Closings",
+      "subtitle": "Nested estate-opportunity counts connect origination to the Base Case.",
+      "chapter_number": 6,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Illustrative mature cohort, not observed conversion data or a first-year forecast. One record represents one estate-property opportunity. The 30 eventual closings are assumed to fall within the modeled revenue year after a sufficient pipeline-development period.",
+      "caption": "1,000 opportunities yield 30 closings: 3.0% end-to-end conversion. Thirty closings at $17,000 average retained commission produce $510,000 Base-Case annual gross operator revenue.",
+      "stages": [
+        {
+          "label": "Recorded opportunities",
+          "value": "1,000 distinct estate-property opportunities enter the cohort",
+          "numeric_value": 1000.0,
+          "detail": "Deduplicate docket and parcel records before counting. Exclude repeated filings, duplicate representatives, and unrelated properties from the same opportunity record."
+        },
+        {
+          "label": "Qualified opportunities",
+          "value": "400 opportunities satisfy documented service-fit criteria",
+          "numeric_value": 400.0,
+          "detail": "Retain 40% of the starting cohort after checking geography, real property ownership, a plausible sale need, and an identifiable representative or estate attorney."
+        },
+        {
+          "label": "Substantive conversations",
+          "value": "120 qualified opportunities produce representative conversations",
+          "numeric_value": 120.0,
+          "detail": "Convert 30% of qualified opportunities into two-way discussions with the representative or authorized counsel. Count completed conversations, not unanswered calls or automated messages."
+        },
+        {
+          "label": "Executed listings",
+          "value": "60 conversations convert into signed brokerage engagements",
+          "numeric_value": 60.0,
+          "detail": "Convert 50% of engaged opportunities after authority review, scope agreement, and property assessment. Signed listings remain exposed to disputes, withdrawals, and delayed court dates."
+        },
+        {
+          "label": "Closed transactions",
+          "value": "30 listings close within the modeled revenue year",
+          "numeric_value": 30.0,
+          "detail": "Close 50% of signed listings during the modeled period. The remaining listings may carry forward or terminate; record neither as collected commission."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-03-base-case-profit-bridge",
+      "chart_type": "waterfall",
+      "title": "The $510,000 to $140,250 Profit Bridge",
+      "subtitle": "Four illustrative expense buckets reconcile to a 27.5% net margin.",
+      "chapter_number": 3,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "USD per year. First and last bars are absolute totals; middle bars are signed expense movements. Cost allocations are illustrative, while revenue, margin, and owner net profit are canonical. Do not subtract brokerage splits again from retained revenue.",
+      "caption": "$510,000 − $180,000 − $90,000 − $60,000 − $39,750 = $140,250; $140,250 / $510,000 = 27.5%. Conservative: $120,000 revenue and $24,000 profit at 20%. Scaled: $900,000 revenue and $315,000 profit at 35%.",
+      "stages": [
+        {
+          "label": "Retained gross revenue",
+          "value": "$510,000 annual commissions after brokerage splits",
+          "numeric_value": 510000.0,
+          "detail": "Opening absolute total. Model 30 completed brokerage transactions averaging $17,000 retained commission; underlying home prices and estate distributions are excluded."
+        },
+        {
+          "label": "Full-time personnel",
+          "value": "Subtract $180,000 for two full-time operating seats",
+          "numeric_value": -180000.0,
+          "detail": "Illustrative loaded compensation for the broker lead and operations lead. Any owner compensation included here is an expense distinct from the residual owner net profit."
+        },
+        {
+          "label": "Contractor delivery",
+          "value": "Subtract $90,000 for three contracted delivery seats",
+          "numeric_value": -90000.0,
+          "detail": "Budget field brokerage support, transaction coordination, and vendor coordination. Include only operator-paid costs not already removed in calculating retained commissions."
+        },
+        {
+          "label": "Origination and marketing",
+          "value": "Subtract $60,000 for attributable pipeline development",
+          "numeric_value": -60000.0,
+          "detail": "Allocate docket access, relationship development, property marketing, and targeted outreach. Measure spend against collected commissions rather than unsigned pipeline estimates."
+        },
+        {
+          "label": "Operating overhead",
+          "value": "Subtract $39,750 for remaining operating expenses",
+          "numeric_value": -39750.0,
+          "detail": "Illustrative insurance, software, accounting, licensing, travel, and administrative expense allocation. Estate-funded repairs paid directly to vendors are outside operator revenue."
+        },
+        {
+          "label": "Annual owner net profit",
+          "value": "$140,250 residual profit at 27.5% net margin",
+          "numeric_value": 140250.0,
+          "detail": "Closing absolute total, not another additive movement. Total modeled expenses are $369,750; this bridge preserves the canonical Base-Case annual owner net profit."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-04-retained-commission-by-service-niche",
+      "chart_type": "horizontal_bars",
+      "title": "Five Service Niches, One Brokerage Revenue Rail",
+      "subtitle": "Illustrative retained commission per completed transaction, in USD.",
+      "chapter_number": 2,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "These are planning assumptions, not market commission schedules or evidence that complexity causes higher fees. Compensation is negotiated for each engagement. Assign each closing to one primary niche so categories do not overlap.",
+      "caption": "Six closings in each niche produce 30 total transactions and 6 × ($10,000 + $14,000 + $17,000 + $20,000 + $24,000) = $510,000 retained revenue. No separate concierge fee or acquisition spread is included.",
+      "stages": [
+        {
+          "label": "Straightforward local estate",
+          "value": "$10,000 retained commission per completed property sale",
+          "numeric_value": 10000.0,
+          "detail": "Illustrative six-deal cohort contributes $60,000 annually. Prioritize clear access, manageable preparation, and an available local representative; still verify sale authority."
+        },
+        {
+          "label": "Remote executor coordination",
+          "value": "$14,000 retained commission per completed property sale",
+          "numeric_value": 14000.0,
+          "detail": "Illustrative six-deal cohort contributes $84,000 annually. Coordinate access, photographs, vendor scheduling, and concise status reports for a representative living elsewhere."
+        },
+        {
+          "label": "Preparation-intensive vacant home",
+          "value": "$17,000 retained commission per completed property sale",
+          "numeric_value": 17000.0,
+          "detail": "Illustrative six-deal cohort contributes $102,000 annually. Document vacancy coverage, security, utilities, cleanout scope, and who authorizes and pays each vendor."
+        },
+        {
+          "label": "Court-dependent sale",
+          "value": "$20,000 retained commission per completed property sale",
+          "numeric_value": 20000.0,
+          "detail": "Illustrative six-deal cohort contributes $120,000 annually. Coordinate counsel, court calendars, and buyer expectations; extra procedural work does not establish a fixed fee entitlement."
+        },
+        {
+          "label": "Complex property brokerage",
+          "value": "$24,000 retained commission per completed property sale",
+          "numeric_value": 24000.0,
+          "detail": "Illustrative six-deal cohort contributes $144,000 annually. Route title, occupancy, and condition issues to appropriate specialists before treating an accepted offer as dependable revenue."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-05-statutory-and-risk-routing",
+      "chart_type": "decision_tree",
+      "title": "Four Checks Before Committing the Estate",
+      "subtitle": "A sequential yes-or-redirect decision path, documented in the transaction file.",
+      "chapter_number": 5,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "California is the statutory example; replace it with the property's applicable law and actual court orders. Numeric values indicate check sequence, not probabilities or a measure of legal sufficiency.",
+      "caption": "Proceed only along a documented transaction path. Missing authority, unresolved objections, and conflicting interests change the workflow; they are not problems that automation can waive.",
+      "stages": [
+        {
+          "label": "Authority and sale route",
+          "value": "Verified authority: continue; missing authority: return to counsel",
+          "numeric_value": 1.0,
+          "detail": "Inspect appointment documents and current orders. California Probate Code section 10501 distinguishes full from limited independent-administration authority; limited-authority real property sales require the applicable court-supervised route."
+        },
+        {
+          "label": "Licensing and referral economics",
+          "value": "Permitted role: continue; prohibited compensation: restructure engagement",
+          "numeric_value": 2.0,
+          "detail": "Confirm brokerage licensing under California Business and Professions Code section 10130. Screen covered referral arrangements under 12 U.S.C. section 2607 and 12 CFR section 1024.14; do not pay for prohibited steering."
+        },
+        {
+          "label": "Notices, objections, and closing readiness",
+          "value": "Requirements satisfied: continue; unresolved conditions: suspend closing commitments",
+          "numeric_value": 3.0,
+          "detail": "Have counsel identify applicable notice duties under California Probate Code section 10580 and the effect of any objection. Resolve title exceptions, occupancy, and required court action before committing to a closing date."
+        },
+        {
+          "label": "Conflicts and principal acquisitions",
+          "value": "Independent review completed: proceed; unresolved conflict: separate transaction paths",
+          "numeric_value": 4.0,
+          "detail": "Document buyer affiliations and agency interests. California Probate Code section 9880 restricts representative purchases subject to statutory exceptions. Route affiliated acquisitions for counsel review; brokerage disclosures alone may be insufficient."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-06-five-to-seven-person-pod",
+      "chart_type": "org_architecture",
+      "title": "Five Core Seats, Two Conditional Expansion Seats",
+      "subtitle": "Conservative and Base: 2 FT + 3 C; Scaled: 3 FT + 4 C.",
+      "chapter_number": 11,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Each stage describes one potential person. Numeric values show Base-Case active headcount: five ones and two zeros. Activate both expansion seats for the seven-person Scaled configuration. Estate counsel and title providers are external counterparties.",
+      "caption": "The five-person pod supports the $120,000 Conservative and $510,000 Base revenue scenarios. The seven-person pod supports the $900,000 Scaled scenario; additional seats alone do not establish demand or commission production.",
+      "stages": [
+        {
+          "label": "Broker lead — FT",
+          "value": "One core full-time owner of brokerage execution",
+          "numeric_value": 1.0,
+          "detail": "Own agency relationships, listing strategy, negotiations, and brokerage supervision. Maintain a weekly exception review covering authority, disputes, and stalled transactions."
+        },
+        {
+          "label": "Operations lead — FT",
+          "value": "One core full-time owner of pipeline control",
+          "numeric_value": 1.0,
+          "detail": "Maintain docket alerts, CRM records, checklist versions, cash forecasts, and reporting. Escalate missing evidence rather than marking incomplete statutory tasks as finished."
+        },
+        {
+          "label": "Field brokerage support — C",
+          "value": "One core contractor handling authorized licensed fieldwork",
+          "numeric_value": 1.0,
+          "detail": "Provide appropriately licensed showing, inspection-access, and market-support services within the brokerage's supervision. Confirm worker classification under applicable law."
+        },
+        {
+          "label": "Transaction coordinator — C",
+          "value": "One core contractor maintaining transaction evidence",
+          "numeric_value": 1.0,
+          "detail": "Track deadlines, signatures, disclosures, and closing records. Administrative coordination does not authorize independent brokerage activity or interpretation of disputed estate powers."
+        },
+        {
+          "label": "Property vendor coordinator — C",
+          "value": "One core contractor organizing property preparation",
+          "numeric_value": 1.0,
+          "detail": "Schedule authorized cleanouts, security checks, repairs, and photography. Keep vendor scopes and estate payment responsibility separate from operator commission accounting."
+        },
+        {
+          "label": "Additional licensed producer — FT",
+          "value": "Zero Base seats; add one Scaled full-time producer",
+          "numeric_value": 0.0,
+          "detail": "Expand to three full-time people when collected revenue, active listings, and response-time pressure support the added fixed cost and supervisory workload."
+        },
+        {
+          "label": "Additional coordination support — C",
+          "value": "Zero Base seats; add one Scaled contractor",
+          "numeric_value": 0.0,
+          "detail": "Expand to four contractors for greater docket, document, and vendor workload. Assign a defined service scope instead of creating overlapping ownership of deadlines."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-07-startup-capital-allocation",
+      "chart_type": "stacked_comparison",
+      "title": "Allocate Capital Before the First Closing",
+      "subtitle": "Four buckets compare $15,000, $50,000, and $100,000 startup plans.",
+      "chapter_number": 4,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Numeric values encode the illustrative $50,000 allocation. Each stage also states its corresponding $15,000 and $100,000 allocation. These are startup funding plans, not additional revenue scenarios or assumed annual expense budgets.",
+      "caption": "Low plan: $4,000 + $5,000 + $3,000 + $3,000 = $15,000. Middle plan: $12,000 + $16,000 + $10,000 + $12,000 = $50,000. High plan: $24,000 + $32,000 + $20,000 + $24,000 = $100,000.",
+      "stages": [
+        {
+          "label": "Business readiness and systems",
+          "value": "$12,000 middle-plan allocation for setup and operating systems",
+          "numeric_value": 12000.0,
+          "detail": "Low: $4,000; middle: $12,000; high: $24,000. Fund licensing-related setup, insurance deposits, devices, CRM, docket access, document storage, and transaction checklist configuration."
+        },
+        {
+          "label": "Origination and relationship development",
+          "value": "$16,000 middle-plan allocation for measurable pipeline creation",
+          "numeric_value": 16000.0,
+          "detail": "Low: $5,000; middle: $16,000; high: $32,000. Fund targeted outreach, attorney relationship work, property-market materials, and source attribution without purchasing prohibited referrals."
+        },
+        {
+          "label": "Delivery mobilization",
+          "value": "$10,000 middle-plan allocation for contracted execution capacity",
+          "numeric_value": 10000.0,
+          "detail": "Low: $3,000; middle: $10,000; high: $20,000. Fund contractor onboarding, field coordination, transaction setup, and operator-paid listing preparation under documented scopes."
+        },
+        {
+          "label": "Liquidity reserve",
+          "value": "$12,000 middle-plan allocation for delays and operating continuity",
+          "numeric_value": 12000.0,
+          "detail": "Low: $3,000; middle: $12,000; high: $24,000. Preserve cash for court delays and slow collections. With 4–18 months to a first deal, test actual burn before hiring; these reserves do not establish complete runway."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-08-thirty-day-launch-sprint",
+      "chart_type": "timeline_roadmap",
+      "title": "Build Transaction Readiness in Thirty Days",
+      "subtitle": "Four weekly milestones create a usable operating system, not instant closings.",
+      "chapter_number": 12,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Numeric values indicate milestone end days. The 30-day sprint builds capability and an initial pipeline; the canonical 4–18-month time to first deal remains the planning horizon.",
+      "caption": "Finish the month with an authority-aware workflow, traceable opportunities, rehearsed transaction controls, and a cash-backed capacity plan. Do not count preparation activity as earned revenue.",
+      "stages": [
+        {
+          "label": "Days 1-7",
+          "value": "Define jurisdiction, brokerage scope, and authority evidence",
+          "numeric_value": 7.0,
+          "detail": "Select one service geography; confirm licensing and supervision; map local sale procedures with counsel. Build intake fields for appointment documents, authority limits, notice requirements, property occupancy, and source provenance."
+        },
+        {
+          "label": "Days 8-14",
+          "value": "Configure docket alerts and deduplicated opportunity records",
+          "numeric_value": 14.0,
+          "detail": "Configure permitted alerts, CRM ownership, and document access. Review an initial 25 opportunity records for duplicate parcels, incorrect representatives, and unsupported sale assumptions; correct the workflow before expanding collection."
+        },
+        {
+          "label": "Days 15-21",
+          "value": "Rehearse the transaction path and contractor handoffs",
+          "numeric_value": 21.0,
+          "detail": "Run a synthetic estate sale through authority review, property preparation, listing, notices, closing, and commission collection. Test a family objection and a delayed hearing; verify that both trigger a revised schedule and cash forecast."
+        },
+        {
+          "label": "Days 22-30",
+          "value": "Launch measured outreach and review economic readiness",
+          "numeric_value": 30.0,
+          "detail": "Begin targeted representative and attorney outreach using applicable channel rules. Review cohort definitions, contractor capacity, startup reserve, and retained-commission accounting. Publish a weekly dashboard separating conversations, listings, closings, collected revenue, and unresolved court dependencies."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,550 @@
+{
+  "candidate_number": 9,
+  "slug": "probate-real-estate",
+  "title": "Probate Real Estate",
+  "category": "Real estate services",
+  "production_stage": "approved_master",
+  "scores": {
+    "revenue_potential": 23,
+    "profit_margin_potential": 18,
+    "team_efficiency": 16,
+    "startup_accessibility": 9,
+    "automation_potential": 10
+  },
+  "dimension_max": {
+    "revenue_potential": 25,
+    "profit_margin_potential": 25,
+    "team_efficiency": 20,
+    "startup_accessibility": 15,
+    "automation_potential": 15
+  },
+  "total_score": 76,
+  "tier_label": "High-Leverage Operator Play",
+  "evidence_confidence": "High",
+  "uncertainty_band": "±3 pts",
+  "uncertainty_bounds": {
+    "low": 73,
+    "high": 79
+  },
+  "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
+  "score_rationale": {
+    "revenue_potential": "Revenue Potential: 23/25. Modeled as licensed brokerage rather than capital-heavy property acquisition.",
+    "profit_margin_potential": "Profit Margin Potential: 18/25. Modeled as licensed brokerage rather than capital-heavy property acquisition.",
+    "team_efficiency": "Team Efficiency: 16/20. Modeled as licensed brokerage rather than capital-heavy property acquisition.",
+    "startup_accessibility": "Startup Accessibility: 9/15. Modeled as licensed brokerage rather than capital-heavy property acquisition.",
+    "automation_potential": "Automation Potential: 10/15. Modeled as licensed brokerage rather than capital-heavy property acquisition."
+  },
+  "economics": {
+    "gross_revenue_range": "$120,000–$900,000 USD annually",
+    "net_profit_margin_range": "20–35%",
+    "owner_net_profit_potential": "$24,000–$315,000 USD annually, before personal taxes and reinvestment",
+    "startup_capital_range": "$15,000–$100,000 USD",
+    "monthly_opex_range": "$3,000–$18,000 USD",
+    "time_to_first_deal": "4–18 months",
+    "typical_team_size": {
+      "full_time_including_owner": 2,
+      "contractors": 3,
+      "total_people": 5
+    },
+    "includes_contractors_note": "Headcount includes the working owner and recurring contractors as people, not FTE equivalents. Contractors may be part-time. Scaled scenario adds one employee and one contractor; external vendor workforces are not counted as internal team members.",
+    "revenue_basis": "Retained brokerage commissions after brokerage splits, not home sale values",
+    "cost_basis": "Annual net margins include operating expenses and non-owner labor; monthly opex is fixed/semi-fixed overhead only. No owner salary is deducted. Capital needs may grow beyond startup range.",
+    "estimate_status": "Illustrative assumptions; not verified earnings data"
+  },
+  "scenarios": {
+    "conservative": {
+      "annual_gross_revenue_usd": 120000,
+      "net_profit_margin_pct": 20,
+      "annual_owner_net_profit_usd": 24000,
+      "full_time_including_owner": 2,
+      "contractors": 3,
+      "total_people": 5,
+      "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+    },
+    "base_case": {
+      "annual_gross_revenue_usd": 510000.0,
+      "net_profit_margin_pct": 27.5,
+      "annual_owner_net_profit_usd": 140250,
+      "full_time_including_owner": 2,
+      "contractors": 3,
+      "total_people": 5,
+      "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+    },
+    "scaled_small_team": {
+      "annual_gross_revenue_usd": 900000,
+      "net_profit_margin_pct": 35,
+      "annual_owner_net_profit_usd": 315000,
+      "full_time_including_owner": 3,
+      "contractors": 4,
+      "total_people": 7,
+      "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+    }
+  },
+  "automation_levers": [
+    "Docket alerts",
+    "Transaction checklists"
+  ],
+  "key_risks": [
+    "Court delays",
+    "Family disputes",
+    "Housing-market cycles"
+  ],
+  "regulatory_notes": [
+    "Real estate licensing, fiduciary duties and court-sale approvals may apply."
+  ],
+  "track_ids": [
+    "track_1",
+    "track_2"
+  ],
+  "track_labels": [
+    "Asymmetric & Data-Arbitrage Plays",
+    "Grey-Zone Growth & Traffic Arbitrage"
+  ],
+  "plays": [
+    {
+      "id": "public_record_api_intelligence",
+      "track_id": "track_1",
+      "name": "Public-Record & API Intelligence",
+      "mechanism": "Ingest fragmented county dockets, probate registries, unclaimed property ledgers, and public APIs to surface uncontested claims or high-intent B2B triggers before manual competitors.",
+      "inputs": [
+        "Court & probate dockets",
+        "State controller ledgers",
+        "Public licensing & entity APIs"
+      ],
+      "workflow": [
+        "Poll and normalize county/state record releases on an automated cadence",
+        "Cross-match entity/kinship/lien records and filter by minimum net fee threshold",
+        "Route verified dossiers into compliant outreach and claim execution"
+      ],
+      "metrics": [
+        "Cost per verified lead",
+        "Docket-to-contact latency (hours)",
+        "Net recovery / conversion rate"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Portal rate-limiting or CAPTCHA gating",
+          "trigger": "High-frequency automated polling against county or agency web portals",
+          "impact": "Delayed lead ingestion or temporary IP block on target registry",
+          "detection_metric": "HTTP 429/403 rate and daily record ingestion delta",
+          "fallback": "Switch to scheduled bulk FOIA/public-record exports, official data feeds, and low-frequency cached queues"
+        }
+      ]
+    },
+    {
+      "id": "public_filing_trigger_mail_arbitrage",
+      "track_id": "track_1",
+      "name": "New-LLC & Recorded-Deed Trigger-Mail Arbitrage",
+      "mechanism": "Ingest daily Secretary of State new-LLC filings and County Recorder new-deed/mortgage recordings to trigger programmatic direct mail via API—replacing illegal government-lookalike poster/deed invoices (which violate 39 U.S.C. § 3001 and state deed-solicitation laws) with high-LTV recurring workplace compliance subscriptions, property-tax appeal contingency offers, and exclusive new-mover/B2B lead monetization.",
+      "inputs": [
+        "Daily Secretary of State new-entity (LLC/Corp) bulk feeds",
+        "County Recorder grant/warranty deed & mortgage recording dockets",
+        "Programmatic print-and-mail API (Lob / PostGrid) + QR intake bridge"
+      ],
+      "workflow": [
+        "Pull daily new-LLC formations (filtering for employer/commercial NAICS or multi-member filings) and newly recorded residential deeds with purchase price and loan metadata",
+        "Dispatch transparent, non-governmental trigger mailers within 24–48 hours of filing with personalized QR codes pre-populating entity or parcel data",
+        "Monetize new LLCs via recurring annual labor-poster/registered-agent compliance memberships and B2B partner referrals; monetize new deeds via contingency property-tax appeal filings or high-ticket homeowner lead sales"
+      ],
+      "metrics": [
+        "Filing-to-mailbox latency (hours)",
+        "QR scan & intake conversion % per 1,000 mailers",
+        "Annualized LTV / net revenue per mailed piece"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "USPS 39 U.S.C. § 3001(h)-(i) mail-stop order, State AG UDAP enforcement, or payment-processor freeze",
+          "trigger": "Styling mailers as fake government penalty notices, invoices, or charging $89-$195 solely for a $3 public deed copy without statutory disclaimers",
+          "impact": "Civil restitution penalties, merchant account termination, and 30%+ chargeback rates",
+          "detection_metric": "Refund/chargeback ratio >1% and customer support inquiries mistaking the mailer for a government agency",
+          "fallback": "Use unambiguous private commercial branding, never mimic government seals or citation numbers, and sell genuine value-add subscriptions (annual compliance updates, tax-assessment appeals, or B2B services)"
+        }
+      ]
+    },
+    {
+      "id": "rank_and_rent_pay_per_call_routing",
+      "track_id": "track_2",
+      "name": "Rank-and-Rent Digital Real Estate & Pay-Per-Call Routing",
+      "mechanism": "Build and rank local high-ticket service hubs (foundation repair, water restoration, probate liquidation, commercial roofing) wired to dynamic call-tracking switches (Ringba / Twilio) that auto-bill local operators $75–$300 per inbound call lasting over 90 seconds.",
+      "inputs": [
+        "City + high-ticket emergency/specialty service domain portfolio",
+        "Ringba / Twilio dynamic number insertion (DNI) & IVR duration billing switch",
+        "Co-verified local contractor partner agreements with card-on-file auto-recharge"
+      ],
+      "workflow": [
+        "Launch fast programmatic local service pages and cost calculators for high-ticket, high-urgency verticals ($5,000+ average job ticket)",
+        "Partner with a licensed brick-and-mortar operator in each city for legitimate Google Business Profile co-verification while retaining ownership of the domain and tracking numbers",
+        "Route inbound prospect calls through Ringba with a 90-second duration threshold, automatically charging the partner's card on file per qualified call"
+      ],
+      "metrics": [
+        "Inbound calls per site per month & % of calls >90 seconds",
+        "Revenue per qualified call ($75–$300) and contractor retention rate",
+        "Portfolio gross margin (80–90% once ranked)"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Google Business Profile suspension or contractor payment default",
+          "trigger": "Registering fake Google Maps pins at UPS stores/virtual offices or delivering calls before collecting prepaid credit balances",
+          "impact": "Loss of Map Pack call volume or uncollected call receivables",
+          "detection_metric": "Organic-vs-Maps call split and prepaid Stripe wallet balance per partner",
+          "fallback": "Anchor traffic in organic city/calculator pages (immune to GBP suspension), co-verify Maps only with real partner physical addresses, and enforce prepaid auto-refill call wallets"
+        }
+      ]
+    },
+    {
+      "id": "identity_graph_pixel_arbitrage",
+      "track_id": "track_2",
+      "name": "Identity-Graph Pixel & Search-Intent Deanonymization",
+      "mechanism": "Deploy first-party CNAME identity-resolution pixels and pre-click search/bidstream intent feeds (syncing visitor IP/device hashes against publisher co-op SHA-256 rainbow tables and property/B2B graphs) to resolve 35–55% of anonymous bouncing search visitors into verified names, emails, LinkedIn profiles, and physical home addresses.",
+      "inputs": [
+        "First-party CNAME identity-resolution pixel & Google Ads ValueTrack ({keyword}) URL tags",
+        "Publisher co-op SHA-256 HEM spine + County Assessor / B2B LinkedIn enrichment graph",
+        "Automated physical postcard API (Lob / PostGrid), B2B Slack routing, & Custom Audience sync"
+      ],
+      "workflow": [
+        "Geo-fence pixel execution at the CDN edge (US-only, excluding EU/UK GDPR traffic) and capture exact referring search keywords via ValueTrack parameters",
+        "Resolve anonymous bouncing visitors against the identity spine within 200ms to append homeowner address, work email, and LinkedIn URL",
+        "Route resolved B2B executives to instant Slack/LinkedIn warm outreach, trigger physical next-day postcards to resolved homeowner addresses, and sync SHA-256 hashes into Meta/Google Custom Audiences"
+      ],
+      "metrics": [
+        "Anonymous visitor-to-identity match rate (35–55% target)",
+        "Cost per resolved identity ($0.10–$0.25) vs. net recovered revenue per 1,000 bounces",
+        "Postcard & B2B LinkedIn intercept conversion rate (%)"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Primary email domain blacklisting (>0.3% spam complaint rate) or California CIPA / state privacy demand letters",
+          "trigger": "Blasting cold consumer Gmail addresses from primary brand domains saying 'we saw you on our site' or firing third-party pixels without geo-fencing/consent notice",
+          "impact": "Google Workspace / ESP domain suspension or statutory privacy settlement costs",
+          "detection_metric": "Postmaster Tools spam rate >0.1%, bounce rate >2%, and edge geo-fence block verification",
+          "fallback": "Never cold-email unconsented consumer Gmail addresses from primary domains; monetize consumer matches strictly via CAN-SPAM-exempt physical trigger mail and SHA-256 ad-audience sync, and enforce US-only edge geo-gating"
+        }
+      ]
+    },
+    {
+      "id": "probate_docket_inheritance_arbitrage",
+      "track_id": "track_1",
+      "name": "Probate Docket & Pre-Foreclosure Notice-of-Default (NOD) Scraping",
+      "mechanism": "Parse county probate petitions (Letters Testamentary / Letters of Administration) and daily Notice-of-Default (NOD) filings before national aggregators index them, matching out-of-state personal representatives and distressed owners to licensed probate brokers and cash buyers.",
+      "inputs": [
+        "County probate court register of actions & Letters Testamentary filings",
+        "County recorder daily Notice-of-Default (NOD) & Notice-of-Trustee-Sale feeds",
+        "Skip-tracing & out-of-state personal-representative matching pipeline"
+      ],
+      "workflow": [
+        "Extract newly appointed estate personal representatives and real-property inventory from county probate dockets within 24 hours of filing",
+        "Cross-match parcel equity and mortgage balances against county assessor and recorder records",
+        "Deliver empathetic estate-liquidation checklists, property-preservation referrals, or licensed brokerage introductions"
+      ],
+      "metrics": [
+        "Docket-to-first-contact speed vs. national data aggregators (days)",
+        "Personal-representative response & appointment rate (%)",
+        "Commission or referral fee per closed probate/pre-foreclosure parcel"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "State Foreclosure Consultant Act violations or unlicensed brokerage fee-splitting",
+          "trigger": "Charging upfront fees to distressed homeowners in NOD or taking unlicensed real-estate commission splits",
+          "impact": "Voided contracts, treble damages under state foreclosure-protection statutes, or DRE enforcement",
+          "detection_metric": "100% licensed broker co-marketing compliance and zero upfront homeowner fee charges",
+          "fallback": "Monetize strictly via flat-fee marketing/data subscriptions to licensed probate agents or close transactions through a licensed brokerage of record"
+        }
+      ]
+    },
+    {
+      "id": "municipal_code_violation_trigger_arbitrage",
+      "track_id": "track_1",
+      "name": "Municipal Code-Violation, Mechanic's Lien & Permit-Failure Lead Arbitrage",
+      "mechanism": "Poll municipal building department portals and county recorder dockets daily for failed structural/fire inspections, expired permits, code citations, and newly filed mechanic's liens, routing exclusive real-time leads to remediation contractors and construction attorneys.",
+      "inputs": [
+        "Municipal Accela/EnerGov building & code-enforcement portals",
+        "County recorder mechanic's lien & lis pendens dockets",
+        "Real-time Pay-Per-Call & exclusive CPL routing switch"
+      ],
+      "workflow": [
+        "Scrape and normalize daily municipal code citations, failed permit inspections, and recorded mechanic's liens across target metro counties",
+        "Enrich parcel owner contact records and classify urgency by abatement deadline or fine accrual rate",
+        "Route verified property owners via direct mail/outbound alerts into exclusive Pay-Per-Call or CPL agreements with licensed remediation contractors"
+      ],
+      "metrics": [
+        "Citation-to-outreach latency (hours)",
+        "Qualified homeowner/commercial call conversion %",
+        "Revenue per exclusive routed remediation lead"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Municipal portal IP blocking or deceptive official-notice complaints",
+          "trigger": "Aggressive unthrottled scraping of Accela/EnerGov portals or styling outreach like an official city abatement order",
+          "impact": "Portal IP block or city attorney cease-and-desist notice",
+          "detection_metric": "Portal HTTP 403/429 rate and zero municipal impersonation complaints",
+          "fallback": "Use low-frequency scheduled API/bulk exports and clearly identify all outreach as private commercial contractor/remediation assistance"
+        }
+      ]
+    },
+    {
+      "id": "property_tax_assessment_appeal_contingency",
+      "track_id": "track_1",
+      "name": "Automated Commercial/Residential Property-Tax Appeal Arbitrage",
+      "mechanism": "Ingest county tax-assessor valuation rolls upon annual notice release, run an automated valuation model (AVM) flagging parcels assessed above comparable neighbor equity ratios, and file bulk administrative tax protests for 30–50% of the first year's verified tax reduction.",
+      "inputs": [
+        "Annual county tax-assessor preliminary valuation rolls & parcel GIS characteristics",
+        "Equity-ratio & recent-sale comparable AVM engine",
+        "Bulk administrative ARB (Appraisal Review Board) protest filing & hearing pipeline"
+      ],
+      "workflow": [
+        "Ingest county assessment rolls the day annual valuation notices drop and compute each parcel's assessed-per-sqft percentile against direct neighborhood peers",
+        "Mail personalized pre-filled protest postcards showing the owner's exact estimated over-assessment and a QR code to sign a zero-upfront-cost contingency authorization",
+        "Auto-generate uniform comparable-equity evidence packets, file bulk administrative protests before the county bar date, and collect 30–50% of Year-1 tax savings"
+      ],
+      "metrics": [
+        "Protest-window mail-to-signed-authorization conversion %",
+        "Percentage of appealed parcels receiving an assessment reduction (65–85% target)",
+        "Average net contingency fee per residential ($150–$450) and commercial ($2,000–$15,000) parcel"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "State property-tax consultant licensing requirements or missed county protest bar dates",
+          "trigger": "Representing property owners for a fee without required state registration (e.g., Texas TDLR Property Tax Consultant license) or missing the 30/45-day county filing deadline",
+          "impact": "Rejected bulk filings, administrative fines, or zero contingency revenue for the tax year",
+          "detection_metric": "100% licensed tax-agent sign-off in regulated states and T-minus-7-day bulk filing completion",
+          "fallback": "Partner with licensed local property-tax consultants/attorneys of record in regulated states and automate pre-deadline batch electronic filing"
+        }
+      ]
+    },
+    {
+      "id": "google_maps_gbp_lead_gen_network",
+      "track_id": "track_2",
+      "name": "Multi-Location Google Business Profile (GBP) Local-Pack Grid Arbitrage",
+      "mechanism": "Capture high-margin Google Maps 3-Pack calls across tier-2/3 metros by partnering with real, licensed local tradespeople to co-verify legitimate physical office/shop locations, wiring call-tracking numbers and review-automation workflows to monetize excess lead capacity.",
+      "inputs": [
+        "Geo-grid rank tracker identifying low-review-count Map Pack gaps in $3k+ home/commercial verticals",
+        "Joint-venture co-verification agreements with real brick-and-mortar licensed contractors",
+        "Dynamic call routing (Ringba) + automated SMS post-job review velocity loop"
+      ],
+      "workflow": [
+        "Identify suburban and tier-2 metro sub-markets where top-3 Google Maps competitors have <40 reviews and weak category optimization",
+        "Sign a revenue-share or pay-per-call partnership with a real local contractor or commercial office tenant (never using fake UPS boxes or virtual coworking addresses)",
+        "Optimize GBP primary/secondary categories, service-area pages, and automated customer review requests to lock top-3 Map Pack placement and bill per qualified call"
+      ],
+      "metrics": [
+        "Local Geo-Grid Top-3 share of voice (%)",
+        "Qualified inbound Map Pack calls per location per month",
+        "Net revenue per location ($1,500–$6,000/mo) and partner retention"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Google Business Profile video-verification failure or network-wide account suspension",
+          "trigger": "Creating fake storefront listings at UPS stores, virtual offices, or residential addresses without signage/licensing",
+          "impact": "Immediate GBP suspension and loss of all accumulated reviews and Map Pack calls",
+          "detection_metric": "100% physical signage, utility bill, and state contractor license verification readiness per profile",
+          "fallback": "Only launch GBP profiles backed by a real partner's physical shop/yard capable of passing live video verification, and pair every listing with organic city rank-and-rent pages"
+        }
+      ]
+    },
+    {
+      "id": "hoa_super_lien_tax_deed_redemption_arbitrage",
+      "track_id": "track_1",
+      "name": "HOA Super-Lien & Sub-Threshold Tax-Deed Statutory Redemption Arbitrage",
+      "mechanism": "Price small HOA priority liens and tax-sale interests using jurisdiction-specific priority, notice, and redemption rules; returns depend on enforceable rights, not assumed title extinguishment.",
+      "inputs": [
+        "County tax-sale and HOA lien records",
+        "Title report and statutory redemption calendar",
+        "Local counsel priority and notice opinion"
+      ],
+      "workflow": [
+        "1. Screen small-balance liens against property value, senior debt, and sale eligibility",
+        "2. Have local counsel verify priority, service, redemption rights, and purchaser restrictions",
+        "3. Bid within a net-recovery ceiling and calendar every payment and notice deadline",
+        "4. Reconcile redemption proceeds or pursue counsel-supervised title resolution after rights expire"
+      ],
+      "metrics": [
+        "Net realized recovery after legal costs",
+        "Capital days outstanding",
+        "Notice and redemption deadline compliance rate"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Sale invalidation or surviving senior lien",
+          "trigger": "Defective notice or incorrect assumption about statutory lien priority",
+          "impact": "Loss of expected recovery and extended title litigation",
+          "detection_metric": "Unresolved title exceptions and notice defects per acquisition",
+          "fallback": "Suspend bidding, seek available statutory refunds, and limit acquisitions to counsel-cleared interests"
+        }
+      ]
+    },
+    {
+      "id": "gis_landlocked_parcel_easement_assemblage",
+      "track_id": "track_1",
+      "name": "GIS Landlocked-Parcel Spite-Strip & Access-Easement Assemblage Arbitrage",
+      "mechanism": "Combine GIS parcel geometry with recorded access rights to option overlooked strips and negotiate voluntary easement assemblages; mapped boundaries alone do not establish legal access.",
+      "inputs": [
+        "County GIS parcel and road layers",
+        "Recorded plats, deeds, and easement instruments",
+        "Surveyor estimates and neighboring-owner demand"
+      ],
+      "workflow": [
+        "1. Flag apparently landlocked parcels and narrow connecting strips in GIS",
+        "2. Verify boundaries, existing rights, and easement-by-necessity exposure with surveyor and counsel",
+        "3. Secure contingent options and negotiate voluntary access agreements without obstructing existing access",
+        "4. Record approved easements and close the assembled sale through title escrow"
+      ],
+      "metrics": [
+        "Verified access gaps per screened parcel",
+        "Option-to-recorded-easement conversion rate",
+        "Net assemblage margin after survey and title costs"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "GIS false positive or unenforceable access premium",
+          "trigger": "Unmapped easement, boundary error, or preexisting legal right of access",
+          "impact": "Option expiry or acquisition with no incremental assemblage value",
+          "detection_metric": "Survey and title exceptions per shortlisted parcel",
+          "fallback": "Exercise diligence contingencies and offer survey-backed voluntary access services instead"
+        }
+      ]
+    },
+    {
+      "id": "fractional_heir_share_partition_forcing",
+      "track_id": "track_1",
+      "name": "Fractional Heir-Share Acquisition & Tenancy-in-Common Partition Buyout Forcing",
+      "mechanism": "Acquire documented fractional heir interests at a discount reflecting illiquidity, then seek consensual buyouts or counsel-supervised partition subject to heirs-property protections and co-owner rights.",
+      "inputs": [
+        "Probate files and verified heirship records",
+        "Title chain, occupancy facts, and independent appraisal",
+        "Applicable partition and heirs-property protection rules"
+      ],
+      "workflow": [
+        "1. Establish ownership fractions, probate authority, and encumbrances before contacting sellers",
+        "2. Provide transparent offers with independent-advice opportunity and modeled partition costs",
+        "3. Seek voluntary co-owner buyouts or an agreed market sale before considering litigation",
+        "4. If unresolved, use counsel-led statutory procedures honoring notice, appraisal, and buyout rights"
+      ],
+      "metrics": [
+        "Verified ownership share acquired",
+        "Consensual resolution rate",
+        "Net proceeds after carrying and legal costs"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Heirs-property protections defeat assumed forced-sale economics",
+          "trigger": "Mandatory co-owner buyout, partition-in-kind preference, or defective heirship",
+          "impact": "Long holding period and lower realizable value",
+          "detection_metric": "Unresolved heirs and statutory buyout conditions per property",
+          "fallback": "Renegotiate voluntary exits or retain the interest without threatening unavailable remedies"
+        }
+      ]
+    }
+  ],
+  "platform_risks": [
+    {
+      "failure_mode": "Portal rate-limiting or CAPTCHA gating",
+      "trigger": "High-frequency automated polling against county or agency web portals",
+      "impact": "Delayed lead ingestion or temporary IP block on target registry",
+      "detection_metric": "HTTP 429/403 rate and daily record ingestion delta",
+      "fallback": "Switch to scheduled bulk FOIA/public-record exports, official data feeds, and low-frequency cached queues",
+      "play_id": "public_record_api_intelligence",
+      "play_name": "Public-Record & API Intelligence",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "USPS 39 U.S.C. § 3001(h)-(i) mail-stop order, State AG UDAP enforcement, or payment-processor freeze",
+      "trigger": "Styling mailers as fake government penalty notices, invoices, or charging $89-$195 solely for a $3 public deed copy without statutory disclaimers",
+      "impact": "Civil restitution penalties, merchant account termination, and 30%+ chargeback rates",
+      "detection_metric": "Refund/chargeback ratio >1% and customer support inquiries mistaking the mailer for a government agency",
+      "fallback": "Use unambiguous private commercial branding, never mimic government seals or citation numbers, and sell genuine value-add subscriptions (annual compliance updates, tax-assessment appeals, or B2B services)",
+      "play_id": "public_filing_trigger_mail_arbitrage",
+      "play_name": "New-LLC & Recorded-Deed Trigger-Mail Arbitrage",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Google Business Profile suspension or contractor payment default",
+      "trigger": "Registering fake Google Maps pins at UPS stores/virtual offices or delivering calls before collecting prepaid credit balances",
+      "impact": "Loss of Map Pack call volume or uncollected call receivables",
+      "detection_metric": "Organic-vs-Maps call split and prepaid Stripe wallet balance per partner",
+      "fallback": "Anchor traffic in organic city/calculator pages (immune to GBP suspension), co-verify Maps only with real partner physical addresses, and enforce prepaid auto-refill call wallets",
+      "play_id": "rank_and_rent_pay_per_call_routing",
+      "play_name": "Rank-and-Rent Digital Real Estate & Pay-Per-Call Routing",
+      "track_id": "track_2"
+    },
+    {
+      "failure_mode": "Primary email domain blacklisting (>0.3% spam complaint rate) or California CIPA / state privacy demand letters",
+      "trigger": "Blasting cold consumer Gmail addresses from primary brand domains saying 'we saw you on our site' or firing third-party pixels without geo-fencing/consent notice",
+      "impact": "Google Workspace / ESP domain suspension or statutory privacy settlement costs",
+      "detection_metric": "Postmaster Tools spam rate >0.1%, bounce rate >2%, and edge geo-fence block verification",
+      "fallback": "Never cold-email unconsented consumer Gmail addresses from primary domains; monetize consumer matches strictly via CAN-SPAM-exempt physical trigger mail and SHA-256 ad-audience sync, and enforce US-only edge geo-gating",
+      "play_id": "identity_graph_pixel_arbitrage",
+      "play_name": "Identity-Graph Pixel & Search-Intent Deanonymization",
+      "track_id": "track_2"
+    },
+    {
+      "failure_mode": "State Foreclosure Consultant Act violations or unlicensed brokerage fee-splitting",
+      "trigger": "Charging upfront fees to distressed homeowners in NOD or taking unlicensed real-estate commission splits",
+      "impact": "Voided contracts, treble damages under state foreclosure-protection statutes, or DRE enforcement",
+      "detection_metric": "100% licensed broker co-marketing compliance and zero upfront homeowner fee charges",
+      "fallback": "Monetize strictly via flat-fee marketing/data subscriptions to licensed probate agents or close transactions through a licensed brokerage of record",
+      "play_id": "probate_docket_inheritance_arbitrage",
+      "play_name": "Probate Docket & Pre-Foreclosure Notice-of-Default (NOD) Scraping",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Municipal portal IP blocking or deceptive official-notice complaints",
+      "trigger": "Aggressive unthrottled scraping of Accela/EnerGov portals or styling outreach like an official city abatement order",
+      "impact": "Portal IP block or city attorney cease-and-desist notice",
+      "detection_metric": "Portal HTTP 403/429 rate and zero municipal impersonation complaints",
+      "fallback": "Use low-frequency scheduled API/bulk exports and clearly identify all outreach as private commercial contractor/remediation assistance",
+      "play_id": "municipal_code_violation_trigger_arbitrage",
+      "play_name": "Municipal Code-Violation, Mechanic's Lien & Permit-Failure Lead Arbitrage",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "State property-tax consultant licensing requirements or missed county protest bar dates",
+      "trigger": "Representing property owners for a fee without required state registration (e.g., Texas TDLR Property Tax Consultant license) or missing the 30/45-day county filing deadline",
+      "impact": "Rejected bulk filings, administrative fines, or zero contingency revenue for the tax year",
+      "detection_metric": "100% licensed tax-agent sign-off in regulated states and T-minus-7-day bulk filing completion",
+      "fallback": "Partner with licensed local property-tax consultants/attorneys of record in regulated states and automate pre-deadline batch electronic filing",
+      "play_id": "property_tax_assessment_appeal_contingency",
+      "play_name": "Automated Commercial/Residential Property-Tax Appeal Arbitrage",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Google Business Profile video-verification failure or network-wide account suspension",
+      "trigger": "Creating fake storefront listings at UPS stores, virtual offices, or residential addresses without signage/licensing",
+      "impact": "Immediate GBP suspension and loss of all accumulated reviews and Map Pack calls",
+      "detection_metric": "100% physical signage, utility bill, and state contractor license verification readiness per profile",
+      "fallback": "Only launch GBP profiles backed by a real partner's physical shop/yard capable of passing live video verification, and pair every listing with organic city rank-and-rent pages",
+      "play_id": "google_maps_gbp_lead_gen_network",
+      "play_name": "Multi-Location Google Business Profile (GBP) Local-Pack Grid Arbitrage",
+      "track_id": "track_2"
+    },
+    {
+      "failure_mode": "Sale invalidation or surviving senior lien",
+      "trigger": "Defective notice or incorrect assumption about statutory lien priority",
+      "impact": "Loss of expected recovery and extended title litigation",
+      "detection_metric": "Unresolved title exceptions and notice defects per acquisition",
+      "fallback": "Suspend bidding, seek available statutory refunds, and limit acquisitions to counsel-cleared interests",
+      "play_id": "hoa_super_lien_tax_deed_redemption_arbitrage",
+      "play_name": "HOA Super-Lien & Sub-Threshold Tax-Deed Statutory Redemption Arbitrage",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "GIS false positive or unenforceable access premium",
+      "trigger": "Unmapped easement, boundary error, or preexisting legal right of access",
+      "impact": "Option expiry or acquisition with no incremental assemblage value",
+      "detection_metric": "Survey and title exceptions per shortlisted parcel",
+      "fallback": "Exercise diligence contingencies and offer survey-backed voluntary access services instead",
+      "play_id": "gis_landlocked_parcel_easement_assemblage",
+      "play_name": "GIS Landlocked-Parcel Spite-Strip & Access-Easement Assemblage Arbitrage",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Heirs-property protections defeat assumed forced-sale economics",
+      "trigger": "Mandatory co-owner buyout, partition-in-kind preference, or defective heirship",
+      "impact": "Long holding period and lower realizable value",
+      "detection_metric": "Unresolved heirs and statutory buyout conditions per property",
+      "fallback": "Renegotiate voluntary exits or retain the interest without threatening unavailable remedies",
+      "play_id": "fractional_heir_share_partition_forcing",
+      "play_name": "Fractional Heir-Share Acquisition & Tenancy-in-Common Partition Buyout Forcing",
+      "track_id": "track_1"
+    }
+  ]
+}

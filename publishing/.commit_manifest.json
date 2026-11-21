@@ -1,10 +1,10 @@
 {
   "scope": "publishing_store_excluding_previews",
   "sha256": {
-    "audit/existing_work_audit.json": "ddd63f897cfcd3dddd088a28211a7b8800fc448cb61e8dcceed44e21128033c7",
-    "brand/brand_system.json": "65654074aa22f3dcb1f97ac4199a10e5f1127243fafedcec68d0048313adfaa2",
-    "catalog/pipeline_29_candidates.json": "01957038e61e10155858a23bb4bf1983c357b88555f0db1cb45b704919bef36f",
-    "research/research_database_summary.json": "8ec3989df479342fbbb712519aac34776cd21656650d37b346b8d534a2cb9211",
+    "audit/existing_work_audit.json": "d517d96b69e82c91ee72f10993731e4040dbb5f18bbdb7ab02f3868831f5906f",
+    "brand/brand_system.json": "6cbce35094307c22c80c97825f43b3f610b45372e3ff48d7b43686c6a2307370",
+    "catalog/pipeline_29_candidates.json": "3c22b34c307516443385f6215537f843cae79cd11850235e0eff16806829f5bf",
+    "research/research_database_summary.json": "3fd004871532edac5cf677303da2bae561f7b3be095ba7a7e53eb42e2c453764",
     "site/newsletter_signups.json": "5a97fe09f877c0fccee940246e74f27dc5b6bc83148037af241946b350933794",
     "volumes/vol-001-heir-hunting/chapters/chapter-01.md": "4c44fe7e11c2f4af10ed7241bb0f8b49674c33d8c70c91a965cd3a0dab1133f0",
     "volumes/vol-001-heir-hunting/chapters/chapter-02.md": "c9f8705ba384dbbbd713674229cb8dfce45ab4fab27acea1480b476f229ad08b",
@@ -275,6 +275,24 @@
     "volumes/vol-015-judgment-recovery/manuscript.json": "0aea5b2cfa25da0eafb4a174c85d28d6c5405a2e2192e7f4c20f6aca135e2e87",
     "volumes/vol-015-judgment-recovery/metadata.json": "67f6c24f672de875103ea6bdc695016f3450468c1fd1c8e50315adc030220f4e",
     "volumes/vol-015-judgment-recovery/scorecard.json": "7551fbcb10a3aa758e7f1f332e3a91d4118341b376d4ceb3c61435050da23ccf",
-    "volumes/vol-015-judgment-recovery/workbook.json": "5d61b3de7f87b33ccb2d57f6c7076bc483a5e15610b1968234bd4b0f51f07c7a"
+    "volumes/vol-015-judgment-recovery/workbook.json": "5d61b3de7f87b33ccb2d57f6c7076bc483a5e15610b1968234bd4b0f51f07c7a",
+    "volumes/vol-016-probate-real-estate/chapters/chapter-01.md": "80cda6e776065280c91600e3c78dc092b8be5a3800b2238bba4bc765a39c2f11",
+    "volumes/vol-016-probate-real-estate/chapters/chapter-02.md": "d9045b641910f2914018abe0b71040741f0cfcbae2722a54fb5953139c85cd63",
+    "volumes/vol-016-probate-real-estate/chapters/chapter-03.md": "e39eeaac82e848880db8ec4efe4cd1924879443f4d284892cd3d8c660f28a0cd",
+    "volumes/vol-016-probate-real-estate/chapters/chapter-04.md": "54141c69e20c4573af95ac7432a0a4d37d673dd484051e73826dd8350ceede95",
+    "volumes/vol-016-probate-real-estate/chapters/chapter-05.md": "35440bd0831ac1378aaabb6ff866f7b1d550383fc6bde92058ee81415afec808",
+    "volumes/vol-016-probate-real-estate/chapters/chapter-06.md": "acac5befd89b1e16af47922c035ccadfb0a58d3ea5dfb8fd77c6a1f932ad39f4",
+    "volumes/vol-016-probate-real-estate/chapters/chapter-07.md": "e0490179470d6040a8e69cc55f23376a4e937f9214feda02479bf81db629de30",
+    "volumes/vol-016-probate-real-estate/chapters/chapter-08.md": "5daf3ae8d9fe9b0ecc0b5cf142a00a955e8f4a9ea5cbe794a0b937c3415ae8ca",
+    "volumes/vol-016-probate-real-estate/chapters/chapter-09.md": "a596c459ef25c2594c99b38a01a371a5ff6cc7ce9eefa5322f2a202e91f54026",
+    "volumes/vol-016-probate-real-estate/chapters/chapter-10.md": "c8e13d5a7a9d41fa7fba126105c9ba814e9f1e436cbf36b8d4c48d2a76a8346e",
+    "volumes/vol-016-probate-real-estate/chapters/chapter-11.md": "50c2b5d169deb7dc80888ba4c0009355912586dc68447a136c92d87a8ec412ce",
+    "volumes/vol-016-probate-real-estate/chapters/chapter-12.md": "c0429a67eb67377f9e88968b9315ebe03d960448f9edfe34e0d4cb50a0acdd1f",
+    "volumes/vol-016-probate-real-estate/diagrams_data.json": "c5490418a9816eb12388903c81618ba1e578dcf74eb65321b9c0021e3ca5258f",
+    "volumes/vol-016-probate-real-estate/graphics_reviews.json": "1780d138705232aad51e76b2512220ba9cb9ff1525933bf6f6c0c012331a37c5",
+    "volumes/vol-016-probate-real-estate/manuscript.json": "d6b3687247971b5e62732a20949afae2e149d5efa6d74a5d0367a03a7035702b",
+    "volumes/vol-016-probate-real-estate/metadata.json": "ff7dad873085eb71542b4f6fd7bd3b6f3fb2d4c30e001022f4a3207c9ca6496b",
+    "volumes/vol-016-probate-real-estate/scorecard.json": "d31383bdca1b7b255d562a18d7336026510ca500a44e2b0ecbff9089775f5520",
+    "volumes/vol-016-probate-real-estate/workbook.json": "1e061f07d37450fed7516cc4f26fa7f341877813f5a6c205b2f2c66c91f712fa"
   }
 }

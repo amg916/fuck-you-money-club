@@ -19,7 +19,8 @@
     "vol-012-equipment-brokerage",
     "vol-013-intellectual-property-licensing",
     "vol-014-specialty-finance-brokerage",
-    "vol-015-judgment-recovery"
+    "vol-015-judgment-recovery",
+    "vol-016-probate-real-estate"
   ],
   "editorial_tracks": {
     "track_1": {
@@ -17919,7 +17920,7 @@
       "slug": "probate-real-estate",
       "title": "Probate Real Estate",
       "category": "Real estate services",
-      "production_stage": "research_corpus_ready",
+      "production_stage": "approved_master",
       "scores": {
         "revenue_potential": 23,
         "profit_margin_potential": 18,
@@ -23582,5 +23583,5 @@
       "min_expert_youtube_links_per_chapter": 12
     }
   ],
-  "generated_at": "2026-11-21T22:01:36Z"
+  "generated_at": "2026-11-21T22:07:52Z"
 }
