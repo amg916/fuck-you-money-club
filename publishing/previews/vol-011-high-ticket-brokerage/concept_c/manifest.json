@@ -1,0 +1,65 @@
+{
+  "concept_id": "concept_c",
+  "volume_id": "vol-011-high-ticket-brokerage",
+  "approved": false,
+  "edition_status": "concept_preview",
+  "preview_only": true,
+  "files": {
+    "digital_pdf.pdf": {
+      "bytes": 1890857,
+      "sha256": "30ea3ef6efef7e490ff02d78bbc7d9d1a9fcde2b90a037be799dc4ae67c61bd6"
+    },
+    "print_6x9_pdf.pdf": {
+      "bytes": 2453810,
+      "sha256": "54133b3e473f50484dd77dc727288bd6c6b051a802fd78c4b64a7fc0798a3c1f"
+    },
+    "workbook_pdf.pdf": {
+      "bytes": 540146,
+      "sha256": "2e5b82badd86fad11b2caeb88d34a1b2fa41e83b67197e50ae21472d7a690b76"
+    },
+    "book.epub": {
+      "bytes": 278607,
+      "sha256": "36b93160b501fd289cf5592d6224d6f072800bc2e21610dbc1236adb0c2e3552"
+    },
+    "art/cover.svg": {
+      "bytes": 4097,
+      "sha256": "cfc2daaa262a9b2cfe683e0aeb0d452df7ce2ff8b2da70006136464d02287ba7"
+    },
+    "art/scorecard.svg": {
+      "bytes": 75661,
+      "sha256": "356d8c865789e983afe4bc9356501d47374e2793a7339d56a85ac956ccd86550"
+    },
+    "art/diag_01.svg": {
+      "bytes": 12302,
+      "sha256": "6a116851c35965cf38caffcfe842357852cd1f18d0a5fe2d1491b3f08ca6218b"
+    },
+    "art/diag_02.svg": {
+      "bytes": 8801,
+      "sha256": "98ca96a8e117ff094438fee311f0bf4d2818b43f9001417c43e85c7776b9cb86"
+    },
+    "art/diag_03.svg": {
+      "bytes": 12805,
+      "sha256": "ec0ed162708af1c0c52c0da9968c5cf34132ca46e2f70e9a824994fde981c39e"
+    },
+    "art/diag_04.svg": {
+      "bytes": 10162,
+      "sha256": "075c8e44e6bfc9abad73457a7948ebacc197c7f9f3fcf82df9b6bfcd80125aa0"
+    },
+    "art/diag_05.svg": {
+      "bytes": 11036,
+      "sha256": "f2c3792419d72c461a06c05ab8b0cb76028feef72262c9242a1cc67338fdcf90"
+    },
+    "art/diag_06.svg": {
+      "bytes": 10358,
+      "sha256": "5b87991d812997a31f7e89752b90025463cd5b6f8d148243476067d9295f463c"
+    },
+    "art/diag_07.svg": {
+      "bytes": 9616,
+      "sha256": "3006f74c111cb05b7feaa8405d73f9f58156e1fa96cc941eb522b0dcc6d6f8c9"
+    },
+    "art/diag_08.svg": {
+      "bytes": 9024,
+      "sha256": "d11d24284c7008c54ae164e75fe43cb7184579c2ede467714e9c1a221ca1deee"
+    }
+  }
+}

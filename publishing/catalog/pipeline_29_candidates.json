@@ -14,7 +14,8 @@
     "vol-007-unclaimed-property-recovery",
     "vol-008-commercial-lead-generation",
     "vol-009-million-dollar-lead-generation",
-    "vol-010-building-an-seo-empire"
+    "vol-010-building-an-seo-empire",
+    "vol-011-high-ticket-brokerage"
   ],
   "editorial_tracks": {
     "track_1": {
@@ -14269,7 +14270,7 @@
       "slug": "high-ticket-brokerage",
       "title": "High-Ticket Brokerage",
       "category": "Specialist transaction services",
-      "production_stage": "candidate_scored",
+      "production_stage": "approved_master",
       "scores": {
         "revenue_potential": 23,
         "profit_margin_potential": 22,
@@ -14286,11 +14287,11 @@
       },
       "total_score": 82,
       "tier_label": "High-Leverage Operator Play",
-      "evidence_confidence": "Moderate",
-      "uncertainty_band": "±6 pts",
+      "evidence_confidence": "High",
+      "uncertainty_band": "±3 pts",
       "uncertainty_bounds": {
-        "low": 76,
-        "high": 88
+        "low": 79,
+        "high": 85
       },
       "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
       "score_rationale": {
@@ -23577,5 +23578,5 @@
       "min_expert_youtube_links_per_chapter": 12
     }
   ],
-  "generated_at": "2026-11-21T21:27:24Z"
+  "generated_at": "2026-11-21T21:30:28Z"
 }

@@ -1,6 +1,6 @@
 {
-  "abridged_video_count": 1526,
-  "raw_video_count": 1526,
+  "abridged_video_count": 1704,
+  "raw_video_count": 1704,
   "summary": {
     "type": "dict",
     "keys": [
@@ -22,11 +22,11 @@
       "coverage": 6
     },
     "values": {
-      "generated_at": "2026-11-21T21:28:24+00:00",
+      "generated_at": "2026-11-21T21:31:35+00:00",
       "schema_version": "1.0"
     }
   },
-  "generated_at": "2026-11-21T21:28:24Z",
+  "generated_at": "2026-11-21T21:31:35Z",
   "counts": {
     "topics": 8
   },
@@ -34,9 +34,9 @@
     {
       "topic_id": "business_model_and_economics",
       "title": "Business Model, Contingency Economics & Deal Scale",
-      "video_count": 1119,
-      "tip_count": 2495,
-      "channel_count": 772,
+      "video_count": 1279,
+      "tip_count": 2903,
+      "channel_count": 893,
       "top_sources": [
         {
           "video_id": "JVbzH2BD68w",
@@ -67,6 +67,13 @@
           "duration": "00:17:13"
         },
         {
+          "video_id": "Va5USDqv3-A",
+          "title": "What Number Do I Multiply? SDE, EBIT, EBITDA?",
+          "author": "David C Barnett Small Business and Deal Making SMB",
+          "url": "https://www.youtube.com/watch?v=Va5USDqv3-A",
+          "duration": "00:16:44"
+        },
+        {
           "video_id": "9Rig_F79rWo",
           "title": "Micro-SaaS in 2026 🚀 | Build a Profitable SaaS Business with Just $50/Month",
           "author": "TechFuelAI",
@@ -86,13 +93,6 @@
           "author": "Michael Bashi",
           "url": "https://www.youtube.com/watch?v=lh5ulbIfANU",
           "duration": "00:17:50"
-        },
-        {
-          "video_id": "0G_j4pX14MI",
-          "title": "The Simple Way I'm Making Money Online Renting Websites",
-          "author": "Ippei - Rank and Rent SEO",
-          "url": "https://www.youtube.com/watch?v=0G_j4pX14MI",
-          "duration": "00:28:05"
         }
       ],
       "top_timestamped_insights": [
@@ -121,6 +121,15 @@
           "link": "https://www.youtube.com/watch?v=d5TLZqkPX14&t=233s",
           "video_title": "How To Claim Tax Sale Overages",
           "author": "Ted Thomas",
+          "verbatim_research_only": true
+        },
+        {
+          "tip_paraphrase_summary": "Their NDA and in the NDA it actually said that if the buyer did certain nasty things that were against the contract that the…",
+          "category": "Legal / Deadline",
+          "timestamp": "00:06:19",
+          "link": "https://www.youtube.com/watch?v=wHxYmcrcq4M&t=379s",
+          "video_title": "Don't be a Victim of Broker NDA Agreements",
+          "author": "David C Barnett Small Business and Deal Making SMB",
           "verbatim_research_only": true
         },
         {
@@ -160,30 +169,21 @@
           "verbatim_research_only": true
         },
         {
+          "tip_paraphrase_summary": "The multiple gets. This leads us to part four, what owners get wrong. Here are a few things that I hear all of the…",
+          "category": "Non-Negotiable Rule",
+          "timestamp": "00:09:04",
+          "link": "https://www.youtube.com/watch?v=ggUaT-lHV0A&t=544s",
+          "video_title": "How Much Is My Business Really Worth? (How Buyers, Lenders & Brokers Value Small Businesses)",
+          "author": "Deal Street - Small to Lower Middle Market M&A",
+          "verbatim_research_only": true
+        },
+        {
           "tip_paraphrase_summary": "Afirmó contratado esto es mr3 firmó un contrato de 34 mil y pone sobre su bien ticket en medio en un cliente así es…",
           "category": "Legal / Deadline",
           "timestamp": "00:48:19",
           "link": "https://www.youtube.com/watch?v=qgELHrlpUGo&t=2899s",
           "video_title": "Métricas SaaS y cómo modelarlas: MRR, ARR, churn y unit economics",
           "author": "The Startup CFO",
-          "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "Through is recorded, and anytime my client closes any job that comes from my sites, I get paid a commission. So, this was a…",
-          "category": "Pitfall / Hard No",
-          "timestamp": "00:00:22",
-          "link": "https://www.youtube.com/watch?v=raunmaNfU1o&t=22s",
-          "video_title": "21 Niche Service Businesses (Low Competition) – Make Money with Leads",
-          "author": "Ippei - Rank and Rent SEO",
-          "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "I've got 6,610 people in a free community and my first thought was get rid of anybody and everybody who has never contributed, never…",
-          "category": "Pitfall / Hard No",
-          "timestamp": "00:04:10",
-          "link": "https://www.youtube.com/watch?v=8lz_gy-Osw8&t=250s",
-          "video_title": "Are Free Skool Communities Dying? Why I Turned Mine Paid",
-          "author": "Doug Boughton",
           "verbatim_research_only": true
         }
       ],
@@ -198,36 +198,36 @@
         "form you",
         "form the",
         "form where",
-        "form like",
         "form with",
+        "form like",
         "form on",
         "form in",
-        "form so",
         "form your",
-        "form content",
+        "form so",
         "form a",
+        "form content",
         "form if",
         "form as",
-        "form which",
-        "form below",
         "form called",
         "form I",
+        "form which",
+        "form below",
+        "form it",
         "form builder",
         "form here",
         "form right",
         "form submissions",
         "form videos",
         "property Act",
-        "form it",
-        "form um",
-        "letters of administration",
         "form at",
         "form because",
+        "form um",
+        "letters of administration",
+        "Exchange Act",
         "form but",
-        "form well",
-        "form submission",
         "form uh",
-        "form built"
+        "form well",
+        "form now"
       ],
       "tools_and_portals": [
         "Google",
@@ -275,9 +275,9 @@
     {
       "topic_id": "probate_and_docket_sourcing",
       "title": "County Probate Dockets, Intestate Filings & Estate Leads",
-      "video_count": 1047,
-      "tip_count": 1410,
-      "channel_count": 655,
+      "video_count": 1213,
+      "tip_count": 1783,
+      "channel_count": 782,
       "top_sources": [
         {
           "video_id": "oZiYbKNvxJY",
@@ -374,6 +374,15 @@
           "verbatim_research_only": true
         },
         {
+          "tip_paraphrase_summary": "To make sure that they're guided properly so they don't make any costly mistakes that would be devastating. So, I would say it's even…",
+          "category": "Pitfall / Hard No",
+          "timestamp": "00:13:41",
+          "link": "https://www.youtube.com/watch?v=wqPY1eV4vuQ&t=821s",
+          "video_title": "The truth about yacht brokers and boat sales",
+          "author": "Current Yachts",
+          "verbatim_research_only": true
+        },
+        {
           "tip_paraphrase_summary": "You could all a sudden, you know, get that knock on the door, you've inherited 2 million 2 million euro property in Portugal or…",
           "category": "Pitfall / Hard No",
           "timestamp": "00:32:03",
@@ -389,6 +398,15 @@
           "link": "https://www.youtube.com/watch?v=su9KuGnbAW8&t=266s",
           "video_title": "AskAVC #2 - SaaS Churn: what is it?",
           "author": "Ask a VC",
+          "verbatim_research_only": true
+        },
+        {
+          "tip_paraphrase_summary": "Seller, it's not really their fault. They just really haven't had the tough questions asked to them and to put the numbers down and…",
+          "category": "Pitfall / Hard No",
+          "timestamp": "00:29:13",
+          "link": "https://www.youtube.com/watch?v=wqPY1eV4vuQ&t=1753s",
+          "video_title": "The truth about yacht brokers and boat sales",
+          "author": "Current Yachts",
           "verbatim_research_only": true
         },
         {
@@ -408,75 +426,57 @@
           "video_title": "USDA FSA Resources for Heirs: Join FSA as we talk with the Experts (Episode 1-Full Version)",
           "author": "FarmersGov",
           "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "Choice. In our example of the portable quiet AC, I would have a section explaining what this new AC is, why it's so quiet…",
-          "category": "Non-Negotiable Rule",
-          "timestamp": "00:04:57",
-          "link": "https://www.youtube.com/watch?v=rc7rwCDzbg4&t=297s",
-          "video_title": "$57 Affiliate Payouts With $35 Google Ads CPA (Full Funnel Breakdown)",
-          "author": "Aldo Gomes",
-          "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "You guys a cute story. The other day, uh, I was in the market and a real estate agent who never, you know, we're…",
-          "category": "Pitfall / Hard No",
-          "timestamp": "00:34:26",
-          "link": "https://www.youtube.com/watch?v=1BlzkVdGPAo&t=2066s",
-          "video_title": "I got free probate leads from the courthouse! Plus SOI and referral marketing | Podcast Episode 85",
-          "author": "Probate Mastery",
-          "verbatim_research_only": true
         }
       ],
       "statutes_and_forms": [
         "form and",
-        "form of",
         "form that",
+        "form of",
         "form to",
         "form for",
         "form is",
         "form you",
-        "form below",
         "form or",
+        "form below",
         "form the",
         "form a",
         "form your",
         "form in",
-        "form so",
-        "form where",
         "form on",
+        "form where",
+        "form so",
         "form like",
+        "form with",
         "property Act",
         "letters of administration",
-        "form which",
-        "form with",
         "form if",
-        "form we",
         "form it",
-        "form here",
+        "form which",
+        "form we",
         "form I",
-        "form our",
         "form as",
-        "form but",
+        "form here",
+        "form our",
         "Form uh",
-        "form content",
+        "form but",
         "form now",
+        "form them",
+        "form content",
         "letters testamentary",
         "affidavit of heirship",
-        "form Commercial",
-        "form them",
-        "form um",
-        "form will",
+        "Exchange Act",
         "form because",
-        "quiet title"
+        "form Commercial",
+        "form um",
+        "form will"
       ],
       "tools_and_portals": [
         "Google",
         "Facebook",
         "LinkedIn",
         "Ancestry",
-        "CSV",
         "Excel",
+        "CSV",
         "https://excesselite.com",
         "https://www.facebook.com/groups/assetrecovery",
         "https://www.moneymakingjug.com/inquiry",
@@ -516,9 +516,9 @@
     {
       "topic_id": "unclaimed_property_and_escheat",
       "title": "State Unclaimed Property, Escheated Funds & Treasury Claims",
-      "video_count": 516,
-      "tip_count": 1689,
-      "channel_count": 305,
+      "video_count": 542,
+      "tip_count": 1737,
+      "channel_count": 330,
       "top_sources": [
         {
           "video_id": "D-PMjgNe-7s",
@@ -672,10 +672,10 @@
       "statutes_and_forms": [
         "form and",
         "form that",
-        "form below",
         "form of",
-        "form to",
+        "form below",
         "Form is",
+        "form to",
         "form the",
         "form you",
         "form for",
@@ -683,27 +683,27 @@
         "form or",
         "form your",
         "form we",
+        "form with",
         "Property Act",
         "form but",
         "form if",
         "form so",
         "form in",
         "form it",
+        "form on",
         "form our",
         "form them",
-        "form with",
         "Form uh",
         "form um",
         "form where",
         "form which",
         "affidavit of heirship",
+        "form because",
         "form due",
         "form I",
-        "form on",
         "form this",
         "form all",
         "form as",
-        "form because",
         "form fill",
         "form from",
         "form here",
@@ -718,8 +718,8 @@
         "https://excesselite.com",
         "https://www.facebook.com/groups/assetrecovery",
         "https://www.moneymakingjug.com/inquiry",
-        "https://www.instagram.com/erizzyy/",
         "Excel",
+        "https://www.instagram.com/erizzyy/",
         "https://www.surplusfunds101.com/freecallingscript",
         "https://www.youtube.com/surplusfunds101",
         "CSV",
@@ -757,9 +757,9 @@
     {
       "topic_id": "genealogy_and_heirship_proof",
       "title": "Forensic Genealogy, Per-Stirpes Kinship & Proof of Heirship",
-      "video_count": 1282,
-      "tip_count": 1268,
-      "channel_count": 835,
+      "video_count": 1438,
+      "tip_count": 1473,
+      "channel_count": 952,
       "top_sources": [
         {
           "video_id": "7M3XZfN7814",
@@ -820,6 +820,78 @@
       ],
       "top_timestamped_insights": [
         {
+          "tip_paraphrase_summary": "<b>me like sharing it with them?</b> <b>How you know, if I'm</b> <b>looking about it, right?</b> <b>if I'm looking to buy a jet, right?</b> <b>I…",
+          "category": "Insider Tactic",
+          "timestamp": "00:11:35",
+          "link": "https://www.youtube.com/watch?v=i36Xg_tsVAY&t=695s",
+          "video_title": "Understanding Aircraft Brokerage: Standards, Risk, and Trust",
+          "author": "Own The Jet",
+          "verbatim_research_only": true
+        },
+        {
+          "tip_paraphrase_summary": "<b>that we had on it, you</b> <b>got crazy, you might get</b> <b>of like you might get a tax bill from a</b> <b>a tax bill…",
+          "category": "Pitfall / Hard No",
+          "timestamp": "00:21:25",
+          "link": "https://www.youtube.com/watch?v=i36Xg_tsVAY&t=1285s",
+          "video_title": "Understanding Aircraft Brokerage: Standards, Risk, and Trust",
+          "author": "Own The Jet",
+          "verbatim_research_only": true
+        },
+        {
+          "tip_paraphrase_summary": "<b>Or stay away from that.</b> <b>Yeah, exactly.</b> <b>All right, let's get it.</b> <b>Like this guy.</b> <b>All right, let's get it.</b> <b>We're pretty open because…",
+          "category": "Pitfall / Hard No",
+          "timestamp": "00:30:59",
+          "link": "https://www.youtube.com/watch?v=i36Xg_tsVAY&t=1859s",
+          "video_title": "Understanding Aircraft Brokerage: Standards, Risk, and Trust",
+          "author": "Own The Jet",
+          "verbatim_research_only": true
+        },
+        {
+          "tip_paraphrase_summary": "<b>$17,000 to this state?</b> <b>to this state or whatever, whatever, you</b> <b>know, the tax bill ends up being.</b> <b>The tax bill ends up being.</b>…",
+          "category": "Pitfall / Hard No",
+          "timestamp": "00:21:46",
+          "link": "https://www.youtube.com/watch?v=i36Xg_tsVAY&t=1306s",
+          "video_title": "Understanding Aircraft Brokerage: Standards, Risk, and Trust",
+          "author": "Own The Jet",
+          "verbatim_research_only": true
+        },
+        {
+          "tip_paraphrase_summary": "<b>certificate, which shows</b> <b>you've kind of competed and new members</b> <b>who don't have</b> <b>experience must complete that in</b> <b>experience must complete that in</b> <b>the…",
+          "category": "Pitfall / Hard No",
+          "timestamp": "00:10:19",
+          "link": "https://www.youtube.com/watch?v=i36Xg_tsVAY&t=619s",
+          "video_title": "Understanding Aircraft Brokerage: Standards, Risk, and Trust",
+          "author": "Own The Jet",
+          "verbatim_research_only": true
+        },
+        {
+          "tip_paraphrase_summary": "<b>And that's the one thing our industry</b> <b>breeds, is because these</b> <b>dynamic sales people, they</b> <b>go, \"Well, you know, I</b> <b>don't need these guys…",
+          "category": "Pitfall / Hard No",
+          "timestamp": "00:32:52",
+          "link": "https://www.youtube.com/watch?v=i36Xg_tsVAY&t=1972s",
+          "video_title": "Understanding Aircraft Brokerage: Standards, Risk, and Trust",
+          "author": "Own The Jet",
+          "verbatim_research_only": true
+        },
+        {
+          "tip_paraphrase_summary": "Or group of buyers has the right to vote 25% or more of the securities, has the power to sell or direct the sale…",
+          "category": "Non-Negotiable Rule",
+          "timestamp": "00:02:38",
+          "link": "https://www.youtube.com/watch?v=o-XOblDUBuI&t=158s",
+          "video_title": "Federal M&A Broker Exemption",
+          "author": "ALC Lawcast: Finance in Focus",
+          "verbatim_research_only": true
+        },
+        {
+          "tip_paraphrase_summary": "Only worth four the truthfulness and just being able to tell the bad news because no matter how great a business is there are…",
+          "category": "Non-Negotiable Rule",
+          "timestamp": "00:00:29",
+          "link": "https://www.youtube.com/watch?v=fAVVcCIVQeE&t=29s",
+          "video_title": "Business Brokers Vs M&A Advisors | The Vant Group",
+          "author": "The Vant Group",
+          "verbatim_research_only": true
+        },
+        {
           "tip_paraphrase_summary": "You do have to go through a court process in order to do that. So don't do that on your own. Also, while the…",
           "category": "Pitfall / Hard No",
           "timestamp": "00:48:01",
@@ -836,78 +908,6 @@
           "video_title": "Analyzing Evidence: A Research Game Changer",
           "author": "FamilySearch",
           "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "Or not, always a quality you're looking for. So you really want to diversify 100% next up, participate in the marketing of your agency.…",
-          "category": "Pitfall / Hard No",
-          "timestamp": "00:00:50",
-          "link": "https://www.youtube.com/watch?v=Y0_RWqy9tFM&t=50s",
-          "video_title": "Find Commercial Insurance Clients with These 10 Lead Generation Tactics",
-          "author": "Agency Performance Partners",
-          "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "Which is why I placed this one in bucket one. I place Christina's application for back pay in bucket two. I have never researched…",
-          "category": "Pitfall / Hard No",
-          "timestamp": "00:14:27",
-          "link": "https://www.youtube.com/watch?v=R50W1KDrRPw&t=867s",
-          "video_title": "From Questionable to Credible: Analyzing and Verifying Genealogical Sources",
-          "author": "FamilySearch",
-          "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "A really small town where I, I know they lived and the sister was living next door so I don't know what's going on…",
-          "category": "Pitfall / Hard No",
-          "timestamp": "00:23:56",
-          "link": "https://www.youtube.com/watch?v=JIUMf1OHaY0&t=1436s",
-          "video_title": "Extracting Evidence: Strategies for Analyzing Genealogical Sources",
-          "author": "FamilySearch",
-          "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "Is guess what? All these businesses want their people to do by. Ask for referrals, make calls you can also get into In going…",
-          "category": "Legal / Deadline",
-          "timestamp": "00:02:51",
-          "link": "https://www.youtube.com/watch?v=Y0_RWqy9tFM&t=171s",
-          "video_title": "Find Commercial Insurance Clients with These 10 Lead Generation Tactics",
-          "author": "Agency Performance Partners",
-          "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "Credits. So, if you have not yet gotten credits from your VC or from your accelerator, or if you got less than $100,000 in…",
-          "category": "Legal / Deadline",
-          "timestamp": "00:01:11",
-          "link": "https://www.youtube.com/watch?v=MO1ZQ4wyWeM&t=71s",
-          "video_title": "How to Get $100K in Credits for Claude as a Startup",
-          "author": "Neta Arbel | Growthgrid",
-          "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "We have the right to say no we won't want to do it or we can't do it But you also include the fact…",
-          "category": "Pitfall / Hard No",
-          "timestamp": "00:01:50",
-          "link": "https://www.youtube.com/watch?v=UgtrG88EDhU&t=110s",
-          "video_title": "How to Handle Scope Creep in Client Projects",
-          "author": "WPTuts",
-          "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "On how far it goes back. And then start doing your research on finding out who those potential heirs are who are all the…",
-          "category": "Pitfall / Hard No",
-          "timestamp": "00:04:54",
-          "link": "https://www.youtube.com/watch?v=whDzDrFNADQ&t=294s",
-          "video_title": "USDA FSA Resources for Heirs: Join FSA as we talk with the Experts (Episode 1-Full Version)",
-          "author": "FarmersGov",
-          "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "Value of the probate files for research first of all and most importantly it helps to identify family members the actual family members let's…",
-          "category": "Pitfall / Hard No",
-          "timestamp": "00:12:01",
-          "link": "https://www.youtube.com/watch?v=Yt91gmZt8sE&t=721s",
-          "video_title": "Discovering Your Ancestors Using Probate Records- James Tanner",
-          "author": "BYU Library Family History Center",
-          "verbatim_research_only": true
         }
       ],
       "statutes_and_forms": [
@@ -915,42 +915,42 @@
         "form that",
         "form of",
         "form to",
-        "form is",
         "form for",
-        "form or",
+        "form is",
         "form you",
+        "form or",
         "form the",
         "form with",
-        "form below",
         "form where",
-        "form on",
-        "form so",
         "form a",
+        "form below",
+        "form on",
         "form in",
         "form like",
+        "form so",
         "form your",
         "form content",
         "form as",
         "form if",
         "form which",
-        "property Act",
         "form at",
-        "form here",
         "form I",
+        "property Act",
+        "form here",
+        "form it",
+        "form called",
         "letters of administration",
         "form builder",
-        "form called",
-        "form it",
         "form submissions",
+        "Form uh",
         "form videos",
         "form right",
-        "Form uh",
+        "Exchange Act",
         "form because",
-        "form well",
-        "form this",
-        "form um",
         "form we",
-        "form from"
+        "form well",
+        "form them",
+        "form this"
       ],
       "tools_and_portals": [
         "Google",
@@ -998,9 +998,9 @@
     {
       "topic_id": "skip_tracing_and_outreach",
       "title": "Skip Tracing, Ethical Heir Contact & Trust Building",
-      "video_count": 883,
-      "tip_count": 806,
-      "channel_count": 615,
+      "video_count": 1006,
+      "tip_count": 852,
+      "channel_count": 709,
       "top_sources": [
         {
           "video_id": "DgzklijTLzE",
@@ -1142,12 +1142,12 @@
           "verbatim_research_only": true
         },
         {
-          "tip_paraphrase_summary": "Running with this model, this is like the traditional agency/service provider model. um you uh the way I do it is the the clients…",
-          "category": "Legal / Deadline",
-          "timestamp": "00:26:16",
-          "link": "https://www.youtube.com/watch?v=MlJ3XSy3k7A&t=1576s",
-          "video_title": "How To Book Sales Calls For Your Agency With AI Cold Email Outreach",
-          "author": "Johnny",
+          "tip_paraphrase_summary": "System at [Music] safer.fmcsa.dot.gov simply click on company snapshot here you'll see three different options usdot number mcmx number and name as well as…",
+          "category": "Non-Negotiable Rule",
+          "timestamp": "00:02:00",
+          "link": "https://www.youtube.com/watch?v=XuAjQG6VmJg&t=120s",
+          "video_title": "Due Diligence",
+          "author": "OOIDA Foundation",
           "verbatim_research_only": true
         }
       ],
@@ -1160,38 +1160,38 @@
         "form or",
         "form you",
         "form is",
-        "form the",
         "form your",
+        "form the",
         "form where",
         "form like",
         "form a",
-        "form so",
         "form on",
-        "form below",
-        "form in",
         "form with",
+        "form in",
+        "form so",
+        "form below",
         "form content",
         "form which",
         "form as",
         "Form uh",
-        "form here",
         "form if",
         "form called",
+        "form here",
         "form I",
+        "form it",
         "form um",
+        "form at",
         "form builder",
         "form but",
         "form our",
         "form right",
-        "form at",
-        "form it",
         "form because",
-        "form fill",
-        "form videos",
         "Protection Act",
-        "SPAM Act",
-        "form built",
-        "form does"
+        "form fill",
+        "form now",
+        "form them",
+        "form videos",
+        "form what"
       ],
       "tools_and_portals": [
         "Google",
@@ -1201,8 +1201,8 @@
         "Excel",
         "https://excesselite.com",
         "https://www.facebook.com/groups/assetrecovery",
-        "https://www.moneymakingjug.com/inquiry",
         "Bing",
+        "https://www.moneymakingjug.com/inquiry",
         "https://www.surplusfunds101.com/freecallingscript",
         "https://www.youtube.com/surplusfunds101",
         "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
@@ -1239,9 +1239,9 @@
     {
       "topic_id": "contracts_and_compensation",
       "title": "Fee Agreements, Assignments of Interest & Escrow Disbursement",
-      "video_count": 1220,
-      "tip_count": 1644,
-      "channel_count": 804,
+      "video_count": 1361,
+      "tip_count": 1775,
+      "channel_count": 909,
       "top_sources": [
         {
           "video_id": "VBvaq5etzV4",
@@ -1258,11 +1258,25 @@
           "duration": "00:03:48"
         },
         {
+          "video_id": "IK3LgAFr-QQ",
+          "title": "The Deposit and Escrow Instructions",
+          "author": "Title's Not Borin' with Lauren",
+          "url": "https://www.youtube.com/watch?v=IK3LgAFr-QQ",
+          "duration": "00:03:36"
+        },
+        {
           "video_id": "GWuQIN0aSwQ",
           "title": "What liens remain on a title search after foreclosure?",
           "author": "Private Investigator Videos",
           "url": "https://www.youtube.com/watch?v=GWuQIN0aSwQ",
           "duration": "00:02:49"
+        },
+        {
+          "video_id": "FKep5tuU15Q",
+          "title": "Does A Non Disclosure Agreement Need To Be Notarized?",
+          "author": "County Portal Law",
+          "url": "https://www.youtube.com/watch?v=FKep5tuU15Q",
+          "duration": "00:02:43"
         },
         {
           "video_id": "KhY7TkJppys",
@@ -1284,20 +1298,6 @@
           "author": "Nick Fullmer- Overage Syndicate",
           "url": "https://www.youtube.com/watch?v=KOYBZFn2k7w",
           "duration": "00:06:41"
-        },
-        {
-          "video_id": "Qn63DtrxFts",
-          "title": "How to Build a Nationwide Notary Team (Step-by-Step)",
-          "author": "Surplus Funds 101",
-          "url": "https://www.youtube.com/watch?v=Qn63DtrxFts",
-          "duration": "00:04:19"
-        },
-        {
-          "video_id": "ngCxldTE3UI",
-          "title": "How to Move your High-ticket Consulting Clients Onto Retainers",
-          "author": "Ana Leiman",
-          "url": "https://www.youtube.com/watch?v=ngCxldTE3UI",
-          "duration": "00:13:52"
         }
       ],
       "top_timestamped_insights": [
@@ -1397,42 +1397,42 @@
         "form that",
         "form of",
         "form to",
-        "Form is",
         "form for",
+        "Form is",
         "form or",
         "form you",
         "form the",
-        "form below",
         "form with",
+        "form below",
         "form like",
         "form on",
-        "form where",
         "form in",
+        "form where",
         "form a",
-        "form so",
         "form your",
+        "form so",
         "form content",
         "form as",
         "form I",
         "form if",
-        "property Act",
         "form at",
+        "property Act",
+        "form called",
         "form here",
+        "form it",
+        "Form uh",
         "form which",
         "letters of administration",
-        "form called",
-        "Form uh",
         "form builder",
-        "form it",
         "form submissions",
+        "form we",
         "form um",
         "form videos",
-        "form we",
         "form because",
         "form our",
         "form right",
         "form well",
-        "form fill"
+        "Exchange Act"
       ],
       "tools_and_portals": [
         "Google",
@@ -1446,8 +1446,8 @@
         "https://www.moneymakingjug.com/inquiry",
         "https://www.instagram.com/erizzyy/",
         "FamilySearch",
-        "https://www.surplusfunds101.com/freecallingscript",
         "Bing",
+        "https://www.surplusfunds101.com/freecallingscript",
         "https://www.youtube.com/surplusfunds101",
         "https://wise.com/invite/dic/todorivanovk1",
         "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
@@ -1480,9 +1480,9 @@
     {
       "topic_id": "statutory_caps_and_licensing",
       "title": "State Fee Caps, Waiting Periods, PI Licensing & UPL Rules",
-      "video_count": 1146,
-      "tip_count": 899,
-      "channel_count": 728,
+      "video_count": 1321,
+      "tip_count": 1135,
+      "channel_count": 861,
       "top_sources": [
         {
           "video_id": "zrj6RA8N9HA",
@@ -1499,11 +1499,32 @@
           "duration": "00:06:33"
         },
         {
+          "video_id": "CoD81HjwtQo",
+          "title": "Understanding Licensing Requirements for Business Brokers",
+          "author": "Business Broker Crowd Call",
+          "url": "https://www.youtube.com/watch?v=CoD81HjwtQo",
+          "duration": "00:08:07"
+        },
+        {
+          "video_id": "Wj1uuYyuyQk",
+          "title": "Navigating Business Broker Licensing Across States | Tips & Advice",
+          "author": "Business Broker Crowd Call",
+          "url": "https://www.youtube.com/watch?v=Wj1uuYyuyQk",
+          "duration": "00:06:31"
+        },
+        {
           "video_id": "KiR-ZUeCE5g",
           "title": "Unclaimed Property in Tennessee: Understanding Audits, Compliance, and Negative Reports",
           "author": "TNTreasury",
           "url": "https://www.youtube.com/watch?v=KiR-ZUeCE5g",
           "duration": "00:03:29"
+        },
+        {
+          "video_id": "uRVS3zWAYwI",
+          "title": "Real Estate Licensing and Referral Fees in Business Brokerage",
+          "author": "Business Broker Crowd Call",
+          "url": "https://www.youtube.com/watch?v=uRVS3zWAYwI",
+          "duration": "00:04:30"
         },
         {
           "video_id": "vp2uuB23fww",
@@ -1518,30 +1539,18 @@
           "author": "Mass Tort Institute",
           "url": "https://www.youtube.com/watch?v=0VBYF3XIGBE",
           "duration": "00:02:33"
-        },
-        {
-          "video_id": "HPkIpR-sbx4",
-          "title": "FINRA Rule 2220 Explained Options Communications, Advertising Rules & Broker Dealer Compliance",
-          "author": "Financial Regulation Courses",
-          "url": "https://www.youtube.com/watch?v=HPkIpR-sbx4",
-          "duration": "00:03:38"
-        },
-        {
-          "video_id": "Hd19AToxex4",
-          "title": "Why Lead Sellers Shouldn’t Fear TCPA Compliance (It’s a Competitive Advantage)",
-          "author": "LeadCaptureIO",
-          "url": "https://www.youtube.com/watch?v=Hd19AToxex4",
-          "duration": "00:14:36"
-        },
-        {
-          "video_id": "TA4mtGUeNo8",
-          "title": "Probate Data and Property Lookups: Live Real Estate Coaching with Probate Mastery",
-          "author": "Probate Mastery",
-          "url": "https://www.youtube.com/watch?v=TA4mtGUeNo8",
-          "duration": "00:44:21"
         }
       ],
       "top_timestamped_insights": [
+        {
+          "tip_paraphrase_summary": "<b>that started, they heard</b> <b>about the regulation coming,</b> <b>so they jumped in</b> <b>front of it, did licensing.</b> <b>licensing, did that kind</b> <b>Oh, I see.</b>…",
+          "category": "Pitfall / Hard No",
+          "timestamp": "00:04:01",
+          "link": "https://www.youtube.com/watch?v=i36Xg_tsVAY&t=241s",
+          "video_title": "Understanding Aircraft Brokerage: Standards, Risk, and Trust",
+          "author": "Own The Jet",
+          "verbatim_research_only": true
+        },
         {
           "tip_paraphrase_summary": "Buy a script or I'm sorry, an agreement off of somebody else, you can hire an attorney where you just can create one, but…",
           "category": "Pitfall / Hard No",
@@ -1622,15 +1631,6 @@
           "video_title": "OpenRouter vs LiteLLM: Which Should You Self-Host?",
           "author": "Bryan Software",
           "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "Grab that right now and start using it immediately to go get deals, but with that being said, you guys... Let's get into the…",
-          "category": "Non-Negotiable Rule",
-          "timestamp": "00:01:12",
-          "link": "https://www.youtube.com/watch?v=TTfaOSBvLDc&t=72s",
-          "video_title": "State Funds Tutorial Delaware: Registering As A Property Locator For The State Of Delaware.",
-          "author": "Surplus Funds 101",
-          "verbatim_research_only": true
         }
       ],
       "statutes_and_forms": [
@@ -1645,35 +1645,35 @@
         "form the",
         "form below",
         "form a",
+        "form on",
         "form your",
         "form in",
-        "form on",
         "form where",
-        "form so",
         "form with",
         "form like",
+        "form so",
         "property Act",
-        "letters of administration",
         "form if",
+        "letters of administration",
         "form I",
+        "form it",
         "Form uh",
         "form we",
         "form which",
-        "form here",
-        "form it",
-        "form our",
-        "form but",
         "form content",
+        "form here",
+        "form our",
+        "Exchange Act",
         "form as",
+        "form but",
         "form now",
-        "form um",
         "form because",
+        "form them",
+        "form um",
         "letters testamentary",
         "affidavit of heirship",
-        "form Commercial",
-        "form right",
-        "form them",
-        "form then"
+        "form better",
+        "form called"
       ],
       "tools_and_portals": [
         "Google",
@@ -1721,9 +1721,9 @@
     {
       "topic_id": "automation_and_small_team_ops",
       "title": "Docket Automation, AI Abstracting & Small-Team Operations",
-      "video_count": 1285,
-      "tip_count": 4045,
-      "channel_count": 847,
+      "video_count": 1381,
+      "tip_count": 4192,
+      "channel_count": 929,
       "top_sources": [
         {
           "video_id": "zqtx1Soeq5E",
@@ -1885,25 +1885,25 @@
         "form you",
         "form the",
         "form with",
-        "form so",
         "form where",
-        "form below",
-        "form your",
+        "form so",
         "form on",
         "form a",
-        "form like",
+        "form below",
+        "form your",
         "form in",
+        "form like",
         "form content",
         "form if",
-        "form as",
         "form it",
+        "form as",
         "form which",
         "form I",
-        "form but",
-        "form um",
         "form we",
         "form at",
         "form because",
+        "form but",
+        "form um",
         "form here",
         "form builder",
         "form called",
@@ -1928,8 +1928,8 @@
         "https://www.moneymakingjug.com/inquiry",
         "https://www.instagram.com/erizzyy/",
         "FamilySearch",
-        "https://www.surplusfunds101.com/freecallingscript",
         "Bing",
+        "https://www.surplusfunds101.com/freecallingscript",
         "https://www.youtube.com/surplusfunds101",
         "https://wise.com/invite/dic/todorivanovk1",
         "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
@@ -1968,9 +1968,9 @@
       "headline": "Heir location is paid on contingency, never on up-front fees.",
       "summary": "Across the corpus, operators converge on a pure contingency model: the heir pays nothing out of pocket, the locator advances all research cost, and the fee is a negotiated percentage released only when the estate or state agency actually disburses funds. Charging an heir an advance fee is treated as the single clearest marker of a predatory or unlicensed operator.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 772,
-      "video_count": 1119,
-      "corroborating_tip_count": 2495,
+      "channel_count": 893,
+      "video_count": 1279,
+      "corroborating_tip_count": 2903,
       "supporting_links": [
         {
           "video_title": "State Funds Tutorial New Mexico: How To Register As A Property Locator In The State Of New Mexico.",
@@ -1991,6 +1991,12 @@
           "link": "https://www.youtube.com/watch?v=d5TLZqkPX14&t=233s"
         },
         {
+          "video_title": "Don't be a Victim of Broker NDA Agreements",
+          "author": "David C Barnett Small Business and Deal Making SMB",
+          "timestamp": "00:06:19",
+          "link": "https://www.youtube.com/watch?v=wHxYmcrcq4M&t=379s"
+        },
+        {
           "video_title": "How To Claim Surplus Funds From Foreclosure",
           "author": "Bob Diamond - America's Tax Sale Attorney",
           "timestamp": "00:05:14",
@@ -2001,12 +2007,6 @@
           "author": "Michael Bashi",
           "timestamp": "00:01:35",
           "link": "https://www.youtube.com/watch?v=lh5ulbIfANU&t=95s"
-        },
-        {
-          "video_title": "How To Find Tax Sale Overages",
-          "author": "Bob Diamond - America's Tax Sale Attorney",
-          "timestamp": "00:02:09",
-          "link": "https://www.youtube.com/watch?v=4O5XeYwMAts&t=129s"
         }
       ],
       "caveat": "Consensus among the sampled operators — not legal advice and not a substitute for the governing statute in the reader's jurisdiction."
@@ -2018,9 +2018,9 @@
       "headline": "Fresh county probate and intestate dockets outperform purchased lead lists.",
       "summary": "Practitioners consistently build pipeline from newly filed probate and administration matters pulled directly from county clerk portals rather than resold lists. Filings naming an administrator but no located heirs, and estates sitting open past the local notice period, are the recurring high-value signal.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 655,
-      "video_count": 1047,
-      "corroborating_tip_count": 1410,
+      "channel_count": 782,
+      "video_count": 1213,
+      "corroborating_tip_count": 1783,
       "supporting_links": [
         {
           "video_title": "$57 Affiliate Payouts With $35 Google Ads CPA (Full Funnel Breakdown)",
@@ -2047,16 +2047,16 @@
           "link": "https://www.youtube.com/watch?v=BF1KHGKUa78&t=303s"
         },
         {
+          "video_title": "The truth about yacht brokers and boat sales",
+          "author": "Current Yachts",
+          "timestamp": "00:13:41",
+          "link": "https://www.youtube.com/watch?v=wqPY1eV4vuQ&t=821s"
+        },
+        {
           "video_title": "Unclaimed Estates & Abandoned Properties in Spain - tracing Heirs Worldwide",
           "author": "My Lawyer In Spain",
           "timestamp": "00:32:03",
           "link": "https://www.youtube.com/watch?v=ywaYY4cPtAY&t=1923s"
-        },
-        {
-          "video_title": "AskAVC #2 - SaaS Churn: what is it?",
-          "author": "Ask a VC",
-          "timestamp": "00:04:26",
-          "link": "https://www.youtube.com/watch?v=su9KuGnbAW8&t=266s"
         }
       ],
       "caveat": "Consensus among the sampled operators — not legal advice and not a substitute for the governing statute in the reader's jurisdiction."
@@ -2068,9 +2068,9 @@
       "headline": "State unclaimed-property and escheat databases supply the repeatable volume.",
       "summary": "Every state treasury or controller maintains a searchable unclaimed-property register, and the consensus workflow is to cross-reference deceased owners there against probate filings. Volume comes from systematic register sweeps; size comes from the rarer escheated estate, surplus-funds and safe-deposit categories.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 305,
-      "video_count": 516,
-      "corroborating_tip_count": 1689,
+      "channel_count": 330,
+      "video_count": 542,
+      "corroborating_tip_count": 1737,
       "supporting_links": [
         {
           "video_title": "How To Claim Surplus Funds From Foreclosure",
@@ -2118,45 +2118,45 @@
       "headline": "The deliverable is a document-backed kinship chain, not a name on a list.",
       "summary": "Operators agree that claims succeed or fail on the evidentiary chain: each generational link supported by vital records, each branch mapped per stirpes, and every gap closed before contact. Tree hints from consumer genealogy sites are treated as leads to verify, never as proof to submit.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 835,
-      "video_count": 1282,
-      "corroborating_tip_count": 1268,
+      "channel_count": 952,
+      "video_count": 1438,
+      "corroborating_tip_count": 1473,
       "supporting_links": [
         {
-          "video_title": "Resolving Heirs' Property",
-          "author": "MD Ag Law Education Initiative",
-          "timestamp": "00:48:01",
-          "link": "https://www.youtube.com/watch?v=TP6n8TBsCGs&t=2881s"
+          "video_title": "Understanding Aircraft Brokerage: Standards, Risk, and Trust",
+          "author": "Own The Jet",
+          "timestamp": "00:11:35",
+          "link": "https://www.youtube.com/watch?v=i36Xg_tsVAY&t=695s"
         },
         {
-          "video_title": "Analyzing Evidence: A Research Game Changer",
-          "author": "FamilySearch",
-          "timestamp": "00:44:35",
-          "link": "https://www.youtube.com/watch?v=tljNDoj74TI&t=2675s"
+          "video_title": "Understanding Aircraft Brokerage: Standards, Risk, and Trust",
+          "author": "Own The Jet",
+          "timestamp": "00:21:25",
+          "link": "https://www.youtube.com/watch?v=i36Xg_tsVAY&t=1285s"
         },
         {
-          "video_title": "Find Commercial Insurance Clients with These 10 Lead Generation Tactics",
-          "author": "Agency Performance Partners",
-          "timestamp": "00:00:50",
-          "link": "https://www.youtube.com/watch?v=Y0_RWqy9tFM&t=50s"
+          "video_title": "Understanding Aircraft Brokerage: Standards, Risk, and Trust",
+          "author": "Own The Jet",
+          "timestamp": "00:30:59",
+          "link": "https://www.youtube.com/watch?v=i36Xg_tsVAY&t=1859s"
         },
         {
-          "video_title": "From Questionable to Credible: Analyzing and Verifying Genealogical Sources",
-          "author": "FamilySearch",
-          "timestamp": "00:14:27",
-          "link": "https://www.youtube.com/watch?v=R50W1KDrRPw&t=867s"
+          "video_title": "Understanding Aircraft Brokerage: Standards, Risk, and Trust",
+          "author": "Own The Jet",
+          "timestamp": "00:21:46",
+          "link": "https://www.youtube.com/watch?v=i36Xg_tsVAY&t=1306s"
         },
         {
-          "video_title": "Extracting Evidence: Strategies for Analyzing Genealogical Sources",
-          "author": "FamilySearch",
-          "timestamp": "00:23:56",
-          "link": "https://www.youtube.com/watch?v=JIUMf1OHaY0&t=1436s"
+          "video_title": "Understanding Aircraft Brokerage: Standards, Risk, and Trust",
+          "author": "Own The Jet",
+          "timestamp": "00:10:19",
+          "link": "https://www.youtube.com/watch?v=i36Xg_tsVAY&t=619s"
         },
         {
-          "video_title": "Find Commercial Insurance Clients with These 10 Lead Generation Tactics",
-          "author": "Agency Performance Partners",
-          "timestamp": "00:02:51",
-          "link": "https://www.youtube.com/watch?v=Y0_RWqy9tFM&t=171s"
+          "video_title": "Understanding Aircraft Brokerage: Standards, Risk, and Trust",
+          "author": "Own The Jet",
+          "timestamp": "00:32:52",
+          "link": "https://www.youtube.com/watch?v=i36Xg_tsVAY&t=1972s"
         }
       ],
       "caveat": "Consensus among the sampled operators — not legal advice and not a substitute for the governing statute in the reader's jurisdiction."
@@ -2168,9 +2168,9 @@
       "headline": "Verify identity before contact, then lead with restraint, not the dollar figure.",
       "summary": "The recurring outreach pattern is: skip trace to a confirmed current address and phone, open by letter or a short calm call, state that funds may be owed to the family without naming an amount, and give the heir a way to independently verify the operator. Pressure tactics and inflated figures are consistently reported as the fastest way to lose a signed file.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 615,
-      "video_count": 883,
-      "corroborating_tip_count": 806,
+      "channel_count": 709,
+      "video_count": 1006,
+      "corroborating_tip_count": 852,
       "supporting_links": [
         {
           "video_title": "How to Get Unlimited Leads Using Clay Enrichment Waterfall | clay.com Tutorial",
@@ -2218,9 +2218,9 @@
       "headline": "No work proceeds without a signed fee agreement and third-party escrow.",
       "summary": "Consensus practice is a plain-language, notarized or e-signed agreement that names the estate, states the percentage, discloses the heir's right to claim independently, and routes funds through attorney trust or licensed escrow so the locator never holds the heir's money directly.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 804,
-      "video_count": 1220,
-      "corroborating_tip_count": 1644,
+      "channel_count": 909,
+      "video_count": 1361,
+      "corroborating_tip_count": 1775,
       "supporting_links": [
         {
           "video_title": "Topical Authority With Koray Tuğberk GÜBÜR",
@@ -2268,10 +2268,16 @@
       "headline": "Fee caps, waiting periods and licensing are decided per state, before the first call.",
       "summary": "Operators repeatedly stress that the governing rules — percentage caps on unclaimed-property recoveries, mandatory waiting periods after escheat or sale, private-investigator licensing triggers, and the line against practicing law — vary by jurisdiction and must be read in the local statute for every file rather than generalized from another state.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 728,
-      "video_count": 1146,
-      "corroborating_tip_count": 899,
+      "channel_count": 861,
+      "video_count": 1321,
+      "corroborating_tip_count": 1135,
       "supporting_links": [
+        {
+          "video_title": "Understanding Aircraft Brokerage: Standards, Risk, and Trust",
+          "author": "Own The Jet",
+          "timestamp": "00:04:01",
+          "link": "https://www.youtube.com/watch?v=i36Xg_tsVAY&t=241s"
+        },
         {
           "video_title": "State Funds Tutorial: First Steps For Somebody Brand New To Unclaimed Funds Business.",
           "author": "Surplus Funds 101",
@@ -2301,12 +2307,6 @@
           "author": "FarmersGov",
           "timestamp": "00:16:23",
           "link": "https://www.youtube.com/watch?v=whDzDrFNADQ&t=983s"
-        },
-        {
-          "video_title": "8 Surplus Funds Deals Within 3 Months of Starting The Business",
-          "author": "Nick Fullmer- Overage Syndicate",
-          "timestamp": "00:20:09",
-          "link": "https://www.youtube.com/watch?v=vd__NHmQYgM&t=1209s"
         }
       ],
       "caveat": "Consensus among the sampled operators — not legal advice and not a substitute for the governing statute in the reader's jurisdiction."
@@ -2318,9 +2318,9 @@
       "headline": "Automated docket monitoring plus AI abstracting lets one or two people run real volume.",
       "summary": "The operational consensus is to automate the repetitive layer — scheduled docket and register pulls, structured intake into a sheet or CRM, AI-assisted abstracting of filings — while keeping genealogy judgment, heir contact and contract execution human. That split is what keeps a two-person shop competitive against staffed firms.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 847,
-      "video_count": 1285,
-      "corroborating_tip_count": 4045,
+      "channel_count": 929,
+      "video_count": 1381,
+      "corroborating_tip_count": 4192,
       "supporting_links": [
         {
           "video_title": "State Funds Tutorial: 5 Tech Tools For Your State Funds Business",
@@ -2378,6 +2378,12 @@
       "priority": "high",
       "corpus_references": [
         {
+          "video_title": "Understanding Aircraft Brokerage: Standards, Risk, and Trust",
+          "author": "Own The Jet",
+          "timestamp": "00:04:01",
+          "link": "https://www.youtube.com/watch?v=i36Xg_tsVAY&t=241s"
+        },
+        {
           "video_title": "State Funds Tutorial: First Steps For Somebody Brand New To Unclaimed Funds Business.",
           "author": "Surplus Funds 101",
           "timestamp": "00:14:47",
@@ -2394,12 +2400,6 @@
           "author": "Surplus Funds 101",
           "timestamp": "00:03:31",
           "link": "https://www.youtube.com/watch?v=TTfaOSBvLDc&t=211s"
-        },
-        {
-          "video_title": "State Funds Tutorial New Mexico: How To Register As A Property Locator In The State Of New Mexico.",
-          "author": "Surplus Funds 101",
-          "timestamp": "00:07:16",
-          "link": "https://www.youtube.com/watch?v=6yIKsJMj6Gk&t=436s"
         }
       ]
     },
@@ -2418,6 +2418,12 @@
       "priority": "high",
       "corpus_references": [
         {
+          "video_title": "Understanding Aircraft Brokerage: Standards, Risk, and Trust",
+          "author": "Own The Jet",
+          "timestamp": "00:04:01",
+          "link": "https://www.youtube.com/watch?v=i36Xg_tsVAY&t=241s"
+        },
+        {
           "video_title": "State Funds Tutorial: First Steps For Somebody Brand New To Unclaimed Funds Business.",
           "author": "Surplus Funds 101",
           "timestamp": "00:14:47",
@@ -2434,12 +2440,6 @@
           "author": "Surplus Funds 101",
           "timestamp": "00:03:31",
           "link": "https://www.youtube.com/watch?v=TTfaOSBvLDc&t=211s"
-        },
-        {
-          "video_title": "State Funds Tutorial New Mexico: How To Register As A Property Locator In The State Of New Mexico.",
-          "author": "Surplus Funds 101",
-          "timestamp": "00:07:16",
-          "link": "https://www.youtube.com/watch?v=6yIKsJMj6Gk&t=436s"
         }
       ]
     },
@@ -2458,6 +2458,12 @@
       "priority": "high",
       "corpus_references": [
         {
+          "video_title": "Understanding Aircraft Brokerage: Standards, Risk, and Trust",
+          "author": "Own The Jet",
+          "timestamp": "00:04:01",
+          "link": "https://www.youtube.com/watch?v=i36Xg_tsVAY&t=241s"
+        },
+        {
           "video_title": "State Funds Tutorial: First Steps For Somebody Brand New To Unclaimed Funds Business.",
           "author": "Surplus Funds 101",
           "timestamp": "00:14:47",
@@ -2474,12 +2480,6 @@
           "author": "Surplus Funds 101",
           "timestamp": "00:03:31",
           "link": "https://www.youtube.com/watch?v=TTfaOSBvLDc&t=211s"
-        },
-        {
-          "video_title": "State Funds Tutorial New Mexico: How To Register As A Property Locator In The State Of New Mexico.",
-          "author": "Surplus Funds 101",
-          "timestamp": "00:07:16",
-          "link": "https://www.youtube.com/watch?v=6yIKsJMj6Gk&t=436s"
         }
       ]
     },
@@ -2538,6 +2538,12 @@
       "priority": "high",
       "corpus_references": [
         {
+          "video_title": "Understanding Aircraft Brokerage: Standards, Risk, and Trust",
+          "author": "Own The Jet",
+          "timestamp": "00:04:01",
+          "link": "https://www.youtube.com/watch?v=i36Xg_tsVAY&t=241s"
+        },
+        {
           "video_title": "State Funds Tutorial: First Steps For Somebody Brand New To Unclaimed Funds Business.",
           "author": "Surplus Funds 101",
           "timestamp": "00:14:47",
@@ -2554,12 +2560,6 @@
           "author": "Surplus Funds 101",
           "timestamp": "00:03:31",
           "link": "https://www.youtube.com/watch?v=TTfaOSBvLDc&t=211s"
-        },
-        {
-          "video_title": "State Funds Tutorial New Mexico: How To Register As A Property Locator In The State Of New Mexico.",
-          "author": "Surplus Funds 101",
-          "timestamp": "00:07:16",
-          "link": "https://www.youtube.com/watch?v=6yIKsJMj6Gk&t=436s"
         }
       ]
     },
@@ -2596,10 +2596,10 @@
           "link": "https://www.youtube.com/watch?v=d5TLZqkPX14&t=233s"
         },
         {
-          "video_title": "How To Claim Surplus Funds From Foreclosure",
-          "author": "Bob Diamond - America's Tax Sale Attorney",
-          "timestamp": "00:05:14",
-          "link": "https://www.youtube.com/watch?v=lzU09FRqmhg&t=314s"
+          "video_title": "Don't be a Victim of Broker NDA Agreements",
+          "author": "David C Barnett Small Business and Deal Making SMB",
+          "timestamp": "00:06:19",
+          "link": "https://www.youtube.com/watch?v=wHxYmcrcq4M&t=379s"
         }
       ]
     }
@@ -2746,8 +2746,8 @@
         "asset_id": "youtube_thumbnails",
         "asset": "https://i.ytimg.com/vi/<video_id>/*.jpg",
         "asset_type": "youtube_thumbnail_image",
-        "source": "YouTube CDN thumbnails for the 1526 corpus videos",
-        "instance_count": 1526,
+        "source": "YouTube CDN thumbnails for the 1704 corpus videos",
+        "instance_count": 1704,
         "instances": [
           {
             "video_id": "9Q4qYeK5DTg",
@@ -13430,6 +13430,1252 @@
             "author": "Google Search Central",
             "thumbnail_url": "https://i.ytimg.com/vi/am4g0hXAA8Q/hqdefault.jpg",
             "source_url": "https://www.youtube.com/watch?v=am4g0hXAA8Q"
+          },
+          {
+            "video_id": "t49Ab42PNxE",
+            "title": "High Ticket Sales, Explained Honestly by Someone Doing It",
+            "author": "Greyson's Daily",
+            "thumbnail_url": "https://i.ytimg.com/vi/t49Ab42PNxE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=t49Ab42PNxE"
+          },
+          {
+            "video_id": "Wb6IlK5noKw",
+            "title": "how I got rich with high ticket sales after trying every other business model",
+            "author": "Hudson Cosper",
+            "thumbnail_url": "https://i.ytimg.com/vi/Wb6IlK5noKw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Wb6IlK5noKw"
+          },
+          {
+            "video_id": "aFs-x6HJabU",
+            "title": "High Ticket Sales Explained For Beginners",
+            "author": "Asher Shaw",
+            "thumbnail_url": "https://i.ytimg.com/vi/aFs-x6HJabU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=aFs-x6HJabU"
+          },
+          {
+            "video_id": "RHobLxb_gLQ",
+            "title": "The Framework That Changed Everything for Me in High Ticket Sales",
+            "author": "Daniel Coutts",
+            "thumbnail_url": "https://i.ytimg.com/vi/RHobLxb_gLQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=RHobLxb_gLQ"
+          },
+          {
+            "video_id": "4HgyBCSnkLE",
+            "title": "everything you need to know about high ticket sales",
+            "author": "Hudson Cosper",
+            "thumbnail_url": "https://i.ytimg.com/vi/4HgyBCSnkLE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=4HgyBCSnkLE"
+          },
+          {
+            "video_id": "r2vbi9gCm-o",
+            "title": "The High-Ticket Sales Framework Every Career Coach Needs",
+            "author": "Daniel Botero",
+            "thumbnail_url": "https://i.ytimg.com/vi/r2vbi9gCm-o/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=r2vbi9gCm-o"
+          },
+          {
+            "video_id": "Dx_mEuS7ipk",
+            "title": "Business Broker vs M&A Advisor vs Investment Banker: Which Advisor Do You Actually Need?",
+            "author": "Exit On Your Terms",
+            "thumbnail_url": "https://i.ytimg.com/vi/Dx_mEuS7ipk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Dx_mEuS7ipk"
+          },
+          {
+            "video_id": "2KA0GQ8fBkc",
+            "title": "What is a Business Broker vs. M&A Advisor?",
+            "author": "CompassPointCapital",
+            "thumbnail_url": "https://i.ytimg.com/vi/2KA0GQ8fBkc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=2KA0GQ8fBkc"
+          },
+          {
+            "video_id": "ntmKBtSOxhU",
+            "title": "Differences between Business Brokers, M&A Advisors, Investment Bankers & Exit Planners (EP2)",
+            "author": "RareBrain",
+            "thumbnail_url": "https://i.ytimg.com/vi/ntmKBtSOxhU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ntmKBtSOxhU"
+          },
+          {
+            "video_id": "LRGkOAsiUdQ",
+            "title": "Difference Between an Investment Banker, M&A Advisor, & Business Broker",
+            "author": "American Business Intermediaries",
+            "thumbnail_url": "https://i.ytimg.com/vi/LRGkOAsiUdQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=LRGkOAsiUdQ"
+          },
+          {
+            "video_id": "NTugAc75tOg",
+            "title": "M&A Advisor vs Business Broker: Which One Should You Use to Sell Your Business?",
+            "author": "The Digital Merchant",
+            "thumbnail_url": "https://i.ytimg.com/vi/NTugAc75tOg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=NTugAc75tOg"
+          },
+          {
+            "video_id": "If4qHRijbWg",
+            "title": "Business Broker vs. M&A Advisor: Which Do You Need to Sell Your Business?",
+            "author": "Ryan C. Winter, Business Broker",
+            "thumbnail_url": "https://i.ytimg.com/vi/If4qHRijbWg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=If4qHRijbWg"
+          },
+          {
+            "video_id": "Q9DFb9qenh8",
+            "title": "10 Steps to Buy a Business: A Main Street & Lower Middle Market Guide",
+            "author": "Patrick O'Connell - M&A Transaction Services",
+            "thumbnail_url": "https://i.ytimg.com/vi/Q9DFb9qenh8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Q9DFb9qenh8"
+          },
+          {
+            "video_id": "fAVVcCIVQeE",
+            "title": "Business Brokers Vs M&A Advisors | The Vant Group",
+            "author": "The Vant Group",
+            "thumbnail_url": "https://i.ytimg.com/vi/fAVVcCIVQeE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=fAVVcCIVQeE"
+          },
+          {
+            "video_id": "LASFByP_8g4",
+            "title": "What does “Market” actually mean? | Main Street Deals",
+            "author": "SMB Law Group LLP",
+            "thumbnail_url": "https://i.ytimg.com/vi/LASFByP_8g4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=LASFByP_8g4"
+          },
+          {
+            "video_id": "bjJIoxsFNY8",
+            "title": "What do brokers and M&A advisors charge for fees?",
+            "author": "CompassPointCapital",
+            "thumbnail_url": "https://i.ytimg.com/vi/bjJIoxsFNY8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=bjJIoxsFNY8"
+          },
+          {
+            "video_id": "gDql0VQct6A",
+            "title": "The Business Broker, M&A Advisor, or Investment Banker",
+            "author": "Justin Goodbread",
+            "thumbnail_url": "https://i.ytimg.com/vi/gDql0VQct6A/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=gDql0VQct6A"
+          },
+          {
+            "video_id": "ggUaT-lHV0A",
+            "title": "How Much Is My Business Really Worth? (How Buyers, Lenders & Brokers Value Small Businesses)",
+            "author": "Deal Street - Small to Lower Middle Market M&A",
+            "thumbnail_url": "https://i.ytimg.com/vi/ggUaT-lHV0A/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ggUaT-lHV0A"
+          },
+          {
+            "video_id": "LFYHvuRB96I",
+            "title": "Unlocking Value: M&A Source vs IBBA Memberships for Business Brokers",
+            "author": "Business Broker Crowd Call",
+            "thumbnail_url": "https://i.ytimg.com/vi/LFYHvuRB96I/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=LFYHvuRB96I"
+          },
+          {
+            "video_id": "i36Xg_tsVAY",
+            "title": "Understanding Aircraft Brokerage: Standards, Risk, and Trust",
+            "author": "Own The Jet",
+            "thumbnail_url": "https://i.ytimg.com/vi/i36Xg_tsVAY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=i36Xg_tsVAY"
+          },
+          {
+            "video_id": "5hRyQr7CMkA",
+            "title": "How To Become A Yacht Broker – My favorite work ever!",
+            "author": "Gerry Mendria",
+            "thumbnail_url": "https://i.ytimg.com/vi/5hRyQr7CMkA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=5hRyQr7CMkA"
+          },
+          {
+            "video_id": "_Shd1I2mefI",
+            "title": "YACHT BROKERAGE - HOW MUCH WILL I BE PAID?",
+            "author": "Yacht Broker Masterclass",
+            "thumbnail_url": "https://i.ytimg.com/vi/_Shd1I2mefI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=_Shd1I2mefI"
+          },
+          {
+            "video_id": "-7bW4uN98Hc",
+            "title": "HOW DO I GET STARTED AS A YACHT BROKER",
+            "author": "Yacht Broker Masterclass",
+            "thumbnail_url": "https://i.ytimg.com/vi/-7bW4uN98Hc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=-7bW4uN98Hc"
+          },
+          {
+            "video_id": "elBm9ZOqdsA",
+            "title": "From Zero to €1,000,000 in Yacht Commissions – The Real Math & Mindset of Yacht Brokers",
+            "author": "The Art of Yacht Sales",
+            "thumbnail_url": "https://i.ytimg.com/vi/elBm9ZOqdsA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=elBm9ZOqdsA"
+          },
+          {
+            "video_id": "Uhqo4raDQ0k",
+            "title": "How Much Does An Aircraft Broker Make?",
+            "author": "Alex Bengoechea",
+            "thumbnail_url": "https://i.ytimg.com/vi/Uhqo4raDQ0k/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Uhqo4raDQ0k"
+          },
+          {
+            "video_id": "wqPY1eV4vuQ",
+            "title": "The truth about yacht brokers and boat sales",
+            "author": "Current Yachts",
+            "thumbnail_url": "https://i.ytimg.com/vi/wqPY1eV4vuQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=wqPY1eV4vuQ"
+          },
+          {
+            "video_id": "NUVwWnSq3A0",
+            "title": "Why Are Yacht Brokerage Commissions So High?",
+            "author": "Yacht Experts LLC - Brokerage & Extended Warranty",
+            "thumbnail_url": "https://i.ytimg.com/vi/NUVwWnSq3A0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=NUVwWnSq3A0"
+          },
+          {
+            "video_id": "1ILeO7AapJM",
+            "title": "Commission Agreements & Getting Paid for Jet Brokers",
+            "author": "The Ultimate Jet Guide",
+            "thumbnail_url": "https://i.ytimg.com/vi/1ILeO7AapJM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=1ILeO7AapJM"
+          },
+          {
+            "video_id": "PWGk1rSbFhA",
+            "title": "How Private Jet Brokers Actually Make Money | Hidden Commissions Explained",
+            "author": "MarginCallMedia",
+            "thumbnail_url": "https://i.ytimg.com/vi/PWGk1rSbFhA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=PWGk1rSbFhA"
+          },
+          {
+            "video_id": "FpmvbD9-7yc",
+            "title": "BREAKING IN TO YACHT BROKERAGE - How Much can I Make???",
+            "author": "Yachts For Sale",
+            "thumbnail_url": "https://i.ytimg.com/vi/FpmvbD9-7yc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=FpmvbD9-7yc"
+          },
+          {
+            "video_id": "p6XXGAWrnB8",
+            "title": "How to Start an Aircraft Brokerage Business | Step-by-Step Guide",
+            "author": "Alex Bengoechea",
+            "thumbnail_url": "https://i.ytimg.com/vi/p6XXGAWrnB8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=p6XXGAWrnB8"
+          },
+          {
+            "video_id": "yrJW_zsMUXM",
+            "title": "NCNDA Professional Protection",
+            "author": "Trade Base Hub",
+            "thumbnail_url": "https://i.ytimg.com/vi/yrJW_zsMUXM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=yrJW_zsMUXM"
+          },
+          {
+            "video_id": "5VMFuBur4kI",
+            "title": "NCNDA Explained: How to Protect Your Commission in International Commodity Trading | IXH TRADING",
+            "author": "IXH TRADING Academy",
+            "thumbnail_url": "https://i.ytimg.com/vi/5VMFuBur4kI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=5VMFuBur4kI"
+          },
+          {
+            "video_id": "HldBP9R47Bg",
+            "title": "The only genuine ICC NCNDA (Non Circumvention & Non Disclosure Agreement) format !",
+            "author": "Cangem Global Corporation",
+            "thumbnail_url": "https://i.ytimg.com/vi/HldBP9R47Bg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=HldBP9R47Bg"
+          },
+          {
+            "video_id": "EL2eIKZ_OV8",
+            "title": "Confidentiality Agreement Template Walkthrough",
+            "author": "Adventures in CRE",
+            "thumbnail_url": "https://i.ytimg.com/vi/EL2eIKZ_OV8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=EL2eIKZ_OV8"
+          },
+          {
+            "video_id": "FOUV15TeRLY",
+            "title": "Non-disclosure agreements vs non-circumvention provisions | Employment Law",
+            "author": "Attorney Nancy Greene",
+            "thumbnail_url": "https://i.ytimg.com/vi/FOUV15TeRLY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=FOUV15TeRLY"
+          },
+          {
+            "video_id": "wHxYmcrcq4M",
+            "title": "Don't be a Victim of Broker NDA Agreements",
+            "author": "David C Barnett Small Business and Deal Making SMB",
+            "thumbnail_url": "https://i.ytimg.com/vi/wHxYmcrcq4M/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=wHxYmcrcq4M"
+          },
+          {
+            "video_id": "suL1t0XynNw",
+            "title": "Genuine NCNDA vs Fake NCNDA",
+            "author": "Brufokes African Foods Export Ltd",
+            "thumbnail_url": "https://i.ytimg.com/vi/suL1t0XynNw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=suL1t0XynNw"
+          },
+          {
+            "video_id": "FKep5tuU15Q",
+            "title": "Does A Non Disclosure Agreement Need To Be Notarized?",
+            "author": "County Portal Law",
+            "thumbnail_url": "https://i.ytimg.com/vi/FKep5tuU15Q/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=FKep5tuU15Q"
+          },
+          {
+            "video_id": "l9rVUJ2duT8",
+            "title": "NCND Non-Compete Non-Disclosure & NDA Non-Disclosure Agreements",
+            "author": "iTopixs Videos",
+            "thumbnail_url": "https://i.ytimg.com/vi/l9rVUJ2duT8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=l9rVUJ2duT8"
+          },
+          {
+            "video_id": "B7w7HuoPnsA",
+            "title": "Understanding NCND Agreements Protecting Intermediaries in Business Deals",
+            "author": "UpCounsel",
+            "thumbnail_url": "https://i.ytimg.com/vi/B7w7HuoPnsA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=B7w7HuoPnsA"
+          },
+          {
+            "video_id": "7mV4t9a4PvE",
+            "title": "M&A Broker Registration Exemption: State-Level Progress and Next Steps for Intermediaries",
+            "author": "International Business Brokers Association",
+            "thumbnail_url": "https://i.ytimg.com/vi/7mV4t9a4PvE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=7mV4t9a4PvE"
+          },
+          {
+            "video_id": "MhYKFYS6gTI",
+            "title": "Nonresident Broker-Dealers - series24 Exam Prep",
+            "author": "CertFuel",
+            "thumbnail_url": "https://i.ytimg.com/vi/MhYKFYS6gTI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=MhYKFYS6gTI"
+          },
+          {
+            "video_id": "eb9QUJSQh9o",
+            "title": "The SEC's Authority and What an SRO Is | Six Minutes: SIE, Part 2",
+            "author": "Six Minutes",
+            "thumbnail_url": "https://i.ytimg.com/vi/eb9QUJSQh9o/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=eb9QUJSQh9o"
+          },
+          {
+            "video_id": "s3gi1d4BLP0",
+            "title": "Registration & Licensing | Broker-Dealer & Representative Rules Explained for the SIE Exam Prep!",
+            "author": "Business with Mr. G",
+            "thumbnail_url": "https://i.ytimg.com/vi/s3gi1d4BLP0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=s3gi1d4BLP0"
+          },
+          {
+            "video_id": "o-XOblDUBuI",
+            "title": "Federal M&A Broker Exemption",
+            "author": "ALC Lawcast: Finance in Focus",
+            "thumbnail_url": "https://i.ytimg.com/vi/o-XOblDUBuI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=o-XOblDUBuI"
+          },
+          {
+            "video_id": "rl3PWicoIaE",
+            "title": "Laura Anthony Attorney; M&A Broker Exemption",
+            "author": "ALC Lawcast: Finance in Focus",
+            "thumbnail_url": "https://i.ytimg.com/vi/rl3PWicoIaE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=rl3PWicoIaE"
+          },
+          {
+            "video_id": "bfazVN-7QhQ",
+            "title": "Florida Broker-Dealer Registration Exemption For M&A Brokers",
+            "author": "ALC Lawcast: Finance in Focus",
+            "thumbnail_url": "https://i.ytimg.com/vi/bfazVN-7QhQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=bfazVN-7QhQ"
+          },
+          {
+            "video_id": "ekpLm58t3ok",
+            "title": "Definition of a Broker-Dealer - Series 63 Exam Prep",
+            "author": "CertFuel",
+            "thumbnail_url": "https://i.ytimg.com/vi/ekpLm58t3ok/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ekpLm58t3ok"
+          },
+          {
+            "video_id": "deQ3XNDiApo",
+            "title": "Broker-Dealer Regulation: Rapid Fire - Series 66 Exam Prep",
+            "author": "CertFuel",
+            "thumbnail_url": "https://i.ytimg.com/vi/deQ3XNDiApo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=deQ3XNDiApo"
+          },
+          {
+            "video_id": "3z_ALLqRZ2E",
+            "title": "Exclusions from the Broker-Dealer Definition - Series 63 Exam Prep",
+            "author": "CertFuel",
+            "thumbnail_url": "https://i.ytimg.com/vi/3z_ALLqRZ2E/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=3z_ALLqRZ2E"
+          },
+          {
+            "video_id": "uqd9CdrsWKo",
+            "title": "M&A Broker Dealer Requirements",
+            "author": "ALC Lawcast: Finance in Focus",
+            "thumbnail_url": "https://i.ytimg.com/vi/uqd9CdrsWKo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=uqd9CdrsWKo"
+          },
+          {
+            "video_id": "R0kgCi34_1s",
+            "title": "Federal And Florida M&A Broker Exemption, Laura Anthony Esq.",
+            "author": "ALC Lawcast: Finance in Focus",
+            "thumbnail_url": "https://i.ytimg.com/vi/R0kgCi34_1s/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=R0kgCi34_1s"
+          },
+          {
+            "video_id": "UVXotJ5hxrU",
+            "title": "Definition of an Agent of a Broker-Dealer - Series 63 Exam Prep",
+            "author": "CertFuel",
+            "thumbnail_url": "https://i.ytimg.com/vi/UVXotJ5hxrU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=UVXotJ5hxrU"
+          },
+          {
+            "video_id": "BV647oU5rB0",
+            "title": "11/5/26 Small Business and Broker-Dealer Forums - FINRA Update",
+            "author": "Public Company Accounting Oversight Board - PCAOB",
+            "thumbnail_url": "https://i.ytimg.com/vi/BV647oU5rB0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=BV647oU5rB0"
+          },
+          {
+            "video_id": "aG2Bnsxt8Cg",
+            "title": "Considerations for Broker-Dealers under Rule 15a-6",
+            "author": "Mayer Brown",
+            "thumbnail_url": "https://i.ytimg.com/vi/aG2Bnsxt8Cg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=aG2Bnsxt8Cg"
+          },
+          {
+            "video_id": "-mNiPaYyDro",
+            "title": "Buy-Side M&A 101: Should You Do an Acquisition? | Buy-Side Masterclass Moment",
+            "author": "POTOMAC M&A",
+            "thumbnail_url": "https://i.ytimg.com/vi/-mNiPaYyDro/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=-mNiPaYyDro"
+          },
+          {
+            "video_id": "svRg7_BrwXY",
+            "title": "Business Broker Insider: Buy Side & Sell Side Secrets #TrentLee",
+            "author": "Beau Eckstein, Business Ownership Coach",
+            "thumbnail_url": "https://i.ytimg.com/vi/svRg7_BrwXY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=svRg7_BrwXY"
+          },
+          {
+            "video_id": "7ABdy0hf9u8",
+            "title": "Buy Side vs Sell Side | What's the difference when you work on mergers and acquisitions (M&A)?",
+            "author": "Luke Fox",
+            "thumbnail_url": "https://i.ytimg.com/vi/7ABdy0hf9u8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=7ABdy0hf9u8"
+          },
+          {
+            "video_id": "Ru1cmBnC5Rc",
+            "title": "Buy-Side M&A Advisory",
+            "author": "Objective, Investment Banking & Valuation",
+            "thumbnail_url": "https://i.ytimg.com/vi/Ru1cmBnC5Rc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Ru1cmBnC5Rc"
+          },
+          {
+            "video_id": "a71tQJb9UFE",
+            "title": "Sell Side M&A - After The Sale: Reflecting on the M&A Transaction Process",
+            "author": "Carter Morse & Goodrich",
+            "thumbnail_url": "https://i.ytimg.com/vi/a71tQJb9UFE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=a71tQJb9UFE"
+          },
+          {
+            "video_id": "yd4nlCQanq4",
+            "title": "The Best FE International Alternatives for M&A: QuietLight, Flippa, Acquire.com, & More!",
+            "author": "The Digital Merchant",
+            "thumbnail_url": "https://i.ytimg.com/vi/yd4nlCQanq4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=yd4nlCQanq4"
+          },
+          {
+            "video_id": "NSNpSgvzAyA",
+            "title": "Quiet Light Brokerage Review: Specialized Online Business Brokers Explained",
+            "author": "The Digital Merchant",
+            "thumbnail_url": "https://i.ytimg.com/vi/NSNpSgvzAyA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=NSNpSgvzAyA"
+          },
+          {
+            "video_id": "zcYOmZ8cAGE",
+            "title": "5 Best Online Business Brokers & Marketplaces: Buy & Sell Websites, SaaS, Apps, Ecom Brands",
+            "author": "Business Solution",
+            "thumbnail_url": "https://i.ytimg.com/vi/zcYOmZ8cAGE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=zcYOmZ8cAGE"
+          },
+          {
+            "video_id": "_t4Q9Q7VTtQ",
+            "title": "Why I Immediately Reject Most \"Full Price\" Offers",
+            "author": "Quiet Light Brokerage",
+            "thumbnail_url": "https://i.ytimg.com/vi/_t4Q9Q7VTtQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=_t4Q9Q7VTtQ"
+          },
+          {
+            "video_id": "ow7ewDogN14",
+            "title": "What Online Business Buyers Really Want (From $0 to a $1.7M Sale)",
+            "author": "Quiet Light Brokerage",
+            "thumbnail_url": "https://i.ytimg.com/vi/ow7ewDogN14/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ow7ewDogN14"
+          },
+          {
+            "video_id": "l-9E6P1CSEc",
+            "title": "Quiet Light Brokerage Review for Buyers 2022",
+            "author": "Colin Matcha",
+            "thumbnail_url": "https://i.ytimg.com/vi/l-9E6P1CSEc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=l-9E6P1CSEc"
+          },
+          {
+            "video_id": "oJsHo5vaDus",
+            "title": "3 Big Levers to Maximize SaaS Business Valuation with David Newell",
+            "author": "Quiet Light Brokerage",
+            "thumbnail_url": "https://i.ytimg.com/vi/oJsHo5vaDus/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=oJsHo5vaDus"
+          },
+          {
+            "video_id": "r4fmjknWB7o",
+            "title": "FE International Review For Buyers 2022",
+            "author": "Colin Matcha",
+            "thumbnail_url": "https://i.ytimg.com/vi/r4fmjknWB7o/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=r4fmjknWB7o"
+          },
+          {
+            "video_id": "XbluQ7u-9nc",
+            "title": "Where To Buy SAAS Websites Making Passive Income Monthly",
+            "author": "Jaryd Krause - Buying Online Businesses",
+            "thumbnail_url": "https://i.ytimg.com/vi/XbluQ7u-9nc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=XbluQ7u-9nc"
+          },
+          {
+            "video_id": "EsfznycDU6I",
+            "title": "Maximize Your Cell Tower Lease Buyout Options - Master Lease vs. Perpetual Easement",
+            "author": "SiteBid Infrastructure",
+            "thumbnail_url": "https://i.ytimg.com/vi/EsfznycDU6I/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=EsfznycDU6I"
+          },
+          {
+            "video_id": "fLebm5BppxY",
+            "title": "Telecom Easements: What Property Owners Need to Know",
+            "author": "SiteBid Infrastructure",
+            "thumbnail_url": "https://i.ytimg.com/vi/fLebm5BppxY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=fLebm5BppxY"
+          },
+          {
+            "video_id": "YjzN5Uo5yf8",
+            "title": "Cell Tower Easements Explained – What Property Owners Need to Know",
+            "author": "Nexus Towers",
+            "thumbnail_url": "https://i.ytimg.com/vi/YjzN5Uo5yf8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=YjzN5Uo5yf8"
+          },
+          {
+            "video_id": "YW6JaW_qjAE",
+            "title": "SELLING A CELL TOWER LEASE IN 2024? WHATS MY CELL TOWER LEASE EASEMENT OR LEASE BUYOUT REALLY WORTH?",
+            "author": "Tower Genius",
+            "thumbnail_url": "https://i.ytimg.com/vi/YW6JaW_qjAE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=YW6JaW_qjAE"
+          },
+          {
+            "video_id": "8UjhKryCNbQ",
+            "title": "Data Center Site Selection: How to Choose Land (Power, Water, Fiber, Zoning)",
+            "author": "Data Center Build Academy",
+            "thumbnail_url": "https://i.ytimg.com/vi/8UjhKryCNbQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=8UjhKryCNbQ"
+          },
+          {
+            "video_id": "HXjpQWcZ6F8",
+            "title": "Powered land: The asset behind the data center | Reed Smith Data Centers series",
+            "author": "Reed Smith LLP",
+            "thumbnail_url": "https://i.ytimg.com/vi/HXjpQWcZ6F8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=HXjpQWcZ6F8"
+          },
+          {
+            "video_id": "Wdk1N79_WyM",
+            "title": "How To Source Off Market Deals With Cold Emails",
+            "author": "Nick Abraham",
+            "thumbnail_url": "https://i.ytimg.com/vi/Wdk1N79_WyM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Wdk1N79_WyM"
+          },
+          {
+            "video_id": "vOB7Te243ew",
+            "title": "How to find off-market leads like a PRO",
+            "author": "Brandon Thomas",
+            "thumbnail_url": "https://i.ytimg.com/vi/vOB7Te243ew/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=vOB7Te243ew"
+          },
+          {
+            "video_id": "FZ98S2zrji0",
+            "title": "How to Reach Business Owners Who Already Want to Sell (Deal Sourcing Outreach Sequence)",
+            "author": "Wolf of Main Street",
+            "thumbnail_url": "https://i.ytimg.com/vi/FZ98S2zrji0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=FZ98S2zrji0"
+          },
+          {
+            "video_id": "Cn4V6pWhbMk",
+            "title": "Cold Calling for Off-Market Deals: Exact Script That Closed 6-7 Figure Real Estate Contracts",
+            "author": "Paul Macaluso",
+            "thumbnail_url": "https://i.ytimg.com/vi/Cn4V6pWhbMk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Cn4V6pWhbMk"
+          },
+          {
+            "video_id": "Fug5C3kFHsA",
+            "title": "How I Find Off-Market Properties - Cold Calling Strategy That Works (Live Cold Calls) | LoCasa",
+            "author": "LoCasa",
+            "thumbnail_url": "https://i.ytimg.com/vi/Fug5C3kFHsA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Fug5C3kFHsA"
+          },
+          {
+            "video_id": "1PRKZu79Zg4",
+            "title": "POV: Running a Family Office — From $10M Liquid to Buying Companies in Private",
+            "author": "Frankie Finance",
+            "thumbnail_url": "https://i.ytimg.com/vi/1PRKZu79Zg4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=1PRKZu79Zg4"
+          },
+          {
+            "video_id": "LlJs_vz0sPs",
+            "title": "How to Raise Capital From Family Offices (No Warm Intro Needed)",
+            "author": "Andrew LeBaron",
+            "thumbnail_url": "https://i.ytimg.com/vi/LlJs_vz0sPs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=LlJs_vz0sPs"
+          },
+          {
+            "video_id": "QDcDBGMiDtQ",
+            "title": "$250 Billion Family Office Founder on Wealth Preservation, Taxes, and Building Wealth",
+            "author": "How I Invest Podcast",
+            "thumbnail_url": "https://i.ytimg.com/vi/QDcDBGMiDtQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=QDcDBGMiDtQ"
+          },
+          {
+            "video_id": "60V2lsbfZos",
+            "title": "Inside the Minds of Billion-Dollar Family Offices: How the Ultra-Wealthy Invest in 2025",
+            "author": "Centimillionaire Strategies",
+            "thumbnail_url": "https://i.ytimg.com/vi/60V2lsbfZos/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=60V2lsbfZos"
+          },
+          {
+            "video_id": "mVFdzEqW2M4",
+            "title": "How to Fill Out the Commission Disbursement & Wire Instructions Form Correctly",
+            "author": "Equity Real Estate",
+            "thumbnail_url": "https://i.ytimg.com/vi/mVFdzEqW2M4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=mVFdzEqW2M4"
+          },
+          {
+            "video_id": "YtS2MXC9Bps",
+            "title": "Planning To Wire Funds To Closing? Watch This First",
+            "author": "Giuseppe Battaglioli",
+            "thumbnail_url": "https://i.ytimg.com/vi/YtS2MXC9Bps/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=YtS2MXC9Bps"
+          },
+          {
+            "video_id": "IK3LgAFr-QQ",
+            "title": "The Deposit and Escrow Instructions",
+            "author": "Title's Not Borin' with Lauren",
+            "thumbnail_url": "https://i.ytimg.com/vi/IK3LgAFr-QQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=IK3LgAFr-QQ"
+          },
+          {
+            "video_id": "DZe5D7_TCDA",
+            "title": "Wire Transfer Escrow Fraud - Preventing, Detecting, Recovering",
+            "author": "Family Split Strategy",
+            "thumbnail_url": "https://i.ytimg.com/vi/DZe5D7_TCDA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=DZe5D7_TCDA"
+          },
+          {
+            "video_id": "KrsoinTC_10",
+            "title": "How to Wire Money for Closing",
+            "author": "Hauseit",
+            "thumbnail_url": "https://i.ytimg.com/vi/KrsoinTC_10/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=KrsoinTC_10"
+          },
+          {
+            "video_id": "22hjuZT2usA",
+            "title": "Do You Need a Real Estate License to Broker Businesses? Legal Insights for 17 Key States",
+            "author": "Business Broker Crowd Call",
+            "thumbnail_url": "https://i.ytimg.com/vi/22hjuZT2usA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=22hjuZT2usA"
+          },
+          {
+            "video_id": "F2USouPuthI",
+            "title": "Should You Get Your PA Broker License? Why Real Estate Law Matters | Janis Benstock",
+            "author": "Real Estate Explained with Janis Benstock",
+            "thumbnail_url": "https://i.ytimg.com/vi/F2USouPuthI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=F2USouPuthI"
+          },
+          {
+            "video_id": "JkYDV-Gr_qE",
+            "title": "Important Licensing Requirements from the Business Brokers of Florida",
+            "author": "We Sell Construction Businesses",
+            "thumbnail_url": "https://i.ytimg.com/vi/JkYDV-Gr_qE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=JkYDV-Gr_qE"
+          },
+          {
+            "video_id": "paYxIXgYO0I",
+            "title": "Business Brokerage vs Commercial Real Estate: Key Legal Differences Every Broker Must Know",
+            "author": "Business Broker Crowd Call",
+            "thumbnail_url": "https://i.ytimg.com/vi/paYxIXgYO0I/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=paYxIXgYO0I"
+          },
+          {
+            "video_id": "Wj1uuYyuyQk",
+            "title": "Navigating Business Broker Licensing Across States | Tips & Advice",
+            "author": "Business Broker Crowd Call",
+            "thumbnail_url": "https://i.ytimg.com/vi/Wj1uuYyuyQk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Wj1uuYyuyQk"
+          },
+          {
+            "video_id": "CoD81HjwtQo",
+            "title": "Understanding Licensing Requirements for Business Brokers",
+            "author": "Business Broker Crowd Call",
+            "thumbnail_url": "https://i.ytimg.com/vi/CoD81HjwtQo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=CoD81HjwtQo"
+          },
+          {
+            "video_id": "Py7d57O-Rxs",
+            "title": "Business Brokerage Licensing in DC, Virginia, and Maryland",
+            "author": "Business Broker Crowd Call",
+            "thumbnail_url": "https://i.ytimg.com/vi/Py7d57O-Rxs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Py7d57O-Rxs"
+          },
+          {
+            "video_id": "uRVS3zWAYwI",
+            "title": "Real Estate Licensing and Referral Fees in Business Brokerage",
+            "author": "Business Broker Crowd Call",
+            "thumbnail_url": "https://i.ytimg.com/vi/uRVS3zWAYwI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=uRVS3zWAYwI"
+          },
+          {
+            "video_id": "VF-_WZaM0iI",
+            "title": "How To Get Your Real Estate Loan Broker License: A Complete State Guide | GraftonFunding.com",
+            "author": "Ian Tucker - Hard Money & DSCR Loan Broker Expert",
+            "thumbnail_url": "https://i.ytimg.com/vi/VF-_WZaM0iI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=VF-_WZaM0iI"
+          },
+          {
+            "video_id": "_4qKlVp4-8s",
+            "title": "Business Broker Commissions and Licensing Requirements",
+            "author": "Business Broker Crowd Call",
+            "thumbnail_url": "https://i.ytimg.com/vi/_4qKlVp4-8s/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=_4qKlVp4-8s"
+          },
+          {
+            "video_id": "V5gUCAcegsY",
+            "title": "Business Brokerage Explained | What You NEED to Know for the Real Estate Exam",
+            "author": "Dee Kumar Real Estate",
+            "thumbnail_url": "https://i.ytimg.com/vi/V5gUCAcegsY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=V5gUCAcegsY"
+          },
+          {
+            "video_id": "DPj-ieo_sSM",
+            "title": "Brokerage Operations Explained | Real Estate Exam Prep 2026–2027",
+            "author": "Pass the Real Estate Exam with Ben Eger",
+            "thumbnail_url": "https://i.ytimg.com/vi/DPj-ieo_sSM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=DPj-ieo_sSM"
+          },
+          {
+            "video_id": "Q-U6m9rsXvQ",
+            "title": "California Real Estate License 2026: Salesperson vs Broker Career Paths",
+            "author": "Newestexamprep",
+            "thumbnail_url": "https://i.ytimg.com/vi/Q-U6m9rsXvQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Q-U6m9rsXvQ"
+          },
+          {
+            "video_id": "FpH555COYJI",
+            "title": "How to be successful as a business broker in 4 steps",
+            "author": "Cole Ferguson",
+            "thumbnail_url": "https://i.ytimg.com/vi/FpH555COYJI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=FpH555COYJI"
+          },
+          {
+            "video_id": "aUN31sD75T0",
+            "title": "Confidential Information Memorandum (CIM)",
+            "author": "Jim Loeffler",
+            "thumbnail_url": "https://i.ytimg.com/vi/aUN31sD75T0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=aUN31sD75T0"
+          },
+          {
+            "video_id": "UMCbZCe6qzw",
+            "title": "Exchanging Confidential Information Memorandum (CIM)",
+            "author": "Jim Loeffler",
+            "thumbnail_url": "https://i.ytimg.com/vi/UMCbZCe6qzw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=UMCbZCe6qzw"
+          },
+          {
+            "video_id": "r1DSXPxZzu8",
+            "title": "How to Create the Best Confidential Information Memorandum (CIM)",
+            "author": "iGOTHAM",
+            "thumbnail_url": "https://i.ytimg.com/vi/r1DSXPxZzu8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=r1DSXPxZzu8"
+          },
+          {
+            "video_id": "h3OE0enrIxg",
+            "title": "Write a CIM in 10 Minutes: The AI Generator",
+            "author": "M&A Synergy AI",
+            "thumbnail_url": "https://i.ytimg.com/vi/h3OE0enrIxg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=h3OE0enrIxg"
+          },
+          {
+            "video_id": "tqw5CWasFOU",
+            "title": "What is the Confidential Information Presentation - 8 Milestones of M&A - Transact Capital",
+            "author": "Transact Capital",
+            "thumbnail_url": "https://i.ytimg.com/vi/tqw5CWasFOU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=tqw5CWasFOU"
+          },
+          {
+            "video_id": "QguZjBADFoA",
+            "title": "Don’t Get Circumvented (Cheated)",
+            "author": "Sam Cutting - Red Flags Verification",
+            "thumbnail_url": "https://i.ytimg.com/vi/QguZjBADFoA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=QguZjBADFoA"
+          },
+          {
+            "video_id": "wBbi84Xi1Bc",
+            "title": "What Buyers and Sellers Need to Know About the Buyer Broker Agreement in 2025",
+            "author": "Think Real Estate",
+            "thumbnail_url": "https://i.ytimg.com/vi/wBbi84Xi1Bc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=wBbi84Xi1Bc"
+          },
+          {
+            "video_id": "5YNeLidiqqU",
+            "title": "Realtors: Do this if the seller won't pay a buyer agent commission",
+            "author": "Brandon Mulrenin",
+            "thumbnail_url": "https://i.ytimg.com/vi/5YNeLidiqqU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=5YNeLidiqqU"
+          },
+          {
+            "video_id": "7viJGpG_ju4",
+            "title": "The Truth About Buyer Agent Commissions in 2026 ( New Rules Explained )",
+            "author": "SMART Talk for Real Estate Agents",
+            "thumbnail_url": "https://i.ytimg.com/vi/7viJGpG_ju4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=7viJGpG_ju4"
+          },
+          {
+            "video_id": "Z0ATgOouiIM",
+            "title": "How to Buy Tax Credits at a Discount (Section 6418 Explained)",
+            "author": "Andrew Dubinsky",
+            "thumbnail_url": "https://i.ytimg.com/vi/Z0ATgOouiIM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Z0ATgOouiIM"
+          },
+          {
+            "video_id": "h0qEAIoQ4Jo",
+            "title": "Tax Credit 101 with Andrew Dubinsky | Part 2: How Transferable Tax Credits Work (Section 6418)",
+            "author": "Andrew Dubinsky",
+            "thumbnail_url": "https://i.ytimg.com/vi/h0qEAIoQ4Jo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=h0qEAIoQ4Jo"
+          },
+          {
+            "video_id": "7jkOz9WXEh8",
+            "title": "Building a Boutique Brokerage Firm: AI, Business Exits & Growth Tips | Christine McDannell !",
+            "author": "Business Broker Growth",
+            "thumbnail_url": "https://i.ytimg.com/vi/7jkOz9WXEh8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=7jkOz9WXEh8"
+          },
+          {
+            "video_id": "YKfvldXPHWw",
+            "title": "Secrets To Building A Winning Brokerage: Recruiting and Retaining Top Real Estate Agents | Ep. 194",
+            "author": "Smart Agents",
+            "thumbnail_url": "https://i.ytimg.com/vi/YKfvldXPHWw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=YKfvldXPHWw"
+          },
+          {
+            "video_id": "Vbv1TkWvBD8",
+            "title": "How to Choose Your First Real Estate Brokerage (What Actually Matters)",
+            "author": "Designed For Agents",
+            "thumbnail_url": "https://i.ytimg.com/vi/Vbv1TkWvBD8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Vbv1TkWvBD8"
+          },
+          {
+            "video_id": "6cCUTLOmNIE",
+            "title": "Boutique vs Franchise Real Estate Brokerage | We Hold the Keys Podcast",
+            "author": "Jesse Ebner",
+            "thumbnail_url": "https://i.ytimg.com/vi/6cCUTLOmNIE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=6cCUTLOmNIE"
+          },
+          {
+            "video_id": "OFzI2gK-nps",
+            "title": "Secrets of Scaling a Real Estate Brokerage (137 Agents + 4 Offices by 30 Years Old)",
+            "author": "Mike Sherrard",
+            "thumbnail_url": "https://i.ytimg.com/vi/OFzI2gK-nps/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=OFzI2gK-nps"
+          },
+          {
+            "video_id": "GKpCkDZaSS8",
+            "title": "The TRUTH About Starting in Commercial Real Estate Brokerage",
+            "author": "Break Into CRE",
+            "thumbnail_url": "https://i.ytimg.com/vi/GKpCkDZaSS8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=GKpCkDZaSS8"
+          },
+          {
+            "video_id": "VcNeWYSFiDE",
+            "title": "Big Box vs. Boutique: Which Brokerage Will Make You More Money?",
+            "author": "Joe Mendoza",
+            "thumbnail_url": "https://i.ytimg.com/vi/VcNeWYSFiDE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=VcNeWYSFiDE"
+          },
+          {
+            "video_id": "0u9CyKG6vj4",
+            "title": "How to Start a Commercial Real Estate Brokerage in 2024",
+            "author": "Joe Killinger",
+            "thumbnail_url": "https://i.ytimg.com/vi/0u9CyKG6vj4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=0u9CyKG6vj4"
+          },
+          {
+            "video_id": "phMoT_2rYN4",
+            "title": "How to sell 50 houses a year (even as a new realtor)",
+            "author": "Brandon Mulrenin",
+            "thumbnail_url": "https://i.ytimg.com/vi/phMoT_2rYN4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=phMoT_2rYN4"
+          },
+          {
+            "video_id": "2WIql7qBDoY",
+            "title": "How to Start Your Own Independent Real Estate Brokerage (What it really takes)",
+            "author": "ReminderMedia | 🎙️STAY PAID PODCAST",
+            "thumbnail_url": "https://i.ytimg.com/vi/2WIql7qBDoY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=2WIql7qBDoY"
+          },
+          {
+            "video_id": "4LntMyEuBXE",
+            "title": "How to Choose a Real Estate Brokerage",
+            "author": "US Realty Training",
+            "thumbnail_url": "https://i.ytimg.com/vi/4LntMyEuBXE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=4LntMyEuBXE"
+          },
+          {
+            "video_id": "R_uWZH6c9lI",
+            "title": "How to Choose a Real Estate Broker? | Ask these 12 questions FIRST!",
+            "author": "Brandon Mulrenin",
+            "thumbnail_url": "https://i.ytimg.com/vi/R_uWZH6c9lI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=R_uWZH6c9lI"
+          },
+          {
+            "video_id": "QqzqH1glUuA",
+            "title": "How To Start A Real Estate Brokerage in 8 Steps (Without Going Broke)",
+            "author": "Kyle Handy and AJ Mida",
+            "thumbnail_url": "https://i.ytimg.com/vi/QqzqH1glUuA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=QqzqH1glUuA"
+          },
+          {
+            "video_id": "87GSjPGNpO8",
+            "title": "How to Manage Deals in HubSpot Sales Pipeline 2026 | Deal Stages, Pipeline & Sales Management",
+            "author": "Hema Glory",
+            "thumbnail_url": "https://i.ytimg.com/vi/87GSjPGNpO8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=87GSjPGNpO8"
+          },
+          {
+            "video_id": "DAWWBPCEySE",
+            "title": "What Is a Deal in Zoho CRM? Sales Pipeline Simplified",
+            "author": "Woggle Consulting",
+            "thumbnail_url": "https://i.ytimg.com/vi/DAWWBPCEySE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=DAWWBPCEySE"
+          },
+          {
+            "video_id": "Sna6rbbuzww",
+            "title": "How to Use Hubspot Deals & Sales Pipelines (Track Deals Easily)",
+            "author": "Tutorial Toolkit",
+            "thumbnail_url": "https://i.ytimg.com/vi/Sna6rbbuzww/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Sna6rbbuzww"
+          },
+          {
+            "video_id": "zWRMFLm_we4",
+            "title": "How to Create a Sales Pipeline in HubSpot CRM 2026 | Pipeline Stages & Deal Setup",
+            "author": "Hema Glory",
+            "thumbnail_url": "https://i.ytimg.com/vi/zWRMFLm_we4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=zWRMFLm_we4"
+          },
+          {
+            "video_id": "4XHqzQ8JPzk",
+            "title": "Getting Started with Opportunity Pipelines in Close | How to Track and Manage Your Deals",
+            "author": "Close",
+            "thumbnail_url": "https://i.ytimg.com/vi/4XHqzQ8JPzk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=4XHqzQ8JPzk"
+          },
+          {
+            "video_id": "B4H8Hy41Myg",
+            "title": "What Is a Sales Pipeline in CRM? Explained for Beginners",
+            "author": "Toolnest Explained",
+            "thumbnail_url": "https://i.ytimg.com/vi/B4H8Hy41Myg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=B4H8Hy41Myg"
+          },
+          {
+            "video_id": "55kqfOfgIZw",
+            "title": "Why Do Good Deals Die in Diligence - 6-Minute Due Diligence Workshop",
+            "author": "CHARLES WEATHERLY",
+            "thumbnail_url": "https://i.ytimg.com/vi/55kqfOfgIZw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=55kqfOfgIZw"
+          },
+          {
+            "video_id": "76I0zKp5FM0",
+            "title": "How Messy Paperwork Can Kill a Million-Dollar Deal-With Mike Zaino On HALO Talks",
+            "author": "HALO Talks",
+            "thumbnail_url": "https://i.ytimg.com/vi/76I0zKp5FM0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=76I0zKp5FM0"
+          },
+          {
+            "video_id": "uG64e1KV1S0",
+            "title": "The Silent Deal Killer in Due Diligence and How to Avoid It - Mark Sims",
+            "author": "Amped Success - Matt Uhler",
+            "thumbnail_url": "https://i.ytimg.com/vi/uG64e1KV1S0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=uG64e1KV1S0"
+          },
+          {
+            "video_id": "0Z2XoqRkE00",
+            "title": "Before You Wire the Money: What Real Due Diligence Looks Like in Private Market Deals",
+            "author": "Family Enterprise Perspectives",
+            "thumbnail_url": "https://i.ytimg.com/vi/0Z2XoqRkE00/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=0Z2XoqRkE00"
+          },
+          {
+            "video_id": "XuAjQG6VmJg",
+            "title": "Due Diligence",
+            "author": "OOIDA Foundation",
+            "thumbnail_url": "https://i.ytimg.com/vi/XuAjQG6VmJg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=XuAjQG6VmJg"
+          },
+          {
+            "video_id": "jkHzL8ya984",
+            "title": "Valuing Your E-Commerce Business: SDE, Add-backs, and Multiples",
+            "author": "Seller Accountant",
+            "thumbnail_url": "https://i.ytimg.com/vi/jkHzL8ya984/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=jkHzL8ya984"
+          },
+          {
+            "video_id": "brFD1fFAYhQ",
+            "title": "EBITDA Multiples and Valuation Ranges: How Companies are Valued",
+            "author": "Arthur Petropoulos",
+            "thumbnail_url": "https://i.ytimg.com/vi/brFD1fFAYhQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=brFD1fFAYhQ"
+          },
+          {
+            "video_id": "1dJeO4qEAhU",
+            "title": "What is Seller's Discretionary Earnings (SDE)? And Why Does it Matter?",
+            "author": "Keira Hamilton",
+            "thumbnail_url": "https://i.ytimg.com/vi/1dJeO4qEAhU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=1dJeO4qEAhU"
+          },
+          {
+            "video_id": "Va5USDqv3-A",
+            "title": "What Number Do I Multiply? SDE, EBIT, EBITDA?",
+            "author": "David C Barnett Small Business and Deal Making SMB",
+            "thumbnail_url": "https://i.ytimg.com/vi/Va5USDqv3-A/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Va5USDqv3-A"
+          },
+          {
+            "video_id": "RoGz5NZF96I",
+            "title": "SDE v EBITDA. Essential for Accurate Business Valuation.",
+            "author": "Peter Nola",
+            "thumbnail_url": "https://i.ytimg.com/vi/RoGz5NZF96I/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=RoGz5NZF96I"
+          },
+          {
+            "video_id": "pzqh4R8Hppk",
+            "title": "Net Profit is not Cash Flow - EBITDA or SDE! Buying a Business and SBA.",
+            "author": "Brent Freeman - The CBB Group",
+            "thumbnail_url": "https://i.ytimg.com/vi/pzqh4R8Hppk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=pzqh4R8Hppk"
+          },
+          {
+            "video_id": "tPnDBaB9oPU",
+            "title": "How to Value a Business: SDE, Multiples & Add-Backs",
+            "author": "Ryan C. Winter, Business Broker",
+            "thumbnail_url": "https://i.ytimg.com/vi/tPnDBaB9oPU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=tPnDBaB9oPU"
+          },
+          {
+            "video_id": "yaZZzBKh86I",
+            "title": "Business Valuation - Part 5 - How to Calculate Seller's Discretionary Earnings",
+            "author": "Nate Lind - Business Broker and Beyond",
+            "thumbnail_url": "https://i.ytimg.com/vi/yaZZzBKh86I/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=yaZZzBKh86I"
+          },
+          {
+            "video_id": "xI-KTlxfNDU",
+            "title": "Session 16: Other Earnings Multiples",
+            "author": "Aswath Damodaran",
+            "thumbnail_url": "https://i.ytimg.com/vi/xI-KTlxfNDU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=xI-KTlxfNDU"
+          },
+          {
+            "video_id": "R4jvbLHhCBg",
+            "title": "What Is Seller’s Discretionary Earnings or SDE (and How to Calculate It)",
+            "author": "Quiet Light Brokerage",
+            "thumbnail_url": "https://i.ytimg.com/vi/R4jvbLHhCBg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=R4jvbLHhCBg"
+          },
+          {
+            "video_id": "D58oCe_7BBM",
+            "title": "The EBITDA Multiple Valuation Spectrum all Acquirers Use",
+            "author": "Arthur Petropoulos",
+            "thumbnail_url": "https://i.ytimg.com/vi/D58oCe_7BBM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=D58oCe_7BBM"
+          },
+          {
+            "video_id": "y4u_MuL4xhw",
+            "title": "How To Value a Business for Sale (Mergers and Acquisitions)",
+            "author": "Brett Cenkus",
+            "thumbnail_url": "https://i.ytimg.com/vi/y4u_MuL4xhw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=y4u_MuL4xhw"
+          },
+          {
+            "video_id": "uBQvqV_-nz0",
+            "title": "How To Get High Ticket Buyers Every Week",
+            "author": "Scale Like ZK",
+            "thumbnail_url": "https://i.ytimg.com/vi/uBQvqV_-nz0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=uBQvqV_-nz0"
+          },
+          {
+            "video_id": "zmqAbj7T7F8",
+            "title": "High Ticket Sales Process & Closing Strategy",
+            "author": "Nick Dadamio",
+            "thumbnail_url": "https://i.ytimg.com/vi/zmqAbj7T7F8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=zmqAbj7T7F8"
+          },
+          {
+            "video_id": "PeOr6rOEN2Q",
+            "title": "How To Turn Low Ticket Buyers Into High Ticket Clients (My Follow-Up Sequences)",
+            "author": "Hernan Vazquez",
+            "thumbnail_url": "https://i.ytimg.com/vi/PeOr6rOEN2Q/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=PeOr6rOEN2Q"
+          },
+          {
+            "video_id": "sh92NTG_jgs",
+            "title": "How High Ticket Closers Find Offers Fast (Live Demo)",
+            "author": "The Closer ID",
+            "thumbnail_url": "https://i.ytimg.com/vi/sh92NTG_jgs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=sh92NTG_jgs"
+          },
+          {
+            "video_id": "_ZU2OAxnSMI",
+            "title": "How to Land Your First High-Ticket Sales Offer in 2026 (Speed Run Edition)",
+            "author": "Frankie Isaac",
+            "thumbnail_url": "https://i.ytimg.com/vi/_ZU2OAxnSMI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=_ZU2OAxnSMI"
+          },
+          {
+            "video_id": "LeKXSFb84sA",
+            "title": "Seriously, Please Watch This Before You Start High Ticket Sales",
+            "author": "Paul Vu",
+            "thumbnail_url": "https://i.ytimg.com/vi/LeKXSFb84sA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=LeKXSFb84sA"
+          },
+          {
+            "video_id": "HGsCcOXJIOw",
+            "title": "M&A Investment Banking Interview Questions - Middle Market ($50-300MM)",
+            "author": "iBankerU",
+            "thumbnail_url": "https://i.ytimg.com/vi/HGsCcOXJIOw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=HGsCcOXJIOw"
+          },
+          {
+            "video_id": "VaF6Cv0koYQ",
+            "title": "Main Street M&A Legal Tips And Best Practices with Jake Parsley | Ep. 4 | My SBA Loan Pro Podcast",
+            "author": "My SBA Loan Pro Podcast",
+            "thumbnail_url": "https://i.ytimg.com/vi/VaF6Cv0koYQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=VaF6Cv0koYQ"
+          },
+          {
+            "video_id": "a5Z--B3Uhrg",
+            "title": "How Business Sales Get Financed (Cash, SBA Loans, Seller Notes, Earnouts & Rollovers)",
+            "author": "Deal Street - Small to Lower Middle Market M&A",
+            "thumbnail_url": "https://i.ytimg.com/vi/a5Z--B3Uhrg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=a5Z--B3Uhrg"
+          },
+          {
+            "video_id": "xl7JC2nh0UQ",
+            "title": "Private aviation and luxury yachts operate on the same rules | THE JET PODCAST | IABI",
+            "author": "International Aircraft Broker Institute IABI",
+            "thumbnail_url": "https://i.ytimg.com/vi/xl7JC2nh0UQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=xl7JC2nh0UQ"
+          },
+          {
+            "video_id": "Oxw138mRpnA",
+            "title": "Luxury Yachts, Private Aviation & High-End Clients | Ali Merchant | The Jet Podcast by IABI",
+            "author": "International Aircraft Broker Institute IABI",
+            "thumbnail_url": "https://i.ytimg.com/vi/Oxw138mRpnA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Oxw138mRpnA"
+          },
+          {
+            "video_id": "lrdWwuDaBtw",
+            "title": "How Yacht Brokers Actually Source Yachts - The Jet Podcast By IABI",
+            "author": "International Aircraft Broker Institute IABI",
+            "thumbnail_url": "https://i.ytimg.com/vi/lrdWwuDaBtw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=lrdWwuDaBtw"
+          },
+          {
+            "video_id": "xACWJ0HGNHs",
+            "title": "A Complete Guide to Profiting from a Yacht Charter Investment",
+            "author": "Savvypreneurship",
+            "thumbnail_url": "https://i.ytimg.com/vi/xACWJ0HGNHs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=xACWJ0HGNHs"
+          },
+          {
+            "video_id": "RPROcS6hZSE",
+            "title": "Broker Panel Case Studies",
+            "author": "International Yacht Brokers Association",
+            "thumbnail_url": "https://i.ytimg.com/vi/RPROcS6hZSE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=RPROcS6hZSE"
+          },
+          {
+            "video_id": "sm21N5L0nl8",
+            "title": "What Is a Non-Circumvention Clause? (Protecting Your Deal) | 100 Day Law School #shorts",
+            "author": "The Altierior Motive with Dr. Chad Michael Altieri",
+            "thumbnail_url": "https://i.ytimg.com/vi/sm21N5L0nl8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=sm21N5L0nl8"
+          },
+          {
+            "video_id": "aH0Oee-tkEo",
+            "title": "How to Create a Non-Disclosure Agreement (NDA) for FREE (Step by Step Tutorial)",
+            "author": "StartupWise",
+            "thumbnail_url": "https://i.ytimg.com/vi/aH0Oee-tkEo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=aH0Oee-tkEo"
+          },
+          {
+            "video_id": "HN8Y7XiYRGE",
+            "title": "Drafting a Non-Disclosure Agreement: Non Soliticiation & Non Compete",
+            "author": "Clausehound Inc.",
+            "thumbnail_url": "https://i.ytimg.com/vi/HN8Y7XiYRGE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=HN8Y7XiYRGE"
+          },
+          {
+            "video_id": "dKOzaPUjfHM",
+            "title": "Series 24: Registering a Broker-Dealer, OSJs, Branch Offices and Rule 1017 (Stanford's $8B Fraud)",
+            "author": "The Finance Lab",
+            "thumbnail_url": "https://i.ytimg.com/vi/dKOzaPUjfHM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=dKOzaPUjfHM"
+          },
+          {
+            "video_id": "-3SAUcV8ljM",
+            "title": "SEC Rule 15c3-3 Customer Reserve Calculation Explained | Broker-Dealer FINOP Training",
+            "author": "FINOP Controller",
+            "thumbnail_url": "https://i.ytimg.com/vi/-3SAUcV8ljM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=-3SAUcV8ljM"
+          },
+          {
+            "video_id": "WN_8pEobWVw",
+            "title": "Broker-Dealer Exclusions (Series 63, 65, and 66)",
+            "author": "Basic Wisdom",
+            "thumbnail_url": "https://i.ytimg.com/vi/WN_8pEobWVw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=WN_8pEobWVw"
+          },
+          {
+            "video_id": "WYhf4z4Djwk",
+            "title": "Broker-Dealer Supervision: WSPs and Office Inspections - Series 63 Exam Prep",
+            "author": "CertFuel",
+            "thumbnail_url": "https://i.ytimg.com/vi/WYhf4z4Djwk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=WYhf4z4Djwk"
+          },
+          {
+            "video_id": "Dw1n0a_kMu0",
+            "title": "[Series 24] S24F2: Broker-Dealer Recordkeeping: SEA Rules 17a-3 and 17a-4",
+            "author": "VoraPrep",
+            "thumbnail_url": "https://i.ytimg.com/vi/Dw1n0a_kMu0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Dw1n0a_kMu0"
+          },
+          {
+            "video_id": "Nkm4yUiFRmc",
+            "title": "SIE exam Tutor session ( Types of Broker Dealers)",
+            "author": "Series 7 Whisperer",
+            "thumbnail_url": "https://i.ytimg.com/vi/Nkm4yUiFRmc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Nkm4yUiFRmc"
+          },
+          {
+            "video_id": "YHrdVBHOASo",
+            "title": "Exclusive agency vs exclusive right to sell explained for the real estate exam.",
+            "author": "Just Call Maggie",
+            "thumbnail_url": "https://i.ytimg.com/vi/YHrdVBHOASo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=YHrdVBHOASo"
+          },
+          {
+            "video_id": "CaKZ8rVUEZs",
+            "title": "How to Build a B2B SaaS Website That Actually Explains Your Product (2027)",
+            "author": "Launchcraft",
+            "thumbnail_url": "https://i.ytimg.com/vi/CaKZ8rVUEZs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=CaKZ8rVUEZs"
+          },
+          {
+            "video_id": "In6A5W0WFdY",
+            "title": "The State of SaaS in 2025: Multiples, Growth Strategies, Valuations, & Exit Planning",
+            "author": "Quiet Light Brokerage",
+            "thumbnail_url": "https://i.ytimg.com/vi/In6A5W0WFdY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=In6A5W0WFdY"
+          },
+          {
+            "video_id": "V2LGinURueI",
+            "title": "How does a Cell Tower Lease Buyout Calculator work?",
+            "author": "Tower Genius",
+            "thumbnail_url": "https://i.ytimg.com/vi/V2LGinURueI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=V2LGinURueI"
           }
         ],
         "research_reference_only": true,
@@ -13442,7 +14688,7 @@
         "asset_id": "verbatim_transcript_quotes",
         "asset": "data/transcripts/*.json -> segments[].text",
         "asset_type": "verbatim_transcript_passage",
-        "source": "Spoken content of 1526 third-party videos (14256 captured tips)",
+        "source": "Spoken content of 1704 third-party videos (15850 captured tips)",
         "research_reference_only": true,
         "commercial_republish_allowed": false,
         "commercial_use_allowed": false,
@@ -13458,38 +14704,38 @@
     ]
   },
   "corpus_metrics": {
-    "video_count": 1526,
-    "channel_count": 982,
-    "total_words": 2258120,
-    "total_hours": 439.46,
-    "total_pro_tips": 14256,
-    "unique_statutes_and_forms": 783,
-    "unique_tools_and_portals": 4636
+    "video_count": 1704,
+    "channel_count": 1114,
+    "total_words": 2471044,
+    "total_hours": 480.57,
+    "total_pro_tips": 15850,
+    "unique_statutes_and_forms": 850,
+    "unique_tools_and_portals": 5157
   },
   "coverage": {
-    "videos_classified": 1526,
-    "videos_with_multiple_topics": 1524,
-    "tips_classified": 14256,
-    "raw_transcripts_joined": 1526,
+    "videos_classified": 1704,
+    "videos_with_multiple_topics": 1702,
+    "tips_classified": 15850,
+    "raw_transcripts_joined": 1704,
     "topic_video_counts": {
-      "business_model_and_economics": 1119,
-      "probate_and_docket_sourcing": 1047,
-      "unclaimed_property_and_escheat": 516,
-      "genealogy_and_heirship_proof": 1282,
-      "skip_tracing_and_outreach": 883,
-      "contracts_and_compensation": 1220,
-      "statutory_caps_and_licensing": 1146,
-      "automation_and_small_team_ops": 1285
+      "business_model_and_economics": 1279,
+      "probate_and_docket_sourcing": 1213,
+      "unclaimed_property_and_escheat": 542,
+      "genealogy_and_heirship_proof": 1438,
+      "skip_tracing_and_outreach": 1006,
+      "contracts_and_compensation": 1361,
+      "statutory_caps_and_licensing": 1321,
+      "automation_and_small_team_ops": 1381
     },
     "topic_tip_counts": {
-      "business_model_and_economics": 2495,
-      "probate_and_docket_sourcing": 1410,
-      "unclaimed_property_and_escheat": 1689,
-      "genealogy_and_heirship_proof": 1268,
-      "skip_tracing_and_outreach": 806,
-      "contracts_and_compensation": 1644,
-      "statutory_caps_and_licensing": 899,
-      "automation_and_small_team_ops": 4045
+      "business_model_and_economics": 2903,
+      "probate_and_docket_sourcing": 1783,
+      "unclaimed_property_and_escheat": 1737,
+      "genealogy_and_heirship_proof": 1473,
+      "skip_tracing_and_outreach": 852,
+      "contracts_and_compensation": 1775,
+      "statutory_caps_and_licensing": 1135,
+      "automation_and_small_team_ops": 4192
     }
   },
   "schema_version": "1.0",
@@ -13509,6 +14755,12 @@
       "priority": "high",
       "corpus_references": [
         {
+          "video_title": "Understanding Aircraft Brokerage: Standards, Risk, and Trust",
+          "author": "Own The Jet",
+          "timestamp": "00:04:01",
+          "link": "https://www.youtube.com/watch?v=i36Xg_tsVAY&t=241s"
+        },
+        {
           "video_title": "State Funds Tutorial: First Steps For Somebody Brand New To Unclaimed Funds Business.",
           "author": "Surplus Funds 101",
           "timestamp": "00:14:47",
@@ -13525,12 +14777,6 @@
           "author": "Surplus Funds 101",
           "timestamp": "00:03:31",
           "link": "https://www.youtube.com/watch?v=TTfaOSBvLDc&t=211s"
-        },
-        {
-          "video_title": "State Funds Tutorial New Mexico: How To Register As A Property Locator In The State Of New Mexico.",
-          "author": "Surplus Funds 101",
-          "timestamp": "00:07:16",
-          "link": "https://www.youtube.com/watch?v=6yIKsJMj6Gk&t=436s"
         }
       ]
     },
@@ -13549,6 +14795,12 @@
       "priority": "high",
       "corpus_references": [
         {
+          "video_title": "Understanding Aircraft Brokerage: Standards, Risk, and Trust",
+          "author": "Own The Jet",
+          "timestamp": "00:04:01",
+          "link": "https://www.youtube.com/watch?v=i36Xg_tsVAY&t=241s"
+        },
+        {
           "video_title": "State Funds Tutorial: First Steps For Somebody Brand New To Unclaimed Funds Business.",
           "author": "Surplus Funds 101",
           "timestamp": "00:14:47",
@@ -13565,12 +14817,6 @@
           "author": "Surplus Funds 101",
           "timestamp": "00:03:31",
           "link": "https://www.youtube.com/watch?v=TTfaOSBvLDc&t=211s"
-        },
-        {
-          "video_title": "State Funds Tutorial New Mexico: How To Register As A Property Locator In The State Of New Mexico.",
-          "author": "Surplus Funds 101",
-          "timestamp": "00:07:16",
-          "link": "https://www.youtube.com/watch?v=6yIKsJMj6Gk&t=436s"
         }
       ]
     },
@@ -13589,6 +14835,12 @@
       "priority": "high",
       "corpus_references": [
         {
+          "video_title": "Understanding Aircraft Brokerage: Standards, Risk, and Trust",
+          "author": "Own The Jet",
+          "timestamp": "00:04:01",
+          "link": "https://www.youtube.com/watch?v=i36Xg_tsVAY&t=241s"
+        },
+        {
           "video_title": "State Funds Tutorial: First Steps For Somebody Brand New To Unclaimed Funds Business.",
           "author": "Surplus Funds 101",
           "timestamp": "00:14:47",
@@ -13605,12 +14857,6 @@
           "author": "Surplus Funds 101",
           "timestamp": "00:03:31",
           "link": "https://www.youtube.com/watch?v=TTfaOSBvLDc&t=211s"
-        },
-        {
-          "video_title": "State Funds Tutorial New Mexico: How To Register As A Property Locator In The State Of New Mexico.",
-          "author": "Surplus Funds 101",
-          "timestamp": "00:07:16",
-          "link": "https://www.youtube.com/watch?v=6yIKsJMj6Gk&t=436s"
         }
       ]
     },
@@ -13669,6 +14915,12 @@
       "priority": "high",
       "corpus_references": [
         {
+          "video_title": "Understanding Aircraft Brokerage: Standards, Risk, and Trust",
+          "author": "Own The Jet",
+          "timestamp": "00:04:01",
+          "link": "https://www.youtube.com/watch?v=i36Xg_tsVAY&t=241s"
+        },
+        {
           "video_title": "State Funds Tutorial: First Steps For Somebody Brand New To Unclaimed Funds Business.",
           "author": "Surplus Funds 101",
           "timestamp": "00:14:47",
@@ -13685,12 +14937,6 @@
           "author": "Surplus Funds 101",
           "timestamp": "00:03:31",
           "link": "https://www.youtube.com/watch?v=TTfaOSBvLDc&t=211s"
-        },
-        {
-          "video_title": "State Funds Tutorial New Mexico: How To Register As A Property Locator In The State Of New Mexico.",
-          "author": "Surplus Funds 101",
-          "timestamp": "00:07:16",
-          "link": "https://www.youtube.com/watch?v=6yIKsJMj6Gk&t=436s"
         }
       ]
     },
@@ -13727,10 +14973,10 @@
           "link": "https://www.youtube.com/watch?v=d5TLZqkPX14&t=233s"
         },
         {
-          "video_title": "How To Claim Surplus Funds From Foreclosure",
-          "author": "Bob Diamond - America's Tax Sale Attorney",
-          "timestamp": "00:05:14",
-          "link": "https://www.youtube.com/watch?v=lzU09FRqmhg&t=314s"
+          "video_title": "Don't be a Victim of Broker NDA Agreements",
+          "author": "David C Barnett Small Business and Deal Making SMB",
+          "timestamp": "00:06:19",
+          "link": "https://www.youtube.com/watch?v=wHxYmcrcq4M&t=379s"
         }
       ]
     }

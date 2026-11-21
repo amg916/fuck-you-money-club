@@ -1,0 +1,470 @@
+{
+  "workbook_id": "wb-011-high-ticket-brokerage",
+  "volume_id": "vol-011-high-ticket-brokerage",
+  "title": "High-Ticket Brokerage — Operator Companion Workbook",
+  "subtitle": "6 Printable Operator Worksheets for Specialist Asset and M&A Brokerage: Qualified Mandates, Retained-Commission Economics, Protected Introductions, Escrow Execution, Controlled Automation, and Transferable Operating Records",
+  "worksheets": [
+    {
+      "worksheet_id": "ws-01",
+      "number": 1,
+      "title": "Opportunity, Vertical Underwriting & Counterparty Qualification",
+      "purpose": "Select a defensible brokerage vertical before spending scarce diligence hours. Establish asset ownership, seller authority, buyer capacity, commission collectability, and licensing dependencies using independently verifiable evidence. Convert attractive transaction values into a ranked mandate pipeline without treating client assets as operator revenue.",
+      "chapter_ref": "Q1, Q2, Q6",
+      "instructions": [
+        "Choose one asset category and one initial jurisdiction. Describe the typical seller, buyer, transaction structure, and closing mechanism. Separate equipment sales, business asset sales, and securities transactions because similar commercial introductions can trigger materially different operating requirements.",
+        "Collect seller authority and asset evidence before sharing a named opportunity. Verify entity records, signing powers, ownership documents, debt schedules, and existing mandates. Record each source and retrieval date rather than accepting an intermediary's summary as sufficient proof.",
+        "Qualify buyers against liquidity, financing conditions, decision authority, strategic fit, and realistic diligence capacity. Obtain permission for reference checks and verify proof of funds through an independently sourced contact; do not circulate bank statements through unrestricted email chains.",
+        "Score opportunities on closability, retained commission, evidence quality, mandate protection, and execution burden. Assign explicit rejection conditions for disputed title, unexplained intermediary chains, unverifiable buyers, and demands to route client purchase money through the brokerage's operating account.",
+        "Approve only opportunities with a documented route from mandate to disbursement. Preserve the original assumptions and evidence references so subsequent price changes, failed diligence, or financing delays can be traced to their effect on retained commission and available working capital."
+      ],
+      "fields": [
+        {
+          "name": "Vertical thesis and transaction boundary",
+          "type": "textarea",
+          "prompt": "Define the exact asset class, geography, seller profile, buyer profile, transaction structure, and work excluded from the mandate. Explain why this niche supports repeatable qualification rather than opportunistic introductions across unrelated markets.",
+          "example": "Initial niche: California packaging-equipment packages priced between $2 million and $5 million, sold by operating manufacturers to strategic operators. Mandates cover identified machinery, not company shares or real estate. Any proposed whole-business transfer returns to asset-specific licensing review before marketing begins."
+        },
+        {
+          "name": "Seller identity and signing authority",
+          "type": "textarea",
+          "prompt": "List the seller's legal entity, beneficial ownership evidence, authorized signatory, approval requirements, and verification sources. Identify the person responsible for resolving conflicting names, outdated registrations, or restrictions on an asset disposal.",
+          "example": "Illustrative seller Cedar Packaging LLC provides formation records, an ownership schedule, and a manager resolution authorizing Morgan Lee to sell the listed equipment. The operator checks the state registry and matches serial-number schedules to invoices. A missing member approval keeps the mandate unsigned."
+        },
+        {
+          "name": "Asset title and encumbrance evidence",
+          "type": "textarea",
+          "prompt": "Document ownership, serial numbers or ownership interests, lien search coverage, leases, intellectual-property dependencies, and release requirements. Distinguish seller representations from independently obtained evidence and assign a resolution owner for every material discrepancy.",
+          "example": "The $4 million package contains 18 machines. Seventeen serial numbers match invoices; one invoice requires correction. A lender's blanket lien requires a payoff letter and authorized release covering the transferred equipment. The transaction coordinator tracks both exceptions before any closing date becomes firm."
+        },
+        {
+          "name": "Buyer capacity and decision map",
+          "type": "textarea",
+          "prompt": "Record available equity, financing dependencies, investment authority, expected approval dates, and verification methods. Explain which evidence establishes capacity without assuming that a persuasive acquisition thesis or unsigned lender letter constitutes committed purchase funding.",
+          "example": "Buyer Northline Operations plans $1.5 million equity and $2.5 million equipment financing for a $4 million purchase. The bank confirms the equity balance through an authorized callback. The financing term sheet remains conditional on appraisal, and the investment committee meets in 12 days."
+        },
+        {
+          "name": "Mandate protection and fee entitlement",
+          "type": "textarea",
+          "prompt": "Specify exclusivity duration, covered assets, commission basis, payment trigger, protected buyers, termination rights, and tail conditions. Identify competing mandates and explain how signed documents establish entitlement without relying solely on informal introductions or verbal assurances.",
+          "example": "The proposed mandate grants 120 days of exclusivity for scheduled equipment and a 5% fee on defined closing consideration. A six-month tail applies only to named buyers introduced during the term and listed within five business days after termination, subject to negotiated causation language."
+        },
+        {
+          "name": "Retained commission opportunity sizing",
+          "type": "textarea",
+          "prompt": "Calculate transaction consideration, contractual commission, external referral or co-broker allocation, and retained operator commission. Show each multiplication and subtraction, then identify conditions that could change the fee independently of changes in headline asset value.",
+          "example": "Base illustration: $4,000,000 consideration multiplied by 5% produces a $200,000 contractual commission. A documented 45% co-broker allocation equals $90,000, leaving $110,000 retained operator revenue. Five equivalent completed deals produce $550,000 annual revenue; the $20 million asset total never enters the operator revenue line."
+        },
+        {
+          "name": "Closability score and rejection rules",
+          "type": "textarea",
+          "prompt": "Assign weighted scores to title quality, buyer capacity, seller motivation, mandate strength, and execution complexity. State minimum acceptable scores and nonnegotiable rejection conditions so an unusually large commission cannot override a defective transaction foundation.",
+          "example": "Score out of 100: title 25, buyer capacity 25, seller readiness 20, mandate protection 20, and manageable execution 10. Cedar scores 81, above the 75-point review threshold. However, unresolved signing authority remains a hard stop regardless of the numerical score or proposed commission."
+        },
+        {
+          "name": "Valuation evidence and representation limits",
+          "type": "textarea",
+          "prompt": "Identify valuation sources, inspection scope, comparable-sale adjustments, and seller claims requiring support. Record who verified each material statement and distinguish indicative pricing from an appraisal or independently tested equipment performance representation in buyer-facing materials.",
+          "example": "Three documented equipment sales support a $3.6 million to $4.2 million range after age and tooling adjustments. The seller's claimed 92% utilization remains labeled seller-reported until maintenance logs and production records reconcile. The teaser omits unsupported savings estimates rather than converting them into brokerage assertions."
+        },
+        {
+          "name": "Diligence burden and external specialist budget",
+          "type": "textarea",
+          "prompt": "Estimate operator hours, contractor hours, specialist fees, travel, inspection costs, and likely rework. Allocate each expense to the responsible party and identify written authorization needed before incurring costs beyond the brokerage's approved pursuit budget.",
+          "example": "Before mandate execution, the operator permits 12 internal hours and $1,800 of contractor research. The seller separately engages a $6,000 machinery inspector and pays that invoice directly. Brokerage-funded travel is capped at $1,200; additional travel requires a written budget revision rather than an assumed closing reimbursement."
+        },
+        {
+          "name": "Pursue, repair, or decline decision",
+          "type": "textarea",
+          "prompt": "Write the current decision, supporting evidence, unresolved conditions, responsible owners, and next review date. Explain the precise change that would move a repaired opportunity into active execution or cause a previously approved opportunity to be declined.",
+          "example": "Decision: repair before launch. Morgan must deliver the member resolution and corrected machine invoice by day 6; the coordinator must obtain the lender's release requirements by day 8. Failure to verify authority ends pursuit. Resolution permits marketing only after the mandate and licensing assessment are complete."
+        }
+      ],
+      "completion_gate": "The operator signs the opportunity record only after seller authority, buyer qualification standards, retained-fee math, mandate coverage, and the licensing route have evidence references. Unresolved title or authority defects prevent external marketing."
+    },
+    {
+      "worksheet_id": "ws-02",
+      "number": 2,
+      "title": "Unit Economics, Defect Reserve & Working-Capital Float",
+      "purpose": "Translate irregular closings into an explicit operating budget and cash survival plan. Reconcile the three canonical scenarios using retained commissions, distinguish fixed overhead from execution costs, and budget failed-deal exposure without counting client principal, unearned fees, or probability-weighted pipeline as available cash.",
+      "chapter_ref": "Q3, Q4",
+      "instructions": [
+        "Build the revenue bridge from completed transaction consideration to contractual commission, outside allocations, and retained commission. Use the retained amount as scorecard revenue. Maintain a separate accounting presentation review if contractual principal-versus-agent facts require different statutory financial reporting.",
+        "Reproduce Conservative, Base, and Scaled revenue, margin, owner net profit, and staffing exactly before adding sensitivity analysis. Label every alternative as a sensitivity rather than silently replacing the canonical numbers with a more attractive pipeline forecast.",
+        "Divide modeled expenses into fixed operating overhead, deal execution, and a management allowance for failed pursuits or defects. Explain whether each reserve is a budgeting allowance, segregated cash, or a recognized accounting liability; these categories are not interchangeable.",
+        "Map monthly cash balances using actual opening liquidity, setup spending, payment dates, and collection timing. Keep escrow deposits and client purchase money outside available working capital. Stress a delayed first closing rather than smoothing annual commissions into fictional monthly receipts.",
+        "Specify the spending reductions and funding decisions triggered by declining runway. Compare those actions with the expected three-to-twelve-month first-deal window, then document which costs can actually be stopped without breaching signed contractor agreements or damaging active transaction execution."
+      ],
+      "fields": [
+        {
+          "name": "Canonical Conservative scenario bridge",
+          "type": "textarea",
+          "prompt": "Reconcile the Conservative scenario to its exact retained revenue, expense envelope, margin, owner net profit, and staffing. Provide a plausible completed-deal composition while keeping the underlying asset consideration outside recognized operator revenue.",
+          "example": "Two $2,000,000 equipment closings at 4% generate $80,000 commission each. Subtract $30,000 outside allocation per closing: retained revenue is $100,000 annually. Modeled expenses are $75,000, leaving $25,000 owner net profit and a 25% margin. Staffing remains 1 FT plus 3 contractors."
+        },
+        {
+          "name": "Canonical Base scenario bridge",
+          "type": "textarea",
+          "prompt": "Reconcile the Base scenario using completed deals and retained commissions. Show the full expense ceiling, annual owner net profit, and margin calculation, preserving the canonical staffing rather than treating contractor counts as full-time salary equivalents.",
+          "example": "Five $4,000,000 closings at 5% generate $1,000,000 contractual commissions. Outside allocations total $450,000, leaving $550,000 retained revenue. Expenses of $343,750 leave $206,250 annual owner net profit: $206,250 divided by $550,000 equals 37.5%. Delivery uses 1 FT plus 3 engagement-based contractors."
+        },
+        {
+          "name": "Canonical Scaled scenario bridge",
+          "type": "textarea",
+          "prompt": "Reconcile the Scaled Small-Team scenario to exact retained revenue, annual expenses, net margin, owner net profit, and six-person staffing. Identify the operational improvement supporting the higher margin without implying that increased asset volume automatically creates efficiency.",
+          "example": "Eight $5,000,000 closings at 4% generate $200,000 commission each. Subtract $75,000 outside allocation per closing, leaving $1,000,000 retained annual revenue. A $500,000 expense envelope leaves $500,000 owner net profit and 50% margin. Standardized execution supports 2 FT plus 4 contractors, six people total."
+        },
+        {
+          "name": "Fixed overhead and variable-cost allocation",
+          "type": "textarea",
+          "prompt": "Allocate each canonical expense envelope between recurring monthly overhead and deal-related annual spending. State what overhead includes, prevent double-counting outside commission allocations, and distinguish recurring operating costs from startup purchases and owner distributions.",
+          "example": "Conservative overhead is $3,000 monthly, leaving $39,000 for annual deal costs. Base overhead is $12,000 monthly, leaving $199,750. Scaled overhead is $18,000 monthly, leaving $284,000. These reconcile to $75,000, $343,750, and $500,000 total expenses; outside commission allocations were already removed from scorecard revenue."
+        },
+        {
+          "name": "Scrub and defect reserve methodology",
+          "type": "textarea",
+          "prompt": "Define eligible failed-pursuit costs, evidence defects, fee disputes, and rework categories. Calculate a planning allowance and explain how actual expenditures replace estimates without booking unsupported liabilities or deducting the same reserve twice from modeled profit.",
+          "example": "Base budgeting allocates 5% of $550,000 retained revenue, or $27,500, to failed-pursuit and defect costs. It sits inside the $199,750 variable envelope, leaving $172,250 for other execution costs. Canonical profit assumes full budget consumption; the accountant records actual expenses and separately evaluates any liability recognition."
+        },
+        {
+          "name": "Opening liquidity and first-closing runway",
+          "type": "textarea",
+          "prompt": "Enter startup cash, one-time setup spending, unrestricted operating cash, monthly burn, and expected first collection date. Calculate runway without adding escrow balances, unsigned financing commitments, or expected commissions that have not reached their payment trigger.",
+          "example": "A $90,000 capitalization falls within the $15,000 to $100,000 startup range. After $18,000 setup spending, $72,000 remains. At $12,000 monthly overhead, fixed-cost runway is six months before additional deal spending. A $300,000 buyer deposit held by independent escrow contributes zero operating liquidity."
+        },
+        {
+          "name": "Monthly collection calendar and float stress",
+          "type": "textarea",
+          "prompt": "Schedule expected receipts and cash outlays by month, including commission-payment delays after closing. Stress a later first collection and quantify the resulting funding gap separately from annual profitability or probability-weighted pipeline value.",
+          "example": "With $72,000 opening operating cash and $12,000 monthly fixed burn, month-end balances before deal spending are $60,000, $48,000, $36,000, $24,000, $12,000, and zero. A first collection delayed until month 9 requires another $36,000 for fixed costs alone, even if the eventual commission is $110,000."
+        },
+        {
+          "name": "Pipeline expectation versus collectible revenue",
+          "type": "textarea",
+          "prompt": "Calculate probability-weighted pipeline value for capacity planning, then separate it from earned fees, receivables, and cash. Explain the evidence supporting probabilities and prevent multiple buyers pursuing one exclusive asset from being counted as multiple closings.",
+          "example": "Six distinct mandates each offer $110,000 retained fees at an assumed 30% close probability: weighted pipeline is $198,000. That is neither booked revenue nor cash. Three competing buyers for one mandate remain one potential closing, and the 30% assumption is revised using observed cohort outcomes."
+        },
+        {
+          "name": "Commission sensitivity and downside concentration",
+          "type": "textarea",
+          "prompt": "Stress one fewer closing, a lower sale price, a larger outside allocation, and a payment dispute. Quantify the retained-fee impact and label whether each expense remains fixed, declines with activity, or increases because of remediation.",
+          "example": "Base sensitivity: four rather than five equivalent closings produces $440,000 retained revenue. Holding the $343,750 expense envelope constant leaves $96,250, approximately 21.88% margin. This is a downside test, not the canonical Base case. Any projected cost reduction requires a specific cancellable commitment and effective cancellation date."
+        },
+        {
+          "name": "Cash intervention thresholds and owner sign-off",
+          "type": "textarea",
+          "prompt": "Set runway thresholds, spending authorities, minimum transaction-support reserves, and owner distribution conditions. Name the person responsible for intervention and specify the information needed before adding capital, reducing overhead, or accepting another cash-intensive mandate.",
+          "example": "At four months of fixed-cost runway, the operator freezes discretionary travel and reviews every software renewal. At three months, new pursuits require funded diligence budgets. Owner distributions stop below $36,000 unrestricted cash plus committed near-term deal costs; client funds remain unavailable under every intervention scenario."
+        }
+      ],
+      "completion_gate": "All three scenario bridges reproduce canonical revenue, margin, owner net profit, and staffing. The operator approves a dated cash forecast, confirms outside allocations are deducted once, and documents a funded response to a nine-month first-collection delay."
+    },
+    {
+      "worksheet_id": "ws-03",
+      "number": 3,
+      "title": "End-to-End Execution, Ledger & Technical QA Pre-Flight",
+      "purpose": "Create an auditable execution path from signed mandate through commission collection. Link every milestone to evidence, an owner, and a stop condition. Reconcile escrow instructions, document versions, seller claims, and operator ledger entries before irreversible disclosures or closing-day disbursements occur.",
+      "chapter_ref": "Q7, Q8",
+      "instructions": [
+        "Assign one immutable deal identifier and use it across the CRM, data room, inspection reports, mandate, invoice, and ledger. Preserve separate entity and contact identifiers so a renamed buyer or replacement signatory does not break the transaction history.",
+        "Define entry evidence and exit evidence for every stage, including qualification, mandate, controlled disclosure, offer, diligence, definitive documents, escrow, closing, and collection. A stage change must reflect verified work rather than an optimistic conversation or calendar placeholder.",
+        "Establish document ownership and version control before collecting sensitive materials. Use restricted access, dated indexes, and material-change notifications. Remove obsolete buyer-facing documents from active folders while preserving an internal audit copy and the reason for replacement.",
+        "Rehearse the closing money flow using the draft settlement statement. Independently verify escrow contacts and payment instructions, compare fee allocations with executed agreements, and require two-person confirmation of any late bank-detail change before transmitting instructions.",
+        "Close the operator ledger only after settlement evidence and bank receipts reconcile. Distinguish earned commission, receivable, collection, outside allocation, and client principal. Preserve unresolved exceptions with owners and deadlines instead of marking the entire transaction complete because signatures were obtained."
+      ],
+      "fields": [
+        {
+          "name": "Deal identifier and evidence map",
+          "type": "textarea",
+          "prompt": "Create the permanent deal identifier and map it to counterparty records, mandate versions, evidence folders, settlement records, and accounting references. Specify how duplicate opportunities are detected before they produce conflicting mandates or repeated outreach.",
+          "example": "Deal HTB-011-004 connects Cedar Packaging LLC, buyer Northline Operations, mandate M-004-v3, data-room index DR-004, and invoice INV-004. The CRM checks seller entity number plus asset serial-number set for duplicates. A second introducer is attached to this record rather than creating another revenue opportunity."
+        },
+        {
+          "name": "Milestone sequence and evidence requirements",
+          "type": "textarea",
+          "prompt": "List transaction stages, accountable owners, required documents, target durations, and conditions preventing advancement. Separate commercial progress from evidence completion so an accepted indication of interest cannot conceal missing authority, funding, or licensing prerequisites.",
+          "example": "Stages are qualified, mandated, disclosed, offered, diligence, definitive, escrow-ready, closed, and collected. The coordinator owns evidence completeness; the operator owns commercial decisions. Escrow-ready requires signed sale documents, funding confirmation, lien-release instructions, and approved fee allocations. An accepted offer alone satisfies none of those closing requirements."
+        },
+        {
+          "name": "Data-room access and document integrity",
+          "type": "textarea",
+          "prompt": "Define document classifications, authorized audiences, access expiration, download restrictions, and version approval. Identify the access log and process for revoking access when a buyer withdraws or a seller replaces a material disclosure document.",
+          "example": "SharePoint folders separate teaser materials, signed-NDA diligence, and restricted identity evidence. Buyer access expires after 30 days unless renewed. The coordinator replaces maintenance schedule v2 with v3, records the change, and alerts active reviewers. A withdrawn buyer's account is revoked that day and logged."
+        },
+        {
+          "name": "Representation and diligence exception register",
+          "type": "textarea",
+          "prompt": "Track every material discrepancy between marketing claims, seller documents, inspection results, and contract representations. Record financial significance, evidence source, resolution owner, buyer notification, and whether the issue changes price, fee entitlement, or willingness to proceed.",
+          "example": "Inspection finds a machine overhaul is due sooner than the teaser stated. Estimated cost is $85,000. The operator suspends the old teaser, obtains the inspector's report, and records buyer acknowledgment of the correction. Any revised purchase price automatically triggers a fresh commission calculation before settlement drafting."
+        },
+        {
+          "name": "Escrow provider and instruction verification",
+          "type": "textarea",
+          "prompt": "Record the escrow provider's legal identity, applicable authorization, independently sourced telephone number, authorized contacts, and instruction-change procedure. Explain how the team verifies wiring information without relying on the same message that introduced the payment request.",
+          "example": "The operator checks the selected escrow provider's registration where required and calls its published switchboard to establish the closing contact. A late email changing bank details triggers a hold and independent callback. The operator and coordinator document verification; neither uses the email's replacement telephone number."
+        },
+        {
+          "name": "Draft settlement statement and fee waterfall",
+          "type": "textarea",
+          "prompt": "Reconcile purchase consideration, seller obligations, brokerage commission, outside allocations, and each recipient's payment instructions. Label the calculation as a client settlement rather than operator revenue, and identify omitted taxes or adjustments requiring separate transaction-specific calculation.",
+          "example": "Simplified closing statement: $4,000,000 consideration less $600,000 lender payoff and $200,000 total commission leaves $3,200,000 seller proceeds before separately determined taxes and adjustments. Escrow pays $90,000 to the co-broker and $110,000 to the operator. The $4 million purchase amount never becomes brokerage sales revenue."
+        },
+        {
+          "name": "Operator revenue and receivable ledger",
+          "type": "textarea",
+          "prompt": "Specify the evidence supporting fee recognition, receivable creation, cash collection, and resolution of allocation differences. Explain the scorecard retained-revenue treatment while preserving a separate accountant-reviewed presentation for contracts whose accounting substance requires another gross-versus-net treatment.",
+          "example": "For this documented net-entitlement arrangement, the accountant confirms the $110,000 fee becomes earned at closing. The operator records a $110,000 receivable and retained commission, then clears the receivable on collection. The closing statement supports the separate $90,000 co-broker payment; client purchase principal stays outside operator revenue."
+        },
+        {
+          "name": "Technical calculations and export checks",
+          "type": "textarea",
+          "prompt": "Define deterministic checks for fee calculations, required identifiers, currency precision, stage dates, duplicate invoices, and export totals. State the expected output for a known transaction so spreadsheet or CRM changes can be tested against a stable reference.",
+          "example": "Reference calculation uses Decimal-compatible currency precision: $4,000,000 times 0.05 equals $200,000; $200,000 times 0.45 equals $90,000; retained fee equals $110,000. The export rejects duplicate INV-004 entries, collection dates before invoice creation unless documented, and missing deal identifiers. Totals reconcile to the ledger."
+        },
+        {
+          "name": "Closing-day communication and incident response",
+          "type": "textarea",
+          "prompt": "Assign closing-day roles, approved communication channels, escalation contacts, and pause conditions. Explain how a funding shortfall, document substitution, disputed instruction, or suspicious payment request is contained while preserving evidence and informing affected authorized participants.",
+          "example": "The operator leads commercial decisions; the coordinator reconciles documents; escrow controls funds under its instructions. A $250,000 funding shortfall pauses disbursement. The team records the discrepancy in the closing log and notifies authorized parties through established contacts rather than accepting an unverified same-day substitute lender."
+        },
+        {
+          "name": "Post-close reconciliation and archive",
+          "type": "textarea",
+          "prompt": "List the final settlement evidence, collection confirmation, release documents, access changes, exception resolution, and retention schedule required to archive a deal. Identify open post-closing obligations that remain active after the brokerage receives its commission.",
+          "example": "Within five business days, the coordinator matches the $110,000 bank receipt to INV-004, archives signed closing documents, confirms lien-release follow-up, and removes buyer data-room access when no longer needed. An outstanding equipment handover certificate remains assigned to the seller with a specific completion date."
+        }
+      ],
+      "completion_gate": "A second reviewer reproduces the fee waterfall, verifies the escrow contact independently, and confirms required closing documents and ledger references. Collection is marked complete only after bank evidence matches the operator's contractual entitlement."
+    },
+    {
+      "worksheet_id": "ws-04",
+      "number": 4,
+      "title": "Statutory, Licensing, Contract & Outreach Compliance Audit",
+      "purpose": "Determine which transaction-specific rules govern the proposed activities before accepting a mandate or launching outreach. Translate licensing, securities, agency, confidentiality, communications, lien, and fund-handling requirements into documented operating actions, with named specialists responsible for unresolved jurisdictional or structural questions.",
+      "chapter_ref": "Q5, Q9",
+      "instructions": [
+        "Classify the transaction by legal substance, not marketing label. Identify securities, real estate, business opportunities, equipment, and other regulated assets separately. Record every jurisdiction connected to the seller, buyer, asset, broker activity, and proposed closing.",
+        "Have qualified transaction counsel resolve licensing and exemption questions before transaction-based compensation is promised. Preserve the analysis and factual assumptions. A federal exemption, confidentiality agreement, or anti-circumvention clause does not independently resolve state licensing or compensation restrictions.",
+        "Review the mandate, agency disclosure, co-broker agreement, NCNDA, and sale documentation as a connected set. Resolve inconsistent parties, fee triggers, protected contacts, governing law, dispute provisions, and disclosure permissions before confidential information or buyer identities are released.",
+        "Translate outreach requirements into channel-specific controls. Maintain sender identity, suppression records, permitted contact methods, and evidence supporting claims. Review email, telephone, automated messaging, and personal-data processing separately instead of assuming one channel's permission covers every channel.",
+        "Document client-fund boundaries and the independent closing provider's responsibilities. Verify applicable trust-account, escrow, agency, and lien-release requirements. Escalate attempts to bypass licensing, hide principals, obscure fee recipients, or mischaracterize transaction consideration before further execution."
+      ],
+      "fields": [
+        {
+          "name": "Asset classification and jurisdiction inventory",
+          "type": "textarea",
+          "prompt": "Identify the legal form of the sale and all relevant locations. List facts that could change the classification, including stock consideration, real-property interests, business goodwill, seller financing, or activities beyond a narrowly defined equipment introduction.",
+          "example": "The initial California mandate covers specified machinery only. A later proposal adds customer contracts, goodwill, and the operating business. The operator pauses that expanded scope because California Business and Professions Code sections 10130 and 10131 can govern licensed business-opportunity brokerage, not only real-property transactions."
+        },
+        {
+          "name": "Securities broker registration analysis",
+          "type": "textarea",
+          "prompt": "Document whether the transaction involves securities and whether proposed activities require broker registration or satisfy a specific exemption. Identify the reviewing specialist, compensation structure, factual assumptions, and restrictions imposed on introductions, negotiation, financing, and custody.",
+          "example": "A proposed sale of company shares triggers review under 15 U.S.C. 78o(a) and 78o(b)(13). The operator obtains a written assessment before quoting a success fee. Calling the work consulting does not change transaction-based compensation facts, and the assessment separately addresses applicable state broker requirements."
+        },
+        {
+          "name": "Federal M&A exemption factual checklist",
+          "type": "textarea",
+          "prompt": "If relying on the federal M&A broker exemption, record company eligibility, size evidence, buyer control and active management, excluded activities, required disclosures, and state-law analysis. Test every condition rather than treating company size as sufficient.",
+          "example": "Under 15 U.S.C. 78o(b)(13), counsel checks private-company status and statutory EBITDA below $25 million or gross revenue below $250 million, subject to applicable adjustments. The checklist also addresses control, active management, custody, financing, shell-company restrictions, buyer-group formation, and written consent for dual representation."
+        },
+        {
+          "name": "License coverage and referral compensation",
+          "type": "textarea",
+          "prompt": "List required individual and entity licenses, supervising relationships, permitted activities, renewal dates, and referral-payment restrictions. Specify how the operator verifies active status and avoids assuming another participant's license automatically authorizes the brokerage's own conduct.",
+          "example": "For a California business-opportunity mandate, counsel maps the contemplated activities to Business and Professions Code section 10131 and checks proposed payments under section 10137. The operator verifies license records and written roles; an unlicensed introducer receives no promised transaction share pending that determination."
+        },
+        {
+          "name": "Agency, conflicts, and material disclosures",
+          "type": "textarea",
+          "prompt": "State whom the brokerage represents, who pays each fee, and which relationships create conflicts. Identify required written disclosures and consents, plus material facts that must be communicated accurately throughout marketing, negotiation, and diligence.",
+          "example": "The seller pays the 5% commission, and a separate buyer adviser receives the negotiated outside allocation. The documents disclose those roles before buyer diligence. For a securities transaction, counsel also addresses 17 CFR 240.10b-5; unsupported earnings claims are removed and material corrections are circulated."
+        },
+        {
+          "name": "Exclusive mandate and NCNDA drafting controls",
+          "type": "textarea",
+          "prompt": "Define confidential information, permitted recipients, protected introductions, exclusions, duration, causation, fee entitlement, and remedies. Explain how the NCNDA supports a valid mandate without purporting to create a license or an unlimited claim over unrelated transactions.",
+          "example": "The NCNDA protects named buyer Northline for the scheduled equipment opportunity for 12 months. It excludes documented preexisting relationships and independently developed contacts. Fee recovery refers to the executed mandate and proven circumvention; it does not impose automatic ownership of every future deal involving either party."
+        },
+        {
+          "name": "Escrow, trust funds, and lien-release controls",
+          "type": "textarea",
+          "prompt": "Identify who may receive deposits, which fund-handling rules apply, how funds remain segregated, and what authorizes release. Record lien-search and payoff requirements, distinguishing a contractual promise to clear title from evidence of authorized lien termination.",
+          "example": "The buyer sends its $300,000 deposit directly to the selected escrow provider, never the operator. Counsel reviews the adopted state versions of UCC sections 9-315 and 9-513: a sale does not automatically eliminate a security interest, and release documentation must match the secured party's authorization."
+        },
+        {
+          "name": "Email outreach and suppression evidence",
+          "type": "textarea",
+          "prompt": "Document sender identification, subject-line accuracy, mailing address, opt-out mechanism, suppression timing, and vendor responsibilities for commercial email. State the statute reviewed and show how suppression survives list imports and changes in campaign tools.",
+          "example": "The email checklist implements 15 U.S.C. 7704 requirements, including accurate headers, nondeceptive subjects, a valid postal address, and a working opt-out honored within 10 business days. HubSpot imports check a central suppression list; a contractor cannot reactivate an opted-out recipient by uploading a fresh spreadsheet."
+        },
+        {
+          "name": "Telephone, messaging, and personal-data review",
+          "type": "textarea",
+          "prompt": "Assess calling methods, number types, prerecorded content, automated messaging, applicable consent and do-not-call requirements, and personal-data handling. Identify state-law overlays and applicable privacy duties before enabling technology that changes the outreach method.",
+          "example": "Launch uses manually reviewed business email while counsel assesses 47 U.S.C. 227, 47 CFR 64.1200, and state calling requirements for proposed telephone campaigns. The operator separately tests applicability of California Civil Code section 1798.100 and related provisions before expanding buyer-contact enrichment and personal-data sharing."
+        },
+        {
+          "name": "Dated issue log and specialist resolution",
+          "type": "textarea",
+          "prompt": "Record each unresolved statutory or contractual issue, responsible specialist, requested evidence, deadline, and restricted activity. Specify what written conclusion and factual verification will allow work to resume without silently expanding the scope of an earlier assessment.",
+          "example": "Issue L-04 asks whether the revised transaction includes a business opportunity requiring California licensing. Counsel receives the asset schedule and draft sale structure on day 4. No expanded mandate or success-fee offer is issued until the written conclusion identifies the permitted operating structure."
+        }
+      ],
+      "completion_gate": "Every applicable licensing and transaction-structure question has a dated specialist conclusion or a documented restriction on activity. Executed mandate terms, protected introductions, disclosures, outreach controls, and fund-handling instructions must agree before external execution proceeds."
+    },
+    {
+      "worksheet_id": "ws-05",
+      "number": 5,
+      "title": "Automation Pipeline, Growth Flywheel & Risk Fallback Tracker",
+      "purpose": "Automate repeatable matching, milestone reminders, and document checks while keeping commercial judgment and sensitive disclosures under human control. Build a measured referral and outbound engine that preserves source attribution, suppression history, evidence quality, and continuity when vendors, integrations, or key people fail.",
+      "chapter_ref": "Q6, Q10",
+      "instructions": [
+        "Define a minimal system of record before connecting tools. Assign ownership for companies, contacts, mandates, introductions, milestones, and fee allocations. Use stable identifiers and a documented field dictionary so integrations do not silently overwrite commercially important distinctions.",
+        "Start matching with explicit buyer criteria and verified seller attributes. Record why each candidate appears and which constraints remain unverified. Treat algorithmic ranking as a research aid, not permission to disclose confidential identity or assert acquisition capacity.",
+        "Automate reminders and completeness checks only after defining required evidence and exception owners. Use idempotent updates, error logs, and bounded retries. Prevent a successful automation run from being mistaken for a completed commercial or legal milestone.",
+        "Build outbound cohorts around one credible vertical thesis and a permitted communication channel. Measure positive replies, qualified buyers, signed mandates, and completed closings separately. Exclude duplicates, suppressed contacts, and repeated buyer interest in the same asset from inflated conversion counts.",
+        "Exercise fallback procedures for CRM downtime, incorrect matching, exposed documents, stale fee calculations, and unavailable contractors. Preserve a restricted manual working queue and evidence backups. Resume automation only after the underlying records and permissions have been reconciled."
+      ],
+      "fields": [
+        {
+          "name": "System-of-record architecture and ownership",
+          "type": "textarea",
+          "prompt": "Choose the authoritative system for each record type and define synchronization direction, ownership, and conflict handling. Explain which financial and document facts must not be overwritten by marketing-tool imports or enrichment updates.",
+          "example": "HubSpot owns companies, contacts, and deal stages; SharePoint owns signed documents; the accounting ledger owns posted receivables and collections. Airtable holds a reviewed matching queue. Enrichment may suggest a telephone update but cannot alter signed fee terms, verified entity identity, or suppression status."
+        },
+        {
+          "name": "Buyer-seller matching rules and evidence",
+          "type": "textarea",
+          "prompt": "Define mandatory matching constraints, preference weights, evidence freshness, and review ownership. Describe how the system handles missing or conflicting buyer criteria without inventing capacity or sending a confidential opportunity to an unsuitable recipient.",
+          "example": "Mandatory filters require packaging equipment interest, a $2 million to $5 million ticket range, and a named acquisition decision-maker. Geography adds 20 ranking points and documented funding adds 30. A missing funding verification creates a research task; it does not become an assumed positive match."
+        },
+        {
+          "name": "Milestone automation and idempotency",
+          "type": "textarea",
+          "prompt": "Specify the trigger, required inputs, output record, duplicate-prevention key, retry limit, and failure owner for milestone automation. Explain how repeated webhooks avoid duplicate tasks, duplicate disclosures, or repeated invoices for the same closing.",
+          "example": "A signed mandate triggers one diligence checklist keyed by deal ID plus mandate version. Three repeated webhook deliveries update the same checklist rather than create three. After two failed attempts, the integration stops retrying and assigns the coordinator an exception with the original event payload."
+        },
+        {
+          "name": "Document checklist and extraction controls",
+          "type": "textarea",
+          "prompt": "Define required documents, extracted fields, source citations, confidence handling, and human verification for automated review. Identify materials that cannot leave the approved environment and prevent extracted text from being treated as an executed contractual term.",
+          "example": "The checklist expects a signed mandate, authority resolution, asset schedule, and lien evidence. Extraction suggests the 5% fee and 120-day term with page references, but the coordinator verifies both against signatures. Restricted identity documents are excluded from external processing and remain in the controlled repository."
+        },
+        {
+          "name": "Outbound cohort and conversion ledger",
+          "type": "textarea",
+          "prompt": "Define the target cohort, qualification criteria, permitted channel, message hypothesis, and conversion denominators. Separate delivered contacts, positive responses, qualified meetings, signed mandates, and completed transactions so early activity does not masquerade as commission production.",
+          "example": "A pilot contacts 120 verified equipment owners through individually reviewed email. It produces 18 positive replies, eight qualified meetings, and two signed mandates: 15%, 6.67%, and 1.67% of contacted owners. No closing occurs during the pilot, so recognized commission from this cohort remains zero."
+        },
+        {
+          "name": "Referral flywheel and attribution protection",
+          "type": "textarea",
+          "prompt": "Map repeatable referral sources, introduction permissions, source attribution, compensation review, and feedback loops. Explain how the team recognizes useful introductions without promising prohibited fee sharing or disclosing confidential transaction outcomes to an unauthorized intermediary.",
+          "example": "Machinery inspectors, industry accountants, and equipment lenders receive a clear description of the target mandate. Each permitted introduction gets a source record and timestamp. Any proposed payment receives asset-specific review before commitment; a thank-you update confirms contact occurred without revealing price or buyer identity."
+        },
+        {
+          "name": "Suppression, duplicate, and privacy safeguards",
+          "type": "textarea",
+          "prompt": "Define suppression precedence, duplicate matching, access roles, retention rules, and data-export restrictions. Describe how the pipeline handles a contact imported from multiple sources when one source contains an opt-out or a restricted-use designation.",
+          "example": "Email address and entity identifiers drive duplicate checks, with manual review for similar names. A suppression entry always overrides a newly purchased contact record. Researchers cannot export proof-of-funds documents, and campaign users see only the qualification status needed to perform their role."
+        },
+        {
+          "name": "Failure modes and manual fallback",
+          "type": "textarea",
+          "prompt": "List likely integration, vendor, document-access, and staffing failures with detection signals and fallback owners. Specify the minimum restricted working record needed to continue safely without bypassing verification or releasing sensitive information through uncontrolled personal channels.",
+          "example": "If HubSpot is unavailable, the coordinator uses a restricted daily export containing deal IDs, owners, deadlines, and document references. No bulk outreach runs during the outage. Closing work continues through verified contacts, and manual changes are reconciled before automated stage updates resume."
+        },
+        {
+          "name": "Automation performance and economic value",
+          "type": "textarea",
+          "prompt": "Measure time saved, review time added, error rates, tool costs, and delayed tasks. Calculate net operating value without assuming saved hours immediately become cash savings or that faster matching increases completed-deal revenue by itself.",
+          "example": "Document reminders save 10 coordinator hours monthly at a $50 planning rate, creating $500 of capacity value. Review requires two hours, and software costs $150: net modeled capacity value is $250. Cash savings occur only if paid hours actually decline; no commission uplift is assumed."
+        },
+        {
+          "name": "Change control and recovery acceptance",
+          "type": "textarea",
+          "prompt": "Define the test records, reviewer, release decision, rollback method, and post-change checks for an automation update. Identify changes requiring explicit operator confirmation, especially modifications to fee calculations, document sharing, or outward-facing communication.",
+          "example": "Before changing matching weights, the coordinator tests 20 synthetic records including five suppressed contacts and three missing funding checks. The operator reviews results before enabling outreach. A versioned prior configuration supports rollback, and the first live batch is limited to ten reviewed recipients."
+        }
+      ],
+      "completion_gate": "Matching, milestone tracking, and document checks pass a documented test set without unauthorized disclosure, duplicate tasks, or suppressed outreach. A named backup operator successfully executes the manual fallback and reconciles changes before normal automation resumes."
+    },
+    {
+      "worksheet_id": "ws-06",
+      "number": 6,
+      "title": "30-Day Launch Sprint, Pod KPI Scorecard & Exit-Readiness Ledger",
+      "purpose": "Launch a focused brokerage operation in 30 days without confusing setup progress with a completed deal. Assign pod responsibilities, measure evidence-backed pipeline movement, preserve canonical economics, and assemble records that make mandates, relationships, and operating knowledge transferable rather than founder-dependent.",
+      "chapter_ref": "Q11, Q12",
+      "instructions": [
+        "Sequence the first month around authority, economics, execution readiness, and controlled market contact. Treat the three-to-twelve-month first-deal window as the planning range. The sprint produces a qualified operating platform and pipeline, not an invented promise of immediate commission.",
+        "Assign the initial one-full-time, three-contractor pod explicit responsibilities and spending limits. Distinguish recurring availability from deal-specific engagements. Maintain specialist access without assuming every contractor is continuously employed or available for simultaneous closing emergencies.",
+        "Create a weekly scorecard with clear denominators, source records, owners, and review dates. Track mandate quality, stage age, retained fee exposure, defects, collections, and cash runway. Keep probability-weighted pipeline separate from canonical annual revenue and owner net profit.",
+        "Test handoff quality before adding volume. Have a backup person reconstruct an active deal from its evidence record without relying on private messages or the founder's memory. Record missing permissions, undocumented promises, and relationship dependencies as specific transfer risks.",
+        "Finish the sprint with a written continue, repair, or narrow decision. Compare actual spending and evidence quality with the approved plan. Authorize additional hiring only when workload, cash, and transferable execution capacity support it, not because headline transaction values appear large."
+      ],
+      "fields": [
+        {
+          "name": "Days 1–7: niche, authority, and setup",
+          "type": "textarea",
+          "prompt": "Define first-week deliverables, owners, spending limits, and evidence of completion. Prioritize vertical selection, licensing analysis, mandate drafting, cash planning, and system access before investing in broad lead generation or public claims about transaction capability.",
+          "example": "By day 7, the operator selects packaging equipment, commissions the jurisdictional review, approves a mandate draft, and opens the restricted evidence repository. Setup spending is capped at $18,000 within the $90,000 capitalization plan. No external success-fee commitment precedes the required licensing determination."
+        },
+        {
+          "name": "Days 8–14: qualification and execution rehearsal",
+          "type": "textarea",
+          "prompt": "Specify the second-week research cohort, qualification targets, test documents, and execution rehearsal. Record which activities can proceed while a transaction-specific question remains open and which activities must wait for documented resolution by the responsible specialist.",
+          "example": "The research contractor maps 40 equipment owners and 25 strategic buyers from permitted sources. The coordinator rehearses the $4 million closing waterfall using synthetic documents. Internal research continues while one structure question is open; named deal marketing waits for authority and licensing clearance."
+        },
+        {
+          "name": "Days 15–21: controlled outreach and mandate testing",
+          "type": "textarea",
+          "prompt": "Define the initial outreach batch, review process, discovery questions, and mandate qualification standard. Separate activity targets from promised commercial results, and identify the evidence needed before a positive reply becomes a qualified seller opportunity.",
+          "example": "The operator reviews 30 first-batch emails and runs discovery calls with responding owners. The working target is six substantive conversations, not six assumed mandates. A seller becomes qualified only after ownership, authority, price expectations, timing, and existing broker relationships are documented."
+        },
+        {
+          "name": "Days 22–30: evidence review and launch decision",
+          "type": "textarea",
+          "prompt": "Specify final-week tests, budget reconciliation, pipeline review, and decision criteria. Identify deficiencies that require repair before additional outreach and define what a successful launch means when no transaction has yet closed or generated collectible commission.",
+          "example": "Day 30 review requires a working mandate process, tested escrow checklist, verified suppression handling, and a funded 90-day work plan. One qualified mandate and zero closings can support continuation if evidence and runway are sound. Revenue remains zero until the contractual earning conditions are satisfied."
+        },
+        {
+          "name": "Initial pod roles and capacity commitments",
+          "type": "textarea",
+          "prompt": "Assign responsibilities to the full-time operator and three contractors, including backup coverage, engagement terms, hour limits, and spending authority. Identify which specialist activities require separate engagement and prevent informal role assignments from implying professional authority.",
+          "example": "The initial pod is 1 FT operator plus 3 contractors: sourcing researcher, transaction coordinator, and specialist transaction counsel. Engagements set actual hours and availability. The coordinator maintains checklists but does not provide legal opinions; external escrow remains an independent provider rather than an additional pod employee."
+        },
+        {
+          "name": "Weekly KPI definitions and source records",
+          "type": "textarea",
+          "prompt": "Define each metric's numerator, denominator, reporting period, source record, and owner. Include qualified mandates, stage aging, diligence defects, retained commissions, collection timing, and runway, while distinguishing leading activity measures from completed-deal financial outcomes.",
+          "example": "Friday reporting shows two qualified mandates from eight completed seller meetings: 25% conversion. Median diligence age is 19 days across three active records. Collected retained commission is zero. Cash runway uses unrestricted cash divided by forward monthly burn, with committed deal spending shown separately."
+        },
+        {
+          "name": "Canonical scorecard and scaling trigger",
+          "type": "textarea",
+          "prompt": "Record the canonical candidate score, component scores, rank, scenario economics, and staffing transition. Define an evidence-based scaling trigger that preserves cash and service quality without treating the model score as proof of actual transaction performance.",
+          "example": "Candidate 26 ranks #11 of 29 at 82/100: revenue 23, margin 22, team 18, startup 10, automation 9. Owner net targets remain $25,000, $206,250, and $500,000. Move from 1 FT plus 3 contractors to 2 FT plus 4 only after funded capacity planning."
+        },
+        {
+          "name": "Relationship concentration and founder-dependence test",
+          "type": "textarea",
+          "prompt": "Measure dependence on individual sellers, buyers, referral sources, and the founder's personal knowledge. Identify transferable records, required relationship permissions, and backup access needed for another authorized person to continue a transaction without making undocumented promises.",
+          "example": "Three of five modeled Base closings originate from one referral source, representing $330,000 of $550,000 retained revenue, or 60%. The operator documents introductions and develops two additional source channels. A backup coordinator must reconstruct each active deal's next action from approved records alone."
+        },
+        {
+          "name": "Exit-readiness evidence and assignability ledger",
+          "type": "textarea",
+          "prompt": "Inventory contracts, fee rights, licenses, operating procedures, financial records, data permissions, and relationship restrictions relevant to a future business transfer. Distinguish transferable assets from personal licenses, nonassignable mandates, and relationships requiring explicit counterparty consent.",
+          "example": "The exit ledger contains executed mandates, trailing collections, dispute history, contractor agreements, and documented procedures. Two mandates require seller consent to assignment; those fees are not presented as freely transferable. Personal licenses and restricted buyer data receive separate continuity plans before any prospective sale process."
+        },
+        {
+          "name": "Day-30 owner decision and next-quarter commitments",
+          "type": "textarea",
+          "prompt": "Write the continue, repair, or narrow decision with evidence, funded commitments, accountable owners, and review dates. State the remaining obstacles to first collection and the conditions that would justify reducing scope rather than spending through an unresolved execution defect.",
+          "example": "Decision: continue narrowly in packaging equipment. After $18,000 setup and $12,000 first-month overhead, $60,000 remains before additional deal spending. The next 90-day fixed budget is $36,000. The operator reviews mandate evidence weekly and reassesses funding before runway falls below three months."
+        }
+      ],
+      "completion_gate": "The day-30 record contains a signed operating decision, reconciled spending, named pod responsibilities, evidence-backed KPIs, and a funded next-quarter plan. A backup person demonstrates deal reconstruction, and transfer restrictions are recorded without assuming automatic assignment of mandates or licenses."
+    }
+  ]
+}

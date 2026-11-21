@@ -1,0 +1,1156 @@
+from __future__ import annotations
+
+CHAPTER_7 = {
+    "id": "Q7",
+    "chapter_id": "Q7",
+    "chapter_number": 7,
+    "question_number": 7,
+    "slug": "high-ticket-brokerage-operating-process-production-blueprint-90-day-cohort",
+    "question_prompt": "How does an operator execute high-ticket brokerage end-to-end from intake to reconciled cash, backed by an auditable technical/ledger blueprint and a worked 90-day cohort walk?",
+    "kicker": "Q7 / THE BIG MONEY PLAYBOOKS",
+    "title": "The Complete Operating Process, Production Blueprint & 90-Day Cohort Walk",
+    "subtitle": "Exclusive Mandates, SEC EDGAR Triggers, Powered-Land Options, Independent Escrow, and a Transaction-Safe SQLite Commission Ledger",
+    "layout_template": "research_exhibit",
+    "reading_time_minutes": 14,
+    "executive_summary": (
+        "Candidate #26, High-Ticket Brokerage, ranks #11 with an 82/100 "
+        "Money-to-Manpower Score across 21 mapped plays. This chapter turns "
+        "specialist transaction services into a controlled operating sequence: "
+        "source, qualify, verify authority, secure an exclusive mandate, match "
+        "buyers, supervise independent escrow, and reconcile retained commissions. "
+        "A six-module SQLite reference implements serialized writes, immutable "
+        "events, balanced journal records, and replay-safe commands. The worked "
+        "90-day cohort separates inherited opportunities from new leads and "
+        "reconciles $137,500 earned commissions to the $550,000 Base annual "
+        "revenue run rate. Annual owner net profit remains $25,000 Conservative, "
+        "$206,250 Base, and $500,000 Scaled. SEC-trigger outreach and powered-land "
+        "screening receive explicit unit economics, evidence requirements, and "
+        "failure fallbacks; neither asset consideration nor option principal "
+        "becomes brokerage revenue."
+    ),
+    "key_metrics": [
+        {
+            "label": "Conservative",
+            "value": "$100,000",
+            "context": "Annual retained transaction commissions; underlying asset values excluded",
+            "note": "25% net margin; $25,000 annual owner net profit; 1 FT + 3 C",
+        },
+        {
+            "label": "Base",
+            "value": "$550,000",
+            "context": "Annual retained transaction commissions; underlying asset values excluded",
+            "note": "37.5% net margin; $206,250 annual owner net profit; 1 FT + 3 C",
+        },
+        {
+            "label": "Scaled",
+            "value": "$1,000,000",
+            "context": "Annual retained transaction commissions; underlying asset values excluded",
+            "note": "50% net margin; $500,000 annual owner net profit; 2 FT + 4 C",
+        },
+    ],
+    "sections": [
+        {
+            "heading": "1. Move Each Mandate from Verified Authority to Earned Commission",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Start with one asset class, one buyer population, and one "
+                    "defensible mandate rather than advertising universal deal access. "
+                    "Assign a permanent mandate identifier before collecting documents, "
+                    "then record the seller entity, authorized signer, beneficial "
+                    "ownership evidence, asset description, jurisdiction, expected "
+                    "consideration, fee basis, and existing intermediary claims. "
+                    "The Base operating unit is a $27,500 retained commission; "
+                    "twenty completed units produce $550,000 annual operator revenue. "
+                    "A $2,750,000 asset transaction charging one percent illustrates "
+                    "that unit, but the asset consideration never enters revenue. "
+                    "If a cooperating broker receives $7,500 from a $35,000 "
+                    "contractual commission, this model records the $27,500 retained "
+                    "portion and documents the settlement allocation separately. "
+                    "Have the accounting reviewer confirm the presentation against "
+                    "the actual contractual role. The owner handles qualification, "
+                    "pricing, negotiation, and closing accountability; three contractors "
+                    "cover research, document coordination, and specialist review. "
+                    "Contractors receive bounded work orders and evidence access, "
+                    "not authority to bind clients or redirect settlement proceeds. "
+                    "Reject an intake that cannot identify who owns the asset "
+                    "or who may appoint the intermediary. A signed introduction "
+                    "agreement cannot repair missing authority, and an attractive "
+                    "asking price cannot substitute for transferable title."
+                ),
+                (
+                    "Classify the transaction before circulating a teaser. An asset "
+                    "sale, a securities transfer, and a real-property conveyance "
+                    "can require different registrations, disclosures, and compensation "
+                    "arrangements even when the same company owns everything. "
+                    "For qualifying private-company control transactions, examine "
+                    "15 U.S.C. 78o(b)(13), including buyer control and active "
+                    "management, eligible-company size, disqualifications, and excluded "
+                    "activities. Its federal M&A broker exemption does not erase "
+                    "state requirements, permit custody of transaction funds, or "
+                    "cover every minority investment introduction. In California, "
+                    "Business and Professions Code section 10131 reaches specified "
+                    "real-estate and business-opportunity brokerage activities; section "
+                    "10137 restricts payments for licensed acts to unlicensed "
+                    "persons. Record the actual license or exemption analysis "
+                    "for the particular role, not a generic company label. "
+                    "Then execute an exclusive mandate defining scope, term, "
+                    "fee trigger, retained share, named exclusions, reporting duties, "
+                    "termination, and a carefully bounded tail. Use an NCNDA "
+                    "to define protected introductions and permitted disclosures, "
+                    "with dated introduction evidence and clear exceptions for "
+                    "existing relationships. It cannot create licensing authority "
+                    "or ensure collection by itself. Route ownership conflicts, "
+                    "duplicate mandates, and uncertain fee entitlement to specialist "
+                    "review before spending buyer credibility on the opportunity."
+                ),
+                (
+                    "Run buyer matching as controlled disclosure, not indiscriminate "
+                    "distribution. Share a redacted teaser first, verify buying "
+                    "authority and plausible funding, execute the required confidentiality "
+                    "documents, and only then release a permissioned diligence "
+                    "package through ShareFile, Box, or an equivalent controlled "
+                    "repository. Record each version, recipient, download permission, "
+                    "and material correction. Require the seller to distinguish "
+                    "documented facts from forecasts, especially adjusted earnings, "
+                    "customer concentration, title restrictions, and infrastructure claims. "
+                    "A letter of intent starts diligence; it does not earn "
+                    "the success commission unless the contract expressly creates "
+                    "a different, separately reviewed entitlement. Select an independent "
+                    "escrow or closing professional appropriate to the asset "
+                    "and jurisdiction. Verify settlement instructions by calling "
+                    "a previously established number, never the number supplied "
+                    "inside a last-minute wire-change message. The broker tracks "
+                    "conditions and fee allocation without receiving buyer principal. "
+                    "At closing, compare the signed settlement statement, contractual "
+                    "earning trigger, retained commission calculation, and escrow "
+                    "disbursement advice. Record earned revenue and a receivable "
+                    "only after the entitlement is established. Clear that "
+                    "receivable only against settled bank evidence, preserving "
+                    "the distinction between an executed transaction, an issued "
+                    "invoice, a promised wire, and cash actually received."
+                ),
+            ],
+            "table": {
+                "caption": "Mandate-to-Cash Operating Matrix: Evidence, Ownership, and Stop Conditions",
+                "headers": [
+                    "Operating checkpoint and accountable work owner",
+                    "Evidence required before the next transition",
+                    "Commercial control and measurable operating unit",
+                    "Failure response preserving client and operator assets",
+                ],
+                "rows": [
+                    [
+                        "Owner opens a narrowly defined seller intake",
+                        "Entity records, signer authority, asset description, and jurisdiction",
+                        "One canonical mandate identifier prevents duplicate opportunity counting",
+                        "Pause outreach when ownership or appointment authority conflicts",
+                    ],
+                    [
+                        "Specialist reviewer classifies the proposed transaction role",
+                        "Asset-specific license analysis and documented federal exemption conditions",
+                        "Budget review before committing expensive buyer-facing diligence hours",
+                        "Refer restricted activity to an appropriately authorized intermediary",
+                    ],
+                    [
+                        "Owner executes exclusive mandate and introduction protections",
+                        "Signed fee schedule, exclusions, term, tail, and agency disclosures",
+                        "Model only the commission retained after settlement allocations",
+                        "Resolve overlapping mandates before sharing identifiable buyer information",
+                    ],
+                    [
+                        "Research contractor builds a qualified buyer shortlist",
+                        "Buyer authority, funding evidence, confidentiality terms, and introduction log",
+                        "Track qualified conversations rather than purchased contact counts",
+                        "Restrict the data room when funding evidence deteriorates",
+                    ],
+                    [
+                        "Closing coordinator supervises independent escrow milestone completion",
+                        "Executed documents, verified instructions, conditions checklist, and settlement allocation",
+                        "Keep buyer principal outside the operator bank account",
+                        "Suspend instruction changes until independently authenticated parties confirm",
+                    ],
+                    [
+                        "Owner and bookkeeper reconcile the earned commission",
+                        "Closing statement, fee entitlement review, invoice, and settled bank record",
+                        "A $27,500 retained fee becomes one Base revenue unit",
+                        "Hold collection exceptions outside automated cash-recognition transitions",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Four Verifications Before Identifiable Buyer Outreach",
+                "body": (
+                    "A promising introduction becomes an actionable mandate only "
+                    "when these four evidence packets are complete."
+                ),
+                "items": [
+                    "Verify seller ownership and signer authority against current records; resolve competing mandates before naming the asset.",
+                    "Document the asset-specific license, registration, or exemption basis and any state-law conditions governing the actual intermediary role.",
+                    "Execute agency disclosures, exclusive mandate, retained-fee allocation, and a named introduction protocol with bounded NCNDA protections.",
+                    "Appoint an appropriate independent closing professional and authenticate settlement contacts through previously established channels.",
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Create and classify the mandate",
+                    "action": "Assign a canonical source key and verify the transaction category.",
+                    "detail": "Capture authority evidence, jurisdiction, retained-fee cents, screening inputs, and the reviewer responsible for role classification.",
+                },
+                {
+                    "step": 2,
+                    "title": "Qualify and contract the opportunity",
+                    "action": "Confirm buyer fit and execute the exclusive mandate before identifiable circulation.",
+                    "detail": "Preserve the signed fee trigger, introduction exclusions, agency disclosures, and document-access instructions under the mandate identifier.",
+                },
+                {
+                    "step": 3,
+                    "title": "Coordinate diligence and independent closing",
+                    "action": "Track conditions without taking custody of client principal.",
+                    "detail": "Require source-linked diligence findings, authenticated settlement instructions, and a closing statement identifying the retained commission.",
+                },
+                {
+                    "step": 4,
+                    "title": "Recognize, collect, and reconcile",
+                    "action": "Post earned commission separately from settled cash receipt.",
+                    "detail": "Match an independently imported bank reference, reject duplicate use, and investigate every remaining receivable or unmatched bank observation.",
+                },
+            ],
+        },
+        {
+            "heading": "2. Convert SEC and Powered-Land Signals into Evidence-Backed Mandates",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Implement sec_edgar_8k_vendor_trigger_arbitrage as a research queue, "
+                    "not a claim that a filing proves seller intent. "
+                    "Monitor SEC EDGAR current-filings feeds and submissions JSON, "
+                    "deduplicating by accession number and extracting Form 8-K "
+                    "Items 5.02, 1.01, and 2.01 plus Form D filings. "
+                    "Executive departures can expose succession needs; material "
+                    "agreements can identify strategic buyers; completed acquisitions "
+                    "can suggest follow-on divestitures. Form D reports an "
+                    "exempt offering, not an SEC endorsement or proof that "
+                    "the stated offering amount was collected. Separate total "
+                    "offering amount from reported sales and read amendments "
+                    "before drafting outreach. Target a reviewed message within "
+                    "sixty minutes of detection during staffed hours; filing "
+                    "latency and feed delays remain outside that promise. "
+                    "For planning, screen 200 filings monthly, identify twenty "
+                    "relevant companies, secure four substantive conversations, and "
+                    "develop one mandate. At a hypothetical twenty-percent eventual "
+                    "close rate, that mandate contributes $5,500 expected retained "
+                    "commission before acquisition cost and timing effects. These "
+                    "are test assumptions, not additional scorecard revenue. Preserve "
+                    "the accession, source excerpt, timestamp, reviewer decision, "
+                    "and business-specific outreach rationale so a second operator "
+                    "can explain exactly why the company entered the pipeline."
+                ),
+                (
+                    "Use a shared token bucket capped at five requests "
+                    "per second across all SEC workers, identify the application "
+                    "with a descriptive User-Agent and contact address, cache "
+                    "responses, and honor access errors with backoff. During "
+                    "outages, mirror available SEC nightly bulk ZIP archives "
+                    "for historical lookbacks, including submissions.zip where suitable, "
+                    "and use daily indexes plus archived filings for document "
+                    "coverage the bulk dataset does not provide. Historical "
+                    "replay must never generate fresh-looking duplicate outreach. "
+                    "Create an outreach task keyed by accession, company, "
+                    "and play; require a human to confirm relevance before "
+                    "sending. Allocate, illustratively, $600 research labor, $150 "
+                    "data handling, and $250 specialist review to the monthly "
+                    "experiment: $1,000 divided by one expected mandate equals "
+                    "$1,000 acquisition cost, while five such mandates per "
+                    "expected closing imply $5,000 acquisition cost per closing. "
+                    "If the assumed conversion fails, narrow the event taxonomy "
+                    "rather than increasing message volume blindly. Apply CAN-SPAM "
+                    "requirements under 15 U.S.C. 7704 to commercial email, "
+                    "including accurate routing information and a functioning opt-out. "
+                    "Do not sell securities introductions merely because the "
+                    "research originated in EDGAR; compensation and transaction "
+                    "structure still determine the applicable intermediary requirements."
+                ),
+                (
+                    "Implement ferc_grid_interconnection_queue_land_speculation through a separately "
+                    "tracked site thesis. Overlay public ISO or RTO queue "
+                    "records with county parcels, zoning, flood exposure, access "
+                    "rights, substation locations, and utility correspondence using "
+                    "QGIS and dated source layers. A generation interconnection "
+                    "queue entry does not establish deliverable load service "
+                    "for a data center, and distance to a substation "
+                    "does not establish capacity. Require utility-specific service "
+                    "studies, upgrade allocation, easements, milestones, and a credible "
+                    "schedule before representing power availability. An illustrative "
+                    "screen examines forty parcels, advances eight desktop candidates, "
+                    "and commissions two $2,000 specialist reviews plus $1,000 "
+                    "mapping work: $5,000 total research expenditure. A client "
+                    "might separately risk a $10,000 contingent option deposit "
+                    "on one site; that principal never becomes brokerage "
+                    "revenue. The brokerage can target one $27,500 retained "
+                    "commission if the contingent transaction closes, but must "
+                    "carry the full $5,000 research loss if both sites "
+                    "fail. For the option-flipping variant, isolate proprietary "
+                    "option gains from this commission-only scorecard. Let "
+                    "contingent options lapse or reposition land for independently "
+                    "viable uses when service cannot be substantiated, without "
+                    "describing speculative queue proximity as secured power."
+                ),
+            ],
+            "table": {
+                "caption": "Mapped Play Execution Matrix: Signal Quality, Unit Economics, and Failure Fallbacks",
+                "headers": [
+                    "Mapped play and specific execution component",
+                    "Concrete source evidence and review procedure",
+                    "Illustrative unit economics outside automatic revenue recognition",
+                    "Fallback when the original thesis breaks",
+                ],
+                "rows": [
+                    [
+                        "sec_edgar_8k_vendor_trigger_arbitrage: parse Form 8-K event items",
+                        "Accession-linked Items 5.02, 1.01, and 2.01 receive human interpretation",
+                        "Two hundred screened filings yield twenty relevant companies monthly",
+                        "Suppress weak signals rather than manufacturing seller intent",
+                    ],
+                    [
+                        "sec_edgar_8k_vendor_trigger_arbitrage: distinguish Form D offering facts",
+                        "Read reported sales, offering amounts, amendments, and issuer identity",
+                        "Four substantive conversations target one qualified mandate monthly",
+                        "Remove capital-availability claims unsupported by the actual filing",
+                    ],
+                    [
+                        "sec_edgar_8k_vendor_trigger_arbitrage: operate resilient historical ingestion",
+                        "Shared five-request-per-second bucket, cached responses, and dated archive manifests",
+                        "A $1,000 monthly experiment implies $5,000 acquisition cost per expected closing",
+                        "Mirror available nightly bulk ZIP archives and replay without duplicate outreach",
+                    ],
+                    [
+                        "ferc_grid_interconnection_queue_land_speculation: screen parcels against public infrastructure",
+                        "QGIS joins queue records, county parcels, zoning, and substation layers",
+                        "Forty parcels narrow to eight candidates and two specialist reviews",
+                        "Discard sites whose access or permitted use fails independently",
+                    ],
+                    [
+                        "ferc_grid_interconnection_queue_land_speculation: validate contingent site control",
+                        "Utility correspondence distinguishes generation queues from actual load-service requirements",
+                        "Two $2,000 reviews plus $1,000 mapping create $5,000 exposure",
+                        "Let contingent options lapse when service evidence fails",
+                    ],
+                    [
+                        "ferc_grid_interconnection_queue_land_speculation: separate brokerage from principal speculation",
+                        "Client option documents identify deposit owner, expiry, and transfer restrictions",
+                        "A $10,000 client deposit remains separate from $27,500 retained commission",
+                        "Reposition only for independently viable uses without secured-power claims",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Four Veteran Tactics That Protect the Retained Fee",
+                "body": (
+                    "Speed matters only when the source, introduction rights, "
+                    "and settlement economics survive independent scrutiny."
+                ),
+                "items": [
+                    "Put accession numbers and exact filing excerpts into research tasks; never let an automated summary invent the commercial trigger.",
+                    "Attach named-buyer introduction receipts to the mandate record before negotiations broaden, preserving evidence for tail-period fee disputes.",
+                    "Ask the utility whether the request concerns load service or generation interconnection before paying for detailed powered-land marketing.",
+                    "Confirm the retained commission allocation with the closing professional before signature week, then reconcile the final statement against that allocation.",
+                ],
+            },
+        },
+        {
+            "heading": "3. Build a Six-Module Ledger with Serialized State Changes and Replay-Safe Posting",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Use the reference below as a small, explicit execution "
+                    "core rather than pretending a CRM is an accounting "
+                    "system. Concatenate the six code cells, in displayed "
+                    "order, into broker_ledger.py and run it with Python "
+                    "3.9 or later; the final module executes an isolated "
+                    "self-test. The code uses only the standard library "
+                    "and creates its test database inside a temporary directory. "
+                    "Production deployment initializes a local SQLite database "
+                    "once, then gives every worker its own connection. "
+                    "BEGIN IMMEDIATE serializes write transactions before reads "
+                    "that decide state changes; the version check rejects "
+                    "stale commands instead of overwriting intervening work. "
+                    "A unique command key plus a canonical request digest "
+                    "makes identical replays return the original result and "
+                    "rejects altered replays. Unique bank references prevent "
+                    "one settlement from paying two invoices. This concurrency "
+                    "model requires a supported local filesystem, not a "
+                    "shared network drive, and all application writers must "
+                    "use these functions. Database administrators remain trusted. "
+                    "Run schema changes through one controlled migration process, "
+                    "restrict database file permissions, and keep encrypted backups. "
+                    "SQLite locking protects ledger transitions; it does not "
+                    "authenticate an escrow officer or validate a seller's "
+                    "representations without the documented human verification process."
+                ),
+                (
+                    "The six modules intentionally separate intake, evidence-based "
+                    "workflow, bank observations, and accounting presentation. Screening "
+                    "points prioritize work but never establish licensing eligibility "
+                    "or asset quality. Intake stores the retained fee in "
+                    "integer cents and refuses a reused source key carrying "
+                    "different facts. Every successful transition appends an immutable "
+                    "event and advances the mandate version within the same "
+                    "transaction. Closing posts a debit to commission receivables "
+                    "and a credit to retained-commission revenue; payment posts "
+                    "cash against that receivable only after an independently "
+                    "imported settled bank observation matches the exact amount. "
+                    "Each journal record contains equal debit and credit "
+                    "amounts by construction, avoiding a temporary half-posted entry. "
+                    "The reconciliation view shows receivables, cash movement, "
+                    "earned commission, expense, bank movement, unmatched observations, "
+                    "and the signed ledger balance. Expense posting uses "
+                    "the same atomic event and unique bank-reference discipline. "
+                    "Evidence strings should identify immutable document versions "
+                    "or content hashes, not mutable shared-folder labels. Their "
+                    "presence proves that a reviewer supplied a reference, "
+                    "not that software independently verified the underlying "
+                    "document. Keep that responsibility assigned to a named "
+                    "reviewer in the surrounding task system and preserve "
+                    "the review history with the referenced evidence packet."
+                ),
+                (
+                    "Keep the supported scope narrow enough to test completely. "
+                    "This reference handles fixed retained fees, full settled "
+                    "receipts, and cash-paid operating expenses; it rejects "
+                    "partial receipts and does not implement refunds, taxes, "
+                    "foreign exchange, fee amendments, or accounting reversals. "
+                    "Route those exceptions to a reviewed extension with "
+                    "new journal events rather than editing posted records. "
+                    "The ledger contains operator cash only, never escrow "
+                    "principal. Bank observations must come from a separately "
+                    "authenticated statement import; granting a user access to "
+                    "that importer is a distinct permission from approving "
+                    "a closing. The included test proves concurrent identical "
+                    "closing commands produce one event, altered replays fail, "
+                    "a bank reference cannot fund duplicate expenses, and "
+                    "ledger totals remain balanced. It also checks that "
+                    "failed posting rolls back its event. Lock contention "
+                    "can still produce a timeout; callers retry the exact "
+                    "same command key after bounded backoff, without changing "
+                    "its payload. No function sends outreach or initiates "
+                    "a transfer, so the transaction boundary contains no "
+                    "external side effect. If those capabilities are added, "
+                    "introduce a transactional outbox and recipient-side deduplication; "
+                    "do not claim that a committed database row alone "
+                    "makes an external email or wire execute exactly once."
+                ),
+            ],
+            "table": {
+                "caption": "6-Module Production Engineering / SQLite Ledger & Idempotent Workflow Reference Table",
+                "headers": [
+                    "Module and concrete responsibility within the reference",
+                    "Copy-pasteable Python source appended in displayed order",
+                    "Atomicity rule and explicit concurrency protection mechanism",
+                    "Verification result and bounded production operating scope",
+                ],
+                "rows": [
+                    [
+                        "Module 1: initialize constrained tables and immutable accounting records",
+                        r'''import hashlib
+import json
+import sqlite3
+import tempfile
+from concurrent.futures import ThreadPoolExecutor
+from contextlib import contextmanager
+from pathlib import Path
+
+SCHEMA = """
+CREATE TABLE IF NOT EXISTS mandates (
+    id INTEGER PRIMARY KEY,
+    source_key TEXT NOT NULL UNIQUE,
+    intake_hash TEXT NOT NULL,
+    retained_fee_cents INTEGER NOT NULL
+        CHECK(typeof(retained_fee_cents) = 'integer'
+              AND retained_fee_cents > 0),
+    score INTEGER NOT NULL CHECK(score BETWEEN 0 AND 100),
+    state TEXT NOT NULL DEFAULT 'NEW'
+        CHECK(state IN (
+            'NEW', 'QUALIFIED', 'VERIFIED', 'MANDATED',
+            'ESCROW', 'CLOSED', 'PAID', 'LOST'
+        )),
+    version INTEGER NOT NULL DEFAULT 0 CHECK(version >= 0)
+);
+CREATE TABLE IF NOT EXISTS events (
+    command_key TEXT PRIMARY KEY NOT NULL,
+    mandate_id INTEGER REFERENCES mandates(id),
+    request_hash TEXT NOT NULL,
+    event_type TEXT NOT NULL,
+    evidence_json TEXT NOT NULL,
+    created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+CREATE TABLE IF NOT EXISTS bank_observations (
+    bank_ref TEXT PRIMARY KEY NOT NULL,
+    amount_cents INTEGER NOT NULL
+        CHECK(typeof(amount_cents) = 'integer' AND amount_cents != 0),
+    settled_on TEXT NOT NULL,
+    source_digest TEXT NOT NULL
+);
+CREATE TABLE IF NOT EXISTS journal (
+    id INTEGER PRIMARY KEY,
+    command_key TEXT NOT NULL UNIQUE
+        REFERENCES events(command_key),
+    debit_account TEXT NOT NULL
+        CHECK(debit_account IN ('AR', 'CASH', 'REVENUE', 'EXPENSE')),
+    credit_account TEXT NOT NULL
+        CHECK(credit_account IN ('AR', 'CASH', 'REVENUE', 'EXPENSE')),
+    amount_cents INTEGER NOT NULL
+        CHECK(typeof(amount_cents) = 'integer' AND amount_cents > 0),
+    bank_ref TEXT UNIQUE REFERENCES bank_observations(bank_ref),
+    CHECK(debit_account != credit_account)
+);
+CREATE TRIGGER IF NOT EXISTS events_no_update
+BEFORE UPDATE ON events BEGIN
+    SELECT RAISE(ABORT, 'events are immutable');
+END;
+CREATE TRIGGER IF NOT EXISTS events_no_delete
+BEFORE DELETE ON events BEGIN
+    SELECT RAISE(ABORT, 'events are immutable');
+END;
+CREATE TRIGGER IF NOT EXISTS journal_no_update
+BEFORE UPDATE ON journal BEGIN
+    SELECT RAISE(ABORT, 'journal is immutable');
+END;
+CREATE TRIGGER IF NOT EXISTS journal_no_delete
+BEFORE DELETE ON journal BEGIN
+    SELECT RAISE(ABORT, 'journal is immutable');
+END;
+CREATE TRIGGER IF NOT EXISTS bank_no_update
+BEFORE UPDATE ON bank_observations BEGIN
+    SELECT RAISE(ABORT, 'bank observations are immutable');
+END;
+CREATE TRIGGER IF NOT EXISTS bank_no_delete
+BEFORE DELETE ON bank_observations BEGIN
+    SELECT RAISE(ABORT, 'bank observations are immutable');
+END;
+CREATE TRIGGER IF NOT EXISTS mandate_terms_fixed
+BEFORE UPDATE OF source_key, intake_hash, retained_fee_cents, score
+ON mandates BEGIN
+    SELECT RAISE(ABORT, 'intake terms require a reviewed extension');
+END;
+"""
+
+def connect(path):
+    db = sqlite3.connect(str(path), timeout=30, isolation_level=None)
+    db.row_factory = sqlite3.Row
+    db.execute("PRAGMA foreign_keys = ON")
+    db.execute("PRAGMA busy_timeout = 30000")
+    db.execute("PRAGMA synchronous = FULL")
+    return db
+
+def initialize(db):
+    db.execute("PRAGMA journal_mode = WAL")
+    db.executescript(SCHEMA)
+''',
+                        "Primary keys, unique references, and paired amounts constrain durable records",
+                        "Initialize once on local storage before starting independent worker connections",
+                    ],
+                    [
+                        "Module 2: canonicalize intake and calculate deterministic screening scores",
+                        r'''def canonical(value):
+    return json.dumps(value, sort_keys=True, separators=(",", ":"))
+
+def digest(value):
+    return hashlib.sha256(canonical(value).encode("utf-8")).hexdigest()
+
+def require_text(value):
+    if not isinstance(value, str) or not value.strip():
+        raise ValueError("a nonempty evidence reference is required")
+    return value
+
+@contextmanager
+def transaction(db):
+    db.execute("BEGIN IMMEDIATE")
+    try:
+        yield
+        db.commit()
+    except BaseException:
+        db.rollback()
+        raise
+
+def intake(db, source_key, retained_fee_cents, signals):
+    require_text(source_key)
+    if type(retained_fee_cents) is not int or retained_fee_cents <= 0:
+        raise ValueError("retained fee must be positive integer cents")
+    weights = {
+        "authority_packet": 30,
+        "buyer_fit": 25,
+        "transferability_packet": 25,
+        "fee_acceptance": 20,
+    }
+    if set(signals) != set(weights):
+        raise ValueError("provide the four defined screening inputs")
+    if any(type(value) is not bool for value in signals.values()):
+        raise ValueError("screening inputs must be boolean")
+    score = sum(weight for key, weight in weights.items() if signals[key])
+    payload = {
+        "source_key": source_key,
+        "fee": retained_fee_cents,
+        "signals": signals,
+    }
+    request_hash = digest(payload)
+    with transaction(db):
+        old = db.execute(
+            "SELECT id, intake_hash FROM mandates WHERE source_key = ?",
+            (source_key,),
+        ).fetchone()
+        if old:
+            if old["intake_hash"] != request_hash:
+                raise ValueError("source key reused with different intake facts")
+            return old["id"]
+        cursor = db.execute(
+            """INSERT INTO mandates
+               (source_key, intake_hash, retained_fee_cents, score)
+               VALUES (?, ?, ?, ?)""",
+            (source_key, request_hash, retained_fee_cents, score),
+        )
+        mandate_id = cursor.lastrowid
+        db.execute(
+            """INSERT INTO events
+               (command_key, mandate_id, request_hash, event_type, evidence_json)
+               VALUES (?, ?, ?, 'INTAKE', ?)""",
+            ("intake:" + source_key, mandate_id, request_hash, canonical(payload)),
+        )
+        return mandate_id
+''',
+                        "Acquire the write lock before checking source-key reuse or inserting intake",
+                        "Repeated identical intake returns its original identifier without duplicating work",
+                    ],
+                    [
+                        "Module 3: advance verified workflow and atomically post commission events",
+                        r'''TRANSITIONS = {
+    "NEW": {"QUALIFIED", "LOST"},
+    "QUALIFIED": {"VERIFIED", "LOST"},
+    "VERIFIED": {"MANDATED", "LOST"},
+    "MANDATED": {"ESCROW", "LOST"},
+    "ESCROW": {"CLOSED", "LOST"},
+    "CLOSED": {"PAID"},
+    "PAID": set(),
+    "LOST": set(),
+}
+REQUIRED = {
+    "QUALIFIED": ("screening_review",),
+    "VERIFIED": ("owner_authority", "asset_role_review", "agency_review"),
+    "MANDATED": ("exclusive_mandate", "retained_fee_review"),
+    "ESCROW": ("escrow_engagement", "instruction_callback"),
+    "CLOSED": ("closing_statement", "earned_fee_review"),
+    "PAID": ("bank_ref", "collection_review"),
+    "LOST": ("loss_reason",),
+}
+
+def replay(db, command_key, request_hash):
+    row = db.execute(
+        "SELECT request_hash FROM events WHERE command_key = ?",
+        (command_key,),
+    ).fetchone()
+    if row and row["request_hash"] != request_hash:
+        raise ValueError("command key reused with a different request")
+    return row is not None
+
+def advance(db, mandate_id, expected_version, target, command_key, evidence):
+    require_text(command_key)
+    if command_key.startswith("intake:"):
+        raise ValueError("reserved command namespace")
+    if target not in REQUIRED:
+        raise ValueError("unsupported target state")
+    for name in REQUIRED[target]:
+        require_text(evidence.get(name))
+    request = {
+        "operation": "advance",
+        "mandate_id": mandate_id,
+        "expected_version": expected_version,
+        "target": target,
+        "evidence": evidence,
+    }
+    request_hash = digest(request)
+    with transaction(db):
+        if replay(db, command_key, request_hash):
+            return command_key
+        row = db.execute(
+            "SELECT * FROM mandates WHERE id = ?", (mandate_id,)
+        ).fetchone()
+        if row is None:
+            raise ValueError("mandate does not exist")
+        if row["version"] != expected_version:
+            raise ValueError("stale mandate version")
+        if target not in TRANSITIONS[row["state"]]:
+            raise ValueError("transition is not permitted")
+        if target == "QUALIFIED" and row["score"] < 70:
+            raise ValueError("screening score requires further work")
+        bank_ref = None
+        if target == "PAID":
+            bank_ref = evidence["bank_ref"]
+            bank = db.execute(
+                "SELECT amount_cents FROM bank_observations WHERE bank_ref = ?",
+                (bank_ref,),
+            ).fetchone()
+            if bank is None or bank["amount_cents"] != row["retained_fee_cents"]:
+                raise ValueError("full settled receipt must match retained fee")
+        db.execute(
+            """INSERT INTO events
+               (command_key, mandate_id, request_hash, event_type, evidence_json)
+               VALUES (?, ?, ?, ?, ?)""",
+            (command_key, mandate_id, request_hash, target, canonical(evidence)),
+        )
+        if target in {"CLOSED", "PAID"}:
+            debit, credit = (
+                ("AR", "REVENUE") if target == "CLOSED" else ("CASH", "AR")
+            )
+            db.execute(
+                """INSERT INTO journal
+                   (command_key, debit_account, credit_account,
+                    amount_cents, bank_ref)
+                   VALUES (?, ?, ?, ?, ?)""",
+                (command_key, debit, credit, row["retained_fee_cents"], bank_ref),
+            )
+        changed = db.execute(
+            """UPDATE mandates SET state = ?, version = version + 1
+               WHERE id = ? AND version = ?""",
+            (target, mandate_id, expected_version),
+        ).rowcount
+        if changed != 1:
+            raise RuntimeError("version update failed")
+        return command_key
+''',
+                        "Event, journal posting, and version advance commit together under one write lock",
+                        "Evidence references support review while full bank matching prevents premature receipt posting",
+                    ],
+                    [
+                        "Module 4: import settled bank observations and post matched cash expenses",
+                        r'''def import_bank(db, bank_ref, amount_cents, settled_on, source_digest):
+    require_text(bank_ref)
+    require_text(settled_on)
+    require_text(source_digest)
+    if type(amount_cents) is not int or amount_cents == 0:
+        raise ValueError("bank amount must be nonzero integer cents")
+    values = (bank_ref, amount_cents, settled_on, source_digest)
+    with transaction(db):
+        old = db.execute(
+            """SELECT bank_ref, amount_cents, settled_on, source_digest
+               FROM bank_observations WHERE bank_ref = ?""",
+            (bank_ref,),
+        ).fetchone()
+        if old:
+            if tuple(old) != values:
+                raise ValueError("bank reference reused with different evidence")
+            return bank_ref
+        db.execute(
+            "INSERT INTO bank_observations VALUES (?, ?, ?, ?)", values
+        )
+        return bank_ref
+
+def post_expense(db, command_key, amount_cents, bank_ref, evidence_ref):
+    require_text(command_key)
+    require_text(bank_ref)
+    require_text(evidence_ref)
+    if command_key.startswith("intake:"):
+        raise ValueError("reserved command namespace")
+    if type(amount_cents) is not int or amount_cents <= 0:
+        raise ValueError("expense must be positive integer cents")
+    request = {
+        "operation": "expense",
+        "amount_cents": amount_cents,
+        "bank_ref": bank_ref,
+        "evidence_ref": evidence_ref,
+    }
+    request_hash = digest(request)
+    with transaction(db):
+        if replay(db, command_key, request_hash):
+            return command_key
+        bank = db.execute(
+            "SELECT amount_cents FROM bank_observations WHERE bank_ref = ?",
+            (bank_ref,),
+        ).fetchone()
+        if bank is None or bank["amount_cents"] != -amount_cents:
+            raise ValueError("expense requires matching settled bank debit")
+        db.execute(
+            """INSERT INTO events
+               (command_key, request_hash, event_type, evidence_json)
+               VALUES (?, ?, 'EXPENSE', ?)""",
+            (command_key, request_hash, canonical(request)),
+        )
+        db.execute(
+            """INSERT INTO journal
+               (command_key, debit_account, credit_account,
+                amount_cents, bank_ref)
+               VALUES (?, 'EXPENSE', 'CASH', ?, ?)""",
+            (command_key, amount_cents, bank_ref),
+        )
+        return command_key
+''',
+                        "Unique bank references and atomic rollback reject duplicate receipt or expense allocation",
+                        "Importer permissions remain separate from closing review and source-document permissions",
+                    ],
+                    [
+                        "Module 5: expose balanced ledger lines and bank reconciliation totals",
+                        r'''VIEWS = """
+CREATE VIEW IF NOT EXISTS ledger_lines AS
+SELECT command_key, debit_account AS account, amount_cents AS signed_cents
+FROM journal
+UNION ALL
+SELECT command_key, credit_account AS account, -amount_cents AS signed_cents
+FROM journal;
+
+CREATE VIEW IF NOT EXISTS reconciliation AS
+SELECT
+    COALESCE(SUM(CASE WHEN account = 'CASH'
+        THEN signed_cents ELSE 0 END), 0) AS book_cash_movement_cents,
+    COALESCE(SUM(CASE WHEN account = 'AR'
+        THEN signed_cents ELSE 0 END), 0) AS receivable_cents,
+    COALESCE(SUM(CASE WHEN account = 'REVENUE'
+        THEN -signed_cents ELSE 0 END), 0) AS retained_revenue_cents,
+    COALESCE(SUM(CASE WHEN account = 'EXPENSE'
+        THEN signed_cents ELSE 0 END), 0) AS expense_cents,
+    COALESCE(SUM(signed_cents), 0) AS signed_balance_cents,
+    (SELECT COALESCE(SUM(amount_cents), 0)
+        FROM bank_observations) AS bank_movement_cents,
+    (SELECT COUNT(*) FROM bank_observations AS b
+        LEFT JOIN journal AS j ON j.bank_ref = b.bank_ref
+        WHERE j.id IS NULL) AS unmatched_bank_count
+FROM ledger_lines;
+"""
+
+def install_views(db):
+    db.executescript(VIEWS)
+
+def reconcile(db):
+    result = dict(db.execute("SELECT * FROM reconciliation").fetchone())
+    result["earned_profit_cents"] = (
+        result["retained_revenue_cents"] - result["expense_cents"]
+    )
+    result["cash_difference_cents"] = (
+        result["bank_movement_cents"] - result["book_cash_movement_cents"]
+    )
+    return result
+''',
+                        "Each journal record contributes equal opposite lines without separate partial inserts",
+                        "Compare scoped statement movement with book movement before adding external opening cash",
+                    ],
+                    [
+                        "Module 6: test replay safety, concurrent posting, rollback, and reconciliation",
+                        r'''def self_test():
+    with tempfile.TemporaryDirectory() as directory:
+        path = Path(directory) / "broker.sqlite3"
+        db = connect(path)
+        initialize(db)
+        install_views(db)
+        signals = {
+            "authority_packet": True,
+            "buyer_fit": True,
+            "transferability_packet": True,
+            "fee_acceptance": True,
+        }
+        mandate_id = intake(db, "seller:asset:001", 2750000, signals)
+        assert intake(db, "seller:asset:001", 2750000, signals) == mandate_id
+        route = [
+            ("QUALIFIED", {"screening_review": "review:001"}),
+            ("VERIFIED", {
+                "owner_authority": "document:authority:001",
+                "asset_role_review": "review:role:001",
+                "agency_review": "review:agency:001",
+            }),
+            ("MANDATED", {
+                "exclusive_mandate": "document:mandate:001",
+                "retained_fee_review": "review:fee:001",
+            }),
+            ("ESCROW", {
+                "escrow_engagement": "document:escrow:001",
+                "instruction_callback": "review:callback:001",
+            }),
+        ]
+        for version, (target, evidence) in enumerate(route):
+            advance(db, mandate_id, version, target, "route:" + target, evidence)
+
+        closing = {
+            "closing_statement": "document:closing:001",
+            "earned_fee_review": "review:earned:001",
+        }
+
+        def concurrent_close(_):
+            worker = connect(path)
+            try:
+                return advance(
+                    worker, mandate_id, 4, "CLOSED", "close:001", closing
+                )
+            finally:
+                worker.close()
+
+        with ThreadPoolExecutor(max_workers=4) as pool:
+            results = list(pool.map(concurrent_close, range(8)))
+        assert results == ["close:001"] * 8
+        assert db.execute(
+            "SELECT COUNT(*) FROM journal WHERE command_key = 'close:001'"
+        ).fetchone()[0] == 1
+
+        try:
+            advance(
+                db, mandate_id, 4, "CLOSED", "close:001",
+                dict(closing, earned_fee_review="review:changed"),
+            )
+        except ValueError:
+            pass
+        else:
+            raise AssertionError("altered replay was accepted")
+
+        import_bank(db, "bank:receipt:001", 2750000, "2030-01-20", "sha256:receipt")
+        receipt = {
+            "bank_ref": "bank:receipt:001",
+            "collection_review": "review:collection:001",
+        }
+        advance(db, mandate_id, 5, "PAID", "receipt:001", receipt)
+        advance(db, mandate_id, 5, "PAID", "receipt:001", receipt)
+
+        import_bank(db, "bank:expense:001", -10000, "2030-01-21", "sha256:expense")
+        post_expense(db, "expense:001", 10000, "bank:expense:001", "invoice:001")
+        post_expense(db, "expense:001", 10000, "bank:expense:001", "invoice:001")
+        try:
+            post_expense(db, "expense:002", 10000, "bank:expense:001", "invoice:002")
+        except sqlite3.IntegrityError:
+            pass
+        else:
+            raise AssertionError("bank reference was allocated twice")
+        assert db.execute(
+            "SELECT COUNT(*) FROM events WHERE command_key = 'expense:002'"
+        ).fetchone()[0] == 0
+
+        totals = reconcile(db)
+        assert totals["retained_revenue_cents"] == 2750000
+        assert totals["receivable_cents"] == 0
+        assert totals["expense_cents"] == 10000
+        assert totals["earned_profit_cents"] == 2740000
+        assert totals["book_cash_movement_cents"] == 2740000
+        assert totals["signed_balance_cents"] == 0
+        assert totals["cash_difference_cents"] == 0
+        assert totals["unmatched_bank_count"] == 0
+        assert db.execute("PRAGMA foreign_key_check").fetchall() == []
+        assert db.execute("PRAGMA integrity_check").fetchone()[0] == "ok"
+        db.close()
+    return "Reference checks passed"
+
+if __name__ == "__main__":
+    print(self_test())
+''',
+                        "Concurrent workers replay one command while uniqueness rejects a second bank allocation",
+                        "Self-test is provided for execution; no execution result is asserted here",
+                    ],
+                ],
+            },
+        },
+        {
+            "heading": "4. Walk the 90-Day Cohorts and Reconcile Earned Profit to Cash",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "Treat this as a stabilized operating-quarter illustration, not "
+                    "a cold-start promise. Time to first deal remains three "
+                    "to twelve months, so the walk begins with eight "
+                    "inherited late-stage opportunities, no opening commission receivable, "
+                    "and $100,000 operator cash. Five inherited opportunities close "
+                    "during the quarter at $27,500 retained commission each; "
+                    "two fail and one remains active. New intake forms "
+                    "three distinct twenty-lead cohorts, one per month. Each "
+                    "cohort loses eight unsuitable records during screening, places "
+                    "six into nurture, and qualifies six. Of those six, "
+                    "three execute mandates and three remain in diligence. "
+                    "None of these new mandates closes inside the illustrated "
+                    "quarter. Across sixty new leads, that produces twenty-four "
+                    "scrubs, eighteen nurture records, nine diligence records, "
+                    "and nine signed mandates. Keep screening scrubs separate "
+                    "from failed late-stage closings: they imply different "
+                    "problems and consume different amounts of specialist work. "
+                    "The ending active inventory is thirty-seven records, comprising "
+                    "thirty-six new-cohort records plus the one inherited survivor. "
+                    "Do not annualize nine new mandates into guaranteed completions. "
+                    "Future quarters require sufficient conversion, new sourcing, "
+                    "and replenishment to replace the inherited closing inventory "
+                    "rather than repeatedly spending the same opening pipeline."
+                ),
+                (
+                    "The quarterly revenue bridge is five closings multiplied "
+                    "by $27,500, producing $137,500 earned retained commissions. "
+                    "Annualizing that operating pace gives exactly $550,000, "
+                    "the Base scorecard revenue. Total quarterly operating cost "
+                    "is $85,937.50: $12,000 monthly fixed overhead plus "
+                    "$49,937.50 quarterly variable delivery, contractor, and closing "
+                    "costs. The fixed component sits inside the stated "
+                    "$3,000 to $18,000 monthly operating-overhead range; total "
+                    "recognized operating costs are higher because the scorecard "
+                    "also absorbs variable delivery expense. Allocate the quarter "
+                    "as $28,645.83, $28,645.83, and $28,645.84 to avoid "
+                    "rounding drift. Costs associated with failed opportunities "
+                    "are included, not quietly removed from margin. Earned "
+                    "quarterly owner profit is therefore $51,562.50, or "
+                    "37.5 percent, reconciling to $206,250 annually. Owner "
+                    "distributions do not create additional operating expense "
+                    "inside this illustration. For comparison, the Conservative "
+                    "case remains $100,000 revenue less $75,000 costs, yielding "
+                    "$25,000 owner profit; Scaled remains $1,000,000 revenue "
+                    "less $500,000 costs, yielding $500,000 owner profit. "
+                    "The respective staffing assumptions stay one full-time "
+                    "operator plus three contractors for Conservative and Base, "
+                    "and two full-time operators plus four contractors for Scaled."
+                ),
+                (
+                    "Cash collection intentionally trails earned revenue. Month 1 "
+                    "closes one inherited deal but receives no commission "
+                    "cash. Month 2 closes two and collects $55,000: "
+                    "the Month 1 invoice and one Month 2 invoice. "
+                    "Month 3 closes two and collects $55,000: the "
+                    "remaining Month 2 invoice and one Month 3 invoice. "
+                    "The final Month 3 invoice remains a $27,500 "
+                    "receivable scheduled for Month 4, subject to actual "
+                    "collection. Quarterly receipts total $110,000, so cash "
+                    "increases only $24,062.50 after $85,937.50 costs, ending "
+                    "at $124,062.50. The difference from $51,562.50 earned "
+                    "profit is exactly the $27,500 receivable increase. "
+                    "All expenses are paid in the month recognized, "
+                    "with no opening payables, debt service, taxes, capital "
+                    "purchases, or owner withdrawals in this limited bridge. "
+                    "Do not multiply this working-capital build by four "
+                    "and describe the result as annual owner profit. "
+                    "If collection slips another month, preserve the receivable "
+                    "and reduce the cash forecast instead of manufacturing "
+                    "a receipt. Review aging, escrow evidence, and fee "
+                    "disputes weekly. At the illustrated $28,645.83 monthly "
+                    "cash-cost pace, $100,000 covers roughly 3.49 months "
+                    "without receipts, making failed closings and delayed "
+                    "collections immediate capacity decisions rather than cosmetic dashboard exceptions."
+                ),
+            ],
+            "table": {
+                "caption": "Worked 90-Day Cohort Walk",
+                "headers": [
+                    "Month and separate pipeline or cash movement",
+                    "Deal cohorts, screening losses, and closing evidence",
+                    "Earned revenue, cash receipts, and recognized operating costs",
+                    "Ending inventory, receivables, and cumulative cash reconciliation",
+                ],
+                "rows": [
+                    [
+                        "Month 1 pipeline: inherited inventory and fresh twenty-lead cohort",
+                        "Eight inherited opportunities become one closing, one loss, and six survivors",
+                        "Fresh cohort: eight scrubs, six nurture, three diligence, three mandates",
+                        "Eighteen active records remain: six inherited and twelve new",
+                    ],
+                    [
+                        "Month 1 cash: first commission earned but still awaiting collection",
+                        "One inherited closing earns a $27,500 retained commission receivable",
+                        "$27,500 revenue; $0 receipts; $28,645.83 paid operating costs",
+                        "$27,500 receivable; cumulative cash change -$28,645.83; ending cash $71,354.17",
+                    ],
+                    [
+                        "Month 2 pipeline: second fresh cohort and two inherited closings",
+                        "Six inherited opportunities become two closings, one loss, three survivors",
+                        "Second cohort repeats eight scrubs, six nurture, three diligence, three mandates",
+                        "Twenty-seven active records remain: three inherited and twenty-four new",
+                    ],
+                    [
+                        "Month 2 cash: collect first invoice and one current invoice",
+                        "Two inherited closings earn $55,000; two settled invoices collect $55,000",
+                        "$55,000 revenue; $55,000 receipts; $28,645.83 paid operating costs",
+                        "$27,500 receivable; cumulative cash change -$2,291.66; ending cash $97,708.34",
+                    ],
+                    [
+                        "Month 3 pipeline: third fresh cohort and two final illustrated closings",
+                        "Three inherited opportunities become two closings and one continuing survivor",
+                        "Quarter totals: sixty fresh leads, twenty-four scrubs, nine new mandates",
+                        "Thirty-seven active records remain: one inherited and thirty-six new",
+                    ],
+                    [
+                        "Month 3 cash: preserve final unpaid invoice in receivables",
+                        "Collect remaining Month 2 invoice and one Month 3 invoice",
+                        "$55,000 revenue; $55,000 receipts; $28,645.84 paid operating costs",
+                        "$27,500 receivable; cumulative cash change $24,062.50; ending cash $124,062.50",
+                    ],
+                ],
+            },
+        },
+    ],
+    "pull_quote": "A deal becomes operator income only when the retained fee is earned, the evidence survives review, and the cash reconciles.",
+    "diagram_id": "diag-01",
+    "action_checklist": [
+        "Create one canonical mandate record containing seller authority, asset category, jurisdiction, retained-fee cents, and the named transaction-role reviewer.",
+        "Execute the exclusive mandate, agency disclosures, introduction protections, and independent escrow engagement before identifiable buyer circulation.",
+        "Configure accession-level EDGAR deduplication, a shared five-request-per-second limiter, and historical archive replay that cannot resend old outreach.",
+        "Require utility-specific service evidence for powered-land claims and keep option deposits, proprietary gains, and asset consideration outside commission revenue.",
+        "Assemble the six reference modules, execute their self-test locally, and restrict production writers to the serialized intake, transition, bank-import, and expense functions.",
+        "Reconcile the quarter to $137,500 earned revenue, $85,937.50 operating costs, $51,562.50 profit, $110,000 receipts, and $27,500 ending receivables.",
+    ],
+    "statutory_citations": [
+        {
+            "title": "15 U.S.C. 78o(b)(13) — Federal M&A Broker Registration Exemption",
+            "url": "https://www.law.cornell.edu/uscode/text/15/78o",
+            "relevance": (
+                "Evaluate eligible private-company control transactions, active "
+                "management, excluded activities, disqualifications, and the "
+                "prohibition on custody of transaction funds or securities."
+            ),
+        },
+        {
+            "title": "17 CFR 249.308 — Form 8-K Current Reports",
+            "url": "https://www.ecfr.gov/current/title-17/section-249.308",
+            "relevance": (
+                "Anchor event-driven research in the actual Form 8-K filing "
+                "and item disclosures rather than an unverified commercial alert."
+            ),
+        },
+        {
+            "title": "17 CFR 230.503 — Filing of Notice of Sales",
+            "url": "https://www.ecfr.gov/current/title-17/section-230.503",
+            "relevance": (
+                "Understand Form D notice and amendment requirements when "
+                "interpreting exempt-offering activity and reported sales."
+            ),
+        },
+        {
+            "title": "15 U.S.C. 7704 — Requirements for Commercial Electronic Mail",
+            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
+            "relevance": (
+                "Apply accurate routing, identification, opt-out, and related "
+                "commercial-email requirements to SEC-trigger outreach."
+            ),
+        },
+        {
+            "title": "California Business and Professions Code 10131 — Broker Activities",
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=10131.",
+            "relevance": (
+                "Classify compensated real-property and business-opportunity "
+                "activities before selecting the intermediary and mandate structure."
+            ),
+        },
+        {
+            "title": "California Business and Professions Code 10137 — Compensation Restrictions",
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=10137.",
+            "relevance": (
+                "Check who may perform compensated licensed acts and receive "
+                "brokerage compensation before allocating referral or cooperating fees."
+            ),
+        },
+        {
+            "title": "California Business and Professions Code 10145 — Trust Fund Handling",
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=10145.",
+            "relevance": (
+                "Determine handling obligations when a real-estate broker "
+                "receives funds belonging to others; this operating design "
+                "keeps transaction principal with an appropriate independent closer."
+            ),
+        },
+        {
+            "title": "18 CFR 35.28 — Transmission Services and Interconnection Framework",
+            "url": "https://www.ecfr.gov/current/title-18/section-35.28",
+            "relevance": (
+                "Place public interconnection information within the governing "
+                "tariff framework while separately verifying site-specific "
+                "load service, upgrade obligations, and utility requirements."
+            ),
+        },
+    ],
+}
