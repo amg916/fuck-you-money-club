@@ -1,6 +1,6 @@
 {
-  "abridged_video_count": 814,
-  "raw_video_count": 814,
+  "abridged_video_count": 992,
+  "raw_video_count": 992,
   "summary": {
     "type": "dict",
     "keys": [
@@ -22,11 +22,11 @@
       "coverage": 6
     },
     "values": {
-      "generated_at": "2026-11-21T20:39:18+00:00",
+      "generated_at": "2026-11-21T20:52:13+00:00",
       "schema_version": "1.0"
     }
   },
-  "generated_at": "2026-11-21T20:39:18Z",
+  "generated_at": "2026-11-21T20:52:13Z",
   "counts": {
     "topics": 8
   },
@@ -34,9 +34,9 @@
     {
       "topic_id": "business_model_and_economics",
       "title": "Business Model, Contingency Economics & Deal Scale",
-      "video_count": 624,
-      "tip_count": 1447,
-      "channel_count": 428,
+      "video_count": 693,
+      "tip_count": 1502,
+      "channel_count": 453,
       "top_sources": [
         {
           "video_id": "JVbzH2BD68w",
@@ -201,20 +201,23 @@
         "form with",
         "form so",
         "form on",
+        "form a",
+        "form below",
         "form content",
         "form where",
-        "form a",
         "form your",
+        "property Act",
         "form in",
         "letters of administration",
         "form as",
         "form videos",
         "form called",
         "form I",
-        "form below",
-        "form here",
         "form right",
+        "form here",
+        "form if",
         "form submissions",
+        "form them",
         "quiet title",
         "form actually",
         "form built",
@@ -222,24 +225,25 @@
         "form has",
         "form our",
         "form submission",
+        "form we",
         "form well",
-        "form which",
-        "letters testamentary",
-        "property Act",
-        "form an",
-        "form at"
+        "form which"
       ],
       "tools_and_portals": [
         "Google",
         "Facebook",
         "LinkedIn",
         "Ancestry",
-        "FamilySearch",
         "Excel",
+        "FamilySearch",
         "https://excesselite.com",
         "https://www.facebook.com/groups/assetrecovery",
         "https://www.moneymakingjug.com/inquiry",
+        "https://wise.com/invite/dic/todorivanovk1",
+        "https://www.instagram.com/erizzyy/",
+        "https://www.surplusfunds101.com/freecallingscript",
         "Bing",
+        "CSV",
         "http://familysearch.me/facebook",
         "http://familysearch.me/home",
         "http://familysearch.me/instagram",
@@ -252,32 +256,28 @@
         "https://instagram.com/courtneyfricke",
         "https://tiktok.com/@courtney.fricke",
         "https://www.facebook.com/courtneyfricke19/",
-        "https://www.surplusfunds101.com/freecallingscript",
+        "https://www.unclaimedceo.com/linkme",
         "https://www.youtube.com/@courtneyfricke",
+        "https://www.youtube.com/surplusfunds101",
         "https://x.com/courtneyfricke",
         "https://youtu.be/3cmj5kGm2Xw",
-        "CSV",
-        "https://www.youtube.com/surplusfunds101",
         "https://www.instagram.com/thedavidwilkerson",
+        "https://www.unclaimedceo.com/freemasterclass",
         "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
+        "https://www.unclaimedceo.com/digitalcourse",
+        "https://www.unclaimedceo.com/get-my-free-guide",
         "https://probatemastery.com",
+        "https://www.facebook.com/groups/770825015084618",
         "Find a Grave",
-        "http://www.youtube.com/channel/UCsc0AQkAh_2cQmxqwD6VWRw?sub_confirmation=1",
-        "https://twitter.com/Ancestry",
-        "https://www.ancestry.com/",
-        "https://www.facebook.com/Ancestry/",
-        "https://www.instagram.com/ancestry",
-        "https://www.instagram.com/erizzyy/",
-        "https://www.youtube.com/user/AncestryCom",
-        "MyHeritage"
+        "http://www.youtube.com/channel/UCsc0AQkAh_2cQmxqwD6VWRw?sub_confirmation=1"
       ]
     },
     {
       "topic_id": "probate_and_docket_sourcing",
       "title": "County Probate Dockets, Intestate Filings & Estate Leads",
-      "video_count": 528,
-      "tip_count": 818,
-      "channel_count": 325,
+      "video_count": 706,
+      "tip_count": 865,
+      "channel_count": 407,
       "top_sources": [
         {
           "video_id": "oZiYbKNvxJY",
@@ -430,67 +430,73 @@
       ],
       "statutes_and_forms": [
         "form and",
-        "form that",
         "form of",
+        "form that",
+        "form below",
         "form for",
         "form to",
-        "form is",
         "form you",
+        "form is",
         "form the",
-        "form below",
         "form a",
         "form or",
-        "form where",
+        "property Act",
         "letters of administration",
-        "form so",
         "form in",
+        "form so",
+        "form where",
         "form your",
         "form like",
-        "form on",
         "form our",
-        "form as",
-        "form we",
-        "quiet title",
-        "form I",
         "form with",
+        "form I",
+        "form on",
+        "form we",
         "letters testamentary",
-        "property Act",
         "affidavit of heirship",
-        "form an",
+        "form as",
+        "form if",
         "form it",
-        "form now",
-        "form partition",
-        "form then",
-        "form today",
+        "form them",
         "Form uh",
-        "form um",
         "form which",
+        "quiet title",
+        "court order",
+        "form an",
+        "form due",
+        "form then",
         "form will",
-        "warranty deed",
         "affidavit of airship",
-        "court order"
+        "form all",
+        "form but"
       ],
       "tools_and_portals": [
         "Facebook",
         "Google",
         "LinkedIn",
         "Ancestry",
-        "FamilySearch",
         "https://excesselite.com",
         "https://www.facebook.com/groups/assetrecovery",
         "https://www.moneymakingjug.com/inquiry",
+        "FamilySearch",
         "Excel",
-        "https://www.surplusfunds101.com/freecallingscript",
         "https://www.instagram.com/erizzyy/",
+        "https://wise.com/invite/dic/todorivanovk1",
+        "https://www.surplusfunds101.com/freecallingscript",
         "https://www.youtube.com/surplusfunds101",
+        "https://www.facebook.com/groups/770825015084618",
+        "https://www.unclaimedceo.com/linkme",
+        "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
+        "CSV",
+        "https://www.instagram.com/thedavidwilkerson",
+        "https://www.unclaimedceo.com/freemasterclass",
+        "https://www.unclaimedceo.com/digitalcourse",
+        "https://www.unclaimedceo.com/get-my-free-guide",
         "https://instagram.com/courtneyfricke",
         "https://tiktok.com/@courtney.fricke",
         "https://www.facebook.com/courtneyfricke19/",
         "https://www.youtube.com/@courtneyfricke",
         "https://x.com/courtneyfricke",
-        "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
-        "CSV",
-        "https://www.instagram.com/thedavidwilkerson",
         "http://familysearch.me/facebook",
         "http://familysearch.me/home",
         "http://familysearch.me/instagram",
@@ -500,26 +506,34 @@
         "http://familysearch.me/youtubeeurope",
         "http://familysearch.me/youtubeportuguese",
         "http://familysearch.me/youtubespanish",
+        "https://tinyurl.com/unclaimedmentor",
         "https://youtu.be/3cmj5kGm2Xw",
         "Bing",
-        "MyHeritage",
-        "Regrid",
-        "http://www.youtube.com/channel/UCsc0AQkAh_2cQmxqwD6VWRw?sub_confirmation=1",
-        "https://probatemastery.com",
-        "https://twitter.com/Ancestry",
-        "https://www.ancestry.com/",
-        "https://www.facebook.com/Ancestry/",
-        "https://www.instagram.com/ancestry",
-        "https://www.youtube.com/user/AncestryCom"
+        "https://www.unclaimedceo.com/home-page-8750",
+        "MyHeritage"
       ]
     },
     {
       "topic_id": "unclaimed_property_and_escheat",
       "title": "State Unclaimed Property, Escheated Funds & Treasury Claims",
-      "video_count": 241,
-      "tip_count": 587,
-      "channel_count": 146,
+      "video_count": 419,
+      "tip_count": 1689,
+      "channel_count": 228,
       "top_sources": [
+        {
+          "video_id": "D-PMjgNe-7s",
+          "title": "SCR Webinar: Unclaimed Property Program Overview",
+          "author": "SC REALTORS®",
+          "url": "https://www.youtube.com/watch?v=D-PMjgNe-7s",
+          "duration": "00:22:22"
+        },
+        {
+          "video_id": "hUiiEXcFE0k",
+          "title": "Unclaimed Property Reporting Overview",
+          "author": "Utah Office of State Treasurer",
+          "url": "https://www.youtube.com/watch?v=hUiiEXcFE0k",
+          "duration": "00:03:58"
+        },
         {
           "video_id": "bsbWDqAXsrE",
           "title": "How to Claim Your Property for the California State Controller's Office",
@@ -528,53 +542,39 @@
           "duration": "00:05:39"
         },
         {
-          "video_id": "bpxSOg1_xbE",
-          "title": "Top 5 Things Nobody Tells You About the Surplus Funds Recovery Business",
-          "author": "Overage Acquisition",
-          "url": "https://www.youtube.com/watch?v=bpxSOg1_xbE",
-          "duration": "00:04:27"
+          "video_id": "ZDSZHh3DZGs",
+          "title": "Unclaimed Money Recovery - What is Unclaimed Property?",
+          "author": "Unclaimed Money Recovery",
+          "url": "https://www.youtube.com/watch?v=ZDSZHh3DZGs",
+          "duration": "00:05:16"
         },
         {
-          "video_id": "2e4YGOesnUY",
-          "title": "Excess Proceeds List, Tax Sale Overages List, Surplus Funds List (Free resources + 10 examples)",
-          "author": "Next Level VA",
-          "url": "https://www.youtube.com/watch?v=2e4YGOesnUY",
-          "duration": "01:19:12"
+          "video_id": "gEVKR-AmaU0",
+          "title": "A company claims to find unclaimed funds for a fee, but is it necessary? | FOX43 Finds Out",
+          "author": "FOX43 News",
+          "url": "https://www.youtube.com/watch?v=gEVKR-AmaU0",
+          "duration": "00:04:36"
         },
         {
-          "video_id": "01plOr9pFjQ",
-          "title": "How to Start a Tax Overage Business | Complete and Easy to Follow Guide",
-          "author": "BizMove",
-          "url": "https://www.youtube.com/watch?v=01plOr9pFjQ",
-          "duration": "00:08:21"
+          "video_id": "JT_EgidLdF8",
+          "title": "Unclaimed Property: What It Is, How to Claim It, & How to Avoid Scams...EVERYTHING YOU NEED TO KNOW",
+          "author": "AskJimmySmith",
+          "url": "https://www.youtube.com/watch?v=JT_EgidLdF8",
+          "duration": "00:14:26"
         },
         {
-          "video_id": "TTMtgtc31k4",
-          "title": "How To Become An Unclaimed Property Investigator",
-          "author": "Surplus Funds 101",
-          "url": "https://www.youtube.com/watch?v=TTMtgtc31k4",
-          "duration": "00:06:19"
+          "video_id": "5l8zepw8oWY",
+          "title": "The Mechanics of Escheatment: How to Reclaim Your Abandoned Assets",
+          "author": "Money Grammar",
+          "url": "https://www.youtube.com/watch?v=5l8zepw8oWY",
+          "duration": "00:10:23"
         },
         {
-          "video_id": "v0-thxE7IK4",
-          "title": "How To Find Surplus Funds Lists In 2026 (For Free)",
-          "author": "Surplus Funds Secrets",
-          "url": "https://www.youtube.com/watch?v=v0-thxE7IK4",
-          "duration": "00:07:53"
-        },
-        {
-          "video_id": "ijLtjR0tTd8",
-          "title": "CA Unclaimed Property - Are you missing out? - Tutorial",
-          "author": "Emend The Mass Media Group",
-          "url": "https://www.youtube.com/watch?v=ijLtjR0tTd8",
-          "duration": "00:17:57"
-        },
-        {
-          "video_id": "6UiKunbtUa0",
-          "title": "How To Find Excess Proceeds List In 2025 (Proven Strategies)",
-          "author": "Overage Acquisition",
-          "url": "https://www.youtube.com/watch?v=6UiKunbtUa0",
-          "duration": "00:07:55"
+          "video_id": "26FSCbZczh4",
+          "title": "Where To Find Unclaimed Money - Legit Government Sites Revealed",
+          "author": "Penelope Jane Smith",
+          "url": "https://www.youtube.com/watch?v=26FSCbZczh4",
+          "duration": "00:07:14"
         }
       ],
       "top_timestamped_insights": [
@@ -633,12 +633,30 @@
           "verbatim_research_only": true
         },
         {
+          "tip_paraphrase_summary": "Will send the check out to you now this is a state department website so make sure you're on the state department website the…",
+          "category": "Non-Negotiable Rule",
+          "timestamp": "00:05:55",
+          "link": "https://www.youtube.com/watch?v=DGys6KYDbNU&t=355s",
+          "video_title": "Great News!! How To Find FREE MONEY: UNCLAIMED MONEY How to File a Claim",
+          "author": "The TEC Show",
+          "verbatim_research_only": true
+        },
+        {
           "tip_paraphrase_summary": "$100,000, and our client is typically getting $60,000 to $70,000 when they work with us. And can you imagine someone who goes from losing…",
           "category": "Legal / Deadline",
           "timestamp": "00:03:12",
           "link": "https://www.youtube.com/watch?v=1Pp-cjYnY2k&t=192s",
           "video_title": "How To Become A Surplus Funds Recovery Agent",
           "author": "Bob Diamond - America's Tax Sale Attorney",
+          "verbatim_research_only": true
+        },
+        {
+          "tip_paraphrase_summary": "0:07:36.4 S1: I know that a lot of people when they're just getting started in the back of their head, they have all these…",
+          "category": "Pitfall / Hard No",
+          "timestamp": "00:07:36",
+          "link": "https://www.youtube.com/watch?v=PGvJEv9Y_Go&t=456s",
+          "video_title": "State Funds Tutorial: First Steps For Somebody Brand New To Unclaimed Funds Business.",
+          "author": "Surplus Funds 101",
           "verbatim_research_only": true
         },
         {
@@ -649,67 +667,49 @@
           "video_title": "State Funds Tutorial: What To Do When A Deal Cancels While Working Your State Funds Business.",
           "author": "Surplus Funds 101",
           "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "0:02:22.6 S2: Now, if you wanted to work in Delaware is put in Delaware on claim property or New York, whatever it might be.…",
-          "category": "Insider Tactic",
-          "timestamp": "00:02:22",
-          "link": "https://www.youtube.com/watch?v=_8vyoTSh7Rs&t=142s",
-          "video_title": "State Funds California: Registration Process & Requirements To Work Unclaimed Funds.",
-          "author": "Surplus Funds 101",
-          "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "About anything, call the State department directly and to ask them... I do it all the time. I've been doing this for A... In…",
-          "category": "Pitfall / Hard No",
-          "timestamp": "00:01:19",
-          "link": "https://www.youtube.com/watch?v=6yIKsJMj6Gk&t=79s",
-          "video_title": "State Funds Tutorial New Mexico: How To Register As A Property Locator In The State Of New Mexico.",
-          "author": "Surplus Funds 101",
-          "verbatim_research_only": true
         }
       ],
       "statutes_and_forms": [
         "form and",
-        "form that",
         "form below",
+        "form that",
         "form of",
-        "Form is",
         "form you",
-        "form for",
+        "Form is",
         "form the",
         "form to",
         "form a",
-        "form our",
-        "form today",
-        "form we",
-        "form as",
-        "form but",
-        "form in",
-        "form it",
-        "form on",
+        "form for",
+        "Property Act",
         "form or",
-        "form so",
-        "Form uh",
-        "form um",
-        "form where",
+        "form our",
+        "form in",
+        "form them",
+        "form we",
+        "form with",
         "affidavit of heirship",
         "form due",
-        "form fill",
         "form I",
-        "form now",
-        "form this",
-        "form which",
-        "form will",
-        "form with",
-        "form your",
-        "Information Act",
-        "summary administration",
-        "actually act",
-        "balancing act",
+        "form it",
+        "form so",
+        "Form uh",
         "form all",
-        "form an",
-        "form because"
+        "form as",
+        "form but",
+        "form from",
+        "form if",
+        "form on",
+        "form this",
+        "form today",
+        "form Unclaimed",
+        "form where",
+        "form which",
+        "form your",
+        "letters of administration",
+        "small estate affidavit",
+        "form acts",
+        "form at",
+        "form fill"
       ],
       "tools_and_portals": [
         "Facebook",
@@ -718,48 +718,48 @@
         "https://excesselite.com",
         "https://www.facebook.com/groups/assetrecovery",
         "https://www.moneymakingjug.com/inquiry",
+        "https://www.instagram.com/erizzyy/",
         "https://www.surplusfunds101.com/freecallingscript",
         "https://www.youtube.com/surplusfunds101",
+        "https://wise.com/invite/dic/todorivanovk1",
         "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
         "https://www.instagram.com/thedavidwilkerson",
-        "https://www.instagram.com/erizzyy/",
         "Excel",
-        "Regrid",
-        "CSV",
         "https://www.facebook.com/groups/770825015084618",
+        "https://www.unclaimedceo.com/linkme",
+        "https://www.unclaimedceo.com/freemasterclass",
+        "https://www.unclaimedceo.com/digitalcourse",
+        "https://www.unclaimedceo.com/get-my-free-guide",
+        "CSV",
+        "https://tinyurl.com/unclaimedmentor",
+        "https://www.unclaimedceo.com/home-page-8750",
+        "Regrid",
+        "http://springsolutionsllcwordpress.com/",
+        "https://recover-bankruptcy-unclaimed-funds.teachable.com/",
+        "https://recover-bankruptcy-unclaimed-funds.teachable.com/p/bankruptcy-unclaimed-funds-hack",
+        "https://recover-bankruptcy-unclaimed-funds.teachable.com/purchase?product_id=4503793",
+        "https://sso.teachable.com/secure/657120/checkout/4503791/state-unclaimed-funds-guide",
+        "https://www.youtube.com/watch?v=jlSGch2JEn0&t=540s",
+        "PACER",
+        "https://moneymakingjuggernaut.setmore.com",
+        "Small Estate",
+        "Ancestry",
         "https://www.instagram.com/erizzyy",
+        "https://semenata.org",
         "https://skool.com/surplusfunds",
         "https://surplusfunds.ai",
-        "Neo4j",
-        "Ancestry",
-        "DataTree",
-        "http://YouTube.com/c/NateWoodbury",
-        "https://bobdiamond.com/",
-        "https://live.americastaxsaleattorney.com/s/WSOZag",
-        "https://moneymakingjuggernaut.setmore.com",
-        "https://pathwaystoprosperityshow.com/",
-        "https://taxsaleblueprint.com/OverageAvengers",
         "https://www.surplusfunds101.com/contractlibrary",
-        "https://www.taxsaleblueprint.com/FreeTrainingFromBob",
-        "https://www.youtube.com/channel/UCg3-ZteFRfElxY7NFR1ZjjQ/?sub_confirmation=1",
-        "https://youtu.be/IAWBIUKJkho",
-        "ClaimIt.ca.gov",
-        "https://supabase.com/docs",
-        "https://www.facebook.com/OverageAcquisition",
-        "https://www.instagram.com/overageacquisition/",
-        "https://www.overageacquisition.com/",
-        "https://www.youtube.com/@overageacquisition?sub_confirmation=1",
-        "ArcGIS",
-        "GeoJSON",
-        "https://22pagemillionaire.com/1"
+        "Neo4j",
+        "Pennsylvania Treasury",
+        "ClaimIt.ca.gov"
       ]
     },
     {
       "topic_id": "genealogy_and_heirship_proof",
       "title": "Forensic Genealogy, Per-Stirpes Kinship & Proof of Heirship",
-      "video_count": 675,
-      "tip_count": 787,
-      "channel_count": 440,
+      "video_count": 852,
+      "tip_count": 965,
+      "channel_count": 521,
       "top_sources": [
         {
           "video_id": "7M3XZfN7814",
@@ -913,65 +913,72 @@
       "statutes_and_forms": [
         "form and",
         "form that",
+        "form of",
         "form for",
         "form to",
-        "form of",
         "form is",
         "form you",
         "form or",
-        "form the",
         "form below",
-        "form with",
+        "form the",
         "form a",
+        "form with",
         "form like",
         "form so",
         "form your",
         "form on",
+        "property Act",
         "form content",
-        "form where",
-        "form as",
         "form in",
-        "form videos",
+        "form where",
         "letters of administration",
+        "form as",
         "form I",
-        "form submissions",
-        "form called",
+        "form videos",
+        "form at",
         "form here",
-        "form right",
+        "form if",
         "form which",
-        "quiet title",
-        "form actually",
-        "form has",
-        "form submission",
-        "form they",
+        "affidavit of heirship",
+        "form called",
+        "form from",
+        "form right",
+        "form submissions",
+        "form them",
         "form this",
         "Form uh",
-        "form video",
         "form we",
-        "form well",
-        "form will",
-        "property Act"
+        "letters testamentary",
+        "form our",
+        "form will"
       ],
       "tools_and_portals": [
         "Google",
         "Facebook",
         "LinkedIn",
         "Ancestry",
-        "FamilySearch",
-        "Excel",
         "https://excesselite.com",
+        "FamilySearch",
         "https://www.facebook.com/groups/assetrecovery",
         "https://www.moneymakingjug.com/inquiry",
+        "Excel",
+        "https://www.instagram.com/erizzyy/",
         "https://www.surplusfunds101.com/freecallingscript",
         "https://www.youtube.com/surplusfunds101",
+        "https://wise.com/invite/dic/todorivanovk1",
         "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
         "https://www.instagram.com/thedavidwilkerson",
+        "https://www.unclaimedceo.com/linkme",
+        "https://www.facebook.com/groups/770825015084618",
+        "https://www.unclaimedceo.com/freemasterclass",
         "Bing",
-        "https://www.instagram.com/erizzyy/",
+        "https://www.unclaimedceo.com/digitalcourse",
+        "https://www.unclaimedceo.com/get-my-free-guide",
         "https://instagram.com/courtneyfricke",
         "https://tiktok.com/@courtney.fricke",
         "https://www.facebook.com/courtneyfricke19/",
         "https://x.com/courtneyfricke",
+        "CSV",
         "http://familysearch.me/facebook",
         "http://familysearch.me/home",
         "http://familysearch.me/instagram",
@@ -983,24 +990,17 @@
         "http://familysearch.me/youtubespanish",
         "https://www.youtube.com/@courtneyfricke",
         "https://youtu.be/3cmj5kGm2Xw",
-        "MyHeritage",
-        "CSV",
-        "Find a Grave",
-        "http://www.youtube.com/channel/UCsc0AQkAh_2cQmxqwD6VWRw?sub_confirmation=1",
-        "https://twitter.com/Ancestry",
-        "https://www.ancestry.com/",
-        "https://www.facebook.com/Ancestry/",
-        "https://www.instagram.com/ancestry",
-        "https://www.youtube.com/user/AncestryCom",
-        "Newspapers.com"
+        "https://tinyurl.com/unclaimedmentor",
+        "https://www.unclaimedceo.com/home-page-8750",
+        "MyHeritage"
       ]
     },
     {
       "topic_id": "skip_tracing_and_outreach",
       "title": "Skip Tracing, Ethical Heir Contact & Trust Building",
-      "video_count": 403,
-      "tip_count": 257,
-      "channel_count": 291,
+      "video_count": 475,
+      "tip_count": 340,
+      "channel_count": 320,
       "top_sources": [
         {
           "video_id": "8yepbhYel-Q",
@@ -1031,6 +1031,13 @@
           "duration": "00:27:46"
         },
         {
+          "video_id": "B3w-Sxl2QnE",
+          "title": "3 Biggest Skip Tracing Mistakes",
+          "author": "Unclaimed CEO",
+          "url": "https://www.youtube.com/watch?v=B3w-Sxl2QnE",
+          "duration": "00:09:05"
+        },
+        {
           "video_id": "uPo9D-wZv6s",
           "title": "The Latest LinkedIn Lead Generation Strategies That Generated $2M+ (No Cold InMails)",
           "author": "HubSpot Marketing",
@@ -1050,13 +1057,6 @@
           "author": "Expandi",
           "url": "https://www.youtube.com/watch?v=IqCv6BL9r6o",
           "duration": "00:06:50"
-        },
-        {
-          "video_id": "MXBaHCO4WI8",
-          "title": "The Best LinkedIn Lead Generation Strategy for 2026",
-          "author": "Tommy Clark",
-          "url": "https://www.youtube.com/watch?v=MXBaHCO4WI8",
-          "duration": "00:13:17"
         }
       ],
       "top_timestamped_insights": [
@@ -1079,12 +1079,39 @@
           "verbatim_research_only": true
         },
         {
+          "tip_paraphrase_summary": "That once you have the data in front of you, view of all the people that you could potentially work and work with and…",
+          "category": "Legal / Deadline",
+          "timestamp": "00:12:28",
+          "link": "https://www.youtube.com/watch?v=PGvJEv9Y_Go&t=748s",
+          "video_title": "State Funds Tutorial: First Steps For Somebody Brand New To Unclaimed Funds Business.",
+          "author": "Surplus Funds 101",
+          "verbatim_research_only": true
+        },
+        {
           "tip_paraphrase_summary": "I have also left an overly broad question at the end for now. We will improve that, because the best follow up should connect…",
           "category": "Legal / Deadline",
           "timestamp": "00:18:18",
           "link": "https://www.youtube.com/watch?v=gGfsCEiyizs&t=1098s",
           "video_title": "Parasite Reddit SEO: Find Google Traffic With This Workflow",
           "author": "Rankso SEO",
+          "verbatim_research_only": true
+        },
+        {
+          "tip_paraphrase_summary": "You guys don't have a very big budget or anything like that. These are the websites that I would suggest going to. Skip pressure.…",
+          "category": "Pitfall / Hard No",
+          "timestamp": "00:02:19",
+          "link": "https://www.youtube.com/watch?v=Tx1_986LmrY&t=139s",
+          "video_title": "State Funds Business Skip Tracing. Best FREE Skip Tracing Websites For Your Unclaimed Funds Business",
+          "author": "Surplus Funds 101",
+          "verbatim_research_only": true
+        },
+        {
+          "tip_paraphrase_summary": "Or we're using a County's website we know that we can initi identify the sales results we're going to identify properties in which is…",
+          "category": "Pitfall / Hard No",
+          "timestamp": "00:03:25",
+          "link": "https://www.youtube.com/watch?v=aKzRVyO_gfI&t=205s",
+          "video_title": "The Only Skiptracing Software You Need For Surplus Funds",
+          "author": "Money Making Juggernaut",
           "verbatim_research_only": true
         },
         {
@@ -1115,133 +1142,106 @@
           "verbatim_research_only": true
         },
         {
-          "tip_paraphrase_summary": "Were able to go in and perform our due diligence. You can see here that the amount that was owed in taxes are right…",
-          "category": "Legal / Deadline",
-          "timestamp": "00:02:17",
-          "link": "https://www.youtube.com/watch?v=4-lZwuXtY6Y&t=137s",
-          "video_title": "Amador county Tax Sale Surplus Funds Case Study",
-          "author": "Money Making Juggernaut",
-          "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "Rough drafts, but I don't want you guys to think that you guys don't have access to similar things. You guys have my copy…",
+          "tip_paraphrase_summary": "These people this is a plethora of people who are possible relatives now of course if you guys have paid websites you guys will…",
           "category": "Pitfall / Hard No",
-          "timestamp": "00:20:18",
-          "link": "https://www.youtube.com/watch?v=0QI9KoizfH8&t=1218s",
-          "video_title": "Building a profitable AI agency cold email campaign in 40min",
-          "author": "Nick Saraev Daily",
-          "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "Times. I'll go through all the relatives and I'll either speak to them or I'll leave them that message. Now, if they answer, a…",
-          "category": "Pitfall / Hard No",
-          "timestamp": "00:02:27",
-          "link": "https://www.youtube.com/watch?v=eiQ53kxE6ZA&t=147s",
-          "video_title": "How To Find family members of a deceased person!",
-          "author": "Surplus Institute / David Church / Unclaimed Funds",
-          "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "Is a Gmail trigger. So, you can think of this as like a web hook, but it's always listening for any sort of lead…",
-          "category": "Non-Negotiable Rule",
-          "timestamp": "00:20:43",
-          "link": "https://www.youtube.com/watch?v=OsFhqXe8aLI&t=1243s",
-          "video_title": "I Built an AI Sales Agent that Sends 1,000+ Personalized Emails (Full Tutorial)",
-          "author": "Jackson Rose | AI",
+          "timestamp": "00:03:06",
+          "link": "https://www.youtube.com/watch?v=B3w-Sxl2QnE&t=186s",
+          "video_title": "3 Biggest Skip Tracing Mistakes",
+          "author": "Unclaimed CEO",
           "verbatim_research_only": true
         }
       ],
       "statutes_and_forms": [
         "form and",
-        "form for",
         "form that",
         "form of",
+        "form for",
         "form to",
         "form or",
         "form you",
-        "form is",
-        "form the",
-        "form your",
-        "form like",
-        "form a",
-        "form content",
-        "form so",
         "form below",
+        "form is",
+        "form your",
+        "form the",
+        "form a",
+        "form like",
+        "form so",
+        "form content",
         "form where",
-        "form on",
-        "form which",
         "form as",
-        "form with",
-        "quiet title",
-        "form I",
-        "form in",
+        "form on",
         "form our",
         "Form uh",
-        "form called",
-        "form fill",
-        "form partition",
-        "form videos",
+        "form which",
+        "form with",
+        "form in",
         "property act",
-        "balancing act",
-        "form built",
+        "quiet title",
+        "form called",
+        "form I",
+        "form all",
+        "form fill",
         "form here",
+        "form partition",
         "form right",
-        "form then",
-        "form they",
-        "form um",
-        "form video",
+        "form them",
+        "form videos",
         "form what",
-        "affidavit of heirship"
+        "affidavit of heirship",
+        "balancing act",
+        "court order",
+        "form at",
+        "form built"
       ],
       "tools_and_portals": [
         "Google",
-        "LinkedIn",
         "Facebook",
+        "LinkedIn",
         "Excel",
-        "https://www.surplusfunds101.com/freecallingscript",
-        "https://www.youtube.com/surplusfunds101",
         "https://excesselite.com",
         "https://www.facebook.com/groups/assetrecovery",
+        "https://www.moneymakingjug.com/inquiry",
+        "https://www.surplusfunds101.com/freecallingscript",
+        "https://www.youtube.com/surplusfunds101",
         "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
+        "https://www.instagram.com/thedavidwilkerson",
+        "https://www.instagram.com/erizzyy/",
         "https://instagram.com/courtneyfricke",
         "https://tiktok.com/@courtney.fricke",
         "https://www.facebook.com/courtneyfricke19/",
-        "https://www.instagram.com/thedavidwilkerson",
-        "https://www.moneymakingjug.com/inquiry",
+        "https://www.facebook.com/groups/770825015084618",
         "https://www.youtube.com/@courtneyfricke",
         "https://x.com/courtneyfricke",
-        "Bing",
+        "https://www.unclaimedceo.com/linkme",
         "Ancestry",
         "CSV",
+        "https://www.unclaimedceo.com/freemasterclass",
+        "Bing",
+        "https://www.unclaimedceo.com/digitalcourse",
+        "https://www.unclaimedceo.com/get-my-free-guide",
+        "https://tinyurl.com/unclaimedmentor",
         "https://probatemastery.com",
         "https://www.facebook.com/groups/curativetitle",
-        "https://www.instagram.com/erizzyy/",
+        "https://www.unclaimedceo.com/home-page-8750",
         "https://www.youtube.com/playlist?list=PL_t1CjX04xMsUc4TcAH_uyYDMPzzU6xRy",
         "https://www.youtube.com/playlist?list=PL_t1CjX04xMtBIyWGIO5Mvi2FDn2f436N",
         "DataTree",
         "https://sparkloop.app/paid-recommendations",
         "https://sparkloop.app/partner-program",
         "https://twitter.com/growthcurrency",
-        "https://www.facebook.com/groups/770825015084618",
         "http://coaching.dpasummit.com",
         "https://book.dpasummit.com/free-book-page?el=Book_In_Descrip_YT&htrafficsource=youtube&hcategory=Book_Funnel_Organic",
         "https://help.sparkloop.app/en/articles/8802280-win-a-free-trip-to-cancun",
         "https://nicksaraev.com",
-        "https://twitter.com/nicksaraev",
-        "https://www.instagram.com/logan_fullmer",
-        "https://www.instagram.com/nick_saraev",
-        "https://www.loganfullmer.com/",
-        "https://www.tiktok.com/@loganfullmer_?is_from_webapp=1&sender_device=pc",
-        "https://www.youtube.com/@loganfullmer",
-        "https://www.youtube.com/@LouisianaRealEstateTalks"
+        "https://twitter.com/nicksaraev"
       ]
     },
     {
       "topic_id": "contracts_and_compensation",
       "title": "Fee Agreements, Assignments of Interest & Escrow Disbursement",
-      "video_count": 637,
-      "tip_count": 822,
-      "channel_count": 425,
+      "video_count": 815,
+      "tip_count": 868,
+      "channel_count": 507,
       "top_sources": [
         {
           "video_id": "VBvaq5etzV4",
@@ -1395,95 +1395,123 @@
       "statutes_and_forms": [
         "form and",
         "form that",
-        "form for",
-        "form to",
         "form of",
+        "form to",
+        "form for",
         "Form is",
         "form you",
         "form or",
+        "form below",
         "form the",
         "form like",
-        "form below",
-        "form on",
         "form with",
-        "form content",
+        "form a",
+        "form on",
         "form your",
         "form so",
-        "form a",
+        "property Act",
+        "form content",
+        "letters of administration",
+        "form in",
         "form as",
         "form where",
-        "form in",
-        "letters of administration",
-        "form videos",
-        "form called",
         "form I",
-        "form submissions",
         "form we",
-        "form fill",
+        "form at",
+        "form called",
         "form here",
         "form our",
         "form this",
         "Form uh",
-        "form um",
+        "form videos",
         "form which",
-        "form actually",
-        "form has",
-        "form right",
-        "form submission",
-        "form video",
-        "form well",
-        "letters testamentary"
+        "letters testamentary",
+        "affidavit of heirship",
+        "form fill",
+        "form from",
+        "form if",
+        "form submissions",
+        "form them",
+        "form right"
       ],
       "tools_and_portals": [
         "Google",
         "Facebook",
         "LinkedIn",
-        "Ancestry",
-        "Excel",
         "https://excesselite.com",
         "https://www.facebook.com/groups/assetrecovery",
-        "FamilySearch",
+        "Ancestry",
         "https://www.moneymakingjug.com/inquiry",
+        "Excel",
+        "https://www.instagram.com/erizzyy/",
+        "FamilySearch",
         "https://www.surplusfunds101.com/freecallingscript",
         "https://www.youtube.com/surplusfunds101",
+        "https://wise.com/invite/dic/todorivanovk1",
         "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
         "https://www.instagram.com/thedavidwilkerson",
-        "https://www.instagram.com/erizzyy/",
+        "https://www.facebook.com/groups/770825015084618",
+        "https://www.unclaimedceo.com/linkme",
+        "https://www.unclaimedceo.com/freemasterclass",
+        "https://www.unclaimedceo.com/digitalcourse",
+        "https://www.unclaimedceo.com/get-my-free-guide",
         "https://instagram.com/courtneyfricke",
         "https://tiktok.com/@courtney.fricke",
         "https://www.facebook.com/courtneyfricke19/",
         "https://www.youtube.com/@courtneyfricke",
         "https://x.com/courtneyfricke",
         "Bing",
-        "https://probatemastery.com",
+        "https://tinyurl.com/unclaimedmentor",
         "CSV",
-        "https://www.facebook.com/groups/770825015084618",
-        "https://www.facebook.com/groups/curativetitle",
-        "https://www.youtube.com/playlist?list=PL_t1CjX04xMsUc4TcAH_uyYDMPzzU6xRy",
-        "https://www.youtube.com/playlist?list=PL_t1CjX04xMtBIyWGIO5Mvi2FDn2f436N",
-        "http://familysearch.me/facebook",
-        "http://familysearch.me/home",
-        "http://familysearch.me/instagram",
-        "http://familysearch.me/RootsTech",
-        "http://familysearch.me/twitter",
-        "http://familysearch.me/youtube",
-        "http://familysearch.me/youtubeeurope",
-        "http://familysearch.me/youtubeportuguese",
-        "http://familysearch.me/youtubespanish",
-        "https://facebook.com/groups/estateprofessionalsmastermind",
-        "https://sparkloop.app/paid-recommendations",
-        "https://sparkloop.app/partner-program",
-        "https://twitter.com/growthcurrency",
-        "https://www.instagram.com/erizzyy"
+        "https://www.unclaimedceo.com/home-page-8750",
+        "http://springsolutionsllcwordpress.com/",
+        "https://probatemastery.com",
+        "https://recover-bankruptcy-unclaimed-funds.teachable.com/",
+        "https://recover-bankruptcy-unclaimed-funds.teachable.com/p/bankruptcy-unclaimed-funds-hack",
+        "https://recover-bankruptcy-unclaimed-funds.teachable.com/purchase?product_id=4503793",
+        "https://sso.teachable.com/secure/657120/checkout/4503791/state-unclaimed-funds-guide",
+        "https://www.youtube.com/watch?v=jlSGch2JEn0&t=540s",
+        "PACER",
+        "Small Estate",
+        "https://moneymakingjuggernaut.setmore.com",
+        "https://www.facebook.com/groups/curativetitle"
       ]
     },
     {
       "topic_id": "statutory_caps_and_licensing",
       "title": "State Fee Caps, Waiting Periods, PI Licensing & UPL Rules",
-      "video_count": 587,
-      "tip_count": 496,
-      "channel_count": 376,
+      "video_count": 765,
+      "tip_count": 572,
+      "channel_count": 458,
       "top_sources": [
+        {
+          "video_id": "zrj6RA8N9HA",
+          "title": "3 WAYS To Find A Surplus Funds Attorney FAST (Asset Recovery Business)",
+          "author": "Money Making Juggernaut",
+          "url": "https://www.youtube.com/watch?v=zrj6RA8N9HA",
+          "duration": "00:06:11"
+        },
+        {
+          "video_id": "yiH-ZfQj-oc",
+          "title": "Texas Unclaimed Money & Private Investigations | Meet Sharalyn Criswell",
+          "author": "Texas Licensed Private Investigator",
+          "url": "https://www.youtube.com/watch?v=yiH-ZfQj-oc",
+          "duration": "00:06:33"
+        },
+        {
+          "video_id": "KiR-ZUeCE5g",
+          "title": "Unclaimed Property in Tennessee: Understanding Audits, Compliance, and Negative Reports",
+          "author": "TNTreasury",
+          "url": "https://www.youtube.com/watch?v=KiR-ZUeCE5g",
+          "duration": "00:03:29"
+        },
+        {
+          "video_id": "vp2uuB23fww",
+          "title": "How to work Texas Unclaimed State Funds and become a PI",
+          "author": "Money Making Juggernaut",
+          "url": "https://www.youtube.com/watch?v=vp2uuB23fww",
+          "duration": "00:38:14"
+        },
         {
           "video_id": "TA4mtGUeNo8",
           "title": "Probate Data and Property Lookups: Live Real Estate Coaching with Probate Mastery",
@@ -1511,37 +1539,18 @@
           "author": "SurplusFundsRiches",
           "url": "https://www.youtube.com/watch?v=4W8c0I28pxQ",
           "duration": "01:05:35"
-        },
-        {
-          "video_id": "n8jP0gweIR4",
-          "title": "Affidavits of Heirship and Other Texas Probate Pitfalls | TPRE Podcast Ep 3",
-          "author": "Texas Probate Real Estate",
-          "url": "https://www.youtube.com/watch?v=n8jP0gweIR4",
-          "duration": "00:45:22"
-        },
-        {
-          "video_id": "ouYE5P3UJdQ",
-          "title": "Surplus Funds Claim Process Explained (What Nobody Tells You)",
-          "author": "Alfred Taren",
-          "url": "https://www.youtube.com/watch?v=ouYE5P3UJdQ",
-          "duration": "00:17:21"
-        },
-        {
-          "video_id": "Xe2NEfqDwTQ",
-          "title": "Probate Part 5, \" What are Probate Procedures\" by James Tanner",
-          "author": "BYU Library Family History Center",
-          "url": "https://www.youtube.com/watch?v=Xe2NEfqDwTQ",
-          "duration": "00:13:28"
-        },
-        {
-          "video_id": "o1cc3hUtIv4",
-          "title": "Watch our Demo on How to Claim Your Ohio Unclaimed Funds",
-          "author": "ohiocommerce",
-          "url": "https://www.youtube.com/watch?v=o1cc3hUtIv4",
-          "duration": "00:16:26"
         }
       ],
       "top_timestamped_insights": [
+        {
+          "tip_paraphrase_summary": "Buy a script or I'm sorry, an agreement off of somebody else, you can hire an attorney where you just can create one, but…",
+          "category": "Pitfall / Hard No",
+          "timestamp": "00:14:47",
+          "link": "https://www.youtube.com/watch?v=PGvJEv9Y_Go&t=887s",
+          "video_title": "State Funds Tutorial: First Steps For Somebody Brand New To Unclaimed Funds Business.",
+          "author": "Surplus Funds 101",
+          "verbatim_research_only": true
+        },
         {
           "tip_paraphrase_summary": "Their time, so know your time zone. Also, be aware of the age of the person you're calling. If they're elderly, you may want…",
           "category": "Pitfall / Hard No",
@@ -1622,81 +1631,79 @@
           "video_title": "Foreclosure - Surplus Funds Recovery - Attorney Assistance",
           "author": "Attorney Jack",
           "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "Subscribe it helps a lot and just make sure you guys just subscribe and hit that notification bales so that you don't miss a…",
-          "category": "Pitfall / Hard No",
-          "timestamp": "00:08:29",
-          "link": "https://www.youtube.com/watch?v=nI1xm6ZA2qo&t=509s",
-          "video_title": "✅ 💰 CALIFORNIA Unclaimed Property Investigations - Tips from a Licensed Private Investigator!",
-          "author": "Security and Investigations Leadership Channel",
-          "verbatim_research_only": true
         }
       ],
       "statutes_and_forms": [
         "form and",
         "form that",
-        "form for",
         "form of",
+        "form for",
         "form to",
-        "form is",
+        "form below",
         "form you",
+        "form is",
         "form or",
         "form the",
-        "form below",
         "form a",
         "form with",
-        "form where",
+        "property Act",
+        "letters of administration",
         "form like",
         "form so",
+        "form where",
         "form your",
-        "letters of administration",
-        "form on",
         "form in",
-        "form our",
-        "form as",
+        "form on",
         "form I",
+        "form our",
         "form we",
-        "quiet title",
-        "form now",
-        "form today",
-        "Form uh",
-        "form um",
         "letters testamentary",
-        "property Act",
         "affidavit of heirship",
-        "form an",
-        "form content",
+        "form as",
+        "Form uh",
+        "form if",
         "form it",
-        "form partition",
-        "form then",
+        "form them",
         "form which",
-        "form will",
-        "warranty deed",
-        "affidavit of airship"
+        "quiet title",
+        "court order",
+        "form an",
+        "form due",
+        "form now",
+        "form then",
+        "form today",
+        "form um",
+        "form will"
       ],
       "tools_and_portals": [
         "Facebook",
         "Google",
         "LinkedIn",
         "Ancestry",
-        "FamilySearch",
         "https://excesselite.com",
         "https://www.facebook.com/groups/assetrecovery",
         "https://www.moneymakingjug.com/inquiry",
+        "FamilySearch",
         "Excel",
-        "https://www.surplusfunds101.com/freecallingscript",
         "https://www.instagram.com/erizzyy/",
+        "https://wise.com/invite/dic/todorivanovk1",
+        "https://www.surplusfunds101.com/freecallingscript",
         "https://www.youtube.com/surplusfunds101",
+        "https://www.facebook.com/groups/770825015084618",
+        "https://www.unclaimedceo.com/linkme",
+        "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
+        "https://www.instagram.com/thedavidwilkerson",
+        "https://www.unclaimedceo.com/freemasterclass",
+        "CSV",
+        "https://www.unclaimedceo.com/digitalcourse",
+        "https://www.unclaimedceo.com/get-my-free-guide",
         "https://instagram.com/courtneyfricke",
         "https://tiktok.com/@courtney.fricke",
         "https://www.facebook.com/courtneyfricke19/",
         "https://www.youtube.com/@courtneyfricke",
         "https://x.com/courtneyfricke",
-        "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
-        "https://www.instagram.com/thedavidwilkerson",
         "Bing",
-        "CSV",
+        "https://tinyurl.com/unclaimedmentor",
         "http://familysearch.me/facebook",
         "http://familysearch.me/home",
         "http://familysearch.me/instagram",
@@ -1706,24 +1713,17 @@
         "http://familysearch.me/youtubeeurope",
         "http://familysearch.me/youtubeportuguese",
         "http://familysearch.me/youtubespanish",
+        "https://www.unclaimedceo.com/home-page-8750",
         "https://youtu.be/3cmj5kGm2Xw",
-        "MyHeritage",
-        "Regrid",
-        "http://www.youtube.com/channel/UCsc0AQkAh_2cQmxqwD6VWRw?sub_confirmation=1",
-        "https://probatemastery.com",
-        "https://twitter.com/Ancestry",
-        "https://www.ancestry.com/",
-        "https://www.facebook.com/Ancestry/",
-        "https://www.instagram.com/ancestry",
-        "https://www.youtube.com/user/AncestryCom"
+        "MyHeritage"
       ]
     },
     {
       "topic_id": "automation_and_small_team_ops",
       "title": "Docket Automation, AI Abstracting & Small-Team Operations",
-      "video_count": 697,
-      "tip_count": 2505,
-      "channel_count": 471,
+      "video_count": 868,
+      "tip_count": 2530,
+      "channel_count": 552,
       "top_sources": [
         {
           "video_id": "zqtx1Soeq5E",
@@ -1877,86 +1877,86 @@
       "statutes_and_forms": [
         "form and",
         "form that",
+        "form of",
         "form for",
         "form to",
-        "form of",
         "form is",
         "form you",
         "form or",
         "form the",
-        "form with",
-        "form a",
         "form below",
+        "form a",
+        "form with",
         "form like",
         "form so",
         "form on",
-        "form content",
         "form your",
+        "form content",
         "form where",
         "form as",
         "form in",
         "letters of administration",
         "form I",
-        "form submissions",
-        "form videos",
+        "property Act",
         "form we",
-        "form called",
-        "Form uh",
-        "form um",
         "form which",
-        "form actually",
-        "form but",
-        "form fill",
+        "form at",
+        "form called",
+        "form if",
         "form it",
         "form our",
+        "form submissions",
         "form this",
-        "form will",
-        "form built",
-        "form fields",
-        "form has",
-        "form here"
+        "Form uh",
+        "form videos",
+        "form but",
+        "form fill",
+        "form from",
+        "form them",
+        "form um",
+        "form will"
       ],
       "tools_and_portals": [
         "Google",
         "Facebook",
         "LinkedIn",
-        "Ancestry",
         "Excel",
-        "FamilySearch",
         "https://excesselite.com",
+        "Ancestry",
         "https://www.facebook.com/groups/assetrecovery",
         "https://www.moneymakingjug.com/inquiry",
+        "https://www.instagram.com/erizzyy/",
+        "FamilySearch",
         "https://www.surplusfunds101.com/freecallingscript",
         "https://www.youtube.com/surplusfunds101",
         "CSV",
+        "https://wise.com/invite/dic/todorivanovk1",
         "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
         "https://www.instagram.com/thedavidwilkerson",
-        "https://www.instagram.com/erizzyy/",
+        "https://www.facebook.com/groups/770825015084618",
+        "https://www.unclaimedceo.com/linkme",
+        "https://www.unclaimedceo.com/digitalcourse",
+        "https://www.unclaimedceo.com/freemasterclass",
+        "https://www.unclaimedceo.com/get-my-free-guide",
+        "https://tinyurl.com/unclaimedmentor",
+        "https://www.unclaimedceo.com/home-page-8750",
         "Regrid",
         "Bing",
+        "http://springsolutionsllcwordpress.com/",
         "https://probatemastery.com",
+        "https://recover-bankruptcy-unclaimed-funds.teachable.com/",
+        "https://recover-bankruptcy-unclaimed-funds.teachable.com/p/bankruptcy-unclaimed-funds-hack",
+        "https://recover-bankruptcy-unclaimed-funds.teachable.com/purchase?product_id=4503793",
+        "https://sso.teachable.com/secure/657120/checkout/4503791/state-unclaimed-funds-guide",
+        "https://www.youtube.com/watch?v=jlSGch2JEn0&t=540s",
+        "PACER",
+        "Small Estate",
         "DataTree",
         "http://familysearch.me/facebook",
         "http://familysearch.me/home",
         "http://familysearch.me/instagram",
         "http://familysearch.me/RootsTech",
-        "http://familysearch.me/twitter",
-        "http://familysearch.me/youtube",
-        "http://familysearch.me/youtubeeurope",
-        "http://familysearch.me/youtubeportuguese",
-        "http://familysearch.me/youtubespanish",
-        "https://www.facebook.com/groups/770825015084618",
-        "https://youtu.be/3cmj5kGm2Xw",
-        "http://www.youtube.com/channel/UCsc0AQkAh_2cQmxqwD6VWRw?sub_confirmation=1",
-        "https://facebook.com/groups/estateprofessionalsmastermind",
-        "https://nicksaraev.com",
-        "https://twitter.com/Ancestry",
-        "https://twitter.com/nicksaraev",
-        "https://www.ancestry.com/",
-        "https://www.facebook.com/Ancestry/",
-        "https://www.instagram.com/ancestry",
-        "https://www.instagram.com/erizzyy",
-        "https://www.instagram.com/nick_saraev"
+        "http://familysearch.me/twitter"
       ]
     }
   ],
@@ -1968,9 +1968,9 @@
       "headline": "Heir location is paid on contingency, never on up-front fees.",
       "summary": "Across the corpus, operators converge on a pure contingency model: the heir pays nothing out of pocket, the locator advances all research cost, and the fee is a negotiated percentage released only when the estate or state agency actually disburses funds. Charging an heir an advance fee is treated as the single clearest marker of a predatory or unlicensed operator.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 428,
-      "video_count": 624,
-      "corroborating_tip_count": 1447,
+      "channel_count": 453,
+      "video_count": 693,
+      "corroborating_tip_count": 1502,
       "supporting_links": [
         {
           "video_title": "State Funds Tutorial New Mexico: How To Register As A Property Locator In The State Of New Mexico.",
@@ -2018,9 +2018,9 @@
       "headline": "Fresh county probate and intestate dockets outperform purchased lead lists.",
       "summary": "Practitioners consistently build pipeline from newly filed probate and administration matters pulled directly from county clerk portals rather than resold lists. Filings naming an administrator but no located heirs, and estates sitting open past the local notice period, are the recurring high-value signal.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 325,
-      "video_count": 528,
-      "corroborating_tip_count": 818,
+      "channel_count": 407,
+      "video_count": 706,
+      "corroborating_tip_count": 865,
       "supporting_links": [
         {
           "video_title": "$57 Affiliate Payouts With $35 Google Ads CPA (Full Funnel Breakdown)",
@@ -2068,9 +2068,9 @@
       "headline": "State unclaimed-property and escheat databases supply the repeatable volume.",
       "summary": "Every state treasury or controller maintains a searchable unclaimed-property register, and the consensus workflow is to cross-reference deceased owners there against probate filings. Volume comes from systematic register sweeps; size comes from the rarer escheated estate, surplus-funds and safe-deposit categories.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 146,
-      "video_count": 241,
-      "corroborating_tip_count": 587,
+      "channel_count": 228,
+      "video_count": 419,
+      "corroborating_tip_count": 1689,
       "supporting_links": [
         {
           "video_title": "How To Claim Surplus Funds From Foreclosure",
@@ -2118,9 +2118,9 @@
       "headline": "The deliverable is a document-backed kinship chain, not a name on a list.",
       "summary": "Operators agree that claims succeed or fail on the evidentiary chain: each generational link supported by vital records, each branch mapped per stirpes, and every gap closed before contact. Tree hints from consumer genealogy sites are treated as leads to verify, never as proof to submit.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 440,
-      "video_count": 675,
-      "corroborating_tip_count": 787,
+      "channel_count": 521,
+      "video_count": 852,
+      "corroborating_tip_count": 965,
       "supporting_links": [
         {
           "video_title": "Resolving Heirs' Property",
@@ -2168,9 +2168,9 @@
       "headline": "Verify identity before contact, then lead with restraint, not the dollar figure.",
       "summary": "The recurring outreach pattern is: skip trace to a confirmed current address and phone, open by letter or a short calm call, state that funds may be owed to the family without naming an amount, and give the heir a way to independently verify the operator. Pressure tactics and inflated figures are consistently reported as the fastest way to lose a signed file.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 291,
-      "video_count": 403,
-      "corroborating_tip_count": 257,
+      "channel_count": 320,
+      "video_count": 475,
+      "corroborating_tip_count": 340,
       "supporting_links": [
         {
           "video_title": "State Funds Tutorial: 5 Tech Tools For Your State Funds Business",
@@ -2185,28 +2185,28 @@
           "link": "https://www.youtube.com/watch?v=ASO1JUOWTjA&t=355s"
         },
         {
+          "video_title": "State Funds Tutorial: First Steps For Somebody Brand New To Unclaimed Funds Business.",
+          "author": "Surplus Funds 101",
+          "timestamp": "00:12:28",
+          "link": "https://www.youtube.com/watch?v=PGvJEv9Y_Go&t=748s"
+        },
+        {
           "video_title": "Parasite Reddit SEO: Find Google Traffic With This Workflow",
           "author": "Rankso SEO",
           "timestamp": "00:18:18",
           "link": "https://www.youtube.com/watch?v=gGfsCEiyizs&t=1098s"
         },
         {
-          "video_title": "DataTree Hacks: How to Find Portfolio Owners With Multiple Properties",
-          "author": "REtipster",
-          "timestamp": "00:01:44",
-          "link": "https://www.youtube.com/watch?v=9RvXCiHUzlo&t=104s"
+          "video_title": "State Funds Business Skip Tracing. Best FREE Skip Tracing Websites For Your Unclaimed Funds Business",
+          "author": "Surplus Funds 101",
+          "timestamp": "00:02:19",
+          "link": "https://www.youtube.com/watch?v=Tx1_986LmrY&t=139s"
         },
         {
-          "video_title": "How To Book Sales Calls For Your Agency With AI Cold Email Outreach",
-          "author": "Johnny",
-          "timestamp": "00:26:16",
-          "link": "https://www.youtube.com/watch?v=MlJ3XSy3k7A&t=1576s"
-        },
-        {
-          "video_title": "How to Create Comparison Content (Without Making Your CEO Nervous): A Data Backed Approach",
-          "author": "The Grow and Convert Marketing Show",
-          "timestamp": "00:10:11",
-          "link": "https://www.youtube.com/watch?v=ZciLGXWg1uA&t=611s"
+          "video_title": "The Only Skiptracing Software You Need For Surplus Funds",
+          "author": "Money Making Juggernaut",
+          "timestamp": "00:03:25",
+          "link": "https://www.youtube.com/watch?v=aKzRVyO_gfI&t=205s"
         }
       ],
       "caveat": "Consensus among the sampled operators — not legal advice and not a substitute for the governing statute in the reader's jurisdiction."
@@ -2218,9 +2218,9 @@
       "headline": "No work proceeds without a signed fee agreement and third-party escrow.",
       "summary": "Consensus practice is a plain-language, notarized or e-signed agreement that names the estate, states the percentage, discloses the heir's right to claim independently, and routes funds through attorney trust or licensed escrow so the locator never holds the heir's money directly.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 425,
-      "video_count": 637,
-      "corroborating_tip_count": 822,
+      "channel_count": 507,
+      "video_count": 815,
+      "corroborating_tip_count": 868,
       "supporting_links": [
         {
           "video_title": "DataTree Hacks: Find Full Legal Descriptions and Title Vesting Information",
@@ -2268,10 +2268,16 @@
       "headline": "Fee caps, waiting periods and licensing are decided per state, before the first call.",
       "summary": "Operators repeatedly stress that the governing rules — percentage caps on unclaimed-property recoveries, mandatory waiting periods after escheat or sale, private-investigator licensing triggers, and the line against practicing law — vary by jurisdiction and must be read in the local statute for every file rather than generalized from another state.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 376,
-      "video_count": 587,
-      "corroborating_tip_count": 496,
+      "channel_count": 458,
+      "video_count": 765,
+      "corroborating_tip_count": 572,
       "supporting_links": [
+        {
+          "video_title": "State Funds Tutorial: First Steps For Somebody Brand New To Unclaimed Funds Business.",
+          "author": "Surplus Funds 101",
+          "timestamp": "00:14:47",
+          "link": "https://www.youtube.com/watch?v=PGvJEv9Y_Go&t=887s"
+        },
         {
           "video_title": "Surplus Funds Cold Calling Script: How to Not Sound Like a Scam",
           "author": "Alfred Taren",
@@ -2301,12 +2307,6 @@
           "author": "Nick Fullmer- Overage Syndicate",
           "timestamp": "00:20:09",
           "link": "https://www.youtube.com/watch?v=vd__NHmQYgM&t=1209s"
-        },
-        {
-          "video_title": "OpenRouter vs LiteLLM: Which Should You Self-Host?",
-          "author": "Bryan Software",
-          "timestamp": "00:05:16",
-          "link": "https://www.youtube.com/watch?v=SDB5hKMHUA8&t=316s"
         }
       ],
       "caveat": "Consensus among the sampled operators — not legal advice and not a substitute for the governing statute in the reader's jurisdiction."
@@ -2318,9 +2318,9 @@
       "headline": "Automated docket monitoring plus AI abstracting lets one or two people run real volume.",
       "summary": "The operational consensus is to automate the repetitive layer — scheduled docket and register pulls, structured intake into a sheet or CRM, AI-assisted abstracting of filings — while keeping genealogy judgment, heir contact and contract execution human. That split is what keeps a two-person shop competitive against staffed firms.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 471,
-      "video_count": 697,
-      "corroborating_tip_count": 2505,
+      "channel_count": 552,
+      "video_count": 868,
+      "corroborating_tip_count": 2530,
       "supporting_links": [
         {
           "video_title": "State Funds Tutorial: 5 Tech Tools For Your State Funds Business",
@@ -2378,6 +2378,12 @@
       "priority": "high",
       "corpus_references": [
         {
+          "video_title": "State Funds Tutorial: First Steps For Somebody Brand New To Unclaimed Funds Business.",
+          "author": "Surplus Funds 101",
+          "timestamp": "00:14:47",
+          "link": "https://www.youtube.com/watch?v=PGvJEv9Y_Go&t=887s"
+        },
+        {
           "video_title": "Surplus Funds Cold Calling Script: How to Not Sound Like a Scam",
           "author": "Alfred Taren",
           "timestamp": "00:00:56",
@@ -2394,12 +2400,6 @@
           "author": "Surplus Funds 101",
           "timestamp": "00:07:16",
           "link": "https://www.youtube.com/watch?v=6yIKsJMj6Gk&t=436s"
-        },
-        {
-          "video_title": "USDA FSA Resources for Heirs: Join FSA as we talk with the Experts (Episode 1-Full Version)",
-          "author": "FarmersGov",
-          "timestamp": "00:16:23",
-          "link": "https://www.youtube.com/watch?v=whDzDrFNADQ&t=983s"
         }
       ]
     },
@@ -2418,6 +2418,12 @@
       "priority": "high",
       "corpus_references": [
         {
+          "video_title": "State Funds Tutorial: First Steps For Somebody Brand New To Unclaimed Funds Business.",
+          "author": "Surplus Funds 101",
+          "timestamp": "00:14:47",
+          "link": "https://www.youtube.com/watch?v=PGvJEv9Y_Go&t=887s"
+        },
+        {
           "video_title": "Surplus Funds Cold Calling Script: How to Not Sound Like a Scam",
           "author": "Alfred Taren",
           "timestamp": "00:00:56",
@@ -2434,12 +2440,6 @@
           "author": "Surplus Funds 101",
           "timestamp": "00:07:16",
           "link": "https://www.youtube.com/watch?v=6yIKsJMj6Gk&t=436s"
-        },
-        {
-          "video_title": "USDA FSA Resources for Heirs: Join FSA as we talk with the Experts (Episode 1-Full Version)",
-          "author": "FarmersGov",
-          "timestamp": "00:16:23",
-          "link": "https://www.youtube.com/watch?v=whDzDrFNADQ&t=983s"
         }
       ]
     },
@@ -2458,6 +2458,12 @@
       "priority": "high",
       "corpus_references": [
         {
+          "video_title": "State Funds Tutorial: First Steps For Somebody Brand New To Unclaimed Funds Business.",
+          "author": "Surplus Funds 101",
+          "timestamp": "00:14:47",
+          "link": "https://www.youtube.com/watch?v=PGvJEv9Y_Go&t=887s"
+        },
+        {
           "video_title": "Surplus Funds Cold Calling Script: How to Not Sound Like a Scam",
           "author": "Alfred Taren",
           "timestamp": "00:00:56",
@@ -2474,12 +2480,6 @@
           "author": "Surplus Funds 101",
           "timestamp": "00:07:16",
           "link": "https://www.youtube.com/watch?v=6yIKsJMj6Gk&t=436s"
-        },
-        {
-          "video_title": "USDA FSA Resources for Heirs: Join FSA as we talk with the Experts (Episode 1-Full Version)",
-          "author": "FarmersGov",
-          "timestamp": "00:16:23",
-          "link": "https://www.youtube.com/watch?v=whDzDrFNADQ&t=983s"
         }
       ]
     },
@@ -2538,6 +2538,12 @@
       "priority": "high",
       "corpus_references": [
         {
+          "video_title": "State Funds Tutorial: First Steps For Somebody Brand New To Unclaimed Funds Business.",
+          "author": "Surplus Funds 101",
+          "timestamp": "00:14:47",
+          "link": "https://www.youtube.com/watch?v=PGvJEv9Y_Go&t=887s"
+        },
+        {
           "video_title": "Surplus Funds Cold Calling Script: How to Not Sound Like a Scam",
           "author": "Alfred Taren",
           "timestamp": "00:00:56",
@@ -2554,12 +2560,6 @@
           "author": "Surplus Funds 101",
           "timestamp": "00:07:16",
           "link": "https://www.youtube.com/watch?v=6yIKsJMj6Gk&t=436s"
-        },
-        {
-          "video_title": "USDA FSA Resources for Heirs: Join FSA as we talk with the Experts (Episode 1-Full Version)",
-          "author": "FarmersGov",
-          "timestamp": "00:16:23",
-          "link": "https://www.youtube.com/watch?v=whDzDrFNADQ&t=983s"
         }
       ]
     },
@@ -2746,8 +2746,8 @@
         "asset_id": "youtube_thumbnails",
         "asset": "https://i.ytimg.com/vi/<video_id>/*.jpg",
         "asset_type": "youtube_thumbnail_image",
-        "source": "YouTube CDN thumbnails for the 814 corpus videos",
-        "instance_count": 814,
+        "source": "YouTube CDN thumbnails for the 992 corpus videos",
+        "instance_count": 992,
         "instances": [
           {
             "video_id": "9Q4qYeK5DTg",
@@ -8446,6 +8446,1252 @@
             "author": "Jacob Tuwiner | AI Sales Automation",
             "thumbnail_url": "https://i.ytimg.com/vi/LxiIsByGTbU/hqdefault.jpg",
             "source_url": "https://www.youtube.com/watch?v=LxiIsByGTbU"
+          },
+          {
+            "video_id": "EyQovsqVOnE",
+            "title": "BANKRUPTCY Unclaimed Funds Explained: UNTAPPED NICHE (Surplus Funds Recovery)",
+            "author": "Money Making Juggernaut",
+            "thumbnail_url": "https://i.ytimg.com/vi/EyQovsqVOnE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=EyQovsqVOnE"
+          },
+          {
+            "video_id": "ZvJ4yCc9em4",
+            "title": "Unclaimed Funds 🤑 Jay Made $31k in Finder Fees (State Funds Business)",
+            "author": "Money Making Juggernaut",
+            "thumbnail_url": "https://i.ytimg.com/vi/ZvJ4yCc9em4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ZvJ4yCc9em4"
+          },
+          {
+            "video_id": "pOEq9UMUFHU",
+            "title": "How I Claimed over $50,000.00 in State Unclaimed Funds – Step-by-Step Guide!",
+            "author": "Surplus Institute / David Church / Unclaimed Funds",
+            "thumbnail_url": "https://i.ytimg.com/vi/pOEq9UMUFHU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=pOEq9UMUFHU"
+          },
+          {
+            "video_id": "0UUN2j2_dFU",
+            "title": "How to get your unclaimed property in Texas",
+            "author": "WFAA",
+            "thumbnail_url": "https://i.ytimg.com/vi/0UUN2j2_dFU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=0UUN2j2_dFU"
+          },
+          {
+            "video_id": "uY7XnXFfpv4",
+            "title": "There's more than $10 billion in unclaimed property in Texas. Here's how to claim yours",
+            "author": "KHOU 11",
+            "thumbnail_url": "https://i.ytimg.com/vi/uY7XnXFfpv4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=uY7XnXFfpv4"
+          },
+          {
+            "video_id": "gEVKR-AmaU0",
+            "title": "A company claims to find unclaimed funds for a fee, but is it necessary? | FOX43 Finds Out",
+            "author": "FOX43 News",
+            "thumbnail_url": "https://i.ytimg.com/vi/gEVKR-AmaU0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=gEVKR-AmaU0"
+          },
+          {
+            "video_id": "IIBKDdChS-k",
+            "title": "How Unclaimed Money Can Help You Make More Money",
+            "author": "Surplus Institute / David Church / Unclaimed Funds",
+            "thumbnail_url": "https://i.ytimg.com/vi/IIBKDdChS-k/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=IIBKDdChS-k"
+          },
+          {
+            "video_id": "RjCjrBjQF7Y",
+            "title": "How to get started in state fund | State unclaimed funds business. Make money with surplus funds",
+            "author": "Surplus Institute / David Church / Unclaimed Funds",
+            "thumbnail_url": "https://i.ytimg.com/vi/RjCjrBjQF7Y/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=RjCjrBjQF7Y"
+          },
+          {
+            "video_id": "8RccEFzRtl8",
+            "title": "Texas Is Holding $9 Billion+ in Unclaimed Money. Some Is Oil Royalties",
+            "author": "Royalty Clerk",
+            "thumbnail_url": "https://i.ytimg.com/vi/8RccEFzRtl8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=8RccEFzRtl8"
+          },
+          {
+            "video_id": "WdhaqcAUXBk",
+            "title": "How to check if you have unclaimed money in Texas",
+            "author": "KHOU 11",
+            "thumbnail_url": "https://i.ytimg.com/vi/WdhaqcAUXBk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=WdhaqcAUXBk"
+          },
+          {
+            "video_id": "kZMkghcevh8",
+            "title": "Unclaimed Property Explained: How To Check and Claim It",
+            "author": "Hoang Le CFP, EA, Real Estate Agent",
+            "thumbnail_url": "https://i.ytimg.com/vi/kZMkghcevh8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=kZMkghcevh8"
+          },
+          {
+            "video_id": "-VDHxOAAA7A",
+            "title": "Unclaimed Property Business Top 8 Key Terms To Understand",
+            "author": "Surplus Funds 101",
+            "thumbnail_url": "https://i.ytimg.com/vi/-VDHxOAAA7A/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=-VDHxOAAA7A"
+          },
+          {
+            "video_id": "VxHOdlFXKdQ",
+            "title": "Private Investigator reveals Unclaimed Money Warnings if you get a letter from a “recovery service”!",
+            "author": "ShadowAnyone",
+            "thumbnail_url": "https://i.ytimg.com/vi/VxHOdlFXKdQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=VxHOdlFXKdQ"
+          },
+          {
+            "video_id": "kGhoQfbhUG4",
+            "title": "Why people quit working Unclaimed Funds after taking a course.",
+            "author": "FundSleuth - Unclaimed Funds Info and Training",
+            "thumbnail_url": "https://i.ytimg.com/vi/kGhoQfbhUG4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=kGhoQfbhUG4"
+          },
+          {
+            "video_id": "bUxdjo_bs0g",
+            "title": "How to search unclaimed property for a business in Tennessee",
+            "author": "GardenShop.Pro",
+            "thumbnail_url": "https://i.ytimg.com/vi/bUxdjo_bs0g/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=bUxdjo_bs0g"
+          },
+          {
+            "video_id": "hUiiEXcFE0k",
+            "title": "Unclaimed Property Reporting Overview",
+            "author": "Utah Office of State Treasurer",
+            "thumbnail_url": "https://i.ytimg.com/vi/hUiiEXcFE0k/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=hUiiEXcFE0k"
+          },
+          {
+            "video_id": "rGLI7Ry3sF0",
+            "title": "Unclaimed Property: Holder Reporting - Oil and Gas Companies",
+            "author": "txcomptroller",
+            "thumbnail_url": "https://i.ytimg.com/vi/rGLI7Ry3sF0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=rGLI7Ry3sF0"
+          },
+          {
+            "video_id": "rOaTjN9BoFE",
+            "title": "How to search unclaimed property for a business in Virginia",
+            "author": "GardenShop.Pro",
+            "thumbnail_url": "https://i.ytimg.com/vi/rOaTjN9BoFE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=rOaTjN9BoFE"
+          },
+          {
+            "video_id": "fntI1mKZpK0",
+            "title": "How to search unclaimed property for a business in Missouri",
+            "author": "GardenShop.Pro",
+            "thumbnail_url": "https://i.ytimg.com/vi/fntI1mKZpK0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=fntI1mKZpK0"
+          },
+          {
+            "video_id": "0YK26E_fzYA",
+            "title": "Pennsylvania Unclaimed Property - How to Search PA's State Treasury Unclaimed Money Data Base",
+            "author": "Michael Curtis",
+            "thumbnail_url": "https://i.ytimg.com/vi/0YK26E_fzYA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=0YK26E_fzYA"
+          },
+          {
+            "video_id": "RtDPQUDYTy0",
+            "title": "How to search unclaimed property in Virginia for a company",
+            "author": "Как се прави",
+            "thumbnail_url": "https://i.ytimg.com/vi/RtDPQUDYTy0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=RtDPQUDYTy0"
+          },
+          {
+            "video_id": "kb-pXZgQdoE",
+            "title": "How to get Checks back from Clients in your Unclaimed Funds Business | Surplus Funds Business",
+            "author": "Surplus Institute / David Church / Unclaimed Funds",
+            "thumbnail_url": "https://i.ytimg.com/vi/kb-pXZgQdoE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=kb-pXZgQdoE"
+          },
+          {
+            "video_id": "yLgvruGuIx0",
+            "title": "What Does Warrants Mean On Unclaimed Property 2025",
+            "author": "Guide Gurus",
+            "thumbnail_url": "https://i.ytimg.com/vi/yLgvruGuIx0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=yLgvruGuIx0"
+          },
+          {
+            "video_id": "IhEPmIRt3Ak",
+            "title": "Ways you can find unclaimed property owed to you",
+            "author": "InvestigateTV",
+            "thumbnail_url": "https://i.ytimg.com/vi/IhEPmIRt3Ak/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=IhEPmIRt3Ak"
+          },
+          {
+            "video_id": "4abzayS6yzk",
+            "title": "'It's not a scam': Nearly 140K Illinois residents to receive checks for unclaimed property",
+            "author": "WGN News",
+            "thumbnail_url": "https://i.ytimg.com/vi/4abzayS6yzk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=4abzayS6yzk"
+          },
+          {
+            "video_id": "NxCoaATrtq4",
+            "title": "Unclaimed Bankruptcy Funds webinar",
+            "author": "Money Making Juggernaut",
+            "thumbnail_url": "https://i.ytimg.com/vi/NxCoaATrtq4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=NxCoaATrtq4"
+          },
+          {
+            "video_id": "bfDePAnN-4Y",
+            "title": "How To Close An Unclaimed State Funds Deal (asset recovery business)",
+            "author": "Money Making Juggernaut",
+            "thumbnail_url": "https://i.ytimg.com/vi/bfDePAnN-4Y/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=bfDePAnN-4Y"
+          },
+          {
+            "video_id": "5l8zepw8oWY",
+            "title": "The Mechanics of Escheatment: How to Reclaim Your Abandoned Assets",
+            "author": "Money Grammar",
+            "thumbnail_url": "https://i.ytimg.com/vi/5l8zepw8oWY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=5l8zepw8oWY"
+          },
+          {
+            "video_id": "ie1xaLhl85o",
+            "title": "She Closed 7 Unclaimed Funds Deals WITHOUT a Single Cold Call 😱 (Steal Her Strategy)",
+            "author": "Unclaimed CEO",
+            "thumbnail_url": "https://i.ytimg.com/vi/ie1xaLhl85o/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ie1xaLhl85o"
+          },
+          {
+            "video_id": "Vy3iGS6ep4w",
+            "title": "How to be successful with Unclaimed Funds in 2024",
+            "author": "Unclaimed CEO",
+            "thumbnail_url": "https://i.ytimg.com/vi/Vy3iGS6ep4w/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Vy3iGS6ep4w"
+          },
+          {
+            "video_id": "7Fc0D2RuIJE",
+            "title": "How to search unclaimed funds under a corporation name",
+            "author": "Garden Shop Pro",
+            "thumbnail_url": "https://i.ytimg.com/vi/7Fc0D2RuIJE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=7Fc0D2RuIJE"
+          },
+          {
+            "video_id": "La2LN9HMPbs",
+            "title": "Unclaimed Money After Foreclosure: How to Legally Recover What’s Rightfully Yours",
+            "author": "Overage Acquisition",
+            "thumbnail_url": "https://i.ytimg.com/vi/La2LN9HMPbs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=La2LN9HMPbs"
+          },
+          {
+            "video_id": "yiH-ZfQj-oc",
+            "title": "Texas Unclaimed Money & Private Investigations | Meet Sharalyn Criswell",
+            "author": "Texas Licensed Private Investigator",
+            "thumbnail_url": "https://i.ytimg.com/vi/yiH-ZfQj-oc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=yiH-ZfQj-oc"
+          },
+          {
+            "video_id": "J4RhFyo0R7c",
+            "title": "What Is Unclaimed Money? (And How to Get Yours Back for Free)",
+            "author": "Unclaimed Money: Find What You're Owed",
+            "thumbnail_url": "https://i.ytimg.com/vi/J4RhFyo0R7c/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=J4RhFyo0R7c"
+          },
+          {
+            "video_id": "5gSBjAC1g0s",
+            "title": "Don't get BANNED for life skip tracing Unclaimed Funds! A Private Investigator License Warning.",
+            "author": "ShadowAnyone",
+            "thumbnail_url": "https://i.ytimg.com/vi/5gSBjAC1g0s/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=5gSBjAC1g0s"
+          },
+          {
+            "video_id": "2SYC3A6apHk",
+            "title": "Master the Claim Process For California: Boost Your Investigator Income",
+            "author": "Unclaimed CEO",
+            "thumbnail_url": "https://i.ytimg.com/vi/2SYC3A6apHk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=2SYC3A6apHk"
+          },
+          {
+            "video_id": "1Grj5UvPLwo",
+            "title": "CBS California investigation spurs federal action on states’ unclaimed property practices",
+            "author": "CBS News Sacramento",
+            "thumbnail_url": "https://i.ytimg.com/vi/1Grj5UvPLwo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=1Grj5UvPLwo"
+          },
+          {
+            "video_id": "lM8PdIOG7-E",
+            "title": "MissingMoney.com Scam or Legit? Here's the Answer.",
+            "author": "Jordan Liles",
+            "thumbnail_url": "https://i.ytimg.com/vi/lM8PdIOG7-E/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=lM8PdIOG7-E"
+          },
+          {
+            "video_id": "YoID4SzRBaI",
+            "title": "Your Family Could Be Owed $10,000+ And You Don’t Even Know It | Private Investigator Explains",
+            "author": "Open Book Entrepreneur",
+            "thumbnail_url": "https://i.ytimg.com/vi/YoID4SzRBaI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=YoID4SzRBaI"
+          },
+          {
+            "video_id": "QVgTN5Lip0o",
+            "title": "Is the Government Holding Your Money? How to Find Unclaimed Money Free",
+            "author": "Dollar Decoded",
+            "thumbnail_url": "https://i.ytimg.com/vi/QVgTN5Lip0o/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=QVgTN5Lip0o"
+          },
+          {
+            "video_id": "3_qKwnM5EUw",
+            "title": "How To Register As An Unclaimed Funds Investigator For California",
+            "author": "Unclaimed CEO",
+            "thumbnail_url": "https://i.ytimg.com/vi/3_qKwnM5EUw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=3_qKwnM5EUw"
+          },
+          {
+            "video_id": "YWsshlY3kF4",
+            "title": "Be Your Own Investigator: how to find money you may have forgotten",
+            "author": "InvestigateTV",
+            "thumbnail_url": "https://i.ytimg.com/vi/YWsshlY3kF4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=YWsshlY3kF4"
+          },
+          {
+            "video_id": "D3Fcqm3xaco",
+            "title": "Beware of the changes made in CA state unclaimed funds contracts",
+            "author": "Surplus Institute / David Church / Unclaimed Funds",
+            "thumbnail_url": "https://i.ytimg.com/vi/D3Fcqm3xaco/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=D3Fcqm3xaco"
+          },
+          {
+            "video_id": "xocEKVSCJtU",
+            "title": "How To Find UNCLAIMED MONEY In Your County (COUNTY Unclaimed Funds Explained)",
+            "author": "Money Making Juggernaut",
+            "thumbnail_url": "https://i.ytimg.com/vi/xocEKVSCJtU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=xocEKVSCJtU"
+          },
+          {
+            "video_id": "9BVp_yhswZY",
+            "title": "How to use the unclaimed property database in New York",
+            "author": "Как се прави",
+            "thumbnail_url": "https://i.ytimg.com/vi/9BVp_yhswZY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=9BVp_yhswZY"
+          },
+          {
+            "video_id": "wCk_H4rThTo",
+            "title": "Unclaimed funds in New York could soon be coming your mailbox | NBC New York",
+            "author": "NBC New York",
+            "thumbnail_url": "https://i.ytimg.com/vi/wCk_H4rThTo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=wCk_H4rThTo"
+          },
+          {
+            "video_id": "qHskTBuAHTg",
+            "title": "How to Check Unclaimed Funds in New York",
+            "author": "NBC New York",
+            "thumbnail_url": "https://i.ytimg.com/vi/qHskTBuAHTg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=qHskTBuAHTg"
+          },
+          {
+            "video_id": "qQL9C0H1n5E",
+            "title": "How to Claim Unclaimed Property in California 💰",
+            "author": "The Accidental Publisher",
+            "thumbnail_url": "https://i.ytimg.com/vi/qQL9C0H1n5E/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=qQL9C0H1n5E"
+          },
+          {
+            "video_id": "cF0HhlLh7NI",
+            "title": "How to search New York unclaimed property by last name",
+            "author": "Как се прави",
+            "thumbnail_url": "https://i.ytimg.com/vi/cF0HhlLh7NI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=cF0HhlLh7NI"
+          },
+          {
+            "video_id": "3QgxEy6EB6Y",
+            "title": "✅ How To Find Unclaimed Money And Property In California 🔴",
+            "author": "Make Money Anthony",
+            "thumbnail_url": "https://i.ytimg.com/vi/3QgxEy6EB6Y/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=3QgxEy6EB6Y"
+          },
+          {
+            "video_id": "DGys6KYDbNU",
+            "title": "Great News!! How To Find FREE MONEY: UNCLAIMED MONEY How to File a Claim",
+            "author": "The TEC Show",
+            "thumbnail_url": "https://i.ytimg.com/vi/DGys6KYDbNU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=DGys6KYDbNU"
+          },
+          {
+            "video_id": "ug2uUK_s2yk",
+            "title": "The Surplus Funds Secret You NEED to Know Before Taking the Plunge",
+            "author": "Unclaimed CEO",
+            "thumbnail_url": "https://i.ytimg.com/vi/ug2uUK_s2yk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ug2uUK_s2yk"
+          },
+          {
+            "video_id": "WlbnzGtdoSY",
+            "title": "5 Things To Do Instead Of Cold Calling | Tax Surplus | Unclaimed Funds",
+            "author": "Unclaimed CEO",
+            "thumbnail_url": "https://i.ytimg.com/vi/WlbnzGtdoSY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=WlbnzGtdoSY"
+          },
+          {
+            "video_id": "bAARnig4bT4",
+            "title": "UNCLAIMED FUNDS: Will leads really want to work with you?🤔",
+            "author": "Unclaimed CEO",
+            "thumbnail_url": "https://i.ytimg.com/vi/bAARnig4bT4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=bAARnig4bT4"
+          },
+          {
+            "video_id": "sK5PqCLSzzg",
+            "title": "How To Start Asset Recovery Business With $0 (Surplus Funds Recovery)",
+            "author": "Money Making Juggernaut",
+            "thumbnail_url": "https://i.ytimg.com/vi/sK5PqCLSzzg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=sK5PqCLSzzg"
+          },
+          {
+            "video_id": "Zq6923LSEX4",
+            "title": "How to Find Unclaimed State Funds with HBU Asset Recovery | Maximize Your Wealth",
+            "author": "David Daniels",
+            "thumbnail_url": "https://i.ytimg.com/vi/Zq6923LSEX4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Zq6923LSEX4"
+          },
+          {
+            "video_id": "pZG8hK4VPVM",
+            "title": "The 3 Things You Need To File A Tax Surplus Claim | 2024",
+            "author": "Unclaimed CEO",
+            "thumbnail_url": "https://i.ytimg.com/vi/pZG8hK4VPVM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=pZG8hK4VPVM"
+          },
+          {
+            "video_id": "zI7m3acMjuY",
+            "title": "Why People Struggle With Unclaimed Funds | Avoid These 3 Things❌️",
+            "author": "Unclaimed CEO",
+            "thumbnail_url": "https://i.ytimg.com/vi/zI7m3acMjuY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=zI7m3acMjuY"
+          },
+          {
+            "video_id": "xfSFTtM1yT8",
+            "title": "#EP46 | Lynn Hall on DC Unclaimed Property: Transforming Asset Recovery and Building Trust",
+            "author": "Buried in Work",
+            "thumbnail_url": "https://i.ytimg.com/vi/xfSFTtM1yT8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=xfSFTtM1yT8"
+          },
+          {
+            "video_id": "zrj6RA8N9HA",
+            "title": "3 WAYS To Find A Surplus Funds Attorney FAST (Asset Recovery Business)",
+            "author": "Money Making Juggernaut",
+            "thumbnail_url": "https://i.ytimg.com/vi/zrj6RA8N9HA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=zrj6RA8N9HA"
+          },
+          {
+            "video_id": "sfcrjWHv_7k",
+            "title": "How to Check If You Have Unclaimed Money in Your Name (2026)",
+            "author": "Money Missed",
+            "thumbnail_url": "https://i.ytimg.com/vi/sfcrjWHv_7k/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=sfcrjWHv_7k"
+          },
+          {
+            "video_id": "ZDSZHh3DZGs",
+            "title": "Unclaimed Money Recovery - What is Unclaimed Property?",
+            "author": "Unclaimed Money Recovery",
+            "thumbnail_url": "https://i.ytimg.com/vi/ZDSZHh3DZGs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ZDSZHh3DZGs"
+          },
+          {
+            "video_id": "sDutuuk5RG0",
+            "title": "Make 5k On Surplus Funds State Funds Unclaimed Money (Easy Business)",
+            "author": "Timepiece Dan",
+            "thumbnail_url": "https://i.ytimg.com/vi/sDutuuk5RG0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=sDutuuk5RG0"
+          },
+          {
+            "video_id": "vp2uuB23fww",
+            "title": "How to work Texas Unclaimed State Funds and become a PI",
+            "author": "Money Making Juggernaut",
+            "thumbnail_url": "https://i.ytimg.com/vi/vp2uuB23fww/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=vp2uuB23fww"
+          },
+          {
+            "video_id": "XsLq9LUTb6w",
+            "title": "The $10K/month Blueprint for Unclaimed Funds",
+            "author": "Unclaimed CEO",
+            "thumbnail_url": "https://i.ytimg.com/vi/XsLq9LUTb6w/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=XsLq9LUTb6w"
+          },
+          {
+            "video_id": "RycXVSWGZ3I",
+            "title": "Never Cash a Check? The State Ends Up Holding It",
+            "author": "Base_Rate",
+            "thumbnail_url": "https://i.ytimg.com/vi/RycXVSWGZ3I/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=RycXVSWGZ3I"
+          },
+          {
+            "video_id": "74IHdXzW4aQ",
+            "title": "7 Official US Databases To Find Unclaimed Money & Lost Assets",
+            "author": "This Guy Knows Tech",
+            "thumbnail_url": "https://i.ytimg.com/vi/74IHdXzW4aQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=74IHdXzW4aQ"
+          },
+          {
+            "video_id": "hSrCCZHDpUU",
+            "title": "How Delaware Quietly Makes $554M From Unclaimed Money",
+            "author": "Off The Receipt",
+            "thumbnail_url": "https://i.ytimg.com/vi/hSrCCZHDpUU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=hSrCCZHDpUU"
+          },
+          {
+            "video_id": "V_ycS3i_CMY",
+            "title": "5k commission and skip tracing revealed | Surplus Funds Business in USA | Unclaimed State Funds",
+            "author": "Surplus Institute / David Church / Unclaimed Funds",
+            "thumbnail_url": "https://i.ytimg.com/vi/V_ycS3i_CMY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=V_ycS3i_CMY"
+          },
+          {
+            "video_id": "ujbTh1In_c4",
+            "title": "Surplus Funds - skip tracing claimants",
+            "author": "SurplusFundsRiches",
+            "thumbnail_url": "https://i.ytimg.com/vi/ujbTh1In_c4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ujbTh1In_c4"
+          },
+          {
+            "video_id": "Qf591_R7CN4",
+            "title": "This Is How To Skip Trace For Unclaimed Funds and Tax Overages 📲💰",
+            "author": "Unclaimed CEO",
+            "thumbnail_url": "https://i.ytimg.com/vi/Qf591_R7CN4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Qf591_R7CN4"
+          },
+          {
+            "video_id": "hA6VJ_GqGyc",
+            "title": "Mastering Skip Tracing for Deceased Individuals: Strategies for Success 🕵️‍♂️⚡",
+            "author": "Surplus Institute / David Church / Unclaimed Funds",
+            "thumbnail_url": "https://i.ytimg.com/vi/hA6VJ_GqGyc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=hA6VJ_GqGyc"
+          },
+          {
+            "video_id": "Tx1_986LmrY",
+            "title": "State Funds Business Skip Tracing. Best FREE Skip Tracing Websites For Your Unclaimed Funds Business",
+            "author": "Surplus Funds 101",
+            "thumbnail_url": "https://i.ytimg.com/vi/Tx1_986LmrY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Tx1_986LmrY"
+          },
+          {
+            "video_id": "B3w-Sxl2QnE",
+            "title": "3 Biggest Skip Tracing Mistakes",
+            "author": "Unclaimed CEO",
+            "thumbnail_url": "https://i.ytimg.com/vi/B3w-Sxl2QnE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=B3w-Sxl2QnE"
+          },
+          {
+            "video_id": "JT_EgidLdF8",
+            "title": "Unclaimed Property: What It Is, How to Claim It, & How to Avoid Scams...EVERYTHING YOU NEED TO KNOW",
+            "author": "AskJimmySmith",
+            "thumbnail_url": "https://i.ytimg.com/vi/JT_EgidLdF8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=JT_EgidLdF8"
+          },
+          {
+            "video_id": "KiR-ZUeCE5g",
+            "title": "Unclaimed Property in Tennessee: Understanding Audits, Compliance, and Negative Reports",
+            "author": "TNTreasury",
+            "thumbnail_url": "https://i.ytimg.com/vi/KiR-ZUeCE5g/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=KiR-ZUeCE5g"
+          },
+          {
+            "video_id": "UP88bQoP2JU",
+            "title": "Keane Unclaimed Property System (KUPS)",
+            "author": "Keane Unclaimed Property",
+            "thumbnail_url": "https://i.ytimg.com/vi/UP88bQoP2JU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=UP88bQoP2JU"
+          },
+          {
+            "video_id": "K64AFLANH3A",
+            "title": "Unclaimed Property Regulation",
+            "author": "COMPUTERSHARE",
+            "thumbnail_url": "https://i.ytimg.com/vi/K64AFLANH3A/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=K64AFLANH3A"
+          },
+          {
+            "video_id": "79d39hagJ6U",
+            "title": "Preparing for an unclaimed property audit",
+            "author": "COMPUTERSHARE",
+            "thumbnail_url": "https://i.ytimg.com/vi/79d39hagJ6U/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=79d39hagJ6U"
+          },
+          {
+            "video_id": "po0e86TAQwA",
+            "title": "Mitigating Unclaimed Property Risk: Best Practices for Compliance",
+            "author": "Clarus Partners",
+            "thumbnail_url": "https://i.ytimg.com/vi/po0e86TAQwA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=po0e86TAQwA"
+          },
+          {
+            "video_id": "p0UoXSbya5E",
+            "title": "SALT: Top 5 Mistakes Companies Make Evaluating Their Unclaimed Property Exposure.",
+            "author": "SimekScott LLC",
+            "thumbnail_url": "https://i.ytimg.com/vi/p0UoXSbya5E/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=p0UoXSbya5E"
+          },
+          {
+            "video_id": "2TghvbJiOis",
+            "title": "Unclaimed Property 101 - Fundamental Concepts",
+            "author": "Lorman Education Services",
+            "thumbnail_url": "https://i.ytimg.com/vi/2TghvbJiOis/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=2TghvbJiOis"
+          },
+          {
+            "video_id": "fVMIbCz8s0U",
+            "title": "What Is Escheatable in Oil & Gas? Unclaimed Property Explained",
+            "author": "PakEnergy",
+            "thumbnail_url": "https://i.ytimg.com/vi/fVMIbCz8s0U/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=fVMIbCz8s0U"
+          },
+          {
+            "video_id": "03CoUEgqdzg",
+            "title": "Litigation and unclaimed property audits",
+            "author": "COMPUTERSHARE",
+            "thumbnail_url": "https://i.ytimg.com/vi/03CoUEgqdzg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=03CoUEgqdzg"
+          },
+          {
+            "video_id": "UC28yxW8Pls",
+            "title": "Unclaimed Property",
+            "author": "Deloitte US",
+            "thumbnail_url": "https://i.ytimg.com/vi/UC28yxW8Pls/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=UC28yxW8Pls"
+          },
+          {
+            "video_id": "msbqOrpoTXc",
+            "title": "How to Automate Unclaimed Property Workflows in Oil & Gas",
+            "author": "PakEnergy",
+            "thumbnail_url": "https://i.ytimg.com/vi/msbqOrpoTXc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=msbqOrpoTXc"
+          },
+          {
+            "video_id": "yjxm_QOITBY",
+            "title": "Abandoned and Unclaimed Property Quarterly - April 2024",
+            "author": "PwC US",
+            "thumbnail_url": "https://i.ytimg.com/vi/yjxm_QOITBY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=yjxm_QOITBY"
+          },
+          {
+            "video_id": "91o6wv-g6D0",
+            "title": "UNTAPPED Business - Unclaimed BANKRUPTCY Funds Recovery ($5B)",
+            "author": "Money Making Juggernaut",
+            "thumbnail_url": "https://i.ytimg.com/vi/91o6wv-g6D0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=91o6wv-g6D0"
+          },
+          {
+            "video_id": "2Q7vcVR_cDs",
+            "title": "Steps to a Simple Lawsuit/Breach of Contract-Bankruptcy Unclaimed Funds",
+            "author": "Spring Solutions, LLC",
+            "thumbnail_url": "https://i.ytimg.com/vi/2Q7vcVR_cDs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=2Q7vcVR_cDs"
+          },
+          {
+            "video_id": "daCZb9lQvnc",
+            "title": "What are Unclaimed Bankruptcy Funds?",
+            "author": "ACE SURPLUS",
+            "thumbnail_url": "https://i.ytimg.com/vi/daCZb9lQvnc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=daCZb9lQvnc"
+          },
+          {
+            "video_id": "CJMCHDgNh4M",
+            "title": "MY COURSE HAS LAUNCHED! Recovering Bankruptcy Unclaimed Funds!",
+            "author": "Spring Solutions, LLC",
+            "thumbnail_url": "https://i.ytimg.com/vi/CJMCHDgNh4M/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=CJMCHDgNh4M"
+          },
+          {
+            "video_id": "ckzrLZgtcYI",
+            "title": "$1,030.14 in a day! Bankruptcy Unclaimed Funds!",
+            "author": "Spring Solutions, LLC",
+            "thumbnail_url": "https://i.ytimg.com/vi/ckzrLZgtcYI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ckzrLZgtcYI"
+          },
+          {
+            "video_id": "waps0YmW8BI",
+            "title": "UNTAPPED OPPORTUNITY: $34k From 1 Claim (Unclaimed Bankruptcy Funds)",
+            "author": "Money Making Juggernaut",
+            "thumbnail_url": "https://i.ytimg.com/vi/waps0YmW8BI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=waps0YmW8BI"
+          },
+          {
+            "video_id": "YKjd__UIhB8",
+            "title": "How to Find Unclaimed Funds | Top 7 Tips Bankruptcy Unclaimed Funds in 2022",
+            "author": "Spring Solutions, LLC",
+            "thumbnail_url": "https://i.ytimg.com/vi/YKjd__UIhB8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=YKjd__UIhB8"
+          },
+          {
+            "video_id": "lWmrc3x-B-E",
+            "title": "Recover Bankruptcy Unclaimed Funds in U.S. Territories- Work From Home 2020.",
+            "author": "Spring Solutions, LLC",
+            "thumbnail_url": "https://i.ytimg.com/vi/lWmrc3x-B-E/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=lWmrc3x-B-E"
+          },
+          {
+            "video_id": "y2j1Ux0R9jY",
+            "title": "Discrepancies with Verifying Funds-Bankruptcy Unclaimed Funds",
+            "author": "Spring Solutions, LLC",
+            "thumbnail_url": "https://i.ytimg.com/vi/y2j1Ux0R9jY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=y2j1Ux0R9jY"
+          },
+          {
+            "video_id": "1fuOy7IsEMo",
+            "title": "I HATE CREDITOR CLAIMS-Bankruptcy Unclaimed Funds",
+            "author": "Spring Solutions, LLC",
+            "thumbnail_url": "https://i.ytimg.com/vi/1fuOy7IsEMo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=1fuOy7IsEMo"
+          },
+          {
+            "video_id": "R8PpcOrRZc4",
+            "title": "Northern and Middle District of Florida Bankruptcy Court-Recovery unclaimed funds",
+            "author": "Spring Solutions, LLC",
+            "thumbnail_url": "https://i.ytimg.com/vi/R8PpcOrRZc4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=R8PpcOrRZc4"
+          },
+          {
+            "video_id": "BAdBoUHd2lE",
+            "title": "How To Find 6Figure Unclaimed Funds in 30 Seconds #makemoneyonline #unclaimedfunds #taxsurplus",
+            "author": "Unclaimed CEO",
+            "thumbnail_url": "https://i.ytimg.com/vi/BAdBoUHd2lE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=BAdBoUHd2lE"
+          },
+          {
+            "video_id": "suC7b2tuNcc",
+            "title": "$$$ U.S. Courts Unclaimed Funds Locator: Get lost MONIES owed to you or your family. By the badwolf",
+            "author": "Badwolf Unincorporated",
+            "thumbnail_url": "https://i.ytimg.com/vi/suC7b2tuNcc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=suC7b2tuNcc"
+          },
+          {
+            "video_id": "V_ElSJZFszg",
+            "title": "U.S. Courts Unclaimed Funds Locator: Does the court owe you money?",
+            "author": "Badwolf Unincorporated",
+            "thumbnail_url": "https://i.ytimg.com/vi/V_ElSJZFszg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=V_ElSJZFszg"
+          },
+          {
+            "video_id": "ubLk2A5a-2A",
+            "title": "How to Find Unclaimed Money",
+            "author": "Financial Soup",
+            "thumbnail_url": "https://i.ytimg.com/vi/ubLk2A5a-2A/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ubLk2A5a-2A"
+          },
+          {
+            "video_id": "5A3cah6ujY4",
+            "title": "Claims Register Part 2-Eastern District of New York Bankruptcy Unclaimed Funds",
+            "author": "Spring Solutions, LLC",
+            "thumbnail_url": "https://i.ytimg.com/vi/5A3cah6ujY4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=5A3cah6ujY4"
+          },
+          {
+            "video_id": "wO5QkFr7vdQ",
+            "title": "Finding and Claiming Unclaimed Property with MissingMoney.com",
+            "author": "Knowledge Work Nexus",
+            "thumbnail_url": "https://i.ytimg.com/vi/wO5QkFr7vdQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=wO5QkFr7vdQ"
+          },
+          {
+            "video_id": "7MUtjq4bwU0",
+            "title": "How to search North Dakota unclaimed property for a business name",
+            "author": "Как се прави",
+            "thumbnail_url": "https://i.ytimg.com/vi/7MUtjq4bwU0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=7MUtjq4bwU0"
+          },
+          {
+            "video_id": "2_XKdBsmJ5c",
+            "title": "How to search Colorado unclaimed property for a business name",
+            "author": "Как се прави",
+            "thumbnail_url": "https://i.ytimg.com/vi/2_XKdBsmJ5c/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=2_XKdBsmJ5c"
+          },
+          {
+            "video_id": "KJU4iu_xIgw",
+            "title": "How to search South Carolina unclaimed property for a business name",
+            "author": "Как се прави",
+            "thumbnail_url": "https://i.ytimg.com/vi/KJU4iu_xIgw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=KJU4iu_xIgw"
+          },
+          {
+            "video_id": "pxHjDvDVqqM",
+            "title": "How to search Pennsylvania unclaimed property for a business name",
+            "author": "Как се прави",
+            "thumbnail_url": "https://i.ytimg.com/vi/pxHjDvDVqqM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=pxHjDvDVqqM"
+          },
+          {
+            "video_id": "NPH35-KUMjQ",
+            "title": "How to search Minnesota unclaimed property for a business name",
+            "author": "Как се прави",
+            "thumbnail_url": "https://i.ytimg.com/vi/NPH35-KUMjQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=NPH35-KUMjQ"
+          },
+          {
+            "video_id": "pPow2SwrxBE",
+            "title": "You can search a state website for unclaimed property",
+            "author": "WTHR",
+            "thumbnail_url": "https://i.ytimg.com/vi/pPow2SwrxBE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=pPow2SwrxBE"
+          },
+          {
+            "video_id": "dhZB_jSn2Qg",
+            "title": "How to claim unclaimed money as a power of attorney",
+            "author": "GardenShop.Pro",
+            "thumbnail_url": "https://i.ytimg.com/vi/dhZB_jSn2Qg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=dhZB_jSn2Qg"
+          },
+          {
+            "video_id": "0CZmLNyYvD8",
+            "title": "How to claim Pennsylvania unclaimed property with a notarized form",
+            "author": "Как се прави",
+            "thumbnail_url": "https://i.ytimg.com/vi/0CZmLNyYvD8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=0CZmLNyYvD8"
+          },
+          {
+            "video_id": "edHsQGppnKE",
+            "title": "How to claim Utah unclaimed property with a notarized form",
+            "author": "Как се прави",
+            "thumbnail_url": "https://i.ytimg.com/vi/edHsQGppnKE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=edHsQGppnKE"
+          },
+          {
+            "video_id": "rQqA2wnJ9xw",
+            "title": "Cold Calling Unclaimed or Surplus Deal Prospects. Should you call on the phone or SMS? What is best?",
+            "author": "FundSleuth - Unclaimed Funds Info and Training",
+            "thumbnail_url": "https://i.ytimg.com/vi/rQqA2wnJ9xw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=rQqA2wnJ9xw"
+          },
+          {
+            "video_id": "wp5vC44yQQg",
+            "title": "Cold Calling Unclaimed State Funds Basic Script 101. What You Need to Know about Surplus Funds",
+            "author": "Surplus Institute / David Church / Unclaimed Funds",
+            "thumbnail_url": "https://i.ytimg.com/vi/wp5vC44yQQg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=wp5vC44yQQg"
+          },
+          {
+            "video_id": "zjCP9bHX3oc",
+            "title": "Unclaimed Funds: Top 5 Ways To Close Deals Without Cold Calling",
+            "author": "Unclaimed CEO",
+            "thumbnail_url": "https://i.ytimg.com/vi/zjCP9bHX3oc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=zjCP9bHX3oc"
+          },
+          {
+            "video_id": "8hCl2lLNDrk",
+            "title": "#1 APP To Send Mailers To Surplus Fund Recovery Leads (direct mail for asset recovery)",
+            "author": "Money Making Juggernaut",
+            "thumbnail_url": "https://i.ytimg.com/vi/8hCl2lLNDrk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=8hCl2lLNDrk"
+          },
+          {
+            "video_id": "a0Bv2mtHL_Y",
+            "title": "Ask Amy: Unclaimed money letter could be legit",
+            "author": "KPRC 2 Click2Houston",
+            "thumbnail_url": "https://i.ytimg.com/vi/a0Bv2mtHL_Y/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=a0Bv2mtHL_Y"
+          },
+          {
+            "video_id": "2l827py8Fe8",
+            "title": "Unclaimed Property Locators Dealing with Heirs | How to Find an Unclaimed Property Locator",
+            "author": "Surplus Institute / David Church / Unclaimed Funds",
+            "thumbnail_url": "https://i.ytimg.com/vi/2l827py8Fe8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=2l827py8Fe8"
+          },
+          {
+            "video_id": "DLhQH9iGJ84",
+            "title": "Step-by-Step Guide to Recovering Your Unclaimed Dividends",
+            "author": "Broadstreet Radio",
+            "thumbnail_url": "https://i.ytimg.com/vi/DLhQH9iGJ84/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=DLhQH9iGJ84"
+          },
+          {
+            "video_id": "Rg_zkc6UGWE",
+            "title": "Unclaimed Shares & Dividends? Here’s How To Track And Claim Them Via IEPFA Portal | Part 1",
+            "author": "GLC Wealth Advisor",
+            "thumbnail_url": "https://i.ytimg.com/vi/Rg_zkc6UGWE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Rg_zkc6UGWE"
+          },
+          {
+            "video_id": "ykLXSnb1CRE",
+            "title": "Step-by-Step Guide to Recovering Your Unclaimed Dividend",
+            "author": "Broadstreet Radio",
+            "thumbnail_url": "https://i.ytimg.com/vi/ykLXSnb1CRE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ykLXSnb1CRE"
+          },
+          {
+            "video_id": "73nKY8EkVnA",
+            "title": "What happen to Unclaimed dividend amount?",
+            "author": "Claim My Shares",
+            "thumbnail_url": "https://i.ytimg.com/vi/73nKY8EkVnA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=73nKY8EkVnA"
+          },
+          {
+            "video_id": "Y4d3T6BNtEg",
+            "title": "Unclaimed Shares & Dividends? Here’s How To Track And Claim Them Via IEPFA Portal",
+            "author": "Mint",
+            "thumbnail_url": "https://i.ytimg.com/vi/Y4d3T6BNtEg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Y4d3T6BNtEg"
+          },
+          {
+            "video_id": "KQMVL4j21qc",
+            "title": "How to Recover Lost Shares & Unclaimed Dividends in Nigeria (Step-by-Step)",
+            "author": "The Wealth Portfolio Builder",
+            "thumbnail_url": "https://i.ytimg.com/vi/KQMVL4j21qc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=KQMVL4j21qc"
+          },
+          {
+            "video_id": "7WZONOtYbjc",
+            "title": "The Different Types Of Unclaimed Funds - COMPLETE LIST (Surplus Funds Recovery)",
+            "author": "Money Making Juggernaut",
+            "thumbnail_url": "https://i.ytimg.com/vi/7WZONOtYbjc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=7WZONOtYbjc"
+          },
+          {
+            "video_id": "AZAC0VeRINw",
+            "title": "The process to Claim Unclaimed Dividends|Documents Required to Claim Unclaimed Dividends|Enterslice",
+            "author": "Enterslice",
+            "thumbnail_url": "https://i.ytimg.com/vi/AZAC0VeRINw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=AZAC0VeRINw"
+          },
+          {
+            "video_id": "ZsII5-XkqPY",
+            "title": "The CRM I use to make $100,00+ per year in Asset Recovery 📈",
+            "author": "Money Making Juggernaut",
+            "thumbnail_url": "https://i.ytimg.com/vi/ZsII5-XkqPY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ZsII5-XkqPY"
+          },
+          {
+            "video_id": "gitQwM01Fgc",
+            "title": "Avoid Corporate Compliance Scams | Beware of False Notices in Corporate Compliance | #surplusfunds",
+            "author": "Surplus Institute / David Church / Unclaimed Funds",
+            "thumbnail_url": "https://i.ytimg.com/vi/gitQwM01Fgc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=gitQwM01Fgc"
+          },
+          {
+            "video_id": "kTrQ-7TzYL4",
+            "title": "Video: BBB warns of unclaimed property scam",
+            "author": "FOX23 News Tulsa",
+            "thumbnail_url": "https://i.ytimg.com/vi/kTrQ-7TzYL4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=kTrQ-7TzYL4"
+          },
+          {
+            "video_id": "JvMO0OK8kTU",
+            "title": "What is an Unclaimed Property Scam? : Simple Explained",
+            "author": "Dark Web Deacon",
+            "thumbnail_url": "https://i.ytimg.com/vi/JvMO0OK8kTU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=JvMO0OK8kTU"
+          },
+          {
+            "video_id": "8977FkLTYjo",
+            "title": "\"You Have Unclaimed Money\" — It's a Scam",
+            "author": "Trust Armor",
+            "thumbnail_url": "https://i.ytimg.com/vi/8977FkLTYjo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=8977FkLTYjo"
+          },
+          {
+            "video_id": "z2nZM27w4qU",
+            "title": "Unclaimed Money Search 2026: Find Money in Your Name for Free (Avoid Finder Fee Scams)",
+            "author": "Nobody Asked, I Checked",
+            "thumbnail_url": "https://i.ytimg.com/vi/z2nZM27w4qU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=z2nZM27w4qU"
+          },
+          {
+            "video_id": "oUFeGA0MPoM",
+            "title": "How to check unclaimed funds from an insurance demutualization",
+            "author": "Как се прави",
+            "thumbnail_url": "https://i.ytimg.com/vi/oUFeGA0MPoM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=oUFeGA0MPoM"
+          },
+          {
+            "video_id": "NbMR0Gzlwww",
+            "title": "Life Insurance - Are You the Beneficiary of Unclaimed Benefits?",
+            "author": "Daggett Shuler Attorneys at Law",
+            "thumbnail_url": "https://i.ytimg.com/vi/NbMR0Gzlwww/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=NbMR0Gzlwww"
+          },
+          {
+            "video_id": "ogkbsdCWM4g",
+            "title": "How To Get Unclaimed Money From Insurance Company | Explainer | Money9 English",
+            "author": "Money9 English",
+            "thumbnail_url": "https://i.ytimg.com/vi/ogkbsdCWM4g/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ogkbsdCWM4g"
+          },
+          {
+            "video_id": "f7126N1MGjA",
+            "title": "Unclaimed Money Found From Deceased Relatives; Could You Be Owed Cash?",
+            "author": "ABC News",
+            "thumbnail_url": "https://i.ytimg.com/vi/f7126N1MGjA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=f7126N1MGjA"
+          },
+          {
+            "video_id": "_35TodkWXyM",
+            "title": "How to Track Down Life Insurance Policies and Unclaimed Life Insurance Money",
+            "author": "C. Hicks Agency - Camille Hicks",
+            "thumbnail_url": "https://i.ytimg.com/vi/_35TodkWXyM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=_35TodkWXyM"
+          },
+          {
+            "video_id": "HMzGGSvJ104",
+            "title": "How to find an unclaimed insurance payout in your name",
+            "author": "Garden Shop Pro",
+            "thumbnail_url": "https://i.ytimg.com/vi/HMzGGSvJ104/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=HMzGGSvJ104"
+          },
+          {
+            "video_id": "26FSCbZczh4",
+            "title": "Where To Find Unclaimed Money - Legit Government Sites Revealed",
+            "author": "Penelope Jane Smith",
+            "thumbnail_url": "https://i.ytimg.com/vi/26FSCbZczh4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=26FSCbZczh4"
+          },
+          {
+            "video_id": "OFnbGkVuoHQ",
+            "title": "How to find Iowa unclaimed utility deposits by last name",
+            "author": "GardenShop.Pro",
+            "thumbnail_url": "https://i.ytimg.com/vi/OFnbGkVuoHQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=OFnbGkVuoHQ"
+          },
+          {
+            "video_id": "3iluxKs2wP8",
+            "title": "How to find Montana unclaimed utility deposits by last name",
+            "author": "GardenShop.Pro",
+            "thumbnail_url": "https://i.ytimg.com/vi/3iluxKs2wP8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=3iluxKs2wP8"
+          },
+          {
+            "video_id": "GWa4tWyuEoA",
+            "title": "How to find Colorado unclaimed utility deposits by last name",
+            "author": "GardenShop.Pro",
+            "thumbnail_url": "https://i.ytimg.com/vi/GWa4tWyuEoA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=GWa4tWyuEoA"
+          },
+          {
+            "video_id": "E2EtkM2OBvI",
+            "title": "How to find Kansas unclaimed utility deposits by last name",
+            "author": "GardenShop.Pro",
+            "thumbnail_url": "https://i.ytimg.com/vi/E2EtkM2OBvI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=E2EtkM2OBvI"
+          },
+          {
+            "video_id": "3B5mPVcKPDE",
+            "title": "(3 of 4) Utah Unclaimed Property Audit Issues",
+            "author": "ucproput",
+            "thumbnail_url": "https://i.ytimg.com/vi/3B5mPVcKPDE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=3B5mPVcKPDE"
+          },
+          {
+            "video_id": "GBOIDnAjQvc",
+            "title": "Colorado has $2.5B in unclaimed property. How to check whether any belongs to you.",
+            "author": "CBS Colorado",
+            "thumbnail_url": "https://i.ytimg.com/vi/GBOIDnAjQvc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=GBOIDnAjQvc"
+          },
+          {
+            "video_id": "1IpkVjkkXHg",
+            "title": "How to find Maryland unclaimed utility deposits by last name",
+            "author": "GardenShop.Pro",
+            "thumbnail_url": "https://i.ytimg.com/vi/1IpkVjkkXHg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=1IpkVjkkXHg"
+          },
+          {
+            "video_id": "D-PMjgNe-7s",
+            "title": "SCR Webinar: Unclaimed Property Program Overview",
+            "author": "SC REALTORS®",
+            "thumbnail_url": "https://i.ytimg.com/vi/D-PMjgNe-7s/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=D-PMjgNe-7s"
+          },
+          {
+            "video_id": "JGravBgJTJo",
+            "title": "Delaware Unclaimed Property Official Search Website l Learn How to Find Unclaimed Money in Delaware",
+            "author": "Michael Curtis",
+            "thumbnail_url": "https://i.ytimg.com/vi/JGravBgJTJo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=JGravBgJTJo"
+          },
+          {
+            "video_id": "TGu6R9Pc0-4",
+            "title": "Delaware Unclaimed Property VDA Invitations - April 11 2025",
+            "author": "SimekScott LLC",
+            "thumbnail_url": "https://i.ytimg.com/vi/TGu6R9Pc0-4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=TGu6R9Pc0-4"
+          },
+          {
+            "video_id": "NWkWT5QX3sM",
+            "title": "The Tiny State That Lives Off Other People's Forgotten Money",
+            "author": "The Explainer Point",
+            "thumbnail_url": "https://i.ytimg.com/vi/NWkWT5QX3sM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=NWkWT5QX3sM"
+          },
+          {
+            "video_id": "R6nRcAkxVdA",
+            "title": "Delaware Makes More From Forgotten Money Than From Its Lottery",
+            "author": "Lunch Cash",
+            "thumbnail_url": "https://i.ytimg.com/vi/R6nRcAkxVdA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=R6nRcAkxVdA"
+          },
+          {
+            "video_id": "0anLNGLjnlA",
+            "title": "Seeking for FREE money in Delaware 🏖️#freemoneydaily #freemoneyonline2023 #delaware",
+            "author": "KFNETWORK",
+            "thumbnail_url": "https://i.ytimg.com/vi/0anLNGLjnlA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=0anLNGLjnlA"
+          },
+          {
+            "video_id": "duwB7Y82flc",
+            "title": "Unclaimed Property: Avoiding Penalties From Increased State Enforcement | FULL Webinar",
+            "author": "Friedman LLP",
+            "thumbnail_url": "https://i.ytimg.com/vi/duwB7Y82flc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=duwB7Y82flc"
+          },
+          {
+            "video_id": "HSmuF8xIaIU",
+            "title": "Finding Oil & Gas Royalties in Unclaimed Property",
+            "author": "Blue Mesa Minerals",
+            "thumbnail_url": "https://i.ytimg.com/vi/HSmuF8xIaIU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=HSmuF8xIaIU"
+          },
+          {
+            "video_id": "6MVorBlRJk4",
+            "title": "Who Can Claim Unclaimed Property Of A Deceased Person?",
+            "author": "Flying With Luxury",
+            "thumbnail_url": "https://i.ytimg.com/vi/6MVorBlRJk4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=6MVorBlRJk4"
+          },
+          {
+            "video_id": "wYwVPTqXCvE",
+            "title": "Who Can Claim Unclaimed Property Of A Deceased Person 2025",
+            "author": "Guide Gurus",
+            "thumbnail_url": "https://i.ytimg.com/vi/wYwVPTqXCvE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=wYwVPTqXCvE"
+          },
+          {
+            "video_id": "e-FwgynrCd0",
+            "title": "How to check if you have unclaimed funds in Florida | Florida Estate Planning & Probate Lawyer",
+            "author": "SJF Law Group - Probate & Estate Planning",
+            "thumbnail_url": "https://i.ytimg.com/vi/e-FwgynrCd0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=e-FwgynrCd0"
+          },
+          {
+            "video_id": "80djyAsS-YE",
+            "title": "Unclaimed Property: $275,000 Vanishes From Retirees Account, Transferred to the State of California",
+            "author": "CBS News Sacramento",
+            "thumbnail_url": "https://i.ytimg.com/vi/80djyAsS-YE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=80djyAsS-YE"
+          },
+          {
+            "video_id": "Cb8M7-NxR50",
+            "title": "Filing a claim for unclaimed property in Wisconsin | FOX6 News Milwaukee",
+            "author": "FOX6 News Milwaukee",
+            "thumbnail_url": "https://i.ytimg.com/vi/Cb8M7-NxR50/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Cb8M7-NxR50"
+          },
+          {
+            "video_id": "LEhDouSnx9s",
+            "title": "How to claim unclaimed money as an heir in Mississippi",
+            "author": "Как се прави",
+            "thumbnail_url": "https://i.ytimg.com/vi/LEhDouSnx9s/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=LEhDouSnx9s"
+          },
+          {
+            "video_id": "U1OErlHEyv4",
+            "title": "How To Move Faster & Make More Money With Unclaimed Funds",
+            "author": "Unclaimed CEO",
+            "thumbnail_url": "https://i.ytimg.com/vi/U1OErlHEyv4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=U1OErlHEyv4"
+          },
+          {
+            "video_id": "i84F9CVghTA",
+            "title": "⚠️WARNING⚠️ Do these 6 things BEFORE you start your Unclaimed Funds | Tax Surplus business",
+            "author": "Unclaimed CEO",
+            "thumbnail_url": "https://i.ytimg.com/vi/i84F9CVghTA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=i84F9CVghTA"
+          },
+          {
+            "video_id": "EFuzXe23Q7I",
+            "title": "🔴 LIVE: State Unclaimed Funds for Beginners | How to Find the Money & Get Paid",
+            "author": "Surplus Institute / David Church / Unclaimed Funds",
+            "thumbnail_url": "https://i.ytimg.com/vi/EFuzXe23Q7I/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=EFuzXe23Q7I"
+          },
+          {
+            "video_id": "DVmNNFdoDzE",
+            "title": "How to search unclaimed property in Georgia for free",
+            "author": "GardenShop.Pro",
+            "thumbnail_url": "https://i.ytimg.com/vi/DVmNNFdoDzE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=DVmNNFdoDzE"
+          },
+          {
+            "video_id": "Psgl7H5ZpOc",
+            "title": "How to Check If You Have Unclaimed Money (Step-by-Step Guide)",
+            "author": "Unclaimed Funds Finder",
+            "thumbnail_url": "https://i.ytimg.com/vi/Psgl7H5ZpOc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Psgl7H5ZpOc"
+          },
+          {
+            "video_id": "PGvJEv9Y_Go",
+            "title": "State Funds Tutorial: First Steps For Somebody Brand New To Unclaimed Funds Business.",
+            "author": "Surplus Funds 101",
+            "thumbnail_url": "https://i.ytimg.com/vi/PGvJEv9Y_Go/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=PGvJEv9Y_Go"
+          },
+          {
+            "video_id": "J2nto2DAwqc",
+            "title": "How to file an unclaimed property claim as an heir",
+            "author": "GardenShop.Pro",
+            "thumbnail_url": "https://i.ytimg.com/vi/J2nto2DAwqc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=J2nto2DAwqc"
+          },
+          {
+            "video_id": "lQrAftswAO4",
+            "title": "Claiming your Unclaimed Funds for Estate Planning Attorneys",
+            "author": "ohiocommerce",
+            "thumbnail_url": "https://i.ytimg.com/vi/lQrAftswAO4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=lQrAftswAO4"
+          },
+          {
+            "video_id": "97wh_A16P2s",
+            "title": "Why I Refuse to Cold Call in My Unclaimed Money Business (and You Should Too)",
+            "author": "Unclaimed CEO",
+            "thumbnail_url": "https://i.ytimg.com/vi/97wh_A16P2s/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=97wh_A16P2s"
+          },
+          {
+            "video_id": "s_yDVlsM7Tc",
+            "title": "$15 billion hiding in plain sight: How to find unclaimed property in California",
+            "author": "KCRA 3",
+            "thumbnail_url": "https://i.ytimg.com/vi/s_yDVlsM7Tc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=s_yDVlsM7Tc"
+          },
+          {
+            "video_id": "VF97sp7MzAw",
+            "title": "How to track down unclaimed money in every state",
+            "author": "WSPA 7News",
+            "thumbnail_url": "https://i.ytimg.com/vi/VF97sp7MzAw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=VF97sp7MzAw"
+          },
+          {
+            "video_id": "kuCEYN64vtQ",
+            "title": "Unclaimed State Funds VS Surplus Funds Recovery",
+            "author": "Money Making Juggernaut",
+            "thumbnail_url": "https://i.ytimg.com/vi/kuCEYN64vtQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=kuCEYN64vtQ"
+          },
+          {
+            "video_id": "1W2i-aJGcb0",
+            "title": "One of the biggest mistakes made with UNCLAIMED FUNDS (Must Watch)",
+            "author": "Unclaimed CEO",
+            "thumbnail_url": "https://i.ytimg.com/vi/1W2i-aJGcb0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=1W2i-aJGcb0"
+          },
+          {
+            "video_id": "xqXetexqH30",
+            "title": "State Funds Business: Best Websites For Skip Tracing Claimant Information",
+            "author": "Surplus Funds 101",
+            "thumbnail_url": "https://i.ytimg.com/vi/xqXetexqH30/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=xqXetexqH30"
+          },
+          {
+            "video_id": "aKzRVyO_gfI",
+            "title": "The Only Skiptracing Software You Need For Surplus Funds",
+            "author": "Money Making Juggernaut",
+            "thumbnail_url": "https://i.ytimg.com/vi/aKzRVyO_gfI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=aKzRVyO_gfI"
+          },
+          {
+            "video_id": "XEcv7z100aA",
+            "title": "Skiptracing in Surplus Funds With Skipmatrix",
+            "author": "Money Making Juggernaut",
+            "thumbnail_url": "https://i.ytimg.com/vi/XEcv7z100aA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=XEcv7z100aA"
+          },
+          {
+            "video_id": "2BplqmdsUpU",
+            "title": "5 healthcare unclaimed property compliance trends you need to know",
+            "author": "Kodiak Solutions",
+            "thumbnail_url": "https://i.ytimg.com/vi/2BplqmdsUpU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=2BplqmdsUpU"
           }
         ],
         "research_reference_only": true,
@@ -8458,7 +9704,7 @@
         "asset_id": "verbatim_transcript_quotes",
         "asset": "data/transcripts/*.json -> segments[].text",
         "asset_type": "verbatim_transcript_passage",
-        "source": "Spoken content of 814 third-party videos (7719 captured tips)",
+        "source": "Spoken content of 992 third-party videos (9331 captured tips)",
         "research_reference_only": true,
         "commercial_republish_allowed": false,
         "commercial_use_allowed": false,
@@ -8474,38 +9720,38 @@
     ]
   },
   "corpus_metrics": {
-    "video_count": 814,
-    "channel_count": 531,
-    "total_words": 1323120,
-    "total_hours": 254.79,
-    "total_pro_tips": 7719,
-    "unique_statutes_and_forms": 502,
-    "unique_tools_and_portals": 2693
+    "video_count": 992,
+    "channel_count": 613,
+    "total_words": 1468301,
+    "total_hours": 283.11,
+    "total_pro_tips": 9331,
+    "unique_statutes_and_forms": 575,
+    "unique_tools_and_portals": 2916
   },
   "coverage": {
-    "videos_classified": 814,
-    "videos_with_multiple_topics": 814,
-    "tips_classified": 7719,
-    "raw_transcripts_joined": 814,
+    "videos_classified": 992,
+    "videos_with_multiple_topics": 992,
+    "tips_classified": 9331,
+    "raw_transcripts_joined": 992,
     "topic_video_counts": {
-      "business_model_and_economics": 624,
-      "probate_and_docket_sourcing": 528,
-      "unclaimed_property_and_escheat": 241,
-      "genealogy_and_heirship_proof": 675,
-      "skip_tracing_and_outreach": 403,
-      "contracts_and_compensation": 637,
-      "statutory_caps_and_licensing": 587,
-      "automation_and_small_team_ops": 697
+      "business_model_and_economics": 693,
+      "probate_and_docket_sourcing": 706,
+      "unclaimed_property_and_escheat": 419,
+      "genealogy_and_heirship_proof": 852,
+      "skip_tracing_and_outreach": 475,
+      "contracts_and_compensation": 815,
+      "statutory_caps_and_licensing": 765,
+      "automation_and_small_team_ops": 868
     },
     "topic_tip_counts": {
-      "business_model_and_economics": 1447,
-      "probate_and_docket_sourcing": 818,
-      "unclaimed_property_and_escheat": 587,
-      "genealogy_and_heirship_proof": 787,
-      "skip_tracing_and_outreach": 257,
-      "contracts_and_compensation": 822,
-      "statutory_caps_and_licensing": 496,
-      "automation_and_small_team_ops": 2505
+      "business_model_and_economics": 1502,
+      "probate_and_docket_sourcing": 865,
+      "unclaimed_property_and_escheat": 1689,
+      "genealogy_and_heirship_proof": 965,
+      "skip_tracing_and_outreach": 340,
+      "contracts_and_compensation": 868,
+      "statutory_caps_and_licensing": 572,
+      "automation_and_small_team_ops": 2530
     }
   },
   "schema_version": "1.0",
@@ -8525,6 +9771,12 @@
       "priority": "high",
       "corpus_references": [
         {
+          "video_title": "State Funds Tutorial: First Steps For Somebody Brand New To Unclaimed Funds Business.",
+          "author": "Surplus Funds 101",
+          "timestamp": "00:14:47",
+          "link": "https://www.youtube.com/watch?v=PGvJEv9Y_Go&t=887s"
+        },
+        {
           "video_title": "Surplus Funds Cold Calling Script: How to Not Sound Like a Scam",
           "author": "Alfred Taren",
           "timestamp": "00:00:56",
@@ -8541,12 +9793,6 @@
           "author": "Surplus Funds 101",
           "timestamp": "00:07:16",
           "link": "https://www.youtube.com/watch?v=6yIKsJMj6Gk&t=436s"
-        },
-        {
-          "video_title": "USDA FSA Resources for Heirs: Join FSA as we talk with the Experts (Episode 1-Full Version)",
-          "author": "FarmersGov",
-          "timestamp": "00:16:23",
-          "link": "https://www.youtube.com/watch?v=whDzDrFNADQ&t=983s"
         }
       ]
     },
@@ -8565,6 +9811,12 @@
       "priority": "high",
       "corpus_references": [
         {
+          "video_title": "State Funds Tutorial: First Steps For Somebody Brand New To Unclaimed Funds Business.",
+          "author": "Surplus Funds 101",
+          "timestamp": "00:14:47",
+          "link": "https://www.youtube.com/watch?v=PGvJEv9Y_Go&t=887s"
+        },
+        {
           "video_title": "Surplus Funds Cold Calling Script: How to Not Sound Like a Scam",
           "author": "Alfred Taren",
           "timestamp": "00:00:56",
@@ -8581,12 +9833,6 @@
           "author": "Surplus Funds 101",
           "timestamp": "00:07:16",
           "link": "https://www.youtube.com/watch?v=6yIKsJMj6Gk&t=436s"
-        },
-        {
-          "video_title": "USDA FSA Resources for Heirs: Join FSA as we talk with the Experts (Episode 1-Full Version)",
-          "author": "FarmersGov",
-          "timestamp": "00:16:23",
-          "link": "https://www.youtube.com/watch?v=whDzDrFNADQ&t=983s"
         }
       ]
     },
@@ -8605,6 +9851,12 @@
       "priority": "high",
       "corpus_references": [
         {
+          "video_title": "State Funds Tutorial: First Steps For Somebody Brand New To Unclaimed Funds Business.",
+          "author": "Surplus Funds 101",
+          "timestamp": "00:14:47",
+          "link": "https://www.youtube.com/watch?v=PGvJEv9Y_Go&t=887s"
+        },
+        {
           "video_title": "Surplus Funds Cold Calling Script: How to Not Sound Like a Scam",
           "author": "Alfred Taren",
           "timestamp": "00:00:56",
@@ -8621,12 +9873,6 @@
           "author": "Surplus Funds 101",
           "timestamp": "00:07:16",
           "link": "https://www.youtube.com/watch?v=6yIKsJMj6Gk&t=436s"
-        },
-        {
-          "video_title": "USDA FSA Resources for Heirs: Join FSA as we talk with the Experts (Episode 1-Full Version)",
-          "author": "FarmersGov",
-          "timestamp": "00:16:23",
-          "link": "https://www.youtube.com/watch?v=whDzDrFNADQ&t=983s"
         }
       ]
     },
@@ -8685,6 +9931,12 @@
       "priority": "high",
       "corpus_references": [
         {
+          "video_title": "State Funds Tutorial: First Steps For Somebody Brand New To Unclaimed Funds Business.",
+          "author": "Surplus Funds 101",
+          "timestamp": "00:14:47",
+          "link": "https://www.youtube.com/watch?v=PGvJEv9Y_Go&t=887s"
+        },
+        {
           "video_title": "Surplus Funds Cold Calling Script: How to Not Sound Like a Scam",
           "author": "Alfred Taren",
           "timestamp": "00:00:56",
@@ -8701,12 +9953,6 @@
           "author": "Surplus Funds 101",
           "timestamp": "00:07:16",
           "link": "https://www.youtube.com/watch?v=6yIKsJMj6Gk&t=436s"
-        },
-        {
-          "video_title": "USDA FSA Resources for Heirs: Join FSA as we talk with the Experts (Episode 1-Full Version)",
-          "author": "FarmersGov",
-          "timestamp": "00:16:23",
-          "link": "https://www.youtube.com/watch?v=whDzDrFNADQ&t=983s"
         }
       ]
     },

@@ -1,0 +1,470 @@
+{
+  "workbook_id": "wb-007-unclaimed-property-recovery",
+  "volume_id": "vol-007-unclaimed-property-recovery",
+  "title": "Unclaimed Property Recovery — Operator Companion Workbook",
+  "subtitle": "6 Printable Operator Worksheets for Treasury Claim Underwriting, Finder-Fee Economics, Corporate Warrant Evidence, Statutory Controls, Record-Matching Automation, and Small-Team Launch Execution",
+  "worksheets": [
+    {
+      "worksheet_id": "ws-01",
+      "number": 1,
+      "title": "Opportunity Underwriting and Counterparty Qualification",
+      "purpose": "Select recoverable property with a defensible ownership chain, a lawful service-fee path, and enough expected contribution to justify manual work. Separate treasury custody from holder records, verify the signer, and reject attractive balances that cannot support an executable claim.",
+      "chapter_ref": "Q1, Q2, Q6",
+      "instructions": [
+        "Define one state, one owner category, and one property type before purchasing records or contacting prospects. Record the official search source, retrieval date, custodian, and publication limitations so displayed balances are never mistaken for confirmed recoverable cash.",
+        "Build the ownership chain from the listed owner to the present claimant using entity filings, historical addresses, warrant records, and succession documents. Treat similar names as leads requiring evidence rather than proof that two records identify the same owner.",
+        "Verify the current statutory finder requirements before offering a fee. Check registration, contract timing, compensation limits, and required disclosures against official sources, then document which rule controls each property rather than applying one national template.",
+        "Calculate expected service revenue from collectible fees, not the face value of property. Include evidence costs, claimant responsiveness, treasury processing uncertainty, and collection risk when deciding whether a case deserves scarce specialist hours.",
+        "Assign separate owners for claimant verification and commercial qualification. Resolve material discrepancies before requesting signatures, and give every prospect the official direct-claim route so the service is chosen for its work rather than mistaken exclusivity."
+      ],
+      "fields": [
+        {
+          "name": "Target state, vertical, and property cohort",
+          "type": "textarea",
+          "prompt": "Describe the initial state, owner segment, property category, and evidence advantage. Explain why this cohort supports repeatable recovery work, and identify the specific complexity your service removes for the lawful claimant.",
+          "example": "Start with California operating corporations that have changed business addresses and show uncashed vendor checks in official Controller records. Target confirmed balances around $30,000, not consumer accounts with tiny balances. The service reconstructs historical addresses and signer authority; it does not claim privileged access to state funds."
+        },
+        {
+          "name": "Property source and custody verification",
+          "type": "textarea",
+          "prompt": "Record the official property identifier, reporting holder, displayed amount, retrieval date, and actual custodian. Distinguish an outstanding corporate warrant still held by its issuer from property already delivered to a treasury.",
+          "example": "Case CA-042 records a $30,000 vendor check reported by a regional distributor. The analyst saves the official property identifier and dated search capture, then confirms state custody through the published claim channel. A separate $8,000 issuer-held check remains outside this treasury-claim workflow until its custody and reissue process are established."
+        },
+        {
+          "name": "Owner identity and historical address bridge",
+          "type": "textarea",
+          "prompt": "List the evidence connecting the listed owner name and address to the present claimant. Record spelling differences, former names, entity identifiers, and each unresolved discrepancy without treating a matching address as sufficient identification.",
+          "example": "The property lists Cedar Ridge Components Inc. at its former warehouse. Secretary of State filings confirm the same corporation number after relocation; a historical lease and vendor statement connect the old address. A similarly named dissolved corporation has a different identifier and is excluded despite sharing two name tokens."
+        },
+        {
+          "name": "Signer authority and succession chain",
+          "type": "textarea",
+          "prompt": "Identify who may bind the claimant and which documents establish that authority. For mergers, dissolutions, estates, or assignments, map every transfer and specify which missing document would prevent a defensible submission.",
+          "example": "The current controller provides a corporate authorization naming them as the claim representative, supported by current officer records. No merger appears in the entity history. If a successor company later asserts ownership, the case pauses until merger documents establish the asset transfer and the treasury confirms acceptable claimant evidence."
+        },
+        {
+          "name": "Finder eligibility and contract timing",
+          "type": "textarea",
+          "prompt": "Document the controlling finder statute, registration status, compensation restriction, and permissible contract date. Use official statutory text and custody dates to decide whether outreach may proceed without prematurely soliciting a prohibited agreement.",
+          "example": "For a California case, the reviewer checks Code of Civil Procedure section 1582, including its restricted agreement period and 10% compensation ceiling for covered agreements. The file preserves reporting and delivery evidence and a documented timing analysis. The team does not infer eligibility merely because the property appears in public search."
+        },
+        {
+          "name": "Recoverable amount and lawful fee ceiling",
+          "type": "textarea",
+          "prompt": "Separate the apparent property amount, verified recoverable amount, applicable fee ceiling, and proposed contract price. Explain how partial payment, competing ownership, or a lower statutory limit changes expected recognized service revenue.",
+          "example": "A verified $30,000 claim supports a proposed $3,000 fee at 10%, assuming that rate and contract are permitted for this case. If only $24,000 is recovered, the percentage fee becomes $2,400. The remaining $21,600 belongs to the owner after their payment of the fee; principal never becomes operator revenue."
+        },
+        {
+          "name": "Evidence access and claimant cooperation",
+          "type": "textarea",
+          "prompt": "Identify the evidence only the claimant can supply, the authorized contact for each item, and the response deadline. Estimate document retrieval effort before signing a case that depends on unavailable records or inaccessible officers.",
+          "example": "The claimant agrees to supply an old vendor statement, current entity record, and signed authorization within ten business days. Identity documents travel through an encrypted upload link, not ordinary email. If the historical statement cannot be located, the analyst asks the treasury which alternative evidence it accepts before purchasing archival records."
+        },
+        {
+          "name": "Risk-adjusted case contribution",
+          "type": "textarea",
+          "prompt": "Estimate payment probability, collectible fee, incremental labor, document costs, and collection effort. State the decision threshold and avoid double-counting failures already incorporated into a paid-case forecast or separate cost allowance.",
+          "example": "An illustrative case has a 70% chance of producing a collectible $3,000 fee, yielding $2,100 expected revenue. Budget $450 research labor, $150 records, and $200 follow-up, leaving $1,300 expected contribution before shared overhead. This screening calculation is separate from the annual scorecard, which already counts completed, fee-producing cases."
+        },
+        {
+          "name": "Counterparty trust and direct-claim disclosure",
+          "type": "textarea",
+          "prompt": "Write the explanation of your role, fee trigger, official verification route, and owner self-service option. Identify the evidence that establishes your business identity without implying treasury employment, endorsement, or exclusive access.",
+          "example": "Our business assists with evidence preparation and claim tracking for an agreed recovery fee. You may claim directly through the California State Controller without hiring us. Verify the property through the official state website before sharing documents. We provide our business registration, named case contact, written scope, and itemized fee terms."
+        },
+        {
+          "name": "Underwriting decision and rejection rationale",
+          "type": "textarea",
+          "prompt": "Record a proceed, hold, or reject decision with specific evidence and a named reviewer. Identify the next reversible action, maximum research spend, and conditions that require reassessment before any agreement or claim submission.",
+          "example": "Proceed with CA-042 only after the timing review and authority packet are complete. Cap preliminary research at $300 and authorize no claim filing yet. Reject a separate $600 balance because a $60 potential fee cannot cover evidence work. Hold an acquisition-related case until the successor ownership chain is documented."
+        }
+      ],
+      "completion_gate": "Advance only when the property custodian, ownership chain, signer, permitted contract timing, proposed fee, and direct-claim disclosure are documented, with positive expected contribution and no unresolved identity conflict."
+    },
+    {
+      "worksheet_id": "ws-02",
+      "number": 2,
+      "title": "Unit Economics, Defect Costs, and Working-Capital Float",
+      "purpose": "Translate claim outcomes into recognized service fees and reconcile every scenario to the canonical annual scorecard. Budget failed research, rework, collections, and processing delays separately from client principal, then size launch cash for the months before recoveries produce collectible fees.",
+      "chapter_ref": "Q3, Q4",
+      "instructions": [
+        "Enter the Conservative, Base, and Scaled scorecard without modifying their revenue, margin, profit, or staffing assumptions. Derive total costs by subtraction, and label any additional case-volume or fee-rate assumptions as illustrative operating bridges.",
+        "Build the claim-to-fee bridge from paid outcomes, verified principal, and lawful contracted rates. Use separate columns for owner property, earned service fees, invoices, and cash receipts so treasury payments never inflate operator sales.",
+        "Price research failures and evidence defects explicitly through expected case costs or cohort conversion rates. Do not deduct the same unsuccessful claim twice, and do not book a planning allowance as an accounting expense without an applicable basis.",
+        "Create a monthly cash calendar that follows actual payment timing rather than annual averages. Stress treasury delays, claimant response delays, and invoice collection separately, while keeping unpaid owner principal outside the business cash balance.",
+        "Compare starting cash with setup spending, committed overhead, and claim-linked costs through the first plausible receipts. If available funding is insufficient, reduce commitments or obtain additional capital rather than counting prospective recoveries as available money."
+      ],
+      "fields": [
+        {
+          "name": "Canonical annual scenario reconciliation",
+          "type": "textarea",
+          "prompt": "Enter gross service revenue, net margin, owner net profit, total costs, and staffing for all three canonical scenarios. Show the arithmetic that proves each profit figure and prevents scenario drift.",
+          "example": "Conservative: $60,000 revenue minus $45,000 costs equals $15,000 owner net profit, or 25%, with 1 FT + 2 C. Base: $255,000 minus $159,375 equals $95,625, or 37.5%, with 1 FT + 2 C. Scaled: $450,000 minus $225,000 equals $225,000, or 50%, with 2 FT + 3 C."
+        },
+        {
+          "name": "Paid-claim volume and service-fee bridge",
+          "type": "textarea",
+          "prompt": "Choose illustrative paid-claim counts and average recovered amounts that reproduce the canonical revenue totals. State that the assumed fee must be permitted for each case and distinguish underlying recoveries from operator revenue.",
+          "example": "At an illustrative lawful 10% fee, Conservative uses 30 paid claims averaging $20,000 principal: $600,000 recovered and $60,000 fees. Base uses 85 claims averaging $30,000: $2,550,000 recovered and $255,000 fees. Scaled uses 150 such claims: $4,500,000 recovered and $450,000 fees. These volumes explain the scorecard rather than change it."
+        },
+        {
+          "name": "Base-case cost architecture",
+          "type": "textarea",
+          "prompt": "Allocate the canonical Base cost total into specific operating categories with no overlapping items. Explain which costs scale with claims, which are recurring overhead, and how founder distributions are treated in this planning model.",
+          "example": "Base costs comprise $36,000 recurring overhead, $76,500 contractor work, $30,600 verification and outreach, and $16,275 exception handling and collections. Total costs are $159,375. Contractor capacity equals 1,700 hours at $45. Founder distributions come from the $95,625 owner residual rather than appearing as an additional expense in this illustrative bridge."
+        },
+        {
+          "name": "Contribution and owner-profit unit math",
+          "type": "textarea",
+          "prompt": "Calculate average fee, claim-linked cost, contribution before overhead, overhead allocation, and owner profit per paid claim. Label rounded unit figures and reconcile final annual totals using unrounded underlying amounts.",
+          "example": "For 85 Base paid claims, average revenue is $3,000. Claim-linked costs total $123,375, or about $1,451.47 each, leaving about $1,548.53 before overhead. Annual overhead of $36,000 allocates about $423.53 per claim. Total cost is exactly $1,875 and owner profit exactly $1,125 per paid claim, producing $95,625 annually."
+        },
+        {
+          "name": "Scrub failures and defect-cost allowance",
+          "type": "textarea",
+          "prompt": "Define duplicate removal, identity defects, missing evidence, and treasury rework as separate cost drivers. Assign expected quantities and costs, then explain whether each allowance is a planning estimate or an actual booked expense.",
+          "example": "The $16,275 Base exception envelope includes 120 failed research files at $50, 85 rework events at $75, and 78 collection tasks at $50: $6,000 + $6,375 + $3,900. Events may share a case but represent distinct work. These are forecast cash costs; bookkeeping records actual services and supported obligations."
+        },
+        {
+          "name": "Fee recognition and collection timing",
+          "type": "textarea",
+          "prompt": "Specify the contractual earning event, applicable accounting policy, invoice trigger, collection terms, and treatment of disputes. Keep probability weighted pipeline estimates separate from earned fees and do not assume filing creates revenue.",
+          "example": "The illustrative agreement earns its fee after the owner receives the covered recovery and the service obligation is complete. The business applies its documented accounting policy, issues a $3,000 invoice with 15-day terms, and records collection separately. A submitted $30,000 claim remains pipeline property value, not $30,000 sales or an automatic $3,000 receivable."
+        },
+        {
+          "name": "Startup capital and monthly spending classification",
+          "type": "textarea",
+          "prompt": "Compare your launch budget with the canonical $5,000–$35,000 startup capital range and $1,500–$8,000 monthly operating expense reference. Identify the exact spending categories included in your monthly figure and disclose additional claim-linked commitments.",
+          "example": "Start with $35,000 cash and allocate $5,000 to setup. Budget $3,000 monthly recurring overhead, within the reference range, plus $1,000 monthly pilot case spending. The mature Base model carries $159,375 total annual costs, averaging $13,281.25 monthly including claim-linked work; the $3,000 overhead budget does not represent all-in spending."
+        },
+        {
+          "name": "Working-capital calendar and delay stress",
+          "type": "textarea",
+          "prompt": "Map starting cash, setup spending, monthly outflows, earliest fee receipts, and the minimum cash floor. Stress a longer payment delay using the same commitments rather than assuming all approved claims pay immediately.",
+          "example": "After $5,000 setup, $30,000 remains. At $4,000 monthly pilot outflow and no receipts, cash falls to $6,000 after six months and $2,000 after seven. A nine-month wait creates a $6,000 deficit before any safety buffer. Reduce commitments or fund the gap; the canonical first-deal window is 3–12 months."
+        },
+        {
+          "name": "Low-value claim and partial-payment sensitivity",
+          "type": "textarea",
+          "prompt": "Test how lower recovered amounts, capped fees, and unchanged evidence effort affect case economics. Set a practical screening threshold without claiming it applies universally across states, owner categories, or service delivery models.",
+          "example": "A $4,000 recovery at 10% produces $400 fees. Eight contractor hours at $45 plus $90 document costs create $450 direct costs, already a $50 loss before overhead. Decline this standalone case or propose a lawful bundled workflow with separately documented economics; do not increase the fee beyond the applicable limit."
+        },
+        {
+          "name": "Scenario variance and corrective action",
+          "type": "textarea",
+          "prompt": "Define the monthly comparison between realized paid cases, recognized fees, direct costs, collections, and the selected scenario. Specify the corrective action when timing or unit economics deteriorates without silently rewriting canonical targets.",
+          "example": "Base implies about 7.08 paid cases monthly as an annual average, not a promised monthly cadence. If a quarter produces 12 cases at $3,000, recognized fees are $36,000 versus a $63,750 straight-line reference. Investigate evidence delays and conversion before adding headcount; preserve the $255,000 annual benchmark and report the $27,750 variance."
+        }
+      ],
+      "completion_gate": "Advance only when all three canonical scenarios reconcile exactly, client principal is excluded from revenue and cash runway, defect costs are counted once, and a funded cash plan covers the selected delay stress."
+    },
+    {
+      "worksheet_id": "ws-03",
+      "number": 3,
+      "title": "Execution, Claim Ledger, and Technical QA Pre-Flight",
+      "purpose": "Convert a qualified opportunity into an auditable claim without losing ownership evidence, document versions, or payment traceability. Establish explicit state transitions, independent submission checks, and reconciled fee records so automation cannot turn a weak match into an unsupported filing.",
+      "chapter_ref": "Q7, Q8",
+      "instructions": [
+        "Create one case identifier before collecting sensitive documents, and attach every property record, authorization, evidence item, submission receipt, and invoice to it. Keep external treasury identifiers separate so multiple properties can be linked without overwriting their individual histories.",
+        "Use explicit workflow states with required evidence for each transition. A signed agreement does not prove ownership, a complete packet does not prove acceptance, and a treasury determination does not prove the owner received payment.",
+        "Prepare the packet against the current official claim instructions for the actual owner category. Check corporate authority, address bridges, signatures, and required attestations separately, preserving the version of the instructions used during the review.",
+        "Run an independent pre-submission review using original evidence rather than the analyst's summary alone. Stop on conflicting identities, unexplained amounts, altered documents, or missing authority, and document the resolution before releasing the packet.",
+        "Reconcile the treasury outcome, owner receipt, earned fee, invoice, and bank collection as distinct events. Preserve correction history and record unsuccessful claims explicitly so the operating dashboard cannot hide rejections inside an inactive queue."
+      ],
+      "fields": [
+        {
+          "name": "Case identifier and property ledger",
+          "type": "textarea",
+          "prompt": "Define the minimum ledger fields for case identity, official property identity, owner, custodian, amount, workflow state, and reviewer. Explain how linked properties remain individually traceable when one owner has several recoveries.",
+          "example": "Case CA-042 links two official property identifiers with verified amounts of $18,000 and $12,000. Each property retains its holder, custody evidence, and outcome. The owner-level view totals $30,000 without merging source rows. The ledger also records assigned analyst, last evidence review date, contract version, and next action deadline."
+        },
+        {
+          "name": "Workflow states and transition evidence",
+          "type": "textarea",
+          "prompt": "Specify the allowed state sequence and the evidence needed to advance. Include hold, rejected, withdrawn, and partially paid outcomes so the system does not force incomplete or unsuccessful files into successful status.",
+          "example": "Use sourced, matched, qualified, contracted, evidence-complete, submitted, treasury-review, owner-paid, fee-invoiced, and fee-collected. A submission receipt is required before submitted status; bank or treasury payment evidence supports owner-paid. CA-042 remains on evidence-hold when signer authority expires, even if all other documents and the agreement are already present."
+        },
+        {
+          "name": "Claim packet and authority checklist",
+          "type": "textarea",
+          "prompt": "List the exact documents required for the selected claimant category and identify their official instruction source. Separate identity, ownership, signer authority, address history, and payment-direction evidence rather than calling the packet complete after one document arrives.",
+          "example": "For CA-042, the packet contains the state claim form, current corporation record, authorization for the named representative, historical address evidence, and holder statement. The reviewer checks each against current Controller instructions and California Code of Civil Procedure section 1540. Additional documents are requested only when the actual claim requirements support them."
+        },
+        {
+          "name": "Document provenance and version integrity",
+          "type": "textarea",
+          "prompt": "Record who supplied each document, when it arrived, its source reference, version, and integrity check. Define how corrected documents supersede earlier copies without erasing the history required to explain what was submitted.",
+          "example": "The upload service records receipt time, supplier identity, document category, and a SHA-256 digest using Python hashlib. A corrected authorization becomes version two; version one is retained under restricted access and marked superseded. The packet manifest references version two explicitly. A matching digest confirms file consistency, not the truth of its contents."
+        },
+        {
+          "name": "Duplicate prevention and amount checks",
+          "type": "textarea",
+          "prompt": "Define uniqueness rules and arithmetic checks before submission. Address repeated downloads, multiple spelling variants, partial payments, and owner-level totals without assuming every repeated name is a duplicate or every changed amount is an error.",
+          "example": "Use state plus official property identifier as the source uniqueness key. Reimporting the same $18,000 record updates provenance rather than creating another asset. Two different property identifiers remain separate despite identical owner names. The packet total must equal $18,000 + $12,000 = $30,000, with any subsequent partial payment allocated to its property row."
+        },
+        {
+          "name": "Independent technical pre-flight review",
+          "type": "textarea",
+          "prompt": "Write the checks a second reviewer must perform before filing. Include authority, document readability, property identifiers, arithmetic, contract eligibility, sensitive-data handling, and destination verification, with explicit stop conditions for material defects.",
+          "example": "The reviewer opens the actual packet, matches both property identifiers to official records, confirms the $30,000 total, verifies the representative's authority, and checks the contract timing memo. They verify the official submission destination independently of an email link. One unreadable signature page returns the entire packet to correction before filing."
+        },
+        {
+          "name": "Submission receipt and follow-up schedule",
+          "type": "textarea",
+          "prompt": "Capture the official submission reference, channel, packet version, date, and next permitted status check. Use published processing guidance and specific treasury requests rather than repeatedly contacting staff or promising an unsupported payment date.",
+          "example": "CA-042 records the official receipt reference and packet manifest version three. The caseworker schedules the next check using the treasury's published guidance and records its source date. A later request for an address bridge receives a ten-business-day internal response target; no representative tells the owner that filing assures payment within that period."
+        },
+        {
+          "name": "Exceptions, corrections, and rejection handling",
+          "type": "textarea",
+          "prompt": "Define how treasury requests, competing claims, missing evidence, and rejections enter an exception queue. Record the response owner, deadline, additional cost limit, and available official review route without inventing an appeal entitlement.",
+          "example": "A treasury reviewer questions the old warehouse address. The caseworker opens an ownership-evidence exception, assigns the claimant's controller to obtain a historical lease, and caps additional retrieval spending at $150. If the claim is rejected, the file preserves the stated reason and the agency's actual review instructions before any further representation."
+        },
+        {
+          "name": "Owner payment and fee ledger reconciliation",
+          "type": "textarea",
+          "prompt": "Describe how property payments, earned fees, invoices, and bank receipts are reconciled. State who receives principal and how a partial recovery changes the fee while preserving a clear audit trail for the remaining property.",
+          "example": "The treasury pays $24,000 directly to the owner on the two properties, leaving $6,000 unresolved. Under the illustrative 10% agreement, the earned fee is $2,400. The operator invoices $2,400 and later matches that amount to its bank receipt. Neither the $24,000 owner receipt nor the unresolved $6,000 appears as operator sales."
+        },
+        {
+          "name": "Retention, access, and closure evidence",
+          "type": "textarea",
+          "prompt": "Set a documented retention schedule based on applicable duties, disputes, and contract requirements. Identify access removal, secure deletion, backup treatment, and the evidence needed to close a case without prematurely destroying relevant records.",
+          "example": "The schedule assigns separate retention periods to contracts, accounting records, and identity documents after reviewing applicable requirements. Closure requires outcome evidence, fee reconciliation, and a dispute check. Contractor access is removed immediately after assignment completion. Identity copies are deleted on schedule, with backup expiry documented; a preservation notice suspends affected deletion."
+        }
+      ],
+      "completion_gate": "Release a claim only after an independent reviewer signs the packet manifest, verifies identity and authority, reconciles amounts, and confirms the official destination. Close it only after outcome and fee records reconcile."
+    },
+    {
+      "worksheet_id": "ws-04",
+      "number": 4,
+      "title": "Statutory, Licensing, Contract, and Outreach Audit",
+      "purpose": "Translate finder statutes, contract restrictions, and communication rules into case-specific operating controls. Preserve official source evidence, disclose direct claiming, and prevent staff from using a convenient template where state registration, timing, fee, or ownership requirements demand different treatment.",
+      "chapter_ref": "Q5, Q9",
+      "instructions": [
+        "Build a jurisdiction record from current official statutes, administrative materials, and treasury instructions. Record the retrieval date and effective provisions, then distinguish enacted requirements from informal summaries, marketing claims, or an employee's recollection of another state.",
+        "Resolve registration, professional authorization, contract timing, and compensation rules before soliciting an agreement. A business entity registration alone does not establish that its staff may perform every regulated recovery activity in the target jurisdiction.",
+        "Write the agreement around the actual service, covered property, lawful compensation, earning event, and owner rights. State the direct-claim alternative clearly and prohibit staff from implying government affiliation, exclusive access, or inevitable recovery.",
+        "Review each outreach channel separately for applicable federal and state requirements. Maintain sender identity, suppression records, contact-source evidence, and permission records where required, and stop communications promptly when a recipient requests it.",
+        "Treat statutory changes and unusual ownership structures as tracked exceptions with assigned reviewers. Suspend affected new agreements when the rule is unresolved, but continue unrelated authorized work that does not depend on the disputed interpretation."
+      ],
+      "fields": [
+        {
+          "name": "Official authority and jurisdiction register",
+          "type": "textarea",
+          "prompt": "List the statutes, treasury instructions, and administrative sources controlling the selected claim. Explain why each applies and record the review date, responsible reviewer, and operational change required by any updated provision.",
+          "example": "The California register includes Code of Civil Procedure sections 1530 and 1532 for reporting and delivery context, section 1540 for claims, and section 1582 for covered recovery agreements. The reviewer retrieves current official text and Controller instructions on the review date, preserving source copies and a case-specific applicability note."
+        },
+        {
+          "name": "Finder registration and authorized personnel",
+          "type": "textarea",
+          "prompt": "Identify required registrations or professional qualifications for the business and individual performing the service. Record verification evidence, scope, expiration, and renewal responsibility rather than assuming one state's permission extends to another.",
+          "example": "Before adding Florida cases, the reviewer checks Florida Statutes section 717.1400 and current Department of Financial Services requirements for the proposed claimant-representative role. The expansion remains inactive until eligibility and required registration evidence are recorded. California corporate formation documents are not substituted for Florida role-specific authorization."
+        },
+        {
+          "name": "Waiting period and permissible agreement date",
+          "type": "textarea",
+          "prompt": "Record the dates that start and end any restricted agreement period, their supporting evidence, and the earliest permissible contract date. Distinguish report deadlines, delivery dates, and search publication dates explicitly.",
+          "example": "For a covered California agreement, section 1582 requires analysis of the period from the section 1530 report date through twelve months after delivery under section 1532. The reviewer obtains actual timing evidence before authorizing execution. A search result dated this week does not establish when delivery occurred or when contracting becomes permissible."
+        },
+        {
+          "name": "Fee limitation and expense treatment",
+          "type": "textarea",
+          "prompt": "Document the applicable compensation ceiling, calculation base, permitted expenses, and required fee disclosures. Explain how you prevent administrative charges or affiliate invoices from defeating a limit that applies to total compensation.",
+          "example": "For the California example, the agreement uses 10% of property actually recovered within the applicable section 1582 ceiling. A $30,000 recovery produces $3,000 compensation. The business adds no separate research or processing charge to bypass that ceiling. If another state's applicable limit is lower, the quote and case economics are recalculated."
+        },
+        {
+          "name": "Property description and contract scope",
+          "type": "textarea",
+          "prompt": "Draft the operational scope with specific property identifiers, services, exclusions, authority limits, and the fee trigger. Identify required statutory disclosures and ensure the claimant receives a complete copy before execution.",
+          "example": "Covered property means the two identifiers listed in Schedule A, currently totaling $30,000 in verified records. Services include evidence assembly, authorized submission assistance, and status tracking. The fee is 10% of covered amounts actually received, subject to applicable limits. The agreement does not authorize unrelated claims, asset transfers, or changes to the owner's payment destination."
+        },
+        {
+          "name": "Direct recovery option and truthful identity",
+          "type": "textarea",
+          "prompt": "Write the disclosure explaining that the owner can claim directly without your service. Include the official route, your independent business status, and prohibited staff representations about government endorsement or special access.",
+          "example": "You can submit your own claim directly to the state without hiring our company. Use the treasury's official website to verify the property and instructions. We are an independent recovery service, not a treasury office. Our fee pays for the contracted work; it does not purchase priority review or access to a restricted government list."
+        },
+        {
+          "name": "Email, calling, and suppression controls",
+          "type": "textarea",
+          "prompt": "Specify the outreach channels and applicable controls for commercial email, calls, and texts. Include accurate sender information, recipient objections, suppression propagation, and review of automation or recorded-message features before use.",
+          "example": "The initial campaign uses individual business emails with accurate sender details, a postal address, and an effective opt-out process under 15 U.S.C. section 7704. Opt-outs are honored within ten business days. Automated calls and texts remain disabled pending review of 47 U.S.C. section 227, 47 CFR section 64.1200, and applicable state rules."
+        },
+        {
+          "name": "Privacy duties and sensitive document minimization",
+          "type": "textarea",
+          "prompt": "Identify applicable privacy duties based on your activities, jurisdictions, and data handling. Specify necessary data, collection purpose, access restrictions, retention, and vendor conditions without assuming public property records permit unrestricted identity-document sharing.",
+          "example": "The intake form collects business contact information first and requests identity evidence only when required for the claim. The reviewer assesses California Civil Code section 1798.100 et seq. where applicable. Sensitive uploads use restricted storage, named access, and documented retention. Public owner listings are not combined with identity scans for marketing enrichment."
+        },
+        {
+          "name": "Warrant status and payment authority",
+          "type": "textarea",
+          "prompt": "Distinguish a treasury-held asset from an outstanding issuer-held warrant or check. Record who may reissue, cancel, or pay it and prevent the recovery agreement from being treated as authority to endorse or redirect owner funds.",
+          "example": "An $8,000 corporate check is still recorded as outstanding by its issuer and has not been confirmed as treasury-held property. Staff use the issuer's verified reissue process and check for prior payment before proceeding. They do not endorse the check, create a replacement instrument, or represent the finder agreement as a transfer of ownership."
+        },
+        {
+          "name": "Exceptions and current-source review record",
+          "type": "textarea",
+          "prompt": "Assign a reviewer and resolution deadline to statutory ambiguities, changed requirements, or unusual claimant structures. Record which activities pause, which remain authorized, and what evidence is required before the affected work can resume.",
+          "example": "A merger-related claim raises uncertainty about the proper claimant and permitted contract signer. New execution and submission pause for that case while the reviewer examines merger documents and obtains the treasury's current instructions. Unrelated qualified cases continue. The exception closes only with a written ownership analysis, corrected documents, and a dated reviewer decision."
+        }
+      ],
+      "completion_gate": "Permit an agreement or outreach campaign only after its current-source record, applicable registration, timing, fee treatment, direct-claim disclosure, channel controls, and privacy handling are documented for the actual jurisdiction."
+    },
+    {
+      "worksheet_id": "ws-05",
+      "number": 5,
+      "title": "Automation, Growth Flywheel, and Risk Fallback Tracker",
+      "purpose": "Automate record matching and claim-status tracking while keeping ownership decisions, statutory interpretation, and sensitive communications under accountable review. Measure growth through qualified, collectible cases rather than scraped names, and maintain practical fallbacks for stale records, portal changes, and customer distrust.",
+      "chapter_ref": "Q6, Q10",
+      "instructions": [
+        "Use official downloads or expressly permitted access methods, preserve provenance, and respect source restrictions. Do not treat a visible web interface as authorization for unrestricted automation or design around access controls that prevent bulk collection.",
+        "Separate ingestion, normalization, matching, human review, outreach, and case tracking into distinct stages. Every automated transition must preserve its inputs and explanation so a mistaken name match can be traced without reconstructing undocumented decisions.",
+        "Set matching thresholds using a labeled sample and the cost of false positives. A high similarity score may prioritize review, but only corroborating evidence establishes the owner and supports a claim or sensitive document request.",
+        "Measure acquisition through a cohort funnel with definitions for reviewed leads, qualified owners, signed cases, submissions, paid recoveries, and collected fees. Keep stalled cohorts visible so long processing times do not disguise weak conversion.",
+        "Maintain a manual fallback for every external dependency and stop automated activity when source formats, status meanings, permissions, or recipient preferences change. Test restoration on a small batch before resuming routine processing."
+      ],
+      "fields": [
+        {
+          "name": "Authorized ingestion and source manifest",
+          "type": "textarea",
+          "prompt": "Describe the permitted source method, source owner, retrieval schedule, expected fields, and provenance record. Define the response to missing columns, changed terms, or access restrictions before data enters the matching pipeline.",
+          "example": "The operator imports an officially provided CSV only when its use conditions permit the intended workflow. Python csv reads property identifier, owner name, city, holder, and displayed amount. A manifest records source URL, retrieval time, row count, and file digest. If the identifier column disappears, ingestion stops rather than guessing a replacement."
+        },
+        {
+          "name": "Normalization without identity destruction",
+          "type": "textarea",
+          "prompt": "Specify reversible transformations for names, addresses, entity suffixes, and amounts. Preserve original values and distinguish format cleanup from decisions about whether two records refer to the same legal owner.",
+          "example": "The pipeline uses Python unicodedata and re to normalize whitespace and comparison punctuation while retaining the original owner string. Inc. and Incorporated may share a comparison form, but corporation identifiers remain distinct. Monetary values use decimal.Decimal; a displayed amount band is stored as a band, not converted into invented exact principal."
+        },
+        {
+          "name": "Match scoring and reviewer thresholds",
+          "type": "textarea",
+          "prompt": "Define the matching features, weights, review thresholds, and blocking contradictions. State how the system handles missing evidence and ensure that a score routes work rather than independently authorizing ownership or submission.",
+          "example": "A pilot score assigns 40 points to matching entity identifiers, 25 to historical address evidence, 20 to owner-name similarity, and 15 to holder-document support. Scores of 80 or more enter priority review. Conflicting entity identifiers force an exception regardless of total score. No score automatically sends a claim or requests identity documents."
+        },
+        {
+          "name": "Precision testing and identity mismatch controls",
+          "type": "textarea",
+          "prompt": "Describe the labeled validation sample, error measurements, and review cadence. Separate false positive ownership matches from missed opportunities, and set a corrective response when source changes undermine previously observed performance.",
+          "example": "Review 100 labeled candidate pairs before release. The model proposes 40 priority matches; manual evidence confirms 38 and rejects two, giving 95% precision in that sample. Because two misidentified owners remain unacceptable for automatic action, all matches still receive review. Add the failed patterns to tests and remeasure after changing normalization."
+        },
+        {
+          "name": "Status tracking and stale-case alerts",
+          "type": "textarea",
+          "prompt": "Define status sources, permitted check intervals, evidence capture, and alert conditions. Distinguish an agency status update from proof of payment, and specify the response when a portal changes or stops returning reliable results.",
+          "example": "The tracker stores official status text, observation time, source channel, and next action. A case without a documented update for 30 days creates an internal review task, not automatic repeated agency messages. If a portal changes its status labels, automated mapping pauses and a caseworker checks affected files through the published official channel."
+        },
+        {
+          "name": "Outbound cohort and conversion economics",
+          "type": "textarea",
+          "prompt": "Construct a fully defined funnel from sourced records to paid cases and collected fees. Assign cohort dates, actual costs, and conversion denominators so large lead counts cannot hide low claim values or unprofitable acquisition.",
+          "example": "A mature illustrative cohort starts with 1,000 records, 250 reviewed matches, 125 qualified owners, 100 signed cases, 95 submissions, and 85 paid recoveries. At $3,000 fees each, it bridges to $255,000 Base revenue. The $30,600 verification and outreach budget equals $360 per paid case; it is not pure advertising spend."
+        },
+        {
+          "name": "Trust-building message and referral loop",
+          "type": "textarea",
+          "prompt": "Write a short outreach approach that reduces distrust through verifiable identity, official property checks, and direct-claim disclosure. Define a referral request that does not expose client identity documents or imply government endorsement.",
+          "example": "The first message names the business, describes the apparent property record cautiously, and links to the official state verification route. It explains that direct claiming is available without the service. After a completed case, ask whether the owner wants to introduce another business controller; share no claim details without the owner's express permission."
+        },
+        {
+          "name": "Data access and contractor permissions",
+          "type": "textarea",
+          "prompt": "Map each role to the minimum records and actions it needs. Include identity-document access, exports, case edits, deletion, and offboarding, with specific controls that prevent temporary staff from copying the full claimant dataset.",
+          "example": "The research contractor sees public property records and masked contact details. The casework contractor sees assigned evidence packets but cannot bulk export identity documents. The founder controls role changes and reviews access logs weekly. Departure disables credentials the same day, revokes shared links, and records confirmation that local working copies were removed."
+        },
+        {
+          "name": "Dependency failure and manual fallback",
+          "type": "textarea",
+          "prompt": "Identify the most likely source, messaging, storage, or status-tracking failure. Specify the stop condition, manual fallback, responsible person, restoration test, and maximum acceptable backlog before new intake must slow.",
+          "example": "If the official portal becomes unavailable, the caseworker records the outage and follows published alternative contact instructions for urgent deadlines. Staff do not bypass access controls or submit duplicate packets. New intake slows when more than 20 cases lack a verified next action. Restoration requires five manually checked status comparisons before routine tracking resumes."
+        },
+        {
+          "name": "Experiment log and production release criteria",
+          "type": "textarea",
+          "prompt": "Describe one limited experiment with a hypothesis, sample, success measure, error threshold, and rollback condition. Keep statutory requirements and ownership evidence constant while testing operational improvements such as message clarity or research prioritization.",
+          "example": "Test two truthful email openings across 40 eligible business contacts, 20 per version. Both contain the same direct-claim disclosure and opt-out mechanism. Compare qualified replies rather than opens alone. Stop the test if recipient confusion suggests government affiliation. A better reply rate does not justify weakening disclosures or expanding beyond the reviewed cohort."
+        }
+      ],
+      "completion_gate": "Activate automation only after permitted access is recorded, matching is tested against labeled evidence, sensitive actions remain reviewed, suppression works, and each external dependency has a tested manual fallback."
+    },
+    {
+      "worksheet_id": "ws-06",
+      "number": 6,
+      "title": "30-Day Launch Sprint, Pod KPIs, and Exit-Readiness Ledger",
+      "purpose": "Launch a narrow, evidence-led recovery operation without confusing thirty days of preparation with immediate collections. Assign a small pod, track case quality and cash runway, and build transferable records that demonstrate durable service-fee earnings rather than speculative property balances.",
+      "chapter_ref": "Q11, Q12",
+      "instructions": [
+        "Set thirty-day milestones around source validation, statutory review, tested records, and qualified conversations. Respect the canonical 3–12 month time to first deal, and do not make launch success depend on receiving a treasury payment during the sprint.",
+        "Assign one accountable owner to every workstream and state each contractor's capacity, rate, and permitted access. Translate staffing labels into available hours before committing to claim volume that the pod cannot review properly.",
+        "Review a compact weekly scorecard covering qualified cases, evidence completeness, identity exceptions, submission quality, collected fees, and cash runway. Use denominators and cohort dates so percentages remain meaningful when the sample is small.",
+        "Maintain decision records for spending increases, new jurisdictions, workflow changes, and hiring. Tie each decision to observed capacity or economics rather than the face value of uncollected property in the opportunity pipeline.",
+        "Prepare transfer-ready evidence from the first case: clean agreements, assignability review, reconciled ledgers, documented procedures, and controlled data access. Keep sale discussions separate from permission to disclose claimant records or transfer sensitive personal documents."
+      ],
+      "fields": [
+        {
+          "name": "Canonical candidate and scorecard anchor",
+          "type": "textarea",
+          "prompt": "Record the candidate identity, pipeline rank, score components, revenue basis, capital range, and first-deal expectation. Use this anchor to prevent launch reporting from drifting into principal-based revenue or unsupported earnings claims.",
+          "example": "Volume 007 covers Candidate #5, Unclaimed Property Recovery, ranked #07 of 29. Money-to-Manpower Score is 85/100: revenue potential 20, profit margin potential 22, team efficiency 18, startup accessibility 13, and automation potential 12. Classification: Elite Small-Team Cash Machine. Revenue means recognized service fees. Startup capital is $5,000–$35,000; first deal timing is 3–12 months."
+        },
+        {
+          "name": "Days one through seven: source and rule validation",
+          "type": "textarea",
+          "prompt": "Set first-week deliverables for target selection, official-source review, contract eligibility, record provenance, and cash planning. Assign owners and acceptance evidence so activity counts do not substitute for completed operating foundations.",
+          "example": "By day seven, the founder selects California corporate vendor-check claims, completes a current-source statutory register, and documents the $35,000 startup cash plan. The research contractor imports 50 permitted records with provenance. Acceptance requires an approved internal procedure, verified source permissions, and a cash calendar; no recovery fee is expected this week."
+        },
+        {
+          "name": "Days eight through fourteen: evidence and system pilot",
+          "type": "textarea",
+          "prompt": "Define the second-week pilot for matching, document handling, case states, and independent review. Specify the sample size, test evidence, defect response, and conditions for allowing the first eligible prospect contact.",
+          "example": "By day fourteen, review 20 candidate records manually and build five complete internal case shells using public evidence. Test upload permissions with synthetic documents and confirm that research staff cannot access restricted folders. Correct two duplicate-import defects before release. First contact requires confirmed eligibility, a reviewed message, and working suppression handling."
+        },
+        {
+          "name": "Days fifteen through twenty-one: qualified outreach",
+          "type": "textarea",
+          "prompt": "Plan a small, lawful outreach cohort with specific qualification and trust measures. Define who reviews responses, how direct claiming is explained, and which objections trigger message correction or immediate suppression.",
+          "example": "Contact 20 reviewed business prospects through the selected email workflow. Target five substantive replies and three qualification conversations as pilot learning goals, not revenue commitments. The founder handles fee questions and explains direct claiming. Any recipient who declines further contact enters suppression before another campaign can include them."
+        },
+        {
+          "name": "Days twenty-two through thirty: operating readiness",
+          "type": "textarea",
+          "prompt": "Define the final-week deliverables for qualified case progression, packet readiness, cost review, and next-month priorities. Separate controllable work completed from treasury decisions and collections outside the team's control.",
+          "example": "By day thirty, aim for two eligible signed cases and one independently reviewed packet only if ownership evidence and contract timing support them. Otherwise report the exact missing items. Publish actual pilot spending, open exceptions, and remaining cash. Zero collections during this sprint can coexist with a successful preparation phase and the 3–12 month first-deal window."
+        },
+        {
+          "name": "Pod responsibilities and capacity budget",
+          "type": "textarea",
+          "prompt": "Map the canonical staffing structure to named functions, hours, rates, and independent review coverage. Identify which tasks stay with the founder and how the Scaled pod changes capacity without weakening evidence checks.",
+          "example": "Conservative and Base use 1 FT + 2 C: a full-time founder, research contractor, and casework contractor. In Base, combined contractor hours are 1,700 annually at $45, totaling $76,500. The founder owns exceptions and reviews packets prepared by contractors. Scaled uses 2 FT + 3 C, five people total, with explicit separation between preparation and final review."
+        },
+        {
+          "name": "Weekly pod KPI definitions and thresholds",
+          "type": "textarea",
+          "prompt": "Choose a limited set of quality, throughput, cost, and cash measures with explicit numerators and denominators. Define the response to a breached threshold and keep small samples visible alongside percentages.",
+          "example": "The weekly board shows 20 reviewed records, eight qualified owners, three evidence-complete cases, and two packets passing first review out of three, or 66.7%. It also shows $0 collected fees and current cash runway. Any identity contradiction stops that case; first-review performance below 90% prompts checklist correction rather than faster filing."
+        },
+        {
+          "name": "Scale decision and downside trigger",
+          "type": "textarea",
+          "prompt": "Set evidence-based conditions for adding staff, jurisdictions, or acquisition spending. Include cash protection, unit economics, review quality, and a specific pause response when the operating case weakens.",
+          "example": "Do not hire a second full-time person merely because the pipeline contains $2,550,000 of owner property. Require documented capacity pressure, stable review quality, and funded payroll under a delayed collection stress. The Scaled benchmark remains $450,000 revenue, $225,000 costs, and $225,000 owner net profit. Freeze discretionary intake spending if forecast cash falls below committed obligations."
+        },
+        {
+          "name": "Exit-readiness evidence and transfer restrictions",
+          "type": "textarea",
+          "prompt": "List the records a potential buyer would need to verify earnings, case quality, and operating continuity. Identify assignment restrictions, registration limits, and sensitive data controls that constrain what can be shared or transferred.",
+          "example": "Maintain monthly fee reconciliations, cohort conversion reports, contract versions, procedure history, and contractor agreements. An initial buyer package uses aggregated metrics and redacted case samples. Review contract assignability and state registration requirements before promising continuity. Identity scans and claimant contact lists are not uploaded to a buyer workspace merely because a sale discussion has started."
+        },
+        {
+          "name": "Day-thirty decision and next operating cycle",
+          "type": "textarea",
+          "prompt": "Record the actual launch outcome, remaining blockers, cash position, and next thirty-day priorities. Choose continue, narrow, or pause based on evidence, and preserve the canonical annual targets as benchmarks rather than rewriting them.",
+          "example": "Decision: continue with the California corporate cohort, without adding another state. Actual spending is $9,000, leaving $26,000 from $35,000 starting cash. Two cases are signed, one packet is ready, and one awaits historical address evidence. Next cycle prioritizes that evidence and ten qualified conversations. Report $0 recognized fees to date; retain the $255,000 Base annual benchmark."
+        }
+      ],
+      "completion_gate": "Complete the launch review only when actual spending, cash runway, case evidence, pod capacity, quality metrics, and unresolved blockers are recorded, with an explicit next-cycle decision and no property principal presented as operator revenue."
+    }
+  ]
+}

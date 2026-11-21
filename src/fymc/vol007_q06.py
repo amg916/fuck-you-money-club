@@ -1,0 +1,725 @@
+from __future__ import annotations
+
+CHAPTER_6 = {
+    "id": "Q6",
+    "chapter_id": "Q6",
+    "chapter_number": 6,
+    "question_number": 6,
+    "slug": "sourcing-demand-mining-and-landing-your-first-deals",
+    "question_prompt": "Where do high-margin deals, clients, or undervalued assets hide in unclaimed property recovery, and what repeatable outbound/inbound sourcing system lands the first 3-to-10 wins (3–12 months)?",
+    "kicker": "Q6 / THE BIG MONEY PLAYBOOKS",
+    "title": "Sourcing, Demand Mining & Landing Your First Deals",
+    "subtitle": "Treasury Record Matching, Corporate Warrant Trails, Finder-Fee Restrictions, and Evidence-Led Outreach That Converts into Paid Recoveries",
+    "layout_template": "step_by_step_sop",
+    "reading_time_minutes": 14,
+    "executive_summary": (
+        "Candidate #5, Unclaimed Property Recovery, holds Rank #07 with an 85/100 "
+        "Money-to-Manpower Score. Its advantage is evidence assembly, not secret access "
+        "to state money. This chapter maps 12 sourcing plays, from corporate warrants "
+        "and merger remnants to a separately controlled medical-recovery adjacency. Build "
+        "a narrow jurisdictional lane, reconcile owner identity before outreach, explain "
+        "direct claiming, and sell document coordination rather than privileged access. "
+        "The canonical annual owner-profit cases are $15,000 Conservative, $95,625 Base, "
+        "and $225,000 Scaled; recognized revenue means service fees, never recovered "
+        "principal. A measured 3–12 month acquisition program combines public-record "
+        "signals, professional referrals, restrained outbound, and secure intake to "
+        "target the first 3-to-10 paid wins without confusing signatures with collections."
+    ),
+    "key_metrics": [
+        {
+            "label": "Conservative",
+            "value": "$60,000",
+            "context": "Annual recognized service fees; client asset value excluded",
+            "note": "25% net margin; $15,000 annual owner net profit; 1 FT + 2 C",
+        },
+        {
+            "label": "Base",
+            "value": "$255,000",
+            "context": "Annual recognized service fees; client asset value excluded",
+            "note": "37.5% net margin; $95,625 annual owner net profit; 1 FT + 2 C",
+        },
+        {
+            "label": "Scaled",
+            "value": "$450,000",
+            "context": "Annual recognized service fees; client asset value excluded",
+            "note": "50% net margin; $225,000 annual owner net profit; 2 FT + 3 C",
+        },
+    ],
+    "sections": [
+        {
+            "heading": "1. Mine Twelve Evidence-Rich Plays Instead of Buying Name Lists",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Start with one state and one ownership pattern: operating companies "
+                    "with stale addresses, dissolved entities with documented successors, "
+                    "or estates with appointed representatives. Search the official treasury "
+                    "portal first; use MissingMoney only as a participating-state discovery "
+                    "layer, then return to the custodian for instructions. Public visibility "
+                    "does not establish permission for bulk extraction. Follow portal terms, "
+                    "rate limits, and published download procedures; where permitted, request "
+                    "a dated public-record extract rather than repeatedly querying individual "
+                    "names. Capture the property identifier, holder, owner spelling, reported "
+                    "address, asset category, amount visibility, and retrieval date. Preserve "
+                    "the original record alongside normalized fields. A matching engine can "
+                    "strip punctuation and expand business suffixes, but it must never turn "
+                    "a similar name into a verified claimant. Combine treasury evidence with "
+                    "Secretary of State filings, SEC EDGAR merger exhibits, county probate "
+                    "dockets, and corporate contact pages. Rank leads by recoverable fee "
+                    "opportunity and document accessibility, not advertised property totals. "
+                    "Three apparently valuable entries can represent the same ownership "
+                    "problem or entirely different people. The best first account usually "
+                    "has an active controller, a traceable historical address, and one "
+                    "custodian with a clear corporate claim checklist. That combination "
+                    "shortens evidence collection without relying on privileged access."
+                ),
+                (
+                    "Use the twelve plays in the matrix as distinct sourcing hypotheses, "
+                    "not twelve interchangeable datasets. Corporate warrants, vendor "
+                    "overpayments, payroll balances, and utility deposits begin with different "
+                    "holders and require different proof. A city check register can reveal "
+                    "an uncashed warrant before treasury transfer, but the city may retain "
+                    "the obligation or apply a separate stale-check procedure. Determine "
+                    "custody before describing it as escheated property. Merger remnants, "
+                    "closed branches, and dissolved companies reward historical entity "
+                    "research; their failure mode is assuming that a familiar trade name "
+                    "proves succession. Estates, trust distributions, and insurance proceeds "
+                    "reward representative relationships, but a public docket does not "
+                    "authorize disclosure of sensitive beneficiary information. Securities "
+                    "and escrow balances introduce valuation and entitlement questions that "
+                    "can overwhelm a first-time operator. Prioritize cash claims with "
+                    "accessible records before pursuing those complications. For each "
+                    "ordinary recovery lane, calculate the prospective fee using a rate "
+                    "actually permitted for that property, jurisdiction, and agreement date. "
+                    "A $40,000 cash balance at an allowable 10% produces $4,000 of potential "
+                    "service revenue, not $40,000 of revenue. If the permitted rate is 5%, "
+                    "the same evidence burden must fit inside $2,000. Recalculate acquisition "
+                    "spend before contacting the owner."
+                ),
+                (
+                    "Treat hospital_lien_medical_receivables_arbitrage as the required TRACK_1 "
+                    "adjacency, not a treasury-claim shortcut. Its operating name is "
+                    "Out-of-Network Medical Claim & ERISA Appeal Contingency Recovery. Partner "
+                    "with surgical centers, air/ground ambulance operators, and specialty "
+                    "clinics to review denied or underpaid commercial claims, but segment "
+                    "each service by payer, plan, facility status, and dispute eligibility. "
+                    "Federal No Surprises Act payment disputes are not a universal route "
+                    "for every out-of-network bill; ground ambulance services generally sit "
+                    "outside its federal balance-billing framework. For eligible disputes, "
+                    "track the 30-business-day open-negotiation period and ordinarily the "
+                    "four-business-day IDR initiation window that follows, while checking "
+                    "applicable extensions and current agency instructions. Automate evidence "
+                    "assembly and deadline reminders, not unsupported eligibility judgments. "
+                    "An illustrative $100,000 incremental payer recovery at a contractually "
+                    "permitted 25% contingency generates $25,000 in service fees; a 20–35% "
+                    "range yields $20,000–$35,000 before case costs. Keep this model separate "
+                    "from treasury finder caps and the canonical volume forecast. Execute "
+                    "BAAs where required, encrypt EDI transfers, and restrict access to "
+                    "minimum-necessary claim data. If IDR timing has lapsed, evaluate a "
+                    "timely ERISA administrative appeal independently; group-health adverse "
+                    "benefit determinations generally allow at least 180 days to appeal. "
+                    "An appeal is not an automatic substitute for a payment dispute."
+                ),
+            ],
+            "table": {
+                "caption": "Twelve Mapped Sourcing Plays: Evidence, Fee Mechanics, and Failure Fallbacks",
+                "headers": [
+                    "Sourcing play and buyer",
+                    "Public signal and evidence route",
+                    "Illustrative fee opportunity and unit economics",
+                    "Failure mode and operating fallback",
+                ],
+                "rows": [
+                    [
+                        "Corporate uncashed warrants for active operating companies",
+                        "Compare municipal outstanding-check registers with treasury custody records",
+                        "A permitted 10% of $30,000 yields $3,000 fees",
+                        "If custody remains municipal, follow that issuer's replacement procedure",
+                    ],
+                    [
+                        "Vendor overpayments recovered through controller-led supplier reconciliation",
+                        "Match treasury holder names against archived vendor account relationships",
+                        "A permitted 10% of $50,000 yields $5,000 fees",
+                        "If ownership conflicts, obtain account history before any submission",
+                    ],
+                    [
+                        "Merger remnants belonging to documented corporate successor entities",
+                        "Connect EDGAR merger exhibits with historical Secretary of State filings",
+                        "A permitted 10% of $80,000 yields $8,000 fees",
+                        "If succession is disputed, pause and obtain representative documentation",
+                    ],
+                    [
+                        "Closed branch balances held under historical operating addresses",
+                        "Crosswalk archived branch directories with current parent company records",
+                        "A permitted 10% of $25,000 yields $2,500 fees",
+                        "If branch ownership changed, inspect transaction documents before attribution",
+                    ],
+                    [
+                        "Dissolved company cash claimed by legally authorized representatives",
+                        "Combine dissolution filings with custodian instructions for former entities",
+                        "A permitted 10% of $60,000 yields $6,000 fees",
+                        "If authority requires reinstatement, price that delay before engagement",
+                    ],
+                    [
+                        "Estate recoveries coordinated with appointed personal representatives",
+                        "Use probate appointment records to locate the authorized decision-maker",
+                        "A permitted 10% of $40,000 yields $4,000 fees",
+                        "If heirs disagree, work through the appointed estate representative",
+                    ],
+                    [
+                        "Trust distributions matched to documented successor trustee authority",
+                        "Connect treasury ownership records with voluntarily supplied trustee certificates",
+                        "A permitted 10% of $70,000 yields $7,000 fees",
+                        "If trust authority is incomplete, stop sensitive document collection",
+                    ],
+                    [
+                        "Utility and lease deposits from consolidated business locations",
+                        "Match old service addresses against treasury deposit property categories",
+                        "A permitted 10% of $20,000 yields $2,000 fees",
+                        "If documents cost too much, recommend direct owner claiming",
+                    ],
+                    [
+                        "Payroll balances recovered for identifiable former employee claimants",
+                        "Use official owner records and independently verified contact channels",
+                        "A permitted 10% of $8,000 yields $800 fees",
+                        "If values cannot support service, offer the official claim route",
+                    ],
+                    [
+                        "Insurance proceeds coordinated with verified beneficiary or estate authority",
+                        "Review treasury insurance categories without inferring beneficiary entitlement",
+                        "A permitted 10% of $45,000 yields $4,500 fees",
+                        "If beneficiary evidence is restricted, use custodian-directed verification",
+                    ],
+                    [
+                        "Securities and escrow balances requiring specialist ownership reconstruction",
+                        "Review custodian categories and obtain official valuation treatment instructions",
+                        "A permitted 10% of $90,000 cash yields $9,000 fees",
+                        "If assets remain securities, confirm valuation before quoting fees",
+                    ],
+                    [
+                        "hospital_lien_medical_receivables_arbitrage serves specialty providers through separate recovery engagements",
+                        "Review authorized remittance data, denial codes, and appeal deadlines",
+                        "A permitted 25% of $100,000 incremental recovery yields $25,000",
+                        "Use encrypted EDI and BAAs; assess timely ERISA alternatives",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Find the Evidence Advantage Before the Owner Conversation",
+                "body": (
+                    "Experienced recovery operators win with a better ownership file, "
+                    "a reachable representative, and a narrower promise."
+                ),
+                "items": [
+                    "Search historical legal names and prior addresses separately; preserve each property identifier so normalization never erases distinct owners.",
+                    "Ask controllers which entity retains pre-merger records before requesting documents; a records custodian often matters more than the current executive.",
+                    "Check whether a warrant remains with its issuing government before applying treasury claim instructions or quoting a finder agreement.",
+                    "For medical partners, map remittance dates and appeal deadlines before estimating recoveries; expired rights are not restored by better automation.",
+                ],
+            },
+        },
+        {
+            "heading": "2. Qualify the Claim, Representative, and Permitted Fee Before Outreach",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Build a qualification scorecard that separates ranking from mandatory "
+                    "eligibility. Award up to 30 points for ownership evidence, 20 for "
+                    "document accessibility, 20 for fee contribution, 15 for representative "
+                    "reachability, and 15 for timing clarity. An exact entity name plus "
+                    "a historical address can justify research, but the custodian still "
+                    "determines acceptable ownership proof. Require 75 points before "
+                    "personalized outbound and 85 before spending on complex records; "
+                    "these are internal starting thresholds, not measured industry "
+                    "benchmarks. Independently stop any case with disputed authority, an "
+                    "ineligible agreement date, a prohibited fee, or an unresolved identity "
+                    "collision. A high score cannot override those conditions. Create a "
+                    "state rules sheet recording finder registration, licensing, permissible "
+                    "contract timing, fee basis, required wording, cancellation provisions "
+                    "where applicable, and direct-claim disclosures. California Code of "
+                    "Civil Procedure section 1582, for example, makes certain agreements "
+                    "during the reporting-to-post-delivery interval invalid and limits "
+                    "finder compensation. Read the actual statutory sequence rather than "
+                    "assuming that an old-looking listing is immediately contractable. "
+                    "Record the source URL, review date, and reviewer beside each rule. "
+                    "If the rule depends on delivery timing that the public record omits, "
+                    "ask the custodian before soliciting a paid engagement."
+                ),
+                (
+                    "Translate the score into a spending ceiling with explicit uncertainty. "
+                    "Suppose a documented $50,000 cash claim permits a 10% fee, yielding "
+                    "$5,000 if collected. Assume, for illustration, a 60% probability of "
+                    "collection after signing, $650 of expected processing labor, $150 of "
+                    "expected document costs, and $300 of allocated acquisition work. "
+                    "Expected contribution is $3,000 minus $1,100, or $1,900, before shared "
+                    "overhead and tax treatment. These costs must represent probability-weighted "
+                    "spend across successful and failed cases; using only successful-case "
+                    "costs overstates the result. A $4,000 claim under identical assumptions "
+                    "produces $240 of expected fees and loses $860. Either redesign that "
+                    "workflow around materially lower costs or send the owner to direct "
+                    "claiming. Do not conceal several small claims inside a large headline "
+                    "balance. Track each property separately and aggregate only where "
+                    "ownership, contract coverage, and custodian procedures allow it. For "
+                    "medical work, subtract IDR administrative and entity fees, specialist "
+                    "review, and unrecovered case costs under the engagement's allocation "
+                    "terms. A promising payer balance can still be uneconomic after "
+                    "eligibility screening. Apply a maximum research budget per lead and "
+                    "require a specific missing fact before extending it."
+                ),
+                (
+                    "Design intake so that trust improves while sensitive-data exposure "
+                    "falls. Keep discovery records in a permissioned CRM such as HubSpot "
+                    "or Airtable, but store identity documents in a separately controlled "
+                    "repository with access logs and retention settings. Those product "
+                    "names do not establish suitability for health information; medical "
+                    "work requires the appropriate service configuration, contractual "
+                    "protections, and BAAs where applicable. Avoid collecting Social "
+                    "Security numbers during prospecting. Send a secure upload request "
+                    "only after the representative understands the claim, the fee, and "
+                    "the purpose of each document. Confirm corporate authority through "
+                    "custodian requirements, not merely a business email domain. For "
+                    "estates, distinguish the person discussing the claim from the person "
+                    "authorized to sign. Preserve name changes, address history, and "
+                    "supporting records as an evidence chain rather than silently editing "
+                    "the original identity. Default to payment from the custodian directly "
+                    "to the owner, followed by a service invoice under the agreement. "
+                    "Do not redirect recoveries into the operator's account simply to "
+                    "improve collection speed. Document fee collection rights, permitted "
+                    "payment mechanics, and dispute handling in advance. If a claimant "
+                    "will not use secure intake, offer custodian-direct document submission "
+                    "instead of accepting identity images through casual messaging."
+                ),
+            ],
+            "table": {
+                "caption": "Qualification Scorecard and Non-Negotiable Stop Conditions",
+                "headers": [
+                    "Qualification dimension and weighting",
+                    "Evidence sufficient to advance research",
+                    "Operator decision and next action",
+                    "Stop condition and practical fallback",
+                ],
+                "rows": [
+                    [
+                        "Ownership evidence receives thirty possible internal ranking points",
+                        "Legal name, historical address, and holder relationship independently align",
+                        "Preserve source records and request the custodian's ownership checklist",
+                        "Conflicting identities require resolution before contacting a presumed owner",
+                    ],
+                    [
+                        "Document accessibility receives twenty possible internal ranking points",
+                        "Representative identifies an accessible archive containing required supporting documents",
+                        "Estimate retrieval hours and assign one named document coordinator",
+                        "Missing archives trigger a capped research effort or direct claiming",
+                    ],
+                    [
+                        "Expected fee contribution receives twenty possible internal ranking points",
+                        "Permitted fee exceeds probability-weighted processing and acquisition costs",
+                        "Calculate contribution using failure costs as well as successes",
+                        "Negative contribution requires workflow redesign rather than aggressive selling",
+                    ],
+                    [
+                        "Representative reachability receives fifteen possible internal ranking points",
+                        "An independently verified channel reaches the authorized decision-maker",
+                        "Confirm signing authority before sharing detailed claim-specific evidence",
+                        "Unverified intermediaries receive general process information without identity documents",
+                    ],
+                    [
+                        "Timing clarity receives fifteen possible internal ranking points",
+                        "Custody dates and applicable agreement restrictions have documented support",
+                        "Schedule outreach only within the legally permissible engagement window",
+                        "Unresolved timing pauses paid solicitation until the custodian clarifies",
+                    ],
+                    [
+                        "Mandatory eligibility sits outside the hundred-point ranking system",
+                        "Registration, fee structure, authority, and privacy requirements are satisfied",
+                        "Record source-backed checks before issuing a recovery services agreement",
+                        "Any failed mandatory condition overrides an otherwise attractive score",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Four Checks Before a Paid Mandate",
+                "body": (
+                    "Advance only when the file supports the claim, the agreement, "
+                    "the economics, and the document-handling method."
+                ),
+                "items": [
+                    "Verify owner identity and signing authority against independent records and the custodian's actual evidence requirements.",
+                    "Verify finder registration, agreement timing, fee limits, required terms, and the owner's disclosed direct-claim option for the specific jurisdiction.",
+                    "Verify positive expected contribution using permitted fees, probability-weighted labor, acquisition costs, and a capped exception budget.",
+                    "Verify secure intake, restricted access, retention rules, and required medical BAAs before receiving sensitive documents or EDI feeds.",
+                ],
+            },
+        },
+        {
+            "heading": "3. Convert Evidence into Conversations with a Restrained Multi-Channel System",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Run outbound as a verification offer, not a windfall announcement. "
+                    "On day one, send a short business email or sealed letter identifying "
+                    "the operator, the official custodian, the historical entity or address "
+                    "match, and the owner's ability to claim directly without hiring a "
+                    "service. Avoid displaying full property details on postcards or "
+                    "voicemail. State the service plainly: ownership research, document "
+                    "coordination, submission support, and status tracking where permitted. "
+                    "On day four, place one manual call to an independently sourced "
+                    "business number; ask who handles legacy receivables rather than "
+                    "requesting identity documents. On day ten, send an evidence-led "
+                    "follow-up with an official portal link and a redacted example of "
+                    "the document checklist. On day twenty-one, close the sequence with "
+                    "a clear opt-out and pause further prospecting unless the recipient "
+                    "reengages. Honor rejection immediately across every channel. Apply "
+                    "CAN-SPAM requirements to commercial email, including accurate headers, "
+                    "a postal address, and a functioning opt-out. Assess TCPA and applicable "
+                    "state restrictions before calling or texting; do not assume a "
+                    "public number authorizes automated outreach. Treat this cadence as "
+                    "a testable operating hypothesis, not permission to contact every "
+                    "listed owner repeatedly. Track replies by source and representative role."
+                ),
+                (
+                    "Build inbound around questions that reveal document friction: "
+                    "'claiming property after a merger,' 'old company address on a "
+                    "treasury record,' and 'estate claim representative documents.' Publish "
+                    "jurisdiction-specific checklists that link to the official agency "
+                    "and distinguish free owner claiming from paid coordination. Avoid "
+                    "pages that imitate treasury branding or imply government affiliation. "
+                    "A useful page names the ownership problem, lists the records usually "
+                    "requested, explains what varies by custodian, and offers a short "
+                    "eligibility conversation without requesting sensitive identifiers. "
+                    "Use Search Console to identify relevant queries and a simple CRM "
+                    "source field to connect inquiries with signed and collected cases. "
+                    "Public search demand is a sourcing signal, not evidence that any "
+                    "particular visitor owns property. Develop referral relationships "
+                    "with bookkeepers, corporate secretaries, probate practitioners, and "
+                    "business wind-down specialists who encounter missing-record problems. "
+                    "Give each partner a one-page referral checklist and a secure "
+                    "introduction process. Disclose and verify any referral compensation "
+                    "before offering it, particularly where professional conduct rules "
+                    "or finder-fee restrictions apply. Start with unpaid reciprocal "
+                    "education rather than assuming a referral commission is permissible. "
+                    "One controller introduction covering five related entities can "
+                    "produce better-qualified work than hundreds of anonymous impressions."
+                ),
+                (
+                    "Handle objections by reducing information asymmetry rather than "
+                    "increasing pressure. When an owner asks whether this is a scam, "
+                    "provide the official portal, business identity, written scope, and "
+                    "an independently verifiable contact route; never ask them to trust "
+                    "a screenshot alone. When they ask why they should pay, explain "
+                    "the specific historical records and coordination tasks involved, "
+                    "then acknowledge that uncomplicated claims may be better handled "
+                    "directly. When they say the money is theirs, agree: the engagement "
+                    "purchases administrative work, not ownership of their asset. When "
+                    "a controller already has a recovery vendor, ask whether an "
+                    "uncovered entity or jurisdiction exists without requesting another "
+                    "provider's confidential files. Quote fees only after checking the "
+                    "property and contract rules. Avoid artificial deadlines, guaranteed "
+                    "payout dates, or claims that the owner will lose money merely "
+                    "by declining. End the conversation with one concrete next step: "
+                    "confirm the representative, review a redacted checklist, or receive "
+                    "the direct-claim link. Record objection categories so the weekly "
+                    "review can distinguish distrust, weak economics, unavailable "
+                    "documents, and timing restrictions. Each category demands a "
+                    "different correction; rewriting subject lines cannot fix an "
+                    "ineligible agreement or an inaccessible ownership archive."
+                ),
+            ],
+            "table": {
+                "caption": "Outreach Cadence and Objection Handling Without Treasury Impersonation",
+                "headers": [
+                    "Touchpoint or recurring owner objection",
+                    "Specific message and evidence to supply",
+                    "Conversion action with measurable operator outcome",
+                    "Boundary that protects trust and economics",
+                ],
+                "rows": [
+                    [
+                        "Day one introduces a verified historical ownership signal",
+                        "Identify the custodian and explain direct claiming without hiring",
+                        "Ask which authorized representative handles legacy corporate receivables",
+                        "Keep sensitive identifiers outside email subjects and envelope exteriors",
+                    ],
+                    [
+                        "Day four checks routing through one manual business call",
+                        "Describe records coordination without promising a confirmed payout amount",
+                        "Log the correct representative and their preferred contact channel",
+                        "Stop immediately when the recipient declines further recovery outreach",
+                    ],
+                    [
+                        "Day ten supplies a redacted ownership document checklist",
+                        "Link the official portal and describe the specific evidence gap",
+                        "Offer a short discussion of document access and permitted fees",
+                        "Never require identity uploads merely to explain the service",
+                    ],
+                    [
+                        "Day twenty-one closes an unanswered prospecting sequence respectfully",
+                        "Explain that outreach will pause unless the owner reengages",
+                        "Record closure and suppress further messages across connected channels",
+                        "Do not restart sequences through another contractor or domain",
+                    ],
+                    [
+                        "The owner challenges legitimacy or questions paying for recovery",
+                        "Provide independent verification and distinguish free claiming from coordination",
+                        "Offer either a scoped engagement or official direct-claim instructions",
+                        "Do not manufacture urgency or imply exclusive access to property",
+                    ],
+                    [
+                        "The controller already uses another recovery service provider",
+                        "Ask about uncovered entities without seeking confidential competitor documents",
+                        "Proceed only with a clearly separable and authorized service scope",
+                        "Avoid duplicate mandates and conflicting claims against identical property",
+                    ],
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Create an evidence-backed weekly cohort",
+                    "action": "Research fifty raw records within one jurisdiction and ownership pattern.",
+                    "detail": "Deduplicate property identifiers, preserve source dates, and score ownership, documents, contribution, reachability, and timing.",
+                },
+                {
+                    "step": 2,
+                    "title": "Release only eligible prospects",
+                    "action": "Review every selected record against the jurisdiction rules sheet.",
+                    "detail": "Confirm permitted solicitation and agreement timing; prepare a direct-claim link and a specific evidence-based reason to contact the owner.",
+                },
+                {
+                    "step": 3,
+                    "title": "Run the four-touch acquisition sequence",
+                    "action": "Use the day-one, day-four, day-ten, and day-twenty-one cadence.",
+                    "detail": "Record replies and objections, honor opt-outs across channels, and move interested representatives into secure qualification rather than open-ended follow-up.",
+                },
+                {
+                    "step": 4,
+                    "title": "Reconcile acquisition with collected outcomes",
+                    "action": "Review cohort progression and actual case costs every week.",
+                    "detail": "Separate contacted owners, signed mandates, complete packets, accepted claims, owner payments, fee collections, and recognized service revenue.",
+                },
+            ],
+        },
+        {
+            "heading": "4. Engineer the First Three-to-Ten Wins and Reconcile the Annual Cases",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "Define a win as an owner-paid recovery with the operator's "
+                    "contractual fee collected; track signed mandates separately. For "
+                    "an initial planning cohort, start with 500 raw records, deduplicate "
+                    "and qualify 200, reach 80 verified decision-makers, hold 24 "
+                    "substantive conversations, sign 12 mandates, complete nine claim "
+                    "packets, and target six paid wins within the 3–12 month planning "
+                    "window. These are illustrative test assumptions, not observed "
+                    "conversion benchmarks or agency processing commitments. They imply "
+                    "40% raw-to-qualified, 40% qualified-to-reached, 30% reached-to-conversation, "
+                    "50% conversation-to-mandate, 75% mandate-to-complete, and approximately "
+                    "67% complete-to-paid conversion. Overall raw-to-paid conversion is "
+                    "1.2%. At that assumed yield, three wins require approximately "
+                    "250 raw records and ten require approximately 834. Do not "
+                    "extrapolate until a matured cohort supports the rates. A recent "
+                    "submission awaiting review is different from a rejected claim; "
+                    "report aged cohorts and unresolved cases explicitly. Separate "
+                    "state, property category, referral source, and representative type "
+                    "so one unusually easy corporate cluster does not inflate every "
+                    "channel forecast. If conversations are strong but packet completion "
+                    "is weak, improve evidence intake before adding leads. If packets "
+                    "are complete but payments lag, investigate custodian requests "
+                    "and realistic cash timing rather than intensifying outbound."
+                ),
+                (
+                    "Reconcile the annual economics to recognized service fees, never "
+                    "to the owner's recovered principal. One illustrative Conservative "
+                    "bridge is 30 completed engagements averaging $2,000 in recognized "
+                    "fees: $60,000 revenue, $45,000 operating costs, and $15,000 owner "
+                    "net profit at 25%, staffed by 1 FT + 2 C. The Base bridge "
+                    "is 51 engagements averaging $5,000: $255,000 revenue, $159,375 "
+                    "costs, and $95,625 profit at 37.5%, also 1 FT + 2 C. "
+                    "Scaled is 75 engagements averaging $6,000: $450,000 revenue, "
+                    "$225,000 costs, and $225,000 profit at 50%, staffed by "
+                    "2 FT + 3 C. These engagement counts explain the fixed "
+                    "scorecard; they are not additional performance promises. At "
+                    "a uniformly allowable 10% fee, the implied recovered principal "
+                    "would be $600,000, $2,550,000, and $4,500,000 respectively. "
+                    "Different lawful rates change principal requirements, not the "
+                    "canonical fee totals. Keep the medical adjacency outside this "
+                    "bridge unless a separately reconciled operating plan replaces "
+                    "the illustrative engagement mix. The first six wins at "
+                    "$2,000 each produce $12,000 of fees, not the Conservative "
+                    "annual target. Maintain separate dates for owner payment, "
+                    "operator collection, and accounting recognition under the "
+                    "adopted revenue policy."
+                ),
+                (
+                    "Sequence execution around working capital and case maturity. "
+                    "In month one, establish the jurisdiction rules sheet, secure "
+                    "intake, a fifty-record research batch, and two professional "
+                    "referral conversations. During months two and three, run "
+                    "weekly batches, test the outreach sequence, and submit only "
+                    "complete authorized files. During months four through twelve, "
+                    "service custodian requests, invoice earned fees, and expand "
+                    "only the source cohorts with demonstrated contribution. The "
+                    "canonical startup capital range is $5,000–$35,000; its "
+                    "$1,500–$8,000 monthly opex range is a planning envelope, "
+                    "not a ceiling on all annual case-related costs. The Base "
+                    "and Scaled total cost budgets exceed that range when "
+                    "annualized, so explicitly bridge fixed overhead, contractor "
+                    "processing, acquisition work, and other variable costs rather "
+                    "than hiding the difference. A founder can handle owner "
+                    "relationships while contractors research records and assemble "
+                    "packets, with access limited by task. Add the second "
+                    "full-time role only when collected contribution and documented "
+                    "backlog support it. Automate record matching suggestions and "
+                    "claim-status reminders first; require human review for identity "
+                    "collisions, authority changes, and fee exceptions. Close each "
+                    "month by reconciling the CRM, custodian correspondence, invoices, "
+                    "and bank receipts. Expand the machine only when those "
+                    "four records tell the same story."
+                ),
+            ],
+            "table": {
+                "caption": "Illustrative Acquisition Cohort and Canonical Annual Fee-Revenue Bridges",
+                "headers": [
+                    "Planning cohort or canonical scenario",
+                    "Volume and conversion or revenue bridge",
+                    "Economic interpretation and explicit cost treatment",
+                    "Review trigger and corrective operating action",
+                ],
+                "rows": [
+                    [
+                        "Initial discovery cohort tests one narrow ownership pattern",
+                        "Five hundred raw records produce two hundred qualified prospects",
+                        "Forty percent qualification is a hypothesis requiring cohort validation",
+                        "Low qualification calls for better signals before more outreach",
+                    ],
+                    [
+                        "Conversation cohort measures representative access and proposition relevance",
+                        "Eighty reached representatives produce twenty-four conversations and twelve mandates",
+                        "Thirty percent conversation yield precedes fifty percent mandate conversion",
+                        "Weak conversations require better routing or clearer evidence presentation",
+                    ],
+                    [
+                        "Fulfillment cohort distinguishes signed work from paid wins",
+                        "Twelve mandates produce nine complete packets and six paid recoveries",
+                        "Six paid wins represent 1.2% of original raw records",
+                        "Age unresolved cases separately before diagnosing actual collection losses",
+                    ],
+                    [
+                        "Conservative annual case uses one employee and two contractors",
+                        "Thirty engagements averaging $2,000 yield $60,000 recognized service revenue",
+                        "$45,000 costs leave $15,000 owner profit at 25% margin",
+                        "Check fee collections and labor costs before increasing acquisition",
+                    ],
+                    [
+                        "Base annual case uses one employee and two contractors",
+                        "Fifty-one engagements averaging $5,000 yield $255,000 recognized service revenue",
+                        "$159,375 costs leave $95,625 owner profit at 37.5% margin",
+                        "Bridge variable processing costs beyond the startup overhead envelope",
+                    ],
+                    [
+                        "Scaled annual case uses two employees and three contractors",
+                        "Seventy-five engagements averaging $6,000 yield $450,000 recognized service revenue",
+                        "$225,000 costs leave $225,000 owner profit at 50% margin",
+                        "Hire against collected contribution and documented sustainable processing capacity",
+                    ],
+                ],
+            },
+        },
+    ],
+    "pull_quote": "The best recovery lead is not the largest balance; it is the clearest ownership file with a lawful fee and a reachable decision-maker.",
+    "diagram_id": "diag-02",
+    "action_checklist": [
+        "Choose one jurisdiction and ownership pattern; document custody procedures, finder registration, agreement timing, fee rules, and direct-claim disclosures before outreach.",
+        "Build a fifty-record pilot using official treasury records and independent entity evidence; preserve identifiers, original spellings, retrieval dates, and ownership conflicts.",
+        "Score every prospect across ownership, documents, contribution, reachability, and timing; stop ineligible cases regardless of their aggregate score.",
+        "Launch the four-touch outreach sequence with official verification links, restrained claims, channel-wide opt-out handling, and secure intake only after qualification.",
+        "Track the first 500-record cohort through qualified prospects, reached representatives, conversations, mandates, complete packets, paid recoveries, and collected fees.",
+        "Reconcile the three canonical annual scenarios to service revenue and actual costs; isolate medical recovery economics, sensitive data, eligibility rules, and dispute deadlines.",
+    ],
+    "statutory_citations": [
+        {
+            "title": "California Code of Civil Procedure § 1582 — Agreements to Recover Unclaimed Property",
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=1582.&lawCode=CCP",
+            "relevance": (
+                "Establishes restrictions on finder agreement timing, compensation, "
+                "and required agreement features; check the reporting and delivery "
+                "sequence before soliciting a paid recovery engagement."
+            ),
+        },
+        {
+            "title": "Texas Property Code § 74.507 — Fee for Recovery",
+            "url": "https://statutes.capitol.texas.gov/Docs/PR/htm/PR.74.htm#74.507",
+            "relevance": (
+                "Provides state-specific restrictions on recovery compensation and "
+                "agreements; use the current provision rather than importing another "
+                "state's fee model."
+            ),
+        },
+        {
+            "title": "15 U.S.C. § 7704 — Requirements for Commercial Electronic Mail",
+            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
+            "relevance": (
+                "Governs commercial email practices, including header accuracy, "
+                "required sender information, and opt-out mechanisms used in "
+                "recovery-service outreach."
+            ),
+        },
+        {
+            "title": "47 U.S.C. § 227 — Restrictions on Telephone Equipment and Solicitation",
+            "url": "https://www.law.cornell.edu/uscode/text/47/227",
+            "relevance": (
+                "Requires channel-specific assessment of telephone and messaging "
+                "practices; a public ownership record does not itself authorize "
+                "automated calls or texts."
+            ),
+        },
+        {
+            "title": "42 U.S.C. § 300gg-111 — Surprise Medical Billing and Payment Disputes",
+            "url": "https://www.law.cornell.edu/uscode/text/42/300gg-111",
+            "relevance": (
+                "Supplies the statutory framework for covered surprise-billing "
+                "protections and federal payment-dispute procedures; eligibility "
+                "must be established before treating a provider claim as an IDR case."
+            ),
+        },
+        {
+            "title": "45 CFR § 149.510 — Federal Independent Dispute Resolution Process",
+            "url": "https://www.ecfr.gov/current/title-45/section-149.510",
+            "relevance": (
+                "Details open negotiation and federal IDR procedures for applicable "
+                "out-of-network disputes; operators must track deadlines and check "
+                "current agency implementation instructions."
+            ),
+        },
+        {
+            "title": "29 CFR § 2560.503-1 — Employee Benefit Plan Claims Procedures",
+            "url": "https://www.ecfr.gov/current/title-29/section-2560.503-1",
+            "relevance": (
+                "Sets claims and review requirements, including the generally "
+                "applicable minimum 180-day appeal opportunity for group-health "
+                "adverse benefit determinations; verify representative authority "
+                "and the particular plan's procedure."
+            ),
+        },
+        {
+            "title": "45 CFR §§ 164.502(e) and 164.504(e) — Business Associate Requirements",
+            "url": "https://www.ecfr.gov/current/title-45/section-164.504",
+            "relevance": (
+                "Defines required business associate contractual protections for "
+                "applicable protected health information handling; execute the "
+                "appropriate agreements before medical claim data ingestion."
+            ),
+        },
+        {
+            "title": "45 CFR § 164.312 — Technical Safeguards for Electronic Protected Health Information",
+            "url": "https://www.ecfr.gov/current/title-45/section-164.312",
+            "relevance": (
+                "Addresses access controls, audit controls, integrity, authentication, "
+                "and transmission security; implement encrypted EDI and controlled "
+                "document access as part of the medical recovery security design."
+            ),
+        },
+    ],
+}

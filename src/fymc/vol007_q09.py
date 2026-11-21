@@ -1,0 +1,791 @@
+from __future__ import annotations
+
+CHAPTER_9 = {
+    "id": "Q9",
+    "chapter_id": "Q9",
+    "chapter_number": 9,
+    "question_number": 9,
+    "slug": "contracts-statutory-guardrails-licensing-outreach-scripts",
+    "question_prompt": "Which federal/state statutes, licensing boundaries, contract clauses, and compliant outreach scripts govern unclaimed property recovery?",
+    "kicker": "Q9 / THE BIG MONEY PLAYBOOKS",
+    "title": "Contracts, Statutory Guardrails, Licensing & Outreach Scripts",
+    "subtitle": "State-Treasury Finder Rules, Owner-First Fee Agreements, TCPA Outreach Controls, and Bankruptcy Rule 3001(e) Claim Transfers",
+    "layout_template": "legal_compliance_notes",
+    "reading_time_minutes": 14,
+    "executive_summary": (
+        "Candidate #5, Unclaimed Property Recovery, ranks #07 with an 85/100 "
+        "Money-to-Manpower Score. This chapter supplies the contract, licensing, "
+        "privacy, and outreach controls supporting the volume's 12 mapped plays. "
+        "Separate treasury recovery services from bankruptcy claim purchases: "
+        "different assets require different authority, documents, and revenue treatment. "
+        "Recognized service fees produce annual owner profits of $15,000 Conservative, "
+        "$95,625 Base, and $225,000 Scaled; client property never becomes operator revenue. "
+        "Build state-specific fee and timing rules, disclose the free direct-claim route, "
+        "and verify claimant authority before collecting sensitive evidence. Use restrained "
+        "outreach scripts, narrow authorizations, and documented settlement triggers. For "
+        "trade-claim rollups, underwrite objections and actual plan treatment rather than "
+        "assuming that assignment creates convenience-class eligibility."
+    ),
+    "key_metrics": [
+        {
+            "label": "Conservative",
+            "value": "$60,000",
+            "context": "Annual recognized service fees; client recoveries excluded",
+            "note": "25% net margin; $15,000 annual owner net profit; 1 FT + 2 C",
+        },
+        {
+            "label": "Base",
+            "value": "$255,000",
+            "context": "Annual recognized service fees; client recoveries excluded",
+            "note": "37.5% net margin; $95,625 annual owner net profit; 1 FT + 2 C",
+        },
+        {
+            "label": "Scaled",
+            "value": "$450,000",
+            "context": "Annual recognized service fees; client recoveries excluded",
+            "note": "50% net margin; $225,000 annual owner net profit; 2 FT + 3 C",
+        },
+    ],
+    "sections": [
+        {
+            "heading": "1. Classify the asset before choosing the state contract",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Begin every file with asset classification, not a nationwide finder "
+                    "agreement. Record the property identifier, reporting holder, custodial "
+                    "state, apparent owner, owner address history, asset type, and actual "
+                    "reporting or delivery dates available from the custodian. A corporate "
+                    "uncashed warrant still held by an issuing agency may follow that "
+                    "agency's reissuance procedure rather than the state treasury's finder "
+                    "statute. An estate claim requires authority from an executor, administrator, "
+                    "or qualifying successor; a dissolved company's claim requires a supported "
+                    "chain of corporate authority. California Code of Civil Procedure section "
+                    "1582 addresses recovery agreements, including a restricted contracting "
+                    "interval and a ten-percent compensation ceiling. New York Abandoned "
+                    "Property Law section 1416 imposes its own agreement requirements and "
+                    "fifteen-percent ceiling. Neither number is a national default. Determine "
+                    "the governing provision, its current text, the relevant property category, "
+                    "and the event that starts each waiting period before presenting terms. "
+                    "If a required date cannot be established, move the record into a "
+                    "research queue and do not seek a signature. A promising balance cannot "
+                    "repair an agreement executed during a prohibited interval. Store the "
+                    "source document and reviewer decision alongside the eligibility calculation "
+                    "so another operator can reproduce the conclusion."
+                ),
+                (
+                    "Build a versioned jurisdiction register with separate fields for finder "
+                    "registration, occupational licensing, bonds, required disclosures, permitted "
+                    "compensation, expense treatment, cancellation rights, and authorization "
+                    "format. Florida Statutes section 717.135 supplies recovery-agreement "
+                    "requirements, while section 717.1400 addresses registration of specified "
+                    "professional categories participating in claims representation. Read those "
+                    "provisions together with the Department of Financial Services' current "
+                    "instructions; a business filing alone does not establish eligibility "
+                    "to represent claimants. Investigative work can introduce another boundary: "
+                    "California Business and Professions Code section 7539 defines private "
+                    "investigation activities, subject to statutory exceptions. Determine "
+                    "whether the actual locating and investigative services require a licensed "
+                    "provider before selling them. Ordinary document collection also differs "
+                    "from representing an estate in a contested proceeding or advising a "
+                    "creditor about litigation strategy. Route disputed heirship, adverse "
+                    "ownership claims, and contested court appearances to appropriately "
+                    "authorized counsel. Use a separate engagement and identify who pays "
+                    "for that work. Review the register before entering a new state, "
+                    "changing a contract, or expanding a service. Archive the effective "
+                    "date and official source rather than relying on an aggregator's "
+                    "summary. Disable affected templates when a rule changes; training "
+                    "alone will not prevent staff from reusing obsolete documents."
+                ),
+                (
+                    "Identity evidence should prove entitlement without becoming a reusable "
+                    "identity dossier. Collect the claimant's relationship to the named owner "
+                    "first, then request only the documents required for that relationship "
+                    "and custodian. An old address match can support research but cannot "
+                    "establish current signing authority. A corporate file should connect "
+                    "the reported name to the present entity through incorporation records, "
+                    "merger documents, assumed-name filings, and an authorized signer. Use "
+                    "a restricted Microsoft SharePoint library or equivalent controlled "
+                    "repository for sensitive records, with multifactor authentication, "
+                    "role-based access, and an access log. A CRM should hold document "
+                    "status and links rather than full identity scans. California Civil "
+                    "Code section 1798.81.5 establishes reasonable-security duties for covered "
+                    "personal information; section 1798.82 addresses breach notification "
+                    "when its conditions apply. Federal Trade Commission Act section 5 "
+                    "also matters when privacy promises or security representations are "
+                    "deceptive or unfair. Other privacy regimes depend on business thresholds, "
+                    "data categories, and location, so assess applicability rather than "
+                    "claiming universal coverage. Establish retention periods by document "
+                    "class, required records, disputes, and litigation holds. Give contractors "
+                    "only their assigned files, prohibit local downloads where practical, "
+                    "and revoke access when assignments end. Preserve decision evidence "
+                    "without keeping unnecessary identity material indefinitely."
+                ),
+            ],
+            "table": {
+                "caption": "Asset Classification and State-Specific Authority Matrix",
+                "headers": [
+                    "Asset or operating boundary",
+                    "Primary rule or source",
+                    "Required operator evidence",
+                    "Stop condition and practical fallback",
+                ],
+                "rows": [
+                    [
+                        "California treasury property pursued through a compensated recovery agreement",
+                        "California Code of Civil Procedure section 1582 governs recovery agreements",
+                        "Preserve report and delivery evidence supporting contract timing eligibility",
+                        "Delay contracting until timing and compensation requirements are established",
+                    ],
+                    [
+                        "New York abandoned property located for a prospective owner",
+                        "New York Abandoned Property Law section 1416 governs locator agreements",
+                        "Retain compliant agreement terms and the applicable compensation calculation",
+                        "Replace over-limit terms before asking the owner to sign",
+                    ],
+                    [
+                        "Florida claims represented by a compensated recovery service provider",
+                        "Florida Statutes sections 717.135 and 717.1400 address agreements and registration",
+                        "Verify provider category, registration status, agreement form, and authorized representatives",
+                        "Suspend representation when required registration or authority is missing",
+                    ],
+                    [
+                        "Corporate warrants remaining with the original issuing government agency",
+                        "Issuing agency warrant replacement rules determine the available recovery procedure",
+                        "Obtain warrant details, cancellation status, signer authority, and reissuance instructions",
+                        "Use agency replacement procedures instead of mislabeling treasury property",
+                    ],
+                    [
+                        "California locating work involving potentially regulated investigative service activities",
+                        "Business and Professions Code section 7539 defines investigative activities",
+                        "Document actual service scope and applicable licensing or exemption analysis",
+                        "Restrict the work or engage an appropriately licensed provider",
+                    ],
+                    [
+                        "Deceased owner or dissolved company presenting disputed entitlement evidence",
+                        "Custodian instructions and applicable succession or entity law determine authority",
+                        "Connect each ownership transition through official records and authorized signatures",
+                        "Pause submission and obtain appropriate representation for contested ownership",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Four checks before the first recovery agreement",
+                "body": (
+                    "A record advances only when another reviewer can reproduce its "
+                    "asset classification, authority determination, timing, and fee calculation."
+                ),
+                "items": [
+                    "Confirm the custodian and property category; distinguish treasury property from issuer-held warrants and bankruptcy claims.",
+                    "Record the applicable registration or licensing determination and verify any required credentials through the issuing authority.",
+                    "Calculate the contracting interval from the statutory event using retained source dates, not the lead-import date.",
+                    "Confirm signer authority, the direct-claim disclosure, and the complete compensation calculation before releasing the state-specific agreement.",
+                ],
+            },
+        },
+        {
+            "heading": "2. Price the service and make every contract trigger observable",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "The contract should name the legal provider, claimant, custodian, "
+                    "identified property, and precise service scope. Describe record research, "
+                    "document organization, status tracking, and submission assistance only "
+                    "to the extent the provider may perform them. State prominently: "
+                    "'You may claim this property directly from the government custodian "
+                    "without hiring or paying our service. Our fee purchases optional "
+                    "assistance, not access to a government benefit.' Use any additional "
+                    "state-required wording without dilution. Define the fee base as the "
+                    "specified property actually recovered, subject to the applicable statute, "
+                    "rather than every future asset discovered under the owner's name. "
+                    "Define when a fee is earned and when payment becomes due; a "
+                    "portal status change is not the same event as cleared proceeds. "
+                    "Prefer payment to the owner followed by a transparent invoice, "
+                    "unless the custodian authorizes another lawful mechanism. Do not "
+                    "add processing charges that defeat a compensation ceiling. Include "
+                    "required cancellation mechanics and a plain description of what "
+                    "happens when the custodian denies a claim. A narrow authorization "
+                    "should identify permitted communications and submissions. It should "
+                    "not silently authorize endorsing checks, changing payment destinations, "
+                    "settling disputes, or transferring ownership. Have the signer receive "
+                    "the completed agreement and every incorporated fee schedule."
+                ),
+                (
+                    "Treat anti-circumvention language as attribution protection, not ownership "
+                    "of the claimant's relationship with the state. Identify the property "
+                    "and documented work that could support an earned fee under applicable "
+                    "law. A direct filing, required cancellation right, or unrelated recovery "
+                    "must not become an automatic penalty. Avoid perpetual exclusivity, "
+                    "multiples of the expected fee, and clauses demanding compensation "
+                    "before a legally permitted trigger. A liability limitation should "
+                    "address ordinary service errors with a reasonable negotiated allocation "
+                    "while preserving nonwaivable rights and identifying exclusions appropriate "
+                    "to fraud, intentional misconduct, and sensitive-data incidents. State "
+                    "which forum and governing law apply, but do not assume a chosen "
+                    "state displaces mandatory protections elsewhere. Explain mediation, court "
+                    "access, arbitration if used, cost allocation, and any small-claims "
+                    "carveout in readable terms. For data ownership, distinguish the owner's "
+                    "documents and claim evidence from the operator's preexisting templates "
+                    "and internal matching methods. Give the owner usable copies of "
+                    "their file and define retention and deletion responsibilities. Prohibit "
+                    "contractors from reselling lead lists or using identity evidence "
+                    "for unrelated work. Public availability of a property listing does "
+                    "not create permission to commercialize every document subsequently "
+                    "collected. Have local counsel review the actual template and service "
+                    "model, not merely a generic engagement letter."
+                ),
+                (
+                    "Keep service economics separate from recovered principal in every "
+                    "proposal and ledger. For a simple planning model, assume a lawful "
+                    "ten-percent fee and an average completed recovery of $10,000. Each "
+                    "paid completion generates $1,000 of recognized service revenue, not "
+                    "$10,000. Sixty completions produce the Conservative $60,000 revenue "
+                    "case; 255 produce Base revenue of $255,000; 450 produce Scaled "
+                    "revenue of $450,000. Their underlying client recoveries are $600,000, "
+                    "$2,550,000, and $4,500,000 respectively. Those recovery totals are "
+                    "illustrative throughput assumptions, not extra income. The canonical "
+                    "owner-profit cases remain $15,000 at 25%, $95,625 at 37.5%, and "
+                    "$225,000 at 50%, implying total annual costs of $45,000, $159,375, "
+                    "and $225,000. Conservative and Base staffing is one full-time "
+                    "operator plus two contractors; Scaled uses two full-time staff "
+                    "plus three contractors. Do not assume every jurisdiction permits "
+                    "this example fee or that every signed file pays. A $1,200 "
+                    "recovery produces only $120 at ten percent; two hours costing "
+                    "$45 each plus $20 of verification expense leave $10 before "
+                    "overhead. Offer the direct-claim route instead of absorbing structurally "
+                    "uneconomic work. Track earned, invoiced, collected, disputed, and "
+                    "written-off fees separately. Treasury processing delays affect working "
+                    "capital even when the expected fee remains collectible."
+                ),
+            ],
+            "table": {
+                "caption": "Six-Clause Recovery Agreement Drafting and Evidence Checklist",
+                "headers": [
+                    "Clause and business purpose",
+                    "Required operative drafting detail",
+                    "Evidence retained with the file",
+                    "Failure mode and corrective response",
+                ],
+                "rows": [
+                    [
+                        "Scope ties the engagement to identified property and permitted services",
+                        "Name the custodian, property identifiers, authorized activities, and explicit exclusions",
+                        "Retain the selected template version and completed property schedule",
+                        "Remove broad authority extending to unrelated assets or prohibited representation",
+                    ],
+                    [
+                        "Fee trigger connects compensation to an observable lawful recovery event",
+                        "Define the fee base, permitted percentage, payment timing, and expense treatment",
+                        "Keep the statutory calculation and evidence of the specified recovery",
+                        "Correct charges that exceed limits or precede permitted payment events",
+                    ],
+                    [
+                        "Anti-circumvention protects documented earned compensation without blocking owner choice",
+                        "Limit attribution to named property and preserve mandatory cancellation rights",
+                        "Maintain dated work records linking services to the identified recovery",
+                        "Delete punitive multipliers and unsupported claims over future owner assets",
+                    ],
+                    [
+                        "Liability allocation addresses service errors without erasing mandatory protections",
+                        "Specify reasonable limits and appropriate exceptions for serious misconduct",
+                        "Retain counsel review and insurance coverage relevant to promised services",
+                        "Revise exclusions that contradict mandatory rights or actual insurance coverage",
+                    ],
+                    [
+                        "Dispute resolution identifies accessible procedures and predictable cost responsibility",
+                        "Explain governing law, forum, escalation steps, and any arbitration election",
+                        "Preserve the signed agreement and evidence of required separate acknowledgments",
+                        "Resolve conflicting terms before presenting documents to the prospective claimant",
+                    ],
+                    [
+                        "Data and intellectual property terms separate client evidence from methods",
+                        "Define file access, permitted processing, retention, deletion, and contractor restrictions",
+                        "Record access permissions, owner delivery receipts, and scheduled retention reviews",
+                        "Stop unrelated reuse and remove unnecessary copies from contractor systems",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Protect the fee by reducing ambiguity before submission",
+                "body": (
+                    "Experienced recovery operators preserve evidence of what was "
+                    "authorized, what was recovered, and why the resulting invoice is correct."
+                ),
+                "items": [
+                    "Attach a property-specific schedule to each agreement; separate identical owner names across different custodians.",
+                    "Capture the relevant reporting and delivery dates before spending on identity research; an ineligible contracting interval can eliminate the near-term opportunity.",
+                    "Use a corporate authority packet covering name changes, mergers, and signer delegation rather than repeatedly requesting unrelated identity documents.",
+                    "Reconcile each invoice to cleared recovery evidence and the approved fee formula; investigate partial payments before issuing a full-fee demand.",
+                ],
+            },
+        },
+        {
+            "heading": "3. Use outreach that survives owner skepticism and channel rules",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Separate the legality of finding a record from permission to "
+                    "contact a person through a particular channel. A public treasury "
+                    "listing does not supply consent for automated marketing texts. "
+                    "The Telephone Consumer Protection Act, 47 U.S.C. section 227, "
+                    "and 47 CFR section 64.1200 impose requirements that depend on "
+                    "technology, destination, content, consent, and applicable exemptions. "
+                    "Document those facts before using a dialer, prerecorded voice, "
+                    "or text platform. Screen applicable telephone campaigns against "
+                    "national and company-specific do-not-call requirements, observe permitted "
+                    "calling hours, and evaluate state restrictions separately. A manually "
+                    "dialed call does not erase other telemarketing duties. Commercial "
+                    "email must satisfy CAN-SPAM requirements under 15 U.S.C. section "
+                    "7704, including truthful routing and subject information, required "
+                    "identification, a valid postal address, and a working opt-out "
+                    "mechanism. Honor opt-outs within the statutory period and prevent "
+                    "later lead imports from restoring suppressed recipients. Use a "
+                    "central suppression table across staff, contractors, and vendors. "
+                    "Before recording discovery calls, assess applicable recording-consent "
+                    "law and obtain the required permission; notes are a practical "
+                    "alternative when recording is unnecessary. Vendor settings and a "
+                    "purchased contact list are inputs, not evidence that a campaign "
+                    "is permitted. Preserve the screening result and script version "
+                    "with each outreach batch."
+                ),
+                (
+                    "Use this first-contact letter verbatim after adding the provider's "
+                    "actual identity, postal address, and official custodian address in "
+                    "the letterhead: 'We are a private recovery service, not a "
+                    "government agency. A public unclaimed-property record may relate "
+                    "to you or your business; a name match alone does not "
+                    "establish ownership. You can search and claim directly through "
+                    "the government custodian without paying us. If you prefer "
+                    "optional assistance, we can explain our services and any "
+                    "permitted fee before you decide. Please do not send identity "
+                    "documents, bank information, or your Social Security number "
+                    "in response to this letter. You may independently locate "
+                    "the custodian's official website and contact details. To stop "
+                    "future contact from us, reply with stop or use the "
+                    "contact method printed above.' For email, add the functioning "
+                    "unsubscribe mechanism and required commercial identification; the "
+                    "script is content, not a replacement for channel controls. "
+                    "Do not print a full property value, former home address, "
+                    "or identity clue on the envelope. Avoid treasury-style seals, "
+                    "official-looking case numbers, fabricated deadlines, and statements "
+                    "that funds will disappear unless the recipient hires you. "
+                    "A clean letter may convert fewer impulsive replies while "
+                    "producing better-informed clients and fewer disputed signatures."
+                ),
+                (
+                    "After the recipient agrees to discuss the service, use this "
+                    "discovery opening: 'Before we discuss documents, are you the "
+                    "named owner or someone authorized to act for that owner? "
+                    "Please describe your relationship without giving account numbers "
+                    "or identity-document details. We will explain the evidence the "
+                    "custodian requires and provide a secure submission method if "
+                    "you choose our service. You can also claim directly without "
+                    "us. Would you like the official direct-claim instructions first?' "
+                    "For a corporation, continue: 'What is the current legal "
+                    "entity name, and who can authorize this engagement? Has "
+                    "the reported business merged, dissolved, or changed names?' "
+                    "For fees, say: 'Our written agreement identifies the property, "
+                    "the permitted fee calculation, and when payment becomes due. "
+                    "We will not ask you to sign until those terms and "
+                    "your authority are clear.' If the person declines, say: "
+                    "'Understood. We will record your request and stop further "
+                    "marketing contact through the channels you identify.' Do "
+                    "not turn that exchange into another sales pitch. Log "
+                    "dispositions without speculative comments about age, vulnerability, "
+                    "or wealth. Measure verified-owner conversations, signed eligible "
+                    "files, completed recoveries, and paid fees separately. High "
+                    "response rates are meaningless when identity mismatch or "
+                    "unsupported authority prevents a valid submission."
+                ),
+            ],
+            "table": {
+                "caption": "Outreach Channel Controls and Verbatim Response Snippets",
+                "headers": [
+                    "Contact situation and objective",
+                    "Required operating control before contact",
+                    "Exact language for the operator",
+                    "Evidence and next operational action",
+                ],
+                "rows": [
+                    [
+                        "Initial postal contact introduces an optional private recovery service",
+                        "Use truthful provider identity and avoid revealing sensitive ownership details",
+                        "We are a private recovery service, not a government agency.",
+                        "Archive the actual letter version and verified mailing source",
+                    ],
+                    [
+                        "Commercial email invites an informed discussion about optional assistance",
+                        "Configure truthful headers, postal identification, and a working unsubscribe method",
+                        "You can claim directly without hiring or paying our service.",
+                        "Test unsubscribe handling and retain the campaign suppression result",
+                    ],
+                    [
+                        "Telephone outreach seeks permission for a limited introductory conversation",
+                        "Check applicable calling restrictions and document the selected dialing technology",
+                        "May I explain why we contacted you before discussing documents?",
+                        "Record the screening decision and promptly honor contact restrictions",
+                    ],
+                    [
+                        "Text campaign proposes marketing through a mobile messaging platform",
+                        "Establish applicable consent and other requirements before transmitting messages",
+                        "We will use your requested channel for any further discussion.",
+                        "Avoid unsolicited messaging when the required permission evidence is absent",
+                    ],
+                    [
+                        "Corporate discovery establishes who may authorize the recovery engagement",
+                        "Request entity history and signer role without collecting unnecessary identifiers",
+                        "Who can authorize this engagement for the current legal entity?",
+                        "Connect signer authority to current entity records before contracting",
+                    ],
+                    [
+                        "Recipient declines assistance or requests an end to marketing",
+                        "Apply the request to suppression records before further campaign activity",
+                        "Understood. We will record your request and stop further marketing.",
+                        "Synchronize the restriction across vendors and preserve the request timestamp",
+                    ],
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Qualify the record and selected channel",
+                    "action": (
+                        "Classify the asset, confirm the custodian, and evaluate the "
+                        "proposed contact method before adding the lead to outreach."
+                    ),
+                    "detail": (
+                        "Save the source record, jurisdiction review, technology "
+                        "assessment, and applicable suppression or permission evidence."
+                    ),
+                },
+                {
+                    "step": 2,
+                    "title": "Send the owner-first introduction",
+                    "action": (
+                        "Use the approved channel-specific script with actual provider "
+                        "identity and the free direct-claim route."
+                    ),
+                    "detail": (
+                        "Keep sensitive identifiers out of the message and preserve "
+                        "the exact script version associated with the communication."
+                    ),
+                },
+                {
+                    "step": 3,
+                    "title": "Establish authority and release the correct agreement",
+                    "action": (
+                        "Confirm the claimant relationship, applicable contracting "
+                        "interval, provider eligibility, and permitted compensation."
+                    ),
+                    "detail": (
+                        "Use the property-specific schedule and obtain only the "
+                        "authorization required for the services actually being provided."
+                    ),
+                },
+                {
+                    "step": 4,
+                    "title": "Reconcile recovery, fees, and record retention",
+                    "action": (
+                        "Match the custodian outcome to recovery evidence and the "
+                        "contractual fee trigger before invoicing."
+                    ),
+                    "detail": (
+                        "Resolve partial recoveries, synchronize contact restrictions, "
+                        "and apply the document retention schedule after closure."
+                    ),
+                },
+            ],
+        },
+        {
+            "heading": "4. Keep bankruptcy claim purchases on a separate underwriting rail",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "The mapped play chapter11_trade_claim_convenience_class_rollup belongs "
+                    "to TRACK_1 and requires a different legal and economic model "
+                    "from treasury recovery. It purchases documented small trade claims "
+                    "below risk-adjusted expected plan distributions. The seller transfers "
+                    "a claim rather than hiring a finder to recover state-held property. "
+                    "Use PACER and the court-designated claims agent to examine the "
+                    "petition, Schedule E/F, claims register, bar-date orders, disclosure "
+                    "statement, proposed or confirmed plan, and claim-objection docket. "
+                    "Schedule E/F is a research source, not conclusive evidence of "
+                    "an allowed claim or its current owner. Under 11 U.S.C. "
+                    "section 1111(a), a scheduled claim may be deemed filed, subject "
+                    "to the exception for claims scheduled as disputed, contingent, "
+                    "or unliquidated; Bankruptcy Rule 3003 supplies additional filing "
+                    "requirements in Chapter 11. Match invoices, delivery evidence, "
+                    "credits, debtor entities, and proof-of-claim records before pricing. "
+                    "Section 502 governs allowance and objections, while section "
+                    "1122(b) permits qualifying administrative-convenience classification. "
+                    "It does not promise a premium distribution to every small "
+                    "claim purchaser. Read the actual class definition, election "
+                    "deadline, reduction mechanism, related-holder language, and treatment "
+                    "of acquired claims. Never manufacture eligibility by assuming "
+                    "that splitting one invoice or aggregating multiple sellers "
+                    "changes the plan's enforceable classification rules."
+                ),
+                (
+                    "Consider an illustrative portfolio with $100,000 face value purchased "
+                    "for $12,000. Assume verified plan treatment would distribute 30% "
+                    "of face on allowed claims, but underwriting supports only "
+                    "an 80% probability of that modeled allowance and payment "
+                    "outcome. Expected receipts are $100,000 times 30% times 80%, "
+                    "or $24,000. Subtract $12,000 purchase consideration and $4,000 "
+                    "of diligence, transfer, and servicing costs to obtain an "
+                    "$8,000 expected contribution before overhead, taxes, and the "
+                    "cost of tying up capital. This arithmetic is an expectation, "
+                    "not an observed collection or an assumption that every "
+                    "claim fails independently. Correlated debtor objections can affect "
+                    "the entire portfolio. If supported general-unsecured treatment "
+                    "instead yields 10% of face at the same 80% probability, "
+                    "expected receipts fall to $8,000 and contribution becomes "
+                    "negative $8,000 at the original purchase price. Stop affected "
+                    "purchases, enforce documented seller recourse where available, "
+                    "and price only supported general-unsecured recoveries. For a "
+                    "$2,000 target contribution under that fallback and unchanged "
+                    "$4,000 costs, maximum purchase consideration is $2,000. If "
+                    "sellers reject that price, pass. Do not import this "
+                    "portfolio's face value, proceeds, or trading spread into "
+                    "the volume's canonical service-fee scorecard."
+                ),
+                (
+                    "Use a purchase agreement that identifies the debtor, case "
+                    "number, claim number when available, face amount, supporting "
+                    "documents, purchase price, and exactly what rights transfer. "
+                    "Obtain representations addressing ownership, prior assignments, payments, "
+                    "credits, disputes, and liens, with document delivery and further-assurance "
+                    "obligations. Separate recourse for a seller's breached representation "
+                    "from ordinary debtor insolvency risk; broad language is worthless "
+                    "when the seller cannot perform. Bankruptcy Rule 3001(e) "
+                    "provides different procedures depending on transfer timing and "
+                    "whether the transfer is for security. For a qualifying "
+                    "transfer other than for security after a proof of claim "
+                    "has been filed, the rule provides notice and a twenty-one-day "
+                    "transferor objection period. Follow the applicable procedure and "
+                    "court orders rather than treating a private signature as "
+                    "the entire transfer process. Track substitution, objections, "
+                    "distribution instructions, and any plan-specific election independently. "
+                    "Counsel should handle contested transfer or allowance proceedings "
+                    "and assess specialized rights, sanctions, tax, and solicitation "
+                    "issues when relevant. Keep purchase cash, acquired-claim accounting, "
+                    "and seller payments in a distinct ledger from service "
+                    "fees and owner recoveries. At each review, compare actual "
+                    "collections and remaining supported distributions with acquisition "
+                    "cost and unresolved objections. An attractive spreadsheet cannot "
+                    "override adverse docket evidence."
+                ),
+            ],
+            "table": {
+                "caption": "TRACK_1 Trade-Claim Purchase Controls and Downside Decisions",
+                "headers": [
+                    "Underwriting or transfer checkpoint",
+                    "Documented evidence required before purchase",
+                    "Concrete economic or procedural test",
+                    "Fallback when the evidence fails",
+                ],
+                "rows": [
+                    [
+                        "Establish seller ownership and connect invoices to the correct debtor",
+                        "Collect invoices, delivery records, credits, payment history, and assignment representations",
+                        "Reconcile the asserted face amount against debtor and creditor records",
+                        "Exclude unsupported balances and suspend purchases with conflicting ownership evidence",
+                    ],
+                    [
+                        "Determine filing status and exposure to claim allowance objections",
+                        "Review Schedule E/F, proof-of-claim records, bar-date orders, and objection filings",
+                        "Apply section 1111(a), Rule 3003, and section 502 to actual facts",
+                        "Require timely corrective action or decline claims lacking supported recoverability",
+                    ],
+                    [
+                        "Test convenience-class eligibility under the actual operative plan language",
+                        "Read class definitions, election deadlines, reduction provisions, and aggregation restrictions",
+                        "Assume no eligibility benefit from splitting or combining acquired claims",
+                        "Underwrite supported general-unsecured treatment when convenience eligibility is unsupported",
+                    ],
+                    [
+                        "Price the illustrative portfolio using risk-adjusted expected cash receipts",
+                        "Support thirty-percent distributions and eighty-percent modeled allowance and payment probability",
+                        "Expected receipts total $24,000 before $12,000 price and $4,000 costs",
+                        "Reject prices that erase the required contribution after realistic costs",
+                    ],
+                    [
+                        "Reprice adverse treatment using supported general-unsecured distribution assumptions",
+                        "Document ten-percent distributions with the same eighty-percent outcome probability",
+                        "Expected $8,000 receipts support $2,000 price after costs and target contribution",
+                        "Stop affected purchases and enforce documented seller recourse where available",
+                    ],
+                    [
+                        "Complete transfer procedures and monitor rights through actual distributions",
+                        "Retain the agreement, transfer filing, notice evidence, and subsequent court orders",
+                        "Track the applicable Rule 3001(e) process and transferor objection period",
+                        "Escalate contested transfers and withhold unsupported distribution or ownership conclusions",
+                    ],
+                ],
+            },
+        },
+    ],
+    "pull_quote": (
+        "The recoverable asset is the opportunity; verified authority, lawful timing, "
+        "and a collectible fee make it a business."
+    ),
+    "diagram_id": "diag-05",
+    "action_checklist": [
+        (
+            "Create a versioned jurisdiction register covering finder eligibility, "
+            "licensing boundaries, compensation, contracting intervals, and official sources."
+        ),
+        (
+            "Release property-specific agreements only after documenting signer authority, "
+            "the free direct-claim disclosure, permitted fees, and narrow authorization."
+        ),
+        (
+            "Configure restricted evidence storage, contractor access controls, retention "
+            "rules, and an incident-response process matched to applicable privacy duties."
+        ),
+        (
+            "Deploy channel-specific outreach scripts with suppression synchronization, "
+            "truthful identity, permission evidence where required, and tested opt-out handling."
+        ),
+        (
+            "Reconcile service-fee revenue and costs to the $60,000, $255,000, and "
+            "$450,000 canonical cases without including client principal."
+        ),
+        (
+            "Separate TRACK_1 claim purchases from treasury services; underwrite actual "
+            "plan treatment, complete transfer procedures, and reprice adverse outcomes."
+        ),
+    ],
+    "statutory_citations": [
+        {
+            "title": "California Code of Civil Procedure section 1582",
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=1582.",
+            "relevance": (
+                "Governs agreements to locate or recover covered unclaimed property, "
+                "including contracting restrictions and the compensation ceiling."
+            ),
+        },
+        {
+            "title": "New York Abandoned Property Law section 1416",
+            "url": "https://www.nysenate.gov/legislation/laws/ABP/1416",
+            "relevance": (
+                "Establishes requirements for agreements to locate abandoned property "
+                "and limits compensation for covered services."
+            ),
+        },
+        {
+            "title": "Florida Statutes section 717.135",
+            "url": "https://www.leg.state.fl.us/Statutes/index.cfm?App_mode=Display_Statute&URL=0700-0799/0717/Sections/0717.135.html",
+            "relevance": (
+                "Supplies requirements for agreements to recover reported unclaimed "
+                "property and must inform Florida-specific contract drafting."
+            ),
+        },
+        {
+            "title": "Florida Statutes section 717.1400",
+            "url": "https://www.leg.state.fl.us/Statutes/index.cfm?App_mode=Display_Statute&URL=0700-0799/0717/Sections/0717.1400.html",
+            "relevance": (
+                "Addresses registration of specified professional categories "
+                "participating in Florida unclaimed-property claims."
+            ),
+        },
+        {
+            "title": "California Business and Professions Code section 7539",
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7539.",
+            "relevance": (
+                "Defines private investigation activities relevant to assessing "
+                "whether a locating service crosses an occupational licensing boundary."
+            ),
+        },
+        {
+            "title": "California Civil Code section 1798.81.5",
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1798.81.5",
+            "relevance": (
+                "Establishes reasonable-security requirements for covered personal "
+                "information and informs document storage and contractor controls."
+            ),
+        },
+        {
+            "title": "California Civil Code section 1798.82",
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1798.82.",
+            "relevance": (
+                "Provides breach-notification duties when the statutory conditions "
+                "apply to compromised personal information."
+            ),
+        },
+        {
+            "title": "15 U.S.C. section 45 — Federal Trade Commission Act",
+            "url": "https://www.law.cornell.edu/uscode/text/15/45",
+            "relevance": (
+                "Prohibits covered unfair or deceptive practices, including misleading "
+                "government-affiliation claims and deceptive privacy representations."
+            ),
+        },
+        {
+            "title": "47 U.S.C. section 227 — Telephone Consumer Protection Act",
+            "url": "https://www.law.cornell.edu/uscode/text/47/227",
+            "relevance": (
+                "Provides statutory restrictions relevant to telephone solicitations, "
+                "automated calling technologies, prerecorded communications, and texts."
+            ),
+        },
+        {
+            "title": "47 CFR section 64.1200 — Delivery Restrictions",
+            "url": "https://www.ecfr.gov/current/title-47/chapter-I/subchapter-B/part-64/subpart-L/section-64.1200",
+            "relevance": (
+                "Contains implementing requirements relevant to consent, calling "
+                "practices, and do-not-call controls for covered outreach."
+            ),
+        },
+        {
+            "title": "15 U.S.C. section 7704 — Commercial Electronic Mail Requirements",
+            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
+            "relevance": (
+                "Governs commercial email routing information, subject lines, "
+                "identification, postal addresses, and opt-out mechanisms."
+            ),
+        },
+        {
+            "title": "11 U.S.C. section 1111(a) — Claims and Interests",
+            "url": "https://www.law.cornell.edu/uscode/text/11/1111",
+            "relevance": (
+                "Addresses when scheduled Chapter 11 claims are deemed filed "
+                "and identifies the disputed, contingent, or unliquidated exception."
+            ),
+        },
+        {
+            "title": "Federal Rule of Bankruptcy Procedure 3003",
+            "url": "https://www.law.cornell.edu/rules/frbp/rule_3003",
+            "relevance": (
+                "Supplies claim-filing rules relevant to Chapter 11 schedules, "
+                "proofs of claim, and court-established filing deadlines."
+            ),
+        },
+        {
+            "title": "11 U.S.C. section 502 — Allowance of Claims or Interests",
+            "url": "https://www.law.cornell.edu/uscode/text/11/502",
+            "relevance": (
+                "Governs claim allowance and objections affecting acquired "
+                "trade-claim recoverability and purchase pricing."
+            ),
+        },
+        {
+            "title": "11 U.S.C. section 1122(b) — Classification of Claims or Interests",
+            "url": "https://www.law.cornell.edu/uscode/text/11/1122",
+            "relevance": (
+                "Permits qualifying administrative-convenience classification but "
+                "does not independently establish a purchased claim's plan treatment."
+            ),
+        },
+        {
+            "title": "Federal Rule of Bankruptcy Procedure 3001(e)",
+            "url": "https://www.law.cornell.edu/rules/frbp/rule_3001",
+            "relevance": (
+                "Provides procedures for transferred claims, including applicable "
+                "filing, notice, objection, and substitution mechanics."
+            ),
+        },
+    ],
+}

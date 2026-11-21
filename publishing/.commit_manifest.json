@@ -1,10 +1,10 @@
 {
   "scope": "publishing_store_excluding_previews",
   "sha256": {
-    "audit/existing_work_audit.json": "57fb28216da527e3ebab088ac80ce62979c59f9359cae309020ae6606fcecce5",
-    "brand/brand_system.json": "12f4fe6348e6aa74c3b73d0ad1ec315bef25be9424bf70a12ec397030b4e04b4",
-    "catalog/pipeline_29_candidates.json": "f5a400b0ba46543e05a806962f530f0ceb4ed59d8debc2dade8ed1387237eb6c",
-    "research/research_database_summary.json": "157ec403b222b42e6b2640884b2555edef644b605c94f486eda4d865acb47c40",
+    "audit/existing_work_audit.json": "c4f09f2e1ee87510ccb26e5ad85a0aada360331b19fe6f6e6bab4eaa966de640",
+    "brand/brand_system.json": "2f214f3d136e26a920e0633163bd911630db2167914229fa217ed36553664881",
+    "catalog/pipeline_29_candidates.json": "c87900f30bf6b646ce3b8ef3f11cf3481dc97e0af8aa84c8dc2f53efc6e986b7",
+    "research/research_database_summary.json": "be298b3f81e3353262251c08e7f340b03dc383a178f460d4682fa806bb43e1fe",
     "site/newsletter_signups.json": "5a97fe09f877c0fccee940246e74f27dc5b6bc83148037af241946b350933794",
     "volumes/vol-001-heir-hunting/chapters/chapter-01.md": "4c44fe7e11c2f4af10ed7241bb0f8b49674c33d8c70c91a965cd3a0dab1133f0",
     "volumes/vol-001-heir-hunting/chapters/chapter-02.md": "c9f8705ba384dbbbd713674229cb8dfce45ab4fab27acea1480b476f229ad08b",
@@ -113,6 +113,24 @@
     "volumes/vol-006-productized-ai-agencies/manuscript.json": "0130ee690b38cb12afd736e962aa76cdc5ea0337e18dbbc259e7df32720585d7",
     "volumes/vol-006-productized-ai-agencies/metadata.json": "70b55f806964f896a24d615eadf169b5689dd8f964944aba1636b175f320c2fd",
     "volumes/vol-006-productized-ai-agencies/scorecard.json": "85b7ee8d4baf397354ff463c74a1d407951378b9a91e542c7ceb5607193d3de1",
-    "volumes/vol-006-productized-ai-agencies/workbook.json": "bb46350a545bc068523231c409ee56010e9b4c6da43ee7af0c7b0e932ac4411d"
+    "volumes/vol-006-productized-ai-agencies/workbook.json": "bb46350a545bc068523231c409ee56010e9b4c6da43ee7af0c7b0e932ac4411d",
+    "volumes/vol-007-unclaimed-property-recovery/chapters/chapter-01.md": "50e46c5d1e5b4fb655773280eb4af2e57e74d46e8e31505b8f1713ce755a3027",
+    "volumes/vol-007-unclaimed-property-recovery/chapters/chapter-02.md": "e1bc1b377d7fbe0c6d23e840e047bf67a4b16d56754400b38d31807528c3a66a",
+    "volumes/vol-007-unclaimed-property-recovery/chapters/chapter-03.md": "5ae08ad4ef3d2980e7c4efb8db14190d852b4f5a897e991a97678636de1d87fd",
+    "volumes/vol-007-unclaimed-property-recovery/chapters/chapter-04.md": "380acc2262f3ade9b73e3fd987478f8875ece60be41abf33841bbbc3622e9ec3",
+    "volumes/vol-007-unclaimed-property-recovery/chapters/chapter-05.md": "515efe44e1c647f0cdc243d985ac1a180deb07465d92da2b160adb3ee4dc313a",
+    "volumes/vol-007-unclaimed-property-recovery/chapters/chapter-06.md": "a7d286d17a3da5ba1f6050111da68d5f1774d4a879094dc7e783e47151b0a93a",
+    "volumes/vol-007-unclaimed-property-recovery/chapters/chapter-07.md": "7f9efcbc171dcff0640e10ba3412d8213933cfad04e16595d5794a4deb73d490",
+    "volumes/vol-007-unclaimed-property-recovery/chapters/chapter-08.md": "a03a86125837d8dcc1df3e3635dc0a1f36292159046f421e08618b3587f0ed9c",
+    "volumes/vol-007-unclaimed-property-recovery/chapters/chapter-09.md": "1c5e055d2c81e3326fc9a382d2f7ccacd74b7fbbddda505e7dbff0e788b152ca",
+    "volumes/vol-007-unclaimed-property-recovery/chapters/chapter-10.md": "37e27802a02d0d5b2f2a764616f86539622f1258b9ead717c44f69479ec0bff8",
+    "volumes/vol-007-unclaimed-property-recovery/chapters/chapter-11.md": "f97af47bac08bf094d5aa5a467dd80e44525fbaaf324d37f49d8ab97f6f815a1",
+    "volumes/vol-007-unclaimed-property-recovery/chapters/chapter-12.md": "d4dc3687571afae98b46d4fcb90b317cccf80a1e5c5983c873d160648662dd15",
+    "volumes/vol-007-unclaimed-property-recovery/diagrams_data.json": "4a9139e324de0d180506e458336a1101ee14c3d3839be2bc80e991e47a1c97b8",
+    "volumes/vol-007-unclaimed-property-recovery/graphics_reviews.json": "80c5723f4dfd5c7d820ba84d38d1e847d916deecd15f186883f6348b3c37f0b4",
+    "volumes/vol-007-unclaimed-property-recovery/manuscript.json": "6ed77e2ebffadc902a988f64745af93f525fc6b681ee3d0d881ce7d99b3c4a26",
+    "volumes/vol-007-unclaimed-property-recovery/metadata.json": "7d854d8f3e82fa659736eb3195032025a0776132c8a09627e2c8505317367c4b",
+    "volumes/vol-007-unclaimed-property-recovery/scorecard.json": "3cf46111020ba5e86d4837779b6b58ba3a0d6e2e085fb580fbca17ddd648634a",
+    "volumes/vol-007-unclaimed-property-recovery/workbook.json": "a968f6ea6d0ead6bb19205046ce43b94979640d46d82d268637df90733a8603a"
   }
 }
