@@ -1,10 +1,10 @@
 {
   "scope": "publishing_store_excluding_previews",
   "sha256": {
-    "audit/existing_work_audit.json": "d517d96b69e82c91ee72f10993731e4040dbb5f18bbdb7ab02f3868831f5906f",
-    "brand/brand_system.json": "6cbce35094307c22c80c97825f43b3f610b45372e3ff48d7b43686c6a2307370",
-    "catalog/pipeline_29_candidates.json": "3c22b34c307516443385f6215537f843cae79cd11850235e0eff16806829f5bf",
-    "research/research_database_summary.json": "3fd004871532edac5cf677303da2bae561f7b3be095ba7a7e53eb42e2c453764",
+    "audit/existing_work_audit.json": "58e5fff920ca44ef72fc573835814e5888b14e30c8c7b1ab6cc4801575474e82",
+    "brand/brand_system.json": "176c721aa7b7f20fefa10ba2a10652d916abc4156f3c3ed94259d98e83414a8f",
+    "catalog/pipeline_29_candidates.json": "f4ac64fb46deacdc2de9956f5ab87a94e384b126ea9e176e25373e10bf42dd58",
+    "research/research_database_summary.json": "f808b5d18fc830b0ed9eab535001b35f5a025d0a2335e54ff6055e41341f4953",
     "site/newsletter_signups.json": "5a97fe09f877c0fccee940246e74f27dc5b6bc83148037af241946b350933794",
     "volumes/vol-001-heir-hunting/chapters/chapter-01.md": "4c44fe7e11c2f4af10ed7241bb0f8b49674c33d8c70c91a965cd3a0dab1133f0",
     "volumes/vol-001-heir-hunting/chapters/chapter-02.md": "c9f8705ba384dbbbd713674229cb8dfce45ab4fab27acea1480b476f229ad08b",
@@ -293,6 +293,24 @@
     "volumes/vol-016-probate-real-estate/manuscript.json": "d6b3687247971b5e62732a20949afae2e149d5efa6d74a5d0367a03a7035702b",
     "volumes/vol-016-probate-real-estate/metadata.json": "ff7dad873085eb71542b4f6fd7bd3b6f3fb2d4c30e001022f4a3207c9ca6496b",
     "volumes/vol-016-probate-real-estate/scorecard.json": "d31383bdca1b7b255d562a18d7336026510ca500a44e2b0ecbff9089775f5520",
-    "volumes/vol-016-probate-real-estate/workbook.json": "1e061f07d37450fed7516cc4f26fa7f341877813f5a6c205b2f2c66c91f712fa"
+    "volumes/vol-016-probate-real-estate/workbook.json": "1e061f07d37450fed7516cc4f26fa7f341877813f5a6c205b2f2c66c91f712fa",
+    "volumes/vol-017-domain-investing/chapters/chapter-01.md": "dde488f0ffe08cd6630d29c4f2cfbb641ddc4f45de552419c7fe4ecb90cd8195",
+    "volumes/vol-017-domain-investing/chapters/chapter-02.md": "653918574373b0beccf4352c47f74396072b17e789c195fbf1a2371bfe39a155",
+    "volumes/vol-017-domain-investing/chapters/chapter-03.md": "117ba4d488e4f9c950c3b77bfed425b6c09600748a696d48c4afd3595b12149c",
+    "volumes/vol-017-domain-investing/chapters/chapter-04.md": "abd868162e30d007600be0cb880e71d5415636fdda154ec310418b30ed1b029e",
+    "volumes/vol-017-domain-investing/chapters/chapter-05.md": "111268b2ce202215616d0625b651e02c238bff6b84f297bfab095cdcca186f82",
+    "volumes/vol-017-domain-investing/chapters/chapter-06.md": "b43153416891aec8d1f9c870c8dc23da4c89cb1e41877f205ddd06a48a975599",
+    "volumes/vol-017-domain-investing/chapters/chapter-07.md": "f2bf9f429d14edab40e8c8d7413b724382804c3193c8bfe5250ea8cb124e2510",
+    "volumes/vol-017-domain-investing/chapters/chapter-08.md": "9dcd61067743bddd2a1f9f1027ce4600a557f1cf4ba5edd087ac863c5c7e2b92",
+    "volumes/vol-017-domain-investing/chapters/chapter-09.md": "a60dac22e267585d3c75e00d5cd0d107bd85d11a580395e634fe81dd7b536c34",
+    "volumes/vol-017-domain-investing/chapters/chapter-10.md": "e5ee21b23c1522f9f1af64476324ec4a4a6f0db4172d51ace304612f9ea02468",
+    "volumes/vol-017-domain-investing/chapters/chapter-11.md": "f174db5557b2b4c422d8e561a56e4168929ea5e75604156018d3931377ec6202",
+    "volumes/vol-017-domain-investing/chapters/chapter-12.md": "fe8ccca6b45505173d342128b9d008b6ab71c0fb42e65d59df8f023959f8ebf9",
+    "volumes/vol-017-domain-investing/diagrams_data.json": "b0957b5a1b62aa30f72f1316499371da452764fbce466ccec27061f6113019ea",
+    "volumes/vol-017-domain-investing/graphics_reviews.json": "15c6f72cd31ceaf5e5a8a38972087cf32fc91f3c41fea0aee2be6521d84ccc64",
+    "volumes/vol-017-domain-investing/manuscript.json": "1229ece9c99cc7bca00eb1b1cfad1f692060e299a1a3a556701eede29bb8016e",
+    "volumes/vol-017-domain-investing/metadata.json": "61e6f8cf9ebd42b14b30f990fa930699c24dc52f91b8f7bbbf146369a52762f1",
+    "volumes/vol-017-domain-investing/scorecard.json": "bb511a2c864f6029dc10849760ebb7d57492d4330f206c60cc4a49777729bdfe",
+    "volumes/vol-017-domain-investing/workbook.json": "3e501be65c5bdb70090ca24cc54ecb3ebc24cddc0413d7de68693a12f2269d32"
   }
 }

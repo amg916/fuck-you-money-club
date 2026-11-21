@@ -1,0 +1,65 @@
+{
+  "concept_id": "concept_b",
+  "volume_id": "vol-017-domain-investing",
+  "approved": true,
+  "edition_status": "approved_master",
+  "preview_only": true,
+  "files": {
+    "digital_pdf.pdf": {
+      "bytes": 1789666,
+      "sha256": "dd731a7cb80b07600e473e477bb405e1bc190f22c12c7ac73ee2bbc3c6e87dbb"
+    },
+    "print_6x9_pdf.pdf": {
+      "bytes": 2315556,
+      "sha256": "07ce75eb6172c3e37f53737610a8c57140bb85d5bbe6ff42cfd25ccbbba1f0aa"
+    },
+    "workbook_pdf.pdf": {
+      "bytes": 542256,
+      "sha256": "26d9b26ec488d434b347dae23816759d8ceec914b4d894c72ce1438fed4cb02a"
+    },
+    "book.epub": {
+      "bytes": 250377,
+      "sha256": "51f9378f772e003e272f97f40f0c1e59d06bb9b3aeb622430f0056c21f6007d8"
+    },
+    "art/cover.svg": {
+      "bytes": 3644,
+      "sha256": "34e3501f2e9094479931e4e4568591a832228a66a7e05dd4510d0add1c5e56af"
+    },
+    "art/scorecard.svg": {
+      "bytes": 67088,
+      "sha256": "a7ef36f2118a974d55da69bc8ddf14b76c2198dbc10fd73ccf69eadd1fe5c08a"
+    },
+    "art/diag_01.svg": {
+      "bytes": 9608,
+      "sha256": "4a834d90b84fb913d34241f36019472f4de2a0573c5616cc537b6f17c58099fc"
+    },
+    "art/diag_02.svg": {
+      "bytes": 7601,
+      "sha256": "4deb07f804708163fb2f653b2d151eecaf6c105e8bbc7cd9a749a611d06747e8"
+    },
+    "art/diag_03.svg": {
+      "bytes": 11051,
+      "sha256": "ab3f9e98a210330349579612727b36642b7df0fb7536cd45afde411353fde629"
+    },
+    "art/diag_04.svg": {
+      "bytes": 9089,
+      "sha256": "9761d7ebf18c123b3d9831e223bb242ca2a9f9ff97202432fc5dad24d1cdf9c6"
+    },
+    "art/diag_05.svg": {
+      "bytes": 9219,
+      "sha256": "d728067c82da471c358f9c06a34ef8ea862a36aa311af355253b48d96b21f08a"
+    },
+    "art/diag_06.svg": {
+      "bytes": 8239,
+      "sha256": "5db4d91051a5d6c9063cdb27d4f07c339c10e0f2b2705d3ddf91f9a29dab0ecf"
+    },
+    "art/diag_07.svg": {
+      "bytes": 8212,
+      "sha256": "2fcbbdcf0780da1d14b99e6e1f5ce7e28bad6c84128978de495d3d28cc989623"
+    },
+    "art/diag_08.svg": {
+      "bytes": 8172,
+      "sha256": "94ef588efb15e91fa197f03d71654b335787c17f0137ea7bff5b65dc22a17578"
+    }
+  }
+}

@@ -179,6 +179,7 @@ The thirty-five mapped plays (`Track 01 + Track 02`) are `parasitic_seo`, `compe
 | **Vol. 014** | **Specialty Finance Brokerage** (`#014`, `79/100`) | `76,558` (`2,269–2,502`/ch) | `48` tables / `326` rows (`10.34` w/cell) | `48` (`12` callouts) | `180` links / `178` videos (`178` harvested) | `29` plays | `226`p Dig / `364`p Print / `85`p WB (`6,627`w) |
 | **Vol. 015** | **Judgment Recovery** (`#015`, `77/100`) | `77,362` (`2,282–2,459`/ch) | `48` tables / `355` rows (`10.27` w/cell) | `48` (`12` callouts) | `180` links / `178` videos (`178` harvested) | `15` plays | `232`p Dig / `380`p Print / `84`p WB (`6,913`w) |
 | **Vol. 016** | **Probate Real Estate** (`#016`, `76/100`) | `78,084` (`2,290–2,444`/ch) | `48` tables / `367` rows (`10.53` w/cell) | `48` (`12` callouts) | `180` links / `178` videos (`178` harvested) | `11` plays | `230`p Dig / `376`p Print / `84`p WB (`6,768`w) |
+| **Vol. 017** | **Domain Investing** (`#017`, `74/100`) | `76,861` (`2,277–2,478`/ch) | `48` tables / `335` rows (`10.72` w/cell) | `48` (`12` callouts) | `180` links / `178` videos (`178` harvested) | `8` plays | `218`p Dig / `351`p Print / `84`p WB (`7,215`w) |
 
 ### Built-Volume Unit Economics
 
@@ -249,7 +250,7 @@ Source of truth: [`publishing/catalog/pipeline_29_candidates.json`](publishing/c
 | **#14** | **Specialty Finance Brokerage** *(Vol. 014 Built & QA-Verified)* | Finance intermediary | **79/100** (`±6` Mod) | `23/21/17/8/10` | 4 (`2 FT + 2 C`) | \$120k–\$1.0M | \$30,000–\$450,000 | T1, T2 | `29` |
 | **#15** | **Judgment Recovery** *(Vol. 015 Built & QA-Verified)* | Recovery services | **77/100** (`±6` Mod) | `20/21/16/10/10` | 4 (`1 FT + 3 C`) | \$60k–\$500k | \$12,000–\$200,000 | T1, T2 | `15` |
 | **#16** | **Probate Real Estate** *(Vol. 016 Built & QA-Verified)* | Real estate services | **76/100** (`±3` High) | `23/18/16/9/10` | 5 (`2 FT + 3 C`) | \$120k–\$900k | \$24,000–\$315,000 | T1, T2 | `11` |
-| **#17** | **Domain Investing** | Digital asset trading | **74/100** (`±6` Mod) | `17/18/19/9/11` | 2 (`1 FT + 1 C`) | \$20k–\$300k | \$3,000–\$120,000 | T1, T2 | `8` |
+| **#17** | **Domain Investing** *(Vol. 017 Built & QA-Verified)* | Digital asset trading | **74/100** (`±6` Mod) | `17/18/19/9/11` | 2 (`1 FT + 1 C`) | \$20k–\$300k | \$3,000–\$120,000 | T1, T2 | `8` |
 | **#18** | **Land Flipping** | Real estate trading | **72/100** (`±6` Mod) | `21/18/17/6/10` | 4 (`1 FT + 3 C`) | \$200k–\$1.5M | \$24,000–\$375,000 | T1, T2 | `6` |
 | **#19** | **Enterprise Software Reselling** | Software channel sales | **72/100** (`±6` Mod) | `23/14/15/9/11` | 5 (`2 FT + 3 C`) | \$300k–\$2.5M | \$24,000–\$500,000 | T1, T2 | `9` |
 | **#20** | **Government Contract Brokering** | Procurement services | **70/100** (`±6` Mod) | `22/16/14/8/10` | 5 (`2 FT + 3 C`) | \$120k–\$1.0M | \$18,000–\$300,000 | T1, T2 | `7` |

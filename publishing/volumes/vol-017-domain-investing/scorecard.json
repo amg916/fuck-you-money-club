@@ -1,0 +1,432 @@
+{
+  "candidate_number": 16,
+  "slug": "domain-investing",
+  "title": "Domain Investing",
+  "category": "Digital asset trading",
+  "production_stage": "approved_master",
+  "scores": {
+    "revenue_potential": 17,
+    "profit_margin_potential": 18,
+    "team_efficiency": 19,
+    "startup_accessibility": 9,
+    "automation_potential": 11
+  },
+  "dimension_max": {
+    "revenue_potential": 25,
+    "profit_margin_potential": 25,
+    "team_efficiency": 20,
+    "startup_accessibility": 15,
+    "automation_potential": 15
+  },
+  "total_score": 74,
+  "tier_label": "Disciplined Specialist Play",
+  "evidence_confidence": "High",
+  "uncertainty_band": "±3 pts",
+  "uncertainty_bounds": {
+    "low": 71,
+    "high": 77
+  },
+  "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
+  "score_rationale": {
+    "revenue_potential": "Revenue Potential: 17/25. Lean portfolios can produce high-margin sales, but low sell-through ties up capital.",
+    "profit_margin_potential": "Profit Margin Potential: 18/25. Lean portfolios can produce high-margin sales, but low sell-through ties up capital.",
+    "team_efficiency": "Team Efficiency: 19/20. Lean portfolios can produce high-margin sales, but low sell-through ties up capital.",
+    "startup_accessibility": "Startup Accessibility: 9/15. Lean portfolios can produce high-margin sales, but low sell-through ties up capital.",
+    "automation_potential": "Automation Potential: 11/15. Lean portfolios can produce high-margin sales, but low sell-through ties up capital."
+  },
+  "economics": {
+    "gross_revenue_range": "$20,000–$300,000 USD annually",
+    "net_profit_margin_range": "15–40%",
+    "owner_net_profit_potential": "$3,000–$120,000 USD annually, before personal taxes and reinvestment",
+    "startup_capital_range": "$10,000–$150,000 USD",
+    "monthly_opex_range": "$500–$5,000 USD",
+    "time_to_first_deal": "3–24 months",
+    "typical_team_size": {
+      "full_time_including_owner": 1,
+      "contractors": 1,
+      "total_people": 2
+    },
+    "includes_contractors_note": "Headcount includes the working owner and recurring contractors as people, not FTE equivalents. Contractors may be part-time. Scaled scenario adds one employee and one contractor; external vendor workforces are not counted as internal team members.",
+    "revenue_basis": "Gross domain sale proceeds; acquisition and renewal costs included in margin",
+    "cost_basis": "Annual net margins include operating expenses and non-owner labor; monthly opex is fixed/semi-fixed overhead only. No owner salary is deducted. Capital needs may grow beyond startup range.",
+    "estimate_status": "Illustrative assumptions; not verified earnings data"
+  },
+  "scenarios": {
+    "conservative": {
+      "annual_gross_revenue_usd": 20000,
+      "net_profit_margin_pct": 15,
+      "annual_owner_net_profit_usd": 3000,
+      "full_time_including_owner": 1,
+      "contractors": 1,
+      "total_people": 2,
+      "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+    },
+    "base_case": {
+      "annual_gross_revenue_usd": 160000.0,
+      "net_profit_margin_pct": 27.5,
+      "annual_owner_net_profit_usd": 44000,
+      "full_time_including_owner": 1,
+      "contractors": 1,
+      "total_people": 2,
+      "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+    },
+    "scaled_small_team": {
+      "annual_gross_revenue_usd": 300000,
+      "net_profit_margin_pct": 40,
+      "annual_owner_net_profit_usd": 120000,
+      "full_time_including_owner": 2,
+      "contractors": 2,
+      "total_people": 4,
+      "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+    }
+  },
+  "automation_levers": [
+    "Renewal tracking",
+    "Comparable-sale monitoring",
+    "Inbound inquiry routing"
+  ],
+  "key_risks": [
+    "Illiquid inventory",
+    "Renewal costs",
+    "Trademark disputes"
+  ],
+  "regulatory_notes": [
+    "Review trademark conflicts, domain dispute policies and anti-cybersquatting laws."
+  ],
+  "track_ids": [
+    "track_1",
+    "track_2"
+  ],
+  "track_labels": [
+    "Asymmetric & Data-Arbitrage Plays",
+    "Grey-Zone Growth & Traffic Arbitrage"
+  ],
+  "plays": [
+    {
+      "id": "expired_domain_traffic_arbitrage",
+      "track_id": "track_1",
+      "name": "Expired Authority Domain (.gov/.edu/Media) Rebuilds & Traffic Arbitrage",
+      "mechanism": "Acquire dropped or auctioned domains carrying clean historical backlinks from .gov, .edu, major media, and trade publications, then rebuild strict topical-continuity authority hubs and monetize via high-payout lead routing and affiliate offers.",
+      "inputs": [
+        "Registrar drop lists & closeout auctions",
+        "Historical archive snapshots (.gov/.edu/editorial link equity)",
+        "Backlink & anchor-text profiles"
+      ],
+      "workflow": [
+        "Screen auction and drop feeds for non-trademarked domains with clean editorial/.gov/.edu backlinks",
+        "Verify clean indexing history and absence of toxic spam penalties",
+        "Restore strict topical continuity with the historical archive theme and route qualified traffic to high-margin lead/affiliate offers"
+      ],
+      "inputs_note": "Strictly excludes trademarked terms or deceptive brand impersonation.",
+      "metrics": [
+        "Acquisition cost vs. 6-month traffic value",
+        "Indexation retention %",
+        "RPM / revenue per visitor"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Search engine expired-domain abuse classification / deindexing",
+          "trigger": "Abrupt topical pivot (e.g., defunct civic site to unrelated casino/loan spam) or thin auto-generated content",
+          "impact": "Loss of historical ranking authority and organic search impressions",
+          "detection_metric": "Indexed page ratio and non-brand impression trend in Search Console",
+          "fallback": "Keep strict topical continuity with historical archive theme and capture first-party email opt-ins on entry"
+        }
+      ]
+    },
+    {
+      "id": "newly_registered_domain_trigger_arbitrage",
+      "track_id": "track_1",
+      "name": "Newly Registered Domain (NRD) & DNS-Diagnostic Trigger Arbitrage",
+      "mechanism": "Ingest daily ICANN CZDS Newly Registered Domain (NRD) zone diffs and .us unredacted RDAP feeds, cross-match domain tokens against Secretary of State LLC filings to resolve physical mailing addresses despite WHOIS privacy, and run automated 72-hour DNS/HTTP probes (0 Google indexed pages, missing sitemap.xml, missing SPF/DMARC) to trigger personalized diagnostic mailers.",
+      "inputs": [
+        "ICANN CZDS daily zone-file diffs & unredacted .us RDAP feeds",
+        "30-day Secretary of State LLC/Corp & USPTO entity cross-match index",
+        "Automated 72-hour DNS (SPF/DKIM/DMARC) & HTTP (sitemap.xml / Google index) scanner"
+      ],
+      "workflow": [
+        "Cross-match daily NRD registrations against new SOS LLC filings and .us RDAP records to resolve founder name and street address",
+        "Probe each resolved domain at 72 hours for unindexed status, missing sitemap.xml/robots.txt, and unconfigured SPF/DMARC email authentication",
+        "Dispatch a personalized diagnostic scorecard mailer with a QR code offering a $149 1-click Search Console + IndexNow + DNS/DMARC launch fix, recurring local SEO retainers, and high-CPA SaaS/hosting referrals"
+      ],
+      "metrics": [
+        "NRD-to-physical-address resolution rate (%)",
+        "QR diagnostic scan & $149 tripwire conversion %",
+        "Upsell rate to recurring SEO/AI agency retainers + affiliate EPC"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "39 U.S.C. § 3001(h)-(i) deceptive invoice enforcement, registrar abuse complaints, or WHOIS redaction blind spots",
+          "trigger": "Sending fake 'Domain Registry / Google Activation' bills or scraping RDAP endpoints above rate limits",
+          "impact": "USPS mail-stop orders, merchant processor termination, or RDAP IP rate-limiting",
+          "detection_metric": "Customer confusion inquiries, chargeback ratio >1%, and RDAP HTTP 429 response rate",
+          "fallback": "Use ICANN CZDS bulk zone files + SOS LLC cross-matching instead of high-frequency WHOIS scraping, and present mailers strictly as a private technical diagnostic audit with real DNS/sitemap fixes"
+        }
+      ]
+    },
+    {
+      "id": "typo_squatting_brand_bid_hijacking",
+      "track_id": "track_2",
+      "name": "Search Brand-Bidding, High-Intent Query Interception & Affiliate Attribution",
+      "mechanism": "Replace illegal ACPA typo-squatting and unauthorized TM+ affiliate hijacking (which trigger UDRP seizures and 100% commission reversals) with authorized brand-bidding rights or high-intent '[Competitor] vs / alternative / pricing / review' search ad interception routed through compliant comparison bridges.",
+      "inputs": [
+        "High-CPC bottom-of-funnel '[Brand] alternative / review / vs' Google & Bing search campaigns",
+        "Written merchant TM+ bidding authorization or competing multi-brand comparison bridge",
+        "Server-side click-ID attribution & EPC split-testing router"
+      ],
+      "workflow": [
+        "Target high-intent searchers comparing an incumbent brand or searching for pricing/alternatives on Google and Microsoft Ads",
+        "Route clicks to a transparent multi-vendor comparison matrix (rather than direct-linking or cloaking the merchant's URL)",
+        "Monetize switchers via higher-paying challenger-brand bounties—or bid directly on brand terms only where explicitly authorized in writing by the merchant"
+      ],
+      "metrics": [
+        "Search ad CTR and conversion rate on '[Brand] alternative/review' queries (12–22%)",
+        "Net ROAS spread (realized affiliate EPC minus search CPC)",
+        "Zero affiliate clawback / reversal rate"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Affiliate network TM+ commission clawback, Google Ads trademark restriction, or UDRP domain seizure",
+          "trigger": "Registering typo-squatted trademark domains (15 U.S.C. § 1125(d)) or cloaking brand-keyword search ads to drop affiliate cookies without merchant permission",
+          "impact": "Immediate forfeiture of accrued affiliate commissions and UDRP domain transfer",
+          "detection_metric": "100% negative-keyword exclusion on prohibited TM+ terms and zero unauthorized brand-domain registrations",
+          "fallback": "Bid on '[Incumbent] alternative/pricing' to send traffic to challenger brands that welcome conquesting traffic, or secure written TM+ whitelisting from the merchant"
+        }
+      ]
+    },
+    {
+      "id": "expired_podcast_rss_redirect_arbitrage",
+      "track_id": "track_2",
+      "name": "Dormant Podcast RSS Feed & Audio Backlink Hijacking",
+      "mechanism": "Acquire defunct podcast brands or expired podcast hosting/website domains that retain verified DR 85+ backlinks from Apple Podcasts, Spotify, iHeartRadio, and trade show-notes—or buy dormant niche podcast RSS feeds from retired hosts to insert dynamic programmatic audio sponsorships into evergreen back-catalog downloads.",
+      "inputs": [
+        "ListenNotes / Apple Podcasts directory crawler checking website & RSS host status",
+        "Catalog acquisition agreements with retired niche B2B/finance podcast creators",
+        "Dynamic Ad Insertion (DAI) audio host (Megaphone / RedCircle) + topical website rebuild"
+      ],
+      "workflow": [
+        "Scan podcast directories for dormant shows in finance, real estate, legal, and SaaS whose linked website domain expired or whose creator stopped publishing",
+        "Acquire the show rights directly from the creator (or register non-trademarked expired show domains) to preserve high-authority directory backlinks and existing subscriber feeds",
+        "Migrate the RSS catalog to a Dynamic Ad Insertion (DAI) host to monetize ongoing evergreen downloads with current pre-roll/mid-roll lead-gen offers"
+      ],
+      "metrics": [
+        "Monthly residual back-catalog downloads per acquired show",
+        "Preserved DR 80+ directory backlinks (Apple, Spotify, Overcast, trade press)",
+        "Audio pre-roll CPA/CPL conversion rate and payback period"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Apple/Spotify podcast directory delisting or trademark infringement claim",
+          "trigger": "Hijacking an active creator's trademarked show identity without permission or replacing an audio RSS feed with spam episodes",
+          "impact": "Directory takedown and registrar domain dispute",
+          "detection_metric": "Chain-of-title acquisition agreement for named shows and strict topical continuity on expired generic domains",
+          "fallback": "Execute clean asset-purchase agreements ($500–$5,000) with retired hosts for full RSS/brand transfer, or use only generic non-trademarked expired domains"
+        }
+      ]
+    },
+    {
+      "id": "domain_drop_catch_backlink_parking_arbitrage",
+      "track_id": "track_2",
+      "name": "Drop-Catch Traffic Parking & Zero-Click Direct-Navigation Arbitrage",
+      "mechanism": "Acquire expiring non-trademarked generic and legacy-project domains that still receive thousands of daily direct-navigation, bookmark, and legacy referral hits, routing the residual HTTP traffic through contextual zero-click demand feeds or high-converting niche lead-capture landers.",
+      "inputs": [
+        "Drop-catch & registrar closeout feeds scored by residual DNS query / referral volume",
+        "Automated USPTO TESS / WIPO trademark-exclusion filter",
+        "Contextual zero-click demand router (Bodis / Tonic / Sedo) + custom vertical lead lander"
+      ],
+      "workflow": [
+        "Screen expiring domains for passive referral traffic from aged blogs, resource directories, and direct type-in navigation—strictly excluding active trademarks",
+        "Measure 7-day baseline visitor geo, device, and referring-anchor intent upon acquisition",
+        "Route generic commercial traffic to custom 1-step lead/calculator landers (or compliant contextual search feeds) where annualized yield exceeds renewal cost by 5–20x"
+      ],
+      "metrics": [
+        "Annualized net parking/lead revenue vs. $10/yr domain renewal cost",
+        "RPM ($15–$120+) by visitor vertical and geography",
+        "Portfolio profitable-domain hit rate (%)"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Upstream parking-feed termination or UDRP cybersquatting complaint",
+          "trigger": "Registering trademarked typo domains or sending bot/datacenter junk traffic into zero-click ad feeds",
+          "impact": "Parking account ban, revenue clawback, or $1,500+ UDRP dispute loss",
+          "detection_metric": "100% automated USPTO trademark screen before bidding and edge ASN/bot filtering before feed handoff",
+          "fallback": "Acquire strictly generic dictionary/descriptive domains, block datacenter bot ASNs at Cloudflare before monetization, and route high-intent domains to owned lead landers"
+        }
+      ]
+    },
+    {
+      "id": "serverless_edge_free_tier_empire_hosting",
+      "track_id": "track_1",
+      "name": "Zero-COGS 1,000-Site Programmatic Hosting on Free Edge Tiers",
+      "mechanism": "Deploying hundreds of static programmatic SEO directories, calculators, local-service lead sites, and comparison micro-tools across generous free edge-hosting tiers (Cloudflare Pages/Workers, GitHub Pages, Vercel/Netlify/Supabase free allocations) with pre-rendered static JSON/HTML bundles so hosting, bandwidth, and SSL cost $0.00/mo per property.",
+      "inputs": [
+        "Static-site generator pipeline (Astro/Eleventy/Next static export) compiling SQLite/Parquet datasets into zero-runtime HTML/JSON",
+        "Cloudflare Pages / Workers and GitHub Pages CI/CD deployment matrices",
+        "Portfolio of $8–$10/yr exact-match or niche utility domains"
+      ],
+      "workflow": [
+        "Compile structured public datasets (licensing tables, fee calculators, local directory listings, compatibility matrices) into ultra-fast static HTML pages at build time",
+        "Deploy each domain property to free edge-CDN tiers with zero origin servers, zero database idle compute costs, and 100/100 Core Web Vitals",
+        "Route dynamic lead capture and webhook submissions through lightweight edge functions to a single centralized CRM/Postgres backend",
+        "Monetize across the portfolio via display ad networks, pay-per-call dynamic numbers, and B2B lead routing with ~99% infrastructure margin"
+      ],
+      "metrics": [
+        "Total monthly hosting and bandwidth COGS ($) across 100–1,000 live domains",
+        "Portfolio-wide organic sessions and lead/ad RPM per $10/yr domain renewal",
+        "Build-to-edge deployment time (seconds) and Core Web Vitals pass rate (%)"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Edge platform build-minute exhaustion or commercial-use limit enforcement on free tiers",
+          "trigger": "Triggering thousands of redundant cloud CI builds per day or exceeding free Worker invocation quotas",
+          "impact": "Paused deployments or forced upgrade to $20/mo paid plans",
+          "detection_metric": "Daily CI build minutes consumed and edge function invocation count vs. static asset cache-hit ratio",
+          "fallback": "Pre-build static HTML bundles locally or on self-hosted runners and upload pre-compiled artifacts directly via API so cloud build-minute usage stays near zero"
+        }
+      ]
+    },
+    {
+      "id": "tier1_search_feed_afd_rsoc_arbitrage",
+      "track_id": "track_2",
+      "name": "Tier-1 Search Feed Arbitrage (Google AFD / RSOC & Yahoo/System1 Wholesale Feeds)",
+      "mechanism": "Acquiring wholesale sub-syndication seats on Google AdSense for Domains (AFD), Related Search on Content (RSOC), and Yahoo/Bing search feeds (via master syndicators such as System1, Sedo, Tonic, or Media.net) to buy $0.08–$0.35 native/social clicks on Meta, TikTok, Taboola, and Outbrain and route them through compliant 2-click 'Related Search' content landers into $8–$45 CPC commercial search auctions at $25M–$400M+/yr gross scale.",
+      "inputs": [
+        "Authorized AFD / RSOC / Yahoo search-feed sub-syndication seat with real-time keyword RPC (Revenue Per Click) feedback API",
+        "High-velocity creative production engine generating 500+ native/social ad variations per week across high-CPC verticals (dental implants, mass torts, solar, auto insurance, HVAC, senior grants)",
+        "Server-side conversion-API (CAPI) bid optimizer matching upstream Meta/TikTok ad-set spend against downstream search-feed RPC at the sub-ID level"
+      ],
+      "workflow": [
+        "Identify commercial search clusters where Google/Bing search advertisers bid $10–$50+ CPC but social discovery CPMs remain cheap",
+        "Launch native and short-form social campaigns driving curiosity/informational clicks ($0.10–$0.30 CPC) to an editorial RSOC page featuring pre-vetted high-intent 'Related Search' keyword pills",
+        "Pass the user's click on a high-intent keyword pill into the wholesale search feed SERP, capturing 65–80% revenue share on the resulting commercial ad click",
+        "Feed real-time keyword payout telemetry back into Meta/TikTok CAPI every 15 minutes to auto-scale winning ad sets and kill negative-margin placements"
+      ],
+      "metrics": [
+        "Two-click Search Click-Through Rate (CTR2 %) from editorial lander to monetized SERP ad",
+        "Net RPC (Revenue Per Click) vs. upstream social CPC spread (target: 15–35% net ROAS margin at $100k+/day spend)",
+        "Traffic-Quality Score (TQS) and invalid-traffic (IVT) clawback rate (<2%)"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Google RSOC/AFD feed seat suspension or upstream traffic-quality clawback",
+          "trigger": "Forcing deceptive 1-click auto-redirects, incentivized clicks, or bot traffic into the wholesale search feed",
+          "impact": "30–60 day payout holdback or termination of the sub-account feed seat",
+          "detection_metric": "Advertiser conversion-rate parity score from the master feed provider and pre-lander bot/ASN filtration rate",
+          "fallback": "Maintain simultaneous accounts across 3+ master syndicators (System1, Tonic, Sedo, Media.net), enforce strict RSOC editorial content compliance, and scrub datacenter/VPN traffic via edge bot challenges before rendering search units"
+        }
+      ]
+    },
+    {
+      "id": "copyright_phash_reverse_image_statutory_settlement",
+      "track_id": "track_2",
+      "name": "Perceptual-Hash (pHash) Reverse-Image & Audio-Stem Statutory Settlement Engines",
+      "mechanism": "Use perceptual matching to triage suspected unauthorized use of a represented rights holder's images or audio, with human and counsel review of ownership, licenses, exceptions, and statutory-damages eligibility.",
+      "inputs": [
+        "Authorized reference media and chain-of-title records",
+        "Permitted reverse-image and audio-fingerprint results",
+        "Registration dates, licenses, and preserved use evidence"
+      ],
+      "workflow": [
+        "1. Index authorized reference works and record ownership and registration provenance",
+        "2. Collect permitted match evidence and manually eliminate false positives and licensed uses",
+        "3. Have counsel assess exceptions, jurisdiction, standing, and available remedies before any demand",
+        "4. Resolve supported matters through proportionate licensing or settlement and record releases"
+      ],
+      "metrics": [
+        "Human-confirmed unauthorized-match precision",
+        "Net rights-holder recovery per reviewed matter",
+        "False-positive and withdrawn-demand rate"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "False match or unsupported statutory-damages claim",
+          "trigger": "Fingerprint collision, valid license, fair use, or ineligible registration timing",
+          "impact": "Wrongful demand, fee exposure, and loss of platform access",
+          "detection_metric": "Counsel rejection and counter-notice success rates",
+          "fallback": "Withdraw unsupported demands and retain matching only for authorized monitoring and voluntary licensing"
+        }
+      ]
+    }
+  ],
+  "platform_risks": [
+    {
+      "failure_mode": "Search engine expired-domain abuse classification / deindexing",
+      "trigger": "Abrupt topical pivot (e.g., defunct civic site to unrelated casino/loan spam) or thin auto-generated content",
+      "impact": "Loss of historical ranking authority and organic search impressions",
+      "detection_metric": "Indexed page ratio and non-brand impression trend in Search Console",
+      "fallback": "Keep strict topical continuity with historical archive theme and capture first-party email opt-ins on entry",
+      "play_id": "expired_domain_traffic_arbitrage",
+      "play_name": "Expired Authority Domain (.gov/.edu/Media) Rebuilds & Traffic Arbitrage",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "39 U.S.C. § 3001(h)-(i) deceptive invoice enforcement, registrar abuse complaints, or WHOIS redaction blind spots",
+      "trigger": "Sending fake 'Domain Registry / Google Activation' bills or scraping RDAP endpoints above rate limits",
+      "impact": "USPS mail-stop orders, merchant processor termination, or RDAP IP rate-limiting",
+      "detection_metric": "Customer confusion inquiries, chargeback ratio >1%, and RDAP HTTP 429 response rate",
+      "fallback": "Use ICANN CZDS bulk zone files + SOS LLC cross-matching instead of high-frequency WHOIS scraping, and present mailers strictly as a private technical diagnostic audit with real DNS/sitemap fixes",
+      "play_id": "newly_registered_domain_trigger_arbitrage",
+      "play_name": "Newly Registered Domain (NRD) & DNS-Diagnostic Trigger Arbitrage",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Affiliate network TM+ commission clawback, Google Ads trademark restriction, or UDRP domain seizure",
+      "trigger": "Registering typo-squatted trademark domains (15 U.S.C. § 1125(d)) or cloaking brand-keyword search ads to drop affiliate cookies without merchant permission",
+      "impact": "Immediate forfeiture of accrued affiliate commissions and UDRP domain transfer",
+      "detection_metric": "100% negative-keyword exclusion on prohibited TM+ terms and zero unauthorized brand-domain registrations",
+      "fallback": "Bid on '[Incumbent] alternative/pricing' to send traffic to challenger brands that welcome conquesting traffic, or secure written TM+ whitelisting from the merchant",
+      "play_id": "typo_squatting_brand_bid_hijacking",
+      "play_name": "Search Brand-Bidding, High-Intent Query Interception & Affiliate Attribution",
+      "track_id": "track_2"
+    },
+    {
+      "failure_mode": "Apple/Spotify podcast directory delisting or trademark infringement claim",
+      "trigger": "Hijacking an active creator's trademarked show identity without permission or replacing an audio RSS feed with spam episodes",
+      "impact": "Directory takedown and registrar domain dispute",
+      "detection_metric": "Chain-of-title acquisition agreement for named shows and strict topical continuity on expired generic domains",
+      "fallback": "Execute clean asset-purchase agreements ($500–$5,000) with retired hosts for full RSS/brand transfer, or use only generic non-trademarked expired domains",
+      "play_id": "expired_podcast_rss_redirect_arbitrage",
+      "play_name": "Dormant Podcast RSS Feed & Audio Backlink Hijacking",
+      "track_id": "track_2"
+    },
+    {
+      "failure_mode": "Upstream parking-feed termination or UDRP cybersquatting complaint",
+      "trigger": "Registering trademarked typo domains or sending bot/datacenter junk traffic into zero-click ad feeds",
+      "impact": "Parking account ban, revenue clawback, or $1,500+ UDRP dispute loss",
+      "detection_metric": "100% automated USPTO trademark screen before bidding and edge ASN/bot filtering before feed handoff",
+      "fallback": "Acquire strictly generic dictionary/descriptive domains, block datacenter bot ASNs at Cloudflare before monetization, and route high-intent domains to owned lead landers",
+      "play_id": "domain_drop_catch_backlink_parking_arbitrage",
+      "play_name": "Drop-Catch Traffic Parking & Zero-Click Direct-Navigation Arbitrage",
+      "track_id": "track_2"
+    },
+    {
+      "failure_mode": "Edge platform build-minute exhaustion or commercial-use limit enforcement on free tiers",
+      "trigger": "Triggering thousands of redundant cloud CI builds per day or exceeding free Worker invocation quotas",
+      "impact": "Paused deployments or forced upgrade to $20/mo paid plans",
+      "detection_metric": "Daily CI build minutes consumed and edge function invocation count vs. static asset cache-hit ratio",
+      "fallback": "Pre-build static HTML bundles locally or on self-hosted runners and upload pre-compiled artifacts directly via API so cloud build-minute usage stays near zero",
+      "play_id": "serverless_edge_free_tier_empire_hosting",
+      "play_name": "Zero-COGS 1,000-Site Programmatic Hosting on Free Edge Tiers",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Google RSOC/AFD feed seat suspension or upstream traffic-quality clawback",
+      "trigger": "Forcing deceptive 1-click auto-redirects, incentivized clicks, or bot traffic into the wholesale search feed",
+      "impact": "30–60 day payout holdback or termination of the sub-account feed seat",
+      "detection_metric": "Advertiser conversion-rate parity score from the master feed provider and pre-lander bot/ASN filtration rate",
+      "fallback": "Maintain simultaneous accounts across 3+ master syndicators (System1, Tonic, Sedo, Media.net), enforce strict RSOC editorial content compliance, and scrub datacenter/VPN traffic via edge bot challenges before rendering search units",
+      "play_id": "tier1_search_feed_afd_rsoc_arbitrage",
+      "play_name": "Tier-1 Search Feed Arbitrage (Google AFD / RSOC & Yahoo/System1 Wholesale Feeds)",
+      "track_id": "track_2"
+    },
+    {
+      "failure_mode": "False match or unsupported statutory-damages claim",
+      "trigger": "Fingerprint collision, valid license, fair use, or ineligible registration timing",
+      "impact": "Wrongful demand, fee exposure, and loss of platform access",
+      "detection_metric": "Counsel rejection and counter-notice success rates",
+      "fallback": "Withdraw unsupported demands and retain matching only for authorized monitoring and voluntary licensing",
+      "play_id": "copyright_phash_reverse_image_statutory_settlement",
+      "play_name": "Perceptual-Hash (pHash) Reverse-Image & Audio-Stem Statutory Settlement Engines",
+      "track_id": "track_2"
+    }
+  ]
+}

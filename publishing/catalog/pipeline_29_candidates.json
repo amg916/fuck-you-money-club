@@ -20,7 +20,8 @@
     "vol-013-intellectual-property-licensing",
     "vol-014-specialty-finance-brokerage",
     "vol-015-judgment-recovery",
-    "vol-016-probate-real-estate"
+    "vol-016-probate-real-estate",
+    "vol-017-domain-investing"
   ],
   "editorial_tracks": {
     "track_1": {
@@ -18474,7 +18475,7 @@
       "slug": "domain-investing",
       "title": "Domain Investing",
       "category": "Digital asset trading",
-      "production_stage": "candidate_scored",
+      "production_stage": "approved_master",
       "scores": {
         "revenue_potential": 17,
         "profit_margin_potential": 18,
@@ -18491,11 +18492,11 @@
       },
       "total_score": 74,
       "tier_label": "Disciplined Specialist Play",
-      "evidence_confidence": "Moderate",
-      "uncertainty_band": "±6 pts",
+      "evidence_confidence": "High",
+      "uncertainty_band": "±3 pts",
       "uncertainty_bounds": {
-        "low": 68,
-        "high": 80
+        "low": 71,
+        "high": 77
       },
       "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
       "score_rationale": {
@@ -23583,5 +23584,5 @@
       "min_expert_youtube_links_per_chapter": 12
     }
   ],
-  "generated_at": "2026-11-21T22:07:52Z"
+  "generated_at": "2026-11-21T22:14:37Z"
 }
