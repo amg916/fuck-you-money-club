@@ -2,6 +2,59 @@
   "volume_id": "vol-002-surplus-funds-recovery",
   "volume_slug": "vol-002-surplus-funds-recovery",
   "volume_number": 2,
+  "site_ui": {
+    "cover": [
+      "SURPLUS",
+      "FUNDS",
+      "RECOVERY"
+    ],
+    "deck": [
+      "FIND THE SURPLUS. VERIFY THE CLAIM.",
+      "BUILD THE RECOVERY FIRM."
+    ],
+    "lead": "The Complete Playbook for Tax-Sale Overages, Foreclosure Excess Proceeds & Building a Contingent Recovery Firm",
+    "summary": "From tax-sale records and foreclosure dockets to claimant verification, lien priority, and documented disbursement: build a small-team recovery operation around traceable funds and carefully costed casework.",
+    "chapters": [
+      "The surplus recovery business model",
+      "Tax-sale overages & foreclosure proceeds",
+      "Finding surplus funds records",
+      "Screening recovery opportunities",
+      "Tracing owners & eligible claimants",
+      "Lien priority & competing claims",
+      "Claimant outreach & engagement",
+      "Contingency agreements & fee limits",
+      "Building the recovery claim",
+      "Filing & tracking disbursement",
+      "Recovery fees & case economics",
+      "Scaling a contingent recovery firm"
+    ],
+    "flow": [
+      [
+        "DISCOVER",
+        "Find tax-sale & foreclosure surplus"
+      ],
+      [
+        "SCREEN",
+        "Verify funds & filing deadlines"
+      ],
+      [
+        "RESEARCH",
+        "Trace claimants & lien priority"
+      ],
+      [
+        "ENGAGE",
+        "Document authority & fee terms"
+      ],
+      [
+        "FILE",
+        "Submit the supported claim"
+      ],
+      [
+        "RECOVER",
+        "Reconcile proceeds & close"
+      ]
+    ]
+  },
   "parent_brand": "THE FUCK YOU MONEY CLUB",
   "book_series": "THE BIG MONEY PLAYBOOKS",
   "tagline": "Big Money. Small Teams. No Bullshit.",
@@ -24,5 +77,5 @@
   "publication_status": "approved_master",
   "public_deploy_approved": false,
   "paid_sales_approved": false,
-  "updated_at": "2026-11-21T12:31:55Z"
+  "updated_at": "2026-11-21T18:31:12Z"
 }

@@ -8,7 +8,7 @@
 <style>
 :root{color-scheme:dark;--bg:#121311;--panel:#1b1c18;--ink:#f2ecdc;--muted:#c0bba9;--accent:#d6ba76;--on-accent:#161710;--line:#49483c;--paper:#f0e8d5;--paper-ink:#23271e;--serif:Georgia,'Times New Roman',serif;--sans:Arial,Helvetica,sans-serif;--radius:3px}
 html[data-concept=b]{color-scheme:dark;--bg:#09090B;--panel:#18181B;--ink:#FFFFFF;--muted:#B8B8C0;--accent:#FFD400;--on-accent:#09090B;--line:#52525B;--paper:#FFFFFF;--paper-ink:#09090B}
-html[data-concept=b] .hero h1,html[data-concept=b] .flagship-title,html[data-concept=b] .cover-title{font-family:var(--sans);font-weight:900;letter-spacing:-.055em}html[data-concept=b] .hero h1 em{color:var(--on-accent)}.hardcover[data-volume-id="vol-002-surplus-funds-recovery"] .cover-title,.hardcover[data-volume-id="vol-003-digital-product-empire"] .cover-title{font-size:2.45rem}.hardcover[data-volume-id="vol-004-ai-powered-micro-saas"] .cover-title{font-size:2.3rem}.hardcover[data-volume-id="vol-005-high-ticket-affiliate-marketing"] .cover-title{font-size:2.15rem}.volume-switcher{margin-bottom:32px;max-width:540px}.volume-switcher label{display:block;margin-bottom:10px}.volume{text-align:left;color:var(--ink);transition:transform .18s ease,border-color .18s ease}.volume[aria-pressed=true]{border-color:var(--accent);box-shadow:inset 0 4px var(--accent)}button.volume:hover{transform:translateY(-5px);border-color:var(--accent)}.volume-name{font-family:var(--serif);font-size:1.7rem;line-height:1.08;overflow-wrap:anywhere}.volume-status{font-size:.77rem;color:var(--muted)}
+html[data-concept=b] .hero h1,html[data-concept=b] .flagship-title,html[data-concept=b] .cover-title{font-family:var(--sans);font-weight:900;letter-spacing:-.055em}html[data-concept=b] .hero h1 em{color:var(--on-accent)}.hardcover[data-title-fit="medium"] .cover-title,.hardcover[data-volume-id="vol-002-surplus-funds-recovery"] .cover-title,.hardcover[data-volume-id="vol-003-digital-product-empire"] .cover-title{font-size:2.45rem}.hardcover[data-volume-id="vol-004-ai-powered-micro-saas"] .cover-title{font-size:2.3rem}.hardcover[data-title-fit="compact"] .cover-title,.hardcover[data-volume-id="vol-005-high-ticket-affiliate-marketing"] .cover-title{font-size:2.05rem}.volume-switcher{margin-bottom:32px;max-width:540px}.volume-switcher label{display:block;margin-bottom:10px}.volume{text-align:left;color:var(--ink);transition:transform .18s ease,border-color .18s ease}.volume[aria-pressed=true]{border-color:var(--accent);box-shadow:inset 0 4px var(--accent)}button.volume:hover{transform:translateY(-5px);border-color:var(--accent)}.volume-name{font-family:var(--serif);font-size:1.7rem;line-height:1.08;overflow-wrap:anywhere}.volume-status{font-size:.77rem;color:var(--muted)}
 html[data-concept=c]{color-scheme:light;--bg:#eee9dc;--panel:#e1ddcf;--ink:#1d392d;--muted:#526252;--accent:#234a37;--on-accent:#f5efdf;--line:#a1ad9c;--paper:#f6f1e5;--paper-ink:#1d392d}
 *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:120px}body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.6}button,input,select{font:inherit}button,a,input,select{touch-action:manipulation}button,a{ -webkit-tap-highlight-color:transparent}button{cursor:pointer}a{color:inherit;text-underline-offset:5px}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--accent);outline-offset:5px}button:disabled{opacity:.5;cursor:wait}img{max-width:100%;display:block}h1,h2,h3,p{margin-top:0}h1,h2,h3{line-height:1.08}h2{font-family:var(--serif);font-weight:400;font-size:clamp(2.5rem,5vw,4.8rem);letter-spacing:-.04em}h3{font-family:var(--serif);font-weight:400;font-size:1.7rem}p{max-width:65ch}small{font-size:.77rem}.wrap{width:min(1320px,calc(100% - 88px));margin:auto}.eyebrow{font-size:.68rem;font-weight:700;letter-spacing:.19em;text-transform:uppercase}.muted{color:var(--muted)}.rule{border-top:1px solid var(--line)}.section{padding:100px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:32px;margin-bottom:44px}.section-head h2{margin-bottom:0}.section-head p{max-width:36ch;margin-bottom:4px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:16px;padding:14px 22px;border:1px solid var(--line);border-radius:var(--radius);background:transparent;color:var(--ink);text-decoration:none;font-size:.75rem;font-weight:700;letter-spacing:.07em}.btn:hover{background:var(--panel)}.btn.primary{background:var(--accent);color:var(--on-accent);border-color:var(--accent)}.actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center}.skip{position:fixed;top:-100px;left:12px;z-index:100;background:var(--accent);color:var(--on-accent);padding:12px}.skip:focus{top:12px}
 .staging{background:var(--accent);color:var(--on-accent);padding:10px 0;font-size:.59rem;font-weight:700;letter-spacing:.08em}.staging .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}.staging-controls{display:flex;align-items:center;gap:16px}.staging select{background:transparent;color:inherit;border:1px solid currentColor;padding:5px;font-size:.68rem}.staging option{background:var(--bg);color:var(--ink)}.masthead{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:26px 0;border-bottom:1px solid var(--line)}.wordmark{font-size:.8rem;letter-spacing:.08em;font-weight:900;line-height:1.3;text-decoration:none;max-width:190px}.nav{display:flex;align-items:center;gap:28px;font-size:.69rem}.nav a{text-decoration:none}.nav a:hover{text-decoration:underline}.edition{color:var(--muted);font-size:.62rem;letter-spacing:.1em}
@@ -101,12 +101,81 @@ function unwrap(data){return data&&typeof data==='object'&&!Array.isArray(data)&
 function arrayFrom(data,keys){if(Array.isArray(data))return data;for(const key of keys){if(Array.isArray(data?.[key]))return data[key];}return [];}
 function normalizedBusiness(item,index){if(!item||typeof item!=='object')return null;const card=item.scorecard&&typeof item.scorecard==='object'?item.scorecard:item;const name=text(item.name||item.title||item.business_name||item.business||card.title);if(!name)return null;const raw=item.money_to_manpower_score??item.money_to_manpower?.score??item.score?.total??item.score?.score??item.score??item.total_score??card.total_score;const score=(typeof raw==='number'||typeof raw==='string'&&raw.trim()!=='')?Number(raw):NaN;const rawRank=Number(item.rank??card.rank);const rank=Number.isInteger(rawRank)&&rawRank>0?rawRank:(index+1);const trackIds=(Array.isArray(card.track_ids)?card.track_ids:(Array.isArray(item.track_ids)?item.track_ids:[])).filter(t=>typeof t==='string'&&t);const trackLabels=(Array.isArray(card.track_labels)?card.track_labels:(Array.isArray(item.track_labels)?item.track_labels:[])).filter(t=>typeof t==='string'&&t);const plays=(Array.isArray(card.plays)?card.plays:(Array.isArray(item.plays)?item.plays:[])).filter(p=>p&&typeof p==='object');const platformRisks=(Array.isArray(card.platform_risks)?card.platform_risks:(Array.isArray(item.platform_risks)?item.platform_risks:[])).filter(r=>r&&typeof r==='object');return {id:text(item.id??item.business_id??item.slug??card.slug??name),name,category:text(item.category||item.sector||card.category)||'Uncategorized',score:Number.isFinite(score)&&score>=0&&score<=100?score:null,description:text(item.description||item.summary||item.thesis||card.tier_label),methodology:text(item.methodology||item.score_methodology),trackIds,trackLabels,plays,platformRisks,raw,index,rank};}
 function renderBusinesses(){const search=$('#business-search').value.trim().toLowerCase(),category=$('#business-category').value,track=$('#business-track')?.value||'';const rows=state.businesses.filter(b=>(!category||b.category===category)&&(!track||b.trackIds.includes(track))&&[b.name,b.category,b.description,...b.trackLabels,...b.plays.map(p=>text(p?.name)+' '+text(p?.mechanism))].join(' ').toLowerCase().includes(search));rows.sort($('#business-sort').value==='name'?(a,b)=>a.name.localeCompare(b.name):(a,b)=>a.rank-b.rank||(b.score??-1)-(a.score??-1)||a.name.localeCompare(b.name));const body=$('#business-rows');body.replaceChildren();for(const b of rows){const row=element('tr');row.append(element('td','#'+String(b.rank).padStart(2,'0'),'score'),element('td',b.name),element('td',b.category),element('td',b.score===null?'Not rated':String(b.score),'score'));const cell=element('td'),button=element('button','Scorecard ↗','text-button');button.type='button';button.setAttribute('aria-label','Open scorecard for '+b.name);button.addEventListener('click',()=>openScorecard(b));cell.append(button);row.append(cell);body.append(row);}$('#index-status').textContent=rows.length+' shown / '+state.businesses.length+' supplied by the API.'+(state.businesses.length!==29?' The planned index contains 29 businesses; this response does not confirm all 29.':'');if(!rows.length){const row=element('tr'),cell=element('td','No matching businesses. Try another search or category.');cell.colSpan=5;row.append(cell);body.append(row);}}
-function renderVolumes(){document.querySelectorAll('#volume-collection [data-volume-id]').forEach(card=>card.setAttribute('aria-pressed',String(card.dataset.volumeId===state.activeVolume)));}
+function ensureVolumeEntry(volumeId){
+  if(Object.prototype.hasOwnProperty.call(volumes,volumeId))return volumes[volumeId];
+  const m=/^vol-(\d{3})-(.+)$/.exec(volumeId);
+  const num=m?m[1]:'001', rawTitle=m?m[2].replace(/-/g,' ').replace(/\b\w/g,c=>c.toUpperCase()):'Playbook';
+  const words=rawTitle.toUpperCase().split(/\s+/);
+  const coverLines=words.length<=3?words:[words.slice(0,-2).join(' '),words[words.length-2],words[words.length-1]];
+  volumes[volumeId]={
+    number:num, title:rawTitle, score:85, cover:coverLines,
+    deck:['UNDERWRITE THE EDGE. WIRE THE SYSTEM.','COMPOUND NET MARGIN.'],
+    lead:rawTitle+' — Field Manual for the Independent Operator.',
+    summary:'Twelve-chapter operator playbook covering unit economics, sourcing, execution SOPs, statutory boundaries, and small-team leverage.',
+    chapters:['Business model & boundaries','Decision-makers & payment rails','Unit economics & float','Startup capital & stack','Beginner traps & failure modes','Sourcing & first deals','End-to-end operating blueprint','Public records, APIs & tools','Contracts, statutes & scripts','Automation & growth loops','Small-team pod & exit math','First 30-day launch sprint'],
+    flow:[['SOURCE','Mine deal triggers'],['UNDERWRITE','Screen margin & rules'],['ENGAGE','Lock mandate or pre-sell'],['DELIVER','Execute SOP & ledger'],['VERIFY','Audit quality & statutes'],['COMPOUND','Scale lean pod']]
+  };
+  return volumes[volumeId];
+}
+function syncPublishedVolumes(rawList){
+  const list=Array.isArray(rawList)?rawList.filter(v=>v&&typeof v==='object'&&v.status!=='proposed'&&(v.volume_id||v.volume_slug)):[];
+  if(!list.length)return;
+  for(const item of list){
+    const id=text(item.volume_id||item.volume_slug);
+    if(!id)continue;
+    const base=ensureVolumeEntry(id), ui=item.site_ui&&typeof item.site_ui==='object'?item.site_ui:{};
+    const num=String(item.volume_number||base.number||'001').padStart(3,'0');
+    const rawTitle=text(item.title||base.title);
+    const titleStr=rawTitle===rawTitle.toUpperCase()&&volumes[id]?.title&&volumes[id].title!==volumes[id].title.toUpperCase()?volumes[id].title:rawTitle;
+    const scoreVal=Number(item.composite_score??item.score??base.score);
+    volumes[id]={
+      number:num,
+      title:titleStr||base.title,
+      score:Number.isFinite(scoreVal)?scoreVal:base.score,
+      cover:Array.isArray(ui.cover)&&ui.cover.length?ui.cover.map(text):base.cover,
+      deck:Array.isArray(ui.deck)&&ui.deck.length?ui.deck.map(text):base.deck,
+      lead:text(ui.lead||item.subtitle||base.lead),
+      summary:text(ui.summary||base.summary),
+      chapters:Array.isArray(ui.chapters)&&ui.chapters.length===12?ui.chapters.map(text):base.chapters,
+      flow:Array.isArray(ui.flow)&&ui.flow.length===6?ui.flow:base.flow
+    };
+  }
+  const orderedIds=Object.keys(volumes).sort((a,b)=>Number(volumes[a].number)-Number(volumes[b].number));
+  const sel=$('#site-volume');
+  if(sel){
+    sel.replaceChildren(...orderedIds.map(id=>{
+      const v=volumes[id], opt=new Option('Volume '+v.number+' · '+v.title+' ('+v.score+'/100)',id);
+      opt.selected=(id===state.activeVolume);
+      return opt;
+    }));
+  }
+  const shelf=$('#volume-collection');
+  if(shelf){
+    shelf.replaceChildren(...orderedIds.map(id=>{
+      const v=volumes[id], btn=element('button',undefined,'volume');
+      btn.type='button';btn.dataset.volumeId=id;
+      if(Number(v.number)>=3)btn.dataset.testid='volume-'+v.number+'-card';
+      btn.setAttribute('aria-pressed',String(id===state.activeVolume));
+      btn.setAttribute('aria-controls','flagship');
+      btn.append(element('span',v.number,'number'),element('span',v.title,'volume-name'),element('span','APPROVED MASTER / '+v.score+' SCORE','volume-status'));
+      btn.addEventListener('click',()=>{selectVolume(id);$('#flagship').scrollIntoView({block:'start'});$('#site-volume').focus({preventScroll:true});});
+      return btn;
+    }));
+    const countLabel=orderedIds.length===5?'Five':String(orderedIds.length);
+    const shelfEm=$('#collection h2 i');if(shelfEm)shelfEm.textContent=countLabel+' deep dives.';
+  }
+}
+function renderVolumes(data){
+  if(data&&typeof data==='object')syncPublishedVolumes(data.published_volumes||data.volumes);
+  document.querySelectorAll('#volume-collection [data-volume-id]').forEach(card=>card.setAttribute('aria-pressed',String(card.dataset.volumeId===state.activeVolume)));
+}
 function renderActiveVolume(){
-  const volume=volumes[state.activeVolume],cover=$('.hardcover');
+  const volume=ensureVolumeEntry(state.activeVolume),cover=$('.hardcover');
   $('#site-volume').value=state.activeVolume;
   $('#flagship').dataset.volumeId=state.activeVolume;
   cover.dataset.volumeId=state.activeVolume;
+  const maxWord=Math.max(...volume.cover.map(w=>String(w).length));
+  cover.dataset.titleFit=(maxWord>=11||(volume.cover.length>=3&&maxWord>=9))?'compact':((volume.cover.length>=3||maxWord>=9)?'medium':'standard');
   cover.setAttribute('aria-label','Three-dimensional hardcover: '+volume.title+', The Big Money Playbooks, Volume '+volume.number);
   const coverLabel=cover.querySelector('.eyebrow');
   coverLabel.replaceChildren(document.createTextNode('THE BIG MONEY PLAYBOOKS'),element('br'),element('br'),document.createTextNode('VOLUME '+volume.number+' / FIELD MANUAL'));
@@ -131,15 +200,18 @@ function renderActiveVolume(){
   $('.downloads').setAttribute('aria-label','Volume '+volume.number+' previews and exports');
   renderVolumes();
 }
-function volumeFromHash(){const match=/^#volume\/(vol-001-heir-hunting|vol-002-surplus-funds-recovery|vol-003-digital-product-empire|vol-004-ai-powered-micro-saas|vol-005-high-ticket-affiliate-marketing)$/.exec(location.hash);return match?match[1]:null;}
+function volumeFromHash(){const match=/^#volume\/(vol-\d{3}-[a-z0-9-]+)$/.exec(location.hash);return match?match[1]:null;}
 function selectVolume(volumeId){
-  if(!Object.prototype.hasOwnProperty.call(volumes,volumeId))return;
+  if(!/^vol-\d{3}-[a-z0-9-]+$/.test(String(volumeId||'')))return;
+  ensureVolumeEntry(volumeId);
   if(state.activeVolume!==volumeId)loadVolume(volumeId);
   const hash='#volume/'+volumeId;if(location.hash!==hash)location.hash=hash;
 }
 async function loadCatalog(){const retry=$('#retry-catalog');retry.hidden=true;$('#index-status').textContent='Loading the research catalog…';try{const data=unwrap(await json('catalog'));state.catalog=data;state.businesses=arrayFrom(data,['businesses','business_catalog','catalog','items','business_index','opportunities']).map(normalizedBusiness).filter(Boolean);if(!state.businesses.length)throw new Error('No recognized business records were returned.');const category=$('#business-category');category.replaceChildren(new Option('All categories',''));[...new Set(state.businesses.map(b=>b.category))].sort().forEach(name=>category.add(new Option(name,name)));const trackSelect=$('#business-track'),trackMap=data.editorial_tracks||data.pipeline_29_candidates?.editorial_tracks;if(trackSelect&&trackMap&&typeof trackMap==='object'){const cur=trackSelect.value;trackSelect.replaceChildren(new Option('All tracks',''));Object.values(trackMap).filter(t=>t&&t.id).forEach(t=>trackSelect.add(new Option(text(t.short_label||t.name),text(t.id))));trackSelect.value=cur;}const methodology=text(data.methodology||data.score_methodology);if(methodology)$('#methodology').textContent=methodology;renderVolumes(data);renderBusinesses();}catch(error){$('#index-status').textContent='Research index unavailable. '+error.message+' No ratings have been invented.';retry.hidden=false;}}
 async function loadVolume(volumeId){
+  const previousVolume=state.activeVolume;
   const generation=++state.volumeRequest;
+  ensureVolumeEntry(volumeId);
   state.activeVolume=volumeId;state.overview=null;state.manuscript=null;
   state.previewRequest++;
   if($('#preview-modal').open)$('#preview-modal').close();
@@ -154,9 +226,17 @@ async function loadVolume(volumeId){
     json('manuscript',{params:{volume:state.activeVolume}})
   ]);
   if(generation!==state.volumeRequest)return;
+  if(overview.status==='rejected'&&manuscript.status==='rejected'&&!['vol-001-heir-hunting','vol-002-surplus-funds-recovery','vol-003-digital-product-empire','vol-004-ai-powered-micro-saas','vol-005-high-ticket-affiliate-marketing'].includes(volumeId)){
+    delete volumes[volumeId];state.activeVolume=previousVolume;renderActiveVolume();
+    $('#flagship').setAttribute('aria-busy','false');
+    $('#volume-status').textContent='Requested volume is not available.';
+    return;
+  }
   const issues=[];
   if(overview.status==='fulfilled'){
     state.overview=unwrap(overview.value);
+    syncPublishedVolumes(state.overview?.published_volumes||state.overview?.volumes);
+    renderActiveVolume();
     $('#research-status').textContent=volumes[volumeId].title+' research overview connected. Source availability does not independently verify research claims.';
   }else{
     issues.push('Research overview unavailable.');

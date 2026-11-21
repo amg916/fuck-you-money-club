@@ -1,9 +1,14 @@
 """Structural publication gates; visual/press approval remains an owner gate."""
 from __future__ import annotations
 
+from collections import OrderedDict
+from copy import deepcopy
+import hashlib
 import io
+import json
 from pathlib import Path
 import re
+from threading import Lock
 import xml.etree.ElementTree as ET
 import zipfile
 
@@ -21,6 +26,24 @@ from .exporters import render_fymc_pdf_bytes, render_fymc_epub_bytes, _svg_asset
 
 
 _FORBIDDEN = (chr(0x2122), chr(0x00AE), 'undefined', 'NaN', 'i.ytimg.com')
+
+
+_SINGLE_VOLUME_QA_CACHE: OrderedDict[str, dict] = OrderedDict()
+_SINGLE_VOLUME_QA_CACHE_LOCK = Lock()
+_SINGLE_VOLUME_QA_CACHE_MAXSIZE = 128
+_QA_TIMESTAMP_KEYS = frozenset({
+    'updated_at', 'generated_at', 'loaded_at', 'synced_at', 'reviewed_at',
+})
+
+
+def _clean_qa_cache_content(value):
+    """Omit only volatile timestamp fields without mutating publishing state."""
+    if isinstance(value, dict):
+        return {key: _clean_qa_cache_content(item) for key, item in value.items()
+                if key not in _QA_TIMESTAMP_KEYS}
+    if isinstance(value, (list, tuple)):
+        return [_clean_qa_cache_content(item) for item in value]
+    return value
 
 
 def _result(issues, **details):
@@ -439,6 +462,25 @@ def run_full_qa_suite(root_dir: Path, state: dict, *, volume_id: object = None) 
 def _run_single_volume_qa(state: dict, volume_id: object = None) -> dict:
     """Validate one volume without overwriting previews or aggregating counts."""
     metadata, manuscript, workbook, diagrams, scorecard, approved = _unpack_state(state, volume_id=volume_id)
+    cache_content = (
+        *(_clean_qa_cache_content(value)
+          for value in (metadata, manuscript, workbook, diagrams, scorecard)),
+        approved,
+        MIN_EXPERT_YOUTUBE_LINKS_PER_BOOK,
+        MIN_EXPERT_YOUTUBE_LINKS_PER_CHAPTER,
+    )
+    try:
+        cache_key = hashlib.sha256(json.dumps(
+            cache_content, sort_keys=True, separators=(',', ':'),
+        ).encode('utf-8')).hexdigest()
+    except (TypeError, ValueError):
+        # Non-JSON preview inputs still receive the complete validation pass.
+        cache_key = None
+    if cache_key is not None:
+        with _SINGLE_VOLUME_QA_CACHE_LOCK:
+            cached = _SINGLE_VOLUME_QA_CACHE.get(cache_key)
+            if cached is not None:
+                return deepcopy(cached)
     issues, exports, svg_count, template_count = [], {}, 0, 0
     yt_report = validate_manuscript_youtube_links(manuscript)
     issues.extend(yt_report['issues'])
@@ -499,7 +541,14 @@ def _run_single_volume_qa(state: dict, volume_id: object = None) -> dict:
              'youtube_links_floor': yt_report['passed'] and exports_yt_ok,
              'owner_design_approved': approved in concepts,
              'visual_proofing': 'not_performed', 'epubcheck': 'not_performed', 'press_preflight': 'not_performed'}
-    return {'overall_pass': not issues, 'checked_svg_count': svg_count,
-            'checked_template_renders': template_count, 'concept_exports': exports,
-            'youtube_links_report': yt_report,
-            'gates': gates, 'issues': issues, 'scope': 'automated preview QA, not release authorization'}
+    result = {'overall_pass': not issues, 'checked_svg_count': svg_count,
+              'checked_template_renders': template_count, 'concept_exports': exports,
+              'youtube_links_report': yt_report,
+              'gates': gates, 'issues': issues, 'scope': 'automated preview QA, not release authorization'}
+    if cache_key is not None:
+        with _SINGLE_VOLUME_QA_CACHE_LOCK:
+            if cache_key not in _SINGLE_VOLUME_QA_CACHE:
+                _SINGLE_VOLUME_QA_CACHE[cache_key] = deepcopy(result)
+                while len(_SINGLE_VOLUME_QA_CACHE) > _SINGLE_VOLUME_QA_CACHE_MAXSIZE:
+                    _SINGLE_VOLUME_QA_CACHE.popitem(last=False)
+    return result

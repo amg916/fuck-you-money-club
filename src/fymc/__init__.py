@@ -5,6 +5,12 @@ from __future__ import annotations
 import re
 from urllib.parse import parse_qs, urlparse
 
+from .volume_registry import (
+    ALL_VOLUME_SPECS,
+    get_published_volume_ids,
+    resolve_registered_volume_slug,
+)
+
 PARENT_BRAND = "THE FUCK YOU MONEY CLUB"
 BOOK_SERIES = "THE BIG MONEY PLAYBOOKS"
 BRAND_TAGLINE = "Big Money. Small Teams. No Bullshit."
@@ -14,13 +20,31 @@ VOLUME_002_ID = "vol-002-surplus-funds-recovery"
 VOLUME_003_ID = "vol-003-digital-product-empire"
 VOLUME_004_ID = "vol-004-ai-powered-micro-saas"
 VOLUME_005_ID = "vol-005-high-ticket-affiliate-marketing"
-PUBLISHED_VOLUME_IDS = (
-    FLAGSHIP_VOLUME_ID,
-    VOLUME_002_ID,
-    VOLUME_003_ID,
-    VOLUME_004_ID,
-    VOLUME_005_ID,
-)
+VOLUME_006_ID = ALL_VOLUME_SPECS[6]["volume_id"]
+VOLUME_007_ID = ALL_VOLUME_SPECS[7]["volume_id"]
+VOLUME_008_ID = ALL_VOLUME_SPECS[8]["volume_id"]
+VOLUME_009_ID = ALL_VOLUME_SPECS[9]["volume_id"]
+VOLUME_010_ID = ALL_VOLUME_SPECS[10]["volume_id"]
+VOLUME_011_ID = ALL_VOLUME_SPECS[11]["volume_id"]
+VOLUME_012_ID = ALL_VOLUME_SPECS[12]["volume_id"]
+VOLUME_013_ID = ALL_VOLUME_SPECS[13]["volume_id"]
+VOLUME_014_ID = ALL_VOLUME_SPECS[14]["volume_id"]
+VOLUME_015_ID = ALL_VOLUME_SPECS[15]["volume_id"]
+VOLUME_016_ID = ALL_VOLUME_SPECS[16]["volume_id"]
+VOLUME_017_ID = ALL_VOLUME_SPECS[17]["volume_id"]
+VOLUME_018_ID = ALL_VOLUME_SPECS[18]["volume_id"]
+VOLUME_019_ID = ALL_VOLUME_SPECS[19]["volume_id"]
+VOLUME_020_ID = ALL_VOLUME_SPECS[20]["volume_id"]
+VOLUME_021_ID = ALL_VOLUME_SPECS[21]["volume_id"]
+VOLUME_022_ID = ALL_VOLUME_SPECS[22]["volume_id"]
+VOLUME_023_ID = ALL_VOLUME_SPECS[23]["volume_id"]
+VOLUME_024_ID = ALL_VOLUME_SPECS[24]["volume_id"]
+VOLUME_025_ID = ALL_VOLUME_SPECS[25]["volume_id"]
+VOLUME_026_ID = ALL_VOLUME_SPECS[26]["volume_id"]
+VOLUME_027_ID = ALL_VOLUME_SPECS[27]["volume_id"]
+VOLUME_028_ID = ALL_VOLUME_SPECS[28]["volume_id"]
+VOLUME_029_ID = ALL_VOLUME_SPECS[29]["volume_id"]
+PUBLISHED_VOLUME_IDS = get_published_volume_ids()
 OWNER_APPROVED_CONCEPT_ID = "concept_b"
 MIN_EXPERT_YOUTUBE_LINKS_PER_BOOK = 150
 TARGET_EXPERT_YOUTUBE_LINKS_PER_BOOK = "150-200+"
@@ -29,33 +53,7 @@ MIN_EXPERT_YOUTUBE_LINKS_PER_CHAPTER = 12
 
 def resolve_volume_slug(volume_id: object = None) -> str:
     """Resolve supported volume aliases without coercing other value types."""
-    if volume_id is None:
-        return FLAGSHIP_VOLUME_ID
-    if isinstance(volume_id, bool):
-        raise ValueError("Invalid volume_id")
-    if isinstance(volume_id, int):
-        if volume_id == 1:
-            return FLAGSHIP_VOLUME_ID
-        if volume_id == 2:
-            return VOLUME_002_ID
-        if volume_id == 3:
-            return VOLUME_003_ID
-        if volume_id == 4:
-            return VOLUME_004_ID
-        if volume_id == 5:
-            return VOLUME_005_ID
-    elif isinstance(volume_id, str):
-        if volume_id in {"", "1", "001", "vol-001", FLAGSHIP_VOLUME_ID, "heir-hunting"}:
-            return FLAGSHIP_VOLUME_ID
-        if volume_id in {"2", "002", "vol-002", VOLUME_002_ID, "surplus-funds-recovery"}:
-            return VOLUME_002_ID
-        if volume_id in {"3", "003", "vol-003", VOLUME_003_ID, "digital-product-empire"}:
-            return VOLUME_003_ID
-        if volume_id in {"4", "004", "vol-004", VOLUME_004_ID, "ai-powered-micro-saas"}:
-            return VOLUME_004_ID
-        if volume_id in {"5", "005", "vol-005", VOLUME_005_ID, "high-ticket-affiliate-marketing"}:
-            return VOLUME_005_ID
-    raise ValueError("Invalid volume_id")
+    return resolve_registered_volume_slug(volume_id, allow_unpublished=False)
 
 
 def parse_expert_youtube_deep_link(url: object) -> tuple[str, int] | None:

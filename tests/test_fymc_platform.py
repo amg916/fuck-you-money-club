@@ -4,6 +4,8 @@ Run with: python -m unittest tests.test_fymc_platform -v
 Imports and server startup are deferred until test execution. Required public
 functions are resolved from src.fymc; signature mismatches fail explicitly.
 """
+from __future__ import annotations
+
 import importlib
 import inspect
 import io
@@ -876,6 +878,99 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
         state = SimpleNamespace(lock=threading.RLock(), data_dir=self.root,
                                 abridged_list=[], raw_videos=[])
         return handle_fymc_http(Handler(), state, method, path, {}, body)
+
+    def test_phase0_registry_order_and_incremental_manifest(self):
+        from unittest.mock import patch
+        from src.fymc import ALL_VOLUME_SPECS, PUBLISHED_VOLUME_IDS, VOLUME_005_ID
+        from src.fymc.scorecard_engine import build_29_candidate_pipeline
+        from src.fymc.volume_registry import get_volume_spec, resolve_registered_volume_slug
+
+        specs = list(ALL_VOLUME_SPECS.values())
+        self.assertEqual(list(ALL_VOLUME_SPECS), list(range(1, 30)))
+        self.assertEqual({s["candidate_number"] for s in specs}, set(range(1, 30)))
+        self.assertEqual(len({s["volume_id"] for s in specs}), 29)
+        # The two original volumes retain their numbers; the remainder is ranked.
+        ranked = build_29_candidate_pipeline()
+        expected = [1, 2] + [c["candidate_number"] for c in ranked
+                             if c["candidate_number"] not in (1, 2)]
+        self.assertEqual([s["candidate_number"] for s in specs], expected)
+        scores = {c["candidate_number"]: c["total_score"] for c in ranked}
+        for number, spec in ALL_VOLUME_SPECS.items():
+            self.assertEqual(spec["volume_number"], number)
+            self.assertEqual(spec["score"], scores[spec["candidate_number"]])
+            self.assertEqual(len(spec["site_ui"]["chapters"]), 12)
+            self.assertEqual(len(spec["site_ui"]["flow"]), 6)
+            self.assertEqual(len(spec["site_ui"]["deck"]), 2)
+            self.assertIn(len(spec["site_ui"]["cover"]), (2, 3))
+            for alias in (number, str(number), f"{number:03d}", f"vol-{number:03d}",
+                          spec["volume_id"], spec["short_slug"]):
+                self.assertEqual(get_volume_spec(alias), spec)
+                self.assertEqual(resolve_registered_volume_slug(alias, allow_unpublished=True),
+                                 spec["volume_id"])
+                if spec["volume_id"] not in PUBLISHED_VOLUME_IDS:
+                    with self.assertRaisesRegex(ValueError, "Invalid volume_id"):
+                        resolve_registered_volume_slug(alias)
+        for invalid in (True, False, 1.0, [], {}, " 1", "01", "VOL-001", 0, 30):
+            with self.assertRaisesRegex(ValueError, "Invalid volume_id"):
+                resolve_registered_volume_slug(invalid)
+        untouched = {p: (p.read_bytes(), p.stat().st_mtime_ns)
+                     for p in (self.pub / "volumes").rglob("*")
+                     if p.is_file() and VOLUME_005_ID not in p.parts}
+        with patch.object(self.store, "_fresh_volume_builders",
+                          wraps=self.store._fresh_volume_builders) as builders:
+            result = self.store.sync_publishing_store(self.root, only_volumes=(VOLUME_005_ID,))
+        self.assertEqual([c.args[0] for c in builders.call_args_list], [VOLUME_005_ID])
+        self.assertEqual(set(result["volumes"]), set(PUBLISHED_VOLUME_IDS))
+        self.assertEqual(result["counts"]["chapters"], 12)
+        for path, prior in untouched.items():
+            self.assertEqual((path.read_bytes(), path.stat().st_mtime_ns), prior)
+        self.assertTrue(self.store.verify_commit_manifest(self.root, strict=True)["passed"])
+
+    def test_phase0_builder_cache_and_runtime_activation(self):
+        from unittest.mock import patch
+        from src.fymc import FLAGSHIP_VOLUME_ID, resolve_volume_slug, volume_registry
+        from src.fymc.scorecard_engine import get_volume_scorecard
+        from src.fymc.http_routes import _five_volume_collection
+
+        self.store._VOLUME_BUILDERS_CACHE.clear()
+        with patch.object(self.store, "load_volume_builders",
+                          wraps=self.store.load_volume_builders) as loader:
+            first = self.store._fresh_volume_builders(FLAGSHIP_VOLUME_ID, [])
+            first[2]["title"] = "Caller mutation"
+            second = self.store._fresh_volume_builders(FLAGSHIP_VOLUME_ID, [])
+            self.assertNotEqual(second[2]["title"], "Caller mutation")
+            self.assertEqual(loader.call_count, 1)
+            self.store._fresh_volume_builders(FLAGSHIP_VOLUME_ID, [{"video_id": "different"}])
+            self.assertEqual(loader.call_count, 2)
+        with patch.object(volume_registry, "ACTIVE_PUBLISHED_NUMBERS", tuple(range(1, 30))):
+            self.assertEqual(len(volume_registry.get_published_volume_ids()), 29)
+            self.assertEqual(resolve_volume_slug(6), volume_registry.ALL_VOLUME_SPECS[6]["volume_id"])
+            card = get_volume_scorecard(6)
+            self.assertEqual(card["candidate_number"], 29)
+            self.assertEqual(card["production_stage"], "approved_master")
+            self.assertEqual(card["evidence_confidence"], "High")
+            self.assertEqual(len(_five_volume_collection(self.state)), 29)
+
+    def test_phase0_qa_cache_content_and_copy_isolation(self):
+        from copy import deepcopy
+        from unittest.mock import patch
+        from src.fymc import qa_validator as qa
+
+        qa._SINGLE_VOLUME_QA_CACHE.clear()
+        first = qa._run_single_volume_qa(self.state)
+        timestamp_only = deepcopy(self.state)
+        timestamp_only["volume"]["metadata"]["updated_at"] = "new timestamp"
+        with patch.object(qa, "render_fymc_pdf_bytes", side_effect=AssertionError("cache miss")) as pdf:
+            cached = qa._run_single_volume_qa(timestamp_only)
+            self.assertEqual(cached, first)
+            pdf.assert_not_called()
+            cached["issues"].append("Caller mutation")
+            self.assertEqual(qa._run_single_volume_qa(self.state), first)
+        changed = deepcopy(self.state)
+        changed["volume"]["metadata"]["title"] = "A different title"
+        with patch.object(qa, "render_fymc_pdf_bytes", wraps=qa.render_fymc_pdf_bytes) as pdf:
+            qa._run_single_volume_qa(changed)
+            self.assertTrue(pdf.called)
 
     def test_01_corrupt_store_refusal_and_http_500(self):
         path = self.pub / 'site/newsletter_signups.json'
@@ -2372,7 +2467,7 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
 
         self.assertEqual(OWNER_APPROVED_CONCEPT_ID, "concept_b")
         self.assertEqual(
-            PUBLISHED_VOLUME_IDS,
+            PUBLISHED_VOLUME_IDS[:5],
             (
                 FLAGSHIP_VOLUME_ID,
                 VOLUME_002_ID,
@@ -2707,7 +2802,7 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
         self.assertTrue(qa["gates"]["all_volumes_pass"])
         self.assertEqual(
             set(qa["volume_reports"]),
-            {FLAGSHIP_VOLUME_ID, VOLUME_002_ID, VOLUME_003_ID, VOLUME_004_ID, VOLUME_005_ID},
+            set(PUBLISHED_VOLUME_IDS),
         )
 
         server = create_server("127.0.0.1", 0, str(self.root))
@@ -2734,7 +2829,7 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
             code, ov2 = http_req(f"/api/fymc/overview?volume={VOLUME_002_ID}")
             self.assertEqual(code, 200)
             self.assertEqual(ov2["active_volume_id"], VOLUME_002_ID)
-            self.assertEqual(len(ov2["published_volumes"]), 5)
+            self.assertEqual(len(ov2["published_volumes"]), len(PUBLISHED_VOLUME_IDS))
             self.assertEqual(ov2["volumes"][1]["status"], "approved_master")
             self.assertEqual(ov2["volumes"][2]["status"], "approved_master")
             self.assertEqual(ov2["volumes"][3]["status"], "approved_master")

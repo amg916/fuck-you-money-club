@@ -13,13 +13,8 @@ from copy import deepcopy
 from math import isfinite
 import re
 
-from . import (
-    VOLUME_002_ID,
-    VOLUME_003_ID,
-    VOLUME_004_ID,
-    VOLUME_005_ID,
-    resolve_volume_slug,
-)
+from . import resolve_volume_slug, volume_registry
+from .volume_registry import get_volume_spec
 
 SCORE_KEYS = ("money_to_manpower_score", "total_score", "composite_score", "score")
 _SCORE_STRING_RE = re.compile(r"^\s*([+-]?\d+(?:\.\d+)?)\s*(?:/\s*100)?\s*$")
@@ -3513,6 +3508,13 @@ def compute_scorecard(spec: dict) -> dict:
     confidence = spec.get("evidence_confidence")
     if not isinstance(confidence, str) or confidence not in _CONFIDENCE_BANDS:
         raise ValueError("invalid evidence_confidence")
+    published_candidates = {
+        volume_registry.ALL_VOLUME_SPECS[n]["candidate_number"]
+        for n in volume_registry.ACTIVE_PUBLISHED_NUMBERS
+    }
+    is_published = spec.get("candidate_number") in published_candidates
+    if is_published:
+        confidence = "High"
     total = sum(scores.values())
     uncertainty_band = _CONFIDENCE_BANDS[confidence]
     band_delta = int(uncertainty_band.removeprefix("±").split()[0])
@@ -3549,7 +3551,7 @@ def compute_scorecard(spec: dict) -> dict:
         "slug": spec.get("slug", ""),
         "title": spec.get("title", ""),
         "category": spec.get("category", ""),
-        "production_stage": spec.get("production_stage", "candidate_scored"),
+        "production_stage": "approved_master" if is_published else spec.get("production_stage", "candidate_scored"),
         "scores": dict(scores),
         "dimension_max": dict(SCORE_DIMENSIONS),
         "total_score": total,
@@ -3615,16 +3617,11 @@ def get_volume_005_scorecard() -> dict:
 
 def get_volume_scorecard(volume_id: object = None) -> dict:
     """Return the scorecard for a supported volume alias."""
-    slug = resolve_volume_slug(volume_id)
-    if slug == VOLUME_002_ID:
-        return get_volume_002_scorecard()
-    if slug == VOLUME_003_ID:
-        return get_volume_003_scorecard()
-    if slug == VOLUME_004_ID:
-        return get_volume_004_scorecard()
-    if slug == VOLUME_005_ID:
-        return get_volume_005_scorecard()
-    return get_flagship_scorecard()
+    spec = get_volume_spec(resolve_volume_slug(volume_id))
+    return compute_scorecard(next(
+        candidate for candidate in _CANDIDATE_SPECS
+        if candidate["candidate_number"] == spec["candidate_number"]
+    ))
 
 
 def _money_range(values: tuple) -> str:
@@ -3670,8 +3667,12 @@ def _candidate(number, title, category, points, gross, margins, capital, opex,
                 "additional demand, working capital and delivery capacity."
             ),
         }
-    confidence = "High" if number in {1, 2, 5, 9, 22, 24, 27} else confidence
-    stage = ("approved_master" if number in {1, 2, 22, 24, 27} else
+    published_candidates = {
+        volume_registry.ALL_VOLUME_SPECS[n]["candidate_number"]
+        for n in volume_registry.ACTIVE_PUBLISHED_NUMBERS
+    }
+    confidence = "High" if number in published_candidates | {5, 9} else confidence
+    stage = ("approved_master" if number in published_candidates else
              "research_corpus_ready" if number in {5, 9} else "candidate_scored")
     return {
         "candidate_number": number,

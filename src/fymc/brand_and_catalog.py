@@ -64,9 +64,11 @@ from .scorecard_engine import (
     get_volume_003_scorecard,
     get_volume_004_scorecard,
     get_volume_005_scorecard,
+    get_volume_scorecard,
     compute_scorecard,
     resolve_score_value,
 )
+from .volume_registry import get_published_volume_ids, get_volume_spec, load_volume_builders
 from .research_intelligence import audit_existing_workspace, build_research_database
 from .volume_001_manuscript import (
     build_volume_001_manuscript,
@@ -615,7 +617,7 @@ def _recover_export_journals(root_dir):
     previews_dir = _resolve_contained(root, pub / "previews")
     _recover_single_previews_dir(root, previews_dir)
     if previews_dir.is_dir() and not previews_dir.is_symlink():
-        for slug in PUBLISHED_VOLUME_SLUGS:
+        for slug in get_published_volume_ids():
             if slug == VOLUME_SLUG:
                 continue
             nested = _resolve_contained(root, previews_dir / slug)
@@ -1484,35 +1486,11 @@ def _flagship_scorecard(pipeline: list) -> dict:
 
 
 def _volume_scorecard_for_slug(pipeline: list, volume_slug: str) -> dict:
-    if volume_slug == VOLUME_002_SLUG:
-        scorecard = _as_dict(_invoke(get_volume_002_scorecard), "scorecard")
-        if scorecard:
-            return scorecard
-        for candidate in pipeline:
-            if isinstance(candidate, dict) and candidate.get("candidate_number") == 2:
-                return recompute_candidate_scorecard(candidate)
-    if volume_slug == VOLUME_003_SLUG:
-        scorecard = _as_dict(_invoke(get_volume_003_scorecard), "scorecard")
-        if scorecard:
-            return scorecard
-        for candidate in pipeline:
-            if isinstance(candidate, dict) and candidate.get("candidate_number") == 27:
-                return recompute_candidate_scorecard(candidate)
-    if volume_slug == VOLUME_004_SLUG:
-        scorecard = _as_dict(_invoke(get_volume_004_scorecard), "scorecard")
-        if scorecard:
-            return scorecard
-        for candidate in pipeline:
-            if isinstance(candidate, dict) and candidate.get("candidate_number") == 22:
-                return recompute_candidate_scorecard(candidate)
-    if volume_slug == VOLUME_005_SLUG:
-        scorecard = _as_dict(_invoke(get_volume_005_scorecard), "scorecard")
-        if scorecard:
-            return scorecard
-        for candidate in pipeline:
-            if isinstance(candidate, dict) and candidate.get("candidate_number") == 24:
-                return recompute_candidate_scorecard(candidate)
-    return _flagship_scorecard(pipeline)
+    spec = get_volume_spec(volume_slug)
+    for candidate in pipeline:
+        if isinstance(candidate, dict) and candidate.get("candidate_number") == spec["candidate_number"]:
+            return recompute_candidate_scorecard(candidate)
+    return get_volume_scorecard(volume_slug)
 
 
 # --------------------------------------------------------------------------
@@ -1748,44 +1726,14 @@ def _build_volume_metadata(
 ) -> dict:
     chapters = _as_list(manuscript.get("chapters", manuscript), "chapters")
     yt_count = count_manuscript_youtube_links(chapters)
-    is_vol2 = volume_slug == VOLUME_002_SLUG
-    is_vol3 = volume_slug == VOLUME_003_SLUG
-    is_vol4 = volume_slug == VOLUME_004_SLUG
-    is_vol5 = volume_slug == VOLUME_005_SLUG
-    default_title = (
-        "High-Ticket Affiliate Marketing"
-        if is_vol5
-        else (
-            "AI-Powered Micro SaaS"
-            if is_vol4
-            else (
-                "Digital Product Empire"
-                if is_vol3
-                else ("Surplus Funds Recovery" if is_vol2 else "Heir Hunting")
-            )
-        )
-    )
-    default_subtitle = (
-        "The Money-to-Manpower Playbook for Recurring B2B Software Shares, Fintech CPA Bounties & S2S Attribution"
-        if is_vol5
-        else (
-            "The Money-to-Manpower Playbook for Vertical B2B AI Wedges, Token Metering & Lean SaaS Margins"
-            if is_vol4
-            else (
-                "The Money-to-Manpower Playbook for High-Margin Digital Products & Self-Liquidating Funnels"
-                if is_vol3
-                else (
-                    "The Money-to-Manpower Playbook for Tax-Sale Overages & Foreclosure Excess Proceeds"
-                    if is_vol2
-                    else "The Money-to-Manpower Playbook for Unclaimed Estate Recovery"
-                )
-            )
-        )
-    )
+    spec = get_volume_spec(volume_slug)
+    default_title = spec["title"]
+    default_subtitle = spec["subtitle"]
     return {
         "volume_id": volume_slug,
         "volume_slug": volume_slug,
-        "volume_number": 5 if is_vol5 else (4 if is_vol4 else (3 if is_vol3 else (2 if is_vol2 else 1))),
+        "volume_number": spec["volume_number"],
+        "site_ui": deepcopy(spec["site_ui"]),
         "parent_brand": PARENT_BRAND,
         "book_series": BOOK_SERIES,
         "tagline": BRAND_TAGLINE,
@@ -1821,31 +1769,38 @@ def _build_volume_metadata(
     }
 
 
+_VOLUME_BUILDERS_CACHE: dict[tuple, tuple[dict, dict, dict]] = {}
+_VOLUME_BUILDERS_CACHE_LOCK = threading.Lock()
+
+
 def _fresh_volume_builders(volume_slug: str, abridged: list[dict]) -> tuple[dict, dict, dict]:
-    if volume_slug == VOLUME_002_SLUG:
-        diagrams_data = _as_dict(_invoke(build_volume_002_diagrams_data), "diagrams")
-        workbook = _as_dict(_invoke(build_volume_002_workbook), "worksheets")
-        fresh_manuscript = _as_dict(_invoke(build_volume_002_manuscript, abridged), "chapters")
-        return diagrams_data, workbook, fresh_manuscript
-    if volume_slug == VOLUME_003_SLUG:
-        diagrams_data = _as_dict(_invoke(build_volume_003_diagrams_data), "diagrams")
-        workbook = _as_dict(_invoke(build_volume_003_workbook), "worksheets")
-        fresh_manuscript = _as_dict(_invoke(build_volume_003_manuscript, abridged), "chapters")
-        return diagrams_data, workbook, fresh_manuscript
-    if volume_slug == VOLUME_004_SLUG:
-        diagrams_data = _as_dict(_invoke(build_volume_004_diagrams_data), "diagrams")
-        workbook = _as_dict(_invoke(build_volume_004_workbook), "worksheets")
-        fresh_manuscript = _as_dict(_invoke(build_volume_004_manuscript, abridged), "chapters")
-        return diagrams_data, workbook, fresh_manuscript
-    if volume_slug == VOLUME_005_SLUG:
-        diagrams_data = _as_dict(_invoke(build_volume_005_diagrams_data), "diagrams")
-        workbook = _as_dict(_invoke(build_volume_005_workbook), "worksheets")
-        fresh_manuscript = _as_dict(_invoke(build_volume_005_manuscript, abridged), "chapters")
-        return diagrams_data, workbook, fresh_manuscript
-    diagrams_data = _as_dict(_invoke(build_volume_001_diagrams_data), "diagrams")
-    workbook = _as_dict(_invoke(build_volume_001_workbook), "worksheets")
-    fresh_manuscript = _as_dict(_invoke(build_volume_001_manuscript, abridged), "chapters")
-    return diagrams_data, workbook, fresh_manuscript
+    spec = get_volume_spec(volume_slug)
+    num = spec["volume_number"]
+    source_path = Path(__file__).with_name(f"volume_{num:03d}_manuscript.py")
+    fingerprint = (
+        len(abridged),
+        hashlib.sha256(json.dumps(
+            abridged,
+            sort_keys=True,
+            default=str,
+            separators=(",", ":"),
+        ).encode("utf-8")).hexdigest()[:24],
+    )
+    key = (spec["volume_id"], fingerprint, source_path.stat().st_mtime_ns)
+    with _VOLUME_BUILDERS_CACHE_LOCK:
+        if key in _VOLUME_BUILDERS_CACHE:
+            return deepcopy(_VOLUME_BUILDERS_CACHE[key])
+    diagrams_builder, manuscript_builder, workbook_builder = load_volume_builders(volume_slug)
+    result = (
+        _as_dict(_invoke(diagrams_builder), "diagrams"),
+        _as_dict(_invoke(workbook_builder), "worksheets"),
+        _as_dict(_invoke(manuscript_builder, abridged), "chapters"),
+    )
+    with _VOLUME_BUILDERS_CACHE_LOCK:
+        _VOLUME_BUILDERS_CACHE[key] = deepcopy(result)
+        while len(_VOLUME_BUILDERS_CACHE) > 64:
+            del _VOLUME_BUILDERS_CACHE[next(iter(_VOLUME_BUILDERS_CACHE))]
+    return result
 
 
 def sync_publishing_store(
@@ -1853,13 +1808,19 @@ def sync_publishing_store(
     abridged_videos: list[dict] | None = None,
     raw_videos: list[dict] | None = None,
     force: bool = False,
+    *,
+    only_volumes: tuple[str, ...] | list[str] | set[str] | None = None,
 ) -> dict:
-    """Build/refresh the whole ``publishing/`` store on disk.
+    """Refresh shared publishing data and all or selected volume files.
 
     Existing owner-controlled state (gates, pricing hypotheses, preview concept,
     chapter edits, graphics review notes, newsletter subscribers) is preserved
     unless ``force`` is set.
     """
+    published_slugs = get_published_volume_ids()
+    target_slugs = set(published_slugs) if only_volumes is None else {
+        resolve_volume_slug(item) for item in only_volumes
+    }
     with _root_lock(root_dir):
         root = Path(root_dir).resolve()
         _recover_journal(root)
@@ -1902,7 +1863,7 @@ def sync_publishing_store(
             "rating_system": RATING_SYSTEM_NAME,
             "candidate_count": len(pipeline),
             "flagship_volume_id": FLAGSHIP_VOLUME_ID,
-            "published_volume_ids": list(PUBLISHED_VOLUME_SLUGS),
+            "published_volume_ids": list(published_slugs),
             "editorial_tracks": deepcopy(TRACK_DEFINITIONS),
             "editorial_plays": deepcopy(PLAY_DEFINITIONS),
             "candidates": pipeline,
@@ -1944,9 +1905,31 @@ def sync_publishing_store(
         flagship_graphics_reviews: dict = {}
         flagship_workbook: dict = {}
 
-        for vol_slug in PUBLISHED_VOLUME_SLUGS:
+        for vol_slug in published_slugs:
             vol_dir = _volume_dir(root, vol_slug)
             vol_chapters_dir = _resolve_contained(root, vol_dir / "chapters")
+            if vol_slug not in target_slugs:
+                chapter_files = []
+                for path in sorted(vol_chapters_dir.glob("chapter-*.md")):
+                    _resolve_contained(root, path)
+                    chapter_files.append(str(path))
+                volume_paths_by_slug[vol_slug] = {
+                    "volume_dir": str(vol_dir),
+                    **{name: str(vol_dir / (name + ".json")) for name in (
+                        "metadata", "scorecard", "diagrams_data", "manuscript",
+                        "workbook", "graphics_reviews",
+                    )},
+                    "chapters": chapter_files,
+                }
+                if vol_slug == VOLUME_SLUG:
+                    flagship_chapter_files = chapter_files
+                    flagship_graphics_reviews = _read_json(
+                        vol_dir / "graphics_reviews.json", {}, strict=True
+                    ) or {}
+                    flagship_workbook = _read_json(
+                        vol_dir / "workbook.json", {}, strict=True
+                    ) or {}
+                continue
             vol_scorecard = _volume_scorecard_for_slug(pipeline, vol_slug)
             vol_diagrams_data, vol_workbook, vol_fresh_manuscript = _fresh_volume_builders(
                 vol_slug, abridged
@@ -2034,7 +2017,7 @@ def sync_publishing_store(
             },
             "counts": {
                 "candidates": len(pipeline),
-                "published_volumes": len(PUBLISHED_VOLUME_SLUGS),
+                "published_volumes": len(published_slugs),
                 "chapters": len(flagship_chapter_files),
                 "diagrams": len(flagship_graphics_reviews.get("diagram_graphic_ids", [])),
                 "covers": len(flagship_graphics_reviews.get("cover_graphic_ids", [])),
@@ -2068,7 +2051,7 @@ def _ensure_initialized(root_dir: Path) -> None:
         pub / "research" / "research_database_summary.json",
         pub / "site" / "newsletter_signups.json",
     ]
-    for vol_slug in PUBLISHED_VOLUME_SLUGS:
+    for vol_slug in get_published_volume_ids():
         vol_dir = _volume_dir(root_dir, vol_slug)
         required.extend(
             vol_dir / name
@@ -2084,7 +2067,7 @@ def _ensure_initialized(root_dir: Path) -> None:
     for path in required:
         _resolve_contained(root_dir, path)
         _read_json(path, strict=True)
-    for vol_slug in PUBLISHED_VOLUME_SLUGS:
+    for vol_slug in get_published_volume_ids():
         vol_dir = _volume_dir(root_dir, vol_slug)
         required.extend(
             vol_dir / "chapters" / _chapter_filename(i)
@@ -2109,13 +2092,7 @@ def _load_single_volume_bundle(root: Path, vol_slug: str, read_store) -> dict:
     for chapter in manuscript.get("chapters", []):
         chapter["revision"] = _chapter_revision(chapter)
     scorecard = read_store(vol_dir / "scorecard.json", {}) or {}
-    default_cand_num = (
-        24 if vol_slug == VOLUME_005_SLUG
-        else (
-            22 if vol_slug == VOLUME_004_SLUG
-            else (27 if vol_slug == VOLUME_003_SLUG else (2 if vol_slug == VOLUME_002_SLUG else 1))
-        )
-    )
+    default_cand_num = get_volume_spec(vol_slug)["candidate_number"]
     if isinstance(scorecard, dict) and "track_ids" not in scorecard:
         scorecard.update(
             get_candidate_track_metadata(scorecard.get("candidate_number", default_cand_num))
@@ -2159,7 +2136,7 @@ def load_publishing_state(
 
         volumes_map: dict[str, dict] = {
             slug: _load_single_volume_bundle(root, slug, read_store)
-            for slug in PUBLISHED_VOLUME_SLUGS
+            for slug in get_published_volume_ids()
         }
         active_bundle = volumes_map[active_slug]
 

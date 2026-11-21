@@ -4,7 +4,8 @@ from __future__ import annotations
 import hashlib
 from pathlib import Path
 
-from . import PUBLISHED_VOLUME_IDS, WORKFLOW_STAGES, resolve_volume_slug
+from . import WORKFLOW_STAGES, resolve_volume_slug
+from .volume_registry import get_published_volume_ids, get_volume_spec
 from .brand_and_catalog import (EDITABLE_CHAPTER_FIELDS, VOLUME_SLUG,
                                 CorruptStoreError, _resolve_contained,
                                 load_publishing_state,
@@ -74,24 +75,21 @@ def _candidate_summary(candidate):
 
 
 def _five_volume_collection(pub):
-    metadata = (pub["volumes"]["vol-001-heir-hunting"]["metadata"]
-                if "volumes" in pub else pub["volume"]["metadata"])
-    volumes = [dict(metadata, status="approved_master")]
-    built_map = {
-        2: "vol-002-surplus-funds-recovery",
-        3: "vol-003-digital-product-empire",
-        4: "vol-004-ai-powered-micro-saas",
-        5: "vol-005-high-ticket-affiliate-marketing",
-    }
-    for number, title in enumerate(("Surplus Funds Recovery", "Digital Product Empire",
-                                    "AI-Powered Micro SaaS", "High-Ticket Affiliate Marketing"), 2):
-        slug = built_map.get(number)
-        if slug and slug in pub.get("volumes", {}):
-            volumes.append(dict(pub["volumes"][slug]["metadata"], status="approved_master"))
+    volumes = []
+    bundles = pub.get("volumes", {})
+    for slug in get_published_volume_ids():
+        spec = get_volume_spec(slug)
+        bundle = bundles.get(slug)
+        if bundle is None and spec["volume_number"] == 1:
+            bundle = pub.get("volume")
+        if bundle and bundle.get("metadata"):
+            volumes.append(dict(bundle["metadata"], status="approved_master"))
         else:
-            volumes.append({"volume_number": number, "title": title,
-                            "status": "proposed", "public_deploy_approved": False,
-                            "paid_sales_approved": False})
+            volumes.append({
+                "volume_id": slug, "volume_number": spec["volume_number"],
+                "title": spec["title"], "status": "proposed",
+                "public_deploy_approved": False, "paid_sales_approved": False,
+            })
     return volumes
 
 
@@ -132,12 +130,13 @@ def handle_fymc_http(handler, state, method: str, path: str, query: dict, body: 
         root_dir = Path(getattr(state, "fymc_root_dir", None) or (
             ROOT if state.data_dir.resolve() == (ROOT / "data").resolve() else state.data_dir))
         with state.lock:
-            root_key = str(root_dir.resolve())
+            published_slugs = get_published_volume_ids()
+            root_key = (str(root_dir.resolve()), published_slugs)
             initialized = getattr(state, "_fymc_initialized_roots", set())
             if root_key not in initialized:
                 if not ((root_dir / "publishing" / "brand" / "brand_system.json").is_file()
                         and all((root_dir / "publishing" / "volumes" / slug / "manuscript.json").is_file()
-                                for slug in PUBLISHED_VOLUME_IDS)):
+                                for slug in published_slugs)):
                     sync_publishing_store(root_dir, state.abridged_list, state.raw_videos, force=False)
                 state._fymc_initialized_roots = initialized | {root_key}
             pub = load_publishing_state(root_dir, volume_id=vol_slug)
@@ -149,7 +148,7 @@ def handle_fymc_http(handler, state, method: str, path: str, query: dict, body: 
                 "concepts": get_all_concepts(), "mockup_specs": MOCKUP_SPECS,
                 "interior_templates": INTERIOR_TEMPLATES,
                 "active_volume_id": pub.get("active_volume_id", vol_slug),
-                "published_volumes": [pub["volumes"][s]["metadata"] for s in PUBLISHED_VOLUME_IDS
+                "published_volumes": [pub["volumes"][s]["metadata"] for s in get_published_volume_ids()
                                       if s in pub.get("volumes", {})],
                 "volume": {key: volume[key] for key in (
                     "metadata", "scorecard", "diagrams_data", "graphics_reviews")},

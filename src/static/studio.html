@@ -95,6 +95,34 @@ async function api(path, body) {
 async function busy(button, task) { if (button.disabled) return; const text = button.textContent; button.disabled = true; button.textContent = 'Working…'; try { return await task(); } catch (error) { notify(error.message,true); } finally { button.disabled = false; button.textContent = text; } }
 function brand() { return S.overview.brand_system || S.overview.state?.brand_system || S.overview.brand || {}; }
 function volume() { return S.manuscript.volume || S.overview.volume || {}; }
+const volumeMetaById = {
+ 'vol-001-heir-hunting':{volume_number:1,title:'Heir Hunting',composite_score:87},
+ 'vol-002-surplus-funds-recovery':{volume_number:2,title:'Surplus Funds Recovery',composite_score:86},
+ 'vol-003-digital-product-empire':{volume_number:3,title:'Digital Product Empire',composite_score:90},
+ 'vol-004-ai-powered-micro-saas':{volume_number:4,title:'AI-Powered Micro SaaS',composite_score:88},
+ 'vol-005-high-ticket-affiliate-marketing':{volume_number:5,title:'High-Ticket Affiliate Marketing',composite_score:87}
+};
+const volumeIds = Object.keys(volumeMetaById);
+function syncVolumeOptions() {
+ const incoming = [...firstList(S.overview.published_volumes, S.overview.volumes), ...firstList(S.catalog.volumes)];
+ incoming.forEach(item => {
+  const id = item?.volume_id || item?.volume_slug;
+  if (!id || item?.status === 'proposed') return;
+  volumeMetaById[id] = {...(volumeMetaById[id] || {}), ...item};
+  if (!volumeIds.includes(id)) volumeIds.push(id);
+ });
+ volumeIds.sort((a,b)=>(Number(volumeMetaById[a]?.volume_number)||999)-(Number(volumeMetaById[b]?.volume_number)||999));
+ const select = $('#studio-volume-select');
+ if (select && volumeIds.length) {
+  select.innerHTML = volumeIds.map(id => {
+   const m = volumeMetaById[id] || {};
+   const num = String(m.volume_number || /^vol-(\d{3})/.exec(id)?.[1] || '001').padStart(3,'0');
+   const sc = m.composite_score ?? m.score;
+   return `<option value="${esc(id)}">Vol. ${esc(num)} · ${esc(m.title || label(id))}${sc!=null?` (${esc(sc)}/100)`:''}</option>`;
+  }).join('');
+  if (volumeIds.includes(S.volumeId)) select.value = S.volumeId;
+ }
+}
 function normalize() {
  S.books = firstList(S.catalog.candidates,S.catalog.pipeline_29_candidates,S.catalog.books,S.catalog.catalog?.candidates,S.catalog.catalog,S.catalog.volumes,Array.isArray(S.catalog)?S.catalog:null);
  const m = S.manuscript.manuscript || volume().manuscript || S.manuscript;
@@ -102,6 +130,7 @@ function normalize() {
  const w = S.manuscript.workbook || volume().workbook || S.overview.volume?.workbook || {};
  S.worksheets = firstList(w.worksheets,w.sheets,Array.isArray(w)?w:null);
  S.concept = brand().gates?.approved_concept_id || brand().active_preview_concept || S.concept;
+ syncVolumeOptions();
 }
 function switchSection(id, focus = false) {
  if (!sections.includes(id)) id = 'dashboard';
@@ -110,10 +139,14 @@ function switchSection(id, focus = false) {
  document.title = `${$(`#nav-${id}`).textContent.replace(/^\d+\s*/, '').trim()} · FYMC Studio`;
 }
 $$('.sidebar nav a').forEach(a=>a.addEventListener('click',()=>switchSection(a.hash.slice(1),true)));
-const volumeIds = ['vol-001-heir-hunting','vol-002-surplus-funds-recovery','vol-003-digital-product-empire','vol-004-ai-powered-micro-saas','vol-005-high-ticket-affiliate-marketing'];
-const volumeNumber = () => S.volumeId===volumeIds[4]?'005':S.volumeId===volumeIds[3]?'004':S.volumeId===volumeIds[2]?'003':S.volumeId===volumeIds[1]?'002':'001';
-const volumeTitle = () => S.volumeId===volumeIds[4]?'High-Ticket Affiliate Marketing':S.volumeId===volumeIds[3]?'AI-Powered Micro SaaS':S.volumeId===volumeIds[2]?'Digital Product Empire':S.volumeId===volumeIds[1]?'Surplus Funds Recovery':'Heir Hunting';
-function hashVolume() { const id=location.hash.slice(1).replace(/^volume\//,''); return location.hash.startsWith('#volume/') && volumeIds.includes(id)?id:null; }
+const volumeNumber = () => String(volumeMetaById[S.volumeId]?.volume_number || /^vol-(\d{3})/.exec(S.volumeId)?.[1] || '001').padStart(3,'0');
+const volumeTitle = () => volumeMetaById[S.volumeId]?.title || label(S.volumeId.replace(/^vol-\d{3}-/,''));
+function hashVolume() {
+ if (!location.hash.startsWith('#volume/')) return null;
+ const id = location.hash.slice(8);
+ if (!/^vol-\d{3}-[a-z0-9-]+$/.test(id)) return null;
+ return (!S.loaded.overview || volumeIds.includes(id)) ? id : null;
+}
 let volumeSeq=0, bootstrapping=false, loadedVolumeId=S.volumeId;
 async function changeVolume(id, openManuscript=false) {
  const select=$('#studio-volume-select');

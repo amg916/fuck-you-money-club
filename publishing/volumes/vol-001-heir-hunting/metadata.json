@@ -2,6 +2,58 @@
   "volume_id": "vol-001-heir-hunting",
   "volume_slug": "vol-001-heir-hunting",
   "volume_number": 1,
+  "site_ui": {
+    "cover": [
+      "HEIR",
+      "HUNTING"
+    ],
+    "deck": [
+      "FIND THE ASSET. TRACE THE HEIR.",
+      "UNDERSTAND THE PROCESS."
+    ],
+    "lead": "A field manual for the intersection of unclaimed assets, family research, and careful casework.",
+    "summary": "From the first lead to a documented claim: a practical editorial framework for understanding the business without confusing practitioner experience with legal authority.",
+    "chapters": [
+      "The business model",
+      "Jurisdiction & compliance",
+      "Finding unclaimed assets",
+      "Qualifying a lead",
+      "Genealogy & heir tracing",
+      "Evidence & documentation",
+      "Ethical first contact",
+      "Agreements & fee limits",
+      "Building the claim file",
+      "Submission & follow-up",
+      "Payment & case closure",
+      "Systems for a small team"
+    ],
+    "flow": [
+      [
+        "DISCOVER",
+        "Source an asset lead"
+      ],
+      [
+        "SCREEN",
+        "Verify local rules"
+      ],
+      [
+        "RESEARCH",
+        "Trace & verify heirs"
+      ],
+      [
+        "ENGAGE",
+        "Contact & agree terms"
+      ],
+      [
+        "DOCUMENT",
+        "Prepare & file claim"
+      ],
+      [
+        "RESOLVE",
+        "Track, reconcile, close"
+      ]
+    ]
+  },
   "parent_brand": "THE FUCK YOU MONEY CLUB",
   "book_series": "THE BIG MONEY PLAYBOOKS",
   "tagline": "Big Money. Small Teams. No Bullshit.",
@@ -24,5 +76,5 @@
   "publication_status": "approved_master",
   "public_deploy_approved": false,
   "paid_sales_approved": false,
-  "updated_at": "2026-11-21T12:31:55Z"
+  "updated_at": "2026-11-21T18:31:12Z"
 }

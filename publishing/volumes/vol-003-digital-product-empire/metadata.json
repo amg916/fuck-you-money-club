@@ -2,6 +2,59 @@
   "volume_id": "vol-003-digital-product-empire",
   "volume_slug": "vol-003-digital-product-empire",
   "volume_number": 3,
+  "site_ui": {
+    "cover": [
+      "DIGITAL",
+      "PRODUCT",
+      "EMPIRE"
+    ],
+    "deck": [
+      "VALIDATE DEMAND. LIQUIDATE CAC.",
+      "SCALE THE CATALOG."
+    ],
+    "lead": "The Complete Playbook for High-Margin Templates, Self-Liquidating Funnels, Merchant-of-Record Checkout & Scaling an $800k/yr 4-Person Catalog",
+    "summary": "From Ad-Library pain validation and modular B2B systems to Merchant-of-Record global tax automation, order bumps, and evergreen traffic loops: build a zero-COGS digital product portfolio with disciplined contribution margins.",
+    "chapters": [
+      "What is a digital product empire?",
+      "Who pays & Merchant-of-Record rails",
+      "Pricing, order bumps & SLO unit math",
+      "Startup stack & zero-COGS hosting",
+      "Disputes, tax nexus & piracy traps",
+      "Demand mining & 72-hour pre-sales",
+      "Packaging, checkout & onboarding",
+      "Pixels, micro-extensions & GEO",
+      "Billing rules, VAT & DMCA protection",
+      "Viral loops & faceless traffic engines",
+      "Scaling a 4-person multi-SKU pod",
+      "First 30-day SKU launch sprint"
+    ],
+    "flow": [
+      [
+        "VALIDATE",
+        "Mine pain & pre-sell"
+      ],
+      [
+        "PACKAGE",
+        "Ship modular v1.0 SKU"
+      ],
+      [
+        "WIRE",
+        "MoR tax & order bumps"
+      ],
+      [
+        "LIQUIDATE",
+        "Co-reg & SLO funnels"
+      ],
+      [
+        "PROTECT",
+        "CE 3.0 & DMCA hygiene"
+      ],
+      [
+        "ASCEND",
+        "Compound annual LTV"
+      ]
+    ]
+  },
   "parent_brand": "THE FUCK YOU MONEY CLUB",
   "book_series": "THE BIG MONEY PLAYBOOKS",
   "tagline": "Big Money. Small Teams. No Bullshit.",
@@ -24,5 +77,5 @@
   "publication_status": "approved_master",
   "public_deploy_approved": false,
   "paid_sales_approved": false,
-  "updated_at": "2026-11-21T12:31:55Z"
+  "updated_at": "2026-11-21T18:31:12Z"
 }

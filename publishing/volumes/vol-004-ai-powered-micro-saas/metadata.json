@@ -2,6 +2,59 @@
   "volume_id": "vol-004-ai-powered-micro-saas",
   "volume_slug": "vol-004-ai-powered-micro-saas",
   "volume_number": 4,
+  "site_ui": {
+    "cover": [
+      "AI-POWERED",
+      "MICRO",
+      "SAAS"
+    ],
+    "deck": [
+      "ISOLATE THE WEDGE. METER THE TOKENS.",
+      "COMPOUND RECURRING MRR."
+    ],
+    "lead": "The Complete Playbook for Vertical B2B Wedges, Token Metering, Cloud-Credit Stacks & Scaling a $700k ARR 3-to-5 Person Software Firm",
+    "summary": "From technographic churn mining and multi-tenant Row-Level Security to hybrid token metering, cloud-credit routers, and diagnostic-scanner outbound: build a sticky B2B AI micro-SaaS with >80% gross margins.",
+    "chapters": [
+      "Vertical B2B wedges vs wrappers",
+      "Who pays & embedded fintech rails",
+      "Hybrid pricing & token metering",
+      "Startup stack & cloud credit grants",
+      "Token loops, injection & churn traps",
+      "Scanner outbound & paid-pilot tests",
+      "Multi-tenant RLS, RAG & <5m onboarding",
+      "Telemetry, extensions & GEO stack",
+      "Zero-retention DPAs & ROSCA rules",
+      "Competitor hijacking & PLG loops",
+      "Scaling a 3-person pod & 4x-6x exits",
+      "First 30-day B2B MRR launch sprint"
+    ],
+    "flow": [
+      [
+        "VALIDATE",
+        "Mine G2 pain & pre-sell pilots"
+      ],
+      [
+        "ISOLATE",
+        "Multi-tenant RLS & RAG"
+      ],
+      [
+        "METER",
+        "Hybrid seat + token caps"
+      ],
+      [
+        "LAUNCH",
+        "Scanner outbound & vs-pages"
+      ],
+      [
+        "RETAIN",
+        "Smart dunning & ZDR trust"
+      ],
+      [
+        "COMPOUND",
+        "Expand NRR & exit-ready books"
+      ]
+    ]
+  },
   "parent_brand": "THE FUCK YOU MONEY CLUB",
   "book_series": "THE BIG MONEY PLAYBOOKS",
   "tagline": "Big Money. Small Teams. No Bullshit.",
@@ -24,5 +77,5 @@
   "publication_status": "approved_master",
   "public_deploy_approved": false,
   "paid_sales_approved": false,
-  "updated_at": "2026-11-21T12:31:56Z"
+  "updated_at": "2026-11-21T18:31:12Z"
 }
