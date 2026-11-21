@@ -1,0 +1,340 @@
+{
+  "diagrams": [
+    {
+      "diagram_id": "diag-01-fixed-scope-delivery",
+      "chart_type": "process_flow",
+      "title": "Productize the Workflow, Not the Promise",
+      "subtitle": "Five stages connect authorized intake to a bounded support retainer.",
+      "chapter_number": 1,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "The Conservative and Base delivery pod has two full-time employees and three contractors; contractors are people, not three additional full-time equivalents. Recognized revenue comprises implementation fees and support retainers.",
+      "caption": "Client intake workflows, deployment checklists, and usage and quality monitoring reduce repeated coordination. Client sales, savings, and transaction volume remain outside agency revenue.",
+      "stages": [
+        {
+          "label": "Qualify one workflow",
+          "value": "Name the owner, inputs, outputs, and exception queue",
+          "numeric_value": 1.0,
+          "detail": "Capture the workflow in a structured intake form. Inspect representative redacted examples and reject projects whose buyer cannot define an acceptance test."
+        },
+        {
+          "label": "Contract a bounded sprint",
+          "value": "Price one deliverable with explicit change rules",
+          "numeric_value": 2.0,
+          "detail": "Specify supported systems, transaction limits, acceptance criteria, data-processing terms, and IP rights. Quote additional connectors and workflow branches as separately priced changes."
+        },
+        {
+          "label": "Build against fixtures",
+          "value": "Implement with client-owned, least-privilege service accounts",
+          "numeric_value": 3.0,
+          "detail": "Use GitHub for versioned code and n8n or a Python worker for orchestration. Keep credentials outside prompts; test retrieval boundaries, malformed inputs, and retry idempotency with synthetic fixtures."
+        },
+        {
+          "label": "Evaluate and deploy",
+          "value": "Require evidence before enabling production writes",
+          "numeric_value": 4.0,
+          "detail": "Run a held-out evaluation set, record failure categories, and rehearse rollback. The client owner accepts the bounded workflow; consequential outputs retain human review."
+        },
+        {
+          "label": "Operate within limits",
+          "value": "Monitor usage, quality, incidents, and renewal evidence",
+          "numeric_value": 5.0,
+          "detail": "Track cost per completed task, exception rate, and review workload. Define included support hours, response windows, usage ceilings, and overage pricing before the retainer begins."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-02-qualified-account-cohort",
+      "chart_type": "funnel",
+      "title": "Convert One Cohort Without Counting It Twice",
+      "subtitle": "A nested account funnel separates selling activity from earned revenue.",
+      "chapter_number": 6,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Illustrative single cohort of 200 distinct accounts observed over 120 days; each account appears at most once per stage. Counts are planning assumptions rather than observed conversion benchmarks or annual scorecard inputs.",
+      "caption": "Sequential conversion is 25%, 40%, 50%, and 40%; overall conversion is 2%. Four accepted $12,500 implementations produce $50,000 of implementation revenue under the stated acceptance assumption; retainers are excluded.",
+      "stages": [
+        {
+          "label": "Selected accounts",
+          "value": "200 accounts with one documented workflow hypothesis",
+          "numeric_value": 200.0,
+          "detail": "Build a deduplicated CRM cohort with an identifiable operations owner, a recurring workflow, and a plausible budget. A contact list alone is not evidence of buyer intent."
+        },
+        {
+          "label": "Engaged accounts",
+          "value": "50 accounts enter a two-way workflow conversation",
+          "numeric_value": 50.0,
+          "detail": "Count substantive replies or booked conversations, not email opens. Fifty divided by 200 gives 25% engagement for the original account cohort."
+        },
+        {
+          "label": "Qualified discoveries",
+          "value": "20 accounts verify ownership, budget, and accessible inputs",
+          "numeric_value": 20.0,
+          "detail": "Confirm who can authorize system access and accept delivery. Twenty divided by 50 gives 40% qualification; accounts without a bounded use case exit the funnel."
+        },
+        {
+          "label": "Scoped proposals",
+          "value": "10 accounts receive priced, testable implementation offers",
+          "numeric_value": 10.0,
+          "detail": "Send a fixed-scope statement of work with exclusions, client dependencies, acceptance fixtures, and support options. Ten divided by 20 gives 50% proposal conversion."
+        },
+        {
+          "label": "Accepted implementations",
+          "value": "4 accounts complete a $12,500 implementation each",
+          "numeric_value": 4.0,
+          "detail": "These four accounts are a subset of the ten proposals. Four divided by ten gives 40% completion conversion. A deposit alone does not establish earned revenue; apply the engagement's recognition policy."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-03-base-owner-profit-bridge",
+      "chart_type": "waterfall",
+      "title": "The $550,000 Base-Case Profit Bridge",
+      "subtitle": "Six bars reconcile recognized revenue to $165,000 annual owner net profit.",
+      "chapter_number": 3,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Annual USD. First and last bars are totals; the four middle bars are signed deductions. The $550,000 revenue, 30.0% margin, and $165,000 owner net profit are canonical. Expense categories are an illustrative allocation of the required $385,000 total costs, not additional scorecard facts.",
+      "caption": "$550,000 - $210,000 - $65,000 - $42,000 - $68,000 = $165,000; $165,000 / $550,000 = 30.0%. Do not add the closing profit total as another cash inflow.",
+      "stages": [
+        {
+          "label": "Recognized agency revenue",
+          "value": "$550,000 from accepted implementations and earned retainers",
+          "numeric_value": 550000.0,
+          "detail": "Illustrative mix: 22 implementations at $15,000 produce $330,000; 110 earned client-months of support at $2,000 produce $220,000. Neither client revenue nor projected automation savings enters this total."
+        },
+        {
+          "label": "Delivery labor",
+          "value": "Subtract $210,000 for employee and contractor delivery",
+          "numeric_value": -210000.0,
+          "detail": "Allocate delivery compensation and associated labor burdens across the two full-time and three contractor seats. Contractor engagements are fractional; this budget is not five full-time salaries. Balance: $340,000."
+        },
+        {
+          "label": "Client workload costs",
+          "value": "Subtract $65,000 for attributable runtime and service usage",
+          "numeric_value": -65000.0,
+          "detail": "Assign model usage, retrieval infrastructure, and workflow execution costs to client projects. These variable delivery costs sit outside recurring overhead in this illustrative bridge. Balance: $275,000."
+        },
+        {
+          "label": "Recurring operating overhead",
+          "value": "Subtract $42,000 for shared tools and business operations",
+          "numeric_value": -42000.0,
+          "detail": "Budget $3,500 monthly for shared software, insurance, accounting, and routine administration. This lies within the $2,500–$18,000 monthly operating range; that range is not the all-in annual cost ceiling. Balance: $233,000."
+        },
+        {
+          "label": "Other recognized costs",
+          "value": "Subtract $68,000 for acquisition, rework, and remaining expenses",
+          "numeric_value": -68000.0,
+          "detail": "Illustratively allocate $30,000 to acquisition, $20,000 to delivery remediation, and $18,000 to remaining recognized expenses. Keep these separate from labor and shared overhead; replace allocations with actual ledger categories. Balance: $165,000."
+        },
+        {
+          "label": "Annual owner net profit",
+          "value": "$165,000 residual profit at exactly 30.0% margin",
+          "numeric_value": 165000.0,
+          "detail": "Closing total after all four expense deductions, not gross margin or owner take-home after personal taxes. No client transaction volume or unrealized efficiency benefit contributes to this residual."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-04-subniche-delivery-yield",
+      "chart_type": "horizontal_bars",
+      "title": "Compare Sub-Niches by Delivery-Hour Yield",
+      "subtitle": "Five fixed-scope offers expose the labor economics behind the price.",
+      "chapter_number": 2,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Numeric values are illustrative implementation-fee USD per planned delivery hour, before labor, software, acquisition, and overhead costs. Hours include discovery, build, testing, and handoff. These are not net margins or market-rate claims.",
+      "caption": "Rank only similarly bounded offers. Rework expands the denominator: a $12,000 sprint planned for 60 hours falls from $200 to $150 per hour if delivery reaches 80 hours.",
+      "stages": [
+        {
+          "label": "B2B support triage",
+          "value": "$12,000 fee divided by 60 hours equals $200/hour",
+          "numeric_value": 200.0,
+          "detail": "Connect Zendesk to a client-approved knowledge source for classification and draft replies. Exclude automatic refunds and account changes; collect the fixed fee through milestone invoices."
+        },
+        {
+          "label": "Sales operations routing",
+          "value": "$10,000 fee divided by 55 hours equals $181.82/hour",
+          "numeric_value": 181.8181818181818,
+          "detail": "Normalize HubSpot intake and suggest routing using documented account rules. Exclude purchased contact enrichment and autonomous outbound campaigns; the fee does not depend on client sales volume."
+        },
+        {
+          "label": "Accounts payable intake",
+          "value": "$15,000 fee divided by 90 hours equals $166.67/hour",
+          "numeric_value": 166.66666666666666,
+          "detail": "Extract invoice fields and propose purchase-order matches for accounting review. Exclude bank-detail changes and payment execution; invoice principal belongs to the client, not agency revenue."
+        },
+        {
+          "label": "Internal knowledge retrieval",
+          "value": "$9,000 fee divided by 60 hours equals $150/hour",
+          "numeric_value": 150.0,
+          "detail": "Index approved SharePoint documents with preserved access boundaries and source citations. Exclude unbounded document cleanup; test cross-user retrieval leakage before allowing employee access."
+        },
+        {
+          "label": "Contract intake assistance",
+          "value": "$14,000 fee divided by 100 hours equals $140/hour",
+          "numeric_value": 140.0,
+          "detail": "Extract renewal dates and route documents to the client's designated reviewers. Exclude autonomous contract interpretation and signature authority; price document-format variation explicitly."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-05-preflight-risk-decisions",
+      "chart_type": "decision_tree",
+      "title": "Four Checks Before Production Access",
+      "subtitle": "Each failed branch has a concrete remediation path.",
+      "chapter_number": 5,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Numeric values identify ordered checks, not probabilities or risk scores. A passing branch proceeds to the next check; a failing branch pauses the affected activity. Statutory applicability depends on the client and data.",
+      "caption": "Keep written access authorization, applicable processing terms, deliverable rights, and evaluation evidence in the engagement record. Use synthetic data while unresolved production dependencies are corrected.",
+      "stages": [
+        {
+          "label": "Authorized system access?",
+          "value": "Yes: scope credentials; no: remain in the sandbox",
+          "numeric_value": 1.0,
+          "detail": "18 U.S.C. 1030 addresses unauthorized access and exceeding authorized access. Record the client's authority, named systems, permitted operations, credential expiry, and revocation owner before connecting any production service account."
+        },
+        {
+          "label": "Permitted data processing?",
+          "value": "Yes: minimize data; no: repair contracts and routing",
+          "numeric_value": 2.0,
+          "detail": "Where applicable, California Civil Code 1798.100(d) requires specified disclosure-contract terms. For HIPAA business-associate work, apply 45 CFR 164.504(e) contracts and 164.312 technical safeguards. Document subprocessors, retention, deletion, and permitted destinations before transmitting client data."
+        },
+        {
+          "label": "Usable input and output rights?",
+          "value": "Yes: record licenses; no: replace restricted materials",
+          "numeric_value": 3.0,
+          "detail": "Inventory client inputs, reusable agency components, and third-party dependencies. Under 17 U.S.C. 204(a), copyright ownership transfers generally require a signed writing. Assign or license rights actually held; do not promise exclusive ownership of every model-generated artifact."
+        },
+        {
+          "label": "Supported claims and safe execution?",
+          "value": "Yes: limited release; no: revise claims or workflow",
+          "numeric_value": 4.0,
+          "detail": "15 U.S.C. 45 prohibits unfair or deceptive practices. Retain evidence for advertised performance under stated conditions. As operating controls, require human review for consequential decisions, test prompt-injection resistance, and verify rollback."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-06-five-to-seven-person-pod",
+      "chart_type": "org_architecture",
+      "title": "Five Core Seats, Two Explicit Scale Additions",
+      "subtitle": "Separate commercial ownership, engineering, quality, and bounded support.",
+      "chapter_number": 11,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Each numeric value is one person-slot, not one full-time equivalent. The first five seats form the Conservative and Base pod: 2 FT + 3 C. Activate the final two seats only for the Scaled pod: 3 FT + 4 C.",
+      "caption": "Canonical annual revenue / margin / owner net profit: Conservative $100,000 / 20% / $20,000; Base $550,000 / 30.0% / $165,000; Scaled $1,000,000 / 40% / $400,000. Revenue per person-slot is $20,000, $110,000, and approximately $142,857 respectively; these are not revenue-per-full-time-equivalent measures.",
+      "stages": [
+        {
+          "label": "FT 1: commercial and product lead",
+          "value": "Core seat owning scope, pricing, and client decisions",
+          "numeric_value": 1.0,
+          "detail": "Own discovery, signed statements of work, change pricing, and renewal evidence. Resolve scope conflicts without allowing unpaid features to enter the engineering queue."
+        },
+        {
+          "label": "FT 2: technical delivery lead",
+          "value": "Core seat owning architecture, access, and production release",
+          "numeric_value": 1.0,
+          "detail": "Own integration boundaries, credential design, evaluation thresholds, and rollback readiness. Review contractor changes and maintain the deployable reference implementation."
+        },
+        {
+          "label": "C 1: integration engineer",
+          "value": "Core contractor building connectors and reliable workflow execution",
+          "numeric_value": 1.0,
+          "detail": "Implement API mappings, retries, idempotency, and queue handling within the purchased scope. Submit versioned changes with reproducible tests and document external API limits."
+        },
+        {
+          "label": "C 2: evaluation specialist",
+          "value": "Core contractor testing quality, permissions, and adversarial inputs",
+          "numeric_value": 1.0,
+          "detail": "Maintain held-out fixtures, score output defects, and test retrieval isolation. Report failed cases separately from aggregate accuracy so severe exceptions remain visible."
+        },
+        {
+          "label": "C 3: workflow and support specialist",
+          "value": "Core contractor documenting handoffs and handling bounded support",
+          "numeric_value": 1.0,
+          "detail": "Map operator procedures, prepare training material, and triage support requests. Escalate quality regressions to the technical lead and route enhancement requests into priced change work."
+        },
+        {
+          "label": "FT 3: scaled service operations lead",
+          "value": "Scaled-only addition managing capacity, incidents, and renewal readiness",
+          "numeric_value": 1.0,
+          "detail": "Join when contracted workload supports a dedicated operations seat. Own service calendars, client reporting, incident coordination, and retainer capacity rather than duplicating the sales role."
+        },
+        {
+          "label": "C 4: scaled implementation specialist",
+          "value": "Scaled-only addition expanding delivery capacity for repeatable packages",
+          "numeric_value": 1.0,
+          "detail": "Take repeatable connector or migration work from the technical lead. Activate against signed delivery backlog; preserve the same tests and documentation rather than creating a separate custom-service line."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-07-startup-capital-allocation",
+      "chart_type": "stacked_comparison",
+      "title": "Deploy $30,000 Without Funding Unbounded Custom Work",
+      "subtitle": "Four capital buckets distinguish setup spending from operating runway.",
+      "chapter_number": 4,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Numeric values are USD allocations in one illustrative $30,000 startup stack, inside the canonical $5,000–$60,000 range. They are not additional annual expenses in the Base waterfall. Cash reserved for future spending is not an expense merely because it is allocated.",
+      "caption": "$6,000 + $4,500 + $3,000 + $16,500 = $30,000. The $16,500 reserve covers three months at an assumed $5,500 monthly cash burn, within the $2,500–$18,000 operating range. A first deal may take 1–4 months.",
+      "stages": [
+        {
+          "label": "Reusable delivery foundation",
+          "value": "$6,000 allocated to fixtures, reference workflows, and setup",
+          "numeric_value": 6000.0,
+          "detail": "Allocate 20% to synthetic datasets, connector templates, evaluation harnesses, and deployment automation. Build one repeatable workflow package before purchasing tools for additional niches."
+        },
+        {
+          "label": "Commercial validation assets",
+          "value": "$4,500 allocated to discovery, demonstrations, and targeted selling",
+          "numeric_value": 4500.0,
+          "detail": "Allocate 15% to buyer interviews, a measured demonstration, concise offer materials, and CRM setup. Track qualified conversations rather than buying broad traffic before scope and pricing work."
+        },
+        {
+          "label": "Contracts and secure workspace",
+          "value": "$3,000 allocated to engagement documents and access setup",
+          "numeric_value": 3000.0,
+          "detail": "Allocate 10% to reviewed engagement templates, processing terms, insurance setup, a password manager, and segregated workspaces. Distinguish one-time setup from later recurring subscriptions."
+        },
+        {
+          "label": "Working-capital reserve",
+          "value": "$16,500 held for operating burn and collection delays",
+          "numeric_value": 16500.0,
+          "detail": "Allocate 55% to cash runway rather than discretionary features. At $5,500 monthly burn, a fourth month needs another $5,500; reduce burn or secure additional funding before committing to unfunded obligations."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-08-thirty-day-offer-sprint",
+      "chart_type": "timeline_roadmap",
+      "title": "Build a Sellable Delivery System in 30 Days",
+      "subtitle": "Four weekly milestones produce evidence, not an assumed first-month deal.",
+      "chapter_number": 12,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Numeric values are milestone-ending day numbers. The canonical time to first deal is 1–4 months; this sprint creates sales and delivery readiness without assuming signed revenue by day 30.",
+      "caption": "Finish with one bounded offer, a tested reference workflow, a permissioned pilot plan, and a measured sales cohort. Continue discovery and runway management if the first contract has not closed.",
+      "stages": [
+        {
+          "label": "Days 1-7",
+          "value": "Choose one buyer, one workflow, and one acceptance test",
+          "numeric_value": 7.0,
+          "detail": "Interview five target operators, map the current workflow, and document measurable pain. Produce an offer sheet with explicit exclusions and an initial unit-cost worksheet; interview counts are targets, not evidence of demand by themselves."
+        },
+        {
+          "label": "Days 8-14",
+          "value": "Build the reference workflow and a held-out test set",
+          "numeric_value": 14.0,
+          "detail": "Implement with synthetic data, define failure categories, and test retries, access boundaries, and rollback. Measure delivery hours and runtime costs so the fixed fee reflects actual effort."
+        },
+        {
+          "label": "Days 15-21",
+          "value": "Package commercial terms and demonstrate bounded performance",
+          "numeric_value": 21.0,
+          "detail": "Prepare the statement of work, processing terms, access checklist, and support schedule. Demonstrate results against the held-out fixtures; use real client data only after the applicable access and processing requirements are satisfied."
+        },
+        {
+          "label": "Days 22-30",
+          "value": "Run qualified sales conversations and rehearse the handoff",
+          "numeric_value": 30.0,
+          "detail": "Issue scoped proposals to qualified buyers and record objections by category. Rehearse intake, deployment, incident response, and retainer reporting. If no contract closes, continue the 1–4 month selling plan without booking hypothetical revenue."
+        }
+      ]
+    }
+  ]
+}

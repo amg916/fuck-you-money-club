@@ -1,0 +1,470 @@
+{
+  "workbook_id": "wb-006-productized-ai-agencies",
+  "volume_id": "vol-006-productized-ai-agencies",
+  "title": "Productized AI Agencies — Operator Companion Workbook",
+  "subtitle": "6 Printable Operator Worksheets for B2B Workflow Underwriting, Fixed-Scope AI Sprints, Retainer Economics, Technical Assurance, Controlled Growth, and Transferable Agency Operations",
+  "worksheets": [
+    {
+      "worksheet_id": "ws-01",
+      "number": 1,
+      "title": "Opportunity, Vertical Underwriting, and Counterparty Qualification",
+      "purpose": "Qualify a narrow B2B workflow before quoting implementation work. Separate measurable client benefit from agency revenue, establish purchasing authority and permitted system access, and reject opportunities whose data, review burden, or integration uncertainty would overwhelm a repeatable fixed-scope sprint.",
+      "chapter_ref": "Q1, Q2, Q6",
+      "instructions": [
+        "Select one vertical and one recurring workflow with an identifiable owner. Interview both the buyer and the frontline reviewer, then document current transaction volume, handling time, exception frequency, and the business consequence of an incorrect output.",
+        "Inspect a client-authorized sample before promising delivery dates. Classify the records, verify representative exceptions, and identify every system boundary. Use synthetic records when access terms are incomplete rather than requesting unrestricted production credentials to accelerate discovery.",
+        "Define a productized offer with explicit input limits, supported connectors, review responsibilities, and acceptance evidence. Price changes separately when additional workflows, languages, historical migrations, or consequential decisions would alter the agreed implementation burden or risk.",
+        "Verify the contracting entity, signer authority, payment process, and operational sponsor. Record procurement dependencies alongside technical dependencies because a technically suitable workflow can still become a poor engagement when invoices stall or reviewers cannot participate.",
+        "Score repeatability, measurable value, data readiness, reviewability, and collection reliability using the rubric below. Record the evidence supporting each score, then accept, narrow, or decline the opportunity without treating the platform candidate score as client-specific underwriting."
+      ],
+      "fields": [
+        {
+          "name": "Vertical and repeatable workflow thesis",
+          "type": "textarea",
+          "prompt": "Identify the customer segment, recurring task, source systems, and bounded output. Explain why the same implementation can serve multiple customers without rebuilding the core workflow or assuming responsibility for their commercial decisions.",
+          "example": "Target regional industrial distributors processing at least 600 quote requests monthly. The sprint classifies incoming requests, extracts part numbers, and drafts CRM tasks from Microsoft 365 messages. Employees approve every draft; the agency neither sets prices nor commits inventory or customer delivery dates."
+        },
+        {
+          "name": "Buyer identity and purchasing authority",
+          "type": "textarea",
+          "prompt": "Record the exact contracting entity, budget owner, authorized signer, procurement contact, and payment channel. Identify evidence of authority and specify which person can accept deliverables rather than merely request demonstrations or negotiate informal scope.",
+          "example": "Harbor Parts LLC contracts for the project through its operations director, with the controller signing the order form under documented purchasing authority. Accounts payable confirms vendor onboarding and ACH instructions through a verified telephone number. The service manager signs the acceptance checklist."
+        },
+        {
+          "name": "Baseline workload and observed benefit",
+          "type": "textarea",
+          "prompt": "Measure transaction volume, handling time, loaded labor cost, and current error frequency using a dated sample. Separate observed facts from assumptions, and describe how reviewers will verify any claimed improvement after implementation.",
+          "example": "A four-week sample contains 800 requests requiring 12 minutes each at a loaded cost of $36 per hour. Reducing handling to seven minutes would release 66.67 hours, or approximately $2,400 of monthly capacity. Released capacity is client benefit, not agency revenue."
+        },
+        {
+          "name": "Authorized data and system inventory",
+          "type": "textarea",
+          "prompt": "List each dataset, connector, permission level, record category, retention requirement, and system owner. Establish whether representative samples can be used under existing terms and identify any sensitive records that must be excluded before discovery begins.",
+          "example": "The client authorizes read access to a dedicated Microsoft 365 intake mailbox and write access to a Salesforce sandbox task object. Samples exclude payment details, employee records, and credentials. The client administrator provisions a named integration identity and documents a 30-day sample deletion schedule."
+        },
+        {
+          "name": "Fixed-scope offer and explicit exclusions",
+          "type": "textarea",
+          "prompt": "Describe the deliverable in quantities that can be tested: workflows, connectors, record limits, review steps, and training sessions. State excluded work and the mechanism for pricing additional requirements before implementation effort expands.",
+          "example": "The $20,000 package covers one intake workflow, two supported connectors, 5,000 monthly documents, one reviewer queue, and two training sessions. Historical migration, custom ERP adapters, multilingual extraction, and unattended purchasing are excluded. Added connectors require a signed change order with revised acceptance tests."
+        },
+        {
+          "name": "Client value and agency revenue boundary",
+          "type": "textarea",
+          "prompt": "Calculate a conservative buyer value case while keeping implementation fees and support retainers separate from the customer's sales, transaction principal, or estimated savings. Identify the assumptions that require post-launch measurement before marketing use.",
+          "example": "The buyer considers a $20,000 implementation plus a $1,500 monthly support retainer. Estimated released labor capacity is $28,800 annually, before subtracting project and support costs. Customer sales remain entirely outside agency revenue, and capacity savings are not presented as immediate payroll reductions."
+        },
+        {
+          "name": "Consequential decision and review exposure",
+          "type": "textarea",
+          "prompt": "Identify whether outputs could affect employment, credit, healthcare, safety, contractual commitments, or customer rights. Name the accountable human reviewer and define which actions remain unavailable to the automation regardless of model confidence.",
+          "example": "The quote assistant may extract requested quantities and suggest a routing team, but cannot approve credit, determine employee performance, or issue binding quotations. A sales coordinator compares each draft with the source email. Ambiguous part identifiers move to manual handling without an automated customer response."
+        },
+        {
+          "name": "Opportunity qualification scoring",
+          "type": "textarea",
+          "prompt": "Score repeatability, measurable value, data readiness, reviewability, and collection reliability from zero to four each. Define minimum evidence and rejection conditions so attractive projected fees do not conceal an operationally unsuitable engagement.",
+          "example": "The prospect scores 4 for repeatability, 3 for measured value, 3 for data readiness, 4 for reviewability, and 4 for collections: 18 of 20. Proceed above 16 only with documented access authorization; reject any request to conceal automation or bypass required human review."
+        },
+        {
+          "name": "Delivery capacity and counterparty dependencies",
+          "type": "textarea",
+          "prompt": "Estimate implementation hours by role, identify client-owned prerequisites, and compare the requested schedule with committed capacity. Include reviewer availability and procurement lead time rather than measuring readiness solely through developer availability.",
+          "example": "The sprint needs 35 architect hours, 55 integration hours, 20 QA hours, and 10 training hours. The client supplies sandbox access by day three and a reviewer for five hours weekly. Missing access pauses the delivery clock instead of silently consuming contractor capacity."
+        },
+        {
+          "name": "Underwriting decision and next commitment",
+          "type": "textarea",
+          "prompt": "Record the accept, narrow, or decline decision with evidence, commercial conditions, and the next reversible action. Explain how the agency's overall candidate positioning informs strategy without replacing engagement-specific technical and commercial diligence.",
+          "example": "Accept the distributor pilot after the access letter and $10,000 deposit arrive. Candidate #29 ranks #06 of 29 with an 86/100 Money-to-Manpower Score, but this engagement proceeds because its workflow is repeatable, reviewer-owned, and collectible, not because the overall category ranks highly."
+        }
+      ],
+      "completion_gate": "Advance only when the contracting entity and signer are verified, representative data is authorized, the workflow scores at least 16 of 20, exclusions are written, reviewer ownership is confirmed, and the deposit requirement appears in the signed order form."
+    },
+    {
+      "worksheet_id": "ws-02",
+      "number": 2,
+      "title": "Unit Economics, Defect Reserve, and Working-Capital Float Calculator",
+      "purpose": "Build a fee-based operating model that reconciles exactly to the canonical annual scenarios. Separate direct delivery costs, fixed overhead, remediation expense, and cash timing so deposits, client savings, reserve transfers, and collected invoices cannot inflate recognized agency revenue or owner profit.",
+      "chapter_ref": "Q3, Q4",
+      "instructions": [
+        "Enter the three canonical revenue and owner-profit cases before adding deal assumptions. Preserve each scenario's stated margin and team configuration, then construct implementation and retainer quantities that reproduce annual revenue without counting customer transaction value or attributed sales.",
+        "Distinguish recurring overhead from total annual operating cost. The stated monthly overhead range does not fund every contractor hour, usage charge, and remediation obligation; allocate those variable costs separately and reconcile the complete expense envelope to owner profit.",
+        "Build a contribution model for one sprint and one retainer month. Include reviewer support, connector troubleshooting, model usage, and rework. Avoid counting the same payroll expense in direct project costs and overhead merely because staff contribute to both functions.",
+        "Map contractual billing dates to actual collection assumptions and scheduled cash outflows. Measure the largest cumulative deficit, then add a separately identified liquidity buffer. A signed contract or issued invoice does not create spendable cash before funds settle.",
+        "Stress collection delays, scope expansion, and defect rates before committing capacity. Treat a cash reserve as an earmark rather than an additional expense, while recording actual remediation costs once in the appropriate operating ledger and updating forecast profitability."
+      ],
+      "fields": [
+        {
+          "name": "Canonical scenario reconciliation",
+          "type": "textarea",
+          "prompt": "Enter annual agency revenue, total operating expense, owner net profit, margin, and staffing for all three scenarios. Explain that full-time and contractor counts represent people, not a promise that every contractor works full time.",
+          "example": "Conservative: $100,000 revenue less $80,000 expense equals $20,000 owner net, 20%, with 2 FT plus 3 C. Base: $550,000 less $385,000 equals $165,000, 30%, with 2 FT plus 3 C. Scaled: $1,000,000 less $600,000 equals $400,000, 40%, with 3 FT plus 4 C."
+        },
+        {
+          "name": "Implementation and retainer revenue bridge",
+          "type": "textarea",
+          "prompt": "Reproduce each canonical revenue total through implementation counts, fixed fees, customer-months, and monthly retainers. State that the arithmetic assumes services are delivered within the year and excludes sales tax, client revenue, and unearned deposits.",
+          "example": "Conservative: five $12,000 sprints plus 40 support months at $1,000 equals $100,000. Base: twenty $20,000 sprints plus 100 support months at $1,500 equals $550,000. Scaled: twenty-five $28,000 sprints plus 150 support months at $2,000 equals $1,000,000 in delivered agency services."
+        },
+        {
+          "name": "Base sprint contribution calculation",
+          "type": "textarea",
+          "prompt": "List the direct delivery cost per implementation, expected remediation allocation, and resulting contribution before shared overhead. Identify which labor and usage costs are included so contribution is not confused with final annual owner profit.",
+          "example": "Each $20,000 base sprint carries $11,000 in direct implementation cost and $1,150 in expected remediation cost, leaving $7,850 before shared overhead. Across 20 sprints, those amounts become $400,000 revenue, $220,000 direct costs, $23,000 remediation expense, and $157,000 contribution."
+        },
+        {
+          "name": "Managed support contribution calculation",
+          "type": "textarea",
+          "prompt": "Calculate support revenue and direct service cost per customer-month, including monitoring and routine incident work. Define usage and service limits that preserve the contribution assumption without charging twice for costs already allocated to implementation delivery.",
+          "example": "The base retainer earns $1,500 per customer-month and budgets $400 for support labor, monitoring, and included usage. Contribution is $1,100 per month. Across 100 delivered customer-months, $150,000 revenue less $40,000 direct support cost yields $110,000 before shared overhead."
+        },
+        {
+          "name": "Overhead and total expense bridge",
+          "type": "textarea",
+          "prompt": "Separate fixed monthly overhead from variable delivery and support expense across the three scenarios. Reconcile annual totals explicitly and explain why the supplied monthly operating range must not be mistaken for the complete annual cost envelope.",
+          "example": "Illustrative overhead is $2,500 monthly Conservative, $8,500 Base, and $18,000 Scaled: $30,000, $102,000, and $216,000 annually. Remaining delivery, support, and remediation expense is $50,000, $283,000, and $384,000 respectively. Combined costs reconcile to $80,000, $385,000, and $600,000."
+        },
+        {
+          "name": "Scrub and defect remediation reserve",
+          "type": "textarea",
+          "prompt": "Define the defects covered, estimate frequency and repair effort, and distinguish forecast remediation expense from cash set aside. Specify how actual repair costs replace estimates without treating transfers between bank accounts as additional operating costs.",
+          "example": "Budget $23,000 annually for extraction corrections, regression repair, and client data cleanup, equivalent to $1,150 across 20 base sprints. Earmark the same amount in cash over time. Moving cash into reserve creates no second expense; actual remediation is recorded once against the forecast."
+        },
+        {
+          "name": "Milestone billing and collection schedule",
+          "type": "textarea",
+          "prompt": "Map invoice triggers, payment terms, expected collection dates, and direct delivery payments for one sprint. Differentiate revenue recognition from cash collection and state when delivery pauses if a required milestone payment remains overdue.",
+          "example": "A $20,000 sprint collects $10,000 before kickoff, $8,000 on tested sandbox delivery at day 21, and $2,000 at acceptance on day 35. Direct costs are $5,000, $4,000, and $2,000 at those stages. Deposit cash remains a liability until the related services are earned."
+        },
+        {
+          "name": "Peak working-capital float calculation",
+          "type": "textarea",
+          "prompt": "Calculate the maximum cumulative cash deficit under a documented delay case, then add an explicit overhead buffer. Keep project float separate from annual expenses and state whether the proposed start condition would actually permit the delayed-deposit case.",
+          "example": "If all $20,000 arrives on day 45 after $11,000 of direct costs are paid, project float peaks at $11,000. Add one base overhead month of $8,500 for a $19,500 planning requirement. The operating rule still forbids kickoff before the initial deposit settles."
+        },
+        {
+          "name": "Startup capital and runway allocation",
+          "type": "textarea",
+          "prompt": "Choose a startup budget within the supplied range and allocate it to concrete setup expenses and liquidity. Identify which funds remain available for operations and distinguish fixed-overhead runway from runway under a fully loaded delivery schedule.",
+          "example": "Choose $30,000 within the $5,000–$60,000 startup range: $6,000 for contract work, insurance, equipment, and setup; $24,000 remains liquid. At $2,500 monthly fixed overhead, that supports 9.6 months before variable delivery costs, founder draws, taxes, or additional setup purchases."
+        },
+        {
+          "name": "Sensitivity and cash decision rules",
+          "type": "textarea",
+          "prompt": "Calculate the effect of one realistic cost or collection shock while keeping the canonical scenario unchanged as the reference case. State the trigger for repricing, pausing work, or reducing committed capacity before liquidity becomes constrained.",
+          "example": "An extra $2,000 of unbilled work on each of 20 base sprints adds $40,000 expense, reducing modeled owner net from $165,000 to $125,000 and margin to 22.73%. This is a stress case, not the canonical Base. Reprice any change exceeding four unbudgeted hours."
+        }
+      ],
+      "completion_gate": "Advance when all three canonical scenarios reconcile, the Base cost bridge totals $385,000, reserve cash is not double-counted as expense, milestone collections have dated assumptions, and available liquidity covers the chosen peak-deficit case plus its stated buffer."
+    },
+    {
+      "worksheet_id": "ws-03",
+      "number": 3,
+      "title": "Execution, Delivery Ledger, and Technical QA Pre-Flight",
+      "purpose": "Translate the sold scope into a reproducible delivery record from authorized intake through client acceptance. Establish versioned test evidence, isolated credentials, explicit human review, and recoverable deployments so unreliable outputs or connector failures cannot silently become customer-facing actions or untraceable billable work.",
+      "chapter_ref": "Q7, Q8",
+      "instructions": [
+        "Create a delivery record before configuring any connector. Link the signed scope, access authorization, client contacts, milestones, test plan, and billing schedule. Assign one accountable owner to each artifact rather than distributing responsibility across an unowned project chat.",
+        "Build against synthetic fixtures and a client-approved sandbox first. Grant only the permissions needed for the scoped workflow, store credentials outside source control, and document the process for revocation when the engagement ends or a security incident occurs.",
+        "Develop a representative evaluation set with normal cases, rare exceptions, malformed inputs, and adversarial text embedded in documents. Treat incoming content as untrusted data, and verify that it cannot alter tool permissions or redirect confidential output.",
+        "Run deterministic validation around model outputs instead of relying on persuasive wording. Validate schema, required fields, identifiers, destinations, and reviewer decisions; record failures in a structured queue that preserves enough evidence for diagnosis without copying unnecessary client content.",
+        "Complete a staged deployment with a tested rollback path and signed acceptance evidence. Reconcile the technical delivery state with billing and support handover, ensuring that a successful demonstration does not substitute for production readiness or an earned revenue milestone."
+      ],
+      "fields": [
+        {
+          "name": "Delivery identifier and accountable owners",
+          "type": "textarea",
+          "prompt": "Assign a unique project identifier and name the roles responsible for scope, implementation, security, client review, and acceptance. Record the location of authoritative artifacts so personnel changes do not fragment the engagement's operating history.",
+          "example": "Project DIST-024 uses a client-restricted SharePoint folder for the statement of work, Linear for tasks, and GitHub for versioned code. The architect owns scope, the integrator owns connectors, the QA lead owns evidence, and the client's service manager owns final acceptance."
+        },
+        {
+          "name": "Access provisioning and credential lifecycle",
+          "type": "textarea",
+          "prompt": "Document permitted environments, service identities, minimum permissions, credential storage, rotation ownership, and revocation timing. Explain how developers obtain access without sharing personal accounts or embedding production secrets in prompts, source files, or support tickets.",
+          "example": "The client creates separate sandbox and production integration identities with mailbox-read and task-create permissions only. Secrets live in Azure Key Vault with audited access. The client administrator owns rotation, disables unused identities after handover, and can revoke the production identity immediately during an incident."
+        },
+        {
+          "name": "Input contract and normalization rules",
+          "type": "textarea",
+          "prompt": "Define accepted file types, size limits, character handling, required metadata, duplicate detection, and rejection behavior. Preserve traceability to source records while preventing malformed or unsupported content from flowing directly into privileged model-driven actions.",
+          "example": "The intake accepts PDF and plain-text messages up to 10 MB with a source message identifier and received timestamp. Unsupported attachments enter manual review. A SHA-256 digest plus source identifier detects repeat submissions, while normalized part numbers retain a link to the original evidence."
+        },
+        {
+          "name": "Evaluation dataset and evidence split",
+          "type": "textarea",
+          "prompt": "Specify sample composition, labeling ownership, held-out evaluation records, and handling of sensitive data. Define the denominator for each metric so high accuracy on easy examples cannot conceal systematic failures on the exceptions that create delivery risk.",
+          "example": "The client labels 200 authorized requests: 140 routine, 30 ambiguous, 20 malformed, and 10 containing hostile instructions. Freeze 60 as held-out cases. Report field extraction accuracy and unsafe-action counts separately, with a dedicated breakdown for ambiguous records rather than one blended success percentage."
+        },
+        {
+          "name": "Output validation and human review",
+          "type": "textarea",
+          "prompt": "List the output schema, field constraints, source-evidence requirements, and reviewer controls. State which outputs must be blocked or routed to manual handling and ensure the automation cannot commit consequential actions solely because its confidence score appears high.",
+          "example": "JSON output requires source_id, requested_part, quantity, evidence_span, and review_status. Quantity must be a positive integer, and the evidence span must match the source. Missing evidence blocks CRM creation. Every customer-facing draft requires an employee's explicit review, regardless of any model-generated confidence value."
+        },
+        {
+          "name": "Idempotency retries and side-effect control",
+          "type": "textarea",
+          "prompt": "Define stable operation keys, retry limits, timeout behavior, and recovery after partial connector failure. Explain how the workflow distinguishes a failed request from a completed action whose acknowledgement was lost, preventing repeated customer records or messages.",
+          "example": "The task-create key combines the client identifier, source message identifier, and workflow version. After a timeout, the worker checks Salesforce for the external key before retrying. Three attempts use capped backoff; unresolved records enter manual reconciliation rather than creating another task under a fresh identifier."
+        },
+        {
+          "name": "Quality acceptance thresholds",
+          "type": "textarea",
+          "prompt": "Set measurable quality, latency, and exception thresholds with a fixed evaluation procedure. Include zero-tolerance conditions for unauthorized actions and evidence leakage, and describe what happens when a release meets average quality targets but fails a critical safeguard.",
+          "example": "Release requires at least 95% exact-match extraction on labeled fields, 100% routing of missing-evidence cases to review, and zero unauthorized writes across the test suite. A single cross-client disclosure blocks deployment even if average extraction exceeds 99%. Report sample sizes with every quality percentage."
+        },
+        {
+          "name": "Technical and commercial delivery ledger",
+          "type": "textarea",
+          "prompt": "Record milestone state, delivered artifacts, client evidence, invoice amounts, collections, and recognition status in linked records. Preserve the distinction between an internal task marked complete and a contractual deliverable that satisfies the agreed acceptance procedure.",
+          "example": "DIST-024 records the $10,000 deposit as collected at kickoff, the $8,000 sandbox milestone as invoiced after the test report, and the $2,000 balance after acceptance. The ledger links each event to dated evidence; accounting recognizes earned services under the applicable contract and reporting policy."
+        },
+        {
+          "name": "Deployment and rollback rehearsal",
+          "type": "textarea",
+          "prompt": "Describe configuration promotion, change ownership, release identifiers, rollback triggers, and restoration tests. Include queued work and partially completed actions so reverting code does not leave duplicate transactions, lost review tasks, or incompatible persisted records.",
+          "example": "Release 1.0.3 first processes 20 records in draft-only mode. The integrator verifies queue depth and error counts before expanding volume. A schema mismatch restores release 1.0.2, pauses writes, preserves pending items, and reconciles external task identifiers before replaying any work."
+        },
+        {
+          "name": "Acceptance and support handover package",
+          "type": "textarea",
+          "prompt": "List the evidence and operating materials required for client acceptance and the transition to managed support. Specify training attendance, escalation routes, service boundaries, known limitations, and the date at which implementation responsibilities become retainer responsibilities.",
+          "example": "The handover includes the signed test report, connector inventory, access-revocation instructions, reviewer recording, runbook, and issue register. The client service manager accepts on day 35. The $1,500 support retainer begins the next agreed service period, with two named client contacts and documented response hours."
+        }
+      ],
+      "completion_gate": "Deploy only after access scope is verified, the held-out evaluation passes every critical safeguard, duplicate-action recovery and rollback are rehearsed, the client reviewer is trained, and delivery evidence supports the milestone recorded in the commercial ledger."
+    },
+    {
+      "worksheet_id": "ws-04",
+      "number": 4,
+      "title": "Statutory, Licensing, Contract, and Outreach Compliance Audit",
+      "purpose": "Convert relevant legal and contractual requirements into concrete delivery controls and evidence. Match obligations to the actual client, data, jurisdiction, and use case, then document access authority, processing terms, ownership, marketing substantiation, outreach practices, and professional licensing boundaries before work begins.",
+      "chapter_ref": "Q5, Q9",
+      "instructions": [
+        "Map the client's location, affected individuals, data categories, industry, and proposed automated actions. Apply statutes based on their triggering facts rather than treating every engagement as equally regulated or assuming a business-to-business relationship removes privacy and outreach obligations.",
+        "Obtain written authorization for each client system and record the exact access boundary. Align the statement of work with data-processing terms, permitted subprocessors, incident communication, deletion procedures, and ownership provisions before transferring client records to a model provider.",
+        "Review the actual provider terms and configured retention settings for every model, connector, and hosting service. Record evidence of permitted commercial use, training restrictions, data location, and transfer arrangements where relevant instead of relying on general vendor marketing language.",
+        "Inspect public claims and outbound messages against documented evidence and channel requirements. Separate a measured result from an estimate, preserve opt-out records, and ensure outreach tooling cannot contact suppressed recipients or silently switch to a more restricted communications channel.",
+        "Identify use cases requiring sector-specific obligations, professional licensing, or specialized contractual treatment. Narrow the engagement when the agency cannot meet those requirements, then assign owners and dated evidence for every obligation that remains within the agreed implementation scope."
+      ],
+      "fields": [
+        {
+          "name": "Jurisdiction and statutory applicability map",
+          "type": "textarea",
+          "prompt": "Identify the contracting jurisdiction, locations of affected individuals, relevant data categories, and statutory triggers. Record both the applicable requirement and the operational consequence, avoiding universal claims that a particular law governs every AI implementation.",
+          "example": "A California distributor provides employee business-contact records and customer messages. Assess whether the client is a covered business under California Civil Code section 1798.140 and whether the agency acts as a service provider. If so, align processing restrictions with section 1798.100(d) and applicable regulations."
+        },
+        {
+          "name": "Client-system access authorization",
+          "type": "textarea",
+          "prompt": "Record the written authorization, authorized systems, permitted actions, duration, and revocation contact. Distinguish possession of credentials from permission to use them, and prohibit expansion into adjacent systems without a documented extension from the authorized client representative.",
+          "example": "The access letter permits reading the intake mailbox and creating sandbox tasks for 45 days; it excludes payroll and customer payment systems. The team records these limits with reference to 18 U.S.C. section 1030. Shared credentials discovered in a document are not used as additional authorization."
+        },
+        {
+          "name": "Data-processing and subprocessor terms",
+          "type": "textarea",
+          "prompt": "Specify processing purpose, record categories, retention, security responsibilities, subprocessor controls, and deletion evidence. Where applicable, identify controller and processor roles and ensure the contract supports the actual operational flow rather than describing an unused generic architecture.",
+          "example": "For an EU client's personal data, document the GDPR Article 28 processor terms, Article 32 security measures, and any Chapter V transfer mechanism required by the chosen hosting flow. The schedule lists the model provider, prohibits independent training use, and sets a 30-day post-service deletion period."
+        },
+        {
+          "name": "Sector-specific sensitive data boundary",
+          "type": "textarea",
+          "prompt": "Identify whether the workflow involves protected health information, consumer reports, regulated account data, or similarly restricted records. State the condition that requires a revised service design, appropriate agreements, or removal of those records before processing begins.",
+          "example": "A healthcare prospect wants patient intake summaries. Assess business-associate status under 45 CFR section 160.103 and, if applicable, execute required agreements under sections 164.502(e) and 164.504(e). Until the approved service chain supports those obligations, discovery uses synthetic patient records rather than live intake files."
+        },
+        {
+          "name": "Ownership background IP and license schedule",
+          "type": "textarea",
+          "prompt": "Separate pre-existing agency components, client-specific deliverables, client data, provider terms, and third-party dependencies. Define assignment or license rights precisely, including when rights transfer and which reusable components remain available for future agency engagements.",
+          "example": "The contract assigns paid client-specific configuration and documentation while licensing the agency's pre-existing orchestration library for the client's internal use. Written assignment addresses 17 U.S.C. section 204(a); contractor agreements establish the agency's rights. A dependency register records commercial-use permissions and required notices for incorporated components."
+        },
+        {
+          "name": "Statement of work and acceptance mechanics",
+          "type": "textarea",
+          "prompt": "Define deliverables, assumptions, review periods, defect correction, change orders, support boundaries, and payment milestones. Explain how service obligations are distinguished from customer business outcomes and how bundled goods or software terms receive appropriate contractual treatment.",
+          "example": "The order covers one workflow and two connectors for $20,000, with five business days for evidence-based acceptance review and correction of reproducible scope defects. New features require a priced amendment. UCC Article 2 applicability is assessed for any goods component rather than presumed for the entire services engagement."
+        },
+        {
+          "name": "Performance claims and evidence retention",
+          "type": "textarea",
+          "prompt": "Inventory website, proposal, and sales claims about accuracy, savings, staffing, or revenue. Link each claim to representative measurement and stated conditions, preserving enough methodology to substantiate the claim without exposing confidential customer records.",
+          "example": "Under FTC Act section 5, 15 U.S.C. section 45, avoid unsupported statements that the system eliminates errors. A permitted case study states that median review time fell from 12 to seven minutes across 800 sampled requests, identifies human review, and excludes any assertion of guaranteed payroll savings."
+        },
+        {
+          "name": "Commercial email outreach controls",
+          "type": "textarea",
+          "prompt": "Describe recipient sourcing, sender identification, message content, postal address, unsubscribe handling, and suppression synchronization. Identify the relevant jurisdiction and specify how campaign operators verify that a purchased list or contractor has not bypassed the agency's requirements.",
+          "example": "For U.S. commercial email, implement 15 U.S.C. section 7704 controls: accurate headers, nondeceptive subjects, required identification, a valid postal address, and a working opt-out. Honor requests within ten business days. The CRM suppression list is checked before every send, including contractor-managed campaigns."
+        },
+        {
+          "name": "Calling messaging and professional boundaries",
+          "type": "textarea",
+          "prompt": "Identify planned calling or messaging channels and any professional activities the workflow could appear to perform. Record the specific permissions or licenses required by the actual activity and keep implementation personnel from making regulated decisions on the client's behalf.",
+          "example": "The launch uses individually reviewed business email, not automated calls or texts. Any later telephone campaign receives a fact-specific review under 47 U.S.C. section 227 and 47 CFR section 64.1200. The agency configures routing software but does not provide licensed insurance recommendations or decide employment eligibility."
+        },
+        {
+          "name": "Incident duties insurance and evidence owner",
+          "type": "textarea",
+          "prompt": "Record contractual incident deadlines, potentially applicable notification statutes, insurance coverage, and the owner of breach assessment. Separate rapid client communication from statutory notice decisions, and avoid promising notification deadlines that conflict with the actual contract or jurisdiction.",
+          "example": "The contract requires initial client notice within 24 hours after confirming a security incident affecting client data. The response owner assesses California Civil Code section 1798.82 where applicable, preserves evidence, and coordinates recipient notices. Cyber and technology errors-and-omissions policies are checked for AI-service exclusions and reporting conditions."
+        }
+      ],
+      "completion_gate": "Start live processing only after written access authority, applicable processing terms, ownership provisions, outreach controls, and incident responsibilities are documented; every conditional statutory requirement must have a triggering-facts assessment, an accountable owner, and evidence of the implemented control."
+    },
+    {
+      "worksheet_id": "ws-05",
+      "number": 5,
+      "title": "Automation Pipeline, Growth Flywheel, and Risk Fallback Tracker",
+      "purpose": "Scale repeatable acquisition and delivery without automating away accountability. Connect qualified lead intake, deployment checklists, usage monitoring, and support triage while preserving client isolation, truthful evidence, budget controls, and manual fallbacks when models, connectors, or campaign assumptions fail.",
+      "chapter_ref": "Q6, Q10",
+      "instructions": [
+        "Diagram the agency's own pipeline separately from each client's production workflow. Identify the system of record, permitted data movement, accountable operator, and failure queue for every transition so a broken connector cannot silently erase a lead or deployment requirement.",
+        "Automate repetitive intake and checklist collection before automating sensitive actions. Preserve human decisions for opportunity acceptance, contractual commitments, client access expansion, public claims, and consequential outputs. Measure time saved against a baseline rather than labeling every new tool as leverage.",
+        "Build outreach around a narrow buyer problem and a verifiable demonstration. Use approved evidence, current suppression records, and explicit campaign limits; review replies for fit instead of increasing sending volume when the actual problem is poor positioning or insufficient buyer value.",
+        "Instrument usage, cost, latency, quality, and support effort by client and workflow version. Link alerts to a named operator and a defined response. An alert without ownership or a recovery procedure creates noise rather than an effective operating control.",
+        "Rehearse model outages, malformed outputs, credential revocation, and client data exposure using synthetic incidents. Define manual handling capacity and stop conditions so the agency can maintain essential service without silently downgrading quality or moving records to an unapproved provider."
+      ],
+      "fields": [
+        {
+          "name": "Agency pipeline architecture and record ownership",
+          "type": "textarea",
+          "prompt": "Map lead intake, qualification, proposals, delivery tasks, billing, and support to authoritative systems. Specify stable identifiers and permitted integrations so automation synchronizes records without creating contradictory commercial states or copying confidential information into broad-access tools.",
+          "example": "HubSpot owns lead and account records, Linear owns implementation tasks, and QuickBooks owns invoices. A signed deal creates a project identifier shared across systems through n8n. Only account metadata crosses into the CRM; client document contents remain in the restricted delivery environment."
+        },
+        {
+          "name": "Automated intake with human qualification",
+          "type": "textarea",
+          "prompt": "Describe the intake questions, validation rules, routing logic, and operator review point. Identify fields that must never be requested through a general lead form and define how incomplete or sensitive submissions are handled without creating unmanaged data copies.",
+          "example": "The form requests company domain, workflow volume, source systems, buyer role, and desired timeline. It explicitly excludes credentials and customer documents. Submissions with a supported connector and at least 600 monthly requests enter a review queue; an operator confirms fit before any proposal is generated."
+        },
+        {
+          "name": "Outbound audience and bounded experiment",
+          "type": "textarea",
+          "prompt": "Define the target account criteria, message hypothesis, lawful channel, experiment size, and conversion denominators. Choose a manageable test that can reveal positioning problems without increasing contact volume beyond the team's ability to review responses and honor opt-outs.",
+          "example": "Select 80 industrial distributors using supported email and CRM systems. Send one individually reviewed message explaining the quote-intake workflow, then one relevant follow-up only to eligible nonresponders. Measure positive replies per delivered contact and qualified calls per positive reply, keeping unsubscribed recipients suppressed."
+        },
+        {
+          "name": "Growth funnel and revenue attribution",
+          "type": "textarea",
+          "prompt": "Calculate the expected relationship between eligible contacts, positive replies, qualified calls, proposals, and wins. Label the assumptions as a planning hypothesis and attribute agency revenue only to executed service contracts rather than customer sales influenced by automation.",
+          "example": "A test with 80 delivered contacts, eight positive replies, four qualified calls, two proposals, and one signed $20,000 sprint produces a 1.25% contact-to-win rate. The $20,000 becomes agency revenue as services are earned; forecast client savings and unsigned proposals remain outside recognized revenue."
+        },
+        {
+          "name": "Reusable deployment checklist automation",
+          "type": "textarea",
+          "prompt": "List the repeatable checklist items that tooling can create, validate, or remind operators to complete. Identify evidence requirements and human decisions that remain explicit so a fully checked task list cannot conceal missing authorization or failed safeguards.",
+          "example": "A signed scope creates tasks for access authorization, sandbox setup, dataset labeling, evaluation, rollback rehearsal, training, and acceptance. GitHub Actions runs schema and regression checks. The deployment owner reviews the linked reports and client permissions; checking a task box alone cannot authorize production access."
+        },
+        {
+          "name": "Usage cost and capacity monitoring",
+          "type": "textarea",
+          "prompt": "Define client-level usage budgets, unit-cost calculations, alert thresholds, and overage handling. Keep provider charges inside the agreed support economics and specify when the agency should pause optional processing rather than absorb unlimited usage under a fixed retainer.",
+          "example": "At 5,000 monthly documents, a budgeted $0.02 model cost per document yields $100 usage cost within the $400 direct support budget. Alert at $80 and review projected spend. An 8,000-document forecast requires agreed overage pricing or reduced optional processing, not unapproved silent charges."
+        },
+        {
+          "name": "Quality drift and model change policy",
+          "type": "textarea",
+          "prompt": "Specify quality sampling, regression frequency, release comparison, and the process for changing model or prompt versions. Explain how operators detect deteriorating outcomes even when technical uptime remains high and routine infrastructure alerts show no failures.",
+          "example": "Review 50 randomly selected production drafts weekly and rerun the 200-record evaluation set before model changes. Track corrections by workflow version and error category. If field accuracy falls below 95%, pause expansion, investigate source changes, and restore the last tested configuration when the regression is reproducible."
+        },
+        {
+          "name": "Provider outage and manual fallback",
+          "type": "textarea",
+          "prompt": "Define outage detection, queue behavior, client communication, alternative processing permissions, and manual service capacity. State which records remain pending when capacity is exceeded, and prohibit shifting client data to an unapproved provider merely to preserve apparent uptime.",
+          "example": "After five consecutive provider failures, the worker opens the circuit and queues records without repeated submissions. The reviewer team can manually process 40 requests daily. Beyond that capacity, the client receives a backlog notice and prioritization request; no alternate model receives data without the contracted authorization."
+        },
+        {
+          "name": "Client data exposure response tracker",
+          "type": "textarea",
+          "prompt": "Record detection signals, immediate containment, evidence preservation, access revocation, client communication, and recovery verification. Distinguish a simulated exercise from a real incident and ensure support staff do not spread sensitive records while attempting to explain the problem.",
+          "example": "A synthetic cross-client routing test triggers immediate suspension of outbound writes and isolation of affected jobs. The incident owner preserves event identifiers and access logs, not copied document bodies in chat. Recovery requires repaired tenant checks, a clean regression run, and a documented client communication assessment."
+        },
+        {
+          "name": "Retainer expansion and reference flywheel",
+          "type": "textarea",
+          "prompt": "Define the evidence needed to renew support, propose another workflow, or request a reference. Tie expansion to verified operating results and available capacity while keeping testimonials, customer identity, and measured performance subject to explicit client permission.",
+          "example": "At day 60, the account lead reviews usage, correction rates, response times, and measured handling minutes with the client. A second workflow is proposed only after the first meets its targets. A case study uses the client's written permission and reports the sample period without extrapolating unsupported annual savings."
+        }
+      ],
+      "completion_gate": "Expand acquisition or client volume only after intake routing, suppression synchronization, usage alerts, quality sampling, and manual fallback have named owners and tested evidence; no growth target may bypass client-data boundaries or replace measured contract revenue with attributed customer outcomes."
+    },
+    {
+      "worksheet_id": "ws-06",
+      "number": 6,
+      "title": "30-Day Launch Sprint, Pod KPI Scorecard, and Exit-Readiness Ledger",
+      "purpose": "Turn the productized offer into a disciplined first-month operating plan and a transferable service business. Track launch evidence, role capacity, canonical economics, customer concentration, documentation, and contractual portability while avoiding unsupported promises that a new agency will close revenue within its first thirty days.",
+      "chapter_ref": "Q11, Q12",
+      "instructions": [
+        "Plan the first thirty days around evidence and readiness rather than assumed collections. The category's time to first deal is one to four months, so distinguish completed launch assets, qualified opportunities, signed contracts, earned revenue, and cash received.",
+        "Assign the two full-time roles and three contractor specialties used in the Conservative and Base scenarios. Document actual hours and availability because headcount alone hides fractional commitments, scheduling conflicts, and unrealistic assumptions about the low-revenue operating case.",
+        "Publish a weekly scorecard with unambiguous formulas and source records. Track commercial conversion, implementation contribution, exception rates, client review delays, collections, and support burden together so strong sales activity cannot hide deteriorating delivery economics or liquidity.",
+        "Build transferability during ordinary delivery by maintaining versioned runbooks, clean ownership records, assignable service documentation, and client-specific access inventories. Do not prepare a sale by copying customer data into a general diligence folder or assuming contracts can transfer automatically.",
+        "Close the month with an evidence-based continue, narrow, or pause decision. Compare actual results with the original offer assumptions, preserve the canonical scenarios as reference cases, and revise the operating forecast without relabeling unearned deposits or pipeline estimates as profit."
+      ],
+      "fields": [
+        {
+          "name": "Days one through seven offer foundation",
+          "type": "textarea",
+          "prompt": "Schedule the first week's customer discovery, offer definition, cost model, and sample demonstration. Identify the deliverable and accountable owner for each activity, keeping client-data handling and external commitments outside the plan until the required permissions exist.",
+          "example": "By day three, the commercial lead completes five distributor interviews and selects quote-intake routing. By day five, the architect builds a synthetic-data demonstration. By day seven, the team finishes the $20,000 scope, $11,000 direct-cost estimate, access letter, and acceptance checklist without claiming a closed deal."
+        },
+        {
+          "name": "Days eight through fourteen pipeline validation",
+          "type": "textarea",
+          "prompt": "Define a bounded outreach and discovery schedule with measurable outputs and review time. Specify how the team records objections, buying authority, data readiness, and next steps without treating a booked meeting as a qualified or collectible opportunity.",
+          "example": "Prepare 80 eligible accounts, review the message and suppression process, and begin the campaign in manageable batches. Conduct four target discovery calls if available. Each call produces a qualification record covering workflow volume, signer authority, source systems, reviewer availability, and the reason for proceeding or declining."
+        },
+        {
+          "name": "Days fifteen through twenty-one pilot readiness",
+          "type": "textarea",
+          "prompt": "List the proposal, contracting, evaluation, and sandbox tasks that can be completed during week three. Include a contingency for having no signed customer so the team continues useful readiness work without accessing unauthorized data or fabricating commercial progress.",
+          "example": "Prepare up to two evidence-backed proposals and rehearse the implementation checklist on synthetic records. If a customer signs, wait for the settled deposit and written access authority before provisioning its sandbox. Without a signed customer, improve the demo and interview notes rather than reporting pilot revenue."
+        },
+        {
+          "name": "Days twenty-two through thirty operating review",
+          "type": "textarea",
+          "prompt": "Define the final week's review of pipeline, delivery readiness, cash, and offer assumptions. State what constitutes a successful launch month when the expected time to first deal extends beyond thirty days and specify the next decision date.",
+          "example": "The day-30 review expects a tested demo, completed contract pack, costed offer, four qualified conversations, and an updated cash forecast. A signed deal is desirable but not assumed within the one-to-four-month first-deal range. Set the next commercial review for day 45 with specific objection-resolution tasks."
+        },
+        {
+          "name": "Pod roles hours and staffing realism",
+          "type": "textarea",
+          "prompt": "Assign responsibilities and realistic capacity to the canonical team configurations. Distinguish owner labor, paid employee labor, and fractional contractor work, then flag any compensation assumptions that would make a scenario infeasible in the selected labor market.",
+          "example": "Conservative and Base use two full-time roles plus three contractors: commercial lead, delivery lead, integrator, QA specialist, and documentation specialist. Contractor hours vary by booked work. At $100,000 revenue, two market-rate salaries may not fit the $80,000 expense envelope; record owner compensation and unpaid effort transparently."
+        },
+        {
+          "name": "Weekly pod KPI definitions",
+          "type": "textarea",
+          "prompt": "Define each metric's numerator, denominator, source, and owner. Include revenue, delivery quality, cash collection, and workload indicators, avoiding blended percentages that conceal low sample sizes or count the same opportunity repeatedly across different pipeline stages.",
+          "example": "The weekly scorecard reports qualified calls, signed implementation value, earned revenue, settled cash, sprint contribution, reviewed-output correction rate, and overdue receivables. QA reports 6 corrections across 120 reviewed drafts as 5%. The delivery lead reports committed hours against available hours, excluding unconfirmed contractor availability."
+        },
+        {
+          "name": "Canonical performance reference and score breakdown",
+          "type": "textarea",
+          "prompt": "Record the category's positioning, score components, annual targets, and scaled staffing limit. Use these as planning references while clearly distinguishing measured agency results and recognizing that projected performance does not replace operating evidence or labor-market feasibility.",
+          "example": "Productized AI Agencies scores 86/100: revenue potential 23, margin potential 21, team efficiency 17, startup accessibility 12, and automation potential 13. Canonical owner net is $20,000 Conservative, $165,000 Base, and $400,000 Scaled. The Scaled configuration is three full-time people plus four contractors, seven people total."
+        },
+        {
+          "name": "Customer concentration and renewal ledger",
+          "type": "textarea",
+          "prompt": "Track delivered revenue by customer, retainer renewal dates, termination rights, support burden, and unpaid balances. Identify concentration and dependency thresholds that warrant action without confusing a one-time implementation booking with durable recurring support revenue.",
+          "example": "At the $550,000 Base reference, a client contributing $110,000 represents 20% of annual revenue. The ledger separates its implementation fees from monthly support, records termination notice, and flags renewal dates 60 days ahead. If one client exceeds 25%, prioritize diversification without sacrificing service to existing accounts."
+        },
+        {
+          "name": "Exit-readiness and transferable asset register",
+          "type": "textarea",
+          "prompt": "Inventory contracts, intellectual property, operating procedures, financial records, access arrangements, and dependency licenses needed for a future transfer. Mark client consent and assignment requirements explicitly while keeping diligence evidence redacted and separate from operational customer datasets.",
+          "example": "The asset register links signed contractor IP assignments, reusable code, deployment runbooks, reconciled invoices, and support histories. Each client contract records assignment restrictions and required consent. A prospective buyer receives redacted summaries under agreed confidentiality terms; production credentials and customer documents are excluded from the general diligence folder."
+        },
+        {
+          "name": "Month-end decision and forecast revision",
+          "type": "textarea",
+          "prompt": "Record actual launch outputs, signed commitments, recognized revenue, collections, cash balance, and the next operating decision. Explain any variance from assumptions and identify the smallest concrete change that addresses the observed constraint without rewriting the canonical financial reference.",
+          "example": "Day 30 shows 80 contacted accounts, eight positive replies, four qualified calls, two proposals, no signed contract, and $21,500 remaining cash. Recognized revenue is zero. Continue for two weeks while tightening the value case; the $550,000 Base scenario remains a reference, not a description of current performance."
+        }
+      ],
+      "completion_gate": "Complete the launch review when every planned artifact has evidence, actual cash and earned revenue reconcile, staffing assumptions are explicit, the weekly scorecard has owners, transfer restrictions are recorded, and a dated continue, narrow, or pause decision is supported by observed results."
+    }
+  ]
+}

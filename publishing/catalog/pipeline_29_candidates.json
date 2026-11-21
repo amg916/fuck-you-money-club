@@ -9,7 +9,8 @@
     "vol-002-surplus-funds-recovery",
     "vol-003-digital-product-empire",
     "vol-004-ai-powered-micro-saas",
-    "vol-005-high-ticket-affiliate-marketing"
+    "vol-005-high-ticket-affiliate-marketing",
+    "vol-006-productized-ai-agencies"
   ],
   "editorial_tracks": {
     "track_1": {
@@ -7680,7 +7681,7 @@
       "slug": "productized-ai-agencies",
       "title": "Productized AI Agencies",
       "category": "Technology implementation services",
-      "production_stage": "candidate_scored",
+      "production_stage": "approved_master",
       "scores": {
         "revenue_potential": 23,
         "profit_margin_potential": 21,
@@ -7697,11 +7698,11 @@
       },
       "total_score": 86,
       "tier_label": "Elite Small-Team Cash Machine",
-      "evidence_confidence": "Preliminary — Uncertainty Range",
-      "uncertainty_band": "±10 pts",
+      "evidence_confidence": "High",
+      "uncertainty_band": "±3 pts",
       "uncertainty_bounds": {
-        "low": 76,
-        "high": 96
+        "low": 83,
+        "high": 89
       },
       "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
       "score_rationale": {
@@ -23572,5 +23573,5 @@
       "min_expert_youtube_links_per_chapter": 12
     }
   ],
-  "generated_at": "2026-11-21T18:30:45Z"
+  "generated_at": "2026-11-21T20:38:46Z"
 }

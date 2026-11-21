@@ -1,0 +1,65 @@
+{
+  "concept_id": "concept_b",
+  "volume_id": "vol-006-productized-ai-agencies",
+  "approved": true,
+  "edition_status": "approved_master",
+  "preview_only": true,
+  "files": {
+    "digital_pdf.pdf": {
+      "bytes": 1908643,
+      "sha256": "2df403ae06f1eb8957446a1295317dfa4315114ac74bc62779eb4117df5218a0"
+    },
+    "print_6x9_pdf.pdf": {
+      "bytes": 2508106,
+      "sha256": "444d556d776cc1e9f87f1d1f91e2357ff9d069cdde6d42a6e1d21a71291a985d"
+    },
+    "workbook_pdf.pdf": {
+      "bytes": 548461,
+      "sha256": "8297a1ad51fbf952d9915db4427077ab7a6180282e7f429556e91f448b028dea"
+    },
+    "book.epub": {
+      "bytes": 284739,
+      "sha256": "5c3fc051dc6e4fec8155d824888acf813af80e16ad967c64e4fe14cb2c9be936"
+    },
+    "art/cover.svg": {
+      "bytes": 3656,
+      "sha256": "a0ce1a3a79a3486f4a1f8ef5641a06189af01cdc6df7da07d27cb4abdcbde190"
+    },
+    "art/scorecard.svg": {
+      "bytes": 112321,
+      "sha256": "f074264feb61bd4ba1d6b7a117ac96f642f9a7e53dd4e7e384a322784b4a05fc"
+    },
+    "art/diag_01.svg": {
+      "bytes": 10676,
+      "sha256": "fd97928fcb184137b5a5e77758efbbe111fbdffff17dac224263a93906a8b6f5"
+    },
+    "art/diag_02.svg": {
+      "bytes": 7720,
+      "sha256": "dcba99d455435601efd4ad0064556f4917c0ab6024192f340dbcecea0ee10c93"
+    },
+    "art/diag_03.svg": {
+      "bytes": 11981,
+      "sha256": "c2b8ac21af5e44fcc836f672a00e45ca969a165581a4e33f78c4217df7995a09"
+    },
+    "art/diag_04.svg": {
+      "bytes": 9327,
+      "sha256": "90922d97ea4ddcba99fee7ea462863e69cecc2577d1dfc1d6239f6db97604fde"
+    },
+    "art/diag_05.svg": {
+      "bytes": 9957,
+      "sha256": "c14c0705f8a8d4e53f69505b8f79e91136d890165e800d04675d0f66f05ab690"
+    },
+    "art/diag_06.svg": {
+      "bytes": 13890,
+      "sha256": "f51d342cb7c7be59535cdc9061bc8546266f4832c88ce076189ce410e743cfbc"
+    },
+    "art/diag_07.svg": {
+      "bytes": 8938,
+      "sha256": "a4f643b35f07319d19a574b0e8f0804515fa8ba938f45be61b64fb5564ee884c"
+    },
+    "art/diag_08.svg": {
+      "bytes": 8737,
+      "sha256": "0789c806d6c354a251037389414928d646a3493ceda60c8eb04973f7e9fadb72"
+    }
+  }
+}

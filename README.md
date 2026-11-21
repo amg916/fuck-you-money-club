@@ -121,6 +121,13 @@ Mapped plays (`27` across Track 01 & Track 02): `public_record_api_intelligence`
 
 Mapped plays (`35` across Track 01 & Track 02): `parasitic_seo`, `competitor_intent_comparison_hijacking`, `high_velocity_affiliate_funnels`, `social_to_search_ping_post_arbitrage`, `chrome_extension_contextual_arbitrage`, `high_velocity_dm_outbound_systems`, `serp_signal_navboost_engineering`, `identity_graph_pixel_arbitrage`, `paid_to_organic_media_arbitrage`, `ad_library_spend_velocity_arbitrage`, `typo_squatting_brand_bid_hijacking`, `reddit_quora_aged_thread_injection`, `expired_chrome_extension_acquisitions`, `llm_citation_geo_poisoning`, `youtube_faceless_high_cpc_compilation_arbitrage`, `newsletter_co_reg_sparkloop_arbitrage`, `expired_podcast_rss_redirect_arbitrage`, `coupon_checkout_tab_under_injection`, `pinterest_flipboard_visual_serp_arbitrage`, `job_board_xml_feed_programmatic_arbitrage`, `domain_drop_catch_backlink_parking_arbitrage`, `free_llc_fintech_bounty_stacking`, `serverless_edge_free_tier_empire_hosting`, `free_trial_concierge_cpa_arbitrage`, `sportsbook_promo_ev_matched_betting_syndicates`, `aged_high_karma_social_account_brokerage`, `parasitic_free_publishing_account_serp_monopoly`, `tier1_search_feed_afd_rsoc_arbitrage`, `ctv_mfa_programmatic_supply_arbitrage`, `telecom_voice_traffic_pumping_8yy_sms_arbitrage`, `mvno_lifeline_acp_telecom_subsidy_aggregation`, `out_of_network_dme_telehealth_billing_arbitrage`, `high_risk_payfac_iso_mid_cascading_arbitrage`, `web2app_quiz_subscription_billing_bypass`, and `agency_ad_spend_card_multiplier_rebate_cycling`.
 
+
+### Completed Expansion Volumes (`006–029` Marathon Ledger)
+
+| Volume | Playbook Title (Rank & Score) | Total Words (Prose/Ch) | Operator Matrices | Insider Pro-Tips | Verified YouTube Evidence | Plays | Concept B Exports & Workbook |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **Vol. 006** | **Productized AI Agencies** (`#006`, `86/100`) | `76,030` (`2,258–2,508`/ch) | `48` tables / `323` rows (`10.35` w/cell) | `48` (`12` callouts) | `180` links / `162` videos (`178` harvested) | `23` plays | `227`p Dig / `364`p Print / `85`p WB (`7,095`w) |
+
 #### Conservative / Base / Scaled Unit Economics
 
 Annual modeled gross revenue and owner net profit are distinct; `FT` counts full-time staff and `C` counts recurring contractors.
@@ -153,7 +160,7 @@ Stages **1–11** — Research, Source Review, Editorial Outline, Manuscript, Fa
 
 ### Phased Rollout Plan
 * **Phase 1 *(Complete)*:** 189-video core corpus (`79.95h` / `812k` words / `1,806` pro tips), **Concept B Owner-Approved Series Master**, **29 scored candidate volumes**, **97 canonical Track 01 / Track 02 operator plays**, and the full 5-Layer **Volume 001 — Heir Hunting (`87/100`)**.
-* **Phase 2 *(Complete — Initial 5-Volume Founder Collection Shelf 100% Built & QA-Verified)*:** **Volume 002 — Surplus Funds Recovery (`86/100`)**, **Volume 003 — Digital Product Empire (`90/100`)**, **Volume 004 — AI-Powered Micro SaaS (`88/100`)**, and **Volume 005 — High-Ticket Affiliate Marketing (`87/100`)** are **100% Built & QA-Verified** at `10/10` depth with dedicated YouTube corpora (`636` total videos / `5,991` pro tips) and 5-volume switching in `/studio` and `/site`. Next in Money-to-Manpower Score rank order across Volumes `006–029`: **Volume 006 — Productized AI Agencies (`86/100`, Rank `#06`, `23` plays)**.
+* **Phase 2 *(Complete — Initial 5-Volume Founder Collection Shelf 100% Built & QA-Verified)*:** **Volume 002 — Surplus Funds Recovery (`86/100`)**, **Volume 003 — Digital Product Empire (`90/100`)**, **Volume 004 — AI-Powered Micro SaaS (`88/100`)**, and **Volume 005 — High-Ticket Affiliate Marketing (`87/100`)** are **100% Built & QA-Verified** at `10/10` depth with dedicated YouTube corpora (`636` total videos / `5,991` pro tips) and 5-volume switching in `/studio` and `/site`. Volumes `001–006` are **100% Built & QA-Verified** (`814` total corpus videos); next in rank order: **Volume 007 — Unclaimed Property Recovery**.
 * **Phase 3 *(Launch Cutover)*:** Connect production domain + Stripe checkout (`public_deploy_approved` / `paid_sales_approved` currently `false` by design) and roll out across **Direct DTC**, **Amazon KDP**, **Etsy**, and **eBay**.
 * **Phase 4 *(Scale)*:** Ship all 29 volumes systematically and feed recurring \$290/yr Charter Members with new volumes, live scorecards, and Track 01/Track 02 teardowns.
 
@@ -170,7 +177,7 @@ Source: [`publishing/catalog/pipeline_29_candidates.json`](publishing/catalog/pi
 | **#03** | **Heir Hunting** *(Vol. 001 Flagship)* | Estate research | **87/100** (`±3` High) | `22/23/18/12/12` | 4 (`1 FT + 3 C`) | \$80k–\$600k | \$20,000–\$300,000 | T1 | `5` |
 | **#04** | **High-Ticket Affiliate Marketing** *(Vol. 005 Built & QA-Verified)* | Referral publishing | **87/100** (`±3` High) | `21/22/19/12/13` | 3 (`1 FT + 2 C`) | \$50k–\$600k | \$10,000–\$300,000 | T2, T1 | `35` |
 | **#05** | **Surplus Funds Recovery** *(Vol. 002 Built & QA-Verified)* | Recovery services | **86/100** (`±3` High) | `22/22/18/12/12` | 4 (`2 FT + 2 C`) | \$100k–\$750k | \$25,000–\$337,500 | T1, T2 | `10` |
-| **#06** | **Productized AI Agencies** | Tech implementation | **86/100** (`±10` Prelim) | `23/21/17/12/13` | 5 (`2 FT + 3 C`) | \$100k–\$1.0M | \$20,000–\$400,000 | T1, T2 | `23` |
+| **#06** | **Productized AI Agencies** *(Vol. 006 Built & QA-Verified)* | Tech implementation | **86/100** (`±10` Prelim) | `23/21/17/12/13` | 5 (`2 FT + 3 C`) | \$100k–\$1.0M | \$20,000–\$400,000 | T1, T2 | `23` |
 | **#07** | **Unclaimed Property Recovery** | Recovery services | **85/100** (`±3` High) | `20/22/18/13/12` | 3 (`1 FT + 2 C`) | \$60k–\$450k | \$15,000–\$225,000 | T1 | `12` |
 | **#08** | **Commercial Lead Generation** | B2B marketing services | **85/100** (`±6` Mod) | `21/21/18/12/13` | 4 (`1 FT + 3 C`) | \$100k–\$750k | \$20,000–\$300,000 | T1, T2 | `54` |
 | **#09** | **Million-Dollar Lead Generation** | Enterprise demand gen | **82/100** (`±10` Prelim) | `24/21/16/9/12` | 5 (`2 FT + 3 C`) | \$150k–\$1.2M | \$30,000–\$480,000 | T1, T2 | `30` |

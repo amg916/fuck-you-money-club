@@ -1,0 +1,81 @@
+{
+  "volume_id": "vol-006-productized-ai-agencies",
+  "volume_slug": "vol-006-productized-ai-agencies",
+  "volume_number": 6,
+  "site_ui": {
+    "cover": [
+      "PRODUCTIZED",
+      "AI",
+      "AGENCIES"
+    ],
+    "deck": [
+      "FIX THE SCOPE. DEPLOY THE WORKFLOW.",
+      "LOCK IN THE RETAINER."
+    ],
+    "lead": "Fixed-Scope B2B AI Implementation Sprints, Human-in-the-Loop SLA Retainers & Scaling a $1.0M/yr 5-Person Delivery Pod",
+    "summary": "Replace custom-consulting scope creep with standardized B2B workflow sprints, client-owned inference credentials, and recurring maintenance retainers.",
+    "chapters": [
+      "Business model & revenue boundaries",
+      "Decision-makers & payment rails",
+      "Unit economics & margin waterfall",
+      "Startup capital & lean stack",
+      "Beginner traps & failure modes",
+      "Sourcing & first deals",
+      "End-to-end operating blueprint",
+      "Public records, APIs & tooling",
+      "Contracts, statutes & scripts",
+      "Automation & distribution loops",
+      "Small-team pod & exit valuation",
+      "First 30-day launch sprint"
+    ],
+    "flow": [
+      [
+        "SOURCE",
+        "Mine high-intent deal triggers"
+      ],
+      [
+        "UNDERWRITE",
+        "Screen margin, float & rules"
+      ],
+      [
+        "ENGAGE",
+        "Execute mandate or pre-sell"
+      ],
+      [
+        "DELIVER",
+        "Run standardized SOP & ledger"
+      ],
+      [
+        "VERIFY",
+        "Audit quality, scrubs & statutes"
+      ],
+      [
+        "COMPOUND",
+        "Reconcile cash & scale pod"
+      ]
+    ]
+  },
+  "parent_brand": "THE FUCK YOU MONEY CLUB",
+  "book_series": "THE BIG MONEY PLAYBOOKS",
+  "tagline": "Big Money. Small Teams. No Bullshit.",
+  "title": "PRODUCTIZED AI AGENCIES",
+  "subtitle": "The Complete Playbook for Productized AI Agencies: $100,000–$1,000,000 USD in Annual Implementation and Retainer Revenue, Built from a 2 FT + 3 C (5 People) Pod",
+  "chapter_count": 12,
+  "total_word_count": 76030,
+  "expert_youtube_link_count": 180,
+  "min_expert_youtube_links_required": 150,
+  "target_expert_youtube_links": "150-200+",
+  "min_expert_youtube_links_per_chapter": 12,
+  "rating_system": "Money-to-Manpower Score",
+  "composite_score": 86,
+  "formats": [
+    "8.5×11 Executive Digital PDF",
+    "6×9 Print Edition",
+    "Reflowable EPUB 3.0"
+  ],
+  "isbn": null,
+  "publication_status": "approved_master",
+  "public_deploy_approved": false,
+  "paid_sales_approved": false,
+  "updated_at": "2026-11-21T20:39:18Z"
+}

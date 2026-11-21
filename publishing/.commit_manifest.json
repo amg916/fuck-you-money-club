@@ -1,10 +1,10 @@
 {
   "scope": "publishing_store_excluding_previews",
   "sha256": {
-    "audit/existing_work_audit.json": "96123bbf6df65a7c8b2ecad545cac7d9456eaf61a18b84668a9be2586c773748",
-    "brand/brand_system.json": "90f571697709838abb6885f93036bd88a538e339e97845cfca0787faa1e3c3ed",
-    "catalog/pipeline_29_candidates.json": "fa279e9e099ca89022c58abf366ceb8effb4995858db34e617109e6e57883a9c",
-    "research/research_database_summary.json": "6f57ed201bc57cdc590a6a888b77b51379e031ae3468e846efb0884dbdc89417",
+    "audit/existing_work_audit.json": "57fb28216da527e3ebab088ac80ce62979c59f9359cae309020ae6606fcecce5",
+    "brand/brand_system.json": "12f4fe6348e6aa74c3b73d0ad1ec315bef25be9424bf70a12ec397030b4e04b4",
+    "catalog/pipeline_29_candidates.json": "f5a400b0ba46543e05a806962f530f0ceb4ed59d8debc2dade8ed1387237eb6c",
+    "research/research_database_summary.json": "157ec403b222b42e6b2640884b2555edef644b605c94f486eda4d865acb47c40",
     "site/newsletter_signups.json": "5a97fe09f877c0fccee940246e74f27dc5b6bc83148037af241946b350933794",
     "volumes/vol-001-heir-hunting/chapters/chapter-01.md": "4c44fe7e11c2f4af10ed7241bb0f8b49674c33d8c70c91a965cd3a0dab1133f0",
     "volumes/vol-001-heir-hunting/chapters/chapter-02.md": "c9f8705ba384dbbbd713674229cb8dfce45ab4fab27acea1480b476f229ad08b",
@@ -95,6 +95,24 @@
     "volumes/vol-005-high-ticket-affiliate-marketing/manuscript.json": "5984ca4be70fab1c6fee007fd750f23897667abdbbed2dca7812df1b3f8a67ef",
     "volumes/vol-005-high-ticket-affiliate-marketing/metadata.json": "4796f7ca80795245ed3e8219af8321283f0c40cafa97d752b090c1a8970a3266",
     "volumes/vol-005-high-ticket-affiliate-marketing/scorecard.json": "1cada9d1de981e8c8a714ff803190f20378b88aa8d0bad4dc4164d5e5cde7a1b",
-    "volumes/vol-005-high-ticket-affiliate-marketing/workbook.json": "0362ef9709b9c8e2a5f238004ef1cf58ec76faa64ceb42734aeaf72edc2e53cc"
+    "volumes/vol-005-high-ticket-affiliate-marketing/workbook.json": "0362ef9709b9c8e2a5f238004ef1cf58ec76faa64ceb42734aeaf72edc2e53cc",
+    "volumes/vol-006-productized-ai-agencies/chapters/chapter-01.md": "2df9113b8609ace5e57817d8d3ce7c02843a274c72021f0cb6b4d389b78d4ad3",
+    "volumes/vol-006-productized-ai-agencies/chapters/chapter-02.md": "2cbd32d7dcb8181b38348c3a4f722373af19adf2f861dc9ac8b32f6ef9a94362",
+    "volumes/vol-006-productized-ai-agencies/chapters/chapter-03.md": "cae350ca6d9b5a3a917014bf21d9745bbc9b536aa88e6194b3886314798fdf73",
+    "volumes/vol-006-productized-ai-agencies/chapters/chapter-04.md": "a306241f8f01e18c2a6204cc49aef425b9bd6d3f92a3730f25819e2d79d0f792",
+    "volumes/vol-006-productized-ai-agencies/chapters/chapter-05.md": "86342e3b3f915ac59f6ea65c8b0ee312f4e4e9fc6798a7e94dd5b6d5e96af6b3",
+    "volumes/vol-006-productized-ai-agencies/chapters/chapter-06.md": "d043bff0bd4878598e125df3657322273fd86fd2f19df630da600e640776c1e0",
+    "volumes/vol-006-productized-ai-agencies/chapters/chapter-07.md": "0e5031c0e521bb6a65087830f2b4d1adf55fdbb929a079ccbcbcfe151400a7b3",
+    "volumes/vol-006-productized-ai-agencies/chapters/chapter-08.md": "62678e341a54bcd94de8282d7df6d679d110d0a9e5aad3aa721e725ed8ed60be",
+    "volumes/vol-006-productized-ai-agencies/chapters/chapter-09.md": "e646febc0ee5c580ec2b9abe5613de31010b0f3a1cec84f8638ff1f56f8546ca",
+    "volumes/vol-006-productized-ai-agencies/chapters/chapter-10.md": "1a83729ddff0bd55ff7392102f42500b636be1b277cdd1c9d8a10648b64733c3",
+    "volumes/vol-006-productized-ai-agencies/chapters/chapter-11.md": "c4f99c187ab57acef0c3d03b59d987b6cbf75e4030276d4d16e12db27aff363f",
+    "volumes/vol-006-productized-ai-agencies/chapters/chapter-12.md": "11f119be0e5a6f5c1d038a71999c42a800900f8c736a12850c6707ac35d87536",
+    "volumes/vol-006-productized-ai-agencies/diagrams_data.json": "97ae3dfb2472e281d8454bcda98b6586e697a9a3b2e4f5b069797e68e96affe4",
+    "volumes/vol-006-productized-ai-agencies/graphics_reviews.json": "34ccc5a72b849088e3177fbd5bfa99310022fa0185fa77251128a8934f0a6e36",
+    "volumes/vol-006-productized-ai-agencies/manuscript.json": "0130ee690b38cb12afd736e962aa76cdc5ea0337e18dbbc259e7df32720585d7",
+    "volumes/vol-006-productized-ai-agencies/metadata.json": "70b55f806964f896a24d615eadf169b5689dd8f964944aba1636b175f320c2fd",
+    "volumes/vol-006-productized-ai-agencies/scorecard.json": "85b7ee8d4baf397354ff463c74a1d407951378b9a91e542c7ceb5607193d3de1",
+    "volumes/vol-006-productized-ai-agencies/workbook.json": "bb46350a545bc068523231c409ee56010e9b4c6da43ee7af0c7b0e932ac4411d"
   }
 }

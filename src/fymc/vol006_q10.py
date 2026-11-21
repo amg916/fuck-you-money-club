@@ -1,0 +1,680 @@
+from __future__ import annotations
+
+CHAPTER_10 = {
+    "id": "Q10",
+    "chapter_id": "Q10",
+    "chapter_number": 10,
+    "question_number": 10,
+    "slug": "automation-ai-leverage-scalable-distribution-flywheels",
+    "question_prompt": "How does a 2 FT + 3 C (5 people) productized ai agencies team automate 70%+ of repetitive research, qualification, fulfillment, and traffic/deal acquisition while keeping human-in-the-loop QA?",
+    "kicker": "Q10 / THE BIG MONEY PLAYBOOKS",
+    "title": "Automation, AI Leverage & Scalable Distribution Flywheels",
+    "subtitle": "Signed Webhooks, Python Workers, Evidence-Bound LLMs, Authorized Marketplace Monitoring, and Merchant-Approved Payment Routing",
+    "layout_template": "case_study_walkthrough",
+    "reading_time_minutes": 14,
+    "executive_summary": (
+        "Candidate #29, Productized AI Agencies, holds Rank #06 with an 86/100 "
+        "Money-to-Manpower Score. Across the volume's 23 mapped plays, the scalable "
+        "asset is a repeatable implementation system, not an unlimited custom-development "
+        "promise. This chapter builds signed intake webhooks, Python job workers, "
+        "evidence-bound LLM outputs, deployment checklists, and monitored distribution "
+        "loops around fixed-scope sprints and support retainers. Marketplace brand "
+        "protection and authorized payment orchestration provide demanding operating "
+        "examples. Target more than 70% automation of measured repetitive work while "
+        "retaining human review for consequential outputs. Canonical annual owner net "
+        "profit remains $20,000 Conservative, $165,000 Base, and $400,000 Scaled; "
+        "recognized revenue includes implementation fees and support retainers, "
+        "never client sales or merchant payment volume."
+    ),
+    "key_metrics": [
+        {
+            "label": "Conservative",
+            "value": "$100,000",
+            "context": "Annual implementation-fee and support-retainer revenue only",
+            "note": "20% net margin; $20,000 annual owner net profit; 2 FT + 3 C",
+        },
+        {
+            "label": "Base",
+            "value": "$550,000",
+            "context": "Annual implementation-fee and support-retainer revenue only",
+            "note": "30.0% net margin; $165,000 annual owner net profit; 2 FT + 3 C",
+        },
+        {
+            "label": "Scaled",
+            "value": "$1,000,000",
+            "context": "Annual implementation-fee and support-retainer revenue only",
+            "note": "40% net margin; $400,000 annual owner net profit; 3 FT + 4 C",
+        },
+    ],
+    "sections": [
+        {
+            "heading": "1. Turn the fixed-scope sprint into a measured automation system",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Start with a product boundary that the five-person team can defend: "
+                    "one intake source, one bounded transformation, one destination, and "
+                    "one measurable acceptance test per sprint. The delivery lead owns "
+                    "architecture and client acceptance; the operations lead owns intake, "
+                    "support, and account economics. Three contractors cover integration "
+                    "engineering, test execution, and domain review through explicit "
+                    "work packets rather than standing attendance requirements. Sell "
+                    "additional destinations, historical migrations, and new decision "
+                    "classes as separately priced changes. In the statement of work, "
+                    "name authorized systems, permitted data fields, service accounts, "
+                    "retention periods, model providers, output ownership, and incident "
+                    "contacts. Access must come from the client resource owner, not "
+                    "from instructions embedded in uploaded documents. Treat 18 U.S.C. "
+                    "1030 as a concrete reason to record access authorization and stop "
+                    "when that authorization expires. Build an inventory of every "
+                    "credential and external publication surface before connecting "
+                    "production. The deliverable is a repeatable workflow with an "
+                    "observable result, not a promise that an agent will navigate "
+                    "arbitrary business exceptions. A new client should require "
+                    "configuration and acceptance fixtures, while genuinely new "
+                    "business logic receives its own estimate and delivery window."
+                ),
+                (
+                    "Measure automation against labor-weighted repetitive work, not "
+                    "the number of boxes colored green in a workflow editor. Suppose "
+                    "the baseline contains 1,000 monthly repetitive hours: 200 in "
+                    "research, 150 in qualification, 450 in fulfillment, and 200 in "
+                    "distribution operations. A designed workflow leaves 50, 45, "
+                    "100, and 55 hours respectively, or 250 hours altogether. That "
+                    "removes 750 hours and achieves 75% automation of the defined "
+                    "baseline. If the new system also creates 80 hours of review "
+                    "and incident handling, remaining total effort is 330 hours "
+                    "and net labor reduction is 67%, not 75%. Both figures belong "
+                    "on the client dashboard, together with volume, error severity, "
+                    "and sampling coverage. Do not describe the illustrative 1,000 "
+                    "hours as the agency team's available capacity; it can represent "
+                    "work distributed across client organizations. Instrument each "
+                    "task with start time, completion time, reviewer minutes, "
+                    "rework cause, and a stable workflow version. Compare like "
+                    "cohorts before claiming savings. Randomly inspect apparently "
+                    "successful runs because exception-only sampling misses silent "
+                    "errors. Freeze the denominator for a reporting period so "
+                    "changing task definitions cannot manufacture an improvement "
+                    "that the customer's staff never experience."
+                ),
+                (
+                    "Implement intake as a small Python HTTP service behind a "
+                    "managed TLS endpoint. Verify the provider's webhook signature "
+                    "against raw request bytes with hmac.compare_digest, validate "
+                    "timestamps, and reject replayed event identifiers. A successful "
+                    "response means durable receipt, not completed business work: "
+                    "persist the event and an outbox record atomically, then let "
+                    "workers deliver outbox messages to Amazon SQS. Use a unique "
+                    "constraint on tenant, source, and event identifier to collapse "
+                    "duplicates. Validate JSON field types, payload size, allowed "
+                    "destinations, and client entitlements before any model call. "
+                    "The LLM receives only the minimum necessary fields and returns "
+                    "a typed proposal with evidence references; deterministic "
+                    "Python validates the proposal before a separate executor "
+                    "considers side effects. Customer text is data, never authority "
+                    "to expand tool access. Keep secrets outside prompts and "
+                    "retrieve them through scoped service identities. Attach "
+                    "tenant identity at ingestion and enforce it again when "
+                    "reading evidence, writing outputs, and opening review queues. "
+                    "A dedicated client pause switch must stop new external "
+                    "actions without destroying queued evidence. This separation "
+                    "lets operators repair a connector without asking the model "
+                    "to improvise a recovery procedure inside a live account."
+                ),
+            ],
+            "table": {
+                "caption": "Six Control Surfaces for a Reusable Python and Webhook Delivery System",
+                "headers": [
+                    "Workflow surface and accountable owner",
+                    "Automated execution and required evidence",
+                    "Human intervention and release condition",
+                    "Failure containment and recovery behavior",
+                ],
+                "rows": [
+                    [
+                        "Operations lead collects the signed scope and system inventory.",
+                        "Intake validates authorized resources against the client's configured allowlist.",
+                        "Delivery lead resolves missing permissions before enabling any production connection.",
+                        "Incomplete authorization keeps the project in isolated fixture testing.",
+                    ],
+                    [
+                        "Integration contractor maintains webhook verification and durable event receipt.",
+                        "Signature checks bind raw payload bytes to the expected sender.",
+                        "Engineer investigates repeated signature failures using sanitized event metadata.",
+                        "Rejected events receive no downstream execution or credential access.",
+                    ],
+                    [
+                        "Delivery lead maintains tenant isolation throughout the processing pipeline.",
+                        "Every evidence read and output write checks tenant membership.",
+                        "Reviewer tests cross-tenant access attempts before approving the integration.",
+                        "Isolation failures disable affected connectors and preserve investigation records.",
+                    ],
+                    [
+                        "Test contractor maintains acceptance fixtures and versioned model evaluations.",
+                        "Typed output validation checks required evidence and allowed field values.",
+                        "Domain reviewer resolves consequential ambiguities before external execution begins.",
+                        "Invalid proposals enter a review queue without touching destination systems.",
+                    ],
+                    [
+                        "Operations lead assigns exception ownership and business response deadlines.",
+                        "Queue metrics expose aging work by client and failure category.",
+                        "Account owner agrees revised timing when dependencies remain unavailable.",
+                        "Client pause controls stop side effects while retaining queued evidence.",
+                    ],
+                    [
+                        "Delivery lead maintains the labor baseline and monthly measurement definitions.",
+                        "Task telemetry records reviewer effort alongside completed automation volumes.",
+                        "Client confirms comparable cohorts before savings claims enter marketing.",
+                        "Disputed measurements revert to documented observations rather than projected benefits.",
+                    ],
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Bind scope to authorized resources",
+                    "action": "Record client-approved systems, fields, identities, and permitted actions.",
+                    "detail": "Create separate fixture and production configurations; issue no production credential before the resource owner authorizes access.",
+                },
+                {
+                    "step": 2,
+                    "title": "Capture the manual baseline",
+                    "action": "Time representative research, qualification, fulfillment, and distribution tasks.",
+                    "detail": "Store task counts, handling minutes, error categories, and review effort so later automation percentages use a stable denominator.",
+                },
+                {
+                    "step": 3,
+                    "title": "Run deterministic and model evaluations",
+                    "action": "Replay normal, adversarial, duplicate, and dependency-failure fixtures.",
+                    "detail": "Require evidence-linked outputs, tenant isolation, bounded tool permissions, and explicit review routing for consequential actions.",
+                },
+                {
+                    "step": 4,
+                    "title": "Release a reversible production slice",
+                    "action": "Enable one client workflow with bounded volume and active monitoring.",
+                    "detail": "Check destination outcomes against receipts, rehearse the pause switch, and expand only after the accountable operator reviews observed results.",
+                },
+            ],
+        },
+        {
+            "heading": "2. Productize marketplace intelligence without manufacturing enforcement claims",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "Use amazon_asin_hijack_brand_protection_trigger as a narrowly "
+                    "defined intelligence-and-case-preparation service, not an "
+                    "automatic accusation engine. Monitor Amazon, Walmart, and "
+                    "eBay offers through authorized marketplace APIs, licensed "
+                    "feeds, or expressly permitted collection methods. Buy Box "
+                    "and comparable winning-offer data availability varies by "
+                    "marketplace and account permission; unsupported fields must "
+                    "remain outside the contracted coverage. Capture product "
+                    "identifier, seller identity as represented by the platform, "
+                    "offer price, shipping charge, observation time, source "
+                    "reference, and collection method. Normalize comparable "
+                    "pack sizes before flagging undercutting. For 1,000 products "
+                    "observed four times daily across three marketplaces, the "
+                    "planning ceiling is 12,000 observations daily and 360,000 "
+                    "in a thirty-day month. At an illustrative licensed-feed "
+                    "cost of $0.002 per observation, acquisition costs $720 "
+                    "monthly before storage, review, and support. Confirm actual "
+                    "provider pricing and permitted refresh frequency before "
+                    "quoting. Deduplicate repeated offers into seller-product "
+                    "episodes rather than billing the reviewer for identical "
+                    "alerts. An observed lower price establishes a monitoring "
+                    "event; it does not establish counterfeiting, lost sales, "
+                    "or a legally actionable breach. Preserve that distinction "
+                    "in both the database schema and the customer-facing dossier."
+                ),
+                (
+                    "Build each dossier from evidence rather than persuasive "
+                    "model narration. Python joins observations to the client's "
+                    "authorized reseller roster, written distribution terms, "
+                    "lot records, and documented warranty conditions. The LLM "
+                    "summarizes the timeline and identifies missing evidence "
+                    "without deciding that a seller is unlawful. A human "
+                    "checks identity matching, product equivalence, policy "
+                    "applicability, and the proposed next action. A price "
+                    "difference of $12 across 200 offers indicates a $2,400 "
+                    "price-gap exposure calculation only if each offer "
+                    "represents one comparable unit; it is not realized "
+                    "revenue loss. Actual loss analysis needs transaction "
+                    "counts, attribution assumptions, and counterfactual "
+                    "evidence. Structure the lawful fallback around unilateral "
+                    "MAP policies where appropriate, documented warranty or "
+                    "packaging material differences, and supply-chain lot "
+                    "serialization. Under 15 U.S.C. 1, avoid facilitating "
+                    "agreements among competing resellers about prices, and "
+                    "evaluate applicable state restrictions separately. "
+                    "Trademark analysis under 15 U.S.C. 1114 and 1125 "
+                    "requires facts supporting the asserted claim; an "
+                    "unauthorized reseller label alone is insufficient. "
+                    "Never manufacture IP complaints. Route ambiguous cases "
+                    "to the brand's designated decision maker, suspend "
+                    "unsupported allegations, and retain the evidence "
+                    "supporting any authorized communication."
+                ),
+                (
+                    "Package the commercial offer around monitoring coverage, "
+                    "review capacity, and response preparation. The mapped play's "
+                    "$2,500–$7,500 monthly enforcement-retainer range becomes an "
+                    "agency implementation and managed-support offer only when "
+                    "the contract specifies what the agency actually performs. "
+                    "At $5,000 monthly, one client produces $60,000 annual "
+                    "agency revenue; five full-year clients produce $300,000. "
+                    "That is the Base scenario's retainer component, not "
+                    "additional revenue layered over it. For an illustrative "
+                    "account, combine $720 data acquisition, eight reviewer "
+                    "hours at $60 for $480, and $300 of hosting and support "
+                    "allocation: $1,500 direct monthly cost leaves $3,500 "
+                    "before sales, management, and other shared expenses. "
+                    "Do not call that contribution owner profit. Create "
+                    "distribution through permissioned, redacted before-and-after "
+                    "dossiers, agency partnerships, and technical pages "
+                    "explaining evidence requirements for specific marketplaces. "
+                    "A referral request belongs after the client accepts a "
+                    "useful case outcome, not after every alert. Offer a "
+                    "bounded diagnostic using the prospect's supplied product "
+                    "list, then convert repeatable monitoring needs into "
+                    "a fixed-scope sprint. If source access disappears, "
+                    "reduce coverage explicitly, credit no invented observations, "
+                    "and offer client-supplied exports as the operational "
+                    "fallback until authorized collection resumes."
+                ),
+            ],
+            "table": {
+                "caption": "Marketplace Evidence, Enforcement Boundaries, and Retainer Economics",
+                "headers": [
+                    "Operational signal and collection boundary",
+                    "Evidence transformation and concrete unit math",
+                    "Required review before consequential action",
+                    "Fallback when evidence or access fails",
+                ],
+                "rows": [
+                    [
+                        "Amazon offer observations require permitted account access or licensed data.",
+                        "One thousand products across three marketplaces yield twelve thousand daily observations.",
+                        "Reviewer confirms that compared prices represent equivalent quantities and conditions.",
+                        "Unavailable marketplace coverage shifts to explicitly scoped client export processing.",
+                    ],
+                    [
+                        "Walmart offer changes enter the same normalized product evidence model.",
+                        "Shipping charges and pack sizes remain separate auditable comparison fields.",
+                        "Reviewer checks seller matching before connecting observations to reseller records.",
+                        "Ambiguous seller identities stay unresolved internally without publishing an accusation.",
+                    ],
+                    [
+                        "eBay listings require condition distinctions before entering comparable offer groups.",
+                        "Used inventory and bundles receive separate cohorts from new units.",
+                        "Domain specialist verifies category assumptions against the client's actual merchandise.",
+                        "Noncomparable listings leave the enforcement queue but retain source evidence.",
+                    ],
+                    [
+                        "Repeated seller-product observations collapse into one reviewable evidence episode.",
+                        "Three hundred sixty thousand observations cost seven hundred twenty dollars illustratively.",
+                        "Account owner checks provider pricing and permitted collection frequency before quoting.",
+                        "Feed interruption triggers coverage notices rather than fabricated continuity claims.",
+                    ],
+                    [
+                        "MAP alerts identify potential policy issues rather than automatic infringement.",
+                        "Twelve dollars across two hundred comparable units means price-gap exposure.",
+                        "Brand representative reviews applicable policy and substantiated material differences first.",
+                        "Unsupported allegations stop; lot tracing supports a factual supply-chain investigation.",
+                    ],
+                    [
+                        "Five full-year retainers at five thousand dollars form Base support revenue.",
+                        "Each account's fifteen hundred direct monthly cost leaves contribution before overhead.",
+                        "Finance owner reconciles shared costs before describing annual owner profit.",
+                        "Overloaded review capacity triggers scoped changes rather than unlimited enforcement promises.",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Sell the evidence system, not the alert flood",
+                "body": "The strongest retainer preserves provenance, removes duplicate work, and makes the brand's next decision easier.",
+                "items": [
+                    "Fingerprint seller-product-price episodes so repeated observations update one case instead of generating hundreds of billable distractions.",
+                    "Keep source timestamps and observation hashes beside each generated sentence; reviewers should open the supporting record in one click.",
+                    "Separate observed price gaps, estimated exposure, and verified transactions into different fields so sales copy cannot silently merge them.",
+                    "Sell a documented source-outage mode using client exports before signing the retainer, including reduced refresh frequency and review capacity.",
+                ],
+            },
+        },
+        {
+            "heading": "3. Bound payment orchestration to approved merchants, routes, and responsibilities",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Treat high_risk_payfac_iso_mid_cascading_arbitrage as a demanding "
+                    "integration pattern, not permission to bypass underwriting. "
+                    "Its wholesale ISO and orchestration concept spans 25–60 "
+                    "domestic and offshore acquiring banks and high-risk "
+                    "merchant categories, including telehealth GLP-1s or peptides, "
+                    "nutra subscriptions, sweepstakes gaming, high-ticket coaching, "
+                    "and AI companions. Those labels establish neither legality "
+                    "nor processor eligibility. A category rejected by one "
+                    "provider may be accepted only by another provider that "
+                    "knowingly approves the actual business, geography, "
+                    "products, fulfillment, and descriptor. The productized "
+                    "agency should sell implementation and monitoring to "
+                    "authorized payment operators unless it separately holds "
+                    "the contracts and responsibilities required for another "
+                    "role. Collect each acquirer's written merchant approval, "
+                    "permitted transaction types, retry rules, settlement "
+                    "currency, and designated incident contact. Maintain "
+                    "a route registry that workers can read but an LLM "
+                    "cannot modify. New merchant identifiers require verified "
+                    "ownership and approved routing configuration. Offshore "
+                    "connectivity does not remove geographic, sanctions, "
+                    "consumer-protection, or product restrictions. When an "
+                    "approval is absent, the implementation stops at a "
+                    "sandbox demonstration rather than sending live "
+                    "transactions through an unrelated merchant account."
+                ),
+                (
+                    "Expose the economics without confusing client payment "
+                    "volume with agency revenue. On $1,000,000 monthly merchant "
+                    "volume, a simplified 2.10% wholesale cost is $21,000. "
+                    "Merchant pricing of 5.50% produces $55,000 in charges "
+                    "and a $34,000 gross spread; 8.90% produces $89,000 "
+                    "and a $68,000 gross spread. These are payment-operator "
+                    "figures before additional network charges, refunds, "
+                    "losses, operating expenses, and contractual allocations, "
+                    "not this agency's recognized implementation revenue. "
+                    "A 10% rolling reserve withholds $100,000 of that "
+                    "month's eligible volume under the assumed reserve "
+                    "basis. Reserve balances remain restricted merchant "
+                    "funds or associated settlement obligations according "
+                    "to the actual arrangement, never free agency income. "
+                    "The agency instead might invoice a $25,000 deployment "
+                    "and $5,000 monthly support, already counted within "
+                    "the chapter's canonical revenue mixes. Build a "
+                    "merchant-level settlement ledger that distinguishes "
+                    "captured principal, processor fees, refunds, reserves, "
+                    "releases, and actual agency invoices. Reconcile provider "
+                    "statements against transaction identifiers daily. An "
+                    "unexplained difference triggers investigation and "
+                    "client notification, not an automatic balancing entry "
+                    "that hides the discrepancy or inflates reported "
+                    "service revenue."
+                ),
+                (
+                    "Make payment routing deterministic and bounded. Tokenize "
+                    "card details through the authorized gateway; the agency "
+                    "workflow stores tokens and minimal transaction metadata, "
+                    "not raw card data in prompts or general logs. A "
+                    "decline classifier follows processor guidance: hard "
+                    "declines stop, while eligible soft declines receive "
+                    "only explicitly permitted retries on approved routes. "
+                    "Cascading must never disguise the merchant, evade "
+                    "issuer decisions, or send duplicate authorizations "
+                    "after a timeout without checking transaction status. "
+                    "For this mapped offer, require a documented 10% "
+                    "rolling reserve arrangement before enabling live "
+                    "routing, and enforce the contracted release schedule. "
+                    "Configure Verifi RDR pre-dispute refunds with merchant "
+                    "authorization, financial thresholds, and reconciliation; "
+                    "refund automation does not erase dispute obligations. "
+                    "Use supported 3DS2 step-up authentication for designated "
+                    "high-risk BIN and transaction cohorts, alongside broader "
+                    "fraud signals, and maintain recognizable merchant "
+                    "descriptors. Humans handle merchant onboarding, route "
+                    "changes, exceptional refunds, and consequential risk "
+                    "decisions. For covered recurring consumer electronic "
+                    "fund transfers, implement authorization and copy "
+                    "requirements under 12 CFR 1005.10(b); for covered "
+                    "online negative-option offers, address 15 U.S.C. "
+                    "8403. Provider outages fall back to a pending "
+                    "state or controlled stop, never blind multi-bank retries."
+                ),
+            ],
+            "table": {
+                "caption": "Authorized Payment Routing and Settlement Failure-Recovery Matrix",
+                "headers": [
+                    "Payment control and accountable operator",
+                    "Deterministic automation and financial treatment",
+                    "Human review and evidence requirement",
+                    "Safe recovery when execution becomes uncertain",
+                ],
+                "rows": [
+                    [
+                        "Payment operator supplies merchant-specific acquiring approvals before production configuration begins.",
+                        "Route registry binds merchant identifiers to approved products and geographies.",
+                        "Reviewer verifies actual business activity against each signed acquiring agreement.",
+                        "Missing approval leaves the connector restricted to sandbox test transactions.",
+                    ],
+                    [
+                        "Gateway returns transaction identifiers and processor-specific decline classifications to workers.",
+                        "Hard declines stop while permitted soft retries use bounded schedules.",
+                        "Payments specialist reviews ambiguous response mappings before enabling retry behavior.",
+                        "Timeout recovery queries existing transaction status before attempting another authorization.",
+                    ],
+                    [
+                        "Merchant pricing and wholesale costs remain distinct from agency service invoices.",
+                        "Million-dollar volume yields thirty-four to sixty-eight thousand illustrative gross spread.",
+                        "Finance reviewer verifies actual fees and losses before reporting payment economics.",
+                        "Unreconciled settlement differences enter investigation without invented balancing revenue entries.",
+                    ],
+                    [
+                        "Contracted ten-percent rolling reserves receive their own settlement ledger accounts.",
+                        "One million eligible dollars creates one hundred thousand dollars withheld.",
+                        "Account owner confirms reserve basis and release timing with the processor.",
+                        "Missing reserve documentation blocks live routing for this configured offer.",
+                    ],
+                    [
+                        "Verifi RDR rules operate under explicit merchant refund authority and limits.",
+                        "Refund events reconcile against original transactions and subsequent settlement statements.",
+                        "Exceptional refunds and disputed eligibility receive named human case ownership.",
+                        "Provider outages queue reconciliation work without silently suppressing dispute notifications.",
+                    ],
+                    [
+                        "Supported 3DS2 authentication and transparent descriptors support approved merchant operations.",
+                        "Risk cohorts trigger configured authentication without changing merchant identity information.",
+                        "Reviewer confirms customer authorization requirements for each applicable payment arrangement.",
+                        "Unsupported authentication paths stop or use the processor's documented alternative.",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Verify four conditions before payment-side production traffic",
+                "body": "Each condition needs an accountable reviewer and retained evidence; a successful API response proves none of them.",
+                "items": [
+                    "Match the actual merchant, products, geography, descriptor, and transaction types to explicit acquirer approvals and authorized routing credentials.",
+                    "Confirm the mapped offer's contracted 10% rolling reserve, reserve basis, release schedule, and separate settlement-ledger treatment.",
+                    "Replay timeout, duplicate, hard-decline, refund, and provider-outage fixtures; verify no blind cascading or duplicate financial side effects.",
+                    "Verify merchant-authorized Verifi RDR thresholds, supported 3DS2 policies, applicable recurring-payment authorization records, and human exception ownership.",
+                ],
+            },
+        },
+        {
+            "heading": "4. Compound distribution while controlling run cost, review load, and owner profit",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "Price automation from accepted work, not token invoices "
+                    "alone. Assume one model-assisted run uses 2,000 input "
+                    "tokens priced at $2.40 per million and 400 output "
+                    "tokens priced at $8.00 per million. These illustrative "
+                    "rates produce $0.0048 input cost and $0.0032 output "
+                    "cost. Add $0.002 orchestration, $0.005 evidence retrieval, "
+                    "and $0.005 storage and telemetry for $0.02 machine "
+                    "cost per attempted run. At 10,000 runs, machine "
+                    "spend is $200. Reviewing 200 sampled runs for "
+                    "two minutes each at $60 hourly costs $400; "
+                    "handling 50 additional exception runs for six "
+                    "minutes each costs $300. With $300 allocated "
+                    "platform overhead, total cost is $1,200, or "
+                    "$0.12 per attempted run. If only 9,500 runs "
+                    "meet acceptance criteria, cost per accepted run "
+                    "is approximately $0.1263. These review volumes "
+                    "illustrate low-consequence work only; consequential "
+                    "outputs require their designated human review "
+                    "even if that changes the economics. Set tenant "
+                    "spend limits, maximum retries, evidence-size limits, "
+                    "and review-queue capacity before increasing traffic. "
+                    "A cheaper model that doubles exception handling "
+                    "can be more expensive than a stronger model "
+                    "with stable structured outputs."
+                ),
+                (
+                    "Connect distribution to verified delivery artifacts. Publish "
+                    "programmatic pages only when each page contains useful "
+                    "connector-specific material: supported fields, setup steps, "
+                    "measured failure modes, and a real acceptance checklist. "
+                    "Use Google Search Console to track qualified organic "
+                    "visits, not just indexed URLs. Offer an optional "
+                    "shareable, redacted workflow health report that clients "
+                    "can forward to a peer; obtain permission before "
+                    "publishing any client name, metric, or configuration. "
+                    "For outbound, combine licensed business-contact data "
+                    "with a relevant diagnostic and honor suppression "
+                    "lists under 15 U.S.C. 7704. Avoid fake personalization "
+                    "or unsupported savings claims, which create risk "
+                    "under 15 U.S.C. 45. A planning funnel of 1,000 "
+                    "carefully selected monthly contacts, 4% positive "
+                    "responses, 50% meeting conversion, 40% proposal "
+                    "conversion, and 25% close conversion produces "
+                    "two expected wins, not two booked contracts. "
+                    "Record cohort dates and actual conversion counts "
+                    "in HubSpot, then reconcile won deals to delivery "
+                    "capacity. With $4,000 monthly acquisition spending, "
+                    "two wins imply $2,000 cash acquisition cost "
+                    "per win before unallocated labor. Do not "
+                    "annualize this funnel into the canonical scenarios; "
+                    "pause campaigns when support queues or implementation "
+                    "backlogs exceed the team's service commitments."
+                ),
+                (
+                    "Reconcile the operating plan to the scorecard every "
+                    "month. Conservative revenue can comprise four $15,000 "
+                    "sprints plus two retainers billed for ten months "
+                    "at $2,000 monthly: $60,000 plus $40,000 equals "
+                    "$100,000. Its $80,000 total expense envelope leaves "
+                    "$20,000 owner net profit at 20%. Base uses "
+                    "ten $25,000 sprints and five twelve-month $5,000 "
+                    "retainers: $250,000 plus $300,000 equals $550,000; "
+                    "$385,000 total expenses leave $165,000 at 30.0%. "
+                    "Scaled uses sixteen $25,000 sprints and ten "
+                    "twelve-month $5,000 retainers: $400,000 plus $600,000 "
+                    "equals $1,000,000; $600,000 total expenses leave "
+                    "$400,000 at 40%. Conservative and Base retain "
+                    "2 FT + 3 C; Scaled uses 3 FT + "
+                    "4 C. These rosters are canonical staffing "
+                    "assumptions, not evidence that local full-year "
+                    "compensation fits every expense envelope; validate "
+                    "paid hours, owner compensation treatment, and "
+                    "contractor utilization before committing. Count "
+                    "marketplace and payment examples within these "
+                    "totals rather than adding them again. Release "
+                    "new workflow versions through replay tests, "
+                    "shadow execution, and bounded live cohorts. "
+                    "Roll back model and prompt versions together, "
+                    "reconcile destination side effects, and replay "
+                    "only jobs whose idempotency protections survive "
+                    "the incident."
+                ),
+            ],
+            "table": {
+                "caption": "Run Economics, Acquisition Measurement, and Canonical Annual Profit Reconciliation",
+                "headers": [
+                    "Operating measure and explicit planning basis",
+                    "Calculation with clearly bounded financial meaning",
+                    "Review responsibility and acceptance evidence",
+                    "Failure response that preserves operating discipline",
+                ],
+                "rows": [
+                    [
+                        "Ten thousand attempted runs use illustrative model and infrastructure pricing.",
+                        "Two hundred machine dollars plus labor and overhead total twelve hundred.",
+                        "Operations lead checks actual invoices and reviewer minutes against assumptions.",
+                        "Rising exceptions reduce throughput until fixture analysis identifies the cause.",
+                    ],
+                    [
+                        "Nine thousand five hundred runs satisfy the defined acceptance criteria.",
+                        "Twelve hundred total dollars produce approximately thirteen cents per accepted run.",
+                        "Delivery lead verifies acceptance outcomes independently from successful API responses.",
+                        "Rejected outputs remain outside delivered-volume claims and enter classified remediation.",
+                    ],
+                    [
+                        "One thousand selected contacts feed an illustrative monthly outbound cohort.",
+                        "Sequential conversion assumptions yield two expected wins before observed outcome adjustments.",
+                        "Growth owner reconciles responses and signed contracts using dated CRM records.",
+                        "Queue overload pauses new campaigns rather than creating unsupported delivery promises.",
+                    ],
+                    [
+                        "Conservative combines four implementation sprints with twenty monthly retainer invoices.",
+                        "One hundred thousand revenue less eighty thousand expenses leaves twenty thousand.",
+                        "Finance owner validates twenty-percent margin within the canonical five-person roster.",
+                        "Compensation mismatches require an explicit operating-plan revision before staffing commitments.",
+                    ],
+                    [
+                        "Base combines ten implementation sprints with sixty monthly retainer invoices.",
+                        "Five hundred fifty thousand revenue leaves one hundred sixty-five thousand profit.",
+                        "Finance owner verifies three hundred eighty-five thousand total annual expenses.",
+                        "Scope growth receives separately priced changes rather than hidden margin erosion.",
+                    ],
+                    [
+                        "Scaled combines sixteen implementation sprints with one hundred twenty retainer invoices.",
+                        "One million revenue less six hundred thousand expenses leaves four hundred thousand.",
+                        "Delivery owner validates forty-percent margin with three employees and four contractors.",
+                        "Unstable releases revert together with prompts while destination effects undergo reconciliation.",
+                    ],
+                ],
+            },
+        },
+    ],
+    "pull_quote": "Automate the repetition, preserve the evidence, and make every consequential action belong to an accountable human.",
+    "diagram_id": "diag-02",
+    "action_checklist": [
+        "Inventory client-authorized systems, credential owners, allowed fields, external destinations, and pause controls before enabling production intake.",
+        "Measure repetitive labor by task category, preserve a stable denominator, and report new review effort separately from automated hours.",
+        "Implement signed webhooks, durable receipt, tenant-bound idempotency, typed model outputs, and deterministic side-effect execution.",
+        "Launch marketplace monitoring with authorized sources, evidence-linked dossiers, lawful policy boundaries, and a documented source-outage fallback.",
+        "Restrict payment integrations to approved merchants and routes; test reserves, refunds, authentication, settlement reconciliation, and uncertain transaction recovery.",
+        "Reconcile accepted-run cost, acquisition cohorts, staffing capacity, and the exact $20,000, $165,000, and $400,000 annual owner-profit cases monthly.",
+    ],
+    "statutory_citations": [
+        {
+            "title": "18 U.S.C. 1030 — Fraud and related activity in connection with computers",
+            "url": "https://www.law.cornell.edu/uscode/text/18/1030",
+            "relevance": "Document authorized client-system access, enforce resource boundaries, and stop connections when authorization ends.",
+        },
+        {
+            "title": "15 U.S.C. 1 — Trusts and combinations in restraint of trade",
+            "url": "https://www.law.cornell.edu/uscode/text/15/1",
+            "relevance": "Keep marketplace monitoring from facilitating coordinated reseller pricing; evaluate unilateral policies and applicable state requirements separately.",
+        },
+        {
+            "title": "15 U.S.C. 1114 — Trademark infringement remedies",
+            "url": "https://www.law.cornell.edu/uscode/text/15/1114",
+            "relevance": "Require factual support and qualified review before preparing trademark-based enforcement communications.",
+        },
+        {
+            "title": "15 U.S.C. 1125 — False designations of origin and false descriptions",
+            "url": "https://www.law.cornell.edu/uscode/text/15/1125",
+            "relevance": "Distinguish substantiated misleading representations from mere reseller status or observed price differences.",
+        },
+        {
+            "title": "12 CFR 1005.10(b) — Written authorization for preauthorized transfers",
+            "url": "https://www.ecfr.gov/current/title-12/chapter-X/part-1005/section-1005.10",
+            "relevance": "For covered recurring consumer electronic fund transfers, implement signed or similarly authenticated authorization and provide the consumer a copy.",
+        },
+        {
+            "title": "15 U.S.C. 8403 — Negative option marketing on the Internet",
+            "url": "https://www.law.cornell.edu/uscode/text/15/8403",
+            "relevance": "For covered online negative-option offers, support material-term disclosure, express informed agreement, and simple mechanisms to stop recurring charges.",
+        },
+        {
+            "title": "15 U.S.C. 7704 — Requirements for transmission of messages",
+            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
+            "relevance": "Commercial email operations need accurate routing and subject information, required sender disclosures, and effective opt-out handling.",
+        },
+        {
+            "title": "15 U.S.C. 45 — Unfair methods of competition and unfair or deceptive acts",
+            "url": "https://www.law.cornell.edu/uscode/text/15/45",
+            "relevance": "Substantiate performance claims, describe monitoring coverage accurately, and distinguish measured customer outcomes from illustrative projections.",
+        },
+    ],
+}

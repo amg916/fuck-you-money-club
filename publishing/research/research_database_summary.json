@@ -1,6 +1,6 @@
 {
-  "abridged_video_count": 636,
-  "raw_video_count": 636,
+  "abridged_video_count": 814,
+  "raw_video_count": 814,
   "summary": {
     "type": "dict",
     "keys": [
@@ -22,11 +22,11 @@
       "coverage": 6
     },
     "values": {
-      "generated_at": "2026-11-21T18:31:11+00:00",
+      "generated_at": "2026-11-21T20:39:18+00:00",
       "schema_version": "1.0"
     }
   },
-  "generated_at": "2026-11-21T18:31:11Z",
+  "generated_at": "2026-11-21T20:39:18Z",
   "counts": {
     "topics": 8
   },
@@ -34,9 +34,9 @@
     {
       "topic_id": "business_model_and_economics",
       "title": "Business Model, Contingency Economics & Deal Scale",
-      "video_count": 468,
-      "tip_count": 1069,
-      "channel_count": 293,
+      "video_count": 624,
+      "tip_count": 1447,
+      "channel_count": 428,
       "top_sources": [
         {
           "video_id": "JVbzH2BD68w",
@@ -190,44 +190,44 @@
       "statutes_and_forms": [
         "form and",
         "form that",
-        "form to",
         "form for",
         "form of",
+        "form to",
         "form is",
         "form or",
         "form you",
         "form the",
         "form like",
-        "form so",
-        "letters of administration",
-        "form content",
-        "form on",
-        "form where",
-        "form as",
         "form with",
+        "form so",
+        "form on",
+        "form content",
+        "form where",
         "form a",
-        "form below",
-        "form in",
-        "form videos",
-        "quiet title",
-        "form well",
         "form your",
+        "form in",
+        "letters of administration",
+        "form as",
+        "form videos",
+        "form called",
+        "form I",
+        "form below",
+        "form here",
+        "form right",
+        "form submissions",
+        "quiet title",
+        "form actually",
+        "form built",
+        "form fields",
+        "form has",
+        "form our",
+        "form submission",
+        "form well",
+        "form which",
         "letters testamentary",
         "property Act",
-        "form our",
-        "form partition",
-        "form video",
         "form an",
-        "form has",
-        "form I",
-        "form if",
-        "form it",
-        "form page",
-        "form they",
-        "form this",
-        "form uh",
-        "warranty deed",
-        "affidavit of heirship"
+        "form at"
       ],
       "tools_and_portals": [
         "Google",
@@ -239,6 +239,7 @@
         "https://excesselite.com",
         "https://www.facebook.com/groups/assetrecovery",
         "https://www.moneymakingjug.com/inquiry",
+        "Bing",
         "http://familysearch.me/facebook",
         "http://familysearch.me/home",
         "http://familysearch.me/instagram",
@@ -255,7 +256,7 @@
         "https://www.youtube.com/@courtneyfricke",
         "https://x.com/courtneyfricke",
         "https://youtu.be/3cmj5kGm2Xw",
-        "Bing",
+        "CSV",
         "https://www.youtube.com/surplusfunds101",
         "https://www.instagram.com/thedavidwilkerson",
         "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
@@ -268,16 +269,15 @@
         "https://www.instagram.com/ancestry",
         "https://www.instagram.com/erizzyy/",
         "https://www.youtube.com/user/AncestryCom",
-        "MyHeritage",
-        "https://facebook.com/groups/estateprofessionalsmastermind"
+        "MyHeritage"
       ]
     },
     {
       "topic_id": "probate_and_docket_sourcing",
       "title": "County Probate Dockets, Intestate Filings & Estate Leads",
-      "video_count": 463,
-      "tip_count": 776,
-      "channel_count": 267,
+      "video_count": 528,
+      "tip_count": 818,
+      "channel_count": 325,
       "top_sources": [
         {
           "video_id": "oZiYbKNvxJY",
@@ -430,45 +430,45 @@
       ],
       "statutes_and_forms": [
         "form and",
-        "form of",
         "form that",
+        "form of",
         "form for",
         "form to",
         "form is",
-        "form below",
-        "form the",
         "form you",
-        "form or",
+        "form the",
+        "form below",
         "form a",
+        "form or",
+        "form where",
         "letters of administration",
         "form so",
-        "form where",
         "form in",
+        "form your",
         "form like",
         "form on",
         "form our",
+        "form as",
         "form we",
-        "form your",
         "quiet title",
+        "form I",
+        "form with",
         "letters testamentary",
         "property Act",
         "affidavit of heirship",
         "form an",
-        "form as",
+        "form it",
+        "form now",
         "form partition",
+        "form then",
         "form today",
         "Form uh",
         "form um",
+        "form which",
         "form will",
-        "form with",
         "warranty deed",
         "affidavit of airship",
-        "court order",
-        "form but",
-        "form content",
-        "form features",
-        "form fill",
-        "form I"
+        "court order"
       ],
       "tools_and_portals": [
         "Facebook",
@@ -489,6 +489,7 @@
         "https://www.youtube.com/@courtneyfricke",
         "https://x.com/courtneyfricke",
         "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
+        "CSV",
         "https://www.instagram.com/thedavidwilkerson",
         "http://familysearch.me/facebook",
         "http://familysearch.me/home",
@@ -503,7 +504,6 @@
         "Bing",
         "MyHeritage",
         "Regrid",
-        "CSV",
         "http://www.youtube.com/channel/UCsc0AQkAh_2cQmxqwD6VWRw?sub_confirmation=1",
         "https://probatemastery.com",
         "https://twitter.com/Ancestry",
@@ -516,9 +516,9 @@
     {
       "topic_id": "unclaimed_property_and_escheat",
       "title": "State Unclaimed Property, Escheated Funds & Treasury Claims",
-      "video_count": 204,
-      "tip_count": 582,
-      "channel_count": 112,
+      "video_count": 241,
+      "tip_count": 587,
+      "channel_count": 146,
       "top_sources": [
         {
           "video_id": "bsbWDqAXsrE",
@@ -671,49 +671,50 @@
       ],
       "statutes_and_forms": [
         "form and",
-        "form below",
         "form that",
+        "form below",
+        "form of",
         "Form is",
         "form you",
-        "form of",
+        "form for",
         "form the",
         "form to",
-        "form for",
+        "form a",
         "form our",
         "form today",
         "form we",
+        "form as",
         "form but",
         "form in",
+        "form it",
+        "form on",
+        "form or",
         "form so",
         "Form uh",
         "form um",
+        "form where",
         "affidavit of heirship",
-        "form a",
-        "form as",
         "form due",
         "form fill",
-        "form it",
+        "form I",
         "form now",
-        "form on",
-        "form or",
         "form this",
+        "form which",
         "form will",
+        "form with",
         "form your",
         "Information Act",
         "summary administration",
+        "actually act",
         "balancing act",
         "form all",
         "form an",
-        "form because",
-        "form better",
-        "form configurations",
-        "form from",
-        "form I",
-        "Form located"
+        "form because"
       ],
       "tools_and_portals": [
         "Facebook",
         "Google",
+        "LinkedIn",
         "https://excesselite.com",
         "https://www.facebook.com/groups/assetrecovery",
         "https://www.moneymakingjug.com/inquiry",
@@ -721,15 +722,15 @@
         "https://www.youtube.com/surplusfunds101",
         "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
         "https://www.instagram.com/thedavidwilkerson",
-        "LinkedIn",
         "https://www.instagram.com/erizzyy/",
-        "Regrid",
-        "https://www.facebook.com/groups/770825015084618",
-        "CSV",
         "Excel",
+        "Regrid",
+        "CSV",
+        "https://www.facebook.com/groups/770825015084618",
         "https://www.instagram.com/erizzyy",
         "https://skool.com/surplusfunds",
         "https://surplusfunds.ai",
+        "Neo4j",
         "Ancestry",
         "DataTree",
         "http://YouTube.com/c/NateWoodbury",
@@ -750,16 +751,15 @@
         "https://www.youtube.com/@overageacquisition?sub_confirmation=1",
         "ArcGIS",
         "GeoJSON",
-        "https://22pagemillionaire.com/1",
-        "https://app.supabase.com"
+        "https://22pagemillionaire.com/1"
       ]
     },
     {
       "topic_id": "genealogy_and_heirship_proof",
       "title": "Forensic Genealogy, Per-Stirpes Kinship & Proof of Heirship",
-      "video_count": 532,
-      "tip_count": 755,
-      "channel_count": 315,
+      "video_count": 675,
+      "tip_count": 787,
+      "channel_count": 440,
       "top_sources": [
         {
           "video_id": "7M3XZfN7814",
@@ -865,6 +865,15 @@
           "verbatim_research_only": true
         },
         {
+          "tip_paraphrase_summary": "We have the right to say no we won't want to do it or we can't do it But you also include the fact…",
+          "category": "Pitfall / Hard No",
+          "timestamp": "00:01:50",
+          "link": "https://www.youtube.com/watch?v=UgtrG88EDhU&t=110s",
+          "video_title": "How to Handle Scope Creep in Client Projects",
+          "author": "WPTuts",
+          "verbatim_research_only": true
+        },
+        {
           "tip_paraphrase_summary": "On how far it goes back. And then start doing your research on finding out who those potential heirs are who are all the…",
           "category": "Pitfall / Hard No",
           "timestamp": "00:04:54",
@@ -899,58 +908,49 @@
           "video_title": "I used ChatGPT4 to build a high ticket funnel",
           "author": "Jayant Padhi",
           "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "Be sure to include their parent's name in this section under Parent's Name. Next, list the birthdate and date of death for each grandchild…",
-          "category": "Legal / Deadline",
-          "timestamp": "00:02:16",
-          "link": "https://www.youtube.com/watch?v=cMCrrRkehJk&t=136s",
-          "video_title": "Table of Heirship Tutorial",
-          "author": "California State Controller's Office",
-          "verbatim_research_only": true
         }
       ],
       "statutes_and_forms": [
         "form and",
         "form that",
-        "form to",
         "form for",
+        "form to",
         "form of",
-        "form you",
         "form is",
+        "form you",
         "form or",
         "form the",
         "form below",
+        "form with",
+        "form a",
         "form like",
         "form so",
-        "form a",
-        "form as",
-        "form content",
-        "form on",
-        "form where",
-        "letters of administration",
-        "form with",
         "form your",
+        "form on",
+        "form content",
+        "form where",
+        "form as",
         "form in",
         "form videos",
-        "quiet title",
-        "Form uh",
-        "form video",
-        "form well",
-        "property Act",
-        "affidavit of heirship",
+        "letters of administration",
         "form I",
-        "form if",
-        "form our",
-        "form partition",
+        "form submissions",
+        "form called",
+        "form here",
+        "form right",
+        "form which",
+        "quiet title",
+        "form actually",
+        "form has",
+        "form submission",
         "form they",
         "form this",
+        "Form uh",
+        "form video",
+        "form we",
+        "form well",
         "form will",
-        "letters testamentary",
-        "affidavit of airship",
-        "form an",
-        "form features",
-        "form has"
+        "property Act"
       ],
       "tools_and_portals": [
         "Google",
@@ -958,16 +958,16 @@
         "LinkedIn",
         "Ancestry",
         "FamilySearch",
+        "Excel",
         "https://excesselite.com",
         "https://www.facebook.com/groups/assetrecovery",
         "https://www.moneymakingjug.com/inquiry",
-        "Excel",
         "https://www.surplusfunds101.com/freecallingscript",
         "https://www.youtube.com/surplusfunds101",
         "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
         "https://www.instagram.com/thedavidwilkerson",
-        "https://www.instagram.com/erizzyy/",
         "Bing",
+        "https://www.instagram.com/erizzyy/",
         "https://instagram.com/courtneyfricke",
         "https://tiktok.com/@courtney.fricke",
         "https://www.facebook.com/courtneyfricke19/",
@@ -984,6 +984,7 @@
         "https://www.youtube.com/@courtneyfricke",
         "https://youtu.be/3cmj5kGm2Xw",
         "MyHeritage",
+        "CSV",
         "Find a Grave",
         "http://www.youtube.com/channel/UCsc0AQkAh_2cQmxqwD6VWRw?sub_confirmation=1",
         "https://twitter.com/Ancestry",
@@ -991,72 +992,71 @@
         "https://www.facebook.com/Ancestry/",
         "https://www.instagram.com/ancestry",
         "https://www.youtube.com/user/AncestryCom",
-        "Newspapers.com",
-        "https://www.facebook.com/groups/curativetitle"
+        "Newspapers.com"
       ]
     },
     {
       "topic_id": "skip_tracing_and_outreach",
       "title": "Skip Tracing, Ethical Heir Contact & Trust Building",
-      "video_count": 296,
-      "tip_count": 124,
-      "channel_count": 199,
+      "video_count": 403,
+      "tip_count": 257,
+      "channel_count": 291,
       "top_sources": [
         {
-          "video_id": "dJ-LTFmMsTg",
-          "title": "Skip Tracing for Curative Title: Find Owners Others Can't",
-          "author": "Logan Fullmer",
-          "url": "https://www.youtube.com/watch?v=dJ-LTFmMsTg",
-          "duration": "00:54:10"
+          "video_id": "8yepbhYel-Q",
+          "title": "B2B LinkedIn Content Marketing - How To Get B2B Clients From LinkedIn",
+          "author": "Chris Prouty",
+          "url": "https://www.youtube.com/watch?v=8yepbhYel-Q",
+          "duration": "00:04:05"
         },
         {
-          "video_id": "DMdtmrWAO6c",
-          "title": "Surplus Funds Recovery Cold Calling - STEP-BY-STEP SCRIPT",
-          "author": "Money Making Juggernaut",
-          "url": "https://www.youtube.com/watch?v=DMdtmrWAO6c",
-          "duration": "00:17:56"
+          "video_id": "Kjfkoa15cNU",
+          "title": "How I Do LinkedIn Outreach in 2026",
+          "author": "Alex Berman",
+          "url": "https://www.youtube.com/watch?v=Kjfkoa15cNU",
+          "duration": "00:09:25"
         },
         {
-          "video_id": "alaKJIcbbLw",
-          "title": "Cold Calling for Surplus Funds in 2025: The Script That Actually Works!",
-          "author": "Surplus Institute / David Church / Unclaimed Funds",
-          "url": "https://www.youtube.com/watch?v=alaKJIcbbLw",
-          "duration": "00:06:02"
+          "video_id": "3_RnVI6UFkA",
+          "title": "The Best LinkedIn Lead Generation Strategy for 2026",
+          "author": "Sales Feed",
+          "url": "https://www.youtube.com/watch?v=3_RnVI6UFkA",
+          "duration": "00:16:57"
         },
         {
-          "video_id": "z_Y10SDCdp4",
-          "title": "Handling objections & complaints in your Surplus Business. state funds",
-          "author": "Surplus Funds 101",
-          "url": "https://www.youtube.com/watch?v=z_Y10SDCdp4",
-          "duration": "00:06:21"
+          "video_id": "Lw2iBa2oM44",
+          "title": "How I Sell B2B Services on LinkedIn (Step-by-Step)",
+          "author": "Ben Greening-James",
+          "url": "https://www.youtube.com/watch?v=Lw2iBa2oM44",
+          "duration": "00:27:46"
         },
         {
-          "video_id": "g7SAWXINXDo",
-          "title": "LeadSmart Pay Per Call Affiliate Approval & How to get trackable phone number from Ringba",
-          "author": "Automate & Chill By Abhishek Sood",
-          "url": "https://www.youtube.com/watch?v=g7SAWXINXDo",
-          "duration": "00:04:00"
+          "video_id": "uPo9D-wZv6s",
+          "title": "The Latest LinkedIn Lead Generation Strategies That Generated $2M+ (No Cold InMails)",
+          "author": "HubSpot Marketing",
+          "url": "https://www.youtube.com/watch?v=uPo9D-wZv6s",
+          "duration": "00:17:19"
         },
         {
-          "video_id": "nNr0jVmba9w",
-          "title": "THE most valuable funnel training you'll ever watch (10,000 hours experience)",
-          "author": "Sell Your Service",
-          "url": "https://www.youtube.com/watch?v=nNr0jVmba9w",
-          "duration": "00:35:08"
+          "video_id": "R32IyS7IErQ",
+          "title": "How To Land Clients With LinkedIn (3 Exclusive Tactics)",
+          "author": "Lead Gen Jay",
+          "url": "https://www.youtube.com/watch?v=R32IyS7IErQ",
+          "duration": "00:12:23"
         },
         {
-          "video_id": "zMW-iFWYX9w",
-          "title": "Curative Title Research: How She Finds Missing Owners",
-          "author": "Logan Fullmer",
-          "url": "https://www.youtube.com/watch?v=zMW-iFWYX9w",
-          "duration": "00:59:24"
+          "video_id": "IqCv6BL9r6o",
+          "title": "The Best LinkedIn Outreach Strategy for 2026",
+          "author": "Expandi",
+          "url": "https://www.youtube.com/watch?v=IqCv6BL9r6o",
+          "duration": "00:06:50"
         },
         {
-          "video_id": "B8Z2fA5X0J4",
-          "title": "I Sold Digital Products as a Beginner ‘To Prove It’s Not Luck’ Using Claude AI",
-          "author": "Money Talk With Leon",
-          "url": "https://www.youtube.com/watch?v=B8Z2fA5X0J4",
-          "duration": "00:16:37"
+          "video_id": "MXBaHCO4WI8",
+          "title": "The Best LinkedIn Lead Generation Strategy for 2026",
+          "author": "Tommy Clark",
+          "url": "https://www.youtube.com/watch?v=MXBaHCO4WI8",
+          "duration": "00:13:17"
         }
       ],
       "top_timestamped_insights": [
@@ -1097,6 +1097,15 @@
           "verbatim_research_only": true
         },
         {
+          "tip_paraphrase_summary": "Running with this model, this is like the traditional agency/service provider model. um you uh the way I do it is the the clients…",
+          "category": "Legal / Deadline",
+          "timestamp": "00:26:16",
+          "link": "https://www.youtube.com/watch?v=MlJ3XSy3k7A&t=1576s",
+          "video_title": "How To Book Sales Calls For Your Agency With AI Cold Email Outreach",
+          "author": "Johnny",
+          "verbatim_research_only": true
+        },
+        {
           "tip_paraphrase_summary": "By not talking about yourself. Yeah. This discussion is happening on Google, whether. You are part of it or not, our argument is go…",
           "category": "Legal / Deadline",
           "timestamp": "00:10:11",
@@ -1115,6 +1124,15 @@
           "verbatim_research_only": true
         },
         {
+          "tip_paraphrase_summary": "Rough drafts, but I don't want you guys to think that you guys don't have access to similar things. You guys have my copy…",
+          "category": "Pitfall / Hard No",
+          "timestamp": "00:20:18",
+          "link": "https://www.youtube.com/watch?v=0QI9KoizfH8&t=1218s",
+          "video_title": "Building a profitable AI agency cold email campaign in 40min",
+          "author": "Nick Saraev Daily",
+          "verbatim_research_only": true
+        },
+        {
           "tip_paraphrase_summary": "Times. I'll go through all the relatives and I'll either speak to them or I'll leave them that message. Now, if they answer, a…",
           "category": "Pitfall / Hard No",
           "timestamp": "00:02:27",
@@ -1124,79 +1142,61 @@
           "verbatim_research_only": true
         },
         {
-          "tip_paraphrase_summary": "For creator closer. And in the next video, when I'm choosing a winner, if that person is signed up for creator closer, that person…",
-          "category": "Pitfall / Hard No",
-          "timestamp": "00:16:02",
-          "link": "https://www.youtube.com/watch?v=B8Z2fA5X0J4&t=962s",
-          "video_title": "I Sold Digital Products as a Beginner ‘To Prove It’s Not Luck’ Using Claude AI",
-          "author": "Money Talk With Leon",
-          "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "Cited. Doing all of this is of course a lot of clutter. If you don't want to do all of that, go to Crowd…",
-          "category": "Pitfall / Hard No",
-          "timestamp": "00:06:12",
-          "link": "https://www.youtube.com/watch?v=GCT2Tp-7xys&t=372s",
-          "video_title": "Is Parasite SEO Dead? No. Here's the 2026 Version (230 Citations From One Page)",
-          "author": "CrowdReply | Rank in AI Answers",
-          "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "So. I do not believe in direct marketing, in outbound direct mail and cold calling pre-probate lists. I just don't. And I probably never…",
-          "category": "Pitfall / Hard No",
-          "timestamp": "00:04:13",
-          "link": "https://www.youtube.com/watch?v=4Z6pgZnoWi4&t=253s",
-          "video_title": "Pre Probate Leads vs Probate Leads: How do you market to them and why cold calling isn't the best",
-          "author": "Probate Mastery",
+          "tip_paraphrase_summary": "Is a Gmail trigger. So, you can think of this as like a web hook, but it's always listening for any sort of lead…",
+          "category": "Non-Negotiable Rule",
+          "timestamp": "00:20:43",
+          "link": "https://www.youtube.com/watch?v=OsFhqXe8aLI&t=1243s",
+          "video_title": "I Built an AI Sales Agent that Sends 1,000+ Personalized Emails (Full Tutorial)",
+          "author": "Jackson Rose | AI",
           "verbatim_research_only": true
         }
       ],
       "statutes_and_forms": [
         "form and",
         "form for",
+        "form that",
         "form of",
         "form to",
-        "form that",
         "form or",
         "form you",
-        "form the",
         "form is",
-        "form like",
-        "form below",
-        "form so",
-        "form where",
+        "form the",
         "form your",
+        "form like",
         "form a",
-        "form on",
-        "quiet title",
-        "form as",
         "form content",
+        "form so",
+        "form below",
+        "form where",
+        "form on",
+        "form which",
+        "form as",
+        "form with",
+        "quiet title",
+        "form I",
+        "form in",
         "form our",
         "Form uh",
+        "form called",
+        "form fill",
         "form partition",
+        "form videos",
         "property act",
-        "form in",
+        "balancing act",
+        "form built",
+        "form here",
+        "form right",
+        "form then",
         "form they",
+        "form um",
         "form video",
         "form what",
-        "form with",
-        "affidavit of heirship",
-        "balancing act",
-        "court order",
-        "form fill",
-        "form I",
-        "form then",
-        "form this",
-        "form um",
-        "form videos",
-        "form well",
-        "form which",
-        "form will"
+        "affidavit of heirship"
       ],
       "tools_and_portals": [
         "Google",
-        "Facebook",
         "LinkedIn",
+        "Facebook",
         "Excel",
         "https://www.surplusfunds101.com/freecallingscript",
         "https://www.youtube.com/surplusfunds101",
@@ -1212,6 +1212,7 @@
         "https://x.com/courtneyfricke",
         "Bing",
         "Ancestry",
+        "CSV",
         "https://probatemastery.com",
         "https://www.facebook.com/groups/curativetitle",
         "https://www.instagram.com/erizzyy/",
@@ -1225,23 +1226,22 @@
         "http://coaching.dpasummit.com",
         "https://book.dpasummit.com/free-book-page?el=Book_In_Descrip_YT&htrafficsource=youtube&hcategory=Book_Funnel_Organic",
         "https://help.sparkloop.app/en/articles/8802280-win-a-free-trip-to-cancun",
+        "https://nicksaraev.com",
+        "https://twitter.com/nicksaraev",
         "https://www.instagram.com/logan_fullmer",
+        "https://www.instagram.com/nick_saraev",
         "https://www.loganfullmer.com/",
         "https://www.tiktok.com/@loganfullmer_?is_from_webapp=1&sender_device=pc",
         "https://www.youtube.com/@loganfullmer",
-        "https://www.youtube.com/@LouisianaRealEstateTalks",
-        "https://www.youtube.com/playlist?list=PL_t1CjX04xMtnNcKPG5LvTh-1m2QVIrY4",
-        "Uniform Partition",
-        "https://facebook.com/groups/estateprofessionalsmastermind",
-        "https://skool.com/surplusfunds"
+        "https://www.youtube.com/@LouisianaRealEstateTalks"
       ]
     },
     {
       "topic_id": "contracts_and_compensation",
       "title": "Fee Agreements, Assignments of Interest & Escrow Disbursement",
-      "video_count": 491,
-      "tip_count": 705,
-      "channel_count": 298,
+      "video_count": 637,
+      "tip_count": 822,
+      "channel_count": 425,
       "top_sources": [
         {
           "video_id": "VBvaq5etzV4",
@@ -1356,6 +1356,15 @@
           "verbatim_research_only": true
         },
         {
+          "tip_paraphrase_summary": "With the strategies I'll be teaching here, you will understand how to use this strategy to create the next sale from your existing clients.…",
+          "category": "Pitfall / Hard No",
+          "timestamp": "00:03:40",
+          "link": "https://www.youtube.com/watch?v=tT1dV4_aC0M&t=220s",
+          "video_title": "How to sell AI visibility audits and turn them into recurring revenue for your agency",
+          "author": "My Web Audit",
+          "verbatim_research_only": true
+        },
+        {
           "tip_paraphrase_summary": "Leg gen. But we also do a bit of arbitrage and a bit of affiliate. So we know in our agency very precisely what's…",
           "category": "Pitfall / Hard No",
           "timestamp": "00:01:14",
@@ -1381,69 +1390,60 @@
           "video_title": "Google's Site Reputation Abuse Penalties Begin...",
           "author": "Niche Pursuits Podcast",
           "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "Can see you can sign up with your email, Google X, or any of these other applications. But by far, what I recommend the…",
-          "category": "Non-Negotiable Rule",
-          "timestamp": "00:03:05",
-          "link": "https://www.youtube.com/watch?v=rKrC1mctap4&t=185s",
-          "video_title": "How Does Impact.com Work? | How To Make Money With Impact.com",
-          "author": "subscribe if i helped you :)",
-          "verbatim_research_only": true
         }
       ],
       "statutes_and_forms": [
         "form and",
         "form that",
+        "form for",
         "form to",
         "form of",
-        "form for",
         "Form is",
         "form you",
         "form or",
-        "form below",
         "form the",
         "form like",
+        "form below",
         "form on",
-        "form as",
-        "form content",
-        "letters of administration",
-        "form so",
-        "form where",
-        "form a",
         "form with",
-        "form in",
-        "form our",
-        "Form uh",
+        "form content",
         "form your",
-        "form this",
-        "form um",
-        "form video",
+        "form so",
+        "form a",
+        "form as",
+        "form where",
+        "form in",
+        "letters of administration",
         "form videos",
-        "form we",
-        "form well",
-        "letters testamentary",
-        "property Act",
-        "quiet title",
-        "affidavit of heirship",
+        "form called",
         "form I",
-        "form partition",
-        "court order",
+        "form submissions",
+        "form we",
         "form fill",
+        "form here",
+        "form our",
+        "form this",
+        "Form uh",
+        "form um",
+        "form which",
+        "form actually",
         "form has",
-        "form if",
-        "form it"
+        "form right",
+        "form submission",
+        "form video",
+        "form well",
+        "letters testamentary"
       ],
       "tools_and_portals": [
         "Google",
         "Facebook",
         "LinkedIn",
         "Ancestry",
+        "Excel",
         "https://excesselite.com",
         "https://www.facebook.com/groups/assetrecovery",
         "FamilySearch",
         "https://www.moneymakingjug.com/inquiry",
-        "Excel",
         "https://www.surplusfunds101.com/freecallingscript",
         "https://www.youtube.com/surplusfunds101",
         "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
@@ -1456,6 +1456,7 @@
         "https://x.com/courtneyfricke",
         "Bing",
         "https://probatemastery.com",
+        "CSV",
         "https://www.facebook.com/groups/770825015084618",
         "https://www.facebook.com/groups/curativetitle",
         "https://www.youtube.com/playlist?list=PL_t1CjX04xMsUc4TcAH_uyYDMPzzU6xRy",
@@ -1473,16 +1474,15 @@
         "https://sparkloop.app/paid-recommendations",
         "https://sparkloop.app/partner-program",
         "https://twitter.com/growthcurrency",
-        "https://www.instagram.com/erizzyy",
-        "https://youtu.be/3cmj5kGm2Xw"
+        "https://www.instagram.com/erizzyy"
       ]
     },
     {
       "topic_id": "statutory_caps_and_licensing",
       "title": "State Fee Caps, Waiting Periods, PI Licensing & UPL Rules",
-      "video_count": 507,
-      "tip_count": 404,
-      "channel_count": 304,
+      "video_count": 587,
+      "tip_count": 496,
+      "channel_count": 376,
       "top_sources": [
         {
           "video_id": "TA4mtGUeNo8",
@@ -1635,28 +1635,31 @@
       ],
       "statutes_and_forms": [
         "form and",
-        "form for",
         "form that",
+        "form for",
         "form of",
         "form to",
-        "form you",
         "form is",
-        "form the",
+        "form you",
         "form or",
+        "form the",
         "form below",
         "form a",
-        "form so",
-        "letters of administration",
-        "form like",
-        "form where",
         "form with",
+        "form where",
+        "form like",
+        "form so",
         "form your",
-        "form in",
+        "letters of administration",
         "form on",
+        "form in",
         "form our",
+        "form as",
+        "form I",
         "form we",
         "quiet title",
-        "form as",
+        "form now",
+        "form today",
         "Form uh",
         "form um",
         "letters testamentary",
@@ -1664,16 +1667,13 @@
         "affidavit of heirship",
         "form an",
         "form content",
-        "form I",
+        "form it",
         "form partition",
-        "form today",
+        "form then",
+        "form which",
         "form will",
         "warranty deed",
-        "affidavit of airship",
-        "court order",
-        "form better",
-        "form but",
-        "form features"
+        "affidavit of airship"
       ],
       "tools_and_portals": [
         "Facebook",
@@ -1696,6 +1696,7 @@
         "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
         "https://www.instagram.com/thedavidwilkerson",
         "Bing",
+        "CSV",
         "http://familysearch.me/facebook",
         "http://familysearch.me/home",
         "http://familysearch.me/instagram",
@@ -1708,7 +1709,6 @@
         "https://youtu.be/3cmj5kGm2Xw",
         "MyHeritage",
         "Regrid",
-        "CSV",
         "http://www.youtube.com/channel/UCsc0AQkAh_2cQmxqwD6VWRw?sub_confirmation=1",
         "https://probatemastery.com",
         "https://twitter.com/Ancestry",
@@ -1721,10 +1721,52 @@
     {
       "topic_id": "automation_and_small_team_ops",
       "title": "Docket Automation, AI Abstracting & Small-Team Operations",
-      "video_count": 529,
-      "tip_count": 1576,
-      "channel_count": 330,
+      "video_count": 697,
+      "tip_count": 2505,
+      "channel_count": 471,
       "top_sources": [
+        {
+          "video_id": "zqtx1Soeq5E",
+          "title": "How to Use N8N for FREE - n8n Self Hosting Set Up Guide",
+          "author": "Youri van Hofwegen",
+          "url": "https://www.youtube.com/watch?v=zqtx1Soeq5E",
+          "duration": "00:10:22"
+        },
+        {
+          "video_id": "d8w8FHZJpdY",
+          "title": "Zapier vs Make vs n8n: What One AI Workflow Really Costs (2026 Pricing)",
+          "author": "ProfitPilot",
+          "url": "https://www.youtube.com/watch?v=d8w8FHZJpdY",
+          "duration": "00:07:14"
+        },
+        {
+          "video_id": "SrWNK0955xw",
+          "title": "Zapier vs Make vs n8n vs UiPath: What You Need to Know in 2026",
+          "author": "Everyday AI Automation",
+          "url": "https://www.youtube.com/watch?v=SrWNK0955xw",
+          "duration": "00:13:39"
+        },
+        {
+          "video_id": "vtK1xbj-tD8",
+          "title": "n8n Tutorial 2026: AI Agents, Self-Hosting & Pricing (Beginner to Pro)",
+          "author": "Aitoolnavio",
+          "url": "https://www.youtube.com/watch?v=vtK1xbj-tD8",
+          "duration": "00:40:14"
+        },
+        {
+          "video_id": "IYV8OVFzq_c",
+          "title": "N8N vs Make vs Zapier (2025) - Honest Review",
+          "author": "Simplified",
+          "url": "https://www.youtube.com/watch?v=IYV8OVFzq_c",
+          "duration": "00:04:24"
+        },
+        {
+          "video_id": "oRI0lA-ZQ3w",
+          "title": "How to Use n8n for FREE in 2026 - n8n Self Hosting Setup",
+          "author": "Metics Media",
+          "url": "https://www.youtube.com/watch?v=oRI0lA-ZQ3w",
+          "duration": "00:10:15"
+        },
         {
           "video_id": "jHo-FO_OLv4",
           "title": "How I make $30,000/Month Selling Notion Templates",
@@ -1733,53 +1775,11 @@
           "duration": "00:11:35"
         },
         {
-          "video_id": "VEFf-FR0dxw",
-          "title": "How to Sell Notion Templates on Gumroad (2026 Revenue Snapshot)",
-          "author": "Tutorials At Desk",
-          "url": "https://www.youtube.com/watch?v=VEFf-FR0dxw",
-          "duration": "00:05:47"
-        },
-        {
-          "video_id": "UEHdYNXiIUU",
-          "title": "What Is SaaS? (Explained in 5 Minutes)",
-          "author": "Dan Martell",
-          "url": "https://www.youtube.com/watch?v=UEHdYNXiIUU",
-          "duration": "00:07:18"
-        },
-        {
-          "video_id": "GmI0MYeyMg0",
-          "title": "Sell Notion Templates on Gumroad: What a $29 Sale Really Keeps (2026)",
-          "author": "Smart Capital",
-          "url": "https://www.youtube.com/watch?v=GmI0MYeyMg0",
-          "duration": "00:38:23"
-        },
-        {
-          "video_id": "ciKrPZ_nIpQ",
-          "title": "How To Sell A Notion Template On Gumroad - Step by Step Guide | THELOSTOFFER #notion #gumroad",
-          "author": "Aeris Vale Tutorials",
-          "url": "https://www.youtube.com/watch?v=ciKrPZ_nIpQ",
-          "duration": "00:03:03"
-        },
-        {
-          "video_id": "01plOr9pFjQ",
-          "title": "How to Start a Tax Overage Business | Complete and Easy to Follow Guide",
-          "author": "BizMove",
-          "url": "https://www.youtube.com/watch?v=01plOr9pFjQ",
-          "duration": "00:08:21"
-        },
-        {
-          "video_id": "Sxl5Fxp0qVQ",
-          "title": "How to Upload Notion Template on Gumroad 2025 (QUICK GUIDE)",
-          "author": "How To Tutor",
-          "url": "https://www.youtube.com/watch?v=Sxl5Fxp0qVQ",
-          "duration": "00:02:20"
-        },
-        {
-          "video_id": "2zWJQPegtuk",
-          "title": "How to sell Notion templates on Gumroad[FULL GUIDE]",
-          "author": "Extreme Guides",
-          "url": "https://www.youtube.com/watch?v=2zWJQPegtuk",
-          "duration": "00:04:30"
+          "video_id": "t1PTmpas0bg",
+          "title": "Easiest Way to Migrate n8n Workflows Between Accounts (cloud to self-hosted)",
+          "author": "Nate Herk | AI Automation",
+          "url": "https://www.youtube.com/watch?v=t1PTmpas0bg",
+          "duration": "00:10:58"
         }
       ],
       "top_timestamped_insights": [
@@ -1820,12 +1820,30 @@
           "verbatim_research_only": true
         },
         {
+          "tip_paraphrase_summary": "In 2026, the change is AI inside the workflow. These tools can now read an email, decide what it means, draft a reply, summarise…",
+          "category": "Sequence / Alternative",
+          "timestamp": "00:00:26",
+          "link": "https://www.youtube.com/watch?v=Pz3jLYQwsX4&t=26s",
+          "video_title": "n8n vs Zapier vs Make (2026): Which AI Automation Tool Is Actually Worth It?",
+          "author": "Whizz AI",
+          "verbatim_research_only": true
+        },
+        {
           "tip_paraphrase_summary": "Is they don't perform multiple interviews, I probably have three interviews over a week and a half with people, and most of them were…",
           "category": "Pitfall / Hard No",
           "timestamp": "00:02:48",
           "link": "https://www.youtube.com/watch?v=ASO1JUOWTjA&t=168s",
           "video_title": "State Funds Tutorial Virtual Assistants: Top 3 Hiring Mistakes While Growing Your Surplus Business",
           "author": "Surplus Funds 101",
+          "verbatim_research_only": true
+        },
+        {
+          "tip_paraphrase_summary": "I know this! I read an article and the article said that it was Jupiter and 88 moons. So that's the answer. Now, actually…",
+          "category": "Sequence / Alternative",
+          "timestamp": "00:00:58",
+          "link": "https://www.youtube.com/watch?v=T-D1OfcDW1M&t=58s",
+          "video_title": "What is Retrieval-Augmented Generation (RAG)?",
+          "author": "IBM Technology",
           "verbatim_research_only": true
         },
         {
@@ -1854,67 +1872,49 @@
           "video_title": "Métricas SaaS y cómo modelarlas: MRR, ARR, churn y unit economics",
           "author": "The Startup CFO",
           "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "It's going to be 50k plus 51k plus 54k plus 55k. And that can go exponentially very, very quickly if you are paying full…",
-          "category": "Insider Tactic",
-          "timestamp": "00:04:58",
-          "link": "https://www.youtube.com/watch?v=SkM4k4SKvCM&t=298s",
-          "video_title": "Prompt Caching Explained: Stop Overpaying for AI Agents",
-          "author": "Hugging Face",
-          "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "When you're just getting started to run your state funds business, the 0:01:13.1 S1: Very first thing you guys is a CRM stands for…",
-          "category": "Pitfall / Hard No",
-          "timestamp": "00:01:09",
-          "link": "https://www.youtube.com/watch?v=ES6y4iF-bBM&t=69s",
-          "video_title": "State Funds Tutorial: 5 Tech Tools For Your State Funds Business",
-          "author": "Surplus Funds 101",
-          "verbatim_research_only": true
         }
       ],
       "statutes_and_forms": [
         "form and",
         "form that",
-        "form to",
         "form for",
+        "form to",
         "form of",
         "form is",
         "form you",
-        "form the",
         "form or",
+        "form the",
+        "form with",
+        "form a",
         "form below",
         "form like",
         "form so",
-        "form as",
-        "form content",
         "form on",
-        "form where",
-        "form with",
-        "letters of administration",
-        "form a",
-        "Form uh",
+        "form content",
         "form your",
+        "form where",
+        "form as",
         "form in",
-        "form um",
+        "letters of administration",
+        "form I",
+        "form submissions",
+        "form videos",
         "form we",
+        "form called",
+        "Form uh",
+        "form um",
+        "form which",
+        "form actually",
         "form but",
+        "form fill",
         "form it",
         "form our",
         "form this",
-        "form videos",
-        "form well",
         "form will",
-        "form I",
-        "form if",
-        "form they",
-        "form today",
-        "form video",
-        "letters testamentary",
-        "balancing act",
-        "form better",
-        "form fill"
+        "form built",
+        "form fields",
+        "form has",
+        "form here"
       ],
       "tools_and_portals": [
         "Google",
@@ -1928,13 +1928,13 @@
         "https://www.moneymakingjug.com/inquiry",
         "https://www.surplusfunds101.com/freecallingscript",
         "https://www.youtube.com/surplusfunds101",
+        "CSV",
         "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
         "https://www.instagram.com/thedavidwilkerson",
         "https://www.instagram.com/erizzyy/",
-        "CSV",
         "Regrid",
-        "https://probatemastery.com",
         "Bing",
+        "https://probatemastery.com",
         "DataTree",
         "http://familysearch.me/facebook",
         "http://familysearch.me/home",
@@ -1949,14 +1949,14 @@
         "https://youtu.be/3cmj5kGm2Xw",
         "http://www.youtube.com/channel/UCsc0AQkAh_2cQmxqwD6VWRw?sub_confirmation=1",
         "https://facebook.com/groups/estateprofessionalsmastermind",
+        "https://nicksaraev.com",
         "https://twitter.com/Ancestry",
+        "https://twitter.com/nicksaraev",
         "https://www.ancestry.com/",
         "https://www.facebook.com/Ancestry/",
         "https://www.instagram.com/ancestry",
         "https://www.instagram.com/erizzyy",
-        "https://www.youtube.com/@courtneyfricke",
-        "https://www.youtube.com/user/AncestryCom",
-        "Newspapers.com"
+        "https://www.instagram.com/nick_saraev"
       ]
     }
   ],
@@ -1968,9 +1968,9 @@
       "headline": "Heir location is paid on contingency, never on up-front fees.",
       "summary": "Across the corpus, operators converge on a pure contingency model: the heir pays nothing out of pocket, the locator advances all research cost, and the fee is a negotiated percentage released only when the estate or state agency actually disburses funds. Charging an heir an advance fee is treated as the single clearest marker of a predatory or unlicensed operator.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 293,
-      "video_count": 468,
-      "corroborating_tip_count": 1069,
+      "channel_count": 428,
+      "video_count": 624,
+      "corroborating_tip_count": 1447,
       "supporting_links": [
         {
           "video_title": "State Funds Tutorial New Mexico: How To Register As A Property Locator In The State Of New Mexico.",
@@ -2018,9 +2018,9 @@
       "headline": "Fresh county probate and intestate dockets outperform purchased lead lists.",
       "summary": "Practitioners consistently build pipeline from newly filed probate and administration matters pulled directly from county clerk portals rather than resold lists. Filings naming an administrator but no located heirs, and estates sitting open past the local notice period, are the recurring high-value signal.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 267,
-      "video_count": 463,
-      "corroborating_tip_count": 776,
+      "channel_count": 325,
+      "video_count": 528,
+      "corroborating_tip_count": 818,
       "supporting_links": [
         {
           "video_title": "$57 Affiliate Payouts With $35 Google Ads CPA (Full Funnel Breakdown)",
@@ -2068,9 +2068,9 @@
       "headline": "State unclaimed-property and escheat databases supply the repeatable volume.",
       "summary": "Every state treasury or controller maintains a searchable unclaimed-property register, and the consensus workflow is to cross-reference deceased owners there against probate filings. Volume comes from systematic register sweeps; size comes from the rarer escheated estate, surplus-funds and safe-deposit categories.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 112,
-      "video_count": 204,
-      "corroborating_tip_count": 582,
+      "channel_count": 146,
+      "video_count": 241,
+      "corroborating_tip_count": 587,
       "supporting_links": [
         {
           "video_title": "How To Claim Surplus Funds From Foreclosure",
@@ -2118,9 +2118,9 @@
       "headline": "The deliverable is a document-backed kinship chain, not a name on a list.",
       "summary": "Operators agree that claims succeed or fail on the evidentiary chain: each generational link supported by vital records, each branch mapped per stirpes, and every gap closed before contact. Tree hints from consumer genealogy sites are treated as leads to verify, never as proof to submit.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 315,
-      "video_count": 532,
-      "corroborating_tip_count": 755,
+      "channel_count": 440,
+      "video_count": 675,
+      "corroborating_tip_count": 787,
       "supporting_links": [
         {
           "video_title": "Resolving Heirs' Property",
@@ -2153,10 +2153,10 @@
           "link": "https://www.youtube.com/watch?v=MO1ZQ4wyWeM&t=71s"
         },
         {
-          "video_title": "USDA FSA Resources for Heirs: Join FSA as we talk with the Experts (Episode 1-Full Version)",
-          "author": "FarmersGov",
-          "timestamp": "00:04:54",
-          "link": "https://www.youtube.com/watch?v=whDzDrFNADQ&t=294s"
+          "video_title": "How to Handle Scope Creep in Client Projects",
+          "author": "WPTuts",
+          "timestamp": "00:01:50",
+          "link": "https://www.youtube.com/watch?v=UgtrG88EDhU&t=110s"
         }
       ],
       "caveat": "Consensus among the sampled operators — not legal advice and not a substitute for the governing statute in the reader's jurisdiction."
@@ -2168,9 +2168,9 @@
       "headline": "Verify identity before contact, then lead with restraint, not the dollar figure.",
       "summary": "The recurring outreach pattern is: skip trace to a confirmed current address and phone, open by letter or a short calm call, state that funds may be owed to the family without naming an amount, and give the heir a way to independently verify the operator. Pressure tactics and inflated figures are consistently reported as the fastest way to lose a signed file.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 199,
-      "video_count": 296,
-      "corroborating_tip_count": 124,
+      "channel_count": 291,
+      "video_count": 403,
+      "corroborating_tip_count": 257,
       "supporting_links": [
         {
           "video_title": "State Funds Tutorial: 5 Tech Tools For Your State Funds Business",
@@ -2197,16 +2197,16 @@
           "link": "https://www.youtube.com/watch?v=9RvXCiHUzlo&t=104s"
         },
         {
+          "video_title": "How To Book Sales Calls For Your Agency With AI Cold Email Outreach",
+          "author": "Johnny",
+          "timestamp": "00:26:16",
+          "link": "https://www.youtube.com/watch?v=MlJ3XSy3k7A&t=1576s"
+        },
+        {
           "video_title": "How to Create Comparison Content (Without Making Your CEO Nervous): A Data Backed Approach",
           "author": "The Grow and Convert Marketing Show",
           "timestamp": "00:10:11",
           "link": "https://www.youtube.com/watch?v=ZciLGXWg1uA&t=611s"
-        },
-        {
-          "video_title": "Amador county Tax Sale Surplus Funds Case Study",
-          "author": "Money Making Juggernaut",
-          "timestamp": "00:02:17",
-          "link": "https://www.youtube.com/watch?v=4-lZwuXtY6Y&t=137s"
         }
       ],
       "caveat": "Consensus among the sampled operators — not legal advice and not a substitute for the governing statute in the reader's jurisdiction."
@@ -2218,9 +2218,9 @@
       "headline": "No work proceeds without a signed fee agreement and third-party escrow.",
       "summary": "Consensus practice is a plain-language, notarized or e-signed agreement that names the estate, states the percentage, discloses the heir's right to claim independently, and routes funds through attorney trust or licensed escrow so the locator never holds the heir's money directly.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 298,
-      "video_count": 491,
-      "corroborating_tip_count": 705,
+      "channel_count": 425,
+      "video_count": 637,
+      "corroborating_tip_count": 822,
       "supporting_links": [
         {
           "video_title": "DataTree Hacks: Find Full Legal Descriptions and Title Vesting Information",
@@ -2268,9 +2268,9 @@
       "headline": "Fee caps, waiting periods and licensing are decided per state, before the first call.",
       "summary": "Operators repeatedly stress that the governing rules — percentage caps on unclaimed-property recoveries, mandatory waiting periods after escheat or sale, private-investigator licensing triggers, and the line against practicing law — vary by jurisdiction and must be read in the local statute for every file rather than generalized from another state.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 304,
-      "video_count": 507,
-      "corroborating_tip_count": 404,
+      "channel_count": 376,
+      "video_count": 587,
+      "corroborating_tip_count": 496,
       "supporting_links": [
         {
           "video_title": "Surplus Funds Cold Calling Script: How to Not Sound Like a Scam",
@@ -2318,9 +2318,9 @@
       "headline": "Automated docket monitoring plus AI abstracting lets one or two people run real volume.",
       "summary": "The operational consensus is to automate the repetitive layer — scheduled docket and register pulls, structured intake into a sheet or CRM, AI-assisted abstracting of filings — while keeping genealogy judgment, heir contact and contract execution human. That split is what keeps a two-person shop competitive against staffed firms.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 330,
-      "video_count": 529,
-      "corroborating_tip_count": 1576,
+      "channel_count": 471,
+      "video_count": 697,
+      "corroborating_tip_count": 2505,
       "supporting_links": [
         {
           "video_title": "State Funds Tutorial: 5 Tech Tools For Your State Funds Business",
@@ -2347,16 +2347,16 @@
           "link": "https://www.youtube.com/watch?v=Gk0D4wVEXmc&t=127s"
         },
         {
+          "video_title": "n8n vs Zapier vs Make (2026): Which AI Automation Tool Is Actually Worth It?",
+          "author": "Whizz AI",
+          "timestamp": "00:00:26",
+          "link": "https://www.youtube.com/watch?v=Pz3jLYQwsX4&t=26s"
+        },
+        {
           "video_title": "State Funds Tutorial Virtual Assistants: Top 3 Hiring Mistakes While Growing Your Surplus Business",
           "author": "Surplus Funds 101",
           "timestamp": "00:02:48",
           "link": "https://www.youtube.com/watch?v=ASO1JUOWTjA&t=168s"
-        },
-        {
-          "video_title": "DataTree Hacks: How to Search and Find Property Owners Nationwide",
-          "author": "REtipster",
-          "timestamp": "00:01:57",
-          "link": "https://www.youtube.com/watch?v=y5XZp-4n_uc&t=117s"
         }
       ],
       "caveat": "Consensus among the sampled operators — not legal advice and not a substitute for the governing statute in the reader's jurisdiction."
@@ -2746,8 +2746,8 @@
         "asset_id": "youtube_thumbnails",
         "asset": "https://i.ytimg.com/vi/<video_id>/*.jpg",
         "asset_type": "youtube_thumbnail_image",
-        "source": "YouTube CDN thumbnails for the 636 corpus videos",
-        "instance_count": 636,
+        "source": "YouTube CDN thumbnails for the 814 corpus videos",
+        "instance_count": 814,
         "instances": [
           {
             "video_id": "9Q4qYeK5DTg",
@@ -7200,6 +7200,1252 @@
             "author": "Da Hoang",
             "thumbnail_url": "https://i.ytimg.com/vi/44ifmL6JCs8/hqdefault.jpg",
             "source_url": "https://www.youtube.com/watch?v=44ifmL6JCs8"
+          },
+          {
+            "video_id": "RmYTguzXrVM",
+            "title": "How I Turn One AI Project Into $5K Monthly Retainers",
+            "author": "Nick Saraev",
+            "thumbnail_url": "https://i.ytimg.com/vi/RmYTguzXrVM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=RmYTguzXrVM"
+          },
+          {
+            "video_id": "m9wI5V0nSe0",
+            "title": "One-Time Projects vs Retainers: Which Gets You to $10K/Month?",
+            "author": "Automate AI Consulting",
+            "thumbnail_url": "https://i.ytimg.com/vi/m9wI5V0nSe0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=m9wI5V0nSe0"
+          },
+          {
+            "video_id": "J6tKdJPDJiw",
+            "title": "Why AI automation agency is a great business model",
+            "author": "Nick Saraev Unfiltered",
+            "thumbnail_url": "https://i.ytimg.com/vi/J6tKdJPDJiw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=J6tKdJPDJiw"
+          },
+          {
+            "video_id": "XUYvDbAv1IA",
+            "title": "The TRUTH About Selling AI Automations to Businesses",
+            "author": "Zubair Trabzada | AI Workshop",
+            "thumbnail_url": "https://i.ytimg.com/vi/XUYvDbAv1IA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=XUYvDbAv1IA"
+          },
+          {
+            "video_id": "kgE01J875dY",
+            "title": "Complete Guide to AI Automation Agency Monthly Retainers",
+            "author": "Liam Ottley",
+            "thumbnail_url": "https://i.ytimg.com/vi/kgE01J875dY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=kgE01J875dY"
+          },
+          {
+            "video_id": "49rzug0GIOY",
+            "title": "How to build a $100K/Month AI Agency in 2027 (Full Breakdown)",
+            "author": "Danny Peregrine",
+            "thumbnail_url": "https://i.ytimg.com/vi/49rzug0GIOY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=49rzug0GIOY"
+          },
+          {
+            "video_id": "5558JLgLk50",
+            "title": "NEW AI Agency Business Model I'm Using to Make $474,996/mo",
+            "author": "Sean Standberry",
+            "thumbnail_url": "https://i.ytimg.com/vi/5558JLgLk50/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=5558JLgLk50"
+          },
+          {
+            "video_id": "LjJGh4J1eqM",
+            "title": "3 AI Agency Retainer Options You Can Steal Today",
+            "author": "Nick Saraev Daily",
+            "thumbnail_url": "https://i.ytimg.com/vi/LjJGh4J1eqM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=LjJGh4J1eqM"
+          },
+          {
+            "video_id": "Z5rSDEbn7wU",
+            "title": "AI Automation Agency Retainer Model Explained",
+            "author": "Nick Saraev Daily",
+            "thumbnail_url": "https://i.ytimg.com/vi/Z5rSDEbn7wU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Z5rSDEbn7wU"
+          },
+          {
+            "video_id": "FwOTs4UxQS4",
+            "title": "AI Agents, Clearly Explained",
+            "author": "Jeff Su",
+            "thumbnail_url": "https://i.ytimg.com/vi/FwOTs4UxQS4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=FwOTs4UxQS4"
+          },
+          {
+            "video_id": "pba8FIkOilY",
+            "title": "The AI-First Agency Model YC Just Revealed (6 services to sell)",
+            "author": "Bo Sar",
+            "thumbnail_url": "https://i.ytimg.com/vi/pba8FIkOilY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=pba8FIkOilY"
+          },
+          {
+            "video_id": "SAerRtQLD0I",
+            "title": "The TRUTH About Selling AI Automations to Businesses",
+            "author": "Nate Herk | AI Automation",
+            "thumbnail_url": "https://i.ytimg.com/vi/SAerRtQLD0I/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=SAerRtQLD0I"
+          },
+          {
+            "video_id": "agtVZpDDGmU",
+            "title": "How i built an AI Agency that makes me 100k/mo with no money (with proof)",
+            "author": "Jacob Kaz",
+            "thumbnail_url": "https://i.ytimg.com/vi/agtVZpDDGmU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=agtVZpDDGmU"
+          },
+          {
+            "video_id": "afaXZkksQs0",
+            "title": "Turn Your AI Skills Into Long-Term Clients (The 90-Day Method)",
+            "author": "Jeff Sauer - Service Stacking",
+            "thumbnail_url": "https://i.ytimg.com/vi/afaXZkksQs0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=afaXZkksQs0"
+          },
+          {
+            "video_id": "i4z0kCcByY8",
+            "title": "How to Start an AI Automation Agency in 2026 (Step by Step)",
+            "author": "Mikey No Code",
+            "thumbnail_url": "https://i.ytimg.com/vi/i4z0kCcByY8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=i4z0kCcByY8"
+          },
+          {
+            "video_id": "IYV8OVFzq_c",
+            "title": "N8N vs Make vs Zapier (2025) - Honest Review",
+            "author": "Simplified",
+            "thumbnail_url": "https://i.ytimg.com/vi/IYV8OVFzq_c/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=IYV8OVFzq_c"
+          },
+          {
+            "video_id": "syCqaV7N73s",
+            "title": "The difference between Zapier, Make and n8n (2026)",
+            "author": "Automate with Marc | AI Automation",
+            "thumbnail_url": "https://i.ytimg.com/vi/syCqaV7N73s/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=syCqaV7N73s"
+          },
+          {
+            "video_id": "PKHb0KLNOIg",
+            "title": "Zapier vs Make vs n8n: Which Costs Less for Small Businesses? (2026)",
+            "author": "AI Business Tools & Automation",
+            "thumbnail_url": "https://i.ytimg.com/vi/PKHb0KLNOIg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=PKHb0KLNOIg"
+          },
+          {
+            "video_id": "Pd96DxQ36U8",
+            "title": "Zapier vs Make vs n8n (2026): Which Automation Tool Should You Use?",
+            "author": "LearnAI Today",
+            "thumbnail_url": "https://i.ytimg.com/vi/Pd96DxQ36U8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Pd96DxQ36U8"
+          },
+          {
+            "video_id": "1mZ0bWq9y-M",
+            "title": "How to Build an AI Automation Agency with n8n and AI Agents (2026 Masterclass)",
+            "author": "The AI Blueprint",
+            "thumbnail_url": "https://i.ytimg.com/vi/1mZ0bWq9y-M/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=1mZ0bWq9y-M"
+          },
+          {
+            "video_id": "TdMOpd_cG0A",
+            "title": "Zapier vs Make vs n8n: Which Automation Tool Is Best for Your Team? (HONEST REVIEW)",
+            "author": "Paired Recruiting",
+            "thumbnail_url": "https://i.ytimg.com/vi/TdMOpd_cG0A/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=TdMOpd_cG0A"
+          },
+          {
+            "video_id": "4imOFZeP7nk",
+            "title": "I Run My AI Automation Business for $0 in Software (Zapier vs Make vs n8n)",
+            "author": "Jonas | AI Tools & Automation",
+            "thumbnail_url": "https://i.ytimg.com/vi/4imOFZeP7nk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=4imOFZeP7nk"
+          },
+          {
+            "video_id": "d8w8FHZJpdY",
+            "title": "Zapier vs Make vs n8n: What One AI Workflow Really Costs (2026 Pricing)",
+            "author": "ProfitPilot",
+            "thumbnail_url": "https://i.ytimg.com/vi/d8w8FHZJpdY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=d8w8FHZJpdY"
+          },
+          {
+            "video_id": "EtiRX0GduSI",
+            "title": "I Built the Same AI Lead Responder in Zapier, Make and n8n (Only One Was Easy)",
+            "author": "Owner's Bot Lab",
+            "thumbnail_url": "https://i.ytimg.com/vi/EtiRX0GduSI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=EtiRX0GduSI"
+          },
+          {
+            "video_id": "SrWNK0955xw",
+            "title": "Zapier vs Make vs n8n vs UiPath: What You Need to Know in 2026",
+            "author": "Everyday AI Automation",
+            "thumbnail_url": "https://i.ytimg.com/vi/SrWNK0955xw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=SrWNK0955xw"
+          },
+          {
+            "video_id": "Pz3jLYQwsX4",
+            "title": "n8n vs Zapier vs Make (2026): Which AI Automation Tool Is Actually Worth It?",
+            "author": "Whizz AI",
+            "thumbnail_url": "https://i.ytimg.com/vi/Pz3jLYQwsX4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Pz3jLYQwsX4"
+          },
+          {
+            "video_id": "Z7hn_pkhIxM",
+            "title": "DesignJoy has to be a scam",
+            "author": "Zimri Mayfield",
+            "thumbnail_url": "https://i.ytimg.com/vi/Z7hn_pkhIxM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Z7hn_pkhIxM"
+          },
+          {
+            "video_id": "o-UR3rkPgJ4",
+            "title": "This is How You Run a Profitable Design Service | Brett from DesignJoy",
+            "author": "Creative Crew with Brad Hussey",
+            "thumbnail_url": "https://i.ytimg.com/vi/o-UR3rkPgJ4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=o-UR3rkPgJ4"
+          },
+          {
+            "video_id": "IvZxfvECZnA",
+            "title": "Make Millions With a One-Person Business - Here's How",
+            "author": "Brett Malinowski",
+            "thumbnail_url": "https://i.ytimg.com/vi/IvZxfvECZnA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=IvZxfvECZnA"
+          },
+          {
+            "video_id": "dXKzST0FE-A",
+            "title": "I Make $1.3M/Year With One Skill",
+            "author": "Starter Story",
+            "thumbnail_url": "https://i.ytimg.com/vi/dXKzST0FE-A/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=dXKzST0FE-A"
+          },
+          {
+            "video_id": "0IHziP_l6cc",
+            "title": "[PS #0009] How Brett Williams Runs a Successful Productized Design Service",
+            "author": "Tyler Gillespie",
+            "thumbnail_url": "https://i.ytimg.com/vi/0IHziP_l6cc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=0IHziP_l6cc"
+          },
+          {
+            "video_id": "vedkm3ZmHIE",
+            "title": "The $1.8M Solopreneur Playbook",
+            "author": "Starter Story",
+            "thumbnail_url": "https://i.ytimg.com/vi/vedkm3ZmHIE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=vedkm3ZmHIE"
+          },
+          {
+            "video_id": "rI1y1OsDxdw",
+            "title": "Brett From DesignJoy Did It. Why Can’t You?",
+            "author": "LaunchFast with Bal Sieber",
+            "thumbnail_url": "https://i.ytimg.com/vi/rI1y1OsDxdw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=rI1y1OsDxdw"
+          },
+          {
+            "video_id": "8vwgUwgH2Js",
+            "title": "Secret to Running a $1 Million Solo Design Agency",
+            "author": "The Futur",
+            "thumbnail_url": "https://i.ytimg.com/vi/8vwgUwgH2Js/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=8vwgUwgH2Js"
+          },
+          {
+            "video_id": "Xn_pruXtu0s",
+            "title": "Brett Williams of Designjoy Answers Tough Questions About His Million-Dollar Design Job | 13",
+            "author": "The Creative Brief Podcast",
+            "thumbnail_url": "https://i.ytimg.com/vi/Xn_pruXtu0s/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Xn_pruXtu0s"
+          },
+          {
+            "video_id": "rO0i7sGwhCU",
+            "title": "How I made $5K A Month Using The Design Joy Model",
+            "author": "Harry Roper",
+            "thumbnail_url": "https://i.ytimg.com/vi/rO0i7sGwhCU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=rO0i7sGwhCU"
+          },
+          {
+            "video_id": "FpPgkqEoNDY",
+            "title": "A solo $130k MRR productized design service - Brett Williams, Designjoy",
+            "author": "Indie Bites",
+            "thumbnail_url": "https://i.ytimg.com/vi/FpPgkqEoNDY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=FpPgkqEoNDY"
+          },
+          {
+            "video_id": "w9gOdSLVu14",
+            "title": "how to actually build a sustainable productized service ($20k+)",
+            "author": "Demandflow",
+            "thumbnail_url": "https://i.ytimg.com/vi/w9gOdSLVu14/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=w9gOdSLVu14"
+          },
+          {
+            "video_id": "bAzg8BugEVY",
+            "title": "The Most Profitable Solo Business You've Never Heard Of",
+            "author": "Chris Koerner on The Koerner Office Podcast",
+            "thumbnail_url": "https://i.ytimg.com/vi/bAzg8BugEVY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=bAzg8BugEVY"
+          },
+          {
+            "video_id": "uSh76GAmtwM",
+            "title": "This Designer Makes $2M a Year With ZERO Employees (Designjoy Explained Simply)",
+            "author": "I Make it Simple",
+            "thumbnail_url": "https://i.ytimg.com/vi/uSh76GAmtwM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=uSh76GAmtwM"
+          },
+          {
+            "video_id": "vBXCdVHBK3o",
+            "title": "7 Productized Services That Will Make You $100,000/month (One Person Business)",
+            "author": "Brett Malinowski",
+            "thumbnail_url": "https://i.ytimg.com/vi/vBXCdVHBK3o/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=vBXCdVHBK3o"
+          },
+          {
+            "video_id": "0M1GD8qDDUw",
+            "title": "Every Type Of Productized Service EVER + Examples",
+            "author": "Wayfront",
+            "thumbnail_url": "https://i.ytimg.com/vi/0M1GD8qDDUw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=0M1GD8qDDUw"
+          },
+          {
+            "video_id": "S5UwzzP_Qec",
+            "title": "Bland AI Basics: Everything You Need to Start Building Voice Agents",
+            "author": "Anthony Shoosh",
+            "thumbnail_url": "https://i.ytimg.com/vi/S5UwzzP_Qec/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=S5UwzzP_Qec"
+          },
+          {
+            "video_id": "-j4XDojlGLc",
+            "title": "We Tested Bland AI’s Voice Agent. Here’s What Happened",
+            "author": "CX Foundation",
+            "thumbnail_url": "https://i.ytimg.com/vi/-j4XDojlGLc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=-j4XDojlGLc"
+          },
+          {
+            "video_id": "HFuJC6Bi11o",
+            "title": "VAPI vs Bland AI – I built the same voice agent on both",
+            "author": "Voice AI Decoded",
+            "thumbnail_url": "https://i.ytimg.com/vi/HFuJC6Bi11o/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=HFuJC6Bi11o"
+          },
+          {
+            "video_id": "PgrkNMNc_Cw",
+            "title": "Retell AI Review (2026): Create AI Voice Agents in Under 10 Minutes",
+            "author": "Daniel | Tech & Data",
+            "thumbnail_url": "https://i.ytimg.com/vi/PgrkNMNc_Cw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=PgrkNMNc_Cw"
+          },
+          {
+            "video_id": "UiKoEHbio38",
+            "title": "Retell AI vs Bland AI (Don't choose WRONG!)",
+            "author": "Voice AI Decoded",
+            "thumbnail_url": "https://i.ytimg.com/vi/UiKoEHbio38/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=UiKoEHbio38"
+          },
+          {
+            "video_id": "8yIHmsMHMYc",
+            "title": "How to Build an AI Voice Agent That Calls Every Lead in 60 Seconds (VAPI Tutorial)",
+            "author": "Alex Leischow",
+            "thumbnail_url": "https://i.ytimg.com/vi/8yIHmsMHMYc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=8yIHmsMHMYc"
+          },
+          {
+            "video_id": "W1Y3bHct_e0",
+            "title": "How to automate FNOL insurance calls using AI voice agents",
+            "author": "Bland",
+            "thumbnail_url": "https://i.ytimg.com/vi/W1Y3bHct_e0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=W1Y3bHct_e0"
+          },
+          {
+            "video_id": "ZVSDm5siKr4",
+            "title": "Build a Voice Agent in 15 Minutes Using VAPI (Easiest Tutorial)",
+            "author": "Venture Harbour",
+            "thumbnail_url": "https://i.ytimg.com/vi/ZVSDm5siKr4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ZVSDm5siKr4"
+          },
+          {
+            "video_id": "pMdWgl-3ihA",
+            "title": "Best AI Voice Agent 2025: Retell vs Vapi vs Bland vs Synthflow vs ElevenLabs vs Play AI vs Air AI vs",
+            "author": "ToThePoint Guide",
+            "thumbnail_url": "https://i.ytimg.com/vi/pMdWgl-3ihA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=pMdWgl-3ihA"
+          },
+          {
+            "video_id": "Ky2Z6kGp1Vk",
+            "title": "The Darkside of AI Voice Agents (The Truth)",
+            "author": "Brendan Jowett",
+            "thumbnail_url": "https://i.ytimg.com/vi/Ky2Z6kGp1Vk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Ky2Z6kGp1Vk"
+          },
+          {
+            "video_id": "J8C_262TFUU",
+            "title": "ElevenLabs vs Vapi vs Retell AI: I Built the Same AI Receptionist on All 3",
+            "author": "Stephanie Nyarko",
+            "thumbnail_url": "https://i.ytimg.com/vi/J8C_262TFUU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=J8C_262TFUU"
+          },
+          {
+            "video_id": "oB7gia1kC_g",
+            "title": "From Zero to Your First AI Voice Agent in 18 Minutes (No Coding)",
+            "author": "Liam Ottley",
+            "thumbnail_url": "https://i.ytimg.com/vi/oB7gia1kC_g/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=oB7gia1kC_g"
+          },
+          {
+            "video_id": "6Fal62hzEs8",
+            "title": "The Best Platform for your Voice AI Agency: Retell vs Vapi",
+            "author": "Alejo Pijuan",
+            "thumbnail_url": "https://i.ytimg.com/vi/6Fal62hzEs8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=6Fal62hzEs8"
+          },
+          {
+            "video_id": "JSYOZvtkAx4",
+            "title": "I Built an AI Voice Agent That Actually Works (AI Receptionist Full Beginner Tutorial)",
+            "author": "Sonny Sangha",
+            "thumbnail_url": "https://i.ytimg.com/vi/JSYOZvtkAx4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=JSYOZvtkAx4"
+          },
+          {
+            "video_id": "Bm9fbVEZvHc",
+            "title": "How to Build & Sell AI Automations That Make $10K/mo (Full 6-Phase Playbook)",
+            "author": "Hyperautomation Labs",
+            "thumbnail_url": "https://i.ytimg.com/vi/Bm9fbVEZvHc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Bm9fbVEZvHc"
+          },
+          {
+            "video_id": "I1NSFLOBQvc",
+            "title": "What Nobody Tells You About Selling AI Automations",
+            "author": "Sabrina Ramonov 🍄",
+            "thumbnail_url": "https://i.ytimg.com/vi/I1NSFLOBQvc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=I1NSFLOBQvc"
+          },
+          {
+            "video_id": "fMdUS6amki0",
+            "title": "How I made $150k last month selling AI automations",
+            "author": "Noah Epstein",
+            "thumbnail_url": "https://i.ytimg.com/vi/fMdUS6amki0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=fMdUS6amki0"
+          },
+          {
+            "video_id": "T9diMzLIpqQ",
+            "title": "Sell These 3 Simple AI Automations for $1.7K to B2B Agencies",
+            "author": "Nick Saraev",
+            "thumbnail_url": "https://i.ytimg.com/vi/T9diMzLIpqQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=T9diMzLIpqQ"
+          },
+          {
+            "video_id": "HMo8ixMd4ts",
+            "title": "Don't Sell AI Automations Before You Watch THIS Video",
+            "author": "The AI Architects | Tom Crawshaw",
+            "thumbnail_url": "https://i.ytimg.com/vi/HMo8ixMd4ts/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=HMo8ixMd4ts"
+          },
+          {
+            "video_id": "CDVbVmBQVyc",
+            "title": "How to Sell AI Automation to Local Businesses (Beginner Guide)",
+            "author": "Travis Wardrop",
+            "thumbnail_url": "https://i.ytimg.com/vi/CDVbVmBQVyc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=CDVbVmBQVyc"
+          },
+          {
+            "video_id": "fXrfPpcs7fw",
+            "title": "How to Sell AI Automation Services (Without Pitching AI)",
+            "author": "Sean Malone | Close Bigger Deals",
+            "thumbnail_url": "https://i.ytimg.com/vi/fXrfPpcs7fw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=fXrfPpcs7fw"
+          },
+          {
+            "video_id": "HpBFCMSfM-I",
+            "title": "The 3 Best Ways To Sell AI Automation Services (n8n, Make)",
+            "author": "Bennett Black",
+            "thumbnail_url": "https://i.ytimg.com/vi/HpBFCMSfM-I/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=HpBFCMSfM-I"
+          },
+          {
+            "video_id": "6FS1eyS2agI",
+            "title": "Sell These 3 Simple AI Automations for $1.7K to B2B Agencies",
+            "author": "AI Hustle Lab",
+            "thumbnail_url": "https://i.ytimg.com/vi/6FS1eyS2agI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=6FS1eyS2agI"
+          },
+          {
+            "video_id": "VZQaUF7kKNw",
+            "title": "How to Sell AI Automations to Local Businesses (Beginner Guide)",
+            "author": "AI Money Math",
+            "thumbnail_url": "https://i.ytimg.com/vi/VZQaUF7kKNw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=VZQaUF7kKNw"
+          },
+          {
+            "video_id": "57vMJTMbsSc",
+            "title": "Migrate All Your n8n Workflows in Minutes (Cloud/Self-Hosted)",
+            "author": "Josue AI",
+            "thumbnail_url": "https://i.ytimg.com/vi/57vMJTMbsSc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=57vMJTMbsSc"
+          },
+          {
+            "video_id": "xxARTGo_Oqg",
+            "title": "How to Actually Deliver AI Projects (APIs, Hosting & Handover Explained)",
+            "author": "Nate Herk | AI Automation",
+            "thumbnail_url": "https://i.ytimg.com/vi/xxARTGo_Oqg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=xxARTGo_Oqg"
+          },
+          {
+            "video_id": "t1PTmpas0bg",
+            "title": "Easiest Way to Migrate n8n Workflows Between Accounts (cloud to self-hosted)",
+            "author": "Nate Herk | AI Automation",
+            "thumbnail_url": "https://i.ytimg.com/vi/t1PTmpas0bg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=t1PTmpas0bg"
+          },
+          {
+            "video_id": "mw1V2GoYHsk",
+            "title": "How to Deliver Your n8n Project to Clients Like a PRO!",
+            "author": "Austin Reed",
+            "thumbnail_url": "https://i.ytimg.com/vi/mw1V2GoYHsk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=mw1V2GoYHsk"
+          },
+          {
+            "video_id": "TdMeBa69Y8Y",
+            "title": "n8n Self Hosted With Claude MCP - Let AI Build Your Workflows",
+            "author": "SaaS Master",
+            "thumbnail_url": "https://i.ytimg.com/vi/TdMeBa69Y8Y/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=TdMeBa69Y8Y"
+          },
+          {
+            "video_id": "ofC4OeNjDx8",
+            "title": "Seriously, please watch this before you start learning n8n",
+            "author": "The AI Architects | Tom Crawshaw",
+            "thumbnail_url": "https://i.ytimg.com/vi/ofC4OeNjDx8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ofC4OeNjDx8"
+          },
+          {
+            "video_id": "oEG06WVBBVg",
+            "title": "How I Deploy N8N Workflows & Lessons Learned",
+            "author": "DailyAi.Studio",
+            "thumbnail_url": "https://i.ytimg.com/vi/oEG06WVBBVg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=oEG06WVBBVg"
+          },
+          {
+            "video_id": "91lw5ubtLMc",
+            "title": "How To Deliver Your N8N Automation To Clients Like An Expert",
+            "author": "Automate AI Consulting",
+            "thumbnail_url": "https://i.ytimg.com/vi/91lw5ubtLMc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=91lw5ubtLMc"
+          },
+          {
+            "video_id": "zqtx1Soeq5E",
+            "title": "How to Use N8N for FREE - n8n Self Hosting Set Up Guide",
+            "author": "Youri van Hofwegen",
+            "thumbnail_url": "https://i.ytimg.com/vi/zqtx1Soeq5E/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=zqtx1Soeq5E"
+          },
+          {
+            "video_id": "BxxP4kEqOdg",
+            "title": "n8n AI Assistant & AI Agents on Self-Hosted n8n",
+            "author": "Cuebic AI",
+            "thumbnail_url": "https://i.ytimg.com/vi/BxxP4kEqOdg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=BxxP4kEqOdg"
+          },
+          {
+            "video_id": "vtK1xbj-tD8",
+            "title": "n8n Tutorial 2026: AI Agents, Self-Hosting & Pricing (Beginner to Pro)",
+            "author": "Aitoolnavio",
+            "thumbnail_url": "https://i.ytimg.com/vi/vtK1xbj-tD8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=vtK1xbj-tD8"
+          },
+          {
+            "video_id": "oRI0lA-ZQ3w",
+            "title": "How to Use n8n for FREE in 2026 - n8n Self Hosting Setup",
+            "author": "Metics Media",
+            "thumbnail_url": "https://i.ytimg.com/vi/oRI0lA-ZQ3w/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=oRI0lA-ZQ3w"
+          },
+          {
+            "video_id": "cqaukVEOmJ4",
+            "title": "n8n Beginner Tutorial: AI Lead Intake Automation (Free Self-Hosted Option)",
+            "author": "Kelsey Hastie",
+            "thumbnail_url": "https://i.ytimg.com/vi/cqaukVEOmJ4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=cqaukVEOmJ4"
+          },
+          {
+            "video_id": "bS9R6aCVEzw",
+            "title": "n8n will change your life as a developer...",
+            "author": "Fireship",
+            "thumbnail_url": "https://i.ytimg.com/vi/bS9R6aCVEzw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=bS9R6aCVEzw"
+          },
+          {
+            "video_id": "YaFtlj9qXQc",
+            "title": "How to Sell AI Services with a Paid AI Business Audit (Step-by-Step Framework)",
+            "author": "Belt Course",
+            "thumbnail_url": "https://i.ytimg.com/vi/YaFtlj9qXQc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=YaFtlj9qXQc"
+          },
+          {
+            "video_id": "LSmxwtNHu4k",
+            "title": "I've Completed 200+ AI Audits, Copy This 7 Step Process",
+            "author": "Andrew Dunn | AI Consulting",
+            "thumbnail_url": "https://i.ytimg.com/vi/LSmxwtNHu4k/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=LSmxwtNHu4k"
+          },
+          {
+            "video_id": "fSAazWLuDyQ",
+            "title": "I Built an AI Audit That Replaces a $50,000 Consultant",
+            "author": "company in progress",
+            "thumbnail_url": "https://i.ytimg.com/vi/fSAazWLuDyQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=fSAazWLuDyQ"
+          },
+          {
+            "video_id": "noivN2hIXLY",
+            "title": "How to Perform a $60,000 AI Audit (Beginner’s Guide)",
+            "author": "Liam Ottley",
+            "thumbnail_url": "https://i.ytimg.com/vi/noivN2hIXLY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=noivN2hIXLY"
+          },
+          {
+            "video_id": "stoZ9wFob2E",
+            "title": "Ditch the Broken Agency Model and Start Selling AI Audits (Part 1)",
+            "author": "Carly Meyers",
+            "thumbnail_url": "https://i.ytimg.com/vi/stoZ9wFob2E/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=stoZ9wFob2E"
+          },
+          {
+            "video_id": "fabs_LzN3oI",
+            "title": "AI Use Cases for Internal Audit, External Audit, Compliance | NYC Connect 226",
+            "author": "DataSnipper",
+            "thumbnail_url": "https://i.ytimg.com/vi/fabs_LzN3oI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=fabs_LzN3oI"
+          },
+          {
+            "video_id": "7UpuiFHBvec",
+            "title": "How to Perform $100,000 AI Audits For Businesses (Complete Guide)",
+            "author": "Nick Puru | AI Automation",
+            "thumbnail_url": "https://i.ytimg.com/vi/7UpuiFHBvec/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=7UpuiFHBvec"
+          },
+          {
+            "video_id": "WFW7vb6wXZM",
+            "title": "How to Perform an AI Audit in 2026 (Step-by-Step Framework)",
+            "author": "Tom Hartnell",
+            "thumbnail_url": "https://i.ytimg.com/vi/WFW7vb6wXZM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=WFW7vb6wXZM"
+          },
+          {
+            "video_id": "dqDWqV07r6M",
+            "title": "I Audited A $5M Business For AI. Here's What I Found",
+            "author": "Lobo Brother's | AI Systems for Business Owners",
+            "thumbnail_url": "https://i.ytimg.com/vi/dqDWqV07r6M/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=dqDWqV07r6M"
+          },
+          {
+            "video_id": "NFQnvr9xNf8",
+            "title": "How to Execute $200K AI Audits for Businesses (Complete Framework)",
+            "author": "Stefan | AI",
+            "thumbnail_url": "https://i.ytimg.com/vi/NFQnvr9xNf8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=NFQnvr9xNf8"
+          },
+          {
+            "video_id": "tT1dV4_aC0M",
+            "title": "How to sell AI visibility audits and turn them into recurring revenue for your agency",
+            "author": "My Web Audit",
+            "thumbnail_url": "https://i.ytimg.com/vi/tT1dV4_aC0M/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=tT1dV4_aC0M"
+          },
+          {
+            "video_id": "AG_L5ecwXkU",
+            "title": "How to Perform a $15,000 AI Audit (Beginner’s Guide)",
+            "author": "Andrew Dunn | AI Consulting",
+            "thumbnail_url": "https://i.ytimg.com/vi/AG_L5ecwXkU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=AG_L5ecwXkU"
+          },
+          {
+            "video_id": "2CdNLDttOSg",
+            "title": "How Two 19-Year-Olds Made $320K in 6 Months Selling AI Audits (Full Breakdown)",
+            "author": "Liam Ottley",
+            "thumbnail_url": "https://i.ytimg.com/vi/2CdNLDttOSg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=2CdNLDttOSg"
+          },
+          {
+            "video_id": "HPGSE4LXaQA",
+            "title": "Don't Sell AI Workflows, Sell AI Audits (Massive Opportunity)",
+            "author": "Andrew Dunn | AI Consulting",
+            "thumbnail_url": "https://i.ytimg.com/vi/HPGSE4LXaQA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=HPGSE4LXaQA"
+          },
+          {
+            "video_id": "1leregs81ik",
+            "title": "How I Sell $10,000 AI Audits (Our EXACT 5-Step Process)",
+            "author": "Mert Yerlikaya",
+            "thumbnail_url": "https://i.ytimg.com/vi/1leregs81ik/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=1leregs81ik"
+          },
+          {
+            "video_id": "2goNKtgnIKg",
+            "title": "Why ALL AI Agencies Should Run AI Audits (And How To Do Them Properly!)",
+            "author": "Milan Tahliani",
+            "thumbnail_url": "https://i.ytimg.com/vi/2goNKtgnIKg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=2goNKtgnIKg"
+          },
+          {
+            "video_id": "UabBYexBD4k",
+            "title": "Is RAG Still Needed? Choosing the Best Approach for LLMs",
+            "author": "IBM Technology",
+            "thumbnail_url": "https://i.ytimg.com/vi/UabBYexBD4k/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=UabBYexBD4k"
+          },
+          {
+            "video_id": "XlAIgmi_Vow",
+            "title": "When Vectors Break Down: Graph-Based RAG for Dense Enterprise Knowledge - Sam Julien, Writer",
+            "author": "AI Engineer",
+            "thumbnail_url": "https://i.ytimg.com/vi/XlAIgmi_Vow/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=XlAIgmi_Vow"
+          },
+          {
+            "video_id": "p0FERNkpyHE",
+            "title": "Introducing RAG 2.0: Agentic RAG + Knowledge Graphs (FREE Template)",
+            "author": "Cole Medin",
+            "thumbnail_url": "https://i.ytimg.com/vi/p0FERNkpyHE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=p0FERNkpyHE"
+          },
+          {
+            "video_id": "6vG_amAshTk",
+            "title": "Knowledge Graph or Vector Database… Which is Better?",
+            "author": "Adam Lucek",
+            "thumbnail_url": "https://i.ytimg.com/vi/6vG_amAshTk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=6vG_amAshTk"
+          },
+          {
+            "video_id": "cxGMp3DBkMk",
+            "title": "RAG Explained: Why LLMs Hallucinate Without a Knowledge Layer",
+            "author": "AI Engineering with Kaushal",
+            "thumbnail_url": "https://i.ytimg.com/vi/cxGMp3DBkMk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=cxGMp3DBkMk"
+          },
+          {
+            "video_id": "_HQ2H_0Ayy0",
+            "title": "RAG Explained For Beginners",
+            "author": "KodeKloud",
+            "thumbnail_url": "https://i.ytimg.com/vi/_HQ2H_0Ayy0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=_HQ2H_0Ayy0"
+          },
+          {
+            "video_id": "XNneh6-eyPg",
+            "title": "Practical GraphRAG: Making LLMs smarter with Knowledge Graphs — Michael, Jesus, and Stephen, Neo4j",
+            "author": "AI Engineer",
+            "thumbnail_url": "https://i.ytimg.com/vi/XNneh6-eyPg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=XNneh6-eyPg"
+          },
+          {
+            "video_id": "8N3k2qP_0SY",
+            "title": "Beyond the Case | Episode 6: RAG, AI Agents & Vector Databases — Without the Hype",
+            "author": "Mirketa Inc",
+            "thumbnail_url": "https://i.ytimg.com/vi/8N3k2qP_0SY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=8N3k2qP_0SY"
+          },
+          {
+            "video_id": "T-D1OfcDW1M",
+            "title": "What is Retrieval-Augmented Generation (RAG)?",
+            "author": "IBM Technology",
+            "thumbnail_url": "https://i.ytimg.com/vi/T-D1OfcDW1M/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=T-D1OfcDW1M"
+          },
+          {
+            "video_id": "mHxLXzYjQRE",
+            "title": "Production RAG with LangChain & Vector Databases – Full Course",
+            "author": "freeCodeCamp.org",
+            "thumbnail_url": "https://i.ytimg.com/vi/mHxLXzYjQRE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=mHxLXzYjQRE"
+          },
+          {
+            "video_id": "r4hp_y9_V3w",
+            "title": "The Future of Enterprise AI: RAG vs. Agentic Workflows",
+            "author": "Hey sidG",
+            "thumbnail_url": "https://i.ytimg.com/vi/r4hp_y9_V3w/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=r4hp_y9_V3w"
+          },
+          {
+            "video_id": "LmXaPUky_u4",
+            "title": "Open WebUI Knowledge Bases: RAG & Embeddings (Beginner's Guide)",
+            "author": "Professor Patterns",
+            "thumbnail_url": "https://i.ytimg.com/vi/LmXaPUky_u4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=LmXaPUky_u4"
+          },
+          {
+            "video_id": "ruilmyfVgrI",
+            "title": "Webinar: How to Build Enterprise-Ready RAG Systems",
+            "author": "Unstructured",
+            "thumbnail_url": "https://i.ytimg.com/vi/ruilmyfVgrI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ruilmyfVgrI"
+          },
+          {
+            "video_id": "4Vt8Rgxszb4",
+            "title": "Everything You Need to Know About Retrieval-Augmented Generation (RAG) | Enterprise AI Explained",
+            "author": "Cresco International",
+            "thumbnail_url": "https://i.ytimg.com/vi/4Vt8Rgxszb4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=4Vt8Rgxszb4"
+          },
+          {
+            "video_id": "tLMViADvSNE",
+            "title": "Every RAG Strategy Explained in 13 Minutes (No Fluff)",
+            "author": "Cole Medin",
+            "thumbnail_url": "https://i.ytimg.com/vi/tLMViADvSNE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=tLMViADvSNE"
+          },
+          {
+            "video_id": "XKoGenFWVHs",
+            "title": "The Exact System Boutique Agencies Use to Stop Scope Creep & Close $5k/mo Retainers",
+            "author": "ArriSse Corp",
+            "thumbnail_url": "https://i.ytimg.com/vi/XKoGenFWVHs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=XKoGenFWVHs"
+          },
+          {
+            "video_id": "TtU19Z-ASZk",
+            "title": "Project Risk, Scope Creep, and AI Automation for MSPs",
+            "author": "Global Technology Industry Association (GTIA)",
+            "thumbnail_url": "https://i.ytimg.com/vi/TtU19Z-ASZk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=TtU19Z-ASZk"
+          },
+          {
+            "video_id": "J5BBjGKyoUE",
+            "title": "The $12.4K Scope Creep Killing Your Best Jobs (Fix Inside)",
+            "author": "The Contractor AI | AI Systems for Contractors",
+            "thumbnail_url": "https://i.ytimg.com/vi/J5BBjGKyoUE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=J5BBjGKyoUE"
+          },
+          {
+            "video_id": "csELc0aBrp4",
+            "title": "Stop eating scope creep for free — AI stack that drafts change orders (you still send) (2026)",
+            "author": "Quiet Client",
+            "thumbnail_url": "https://i.ytimg.com/vi/csELc0aBrp4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=csELc0aBrp4"
+          },
+          {
+            "video_id": "yLxvwa45vR8",
+            "title": "Custom Software Development Pitfalls: Scope Creep, AI Dependence, and Uncapped API Costs",
+            "author": "Bryan Taylor",
+            "thumbnail_url": "https://i.ytimg.com/vi/yLxvwa45vR8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=yLxvwa45vR8"
+          },
+          {
+            "video_id": "VzBpfD_Dcq8",
+            "title": "Ep. 17: Stopping AI Scope Creep | Augusto Podcast",
+            "author": "Augusto Digital",
+            "thumbnail_url": "https://i.ytimg.com/vi/VzBpfD_Dcq8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=VzBpfD_Dcq8"
+          },
+          {
+            "video_id": "KdD-2pmdFZI",
+            "title": "The AI Scope-Creep Shield: How to Turn 'One More Request' into a Premium Change-Order That Pays Y...",
+            "author": "Nomad Life Success",
+            "thumbnail_url": "https://i.ytimg.com/vi/KdD-2pmdFZI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=KdD-2pmdFZI"
+          },
+          {
+            "video_id": "IWNNb6VOVz8",
+            "title": "The Exact Script to Close AI Agency Clients on a Discovery Call",
+            "author": "Michael Reimer | HighLevel & AI Systems",
+            "thumbnail_url": "https://i.ytimg.com/vi/IWNNb6VOVz8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=IWNNb6VOVz8"
+          },
+          {
+            "video_id": "wOkT9r5iVME",
+            "title": "Stop AI Agent Scope Creep: Frozen Requirements and a Done When List",
+            "author": "neomanex",
+            "thumbnail_url": "https://i.ytimg.com/vi/wOkT9r5iVME/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=wOkT9r5iVME"
+          },
+          {
+            "video_id": "UgtrG88EDhU",
+            "title": "How to Handle Scope Creep in Client Projects",
+            "author": "WPTuts",
+            "thumbnail_url": "https://i.ytimg.com/vi/UgtrG88EDhU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=UgtrG88EDhU"
+          },
+          {
+            "video_id": "6l0a6If9Oyk",
+            "title": "Uncapped Indemnity & Scope Creep: The Contract Traps Every Freelancer Faces",
+            "author": "ProtaSystem",
+            "thumbnail_url": "https://i.ytimg.com/vi/6l0a6If9Oyk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=6l0a6If9Oyk"
+          },
+          {
+            "video_id": "d9zqCrUn7mY",
+            "title": "The Client Handoff System That Stops Scope Creep and Dropped Balls",
+            "author": "Scott Bartnick",
+            "thumbnail_url": "https://i.ytimg.com/vi/d9zqCrUn7mY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=d9zqCrUn7mY"
+          },
+          {
+            "video_id": "3XIdI6vcGz0",
+            "title": "The Scope Creep Mistake That Can Wreck AI Projects",
+            "author": "AI Automation Society",
+            "thumbnail_url": "https://i.ytimg.com/vi/3XIdI6vcGz0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=3XIdI6vcGz0"
+          },
+          {
+            "video_id": "NT0JXm1lCyE",
+            "title": "How Cold Email Landed $60k Home Service Deals | The Workbench",
+            "author": "The Workbench",
+            "thumbnail_url": "https://i.ytimg.com/vi/NT0JXm1lCyE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=NT0JXm1lCyE"
+          },
+          {
+            "video_id": "A_LppzjgUi0",
+            "title": "This AI Prospecting Update Just Made Cold Outreach Obsolete (500 Leads in Minutes)",
+            "author": "Tom Gaddis | Smart AI Operators",
+            "thumbnail_url": "https://i.ytimg.com/vi/A_LppzjgUi0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=A_LppzjgUi0"
+          },
+          {
+            "video_id": "MlJ3XSy3k7A",
+            "title": "How To Book Sales Calls For Your Agency With AI Cold Email Outreach",
+            "author": "Johnny",
+            "thumbnail_url": "https://i.ytimg.com/vi/MlJ3XSy3k7A/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=MlJ3XSy3k7A"
+          },
+          {
+            "video_id": "GCChOuvd7Sg",
+            "title": "Cold Calling AI Agency Script That Gets 7 Meetings/day",
+            "author": "Pavlo",
+            "thumbnail_url": "https://i.ytimg.com/vi/GCChOuvd7Sg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=GCChOuvd7Sg"
+          },
+          {
+            "video_id": "0QI9KoizfH8",
+            "title": "Building a profitable AI agency cold email campaign in 40min",
+            "author": "Nick Saraev Daily",
+            "thumbnail_url": "https://i.ytimg.com/vi/0QI9KoizfH8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=0QI9KoizfH8"
+          },
+          {
+            "video_id": "L1LsEN_iuIc",
+            "title": "How To Sign AI Agency Clients Using Outreach in 2026",
+            "author": "Carson Reed",
+            "thumbnail_url": "https://i.ytimg.com/vi/L1LsEN_iuIc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=L1LsEN_iuIc"
+          },
+          {
+            "video_id": "kDt9J3oinVs",
+            "title": "How I Send 3,000+ Cold Emails Every Day Using Instantly AI (Full Setup)",
+            "author": "Jordan Platten",
+            "thumbnail_url": "https://i.ytimg.com/vi/kDt9J3oinVs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=kDt9J3oinVs"
+          },
+          {
+            "video_id": "oAWe5wFwHlo",
+            "title": "I Deep-Personalized 1000+ Cold Emails Using THIS AI System (FREE TEMPLATE)",
+            "author": "Nick Saraev",
+            "thumbnail_url": "https://i.ytimg.com/vi/oAWe5wFwHlo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=oAWe5wFwHlo"
+          },
+          {
+            "video_id": "XB2xmX3USUI",
+            "title": "How a College Student Made $500k with Cold Email (Exact Framework)",
+            "author": "Nate Herk | AI Automation",
+            "thumbnail_url": "https://i.ytimg.com/vi/XB2xmX3USUI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=XB2xmX3USUI"
+          },
+          {
+            "video_id": "OsFhqXe8aLI",
+            "title": "I Built an AI Sales Agent that Sends 1,000+ Personalized Emails (Full Tutorial)",
+            "author": "Jackson Rose | AI",
+            "thumbnail_url": "https://i.ytimg.com/vi/OsFhqXe8aLI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=OsFhqXe8aLI"
+          },
+          {
+            "video_id": "NjvNF17_97w",
+            "title": "How I Landed 3 AI Automation Clients in 7 Days | Simple Outreach System That Works",
+            "author": "Lily Latzo | AI Automation",
+            "thumbnail_url": "https://i.ytimg.com/vi/NjvNF17_97w/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=NjvNF17_97w"
+          },
+          {
+            "video_id": "RQg5jgraVg8",
+            "title": "I Tried Using Claude Code To Send 250,000 Cold Emails in 7 Days",
+            "author": "Aaron Shepherd | GrowthFlare",
+            "thumbnail_url": "https://i.ytimg.com/vi/RQg5jgraVg8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=RQg5jgraVg8"
+          },
+          {
+            "video_id": "nGTJIZki9Ck",
+            "title": "I Asked OpenClaw to Do Cold Email Outreach For 24 Hours",
+            "author": "Shabbir Noor AI",
+            "thumbnail_url": "https://i.ytimg.com/vi/nGTJIZki9Ck/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=nGTJIZki9Ck"
+          },
+          {
+            "video_id": "xQf-khf_CWE",
+            "title": "Cold Email is Dead — I Built an AI Outreach System That Does Everything for You (Lead to Meeting)",
+            "author": "NoCode with Sam Oluwagbami",
+            "thumbnail_url": "https://i.ytimg.com/vi/xQf-khf_CWE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=xQf-khf_CWE"
+          },
+          {
+            "video_id": "qy4FW_qglNo",
+            "title": "LinkedIn Ads Strategy for B2B: The Exact Campaigns That Took Us from 0 to 200 Customers",
+            "author": "Adam Holmgren",
+            "thumbnail_url": "https://i.ytimg.com/vi/qy4FW_qglNo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=qy4FW_qglNo"
+          },
+          {
+            "video_id": "MXBaHCO4WI8",
+            "title": "The Best LinkedIn Lead Generation Strategy for 2026",
+            "author": "Tommy Clark",
+            "thumbnail_url": "https://i.ytimg.com/vi/MXBaHCO4WI8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=MXBaHCO4WI8"
+          },
+          {
+            "video_id": "R32IyS7IErQ",
+            "title": "How To Land Clients With LinkedIn (3 Exclusive Tactics)",
+            "author": "Lead Gen Jay",
+            "thumbnail_url": "https://i.ytimg.com/vi/R32IyS7IErQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=R32IyS7IErQ"
+          },
+          {
+            "video_id": "8yepbhYel-Q",
+            "title": "B2B LinkedIn Content Marketing - How To Get B2B Clients From LinkedIn",
+            "author": "Chris Prouty",
+            "thumbnail_url": "https://i.ytimg.com/vi/8yepbhYel-Q/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=8yepbhYel-Q"
+          },
+          {
+            "video_id": "Kjfkoa15cNU",
+            "title": "How I Do LinkedIn Outreach in 2026",
+            "author": "Alex Berman",
+            "thumbnail_url": "https://i.ytimg.com/vi/Kjfkoa15cNU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Kjfkoa15cNU"
+          },
+          {
+            "video_id": "uPo9D-wZv6s",
+            "title": "The Latest LinkedIn Lead Generation Strategies That Generated $2M+ (No Cold InMails)",
+            "author": "HubSpot Marketing",
+            "thumbnail_url": "https://i.ytimg.com/vi/uPo9D-wZv6s/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=uPo9D-wZv6s"
+          },
+          {
+            "video_id": "h66nRoG6w0E",
+            "title": "The Only LinkedIn Outreach Strategy You Need in 2026",
+            "author": "Cleverly | #1 B2B Lead Generation Agency",
+            "thumbnail_url": "https://i.ytimg.com/vi/h66nRoG6w0E/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=h66nRoG6w0E"
+          },
+          {
+            "video_id": "Lw2iBa2oM44",
+            "title": "How I Sell B2B Services on LinkedIn (Step-by-Step)",
+            "author": "Ben Greening-James",
+            "thumbnail_url": "https://i.ytimg.com/vi/Lw2iBa2oM44/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Lw2iBa2oM44"
+          },
+          {
+            "video_id": "lzh20RhrVW4",
+            "title": "How To Get Clients On LinkedIn (Full Lead Generation Masterclass)",
+            "author": "Patrick Dang",
+            "thumbnail_url": "https://i.ytimg.com/vi/lzh20RhrVW4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=lzh20RhrVW4"
+          },
+          {
+            "video_id": "IqCv6BL9r6o",
+            "title": "The Best LinkedIn Outreach Strategy for 2026",
+            "author": "Expandi",
+            "thumbnail_url": "https://i.ytimg.com/vi/IqCv6BL9r6o/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=IqCv6BL9r6o"
+          },
+          {
+            "video_id": "3_RnVI6UFkA",
+            "title": "The Best LinkedIn Lead Generation Strategy for 2026",
+            "author": "Sales Feed",
+            "thumbnail_url": "https://i.ytimg.com/vi/3_RnVI6UFkA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=3_RnVI6UFkA"
+          },
+          {
+            "video_id": "4RYnbUHayhM",
+            "title": "How to Get B2B Clients on LinkedIn in 2026 (Intent-Based Outreach System)",
+            "author": "Jack",
+            "thumbnail_url": "https://i.ytimg.com/vi/4RYnbUHayhM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=4RYnbUHayhM"
+          },
+          {
+            "video_id": "TcAbiyEqBFM",
+            "title": "23-[5.16] SOC2 – Data Retention Policy",
+            "author": "SecureCyberGates",
+            "thumbnail_url": "https://i.ytimg.com/vi/TcAbiyEqBFM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=TcAbiyEqBFM"
+          },
+          {
+            "video_id": "lBhO8Q-MxYI",
+            "title": "OpenAI's New Privacy Policy: What Every Business Owner Needs to Know",
+            "author": "Micah Johnson",
+            "thumbnail_url": "https://i.ytimg.com/vi/lBhO8Q-MxYI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=lBhO8Q-MxYI"
+          },
+          {
+            "video_id": "ZE-vxHSGB7w",
+            "title": "Securing SMB GenAI Pipelines Guardrails, Data Privacy & ISO SOC2 Compliance on AWS",
+            "author": "Cloud in",
+            "thumbnail_url": "https://i.ytimg.com/vi/ZE-vxHSGB7w/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ZE-vxHSGB7w"
+          },
+          {
+            "video_id": "e8kcLoVVX_A",
+            "title": "Zero Data Retention Is Not Enough for AI Security (3 Controls Explained) #ai #aisecurity",
+            "author": "Protecto",
+            "thumbnail_url": "https://i.ytimg.com/vi/e8kcLoVVX_A/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=e8kcLoVVX_A"
+          },
+          {
+            "video_id": "j2Bqq0VTv0o",
+            "title": "OpenAI Privacy Filter: Redact PII Locally (AI Workflow Explained)",
+            "author": "Cognitive Capital",
+            "thumbnail_url": "https://i.ytimg.com/vi/j2Bqq0VTv0o/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=j2Bqq0VTv0o"
+          },
+          {
+            "video_id": "3wH9U_IzNn8",
+            "title": "Italian DPA fines OpenAI €15M, CPPA settles with data brokers, and Google allows fingerprinting.",
+            "author": "Privado AI",
+            "thumbnail_url": "https://i.ytimg.com/vi/3wH9U_IzNn8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=3wH9U_IzNn8"
+          },
+          {
+            "video_id": "u-qrX9uP_t4",
+            "title": "OpenAI's Secret Data Training: What You Need To Know",
+            "author": "Serop | AI Automation",
+            "thumbnail_url": "https://i.ytimg.com/vi/u-qrX9uP_t4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=u-qrX9uP_t4"
+          },
+          {
+            "video_id": "DIfo9jAMZYY",
+            "title": "OpenAI's Policies Explained: EU Privacy, Security, Safety, and Your Data Rights (ChatGPT, Sora,API)",
+            "author": "Innovative Compass Consulting",
+            "thumbnail_url": "https://i.ytimg.com/vi/DIfo9jAMZYY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=DIfo9jAMZYY"
+          },
+          {
+            "video_id": "KeqxPxb_sak",
+            "title": "Stop Sending Your Private Data to OpenAI's Servers",
+            "author": "Matt Williams",
+            "thumbnail_url": "https://i.ytimg.com/vi/KeqxPxb_sak/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=KeqxPxb_sak"
+          },
+          {
+            "video_id": "A0tzwuw-nEg",
+            "title": "AI Reads OpenAI's Privacy Policy, Finds Data Trap | WNT #lawyer #openai",
+            "author": "WNT",
+            "thumbnail_url": "https://i.ytimg.com/vi/A0tzwuw-nEg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=A0tzwuw-nEg"
+          },
+          {
+            "video_id": "9wewuc4s038",
+            "title": "I Tested 5 AI Customer Support Chatbots — Ranked Worst to Best (2026)",
+            "author": "AI Tool Lab",
+            "thumbnail_url": "https://i.ytimg.com/vi/9wewuc4s038/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=9wewuc4s038"
+          },
+          {
+            "video_id": "vSmuuzicQUU",
+            "title": "Zendesk vs Intercom Comparison 2025 | Which Customer Support Platform is Best?",
+            "author": "Jake's Tech Lab",
+            "thumbnail_url": "https://i.ytimg.com/vi/vSmuuzicQUU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=vSmuuzicQUU"
+          },
+          {
+            "video_id": "b5pi4BcdrKk",
+            "title": "How to Build an AI Customer Support Business",
+            "author": "Ventra Technologies",
+            "thumbnail_url": "https://i.ytimg.com/vi/b5pi4BcdrKk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=b5pi4BcdrKk"
+          },
+          {
+            "video_id": "JKmSoDIpfdI",
+            "title": "How to Automate Your Customer Support With AI in 2026 — Full Beginner Guide",
+            "author": "AIWealthPath",
+            "thumbnail_url": "https://i.ytimg.com/vi/JKmSoDIpfdI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=JKmSoDIpfdI"
+          },
+          {
+            "video_id": "mnFYeyoS2r8",
+            "title": "AI Agents: The next generation of AI-powered bots | Zendesk",
+            "author": "Zendesk",
+            "thumbnail_url": "https://i.ytimg.com/vi/mnFYeyoS2r8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=mnFYeyoS2r8"
+          },
+          {
+            "video_id": "DcDfJRzuZNI",
+            "title": "Top 10 AI Customer Service Companies",
+            "author": "Simply Contact",
+            "thumbnail_url": "https://i.ytimg.com/vi/DcDfJRzuZNI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=DcDfJRzuZNI"
+          },
+          {
+            "video_id": "nMMWXxBsH2o",
+            "title": "How to use ZenDesk AI Agents | Supercharge Customer Service with AI in 2026",
+            "author": "Stewart Gauld",
+            "thumbnail_url": "https://i.ytimg.com/vi/nMMWXxBsH2o/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=nMMWXxBsH2o"
+          },
+          {
+            "video_id": "aNlthYD5fPY",
+            "title": "Every AI Customer Service Tool Explained",
+            "author": "Toolstack",
+            "thumbnail_url": "https://i.ytimg.com/vi/aNlthYD5fPY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=aNlthYD5fPY"
+          },
+          {
+            "video_id": "swIGkbLXEdM",
+            "title": "How Much Should a Small Business Budget for AI Customer Support in 2026?",
+            "author": "Rocket Research",
+            "thumbnail_url": "https://i.ytimg.com/vi/swIGkbLXEdM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=swIGkbLXEdM"
+          },
+          {
+            "video_id": "T6Ij8zqR4Bo",
+            "title": "3 AI Customer Support Tools for US Small Businesses in 2026 — Intercom vs Zendesk vs Tidio",
+            "author": "AI Tools for Business",
+            "thumbnail_url": "https://i.ytimg.com/vi/T6Ij8zqR4Bo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=T6Ij8zqR4Bo"
+          },
+          {
+            "video_id": "db2s9r04icM",
+            "title": "Intercom vs Zendesk: Pricing, features, AI, and which is better in 2026",
+            "author": "SparrowDesk",
+            "thumbnail_url": "https://i.ytimg.com/vi/db2s9r04icM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=db2s9r04icM"
+          },
+          {
+            "video_id": "vxbipxTJGgw",
+            "title": "What are AI Agents for customer service? Zendesk AI explained",
+            "author": "Zendesk",
+            "thumbnail_url": "https://i.ytimg.com/vi/vxbipxTJGgw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=vxbipxTJGgw"
+          },
+          {
+            "video_id": "G1O3xtJW6hY",
+            "title": "How To Set Up Zendesk AI Chatbot (Tutorial 2026)",
+            "author": "Just Kristers",
+            "thumbnail_url": "https://i.ytimg.com/vi/G1O3xtJW6hY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=G1O3xtJW6hY"
+          },
+          {
+            "video_id": "GYTt2lhl7Ms",
+            "title": "5 Best AI Customer Support Platforms (2026) - Top 5 Ranked",
+            "author": "Daniel Davidson",
+            "thumbnail_url": "https://i.ytimg.com/vi/GYTt2lhl7Ms/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=GYTt2lhl7Ms"
+          },
+          {
+            "video_id": "fk7OXnsQu-o",
+            "title": "Auto-Enrich 1,000+ CRM Contacts Using Claude Code + MoltSets",
+            "author": "AIMS Consulting Services",
+            "thumbnail_url": "https://i.ytimg.com/vi/fk7OXnsQu-o/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=fk7OXnsQu-o"
+          },
+          {
+            "video_id": "jV1Kp0j9lp0",
+            "title": "Revolutionize Your Sales: Automated AI Prospecting with HubSpot & Clay",
+            "author": "RevPartners - RevOps + GTM Engineering on HubSpot",
+            "thumbnail_url": "https://i.ytimg.com/vi/jV1Kp0j9lp0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=jV1Kp0j9lp0"
+          },
+          {
+            "video_id": "DHX8uoA53OI",
+            "title": "Fix Your CRM Data With Clay.Com (Job Changes Problem)",
+            "author": "Michael Saruggia - GTM Engineering",
+            "thumbnail_url": "https://i.ytimg.com/vi/DHX8uoA53OI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=DHX8uoA53OI"
+          },
+          {
+            "video_id": "LxiIsByGTbU",
+            "title": "The CRM Data Problem & How We Solve It with Clay",
+            "author": "Jacob Tuwiner | AI Sales Automation",
+            "thumbnail_url": "https://i.ytimg.com/vi/LxiIsByGTbU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=LxiIsByGTbU"
           }
         ],
         "research_reference_only": true,
@@ -7212,7 +8458,7 @@
         "asset_id": "verbatim_transcript_quotes",
         "asset": "data/transcripts/*.json -> segments[].text",
         "asset_type": "verbatim_transcript_passage",
-        "source": "Spoken content of 636 third-party videos (5991 captured tips)",
+        "source": "Spoken content of 814 third-party videos (7719 captured tips)",
         "research_reference_only": true,
         "commercial_republish_allowed": false,
         "commercial_use_allowed": false,
@@ -7228,38 +8474,38 @@
     ]
   },
   "corpus_metrics": {
-    "video_count": 636,
-    "channel_count": 380,
-    "total_words": 1006406,
-    "total_hours": 198.23,
-    "total_pro_tips": 5991,
-    "unique_statutes_and_forms": 424,
-    "unique_tools_and_portals": 2025
+    "video_count": 814,
+    "channel_count": 531,
+    "total_words": 1323120,
+    "total_hours": 254.79,
+    "total_pro_tips": 7719,
+    "unique_statutes_and_forms": 502,
+    "unique_tools_and_portals": 2693
   },
   "coverage": {
-    "videos_classified": 636,
-    "videos_with_multiple_topics": 636,
-    "tips_classified": 5991,
-    "raw_transcripts_joined": 636,
+    "videos_classified": 814,
+    "videos_with_multiple_topics": 814,
+    "tips_classified": 7719,
+    "raw_transcripts_joined": 814,
     "topic_video_counts": {
-      "business_model_and_economics": 468,
-      "probate_and_docket_sourcing": 463,
-      "unclaimed_property_and_escheat": 204,
-      "genealogy_and_heirship_proof": 532,
-      "skip_tracing_and_outreach": 296,
-      "contracts_and_compensation": 491,
-      "statutory_caps_and_licensing": 507,
-      "automation_and_small_team_ops": 529
+      "business_model_and_economics": 624,
+      "probate_and_docket_sourcing": 528,
+      "unclaimed_property_and_escheat": 241,
+      "genealogy_and_heirship_proof": 675,
+      "skip_tracing_and_outreach": 403,
+      "contracts_and_compensation": 637,
+      "statutory_caps_and_licensing": 587,
+      "automation_and_small_team_ops": 697
     },
     "topic_tip_counts": {
-      "business_model_and_economics": 1069,
-      "probate_and_docket_sourcing": 776,
-      "unclaimed_property_and_escheat": 582,
-      "genealogy_and_heirship_proof": 755,
-      "skip_tracing_and_outreach": 124,
-      "contracts_and_compensation": 705,
-      "statutory_caps_and_licensing": 404,
-      "automation_and_small_team_ops": 1576
+      "business_model_and_economics": 1447,
+      "probate_and_docket_sourcing": 818,
+      "unclaimed_property_and_escheat": 587,
+      "genealogy_and_heirship_proof": 787,
+      "skip_tracing_and_outreach": 257,
+      "contracts_and_compensation": 822,
+      "statutory_caps_and_licensing": 496,
+      "automation_and_small_team_ops": 2505
     }
   },
   "schema_version": "1.0",

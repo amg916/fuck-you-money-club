@@ -1,0 +1,766 @@
+from __future__ import annotations
+
+CHAPTER_8 = {
+    "id": "Q8",
+    "chapter_id": "Q8",
+    "chapter_number": 8,
+    "question_number": 8,
+    "slug": "public-records-apis-data-pipelines-operator-tooling",
+    "question_prompt": "Which exact public registries, government databases, commercial APIs, enrichment waterfalls, and diagnostic tools give a small productized ai agencies desk an unfair information edge?",
+    "kicker": "Q8 / THE BIG MONEY PLAYBOOKS",
+    "title": "Public Records, APIs, Data Pipelines & Operator Tooling",
+    "subtitle": "USPTO TSDR, SEC EDGAR, Microsoft Graph, Evidence Waterfalls, Tenant-Isolated Pipelines, and Measured Implementation Economics",
+    "layout_template": "resource_directory",
+    "reading_time_minutes": 14,
+    "executive_summary": (
+        "Candidate #29, Productized AI Agencies, holds Rank #06 with an 86/100 "
+        "Money-to-Manpower Score across a portfolio of 23 mapped plays. The information "
+        "edge comes from verified events, authorized integrations, and reproducible "
+        "delivery economics rather than indiscriminate scraping. This chapter turns "
+        "USPTO records, federal spending feeds, corporate registries, commercial "
+        "enrichment, and diagnostic telemetry into fixed-scope implementation sprints "
+        "and managed support retainers. It examines trademark office-action referrals "
+        "and multi-inbox infrastructure, separating useful engineering from misleading "
+        "mailers and unsupported delivery promises. Canonical annual owner net profits "
+        "are $20,000 Conservative, $165,000 Base, and $400,000 Scaled. Those profits "
+        "derive from agency fees, never client sales attributed to automation. An "
+        "eighteen-source directory and explicit operating checks make delivery auditable."
+    ),
+    "key_metrics": [
+        {
+            "label": "Conservative",
+            "value": "$100,000",
+            "context": "Annual implementation fees and support retainers; excludes attributed client revenue",
+            "note": "20% net margin; $20,000 annual owner net profit; 2 FT + 3 C",
+        },
+        {
+            "label": "Base",
+            "value": "$550,000",
+            "context": "Annual implementation fees and support retainers; excludes attributed client revenue",
+            "note": "30.0% net margin; $165,000 annual owner net profit; 2 FT + 3 C",
+        },
+        {
+            "label": "Scaled",
+            "value": "$1,000,000",
+            "context": "Annual implementation fees and support retainers; excludes attributed client revenue",
+            "note": "40% net margin; $400,000 annual owner net profit; 3 FT + 4 C",
+        },
+    ],
+    "sections": [
+        {
+            "heading": "1. Build an evidence directory before buying enrichment",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Start with a source contract, not a scraper. For every registry, record "
+                    "the business question, stable identifier, permitted purpose, retrieval "
+                    "method, publication timestamp, retention period, and fallback. A "
+                    "productized agency needs evidence that a workflow exists and that a "
+                    "buyer can authorize access; it does not need an indiscriminate "
+                    "database of personal details. SEC filings can expose acquisition "
+                    "integration work, USAspending can identify contract-heavy operating "
+                    "models, and Census aggregates can size a service niche without "
+                    "identifying individual households. None proves that a company wants "
+                    "an AI implementation. Convert each signal into a testable discovery "
+                    "question and retain the exact supporting document. Use CIK for SEC "
+                    "entities, award identifiers for spending records, trademark serial "
+                    "numbers for USPTO events, and jurisdiction plus filing number for "
+                    "state entities. Company names are display fields, not primary keys. "
+                    "A Delaware registration and a California operating address can "
+                    "describe one business; collapsing them incorrectly creates duplicate "
+                    "outreach and inaccurate research. Store source-specific identities "
+                    "separately, then create a reviewed relationship between them. Make "
+                    "that relationship reversible so corrected evidence does not require "
+                    "rebuilding every downstream client workflow or silently rewriting "
+                    "the original audit trail."
+                ),
+                (
+                    "The directory below is a procurement and integration map, not a "
+                    "claim of live account entitlements. Prices, quotas, and service "
+                    "eligibility change; capture the current published terms and account "
+                    "limits before estimating a sprint. Free public access does not mean "
+                    "unlimited automated retrieval, and a commercial subscription does "
+                    "not automatically permit redistribution. Treat source refresh and "
+                    "your polling interval as separate measurements. A nightly pipeline "
+                    "cannot make a quarterly business dataset current, while a rapidly "
+                    "updated API still requires a completeness watermark. Persist "
+                    "published_at, observed_at, and fetched_at, recording absent timestamps "
+                    "as explicit machine states rather than invented dates. Use conditional "
+                    "requests when supported, exponential backoff with jitter, and a "
+                    "single quota controller for all jobs sharing credentials. SEC "
+                    "automation should identify the requester and stay below its "
+                    "published ten-requests-per-second ceiling across the organization, "
+                    "with additional headroom for retries. For services without a "
+                    "universal public quota, obey account headers and documented limits "
+                    "instead of guessing. Prefer official bulk files for historical "
+                    "backfills and narrow API requests for recent changes. When a "
+                    "source fails, expose stale evidence visibly; silently substituting "
+                    "a similarly named company is a worse failure than delaying delivery."
+                ),
+                (
+                    "Sell the resulting research layer as a bounded implementation "
+                    "artifact: one agreed population, a documented source manifest, "
+                    "a repeatable import, and a reviewed exception queue. An illustrative "
+                    "pilot might ingest 1,000 business entities, resolve 850 automatically, "
+                    "send 100 ambiguous matches to review, and exclude 50 records with "
+                    "insufficient evidence. Those are planning assumptions, not measured "
+                    "vendor accuracy. If review averages three minutes per ambiguous "
+                    "record, the queue consumes five hours; price those hours before "
+                    "calling the pipeline automated. Public availability does not remove "
+                    "privacy obligations or source restrictions. FOIA, 5 U.S.C. § 552, "
+                    "provides an agency-record access framework with exemptions; it is "
+                    "not permission to obtain every personal field or bypass an API "
+                    "restriction. Where applicable, California Civil Code § 1798.100 "
+                    "requires purpose and retention discipline, while service-provider "
+                    "relationships need appropriate contractual restrictions under "
+                    "§ 1798.140. Minimize contact details, document deletion propagation, "
+                    "and avoid collecting sensitive attributes merely because a "
+                    "document contains them. The agency's deliverable is an evidence-backed "
+                    "workflow that a named client owner can operate, inspect, and stop, "
+                    "not a speculative list whose provenance disappears after export."
+                ),
+            ],
+            "table": {
+                "caption": "Eighteen Named Sources: Access, Cost Structure, Latency, Quota Hygiene, and Fallback",
+                "headers": [
+                    "Named source and operator purpose",
+                    "Exact access method and identifier",
+                    "Cost tier and procurement boundary",
+                    "Refresh latency and freshness measurement",
+                    "Rate-limit and credential operating rule",
+                    "Fallback source and delivery behavior",
+                ],
+                "rows": [
+                    [
+                        "USPTO TSDR verifies trademark status and prosecution documents.",
+                        "Use tsdr.uspto.gov by serial number; request documented API access.",
+                        "Public browser lookup is free; confirm API access requirements.",
+                        "Source processing can lag events; compare document and observation dates.",
+                        "Follow current USPTO key requirements, quotas, and retry instructions.",
+                        "Use official TSDR browser documents for targeted manual verification.",
+                    ],
+                    [
+                        "USPTO trademark bulk products support reproducible daily event discovery.",
+                        "Locate Trademark Daily XML through uspto.gov bulk-data product listings.",
+                        "Public bulk downloads avoid per-record enrichment subscription charges.",
+                        "Daily publication cadence still requires checking actual file timestamps.",
+                        "Download each archive once; retain checksums and local indexes.",
+                        "Backfill missing archives, then verify selected records in TSDR.",
+                    ],
+                    [
+                        "SEC EDGAR reveals issuer operations and disclosed integration events.",
+                        "Use data.sec.gov/submissions/CIK##########.json with zero-padded issuer identifiers.",
+                        "Public submissions access is free under SEC access policies.",
+                        "Recent submissions update throughout processing; bulk archives follow published schedules.",
+                        "Identify requester; keep aggregate traffic below ten requests per second.",
+                        "Retrieve official filing pages and previously checksummed bulk archives.",
+                    ],
+                    [
+                        "SAM.gov Contract Opportunities identifies federal solicitation workflow requirements.",
+                        "Query api.sam.gov/opportunities/v2/search with an authorized API key.",
+                        "Public opportunity access is free; account quotas govern retrieval.",
+                        "Publication and amendment timing vary; retain modification timestamps separately.",
+                        "Use date windows, pagination, account limits, and shared backoff.",
+                        "Inspect the official SAM.gov notice and attached solicitation documents.",
+                    ],
+                    [
+                        "USAspending exposes federal award recipients and transaction histories.",
+                        "POST filters to api.usaspending.gov/api/v2/search/spending_by_award/ for award searches.",
+                        "Public API access is free; budget local storage separately.",
+                        "Agency reporting and corrections create lag; inspect dataset update notices.",
+                        "Paginate narrowly, cache results, and honor throttling response instructions.",
+                        "Use official award downloads and agency procurement record pages.",
+                    ],
+                    [
+                        "Census County Business Patterns sizes industry-specific regional operating populations.",
+                        "Query api.census.gov/data/{year}/cbp using documented geography and industry variables.",
+                        "Public data access is free; obtain a key when appropriate.",
+                        "Annual releases describe reference years rather than current prospect activity.",
+                        "Batch variables, cache geography results, and obey current API limits.",
+                        "Use official Census downloadable tables for the matching reference year.",
+                    ],
+                    [
+                        "California bizfile verifies entity filings and registered business identities.",
+                        "Search bizfileonline.sos.ca.gov by entity name or filing number.",
+                        "Basic search is public; document products can carry fees.",
+                        "Filing processing determines visibility; record the retrieved filing date.",
+                        "Use supported interfaces; do not bypass interactive access controls.",
+                        "Request official filing copies or client-provided certified entity records.",
+                    ],
+                    [
+                        "Delaware entity search checks jurisdiction-specific corporate identity evidence.",
+                        "Use the official search linked through corp.delaware.gov online services.",
+                        "Basic search is free; detailed status products may cost.",
+                        "Search visibility follows filing processing, not operational business changes.",
+                        "Respect interactive usage restrictions and purchase supported document products.",
+                        "Obtain official status documents or client-held incorporation evidence instead.",
+                    ],
+                    [
+                        "Federal Register identifies regulatory changes affecting client workflow design.",
+                        "Query federalregister.gov/api/v1/documents.json with documented agency and date filters.",
+                        "Public API access is free; independently budget document analysis.",
+                        "Publication generally follows business-day editions; verify effective dates separately.",
+                        "Cache editions, narrow queries, and respect service throttling responses.",
+                        "Confirm controlling text in the official GovInfo issue PDF.",
+                    ],
+                    [
+                        "Regulations.gov provides docket documents and public rulemaking context.",
+                        "Query api.regulations.gov/v4/documents using an authorized API key.",
+                        "Public API access is free subject to account limits.",
+                        "Posting and moderation introduce delays; retain posted and retrieved dates.",
+                        "Honor key-specific quotas and avoid repeatedly downloading unchanged attachments.",
+                        "Use official docket pages and issuing-agency rulemaking document libraries.",
+                    ],
+                    [
+                        "Microsoft Graph connects authorized Microsoft 365 workflow and message data.",
+                        "Use graph.microsoft.com/v1.0 with registered applications and scoped OAuth grants.",
+                        "Tenant licensing applies; some API services have additional charges.",
+                        "Webhooks and delta queries reduce polling; measure actual delivery delay.",
+                        "Honor Retry-After responses and restrict application access to authorized resources.",
+                        "Use client-approved exports and scoped manual task queues during outages.",
+                    ],
+                    [
+                        "Cloudflare Email Routing receives domain aliases for supported forwarding workflows.",
+                        "Configure Email Routing through Cloudflare dashboard or documented account API.",
+                        "Core routing has a free tier; other services bill separately.",
+                        "Forwarding follows message arrival; downstream filtering can delay delivery.",
+                        "Respect account limits; routing does not supply outbound mailbox seats.",
+                        "Use a licensed mailbox provider with documented domain forwarding support.",
+                    ],
+                    [
+                        "Amazon SES provides metered outbound delivery for permitted client messaging.",
+                        "Use regional SES v2 SendEmail APIs with scoped IAM credentials.",
+                        "Usage-based message pricing adds optional feature and transfer charges.",
+                        "Delivery events arrive asynchronously; measure acceptance separately from recipient delivery.",
+                        "Respect regional sending quotas, sandbox restrictions, and provider messaging policies.",
+                        "Queue approved messages until capacity returns; preserve suppression records.",
+                    ],
+                    [
+                        "Hunter supplies commercial company-domain discovery and address verification services.",
+                        "Call api.hunter.io/v2/domain-search or email-verifier using account API credentials.",
+                        "Limited free credits and paid plans require current allowance checks.",
+                        "Historical discovery and verification timestamps differ; refresh before permitted use.",
+                        "Deduplicate domains, cache permitted results, and honor credit and rate limits.",
+                        "Use the company's published contact channel without inventing personal addresses.",
+                    ],
+                    [
+                        "ZeroBounce evaluates email deliverability signals without proving recipient permission.",
+                        "Call api.zerobounce.net/v2/validate with an authorized account API key.",
+                        "Credit-based verification pricing requires current volume and minimum-purchase checks.",
+                        "Results reflect verification time; catch-all behavior remains inherently uncertain.",
+                        "Submit only permitted records and follow account concurrency limits.",
+                        "Exclude ambiguous addresses or request direct confirmation through existing relationships.",
+                    ],
+                    [
+                        "Google Postmaster Tools diagnoses eligible authenticated domain delivery trends.",
+                        "Use postmaster.google.com after completing the required domain ownership verification.",
+                        "Dashboard access is free for verified eligible sending domains.",
+                        "Aggregated reporting is delayed and can omit low-volume domains.",
+                        "Review available aggregates; never interpret missing reports as clean reputation.",
+                        "Use provider delivery events, complaint feedback, and recipient-reported evidence.",
+                    ],
+                    [
+                        "OpenTelemetry correlates pipeline requests, failures, latency, and resource consumption.",
+                        "Deploy an OpenTelemetry Collector with OTLP exporters inside authorized infrastructure.",
+                        "Open-source components are free; storage and hosted backends incur costs.",
+                        "Configured export intervals determine visibility; queue pressure adds observable delay.",
+                        "Bound queues, sample traces, and redact secrets before exporting telemetry.",
+                        "Retain redacted local structured logs during collector or backend outages.",
+                    ],
+                    [
+                        "OWASP ZAP tests authorized web integrations for observable security defects.",
+                        "Run local ZAP against client-approved staging URLs and explicit scope.",
+                        "Open-source tooling is free; budget analyst review and remediation.",
+                        "Findings reflect each scan; application changes require targeted repeat testing.",
+                        "Set safe concurrency and restrict active tests to authorized targets.",
+                        "Use passive inspection and manual authorization checks when active testing pauses.",
+                    ],
+                ],
+            },
+        },
+        {
+            "heading": "2. Turn trademark events into verified attorney-directory workflows",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "The mapped play patent_trademark_office_action_arbitrage belongs to "
+                    "TRACK_1, but its useful implementation is a transparent event-to-referral "
+                    "workflow, not an official-looking payment demand. Poll USPTO "
+                    "Trademark Daily XML for candidate changes, then verify each candidate "
+                    "against TSDR documents and current representation information. A "
+                    "Non-Final Office Action can contain substantive refusals, procedural "
+                    "requirements, or both; classify the actual document rather than "
+                    "treating every status change as a rejected business. Determine "
+                    "whether counsel is currently listed, while recognizing that public "
+                    "records can lag a recent appointment. Preserve serial number, "
+                    "document identifier, issue date, observation date, and the evidence "
+                    "supporting apparent self-representation. Trademark abandonment is "
+                    "a separate event class requiring separate verification; never infer "
+                    "it merely because an estimated response window elapsed. For "
+                    "applications subject to the ordinary rule in 37 CFR § 2.62, "
+                    "nonfinal responses generally have a three-month period with an "
+                    "available paid three-month extension; certain application categories "
+                    "follow different timing. The implementing software should surface "
+                    "the notice and its applicable rule for attorney review, not "
+                    "calculate a universal deadline and print it as authoritative. "
+                    "An attorney-approved classification is the release condition for "
+                    "any individualized statement about prosecution status."
+                ),
+                (
+                    "Keep the agency's commercial role explicit. The client can buy a "
+                    "fixed-scope event monitor, a directory subscription, or a managed "
+                    "document-routing service; the agency should not present itself as "
+                    "the USPTO or sell attorney judgment through an unlicensed operator. "
+                    "A private referral mailer should identify its actual sender, explain "
+                    "why the record was selected, distinguish optional private services "
+                    "from government fees, and direct recipients to verify their status "
+                    "through official USPTO channels. Avoid government seals, simulated "
+                    "invoices, compulsory-payment language, and unsupported claims about "
+                    "registration outcomes. Before launching attorney referrals, have "
+                    "participating counsel assess applicable advertising, solicitation, "
+                    "referral-payment, and fee-sharing rules in their jurisdictions. "
+                    "Use objective directory criteria and disclose paid placement. "
+                    "Foreign-domiciled trademark applicants face representation "
+                    "requirements under 37 CFR § 2.11, which makes domicile and "
+                    "representation classification consequential rather than a casual "
+                    "segmentation field. If the referral arrangement cannot support "
+                    "those requirements, use the stated fallback: operate strictly "
+                    "as a transparent legal-marketing directory or software platform "
+                    "connecting applicants with licensed USPTO trademark attorneys. "
+                    "Limit software output to sourced facts and routing recommendations; "
+                    "a human attorney owns substantive response strategy and any "
+                    "advice delivered to the applicant."
+                ),
+                (
+                    "Price the workflow on verified work units. In an illustrative "
+                    "monthly batch, 800 source events might produce 120 apparently "
+                    "unrepresented candidates, of which document review clears 90 "
+                    "for the agreed directory program. At four minutes per candidate, "
+                    "review requires eight hours; at an assumed loaded reviewer cost "
+                    "of $45 per hour, that is $360. Ninety physical mailers at an "
+                    "assumed all-in $1.40 cost add $126, and an assumed $64 ingestion "
+                    "and storage allocation brings direct batch cost to $550. A "
+                    "$1,500 monthly support retainer therefore leaves $950 before "
+                    "other delivery labor, overhead, and taxes; it does not establish "
+                    "the agency's net margin. Treat all figures as planning inputs "
+                    "to replace with supplier quotes and actual time logs. Charge "
+                    "initial implementation separately against defined acceptance "
+                    "tests, including duplicate-event suppression and corrected-status "
+                    "handling. If TSDR is unavailable, hold the mail queue rather "
+                    "than sending from yesterday's classification. If representation "
+                    "changes, suppress unsent outreach and correct the directory "
+                    "record. Applicant engagement, attorney engagements, and client "
+                    "matter value are downstream client outcomes, never recognized "
+                    "agency revenue. That boundary prevents an attractive referral "
+                    "funnel from inflating the canonical implementation-fee business."
+                ),
+            ],
+            "table": {
+                "caption": "Trademark Event Verification and Transparent Referral Controls",
+                "headers": [
+                    "Event or commercial decision",
+                    "Required evidence and human ownership",
+                    "Unit economics and measurable acceptance",
+                    "Failure response and operating fallback",
+                ],
+                "rows": [
+                    [
+                        "Detect a new nonfinal office-action document for review.",
+                        "Retain official document identifier, issue date, and serial number.",
+                        "Count unique verified documents rather than repeated polling observations.",
+                        "Hold outreach when source documents cannot be retrieved reliably.",
+                    ],
+                    [
+                        "Classify apparent self-representation before adding directory workflow records.",
+                        "Review current attorney fields and relevant representation change documents.",
+                        "Budget four review minutes per candidate as an explicit assumption.",
+                        "Suppress pending outreach when newly appointed counsel becomes visible.",
+                    ],
+                    [
+                        "Prepare transparent private mailers with attorney-reviewed event descriptions.",
+                        "Identify the private sender and separate services from government fees.",
+                        "Ninety mailers at $1.40 create $126 assumed mailing expense.",
+                        "Replace individualized solicitation with a transparent licensed-attorney directory.",
+                    ],
+                    [
+                        "Handle abandonment as a separately verified prosecution event.",
+                        "Attorney reviews official status, documents, and any applicable remedy.",
+                        "Track corrected classifications and prevent duplicate applicant communications.",
+                        "Route uncertain cases to counsel without automated deadline claims.",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Win on evidence quality rather than applicant anxiety",
+                "body": (
+                    "The durable asset is a verified event ledger that attorneys trust "
+                    "and clients can inspect without reconstructing the pipeline."
+                ),
+                "items": [
+                    "Deduplicate on serial number plus document identifier; a status refresh must not create another paid mailer.",
+                    "Keep detected representation and reviewed representation as separate fields, each with its own observation timestamp.",
+                    "Ask counsel to approve document-classification examples, including procedural-only actions and recently corrected records.",
+                    "Contract for software and operational deliverables with clear pricing; review referral compensation structures before accepting them.",
+                ],
+            },
+        },
+        {
+            "heading": "3. Build enrichment and messaging around authorized capacity",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "The TRACK_2 play multi_inbox_free_workspace_outbound_clusters proposes "
+                    "subsidized developer or partner tenants, hundreds of secondary "
+                    "domains, and low-volume inbox sending. Treat that premise as an "
+                    "economic hypothesis requiring entitlement verification, not an "
+                    "infrastructure recipe to execute unquestioningly. Microsoft 365 "
+                    "developer subscriptions are subject to eligibility and development "
+                    "use restrictions; they are not a dependable source of free "
+                    "production cold-outreach seats. Cloudflare Email Routing forwards "
+                    "inbound messages and does not turn aliases into licensed outbound "
+                    "mailboxes. Likewise, a low-cost SMTP relay has its own acceptable-use "
+                    "rules and sending limits. The proposed arithmetic is straightforward: "
+                    "300 inboxes sending 15 messages over 22 business days yield "
+                    "99,000 messages, while 25 per day yield 165,000. Reaching 150,000 "
+                    "therefore requires roughly 23 daily messages per inbox under "
+                    "those assumptions, before suppression, failures, and pauses. "
+                    "Neither calculation predicts primary-inbox placement. At an "
+                    "illustrative paid-seat benchmark of $6–$12 monthly, 300 seats "
+                    "cost $1,800–$3,600 before domains, verification, and labor. "
+                    "Present those costs honestly in the client design. Use "
+                    "client-owned, properly licensed tenants and a provider that "
+                    "expressly supports the intended messaging; reject capacity "
+                    "built on misrepresented eligibility or bypassed service limits."
+                ),
+                (
+                    "An enrichment waterfall should reduce unnecessary disclosure and "
+                    "spending before it increases contact volume. Start with the "
+                    "client's authorized CRM and suppression records, resolve the "
+                    "business domain through a published company source, then use "
+                    "one contracted discovery provider only for missing fields. "
+                    "Send permitted addresses to a verification provider when needed, "
+                    "but do not equate a deliverability signal with permission or "
+                    "inbox placement. SMTP catch-all behavior cannot establish that "
+                    "every guessed mailbox exists. A catch-all result should remain "
+                    "ambiguous and normally be excluded from automated cold outreach, "
+                    "not labeled as fully verified. Illustratively, resolving 600 "
+                    "of 1,000 domains from reusable client records leaves 400 paid "
+                    "lookups. At an assumed $0.08 each, those lookups cost $32; "
+                    "if 320 return usable, permitted records, effective cost is "
+                    "$0.10 per usable result. Record rejected and duplicate results "
+                    "so apparent coverage cannot conceal waste. Keep person-level "
+                    "data out of model prompts unless the workflow requires it "
+                    "and the processing arrangement permits it. When a provider "
+                    "fails or its contract disallows the intended use, fall back "
+                    "to existing customer relationships, published business contact "
+                    "channels, or permission-based acquisition rather than adding "
+                    "another opaque reseller to the chain."
+                ),
+                (
+                    "Retain the useful parts of the proposed fallback while changing "
+                    "its unsafe assumptions. A maximum of two or three domains per "
+                    "tenant can simplify ownership and incident response, but it "
+                    "does not override licensing or provider rules. Removing open "
+                    "and click tracking pixels reduces unnecessary collection; it "
+                    "does not make unsolicited mail welcome. Replace the promised "
+                    "100% SMTP verification with documented verification outcomes, "
+                    "catch-all exclusion, and a shared suppression service. Maintain "
+                    "a legitimate service-continuity plan, but do not swap warmed "
+                    "domains to evade complaints, blocks, or reputation consequences. "
+                    "Pause the affected stream, inspect the cause, and obtain "
+                    "provider clearance where required before resuming. CAN-SPAM, "
+                    "15 U.S.C. § 7704, applies to commercial B2B email and requires "
+                    "accurate transmission information, nondeceptive subjects, a valid "
+                    "postal address, and a functioning opt-out mechanism, with "
+                    "opt-outs honored within ten business days. Other jurisdictions "
+                    "can impose stricter prerequisites. Authenticate authorized domains "
+                    "with SPF, DKIM, and DMARC, and implement unsubscribe headers "
+                    "when provider rules require them. Measure complaints, hard "
+                    "bounces, suppression latency, and accepted-versus-delivered events. "
+                    "Promise a configured, observable messaging workflow, never "
+                    "universal primary-inbox delivery or revenue inferred from "
+                    "messages merely accepted by an SMTP server."
+                ),
+            ],
+            "table": {
+                "caption": "Messaging Capacity, Enrichment Waterfalls, and Defensible Fallbacks",
+                "headers": [
+                    "Operating assumption requiring verification",
+                    "Concrete arithmetic or technical interpretation",
+                    "Evidence required before production use",
+                    "Fallback that preserves legitimate client operations",
+                ],
+                "rows": [
+                    [
+                        "Three hundred inboxes supposedly create inexpensive monthly sending capacity.",
+                        "300 × 15 × 22 yields 99,000 monthly attempted messages.",
+                        "Document legitimate seat entitlements and provider permission for intended messaging.",
+                        "Reduce volume or purchase supported capacity instead of multiplying restricted tenants.",
+                    ],
+                    [
+                        "The upper sending assumption exceeds 150,000 monthly attempted messages.",
+                        "300 × 25 × 22 yields 165,000 before exclusions and failures.",
+                        "Validate sending quotas, suppression behavior, authentication, and recipient acquisition records.",
+                        "Pause poor-quality streams rather than rotating domains around reputation consequences.",
+                    ],
+                    [
+                        "A paid enrichment stage handles only unresolved authorized business records.",
+                        "400 assumed lookups at $0.08 cost $32 before review labor.",
+                        "Retain provider terms, permitted purposes, timestamps, and usable-result counts.",
+                        "Use existing relationships or published business channels when enrichment fails.",
+                    ],
+                    [
+                        "Catch-all servers prevent certainty about individual mailbox existence.",
+                        "Verification signals cannot establish permission or universal inbox placement.",
+                        "Keep ambiguous results separate and share suppressions across authorized systems.",
+                        "Exclude ambiguous addresses and investigate complaints before resuming affected messaging.",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Verify entitlement, evidence, suppression, and isolation before sending",
+                "body": (
+                    "Release requires documented checks against the client's actual "
+                    "accounts and intended audience, not assumptions copied from a play."
+                ),
+                "items": [
+                    "Confirm production licensing, domain ownership, provider messaging policies, and written client authorization for every connected tenant.",
+                    "Test SPF, DKIM, DMARC, accurate sender identity, postal-address inclusion, and the applicable unsubscribe mechanism on real sample messages.",
+                    "Prove that opt-outs and hard-bounce suppressions propagate across every authorized sending workflow without being reset by domain changes.",
+                    "Exercise tenant isolation and emergency stopping; verify that a paused or revoked client cannot continue sending through queued jobs.",
+                ],
+            },
+        },
+        {
+            "heading": "4. Instrument delivery and reconcile every sprint to agency economics",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "Implement a small, inspectable data plane before adding orchestration "
+                    "complexity. PostgreSQL can hold source manifests, identity mappings, "
+                    "job states, and suppression records; encrypted object storage can "
+                    "hold permitted source documents with explicit expiration dates. "
+                    "Use separate client namespaces and scoped credentials, with tenant "
+                    "identity enforced in authorization checks rather than trusted from "
+                    "a request payload. An idempotency key should combine client, "
+                    "source, object identifier, and source version so retries cannot "
+                    "duplicate notifications or billable actions. Put external side "
+                    "effects behind an outbox whose worker rechecks current authorization "
+                    "and suppression immediately before execution. Secrets belong in "
+                    "a managed secret store, not spreadsheet cells or trace attributes. "
+                    "OpenTelemetry should expose fetch latency, parse failures, queue "
+                    "age, retry counts, model usage, and human-review minutes without "
+                    "copying customer payloads into third-party dashboards. Treat "
+                    "retrieved documents as untrusted data: instructions embedded in "
+                    "a filing or email must not change tool permissions or disclose "
+                    "other client records. Test that boundary with seeded hostile "
+                    "documents and cross-client access attempts in authorized staging. "
+                    "When extraction confidence falls below the agreed threshold, "
+                    "route work to review and retain evidence rather than allowing "
+                    "a model to manufacture missing facts."
+                ),
+                (
+                    "Reconcile economics to the scorecard before presenting automation "
+                    "savings. One illustrative Conservative fee mix is ten $6,000 "
+                    "implementations plus four $10,000 annual support packages: "
+                    "$100,000 recognized annual revenue. Its canonical 20% net margin "
+                    "means $80,000 total costs and $20,000 annual owner net profit "
+                    "with 2 FT + 3 C. Base can be illustrated by twenty-five "
+                    "$14,000 implementations plus ten $20,000 annual support packages: "
+                    "$550,000 revenue, $385,000 costs, and $165,000 owner net profit "
+                    "at 30.0%, again with 2 FT + 3 C. Scaled can use forty "
+                    "$17,500 implementations plus fifteen $20,000 annual packages: "
+                    "$1,000,000 revenue, $600,000 costs, and $400,000 owner net profit "
+                    "at 40% with 3 FT + 4 C. These are reconciled fee mixes, "
+                    "not proven sales forecasts or alternative scorecard assumptions. "
+                    "Support amounts assume a full delivered year; partial-year "
+                    "contracts require appropriate period allocation. Client GMV, "
+                    "attorney matter value, attributed sales, and customer principal "
+                    "remain outside agency revenue. The $5,000–$60,000 startup range "
+                    "and $2,500–$18,000 monthly operating range are planning context, "
+                    "not permission to omit labor or double-count costs already "
+                    "inside each annual total."
+                ),
+                (
+                    "Instrument the capacity model as carefully as the API calls. "
+                    "For the illustrative Base mix, twenty-five sprints at sixty "
+                    "delivery hours consume 1,500 hours. Ten support clients using "
+                    "eight hours monthly add 960, producing 2,460 annual delivery "
+                    "hours before sales, administration, incident response, and leave. "
+                    "Compare that demand with contracted hours and actual staffing; "
+                    "the scorecard's contractor count does not imply full-time "
+                    "availability. Establish acceptance tests for source completeness, "
+                    "identity precision, unauthorized-action prevention, deletion, "
+                    "and outage recovery, then price changes outside those boundaries. "
+                    "Measure effective review minutes per accepted record and gross "
+                    "contribution per support client rather than celebrating model "
+                    "token reductions alone. A cheap extraction that doubles review "
+                    "time can destroy the retainer. Diagnose failures with correlated "
+                    "request identifiers, controlled replay fixtures, and a dead-letter "
+                    "queue that cannot trigger external actions during inspection. "
+                    "Substantiate performance claims with dated baseline samples, "
+                    "comparable workloads, and observed results; FTC Act § 5, "
+                    "15 U.S.C. § 45, makes deceptive claims an operating risk. "
+                    "At renewal, show fees earned, hours consumed, exceptions resolved, "
+                    "and measured outcomes separately. A client should understand "
+                    "exactly what improved without mistaking a projection for evidence."
+                ),
+            ],
+            "table": {
+                "caption": "Canonical Annual Fee Reconciliation and Delivery Diagnostic Controls",
+                "headers": [
+                    "Scenario or diagnostic operating boundary",
+                    "Recognized fee basis and concrete calculation",
+                    "Cost, staffing, and measurement interpretation",
+                    "Acceptance evidence and required response",
+                ],
+                "rows": [
+                    [
+                        "Conservative preserves the canonical $100,000 annual revenue case.",
+                        "Ten $6,000 sprints plus four $10,000 annual packages equal $100,000.",
+                        "$80,000 costs leave $20,000 owner profit; 20%; 2 FT + 3 C.",
+                        "Recognize delivered services and keep client outcome values outside revenue.",
+                    ],
+                    [
+                        "Base preserves the canonical $550,000 annual revenue case.",
+                        "Twenty-five $14,000 sprints plus ten $20,000 annual packages equal $550,000.",
+                        "$385,000 costs leave $165,000 owner profit; 30.0%; 2 FT + 3 C.",
+                        "Reconcile each support contract's delivered period before booking annual totals.",
+                    ],
+                    [
+                        "Scaled preserves the canonical $1,000,000 annual revenue case.",
+                        "Forty $17,500 sprints plus fifteen $20,000 annual packages equal $1,000,000.",
+                        "$600,000 costs leave $400,000 owner profit; 40%; 3 FT + 4 C.",
+                        "Verify seven-person delivery capacity without assuming full-time contractor availability.",
+                    ],
+                    [
+                        "Base delivery capacity requires explicit hours beyond software usage.",
+                        "1,500 sprint hours plus 960 support hours equal 2,460 annually.",
+                        "Sales, administration, incidents, and leave require additional planned capacity.",
+                        "Reprice recurring exceptions when measured review time exceeds contracted scope.",
+                    ],
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Authorize and inventory the workflow",
+                    "action": "Document client-owned accounts, purposes, data classes, and named operational owners.",
+                    "detail": (
+                        "Record system-access authorization, provider entitlements, processing "
+                        "terms, IP ownership, deletion obligations, and the exact deliverables "
+                        "included in the implementation fee."
+                    ),
+                },
+                {
+                    "step": 2,
+                    "title": "Collect and verify a bounded sample",
+                    "action": "Run a source-manifest-driven import into an isolated staging namespace.",
+                    "detail": (
+                        "Check stable identifiers, timestamp semantics, representation or "
+                        "contact evidence, duplicate handling, and review minutes against "
+                        "a manually labeled sample before estimating production throughput."
+                    ),
+                },
+                {
+                    "step": 3,
+                    "title": "Exercise failure paths before external actions",
+                    "action": "Test revoked access, stale sources, hostile documents, throttling, and suppression propagation.",
+                    "detail": (
+                        "Confirm that retries are idempotent, paused jobs cannot send, "
+                        "cross-client requests are rejected, and replay tooling cannot "
+                        "accidentally publish messages or duplicate paid actions."
+                    ),
+                },
+                {
+                    "step": 4,
+                    "title": "Release, measure, and reconcile the retainer",
+                    "action": "Start within agreed quotas and review operational evidence with the client owner.",
+                    "detail": (
+                        "Report accepted work units, human-review hours, source freshness, "
+                        "exceptions, provider costs, and earned agency fees; route scope "
+                        "changes into explicit estimates instead of absorbing unlimited work."
+                    ),
+                },
+            ],
+        },
+    ],
+    "pull_quote": "The information edge is not collecting more records; it is knowing which verified record can safely trigger which paid workflow.",
+    "diagram_id": "diag-04",
+    "action_checklist": [
+        "Create a source manifest for the first client workflow with identifiers, current access terms, polling intervals, retention rules, and documented fallback sources.",
+        "Build a manually reviewed sample of USPTO events that separates nonfinal actions, representation changes, and verified abandonment before configuring attorney-directory routing.",
+        "Replace assumed free production mailboxes with documented client-owned entitlements and prove authentication, shared suppression, and emergency stopping.",
+        "Implement a deduplicated enrichment waterfall that records usable-result cost, excludes ambiguous catch-all addresses, and minimizes transfers of personal data.",
+        "Instrument tenant-isolated jobs with redacted OpenTelemetry traces, idempotent side effects, dead-letter review, and tested access revocation.",
+        "Reconcile proposed implementation and support fees to the $100,000, $550,000, and $1,000,000 revenue cases while tracking all delivery costs and excluding client outcome values.",
+    ],
+    "statutory_citations": [
+        {
+            "title": "5 U.S.C. § 552 — Public information; agency rules, opinions, orders, records, and proceedings",
+            "url": "https://www.law.cornell.edu/uscode/text/5/552",
+            "relevance": (
+                "Provides the federal agency-record access framework and exemptions; "
+                "does not authorize bypassing access restrictions or collecting every personal field."
+            ),
+        },
+        {
+            "title": "37 CFR § 2.62 — Procedure for submitting response",
+            "url": "https://www.ecfr.gov/current/title-37/chapter-I/subchapter-A/part-2/section-2.62",
+            "relevance": (
+                "Governs trademark examination response periods and extension mechanics; "
+                "document-specific timing must be verified before individualized communications."
+            ),
+        },
+        {
+            "title": "37 CFR § 2.11 — Requirement for representation",
+            "url": "https://www.ecfr.gov/current/title-37/chapter-I/subchapter-A/part-2/section-2.11",
+            "relevance": (
+                "Establishes representation requirements relevant to foreign-domiciled "
+                "trademark applicants and attorney-directory routing."
+            ),
+        },
+        {
+            "title": "37 CFR § 2.66 — Revival of abandoned applications",
+            "url": "https://www.ecfr.gov/current/title-37/chapter-I/subchapter-A/part-2/section-2.66",
+            "relevance": (
+                "Provides procedures and conditions for specified revival petitions; "
+                "abandonment events require attorney review rather than automated remedy promises."
+            ),
+        },
+        {
+            "title": "15 U.S.C. § 7704 — Other protections for users of commercial electronic mail",
+            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
+            "relevance": (
+                "Sets commercial-email requirements covering transmission information, "
+                "subject lines, identification, postal addresses, and opt-out handling."
+            ),
+        },
+        {
+            "title": "15 U.S.C. § 45 — Unfair methods of competition unlawful; prevention by Commission",
+            "url": "https://www.law.cornell.edu/uscode/text/15/45",
+            "relevance": (
+                "Supports concrete controls against deceptive government-like mailers "
+                "and unsupported automation, deliverability, or performance claims."
+            ),
+        },
+        {
+            "title": "California Civil Code § 1798.100 — Consumer information and business obligations",
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=1798.100.&lawCode=CIV",
+            "relevance": (
+                "For covered processing, informs collection notices, purpose limitations, "
+                "retention discipline, and contractual controls for personal information."
+            ),
+        },
+        {
+            "title": "California Civil Code § 1798.140 — Definitions",
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=1798.140.&lawCode=CIV",
+            "relevance": (
+                "Defines relevant business, contractor, and service-provider relationships "
+                "that shape permitted processing and contractual restrictions."
+            ),
+        },
+    ],
+}
