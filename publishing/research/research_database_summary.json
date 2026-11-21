@@ -1,6 +1,6 @@
 {
-  "abridged_video_count": 1704,
-  "raw_video_count": 1704,
+  "abridged_video_count": 1882,
+  "raw_video_count": 1882,
   "summary": {
     "type": "dict",
     "keys": [
@@ -22,11 +22,11 @@
       "coverage": 6
     },
     "values": {
-      "generated_at": "2026-11-21T21:31:35+00:00",
+      "generated_at": "2026-11-21T21:34:59+00:00",
       "schema_version": "1.0"
     }
   },
-  "generated_at": "2026-11-21T21:31:35Z",
+  "generated_at": "2026-11-21T21:34:59Z",
   "counts": {
     "topics": 8
   },
@@ -34,9 +34,9 @@
     {
       "topic_id": "business_model_and_economics",
       "title": "Business Model, Contingency Economics & Deal Scale",
-      "video_count": 1279,
-      "tip_count": 2903,
-      "channel_count": 893,
+      "video_count": 1417,
+      "tip_count": 3162,
+      "channel_count": 1004,
       "top_sources": [
         {
           "video_id": "JVbzH2BD68w",
@@ -124,6 +124,15 @@
           "verbatim_research_only": true
         },
         {
+          "tip_paraphrase_summary": "Now, obviously there's gas as the big variable factor, but think about it — it costs a lot of money. So if I was…",
+          "category": "Legal / Deadline",
+          "timestamp": "00:01:45",
+          "link": "https://www.youtube.com/watch?v=60uc8gnDCiY&t=105s",
+          "video_title": "How To Estimate Equipment Cost In Construction",
+          "author": "George Hedley | HardHat BIZCOACH",
+          "verbatim_research_only": true
+        },
+        {
           "tip_paraphrase_summary": "Their NDA and in the NDA it actually said that if the buyer did certain nasty things that were against the contract that the…",
           "category": "Legal / Deadline",
           "timestamp": "00:06:19",
@@ -139,6 +148,15 @@
           "link": "https://www.youtube.com/watch?v=lzU09FRqmhg&t=314s",
           "video_title": "How To Claim Surplus Funds From Foreclosure",
           "author": "Bob Diamond - America's Tax Sale Attorney",
+          "verbatim_research_only": true
+        },
+        {
+          "tip_paraphrase_summary": "They're gonna charge even as low as 1,500 — you still got all the extra things. So 1,500 divided by 20 is what? It's…",
+          "category": "Sequence / Alternative",
+          "timestamp": "00:02:15",
+          "link": "https://www.youtube.com/watch?v=60uc8gnDCiY&t=135s",
+          "video_title": "How To Estimate Equipment Cost In Construction",
+          "author": "George Hedley | HardHat BIZCOACH",
           "verbatim_research_only": true
         },
         {
@@ -167,24 +185,6 @@
           "video_title": "State Funds Tutorial Delaware: Registering As A Property Locator For The State Of Delaware.",
           "author": "Surplus Funds 101",
           "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "The multiple gets. This leads us to part four, what owners get wrong. Here are a few things that I hear all of the…",
-          "category": "Non-Negotiable Rule",
-          "timestamp": "00:09:04",
-          "link": "https://www.youtube.com/watch?v=ggUaT-lHV0A&t=544s",
-          "video_title": "How Much Is My Business Really Worth? (How Buyers, Lenders & Brokers Value Small Businesses)",
-          "author": "Deal Street - Small to Lower Middle Market M&A",
-          "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "Afirmó contratado esto es mr3 firmó un contrato de 34 mil y pone sobre su bien ticket en medio en un cliente así es…",
-          "category": "Legal / Deadline",
-          "timestamp": "00:48:19",
-          "link": "https://www.youtube.com/watch?v=qgELHrlpUGo&t=2899s",
-          "video_title": "Métricas SaaS y cómo modelarlas: MRR, ARR, churn y unit economics",
-          "author": "The Startup CFO",
-          "verbatim_research_only": true
         }
       ],
       "statutes_and_forms": [
@@ -198,9 +198,9 @@
         "form you",
         "form the",
         "form where",
+        "form on",
         "form with",
         "form like",
-        "form on",
         "form in",
         "form your",
         "form so",
@@ -210,24 +210,24 @@
         "form as",
         "form called",
         "form I",
+        "form it",
         "form which",
         "form below",
-        "form it",
+        "form at",
+        "form because",
         "form builder",
         "form here",
         "form right",
         "form submissions",
         "form videos",
         "property Act",
-        "form at",
-        "form because",
+        "form uh",
         "form um",
         "letters of administration",
         "Exchange Act",
         "form but",
-        "form uh",
         "form well",
-        "form now"
+        "form built"
       ],
       "tools_and_portals": [
         "Google",
@@ -275,9 +275,9 @@
     {
       "topic_id": "probate_and_docket_sourcing",
       "title": "County Probate Dockets, Intestate Filings & Estate Leads",
-      "video_count": 1213,
-      "tip_count": 1783,
-      "channel_count": 782,
+      "video_count": 1343,
+      "tip_count": 1896,
+      "channel_count": 874,
       "top_sources": [
         {
           "video_id": "oZiYbKNvxJY",
@@ -433,41 +433,41 @@
         "form that",
         "form of",
         "form to",
-        "form for",
         "form is",
-        "form you",
+        "form for",
         "form or",
-        "form below",
+        "form you",
         "form the",
+        "form below",
         "form a",
         "form your",
         "form in",
         "form on",
-        "form where",
         "form so",
-        "form like",
+        "form where",
         "form with",
+        "form like",
+        "form Commercial",
         "property Act",
+        "form it",
         "letters of administration",
         "form if",
-        "form it",
         "form which",
         "form we",
         "form I",
-        "form as",
-        "form here",
         "form our",
         "Form uh",
+        "form as",
         "form but",
+        "form here",
         "form now",
         "form them",
+        "form because",
         "form content",
+        "form um",
         "letters testamentary",
         "affidavit of heirship",
         "Exchange Act",
-        "form because",
-        "form Commercial",
-        "form um",
         "form will"
       ],
       "tools_and_portals": [
@@ -516,9 +516,9 @@
     {
       "topic_id": "unclaimed_property_and_escheat",
       "title": "State Unclaimed Property, Escheated Funds & Treasury Claims",
-      "video_count": 542,
-      "tip_count": 1737,
-      "channel_count": 330,
+      "video_count": 576,
+      "tip_count": 1772,
+      "channel_count": 353,
       "top_sources": [
         {
           "video_id": "D-PMjgNe-7s",
@@ -676,22 +676,22 @@
         "form below",
         "Form is",
         "form to",
+        "form for",
         "form the",
         "form you",
-        "form for",
-        "form a",
         "form or",
+        "form a",
         "form your",
         "form we",
         "form with",
         "Property Act",
         "form but",
         "form if",
+        "form our",
         "form so",
         "form in",
         "form it",
         "form on",
-        "form our",
         "form them",
         "Form uh",
         "form um",
@@ -721,9 +721,9 @@
         "Excel",
         "https://www.instagram.com/erizzyy/",
         "https://www.surplusfunds101.com/freecallingscript",
+        "https://wise.com/invite/dic/todorivanovk1",
         "https://www.youtube.com/surplusfunds101",
         "CSV",
-        "https://wise.com/invite/dic/todorivanovk1",
         "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
         "https://www.instagram.com/thedavidwilkerson",
         "https://www.facebook.com/groups/770825015084618",
@@ -757,9 +757,9 @@
     {
       "topic_id": "genealogy_and_heirship_proof",
       "title": "Forensic Genealogy, Per-Stirpes Kinship & Proof of Heirship",
-      "video_count": 1438,
-      "tip_count": 1473,
-      "channel_count": 952,
+      "video_count": 1588,
+      "tip_count": 1895,
+      "channel_count": 1065,
       "top_sources": [
         {
           "video_id": "7M3XZfN7814",
@@ -892,21 +892,21 @@
           "verbatim_research_only": true
         },
         {
+          "tip_paraphrase_summary": "Últimos 2 años hemos ido migrando todos los sitios de Estados Unidos también al formato eh al formato no presencial porque hemos visto que…",
+          "category": "Legal / Deadline",
+          "timestamp": "00:02:42",
+          "link": "https://www.youtube.com/watch?v=keHIfejYGN8&t=162s",
+          "video_title": "COMPRA Y VENDE MAQUINARIA EN RITCHIE BROS MÉXICO ¡AQUÍ TE DECIMOS CÓMO!",
+          "author": "Sobre Orugas",
+          "verbatim_research_only": true
+        },
+        {
           "tip_paraphrase_summary": "You do have to go through a court process in order to do that. So don't do that on your own. Also, while the…",
           "category": "Pitfall / Hard No",
           "timestamp": "00:48:01",
           "link": "https://www.youtube.com/watch?v=TP6n8TBsCGs&t=2881s",
           "video_title": "Resolving Heirs' Property",
           "author": "MD Ag Law Education Initiative",
-          "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "Did the informant have a reason to lie? Could this be a mistake? Is the person present at the event? What fits best in…",
-          "category": "Pitfall / Hard No",
-          "timestamp": "00:44:35",
-          "link": "https://www.youtube.com/watch?v=tljNDoj74TI&t=2675s",
-          "video_title": "Analyzing Evidence: A Research Game Changer",
-          "author": "FamilySearch",
           "verbatim_research_only": true
         }
       ],
@@ -917,14 +917,14 @@
         "form to",
         "form for",
         "form is",
-        "form you",
         "form or",
+        "form you",
         "form the",
         "form with",
-        "form where",
-        "form a",
-        "form below",
         "form on",
+        "form a",
+        "form where",
+        "form below",
         "form in",
         "form like",
         "form so",
@@ -932,32 +932,32 @@
         "form content",
         "form as",
         "form if",
-        "form which",
         "form at",
+        "form which",
         "form I",
-        "property Act",
-        "form here",
         "form it",
+        "property Act",
         "form called",
+        "form Commercial",
+        "form here",
+        "Form uh",
         "letters of administration",
         "form builder",
-        "form submissions",
-        "Form uh",
-        "form videos",
         "form right",
-        "Exchange Act",
+        "form submissions",
+        "form videos",
         "form because",
-        "form we",
-        "form well",
-        "form them",
-        "form this"
+        "Exchange Act",
+        "form this",
+        "form um",
+        "form we"
       ],
       "tools_and_portals": [
         "Google",
         "Facebook",
         "LinkedIn",
-        "Ancestry",
         "Excel",
+        "Ancestry",
         "CSV",
         "https://excesselite.com",
         "FamilySearch",
@@ -966,8 +966,8 @@
         "https://www.instagram.com/erizzyy/",
         "Bing",
         "https://www.surplusfunds101.com/freecallingscript",
-        "https://www.youtube.com/surplusfunds101",
         "https://wise.com/invite/dic/todorivanovk1",
+        "https://www.youtube.com/surplusfunds101",
         "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
         "https://www.instagram.com/thedavidwilkerson",
         "https://www.unclaimedceo.com/linkme",
@@ -998,9 +998,9 @@
     {
       "topic_id": "skip_tracing_and_outreach",
       "title": "Skip Tracing, Ethical Heir Contact & Trust Building",
-      "video_count": 1006,
-      "tip_count": 852,
-      "channel_count": 709,
+      "video_count": 1064,
+      "tip_count": 865,
+      "channel_count": 758,
       "top_sources": [
         {
           "video_id": "DgzklijTLzE",
@@ -1097,12 +1097,39 @@
           "verbatim_research_only": true
         },
         {
+          "tip_paraphrase_summary": "Go back to school or take on years of experience first so here's the truth you can start your own Freight brokerage with zero…",
+          "category": "Legal / Deadline",
+          "timestamp": "00:00:48",
+          "link": "https://www.youtube.com/watch?v=QBNPafDHXLE&t=48s",
+          "video_title": "6 Steps to Become a Freight Broker in 2026 (No Experience Needed)",
+          "author": "Matt Krause",
+          "verbatim_research_only": true
+        },
+        {
           "tip_paraphrase_summary": "I have also left an overly broad question at the end for now. We will improve that, because the best follow up should connect…",
           "category": "Legal / Deadline",
           "timestamp": "00:18:18",
           "link": "https://www.youtube.com/watch?v=gGfsCEiyizs&t=1098s",
           "video_title": "Parasite Reddit SEO: Find Google Traffic With This Workflow",
           "author": "Rankso SEO",
+          "verbatim_research_only": true
+        },
+        {
+          "tip_paraphrase_summary": "It building relationships can feel very daunting with people that you don't know but here's the key you don't need to be a slick…",
+          "category": "Pitfall / Hard No",
+          "timestamp": "00:06:24",
+          "link": "https://www.youtube.com/watch?v=QBNPafDHXLE&t=384s",
+          "video_title": "6 Steps to Become a Freight Broker in 2026 (No Experience Needed)",
+          "author": "Matt Krause",
+          "verbatim_research_only": true
+        },
+        {
+          "tip_paraphrase_summary": "A very different Market climate in today's market a balanced approach is what will set you up for success so now let's talk about…",
+          "category": "Legal / Deadline",
+          "timestamp": "00:08:23",
+          "link": "https://www.youtube.com/watch?v=QBNPafDHXLE&t=503s",
+          "video_title": "6 Steps to Become a Freight Broker in 2026 (No Experience Needed)",
+          "author": "Matt Krause",
           "verbatim_research_only": true
         },
         {
@@ -1122,33 +1149,6 @@
           "video_title": "State Funds Business Skip Tracing. Best FREE Skip Tracing Websites For Your Unclaimed Funds Business",
           "author": "Surplus Funds 101",
           "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "Or we're using a County's website we know that we can initi identify the sales results we're going to identify properties in which is…",
-          "category": "Pitfall / Hard No",
-          "timestamp": "00:03:25",
-          "link": "https://www.youtube.com/watch?v=aKzRVyO_gfI&t=205s",
-          "video_title": "The Only Skiptracing Software You Need For Surplus Funds",
-          "author": "Money Making Juggernaut",
-          "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "Let's say you're trying to pull a list of property owners, whether it's for marketing purposes or direct mail or anything like that. And…",
-          "category": "Pitfall / Hard No",
-          "timestamp": "00:01:44",
-          "link": "https://www.youtube.com/watch?v=9RvXCiHUzlo&t=104s",
-          "video_title": "DataTree Hacks: How to Find Portfolio Owners With Multiple Properties",
-          "author": "REtipster",
-          "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "System at [Music] safer.fmcsa.dot.gov simply click on company snapshot here you'll see three different options usdot number mcmx number and name as well as…",
-          "category": "Non-Negotiable Rule",
-          "timestamp": "00:02:00",
-          "link": "https://www.youtube.com/watch?v=XuAjQG6VmJg&t=120s",
-          "video_title": "Due Diligence",
-          "author": "OOIDA Foundation",
-          "verbatim_research_only": true
         }
       ],
       "statutes_and_forms": [
@@ -1163,42 +1163,42 @@
         "form your",
         "form the",
         "form where",
+        "form on",
         "form like",
         "form a",
-        "form on",
         "form with",
         "form in",
         "form so",
         "form below",
         "form content",
+        "Form uh",
         "form which",
         "form as",
-        "Form uh",
-        "form if",
         "form called",
+        "form Commercial",
+        "form if",
         "form here",
         "form I",
         "form it",
         "form um",
-        "form at",
-        "form builder",
         "form but",
-        "form our",
         "form right",
+        "form at",
         "form because",
+        "form builder",
+        "form our",
         "Protection Act",
         "form fill",
         "form now",
         "form them",
-        "form videos",
-        "form what"
+        "form videos"
       ],
       "tools_and_portals": [
         "Google",
         "LinkedIn",
         "Facebook",
-        "CSV",
         "Excel",
+        "CSV",
         "https://excesselite.com",
         "https://www.facebook.com/groups/assetrecovery",
         "Bing",
@@ -1239,9 +1239,9 @@
     {
       "topic_id": "contracts_and_compensation",
       "title": "Fee Agreements, Assignments of Interest & Escrow Disbursement",
-      "video_count": 1361,
-      "tip_count": 1775,
-      "channel_count": 909,
+      "video_count": 1466,
+      "tip_count": 1973,
+      "channel_count": 999,
       "top_sources": [
         {
           "video_id": "VBvaq5etzV4",
@@ -1249,6 +1249,13 @@
           "author": "Rent Own Sell",
           "url": "https://www.youtube.com/watch?v=VBvaq5etzV4",
           "duration": "00:02:55"
+        },
+        {
+          "video_id": "9ztMvgoQsgE",
+          "title": "UCC Liens: What Do They Mean for Your Business?",
+          "author": "NerdWallet Small Business",
+          "url": "https://www.youtube.com/watch?v=9ztMvgoQsgE",
+          "duration": "00:05:35"
         },
         {
           "video_id": "HPyO3dkjbCQ",
@@ -1291,13 +1298,6 @@
           "author": "Alfred Taren",
           "url": "https://www.youtube.com/watch?v=LdemHPCk0dk",
           "duration": "00:07:47"
-        },
-        {
-          "video_id": "KOYBZFn2k7w",
-          "title": "Overages & Surplus Fund Debt & Title Research: Not As Easy As It Seems. Two tips To Help",
-          "author": "Nick Fullmer- Overage Syndicate",
-          "url": "https://www.youtube.com/watch?v=KOYBZFn2k7w",
-          "duration": "00:06:41"
         }
       ],
       "top_timestamped_insights": [
@@ -1383,12 +1383,12 @@
           "verbatim_research_only": true
         },
         {
-          "tip_paraphrase_summary": "It's been in the past when you for example I ranked for my clients in different languages keywords related to those uh to their…",
+          "tip_paraphrase_summary": "What do you think it costs you per day? You know, you average a hundred miles or 200 miles a day, or a hundred…",
           "category": "Legal / Deadline",
-          "timestamp": "00:03:24",
-          "link": "https://www.youtube.com/watch?v=8iciP8By_g4&t=204s",
-          "video_title": "Generative Engine Optimization (GEO) How to Rank in AI Search Engines",
-          "author": "AI Innovations With Maria Johnsen",
+          "timestamp": "00:01:21",
+          "link": "https://www.youtube.com/watch?v=60uc8gnDCiY&t=81s",
+          "video_title": "How To Estimate Equipment Cost In Construction",
+          "author": "George Hedley | HardHat BIZCOACH",
           "verbatim_research_only": true
         }
       ],
@@ -1403,9 +1403,9 @@
         "form you",
         "form the",
         "form with",
+        "form on",
         "form below",
         "form like",
-        "form on",
         "form in",
         "form where",
         "form a",
@@ -1413,26 +1413,26 @@
         "form so",
         "form content",
         "form as",
+        "form at",
         "form I",
         "form if",
-        "form at",
-        "property Act",
         "form called",
-        "form here",
         "form it",
         "Form uh",
+        "property Act",
+        "form Commercial",
+        "form here",
         "form which",
         "letters of administration",
         "form builder",
         "form submissions",
-        "form we",
         "form um",
-        "form videos",
+        "form we",
         "form because",
         "form our",
         "form right",
-        "form well",
-        "Exchange Act"
+        "form videos",
+        "form well"
       ],
       "tools_and_portals": [
         "Google",
@@ -1448,8 +1448,8 @@
         "FamilySearch",
         "Bing",
         "https://www.surplusfunds101.com/freecallingscript",
-        "https://www.youtube.com/surplusfunds101",
         "https://wise.com/invite/dic/todorivanovk1",
+        "https://www.youtube.com/surplusfunds101",
         "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
         "https://www.instagram.com/thedavidwilkerson",
         "https://www.facebook.com/groups/770825015084618",
@@ -1480,9 +1480,9 @@
     {
       "topic_id": "statutory_caps_and_licensing",
       "title": "State Fee Caps, Waiting Periods, PI Licensing & UPL Rules",
-      "video_count": 1321,
-      "tip_count": 1135,
-      "channel_count": 861,
+      "video_count": 1464,
+      "tip_count": 1232,
+      "channel_count": 961,
       "top_sources": [
         {
           "video_id": "zrj6RA8N9HA",
@@ -1513,6 +1513,13 @@
           "duration": "00:06:31"
         },
         {
+          "video_id": "pK4RGE_1My4",
+          "title": "FMCSA Compliance EXPLAINED: What Every Truck Driver & Carrier MUST Know in 2025!",
+          "author": "FMCSA REGISTRATION dot com",
+          "url": "https://www.youtube.com/watch?v=pK4RGE_1My4",
+          "duration": "00:03:05"
+        },
+        {
           "video_id": "KiR-ZUeCE5g",
           "title": "Unclaimed Property in Tennessee: Understanding Audits, Compliance, and Negative Reports",
           "author": "TNTreasury",
@@ -1532,13 +1539,6 @@
           "author": "Money Making Juggernaut",
           "url": "https://www.youtube.com/watch?v=vp2uuB23fww",
           "duration": "00:38:14"
-        },
-        {
-          "video_id": "0VBYF3XIGBE",
-          "title": "Communication with Mass Tort Clients",
-          "author": "Mass Tort Institute",
-          "url": "https://www.youtube.com/watch?v=0VBYF3XIGBE",
-          "duration": "00:02:33"
         }
       ],
       "top_timestamped_insights": [
@@ -1648,32 +1648,32 @@
         "form on",
         "form your",
         "form in",
-        "form where",
         "form with",
-        "form like",
+        "form where",
         "form so",
+        "form like",
+        "form Commercial",
         "property Act",
         "form if",
-        "letters of administration",
-        "form I",
         "form it",
         "Form uh",
+        "letters of administration",
+        "form I",
         "form we",
+        "form our",
         "form which",
+        "form but",
         "form content",
         "form here",
-        "form our",
         "Exchange Act",
         "form as",
-        "form but",
-        "form now",
         "form because",
-        "form them",
+        "form now",
         "form um",
-        "letters testamentary",
-        "affidavit of heirship",
-        "form better",
-        "form called"
+        "form them",
+        "form called",
+        "form right",
+        "letters testamentary"
       ],
       "tools_and_portals": [
         "Google",
@@ -1721,9 +1721,9 @@
     {
       "topic_id": "automation_and_small_team_ops",
       "title": "Docket Automation, AI Abstracting & Small-Team Operations",
-      "video_count": 1381,
-      "tip_count": 4192,
-      "channel_count": 929,
+      "video_count": 1489,
+      "tip_count": 4598,
+      "channel_count": 1011,
       "top_sources": [
         {
           "video_id": "zqtx1Soeq5E",
@@ -1886,21 +1886,21 @@
         "form the",
         "form with",
         "form where",
-        "form so",
-        "form on",
         "form a",
+        "form on",
+        "form so",
         "form below",
         "form your",
         "form in",
         "form like",
         "form content",
         "form if",
-        "form it",
         "form as",
+        "form it",
         "form which",
+        "form at",
         "form I",
         "form we",
-        "form at",
         "form because",
         "form but",
         "form um",
@@ -1910,11 +1910,11 @@
         "form submissions",
         "Form uh",
         "letters of administration",
+        "form this",
         "form videos",
         "property Act",
-        "form fill",
-        "form this",
-        "form well"
+        "form better",
+        "form fill"
       ],
       "tools_and_portals": [
         "Google",
@@ -1968,9 +1968,9 @@
       "headline": "Heir location is paid on contingency, never on up-front fees.",
       "summary": "Across the corpus, operators converge on a pure contingency model: the heir pays nothing out of pocket, the locator advances all research cost, and the fee is a negotiated percentage released only when the estate or state agency actually disburses funds. Charging an heir an advance fee is treated as the single clearest marker of a predatory or unlicensed operator.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 893,
-      "video_count": 1279,
-      "corroborating_tip_count": 2903,
+      "channel_count": 1004,
+      "video_count": 1417,
+      "corroborating_tip_count": 3162,
       "supporting_links": [
         {
           "video_title": "State Funds Tutorial New Mexico: How To Register As A Property Locator In The State Of New Mexico.",
@@ -1991,6 +1991,12 @@
           "link": "https://www.youtube.com/watch?v=d5TLZqkPX14&t=233s"
         },
         {
+          "video_title": "How To Estimate Equipment Cost In Construction",
+          "author": "George Hedley | HardHat BIZCOACH",
+          "timestamp": "00:01:45",
+          "link": "https://www.youtube.com/watch?v=60uc8gnDCiY&t=105s"
+        },
+        {
           "video_title": "Don't be a Victim of Broker NDA Agreements",
           "author": "David C Barnett Small Business and Deal Making SMB",
           "timestamp": "00:06:19",
@@ -2001,12 +2007,6 @@
           "author": "Bob Diamond - America's Tax Sale Attorney",
           "timestamp": "00:05:14",
           "link": "https://www.youtube.com/watch?v=lzU09FRqmhg&t=314s"
-        },
-        {
-          "video_title": "The Smartest Affiliate Business Model: Recurring SaaS Commissions",
-          "author": "Michael Bashi",
-          "timestamp": "00:01:35",
-          "link": "https://www.youtube.com/watch?v=lh5ulbIfANU&t=95s"
         }
       ],
       "caveat": "Consensus among the sampled operators — not legal advice and not a substitute for the governing statute in the reader's jurisdiction."
@@ -2018,9 +2018,9 @@
       "headline": "Fresh county probate and intestate dockets outperform purchased lead lists.",
       "summary": "Practitioners consistently build pipeline from newly filed probate and administration matters pulled directly from county clerk portals rather than resold lists. Filings naming an administrator but no located heirs, and estates sitting open past the local notice period, are the recurring high-value signal.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 782,
-      "video_count": 1213,
-      "corroborating_tip_count": 1783,
+      "channel_count": 874,
+      "video_count": 1343,
+      "corroborating_tip_count": 1896,
       "supporting_links": [
         {
           "video_title": "$57 Affiliate Payouts With $35 Google Ads CPA (Full Funnel Breakdown)",
@@ -2068,9 +2068,9 @@
       "headline": "State unclaimed-property and escheat databases supply the repeatable volume.",
       "summary": "Every state treasury or controller maintains a searchable unclaimed-property register, and the consensus workflow is to cross-reference deceased owners there against probate filings. Volume comes from systematic register sweeps; size comes from the rarer escheated estate, surplus-funds and safe-deposit categories.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 330,
-      "video_count": 542,
-      "corroborating_tip_count": 1737,
+      "channel_count": 353,
+      "video_count": 576,
+      "corroborating_tip_count": 1772,
       "supporting_links": [
         {
           "video_title": "How To Claim Surplus Funds From Foreclosure",
@@ -2118,9 +2118,9 @@
       "headline": "The deliverable is a document-backed kinship chain, not a name on a list.",
       "summary": "Operators agree that claims succeed or fail on the evidentiary chain: each generational link supported by vital records, each branch mapped per stirpes, and every gap closed before contact. Tree hints from consumer genealogy sites are treated as leads to verify, never as proof to submit.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 952,
-      "video_count": 1438,
-      "corroborating_tip_count": 1473,
+      "channel_count": 1065,
+      "video_count": 1588,
+      "corroborating_tip_count": 1895,
       "supporting_links": [
         {
           "video_title": "Understanding Aircraft Brokerage: Standards, Risk, and Trust",
@@ -2168,9 +2168,9 @@
       "headline": "Verify identity before contact, then lead with restraint, not the dollar figure.",
       "summary": "The recurring outreach pattern is: skip trace to a confirmed current address and phone, open by letter or a short calm call, state that funds may be owed to the family without naming an amount, and give the heir a way to independently verify the operator. Pressure tactics and inflated figures are consistently reported as the fastest way to lose a signed file.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 709,
-      "video_count": 1006,
-      "corroborating_tip_count": 852,
+      "channel_count": 758,
+      "video_count": 1064,
+      "corroborating_tip_count": 865,
       "supporting_links": [
         {
           "video_title": "How to Get Unlimited Leads Using Clay Enrichment Waterfall | clay.com Tutorial",
@@ -2197,16 +2197,16 @@
           "link": "https://www.youtube.com/watch?v=PGvJEv9Y_Go&t=748s"
         },
         {
+          "video_title": "6 Steps to Become a Freight Broker in 2026 (No Experience Needed)",
+          "author": "Matt Krause",
+          "timestamp": "00:00:48",
+          "link": "https://www.youtube.com/watch?v=QBNPafDHXLE&t=48s"
+        },
+        {
           "video_title": "Parasite Reddit SEO: Find Google Traffic With This Workflow",
           "author": "Rankso SEO",
           "timestamp": "00:18:18",
           "link": "https://www.youtube.com/watch?v=gGfsCEiyizs&t=1098s"
-        },
-        {
-          "video_title": "How to Get Unlimited Leads Using Clay Enrichment Waterfall | clay.com Tutorial",
-          "author": "AJ Cassata",
-          "timestamp": "00:06:14",
-          "link": "https://www.youtube.com/watch?v=6l8CThrSJEY&t=374s"
         }
       ],
       "caveat": "Consensus among the sampled operators — not legal advice and not a substitute for the governing statute in the reader's jurisdiction."
@@ -2218,9 +2218,9 @@
       "headline": "No work proceeds without a signed fee agreement and third-party escrow.",
       "summary": "Consensus practice is a plain-language, notarized or e-signed agreement that names the estate, states the percentage, discloses the heir's right to claim independently, and routes funds through attorney trust or licensed escrow so the locator never holds the heir's money directly.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 909,
-      "video_count": 1361,
-      "corroborating_tip_count": 1775,
+      "channel_count": 999,
+      "video_count": 1466,
+      "corroborating_tip_count": 1973,
       "supporting_links": [
         {
           "video_title": "Topical Authority With Koray Tuğberk GÜBÜR",
@@ -2268,9 +2268,9 @@
       "headline": "Fee caps, waiting periods and licensing are decided per state, before the first call.",
       "summary": "Operators repeatedly stress that the governing rules — percentage caps on unclaimed-property recoveries, mandatory waiting periods after escheat or sale, private-investigator licensing triggers, and the line against practicing law — vary by jurisdiction and must be read in the local statute for every file rather than generalized from another state.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 861,
-      "video_count": 1321,
-      "corroborating_tip_count": 1135,
+      "channel_count": 961,
+      "video_count": 1464,
+      "corroborating_tip_count": 1232,
       "supporting_links": [
         {
           "video_title": "Understanding Aircraft Brokerage: Standards, Risk, and Trust",
@@ -2318,9 +2318,9 @@
       "headline": "Automated docket monitoring plus AI abstracting lets one or two people run real volume.",
       "summary": "The operational consensus is to automate the repetitive layer — scheduled docket and register pulls, structured intake into a sheet or CRM, AI-assisted abstracting of filings — while keeping genealogy judgment, heir contact and contract execution human. That split is what keeps a two-person shop competitive against staffed firms.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 929,
-      "video_count": 1381,
-      "corroborating_tip_count": 4192,
+      "channel_count": 1011,
+      "video_count": 1489,
+      "corroborating_tip_count": 4598,
       "supporting_links": [
         {
           "video_title": "State Funds Tutorial: 5 Tech Tools For Your State Funds Business",
@@ -2596,10 +2596,10 @@
           "link": "https://www.youtube.com/watch?v=d5TLZqkPX14&t=233s"
         },
         {
-          "video_title": "Don't be a Victim of Broker NDA Agreements",
-          "author": "David C Barnett Small Business and Deal Making SMB",
-          "timestamp": "00:06:19",
-          "link": "https://www.youtube.com/watch?v=wHxYmcrcq4M&t=379s"
+          "video_title": "How To Estimate Equipment Cost In Construction",
+          "author": "George Hedley | HardHat BIZCOACH",
+          "timestamp": "00:01:45",
+          "link": "https://www.youtube.com/watch?v=60uc8gnDCiY&t=105s"
         }
       ]
     }
@@ -2746,8 +2746,8 @@
         "asset_id": "youtube_thumbnails",
         "asset": "https://i.ytimg.com/vi/<video_id>/*.jpg",
         "asset_type": "youtube_thumbnail_image",
-        "source": "YouTube CDN thumbnails for the 1704 corpus videos",
-        "instance_count": 1704,
+        "source": "YouTube CDN thumbnails for the 1882 corpus videos",
+        "instance_count": 1882,
         "instances": [
           {
             "video_id": "9Q4qYeK5DTg",
@@ -14676,6 +14676,1252 @@
             "author": "Tower Genius",
             "thumbnail_url": "https://i.ytimg.com/vi/V2LGinURueI/hqdefault.jpg",
             "source_url": "https://www.youtube.com/watch?v=V2LGinURueI"
+          },
+          {
+            "video_id": "_c4_PRT-_rE",
+            "title": "What is an Equipment Broker",
+            "author": "Equipment Broker Academy",
+            "thumbnail_url": "https://i.ytimg.com/vi/_c4_PRT-_rE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=_c4_PRT-_rE"
+          },
+          {
+            "video_id": "hHppnxoaqWo",
+            "title": "Become a Heavy Equipment Broker",
+            "author": "Equipment Broker Academy",
+            "thumbnail_url": "https://i.ytimg.com/vi/hHppnxoaqWo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=hHppnxoaqWo"
+          },
+          {
+            "video_id": "uzLIopNJDJY",
+            "title": "These 3 Equipment Niches Pay $12,500 to $20,000 Per Deal",
+            "author": "Equipment Finance Academy",
+            "thumbnail_url": "https://i.ytimg.com/vi/uzLIopNJDJY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=uzLIopNJDJY"
+          },
+          {
+            "video_id": "C4UjO7bAqGI",
+            "title": "Equipment Broker Academy Webinar 7/2019",
+            "author": "Equipment Broker Academy",
+            "thumbnail_url": "https://i.ytimg.com/vi/C4UjO7bAqGI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=C4UjO7bAqGI"
+          },
+          {
+            "video_id": "9pYbF2gxpys",
+            "title": "How to Start a Heavy Equipment Business | Free Heavy Equipment Business Plan Template Included",
+            "author": "BizMove",
+            "thumbnail_url": "https://i.ytimg.com/vi/9pYbF2gxpys/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=9pYbF2gxpys"
+          },
+          {
+            "video_id": "h_gTFo7GYEo",
+            "title": "Tips for Selling Heavy Equipment - Part 1",
+            "author": "Mike Whicita- Where To Sell My Used Equipment",
+            "thumbnail_url": "https://i.ytimg.com/vi/h_gTFo7GYEo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=h_gTFo7GYEo"
+          },
+          {
+            "video_id": "R8KSspUuldY",
+            "title": "Myths and Misconceptions of Broker Heavy Equipment",
+            "author": "Equipment Broker Academy",
+            "thumbnail_url": "https://i.ytimg.com/vi/R8KSspUuldY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=R8KSspUuldY"
+          },
+          {
+            "video_id": "6laX1_643JA",
+            "title": "Equipment Finance Broker Business Model Explained",
+            "author": "Jermane Cheathem",
+            "thumbnail_url": "https://i.ytimg.com/vi/6laX1_643JA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=6laX1_643JA"
+          },
+          {
+            "video_id": "pgvX9soJ0Kk",
+            "title": "The Economics of Owning a Heavy Machinery Rental Business",
+            "author": "A Finance Insider",
+            "thumbnail_url": "https://i.ytimg.com/vi/pgvX9soJ0Kk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=pgvX9soJ0Kk"
+          },
+          {
+            "video_id": "wIrb4GAXyy0",
+            "title": "Selling Heavy Equipment w/ Boom & Bucket: Shane's Experience",
+            "author": "Boom & Bucket",
+            "thumbnail_url": "https://i.ytimg.com/vi/wIrb4GAXyy0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=wIrb4GAXyy0"
+          },
+          {
+            "video_id": "AP6szJXIhss",
+            "title": "How to Negotiate Heavy Equipment Prices Like a Pro (Tips for New Contractors)",
+            "author": "ProfitDig | Contractor Business Strategies, Advice",
+            "thumbnail_url": "https://i.ytimg.com/vi/AP6szJXIhss/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=AP6szJXIhss"
+          },
+          {
+            "video_id": "4ZnfP4pS7A8",
+            "title": "How Construction Equipment Rental Companies Quietly Make $60 Billion a Year",
+            "author": "The Markup",
+            "thumbnail_url": "https://i.ytimg.com/vi/4ZnfP4pS7A8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=4ZnfP4pS7A8"
+          },
+          {
+            "video_id": "UEa5rUq-aB0",
+            "title": "The Lost Art of Construction Equipment Sales",
+            "author": "diggersanddozers",
+            "thumbnail_url": "https://i.ytimg.com/vi/UEa5rUq-aB0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=UEa5rUq-aB0"
+          },
+          {
+            "video_id": "V7R5ptjXKjI",
+            "title": "The Economics of Owning an Excavator Rental Business",
+            "author": "Millionaires Fast Track",
+            "thumbnail_url": "https://i.ytimg.com/vi/V7R5ptjXKjI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=V7R5ptjXKjI"
+          },
+          {
+            "video_id": "BStMEmq3lwU",
+            "title": "How Equipment Financing Brokers Actually Work (Banks Hate This)",
+            "author": "Mehmi Financial Group",
+            "thumbnail_url": "https://i.ytimg.com/vi/BStMEmq3lwU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=BStMEmq3lwU"
+          },
+          {
+            "video_id": "YzDJ7sPjIt0",
+            "title": "How Construction Equipment Rental Companies Make Money",
+            "author": "Mr. Margins",
+            "thumbnail_url": "https://i.ytimg.com/vi/YzDJ7sPjIt0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=YzDJ7sPjIt0"
+          },
+          {
+            "video_id": "TwUdZJ1n_ps",
+            "title": "Inside The Heavy Duty CNC Machining & Forging Plant. Modern Heavy Machinery & Equipment In Working",
+            "author": "YouCanDo TV",
+            "thumbnail_url": "https://i.ytimg.com/vi/TwUdZJ1n_ps/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=TwUdZJ1n_ps"
+          },
+          {
+            "video_id": "BCaYAmw5wQs",
+            "title": "CNC Machine Shop Tour - 80k Square Feet of Manufacturing - Superior Technology, Inc",
+            "author": "MS Milling CNC",
+            "thumbnail_url": "https://i.ytimg.com/vi/BCaYAmw5wQs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=BCaYAmw5wQs"
+          },
+          {
+            "video_id": "t9zRrkzjFbA",
+            "title": "Cox Manufacturing Virtual Shop Tour: Exploring CNC Swiss and Screw Machined Products & Services",
+            "author": "CoxManufacturing Company",
+            "thumbnail_url": "https://i.ytimg.com/vi/t9zRrkzjFbA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=t9zRrkzjFbA"
+          },
+          {
+            "video_id": "Hod3pJo62jY",
+            "title": "Financing CNC Machine Tools as a Startup Business",
+            "author": "Contend Capital",
+            "thumbnail_url": "https://i.ytimg.com/vi/Hod3pJo62jY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Hod3pJo62jY"
+          },
+          {
+            "video_id": "Q00deIDcQRw",
+            "title": "The Money Behind a CNC Lathe Machine",
+            "author": "Money Machines",
+            "thumbnail_url": "https://i.ytimg.com/vi/Q00deIDcQRw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Q00deIDcQRw"
+          },
+          {
+            "video_id": "h9RutWf9kWM",
+            "title": "China CNC Machine And Tool Expo 2026 Walkthrough | +100 Suppliers and Factory Newest Products",
+            "author": "China Expo And Sourcing with Abed",
+            "thumbnail_url": "https://i.ytimg.com/vi/h9RutWf9kWM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=h9RutWf9kWM"
+          },
+          {
+            "video_id": "iZJI5Y5wLUo",
+            "title": "Why CNC Machining Is So Cheap in China — But So Expensive in America",
+            "author": "Subi Industries",
+            "thumbnail_url": "https://i.ytimg.com/vi/iZJI5Y5wLUo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=iZJI5Y5wLUo"
+          },
+          {
+            "video_id": "IyxOJ_r0HP4",
+            "title": "World’s Largest Manufacturer Runs 600 CNC Machines",
+            "author": "TITANS of CNC MACHINING",
+            "thumbnail_url": "https://i.ytimg.com/vi/IyxOJ_r0HP4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=IyxOJ_r0HP4"
+          },
+          {
+            "video_id": "aJhOAz2q35Q",
+            "title": "How Heavy Duty CNC Machines Make Huge Gears. High-performance 5-axis Machining Center",
+            "author": "YouCanDo TV",
+            "thumbnail_url": "https://i.ytimg.com/vi/aJhOAz2q35Q/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=aJhOAz2q35Q"
+          },
+          {
+            "video_id": "YuSApjBn_zY",
+            "title": "Inside a Chinese CNC Factory",
+            "author": "Strange Parts",
+            "thumbnail_url": "https://i.ytimg.com/vi/YuSApjBn_zY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=YuSApjBn_zY"
+          },
+          {
+            "video_id": "bqSGI0L8zm0",
+            "title": "TOP 10 | Build Your OWN Thriving CNC Machine Shop",
+            "author": "TITANS of CNC MACHINING",
+            "thumbnail_url": "https://i.ytimg.com/vi/bqSGI0L8zm0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=bqSGI0L8zm0"
+          },
+          {
+            "video_id": "C2UEluRNT-M",
+            "title": "TONGTAI: The Fastest Super CNC Machines I’ve Ever Seen",
+            "author": "TITANS of CNC MACHINING",
+            "thumbnail_url": "https://i.ytimg.com/vi/C2UEluRNT-M/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=C2UEluRNT-M"
+          },
+          {
+            "video_id": "rLDoLaoEZ-A",
+            "title": "Don't Buy a Used CNC Machine Until You Watch This",
+            "author": "Contend Capital",
+            "thumbnail_url": "https://i.ytimg.com/vi/rLDoLaoEZ-A/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=rLDoLaoEZ-A"
+          },
+          {
+            "video_id": "iwQkqbEBCrM",
+            "title": "R.I.P. Broke Brokers: FMCSA’s New Rule Kicks In Jan 16 – What Every Carrier MUST Know",
+            "author": "Trucking Made Successful",
+            "thumbnail_url": "https://i.ytimg.com/vi/iwQkqbEBCrM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=iwQkqbEBCrM"
+          },
+          {
+            "video_id": "4m_pJHgvrpc",
+            "title": "New FMCSA Rule to Protect Truckers from Unpaid Broker Claims",
+            "author": "AFT Dispatch",
+            "thumbnail_url": "https://i.ytimg.com/vi/4m_pJHgvrpc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=4m_pJHgvrpc"
+          },
+          {
+            "video_id": "BE6n1FfpOO8",
+            "title": "FMCSA New Rule Change Affecting All Truck Drivers Now",
+            "author": "Mutha Trucker - Official Trucking Channel",
+            "thumbnail_url": "https://i.ytimg.com/vi/BE6n1FfpOO8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=BE6n1FfpOO8"
+          },
+          {
+            "video_id": "Y4Qa3jy-WNw",
+            "title": "FMCSA Cracks Down On Brokers That DON'T PAY! 🚚 Major Trucking Industry Shakeup Revealed!",
+            "author": "ET Transport",
+            "thumbnail_url": "https://i.ytimg.com/vi/Y4Qa3jy-WNw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Y4Qa3jy-WNw"
+          },
+          {
+            "video_id": "8X37vkZBHyo",
+            "title": "FMCSA Complaint Center: Report Broker Problems, Fraud & Bad Chassis",
+            "author": "Freight Pro Hub",
+            "thumbnail_url": "https://i.ytimg.com/vi/8X37vkZBHyo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=8X37vkZBHyo"
+          },
+          {
+            "video_id": "t1CJB1XA9y0",
+            "title": "Trucker Regs Daily: FMCSA Shuts Down YMC Transport, Trucking Jobs Flat, Reefer Rejections Hit 21%",
+            "author": "the funny farm",
+            "thumbnail_url": "https://i.ytimg.com/vi/t1CJB1XA9y0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=t1CJB1XA9y0"
+          },
+          {
+            "video_id": "zKmff6X7cQA",
+            "title": "FMCSA Personal Conveyance Rules EXPLAINED! (What Truckers MUST Know!)",
+            "author": "thatDOTcop",
+            "thumbnail_url": "https://i.ytimg.com/vi/zKmff6X7cQA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=zKmff6X7cQA"
+          },
+          {
+            "video_id": "YWQYZLDM6dY",
+            "title": "FMCSA Finally Closing Broker LOOPHOLES! | Broker Transparency 2025",
+            "author": "This Week in Trucking",
+            "thumbnail_url": "https://i.ytimg.com/vi/YWQYZLDM6dY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=YWQYZLDM6dY"
+          },
+          {
+            "video_id": "XEbn26lA8EE",
+            "title": "What Happens to MRI Scanners When Hospitals Replace Them?",
+            "author": "Reclaim Atlas",
+            "thumbnail_url": "https://i.ytimg.com/vi/XEbn26lA8EE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=XEbn26lA8EE"
+          },
+          {
+            "video_id": "Nw9qRw-Y6TE",
+            "title": "MXR Imaging Webinar Series: Purchasing Platinum Certified Pre-Owned MRI and CT Equipment",
+            "author": "MXR Imaging",
+            "thumbnail_url": "https://i.ytimg.com/vi/Nw9qRw-Y6TE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Nw9qRw-Y6TE"
+          },
+          {
+            "video_id": "DpGCQ1Ijs-Y",
+            "title": "CT Scan Machines for Sale | MRI Machines for Sale - The Complete Restoration Guide by BMI Techs",
+            "author": "Brown's Medical Imaging",
+            "thumbnail_url": "https://i.ytimg.com/vi/DpGCQ1Ijs-Y/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=DpGCQ1Ijs-Y"
+          },
+          {
+            "video_id": "4suol4m0dq4",
+            "title": "Sell Us Your Old Medical Equipment and Get the Most Value",
+            "author": "Block Imaging",
+            "thumbnail_url": "https://i.ytimg.com/vi/4suol4m0dq4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=4suol4m0dq4"
+          },
+          {
+            "video_id": "VOR_RnHfhE4",
+            "title": "New Vs. Used Vs. Refurbished Medical Imaging Equipment [Pros & Cons]",
+            "author": "Block Imaging",
+            "thumbnail_url": "https://i.ytimg.com/vi/VOR_RnHfhE4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=VOR_RnHfhE4"
+          },
+          {
+            "video_id": "MZI2TSrdxAQ",
+            "title": "Is Your OEM Service Support Ending for your Diagnostic Imaging Equipment?",
+            "author": "Probo Medical UK",
+            "thumbnail_url": "https://i.ytimg.com/vi/MZI2TSrdxAQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=MZI2TSrdxAQ"
+          },
+          {
+            "video_id": "qHDv4e8rQQw",
+            "title": "How to Buy Heavy Equipment at an IronPlanet Online Auction",
+            "author": "IronPlanet",
+            "thumbnail_url": "https://i.ytimg.com/vi/qHDv4e8rQQw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=qHDv4e8rQQw"
+          },
+          {
+            "video_id": "oItxvAmXefg",
+            "title": "Getting started on IronPlanet | Europe & Middle East",
+            "author": "Ritchie Bros.",
+            "thumbnail_url": "https://i.ytimg.com/vi/oItxvAmXefg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=oItxvAmXefg"
+          },
+          {
+            "video_id": "VLza4LoUZfo",
+            "title": "Inside the World's Biggest Equipment Auction ($265M in 5 Days!)",
+            "author": "BuildWitt",
+            "thumbnail_url": "https://i.ytimg.com/vi/VLza4LoUZfo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=VLza4LoUZfo"
+          },
+          {
+            "video_id": "cMfMjjnw9Ko",
+            "title": "How To Do A Ucc Lien Search?",
+            "author": "County Portal",
+            "thumbnail_url": "https://i.ytimg.com/vi/cMfMjjnw9Ko/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=cMfMjjnw9Ko"
+          },
+          {
+            "video_id": "8OP-aPYhHHM",
+            "title": "UCC lien filings on real estate",
+            "author": "Private Investigator Videos",
+            "thumbnail_url": "https://i.ytimg.com/vi/8OP-aPYhHHM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=8OP-aPYhHHM"
+          },
+          {
+            "video_id": "eHFjQHJs_8A",
+            "title": "UCC-11 Filing to Check for Liens",
+            "author": "EmRôs Reviews",
+            "thumbnail_url": "https://i.ytimg.com/vi/eHFjQHJs_8A/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=eHFjQHJs_8A"
+          },
+          {
+            "video_id": "9ztMvgoQsgE",
+            "title": "UCC Liens: What Do They Mean for Your Business?",
+            "author": "NerdWallet Small Business",
+            "thumbnail_url": "https://i.ytimg.com/vi/9ztMvgoQsgE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=9ztMvgoQsgE"
+          },
+          {
+            "video_id": "mwPfMMgcYNI",
+            "title": "UCC 101 for Lenders: The Basics of UCC Searching and Filing",
+            "author": "CSC",
+            "thumbnail_url": "https://i.ytimg.com/vi/mwPfMMgcYNI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=mwPfMMgcYNI"
+          },
+          {
+            "video_id": "xe1J4TAACZE",
+            "title": "How to search New York UCC filings step by step",
+            "author": "Garden Shop Pro",
+            "thumbnail_url": "https://i.ytimg.com/vi/xe1J4TAACZE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=xe1J4TAACZE"
+          },
+          {
+            "video_id": "F-yeb_XOivY",
+            "title": "How to look up a UCC filing in Texas online",
+            "author": "Garden Shop Pro",
+            "thumbnail_url": "https://i.ytimg.com/vi/F-yeb_XOivY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=F-yeb_XOivY"
+          },
+          {
+            "video_id": "qHs0sXdzamw",
+            "title": "Freight Quotes For Heavy Haul & Oversize Loads",
+            "author": "Freight Profits",
+            "thumbnail_url": "https://i.ytimg.com/vi/qHs0sXdzamw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=qHs0sXdzamw"
+          },
+          {
+            "video_id": "W5IGVlejm0s",
+            "title": "Choosing the Best: Heavy Haul Trailer Options Explained",
+            "author": "HeavyHaul HQ",
+            "thumbnail_url": "https://i.ytimg.com/vi/W5IGVlejm0s/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=W5IGVlejm0s"
+          },
+          {
+            "video_id": "oQI9qiLLIwA",
+            "title": "Oversize Load Regulations: What You Need to Know",
+            "author": "Trinity Logistics",
+            "thumbnail_url": "https://i.ytimg.com/vi/oQI9qiLLIwA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=oQI9qiLLIwA"
+          },
+          {
+            "video_id": "xRwL0v4jyOs",
+            "title": "How to Move Up to Heavy Haul Trucking",
+            "author": "Over the Road",
+            "thumbnail_url": "https://i.ytimg.com/vi/xRwL0v4jyOs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=xRwL0v4jyOs"
+          },
+          {
+            "video_id": "Hif9qgd9EEI",
+            "title": "How to measure wear on excavator undercarriage % Watch this before buying a tracked machine $$$",
+            "author": "C&C Equipment",
+            "thumbnail_url": "https://i.ytimg.com/vi/Hif9qgd9EEI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Hif9qgd9EEI"
+          },
+          {
+            "video_id": "L3kAdkTSgI4",
+            "title": "How To Inspect An Excavator Undercarriage",
+            "author": "Volvo Construction Equipment – North America",
+            "thumbnail_url": "https://i.ytimg.com/vi/L3kAdkTSgI4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=L3kAdkTSgI4"
+          },
+          {
+            "video_id": "enf_Ct89j8o",
+            "title": "SOS oil sampling for used heavy machinery",
+            "author": "MEVAS The Heavy Equipment Inspectors",
+            "thumbnail_url": "https://i.ytimg.com/vi/enf_Ct89j8o/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=enf_Ct89j8o"
+          },
+          {
+            "video_id": "1B6uxG5WNzQ",
+            "title": "What Is a CTS Inspection? | Dozer Undercarriage Wear Explained | Track Talk Tuesday | HVT",
+            "author": "Hunter Valley Tracks",
+            "thumbnail_url": "https://i.ytimg.com/vi/1B6uxG5WNzQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=1B6uxG5WNzQ"
+          },
+          {
+            "video_id": "fP5ysbGB2H0",
+            "title": "How to Measure your Undercarriage",
+            "author": "Cat® Products",
+            "thumbnail_url": "https://i.ytimg.com/vi/fP5ysbGB2H0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=fP5ysbGB2H0"
+          },
+          {
+            "video_id": "R9dHZ4P7yp0",
+            "title": "Maintenance Minutes – How To Take an Oil Sample",
+            "author": "Carter Machinery",
+            "thumbnail_url": "https://i.ytimg.com/vi/R9dHZ4P7yp0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=R9dHZ4P7yp0"
+          },
+          {
+            "video_id": "l4sJ-xx-mqI",
+            "title": "Dos and Don’ts of Collecting Oil Samples from Construction Equipment",
+            "author": "EquipmentWorld",
+            "thumbnail_url": "https://i.ytimg.com/vi/l4sJ-xx-mqI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=l4sJ-xx-mqI"
+          },
+          {
+            "video_id": "shzCS90v5wA",
+            "title": "How to Measure Dozer Undercarriage Wear",
+            "author": "EquipmentWorld",
+            "thumbnail_url": "https://i.ytimg.com/vi/shzCS90v5wA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=shzCS90v5wA"
+          },
+          {
+            "video_id": "POHJMjG37XM",
+            "title": "Driver Tips - Oil Testing Equipment",
+            "author": "Andy Lash",
+            "thumbnail_url": "https://i.ytimg.com/vi/POHJMjG37XM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=POHJMjG37XM"
+          },
+          {
+            "video_id": "_j1VRwfp3gU",
+            "title": "Scheduled Oil Sampling S•O•S℠ for your Cat® Equipment",
+            "author": "Cat® Products",
+            "thumbnail_url": "https://i.ytimg.com/vi/_j1VRwfp3gU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=_j1VRwfp3gU"
+          },
+          {
+            "video_id": "ypiqyyCR9MI",
+            "title": "WearCheck - How to Take Oil Samples from Fleet Machines",
+            "author": "WearCheck Video",
+            "thumbnail_url": "https://i.ytimg.com/vi/ypiqyyCR9MI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ypiqyyCR9MI"
+          },
+          {
+            "video_id": "uI8BuTxXRzU",
+            "title": "Contamination Control | Oil Sampling Tips | PM Truck Maintenance",
+            "author": "Cat® Products",
+            "thumbnail_url": "https://i.ytimg.com/vi/uI8BuTxXRzU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=uI8BuTxXRzU"
+          },
+          {
+            "video_id": "H6xXORaU7Jo",
+            "title": "How Does Equipment Leasing Work?",
+            "author": "Joe Camberato",
+            "thumbnail_url": "https://i.ytimg.com/vi/H6xXORaU7Jo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=H6xXORaU7Jo"
+          },
+          {
+            "video_id": "oP0hP2pgigg",
+            "title": "Best Equipment Financing Options & Loans of 2026",
+            "author": "Brennan Valeski",
+            "thumbnail_url": "https://i.ytimg.com/vi/oP0hP2pgigg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=oP0hP2pgigg"
+          },
+          {
+            "video_id": "I8ZezTXbvqQ",
+            "title": "How I Built an Equipment Finance Business (No Ads)",
+            "author": "Jermane Cheathem",
+            "thumbnail_url": "https://i.ytimg.com/vi/I8ZezTXbvqQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=I8ZezTXbvqQ"
+          },
+          {
+            "video_id": "ZHcW7oPHW5Q",
+            "title": "What Banks Don't Tell You About Equipment Financing",
+            "author": "850 Club Credit",
+            "thumbnail_url": "https://i.ytimg.com/vi/ZHcW7oPHW5Q/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ZHcW7oPHW5Q"
+          },
+          {
+            "video_id": "DaTuV1-Fst0",
+            "title": "Insider's Canadian Brokerage Guide [Equipment financing and leasing]",
+            "author": "Mehmi Financial Group",
+            "thumbnail_url": "https://i.ytimg.com/vi/DaTuV1-Fst0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=DaTuV1-Fst0"
+          },
+          {
+            "video_id": "z_9T-5cJEc0",
+            "title": "5 Best Construction Fleet Management Software for Mixed Fleets in 2026 #constructionequipment",
+            "author": "Simply Fleet",
+            "thumbnail_url": "https://i.ytimg.com/vi/z_9T-5cJEc0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=z_9T-5cJEc0"
+          },
+          {
+            "video_id": "sNcACw9iXI0",
+            "title": "Fleet Strategy for Contractors: Preventive Maintenance, KPIs & CFO Insights (Yvette Aubin)",
+            "author": "Beiing Human",
+            "thumbnail_url": "https://i.ytimg.com/vi/sNcACw9iXI0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=sNcACw9iXI0"
+          },
+          {
+            "video_id": "yQ90kncuf9w",
+            "title": "How Construction Equipment Rental Actually Makes Money",
+            "author": "Wealth Pilot",
+            "thumbnail_url": "https://i.ytimg.com/vi/yQ90kncuf9w/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=yQ90kncuf9w"
+          },
+          {
+            "video_id": "kAP9Lw8qKFA",
+            "title": "How to Build A Fleet with Rent to Own Construction Equipment",
+            "author": "RDO Equipment Co.",
+            "thumbnail_url": "https://i.ytimg.com/vi/kAP9Lw8qKFA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=kAP9Lw8qKFA"
+          },
+          {
+            "video_id": "vMpMiRzIO2E",
+            "title": "Farm and Fleet Trailers | Construction & Contractor Trailers",
+            "author": "Stellar Industries",
+            "thumbnail_url": "https://i.ytimg.com/vi/vMpMiRzIO2E/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=vMpMiRzIO2E"
+          },
+          {
+            "video_id": "w3saQAgnyLI",
+            "title": "This Contractor Salvages Flood-Damaged Equipment to Boost Fleet",
+            "author": "EquipmentWorld",
+            "thumbnail_url": "https://i.ytimg.com/vi/w3saQAgnyLI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=w3saQAgnyLI"
+          },
+          {
+            "video_id": "ZBn220SIMz4",
+            "title": "Thomas Index Report: Sourcing activity for Construction Contractors.",
+            "author": "Thomas",
+            "thumbnail_url": "https://i.ytimg.com/vi/ZBn220SIMz4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ZBn220SIMz4"
+          },
+          {
+            "video_id": "hZMms1qvx1s",
+            "title": "UCC Performance & Warranties — Contracts",
+            "author": "BARGO NextGen Bar Prep",
+            "thumbnail_url": "https://i.ytimg.com/vi/hZMms1qvx1s/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=hZMms1qvx1s"
+          },
+          {
+            "video_id": "9kP-CdkchRk",
+            "title": "You Bought a Dying Auction House for $175,000. Now It Earns $500K/Year Selling Other People’s Stuff.",
+            "author": "Plain Finance",
+            "thumbnail_url": "https://i.ytimg.com/vi/9kP-CdkchRk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=9kP-CdkchRk"
+          },
+          {
+            "video_id": "QI2WPiqDHqE",
+            "title": "Farm BANKRUPTCY Auction",
+            "author": "PatrickShivers",
+            "thumbnail_url": "https://i.ytimg.com/vi/QI2WPiqDHqE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=QI2WPiqDHqE"
+          },
+          {
+            "video_id": "vxI956OLj9E",
+            "title": "Farm BANKRUPTCY Auction Part 2",
+            "author": "PatrickShivers",
+            "thumbnail_url": "https://i.ytimg.com/vi/vxI956OLj9E/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=vxI956OLj9E"
+          },
+          {
+            "video_id": "lExAdQTwxNk",
+            "title": "Why the Pentagon Is Forced to Auction Brand-New Bulldozers as “Unserviceable Scrap”",
+            "author": "Vantor Surplus",
+            "thumbnail_url": "https://i.ytimg.com/vi/lExAdQTwxNk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=lExAdQTwxNk"
+          },
+          {
+            "video_id": "jfdR4HzT3cU",
+            "title": "Who Buys Used Data Center UPS, Switchgear and Generators?",
+            "author": "Reclaim Atlas",
+            "thumbnail_url": "https://i.ytimg.com/vi/jfdR4HzT3cU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=jfdR4HzT3cU"
+          },
+          {
+            "video_id": "6nfvCdjM9lM",
+            "title": "Module 3A Summary | Data Center Electrical Equipment | Utility, MV Switchgear & Transformers",
+            "author": "Vision Matrix Institute",
+            "thumbnail_url": "https://i.ytimg.com/vi/6nfvCdjM9lM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=6nfvCdjM9lM"
+          },
+          {
+            "video_id": "hukziWCxjUY",
+            "title": "Transformers (Tx) | Data Centre Equipment Series Ep.2",
+            "author": "Broma Engineering",
+            "thumbnail_url": "https://i.ytimg.com/vi/hukziWCxjUY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=hukziWCxjUY"
+          },
+          {
+            "video_id": "nico3vxC_dA",
+            "title": "Data Center Electrical Load Calculations Explained | UPS, Transformer & Generator Sizing",
+            "author": "Keentel Engineering",
+            "thumbnail_url": "https://i.ytimg.com/vi/nico3vxC_dA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=nico3vxC_dA"
+          },
+          {
+            "video_id": "kE7QqYqWub8",
+            "title": "Data Center Electrical Design: Grid to Server Rack",
+            "author": "Keentel Engineering",
+            "thumbnail_url": "https://i.ytimg.com/vi/kE7QqYqWub8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=kE7QqYqWub8"
+          },
+          {
+            "video_id": "87nsgCs4Tzs",
+            "title": "Executive Desk With Wireless Charging and Hidden Drawer",
+            "author": "The Wood Whisperer",
+            "thumbnail_url": "https://i.ytimg.com/vi/87nsgCs4Tzs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=87nsgCs4Tzs"
+          },
+          {
+            "video_id": "sF15mNe2_l4",
+            "title": "Wire Transfer Fraud - How To Protect Yourself And How To Prevent Yourself From Becoming a Victim 💸💸💸",
+            "author": "Living in Fort Myers",
+            "thumbnail_url": "https://i.ytimg.com/vi/sF15mNe2_l4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=sF15mNe2_l4"
+          },
+          {
+            "video_id": "aLJ1Y8lZsRs",
+            "title": "Yusuf Ali - 188k Fraud - Wire Fraud - Equipment Fraud, identity fraud and Mortgage Fraud",
+            "author": "jesseleblancatlanta",
+            "thumbnail_url": "https://i.ytimg.com/vi/aLJ1Y8lZsRs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=aLJ1Y8lZsRs"
+          },
+          {
+            "video_id": "6UVHinO3tHg",
+            "title": "Heavy Equipment Online Selling Scams",
+            "author": "Boom & Bucket",
+            "thumbnail_url": "https://i.ytimg.com/vi/6UVHinO3tHg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=6UVHinO3tHg"
+          },
+          {
+            "video_id": "t7mTa6TooFk",
+            "title": "Machinery Pete: Unprecedented Auction Numbers",
+            "author": "Farm Journal",
+            "thumbnail_url": "https://i.ytimg.com/vi/t7mTa6TooFk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=t7mTa6TooFk"
+          },
+          {
+            "video_id": "RtJspDtsC2M",
+            "title": "Machinery Pete: Late Models Are Hot Sellers",
+            "author": "Farm Journal",
+            "thumbnail_url": "https://i.ytimg.com/vi/RtJspDtsC2M/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=RtJspDtsC2M"
+          },
+          {
+            "video_id": "9DUEHNOY4mw",
+            "title": "2024 CaseIH Steiger 645 QuadTrac - Comparing Auction Prices Now vs Year Ago",
+            "author": "Machinery Pete",
+            "thumbnail_url": "https://i.ytimg.com/vi/9DUEHNOY4mw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=9DUEHNOY4mw"
+          },
+          {
+            "video_id": "wuBUPvkp-d8",
+            "title": "Machinery Pete: John Deere 4430 Price Comparison",
+            "author": "Farm Journal",
+            "thumbnail_url": "https://i.ytimg.com/vi/wuBUPvkp-d8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=wuBUPvkp-d8"
+          },
+          {
+            "video_id": "S8sjPgCnSag",
+            "title": "Machinery Pete: Changes in Late Model Tractor Prices",
+            "author": "Farm Journal",
+            "thumbnail_url": "https://i.ytimg.com/vi/S8sjPgCnSag/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=S8sjPgCnSag"
+          },
+          {
+            "video_id": "67cXMHAndKQ",
+            "title": "Machinery Pete: Highest Auction Price on Combines Each of Past 18 Years",
+            "author": "Machinery Pete",
+            "thumbnail_url": "https://i.ytimg.com/vi/67cXMHAndKQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=67cXMHAndKQ"
+          },
+          {
+            "video_id": "obq_-8IhG18",
+            "title": "Auction Sale Prices on Sprayers Now vs 10, 20 Years Ago",
+            "author": "Machinery Pete",
+            "thumbnail_url": "https://i.ytimg.com/vi/obq_-8IhG18/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=obq_-8IhG18"
+          },
+          {
+            "video_id": "DSk-SojWGxU",
+            "title": "Don't like used equipment prices? It could get worse, says Machinery Pete",
+            "author": "RealAgriculture",
+            "thumbnail_url": "https://i.ytimg.com/vi/DSk-SojWGxU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=DSk-SojWGxU"
+          },
+          {
+            "video_id": "8dTCmixzqP0",
+            "title": "Auction Prices Softening on 1-4 Year Old Combines",
+            "author": "Machinery Pete",
+            "thumbnail_url": "https://i.ytimg.com/vi/8dTCmixzqP0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=8dTCmixzqP0"
+          },
+          {
+            "video_id": "JxE8MNAqxhQ",
+            "title": "KDK Sales & Equipment On How AuctionTime Helps Them Get The Best Auction Deals For Their Clients",
+            "author": "AuctionTime",
+            "thumbnail_url": "https://i.ytimg.com/vi/JxE8MNAqxhQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=JxE8MNAqxhQ"
+          },
+          {
+            "video_id": "VQXQTmAfjjo",
+            "title": "Dealer paperwork (consignment and sales forms)",
+            "author": "OnWaterTVAustralia",
+            "thumbnail_url": "https://i.ytimg.com/vi/VQXQTmAfjjo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=VQXQTmAfjjo"
+          },
+          {
+            "video_id": "rL0RrJnr_oM",
+            "title": "How to Start an Excavation Business (Full Guide + Equipment Tour)",
+            "author": "Everything Elliott",
+            "thumbnail_url": "https://i.ytimg.com/vi/rL0RrJnr_oM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=rL0RrJnr_oM"
+          },
+          {
+            "video_id": "Lx3Lqgr9q3w",
+            "title": "How Construction Equipment Rental Business Owners Actually Make Money",
+            "author": "Marginomics",
+            "thumbnail_url": "https://i.ytimg.com/vi/Lx3Lqgr9q3w/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Lx3Lqgr9q3w"
+          },
+          {
+            "video_id": "RAnImnWafHA",
+            "title": "How Construction Equipment Rental Actually Makes Money",
+            "author": "MONEY IQ",
+            "thumbnail_url": "https://i.ytimg.com/vi/RAnImnWafHA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=RAnImnWafHA"
+          },
+          {
+            "video_id": "PRVmIh3pKOY",
+            "title": "Bulldozer Training (Beginner) | Heavy Equipment Operator Training",
+            "author": "Heavy Metal Learning",
+            "thumbnail_url": "https://i.ytimg.com/vi/PRVmIh3pKOY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=PRVmIh3pKOY"
+          },
+          {
+            "video_id": "Qiyq7yhmD2o",
+            "title": "Chartered Engineer Certificate | Used Machinery Import | CEC Case Study: 2005 Machine, 2026 Retrofit",
+            "author": "SARK Engineers & COnsultants",
+            "thumbnail_url": "https://i.ytimg.com/vi/Qiyq7yhmD2o/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Qiyq7yhmD2o"
+          },
+          {
+            "video_id": "4aHgTjO_vNI",
+            "title": "How To Make More Money Buying or Selling Used Equipment and Heavy Machinery",
+            "author": "Pav Jam",
+            "thumbnail_url": "https://i.ytimg.com/vi/4aHgTjO_vNI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=4aHgTjO_vNI"
+          },
+          {
+            "video_id": "RYIylD9d-3Y",
+            "title": "Machinery Manager Demo | Equipment Dealer Management Software",
+            "author": "MachineTools.com",
+            "thumbnail_url": "https://i.ytimg.com/vi/RYIylD9d-3Y/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=RYIylD9d-3Y"
+          },
+          {
+            "video_id": "N8JVT_KpmGc",
+            "title": "MachinesUsed.com Company Video",
+            "author": "MachinesUsed",
+            "thumbnail_url": "https://i.ytimg.com/vi/N8JVT_KpmGc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=N8JVT_KpmGc"
+          },
+          {
+            "video_id": "x7M1QNicFvc",
+            "title": "How To Buy From Machinery Auctions (5 Tips for Cheap Tools)",
+            "author": "Make Everything",
+            "thumbnail_url": "https://i.ytimg.com/vi/x7M1QNicFvc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=x7M1QNicFvc"
+          },
+          {
+            "video_id": "M5DbDgTFVeY",
+            "title": "CNC Machining Explained: How Precision Parts Are Made",
+            "author": "MICHAEL WANG",
+            "thumbnail_url": "https://i.ytimg.com/vi/M5DbDgTFVeY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=M5DbDgTFVeY"
+          },
+          {
+            "video_id": "ufN_5j5epkw",
+            "title": "How CNC Machines Manufacture PARFECT Aircraft Parts ✈️ | Inside a $Million Aerospace Factory",
+            "author": "IndustrialX",
+            "thumbnail_url": "https://i.ytimg.com/vi/ufN_5j5epkw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ufN_5j5epkw"
+          },
+          {
+            "video_id": "pK4RGE_1My4",
+            "title": "FMCSA Compliance EXPLAINED: What Every Truck Driver & Carrier MUST Know in 2025!",
+            "author": "FMCSA REGISTRATION dot com",
+            "thumbnail_url": "https://i.ytimg.com/vi/pK4RGE_1My4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=pK4RGE_1My4"
+          },
+          {
+            "video_id": "HRlIiVKracc",
+            "title": "How Many Freight Brokers Lose Their Authority? (FMCSA Data Study) | Transportli",
+            "author": "Transportli",
+            "thumbnail_url": "https://i.ytimg.com/vi/HRlIiVKracc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=HRlIiVKracc"
+          },
+          {
+            "video_id": "qJ2zB-OEb8o",
+            "title": "Defining FMCSA Operating Authority Types for Freight Forwarders and Brokers (FMCSA OFFICIAL VIDEO)",
+            "author": "FMCSA",
+            "thumbnail_url": "https://i.ytimg.com/vi/qJ2zB-OEb8o/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=qJ2zB-OEb8o"
+          },
+          {
+            "video_id": "ZSZAVstSGl8",
+            "title": "Big Win! FMCSA Will Shutdown Thousands Of Freight Brokers In 2026 🤯",
+            "author": "Mutha Trucker - Official Trucking Channel",
+            "thumbnail_url": "https://i.ytimg.com/vi/ZSZAVstSGl8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ZSZAVstSGl8"
+          },
+          {
+            "video_id": "5KIDTEBQD18",
+            "title": "FMCSA Just Changed These Rules.. Here's What It Means for Truckers",
+            "author": "thatDOTcop",
+            "thumbnail_url": "https://i.ytimg.com/vi/5KIDTEBQD18/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=5KIDTEBQD18"
+          },
+          {
+            "video_id": "6q-JpVNYBwE",
+            "title": "Semi-Truck Maintenance Tips Every Driver Should Know",
+            "author": "FMCSA REGISTRATION dot com",
+            "thumbnail_url": "https://i.ytimg.com/vi/6q-JpVNYBwE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=6q-JpVNYBwE"
+          },
+          {
+            "video_id": "Py7IK0wId1k",
+            "title": "Behind the Scenes of Bringing Imaging Systems Back to Life",
+            "author": "Block Imaging",
+            "thumbnail_url": "https://i.ytimg.com/vi/Py7IK0wId1k/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Py7IK0wId1k"
+          },
+          {
+            "video_id": "uElb8NdCkUQ",
+            "title": "Step-by-Step Guide to Diagnosing and Repairing MRI Equipment.",
+            "author": "Phinnastads Biomedical Limited",
+            "thumbnail_url": "https://i.ytimg.com/vi/uElb8NdCkUQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=uElb8NdCkUQ"
+          },
+          {
+            "video_id": "Qy6qJxkOhZk",
+            "title": "Success : Hitachi Medical Systems Solution for Medical Imaging in Egypt",
+            "author": "Hitachi",
+            "thumbnail_url": "https://i.ytimg.com/vi/Qy6qJxkOhZk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Qy6qJxkOhZk"
+          },
+          {
+            "video_id": "6RIRTBKk1fU",
+            "title": "Buying on Ritchie Brothers IronPlant online Auction (my experience)",
+            "author": "Mike Dobronos",
+            "thumbnail_url": "https://i.ytimg.com/vi/6RIRTBKk1fU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=6RIRTBKk1fU"
+          },
+          {
+            "video_id": "PHnFlcmti2s",
+            "title": "Inside a Live Ritchie Bros Auction (Full Strategy Revealed)",
+            "author": "ET Transport",
+            "thumbnail_url": "https://i.ytimg.com/vi/PHnFlcmti2s/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=PHnFlcmti2s"
+          },
+          {
+            "video_id": "ubGpPmWhLFE",
+            "title": "BUYING EQUIPMENT LIVE AT THE RITCHIE BROTHERS AUCTION!",
+            "author": "ET Transport",
+            "thumbnail_url": "https://i.ytimg.com/vi/ubGpPmWhLFE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ubGpPmWhLFE"
+          },
+          {
+            "video_id": "keHIfejYGN8",
+            "title": "COMPRA Y VENDE MAQUINARIA EN RITCHIE BROS MÉXICO ¡AQUÍ TE DECIMOS CÓMO!",
+            "author": "Sobre Orugas",
+            "thumbnail_url": "https://i.ytimg.com/vi/keHIfejYGN8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=keHIfejYGN8"
+          },
+          {
+            "video_id": "UnNSCtlW-0k",
+            "title": "Ritchie Bros. Auctions Explained: What Every Seller Needs to Know Before Listing",
+            "author": "ET Transport",
+            "thumbnail_url": "https://i.ytimg.com/vi/UnNSCtlW-0k/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=UnNSCtlW-0k"
+          },
+          {
+            "video_id": "vUTKwba3CBk",
+            "title": "Getting Screwed at a Ritchie Brothers Auction!",
+            "author": "Makers Acres",
+            "thumbnail_url": "https://i.ytimg.com/vi/vUTKwba3CBk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=vUTKwba3CBk"
+          },
+          {
+            "video_id": "cNP1VdOt1J4",
+            "title": "Gambling On Inoperable Equipment At The Ritchie Bros Auction!",
+            "author": "Diesel Down Under",
+            "thumbnail_url": "https://i.ytimg.com/vi/cNP1VdOt1J4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=cNP1VdOt1J4"
+          },
+          {
+            "video_id": "InQ7-NaPvxs",
+            "title": "10 Cheap Machines That Turn Trash Into Cash (Start From Home)",
+            "author": "Garage Profits",
+            "thumbnail_url": "https://i.ytimg.com/vi/InQ7-NaPvxs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=InQ7-NaPvxs"
+          },
+          {
+            "video_id": "edx6wEhgoE8",
+            "title": "First time Buying Equipment from Ritchie Bros Online Auctioneers",
+            "author": "613 Equipment Rentals",
+            "thumbnail_url": "https://i.ytimg.com/vi/edx6wEhgoE8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=edx6wEhgoE8"
+          },
+          {
+            "video_id": "wzN9KKrhTBo",
+            "title": "BUYING EQUIPMENT LIVE AT THE RITCHIE BROTHERS AUCTION! 📱",
+            "author": "ET Transport",
+            "thumbnail_url": "https://i.ytimg.com/vi/wzN9KKrhTBo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=wzN9KKrhTBo"
+          },
+          {
+            "video_id": "xUze3OGayRk",
+            "title": "Cómo comprar o vender en las subastas de Ritchie Bros México",
+            "author": "Sobre Orugas",
+            "thumbnail_url": "https://i.ytimg.com/vi/xUze3OGayRk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=xUze3OGayRk"
+          },
+          {
+            "video_id": "iFwSrSGEDcQ",
+            "title": "Inside Ritchie Brothers Auction: Full Lot Tour Before the Bidding Begins!",
+            "author": "The DIY Contractor - Real Fixes",
+            "thumbnail_url": "https://i.ytimg.com/vi/iFwSrSGEDcQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=iFwSrSGEDcQ"
+          },
+          {
+            "video_id": "DZYNxJ75ASA",
+            "title": "Purchasing Construction Equipment at a Ritchie Brothers Auction",
+            "author": "I Am a Hardscaper",
+            "thumbnail_url": "https://i.ytimg.com/vi/DZYNxJ75ASA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=DZYNxJ75ASA"
+          },
+          {
+            "video_id": "-vmGbnB5rJM",
+            "title": "UCC LIENS: What is a UCC 1, #assetprotection for my #car #home #house #family #business & #property",
+            "author": "KONSTANT LAW",
+            "thumbnail_url": "https://i.ytimg.com/vi/-vmGbnB5rJM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=-vmGbnB5rJM"
+          },
+          {
+            "video_id": "QJwDP5kwtJ4",
+            "title": "How to properly do a UCC1 Financing Statement: Step by Step Inst. for the \"Strawman\" Commercial Lien",
+            "author": "Badwolf Unincorporated",
+            "thumbnail_url": "https://i.ytimg.com/vi/QJwDP5kwtJ4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=QJwDP5kwtJ4"
+          },
+          {
+            "video_id": "YyZcRwETdeA",
+            "title": "Performing Undercarriage Inspection and Measurements",
+            "author": "Jim Mack",
+            "thumbnail_url": "https://i.ytimg.com/vi/YyZcRwETdeA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=YyZcRwETdeA"
+          },
+          {
+            "video_id": "ALXdY2bAHV0",
+            "title": "Learn Oil Analysis - How to read an oil sample report",
+            "author": "Oil Analysis",
+            "thumbnail_url": "https://i.ytimg.com/vi/ALXdY2bAHV0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ALXdY2bAHV0"
+          },
+          {
+            "video_id": "QYimn88ydQI",
+            "title": "Why Oil Analysis Should Be Part of Your Preventative Maintenance Program",
+            "author": "EquipmentWorld",
+            "thumbnail_url": "https://i.ytimg.com/vi/QYimn88ydQI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=QYimn88ydQI"
+          },
+          {
+            "video_id": "JCDyzlYC0h0",
+            "title": "Undercarriage Inspection Video",
+            "author": "Komatsu Australia",
+            "thumbnail_url": "https://i.ytimg.com/vi/JCDyzlYC0h0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=JCDyzlYC0h0"
+          },
+          {
+            "video_id": "Ua7mCs7DMsw",
+            "title": "How to Get Equipment Financing in 4 Hours (Rates from 6.99%)",
+            "author": "Equipment Finance Academy",
+            "thumbnail_url": "https://i.ytimg.com/vi/Ua7mCs7DMsw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Ua7mCs7DMsw"
+          },
+          {
+            "video_id": "yAx4SRG_bfs",
+            "title": "Equipment Financing Made Simple | How to Get an Equipment Loan",
+            "author": "NerdWallet Small Business",
+            "thumbnail_url": "https://i.ytimg.com/vi/yAx4SRG_bfs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=yAx4SRG_bfs"
+          },
+          {
+            "video_id": "YIQEV-r00oA",
+            "title": "The Referral Partner System That Pays $10k/Month",
+            "author": "Equipment Finance Academy",
+            "thumbnail_url": "https://i.ytimg.com/vi/YIQEV-r00oA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=YIQEV-r00oA"
+          },
+          {
+            "video_id": "kOdpTliR_HM",
+            "title": "The Process For Getting An Equipment Finance Deal Funded",
+            "author": "BizLoanConsultants.com",
+            "thumbnail_url": "https://i.ytimg.com/vi/kOdpTliR_HM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=kOdpTliR_HM"
+          },
+          {
+            "video_id": "djeL371Rgio",
+            "title": "How to Manage Construction Equipment in Onsite | Complete Equipment Tracking Tutorial",
+            "author": "Onsite Construction Management Software",
+            "thumbnail_url": "https://i.ytimg.com/vi/djeL371Rgio/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=djeL371Rgio"
+          },
+          {
+            "video_id": "jLx7fLatA3A",
+            "title": "How to Track Material, Equipment & Subcontractor Costs by Job",
+            "author": "The Profitable Contractor",
+            "thumbnail_url": "https://i.ytimg.com/vi/jLx7fLatA3A/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=jLx7fLatA3A"
+          },
+          {
+            "video_id": "HIhx8sY-aac",
+            "title": "Fleet Management Guide for Heavy Construction Equipment and Trucks",
+            "author": "Equipment & Contracting",
+            "thumbnail_url": "https://i.ytimg.com/vi/HIhx8sY-aac/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=HIhx8sY-aac"
+          },
+          {
+            "video_id": "Cbg13em0UgE",
+            "title": "HeavyJob Case Study | Companies Describe Their Favorite HeavyJob Features",
+            "author": "HCSS Software",
+            "thumbnail_url": "https://i.ytimg.com/vi/Cbg13em0UgE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Cbg13em0UgE"
+          },
+          {
+            "video_id": "Xv99UO78lCE",
+            "title": "Building the Ultimate Work Truck | A Guide for Contractors and Equipment Suppliers",
+            "author": "Equipment & Contracting",
+            "thumbnail_url": "https://i.ytimg.com/vi/Xv99UO78lCE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Xv99UO78lCE"
+          },
+          {
+            "video_id": "HYAVjNrf5t4",
+            "title": "Projects & Inventory in JobBadger | Track Equipment and Materials by Job Site",
+            "author": "JobBadger | Field Crew Scheduling Software",
+            "thumbnail_url": "https://i.ytimg.com/vi/HYAVjNrf5t4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=HYAVjNrf5t4"
+          },
+          {
+            "video_id": "YIO9pJXqFeY",
+            "title": "Sales Law | Implied Warranty of Fitness | Lesson 20 of 26",
+            "author": "Quimbee",
+            "thumbnail_url": "https://i.ytimg.com/vi/YIO9pJXqFeY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=YIO9pJXqFeY"
+          },
+          {
+            "video_id": "bdE6IB8ry4w",
+            "title": "Contracts L45 Part 2: Warranties: express, merchantability and fitness | Lewis v. Mobil Oil",
+            "author": "First Year Law - CONTRACTS",
+            "thumbnail_url": "https://i.ytimg.com/vi/bdE6IB8ry4w/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=bdE6IB8ry4w"
+          },
+          {
+            "video_id": "XuXHM5is32c",
+            "title": "Kelsey-Hayes Windsor: How Global Outsourcing Destroyed Canada's Leading Wheel Manufacturer ?",
+            "author": "Forgotten Factories Canada",
+            "thumbnail_url": "https://i.ytimg.com/vi/XuXHM5is32c/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=XuXHM5is32c"
+          },
+          {
+            "video_id": "aUfYWzHSUyY",
+            "title": "earn rs. 12.0 lakhs by exporting tractor combine harvester I how to export tractor combine harvester",
+            "author": "Rajeev Saini -International Business Trainer",
+            "thumbnail_url": "https://i.ytimg.com/vi/aUfYWzHSUyY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=aUfYWzHSUyY"
+          },
+          {
+            "video_id": "xJ1cFeX3gjs",
+            "title": "How Do Data Centers Get Power? (Grid to Server, Explained)",
+            "author": "BIMandbeam",
+            "thumbnail_url": "https://i.ytimg.com/vi/xJ1cFeX3gjs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=xJ1cFeX3gjs"
+          },
+          {
+            "video_id": "o7egpgd1LLI",
+            "title": "How Data Center Power Works | UPS, Generators, PDU & Redundancy",
+            "author": "NexLayer Tech",
+            "thumbnail_url": "https://i.ytimg.com/vi/o7egpgd1LLI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=o7egpgd1LLI"
+          },
+          {
+            "video_id": "UxhrvcRGfdc",
+            "title": "Why Data Centers Use Smaller Gas Turbines | 624 MW Power Plant Explained | Keentel Engineering",
+            "author": "Keentel Engineering",
+            "thumbnail_url": "https://i.ytimg.com/vi/UxhrvcRGfdc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=UxhrvcRGfdc"
+          },
+          {
+            "video_id": "XbQmSseBtI8",
+            "title": "Ask Machinery Pete: Good Deal?",
+            "author": "Machinery Pete",
+            "thumbnail_url": "https://i.ytimg.com/vi/XbQmSseBtI8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=XbQmSseBtI8"
+          },
+          {
+            "video_id": "60uc8gnDCiY",
+            "title": "How To Estimate Equipment Cost In Construction",
+            "author": "George Hedley | HardHat BIZCOACH",
+            "thumbnail_url": "https://i.ytimg.com/vi/60uc8gnDCiY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=60uc8gnDCiY"
+          },
+          {
+            "video_id": "hSi6LwGZ_WY",
+            "title": "Machinery Pete: Heavy Equipment Sales",
+            "author": "Farm Journal",
+            "thumbnail_url": "https://i.ytimg.com/vi/hSi6LwGZ_WY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=hSi6LwGZ_WY"
+          },
+          {
+            "video_id": "F80Wku6kGE0",
+            "title": "2 Factors That Could Affect Used Farm Equipment Values Going Forward",
+            "author": "Machinery Pete",
+            "thumbnail_url": "https://i.ytimg.com/vi/F80Wku6kGE0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=F80Wku6kGE0"
+          },
+          {
+            "video_id": "3oDXLUOs8DU",
+            "title": "Machinery Pete Current Equipment Market Chat with Luke Fritshaw with Ritchie Bros",
+            "author": "Machinery Pete",
+            "thumbnail_url": "https://i.ytimg.com/vi/3oDXLUOs8DU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=3oDXLUOs8DU"
+          },
+          {
+            "video_id": "_yl0gY1cWj8",
+            "title": "Machinery Pete TV: February 25, 2023",
+            "author": "Farm Journal",
+            "thumbnail_url": "https://i.ytimg.com/vi/_yl0gY1cWj8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=_yl0gY1cWj8"
+          },
+          {
+            "video_id": "KWBdujV7H9Q",
+            "title": "Episode 4 - How To Calculate Your Hourly Equipment Costs",
+            "author": "Build Like A Pro TV",
+            "thumbnail_url": "https://i.ytimg.com/vi/KWBdujV7H9Q/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=KWBdujV7H9Q"
+          },
+          {
+            "video_id": "zK9IyH3CceE",
+            "title": "Is Your Equipment Value Falling? September 2026 Market Report",
+            "author": "Nick Mitchell",
+            "thumbnail_url": "https://i.ytimg.com/vi/zK9IyH3CceE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=zK9IyH3CceE"
+          },
+          {
+            "video_id": "Rz6KNtveaDU",
+            "title": "John Deere 7810 and 7320 Tractors Bring Record Money on Maryland Auction | MPTV",
+            "author": "Machinery Pete",
+            "thumbnail_url": "https://i.ytimg.com/vi/Rz6KNtveaDU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Rz6KNtveaDU"
+          },
+          {
+            "video_id": "8w7SLSenX5k",
+            "title": "What is consignment?",
+            "author": "HGreg Lux",
+            "thumbnail_url": "https://i.ytimg.com/vi/8w7SLSenX5k/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=8w7SLSenX5k"
+          },
+          {
+            "video_id": "QBNPafDHXLE",
+            "title": "6 Steps to Become a Freight Broker in 2026 (No Experience Needed)",
+            "author": "Matt Krause",
+            "thumbnail_url": "https://i.ytimg.com/vi/QBNPafDHXLE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=QBNPafDHXLE"
+          },
+          {
+            "video_id": "Og3Yj20ldiY",
+            "title": "How to Become a Heavy Equipment Operator (Step-by-Step Guide)",
+            "author": "The Job Library",
+            "thumbnail_url": "https://i.ytimg.com/vi/Og3Yj20ldiY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Og3Yj20ldiY"
+          },
+          {
+            "video_id": "maIDknW4DME",
+            "title": "HOW TO GET A JOB RUNNING HEAVY EQUIPMENT || How to get a job as a heavy equipment operator",
+            "author": "Diesel and Iron",
+            "thumbnail_url": "https://i.ytimg.com/vi/maIDknW4DME/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=maIDknW4DME"
+          },
+          {
+            "video_id": "2ln9T1--E-I",
+            "title": "Guide To Starting A Profitable Equipment Rental Business",
+            "author": "Lenny Tim",
+            "thumbnail_url": "https://i.ytimg.com/vi/2ln9T1--E-I/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=2ln9T1--E-I"
+          },
+          {
+            "video_id": "BoQ7bHu0IZE",
+            "title": "Starting A Machine Shop In 2025: Zero Experience Guide",
+            "author": "MachineshopLaunchpad",
+            "thumbnail_url": "https://i.ytimg.com/vi/BoQ7bHu0IZE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=BoQ7bHu0IZE"
+          },
+          {
+            "video_id": "en-0Xomp1UQ",
+            "title": "How I am Starting a Car Dealership with less than $5,000",
+            "author": "Flying Wheels",
+            "thumbnail_url": "https://i.ytimg.com/vi/en-0Xomp1UQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=en-0Xomp1UQ"
           }
         ],
         "research_reference_only": true,
@@ -14688,7 +15934,7 @@
         "asset_id": "verbatim_transcript_quotes",
         "asset": "data/transcripts/*.json -> segments[].text",
         "asset_type": "verbatim_transcript_passage",
-        "source": "Spoken content of 1704 third-party videos (15850 captured tips)",
+        "source": "Spoken content of 1882 third-party videos (17393 captured tips)",
         "research_reference_only": true,
         "commercial_republish_allowed": false,
         "commercial_use_allowed": false,
@@ -14704,38 +15950,38 @@
     ]
   },
   "corpus_metrics": {
-    "video_count": 1704,
-    "channel_count": 1114,
-    "total_words": 2471044,
-    "total_hours": 480.57,
-    "total_pro_tips": 15850,
-    "unique_statutes_and_forms": 850,
-    "unique_tools_and_portals": 5157
+    "video_count": 1882,
+    "channel_count": 1242,
+    "total_words": 2638379,
+    "total_hours": 516.18,
+    "total_pro_tips": 17393,
+    "unique_statutes_and_forms": 904,
+    "unique_tools_and_portals": 5607
   },
   "coverage": {
-    "videos_classified": 1704,
-    "videos_with_multiple_topics": 1702,
-    "tips_classified": 15850,
-    "raw_transcripts_joined": 1704,
+    "videos_classified": 1882,
+    "videos_with_multiple_topics": 1880,
+    "tips_classified": 17393,
+    "raw_transcripts_joined": 1882,
     "topic_video_counts": {
-      "business_model_and_economics": 1279,
-      "probate_and_docket_sourcing": 1213,
-      "unclaimed_property_and_escheat": 542,
-      "genealogy_and_heirship_proof": 1438,
-      "skip_tracing_and_outreach": 1006,
-      "contracts_and_compensation": 1361,
-      "statutory_caps_and_licensing": 1321,
-      "automation_and_small_team_ops": 1381
+      "business_model_and_economics": 1417,
+      "probate_and_docket_sourcing": 1343,
+      "unclaimed_property_and_escheat": 576,
+      "genealogy_and_heirship_proof": 1588,
+      "skip_tracing_and_outreach": 1064,
+      "contracts_and_compensation": 1466,
+      "statutory_caps_and_licensing": 1464,
+      "automation_and_small_team_ops": 1489
     },
     "topic_tip_counts": {
-      "business_model_and_economics": 2903,
-      "probate_and_docket_sourcing": 1783,
-      "unclaimed_property_and_escheat": 1737,
-      "genealogy_and_heirship_proof": 1473,
-      "skip_tracing_and_outreach": 852,
-      "contracts_and_compensation": 1775,
-      "statutory_caps_and_licensing": 1135,
-      "automation_and_small_team_ops": 4192
+      "business_model_and_economics": 3162,
+      "probate_and_docket_sourcing": 1896,
+      "unclaimed_property_and_escheat": 1772,
+      "genealogy_and_heirship_proof": 1895,
+      "skip_tracing_and_outreach": 865,
+      "contracts_and_compensation": 1973,
+      "statutory_caps_and_licensing": 1232,
+      "automation_and_small_team_ops": 4598
     }
   },
   "schema_version": "1.0",
@@ -14973,10 +16219,10 @@
           "link": "https://www.youtube.com/watch?v=d5TLZqkPX14&t=233s"
         },
         {
-          "video_title": "Don't be a Victim of Broker NDA Agreements",
-          "author": "David C Barnett Small Business and Deal Making SMB",
-          "timestamp": "00:06:19",
-          "link": "https://www.youtube.com/watch?v=wHxYmcrcq4M&t=379s"
+          "video_title": "How To Estimate Equipment Cost In Construction",
+          "author": "George Hedley | HardHat BIZCOACH",
+          "timestamp": "00:01:45",
+          "link": "https://www.youtube.com/watch?v=60uc8gnDCiY&t=105s"
         }
       ]
     }

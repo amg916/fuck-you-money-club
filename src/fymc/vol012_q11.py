@@ -1,0 +1,684 @@
+from __future__ import annotations
+
+CHAPTER_11 = {
+    "id": "Q11",
+    "chapter_id": "Q11",
+    "chapter_number": 11,
+    "question_number": 11,
+    "slug": "pod-architecture-contractor-kpis-exit-valuation",
+    "question_prompt": "How do you structure a lean 1 FT + 3 C (4 people) -> 2 FT + 4 C (6 people) pod, enforce weekly scorecards, and build transferable books that command a premium exit multiple (or durable cash cow)?",
+    "kicker": "Q11 / THE BIG MONEY PLAYBOOKS",
+    "title": "Pod Architecture, Contractor KPIs & Exit Valuation",
+    "subtitle": "Seven Equipment Brokerage Plays, UCC Lien Releases, Escrow Controls, Contractor SLAs & Transferable Commission Books",
+    "layout_template": "action_checklist",
+    "reading_time_minutes": 14,
+    "executive_summary": (
+        "Candidate #11, Equipment Brokerage, ranks #12 with an 81/100 Money-to-Manpower "
+        "Score. Its seven mapped operating plays become transferable assets only when "
+        "seller mandates, inspection evidence, lien clearance, inventory matching, buyer "
+        "alerts, commission contracts, and escrow settlement share one accountable record. "
+        "Build the initial 1 FT + 3 C pod around founder judgment and specialist "
+        "deliverables; expand to 2 FT + 4 C only when earned commissions support the "
+        "added capacity. Canonical annual owner profits are $25,000 Conservative, "
+        "$157,500 Base, and $360,000 Scaled. This chapter specifies contractor economics, "
+        "weekly acceptance metrics, 25% concentration ceilings, accrual accounting, and "
+        "written IP transfers. Exit value comes from repeatable earnings after realistic "
+        "replacement labor, not equipment transaction value or an attractive contact list."
+    ),
+    "key_metrics": [
+        {
+            "label": "Conservative",
+            "value": "$100,000",
+            "context": "Annual broker commissions; excludes equipment transaction value",
+            "note": "25% net margin; $25,000 annual owner net profit; 1 FT + 3 C",
+        },
+        {
+            "label": "Base",
+            "value": "$450,000",
+            "context": "Annual broker commissions; excludes equipment transaction value",
+            "note": "35.0% net margin; $157,500 annual owner net profit; 1 FT + 3 C",
+        },
+        {
+            "label": "Scaled",
+            "value": "$800,000",
+            "context": "Annual broker commissions; excludes equipment transaction value",
+            "note": "45% net margin; $360,000 annual owner net profit; 2 FT + 4 C",
+        },
+    ],
+    "sections": [
+        {
+            "heading": "1. Assign seven plays to four seats before adding people",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Design the pod around accepted deal artifacts rather than job titles. "
+                    "For this chapter, map Candidate #11 into seven operating plays: seller "
+                    "mandates, inspection evidence, lien and title clearance, inventory "
+                    "matching, buyer alerts, negotiated commission contracts, and escrow "
+                    "settlement. These are workflow mappings, not seven separate businesses "
+                    "or seven revenue streams. In the initial 1 FT + 3 C structure, the "
+                    "founder owns seller authority, pricing judgment, negotiations, and "
+                    "exceptions. Contractor one owns catalog normalization, matching, and "
+                    "permissioned buyer alerts. Contractor two supplies independent "
+                    "equipment condition evidence. Contractor three assembles lien, title, "
+                    "and closing packets while an independent escrow provider controls "
+                    "settlement money. Service vendors are not additional dedicated pod "
+                    "seats. Give every play a primary owner, a reviewer, an acceptance "
+                    "artifact, and an escalation deadline in HubSpot or Airtable. A seller "
+                    "mandate must identify the legal owner, serial number, authority to "
+                    "sell, commission trigger, and exclusions. Heavy construction machines "
+                    "need hours and attachment schedules; CNC assets need controller, "
+                    "service, tooling, and rigging details; fleet assets need applicable "
+                    "title records; industrial lines need component boundaries. The founder "
+                    "reviews exceptions, not every field entry, so specialist output must "
+                    "be complete enough to survive a buyer's independent review."
+                ),
+                (
+                    "Buy contractor outputs with written scopes, not vague availability. "
+                    "Illustrative starting terms are $125 per accepted catalog packet plus "
+                    "4% of collected commissions on attributable introductions for the "
+                    "matching specialist; $650 per local inspection with travel separately "
+                    "authorized; and $300 per complete closing packet plus $200 after "
+                    "verified settlement for the transaction specialist. These are proposed "
+                    "procurement terms, not market averages, and they must fit the scenario "
+                    "expense envelope. At 45 Base closings, assuming one accepted catalog "
+                    "packet, inspection, and closing packet per closing, those terms cost "
+                    "$5,625, $29,250, and $22,500 respectively, plus $18,000 of referral "
+                    "compensation if every commission qualifies. Total modeled specialist "
+                    "cost is $75,375 before travel, abandoned files, and rework. Budget "
+                    "those additional costs explicitly rather than assuming every "
+                    "inspection converts. Define acceptance through serial matching, "
+                    "source-document completeness, disclosed exceptions, and corrected "
+                    "errors within two business days after notice. Pay for accepted work "
+                    "even when a legitimate deal fails; reserve contingent compensation "
+                    "for the separately defined success component. Contractors choose "
+                    "their methods and schedules within genuine service commitments. "
+                    "Evaluate actual worker classification under applicable federal and "
+                    "state tests; contract labels alone do not determine status. No "
+                    "specialist receives authority to change wire instructions or waive "
+                    "an unresolved ownership exception."
+                ),
+                (
+                    "Expand to 2 FT + 4 C by adding a full-time transaction lead and a "
+                    "contractor responsible for catalog quality and buyer-list stewardship. "
+                    "The founder then concentrates on mandates, major accounts, negotiation, "
+                    "and capital allocation. The transaction lead owns weekly scorecards, "
+                    "exceptions, closing readiness, and cross-training. The original "
+                    "matching contractor retains commercial introductions; the fourth "
+                    "contractor takes repetitive data maintenance, duplicate detection, "
+                    "and equipment taxonomy changes. Keep the inspection and lien-packet "
+                    "specialists independent of sales pressure. Require a documented "
+                    "capacity case before expansion: eight consecutive weeks of accepted "
+                    "work near the current service limit, measurable closing delays caused "
+                    "by capacity rather than weak demand, and unrestricted cash sufficient "
+                    "for the new commitments during a commission drought. Do not count "
+                    "unearned deposits or escrow balances as hiring cash. Establish "
+                    "coverage through documented handoffs and contracted substitute "
+                    "arrangements, not an invisible bench of unbudgeted people. Run a "
+                    "five-business-day founder absence test using live but routine files. "
+                    "Any stalled payoff request, unowned buyer response, or missing "
+                    "commission signature becomes a corrective action with a named owner. "
+                    "A transferable pod demonstrates that another competent operator can "
+                    "complete the same seven plays without borrowing the founder's memory "
+                    "or personal mailbox."
+                ),
+            ],
+            "table": {
+                "caption": "Four-Person Launch Pod and Six-Person Expansion Seat Matrix",
+                "headers": [
+                    "Seat and capacity",
+                    "Owned plays and accepted evidence",
+                    "Compensation or capacity discipline",
+                    "Quality boundary and substitution",
+                ],
+                "rows": [
+                    [
+                        "Founder occupies the single initial full-time operating seat",
+                        "Owns seller mandates, commission contracts, and commercial exceptions",
+                        "Owner economics follow the canonical scenario expense bridge",
+                        "Transaction lead later substitutes using signed negotiation limits",
+                    ],
+                    [
+                        "Matching specialist occupies the first independent contractor seat",
+                        "Owns inventory matching and attributable buyer introduction records",
+                        "Illustrative accepted packet fee plus collected commission participation",
+                        "Duplicate introductions require timestamped attribution before payout approval",
+                    ],
+                    [
+                        "Inspection specialist occupies the second independent contractor seat",
+                        "Owns photographed condition evidence and disclosed inspection limitations",
+                        "Illustrative inspection fee excludes separately authorized travel expenses",
+                        "Sales personnel cannot remove adverse findings from reports",
+                    ],
+                    [
+                        "Transaction specialist occupies the third independent contractor seat",
+                        "Owns lien evidence, release requests, and settlement packets",
+                        "Illustrative packet fee separates completion from settlement success",
+                        "Escrow provider independently verifies disbursement and beneficiary instructions",
+                    ],
+                    [
+                        "Transaction lead becomes the second full-time operating seat",
+                        "Owns weekly exceptions, closing readiness, and reviewer coverage",
+                        "Add fully loaded employment costs before authorizing expansion",
+                        "Founder reviews unusual authority, warranty, and pricing exceptions",
+                    ],
+                    [
+                        "Catalog steward becomes the fourth independent contractor seat",
+                        "Owns normalized specifications, alert segments, and duplicate suppression",
+                        "Purchase accepted maintenance batches with documented correction obligations",
+                        "Matching specialist retains introductions while steward maintains records",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Make the equipment file stronger than the salesperson",
+                "body": (
+                    "Experienced brokers preserve serial-level evidence and separate "
+                    "commercial urgency from inspection and settlement judgments."
+                ),
+                "items": [
+                    "Photograph the machine data plate and the inspected machine together; retain the original image files and inspection timestamp.",
+                    "For CNC equipment, record controller version, powered-cycle evidence, tooling exclusions, and whether removal disconnects essential peripherals.",
+                    "Split inspection compensation from sales success so adverse findings do not threaten the inspector's earned fee.",
+                    "Obtain lender payoff instructions through independently verified contact details before promising the seller a settlement date.",
+                ],
+            },
+        },
+        {
+            "heading": "2. Enforce weekly evidence-based KPIs and concentration ceilings",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Run a thirty-minute weekly operating review from a frozen Monday "
+                    "snapshot, not a changing dashboard that hides last week's misses. "
+                    "Track each of the seven plays with a denominator: accepted seller "
+                    "mandates divided by submitted mandates, complete inspections divided "
+                    "by delivered inspections, cleared ownership files divided by files "
+                    "submitted for closing, qualified matches divided by buyer responses, "
+                    "delivered buyer alerts divided by eligible recipients, signed "
+                    "commission agreements divided by negotiated deals, and settled files "
+                    "divided by files scheduled to close. Distinguish completed work from "
+                    "commercial outcomes; an honest inspection that kills a defective "
+                    "machine sale is useful output. Initial service targets can be 95% "
+                    "first-pass catalog acceptance, 100% serial reconciliation, next "
+                    "business-day handling of qualified buyer inquiries, and zero "
+                    "settlements with unresolved ownership exceptions. Treat these as "
+                    "internal starting targets and recalibrate after twelve weeks of "
+                    "observed workload. Track both median and ninetieth-percentile elapsed "
+                    "time so a few stranded files cannot disappear behind an average. "
+                    "Export the snapshot with reviewer initials and explanatory notes. "
+                    "Each miss receives a cause code: seller delay, lender delay, "
+                    "inspection defect, buyer withdrawal, internal rework, or documented "
+                    "external dependency. Counts without causes invite activity theater "
+                    "and punish the wrong contractor."
+                ),
+                (
+                    "Measure contractor economics by accepted cohort, including failed "
+                    "transactions. Attribute catalog fees, inspections, travel, specialist "
+                    "success fees, escrow charges borne by the broker, and founder "
+                    "exception hours to the original mandate month. Then compare accepted "
+                    "files, settled commissions, direct contribution, and rework within "
+                    "each cohort. A matching specialist generating twenty introductions "
+                    "with no verified purchasing authority should not outperform a "
+                    "specialist generating five funded buyers. Require buyer qualification "
+                    "to record purchasing entity, equipment specification, intended "
+                    "location, funding route, and decision timing without collecting "
+                    "unnecessary sensitive documents. Establish a contractor invoice "
+                    "review within five business days of submission and state payment "
+                    "terms in the scope. Disputed line items need documented reasons; "
+                    "undisputed accepted work proceeds to payment. Escalate recurring "
+                    "quality defects through sample review, corrective training, and "
+                    "scope reduction before changing suppliers. Do not use retroactive "
+                    "commission changes to repair a poorly priced engagement. For buyer "
+                    "alerts, monitor duplicate sends, suppression failures, bounce rates, "
+                    "and qualified replies rather than raw message volume. Commercial "
+                    "email procedures must address 15 U.S.C. section 7704, including "
+                    "accurate routing information and functioning opt-out handling. Keep "
+                    "alert permissions and suppression records exportable so a buyer "
+                    "acquiring the brokerage can understand the usable audience rather "
+                    "than inherit a risky address dump."
+                ),
+                (
+                    "Set a concentration policy of no more than 25% of trailing "
+                    "twelve-month recognized commissions from any single customer group, "
+                    "seller group, buyer group, or referral counterparty. Test each lens "
+                    "separately and aggregate common control; do not add overlapping "
+                    "percentages together. At Base revenue of $450,000, each ceiling is "
+                    "$112,500; at Scaled revenue of $800,000, it is $200,000. Maintain a "
+                    "second forward-looking view of signed expected commissions so a "
+                    "large pending disposal does not arrive as a surprise. Flag "
+                    "relationships at 20%, stop initiating additional exposure that "
+                    "would breach 25%, and prioritize unrelated mandates before accepting "
+                    "more work from the concentrated source. Existing contractual duties "
+                    "still require performance. During the first operating year, actual "
+                    "concentration can exceed the ceiling because the denominator is "
+                    "small; label the breach explicitly and withhold premium "
+                    "transferability claims until diversification is demonstrated. Do "
+                    "not split affiliates into artificial accounts or inflate revenue "
+                    "with equipment proceeds to improve the ratio. Track escrow-provider "
+                    "and inspector dependence separately as operational continuity "
+                    "risks, with tested alternatives where feasible. A single settlement "
+                    "provider is not automatically a commission concentration breach, "
+                    "but its outage can still stop the entire pod. Weekly reviews must "
+                    "assign specific diversification and continuity actions rather than "
+                    "merely display colored cells."
+                ),
+            ],
+            "table": {
+                "caption": "Weekly Scorecard Definitions, Evidence, and Corrective Actions",
+                "headers": [
+                    "Metric and denominator",
+                    "Initial operating target or ceiling",
+                    "Source evidence and accountable reviewer",
+                    "Required response when performance deteriorates",
+                ],
+                "rows": [
+                    [
+                        "Accepted catalog packets divided by all submitted packets",
+                        "Maintain at least ninety-five percent first-pass packet acceptance",
+                        "Catalog version history reviewed by founder or transaction lead",
+                        "Return defective fields with examples and correction deadlines",
+                    ],
+                    [
+                        "Serial-reconciled inspections divided by all delivered inspection reports",
+                        "Require complete serial reconciliation before relying on reports",
+                        "Original photographs compared against mandates and inspection documents",
+                        "Suspend affected listings until asset identity is resolved",
+                    ],
+                    [
+                        "Qualified inquiries answered within one business day",
+                        "Target next-business-day responses for every qualified buyer inquiry",
+                        "CRM timestamps reviewed against contractor service commitment exceptions",
+                        "Reassign unattended inquiries and diagnose recurring coverage gaps",
+                    ],
+                    [
+                        "Ownership-cleared files divided by all scheduled settlement files",
+                        "Require complete clearance evidence before any scheduled disbursement",
+                        "Payoff letters and release mechanics reviewed with escrow",
+                        "Reschedule settlement rather than waive unresolved security interests",
+                    ],
+                    [
+                        "Relationship commissions divided by trailing annual recognized commissions",
+                        "Keep each commonly controlled counterparty group at twenty-five percent",
+                        "Customer hierarchy and general ledger reviewed for affiliate aggregation",
+                        "Restrict incremental exposure and source unrelated replacement mandates",
+                    ],
+                    [
+                        "Cohort contribution after accepted work and failed-file costs",
+                        "Maintain positive contribution before expanding recurring contractor commitments",
+                        "Mandate cohorts reconciled to invoices and recognized commissions",
+                        "Reprice weak segments and remove structurally unprofitable channels",
+                    ],
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Freeze the weekly evidence",
+                    "action": "Export CRM stages, ledger commissions, contractor deliverables, and settlement exceptions.",
+                    "detail": "Use one cutoff timestamp and retain the export so later edits cannot rewrite the reported week.",
+                },
+                {
+                    "step": 2,
+                    "title": "Reconcile the seven plays",
+                    "action": "Compare each file's accepted artifacts with its reported stage and responsible seat.",
+                    "detail": "Move unsupported stages backward and record the missing evidence instead of estimating completion.",
+                },
+                {
+                    "step": 3,
+                    "title": "Assign corrective ownership",
+                    "action": "Give every service miss, concentration breach, and closing exception one owner and due date.",
+                    "detail": "Separate contractor defects from seller, lender, and buyer dependencies before changing compensation or scope.",
+                },
+                {
+                    "step": 4,
+                    "title": "Publish the next operating commitments",
+                    "action": "Confirm accepted workloads, scheduled reviews, diversification actions, and unrestricted cash needs.",
+                    "detail": "Carry unresolved exceptions into the next snapshot and close them only against retained evidence.",
+                },
+            ],
+        },
+        {
+            "heading": "3. Reconcile commission cohorts and make every asset transferable",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Keep recognized brokerage revenue separate from equipment transaction "
+                    "value throughout the CRM, ledger, and buyer presentation. The "
+                    "canonical Conservative case is $100,000 commissions less $75,000 "
+                    "expenses, producing $25,000 owner net profit at 25%. Base is "
+                    "$450,000 less $292,500, producing $157,500 at 35.0%. Scaled is "
+                    "$800,000 less $440,000, producing $360,000 at 45%. These are the "
+                    "controlling annual totals, not optional targets to improve through "
+                    "different revenue labels. Illustrative throughput bridges are twenty "
+                    "closings averaging $5,000 commission, forty-five averaging $10,000, "
+                    "and sixty-four averaging $12,500 respectively. If every illustrative "
+                    "deal used a 5% commission, underlying equipment values would total "
+                    "$2 million, $9 million, and $16 million; none belongs in broker "
+                    "revenue. Actual rates and transaction sizes will vary. The stated "
+                    "$2,500 to $14,000 monthly operating-cost range is a planning range "
+                    "that cannot substitute for the complete annual expense bridge. "
+                    "Direct deal costs, employment costs, failed inspections, insurance, "
+                    "and other expenses still require reconciliation to the canonical "
+                    "totals. Likewise, the $10,000 to $75,000 startup capital range and "
+                    "two-to-nine-month first-deal window require a cash runway schedule, "
+                    "not premature commission recognition. Display cash, receivables, "
+                    "earned commissions, and conditional pipeline separately."
+                ),
+                (
+                    "Write a consistent accrual policy around the actual brokerage "
+                    "contract and applicable accounting framework. Identify the customer, "
+                    "promised brokerage service, enforceable compensation terms, "
+                    "performance completion, and treatment of variable or refundable "
+                    "amounts. For a contract that earns commission only upon settlement, "
+                    "recognize revenue when that condition and the relevant performance "
+                    "requirements are satisfied, not when a seller signs a mandate. "
+                    "Record an earned unpaid commission as a receivable; record an "
+                    "advance for an unperformed service as a liability until earned. "
+                    "Accrue accepted contractor work in the proper period even when "
+                    "the invoice arrives later. Keep seller proceeds outside the "
+                    "operator's cash accounts through independent escrow wherever "
+                    "practicable. If custody is unavoidable, establish the applicable "
+                    "trust-account and licensing requirements before handling funds. "
+                    "Reconcile every settled deal through a unique asset and mandate "
+                    "identifier connecting the agreement, invoice, escrow statement, "
+                    "bank receipt, and contractor charges. Close monthly books with "
+                    "receivable aging, credit adjustments, expense accruals, and a "
+                    "pipeline-to-revenue bridge. Preserve cohort views by mandate month "
+                    "and settlement month without recognizing the same commission twice. "
+                    "A buyer should be able to select ten transactions and reconstruct "
+                    "their economics without interviewing the founder. Repeated "
+                    "unexplained journal entries and settlement-period shifts usually "
+                    "destroy confidence faster than a modest commission margin."
+                ),
+                (
+                    "Build the transfer file while the pod operates. Contractor "
+                    "agreements should identify deliverables, pre-existing materials, "
+                    "permitted third-party components, confidentiality duties, and a "
+                    "signed assignment of transferable copyright interests under "
+                    "17 U.S.C. section 204(a). Do not assume a paid invoice transfers "
+                    "copyright or that every contractor deliverable qualifies as work "
+                    "made for hire. Secure sufficient rights to inspection photographs, "
+                    "catalog copy, scripts, templates, and custom matching logic while "
+                    "respecting the inspector's retained methods and third-party "
+                    "licenses. Facts themselves are not converted into exclusive "
+                    "copyright assets by contractual language. Review customer contracts "
+                    "for assignment, change-of-control, and termination provisions; "
+                    "record required permissions before describing a book as portable. "
+                    "For liens, use the debtor's correct legal name and relevant "
+                    "jurisdiction, inspect collateral descriptions, and coordinate "
+                    "authenticated releases with secured parties. UCC sections 9-315 "
+                    "and 9-513 address distinct continuation and termination issues; "
+                    "a search result alone does not establish clean ownership, and "
+                    "state enactments control. Fleet title systems, statutory liens, "
+                    "and asset location require separate checks. International "
+                    "transactions also need classification, destination, end-user, and "
+                    "end-use review under applicable export rules. Preserve these "
+                    "decisions in the file so a successor inherits evidence, not "
+                    "unsupported assurances about saleability."
+                ),
+            ],
+            "table": {
+                "caption": "Accrual, Ownership, and Transferability Evidence Matrix",
+                "headers": [
+                    "Control requiring documented treatment",
+                    "Required retained operating evidence",
+                    "Accounting or transfer treatment",
+                    "Failure prevented during buyer diligence",
+                ],
+                "rows": [
+                    [
+                        "Separate equipment sale proceeds from brokerage commission revenue",
+                        "Executed commission agreement and matching independent escrow statement",
+                        "Recognize earned broker consideration rather than equipment transaction value",
+                        "Prevents inflated revenue and misleading business valuation denominators",
+                    ],
+                    [
+                        "Accrue accepted specialist work before delayed invoices arrive",
+                        "Accepted deliverable record with scope price and completion date",
+                        "Record expense and payable in the appropriate reporting period",
+                        "Prevents overstated closing-period profit and hidden contractor obligations",
+                    ],
+                    [
+                        "Track conditional commission advances before service completion occurs",
+                        "Contract milestones and bank receipts linked through mandate identifiers",
+                        "Maintain advance liability until applicable earning requirements are satisfied",
+                        "Prevents pipeline deposits from masquerading as transferable earnings",
+                    ],
+                    [
+                        "Resolve secured-party interests against specifically identified equipment assets",
+                        "Debtor searches, collateral schedules, payoff letters, and release evidence",
+                        "Coordinate authorized disposition and appropriate release or termination mechanics",
+                        "Prevents unsupported clean-title claims based solely on searches",
+                    ],
+                    [
+                        "Obtain signed assignments covering contractor-created transferable copyright interests",
+                        "Executed assignment schedules listing photographs, scripts, and catalog materials",
+                        "Separate assigned deliverables from retained tools and licensed components",
+                        "Prevents sale of intellectual property the brokerage never acquired",
+                    ],
+                    [
+                        "Verify contractual portability before presenting repeat customer relationships",
+                        "Assignment clauses, change-of-control terms, and required customer permissions",
+                        "Classify each relationship by evidenced transfer rights and conditions",
+                        "Prevents contact lists from being represented as contracted revenue",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Four verifications before treating a file as transferable",
+                "body": (
+                    "A listing, commission, or workflow enters the transferable book "
+                    "only with evidence supporting its stated rights and economics."
+                ),
+                "items": [
+                    "Verify seller authority, machine identity, applicable dealer licensing, and the written allocation of warranty representations.",
+                    "Verify secured-party payoff and release mechanics, applicable fleet title requirements, and escrow beneficiary details through independent contact channels.",
+                    "Verify the commission earning event, cash receipt or receivable, contractor accruals, and separation from equipment sale proceeds.",
+                    "Verify signed IP assignments, contract transfer conditions, lawful buyer-list use, and export screening where the transaction requires it.",
+                ],
+            },
+        },
+        {
+            "heading": "4. Price transferable earnings, then compare an exit with continued ownership",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "Treat valuation multiples as underwriting assumptions, not quoted "
+                    "market evidence. For a small owner-operated equipment brokerage, "
+                    "an illustrative negotiation range of two to three times verified "
+                    "seller's discretionary earnings can frame an initial discussion. "
+                    "That range requires normalization and comparable-transaction "
+                    "support before being used as a pricing conclusion. A more "
+                    "transferable operation might be discussed using three to four "
+                    "times normalized EBITDA after replacement management, but the "
+                    "different earnings denominator makes direct multiple comparisons "
+                    "misleading. Seller's discretionary earnings generally reflects "
+                    "one working owner's economic benefit after substantiated "
+                    "adjustments; EBITDA does not automatically permit adding back "
+                    "labor the buyer must replace. The canonical owner net profit "
+                    "figures do not establish either measure without a ledger bridge. "
+                    "Inspect owner compensation, interest, depreciation, taxes recorded "
+                    "in the business, personal expenses, and genuinely nonrecurring "
+                    "items individually. Reject speculative add-backs for ordinary "
+                    "travel, recurring inspections, or contractor costs needed to "
+                    "preserve commissions. Equipment defects, unresolved warranty "
+                    "disputes, customer concentration, and fragile introducer "
+                    "relationships can reduce price or move consideration into "
+                    "contingent payments. Seven documented plays support transferability "
+                    "only when the buyer can reproduce them. A polished procedure "
+                    "binder without actual founder-independent closings is marketing "
+                    "material, not evidence of durable earnings."
+                ),
+                (
+                    "Use explicit assumptions to illustrate the math without changing "
+                    "the scorecard. Suppose verified normalized owner-operator earnings "
+                    "equal canonical owner profit and no further adjustments apply. "
+                    "At two to three times that measure, Conservative implies "
+                    "$50,000 to $75,000 and Base implies $315,000 to $472,500 of "
+                    "indicative business value before transaction-specific adjustments. "
+                    "These figures describe a buyer taking on the working-owner "
+                    "role, not passive income. For a separate Scaled illustration, "
+                    "assume the existing second full-time seat is already expensed, "
+                    "the founder receives no expensed wage, and replacing the "
+                    "founder's remaining work costs $120,000 fully loaded annually. "
+                    "The $360,000 canonical owner profit then supports $240,000 "
+                    "after that incremental replacement cost. If the ledger also "
+                    "establishes that no other EBITDA adjustments are necessary, "
+                    "three to four times produces $720,000 to $960,000 of "
+                    "illustrative enterprise value. Never deduct replacement labor "
+                    "twice when the existing payroll already performs that work. "
+                    "Bridge enterprise value to seller proceeds using agreed "
+                    "debt-like items, cash treatment, working-capital delivery, "
+                    "transaction expenses, and deferred consideration. The "
+                    "calculation assumes a cash-free, debt-free transaction with "
+                    "an agreed operating working-capital level. It does not "
+                    "include equipment owned by sellers, customer deposits, or "
+                    "escrow principal as brokerage assets available for distribution."
+                ),
+                (
+                    "Choose between selling and retaining the business using expected "
+                    "cash received, workload, and risk rather than headline multiple. "
+                    "A cash-cow owner may prefer the canonical Scaled $360,000 annual "
+                    "owner profit while continuing the required founder work. Under "
+                    "the separate replacement-labor illustration, that becomes "
+                    "$240,000 before other changes; present both views honestly. "
+                    "Stress the book with loss of the largest permitted relationship: "
+                    "25% of $800,000 is $200,000 of commissions, not automatically "
+                    "$200,000 of lost profit. Estimate avoided variable costs, "
+                    "remaining fixed costs, collection timing, and replacement "
+                    "mandate capacity before deciding the reserve requirement. "
+                    "Maintain an unrestricted cash reserve based on the stressed "
+                    "cash schedule rather than a percentage of equipment value. "
+                    "For an exit, build a controlled diligence room with monthly "
+                    "books, cohort exports, signed scopes, IP assignments, claims "
+                    "history, concentration analysis, and completed founder absence "
+                    "tests. Redact unnecessary buyer and seller details until "
+                    "disclosure is authorized and commercially appropriate. Define "
+                    "any earnout using auditable recognized commissions or "
+                    "contribution, consistent accounting policies, collection "
+                    "rules, and dispute procedures. A higher contingent headline "
+                    "price can yield less cash than a lower clean closing payment. "
+                    "The premium case is earned through diversified relationships, "
+                    "reliable evidence, and replaceable judgment; continued "
+                    "ownership demands exactly the same operating discipline."
+                ),
+            ],
+            "table": {
+                "caption": "Illustrative Valuation Bridges and Buyer Diligence Tests",
+                "headers": [
+                    "Valuation lens and explicit assumption",
+                    "Earnings bridge or value calculation",
+                    "Evidence needed before presenting the case",
+                    "Likely buyer adjustment or operating response",
+                ],
+                "rows": [
+                    [
+                        "Conservative working-owner case assumes profit equals normalized owner earnings",
+                        "$25,000 multiplied by two to three yields $50,000 to $75,000",
+                        "Ledger bridge confirms owner labor treatment and supported adjustments",
+                        "Thin repeat revenue may favor asset value over earnings pricing",
+                    ],
+                    [
+                        "Base working-owner case assumes profit equals normalized owner earnings",
+                        "$157,500 multiplied by two to three yields $315,000 to $472,500",
+                        "Monthly cohorts reconcile recognized commissions and recurring delivery costs",
+                        "Customer dependence or founder dependence can compress negotiated consideration",
+                    ],
+                    [
+                        "Scaled managed case assumes incremental founder replacement is required",
+                        "$360,000 less $120,000 replacement labor leaves $240,000 annually",
+                        "Role study confirms existing transaction lead cannot absorb founder duties",
+                        "Revise replacement cost when documented responsibilities differ from assumptions",
+                    ],
+                    [
+                        "Scaled enterprise illustration assumes adjusted earnings equal normalized EBITDA",
+                        "$240,000 multiplied by three to four yields $720,000 to $960,000",
+                        "Accounting bridge substantiates denominator and comparable evidence supports pricing",
+                        "Apply debt, cash, working-capital, and transaction-specific proceeds adjustments",
+                    ],
+                    [
+                        "Concentration stress removes one relationship at the permitted ceiling",
+                        "Scaled commissions fall $200,000 before avoided variable delivery costs",
+                        "Relationship cohorts identify variable costs and remaining fixed commitments",
+                        "Recalculate reserve needs and defer distributions during replacement selling",
+                    ],
+                    [
+                        "Contingent sale structure pays part of consideration after closing",
+                        "Expected proceeds depend on measured performance and collection timing",
+                        "Earnout contract defines accounting consistency, access, and dispute procedures",
+                        "Compare probability-weighted cash receipts rather than headline sale price",
+                    ],
+                ],
+            },
+        },
+    ],
+    "pull_quote": "A brokerage earns a premium when its next owner can collect the commission without inheriting the founder's memory.",
+    "diagram_id": "diag-06",
+    "action_checklist": [
+        "Assign all seven operating plays to the 1 FT + 3 C pod, naming a reviewer and acceptance artifact for each handoff.",
+        "Execute contractor scopes with output-based compensation, correction SLAs, attribution rules, classification review, and signed IP assignments.",
+        "Freeze weekly scorecards with denominators, cohort contribution, aging exceptions, and separate 25% customer and counterparty concentration tests.",
+        "Reconcile the three canonical commission scenarios to $25,000, $157,500, and $360,000 owner profit without including equipment transaction value.",
+        "Build serial-linked ownership, inspection, escrow, accounting, and contract-transfer files, then complete a documented founder absence test.",
+        "Prepare separate owner-operator and replacement-management valuation bridges, and compare realistic net sale proceeds with stressed retained cash flow.",
+    ],
+    "statutory_citations": [
+        {
+            "title": "17 U.S.C. section 204(a) — Execution of transfers of copyright ownership",
+            "url": "https://www.law.cornell.edu/uscode/text/17/204",
+            "relevance": (
+                "Transfers of copyright ownership generally require a signed writing; "
+                "contractor invoices alone do not establish ownership of photographs, "
+                "catalog text, or custom software."
+            ),
+        },
+        {
+            "title": "UCC section 9-315 — Secured party's rights on disposition of collateral",
+            "url": "https://www.law.cornell.edu/ucc/9/9-315",
+            "relevance": (
+                "Provides the model Article 9 rule on continuation of security interests "
+                "after disposition and interests in proceeds, subject to exceptions; "
+                "apply the controlling state's enacted provisions."
+            ),
+        },
+        {
+            "title": "UCC section 9-513 — Termination statement",
+            "url": "https://www.law.cornell.edu/ucc/9/9-513",
+            "relevance": (
+                "Addresses termination statements and their effect; distinguish "
+                "whole-filing termination from an authorized disposition or asset-specific "
+                "release under the controlling state enactment."
+            ),
+        },
+        {
+            "title": "15 U.S.C. section 7704 — Requirements for commercial electronic mail",
+            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
+            "relevance": (
+                "Buyer-alert operations must address accurate transmission information, "
+                "required message content, functioning opt-out mechanisms, and timely "
+                "honoring of recipient requests."
+            ),
+        },
+        {
+            "title": "15 CFR section 736.2 — General prohibitions under the Export Administration Regulations",
+            "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-736/section-736.2",
+            "relevance": (
+                "Cross-border equipment files require review of applicable export, "
+                "reexport, transfer, end-use, end-user, and prohibited transaction "
+                "restrictions before the brokerage facilitates shipment."
+            ),
+        },
+        {
+            "title": "29 U.S.C. section 203 — Fair Labor Standards Act definitions",
+            "url": "https://www.law.cornell.edu/uscode/text/29/203",
+            "relevance": (
+                "Federal employee and employment definitions inform worker-status "
+                "analysis; contractor labels and output-based payment do not replace "
+                "review of actual working relationships and applicable state tests."
+            ),
+        },
+    ],
+}

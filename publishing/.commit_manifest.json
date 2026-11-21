@@ -1,10 +1,10 @@
 {
   "scope": "publishing_store_excluding_previews",
   "sha256": {
-    "audit/existing_work_audit.json": "953c738839d799782b9cd41bde439d55a8029369576d5cc655b2ae6f0fe443ca",
-    "brand/brand_system.json": "670daa28071a4855ba6ad1b9a29f874d1572220aa4574a94b8ecb172332dbaa7",
-    "catalog/pipeline_29_candidates.json": "f393537c2a2e947be50a06068718fba4d1e567c4b5f3b7c9ccd636a85716e6d7",
-    "research/research_database_summary.json": "45d2ca822270f0aaf9a8ff0c6b990f20f15635f6f77a71a1f57f0cf72dbe8f3d",
+    "audit/existing_work_audit.json": "362ef04a89d07d17ca319c7d08054ad418fe81b33e2e2a4891deddb82a8e5327",
+    "brand/brand_system.json": "a922e0faeb84426df40026f070dba8457ee086b4329f57957519167c3610fabb",
+    "catalog/pipeline_29_candidates.json": "abc23a39f8424fb37efd373272cf29327e0b6eadf1fe225bdc46ff37f65b12f4",
+    "research/research_database_summary.json": "dc8050755287b7967ae265bce7b261dd520cf8e7d155682a66edfe9fc47aac59",
     "site/newsletter_signups.json": "5a97fe09f877c0fccee940246e74f27dc5b6bc83148037af241946b350933794",
     "volumes/vol-001-heir-hunting/chapters/chapter-01.md": "4c44fe7e11c2f4af10ed7241bb0f8b49674c33d8c70c91a965cd3a0dab1133f0",
     "volumes/vol-001-heir-hunting/chapters/chapter-02.md": "c9f8705ba384dbbbd713674229cb8dfce45ab4fab27acea1480b476f229ad08b",
@@ -203,6 +203,24 @@
     "volumes/vol-011-high-ticket-brokerage/manuscript.json": "6338ba87475dc87a0bbfd4b412d169b7fcf1f35b93e2ed7ed35d189cf31a00fe",
     "volumes/vol-011-high-ticket-brokerage/metadata.json": "c853dfdbc2f23e8c52f8dfad95044b469229ee67f5192bbc38037f3db9ce7ef3",
     "volumes/vol-011-high-ticket-brokerage/scorecard.json": "7a20e1e8966768b91b6b42bdca14bd7ea485fc0aa4b58891a471b463f72b7964",
-    "volumes/vol-011-high-ticket-brokerage/workbook.json": "1a0226124e2f0de091bd7690b49a727777bbe593859395227e5512c755aad459"
+    "volumes/vol-011-high-ticket-brokerage/workbook.json": "1a0226124e2f0de091bd7690b49a727777bbe593859395227e5512c755aad459",
+    "volumes/vol-012-equipment-brokerage/chapters/chapter-01.md": "e3262f3d848454e66797b06b4a0fc6e108f954b9a72b597d11a19ea98413eca2",
+    "volumes/vol-012-equipment-brokerage/chapters/chapter-02.md": "6f2fb8707bec3d9a330dcc32bede9c80aa05cafddb4ca05870c29a1e5a9eab48",
+    "volumes/vol-012-equipment-brokerage/chapters/chapter-03.md": "ac83ca089ac12dbf2d2a6cae542e1c49ab9da765b185a9eb890410be84fd5218",
+    "volumes/vol-012-equipment-brokerage/chapters/chapter-04.md": "786e2a2d10b5063e8907956c78bd46a7d61dec0421164faed3a5d3a3a1c64c0a",
+    "volumes/vol-012-equipment-brokerage/chapters/chapter-05.md": "7ee983c0b2ecb87081030a664d2c25c94c0120dd878a59cfa5dc2341451e601a",
+    "volumes/vol-012-equipment-brokerage/chapters/chapter-06.md": "1eb8161864e9ad84e56c67e438c8d8ad8250478cb9ec92664713641930f5b874",
+    "volumes/vol-012-equipment-brokerage/chapters/chapter-07.md": "6cbac62d8835f9a8bd096e51e322f4d99cdd4bc08e4826a854cd9bd370fcab40",
+    "volumes/vol-012-equipment-brokerage/chapters/chapter-08.md": "f43d22b2f42712548480410feb97dc15b6e0ee2e8da96d320f148caddd232635",
+    "volumes/vol-012-equipment-brokerage/chapters/chapter-09.md": "535be2f37baa4d5c8e00895031b7aaff6f96a251b03496299b78266bb8f1bed8",
+    "volumes/vol-012-equipment-brokerage/chapters/chapter-10.md": "061627f3243431f599489cc8f80723f55a9639ff7d4ffe87d8a88b8548ff7ec0",
+    "volumes/vol-012-equipment-brokerage/chapters/chapter-11.md": "450053af5edbdb2eacd237e27c80e2ba440e474d9a404556e85a077ca3bf671b",
+    "volumes/vol-012-equipment-brokerage/chapters/chapter-12.md": "7f9a6c58119bce44a65d36a5a951e6a603973dc265693fa9ec9f08ab20633072",
+    "volumes/vol-012-equipment-brokerage/diagrams_data.json": "833759bad900fd1f476927370785b92fc578b300b5a871787bb0be03473f5bb0",
+    "volumes/vol-012-equipment-brokerage/graphics_reviews.json": "821c61cb402b70a21ad378685eb5a9b482c4da7222dd3bb7fc63c360d0602c50",
+    "volumes/vol-012-equipment-brokerage/manuscript.json": "bdf084af9d21c0da9c6122aaa5d20020f11c73aadced545a486178604f176db4",
+    "volumes/vol-012-equipment-brokerage/metadata.json": "b6061cbf7226583a90b8138c1fce24b62f7c6beb9e540c58a466757315f03dc7",
+    "volumes/vol-012-equipment-brokerage/scorecard.json": "f1e0f68afce754e2fc1415598c05d286fd7eee764ff2113d787ae6acfad8b27f",
+    "volumes/vol-012-equipment-brokerage/workbook.json": "4b8b1efc8dff861dcba5f2b7c80e7e4607e25b7d7042f78c0aaf0c57d4873a82"
   }
 }

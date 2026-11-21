@@ -1,0 +1,389 @@
+{
+  "candidate_number": 11,
+  "slug": "equipment-brokerage",
+  "title": "Equipment Brokerage",
+  "category": "Industrial brokerage",
+  "production_stage": "approved_master",
+  "scores": {
+    "revenue_potential": 22,
+    "profit_margin_potential": 20,
+    "team_efficiency": 18,
+    "startup_accessibility": 11,
+    "automation_potential": 10
+  },
+  "dimension_max": {
+    "revenue_potential": 25,
+    "profit_margin_potential": 25,
+    "team_efficiency": 20,
+    "startup_accessibility": 15,
+    "automation_potential": 15
+  },
+  "total_score": 81,
+  "tier_label": "High-Leverage Operator Play",
+  "evidence_confidence": "High",
+  "uncertainty_band": "±3 pts",
+  "uncertainty_bounds": {
+    "low": 78,
+    "high": 84
+  },
+  "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
+  "score_rationale": {
+    "revenue_potential": "Revenue Potential: 22/25. Fee-only brokerage avoids inventory, while inspections and deal sourcing remain manual.",
+    "profit_margin_potential": "Profit Margin Potential: 20/25. Fee-only brokerage avoids inventory, while inspections and deal sourcing remain manual.",
+    "team_efficiency": "Team Efficiency: 18/20. Fee-only brokerage avoids inventory, while inspections and deal sourcing remain manual.",
+    "startup_accessibility": "Startup Accessibility: 11/15. Fee-only brokerage avoids inventory, while inspections and deal sourcing remain manual.",
+    "automation_potential": "Automation Potential: 10/15. Fee-only brokerage avoids inventory, while inspections and deal sourcing remain manual."
+  },
+  "economics": {
+    "gross_revenue_range": "$100,000–$800,000 USD annually",
+    "net_profit_margin_range": "25–45%",
+    "owner_net_profit_potential": "$25,000–$360,000 USD annually, before personal taxes and reinvestment",
+    "startup_capital_range": "$10,000–$75,000 USD",
+    "monthly_opex_range": "$2,500–$14,000 USD",
+    "time_to_first_deal": "2–9 months",
+    "typical_team_size": {
+      "full_time_including_owner": 1,
+      "contractors": 3,
+      "total_people": 4
+    },
+    "includes_contractors_note": "Headcount includes the working owner and recurring contractors as people, not FTE equivalents. Contractors may be part-time. Scaled scenario adds one employee and one contractor; external vendor workforces are not counted as internal team members.",
+    "revenue_basis": "Broker commissions only; excludes equipment transaction value",
+    "cost_basis": "Annual net margins include operating expenses and non-owner labor; monthly opex is fixed/semi-fixed overhead only. No owner salary is deducted. Capital needs may grow beyond startup range.",
+    "estimate_status": "Illustrative assumptions; not verified earnings data"
+  },
+  "scenarios": {
+    "conservative": {
+      "annual_gross_revenue_usd": 100000,
+      "net_profit_margin_pct": 25,
+      "annual_owner_net_profit_usd": 25000,
+      "full_time_including_owner": 1,
+      "contractors": 3,
+      "total_people": 4,
+      "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+    },
+    "base_case": {
+      "annual_gross_revenue_usd": 450000.0,
+      "net_profit_margin_pct": 35.0,
+      "annual_owner_net_profit_usd": 157500,
+      "full_time_including_owner": 1,
+      "contractors": 3,
+      "total_people": 4,
+      "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+    },
+    "scaled_small_team": {
+      "annual_gross_revenue_usd": 800000,
+      "net_profit_margin_pct": 45,
+      "annual_owner_net_profit_usd": 360000,
+      "full_time_including_owner": 2,
+      "contractors": 4,
+      "total_people": 6,
+      "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+    }
+  },
+  "automation_levers": [
+    "Inventory matching",
+    "Buyer alerts"
+  ],
+  "key_risks": [
+    "Equipment defects",
+    "Fraud",
+    "Lumpy commissions"
+  ],
+  "regulatory_notes": [
+    "Check dealer licensing, lien releases, warranties and export controls."
+  ],
+  "track_ids": [
+    "track_1"
+  ],
+  "track_labels": [
+    "Asymmetric & Data-Arbitrage Plays"
+  ],
+  "plays": [
+    {
+      "id": "telegram_channel_signal_scraping",
+      "track_id": "track_1",
+      "name": "Telegram Channel & Deal-Room Signal Scraping",
+      "mechanism": "Ingest public Telegram channel broadcasts, OTC deal rooms, wholesale distress feeds, and niche community message streams in real time to extract high-intent buyer/seller triggers before they hit public search—while avoiding naive member-list scraping traps.",
+      "inputs": [
+        "Public Telegram channel & group broadcast streams",
+        "Keyword & entity-regex signal filters",
+        "Inbound utility-bot & deal-desk capture endpoints"
+      ],
+      "workflow": [
+        "Monitor public channel message history and live broadcast streams for high-intent deal keywords (buying, distressed lot, urgent allocation, broker needed)",
+        "Score and deduplicate message authors and deal metadata against minimum ticket thresholds without scraping hidden member rosters",
+        "Route verified deal signals to an operator desk or deploy a pinned niche utility bot (alert/calculator/directory) that converts channel readers into inbound leads"
+      ],
+      "metrics": [
+        "Signal-to-response latency (seconds)",
+        "Qualified deal triggers per 1,000 messages",
+        "Inbound bot opt-in & close rate"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "MTProto session ban (UserDeactivatedBanError) or FloodWaitError throttling",
+          "trigger": "Aggressive GetParticipantsRequest calls on hidden member lists or high-frequency polling from VoIP virtual SIMs",
+          "impact": "Immediate termination of listener sessions and loss of real-time channel feed ingestion",
+          "detection_metric": "Telegram FloodWaitError seconds per hour and session disconnect rate",
+          "fallback": "Restrict ingestion to passive read-only public broadcast listeners and capture prospects inbound via official Bot API utility bots"
+        }
+      ]
+    },
+    {
+      "id": "ego_bait_directory_badge_arbitrage",
+      "track_id": "track_1",
+      "name": "Industry Award & Verified Directory 'Ego-Bait' Badge Arbitrage",
+      "mechanism": "Publish data-scored state and city rankings ('Top 15 Verified Specialists in [City]') and issue free embeddable 'Top Rated' winner badges to ranked firms—earning hundreds of free high-DR backlinks when firms post the badge on their own sites, while upselling $299–$799/mo Featured #1 Lead-Capture placements.",
+      "inputs": [
+        "Public state licensing, inspection, & review dataset for 500+ firms per vertical",
+        "Transparent algorithmic scoring rubric + auto-generated SVG 'Verified Top 10%' embed badges",
+        "Self-serve $299–$799/mo Featured Placement & exclusive lead-routing checkout"
+      ],
+      "workflow": [
+        "Score all licensed operators in a high-ticket vertical using objective public records (years licensed, zero disciplinary actions, review velocity)",
+        "Notify top-scoring firms with their free embeddable HTML/SVG '2026 Top-Scored Provider' badge (driving natural dofollow backlinks back to your directory)",
+        "Convert 5–10% of shortlisted firms into $299–$799/mo Featured Top-Spot subscribers who receive priority inbound quote requests"
+      ],
+      "metrics": [
+        "Badge embed rate (% of notified firms linking back to directory)",
+        "Domain Rating (DR) growth and organic city-ranking velocity",
+        "Monthly recurring revenue (MRR) from Featured Profile subscriptions"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "FTC endorsement/ranking disclosure scrutiny or Google widget-link spam filtering",
+          "trigger": "Manipulating objective scores solely for pay-to-play without 'Sponsored' labels or stuffing keyword-anchor links inside badge HTML",
+          "impact": "Loss of editorial credibility or discounting of badge backlinks",
+          "detection_metric": "Anchor-text naturalness ratio and clear visual separation of 'Sponsored Featured Partner' vs. algorithmic score",
+          "fallback": "Keep the underlying algorithmic score 100% objective and immutable, clearly label paid top-spot placements as 'Sponsored / Featured', and use clean branded anchor text in badge embeds"
+        }
+      ]
+    },
+    {
+      "id": "fmcsa_dot_inspection_trigger_arbitrage",
+      "track_id": "track_1",
+      "name": "FMCSA/DOT New-Authority & Roadside Violation Trigger Funnels",
+      "mechanism": "Ingest daily federal FMCSA Census, Licensing & Insurance (L&I), and SMS roadside-inspection violation feeds to intercept newly granted MC/DOT authorities (during the mandatory 21-day insurance-filing window) and fleets with fresh HOS/maintenance citations.",
+      "inputs": [
+        "FMCSA daily Licensing & Insurance (L&I) pending-authority feed",
+        "FMCSA Safety Measurement System (SMS) roadside violation & BASIC score logs",
+        "Commercial trucking insurance, factoring, & ELD compliance partner network"
+      ],
+      "workflow": [
+        "Poll daily FMCSA pending-application feeds to identify carriers that received a docket number but still need BOC-3 and BIPD insurance filings to go active",
+        "Monitor SMS inspection logs for fleets cited for ELD, hours-of-service, or maintenance violations requiring corrective action plans",
+        "Route carriers in real time to commercial truck insurance brokers ($500–$1,500 CPA/split), freight factoring desks, and compliance consultants"
+      ],
+      "metrics": [
+        "FMCSA filing-to-contact latency (minutes)",
+        "Pending-authority to bound-policy conversion %",
+        "Combined CPA from insurance, BOC-3, ELD, and factoring referrals"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "FMCSA government-impersonation enforcement or telemarketing DNC violations",
+          "trigger": "Posing as the USDOT/FMCSA safety audit office or blasting automated SMS/robocalls to driver cell phones",
+          "impact": "FTC/FMCSA enforcement warning and carrier spam blocking",
+          "detection_metric": "Zero USDOT impersonation complaints and 100% carrier opt-in before SMS dispatch",
+          "fallback": "Use transparent private compliance-agency branding, free BOC-3/MCS-150 status check tools, and inbound hand-raiser funnels"
+        }
+      ]
+    },
+    {
+      "id": "authorized_distributor_grey_market_diversion_arbitrage",
+      "track_id": "track_1",
+      "name": "Authorized-Distributor \"Diversion\" & Grey-Market Luxury / Medical Consumables Arbitrage",
+      "mechanism": "Exploiting multinational manufacturers' 35–60% regional price discrimination by using foreign corporate purchasing entities to buy container-loads of 100% authentic branded goods (luxury fragrances, prestige cosmetics, Swiss watches, OTC diabetic test strips, salon haircare, OEM imaging supplies) from over-quota authorized distributors in emerging/EMEA/LATAM markets and importing them into US off-price retail (TJX, Costco, Burlington) and Amazon wholesale channels under the Supreme Court's First-Sale Doctrine (*Kirtsaeng v. John Wiley & Sons*).",
+      "inputs": [
+        "Global wholesale price-book matrix comparing US net distributor pricing against EMEA, LATAM, Eastern European, and Asian-Pacific tier-1 distributor net pricing",
+        "Foreign purchasing subsidiaries (UAE, Poland, Panama, Singapore, Cyprus) with clean trade references and escrow inspection facilities",
+        "SGS/Bureau Veritas pre-shipment authenticity verification and batch-code sanitization SOPs"
+      ],
+      "workflow": [
+        "Identify authentic global SKUs with >40% wholesale price spreads between emerging-market distributor books and US off-price wholesale demand",
+        "Approach regional authorized distributors near end-of-quarter who need to move $500k–$5M in excess allocation to hit their manufacturer volume-tier rebate",
+        "Purchase the sealed master cases via a foreign trading entity, conduct third-party SGS lot authentication, and remove secondary distributor tracking labels that could identify the source distributor",
+        "Import the goods legally under First-Sale exhaustion and flip on back-to-back POs to US off-price retail chains, pharmacy wholesalers, and verified marketplace aggregators"
+      ],
+      "metrics": [
+        "Gross landed price spread (22–45% net margin) between foreign distributor cost and US wholesale PO price",
+        "Inventory cash-conversion cycle (days from escrow release to US buyer wire settlement)",
+        "100% lot-level manufacturer authenticity verification and chain-of-custody pass rate"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Brand-owner Lanham Act 'material difference' trademark challenge or marketplace invoice rejection",
+          "trigger": "Importing foreign-language packaging or altered warranty/formulation SKUs that differ materially from the US domestic version",
+          "impact": "CBP detention or Amazon brand-gating suppression on specific ASINs",
+          "detection_metric": "Pre-purchase SKU inspection confirming identical UPC/EAN, multi-language compliant labeling, and identical physical formulation",
+          "fallback": "Trade strictly in globally identical universal-packaging SKUs (duty-free prestige fragrances, universal OEM consumables) and sell primarily via direct B2B purchase orders to off-price retail chains and regional wholesalers rather than single-account Amazon storefronts"
+        }
+      ]
+    },
+    {
+      "id": "con_decommissioned_medical_imaging_arbitrage",
+      "track_id": "track_1",
+      "name": "Certificate-of-Need (CON) & Decommissioned Hospital Imaging-Suite Arbitrage",
+      "mechanism": "Acquire or option decommissioned imaging assets where approved site capacity has value, separating equipment resale economics from nontransferable or change-of-control-sensitive CON authority.",
+      "inputs": [
+        "State CON decisions and hospital closure notices",
+        "Equipment service logs and site engineering surveys",
+        "Regulatory transfer guidance and buyer commitments"
+      ],
+      "workflow": [
+        "1. Identify closing imaging suites and inventory equipment, permits, and lease rights",
+        "2. Confirm CON status, transfer restrictions, radiation licensing, and deinstallation costs",
+        "3. Negotiate approval-contingent asset purchases with qualified operators and equipment buyers",
+        "4. Close after regulatory clearance and document certified removal, installation, and acceptance"
+      ],
+      "metrics": [
+        "Net resale margin after deinstallation",
+        "Regulatory approval cycle days",
+        "Buyer acceptance rate after inspection"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "CON authority lapses or cannot transfer",
+          "trigger": "Closure, relocation, or ownership change outside approved conditions",
+          "impact": "Loss of site premium and stranded equipment carrying costs",
+          "detection_metric": "Outstanding regulatory conditions and days to permit expiry",
+          "fallback": "Exit under approval contingencies or sell inspected equipment separately without representing transferable operating authority"
+        }
+      ]
+    },
+    {
+      "id": "cell_tower_billboard_easement_strip_out",
+      "track_id": "track_1",
+      "name": "Cell-Tower, Rooftop & Billboard Perpetual Easement Strip-Out Arbitrage",
+      "mechanism": "Separate assignable site-access and rent rights from underlying real estate for specialist buyers, pricing tenant termination rights and the permanent burden left on the residual property.",
+      "inputs": [
+        "Tower, rooftop, and billboard leases and amendments",
+        "Title, lender consent, and zoning documents",
+        "Specialist easement-buyer bids and residual property appraisals"
+      ],
+      "workflow": [
+        "1. Identify leased sites and reconcile actual rent receipts with termination and renewal terms",
+        "2. Verify assignment rights, mortgage restrictions, maintenance duties, and required consents",
+        "3. Compare easement sale proceeds against lost rent and residual property impairment",
+        "4. Close approved conveyances through escrow and record access, utilities, and rent-allocation rights"
+      ],
+      "metrics": [
+        "Net easement proceeds versus retained rent value",
+        "Residual property value impairment",
+        "Consent-to-close cycle days"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Nonassignable lease or excessive permanent property burden",
+          "trigger": "Missing tenant or lender consent or easement scope exceeding valued rights",
+          "impact": "Failed closing or reduced refinancing and resale value",
+          "detection_metric": "Unresolved consent conditions and residual appraisal discount",
+          "fallback": "Retain the lease or negotiate a narrower term-limited assignment with all required approvals"
+        }
+      ]
+    },
+    {
+      "id": "ferc_grid_interconnection_queue_land_speculation",
+      "track_id": "track_1",
+      "name": "FERC / ISO Substation Interconnection Queue & Powered-Land Option Flipping",
+      "mechanism": "Overlay public interconnection queues with land-use and substation data to option potentially useful sites, treating queue position and nearby infrastructure as signals rather than guaranteed deliverable power.",
+      "inputs": [
+        "ISO and utility interconnection queues and study results",
+        "Parcel zoning, transmission corridors, and substation maps",
+        "Utility service estimates and developer site requirements"
+      ],
+      "workflow": [
+        "1. Match queue activity and infrastructure constraints to suitable parcels",
+        "2. Verify site control requirements, zoning, environmental limits, and utility capacity assumptions",
+        "3. Negotiate assignable diligence-contingent options within capped carrying-cost budgets",
+        "4. Assign approved options to qualified developers with explicit disclosure of unresolved power and study conditions"
+      ],
+      "metrics": [
+        "Option cost per qualified developable acre",
+        "Utility-validated capacity versus marketed capacity",
+        "Net assignment proceeds after study and option costs"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Queue withdrawal or prohibitive network upgrade cost",
+          "trigger": "Restudy, milestone failure, or capacity estimate unsupported by utility commitments",
+          "impact": "Option expiry and unrecoverable diligence spending",
+          "detection_metric": "Study cost revisions and unresolved interconnection milestones",
+          "fallback": "Let contingent options lapse or reposition land for independently viable uses without claiming secured power"
+        }
+      ]
+    }
+  ],
+  "platform_risks": [
+    {
+      "failure_mode": "MTProto session ban (UserDeactivatedBanError) or FloodWaitError throttling",
+      "trigger": "Aggressive GetParticipantsRequest calls on hidden member lists or high-frequency polling from VoIP virtual SIMs",
+      "impact": "Immediate termination of listener sessions and loss of real-time channel feed ingestion",
+      "detection_metric": "Telegram FloodWaitError seconds per hour and session disconnect rate",
+      "fallback": "Restrict ingestion to passive read-only public broadcast listeners and capture prospects inbound via official Bot API utility bots",
+      "play_id": "telegram_channel_signal_scraping",
+      "play_name": "Telegram Channel & Deal-Room Signal Scraping",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "FTC endorsement/ranking disclosure scrutiny or Google widget-link spam filtering",
+      "trigger": "Manipulating objective scores solely for pay-to-play without 'Sponsored' labels or stuffing keyword-anchor links inside badge HTML",
+      "impact": "Loss of editorial credibility or discounting of badge backlinks",
+      "detection_metric": "Anchor-text naturalness ratio and clear visual separation of 'Sponsored Featured Partner' vs. algorithmic score",
+      "fallback": "Keep the underlying algorithmic score 100% objective and immutable, clearly label paid top-spot placements as 'Sponsored / Featured', and use clean branded anchor text in badge embeds",
+      "play_id": "ego_bait_directory_badge_arbitrage",
+      "play_name": "Industry Award & Verified Directory 'Ego-Bait' Badge Arbitrage",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "FMCSA government-impersonation enforcement or telemarketing DNC violations",
+      "trigger": "Posing as the USDOT/FMCSA safety audit office or blasting automated SMS/robocalls to driver cell phones",
+      "impact": "FTC/FMCSA enforcement warning and carrier spam blocking",
+      "detection_metric": "Zero USDOT impersonation complaints and 100% carrier opt-in before SMS dispatch",
+      "fallback": "Use transparent private compliance-agency branding, free BOC-3/MCS-150 status check tools, and inbound hand-raiser funnels",
+      "play_id": "fmcsa_dot_inspection_trigger_arbitrage",
+      "play_name": "FMCSA/DOT New-Authority & Roadside Violation Trigger Funnels",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Brand-owner Lanham Act 'material difference' trademark challenge or marketplace invoice rejection",
+      "trigger": "Importing foreign-language packaging or altered warranty/formulation SKUs that differ materially from the US domestic version",
+      "impact": "CBP detention or Amazon brand-gating suppression on specific ASINs",
+      "detection_metric": "Pre-purchase SKU inspection confirming identical UPC/EAN, multi-language compliant labeling, and identical physical formulation",
+      "fallback": "Trade strictly in globally identical universal-packaging SKUs (duty-free prestige fragrances, universal OEM consumables) and sell primarily via direct B2B purchase orders to off-price retail chains and regional wholesalers rather than single-account Amazon storefronts",
+      "play_id": "authorized_distributor_grey_market_diversion_arbitrage",
+      "play_name": "Authorized-Distributor \"Diversion\" & Grey-Market Luxury / Medical Consumables Arbitrage",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "CON authority lapses or cannot transfer",
+      "trigger": "Closure, relocation, or ownership change outside approved conditions",
+      "impact": "Loss of site premium and stranded equipment carrying costs",
+      "detection_metric": "Outstanding regulatory conditions and days to permit expiry",
+      "fallback": "Exit under approval contingencies or sell inspected equipment separately without representing transferable operating authority",
+      "play_id": "con_decommissioned_medical_imaging_arbitrage",
+      "play_name": "Certificate-of-Need (CON) & Decommissioned Hospital Imaging-Suite Arbitrage",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Nonassignable lease or excessive permanent property burden",
+      "trigger": "Missing tenant or lender consent or easement scope exceeding valued rights",
+      "impact": "Failed closing or reduced refinancing and resale value",
+      "detection_metric": "Unresolved consent conditions and residual appraisal discount",
+      "fallback": "Retain the lease or negotiate a narrower term-limited assignment with all required approvals",
+      "play_id": "cell_tower_billboard_easement_strip_out",
+      "play_name": "Cell-Tower, Rooftop & Billboard Perpetual Easement Strip-Out Arbitrage",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Queue withdrawal or prohibitive network upgrade cost",
+      "trigger": "Restudy, milestone failure, or capacity estimate unsupported by utility commitments",
+      "impact": "Option expiry and unrecoverable diligence spending",
+      "detection_metric": "Study cost revisions and unresolved interconnection milestones",
+      "fallback": "Let contingent options lapse or reposition land for independently viable uses without claiming secured power",
+      "play_id": "ferc_grid_interconnection_queue_land_speculation",
+      "play_name": "FERC / ISO Substation Interconnection Queue & Powered-Land Option Flipping",
+      "track_id": "track_1"
+    }
+  ]
+}

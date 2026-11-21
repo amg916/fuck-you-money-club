@@ -1,0 +1,643 @@
+from __future__ import annotations
+
+CHAPTER_5 = {
+    "id": "Q5",
+    "chapter_id": "Q5",
+    "chapter_number": 5,
+    "question_number": 5,
+    "slug": "beginner-traps-clawbacks-asymmetric-failure-modes",
+    "question_prompt": "What kills 80% of newcomers in equipment brokerage, and what forensic metrics detect margin leaks, regulatory landmines, or platform bans before they wipe out capital?",
+    "kicker": "Q5 / THE BIG MONEY PLAYBOOKS",
+    "title": "Beginner Traps, Clawbacks & Asymmetric Failure Modes",
+    "subtitle": "UCC Lien Clearance, CNC Acceptance Tests, Escrow Waterfalls, CON-Sensitive Imaging Assets, and Commission-Loss Circuit Breakers",
+    "layout_template": "expert_insights",
+    "reading_time_minutes": 14,
+    "executive_summary": (
+        "Candidate #11, Equipment Brokerage, ranks #12 with an 81/100 Money-to-Manpower "
+        "Score. Its leverage disappears when a broker mistakes possession for title, "
+        "a running spindle for proven accuracy, or escrow funding for earned commission. "
+        "This chapter maps seven operating plays: heavy-construction consignment, CNC "
+        "matching, fleet remarketing, industrial liquidation, domestic inventory matching, "
+        "export buyer sourcing, and CON-sensitive decommissioned imaging brokerage. These "
+        "are chapter operating categories, not seven supplied catalog identifiers. "
+        "Canonical annual owner profit is $25,000 Conservative, $157,500 Base, and "
+        "$360,000 Scaled, exclusively from broker commission revenue. The question's "
+        "80% framing is not an established failure statistic. Use serial-level evidence, "
+        "commission waterfalls, inspection stop conditions, and exception telemetry to "
+        "contain defects, fraud, clawbacks, licensing exposure, and platform suspension "
+        "before a single disputed machine consumes the year's earnings."
+    ),
+    "key_metrics": [
+        {
+            "label": "Conservative",
+            "value": "$100,000",
+            "context": "Annual broker commissions only; equipment transaction value excluded",
+            "note": "25% net margin; $25,000 annual owner net profit; 1 FT + 3 C",
+        },
+        {
+            "label": "Base",
+            "value": "$450,000",
+            "context": "Annual broker commissions only; equipment transaction value excluded",
+            "note": "35.0% net margin; $157,500 annual owner net profit; 1 FT + 3 C",
+        },
+        {
+            "label": "Scaled",
+            "value": "$800,000",
+            "context": "Annual broker commissions only; equipment transaction value excluded",
+            "note": "45% net margin; $360,000 annual owner net profit; 2 FT + 4 C",
+        },
+    ],
+    "sections": [
+        {
+            "heading": "1. Separate Commission Economics from the Machine's Hidden Liabilities",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "The first fatal trap is treating equipment transaction value as brokerage revenue. "
+                    "A $250,000 excavator sold at a 6% commission produces $15,000 of operator revenue, "
+                    "not a quarter-million-dollar business. Three illustrative transaction mixes reconcile "
+                    "exactly to the scorecard: Conservative closes ten $200,000 machines at 5%, producing "
+                    "$100,000 commissions; Base closes thirty $250,000 machines at 6%, producing $450,000; "
+                    "Scaled closes forty $400,000 machines at 5%, producing $800,000. Their respective "
+                    "equipment transaction values are $2,000,000, $7,500,000, and $16,000,000, all excluded "
+                    "from recognized operator revenue. Annual operating costs implied by the canonical "
+                    "margins are $75,000, $292,500, and $440,000, leaving $25,000, $157,500, and $360,000 "
+                    "owner profit. These transaction mixes explain the arithmetic; they are not supplied "
+                    "deal forecasts. The stated $2,500–$14,000 monthly overhead range is not an all-in "
+                    "expense ceiling: contractor work, inspections, transaction support, and acquisition "
+                    "costs must still fit the annual expense envelope. Maintain separate ledgers for "
+                    "commissions, reimbursed expenses, seller proceeds, and deposits. Never finance payroll "
+                    "from buyer settlement balances. Establish the contractual earning event and the "
+                    "accounting recognition policy before posting a commission, especially when acceptance "
+                    "or cancellation provisions survive closing. A funded escrow account does not itself "
+                    "prove performance or eliminate reversal exposure."
+                ),
+                (
+                    "The second trap is quoting a headline percentage without defining its base, deductions, "
+                    "and survival terms. A heavy-construction consignment at $200,000 and 5% yields $10,000; "
+                    "a $1,500 independent undercarriage inspection and $500 site visit leave $8,000 direct "
+                    "contribution before shared overhead. The fallback is a reduced-price, fully disclosed "
+                    "sale or withdrawal, not a promise that the broker will repair every defect. CNC matching "
+                    "at $250,000 and 6% yields $15,000; $2,500 for geometry testing and $1,000 for specialist "
+                    "travel leave $11,500. If the buyer requires tighter tolerances than the machine can "
+                    "demonstrate, reroute it to a suitable production application rather than relabeling "
+                    "its condition. Fleet remarketing of five $40,000 trucks at 4% produces $8,000; $2,000 "
+                    "of title and inspection expense leaves $6,000. Remove a title-defective unit and "
+                    "recalculate the fee instead of holding the entire fleet hostage. These are three "
+                    "of the seven chapter mappings. In each engagement, specify whether freight, taxes, "
+                    "attachments, rebates, and post-sale credits enter the commission base. Obtain signed "
+                    "seller authority before introducing buyers. An introduction without a defined protection "
+                    "period invites circumvention; an indefinite protection claim invites a different "
+                    "dispute and can make sellers refuse representation."
+                ),
+                (
+                    "Three more mappings expose different asymmetries. Industrial liquidation of a $600,000 "
+                    "lot at 4% earns $24,000; $6,000 of cataloging and inspection support leaves $18,000 "
+                    "direct contribution. Separate blocked assets into an excluded schedule when liens "
+                    "or removal obligations cannot be resolved. Domestic inventory matching on a $120,000 "
+                    "machine at 5% earns $6,000; a signed 20% commission split and $800 inspection bill "
+                    "leave $4,000. Without a written split, competing intermediaries can each demand "
+                    "the entire fee. Export buyer sourcing on a $400,000 machine at 5% earns $20,000; "
+                    "$3,000 of classification, screening, and logistics support leaves $17,000 before "
+                    "overhead. If authorization or end-use evidence fails, suspend the shipment and seek "
+                    "a screened domestic buyer. Never convert that fallback into shipment through an "
+                    "undisclosed intermediary. The seventh mapping, imaging-suite brokerage, requires "
+                    "separating equipment value from operating authority. Across all seven, reserve for "
+                    "contractual reversals rather than spending the full receipt. In the Base case, a "
+                    "$22,500 fee refund plus $4,500 of unrecovered testing and $6,000 of dispute expense "
+                    "reduces annual owner profit from $157,500 to $124,500, assuming those costs are "
+                    "incremental. Record the refund as a revenue reduction where applicable; recording "
+                    "it again as an expense would count the same loss twice."
+                ),
+            ],
+            "table": {
+                "caption": "Six Core Brokerage Plays: Fee Arithmetic, Hidden Leakage, and Exit Mechanics",
+                "headers": [
+                    "Mapped operating play and commission basis",
+                    "Direct contribution before shared operating overhead",
+                    "Beginner failure that destroys the quoted economics",
+                    "Contractual or operational fallback before capital exposure",
+                ],
+                "rows": [
+                    [
+                        "Heavy-construction consignment: $200,000 equipment price multiplied by 5% commission",
+                        "$10,000 commission less $2,000 inspection and travel equals $8,000",
+                        "Undercarriage wear gets discovered only after an unconditional condition promise",
+                        "Reprice against documented wear or withdraw before promising repair reimbursement",
+                    ],
+                    [
+                        "CNC matching: $250,000 equipment price multiplied by 6% commission",
+                        "$15,000 commission less $3,500 specialist testing costs equals $11,500",
+                        "Spindle operation gets substituted for demonstrated geometry and production tolerances",
+                        "Redirect the machine toward a buyer accepting its measured capability",
+                    ],
+                    [
+                        "Fleet remarketing: five $40,000 trucks multiplied by 4% commission",
+                        "$8,000 commission less $2,000 inspection and title costs equals $6,000",
+                        "One unresolved certificate of title blocks payment for every truck",
+                        "Exclude the affected vehicle and recompute the remaining contracted commission",
+                    ],
+                    [
+                        "Industrial liquidation: $600,000 lot price multiplied by 4% commission",
+                        "$24,000 commission less $6,000 cataloging and inspection costs equals $18,000",
+                        "A blanket lien or removal covenant makes advertised inventory undeliverable",
+                        "Publish an excluded asset schedule and settle only releasable machines",
+                    ],
+                    [
+                        "Domestic inventory matching: $120,000 equipment price multiplied by 5% commission",
+                        "$6,000 less $1,200 referral share and $800 inspection equals $4,000",
+                        "Multiple intermediaries claim overlapping fees after an undocumented buyer introduction",
+                        "Execute the split agreement before revealing buyer identity or arranging inspection",
+                    ],
+                    [
+                        "Export buyer sourcing: $400,000 equipment price multiplied by 5% commission",
+                        "$20,000 commission less $3,000 transaction support costs equals $17,000",
+                        "An unexplained intermediary conceals the actual destination or prohibited end use",
+                        "Suspend shipment and pursue a screened domestic buyer without concealing history",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Make the Commission Survive the Machine's Weakest Fact",
+                "body": (
+                    "Experienced brokers negotiate evidence, allocation, and collection mechanics before "
+                    "negotiating the last percentage point of commission."
+                ),
+                "items": [
+                    "Quote undercarriage measurements, spindle hours, and fault history separately; each describes a different source of remaining economic life.",
+                    "Write the co-broker split before exchanging buyer contact details, and attach the protected buyer list to the signed engagement.",
+                    "Price inspection travel as an explicit budget with a stop amount; do not let repeated failed site visits consume an entire commission.",
+                    "Maintain a trailing reversal ledger by seller, machine class, and contract clause so recurring defects change pricing and acceptance terms.",
+                ],
+            },
+        },
+        {
+            "heading": "2. Prove Ownership, Machine Condition, and a Reversible Settlement Path",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Possession is not ownership, and a seller's invoice is not a lien release. Start "
+                    "with the seller's exact legal name, entity status, authority to sell, and the "
+                    "machine's serial number. Under UCC sections 9-301 and 9-307, debtor location commonly "
+                    "determines the jurisdiction governing perfection by filing; collateral-specific "
+                    "exceptions matter. Section 9-503 makes debtor naming consequential, so searching "
+                    "only a trading name is weak evidence. Obtain current searches through the relevant "
+                    "secretary of state or a professional search provider, examine blanket collateral "
+                    "descriptions, and investigate prior names and ownership transfers when the facts "
+                    "require them. A serial-number search alone will miss many security interests. "
+                    "Section 9-315 generally continues a security interest after disposition unless "
+                    "an applicable exception or secured-party authorization changes the result. Obtain "
+                    "a creditor-authenticated payoff and asset-specific release instructions tied to "
+                    "the actual collateral. A UCC-3 termination can remove an entire financing statement "
+                    "and may be inappropriate for a lender retaining other collateral. Conversely, a "
+                    "filed document does not cure an unauthorized filing. Certificate-of-title statutes "
+                    "can control vehicle perfection under section 9-311; DMV evidence therefore belongs "
+                    "beside, not beneath, the UCC search. Freeze disbursement whenever the seller, "
+                    "record owner, lender, and beneficiary identities cannot be reconciled."
+                ),
+                (
+                    "Condition fraud often arrives as selective truth rather than an obviously fake "
+                    "machine. A warm engine hides cold-start problems; cleared CNC alarms hide intermittent "
+                    "servo faults; fresh paint obscures weld repairs; a photographed attachment may not "
+                    "belong to the seller. Require a continuous live walkthrough connecting the serial "
+                    "plate, machine location, hour meter, controls, and the person granting access. "
+                    "Then commission independent testing appropriate to the asset: oil sampling and "
+                    "hydraulic pressure under load for construction equipment, geometry and thermal "
+                    "stability checks for CNC, and maintenance records matched to vehicle identification "
+                    "numbers for fleet units. Inspectors should disclose seller relationships and "
+                    "deliver original measurements, not simply a green checkmark. UCC section 2-313 "
+                    "makes factual affirmations and descriptions potentially consequential as express "
+                    "warranties in sales contracts. Copying 'holds aerospace tolerances' from an old "
+                    "listing can therefore create a dispute that generic condition language will "
+                    "not resolve. Section 2-316 places conditions on warranty exclusions and does "
+                    "not turn inconsistent representations into harmless advertising. Match every "
+                    "material claim to dated evidence, identify who makes each warranty, and distinguish "
+                    "a broker's introduction service from seller obligations. Suspend publication when "
+                    "a serial discrepancy, inaccessible test, or material undisclosed repair prevents "
+                    "a buyer from evaluating the specific machine being offered."
+                ),
+                (
+                    "Settlement fails when money moves faster than evidence. Use an independently verified "
+                    "escrow provider whose agreement identifies the property, parties, release conditions, "
+                    "dispute process, and fee waterfall. Provider eligibility, permitted transaction "
+                    "types, and licensing must fit the transaction; a familiar logo is not enough. "
+                    "A forwarded email changing bank details is a fraud event until verified through "
+                    "a previously established telephone number and a second authorized person. Treat "
+                    "a payment screenshot as no evidence of cleared funds. Wire payments have different "
+                    "reversal mechanics from card payments, but fraud investigations, contractual refunds, "
+                    "and court orders still create loss exposure. Specify lender payoff, seller net "
+                    "proceeds, broker fee, holdback, and taxes as separate settlement lines. Allocate "
+                    "rigging, disconnection, loading, transit risk, insurance, and buyer acceptance "
+                    "before machinery leaves its test location. A $15,000 commission cannot absorb "
+                    "an accidental $80,000 floor repair caused by an uninsured rigger. Verify "
+                    "coverage and exclusions with the relevant insurer or authorized representative, "
+                    "not merely a certificate attached by the seller. When an exception appears, "
+                    "pause the affected release rather than inventing a side payment. Preserve "
+                    "signed amendments and the settlement ledger so a later defect claim can "
+                    "be evaluated against the actual agreed condition and transfer sequence."
+                ),
+            ],
+            "table": {
+                "caption": "Ownership, Inspection, and Settlement Evidence Required Before Release",
+                "headers": [
+                    "Fatal beginner assumption requiring immediate challenge",
+                    "Evidence that must exist in the transaction file",
+                    "Specific exception that stops the affected transaction",
+                    "Responsible operator response and documented release condition",
+                ],
+                "rows": [
+                    [
+                        "Seller possession proves unrestricted ownership of the offered industrial machine",
+                        "Entity authority, purchase chain, exact serial photographs, and relevant lien searches",
+                        "The seller cannot reconcile its identity with recorded ownership evidence",
+                        "Transaction lead freezes settlement until independently verified ownership evidence reconciles",
+                    ],
+                    [
+                        "Searching the equipment serial number discovers every enforceable security interest",
+                        "Debtor-name searches, blanket collateral review, and authenticated secured-party payoff instructions",
+                        "A secured creditor appears without a matching asset release agreement",
+                        "Settlement lead obtains collateral-specific creditor authorization before releasing seller proceeds",
+                    ],
+                    [
+                        "A truck's clean UCC search substitutes for certificate-of-title lien verification",
+                        "Current title record, vehicle identification match, and applicable DMV lien documentation",
+                        "Vehicle identification or lienholder information conflicts across the supplied documents",
+                        "Fleet specialist excludes the truck until the title discrepancy resolves",
+                    ],
+                    [
+                        "A short operating video proves sustained CNC production accuracy",
+                        "Independent geometry measurements, fault logs, thermal checks, and agreed acceptance tolerances",
+                        "The seller refuses testing under the buyer's documented operating requirements",
+                        "Technical specialist stops condition claims and offers evidence-based repricing alternatives",
+                    ],
+                    [
+                        "Updated bank instructions inside an existing email thread remain trustworthy",
+                        "Recorded callback verification through established contacts and separate authorized confirmation",
+                        "Beneficiary identity changes without independently authenticated supporting settlement documentation",
+                        "Settlement lead freezes payment instructions and verifies the requested change separately",
+                    ],
+                    [
+                        "The buyer's rigger automatically carries every loading and property risk",
+                        "Signed removal allocation, verified coverage terms, and documented site access requirements",
+                        "Required property damage or lifting coverage excludes the planned operation",
+                        "Logistics lead postpones removal until the responsible party supplies adequate coverage",
+                    ],
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Bind identity to the actual asset",
+                    "action": "Create one transaction record linking seller authority, serial evidence, and physical location.",
+                    "detail": "Use live inspection evidence and independently sourced entity records; quarantine conflicting identity or ownership documents.",
+                },
+                {
+                    "step": 2,
+                    "title": "Resolve encumbrances and measured condition",
+                    "action": "Complete the relevant debtor and title searches, creditor release process, and independent technical inspection.",
+                    "detail": "Attach the exact collateral schedule and acceptance criteria; obtain written allocation of every material disclosed defect.",
+                },
+                {
+                    "step": 3,
+                    "title": "Authenticate the settlement waterfall",
+                    "action": "Confirm escrow eligibility, beneficiary instructions, payoff sequence, commission entitlement, and holdback terms.",
+                    "detail": "Verify changes through established contacts and require the escrow provider to acknowledge the operative release conditions.",
+                },
+                {
+                    "step": 4,
+                    "title": "Release against evidence and archive",
+                    "action": "Authorize only the disbursements and physical transfers whose written conditions have been satisfied.",
+                    "detail": "Retain inspection records, acceptance, creditor authorization, settlement statements, and shipment evidence for the documented retention period.",
+                },
+            ],
+        },
+        {
+            "heading": "3. Isolate CON Authority, Export Restrictions, and Platform Enforcement",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "The mandatory catalog mapping is con_decommissioned_medical_imaging_arbitrage, "
+                    "Certificate-of-Need (CON) & Decommissioned Hospital Imaging-Suite Arbitrage, TRACK_1. "
+                    "Its dangerous beginner assumption is that ownership of a scanner includes permission "
+                    "to operate the former hospital's service. Equipment, premises, service approvals, "
+                    "payer enrollment, and operating licenses are distinct assets or permissions. North "
+                    "Carolina General Statutes section 131E-178 illustrates a state CON requirement "
+                    "for covered new institutional health services; definitions, thresholds, exemptions, "
+                    "and change-of-ownership facts determine the actual analysis. Do not price transferable "
+                    "capacity merely because a seller once operated the scanner. Obtain the original "
+                    "approval, conditions, ownership history, and written agency interpretation or "
+                    "required decision for the proposed transaction. In the brokerage version, a "
+                    "$260,000 equipment sale at 6% produces $15,600 commission. Deduct $3,200 independent "
+                    "inspection, $800 travel, and $500 transaction-specific insurance expense for $11,100 "
+                    "direct contribution. Assign zero broker revenue to unverified operating authority. "
+                    "If site authority cannot support the proposed use, an inspected equipment-only sale "
+                    "at $220,000 yields $13,200 commission and $8,700 contribution using the same costs. "
+                    "Those prices are illustrative, not appraisals. An outright equipment acquisition "
+                    "would create a different principal-risk model outside this commission-only scorecard; "
+                    "do not silently substitute resale turnover for brokerage fees."
+                ),
+                (
+                    "An option or acquisition agreement for an imaging suite should make required "
+                    "authorization, technical inspection, site access, and removal feasibility explicit "
+                    "conditions with defined exit rights. Keep the broker's own obligations limited "
+                    "to the agreed service; a seller's option premium is not commission revenue. "
+                    "The fallback is exit under those contingencies or sell inspected equipment "
+                    "separately without representing transferable operating authority. MRI systems "
+                    "add magnet status, quench arrangements, cryogen logistics, floor loading, and "
+                    "specialist deinstallation risk. CT systems add tube condition, detector performance, "
+                    "radiation-control registration questions, and software entitlement verification. "
+                    "Nuclear-medicine assets can involve licensed radioactive material; 10 CFR 30.34(b) "
+                    "restricts license transfers absent the required written authorization, and "
+                    "Agreement State requirements may control. A facility shutdown is not proof "
+                    "that a source has been lawfully transferred or disposed of. Patient information "
+                    "can remain on workstations and storage media, so require documented sanitization "
+                    "and seller authorization before resale access. Verify whether service software, "
+                    "reconstruction packages, passwords, and OEM support contracts transfer under "
+                    "their actual terms. Do not promise access by bypassing a license control. "
+                    "If an inspection depends on unavailable proprietary diagnostics, disclose that "
+                    "limitation and restrict claims instead of converting an incomplete evaluation "
+                    "into a statement of clinical readiness."
+                ),
+                (
+                    "Export and platform shortcuts produce correlated failures: the same false description "
+                    "that wins a click can invalidate a transaction file. Under the Export Administration "
+                    "Regulations, determine jurisdiction, classification, destination, end user, and end "
+                    "use before quoting an executable delivery commitment. Review 15 CFR parts 736, "
+                    "744, and 746 as applicable; an EAR99 classification does not eliminate prohibited "
+                    "end-use, party, or destination concerns. Record screening inputs and resolution "
+                    "of potential matches rather than relying on a screenshot of a green result. "
+                    "Require the actual consignee and destination when an intermediary requests "
+                    "domestic delivery for subsequent export. Separately, check state dealer licensing "
+                    "for the specific activity and asset class: California Vehicle Code section "
+                    "11700 is relevant to covered vehicle dealer activity, not a universal licensing "
+                    "rule for every industrial broker. On eBay, Machinio, or another marketplace, "
+                    "review current listing, account, fee, and communication terms before publishing. "
+                    "Stolen photographs, fabricated ownership, undisclosed duplicate inventory, fee "
+                    "circumvention, and replacement accounts after suspension can trigger removal "
+                    "or lasting exclusion under the applicable rules. Stop affected listings, "
+                    "preserve evidence, and use the platform's appeal channel. Never evade an "
+                    "account restriction through a contractor's identity. Keep an authorized CRM "
+                    "and owned buyer relationships so a platform interruption does not erase "
+                    "the entire qualified pipeline."
+                ),
+            ],
+            "table": {
+                "caption": "Imaging, Export, Licensing, and Marketplace Landmines with Specific Fallbacks",
+                "headers": [
+                    "Regulatory or platform exposure requiring separate treatment",
+                    "Evidence needed before making the commercial representation",
+                    "Failure signal requiring a stop or narrower offer",
+                    "Fallback preserving lawful equipment brokerage economics",
+                ],
+                "rows": [
+                    [
+                        "CON-sensitive imaging sale confuses approved service capacity with transferable equipment",
+                        "Original agency decision, applicable conditions, transaction facts, and required agency determination",
+                        "The proposed operator or site lacks confirmed authority for the planned service",
+                        "Exit under written contingencies or sell inspected equipment without authority representations",
+                    ],
+                    [
+                        "Imaging deinstallation carries specialist hazards beyond ordinary forklift loading",
+                        "Qualified removal plan addressing magnet status, structural loading, and equipment-specific hazards",
+                        "Removal contractor cannot demonstrate competence or coverage for the actual system",
+                        "Delay removal and obtain specialist scope before committing price or timing",
+                    ],
+                    [
+                        "Nuclear-medicine inventory includes radioactive material subject to licensing restrictions",
+                        "Source inventory, responsible licensee records, and documented authorized transfer arrangements",
+                        "The proposed recipient or transfer lacks the required regulatory authorization",
+                        "Exclude regulated material and engage authorized specialists for the separate transfer",
+                    ],
+                    [
+                        "Export buyer sourcing conceals the ultimate destination behind a domestic intermediary",
+                        "Classification rationale, end-user evidence, destination details, and documented screening resolution",
+                        "The intermediary refuses to identify the actual consignee or intended use",
+                        "Suspend shipment and seek a screened domestic buyer with transparent documentation",
+                    ],
+                    [
+                        "Fleet brokerage crosses a state vehicle dealer licensing requirement",
+                        "Activity-specific state analysis, applicable license evidence, and documented role allocation",
+                        "The proposed selling activity requires a license the operating entity lacks",
+                        "Pause covered activity until the operating structure satisfies applicable licensing requirements",
+                    ],
+                    [
+                        "Marketplace shortcuts turn a listing dispute into account-wide enforcement",
+                        "Seller authorization, original media rights, current policy review, and accurate inventory records",
+                        "Platform warning identifies misrepresentation, prohibited conduct, or unresolved account verification",
+                        "Stop affected listings and appeal with evidence through the designated channel",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Four Pre-Flight Checks Before an Irreversible Commitment",
+                "body": (
+                    "An unresolved material exception stops the affected commitment. A higher projected "
+                    "commission does not substitute for evidence."
+                ),
+                "items": [
+                    "Verify seller authority, exact serial identity, relevant lien searches, and authenticated release instructions before authorizing any seller disbursement.",
+                    "Match independent inspection results to written buyer acceptance criteria and identify every material excluded component, software entitlement, and removal obligation.",
+                    "For imaging transactions, separate equipment ownership from CON, radioactive-material, and site authority; retain the required decisions or an equipment-only scope.",
+                    "For export or platform-sourced transactions, resolve actual end-user screening and account restrictions before committing shipment, publication, or commission collection.",
+                ],
+            },
+        },
+        {
+            "heading": "4. Install Telemetry That Stops Leakage Before the Cash Account Notices",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "Instrument the brokerage at transaction level using Airtable or HubSpot for workflow, "
+                    "QuickBooks Online for the commission ledger, and a controlled document repository "
+                    "for signed evidence. These tools organize records; they do not validate ownership "
+                    "or legal authority automatically. Maintain fields for serial number, seller "
+                    "entity, gross equipment price, contractual fee, referral share, inspection "
+                    "spend, expected acceptance date, earned date, collected date, reversal exposure, "
+                    "and unresolved exceptions. Every field should have a source document and a "
+                    "responsible person. Define fee realization as net commissions retained divided "
+                    "by originally contracted commissions for the same closed cohort. An illustrative "
+                    "warning below 95% over ninety days should trigger clause-level review, not "
+                    "automatic accusations of fraud. Define direct contribution using retained "
+                    "commissions less transaction-specific acquisition, inspection, referral, and "
+                    "settlement support costs; keep shared overhead outside that measure to avoid "
+                    "double counting. If direct costs exceed 30% of the contracted fee before "
+                    "acceptance, require a revised spend budget and an explicit continue-or-withdraw "
+                    "decision. Small samples distort rates, so display both dollars and counts. "
+                    "One large refund among two closings deserves attention even when a percentage "
+                    "dashboard looks statistically unstable. Reconcile each closed record to "
+                    "actual bank settlement and the accounting ledger weekly."
+                ),
+                (
+                    "Early warnings must distinguish an aging deal from an impaired deal. Track days "
+                    "from completed inspection to buyer acceptance, days from earned commission to "
+                    "receipt, and days remaining until the seller's mandate expires. For an "
+                    "illustrative fourteen-day commission collection term, flag balances seven days "
+                    "past due and suspend new unsecured work for that counterparty at thirty "
+                    "days past due unless a documented recovery plan justifies exposure. Review "
+                    "any inspection-to-acceptance interval above twenty-one days for financing, "
+                    "condition, logistics, or documentation failure; do not assume all delays "
+                    "have the same remedy. Forecast unrestricted cash separately from escrow "
+                    "and seller balances. At $8,000 monthly fixed overhead, a ninety-day "
+                    "runway requires $24,000 before expected deal-specific commitments. That "
+                    "reserve fits within, but can consume a substantial portion of, the "
+                    "$10,000–$75,000 startup range. A two-to-nine-month first-deal timeline "
+                    "makes commission dependence dangerous at the lower end. Contract inspection "
+                    "work in stages, avoid speculative ownership, and cap unreimbursed site "
+                    "visits. Treat more than 25% of trailing commissions from one seller "
+                    "or more than 50% of qualified leads from one marketplace as review "
+                    "thresholds, not statutory limits. Diversification should mean additional "
+                    "verified relationships, not unqualified lead volume that consumes inspection "
+                    "capacity without improving collections."
+                ),
+                (
+                    "The final circuit breaker is a repeatable response when facts deteriorate. A "
+                    "serial mismatch, unauthenticated bank change, unresolved material lien, prohibited "
+                    "export concern, or missing required authority creates an immediate hold on "
+                    "the affected action. A weaker contribution forecast creates an economic review, "
+                    "not a reason to conceal a defect. Assign one decision owner, preserve "
+                    "original records, notify the relevant contracting parties through established "
+                    "channels, and document what evidence permits resumption. For platform "
+                    "warnings, stop the implicated behavior and listings while assessing scope; "
+                    "do not destroy messages or open replacement identities. For suspected "
+                    "payment fraud, contact the bank's fraud team immediately and follow its "
+                    "recall and reporting process without promising recovery. Reforecast canonical "
+                    "profit against realized losses rather than quietly changing the scorecard: "
+                    "the Base benchmark remains $157,500, while the earlier $33,000 shock "
+                    "produces a $124,500 outcome. The Conservative $25,000 profit has especially "
+                    "little room for one major dispute. Review the exception register weekly "
+                    "with the owner and relevant contractors, recording closed issues as well "
+                    "as open ones. Inventory matching and buyer alerts should automate "
+                    "distribution only after authority and evidence checks; automation that "
+                    "broadcasts a defective listing merely multiplies representations faster "
+                    "than a small team can retract them."
+                ),
+            ],
+            "table": {
+                "caption": "Illustrative Early-Warning Thresholds and Transaction-Level Circuit Breakers",
+                "headers": [
+                    "Forensic metric and exact measurement basis",
+                    "Illustrative warning threshold or immediate stop condition",
+                    "Likely leakage mechanism requiring evidence-based diagnosis",
+                    "Required intervention with a named operational owner",
+                ],
+                "rows": [
+                    [
+                        "Fee realization equals retained commissions divided by original closed-cohort commissions",
+                        "Below 95% across ninety days triggers transaction and contract review",
+                        "Refunds, unauthorized discounts, competing fee claims, or acceptance-linked commission reductions",
+                        "Owner reviews each deduction and revises the affected engagement language",
+                    ],
+                    [
+                        "Direct spend ratio equals committed transaction costs divided by contracted commission",
+                        "Above 30% before buyer acceptance requires a revised spending decision",
+                        "Repeated inspections, travel escalation, referral leakage, or unpriced settlement support",
+                        "Deal lead freezes discretionary spending until contribution and exit options reconcile",
+                    ],
+                    [
+                        "Collection aging measures elapsed days beyond the contractual commission due date",
+                        "Flag seven days overdue; review unsecured exposure at thirty days overdue",
+                        "Disputed entitlement, weak buyer funding, seller distress, or missing acceptance evidence",
+                        "Collections owner obtains a documented resolution before accepting further unsecured work",
+                    ],
+                    [
+                        "Acceptance aging measures days after completed inspection without documented buyer acceptance",
+                        "Above twenty-one days requires a coded explanation and next action",
+                        "Unresolved defects, delivery constraints, funding delays, or incomplete contractual documentation",
+                        "Transaction lead sets a dated remedy or exercises available termination rights",
+                    ],
+                    [
+                        "Cash runway excludes escrow balances and divides unrestricted cash by fixed overhead",
+                        "Below ninety days prompts commitment review before additional unreimbursed transaction spending",
+                        "Lumpy closings leave recurring expenses exposed while restricted funds appear available",
+                        "Owner stages contractor work and preserves settlement funds outside operating cash",
+                    ],
+                    [
+                        "Concentration tracks trailing seller commissions and qualified marketplace-sourced lead shares",
+                        "Review seller shares above 25% or marketplace shares above 50%",
+                        "Single-counterparty distress or account suspension interrupts otherwise credible transaction flow",
+                        "Commercial lead builds independently verified alternatives without bypassing platform account restrictions",
+                    ],
+                ],
+            },
+        },
+    ],
+    "pull_quote": "A commission is only as durable as the ownership, condition, and settlement evidence beneath it.",
+    "diagram_id": "diag-05",
+    "action_checklist": [
+        "Build a serial-level transaction ledger separating equipment value, commission entitlement, direct costs, restricted settlement balances, and reversal exposure.",
+        "Obtain seller authority, relevant debtor and title searches, authenticated creditor releases, and independent asset-specific inspection evidence before closing.",
+        "Execute a commission agreement defining the fee base, earning event, protected introductions, referral splits, acceptance conditions, and refund allocation.",
+        "For the imaging play, document the separation between equipment ownership and CON or other operating authority, including contingent exit and equipment-only resale paths.",
+        "Configure weekly fee-realization, direct-spend, collection-aging, acceptance-aging, cash-runway, and concentration reviews with explicit owners and hold conditions.",
+        "Verify escrow instructions, removal coverage, applicable dealer licensing, export restrictions, and marketplace permissions before the corresponding irreversible action.",
+    ],
+    "statutory_citations": [
+        {
+            "title": "UCC § 9-301 — Law Governing Perfection and Priority of Security Interests",
+            "url": "https://www.law.cornell.edu/ucc/9/9-301",
+            "relevance": "Provides the general governing-law framework for locating relevant perfection searches; consult the applicable state's enacted text and collateral exceptions.",
+        },
+        {
+            "title": "UCC § 9-307 — Location of Debtor",
+            "url": "https://www.law.cornell.edu/ucc/9/9-307",
+            "relevance": "Determines debtor location for Article 9 purposes, including the general rule for registered organizations organized under state law.",
+        },
+        {
+            "title": "UCC § 9-503 — Name of Debtor and Secured Party",
+            "url": "https://www.law.cornell.edu/ucc/9/9-503",
+            "relevance": "Explains debtor-name requirements that make trading-name-only lien searches inadequate for reliable transaction diligence.",
+        },
+        {
+            "title": "UCC § 9-315 — Secured Party's Rights on Disposition of Collateral",
+            "url": "https://www.law.cornell.edu/ucc/9/9-315",
+            "relevance": "Explains continued security interests after disposition and why secured-party authorization or an applicable exception matters.",
+        },
+        {
+            "title": "UCC § 9-311 — Perfection under Other Statutes, Regulations, or Treaties",
+            "url": "https://www.law.cornell.edu/ucc/9/9-311",
+            "relevance": "Addresses collateral subject to certificate-of-title and other statutory perfection systems, supporting separate fleet title diligence.",
+        },
+        {
+            "title": "UCC § 2-313 — Express Warranties by Affirmation, Promise, Description, Sample",
+            "url": "https://www.law.cornell.edu/ucc/2/2-313",
+            "relevance": "Makes material equipment descriptions and factual promises consequential in sales contracts rather than harmless listing language.",
+        },
+        {
+            "title": "UCC § 2-316 — Exclusion or Modification of Warranties",
+            "url": "https://www.law.cornell.edu/ucc/2/2-316",
+            "relevance": "Sets conditions for warranty exclusions and addresses inconsistency between express warranty language and attempted disclaimers.",
+        },
+        {
+            "title": "North Carolina General Statutes § 131E-178 — Activities Requiring Certificate of Need",
+            "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_131E/GS_131E-178.html",
+            "relevance": "Illustrates state CON controls on covered institutional health services; an equipment sale does not itself establish authority for a proposed service.",
+        },
+        {
+            "title": "10 CFR § 30.34 — Terms and Conditions of Licenses",
+            "url": "https://www.ecfr.gov/current/title-10/chapter-I/part-30/section-30.34",
+            "relevance": "Subsection (b) addresses transfer restrictions for NRC licenses; radioactive-material transactions also require attention to applicable Agreement State authority.",
+        },
+        {
+            "title": "15 CFR Part 736 — General Prohibitions",
+            "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-736",
+            "relevance": "Establishes core EAR prohibitions relevant to equipment exports and explains why classification alone cannot resolve transaction permissibility.",
+        },
+        {
+            "title": "15 CFR Part 744 — Control Policy: End-User and End-Use Based",
+            "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-744",
+            "relevance": "Supports transaction-specific end-user and end-use diligence before committing export delivery or accepting unexplained intermediaries.",
+        },
+        {
+            "title": "15 CFR Part 746 — Embargoes and Other Special Controls",
+            "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-746",
+            "relevance": "Provides destination-specific controls that must be checked alongside classification, parties, and intended use.",
+        },
+        {
+            "title": "California Vehicle Code § 11700 — Vehicle Dealer Licensing Requirement",
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=VEH&sectionNum=11700.",
+            "relevance": "Provides a concrete state licensing reference for covered vehicle dealer activity; applicability depends on the actual fleet transaction and statutory definitions.",
+        },
+    ],
+}

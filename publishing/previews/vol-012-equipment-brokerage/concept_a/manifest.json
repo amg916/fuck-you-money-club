@@ -1,0 +1,65 @@
+{
+  "concept_id": "concept_a",
+  "volume_id": "vol-012-equipment-brokerage",
+  "approved": false,
+  "edition_status": "concept_preview",
+  "preview_only": true,
+  "files": {
+    "digital_pdf.pdf": {
+      "bytes": 1787339,
+      "sha256": "29b21f2a4fd4ca10b946fafdb4f8e3c7e5afcf58ec2e621e1315da2c863d44e8"
+    },
+    "print_6x9_pdf.pdf": {
+      "bytes": 2286598,
+      "sha256": "48158218a7f3bef8694c7ef1ce3db772f0797bb05fb1c795cbe69149551fbf3d"
+    },
+    "workbook_pdf.pdf": {
+      "bytes": 539140,
+      "sha256": "2a6c546169c1d74f222b7b586981db1e1992327b2a2a369e41e307df86842ca4"
+    },
+    "book.epub": {
+      "bytes": 253445,
+      "sha256": "2c2b0da300d9a9e054075ab0537107628c70a7b8e0cf59b4ef7881b5e85233f7"
+    },
+    "art/cover.svg": {
+      "bytes": 4022,
+      "sha256": "3138ff950686abfe07712d60a627b8cfba445a9b2f4cd3c14f18437bce04b32f"
+    },
+    "art/scorecard.svg": {
+      "bytes": 42317,
+      "sha256": "25b5bfdcfbf1eb3eb6874459f45fcd35f1ce1206018bdec748ef6ad61337271b"
+    },
+    "art/diag_01.svg": {
+      "bytes": 12915,
+      "sha256": "0c9bc71d6cabda17a7a19ece3bdff66b17739dfd3863a7e287b34e9f1c126a6d"
+    },
+    "art/diag_02.svg": {
+      "bytes": 8706,
+      "sha256": "8d970ba876ed2d902d0ccb4fb41b012cdcaecd33f431c84bfc155b305966558a"
+    },
+    "art/diag_03.svg": {
+      "bytes": 12964,
+      "sha256": "2f7300f4d6fdb38b8cd61280a4e37f3df7052be40687ac15118dfac211ac7ddc"
+    },
+    "art/diag_04.svg": {
+      "bytes": 10182,
+      "sha256": "1ac8a2b4860742e4886ce29d761f7d3b007b176cde6984d3ba62303a28d3bf58"
+    },
+    "art/diag_05.svg": {
+      "bytes": 11338,
+      "sha256": "70c9eae2e82ef0db3922ba8ca8c766a700636973d85133849a823ef4ad1f51f8"
+    },
+    "art/diag_06.svg": {
+      "bytes": 10695,
+      "sha256": "d75513fc874494f7543dbefaa3ea13e6ddc40cbdacc57dddeb716905f4535f76"
+    },
+    "art/diag_07.svg": {
+      "bytes": 9830,
+      "sha256": "425d80ccf674491bf50d05d37e9ddec7eaf2eb865f94eedc593d9e61aa33cb6c"
+    },
+    "art/diag_08.svg": {
+      "bytes": 9158,
+      "sha256": "2951e7e567170160b06cca9c16688e3eeef6af0c678224ceed43819349cdee66"
+    }
+  }
+}
