@@ -1,10 +1,10 @@
 {
   "scope": "publishing_store_excluding_previews",
   "sha256": {
-    "audit/existing_work_audit.json": "89b85045d48401ca62bc1d9170060112db204dfda8fc3a86f300da53dea356f7",
-    "brand/brand_system.json": "0b1f0c479302a74acb82abaac96e2704771fc8deb8f047f5c54361b6a9e99b83",
-    "catalog/pipeline_29_candidates.json": "d51b16c9faba97e768bfb74501acda302b1517c414efb61b5dab75dbcc4db854",
-    "research/research_database_summary.json": "b4d5f8bc9f1f820facd7d60440afc24c80cfb3f2a50ef7c41051b2eff8715f15",
+    "audit/existing_work_audit.json": "ddd63f897cfcd3dddd088a28211a7b8800fc448cb61e8dcceed44e21128033c7",
+    "brand/brand_system.json": "65654074aa22f3dcb1f97ac4199a10e5f1127243fafedcec68d0048313adfaa2",
+    "catalog/pipeline_29_candidates.json": "01957038e61e10155858a23bb4bf1983c357b88555f0db1cb45b704919bef36f",
+    "research/research_database_summary.json": "8ec3989df479342fbbb712519aac34776cd21656650d37b346b8d534a2cb9211",
     "site/newsletter_signups.json": "5a97fe09f877c0fccee940246e74f27dc5b6bc83148037af241946b350933794",
     "volumes/vol-001-heir-hunting/chapters/chapter-01.md": "4c44fe7e11c2f4af10ed7241bb0f8b49674c33d8c70c91a965cd3a0dab1133f0",
     "volumes/vol-001-heir-hunting/chapters/chapter-02.md": "c9f8705ba384dbbbd713674229cb8dfce45ab4fab27acea1480b476f229ad08b",
@@ -257,6 +257,24 @@
     "volumes/vol-014-specialty-finance-brokerage/manuscript.json": "d8c6d0cc4798fdaeeec9ea90223c5adbaef7a244f632e53539c69256bd3b94eb",
     "volumes/vol-014-specialty-finance-brokerage/metadata.json": "a9ae1bcf30b9ccec665c664c0d21775f632a221d177585309161a78cf85783a8",
     "volumes/vol-014-specialty-finance-brokerage/scorecard.json": "271854cbd346e13670f4c11cc5ab5340c5a8b77237639470a041a909d1036dd7",
-    "volumes/vol-014-specialty-finance-brokerage/workbook.json": "5ef678b358526e29eefcb7dedaf4b32f439f9842c9c404d37144e2de8e238798"
+    "volumes/vol-014-specialty-finance-brokerage/workbook.json": "5ef678b358526e29eefcb7dedaf4b32f439f9842c9c404d37144e2de8e238798",
+    "volumes/vol-015-judgment-recovery/chapters/chapter-01.md": "4ccd412425d8f46020ee9902db1663ee0be4419f6ae64c0bf2b41eb4d06781a0",
+    "volumes/vol-015-judgment-recovery/chapters/chapter-02.md": "b85085c223cba69c1527a84f64e65173a6cb14ca5363b6ab04c92ca8d7479a43",
+    "volumes/vol-015-judgment-recovery/chapters/chapter-03.md": "ab7ad356990e17d919cacb6985d734f24a23e959c65ceae8a36988e4185df358",
+    "volumes/vol-015-judgment-recovery/chapters/chapter-04.md": "1d3c317aa30a9aa14ca2cf222c197e4bbbf8299aec63225ab354565a9fcb22b1",
+    "volumes/vol-015-judgment-recovery/chapters/chapter-05.md": "cd84ffada35a0d92acd57afdf4511b656ca44671c783caeba9c8330b989e08ab",
+    "volumes/vol-015-judgment-recovery/chapters/chapter-06.md": "9ddf16ad7bfd92a525754bc594156ff1d5b59ea82b82000e2fc06345a205d34c",
+    "volumes/vol-015-judgment-recovery/chapters/chapter-07.md": "0f9a212665d976c218d811395cce5dbedeaf0c2cc28b0a6ac7483561638f6a86",
+    "volumes/vol-015-judgment-recovery/chapters/chapter-08.md": "65a6c909e7bca1236a453e95fd7618b1950273e180d3b613d9c507efb1bc576f",
+    "volumes/vol-015-judgment-recovery/chapters/chapter-09.md": "7b61efd680cd59a663a5b4a57841e6703cbdd7fe2f6eb584fc1eac27431193a2",
+    "volumes/vol-015-judgment-recovery/chapters/chapter-10.md": "353993f93ae369f8bd2138bd323fab71c479816874de7e5a82df32241c05b142",
+    "volumes/vol-015-judgment-recovery/chapters/chapter-11.md": "3eb60586ce0b2e0e96bcc6577d30a802a5e7fe737a4b46a1d2792b137cc1dcee",
+    "volumes/vol-015-judgment-recovery/chapters/chapter-12.md": "fcab137b7e7f7333ff907f4cbcbc5e8d612c065c6fc08d31c16e550dfc876cd4",
+    "volumes/vol-015-judgment-recovery/diagrams_data.json": "5fae83b37354f3d08016b85ab14d64de2781e6b8828bd80fc47c01ec7da85544",
+    "volumes/vol-015-judgment-recovery/graphics_reviews.json": "5d60ef16f71e5580cb65dd828c80dbfe21884fad4e36b7ca3bdcc96567dbee09",
+    "volumes/vol-015-judgment-recovery/manuscript.json": "0aea5b2cfa25da0eafb4a174c85d28d6c5405a2e2192e7f4c20f6aca135e2e87",
+    "volumes/vol-015-judgment-recovery/metadata.json": "67f6c24f672de875103ea6bdc695016f3450468c1fd1c8e50315adc030220f4e",
+    "volumes/vol-015-judgment-recovery/scorecard.json": "7551fbcb10a3aa758e7f1f332e3a91d4118341b376d4ceb3c61435050da23ccf",
+    "volumes/vol-015-judgment-recovery/workbook.json": "5d61b3de7f87b33ccb2d57f6c7076bc483a5e15610b1968234bd4b0f51f07c7a"
   }
 }

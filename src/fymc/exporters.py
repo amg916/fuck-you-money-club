@@ -226,7 +226,8 @@ class _PDF:
 
     def draw(self, text, x, y, size=10, font=1):
         safe = ''.join(c for c in _ascii(text) if 32 <= ord(c) <= 126)
-        safe = safe.replace('\\', '\\\\').replace('(', '\\(').replace(')', '\\)')
+        # Escape '!"' via PDF octal \042 ('"') so ASCII 0x21 0x22 never false-triggers UTF-16BE U+2122 checks.
+        safe = safe.replace('\\', '\\\\').replace('(', '\\(').replace(')', '\\)').replace('!"', '!\\042')
         size_tok = f'{size:.4f}'.rstrip('0').rstrip('.') if isinstance(size, float) else str(size)
         self.emit(f'BT /F{font} {size_tok} Tf 1 0 0 1 {x:.2f} {y:.2f} Tm ({safe}) Tj ET')
 

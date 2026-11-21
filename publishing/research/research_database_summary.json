@@ -1,6 +1,6 @@
 {
-  "abridged_video_count": 2238,
-  "raw_video_count": 2238,
+  "abridged_video_count": 2416,
+  "raw_video_count": 2416,
   "summary": {
     "type": "dict",
     "keys": [
@@ -22,11 +22,11 @@
       "coverage": 6
     },
     "values": {
-      "generated_at": "2026-11-21T21:42:37+00:00",
+      "generated_at": "2026-11-21T22:03:50+00:00",
       "schema_version": "1.0"
     }
   },
-  "generated_at": "2026-11-21T21:42:37Z",
+  "generated_at": "2026-11-21T22:03:50Z",
   "counts": {
     "topics": 8
   },
@@ -34,9 +34,9 @@
     {
       "topic_id": "business_model_and_economics",
       "title": "Business Model, Contingency Economics & Deal Scale",
-      "video_count": 1744,
-      "tip_count": 3871,
-      "channel_count": 1223,
+      "video_count": 1887,
+      "tip_count": 3972,
+      "channel_count": 1333,
       "top_sources": [
         {
           "video_id": "JVbzH2BD68w",
@@ -189,8 +189,8 @@
       ],
       "statutes_and_forms": [
         "form and",
-        "form that",
         "form of",
+        "form that",
         "form to",
         "form for",
         "form is",
@@ -198,48 +198,48 @@
         "form you",
         "form the",
         "form with",
-        "form where",
+        "form on",
         "form your",
         "form in",
-        "form on",
+        "form where",
         "form like",
-        "form so",
         "form a",
+        "form so",
         "form content",
         "form if",
         "form it",
+        "court order",
         "form as",
-        "form called",
+        "form below",
         "form I",
         "form which",
-        "form at",
-        "form below",
-        "form right",
+        "Chapter 7",
+        "form called",
         "form uh",
+        "form at",
+        "form right",
         "form um",
+        "form here",
         "form because",
         "form builder",
-        "form here",
         "form submissions",
+        "form them",
         "form videos",
         "property Act",
         "Exchange Act",
-        "form but",
-        "form them",
-        "letters of administration",
-        "form we"
+        "form but"
       ],
       "tools_and_portals": [
         "Google",
         "LinkedIn",
         "Facebook",
         "Excel",
-        "Ancestry",
         "CSV",
+        "Ancestry",
         "FamilySearch",
         "https://excesselite.com",
-        "https://www.facebook.com/groups/assetrecovery",
         "Bing",
+        "https://www.facebook.com/groups/assetrecovery",
         "https://www.moneymakingjug.com/inquiry",
         "https://wise.com/invite/dic/todorivanovk1",
         "https://www.instagram.com/erizzyy/",
@@ -264,20 +264,20 @@
         "https://www.instagram.com/thedavidwilkerson",
         "https://www.unclaimedceo.com/freemasterclass",
         "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
+        "PACER",
         "http://amzn.to/1LGotjB",
         "http://amzn.to/1T1dOU2",
         "http://www.inventright.com",
         "https://plus.google.com/u/0/+boberdoo",
-        "https://twitter.com/boberdoo",
-        "https://www.boberdoo.com"
+        "https://twitter.com/boberdoo"
       ]
     },
     {
       "topic_id": "probate_and_docket_sourcing",
       "title": "County Probate Dockets, Intestate Filings & Estate Leads",
-      "video_count": 1603,
-      "tip_count": 2504,
-      "channel_count": 1051,
+      "video_count": 1773,
+      "tip_count": 3171,
+      "channel_count": 1171,
       "top_sources": [
         {
           "video_id": "oZiYbKNvxJY",
@@ -308,6 +308,13 @@
           "duration": "00:16:48"
         },
         {
+          "video_id": "nxcVuXjUaaA",
+          "title": "Online Legal Research: Part 4 of 9: Court Dockets",
+          "author": "Wilhelmina Randtke",
+          "url": "https://www.youtube.com/watch?v=nxcVuXjUaaA",
+          "duration": "00:06:35"
+        },
+        {
           "video_id": "TBB8OPPFSsM",
           "title": "What’s in a Probate Record and How to Use it for Genealogical Research– James Tanner (10 Sep 2023)",
           "author": "BYU Library Family History Center",
@@ -327,13 +334,6 @@
           "author": "BYU Library Family History Center",
           "url": "https://www.youtube.com/watch?v=07zaZ3sQwi8",
           "duration": "00:16:46"
-        },
-        {
-          "video_id": "PDnxvvPI7jU",
-          "title": "Calling probates, probate marketing, and selling probate property: Live probate class w/ Bill Gross",
-          "author": "Probate Mastery",
-          "url": "https://www.youtube.com/watch?v=PDnxvvPI7jU",
-          "duration": "00:45:58"
         }
       ],
       "top_timestamped_insights": [
@@ -443,32 +443,32 @@
         "form your",
         "form in",
         "form on",
+        "court order",
         "form with",
+        "Chapter 7",
         "form so",
+        "form Commercial",
         "form where",
         "form like",
         "form it",
-        "form Commercial",
+        "Chapter 13",
         "form if",
-        "property Act",
-        "letters of administration",
         "Form uh",
         "form which",
+        "property Act",
+        "letters of administration",
+        "form I",
         "form we",
         "form but",
-        "form I",
-        "form our",
-        "form as",
         "form here",
-        "form now",
+        "form our",
         "form them",
         "form um",
-        "form content",
-        "Exchange Act",
+        "practices act",
+        "protection act",
+        "chapter 11",
         "form an",
-        "form because",
-        "form will",
-        "letters testamentary"
+        "form as"
       ],
       "tools_and_portals": [
         "Google",
@@ -488,6 +488,7 @@
         "https://www.youtube.com/surplusfunds101",
         "https://www.facebook.com/groups/770825015084618",
         "https://www.unclaimedceo.com/linkme",
+        "PACER",
         "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
         "https://www.instagram.com/thedavidwilkerson",
         "https://www.unclaimedceo.com/freemasterclass",
@@ -509,16 +510,15 @@
         "http://familysearch.me/youtubespanish",
         "https://tinyurl.com/unclaimedmentor",
         "https://youtu.be/3cmj5kGm2Xw",
-        "https://www.unclaimedceo.com/home-page-8750",
-        "MyHeritage"
+        "https://www.unclaimedceo.com/home-page-8750"
       ]
     },
     {
       "topic_id": "unclaimed_property_and_escheat",
       "title": "State Unclaimed Property, Escheated Funds & Treasury Claims",
-      "video_count": 604,
-      "tip_count": 1783,
-      "channel_count": 378,
+      "video_count": 616,
+      "tip_count": 1803,
+      "channel_count": 387,
       "top_sources": [
         {
           "video_id": "D-PMjgNe-7s",
@@ -676,40 +676,40 @@
         "form below",
         "Form is",
         "form to",
-        "form the",
         "form you",
+        "form the",
         "form for",
         "form or",
         "form a",
         "form your",
+        "Form uh",
         "form we",
         "form with",
         "Property Act",
         "form but",
         "form if",
         "form it",
+        "form on",
         "form our",
         "form so",
         "form in",
-        "form on",
         "form them",
-        "Form uh",
-        "form this",
         "form um",
+        "form this",
         "form where",
         "form which",
         "affidavit of heirship",
+        "court order",
         "form because",
         "form due",
         "form I",
+        "form today",
+        "Chapter 7",
+        "form acts",
         "form all",
         "form as",
         "form fill",
-        "form from",
-        "form here",
-        "form today",
-        "form Unclaimed",
-        "letters of administration"
+        "form from"
       ],
       "tools_and_portals": [
         "Facebook",
@@ -757,9 +757,9 @@
     {
       "topic_id": "genealogy_and_heirship_proof",
       "title": "Forensic Genealogy, Per-Stirpes Kinship & Proof of Heirship",
-      "video_count": 1908,
-      "tip_count": 2396,
-      "channel_count": 1275,
+      "video_count": 1991,
+      "tip_count": 2476,
+      "channel_count": 1342,
       "top_sources": [
         {
           "video_id": "7M3XZfN7814",
@@ -920,37 +920,37 @@
         "form or",
         "form you",
         "form the",
-        "form with",
         "form a",
-        "form in",
+        "form with",
         "form on",
-        "form so",
         "form your",
+        "form in",
+        "form so",
         "form where",
         "form like",
         "form below",
         "form content",
-        "form as",
         "form if",
+        "form as",
+        "form Commercial",
         "form it",
+        "form I",
         "form at",
         "form which",
-        "form I",
         "form called",
         "Form uh",
         "property Act",
-        "form Commercial",
         "form here",
         "form right",
         "letters of administration",
+        "Chapter 7",
+        "court order",
         "form builder",
         "form submissions",
         "form um",
         "form videos",
-        "Exchange Act",
-        "form because",
-        "form we",
-        "form from"
+        "Chapter 13",
+        "Exchange Act"
       ],
       "tools_and_portals": [
         "Google",
@@ -979,6 +979,7 @@
         "https://tiktok.com/@courtney.fricke",
         "https://www.facebook.com/courtneyfricke19/",
         "https://x.com/courtneyfricke",
+        "PACER",
         "http://familysearch.me/facebook",
         "http://familysearch.me/home",
         "http://familysearch.me/instagram",
@@ -991,16 +992,15 @@
         "https://www.youtube.com/@courtneyfricke",
         "https://youtu.be/3cmj5kGm2Xw",
         "https://tinyurl.com/unclaimedmentor",
-        "https://www.unclaimedceo.com/home-page-8750",
-        "MyHeritage"
+        "https://www.unclaimedceo.com/home-page-8750"
       ]
     },
     {
       "topic_id": "skip_tracing_and_outreach",
       "title": "Skip Tracing, Ethical Heir Contact & Trust Building",
-      "video_count": 1252,
-      "tip_count": 897,
-      "channel_count": 878,
+      "video_count": 1340,
+      "tip_count": 948,
+      "channel_count": 946,
       "top_sources": [
         {
           "video_id": "DgzklijTLzE",
@@ -1052,11 +1052,11 @@
           "duration": "00:13:48"
         },
         {
-          "video_id": "3o3gecljGlE",
-          "title": "10x Your LinkedIn Outbound With HeyReach [Demo Video]",
-          "author": "HeyReach",
-          "url": "https://www.youtube.com/watch?v=3o3gecljGlE",
-          "duration": "00:02:22"
+          "video_id": "cbgT8jQuacQ",
+          "title": "How To Skip Trace For FREE! Wholesaling Real Estate Step By Step 2025",
+          "author": "Jacob Blank",
+          "url": "https://www.youtube.com/watch?v=cbgT8jQuacQ",
+          "duration": "00:08:07"
         }
       ],
       "top_timestamped_insights": [
@@ -1153,8 +1153,8 @@
       ],
       "statutes_and_forms": [
         "form and",
-        "form that",
         "form of",
+        "form that",
         "form to",
         "form for",
         "form or",
@@ -1164,34 +1164,34 @@
         "form the",
         "form a",
         "form where",
-        "form like",
+        "form on",
         "form with",
         "form in",
-        "form on",
+        "form like",
         "form so",
         "form below",
         "form content",
         "Form uh",
-        "form which",
-        "form as",
-        "form if",
-        "form um",
-        "form called",
         "form Commercial",
+        "court order",
+        "form which",
+        "form if",
+        "form as",
         "form I",
+        "form um",
+        "Protection Act",
+        "Chapter 7",
+        "form called",
         "form it",
         "form here",
         "form right",
+        "Chapter 13",
         "form at",
         "form but",
+        "form them",
         "form because",
         "form builder",
-        "form our",
-        "form them",
-        "form now",
-        "Protection Act",
-        "form all",
-        "form better"
+        "form our"
       ],
       "tools_and_portals": [
         "LinkedIn",
@@ -1200,8 +1200,8 @@
         "Excel",
         "CSV",
         "https://excesselite.com",
-        "https://www.facebook.com/groups/assetrecovery",
         "Bing",
+        "https://www.facebook.com/groups/assetrecovery",
         "https://www.moneymakingjug.com/inquiry",
         "https://www.surplusfunds101.com/freecallingscript",
         "https://www.youtube.com/surplusfunds101",
@@ -1230,18 +1230,18 @@
         "https://www.youtube.com/watch?v=UsgE1Y0oWSk",
         "https://www.youtube.com/watch?v=VFmDI2izmrk",
         "https://www.youtube.com/watch?v=yqu6OuHwKwo",
+        "PACER",
         "https://tinyurl.com/unclaimedmentor",
         "https://www.smartlead.ai",
-        "https://www.smartlead.ai/ebook-and-guide",
-        "http://bookwithbeau.com/"
+        "https://www.smartlead.ai/ebook-and-guide"
       ]
     },
     {
       "topic_id": "contracts_and_compensation",
       "title": "Fee Agreements, Assignments of Interest & Escrow Disbursement",
-      "video_count": 1734,
-      "tip_count": 2253,
-      "channel_count": 1181,
+      "video_count": 1896,
+      "tip_count": 2507,
+      "channel_count": 1296,
       "top_sources": [
         {
           "video_id": "VBvaq5etzV4",
@@ -1249,6 +1249,20 @@
           "author": "Rent Own Sell",
           "url": "https://www.youtube.com/watch?v=VBvaq5etzV4",
           "duration": "00:02:55"
+        },
+        {
+          "video_id": "dwH7f7RGYC4",
+          "title": "What Is A Lien | Real Estate Exam Prep",
+          "author": "The Real Estate Classroom",
+          "url": "https://www.youtube.com/watch?v=dwH7f7RGYC4",
+          "duration": "00:16:42"
+        },
+        {
+          "video_id": "cZtaubxDzMA",
+          "title": "Judgment Lien: Definition, Examples, Vs. Property Lien",
+          "author": "Simple Explain",
+          "url": "https://www.youtube.com/watch?v=cZtaubxDzMA",
+          "duration": "00:03:10"
         },
         {
           "video_id": "9ztMvgoQsgE",
@@ -1265,6 +1279,13 @@
           "duration": "00:03:48"
         },
         {
+          "video_id": "-HFzhDO6v-A",
+          "title": "How Judgment Liens Show Up in Courthouse Records — And How to Find Them | Hidden Power Files",
+          "author": "Hidden Power Files",
+          "url": "https://www.youtube.com/watch?v=-HFzhDO6v-A",
+          "duration": "00:06:40"
+        },
+        {
           "video_id": "IK3LgAFr-QQ",
           "title": "The Deposit and Escrow Instructions",
           "author": "Title's Not Borin' with Lauren",
@@ -1272,32 +1293,11 @@
           "duration": "00:03:36"
         },
         {
-          "video_id": "GWuQIN0aSwQ",
-          "title": "What liens remain on a title search after foreclosure?",
-          "author": "Private Investigator Videos",
-          "url": "https://www.youtube.com/watch?v=GWuQIN0aSwQ",
-          "duration": "00:02:49"
-        },
-        {
-          "video_id": "FKep5tuU15Q",
-          "title": "Does A Non Disclosure Agreement Need To Be Notarized?",
-          "author": "County Portal Law",
-          "url": "https://www.youtube.com/watch?v=FKep5tuU15Q",
-          "duration": "00:02:43"
-        },
-        {
-          "video_id": "PH6WLL7kMUM",
-          "title": "Invoice Factoring vs AR Financing Explained (2026)",
-          "author": "75BizLoans and Commercial Real Estate Loans",
-          "url": "https://www.youtube.com/watch?v=PH6WLL7kMUM",
-          "duration": "00:11:07"
-        },
-        {
-          "video_id": "KhY7TkJppys",
-          "title": "Everything You Need to Know About Retainer Agreements",
-          "author": "eForms",
-          "url": "https://www.youtube.com/watch?v=KhY7TkJppys",
-          "duration": "00:03:43"
+          "video_id": "a5bLikprQ4E",
+          "title": "What is a judgment lien?",
+          "author": "AFX Videos",
+          "url": "https://www.youtube.com/watch?v=a5bLikprQ4E",
+          "duration": "00:02:21"
         }
       ],
       "top_timestamped_insights": [
@@ -1404,35 +1404,35 @@
         "form the",
         "form with",
         "form a",
-        "form in",
-        "form like",
         "form on",
-        "form below",
+        "form in",
         "form your",
+        "form below",
+        "form like",
         "form where",
         "form so",
+        "court order",
+        "Chapter 7",
         "form content",
         "form it",
         "form as",
         "form at",
+        "form Commercial",
         "form I",
-        "form if",
         "Form uh",
+        "form if",
         "form called",
         "form which",
-        "property Act",
-        "form Commercial",
+        "Chapter 13",
         "form here",
         "form um",
+        "property Act",
         "letters of administration",
         "form we",
         "form builder",
         "form right",
         "form submissions",
-        "form because",
-        "form our",
-        "form them",
-        "form videos"
+        "Protection Act"
       ],
       "tools_and_portals": [
         "Google",
@@ -1445,8 +1445,8 @@
         "Ancestry",
         "https://www.moneymakingjug.com/inquiry",
         "https://www.instagram.com/erizzyy/",
-        "FamilySearch",
         "Bing",
+        "FamilySearch",
         "https://www.surplusfunds101.com/freecallingscript",
         "https://wise.com/invite/dic/todorivanovk1",
         "https://www.youtube.com/surplusfunds101",
@@ -1454,6 +1454,7 @@
         "https://www.instagram.com/thedavidwilkerson",
         "https://www.facebook.com/groups/770825015084618",
         "https://www.unclaimedceo.com/linkme",
+        "PACER",
         "https://www.unclaimedceo.com/freemasterclass",
         "https://www.unclaimedceo.com/digitalcourse",
         "https://www.unclaimedceo.com/get-my-free-guide",
@@ -1473,16 +1474,15 @@
         "https://sso.teachable.com/secure/657120/checkout/4503791/state-unclaimed-funds-guide",
         "https://twitter.com/boberdoo",
         "https://www.boberdoo.com",
-        "https://www.facebook.com/boberdooLLC/",
-        "https://www.linkedin.com/company/boberdoo-com-llc"
+        "https://www.facebook.com/boberdooLLC/"
       ]
     },
     {
       "topic_id": "statutory_caps_and_licensing",
       "title": "State Fee Caps, Waiting Periods, PI Licensing & UPL Rules",
-      "video_count": 1797,
-      "tip_count": 1900,
-      "channel_count": 1181,
+      "video_count": 1969,
+      "tip_count": 2259,
+      "channel_count": 1303,
       "top_sources": [
         {
           "video_id": "ttoT3V6duzU",
@@ -1646,34 +1646,34 @@
         "form a",
         "form below",
         "form your",
-        "form in",
         "form on",
+        "form in",
         "form with",
         "form so",
         "form where",
+        "court order",
         "form like",
-        "form it",
-        "Form uh",
-        "form if",
+        "Chapter 7",
         "form Commercial",
-        "property Act",
+        "Form uh",
+        "form it",
+        "form if",
+        "Chapter 13",
         "form I",
+        "property Act",
+        "form which",
         "letters of administration",
+        "form um",
         "form we",
+        "Protection Act",
         "form but",
         "form content",
-        "form our",
-        "form um",
-        "form which",
-        "Exchange Act",
         "form here",
-        "form now",
+        "form our",
         "form them",
-        "form as",
-        "form because",
-        "form right",
-        "form called",
-        "form an"
+        "Exchange Act",
+        "form now",
+        "practices act"
       ],
       "tools_and_portals": [
         "Google",
@@ -1693,6 +1693,7 @@
         "https://www.youtube.com/surplusfunds101",
         "https://www.facebook.com/groups/770825015084618",
         "https://www.unclaimedceo.com/linkme",
+        "PACER",
         "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
         "https://www.instagram.com/thedavidwilkerson",
         "https://www.unclaimedceo.com/freemasterclass",
@@ -1714,16 +1715,15 @@
         "http://familysearch.me/youtube",
         "http://familysearch.me/youtubeeurope",
         "http://familysearch.me/youtubeportuguese",
-        "http://familysearch.me/youtubespanish",
-        "http://www.inventright.com"
+        "http://familysearch.me/youtubespanish"
       ]
     },
     {
       "topic_id": "automation_and_small_team_ops",
       "title": "Docket Automation, AI Abstracting & Small-Team Operations",
-      "video_count": 1692,
-      "tip_count": 4989,
-      "channel_count": 1159,
+      "video_count": 1828,
+      "tip_count": 5088,
+      "channel_count": 1257,
       "top_sources": [
         {
           "video_id": "zqtx1Soeq5E",
@@ -1886,8 +1886,8 @@
         "form you",
         "form with",
         "form a",
-        "form so",
         "form where",
+        "form so",
         "form your",
         "form on",
         "form below",
@@ -1895,26 +1895,26 @@
         "form in",
         "form it",
         "form content",
-        "form if",
-        "form as",
         "form which",
+        "form if",
+        "court order",
+        "form as",
         "form at",
+        "Form uh",
+        "Chapter 7",
         "form I",
-        "form we",
         "form um",
+        "form we",
         "form because",
         "form but",
-        "Form uh",
         "form called",
         "form here",
         "form builder",
         "form submissions",
-        "letters of administration",
-        "form built",
         "form this",
-        "form better",
-        "form right",
-        "form them"
+        "letters of administration",
+        "Chapter 13",
+        "form built"
       ],
       "tools_and_portals": [
         "Google",
@@ -1939,6 +1939,7 @@
         "https://www.unclaimedceo.com/digitalcourse",
         "https://www.unclaimedceo.com/freemasterclass",
         "https://www.unclaimedceo.com/get-my-free-guide",
+        "PACER",
         "https://tinyurl.com/unclaimedmentor",
         "https://www.unclaimedceo.com/home-page-8750",
         "Regrid",
@@ -1955,8 +1956,7 @@
         "https://www.linkedin.com/company/boberdoo-com-llc",
         "https://www.pinterest.com/boberdoocom/",
         "https://www.youtube.com/watch?v=5E-HfiCVYnc",
-        "https://www.youtube.com/watch?v=EKrBDZYFq2A",
-        "https://www.youtube.com/watch?v=jlSGch2JEn0&t=540s"
+        "https://www.youtube.com/watch?v=EKrBDZYFq2A"
       ]
     }
   ],
@@ -1968,9 +1968,9 @@
       "headline": "Heir location is paid on contingency, never on up-front fees.",
       "summary": "Across the corpus, operators converge on a pure contingency model: the heir pays nothing out of pocket, the locator advances all research cost, and the fee is a negotiated percentage released only when the estate or state agency actually disburses funds. Charging an heir an advance fee is treated as the single clearest marker of a predatory or unlicensed operator.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 1223,
-      "video_count": 1744,
-      "corroborating_tip_count": 3871,
+      "channel_count": 1333,
+      "video_count": 1887,
+      "corroborating_tip_count": 3972,
       "supporting_links": [
         {
           "video_title": "State Funds Tutorial New Mexico: How To Register As A Property Locator In The State Of New Mexico.",
@@ -2018,9 +2018,9 @@
       "headline": "Fresh county probate and intestate dockets outperform purchased lead lists.",
       "summary": "Practitioners consistently build pipeline from newly filed probate and administration matters pulled directly from county clerk portals rather than resold lists. Filings naming an administrator but no located heirs, and estates sitting open past the local notice period, are the recurring high-value signal.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 1051,
-      "video_count": 1603,
-      "corroborating_tip_count": 2504,
+      "channel_count": 1171,
+      "video_count": 1773,
+      "corroborating_tip_count": 3171,
       "supporting_links": [
         {
           "video_title": "$57 Affiliate Payouts With $35 Google Ads CPA (Full Funnel Breakdown)",
@@ -2068,9 +2068,9 @@
       "headline": "State unclaimed-property and escheat databases supply the repeatable volume.",
       "summary": "Every state treasury or controller maintains a searchable unclaimed-property register, and the consensus workflow is to cross-reference deceased owners there against probate filings. Volume comes from systematic register sweeps; size comes from the rarer escheated estate, surplus-funds and safe-deposit categories.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 378,
-      "video_count": 604,
-      "corroborating_tip_count": 1783,
+      "channel_count": 387,
+      "video_count": 616,
+      "corroborating_tip_count": 1803,
       "supporting_links": [
         {
           "video_title": "How To Claim Surplus Funds From Foreclosure",
@@ -2118,9 +2118,9 @@
       "headline": "The deliverable is a document-backed kinship chain, not a name on a list.",
       "summary": "Operators agree that claims succeed or fail on the evidentiary chain: each generational link supported by vital records, each branch mapped per stirpes, and every gap closed before contact. Tree hints from consumer genealogy sites are treated as leads to verify, never as proof to submit.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 1275,
-      "video_count": 1908,
-      "corroborating_tip_count": 2396,
+      "channel_count": 1342,
+      "video_count": 1991,
+      "corroborating_tip_count": 2476,
       "supporting_links": [
         {
           "video_title": "Understanding Aircraft Brokerage: Standards, Risk, and Trust",
@@ -2168,9 +2168,9 @@
       "headline": "Verify identity before contact, then lead with restraint, not the dollar figure.",
       "summary": "The recurring outreach pattern is: skip trace to a confirmed current address and phone, open by letter or a short calm call, state that funds may be owed to the family without naming an amount, and give the heir a way to independently verify the operator. Pressure tactics and inflated figures are consistently reported as the fastest way to lose a signed file.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 878,
-      "video_count": 1252,
-      "corroborating_tip_count": 897,
+      "channel_count": 946,
+      "video_count": 1340,
+      "corroborating_tip_count": 948,
       "supporting_links": [
         {
           "video_title": "How to Get Unlimited Leads Using Clay Enrichment Waterfall | clay.com Tutorial",
@@ -2218,9 +2218,9 @@
       "headline": "No work proceeds without a signed fee agreement and third-party escrow.",
       "summary": "Consensus practice is a plain-language, notarized or e-signed agreement that names the estate, states the percentage, discloses the heir's right to claim independently, and routes funds through attorney trust or licensed escrow so the locator never holds the heir's money directly.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 1181,
-      "video_count": 1734,
-      "corroborating_tip_count": 2253,
+      "channel_count": 1296,
+      "video_count": 1896,
+      "corroborating_tip_count": 2507,
       "supporting_links": [
         {
           "video_title": "Topical Authority With Koray Tuğberk GÜBÜR",
@@ -2268,9 +2268,9 @@
       "headline": "Fee caps, waiting periods and licensing are decided per state, before the first call.",
       "summary": "Operators repeatedly stress that the governing rules — percentage caps on unclaimed-property recoveries, mandatory waiting periods after escheat or sale, private-investigator licensing triggers, and the line against practicing law — vary by jurisdiction and must be read in the local statute for every file rather than generalized from another state.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 1181,
-      "video_count": 1797,
-      "corroborating_tip_count": 1900,
+      "channel_count": 1303,
+      "video_count": 1969,
+      "corroborating_tip_count": 2259,
       "supporting_links": [
         {
           "video_title": "Understanding Aircraft Brokerage: Standards, Risk, and Trust",
@@ -2318,9 +2318,9 @@
       "headline": "Automated docket monitoring plus AI abstracting lets one or two people run real volume.",
       "summary": "The operational consensus is to automate the repetitive layer — scheduled docket and register pulls, structured intake into a sheet or CRM, AI-assisted abstracting of filings — while keeping genealogy judgment, heir contact and contract execution human. That split is what keeps a two-person shop competitive against staffed firms.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 1159,
-      "video_count": 1692,
-      "corroborating_tip_count": 4989,
+      "channel_count": 1257,
+      "video_count": 1828,
+      "corroborating_tip_count": 5088,
       "supporting_links": [
         {
           "video_title": "State Funds Tutorial: 5 Tech Tools For Your State Funds Business",
@@ -2746,8 +2746,8 @@
         "asset_id": "youtube_thumbnails",
         "asset": "https://i.ytimg.com/vi/<video_id>/*.jpg",
         "asset_type": "youtube_thumbnail_image",
-        "source": "YouTube CDN thumbnails for the 2238 corpus videos",
-        "instance_count": 2238,
+        "source": "YouTube CDN thumbnails for the 2416 corpus videos",
+        "instance_count": 2416,
         "instances": [
           {
             "video_id": "9Q4qYeK5DTg",
@@ -18414,6 +18414,1252 @@
             "author": "Farhat Lectures | CPA, CMA, EA & Accounting",
             "thumbnail_url": "https://i.ytimg.com/vi/j1xpasTho-0/hqdefault.jpg",
             "source_url": "https://www.youtube.com/watch?v=j1xpasTho-0"
+          },
+          {
+            "video_id": "U_rmTsuyYV8",
+            "title": "Judgment Recovery Business Opportunity | Judgment Recovery Networking",
+            "author": "Judgment Recovery Training Online",
+            "thumbnail_url": "https://i.ytimg.com/vi/U_rmTsuyYV8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=U_rmTsuyYV8"
+          },
+          {
+            "video_id": "HCKxJmuEUR8",
+            "title": "Unlocking the Truth - How to Make $100,000 a year in the Judgment Recovery Business",
+            "author": "TheJRInstitute",
+            "thumbnail_url": "https://i.ytimg.com/vi/HCKxJmuEUR8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=HCKxJmuEUR8"
+          },
+          {
+            "video_id": "cKgzsxKOOxs",
+            "title": "Judgment recovery? Nope - waaay better $ maker!",
+            "author": "SurplusFundsRiches",
+            "thumbnail_url": "https://i.ytimg.com/vi/cKgzsxKOOxs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=cKgzsxKOOxs"
+          },
+          {
+            "video_id": "qHxMlQjoBsU",
+            "title": "Judgment Recovery Business Training Course: Small Claims & More Collection Opportunity",
+            "author": "Cross the River, Find the Treasure",
+            "thumbnail_url": "https://i.ytimg.com/vi/qHxMlQjoBsU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=qHxMlQjoBsU"
+          },
+          {
+            "video_id": "ML9MBLDQFHY",
+            "title": "Why This is Better than Judgment Recovery Business Training Courses **Free Download",
+            "author": "surplusfundswealth1",
+            "thumbnail_url": "https://i.ytimg.com/vi/ML9MBLDQFHY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ML9MBLDQFHY"
+          },
+          {
+            "video_id": "TiGcICs90xE",
+            "title": "Judgment Recovery Business",
+            "author": "Cross the River, Find the Treasure",
+            "thumbnail_url": "https://i.ytimg.com/vi/TiGcICs90xE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=TiGcICs90xE"
+          },
+          {
+            "video_id": "Ss8eyzh_cQ8",
+            "title": "Judgment Recover Business Training Course",
+            "author": "Cross the River, Find the Treasure",
+            "thumbnail_url": "https://i.ytimg.com/vi/Ss8eyzh_cQ8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Ss8eyzh_cQ8"
+          },
+          {
+            "video_id": "K1KakWduA04",
+            "title": "How to Collect on a Judgment",
+            "author": "Downs Law",
+            "thumbnail_url": "https://i.ytimg.com/vi/K1KakWduA04/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=K1KakWduA04"
+          },
+          {
+            "video_id": "E-XLFQLiAEE",
+            "title": "Why Was the DRT Act Needed? 8 Years in Civil Court vs 180 Days in DRT | DRT Act Explained Ep 1",
+            "author": "Court Kutchehry",
+            "thumbnail_url": "https://i.ytimg.com/vi/E-XLFQLiAEE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=E-XLFQLiAEE"
+          },
+          {
+            "video_id": "rDAzEvzlcbo",
+            "title": "3 Investigation Strategies for Judgment Enforcement - Debt Collection- Finding Assets",
+            "author": "Tim Santoni",
+            "thumbnail_url": "https://i.ytimg.com/vi/rDAzEvzlcbo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=rDAzEvzlcbo"
+          },
+          {
+            "video_id": "HrhPbWDRBVU",
+            "title": "Enforcement of Judgments: Part 3: Finding Assets",
+            "author": "Sacramento County Public Law Library",
+            "thumbnail_url": "https://i.ytimg.com/vi/HrhPbWDRBVU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=HrhPbWDRBVU"
+          },
+          {
+            "video_id": "OaGDs2nX-tw",
+            "title": "Getting the Money You've Won in Court: Enforcement of Civil Judgement",
+            "author": "LawShelf",
+            "thumbnail_url": "https://i.ytimg.com/vi/OaGDs2nX-tw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=OaGDs2nX-tw"
+          },
+          {
+            "video_id": "L2dopNFjS6s",
+            "title": "How To Complete A Judgment Assignment Agreement",
+            "author": "Judgment Recovery Training Online",
+            "thumbnail_url": "https://i.ytimg.com/vi/L2dopNFjS6s/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=L2dopNFjS6s"
+          },
+          {
+            "video_id": "cv-rg7aHsRE",
+            "title": "The Role of Vietnam’s Civil Judgment Enforcement Agency in Debt Recovery | LTS LAW FIRM",
+            "author": "LTS Law Firm Channel",
+            "thumbnail_url": "https://i.ytimg.com/vi/cv-rg7aHsRE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=cv-rg7aHsRE"
+          },
+          {
+            "video_id": "XOwPGudMeaY",
+            "title": "Judgment Enforcement | Evanns Collection Law Firm",
+            "author": "Evanns Collection Law Firm",
+            "thumbnail_url": "https://i.ytimg.com/vi/XOwPGudMeaY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=XOwPGudMeaY"
+          },
+          {
+            "video_id": "6mmBEFEMc8g",
+            "title": "Enforcement of Judgments - Citation to Discover Assets",
+            "author": "Rules of Tomorrow with Tom Howard",
+            "thumbnail_url": "https://i.ytimg.com/vi/6mmBEFEMc8g/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=6mmBEFEMc8g"
+          },
+          {
+            "video_id": "bX8Hhszjuxs",
+            "title": "Enforcement of Judgments: Part 1: Introduction",
+            "author": "Sacramento County Public Law Library",
+            "thumbnail_url": "https://i.ytimg.com/vi/bX8Hhszjuxs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=bX8Hhszjuxs"
+          },
+          {
+            "video_id": "AT4U_1yLtaE",
+            "title": "Enforcing a Judgment in Ontario: How Do You Actually Get Paid? Hashmi Law Group",
+            "author": "Nizam Hashmi - Hashmi Law Group",
+            "thumbnail_url": "https://i.ytimg.com/vi/AT4U_1yLtaE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=AT4U_1yLtaE"
+          },
+          {
+            "video_id": "5T2nU_IZTXs",
+            "title": "Buying & Collecting on Judgments",
+            "author": "Collect Back Rent Training Course",
+            "thumbnail_url": "https://i.ytimg.com/vi/5T2nU_IZTXs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=5T2nU_IZTXs"
+          },
+          {
+            "video_id": "vhXnhEvki3E",
+            "title": "HOW TO ENFORCE JUDGEMENT: JUDGEMENT SUMMONS",
+            "author": "Law Accent",
+            "thumbnail_url": "https://i.ytimg.com/vi/vhXnhEvki3E/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=vhXnhEvki3E"
+          },
+          {
+            "video_id": "R3nWxu374QE",
+            "title": "Enforcement Post Judgment Proceedings and Collections",
+            "author": "The National Law Review",
+            "thumbnail_url": "https://i.ytimg.com/vi/R3nWxu374QE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=R3nWxu374QE"
+          },
+          {
+            "video_id": "5mmy9Xz_Oko",
+            "title": "How to Avoid Paying a Civil Judgment [Asset Protection Strategies]",
+            "author": "The Business Guy | Asset Protection Planners",
+            "thumbnail_url": "https://i.ytimg.com/vi/5mmy9Xz_Oko/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=5mmy9Xz_Oko"
+          },
+          {
+            "video_id": "0Kq_0NfOnMo",
+            "title": "Collecting Money After A Judgment - Wage Garnishment And Bank Levy",
+            "author": "Jedidiah “Jed” McKeehan",
+            "thumbnail_url": "https://i.ytimg.com/vi/0Kq_0NfOnMo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=0Kq_0NfOnMo"
+          },
+          {
+            "video_id": "YmCEqLCbD3s",
+            "title": "Bank Levy vs. Wage Garnishment... What's the Difference?",
+            "author": "Consumer Warrior",
+            "thumbnail_url": "https://i.ytimg.com/vi/YmCEqLCbD3s/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=YmCEqLCbD3s"
+          },
+          {
+            "video_id": "-kyDpaMUqFY",
+            "title": "Texas Judgment Collection: Tools to Get Paid After You Win",
+            "author": "Hendershot Cowart P.C.",
+            "thumbnail_url": "https://i.ytimg.com/vi/-kyDpaMUqFY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=-kyDpaMUqFY"
+          },
+          {
+            "video_id": "aWnv0AR52jY",
+            "title": "# What Happens If You Lose a Civil Lawsuit? Judgment & Garnishment Explained",
+            "author": "Verdict",
+            "thumbnail_url": "https://i.ytimg.com/vi/aWnv0AR52jY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=aWnv0AR52jY"
+          },
+          {
+            "video_id": "a13Ojjc6ruw",
+            "title": "California Money Judgment Enforcement Series - Part 5: Bank Levies",
+            "author": "Bobby Benjy",
+            "thumbnail_url": "https://i.ytimg.com/vi/a13Ojjc6ruw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=a13Ojjc6ruw"
+          },
+          {
+            "video_id": "cHsptp1ujiI",
+            "title": "Wage Garnishment in Georgia - How Much Can They Take and How Do You Stop It?",
+            "author": "Law Office of Jeffrey B. Kelly",
+            "thumbnail_url": "https://i.ytimg.com/vi/cHsptp1ujiI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=cHsptp1ujiI"
+          },
+          {
+            "video_id": "CLxNTh8V1qQ",
+            "title": "Mr Grey's bank levy strategy - How to collect a judgment from a business",
+            "author": "Mr. Grey Judgment Enforcement",
+            "thumbnail_url": "https://i.ytimg.com/vi/CLxNTh8V1qQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=CLxNTh8V1qQ"
+          },
+          {
+            "video_id": "iHnRz6R1jS8",
+            "title": "Stop Wage Garnishment? Appeal Judgments? || Live Debt Free || Good Credit Good Life",
+            "author": "Brandon Weaver",
+            "thumbnail_url": "https://i.ytimg.com/vi/iHnRz6R1jS8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=iHnRz6R1jS8"
+          },
+          {
+            "video_id": "lfTu39ygsSI",
+            "title": "How To Stop Wage Garnishment Immediately",
+            "author": "The DeVries Law Firm",
+            "thumbnail_url": "https://i.ytimg.com/vi/lfTu39ygsSI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=lfTu39ygsSI"
+          },
+          {
+            "video_id": "RAT4YjdyfEo",
+            "title": "Bank Account Garnishments",
+            "author": "Steiner Law Group, LLC",
+            "thumbnail_url": "https://i.ytimg.com/vi/RAT4YjdyfEo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=RAT4YjdyfEo"
+          },
+          {
+            "video_id": "Nb1quOaLNWk",
+            "title": "How To Stop Wage Garnishments and Bank Levies | Bankruptcy Law",
+            "author": "Westgate Law",
+            "thumbnail_url": "https://i.ytimg.com/vi/Nb1quOaLNWk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Nb1quOaLNWk"
+          },
+          {
+            "video_id": "wSIheT1KrFw",
+            "title": "Preventing IRS Bank Levy and Wage Garnishment: Tips to Halt Enforcement Actions Immediately",
+            "author": "Former IRS Agent Representation 4.2M Views",
+            "thumbnail_url": "https://i.ytimg.com/vi/wSIheT1KrFw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=wSIheT1KrFw"
+          },
+          {
+            "video_id": "cZtaubxDzMA",
+            "title": "Judgment Lien: Definition, Examples, Vs. Property Lien",
+            "author": "Simple Explain",
+            "thumbnail_url": "https://i.ytimg.com/vi/cZtaubxDzMA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=cZtaubxDzMA"
+          },
+          {
+            "video_id": "dccNDC1WYF4",
+            "title": "liens - Pass your Real Estate Exam!",
+            "author": "PrepAgent",
+            "thumbnail_url": "https://i.ytimg.com/vi/dccNDC1WYF4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=dccNDC1WYF4"
+          },
+          {
+            "video_id": "V5NrY_biljg",
+            "title": "The Five Minute Legal Master Series: Judgment and Judgment Liens",
+            "author": "Five Minute Legal Master Series",
+            "thumbnail_url": "https://i.ytimg.com/vi/V5NrY_biljg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=V5NrY_biljg"
+          },
+          {
+            "video_id": "gyWC9jWNaXQ",
+            "title": "What is the difference between a judgement and a lien?",
+            "author": "Private Investigator Videos",
+            "thumbnail_url": "https://i.ytimg.com/vi/gyWC9jWNaXQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=gyWC9jWNaXQ"
+          },
+          {
+            "video_id": "dwH7f7RGYC4",
+            "title": "What Is A Lien | Real Estate Exam Prep",
+            "author": "The Real Estate Classroom",
+            "thumbnail_url": "https://i.ytimg.com/vi/dwH7f7RGYC4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=dwH7f7RGYC4"
+          },
+          {
+            "video_id": "-HFzhDO6v-A",
+            "title": "How Judgment Liens Show Up in Courthouse Records — And How to Find Them | Hidden Power Files",
+            "author": "Hidden Power Files",
+            "thumbnail_url": "https://i.ytimg.com/vi/-HFzhDO6v-A/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=-HFzhDO6v-A"
+          },
+          {
+            "video_id": "q6PjSqG-sF4",
+            "title": "Did You Know - Judgment Liens On Your Primary Residence",
+            "author": "David Babel",
+            "thumbnail_url": "https://i.ytimg.com/vi/q6PjSqG-sF4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=q6PjSqG-sF4"
+          },
+          {
+            "video_id": "RFKcDlW0gQU",
+            "title": "Judgment Liens: What Every Homeowner Needs to Know",
+            "author": "The Real Estate Lawyer",
+            "thumbnail_url": "https://i.ytimg.com/vi/RFKcDlW0gQU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=RFKcDlW0gQU"
+          },
+          {
+            "video_id": "a5bLikprQ4E",
+            "title": "What is a judgment lien?",
+            "author": "AFX Videos",
+            "thumbnail_url": "https://i.ytimg.com/vi/a5bLikprQ4E/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=a5bLikprQ4E"
+          },
+          {
+            "video_id": "_O0Yt0qGF-k",
+            "title": "Post Judgment Discovery of Assets",
+            "author": "Five Minute Legal Master Series",
+            "thumbnail_url": "https://i.ytimg.com/vi/_O0Yt0qGF-k/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=_O0Yt0qGF-k"
+          },
+          {
+            "video_id": "fQZc8moX-c4",
+            "title": "Post Judgment Collection Methods",
+            "author": "LawShelf",
+            "thumbnail_url": "https://i.ytimg.com/vi/fQZc8moX-c4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=fQZc8moX-c4"
+          },
+          {
+            "video_id": "nwM1K55PtXM",
+            "title": "How to Prepare Debtor Examination",
+            "author": "People Locator Skip Tracing",
+            "thumbnail_url": "https://i.ytimg.com/vi/nwM1K55PtXM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=nwM1K55PtXM"
+          },
+          {
+            "video_id": "rSqWVX1naKw",
+            "title": "What is a Judgment Debtor Examination?",
+            "author": "Fitzgerald & Campbell, APLC",
+            "thumbnail_url": "https://i.ytimg.com/vi/rSqWVX1naKw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=rSqWVX1naKw"
+          },
+          {
+            "video_id": "ZSpyirZPi9E",
+            "title": "Debtors Examination",
+            "author": "Debt Collectors International",
+            "thumbnail_url": "https://i.ytimg.com/vi/ZSpyirZPi9E/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ZSpyirZPi9E"
+          },
+          {
+            "video_id": "3qP0K9KK5G8",
+            "title": "Debt collections and post judgment discovery",
+            "author": "AceOfCoins",
+            "thumbnail_url": "https://i.ytimg.com/vi/3qP0K9KK5G8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=3qP0K9KK5G8"
+          },
+          {
+            "video_id": "leX2BIpiyNQ",
+            "title": "Debtor Examination Guide",
+            "author": "People Locator Skip Tracing",
+            "thumbnail_url": "https://i.ytimg.com/vi/leX2BIpiyNQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=leX2BIpiyNQ"
+          },
+          {
+            "video_id": "m3ELQTLjg20",
+            "title": "What is a Debtor's Exam?",
+            "author": "HELPS Law Group",
+            "thumbnail_url": "https://i.ytimg.com/vi/m3ELQTLjg20/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=m3ELQTLjg20"
+          },
+          {
+            "video_id": "q-khGCaOPck",
+            "title": "Steps To Collect Court Judgment Debt Assets",
+            "author": "Private Investigator Videos",
+            "thumbnail_url": "https://i.ytimg.com/vi/q-khGCaOPck/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=q-khGCaOPck"
+          },
+          {
+            "video_id": "9RtU4rpS3pw",
+            "title": "Regulation F: New Debt Collection Laws You Need to Know Even if You're not in Debt",
+            "author": "SeniorLiving.Org",
+            "thumbnail_url": "https://i.ytimg.com/vi/9RtU4rpS3pw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=9RtU4rpS3pw"
+          },
+          {
+            "video_id": "Ce0D7z4zJFo",
+            "title": "Overview of a typical FDCPA lawsuit against an abusive debt collector",
+            "author": "Alabama Consumer Protection Lawyers",
+            "thumbnail_url": "https://i.ytimg.com/vi/Ce0D7z4zJFo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Ce0D7z4zJFo"
+          },
+          {
+            "video_id": "cKYmFnf_o2Q",
+            "title": "Debt Collectors: Know Your Rights Before You Pay a Dollar 🛡️",
+            "author": "WealthCurve",
+            "thumbnail_url": "https://i.ytimg.com/vi/cKYmFnf_o2Q/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=cKYmFnf_o2Q"
+          },
+          {
+            "video_id": "z04uhB8lcJU",
+            "title": "Breaking news! FDCPA liability in evictions (CDC Order)",
+            "author": "Alabama Consumer Protection Lawyers",
+            "thumbnail_url": "https://i.ytimg.com/vi/z04uhB8lcJU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=z04uhB8lcJU"
+          },
+          {
+            "video_id": "YYdsx06msa0",
+            "title": "The Power of the FDCPA 1692e and 1692f Against Debt Collectors",
+            "author": "KillDebt & ParkerGPT: The New Way To Law",
+            "thumbnail_url": "https://i.ytimg.com/vi/YYdsx06msa0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=YYdsx06msa0"
+          },
+          {
+            "video_id": "njrU1ZwxRCY",
+            "title": "Fair Debt Collection Practices Act (FDCPA): Definition and Rules",
+            "author": "Simple Explain",
+            "thumbnail_url": "https://i.ytimg.com/vi/njrU1ZwxRCY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=njrU1ZwxRCY"
+          },
+          {
+            "video_id": "qTSer3pu6io",
+            "title": "New FDCPA Rules (Regulation F) -- Part One",
+            "author": "Alabama Consumer Protection Lawyers",
+            "thumbnail_url": "https://i.ytimg.com/vi/qTSer3pu6io/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=qTSer3pu6io"
+          },
+          {
+            "video_id": "7HVra7o-cZg",
+            "title": "Debt Collector Rights: What They Can and Can't Do",
+            "author": "Night Ferry",
+            "thumbnail_url": "https://i.ytimg.com/vi/7HVra7o-cZg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=7HVra7o-cZg"
+          },
+          {
+            "video_id": "fPw38bPWFtw",
+            "title": "Case Decision FDCPA Definition of Debt Collector of Debt Buyer -- Barbato v Crown Asset",
+            "author": "Alabama Consumer Protection Lawyers",
+            "thumbnail_url": "https://i.ytimg.com/vi/fPw38bPWFtw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=fPw38bPWFtw"
+          },
+          {
+            "video_id": "aB0whCtGI5k",
+            "title": "Web Scraping for Law Firms - STOP manually tracking court dates and dockets",
+            "author": "Martin Kravchenko",
+            "thumbnail_url": "https://i.ytimg.com/vi/aB0whCtGI5k/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=aB0whCtGI5k"
+          },
+          {
+            "video_id": "nRWberpO6tg",
+            "title": "Contempt of Court - Civil Court Hearing - Kitchen Court Cases",
+            "author": "Kitchen Court Cases",
+            "thumbnail_url": "https://i.ytimg.com/vi/nRWberpO6tg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=nRWberpO6tg"
+          },
+          {
+            "video_id": "FSUH2GyMLJ8",
+            "title": "How To E-File A Civil Judgment",
+            "author": "Circuit Court Clerk of Nashville, Davidson County",
+            "thumbnail_url": "https://i.ytimg.com/vi/FSUH2GyMLJ8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=FSUH2GyMLJ8"
+          },
+          {
+            "video_id": "X9i8o5iRl9M",
+            "title": "How to Defeat Your Employer's Motion for Summary Judgement at EEOC - Employment Discrimination",
+            "author": "Fight Employment Discrimination",
+            "thumbnail_url": "https://i.ytimg.com/vi/X9i8o5iRl9M/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=X9i8o5iRl9M"
+          },
+          {
+            "video_id": "d5DXPK2ggSk",
+            "title": "Debt Collection 101: Tips for Successful Skiptracing at Scale",
+            "author": "Arbeit U",
+            "thumbnail_url": "https://i.ytimg.com/vi/d5DXPK2ggSk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=d5DXPK2ggSk"
+          },
+          {
+            "video_id": "j34w1ZyVNSc",
+            "title": "Debt Collection: How To Locate Bank Accounts & Other Assets To Enforce Judgments",
+            "author": "OffshoreAlert",
+            "thumbnail_url": "https://i.ytimg.com/vi/j34w1ZyVNSc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=j34w1ZyVNSc"
+          },
+          {
+            "video_id": "W1XbSRwt1D8",
+            "title": "How to Enforce a Foreign Judgment",
+            "author": "Snellings Law LLC",
+            "thumbnail_url": "https://i.ytimg.com/vi/W1XbSRwt1D8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=W1XbSRwt1D8"
+          },
+          {
+            "video_id": "9x7_I2ygY9E",
+            "title": "Can a Foreign Judgment Be BLOCKED by the Statute of Limitations? | FL Appellate Oral Argument",
+            "author": "Florida Trust, Real Estate, Probate, & Foreclosure",
+            "thumbnail_url": "https://i.ytimg.com/vi/9x7_I2ygY9E/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=9x7_I2ygY9E"
+          },
+          {
+            "video_id": "ruQAKGpCYE8",
+            "title": "How To Enforce Foreign Judgments in the USA & How US based Agencies Can Reach Offshore Activity Of",
+            "author": "OffshoreAlert",
+            "thumbnail_url": "https://i.ytimg.com/vi/ruQAKGpCYE8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ruQAKGpCYE8"
+          },
+          {
+            "video_id": "djAI4TQ1S00",
+            "title": "Legal Nuts And Bolts: Registering Foreign Judgment",
+            "author": "The Proper Person",
+            "thumbnail_url": "https://i.ytimg.com/vi/djAI4TQ1S00/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=djAI4TQ1S00"
+          },
+          {
+            "video_id": "EKjVl_JQ5QE",
+            "title": "Enforcing a Foreign Judgment - Where Do You Start? | BlackBeltBarrister",
+            "author": "BlackBeltBarrister",
+            "thumbnail_url": "https://i.ytimg.com/vi/EKjVl_JQ5QE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=EKjVl_JQ5QE"
+          },
+          {
+            "video_id": "HPD6TM130zk",
+            "title": "Sovereign Citizen Says “We Don’t Accept The Law!” — Judge Delivers Final Reality Check",
+            "author": "verdict sentencestv",
+            "thumbnail_url": "https://i.ytimg.com/vi/HPD6TM130zk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=HPD6TM130zk"
+          },
+          {
+            "video_id": "HqKU9rVRjNI",
+            "title": "Who Enforces US Judgments Abroad - No Country",
+            "author": "AssetProtectionTraining.com",
+            "thumbnail_url": "https://i.ytimg.com/vi/HqKU9rVRjNI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=HqKU9rVRjNI"
+          },
+          {
+            "video_id": "xCHuZoPk7vA",
+            "title": "Sovereign Citizen Refuses to Follow Court Rules — Judge Sends Him Straight to Jail!",
+            "author": "Juris Wire",
+            "thumbnail_url": "https://i.ytimg.com/vi/xCHuZoPk7vA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=xCHuZoPk7vA"
+          },
+          {
+            "video_id": "nbtlIEi4we0",
+            "title": "How Long Does a Judgment Last?",
+            "author": "The Business Guy | Asset Protection Planners",
+            "thumbnail_url": "https://i.ytimg.com/vi/nbtlIEi4we0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=nbtlIEi4we0"
+          },
+          {
+            "video_id": "go3rRhIEajA",
+            "title": "Former IRS Agent Explains The 10 year Statute of Limitations + BEWARE",
+            "author": "Former IRS Agent Representation 4.2M Views",
+            "thumbnail_url": "https://i.ytimg.com/vi/go3rRhIEajA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=go3rRhIEajA"
+          },
+          {
+            "video_id": "KU5hNE5Z2MU",
+            "title": "Why the IRS 10 Year Statute of Limitations is Critical if you have Tax Debt!",
+            "author": "Bob Jablonsky",
+            "thumbnail_url": "https://i.ytimg.com/vi/KU5hNE5Z2MU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=KU5hNE5Z2MU"
+          },
+          {
+            "video_id": "4Mctc4AuqWA",
+            "title": "Statute of Limitation on a Judgment",
+            "author": "The Credit Repair Shop",
+            "thumbnail_url": "https://i.ytimg.com/vi/4Mctc4AuqWA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=4Mctc4AuqWA"
+          },
+          {
+            "video_id": "bkM9l8fajkc",
+            "title": "Bankruptcy and Judgments in New York: What Happens in 2026?",
+            "author": "Law Office of Richard Kistnen",
+            "thumbnail_url": "https://i.ytimg.com/vi/bkM9l8fajkc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=bkM9l8fajkc"
+          },
+          {
+            "video_id": "0jHEJqFcgLA",
+            "title": "Can IRS Extend My 10 Year Statue Of Limitation, What Events Toll The IRS Statute Former IRS Explains",
+            "author": "Former IRS Agent Representation 4.2M Views",
+            "thumbnail_url": "https://i.ytimg.com/vi/0jHEJqFcgLA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=0jHEJqFcgLA"
+          },
+          {
+            "video_id": "--FOsBTlu2E",
+            "title": "Statute Of Limitation for a Judgment #thecreditrepairshop #judgment",
+            "author": "The Credit Repair Shop",
+            "thumbnail_url": "https://i.ytimg.com/vi/--FOsBTlu2E/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=--FOsBTlu2E"
+          },
+          {
+            "video_id": "wibZgw9EKZ4",
+            "title": "Does Statute of Limitations Stop a Collections Suit",
+            "author": "Richardson Law Offices",
+            "thumbnail_url": "https://i.ytimg.com/vi/wibZgw9EKZ4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=wibZgw9EKZ4"
+          },
+          {
+            "video_id": "fWHpyqQu_5M",
+            "title": "Sued by a Debt Collector—How to Win Without Paying",
+            "author": "Consumer Warrior",
+            "thumbnail_url": "https://i.ytimg.com/vi/fWHpyqQu_5M/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=fWHpyqQu_5M"
+          },
+          {
+            "video_id": "7TbwIGMYgYE",
+            "title": "How to Win Your Debt Collection Lawsuit Without Going to Trial",
+            "author": "Consumer Warrior",
+            "thumbnail_url": "https://i.ytimg.com/vi/7TbwIGMYgYE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=7TbwIGMYgYE"
+          },
+          {
+            "video_id": "xF2ZuR2-O4o",
+            "title": "7 mistakes when testifying in a debt collection trial",
+            "author": "Alabama Consumer Protection Lawyers",
+            "thumbnail_url": "https://i.ytimg.com/vi/xF2ZuR2-O4o/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=xF2ZuR2-O4o"
+          },
+          {
+            "video_id": "9VNthZZ6JNk",
+            "title": "What a New Bill in Congress Means for Collection Attorney Litigation | Ep. 271",
+            "author": "Receivables Info | Debt Collection News",
+            "thumbnail_url": "https://i.ytimg.com/vi/9VNthZZ6JNk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=9VNthZZ6JNk"
+          },
+          {
+            "video_id": "lSw0SJbVp-A",
+            "title": "Bankruptcy Claims Trading",
+            "author": "The National Law Review",
+            "thumbnail_url": "https://i.ytimg.com/vi/lSw0SJbVp-A/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=lSw0SJbVp-A"
+          },
+          {
+            "video_id": "aQwpKSW3PEA",
+            "title": "Bankruptcy Claims Trading Risks",
+            "author": "The National Law Review",
+            "thumbnail_url": "https://i.ytimg.com/vi/aQwpKSW3PEA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=aQwpKSW3PEA"
+          },
+          {
+            "video_id": "dGbPfDmUGhk",
+            "title": "Advanced Bankruptcy Transactions: Bankruptcy Claims Trading",
+            "author": "The National Law Review",
+            "thumbnail_url": "https://i.ytimg.com/vi/dGbPfDmUGhk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=dGbPfDmUGhk"
+          },
+          {
+            "video_id": "yhlRryGjPSU",
+            "title": "WHEN THINGS BREAK | Financial Restructuring, Bankruptcy & Distressed Debt | Episode 23",
+            "author": "Capital Decode",
+            "thumbnail_url": "https://i.ytimg.com/vi/yhlRryGjPSU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=yhlRryGjPSU"
+          },
+          {
+            "video_id": "eA9c0DMpp60",
+            "title": "Purchasing Assets in Bankruptcy",
+            "author": "The National Law Review",
+            "thumbnail_url": "https://i.ytimg.com/vi/eA9c0DMpp60/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=eA9c0DMpp60"
+          },
+          {
+            "video_id": "gLlOpG3V6GY",
+            "title": "The Five Minute Legal Master: The Bankruptcy Claims Process",
+            "author": "Five Minute Legal Master Series",
+            "thumbnail_url": "https://i.ytimg.com/vi/gLlOpG3V6GY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=gLlOpG3V6GY"
+          },
+          {
+            "video_id": "i54UmAtM9Y0",
+            "title": "You Bought a Worthless Bankruptcy Claim for $2,400. Three Years Later, It Paid $1.4 Million.",
+            "author": "Plain Finance",
+            "thumbnail_url": "https://i.ytimg.com/vi/i54UmAtM9Y0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=i54UmAtM9Y0"
+          },
+          {
+            "video_id": "2eXm6HnwE1g",
+            "title": "Bankruptcy Claims Bar Date: Why Deadlines Matter",
+            "author": "Fairmax Law , a Debt Relief Law Firm",
+            "thumbnail_url": "https://i.ytimg.com/vi/2eXm6HnwE1g/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=2eXm6HnwE1g"
+          },
+          {
+            "video_id": "9Ihk-KKwFBU",
+            "title": "Bankruptcy Mistakes that Can Destroy Your Case",
+            "author": "Law Office of Jeffrey B. Kelly",
+            "thumbnail_url": "https://i.ytimg.com/vi/9Ihk-KKwFBU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=9Ihk-KKwFBU"
+          },
+          {
+            "video_id": "1PpzRRYapuA",
+            "title": "How to Optimize Bankruptcy Claims to Maximize Recoveries",
+            "author": "G2 Risk Solutions",
+            "thumbnail_url": "https://i.ytimg.com/vi/1PpzRRYapuA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=1PpzRRYapuA"
+          },
+          {
+            "video_id": "KH6HJIebxnk",
+            "title": "Buying Assets From A Distressed Company Before They File Bankruptcy",
+            "author": "AmeriLawyer",
+            "thumbnail_url": "https://i.ytimg.com/vi/KH6HJIebxnk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=KH6HJIebxnk"
+          },
+          {
+            "video_id": "pvEePhOPGhE",
+            "title": "UPL - The Unlicensed Practice of Law",
+            "author": "Whalen Law Office",
+            "thumbnail_url": "https://i.ytimg.com/vi/pvEePhOPGhE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=pvEePhOPGhE"
+          },
+          {
+            "video_id": "kBmxVj9hiWo",
+            "title": "Model Rule 5.5 pt.1 - Unauthorized Practice of Law",
+            "author": "Professor Stevenson",
+            "thumbnail_url": "https://i.ytimg.com/vi/kBmxVj9hiWo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=kBmxVj9hiWo"
+          },
+          {
+            "video_id": "9nntBUk_Poo",
+            "title": "What Should I Do? Unauthorized Practice of Law in Texas Family Law | Free NTPI Lesson",
+            "author": "North Texas Paralegal Institute",
+            "thumbnail_url": "https://i.ytimg.com/vi/9nntBUk_Poo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=9nntBUk_Poo"
+          },
+          {
+            "video_id": "nFhwr1E6-NE",
+            "title": "Favor or UPL? Unauthorized Practice & Paralegal Supervision in Texas | Free NTPI Lesson",
+            "author": "North Texas Paralegal Institute",
+            "thumbnail_url": "https://i.ytimg.com/vi/nFhwr1E6-NE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=nFhwr1E6-NE"
+          },
+          {
+            "video_id": "DfQbJSuzkUQ",
+            "title": "Legal Nuts And Bolts: Unauthorized Practice Of Law",
+            "author": "The Proper Person",
+            "thumbnail_url": "https://i.ytimg.com/vi/DfQbJSuzkUQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=DfQbJSuzkUQ"
+          },
+          {
+            "video_id": "6sPkEnDXerg",
+            "title": "Unauthorized Practice of Law OUTCOME",
+            "author": "Certified ADA Advocacy",
+            "thumbnail_url": "https://i.ytimg.com/vi/6sPkEnDXerg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=6sPkEnDXerg"
+          },
+          {
+            "video_id": "wTrr0cp_Pug",
+            "title": "Askaree Equity - Introduction to legal and equitable assignment",
+            "author": "Lee Aitken",
+            "thumbnail_url": "https://i.ytimg.com/vi/wTrr0cp_Pug/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=wTrr0cp_Pug"
+          },
+          {
+            "video_id": "NL1hJNjxmU4",
+            "title": "Civil Procedure Statutes, Rules & Definitions | 91 Flashcards for 1L | Law Frog RN, Esq.",
+            "author": "Law Frog RN, Esq.",
+            "thumbnail_url": "https://i.ytimg.com/vi/NL1hJNjxmU4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=NL1hJNjxmU4"
+          },
+          {
+            "video_id": "b-12dpeHnyA",
+            "title": "Week 14: Closing Address & Judgment EXPLAINED | Nigerian Law School Civil Litigation",
+            "author": "Nigerian Law School Lectures",
+            "thumbnail_url": "https://i.ytimg.com/vi/b-12dpeHnyA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=b-12dpeHnyA"
+          },
+          {
+            "video_id": "M__Ft9jrAVI",
+            "title": "Jurisdiction and Choice of Law",
+            "author": "NYU School of Law",
+            "thumbnail_url": "https://i.ytimg.com/vi/M__Ft9jrAVI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=M__Ft9jrAVI"
+          },
+          {
+            "video_id": "7vopi99AK4A",
+            "title": "QUT Law Week 6 Class: Introduction to case law - Part 2 and tips for Assignment Two",
+            "author": "Law Librarianship: Legal Research",
+            "thumbnail_url": "https://i.ytimg.com/vi/7vopi99AK4A/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=7vopi99AK4A"
+          },
+          {
+            "video_id": "r3PQ_FYkNRM",
+            "title": "Justiciability and the \"Case or Controversy Requirement\" [LEAP Preview: Constitutional Law]",
+            "author": "Studicata",
+            "thumbnail_url": "https://i.ytimg.com/vi/r3PQ_FYkNRM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=r3PQ_FYkNRM"
+          },
+          {
+            "video_id": "MxMjZqkhltA",
+            "title": "Thomas Higgins Limited - What Is the Process of Commercial Debt Collection?",
+            "author": "Thomas Higgins Limited",
+            "thumbnail_url": "https://i.ytimg.com/vi/MxMjZqkhltA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=MxMjZqkhltA"
+          },
+          {
+            "video_id": "YT8Fu3qHWM0",
+            "title": "Mastering B2B Debt Collection Fast & Effective Commercial Debt Recovery",
+            "author": "Retrievables Collection Attorneys",
+            "thumbnail_url": "https://i.ytimg.com/vi/YT8Fu3qHWM0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=YT8Fu3qHWM0"
+          },
+          {
+            "video_id": "svZlO-c19tA",
+            "title": "Another Excuse. Same Unpaid Invoice. | Fair Capital",
+            "author": "Fair Capital",
+            "thumbnail_url": "https://i.ytimg.com/vi/svZlO-c19tA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=svZlO-c19tA"
+          },
+          {
+            "video_id": "bgQht-y6jWY",
+            "title": "Unpaid Invoice - 4 Best Actions to Take Immediately to Get Clients to Pay in the USA",
+            "author": "The Business Disputes Register",
+            "thumbnail_url": "https://i.ytimg.com/vi/bgQht-y6jWY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=bgQht-y6jWY"
+          },
+          {
+            "video_id": "PQz21Mf4OZc",
+            "title": "Invoice Recovery: Mediation Versus Litigation Analysis",
+            "author": "Taurus Collections (UK) Ltd",
+            "thumbnail_url": "https://i.ytimg.com/vi/PQz21Mf4OZc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=PQz21Mf4OZc"
+          },
+          {
+            "video_id": "aPUKKsyL_NM",
+            "title": "CASHFLOW SOLUTIONS | TURN YOUR UNPAID INVOICES AND JUDGMENTS INTO CASH IN THE BANK",
+            "author": "Shergroup TV",
+            "thumbnail_url": "https://i.ytimg.com/vi/aPUKKsyL_NM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=aPUKKsyL_NM"
+          },
+          {
+            "video_id": "Xpf-6IU1qtQ",
+            "title": "How Do You Fix Cash Flow Problems Caused by Unpaid Invoices?",
+            "author": "Zindo",
+            "thumbnail_url": "https://i.ytimg.com/vi/Xpf-6IU1qtQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Xpf-6IU1qtQ"
+          },
+          {
+            "video_id": "TEEr5IdEtHY",
+            "title": "What Should I Do If a UCC Lien Has Been Filed Against My Business",
+            "author": "Credit Commerce & Currency",
+            "thumbnail_url": "https://i.ytimg.com/vi/TEEr5IdEtHY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=TEEr5IdEtHY"
+          },
+          {
+            "video_id": "r1sk4alg3RM",
+            "title": "Secured Transactions - Collection of Debts, Liens, and Why Collateral Matters",
+            "author": "The Tribe",
+            "thumbnail_url": "https://i.ytimg.com/vi/r1sk4alg3RM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=r1sk4alg3RM"
+          },
+          {
+            "video_id": "CPZ9XWAJAIY",
+            "title": "UCC-1 Explained: Debtor vs. Secured Party & the Two Planes of Law",
+            "author": "R.E.A.D.Y. Nation",
+            "thumbnail_url": "https://i.ytimg.com/vi/CPZ9XWAJAIY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=CPZ9XWAJAIY"
+          },
+          {
+            "video_id": "Nl9nVJJo6Xs",
+            "title": "What Happens After A Writ Of Execution?",
+            "author": "County Portal Law",
+            "thumbnail_url": "https://i.ytimg.com/vi/Nl9nVJJo6Xs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Nl9nVJJo6Xs"
+          },
+          {
+            "video_id": "3AJVt6F_pYQ",
+            "title": "The Undeniable Podcast | Secrets Behind the Debt Collection Business | Mike Martinez Episode 6",
+            "author": "Danny Klein",
+            "thumbnail_url": "https://i.ytimg.com/vi/3AJVt6F_pYQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=3AJVt6F_pYQ"
+          },
+          {
+            "video_id": "miiZfl53MAc",
+            "title": "Credit Issuer Compliance Tools You Should Be Using in 2025 | Ep.238",
+            "author": "Receivables Info | Debt Collection News",
+            "thumbnail_url": "https://i.ytimg.com/vi/miiZfl53MAc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=miiZfl53MAc"
+          },
+          {
+            "video_id": "1M9DIxuxJGA",
+            "title": "Debt Collection Data Waterfalls: Testing, KPIs, and Continuous Improvement | Ep. 264",
+            "author": "Receivables Info | Debt Collection News",
+            "thumbnail_url": "https://i.ytimg.com/vi/1M9DIxuxJGA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=1M9DIxuxJGA"
+          },
+          {
+            "video_id": "f4vDDF_EojM",
+            "title": "Small Claims Court - Acknowledgment of Satisfaction of Judgment",
+            "author": "Los Angeles County Consumer and Business Affairs",
+            "thumbnail_url": "https://i.ytimg.com/vi/f4vDDF_EojM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=f4vDDF_EojM"
+          },
+          {
+            "video_id": "GU3ZAAqrvR8",
+            "title": "Florida Estate Litigation Proposals of Settlement & Offers of Judgment",
+            "author": "Pankauski Lazarus P.L.L.C.",
+            "thumbnail_url": "https://i.ytimg.com/vi/GU3ZAAqrvR8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=GU3ZAAqrvR8"
+          },
+          {
+            "video_id": "Qdxx6piwSow",
+            "title": "Florida Litigation, Proposals for Settlement and Offers of Judgment",
+            "author": "Pankauski Lazarus P.L.L.C.",
+            "thumbnail_url": "https://i.ytimg.com/vi/Qdxx6piwSow/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Qdxx6piwSow"
+          },
+          {
+            "video_id": "2xja5hdZ134",
+            "title": "💼 A Final Judgment With No Reserved Jurisdiction — Vacating It Under Rule 1.540(b)",
+            "author": "Florida Trust, Real Estate, Probate, & Foreclosure",
+            "thumbnail_url": "https://i.ytimg.com/vi/2xja5hdZ134/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=2xja5hdZ134"
+          },
+          {
+            "video_id": "rbjp5kojsQA",
+            "title": "Vacating a Consent Order or Settlement Agreement in New Jersey",
+            "author": "Jacobs Berger, LLC",
+            "thumbnail_url": "https://i.ytimg.com/vi/rbjp5kojsQA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=rbjp5kojsQA"
+          },
+          {
+            "video_id": "YqjXCyNkUZ8",
+            "title": "How to Make Money Collecting Unpaid Court Judgments: Honest Review",
+            "author": "Franchise Brokers Association",
+            "thumbnail_url": "https://i.ytimg.com/vi/YqjXCyNkUZ8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=YqjXCyNkUZ8"
+          },
+          {
+            "video_id": "-FdK6kbQiio",
+            "title": "How This Guy Started an $80k / Month Debt Collection Service",
+            "author": "Hard Hat Economics",
+            "thumbnail_url": "https://i.ytimg.com/vi/-FdK6kbQiio/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=-FdK6kbQiio"
+          },
+          {
+            "video_id": "UV-WyQ1-NC4",
+            "title": "POST-JUDGMENT: HOW TO COLLECT YOUR MONEY? POST JUDGMENT COLLECTION METHOD | #LAWYER #LAWFIRM",
+            "author": "Lawyer Tips by The Sterling Firm #lawyer #law",
+            "thumbnail_url": "https://i.ytimg.com/vi/UV-WyQ1-NC4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=UV-WyQ1-NC4"
+          },
+          {
+            "video_id": "mu_dxy3i9Rc",
+            "title": "Searching Dockets on Bloomberg via PACER",
+            "author": "David Holt",
+            "thumbnail_url": "https://i.ytimg.com/vi/mu_dxy3i9Rc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=mu_dxy3i9Rc"
+          },
+          {
+            "video_id": "ARBpLFKK8iA",
+            "title": "How to Search Federal Court Dockets for Free with CourtListener",
+            "author": "Tommy from DocketDrafter",
+            "thumbnail_url": "https://i.ytimg.com/vi/ARBpLFKK8iA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ARBpLFKK8iA"
+          },
+          {
+            "video_id": "qlw161ht_Kw",
+            "title": "How to review a Federal Court Docket by Attorney Steve",
+            "author": "Steve Vondran",
+            "thumbnail_url": "https://i.ytimg.com/vi/qlw161ht_Kw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=qlw161ht_Kw"
+          },
+          {
+            "video_id": "2bsfGcj8H0Y",
+            "title": "PACER: Public Access to Court Electronic Records - Learn about cases to win in court!",
+            "author": "Badwolf Unincorporated",
+            "thumbnail_url": "https://i.ytimg.com/vi/2bsfGcj8H0Y/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=2bsfGcj8H0Y"
+          },
+          {
+            "video_id": "esyMX8o3OR0",
+            "title": "How to open a free PACER account to find federal criminal and bankruptcy public records. OSINT gold!",
+            "author": "ShadowAnyone",
+            "thumbnail_url": "https://i.ytimg.com/vi/esyMX8o3OR0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=esyMX8o3OR0"
+          },
+          {
+            "video_id": "IDWN8CuNtfA",
+            "title": "How To Find Bankruptcy Court Records?",
+            "author": "County Portal",
+            "thumbnail_url": "https://i.ytimg.com/vi/IDWN8CuNtfA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=IDWN8CuNtfA"
+          },
+          {
+            "video_id": "LmiTRGMtKr0",
+            "title": "(VIEW VIDEO DESCRIPTION) Litigation Course - Video 2 of 5 - Navigating PACER, looking at a docket",
+            "author": "Brandon Joe Williams - Law Made Fun and Simple!",
+            "thumbnail_url": "https://i.ytimg.com/vi/LmiTRGMtKr0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=LmiTRGMtKr0"
+          },
+          {
+            "video_id": "fjA8sRRh0ZI",
+            "title": "Final Judgment Recovery Intro Class - Part 1 of 2 of Full Class",
+            "author": "Default Investor Association",
+            "thumbnail_url": "https://i.ytimg.com/vi/fjA8sRRh0ZI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=fjA8sRRh0ZI"
+          },
+          {
+            "video_id": "qBdmGDT7sLE",
+            "title": "Small Claims Judgment Recovery Business Course",
+            "author": "Small Claims Judgment Collection Marketplace",
+            "thumbnail_url": "https://i.ytimg.com/vi/qBdmGDT7sLE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=qBdmGDT7sLE"
+          },
+          {
+            "video_id": "3p5TZGrk1og",
+            "title": "Judgment Recovery Happy Hour - Freebies",
+            "author": "TheJRInstitute",
+            "thumbnail_url": "https://i.ytimg.com/vi/3p5TZGrk1og/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=3p5TZGrk1og"
+          },
+          {
+            "video_id": "ha0J206Xt6k",
+            "title": "How to Improve Your Judgment Recovery Success Rate with Joe Dickerson",
+            "author": "Hanna Hasl-Kelchner",
+            "thumbnail_url": "https://i.ytimg.com/vi/ha0J206Xt6k/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ha0J206Xt6k"
+          },
+          {
+            "video_id": "5rA-sJpvgAY",
+            "title": "CASENGINE Execution Module: Enforce Judgments & Recover Debts",
+            "author": "Casengine App",
+            "thumbnail_url": "https://i.ytimg.com/vi/5rA-sJpvgAY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=5rA-sJpvgAY"
+          },
+          {
+            "video_id": "2ApchMyxmWg",
+            "title": "Debt Collection: How to Locate Bank Accounts & Other Assets to Enforce Judgments",
+            "author": "OffshoreAlert",
+            "thumbnail_url": "https://i.ytimg.com/vi/2ApchMyxmWg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=2ApchMyxmWg"
+          },
+          {
+            "video_id": "hAq3ZiEtqk0",
+            "title": "Financial Literacy: Understanding and Managing Debt–Segment 7: Garnishments, Liens, & Judgements",
+            "author": "Thomson Reuters",
+            "thumbnail_url": "https://i.ytimg.com/vi/hAq3ZiEtqk0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=hAq3ZiEtqk0"
+          },
+          {
+            "video_id": "499-NK9hWnc",
+            "title": "Judgment Debtor Exam and Bank Levy Strategy for Court Judgments",
+            "author": "Mr. Grey Judgment Enforcement",
+            "thumbnail_url": "https://i.ytimg.com/vi/499-NK9hWnc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=499-NK9hWnc"
+          },
+          {
+            "video_id": "09e6Gzw3S0U",
+            "title": "Justice by making debtors cry in Judgment Debtor Exams Judgment enforcement",
+            "author": "Mr. Grey Judgment Enforcement",
+            "thumbnail_url": "https://i.ytimg.com/vi/09e6Gzw3S0U/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=09e6Gzw3S0U"
+          },
+          {
+            "video_id": "7NXn3JN88l8",
+            "title": "How to remove a judgment or lien from a Preliminary Title Report - Be a Better Realtor",
+            "author": "Dylan Raquel Real Estate",
+            "thumbnail_url": "https://i.ytimg.com/vi/7NXn3JN88l8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=7NXn3JN88l8"
+          },
+          {
+            "video_id": "KgBg-x2ZZ4w",
+            "title": "20 Real Estate Exam Questions On Liens - Must Know Questions To Pass The Real Estate Exam!",
+            "author": "Real Estate Exam Questions",
+            "thumbnail_url": "https://i.ytimg.com/vi/KgBg-x2ZZ4w/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=KgBg-x2ZZ4w"
+          },
+          {
+            "video_id": "6mK0uU9RBO8",
+            "title": "Debtor Examination Questions to Ask",
+            "author": "People Locator Skip Tracing",
+            "thumbnail_url": "https://i.ytimg.com/vi/6mK0uU9RBO8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=6mK0uU9RBO8"
+          },
+          {
+            "video_id": "W9UHSaFUIn8",
+            "title": "Judgment-Proof Debtor THINKS They're Safe | Here's Why They're Wrong",
+            "author": "Santiago Cueto | Miami Business Litigation Lawyer",
+            "thumbnail_url": "https://i.ytimg.com/vi/W9UHSaFUIn8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=W9UHSaFUIn8"
+          },
+          {
+            "video_id": "RHS2h5dUkHk",
+            "title": "Video #6 Filing a Citation to Discover Assets to Debtor",
+            "author": "Courtroom 1401, Daley Center",
+            "thumbnail_url": "https://i.ytimg.com/vi/RHS2h5dUkHk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=RHS2h5dUkHk"
+          },
+          {
+            "video_id": "MM_dCPRf9LE",
+            "title": "Disputes, Damages, & Default Judgments - 2026 CFS Annual Webinar: Panel 1",
+            "author": "Saul Ewing LLP",
+            "thumbnail_url": "https://i.ytimg.com/vi/MM_dCPRf9LE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=MM_dCPRf9LE"
+          },
+          {
+            "video_id": "owpVxkqEbEk",
+            "title": "Debt Collector Lawsuits (FDCPA): Examples and Outcomes by Attorney Aaron Swift",
+            "author": "Consumer Law 101 by Attorney Aaron Swift",
+            "thumbnail_url": "https://i.ytimg.com/vi/owpVxkqEbEk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=owpVxkqEbEk"
+          },
+          {
+            "video_id": "i6PAssklgJg",
+            "title": "Fair Debt Collection Practices Act",
+            "author": "LawShelf",
+            "thumbnail_url": "https://i.ytimg.com/vi/i6PAssklgJg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=i6PAssklgJg"
+          },
+          {
+            "video_id": "uGQHaP-BNy0",
+            "title": "The Fair Debt Collection Practices Act (FDCPA) [CPA Prep]",
+            "author": "ExamPrepAI CPA Review",
+            "thumbnail_url": "https://i.ytimg.com/vi/uGQHaP-BNy0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=uGQHaP-BNy0"
+          },
+          {
+            "video_id": "n3SZjPQDSHc",
+            "title": "The Fair Debt Collection Practices Act Explained by an Attorney",
+            "author": "Solo – Resolve Your Debt",
+            "thumbnail_url": "https://i.ytimg.com/vi/n3SZjPQDSHc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=n3SZjPQDSHc"
+          },
+          {
+            "video_id": "XSfDS_s1URg",
+            "title": "Avoid This Credit Dispute Mistake! #FDCPA Law Suit Case Study #askadebtcollector #advice #law",
+            "author": "Meet Jermaine (Clear &Strategic)",
+            "thumbnail_url": "https://i.ytimg.com/vi/XSfDS_s1URg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=XSfDS_s1URg"
+          },
+          {
+            "video_id": "nxcVuXjUaaA",
+            "title": "Online Legal Research: Part 4 of 9: Court Dockets",
+            "author": "Wilhelmina Randtke",
+            "thumbnail_url": "https://i.ytimg.com/vi/nxcVuXjUaaA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=nxcVuXjUaaA"
+          },
+          {
+            "video_id": "cbgT8jQuacQ",
+            "title": "How To Skip Trace For FREE! Wholesaling Real Estate Step By Step 2025",
+            "author": "Jacob Blank",
+            "thumbnail_url": "https://i.ytimg.com/vi/cbgT8jQuacQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=cbgT8jQuacQ"
+          },
+          {
+            "video_id": "UqntxJnXdto",
+            "title": "Skip Tracer Files | Episode 1 | Court Process Serving, Skip Tracing & Asset Location Secrets",
+            "author": "Skip Tracers",
+            "thumbnail_url": "https://i.ytimg.com/vi/UqntxJnXdto/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=UqntxJnXdto"
+          },
+          {
+            "video_id": "PSWN-POX4Uc",
+            "title": "Skiptracing 2024: Relationship-Based, but Backed by Data! | RI Webinar",
+            "author": "Receivables Info | Debt Collection News",
+            "thumbnail_url": "https://i.ytimg.com/vi/PSWN-POX4Uc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=PSWN-POX4Uc"
+          },
+          {
+            "video_id": "YhtCR_GKvQ4",
+            "title": "Enforcement of Foreign Judgments by James Vann",
+            "author": "Vann Attorneys, PLLC",
+            "thumbnail_url": "https://i.ytimg.com/vi/YhtCR_GKvQ4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=YhtCR_GKvQ4"
+          },
+          {
+            "video_id": "ZdVZvPMh4qM",
+            "title": "Domesticating an Out of State Judgment in The State of Florida",
+            "author": "Haber Law",
+            "thumbnail_url": "https://i.ytimg.com/vi/ZdVZvPMh4qM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ZdVZvPMh4qM"
+          },
+          {
+            "video_id": "SUlnLzzcvIk",
+            "title": "What Happens When Your Defendant Lives in Another Country #lawtok #lawyer #shorts",
+            "author": "The Global Process Server",
+            "thumbnail_url": "https://i.ytimg.com/vi/SUlnLzzcvIk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=SUlnLzzcvIk"
+          },
+          {
+            "video_id": "QgFvjr6fOpg",
+            "title": "What is the Enforcement of Foreign Judgments?",
+            "author": "Attorney Thoughts",
+            "thumbnail_url": "https://i.ytimg.com/vi/QgFvjr6fOpg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=QgFvjr6fOpg"
+          },
+          {
+            "video_id": "YB6KKY7Q7ts",
+            "title": "International Law | Recognition & Enforcement of Foreign Judgments | Lex Animata by Hesham Elrafei",
+            "author": "Lex Animata Law Visualized | Hesham Elrafei",
+            "thumbnail_url": "https://i.ytimg.com/vi/YB6KKY7Q7ts/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=YB6KKY7Q7ts"
+          },
+          {
+            "video_id": "FUPJlxOU2nI",
+            "title": "NEW 2026 How to do the analysis for Transfer & Forum Non Conveniens | §1404(a), §1406(a), §1631",
+            "author": "JD Simplified",
+            "thumbnail_url": "https://i.ytimg.com/vi/FUPJlxOU2nI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=FUPJlxOU2nI"
+          },
+          {
+            "video_id": "ObrPaCTQ6ZQ",
+            "title": "How to Collect Judgment. #Law #history #facts",
+            "author": "Calhoun School of Law",
+            "thumbnail_url": "https://i.ytimg.com/vi/ObrPaCTQ6ZQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ObrPaCTQ6ZQ"
+          },
+          {
+            "video_id": "HD3idZhyATA",
+            "title": "What is the Statute of Limitations?",
+            "author": "Weston Legal",
+            "thumbnail_url": "https://i.ytimg.com/vi/HD3idZhyATA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=HD3idZhyATA"
+          },
+          {
+            "video_id": "SvBZyaCOSrc",
+            "title": "What Is The Statute Of Limitations On Debt And Judgments",
+            "author": "Gustan Cho Associates",
+            "thumbnail_url": "https://i.ytimg.com/vi/SvBZyaCOSrc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=SvBZyaCOSrc"
+          },
+          {
+            "video_id": "pmUaXhIL3eA",
+            "title": "LeanLaw Walkthrough: Contingency Case Flow (SettleFlow)",
+            "author": "LeanLaw - Your Legal Revenue Operations Partner",
+            "thumbnail_url": "https://i.ytimg.com/vi/pmUaXhIL3eA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=pmUaXhIL3eA"
+          },
+          {
+            "video_id": "RwXTJhX-rxo",
+            "title": "How To Take a Deposition of a Collection Attorney in a Debt Collection Case - Part 1",
+            "author": "KillDebt & ParkerGPT: The New Way To Law",
+            "thumbnail_url": "https://i.ytimg.com/vi/RwXTJhX-rxo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=RwXTJhX-rxo"
+          },
+          {
+            "video_id": "mxVWyzzMOXM",
+            "title": "Chapter 11: Bankruptcy restructuring | Stocks and bonds | Finance & Capital Markets | Khan Academy",
+            "author": "Khan Academy",
+            "thumbnail_url": "https://i.ytimg.com/vi/mxVWyzzMOXM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=mxVWyzzMOXM"
+          },
+          {
+            "video_id": "9CYRQ14FrFw",
+            "title": "Restructuring Through Bankruptcy - Basics Of Corporate Bankruptcy",
+            "author": "FinanceKid",
+            "thumbnail_url": "https://i.ytimg.com/vi/9CYRQ14FrFw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=9CYRQ14FrFw"
+          },
+          {
+            "video_id": "IXYtvqeecYI",
+            "title": "Overview of Bankruptcy: Module 1 of 5",
+            "author": "LawShelf",
+            "thumbnail_url": "https://i.ytimg.com/vi/IXYtvqeecYI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=IXYtvqeecYI"
+          },
+          {
+            "video_id": "LBVpN-q6M-A",
+            "title": "Bankruptcy 101: Bankruptcy Basics",
+            "author": "Thompson Coburn LLP",
+            "thumbnail_url": "https://i.ytimg.com/vi/LBVpN-q6M-A/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=LBVpN-q6M-A"
           }
         ],
         "research_reference_only": true,
@@ -18426,7 +19672,7 @@
         "asset_id": "verbatim_transcript_quotes",
         "asset": "data/transcripts/*.json -> segments[].text",
         "asset_type": "verbatim_transcript_passage",
-        "source": "Spoken content of 2238 third-party videos (20593 captured tips)",
+        "source": "Spoken content of 2416 third-party videos (22224 captured tips)",
         "research_reference_only": true,
         "commercial_republish_allowed": false,
         "commercial_use_allowed": false,
@@ -18442,38 +19688,38 @@
     ]
   },
   "corpus_metrics": {
-    "video_count": 2238,
-    "channel_count": 1478,
-    "total_words": 3111142,
-    "total_hours": 613.47,
-    "total_pro_tips": 20593,
-    "unique_statutes_and_forms": 1032,
-    "unique_tools_and_portals": 6432
+    "video_count": 2416,
+    "channel_count": 1603,
+    "total_words": 3342359,
+    "total_hours": 662.33,
+    "total_pro_tips": 22224,
+    "unique_statutes_and_forms": 1185,
+    "unique_tools_and_portals": 6775
   },
   "coverage": {
-    "videos_classified": 2238,
-    "videos_with_multiple_topics": 2236,
-    "tips_classified": 20593,
-    "raw_transcripts_joined": 2238,
+    "videos_classified": 2416,
+    "videos_with_multiple_topics": 2414,
+    "tips_classified": 22224,
+    "raw_transcripts_joined": 2416,
     "topic_video_counts": {
-      "business_model_and_economics": 1744,
-      "probate_and_docket_sourcing": 1603,
-      "unclaimed_property_and_escheat": 604,
-      "genealogy_and_heirship_proof": 1908,
-      "skip_tracing_and_outreach": 1252,
-      "contracts_and_compensation": 1734,
-      "statutory_caps_and_licensing": 1797,
-      "automation_and_small_team_ops": 1692
+      "business_model_and_economics": 1887,
+      "probate_and_docket_sourcing": 1773,
+      "unclaimed_property_and_escheat": 616,
+      "genealogy_and_heirship_proof": 1991,
+      "skip_tracing_and_outreach": 1340,
+      "contracts_and_compensation": 1896,
+      "statutory_caps_and_licensing": 1969,
+      "automation_and_small_team_ops": 1828
     },
     "topic_tip_counts": {
-      "business_model_and_economics": 3871,
-      "probate_and_docket_sourcing": 2504,
-      "unclaimed_property_and_escheat": 1783,
-      "genealogy_and_heirship_proof": 2396,
-      "skip_tracing_and_outreach": 897,
-      "contracts_and_compensation": 2253,
-      "statutory_caps_and_licensing": 1900,
-      "automation_and_small_team_ops": 4989
+      "business_model_and_economics": 3972,
+      "probate_and_docket_sourcing": 3171,
+      "unclaimed_property_and_escheat": 1803,
+      "genealogy_and_heirship_proof": 2476,
+      "skip_tracing_and_outreach": 948,
+      "contracts_and_compensation": 2507,
+      "statutory_caps_and_licensing": 2259,
+      "automation_and_small_team_ops": 5088
     }
   },
   "schema_version": "1.0",

@@ -1,0 +1,715 @@
+{
+  "candidate_number": 8,
+  "slug": "judgment-recovery",
+  "title": "Judgment Recovery",
+  "category": "Recovery services",
+  "production_stage": "approved_master",
+  "scores": {
+    "revenue_potential": 20,
+    "profit_margin_potential": 21,
+    "team_efficiency": 16,
+    "startup_accessibility": 10,
+    "automation_potential": 10
+  },
+  "dimension_max": {
+    "revenue_potential": 25,
+    "profit_margin_potential": 25,
+    "team_efficiency": 20,
+    "startup_accessibility": 15,
+    "automation_potential": 15
+  },
+  "total_score": 77,
+  "tier_label": "High-Leverage Operator Play",
+  "evidence_confidence": "High",
+  "uncertainty_band": "±3 pts",
+  "uncertainty_bounds": {
+    "low": 74,
+    "high": 80
+  },
+  "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
+  "score_rationale": {
+    "revenue_potential": "Revenue Potential: 20/25. Contingent collections can be efficient but many judgments are uncollectible.",
+    "profit_margin_potential": "Profit Margin Potential: 21/25. Contingent collections can be efficient but many judgments are uncollectible.",
+    "team_efficiency": "Team Efficiency: 16/20. Contingent collections can be efficient but many judgments are uncollectible.",
+    "startup_accessibility": "Startup Accessibility: 10/15. Contingent collections can be efficient but many judgments are uncollectible.",
+    "automation_potential": "Automation Potential: 10/15. Contingent collections can be efficient but many judgments are uncollectible."
+  },
+  "economics": {
+    "gross_revenue_range": "$60,000–$500,000 USD annually",
+    "net_profit_margin_range": "20–40%",
+    "owner_net_profit_potential": "$12,000–$200,000 USD annually, before personal taxes and reinvestment",
+    "startup_capital_range": "$10,000–$75,000 USD",
+    "monthly_opex_range": "$2,000–$12,000 USD",
+    "time_to_first_deal": "6–24 months",
+    "typical_team_size": {
+      "full_time_including_owner": 1,
+      "contractors": 3,
+      "total_people": 4
+    },
+    "includes_contractors_note": "Headcount includes the working owner and recurring contractors as people, not FTE equivalents. Contractors may be part-time. Scaled scenario adds one employee and one contractor; external vendor workforces are not counted as internal team members.",
+    "revenue_basis": "Recognized service fees, not client asset value",
+    "cost_basis": "Annual net margins include operating expenses and non-owner labor; monthly opex is fixed/semi-fixed overhead only. No owner salary is deducted. Capital needs may grow beyond startup range.",
+    "estimate_status": "Illustrative assumptions; not verified earnings data"
+  },
+  "scenarios": {
+    "conservative": {
+      "annual_gross_revenue_usd": 60000,
+      "net_profit_margin_pct": 20,
+      "annual_owner_net_profit_usd": 12000,
+      "full_time_including_owner": 1,
+      "contractors": 3,
+      "total_people": 4,
+      "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+    },
+    "base_case": {
+      "annual_gross_revenue_usd": 280000.0,
+      "net_profit_margin_pct": 30.0,
+      "annual_owner_net_profit_usd": 84000,
+      "full_time_including_owner": 1,
+      "contractors": 3,
+      "total_people": 4,
+      "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+    },
+    "scaled_small_team": {
+      "annual_gross_revenue_usd": 500000,
+      "net_profit_margin_pct": 40,
+      "annual_owner_net_profit_usd": 200000,
+      "full_time_including_owner": 2,
+      "contractors": 4,
+      "total_people": 6,
+      "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+    }
+  },
+  "automation_levers": [
+    "Court deadline tracking",
+    "Payment reconciliation"
+  ],
+  "key_risks": [
+    "Insolvent debtors",
+    "Bankruptcy stays",
+    "Enforcement costs"
+  ],
+  "regulatory_notes": [
+    "Check collection licensing, consumer-debt rules, exemptions and lawful data access."
+  ],
+  "track_ids": [
+    "track_1",
+    "track_2"
+  ],
+  "track_labels": [
+    "Asymmetric & Data-Arbitrage Plays",
+    "Grey-Zone Growth & Traffic Arbitrage"
+  ],
+  "plays": [
+    {
+      "id": "public_record_api_intelligence",
+      "track_id": "track_1",
+      "name": "Public-Record & API Intelligence",
+      "mechanism": "Ingest fragmented county dockets, probate registries, unclaimed property ledgers, and public APIs to surface uncontested claims or high-intent B2B triggers before manual competitors.",
+      "inputs": [
+        "Court & probate dockets",
+        "State controller ledgers",
+        "Public licensing & entity APIs"
+      ],
+      "workflow": [
+        "Poll and normalize county/state record releases on an automated cadence",
+        "Cross-match entity/kinship/lien records and filter by minimum net fee threshold",
+        "Route verified dossiers into compliant outreach and claim execution"
+      ],
+      "metrics": [
+        "Cost per verified lead",
+        "Docket-to-contact latency (hours)",
+        "Net recovery / conversion rate"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Portal rate-limiting or CAPTCHA gating",
+          "trigger": "High-frequency automated polling against county or agency web portals",
+          "impact": "Delayed lead ingestion or temporary IP block on target registry",
+          "detection_metric": "HTTP 429/403 rate and daily record ingestion delta",
+          "fallback": "Switch to scheduled bulk FOIA/public-record exports, official data feeds, and low-frequency cached queues"
+        }
+      ]
+    },
+    {
+      "id": "distressed_asset_recovery",
+      "track_id": "track_1",
+      "name": "Distressed Asset Recovery",
+      "mechanism": "Locate mispriced, orphaned, or administratively stranded assets—tax-sale overages, unclaimed state funds, dormant judgments, government surplus lots, or distressed micro-businesses—and capture a contingent recovery fee or acquisition spread.",
+      "inputs": [
+        "Tax-sale excess proceeds ledgers",
+        "Unclaimed property & judgment dockets",
+        "Surplus auction manifests"
+      ],
+      "workflow": [
+        "Audit statutory fee caps, claim windows, and chain-of-title encumbrances",
+        "Execute skip-tracing or asset inspection to confirm net realizable value",
+        "Lock in contingent recovery agreements or below-intrinsic buyouts"
+      ],
+      "metrics": [
+        "Gross spread / contingent fee per case",
+        "Claim approval rate",
+        "Days from filing to disbursement"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Statutory fee-cap compression or administrative hold",
+          "trigger": "Jurisdiction updates finder fee limits, waiting periods, or filing documentation rules",
+          "impact": "Reduced net fee margin or extended cash conversion cycle",
+          "detection_metric": "County/state rejection notice rate and days-to-payout variance",
+          "fallback": "Diversify across multi-state dockets and use attorney-backed filing partnerships where required"
+        }
+      ]
+    },
+    {
+      "id": "b2b_class_action_contingency_recovery",
+      "track_id": "track_1",
+      "name": "B2B Class-Action & Antitrust Settlement Contingency Recovery",
+      "mechanism": "Monitor multibillion-dollar corporate antitrust and commercial class-action settlement funds (payment-card interchange, freight, auto parts, commercial insurance, SaaS) where 85–90% of eligible small businesses never file, and recover verified payouts on a 25–33% contingency fee.",
+      "inputs": [
+        "Active federal B2B class-action settlement docket calendar & claims-administrator portals",
+        "B2B merchant-processing, fleet, & vendor spend intake pipeline",
+        "Contingency claim-preparation & court-authorized third-party filing agreements"
+      ],
+      "workflow": [
+        "Track open and upcoming commercial class-action settlements with verified court-appointed claims administrators and $50M–$5B+ settlement pools",
+        "Sign zero-upfront-cost (25–33% contingency) authorization agreements with operating restaurants, medical practices, retailers, and fleets",
+        "Extract historical merchant statements or vendor invoices, submit audited claim packages to the settlement administrator, and reconcile fee splits upon disbursement"
+      ],
+      "metrics": [
+        "Average gross settlement recovery per enrolled business ($5,000–$150,000+)",
+        "Claim acceptance rate by court-appointed administrator (%)",
+        "Net contingency fee per operator hour invested"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Claim rejection, administrator audit hold, or court cap on third-party filer fees",
+          "trigger": "Submitting unsubstantiated spend estimates, missing court bar dates, or failing to include required third-party filer disclosures",
+          "impact": "Delayed payout disbursement or court-mandated fee reduction",
+          "detection_metric": "Deficiency-notice rate (<2% target) and 100% court-approved disclosure compliance",
+          "fallback": "File strictly for verified operating businesses with primary processor/vendor statements and use court-approved third-party claim-filing riders"
+        }
+      ]
+    },
+    {
+      "id": "arizona_abs_mass_tort_cocounsel",
+      "track_id": "track_1",
+      "name": "Arizona ABS Law-Firm Ownership & Survivor/Mass-Tort Co-Counsel Arbitrage",
+      "mechanism": "Leverage Arizona Supreme Court Rule 31.1(c) and ACJA § 7-209 (which abolished ABA Rule 5.4 in Arizona via Alternative Business Structure [ABS] licensing) so non-lawyer acquisition operators can legally own an Arizona law firm, acquire inbound institutional sexual assault survivor claims (juvenile detention facilities, rideshare MDLs, clergy/boarding-school/medical lookback windows) and catastrophic mass torts, and participate in lawful co-counsel contingency fee splits ($50k–$400k+ per settled case) instead of capped flat marketing fees.",
+      "inputs": [
+        "Arizona Supreme Court ABS license + designated Compliance Lawyer (ACJA § 7-209)",
+        "Trauma-informed inbound acquisition funnels for state sexual-assault lookback windows & federal MDLs",
+        "24/7 HIPAA-compliant survivor intake, facility/ride-receipt verification, & national trial co-counsel network"
+      ],
+      "workflow": [
+        "Form or partner with a licensed Arizona ABS law firm with an appointed Arizona-bar Compliance Lawyer to legally bridge digital acquisition and legal representation",
+        "Run empathetic, 100% inbound survivor-advocacy campaigns across open statutory lookback windows (juvenile detention centers, Uber/Lyft rideshare MDL 3084, institutional/youth-facility abuse)",
+        "Execute trauma-informed intake, verify facility/detention/rideshare records, and co-counsel with specialized trial litigators under Rule 1.5(e) joint-responsibility agreements to share in back-end settlement fees"
+      ],
+      "metrics": [
+        "Cost per signed & record-verified survivor retainer ($1,200–$3,500 media cost)",
+        "Facility/rideshare corroboration pass rate (%) & zero-fraud docket quality",
+        "Realized co-counsel contingency fee per settled case ($50,000–$400,000+ vs. $3k lead sale)"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Cross-jurisdictional Rule 5.4 fee-splitting challenges, MDL claimant-fraud rejections, or 24–48 month settlement lockup",
+          "trigger": "Splitting fees in non-ABS jurisdictions without genuine legal services/joint responsibility by ABS attorneys, accepting unverified lead-brokered retainers, or undercapitalizing multi-year MDL hold times",
+          "impact": "Disallowance of co-counsel fee division in restrictive states, court dismissal of uncorroborated claims, or working-capital exhaustion before settlement payout",
+          "detection_metric": "100% primary-record corroboration rate (detention/medical/ride logs) and state-by-state Rule 1.5(e)/5.4 ethics opinion sign-off",
+          "fallback": "Ensure licensed ABS attorneys perform substantive legal intake/case-work or pair with an MSO (Management Services Organization) structure in restrictive states, enforce strict primary-document verification before filing, and blend fast-settling single-event injury cases with multi-year institutional dockets"
+        }
+      ]
+    },
+    {
+      "id": "unclaimed_property_escheatment_arbitrage",
+      "track_id": "track_1",
+      "name": "State Treasury Escheatment & Unclaimed Corporate Warrant Recovery",
+      "mechanism": "Ingest state controller/treasury escheatment ledgers and uncashed municipal/corporate warrant registries above $25,000, cross-match corporate officers via Secretary of State filings, and execute statutory recovery agreements for a 10–25% contingent finder fee.",
+      "inputs": [
+        "State controller/treasury escheatment bulk ledgers",
+        "Uncashed municipal warrant & vendor-credit registries",
+        "Secretary of State officer & FEIN cross-match index"
+      ],
+      "workflow": [
+        "Filter state unclaimed-property and uncashed-warrant ledgers for high-value corporate and estate accounts exceeding $25,000",
+        "Resolve active corporate officers, successor entities, or authorized fiduciaries via SOS and skip-trace databases",
+        "Execute state-compliant finder agreements with statutory fee caps and submit notarized claim packages to the treasury administrator"
+      ],
+      "metrics": [
+        "Average gross warrant/escheatment claim size ($25k+)",
+        "Treasury claim approval rate (%)",
+        "Days from notarized filing to state disbursement"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Statutory finder-fee cap violation or waiting-period rejection",
+          "trigger": "Charging above state statutory fee limits (e.g., 10% in CA/FL/NY) or soliciting claims during restricted post-escheatment windows",
+          "impact": "Voided recovery contract, state controller rejection, or administrative penalty",
+          "detection_metric": "State-by-state fee-cap compliance check (100% pass) and claim rejection notice rate",
+          "fallback": "Enforce per-state statutory fee caps and waiting-period rules in intake templates and disclose the owner's right to claim directly for free"
+        }
+      ]
+    },
+    {
+      "id": "ucc1_expiration_refi_trigger_arbitrage",
+      "track_id": "track_1",
+      "name": "UCC-1 Filing, MCA Stacking & Maturity-Date Trigger Arbitrage",
+      "mechanism": "Monitor state Secretary of State UCC-1 financing statements and continuation filings to identify operating businesses 4–9 months into high-cost Merchant Cash Advances (MCAs) or equipment notes, triggering refinance and debt-consolidation live transfers.",
+      "inputs": [
+        "Daily state SOS UCC-1 initial, amendment, & termination bulk feeds",
+        "Secured-party lender dictionary (identifying MCA vs. bank/SBA filings)",
+        "Live-transfer commercial refinance & SBA consolidation desk"
+      ],
+      "workflow": [
+        "Classify daily UCC-1 filings by secured party to isolate businesses that took high-cost short-term working capital 120–240 days ago",
+        "Enrich business owner direct phone and email and score by industry revenue stability",
+        "Contact merchants during peak renewal/payoff windows to offer lower-rate term consolidation or equipment refinancing, monetizing via broker points or live-transfer fees"
+      ],
+      "metrics": [
+        "UCC-to-verified-decision-maker match rate (%)",
+        "Live-transfer qualification rate (%)",
+        "Origination commission / referral fee per funded refi"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "TCPA automated-calling liability or state commercial-financing disclosure violations",
+          "trigger": "Robocalling cell phones without consent or quoting misleading APRs in states with commercial Truth-in-Lending laws (CA, NY, UT, VA)",
+          "impact": "Statutory TCPA demand letters or state DFPI regulatory enforcement",
+          "detection_metric": "100% DNC/litigator-scrub pass rate and statutory APR disclosure audit in regulated states",
+          "fallback": "Use direct mail, B2B work-email sequences, and manual human-dialed outreach paired with compliant state commercial financing disclosures"
+        }
+      ]
+    },
+    {
+      "id": "hospital_lien_medical_receivables_arbitrage",
+      "track_id": "track_1",
+      "name": "Out-of-Network Medical Claim & ERISA Appeal Contingency Recovery",
+      "mechanism": "Partner with surgical centers, air/ground ambulance operators, and specialty clinics to ingest underpaid or denied commercial insurance claims, automating federal No Surprises Act IDR (Independent Dispute Resolution) and ERISA administrative appeals on a 20–35% contingency fee.",
+      "inputs": [
+        "Provider 835/837 EDI remittance & denial feeds (CO-45, CO-50, PR-96 codes)",
+        "Qualified Payment Amount (QPA) & regional FAIR Health benchmark database",
+        "Automated ERISA plan-document demand & Federal IDR portal filing workflow"
+      ],
+      "workflow": [
+        "Ingest denied and severely underpaid out-of-network commercial claims from specialty medical practices",
+        "Cross-reference payer remittances against statutory Open Negotiation windows (30 business days) under the No Surprises Act and ERISA SPD timelines",
+        "Generate evidence-backed arbitration briefs and ERISA appeals, collecting 20–35% of the incremental insurer payout above the initial remittance"
+      ],
+      "metrics": [
+        "Average incremental recovery per arbitrated claim ($1,500–$25,000+)",
+        "IDR / ERISA appeal win rate vs. initial payer offer (%)",
+        "Contingency revenue per practice partner per month"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Missed 30-day Open Negotiation / 4-day IDR initiation statutory deadlines or HIPAA breach",
+          "trigger": "Failing to file within strict federal No Surprises Act business-day windows or handling PHI without a signed Business Associate Agreement (BAA)",
+          "impact": "Permanent forfeiture of IDR arbitration eligibility on expired claims or HIPAA compliance penalties",
+          "detection_metric": "100% BAA execution before EDI ingestion and automated T-minus-5-day statutory deadline alerts",
+          "fallback": "Enforce HIPAA-compliant encrypted EDI pipelines with signed BAAs and fall back to longer-window ERISA administrative appeals when IDR windows have lapsed"
+        }
+      ]
+    },
+    {
+      "id": "transferable_tax_credit_brokerage_syndication",
+      "track_id": "track_1",
+      "name": "Transferable Federal & State Tax Credit Brokerage & Syndication (IRA § 6418 / Film / Historic)",
+      "mechanism": "Scraping federal DOE/EPA interconnection queues, state film offices, and historic-preservation registries to originate transferable tax credits (IRC § 6418 Clean Energy Investment/Production Credits, Georgia/Louisiana Film Credits, State Historic Rehab & Brownfield Credits) from cash-strapped project developers at $0.82–$0.88 on the dollar and flipping them in simultaneous escrow closings to corporate and HNW taxpayers at $0.92–$0.96 on the dollar.",
+      "inputs": [
+        "State film-office production certifications, National Park Service Part 2/3 Historic Preservation filings, and utility solar/biogas/storage interconnection queues",
+        "IRS Energy Credits Online pre-filing registration verification and tax-credit recapture insurance underwriting partners",
+        "Outbound network of CPA managing partners, corporate tax directors, and family-office CIOs with $1M–$50M+ in quarterly federal/state tax liabilities"
+      ],
+      "workflow": [
+        "Monitor public project registries to identify middle-market solar, RNG, battery storage, independent film, and historic-rehab developers holding $1M–$25M in newly generated transferable credits",
+        "Lock up exclusive purchase or placement options at $0.83–$0.89 per $1.00 of credit prior to quarterly corporate estimated tax deadlines (April 15, June 15, Sept 15, Dec 15)",
+        "Package the credits with a third-party CPA cost-segregation/eligibility opinion and tax-credit recapture insurance policy",
+        "Execute a simultaneous bilateral escrow closing with a corporate taxpayer at $0.92–$0.95 on the dollar—saving the buyer 5–8% guaranteed on their tax bill while capturing a 400–800 bps riskless spread ($40k–$80k per $1M block)"
+      ],
+      "metrics": [
+        "Face value of tax credits placed per quarter ($5M–$100M+)",
+        "Net retained principal/brokerage spread (400–800 bps) per closed tranche",
+        "Days in escrow from developer IRS registration number issuance to wire settlement"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "IRS § 6418 recapture event or state department-of-revenue basis challenge",
+          "trigger": "Project developer inflating eligible cost basis or taking a clean-energy asset out of service during the 5-year recapture window",
+          "impact": "Taxpayer recapture assessment plus penalties if uninsured",
+          "detection_metric": "100% independent Big-4/national CPA cost-basis audit and mandatory A-rated tax-credit recapture insurance binder on every tranche",
+          "fallback": "Never take unhedged balance-sheet inventory risk; close strictly via simultaneous back-to-back escrow funded by the buyer's wire and backed by non-cancelable tax-credit insurance"
+        }
+      ]
+    },
+    {
+      "id": "litigation_finance_mass_tort_docket_securitization",
+      "track_id": "track_1",
+      "name": "Litigation-Finance Mass-Tort Lead-to-Docket Securitization & Co-Counsel Syndicates",
+      "mechanism": "Pairing an Arizona Alternative Business Structure (ABS) or co-counsel law firm with an institutional litigation-finance credit facility to acquire, medically verify (via $6.50 HITECH patient-directed record requests), and package 1,000–25,000 retained mass-tort plaintiffs (PFAS, AFFF, Paraquat, NEC, rideshare assault, defective medical devices) at $1,200–$2,500 CAC—either flipping vetted case tranches to litigation-finance hedge funds at 2.5x–4x cost or holding for 35–40% global MDL settlement fee splits.",
+      "inputs": [
+        "Judicial Panel on Multidistrict Litigation (JPML) docket analytics, FDA FAERS adverse-event spikes, and EPA contaminant zip-code maps",
+        "Arizona ABS / co-counsel retainer infrastructure with e-sign intake and automated HITECH Act (45 CFR § 164.524) medical-record retrieval engine",
+        "Non-recourse litigation-finance warehouse credit facility and MDL leadership co-counsel placement contracts"
+      ],
+      "workflow": [
+        "Identify emerging MDL mass torts with clear causation biomarkers (specific ICD-10 diagnosis codes + geographic/product exposure proof) and deep-pocket corporate defendants",
+        "Run hyper-targeted CTV, paid social, and public-record outbound campaigns to sign injured claimants directly onto joint co-counsel retainer agreements",
+        "Execute automated HITECH patient-directed electronic medical record (EMR) pulls at the federal statutory cap (~$6.50/record) and use LLM clinical parsers to verify qualifying diagnosis and exposure dates within 72 hours",
+        "Securitize verified, deficiency-free case tranches into litigation-finance buyout facilities at $4,500–$9,000 per vetted retainer or hold on the balance sheet for $25,000–$80,000+ gross contingency fees at MDL settlement"
+      ],
+      "metrics": [
+        "All-in cost per medically verified, deficiency-free retained plaintiff ($1,200–$2,500)",
+        "HITECH medical-record retrieval turnaround time (hours) and clinical qualification pass rate (%)",
+        "Secondary docket tranche sale multiple (2.5x–4.0x CAC) or net MDL settlement IRR"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Daubert general-causation dismissal in the MDL or fraudulent duplicate claimant intake",
+          "trigger": "Federal MDL judge excluding plaintiff expert witnesses under Rule 702 or lead vendors submitting synthetic/dual-represented claimants",
+          "impact": "Write-down of single-tort docket value or MDL leadership rejecting duplicate retainers",
+          "detection_metric": "Real-time SSN/lexis duplicate-retainer cross-check, immediate HITECH EMR verification before media payout, and max 20% capital concentration in any single MDL",
+          "fallback": "Diversify docket holdings across 6–10 uncorrelated mass torts and single-event commercial casualty niches, pay media vendors strictly on EMR-verified retainers, and offload 50% of tranche cost basis early to institutional litigation funders"
+        }
+      ]
+    },
+    {
+      "id": "hoa_super_lien_tax_deed_redemption_arbitrage",
+      "track_id": "track_1",
+      "name": "HOA Super-Lien & Sub-Threshold Tax-Deed Statutory Redemption Arbitrage",
+      "mechanism": "Price small HOA priority liens and tax-sale interests using jurisdiction-specific priority, notice, and redemption rules; returns depend on enforceable rights, not assumed title extinguishment.",
+      "inputs": [
+        "County tax-sale and HOA lien records",
+        "Title report and statutory redemption calendar",
+        "Local counsel priority and notice opinion"
+      ],
+      "workflow": [
+        "1. Screen small-balance liens against property value, senior debt, and sale eligibility",
+        "2. Have local counsel verify priority, service, redemption rights, and purchaser restrictions",
+        "3. Bid within a net-recovery ceiling and calendar every payment and notice deadline",
+        "4. Reconcile redemption proceeds or pursue counsel-supervised title resolution after rights expire"
+      ],
+      "metrics": [
+        "Net realized recovery after legal costs",
+        "Capital days outstanding",
+        "Notice and redemption deadline compliance rate"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Sale invalidation or surviving senior lien",
+          "trigger": "Defective notice or incorrect assumption about statutory lien priority",
+          "impact": "Loss of expected recovery and extended title litigation",
+          "detection_metric": "Unresolved title exceptions and notice defects per acquisition",
+          "fallback": "Suspend bidding, seek available statutory refunds, and limit acquisitions to counsel-cleared interests"
+        }
+      ]
+    },
+    {
+      "id": "cipa_vppa_wiretap_pixel_settlement_arbitrage",
+      "track_id": "track_1",
+      "name": "CIPA Wiretap-Pixel & VPPA Statutory Privacy-Demand Settlement Arbitrage",
+      "mechanism": "Support counsel-led evaluation of genuine tracking-related privacy claims using preserved consent and disclosure evidence; applicability, standing, and recoverable damages require individual legal review.",
+      "inputs": [
+        "Client-authorized browser network captures",
+        "Timestamped consent flows and privacy notices",
+        "Counsel-reviewed standing and statutory applicability checklist"
+      ],
+      "workflow": [
+        "1. Obtain client authorization and preserve ordinary-session tracking and consent evidence",
+        "2. Have counsel assess actual disclosures, statutory coverage, standing, and limitation periods",
+        "3. Route substantiated matters to retained counsel for proportionate notice and resolution",
+        "4. Record outcomes, client distributions, and remediation without duplicate or fabricated claims"
+      ],
+      "metrics": [
+        "Counsel-validated matters per reviewed session",
+        "Net client recovery after disclosed costs",
+        "Evidence completeness and duplicate-claim rate"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Unsupported statutory demand or evidence rejection",
+          "trigger": "Missing standing, valid consent, or unreliable attribution of disclosed data",
+          "impact": "Dismissal, sanctions exposure, and wasted case costs",
+          "detection_metric": "Counsel rejection rate by coverage and evidence defect",
+          "fallback": "Close unsupported matters and offer authorized privacy-remediation audits instead"
+        }
+      ]
+    },
+    {
+      "id": "chapter11_trade_claim_convenience_class_rollup",
+      "track_id": "track_1",
+      "name": "Chapter 11 Bankruptcy Schedule E/F Trade-Claim & Convenience-Class Rollups",
+      "mechanism": "Purchase documented small trade claims below risk-adjusted expected plan distributions, accounting for objections, assignment procedures, and plan rules that may prohibit claim splitting or aggregation benefits.",
+      "inputs": [
+        "Bankruptcy schedules E/F and claims register",
+        "Invoices, payment history, and assignment documents",
+        "Proposed plan classification and distribution waterfall"
+      ],
+      "workflow": [
+        "1. Reconcile scheduled trade creditors with filed claims and supporting invoices",
+        "2. Model recoveries under plan amendments, objections, setoffs, and convenience-class eligibility",
+        "3. Buy eligible claims through documented assignments and complete required transfer notices",
+        "4. Monitor objections and confirmation, then reconcile distributions to each acquired claim"
+      ],
+      "metrics": [
+        "Purchase discount to risk-adjusted recovery",
+        "Allowed claim value versus purchased face value",
+        "Realized return and days to distribution"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Claim disallowance or convenience-class exclusion",
+          "trigger": "Disputed invoices, setoff rights, or plan restrictions on purchased or split claims",
+          "impact": "Reduced distribution or complete capital loss",
+          "detection_metric": "Objection rate and eligible allowed value per portfolio",
+          "fallback": "Stop affected purchases, enforce documented seller recourse where available, and price only supported general-unsecured recoveries"
+        }
+      ]
+    },
+    {
+      "id": "out_of_statute_zombie_debt_portfolio_settlement",
+      "track_id": "track_1",
+      "name": "Out-of-Statute Charged-Off Debt Portfolio & Self-Serve Tradeline Settlement Funnels",
+      "mechanism": "Evaluate heavily discounted time-barred receivables for lawful voluntary resolution, separating collection limitation periods from credit-reporting limits and excluding extinguished or otherwise uncollectible obligations.",
+      "inputs": [
+        "Account-level ownership and payment history",
+        "State limitation, revival, and collection-disclosure matrix",
+        "Dispute records and credit-reporting eligibility dates"
+      ],
+      "workflow": [
+        "1. Validate account ownership, balances, bankruptcy status, and applicable limitation periods",
+        "2. Obtain licensed legal review of collectibility, required notices, and payment-revival consequences",
+        "3. Offer permitted voluntary self-service resolutions without lawsuit threats or credit-deletion promises",
+        "4. Honor disputes and opt-outs, issue satisfaction records, and update only accurate eligible reporting"
+      ],
+      "metrics": [
+        "Validated legally collectible balance share",
+        "Net voluntary receipts after servicing costs",
+        "Dispute and disclosure-defect rate"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Time-barred collection or reporting violation",
+          "trigger": "Threatened litigation, unlawful revival solicitation, or re-aging of obsolete debt",
+          "impact": "Enforcement, restitution, and servicing suspension",
+          "detection_metric": "Accounts failing legal-age checks and substantiated complaints",
+          "fallback": "Suppress affected accounts, correct reporting, and suspend collection until counsel approves remediation"
+        }
+      ]
+    },
+    {
+      "id": "mca_ucc_stacking_default_restructure_brokerage",
+      "track_id": "track_2",
+      "name": "MCA UCC-1 Trigger Stacking & Dual-Sided Default-Restructure Brokerage",
+      "mechanism": "Use UCC filing changes to identify businesses that may need cash-flow review and consensual MCA restructuring, with verified obligations and disclosed compensation rather than encouraging undisclosed stacking.",
+      "inputs": [
+        "Public UCC filings and termination records",
+        "Merchant-authorized contracts and cash-flow statements",
+        "Broker licensing rules and disclosed creditor compensation terms"
+      ],
+      "workflow": [
+        "1. Treat UCC changes as outreach signals, not proof of default, and obtain merchant authorization",
+        "2. Reconcile advances, liens, repayment pulls, covenants, and sustainable payment capacity",
+        "3. Disclose dual-sided fees and conflicts; use independent counsel where representation would conflict",
+        "4. Coordinate documented creditor-approved modifications and monitor actual payment relief"
+      ],
+      "metrics": [
+        "Net merchant payment relief after fees",
+        "Creditor-approved modification rate",
+        "Post-restructure missed-payment rate"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Conflicted brokerage or prohibited stacking worsens default",
+          "trigger": "Hidden commissions, inaccurate balances, or new financing breaching existing contracts",
+          "impact": "Accelerated collections and broker liability",
+          "detection_metric": "Undisclosed fee exceptions and covenant breaches per engagement",
+          "fallback": "Stop placement, refund improper fees, and refer the merchant to independent licensed restructuring counsel"
+        }
+      ]
+    },
+    {
+      "id": "state_film_historic_brownfield_tax_credit_brokerage",
+      "track_id": "track_1",
+      "name": "State Film, Historic Rehabilitation (HTC) & Brownfield Transferable Tax Credit Placement",
+      "mechanism": "Match certified state film, historic rehabilitation, and brownfield credits with eligible taxpayers at negotiated discounts, retaining disclosed placement fees; transferability and buyer usability are state-specific and do not imply federal historic credits can be sold outright.",
+      "inputs": [
+        "State agency project approvals and issued credit certificates",
+        "Transfer rules, recapture terms, and seller ownership records",
+        "Buyer state tax liabilities and escrow placement agreements"
+      ],
+      "workflow": [
+        "1. Identify certified credits and verify state-specific transferability, issuance status, and remaining carryforward life",
+        "2. Have independent advisers validate eligible costs, ownership, liens, recapture exposure, and buyer utilization limits",
+        "3. Match approved buyers and sellers with disclosed pricing, fees, indemnities, and any available insurance exclusions",
+        "4. Complete required agency transfer approvals and escrow settlement, then retain filing and post-close monitoring records"
+      ],
+      "metrics": [
+        "Certified transferable credit face value placed",
+        "Net placement fee per settled transaction",
+        "Transfer approval and escrow cycle days"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Transfer rejected or purchased credit unusable",
+          "trigger": "State rule change, certificate defect, recapture event, or buyer liability mismatch",
+          "impact": "Failed closing or buyer tax shortfall and indemnity dispute",
+          "detection_metric": "Unresolved certificate exceptions and buyer utilization coverage",
+          "fallback": "Suspend settlement under diligence contingencies and rematch only verified eligible credits without guaranteeing tax savings"
+        }
+      ]
+    }
+  ],
+  "platform_risks": [
+    {
+      "failure_mode": "Portal rate-limiting or CAPTCHA gating",
+      "trigger": "High-frequency automated polling against county or agency web portals",
+      "impact": "Delayed lead ingestion or temporary IP block on target registry",
+      "detection_metric": "HTTP 429/403 rate and daily record ingestion delta",
+      "fallback": "Switch to scheduled bulk FOIA/public-record exports, official data feeds, and low-frequency cached queues",
+      "play_id": "public_record_api_intelligence",
+      "play_name": "Public-Record & API Intelligence",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Statutory fee-cap compression or administrative hold",
+      "trigger": "Jurisdiction updates finder fee limits, waiting periods, or filing documentation rules",
+      "impact": "Reduced net fee margin or extended cash conversion cycle",
+      "detection_metric": "County/state rejection notice rate and days-to-payout variance",
+      "fallback": "Diversify across multi-state dockets and use attorney-backed filing partnerships where required",
+      "play_id": "distressed_asset_recovery",
+      "play_name": "Distressed Asset Recovery",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Claim rejection, administrator audit hold, or court cap on third-party filer fees",
+      "trigger": "Submitting unsubstantiated spend estimates, missing court bar dates, or failing to include required third-party filer disclosures",
+      "impact": "Delayed payout disbursement or court-mandated fee reduction",
+      "detection_metric": "Deficiency-notice rate (<2% target) and 100% court-approved disclosure compliance",
+      "fallback": "File strictly for verified operating businesses with primary processor/vendor statements and use court-approved third-party claim-filing riders",
+      "play_id": "b2b_class_action_contingency_recovery",
+      "play_name": "B2B Class-Action & Antitrust Settlement Contingency Recovery",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Cross-jurisdictional Rule 5.4 fee-splitting challenges, MDL claimant-fraud rejections, or 24–48 month settlement lockup",
+      "trigger": "Splitting fees in non-ABS jurisdictions without genuine legal services/joint responsibility by ABS attorneys, accepting unverified lead-brokered retainers, or undercapitalizing multi-year MDL hold times",
+      "impact": "Disallowance of co-counsel fee division in restrictive states, court dismissal of uncorroborated claims, or working-capital exhaustion before settlement payout",
+      "detection_metric": "100% primary-record corroboration rate (detention/medical/ride logs) and state-by-state Rule 1.5(e)/5.4 ethics opinion sign-off",
+      "fallback": "Ensure licensed ABS attorneys perform substantive legal intake/case-work or pair with an MSO (Management Services Organization) structure in restrictive states, enforce strict primary-document verification before filing, and blend fast-settling single-event injury cases with multi-year institutional dockets",
+      "play_id": "arizona_abs_mass_tort_cocounsel",
+      "play_name": "Arizona ABS Law-Firm Ownership & Survivor/Mass-Tort Co-Counsel Arbitrage",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Statutory finder-fee cap violation or waiting-period rejection",
+      "trigger": "Charging above state statutory fee limits (e.g., 10% in CA/FL/NY) or soliciting claims during restricted post-escheatment windows",
+      "impact": "Voided recovery contract, state controller rejection, or administrative penalty",
+      "detection_metric": "State-by-state fee-cap compliance check (100% pass) and claim rejection notice rate",
+      "fallback": "Enforce per-state statutory fee caps and waiting-period rules in intake templates and disclose the owner's right to claim directly for free",
+      "play_id": "unclaimed_property_escheatment_arbitrage",
+      "play_name": "State Treasury Escheatment & Unclaimed Corporate Warrant Recovery",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "TCPA automated-calling liability or state commercial-financing disclosure violations",
+      "trigger": "Robocalling cell phones without consent or quoting misleading APRs in states with commercial Truth-in-Lending laws (CA, NY, UT, VA)",
+      "impact": "Statutory TCPA demand letters or state DFPI regulatory enforcement",
+      "detection_metric": "100% DNC/litigator-scrub pass rate and statutory APR disclosure audit in regulated states",
+      "fallback": "Use direct mail, B2B work-email sequences, and manual human-dialed outreach paired with compliant state commercial financing disclosures",
+      "play_id": "ucc1_expiration_refi_trigger_arbitrage",
+      "play_name": "UCC-1 Filing, MCA Stacking & Maturity-Date Trigger Arbitrage",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Missed 30-day Open Negotiation / 4-day IDR initiation statutory deadlines or HIPAA breach",
+      "trigger": "Failing to file within strict federal No Surprises Act business-day windows or handling PHI without a signed Business Associate Agreement (BAA)",
+      "impact": "Permanent forfeiture of IDR arbitration eligibility on expired claims or HIPAA compliance penalties",
+      "detection_metric": "100% BAA execution before EDI ingestion and automated T-minus-5-day statutory deadline alerts",
+      "fallback": "Enforce HIPAA-compliant encrypted EDI pipelines with signed BAAs and fall back to longer-window ERISA administrative appeals when IDR windows have lapsed",
+      "play_id": "hospital_lien_medical_receivables_arbitrage",
+      "play_name": "Out-of-Network Medical Claim & ERISA Appeal Contingency Recovery",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "IRS § 6418 recapture event or state department-of-revenue basis challenge",
+      "trigger": "Project developer inflating eligible cost basis or taking a clean-energy asset out of service during the 5-year recapture window",
+      "impact": "Taxpayer recapture assessment plus penalties if uninsured",
+      "detection_metric": "100% independent Big-4/national CPA cost-basis audit and mandatory A-rated tax-credit recapture insurance binder on every tranche",
+      "fallback": "Never take unhedged balance-sheet inventory risk; close strictly via simultaneous back-to-back escrow funded by the buyer's wire and backed by non-cancelable tax-credit insurance",
+      "play_id": "transferable_tax_credit_brokerage_syndication",
+      "play_name": "Transferable Federal & State Tax Credit Brokerage & Syndication (IRA § 6418 / Film / Historic)",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Daubert general-causation dismissal in the MDL or fraudulent duplicate claimant intake",
+      "trigger": "Federal MDL judge excluding plaintiff expert witnesses under Rule 702 or lead vendors submitting synthetic/dual-represented claimants",
+      "impact": "Write-down of single-tort docket value or MDL leadership rejecting duplicate retainers",
+      "detection_metric": "Real-time SSN/lexis duplicate-retainer cross-check, immediate HITECH EMR verification before media payout, and max 20% capital concentration in any single MDL",
+      "fallback": "Diversify docket holdings across 6–10 uncorrelated mass torts and single-event commercial casualty niches, pay media vendors strictly on EMR-verified retainers, and offload 50% of tranche cost basis early to institutional litigation funders",
+      "play_id": "litigation_finance_mass_tort_docket_securitization",
+      "play_name": "Litigation-Finance Mass-Tort Lead-to-Docket Securitization & Co-Counsel Syndicates",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Sale invalidation or surviving senior lien",
+      "trigger": "Defective notice or incorrect assumption about statutory lien priority",
+      "impact": "Loss of expected recovery and extended title litigation",
+      "detection_metric": "Unresolved title exceptions and notice defects per acquisition",
+      "fallback": "Suspend bidding, seek available statutory refunds, and limit acquisitions to counsel-cleared interests",
+      "play_id": "hoa_super_lien_tax_deed_redemption_arbitrage",
+      "play_name": "HOA Super-Lien & Sub-Threshold Tax-Deed Statutory Redemption Arbitrage",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Unsupported statutory demand or evidence rejection",
+      "trigger": "Missing standing, valid consent, or unreliable attribution of disclosed data",
+      "impact": "Dismissal, sanctions exposure, and wasted case costs",
+      "detection_metric": "Counsel rejection rate by coverage and evidence defect",
+      "fallback": "Close unsupported matters and offer authorized privacy-remediation audits instead",
+      "play_id": "cipa_vppa_wiretap_pixel_settlement_arbitrage",
+      "play_name": "CIPA Wiretap-Pixel & VPPA Statutory Privacy-Demand Settlement Arbitrage",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Claim disallowance or convenience-class exclusion",
+      "trigger": "Disputed invoices, setoff rights, or plan restrictions on purchased or split claims",
+      "impact": "Reduced distribution or complete capital loss",
+      "detection_metric": "Objection rate and eligible allowed value per portfolio",
+      "fallback": "Stop affected purchases, enforce documented seller recourse where available, and price only supported general-unsecured recoveries",
+      "play_id": "chapter11_trade_claim_convenience_class_rollup",
+      "play_name": "Chapter 11 Bankruptcy Schedule E/F Trade-Claim & Convenience-Class Rollups",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Time-barred collection or reporting violation",
+      "trigger": "Threatened litigation, unlawful revival solicitation, or re-aging of obsolete debt",
+      "impact": "Enforcement, restitution, and servicing suspension",
+      "detection_metric": "Accounts failing legal-age checks and substantiated complaints",
+      "fallback": "Suppress affected accounts, correct reporting, and suspend collection until counsel approves remediation",
+      "play_id": "out_of_statute_zombie_debt_portfolio_settlement",
+      "play_name": "Out-of-Statute Charged-Off Debt Portfolio & Self-Serve Tradeline Settlement Funnels",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Conflicted brokerage or prohibited stacking worsens default",
+      "trigger": "Hidden commissions, inaccurate balances, or new financing breaching existing contracts",
+      "impact": "Accelerated collections and broker liability",
+      "detection_metric": "Undisclosed fee exceptions and covenant breaches per engagement",
+      "fallback": "Stop placement, refund improper fees, and refer the merchant to independent licensed restructuring counsel",
+      "play_id": "mca_ucc_stacking_default_restructure_brokerage",
+      "play_name": "MCA UCC-1 Trigger Stacking & Dual-Sided Default-Restructure Brokerage",
+      "track_id": "track_2"
+    },
+    {
+      "failure_mode": "Transfer rejected or purchased credit unusable",
+      "trigger": "State rule change, certificate defect, recapture event, or buyer liability mismatch",
+      "impact": "Failed closing or buyer tax shortfall and indemnity dispute",
+      "detection_metric": "Unresolved certificate exceptions and buyer utilization coverage",
+      "fallback": "Suspend settlement under diligence contingencies and rematch only verified eligible credits without guaranteeing tax savings",
+      "play_id": "state_film_historic_brownfield_tax_credit_brokerage",
+      "play_name": "State Film, Historic Rehabilitation (HTC) & Brownfield Transferable Tax Credit Placement",
+      "track_id": "track_1"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "concept_id": "concept_b",
+  "volume_id": "vol-015-judgment-recovery",
+  "approved": true,
+  "edition_status": "approved_master",
+  "preview_only": true,
+  "files": {
+    "digital_pdf.pdf": {
+      "bytes": 2031074,
+      "sha256": "ba012c9b5145a6995b2e84ddcd5320ee00abd8fa92c8783c59bcec9f3977417b"
+    },
+    "print_6x9_pdf.pdf": {
+      "bytes": 2688232,
+      "sha256": "72ae1c5d2026f0efb4ff8125f7fc8f4637e90c426de711a56bcb0df49560fa1f"
+    },
+    "workbook_pdf.pdf": {
+      "bytes": 540530,
+      "sha256": "26b618c3a3be933375bcec30f42c6fd9aecc59ff299c2b093459cae37e592319"
+    },
+    "book.epub": {
+      "bytes": 264399,
+      "sha256": "417c6220f17127a2359b0def0374f8bcd6916a665ab5f741710303fc5c03a3ab"
+    },
+    "art/cover.svg": {
+      "bytes": 3647,
+      "sha256": "02834766103b890d595a53567a09863d58c6a9a78df02df9a7da50015577f98d"
+    },
+    "art/scorecard.svg": {
+      "bytes": 82273,
+      "sha256": "40ef4872a697aa35c53a6f3ecc9eb9f18e48f2e4e63a40a9bd2ab0fac0fe5782"
+    },
+    "art/diag_01.svg": {
+      "bytes": 11650,
+      "sha256": "ce177b87e7f88ba694714391c53cf154551f4bad8839b4db9c338657f27760c1"
+    },
+    "art/diag_02.svg": {
+      "bytes": 8118,
+      "sha256": "ae82d3b06fa3640ee0b7b602cb10726fde9f847e048f9fc2db46fc07e8e3eec7"
+    },
+    "art/diag_03.svg": {
+      "bytes": 11943,
+      "sha256": "69912e855c13e1e137e3fc8ceb0a446792cf7fb45a43c428314e60b3c2c25e31"
+    },
+    "art/diag_04.svg": {
+      "bytes": 10022,
+      "sha256": "cd47063d0e610a96afac376539c9cd9762962f131d504ada374296d52bce719d"
+    },
+    "art/diag_05.svg": {
+      "bytes": 10762,
+      "sha256": "a2c40fc0ca5449d308edc7f5a0a0dc4ffbb35f5ff81a81caced7a742a089c7d3"
+    },
+    "art/diag_06.svg": {
+      "bytes": 12915,
+      "sha256": "acffe45372b7841703180b9ec033e546cd545123301d4c10f032e6cf0136b624"
+    },
+    "art/diag_07.svg": {
+      "bytes": 9326,
+      "sha256": "155d8db82ef9523f79032e2f979e1e2882613c2b3134e3b2412f4024d6e299b6"
+    },
+    "art/diag_08.svg": {
+      "bytes": 9514,
+      "sha256": "e18396549f6c894c6efa5559307f92b174b8100d60be003c1e2ae40064c52c1a"
+    }
+  }
+}

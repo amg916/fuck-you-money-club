@@ -1,0 +1,732 @@
+from __future__ import annotations
+
+CHAPTER_2 = {
+    "id": "Q2",
+    "chapter_id": "Q2",
+    "chapter_number": 2,
+    "question_number": 2,
+    "slug": "who-pays-why-they-pay-and-how-the-payment-rail-works",
+    "question_prompt": "Who writes the check in judgment recovery, what acute financial or statutory pain forces them to pay, and how do funds clear cleanly without circumvention or non-payment?",
+    "kicker": "Q2 / THE BIG MONEY PLAYBOOKS",
+    "title": "Who Pays, Why They Pay & How the Payment Rail Works",
+    "subtitle": "Creditor Mandates, Debtor Liquidity, Attorney Trust Ledgers, Lien Priority, ACH Returns & Bankruptcy Claim Transfers",
+    "layout_template": "executive_summary",
+    "reading_time_minutes": 14,
+    "executive_summary": (
+        "Candidate #8, Judgment Recovery, ranks #15 with a 77/100 Money-to-Manpower "
+        "Score across 15 mapped plays. The creditor buys execution discipline; the "
+        "debtor supplies recoveries when lawful enforcement, settlement economics, "
+        "or a transaction requiring lien release makes payment rational. Those are "
+        "different counterparties, budgets, and accounting events. Build around "
+        "documented authority, collectible assets, counsel-controlled enforcement, "
+        "and a payment waterfall that separates client money from earned service "
+        "fees. Canonical annual owner profits are $12,000 Conservative, $84,000 Base, "
+        "and $200,000 Scaled, on recognized service-fee revenue rather than judgment "
+        "face value. This chapter connects payer psychology to eight payment rails, "
+        "fee protection, counterparty screening, distressed_asset_recovery, and "
+        "chapter11_trade_claim_convenience_class_rollup, including explicit cost "
+        "limits and fallback decisions."
+    ),
+    "key_metrics": [
+        {
+            "label": "Conservative",
+            "value": "$60,000",
+            "context": "Annual recognized service fees; excludes client recovery principal",
+            "note": "20% net margin; $12,000 annual owner net profit; 1 FT + 3 C",
+        },
+        {
+            "label": "Base",
+            "value": "$280,000",
+            "context": "Annual recognized service fees; excludes client recovery principal",
+            "note": "30.0% net margin; $84,000 annual owner net profit; 1 FT + 3 C",
+        },
+        {
+            "label": "Scaled",
+            "value": "$500,000",
+            "context": "Annual recognized service fees; excludes client recovery principal",
+            "note": "40% net margin; $200,000 annual owner net profit; 2 FT + 4 C",
+        },
+    ],
+    "sections": [
+        {
+            "heading": "1. Identify the creditor buyer, debtor payer, and actual release authority",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Begin every file with three separate identities: the creditor purchasing "
+                    "recovery services, the judgment debtor whose property may fund payment, "
+                    "and the person authorized to settle or release the judgment. A controller "
+                    "may approve a contingency engagement while only general counsel can approve "
+                    "a discounted satisfaction. A debtor's bookkeeper can transmit a wire "
+                    "without authority to bind the company to settlement terms. Obtain the "
+                    "entered judgment, current creditor identity, assignment chain, accrued "
+                    "balance calculation, and written settlement delegation before quoting "
+                    "outcomes. The creditor's acute pain is usually a written-off receivable, "
+                    "an aging reserve, or repeated spending on searches that never become "
+                    "enforceable remedies. The debtor's pain is different: a lawful levy, "
+                    "documented lien interfering with a sale, or the expense of continuing "
+                    "a dispute. None creates cash where assets are exempt, encumbered, or "
+                    "absent. Ask the creditor which employee owns the recovery budget, which "
+                    "person can approve enforcement expenses, and which signature releases "
+                    "collateral. Record those answers in Clio or an equivalent matter system "
+                    "with supporting documents, not merely a contact list. A signed "
+                    "engagement from someone without delegated authority is an operational "
+                    "defect, even when the underlying judgment is valid. Resolve that defect "
+                    "before ordering an expensive asset investigation."
+                ),
+                (
+                    "Sell a bounded decision process rather than the nominal judgment balance. "
+                    "A creditor holding a $200,000 judgment might rationally authorize a "
+                    "$2,000 investigation when an identified receivable could support a "
+                    "$40,000 settlement. At an illustrative 25% service fee, that recovery "
+                    "produces $10,000 of operator revenue and $30,000 of creditor proceeds "
+                    "before separately agreed expenses. If the creditor also reimburses "
+                    "$2,000 from those proceeds, their economic recovery becomes $28,000; "
+                    "the reimbursement requires separate accounting rather than automatic "
+                    "treatment as additional margin. Compare this result with a documented "
+                    "alternative, such as another year of monitoring at a fixed cost, "
+                    "instead of claiming the full face amount is collectible. For debtor "
+                    "negotiations, establish a lawful reason to act now: an actual closing "
+                    "date, an enforceable order, or a documented discount expiration. Do not "
+                    "manufacture deadlines, threaten unavailable remedies, or imply criminal "
+                    "consequences for ordinary nonpayment. Counsel determines which execution "
+                    "procedures fit the forum. Federal Rule of Civil Procedure 69 generally "
+                    "points federal money-judgment enforcement toward state procedure unless "
+                    "a federal statute applies. The operating product is therefore a "
+                    "jurisdiction-specific collection plan backed by evidence, not a national "
+                    "script promising identical leverage against every debtor."
+                ),
+                (
+                    "Counterparty screening must reach both sides of the engagement. Verify "
+                    "the creditor's existence through the relevant secretary of state, confirm "
+                    "the signer's authority, and resolve competing assignments before accepting "
+                    "instructions. Verify the debtor's exact legal identity, bankruptcy status, "
+                    "appeal posture, enforceability period, and ownership of the proposed "
+                    "payment source. PACER supports federal docket review; state court portals, "
+                    "county recording offices, and authorized UCC searches answer different "
+                    "questions and should not be treated as interchangeable asset databases. "
+                    "A UCC filing indicates a claimed security interest, not necessarily "
+                    "the current payoff or perfected priority against every asset. Obtain "
+                    "the relevant instruments and have counsel assess competing rights. "
+                    "Record whether the obligation arose from business activity or a consumer "
+                    "transaction; a judgment does not automatically remove consumer-debt "
+                    "protections. The FDCPA definition in 15 U.S.C. § 1692a concerns qualifying "
+                    "consumer obligations, while state collection laws may reach additional "
+                    "conduct or commercial claims. License coverage, lawful data access, "
+                    "and local representation rules belong in intake. A commercial focus "
+                    "does not authorize a nonlawyer to appear for another creditor or "
+                    "bypass restrictions through a paper assignment. When authority, "
+                    "identity, or coverage remains unresolved, restrict work to permitted "
+                    "screening and suspend enforcement spending."
+                ),
+            ],
+            "table": {
+                "caption": "Buyer Psychology, Budget Ownership, and Evidence of Payment Authority",
+                "headers": [
+                    "Counterparty and operating role",
+                    "Specific reason to authorize payment",
+                    "Authority evidence required before proceeding",
+                    "Commercial response when evidence fails",
+                ],
+                "rows": [
+                    [
+                        "Creditor controller managing aged commercial receivables and reserves",
+                        "Recover cash without expanding internal collections payroll",
+                        "Signed service engagement plus documented delegated spending limits",
+                        "Cap research expenses until authorized creditor signs engagement",
+                    ],
+                    [
+                        "Creditor general counsel controlling settlement and judgment releases",
+                        "Resolve enforceable claims while avoiding defective execution proceedings",
+                        "Written settlement range and separate release signature authority",
+                        "Route proposed discounts through the identified authorized signer",
+                    ],
+                    [
+                        "Debtor principal negotiating payment from verified business assets",
+                        "Preserve operations through a documented affordable settlement schedule",
+                        "Entity authorization plus verified ownership of funding account",
+                        "Require revised terms supported by identifiable lawful liquidity",
+                    ],
+                    [
+                        "Closing escrow officer holding proceeds from encumbered property",
+                        "Deliver insurable title under documented transaction closing instructions",
+                        "Signed payoff statement and independently verified release conditions",
+                        "Keep lien release conditional until closing requirements resolve",
+                    ],
+                    [
+                        "Senior secured lender controlling collateral sale payoff instructions",
+                        "Receive contracted priority proceeds before releasing security interests",
+                        "Current payoff demand and reviewed collateral priority documents",
+                        "Recalculate junior recovery after senior claims and costs",
+                    ],
+                    [
+                        "Bankruptcy trustee or authorized plan disbursing agent",
+                        "Distribute estate funds according to governing orders and priorities",
+                        "Current distribution notice and verified claim ownership record",
+                        "Use bankruptcy procedures instead of demanding outside payment",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Verify four authorities before spending enforcement money",
+                "body": (
+                    "A collectible-looking asset is not enough. The file must identify "
+                    "who owns the claim, who may act, what may be reached, and who may "
+                    "receive the resulting funds."
+                ),
+                "items": [
+                    "Match the judgment creditor, assignment chain, engagement signer, and release signer; resolve conflicting ownership documents before outreach.",
+                    "Have counsel confirm applicable licenses, representation limits, execution procedures, exemption issues, and any required domestication.",
+                    "Refresh bankruptcy, stay, appeal, lien-priority, and asset-ownership checks before each material enforcement step.",
+                    "Approve the named receiving account, client ledger, fee calculation, expense authority, and distribution instructions in writing.",
+                ],
+            },
+        },
+        {
+            "heading": "2. Select a settlement rail that preserves ownership and clearing evidence",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Treat payment instructions as an executable settlement schedule, not an "
+                    "email containing bank coordinates. Identify the payer, beneficiary, "
+                    "receiving institution, matter reference, permitted amount, due date, "
+                    "allocation rule, and conditions for releasing the judgment. Prefer a "
+                    "lawfully designated attorney trust account or appropriately authorized "
+                    "escrow arrangement when disputed ownership, multiple beneficiaries, or "
+                    "conditional releases require controlled disbursement. The account must "
+                    "belong to the actual authorized custodian; calling an ordinary operating "
+                    "account escrow changes nothing. Verify wiring instructions through a "
+                    "previously established telephone number and document the callback. "
+                    "Reject instructions that redirect funds to an unrelated personal "
+                    "account, substitute cryptocurrency without an agreed operational reason, "
+                    "or change beneficiary details immediately before settlement. A genuine "
+                    "closing deadline is not a reason to skip identity controls. Wire "
+                    "transfers provide useful bank references but can still involve fraud, "
+                    "recall requests, legal restraint, or erroneous beneficiary information. "
+                    "ACH entries add authorization and return exposure whose timing depends "
+                    "on transaction type and applicable rules. No single hold period makes "
+                    "every payment final. Use the receiving bank's actual settlement "
+                    "evidence and counsel-approved release conditions; do not file a "
+                    "satisfaction merely because a debtor supplies a screenshot marked "
+                    "sent or a payment processor displays a provisional balance."
+                ),
+                (
+                    "The eight rails below solve different problems and should not be sold "
+                    "as interchangeable checkout options. A retainer funds authorized work; "
+                    "it does not prove the debtor has paid the judgment. A statutory "
+                    "disbursement routes funds through a sheriff, court officer, or bankruptcy "
+                    "administrator under governing procedure. Factoring transfers economic "
+                    "rights or finances receivables and therefore changes counterparty risk "
+                    "rather than simply accelerating the same collection. Milestone holds "
+                    "are a contractual control layered onto an account and payment method, "
+                    "not an independent banking network. Platform checkout can simplify small "
+                    "installments, but Stripe or another provider must expressly support the "
+                    "actual collection activity and account structure. Processor reserves, "
+                    "chargebacks, and acceptable-use restrictions can defeat apparently "
+                    "convenient economics. Do not disguise recovery services as ordinary "
+                    "retail sales to obtain processing. Compare an illustrative $20,000 "
+                    "settlement paid by wire with the same settlement paid through a "
+                    "hypothetical card channel charging 3%: processing alone consumes $600 "
+                    "before disputes or reserves. That rate is a comparison assumption, "
+                    "not a vendor quote. The agreement must specify who bears permitted "
+                    "payment costs and whether they reduce the fee base. Adding an "
+                    "unauthorized collection charge to the debtor's balance can create "
+                    "a separate violation rather than protect margin."
+                ),
+                (
+                    "Build clearing around a matter-level ledger with separate columns for "
+                    "gross receipts, lawful interest allocation, reimbursable costs, earned "
+                    "operator fees, counsel charges, creditor proceeds, and unresolved holds. "
+                    "Where a statute prescribes allocation, that rule governs before internal "
+                    "preferences; California Code of Civil Procedure § 695.221 provides "
+                    "one jurisdiction-specific allocation rule for money received in "
+                    "satisfaction of a money judgment. For an illustrative $40,000 recovery "
+                    "with a contractually permitted 25% operator fee and no separate "
+                    "deductions, record $40,000 received, $10,000 earned service revenue, "
+                    "and $30,000 payable to the creditor. The $30,000 never becomes "
+                    "operator revenue merely because it passed through a controlled account. "
+                    "If $2,000 of authorized creditor expenses are also reimbursed from "
+                    "proceeds, creditor cash falls to $28,000 under that expressly agreed "
+                    "waterfall. Whether the reimbursement is presented gross or net in "
+                    "business accounts requires a consistent accounting assessment. Reconcile "
+                    "bank activity, custodian statements, and individual client ledgers "
+                    "before disbursement; QuickBooks may support operating accounts but "
+                    "does not replace required trust-account controls. Use a second reviewer "
+                    "for beneficiary changes and outgoing distributions. After release "
+                    "conditions are satisfied, complete the jurisdiction's satisfaction "
+                    "procedure promptly. In California, § 724.010 addresses satisfaction "
+                    "of judgment; do not retain a satisfied lien as informal leverage "
+                    "for an unrelated fee dispute."
+                ),
+            ],
+            "table": {
+                "caption": "Eight Settlement Rails: Custody, Clearing Exposure, and Release Controls",
+                "headers": [
+                    "Rail and appropriate operating use",
+                    "Who controls the money movement",
+                    "Principal clearing or economic failure mode",
+                    "Required evidence before distribution or release",
+                ],
+                "rows": [
+                    [
+                        "Wire transfer for documented negotiated lump sum settlements",
+                        "Verified debtor bank sends to the authorized beneficiary",
+                        "Spoofed instructions or restrained funds defeat expected availability",
+                        "Bank receipt reference plus independently verified beneficiary details",
+                    ],
+                    [
+                        "Escrow arrangement for conditional payoff and lien release",
+                        "Authorized escrow holder follows signed transaction disbursement instructions",
+                        "Conflicting release conditions strand funds despite apparent agreement",
+                        "Executed instructions identifying beneficiaries and exact release conditions",
+                    ],
+                    [
+                        "ACH transfer for authorized recurring debtor settlement installments",
+                        "Originator and receiving banks process properly authorized entries",
+                        "Returns and authorization disputes reverse previously displayed balances",
+                        "Entry authorization plus bank status and applicable risk review",
+                    ],
+                    [
+                        "Retainer funding for defined research and permitted recovery work",
+                        "Client funds the designated account under engagement terms",
+                        "Unearned advances become improperly treated as earned revenue",
+                        "Scope documentation and lawful earned fee withdrawal calculation",
+                    ],
+                    [
+                        "Statutory disbursement following levy or court administered distribution",
+                        "Authorized officer or administrator applies governing payment procedure",
+                        "Priority contests and statutory processing delays reduce timing certainty",
+                        "Official remittance record and reviewed allocation of proceeds",
+                    ],
+                    [
+                        "Platform checkout for expressly permitted small settlement payments",
+                        "Approved processor controls settlement timing and reserve deductions",
+                        "Chargebacks or prohibited activity restrictions freeze expected payouts",
+                        "Provider acceptance and reconciled net settlement transaction report",
+                    ],
+                    [
+                        "Factoring arrangement for selling documented eligible payment rights",
+                        "Purchaser pays the seller under a rights transfer agreement",
+                        "Recourse obligations and defective assignments erase apparent liquidity",
+                        "Verified transferable rights and written recourse pricing analysis",
+                    ],
+                    [
+                        "Milestone holds layered onto a valid custodial arrangement",
+                        "Named custodian releases funds against objective documented milestones",
+                        "Vague milestones permit strategic withholding or premature distributions",
+                        "Signed milestone definitions and evidence of each completed condition",
+                    ],
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Lock authority and settlement terms",
+                    "action": "Obtain signed payer, creditor, and custodian instructions.",
+                    "detail": (
+                        "Specify amounts, beneficiaries, expense allocation, fee base, "
+                        "release conditions, and the process for changing bank details."
+                    ),
+                },
+                {
+                    "step": 2,
+                    "title": "Verify receipt without relying on screenshots",
+                    "action": "Match bank or custodian evidence to the matter ledger.",
+                    "detail": (
+                        "Confirm payer identity, payment reference, account ownership, "
+                        "transaction status, and rail-specific return or restraint exposure."
+                    ),
+                },
+                {
+                    "step": 3,
+                    "title": "Reconcile the contractual and statutory waterfall",
+                    "action": "Have a second reviewer approve the distribution calculation.",
+                    "detail": (
+                        "Separate client proceeds, earned fees, permitted reimbursements, "
+                        "counsel charges, and disputed amounts; resolve differences first."
+                    ),
+                },
+                {
+                    "step": 4,
+                    "title": "Disburse and complete the required satisfaction record",
+                    "action": "Send approved distributions and document the judgment update.",
+                    "detail": (
+                        "Retain confirmations and statements, meet applicable satisfaction "
+                        "deadlines, and close or revise monitoring only after verification."
+                    ),
+                },
+            ],
+        },
+        {
+            "heading": "3. Protect earned fees without confusing custody, legal fees, or revenue",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "Fee protection starts in the creditor engagement, not with secret "
+                    "control over debtor money. Define the covered judgment, recoveries "
+                    "included in the fee base, treatment of interest and costs, fee "
+                    "earning event, direct-payment reporting duty, termination mechanics, "
+                    "and any lawful, narrowly defined post-termination entitlement. "
+                    "Specify whether a fee arises on cleared cash, property actually "
+                    "received, or another measurable event; avoid billing on a settlement "
+                    "promise that may never perform. Require the creditor to notify "
+                    "the operator promptly when a debtor pays directly, and provide "
+                    "reasonable statement access to reconcile covered receipts. An "
+                    "enforceable payment direction acknowledged by the authorized custodian "
+                    "can reduce diversion, but it cannot override statutory priorities, "
+                    "trust duties, or another party's superior rights. Do not invent "
+                    "a lien merely by naming one in an invoice. Counsel should assess "
+                    "any assignment, security arrangement, or contractual remedy under "
+                    "the applicable law. Keep attorney compensation separate from the "
+                    "operator's lawful recovery-service compensation: a commercial "
+                    "agreement cannot authorize prohibited sharing of legal fees with "
+                    "nonlawyers. If the licensed and ethical structure cannot support "
+                    "the proposed contingent arrangement, redesign the permitted service "
+                    "scope and pricing rather than routing payments through an intermediary "
+                    "to conceal the same economics."
+                ),
+                (
+                    "Reconcile the scorecard using service revenue only. For an illustrative "
+                    "portfolio with a uniform, legally permitted 25% service fee, the "
+                    "Conservative case requires $240,000 of annual client recoveries to "
+                    "produce $60,000 of recognized operator revenue. Deduct $48,000 of "
+                    "modeled operating expenses to obtain $12,000 annual owner net profit, "
+                    "a 20% margin, with 1 FT + 3 C. The Base case requires "
+                    "$1,120,000 of recoveries to produce $280,000 revenue; $196,000 of "
+                    "expenses leaves $84,000 profit at 30.0%, again with 1 FT + 3 C. "
+                    "The Scaled case requires $2,000,000 of recoveries to produce "
+                    "$500,000 revenue; $300,000 of expenses leaves $200,000 profit "
+                    "at 40%, with 2 FT + 4 C. These collection volumes explain "
+                    "the fee bridge, not additional scorecard revenue. The fee assumption "
+                    "must be replaced wherever statutory caps or negotiated terms differ. "
+                    "Expense totals include the full modeled cost burden; contractor "
+                    "headcounts do not establish full-time compensation for every contractor. "
+                    "The stated $2,000–$12,000 monthly operating range is an initial "
+                    "planning reference, not a ceiling overriding the annual scenario "
+                    "arithmetic. Base and Scaled annual expenses require explicit capacity "
+                    "and variable-cost budgets beyond a simplistic twelve-month multiplication "
+                    "of that reference range."
+                ),
+                (
+                    "Underwrite each enforcement increment before committing portfolio capacity. "
+                    "Suppose a documented $50,000 reachable asset has a 40% probability "
+                    "of producing a full recovery after priority review, and the operator "
+                    "would earn 25% on collected cash. Expected service revenue is "
+                    "$5,000: $50,000 multiplied by 40% multiplied by 25%. If incremental "
+                    "operator-borne investigation and enforcement costs are $3,000, expected "
+                    "contribution is $2,000 before overhead, delay, and adverse outcomes. "
+                    "That estimate supports a bounded experiment, not an assertion that "
+                    "the $50,000 belongs in revenue. If a senior lien leaves only "
+                    "$10,000 reachable, the same calculation yields $1,000 expected fees "
+                    "and a $2,000 expected loss against those costs. Stop or obtain "
+                    "a genuinely different cost allocation instead of chasing sunk "
+                    "expenses. Require written authorization for third-party charges "
+                    "and clarify whether the creditor reimburses them even if recovery "
+                    "fails. Maintain separate aging for unpaid service invoices and "
+                    "uncollected debtor obligations; they have different counterparties "
+                    "and remedies. With $10,000–$75,000 startup capital and a stated "
+                    "6–24 months to first deal, liquidity discipline matters as much "
+                    "as nominal margin. Reserve enough cash for already authorized "
+                    "work, and never borrow another client's proceeds to bridge a "
+                    "slow-paying matter."
+                ),
+            ],
+            "table": {
+                "caption": "Fee Protection and Canonical Revenue Reconciliation Controls",
+                "headers": [
+                    "Mechanic or canonical scenario under review",
+                    "Specific economic calculation or contract requirement",
+                    "Evidence retained in the operating file",
+                    "Failure response protecting lawful fee collection",
+                ],
+                "rows": [
+                    [
+                        "Conservative annual service revenue and owner profit bridge",
+                        "$240,000 recoveries yield $60,000 fees less $48,000 expenses",
+                        "$12,000 owner profit at 20% margin; 1 FT + 3 C",
+                        "Exclude creditor principal from every operator revenue report",
+                    ],
+                    [
+                        "Base annual service revenue and owner profit bridge",
+                        "$1,120,000 recoveries yield $280,000 fees less $196,000 expenses",
+                        "$84,000 owner profit at 30.0% margin; 1 FT + 3 C",
+                        "Reforecast variable costs when collections timing or capacity changes",
+                    ],
+                    [
+                        "Scaled annual service revenue and owner profit bridge",
+                        "$2,000,000 recoveries yield $500,000 fees less $300,000 expenses",
+                        "$200,000 owner profit at 40% margin; 2 FT + 4 C",
+                        "Expand reconciliation controls before increasing concurrent distribution volume",
+                    ],
+                    [
+                        "Direct debtor payments made outside designated collection account",
+                        "Creditor reports covered receipts under signed engagement terms",
+                        "Bank evidence and contract matched fee calculation retained",
+                        "Invoice contractual amounts through ordinary permitted dispute procedures",
+                    ],
+                    [
+                        "Creditor termination after documented operator sourced settlement activity",
+                        "Apply only lawful specifically defined continuing fee entitlements",
+                        "Dated negotiation records and clearly executed termination provisions",
+                        "Resolve entitlement without blocking mandatory judgment satisfaction duties",
+                    ],
+                    [
+                        "Third party enforcement costs and uncertain client reimbursements",
+                        "Written expense limits identify who bears unsuccessful spending",
+                        "Vendor invoices matched against prior creditor spending authorization",
+                        "Stop additional spending when approved budget becomes exhausted",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Make diversion difficult without taking unauthorized control",
+                "body": (
+                    "Veteran operators protect fees with evidence, delegated authority, "
+                    "and reconciled receipts rather than aggressive language unsupported "
+                    "by the engagement or applicable law."
+                ),
+                "items": [
+                    "Attach a sample waterfall to the engagement using a $40,000 recovery; have the creditor confirm the fee base and every expense deduction.",
+                    "Use one matter reference across settlement instructions, bank records, invoices, and satisfaction documents so direct payments remain traceable.",
+                    "Obtain current senior lien payoff information before buying another asset search; the priority subtraction can eliminate the entire recovery thesis.",
+                    "Recheck bankruptcy immediately before a levy, settlement demand, or distribution decision, and route any newly discovered filing to counsel.",
+                ],
+            },
+        },
+        {
+            "heading": "4. Price distressed recoveries and bankruptcy claims against verified distributions",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "For distressed_asset_recovery, the judgment-recovery variant is a dormant "
+                    "commercial judgment whose creditor lacks current asset intelligence or "
+                    "an economical enforcement partner. Suppose a $100,000 judgment supports "
+                    "a verified $30,000 settlement and a lawful 25% contingent service fee. "
+                    "Operator revenue is $7,500, creditor proceeds are $22,500 before "
+                    "separately agreed costs, and $1,500 of operator-borne incremental work "
+                    "leaves $6,000 contribution before overhead. The judgment's face amount "
+                    "is neither revenue nor a collectible asset estimate. Screen title "
+                    "to the claim, renewal requirements, debtor ownership, exemptions, "
+                    "senior liens, and likely enforcement expense before treating the "
+                    "opportunity as mispriced. Other variants include tax-sale overages, "
+                    "unclaimed state funds, and government surplus assets, but their "
+                    "ownership rules, solicitation restrictions, fee caps, and acquisition "
+                    "mechanics differ. Do not import the illustrative 25% rate into "
+                    "a statutory recovery program without checking its requirements. "
+                    "An asset acquisition spread also belongs in a separate investment "
+                    "model rather than the canonical service-fee scorecard. The specified "
+                    "fallback is diversification across multi-state dockets and attorney-backed "
+                    "filing partnerships where required. Diversification must preserve "
+                    "state-specific licensing and procedure; it does not mean mass "
+                    "filing against unverified debtors. Stop an uneconomic file before "
+                    "using another jurisdiction merely to repeat the same unsupported "
+                    "asset assumption."
+                ),
+                (
+                    "For chapter11_trade_claim_convenience_class_rollup, the economic payer is "
+                    "the estate or plan disbursing entity, not an operator pressuring "
+                    "the debtor outside bankruptcy. Review Schedule E/F, the claims "
+                    "register, proof of claim, underlying invoices, defenses, plan, "
+                    "disclosure statement, and distribution notices together. A scheduled "
+                    "trade balance is a lead, not proof that an undisputed allowed "
+                    "claim will receive the advertised convenience-class percentage. "
+                    "Consider a documented $10,000 claim with a supported 20% expected "
+                    "general-unsecured distribution. Purchasing it for $1,200 and "
+                    "spending $200 on diligence and transfer produces an illustrative "
+                    "$600 expected spread before overhead and time value: $2,000 "
+                    "expected proceeds less $1,400 committed cash. A downside distribution "
+                    "of 5% returns $500 and loses $900 against that same cash "
+                    "commitment. These proprietary purchase economics are separate from "
+                    "recognized recovery-service fees. Federal Rule of Bankruptcy "
+                    "Procedure 3001(e) governs relevant claim-transfer procedures, with "
+                    "different treatment depending on transfer timing and purpose. "
+                    "Check plan-specific aggregation, claim-splitting, election, and "
+                    "related-holder provisions before assuming that several purchased "
+                    "claims retain separate convenience-class benefits. If that thesis "
+                    "fails, stop affected purchases, enforce documented seller recourse "
+                    "where available, and price only supported general-unsecured "
+                    "recoveries. Seller recourse has value only when enforceable "
+                    "against a seller capable of paying."
+                ),
+                (
+                    "Bankruptcy changes the operating path immediately. Under 11 U.S.C. "
+                    "§ 362, the automatic stay generally restricts covered collection "
+                    "activity against the debtor and estate property, subject to "
+                    "statutory exceptions and court orders. A public docket alert "
+                    "should pause affected workflows for counsel review, not trigger "
+                    "a faster demand before competitors react. Section 502 addresses "
+                    "claim allowance, § 507 establishes specified priorities, and "
+                    "§ 1122 governs classification subject to its terms; none "
+                    "establishes a universal convenience-class payout. Model the actual "
+                    "plan waterfall and timing. Outside bankruptcy, refresh credit "
+                    "evidence around meaningful events: a business sale, missed "
+                    "installment, new secured borrowing, returned payment, or proposed "
+                    "release. Separate observable facts from estimates in the matter "
+                    "record. A bank receipt proves a payment event; it does not "
+                    "prove future installment capacity. A property record identifies "
+                    "recorded interests; it does not establish realizable net equity. "
+                    "Automate docket deadlines and payment reconciliation, but require "
+                    "human review when ownership, priority, or authority changes. "
+                    "Close the loop with a monthly cohort report showing recovered "
+                    "cash, earned fees, unreimbursed expenses, collection duration, "
+                    "and stopped files. That report reveals whether the enterprise "
+                    "is earning the canonical margins or simply accumulating large "
+                    "judgments and contingent expectations that never clear into "
+                    "distributable money."
+                ),
+            ],
+            "table": {
+                "caption": "Counterparty Credit, Distressed Asset, and Bankruptcy Purchase Screening",
+                "headers": [
+                    "Screening target and relevant operating exposure",
+                    "Primary evidence supporting the recovery thesis",
+                    "Unit economics or concrete rejection trigger",
+                    "Fallback preserving capital and procedural discipline",
+                ],
+                "rows": [
+                    [
+                        "Dormant commercial judgment under distressed asset recovery mandate",
+                        "Entered judgment and verified debtor settlement funding source",
+                        "$30,000 settlement generates $7,500 fees at illustrative 25%",
+                        "Diversify screened dockets using authorized attorney filing partnerships",
+                    ],
+                    [
+                        "Senior secured claims consuming apparent debtor asset equity",
+                        "Current payoff information and reviewed lien perfection documents",
+                        "$10,000 reachable value supports only $1,000 probability weighted fees",
+                        "Reject $3,000 operator borne work without improved economics",
+                    ],
+                    [
+                        "Purchased trade claim under supported general unsecured distributions",
+                        "Invoices and claims register reconciled against governing plan",
+                        "$2,000 expected proceeds less $1,400 commitment leaves $600",
+                        "Price supported distributions without assumed convenience class improvements",
+                    ],
+                    [
+                        "Convenience class purchases relying on separate claim treatment",
+                        "Plan definitions and elections reviewed for aggregation restrictions",
+                        "Prohibited splitting eliminates the assumed enhanced payout thesis",
+                        "Stop affected purchases and evaluate documented seller recourse",
+                    ],
+                    [
+                        "Installment debtor missing a scheduled authorized ACH payment",
+                        "Bank return evidence and updated verified business liquidity",
+                        "Missed payment defeats projections based solely on signed promises",
+                        "Use contractual remedies only after stay and authority review",
+                    ],
+                    [
+                        "Claim seller offering recourse for ownership or documentation defects",
+                        "Entity records and supportable evidence of seller payment capacity",
+                        "Uncollectible recourse cannot offset a defective purchased claim",
+                        "Reduce purchase price or decline unsupported seller representations",
+                    ],
+                ],
+            },
+        },
+    ],
+    "pull_quote": (
+        "A judgment names an obligation; verified authority, reachable equity, and "
+        "reconciled cash determine whether the operator earns anything."
+    ),
+    "diagram_id": "diag-04",
+    "action_checklist": [
+        "Create a three-party authority record identifying the creditor buyer, debtor funding source, and authorized settlement or release signer.",
+        "Verify judgment ownership, enforceability, bankruptcy status, local licensing, lawful data access, and lien priority before committing enforcement costs.",
+        "Choose the payment rail and authorized custodian; independently verify beneficiary instructions and document conditions for distribution and satisfaction.",
+        "Execute a fee agreement defining covered receipts, direct-payment reporting, lawful expense allocation, termination treatment, and the fee earning event.",
+        "Reconcile the $60,000, $280,000, and $500,000 service-revenue cases to $12,000, $84,000, and $200,000 annual owner profits without counting client principal.",
+        "Run separate investment underwriting for acquired assets and bankruptcy claims, including downside distributions, transfer requirements, seller recourse, and explicit stop rules.",
+    ],
+    "statutory_citations": [
+        {
+            "title": "Federal Rule of Civil Procedure 69 — Execution",
+            "url": "https://www.law.cornell.edu/rules/frcp/rule_69",
+            "relevance": (
+                "Federal money-judgment execution generally follows the procedure "
+                "of the state where the court is located unless an applicable "
+                "federal statute governs; also addresses discovery in aid of execution."
+            ),
+        },
+        {
+            "title": "15 U.S.C. § 1692a — FDCPA definitions",
+            "url": "https://www.law.cornell.edu/uscode/text/15/1692a",
+            "relevance": (
+                "Defines covered debt and debt collectors; distinguish qualifying "
+                "consumer obligations from the chapter's commercial-debt focus."
+            ),
+        },
+        {
+            "title": "15 U.S.C. § 1692f — Unfair practices",
+            "url": "https://www.law.cornell.edu/uscode/text/15/1692f",
+            "relevance": (
+                "For covered collection activity, subsection (1) restricts collection "
+                "of amounts unless expressly authorized by the agreement creating "
+                "the debt or permitted by law."
+            ),
+        },
+        {
+            "title": "11 U.S.C. § 362 — Automatic stay",
+            "url": "https://www.law.cornell.edu/uscode/text/11/362",
+            "relevance": (
+                "Requires immediate assessment of stay restrictions before covered "
+                "collection, enforcement, or property-control activity continues "
+                "after a bankruptcy filing."
+            ),
+        },
+        {
+            "title": "11 U.S.C. § 502 — Allowance of claims or interests",
+            "url": "https://www.law.cornell.edu/uscode/text/11/502",
+            "relevance": (
+                "Supports claim diligence focused on objections, allowance, and "
+                "disallowance rather than treating every scheduled balance as "
+                "an assured distribution entitlement."
+            ),
+        },
+        {
+            "title": "11 U.S.C. § 507 — Priorities",
+            "url": "https://www.law.cornell.edu/uscode/text/11/507",
+            "relevance": (
+                "Identifies statutory priority categories relevant to modeling "
+                "the distribution available to purchased trade claims."
+            ),
+        },
+        {
+            "title": "11 U.S.C. § 1122 — Classification of claims or interests",
+            "url": "https://www.law.cornell.edu/uscode/text/11/1122",
+            "relevance": (
+                "Addresses classification and permits a separate class of qualifying "
+                "small unsecured claims for administrative convenience subject to "
+                "its requirements; does not promise a particular payout."
+            ),
+        },
+        {
+            "title": "Federal Rule of Bankruptcy Procedure 3001(e) — Transferred claims",
+            "url": "https://www.law.cornell.edu/rules/frbp/rule_3001",
+            "relevance": (
+                "Sets claim-transfer procedures that vary with timing and transfer "
+                "type; incorporate required evidence, notice, and objection handling "
+                "into acquired-claim operations."
+            ),
+        },
+        {
+            "title": "California Code of Civil Procedure § 695.221 — Allocation of receipts",
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=695.221.",
+            "relevance": (
+                "Provides a state-specific allocation rule for money received in "
+                "satisfaction of a money judgment; apply the governing statutory "
+                "allocation before discretionary internal ledger preferences."
+            ),
+        },
+        {
+            "title": "California Code of Civil Procedure § 724.010 — Satisfaction of judgment",
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=724.010.",
+            "relevance": (
+                "Addresses satisfaction through payment or creditor acceptance of "
+                "a lesser sum and the associated acknowledgment requirement, "
+                "subject to the statute's terms."
+            ),
+        },
+    ],
+}

@@ -1,0 +1,786 @@
+from __future__ import annotations
+
+CHAPTER_8 = {
+    "id": "Q8",
+    "chapter_id": "Q8",
+    "chapter_number": 8,
+    "question_number": 8,
+    "slug": "public-records-apis-data-pipelines-operator-tooling",
+    "question_prompt": "Which exact public registries, government databases, commercial APIs, enrichment waterfalls, and diagnostic tools give a small judgment recovery desk an unfair information edge?",
+    "kicker": "Q8 / THE BIG MONEY PLAYBOOKS",
+    "title": "Public Records, APIs, Data Pipelines & Operator Tooling",
+    "subtitle": "PACER, UCC Searches, County Recorders, Entity Resolution, Bankruptcy Stops, and Evidence-Linked Recovery Queues",
+    "layout_template": "resource_directory",
+    "reading_time_minutes": 14,
+    "executive_summary": (
+        "Candidate #8, Judgment Recovery, ranks #15 with a 77/100 Money-to-Manpower "
+        "Score. Its information advantage comes from joining court events, entity "
+        "identifiers, recorded liens, and payment evidence without confusing a "
+        "search result with an executable recovery. This chapter connects 15 mapped "
+        "plays to a source-ranked research waterfall, an evidence-preserving pipeline, "
+        "and a tightly bounded tax-credit origination adjacency. The canonical annual "
+        "owner profit cases are $12,000 Conservative, $84,000 Base, and $200,000 Scaled; "
+        "recognized service fees, never judgment balances or client asset values, "
+        "drive those cases. Buy fewer speculative reports, refresh critical records "
+        "at the moment of action, and route disputed identity, bankruptcy, priority, "
+        "and credit eligibility questions to the appropriate specialist before money "
+        "or process moves."
+    ),
+    "key_metrics": [
+        {
+            "label": "Conservative",
+            "value": "$60,000",
+            "context": "Annual recognized recovery service fees; excludes client collections and judgment principal.",
+            "note": "20% net margin; $12,000 annual owner net profit; 1 FT + 3 C.",
+        },
+        {
+            "label": "Base",
+            "value": "$280,000",
+            "context": "Annual recognized recovery service fees; excludes client collections and judgment principal.",
+            "note": "30.0% net margin; $84,000 annual owner net profit; 1 FT + 3 C.",
+        },
+        {
+            "label": "Scaled",
+            "value": "$500,000",
+            "context": "Annual recognized recovery service fees; excludes client collections and judgment principal.",
+            "note": "40% net margin; $200,000 annual owner net profit; 2 FT + 4 C, six people.",
+        },
+    ],
+    "sections": [
+        {
+            "heading": "1. Build a source-ranked registry desk, not a bulk people-search operation",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Start every commercial judgment file with the rendered judgment, "
+                    "complete party caption, court identifier, entry date, remaining "
+                    "balance, and documented authority to act. A docket search is "
+                    "discovery; the filed instrument and applicable court rules "
+                    "determine what happened. PACER Case Locator identifies federal "
+                    "cases, while the originating court supplies the operative docket "
+                    "and documents. State trial courts, county recorders, secretaries "
+                    "of state, and UCC filing offices answer different questions and "
+                    "must remain separate evidence classes. An assessor record suggests "
+                    "a parcel relationship, not current title or reachable equity. A "
+                    "registered agent provides a service address, not ownership proof. "
+                    "A UCC filing identifies a claimed security interest, not the "
+                    "current payoff balance or a complete priority opinion. Save the "
+                    "original response, retrieval time, source identifier, query terms, "
+                    "and document hash before extracting fields. Maintain the exact "
+                    "debtor name alongside normalized aliases; normalization must never "
+                    "rewrite the legal caption. For each promising asset, require a "
+                    "second authoritative record connecting the debtor to that asset. "
+                    "A similarly named company, household member, or shared mailing "
+                    "address is a research lead, never a substitute for that connection."
+                ),
+                (
+                    "Use the directory below as an access plan, not a claim that "
+                    "every portal offers unrestricted automation. Public visibility "
+                    "does not create permission to bypass authentication, CAPTCHAs, "
+                    "session controls, or contractual limits. Prefer documented APIs, "
+                    "licensed feeds, and official bulk downloads; otherwise assign "
+                    "a human retrieval task. Source publication latency and your "
+                    "polling interval are separate fields. A nightly collector cannot "
+                    "make a delayed recorder index current, and a five-minute refresh "
+                    "does not prove that a bankruptcy petition has appeared in a "
+                    "nationwide locator. The listed refresh intervals are desk targets, "
+                    "not vendor delivery promises. Confirm current charges, coverage, "
+                    "and contractual limits before purchasing access. Cache stable "
+                    "documents by identifier, use conditional requests where supported, "
+                    "and honor Retry-After responses. For SEC resources, identify the "
+                    "organization and contact in the User-Agent and remain below the "
+                    "published aggregate request ceiling. For portals without a "
+                    "published automation policy, use manual retrieval or obtain "
+                    "written access terms. Never rotate identities or network "
+                    "addresses to defeat a restriction. Record restricted access as "
+                    "an operational exception and move to the named fallback rather "
+                    "than silently treating missing results as clean records."
+                ),
+                (
+                    "Organize the chapter's 15 mapped plays as explicit work queues: "
+                    "judgment intake verification, debtor identity resolution, entity "
+                    "status monitoring, bankruptcy screening, judgment deadline "
+                    "tracking, lien discovery, priority review, parcel research, "
+                    "business activity verification, receivable lead discovery, "
+                    "attorney enforcement packaging, assignment chain verification, "
+                    "payment reconciliation, collection cost triage, and "
+                    "transferable_tax_credit_brokerage_syndication. The first fourteen "
+                    "are operational applications within this recovery desk; the "
+                    "fifteenth is a separately controlled origination adjacency. "
+                    "Each queue needs an input document, a decisive question, an "
+                    "authorized operator, and an exit condition. For example, ten "
+                    "judgments with $100,000 face amounts create $1 million of "
+                    "claimed principal, not $1 million of operator revenue. If "
+                    "one matter produces a $20,000 collected payment and an earned "
+                    "25% fee, recognized service revenue is $5,000 under that "
+                    "illustrative contract. The remaining $15,000 belongs in client "
+                    "settlement accounting, subject to documented expenses and "
+                    "disbursement terms. Do not assign an expected recovery merely "
+                    "because a directory returns a property hit. First resolve "
+                    "identity, available equity, enforceability, exemptions, competing "
+                    "claims, and the cost of obtaining executable evidence. This "
+                    "ordering prevents a cheap search from creating an expensive "
+                    "and unsupported enforcement theory."
+                ),
+            ],
+            "table": {
+                "caption": "Eighteen named sources: access route, cost tier, refresh target, request discipline, and fallback",
+                "headers": [
+                    "Resource and exact access route",
+                    "Evidence and permitted research purpose",
+                    "Cost tier and purchase discipline",
+                    "Publication latency and desk refresh",
+                    "Rate-limit and access hygiene",
+                    "Fallback evidence retrieval route",
+                ],
+                "rows": [
+                    [
+                        "PACER Case Locator: authenticated searches through pcl.uscourts.gov.",
+                        "Locate federal civil and bankruptcy case identifiers before opening originating records.",
+                        "Generally $0.10 per page; quarterly usage of $30 or less is waived.",
+                        "Locator updates generally occur nightly; recheck originating courts before consequential action.",
+                        "Use registered access and supported search methods; avoid speculative nationwide query loops.",
+                        "Search the relevant court directly and verify uncertain results with its clerk.",
+                    ],
+                    [
+                        "Federal CM/ECF: follow originating court links from pacer.uscourts.gov.",
+                        "Retrieve docket entries, bankruptcy petitions, orders, and operative filed instruments.",
+                        "PACER document caps generally apply; transcripts and some reports have different treatment.",
+                        "Entries follow court processing; inspect current dockets immediately before enforcement instructions.",
+                        "Cache purchased documents and request targeted docket ranges rather than repeated full reports.",
+                        "Obtain clerk-issued copies when online documents are unavailable or certification is required.",
+                    ],
+                    [
+                        "CourtListener and RECAP: courtlistener.com search and documented REST API.",
+                        "Find contributed federal documents and docket leads without treating archive gaps as clearance.",
+                        "Free public browsing; API capacity and advanced access follow current account terms.",
+                        "Archive coverage depends on acquisition; compare every decisive event with court records.",
+                        "Use account credentials, contractual quotas, caching, and backoff on throttled responses.",
+                        "Purchase the specific missing document from its originating PACER court.",
+                    ],
+                    [
+                        "New York eCourts and NYSCEF: enter through official nycourts.gov services.",
+                        "Inspect covered state matters, appearances, filings, and case-status changes.",
+                        "Public searches generally cost nothing; certified documents follow court copy charges.",
+                        "Publication follows clerk processing and coverage; refresh active matters each business day.",
+                        "Use authorized portal searches; do not automate challenges or authenticated session restrictions.",
+                        "Contact the relevant county clerk for missing filings and certified judgment records.",
+                    ],
+                    [
+                        "California bizfile: business entity searches through bizfileonline.sos.ca.gov.",
+                        "Resolve entity numbers, status, filed names, and registered agent information.",
+                        "Public entity lookup is free; document and certification products follow posted charges.",
+                        "Filing updates depend on processing; refresh names and status before service planning.",
+                        "Use supported searches and downloads; request authorized bulk options before scaling.",
+                        "Order official entity records directly from the California Secretary of State.",
+                    ],
+                    [
+                        "California UCC Connect: follow UCC search links from sos.ca.gov.",
+                        "Identify indexed financing statements, amendments, continuations, and termination filings.",
+                        "Search and copy products carry published state charges; price each requested product.",
+                        "Indexing follows filing processing; obtain current searches for consequential priority review.",
+                        "Search exact legal names and authorized variants without high-volume blind enumeration.",
+                        "Order certified filing-office searches and copies through an authorized search provider.",
+                    ],
+                    [
+                        "Los Angeles Recorder: property-record access instructions at lavote.gov.",
+                        "Retrieve recorded deeds, abstracts, releases, and other indexed property instruments.",
+                        "Search access and copy charges vary by channel; certified copies incur posted fees.",
+                        "Recording and indexing differ; obtain recent instrument coverage before relying on ownership.",
+                        "Use permitted office, mail, or online channels rather than assuming open bulk access.",
+                        "Commission a title search and obtain recorder-certified copies of decisive instruments.",
+                    ],
+                    [
+                        "Los Angeles Assessor: parcel lookup through portal.assessor.lacounty.gov.",
+                        "Identify parcel numbers, assessed attributes, and leads requiring recorder corroboration.",
+                        "Public parcel lookup is free; separately ordered record products may carry charges.",
+                        "Assessment data follows office update cycles; refresh promising parcels before ordering title.",
+                        "Use parcel-focused requests and published access methods; avoid unrestricted owner harvesting.",
+                        "Cross-check parcel identity through county maps, recorder instruments, and title records.",
+                    ],
+                    [
+                        "SEC EDGAR: company submissions at data.sec.gov and filings at sec.gov.",
+                        "Verify issuer identity, subsidiaries, disclosed litigation, and reported business assets.",
+                        "Public SEC submissions and filings are free; budget only processing and review.",
+                        "Filings publish after acceptance; monitor relevant issuers daily and inspect filing dates.",
+                        "Identify organization and contact; use two requests per second below SEC's ten ceiling.",
+                        "Download the original filing from EDGAR and inspect exhibits directly.",
+                    ],
+                    [
+                        "FMCSA SAFER: Company Snapshot search at safer.fmcsa.dot.gov.",
+                        "Corroborate motor-carrier identifiers, operating names, addresses, and recorded operating status.",
+                        "Public Company Snapshot searches are free; licensed enrichment remains a separate purchase.",
+                        "Displayed fields have different update cycles; preserve the shown dates with each result.",
+                        "Use targeted USDOT searches and supported datasets; avoid aggressive portal scraping.",
+                        "Check FMCSA licensing records and official company filings for corroborating identifiers.",
+                    ],
+                    [
+                        "SAM.gov: public search and documented APIs through open.gsa.gov.",
+                        "Identify entity registration identifiers and relevant federal contracting leads.",
+                        "Public access is free; API keys and account-based quotas govern programmatic retrieval.",
+                        "Publication varies by dataset; inspect metadata and refresh relevant entities weekly.",
+                        "Use the required key, endpoint pagination, and the quota assigned to the account.",
+                        "Retrieve the public SAM record manually and corroborate with agency award documents.",
+                    ],
+                    [
+                        "USAspending: award searches and documented endpoints at api.usaspending.gov.",
+                        "Discover award relationships without equating award ceilings with collectible receivables.",
+                        "Public search, downloads, and documented API access are free to use.",
+                        "Agency reporting and corrections create lag; inspect reporting periods before outreach.",
+                        "Paginate bounded queries, cache award identifiers, and reduce concurrency after throttling.",
+                        "Use agency award documents and lawful discovery to establish actual payment rights.",
+                    ],
+                    [
+                        "LexisNexis Accurint: credentialed portal or separately contracted integration.",
+                        "Corroborate licensed business and identity leads within an approved permissible purpose.",
+                        "Subscription and report pricing require a written quote and per-matter spend limits.",
+                        "Underlying sources update differently; preserve source dates rather than assuming live accuracy.",
+                        "Use named seats, permitted purposes, audit logs, and contracted query limits.",
+                        "Return to official entity records, recorded instruments, and authorized service research.",
+                    ],
+                    [
+                        "TransUnion TLOxp: approved account access through the contracted customer portal.",
+                        "Resolve licensed identity and business associations while separating leads from verified facts.",
+                        "Contracted subscription or transaction pricing requires approval before each expanded search package.",
+                        "Refresh varies by contributing source; verify consequential findings against original records.",
+                        "Enforce individual credentials, permitted uses, export restrictions, and the provider's request limits.",
+                        "Obtain corroborating court, recorder, and entity documents through lawful public channels.",
+                    ],
+                    [
+                        "OpenCorporates: company search and documented API at api.opencorporates.com.",
+                        "Generate cross-jurisdiction entity leads while preserving each linked source registry.",
+                        "Public browsing and licensed API products differ; select terms matching commercial use.",
+                        "Registry ingestion can lag source filings; inspect source timestamps before reliance.",
+                        "Use the licensed token, assigned limits, pagination, and reusable entity identifiers.",
+                        "Retrieve current records directly from the originating official company registry.",
+                    ],
+                    [
+                        "PJM interconnection queue: queue pages and downloads at pjm.com.",
+                        "Find project-development leads; queue position alone establishes neither completion nor credit eligibility.",
+                        "Public queue resources are free; technical diligence requires separate specialist spending.",
+                        "Updates follow PJM publication; retain snapshot dates and review changes weekly.",
+                        "Prefer published downloads and permitted access; avoid repeatedly crawling individual project pages.",
+                        "Ask the developer for interconnection agreements and corroborate with utility records.",
+                    ],
+                    [
+                        "EPA RE-Powering America's Land: published resources through epa.gov/re-powering.",
+                        "Identify redevelopment-site leads without treating screening data as a tax-credit registry.",
+                        "Public maps and published datasets are free; site-specific verification remains separately budgeted.",
+                        "Dataset releases determine freshness; record the release date and inspect project status directly.",
+                        "Download published datasets once per release and obey mapping-service usage restrictions.",
+                        "Consult the relevant state environmental agency and developer-provided site documentation.",
+                    ],
+                    [
+                        "Georgia film incentives: program records and guidance through georgia.org and dor.georgia.gov.",
+                        "Identify program participants and verify current state credit certification and transfer requirements.",
+                        "Public guidance is free; records requests and transaction diligence can create additional charges.",
+                        "Program lists and certification events differ; verify seller-specific status before any pricing.",
+                        "Use published materials and lawful records requests rather than assuming a public allocation API.",
+                        "Obtain seller authorizations, state-issued documents, and direct program-office verification.",
+                    ],
+                ],
+            },
+        },
+        {
+            "heading": "2. Turn registry hits into an evidence-preserving enrichment waterfall",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Implement the waterfall with PostgreSQL for structured case data, "
+                    "encrypted object storage for documents, and a scheduler such as "
+                    "systemd timers or a managed job runner. A small desk does not "
+                    "need a distributed crawler to handle hundreds of active "
+                    "judgments. Separate matters, parties, identifiers, assets, "
+                    "instruments, observations, deadlines, and cash events into "
+                    "different records. Give every observation a source URL, source "
+                    "record key, retrieved_at timestamp, effective date when "
+                    "available, parser version, content hash, and access-purpose "
+                    "reference. Preserve raw files separately from extracted text. "
+                    "Hash the original bytes with SHA-256; hashing only normalized "
+                    "text loses the ability to identify an altered original. OCR "
+                    "with Tesseract can make scanned judgments searchable, but an "
+                    "operator must verify debtor names, amounts, dates, and decretal "
+                    "language against the image. Store money as integer cents and "
+                    "record currencies explicitly. Retain exact court identifiers "
+                    "including leading zeros and punctuation. Use stable source "
+                    "keys for idempotent ingestion so a repeated download creates "
+                    "a fresh observation without duplicating the instrument. A "
+                    "document correction should supersede an earlier interpretation, "
+                    "not erase the earlier record or its review history."
+                ),
+                (
+                    "Resolve identity before buying broader enrichment. Begin with "
+                    "the judgment caption and entity number, then compare formation "
+                    "jurisdiction, historical names, service records, and business "
+                    "addresses. Match a business using identifiers and corroborating "
+                    "documents rather than name similarity alone. Keep individual "
+                    "guarantors separate from corporate defendants; an owner's "
+                    "relationship to a company does not automatically make their "
+                    "assets available for the company's debt. Route ambiguous "
+                    "matches into manual review and prohibit automated enforcement "
+                    "exports from that queue. The Fair Credit Reporting Act treats "
+                    "permissible purpose as a substantive condition, including "
+                    "collection-related access only where the statutory conditions "
+                    "apply; a commercial judgment does not itself authorize every "
+                    "consumer report. Likewise, motor vehicle personal information "
+                    "requires an applicable Driver's Privacy Protection Act "
+                    "exception, not merely a useful investigative purpose. Restrict "
+                    "Accurint or TLOxp access to contracted uses, individual accounts, "
+                    "and retained purpose records. Never pretext a bank, employer, "
+                    "or relative to obtain protected information. If a licensed "
+                    "report produces only an address association, return to original "
+                    "records or attorney-directed discovery. The correct fallback "
+                    "for an unresolved person match is a narrower research task, "
+                    "not a larger automated contact campaign."
+                ),
+                (
+                    "Instrument the pipeline around false positives and missed "
+                    "events, not just successful HTTP responses. A login page "
+                    "returned with status 200 is not a valid docket response. "
+                    "Validate content type, expected record identifiers, pagination "
+                    "totals, and required fields before accepting an extract. "
+                    "Maintain redacted fixtures for a normal result, empty result, "
+                    "restricted response, amended filing, duplicate debtor name, "
+                    "and scanned document. Python unittest, sqlite3 scratch "
+                    "databases, and structured logging provide enough diagnostics "
+                    "for the first production version. Add exponential backoff "
+                    "with jitter, a bounded retry count, and a manual exception "
+                    "queue; authentication failures should stop that connector "
+                    "rather than trigger repeated login attempts. A weekly review "
+                    "should sample ten accepted matches and every rejected "
+                    "critical event, measuring incorrect joins and stale records. "
+                    "Track cost per verified lead, not cost per returned row. "
+                    "For example, fifty $4 reports cost $200; if only five produce "
+                    "verified new asset leads, acquisition cost is $40 per "
+                    "verified lead before labor. If ten review hours cost an "
+                    "assumed $35 each, the combined cost rises to $110 per "
+                    "verified lead. Stop the purchase tier when that evidence "
+                    "does not improve expected net recovery."
+                ),
+            ],
+            "table": {
+                "caption": "Six diagnostic controls that prevent cheap data from becoming expensive mistakes",
+                "headers": [
+                    "Failure mode and diagnostic tool",
+                    "Required evidence retained by the pipeline",
+                    "Acceptance test before downstream use",
+                    "Fallback and accountable operator action",
+                ],
+                "rows": [
+                    [
+                        "HTTP client receives an apparently successful login page instead of records.",
+                        "Retain status, content type, redirected URL, and a redacted response sample.",
+                        "Expected source identifier and record markers must appear in the parsed response.",
+                        "Suspend the connector and assign credential review to the authorized account holder.",
+                    ],
+                    [
+                        "Tesseract OCR misreads an entry date or judgment amount.",
+                        "Keep original image, OCR output, page coordinates, and reviewer correction history.",
+                        "A human compares every operative amount and date against the filed image.",
+                        "Request a clearer court copy before calculating balances or deadline tasks.",
+                    ],
+                    [
+                        "Entity matching joins two unrelated businesses sharing a similar name.",
+                        "Retain formation jurisdiction, entity number, name history, and supporting source documents.",
+                        "Require corroborating identifiers before linking an asset to the judgment debtor.",
+                        "Separate candidate entities and send the disputed link to manual research.",
+                    ],
+                    [
+                        "Pagination stops early and silently drops later docket entries.",
+                        "Store request cursors, returned counts, source totals, and terminal-page evidence.",
+                        "Collected pages must reconcile with available counts and documented endpoint behavior.",
+                        "Retrieve the missing range manually and repair the connector fixture.",
+                    ],
+                    [
+                        "A repeated import duplicates an earned fee or client payment.",
+                        "Preserve bank transaction identifier, matter allocation, import batch, and reconciliation history.",
+                        "Stable event keys prevent duplicate posting while preserving legitimate separate payments.",
+                        "Quarantine conflicting entries and require bookkeeper review before any disbursement.",
+                    ],
+                    [
+                        "A restored database cannot locate the documents supporting its conclusions.",
+                        "Maintain encrypted backups, object references, document hashes, and restoration audit records.",
+                        "A monthly sample restoration must open documents and reproduce their recorded hashes.",
+                        "Repair retention or backup configuration before accepting additional unattended ingestion.",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Buy decisive evidence, not larger piles of search results",
+                "body": "Experienced recovery operators spend on the document that changes the next lawful action.",
+                "items": [
+                    "Purchase the actual assignment, release, or continuation instrument when an index entry changes apparent priority; the index label rarely settles scope.",
+                    "Search historical legal names and formation jurisdictions before paying for another broad enrichment report on the same debtor.",
+                    "Retain negative-search scope, query terms, and retrieval time; an empty county search is not evidence that every jurisdiction is clear.",
+                    "Build the attorney packet around source-linked facts and unresolved questions, so counsel does not bill to reconstruct your research trail.",
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Anchor the matter",
+                    "action": "Register the judgment, authority documents, exact parties, and court identifiers.",
+                    "detail": "Verify the filed image and separate principal, interest, costs, prior receipts, and disputed amounts.",
+                },
+                {
+                    "step": 2,
+                    "title": "Run the low-cost source tier",
+                    "action": "Check originating dockets, entity records, bankruptcy indicators, and relevant recorder indexes.",
+                    "detail": "Preserve original responses and define the exact unresolved question before buying enrichment.",
+                },
+                {
+                    "step": 3,
+                    "title": "Escalate only decisive gaps",
+                    "action": "Order a licensed report, certified search, title work, or attorney-directed discovery.",
+                    "detail": "Record permissible purpose, expected decision value, spending ceiling, and the responsible reviewer.",
+                },
+                {
+                    "step": 4,
+                    "title": "Publish a bounded action packet",
+                    "action": "Export verified facts, source documents, freshness timestamps, and unresolved exceptions.",
+                    "detail": "Require current bankruptcy and authority checks before enforcement instructions or client disbursements.",
+                },
+            ],
+        },
+        {
+            "heading": "3. Convert court events and payment evidence into controlled operator economics",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "Deadline tracking begins with jurisdiction-specific rules, not "
+                    "a universal judgment expiration formula. Store the triggering "
+                    "event, applicable authority, counting convention, review owner, "
+                    "and supporting document for each renewal, response, or "
+                    "enforcement task. Under Federal Rule of Civil Procedure 69, "
+                    "execution generally follows the procedure of the state where "
+                    "the federal court sits unless a federal statute applies. "
+                    "That makes state-specific templates essential even inside "
+                    "one federal docket connector. California Code of Civil "
+                    "Procedure section 683.020 provides a useful example of a "
+                    "ten-year enforceability framework, but exceptions, renewal "
+                    "rules, stays, and the particular judgment still require "
+                    "review. A bankruptcy petition can trigger 11 U.S.C. section "
+                    "362 before a search aggregator reflects it. Screen at "
+                    "intake, monitor active matters, and repeat the check "
+                    "immediately before consequential enforcement activity. Upon "
+                    "credible bankruptcy notice, pause affected collection tasks "
+                    "and obtain counsel's assessment of the debtor, property, "
+                    "claim, and any applicable order. Do not automatically "
+                    "resume after dismissal, discharge, or a vendor status "
+                    "change. The system should generate a review task with "
+                    "the underlying court event, preserving a visible record "
+                    "of who authorized the next step and why."
+                ),
+                (
+                    "Payment reconciliation is the second high-value automation "
+                    "lever because cash errors destroy both margin and client "
+                    "trust. Import bank transactions through an authorized "
+                    "bank feed or controlled statement export, match receipts "
+                    "to matters, and hold ambiguous matches outside the "
+                    "disbursement queue. Record gross receipts, earned service "
+                    "fees, reimbursable expenses, client payable balances, and "
+                    "reversals separately. Do not calculate distributable money "
+                    "from a dashboard total that includes uncleared deposits. "
+                    "The illustrative $20,000 receipt with a 25% earned fee "
+                    "produces $5,000 of operator revenue, not $20,000, and "
+                    "does not justify recognizing the entire unpaid judgment. "
+                    "Apply the actual contract, accounting policy, and relevant "
+                    "custody requirements. If counsel holds client money, "
+                    "reconcile your matter ledger to counsel's remittance "
+                    "statement rather than assuming your own operating account "
+                    "should receive it. A daily exception report should flag "
+                    "duplicate payment identifiers, receipts without matters, "
+                    "fees exceeding agreed terms, stale checks, and transfers "
+                    "without supporting settlement instructions. Require a "
+                    "second person to verify changed payment destinations "
+                    "through a previously established contact channel. Keep "
+                    "bank credentials outside source-control files and limit "
+                    "each integration to the minimum access needed for its "
+                    "specific reconciliation function."
+                ),
+                (
+                    "Reconcile the desk to the canonical scenarios before "
+                    "approving more subscriptions. Conservative recognizes "
+                    "$60,000 of annual service fees, incurs $48,000 of "
+                    "all-in costs, and leaves $12,000 owner net profit at "
+                    "20% with 1 FT + 3 C. Base recognizes $280,000, "
+                    "incurs $196,000, and leaves $84,000 at 30.0% with "
+                    "1 FT + 3 C. Scaled recognizes $500,000, incurs "
+                    "$300,000, and leaves $200,000 at 40% with 2 FT "
+                    "+ 4 C. Contractors are staffing capacity, not an "
+                    "assumption that everyone works full time. The stated "
+                    "$2,000–$12,000 monthly operating range is not a cap "
+                    "on total scenario expenses; modeled all-in costs also "
+                    "need to absorb applicable labor, case costs, and "
+                    "other delivery expenses without double counting. At "
+                    "an illustrative $5,000 earned fee per completed "
+                    "matter, the revenue cases require 12, 56, and "
+                    "100 fee-producing matters respectively. These are "
+                    "capacity equivalents, not predicted collections. A "
+                    "$300 research package on a $5,000 fee opportunity "
+                    "consumes 6% of the fee before enforcement expense "
+                    "and labor. If verified equity disappears or senior "
+                    "claims consume likely proceeds, stop incremental "
+                    "spending rather than trying to rescue sunk research "
+                    "costs with a more aggressive collection tactic."
+                ),
+            ],
+            "table": {
+                "caption": "Six operating controls tied to deadlines, collections, and exact scenario economics",
+                "headers": [
+                    "Operating decision or scenario",
+                    "Concrete unit calculation and evidence",
+                    "Required control before committing resources",
+                    "Failure response and recovery path",
+                ],
+                "rows": [
+                    [
+                        "Conservative desk operates with one full-time person and three contractors.",
+                        "$60,000 recognized fees minus $48,000 all-in costs equals $12,000 owner profit.",
+                        "Maintain the exact 20% margin and exclude client receipts from operator revenue.",
+                        "Reduce optional data purchases when verified collection opportunities cannot support their cost.",
+                    ],
+                    [
+                        "Base desk retains one full-time person and three contractors.",
+                        "$280,000 recognized fees minus $196,000 all-in costs equals $84,000 owner profit.",
+                        "Maintain the exact 30.0% margin while tracking case expenses and contractor utilization.",
+                        "Reprice or stop weak matters instead of assuming unpaid principal funds overhead.",
+                    ],
+                    [
+                        "Scaled desk uses two full-time people and four contractors.",
+                        "$500,000 recognized fees minus $300,000 all-in costs equals $200,000 owner profit.",
+                        "Maintain the exact 40% margin with six people and controlled evidence queues.",
+                        "Add capacity only after verified workload and realized fees support recurring commitments.",
+                    ],
+                    [
+                        "A bankruptcy signal appears before scheduled enforcement instructions.",
+                        "Preserve the petition, case identifier, notice time, and affected debtor relationship.",
+                        "Pause affected work and obtain counsel's review of stay scope and court orders.",
+                        "Resume only on documented authority rather than an automated vendor status change.",
+                    ],
+                    [
+                        "A client receipt arrives with an unclear matter reference.",
+                        "Hold the receipt unmatched while preserving bank identifiers and the remittance evidence.",
+                        "Reconcile earned fees and client payables before publishing any disbursement instruction.",
+                        "Ask the authorized sender for clarification and retain the resolution audit trail.",
+                    ],
+                    [
+                        "A promising property hit carries substantial competing secured claims.",
+                        "Compare supported asset value with senior balances, exemptions, sale costs, and uncertainty.",
+                        "Obtain current title evidence and counsel's priority analysis before funding enforcement.",
+                        "Archive the evidence and revisit only after a material change improves reachable value.",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Four pre-flight checks before the desk creates external consequences",
+                "body": "A source-linked packet must pass all four checks before enforcement instructions, paid escalation, or disbursement.",
+                "items": [
+                    "Verify the exact judgment debtor, current creditor, assignment chain, and authority of the person directing the matter.",
+                    "Refresh bankruptcy and relevant court records; resolve credible stay or discharge signals with counsel before affected activity.",
+                    "Confirm jurisdiction-specific licensing, enforcement procedure, exemptions, and each paid data product's permitted purpose.",
+                    "Reconcile available evidence, expected case costs, earned fee terms, client money treatment, and verified payment destinations.",
+                ],
+            },
+        },
+        {
+            "heading": "4. Separate tax-credit origination intelligence from credit ownership and recovery proceeds",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "The mapped play "
+                    "transferable_tax_credit_brokerage_syndication uses project "
+                    "intelligence to find potential sellers, but its data model "
+                    "must remain separate from judgment enforcement. Do not "
+                    "describe DOE or EPA as nationwide interconnection queue "
+                    "operators. DOE-funded Berkeley Lab queue research aggregates "
+                    "project information, while regional grid operators and "
+                    "utilities maintain their respective queues; EPA redevelopment "
+                    "datasets identify sites, not transferable tax credits. Use "
+                    "PJM downloads, Berkeley Lab's Queued Up research, EPA "
+                    "RE-Powering resources, state film-office publications, and "
+                    "state historic-preservation records as lead sources only. "
+                    "Confirm whether a project exists, who owns the eligible "
+                    "taxpayer entity, whether construction or production milestones "
+                    "were satisfied, and whether the relevant credit is actually "
+                    "transferable. A queue application, film listing, historic "
+                    "designation, or brownfield address proves none of those "
+                    "conclusions by itself. Public records may also omit "
+                    "private project ownership changes and current credit "
+                    "allocations. Obtain seller authorization and original "
+                    "eligibility documents before sending a buyer any "
+                    "transaction-specific representation. Keep recovery-client "
+                    "information out of origination outreach unless its use "
+                    "is independently authorized; a distressed developer's "
+                    "appearance in a judgment file does not make confidential "
+                    "client intelligence available for another business line."
+                ),
+                (
+                    "IRC section 6418 permits specified eligible federal credits "
+                    "to move under its conditions; it does not create a "
+                    "freely resalable bearer instrument. The transferee cannot "
+                    "subsequently transfer the purchased credit under that "
+                    "provision. Therefore, the proposed buy-low, sell-high "
+                    "economics must be structured as a direct eligible "
+                    "seller-to-buyer transfer with a documented intermediary "
+                    "fee or other properly analyzed arrangement, not an "
+                    "operator taking title and flipping the same federal "
+                    "credit. For an illustrative $100,000 eligible credit, "
+                    "an $0.85 seller realization and $0.94 buyer outlay "
+                    "create a $9,000 gross economic spread. If documented "
+                    "transaction expenses are $4,000, the remaining "
+                    "contribution is $5,000 before overhead. These are "
+                    "illustrative negotiating assumptions, not current "
+                    "quotes, insurance prices, or additions to the "
+                    "canonical recovery scenarios. When the desk acts "
+                    "as agent, recognize its earned fee under the "
+                    "applicable accounting treatment, not the $100,000 "
+                    "credit face value or the buyer's entire wire. "
+                    "Counsel and the tax specialist must allocate "
+                    "seller consideration, buyer costs, escrow "
+                    "instructions, and intermediary compensation "
+                    "consistently with transfer rules. Georgia film, "
+                    "Louisiana film, historic rehabilitation, and "
+                    "brownfield programs require separate state-specific "
+                    "transferability analysis rather than borrowed federal assumptions."
+                ),
+                (
+                    "The risk fallback is strict: never warehouse unhedged "
+                    "credits or advance the seller money against an "
+                    "uncommitted buyer. Require buyer-funded simultaneous "
+                    "escrow, a direct authorized transfer, and a "
+                    "binding tax-credit insurance policy meeting the "
+                    "transaction's required non-cancelable coverage terms. "
+                    "Do not represent that such coverage is always "
+                    "available or that it eliminates exclusions, "
+                    "recapture exposure, or claims disputes. If the "
+                    "insurer cannot provide the required terms, or "
+                    "the buyer will not fund the coordinated closing, "
+                    "decline the transaction rather than weaken this "
+                    "play's conditions. Verify insured parties, "
+                    "coverage period, exclusions, cancellation "
+                    "provisions, claims control, and the specific "
+                    "credit facts covered. Federal pre-filing "
+                    "registration is part of the applicable "
+                    "process, not proof that the IRS has "
+                    "approved substantive eligibility. State "
+                    "program certificates likewise need "
+                    "program-specific review. Keep an immutable "
+                    "closing packet with seller authority, "
+                    "eligibility workpapers, buyer commitments, "
+                    "escrow confirmations, insurance evidence, "
+                    "and fee invoices. Price origination "
+                    "research separately from recovery cases: "
+                    "twenty leads at an assumed $25 "
+                    "research cost consume $500 before "
+                    "specialist diligence. Continue only when "
+                    "documented buyer demand and eligible "
+                    "supply justify that spend, never because "
+                    "a public dataset makes distressed "
+                    "projects easy to enumerate."
+                ),
+            ],
+            "table": {
+                "caption": "Six tax-credit diligence checkpoints with source-specific fallbacks",
+                "headers": [
+                    "Origination source or transaction stage",
+                    "What the evidence actually establishes",
+                    "Unit economics or required verification",
+                    "Risk fallback before money moves",
+                ],
+                "rows": [
+                    [
+                        "DOE-supported Berkeley Lab Queued Up research and regional operator queue downloads.",
+                        "Project applications and development indicators establish leads rather than eligible tax-credit balances.",
+                        "Twenty preliminary leads at an assumed $25 each require $500 research spending.",
+                        "Require developer documents and current utility evidence before paying for transaction diligence.",
+                    ],
+                    [
+                        "EPA RE-Powering datasets and state environmental agency redevelopment records.",
+                        "Site characteristics can support research but do not establish qualifying credit ownership.",
+                        "Verify project taxpayer, eligible activity, costs, dates, and the applicable statutory program.",
+                        "Discard unsupported eligibility assumptions and obtain program-specific specialist review before quoting.",
+                    ],
+                    [
+                        "Georgia film program records and Louisiana entertainment incentive program materials.",
+                        "Program participation differs from issued, usable, transferable credits under current state rules.",
+                        "Check issuance year, certificates, purchaser restrictions, expiration, transfer process, and program changes.",
+                        "Use direct agency confirmation and decline structures that depend on assumed transferability.",
+                    ],
+                    [
+                        "State historic-preservation offices, NPS records, and state brownfield program documents.",
+                        "Historic status or site designation alone does not establish transferable state credit value.",
+                        "Separate federal rehabilitation treatment from each state's eligibility and transfer provisions.",
+                        "Require tax specialist review and original certificates before proposing any buyer allocation.",
+                    ],
+                    [
+                        "Direct eligible seller-to-buyer federal transfer under IRC section 6418.",
+                        "A compliant first transfer does not authorize subsequent resale by the transferee.",
+                        "$100,000 face value times the $0.09 illustrative difference yields $9,000 gross spread.",
+                        "Document intermediary compensation without taking prohibited resale positions or counting principal as revenue.",
+                    ],
+                    [
+                        "Buyer-funded escrow closing supported by the required binding insurance policy.",
+                        "Escrow coordinates settlement while policy wording determines the actual insured exposures.",
+                        "$9,000 illustrative spread minus $4,000 transaction expenses leaves $5,000 before overhead.",
+                        "Decline if simultaneous funding or required non-cancelable coverage terms cannot be secured.",
+                    ],
+                ],
+            },
+        },
+    ],
+    "pull_quote": "The winning record is the one that survives identity, priority, freshness, and cash reconciliation—not the one that appears first in search.",
+    "diagram_id": "diag-04",
+    "action_checklist": [
+        "Create a source register covering all eighteen directory entries, with authorized access, current pricing, permitted uses, refresh targets, and fallback owners.",
+        "Build a matter schema that separates parties, instruments, observations, deadlines, client receipts, earned fees, and supporting document hashes.",
+        "Test the enrichment waterfall against duplicate names, amended filings, scanned judgments, restricted responses, and incomplete pagination before production use.",
+        "Configure bankruptcy review tasks and jurisdiction-specific deadline templates, with a fresh check before consequential enforcement activity.",
+        "Reconcile recognized service fees and all-in costs to $12,000, $84,000, and $200,000 annual owner profit without counting client principal as revenue.",
+        "Keep tax-credit origination separate; require verified transferability, direct authorized transfer, buyer-funded simultaneous escrow, and the specified binding insurance terms.",
+    ],
+    "statutory_citations": [
+        {
+            "title": "11 U.S.C. § 362 — Automatic stay",
+            "url": "https://www.law.cornell.edu/uscode/text/11/362",
+            "relevance": "A bankruptcy filing can stay affected collection and enforcement activity; credible notice requires immediate review rather than reliance on search freshness.",
+        },
+        {
+            "title": "Federal Rule of Civil Procedure 69 — Execution",
+            "url": "https://www.law.cornell.edu/rules/frcp/rule_69",
+            "relevance": "Federal money-judgment execution generally follows the forum state's procedure unless a federal statute applies; post-judgment discovery also has defined procedural routes.",
+        },
+        {
+            "title": "15 U.S.C. § 1681b — Permissible purposes of consumer reports",
+            "url": "https://www.law.cornell.edu/uscode/text/15/1681b",
+            "relevance": "Consumer-report access requires an applicable permissible purpose; commercial judgment research does not authorize indiscriminate consumer-report purchases.",
+        },
+        {
+            "title": "18 U.S.C. § 2721 — Motor vehicle record privacy and permitted disclosures",
+            "url": "https://www.law.cornell.edu/uscode/text/18/2721",
+            "relevance": "Use of personal information from motor vehicle records must fit an applicable statutory exception and any associated conditions.",
+        },
+        {
+            "title": "California Code of Civil Procedure § 683.020 — Judgment enforceability period",
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=683.020.&lawCode=CCP",
+            "relevance": "Provides a state-specific enforceability framework that must be applied with relevant exceptions, renewal provisions, and the actual judgment history.",
+        },
+        {
+            "title": "26 U.S.C. § 6418 — Transfer of certain credits",
+            "url": "https://www.law.cornell.edu/uscode/text/26/6418",
+            "relevance": "Defines eligible credit transfers and statutory conditions, including the restriction on a transferee's subsequent transfer of the purchased credit.",
+        },
+        {
+            "title": "26 CFR § 1.6418-2 — Rules for making a transfer election",
+            "url": "https://www.ecfr.gov/current/title-26/section-1.6418-2",
+            "relevance": "Governs transfer-election mechanics and supports direct seller-to-buyer structuring rather than assuming freely resalable federal credit inventory.",
+        },
+        {
+            "title": "26 CFR § 1.6418-4 — Pre-filing registration requirements",
+            "url": "https://www.ecfr.gov/current/title-26/section-1.6418-4",
+            "relevance": "Requires applicable pre-filing registration steps; a registration number does not establish that the underlying credit satisfies substantive eligibility requirements.",
+        },
+    ],
+}

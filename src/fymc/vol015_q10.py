@@ -1,0 +1,703 @@
+from __future__ import annotations
+
+CHAPTER_10 = {
+    "id": "Q10",
+    "chapter_id": "Q10",
+    "chapter_number": 10,
+    "question_number": 10,
+    "slug": "automation-ai-leverage-scalable-distribution-flywheels",
+    "question_prompt": "How does a 1 FT + 3 C (4 people) judgment recovery team automate 70%+ of repetitive research, qualification, fulfillment, and traffic/deal acquisition while keeping human-in-the-loop QA?",
+    "kicker": "Q10 / THE BIG MONEY PLAYBOOKS",
+    "title": "Automation, AI Leverage & Scalable Distribution Flywheels",
+    "subtitle": "Python Docket Pipelines, Reviewed LLM Extraction, Stay-Aware Deadline Queues, Reconciled Recovery Fees, and Counsel-Checked Lien Priority",
+    "layout_template": "case_study_walkthrough",
+    "reading_time_minutes": 14,
+    "executive_summary": (
+        "Candidate #8, Judgment Recovery, ranks #15 with a 77/100 Money-to-Manpower Score. "
+        "This chapter gives the volume's 15 mapped plays a shared automation architecture: "
+        "authorized docket ingestion, evidence-linked LLM extraction, reviewed deadline calculations, "
+        "payment reconciliation, and creditor referral loops. Target 70%+ less repetitive handling "
+        "time without delegating enforcement decisions to software. The canonical annual owner "
+        "profit cases remain $12,000 Conservative, $84,000 Base, and $200,000 Scaled, generated "
+        "from recognized service fees rather than judgment balances or client collections. "
+        "A four-person team owns exceptions, source verification, and attorney coordination; "
+        "six people support the Scaled case. The design explicitly separates ordinary recovery "
+        "fees from speculative lien acquisitions and makes bankruptcy, exemption, priority, "
+        "and collection-authority checks prerequisites for consequential action."
+    ),
+    "key_metrics": [
+        {
+            "label": "Conservative",
+            "value": "$60,000",
+            "context": "Annual recognized service fees, excluding client collections and judgment balances",
+            "note": "20% net margin; $12,000 annual owner net profit; 1 FT + 3 C",
+        },
+        {
+            "label": "Base",
+            "value": "$280,000",
+            "context": "Annual recognized service fees, excluding client collections and judgment balances",
+            "note": "30.0% net margin; $84,000 annual owner net profit; 1 FT + 3 C",
+        },
+        {
+            "label": "Scaled",
+            "value": "$500,000",
+            "context": "Annual recognized service fees, excluding client collections and judgment balances",
+            "note": "40% net margin; $200,000 annual owner net profit; 2 FT + 4 C (6 people)",
+        },
+    ],
+    "sections": [
+        {
+            "heading": "1. Build an evidence-first docket pipeline before automating decisions",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Design the pipeline around a case event, not an AI conversation. The full-time "
+                    "operator owns intake, queue economics, and client communication; three contractors "
+                    "cover authorized research, bookkeeping, and licensed attorney work under separate "
+                    "engagements. Contractor status does not create permission to practice law or collect "
+                    "in a jurisdiction requiring a license. Each accepted file receives a case identifier, "
+                    "court identifier, creditor identity, debtor entity identifier, judgment date, entered "
+                    "amount, assignment evidence, and source-document digest. Use PACER for federal "
+                    "records and the relevant state court portal for state proceedings, through permitted "
+                    "access methods and approved accounts. A Python worker can ingest permitted downloads "
+                    "with urllib.request, normalize timestamps with datetime, and deduplicate documents "
+                    "with hashlib. Store transactional state in PostgreSQL through a separately reviewed "
+                    "deployment integration, or SQLite for a genuinely single-worker installation. Keep "
+                    "original files immutable and attach extracted claims to page references. Treat the "
+                    "15 mapped plays as consumers of this shared evidence layer, not as permission to "
+                    "reuse assumptions across jurisdictions. A commercial guaranty, consumer obligation, "
+                    "HOA assessment, and purchased judgment can require different authority checks even "
+                    "when the same person appears in the docket."
+                ),
+                (
+                    "Send only minimized, authorized document excerpts to an approved LLM endpoint, "
+                    "with retention settings consistent with the engagement. Ask for a fixed JSON "
+                    "schema containing extracted values, quoted source spans, page numbers, and explicit "
+                    "review reasons. Python validates field types, checks dates against the source, and "
+                    "rejects unsupported assertions; the model never supplies a deadline from memory. "
+                    "Treat docket text as untrusted input, including instructions embedded in exhibits. "
+                    "A rule registry stores jurisdiction, rule citation, effective dates, triggering event, "
+                    "calendar convention, and attorney reviewer. California Code of Civil Procedure "
+                    "section 683.020 supplies a general ten-year enforcement framework subject to "
+                    "exceptions and renewal rules, not a universal countdown for every obligation. "
+                    "Build proposed dates from reviewed rules, then require the responsible professional "
+                    "to confirm consequential deadlines against the operative docket. Bankruptcy alerts "
+                    "invoke a stay-review workflow under 11 U.S.C. section 362. Section 108(c) requires "
+                    "separate analysis; software must not assume every state limitation period simply "
+                    "stops running. Changes to a trigger date invalidate downstream calculations and "
+                    "generate a visible correction task. Every proposed filing remains a draft until "
+                    "the authorized person reviews the actual source packet."
+                ),
+                (
+                    "Measure automation against a stable workload rather than counting colorful "
+                    "dashboard actions. For an illustrative monthly cohort of 1,000 routine research, "
+                    "qualification, fulfillment-preparation, and acquisition-administration work items, "
+                    "the manual baseline is ten minutes each, or 10,000 minutes. Suppose 750 items "
+                    "complete extraction and routing automatically but retain one minute of human "
+                    "verification each; 250 exceptions require eight minutes each. Human handling "
+                    "becomes 2,750 minutes, a 72.5% reduction, while straight-through machine processing "
+                    "covers 75% of items. That result does not mean 75% of enforcement decisions are "
+                    "automated. Consequential approvals within this routine cohort must fit the measured "
+                    "review time; contested litigation and complex priority opinions remain separately "
+                    "budgeted work. Track corrections, missed triggers, stale sources, and reopened "
+                    "exceptions alongside minutes saved. Sample completed low-risk extractions weekly "
+                    "and inspect every material deadline change. Require four consecutive measured "
+                    "weeks before treating the reduction as an operating assumption. If exception "
+                    "volume rises, narrow the supported courts or document types instead of suppressing "
+                    "review. The useful deliverable is a reproducible evidence packet with an accountable "
+                    "reviewer, not an impressive percentage detached from case consequences."
+                ),
+            ],
+            "table": {
+                "caption": "Evidence-to-Decision Pipeline for a Four-Person Judgment Recovery Team",
+                "headers": [
+                    "Pipeline stage and bounded operational purpose",
+                    "Machine output retained with source evidence",
+                    "Human responsibility before consequential downstream action",
+                    "Failure signal and explicit recovery procedure",
+                ],
+                "rows": [
+                    [
+                        "Authorized court ingestion retrieves the accepted docket record",
+                        "Document digest and retrieval timestamp accompany every stored original",
+                        "Research contractor verifies court identity and permitted access method",
+                        "Portal denial pauses retrieval and creates manual download work",
+                    ],
+                    [
+                        "Entity matching separates similarly named people and businesses",
+                        "Candidate matches include identifiers and supporting public record references",
+                        "Operator resolves ambiguous identities before any external case communication",
+                        "Conflicting identifiers quarantine matches rather than merging debtor records",
+                    ],
+                    [
+                        "LLM extraction structures amounts, parties, and docket event dates",
+                        "Every material extracted field includes its quoted source location",
+                        "Research contractor checks material fields against the actual document",
+                        "Unsupported output returns to manual extraction with error classification",
+                    ],
+                    [
+                        "Deadline calculation applies a versioned jurisdiction-specific rule registry",
+                        "Proposed dates retain trigger events, calendar assumptions, and citations",
+                        "Responsible attorney confirms consequential dates and any applicable exceptions",
+                        "Changed trigger events invalidate dependent dates and notify reviewers",
+                    ],
+                    [
+                        "Bankruptcy monitoring identifies possible cases involving the debtor",
+                        "Potential matches retain court identifiers and current docket evidence",
+                        "Counsel determines stay applicability before affected collection activity resumes",
+                        "Possible stay immediately blocks affected actions pending documented review",
+                    ],
+                    [
+                        "Draft assembly organizes evidence for authorized enforcement professionals",
+                        "Packet index links judgment, assignments, balances, and reviewed chronology",
+                        "Licensed professional controls representation, filing decisions, and legal conclusions",
+                        "Missing authority documents return the packet to intake correction",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Four checks before any consequential output leaves the queue",
+                "body": (
+                    "Extraction can run unattended; collection communications, filings, bids, and "
+                    "disbursements require the appropriate accountable reviewer."
+                ),
+                "items": [
+                    (
+                        "Verify creditor authority, assignment continuity, commercial or consumer "
+                        "classification, and applicable collection licensing before accepting the mandate."
+                    ),
+                    (
+                        "Resolve current bankruptcy indicators and relevant orders with counsel; "
+                        "record the review time and precisely which actions remain blocked."
+                    ),
+                    (
+                        "Confirm the judgment balance, exemptions, lien priority, service requirements, "
+                        "and controlling deadline source before approving an enforcement packet."
+                    ),
+                    (
+                        "Match the intended recipient, approved document version, payment destination, "
+                        "and reviewer identity before transmission or any movement of funds."
+                    ),
+                ],
+            },
+        },
+        {
+            "heading": "2. Reconcile every payment and price every automated run",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "Build payment processing as an append-only ledger of observed events, not a "
+                    "spreadsheet that overwrites yesterday's balance. A signed bank or payment-provider "
+                    "webhook reaches a narrow receiver that verifies the signature over the raw request "
+                    "body, checks timestamp freshness, and records the provider event identifier before "
+                    "returning success. Python hmac and hashlib can implement provider-specified "
+                    "verification without inventing a signature format. Unique constraints prevent "
+                    "duplicate posting, while a durable queue separates receipt from reconciliation. "
+                    "Use decimal.Decimal for money and retain currency, value date, payer reference, "
+                    "case identifier, and source transaction identifier. Distinguish pending funds, "
+                    "settled funds, returned payments, creditor liabilities, earned service fees, "
+                    "and recoverable expenses. Allocate interest and principal only through a reviewed "
+                    "jurisdiction-specific ledger rule. A receipt is not automatically earned revenue, "
+                    "and an earned fee is not automatically available cash. Where funds belong in "
+                    "an attorney trust account or another required custodial arrangement, the recovery "
+                    "operator does not route them through an ordinary operating account. Bookkeeping "
+                    "prepares the allocation; the authorized signatory controls disbursement. Reversal "
+                    "events create linked compensating entries rather than deleting the original "
+                    "receipt, preserving the complete creditor statement history."
+                ),
+                (
+                    "Reconcile the scorecard using recognized service fees exclusively. An illustrative "
+                    "25% fee on settled client recoveries produces $60,000 of Conservative revenue "
+                    "from $240,000 collected, $280,000 of Base revenue from $1,120,000 collected, and "
+                    "$500,000 of Scaled revenue from $2,000,000 collected. These collection amounts "
+                    "are explanatory assumptions, not additional scorecard revenue or promised "
+                    "recoveries. Total annual operating costs must equal $48,000, $196,000, and "
+                    "$300,000 respectively, leaving exactly $12,000 at 20%, $84,000 at 30.0%, and "
+                    "$200,000 at 40%. Conservative and Base retain 1 FT + 3 C; Scaled uses "
+                    "2 FT + 4 C. Contractor headcount does not imply four full-time salaries. "
+                    "The stated $2,000–$12,000 monthly operating range should be tracked as a "
+                    "planning range for recurring overhead, while the scenario reconciliation must "
+                    "also include variable contractor work, acquisition, research, and operator-borne "
+                    "enforcement expenses. The Base cost envelope averages about $16,333 monthly "
+                    "when all annual costs are included. Assign each expense to the correct bucket "
+                    "and prevent recoverable client advances from being mistaken for earned fees. "
+                    "A larger judgment face amount improves neither revenue nor margin until actual "
+                    "economics support recognition."
+                ),
+                (
+                    "Price automation at the work-item level before buying a larger stack. Assume "
+                    "each routine run consumes $0.18 of parsing, $0.08 of LLM inference, $0.04 "
+                    "of orchestration, and $0.12 of storage and monitoring allocation: $0.42 total. "
+                    "At 1,000 monthly runs, that is $420 of machine cost. The earlier 2,750 "
+                    "human minutes equal 45.833 hours; at an illustrative loaded $45 hourly rate, "
+                    "review costs $2,062.50. Combined monthly handling cost is $2,482.50, or "
+                    "$2.4825 per run, compared with a $7,500 labor-only manual baseline. Annualized, "
+                    "the modeled handling bundle costs $29,790 and belongs inside the Base "
+                    "$196,000 cost envelope, not on top of it. These assumptions exclude separately "
+                    "priced court retrieval, specialist opinions, contested proceedings, acquisition "
+                    "spend, and disbursement work outside the routine cohort. Vendor quotes and "
+                    "measured time must replace assumptions before committing capacity. Retry "
+                    "transient failures with bounded exponential backoff, then move exhausted jobs "
+                    "to an exception queue. During a provider outage, accept no blind ledger "
+                    "updates: reconcile bank statements manually, preserve event identifiers, and "
+                    "replay only after duplicate detection passes. A cheap run that misallocates "
+                    "client money is an expensive operational defect."
+                ),
+            ],
+            "table": {
+                "caption": "Payment Controls and Illustrative Unit Economics Without Revenue Inflation",
+                "headers": [
+                    "Ledger event or measured economic assumption",
+                    "Deterministic processing and retained audit evidence",
+                    "Reviewer control protecting client and operator balances",
+                    "Reconciliation target or explicit failure recovery",
+                ],
+                "rows": [
+                    [
+                        "Payment webhook arrives with a provider transaction reference",
+                        "Verify authentic signature before recording the unique event identifier",
+                        "Bookkeeper investigates any sender or transaction reference mismatch promptly",
+                        "Rejected signatures remain quarantined without changing any case balance",
+                    ],
+                    [
+                        "Settled receipt becomes available for reviewed contractual allocation",
+                        "Decimal arithmetic separates creditor liability from earned operator fees",
+                        "Authorized reviewer confirms fee terms and applicable allocation rules",
+                        "Allocation totals must equal the actual settled receipt exactly",
+                    ],
+                    [
+                        "Returned payment reverses a previously reconciled debtor receipt",
+                        "Linked compensating entries preserve the original transaction audit trail",
+                        "Bookkeeper checks creditor statements and any necessary disbursement correction",
+                        "Freeze affected distributions until the revised balances reconcile completely",
+                    ],
+                    [
+                        "Routine machine processing assumes forty-two cents per completed run",
+                        "Parsing, inference, orchestration, and storage allocations sum to $0.42",
+                        "Operator compares actual vendor invoices against completed work-item counts",
+                        "Separate court retrieval and specialist costs from this assumption",
+                    ],
+                    [
+                        "Monthly human review consumes the modeled 2,750 handling minutes",
+                        "Loaded labor of $45 hourly produces $2,062.50 review cost",
+                        "Operator samples time logs across ordinary and exception queues",
+                        "Recalculate savings when consequential reviews exceed the measured allowance",
+                    ],
+                    [
+                        "Canonical annual costs preserve all three published owner-profit cases",
+                        "Costs of $48,000, $196,000, and $300,000 reconcile respective scenarios",
+                        "Bookkeeper excludes client principal from recognized operator service revenue",
+                        "Resolve every variance before increasing acquisition or staffing commitments",
+                    ],
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Authenticate and persist the incoming payment event",
+                    "action": (
+                        "Verify the provider signature and timestamp, then durably store the event "
+                        "under a unique provider identifier."
+                    ),
+                    "detail": (
+                        "Acknowledge delivery only after durable receipt; repeated deliveries return "
+                        "the existing result without reposting money."
+                    ),
+                },
+                {
+                    "step": 2,
+                    "title": "Match the receipt to its authorized case ledger",
+                    "action": (
+                        "Use transaction references and verified payer details to propose a case "
+                        "match and settlement classification."
+                    ),
+                    "detail": (
+                        "Ambiguous references enter a suspense queue; no model may resolve "
+                        "competing case matches by probability alone."
+                    ),
+                },
+                {
+                    "step": 3,
+                    "title": "Review allocation and prepare the creditor statement",
+                    "action": (
+                        "Apply approved fee and allocation rules, reconcile totals, and obtain "
+                        "the required human authorization."
+                    ),
+                    "detail": (
+                        "Keep earned fees, client liabilities, expenses, and returned funds "
+                        "separate; source every amount to a ledger event."
+                    ),
+                },
+                {
+                    "step": 4,
+                    "title": "Reconcile settlement and close the exception loop",
+                    "action": (
+                        "Match the ledger against the bank statement, investigate differences, "
+                        "and record the final reconciliation evidence."
+                    ),
+                    "detail": (
+                        "Replay missed events through the same duplicate controls; preserve "
+                        "reversals and reviewer decisions for later reconstruction."
+                    ),
+                },
+            ],
+        },
+        {
+            "heading": "3. Turn reviewed knowledge into creditor acquisition loops",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Build distribution for creditors and referral partners, not for public exposure "
+                    "of debtors. Programmatic pages should explain specific commercial recovery "
+                    "workflows: locating an entered judgment, preparing assignment records, assessing "
+                    "enforcement costs, or organizing a lien-priority review. Publish a page only "
+                    "when its jurisdictional differences justify distinct content and a named reviewer "
+                    "has checked the sources. An LLM can draft from the approved rule registry, "
+                    "but it cannot invent recoverability statistics, attorney relationships, or local "
+                    "office locations. Use Google Search Console to monitor search queries and a "
+                    "first-party intake form to capture creditor authorization, court, judgment date, "
+                    "and available documents. Do not collect a full sensitive case file through "
+                    "an unrestricted marketing form. A Python webhook validates the submission, "
+                    "creates a deduplicated lead, and sends a secure upload invitation after "
+                    "basic screening. Record source attribution without leaking debtor names "
+                    "into analytics URLs. Separate marketing contacts from case subjects so "
+                    "a debtor never enters a creditor prospecting sequence because their "
+                    "name appeared in a docket. If a page's governing authority changes, "
+                    "remove its automated recommendations until a reviewer refreshes the content "
+                    "and confirms any linked intake logic."
+                ),
+                (
+                    "Make the referral loop useful before making it viral. Give commercial "
+                    "litigators, credit managers, and receivables teams a reusable judgment-transfer "
+                    "checklist, a sample evidence index, and a plain explanation of case acceptance "
+                    "criteria. The artifact should save partner labor even when no referral occurs. "
+                    "Allow partners to forward the public checklist while keeping client documents "
+                    "inside controlled workspaces. After a completed engagement, request permission "
+                    "to publish a genuinely de-identified process case study; removing a name "
+                    "alone may not prevent identification through a distinctive judgment amount "
+                    "or court history. Avoid referral payments that conflict with applicable "
+                    "attorney professional-conduct rules or collection restrictions. For outbound "
+                    "email, target verified business creditor roles using lawfully obtained contact "
+                    "data, truthful sender information, accurate subjects, a valid postal address, "
+                    "and an effective opt-out process under 15 U.S.C. section 7704. Maintain "
+                    "suppression across every sending system and honor statutory timing. Do not "
+                    "expand automatically into texts or autodialed calls, which require separate "
+                    "analysis under 47 U.S.C. section 227 and implementing rules. A referral "
+                    "engine fails when convenience turns case records into unauthorized marketing "
+                    "data or when an automated follow-up ignores a recipient's objection."
+                ),
+                (
+                    "Model acquisition as cohorts with delayed cash, because the scorecard allows "
+                    "six to twenty-four months to the first deal. An illustrative annual cohort "
+                    "starts with 240 qualified creditor inquiries, converts 60 into accepted "
+                    "engagements, and eventually produces 20 paying matters averaging $14,000 "
+                    "of recognized fees. That yields the Base $280,000, but only in the "
+                    "period when those fees qualify for recognition; signing all 60 this "
+                    "year does not create this year's revenue. At the illustrative 25% "
+                    "fee, each paying matter corresponds to $56,000 of client collections, "
+                    "and twenty produce $1,120,000 of underlying recoveries. A $24,000 "
+                    "acquisition allocation implies $100 per qualified inquiry, $400 per "
+                    "accepted engagement, and $1,200 per paying matter. Include that allocation "
+                    "inside the $196,000 Base cost envelope alongside the $29,790 routine "
+                    "handling bundle, leaving $142,210 for all remaining modeled costs. "
+                    "Track intake qualification, acceptance, collectible-asset evidence, realized "
+                    "fees, and elapsed months separately. Stop scaling a channel that supplies "
+                    "large nominal judgments but repeated insolvency findings. When organic "
+                    "traffic falls, prioritize partner checklists and existing creditor renewals "
+                    "rather than publishing hundreds of unreviewed jurisdiction pages. Acquisition "
+                    "quality is measured by collectible, authorized work, not database size."
+                ),
+            ],
+            "table": {
+                "caption": "Six Creditor Acquisition Loops With Reviewable Inputs and Economic Feedback",
+                "headers": [
+                    "Distribution loop and clearly identified target audience",
+                    "Reusable asset and bounded automation mechanism",
+                    "Human review and recipient-protection operating requirement",
+                    "Economic signal and practical channel fallback",
+                ],
+                "rows": [
+                    [
+                        "Jurisdiction pages attract creditors researching commercial enforcement procedures",
+                        "Reviewed rule records populate genuinely distinct explanatory page drafts",
+                        "Named reviewer verifies current sources before any publication occurs",
+                        "Withdraw stale pages and route visitors to reviewed intake",
+                    ],
+                    [
+                        "Litigator partnerships receive clean judgment-transfer and evidence checklists",
+                        "Public checklist links create attributed partner intake submissions",
+                        "Operator confirms referrals respect applicable professional relationship restrictions",
+                        "Track accepted matters rather than counting forwarded checklist downloads",
+                    ],
+                    [
+                        "Credit managers receive targeted commercial recovery process outreach",
+                        "Verified business contacts enter restrained sequences with suppression checks",
+                        "Reviewer confirms lawful sourcing and accurate sender identification",
+                        "Stop sequences on objection and investigate elevated complaint rates",
+                    ],
+                    [
+                        "Authorized case studies demonstrate specific operational improvements publicly",
+                        "Approved templates separate process metrics from sensitive case details",
+                        "Creditor permission and reidentification review precede public publication",
+                        "Use synthetic teaching examples when disclosure risks remain material",
+                    ],
+                    [
+                        "Existing creditors receive scheduled portfolio review invitations directly",
+                        "Relationship records trigger reminders without exposing debtor case information",
+                        "Account owner verifies contact permissions and current engagement status",
+                        "Measure retained collectible portfolios instead of repeated reminder volume",
+                    ],
+                    [
+                        "Base acquisition cohort connects inquiry quality to realized fees",
+                        "Two hundred forty inquiries yield twenty modeled paying matters",
+                        "Operator distinguishes eventual cohort outcomes from current recognition periods",
+                        "Pause weak channels before nominal judgment balances distort spending",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Use recovery-specific evidence to make the flywheel stronger",
+                "body": (
+                    "Experienced operators reduce wasted diligence before increasing lead volume. "
+                    "Make every reusable asset improve case selection or handoff quality."
+                ),
+                "items": [
+                    (
+                        "Ask referral partners for the entered judgment, assignment chain, and "
+                        "payment history together; a complete packet prevents repeated intake labor."
+                    ),
+                    (
+                        "Keep insolvency findings in a dated evidence field, not a permanent "
+                        "debtor label; any later review must use fresh, lawfully obtained sources."
+                    ),
+                    (
+                        "Tag each rejected lead with a concrete reason such as missing authority, "
+                        "unfunded enforcement costs, or unresolved priority, then improve the intake checklist."
+                    ),
+                    (
+                        "Publish a sample creditor statement with synthetic amounts so prospects "
+                        "understand fee allocation without exposing an actual debtor or recovery."
+                    ),
+                ],
+            },
+        },
+        {
+            "heading": "4. Isolate statutory-interest experiments and scale through recoverable failures",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "Apply the same evidence architecture to "
+                    "hoa_super_lien_tax_deed_redemption_arbitrage, the TRACK_1 play for HOA "
+                    "Super-Lien & Sub-Threshold Tax-Deed Statutory Redemption Arbitrage, without "
+                    "turning it into a universal title strategy. A small purchase price changes "
+                    "capital exposure, not statutory notice requirements, lien priority, or "
+                    "redemption rights. Nevada Revised Statutes section 116.3116 supplies an "
+                    "HOA lien framework whose priority and enforceability require transaction-specific "
+                    "review of the applicable statutory version, related provisions, recorded "
+                    "instruments, payments, and foreclosure history. Do not assume acquiring "
+                    "an assessment claim conveys an unrestricted enforcement right or extinguishes "
+                    "a senior interest. Texas Tax Code section 34.21 supplies a different "
+                    "tax-sale redemption structure, including different periods for qualifying "
+                    "homestead, agricultural, mineral, and other property categories. Keep these "
+                    "jurisdictions and instruments in separate rule records. Python can assemble "
+                    "the title chronology, notice evidence, redemption dates, and cost ledger; "
+                    "an LLM can flag missing documents. Counsel must determine what interest "
+                    "can actually be acquired and enforced. Neither tool establishes valid "
+                    "title from a docket summary. Treat unresolved priority, deficient notice, "
+                    "or bankruptcy as reasons to suspend bidding, not as opportunities for "
+                    "a more optimistic automated valuation."
+                ),
+                (
+                    "Use bounded arithmetic to expose the play's fragility. Suppose counsel "
+                    "confirms an assignable HOA interest with $2,600 of realistically available "
+                    "net proceeds before acquisition and operator costs. A $1,200 purchase, "
+                    "$300 diligence budget, and $500 operator-borne enforcement budget create "
+                    "$2,000 of modeled exposure and a $600 spread, or 30% on that "
+                    "exposure before additional overhead and timing effects. Another $600 "
+                    "of required enforcement work eliminates the spread entirely. This example "
+                    "does not assert that $2,600 receives statutory priority. For a separate "
+                    "Texas example, assume counsel confirms an $8,000 eligible redemption "
+                    "basis and a first-year redemption calculation carrying the applicable "
+                    "25% premium. The resulting $2,000 premium is a conditional statutory "
+                    "calculation, not a 25% annual yield or assured recovery; $800 of "
+                    "unreimbursed costs would leave $1,200 before overhead and capital costs. "
+                    "If redemption never occurs, evaluate the actual remaining interest "
+                    "rather than projecting the premium forever. These investment illustrations "
+                    "sit outside the canonical service-fee scenarios. Suspend bidding when "
+                    "evidence fails, seek available statutory refunds where the facts and "
+                    "law permit them, and limit acquisitions to counsel-cleared interests. "
+                    "Never book the acquisition principal or a hypothetical premium as "
+                    "ordinary judgment recovery service revenue."
+                ),
+                (
+                    "Scale the shared system only after its failure paths work. Maintain "
+                    "separate queues for routine extraction, uncertain identity, deadline review, "
+                    "bankruptcy, payment mismatch, acquisition review, and partner intake. Give "
+                    "each queue an accountable owner, a response target, and a safe paused "
+                    "state. A bankruptcy flag blocks affected collection actions but still "
+                    "permits internal preservation and review; a broken court connector "
+                    "creates a manual retrieval task rather than silently treating yesterday's "
+                    "docket as current. Test restoration from backups and rebuild case "
+                    "state from retained events before expanding volume. Use least-privilege "
+                    "service credentials, encrypted document storage, redacted application logs, "
+                    "and recorded access reviews. Retain source evidence according to the "
+                    "engagement and applicable requirements rather than keeping everything "
+                    "indefinitely. Within the $10,000–$75,000 startup range, reserve capital "
+                    "for long acquisition cycles and necessary specialist review before "
+                    "optional software. At Scaled, assign the second full-time person to "
+                    "operations quality and reconciliation, and use four contractors for "
+                    "bounded specialist capacity. Preserve the $500,000 fee revenue, "
+                    "$300,000 total cost, and $200,000 owner profit arithmetic. If "
+                    "backlogs exceed capacity, restrict intake or reprice documented scope; "
+                    "never make the margin work by removing source checks, stay review, "
+                    "or payment controls."
+                ),
+            ],
+            "table": {
+                "caption": "Statutory-Interest Underwriting and Failure-Recovery Matrix",
+                "headers": [
+                    "Specific exposure requiring evidence-based operator attention",
+                    "Automated calculation or supporting evidence assembly",
+                    "Human determination required before capital or enforcement",
+                    "Loss-limiting fallback when the evidence fails",
+                ],
+                "rows": [
+                    [
+                        "Nevada HOA interest requires transaction-specific statutory priority analysis",
+                        "Assemble assessment history, recorded instruments, payments, and notice chronology",
+                        "Counsel confirms assignability, enforceability, priority, and applicable statutory version",
+                        "Suspend bidding and acquire only a counsel-cleared interest",
+                    ],
+                    [
+                        "Texas tax-sale interest requires property-specific redemption classification",
+                        "Separate eligible cost basis from any conditional statutory premium",
+                        "Counsel verifies property category, dates, costs, and redemption rights",
+                        "Seek available statutory refunds only where legally supported",
+                    ],
+                    [
+                        "Illustrative HOA purchase exposes $2,000 before additional unforeseen costs",
+                        "Available proceeds of $2,600 leave a modeled $600 spread",
+                        "Operator requires support for proceeds and every enforcement estimate",
+                        "Reject the acquisition if added costs erase the spread",
+                    ],
+                    [
+                        "Illustrative Texas redemption basis equals $8,000 under reviewed assumptions",
+                        "Applicable twenty-five percent premium would produce $2,000 before costs",
+                        "Counsel confirms the example fits the actual statutory calculation",
+                        "Underwrite nonredemption separately instead of assuming automatic premium recovery",
+                    ],
+                    [
+                        "Possible bankruptcy filing interrupts otherwise routine collection scheduling",
+                        "Preserve match evidence and mark affected actions as blocked",
+                        "Counsel determines stay scope and any lawful next action",
+                        "Keep affected collection paused until the determination is documented",
+                    ],
+                    [
+                        "Connector outage or queue backlog threatens evidence freshness",
+                        "Monitor retrieval timestamps, exception age, and missing event sequences",
+                        "Queue owner prioritizes deadlines and assigns manual source verification",
+                        "Restrict intake and restore reliable processing before expanding volume",
+                    ],
+                ],
+            },
+        },
+    ],
+    "pull_quote": (
+        "Automate the evidence trail and the arithmetic; keep authority, priority, and the movement of money accountable to people."
+    ),
+    "diagram_id": "diag-02",
+    "action_checklist": [
+        (
+            "Create a case-event schema linking every material field to an immutable source "
+            "document, retrieval timestamp, and assigned reviewer."
+        ),
+        (
+            "Build a versioned deadline registry for the first supported courts, including "
+            "stay-review handling and invalidation after changed trigger events."
+        ),
+        (
+            "Implement authenticated payment webhooks, duplicate controls, Decimal-based allocations, "
+            "and bank-to-ledger reconciliation before enabling distribution instructions."
+        ),
+        (
+            "Measure a fixed 1,000-item routine cohort and verify the 70%+ handling-time "
+            "reduction without excluding required reviews or reopened exceptions."
+        ),
+        (
+            "Launch reviewed creditor resources and partner checklists, then track qualified "
+            "inquiries through collectible engagements and recognized service fees."
+        ),
+        (
+            "Keep statutory-interest acquisitions outside the service-fee scorecard, document "
+            "counsel-cleared rights, and rehearse bidding suspension and manual recovery procedures."
+        ),
+    ],
+    "statutory_citations": [
+        {
+            "title": "11 U.S.C. § 362 — Automatic stay",
+            "url": "https://www.law.cornell.edu/uscode/text/11/362",
+            "relevance": (
+                "Defines the automatic stay framework that requires review before continuing "
+                "affected enforcement, collection, or lien activity after a bankruptcy filing."
+            ),
+        },
+        {
+            "title": "11 U.S.C. § 108(c) — Extension of time",
+            "url": "https://www.law.cornell.edu/uscode/text/11/108",
+            "relevance": (
+                "Supports separate analysis of enforcement deadlines during bankruptcy; "
+                "do not encode a universal assumption that every limitation period stops."
+            ),
+        },
+        {
+            "title": "California Code of Civil Procedure § 683.020 — General enforcement period",
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=683.020.&lawCode=CCP",
+            "relevance": (
+                "Provides the general ten-year judgment enforcement framework, subject to "
+                "applicable exceptions and renewal provisions requiring source-specific review."
+            ),
+        },
+        {
+            "title": "15 U.S.C. § 1692a(5) — Definition of debt",
+            "url": "https://www.law.cornell.edu/uscode/text/15/1692a",
+            "relevance": (
+                "Defines the consumer-purpose debt scope relevant to federal debt-collection "
+                "classification; commercial focus does not remove applicable state requirements."
+            ),
+        },
+        {
+            "title": "15 U.S.C. § 7704 — Commercial electronic mail requirements",
+            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
+            "relevance": (
+                "Governs commercial email practices including sender accuracy, subject lines, "
+                "postal address disclosure, opt-out functionality, and honoring opt-out requests."
+            ),
+        },
+        {
+            "title": "47 U.S.C. § 227 — Restrictions on telephone equipment use",
+            "url": "https://www.law.cornell.edu/uscode/text/47/227",
+            "relevance": (
+                "Requires separate analysis before extending an email acquisition workflow "
+                "into calling or messaging practices covered by the statute and implementing rules."
+            ),
+        },
+        {
+            "title": "Nevada Revised Statutes § 116.3116 — Association liens",
+            "url": "https://www.leg.state.nv.us/NRS/NRS-116.html#NRS116Sec3116",
+            "relevance": (
+                "Provides the Nevada association-lien framework; priority and enforcement "
+                "depend on the applicable text, related provisions, and transaction evidence."
+            ),
+        },
+        {
+            "title": "Texas Tax Code § 34.21 — Right of redemption",
+            "url": "https://statutes.capitol.texas.gov/Docs/TX/htm/TX.34.htm#34.21",
+            "relevance": (
+                "Establishes property-specific tax-sale redemption periods and payment mechanics; "
+                "premiums require verified classification, timing, and eligible cost calculations."
+            ),
+        },
+    ],
+}
