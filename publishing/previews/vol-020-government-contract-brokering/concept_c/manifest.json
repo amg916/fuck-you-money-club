@@ -1,0 +1,65 @@
+{
+  "concept_id": "concept_c",
+  "volume_id": "vol-020-government-contract-brokering",
+  "approved": false,
+  "edition_status": "concept_preview",
+  "preview_only": true,
+  "files": {
+    "digital_pdf.pdf": {
+      "bytes": 1937051,
+      "sha256": "c472fcfa79cea5a00e8d0003e438aec04706f86571fc4819da4a0e96e2bc3864"
+    },
+    "print_6x9_pdf.pdf": {
+      "bytes": 2494991,
+      "sha256": "cea8c96374ab000448e7f8aee60aded1c80fae4813da9487c55dae51490b69a2"
+    },
+    "workbook_pdf.pdf": {
+      "bytes": 541760,
+      "sha256": "b867a7930da5e8905ca1b6cfea1d740ba68e44e82153ad64f39510b74b6ce580"
+    },
+    "book.epub": {
+      "bytes": 251681,
+      "sha256": "f728f5f27356f3fd67267ada192b87bbdfaf79b2c0dd38d7e60ad6d64fdbdecb"
+    },
+    "art/cover.svg": {
+      "bytes": 4105,
+      "sha256": "4b50cad5bfbe47964e59817f8aa2bd802ca4102cc1bcea99ac5b83bba2d23b71"
+    },
+    "art/scorecard.svg": {
+      "bytes": 38704,
+      "sha256": "f31911f2024a60a11787341749d6c12bc12ad8d91a2f69137447b700960eeaa4"
+    },
+    "art/diag_01.svg": {
+      "bytes": 11967,
+      "sha256": "49d02cfb37956a1d0e3c1bed8c30c26a4ef0e3d21fa6934895d5fb96d74a2cd9"
+    },
+    "art/diag_02.svg": {
+      "bytes": 8487,
+      "sha256": "1f7345de77eaa62210a6db1a77cfad50752c5ee26e6e3a9b92e5bbb4031a956f"
+    },
+    "art/diag_03.svg": {
+      "bytes": 12164,
+      "sha256": "205fd4ca8a1bf3c40e92d4cae155acce4de5ae70c7627319897beea8b5feecfb"
+    },
+    "art/diag_04.svg": {
+      "bytes": 9991,
+      "sha256": "d95e2cdedc1857bb5628c836491224fc050d1f0ed44563696f40c247ad91ff20"
+    },
+    "art/diag_05.svg": {
+      "bytes": 10334,
+      "sha256": "ea591ab66b141368299f9da333145efa166c7e6b53444fa5ca079e8e6f5a66fa"
+    },
+    "art/diag_06.svg": {
+      "bytes": 14195,
+      "sha256": "1ed4216d1eb41d80fc6b3cf50ffb127415e02a1f71bb55179ed1aac3d5a57c20"
+    },
+    "art/diag_07.svg": {
+      "bytes": 8860,
+      "sha256": "0ff8fb32a26ffcbbe0dbd576e749b32b38e7ff7d05e5e546fa2567f73620086f"
+    },
+    "art/diag_08.svg": {
+      "bytes": 8800,
+      "sha256": "2cc748c380afa7766dfd365ccc7690f8488d4e8557c6b8cf0d27d2be79e3c657"
+    }
+  }
+}

@@ -1,0 +1,804 @@
+from __future__ import annotations
+
+CHAPTER_11 = {
+    "id": "Q11",
+    "chapter_id": "Q11",
+    "chapter_number": 11,
+    "question_number": 11,
+    "slug": "pod-architecture-contractor-kpis-exit-valuation",
+    "question_prompt": "How do you structure a lean 2 FT + 3 C (5 people) -> 3 FT + 4 C (7 people) pod, enforce weekly scorecards, and build transferable books that command a premium exit multiple (or durable cash cow)?",
+    "kicker": "Q11 / THE BIG MONEY PLAYBOOKS",
+    "title": "Pod Architecture, Contractor KPIs & Exit Valuation",
+    "subtitle": "SAM.gov Bid-Desk Seats, FAR-Aware Teaming, Weekly Contractor Scorecards, Accrual Cohorts & Transferable Service-Fee Earnings",
+    "layout_template": "action_checklist",
+    "reading_time_minutes": 14,
+    "executive_summary": (
+        "Candidate #4, Government Contract Brokering, ranks #20 with a 70/100 "
+        "Money-to-Manpower Score. Build its procurement-services business around "
+        "seven mapped operator plays: solicitation intelligence, opportunity "
+        "qualification, bid-calendar control, proposal assembly, teaming "
+        "diligence, submission quality assurance, and post-award coordination. "
+        "Two full-time seats and three contractors support the Conservative "
+        "and Base cases; three full-time seats and four contractors support "
+        "Scaled operations. Canonical annual owner profits are $18,000, "
+        "$126,000, and $300,000, respectively. This chapter converts those "
+        "staffing limits into accountable seats, purchased contractor capacity, "
+        "weekly evidence-backed metrics, concentration limits, and transferable "
+        "records. Recognize service fees rather than client award values, "
+        "price founder replacement before discussing multiples, and preserve "
+        "a cash-generating operating option when acquisition terms disappoint."
+    ),
+    "key_metrics": [
+        {
+            "label": "Conservative",
+            "value": "$120,000",
+            "context": "Annual recognized procurement-service fees, excluding client contract awards",
+            "note": "15% net margin; $18,000 annual owner net profit; 2 FT + 3 C",
+        },
+        {
+            "label": "Base",
+            "value": "$560,000",
+            "context": "Annual recognized procurement-service fees, excluding client contract awards",
+            "note": "22.5% net margin; $126,000 annual owner net profit; 2 FT + 3 C",
+        },
+        {
+            "label": "Scaled",
+            "value": "$1,000,000",
+            "context": "Annual recognized procurement-service fees, excluding client contract awards",
+            "note": "30% net margin; $300,000 annual owner net profit; 3 FT + 4 C",
+        },
+    ],
+    "sections": [
+        {
+            "heading": "1. Assign seven operator plays to five accountable seats",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Define the business as a procurement-services desk, not an "
+                    "award-resale machine. For this chapter, map its seven "
+                    "operator plays as P1 solicitation intelligence, P2 opportunity "
+                    "qualification, P3 bid-calendar control, P4 proposal assembly, "
+                    "P5 teaming diligence, P6 submission quality assurance, and "
+                    "P7 post-award coordination. These are operating workstreams, "
+                    "not seven additional revenue assumptions. In the five-person "
+                    "pod, FT1 is the principal and account lead, accountable for "
+                    "P2, P5, client scope, pricing, and cash collection. FT2 is "
+                    "the delivery manager, accountable for P3, P6, workload "
+                    "sequencing, and acceptance evidence. Contractor C1 performs "
+                    "P1 research and qualification preparation; C2 produces P4 "
+                    "response packages; C3 supplies specialist reviews and P7 "
+                    "administrative support. Each play has one accountable "
+                    "employee even when several people contribute. The client "
+                    "retains responsibility for its representations, pricing "
+                    "decisions, and authorized submission signatures. Use SAM.gov "
+                    "saved searches, agency acquisition forecasts, and the actual "
+                    "municipal purchasing portal as source systems. Record the "
+                    "solicitation identifier, amendment number, source URL, due "
+                    "time, and time zone before work enters the queue. A "
+                    "notification email is merely a lead; the controlling "
+                    "solicitation and amendments define the deliverable. Assign "
+                    "a backup employee to every deadline so principal absence "
+                    "does not suspend service."
+                ),
+                (
+                    "Purchase contractor outputs and reserved capacity rather "
+                    "than pretending three contractors equal three full-time "
+                    "employees. An illustrative Base budget buys 720 annual "
+                    "research hours at $45, 720 proposal hours at $65, and "
+                    "320 specialist hours at $90: $32,400 plus $46,800 plus "
+                    "$28,800 equals $108,000. That is 1,760 purchased hours "
+                    "across three people, with surge work requiring an explicit "
+                    "scope adjustment. These rates are planning inputs, not "
+                    "market quotations. Contracts specify deliverable format, "
+                    "source traceability, revision boundaries, confidentiality, "
+                    "conflict disclosure, and a signed assignment of copyright "
+                    "under 17 U.S.C. section 204(a). Do not rely solely on "
+                    "work-made-for-hire wording for commissioned materials. "
+                    "Require research delivery within two business days of "
+                    "assignment, proposal drafts three business days before "
+                    "the internal cutoff, and specialist review within one "
+                    "business day after a complete package arrives. Reserve "
+                    "review capacity when accepting the assignment; an SLA "
+                    "without capacity is fiction. Pay accepted hourly work "
+                    "or defined milestones, never a routine percentage of "
+                    "federal awards. Apply FAR Subpart 3.4 to contingent-fee "
+                    "arrangements, including the facts supporting any applicable "
+                    "exception. Independence must also be genuine: output "
+                    "specifications do not cure worker misclassification when "
+                    "actual control and economic dependence point toward employment."
+                ),
+                (
+                    "Add the seventh-person configuration only when measured "
+                    "workload supports it. FT3 becomes the account-operations "
+                    "lead, taking P7 and recurring client reporting from FT1; "
+                    "C4 provides independent proposal review and amendment "
+                    "coverage under FT2. The resulting three full-time seats "
+                    "and four contractors remain seven people, not seven "
+                    "unrestricted production equivalents. Keep authors and "
+                    "final reviewers separate on every material submission, "
+                    "including municipal responses with different procurement "
+                    "codes. Use SharePoint version history for controlled "
+                    "documents and an Asana board for owners, dependencies, "
+                    "and internal cutoffs; neither replaces the government "
+                    "portal receipt. Track client permission for credentials "
+                    "and signatures, and avoid shared personal accounts. "
+                    "Before proposing prime/sub arrangements, check the actual "
+                    "solicitation, applicable FAR 52.219-14 clause, and "
+                    "13 CFR 125.6 limitations on subcontracting. Review "
+                    "ostensible-subcontractor exposure under 13 CFR 121.103 "
+                    "where relevant. A bid desk cannot manufacture eligibility "
+                    "by placing a nominal qualifying firm above the real "
+                    "performer. Treat supplier capability as evidence-based: "
+                    "staff availability, relevant past performance, required "
+                    "licenses, and signed commitments. The pod sells "
+                    "coordination and execution discipline; it does not sell "
+                    "access to officials. Procurement-integrity and anti-kickback "
+                    "requirements apply to conduct regardless of whether the "
+                    "business calls itself a broker, consultant, or teaming adviser."
+                ),
+            ],
+            "table": {
+                "caption": "Five-Person Ownership and Seven-Person Expansion Across Seven Plays",
+                "headers": [
+                    "Seat and accountable operating scope",
+                    "Purchased capacity or staffing boundary",
+                    "Required handoff and acceptance evidence",
+                    "Failure trigger and corrective operating action",
+                ],
+                "rows": [
+                    [
+                        "FT1 principal owns P2 qualification and P5 teaming diligence",
+                        "One full-time seat includes pricing and collection responsibility",
+                        "Signed scope and documented eligibility review precede production",
+                        "Unresolved eligibility concern stops proposal commitments immediately",
+                    ],
+                    [
+                        "FT2 delivery manager owns P3 calendars and P6 submission assurance",
+                        "One full-time seat reserves reviewer capacity before assignment",
+                        "Versioned checklist links amendments, reviewers, and submission receipt",
+                        "Missing amendment acknowledgment sends package back for correction",
+                    ],
+                    [
+                        "C1 research contractor executes P1 intelligence and qualification preparation",
+                        "Base illustration purchases 720 hours at $45 hourly",
+                        "Source-linked opportunity brief includes deadlines and mandatory requirements",
+                        "Unsupported eligibility claims require source correction before acceptance",
+                    ],
+                    [
+                        "C2 proposal contractor executes P4 assembly and response production",
+                        "Base illustration purchases 720 hours at $65 hourly",
+                        "Requirement crosswalk links each response to supporting evidence",
+                        "Unanswered mandatory requirement blocks internal package acceptance",
+                    ],
+                    [
+                        "C3 specialist supports P5 reviews and P7 administrative coordination",
+                        "Base illustration purchases 320 hours at $90 hourly",
+                        "Written findings distinguish administrative issues from specialist determinations",
+                        "Supplier capability gaps return to principal for resolution",
+                    ],
+                    [
+                        "Scaled FT3 owns P7 while C4 independently supports P6",
+                        "Expansion adds one employee and one bounded contractor engagement",
+                        "Account reporting and independent reviews transfer through documented checklists",
+                        "Unfunded recurring workload prevents adding permanent payroll commitments",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Protect scarce reviewer hours before chasing more solicitations",
+                "body": (
+                    "The practical constraint is usually reliable review capacity "
+                    "near clustered deadlines, not the number of searchable opportunities."
+                ),
+                "items": [
+                    "Reserve a named reviewer when opening each pursuit; never discover review demand on submission morning.",
+                    "Save the solicitation and every amendment with retrieval timestamps; email alerts can arrive after material changes.",
+                    "Price municipal portal registration and upload rehearsal as explicit scope when the client lacks working credentials.",
+                    "Give contractor invoices the same client, pursuit, and play codes used in the margin ledger so overruns remain traceable.",
+                ],
+            },
+        },
+        {
+            "heading": "2. Run a weekly scorecard that rewards accepted work and collected fees",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Run a forty-five-minute Monday operating review from "
+                    "a frozen Friday dataset. FT2 publishes the queue; FT1 "
+                    "resolves scope and collection decisions. Score P1 on "
+                    "qualified opportunities accepted by FT1, not scraped "
+                    "notice volume. Score P2 on documented bid/no-bid "
+                    "decisions before production begins. Score P3 on "
+                    "amendments incorporated before internal cutoffs, and "
+                    "P4 on first-pass acceptance of complete response "
+                    "packages. Score P5 on verified supplier commitments "
+                    "and unresolved eligibility issues, P6 on accepted "
+                    "submissions with portal receipts, and P7 on timely "
+                    "client reports and resolved invoice exceptions. "
+                    "Define first-pass acceptance as packages accepted "
+                    "without material correction divided by packages "
+                    "reviewed that week. A material correction changes "
+                    "eligibility, pricing, required evidence, or responsiveness; "
+                    "a stylistic edit does not. Start with a 95% "
+                    "first-pass target and zero missed external deadlines, "
+                    "then inspect the underlying cases instead of "
+                    "rewarding denominator manipulation. Record sample "
+                    "sizes beside every percentage. One accepted package "
+                    "out of one is not evidence of stable quality. "
+                    "Track award outcomes separately by solicitation "
+                    "cohort, because agencies control evaluation schedules "
+                    "and award decisions. Never dock a contractor simply "
+                    "because a fully responsive client lost on price. "
+                    "Use debrief findings to improve qualification rather "
+                    "than rewriting the historical submission score."
+                ),
+                (
+                    "Convert the weekly board into capacity decisions. "
+                    "For each seat, divide committed production and "
+                    "review hours over the next fourteen days by "
+                    "available contracted hours over that same window. "
+                    "Treat utilization above 85% as a planning warning, "
+                    "not a universal productivity benchmark; the remaining "
+                    "capacity absorbs amendments, client delays, and "
+                    "portal failures. A yellow condition prompts scope "
+                    "resequencing, while a predicted missed external "
+                    "deadline requires immediate principal intervention. "
+                    "Contractor QA uses a written defect taxonomy: "
+                    "critical defects include wrong offeror identity, "
+                    "unsupported certification, omitted mandatory attachment, "
+                    "or unauthorized disclosure; major defects include "
+                    "broken cross-references or inconsistent pricing "
+                    "schedules. Critical defects trigger package isolation "
+                    "and independent reinspection before submission. "
+                    "Require defect acknowledgment within four business "
+                    "hours during agreed coverage, with a correction "
+                    "plan by the next business day. Those are "
+                    "response commitments, not permission to exceed "
+                    "a government deadline. Allocate rework charges "
+                    "according to the contract: contractor error, "
+                    "client scope change, and newly issued amendment "
+                    "are different causes. Maintain a backup reviewer "
+                    "with equivalent access permissions and conflict "
+                    "screening. Do not improve apparent throughput "
+                    "by sending protected procurement material into "
+                    "unapproved software. Tool convenience never "
+                    "substitutes for the client's information-handling "
+                    "requirements or the contract's specific security obligations."
+                ),
+                (
+                    "Apply a 25% ceiling to both customer revenue "
+                    "concentration and critical delivery-counterparty dependence. "
+                    "Measure each customer and related customer group "
+                    "against trailing-twelve-month recognized service fees; "
+                    "repeat the calculation on signed forward service "
+                    "backlog to expose pending concentration. Separately "
+                    "measure each critical subcontractor or supplier "
+                    "against delivery spend, and identify indispensable "
+                    "single-source dependencies even when their spend "
+                    "share is small. At the Base case, 25% of "
+                    "$560,000 is $140,000; at Scaled, 25% of "
+                    "$1,000,000 is $250,000. These are customer-fee "
+                    "limits, not caps on the customer's government "
+                    "award value. A young desk may exceed the "
+                    "ceiling before its fourth meaningful account; "
+                    "report that breach plainly, stop expanding the "
+                    "dominant account's exposure, and prioritize "
+                    "diversification rather than disguising related "
+                    "entities as separate customers. Also report "
+                    "exposure by agency, municipal jurisdiction, and "
+                    "prime contractor, since apparently diverse "
+                    "clients can depend on one funding source. "
+                    "Track receivables aging weekly and suspend "
+                    "new discretionary work when contractual payment "
+                    "triggers are breached. Predefine escalation "
+                    "and continuity duties so a collection dispute "
+                    "does not cause an avoidable live-submission "
+                    "failure. Weekly decisions must identify an "
+                    "owner, due date, and measurable closure condition."
+                ),
+            ],
+            "table": {
+                "caption": "Weekly Evidence-Backed KPIs and Explicit Intervention Thresholds",
+                "headers": [
+                    "Metric and exact operating measurement",
+                    "Initial target or exposure boundary",
+                    "Evidence retained with weekly scorecard",
+                    "Named owner and required intervention",
+                ],
+                "rows": [
+                    [
+                        "Qualified pursuit share uses accepted briefs over researched notices",
+                        "Establish segment baselines before promising a conversion percentage",
+                        "FT1 decisions retain source links and rejection reasons",
+                        "C1 corrects targeting when rejected briefs share recurring defects",
+                    ],
+                    [
+                        "First-pass acceptance divides clean packages by reviewed packages",
+                        "Target at least 95% while disclosing weekly sample sizes",
+                        "Review logs distinguish material defects from stylistic edits",
+                        "FT2 assigns corrective training for repeated material defects",
+                    ],
+                    [
+                        "Submission reliability measures receipt-backed deliveries before external deadlines",
+                        "Require zero missed external deadlines across accepted engagements",
+                        "Portal receipts retain timestamp, solicitation identifier, and submitted version",
+                        "FT2 escalates endangered deadlines before discretionary work continues",
+                    ],
+                    [
+                        "Forward utilization divides committed hours by available reserved hours",
+                        "Investigate utilization exceeding 85% across fourteen calendar days",
+                        "Capacity ledger includes production, review, leave, and surge commitments",
+                        "FT1 adjusts scope or buys documented additional capacity",
+                    ],
+                    [
+                        "Customer concentration groups related accounts within recognized fee revenue",
+                        "Keep each group at or below 25% exposure",
+                        "Trailing revenue and forward backlog disclose separate concentration calculations",
+                        "FT1 freezes incremental dominant-account exposure while diversifying sales",
+                    ],
+                    [
+                        "Counterparty dependence measures critical delivery spend and substitution readiness",
+                        "Keep each counterparty at or below 25% spend",
+                        "Supplier ledger includes replacement lead times and access readiness",
+                        "FT2 develops alternatives for concentrated or indispensable delivery sources",
+                    ],
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Freeze Friday evidence",
+                    "action": "Export the pursuit register, capacity ledger, QA log, and receivables aging.",
+                    "detail": "FT2 timestamps the snapshot and reconciles every active pursuit to its current solicitation amendment.",
+                },
+                {
+                    "step": 2,
+                    "title": "Calculate denominators before interpreting ratios",
+                    "action": "Publish accepted packages, reviewed packages, committed hours, available hours, and related-account revenue.",
+                    "detail": "Show small samples and concentration breaches directly; do not remove failed work from the denominator.",
+                },
+                {
+                    "step": 3,
+                    "title": "Resolve exceptions in Monday review",
+                    "action": "Assign one employee owner to every deadline risk, critical defect, collection issue, and concentration breach.",
+                    "detail": "Each decision records the correction, purchased capacity if needed, due date, and evidence required for closure.",
+                },
+                {
+                    "step": 4,
+                    "title": "Verify closure before the next cutoff",
+                    "action": "Inspect corrected packages, updated commitments, and payment evidence against the prior snapshot.",
+                    "detail": "Carry unresolved items forward visibly and escalate anything that threatens an external submission deadline.",
+                },
+            ],
+        },
+        {
+            "heading": "3. Reconcile service-fee cohorts to the canonical owner-profit cases",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "Keep the canonical cases intact: Conservative "
+                    "recognizes $120,000 of service fees, incurs "
+                    "$102,000 of total costs, and leaves $18,000 "
+                    "at 15%; Base recognizes $560,000, incurs "
+                    "$434,000, and leaves $126,000 at 22.5%; "
+                    "Scaled recognizes $1,000,000, incurs $700,000, "
+                    "and leaves $300,000 at 30%. A client's "
+                    "$8 million award contributes zero to desk "
+                    "revenue unless the desk separately earns "
+                    "contracted service fees. Never book that "
+                    "award as brokerage turnover or use it "
+                    "to inflate acquisition metrics. An illustrative "
+                    "Base cost envelope allocates $180,000 to "
+                    "the two employee seats, $108,000 to the "
+                    "three contractor engagements, and $146,000 "
+                    "to remaining delivery and operating costs. "
+                    "A Scaled envelope allocates $300,000 to "
+                    "three employees, $160,000 to four contractors, "
+                    "and $240,000 to remaining costs. These "
+                    "envelopes reconcile arithmetic; they do "
+                    "not establish prevailing compensation. The "
+                    "Conservative $102,000 ceiling is especially "
+                    "tight for two full-time seats plus purchased "
+                    "contractor work. Document actual compensation, "
+                    "owner labor, and deferred economic requirements "
+                    "rather than claiming it funds market-rate "
+                    "replacement staffing. The stated $5,000–$25,000 "
+                    "monthly operating range cannot represent "
+                    "all-in Scaled costs: $700,000 divided by "
+                    "twelve is approximately $58,333 monthly. "
+                    "Separate overhead from total delivery costs "
+                    "when using that planning range."
+                ),
+                (
+                    "Close books on accrual principles with "
+                    "client, engagement, play, and origination-cohort "
+                    "codes. Recognize a monthly stand-ready "
+                    "retainer over the service period when "
+                    "that reflects the performance obligation; "
+                    "recognize a discrete proposal milestone "
+                    "when the applicable recognition criteria "
+                    "are satisfied. A deposit received before "
+                    "performance remains a contract liability, "
+                    "not earned revenue. Where ASC 606 "
+                    "applies, document the performance obligations "
+                    "and recognition method with the accountant. "
+                    "Accrue accepted contractor work in the "
+                    "same reporting period as delivery, even "
+                    "if the invoice arrives later. Reconcile "
+                    "QuickBooks Online or Xero project detail "
+                    "to signed scopes, acceptance records, "
+                    "receivables, bank deposits, and contractor "
+                    "commitments. Treat reimbursed costs according "
+                    "to the actual principal-versus-agent "
+                    "analysis, not whichever presentation produces "
+                    "larger revenue. Keep unbilled earned fees "
+                    "separate from conditional opportunities and "
+                    "unperformed backlog. Track bad-debt estimates "
+                    "and credit notes by originating cohort "
+                    "so weak clients do not disappear "
+                    "inside current-month totals. Each month, "
+                    "bridge opening receivables plus invoices "
+                    "minus collections and credits to closing "
+                    "receivables. Then bridge recognized revenue "
+                    "to billings through contract assets "
+                    "and liabilities. An attractive profit "
+                    "statement without those bridges can "
+                    "conceal delayed billing, disputed acceptance, "
+                    "or cash taken for work still owed."
+                ),
+                (
+                    "Build cohort reporting around the month "
+                    "the service relationship began, not the "
+                    "government's eventual award month. For "
+                    "each cohort, report opening recurring "
+                    "fees, expansion, contraction, churn, "
+                    "recognized project fees, direct contractor "
+                    "costs, allocated employee delivery time, "
+                    "and cash collected. Keep recurring "
+                    "retainers separate from one-off proposal "
+                    "projects; a client purchasing two bids "
+                    "does not automatically create annual "
+                    "recurring revenue. Measure gross retention "
+                    "only on an identified recurring-fee "
+                    "population, and publish the formula "
+                    "alongside the result. Track proposal "
+                    "margins by complexity band so a "
+                    "simple municipal quote does not "
+                    "subsidize an unpriced federal technical "
+                    "volume indefinitely. Use time records "
+                    "to test the allocation method, "
+                    "including founder hours that are "
+                    "absent from payroll. Model a thirteen-week "
+                    "cash forecast using contractual payment "
+                    "dates and observed collection behavior. "
+                    "A client's government payment expectations "
+                    "do not automatically determine when "
+                    "the desk gets paid. The stated "
+                    "6–18 months to first deal makes "
+                    "the $25,000–$150,000 startup range a "
+                    "runway constraint, not a hiring "
+                    "instruction. At $25,000 monthly cash "
+                    "burn, $150,000 funds six months "
+                    "before collections or additional capital. "
+                    "Rephase hiring and discretionary spending "
+                    "when signed fees cannot support "
+                    "the projected cash trough."
+                ),
+            ],
+            "table": {
+                "caption": "Canonical Case Reconciliation and Transferable Accounting Evidence",
+                "headers": [
+                    "Scenario or accounting control applied",
+                    "Recognized service-fee basis and cost arithmetic",
+                    "Required staffing or recognition interpretation",
+                    "Evidence retained for operator and buyer",
+                ],
+                "rows": [
+                    [
+                        "Conservative case retains the specified five-person pod structure",
+                        "$120,000 revenue minus $102,000 costs equals $18,000 profit",
+                        "15% margin requires explicit disclosure of owner labor economics",
+                        "Compensation ledger identifies unpaid effort and replacement-cost exposure",
+                    ],
+                    [
+                        "Base case retains two employees and three contractors",
+                        "$560,000 revenue minus $434,000 costs equals $126,000 profit",
+                        "22.5% margin includes the full recorded operating cost envelope",
+                        "Seat budgets reconcile $180,000 plus $108,000 plus $146,000",
+                    ],
+                    [
+                        "Scaled case uses three employees and four contractors",
+                        "$1,000,000 revenue minus $700,000 costs equals $300,000 profit",
+                        "30% margin remains separate from client government award values",
+                        "Seat budgets reconcile $300,000 plus $160,000 plus $240,000",
+                    ],
+                    [
+                        "Advance receipts remain distinct from earned service fees",
+                        "Cash received before performance initially increases contract liabilities",
+                        "Recognition follows documented obligations rather than deposit timing",
+                        "Monthly schedules connect bank receipts to remaining service commitments",
+                    ],
+                    [
+                        "Contractor accruals match accepted work to delivery periods",
+                        "Accepted unbilled work increases expenses and accrued liabilities",
+                        "Later invoice arrival does not justify postponing delivery costs",
+                        "Acceptance records reconcile contractor timesheets and subsequent invoice payments",
+                    ],
+                    [
+                        "Cohort reporting distinguishes recurring retainers from discrete proposals",
+                        "Client award principal never enters recognized desk service revenue",
+                        "Retention calculations use a clearly defined recurring-fee population",
+                        "Cohort bridges expose churn, credits, collection delays, and rework",
+                    ],
+                ],
+            },
+        },
+        {
+            "heading": "4. Price transferable earnings rather than founder-dependent award stories",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "Prepare a buyer-ready record before "
+                    "requesting a multiple. Assemble signed "
+                    "client scopes, renewal terms, termination "
+                    "rights, assignment provisions, contractor "
+                    "agreements, intellectual-property assignments, "
+                    "monthly accrual statements, cohort "
+                    "bridges, and receipt-backed delivery "
+                    "logs. Separate reusable desk templates "
+                    "from client-owned proposal content and "
+                    "government information subject to "
+                    "handling restrictions. Section 204(a) "
+                    "requires a signed writing for "
+                    "a copyright ownership transfer; "
+                    "an invoice alone does not "
+                    "establish ownership. Inventory any "
+                    "third-party licenses and identify "
+                    "which can transfer. A buyer "
+                    "also needs evidence that account "
+                    "relationships survive the founder: "
+                    "record nonfounder client contacts, "
+                    "renewal ownership, documented workflows, "
+                    "and successful delivery during "
+                    "planned founder absences. Distinguish "
+                    "assignment of ordinary advisory "
+                    "contracts from transfer of an "
+                    "actual federal contract. If the "
+                    "business holds federal contracts, "
+                    "an asset transaction may require "
+                    "novation analysis under FAR "
+                    "42.1204 and the transfer "
+                    "restrictions in 41 U.S.C. "
+                    "section 6305. Do not promise "
+                    "that a buyer inherits awards, "
+                    "set-aside eligibility, or agency "
+                    "relationships automatically. Where "
+                    "services create organizational conflicts "
+                    "of interest, preserve the "
+                    "FAR Subpart 9.5 analysis "
+                    "and client restrictions. Redact "
+                    "and stage diligence access "
+                    "rather than exposing protected "
+                    "proposal material to every "
+                    "prospective acquirer."
+                ),
+                (
+                    "Use valuation ranges as negotiation "
+                    "sensitivities, not reported transaction "
+                    "comparables. For a small owner-operated "
+                    "desk, test roughly 2–3 times "
+                    "properly normalized seller discretionary "
+                    "earnings; for a demonstrably "
+                    "manager-run book, test roughly "
+                    "3–4 times normalized EBITDA. "
+                    "Those are different denominators "
+                    "and must never be mixed. "
+                    "The canonical owner-profit figures "
+                    "are neither automatically EBITDA "
+                    "nor automatically seller discretionary "
+                    "earnings. Bridge them through "
+                    "actual owner compensation, interest, "
+                    "taxes, depreciation, amortization, "
+                    "and supportable adjustments before "
+                    "selecting a valuation basis. "
+                    "For a simplified replacement-adjusted "
+                    "sensitivity, assume the canonical "
+                    "profit includes no compensation "
+                    "for the owner's delivery role, "
+                    "all other normalization adjustments "
+                    "are zero, and that role "
+                    "requires additional fully loaded "
+                    "replacement cost. Base profit "
+                    "of $126,000 less $90,000 "
+                    "then leaves $36,000; a "
+                    "2.5–3.5 times sensitivity implies "
+                    "$90,000–$126,000 of enterprise "
+                    "value. Scaled profit of "
+                    "$300,000 less $120,000 leaves "
+                    "$180,000; 3–4 times implies "
+                    "$540,000–$720,000. Conservative profit "
+                    "of $18,000 less $90,000 "
+                    "is negative $72,000, so "
+                    "this method supports no "
+                    "positive earnings-based valuation. "
+                    "Do not subtract replacement "
+                    "cost twice when equivalent "
+                    "management compensation is already "
+                    "included in the expense base."
+                ),
+                (
+                    "A premium within any negotiated "
+                    "range must come from reduced "
+                    "transfer risk: diversified fees, "
+                    "repeatable retention, current IP "
+                    "assignments, low defect rates, "
+                    "reliable collections, and delivery "
+                    "that does not require founder "
+                    "heroics. Award win rate alone "
+                    "cannot establish durability because "
+                    "the mix of solicitations, "
+                    "client capabilities, and agency "
+                    "budgets changes. Compare offers "
+                    "on cash at close, seller "
+                    "financing, earnout definitions, "
+                    "working-capital adjustments, escrow, "
+                    "and retained liabilities. Enterprise "
+                    "value becomes equity proceeds "
+                    "only after the transaction's "
+                    "cash, debt, and other "
+                    "agreed adjustments; headline price "
+                    "is not distributable cash. "
+                    "For an earnout, define "
+                    "recognized service fees, eligible "
+                    "customers, attribution of renewals, "
+                    "collection conditions, and the "
+                    "buyer's ability to change "
+                    "staffing or pricing. Exclude "
+                    "client award principal from "
+                    "every revenue definition. If "
+                    "offers undervalue dependable distributions, "
+                    "retain the business as "
+                    "a managed cash cow "
+                    "and test quarterly whether "
+                    "the principal can step "
+                    "away without degraded delivery "
+                    "or collections. Keep the "
+                    "same concentration ceilings, "
+                    "replacement-cost analysis, and "
+                    "cash reserves after deciding "
+                    "not to sell. Transferability "
+                    "is useful even without "
+                    "a transaction: it protects "
+                    "continuity during illness, "
+                    "contractor departure, supplier "
+                    "failure, and uneven government "
+                    "procurement cycles."
+                ),
+            ],
+            "table": {
+                "caption": "Buyer Diligence Tests and Explicit Valuation Sensitivities",
+                "headers": [
+                    "Transferability or valuation question examined",
+                    "Specific evidence or illustrative arithmetic required",
+                    "Value impairment discovered through the test",
+                    "Operator correction before marketing the business",
+                ],
+                "rows": [
+                    [
+                        "Can another operator own and reuse delivery assets",
+                        "Signed assignments distinguish desk templates from client-owned content",
+                        "Missing ownership rights prevent reliable transfer of core materials",
+                        "Obtain signed assignments and resolve third-party license restrictions",
+                    ],
+                    [
+                        "Will service relationships survive a change in ownership",
+                        "Client contracts disclose assignment, renewal, and termination provisions",
+                        "Founder-only relationships and restrictive assignment terms weaken recurring value",
+                        "Build nonfounder contacts and document required contractual permissions",
+                    ],
+                    [
+                        "Does Base profit survive an additional replacement manager",
+                        "$126,000 less $90,000 leaves $36,000 under stated assumptions",
+                        "Illustrative 2.5–3.5 times yields only $90,000–$126,000 enterprise value",
+                        "Verify existing compensation before applying any replacement deduction",
+                    ],
+                    [
+                        "Does Scaled profit support a manager-run earnings sensitivity",
+                        "$300,000 less $120,000 leaves $180,000 under stated assumptions",
+                        "Illustrative 3–4 times yields $540,000–$720,000 before transaction adjustments",
+                        "Substantiate transferable margins through payroll and cohort evidence",
+                    ],
+                    [
+                        "Does Conservative profit support positive replacement-adjusted earnings value",
+                        "$18,000 less $90,000 produces negative $72,000 annual earnings",
+                        "The stated sensitivity supplies no positive earnings-based enterprise value",
+                        "Improve economics or separately evaluate transferable asset value",
+                    ],
+                    [
+                        "Will quoted enterprise value become usable seller proceeds",
+                        "Offer bridge identifies debt, cash, working capital, and escrow",
+                        "Earnouts and retained liabilities can materially reduce realized proceeds",
+                        "Negotiate precise fee definitions and model payment timing",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Verify four conditions before presenting a transferable book",
+                "body": (
+                    "A sale process should expose documented operating strength, "
+                    "not depend on explanations that appear only after diligence begins."
+                ),
+                "items": [
+                    "Verify signed contractor IP assignments, client ownership boundaries, and transferable software rights before placing materials in the diligence room.",
+                    "Verify each related customer group and critical delivery counterparty remains at or below the 25% ceiling, with breaches disclosed and remediation documented.",
+                    "Verify twelve monthly accrual closes reconcile fees, contractor costs, contract liabilities, receivables, and cash without including client award principal.",
+                    "Verify founder replacement, client assignment terms, any federal-contract novation requirements, and the exact earnings denominator used in every valuation sensitivity.",
+                ],
+            },
+        },
+    ],
+    "pull_quote": "A transferable bid desk is worth the earnings another operator can keep, not the awards its founder can describe.",
+    "diagram_id": "diag-06",
+    "action_checklist": [
+        "Assign P1 through P7 to the two employee owners and three bounded contractor engagements, with a backup for every external deadline.",
+        "Execute contractor scopes covering purchased capacity, QA response times, defect remedies, confidentiality, conflicts, and signed copyright assignments.",
+        "Publish a Friday evidence snapshot and run Monday decisions on acceptance quality, receipt-backed deadlines, capacity, collections, and concentration.",
+        "Enforce the 25% related-customer and critical-counterparty ceilings using trailing fees, forward backlog, delivery spend, and substitution readiness.",
+        "Close monthly accrual and cohort ledgers to the exact $18,000, $126,000, and $300,000 canonical owner-profit cases without booking client awards.",
+        "Build a staged diligence room and compare sale proceeds with retained distributions using documented founder replacement and transferable-contract evidence.",
+    ],
+    "statutory_citations": [
+        {
+            "title": "17 U.S.C. section 204(a) — Execution of transfers of copyright ownership",
+            "url": "https://www.law.cornell.edu/uscode/text/17/204",
+            "relevance": "Obtain signed written copyright assignments for contractor-created assets intended to belong to the desk.",
+        },
+        {
+            "title": "FAR Subpart 3.4 — Contingent Fees",
+            "url": "https://www.acquisition.gov/far/subpart-3.4",
+            "relevance": "Evaluate contingent compensation and applicable exceptions before tying procurement-service pay to federal awards.",
+        },
+        {
+            "title": "41 U.S.C. section 2102 — Prohibitions on disclosing and obtaining procurement information",
+            "url": "https://www.law.cornell.edu/uscode/text/41/2102",
+            "relevance": "Prevent prohibited disclosure or acquisition of contractor bid, proposal, and source-selection information.",
+        },
+        {
+            "title": "41 U.S.C. section 8702 — Prohibition on kickbacks",
+            "url": "https://www.law.cornell.edu/uscode/text/41/8702",
+            "relevance": "Screen supplier compensation and referral arrangements for prohibited kickbacks connected to prime contracts and subcontracts.",
+        },
+        {
+            "title": "FAR 52.219-14 — Limitations on Subcontracting",
+            "url": "https://www.acquisition.gov/far/52.219-14",
+            "relevance": "Check applicable subcontracting limits against the actual contract clause and proposed performance structure.",
+        },
+        {
+            "title": "13 CFR 125.6 — Limitations on subcontracting",
+            "url": "https://www.ecfr.gov/current/title-13/section-125.6",
+            "relevance": "Assess small-business performance requirements, including applicable treatment of similarly situated entities.",
+        },
+        {
+            "title": "13 CFR 121.103 — Affiliation",
+            "url": "https://www.ecfr.gov/current/title-13/section-121.103",
+            "relevance": "Review affiliation and ostensible-subcontractor concerns before relying on a small-business prime structure.",
+        },
+        {
+            "title": "FAR Subpart 9.5 — Organizational and Consultant Conflicts of Interest",
+            "url": "https://www.acquisition.gov/far/subpart-9.5",
+            "relevance": "Identify advisory roles, access advantages, or conflicting responsibilities that restrict permissible procurement work.",
+        },
+        {
+            "title": "FAR 42.1204 — Applicability of novation agreements",
+            "url": "https://www.acquisition.gov/far/42.1204",
+            "relevance": "Determine whether a transaction involving federal contracts requires government recognition of a successor through novation.",
+        },
+        {
+            "title": "41 U.S.C. section 6305 — Prohibition on transfer of contract and certain allowable assignments",
+            "url": "https://www.law.cornell.edu/uscode/text/41/6305",
+            "relevance": "Distinguish restricted federal-contract transfers from permitted arrangements when evaluating acquisition structure.",
+        },
+    ],
+}

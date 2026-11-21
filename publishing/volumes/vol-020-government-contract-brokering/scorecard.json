@@ -1,0 +1,393 @@
+{
+  "candidate_number": 4,
+  "slug": "government-contract-brokering",
+  "title": "Government Contract Brokering",
+  "category": "Procurement services",
+  "production_stage": "approved_master",
+  "scores": {
+    "revenue_potential": 22,
+    "profit_margin_potential": 16,
+    "team_efficiency": 14,
+    "startup_accessibility": 8,
+    "automation_potential": 10
+  },
+  "dimension_max": {
+    "revenue_potential": 25,
+    "profit_margin_potential": 25,
+    "team_efficiency": 20,
+    "startup_accessibility": 15,
+    "automation_potential": 15
+  },
+  "total_score": 70,
+  "tier_label": "Disciplined Specialist Play",
+  "evidence_confidence": "High",
+  "uncertainty_band": "±3 pts",
+  "uncertainty_bounds": {
+    "low": 67,
+    "high": 73
+  },
+  "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
+  "score_rationale": {
+    "revenue_potential": "Revenue Potential: 22/25. Large awards do not translate to large fees; compliance and sales require labor.",
+    "profit_margin_potential": "Profit Margin Potential: 16/25. Large awards do not translate to large fees; compliance and sales require labor.",
+    "team_efficiency": "Team Efficiency: 14/20. Large awards do not translate to large fees; compliance and sales require labor.",
+    "startup_accessibility": "Startup Accessibility: 8/15. Large awards do not translate to large fees; compliance and sales require labor.",
+    "automation_potential": "Automation Potential: 10/15. Large awards do not translate to large fees; compliance and sales require labor."
+  },
+  "economics": {
+    "gross_revenue_range": "$120,000–$1,000,000 USD annually",
+    "net_profit_margin_range": "15–30%",
+    "owner_net_profit_potential": "$18,000–$300,000 USD annually, before personal taxes and reinvestment",
+    "startup_capital_range": "$25,000–$150,000 USD",
+    "monthly_opex_range": "$5,000–$25,000 USD",
+    "time_to_first_deal": "6–18 months",
+    "typical_team_size": {
+      "full_time_including_owner": 2,
+      "contractors": 3,
+      "total_people": 5
+    },
+    "includes_contractors_note": "Headcount includes the working owner and recurring contractors as people, not FTE equivalents. Contractors may be part-time. Scaled scenario adds one employee and one contractor; external vendor workforces are not counted as internal team members.",
+    "revenue_basis": "Recognized service fees, not client asset value",
+    "cost_basis": "Annual net margins include operating expenses and non-owner labor; monthly opex is fixed/semi-fixed overhead only. No owner salary is deducted. Capital needs may grow beyond startup range.",
+    "estimate_status": "Illustrative assumptions; not verified earnings data"
+  },
+  "scenarios": {
+    "conservative": {
+      "annual_gross_revenue_usd": 120000,
+      "net_profit_margin_pct": 15,
+      "annual_owner_net_profit_usd": 18000,
+      "full_time_including_owner": 2,
+      "contractors": 3,
+      "total_people": 5,
+      "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+    },
+    "base_case": {
+      "annual_gross_revenue_usd": 560000.0,
+      "net_profit_margin_pct": 22.5,
+      "annual_owner_net_profit_usd": 126000,
+      "full_time_including_owner": 2,
+      "contractors": 3,
+      "total_people": 5,
+      "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+    },
+    "scaled_small_team": {
+      "annual_gross_revenue_usd": 1000000,
+      "net_profit_margin_pct": 30,
+      "annual_owner_net_profit_usd": 300000,
+      "full_time_including_owner": 3,
+      "contractors": 4,
+      "total_people": 7,
+      "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+    }
+  },
+  "automation_levers": [
+    "Solicitation alerts",
+    "Bid calendars",
+    "Compliance checklists"
+  ],
+  "key_risks": [
+    "Award uncertainty",
+    "Payment delays",
+    "Supplier failure"
+  ],
+  "regulatory_notes": [
+    "Review contingent-fee restrictions, procurement integrity and anti-kickback rules.",
+    "Pass-through restrictions and set-aside rules can prohibit proposed structures."
+  ],
+  "track_ids": [
+    "track_1",
+    "track_2"
+  ],
+  "track_labels": [
+    "Asymmetric & Data-Arbitrage Plays",
+    "Grey-Zone Growth & Traffic Arbitrage"
+  ],
+  "plays": [
+    {
+      "id": "public_record_api_intelligence",
+      "track_id": "track_1",
+      "name": "Public-Record & API Intelligence",
+      "mechanism": "Ingest fragmented county dockets, probate registries, unclaimed property ledgers, and public APIs to surface uncontested claims or high-intent B2B triggers before manual competitors.",
+      "inputs": [
+        "Court & probate dockets",
+        "State controller ledgers",
+        "Public licensing & entity APIs"
+      ],
+      "workflow": [
+        "Poll and normalize county/state record releases on an automated cadence",
+        "Cross-match entity/kinship/lien records and filter by minimum net fee threshold",
+        "Route verified dossiers into compliant outreach and claim execution"
+      ],
+      "metrics": [
+        "Cost per verified lead",
+        "Docket-to-contact latency (hours)",
+        "Net recovery / conversion rate"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Portal rate-limiting or CAPTCHA gating",
+          "trigger": "High-frequency automated polling against county or agency web portals",
+          "impact": "Delayed lead ingestion or temporary IP block on target registry",
+          "detection_metric": "HTTP 429/403 rate and daily record ingestion delta",
+          "fallback": "Switch to scheduled bulk FOIA/public-record exports, official data feeds, and low-frequency cached queues"
+        }
+      ]
+    },
+    {
+      "id": "ego_bait_directory_badge_arbitrage",
+      "track_id": "track_1",
+      "name": "Industry Award & Verified Directory 'Ego-Bait' Badge Arbitrage",
+      "mechanism": "Publish data-scored state and city rankings ('Top 15 Verified Specialists in [City]') and issue free embeddable 'Top Rated' winner badges to ranked firms—earning hundreds of free high-DR backlinks when firms post the badge on their own sites, while upselling $299–$799/mo Featured #1 Lead-Capture placements.",
+      "inputs": [
+        "Public state licensing, inspection, & review dataset for 500+ firms per vertical",
+        "Transparent algorithmic scoring rubric + auto-generated SVG 'Verified Top 10%' embed badges",
+        "Self-serve $299–$799/mo Featured Placement & exclusive lead-routing checkout"
+      ],
+      "workflow": [
+        "Score all licensed operators in a high-ticket vertical using objective public records (years licensed, zero disciplinary actions, review velocity)",
+        "Notify top-scoring firms with their free embeddable HTML/SVG '2026 Top-Scored Provider' badge (driving natural dofollow backlinks back to your directory)",
+        "Convert 5–10% of shortlisted firms into $299–$799/mo Featured Top-Spot subscribers who receive priority inbound quote requests"
+      ],
+      "metrics": [
+        "Badge embed rate (% of notified firms linking back to directory)",
+        "Domain Rating (DR) growth and organic city-ranking velocity",
+        "Monthly recurring revenue (MRR) from Featured Profile subscriptions"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "FTC endorsement/ranking disclosure scrutiny or Google widget-link spam filtering",
+          "trigger": "Manipulating objective scores solely for pay-to-play without 'Sponsored' labels or stuffing keyword-anchor links inside badge HTML",
+          "impact": "Loss of editorial credibility or discounting of badge backlinks",
+          "detection_metric": "Anchor-text naturalness ratio and clear visual separation of 'Sponsored Featured Partner' vs. algorithmic score",
+          "fallback": "Keep the underlying algorithmic score 100% objective and immutable, clearly label paid top-spot placements as 'Sponsored / Featured', and use clean branded anchor text in badge embeds"
+        }
+      ]
+    },
+    {
+      "id": "government_rfp_subcontractor_brokerage",
+      "track_id": "track_1",
+      "name": "SAM.gov / Municipal RFP Scraping & Prime-Subcontractor Spread Arbitrage",
+      "mechanism": "Scrape federal SAM.gov, state procurement portals, and municipal bid boards for low-bid-density service solicitations (janitorial, grounds, courier, translation, IT staffing), pairing compliant proposal automation with vetted local fulfillment subcontractors for a 15–30% management spread.",
+      "inputs": [
+        "SAM.gov Contract Opportunities API & state/municipal e-procurement feeds",
+        "Historical FPDS award pricing benchmark database",
+        "Vetted local subcontractor network with FAR limitation-on-subcontracting compliance"
+      ],
+      "workflow": [
+        "Screen daily federal, state, and municipal RFPs/RFQs with <3 historical bidders and clear unit-price schedules",
+        "Benchmark winning historical unit rates via FPDS/FOIA award records and lock in binding back-to-back quotes from insured local operators",
+        "Submit compliant bid packages and manage billing, insurance, and QA reporting while retaining a 15–30% prime-management or authorized broker spread"
+      ],
+      "metrics": [
+        "Bid-to-award win rate (%) on low-competition solicitations",
+        "Net prime-to-subcontractor gross margin (15–30% target)",
+        "Contract renewal / option-year retention rate"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "FAR 52.219-14 (Limitations on Subcontracting) violation or illegal pass-through scheme",
+          "trigger": "Bidding small-business set-aside contracts and subcontracting 100% of the work to non-similarly-situated entities without performing required prime share",
+          "impact": "Contract termination for default, False Claims Act liability, or SAM.gov debarment",
+          "detection_metric": "Subcontracted labor-cost percentage strictly within FAR 52.219-14 limits (<=50% for services unless partnering with similarly situated small businesses)",
+          "fallback": "Bid unrestricted commercial/municipal contracts without set-aside caps, or team exclusively with 'similarly situated entities' under 13 CFR § 125.6"
+        }
+      ]
+    },
+    {
+      "id": "transferable_tax_credit_brokerage_syndication",
+      "track_id": "track_1",
+      "name": "Transferable Federal & State Tax Credit Brokerage & Syndication (IRA § 6418 / Film / Historic)",
+      "mechanism": "Scraping federal DOE/EPA interconnection queues, state film offices, and historic-preservation registries to originate transferable tax credits (IRC § 6418 Clean Energy Investment/Production Credits, Georgia/Louisiana Film Credits, State Historic Rehab & Brownfield Credits) from cash-strapped project developers at $0.82–$0.88 on the dollar and flipping them in simultaneous escrow closings to corporate and HNW taxpayers at $0.92–$0.96 on the dollar.",
+      "inputs": [
+        "State film-office production certifications, National Park Service Part 2/3 Historic Preservation filings, and utility solar/biogas/storage interconnection queues",
+        "IRS Energy Credits Online pre-filing registration verification and tax-credit recapture insurance underwriting partners",
+        "Outbound network of CPA managing partners, corporate tax directors, and family-office CIOs with $1M–$50M+ in quarterly federal/state tax liabilities"
+      ],
+      "workflow": [
+        "Monitor public project registries to identify middle-market solar, RNG, battery storage, independent film, and historic-rehab developers holding $1M–$25M in newly generated transferable credits",
+        "Lock up exclusive purchase or placement options at $0.83–$0.89 per $1.00 of credit prior to quarterly corporate estimated tax deadlines (April 15, June 15, Sept 15, Dec 15)",
+        "Package the credits with a third-party CPA cost-segregation/eligibility opinion and tax-credit recapture insurance policy",
+        "Execute a simultaneous bilateral escrow closing with a corporate taxpayer at $0.92–$0.95 on the dollar—saving the buyer 5–8% guaranteed on their tax bill while capturing a 400–800 bps riskless spread ($40k–$80k per $1M block)"
+      ],
+      "metrics": [
+        "Face value of tax credits placed per quarter ($5M–$100M+)",
+        "Net retained principal/brokerage spread (400–800 bps) per closed tranche",
+        "Days in escrow from developer IRS registration number issuance to wire settlement"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "IRS § 6418 recapture event or state department-of-revenue basis challenge",
+          "trigger": "Project developer inflating eligible cost basis or taking a clean-energy asset out of service during the 5-year recapture window",
+          "impact": "Taxpayer recapture assessment plus penalties if uninsured",
+          "detection_metric": "100% independent Big-4/national CPA cost-basis audit and mandatory A-rated tax-credit recapture insurance binder on every tranche",
+          "fallback": "Never take unhedged balance-sheet inventory risk; close strictly via simultaneous back-to-back escrow funded by the buyer's wire and backed by non-cancelable tax-credit insurance"
+        }
+      ]
+    },
+    {
+      "id": "mvno_lifeline_acp_telecom_subsidy_aggregation",
+      "track_id": "track_2",
+      "name": "White-Label MVNO & Federal/State Low-Income Telecom Subsidy Aggregation",
+      "mechanism": "Launching a white-label Mobile Virtual Network Operator (MVNO) or partnering as a master enrollment aggregator for Eligible Telecommunications Carriers (ETCs) to enroll hundreds of thousands of SNAP/Medicaid/SSI-eligible households into '100% Free Unlimited Talk/Text/Data' plans—arbitraging the spread between $2–$4/mo wholesale MVNO network COGS and $9.25–$44+/mo in combined Federal Lifeline, Tribal, and State (e.g., California LifeLine) monthly government reimbursements.",
+      "inputs": [
+        "Wholesale MVNO Enabler (MVNE) agreement (T-Mobile/AT&T wholesale via Plum, Reach, Gigs) or master sub-agent contract with an ETC",
+        "National Verifier (USAC NLAD) API integration checking SNAP, Medicaid, WIC, and SSI eligibility in real time",
+        "Omnichannel street-team tablet canopy network and geotargeted digital co-registration funnels in high-subsidy zip codes"
+      ],
+      "workflow": [
+        "Target zip codes with high SNAP/Medicaid participation and stacked state-level telecom subsidies (e.g., California, Texas, Oklahoma, Tribal lands)",
+        "Verify applicant eligibility instantly against the USAC National Verifier / state administrator API and provision an instant eSIM or pre-activated pSIM",
+        "Pay enrollment agents or digital media channels a $15–$35 one-time acquisition bounty while collecting recurring monthly government reimbursements ($15–$44+/mo) plus upsold data top-ups",
+        "Automate 30-day usage heartbeats (outbound call/SMS check-ins) so enrolled lines satisfy mandatory USAC monthly active-usage rules"
+      ],
+      "metrics": [
+        "Active reimbursed subscriber base and monthly net ARPU ($12–$38/mo) vs. wholesale carrier COGS ($2.50–$4.50/mo)",
+        "30-day USAC non-usage de-enrollment ('cure') rate (%)",
+        "Customer acquisition cost (CAC) payback period (target: <45 days)"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "USAC audit clawback for duplicate household enrollments or 30-day non-usage de-enrollment rules",
+          "trigger": "Field agents enrolling ineligible subscribers or lines going 30 consecutive days without an outbound call, text, or data session",
+          "impact": "Mandatory de-enrollment of inactive lines or USAC reimbursement recoupment",
+          "detection_metric": "Rolling 20-day zero-usage cohort alerts and 100% NLAD/National Verifier API pre-check enforcement",
+          "fallback": "Run automated Day-20 SMS/IVR engagement campaigns ('Reply YES to keep your free monthly service active') and strictly claw back field-agent commissions on any line failing 30-day usage"
+        }
+      ]
+    },
+    {
+      "id": "gsa_municipal_set_aside_facility_ghost_brokering",
+      "track_id": "track_1",
+      "name": "GSA & Municipal Set-Aside Pass-Through Facility Ghost-Brokering",
+      "mechanism": "Match eligible facility-service primes with disclosed qualified subcontractors and earn documented coordination fees; opaque pass-throughs and false set-aside eligibility are excluded.",
+      "inputs": [
+        "GSA and municipal facility solicitations",
+        "Prime eligibility and subcontracting-limit documentation",
+        "Licensed local vendor bids and capacity records"
+      ],
+      "workflow": [
+        "1. Screen solicitations for service scope, eligibility, and permitted subcontracting",
+        "2. Verify the prime performs required work and disclose broker and subcontractor roles",
+        "3. Submit priced delivery plans with genuine vendor commitments and required certifications",
+        "4. Track service acceptance, payroll obligations, and authorized fee payments against contract terms"
+      ],
+      "metrics": [
+        "Compliant bids accepted (%)",
+        "Net coordination margin per contract",
+        "On-time service acceptance rate"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Set-aside eligibility protest or prohibited pass-through finding",
+          "trigger": "Inaccurate certification or subcontracting beyond contract limits",
+          "impact": "Termination, repayment demands, or debarment exposure",
+          "detection_metric": "Unverified certifications and subcontracted work share versus permitted limits",
+          "fallback": "Withdraw noncompliant bids and operate as a disclosed subcontractor on unrestricted work"
+        }
+      ]
+    },
+    {
+      "id": "section_179d_municipal_deduction_allocation_arbitrage",
+      "track_id": "track_1",
+      "name": "IRC Section 179D Government & Nonprofit Energy-Deduction Allocation Brokering",
+      "mechanism": "Coordinate eligible government and tax-exempt building owners, qualifying designers, and independent energy certifiers to document Section 179D deduction allocations; compensation is for permitted services, not resale of a freely transferable deduction.",
+      "inputs": [
+        "Public and nonprofit building project records and construction dates",
+        "Designer contracts and owner allocation authority",
+        "Independent energy certification and applicable tax-year eligibility rules"
+      ],
+      "workflow": [
+        "1. Screen building projects for eligible ownership, construction timing, and current Section 179D availability",
+        "2. Verify qualifying designer work, energy certification, deduction limits, and applicable wage and apprenticeship requirements",
+        "3. Obtain authorized owner allocation letters and reconcile prior allocations to prevent duplicate deductions",
+        "4. Deliver the substantiated file to the designer's tax adviser and collect disclosed legally permitted coordination fees"
+      ],
+      "metrics": [
+        "Certified eligible deduction value allocated",
+        "Owner-approved allocation conversion rate",
+        "Net coordination fees after certification and review costs"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Deduction allocation rejected or reduced",
+          "trigger": "Ineligible project dates, unsupported designer status, deficient certification, or duplicate allocation",
+          "impact": "Lost tax benefit, assessment exposure, and disputed service fees",
+          "detection_metric": "Unresolved eligibility and allocation exceptions per project",
+          "fallback": "Pause allocation, obtain independent tax review, and offer fixed-fee documentation support only for eligible projects"
+        }
+      ]
+    }
+  ],
+  "platform_risks": [
+    {
+      "failure_mode": "Portal rate-limiting or CAPTCHA gating",
+      "trigger": "High-frequency automated polling against county or agency web portals",
+      "impact": "Delayed lead ingestion or temporary IP block on target registry",
+      "detection_metric": "HTTP 429/403 rate and daily record ingestion delta",
+      "fallback": "Switch to scheduled bulk FOIA/public-record exports, official data feeds, and low-frequency cached queues",
+      "play_id": "public_record_api_intelligence",
+      "play_name": "Public-Record & API Intelligence",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "FTC endorsement/ranking disclosure scrutiny or Google widget-link spam filtering",
+      "trigger": "Manipulating objective scores solely for pay-to-play without 'Sponsored' labels or stuffing keyword-anchor links inside badge HTML",
+      "impact": "Loss of editorial credibility or discounting of badge backlinks",
+      "detection_metric": "Anchor-text naturalness ratio and clear visual separation of 'Sponsored Featured Partner' vs. algorithmic score",
+      "fallback": "Keep the underlying algorithmic score 100% objective and immutable, clearly label paid top-spot placements as 'Sponsored / Featured', and use clean branded anchor text in badge embeds",
+      "play_id": "ego_bait_directory_badge_arbitrage",
+      "play_name": "Industry Award & Verified Directory 'Ego-Bait' Badge Arbitrage",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "FAR 52.219-14 (Limitations on Subcontracting) violation or illegal pass-through scheme",
+      "trigger": "Bidding small-business set-aside contracts and subcontracting 100% of the work to non-similarly-situated entities without performing required prime share",
+      "impact": "Contract termination for default, False Claims Act liability, or SAM.gov debarment",
+      "detection_metric": "Subcontracted labor-cost percentage strictly within FAR 52.219-14 limits (<=50% for services unless partnering with similarly situated small businesses)",
+      "fallback": "Bid unrestricted commercial/municipal contracts without set-aside caps, or team exclusively with 'similarly situated entities' under 13 CFR § 125.6",
+      "play_id": "government_rfp_subcontractor_brokerage",
+      "play_name": "SAM.gov / Municipal RFP Scraping & Prime-Subcontractor Spread Arbitrage",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "IRS § 6418 recapture event or state department-of-revenue basis challenge",
+      "trigger": "Project developer inflating eligible cost basis or taking a clean-energy asset out of service during the 5-year recapture window",
+      "impact": "Taxpayer recapture assessment plus penalties if uninsured",
+      "detection_metric": "100% independent Big-4/national CPA cost-basis audit and mandatory A-rated tax-credit recapture insurance binder on every tranche",
+      "fallback": "Never take unhedged balance-sheet inventory risk; close strictly via simultaneous back-to-back escrow funded by the buyer's wire and backed by non-cancelable tax-credit insurance",
+      "play_id": "transferable_tax_credit_brokerage_syndication",
+      "play_name": "Transferable Federal & State Tax Credit Brokerage & Syndication (IRA § 6418 / Film / Historic)",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "USAC audit clawback for duplicate household enrollments or 30-day non-usage de-enrollment rules",
+      "trigger": "Field agents enrolling ineligible subscribers or lines going 30 consecutive days without an outbound call, text, or data session",
+      "impact": "Mandatory de-enrollment of inactive lines or USAC reimbursement recoupment",
+      "detection_metric": "Rolling 20-day zero-usage cohort alerts and 100% NLAD/National Verifier API pre-check enforcement",
+      "fallback": "Run automated Day-20 SMS/IVR engagement campaigns ('Reply YES to keep your free monthly service active') and strictly claw back field-agent commissions on any line failing 30-day usage",
+      "play_id": "mvno_lifeline_acp_telecom_subsidy_aggregation",
+      "play_name": "White-Label MVNO & Federal/State Low-Income Telecom Subsidy Aggregation",
+      "track_id": "track_2"
+    },
+    {
+      "failure_mode": "Set-aside eligibility protest or prohibited pass-through finding",
+      "trigger": "Inaccurate certification or subcontracting beyond contract limits",
+      "impact": "Termination, repayment demands, or debarment exposure",
+      "detection_metric": "Unverified certifications and subcontracted work share versus permitted limits",
+      "fallback": "Withdraw noncompliant bids and operate as a disclosed subcontractor on unrestricted work",
+      "play_id": "gsa_municipal_set_aside_facility_ghost_brokering",
+      "play_name": "GSA & Municipal Set-Aside Pass-Through Facility Ghost-Brokering",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Deduction allocation rejected or reduced",
+      "trigger": "Ineligible project dates, unsupported designer status, deficient certification, or duplicate allocation",
+      "impact": "Lost tax benefit, assessment exposure, and disputed service fees",
+      "detection_metric": "Unresolved eligibility and allocation exceptions per project",
+      "fallback": "Pause allocation, obtain independent tax review, and offer fixed-fee documentation support only for eligible projects",
+      "play_id": "section_179d_municipal_deduction_allocation_arbitrage",
+      "play_name": "IRC Section 179D Government & Nonprofit Energy-Deduction Allocation Brokering",
+      "track_id": "track_1"
+    }
+  ]
+}

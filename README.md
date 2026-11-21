@@ -140,6 +140,7 @@ Mapped plays (`35` across Track 01 & Track 02): `parasitic_seo`, `competitor_int
 | **Vol. 017** | **Domain Investing** (`#017`, `74/100`) | `76,861` (`2,277–2,478`/ch) | `48` tables / `335` rows (`10.72` w/cell) | `48` (`12` callouts) | `180` links / `178` videos (`178` harvested) | `8` plays | `218`p Dig / `351`p Print / `84`p WB (`7,215`w) |
 | **Vol. 018** | **Land Flipping** (`#018`, `72/100`) | `77,698` (`2,273–2,539`/ch) | `48` tables / `340` rows (`10.72` w/cell) | `48` (`12` callouts) | `180` links / `178` videos (`178` harvested) | `6` plays | `233`p Dig / `379`p Print / `84`p WB (`6,919`w) |
 | **Vol. 019** | **Enterprise Software Reselling** (`#019`, `72/100`) | `77,377` (`2,308–2,487`/ch) | `48` tables / `360` rows (`10.72` w/cell) | `48` (`12` callouts) | `180` links / `178` videos (`178` harvested) | `9` plays | `231`p Dig / `376`p Print / `85`p WB (`7,180`w) |
+| **Vol. 020** | **Government Contract Brokering** (`#020`, `70/100`) | `77,441` (`2,238–2,444`/ch) | `48` tables / `344` rows (`10.42` w/cell) | `48` (`12` callouts) | `180` links / `178` videos (`178` harvested) | `7` plays | `234`p Dig / `379`p Print / `85`p WB (`7,221`w) |
 
 #### Conservative / Base / Scaled Unit Economics
 
@@ -204,7 +205,7 @@ Source: [`publishing/catalog/pipeline_29_candidates.json`](publishing/catalog/pi
 | **#17** | **Domain Investing** *(Vol. 017 Built & QA-Verified)* | Digital asset trading | **74/100** (`±6` Mod) | `17/18/19/9/11` | 2 (`1 FT + 1 C`) | \$20k–\$300k | \$3,000–\$120,000 | T1, T2 | `8` |
 | **#18** | **Land Flipping** *(Vol. 018 Built & QA-Verified)* | Real estate trading | **72/100** (`±6` Mod) | `21/18/17/6/10` | 4 (`1 FT + 3 C`) | \$200k–\$1.5M | \$24,000–\$375,000 | T1, T2 | `6` |
 | **#19** | **Enterprise Software Reselling** *(Vol. 019 Built & QA-Verified)* | Software channel sales | **72/100** (`±6` Mod) | `23/14/15/9/11` | 5 (`2 FT + 3 C`) | \$300k–\$2.5M | \$24,000–\$500,000 | T1, T2 | `9` |
-| **#20** | **Government Contract Brokering** | Procurement services | **70/100** (`±6` Mod) | `22/16/14/8/10` | 5 (`2 FT + 3 C`) | \$120k–\$1.0M | \$18,000–\$300,000 | T1, T2 | `7` |
+| **#20** | **Government Contract Brokering** *(Vol. 020 Built & QA-Verified)* | Procurement services | **70/100** (`±6` Mod) | `22/16/14/8/10` | 5 (`2 FT + 3 C`) | \$120k–\$1.0M | \$18,000–\$300,000 | T1, T2 | `7` |
 | **#21** | **Automated E-Commerce** | Online retail | **70/100** (`±6` Mod) | `23/13/14/8/12` | 5 (`2 FT + 3 C`) | \$250k–\$2.0M | \$12,500–\$360,000 | T2, T1 | `18` |
 | **#22** | **Medical Equipment Resale** | Equipment trading | **64/100** (`±6` Mod) | `21/16/13/6/8` | 6 (`2 FT + 4 C`) | \$250k–\$1.8M | \$25,000–\$396,000 | T1, T2 | `3` |
 | **#23** | **Mineral Rights** | Resource assets | **63/100** (`±6` Mod) | `20/17/16/3/7` | 4 (`1 FT + 3 C`) | \$30k–\$400k | \$6,000–\$180,000 | T1, T2 | `5` |

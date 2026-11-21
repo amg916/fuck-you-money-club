@@ -1,0 +1,743 @@
+from __future__ import annotations
+
+CHAPTER_9 = {
+    "id": "Q9",
+    "chapter_id": "Q9",
+    "chapter_number": 9,
+    "question_number": 9,
+    "slug": "contracts-statutory-guardrails-licensing-outreach-scripts",
+    "question_prompt": "Which federal/state statutes, licensing boundaries, contract clauses, and compliant outreach scripts govern government contract brokering?",
+    "kicker": "Q9 / THE BIG MONEY PLAYBOOKS",
+    "title": "Contracts, Statutory Guardrails, Licensing & Outreach Scripts",
+    "subtitle": "SAM.gov Bid Desks, FAR Contingent-Fee Limits, SBA Teaming Rules, State Procurement Boundaries, and Deliverable-Based Contracts",
+    "layout_template": "legal_compliance_notes",
+    "reading_time_minutes": 14,
+    "executive_summary": (
+        "Candidate #4, Government Contract Brokering, holds Rank #20 with a 70/100 "
+        "Money-to-Manpower Score. This chapter organizes execution into seven mapped "
+        "operator plays: solicitation monitoring, opportunity qualification, bid-calendar "
+        "control, proposal coordination, prime/sub teaming, supplier readiness, and "
+        "post-award administration. Sell documented procurement work rather than access "
+        "to officials or a percentage of public awards. FAR contingent-fee provisions, "
+        "procurement-integrity restrictions, anti-kickback rules, SBA performance limits, "
+        "and state purchasing laws shape both scope and compensation. Canonical annual "
+        "owner net profit is $18,000 Conservative, $126,000 Base, and $300,000 Scaled, "
+        "on recognized service fees rather than client contract value. A two-employee, "
+        "three-contractor pod needs explicit decision rights, evidence-backed contracts, "
+        "and outreach scripts that preserve the buyer's authorized communication channel."
+    ),
+    "key_metrics": [
+        {
+            "label": "Conservative",
+            "value": "$120,000",
+            "context": "Annual recognized service fees; excludes client contract value",
+            "note": "15% net margin; $18,000 annual owner net profit; 2 FT + 3 C",
+        },
+        {
+            "label": "Base",
+            "value": "$560,000",
+            "context": "Annual recognized service fees; excludes client contract value",
+            "note": "22.5% net margin; $126,000 annual owner net profit; 2 FT + 3 C",
+        },
+        {
+            "label": "Scaled",
+            "value": "$1,000,000",
+            "context": "Annual recognized service fees; excludes client contract value",
+            "note": "30% net margin; $300,000 annual owner net profit; 3 FT + 4 C",
+        },
+    ],
+    "sections": [
+        {
+            "heading": "1. Define Seven Service Plays Before Choosing Any Compensation Formula",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Government contract brokering is a commercial label, not a federal "
+                    "license category or permission to sell influence. For Candidate #4, "
+                    "use seven explicit operating plays: P1 solicitation monitoring, P2 "
+                    "opportunity qualification, P3 bid-calendar control, P4 proposal "
+                    "coordination, P5 prime/sub teaming, P6 supplier readiness, and P7 "
+                    "post-award administration. P1 produces a sourced alert; P2 produces "
+                    "a documented bid decision; P3 maintains amendment deadlines; P4 "
+                    "assembles client-approved submissions; P5 documents actual work "
+                    "allocation; P6 verifies supplier capacity; and P7 tracks contractual "
+                    "deliverables and invoice evidence. Each play needs its own acceptance "
+                    "test and accountable employee. The two full-time roles are a managing "
+                    "procurement lead and a bid-operations lead. Three contractors provide "
+                    "proposal production, sector-specific supplier analysis, and specialist "
+                    "contract review under defined work orders. Contractors do not gain "
+                    "authority to certify client representations, promise awards, or contact "
+                    "restricted officials merely by joining the pod. Configure SAM.gov "
+                    "saved searches and a shared calendar before buying expensive databases. "
+                    "Keep the solicitation identifier, amendment version, source URL, "
+                    "retrieval date, and assigned reviewer with every opportunity. These "
+                    "records turn a vague introduction business into auditable service "
+                    "delivery, while exposing work that would exceed the pod's available "
+                    "capacity before a client signs."
+                ),
+                (
+                    "Compensation must survive the actual solicitation and the governing "
+                    "rules, not merely carry a consulting label. FAR Subpart 3.4 and "
+                    "FAR 52.203-5 address contingent fees for soliciting or obtaining "
+                    "government contracts, subject to their coverage and bona fide "
+                    "employee or agency exceptions. FAR 3.404 prescribes the covenant "
+                    "for contracts exceeding the simplified acquisition threshold, except "
+                    "commercial products or commercial services; other restrictions can "
+                    "still apply outside that prescription. A payment triggered only by "
+                    "award can remain contingent even when described as a completion "
+                    "bonus. Conversely, an ordinary fixed retainer does not excuse improper "
+                    "influence, unlawful lobbying, or prohibited access. Default to monthly "
+                    "fees for enumerated monitoring work and fixed milestones for completed "
+                    "proposal packages, payable independently of award. Have the specialist "
+                    "review any exception claim against FAR 3.401 and the documented "
+                    "relationship before offering it. Under 31 U.S.C. 1352, covered federal "
+                    "funds cannot pay for specified lobbying activities; disclosure "
+                    "requirements can also attach to payments from other sources. Separate "
+                    "procurement administration from efforts to influence covered officials, "
+                    "and examine lobbying registration obligations independently. The "
+                    "contract must describe real services, real records, and the exact "
+                    "event creating an earned fee."
+                ),
+                (
+                    "Treat protected information and supplier compensation as separate "
+                    "risk controls. The procurement-integrity provisions in 41 U.S.C. "
+                    "2101-2107 and FAR 3.104 restrict knowingly obtaining or disclosing "
+                    "covered contractor bid, proposal, and source-selection information "
+                    "before award. A former official's familiarity with a program does "
+                    "not authorize delivery of a competitor's pricing or an evaluator's "
+                    "private notes. Public amendments, published questions, and authorized "
+                    "market research belong in the workroom; suspicious nonpublic "
+                    "evaluation material belongs in a restricted incident process without "
+                    "further circulation. The Anti-Kickback Act, 41 U.S.C. 8701-8707, "
+                    "reaches things of value provided to improperly obtain or reward "
+                    "favorable treatment involving covered prime contracts or subcontracts. "
+                    "Do not pay a prime's purchasing employee personally for selecting a "
+                    "supplier, and do not route that payment through a marketing invoice. "
+                    "Require written disclosure of referral arrangements, supplier-side "
+                    "compensation, familial interests, and ownership ties before P5 begins. "
+                    "The procurement lead decides whether the engagement can proceed after "
+                    "specialist review; the analyst cannot resolve a conflict by adding "
+                    "a spreadsheet note. Keep separate client workspaces and access logs "
+                    "so competing bidders never share draft prices, strategies, or "
+                    "proposal personnel without a specifically assessed, authorized "
+                    "arrangement."
+                ),
+            ],
+            "table": {
+                "caption": "Federal Authority Matrix for Compensation, Information, and Teaming",
+                "headers": [
+                    "Authority and concrete operational trigger",
+                    "Required operating boundary for this engagement",
+                    "Evidence retained before the work proceeds",
+                    "Responsible pod role and affected plays",
+                ],
+                "rows": [
+                    [
+                        "FAR 52.203-5 when the contingent-fee covenant applies",
+                        "Reject award-dependent fees unless a supported exception applies",
+                        "Retain the clause review and documented compensation rationale",
+                        "Procurement lead owns fee decisions across all seven plays",
+                    ],
+                    [
+                        "41 U.S.C. 2102 restrictions before federal contract award",
+                        "Never solicit protected competitor proposals or evaluation records",
+                        "Retain information provenance and restrict incident-related access immediately",
+                        "Bid lead supervises information handling across P1 through P4",
+                    ],
+                    [
+                        "41 U.S.C. 8702 prohibitions involving improper favorable treatment",
+                        "Prohibit personal supplier payments to prime purchasing personnel",
+                        "Retain disclosed referral relationships and reviewed supplier compensation",
+                        "Procurement lead reviews every P5 and P6 relationship",
+                    ],
+                    [
+                        "31 U.S.C. 1352 restrictions on covered lobbying payments",
+                        "Separate administrative services from covered influence and funding restrictions",
+                        "Retain funding-source analysis and required disclosure determinations together",
+                        "Specialist contractor reviews outreach supporting P2 and P5",
+                    ],
+                    [
+                        "13 CFR 125.6 limitations for covered set-aside performance",
+                        "Calculate applicable payments to subcontractors lacking similarly situated status",
+                        "Retain workshare calculations and verified subcontractor status evidence",
+                        "Procurement lead validates P2 qualification and P5 allocation",
+                    ],
+                    [
+                        "13 CFR 121.406 requirements for qualifying nonmanufacturer offers",
+                        "Verify applicable manufacturer sourcing requirements and any valid waiver",
+                        "Retain product provenance and solicitation-specific waiver support documents",
+                        "Supplier contractor verifies P6 sourcing before proposal submission",
+                    ],
+                    [
+                        "FAR 52.215-23 when included under its applicable prescription",
+                        "Identify excessive pass-through charges and substantiate actual added value",
+                        "Retain subcontract cost analysis and documented management deliverables",
+                        "Procurement lead reviews P5 structure and P7 billing",
+                    ],
+                    [
+                        "FAR Subpart 9.5 organizational conflict identification and mitigation",
+                        "Identify biased requirements work and unequal information access",
+                        "Retain conflict facts and contracting-officer communications where required",
+                        "Specialist contractor reviews P2 eligibility and P4 assignments",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Earn Fees for Evidence, Not Supposed Access",
+                "body": (
+                    "Experienced bid desks separate public-source intelligence, authorized "
+                    "client materials, and restricted incident records before a deadline "
+                    "makes shortcuts attractive."
+                ),
+                "items": [
+                    "Attach the exact amendment identifier to every compliance checklist; a correct answer to an obsolete solicitation still loses.",
+                    "Ask the client for the solicitation's incorporated clauses before quoting P5 teaming work; the notice summary rarely resolves compensation restrictions.",
+                    "Invoice P4 against a versioned deliverable manifest, not an award announcement; acceptance evidence should exist even after an unsuccessful bid.",
+                    "Require supplier referral terms in writing before introductions, then test improper-purpose and conflict risks rather than assuming disclosure cures them.",
+                ],
+            },
+        },
+        {
+            "heading": "2. Recheck State, Sector, and Small-Business Boundaries for Every Opportunity",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Build a jurisdiction sheet for each buyer instead of treating "
+                    "SAM.gov familiarity as nationwide authorization. Record whether the "
+                    "purchaser is a federal agency, state entity, municipality, authority, "
+                    "or recipient spending federal assistance. Federal grant procurement "
+                    "can implicate 2 CFR 200.318-200.327 without turning a municipal "
+                    "purchase into a FAR procurement. Add the solicitation's communication "
+                    "restrictions, lobbying rules, vendor registration steps, professional "
+                    "licensing requirements, and public-records procedures. New York State "
+                    "Finance Law sections 139-j and 139-k establish restricted-period "
+                    "contact and disclosure requirements for covered governmental "
+                    "procurements; route communications through designated contacts and "
+                    "document permitted exceptions. Florida Statutes section 287.055 "
+                    "governs covered professional services and includes a contingent-fee "
+                    "prohibition with stated exceptions. Texas Government Code Chapter "
+                    "2254 uses qualifications-based selection for specified professional "
+                    "services, making a generic lowest-price pitch the wrong operating "
+                    "model. California Public Contract Code section 4104 requires listed "
+                    "subcontractor information in covered public works bids. The point "
+                    "is not to memorize fifty summaries. It is to attach the governing "
+                    "text and buyer instructions to P2 before committing P4 hours or "
+                    "P5 introductions, then assign one reviewer to resolve every "
+                    "identified mismatch."
+                ),
+                (
+                    "There is no single federal procurement-broker credential that "
+                    "authorizes engineering, construction, insurance placement, freight "
+                    "brokerage, or other separately regulated services. A bid desk can "
+                    "coordinate a licensed engineer's submission without representing "
+                    "that it offers engineering itself. If the desk begins selling "
+                    "the regulated service, controlling its delivery, or acting as "
+                    "the contracting provider, recheck the applicable firm and individual "
+                    "licensing requirements before accepting that scope. For interstate "
+                    "motor-carrier brokerage, examine 49 U.S.C. 13904 and 13906 alongside "
+                    "the proposed transportation role; ordinary supplier research does "
+                    "not itself establish that role. For public works, inspect contractor "
+                    "licensing, bonding, prevailing-wage provisions, and subcontractor "
+                    "listing requirements. Federal construction may implicate the "
+                    "Davis-Bacon provisions at 40 U.S.C. 3141-3148; covered federal "
+                    "service contracts may implicate 41 U.S.C. Chapter 67. P6 should "
+                    "collect current licenses, insurance evidence, capacity commitments, "
+                    "and applicable wage classifications without pretending those "
+                    "documents prove complete eligibility. Where controlled information "
+                    "or defense clauses appear, identify the actual security requirements "
+                    "before collecting files. Do not put controlled client material "
+                    "into an ordinary shared drive or drafting service merely because "
+                    "the vendor advertises encryption."
+                ),
+                (
+                    "Teaming must allocate performance, not manufacture the appearance "
+                    "of an eligible prime. Under 13 CFR 125.6, covered service "
+                    "set-asides generally limit payments to subcontractors that are "
+                    "not similarly situated to fifty percent of the amount paid by "
+                    "the government for contract performance, subject to applicable "
+                    "exclusions and details. Supply and construction categories use "
+                    "different calculations; never reuse the service worksheet without "
+                    "classifying the requirement. Similarly situated status depends on "
+                    "the relevant program status and size under the assigned subcontract "
+                    "NAICS code, not a friendly supplier's assertion that it is small. "
+                    "Also examine the ostensible-subcontractor rule in 13 CFR 121.103 "
+                    "where applicable: an eligible-looking prime can create affiliation "
+                    "risk through unusual reliance on another firm or its performance "
+                    "of primary and vital requirements. FAR 9.6 recognizes contractor "
+                    "team arrangements but does not excuse these restrictions or promise "
+                    "that a teaming memorandum will become an enforceable subcontract. "
+                    "Specify tasks, personnel, supervision, payment responsibility, and "
+                    "replacement rights before pricing. Candidate #4 should normally "
+                    "sell coordination services rather than become a hollow prime. "
+                    "If a client requests a different structure, pause that structure "
+                    "while the pod continues permissible monitoring and document work."
+                ),
+            ],
+            "table": {
+                "caption": "Jurisdiction and Sector Checks That Change Bid-Desk Execution",
+                "headers": [
+                    "Buyer or sector requiring separate analysis",
+                    "Primary rule shaping the proposed service",
+                    "Concrete adjustment to the seven-play workflow",
+                    "Evidence collected by the assigned reviewer",
+                ],
+                "rows": [
+                    [
+                        "New York covered governmental procurement during restricted periods",
+                        "State Finance Law 139-j and 139-k restrict covered contacts",
+                        "P3 records designated contacts before P4 sends questions",
+                        "Bid lead retains contact logs and applicable exception analysis",
+                    ],
+                    [
+                        "Florida covered architectural engineering surveying and mapping engagements",
+                        "Florida Statutes 287.055 governs selection and contingent compensation",
+                        "P2 verifies qualifications procedures before quoting proposal support",
+                        "Specialist retains fee review and professional registration evidence",
+                    ],
+                    [
+                        "Texas procurement of statutorily covered professional service categories",
+                        "Government Code Chapter 2254 requires the applicable selection method",
+                        "P4 builds qualifications submissions instead of premature price competition",
+                        "Bid lead retains buyer instructions and selection-stage correspondence",
+                    ],
+                    [
+                        "California public works bids requiring subcontractor listing disclosures",
+                        "Public Contract Code 4104 specifies covered subcontractor listing requirements",
+                        "P5 freezes verified subcontractor information before bid submission",
+                        "Supplier analyst retains identities licenses and assigned work descriptions",
+                    ],
+                    [
+                        "Municipal purchasing supported by applicable federal assistance awards",
+                        "2 CFR 200.318-200.327 governs applicable recipient procurement requirements",
+                        "P2 separates award conditions from direct federal contract clauses",
+                        "Procurement lead retains assistance terms and local purchasing rules",
+                    ],
+                    [
+                        "Transportation engagements involving actual interstate motor-carrier brokerage activity",
+                        "49 U.S.C. 13904 and 13906 address registration and security",
+                        "P6 distinguishes supplier research from arranging regulated transportation",
+                        "Specialist retains role analysis and required registration verification",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Four Checks Before Any Submission or Teaming Commitment",
+                "body": (
+                    "The procurement lead records the decision and supporting documents. "
+                    "An unresolved item blocks the affected commitment, not unrelated "
+                    "authorized research."
+                ),
+                "items": [
+                    "Verify buyer jurisdiction, funding source, current solicitation amendments, designated contacts, and the exact service requiring any license.",
+                    "Verify compensation triggers against applicable contingent-fee terms, lobbying restrictions, supplier payments, and disclosed conflicts.",
+                    "Verify prime eligibility, similarly situated subcontractor status, actual performance allocation, and any applicable nonmanufacturer requirements.",
+                    "Verify client authorization, current representations, permitted data environment, supplier capacity, and named ownership of every submission certification.",
+                ],
+            },
+        },
+        {
+            "heading": "3. Contract for Deliverables and Reconcile Fees to the Canonical Economics",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "Use a master services agreement with opportunity-specific work "
+                    "orders rather than a broad promise to obtain government business. "
+                    "The scope schedule should identify which of P1 through P7 are "
+                    "purchased, which client inputs are required, and what constitutes "
+                    "a completed output. For P4, completion might require a populated "
+                    "compliance matrix, assembled narrative, attachment inventory, and "
+                    "client review copy; it should not silently include authority to "
+                    "sign certifications or submit through the client's account. Give "
+                    "the client a defined review period and objective correction "
+                    "procedure. Tie the fee to accepted services or clearly described "
+                    "availability, with deposits treated according to the applicable "
+                    "accounting policy rather than automatically as earned revenue. "
+                    "State how amendments, cancellations, protests, and shortened "
+                    "deadlines affect work already performed. Anti-circumvention language "
+                    "should protect identified introductions and legitimate unpaid "
+                    "services for a bounded period, not create an indefinite ownership "
+                    "claim over public opportunities. It must not resurrect a prohibited "
+                    "award commission through liquidated damages or a termination "
+                    "charge. The specialist should assess enforceability under the "
+                    "chosen state law and replace punitive economics with a defensible "
+                    "measure of actual contracted value and documented loss."
+                ),
+                (
+                    "Allocate risk to the party controlling the underlying fact. "
+                    "The client owns its pricing decisions, eligibility representations, "
+                    "performance promises, and certification accuracy; the desk owns "
+                    "its agreed process and deliverable obligations. A liability cap "
+                    "might reference fees paid during a defined period, with expressly "
+                    "negotiated treatment of confidentiality breaches, intellectual "
+                    "property claims, intentional misconduct, and other exceptions. "
+                    "Private limitations do not extinguish statutory exposure, and "
+                    "states differ on enforceability. Define escalation, governing law, "
+                    "venue or arbitration, interim relief, collection expenses, and "
+                    "whether work pauses during a payment dispute. Do not confuse "
+                    "this private service dispute process with a bid protest, an "
+                    "agency claim, or the prime's Contract Disputes Act procedures. "
+                    "For intellectual property, distinguish preexisting templates from "
+                    "client-owned bid content and licensed third-party material. For "
+                    "data, identify authorized users, approved storage, incident notice "
+                    "timing, return or deletion procedures, and legally required "
+                    "retention. Government data-rights and security clauses require "
+                    "separate flowdown analysis when applicable. Do not promise that "
+                    "marking every document confidential defeats public-records laws. "
+                    "Finally, require written change orders when P7 expands from "
+                    "tracking invoices into managing performance, accepting deliverables, "
+                    "or directing subcontractors; those activities create materially "
+                    "different responsibility."
+                ),
+                (
+                    "Keep the scorecard anchored to recognized service fees. The "
+                    "Conservative case is $120,000 revenue less $102,000 total costs, "
+                    "leaving $18,000 owner net profit at fifteen percent. Base is "
+                    "$560,000 less $434,000, leaving $126,000 at 22.5 percent. Scaled "
+                    "is $1,000,000 less $700,000, leaving $300,000 at thirty percent. "
+                    "An illustrative Base mix is eight clients paying $4,000 monthly "
+                    "for twelve months, producing $384,000, plus twenty-two completed "
+                    "proposal packages at $8,000, producing $176,000. Those packages "
+                    "must be incremental services, not retainer work billed twice. "
+                    "The client's award value and subcontract purchasing spend are "
+                    "excluded from this desk's service-fee revenue. Conservative and "
+                    "Base use two full-time employees plus three contractors; Scaled "
+                    "uses three full-time employees plus four contractors. These are "
+                    "canonical staffing assumptions, not proof that local compensation "
+                    "fits the cost envelope. The Conservative cost allowance is "
+                    "especially tight for that staffing pattern and needs a priced "
+                    "labor plan. The stated $5,000-$25,000 monthly operating range "
+                    "must be reconciled with variable delivery costs rather than "
+                    "substituted for total annual expenses. Budget $25,000-$150,000 "
+                    "startup capital against the six-to-eighteen-month first-deal "
+                    "window, milestone collections, and payment-delay exposure."
+                ),
+            ],
+            "table": {
+                "caption": "Service Agreement Clauses and the Evidence Needed to Enforce Them",
+                "headers": [
+                    "Clause addressing a specific commercial failure",
+                    "Drafting instruction for the actual service agreement",
+                    "Evidence proving delivery or allocating responsibility",
+                    "Failure response owned by the operating pod",
+                ],
+                "rows": [
+                    [
+                        "Scope and acceptance for purchased proposal coordination services",
+                        "List deliverables review periods exclusions and client dependencies",
+                        "Versioned delivery manifest links every file to acceptance criteria",
+                        "Bid lead corrects documented defects within the agreed period",
+                    ],
+                    [
+                        "Fee trigger and collection for completed procurement support",
+                        "Make payment depend on services rather than award success",
+                        "Milestone record distinguishes earned fees from unearned client deposits",
+                        "Procurement lead enforces payment terms without inventing award bonuses",
+                    ],
+                    [
+                        "Anti-circumvention protection for identified lawful commercial introductions",
+                        "Limit protected contacts duration services and recoverable contractual amounts",
+                        "Introduction register establishes dates recipients and actual contracted value",
+                        "Specialist reviews enforceability before asserting any introduction-related claim",
+                    ],
+                    [
+                        "Liability allocation and negotiated limits for service failures",
+                        "Specify cap measurement exclusions and responsibility for client certifications",
+                        "Signed responsibility schedule records who controls each underlying representation",
+                        "Procurement lead escalates incidents under the agreed notice procedure",
+                    ],
+                    [
+                        "Dispute resolution for the private procurement services relationship",
+                        "Specify escalation governing law forum and payment-dispute work rules",
+                        "Correspondence chronology preserves notices cure opportunities and disputed invoices",
+                        "Specialist separates private claims from government protest procedures",
+                    ],
+                    [
+                        "Intellectual property and data rights throughout the engagement",
+                        "Separate background templates client materials licenses and applicable flowdowns",
+                        "Access register and asset schedule identify rights and retention duties",
+                        "Bid lead revokes access and executes documented return procedures",
+                    ],
+                ],
+            },
+        },
+        {
+            "heading": "4. Use Authorized Outreach Scripts and a Four-Step Evidence Workflow",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Start contractor outreach with a service proposition that can "
+                    "be delivered without privileged access. Use this script verbatim: "
+                    "'Hello, I run a procurement support desk that monitors public "
+                    "solicitations, controls bid calendars, and assembles client-approved "
+                    "proposal packages. We charge for defined services, not introductions "
+                    "to officials or promised awards. Are you the person responsible "
+                    "for deciding which government opportunities your company pursues? "
+                    "If so, may we schedule a short discussion about your target "
+                    "buyers, delivery capacity, and current bidding process? If this "
+                    "is irrelevant, reply stop and we will suppress further marketing "
+                    "to this address.' Add a truthful sender identity, descriptive "
+                    "subject line, commercial identification where required, and the "
+                    "business's valid physical postal address. CAN-SPAM, 15 U.S.C. "
+                    "7704, applies to covered commercial email, including business "
+                    "recipients; honor opt-outs within ten business days and supervise "
+                    "any outreach vendor. Do not scrape restricted bidder portals, "
+                    "impersonate a purchasing office, or imply government endorsement. "
+                    "For automated calls or texts, assess 47 U.S.C. 227, implementing "
+                    "FCC rules, and relevant state requirements before using the "
+                    "channel. A public business listing does not by itself authorize "
+                    "every dialing method or destination."
+                ),
+                (
+                    "Discovery should establish operational fit before anyone quotes "
+                    "a percentage. Use this script: 'Which legal entity would bid, "
+                    "and who can authorize its representations? Which agencies, "
+                    "municipalities, NAICS codes, and service territories match work "
+                    "you already perform? What licenses, certifications, past-performance "
+                    "records, staffing, insurance, and working capital can you document? "
+                    "Which tasks will your employees perform, and which suppliers "
+                    "would perform the rest? Are there referral payments, competing "
+                    "bidder relationships, former-official relationships, or restricted "
+                    "information we should identify before accepting the engagement? "
+                    "Our next step is a written qualification worksheet and priced "
+                    "service scope, not an award prediction.' Capture answers as "
+                    "client statements until verified, and assign missing evidence "
+                    "to a named owner with a date. For supplier discussions, use: "
+                    "'We are coordinating a possible bid for a client. Please "
+                    "confirm your proposed work, delivery capacity, license status, "
+                    "price validity, and any conflicts. No award or subcontract "
+                    "is committed by this conversation; any commitment requires "
+                    "authorized written terms.' This separates P2 qualification "
+                    "from P5 promises and gives P6 a usable checklist. Reject "
+                    "requests to backdate commitments, lend an eligibility label, "
+                    "or fabricate project references even when the submission "
+                    "deadline is hours away."
+                ),
+                (
+                    "Government-facing outreach must follow the solicitation's channel "
+                    "and timing. Use this script only when that channel permits "
+                    "the contact: 'We support a prospective offeror reviewing the "
+                    "published solicitation. Please confirm the designated process "
+                    "for submitting clarification questions and receiving public "
+                    "amendments. We are not requesting competitor information or "
+                    "evaluation deliberations. Our technical question concerns the "
+                    "stated deliverable and will be submitted through the published "
+                    "channel by the stated deadline.' For pre-solicitation market "
+                    "research, identify the client and purpose accurately, then "
+                    "ask whether capability materials are being accepted. FAR "
+                    "15.201 encourages appropriate exchanges, but it does not "
+                    "authorize private access to protected information or override "
+                    "procurement-specific instructions. Log the recipient, client "
+                    "authorization, exact message, response, and any required "
+                    "follow-up. The bid lead owns the shared deadline calendar; "
+                    "the procurement lead owns conflicts and exceptions; the "
+                    "three contractors receive task-specific access rather than "
+                    "the entire client portfolio. Automate alerts, calendar "
+                    "reminders, and checklist completeness checks, while retaining "
+                    "human review of eligibility and certifications. At Scaled, "
+                    "add the third employee and fourth contractor to support "
+                    "review capacity, not indiscriminate outreach. Measure overdue "
+                    "questions, amendment acknowledgment, delivery acceptance, and "
+                    "receivable age before increasing opportunity volume."
+                ),
+            ],
+            "table": {
+                "caption": "Outreach and Discovery Controls Across the Seven Operating Plays",
+                "headers": [
+                    "Contact situation and intended commercial outcome",
+                    "Permitted message and immediate operational next step",
+                    "Evidence preserved in the engagement record",
+                    "Stop condition requiring a different operating response",
+                ],
+                "rows": [
+                    [
+                        "P1 outreach to a prospective contractor's procurement decision maker",
+                        "Describe deliverable-based services and request a short discovery discussion",
+                        "Retain message copy sender identity and suppression status",
+                        "Stop marketing when the recipient submits an opt-out request",
+                    ],
+                    [
+                        "P2 discovery with the client's authorized business representative",
+                        "Ask for eligibility capacity licensing and performance evidence",
+                        "Retain client statements separately from independently verified supporting records",
+                        "Stop qualification when requested representations conflict with available evidence",
+                    ],
+                    [
+                        "P3 clarification routing through the buyer's designated communication channel",
+                        "Ask how published questions and amendments must be handled",
+                        "Retain channel instructions question deadline and exact transmitted wording",
+                        "Stop direct contact when solicitation restrictions require another channel",
+                    ],
+                    [
+                        "P4 proposal coordination involving commercially sensitive client materials",
+                        "Request only authorized inputs needed for the specified deliverable",
+                        "Retain access permissions source versions and client review decisions",
+                        "Stop circulation when materials appear to contain protected competitor information",
+                    ],
+                    [
+                        "P5 teaming discussions combined with P6 supplier capacity verification",
+                        "Confirm actual work allocation without promising subcontract selection",
+                        "Retain supplier commitments status evidence conflicts and pricing validity",
+                        "Stop structure development when eligibility depends on nominal participation",
+                    ],
+                    [
+                        "P7 post-award administration supporting authorized invoice evidence collection",
+                        "Request performance records through the client's approved reporting process",
+                        "Retain deliverable acceptance invoice support and outstanding collection dates",
+                        "Stop unauthorized direction of suppliers beyond the purchased scope",
+                    ],
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Open a jurisdiction and authority record",
+                    "action": "Assign the procurement lead to identify buyer, funding source, clauses, and authorized contacts.",
+                    "detail": (
+                        "Attach current solicitation versions, state purchasing requirements, "
+                        "licensing checks, and the client's written authority before "
+                        "contractors receive substantive work."
+                    ),
+                },
+                {
+                    "step": 2,
+                    "title": "Review compensation and performance structure",
+                    "action": "Route fees, conflicts, set-aside calculations, and supplier arrangements to the specialist reviewer.",
+                    "detail": (
+                        "Record the governing rule and resulting decision for each "
+                        "affected play; revise prohibited structures without stopping "
+                        "unrelated authorized research."
+                    ),
+                },
+                {
+                    "step": 3,
+                    "title": "Execute scoped services and controlled communications",
+                    "action": "Have the bid lead issue work orders, approved scripts, calendar assignments, and access permissions.",
+                    "detail": (
+                        "The client retains certification authority. Every submission "
+                        "package includes an amendment check, deliverable manifest, "
+                        "and documented client review."
+                    ),
+                },
+                {
+                    "step": 4,
+                    "title": "Close delivery evidence and reconcile service revenue",
+                    "action": "Record acceptance, earned fees, receivables, supplier exceptions, and retention obligations.",
+                    "detail": (
+                        "Exclude client award value from desk revenue, reconcile costs "
+                        "to the canonical scenario, and revoke access when each "
+                        "contractor's assignment ends."
+                    ),
+                },
+            ],
+        },
+    ],
+    "pull_quote": "Sell a documented procurement process, never a promise that public money will follow an introduction.",
+    "diagram_id": "diag-05",
+    "action_checklist": [
+        "Create a seven-play service catalog with deliverables, acceptance tests, client dependencies, and an assigned employee owner for every play.",
+        "Attach a jurisdiction sheet, current solicitation clauses, designated-contact rules, and required licensing evidence to each qualified opportunity.",
+        "Replace award-dependent compensation with documented service milestones unless specialist review establishes an applicable lawful exception.",
+        "Verify prime eligibility, actual subcontract workshare, supplier capacity, similarly situated status, and any applicable product-sourcing requirements.",
+        "Execute scope, fee, anti-circumvention, liability, dispute, intellectual-property, and data provisions before sending authorized outreach.",
+        "Reconcile recognized fees and total costs to $18,000, $126,000, or $300,000 canonical annual owner net profit without counting client awards as desk revenue.",
+    ],
+    "statutory_citations": [
+        {
+            "title": "FAR 3.404 and FAR 52.203-5 — Contingent-Fee Covenant",
+            "url": "https://www.acquisition.gov/far/52.203-5",
+            "relevance": "Defines the contingent-fee covenant and exceptions; check the prescription and actual contract coverage before setting compensation.",
+        },
+        {
+            "title": "41 U.S.C. 2102 — Procurement Information Restrictions",
+            "url": "https://www.law.cornell.edu/uscode/text/41/2102",
+            "relevance": "Restricts knowing disclosure and acquisition of covered bid, proposal, and source-selection information before award.",
+        },
+        {
+            "title": "41 U.S.C. 8702 — Kickback Prohibitions",
+            "url": "https://www.law.cornell.edu/uscode/text/41/8702",
+            "relevance": "Prohibits kickbacks and related conduct involving improper favorable treatment in covered contracting relationships.",
+        },
+        {
+            "title": "31 U.S.C. 1352 — Restrictions on Certain Lobbying Payments",
+            "url": "https://www.law.cornell.edu/uscode/text/31/1352",
+            "relevance": "Controls covered lobbying expenditures and associated certifications or disclosures; distinguish service administration from influence activity.",
+        },
+        {
+            "title": "13 CFR 125.6 — Limitations on Subcontracting",
+            "url": "https://www.ecfr.gov/current/title-13/section-125.6",
+            "relevance": "Supplies category-specific performance limits and similarly situated subcontractor treatment for covered small-business awards.",
+        },
+        {
+            "title": "13 CFR 121.103 — Affiliation Rules",
+            "url": "https://www.ecfr.gov/current/title-13/section-121.103",
+            "relevance": "Includes the ostensible-subcontractor framework relevant to prime dependence and primary or vital performance.",
+        },
+        {
+            "title": "13 CFR 121.406 — Nonmanufacturer Requirements",
+            "url": "https://www.ecfr.gov/current/title-13/section-121.406",
+            "relevance": "Establishes applicable eligibility and product-sourcing requirements for firms supplying products they do not manufacture.",
+        },
+        {
+            "title": "FAR 52.215-23 — Limitations on Pass-Through Charges",
+            "url": "https://www.acquisition.gov/far/52.215-23",
+            "relevance": "Addresses excessive pass-through charges where the clause applies; document substantive added value and applicable exclusions.",
+        },
+        {
+            "title": "New York State Finance Law 139-j — Procurement Contacts",
+            "url": "https://www.nysenate.gov/legislation/laws/STF/139-J",
+            "relevance": "Defines restrictions and permitted channels for contacts during covered governmental procurements.",
+        },
+        {
+            "title": "New York State Finance Law 139-k — Procurement Disclosure",
+            "url": "https://www.nysenate.gov/legislation/laws/STF/139-K",
+            "relevance": "Establishes disclosure and responsibility-related requirements associated with covered procurement contacts.",
+        },
+        {
+            "title": "Florida Statutes 287.055 — Professional Services Selection",
+            "url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0200-0299/0287/Sections/0287.055.html",
+            "relevance": "Governs covered professional-services procurement, including qualifications procedures and contingent-fee restrictions.",
+        },
+        {
+            "title": "Texas Government Code Chapter 2254 — Professional Services",
+            "url": "https://statutes.capitol.texas.gov/Docs/GV/htm/GV.2254.htm",
+            "relevance": "Specifies procurement methods for covered professional services and changes how qualifications and price enter selection.",
+        },
+        {
+            "title": "California Public Contract Code 4104 — Subcontractor Listing",
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=4104.&lawCode=PCC",
+            "relevance": "Requires specified subcontractor information for covered public works bids; coordinate listing accuracy before submission.",
+        },
+        {
+            "title": "2 CFR 200.318 — General Procurement Standards",
+            "url": "https://www.ecfr.gov/current/title-2/section-200.318",
+            "relevance": "Provides procurement standards for applicable federal assistance recipients rather than direct federal contracting rules.",
+        },
+        {
+            "title": "49 U.S.C. 13904 — Registration of Brokers",
+            "url": "https://www.law.cornell.edu/uscode/text/49/13904",
+            "relevance": "Requires separate analysis when proposed services become regulated transportation brokerage rather than procurement research.",
+        },
+        {
+            "title": "49 U.S.C. 13906 — Security Requirements",
+            "url": "https://www.law.cornell.edu/uscode/text/49/13906",
+            "relevance": "Addresses security requirements associated with covered carrier, broker, and freight-forwarder registrations.",
+        },
+        {
+            "title": "15 U.S.C. 7704 — Commercial Electronic Mail Requirements",
+            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
+            "relevance": "Governs covered marketing email, including sender accuracy, postal address, opt-out mechanisms, and suppression deadlines.",
+        },
+        {
+            "title": "47 U.S.C. 227 — Telephone Consumer Protection",
+            "url": "https://www.law.cornell.edu/uscode/text/47/227",
+            "relevance": "Requires channel-specific review before automated calls or texts; public contact information does not resolve permission requirements.",
+        },
+        {
+            "title": "FAR 15.201 — Exchanges Before Receipt of Proposals",
+            "url": "https://www.acquisition.gov/far/15.201",
+            "relevance": "Supports appropriate acquisition exchanges while preserving solicitation-specific communication and information boundaries.",
+        },
+    ],
+}

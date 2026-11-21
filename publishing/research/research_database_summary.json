@@ -1,6 +1,6 @@
 {
-  "abridged_video_count": 3128,
-  "raw_video_count": 3128,
+  "abridged_video_count": 3306,
+  "raw_video_count": 3306,
   "summary": {
     "type": "dict",
     "keys": [
@@ -22,11 +22,11 @@
       "coverage": 6
     },
     "values": {
-      "generated_at": "2026-11-21T22:32:18+00:00",
+      "generated_at": "2026-11-21T22:40:38+00:00",
       "schema_version": "1.0"
     }
   },
-  "generated_at": "2026-11-21T22:32:18Z",
+  "generated_at": "2026-11-21T22:40:38Z",
   "counts": {
     "topics": 8
   },
@@ -34,9 +34,9 @@
     {
       "topic_id": "business_model_and_economics",
       "title": "Business Model, Contingency Economics & Deal Scale",
-      "video_count": 2473,
-      "tip_count": 5052,
-      "channel_count": 1686,
+      "video_count": 2615,
+      "tip_count": 5259,
+      "channel_count": 1755,
       "top_sources": [
         {
           "video_id": "p4KgISWaH6s",
@@ -195,39 +195,39 @@
         "form to",
         "form is",
         "form or",
-        "form you",
         "form the",
-        "form in",
-        "form with",
-        "form like",
-        "form so",
+        "form you",
         "form a",
-        "form where",
-        "form your",
+        "form so",
+        "form in",
+        "form like",
         "form on",
+        "form where",
+        "form with",
+        "form your",
         "court order",
         "form as",
-        "letters of administration",
         "form if",
+        "form it",
+        "letters of administration",
+        "form at",
         "form content",
         "form I",
-        "form it",
-        "form at",
-        "form called",
-        "form their",
         "form uh",
+        "form their",
         "form um",
         "form which",
+        "form called",
         "form below",
         "Chapter 7",
+        "form here",
         "Protection Act",
         "form right",
+        "form they",
+        "form because",
         "form builder",
         "form but",
-        "form here",
-        "form we",
-        "letters testamentary",
-        "property Act"
+        "form we"
       ],
       "tools_and_portals": [
         "Google",
@@ -239,7 +239,13 @@
         "FamilySearch",
         "https://probatemastery.com",
         "Bing",
+        "https://www.govconwinners.com/",
+        "https://youtu.be/YyPdhpdEs5c",
+        "https://profitablecontracts.co/",
+        "https://www.facebook.com/groups/gcwalways",
         "https://www.youtube.com/@realestateinprobate",
+        "https://youtu.be/-XAlvMJRIEM",
+        "https://youtu.be/VunK8iso33g",
         "https://estateprofessionalsmastermind.buzzsprout.com/share",
         "https://excesselite.com",
         "https://probatemastery.com/earn-attorney-referrals-now-course-pricing/",
@@ -249,35 +255,29 @@
         "https://www.facebook.com/groups/assetrecovery",
         "https://facebook.com/groups/estateprofessionalsmastermind",
         "https://www.moneymakingjug.com/inquiry",
+        "https://winnerswaybook.com/",
+        "https://www.youtube.com/kizzyparks/?sub_confirmation=1",
+        "https://govconwinners.clickfunnels.com/make-money-strategy-video",
         "https://wise.com/invite/dic/todorivanovk1",
         "https://www.MediaOptions.com",
         "PropStream",
         "https://www.instagram.com/erizzyy/",
         "https://www.surplusfunds101.com/freecallingscript",
+        "https://www.youtube.com/watch?v=FWfV2m3K4jY",
         "http://bit.ly/2O3zS75",
         "http://bit.ly/316g9t4",
         "http://familysearch.me/facebook",
         "http://familysearch.me/home",
         "http://familysearch.me/instagram",
-        "http://familysearch.me/RootsTech",
-        "http://familysearch.me/twitter",
-        "http://familysearch.me/youtube",
-        "http://familysearch.me/youtubeeurope",
-        "http://familysearch.me/youtubeportuguese",
-        "http://familysearch.me/youtubespanish",
-        "https://instagram.com/courtneyfricke",
-        "https://probatemastery.com/",
-        "https://tiktok.com/@courtney.fricke",
-        "https://www.facebook.com/courtneyfricke19/",
-        "https://www.unclaimedceo.com/linkme"
+        "http://familysearch.me/RootsTech"
       ]
     },
     {
       "topic_id": "probate_and_docket_sourcing",
       "title": "County Probate Dockets, Intestate Filings & Estate Leads",
-      "video_count": 2349,
-      "tip_count": 5285,
-      "channel_count": 1515,
+      "video_count": 2492,
+      "tip_count": 5459,
+      "channel_count": 1581,
       "top_sources": [
         {
           "video_id": "Lt0e4PdSMmo",
@@ -433,41 +433,41 @@
         "form and",
         "form that",
         "form to",
-        "form is",
         "form for",
         "form the",
-        "form you",
-        "form or",
+        "form is",
         "form a",
+        "form or",
+        "form you",
         "court order",
-        "form below",
-        "form your",
-        "form in",
         "form on",
+        "form your",
+        "form below",
+        "form in",
         "form with",
+        "form so",
         "letters of administration",
         "form like",
-        "form so",
         "form where",
         "Chapter 7",
-        "form Commercial",
         "form it",
         "form their",
+        "form Commercial",
+        "Form uh",
         "protection act",
         "Chapter 13",
-        "form I",
+        "form as",
         "form if",
-        "Form uh",
+        "form I",
         "form we",
         "letters testamentary",
         "property Act",
-        "form as",
-        "form which",
-        "form um",
         "form at",
+        "form um",
+        "form which",
         "form but",
-        "form an",
         "form here",
+        "form an",
         "form our"
       ],
       "tools_and_portals": [
@@ -475,8 +475,8 @@
         "Google",
         "LinkedIn",
         "Excel",
-        "Ancestry",
         "CSV",
+        "Ancestry",
         "https://excesselite.com",
         "https://www.facebook.com/groups/assetrecovery",
         "https://www.moneymakingjug.com/inquiry",
@@ -488,9 +488,15 @@
         "https://estateprofessionalsmastermind.buzzsprout.com/share",
         "https://probatemastery.com/earn-attorney-referrals-now-course-pricing/",
         "https://www.facebook.com/ProbateMastery/",
+        "https://www.govconwinners.com/",
         "https://www.instagram.com/coachbrucehill/",
         "https://probatemastery.com/discovery-call/",
         "https://wise.com/invite/dic/todorivanovk1",
+        "https://youtu.be/YyPdhpdEs5c",
+        "https://profitablecontracts.co/",
+        "https://www.facebook.com/groups/gcwalways",
+        "https://youtu.be/-XAlvMJRIEM",
+        "https://youtu.be/VunK8iso33g",
         "https://facebook.com/groups/estateprofessionalsmastermind",
         "https://www.surplusfunds101.com/freecallingscript",
         "PropStream",
@@ -498,27 +504,21 @@
         "https://www.facebook.com/groups/770825015084618",
         "https://www.unclaimedceo.com/linkme",
         "PACER",
+        "https://winnerswaybook.com/",
         "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
         "https://www.instagram.com/thedavidwilkerson",
         "https://www.unclaimedceo.com/freemasterclass",
-        "https://www.unclaimedceo.com/digitalcourse",
-        "https://www.unclaimedceo.com/get-my-free-guide",
-        "Small Estate",
-        "DataTree",
-        "https://instagram.com/courtneyfricke",
-        "https://tiktok.com/@courtney.fricke",
-        "https://www.facebook.com/courtneyfricke19/",
-        "https://www.youtube.com/@courtneyfricke",
-        "https://x.com/courtneyfricke",
-        "https://www.MediaOptions.com"
+        "https://www.youtube.com/kizzyparks/?sub_confirmation=1",
+        "https://govconwinners.clickfunnels.com/make-money-strategy-video",
+        "https://www.unclaimedceo.com/digitalcourse"
       ]
     },
     {
       "topic_id": "unclaimed_property_and_escheat",
       "title": "State Unclaimed Property, Escheated Funds & Treasury Claims",
-      "video_count": 721,
-      "tip_count": 1818,
-      "channel_count": 467,
+      "video_count": 741,
+      "tip_count": 1821,
+      "channel_count": 479,
       "top_sources": [
         {
           "video_id": "D-PMjgNe-7s",
@@ -674,21 +674,21 @@
         "form that",
         "form of",
         "form below",
-        "Form is",
         "form to",
+        "Form is",
         "form you",
         "form for",
-        "form the",
         "form or",
+        "form the",
         "form a",
-        "form with",
         "form on",
+        "form with",
         "Form uh",
         "form we",
         "form your",
+        "form but",
         "form so",
         "Property Act",
-        "form but",
         "form if",
         "form in",
         "form it",
@@ -706,10 +706,10 @@
         "form due",
         "form from",
         "form I",
+        "form like",
         "letters of administration",
         "Chapter 7",
-        "form acts",
-        "form all"
+        "form acts"
       ],
       "tools_and_portals": [
         "Facebook",
@@ -757,9 +757,9 @@
     {
       "topic_id": "genealogy_and_heirship_proof",
       "title": "Forensic Genealogy, Per-Stirpes Kinship & Proof of Heirship",
-      "video_count": 2516,
-      "tip_count": 2963,
-      "channel_count": 1695,
+      "video_count": 2670,
+      "tip_count": 3112,
+      "channel_count": 1774,
       "top_sources": [
         {
           "video_id": "7M3XZfN7814",
@@ -917,39 +917,39 @@
         "form to",
         "form for",
         "form is",
+        "form the",
         "form or",
         "form you",
-        "form the",
         "form a",
         "form so",
-        "form with",
         "form your",
+        "form with",
+        "form on",
         "form like",
         "form in",
-        "form on",
         "form where",
         "form below",
         "form as",
-        "form I",
         "form at",
-        "form content",
-        "form if",
         "form it",
+        "form I",
+        "form if",
+        "form content",
         "form which",
+        "form their",
+        "court order",
         "form called",
         "form Commercial",
-        "court order",
-        "form their",
         "Form uh",
         "form um",
+        "form here",
+        "form they",
         "letters of administration",
         "property Act",
         "Protection Act",
-        "form here",
         "form we",
         "form builder",
         "form right",
-        "form they",
         "Chapter 13"
       ],
       "tools_and_portals": [
@@ -968,9 +968,18 @@
         "https://www.surplusfunds101.com/freecallingscript",
         "https://wise.com/invite/dic/todorivanovk1",
         "https://www.youtube.com/surplusfunds101",
+        "https://www.govconwinners.com/",
+        "https://youtu.be/YyPdhpdEs5c",
+        "https://profitablecontracts.co/",
+        "https://www.facebook.com/groups/gcwalways",
+        "https://youtu.be/-XAlvMJRIEM",
+        "https://youtu.be/VunK8iso33g",
         "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
         "https://www.instagram.com/thedavidwilkerson",
+        "https://winnerswaybook.com/",
         "https://www.unclaimedceo.com/linkme",
+        "https://www.youtube.com/kizzyparks/?sub_confirmation=1",
+        "https://govconwinners.clickfunnels.com/make-money-strategy-video",
         "https://www.facebook.com/groups/770825015084618",
         "https://www.MediaOptions.com",
         "https://www.unclaimedceo.com/freemasterclass",
@@ -983,24 +992,15 @@
         "https://x.com/courtneyfricke",
         "PACER",
         "http://familysearch.me/facebook",
-        "http://familysearch.me/home",
-        "http://familysearch.me/instagram",
-        "http://familysearch.me/RootsTech",
-        "http://familysearch.me/twitter",
-        "http://familysearch.me/youtube",
-        "http://familysearch.me/youtubeeurope",
-        "http://familysearch.me/youtubeportuguese",
-        "http://familysearch.me/youtubespanish",
-        "https://ProbateMastery.com",
-        "https://www.youtube.com/@courtneyfricke"
+        "http://familysearch.me/home"
       ]
     },
     {
       "topic_id": "skip_tracing_and_outreach",
       "title": "Skip Tracing, Ethical Heir Contact & Trust Building",
-      "video_count": 1760,
-      "tip_count": 1095,
-      "channel_count": 1200,
+      "video_count": 1875,
+      "tip_count": 1114,
+      "channel_count": 1250,
       "top_sources": [
         {
           "video_id": "DgzklijTLzE",
@@ -1158,40 +1158,40 @@
         "form to",
         "form for",
         "form or",
-        "form is",
         "form you",
+        "form is",
         "form the",
         "form a",
         "form your",
         "form like",
+        "form on",
         "form where",
         "form with",
-        "form on",
+        "form so",
         "form in",
         "court order",
-        "form so",
-        "Protection Act",
         "form as",
+        "Protection Act",
         "form below",
-        "form content",
         "Form uh",
-        "form which",
         "form um",
         "form at",
-        "form Commercial",
-        "form I",
+        "form content",
+        "form which",
         "form if",
         "form their",
-        "form called",
+        "form Commercial",
+        "form I",
         "form it",
-        "Chapter 13",
+        "form called",
+        "form here",
         "Chapter 7",
         "form but",
-        "form here",
+        "Chapter 13",
         "form right",
+        "form they",
         "form because",
-        "form builder",
-        "form our"
+        "Copyright Act"
       ],
       "tools_and_portals": [
         "LinkedIn",
@@ -1210,6 +1210,7 @@
         "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
         "https://facebook.com/groups/estateprofessionalsmastermind",
         "https://www.instagram.com/thedavidwilkerson",
+        "https://www.govconwinners.com/",
         "https://www.instagram.com/erizzyy/",
         "https://www.MediaOptions.com",
         "https://estateprofessionalsmastermind.buzzsprout.com/share",
@@ -1218,30 +1219,29 @@
         "https://www.facebook.com/ProbateMastery/",
         "https://www.instagram.com/coachbrucehill/",
         "https://www.youtube.com/@realestateinprobate",
+        "https://youtu.be/YyPdhpdEs5c",
         "https://instagram.com/courtneyfricke",
+        "https://profitablecontracts.co/",
         "https://tiktok.com/@courtney.fricke",
         "https://www.facebook.com/courtneyfricke19/",
         "https://www.facebook.com/groups/770825015084618",
+        "https://www.facebook.com/groups/gcwalways",
         "https://www.youtube.com/@courtneyfricke",
         "https://x.com/courtneyfricke",
+        "https://youtu.be/-XAlvMJRIEM",
+        "https://youtu.be/VunK8iso33g",
+        "https://winnerswaybook.com/",
         "https://www.unclaimedceo.com/linkme",
-        "Ancestry",
-        "DataTree",
-        "https://www.unclaimedceo.com/freemasterclass",
-        "https://www.unclaimedceo.com/digitalcourse",
-        "https://www.unclaimedceo.com/get-my-free-guide",
-        "http://www.facebook.com/domainsherpa",
-        "http://www.linkedin.com/company/domainsherpa",
-        "http://www.x.com/andrewrosener",
-        "http://www.x.com/domainsherpa"
+        "https://www.youtube.com/kizzyparks/?sub_confirmation=1",
+        "Ancestry"
       ]
     },
     {
       "topic_id": "contracts_and_compensation",
       "title": "Fee Agreements, Assignments of Interest & Escrow Disbursement",
-      "video_count": 2480,
-      "tip_count": 3360,
-      "channel_count": 1649,
+      "video_count": 2654,
+      "tip_count": 4182,
+      "channel_count": 1727,
       "top_sources": [
         {
           "video_id": "VBvaq5etzV4",
@@ -1265,6 +1265,13 @@
           "duration": "00:03:10"
         },
         {
+          "video_id": "GrYP5KyxBho",
+          "title": "How to Find Past Prices for Better Gov Contract Bids (Using Free Resources)",
+          "author": "FedAccess",
+          "url": "https://www.youtube.com/watch?v=GrYP5KyxBho",
+          "duration": "00:08:56"
+        },
+        {
           "video_id": "9ztMvgoQsgE",
           "title": "UCC Liens: What Do They Mean for Your Business?",
           "author": "NerdWallet Small Business",
@@ -1279,25 +1286,18 @@
           "duration": "00:03:48"
         },
         {
+          "video_id": "Z2ZeI5rayvk",
+          "title": "How to find what the government paid on previously awarded contracts! #govcon #governmentcontracting",
+          "author": "Fox Wade",
+          "url": "https://www.youtube.com/watch?v=Z2ZeI5rayvk",
+          "duration": "00:06:38"
+        },
+        {
           "video_id": "-HFzhDO6v-A",
           "title": "How Judgment Liens Show Up in Courthouse Records — And How to Find Them | Hidden Power Files",
           "author": "Hidden Power Files",
           "url": "https://www.youtube.com/watch?v=-HFzhDO6v-A",
           "duration": "00:06:40"
-        },
-        {
-          "video_id": "-3yBZKLuJnU",
-          "title": "✅ Is Escrow.com Safe To Use 🔴",
-          "author": "Make Money Anthony",
-          "url": "https://www.youtube.com/watch?v=-3yBZKLuJnU",
-          "duration": "00:05:05"
-        },
-        {
-          "video_id": "IK3LgAFr-QQ",
-          "title": "The Deposit and Escrow Instructions",
-          "author": "Title's Not Borin' with Lauren",
-          "url": "https://www.youtube.com/watch?v=IK3LgAFr-QQ",
-          "duration": "00:03:36"
         }
       ],
       "top_timestamped_insights": [
@@ -1396,43 +1396,43 @@
         "form and",
         "form of",
         "form that",
-        "form to",
         "form for",
+        "form to",
         "Form is",
+        "form the",
         "form or",
         "form you",
-        "form the",
         "form a",
         "form with",
-        "form like",
         "form on",
-        "form in",
+        "form like",
         "form your",
-        "court order",
         "form so",
+        "form in",
+        "court order",
         "form where",
         "form below",
         "form as",
-        "letters of administration",
         "form at",
-        "form I",
+        "letters of administration",
         "form it",
-        "form content",
-        "Chapter 7",
+        "form I",
         "form their",
-        "form if",
         "Form uh",
-        "form called",
+        "Chapter 7",
+        "form content",
+        "form if",
         "form um",
         "form which",
+        "form called",
         "Protection Act",
         "form Commercial",
+        "form here",
         "Chapter 13",
         "form we",
         "letters testamentary",
         "property Act",
-        "form here",
-        "form builder"
+        "form they"
       ],
       "tools_and_portals": [
         "Google",
@@ -1448,41 +1448,41 @@
         "https://probatemastery.com",
         "https://www.instagram.com/erizzyy/",
         "FamilySearch",
+        "https://www.govconwinners.com/",
         "https://www.youtube.com/@realestateinprobate",
+        "https://youtu.be/YyPdhpdEs5c",
         "https://estateprofessionalsmastermind.buzzsprout.com/share",
         "https://probatemastery.com/earn-attorney-referrals-now-course-pricing/",
+        "https://profitablecontracts.co/",
+        "https://www.facebook.com/groups/gcwalways",
         "https://www.facebook.com/ProbateMastery/",
         "https://www.instagram.com/coachbrucehill/",
         "https://www.surplusfunds101.com/freecallingscript",
+        "https://youtu.be/-XAlvMJRIEM",
+        "https://youtu.be/VunK8iso33g",
         "https://probatemastery.com/discovery-call/",
         "https://wise.com/invite/dic/todorivanovk1",
         "https://www.youtube.com/surplusfunds101",
         "https://facebook.com/groups/estateprofessionalsmastermind",
         "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
+        "https://winnerswaybook.com/",
         "https://www.instagram.com/thedavidwilkerson",
         "https://www.facebook.com/groups/770825015084618",
         "https://www.unclaimedceo.com/linkme",
+        "https://www.youtube.com/kizzyparks/?sub_confirmation=1",
         "PACER",
         "PropStream",
+        "https://govconwinners.clickfunnels.com/make-money-strategy-video",
         "https://www.MediaOptions.com",
-        "https://www.unclaimedceo.com/freemasterclass",
-        "Small Estate",
-        "https://www.unclaimedceo.com/digitalcourse",
-        "https://www.unclaimedceo.com/get-my-free-guide",
-        "https://instagram.com/courtneyfricke",
-        "https://tiktok.com/@courtney.fricke",
-        "https://www.facebook.com/courtneyfricke19/",
-        "https://www.youtube.com/@courtneyfricke",
-        "https://x.com/courtneyfricke",
-        "http://bit.ly/2O3zS75"
+        "https://www.unclaimedceo.com/freemasterclass"
       ]
     },
     {
       "topic_id": "statutory_caps_and_licensing",
       "title": "State Fee Caps, Waiting Periods, PI Licensing & UPL Rules",
-      "video_count": 2610,
-      "tip_count": 2893,
-      "channel_count": 1686,
+      "video_count": 2770,
+      "tip_count": 2990,
+      "channel_count": 1761,
       "top_sources": [
         {
           "video_id": "ttoT3V6duzU",
@@ -1644,36 +1644,36 @@
         "form or",
         "form you",
         "form a",
-        "court order",
         "form on",
         "form your",
+        "court order",
         "form in",
+        "form so",
         "form with",
         "form below",
-        "form so",
         "form where",
         "form like",
         "letters of administration",
-        "form it",
         "Form uh",
-        "Chapter 7",
+        "form it",
         "form their",
+        "Chapter 7",
+        "form as",
         "form I",
         "Protection Act",
         "form Commercial",
-        "form as",
-        "Chapter 13",
+        "form at",
         "form if",
-        "form we",
         "form um",
+        "Chapter 13",
+        "form we",
         "letters testamentary",
         "property Act",
         "form which",
-        "form at",
         "form but",
+        "form here",
         "form an",
-        "form called",
-        "form content"
+        "form because"
       ],
       "tools_and_portals": [
         "Google",
@@ -1689,41 +1689,41 @@
         "Bing",
         "https://probatemastery.com",
         "https://www.instagram.com/erizzyy/",
+        "https://www.govconwinners.com/",
         "https://www.youtube.com/@realestateinprobate",
         "https://estateprofessionalsmastermind.buzzsprout.com/share",
         "https://probatemastery.com/earn-attorney-referrals-now-course-pricing/",
         "https://www.facebook.com/ProbateMastery/",
         "https://www.instagram.com/coachbrucehill/",
+        "https://youtu.be/YyPdhpdEs5c",
         "https://probatemastery.com/discovery-call/",
+        "https://profitablecontracts.co/",
         "https://wise.com/invite/dic/todorivanovk1",
+        "https://www.facebook.com/groups/gcwalways",
+        "https://youtu.be/-XAlvMJRIEM",
+        "https://youtu.be/VunK8iso33g",
         "PropStream",
         "https://facebook.com/groups/estateprofessionalsmastermind",
         "https://www.surplusfunds101.com/freecallingscript",
         "https://www.youtube.com/surplusfunds101",
+        "https://winnerswaybook.com/",
         "https://www.facebook.com/groups/770825015084618",
         "https://www.unclaimedceo.com/linkme",
         "PACER",
+        "https://www.youtube.com/kizzyparks/?sub_confirmation=1",
         "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
+        "https://govconwinners.clickfunnels.com/make-money-strategy-video",
         "https://www.instagram.com/thedavidwilkerson",
         "https://www.unclaimedceo.com/freemasterclass",
-        "Small Estate",
-        "https://www.unclaimedceo.com/digitalcourse",
-        "https://www.unclaimedceo.com/get-my-free-guide",
-        "DataTree",
-        "https://instagram.com/courtneyfricke",
-        "https://tiktok.com/@courtney.fricke",
-        "https://www.facebook.com/courtneyfricke19/",
-        "https://www.youtube.com/@courtneyfricke",
-        "https://x.com/courtneyfricke",
-        "https://www.MediaOptions.com"
+        "Small Estate"
       ]
     },
     {
       "topic_id": "automation_and_small_team_ops",
       "title": "Docket Automation, AI Abstracting & Small-Team Operations",
-      "video_count": 2329,
-      "tip_count": 6244,
-      "channel_count": 1575,
+      "video_count": 2440,
+      "tip_count": 6429,
+      "channel_count": 1637,
       "top_sources": [
         {
           "video_id": "zqtx1Soeq5E",
@@ -1876,20 +1876,20 @@
       ],
       "statutes_and_forms": [
         "form and",
-        "form of",
         "form that",
+        "form of",
         "form for",
         "form to",
         "form is",
-        "form or",
         "form the",
+        "form or",
         "form you",
+        "form a",
         "form so",
         "form with",
-        "form a",
+        "form on",
         "form where",
         "form your",
-        "form on",
         "form like",
         "form in",
         "form below",
@@ -1897,24 +1897,24 @@
         "form as",
         "form it",
         "letters of administration",
-        "form content",
         "form which",
+        "form content",
         "form if",
-        "form I",
         "Form uh",
         "form at",
+        "form I",
         "form um",
         "form we",
         "Chapter 7",
-        "form called",
-        "form their",
-        "form but",
-        "form here",
-        "letters testamentary",
         "form because",
+        "form but",
+        "form called",
+        "form here",
+        "form their",
+        "form this",
+        "letters testamentary",
         "form builder",
-        "Protection Act",
-        "form from"
+        "Protection Act"
       ],
       "tools_and_portals": [
         "Google",
@@ -1951,12 +1951,12 @@
         "PACER",
         "Small Estate",
         "DataTree",
-        "http://bit.ly/2O3zS75",
-        "http://bit.ly/316g9t4",
-        "https://probatemastery.com/",
-        "https://www.MediaOptions.com",
-        "Regrid",
-        "https://tinyurl.com/unclaimedmentor"
+        "https://www.govconwinners.com/",
+        "https://profitablecontracts.co/",
+        "https://www.facebook.com/groups/gcwalways",
+        "https://youtu.be/-XAlvMJRIEM",
+        "https://youtu.be/VunK8iso33g",
+        "https://youtu.be/YyPdhpdEs5c"
       ]
     }
   ],
@@ -1968,9 +1968,9 @@
       "headline": "Heir location is paid on contingency, never on up-front fees.",
       "summary": "Across the corpus, operators converge on a pure contingency model: the heir pays nothing out of pocket, the locator advances all research cost, and the fee is a negotiated percentage released only when the estate or state agency actually disburses funds. Charging an heir an advance fee is treated as the single clearest marker of a predatory or unlicensed operator.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 1686,
-      "video_count": 2473,
-      "corroborating_tip_count": 5052,
+      "channel_count": 1755,
+      "video_count": 2615,
+      "corroborating_tip_count": 5259,
       "supporting_links": [
         {
           "video_title": "State Funds Tutorial New Mexico: How To Register As A Property Locator In The State Of New Mexico.",
@@ -2018,9 +2018,9 @@
       "headline": "Fresh county probate and intestate dockets outperform purchased lead lists.",
       "summary": "Practitioners consistently build pipeline from newly filed probate and administration matters pulled directly from county clerk portals rather than resold lists. Filings naming an administrator but no located heirs, and estates sitting open past the local notice period, are the recurring high-value signal.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 1515,
-      "video_count": 2349,
-      "corroborating_tip_count": 5285,
+      "channel_count": 1581,
+      "video_count": 2492,
+      "corroborating_tip_count": 5459,
       "supporting_links": [
         {
           "video_title": "Before Your Next Land Deal: 7 Things to Know - REWBCON 2022 with Seth Williams",
@@ -2068,9 +2068,9 @@
       "headline": "State unclaimed-property and escheat databases supply the repeatable volume.",
       "summary": "Every state treasury or controller maintains a searchable unclaimed-property register, and the consensus workflow is to cross-reference deceased owners there against probate filings. Volume comes from systematic register sweeps; size comes from the rarer escheated estate, surplus-funds and safe-deposit categories.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 467,
-      "video_count": 721,
-      "corroborating_tip_count": 1818,
+      "channel_count": 479,
+      "video_count": 741,
+      "corroborating_tip_count": 1821,
       "supporting_links": [
         {
           "video_title": "How To Claim Surplus Funds From Foreclosure",
@@ -2118,9 +2118,9 @@
       "headline": "The deliverable is a document-backed kinship chain, not a name on a list.",
       "summary": "Operators agree that claims succeed or fail on the evidentiary chain: each generational link supported by vital records, each branch mapped per stirpes, and every gap closed before contact. Tree hints from consumer genealogy sites are treated as leads to verify, never as proof to submit.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 1695,
-      "video_count": 2516,
-      "corroborating_tip_count": 2963,
+      "channel_count": 1774,
+      "video_count": 2670,
+      "corroborating_tip_count": 3112,
       "supporting_links": [
         {
           "video_title": "Understanding Aircraft Brokerage: Standards, Risk, and Trust",
@@ -2168,9 +2168,9 @@
       "headline": "Verify identity before contact, then lead with restraint, not the dollar figure.",
       "summary": "The recurring outreach pattern is: skip trace to a confirmed current address and phone, open by letter or a short calm call, state that funds may be owed to the family without naming an amount, and give the heir a way to independently verify the operator. Pressure tactics and inflated figures are consistently reported as the fastest way to lose a signed file.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 1200,
-      "video_count": 1760,
-      "corroborating_tip_count": 1095,
+      "channel_count": 1250,
+      "video_count": 1875,
+      "corroborating_tip_count": 1114,
       "supporting_links": [
         {
           "video_title": "How to Get Unlimited Leads Using Clay Enrichment Waterfall | clay.com Tutorial",
@@ -2218,9 +2218,9 @@
       "headline": "No work proceeds without a signed fee agreement and third-party escrow.",
       "summary": "Consensus practice is a plain-language, notarized or e-signed agreement that names the estate, states the percentage, discloses the heir's right to claim independently, and routes funds through attorney trust or licensed escrow so the locator never holds the heir's money directly.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 1649,
-      "video_count": 2480,
-      "corroborating_tip_count": 3360,
+      "channel_count": 1727,
+      "video_count": 2654,
+      "corroborating_tip_count": 4182,
       "supporting_links": [
         {
           "video_title": "Topical Authority With Koray Tuğberk GÜBÜR",
@@ -2268,9 +2268,9 @@
       "headline": "Fee caps, waiting periods and licensing are decided per state, before the first call.",
       "summary": "Operators repeatedly stress that the governing rules — percentage caps on unclaimed-property recoveries, mandatory waiting periods after escheat or sale, private-investigator licensing triggers, and the line against practicing law — vary by jurisdiction and must be read in the local statute for every file rather than generalized from another state.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 1686,
-      "video_count": 2610,
-      "corroborating_tip_count": 2893,
+      "channel_count": 1761,
+      "video_count": 2770,
+      "corroborating_tip_count": 2990,
       "supporting_links": [
         {
           "video_title": "How To Start Wholesale Real Estate In 2027 (15hrs/wk)!",
@@ -2318,9 +2318,9 @@
       "headline": "Automated docket monitoring plus AI abstracting lets one or two people run real volume.",
       "summary": "The operational consensus is to automate the repetitive layer — scheduled docket and register pulls, structured intake into a sheet or CRM, AI-assisted abstracting of filings — while keeping genealogy judgment, heir contact and contract execution human. That split is what keeps a two-person shop competitive against staffed firms.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 1575,
-      "video_count": 2329,
-      "corroborating_tip_count": 6244,
+      "channel_count": 1637,
+      "video_count": 2440,
+      "corroborating_tip_count": 6429,
       "supporting_links": [
         {
           "video_title": "How To Find Comps For Land",
@@ -2746,8 +2746,8 @@
         "asset_id": "youtube_thumbnails",
         "asset": "https://i.ytimg.com/vi/<video_id>/*.jpg",
         "asset_type": "youtube_thumbnail_image",
-        "source": "YouTube CDN thumbnails for the 3128 corpus videos",
-        "instance_count": 3128,
+        "source": "YouTube CDN thumbnails for the 3306 corpus videos",
+        "instance_count": 3306,
         "instances": [
           {
             "video_id": "9Q4qYeK5DTg",
@@ -24644,6 +24644,1252 @@
             "author": "Finconvo Animation",
             "thumbnail_url": "https://i.ytimg.com/vi/JEqCIJmR4Mg/hqdefault.jpg",
             "source_url": "https://www.youtube.com/watch?v=JEqCIJmR4Mg"
+          },
+          {
+            "video_id": "kejmg4Gzuuc",
+            "title": "How to Make Money as a Middleman in Government Contracts (2025)",
+            "author": "Kizzy Parks",
+            "thumbnail_url": "https://i.ytimg.com/vi/kejmg4Gzuuc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=kejmg4Gzuuc"
+          },
+          {
+            "video_id": "IXmVYXIEfdQ",
+            "title": "4 Middleman Models in Government Contracting | Which Triggers DOJ Scrutiny?",
+            "author": "Squared Compass",
+            "thumbnail_url": "https://i.ytimg.com/vi/IXmVYXIEfdQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=IXmVYXIEfdQ"
+          },
+          {
+            "video_id": "R-2hdJLvKUM",
+            "title": "How to Make Money with Middleman Strategy in 2026 The Legal Way",
+            "author": "Kizzy Parks",
+            "thumbnail_url": "https://i.ytimg.com/vi/R-2hdJLvKUM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=R-2hdJLvKUM"
+          },
+          {
+            "video_id": "NRMYxAAOPYo",
+            "title": "The Truth About Middleman Strategy in Government Contracting (Legal way!)",
+            "author": "GovCon with Humam",
+            "thumbnail_url": "https://i.ytimg.com/vi/NRMYxAAOPYo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=NRMYxAAOPYo"
+          },
+          {
+            "video_id": "7NhHddZW0kE",
+            "title": "Is the Middleman Strategy LEGAL?! | Government Contracting FAR 52.219-14 Explained for Beginners",
+            "author": "Dr. Wes Fisher",
+            "thumbnail_url": "https://i.ytimg.com/vi/7NhHddZW0kE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=7NhHddZW0kE"
+          },
+          {
+            "video_id": "z6ZNrmprd-o",
+            "title": "Subcontracting Government Contracts In 2025!",
+            "author": "GovClose | DoD Contract Academy",
+            "thumbnail_url": "https://i.ytimg.com/vi/z6ZNrmprd-o/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=z6ZNrmprd-o"
+          },
+          {
+            "video_id": "iOVkNIsRYV4",
+            "title": "Bid As A MiddleMan - Full Walkthrough | Kizzy Highlights #7",
+            "author": "Kizzy Parks",
+            "thumbnail_url": "https://i.ytimg.com/vi/iOVkNIsRYV4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=iOVkNIsRYV4"
+          },
+          {
+            "video_id": "F6Hwh89ornQ",
+            "title": "How to Master Subcontracting & Win Government Contracts in 2025 (Step by Step)",
+            "author": "Kizzy Parks",
+            "thumbnail_url": "https://i.ytimg.com/vi/F6Hwh89ornQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=F6Hwh89ornQ"
+          },
+          {
+            "video_id": "kgPkC78OKzs",
+            "title": "Win Government Contracts with the Consultant Middle Man Business Model",
+            "author": "Fed Biz Exchange",
+            "thumbnail_url": "https://i.ytimg.com/vi/kgPkC78OKzs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=kgPkC78OKzs"
+          },
+          {
+            "video_id": "FYViP-mtnqI",
+            "title": "How to Win Federal Contracts as a Middleman (Free Live Training)",
+            "author": "J. White - The Federal Code",
+            "thumbnail_url": "https://i.ytimg.com/vi/FYViP-mtnqI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=FYViP-mtnqI"
+          },
+          {
+            "video_id": "h72zKiJRBe4",
+            "title": "The Middleman Lie in Government Contracting (What’s Legal vs What Gets You Debarred)",
+            "author": "GovCon Empire with Derrick Green “Theo”",
+            "thumbnail_url": "https://i.ytimg.com/vi/h72zKiJRBe4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=h72zKiJRBe4"
+          },
+          {
+            "video_id": "uYFWvLCSDgA",
+            "title": "I Won 4 Government Contracts With the Middleman Strategy…And I Regret It.",
+            "author": "GovCon TechLab",
+            "thumbnail_url": "https://i.ytimg.com/vi/uYFWvLCSDgA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=uYFWvLCSDgA"
+          },
+          {
+            "video_id": "jYYGaPkanFU",
+            "title": "Government Acquisition for Dummies - Prime Contractors & Subcontractors",
+            "author": "ASI Education",
+            "thumbnail_url": "https://i.ytimg.com/vi/jYYGaPkanFU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=jYYGaPkanFU"
+          },
+          {
+            "video_id": "zqg5q_pZvdc",
+            "title": "Subcontracting with Prime Government Contractors is a Must",
+            "author": "Neil McDonnell",
+            "thumbnail_url": "https://i.ytimg.com/vi/zqg5q_pZvdc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=zqg5q_pZvdc"
+          },
+          {
+            "video_id": "e7wypJIJZpw",
+            "title": "Simplified Acquisitions & Micro-Purchases Tutorial - Easiest Way to Win Government Contracts",
+            "author": "SamSearch - AI for Government Contracting",
+            "thumbnail_url": "https://i.ytimg.com/vi/e7wypJIJZpw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=e7wypJIJZpw"
+          },
+          {
+            "video_id": "xeEO2U-Vy38",
+            "title": "Simplified Acquisitions & Micro-Purchases Tutorial",
+            "author": "SamSearch - AI for Government Contracting",
+            "thumbnail_url": "https://i.ytimg.com/vi/xeEO2U-Vy38/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=xeEO2U-Vy38"
+          },
+          {
+            "video_id": "IEV3HAgB8jA",
+            "title": "Simplified Acquisitions & Micro-Purchases Tutorial - Easiest Way to Win Government Contracts",
+            "author": "GovCon with Humam",
+            "thumbnail_url": "https://i.ytimg.com/vi/IEV3HAgB8jA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=IEV3HAgB8jA"
+          },
+          {
+            "video_id": "ZL3JyvzdhyE",
+            "title": "How to Find Micro-Purchases on SAM.gov (Under $10,000 Without Bidding)",
+            "author": "Government Contract Blueprint",
+            "thumbnail_url": "https://i.ytimg.com/vi/ZL3JyvzdhyE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ZL3JyvzdhyE"
+          },
+          {
+            "video_id": "JVBkE6J1jPc",
+            "title": "Low hanging fruit contracts (SAP) Simplified Acquisition Procedures - Eric Coffie",
+            "author": "Eric Coffie",
+            "thumbnail_url": "https://i.ytimg.com/vi/JVBkE6J1jPc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=JVBkE6J1jPc"
+          },
+          {
+            "video_id": "B6uLsI5zZTQ",
+            "title": "Government Contracting Made Easy: Simplified Acquisitions & Micro-Purchases for Beginners | GPC Card",
+            "author": "Sheenapreneur",
+            "thumbnail_url": "https://i.ytimg.com/vi/B6uLsI5zZTQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=B6uLsI5zZTQ"
+          },
+          {
+            "video_id": "Ac9lYLwR6QQ",
+            "title": "How to Win Micro-Purchase Contracts with the Government For Beginners",
+            "author": "Kizzy Parks",
+            "thumbnail_url": "https://i.ytimg.com/vi/Ac9lYLwR6QQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Ac9lYLwR6QQ"
+          },
+          {
+            "video_id": "xobcboYBB6w",
+            "title": "Simplified acquisition threshold - Federal Micro Purchases for small businesses",
+            "author": "TendersPage Corp.",
+            "thumbnail_url": "https://i.ytimg.com/vi/xobcboYBB6w/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=xobcboYBB6w"
+          },
+          {
+            "video_id": "AOa0-iEhmks",
+            "title": "How do I find micro purchase government contracts wins using SAM.gov",
+            "author": "Eric Coffie",
+            "thumbnail_url": "https://i.ytimg.com/vi/AOa0-iEhmks/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=AOa0-iEhmks"
+          },
+          {
+            "video_id": "NUKVGhkCHbg",
+            "title": "How to start government contracting with 0$ |Micro Purchases",
+            "author": "Federal Contracts Lab",
+            "thumbnail_url": "https://i.ytimg.com/vi/NUKVGhkCHbg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=NUKVGhkCHbg"
+          },
+          {
+            "video_id": "28K_7987r8w",
+            "title": "FAR Limitations on Subcontracting Lawyers & 13 CFR 125.6",
+            "author": "Theodore Watson",
+            "thumbnail_url": "https://i.ytimg.com/vi/28K_7987r8w/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=28K_7987r8w"
+          },
+          {
+            "video_id": "i9prjadeAyM",
+            "title": "Limitations on Subcontracting: Key Updates and Tips for Compliance",
+            "author": "PilieroMazza PLLC",
+            "thumbnail_url": "https://i.ytimg.com/vi/i9prjadeAyM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=i9prjadeAyM"
+          },
+          {
+            "video_id": "ne7XpEiLNKE",
+            "title": "Limitations on Subcontracting Rule 13 C.F.R. § 125.6 Overview and Updates to the Regulations",
+            "author": "Mark Ryan",
+            "thumbnail_url": "https://i.ytimg.com/vi/ne7XpEiLNKE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ne7XpEiLNKE"
+          },
+          {
+            "video_id": "qxE-37z0qfw",
+            "title": "Limitations on Subcontracting New Rules",
+            "author": "PilieroMazza PLLC",
+            "thumbnail_url": "https://i.ytimg.com/vi/qxE-37z0qfw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=qxE-37z0qfw"
+          },
+          {
+            "video_id": "Gisvrg813kY",
+            "title": "GovCon 101 Federal Acquisition Regulation FAR",
+            "author": "Public Contracting Institute (PCI)",
+            "thumbnail_url": "https://i.ytimg.com/vi/Gisvrg813kY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Gisvrg813kY"
+          },
+          {
+            "video_id": "G44VRBscagY",
+            "title": "UNDERSTANDING LIMTATIONS TO SUBCONTRACTING -The FPF Academyx",
+            "author": "Natalie Rosario | GovCon Coach",
+            "thumbnail_url": "https://i.ytimg.com/vi/G44VRBscagY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=G44VRBscagY"
+          },
+          {
+            "video_id": "bg9NY9VUfsE",
+            "title": "Limits on Subcontracting",
+            "author": "GovPrep",
+            "thumbnail_url": "https://i.ytimg.com/vi/bg9NY9VUfsE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=bg9NY9VUfsE"
+          },
+          {
+            "video_id": "8-4Lml2bZj4",
+            "title": "Similarly Situated Entity helps Limitations on SUBCONTRACTING for small firms - Eric Coffie",
+            "author": "Eric Coffie",
+            "thumbnail_url": "https://i.ytimg.com/vi/8-4Lml2bZj4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=8-4Lml2bZj4"
+          },
+          {
+            "video_id": "x7xmTiXnwQ4",
+            "title": "FAR PART 1 (Simplified) | Who Can Authorize the Work?",
+            "author": "Win Government Contracts with GovSuccess",
+            "thumbnail_url": "https://i.ytimg.com/vi/x7xmTiXnwQ4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=x7xmTiXnwQ4"
+          },
+          {
+            "video_id": "UV6zJLRHfHw",
+            "title": "GovCon 101 - A Guide to Navigating FAR Part 52",
+            "author": "Public Contracting Institute (PCI)",
+            "thumbnail_url": "https://i.ytimg.com/vi/UV6zJLRHfHw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=UV6zJLRHfHw"
+          },
+          {
+            "video_id": "36eRQkU2X_I",
+            "title": "Government Contacting - FAR Part 44 - Subcontracting Policies and Procedures - Win Federal Contracts",
+            "author": "How To Sell To & Win Federal Government Contracts",
+            "thumbnail_url": "https://i.ytimg.com/vi/36eRQkU2X_I/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=36eRQkU2X_I"
+          },
+          {
+            "video_id": "MTy_zJd0RsY",
+            "title": "The Federal Acquisition Regulation (FAR) Explained in 5 Minutes",
+            "author": "ASI Education",
+            "thumbnail_url": "https://i.ytimg.com/vi/MTy_zJd0RsY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=MTy_zJd0RsY"
+          },
+          {
+            "video_id": "T_cRpZF2IUo",
+            "title": "TLDR Which Parts of the Federal Acquisition Regulation Matter?",
+            "author": "FedAccess",
+            "thumbnail_url": "https://i.ytimg.com/vi/T_cRpZF2IUo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=T_cRpZF2IUo"
+          },
+          {
+            "video_id": "yp5LO51vPi8",
+            "title": "Government Contracting - FAR Compliance - What Every Sub Needs To Know - Win Federal Contracts",
+            "author": "How To Sell To & Win Federal Government Contracts",
+            "thumbnail_url": "https://i.ytimg.com/vi/yp5LO51vPi8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=yp5LO51vPi8"
+          },
+          {
+            "video_id": "l13_GjjLw8g",
+            "title": "FAR Subpart 3.4 - Contingent Fees",
+            "author": "Frank Reilly",
+            "thumbnail_url": "https://i.ytimg.com/vi/l13_GjjLw8g/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=l13_GjjLw8g"
+          },
+          {
+            "video_id": "MM4DJrI2Od0",
+            "title": "The New Rules of Federal Buying: How the FAR Overhaul Is Changing Everything",
+            "author": "Fed Gov Today",
+            "thumbnail_url": "https://i.ytimg.com/vi/MM4DJrI2Od0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=MM4DJrI2Od0"
+          },
+          {
+            "video_id": "i7_rrrRpotk",
+            "title": "FAR Part 31 (Simplified) | Support the Cost Before You Claim It",
+            "author": "Win Government Contracts with GovSuccess",
+            "thumbnail_url": "https://i.ytimg.com/vi/i7_rrrRpotk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=i7_rrrRpotk"
+          },
+          {
+            "video_id": "jTTWqhTfPMM",
+            "title": "FAR Part 32 (Simplified) | Check Payment Triggers Before Planning Cash Flow",
+            "author": "Win Government Contracts with GovSuccess",
+            "thumbnail_url": "https://i.ytimg.com/vi/jTTWqhTfPMM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=jTTWqhTfPMM"
+          },
+          {
+            "video_id": "k1EsNHPfqXY",
+            "title": "Federal Contracts Moving Faster in 2026 - FAR Overhaul.",
+            "author": "GovCon Empire with Derrick Green “Theo”",
+            "thumbnail_url": "https://i.ytimg.com/vi/k1EsNHPfqXY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=k1EsNHPfqXY"
+          },
+          {
+            "video_id": "etvo2gL7_Cs",
+            "title": "How to Price Government Contracts To Win Fast",
+            "author": "Kizzy Parks",
+            "thumbnail_url": "https://i.ytimg.com/vi/etvo2gL7_Cs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=etvo2gL7_Cs"
+          },
+          {
+            "video_id": "ka1Q_JhjM8w",
+            "title": "Understanding FAR Compliance",
+            "author": "NSBGCA",
+            "thumbnail_url": "https://i.ytimg.com/vi/ka1Q_JhjM8w/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ka1Q_JhjM8w"
+          },
+          {
+            "video_id": "z7tDxORX_pQ",
+            "title": "FAR Part 34 (Simplified) | Connect Scope, Schedule, and Cost Before You Commit",
+            "author": "Win Government Contracts with GovSuccess",
+            "thumbnail_url": "https://i.ytimg.com/vi/z7tDxORX_pQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=z7tDxORX_pQ"
+          },
+          {
+            "video_id": "LgX6N2c9-S4",
+            "title": "FAR PART 4 (Simplified) | Treat Registration and Contract Data as Operating Controls",
+            "author": "Win Government Contracts with GovSuccess",
+            "thumbnail_url": "https://i.ytimg.com/vi/LgX6N2c9-S4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=LgX6N2c9-S4"
+          },
+          {
+            "video_id": "WR8VA1o3VMU",
+            "title": "The Ultimate Government Contracting Guide for Beginners 2024",
+            "author": "Kizzy Parks",
+            "thumbnail_url": "https://i.ytimg.com/vi/WR8VA1o3VMU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=WR8VA1o3VMU"
+          },
+          {
+            "video_id": "EBQwejU6UUQ",
+            "title": "GovCon Accounting Explained: How to Price, Bill and Win Contracts",
+            "author": "Solvability",
+            "thumbnail_url": "https://i.ytimg.com/vi/EBQwejU6UUQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=EBQwejU6UUQ"
+          },
+          {
+            "video_id": "pktnZU4AWIE",
+            "title": "Don't Work for Free: Unauthorized Commitments in Federal Construction",
+            "author": "Contract Warrior",
+            "thumbnail_url": "https://i.ytimg.com/vi/pktnZU4AWIE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=pktnZU4AWIE"
+          },
+          {
+            "video_id": "JE_OOJ3NAVk",
+            "title": "Find the Right Supplier - DLA / DIBBS Government Contracting",
+            "author": "Tris10 @ MeND",
+            "thumbnail_url": "https://i.ytimg.com/vi/JE_OOJ3NAVk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=JE_OOJ3NAVk"
+          },
+          {
+            "video_id": "wxZNfwOuung",
+            "title": "How to Win DIBBS Contracts (Step-by-Step Beginner Guide)",
+            "author": "Humam Finding Sam",
+            "thumbnail_url": "https://i.ytimg.com/vi/wxZNfwOuung/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=wxZNfwOuung"
+          },
+          {
+            "video_id": "qmdunkO7mts",
+            "title": "DLA Urgent Need and DIBBS No Bid List: In-Stock Parts | FedOpp",
+            "author": "FedOpp",
+            "thumbnail_url": "https://i.ytimg.com/vi/qmdunkO7mts/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=qmdunkO7mts"
+          },
+          {
+            "video_id": "SeWe_WAhyVg",
+            "title": "How to Find 400+ Government Contracts on DLA DIBBS",
+            "author": "myContractScout",
+            "thumbnail_url": "https://i.ytimg.com/vi/SeWe_WAhyVg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=SeWe_WAhyVg"
+          },
+          {
+            "video_id": "Z9MLGFqFXtM",
+            "title": "What Information to Extract in a DLA / DIBBS RFQs",
+            "author": "Tris10 @ MeND",
+            "thumbnail_url": "https://i.ytimg.com/vi/Z9MLGFqFXtM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Z9MLGFqFXtM"
+          },
+          {
+            "video_id": "MyfmHjDF9HI",
+            "title": "How to Win DLA Contracts: Live DIBBS Solicitation Review & Bid",
+            "author": "The DLA Vendor Network (DVN)",
+            "thumbnail_url": "https://i.ytimg.com/vi/MyfmHjDF9HI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=MyfmHjDF9HI"
+          },
+          {
+            "video_id": "v4ulUMKE5xA",
+            "title": "How to Bid on DLA / DIBBS and Win in 2025 - Government Contracting",
+            "author": "Tris10 @ MeND",
+            "thumbnail_url": "https://i.ytimg.com/vi/v4ulUMKE5xA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=v4ulUMKE5xA"
+          },
+          {
+            "video_id": "LzmJyrGyMBw",
+            "title": "How To Find DLA RFQs For Manufacturing / AMSC (RFQs With No Approved Sources) – DLA/DIBBS",
+            "author": "Loocey DLA & GovCon",
+            "thumbnail_url": "https://i.ytimg.com/vi/LzmJyrGyMBw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=LzmJyrGyMBw"
+          },
+          {
+            "video_id": "OiMCYKFBggE",
+            "title": "Increase your DLA | DIBBS | Government Contracting Success with Intertek / SAI Global Online Tools!",
+            "author": "The DLA Vendor Network (DVN)",
+            "thumbnail_url": "https://i.ytimg.com/vi/OiMCYKFBggE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=OiMCYKFBggE"
+          },
+          {
+            "video_id": "YNtu76ny5MI",
+            "title": "🎓How To Sell to the DLA | DIBBS 🏆The DLA Need to Know Guide",
+            "author": "The DLA Vendor Network (DVN)",
+            "thumbnail_url": "https://i.ytimg.com/vi/YNtu76ny5MI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=YNtu76ny5MI"
+          },
+          {
+            "video_id": "jjX9klCZFKI",
+            "title": "TOP DLA Vendors Use DIBBS Batch Bidding to Win Big!🤯",
+            "author": "The DLA Vendor Network (DVN)",
+            "thumbnail_url": "https://i.ytimg.com/vi/jjX9klCZFKI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=jjX9klCZFKI"
+          },
+          {
+            "video_id": "bTs2wy13K1c",
+            "title": "Find DLA Parts to Quote by FSC Code: Open DIBBS RFQs in FedOpp",
+            "author": "FedOpp",
+            "thumbnail_url": "https://i.ytimg.com/vi/bTs2wy13K1c/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=bTs2wy13K1c"
+          },
+          {
+            "video_id": "v7nJCLRc0uo",
+            "title": "Defense Logistics Agency Contracts: How to Bid Effectively with the DLA",
+            "author": "Secureframe",
+            "thumbnail_url": "https://i.ytimg.com/vi/v7nJCLRc0uo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=v7nJCLRc0uo"
+          },
+          {
+            "video_id": "YlwuuaCoHzQ",
+            "title": "How to Automate DLA Bidding: The DLA BUS (DIBBS Batch Bidding)🚀",
+            "author": "The DLA Vendor Network (DVN)",
+            "thumbnail_url": "https://i.ytimg.com/vi/YlwuuaCoHzQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=YlwuuaCoHzQ"
+          },
+          {
+            "video_id": "iTxJkLPYuqc",
+            "title": "FedOpp DIBBS Batch Quote File: Build It, Check It, Upload It on DIBBS",
+            "author": "FedOpp",
+            "thumbnail_url": "https://i.ytimg.com/vi/iTxJkLPYuqc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=iTxJkLPYuqc"
+          },
+          {
+            "video_id": "bTlxn6BVHJ0",
+            "title": "How to Find DIBBS RFQs on the DLA Bid Board by FSC, NSN and Due Date",
+            "author": "FedOpp",
+            "thumbnail_url": "https://i.ytimg.com/vi/bTlxn6BVHJ0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=bTlxn6BVHJ0"
+          },
+          {
+            "video_id": "511aPYJ9WjI",
+            "title": "Sourcewell Contracts: Offering Choice, Value & Time Savings",
+            "author": "FDIC International",
+            "thumbnail_url": "https://i.ytimg.com/vi/511aPYJ9WjI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=511aPYJ9WjI"
+          },
+          {
+            "video_id": "V3qc9e4w-4M",
+            "title": "Sourcewell Cooperative Purchasing: Where RFP Means Ready For Purchase - Provident Webinar",
+            "author": "Provident",
+            "thumbnail_url": "https://i.ytimg.com/vi/V3qc9e4w-4M/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=V3qc9e4w-4M"
+          },
+          {
+            "video_id": "-S6wZyOulKA",
+            "title": "5 State & Local Government Contracts You Can Bid on This Week | SLED Opportunities Breakdown",
+            "author": "Government Contracting Strategist & Host",
+            "thumbnail_url": "https://i.ytimg.com/vi/-S6wZyOulKA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=-S6wZyOulKA"
+          },
+          {
+            "video_id": "roNNP4jeQpc",
+            "title": "How to Find Local Government Contracts (Counties, Towns and Schools)",
+            "author": "Win the Bid",
+            "thumbnail_url": "https://i.ytimg.com/vi/roNNP4jeQpc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=roNNP4jeQpc"
+          },
+          {
+            "video_id": "OmEqzgzoKlc",
+            "title": "How to Bid on Texas Government Contracts",
+            "author": "SamSearch - AI for Government Contracting",
+            "thumbnail_url": "https://i.ytimg.com/vi/OmEqzgzoKlc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=OmEqzgzoKlc"
+          },
+          {
+            "video_id": "RY7zan9X3oY",
+            "title": "How to bid on City Government Contracts",
+            "author": "SamSearch - AI for Government Contracting",
+            "thumbnail_url": "https://i.ytimg.com/vi/RY7zan9X3oY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=RY7zan9X3oY"
+          },
+          {
+            "video_id": "rRWCLLWqrV0",
+            "title": "Sam.gov registration: CAGE & NCAGE Codes - Colleen Spiegel",
+            "author": "SEMSCIO",
+            "thumbnail_url": "https://i.ytimg.com/vi/rRWCLLWqrV0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=rRWCLLWqrV0"
+          },
+          {
+            "video_id": "wNMt73DArFc",
+            "title": "Sam.Gov Registration 2023 | Getting To Cage Code Successfully | Part 2",
+            "author": "Kizzy Parks",
+            "thumbnail_url": "https://i.ytimg.com/vi/wNMt73DArFc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=wNMt73DArFc"
+          },
+          {
+            "video_id": "ITZqqfI1Eig",
+            "title": "I Got My Cage Code Now What?",
+            "author": "Kizzy Parks",
+            "thumbnail_url": "https://i.ytimg.com/vi/ITZqqfI1Eig/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ITZqqfI1Eig"
+          },
+          {
+            "video_id": "eIFlVzfusWo",
+            "title": "Sam.Gov Registration Success: Get UEI and Cage Code Successfully | Part 2 (Updated)",
+            "author": "Kizzy Parks",
+            "thumbnail_url": "https://i.ytimg.com/vi/eIFlVzfusWo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=eIFlVzfusWo"
+          },
+          {
+            "video_id": "GA5_o6kPhnw",
+            "title": "How To Write A Winning Capability Statement For Government Contracting",
+            "author": "Kizzy Parks",
+            "thumbnail_url": "https://i.ytimg.com/vi/GA5_o6kPhnw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=GA5_o6kPhnw"
+          },
+          {
+            "video_id": "QIEmDXcWhSE",
+            "title": "Journey to $1M as a New GovCon - Day 23 (SAM.gov Pre-Requisites and numbers - TIN/SSN/EIN/UEI/CAGE)",
+            "author": "Neil McDonnell",
+            "thumbnail_url": "https://i.ytimg.com/vi/QIEmDXcWhSE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=QIEmDXcWhSE"
+          },
+          {
+            "video_id": "wcz-GpTaAp8",
+            "title": "What is a CAGE Code | SAM Registration Help Desk | Start Government Contracting",
+            "author": "Eric Coffie",
+            "thumbnail_url": "https://i.ytimg.com/vi/wcz-GpTaAp8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=wcz-GpTaAp8"
+          },
+          {
+            "video_id": "ifMU9O8Ydmg",
+            "title": "How to Correct or Update Your CAGE Code in SAM.gov | Visual Walkthrough",
+            "author": "Federal Processing Registry",
+            "thumbnail_url": "https://i.ytimg.com/vi/ifMU9O8Ydmg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ifMU9O8Ydmg"
+          },
+          {
+            "video_id": "K_zNUytFOQo",
+            "title": "How To Write A Winning Capability Statement",
+            "author": "Kizzy Parks",
+            "thumbnail_url": "https://i.ytimg.com/vi/K_zNUytFOQo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=K_zNUytFOQo"
+          },
+          {
+            "video_id": "FWfV2m3K4jY",
+            "title": "How To Register In Sam.Gov 2024 (Step-by-Step Guide)",
+            "author": "Kizzy Parks",
+            "thumbnail_url": "https://i.ytimg.com/vi/FWfV2m3K4jY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=FWfV2m3K4jY"
+          },
+          {
+            "video_id": "2Bp78kNCVGI",
+            "title": "How to Register on SAM.gov: Login.gov, UEI and CAGE (Step by Step) | FedOpp",
+            "author": "FedOpp",
+            "thumbnail_url": "https://i.ytimg.com/vi/2Bp78kNCVGI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=2Bp78kNCVGI"
+          },
+          {
+            "video_id": "HKtAZzSL_GQ",
+            "title": "BEST Teaming Agreement Strategies For 2025 Government Contracts",
+            "author": "Dr. Mel",
+            "thumbnail_url": "https://i.ytimg.com/vi/HKtAZzSL_GQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=HKtAZzSL_GQ"
+          },
+          {
+            "video_id": "iLuva0z2cMA",
+            "title": "Prime Sub, Teaming Agreements and Subcontracts",
+            "author": "VA OSDBU (On Demand)",
+            "thumbnail_url": "https://i.ytimg.com/vi/iLuva0z2cMA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=iLuva0z2cMA"
+          },
+          {
+            "video_id": "JYbjE63rG-Y",
+            "title": "How to Structure a Teaming Agreement in Government Contracting (So That You Don’t Get Burned)",
+            "author": "GovCon TechLab",
+            "thumbnail_url": "https://i.ytimg.com/vi/JYbjE63rG-Y/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=JYbjE63rG-Y"
+          },
+          {
+            "video_id": "T_HZxPdh7B8",
+            "title": "How to Win GovCon Contracts (2025) with Subcontracting",
+            "author": "Humam Finding Sam",
+            "thumbnail_url": "https://i.ytimg.com/vi/T_HZxPdh7B8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=T_HZxPdh7B8"
+          },
+          {
+            "video_id": "JnxlzAHCjkY",
+            "title": "What's the Difference Between JVs, Subcontracting & Teaming? | Government Contracting",
+            "author": "Sheenapreneur",
+            "thumbnail_url": "https://i.ytimg.com/vi/JnxlzAHCjkY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=JnxlzAHCjkY"
+          },
+          {
+            "video_id": "ol1KkwjDTqg",
+            "title": "Teaming In Government Contracting | Government Contracts",
+            "author": "Kizzy Parks",
+            "thumbnail_url": "https://i.ytimg.com/vi/ol1KkwjDTqg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ol1KkwjDTqg"
+          },
+          {
+            "video_id": "NP_UB6qiZhw",
+            "title": "Contractor Teaming Agreements",
+            "author": "Theodore Watson",
+            "thumbnail_url": "https://i.ytimg.com/vi/NP_UB6qiZhw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=NP_UB6qiZhw"
+          },
+          {
+            "video_id": "EpUc9OVjb4g",
+            "title": "Subcontracting & Teaming - Prime vs Sub: The Financial Trade-offs",
+            "author": "ELINT Capital",
+            "thumbnail_url": "https://i.ytimg.com/vi/EpUc9OVjb4g/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=EpUc9OVjb4g"
+          },
+          {
+            "video_id": "NB57wtT4xfs",
+            "title": "GovCon 101- Teaming",
+            "author": "Public Contracting Institute (PCI)",
+            "thumbnail_url": "https://i.ytimg.com/vi/NB57wtT4xfs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=NB57wtT4xfs"
+          },
+          {
+            "video_id": "W-f5dCQEEkE",
+            "title": "Tips of the Trade: Negotiating Teaming Agreements - Subcontractors' Perspective",
+            "author": "Streamline Government Contracts, LLC",
+            "thumbnail_url": "https://i.ytimg.com/vi/W-f5dCQEEkE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=W-f5dCQEEkE"
+          },
+          {
+            "video_id": "3eoJWm0WffU",
+            "title": "Prime vs Subcontractor: Which Path Should Beginners Choose in GovCon?",
+            "author": "Federal Contracts Lab",
+            "thumbnail_url": "https://i.ytimg.com/vi/3eoJWm0WffU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=3eoJWm0WffU"
+          },
+          {
+            "video_id": "MB8IFp5mwWc",
+            "title": "Prime Contractor or A Subcontractor",
+            "author": "Sheenapreneur",
+            "thumbnail_url": "https://i.ytimg.com/vi/MB8IFp5mwWc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=MB8IFp5mwWc"
+          },
+          {
+            "video_id": "L-BpgTTiESM",
+            "title": "How to Successfully Navigate the World of Teaming and Subcontracting",
+            "author": "Centurion Research Solutions",
+            "thumbnail_url": "https://i.ytimg.com/vi/L-BpgTTiESM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=L-BpgTTiESM"
+          },
+          {
+            "video_id": "46vBsddH6zQ",
+            "title": "How to Respond to an RFP/RFQ – Mastering Proposal Writing presented by Keli Krueger-Huhra",
+            "author": "CHCEDC",
+            "thumbnail_url": "https://i.ytimg.com/vi/46vBsddH6zQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=46vBsddH6zQ"
+          },
+          {
+            "video_id": "zeJUuxLmj6s",
+            "title": "How to Create and Use a Proposal Compliance Matrix",
+            "author": "THE FEDERAL PROPOSAL EXPERTS",
+            "thumbnail_url": "https://i.ytimg.com/vi/zeJUuxLmj6s/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=zeJUuxLmj6s"
+          },
+          {
+            "video_id": "MSvfidBACFs",
+            "title": "Bid Teams: This Is How You Break Down an RFP Like a Pro",
+            "author": "APMP",
+            "thumbnail_url": "https://i.ytimg.com/vi/MSvfidBACFs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=MSvfidBACFs"
+          },
+          {
+            "video_id": "yH2TsdfzuTM",
+            "title": "Build a Winning Proposal | RFP vs RFQ vs RFI, Compliance Matrix & Pricing Your Bid",
+            "author": "Virtual 24-7",
+            "thumbnail_url": "https://i.ytimg.com/vi/yH2TsdfzuTM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=yH2TsdfzuTM"
+          },
+          {
+            "video_id": "V5HydwGhK8o",
+            "title": "Bid Management Part 2 | RFP Analysis, Compliance Matrix & Clarification Process | Presales Training",
+            "author": "Presales Talk",
+            "thumbnail_url": "https://i.ytimg.com/vi/V5HydwGhK8o/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=V5HydwGhK8o"
+          },
+          {
+            "video_id": "c73xWsLDDhc",
+            "title": "How to Build a Tender Compliance Matrix in 6 Steps",
+            "author": "Bid and Comply",
+            "thumbnail_url": "https://i.ytimg.com/vi/c73xWsLDDhc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=c73xWsLDDhc"
+          },
+          {
+            "video_id": "UcFlKExo_dc",
+            "title": "How to WIN More Contracts: Responding to RFIs, RFQs & RFPs",
+            "author": "ProcuraFind",
+            "thumbnail_url": "https://i.ytimg.com/vi/UcFlKExo_dc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=UcFlKExo_dc"
+          },
+          {
+            "video_id": "jF1M1NGuye8",
+            "title": "RFQ, RFP, and RFI Explained: How to Run a Procurement Bid Process",
+            "author": "Intel by CandiMentor",
+            "thumbnail_url": "https://i.ytimg.com/vi/jF1M1NGuye8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=jF1M1NGuye8"
+          },
+          {
+            "video_id": "VvYb0nAHXrc",
+            "title": "How to Create an RFP Compliance Matrix with AI | Promptly",
+            "author": "The Promptly App",
+            "thumbnail_url": "https://i.ytimg.com/vi/VvYb0nAHXrc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=VvYb0nAHXrc"
+          },
+          {
+            "video_id": "WqniKXcYJAw",
+            "title": "Responding to Government RFP's",
+            "author": "Toledo Small Business Development Center",
+            "thumbnail_url": "https://i.ytimg.com/vi/WqniKXcYJAw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=WqniKXcYJAw"
+          },
+          {
+            "video_id": "6X_5wgYeeDo",
+            "title": "RFP vs RFQ vs RFI Explained!",
+            "author": "FedAccess",
+            "thumbnail_url": "https://i.ytimg.com/vi/6X_5wgYeeDo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=6X_5wgYeeDo"
+          },
+          {
+            "video_id": "jSDqXlz5MbI",
+            "title": "Government Proposal Writing: Build a Compliance Matrix Step-by-Step",
+            "author": "Government Contract Blueprint",
+            "thumbnail_url": "https://i.ytimg.com/vi/jSDqXlz5MbI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=jSDqXlz5MbI"
+          },
+          {
+            "video_id": "LmEpAxUzd94",
+            "title": "Turn 40-Hour RFP Responses Into 4-Hour Wins Using AI",
+            "author": "Point2Pivot",
+            "thumbnail_url": "https://i.ytimg.com/vi/LmEpAxUzd94/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=LmEpAxUzd94"
+          },
+          {
+            "video_id": "NusotbSsCa4",
+            "title": "3 Smart Ways to Fund Your Government Contract *Credit Cards, Factoring, & Purchase Orders*",
+            "author": "Debra Smith",
+            "thumbnail_url": "https://i.ytimg.com/vi/NusotbSsCa4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=NusotbSsCa4"
+          },
+          {
+            "video_id": "4V1zq5q3VuQ",
+            "title": "Government Contract Invoice Factoring and PO Financing",
+            "author": "Business Cash Now",
+            "thumbnail_url": "https://i.ytimg.com/vi/4V1zq5q3VuQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=4V1zq5q3VuQ"
+          },
+          {
+            "video_id": "oOQSsJO94kM",
+            "title": "Mobilization Capital Gov Contract Funding",
+            "author": "Mobilization Capital",
+            "thumbnail_url": "https://i.ytimg.com/vi/oOQSsJO94kM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=oOQSsJO94kM"
+          },
+          {
+            "video_id": "WXCymE9NjBg",
+            "title": "Ep. 2: Wide Area Workflow (WAWF) Explained | How to Invoice with the DoD & Avoid Rejections",
+            "author": "Acquisition Pro Tips",
+            "thumbnail_url": "https://i.ytimg.com/vi/WXCymE9NjBg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=WXCymE9NjBg"
+          },
+          {
+            "video_id": "weLOISkZc5k",
+            "title": "PIEE and WAWF: Invoices and Receiving Reports for DIBBS Government Contracts",
+            "author": "Tris10 @ MeND",
+            "thumbnail_url": "https://i.ytimg.com/vi/weLOISkZc5k/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=weLOISkZc5k"
+          },
+          {
+            "video_id": "EesWMxgpXqk",
+            "title": "Submitting Invoice In WAWF",
+            "author": "The Proposal Pro Coach",
+            "thumbnail_url": "https://i.ytimg.com/vi/EesWMxgpXqk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=EesWMxgpXqk"
+          },
+          {
+            "video_id": "cdachjXPX3k",
+            "title": "Ep. 9: How to Submit a WAWF COMBO Invoice | Vendor Step-by-Step Tutorial",
+            "author": "Acquisition Pro Tips",
+            "thumbnail_url": "https://i.ytimg.com/vi/cdachjXPX3k/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=cdachjXPX3k"
+          },
+          {
+            "video_id": "WDekT_xRXC0",
+            "title": "WAWF Invoicing How To: Expert Guidance to Get Paid FAST and Avoid Delays!",
+            "author": "annica at Bill Bright",
+            "thumbnail_url": "https://i.ytimg.com/vi/WDekT_xRXC0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=WDekT_xRXC0"
+          },
+          {
+            "video_id": "yXqp5I7wQK0",
+            "title": "Handling DLA Payment Issues - Invoicing Issues with the DLA Explained! 💡",
+            "author": "Tris10 @ MeND",
+            "thumbnail_url": "https://i.ytimg.com/vi/yXqp5I7wQK0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=yXqp5I7wQK0"
+          },
+          {
+            "video_id": "uUf-xLjfPf8",
+            "title": "The Prompt Payment Act exists to ensure quick payment to contractors and subs in federal projects.",
+            "author": "Don't Know Much About Construction",
+            "thumbnail_url": "https://i.ytimg.com/vi/uUf-xLjfPf8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=uUf-xLjfPf8"
+          },
+          {
+            "video_id": "xXM1cyLQ_jY",
+            "title": "When to REALLY Apply For Federal Contracting Set-Asides like 8a, WOSB, HUBZone and SDVOSB",
+            "author": "GovKidMethod",
+            "thumbnail_url": "https://i.ytimg.com/vi/xXM1cyLQ_jY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=xXM1cyLQ_jY"
+          },
+          {
+            "video_id": "nRXCetmIWUs",
+            "title": "Search Beta.Sam.Gov by Set-Aside (WOSB, SDVOSB, 8(a), HUBZone etc) | GovCon Quick-Tips",
+            "author": "GovKidMethod",
+            "thumbnail_url": "https://i.ytimg.com/vi/nRXCetmIWUs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=nRXCetmIWUs"
+          },
+          {
+            "video_id": "4poj2n7iLrs",
+            "title": "How To Get More Set Asides for WOSBs, SDVOSBs, and HUBZone Small Businesses",
+            "author": "Neil McDonnell",
+            "thumbnail_url": "https://i.ytimg.com/vi/4poj2n7iLrs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=4poj2n7iLrs"
+          },
+          {
+            "video_id": "oSSAuniLuDI",
+            "title": "Federal Contracting Strategy: HUBZone vs Every Other SBA Cert",
+            "author": "Squared Compass",
+            "thumbnail_url": "https://i.ytimg.com/vi/oSSAuniLuDI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=oSSAuniLuDI"
+          },
+          {
+            "video_id": "PPOCeCEkaBk",
+            "title": "Government Set Aside Contracts for Small Businesses",
+            "author": "SamSearch - AI for Government Contracting",
+            "thumbnail_url": "https://i.ytimg.com/vi/PPOCeCEkaBk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=PPOCeCEkaBk"
+          },
+          {
+            "video_id": "-0giDdnv0RA",
+            "title": "HUBZone Certification Program 2026 | 8a, SBA Small Business Set-Asides Explained",
+            "author": "Diamond Hunter Enterprises",
+            "thumbnail_url": "https://i.ytimg.com/vi/-0giDdnv0RA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=-0giDdnv0RA"
+          },
+          {
+            "video_id": "sqfiBzNcTPI",
+            "title": "Government Contracting Certifications for Beginners: WOSB, SDVOSB, 8(a) & HUBZone",
+            "author": "Nick Waters GovCon",
+            "thumbnail_url": "https://i.ytimg.com/vi/sqfiBzNcTPI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=sqfiBzNcTPI"
+          },
+          {
+            "video_id": "yFsBD592FN8",
+            "title": "HUBZone 8A WOSB SDVOSB WOSB DBE MBE GSA SAP DAPA FSS SUB Contracts John Wayne government contracts g",
+            "author": "US Federal Contractor Registration",
+            "thumbnail_url": "https://i.ytimg.com/vi/yFsBD592FN8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=yFsBD592FN8"
+          },
+          {
+            "video_id": "9sogImn1jJQ",
+            "title": "Intro to the 4 Small Business Programs in Federal Contracting | WOSB, SDVOSB, 8(a), HUBZone",
+            "author": "Neil McDonnell",
+            "thumbnail_url": "https://i.ytimg.com/vi/9sogImn1jJQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=9sogImn1jJQ"
+          },
+          {
+            "video_id": "LnPiGkUTs2E",
+            "title": "Government Contracts Set-Asides : 8(a), WOSB, EDWOSB, VOSB, SDVOSB, HUBZone Certification Process",
+            "author": "GovKidMethod",
+            "thumbnail_url": "https://i.ytimg.com/vi/LnPiGkUTs2E/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=LnPiGkUTs2E"
+          },
+          {
+            "video_id": "Qij-5QQmwc8",
+            "title": "Does the #sdvosb Certification Help Win Government Contracts?",
+            "author": "GovClose | DoD Contract Academy",
+            "thumbnail_url": "https://i.ytimg.com/vi/Qij-5QQmwc8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Qij-5QQmwc8"
+          },
+          {
+            "video_id": "hdZFRp2VG8E",
+            "title": "How Government Contracting Works for Beginners | First GovCon 8a CEO Success Story",
+            "author": "Diamond Hunter Enterprises",
+            "thumbnail_url": "https://i.ytimg.com/vi/hdZFRp2VG8E/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=hdZFRp2VG8E"
+          },
+          {
+            "video_id": "k1ZkyITmwWM",
+            "title": "SBA Affiliation Rules 13 CFR 121.103 Ostensible Contractor Rule Lawyers. SBA OHA Appeal Lawyers",
+            "author": "Theodore Watson",
+            "thumbnail_url": "https://i.ytimg.com/vi/k1ZkyITmwWM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=k1ZkyITmwWM"
+          },
+          {
+            "video_id": "FZ6VO4mNzF4",
+            "title": "Major SBA EIDL Record Keeping Problems",
+            "author": "Skip",
+            "thumbnail_url": "https://i.ytimg.com/vi/FZ6VO4mNzF4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=FZ6VO4mNzF4"
+          },
+          {
+            "video_id": "x1-UtiYGpVc",
+            "title": "How to Fight the SBA: Stop Collections on Your EIDL Loan",
+            "author": "Keck Legal, LLC",
+            "thumbnail_url": "https://i.ytimg.com/vi/x1-UtiYGpVc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=x1-UtiYGpVc"
+          },
+          {
+            "video_id": "IMjYXOH8UoU",
+            "title": "Who Should Really Worry About EIDL Loans | Sternberg Law Group",
+            "author": "Sternberg Law Group",
+            "thumbnail_url": "https://i.ytimg.com/vi/IMjYXOH8UoU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=IMjYXOH8UoU"
+          },
+          {
+            "video_id": "rlj1s_mZ7uo",
+            "title": "SBA Franchise Directory 2026: Is Your Franchise on the SBA List?",
+            "author": "The Money Rules",
+            "thumbnail_url": "https://i.ytimg.com/vi/rlj1s_mZ7uo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=rlj1s_mZ7uo"
+          },
+          {
+            "video_id": "C6VmvdA7JT4",
+            "title": "How to Avoid SBA Loan Scams",
+            "author": "CO-",
+            "thumbnail_url": "https://i.ytimg.com/vi/C6VmvdA7JT4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=C6VmvdA7JT4"
+          },
+          {
+            "video_id": "GrYP5KyxBho",
+            "title": "How to Find Past Prices for Better Gov Contract Bids (Using Free Resources)",
+            "author": "FedAccess",
+            "thumbnail_url": "https://i.ytimg.com/vi/GrYP5KyxBho/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=GrYP5KyxBho"
+          },
+          {
+            "video_id": "Hr_U9z1xK2g",
+            "title": "How to get AWARD Data from USA Spending?",
+            "author": "Eric Coffie",
+            "thumbnail_url": "https://i.ytimg.com/vi/Hr_U9z1xK2g/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Hr_U9z1xK2g"
+          },
+          {
+            "video_id": "Z2ZeI5rayvk",
+            "title": "How to find what the government paid on previously awarded contracts! #govcon #governmentcontracting",
+            "author": "Fox Wade",
+            "thumbnail_url": "https://i.ytimg.com/vi/Z2ZeI5rayvk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Z2ZeI5rayvk"
+          },
+          {
+            "video_id": "eEBn_eN0py8",
+            "title": "FedBiz Find | Government Contracting | Award History & New Opportunities",
+            "author": "FedBiz Access",
+            "thumbnail_url": "https://i.ytimg.com/vi/eEBn_eN0py8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=eEBn_eN0py8"
+          },
+          {
+            "video_id": "g-mx_oRCj0k",
+            "title": "Searching Federal Procurement Data System (FPDS) for Government Contracts",
+            "author": "Neil McDonnell",
+            "thumbnail_url": "https://i.ytimg.com/vi/g-mx_oRCj0k/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=g-mx_oRCj0k"
+          },
+          {
+            "video_id": "0cGdQvymmvY",
+            "title": "Introduction to the Federal Procurement Data System (FPDS) - Part 1",
+            "author": "Neil McDonnell",
+            "thumbnail_url": "https://i.ytimg.com/vi/0cGdQvymmvY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=0cGdQvymmvY"
+          },
+          {
+            "video_id": "L0SM3XAM3IE",
+            "title": "How To Find Price Paid For Past Contracts | Learn About Pricing in Gov Con",
+            "author": "Kizzy Parks",
+            "thumbnail_url": "https://i.ytimg.com/vi/L0SM3XAM3IE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=L0SM3XAM3IE"
+          },
+          {
+            "video_id": "17foq325L5w",
+            "title": "Searching Federal Procurement Data System (FPDS) for Government Contracts",
+            "author": "Neil McDonnell",
+            "thumbnail_url": "https://i.ytimg.com/vi/17foq325L5w/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=17foq325L5w"
+          },
+          {
+            "video_id": "NiWdxgnr3xo",
+            "title": "Government Contractor’s Guide to USASpending.gov [2025 Tutorial]",
+            "author": "SamSearch - AI for Government Contracting",
+            "thumbnail_url": "https://i.ytimg.com/vi/NiWdxgnr3xo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=NiWdxgnr3xo"
+          },
+          {
+            "video_id": "YR_aPfXedtA",
+            "title": "How to Find WOSB Set Asides Using FPDS | Government Contracting",
+            "author": "Neil McDonnell",
+            "thumbnail_url": "https://i.ytimg.com/vi/YR_aPfXedtA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=YR_aPfXedtA"
+          },
+          {
+            "video_id": "CbeDp1nctog",
+            "title": "2024: FAR Part 12 - Acquisition of Commercial Items",
+            "author": "How To Sell To & Win Federal Government Contracts",
+            "thumbnail_url": "https://i.ytimg.com/vi/CbeDp1nctog/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=CbeDp1nctog"
+          },
+          {
+            "video_id": "qWeiLfjB7k0",
+            "title": "Government Contacting - FAR Part 12 - Acquisition Of Commercial Items - Win Federal Contracts",
+            "author": "How To Sell To & Win Federal Government Contracts",
+            "thumbnail_url": "https://i.ytimg.com/vi/qWeiLfjB7k0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=qWeiLfjB7k0"
+          },
+          {
+            "video_id": "_0QnHiuRnhc",
+            "title": "Mastering FAR Part 12: The Revolutionary FAR Overhaul (RFO)",
+            "author": "ASI Education",
+            "thumbnail_url": "https://i.ytimg.com/vi/_0QnHiuRnhc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=_0QnHiuRnhc"
+          },
+          {
+            "video_id": "h1yszOmFw3w",
+            "title": "2024 FAR Part 52 - Solicitation Provisions And Contract Clauses",
+            "author": "How To Sell To & Win Federal Government Contracts",
+            "thumbnail_url": "https://i.ytimg.com/vi/h1yszOmFw3w/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=h1yszOmFw3w"
+          },
+          {
+            "video_id": "IiWbsx5Iudg",
+            "title": "FAR Part 12 (Simplified) | Selling Commercial Products and Services",
+            "author": "Win Government Contracts with GovSuccess",
+            "thumbnail_url": "https://i.ytimg.com/vi/IiWbsx5Iudg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=IiWbsx5Iudg"
+          },
+          {
+            "video_id": "SpRIyXgvkg0",
+            "title": "Breakdown of FAR Part 12 & 15 | Selling Commercial Items or Non-Commercial Items to the Government",
+            "author": "US Federal Contractor Registration",
+            "thumbnail_url": "https://i.ytimg.com/vi/SpRIyXgvkg0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=SpRIyXgvkg0"
+          },
+          {
+            "video_id": "mZqOwnA0HbE",
+            "title": "Title Transfer: FOB Shipping Point and FOB Destination - FAR Exam Prep",
+            "author": "ExamPrepAI CPA Review",
+            "thumbnail_url": "https://i.ytimg.com/vi/mZqOwnA0HbE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=mZqOwnA0HbE"
+          },
+          {
+            "video_id": "IP2vqKHZqlE",
+            "title": "Government Contracting - DFARS Part 212 - Acquisition of Commercial Items - Win Federal Contracts",
+            "author": "How To Sell To & Win Federal Government Contracts",
+            "thumbnail_url": "https://i.ytimg.com/vi/IP2vqKHZqlE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=IP2vqKHZqlE"
+          },
+          {
+            "video_id": "QvsXldnQyAg",
+            "title": "FAR Part 47 (Simplified) | Align Delivery, Freight, and Risk Before Shipment",
+            "author": "Win Government Contracts with GovSuccess",
+            "thumbnail_url": "https://i.ytimg.com/vi/QvsXldnQyAg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=QvsXldnQyAg"
+          },
+          {
+            "video_id": "TFl20T0yyig",
+            "title": "Neybor FAR Part12",
+            "author": "Neybor Consulting",
+            "thumbnail_url": "https://i.ytimg.com/vi/TFl20T0yyig/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=TFl20T0yyig"
+          },
+          {
+            "video_id": "Tj7x3UDuOSE",
+            "title": "2024: FAR Part 15 - Contracting by Negotiation",
+            "author": "How To Sell To & Win Federal Government Contracts",
+            "thumbnail_url": "https://i.ytimg.com/vi/Tj7x3UDuOSE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Tj7x3UDuOSE"
+          },
+          {
+            "video_id": "kpISY6VCkNY",
+            "title": "How To Get Rich with Subcontracting in 2025",
+            "author": "Kizzy Parks",
+            "thumbnail_url": "https://i.ytimg.com/vi/kpISY6VCkNY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=kpISY6VCkNY"
+          },
+          {
+            "video_id": "OKLXh8NcJxQ",
+            "title": "How Derek Got Rich With Government Contracts and You Can Too",
+            "author": "Kizzy Parks",
+            "thumbnail_url": "https://i.ytimg.com/vi/OKLXh8NcJxQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=OKLXh8NcJxQ"
+          },
+          {
+            "video_id": "386MNSeLv9E",
+            "title": "How to Win Middleman Government Contracts in a Trump Economy",
+            "author": "Kizzy Parks",
+            "thumbnail_url": "https://i.ytimg.com/vi/386MNSeLv9E/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=386MNSeLv9E"
+          },
+          {
+            "video_id": "9DngtysNXpA",
+            "title": "Middleman Contracting Will Make Millionaires in 2025 (Be One)",
+            "author": "Kizzy Parks",
+            "thumbnail_url": "https://i.ytimg.com/vi/9DngtysNXpA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=9DngtysNXpA"
+          },
+          {
+            "video_id": "2GThNGqMOJQ",
+            "title": "The Ultimate Guide to Middleman Contracting in 2025 | $0-$100k Guide",
+            "author": "Kizzy Parks",
+            "thumbnail_url": "https://i.ytimg.com/vi/2GThNGqMOJQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=2GThNGqMOJQ"
+          },
+          {
+            "video_id": "AHQVro9N9HM",
+            "title": "He Knew NOTHING About GovCon… Then Won $68K in Government Contracts",
+            "author": "Kizzy Parks",
+            "thumbnail_url": "https://i.ytimg.com/vi/AHQVro9N9HM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=AHQVro9N9HM"
+          },
+          {
+            "video_id": "qVThWm83wus",
+            "title": "How To Win Government Contracts In 2026 | Beginners Guide 2026",
+            "author": "Kizzy Parks",
+            "thumbnail_url": "https://i.ytimg.com/vi/qVThWm83wus/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=qVThWm83wus"
+          },
+          {
+            "video_id": "BZyPDVXuMMk",
+            "title": "How to Win Government Contracts in 2026 as a Beginner",
+            "author": "Kizzy Parks",
+            "thumbnail_url": "https://i.ytimg.com/vi/BZyPDVXuMMk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=BZyPDVXuMMk"
+          },
+          {
+            "video_id": "DAbMwnUtgfI",
+            "title": "How to Make $3K/Month With Government Contracts (No Experience)",
+            "author": "Kizzy Parks",
+            "thumbnail_url": "https://i.ytimg.com/vi/DAbMwnUtgfI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=DAbMwnUtgfI"
+          },
+          {
+            "video_id": "RrDUfb8vNms",
+            "title": "REAL Story Behind $300M Government Contract With David Packouz",
+            "author": "Kizzy Parks",
+            "thumbnail_url": "https://i.ytimg.com/vi/RrDUfb8vNms/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=RrDUfb8vNms"
+          },
+          {
+            "video_id": "YHptbPFEaPQ",
+            "title": "How To Get Rich With Government Contracts",
+            "author": "Kizzy Parks",
+            "thumbnail_url": "https://i.ytimg.com/vi/YHptbPFEaPQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=YHptbPFEaPQ"
+          },
+          {
+            "video_id": "rcSJIi02YnA",
+            "title": "BREAKING NEWS: DOJ Busts Ghost Student Fraud Ring — October 29th, 2026",
+            "author": "Politics_Shmolitics",
+            "thumbnail_url": "https://i.ytimg.com/vi/rcSJIi02YnA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=rcSJIi02YnA"
+          },
+          {
+            "video_id": "7GhlupAi3Jg",
+            "title": "OPERATION GHOSTBUSTERS — The $200 Million Ghost Student Fraud",
+            "author": "Scamverge",
+            "thumbnail_url": "https://i.ytimg.com/vi/7GhlupAi3Jg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=7GhlupAi3Jg"
+          },
+          {
+            "video_id": "-RjbcsAnouU",
+            "title": "Operation Ghostbusters: 5 Charged in the 'Ghost Student' Financial Aid Fraud",
+            "author": "Court Files",
+            "thumbnail_url": "https://i.ytimg.com/vi/-RjbcsAnouU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=-RjbcsAnouU"
+          },
+          {
+            "video_id": "xH6KWT7x8Ac",
+            "title": "How To Bid On A Government Contract In 5 Days (2025) | Step-by-Step Guide",
+            "author": "Dr. Wes Fisher",
+            "thumbnail_url": "https://i.ytimg.com/vi/xH6KWT7x8Ac/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=xH6KWT7x8Ac"
+          },
+          {
+            "video_id": "PP70aCudT_s",
+            "title": "Project Bid-Desk - Proposal",
+            "author": "Estimight",
+            "thumbnail_url": "https://i.ytimg.com/vi/PP70aCudT_s/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=PP70aCudT_s"
+          },
+          {
+            "video_id": "Sh4XERIYcuY",
+            "title": "Tirisano Bid Window 5 Webinar 3",
+            "author": "Industrial Development Corporation - IDC",
+            "thumbnail_url": "https://i.ytimg.com/vi/Sh4XERIYcuY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Sh4XERIYcuY"
+          },
+          {
+            "video_id": "yxjYYFbCa5E",
+            "title": "Learning the Bid Sites | D'S Construction Podcast Ep. 3",
+            "author": "D'S Construction",
+            "thumbnail_url": "https://i.ytimg.com/vi/yxjYYFbCa5E/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=yxjYYFbCa5E"
+          },
+          {
+            "video_id": "iTD46ZpHbdI",
+            "title": "Janitorial Government Contracts Up 25% | 5 SLED Bids to Watch | TWIP Ep. 42",
+            "author": "Government Contracting Strategist & Host",
+            "thumbnail_url": "https://i.ytimg.com/vi/iTD46ZpHbdI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=iTD46ZpHbdI"
+          },
+          {
+            "video_id": "wot0JsK9qCc",
+            "title": "Government Contracts - Janitorial Services RFP Breakdown on FBO",
+            "author": "GovKidMethod",
+            "thumbnail_url": "https://i.ytimg.com/vi/wot0JsK9qCc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=wot0JsK9qCc"
           }
         ],
         "research_reference_only": true,
@@ -24656,7 +25902,7 @@
         "asset_id": "verbatim_transcript_quotes",
         "asset": "data/transcripts/*.json -> segments[].text",
         "asset_type": "verbatim_transcript_passage",
-        "source": "Spoken content of 3128 third-party videos (28710 captured tips)",
+        "source": "Spoken content of 3306 third-party videos (30366 captured tips)",
         "research_reference_only": true,
         "commercial_republish_allowed": false,
         "commercial_use_allowed": false,
@@ -24672,38 +25918,38 @@
     ]
   },
   "corpus_metrics": {
-    "video_count": 3128,
-    "channel_count": 2033,
-    "total_words": 4544670,
-    "total_hours": 899.39,
-    "total_pro_tips": 28710,
-    "unique_statutes_and_forms": 1358,
-    "unique_tools_and_portals": 8688
+    "video_count": 3306,
+    "channel_count": 2114,
+    "total_words": 4828786,
+    "total_hours": 961.03,
+    "total_pro_tips": 30366,
+    "unique_statutes_and_forms": 1428,
+    "unique_tools_and_portals": 9025
   },
   "coverage": {
-    "videos_classified": 3128,
-    "videos_with_multiple_topics": 3125,
-    "tips_classified": 28710,
-    "raw_transcripts_joined": 3128,
+    "videos_classified": 3306,
+    "videos_with_multiple_topics": 3303,
+    "tips_classified": 30366,
+    "raw_transcripts_joined": 3306,
     "topic_video_counts": {
-      "business_model_and_economics": 2473,
-      "probate_and_docket_sourcing": 2349,
-      "unclaimed_property_and_escheat": 721,
-      "genealogy_and_heirship_proof": 2516,
-      "skip_tracing_and_outreach": 1760,
-      "contracts_and_compensation": 2480,
-      "statutory_caps_and_licensing": 2610,
-      "automation_and_small_team_ops": 2329
+      "business_model_and_economics": 2615,
+      "probate_and_docket_sourcing": 2492,
+      "unclaimed_property_and_escheat": 741,
+      "genealogy_and_heirship_proof": 2670,
+      "skip_tracing_and_outreach": 1875,
+      "contracts_and_compensation": 2654,
+      "statutory_caps_and_licensing": 2770,
+      "automation_and_small_team_ops": 2440
     },
     "topic_tip_counts": {
-      "business_model_and_economics": 5052,
-      "probate_and_docket_sourcing": 5285,
-      "unclaimed_property_and_escheat": 1818,
-      "genealogy_and_heirship_proof": 2963,
-      "skip_tracing_and_outreach": 1095,
-      "contracts_and_compensation": 3360,
-      "statutory_caps_and_licensing": 2893,
-      "automation_and_small_team_ops": 6244
+      "business_model_and_economics": 5259,
+      "probate_and_docket_sourcing": 5459,
+      "unclaimed_property_and_escheat": 1821,
+      "genealogy_and_heirship_proof": 3112,
+      "skip_tracing_and_outreach": 1114,
+      "contracts_and_compensation": 4182,
+      "statutory_caps_and_licensing": 2990,
+      "automation_and_small_team_ops": 6429
     }
   },
   "schema_version": "1.0",

@@ -1,10 +1,10 @@
 {
   "scope": "publishing_store_excluding_previews",
   "sha256": {
-    "audit/existing_work_audit.json": "127a59b86f7ad1e17d84dd4aae46615506506bf39007160af717a04fe6916085",
-    "brand/brand_system.json": "41f4b504e781730554adb3b3a1151100b5c6f06e95466351a8b1d13767f1184f",
-    "catalog/pipeline_29_candidates.json": "7bc51b0269c625da81cbb1afd48d1bfbdb8b4324f8fcf779c03b1898a49485ef",
-    "research/research_database_summary.json": "0a1e066f24f3c893268119f6c390bcd5e5bea32cdf44111086d08ae2d647ff12",
+    "audit/existing_work_audit.json": "1de66b9cc6502c9cadfc5518f03685a0f63ccd382f17dfffe699f6ec4a52fac7",
+    "brand/brand_system.json": "fe502a6b38796e4c3a1fcf85462bf28498489ebd78c506af0ee80900ad82f704",
+    "catalog/pipeline_29_candidates.json": "65fa408f675d5545671b3d360614038f2b8bb632d55dbca3a73b53308aaa6f3f",
+    "research/research_database_summary.json": "d85d20bece7c91ef56c9389b9ad208d4cdd45fe2a61d71084108a67f51d1fefe",
     "site/newsletter_signups.json": "5a97fe09f877c0fccee940246e74f27dc5b6bc83148037af241946b350933794",
     "volumes/vol-001-heir-hunting/chapters/chapter-01.md": "4c44fe7e11c2f4af10ed7241bb0f8b49674c33d8c70c91a965cd3a0dab1133f0",
     "volumes/vol-001-heir-hunting/chapters/chapter-02.md": "c9f8705ba384dbbbd713674229cb8dfce45ab4fab27acea1480b476f229ad08b",
@@ -347,6 +347,24 @@
     "volumes/vol-019-enterprise-software-reselling/manuscript.json": "43f9ed1cde3fac655e40013cae9021fd6776bc165a9f201296bab6b1a043aa8d",
     "volumes/vol-019-enterprise-software-reselling/metadata.json": "bca106d7952559ef225f56ca201c7bfed6c8312eb0b7ef5c5253c634fa351c66",
     "volumes/vol-019-enterprise-software-reselling/scorecard.json": "65b05fcff5cfb61ce3d11555e56989628a3ad68eed4dd6ec4704beace40d4cd2",
-    "volumes/vol-019-enterprise-software-reselling/workbook.json": "29707cf0e44872d6394302e66c4f063114e84aafc3b645120d641a56afca45f4"
+    "volumes/vol-019-enterprise-software-reselling/workbook.json": "29707cf0e44872d6394302e66c4f063114e84aafc3b645120d641a56afca45f4",
+    "volumes/vol-020-government-contract-brokering/chapters/chapter-01.md": "1075e4a0dedaef89c116bd6c14462e294c8da27a03c36038d30b8f46fd6cd85f",
+    "volumes/vol-020-government-contract-brokering/chapters/chapter-02.md": "d71ac50542a254ee72bfb5faed1bab2487a8119e2aefc83db08d0b3f9211c760",
+    "volumes/vol-020-government-contract-brokering/chapters/chapter-03.md": "6d3c48c45edfe16599ef3cc80d584c80a57666d6ddcce9ca1c71a59349bbde68",
+    "volumes/vol-020-government-contract-brokering/chapters/chapter-04.md": "5709daef453ccc7ee74f4b08da46b9c4ddec307906c1fe695fd02c784b6a61ff",
+    "volumes/vol-020-government-contract-brokering/chapters/chapter-05.md": "87f773c12ea8f3f2602275519a5bce52c42d7ad110ce117e2c01242e2a9d2d98",
+    "volumes/vol-020-government-contract-brokering/chapters/chapter-06.md": "363e8c78a77ffa76592554dd891cad53a126c79ff623d8562aa29f06f9fef6a3",
+    "volumes/vol-020-government-contract-brokering/chapters/chapter-07.md": "e95ebb736b5c88cf8982b078336896973471a9359072079578ad27358561c97a",
+    "volumes/vol-020-government-contract-brokering/chapters/chapter-08.md": "e2fd8b00c6cb1428695cd1bd8b7a5553a180eb7e870070c36479a031f2f9e6ee",
+    "volumes/vol-020-government-contract-brokering/chapters/chapter-09.md": "193c17c90c31f427a1342beadc19f6d565ca023e0c19bc186c299c864b0ca00b",
+    "volumes/vol-020-government-contract-brokering/chapters/chapter-10.md": "05c08e276173310e2ed6b71806ff216e290951c5bcb770a27d82e10f2470d5cb",
+    "volumes/vol-020-government-contract-brokering/chapters/chapter-11.md": "daf4c363d0e172156f796c8868cf8c3a8f516825688cf69f4fafb76de5c9753a",
+    "volumes/vol-020-government-contract-brokering/chapters/chapter-12.md": "1203654a7b42c7ffc41bec3936cd466accfc6cf2db2b580741d1f91abe6b3fee",
+    "volumes/vol-020-government-contract-brokering/diagrams_data.json": "ac0c693fa3de93b42d14bad90531f803af6a82a87302a658c3f177c7851ec92c",
+    "volumes/vol-020-government-contract-brokering/graphics_reviews.json": "d81100e0562284e16a62ae9872fae366c92161da2f115477463d4fdefab5ddab",
+    "volumes/vol-020-government-contract-brokering/manuscript.json": "0d4146ebdb822997a402b68d2d4819f9ad881c99b559f7541b21a98a3cb7ae10",
+    "volumes/vol-020-government-contract-brokering/metadata.json": "da5267e696ab0a9e8c4903492ca827c3c3c1e2b02473429b78240c5fe5fcff55",
+    "volumes/vol-020-government-contract-brokering/scorecard.json": "d1973d7d1062f19c323f7bb5b2fba7d035b26a174a29557210ea8d06b0b729b7",
+    "volumes/vol-020-government-contract-brokering/workbook.json": "39d06a3da4ac0ce9218a0434c5090a2b1123202e7850fdedcbf3e205c9e1beb5"
   }
 }
