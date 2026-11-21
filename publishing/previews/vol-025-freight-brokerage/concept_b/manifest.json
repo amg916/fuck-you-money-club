@@ -1,0 +1,65 @@
+{
+  "concept_id": "concept_b",
+  "volume_id": "vol-025-freight-brokerage",
+  "approved": true,
+  "edition_status": "approved_master",
+  "preview_only": true,
+  "files": {
+    "digital_pdf.pdf": {
+      "bytes": 1777206,
+      "sha256": "bb1f1e3fa3b61e39c071721899a977cf0315edc9c09213d2ae9537e7084a1115"
+    },
+    "print_6x9_pdf.pdf": {
+      "bytes": 2301104,
+      "sha256": "8f20271aa695439786aca8a49c8307e1bf1fdf28066948629212c3305f07f643"
+    },
+    "workbook_pdf.pdf": {
+      "bytes": 541021,
+      "sha256": "cc284caa8ba59d6686b28d7d8f0cd3ffd1c2b603c02dbba5daba1a8979b4f794"
+    },
+    "book.epub": {
+      "bytes": 251671,
+      "sha256": "089bacee41636d2e8e21979146696d61c2832adf761d66679a84010b706b915b"
+    },
+    "art/cover.svg": {
+      "bytes": 3653,
+      "sha256": "8cda36dcd56fdf878d5436c88c65636ec2ecde0a30e68268a8f3e09352c30c56"
+    },
+    "art/scorecard.svg": {
+      "bytes": 71170,
+      "sha256": "a824fade1f1f6e08ec74c73d599c32ff9c6c059da06cbc4c5e0fd9fbe6940050"
+    },
+    "art/diag_01.svg": {
+      "bytes": 10336,
+      "sha256": "177f4a4f2055b0d1f043a808a66d510d1b985baa51739c18f061e9d2c60e8713"
+    },
+    "art/diag_02.svg": {
+      "bytes": 7622,
+      "sha256": "1c93aac2f97c65c9f01038891f44c1c3b9ef80b227e0e6207261ce04853ffd72"
+    },
+    "art/diag_03.svg": {
+      "bytes": 11792,
+      "sha256": "9a5dcdb0cad6a65ecaced92a8cb30c089fafe6210d2fdc39445a22ad3d6ebeaa"
+    },
+    "art/diag_04.svg": {
+      "bytes": 9314,
+      "sha256": "364b3b3a94c609359d4bd4cc5b4dfd37bcb03d5ccfd69a1086be7343450b1882"
+    },
+    "art/diag_05.svg": {
+      "bytes": 10209,
+      "sha256": "acc5c050fcd8d155c5c777f2bb94afd7d4a4120869b397ace8d6946eeb124a9c"
+    },
+    "art/diag_06.svg": {
+      "bytes": 13290,
+      "sha256": "8ae18466c11aeba206736a9de9cc45d2368c113ecbe812c9792eb0ebe915e0d1"
+    },
+    "art/diag_07.svg": {
+      "bytes": 8705,
+      "sha256": "7f40d825229ec0000cbc4037ce6166db6784b4d5368628c1daa82d7e4c9b01ac"
+    },
+    "art/diag_08.svg": {
+      "bytes": 8446,
+      "sha256": "940aeddd2722acbbb071d2bf93528480294d5499626fc0a4ecdf660bbf9eeae0"
+    }
+  }
+}

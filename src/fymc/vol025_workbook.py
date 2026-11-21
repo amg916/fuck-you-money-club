@@ -1,0 +1,733 @@
+from __future__ import annotations
+
+
+def build_volume_025_workbook() -> dict:
+    def field(name: str, input_type: str, prompt: str, example: str) -> dict:
+        return {
+            "name": name,
+            "type": input_type,
+            "prompt": prompt,
+            "example": example,
+        }
+
+    return {
+        "workbook_id": "wb-025-freight-brokerage",
+        "volume_id": "vol-025-freight-brokerage",
+        "title": "Freight Brokerage — Operator Companion Workbook",
+        "subtitle": (
+            "6 Printable Operator Worksheets for Niche Lane Underwriting, "
+            "Carrier Identity Defense, Shipper-to-Carrier Float, FMCSA Operating "
+            "Requirements, Shipment Automation, and Transferable Brokerage Operations"
+        ),
+        "worksheets": [
+            {
+                "worksheet_id": "ws-01",
+                "number": 1,
+                "title": "Niche Lane Underwriting and Counterparty Qualification",
+                "purpose": (
+                    "Select a defensible freight niche before buying loads with weak "
+                    "credit or uncertain capacity. Document the shipper, actual motor "
+                    "carrier, lane economics, cargo exposure, and payment chain so every "
+                    "accepted tender has a verified operating party and an affordable "
+                    "cash conversion cycle."
+                ),
+                "chapter_ref": "Q1, Q2, Q6",
+                "instructions": [
+                    (
+                        "Choose one equipment class, cargo profile, and repeatable lane "
+                        "cluster. Obtain actual tender histories and accessorial records "
+                        "from an authorized shipper contact; separate booked shipment "
+                        "evidence from sales estimates before forecasting weekly volume "
+                        "or staffing the brokerage desk."
+                    ),
+                    (
+                        "Identify the legal entity that owes the freight charges and "
+                        "the carrier that will physically transport the cargo. Independently "
+                        "verify authority, contact channels, insurance evidence, and payment "
+                        "instructions rather than accepting documents supplied through a "
+                        "single inbound email thread."
+                    ),
+                    (
+                        "Use Highway or RMIS to organize carrier checks, then reconcile "
+                        "material exceptions against FMCSA records and direct callbacks. "
+                        "A vendor risk score is evidence to investigate, not a substitute "
+                        "for confirming who controls the truck and receives payment."
+                    ),
+                    (
+                        "Price the lane from written carrier quotes, observed dwell, "
+                        "cargo requirements, and collection terms. Assign an owner to "
+                        "each uncertain assumption, and reject attractive spreads when "
+                        "fraud exposure, shipment concentration, or cash demands exceed "
+                        "the brokerage's documented operating capacity."
+                    ),
+                    (
+                        "Complete a counterparty packet before accepting the first "
+                        "binding tender. Preserve dated source records and named reviewers "
+                        "so dispatch, accounting, and replacement staff can reproduce "
+                        "the underwriting decision without relying on the salesperson's "
+                        "memory or private messages."
+                    ),
+                ],
+                "fields": [
+                    field(
+                        "Niche thesis and equipment boundary",
+                        "textarea",
+                        "Define cargo, equipment, geography, shipment frequency, and the operational problem you solve. State explicit exclusions so sales cannot quietly introduce temperature control, high-value theft exposure, or specialized handling without new underwriting.",
+                        "Launch with palletized packaging materials moving from Columbus, Ohio, to Nashville, Tennessee, in 53-foot dry vans. Target twenty recurring loads monthly per shipper. Exclude refrigerated freight, hazardous materials, household goods, and shipments valued above $100,000 until insurance, carrier capability, and handling procedures support those exposures.",
+                    ),
+                    field(
+                        "Shipper entity and payable obligation",
+                        "textarea",
+                        "Identify the contracting shipper, billing entity, credit decision maker, and accounts-payable workflow. Explain which signed document establishes payment responsibility and how a name mismatch between tender, invoice, and purchase order will be resolved.",
+                        "The illustrative customer is Cedar Packaging LLC, with invoices payable by that same entity rather than its warehouse affiliate. The transportation agreement names the LLC and requires purchase-order references. A verified accounts-payable supervisor confirms invoices enter the ERP within two business days after delivery documentation arrives.",
+                    ),
+                    field(
+                        "Observed lane demand and tender quality",
+                        "textarea",
+                        "Record actual historical loads, seasonality, lead times, appointment constraints, and cancellation behavior. Distinguish firm repeat demand from prospective bids, and translate evidence into a conservative first-month shipment ceiling rather than assuming every quoted load converts.",
+                        "The shipper provides twelve weeks containing 72 completed shipments, averaging six weekly, with 48-hour tender notice on 60 shipments. Begin with twenty monthly loads, not the full historical run rate. Price same-day tenders separately because emergency sourcing can consume the entire planned $450 contribution before overhead.",
+                    ),
+                    field(
+                        "Carrier legal identity and authority",
+                        "textarea",
+                        "Capture the motor carrier's legal name, USDOT identifier, operating-authority identifier where applicable, verified telephone source, and active authority evidence. Explain how reviewers resolve an identity mismatch instead of treating a copied authority certificate as sufficient.",
+                        "The carrier packet stores the carrier's actual legal identifiers after verification; this example does not invent a registration number. Dispatch compares FMCSA Licensing and Insurance records with Highway, then calls a separately verified number. A different legal name on the rate confirmation stops assignment until the discrepancy is resolved.",
+                    ),
+                    field(
+                        "Insurance evidence and cargo fit",
+                        "textarea",
+                        "Describe required insurance limits, deductibles, commodity restrictions, covered operations, and evidence sources. Confirm that the actual cargo and movement fit the policy; a certificate alone does not establish that every relevant loss would be covered.",
+                        "For an $85,000 packaging shipment, require a contractually specified $100,000 cargo limit and examine the $5,000 deductible, unattended-vehicle exclusions, and covered commodities. Confirm policy status through independently verified insurance contacts. Reject a certificate whose named insured differs from the operating carrier without a documented, supportable explanation.",
+                    ),
+                    field(
+                        "Double-brokering and substitution controls",
+                        "textarea",
+                        "Map the tender-to-truck identity chain, including dispatcher, driver, tractor, trailer, and pickup authorization. Specify which substitutions require renewed verification and how warehouse personnel contact the brokerage when arriving equipment does not match the released assignment.",
+                        "The rate confirmation prohibits unauthorized reassignment. Before pickup, the warehouse receives the verified carrier name, driver identification procedure, and equipment references. If a different carrier arrives, loading pauses while operations independently contacts the contracted carrier; a text claiming that the replacement is a sister company does not resolve the exception.",
+                    ),
+                    field(
+                        "Credit limit and concentration exposure",
+                        "textarea",
+                        "Set a shipper credit limit using open invoices, delivered unbilled freight, accepted tenders, and expected collection timing. Include related entities in concentration analysis and distinguish revenue concentration from the immediate cash exposure created by carrier obligations.",
+                        "A new shipper receives a $40,000 combined exposure limit. Ten open invoices at $2,500 consume $25,000, while four accepted tenders consume another $10,000. Only $5,000 remains for additional tenders; sales must collect funds or obtain a documented credit increase before accepting a third additional load.",
+                    ),
+                    field(
+                        "Lane quote and accessorial allocation",
+                        "textarea",
+                        "Build a written shipper quote and carrier commitment covering linehaul, fuel, detention, layover, redelivery, and cancellation. Identify the evidence and notice required for each charge, and make mismatched commercial terms visible before dispatch.",
+                        "Quote $2,500 all-in linehaul and fuel against a $2,050 carrier commitment. Both agreements allow two free detention hours, followed by $75 hourly with arrival and departure evidence. Shipper approval must precede discretionary redelivery; otherwise the brokerage may owe the carrier a charge it cannot recover.",
+                    ),
+                    field(
+                        "Opportunity score and investment fit",
+                        "textarea",
+                        "Connect the chosen niche to the canonical candidate score, capital range, staffing burden, and first-deal timing. Explain the evidence that makes this specific opportunity workable without treating the series ranking as a prediction of customer demand.",
+                        "Freight Brokerage is candidate 12, pipeline rank 25 of 29, scoring 62/100: revenue 23, margin 10, team efficiency 10, accessibility 7, and automation 12. The $50,000–$250,000 startup range and two-to-six-month first-deal window justify a staged launch rather than immediate full-volume hiring.",
+                    ),
+                    field(
+                        "Underwriting decision and accountable owner",
+                        "textarea",
+                        "Record the decision, approved shipment ceiling, unresolved conditions, reviewer, and next review date. Make the decision executable by operations: specify exactly what may move, what remains blocked, and which evidence can change the current limit.",
+                        "Approve Cedar Packaging for twenty monthly dry-van loads, subject to the $40,000 exposure ceiling and verified carrier assignment on every shipment. The owner reviews credit weekly. High-value cargo remains excluded, and a missed payment triggers a fresh exposure review before any additional tender is accepted.",
+                    ),
+                ],
+                "completion_gate": (
+                    "The owner and operations lead sign a dated counterparty packet "
+                    "containing verified identities, cargo-fit evidence, executable "
+                    "commercial terms, a credit ceiling, and a funded shipment limit. "
+                    "No shipment advances with an unresolved carrier substitution."
+                ),
+            },
+            {
+                "worksheet_id": "ws-02",
+                "number": 2,
+                "title": "Unit Economics, Defect Reserve, and Working-Capital Float",
+                "purpose": (
+                    "Translate gross shipper billings into carrier obligations, operating "
+                    "costs, expected loss provisions, and owner profit. Reconcile all "
+                    "three canonical scenarios, then calculate the cash needed between "
+                    "carrier settlement and shipper collection without confusing a "
+                    "surety bond's coverage with spendable working capital."
+                ),
+                "chapter_ref": "Q3, Q4",
+                "instructions": [
+                    (
+                        "Use gross shipper billings as the scorecard comparison basis, "
+                        "including carrier costs. Maintain separate measures for carrier "
+                        "purchased transportation, brokerage spread, and recognized "
+                        "accounting revenue; document the principal-versus-agent conclusion "
+                        "with the accountant rather than relabeling the spread as billings."
+                    ),
+                    (
+                        "Reproduce the Conservative, Base, and Scaled totals before "
+                        "adding sensitivity cases. The supporting cost allocations below "
+                        "are illustrative budgets that reconcile to those totals, not "
+                        "additional canonical assumptions or evidence that a particular "
+                        "lane will achieve the modeled margin."
+                    ),
+                    (
+                        "Build the float calculation from actual contractual payment "
+                        "dates and expected collection behavior. Include carrier payments "
+                        "due before collection, ordinary cash operating expenses, and "
+                        "available reserves; exclude restricted trust assets and unused "
+                        "bond coverage from cash available to pay carriers."
+                    ),
+                    (
+                        "Define the defect reserve using identifiable billing disputes, "
+                        "credit losses, and retained claim exposure. Separate a planning "
+                        "provision from a funded cash reserve and an accounting accrual, "
+                        "and ensure actual settlements do not become a second expense "
+                        "for the same modeled loss."
+                    ),
+                    (
+                        "Stress payment delays, rate compression, and disputed documents "
+                        "before increasing shipment volume. Set an explicit acceptance "
+                        "ceiling tied to cash and collectible receivables, then assign "
+                        "authority for reducing volume when a shipper ages beyond "
+                        "the approved payment assumptions."
+                    ),
+                ],
+                "fields": [
+                    field(
+                        "Revenue basis and accounting bridge",
+                        "textarea",
+                        "Define gross billings, purchased transportation, brokerage spread, and owner net profit. Explain how management reporting reconciles to the accounting presentation, particularly when a principal-versus-agent assessment results in net rather than gross reported revenue.",
+                        "The Base scorecard uses $3,000,000 gross shipper billings, including $2,460,000 carrier costs, producing $540,000 brokerage spread. Deduct $345,000 operating expenses and $30,000 expected losses to reach $165,000 owner net. If accounting reports revenue net, preserve a separate $3,000,000 billings reconciliation rather than changing the scorecard.",
+                    ),
+                    field(
+                        "Conservative annual scenario",
+                        "textarea",
+                        "Reconcile the Conservative case to its exact billings, margin, profit, and staffing. Show a complete illustrative cost waterfall and per-load calculation, and explain any unusually high brokerage spread required to support the small shipment base.",
+                        "At 400 loads averaging $2,500, billings equal $1,000,000. Illustrative carrier costs are $750,000, operating expenses $208,000, and expected losses $12,000, leaving $30,000, or 3%. Staffing remains 3 FT plus 2 C. The resulting 25% spread requires validated premium niche pricing, not ordinary spot-market assumptions.",
+                    ),
+                    field(
+                        "Base annual scenario",
+                        "textarea",
+                        "Reconcile the Base case to its exact annual profit and headcount, then express every cost category per completed load. Keep carrier cost, overhead, and expected losses separate so quote decisions cannot accidentally use net profit as gross spread.",
+                        "At 1,200 loads averaging $2,500, billings equal $3,000,000. Each load carries $2,050 transportation cost, $287.50 operating expense, and $25 expected loss, leaving $137.50. Annual owner net is $165,000 at 5.5%, with 3 FT plus 2 C and $28,750 average monthly operating expense.",
+                    ),
+                    field(
+                        "Scaled annual scenario",
+                        "textarea",
+                        "Reconcile the Scaled case without quietly increasing the canonical team size. Explain the required operating productivity and cost structure, while keeping the seven-person headcount distinct from the number of employees on payroll.",
+                        "At 2,000 loads averaging $2,500, billings equal $5,000,000. Carrier costs of $4,200,000, operating expenses of $360,000, and expected losses of $40,000 leave $400,000, or 8%. The team is 4 FT plus 3 C: seven people handling about 167 completed loads monthly.",
+                    ),
+                    field(
+                        "Staffing and owner compensation convention",
+                        "textarea",
+                        "State whether the working owner occupies a full-time seat and whether owner compensation is an expense or distribution. Reconcile staffing costs with each illustrative expense budget, and document contractor scope rather than assuming a contractor label determines worker status.",
+                        "These illustrative budgets include the owner within FT headcount and no separate owner salary. Conservative costs comprise $120,000 employee labor, $48,000 contractor services, and $40,000 other expense; Base uses $180,000, $84,000, and $81,000; Scaled uses $216,000, $72,000, and $72,000. Owner net precedes personal taxes.",
+                    ),
+                    field(
+                        "Invoice scrub and expected loss provision",
+                        "textarea",
+                        "Allocate the expected loss budget among billing defects, shipper nonpayment, and retained claims. Define evidence, review cadence, and treatment of recoveries, distinguishing expected economic cost from maximum possible cargo loss or insurance limits.",
+                        "The Base $30,000 annual provision allocates $12,000 to unrecovered billing defects, $10,000 to credit losses, and $8,000 to retained claims exposure. That equals $25 across 1,200 loads. Review quarterly against actual outcomes; one $85,000 cargo incident could exceed the provision and requires a separate liquidity response.",
+                    ),
+                    field(
+                        "Steady-state shipper-to-carrier float",
+                        "textarea",
+                        "Calculate carrier funding from monthly purchased transportation and the gap between carrier payment and shipper collection. State the day-count convention, add an operating cushion, and identify whether any reserve cash overlaps with another liquidity line.",
+                        "Base monthly carrier costs are $205,000. Using thirty-day months, shipper collection on day 45 and carrier payment on day 15 create $205,000 of carrier float. Add one month's $28,750 operating cushion and $2,500 funded reserve: total unrestricted operating liquidity required is $236,250, excluding setup costs.",
+                    ),
+                    field(
+                        "Startup funding and security distinction",
+                        "textarea",
+                        "List unrestricted startup cash, setup spending, committed borrowing, and restricted security separately. Distinguish a BMC-84 premium from the $75,000 security amount, and explain how using a BMC-85 trust changes available working capital.",
+                        "From $200,000 startup cash, spend $20,000 on setup, including an illustrative $3,000 annual bond premium, leaving $180,000. Base liquidity needs exceed that by $56,250. A fully available $75,000 credit line could cover the gap; posting $75,000 into a restricted trust instead would reduce operating cash further.",
+                    ),
+                    field(
+                        "Payment delay and margin stress",
+                        "textarea",
+                        "Stress collection timing and carrier pricing independently so the team can distinguish liquidity failure from profitability failure. Quantify the incremental funding or earnings effect and specify which corrective action must occur before accepting additional exposure.",
+                        "If collection moves to day 60 while carriers remain payable on day 15, carrier float rises to $307,500 and operating liquidity to $338,750. Separately, an unpassed $50 carrier increase across 1,200 Base loads reduces annual owner net by $60,000, from $165,000 to $105,000, before other changes.",
+                    ),
+                    field(
+                        "Funded volume ceiling and borrowing cost",
+                        "textarea",
+                        "Convert available liquidity into a maximum shipment pace using the same payment assumptions. Include financing expense in the operating budget and state the conditions under which a credit line remains usable rather than counting an unapproved borrowing request.",
+                        "With $180,000 cash, hold $31,250 for operating cushion and reserve, leaving $148,750 for carrier float. At $2,050 per load and a thirty-day gap, cap throughput near 72 loads monthly without borrowing. A steady $56,250 draw at 12% costs $6,750 annually, included within Base other expense.",
+                    ),
+                ],
+                "completion_gate": (
+                    "The owner and bookkeeper reconcile all three canonical profits "
+                    "exactly, document the accounting bridge, and verify cash or committed "
+                    "credit for the selected shipment ceiling. Funding calculations "
+                    "exclude restricted security and include borrowing expense."
+                ),
+            },
+            {
+                "worksheet_id": "ws-03",
+                "number": 3,
+                "title": "Shipment Execution, Ledger, and Technical QA Pre-Flight",
+                "purpose": (
+                    "Build a reproducible shipment record from accepted tender through "
+                    "final collection and carrier settlement. Link operational evidence "
+                    "to financial entries, enforce identity checks at pickup, and test "
+                    "document, payment, and integration failures before staff rely "
+                    "on automated shipment status or invoice creation."
+                ),
+                "chapter_ref": "Q7, Q8",
+                "instructions": [
+                    (
+                        "Create one immutable internal load identifier before booking "
+                        "capacity. Attach the shipper tender, carrier agreement, rate "
+                        "confirmation, pickup instructions, delivery evidence, and all "
+                        "subsequent adjustments to that identifier so dispatch and "
+                        "accounting cannot accidentally create competing shipment histories."
+                    ),
+                    (
+                        "Walk through pickup and delivery with the warehouse, carrier, "
+                        "and shipper contacts. Confirm appointment requirements, reference "
+                        "numbers, cargo restrictions, and escalation channels before "
+                        "dispatch; a technically valid TMS record does not prove the "
+                        "physical handoff can occur safely."
+                    ),
+                    (
+                        "Configure the ledger around billings, carrier obligations, "
+                        "accessorials, reserves, receipts, and settlements. Use explicit "
+                        "statuses for provisional and final amounts, and require "
+                        "supporting evidence when an operator changes either side "
+                        "of the shipment's commercial record."
+                    ),
+                    (
+                        "Test duplicate events, missing delivery documents, wrong "
+                        "amounts, changed bank details, and late carrier invoices. "
+                        "Record expected outcomes before running each test, then "
+                        "preserve actual results so a passed happy-path demonstration "
+                        "does not conceal untested failure handling."
+                    ),
+                    (
+                        "Close a sample shipment only after operations and accounting "
+                        "agree on delivery, invoice eligibility, carrier payable, "
+                        "and exceptions. Keep unresolved claims and disputed accessorials "
+                        "visible after operational delivery rather than making them "
+                        "disappear inside a generic completed status."
+                    ),
+                ],
+                "fields": [
+                    field(
+                        "Load identifier and source record",
+                        "textarea",
+                        "Define the internal load identifier, external reference mappings, and required source documents. Describe how revised tenders are versioned and how operators distinguish a genuine new shipment from an amended or duplicated customer transmission.",
+                        "Load FB-000101 maps to Cedar's purchase order CP-4107 and one carrier confirmation. A revised pickup appointment creates tender version two under the same load. An identical EDI transmission updates the receipt log without creating another shipment, customer invoice, or carrier payable in the TMS.",
+                    ),
+                    field(
+                        "Pre-dispatch commercial reconciliation",
+                        "textarea",
+                        "Compare the shipper tender and carrier commitment for locations, dates, equipment, cargo, linehaul, fuel, and accessorial rules. Assign ownership for resolving differences before the carrier receives executable pickup instructions and the warehouse releases freight.",
+                        "For FB-000101, shipper billing is $2,500 and carrier commitment $2,050, both including fuel. Pickup is Tuesday at 09:00 and delivery Wednesday at 11:00. Operations finds the carrier confirmation says Thursday delivery, corrects it, and obtains acknowledgment before issuing the warehouse pickup reference.",
+                    ),
+                    field(
+                        "Physical pickup identity confirmation",
+                        "textarea",
+                        "Specify what the warehouse verifies against the authorized assignment and how it reports discrepancies. Minimize unnecessary personal data collection while retaining enough evidence to establish the carrier, equipment, and authorized custody transfer at pickup.",
+                        "The warehouse compares arriving carrier identity and equipment references with the brokerage release, using its established driver-verification procedure. A different tractor number requires a callback and documented update. A different operating carrier requires renewed counterparty review; neither change is accepted solely because someone presents the correct pickup number.",
+                    ),
+                    field(
+                        "Tracking events and exception clock",
+                        "textarea",
+                        "Define operational milestones, source priority, stale-data thresholds, and escalation timing. Distinguish an absent tracking signal from confirmed shipment delay, and provide a manual verification method for shipments whose mobile or telematics integration stops reporting.",
+                        "project44 events feed booked, arrived pickup, departed pickup, arrived delivery, and delivered milestones when available. A ninety-minute signal gap opens an exception, not an automatic late-delivery conclusion. Dispatch calls the verified carrier contact, records the result, and updates the shipper with the confirmed estimate and next check time.",
+                    ),
+                    field(
+                        "Delivery evidence and invoice eligibility",
+                        "textarea",
+                        "List the delivery documents and shipment references required to issue a correct customer invoice. Describe how shortages, damage notations, missing signatures, and illegible images change the workflow without erasing contractual carrier-payment obligations.",
+                        "FB-000101 requires a legible signed delivery receipt, matching load reference, delivery date, and recorded exceptions. A receiver notation of two crushed cartons opens a claims review. Accounting separates the undisputed freight charge from the cargo issue and checks contract terms before withholding any amount owed to the carrier.",
+                    ),
+                    field(
+                        "Shipment ledger entries and reconciliation",
+                        "textarea",
+                        "Specify the ledger treatment for customer billing, carrier expense, receipts, and payment using the approved accounting policy. Show how a load-level subledger reconciles to control accounts without assuming every brokerage uses gross revenue presentation.",
+                        "Under an approved gross-presentation policy, FB-000101 records $2,500 customer receivable and revenue, plus $2,050 transportation expense and carrier payable. Collection clears receivable; payment clears payable. Under net presentation, the accountant changes financial-statement treatment while preserving the same $2,500 billings and $2,050 settlement audit trail.",
+                    ),
+                    field(
+                        "Accessorial evidence and adjustment history",
+                        "textarea",
+                        "Define the evidence required to add detention or another accessorial to either side of a load. Preserve original amounts, approval timestamps, and commercial asymmetries so a valid carrier charge is not mistaken for an automatically collectible customer charge.",
+                        "The truck records arrival at 09:00 and departure at 12:30. After two free hours, 1.5 hours at $75 equals $112.50 detention. With matching contractual terms and evidence, billing becomes $2,612.50 and carrier payable $2,162.50; the original $450 spread remains unchanged before operating expenses.",
+                    ),
+                    field(
+                        "Payment identity and bank-change review",
+                        "textarea",
+                        "Describe how the brokerage verifies the lawful payee, bank instructions, factoring notices, and changes. Require independent review for sensitive edits and explain how existing verified channels are used without trusting contact details inside the change request.",
+                        "A carrier requests a new bank account the afternoon before payment. Accounting suspends that payment instruction, calls the previously verified contact, and obtains independent reviewer confirmation. If a factor claims assignment, accounting validates the assignment and applicable UCC rights before choosing the payee, preventing a mistaken second payment.",
+                    ),
+                    field(
+                        "Integration QA and duplicate protection",
+                        "textarea",
+                        "Specify test inputs, expected outcomes, and evidence for shipment, invoice, and payment interfaces. Include repeated messages, partial failures, malformed amounts, and status reversals, and distinguish an integration acknowledgment from successful posting to the accounting ledger.",
+                        "Replay the delivered event for FB-000101 three times and expect one invoice draft. Send an invoice total of $25,000 against the $2,500 approved tender and expect an exception. Simulate a timeout after ledger posting; retry must find the existing transaction rather than create a duplicate receivable.",
+                    ),
+                    field(
+                        "Shipment close and unresolved exposure",
+                        "textarea",
+                        "Define separate operational, billing, payment, and claims closure conditions. Record who reviews remaining exposure and how closed-load adjustments are authorized, ensuring delivered freight cannot hide open receivables, unpaid carriers, or unresolved cargo incidents.",
+                        "FB-000101 is operationally delivered Wednesday, invoiced Thursday, paid to the carrier on day 15, and collected from the shipper on day 45. A cargo claim keeps the claims record open after financial settlement. Weekly reconciliation reports any difference between the load subledger, bank activity, and general ledger.",
+                    ),
+                ],
+                "completion_gate": (
+                    "Operations and accounting complete one documented shipment simulation "
+                    "and pass duplicate, discrepancy, missing-document, and payment-change "
+                    "tests. Every financial entry maps to supporting evidence, and "
+                    "unresolved cargo exposure remains separately visible."
+                ),
+            },
+            {
+                "worksheet_id": "ws-04",
+                "number": 4,
+                "title": "Authority, Security, Contracts, and Outreach Requirements",
+                "purpose": (
+                    "Convert the brokerage's statutory and contractual duties into "
+                    "specific operating evidence. Verify authority and financial security, "
+                    "maintain transaction records, align carrier and shipper agreements, "
+                    "and control marketing practices without confusing contractual cargo "
+                    "protection with FMCSA registration or motor-carrier insurance obligations."
+                ),
+                "chapter_ref": "Q5, Q9",
+                "instructions": [
+                    (
+                        "Determine the actual services and jurisdictions before applying "
+                        "rules. This workbook models a United States property broker, "
+                        "not a household-goods broker, motor carrier, freight forwarder, "
+                        "customs broker, or ocean transportation intermediary; separately "
+                        "review any expansion into those operating roles."
+                    ),
+                    (
+                        "Verify current FMCSA authority and security requirements from "
+                        "official sources before launch and renewal. Record the rule "
+                        "version, effective date, responsible reviewer, and evidence "
+                        "location, especially where financial-responsibility provisions "
+                        "have implementation dates that differ from publication dates."
+                    ),
+                    (
+                        "Read the shipper agreement and broker-carrier agreement together. "
+                        "Reconcile payment timing, accessorial evidence, claims handling, "
+                        "reassignment restrictions, and liability allocation; do not "
+                        "assume an obligation accepted from the shipper automatically "
+                        "passes through to the carrier."
+                    ),
+                    (
+                        "Build transaction retention and access procedures around "
+                        "applicable broker recordkeeping rules. Protect sensitive payment "
+                        "information through role-based access while preserving the "
+                        "records and examination rights required for parties to the "
+                        "brokered transaction."
+                    ),
+                    (
+                        "Review each outreach channel independently, including business "
+                        "email, manual calling, automated dialing, and text messaging. "
+                        "Record suppression handling and service-provider responsibilities "
+                        "so a sales automation setting cannot silently change the "
+                        "legal or operational character of a campaign."
+                    ),
+                ],
+                "fields": [
+                    field(
+                        "Operating role and authority scope",
+                        "textarea",
+                        "Document the entity's actual role, freight types, and transportation jurisdictions. Identify the applicable registration framework and explain how sales language, operating conduct, and contracts remain consistent with acting as a broker rather than an unregistered carrier.",
+                        "The entity arranges interstate transportation of non-household-goods property by authorized motor carriers. Review broker registration under 49 U.S.C. 13904 and the definitions in 49 CFR 371.2. Website copy says the company arranges transportation; dispatch does not represent that the brokerage owns the contracted trucks.",
+                    ),
+                    field(
+                        "FMCSA authority evidence and launch restriction",
+                        "textarea",
+                        "Record how the business confirms its operating authority is effective, not merely applied for. Include process-agent filing and renewal monitoring responsibilities, and identify which activities may proceed while authority or required filings remain incomplete.",
+                        "Before brokering regulated shipments, the owner confirms effective authority in FMCSA records and verifies the process-agent designation under 49 CFR Part 366. While filings remain incomplete, the team may research lanes and negotiate conditional agreements, but it does not represent a pending application as active authority.",
+                    ),
+                    field(
+                        "Bond or trust financial responsibility",
+                        "textarea",
+                        "Document the $75,000 property-broker security requirement, selected instrument, provider, and monitoring procedure. Review current provisions governing security availability, replenishment, and suspension, and state how restricted trust assets are excluded from working-capital calculations.",
+                        "The owner selects a BMC-84 surety bond meeting 49 U.S.C. 13906(b) and applicable 49 CFR 387.307 requirements. The $75,000 coverage is not operating cash. The renewal checklist verifies current FMCSA rules, provider notices, and response deadlines; any threatened lapse triggers immediate review of authority and shipment commitments.",
+                    ),
+                    field(
+                        "Broker transaction records and examination",
+                        "textarea",
+                        "Specify the transaction records retained under 49 CFR 371.3, the retention period, and the process for responding to a transaction party's examination request. Include compensation and freight-charge records without inventing a universal disclosure format.",
+                        "For each load, retain shipper identity, originating carrier details, bill-of-lading or freight-bill references, compensation, relevant non-brokerage services, and collected freight charges with carrier payment dates. Preserve required records for at least three years under 49 CFR 371.3 and maintain a controlled process for transaction-party examination requests.",
+                    ),
+                    field(
+                        "Broker identity and customer-facing representations",
+                        "textarea",
+                        "Review website text, rate confirmations, email signatures, and sales scripts for accurate broker identity. Explain how operators avoid representing the brokerage as a motor carrier and how the registered business name appears in regulated transportation activity.",
+                        "Review materials against 49 CFR 371.7. The homepage and confirmations identify the registered brokerage name and its broker role, while the selected motor carrier is separately named on shipment documents. Remove claims such as our fleet when the company neither owns nor operates the trucks being offered.",
+                    ),
+                    field(
+                        "Shipper agreement and collection mechanics",
+                        "textarea",
+                        "Capture payment terms, invoice evidence, accessorial authorization, dispute procedures, credit rights, and liability allocation. Identify clauses that could turn a minor document defect into a lengthy collection delay, and assign a reviewer for nonstandard customer terms.",
+                        "The shipper agreement makes undisputed invoices payable within 45 days after receipt of required documentation and requires itemized billing objections within ten business days. It defines detention evidence and permits suspension of new tenders after the credit limit is exceeded, without implying that existing carrier obligations disappear.",
+                    ),
+                    field(
+                        "Carrier agreement and cargo claims allocation",
+                        "textarea",
+                        "Document carrier responsibility, shipment reassignment restrictions, cargo evidence, claim notice procedures, and contractual liability limits. Distinguish the motor carrier's statutory cargo framework from any separate liability the brokerage accepts through its own representations or contracts.",
+                        "The carrier agreement prohibits unauthorized rebrokering and identifies the hauling carrier's cargo obligations. Review 49 U.S.C. 14706 and 49 CFR Part 370 where applicable to motor-carrier claims. Operations preserves delivery exceptions and shipment value evidence; the brokerage does not assume those provisions automatically resolve its separate contractual exposure.",
+                    ),
+                    field(
+                        "Factoring assignments and lawful payee",
+                        "textarea",
+                        "Define how accounting evaluates notices that carrier receivables have been assigned to a factor. Identify the applicable state enactment of UCC 9-406, authenticated notice handling, requests for proof, and escalation when competing parties demand payment.",
+                        "When a factor sends an authenticated assignment notice, accounting checks the carrier, covered receivables, effective date, and independently verified payee details. The reviewer considers applicable state UCC 9-406 requirements and any permitted proof request. Conflicting instructions remain an exception until resolved rather than being settled through the latest email.",
+                    ),
+                    field(
+                        "Commercial email and suppression workflow",
+                        "textarea",
+                        "Specify commercial-email identification, routing accuracy, postal-address inclusion, opt-out handling, and vendor oversight. Record how suppressed contacts remain excluded from future imports and campaigns, even when another employee acquires the same address from a different list.",
+                        "The B2B email sequence follows 15 U.S.C. 7704: accurate headers and subject lines, required commercial identification, a valid physical postal address, and a working opt-out method. Suppress requests within ten business days and retain suppression controls so a later CRM import cannot reactivate the contact.",
+                    ),
+                    field(
+                        "Calling, texting, and annual rules review",
+                        "textarea",
+                        "Document the calling technology, destination number types, message content, and jurisdictional review. Evaluate 47 U.S.C. 227, applicable FCC rules, and relevant state requirements rather than assuming a business contact record authorizes every automated call or text.",
+                        "Launch with individually placed calls to verified business contacts and no prerecorded sales calls or automated text sequence. Review 47 CFR 64.1200 and relevant state restrictions before changing technology. Record opt-outs centrally, evaluate call-recording requirements before recording conversations, and repeat the rules review when campaign settings or jurisdictions change.",
+                    ),
+                ],
+                "completion_gate": (
+                    "The owner records effective authority, current security evidence, "
+                    "process-agent filing, contract versions, retention procedures, and "
+                    "channel-specific outreach controls. Every time-sensitive statutory "
+                    "item has an official source, review date, and accountable reviewer."
+                ),
+            },
+            {
+                "worksheet_id": "ws-05",
+                "number": 5,
+                "title": "Automation, Growth Flywheel, and Risk Fallback Tracker",
+                "purpose": (
+                    "Automate repeatable load matching, shipment tracking, and invoice "
+                    "reconciliation while preserving human control over identity, credit, "
+                    "and payment changes. Connect outbound activity to profitable "
+                    "repeat lanes, and define manual fallback procedures that keep "
+                    "freight and financial records coherent when vendors or integrations fail."
+                ),
+                "chapter_ref": "Q6, Q10",
+                "instructions": [
+                    (
+                        "Map each workflow from source event to operational decision, "
+                        "system update, and exception owner. Automate stable information "
+                        "movement first; preserve explicit human review for carrier "
+                        "substitution, unusual cargo, credit increases, and changed "
+                        "payment instructions until controls are demonstrably reliable."
+                    ),
+                    (
+                        "Connect prospecting to an actual lane thesis and documented "
+                        "capacity. Segment by equipment, geography, shipment frequency, "
+                        "and payable entity, then measure qualified conversations and "
+                        "repeat profitable loads rather than treating sent messages "
+                        "or purchased contacts as business results."
+                    ),
+                    (
+                        "Use named system-of-record ownership for the TMS, CRM, "
+                        "carrier verification platform, accounting ledger, and tracking "
+                        "provider. Define what each integration may write, how duplicate "
+                        "events are detected, and which discrepancies must reach "
+                        "a staffed exception queue."
+                    ),
+                    (
+                        "Treat automation performance as both a labor metric and a "
+                        "control metric. Measure touch time, false exceptions, missed "
+                        "exceptions, stale data, and reconciliation breaks so a "
+                        "reduction in clicks does not mask greater cargo or "
+                        "payment exposure."
+                    ),
+                    (
+                        "Rehearse vendor outage, suspected carrier impersonation, and "
+                        "shipper nonpayment scenarios. Assign a fallback owner and "
+                        "recovery checklist for each, and verify that staff can "
+                        "continue permitted work without copying sensitive payment "
+                        "data into uncontrolled personal spreadsheets."
+                    ),
+                ],
+                "fields": [
+                    field(
+                        "System-of-record and integration ownership",
+                        "textarea",
+                        "Assign authoritative systems for customers, loads, carrier verification, invoices, and payments. Define the permitted direction of each interface and identify which system wins when two records disagree about a financial amount or shipment status.",
+                        "HubSpot owns prospect activity; the selected TMS owns loads and approved commercial amounts; Highway stores carrier-screening evidence; QuickBooks Online owns posted accounting entries. An integration may create invoice drafts but cannot change verified bank instructions. Disagreements between TMS totals and the ledger enter the accounting exception queue.",
+                    ),
+                    field(
+                        "Load-matching rules and capacity evidence",
+                        "textarea",
+                        "Define the inputs and exclusions for automated carrier recommendations. Include lane history, equipment, active authority evidence, insurance fit, service performance, and independently verified identity, and distinguish a suggested match from an authorized dispatch commitment.",
+                        "The matching rule ranks previously approved dry-van carriers with Columbus-to-Nashville history, suitable cargo coverage, and no unresolved identity exception. It proposes three options for a $2,050 target buy. Dispatch confirms actual capacity and driver assignment before tendering; a platform availability signal alone does not book the truck.",
+                    ),
+                    field(
+                        "Carrier screening exception pipeline",
+                        "textarea",
+                        "Specify screening refresh triggers, exception severity, and reviewer actions. Explain how Highway or RMIS findings interact with official authority records and independent callbacks, without claiming the platform detects every fraudulent or unauthorized transaction.",
+                        "Refresh screening before assignment and after a material contact or ownership change. A new dispatch domain combined with changed bank details creates a high-priority exception. Operations checks official records and calls established contacts; the load remains unassigned until identity is resolved, even if the offered carrier price is unusually low.",
+                    ),
+                    field(
+                        "Tracking automation and manual recovery",
+                        "textarea",
+                        "Define milestone ingestion, customer update rules, and the fallback when tracking fails. Include stale-signal thresholds, evidence quality labels, and the person responsible for confirming the truck's status instead of allowing software to manufacture certainty.",
+                        "Tracking events update the TMS every available reporting interval, while customer notices use only confirmed milestones. After ninety minutes without a signal, dispatch contacts the verified carrier and records a manual update. The system labels that update as dispatcher-confirmed and preserves the original telemetry gap for later vendor review.",
+                    ),
+                    field(
+                        "Invoice reconciliation and human review",
+                        "textarea",
+                        "Describe document extraction, matching tolerances, duplicate checks, and exception routing. Explain which values require exact agreement and why optical character recognition output cannot independently establish the carrier's entitlement or authorize an irreversible payment.",
+                        "The invoice workflow matches load identifier, carrier legal entity, approved rate, and delivery documentation. A $2,050 carrier invoice passes amount matching; a $2,162.50 invoice requires the supported detention adjustment. OCR may populate fields, but an unmatched payee, duplicate invoice number, or changed account routes to accounting review.",
+                    ),
+                    field(
+                        "Target account and outbound lane offer",
+                        "textarea",
+                        "Define the ideal shipper account and a specific operational offer grounded in your niche. Record contact sourcing, outreach channel, qualification questions, and suppression handling without claiming capacity or delivery performance that the brokerage has not established.",
+                        "Build a list of forty packaging manufacturers shipping dry-van freight within the Ohio-to-Tennessee corridor. The offer is a documented backup-capacity plan with transparent detention terms, not guaranteed savings. Ask about weekly tenders, collection terms, appointment failures, and cargo value; exclude accounts whose needs exceed the approved operating boundary.",
+                    ),
+                    field(
+                        "Growth funnel and repeat-load conversion",
+                        "textarea",
+                        "Track account progression from outreach through qualified discovery, pilot tender, collected invoice, and repeat volume. Separate gross billings from contribution and identify where acquisition costs are included so growth metrics reconcile with the operating budget.",
+                        "An illustrative month produces forty researched accounts, twelve conversations, four qualified lane reviews, two pilot shippers, and twelve completed loads. At Base unit economics, those loads generate $30,000 billings and $5,400 spread before overhead and expected losses. Prospecting labor and software remain inside the modeled operating expense budget.",
+                    ),
+                    field(
+                        "Automation labor and quality scorecard",
+                        "textarea",
+                        "Set measurable before-and-after targets for shipment touch time and error handling. Include sample size and review method, and distinguish hours potentially released by automation from payroll savings that require an actual staffing or capacity change.",
+                        "Across 100 monthly Base loads, reduce documented administrative touch time from 35 to 22 minutes, releasing about 21.7 hours monthly. Audit ten loads weekly for missed exceptions and duplicate entries. Keep the canonical 3 FT plus 2 C staffing until service performance and actual workload justify a different operating design.",
+                    ),
+                    field(
+                        "Fraud, claims, and nonpayment fallback",
+                        "textarea",
+                        "Create separate response paths for carrier fraud, cargo claims, and shipper nonpayment. Identify immediate containment, evidence preservation, customer communication, and payment responsibilities without treating every exception as grounds to cancel legitimate carrier obligations.",
+                        "Suspected impersonation stops cargo release and changed payment instructions while staff verify custody and contact relevant parties. Cargo damage triggers evidence preservation and insurer notification under policy terms. A shipper reaching day 60 triggers credit review and suspension of new tenders, while valid carrier invoices remain scheduled under their agreements.",
+                    ),
+                    field(
+                        "Vendor outage and recovery reconciliation",
+                        "textarea",
+                        "Define a minimum viable manual operating mode, access controls, and restoration checks. Explain how staff prevent duplicate loads, invoices, and payments when offline records are imported after service returns, and name the person who authorizes reconciliation completion.",
+                        "During a TMS outage, operations uses a controlled shared register with reserved load identifiers and read-only copies of active shipment packets. Accounting does not improvise new payees. After restoration, the integration owner reconciles each manual event, verifies one invoice per load, and confirms no payment was sent twice.",
+                    ),
+                ],
+                "completion_gate": (
+                    "The automation owner demonstrates one matched load, one tracking "
+                    "exception, one invoice discrepancy, and one outage recovery. Sales "
+                    "reports qualified, collected, repeat business, while identity and "
+                    "payment exceptions retain named human ownership."
+                ),
+            },
+            {
+                "worksheet_id": "ws-06",
+                "number": 6,
+                "title": "30-Day Launch Sprint, Pod Scorecard, and Exit-Readiness Ledger",
+                "purpose": (
+                    "Turn the workbook into a thirty-day evidence-building sprint "
+                    "with accountable owners, bounded spending, and measurable operating "
+                    "results. Preserve the realistic two-to-six-month first-deal horizon "
+                    "while establishing repeatable shipment controls, defensible financial "
+                    "records, and transferable customer relationships that reduce dependence "
+                    "on the founder."
+                ),
+                "chapter_ref": "Q11, Q12",
+                "instructions": [
+                    (
+                        "Treat thirty days as an operating-readiness sprint rather "
+                        "than a promise of first revenue. The canonical first-deal "
+                        "window is two to six months; authority timing, customer "
+                        "procurement, credit review, and carrier onboarding can extend "
+                        "beyond the initial preparation calendar."
+                    ),
+                    (
+                        "Assign a single accountable owner and tangible deliverable "
+                        "to each weekly milestone. Separate activities the team "
+                        "controls from external approvals and customer decisions, "
+                        "and record spending commitments before they reduce cash "
+                        "available for carrier settlement."
+                    ),
+                    (
+                        "Build the pod scorecard from reconciled load, cash, and "
+                        "exception records. Show gross billings, spread, expected "
+                        "losses, operating expense, owner profit, days to collect, "
+                        "and carrier-payment timing together so a volume increase "
+                        "cannot conceal deteriorating unit economics."
+                    ),
+                    (
+                        "Document role coverage and handoff procedures before the "
+                        "owner becomes the only person who can quote, dispatch, "
+                        "collect, or handle claims. Respect the canonical team "
+                        "sizes while recognizing that contractors need defined "
+                        "deliverables, access boundaries, and genuine classification review."
+                    ),
+                    (
+                        "Organize an exit-readiness file from the first shipment, "
+                        "including contracts, customer concentration, accounting bridges, "
+                        "authority records, and system ownership. Identify transfer "
+                        "restrictions and required counterparty actions without assuming "
+                        "broker authority or customer relationships automatically move "
+                        "with an asset sale."
+                    ),
+                ],
+                "fields": [
+                    field(
+                        "Days 1–7: niche, entity, and cash baseline",
+                        "textarea",
+                        "Define the first week's deliverables, responsible people, spending limits, and external dependencies. Include the niche thesis, legal entity, authority workstream, and initial liquidity model without representing incomplete filings as permission to operate.",
+                        "By day seven, the owner completes the packaging-lane thesis, documents the $200,000 funding example, and assigns authority and security filings to a named administrator. Spend no more than $5,000 of the $20,000 setup budget during this week. The bookkeeper establishes the gross-billings-to-ledger reconciliation before transactions begin.",
+                    ),
+                    field(
+                        "Days 8–14: counterparties and commercial packet",
+                        "textarea",
+                        "Set measurable targets for shipper discovery, carrier qualification, and contract preparation. Distinguish a researched prospect from an approved customer and a screened carrier from confirmed capacity, preserving evidence for every change in readiness status.",
+                        "By day fourteen, research forty shippers, complete eight discovery conversations, and assemble five carrier packets for the initial corridor. The operations lead checks each packet against official records and independently sourced contacts. Commercial drafts include payment timing, detention evidence, and reassignment restrictions, but no shipment is booked before effective authority.",
+                    ),
+                    field(
+                        "Days 15–21: systems and shipment rehearsal",
+                        "textarea",
+                        "Define the system configuration and test evidence required during the third week. Include a complete mock shipment, ledger reconciliation, fraud exception, and vendor outage exercise, with specific acceptance criteria and named reviewers rather than a generic software-ready milestone.",
+                        "By day twenty-one, operations rehearses FB-000101 from tender through delivery and accounting records the $2,500 receivable and $2,050 carrier payable in a test environment. Repeat the delivery event three times and confirm one invoice draft. The owner observes a failed bank-change request and a controlled outage recovery.",
+                    ),
+                    field(
+                        "Days 22–30: readiness review and bounded pilot",
+                        "textarea",
+                        "Specify the conditions for a live pilot and the useful work completed if external dependencies remain open. Bound shipment count and credit exposure, and avoid turning the sprint deadline into pressure to bypass authority, cash, or identity requirements.",
+                        "By day thirty, launch up to two pilot loads only if authority is effective, counterparties are verified, contracts are signed, and carrier payments are funded. Otherwise complete additional discovery and simulations. Two Base-priced pilot loads produce $5,000 billings and $900 spread, not evidence of sustainable monthly profitability.",
+                    ),
+                    field(
+                        "Pod roles, coverage, and canonical headcount",
+                        "textarea",
+                        "Map sales, dispatch, accounting, claims, and systems ownership to the canonical team. Specify backup coverage and contractor deliverables, and identify where the working owner is counted so staffing and compensation assumptions remain consistent with the financial worksheet.",
+                        "Conservative and Base use 3 FT plus 2 C: owner-commercial lead, operations lead, account operator, contract bookkeeping support, and contract systems support. Scaled uses 4 FT plus 3 C, adding an employee coordinator and scoped claims support. The owner occupies one FT seat in every illustrative budget.",
+                    ),
+                    field(
+                        "Weekly unit-economics and cash scorecard",
+                        "textarea",
+                        "Define scorecard formulas, source systems, review cadence, and action thresholds. Keep load margin, owner profit, cash collections, and carrier disbursements distinct, and show how a monthly operating view reconciles to the annual canonical Base scenario.",
+                        "At 100 Base loads monthly, track $250,000 billings, $205,000 carrier cost, $45,000 spread, $28,750 operating expense, $2,500 expected losses, and $13,750 owner net. Annualizing those amounts gives $165,000 owner net. Review receivable aging and the $236,250 liquidity requirement alongside the earnings figures each week.",
+                    ),
+                    field(
+                        "Service and counterparty quality scorecard",
+                        "textarea",
+                        "Select operational measures that reveal failure before financial losses appear. Define denominators, evidence sources, and escalation thresholds for identity verification, appointment performance, document turnaround, claim events, and unresolved exceptions rather than relying on aggregate customer satisfaction.",
+                        "Require verified carrier identity on every released load and reviewed payment identity on every changed payee instruction. Target at least 97 on-time pickups per 100 scheduled loads and delivery-document receipt within one business day on 95 loads. Report denominators and exceptions; one suspected impersonation receives review regardless of the aggregate rate.",
+                    ),
+                    field(
+                        "Capital release and volume expansion decision",
+                        "textarea",
+                        "Tie additional volume to demonstrated cash capacity, collected invoices, service performance, and risk exposure. State which data period supports expansion and explain how a revised payment pattern changes the funded load ceiling before sales commits capacity.",
+                        "Do not expand from 72 toward 100 monthly Base-cost loads using the $180,000 cash balance alone. Confirm the additional $56,250 funding requirement and available credit terms first. If collection drifts to day 60, recalculate using $338,750 operating liquidity and reduce accepted tenders until the larger gap is funded.",
+                    ),
+                    field(
+                        "Exit-readiness records and transfer constraints",
+                        "textarea",
+                        "List the financial, commercial, operational, and regulatory evidence a buyer would need to evaluate the business. Identify assignability and ownership questions explicitly, and distinguish management preparation from a completed legal or regulatory transfer of the brokerage.",
+                        "Maintain monthly billings-to-ledger bridges, customer-level spread, receivable aging, claims history, signed agreements, security records, and system-access inventories. Flag customer assignment clauses and transaction-specific FMCSA requirements for review. The data room separates owner-dependent relationships from documented account processes and excludes unrestricted distribution of sensitive carrier payment information.",
+                    ),
+                    field(
+                        "Day-30 decision and next ninety-day commitments",
+                        "textarea",
+                        "Record whether to continue, narrow, pause, or expand the launch, supported by observed evidence. Assign owners and dates for the next ninety days, preserving the canonical scenarios as benchmarks rather than presenting uncollected pilots as achieved annual results.",
+                        "Continue the packaging niche if authority, identity controls, and cash coverage are documented, while keeping the funded shipment ceiling unchanged until collections validate timing. Over the next ninety days, target two repeat shippers and complete monthly reconciliations. Report actual results separately from Conservative $30,000, Base $165,000, and Scaled $400,000 annual owner-net benchmarks.",
+                    ),
+                ],
+                "completion_gate": (
+                    "The owner signs a dated launch decision supported by readiness "
+                    "evidence, reconciled cash capacity, named pod responsibilities, "
+                    "and a ninety-day operating plan. Live activity remains bounded "
+                    "by effective authority, verified counterparties, and funded carrier obligations."
+                ),
+            },
+        ],
+    }

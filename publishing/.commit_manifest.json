@@ -1,10 +1,10 @@
 {
   "scope": "publishing_store_excluding_previews",
   "sha256": {
-    "audit/existing_work_audit.json": "7fcff1c1197dd1939c6bc8a99a9da8718680a336d7c8310ca573d0bddb359260",
-    "brand/brand_system.json": "f0d5fcfa9ddb5851f14f042f9293fbb3d0c48250961d919a5f41a5eecd858b73",
-    "catalog/pipeline_29_candidates.json": "dc2094ce8182f0fde0167df6e34572d329e6fac4798d6a5aedbc12785765f0f9",
-    "research/research_database_summary.json": "84ba29e649d35b0457f1fe7feaa7c80aaade4e8d0a7ec7f2b1e43a227f447adf",
+    "audit/existing_work_audit.json": "a22fec177a2306e8f5965457c59219440bba35518dd79ed0ebc75340cbd3dbde",
+    "brand/brand_system.json": "02c951b8343078e592ee2a48e2def9527577201b878f0f1eab70335c0fffa021",
+    "catalog/pipeline_29_candidates.json": "bac752ef6b939bf7c3651606385e0a9456a3696713d362969c1348a4ed66a1cb",
+    "research/research_database_summary.json": "d5c6547f0f52f9408dd36299994ff8d8a889de66ca0a645fde3bf3e4441e8b0c",
     "site/newsletter_signups.json": "5a97fe09f877c0fccee940246e74f27dc5b6bc83148037af241946b350933794",
     "volumes/vol-001-heir-hunting/chapters/chapter-01.md": "4c44fe7e11c2f4af10ed7241bb0f8b49674c33d8c70c91a965cd3a0dab1133f0",
     "volumes/vol-001-heir-hunting/chapters/chapter-02.md": "c9f8705ba384dbbbd713674229cb8dfce45ab4fab27acea1480b476f229ad08b",
@@ -437,6 +437,24 @@
     "volumes/vol-024-tax-lien-investing/manuscript.json": "a9e9e7df8da847dcddd779012cbe4c4b69c2c2a8d142f7603349308279210adf",
     "volumes/vol-024-tax-lien-investing/metadata.json": "3c4568f255879f55bf0c9a85a34128d91b398cd059d00380005405323733a7e5",
     "volumes/vol-024-tax-lien-investing/scorecard.json": "6fb4e95f86355339d43ebe6829552eda4a00cd40b4a37870923213578baeca15",
-    "volumes/vol-024-tax-lien-investing/workbook.json": "b06029931665a05d02a346e575fc50e385b36ef74b1c8355a6234c4a289c73c2"
+    "volumes/vol-024-tax-lien-investing/workbook.json": "b06029931665a05d02a346e575fc50e385b36ef74b1c8355a6234c4a289c73c2",
+    "volumes/vol-025-freight-brokerage/chapters/chapter-01.md": "d2fc264bb75070392df54421b1711c7c4c8bb73be50ccec8f0c1cb20a2804500",
+    "volumes/vol-025-freight-brokerage/chapters/chapter-02.md": "db17ddca457db1cb795113fee2712638756ee17e93b0536c55bdf2dfb4384e5f",
+    "volumes/vol-025-freight-brokerage/chapters/chapter-03.md": "fd0710d8991211c912621ac106b2f327531b6ab05954a49e6cb50b970e16a67c",
+    "volumes/vol-025-freight-brokerage/chapters/chapter-04.md": "4628604e8ef597c9433c3c4a18e0404362aa24aaa109e6ec0b0908f45233214f",
+    "volumes/vol-025-freight-brokerage/chapters/chapter-05.md": "f29b4e2f348a2e9ce32d4127e31f3210d2aa64edf2893eab505142d9fe6c06c1",
+    "volumes/vol-025-freight-brokerage/chapters/chapter-06.md": "f10fd27ae6d78f92ac0b3d64e1e2a06b9eb813ba6e17eb490b9ff2f3155b258b",
+    "volumes/vol-025-freight-brokerage/chapters/chapter-07.md": "2f4fbc885ba6e800d1504e359eb25cbe259dcfa36d3938b961f9d1224bfeca04",
+    "volumes/vol-025-freight-brokerage/chapters/chapter-08.md": "cec257382dc9aaba447302baa3a4eb82ac6c32ecc49bdd28fed986673dc9aaed",
+    "volumes/vol-025-freight-brokerage/chapters/chapter-09.md": "75c00b1ef15991d2e91e4afbdbad3d6dc91b0cfa41e857aeda18820d6cd4bf7b",
+    "volumes/vol-025-freight-brokerage/chapters/chapter-10.md": "dc57119549ef81ca8bbd975a1058840853a88eb6b2895ab62e2a853808196690",
+    "volumes/vol-025-freight-brokerage/chapters/chapter-11.md": "0bc887d502f1d46a269b1e23617f9b631c4ff5d23af30cadcf81003e7a543ed0",
+    "volumes/vol-025-freight-brokerage/chapters/chapter-12.md": "45d30c6bfa57612dd3232244e33933be9fa404fd932ed9e6a90c5ae34b677d83",
+    "volumes/vol-025-freight-brokerage/diagrams_data.json": "c954fea697f97bb581453a23f8aa8fa9360eff455fc7e51bd739ba103e558939",
+    "volumes/vol-025-freight-brokerage/graphics_reviews.json": "84f48c09caf834cc956a4a0b918798cbd65c07550d027d8e8f834353ff8d9bbe",
+    "volumes/vol-025-freight-brokerage/manuscript.json": "4d4be36a8e8d39babaa28055d3b92c90a94a332ed4fc79fcbf33bb6f262332af",
+    "volumes/vol-025-freight-brokerage/metadata.json": "6394030d943c15649ba20957240d765bd7c4064a269f8f6a3a88399d0ab845fa",
+    "volumes/vol-025-freight-brokerage/scorecard.json": "bfda74c49fef4fefbfbbc91929d51e3a7313386bf61974d39018cda28e33b2f3",
+    "volumes/vol-025-freight-brokerage/workbook.json": "13960fa965a603cd89d2f2d71c9d1e19b28e097232089ec38c7ac14c1b8f44ce"
   }
 }

@@ -1,6 +1,6 @@
 {
-  "abridged_video_count": 4009,
-  "raw_video_count": 4009,
+  "abridged_video_count": 4184,
+  "raw_video_count": 4184,
   "summary": {
     "type": "dict",
     "keys": [
@@ -22,11 +22,11 @@
       "coverage": 6
     },
     "values": {
-      "generated_at": "2026-11-21T23:17:45+00:00",
+      "generated_at": "2026-11-21T23:28:03+00:00",
       "schema_version": "1.0"
     }
   },
-  "generated_at": "2026-11-21T23:17:45Z",
+  "generated_at": "2026-11-21T23:28:03Z",
   "counts": {
     "topics": 8
   },
@@ -34,9 +34,9 @@
     {
       "topic_id": "business_model_and_economics",
       "title": "Business Model, Contingency Economics & Deal Scale",
-      "video_count": 3155,
-      "tip_count": 6370,
-      "channel_count": 2090,
+      "video_count": 3310,
+      "tip_count": 6692,
+      "channel_count": 2156,
       "top_sources": [
         {
           "video_id": "LKEn47f67vQ",
@@ -81,18 +81,18 @@
           "duration": "00:19:07"
         },
         {
+          "video_id": "SPl9Y_xMJHA",
+          "title": "Freight Broker Commission Percentage | Everything you need to know! 🚚",
+          "author": "Freight 360",
+          "url": "https://www.youtube.com/watch?v=SPl9Y_xMJHA",
+          "duration": "00:04:59"
+        },
+        {
           "video_id": "e5r7-KT6mQ0",
           "title": "Ecommerce Contribution Margin Explained",
           "author": "LedgerGurus: Ecommerce Accounting Experts",
           "url": "https://www.youtube.com/watch?v=e5r7-KT6mQ0",
           "duration": "00:03:42"
-        },
-        {
-          "video_id": "7IqQXBLa14Y",
-          "title": "Revenue Recognition ASC 606 & IFRS 15 — 5-Step Quality Test with AI ⭐ mnainstitute.com",
-          "author": "[mnainstitute.com] M&A Certification & Courses",
-          "url": "https://www.youtube.com/watch?v=7IqQXBLa14Y",
-          "duration": "00:06:49"
         }
       ],
       "top_timestamped_insights": [
@@ -188,8 +188,8 @@
         }
       ],
       "statutes_and_forms": [
-        "form and",
         "form of",
+        "form and",
         "form that",
         "form for",
         "form to",
@@ -201,21 +201,21 @@
         "form on",
         "form so",
         "form in",
-        "form where",
         "form with",
         "form your",
+        "form where",
         "form like",
         "court order",
         "form as",
-        "quiet title",
         "form it",
-        "form if",
+        "quiet title",
         "form at",
+        "form if",
+        "form uh",
         "form I",
         "form their",
-        "form uh",
-        "letters of administration",
         "form which",
+        "letters of administration",
         "form content",
         "form um",
         "Chapter 7",
@@ -223,11 +223,11 @@
         "form here",
         "form an",
         "form below",
+        "form right",
         "form we",
         "form but",
-        "form from",
-        "form right",
-        "form them"
+        "form they",
+        "form from"
       ],
       "tools_and_portals": [
         "Google",
@@ -262,22 +262,22 @@
         "https://wise.com/invite/dic/todorivanovk1",
         "https://www.MediaOptions.com",
         "https://www.instagram.com/erizzyy/",
+        "https://www.FreightBrokerBootCamp.com",
         "https://www.surplusfunds101.com/freecallingscript",
         "https://www.youtube.com/watch?v=FWfV2m3K4jY",
         "http://bit.ly/2O3zS75",
         "http://bit.ly/316g9t4",
         "http://familysearch.me/facebook",
         "http://familysearch.me/home",
-        "http://familysearch.me/instagram",
-        "http://familysearch.me/RootsTech"
+        "http://familysearch.me/instagram"
       ]
     },
     {
       "topic_id": "probate_and_docket_sourcing",
       "title": "County Probate Dockets, Intestate Filings & Estate Leads",
-      "video_count": 3052,
-      "tip_count": 6520,
-      "channel_count": 1896,
+      "video_count": 3177,
+      "tip_count": 6630,
+      "channel_count": 1956,
       "top_sources": [
         {
           "video_id": "Lt0e4PdSMmo",
@@ -433,37 +433,37 @@
         "form and",
         "form that",
         "form to",
-        "form the",
         "form is",
+        "form the",
         "form for",
         "form a",
         "form you",
         "form or",
         "court order",
         "form on",
-        "form in",
         "form your",
+        "form in",
         "quiet title",
         "form below",
         "form where",
-        "form like",
         "form with",
+        "form like",
         "form so",
         "Chapter 7",
         "letters of administration",
         "form it",
         "form their",
         "Chapter 13",
-        "form I",
         "Form uh",
-        "form as",
         "form at",
+        "form I",
+        "form as",
         "form but",
         "form Commercial",
+        "protection act",
         "form if",
         "form we",
         "form which",
-        "protection act",
         "form here",
         "form um",
         "warranty deed",
@@ -471,8 +471,8 @@
         "property Act"
       ],
       "tools_and_portals": [
-        "Google",
         "Facebook",
+        "Google",
         "LinkedIn",
         "Excel",
         "CSV",
@@ -516,9 +516,9 @@
     {
       "topic_id": "unclaimed_property_and_escheat",
       "title": "State Unclaimed Property, Escheated Funds & Treasury Claims",
-      "video_count": 859,
-      "tip_count": 1911,
-      "channel_count": 558,
+      "video_count": 879,
+      "tip_count": 1927,
+      "channel_count": 573,
       "top_sources": [
         {
           "video_id": "D-PMjgNe-7s",
@@ -682,9 +682,9 @@
         "form or",
         "form a",
         "form but",
+        "Form uh",
         "form with",
         "form on",
-        "Form uh",
         "form we",
         "form your",
         "court order",
@@ -692,11 +692,11 @@
         "form it",
         "form so",
         "Property Act",
+        "form at",
         "form if",
         "form our",
         "form where",
         "quiet title",
-        "form at",
         "form them",
         "form this",
         "form um",
@@ -757,9 +757,9 @@
     {
       "topic_id": "genealogy_and_heirship_proof",
       "title": "Forensic Genealogy, Per-Stirpes Kinship & Proof of Heirship",
-      "video_count": 3275,
-      "tip_count": 3974,
-      "channel_count": 2123,
+      "video_count": 3428,
+      "tip_count": 4394,
+      "channel_count": 2189,
       "top_sources": [
         {
           "video_id": "7M3XZfN7814",
@@ -892,21 +892,21 @@
           "verbatim_research_only": true
         },
         {
+          "tip_paraphrase_summary": "Thus we need to pay them regardless of what our customer does. They don't care if our customer pays us. Just like if the…",
+          "category": "Pitfall / Hard No",
+          "timestamp": "00:02:48",
+          "link": "https://www.youtube.com/watch?v=OzmQFxT30NM&t=168s",
+          "video_title": "Broker didn't pay Detention?? Broker's take on Detention!",
+          "author": "ShipLeague",
+          "verbatim_research_only": true
+        },
+        {
           "tip_paraphrase_summary": "Only worth four the truthfulness and just being able to tell the bad news because no matter how great a business is there are…",
           "category": "Non-Negotiable Rule",
           "timestamp": "00:00:29",
           "link": "https://www.youtube.com/watch?v=fAVVcCIVQeE&t=29s",
           "video_title": "Business Brokers Vs M&A Advisors | The Vant Group",
           "author": "The Vant Group",
-          "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "It's from a percentage of the wholesale cost of what they are selling it to the buyer for, and I get paid quarterly, and…",
-          "category": "Legal / Deadline",
-          "timestamp": "00:01:58",
-          "link": "https://www.youtube.com/watch?v=UnGdjQb467o&t=118s",
-          "video_title": "Licensing to Earn royalties Vs Manufacturing Your Invention Idea",
-          "author": "Brian Fried - The Inventor Coach",
           "verbatim_research_only": true
         }
       ],
@@ -921,24 +921,24 @@
         "form you",
         "form or",
         "form a",
-        "form so",
-        "form your",
         "form on",
-        "form in",
+        "form your",
+        "form so",
         "form with",
+        "form in",
         "form where",
         "form like",
         "quiet title",
         "form as",
         "form below",
-        "form at",
         "form it",
+        "form at",
         "form I",
-        "form if",
         "form which",
+        "form if",
+        "form content",
         "form their",
         "court order",
-        "form content",
         "Form uh",
         "form here",
         "form um",
@@ -950,7 +950,7 @@
         "form but",
         "form from",
         "form they",
-        "warranty deed"
+        "form right"
       ],
       "tools_and_portals": [
         "Google",
@@ -998,9 +998,9 @@
     {
       "topic_id": "skip_tracing_and_outreach",
       "title": "Skip Tracing, Ethical Heir Contact & Trust Building",
-      "video_count": 2258,
-      "tip_count": 1151,
-      "channel_count": 1455,
+      "video_count": 2347,
+      "tip_count": 1257,
+      "channel_count": 1490,
       "top_sources": [
         {
           "video_id": "DgzklijTLzE",
@@ -1015,6 +1015,13 @@
           "author": "Chris Prouty",
           "url": "https://www.youtube.com/watch?v=8yepbhYel-Q",
           "duration": "00:04:05"
+        },
+        {
+          "video_id": "-_16MS3HWhA",
+          "title": "Freight Broker Cold Calling Script that Gets Your Prospects Attention! [Free Download]",
+          "author": "FreightBrokers",
+          "url": "https://www.youtube.com/watch?v=-_16MS3HWhA",
+          "duration": "00:10:16"
         },
         {
           "video_id": "kkCigTPke4Y",
@@ -1050,16 +1057,18 @@
           "author": "Smartlead",
           "url": "https://www.youtube.com/watch?v=doR2rhof6CM",
           "duration": "02:21:55"
-        },
-        {
-          "video_id": "-LtGmHnpioI",
-          "title": "The Only LinkedIn Outreach Video You Will Ever Need",
-          "author": "lemlist",
-          "url": "https://www.youtube.com/watch?v=-LtGmHnpioI",
-          "duration": "00:13:48"
         }
       ],
       "top_timestamped_insights": [
+        {
+          "tip_paraphrase_summary": "Much as as you can online whether it be like YouTube videos or like someone that you may know that's already an agent or…",
+          "category": "Pitfall / Hard No",
+          "timestamp": "00:07:29",
+          "link": "https://www.youtube.com/watch?v=pXxS5GOHXZE&t=449s",
+          "video_title": "How to Become a Freight Agent in 2027 (No Experience Needed)",
+          "author": "Matt Krause",
+          "verbatim_research_only": true
+        },
         {
           "tip_paraphrase_summary": "You can just basically like find like let's say you just want to use find email, right? um you can add that as an…",
           "category": "Legal / Deadline",
@@ -1076,6 +1085,24 @@
           "link": "https://www.youtube.com/watch?v=ES6y4iF-bBM&t=146s",
           "video_title": "State Funds Tutorial: 5 Tech Tools For Your State Funds Business",
           "author": "Surplus Funds 101",
+          "verbatim_research_only": true
+        },
+        {
+          "tip_paraphrase_summary": "They want to help you before you even get into the rest of what you were going to say. So really the point is…",
+          "category": "Pitfall / Hard No",
+          "timestamp": "00:05:26",
+          "link": "https://www.youtube.com/watch?v=LNT0OaH1J8s&t=326s",
+          "video_title": "What I Learned from 23,000 Cold Calls as a Freight Broker (My Script Included)",
+          "author": "Matt Krause",
+          "verbatim_research_only": true
+        },
+        {
+          "tip_paraphrase_summary": "Do you ever have to scramble to find a truck to get it out of there for them? And when Mike admits, yeah, sometimes…",
+          "category": "Pitfall / Hard No",
+          "timestamp": "00:20:55",
+          "link": "https://www.youtube.com/watch?v=bP4Dnpd58PE&t=1255s",
+          "video_title": "Full 2026 Freight Broker Training To Go From $0-$1,000,000",
+          "author": "Matt Krause",
           "verbatim_research_only": true
         },
         {
@@ -1122,33 +1149,6 @@
           "video_title": "The Licensing Lifestyle with Stephen Key",
           "author": "inventRightTV",
           "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "It building relationships can feel very daunting with people that you don't know but here's the key you don't need to be a slick…",
-          "category": "Pitfall / Hard No",
-          "timestamp": "00:06:24",
-          "link": "https://www.youtube.com/watch?v=QBNPafDHXLE&t=384s",
-          "video_title": "6 Steps to Become a Freight Broker in 2026 (No Experience Needed)",
-          "author": "Matt Krause",
-          "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "A very different Market climate in today's market a balanced approach is what will set you up for success so now let's talk about…",
-          "category": "Legal / Deadline",
-          "timestamp": "00:08:23",
-          "link": "https://www.youtube.com/watch?v=QBNPafDHXLE&t=503s",
-          "video_title": "6 Steps to Become a Freight Broker in 2026 (No Experience Needed)",
-          "author": "Matt Krause",
-          "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "You see how there's all these data providers. Some of these I mentioned before like find email, right? So essentially Clay is allowing you…",
-          "category": "Pitfall / Hard No",
-          "timestamp": "00:06:14",
-          "link": "https://www.youtube.com/watch?v=6l8CThrSJEY&t=374s",
-          "video_title": "How to Get Unlimited Leads Using Clay Enrichment Waterfall | clay.com Tutorial",
-          "author": "AJ Cassata",
-          "verbatim_research_only": true
         }
       ],
       "statutes_and_forms": [
@@ -1163,35 +1163,35 @@
         "form the",
         "form a",
         "form your",
+        "form on",
         "form where",
         "form like",
-        "form on",
         "quiet title",
         "form with",
         "form in",
         "form so",
         "court order",
         "form as",
+        "Form uh",
         "form um",
         "form at",
         "form their",
-        "Form uh",
         "form which",
+        "form it",
         "Protection Act",
         "form below",
-        "form I",
-        "form it",
-        "form but",
         "form content",
+        "form I",
+        "form but",
         "form if",
         "Chapter 7",
         "form called",
         "form Commercial",
         "form here",
         "Chapter 13",
+        "form right",
         "form them",
-        "warranty deed",
-        "form right"
+        "warranty deed"
       ],
       "tools_and_portals": [
         "LinkedIn",
@@ -1239,9 +1239,9 @@
     {
       "topic_id": "contracts_and_compensation",
       "title": "Fee Agreements, Assignments of Interest & Escrow Disbursement",
-      "video_count": 3170,
-      "tip_count": 5670,
-      "channel_count": 2012,
+      "video_count": 3291,
+      "tip_count": 5875,
+      "channel_count": 2064,
       "top_sources": [
         {
           "video_id": "VBvaq5etzV4",
@@ -1407,8 +1407,8 @@
         "form with",
         "form so",
         "form your",
-        "form like",
         "form in",
+        "form like",
         "court order",
         "form where",
         "form as",
@@ -1418,8 +1418,8 @@
         "Chapter 7",
         "form it",
         "form their",
-        "form I",
         "Form uh",
+        "form I",
         "letters of administration",
         "form which",
         "form um",
@@ -1480,9 +1480,9 @@
     {
       "topic_id": "statutory_caps_and_licensing",
       "title": "State Fee Caps, Waiting Periods, PI Licensing & UPL Rules",
-      "video_count": 3393,
-      "tip_count": 3494,
-      "channel_count": 2116,
+      "video_count": 3532,
+      "tip_count": 3617,
+      "channel_count": 2177,
       "top_sources": [
         {
           "video_id": "ttoT3V6duzU",
@@ -1638,24 +1638,24 @@
         "form and",
         "form that",
         "form to",
-        "form for",
         "form is",
+        "form for",
         "form the",
         "form you",
         "form or",
         "form a",
         "form on",
         "form your",
-        "form in",
         "court order",
+        "form in",
+        "form with",
         "form where",
         "form so",
-        "form with",
         "form like",
         "quiet title",
         "form below",
-        "Chapter 7",
         "form it",
+        "Chapter 7",
         "form their",
         "Form uh",
         "letters of administration",
@@ -1663,11 +1663,11 @@
         "form as",
         "form I",
         "form at",
+        "Protection Act",
         "form but",
         "form um",
         "form we",
         "form which",
-        "Protection Act",
         "form Commercial",
         "form if",
         "form here",
@@ -1721,9 +1721,9 @@
     {
       "topic_id": "automation_and_small_team_ops",
       "title": "Docket Automation, AI Abstracting & Small-Team Operations",
-      "video_count": 2851,
-      "tip_count": 7623,
-      "channel_count": 1903,
+      "video_count": 2962,
+      "tip_count": 7940,
+      "channel_count": 1952,
       "top_sources": [
         {
           "video_id": "zqtx1Soeq5E",
@@ -1876,14 +1876,14 @@
       ],
       "statutes_and_forms": [
         "form and",
-        "form that",
         "form of",
+        "form that",
         "form for",
         "form to",
         "form is",
         "form the",
-        "form or",
         "form you",
+        "form or",
         "form a",
         "form so",
         "form with",
@@ -1968,9 +1968,9 @@
       "headline": "Heir location is paid on contingency, never on up-front fees.",
       "summary": "Across the corpus, operators converge on a pure contingency model: the heir pays nothing out of pocket, the locator advances all research cost, and the fee is a negotiated percentage released only when the estate or state agency actually disburses funds. Charging an heir an advance fee is treated as the single clearest marker of a predatory or unlicensed operator.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 2090,
-      "video_count": 3155,
-      "corroborating_tip_count": 6370,
+      "channel_count": 2156,
+      "video_count": 3310,
+      "corroborating_tip_count": 6692,
       "supporting_links": [
         {
           "video_title": "State Funds Tutorial New Mexico: How To Register As A Property Locator In The State Of New Mexico.",
@@ -2018,9 +2018,9 @@
       "headline": "Fresh county probate and intestate dockets outperform purchased lead lists.",
       "summary": "Practitioners consistently build pipeline from newly filed probate and administration matters pulled directly from county clerk portals rather than resold lists. Filings naming an administrator but no located heirs, and estates sitting open past the local notice period, are the recurring high-value signal.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 1896,
-      "video_count": 3052,
-      "corroborating_tip_count": 6520,
+      "channel_count": 1956,
+      "video_count": 3177,
+      "corroborating_tip_count": 6630,
       "supporting_links": [
         {
           "video_title": "Before Your Next Land Deal: 7 Things to Know - REWBCON 2022 with Seth Williams",
@@ -2068,9 +2068,9 @@
       "headline": "State unclaimed-property and escheat databases supply the repeatable volume.",
       "summary": "Every state treasury or controller maintains a searchable unclaimed-property register, and the consensus workflow is to cross-reference deceased owners there against probate filings. Volume comes from systematic register sweeps; size comes from the rarer escheated estate, surplus-funds and safe-deposit categories.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 558,
-      "video_count": 859,
-      "corroborating_tip_count": 1911,
+      "channel_count": 573,
+      "video_count": 879,
+      "corroborating_tip_count": 1927,
       "supporting_links": [
         {
           "video_title": "How To Claim Surplus Funds From Foreclosure",
@@ -2118,9 +2118,9 @@
       "headline": "The deliverable is a document-backed kinship chain, not a name on a list.",
       "summary": "Operators agree that claims succeed or fail on the evidentiary chain: each generational link supported by vital records, each branch mapped per stirpes, and every gap closed before contact. Tree hints from consumer genealogy sites are treated as leads to verify, never as proof to submit.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 2123,
-      "video_count": 3275,
-      "corroborating_tip_count": 3974,
+      "channel_count": 2189,
+      "video_count": 3428,
+      "corroborating_tip_count": 4394,
       "supporting_links": [
         {
           "video_title": "Understanding Aircraft Brokerage: Standards, Risk, and Trust",
@@ -2168,10 +2168,16 @@
       "headline": "Verify identity before contact, then lead with restraint, not the dollar figure.",
       "summary": "The recurring outreach pattern is: skip trace to a confirmed current address and phone, open by letter or a short calm call, state that funds may be owed to the family without naming an amount, and give the heir a way to independently verify the operator. Pressure tactics and inflated figures are consistently reported as the fastest way to lose a signed file.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 1455,
-      "video_count": 2258,
-      "corroborating_tip_count": 1151,
+      "channel_count": 1490,
+      "video_count": 2347,
+      "corroborating_tip_count": 1257,
       "supporting_links": [
+        {
+          "video_title": "How to Become a Freight Agent in 2027 (No Experience Needed)",
+          "author": "Matt Krause",
+          "timestamp": "00:07:29",
+          "link": "https://www.youtube.com/watch?v=pXxS5GOHXZE&t=449s"
+        },
         {
           "video_title": "How to Get Unlimited Leads Using Clay Enrichment Waterfall | clay.com Tutorial",
           "author": "AJ Cassata",
@@ -2185,28 +2191,22 @@
           "link": "https://www.youtube.com/watch?v=ES6y4iF-bBM&t=146s"
         },
         {
+          "video_title": "What I Learned from 23,000 Cold Calls as a Freight Broker (My Script Included)",
+          "author": "Matt Krause",
+          "timestamp": "00:05:26",
+          "link": "https://www.youtube.com/watch?v=LNT0OaH1J8s&t=326s"
+        },
+        {
+          "video_title": "Full 2026 Freight Broker Training To Go From $0-$1,000,000",
+          "author": "Matt Krause",
+          "timestamp": "00:20:55",
+          "link": "https://www.youtube.com/watch?v=bP4Dnpd58PE&t=1255s"
+        },
+        {
           "video_title": "State Funds Tutorial Virtual Assistants: Top 3 Hiring Mistakes While Growing Your Surplus Business",
           "author": "Surplus Funds 101",
           "timestamp": "00:05:55",
           "link": "https://www.youtube.com/watch?v=ASO1JUOWTjA&t=355s"
-        },
-        {
-          "video_title": "State Funds Tutorial: First Steps For Somebody Brand New To Unclaimed Funds Business.",
-          "author": "Surplus Funds 101",
-          "timestamp": "00:12:28",
-          "link": "https://www.youtube.com/watch?v=PGvJEv9Y_Go&t=748s"
-        },
-        {
-          "video_title": "6 Steps to Become a Freight Broker in 2026 (No Experience Needed)",
-          "author": "Matt Krause",
-          "timestamp": "00:00:48",
-          "link": "https://www.youtube.com/watch?v=QBNPafDHXLE&t=48s"
-        },
-        {
-          "video_title": "Parasite Reddit SEO: Find Google Traffic With This Workflow",
-          "author": "Rankso SEO",
-          "timestamp": "00:18:18",
-          "link": "https://www.youtube.com/watch?v=gGfsCEiyizs&t=1098s"
         }
       ],
       "caveat": "Consensus among the sampled operators — not legal advice and not a substitute for the governing statute in the reader's jurisdiction."
@@ -2218,9 +2218,9 @@
       "headline": "No work proceeds without a signed fee agreement and third-party escrow.",
       "summary": "Consensus practice is a plain-language, notarized or e-signed agreement that names the estate, states the percentage, discloses the heir's right to claim independently, and routes funds through attorney trust or licensed escrow so the locator never holds the heir's money directly.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 2012,
-      "video_count": 3170,
-      "corroborating_tip_count": 5670,
+      "channel_count": 2064,
+      "video_count": 3291,
+      "corroborating_tip_count": 5875,
       "supporting_links": [
         {
           "video_title": "Topical Authority With Koray Tuğberk GÜBÜR",
@@ -2268,9 +2268,9 @@
       "headline": "Fee caps, waiting periods and licensing are decided per state, before the first call.",
       "summary": "Operators repeatedly stress that the governing rules — percentage caps on unclaimed-property recoveries, mandatory waiting periods after escheat or sale, private-investigator licensing triggers, and the line against practicing law — vary by jurisdiction and must be read in the local statute for every file rather than generalized from another state.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 2116,
-      "video_count": 3393,
-      "corroborating_tip_count": 3494,
+      "channel_count": 2177,
+      "video_count": 3532,
+      "corroborating_tip_count": 3617,
       "supporting_links": [
         {
           "video_title": "How To Start Wholesale Real Estate In 2027 (15hrs/wk)!",
@@ -2318,9 +2318,9 @@
       "headline": "Automated docket monitoring plus AI abstracting lets one or two people run real volume.",
       "summary": "The operational consensus is to automate the repetitive layer — scheduled docket and register pulls, structured intake into a sheet or CRM, AI-assisted abstracting of filings — while keeping genealogy judgment, heir contact and contract execution human. That split is what keeps a two-person shop competitive against staffed firms.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 1903,
-      "video_count": 2851,
-      "corroborating_tip_count": 7623,
+      "channel_count": 1952,
+      "video_count": 2962,
+      "corroborating_tip_count": 7940,
       "supporting_links": [
         {
           "video_title": "How To Find Comps For Land",
@@ -2746,8 +2746,8 @@
         "asset_id": "youtube_thumbnails",
         "asset": "https://i.ytimg.com/vi/<video_id>/*.jpg",
         "asset_type": "youtube_thumbnail_image",
-        "source": "YouTube CDN thumbnails for the 4009 corpus videos",
-        "instance_count": 4009,
+        "source": "YouTube CDN thumbnails for the 4184 corpus videos",
+        "instance_count": 4184,
         "instances": [
           {
             "video_id": "9Q4qYeK5DTg",
@@ -30811,6 +30811,1231 @@
             "author": "Tax Sale Support",
             "thumbnail_url": "https://i.ytimg.com/vi/sH-Esa2i1zE/hqdefault.jpg",
             "source_url": "https://www.youtube.com/watch?v=sH-Esa2i1zE"
+          },
+          {
+            "video_id": "bP4Dnpd58PE",
+            "title": "Full 2026 Freight Broker Training To Go From $0-$1,000,000",
+            "author": "Matt Krause",
+            "thumbnail_url": "https://i.ytimg.com/vi/bP4Dnpd58PE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=bP4Dnpd58PE"
+          },
+          {
+            "video_id": "afV63okbAMs",
+            "title": "Full 2027 Freight Broker Training (Start to First Load)",
+            "author": "Matt Krause",
+            "thumbnail_url": "https://i.ytimg.com/vi/afV63okbAMs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=afV63okbAMs"
+          },
+          {
+            "video_id": "M6mVy3VEVoY",
+            "title": "Freight Broker Secrets REVEALED: Victor Mason’s Blueprint for Work From Home Trucking Success",
+            "author": "TunedinTony",
+            "thumbnail_url": "https://i.ytimg.com/vi/M6mVy3VEVoY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=M6mVy3VEVoY"
+          },
+          {
+            "video_id": "oytUZVvyF80",
+            "title": "Freight Broker Reveals How Truckers Can Make More Money in 2026",
+            "author": "Entre Mike",
+            "thumbnail_url": "https://i.ytimg.com/vi/oytUZVvyF80/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=oytUZVvyF80"
+          },
+          {
+            "video_id": "xahcxGx0b30",
+            "title": "How to Become a Freight Broker in 2026 What I Wish I Knew After 9 Months of Rejection",
+            "author": "Drew Taylor",
+            "thumbnail_url": "https://i.ytimg.com/vi/xahcxGx0b30/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=xahcxGx0b30"
+          },
+          {
+            "video_id": "An8HIad4rIg",
+            "title": "The Economics of Owning a Freight Brokerage",
+            "author": "MillionsExplained",
+            "thumbnail_url": "https://i.ytimg.com/vi/An8HIad4rIg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=An8HIad4rIg"
+          },
+          {
+            "video_id": "Lpq9AHrz7nQ",
+            "title": "How Do Freight Brokers Get Paid? From Invoicing to Profit. 💰🔥",
+            "author": "FreightBrokers",
+            "thumbnail_url": "https://i.ytimg.com/vi/Lpq9AHrz7nQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Lpq9AHrz7nQ"
+          },
+          {
+            "video_id": "rMpa5pbBWtI",
+            "title": "How Freight Brokers Quote Shippers - Explained",
+            "author": "ShipLeague",
+            "thumbnail_url": "https://i.ytimg.com/vi/rMpa5pbBWtI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=rMpa5pbBWtI"
+          },
+          {
+            "video_id": "edDHTJiH5HM",
+            "title": "Freight Pricing AI - Earn While You Learn & Build Your Freight Brokerage Business",
+            "author": "Freight Broker 911",
+            "thumbnail_url": "https://i.ytimg.com/vi/edDHTJiH5HM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=edDHTJiH5HM"
+          },
+          {
+            "video_id": "XtDq2J8HLqY",
+            "title": "Freight Brokerage Business Planning",
+            "author": "Freight 360",
+            "thumbnail_url": "https://i.ytimg.com/vi/XtDq2J8HLqY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=XtDq2J8HLqY"
+          },
+          {
+            "video_id": "9Yk3-F4z_xs",
+            "title": "Why Start A Freight Broker Business vs Other Business Models 🔥💰",
+            "author": "FreightBrokers",
+            "thumbnail_url": "https://i.ytimg.com/vi/9Yk3-F4z_xs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=9Yk3-F4z_xs"
+          },
+          {
+            "video_id": "1YErjMy4aFQ",
+            "title": "$75,000 Surety Bond Explained | BMC-84 vs BMC-85 for Freight Brokers (FMCSA Rules 2026)",
+            "author": "Truckadium",
+            "thumbnail_url": "https://i.ytimg.com/vi/1YErjMy4aFQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=1YErjMy4aFQ"
+          },
+          {
+            "video_id": "eEOluDo3mZM",
+            "title": "Freight Brokering | Top 6 Surety Bond Companies",
+            "author": "StillHawginTV",
+            "thumbnail_url": "https://i.ytimg.com/vi/eEOluDo3mZM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=eEOluDo3mZM"
+          },
+          {
+            "video_id": "fG1DJXPE2jk",
+            "title": "BMC 84 Surety Bond | Is a Freight Broker Bond Requirement (BMC-84)",
+            "author": "FMCSA REGISTRATION dot com",
+            "thumbnail_url": "https://i.ytimg.com/vi/fG1DJXPE2jk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=fG1DJXPE2jk"
+          },
+          {
+            "video_id": "s-qzw5ZxjmU",
+            "title": "FINALLY: FMCSA Targets Freight Brokers With New Rule",
+            "author": "ThinkFreight",
+            "thumbnail_url": "https://i.ytimg.com/vi/s-qzw5ZxjmU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=s-qzw5ZxjmU"
+          },
+          {
+            "video_id": "yiDO9s6ArZU",
+            "title": "Freight Broker Surety Bond in Simple Terms 🤔",
+            "author": "FreightBrokers",
+            "thumbnail_url": "https://i.ytimg.com/vi/yiDO9s6ArZU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=yiDO9s6ArZU"
+          },
+          {
+            "video_id": "bOzO119lSlI",
+            "title": "Carriers Lose! FMCSA Broker Bond change",
+            "author": "ShipLeague",
+            "thumbnail_url": "https://i.ytimg.com/vi/bOzO119lSlI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=bOzO119lSlI"
+          },
+          {
+            "video_id": "HPAThSeqX3c",
+            "title": "Apply for Freight Broker Authority | Easy Steps To Get Your Freight Broker License",
+            "author": "FMCSA REGISTRATION dot com",
+            "thumbnail_url": "https://i.ytimg.com/vi/HPAThSeqX3c/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=HPAThSeqX3c"
+          },
+          {
+            "video_id": "lzC0i5OReRU",
+            "title": "What You Need To Know About The Freight Broker Bond...",
+            "author": "Brandon Scott",
+            "thumbnail_url": "https://i.ytimg.com/vi/lzC0i5OReRU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=lzC0i5OReRU"
+          },
+          {
+            "video_id": "tjwBtk3RgWI",
+            "title": "Freight Broker $75,000 Surety Bond Explained in Punjabi | How to Get It at Low Cost",
+            "author": "ConnectWithKamal",
+            "thumbnail_url": "https://i.ytimg.com/vi/tjwBtk3RgWI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=tjwBtk3RgWI"
+          },
+          {
+            "video_id": "_6EAOmYcoCY",
+            "title": "Broker Authority | Learn about Freight Broker authority Success",
+            "author": "FMCSA REGISTRATION dot com",
+            "thumbnail_url": "https://i.ytimg.com/vi/_6EAOmYcoCY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=_6EAOmYcoCY"
+          },
+          {
+            "video_id": "tkM7CbVBoC0",
+            "title": "Freight Broker Bond Cost Explained With Real Examples",
+            "author": "Surety Bonds Direct",
+            "thumbnail_url": "https://i.ytimg.com/vi/tkM7CbVBoC0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=tkM7CbVBoC0"
+          },
+          {
+            "video_id": "BCLv7SfCxIo",
+            "title": "LIVE Freight Broker Training with Dennis Brown",
+            "author": "FreightBrokers",
+            "thumbnail_url": "https://i.ytimg.com/vi/BCLv7SfCxIo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=BCLv7SfCxIo"
+          },
+          {
+            "video_id": "i2KiR_LCj-Q",
+            "title": "Freight Broker Bootcamp Reviews (Dennis Brown) | Can you make money with this?",
+            "author": "Review By Maverick",
+            "thumbnail_url": "https://i.ytimg.com/vi/i2KiR_LCj-Q/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=i2KiR_LCj-Q"
+          },
+          {
+            "video_id": "Huke-ZINzYA",
+            "title": "Freight Broker Training - How to Become A Freight Broker in 7 Simple Steps [Step by Step]",
+            "author": "FreightBrokers",
+            "thumbnail_url": "https://i.ytimg.com/vi/Huke-ZINzYA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Huke-ZINzYA"
+          },
+          {
+            "video_id": "EhqxL4P0ZTc",
+            "title": "Freight Broker Boot Camp Dennis Brown reviews SCAM OR LEGIT?",
+            "author": "Valerie Robfogel",
+            "thumbnail_url": "https://i.ytimg.com/vi/EhqxL4P0ZTc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=EhqxL4P0ZTc"
+          },
+          {
+            "video_id": "yGyxzLrh7yE",
+            "title": "How I’d Become a Freight Broker in 2026 If I Started Over Today [You Might Be Shocked] 😳",
+            "author": "FreightBrokers",
+            "thumbnail_url": "https://i.ytimg.com/vi/yGyxzLrh7yE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=yGyxzLrh7yE"
+          },
+          {
+            "video_id": "57bmm_ipBSY",
+            "title": "How to Get Your First Shipper as a NEW Freight Broker or Freight Agent",
+            "author": "FreightBrokers",
+            "thumbnail_url": "https://i.ytimg.com/vi/57bmm_ipBSY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=57bmm_ipBSY"
+          },
+          {
+            "video_id": "kc6-g1EZ0Fk",
+            "title": "You're Just 1 Shipper Away! [LIVE Freight Broker Training]",
+            "author": "FreightBrokers",
+            "thumbnail_url": "https://i.ytimg.com/vi/kc6-g1EZ0Fk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=kc6-g1EZ0Fk"
+          },
+          {
+            "video_id": "dciVQpw-BWM",
+            "title": "Freight Broker / Agent LIVE Q&A with Dennis Brown 1/12/25 📱",
+            "author": "FreightBrokers",
+            "thumbnail_url": "https://i.ytimg.com/vi/dciVQpw-BWM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=dciVQpw-BWM"
+          },
+          {
+            "video_id": "UhCy0ncTrTI",
+            "title": "Freight Broker / Agent LIVE Q&A with Dennis Brown 1/12/25",
+            "author": "FreightBrokers",
+            "thumbnail_url": "https://i.ytimg.com/vi/UhCy0ncTrTI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=UhCy0ncTrTI"
+          },
+          {
+            "video_id": "j9lUdJynzFA",
+            "title": "Freight Broker / Agent LIVE Q&A with Dennis Brown 1/19/25",
+            "author": "FreightBrokers",
+            "thumbnail_url": "https://i.ytimg.com/vi/j9lUdJynzFA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=j9lUdJynzFA"
+          },
+          {
+            "video_id": "S0a8FejhkCA",
+            "title": "Freight Broker / Agent LIVE Q&A with Dennis Brown 1/19/25 📱",
+            "author": "FreightBrokers",
+            "thumbnail_url": "https://i.ytimg.com/vi/S0a8FejhkCA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=S0a8FejhkCA"
+          },
+          {
+            "video_id": "90xG4lQaA6Q",
+            "title": "LIVE Freight Broker Cold Calling Training - Freight Broker Boot Camp with Dennis Brown",
+            "author": "FreightBrokers",
+            "thumbnail_url": "https://i.ytimg.com/vi/90xG4lQaA6Q/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=90xG4lQaA6Q"
+          },
+          {
+            "video_id": "JTrml3aFNrY",
+            "title": "Freight Broker Training: How to Find Shippers as a Freight Broker [Untapped Source]",
+            "author": "FreightBrokers",
+            "thumbnail_url": "https://i.ytimg.com/vi/JTrml3aFNrY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=JTrml3aFNrY"
+          },
+          {
+            "video_id": "3NBT5XIIshA",
+            "title": "Freight Broker Boot Camp LIVE with Dennis Brown 8-4-25",
+            "author": "FreightBrokers",
+            "thumbnail_url": "https://i.ytimg.com/vi/3NBT5XIIshA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=3NBT5XIIshA"
+          },
+          {
+            "video_id": "J9NA2KM5qzE",
+            "title": "Freight Broker LIVE Q & A with Dennis Brown 2/23/26",
+            "author": "FreightBrokers",
+            "thumbnail_url": "https://i.ytimg.com/vi/J9NA2KM5qzE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=J9NA2KM5qzE"
+          },
+          {
+            "video_id": "HeiPAKWzLsI",
+            "title": "How to Find Shippers As A Freight Broker | 30,000 Shipper Leads For FREE! 🔥🚀",
+            "author": "FreightBrokers",
+            "thumbnail_url": "https://i.ytimg.com/vi/HeiPAKWzLsI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=HeiPAKWzLsI"
+          },
+          {
+            "video_id": "b-vDBH9GpuA",
+            "title": "Detecting Double Brokering with Highway",
+            "author": "Highway",
+            "thumbnail_url": "https://i.ytimg.com/vi/b-vDBH9GpuA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=b-vDBH9GpuA"
+          },
+          {
+            "video_id": "J96nZa6x_Ek",
+            "title": "Fraud Prevention Part 1 Double Brokering Evolution",
+            "author": "Double Broker Bounty Hunter",
+            "thumbnail_url": "https://i.ytimg.com/vi/J96nZa6x_Ek/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=J96nZa6x_Ek"
+          },
+          {
+            "video_id": "gnxgKnnz6Jw",
+            "title": "How to Identify Double Broker's | Freight 360",
+            "author": "Freight 360",
+            "thumbnail_url": "https://i.ytimg.com/vi/gnxgKnnz6Jw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=gnxgKnnz6Jw"
+          },
+          {
+            "video_id": "aSSPaOdn5ZI",
+            "title": "DBBH Fraud Prevention Truckstop MFA and RMIS Setups",
+            "author": "Double Broker Bounty Hunter",
+            "thumbnail_url": "https://i.ytimg.com/vi/aSSPaOdn5ZI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=aSSPaOdn5ZI"
+          },
+          {
+            "video_id": "3WxrmhqpsyY",
+            "title": "Transportation Fraud Prevention Series 2.0 - Part 1 - Basics of Double Brokering",
+            "author": "Double Broker Bounty Hunter",
+            "thumbnail_url": "https://i.ytimg.com/vi/3WxrmhqpsyY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=3WxrmhqpsyY"
+          },
+          {
+            "video_id": "sKKld4Wdyqg",
+            "title": "Detecting double brokering and fraud",
+            "author": "Highway",
+            "thumbnail_url": "https://i.ytimg.com/vi/sKKld4Wdyqg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=sKKld4Wdyqg"
+          },
+          {
+            "video_id": "u2IgQ87ZELQ",
+            "title": "Double brokering & freight fraud: How new laws will protect carriers",
+            "author": "Commercial Carrier Journal",
+            "thumbnail_url": "https://i.ytimg.com/vi/u2IgQ87ZELQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=u2IgQ87ZELQ"
+          },
+          {
+            "video_id": "3dI5z6SHDPc",
+            "title": "DBBH's Fraud Prevention Series 2.0 - Part 3 - Warning Signs Double Brokers",
+            "author": "Double Broker Bounty Hunter",
+            "thumbnail_url": "https://i.ytimg.com/vi/3dI5z6SHDPc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=3dI5z6SHDPc"
+          },
+          {
+            "video_id": "uGu6NcZkt28",
+            "title": "Secure Your Freight: Strategies to Prevent Double Brokering Scams",
+            "author": "Freight 360",
+            "thumbnail_url": "https://i.ytimg.com/vi/uGu6NcZkt28/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=uGu6NcZkt28"
+          },
+          {
+            "video_id": "FbcZES6peVA",
+            "title": "How Highway is Fighting Double Brokerage & Cargo Theft in Trucking (2026 Update)",
+            "author": "Keep Loadings",
+            "thumbnail_url": "https://i.ytimg.com/vi/FbcZES6peVA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=FbcZES6peVA"
+          },
+          {
+            "video_id": "jnoJihiGSEA",
+            "title": "Fighting double-brokering fraud: Attorney Hank Seaton on prevention, ways to elevate the issue",
+            "author": "Overdrive",
+            "thumbnail_url": "https://i.ytimg.com/vi/jnoJihiGSEA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=jnoJihiGSEA"
+          },
+          {
+            "video_id": "9d907d-1DzE",
+            "title": "5 Ways to Avoid Double-Brokering Scams: Fraud Prevention Friday | Truckstop",
+            "author": "Truckstop . com",
+            "thumbnail_url": "https://i.ytimg.com/vi/9d907d-1DzE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=9d907d-1DzE"
+          },
+          {
+            "video_id": "uT4ymtB7YcA",
+            "title": "Identifying Double Brokering! (Fraudulent Activities Awareness for Brokers, Carriers & Shippers)",
+            "author": "Bridge Logistics",
+            "thumbnail_url": "https://i.ytimg.com/vi/uT4ymtB7YcA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=uT4ymtB7YcA"
+          },
+          {
+            "video_id": "5dP6IV7sJW0",
+            "title": "Trucking Scams & Fraud Prevention How to Avoid Double Brokering Pitfalls",
+            "author": "Truck Driver Nation",
+            "thumbnail_url": "https://i.ytimg.com/vi/5dP6IV7sJW0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=5dP6IV7sJW0"
+          },
+          {
+            "video_id": "b2-QjzInPJo",
+            "title": "Spot vs Contract Rates [Which Saves You More Money?]",
+            "author": "Anderson Trucking Service",
+            "thumbnail_url": "https://i.ytimg.com/vi/b2-QjzInPJo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=b2-QjzInPJo"
+          },
+          {
+            "video_id": "ZlWGSiCM45c",
+            "title": "Trucking Market Update: Rejection Rates, Contract vs Spot, and Where To Get High Rates Per Mile",
+            "author": "Trucking Made Successful",
+            "thumbnail_url": "https://i.ytimg.com/vi/ZlWGSiCM45c/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ZlWGSiCM45c"
+          },
+          {
+            "video_id": "5azQO8-P020",
+            "title": "Spot vs Contract: The Strategy That Actually Makes Money",
+            "author": "Dispatch Trucks",
+            "thumbnail_url": "https://i.ytimg.com/vi/5azQO8-P020/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=5azQO8-P020"
+          },
+          {
+            "video_id": "fwtKyVFD-8o",
+            "title": "These Lanes Are On Fire Right Now | Trucking Market",
+            "author": "Bobby Loads",
+            "thumbnail_url": "https://i.ytimg.com/vi/fwtKyVFD-8o/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=fwtKyVFD-8o"
+          },
+          {
+            "video_id": "s-t9YGcOJ8U",
+            "title": "DAT vs Truckstop The Real Difference Nobody Talks About",
+            "author": "Bobby Loads",
+            "thumbnail_url": "https://i.ytimg.com/vi/s-t9YGcOJ8U/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=s-t9YGcOJ8U"
+          },
+          {
+            "video_id": "wOpAqd5AALo",
+            "title": "Mastering Trucking Lane Rates | DAT Load Board Tutorial for Maximum Profit",
+            "author": "Tony's Topics",
+            "thumbnail_url": "https://i.ytimg.com/vi/wOpAqd5AALo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=wOpAqd5AALo"
+          },
+          {
+            "video_id": "Gz22R2KL_e4",
+            "title": "DAT Trucking market update which lanes are making money right now",
+            "author": "Bobby Loads",
+            "thumbnail_url": "https://i.ytimg.com/vi/Gz22R2KL_e4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Gz22R2KL_e4"
+          },
+          {
+            "video_id": "bEWh0t-c_5o",
+            "title": "LoadBoard Video September 23 2026 Truck-Stop VS DAT",
+            "author": "Cole Fairbrook",
+            "thumbnail_url": "https://i.ytimg.com/vi/bEWh0t-c_5o/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=bEWh0t-c_5o"
+          },
+          {
+            "video_id": "l6yFrAoUZ2M",
+            "title": "Trucking Market Update: What's Happening On The Spot Market?",
+            "author": "Trucking Made Successful",
+            "thumbnail_url": "https://i.ytimg.com/vi/l6yFrAoUZ2M/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=l6yFrAoUZ2M"
+          },
+          {
+            "video_id": "ocF4fny2uH8",
+            "title": "Dat board vs. Internet Truckstop",
+            "author": "Contract Fortune",
+            "thumbnail_url": "https://i.ytimg.com/vi/ocF4fny2uH8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ocF4fny2uH8"
+          },
+          {
+            "video_id": "fzBhki-xaDc",
+            "title": "Trucking Market Update: Best Lanes to Run in 2026",
+            "author": "Bobby Loads",
+            "thumbnail_url": "https://i.ytimg.com/vi/fzBhki-xaDc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=fzBhki-xaDc"
+          },
+          {
+            "video_id": "2vUXF3RIbqg",
+            "title": "These Hot Lanes Are Printing Money Right Now | Trucking Market Update",
+            "author": "Bobby Loads",
+            "thumbnail_url": "https://i.ytimg.com/vi/2vUXF3RIbqg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=2vUXF3RIbqg"
+          },
+          {
+            "video_id": "5cyp2cCCUiA",
+            "title": "$6 Diesel and Missing Trucks: The Q4 2026 Freight Market Explained",
+            "author": "Logistics Today",
+            "thumbnail_url": "https://i.ytimg.com/vi/5cyp2cCCUiA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=5cyp2cCCUiA"
+          },
+          {
+            "video_id": "MDlMmII7ZrY",
+            "title": "🔥 Which Trucking Lanes Are Paying the Most Right Now?",
+            "author": "Bobby Loads",
+            "thumbnail_url": "https://i.ytimg.com/vi/MDlMmII7ZrY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=MDlMmII7ZrY"
+          },
+          {
+            "video_id": "M0KZ3BZctSQ",
+            "title": "Trucking Market Update: Spot Market: Flatbed, Reefer, Van, Hot Shot, Specialized",
+            "author": "Trucking Made Successful",
+            "thumbnail_url": "https://i.ytimg.com/vi/M0KZ3BZctSQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=M0KZ3BZctSQ"
+          },
+          {
+            "video_id": "6qAGWwbnmxA",
+            "title": "Contract freight all miles 2.25 or wait for spot market rates to get better?",
+            "author": "Guy in a Truck",
+            "thumbnail_url": "https://i.ytimg.com/vi/6qAGWwbnmxA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=6qAGWwbnmxA"
+          },
+          {
+            "video_id": "iJE2rZFL57E",
+            "title": "Quick Pay vs Freight Factoring",
+            "author": "Porter Capital",
+            "thumbnail_url": "https://i.ytimg.com/vi/iJE2rZFL57E/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=iJE2rZFL57E"
+          },
+          {
+            "video_id": "K9UPJJr_uzQ",
+            "title": "Trucking: What’s the Difference Between QuickPay & Factoring",
+            "author": "Trucking From Scratch",
+            "thumbnail_url": "https://i.ytimg.com/vi/K9UPJJr_uzQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=K9UPJJr_uzQ"
+          },
+          {
+            "video_id": "dTOcCujNdaw",
+            "title": "Freight Invoice Factoring vs Quickpay with Brokers",
+            "author": "Bumble Bee Dispatch",
+            "thumbnail_url": "https://i.ytimg.com/vi/dTOcCujNdaw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=dTOcCujNdaw"
+          },
+          {
+            "video_id": "R4i90VgyHqk",
+            "title": "How Working With A Truck Factoring Company Gets You Paid Fast!",
+            "author": "Porter Capital",
+            "thumbnail_url": "https://i.ytimg.com/vi/R4i90VgyHqk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=R4i90VgyHqk"
+          },
+          {
+            "video_id": "i6KVZJUOBqs",
+            "title": "TRUCKING BUSINESS: HOW TO GET PAID? FACTORING SERVICE, COD, QUICK PAY & INVOICING THE BROKER!!!",
+            "author": "Brandon Manney The Mentor",
+            "thumbnail_url": "https://i.ytimg.com/vi/i6KVZJUOBqs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=i6KVZJUOBqs"
+          },
+          {
+            "video_id": "_uTvz6Ay4oQ",
+            "title": "49 CFR 371.3 this is a law that all freight brokers are scared of. Let’s educate all truckers",
+            "author": "CDL Shorty",
+            "thumbnail_url": "https://i.ytimg.com/vi/_uTvz6Ay4oQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=_uTvz6Ay4oQ"
+          },
+          {
+            "video_id": "GjctUTtklxE",
+            "title": "Broker Attorney Claims FMCSA Doesn’t Enforce 49 CFR §371.3",
+            "author": "Trucking Justice - Pontificator",
+            "thumbnail_url": "https://i.ytimg.com/vi/GjctUTtklxE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=GjctUTtklxE"
+          },
+          {
+            "video_id": "_7T74xDXmPk",
+            "title": "Let's Talk About CFR 371.3c and Why It's Time for a Refresh",
+            "author": "Freight 360",
+            "thumbnail_url": "https://i.ytimg.com/vi/_7T74xDXmPk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=_7T74xDXmPk"
+          },
+          {
+            "video_id": "a4BwE6nAs9k",
+            "title": "Broker Transparency - Opening up Broker Transaction Records to American Trucking Companies",
+            "author": "AFT Dispatch",
+            "thumbnail_url": "https://i.ytimg.com/vi/a4BwE6nAs9k/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=a4BwE6nAs9k"
+          },
+          {
+            "video_id": "9gNEc3GjPKA",
+            "title": "FMCSA Is Finally Taking On Broker Transparency",
+            "author": "thatDOTcop",
+            "thumbnail_url": "https://i.ytimg.com/vi/9gNEc3GjPKA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=9gNEc3GjPKA"
+          },
+          {
+            "video_id": "b64rVWfkAsc",
+            "title": "49 CFR 371: Broker Authority Insurance Minimums",
+            "author": "A3E ECOSYSTEM",
+            "thumbnail_url": "https://i.ytimg.com/vi/b64rVWfkAsc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=b64rVWfkAsc"
+          },
+          {
+            "video_id": "dFv317bclEU",
+            "title": "Freight Broker Transparency FMCSA Proposes New Rules",
+            "author": "Freight Master Resources",
+            "thumbnail_url": "https://i.ytimg.com/vi/dFv317bclEU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=dFv317bclEU"
+          },
+          {
+            "video_id": "WsoJiATaDqk",
+            "title": "FMCSA vs. Broker Transparency: Are Carriers Being Left in the Cold?",
+            "author": "Matt Krause",
+            "thumbnail_url": "https://i.ytimg.com/vi/WsoJiATaDqk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=WsoJiATaDqk"
+          },
+          {
+            "video_id": "U9PKl6-ulL4",
+            "title": "The Truth Behind Broker Transparency | Episode 272",
+            "author": "Freight 360",
+            "thumbnail_url": "https://i.ytimg.com/vi/U9PKl6-ulL4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=U9PKl6-ulL4"
+          },
+          {
+            "video_id": "UF-qDT9q1Bs",
+            "title": "Is FREIGHT BROKER TRANSPARENCY a Waste of Time?",
+            "author": "ET Transport",
+            "thumbnail_url": "https://i.ytimg.com/vi/UF-qDT9q1Bs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=UF-qDT9q1Bs"
+          },
+          {
+            "video_id": "FtL-2SOSFOU",
+            "title": "The Truth About Contingent Cargo Insurance in Trucking | Freight 360 Clips",
+            "author": "Freight 360",
+            "thumbnail_url": "https://i.ytimg.com/vi/FtL-2SOSFOU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=FtL-2SOSFOU"
+          },
+          {
+            "video_id": "Ig6sI3O1a14",
+            "title": "Cargo Claims Basics!",
+            "author": "LOGISTICS RISK EXPERT by Cassandra Gaines",
+            "thumbnail_url": "https://i.ytimg.com/vi/Ig6sI3O1a14/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Ig6sI3O1a14"
+          },
+          {
+            "video_id": "kAT7s21mZIE",
+            "title": "What is contingent cargo insurance? Everything you need to know",
+            "author": "Freight 360",
+            "thumbnail_url": "https://i.ytimg.com/vi/kAT7s21mZIE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=kAT7s21mZIE"
+          },
+          {
+            "video_id": "mJw3vbSaJbw",
+            "title": "Talking Freight (5) - What is the Carmack Amendment?",
+            "author": "Cerasis , now part of GlobalTranz",
+            "thumbnail_url": "https://i.ytimg.com/vi/mJw3vbSaJbw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=mJw3vbSaJbw"
+          },
+          {
+            "video_id": "pbs3U-vmpzM",
+            "title": "Carrier Limit of Liability: Filing a Claim",
+            "author": "Trade Risk Guaranty",
+            "thumbnail_url": "https://i.ytimg.com/vi/pbs3U-vmpzM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=pbs3U-vmpzM"
+          },
+          {
+            "video_id": "pRXH47gm66A",
+            "title": "Why Contingent Auto Pricing Breaks Down When You Act Like a Carrier",
+            "author": "B3FinalMile",
+            "thumbnail_url": "https://i.ytimg.com/vi/pRXH47gm66A/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=pRXH47gm66A"
+          },
+          {
+            "video_id": "id2FXFnynHM",
+            "title": "Cargo Claims Explained [What Your Broker Actually Does]",
+            "author": "Anderson Trucking Service",
+            "thumbnail_url": "https://i.ytimg.com/vi/id2FXFnynHM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=id2FXFnynHM"
+          },
+          {
+            "video_id": "qTcDOmwZMjI",
+            "title": "What Contingent Cargo Insurance Actually Covers | Episode 342",
+            "author": "Freight 360",
+            "thumbnail_url": "https://i.ytimg.com/vi/qTcDOmwZMjI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=qTcDOmwZMjI"
+          },
+          {
+            "video_id": "xQYjaYAvyms",
+            "title": "Cargo Insurance, Evidence and Doing What Your Policy Says | Jared Palmer",
+            "author": "CargoRex",
+            "thumbnail_url": "https://i.ytimg.com/vi/xQYjaYAvyms/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=xQYjaYAvyms"
+          },
+          {
+            "video_id": "x_fzUHiNELw",
+            "title": "Cargo insurance: what it pays, what it doesn't, and your limit",
+            "author": "MyFullCoverage",
+            "thumbnail_url": "https://i.ytimg.com/vi/x_fzUHiNELw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=x_fzUHiNELw"
+          },
+          {
+            "video_id": "NxIispBOkz8",
+            "title": "How to nail your next cargo claim against a shipping line",
+            "author": "Cargo Rant",
+            "thumbnail_url": "https://i.ytimg.com/vi/NxIispBOkz8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=NxIispBOkz8"
+          },
+          {
+            "video_id": "xxk_vmQarVo",
+            "title": "Explanation of the basic of Cargo Insurance！Insured Amount and how to calculate Insurance Premium",
+            "author": "【Logistics YouTuber】 IINO san",
+            "thumbnail_url": "https://i.ytimg.com/vi/xxk_vmQarVo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=xxk_vmQarVo"
+          },
+          {
+            "video_id": "rbmdGEpBKCI",
+            "title": "Cargo Insurance Explained: Why Carrier Liability Isn't Enough",
+            "author": "Cargolinked",
+            "thumbnail_url": "https://i.ytimg.com/vi/rbmdGEpBKCI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=rbmdGEpBKCI"
+          },
+          {
+            "video_id": "xPxwiwivMXE",
+            "title": "REEFER Freight: What Newbie Freight Brokers Need To Know",
+            "author": "Brandon Scott",
+            "thumbnail_url": "https://i.ytimg.com/vi/xPxwiwivMXE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=xPxwiwivMXE"
+          },
+          {
+            "video_id": "C4qKjPG0gcY",
+            "title": "🚛 Trucking Update: Dry Vans, Flatbeds & Reefers – Market Trends & Freight Rates 📉🚨",
+            "author": "Bobby Loads",
+            "thumbnail_url": "https://i.ytimg.com/vi/C4qKjPG0gcY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=C4qKjPG0gcY"
+          },
+          {
+            "video_id": "7kg1eMOTev8",
+            "title": "Unlocking Higher Pay in Oversized Freight",
+            "author": "Chief Carriers",
+            "thumbnail_url": "https://i.ytimg.com/vi/7kg1eMOTev8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=7kg1eMOTev8"
+          },
+          {
+            "video_id": "jxL6kaRxoEo",
+            "title": "Why I’m Done With Dry Van: Reefer vs Flatbed in 2026",
+            "author": "Bobby Loads",
+            "thumbnail_url": "https://i.ytimg.com/vi/jxL6kaRxoEo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=jxL6kaRxoEo"
+          },
+          {
+            "video_id": "Gx_gladG4ps",
+            "title": "2024 Freight Market: We're Looking at Flatbeds, Vans, and Reefers",
+            "author": "AFT Dispatch",
+            "thumbnail_url": "https://i.ytimg.com/vi/Gx_gladG4ps/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Gx_gladG4ps"
+          },
+          {
+            "video_id": "K5sqFMIL3IQ",
+            "title": "Booking reefer loads vs. flatbed loads vs. dry van loads",
+            "author": "Never Stop Trucking",
+            "thumbnail_url": "https://i.ytimg.com/vi/K5sqFMIL3IQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=K5sqFMIL3IQ"
+          },
+          {
+            "video_id": "LNT0OaH1J8s",
+            "title": "What I Learned from 23,000 Cold Calls as a Freight Broker (My Script Included)",
+            "author": "Matt Krause",
+            "thumbnail_url": "https://i.ytimg.com/vi/LNT0OaH1J8s/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=LNT0OaH1J8s"
+          },
+          {
+            "video_id": "r0gf3CDabxw",
+            "title": "The Freight Broker Cold Calling Script That Books Freight",
+            "author": "Matt Krause",
+            "thumbnail_url": "https://i.ytimg.com/vi/r0gf3CDabxw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=r0gf3CDabxw"
+          },
+          {
+            "video_id": "ImGEvDRAqaw",
+            "title": "Freight broker cold calling script. Everything you need to know!",
+            "author": "Freight 360",
+            "thumbnail_url": "https://i.ytimg.com/vi/ImGEvDRAqaw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ImGEvDRAqaw"
+          },
+          {
+            "video_id": "6W1ym-1hlkc",
+            "title": "Cold Call Script for Logistics and Freight Services",
+            "author": "Sales Scripter",
+            "thumbnail_url": "https://i.ytimg.com/vi/6W1ym-1hlkc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=6W1ym-1hlkc"
+          },
+          {
+            "video_id": "sagwYgVmVaE",
+            "title": "Example of a Cold Call for Logistics and Freight Services",
+            "author": "Sales Scripter",
+            "thumbnail_url": "https://i.ytimg.com/vi/sagwYgVmVaE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=sagwYgVmVaE"
+          },
+          {
+            "video_id": "6yGrLWuRK6g",
+            "title": "6 Step Cold Call Guide For Freight Brokers",
+            "author": "Matt Krause",
+            "thumbnail_url": "https://i.ytimg.com/vi/6yGrLWuRK6g/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=6yGrLWuRK6g"
+          },
+          {
+            "video_id": "gwNcz_V8JZ0",
+            "title": "Freight Broker Sales Cold Calling: Unbeatable Techniques",
+            "author": "eCarrierCheck",
+            "thumbnail_url": "https://i.ytimg.com/vi/gwNcz_V8JZ0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=gwNcz_V8JZ0"
+          },
+          {
+            "video_id": "-_16MS3HWhA",
+            "title": "Freight Broker Cold Calling Script that Gets Your Prospects Attention! [Free Download]",
+            "author": "FreightBrokers",
+            "thumbnail_url": "https://i.ytimg.com/vi/-_16MS3HWhA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=-_16MS3HWhA"
+          },
+          {
+            "video_id": "knW5LzcUJIw",
+            "title": "Freight Broker Cold Calling Script: Handle This Objection 📞",
+            "author": "FreightBrokers",
+            "thumbnail_url": "https://i.ytimg.com/vi/knW5LzcUJIw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=knW5LzcUJIw"
+          },
+          {
+            "video_id": "ZG3bMHTCx1Y",
+            "title": "11 Minutes of Freight Broker Sales Training to Explode Your Sales in 2026",
+            "author": "Matt Krause",
+            "thumbnail_url": "https://i.ytimg.com/vi/ZG3bMHTCx1Y/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ZG3bMHTCx1Y"
+          },
+          {
+            "video_id": "AWq6iXM53f8",
+            "title": "How to Make A Cold Call That Blows Up Your Brokerage",
+            "author": "Matt Krause",
+            "thumbnail_url": "https://i.ytimg.com/vi/AWq6iXM53f8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=AWq6iXM53f8"
+          },
+          {
+            "video_id": "zALRluYUGLI",
+            "title": "An Exciting Overview Of AscendTMS In Just 3 Minutes!",
+            "author": "AscendTMS - The Free (and Best) TMS Software",
+            "thumbnail_url": "https://i.ytimg.com/vi/zALRluYUGLI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=zALRluYUGLI"
+          },
+          {
+            "video_id": "MobEZyaIjV4",
+            "title": "Rose Rocket - Transportation Management Software (TMS) - Demo",
+            "author": "FreightWaves",
+            "thumbnail_url": "https://i.ytimg.com/vi/MobEZyaIjV4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=MobEZyaIjV4"
+          },
+          {
+            "video_id": "ICIyOtMiEqY",
+            "title": "A Full Tour of AscendTMS for 3PL's, Logistics Brokers and Shippers",
+            "author": "AscendTMS - The Free (and Best) TMS Software",
+            "thumbnail_url": "https://i.ytimg.com/vi/ICIyOtMiEqY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ICIyOtMiEqY"
+          },
+          {
+            "video_id": "idL8PXMlKjQ",
+            "title": "FULL AscendTMS Operations Training!",
+            "author": "AscendTMS - The Free (and Best) TMS Software",
+            "thumbnail_url": "https://i.ytimg.com/vi/idL8PXMlKjQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=idL8PXMlKjQ"
+          },
+          {
+            "video_id": "QYAwiBYhoVk",
+            "title": "What is Rose Rocket? - Transportation Management System",
+            "author": "Rose Rocket",
+            "thumbnail_url": "https://i.ytimg.com/vi/QYAwiBYhoVk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=QYAwiBYhoVk"
+          },
+          {
+            "video_id": "Eycc6Jod6t4",
+            "title": "FULL AscendTMS Operations Training! (2024)",
+            "author": "AscendTMS - The Free (and Best) TMS Software",
+            "thumbnail_url": "https://i.ytimg.com/vi/Eycc6Jod6t4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Eycc6Jod6t4"
+          },
+          {
+            "video_id": "bYzHDrJqRgg",
+            "title": "What is a TMS (transportation management system)?",
+            "author": "Rose Rocket",
+            "thumbnail_url": "https://i.ytimg.com/vi/bYzHDrJqRgg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=bYzHDrJqRgg"
+          },
+          {
+            "video_id": "Q6QrQJDEvDc",
+            "title": "How To Onboard Yourself With AscendTMS!",
+            "author": "AscendTMS - The Free (and Best) TMS Software",
+            "thumbnail_url": "https://i.ytimg.com/vi/Q6QrQJDEvDc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Q6QrQJDEvDc"
+          },
+          {
+            "video_id": "Q-HgB9nn1jI",
+            "title": "How To Make Freight Brokers Pay For Detentions & Layovers",
+            "author": "Trucking Territory",
+            "thumbnail_url": "https://i.ytimg.com/vi/Q-HgB9nn1jI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Q-HgB9nn1jI"
+          },
+          {
+            "video_id": "izh0UL8y-_4",
+            "title": "What are TONU, Detention and Layover? Trucking Phrases Explained",
+            "author": "Never Stop Trucking",
+            "thumbnail_url": "https://i.ytimg.com/vi/izh0UL8y-_4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=izh0UL8y-_4"
+          },
+          {
+            "video_id": "uHIZpxSLN-c",
+            "title": "How to Get Paid Detention, Layover & Accessorial Pay as a Truck Driver",
+            "author": "Think Trucking",
+            "thumbnail_url": "https://i.ytimg.com/vi/uHIZpxSLN-c/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=uHIZpxSLN-c"
+          },
+          {
+            "video_id": "WU9uuEFffXU",
+            "title": "Detention Secrets Brokers Don't Want Carriers to Know About",
+            "author": "Craig Bliss",
+            "thumbnail_url": "https://i.ytimg.com/vi/WU9uuEFffXU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=WU9uuEFffXU"
+          },
+          {
+            "video_id": "fpu1Fhdo9Vs",
+            "title": "Detention and TONU Fees In Trucking.",
+            "author": "Pauline Nabacwa",
+            "thumbnail_url": "https://i.ytimg.com/vi/fpu1Fhdo9Vs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=fpu1Fhdo9Vs"
+          },
+          {
+            "video_id": "OzmQFxT30NM",
+            "title": "Broker didn't pay Detention?? Broker's take on Detention!",
+            "author": "ShipLeague",
+            "thumbnail_url": "https://i.ytimg.com/vi/OzmQFxT30NM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=OzmQFxT30NM"
+          },
+          {
+            "video_id": "d6HWIm_kCFk",
+            "title": "What is Detention Pay for Freight Brokers?",
+            "author": "Freight 360",
+            "thumbnail_url": "https://i.ytimg.com/vi/d6HWIm_kCFk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=d6HWIm_kCFk"
+          },
+          {
+            "video_id": "7sfi19fbIzU",
+            "title": "**TONU** Explained for Freight Brokers 🚛",
+            "author": "Freight 360",
+            "thumbnail_url": "https://i.ytimg.com/vi/7sfi19fbIzU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=7sfi19fbIzU"
+          },
+          {
+            "video_id": "tvnlRLMXRJ4",
+            "title": "Difference between layover and detention",
+            "author": "Never Stop Trucking",
+            "thumbnail_url": "https://i.ytimg.com/vi/tvnlRLMXRJ4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=tvnlRLMXRJ4"
+          },
+          {
+            "video_id": "CNjYZO0c1o4",
+            "title": "Are Truck Dispatchers financially responsible for Detention, Layover and TONU?",
+            "author": "Alfa X Logistics",
+            "thumbnail_url": "https://i.ytimg.com/vi/CNjYZO0c1o4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=CNjYZO0c1o4"
+          },
+          {
+            "video_id": "A7rlv69JAj8",
+            "title": "What are Accessorial Charges in Truckload Transportation? 🤔 🚛",
+            "author": "Freight 360",
+            "thumbnail_url": "https://i.ytimg.com/vi/A7rlv69JAj8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=A7rlv69JAj8"
+          },
+          {
+            "video_id": "V11p0IBJsTk",
+            "title": "How Freight Brokers Handle Detention And Rate Issues!",
+            "author": "Brandon Scott",
+            "thumbnail_url": "https://i.ytimg.com/vi/V11p0IBJsTk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=V11p0IBJsTk"
+          },
+          {
+            "video_id": "zvX7UreND4E",
+            "title": "FREIGHT BROKER CHIC—-“TONU or DETENTION THAT IS THE QUESTION!”",
+            "author": "Freightbrokerchic",
+            "thumbnail_url": "https://i.ytimg.com/vi/zvX7UreND4E/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=zvX7UreND4E"
+          },
+          {
+            "video_id": "1Fdc8KYk8M0",
+            "title": "Detention and Layover Pay",
+            "author": "Freight Master Resources",
+            "thumbnail_url": "https://i.ytimg.com/vi/1Fdc8KYk8M0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=1Fdc8KYk8M0"
+          },
+          {
+            "video_id": "xe94bfEYHEU",
+            "title": "How Clear Policies On Detention And Layover Save Headaches | Final Mile 133",
+            "author": "Freight 360",
+            "thumbnail_url": "https://i.ytimg.com/vi/xe94bfEYHEU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=xe94bfEYHEU"
+          },
+          {
+            "video_id": "8Mhf3iqBflw",
+            "title": "HOW FREIGHT BROKERS EARN MORE MONEY WITH DETENTION & LAYOVER-PAY WHILE SOME TRUCK DRIVERS ARE MAD!!!",
+            "author": "Brandon Manney The Mentor",
+            "thumbnail_url": "https://i.ytimg.com/vi/8Mhf3iqBflw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=8Mhf3iqBflw"
+          },
+          {
+            "video_id": "NF0itNMuQvY",
+            "title": "How Freight Brokers Get Shippers Without Cold Calling",
+            "author": "Matt Krause",
+            "thumbnail_url": "https://i.ytimg.com/vi/NF0itNMuQvY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=NF0itNMuQvY"
+          },
+          {
+            "video_id": "hhT4X32MspU",
+            "title": "Freight Broker vs Freight Agent in 2027 (Which to Start First)",
+            "author": "Matt Krause",
+            "thumbnail_url": "https://i.ytimg.com/vi/hhT4X32MspU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=hhT4X32MspU"
+          },
+          {
+            "video_id": "iOTP-SdRDb4",
+            "title": "Running a cradle to grave freight brokerage - Put That Coffee Down",
+            "author": "FreightWaves",
+            "thumbnail_url": "https://i.ytimg.com/vi/iOTP-SdRDb4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=iOTP-SdRDb4"
+          },
+          {
+            "video_id": "PyjJOzy-a2s",
+            "title": "How Cold Calls and Customer Service Built a $50M Freight Brokerage",
+            "author": "FreightCaviar",
+            "thumbnail_url": "https://i.ytimg.com/vi/PyjJOzy-a2s/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=PyjJOzy-a2s"
+          },
+          {
+            "video_id": "su_azzEYWO4",
+            "title": "The EXACT Freight Broker Sales System To Go From $0–$10K/Month",
+            "author": "Matt Krause",
+            "thumbnail_url": "https://i.ytimg.com/vi/su_azzEYWO4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=su_azzEYWO4"
+          },
+          {
+            "video_id": "JKxqqgS6OBg",
+            "title": "Freight Broker Tips: What Do Shippers Really Want From Freight Brokers?",
+            "author": "FreightBrokers",
+            "thumbnail_url": "https://i.ytimg.com/vi/JKxqqgS6OBg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=JKxqqgS6OBg"
+          },
+          {
+            "video_id": "Bdydc4rCcVs",
+            "title": "Copy This Sales Script, It'll Blow Up Your Freight Brokerage",
+            "author": "Matt Krause",
+            "thumbnail_url": "https://i.ytimg.com/vi/Bdydc4rCcVs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Bdydc4rCcVs"
+          },
+          {
+            "video_id": "VD-td9ERDAU",
+            "title": "How Much Freight Brokers ACTUALLY Make in 2027 (Owner Math)",
+            "author": "Matt Krause",
+            "thumbnail_url": "https://i.ytimg.com/vi/VD-td9ERDAU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=VD-td9ERDAU"
+          },
+          {
+            "video_id": "nUM2jUENmpc",
+            "title": "The Untold Reality of Becoming a Freight Broker: Can You Handle It?",
+            "author": "Matt Krause",
+            "thumbnail_url": "https://i.ytimg.com/vi/nUM2jUENmpc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=nUM2jUENmpc"
+          },
+          {
+            "video_id": "xe6QTceV_JE",
+            "title": "Freight Agent or Broker: The Smarter Path for Beginners",
+            "author": "Matt Krause",
+            "thumbnail_url": "https://i.ytimg.com/vi/xe6QTceV_JE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=xe6QTceV_JE"
+          },
+          {
+            "video_id": "OHagUq3qWcQ",
+            "title": "Cradle to Grave: Grit, Growth & the Realities of Freight Brokerage | WHAT THE TRUCK?!?",
+            "author": "FreightWaves",
+            "thumbnail_url": "https://i.ytimg.com/vi/OHagUq3qWcQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=OHagUq3qWcQ"
+          },
+          {
+            "video_id": "wxTvTywQET4",
+            "title": "Do you have what it takes to build a freight brokerage?",
+            "author": "Matt Krause",
+            "thumbnail_url": "https://i.ytimg.com/vi/wxTvTywQET4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=wxTvTywQET4"
+          },
+          {
+            "video_id": "8AGIyPDUcqY",
+            "title": "The Real Way Freight Brokers Land Shippers (Not What You Think)",
+            "author": "Victor Mason",
+            "thumbnail_url": "https://i.ytimg.com/vi/8AGIyPDUcqY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=8AGIyPDUcqY"
+          },
+          {
+            "video_id": "vvPudiQpMrY",
+            "title": "Is Freight Brokerage Too Saturated? [The REAL Truth]",
+            "author": "FreightBrokers",
+            "thumbnail_url": "https://i.ytimg.com/vi/vvPudiQpMrY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=vvPudiQpMrY"
+          },
+          {
+            "video_id": "29d2gRCN8Ng",
+            "title": "The Economics of Owning a Freight Brokerage",
+            "author": "The Finance Pro",
+            "thumbnail_url": "https://i.ytimg.com/vi/29d2gRCN8Ng/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=29d2gRCN8Ng"
+          },
+          {
+            "video_id": "EJYdmoWKsmw",
+            "title": "How A 24 Year Old Built A $500k/Mo Freight Business In 11 Months",
+            "author": "Matt Krause",
+            "thumbnail_url": "https://i.ytimg.com/vi/EJYdmoWKsmw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=EJYdmoWKsmw"
+          },
+          {
+            "video_id": "O1ZmR8X3CRg",
+            "title": "HOW TO GET YOUR (BMC-84) SURETY BOND",
+            "author": "Thee Freight Broker Report",
+            "thumbnail_url": "https://i.ytimg.com/vi/O1ZmR8X3CRg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=O1ZmR8X3CRg"
+          },
+          {
+            "video_id": "UPpi7ufHWec",
+            "title": "What is a (BMC-84) Freight Broker Bond? A Guide",
+            "author": "Surety Bond Authority",
+            "thumbnail_url": "https://i.ytimg.com/vi/UPpi7ufHWec/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=UPpi7ufHWec"
+          },
+          {
+            "video_id": "ZW6Aqdzv4uA",
+            "title": "BMC-85 Trust Fund EXPLAINED: What Every Freight Broker Needs to Know",
+            "author": "FMCSA REGISTRATION dot com",
+            "thumbnail_url": "https://i.ytimg.com/vi/ZW6Aqdzv4uA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ZW6Aqdzv4uA"
+          },
+          {
+            "video_id": "B48yGdlbTbo",
+            "title": "File a BMC-84 / BMC-85 | Motus Explainer Series",
+            "author": "FMCSA",
+            "thumbnail_url": "https://i.ytimg.com/vi/B48yGdlbTbo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=B48yGdlbTbo"
+          },
+          {
+            "video_id": "wSNSmdThc6A",
+            "title": "Freight Broker Bond - BMC 84? BMC 85? Don't Be Taken To The Bank!",
+            "author": "Freight Broker TV",
+            "thumbnail_url": "https://i.ytimg.com/vi/wSNSmdThc6A/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=wSNSmdThc6A"
+          },
+          {
+            "video_id": "UfDvLSjdYbE",
+            "title": "Everything You Need To Know about the BMC-84 Surety Bond",
+            "author": "Freightskills",
+            "thumbnail_url": "https://i.ytimg.com/vi/UfDvLSjdYbE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=UfDvLSjdYbE"
+          },
+          {
+            "video_id": "pXxS5GOHXZE",
+            "title": "How to Become a Freight Agent in 2027 (No Experience Needed)",
+            "author": "Matt Krause",
+            "thumbnail_url": "https://i.ytimg.com/vi/pXxS5GOHXZE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=pXxS5GOHXZE"
+          },
+          {
+            "video_id": "e9-lormMK4w",
+            "title": "Crushing Cold Calls and Freight Agent Commissions | The Final Mile #23",
+            "author": "Freight 360",
+            "thumbnail_url": "https://i.ytimg.com/vi/e9-lormMK4w/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=e9-lormMK4w"
+          },
+          {
+            "video_id": "bkrMqfq4evM",
+            "title": "How to Become a Freight Agent—and How the Money Works",
+            "author": "Bobby Loads",
+            "thumbnail_url": "https://i.ytimg.com/vi/bkrMqfq4evM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=bkrMqfq4evM"
+          },
+          {
+            "video_id": "SPl9Y_xMJHA",
+            "title": "Freight Broker Commission Percentage | Everything you need to know! 🚚",
+            "author": "Freight 360",
+            "thumbnail_url": "https://i.ytimg.com/vi/SPl9Y_xMJHA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=SPl9Y_xMJHA"
+          },
+          {
+            "video_id": "yeFtuLvEdO8",
+            "title": "7 Step Freight Agent Training To Go From $0-$1,000,000 From Home",
+            "author": "Matt Krause",
+            "thumbnail_url": "https://i.ytimg.com/vi/yeFtuLvEdO8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=yeFtuLvEdO8"
+          },
+          {
+            "video_id": "4n9e0eEuFtM",
+            "title": "How to Be a Freight Agent in 2026 (No Truck, No MC, No Guessing)",
+            "author": "Victor Mason",
+            "thumbnail_url": "https://i.ytimg.com/vi/4n9e0eEuFtM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=4n9e0eEuFtM"
+          },
+          {
+            "video_id": "952lbvkEVvM",
+            "title": "How to Make 100% Commission as a Freight Broker Agent",
+            "author": "Eagle Express",
+            "thumbnail_url": "https://i.ytimg.com/vi/952lbvkEVvM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=952lbvkEVvM"
+          },
+          {
+            "video_id": "HTQaqqy_CPs",
+            "title": "How to Price Your First Load As A Freight Broker or Freight Agent [4 Key Numbers Explained]",
+            "author": "FreightBrokers",
+            "thumbnail_url": "https://i.ytimg.com/vi/HTQaqqy_CPs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=HTQaqqy_CPs"
+          },
+          {
+            "video_id": "N1uEW-kxNvE",
+            "title": "What is Drayage? 4 Tips Every Freight Broker Must Know About the Drayage Freight Niche!",
+            "author": "FreightBrokers",
+            "thumbnail_url": "https://i.ytimg.com/vi/N1uEW-kxNvE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=N1uEW-kxNvE"
+          },
+          {
+            "video_id": "fhPReUtDXkI",
+            "title": "Import Containers Explained: From Port Pickup to Empty Return #drayage #portlife #owneroperators",
+            "author": "Drayage Academy",
+            "thumbnail_url": "https://i.ytimg.com/vi/fhPReUtDXkI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=fhPReUtDXkI"
+          },
+          {
+            "video_id": "sv8u2e9X6Oc",
+            "title": "What Is Drayage? Understanding Its Importance in Shipping and Logistics",
+            "author": "Drayage Specialist",
+            "thumbnail_url": "https://i.ytimg.com/vi/sv8u2e9X6Oc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=sv8u2e9X6Oc"
+          },
+          {
+            "video_id": "vSgjLSdmTKc",
+            "title": "How to find drayage / intermodal loads",
+            "author": "CONGO EXPRESS",
+            "thumbnail_url": "https://i.ytimg.com/vi/vSgjLSdmTKc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=vSgjLSdmTKc"
+          },
+          {
+            "video_id": "7hSE1PjbOkI",
+            "title": "Intermodal Transportation Simplified: How It Works and Why It Matters",
+            "author": "Drayage Specialist",
+            "thumbnail_url": "https://i.ytimg.com/vi/7hSE1PjbOkI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=7hSE1PjbOkI"
+          },
+          {
+            "video_id": "SvfUq9Udy60",
+            "title": "Freight Dispatcher | Bidding Intermodal Lane LIVE",
+            "author": "Dispatching & Intermodal Training",
+            "thumbnail_url": "https://i.ytimg.com/vi/SvfUq9Udy60/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=SvfUq9Udy60"
+          },
+          {
+            "video_id": "o6WTbGsyLqg",
+            "title": "What is Container Drayage | Freight Broker Edition",
+            "author": "Freightskills",
+            "thumbnail_url": "https://i.ytimg.com/vi/o6WTbGsyLqg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=o6WTbGsyLqg"
+          },
+          {
+            "video_id": "o2G4zRoNHt4",
+            "title": "Mastering Drayage: A Step by Step Guide for Beginning Freight Brokers",
+            "author": "Victor Mason",
+            "thumbnail_url": "https://i.ytimg.com/vi/o2G4zRoNHt4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=o2G4zRoNHt4"
           }
         ],
         "research_reference_only": true,
@@ -30823,7 +32048,7 @@
         "asset_id": "verbatim_transcript_quotes",
         "asset": "data/transcripts/*.json -> segments[].text",
         "asset_type": "verbatim_transcript_passage",
-        "source": "Spoken content of 4009 third-party videos (36713 captured tips)",
+        "source": "Spoken content of 4184 third-party videos (38332 captured tips)",
         "research_reference_only": true,
         "commercial_republish_allowed": false,
         "commercial_use_allowed": false,
@@ -30839,38 +32064,38 @@
     ]
   },
   "corpus_metrics": {
-    "video_count": 4009,
-    "channel_count": 2518,
-    "total_words": 5895442,
-    "total_hours": 1183.02,
-    "total_pro_tips": 36713,
-    "unique_statutes_and_forms": 1699,
-    "unique_tools_and_portals": 10602
+    "video_count": 4184,
+    "channel_count": 2591,
+    "total_words": 6142215,
+    "total_hours": 1230.44,
+    "total_pro_tips": 38332,
+    "unique_statutes_and_forms": 1713,
+    "unique_tools_and_portals": 10976
   },
   "coverage": {
-    "videos_classified": 4009,
-    "videos_with_multiple_topics": 4006,
-    "tips_classified": 36713,
-    "raw_transcripts_joined": 4009,
+    "videos_classified": 4184,
+    "videos_with_multiple_topics": 4181,
+    "tips_classified": 38332,
+    "raw_transcripts_joined": 4184,
     "topic_video_counts": {
-      "business_model_and_economics": 3155,
-      "probate_and_docket_sourcing": 3052,
-      "unclaimed_property_and_escheat": 859,
-      "genealogy_and_heirship_proof": 3275,
-      "skip_tracing_and_outreach": 2258,
-      "contracts_and_compensation": 3170,
-      "statutory_caps_and_licensing": 3393,
-      "automation_and_small_team_ops": 2851
+      "business_model_and_economics": 3310,
+      "probate_and_docket_sourcing": 3177,
+      "unclaimed_property_and_escheat": 879,
+      "genealogy_and_heirship_proof": 3428,
+      "skip_tracing_and_outreach": 2347,
+      "contracts_and_compensation": 3291,
+      "statutory_caps_and_licensing": 3532,
+      "automation_and_small_team_ops": 2962
     },
     "topic_tip_counts": {
-      "business_model_and_economics": 6370,
-      "probate_and_docket_sourcing": 6520,
-      "unclaimed_property_and_escheat": 1911,
-      "genealogy_and_heirship_proof": 3974,
-      "skip_tracing_and_outreach": 1151,
-      "contracts_and_compensation": 5670,
-      "statutory_caps_and_licensing": 3494,
-      "automation_and_small_team_ops": 7623
+      "business_model_and_economics": 6692,
+      "probate_and_docket_sourcing": 6630,
+      "unclaimed_property_and_escheat": 1927,
+      "genealogy_and_heirship_proof": 4394,
+      "skip_tracing_and_outreach": 1257,
+      "contracts_and_compensation": 5875,
+      "statutory_caps_and_licensing": 3617,
+      "automation_and_small_team_ops": 7940
     }
   },
   "schema_version": "1.0",

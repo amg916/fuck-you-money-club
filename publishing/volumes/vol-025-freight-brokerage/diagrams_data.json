@@ -1,0 +1,340 @@
+{
+  "diagrams": [
+    {
+      "diagram_id": "diag-01-verified-load-workflow",
+      "chart_type": "process_flow",
+      "title": "One Load, Five Controlled Handoffs",
+      "subtitle": "Move from a credit-cleared shipper order to reconciled cash.",
+      "chapter_number": 1,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Applies to an authorized domestic property brokerage. Stage values indicate sequence, not load volume or conversion rates.",
+      "caption": "Automate load matching, tracking, and invoice reconciliation; assign a named owner to identity, service, and payment exceptions.",
+      "stages": [
+        {
+          "label": "Qualify shipper and lane",
+          "value": "Confirm credit before accepting the order",
+          "numeric_value": 1.0,
+          "detail": "Record commodity, equipment, declared cargo value, pickup windows, accessorial terms, and shipper credit limit in the TMS before committing capacity."
+        },
+        {
+          "label": "Quote and reserve exposure",
+          "value": "Price carrier cost and service burden",
+          "numeric_value": 2.0,
+          "detail": "Set the shipper rate against a documented carrier buy rate; reserve credit exposure for the entire invoice, not merely the expected brokerage spread."
+        },
+        {
+          "label": "Verify and tender carrier",
+          "value": "Match authority, identity, driver, and equipment",
+          "numeric_value": 3.0,
+          "detail": "Cross-check FMCSA records with Highway or RMIS, call a previously verified carrier contact, verify insurance with the issuer, and investigate identity mismatches before issuing the rate confirmation."
+        },
+        {
+          "label": "Track and resolve exceptions",
+          "value": "Monitor pickup, transit, delivery, and evidence",
+          "numeric_value": 4.0,
+          "detail": "Use TMS tracking events and exception alerts; confirm unexpected tractor, driver, or destination changes through trusted contacts and retain delivery evidence."
+        },
+        {
+          "label": "Reconcile and settle obligations",
+          "value": "Match documents before releasing carrier payment",
+          "numeric_value": 5.0,
+          "detail": "Match rate confirmation, proof of delivery, carrier invoice, and approved accessorials. Bill the shipper, pay under agreed terms, and retain required broker transaction records for three years under 49 CFR 371.3."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-02-repeat-shipper-cohort-funnel",
+      "chart_type": "funnel",
+      "title": "From Named Accounts to Repeat Shippers",
+      "subtitle": "Track one acquisition cohort through five nested account states.",
+      "chapter_number": 6,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Illustrative 180-day cohort of 200 distinct shipper accounts; each later stage is a subset of the prior stage. Counts are planning assumptions, not measured benchmarks or load counts. The canonical first-deal planning range remains 2–6 months.",
+      "caption": "200 targeted accounts produce 10 repeat shippers in this illustration: 5% end-to-end conversion, with no implied revenue until actual load frequency and invoice values are established.",
+      "stages": [
+        {
+          "label": "Named target accounts",
+          "value": "200 lane-matched commercial shipper accounts",
+          "numeric_value": 200.0,
+          "detail": "Select accounts with recurring lanes, compatible equipment requirements, reachable transportation buyers, and an identifiable entity responsible for payment."
+        },
+        {
+          "label": "Qualified buyer conversations",
+          "value": "80 accounts; 40% of targeted accounts",
+          "numeric_value": 80.0,
+          "detail": "Document shipment cadence, incumbent service gaps, procurement process, payment terms, and an accessible buyer with authority to sponsor a trial."
+        },
+        {
+          "label": "Documented quoting opportunities",
+          "value": "40 accounts; 50% of qualified conversations",
+          "numeric_value": 40.0,
+          "detail": "Receive actual origin, destination, commodity, weight, equipment, and timing requirements; exclude speculative rate checks without a credible shipment opportunity."
+        },
+        {
+          "label": "Completed first-load customers",
+          "value": "20 accounts; 50% of quoting opportunities",
+          "numeric_value": 20.0,
+          "detail": "Count only customers with a delivered first shipment and an issued invoice; a signed agreement without a completed load does not enter this stage."
+        },
+        {
+          "label": "Repeat-load customers",
+          "value": "10 accounts; 50% of first-load customers",
+          "numeric_value": 10.0,
+          "detail": "Require a second completed shipment within the cohort window and no overdue undisputed invoice before treating the account as an active repeat relationship."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-03-base-case-billings-to-owner-net",
+      "chart_type": "waterfall",
+      "title": "$3,000,000 Billings to $165,000 Owner Net",
+      "subtitle": "Six bars reconcile the canonical Base-Case 5.5% net margin.",
+      "chapter_number": 3,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "USD per year. Opening and closing bars are totals; intervening bars are signed deductions. Carrier cost and expense splits are illustrative allocations; the $3,000,000 billings, $165,000 owner net, and 5.5% margin are canonical. Owner net is the scorecard residual, not a modeled personal tax outcome.",
+      "caption": "$3,000,000 - $2,550,000 - $180,000 - $45,000 - $60,000 = $165,000. Carrier costs leave $450,000 in brokerage gross profit; $285,000 annual operating expense equals $23,750 monthly. Gross shipper billings are the scorecard basis, not automatically recognized operator revenue under an agent accounting presentation.",
+      "stages": [
+        {
+          "label": "Gross shipper billings",
+          "value": "$3,000,000 opening total; includes carrier costs",
+          "numeric_value": 3000000.0,
+          "detail": "Record the full annual shipper invoice amount as the scorecard denominator. This figure includes money owed to carriers and is not retained brokerage income."
+        },
+        {
+          "label": "Purchased carrier transportation",
+          "value": "Subtract $2,550,000; retain $450,000 gross profit",
+          "numeric_value": -2550000.0,
+          "detail": "Illustrative carrier purchases consume 85% of billings, leaving a 15% brokerage gross margin before staffing, systems, credit losses, and other operating expenses."
+        },
+        {
+          "label": "Pod labor and contractor expense",
+          "value": "Subtract $180,000 in annual staffing expense",
+          "numeric_value": -180000.0,
+          "detail": "Illustrative combined payroll, payroll burden, and contractor spending for the three-full-time, two-contractor pod; reconcile actual owner compensation and local labor costs without counting distributions twice."
+        },
+        {
+          "label": "Systems and operating services",
+          "value": "Subtract $45,000 in annual systems expense",
+          "numeric_value": -45000.0,
+          "detail": "Illustrative allowance for TMS, load-board access, Highway or RMIS verification, shipment visibility, communications, and invoice-reconciliation services; obtain actual vendor quotes before commitment."
+        },
+        {
+          "label": "Other overhead and loss expense",
+          "value": "Subtract $60,000 in annual residual expense",
+          "numeric_value": -60000.0,
+          "detail": "Illustrative combined allowance for insurance, security arrangement costs, administration, acquisition spending, credit losses, claims expense, and funding charges. Restricted trust principal is not an operating expense."
+        },
+        {
+          "label": "Annual owner net profit",
+          "value": "$165,000 closing total; 5.5% of billings",
+          "numeric_value": 165000.0,
+          "detail": "Reconcile to the canonical Base Case exactly. The Conservative case is $1,000,000 at 3% for $30,000; the Scaled case is $5,000,000 at 8% for $400,000."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-04-niche-gross-spread-yields",
+      "chart_type": "horizontal_bars",
+      "title": "Compare Niche Gross Spread, Not Headline Billings",
+      "subtitle": "Five illustrative lane archetypes use the same $2,000 shipper invoice.",
+      "chapter_number": 2,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Numeric values are brokerage gross-margin percentages: (shipper invoice minus carrier purchase) divided by shipper invoice. These are hypothetical quoting comparisons, not market yield estimates or net-profit forecasts. Payment terms and accessorial treatment are held constant.",
+      "caption": "A wider spread can compensate for harder coverage, cargo exposure, or after-hours labor. Compare contribution after service costs rather than treating the highest bar as the best niche.",
+      "stages": [
+        {
+          "label": "Predictable dry-van replenishment",
+          "value": "12% gross margin; $240 retained spread",
+          "numeric_value": 12.0,
+          "detail": "$2,000 shipper invoice less $1,760 carrier purchase leaves $240 before overhead. Repeat appointments can reduce touch time, while competitive bids compress spread."
+        },
+        {
+          "label": "Regional industrial replacement parts",
+          "value": "14% gross margin; $280 retained spread",
+          "numeric_value": 14.0,
+          "detail": "$2,000 shipper invoice less $1,720 carrier purchase leaves $280 before overhead. Confirm receiving hours and accessorial recovery before accepting urgent orders."
+        },
+        {
+          "label": "Scheduled packaged-goods truckload",
+          "value": "15% gross margin; $300 retained spread",
+          "numeric_value": 15.0,
+          "detail": "$2,000 shipper invoice less $1,700 carrier purchase leaves $300 before overhead. This illustrative spread matches the Base waterfall's carrier-cost assumption."
+        },
+        {
+          "label": "Appointment-sensitive refrigerated freight",
+          "value": "17% gross margin; $340 retained spread",
+          "numeric_value": 17.0,
+          "detail": "$2,000 shipper invoice less $1,660 carrier purchase leaves $340 before overhead. Verify temperature instructions, equipment suitability, and relevant cargo coverage before tender."
+        },
+        {
+          "label": "Time-critical manufacturing recovery",
+          "value": "18% gross margin; $360 retained spread",
+          "numeric_value": 18.0,
+          "detail": "$2,000 shipper invoice less $1,640 carrier purchase leaves $360 before overhead. Price after-hours coordination and recovery capacity rather than assuming urgency creates free margin."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-05-broker-preflight-decision-tree",
+      "chart_type": "decision_tree",
+      "title": "Four Checks Before a Load Moves",
+      "subtitle": "Advance on documented evidence; route failed checks to remediation.",
+      "chapter_number": 5,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Numeric values indicate check order, not risk scores. Apply current federal requirements and shipment-specific obligations. Software verification supplements, rather than replaces, document review and trusted-contact confirmation.",
+      "caption": "The sequence separates broker authority, carrier identity, cash exposure, and cargo risk. Passing one check does not resolve failures in another.",
+      "stages": [
+        {
+          "label": "Broker authority and required security",
+          "value": "Pass to identity; otherwise suspend booking",
+          "numeric_value": 1.0,
+          "detail": "Confirm active FMCSA property-broker authority, required process-agent designation, and $75,000 BMC-84 bond or BMC-85 trust security under 49 U.S.C. 13904, 13906(b), and 49 CFR 387.307. Verify current provider eligibility and security status; a pending filing does not authorize brokerage operations."
+        },
+        {
+          "label": "Carrier identity and operating eligibility",
+          "value": "Pass to credit; otherwise investigate mismatches",
+          "numeric_value": 2.0,
+          "detail": "Check applicable carrier authority and insurance filings through FMCSA, supplement with Highway or RMIS, and confirm dispatch through a trusted number. Independently verify cargo coverage and bank changes; resolve substituted identities or unauthorized re-brokering before release."
+        },
+        {
+          "label": "Shipper credit and payment float",
+          "value": "Pass to cargo; otherwise change exposure",
+          "numeric_value": 3.0,
+          "detail": "At Base carrier purchases of $2,550,000 annually, a 20-day collection-versus-payment gap requires about $139,726 using annual carrier cost divided by 365. If available cash cannot cover modeled obligations, obtain a deposit, change agreed terms, or reduce volume."
+        },
+        {
+          "label": "Cargo terms and claims readiness",
+          "value": "Pass to tender; otherwise resolve coverage",
+          "numeric_value": 4.0,
+          "detail": "Match commodity, value, exclusions, handling instructions, and contract obligations to verified coverage. 49 U.S.C. 14706 addresses covered carrier cargo liability; broker exposure also depends on conduct and contract. Preserve claim evidence and track applicable deadlines under 49 CFR Part 370."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-06-five-to-seven-person-pod",
+      "chart_type": "org_architecture",
+      "title": "Five Core Seats, Two Scale Seats",
+      "subtitle": "Base: 3 FT + 2 C. Scaled: 4 FT + 3 C.",
+      "chapter_number": 11,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Each numeric value represents one person, not full-time equivalent capacity. The first five seats form the Conservative and Base pod; the final two are Scaled-only additions. Contractor status requires a fact-specific classification assessment, not merely a seat label.",
+      "caption": "Conservative: $1,000,000 billings and $30,000 owner net with five people. Base: $3,000,000 and $165,000 with five. Scaled: $5,000,000 and $400,000 with seven. The $180,000 Base labor allocation is illustrative and must be tested against actual staffing costs and workload.",
+      "stages": [
+        {
+          "label": "Founder and commercial lead",
+          "value": "Core seat one; full-time commercial owner",
+          "numeric_value": 1.0,
+          "detail": "Own shipper acquisition, pricing limits, customer concentration, and cash planning. Approve unusual credit exposure without also controlling every payment-master change."
+        },
+        {
+          "label": "Carrier procurement and verification lead",
+          "value": "Core seat two; full-time carrier owner",
+          "numeric_value": 1.0,
+          "detail": "Source capacity, verify carrier identity, negotiate buy rates, and document coverage decisions. Escalate identity conflicts independently of sales pressure."
+        },
+        {
+          "label": "Shipment operations and service lead",
+          "value": "Core seat three; full-time execution owner",
+          "numeric_value": 1.0,
+          "detail": "Run pickup and delivery execution, monitor tracking exceptions, collect proof of delivery, and maintain shipper updates and claims evidence."
+        },
+        {
+          "label": "Billing and reconciliation specialist",
+          "value": "Core seat four; contracted accounting support",
+          "numeric_value": 1.0,
+          "detail": "Match invoices to load records, reconcile carrier payables, monitor receivables aging, and flag duplicate invoices. Separate payment preparation from final release."
+        },
+        {
+          "label": "After-hours tracking specialist",
+          "value": "Core seat five; contracted coverage support",
+          "numeric_value": 1.0,
+          "detail": "Cover agreed monitoring windows, escalate missed milestones, and preserve event logs. One contractor does not provide continuous round-the-clock staffing."
+        },
+        {
+          "label": "Additional account operations manager",
+          "value": "Scaled seat six; added full-time capacity",
+          "numeric_value": 1.0,
+          "detail": "Add only in the seven-person configuration to own repeat-account execution and absorb measured service load without weakening carrier or credit controls."
+        },
+        {
+          "label": "Additional coverage and exception specialist",
+          "value": "Scaled seat seven; added contracted capacity",
+          "numeric_value": 1.0,
+          "detail": "Expand defined coverage windows and document exception resolution during peak demand. Track contracted hours against incremental load contribution and service results."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-07-startup-capital-allocation",
+      "chart_type": "stacked_comparison",
+      "title": "Allocate a $150,000 Startup Capital Plan",
+      "subtitle": "Four cash buckets inside the canonical $50,000–$250,000 range.",
+      "chapter_number": 4,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "USD allocations total $150,000. This illustration uses a fully funded $75,000 BMC-85 trust rather than a BMC-84 bond. Verify eligible trustee, assets, and current requirements. Trust principal remains restricted and cannot also fund carrier payments.",
+      "caption": "$75,000 + $45,000 + $20,000 + $10,000 = $150,000. A bond-based plan uses quoted premiums and any required collateral instead of assuming $75,000 cash funding. Neither arrangement removes the need to fund shipper-to-carrier timing gaps.",
+      "stages": [
+        {
+          "label": "Restricted broker trust security",
+          "value": "$75,000 allocated; 50% of startup capital",
+          "numeric_value": 75000.0,
+          "detail": "Fund the illustrated BMC-85 security arrangement separately from operating cash. Track provider charges and any replenishment obligations without treating restricted principal as available working capital."
+        },
+        {
+          "label": "Carrier payment working capital",
+          "value": "$45,000 allocated; 30% of startup capital",
+          "numeric_value": 45000.0,
+          "detail": "At a 20-day gap and 85% carrier-cost ratio, this supports roughly $966,176 annualized billings before buffers. Base throughput needs about $139,726 for that gap, so shorten terms or secure additional funding."
+        },
+        {
+          "label": "Launch operating runway",
+          "value": "$20,000 allocated; about 13.3% of capital",
+          "numeric_value": 20000.0,
+          "detail": "Fund lean pre-revenue operations and initial staffing. At $6,000 monthly burn this lasts about 3.3 months, shorter than the six-month first-deal planning boundary; phase hiring or raise the runway allocation."
+        },
+        {
+          "label": "Setup systems and administration",
+          "value": "$10,000 allocated; about 6.7% of capital",
+          "numeric_value": 10000.0,
+          "detail": "Budget registration work, process-agent services, contract preparation, TMS configuration, verification onboarding, and accounting setup. Separate one-time charges from recurring monthly operating expense."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-08-first-thirty-days-roadmap",
+      "chart_type": "timeline_roadmap",
+      "title": "Thirty Days to an Evidence-Ready Brokerage",
+      "subtitle": "Prepare the operating system without forcing premature live loads.",
+      "chapter_number": 12,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Numeric values are milestone end days: 7, 14, 21, and 30. This sprint prepares launch readiness; it does not replace the canonical 2–6 month time-to-first-deal planning range or accelerate external authority processing.",
+      "caption": "Finish the month with a documented niche, tracked authority work, tested verification procedures, and a cash-limited pipeline. Live brokerage begins only when required authority and operating prerequisites are satisfied.",
+      "stages": [
+        {
+          "label": "Days 1-7",
+          "value": "Define niche, economics, and authority work",
+          "numeric_value": 7.0,
+          "detail": "Choose equipment and lane boundaries, identify 50 target shippers, document the three canonical scorecard scenarios, obtain security quotes, and prepare required registration and process-agent work."
+        },
+        {
+          "label": "Days 8-14",
+          "value": "Configure verification and transaction records",
+          "numeric_value": 14.0,
+          "detail": "Configure the TMS, Highway or RMIS workflow, trusted callback procedure, carrier document checklist, and 49 CFR 371.3 record retention. Test identity and bank-change exceptions using synthetic records."
+        },
+        {
+          "label": "Days 15-21",
+          "value": "Test quoting, credit, and cash timing",
+          "numeric_value": 21.0,
+          "detail": "Conduct shipper discovery, assemble carrier coverage options, and model sample quotes without representing pending authority as active. Stress-test payment gaps and set account exposure limits against available cash."
+        },
+        {
+          "label": "Days 22-30",
+          "value": "Rehearse shipment execution and reconciliation",
+          "numeric_value": 30.0,
+          "detail": "Run a synthetic tender-to-settlement exercise, assign the five core seats, test tracking alerts and duplicate invoice detection, and review authority status. Keep live loads paused while required prerequisites remain open."
+        }
+      ]
+    }
+  ]
+}

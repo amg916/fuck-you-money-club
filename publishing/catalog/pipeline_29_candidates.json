@@ -28,7 +28,8 @@
     "vol-021-automated-e-commerce",
     "vol-022-medical-equipment-resale",
     "vol-023-mineral-rights",
-    "vol-024-tax-lien-investing"
+    "vol-024-tax-lien-investing",
+    "vol-025-freight-brokerage"
   ],
   "editorial_tracks": {
     "track_1": {
@@ -21817,7 +21818,7 @@
       "slug": "freight-brokerage",
       "title": "Freight Brokerage",
       "category": "Logistics",
-      "production_stage": "candidate_scored",
+      "production_stage": "approved_master",
       "scores": {
         "revenue_potential": 23,
         "profit_margin_potential": 10,
@@ -21834,11 +21835,11 @@
       },
       "total_score": 62,
       "tier_label": "Capital / Labor Intensive",
-      "evidence_confidence": "Moderate",
-      "uncertainty_band": "±6 pts",
+      "evidence_confidence": "High",
+      "uncertainty_band": "±3 pts",
       "uncertainty_bounds": {
-        "low": 56,
-        "high": 68
+        "low": 59,
+        "high": 65
       },
       "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
       "score_rationale": {
@@ -23591,5 +23592,5 @@
       "min_expert_youtube_links_per_chapter": 12
     }
   ],
-  "generated_at": "2026-11-21T23:14:04Z"
+  "generated_at": "2026-11-21T23:24:12Z"
 }
