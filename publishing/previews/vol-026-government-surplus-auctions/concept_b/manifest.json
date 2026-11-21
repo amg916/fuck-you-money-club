@@ -1,0 +1,65 @@
+{
+  "concept_id": "concept_b",
+  "volume_id": "vol-026-government-surplus-auctions",
+  "approved": true,
+  "edition_status": "approved_master",
+  "preview_only": true,
+  "files": {
+    "digital_pdf.pdf": {
+      "bytes": 1926605,
+      "sha256": "54555f897314819c53b76c6fd52f3e2820a00095a6bf51efd0fb21e2683768d2"
+    },
+    "print_6x9_pdf.pdf": {
+      "bytes": 2545036,
+      "sha256": "92cab50c149136b841c1a8cc400948c8d98fd67cc91fb31a121ad9eaafa2ebb5"
+    },
+    "workbook_pdf.pdf": {
+      "bytes": 547130,
+      "sha256": "26a9b24307e270e36da5d11986dd81351f4f64807a75527301f561d988e1f1d7"
+    },
+    "book.epub": {
+      "bytes": 253258,
+      "sha256": "9ee4284689f94fd2f94210de1e1a404152aec426bc4adafcf1b3dea3b2ccff9c"
+    },
+    "art/cover.svg": {
+      "bytes": 3665,
+      "sha256": "25127a8087d44a38842c3a04500bfcc6b1e6d8cfed10ea446040d0ff3ff9cbb9"
+    },
+    "art/scorecard.svg": {
+      "bytes": 62823,
+      "sha256": "d7e097dbbec0273117b662577fb3e10878eff8890998e2cf2bc1a8ce055d9aeb"
+    },
+    "art/diag_01.svg": {
+      "bytes": 11027,
+      "sha256": "f2b6c380b8d9f83700340d4a46ac8d56b89e84da6ece693e151a81f62f095bf1"
+    },
+    "art/diag_02.svg": {
+      "bytes": 7543,
+      "sha256": "19f67ff75c01559f2164c3eb4d096bf21b6375d5bcd891845ca4aa44973cb9d4"
+    },
+    "art/diag_03.svg": {
+      "bytes": 11337,
+      "sha256": "8420db364d76d454f07cc069397499050c354d68595fbcd0c6ef28ac1cea0c6b"
+    },
+    "art/diag_04.svg": {
+      "bytes": 9370,
+      "sha256": "e4a9c6289e2d04c862359fbae018fdfa28dd55773fca5689cae2d0a80a92425f"
+    },
+    "art/diag_05.svg": {
+      "bytes": 10464,
+      "sha256": "cad0e7b7b00e84ab6f5b0dfd6f55ef7c6d6bae2154790e7a771fe823d870f69a"
+    },
+    "art/diag_06.svg": {
+      "bytes": 13768,
+      "sha256": "fe5972a7f0ef082ae860d23415417ca270b5e1530b7533d0f2ba7dd3f6242622"
+    },
+    "art/diag_07.svg": {
+      "bytes": 8568,
+      "sha256": "b372ed48cb932cc4e85367614d4af8e8f1e74c88dd99969ca333882f38b99df1"
+    },
+    "art/diag_08.svg": {
+      "bytes": 8794,
+      "sha256": "cc534091db1dd048c218376f937d68a2f49b3bdb8e8a34cc2fc05e8d72c517cc"
+    }
+  }
+}

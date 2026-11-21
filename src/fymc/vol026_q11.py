@@ -1,0 +1,707 @@
+from __future__ import annotations
+
+CHAPTER_11 = {
+    "id": "Q11",
+    "chapter_id": "Q11",
+    "chapter_number": 11,
+    "question_number": 11,
+    "slug": "pod-architecture-contractor-kpis-exit-valuation",
+    "question_prompt": "How do you structure a lean 2 FT + 3 C (5 people) -> 3 FT + 4 C (7 people) pod, enforce weekly scorecards, and build transferable books that command a premium exit multiple (or durable cash cow)?",
+    "kicker": "Q11 / THE BIG MONEY PLAYBOOKS",
+    "title": "Pod Architecture, Contractor KPIs & Exit Valuation",
+    "subtitle": "GSA and Municipal Surplus Pods: SF-97 Evidence, DEMIL Controls, Contractor SLAs, Accrual Cohorts, and Buyer-Ready Earnings",
+    "layout_template": "action_checklist",
+    "reading_time_minutes": 14,
+    "executive_summary": (
+        "Candidate #17, Government Surplus Auctions, holds Rank #26 with a "
+        "62/100 Money-to-Manpower Score: capital and labor discipline determine "
+        "whether the inventory becomes income. This chapter maps six operator "
+        "plays: auction intelligence, bid underwriting, removal logistics, "
+        "refurbishment control, B2B remarketing, and inventory-to-cash governance. "
+        "The five-person pod comprises 2 FT + 3 C; the seven-person configuration "
+        "adds one inventory controller and one independent inspection contractor. "
+        "Canonical annual owner net profits are $12,000 Conservative, $80,500 "
+        "Base, and $200,000 Scaled, against gross resale proceeds rather than "
+        "auction transaction volume. Build weekly evidence-backed scorecards, "
+        "cap customer and counterparty concentration at 25%, and reconcile each "
+        "lot through accrual books. Transferability comes from documented access "
+        "rights, clean title, assigned work product, and earnings that survive "
+        "replacement of the owner."
+    ),
+    "key_metrics": [
+        {
+            "label": "Conservative",
+            "value": "$150,000",
+            "context": "Annual gross resale proceeds; acquisition, transport, and refurbishment included in margin",
+            "note": "8% net margin; $12,000 annual owner net profit; 2 FT + 3 C",
+        },
+        {
+            "label": "Base",
+            "value": "$575,000",
+            "context": "Annual gross resale proceeds; acquisition, transport, and refurbishment included in margin",
+            "note": "14.0% net margin; $80,500 annual owner net profit; 2 FT + 3 C",
+        },
+        {
+            "label": "Scaled",
+            "value": "$1,000,000",
+            "context": "Annual gross resale proceeds; acquisition, transport, and refurbishment included in margin",
+            "note": "20% net margin; $200,000 annual owner net profit; 3 FT + 4 C (7 people)",
+        },
+    ],
+    "sections": [
+        {
+            "heading": "1. Assign six operator plays to five accountable people",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Design the pod around six mapped operator plays, not six departments: "
+                    "auction intelligence, bid underwriting, removal logistics, refurbishment "
+                    "control, B2B remarketing, and inventory-to-cash governance. These labels "
+                    "provide the chapter's execution map for Candidate #17. In the five-person "
+                    "configuration, FT1 is the acquisition and commercial lead, usually the "
+                    "owner; FT2 is the operations and inventory lead. C1 supplies transport "
+                    "services, C2 supplies mechanical or equipment refurbishment, and C3 "
+                    "supplies photography, specifications, and listing production. FT1 owns "
+                    "auction intelligence, bid underwriting, and remarketing pricing; FT2 "
+                    "owns removal, refurbishment acceptance, and inventory-to-cash records. "
+                    "Contractors execute defined deliverables without inheriting discretionary "
+                    "bidding authority or unrestricted banking access. Every lot receives "
+                    "one identifier before bidding, one accountable employee, and one "
+                    "evidence folder linking the auction listing to the resale invoice. "
+                    "Use GSA Auctions for federal opportunities and GovDeals or Public "
+                    "Surplus for municipal opportunities; evaluate GovPlanet listings "
+                    "according to their actual seller and contractual conditions. A "
+                    "marketplace name never establishes the property's legal status, "
+                    "inspection rights, or removal obligations. This allocation preserves "
+                    "five actual people while separating decisions from specialist execution "
+                    "and keeping the owner from becoming the undocumented dispatcher for "
+                    "every purchase."
+                ),
+                (
+                    "At the seven-person configuration, retain those five seats and add "
+                    "FT3 as inventory controller and sales coordinator, plus C4 as an "
+                    "independent inspection specialist. FT3 takes ledger preparation, buyer "
+                    "follow-up, receivables tracking, and document completeness from FT2; "
+                    "FT2 retains physical custody and release authority. C4 performs "
+                    "risk-selected prebid inspections and independent acceptance checks on "
+                    "expensive repairs. The same person should not diagnose a defect, "
+                    "authorize their own expanded repair scope, and certify satisfactory "
+                    "completion. FT1 approves bid ceilings; FT2 verifies transport and "
+                    "removal feasibility; FT3, when present, verifies available cash "
+                    "against outstanding commitments. Where the smaller pod combines "
+                    "recordkeeping and custody, FT1 performs a documented weekly sample "
+                    "count and bank reconciliation review as a compensating control. "
+                    "Use individual Microsoft 365 or Google Workspace accounts and "
+                    "role-based QuickBooks Online or Xero access; preserve exports "
+                    "outside the auction platform. Do not create shared marketplace "
+                    "credentials merely to simplify staffing. Confirm delegated account "
+                    "rights with each platform and agency. Add the two seats only "
+                    "when documented workload and realized contribution support their "
+                    "cost, not because a revenue target has been crossed. Scheduled "
+                    "capacity reviews must distinguish hours spent moving assets from "
+                    "hours spent correcting incomplete purchase files."
+                ),
+                (
+                    "The canonical staffing counts describe operating seats; they do not "
+                    "establish payroll rates, contractor hours, or owner compensation. "
+                    "Conservative revenue of $150,000 at 8% produces $12,000 annual owner "
+                    "net profit; Base revenue of $575,000 at 14.0% produces $80,500; "
+                    "Scaled revenue of $1,000,000 at 20% produces $200,000. Corresponding "
+                    "total expense envelopes are $138,000, $494,500, and $800,000, including "
+                    "purchases, transport, refurbishment, and other costs. Never add "
+                    "contractor charges outside those envelopes while repeating the "
+                    "same profit figures. Two market-paid employees plus specialist "
+                    "vendors may overwhelm the Conservative envelope, particularly "
+                    "where acquisition costs consume most proceeds. Document whether "
+                    "owners occupy FT seats, what compensation is already expensed, "
+                    "and how much work each contractor actually performs. Build a "
+                    "monthly labor-capacity schedule and a separate replacement-cost "
+                    "schedule rather than quietly treating unpaid owner effort as "
+                    "transferable earnings. The stated $3,000-$15,000 monthly operating "
+                    "expense range represents alternative operating conditions, not "
+                    "an amount automatically added to every scenario. Likewise, "
+                    "$25,000-$200,000 of startup capital must cover inventory funding "
+                    "and timing gaps without being mistaken for revenue. If actual "
+                    "costs exceed a canonical envelope, report the variance and "
+                    "redesign workload, purchasing, or pricing before claiming that "
+                    "scenario is executable."
+                ),
+            ],
+            "table": {
+                "caption": "Six mapped operator plays and accountable pod ownership",
+                "headers": [
+                    "Mapped operator play",
+                    "Five-person seat ownership",
+                    "Seven-person division of work",
+                    "Required evidence before work advances",
+                ],
+                "rows": [
+                    [
+                        "Auction intelligence across eligible federal and municipal asset categories",
+                        "FT1 screens alerts while FT2 checks practical handling requirements",
+                        "FT1 retains sourcing while C4 examines selected high-risk equipment",
+                        "Saved listing includes seller identity, eligibility conditions, and inspection access",
+                    ],
+                    [
+                        "Bid underwriting with explicit landed-cost and resale downside limits",
+                        "FT1 signs ceilings after FT2 supplies written logistics estimates",
+                        "FT3 verifies cash commitments before FT1 authorizes any bid",
+                        "Worksheet includes buyer premiums, freight, repairs, fees, and downside proceeds",
+                    ],
+                    [
+                        "Removal logistics tied to agency deadlines and custody evidence",
+                        "FT2 books C1 against written appointments and asset dimensions",
+                        "FT3 tracks documents while FT2 retains physical release responsibility",
+                        "Pickup receipt records serial numbers, condition photographs, and receiving signatures",
+                    ],
+                    [
+                        "Refurbishment control with bounded scope and independent acceptance testing",
+                        "FT2 authorizes C2 scope and witnesses documented functional tests",
+                        "C4 independently checks expensive repairs before FT2 accepts completion",
+                        "Repair file includes estimate, change authorization, parts receipts, and tests",
+                    ],
+                    [
+                        "B2B remarketing through accurate specifications and documented buyer commitments",
+                        "FT1 sets prices while C3 produces verified listing materials",
+                        "FT3 handles buyer follow-up while FT1 controls pricing exceptions",
+                        "Listing packet links current photographs, limitations, specifications, and delivery terms",
+                    ],
+                    [
+                        "Inventory-to-cash governance connecting asset custody with recognized resale revenue",
+                        "FT2 prepares records while FT1 reviews bank reconciliations weekly",
+                        "FT3 maintains records while FT2 confirms physical inventory movements",
+                        "Lot ledger reconciles purchase evidence, carrying value, invoice, and collection",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Build the institutional memory before the second warehouse",
+                "body": "Surplus operators lose margin in undocumented exceptions. Capture these four artifacts while the people who handled the lot can still explain them.",
+                "items": [
+                    "Save the auction description, amendments, photographs, and removal terms before bidding; seller pages can change or disappear after the sale.",
+                    "Have C1 photograph loading access and equipment clearances before mobilizing a specialty trailer; a low hammer price cannot absorb repeated failed pickups.",
+                    "Keep the SF-97 chain and state title correspondence in the same lot folder, but track them as separate documents with separate completion criteria.",
+                    "Record actual teardown findings against the original bid worksheet so the next buyer of similar surplus equipment inherits defect history rather than optimism.",
+                ],
+            },
+        },
+        {
+            "heading": "2. Pay contractors for accepted outputs and enforce weekly evidence",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Write a separate statement of work for each contractor lane, "
+                    "with deliverables, acceptance evidence, exclusions, response targets, "
+                    "and payment timing. For C1, an illustrative work order pays "
+                    "$650 for an agreed local collection and delivery, with "
+                    "preauthorized accessorial charges and signed custody receipts; "
+                    "actual quotes depend on weight, distance, permits, and equipment. "
+                    "For C2, use approved labor hours at a quoted rate plus "
+                    "documented parts, with a written stop-work threshold before "
+                    "teardown expands the job. For C3, an illustrative $125 "
+                    "accepted listing packet includes serial photographs, measured "
+                    "dimensions, tested functions, and disclosed defects; it does "
+                    "not purchase an unsupported claim that equipment is operational. "
+                    "For C4, quote inspection scope separately from repair work "
+                    "to preserve independence. Pay undisputed accepted work promptly "
+                    "under the agreement; define correction rights rather than "
+                    "inventing penalties after delivery. Do not pay a percentage "
+                    "of auction hammer value, which rewards larger purchases "
+                    "instead of profitable outcomes. Contractor status depends "
+                    "on the actual relationship, not the invoice label. Review "
+                    "federal and applicable state worker-classification requirements "
+                    "before imposing employee-like schedules, exclusivity, or "
+                    "continuous supervision on a purported independent business. "
+                    "Set service outcomes and safety requirements while allowing "
+                    "genuine vendors to control their lawful execution methods."
+                ),
+                (
+                    "Run a forty-five-minute weekly scorecard meeting from a frozen "
+                    "Friday export, with FT1 accountable for decisions and FT2 "
+                    "accountable for evidence. Track bid discipline as purchases "
+                    "within authorized ceilings divided by all purchases; target "
+                    "100%. Track timely removal as lots collected within "
+                    "contractual deadlines divided by lots due that week; target "
+                    "100%, and escalate any threatened miss before the deadline. "
+                    "Track first-pass acceptance as deliverables accepted without "
+                    "rework divided by completed deliverables, with a starting "
+                    "management target of at least 95%. Track listing latency "
+                    "from physical receipt and completion of required tests, "
+                    "while separately exposing days blocked by missing documents. "
+                    "Report cash conversion through inventory days, receivable "
+                    "days, and payable days rather than celebrating booked sales "
+                    "while cash remains trapped. Present realized lot contribution "
+                    "after direct selling and handling costs alongside inventory "
+                    "age and warranty or return experience. Each red metric "
+                    "gets one owner, one dated corrective action, and one "
+                    "next-week verification artifact. Keep denominator counts "
+                    "visible: one missed removal out of two is operationally "
+                    "different from one out of fifty, even though both require "
+                    "action. Compare cohort medians and worst cases so a "
+                    "single successful fleet disposal cannot conceal repeated "
+                    "small-lot execution failures."
+                ),
+                (
+                    "Enforce a maximum 25% concentration for each customer and "
+                    "material counterparty, using defined denominators rather than "
+                    "an ambiguous portfolio percentage. Aggregate related buyer "
+                    "entities and measure their trailing-twelve-month gross resale "
+                    "revenue, current receivables, and committed but uncollected "
+                    "orders separately. Measure each selling agency or related "
+                    "seller group against acquisition spend; measure transport "
+                    "and repair providers against their respective service-category "
+                    "spend and booked near-term capacity. An auction platform is "
+                    "a channel, not automatically the economic seller, so "
+                    "maintain a separate platform-dependence metric. At Base "
+                    "revenue, the customer revenue ceiling is $143,750; at "
+                    "Scaled revenue, it is $250,000. Use a 20% warning "
+                    "threshold to redirect prospecting, auction sourcing, and "
+                    "vendor qualification before the hard limit is reached. "
+                    "A new business with one completed sale cannot honestly "
+                    "claim diversified trailing revenue. Mark that startup "
+                    "concentration as an unresolved exception, avoid expanding "
+                    "the dominant exposure, and build independent counterparties "
+                    "before describing the portfolio as transferable. Document "
+                    "pre-transaction concentration projections and decline "
+                    "incremental exposure that would breach an established cap. "
+                    "Backup vendors need current quotes and demonstrated "
+                    "capability, not merely names in a spreadsheet. Correlated "
+                    "dependencies, such as two haulers sharing the same "
+                    "specialty trailer, count as one practical failure point "
+                    "during removal planning."
+                ),
+            ],
+            "table": {
+                "caption": "Weekly contractor and counterparty scorecard with explicit evidence",
+                "headers": [
+                    "Service or exposure under review",
+                    "Compensation or measurement rule",
+                    "Weekly target and escalation condition",
+                    "Evidence retained by accountable employee",
+                ],
+                "rows": [
+                    [
+                        "C1 transport performance across every lot due for removal",
+                        "Pay agreed delivery price plus only preauthorized documented accessorials",
+                        "Require all removals on time and escalate threatened misses immediately",
+                        "FT2 retains appointment confirmations, custody receipts, and timestamped condition photographs",
+                    ],
+                    [
+                        "C2 repair quality across approved refurbishment work orders",
+                        "Pay accepted labor and parts within the authorized scope",
+                        "Require written scope changes before spending beyond approved repair limits",
+                        "FT2 stores estimates, parts receipts, test results, and acceptance signatures",
+                    ],
+                    [
+                        "C3 listing production across inspected and document-ready inventory",
+                        "Pay accepted packets containing verified specifications and current photographs",
+                        "Target publication within two business days after all prerequisites clear",
+                        "FT1 preserves specification checks, image provenance, and final listing revisions",
+                    ],
+                    [
+                        "C4 independent inspection across selected high-risk acquisition and repair lots",
+                        "Pay scoped inspection fees independently from any repair revenue",
+                        "Require written findings before bidding or accepting designated expensive repairs",
+                        "FT2 retains test methods, limitations, measurements, and inspector conflict disclosures",
+                    ],
+                    [
+                        "Customer concentration across related entities and outstanding commercial exposure",
+                        "Divide grouped customer revenue and receivables by corresponding portfolio totals",
+                        "Warn at twenty percent and cap each established measure at twenty-five percent",
+                        "FT1 reviews grouped revenue exports, receivables aging, and pending orders",
+                    ],
+                    [
+                        "Seller and service-provider dependence across each relevant spending category",
+                        "Measure seller acquisition spend and vendor category spend separately",
+                        "Keep each counterparty within twenty-five percent and qualify independent alternatives",
+                        "FT2 retains grouped spend reports, capacity commitments, and tested backup quotes",
+                    ],
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Freeze the operating evidence",
+                    "action": "Export the lot ledger, accounting reports, contractor work orders, and open removal commitments every Friday.",
+                    "detail": "FT2 prepares the five-person pod packet; FT3 prepares it after expansion. Preserve the reporting timestamp and identify unposted invoices.",
+                },
+                {
+                    "step": 2,
+                    "title": "Reconcile metrics to source records",
+                    "action": "Trace every missed deadline, rejected deliverable, concentration warning, and aged lot to its underlying transaction.",
+                    "detail": "Keep numerator and denominator counts, distinguish physical defects from document blockers, and assign correction responsibility without rewriting history.",
+                },
+                {
+                    "step": 3,
+                    "title": "Authorize bounded corrective work",
+                    "action": "Assign one owner, spending limit, due date, and acceptance artifact to each corrective action.",
+                    "detail": "FT1 approves commercial exceptions; FT2 controls physical execution. Contractors receive written scope changes before incurring additional charges.",
+                },
+                {
+                    "step": 4,
+                    "title": "Close actions against observed outcomes",
+                    "action": "At the next meeting, verify delivery, accepted repairs, corrected records, or reduced exposure before closing an action.",
+                    "detail": "Carry unresolved items forward with their original age and quantify any cash, margin, or removal consequence.",
+                },
+            ],
+        },
+        {
+            "heading": "3. Build accrual lot books and a transferable evidence chain",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Build accrual books around the asset, not around the bank "
+                    "feed. Capitalize acquisition price, buyer premium, inbound "
+                    "transport, and directly attributable refurbishment where "
+                    "appropriate under the adopted inventory policy; apply that "
+                    "policy consistently with the accountant's reporting "
+                    "framework. Expense selling activity and general overhead "
+                    "according to their nature rather than hiding them in "
+                    "inventory to protect current earnings. Recognize gross "
+                    "resale proceeds when the applicable revenue-recognition "
+                    "conditions are satisfied, with the related carrying cost "
+                    "released to cost of goods sold. A customer deposit "
+                    "before fulfillment ordinarily remains a liability, and "
+                    "sales tax collected for a taxing authority is not "
+                    "operator revenue. For a principal reseller, the canonical "
+                    "$575,000 Base figure is gross resale revenue, not "
+                    "merchant transaction volume or a commission basis. "
+                    "Illustratively, a lot purchased for $6,000 with a "
+                    "$600 premium, $900 inbound freight, and $500 qualifying "
+                    "repair cost carries $8,000 before sale. A $10,000 "
+                    "sale creates $2,000 gross profit; $400 of selling "
+                    "and outbound costs leaves $1,600 contribution before "
+                    "overhead. That lot example does not replace the "
+                    "canonical 14.0% Base net margin. Show both views "
+                    "so operational contribution cannot be mistaken for "
+                    "annual owner net profit, and reconcile cash receipts "
+                    "separately from recognized revenue."
+                ),
+                (
+                    "Close monthly by acquisition cohort, asset class, seller, "
+                    "and disposal channel. Preserve original purchase dates "
+                    "when stock moves between yards or listings; relisting "
+                    "must never reset aging. Reconcile physical serial "
+                    "numbers to the inventory subledger, the subledger "
+                    "to the general ledger, and sale invoices to "
+                    "receivables and collections. Allocate mixed-lot costs "
+                    "using a documented, reasonable method applied "
+                    "consistently, such as supported relative resale values "
+                    "at acquisition. Do not assign every dollar to "
+                    "the first item sold and present the remainder "
+                    "as free stock. At thirty, sixty, and ninety "
+                    "days, review price, market demand, missing documentation, "
+                    "and probable recovery costs; these are management "
+                    "review intervals, not universal statutory deadlines. "
+                    "Record write-downs when required by the reporting "
+                    "framework and retain support for estimated realizable "
+                    "values. Run the saleability review before placing "
+                    "replacement orders, because a profitable income "
+                    "statement can coexist with deteriorating inventory "
+                    "quality. Separate restricted cash, unpaid auction "
+                    "purchases, removal commitments, customer deposits, "
+                    "and tax liabilities in the thirteen-week cash "
+                    "forecast. A buyer should be able to reproduce "
+                    "the monthly close without asking the founder "
+                    "which forklift was swapped, which invoice "
+                    "contains freight, or why an apparently sold "
+                    "asset remains in the yard."
+                ),
+                (
+                    "Transferable books include rights and restrictions, not "
+                    "just ledger balances. Federal personal-property sales "
+                    "under 41 CFR Part 102-38 operate within applicable "
+                    "agency procedures and sale terms; municipal auctions "
+                    "require their own seller-specific review. An SF-97 "
+                    "supports the government vehicle ownership chain but "
+                    "does not itself establish state registration, "
+                    "roadworthiness, or completion of every state title "
+                    "requirement. For defense-origin property, preserve "
+                    "the stated demilitarization designation, end-use "
+                    "conditions, and required release evidence; resolve "
+                    "restrictions with the seller before bidding, "
+                    "modification, export, or resale. Do not infer "
+                    "unrestricted status from a commercial marketplace "
+                    "listing. Review UCC title and warranty provisions "
+                    "as adopted in the governing state, including "
+                    "California Commercial Code sections 2312 and 2316 "
+                    "where applicable; an as-is description does not "
+                    "automatically erase title obligations. Obtain "
+                    "signed copyright assignments for contractor-created "
+                    "photographs, listing copy, and custom operating "
+                    "materials under 17 U.S.C. section 204(a), with "
+                    "preexisting material identified and appropriately "
+                    "licensed. Do not assume payment creates ownership "
+                    "or that every commissioned work qualifies as "
+                    "work made for hire. Finally, inventory platform "
+                    "account permissions, software licenses, customer "
+                    "contract assignment clauses, and lawful data-transfer "
+                    "conditions. A business sale cannot transfer "
+                    "rights that the operator never possessed."
+                ),
+            ],
+            "table": {
+                "caption": "Buyer-reproducible accrual records and surplus-specific rights evidence",
+                "headers": [
+                    "Record requiring transaction-level support",
+                    "Required accounting or custody treatment",
+                    "Monthly forensic verification procedure",
+                    "Transferability defect the procedure exposes",
+                ],
+                "rows": [
+                    [
+                        "Auction purchase packet with invoices and complete seller conditions",
+                        "Record acquisition obligations against the correct asset and seller",
+                        "Match winning notices, premiums, payment evidence, and lot identifiers",
+                        "Unrecorded purchase commitments conceal cash demands and disputed asset ownership",
+                    ],
+                    [
+                        "Inbound freight and refurbishment charges attributable to identified assets",
+                        "Apply documented capitalization policy consistently across all acquisition cohorts",
+                        "Trace allocated charges to invoices and approved repair work",
+                        "Unsupported allocations inflate stock values and distort realized cohort margins",
+                    ],
+                    [
+                        "Resale invoices with delivery evidence and customer deposit records",
+                        "Recognize revenue when earned and retain unearned deposits as liabilities",
+                        "Match delivery conditions, invoices, receipts, returns, and tax treatment",
+                        "Premature sales recognition overstates earnings while leaving performance obligations unresolved",
+                    ],
+                    [
+                        "Serial-level inventory aging and documented realizable-value assessment files",
+                        "Preserve original acquisition dates and record required inventory write-downs",
+                        "Count selected assets and compare carrying values with supported recoveries",
+                        "Relisted obsolete inventory disguises losses and exaggerates working capital quality",
+                    ],
+                    [
+                        "Vehicle title chain and applicable restricted-property release documentation",
+                        "Track ownership evidence separately from physical possession and resale readiness",
+                        "Verify SF-97 records, state requirements, restrictions, and seller release conditions",
+                        "Missing title or unresolved restrictions prevent lawful delivery and collection",
+                    ],
+                    [
+                        "Contractor work-product assignments and transferable operating account permissions",
+                        "Retain signed assignments and identify licensed preexisting materials explicitly",
+                        "Check signatures, assignment scope, license conditions, and platform transfer rules",
+                        "Unowned photographs or nontransferable accounts weaken continuity after ownership changes",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Four pre-flight verifications before committing purchase cash",
+                "body": "FT1 records the decision; FT2 supplies execution evidence. An unresolved item stops bidding on that lot rather than becoming a post-purchase surprise.",
+                "items": [
+                    "Verify bidder eligibility, seller authority, complete sale amendments, and applicable restricted-item or DEMIL conditions using the actual listing and agency instructions.",
+                    "Verify pickup appointment availability, loading responsibilities, transport quote validity, insurance, and a backup removal plan before the contractual deadline.",
+                    "Verify the lot's bid ceiling, downside recovery estimate, available cash after existing commitments, and projected customer and counterparty concentration.",
+                    "Verify the required title path, SF-97 availability where relevant, state resale requirements, inspection evidence, and the contractor rights needed for accurate remarketing.",
+                ],
+            },
+        },
+        {
+            "heading": "4. Price replacement-adjusted earnings before choosing an exit",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "Treat valuation multiples as negotiated hypotheses, not "
+                    "automatic rewards for clean folders. For a small "
+                    "owner-operated surplus reseller, a preliminary screening "
+                    "range of 1.5-3.0 times normalized seller's discretionary "
+                    "earnings can be useful; this is an illustrative "
+                    "underwriting range, not a claim about verified "
+                    "transaction comparables. Seller's discretionary earnings "
+                    "typically restores one working owner's compensation "
+                    "and qualifying discretionary or nonrecurring expenses "
+                    "to the chosen earnings starting point. Define "
+                    "that bridge explicitly and avoid restoring costs "
+                    "that a buyer must continue paying. The canonical "
+                    "owner net profits of $12,000, $80,500, and "
+                    "$200,000 are neither automatically discretionary "
+                    "earnings nor automatically EBITDA. Obtain the "
+                    "underlying expense detail before selecting either "
+                    "measure. At the smallest case, required inventory "
+                    "and equipment may dominate recoverable value, "
+                    "and a goodwill multiple can be economically "
+                    "irrelevant. At Base, owner dependence, concentrated "
+                    "buyers, weak title files, and slow stock can "
+                    "push a deal toward asset recovery rather "
+                    "than an earnings valuation. At Scaled, seven "
+                    "people still do not create institutional "
+                    "management automatically. Buyers pay more "
+                    "credibly for repeatable earnings when the "
+                    "operations lead can run removal, repair, "
+                    "and collections without the founder's personal "
+                    "intervention, and when evidence survives "
+                    "independent sampling across multiple acquisition cohorts."
+                ),
+                (
+                    "Build a replacement-adjusted bridge before discussing a "
+                    "premium. An illustrative Base bridge starts at "
+                    "$80,500 canonical owner net profit, restores "
+                    "$12,000 of documented genuinely nonrecurring cost, "
+                    "deducts $65,000 of incremental replacement labor "
+                    "only if that labor is absent from recorded "
+                    "expenses, and deducts an $8,000 normalized "
+                    "inventory-loss adjustment. The resulting $19,500 "
+                    "is replacement-adjusted operating earnings under "
+                    "those assumptions, not EBITDA unless the "
+                    "remaining interest, tax, depreciation, and "
+                    "amortization treatment also supports that "
+                    "label. It is not the original scorecard "
+                    "profit and must never silently replace "
+                    "it. If owner compensation is already "
+                    "expensed, calculate only the documented "
+                    "difference between existing and replacement "
+                    "cost; subtracting a full salary again "
+                    "would double count. An illustrative "
+                    "2.0-3.0 multiple on this replacement-adjusted "
+                    "measure produces $39,000-$58,500 of "
+                    "earnings-based operating value, subject "
+                    "to the agreed asset perimeter and "
+                    "working-capital terms. This is a different "
+                    "buyer lens from owner-operator discretionary "
+                    "earnings and uses a separately negotiated "
+                    "multiple. It shows why attractive owner "
+                    "income can coexist with modest transferable "
+                    "value. Validate all assumptions against "
+                    "payroll, contractor invoices, inventory "
+                    "loss history, and the actual duties "
+                    "a buyer must replace."
+                ),
+                (
+                    "Negotiate the transaction perimeter before arguing over "
+                    "the headline multiple. Specify whether ordinary "
+                    "saleable inventory is included through a "
+                    "working-capital target or purchased separately "
+                    "at an agreed value; never capitalize "
+                    "the same stock through both mechanisms. "
+                    "Exclude obsolete or restricted inventory "
+                    "unless its recovery and obligations are "
+                    "explicitly priced. Reconcile enterprise "
+                    "value to equity proceeds through the "
+                    "agreed treatment of cash, debt, "
+                    "debt-like liabilities, working-capital "
+                    "adjustments, transaction expenses, and "
+                    "any deferred consideration. A seller "
+                    "note or earnout is future exposure, "
+                    "not cash received at closing. Build "
+                    "a buyer room with monthly accrual "
+                    "statements, cohort margins, title "
+                    "exceptions, contractor agreements, "
+                    "signed IP assignments, concentration "
+                    "reports, and twelve months of "
+                    "scorecards where operating history "
+                    "permits. Test transferability through "
+                    "a documented two-week owner absence "
+                    "with bounded delegated authority, "
+                    "then measure exceptions and lost "
+                    "throughput. Compare a sale with "
+                    "continued ownership using replacement-adjusted "
+                    "cash generation after maintenance "
+                    "spending, working-capital requirements, "
+                    "and reserves. The durable cash-cow "
+                    "choice requires the same discipline "
+                    "as an exit: enforce purchase "
+                    "limits, liquidate stale stock, "
+                    "maintain independent counterparties, "
+                    "and pay for competent execution. "
+                    "Retaining ownership is rational "
+                    "only when the resulting return "
+                    "justifies the capital exposure "
+                    "and the owner's remaining workload."
+                ),
+            ],
+            "table": {
+                "caption": "Illustrative valuation lenses and canonical earnings reconciliation",
+                "headers": [
+                    "Earnings case or transaction lens",
+                    "Specific calculation and stated scope",
+                    "Required diligence before using the figure",
+                    "Practical interpretation for owner or buyer",
+                ],
+                "rows": [
+                    [
+                        "Conservative canonical operating case with five total pod members",
+                        "$150,000 gross resale proceeds times 8% equals $12,000 owner profit",
+                        "Reconcile $138,000 total expenses and identify every owner's labor contribution",
+                        "Thin earnings may support asset recovery rather than material goodwill",
+                    ],
+                    [
+                        "Base canonical operating case with five total pod members",
+                        "$575,000 gross resale proceeds times 14.0% equals $80,500 owner profit",
+                        "Reconcile $494,500 total expenses before calculating any normalized earnings bridge",
+                        "Owner income alone does not establish buyer-replaceable annual operating earnings",
+                    ],
+                    [
+                        "Scaled canonical operating case with seven total pod members",
+                        "$1,000,000 gross resale proceeds times 20% equals $200,000 owner profit",
+                        "Reconcile $800,000 total expenses including added employee and contractor capacity",
+                        "Seven-person staffing supports value only when execution survives owner absence",
+                    ],
+                    [
+                        "Owner-operator screening lens using separately established discretionary annual earnings",
+                        "Illustrative screening range equals normalized discretionary earnings times 1.5-3.0",
+                        "Verify owner compensation, qualifying adjustments, asset perimeter, and buyer expectations",
+                        "Use negotiated evidence rather than presenting this range as market proof",
+                    ],
+                    [
+                        "Illustrative Base bridge using explicitly incremental replacement labor costs",
+                        "$80,500 plus $12,000 minus $65,000 minus $8,000 equals $19,500",
+                        "Validate nonrecurring costs, missing replacement labor, and normalized inventory losses",
+                        "A separate 2.0-3.0 lens yields $39,000-$58,500 before transaction-specific adjustments",
+                    ],
+                    [
+                        "Equity proceeds bridge after agreeing the operating value perimeter",
+                        "Adjust operating value for agreed cash, debt, working capital, and expenses",
+                        "Determine inventory inclusion and distinguish closing cash from deferred consideration",
+                        "Avoid counting ordinary inventory twice or treating earnouts as collected cash",
+                    ],
+                ],
+            },
+        },
+    ],
+    "pull_quote": "A surplus business becomes transferable when the next operator can price the lot, prove the title, and collect the cash without calling the founder.",
+    "diagram_id": "diag-06",
+    "action_checklist": [
+        "Assign the six mapped plays to FT1, FT2, and C1-C3; document exactly which duties transfer to FT3 and C4 when moving to seven people.",
+        "Issue contractor statements of work with scoped prices, acceptance evidence, correction procedures, signed work-product assignments, and classification review.",
+        "Run the weekly scorecard from frozen source exports, retaining denominator counts, corrective-action owners, and evidence that each action actually closed.",
+        "Set 20% concentration warnings and maximum 25% customer and counterparty exposures using separately defined revenue, receivables, acquisition-spend, and service-category measures.",
+        "Close accrual books by lot and acquisition cohort, reconciling inventory counts, title files, deposits, collections, capitalization decisions, and required write-downs.",
+        "Build canonical-to-normalized earnings bridges, test a two-week owner absence, and compare a documented buyer offer with replacement-adjusted retained cash generation.",
+    ],
+    "statutory_citations": [
+        {
+            "title": "41 CFR Part 102-38 — Sale of Personal Property",
+            "url": "https://www.ecfr.gov/current/title-41/subtitle-C/chapter-102/subchapter-B/part-102-38",
+            "relevance": "Establishes federal personal-property sales requirements; use the applicable agency procedures and sale terms when evaluating federal auction eligibility, bids, payments, and delivery obligations.",
+        },
+        {
+            "title": "17 U.S.C. section 204(a) — Execution of Transfers of Copyright Ownership",
+            "url": "https://www.law.cornell.edu/uscode/text/17/204",
+            "relevance": "Requires a qualifying copyright ownership transfer to be memorialized in a signed writing; obtain assignments for contractor-created photographs, listing copy, and custom operating materials.",
+        },
+        {
+            "title": "29 U.S.C. section 203 — Fair Labor Standards Act Definitions",
+            "url": "https://www.law.cornell.edu/uscode/text/29/203",
+            "relevance": "Defines employee, employer, and employ for federal wage-and-hour purposes; contractor labels alone do not resolve worker status, and applicable state tests require separate review.",
+        },
+        {
+            "title": "California Commercial Code section 2312 — Warranty of Title and Against Infringement",
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=COM&sectionNum=2312.",
+            "relevance": "Provides a concrete state enactment of UCC title-warranty rules; evaluate title representations and any effective exclusion under the governing jurisdiction.",
+        },
+        {
+            "title": "California Commercial Code section 2316 — Exclusion or Modification of Warranties",
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=COM&sectionNum=2316.",
+            "relevance": "Addresses warranty exclusions and modifications, including relevant as-is language; distinguish condition-related warranty treatment from ownership and title obligations.",
+        },
+        {
+            "title": "15 CFR section 736.2 — General Prohibitions",
+            "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-736/section-736.2",
+            "relevance": "For transactions involving items subject to the Export Administration Regulations, supplies general export and reexport prohibitions; an auction purchase does not establish export eligibility or resolve separate defense-property restrictions.",
+        },
+    ],
+}

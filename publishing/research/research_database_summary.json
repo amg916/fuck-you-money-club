@@ -1,6 +1,6 @@
 {
-  "abridged_video_count": 4184,
-  "raw_video_count": 4184,
+  "abridged_video_count": 4359,
+  "raw_video_count": 4359,
   "summary": {
     "type": "dict",
     "keys": [
@@ -22,11 +22,11 @@
       "coverage": 6
     },
     "values": {
-      "generated_at": "2026-11-21T23:28:03+00:00",
+      "generated_at": "2026-11-21T23:38:52+00:00",
       "schema_version": "1.0"
     }
   },
-  "generated_at": "2026-11-21T23:28:03Z",
+  "generated_at": "2026-11-21T23:38:52Z",
   "counts": {
     "topics": 8
   },
@@ -34,9 +34,9 @@
     {
       "topic_id": "business_model_and_economics",
       "title": "Business Model, Contingency Economics & Deal Scale",
-      "video_count": 3310,
-      "tip_count": 6692,
-      "channel_count": 2156,
+      "video_count": 3392,
+      "tip_count": 6837,
+      "channel_count": 2211,
       "top_sources": [
         {
           "video_id": "LKEn47f67vQ",
@@ -198,36 +198,36 @@
         "form or",
         "form you",
         "form a",
+        "form in",
         "form on",
         "form so",
-        "form in",
+        "form where",
         "form with",
         "form your",
-        "form where",
         "form like",
         "court order",
         "form as",
-        "form it",
         "quiet title",
-        "form at",
-        "form if",
+        "form it",
         "form uh",
+        "form at",
         "form I",
+        "form if",
         "form their",
         "form which",
         "letters of administration",
         "form content",
         "form um",
-        "Chapter 7",
         "form called",
+        "Chapter 7",
+        "form below",
         "form here",
         "form an",
-        "form below",
         "form right",
         "form we",
         "form but",
-        "form they",
-        "form from"
+        "form from",
+        "form they"
       ],
       "tools_and_portals": [
         "Google",
@@ -240,21 +240,21 @@
         "https://probatemastery.com",
         "Bing",
         "https://www.govconwinners.com/",
+        "https://excesselite.com",
         "https://youtu.be/YyPdhpdEs5c",
         "https://profitablecontracts.co/",
+        "https://www.facebook.com/groups/assetrecovery",
         "https://www.facebook.com/groups/gcwalways",
         "https://www.youtube.com/@realestateinprobate",
         "https://youtu.be/-XAlvMJRIEM",
         "https://youtu.be/VunK8iso33g",
         "https://estateprofessionalsmastermind.buzzsprout.com/share",
-        "https://excesselite.com",
         "https://probatemastery.com/earn-attorney-referrals-now-course-pricing/",
         "https://www.facebook.com/ProbateMastery/",
         "https://www.instagram.com/coachbrucehill/",
-        "https://probatemastery.com/discovery-call/",
-        "https://www.facebook.com/groups/assetrecovery",
-        "https://facebook.com/groups/estateprofessionalsmastermind",
         "https://www.moneymakingjug.com/inquiry",
+        "https://probatemastery.com/discovery-call/",
+        "https://facebook.com/groups/estateprofessionalsmastermind",
         "https://winnerswaybook.com/",
         "https://www.youtube.com/kizzyparks/?sub_confirmation=1",
         "PropStream",
@@ -275,9 +275,9 @@
     {
       "topic_id": "probate_and_docket_sourcing",
       "title": "County Probate Dockets, Intestate Filings & Estate Leads",
-      "video_count": 3177,
-      "tip_count": 6630,
-      "channel_count": 1956,
+      "video_count": 3326,
+      "tip_count": 6695,
+      "channel_count": 2045,
       "top_sources": [
         {
           "video_id": "Lt0e4PdSMmo",
@@ -441,8 +441,8 @@
         "form or",
         "court order",
         "form on",
-        "form your",
         "form in",
+        "form your",
         "quiet title",
         "form below",
         "form where",
@@ -454,21 +454,21 @@
         "form it",
         "form their",
         "Chapter 13",
+        "form I",
         "Form uh",
         "form at",
-        "form I",
-        "form as",
         "form but",
-        "form Commercial",
-        "protection act",
         "form if",
-        "form we",
+        "form as",
+        "form Commercial",
         "form which",
+        "protection act",
         "form here",
+        "form we",
         "form um",
+        "property Act",
         "warranty deed",
-        "letters testamentary",
-        "property Act"
+        "letters testamentary"
       ],
       "tools_and_portals": [
         "Facebook",
@@ -516,9 +516,9 @@
     {
       "topic_id": "unclaimed_property_and_escheat",
       "title": "State Unclaimed Property, Escheated Funds & Treasury Claims",
-      "video_count": 879,
-      "tip_count": 1927,
-      "channel_count": 573,
+      "video_count": 951,
+      "tip_count": 2375,
+      "channel_count": 621,
       "top_sources": [
         {
           "video_id": "D-PMjgNe-7s",
@@ -676,27 +676,29 @@
         "form below",
         "form to",
         "Form is",
-        "form you",
         "form the",
-        "form for",
         "form or",
+        "form you",
+        "form for",
         "form a",
-        "form but",
         "Form uh",
+        "form but",
         "form with",
         "form on",
         "form we",
+        "form where",
         "form your",
+        "Property Act",
         "court order",
         "form in",
         "form it",
         "form so",
-        "Property Act",
+        "quiet title",
         "form at",
         "form if",
         "form our",
-        "form where",
-        "quiet title",
+        "form from",
+        "form like",
         "form them",
         "form this",
         "form um",
@@ -704,12 +706,10 @@
         "affidavit of heirship",
         "Chapter 7",
         "form as",
-        "form from",
-        "form like",
+        "form due",
         "form today",
         "form all",
-        "form because",
-        "form due"
+        "form because"
       ],
       "tools_and_portals": [
         "Google",
@@ -757,9 +757,9 @@
     {
       "topic_id": "genealogy_and_heirship_proof",
       "title": "Forensic Genealogy, Per-Stirpes Kinship & Proof of Heirship",
-      "video_count": 3428,
-      "tip_count": 4394,
-      "channel_count": 2189,
+      "video_count": 3595,
+      "tip_count": 4788,
+      "channel_count": 2290,
       "top_sources": [
         {
           "video_id": "7M3XZfN7814",
@@ -914,40 +914,40 @@
         "form and",
         "form of",
         "form that",
+        "form is",
         "form to",
         "form for",
-        "form is",
         "form the",
         "form you",
         "form or",
         "form a",
-        "form on",
         "form your",
+        "form on",
         "form so",
-        "form with",
         "form in",
+        "form with",
         "form where",
         "form like",
         "quiet title",
         "form as",
         "form below",
+        "form I",
         "form it",
         "form at",
-        "form I",
-        "form which",
         "form if",
+        "form which",
         "form content",
         "form their",
         "court order",
-        "Form uh",
-        "form here",
-        "form um",
         "form called",
+        "form here",
+        "Form uh",
+        "form um",
         "form we",
+        "form but",
         "form Commercial",
         "Chapter 13",
         "Chapter 7",
-        "form but",
         "form from",
         "form they",
         "form right"
@@ -960,9 +960,9 @@
         "CSV",
         "Ancestry",
         "https://excesselite.com",
-        "FamilySearch",
         "https://www.facebook.com/groups/assetrecovery",
         "https://www.moneymakingjug.com/inquiry",
+        "FamilySearch",
         "Bing",
         "https://www.instagram.com/erizzyy/",
         "https://TaxLienSchool.com",
@@ -990,17 +990,17 @@
         "https://www.unclaimedceo.com/freemasterclass",
         "https://www.unclaimedceo.com/digitalcourse",
         "https://www.unclaimedceo.com/get-my-free-guide",
+        "https://www.youtube.com/@AuctionReviewsWithJeff?sub_confirmation=1",
         "PACER",
-        "http://secretsoftaxlieninvesting.com",
-        "http://TaxSaleHQ.com"
+        "http://secretsoftaxlieninvesting.com"
       ]
     },
     {
       "topic_id": "skip_tracing_and_outreach",
       "title": "Skip Tracing, Ethical Heir Contact & Trust Building",
-      "video_count": 2347,
-      "tip_count": 1257,
-      "channel_count": 1490,
+      "video_count": 2398,
+      "tip_count": 1264,
+      "channel_count": 1522,
       "top_sources": [
         {
           "video_id": "DgzklijTLzE",
@@ -1167,25 +1167,25 @@
         "form where",
         "form like",
         "quiet title",
-        "form with",
         "form in",
+        "form with",
         "form so",
         "court order",
         "form as",
         "Form uh",
         "form um",
-        "form at",
-        "form their",
         "form which",
+        "form at",
+        "form I",
+        "form their",
+        "form below",
+        "form if",
         "form it",
         "Protection Act",
-        "form below",
-        "form content",
-        "form I",
         "form but",
-        "form if",
-        "Chapter 7",
+        "form content",
         "form called",
+        "Chapter 7",
         "form Commercial",
         "form here",
         "Chapter 13",
@@ -1203,8 +1203,8 @@
         "https://probatemastery.com",
         "https://excesselite.com",
         "https://www.facebook.com/groups/assetrecovery",
-        "https://TaxLienSchool.com",
         "https://www.moneymakingjug.com/inquiry",
+        "https://TaxLienSchool.com",
         "PropStream",
         "https://www.surplusfunds101.com/freecallingscript",
         "https://taxlienschool.com/ytcall",
@@ -1213,10 +1213,10 @@
         "https://taxlienschool.com/ytabcs",
         "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
         "https://facebook.com/groups/estateprofessionalsmastermind",
+        "https://www.instagram.com/erizzyy/",
         "https://www.instagram.com/thedavidwilkerson",
         "http://TaxSaleHQ.com",
         "https://www.govconwinners.com/",
-        "https://www.instagram.com/erizzyy/",
         "https://www.MediaOptions.com",
         "http://CaseyDenman.com",
         "http://Facebook.com/TheTaxSaleAcademy",
@@ -1239,9 +1239,9 @@
     {
       "topic_id": "contracts_and_compensation",
       "title": "Fee Agreements, Assignments of Interest & Escrow Disbursement",
-      "video_count": 3291,
-      "tip_count": 5875,
-      "channel_count": 2064,
+      "video_count": 3413,
+      "tip_count": 6087,
+      "channel_count": 2139,
       "top_sources": [
         {
           "video_id": "VBvaq5etzV4",
@@ -1383,12 +1383,12 @@
           "verbatim_research_only": true
         },
         {
-          "tip_paraphrase_summary": "Which means you get an interest rate when they pay it off, and the other half offer tax deeds, which means you put the…",
-          "category": "Legal / Deadline",
-          "timestamp": "00:01:42",
-          "link": "https://www.youtube.com/watch?v=nbHUraglUQo&t=102s",
-          "video_title": "How To Buy Over-The-Counter Tax Deeds",
-          "author": "Saen Higgins",
+          "tip_paraphrase_summary": "Not even connected he told me don't worry about it it's dead I just want to see it so run I can hear power…",
+          "category": "Pitfall / Hard No",
+          "timestamp": "00:18:22",
+          "link": "https://www.youtube.com/watch?v=SEESfrbGoLY&t=1102s",
+          "video_title": "How to Buy and Sell Government Auction Items for Profit - NO TITLES NEEDED!",
+          "author": "Flying Wheels",
           "verbatim_research_only": true
         }
       ],
@@ -1409,24 +1409,24 @@
         "form your",
         "form in",
         "form like",
-        "court order",
         "form where",
-        "form as",
+        "court order",
         "quiet title",
+        "form as",
         "form below",
         "form at",
+        "form I",
         "Chapter 7",
         "form it",
         "form their",
         "Form uh",
-        "form I",
         "letters of administration",
         "form which",
         "form um",
         "Chapter 13",
-        "form content",
         "form if",
         "form called",
+        "form content",
         "form we",
         "form here",
         "Protection Act",
@@ -1440,8 +1440,8 @@
         "LinkedIn",
         "Excel",
         "CSV",
-        "Ancestry",
         "https://excesselite.com",
+        "Ancestry",
         "https://www.facebook.com/groups/assetrecovery",
         "https://www.moneymakingjug.com/inquiry",
         "Bing",
@@ -1480,9 +1480,9 @@
     {
       "topic_id": "statutory_caps_and_licensing",
       "title": "State Fee Caps, Waiting Periods, PI Licensing & UPL Rules",
-      "video_count": 3532,
-      "tip_count": 3617,
-      "channel_count": 2177,
+      "video_count": 3685,
+      "tip_count": 3679,
+      "channel_count": 2267,
       "top_sources": [
         {
           "video_id": "ttoT3V6duzU",
@@ -1637,8 +1637,8 @@
         "form of",
         "form and",
         "form that",
-        "form to",
         "form is",
+        "form to",
         "form for",
         "form the",
         "form you",
@@ -1646,34 +1646,34 @@
         "form a",
         "form on",
         "form your",
-        "court order",
         "form in",
-        "form with",
+        "court order",
         "form where",
+        "form with",
         "form so",
         "form like",
         "quiet title",
         "form below",
         "form it",
+        "Form uh",
         "Chapter 7",
         "form their",
-        "Form uh",
+        "form I",
         "letters of administration",
         "Chapter 13",
         "form as",
-        "form I",
         "form at",
-        "Protection Act",
         "form but",
+        "form if",
+        "form which",
+        "Protection Act",
         "form um",
         "form we",
-        "form which",
         "form Commercial",
-        "form if",
         "form here",
         "warranty deed",
-        "form an",
-        "letters testamentary"
+        "property Act",
+        "form an"
       ],
       "tools_and_portals": [
         "Google",
@@ -1683,9 +1683,9 @@
         "CSV",
         "Ancestry",
         "https://excesselite.com",
-        "Bing",
         "https://www.facebook.com/groups/assetrecovery",
         "https://www.moneymakingjug.com/inquiry",
+        "Bing",
         "FamilySearch",
         "https://probatemastery.com",
         "https://www.instagram.com/erizzyy/",
@@ -1721,9 +1721,9 @@
     {
       "topic_id": "automation_and_small_team_ops",
       "title": "Docket Automation, AI Abstracting & Small-Team Operations",
-      "video_count": 2962,
-      "tip_count": 7940,
-      "channel_count": 1952,
+      "video_count": 3073,
+      "tip_count": 8134,
+      "channel_count": 2025,
       "top_sources": [
         {
           "video_id": "zqtx1Soeq5E",
@@ -1893,24 +1893,24 @@
         "form in",
         "form like",
         "court order",
-        "form as",
         "form below",
+        "form as",
         "form it",
         "form which",
-        "letters of administration",
         "Form uh",
+        "letters of administration",
         "form at",
         "form content",
         "form if",
         "Chapter 7",
+        "form I",
         "form we",
         "form but",
-        "form I",
         "form um",
-        "form here",
-        "Chapter 13",
         "form called",
         "form from",
+        "form here",
+        "Chapter 13",
         "form their",
         "form because",
         "form this",
@@ -1968,9 +1968,9 @@
       "headline": "Heir location is paid on contingency, never on up-front fees.",
       "summary": "Across the corpus, operators converge on a pure contingency model: the heir pays nothing out of pocket, the locator advances all research cost, and the fee is a negotiated percentage released only when the estate or state agency actually disburses funds. Charging an heir an advance fee is treated as the single clearest marker of a predatory or unlicensed operator.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 2156,
-      "video_count": 3310,
-      "corroborating_tip_count": 6692,
+      "channel_count": 2211,
+      "video_count": 3392,
+      "corroborating_tip_count": 6837,
       "supporting_links": [
         {
           "video_title": "State Funds Tutorial New Mexico: How To Register As A Property Locator In The State Of New Mexico.",
@@ -2018,9 +2018,9 @@
       "headline": "Fresh county probate and intestate dockets outperform purchased lead lists.",
       "summary": "Practitioners consistently build pipeline from newly filed probate and administration matters pulled directly from county clerk portals rather than resold lists. Filings naming an administrator but no located heirs, and estates sitting open past the local notice period, are the recurring high-value signal.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 1956,
-      "video_count": 3177,
-      "corroborating_tip_count": 6630,
+      "channel_count": 2045,
+      "video_count": 3326,
+      "corroborating_tip_count": 6695,
       "supporting_links": [
         {
           "video_title": "Before Your Next Land Deal: 7 Things to Know - REWBCON 2022 with Seth Williams",
@@ -2068,9 +2068,9 @@
       "headline": "State unclaimed-property and escheat databases supply the repeatable volume.",
       "summary": "Every state treasury or controller maintains a searchable unclaimed-property register, and the consensus workflow is to cross-reference deceased owners there against probate filings. Volume comes from systematic register sweeps; size comes from the rarer escheated estate, surplus-funds and safe-deposit categories.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 573,
-      "video_count": 879,
-      "corroborating_tip_count": 1927,
+      "channel_count": 621,
+      "video_count": 951,
+      "corroborating_tip_count": 2375,
       "supporting_links": [
         {
           "video_title": "How To Claim Surplus Funds From Foreclosure",
@@ -2118,9 +2118,9 @@
       "headline": "The deliverable is a document-backed kinship chain, not a name on a list.",
       "summary": "Operators agree that claims succeed or fail on the evidentiary chain: each generational link supported by vital records, each branch mapped per stirpes, and every gap closed before contact. Tree hints from consumer genealogy sites are treated as leads to verify, never as proof to submit.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 2189,
-      "video_count": 3428,
-      "corroborating_tip_count": 4394,
+      "channel_count": 2290,
+      "video_count": 3595,
+      "corroborating_tip_count": 4788,
       "supporting_links": [
         {
           "video_title": "Understanding Aircraft Brokerage: Standards, Risk, and Trust",
@@ -2168,9 +2168,9 @@
       "headline": "Verify identity before contact, then lead with restraint, not the dollar figure.",
       "summary": "The recurring outreach pattern is: skip trace to a confirmed current address and phone, open by letter or a short calm call, state that funds may be owed to the family without naming an amount, and give the heir a way to independently verify the operator. Pressure tactics and inflated figures are consistently reported as the fastest way to lose a signed file.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 1490,
-      "video_count": 2347,
-      "corroborating_tip_count": 1257,
+      "channel_count": 1522,
+      "video_count": 2398,
+      "corroborating_tip_count": 1264,
       "supporting_links": [
         {
           "video_title": "How to Become a Freight Agent in 2027 (No Experience Needed)",
@@ -2218,9 +2218,9 @@
       "headline": "No work proceeds without a signed fee agreement and third-party escrow.",
       "summary": "Consensus practice is a plain-language, notarized or e-signed agreement that names the estate, states the percentage, discloses the heir's right to claim independently, and routes funds through attorney trust or licensed escrow so the locator never holds the heir's money directly.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 2064,
-      "video_count": 3291,
-      "corroborating_tip_count": 5875,
+      "channel_count": 2139,
+      "video_count": 3413,
+      "corroborating_tip_count": 6087,
       "supporting_links": [
         {
           "video_title": "Topical Authority With Koray Tuğberk GÜBÜR",
@@ -2268,9 +2268,9 @@
       "headline": "Fee caps, waiting periods and licensing are decided per state, before the first call.",
       "summary": "Operators repeatedly stress that the governing rules — percentage caps on unclaimed-property recoveries, mandatory waiting periods after escheat or sale, private-investigator licensing triggers, and the line against practicing law — vary by jurisdiction and must be read in the local statute for every file rather than generalized from another state.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 2177,
-      "video_count": 3532,
-      "corroborating_tip_count": 3617,
+      "channel_count": 2267,
+      "video_count": 3685,
+      "corroborating_tip_count": 3679,
       "supporting_links": [
         {
           "video_title": "How To Start Wholesale Real Estate In 2027 (15hrs/wk)!",
@@ -2318,9 +2318,9 @@
       "headline": "Automated docket monitoring plus AI abstracting lets one or two people run real volume.",
       "summary": "The operational consensus is to automate the repetitive layer — scheduled docket and register pulls, structured intake into a sheet or CRM, AI-assisted abstracting of filings — while keeping genealogy judgment, heir contact and contract execution human. That split is what keeps a two-person shop competitive against staffed firms.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 1952,
-      "video_count": 2962,
-      "corroborating_tip_count": 7940,
+      "channel_count": 2025,
+      "video_count": 3073,
+      "corroborating_tip_count": 8134,
       "supporting_links": [
         {
           "video_title": "How To Find Comps For Land",
@@ -2746,8 +2746,8 @@
         "asset_id": "youtube_thumbnails",
         "asset": "https://i.ytimg.com/vi/<video_id>/*.jpg",
         "asset_type": "youtube_thumbnail_image",
-        "source": "YouTube CDN thumbnails for the 4184 corpus videos",
-        "instance_count": 4184,
+        "source": "YouTube CDN thumbnails for the 4359 corpus videos",
+        "instance_count": 4359,
         "instances": [
           {
             "video_id": "9Q4qYeK5DTg",
@@ -32036,6 +32036,1231 @@
             "author": "Victor Mason",
             "thumbnail_url": "https://i.ytimg.com/vi/o2G4zRoNHt4/hqdefault.jpg",
             "source_url": "https://www.youtube.com/watch?v=o2G4zRoNHt4"
+          },
+          {
+            "video_id": "q09PUtJPIxs",
+            "title": "HOW TO FIND and BUY at Government Surplus Auctions",
+            "author": "East Coast Classics",
+            "thumbnail_url": "https://i.ytimg.com/vi/q09PUtJPIxs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=q09PUtJPIxs"
+          },
+          {
+            "video_id": "SEESfrbGoLY",
+            "title": "How to Buy and Sell Government Auction Items for Profit - NO TITLES NEEDED!",
+            "author": "Flying Wheels",
+            "thumbnail_url": "https://i.ytimg.com/vi/SEESfrbGoLY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=SEESfrbGoLY"
+          },
+          {
+            "video_id": "EFXJtp6q_B8",
+            "title": "Are government auctions worth it?",
+            "author": "Tool Demos",
+            "thumbnail_url": "https://i.ytimg.com/vi/EFXJtp6q_B8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=EFXJtp6q_B8"
+          },
+          {
+            "video_id": "E3mh6G6h8zM",
+            "title": "What do Federal Government Surplus Vehicles Sell For at Auction? Part 1 of 3",
+            "author": "Auction Reviews With Jeff",
+            "thumbnail_url": "https://i.ytimg.com/vi/E3mh6G6h8zM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=E3mh6G6h8zM"
+          },
+          {
+            "video_id": "Z87d62pWVEk",
+            "title": "How to Buy at Government Auctions: Police Cars & Surplus Vehicles",
+            "author": "UX Auctions",
+            "thumbnail_url": "https://i.ytimg.com/vi/Z87d62pWVEk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Z87d62pWVEk"
+          },
+          {
+            "video_id": "7H4B9rdQrOU",
+            "title": "Government Surplus Auctions Are A Gold Mine Of Money!",
+            "author": "MAN VS MYSTERY",
+            "thumbnail_url": "https://i.ytimg.com/vi/7H4B9rdQrOU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=7H4B9rdQrOU"
+          },
+          {
+            "video_id": "3ej4xfd_ers",
+            "title": "Rainy Gov Vehicle Auction Preview | Some Nice Trucks (Part 1)",
+            "author": "Auction Reviews With Jeff",
+            "thumbnail_url": "https://i.ytimg.com/vi/3ej4xfd_ers/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=3ej4xfd_ers"
+          },
+          {
+            "video_id": "pN1E-KA7qxw",
+            "title": "GovDeals Ford F150 4X4 Great deal, or did I get burned? #govdeals #ford #f150 #auction",
+            "author": "FlatBroke Garage",
+            "thumbnail_url": "https://i.ytimg.com/vi/pN1E-KA7qxw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=pN1E-KA7qxw"
+          },
+          {
+            "video_id": "x8_btciMVuY",
+            "title": "Are government auctions actually legit?",
+            "author": "GovAuctions",
+            "thumbnail_url": "https://i.ytimg.com/vi/x8_btciMVuY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=x8_btciMVuY"
+          },
+          {
+            "video_id": "mnHD_DqC7xk",
+            "title": "I bought a Ford Escape on GovDeals, was it worth it?",
+            "author": "FlatBroke Garage",
+            "thumbnail_url": "https://i.ytimg.com/vi/mnHD_DqC7xk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=mnHD_DqC7xk"
+          },
+          {
+            "video_id": "cZOfyxWtGp8",
+            "title": "MORE TRUCK PRICES From GSA Auction",
+            "author": "Auction Reviews With Jeff",
+            "thumbnail_url": "https://i.ytimg.com/vi/cZOfyxWtGp8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=cZOfyxWtGp8"
+          },
+          {
+            "video_id": "2Zb68VFEJ1c",
+            "title": "Federal Government (GSA) Auction Review | PICKUP TRUCKS!",
+            "author": "Auction Reviews With Jeff",
+            "thumbnail_url": "https://i.ytimg.com/vi/2Zb68VFEJ1c/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=2Zb68VFEJ1c"
+          },
+          {
+            "video_id": "6-YX9_QfY1A",
+            "title": "What Do Government Vehicles ACTUALLY Sell For at Auctions",
+            "author": "Auction Reviews With Jeff",
+            "thumbnail_url": "https://i.ytimg.com/vi/6-YX9_QfY1A/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=6-YX9_QfY1A"
+          },
+          {
+            "video_id": "cqTAqIJLC10",
+            "title": "Government auto auctions $1500.00 what did we buy?",
+            "author": "Street Rat Garage",
+            "thumbnail_url": "https://i.ytimg.com/vi/cqTAqIJLC10/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=cqTAqIJLC10"
+          },
+          {
+            "video_id": "HQ3YV3h4sC4",
+            "title": "Gov Auction Prices for Excavators | Skid Steers | Dump Trucks and MORE!",
+            "author": "Auction Reviews With Jeff",
+            "thumbnail_url": "https://i.ytimg.com/vi/HQ3YV3h4sC4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=HQ3YV3h4sC4"
+          },
+          {
+            "video_id": "gIFFMdh2fBk",
+            "title": "What do Federal Government Surplus Vehicles Sell For at Auction Part 3 of 3",
+            "author": "Auction Reviews With Jeff",
+            "thumbnail_url": "https://i.ytimg.com/vi/gIFFMdh2fBk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=gIFFMdh2fBk"
+          },
+          {
+            "video_id": "PprDL7wH0FQ",
+            "title": "Government Auction SOLD Prices for Construction Equipment FEB 2026",
+            "author": "Auction Reviews With Jeff",
+            "thumbnail_url": "https://i.ytimg.com/vi/PprDL7wH0FQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=PprDL7wH0FQ"
+          },
+          {
+            "video_id": "P82Ir2OeO50",
+            "title": "MORE Government Auction Prices for Trucks, Vans, Buses and More!",
+            "author": "Auction Reviews With Jeff",
+            "thumbnail_url": "https://i.ytimg.com/vi/P82Ir2OeO50/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=P82Ir2OeO50"
+          },
+          {
+            "video_id": "rDFBP32Mq2I",
+            "title": "State Government Auction Prices for Dump Trucks, Small Equipment, Lawn Attachments, Tractors...",
+            "author": "Auction Reviews With Jeff",
+            "thumbnail_url": "https://i.ytimg.com/vi/rDFBP32Mq2I/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=rDFBP32Mq2I"
+          },
+          {
+            "video_id": "iauTGRI39kE",
+            "title": "Government Surplus Vehicle Auction Walkthrough | Nice Trucks and Cars and More...",
+            "author": "Auction Reviews With Jeff",
+            "thumbnail_url": "https://i.ytimg.com/vi/iauTGRI39kE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=iauTGRI39kE"
+          },
+          {
+            "video_id": "Vi6nU6UkkoQ",
+            "title": "Federal Government (GSA) Auction Walk-Through (Cars and SUVs)",
+            "author": "Auction Reviews With Jeff",
+            "thumbnail_url": "https://i.ytimg.com/vi/Vi6nU6UkkoQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Vi6nU6UkkoQ"
+          },
+          {
+            "video_id": "F0AkAibFp2g",
+            "title": "Buying a Govplanet Humvee- Process & Top Tips.",
+            "author": "Kevin24Seven",
+            "thumbnail_url": "https://i.ytimg.com/vi/F0AkAibFp2g/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=F0AkAibFp2g"
+          },
+          {
+            "video_id": "WzbjxUJRWKI",
+            "title": "Would you spend $5k HMMWV from surplus. Gov Planet Hummer Story.",
+            "author": "Rattlesnake Defense",
+            "thumbnail_url": "https://i.ytimg.com/vi/WzbjxUJRWKI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=WzbjxUJRWKI"
+          },
+          {
+            "video_id": "09UUwyLab_0",
+            "title": "BUYING A HUMVEE FROM GOV PLANET",
+            "author": "HHWheels",
+            "thumbnail_url": "https://i.ytimg.com/vi/09UUwyLab_0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=09UUwyLab_0"
+          },
+          {
+            "video_id": "jUJ2GbsJnGw",
+            "title": "So You Want to Buy A Surplus Humvee?",
+            "author": "Kevin24Seven",
+            "thumbnail_url": "https://i.ytimg.com/vi/jUJ2GbsJnGw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=jUJ2GbsJnGw"
+          },
+          {
+            "video_id": "OoVFtojdDNk",
+            "title": "7 Reasons I LOVE my Surplus Humvee (GovPlanet)",
+            "author": "Kevin24Seven",
+            "thumbnail_url": "https://i.ytimg.com/vi/OoVFtojdDNk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=OoVFtojdDNk"
+          },
+          {
+            "video_id": "TLQhxsY7JoE",
+            "title": "Buying a Humvee - GovPlanet VS FaceBook MarketPlace",
+            "author": "Kevin24Seven",
+            "thumbnail_url": "https://i.ytimg.com/vi/TLQhxsY7JoE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=TLQhxsY7JoE"
+          },
+          {
+            "video_id": "Vl0TRUioSn0",
+            "title": "GovPlanet Humvee- Total Build Cost",
+            "author": "Kevin24Seven",
+            "thumbnail_url": "https://i.ytimg.com/vi/Vl0TRUioSn0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Vl0TRUioSn0"
+          },
+          {
+            "video_id": "oACqhA0f4EM",
+            "title": "I Bought a SURPLUS HUMVEE at a GovPlanet Auction and Here's What I Found",
+            "author": "Midnight Machine Shop",
+            "thumbnail_url": "https://i.ytimg.com/vi/oACqhA0f4EM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=oACqhA0f4EM"
+          },
+          {
+            "video_id": "_tJQ6S_OaBc",
+            "title": "We bought a military surplus Humvee!",
+            "author": "The Midnight Mechanic",
+            "thumbnail_url": "https://i.ytimg.com/vi/_tJQ6S_OaBc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=_tJQ6S_OaBc"
+          },
+          {
+            "video_id": "Wg0ziRtQ9JM",
+            "title": "How to Buy a Government Surplus Army Truck or Humvee - Dirt Every Day Extra",
+            "author": "MotorTrend Channel",
+            "thumbnail_url": "https://i.ytimg.com/vi/Wg0ziRtQ9JM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Wg0ziRtQ9JM"
+          },
+          {
+            "video_id": "6iKYdGlqqP4",
+            "title": "Military Equipment Auction GovPlanet CHEAP HUMVEE!",
+            "author": "TK's Garage",
+            "thumbnail_url": "https://i.ytimg.com/vi/6iKYdGlqqP4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=6iKYdGlqqP4"
+          },
+          {
+            "video_id": "CkfJvTDwa2w",
+            "title": "How to buy a Government Surplus Humvee",
+            "author": "Split Builds",
+            "thumbnail_url": "https://i.ytimg.com/vi/CkfJvTDwa2w/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=CkfJvTDwa2w"
+          },
+          {
+            "video_id": "3QWRjujnz2E",
+            "title": "I just bought a M1097R1 Heavy Spec Humvee from govplanet.com!",
+            "author": "Midwestern Garage",
+            "thumbnail_url": "https://i.ytimg.com/vi/3QWRjujnz2E/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=3QWRjujnz2E"
+          },
+          {
+            "video_id": "QOcs7dzmhGk",
+            "title": "Bibb County Schools auction surplus items",
+            "author": "41NBC",
+            "thumbnail_url": "https://i.ytimg.com/vi/QOcs7dzmhGk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=QOcs7dzmhGk"
+          },
+          {
+            "video_id": "sbKbkYznbo4",
+            "title": "You Won’t Believe What This State University Sells at their Annual Surplus Auction!",
+            "author": "R25 Country",
+            "thumbnail_url": "https://i.ytimg.com/vi/sbKbkYznbo4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=sbKbkYznbo4"
+          },
+          {
+            "video_id": "5kDb2ezDhgo",
+            "title": "Everything must go at government surplus auction in Springfield",
+            "author": "WMBB News 13",
+            "thumbnail_url": "https://i.ytimg.com/vi/5kDb2ezDhgo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=5kDb2ezDhgo"
+          },
+          {
+            "video_id": "8HnHBuGYT6Y",
+            "title": "DLA Disposition Services: DOD's Reverse Logistics Experts",
+            "author": "Defense Logistics Agency",
+            "thumbnail_url": "https://i.ytimg.com/vi/8HnHBuGYT6Y/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=8HnHBuGYT6Y"
+          },
+          {
+            "video_id": "P3RfMbWlTYg",
+            "title": "Deploy the Dog: DLA Disposition Services Expeditionary Site Set (Open Caption)",
+            "author": "Defense Logistics Agency",
+            "thumbnail_url": "https://i.ytimg.com/vi/P3RfMbWlTYg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=P3RfMbWlTYg"
+          },
+          {
+            "video_id": "HYKDZ7wW8ik",
+            "title": "Logistics On Location: DLA Disposition Services, Ft Meade, MD (long version)",
+            "author": "Defense Logistics Agency",
+            "thumbnail_url": "https://i.ytimg.com/vi/HYKDZ7wW8ik/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=HYKDZ7wW8ik"
+          },
+          {
+            "video_id": "Y895jCYSE5A",
+            "title": "Traceability, Cost Breakdowns, and Counteroffers for Government Contracts - DLA / DIBBS",
+            "author": "Tris10 @ MeND",
+            "thumbnail_url": "https://i.ytimg.com/vi/Y895jCYSE5A/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Y895jCYSE5A"
+          },
+          {
+            "video_id": "tEbWiX3Z22A",
+            "title": "What is ITAR Compliance? | Cleared Systems",
+            "author": "Cleared Systems",
+            "thumbnail_url": "https://i.ytimg.com/vi/tEbWiX3Z22A/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=tEbWiX3Z22A"
+          },
+          {
+            "video_id": "-T-caQVAr7g",
+            "title": "What is a Resale Certificate and How Can You Get One? | Tax Exemption for Wholesale Products",
+            "author": "Kai Ashley ED",
+            "thumbnail_url": "https://i.ytimg.com/vi/-T-caQVAr7g/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=-T-caQVAr7g"
+          },
+          {
+            "video_id": "tahP--1EvSE",
+            "title": "How to Add and Approve a Customer Resale Certificate for Sales Tax Exemption | SKU.io",
+            "author": "SKUio",
+            "thumbnail_url": "https://i.ytimg.com/vi/tahP--1EvSE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=tahP--1EvSE"
+          },
+          {
+            "video_id": "vwdB1U0_hGs",
+            "title": "How to Fill Out Your California Resale Certificate | Business Sales Tax Exemption | *UPDATED 2022*",
+            "author": "Matt Sokol Business",
+            "thumbnail_url": "https://i.ytimg.com/vi/vwdB1U0_hGs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=vwdB1U0_hGs"
+          },
+          {
+            "video_id": "4OfpzpJeXjQ",
+            "title": "Stop Overpaying Sales Tax in These States (MTC Resale Certificate Tutorial)",
+            "author": "LedgerGurus: Ecommerce Accounting Experts",
+            "thumbnail_url": "https://i.ytimg.com/vi/4OfpzpJeXjQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=4OfpzpJeXjQ"
+          },
+          {
+            "video_id": "Cn-vsd4HlTE",
+            "title": "How to Get a Sales Tax Exemption Certificate",
+            "author": "LedgerGurus: Ecommerce Accounting Experts",
+            "thumbnail_url": "https://i.ytimg.com/vi/Cn-vsd4HlTE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Cn-vsd4HlTE"
+          },
+          {
+            "video_id": "uZA19ayitYY",
+            "title": "Sales Tax Compliance- Top 5 Resale Certificate & Exemption Certificate Mistakes",
+            "author": "Sales Tax Sisters",
+            "thumbnail_url": "https://i.ytimg.com/vi/uZA19ayitYY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=uZA19ayitYY"
+          },
+          {
+            "video_id": "WZL5m9rfNSQ",
+            "title": "Texas Sales Tax Exemption Certificate: Who Pays If It Fails (2026)",
+            "author": "Tax Expert Today",
+            "thumbnail_url": "https://i.ytimg.com/vi/WZL5m9rfNSQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=WZL5m9rfNSQ"
+          },
+          {
+            "video_id": "CiHy9lcx3x4",
+            "title": "What is a resale certificate and why do i need one? //Serie",
+            "author": "James Baker CPA",
+            "thumbnail_url": "https://i.ytimg.com/vi/CiHy9lcx3x4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=CiHy9lcx3x4"
+          },
+          {
+            "video_id": "1YNFxlnPOZM",
+            "title": "How to Get a Resale Certificate in 2026 (Buy Blank Shirts Tax Free)",
+            "author": "T-SHIRT KINGS",
+            "thumbnail_url": "https://i.ytimg.com/vi/1YNFxlnPOZM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=1YNFxlnPOZM"
+          },
+          {
+            "video_id": "iNfW7YXuTOA",
+            "title": "How To Avoid Sales Tax With Online Arbitrage | Reseller Certificates 101",
+            "author": "Jack Hagwell",
+            "thumbnail_url": "https://i.ytimg.com/vi/iNfW7YXuTOA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=iNfW7YXuTOA"
+          },
+          {
+            "video_id": "lnmHPqYrNN8",
+            "title": "How YOU SHOULD Actually Obtain And Use Resale Certificates",
+            "author": "Hands Off Sales Tax (HOST)",
+            "thumbnail_url": "https://i.ytimg.com/vi/lnmHPqYrNN8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=lnmHPqYrNN8"
+          },
+          {
+            "video_id": "InXP0n0EggQ",
+            "title": "Seller's Permit vs Resale Certificate: The Simple Breakdown",
+            "author": "Hands Off Sales Tax (HOST)",
+            "thumbnail_url": "https://i.ytimg.com/vi/InXP0n0EggQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=InXP0n0EggQ"
+          },
+          {
+            "video_id": "It-VnUi3x58",
+            "title": "How to EASILY Get a Resale Certificate for Dropshipping",
+            "author": "LedgerGurus: Ecommerce Accounting Experts",
+            "thumbnail_url": "https://i.ytimg.com/vi/It-VnUi3x58/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=It-VnUi3x58"
+          },
+          {
+            "video_id": "vzTkoCCX7ck",
+            "title": "Stop Paying Sales Tax with This One Form (SST Resale Certificate Tutorial)",
+            "author": "LedgerGurus: Ecommerce Accounting Experts",
+            "thumbnail_url": "https://i.ytimg.com/vi/vzTkoCCX7ck/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=vzTkoCCX7ck"
+          },
+          {
+            "video_id": "m4wTDvPYQuA",
+            "title": "Sorting a Random Military Surplus Pallet",
+            "author": "Gear Rack",
+            "thumbnail_url": "https://i.ytimg.com/vi/m4wTDvPYQuA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=m4wTDvPYQuA"
+          },
+          {
+            "video_id": "KyKSH6vNrZ8",
+            "title": "IronPlanet Overview - English",
+            "author": "IronPlanet",
+            "thumbnail_url": "https://i.ytimg.com/vi/KyKSH6vNrZ8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=KyKSH6vNrZ8"
+          },
+          {
+            "video_id": "rn9oCm5t39A",
+            "title": "IronPlanet Webinar - Episode 1: From eBay to Excavators - Planning for Profit in the Digital Age",
+            "author": "IronPlanet Marketing",
+            "thumbnail_url": "https://i.ytimg.com/vi/rn9oCm5t39A/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=rn9oCm5t39A"
+          },
+          {
+            "video_id": "-1B3hGKjbz0",
+            "title": "How to Bid Online at IronPlanet Auction",
+            "author": "IronPlanet",
+            "thumbnail_url": "https://i.ytimg.com/vi/-1B3hGKjbz0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=-1B3hGKjbz0"
+          },
+          {
+            "video_id": "8FXm7sOaFwg",
+            "title": "Iron Planet auction purchase, worth it?",
+            "author": "Dave Doing Things",
+            "thumbnail_url": "https://i.ytimg.com/vi/8FXm7sOaFwg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=8FXm7sOaFwg"
+          },
+          {
+            "video_id": "Un4UP8ZN-Pk",
+            "title": "IronPlanet - Auctions you can trust",
+            "author": "IronPlanet",
+            "thumbnail_url": "https://i.ytimg.com/vi/Un4UP8ZN-Pk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Un4UP8ZN-Pk"
+          },
+          {
+            "video_id": "rsMWDCVh1cE",
+            "title": "IronPlanet - The Place to Buy & Sell Used Equipment",
+            "author": "IronPlanet",
+            "thumbnail_url": "https://i.ytimg.com/vi/rsMWDCVh1cE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=rsMWDCVh1cE"
+          },
+          {
+            "video_id": "phjpnOl7Hto",
+            "title": "What is IronPlanet?",
+            "author": "IronPlanet",
+            "thumbnail_url": "https://i.ytimg.com/vi/phjpnOl7Hto/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=phjpnOl7Hto"
+          },
+          {
+            "video_id": "drW14-jA62E",
+            "title": "$1,500 at a Florida Marina Auction Buys More Than You Think — What Captains Took Home",
+            "author": "Sea Auctions",
+            "thumbnail_url": "https://i.ytimg.com/vi/drW14-jA62E/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=drW14-jA62E"
+          },
+          {
+            "video_id": "uOA3FOVLCGA",
+            "title": "Vehicle Ownership Documents Explained | Title, Registration, MCO, SF-97 & More",
+            "author": "Zero Tax Tags",
+            "thumbnail_url": "https://i.ytimg.com/vi/uOA3FOVLCGA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=uOA3FOVLCGA"
+          },
+          {
+            "video_id": "-S82T9iXF7Q",
+            "title": "MCOs & CERTIFICATE OF TITLE DESCRIPTIONS-TITLE PROCESS",
+            "author": "Wisdom & Authority Title Solutions",
+            "thumbnail_url": "https://i.ytimg.com/vi/-S82T9iXF7Q/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=-S82T9iXF7Q"
+          },
+          {
+            "video_id": "9EAPaeoXhFs",
+            "title": "How to Make Your Humvee or Military Vehicle STREET LEGAL!",
+            "author": "Dirt Legal",
+            "thumbnail_url": "https://i.ytimg.com/vi/9EAPaeoXhFs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=9EAPaeoXhFs"
+          },
+          {
+            "video_id": "-MWjNKD7-e8",
+            "title": "How to Easily Register Your Salvage Title Vehicle",
+            "author": "Dirt Legal",
+            "thumbnail_url": "https://i.ytimg.com/vi/-MWjNKD7-e8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=-MWjNKD7-e8"
+          },
+          {
+            "video_id": "vkoGZ6Y4EhU",
+            "title": "Never, EVER Bid on These 7 ‘Scrap’ Traps — 30 Years at Government Auctions Taught Me This",
+            "author": "Vantor Insider",
+            "thumbnail_url": "https://i.ytimg.com/vi/vkoGZ6Y4EhU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=vkoGZ6Y4EhU"
+          },
+          {
+            "video_id": "VA8oRw7jQuQ",
+            "title": "Why the Pentagon Is Forced to Auction Brand-New Diesel Generators as “Unserviceable Scrap”",
+            "author": "Vantor Surplus",
+            "thumbnail_url": "https://i.ytimg.com/vi/VA8oRw7jQuQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=VA8oRw7jQuQ"
+          },
+          {
+            "video_id": "wNIgM_BLGik",
+            "title": "7 Common Mistakes to Avoid When Buying Cars at Copart, IAAI",
+            "author": "AutoHacker",
+            "thumbnail_url": "https://i.ytimg.com/vi/wNIgM_BLGik/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=wNIgM_BLGik"
+          },
+          {
+            "video_id": "xwqMdeMDNSg",
+            "title": "The Pentagon Rule Forcing US Bases to Auction Zero-Hour Diesel Trucks as \"Scrap Metal\"",
+            "author": "Vantor Surplus",
+            "thumbnail_url": "https://i.ytimg.com/vi/xwqMdeMDNSg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=xwqMdeMDNSg"
+          },
+          {
+            "video_id": "XAvSq6gx5KQ",
+            "title": "How To Make MONEY At The Equipment Auction! (and avoid the mistakes)",
+            "author": "Casey LaDelle",
+            "thumbnail_url": "https://i.ytimg.com/vi/XAvSq6gx5KQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=XAvSq6gx5KQ"
+          },
+          {
+            "video_id": "4PdPtt60qn0",
+            "title": "Sealed in Greased Crates Since 1944: 7 Zero-Hour WW2 Vehicles Sold at Scrap Auctions",
+            "author": "Vantor WW2",
+            "thumbnail_url": "https://i.ytimg.com/vi/4PdPtt60qn0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=4PdPtt60qn0"
+          },
+          {
+            "video_id": "bAvpAOGu8Kw",
+            "title": "Scrapping Electronics Scrap in a Tote from a Storage Unit #storageunitfinds #scrapmetal #recycling",
+            "author": "Storage Unit Scrapper",
+            "thumbnail_url": "https://i.ytimg.com/vi/bAvpAOGu8Kw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=bAvpAOGu8Kw"
+          },
+          {
+            "video_id": "HF9Hu38gKMI",
+            "title": "Stopping aging inventory: act fast and auction when needed",
+            "author": "Digital Iron Group",
+            "thumbnail_url": "https://i.ytimg.com/vi/HF9Hu38gKMI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=HF9Hu38gKMI"
+          },
+          {
+            "video_id": "pl4wTzpNWRQ",
+            "title": "What did they sell for? Government Surplus Vehicle Auction WITH PRICES!",
+            "author": "Retired and Winging it",
+            "thumbnail_url": "https://i.ytimg.com/vi/pl4wTzpNWRQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=pl4wTzpNWRQ"
+          },
+          {
+            "video_id": "qieQr_fEJQ8",
+            "title": "Government surplus, public vehicle auction. Police cars and state owned vehicles, anyone can buy!",
+            "author": "Street Rat Garage",
+            "thumbnail_url": "https://i.ytimg.com/vi/qieQr_fEJQ8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=qieQr_fEJQ8"
+          },
+          {
+            "video_id": "Ezeprg6O_GU",
+            "title": "GOVERNMENT SURPLUS! Get Free & Cheap Property, Equipment, Cars & More",
+            "author": "Matthew Lesko",
+            "thumbnail_url": "https://i.ytimg.com/vi/Ezeprg6O_GU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Ezeprg6O_GU"
+          },
+          {
+            "video_id": "VKFtBFmCW4U",
+            "title": "$1,500 at a Government Auction Buys More Than You Think — What Mechanics Drove Home Will Shock You",
+            "author": "Vantor Surplus",
+            "thumbnail_url": "https://i.ytimg.com/vi/VKFtBFmCW4U/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=VKFtBFmCW4U"
+          },
+          {
+            "video_id": "ovCY1VA7klw",
+            "title": "NH State Surplus Live Auction Day Spring 2023",
+            "author": "Sean Drake",
+            "thumbnail_url": "https://i.ytimg.com/vi/ovCY1VA7klw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ovCY1VA7klw"
+          },
+          {
+            "video_id": "J-UWth-6Hd0",
+            "title": "More Auction Prices for Campers, Motorhomes, Trailers, Boats, Mowers, Generators & More!",
+            "author": "Auction Reviews With Jeff",
+            "thumbnail_url": "https://i.ytimg.com/vi/J-UWth-6Hd0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=J-UWth-6Hd0"
+          },
+          {
+            "video_id": "WGe7vjs5ktc",
+            "title": "27 Things Government Auctions Sell Every Week (And What They Really Cost)",
+            "author": "Vantor Insider",
+            "thumbnail_url": "https://i.ytimg.com/vi/WGe7vjs5ktc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=WGe7vjs5ktc"
+          },
+          {
+            "video_id": "KdtNDjlE4WQ",
+            "title": "5+ Million in Surplus Opportunities Texas and Georgia 11/4 sale",
+            "author": "Money Making Juggernaut",
+            "thumbnail_url": "https://i.ytimg.com/vi/KdtNDjlE4WQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=KdtNDjlE4WQ"
+          },
+          {
+            "video_id": "MmWoRR82S9g",
+            "title": "Realtor Tries Surplus Funds And Does $94,000 in Deals In Her First Year",
+            "author": "Money Making Juggernaut",
+            "thumbnail_url": "https://i.ytimg.com/vi/MmWoRR82S9g/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=MmWoRR82S9g"
+          },
+          {
+            "video_id": "utk0mvTVyMM",
+            "title": "Exploring Government Surplus Facility - For Hidden Rent-Out Gems",
+            "author": "The Rental Journey",
+            "thumbnail_url": "https://i.ytimg.com/vi/utk0mvTVyMM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=utk0mvTVyMM"
+          },
+          {
+            "video_id": "X_Oq8vv4j_c",
+            "title": "Got a Surplus Funds Contract? Here’s Your Next Move",
+            "author": "Overage Acquisition",
+            "thumbnail_url": "https://i.ytimg.com/vi/X_Oq8vv4j_c/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=X_Oq8vv4j_c"
+          },
+          {
+            "video_id": "Fp4VRiP2pnE",
+            "title": "Data Center Solutions Engineered by Fluke",
+            "author": "Test Equipment Depot",
+            "thumbnail_url": "https://i.ytimg.com/vi/Fp4VRiP2pnE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Fp4VRiP2pnE"
+          },
+          {
+            "video_id": "ay9wFQAW19Y",
+            "title": "eevBLAB 91 - Why Are Fluke Meters So EXPENSIVE?",
+            "author": "EEVblog",
+            "thumbnail_url": "https://i.ytimg.com/vi/ay9wFQAW19Y/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ay9wFQAW19Y"
+          },
+          {
+            "video_id": "TipNUpHGLw0",
+            "title": "Keysight Premium Used Equipment: See Keysight's Refurbishment Process",
+            "author": "Keysight",
+            "thumbnail_url": "https://i.ytimg.com/vi/TipNUpHGLw0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=TipNUpHGLw0"
+          },
+          {
+            "video_id": "2ZRWlImJMzE",
+            "title": "First look at my test equipment hoarding! HP, Agilent, Fluke and Tektronix crazyness in my workshop!",
+            "author": "ElectroHoard",
+            "thumbnail_url": "https://i.ytimg.com/vi/2ZRWlImJMzE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=2ZRWlImJMzE"
+          },
+          {
+            "video_id": "5Qaj8MhpVIc",
+            "title": "fluke87V vs the FNIRSI 2C53T I would buy this as my first piece of test equipment",
+            "author": "PA's Shop",
+            "thumbnail_url": "https://i.ytimg.com/vi/5Qaj8MhpVIc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=5Qaj8MhpVIc"
+          },
+          {
+            "video_id": "R8bNgZVNLAk",
+            "title": "Flipping GovDeals Auction Items — Real Numbers & Custom Software",
+            "author": "2plot ai",
+            "thumbnail_url": "https://i.ytimg.com/vi/R8bNgZVNLAk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=R8bNgZVNLAk"
+          },
+          {
+            "video_id": "i3yWMCnu2ac",
+            "title": "Auction Deep Dive: How to Find “Cool” Deals (GovDeals, GSA, Liquidation & Freight Math)",
+            "author": "Shannon Jean",
+            "thumbnail_url": "https://i.ytimg.com/vi/i3yWMCnu2ac/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=i3yWMCnu2ac"
+          },
+          {
+            "video_id": "t9kRwYmHNpE",
+            "title": "$1,100 at a US Government Auction Buys More Than You Think — 6 Quiet Diesels That Power a House",
+            "author": "Engine Auction",
+            "thumbnail_url": "https://i.ytimg.com/vi/t9kRwYmHNpE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=t9kRwYmHNpE"
+          },
+          {
+            "video_id": "14j6GQVGkBk",
+            "title": "How to Buy a Truck Online (GSA Auction)",
+            "author": "JR",
+            "thumbnail_url": "https://i.ytimg.com/vi/14j6GQVGkBk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=14j6GQVGkBk"
+          },
+          {
+            "video_id": "csOCrIHnuSo",
+            "title": "GSA Auctions Redesign",
+            "author": "GSA (General Services Administration)",
+            "thumbnail_url": "https://i.ytimg.com/vi/csOCrIHnuSo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=csOCrIHnuSo"
+          },
+          {
+            "video_id": "Dga3YkAiGmw",
+            "title": "GSA Auctions: Offline Bidding Opportunities",
+            "author": "GSA (General Services Administration)",
+            "thumbnail_url": "https://i.ytimg.com/vi/Dga3YkAiGmw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Dga3YkAiGmw"
+          },
+          {
+            "video_id": "JzuRczRAlW8",
+            "title": "GSA Auctions: Online Bidding Opportunities",
+            "author": "GSA (General Services Administration)",
+            "thumbnail_url": "https://i.ytimg.com/vi/JzuRczRAlW8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=JzuRczRAlW8"
+          },
+          {
+            "video_id": "c9mCACUk14Y",
+            "title": "60-SECOND GOVERNMENT AUCTION REPORT — NOVEMBER 19, 2026!",
+            "author": "UX Auctions",
+            "thumbnail_url": "https://i.ytimg.com/vi/c9mCACUk14Y/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=c9mCACUk14Y"
+          },
+          {
+            "video_id": "zEvheNxg0WE",
+            "title": "Viewing construction and mining assets for my clients at the auctions - AuctionHub Review",
+            "author": "AuctionHub SA",
+            "thumbnail_url": "https://i.ytimg.com/vi/zEvheNxg0WE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=zEvheNxg0WE"
+          },
+          {
+            "video_id": "RvlA07ePLd4",
+            "title": "GSA Government Auction Industrial Equipment ~ Tractors Semi Trucks Classic Cars ~ Government Waste",
+            "author": "Cereal Marshmallows",
+            "thumbnail_url": "https://i.ytimg.com/vi/RvlA07ePLd4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=RvlA07ePLd4"
+          },
+          {
+            "video_id": "WFVGJDWST7I",
+            "title": "Buy a $55K SUV for Under $18K | The Government Auction GOLDMINE Nobody Shows You",
+            "author": "Top 5 Autos",
+            "thumbnail_url": "https://i.ytimg.com/vi/WFVGJDWST7I/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=WFVGJDWST7I"
+          },
+          {
+            "video_id": "gtS8l93r5cw",
+            "title": "What to AVOID When Buying Humvees off GovPlanet",
+            "author": "Kevin24Seven",
+            "thumbnail_url": "https://i.ytimg.com/vi/gtS8l93r5cw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=gtS8l93r5cw"
+          },
+          {
+            "video_id": "k5WD_GKlQhs",
+            "title": "GovPlanet Humvee Entire Buying to Street Legal Process",
+            "author": "Kevin24Seven",
+            "thumbnail_url": "https://i.ytimg.com/vi/k5WD_GKlQhs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=k5WD_GKlQhs"
+          },
+          {
+            "video_id": "VvAg_yxxkPo",
+            "title": "How To Street Legal GovPlanet Humvee (Easy)",
+            "author": "Kevin24Seven",
+            "thumbnail_url": "https://i.ytimg.com/vi/VvAg_yxxkPo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=VvAg_yxxkPo"
+          },
+          {
+            "video_id": "d2qrhLbKEbI",
+            "title": "What's it Cost to Build a BASIC GovPlanet Humvee?",
+            "author": "Kevin24Seven",
+            "thumbnail_url": "https://i.ytimg.com/vi/d2qrhLbKEbI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=d2qrhLbKEbI"
+          },
+          {
+            "video_id": "gXjTPh7cGHU",
+            "title": "Are GovPlanet Humvees a SCAM?",
+            "author": "Kevin24Seven",
+            "thumbnail_url": "https://i.ytimg.com/vi/gXjTPh7cGHU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=gXjTPh7cGHU"
+          },
+          {
+            "video_id": "5QTEGYGbQsw",
+            "title": "GovPlanet Humvee Auctions are Out of Control",
+            "author": "Kevin24Seven",
+            "thumbnail_url": "https://i.ytimg.com/vi/5QTEGYGbQsw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=5QTEGYGbQsw"
+          },
+          {
+            "video_id": "45dQRk6d9Sw",
+            "title": "Will it Run? I Bought a Military Forklift From GovPlanet!",
+            "author": "Scratch Fab",
+            "thumbnail_url": "https://i.ytimg.com/vi/45dQRk6d9Sw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=45dQRk6d9Sw"
+          },
+          {
+            "video_id": "IUAs4NGQfyo",
+            "title": "Watch a Government Surplus Ford F-250 Onsite Vehicle Inspection",
+            "author": "UX Auctions",
+            "thumbnail_url": "https://i.ytimg.com/vi/IUAs4NGQfyo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=IUAs4NGQfyo"
+          },
+          {
+            "video_id": "sG-wAF0b7kQ",
+            "title": "Understanding Your DLA Award - Uncover Potential Pitfalls and Mistakes",
+            "author": "Tris10 @ MeND",
+            "thumbnail_url": "https://i.ytimg.com/vi/sG-wAF0b7kQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=sG-wAF0b7kQ"
+          },
+          {
+            "video_id": "szkqa7FwjYE",
+            "title": "DLA Inspections and Shipping Simplified: Step-by-Step Guide",
+            "author": "Go-to-Market Solutions",
+            "thumbnail_url": "https://i.ytimg.com/vi/szkqa7FwjYE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=szkqa7FwjYE"
+          },
+          {
+            "video_id": "FPLS7VL_qTA",
+            "title": "Sales Tax Bytes Ep. 11 | Exemption Certificate Management",
+            "author": "TaxConnex",
+            "thumbnail_url": "https://i.ytimg.com/vi/FPLS7VL_qTA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=FPLS7VL_qTA"
+          },
+          {
+            "video_id": "3E3YyoTCUAM",
+            "title": "How To Add Sales Tax Exemption On Temu For Business Owners",
+            "author": "AidensGotGuides",
+            "thumbnail_url": "https://i.ytimg.com/vi/3E3YyoTCUAM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=3E3YyoTCUAM"
+          },
+          {
+            "video_id": "IQDdGtZqZb8",
+            "title": "Understand State Sales Tax Permits and Resale Certificates Tax Exempt in the US",
+            "author": "SkillsPanda",
+            "thumbnail_url": "https://i.ytimg.com/vi/IQDdGtZqZb8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=IQDdGtZqZb8"
+          },
+          {
+            "video_id": "L4NQWUrzH6A",
+            "title": "How To Get a Florida Resale Tax Certificate (2025 Update)",
+            "author": "James Baker CPA",
+            "thumbnail_url": "https://i.ytimg.com/vi/L4NQWUrzH6A/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=L4NQWUrzH6A"
+          },
+          {
+            "video_id": "Q4B13yVVzZQ",
+            "title": "GovDeals New Asset Listing Experience",
+            "author": "GovDeals Media",
+            "thumbnail_url": "https://i.ytimg.com/vi/Q4B13yVVzZQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Q4B13yVVzZQ"
+          },
+          {
+            "video_id": "6Ln8SD4VKv4",
+            "title": "How I Find Highly Cheap Pallets Of Goods (On Autopilot)",
+            "author": "Matt Goldberg | The Surplus Hunter",
+            "thumbnail_url": "https://i.ytimg.com/vi/6Ln8SD4VKv4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=6Ln8SD4VKv4"
+          },
+          {
+            "video_id": "7zVNMqLxB5I",
+            "title": "Complete Cisco Lab Setup (Real Equipment Guide)",
+            "author": "ITTechStudies",
+            "thumbnail_url": "https://i.ytimg.com/vi/7zVNMqLxB5I/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=7zVNMqLxB5I"
+          },
+          {
+            "video_id": "mGYNeI8UeMw",
+            "title": "Rack Pallets versus Rack Crates: Protecting High-Value Tech",
+            "author": "Larson Packaging Company",
+            "thumbnail_url": "https://i.ytimg.com/vi/mGYNeI8UeMw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=mGYNeI8UeMw"
+          },
+          {
+            "video_id": "SQ3IcEPrZ9g",
+            "title": "Acceptance Testing Masterclass | Hyperscale Data Center | Part A",
+            "author": "Data Center MEP System",
+            "thumbnail_url": "https://i.ytimg.com/vi/SQ3IcEPrZ9g/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=SQ3IcEPrZ9g"
+          },
+          {
+            "video_id": "G6OFgjz5ZIE",
+            "title": "How to Source and Sell Industrial Parts on eBay: A Guide for Maintenance & Operations Teams",
+            "author": "UpKeep",
+            "thumbnail_url": "https://i.ytimg.com/vi/G6OFgjz5ZIE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=G6OFgjz5ZIE"
+          },
+          {
+            "video_id": "doO2y672wlk",
+            "title": "Can you Make Money Buying on eBay Consignment Auctions? | Pickups + Case Study",
+            "author": "dylanknowsball.",
+            "thumbnail_url": "https://i.ytimg.com/vi/doO2y672wlk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=doO2y672wlk"
+          },
+          {
+            "video_id": "4TJbVuWoX3A",
+            "title": "Laptop and Chip Board Scrapping from Storage Units #storageunitfinds #treasurehunt #scrapmetal",
+            "author": "Storage Unit Scrapper",
+            "thumbnail_url": "https://i.ytimg.com/vi/4TJbVuWoX3A/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=4TJbVuWoX3A"
+          },
+          {
+            "video_id": "1Cxx4l6qQcA",
+            "title": "State Surplus Property Auction",
+            "author": "Good Day Sacramento",
+            "thumbnail_url": "https://i.ytimg.com/vi/1Cxx4l6qQcA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=1Cxx4l6qQcA"
+          },
+          {
+            "video_id": "zFGATosXViU",
+            "title": "How to Register and Bid for GSA Real Property on RealEstateSales.gov",
+            "author": "GSA (General Services Administration)",
+            "thumbnail_url": "https://i.ytimg.com/vi/zFGATosXViU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=zFGATosXViU"
+          },
+          {
+            "video_id": "9u351Sc6VXo",
+            "title": "State Surplus Auction",
+            "author": "Good Day Sacramento",
+            "thumbnail_url": "https://i.ytimg.com/vi/9u351Sc6VXo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=9u351Sc6VXo"
+          },
+          {
+            "video_id": "Ie7zxVOXjeE",
+            "title": "How government surplus auctions work in 60 seconds",
+            "author": "GovAuctions",
+            "thumbnail_url": "https://i.ytimg.com/vi/Ie7zxVOXjeE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Ie7zxVOXjeE"
+          },
+          {
+            "video_id": "ulXE2sJ0rv8",
+            "title": "Government Surplus Auctions Treasure Hunting How To Make Money Buying Surplus Goods",
+            "author": "StorageUnitAuctions",
+            "thumbnail_url": "https://i.ytimg.com/vi/ulXE2sJ0rv8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ulXE2sJ0rv8"
+          },
+          {
+            "video_id": "aH3cAZ1RXvE",
+            "title": "Government Surplus Auctions",
+            "author": "CabinDad",
+            "thumbnail_url": "https://i.ytimg.com/vi/aH3cAZ1RXvE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=aH3cAZ1RXvE"
+          },
+          {
+            "video_id": "_7M8lI2DJDI",
+            "title": "How to Use the Fluke AirCheck Wi Fi Tester | Full Guide & Feature Walkthrough",
+            "author": "Advanced Test Equipment Corp. (ATEC)",
+            "thumbnail_url": "https://i.ytimg.com/vi/_7M8lI2DJDI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=_7M8lI2DJDI"
+          },
+          {
+            "video_id": "2tSL4NkyYWM",
+            "title": "How to Use the Fluke LinkIQ Network Tester | Ethernet Cable Testing Tutorial",
+            "author": "Live Mobile Technology Inc",
+            "thumbnail_url": "https://i.ytimg.com/vi/2tSL4NkyYWM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=2tSL4NkyYWM"
+          },
+          {
+            "video_id": "t4jkcrLcddU",
+            "title": "MPO Fiber Testing with the New Fluke Networks CFM-100SI CertiFiber Max Optical Loss Test Set",
+            "author": "Advanced Test Equipment Corp. (ATEC)",
+            "thumbnail_url": "https://i.ytimg.com/vi/t4jkcrLcddU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=t4jkcrLcddU"
+          },
+          {
+            "video_id": "El3cLMGi_9s",
+            "title": "Govdeals auction tips for new accounts",
+            "author": "Junk Solutions Experts LLC",
+            "thumbnail_url": "https://i.ytimg.com/vi/El3cLMGi_9s/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=El3cLMGi_9s"
+          },
+          {
+            "video_id": "FZRiWN_dcS4",
+            "title": "How to buy vehicles from a government auction",
+            "author": "Handyman Process",
+            "thumbnail_url": "https://i.ytimg.com/vi/FZRiWN_dcS4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=FZRiWN_dcS4"
+          },
+          {
+            "video_id": "YaIalHq0RVU",
+            "title": "Government Auction Review: Cars, Trucks, SUVs, Boats, Construction and Lawn Equipment and more!",
+            "author": "Auction Reviews With Jeff",
+            "thumbnail_url": "https://i.ytimg.com/vi/YaIalHq0RVU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=YaIalHq0RVU"
+          },
+          {
+            "video_id": "vlBL3apKXg0",
+            "title": "dont buy anything from a GOV-AUCTION UNTIL YOU WATCH THIS VIDEO!!!!!",
+            "author": "iron king productions",
+            "thumbnail_url": "https://i.ytimg.com/vi/vlBL3apKXg0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=vlBL3apKXg0"
+          },
+          {
+            "video_id": "crmTu2-MhzI",
+            "title": "Government Vehicle Auction Prices | Ft Myers Part 1 of 3",
+            "author": "Auction Reviews With Jeff",
+            "thumbnail_url": "https://i.ytimg.com/vi/crmTu2-MhzI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=crmTu2-MhzI"
+          },
+          {
+            "video_id": "zqnmA4kt0RU",
+            "title": "Picking up a HMMWV From GovPlanet. WILL IT RUN ?",
+            "author": "Rasmussen Equipment",
+            "thumbnail_url": "https://i.ytimg.com/vi/zqnmA4kt0RU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=zqnmA4kt0RU"
+          },
+          {
+            "video_id": "B8X-aaJ2DpY",
+            "title": "I Bought a Humvee From GovPlanet. Will it Start? HMMWV M1114 MCTAGS",
+            "author": "Rasmussen Equipment",
+            "thumbnail_url": "https://i.ytimg.com/vi/B8X-aaJ2DpY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=B8X-aaJ2DpY"
+          },
+          {
+            "video_id": "aKiF3bLLJJ4",
+            "title": "University Surplus Auction -IUPUI",
+            "author": "Chase Thrifts",
+            "thumbnail_url": "https://i.ytimg.com/vi/aKiF3bLLJJ4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=aKiF3bLLJJ4"
+          },
+          {
+            "video_id": "pRzKRg71z4s",
+            "title": "Government Auctions – A Great Resource for Your Business or as its Own Start-up",
+            "author": "homebusinessmag",
+            "thumbnail_url": "https://i.ytimg.com/vi/pRzKRg71z4s/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=pRzKRg71z4s"
+          },
+          {
+            "video_id": "jaeWKn_Nu68",
+            "title": "How To Buy From Government Auctions - Step By Step",
+            "author": "The Salmon Runs",
+            "thumbnail_url": "https://i.ytimg.com/vi/jaeWKn_Nu68/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=jaeWKn_Nu68"
+          },
+          {
+            "video_id": "J0zoheNKu-E",
+            "title": "Government Surplus Auctions Where You Can Buy Things For Pennies On The Dollar",
+            "author": "Chill Crayon Explains",
+            "thumbnail_url": "https://i.ytimg.com/vi/J0zoheNKu-E/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=J0zoheNKu-E"
+          },
+          {
+            "video_id": "gnsqwRYhRPY",
+            "title": "A Guide to Government Auction Sites",
+            "author": "MrDavidAdelman",
+            "thumbnail_url": "https://i.ytimg.com/vi/gnsqwRYhRPY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=gnsqwRYhRPY"
+          },
+          {
+            "video_id": "ZSzUyNfsBZ0",
+            "title": "The Army Is Selling 100,000 Military Surplus Rifles in January - Every Army Veteran Should Know This",
+            "author": "Survival Gear",
+            "thumbnail_url": "https://i.ytimg.com/vi/ZSzUyNfsBZ0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ZSzUyNfsBZ0"
+          },
+          {
+            "video_id": "_PJtbgNQj4k",
+            "title": "Get a USA Free Resale Certificate - For Tax Exemption!",
+            "author": "Easy Teach WF",
+            "thumbnail_url": "https://i.ytimg.com/vi/_PJtbgNQj4k/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=_PJtbgNQj4k"
+          },
+          {
+            "video_id": "7J3W8esngfU",
+            "title": "How to Get a Resale Certificate/Permit 2026 [UPDATED]",
+            "author": "Lester John",
+            "thumbnail_url": "https://i.ytimg.com/vi/7J3W8esngfU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=7J3W8esngfU"
+          },
+          {
+            "video_id": "K5oBesJVonE",
+            "title": "The ONLY Florida Resale Certificate Guide You Need",
+            "author": "Santiago Cueto | Miami Business Litigation Lawyer",
+            "thumbnail_url": "https://i.ytimg.com/vi/K5oBesJVonE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=K5oBesJVonE"
+          },
+          {
+            "video_id": "9ihMGubVqU4",
+            "title": "How to Get Wyoming Resale Certificate in 48 Hours (Step-by-Step Full Guide)",
+            "author": "E Tech",
+            "thumbnail_url": "https://i.ytimg.com/vi/9ihMGubVqU4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=9ihMGubVqU4"
+          },
+          {
+            "video_id": "wQlrhGYORAg",
+            "title": "Learn Rescue Emergency Vehicles Police Car, Fire Truck, Ambulance | Best Toddlers Toy Learning Video",
+            "author": "Fun'N Learning",
+            "thumbnail_url": "https://i.ytimg.com/vi/wQlrhGYORAg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=wQlrhGYORAg"
+          },
+          {
+            "video_id": "S0me15htAic",
+            "title": "Learn Emergency Rescue Vehicles |Police Car, Fire Truck, Ambulance Toy Video for Toddlers",
+            "author": "Fun'N Learning",
+            "thumbnail_url": "https://i.ytimg.com/vi/S0me15htAic/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=S0me15htAic"
+          },
+          {
+            "video_id": "5HQNQKtddhQ",
+            "title": "Emergency Vehicle Name Sounds | Police Vehicle, Ambulance Vehicle, Fire truck, Cars, Bus, Helicopter",
+            "author": "QQ Toys TV",
+            "thumbnail_url": "https://i.ytimg.com/vi/5HQNQKtddhQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=5HQNQKtddhQ"
+          },
+          {
+            "video_id": "tDyyYhvrSts",
+            "title": "Pallet Business: Starting From Scratch (With vs Without a Mentor)",
+            "author": "Pallet Pros Academy",
+            "thumbnail_url": "https://i.ytimg.com/vi/tDyyYhvrSts/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=tDyyYhvrSts"
+          },
+          {
+            "video_id": "_b6n7Qnt3P0",
+            "title": "6 Ways To Find An Abundance Of Surplus Inventory Pallets...And Get Paid For It.",
+            "author": "Matt Goldberg | The Surplus Hunter",
+            "thumbnail_url": "https://i.ytimg.com/vi/_b6n7Qnt3P0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=_b6n7Qnt3P0"
+          },
+          {
+            "video_id": "Ey5jcenBhe8",
+            "title": "[Free Training] 5 Secret Places To Find Cheap Liquidation Returns Pallets",
+            "author": "Matt Goldberg | The Surplus Hunter",
+            "thumbnail_url": "https://i.ytimg.com/vi/Ey5jcenBhe8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Ey5jcenBhe8"
+          },
+          {
+            "video_id": "Oe4lvXbQ80I",
+            "title": "Can We PROFIT buying returns pallets at auction?",
+            "author": "Shifting Stock | Matthew Wright",
+            "thumbnail_url": "https://i.ytimg.com/vi/Oe4lvXbQ80I/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Oe4lvXbQ80I"
+          },
+          {
+            "video_id": "3LlA-ruuv7E",
+            "title": "Buying Your FIRST Liquidation Pallet What To Look For In 2025!!",
+            "author": "T.J. Lovelady",
+            "thumbnail_url": "https://i.ytimg.com/vi/3LlA-ruuv7E/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=3LlA-ruuv7E"
+          },
+          {
+            "video_id": "orDRxYfVypw",
+            "title": "I Just Bought 3 Amazon Return Pallets for $1,500...Here's What I Found",
+            "author": "Niche Pursuits",
+            "thumbnail_url": "https://i.ytimg.com/vi/orDRxYfVypw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=orDRxYfVypw"
+          },
+          {
+            "video_id": "iiaRVwB0tHk",
+            "title": "Unboxing Three Liquidation Pallets - HUGE $1200 SCORE on the third one!",
+            "author": "Resale Rabbit",
+            "thumbnail_url": "https://i.ytimg.com/vi/iiaRVwB0tHk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=iiaRVwB0tHk"
+          },
+          {
+            "video_id": "bGxomNwtOhQ",
+            "title": "Why Beginners Should Start With Pallets Instead of Truckloads",
+            "author": "Levi Salas | Whatnot Selling & Liquidation",
+            "thumbnail_url": "https://i.ytimg.com/vi/bGxomNwtOhQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=bGxomNwtOhQ"
+          },
+          {
+            "video_id": "0RUIANcUFdg",
+            "title": "I Bought a GIANT Amazon Returns Pallet for $150 - HUGE Profit!",
+            "author": "ConnorTV",
+            "thumbnail_url": "https://i.ytimg.com/vi/0RUIANcUFdg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=0RUIANcUFdg"
+          },
+          {
+            "video_id": "Lvrvr_hNtcE",
+            "title": "Buying Your First Liquidation Pallet | Liquidation Pallets 101",
+            "author": "T.J. Lovelady",
+            "thumbnail_url": "https://i.ytimg.com/vi/Lvrvr_hNtcE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Lvrvr_hNtcE"
+          },
+          {
+            "video_id": "WG6vp4_R0nc",
+            "title": "I Bought a DIY Tools Returns Pallet for £1000, Can I Make a Profit?",
+            "author": "Jona Shone",
+            "thumbnail_url": "https://i.ytimg.com/vi/WG6vp4_R0nc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=WG6vp4_R0nc"
+          },
+          {
+            "video_id": "_JpPAyxnPLc",
+            "title": "Avoid Freight Surprises: Shannon Jean's Complete Shipping Guide for Pallet & Truckload Buyers",
+            "author": "B-Stock",
+            "thumbnail_url": "https://i.ytimg.com/vi/_JpPAyxnPLc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=_JpPAyxnPLc"
+          },
+          {
+            "video_id": "gRoLw2uovek",
+            "title": "5 Ways To Make Money Flipping Pallets Of Cheap Goods In Surplus Trader Academy (SKOOL)",
+            "author": "Matt Goldberg | The Surplus Hunter",
+            "thumbnail_url": "https://i.ytimg.com/vi/gRoLw2uovek/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=gRoLw2uovek"
+          },
+          {
+            "video_id": "uDCbq1XJsDA",
+            "title": "Inside Modern Pallet Factories | How Trees Become Wooden Pallets",
+            "author": "Labor Legacy",
+            "thumbnail_url": "https://i.ytimg.com/vi/uDCbq1XJsDA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=uDCbq1XJsDA"
+          },
+          {
+            "video_id": "PyTXQNvVkKc",
+            "title": "Scoring $20,000 on ONE Pallet from a 3PL Truckload (Liquidation Unboxing)",
+            "author": "Liquidation Motivation",
+            "thumbnail_url": "https://i.ytimg.com/vi/PyTXQNvVkKc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=PyTXQNvVkKc"
+          },
+          {
+            "video_id": "6XObIp5c91U",
+            "title": "Sorting a pallet load of mixed circuit boards for max value",
+            "author": "Shark Scrapper",
+            "thumbnail_url": "https://i.ytimg.com/vi/6XObIp5c91U/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=6XObIp5c91U"
+          },
+          {
+            "video_id": "f12reX7DS-U",
+            "title": "Unboxing 2 Pallets of Jumbo Amazon Returns - Worth It?",
+            "author": "Operation Liquidation",
+            "thumbnail_url": "https://i.ytimg.com/vi/f12reX7DS-U/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=f12reX7DS-U"
+          },
+          {
+            "video_id": "dzr9aYx98oY",
+            "title": "Picking a Car for My Private Rental Fleet at the Auction (Under $5,000 Beginner's Guide)",
+            "author": "Auto Dealer Startup",
+            "thumbnail_url": "https://i.ytimg.com/vi/dzr9aYx98oY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=dzr9aYx98oY"
+          },
+          {
+            "video_id": "tBIT1SUqIz8",
+            "title": "You Don't Need a Dealer License: How Ordinary Buyers Get Into Surplus Auctions",
+            "author": "Vantor Insider",
+            "thumbnail_url": "https://i.ytimg.com/vi/tBIT1SUqIz8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=tBIT1SUqIz8"
+          },
+          {
+            "video_id": "VRmsT2o_6og",
+            "title": "HOW TO BUY FROM COPART FOR BEGINNERS!!! WITHOUT A DEALERS LICENSE IN 2025!!",
+            "author": "We Hustle Daily",
+            "thumbnail_url": "https://i.ytimg.com/vi/VRmsT2o_6og/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=VRmsT2o_6og"
           }
         ],
         "research_reference_only": true,
@@ -32048,7 +33273,7 @@
         "asset_id": "verbatim_transcript_quotes",
         "asset": "data/transcripts/*.json -> segments[].text",
         "asset_type": "verbatim_transcript_passage",
-        "source": "Spoken content of 4184 third-party videos (38332 captured tips)",
+        "source": "Spoken content of 4359 third-party videos (39859 captured tips)",
         "research_reference_only": true,
         "commercial_republish_allowed": false,
         "commercial_use_allowed": false,
@@ -32064,38 +33289,38 @@
     ]
   },
   "corpus_metrics": {
-    "video_count": 4184,
-    "channel_count": 2591,
-    "total_words": 6142215,
-    "total_hours": 1230.44,
-    "total_pro_tips": 38332,
-    "unique_statutes_and_forms": 1713,
-    "unique_tools_and_portals": 10976
+    "video_count": 4359,
+    "channel_count": 2697,
+    "total_words": 6339031,
+    "total_hours": 1277.01,
+    "total_pro_tips": 39859,
+    "unique_statutes_and_forms": 1777,
+    "unique_tools_and_portals": 11408
   },
   "coverage": {
-    "videos_classified": 4184,
-    "videos_with_multiple_topics": 4181,
-    "tips_classified": 38332,
-    "raw_transcripts_joined": 4184,
+    "videos_classified": 4359,
+    "videos_with_multiple_topics": 4356,
+    "tips_classified": 39859,
+    "raw_transcripts_joined": 4359,
     "topic_video_counts": {
-      "business_model_and_economics": 3310,
-      "probate_and_docket_sourcing": 3177,
-      "unclaimed_property_and_escheat": 879,
-      "genealogy_and_heirship_proof": 3428,
-      "skip_tracing_and_outreach": 2347,
-      "contracts_and_compensation": 3291,
-      "statutory_caps_and_licensing": 3532,
-      "automation_and_small_team_ops": 2962
+      "business_model_and_economics": 3392,
+      "probate_and_docket_sourcing": 3326,
+      "unclaimed_property_and_escheat": 951,
+      "genealogy_and_heirship_proof": 3595,
+      "skip_tracing_and_outreach": 2398,
+      "contracts_and_compensation": 3413,
+      "statutory_caps_and_licensing": 3685,
+      "automation_and_small_team_ops": 3073
     },
     "topic_tip_counts": {
-      "business_model_and_economics": 6692,
-      "probate_and_docket_sourcing": 6630,
-      "unclaimed_property_and_escheat": 1927,
-      "genealogy_and_heirship_proof": 4394,
-      "skip_tracing_and_outreach": 1257,
-      "contracts_and_compensation": 5875,
-      "statutory_caps_and_licensing": 3617,
-      "automation_and_small_team_ops": 7940
+      "business_model_and_economics": 6837,
+      "probate_and_docket_sourcing": 6695,
+      "unclaimed_property_and_escheat": 2375,
+      "genealogy_and_heirship_proof": 4788,
+      "skip_tracing_and_outreach": 1264,
+      "contracts_and_compensation": 6087,
+      "statutory_caps_and_licensing": 3679,
+      "automation_and_small_team_ops": 8134
     }
   },
   "schema_version": "1.0",

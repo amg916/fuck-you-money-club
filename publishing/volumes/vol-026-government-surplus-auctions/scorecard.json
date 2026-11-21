@@ -1,0 +1,352 @@
+{
+  "candidate_number": 17,
+  "slug": "government-surplus-auctions",
+  "title": "Government Surplus Auctions",
+  "category": "Surplus asset trading",
+  "production_stage": "approved_master",
+  "scores": {
+    "revenue_potential": 20,
+    "profit_margin_potential": 14,
+    "team_efficiency": 12,
+    "startup_accessibility": 8,
+    "automation_potential": 8
+  },
+  "dimension_max": {
+    "revenue_potential": 25,
+    "profit_margin_potential": 25,
+    "team_efficiency": 20,
+    "startup_accessibility": 15,
+    "automation_potential": 15
+  },
+  "total_score": 62,
+  "tier_label": "Capital / Labor Intensive",
+  "evidence_confidence": "High",
+  "uncertainty_band": "±3 pts",
+  "uncertainty_bounds": {
+    "low": 59,
+    "high": 65
+  },
+  "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
+  "score_rationale": {
+    "revenue_potential": "Revenue Potential: 20/25. Discounted lots offer resale spreads, but transport, storage and defects consume margin.",
+    "profit_margin_potential": "Profit Margin Potential: 14/25. Discounted lots offer resale spreads, but transport, storage and defects consume margin.",
+    "team_efficiency": "Team Efficiency: 12/20. Discounted lots offer resale spreads, but transport, storage and defects consume margin.",
+    "startup_accessibility": "Startup Accessibility: 8/15. Discounted lots offer resale spreads, but transport, storage and defects consume margin.",
+    "automation_potential": "Automation Potential: 8/15. Discounted lots offer resale spreads, but transport, storage and defects consume margin."
+  },
+  "economics": {
+    "gross_revenue_range": "$150,000–$1,000,000 USD annually",
+    "net_profit_margin_range": "8–20%",
+    "owner_net_profit_potential": "$12,000–$200,000 USD annually, before personal taxes and reinvestment",
+    "startup_capital_range": "$25,000–$200,000 USD",
+    "monthly_opex_range": "$3,000–$15,000 USD",
+    "time_to_first_deal": "1–6 months",
+    "typical_team_size": {
+      "full_time_including_owner": 2,
+      "contractors": 3,
+      "total_people": 5
+    },
+    "includes_contractors_note": "Headcount includes the working owner and recurring contractors as people, not FTE equivalents. Contractors may be part-time. Scaled scenario adds one employee and one contractor; external vendor workforces are not counted as internal team members.",
+    "revenue_basis": "Gross resale proceeds; purchase, transport and refurbishment included in margin",
+    "cost_basis": "Annual net margins include operating expenses and non-owner labor; monthly opex is fixed/semi-fixed overhead only. No owner salary is deducted. Capital needs may grow beyond startup range.",
+    "estimate_status": "Illustrative assumptions; not verified earnings data"
+  },
+  "scenarios": {
+    "conservative": {
+      "annual_gross_revenue_usd": 150000,
+      "net_profit_margin_pct": 8,
+      "annual_owner_net_profit_usd": 12000,
+      "full_time_including_owner": 2,
+      "contractors": 3,
+      "total_people": 5,
+      "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+    },
+    "base_case": {
+      "annual_gross_revenue_usd": 575000.0,
+      "net_profit_margin_pct": 14.0,
+      "annual_owner_net_profit_usd": 80500,
+      "full_time_including_owner": 2,
+      "contractors": 3,
+      "total_people": 5,
+      "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+    },
+    "scaled_small_team": {
+      "annual_gross_revenue_usd": 1000000,
+      "net_profit_margin_pct": 20,
+      "annual_owner_net_profit_usd": 200000,
+      "full_time_including_owner": 3,
+      "contractors": 4,
+      "total_people": 7,
+      "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+    }
+  },
+  "automation_levers": [
+    "Auction alerts",
+    "Bid-limit worksheets",
+    "Inventory tracking"
+  ],
+  "key_risks": [
+    "As-is defects",
+    "Removal deadlines",
+    "Unsold inventory"
+  ],
+  "regulatory_notes": [
+    "Check auction eligibility, resale permits, title transfer and restricted-item rules."
+  ],
+  "track_ids": [
+    "track_1",
+    "track_2"
+  ],
+  "track_labels": [
+    "Asymmetric & Data-Arbitrage Plays",
+    "Grey-Zone Growth & Traffic Arbitrage"
+  ],
+  "plays": [
+    {
+      "id": "distressed_asset_recovery",
+      "track_id": "track_1",
+      "name": "Distressed Asset Recovery",
+      "mechanism": "Locate mispriced, orphaned, or administratively stranded assets—tax-sale overages, unclaimed state funds, dormant judgments, government surplus lots, or distressed micro-businesses—and capture a contingent recovery fee or acquisition spread.",
+      "inputs": [
+        "Tax-sale excess proceeds ledgers",
+        "Unclaimed property & judgment dockets",
+        "Surplus auction manifests"
+      ],
+      "workflow": [
+        "Audit statutory fee caps, claim windows, and chain-of-title encumbrances",
+        "Execute skip-tracing or asset inspection to confirm net realizable value",
+        "Lock in contingent recovery agreements or below-intrinsic buyouts"
+      ],
+      "metrics": [
+        "Gross spread / contingent fee per case",
+        "Claim approval rate",
+        "Days from filing to disbursement"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Statutory fee-cap compression or administrative hold",
+          "trigger": "Jurisdiction updates finder fee limits, waiting periods, or filing documentation rules",
+          "impact": "Reduced net fee margin or extended cash conversion cycle",
+          "detection_metric": "County/state rejection notice rate and days-to-payout variance",
+          "fallback": "Diversify across multi-state dockets and use attorney-backed filing partnerships where required"
+        }
+      ]
+    },
+    {
+      "id": "government_rfp_subcontractor_brokerage",
+      "track_id": "track_1",
+      "name": "SAM.gov / Municipal RFP Scraping & Prime-Subcontractor Spread Arbitrage",
+      "mechanism": "Scrape federal SAM.gov, state procurement portals, and municipal bid boards for low-bid-density service solicitations (janitorial, grounds, courier, translation, IT staffing), pairing compliant proposal automation with vetted local fulfillment subcontractors for a 15–30% management spread.",
+      "inputs": [
+        "SAM.gov Contract Opportunities API & state/municipal e-procurement feeds",
+        "Historical FPDS award pricing benchmark database",
+        "Vetted local subcontractor network with FAR limitation-on-subcontracting compliance"
+      ],
+      "workflow": [
+        "Screen daily federal, state, and municipal RFPs/RFQs with <3 historical bidders and clear unit-price schedules",
+        "Benchmark winning historical unit rates via FPDS/FOIA award records and lock in binding back-to-back quotes from insured local operators",
+        "Submit compliant bid packages and manage billing, insurance, and QA reporting while retaining a 15–30% prime-management or authorized broker spread"
+      ],
+      "metrics": [
+        "Bid-to-award win rate (%) on low-competition solicitations",
+        "Net prime-to-subcontractor gross margin (15–30% target)",
+        "Contract renewal / option-year retention rate"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "FAR 52.219-14 (Limitations on Subcontracting) violation or illegal pass-through scheme",
+          "trigger": "Bidding small-business set-aside contracts and subcontracting 100% of the work to non-similarly-situated entities without performing required prime share",
+          "impact": "Contract termination for default, False Claims Act liability, or SAM.gov debarment",
+          "detection_metric": "Subcontracted labor-cost percentage strictly within FAR 52.219-14 limits (<=50% for services unless partnering with similarly situated small businesses)",
+          "fallback": "Bid unrestricted commercial/municipal contracts without set-aside caps, or team exclusively with 'similarly situated entities' under 13 CFR § 125.6"
+        }
+      ]
+    },
+    {
+      "id": "verified_fan_ticketing_and_drop_allocation_farming",
+      "track_id": "track_2",
+      "name": "Multi-Account Presale Code & Limited-Mintage Allocation Arbitrage",
+      "mechanism": "Operating hundreds of aged, human-scored 'free' fan-club, ticketing (Ticketmaster Verified Fan / AXS), U.S. Mint, and limited-edition luxury/collectible accounts—each backed by unique residential proxies, aged browser profiles, and virtual card numbers (VCCs)—to multiply lottery/queue odds by 100x–500x on strict 'limit 1–4 per account' releases trading at instant 50–300% secondary-market premiums.",
+      "inputs": [
+        "Aged ticketing, fan-club, and sovereign-mint account fleet with clean purchase histories",
+        "Anti-detect browser matrix with residential ISP proxies and unique SIM/SMS verification lines",
+        "Corporate virtual credit card (VCC) issuance API (Extend/Ramp/Slash) with distinct billing descriptors"
+      ],
+      "workflow": [
+        "Monitor upcoming concert tours, playoff games, U.S. Mint numismatic releases, and limited collectible drops with secondary-market spreads >=50%",
+        "Register the aged account fleet across presale lotteries and waiting rooms to secure high-priority access codes and low queue positions",
+        "Execute checkouts strictly on high-margin allocations (front-row/pit seats, low-mintage proof coins) using isolated VCCs per household profile",
+        "Flip allocations immediately via direct consignment, verified ticket exchanges (StubHub/SeatGeek/Vivid API), or pre-committed wholesale buyers"
+      ],
+      "metrics": [
+        "Presale code / top-1,000 queue-position hit rate (%) across the account cluster",
+        "Net realized secondary-market spread (%) after exchange/consignment fees",
+        "Inventory hold time (hours/days from checkout to settled resale payout)"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Order cancellation or queue-score penalty from device/payment fingerprint linkage",
+          "trigger": "Reusing identical billing addresses, card BINs, or browser WebGL/Canvas fingerprints across Household-Limit-restricted drops",
+          "impact": "Canceled orders, revoked presale codes, or permanent account flagging",
+          "detection_metric": "Post-checkout order survival rate (%) and queue-score tier telemetry",
+          "fallback": "Maintain genuine distributed buyer consortiums with unique residential addresses, distinct bank BINs, and pre-sold wholesale buyer commitments before checkout"
+        }
+      ]
+    },
+    {
+      "id": "section_321_de_minimis_bonded_tariff_arbitrage",
+      "track_id": "track_1",
+      "name": "Section 321 \"De Minimis\" & Border Bonded-Warehouse Tariff Split-Shipping Arbitrage",
+      "mechanism": "Routing bulk sea/air container imports for high-tariff DTC and marketplace brands into Tijuana (IMMEX) or Canadian border-zone bonded 3PL warehouses instead of US ports, then fulfilling individual US consumer orders across the border daily under 19 U.S.C. § 1321 (Section 321 Entry Type 86)—legally eliminating 15%–42.5% customs duties on qualifying consumer parcels and charging brands 35–50% of the saved tariff bill plus 3PL fulfillment fees.",
+      "inputs": [
+        "USITC Harmonized Tariff Schedule (HTS) database cross-referenced against US Customs Bill-of-Lading import records (ImportYeti / Panjiva / Datamyne)",
+        "Nearshore Mexican IMMEX or Canadian customs-bonded fulfillment center 5–15 miles from San Ysidro/Otay Mesa or Windsor/Blaine border crossings",
+        "Automated CBP ACE Entry Type 86 manifest software transmitting 10-digit HTS and consignee data per individual consumer parcel"
+      ],
+      "workflow": [
+        "Scrape public maritime Bill-of-Lading records to identify US apparel, footwear, luggage, and consumer-goods brands importing 20+ containers/yr in 18%–37.5% HTS duty brackets",
+        "Divert the client's ocean containers in-bond (IT/T&E bond) directly to the nearshore border-zone fulfillment facility without paying US bulk entry duties",
+        "Sync the warehouse WMS with the brand's Shopify/Amazon store so each US consumer order (<$800 retail value, 1 per person per day) is picked, packed, and cleared via CBP Entry Type 86 at $0 duty",
+        "Line-item bill the brand for standard pick-and-pack fulfillment plus a 35–50% contingency split of the verified customs duties eliminated"
+      ],
+      "metrics": [
+        "Annualized customs duty eliminated ($500k–$10M+/yr per enterprise brand client)",
+        "Net tariff-savings share + 3PL margin ($) per parcel cleared across the border",
+        "CBP Type 86 automated release rate (>99.4%) and border transit time (<6 hours to USPS/FedEx domestic injection)"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Statutory exclusion of specific Section 301 country-of-origin SKUs from Section 321 de minimis eligibility",
+          "trigger": "Executive/statutory rulemaking removing China-origin Section 301 HTS codes from Entry Type 86 eligibility or tightening 10-digit HTS description rules",
+          "impact": "Loss of Section 321 duty exemption on affected country-of-origin SKUs",
+          "detection_metric": "Real-time HTS + Country-of-Origin eligibility screen in the WMS before container booking",
+          "fallback": "Focus on non-301 origin goods (Vietnam, India, EU, Bangladesh, Cambodia) where high MFN duties (16%–32% on apparel/footwear/textiles) remain 100% Section 321 exempt, and pair with CBP First-Sale Valuation for remaining SKUs"
+        }
+      ]
+    },
+    {
+      "id": "authorized_distributor_grey_market_diversion_arbitrage",
+      "track_id": "track_1",
+      "name": "Authorized-Distributor \"Diversion\" & Grey-Market Luxury / Medical Consumables Arbitrage",
+      "mechanism": "Exploiting multinational manufacturers' 35–60% regional price discrimination by using foreign corporate purchasing entities to buy container-loads of 100% authentic branded goods (luxury fragrances, prestige cosmetics, Swiss watches, OTC diabetic test strips, salon haircare, OEM imaging supplies) from over-quota authorized distributors in emerging/EMEA/LATAM markets and importing them into US off-price retail (TJX, Costco, Burlington) and Amazon wholesale channels under the Supreme Court's First-Sale Doctrine (*Kirtsaeng v. John Wiley & Sons*).",
+      "inputs": [
+        "Global wholesale price-book matrix comparing US net distributor pricing against EMEA, LATAM, Eastern European, and Asian-Pacific tier-1 distributor net pricing",
+        "Foreign purchasing subsidiaries (UAE, Poland, Panama, Singapore, Cyprus) with clean trade references and escrow inspection facilities",
+        "SGS/Bureau Veritas pre-shipment authenticity verification and batch-code sanitization SOPs"
+      ],
+      "workflow": [
+        "Identify authentic global SKUs with >40% wholesale price spreads between emerging-market distributor books and US off-price wholesale demand",
+        "Approach regional authorized distributors near end-of-quarter who need to move $500k–$5M in excess allocation to hit their manufacturer volume-tier rebate",
+        "Purchase the sealed master cases via a foreign trading entity, conduct third-party SGS lot authentication, and remove secondary distributor tracking labels that could identify the source distributor",
+        "Import the goods legally under First-Sale exhaustion and flip on back-to-back POs to US off-price retail chains, pharmacy wholesalers, and verified marketplace aggregators"
+      ],
+      "metrics": [
+        "Gross landed price spread (22–45% net margin) between foreign distributor cost and US wholesale PO price",
+        "Inventory cash-conversion cycle (days from escrow release to US buyer wire settlement)",
+        "100% lot-level manufacturer authenticity verification and chain-of-custody pass rate"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Brand-owner Lanham Act 'material difference' trademark challenge or marketplace invoice rejection",
+          "trigger": "Importing foreign-language packaging or altered warranty/formulation SKUs that differ materially from the US domestic version",
+          "impact": "CBP detention or Amazon brand-gating suppression on specific ASINs",
+          "detection_metric": "Pre-purchase SKU inspection confirming identical UPC/EAN, multi-language compliant labeling, and identical physical formulation",
+          "fallback": "Trade strictly in globally identical universal-packaging SKUs (duty-free prestige fragrances, universal OEM consumables) and sell primarily via direct B2B purchase orders to off-price retail chains and regional wholesalers rather than single-account Amazon storefronts"
+        }
+      ]
+    },
+    {
+      "id": "con_decommissioned_medical_imaging_arbitrage",
+      "track_id": "track_1",
+      "name": "Certificate-of-Need (CON) & Decommissioned Hospital Imaging-Suite Arbitrage",
+      "mechanism": "Acquire or option decommissioned imaging assets where approved site capacity has value, separating equipment resale economics from nontransferable or change-of-control-sensitive CON authority.",
+      "inputs": [
+        "State CON decisions and hospital closure notices",
+        "Equipment service logs and site engineering surveys",
+        "Regulatory transfer guidance and buyer commitments"
+      ],
+      "workflow": [
+        "1. Identify closing imaging suites and inventory equipment, permits, and lease rights",
+        "2. Confirm CON status, transfer restrictions, radiation licensing, and deinstallation costs",
+        "3. Negotiate approval-contingent asset purchases with qualified operators and equipment buyers",
+        "4. Close after regulatory clearance and document certified removal, installation, and acceptance"
+      ],
+      "metrics": [
+        "Net resale margin after deinstallation",
+        "Regulatory approval cycle days",
+        "Buyer acceptance rate after inspection"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "CON authority lapses or cannot transfer",
+          "trigger": "Closure, relocation, or ownership change outside approved conditions",
+          "impact": "Loss of site premium and stranded equipment carrying costs",
+          "detection_metric": "Outstanding regulatory conditions and days to permit expiry",
+          "fallback": "Exit under approval contingencies or sell inspected equipment separately without representing transferable operating authority"
+        }
+      ]
+    }
+  ],
+  "platform_risks": [
+    {
+      "failure_mode": "Statutory fee-cap compression or administrative hold",
+      "trigger": "Jurisdiction updates finder fee limits, waiting periods, or filing documentation rules",
+      "impact": "Reduced net fee margin or extended cash conversion cycle",
+      "detection_metric": "County/state rejection notice rate and days-to-payout variance",
+      "fallback": "Diversify across multi-state dockets and use attorney-backed filing partnerships where required",
+      "play_id": "distressed_asset_recovery",
+      "play_name": "Distressed Asset Recovery",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "FAR 52.219-14 (Limitations on Subcontracting) violation or illegal pass-through scheme",
+      "trigger": "Bidding small-business set-aside contracts and subcontracting 100% of the work to non-similarly-situated entities without performing required prime share",
+      "impact": "Contract termination for default, False Claims Act liability, or SAM.gov debarment",
+      "detection_metric": "Subcontracted labor-cost percentage strictly within FAR 52.219-14 limits (<=50% for services unless partnering with similarly situated small businesses)",
+      "fallback": "Bid unrestricted commercial/municipal contracts without set-aside caps, or team exclusively with 'similarly situated entities' under 13 CFR § 125.6",
+      "play_id": "government_rfp_subcontractor_brokerage",
+      "play_name": "SAM.gov / Municipal RFP Scraping & Prime-Subcontractor Spread Arbitrage",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Order cancellation or queue-score penalty from device/payment fingerprint linkage",
+      "trigger": "Reusing identical billing addresses, card BINs, or browser WebGL/Canvas fingerprints across Household-Limit-restricted drops",
+      "impact": "Canceled orders, revoked presale codes, or permanent account flagging",
+      "detection_metric": "Post-checkout order survival rate (%) and queue-score tier telemetry",
+      "fallback": "Maintain genuine distributed buyer consortiums with unique residential addresses, distinct bank BINs, and pre-sold wholesale buyer commitments before checkout",
+      "play_id": "verified_fan_ticketing_and_drop_allocation_farming",
+      "play_name": "Multi-Account Presale Code & Limited-Mintage Allocation Arbitrage",
+      "track_id": "track_2"
+    },
+    {
+      "failure_mode": "Statutory exclusion of specific Section 301 country-of-origin SKUs from Section 321 de minimis eligibility",
+      "trigger": "Executive/statutory rulemaking removing China-origin Section 301 HTS codes from Entry Type 86 eligibility or tightening 10-digit HTS description rules",
+      "impact": "Loss of Section 321 duty exemption on affected country-of-origin SKUs",
+      "detection_metric": "Real-time HTS + Country-of-Origin eligibility screen in the WMS before container booking",
+      "fallback": "Focus on non-301 origin goods (Vietnam, India, EU, Bangladesh, Cambodia) where high MFN duties (16%–32% on apparel/footwear/textiles) remain 100% Section 321 exempt, and pair with CBP First-Sale Valuation for remaining SKUs",
+      "play_id": "section_321_de_minimis_bonded_tariff_arbitrage",
+      "play_name": "Section 321 \"De Minimis\" & Border Bonded-Warehouse Tariff Split-Shipping Arbitrage",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Brand-owner Lanham Act 'material difference' trademark challenge or marketplace invoice rejection",
+      "trigger": "Importing foreign-language packaging or altered warranty/formulation SKUs that differ materially from the US domestic version",
+      "impact": "CBP detention or Amazon brand-gating suppression on specific ASINs",
+      "detection_metric": "Pre-purchase SKU inspection confirming identical UPC/EAN, multi-language compliant labeling, and identical physical formulation",
+      "fallback": "Trade strictly in globally identical universal-packaging SKUs (duty-free prestige fragrances, universal OEM consumables) and sell primarily via direct B2B purchase orders to off-price retail chains and regional wholesalers rather than single-account Amazon storefronts",
+      "play_id": "authorized_distributor_grey_market_diversion_arbitrage",
+      "play_name": "Authorized-Distributor \"Diversion\" & Grey-Market Luxury / Medical Consumables Arbitrage",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "CON authority lapses or cannot transfer",
+      "trigger": "Closure, relocation, or ownership change outside approved conditions",
+      "impact": "Loss of site premium and stranded equipment carrying costs",
+      "detection_metric": "Outstanding regulatory conditions and days to permit expiry",
+      "fallback": "Exit under approval contingencies or sell inspected equipment separately without representing transferable operating authority",
+      "play_id": "con_decommissioned_medical_imaging_arbitrage",
+      "play_name": "Certificate-of-Need (CON) & Decommissioned Hospital Imaging-Suite Arbitrage",
+      "track_id": "track_1"
+    }
+  ]
+}

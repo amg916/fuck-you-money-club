@@ -1,0 +1,65 @@
+{
+  "concept_id": "concept_a",
+  "volume_id": "vol-026-government-surplus-auctions",
+  "approved": false,
+  "edition_status": "concept_preview",
+  "preview_only": true,
+  "files": {
+    "digital_pdf.pdf": {
+      "bytes": 1839343,
+      "sha256": "c7bd4040b4d3922746aa75a6301a161e23ac6e5e35633a0b58336f90e417b667"
+    },
+    "print_6x9_pdf.pdf": {
+      "bytes": 2382946,
+      "sha256": "fd2cd18fa4b0aa03289ca518be376cc8ae26efd24fb3a5e481e4566c1ee5f861"
+    },
+    "workbook_pdf.pdf": {
+      "bytes": 542093,
+      "sha256": "b4968d049f654573870dd5245ac157d1953aae6f265df35f86fc739acb2aa6be"
+    },
+    "book.epub": {
+      "bytes": 254395,
+      "sha256": "23e499b327c24d5782df5a6f5589b95334a9f1ec7a958e0eb9998b5a373dd8f5"
+    },
+    "art/cover.svg": {
+      "bytes": 4028,
+      "sha256": "8129aaa59a0c170c74d98475321b39677563fcc79a18ac40a5126d73565a0a8f"
+    },
+    "art/scorecard.svg": {
+      "bytes": 41901,
+      "sha256": "195e2174064dda34def064f663b392f1906fe251041dd7a57af43595d27e4a12"
+    },
+    "art/diag_01.svg": {
+      "bytes": 11968,
+      "sha256": "f1a60bc84ed6bd5e26224030379fad1087821cfea647ae70920500f604ffaa2c"
+    },
+    "art/diag_02.svg": {
+      "bytes": 8110,
+      "sha256": "f68e8720b34f9bfdf6eb4d2b0be2cccd93897980a3d55edd94d1d3b567ef5d86"
+    },
+    "art/diag_03.svg": {
+      "bytes": 11926,
+      "sha256": "1718d1361707c7f3c527990732377674203c2245664eef05f55f4122608dd89e"
+    },
+    "art/diag_04.svg": {
+      "bytes": 9814,
+      "sha256": "98b1bc46146b538e9fc1b5a5e2357c8eb0d666a1a2d9786595c2e1ffcd699141"
+    },
+    "art/diag_05.svg": {
+      "bytes": 11062,
+      "sha256": "3ced3fa6b25a5b7d5aa99839af85ec35a52e55aaafb404c65f8afee8decfc2fa"
+    },
+    "art/diag_06.svg": {
+      "bytes": 14431,
+      "sha256": "5b4cf99f635c9dabf0e61d8d5ab82e610ff02d165ba2325738ac04b39a0241f0"
+    },
+    "art/diag_07.svg": {
+      "bytes": 9019,
+      "sha256": "a9e3c46c98a25fa9335e0c782369079c6186267e8ea09969918a02d0abef6e56"
+    },
+    "art/diag_08.svg": {
+      "bytes": 8647,
+      "sha256": "2175e42cc523b885663fb8ac31c37d0f88acf8177d7b44d27214da996cde4849"
+    }
+  }
+}

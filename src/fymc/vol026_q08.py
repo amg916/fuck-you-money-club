@@ -1,0 +1,738 @@
+from __future__ import annotations
+
+CHAPTER_8 = {
+    "id": "Q8",
+    "chapter_id": "Q8",
+    "chapter_number": 8,
+    "question_number": 8,
+    "slug": "public-records-apis-data-pipelines-operator-tooling",
+    "question_prompt": "Which exact public registries, government databases, commercial APIs, enrichment waterfalls, and diagnostic tools give a small government surplus auctions desk an unfair information edge?",
+    "kicker": "Q8 / THE BIG MONEY PLAYBOOKS",
+    "title": "Public Records, APIs, Data Pipelines & Operator Tooling",
+    "subtitle": "GSA, GovDeals, GovPlanet, Public Surplus, VIN Evidence, SF-97 Chains, DEMIL Screening, and SQLite Bid Controls",
+    "layout_template": "resource_directory",
+    "reading_time_minutes": 14,
+    "executive_summary": (
+        "Candidate #17, Government Surplus Auctions, ranks #26 with a 62/100 "
+        "Money-to-Manpower Score. Its information edge comes from six mapped operating "
+        "plays: federal fleet resale, municipal equipment resale, commercial equipment "
+        "bundling, repair-led resale, documented parts recovery, and buyer-led B2B "
+        "remarketing. This chapter maps those plays to public records, authorized "
+        "commercial interfaces, inspection evidence, and a compact decision pipeline. "
+        "Annual owner profit remains $12,000 Conservative, $80,500 Base, and $200,000 "
+        "Scaled; gross resale proceeds, rather than auction-platform transaction volume, "
+        "are the revenue basis. A two-full-time, three-contractor pod should automate "
+        "discovery and reconciliation while keeping title, restrictions, bid ceilings, "
+        "and removal feasibility under explicit human ownership. Better data earns "
+        "its keep only when it changes a purchase decision or accelerates cash recovery."
+    ),
+    "key_metrics": [
+        {
+            "label": "Conservative",
+            "value": "$150,000",
+            "context": "Annual gross resale proceeds; acquisition, transport, and refurbishment included in margin",
+            "note": "8% net margin; $12,000 annual owner net profit; 2 FT + 3 C",
+        },
+        {
+            "label": "Base",
+            "value": "$575,000",
+            "context": "Annual gross resale proceeds; acquisition, transport, and refurbishment included in margin",
+            "note": "14.0% net margin; $80,500 annual owner net profit; 2 FT + 3 C",
+        },
+        {
+            "label": "Scaled",
+            "value": "$1,000,000",
+            "context": "Annual gross resale proceeds; acquisition, transport, and refurbishment included in margin",
+            "note": "20% net margin; $200,000 annual owner net profit; 3 FT + 4 C, seven people",
+        },
+    ],
+    "sections": [
+        {
+            "heading": "1. Map eighteen sources to six repeatable buying plays",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Define six operating plays before connecting a single source: P1 federal "
+                    "fleet resale, P2 municipal equipment resale, P3 commercial equipment "
+                    "bundling, P4 repair-led resale, P5 documented parts recovery, and P6 "
+                    "buyer-led B2B remarketing. These are this chapter's execution mapping "
+                    "for Candidate #17, not six additional revenue lines. A truck can move "
+                    "through P1, P4, and P6 without generating revenue three times. Give "
+                    "every acquired asset one inventory identity and recognize its resale "
+                    "proceeds once. Full-time operator A owns sourcing, inspections, and "
+                    "bid authorization; full-time operator B owns records, inventory, "
+                    "buyer development, and collections. The three contractors provide "
+                    "mechanical inspection, transport or rigging, and bookkeeping support "
+                    "through scheduled assignments rather than continuous staffing. Direct "
+                    "federal fleet opportunities toward VIN and title evidence; municipal "
+                    "machinery toward serial numbers, maintenance records, attachments, and "
+                    "removal conditions. Bundles need component counts, repair plays need "
+                    "fault isolation, parts recovery needs disposition restrictions, and "
+                    "buyer-led remarketing needs written specifications. This routing prevents "
+                    "a five-person pod from researching every listing equally. Restrict the "
+                    "initial territory to assets that existing carriers can remove within "
+                    "the posted window, then expand only after completed sales establish "
+                    "real handling costs and buyer demand."
+                ),
+                (
+                    "Treat the directory below as an access map, not a claim that every "
+                    "vendor publishes an unrestricted API. GSA Auctions is a federal sales "
+                    "portal; GovPlanet, GovDeals, and Public Surplus are commercial "
+                    "marketplaces whose sellers, contract terms, and data permissions vary. "
+                    "A government seller does not make a platform's authenticated interface "
+                    "public infrastructure. Use account alerts, permitted exports, documented "
+                    "interfaces, and seller correspondence first. Do not reverse-engineer "
+                    "private endpoints or defeat access controls. The directory distinguishes "
+                    "free public lookup from paid reports, transaction charges, and "
+                    "credentialed developer access. Exact commercial prices and numeric "
+                    "quotas belong in the desk's dated provider register after checking "
+                    "current terms; invented universal figures would create bad purchasing "
+                    "rules. Refresh intervals below are desk schedules, not promises about "
+                    "source publication speed. Listings can change near closing, official "
+                    "records can lag, and provider reports can inherit that lag. Recheck "
+                    "auction amendments before bidding and preserve the seller's actual "
+                    "terms separately from aggregator summaries. When a source offers no "
+                    "supported bulk route, reduce the candidate list before manual lookup "
+                    "instead of building a fragile scraper. Record who retrieved each "
+                    "document, when it was retrieved, and which lot identifier it supports."
+                ),
+                (
+                    "Apply an enrichment waterfall that spends effort only when the next "
+                    "answer can alter a decision. First capture lot identity, seller, "
+                    "location, closing time, payment terms, removal deadline, photographs, "
+                    "and restrictions. Second resolve manufacturer, model, serial number, "
+                    "VIN, quantities, and included attachments. Third obtain independent "
+                    "condition and ownership evidence. Fourth estimate resale demand and "
+                    "freight with sources appropriate to the asset. Fifth request missing "
+                    "records directly from the agency or seller before paying for deeper "
+                    "reports. Federal requests under 5 U.S.C. § 552 can target existing "
+                    "maintenance records, disposal descriptions, and releasable historical "
+                    "sale records; they do not compel an agency to create an appraisal "
+                    "or answer engineering questions. Municipal requests follow the relevant "
+                    "state records statute and custodian procedures. Specify equipment "
+                    "identifiers, date ranges, desired electronic format, and a fee ceiling. "
+                    "Request operational records rather than employee contact details. Records "
+                    "response time rarely fits an imminent auction close, so build recurring "
+                    "agency relationships and request prior-period records ahead of inventory "
+                    "cycles. Attach each result to its asset and retain a clear distinction "
+                    "between seller assertions, official records, commercial reports, and "
+                    "the pod's own inspection findings. Conflicting evidence should lower "
+                    "the bid ceiling or stop the purchase."
+                ),
+            ],
+            "table": {
+                "caption": "Eighteen-source directory: access costs, refresh discipline, evidence, and fallback routes",
+                "headers": [
+                    "Named source and operating use",
+                    "Exact access method and cost basis",
+                    "Refresh latency and request hygiene",
+                    "Evidence retained for the asset record",
+                    "Fallback source and purchase decision rule",
+                ],
+                "rows": [
+                    [
+                        "GSA Auctions supports P1 federal vehicle and equipment discovery.",
+                        "Use https://gsaauctions.gov/ public listings and registered bidding; browsing is free, with sale-specific payment charges.",
+                        "Review saved candidates each business day and before bidding; record amendments without asserting a public listing API.",
+                        "Preserve lot description, seller contact, title documents offered, inspection arrangements, and the complete removal terms.",
+                        "Ask the listed sales contact for clarification; exclude lots whose documentation cannot support the intended resale.",
+                    ],
+                    [
+                        "GovPlanet supports P1 fleet discovery and P4 condition triage.",
+                        "Use https://www.govplanet.com/ listings and account features; public browsing is free, while transaction charges follow current terms.",
+                        "Refresh shortlisted lots daily and before submission; use authorized account features rather than undocumented endpoint polling.",
+                        "Save condition reports, photographs, buyer charges, release requirements, export restrictions, and seller-specific sale conditions.",
+                        "Commission permitted physical inspection or obtain seller answers; platform reports do not replace unresolved mechanical evidence.",
+                    ],
+                    [
+                        "GovDeals supports P2 municipal machinery and P3 equipment bundles.",
+                        "Use https://www.govdeals.com/ public search and registered account alerts; browsing is free, with lot-specific transaction costs.",
+                        "Process alerts daily and recheck closing extensions; follow platform permissions for every export or automated retrieval.",
+                        "Capture agency identity, attachments, serial references, payment window, buyer premium, and removal responsibilities.",
+                        "Contact the selling agency through listed channels; resolve quantity and attachment questions before calculating resale value.",
+                    ],
+                    [
+                        "Public Surplus supports P2 municipal assets and P3 mixed lots.",
+                        "Use https://www.publicsurplus.com/ auction search and account notifications; browsing is free, with sale-specific purchase charges.",
+                        "Review notifications daily and inspect amendments before bidding; avoid automated collection without an authorized access route.",
+                        "Retain lot photographs, item counts, agency terms, tax treatment, pickup appointments, and loading assistance statements.",
+                        "Request a seller inventory sheet or inspection appointment; price mixed lots from verified recoverable components.",
+                    ],
+                    [
+                        "SAM.gov exclusions supports eligibility checks when sale terms require screening.",
+                        "Use https://sam.gov/ public exclusion search; any API use requires applicable registration, credentials, and documented permissions.",
+                        "Check relevant parties before a restricted transaction; honor endpoint quotas and the record's own update date.",
+                        "Keep matching criteria, entity identifiers, exclusion scope, active dates, and the specific sale requirement reviewed.",
+                        "Request seller eligibility clarification and examine the underlying exclusion; name similarity alone does not establish disqualification.",
+                    ],
+                    [
+                        "NHTSA vPIC supports P1 vehicle identity and configuration checks.",
+                        "Call https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVinValues/{VIN}?format=json or use the free public decoder.",
+                        "Decode each distinct VIN once and cache results; serialize requests, back off on throttling, and follow published guidance.",
+                        "Store VIN, decoded attributes, response errors, retrieval time, and any disagreement with the listing.",
+                        "Inspect the manufacturer plate and obtain OEM documentation; a successful decode does not establish ownership or condition.",
+                    ],
+                    [
+                        "NHTSA recall search supports P1 and P4 vehicle safety triage.",
+                        "Use https://www.nhtsa.gov/recalls for free VIN lookup; model-level data is available through documented NHTSA recall services.",
+                        "Recheck shortlisted vehicles before resale; respect interactive protections and never treat model-level results as VIN completion evidence.",
+                        "Retain campaign references, lookup date, applicability questions, and manufacturer or dealer confirmation of completed repairs.",
+                        "Ask an authorized dealer for VIN-specific campaign status; public results can omit recently announced or already repaired recalls.",
+                    ],
+                    [
+                        "NMVTIS consumer access supports P1 title-history and brand review.",
+                        "Select an approved provider through https://vehiclehistory.bja.ojp.gov/; consumer reports are commercially priced by the provider.",
+                        "Purchase after VIN validation and before material exposure; provider refresh lag follows contributing records rather than auction timing.",
+                        "Save report date, title-state history, brands, odometer information, and provider explanations of coverage limits.",
+                        "Obtain issuing-state title records through authorized procedures; NMVTIS is not a comprehensive lien or repair-history database.",
+                    ],
+                    [
+                        "California DMV supports P1 California title and transfer planning.",
+                        "Use https://www.dmv.ca.gov/ vehicle registration guidance and applicable forms; record requests and transactions carry published fees.",
+                        "Review requirements before bidding on a California transfer; use official forms rather than automated personal-record searches.",
+                        "Retain required ownership documents, tax treatment, inspection requirements, and written answers about the proposed transfer route.",
+                        "Ask the destination state's motor vehicle agency about SF-97 acceptance; do not generalize California requirements nationwide.",
+                    ],
+                    [
+                        "California bizfile UCC search supports ownership and lien diligence.",
+                        "Use https://bizfileonline.sos.ca.gov/ UCC services; basic access and paid certified products follow the current fee schedule.",
+                        "Search relevant debtor names before purchasing exposed assets; filing-office indexing and amendment timing can affect results.",
+                        "Preserve debtor names searched, filing numbers, collateral descriptions, continuation records, and secured-party release evidence.",
+                        "Use the legally relevant filing jurisdiction and certified searches; a California search alone does not establish clean ownership.",
+                    ],
+                    [
+                        "DLA Disposition Services DEMIL guidance supports P5 disposition screening.",
+                        "Use https://www.dla.mil/Disposition-Services/DEMIL/ public guidance without a browsing charge; follow linked current controlling documents.",
+                        "Check current guidance for each potentially controlled lot; record document revision dates and seller clarifications.",
+                        "Keep item identifiers, stated DEMIL codes, sale conditions, required destruction evidence, and applicable release restrictions.",
+                        "Obtain written direction from the selling activity; an ambiguous code cannot support unrestricted resale assumptions.",
+                    ],
+                    [
+                        "DLA PUB LOG supports P2 and P5 item-identification research.",
+                        "Use https://www.dla.mil/Information-Operations/Services/Applications/PUB-LOG/ for available public products; separate public downloads from restricted systems.",
+                        "Record each downloaded product's release date and reuse locally; do not treat catalog updates as real-time inventory evidence.",
+                        "Retain NSN matches, manufacturer references, source version, and distinctions between catalog identity and physical lot identity.",
+                        "Confirm markings with the seller and manufacturer documentation; catalog resemblance cannot establish a lot's disposition permission.",
+                    ],
+                    [
+                        "BIS Commerce Control List supports restricted equipment and parts review.",
+                        "Read https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-774 for free official regulatory access and current supplements.",
+                        "Review classification before offering controlled goods internationally; recheck relevant changes before shipment rather than caching indefinitely.",
+                        "Retain technical specifications, classification rationale, destination information, end-use statements, and any required authorization.",
+                        "Obtain manufacturer classification support or a BIS determination when appropriate; DEMIL status does not resolve export classification.",
+                    ],
+                    [
+                        "OFAC Sanctions List Service supports buyer and counterparty screening.",
+                        "Use https://ofac.treasury.gov/sanctions-list-service for free official list downloads and published machine-readable resources.",
+                        "Refresh lists on the desk's daily schedule and before covered transactions; retain source publication timestamps and retry politely.",
+                        "Save list version, names screened, identifying attributes, potential matches, and the documented resolution of each match.",
+                        "Review the applicable sanctions program and ownership facts; an empty name-search result does not resolve every prohibition.",
+                    ],
+                    [
+                        "CPSC recall resources support P3 consumer-product resale screening.",
+                        "Use https://www.cpsc.gov/Recalls and https://www.cpsc.gov/Recalls/CPSC-Recalls-Application-Program-Interface-API-Information for free search and API documentation.",
+                        "Check exact models before resale and refresh affected inventory after new notices; follow documented query and pagination behavior.",
+                        "Store recall identifiers, affected serial ranges, remedy instructions, lookup dates, and evidence that the intended sale is permitted.",
+                        "Ask the manufacturer to resolve model-range ambiguity; isolate potentially affected goods rather than listing them while researching.",
+                    ],
+                    [
+                        "FCC equipment authorization supports P3 radio and electronics identification.",
+                        "Use https://www.fcc.gov/oet/ea/fccid for free FCC ID searches and linked equipment authorization exhibits.",
+                        "Query verified identifiers during intake and cache exhibits; grants document authorization history rather than current working condition.",
+                        "Preserve FCC ID, grantee, model association, grant conditions, and photographs matching the physical label.",
+                        "Consult manufacturer manuals and inspect altered equipment; an authorization record does not establish transferability of software licenses.",
+                    ],
+                    [
+                        "eBay Browse API supports P3 and P6 active-market comparisons.",
+                        "Use https://developer.ebay.com/api-docs/buy/browse/overview.html with developer credentials and OAuth; production permissions, quotas, and account terms apply.",
+                        "Refresh selected comparison sets daily within the allocated quota; obey HTTP throttling responses and cache unchanged results.",
+                        "Retain query filters, item identifiers, asking prices, shipping charges, condition labels, and observation dates.",
+                        "Use permitted sold research or documented buyer quotes; Browse active listings are not evidence of completed sale prices.",
+                    ],
+                    [
+                        "FMCSA SAFER supports carrier identity and removal planning.",
+                        "Use https://safer.fmcsa.dot.gov/CompanySnapshot.aspx for free public USDOT company snapshots; verify insurance through the appropriate additional records.",
+                        "Check the selected carrier before dispatch and note the snapshot date; use manual lookup without bypassing access protections.",
+                        "Save USDOT identity, operating status, contact match, safety information, and separately obtained cargo coverage evidence.",
+                        "Review FMCSA Licensing and Insurance records where applicable and confirm coverage with the insurer; SAFER alone is insufficient.",
+                    ],
+                ],
+            },
+        },
+        {
+            "heading": "2. Build a permissioned evidence pipeline, not a scraping project",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Start with a Python standard-library collector, SQLite, and a shared "
+                    "document store whose access is limited to the pod. Use urllib.request "
+                    "only for documented, permitted interfaces; use csv for authorized "
+                    "exports, json for responses, hashlib for document fingerprints, and "
+                    "zoneinfo for time handling. Manual entry is an acceptable adapter when "
+                    "a marketplace supplies no supported feed. Separate source records, lots, "
+                    "assets, inspections, quotes, bids, acquisitions, sales, and cash events. "
+                    "A lot can contain multiple assets, and the same asset can appear in "
+                    "a relisted lot. Build source keys from platform, seller, and lot "
+                    "identifier; build physical identities from verified VINs or manufacturer "
+                    "and serial combinations. Never merge two machines merely because their "
+                    "model names match. Store observed_at, source_updated_at when provided, "
+                    "retrieval method, document location, and content digest. Preserve closing "
+                    "and removal timestamps in UTC together with the original timezone "
+                    "and source wording. For date-only removal terms, retain date precision "
+                    "rather than fabricating a midnight deadline. Operator B owns import "
+                    "exceptions and identity merges; operator A resolves physical ambiguity "
+                    "with the seller. This division gives each discrepancy an accountable "
+                    "owner without requiring another full-time analyst or a custom software "
+                    "team before the first purchase."
+                ),
+                (
+                    "Make retrieval behavior conservative and observable. Set connection "
+                    "timeouts, bound response sizes, validate content types, and reject "
+                    "unexpected redirects to credential collection pages. Use conditional "
+                    "requests with ETag or Last-Modified only where supported. Honor "
+                    "Retry-After, apply exponential backoff with jitter, and stop a failing "
+                    "adapter after a bounded retry budget. Keep credentials outside saved "
+                    "responses and versioned files; redact tokens from logs. A successful "
+                    "HTTP response is not proof of a successful import: a login page can "
+                    "arrive with status 200. Check required fields, pagination completion, "
+                    "duplicate identifiers, currency, timezone, and plausible item counts. "
+                    "Quarantine changed schemas instead of silently dropping inconvenient "
+                    "fields. Use sqlite3 integrity checks and foreign keys, transactionally "
+                    "commit complete imports, and test restoration from a dated backup. "
+                    "Build a small fixture collection from permitted, sanitized examples "
+                    "and run unittest against parsers before changing adapters. The first "
+                    "dashboard should show stale shortlisted lots, missing removal deadlines, "
+                    "unresolved identity conflicts, overdue invoices, and inventory without "
+                    "a buyer channel. It should not reward the team for collecting thousands "
+                    "of listings that nobody can inspect or remove. An outage should trigger "
+                    "a manual shortlist review, not unauthorized collection through a "
+                    "different endpoint or account."
+                ),
+                (
+                    "Use the waterfall to protect the scarce resource: inspection and "
+                    "decision time. P1 requires VIN resolution before a paid history report. "
+                    "P2 requires attachment verification before freight pricing. P3 requires "
+                    "a recoverable component count before catalog enrichment. P4 requires "
+                    "a mechanic's bounded repair estimate before optimistic resale "
+                    "comparisons. P5 requires disposition permission before assigning parts "
+                    "value. P6 requires buyer specifications and credible demand before "
+                    "travel. Route only shortlisted assets into paid services, and record "
+                    "which answer justified the expense. Build a weekly exception meeting "
+                    "around purchases delayed by data gaps, not a tour of every dashboard "
+                    "chart. The mechanic receives photographs and fault questions in one "
+                    "packet; the carrier receives dimensions, weights, loading conditions, "
+                    "and the removal window; the bookkeeping contractor receives reconciled "
+                    "invoices, fees, and asset allocations. Contractors should receive only "
+                    "the records needed for their assignments. Operator B measures research "
+                    "minutes per purchased asset, duplicate-alert rate, stale-record rate, "
+                    "and the share of inspections that change a bid. Cancel a data "
+                    "subscription when its evidence duplicates an existing source without "
+                    "improving decisions. Keep a manual export and source-contact route for "
+                    "every critical adapter so a vendor outage cannot erase the pod's "
+                    "ability to operate during an auction week."
+                ),
+            ],
+            "table": {
+                "caption": "Six-play enrichment waterfall with bounded research and explicit ownership",
+                "headers": [
+                    "Mapped play and initial trigger",
+                    "Ordered evidence and enrichment sequence",
+                    "Decision-changing stop condition and fallback",
+                    "Accountable pod owner and contractor packet",
+                ],
+                "rows": [
+                    [
+                        "P1 federal fleet resale begins with a readable VIN.",
+                        "Decode identity, inspect title route, purchase targeted history, then confirm repair and buyer demand.",
+                        "Stop when title documentation cannot support destination registration; ask the issuing authority before bidding.",
+                        "Operator A owns vehicle acceptance; the mechanic receives VIN, photographs, fault questions, and inspection scope.",
+                    ],
+                    [
+                        "P2 municipal equipment resale begins with verified attachments.",
+                        "Resolve serial identity, inspect maintenance evidence, verify attachments, then obtain removal and freight quotations.",
+                        "Stop when safe loading exceeds available equipment; obtain a different written rigging plan or decline.",
+                        "Operator A owns removal feasibility; the carrier receives dimensions, weight, access photographs, and appointment terms.",
+                    ],
+                    [
+                        "P3 commercial equipment bundling begins with component-level counts.",
+                        "Count recoverable units, identify models, screen recalls, check accessories, then compare realistic resale channels.",
+                        "Stop when missing accessories destroy bundle economics; price verified components rather than the advertised count.",
+                        "Operator B owns component records; the mechanic tests a defined sample and documents selection limits.",
+                    ],
+                    [
+                        "P4 repair-led resale begins with a bounded fault hypothesis.",
+                        "Collect fault evidence, obtain mechanic findings, quote parts availability, then estimate repair labor and sale value.",
+                        "Stop when diagnosis remains open-ended or critical parts lack supply; retain only supported salvage alternatives.",
+                        "Operator A owns repair exposure; the mechanic supplies findings, exclusions, parts lead times, and estimate range.",
+                    ],
+                    [
+                        "P5 documented parts recovery begins with disposition permission.",
+                        "Match identifiers, review DEMIL terms, examine export restrictions, then estimate permitted recoverable components.",
+                        "Stop when destruction or resale restrictions conflict with the plan; request written selling-activity clarification.",
+                        "Operator A owns restriction review; operator B retains instructions, disposition evidence, and component inventory links.",
+                    ],
+                    [
+                        "P6 buyer-led B2B remarketing begins with written buyer specifications.",
+                        "Capture specifications, verify asset fit, compare alternatives, obtain freight pricing, then confirm commercial purchase terms.",
+                        "Stop when buyer interest lacks price or condition acceptance; underwrite an independent resale route instead.",
+                        "Operator B owns buyer evidence; bookkeeping support verifies invoices, collections, and documented asset-level proceeds.",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Spend research time where surplus listings hide expensive facts",
+                "body": (
+                    "Veteran desks prioritize missing attachments, removal mechanics, "
+                    "relisting history, and paperwork over decorative market dashboards."
+                ),
+                "items": [
+                    "Ask municipal sellers to photograph the attachment plate and coupler together; model compatibility errors can erase the entire resale spread.",
+                    "Compare relisted serial numbers with archived lot photographs before treating a reopened auction as fresh inventory; ask why the earlier sale failed.",
+                    "Request the loading contact's name, available equipment capacity, appointment rules, and surface conditions before asking carriers for a firm quotation.",
+                    "Request redacted examples of the ownership documents the seller actually issues; a listing's generic title wording does not establish the destination transfer route.",
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Capture and classify the candidate",
+                    "action": "Create a source-keyed lot record and assign P1 through P6 routing tags.",
+                    "detail": "Save terms, source timestamps, item identifiers, removal details, and the permitted retrieval method before enrichment begins.",
+                },
+                {
+                    "step": 2,
+                    "title": "Resolve physical identity and restrictions",
+                    "action": "Match VINs or serials against photographs, official records, and seller responses.",
+                    "detail": "Operator A resolves conflicts; operator B preserves both original evidence and the dated resolution without overwriting history.",
+                },
+                {
+                    "step": 3,
+                    "title": "Purchase only decision-changing evidence",
+                    "action": "Order targeted reports, inspections, and freight quotations for shortlisted assets.",
+                    "detail": "Record the purchase decision each expense informs and stop further enrichment when a decisive rejection condition appears.",
+                },
+                {
+                    "step": 4,
+                    "title": "Freeze the bid packet and reconcile outcomes",
+                    "action": "Version the evidence, bid ceiling, owner decision, and removal plan before submission.",
+                    "detail": "After settlement, connect actual purchase costs, handling costs, resale proceeds, and collections to the same asset identities.",
+                },
+            ],
+        },
+        {
+            "heading": "3. Turn title, DEMIL, recall, and transport evidence into purchase controls",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Treat SF-97 as evidence used in a state titling process, not as "
+                    "a universal substitute for a state title. Confirm what the selling "
+                    "agency will issue, whether the purchaser name must match the account, "
+                    "which original documents accompany delivery, and what the destination "
+                    "motor vehicle agency requires. A release document proves permission "
+                    "to collect property; it does not necessarily prove a complete "
+                    "ownership chain. Under 41 CFR Part 102-38, federal personal-property "
+                    "sales operate within a defined sales framework, but the actual "
+                    "solicitation and award terms still determine inspection, payment, and "
+                    "removal obligations. State registration, resale permitting, tax, and "
+                    "dealer requirements depend on location and transaction pattern. The "
+                    "Driver's Privacy Protection Act, 18 U.S.C. § 2721, limits disclosure "
+                    "and use of personal information from motor vehicle records; use "
+                    "authorized record-access procedures rather than searching for prior "
+                    "owners through unrelated personal-data services. Where security "
+                    "interests matter, investigate the relevant debtor, collateral, "
+                    "jurisdiction, and release documents. UCC search results require "
+                    "interpretation, especially for certificate-of-title property. Do not "
+                    "infer clean ownership from a government-looking seller name or a "
+                    "single database result. Operator A must connect the physical asset "
+                    "to the exact documents that support the planned resale channel."
+                ),
+                (
+                    "Keep military disposition, export classification, and product safety "
+                    "as separate questions. A DEMIL code addresses a particular disposition "
+                    "framework; it does not automatically answer whether a component may "
+                    "be exported, sold to a particular buyer, or marketed for civilian "
+                    "use. Review DLA instructions, the selling activity's conditions, "
+                    "technical identifiers, and any mutilation or destruction requirements "
+                    "before assigning parts value. The Export Administration Regulations "
+                    "in 15 CFR Parts 730–774 can apply to equipment and components, "
+                    "while defense articles may fall under a different export regime. "
+                    "Route ambiguous military-origin material to qualified classification "
+                    "review rather than inventing a favorable classification. For consumer "
+                    "products within CPSC jurisdiction, 15 U.S.C. § 2068 prohibits specified "
+                    "sales involving recalled and otherwise noncompliant products. Match "
+                    "the actual model and affected serial range; a similar photograph "
+                    "is insufficient. Vehicle recalls require their own NHTSA and "
+                    "manufacturer workflow, and a public search cannot prove every "
+                    "repair was performed. P5 should never become a mechanism for "
+                    "stripping identifiers or separating parts to avoid a restriction. "
+                    "Retain disposition evidence for every restricted lot, and keep "
+                    "potentially affected goods physically separated from ordinary "
+                    "inventory until the desk establishes a permissible handling and "
+                    "sale path."
+                ),
+                (
+                    "Removal feasibility deserves the same evidence standard as title. "
+                    "An attractive hammer price can become a loss when a machine cannot "
+                    "be started, tires cannot hold pressure, a forklift lacks capacity, "
+                    "or an agency allows collection only during a narrow appointment. "
+                    "Translate seller terms into a carrier packet with dimensions, weight "
+                    "source, lifting points, loading assistance, site restrictions, "
+                    "appointment contacts, and the final removal date. Verify carrier "
+                    "identity with FMCSA records where applicable, then obtain cargo "
+                    "coverage and equipment suitability evidence separately. A USDOT "
+                    "number alone does not establish adequate coverage or available "
+                    "capacity. Build a pre-bid exception checklist covering as-is defects, "
+                    "document delivery, restricted-item conditions, buyer fit, and deadline "
+                    "risk. Assign each unresolved item an owner and a decision date "
+                    "earlier than auction close. Operator A can reject a purchase; "
+                    "operator B can withhold a ready-for-sale status when documentation "
+                    "or inventory reconciliation is incomplete. Neither should silently "
+                    "convert a missing fact into a favorable assumption. Preserve the "
+                    "rejected packet as well as the purchased packet: repeated rejection "
+                    "reasons reveal which agencies, asset classes, and removal sites "
+                    "consume effort without producing usable inventory. That feedback "
+                    "improves sourcing more reliably than simply increasing alert volume."
+                ),
+            ],
+            "table": {
+                "caption": "Six forensic checks that connect official evidence to physical surplus risk",
+                "headers": [
+                    "Failure mode and affected operating plays",
+                    "Required evidence and diagnostic comparison",
+                    "Practical decision rule before capital commitment",
+                    "Retained record and assigned resolution owner",
+                ],
+                "rows": [
+                    [
+                        "Broken ownership chain threatens P1 fleet and P6 resale.",
+                        "Compare VIN photographs, award purchaser, SF-97 or title paperwork, and destination transfer requirements.",
+                        "Decline until document inconsistencies are resolved through the seller and appropriate motor vehicle authority.",
+                        "Operator A retains document requirements and seller confirmations; operator B records originals received and delivery dates.",
+                    ],
+                    [
+                        "Ambiguous disposition restrictions threaten P5 documented parts recovery.",
+                        "Compare physical markings, NSN evidence, stated DEMIL code, sale conditions, and controlling disposition instructions.",
+                        "Assign no unrestricted parts value until the selling activity resolves the applicable handling obligations.",
+                        "Operator A preserves written instructions; operator B links disposition evidence to every resulting component record.",
+                    ],
+                    [
+                        "Recall exposure threatens P3 bundles and P4 refurbishment.",
+                        "Match exact models and serial ranges against CPSC notices or vehicle-specific manufacturer information.",
+                        "Separate affected inventory and establish a permitted remedy or disposition before offering goods for sale.",
+                        "Operator B maintains recall status; the mechanic documents completed remedies and manufacturer verification where required.",
+                    ],
+                    [
+                        "Unbounded mechanical defects threaten P2 equipment and P4 repairs.",
+                        "Compare seller condition claims with mechanic tests, fluid observations, fault codes, and replacement-part availability.",
+                        "Reduce the bid to supported recovery economics or reject when the inspection cannot bound exposure.",
+                        "Operator A retains the mechanic's findings, test limitations, photographs, and written repair-cost assumptions.",
+                    ],
+                    [
+                        "Impossible collection windows threaten every physical surplus play.",
+                        "Compare removal terms with carrier availability, loading equipment, access restrictions, and appointment confirmation.",
+                        "Reject when no executable removal plan exists inside the seller's stated collection period.",
+                        "Operator A owns pickup feasibility; the carrier supplies a dated quotation and equipment-specific collection plan.",
+                    ],
+                    [
+                        "Unresolved security interests threaten machinery and titled asset resale.",
+                        "Review relevant filing jurisdictions, debtor identity, collateral descriptions, title records, and secured-party release evidence.",
+                        "Do not equate one empty search with clean ownership; resolve conflicting claims before purchase.",
+                        "Operator A coordinates ownership review; operator B stores search scope, dated results, and release documents.",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Four pre-flight verifications before submitting a binding bid",
+                "body": (
+                    "A listing becomes bid-ready only when the packet supports the "
+                    "asset identity, permissible disposition, executable removal, and "
+                    "fully costed resale plan."
+                ),
+                "items": [
+                    "Verify the VIN or serial against physical photographs and confirm the specific ownership documents required for the intended destination.",
+                    "Resolve DEMIL conditions, applicable export restrictions, and recall questions using current primary sources and written seller clarification.",
+                    "Obtain a carrier or rigging plan that fits the removal deadline, site access, loading capacity, and documented coverage requirements.",
+                    "Approve a dated bid ceiling that includes buyer charges, taxes where applicable, transport, repairs, selling costs, and allocated overhead.",
+                ],
+            },
+        },
+        {
+            "heading": "4. Make every information expense reconcile to owner profit",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "Keep the canonical scorecard visible beside the operating dashboard. "
+                    "Conservative revenue is $150,000 of gross resale proceeds at an "
+                    "8% net margin, producing $12,000 annual owner net profit with "
+                    "two full-time staff and three contractors. Base revenue is $575,000 "
+                    "at 14.0%, producing $80,500 with the same staffing configuration. "
+                    "Scaled revenue is $1,000,000 at 20%, producing $200,000 with three "
+                    "full-time staff and four contractors. These figures describe the "
+                    "resale business, not the total auction value observed, seller "
+                    "transaction volume, or value of unsold stock. The corresponding "
+                    "total cost envelopes are $138,000, $494,500, and $800,000. Acquisition, "
+                    "buyer charges, transport, refurbishment, paid data, software, storage, "
+                    "selling expenses, and other operating costs must fit inside those "
+                    "envelopes under the scorecard's accounting convention. Do not add "
+                    "subscription spending beneath owner profit as though it were free. "
+                    "The stated $25,000–$200,000 startup capital range and $3,000–$15,000 "
+                    "monthly operating-expense range describe planning boundaries, not "
+                    "permission to combine every high-cost assumption with the Conservative "
+                    "case. Reconcile a specific budget before purchasing inventory. Track "
+                    "inventory acquisition as a cash requirement and recognize the relevant "
+                    "cost against sales consistently; cash deployment and period expense "
+                    "are related but different measures."
+                ),
+                (
+                    "Use a transparent bid worksheet instead of a model that turns weak "
+                    "comparisons into false precision. For an illustrative asset expected "
+                    "to resell for $10,000, reserve $1,400 for owner profit and "
+                    "$2,200 for all non-acquisition costs, including allocated overhead. "
+                    "Assume a 10% buyer premium on hammer price and no additional "
+                    "acquisition tax in this particular example because the transaction's "
+                    "documented tax treatment supports that assumption. The hammer ceiling "
+                    "is ($10,000 minus $1,400 minus $2,200) divided by 1.10, or "
+                    "$5,818.18. Hammer plus premium therefore consumes approximately "
+                    "$6,400, total costs equal $8,600, and the resulting $1,400 profit "
+                    "matches a 14% margin. This is a teaching example, not evidence "
+                    "that every asset achieves Base economics. Replace the tax assumption "
+                    "and premium formula with the actual sale terms. Round down to "
+                    "an allowed bidding increment, and treat the ceiling as a stop "
+                    "price rather than a target. If inspection raises repair costs "
+                    "by $660, the hammer ceiling falls by $600 under the same "
+                    "premium structure. If buyer demand weakens, change expected proceeds "
+                    "first; do not preserve the bid by quietly deleting the profit "
+                    "reserve or ignoring storage."
+                ),
+                (
+                    "Evaluate tooling through attributable changes in decisions and cash "
+                    "conversion. A proposed $200 monthly data service costs $2,400 "
+                    "annually, equal to 20% of Conservative owner profit and approximately "
+                    "3% of Base owner profit before any benefit. Its justification "
+                    "must come from measured avoided losses, lower research labor, "
+                    "better realized proceeds, or faster turnover that fits the pod's "
+                    "actual capacity. Record the baseline, the decision changed, the "
+                    "evidence used, and the realized outcome; do not count a hypothetical "
+                    "avoided purchase as a booked gain. Review purchased assets by "
+                    "play, seller, age, repair variance, transport variance, and realized "
+                    "margin. Separate asking-price comparisons from completed transactions "
+                    "and net offers. Unsold inventory needs a dated repricing or "
+                    "liquidation decision, not a dashboard valuation that grows with "
+                    "optimism. Operator B closes the weekly exception report; operator "
+                    "A resolves bid and removal issues; contractors supply bounded "
+                    "technical, transport, and bookkeeping inputs. Add the third "
+                    "full-time role and fourth contractor only within the Scaled "
+                    "plan's seven-person structure and cost envelope. Automation should "
+                    "increase the number of fully evidenced decisions the existing "
+                    "pod can execute, not multiply weak leads, overdue collections, "
+                    "or assets stranded at a government yard."
+                ),
+            ],
+            "table": {
+                "caption": "Canonical scorecard reconciliation and information-spend control",
+                "headers": [
+                    "Case or operating control",
+                    "Revenue recognition and profit arithmetic",
+                    "Staffing or cost treatment",
+                    "Decision rule for the tooling budget",
+                ],
+                "rows": [
+                    [
+                        "Conservative case preserves the canonical small-pod operating assumptions.",
+                        "$150,000 gross resale proceeds multiplied by 8% equals $12,000 annual owner net profit.",
+                        "Two full-time staff plus three contractors operate within the $138,000 total annual cost envelope.",
+                        "Count every paid report and subscription inside costs; preserve cash for acquisition, removal, and repair.",
+                    ],
+                    [
+                        "Base case preserves the same five-person staffing configuration.",
+                        "$575,000 gross resale proceeds multiplied by 14.0% equals $80,500 annual owner net profit.",
+                        "Two full-time staff plus three contractors operate within the $494,500 total annual cost envelope.",
+                        "Require evidence that additional tooling changes decisions or saves usable capacity before expanding subscriptions.",
+                    ],
+                    [
+                        "Scaled case increases capacity within a seven-person team.",
+                        "$1,000,000 gross resale proceeds multiplied by 20% equals $200,000 annual owner net profit.",
+                        "Three full-time staff plus four contractors operate within the $800,000 total annual cost envelope.",
+                        "Expand supported adapters and inventory controls only alongside executable inspection, transport, and resale capacity.",
+                    ],
+                    [
+                        "Illustrative subscription review tests opportunity cost against actual outcomes.",
+                        "A $200 monthly service creates $2,400 annual expense before any measurable operating benefit.",
+                        "Include that expense within the selected scenario rather than subtracting it from an unrelated revenue measure.",
+                        "Retain the service only when documented benefits justify expense without double-counting hypothetical avoided losses.",
+                    ],
+                ],
+            },
+        },
+    ],
+    "pull_quote": "The best surplus database is the one that changes your bid before the removal clock starts.",
+    "diagram_id": "diag-04",
+    "action_checklist": [
+        "Assign every candidate to the six-play routing map and give each physical asset one verified inventory identity across relistings and resale channels.",
+        "Create a dated provider register recording authorized access methods, actual prices, documented quotas, refresh schedules, and manual fallback contacts.",
+        "Build the SQLite evidence ledger with source timestamps, document fingerprints, identity checks, timezone handling, import quarantine, and tested backup restoration.",
+        "Assemble a pre-bid packet covering ownership documents, applicable restrictions, recall checks, mechanic findings, carrier arrangements, and buyer evidence.",
+        "Implement a bid-limit worksheet that includes buyer premiums, transaction-specific taxes, transport, repair, selling costs, allocated overhead, and the profit reserve.",
+        "Reconcile weekly inventory and cash exceptions to the exact Conservative, Base, or Scaled scorecard, then cancel tooling that cannot demonstrate a useful decision impact.",
+    ],
+    "statutory_citations": [
+        {
+            "title": "5 U.S.C. § 552 — Freedom of Information Act",
+            "url": "https://www.law.cornell.edu/uscode/text/5/552",
+            "relevance": (
+                "Supports targeted requests for existing federal maintenance, disposal, "
+                "and sale records, subject to applicable exemptions, processing rules, and fees."
+            ),
+        },
+        {
+            "title": "41 CFR Part 102-38 — Sale of Personal Property",
+            "url": "https://www.ecfr.gov/current/title-41/subtitle-C/chapter-102/subchapter-B/part-102-38",
+            "relevance": (
+                "Provides the federal personal-property sales framework; the operator "
+                "must also preserve the specific solicitation, award, payment, and removal terms."
+            ),
+        },
+        {
+            "title": "18 U.S.C. § 2721 — Motor vehicle record privacy",
+            "url": "https://www.law.cornell.edu/uscode/text/18/2721",
+            "relevance": (
+                "Limits disclosure and use of personal information from motor vehicle "
+                "records and identifies permitted uses relevant to authorized record access."
+            ),
+        },
+        {
+            "title": "15 U.S.C. § 2068 — Prohibited acts involving consumer products",
+            "url": "https://www.law.cornell.edu/uscode/text/15/2068",
+            "relevance": (
+                "Establishes specified prohibitions involving recalled and otherwise "
+                "noncompliant consumer products, making model-level screening essential before resale."
+            ),
+        },
+        {
+            "title": "15 CFR Part 736 — General Prohibitions under the Export Administration Regulations",
+            "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-736",
+            "relevance": (
+                "Connects export and reexport decisions to classification, destination, "
+                "end-use, end-user, and other restrictions rather than DEMIL status alone."
+            ),
+        },
+        {
+            "title": "15 CFR Part 774, Supplement No. 1 — Commerce Control List",
+            "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-774",
+            "relevance": (
+                "Provides controlled-item classification entries used when evaluating "
+                "equipment and components within the Export Administration Regulations."
+            ),
+        },
+        {
+            "title": "California Commercial Code § 9311 — Perfection governed by other statutes or treaties",
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=9311.&lawCode=COM",
+            "relevance": (
+                "Explains why ordinary UCC filing searches alone can be insufficient "
+                "for property subject to certificate-of-title or other specified perfection systems."
+            ),
+        },
+    ],
+}

@@ -1,0 +1,660 @@
+from __future__ import annotations
+
+CHAPTER_4 = {
+    "id": "Q4",
+    "chapter_id": "Q4",
+    "chapter_number": 4,
+    "question_number": 4,
+    "slug": "startup-capital-lean-infrastructure-pre-flight-stack",
+    "question_prompt": "How do you allocate startup capital ($25,000–$200,000 USD) and configure a lean, low-opex ($3,000–$15,000 USD/mo) production stack without wasting cash on bloated overhead?",
+    "kicker": "Q4 / THE BIG MONEY PLAYBOOKS",
+    "title": "Startup Capital, Lean Infrastructure & Pre-Flight Stack",
+    "subtitle": "Reserve-First Buying, GSA and Municipal Removal Rails, SF-97 Title Controls, and a Twelve-Layer Resale Stack",
+    "layout_template": "comparison_table",
+    "reading_time_minutes": 14,
+    "executive_summary": (
+        "Candidate #17, Government Surplus Auctions, ranks #26 with a Money-to-Manpower "
+        "Score of 62/100: inventory and removal execution matter more than software. "
+        "Allocate 55% of startup cash to protected working-capital float, buy narrow "
+        "categories, and rent handling capacity against confirmed pickups. This chapter "
+        "maps six operating plays: local equipment lot splitting, titled fleet resale, "
+        "parts recovery, contractor-direct remarketing, deadline-driven clearance, and "
+        "section_321_de_minimis_bonded_tariff_arbitrage. The cross-border play is a "
+        "restricted research branch, not an assumed duty exemption. Canonical annual "
+        "owner profits remain $12,000 Conservative, $80,500 Base, and $200,000 Scaled. "
+        "A twelve-layer stack, explicit purchase ceilings, title controls, and removal "
+        "verification protect cash while preserving the $3,000–$15,000 monthly operating "
+        "envelope. Gross resale proceeds—not customer inventory value or claimed tariff "
+        "savings—anchor the surplus scorecard."
+    ),
+    "key_metrics": [
+        {
+            "label": "Conservative",
+            "value": "$150,000",
+            "context": "Annual gross resale proceeds; acquisition, transport, and refurbishment included in margin",
+            "note": "8% net margin; $12,000 annual owner net profit; 2 FT + 3 C",
+        },
+        {
+            "label": "Base",
+            "value": "$575,000",
+            "context": "Annual gross resale proceeds; acquisition, transport, and refurbishment included in margin",
+            "note": "14.0% net margin; $80,500 annual owner net profit; 2 FT + 3 C",
+        },
+        {
+            "label": "Scaled",
+            "value": "$1,000,000",
+            "context": "Annual gross resale proceeds; acquisition, transport, and refurbishment included in margin",
+            "note": "20% net margin; $200,000 annual owner net profit; 3 FT + 4 C",
+        },
+    ],
+    "sections": [
+        {
+            "heading": "1. Protect the float before buying the first pallet",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "Start with a six-envelope treasury rather than a shopping list. Put 55% "
+                    "of committed startup capital into protected working-capital float, 25% "
+                    "into initial auction purchases, 8% into transport and removal, 5% into "
+                    "inspection and repair, 4% into entity and insurance setup, and 3% into "
+                    "systems and equipment. At $25,000, that means $13,750, $6,250, $2,000, "
+                    "$1,250, $1,000, and $750 respectively. At $200,000, the same envelopes "
+                    "become $110,000, $50,000, $16,000, $10,000, $8,000, and $6,000. These "
+                    "are cash allocation ceilings, not instructions to spend every envelope "
+                    "or expense deposits immediately. Keep float outside the routine bidding "
+                    "account, transfer only against an approved lot worksheet, and reconcile "
+                    "cash weekly. A $13,750 reserve covers about 4.6 months at $3,000 monthly "
+                    "overhead before inventory losses or exceptional repairs; it does not "
+                    "fund a six-month wait comfortably. The stated one-to-six-month first-deal "
+                    "window therefore requires early buyer interviews and small acquisitions. "
+                    "Define a reserve breach before bidding: after all committed payments, "
+                    "unencumbered cash must still cover the agreed overhead runway and one "
+                    "failed removal. If it cannot, reduce the lot size rather than relabeling "
+                    "inventory as available cash."
+                ),
+                (
+                    "Separate the startup envelopes from the recurring operating envelope. "
+                    "An illustrative $3,000 monthly floor assigns $800 to shared storage, "
+                    "$450 to insurance, $150 to communications and software, $250 to bookkeeping, "
+                    "$450 to recurring inspection and selling travel, $300 to utilities and "
+                    "security, and $600 to fixed-cost contingency. Auction acquisition, "
+                    "lot-specific freight, outsourced repairs, payroll, and payment fees "
+                    "still require separate entries; the floor is not a complete business "
+                    "cost statement. Avoid a warehouse lease merely because the capital "
+                    "account looks healthy. Use a written short-term yard agreement that "
+                    "allows the actual asset class, customer collections, loading equipment, "
+                    "and insured custody. Verify zoning, access hours, drainage, fire "
+                    "restrictions, and whether damaged vehicles or batteries are prohibited. "
+                    "A cheap space that cannot admit a flatbed during the seller's removal "
+                    "window is expensive storage. Request insurance quotes against specific "
+                    "operations: owned inventory, goods in transit, premises liability, "
+                    "commercial driving, and employees where applicable. A carrier's cargo "
+                    "certificate does not establish that every purchased machine is covered "
+                    "at replacement value. Record deductibles, exclusions, limits, and the "
+                    "claim evidence required before accepting the first load. Bind coverage "
+                    "before custody begins, not after the auction closes."
+                ),
+                (
+                    "Preserve the scorecard without pretending that headcount is free. "
+                    "Conservative recognizes $150,000 of gross resale proceeds, allows "
+                    "$138,000 of total costs, and produces $12,000 owner net profit at 8%. "
+                    "Base recognizes $575,000, allows $494,500 of costs, and produces $80,500 "
+                    "at 14.0%. Scaled recognizes $1,000,000, allows $800,000 of costs, and "
+                    "produces $200,000 at 20%. Teams remain 2 FT + 3 C, 2 FT + 3 C, "
+                    "and 3 FT + 4 C respectively. These are canonical scenarios, not proof "
+                    "that local wage quotes fit. At $36,000 annual fixed overhead, Conservative "
+                    "has only $102,000 left for acquisitions, payroll, freight, repairs, and "
+                    "every other cost. Base with $60,000 overhead leaves $434,500; Scaled "
+                    "with $180,000 overhead leaves $620,000. Put actual employee compensation "
+                    "and contractor invoices into those residual budgets before hiring. "
+                    "If the staffing interpretation or market wages breaks the allowance, "
+                    "flag the case as unvalidated rather than hiding unpaid labor. Model "
+                    "owner compensation consistently and separately identify distributions. "
+                    "Inventory purchases consume cash immediately but generally become "
+                    "expense through cost of goods sold when sold; a cash-flow statement "
+                    "and a profit statement must therefore travel together. Never add "
+                    "customer-owned merchandise to operator resale revenue."
+                ),
+            ],
+            "table": {
+                "caption": "Reserve-First Startup Allocation Across Three Capital Bases",
+                "headers": [
+                    "Capital envelope and operating purpose",
+                    "Allocation at $25,000 startup capital",
+                    "Allocation at $100,000 startup capital",
+                    "Allocation at $200,000 startup capital",
+                ],
+                "rows": [
+                    [
+                        "Protected float for overhead runway and settlement shocks",
+                        "$13,750 reserved; release only against documented cash forecasts",
+                        "$55,000 reserved; exclude outstanding bids from available liquidity",
+                        "$110,000 reserved; preserve emergency removal and payroll coverage",
+                    ],
+                    [
+                        "Initial auction inventory within category-specific purchase ceilings",
+                        "$6,250 maximum; favor inspectable equipment with local buyers",
+                        "$25,000 maximum; spread exposure across independently saleable lots",
+                        "$50,000 maximum; avoid concentrating cash in one fleet",
+                    ],
+                    [
+                        "Removal capacity including freight, loading, and pickup contingencies",
+                        "$2,000 ceiling; obtain written loading and mileage estimates",
+                        "$8,000 ceiling; reserve insured carriers before bidding deadlines",
+                        "$16,000 ceiling; accommodate staged collections and oversized equipment",
+                    ],
+                    [
+                        "Inspection and repair cash for bounded technical defects",
+                        "$1,250 ceiling; reject open-ended engine or transmission work",
+                        "$5,000 ceiling; require diagnostic findings before authorizing repairs",
+                        "$10,000 ceiling; track repair authorization against recoverable value",
+                    ],
+                    [
+                        "Entity formation, insurance deposits, and operating registrations",
+                        "$1,000 ceiling; validate local charges before committing capital",
+                        "$4,000 ceiling; include coverage deposits and registration charges",
+                        "$8,000 ceiling; fund documented requirements rather than prestige",
+                    ],
+                    [
+                        "Systems and handling equipment purchased only against utilization",
+                        "$750 ceiling; prioritize labels, scales, and basic testing",
+                        "$3,000 ceiling; rent infrequently used handling equipment instead",
+                        "$6,000 ceiling; defer upgrades until repeated throughput justifies",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Spend on information and removal, not auction excitement",
+                "body": (
+                    "The cheapest loss is the lot rejected before bidding; the next cheapest "
+                    "is the lot liquidated before storage and repairs compound."
+                ),
+                "items": [
+                    "Ask the municipal custodian whether a forklift and qualified operator will actually be available during your booked pickup window; platform photographs do not establish loading assistance.",
+                    "Photograph serial plates, attachments, meter readings, and missing components during inspection, then price the asset using completed transactions for that exact configuration.",
+                    "Negotiate shared-yard access by occupied bay or pallet position and require written permission for buyer collections before moving inventory there.",
+                    "Book a backup carrier and a direct wholesale buyer for the first heavy lot; compare both quotes with the auction's actual removal deadline before bidding.",
+                ],
+            },
+        },
+        {
+            "heading": "2. Install twelve lean layers, each with an exit path",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Build the stack around a single lot identifier that survives purchase, "
+                    "pickup, repair, listing, sale, and payment. A useful format combines "
+                    "auction source, sale date, and seller lot number; never reuse a number "
+                    "because a listing expired. Put the identifier in the bid worksheet, "
+                    "bank transfer memo, photographs, repair authorization, and customer "
+                    "invoice. Start with Airtable Free for structured inventory and Google "
+                    "Sheets for calculations, but keep the authoritative quantity and "
+                    "cost records in one designated system. Duplicate spreadsheets create "
+                    "phantom stock and stale price floors. Use platform-native auction "
+                    "alerts from GSA Auctions, GovDeals, Public Surplus, and GovPlanet "
+                    "where offered; filter on radius, category, removal terms, and "
+                    "inspection availability rather than broad bargain keywords. Federal "
+                    "ownership, municipal ownership, and private consignments require "
+                    "different seller-document checks even when the interface looks "
+                    "similar. Automate reminders, not binding purchases: a human must "
+                    "verify condition evidence and the final bid ceiling. Store dated "
+                    "sale terms alongside the lot record because fees and pickup rules "
+                    "can differ between sellers on the same platform. Archive cancellation "
+                    "emails and revised collection instructions rather than overwriting "
+                    "the original evidence."
+                ),
+                (
+                    "Treat the matrix prices as explicit budgeting references, not verified "
+                    "live quotations. Listed paid subscription references reflect commonly "
+                    "published U.S. tiers and require a current checkout check for price, "
+                    "tax, billing term, and feature changes before purchase. Free account "
+                    "access never means free transactions: auction premiums, card processing, "
+                    "listing charges, and storage are separate costs. A two-user Google "
+                    "Workspace Business Starter plan at the $7 reference rate costs $14 "
+                    "monthly on annual commitment; one Backblaze Computer Backup seat "
+                    "at the $9 monthly reference adds $9. An eBay Starter Store at "
+                    "$4.95 monthly with annual subscription brings those three references "
+                    "to $27.95 monthly before taxes, devices, transaction fees, and any "
+                    "other services. That is enough software for an early operator, but "
+                    "not a complete overhead budget. Use individual accounts, multifactor "
+                    "authentication, and owner-controlled recovery methods. A personal "
+                    "free password vault is not a substitute for managed team credential "
+                    "sharing. Keep banking permissions distinct from inventory editing "
+                    "and document the second-person callback procedure for changed wire "
+                    "instructions. An attacker changing a freight invoice can erase "
+                    "months of margin without ever touching the auction account."
+                ),
+                (
+                    "Physical infrastructure deserves the same cancellation discipline as "
+                    "software. Buy basic identification and testing equipment only after "
+                    "choosing a category: a multimeter, label printer, camera, and known-good "
+                    "power leads may serve office equipment, while vehicles demand different "
+                    "inspection competence and tools. Rent forklifts, trailers, and liftgate "
+                    "trucks against scheduled collections instead of carrying idle equipment. "
+                    "U-Haul's advertised cargo-van base-rate reference is not a freight quote; "
+                    "mileage, fuel, protection, taxes, availability, payload, and prohibited "
+                    "cargo can make it unsuitable. Put the actual transport quotation into "
+                    "the worksheet and use a qualified carrier when dimensions or weight "
+                    "exceed the rental's limits. Maintain a clean receiving area with "
+                    "separate untested, repair, sale-ready, and sold-awaiting-collection "
+                    "positions. Photograph goods before unloading and record damage "
+                    "immediately. Check that local fire and storage rules permit batteries, "
+                    "fuel residues, and stacked goods. Back up inventory exports and "
+                    "documents outside the working device, then restore a sample record "
+                    "monthly. A backup subscription alone does not protect cloud-only "
+                    "records that its product never captures. Every paid layer must "
+                    "have a named owner, cancellation date, and measurable reason "
+                    "to exist."
+                ),
+            ],
+            "table": {
+                "caption": "Twelve Named-Vendor Layers With Explicit Price References and Lean Alternatives",
+                "headers": [
+                    "Layer and named vendor",
+                    "Tier and exact budgeting price reference",
+                    "Operating role and boundary",
+                    "Cheaper or leaner fallback",
+                ],
+                "rows": [
+                    [
+                        "Auction sourcing through GSA Auctions bidder access",
+                        "Bidder registration: $0 account charge; purchased assets cost extra",
+                        "Discover federal lots and preserve individual sale terms",
+                        "Use native searches before buying commercial auction aggregators",
+                    ],
+                    [
+                        "Business identity through Google Workspace managed accounts",
+                        "Business Starter reference: $7 per user monthly, annual commitment",
+                        "Separate commercial email, documents, and account recovery ownership",
+                        "Use existing business email until additional seats earn savings",
+                    ],
+                    [
+                        "Inventory registry through Airtable structured lot records",
+                        "Free tier: $0 subscription, subject to published usage limits",
+                        "Track serial numbers, status, location, and supporting evidence",
+                        "Use one controlled spreadsheet with validated status fields",
+                    ],
+                    [
+                        "Bid calculations through Google Sheets controlled worksheets",
+                        "Personal Sheets access: $0; managed Workspace access priced separately",
+                        "Calculate maximum bids using fees and defect allowances",
+                        "Use LibreOffice Calc locally with dated worksheet exports",
+                    ],
+                    [
+                        "Bookkeeping through Wave basic ledger and invoicing",
+                        "Starter tier: $0 subscription; optional paid services cost extra",
+                        "Maintain accounts while separately reconciling inventory cost schedules",
+                        "Use accountant-approved ledger exports before purchasing automation upgrades",
+                    ],
+                    [
+                        "Business cash management through Mercury account services",
+                        "Core account reference: $0 monthly fee, eligibility dependent",
+                        "Separate settlement funds from the protected reserve balance",
+                        "Use an existing eligible business account without monthly charges",
+                    ],
+                    [
+                        "Credential protection through Bitwarden individual password vaults",
+                        "Free individual tier: $0; managed team capabilities priced separately",
+                        "Protect unique logins without silently sharing personal accounts",
+                        "Use existing managed credential tooling with documented recovery",
+                    ],
+                    [
+                        "Pickup scheduling through Trello visual collection boards",
+                        "Free tier: $0 subscription within current workspace limits",
+                        "Track removal deadlines, assigned drivers, and proof of collection",
+                        "Use shared calendar reminders plus the authoritative lot register",
+                    ],
+                    [
+                        "Marketplace storefront through eBay subscription-based selling tools",
+                        "Starter Store reference: $4.95 monthly with annual subscription",
+                        "Organize repeat listings while separately costing every selling fee",
+                        "Use eligible unsubscribed listings before committing to a store",
+                    ],
+                    [
+                        "Customer collection payments through Square seller services",
+                        "Free plan: $0 monthly subscription; processing fees remain additional",
+                        "Issue receipts and match settlement deposits to invoices",
+                        "Accept verified bank payments under documented collection procedures",
+                    ],
+                    [
+                        "Endpoint recovery through Backblaze Computer Backup service",
+                        "Computer Backup reference: $9 per computer on monthly billing",
+                        "Protect supported local files and test actual restoration",
+                        "Rotate encrypted external backups and separately export cloud records",
+                    ],
+                    [
+                        "Small-load transport through U-Haul cargo-van rental service",
+                        "Advertised base-rate reference: $19.95 daily, excluding additional charges",
+                        "Move compatible small loads after verifying payload and availability",
+                        "Request local carrier quotes when rental extras exceed savings",
+                    ],
+                ],
+            },
+        },
+        {
+            "heading": "3. Map six plays to bid limits, not speculative revenue",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "Six chapter operating plays organize the budget; the first five "
+                    "are descriptive surplus workflows, while the supplied cross-border "
+                    "play retains its exact identifier. For local equipment lot splitting, "
+                    "assume ten tested units can sell for $300 each: $3,000 gross resale "
+                    "proceeds. Deduct $300 selling costs, $400 removal, $300 repairs, and "
+                    "$600 required contribution toward overhead and profit. That leaves "
+                    "$1,400 for hammer price plus premium. With a hypothetical 10% "
+                    "premium and a valid purchase-tax exemption, the hammer ceiling is "
+                    "$1,272.72 after rounding down. Without exemption, include purchase "
+                    "tax on the applicable taxable base and lower the ceiling. Obtain "
+                    "actual seller fee terms rather than assuming 10% across platforms. "
+                    "For contractor-direct remarketing, an illustrative $8,000 sale less "
+                    "$5,000 acquisition, $600 freight, $400 testing, and $200 collection "
+                    "cost yields $1,800 contribution before shared overhead. A buyer "
+                    "conversation is not a purchase order; validate machine specifications, "
+                    "electrical supply, delivery access, and payment authority. If the "
+                    "intended contractor withdraws, use two alternative trade buyers' "
+                    "cash offers to set the fallback bid. Do not buy ten obscure "
+                    "units because one prospective customer liked a photograph."
+                ),
+                (
+                    "For titled fleet resale, suppose a vehicle sells for $15,000 after "
+                    "$10,000 acquisition, $800 transport, $1,200 repairs, and $500 combined "
+                    "title, inspection, and selling costs. The remaining $2,500 is lot "
+                    "contribution, not owner net profit. A further $2,500 transmission "
+                    "failure consumes it entirely. Require diagnostic evidence, VIN "
+                    "matching, odometer documentation where applicable, and a destination-state "
+                    "registration pathway before bidding. SF-97 is a U.S. Government "
+                    "Certificate to Obtain Title to a Vehicle; it supports an application "
+                    "and is not itself a state title. Ask the receiving motor vehicle "
+                    "agency which supporting documents, inspections, taxes, and signatures "
+                    "it requires. For parts recovery, eight tested assemblies selling at "
+                    "$250 each produce $2,000 proceeds. Subtract a $700 donor purchase, "
+                    "$300 dismantling labor, $200 freight, $200 selling costs, and $150 "
+                    "residue disposal to leave $450 contribution. Failed testing or "
+                    "unpriced disposal can remove that margin quickly. Use a licensed "
+                    "dismantler where the activity requires one, check fluid and battery "
+                    "handling obligations, and prohibit harvesting restricted equipment "
+                    "without documented authority. The fallback is an inspected wholesale "
+                    "or recycling outlet with a written acceptance specification, not "
+                    "an assumed scrap price."
+                ),
+                (
+                    "Deadline-driven clearance turns aging inventory into a predetermined "
+                    "decision rather than a hopeful listing. If a machine carrying $2,400 "
+                    "of invested cost receives a $2,500 net wholesale offer, accepting "
+                    "produces $100 contribution and releases cash. Waiting three months "
+                    "for a projected $3,000 net realization adds $360 storage at $120 "
+                    "monthly and an illustrative $200 deterioration allowance, leaving "
+                    "only $40 contribution before other overhead. A higher selling price "
+                    "can therefore deliver a worse result. Set a review at day 30, "
+                    "a price reset at day 45, and a wholesale decision at day 60, "
+                    "adjusted to the category's actual sales cycle. The sixth play, "
+                    "section_321_de_minimis_bonded_tariff_arbitrage, belongs in a separate "
+                    "research ledger because it is a service model, not ordinary surplus "
+                    "resale. Historical arithmetic of $100,000 customs value at an assumed "
+                    "25% duty yields $25,000 nominal duty; charging 40% of genuinely "
+                    "avoided duty would yield $10,000 service revenue before costs. Neither "
+                    "$100,000 customer merchandise nor $25,000 customer savings is operator "
+                    "revenue. This calculation establishes a measurement convention only. "
+                    "Do not book the fee, reserve warehouse capacity, or promise a "
+                    "duty-free result before verifying the current entry regime."
+                ),
+            ],
+            "table": {
+                "caption": "Six Operating Plays, Contribution Math, and Capital-Preserving Fallbacks",
+                "headers": [
+                    "Mapped play and operating scope",
+                    "Illustrative unit math before shared overhead",
+                    "Evidence required before committing purchase cash",
+                    "Fallback when the original thesis fails",
+                ],
+                "rows": [
+                    [
+                        "Local equipment lot splitting into individually saleable units",
+                        "$3,000 proceeds less $1,400 purchase allowance and $1,000 costs leaves $600",
+                        "Test ten units and verify actual auction premium",
+                        "Sell the tested remainder to an identified equipment wholesaler",
+                    ],
+                    [
+                        "Titled fleet resale through documented state registration pathways",
+                        "$15,000 proceeds less $12,500 direct costs leaves $2,500",
+                        "Match VIN, title evidence, diagnostics, and odometer disclosures",
+                        "Use a qualified wholesale buyer after disclosing verified defects",
+                    ],
+                    [
+                        "Parts recovery from lawful and economically dismantled donors",
+                        "$2,000 proceeds less $1,550 direct costs leaves $450",
+                        "Confirm assembly demand, testing method, and residue acceptance",
+                        "Transfer remaining material through an authorized recycling outlet",
+                    ],
+                    [
+                        "Contractor-direct remarketing against verified equipment specifications",
+                        "$8,000 proceeds less $6,200 direct costs leaves $1,800",
+                        "Verify buyer authority, installation requirements, and collection arrangements",
+                        "Solicit two trade buyers before increasing purchase exposure",
+                    ],
+                    [
+                        "Deadline-driven clearance of aging but saleable owned inventory",
+                        "$2,500 net realization less $2,400 invested cost leaves $100",
+                        "Compare immediate cash with time-adjusted expected net realization",
+                        "Accept documented wholesale offers before storage erodes contribution",
+                    ],
+                    [
+                        "section_321_de_minimis_bonded_tariff_arbitrage retained solely as conditional service research",
+                        "Historical $25,000 avoided duty times 40% produces $10,000 fees",
+                        "Verify current customs treatment before modeling any exemption",
+                        "Price lawful dutiable fulfillment with broker-supported valuation alternatives",
+                    ],
+                ],
+            },
+        },
+        {
+            "heading": "4. Prove eligibility, custody, and cash before launch",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "The cross-border premise needs a concrete correction before any "
+                    "capital allocation. Executive Order 14324 directed worldwide suspension "
+                    "of duty-free de minimis treatment effective August 29, 2025; do not "
+                    "treat the historical $800 threshold or Entry Type 86 as a present "
+                    "entitlement. Verify subsequent changes through current CBP instructions "
+                    "and a licensed customs broker. Routing through Tijuana under IMMEX "
+                    "or a Canadian bonded warehouse does not by itself change origin, "
+                    "erase U.S. duties, or authorize artificial splitting of shipments. "
+                    "IMMEX permissions and Canadian warehouse privileges impose their own "
+                    "conditions and are not interchangeable with U.S. entry eligibility. "
+                    "The suggested Vietnam, India, EU, Bangladesh, or Cambodia fallback "
+                    "cannot be described as universally exempt merely because goods avoid "
+                    "a particular Section 301 measure. Ordinary duties and other applicable "
+                    "measures still require classification and origin analysis. First-sale "
+                    "valuation, when supported by a bona fide earlier sale for export "
+                    "and complete valuation evidence, can affect the dutiable value under "
+                    "19 U.S.C. § 1401a; it does not eliminate the duty rate. Keep this "
+                    "branch unfunded until a broker validates a lawful, costed service "
+                    "design. Prefer domestic surplus turnover when the documentation "
+                    "burden exceeds the prospective service contribution."
+                ),
+                (
+                    "Set up the entity, tax records, and bank accounts before registration "
+                    "creates binding purchase obligations. Obtain the EIN directly through "
+                    "the IRS where applicable, align the legal buyer name across auction "
+                    "accounts and payment instructions, and maintain any required state "
+                    "seller permits or resale certificates. An EIN is not a resale "
+                    "authorization, and resale treatment depends on the jurisdiction "
+                    "and transaction. Confirm who may bid, who may release payments, "
+                    "and who may collect property. Auction eligibility can vary by "
+                    "program, asset, and purchaser location; a public auction login "
+                    "does not establish eligibility for every lot. For federal personal "
+                    "property, review the sale framework in 41 CFR Part 102-38 together "
+                    "with the actual contract. Save condition representations, inspection "
+                    "limits, payment deadlines, removal terms, and default remedies. "
+                    "For defense-related assets, distinguish auction eligibility, DEMIL "
+                    "requirements, end-use conditions, and export controls; a DEMIL code "
+                    "is not an export license. Identify the relevant disposition program "
+                    "and required destruction or mutilation evidence before buying. "
+                    "Decline restricted categories that exceed the team's competence. "
+                    "For ordinary municipal equipment, retain a bill of sale and "
+                    "serial-number trail even when no vehicle title exists."
+                ),
+                (
+                    "Run a simulated first lot from discovery through cash settlement "
+                    "before spending real inventory money. Give the worksheet to someone "
+                    "other than its author and ask them to reproduce the maximum bid "
+                    "from archived fees, tax treatment, transport quotes, repair estimates, "
+                    "and buyer evidence. Then rehearse the actual removal: seller contact, "
+                    "release document, driver identity, loading arrangement, vehicle "
+                    "capacity, appointment time, and backup carrier. A paid invoice "
+                    "without collection authority can strand a truck at the yard. "
+                    "Verify that storage coverage begins when risk transfers under "
+                    "the sale contract, not merely when the truck reaches your premises. "
+                    "Test the inventory record, photographic evidence, listing template, "
+                    "invoice, and bank reconciliation using the same lot identifier. "
+                    "Have a qualified technician define the minimum sale-ready tests "
+                    "and disclose observed defects precisely. Before launch, require "
+                    "four signed checks: cash survives the downside case; buyer and "
+                    "asset eligibility are documented; removal and custody are executable; "
+                    "and resale economics survive a realistic liquidation price. A "
+                    "failed check stops that purchase, not the entire business. "
+                    "Switch to a smaller, local, inspectable lot while resolving "
+                    "the missing evidence, and preserve the reserve for opportunities "
+                    "the team can actually execute."
+                ),
+            ],
+            "table": {
+                "caption": "Pre-Launch Evidence Register for Eligibility, Removal, Custody, and Settlement",
+                "headers": [
+                    "Control and accountable operating owner",
+                    "Evidence retained before committing purchase cash",
+                    "Specific failure that stops this purchase",
+                    "Practical correction before considering another bid",
+                ],
+                "rows": [
+                    [
+                        "Treasury owner verifies reserves and payment authority",
+                        "Cash forecast includes outstanding bids and removal contingencies",
+                        "Committed payments consume the protected minimum liquidity reserve",
+                        "Lower acquisition size or wait for settled resale receipts",
+                    ],
+                    [
+                        "Purchasing owner verifies seller and asset eligibility",
+                        "Account eligibility, sale terms, and restrictions are archived",
+                        "Buyer qualification or restricted-item disposition remains unresolved",
+                        "Choose unrestricted domestic assets with clear purchase conditions",
+                    ],
+                    [
+                        "Vehicle specialist verifies title and transfer documentation",
+                        "VIN photographs match documents accepted by destination agency",
+                        "Missing signatures or conflicting identifiers prevent title application",
+                        "Obtain seller corrections before bidding rather than afterward",
+                    ],
+                    [
+                        "Logistics owner verifies collection capacity and access",
+                        "Written carrier quote includes loading, dimensions, and appointment",
+                        "Removal deadline arrives before confirmed equipment becomes available",
+                        "Book qualified backup capacity or decline the affected lot",
+                    ],
+                    [
+                        "Operations owner verifies insured custody and storage",
+                        "Coverage terms and yard permissions match actual asset handling",
+                        "Storage restrictions or coverage exclusions leave material exposure",
+                        "Change storage arrangements or bind suitable coverage first",
+                    ],
+                    [
+                        "Sales owner verifies downside realization and documentation",
+                        "Comparable transactions and wholesale offers support liquidation value",
+                        "Expected net recovery cannot cover the approved downside floor",
+                        "Reduce maximum bid or pursue a better understood category",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Four checks that must pass before the first binding bid",
+                "body": (
+                    "Record the reviewer, evidence location, and date for each check. "
+                    "An auction countdown does not replace missing evidence."
+                ),
+                "items": [
+                    "Cash check: preserve the 55% initial float allocation and document the post-payment runway after every outstanding purchase and transport commitment.",
+                    "Eligibility check: verify bidder qualification, resale documentation, SF-97 or title pathway where relevant, and any DEMIL or export restrictions.",
+                    "Removal check: confirm seller release instructions, loading responsibility, insured transport, storage acceptance, and a backup plan inside the contractual deadline.",
+                    "Resale check: reproduce the maximum bid from current fees, realistic defects, verified buyer demand, and a written liquidation fallback.",
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Open the controlled buyer file",
+                    "action": "Align entity, auction account, bank account, and purchasing authority.",
+                    "detail": "Store registration evidence, tax documents, insurance terms, and account recovery instructions with restricted access.",
+                },
+                {
+                    "step": 2,
+                    "title": "Build the first complete lot worksheet",
+                    "action": "Calculate the hammer ceiling from net realization and all direct costs.",
+                    "detail": "Include actual premium, applicable purchase tax, loading, freight, testing, repair, selling costs, and required contribution.",
+                },
+                {
+                    "step": 3,
+                    "title": "Rehearse physical custody and recovery",
+                    "action": "Confirm removal, receiving, evidence capture, and inventory restoration.",
+                    "detail": "Test release paperwork and backup transport, then restore the sample lot record from an independent backup.",
+                },
+                {
+                    "step": 4,
+                    "title": "Authorize one bounded acquisition",
+                    "action": "Complete all four checks and release only the approved purchase amount.",
+                    "detail": "Assign the lot identifier, calendar payment and removal deadlines, and schedule the first aging review before bidding.",
+                },
+            ],
+        },
+    ],
+    "pull_quote": "Your real bid limit is the cash you can lose without losing the ability to buy the next good lot.",
+    "diagram_id": "diag-07",
+    "action_checklist": [
+        "Allocate startup cash across the six envelopes, placing 55% in protected float before funding the bidding account.",
+        "Reconcile each canonical profit case to total cost allowances and insert actual wages, contractor costs, and inventory acquisition assumptions.",
+        "Install the twelve-layer stack selectively, verify current paid-tier prices, and test one complete inventory backup restoration.",
+        "Obtain written transport, storage, insurance, and destination-state title requirements for the first target category.",
+        "Build one reproducible bid-limit worksheet with a documented wholesale fallback and scheduled inventory-aging decisions.",
+        "Complete the four pre-flight checks and keep the cross-border service branch unfunded until current customs treatment is independently validated.",
+    ],
+    "statutory_citations": [
+        {
+            "title": "41 CFR Part 102-38 — Sale of Personal Property",
+            "url": "https://www.ecfr.gov/current/title-41/subtitle-C/chapter-102/subchapter-B/part-102-38",
+            "relevance": "Establishes the federal personal-property sale framework; operators must also retain the specific auction contract and sale conditions.",
+        },
+        {
+            "title": "40 U.S.C. § 545 — Procedure for disposal",
+            "url": "https://www.law.cornell.edu/uscode/text/40/545",
+            "relevance": "Provides statutory authority and procedures for federal surplus-property disposal, including relevant sale mechanisms.",
+        },
+        {
+            "title": "49 U.S.C. § 32705 — Disclosure requirements on transfer of motor vehicles",
+            "url": "https://www.law.cornell.edu/uscode/text/49/32705",
+            "relevance": "Supports odometer-disclosure controls for vehicle transfers, subject to applicable implementing rules and exemptions.",
+        },
+        {
+            "title": "19 U.S.C. § 1321 — Administrative exemptions",
+            "url": "https://www.law.cornell.edu/uscode/text/19/1321",
+            "relevance": "Supplies the statutory context for low-value entry treatment; operators must verify current restrictions rather than assuming historical exemption access.",
+        },
+        {
+            "title": "Executive Order 14324 — Suspending Duty-Free De Minimis Treatment for All Countries",
+            "url": "https://www.federalregister.gov/documents/2025/08/01/2025-14681/suspending-duty-free-de-minimis-treatment-for-all-countries",
+            "relevance": "Directed worldwide suspension effective August 29, 2025, making the supplied historical duty-free parcel premise unsuitable as an assumed operating basis.",
+        },
+        {
+            "title": "19 U.S.C. § 1401a — Value",
+            "url": "https://www.law.cornell.edu/uscode/text/19/1401a",
+            "relevance": "Defines customs valuation methods relevant to documented transaction-value analysis; a lower supported value does not erase applicable duty rates.",
+        },
+        {
+            "title": "15 CFR § 736.2 — General prohibitions",
+            "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-736/section-736.2",
+            "relevance": "Provides export-control prohibitions that must be assessed separately from auction eligibility and defense-property disposition instructions.",
+        },
+    ],
+}

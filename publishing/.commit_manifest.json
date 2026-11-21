@@ -1,10 +1,10 @@
 {
   "scope": "publishing_store_excluding_previews",
   "sha256": {
-    "audit/existing_work_audit.json": "a22fec177a2306e8f5965457c59219440bba35518dd79ed0ebc75340cbd3dbde",
-    "brand/brand_system.json": "02c951b8343078e592ee2a48e2def9527577201b878f0f1eab70335c0fffa021",
-    "catalog/pipeline_29_candidates.json": "bac752ef6b939bf7c3651606385e0a9456a3696713d362969c1348a4ed66a1cb",
-    "research/research_database_summary.json": "d5c6547f0f52f9408dd36299994ff8d8a889de66ca0a645fde3bf3e4441e8b0c",
+    "audit/existing_work_audit.json": "20cd0702c5f5fe888d4760e9117ae1e64c8fdc10d8642b1c3090ce69f7564e64",
+    "brand/brand_system.json": "c56d0181c6c93df85a2bbc104d9b7b037cceb52e345ad85775f7327de1a9dd1c",
+    "catalog/pipeline_29_candidates.json": "9b451d327afb6a047243d6373e27aa95f3cbcf729a868e211dfd40c4b455245e",
+    "research/research_database_summary.json": "55819ccf1007f39f6ee3371478e2f8e3f81d9f7b1cf68ddfeb7dd17527a7664e",
     "site/newsletter_signups.json": "5a97fe09f877c0fccee940246e74f27dc5b6bc83148037af241946b350933794",
     "volumes/vol-001-heir-hunting/chapters/chapter-01.md": "4c44fe7e11c2f4af10ed7241bb0f8b49674c33d8c70c91a965cd3a0dab1133f0",
     "volumes/vol-001-heir-hunting/chapters/chapter-02.md": "c9f8705ba384dbbbd713674229cb8dfce45ab4fab27acea1480b476f229ad08b",
@@ -455,6 +455,24 @@
     "volumes/vol-025-freight-brokerage/manuscript.json": "4d4be36a8e8d39babaa28055d3b92c90a94a332ed4fc79fcbf33bb6f262332af",
     "volumes/vol-025-freight-brokerage/metadata.json": "6394030d943c15649ba20957240d765bd7c4064a269f8f6a3a88399d0ab845fa",
     "volumes/vol-025-freight-brokerage/scorecard.json": "bfda74c49fef4fefbfbbc91929d51e3a7313386bf61974d39018cda28e33b2f3",
-    "volumes/vol-025-freight-brokerage/workbook.json": "13960fa965a603cd89d2f2d71c9d1e19b28e097232089ec38c7ac14c1b8f44ce"
+    "volumes/vol-025-freight-brokerage/workbook.json": "13960fa965a603cd89d2f2d71c9d1e19b28e097232089ec38c7ac14c1b8f44ce",
+    "volumes/vol-026-government-surplus-auctions/chapters/chapter-01.md": "0df7f0ac39183af0b44998705c0c6ae86222238b2992e864446363768c6a9619",
+    "volumes/vol-026-government-surplus-auctions/chapters/chapter-02.md": "ddf0bfba2b2b7a57ca09aad81bf0e52501a959359b98db79478f69cbf27a308f",
+    "volumes/vol-026-government-surplus-auctions/chapters/chapter-03.md": "9b5f4c0917981523f0269e1df44d00db0885b84232d2105f1ae004d852882cdd",
+    "volumes/vol-026-government-surplus-auctions/chapters/chapter-04.md": "c4df579440a6c8bc9299f650af1855e2f811d88aa867e9226327e1b1107c3368",
+    "volumes/vol-026-government-surplus-auctions/chapters/chapter-05.md": "fe77ab9aa2bbf4b2f65246f5cdd2d7d26061640deb76d597f7cc3ea9365ae1c6",
+    "volumes/vol-026-government-surplus-auctions/chapters/chapter-06.md": "8879780176ebdee6cddb995021d89671f55b0a0061eec50d851459b6d1005652",
+    "volumes/vol-026-government-surplus-auctions/chapters/chapter-07.md": "5629902259cb90b3a80ebb5683e0191838cfb0065bbb191569a323af169e06fc",
+    "volumes/vol-026-government-surplus-auctions/chapters/chapter-08.md": "513fab3cb6b087a14a77e5b69d1f671f382a0b289fe5311234d711bc1be26446",
+    "volumes/vol-026-government-surplus-auctions/chapters/chapter-09.md": "02bc5281e2641a9cb3e028f51d04cde12af47fae87b3bf92ff71c6733e244675",
+    "volumes/vol-026-government-surplus-auctions/chapters/chapter-10.md": "5aaaf7e2da7a0f4177479d1d05715b971e3ff55c74bd018bae4fdb9932afc75c",
+    "volumes/vol-026-government-surplus-auctions/chapters/chapter-11.md": "1faacbb50d2d38282056a2c9aa37e669d68ac7d73e83087c4d14269a331d5927",
+    "volumes/vol-026-government-surplus-auctions/chapters/chapter-12.md": "75137f1cd474cc8ea81a803bdf3ad573de15d86a2e500cd49bc893fd5db29953",
+    "volumes/vol-026-government-surplus-auctions/diagrams_data.json": "fe9bbb5d0a73343c210a83e9361d6c106de28b93de95da9738b398d948f65d44",
+    "volumes/vol-026-government-surplus-auctions/graphics_reviews.json": "a4db2293828ef85bf4e750fd02290f679f8b0eac1bc61fe170e89f892b9f4eea",
+    "volumes/vol-026-government-surplus-auctions/manuscript.json": "08a5c9e6a17883d05bfe8086a9d8b20f600d997ee8a23216528ebd12fb602bd5",
+    "volumes/vol-026-government-surplus-auctions/metadata.json": "1ead05e1502f9e06bd064bc68eb8e561e96ddd2a214476d96cc84c138fa323d0",
+    "volumes/vol-026-government-surplus-auctions/scorecard.json": "f4ca2e19a3d97dcfb908f056945b5fbd540c523c3df19b6d302df1fd654bb628",
+    "volumes/vol-026-government-surplus-auctions/workbook.json": "1686cf017a9870b12fd5d29da1ce8e3f8813afe8ed754ce0d8d4837043a96799"
   }
 }
