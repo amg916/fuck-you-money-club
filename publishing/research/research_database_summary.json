@@ -1,6 +1,6 @@
 {
-  "abridged_video_count": 1882,
-  "raw_video_count": 1882,
+  "abridged_video_count": 2060,
+  "raw_video_count": 2060,
   "summary": {
     "type": "dict",
     "keys": [
@@ -22,11 +22,11 @@
       "coverage": 6
     },
     "values": {
-      "generated_at": "2026-11-21T21:34:59+00:00",
+      "generated_at": "2026-11-21T21:38:41+00:00",
       "schema_version": "1.0"
     }
   },
-  "generated_at": "2026-11-21T21:34:59Z",
+  "generated_at": "2026-11-21T21:38:41Z",
   "counts": {
     "topics": 8
   },
@@ -34,9 +34,9 @@
     {
       "topic_id": "business_model_and_economics",
       "title": "Business Model, Contingency Economics & Deal Scale",
-      "video_count": 1417,
-      "tip_count": 3162,
-      "channel_count": 1004,
+      "video_count": 1575,
+      "tip_count": 3469,
+      "channel_count": 1113,
       "top_sources": [
         {
           "video_id": "JVbzH2BD68w",
@@ -198,36 +198,36 @@
         "form you",
         "form the",
         "form where",
-        "form on",
         "form with",
+        "form on",
         "form like",
-        "form in",
         "form your",
+        "form in",
         "form so",
         "form a",
         "form content",
+        "form it",
         "form if",
         "form as",
         "form called",
         "form I",
-        "form it",
-        "form which",
-        "form below",
         "form at",
+        "form below",
+        "form which",
+        "form right",
+        "form uh",
         "form because",
         "form builder",
         "form here",
-        "form right",
         "form submissions",
         "form videos",
         "property Act",
-        "form uh",
+        "form them",
         "form um",
         "letters of administration",
         "Exchange Act",
         "form but",
-        "form well",
-        "form built"
+        "form we"
       ],
       "tools_and_portals": [
         "Google",
@@ -239,8 +239,8 @@
         "FamilySearch",
         "https://excesselite.com",
         "https://www.facebook.com/groups/assetrecovery",
-        "https://www.moneymakingjug.com/inquiry",
         "Bing",
+        "https://www.moneymakingjug.com/inquiry",
         "https://wise.com/invite/dic/todorivanovk1",
         "https://www.instagram.com/erizzyy/",
         "https://www.surplusfunds101.com/freecallingscript",
@@ -264,20 +264,20 @@
         "https://www.instagram.com/thedavidwilkerson",
         "https://www.unclaimedceo.com/freemasterclass",
         "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
+        "http://amzn.to/1LGotjB",
+        "http://amzn.to/1T1dOU2",
+        "http://www.inventright.com",
         "https://plus.google.com/u/0/+boberdoo",
         "https://twitter.com/boberdoo",
-        "https://www.boberdoo.com",
-        "https://www.facebook.com/boberdooLLC/",
-        "https://www.linkedin.com/company/boberdoo-com-llc",
-        "https://www.pinterest.com/boberdoocom/"
+        "https://www.boberdoo.com"
       ]
     },
     {
       "topic_id": "probate_and_docket_sourcing",
       "title": "County Probate Dockets, Intestate Filings & Estate Leads",
-      "video_count": 1343,
-      "tip_count": 1896,
-      "channel_count": 874,
+      "video_count": 1449,
+      "tip_count": 1998,
+      "channel_count": 950,
       "top_sources": [
         {
           "video_id": "oZiYbKNvxJY",
@@ -430,45 +430,45 @@
       ],
       "statutes_and_forms": [
         "form and",
-        "form that",
         "form of",
+        "form that",
         "form to",
         "form is",
         "form for",
         "form or",
-        "form you",
         "form the",
-        "form below",
+        "form you",
         "form a",
+        "form below",
         "form your",
         "form in",
         "form on",
         "form so",
         "form where",
         "form with",
+        "form it",
         "form like",
         "form Commercial",
         "property Act",
-        "form it",
         "letters of administration",
         "form if",
         "form which",
+        "Form uh",
         "form we",
         "form I",
         "form our",
-        "Form uh",
         "form as",
         "form but",
         "form here",
         "form now",
         "form them",
-        "form because",
         "form content",
+        "form because",
         "form um",
         "letters testamentary",
         "affidavit of heirship",
-        "Exchange Act",
-        "form will"
+        "court order",
+        "Exchange Act"
       ],
       "tools_and_portals": [
         "Google",
@@ -516,9 +516,9 @@
     {
       "topic_id": "unclaimed_property_and_escheat",
       "title": "State Unclaimed Property, Escheated Funds & Treasury Claims",
-      "video_count": 576,
+      "video_count": 592,
       "tip_count": 1772,
-      "channel_count": 353,
+      "channel_count": 366,
       "top_sources": [
         {
           "video_id": "D-PMjgNe-7s",
@@ -676,9 +676,9 @@
         "form below",
         "Form is",
         "form to",
-        "form for",
         "form the",
         "form you",
+        "form for",
         "form or",
         "form a",
         "form your",
@@ -687,13 +687,14 @@
         "Property Act",
         "form but",
         "form if",
+        "form it",
         "form our",
         "form so",
         "form in",
-        "form it",
         "form on",
         "form them",
         "Form uh",
+        "form this",
         "form um",
         "form where",
         "form which",
@@ -701,7 +702,6 @@
         "form because",
         "form due",
         "form I",
-        "form this",
         "form all",
         "form as",
         "form fill",
@@ -757,9 +757,9 @@
     {
       "topic_id": "genealogy_and_heirship_proof",
       "title": "Forensic Genealogy, Per-Stirpes Kinship & Proof of Heirship",
-      "video_count": 1588,
-      "tip_count": 1895,
-      "channel_count": 1065,
+      "video_count": 1741,
+      "tip_count": 2120,
+      "channel_count": 1167,
       "top_sources": [
         {
           "video_id": "7M3XZfN7814",
@@ -892,21 +892,21 @@
           "verbatim_research_only": true
         },
         {
+          "tip_paraphrase_summary": "It's from a percentage of the wholesale cost of what they are selling it to the buyer for, and I get paid quarterly, and…",
+          "category": "Legal / Deadline",
+          "timestamp": "00:01:58",
+          "link": "https://www.youtube.com/watch?v=UnGdjQb467o&t=118s",
+          "video_title": "Licensing to Earn royalties Vs Manufacturing Your Invention Idea",
+          "author": "Brian Fried - The Inventor Coach",
+          "verbatim_research_only": true
+        },
+        {
           "tip_paraphrase_summary": "Últimos 2 años hemos ido migrando todos los sitios de Estados Unidos también al formato eh al formato no presencial porque hemos visto que…",
           "category": "Legal / Deadline",
           "timestamp": "00:02:42",
           "link": "https://www.youtube.com/watch?v=keHIfejYGN8&t=162s",
           "video_title": "COMPRA Y VENDE MAQUINARIA EN RITCHIE BROS MÉXICO ¡AQUÍ TE DECIMOS CÓMO!",
           "author": "Sobre Orugas",
-          "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "You do have to go through a court process in order to do that. So don't do that on your own. Also, while the…",
-          "category": "Pitfall / Hard No",
-          "timestamp": "00:48:01",
-          "link": "https://www.youtube.com/watch?v=TP6n8TBsCGs&t=2881s",
-          "video_title": "Resolving Heirs' Property",
-          "author": "MD Ag Law Education Initiative",
           "verbatim_research_only": true
         }
       ],
@@ -920,37 +920,37 @@
         "form or",
         "form you",
         "form the",
-        "form with",
-        "form on",
         "form a",
-        "form where",
-        "form below",
-        "form in",
-        "form like",
+        "form with",
         "form so",
+        "form where",
+        "form on",
+        "form in",
+        "form below",
+        "form like",
         "form your",
         "form content",
         "form as",
-        "form if",
-        "form at",
-        "form which",
-        "form I",
         "form it",
-        "property Act",
+        "form at",
+        "form if",
+        "form I",
+        "form which",
         "form called",
+        "property Act",
         "form Commercial",
         "form here",
         "Form uh",
+        "form right",
         "letters of administration",
         "form builder",
-        "form right",
         "form submissions",
         "form videos",
         "form because",
+        "form we",
         "Exchange Act",
-        "form this",
-        "form um",
-        "form we"
+        "form them",
+        "form they"
       ],
       "tools_and_portals": [
         "Google",
@@ -998,9 +998,9 @@
     {
       "topic_id": "skip_tracing_and_outreach",
       "title": "Skip Tracing, Ethical Heir Contact & Trust Building",
-      "video_count": 1064,
-      "tip_count": 865,
-      "channel_count": 758,
+      "video_count": 1137,
+      "tip_count": 884,
+      "channel_count": 804,
       "top_sources": [
         {
           "video_id": "DgzklijTLzE",
@@ -1115,6 +1115,15 @@
           "verbatim_research_only": true
         },
         {
+          "tip_paraphrase_summary": "Working with but within these companies you signed a deal make sure you get everybody's title and check them out on LinkedIn know exactly…",
+          "category": "Pitfall / Hard No",
+          "timestamp": "00:08:03",
+          "link": "https://www.youtube.com/watch?v=hbfKyomYp6U&t=483s",
+          "video_title": "The Licensing Lifestyle with Stephen Key",
+          "author": "inventRightTV",
+          "verbatim_research_only": true
+        },
+        {
           "tip_paraphrase_summary": "It building relationships can feel very daunting with people that you don't know but here's the key you don't need to be a slick…",
           "category": "Pitfall / Hard No",
           "timestamp": "00:06:24",
@@ -1140,15 +1149,6 @@
           "video_title": "How to Get Unlimited Leads Using Clay Enrichment Waterfall | clay.com Tutorial",
           "author": "AJ Cassata",
           "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "You guys don't have a very big budget or anything like that. These are the websites that I would suggest going to. Skip pressure.…",
-          "category": "Pitfall / Hard No",
-          "timestamp": "00:02:19",
-          "link": "https://www.youtube.com/watch?v=Tx1_986LmrY&t=139s",
-          "video_title": "State Funds Business Skip Tracing. Best FREE Skip Tracing Websites For Your Unclaimed Funds Business",
-          "author": "Surplus Funds 101",
-          "verbatim_research_only": true
         }
       ],
       "statutes_and_forms": [
@@ -1162,10 +1162,10 @@
         "form is",
         "form your",
         "form the",
-        "form where",
-        "form on",
-        "form like",
         "form a",
+        "form where",
+        "form like",
+        "form on",
         "form with",
         "form in",
         "form so",
@@ -1176,22 +1176,22 @@
         "form as",
         "form called",
         "form Commercial",
-        "form if",
-        "form here",
         "form I",
+        "form if",
         "form it",
+        "form here",
         "form um",
+        "form at",
         "form but",
         "form right",
-        "form at",
         "form because",
         "form builder",
         "form our",
+        "form them",
+        "form now",
         "Protection Act",
         "form fill",
-        "form now",
-        "form them",
-        "form videos"
+        "form they"
       ],
       "tools_and_portals": [
         "Google",
@@ -1239,9 +1239,9 @@
     {
       "topic_id": "contracts_and_compensation",
       "title": "Fee Agreements, Assignments of Interest & Escrow Disbursement",
-      "video_count": 1466,
-      "tip_count": 1973,
-      "channel_count": 999,
+      "video_count": 1594,
+      "tip_count": 2118,
+      "channel_count": 1088,
       "top_sources": [
         {
           "video_id": "VBvaq5etzV4",
@@ -1397,42 +1397,42 @@
         "form that",
         "form of",
         "form to",
-        "form for",
         "Form is",
+        "form for",
         "form or",
         "form you",
         "form the",
         "form with",
+        "form a",
         "form on",
         "form below",
         "form like",
         "form in",
         "form where",
-        "form a",
-        "form your",
         "form so",
+        "form your",
         "form content",
         "form as",
+        "form it",
         "form at",
         "form I",
-        "form if",
         "form called",
-        "form it",
+        "form if",
         "Form uh",
         "property Act",
         "form Commercial",
         "form here",
         "form which",
         "letters of administration",
+        "form we",
         "form builder",
+        "form right",
         "form submissions",
         "form um",
-        "form we",
         "form because",
         "form our",
-        "form right",
-        "form videos",
-        "form well"
+        "form them",
+        "form videos"
       ],
       "tools_and_portals": [
         "Google",
@@ -1480,65 +1480,65 @@
     {
       "topic_id": "statutory_caps_and_licensing",
       "title": "State Fee Caps, Waiting Periods, PI Licensing & UPL Rules",
-      "video_count": 1464,
-      "tip_count": 1232,
-      "channel_count": 961,
+      "video_count": 1634,
+      "tip_count": 1795,
+      "channel_count": 1073,
       "top_sources": [
+        {
+          "video_id": "9Fku-QlhyHc",
+          "title": "Royalty Audit: Why Every Licensor & Artist Needs a Forensic Accountant on Their Side | Uncover Fraud",
+          "author": "Uncover Fraud",
+          "url": "https://www.youtube.com/watch?v=9Fku-QlhyHc",
+          "duration": "00:16:48"
+        },
+        {
+          "video_id": "yl8L7tuwNuI",
+          "title": "Term Sheet in Patent Licensing (extended) Part 1- John Baxter",
+          "author": "BaxterIPAttorneys",
+          "url": "https://www.youtube.com/watch?v=yl8L7tuwNuI",
+          "duration": "00:05:27"
+        },
+        {
+          "video_id": "2-_h0sI3YQI",
+          "title": "Licensing Fee: Definition, How It Works vs. Royalty, and Examples",
+          "author": "Simple Explain",
+          "url": "https://www.youtube.com/watch?v=2-_h0sI3YQI",
+          "duration": "00:04:23"
+        },
+        {
+          "video_id": "TwdLXgIhXJA",
+          "title": "What is Brand Licensing?",
+          "author": "Brand Licensing by Informa",
+          "url": "https://www.youtube.com/watch?v=TwdLXgIhXJA",
+          "duration": "00:02:48"
+        },
+        {
+          "video_id": "knoob7eUS6Y",
+          "title": "Licensing Basics You NEED To Know In Business | Shark Tank's Daymond John",
+          "author": "Daymond John",
+          "url": "https://www.youtube.com/watch?v=knoob7eUS6Y",
+          "duration": "00:12:27"
+        },
+        {
+          "video_id": "lVFYoVaNnrs",
+          "title": "Exclusive vs Non Exclusive License l What’s the difference?",
+          "author": "Ayers Law TV ~ Andrew M. Ayers, Esq.",
+          "url": "https://www.youtube.com/watch?v=lVFYoVaNnrs",
+          "duration": "00:05:54"
+        },
+        {
+          "video_id": "WMcwXYcUD5c",
+          "title": "What is Brand Licensing?",
+          "author": "inventRightTV",
+          "url": "https://www.youtube.com/watch?v=WMcwXYcUD5c",
+          "duration": "00:05:53"
+        },
         {
           "video_id": "zrj6RA8N9HA",
           "title": "3 WAYS To Find A Surplus Funds Attorney FAST (Asset Recovery Business)",
           "author": "Money Making Juggernaut",
           "url": "https://www.youtube.com/watch?v=zrj6RA8N9HA",
           "duration": "00:06:11"
-        },
-        {
-          "video_id": "yiH-ZfQj-oc",
-          "title": "Texas Unclaimed Money & Private Investigations | Meet Sharalyn Criswell",
-          "author": "Texas Licensed Private Investigator",
-          "url": "https://www.youtube.com/watch?v=yiH-ZfQj-oc",
-          "duration": "00:06:33"
-        },
-        {
-          "video_id": "CoD81HjwtQo",
-          "title": "Understanding Licensing Requirements for Business Brokers",
-          "author": "Business Broker Crowd Call",
-          "url": "https://www.youtube.com/watch?v=CoD81HjwtQo",
-          "duration": "00:08:07"
-        },
-        {
-          "video_id": "Wj1uuYyuyQk",
-          "title": "Navigating Business Broker Licensing Across States | Tips & Advice",
-          "author": "Business Broker Crowd Call",
-          "url": "https://www.youtube.com/watch?v=Wj1uuYyuyQk",
-          "duration": "00:06:31"
-        },
-        {
-          "video_id": "pK4RGE_1My4",
-          "title": "FMCSA Compliance EXPLAINED: What Every Truck Driver & Carrier MUST Know in 2025!",
-          "author": "FMCSA REGISTRATION dot com",
-          "url": "https://www.youtube.com/watch?v=pK4RGE_1My4",
-          "duration": "00:03:05"
-        },
-        {
-          "video_id": "KiR-ZUeCE5g",
-          "title": "Unclaimed Property in Tennessee: Understanding Audits, Compliance, and Negative Reports",
-          "author": "TNTreasury",
-          "url": "https://www.youtube.com/watch?v=KiR-ZUeCE5g",
-          "duration": "00:03:29"
-        },
-        {
-          "video_id": "uRVS3zWAYwI",
-          "title": "Real Estate Licensing and Referral Fees in Business Brokerage",
-          "author": "Business Broker Crowd Call",
-          "url": "https://www.youtube.com/watch?v=uRVS3zWAYwI",
-          "duration": "00:04:30"
-        },
-        {
-          "video_id": "vp2uuB23fww",
-          "title": "How to work Texas Unclaimed State Funds and become a PI",
-          "author": "Money Making Juggernaut",
-          "url": "https://www.youtube.com/watch?v=vp2uuB23fww",
-          "duration": "00:38:14"
         }
       ],
       "top_timestamped_insights": [
@@ -1549,6 +1549,24 @@
           "link": "https://www.youtube.com/watch?v=i36Xg_tsVAY&t=241s",
           "video_title": "Understanding Aircraft Brokerage: Standards, Risk, and Trust",
           "author": "Own The Jet",
+          "verbatim_research_only": true
+        },
+        {
+          "tip_paraphrase_summary": "You came up with it. The other side of it is the manufacturing, so maybe I tried to license it, and I hit a…",
+          "category": "Non-Negotiable Rule",
+          "timestamp": "00:02:28",
+          "link": "https://www.youtube.com/watch?v=UnGdjQb467o&t=148s",
+          "video_title": "Licensing to Earn royalties Vs Manufacturing Your Invention Idea",
+          "author": "Brian Fried - The Inventor Coach",
+          "verbatim_research_only": true
+        },
+        {
+          "tip_paraphrase_summary": "Succeed and you can claim 5% royalties on their sales uh the reward uh can be significant. So a few of the um uh…",
+          "category": "Legal / Deadline",
+          "timestamp": "00:02:21",
+          "link": "https://www.youtube.com/watch?v=TYb3i3iIHEQ&t=141s",
+          "video_title": "5 Patent Monetization Strategies Inventors Don't Know About",
+          "author": "Patent pc",
           "verbatim_research_only": true
         },
         {
@@ -1570,6 +1588,33 @@
           "verbatim_research_only": true
         },
         {
+          "tip_paraphrase_summary": "MONTH, AND YOU BRING IN YOUR LICENSE AND NOW THEY GOTTA PAY YOU $15 AND IT DIDN'T INCREASE THE SALE OF THE JEANS, WELL…",
+          "category": "Sequence / Alternative",
+          "timestamp": "00:08:49",
+          "link": "https://www.youtube.com/watch?v=knoob7eUS6Y&t=529s",
+          "video_title": "Licensing Basics You NEED To Know In Business | Shark Tank's Daymond John",
+          "author": "Daymond John",
+          "verbatim_research_only": true
+        },
+        {
+          "tip_paraphrase_summary": "You would upload those necessary documents, make the payment of required fees, and then you would receive a receipt from the USPTO providing your…",
+          "category": "Legal / Deadline",
+          "timestamp": "00:32:53",
+          "link": "https://www.youtube.com/watch?v=binARAl4AK8&t=1973s",
+          "video_title": "Path to a Patent, Part I - Intellectual property basics",
+          "author": "USPTOvideo",
+          "verbatim_research_only": true
+        },
+        {
+          "tip_paraphrase_summary": "Studying their product line keep on out thinking them be be an ass that keep on coming up with a lot of ideas because…",
+          "category": "Pitfall / Hard No",
+          "timestamp": "00:05:05",
+          "link": "https://www.youtube.com/watch?v=hbfKyomYp6U&t=305s",
+          "video_title": "The Licensing Lifestyle with Stephen Key",
+          "author": "inventRightTV",
+          "verbatim_research_only": true
+        },
+        {
           "tip_paraphrase_summary": "Go take a look at that. I know I just gave you a three different website links... Yes. Or probably say, Oh my God…",
           "category": "Pitfall / Hard No",
           "timestamp": "00:03:31",
@@ -1586,51 +1631,6 @@
           "video_title": "State Funds Tutorial New Mexico: How To Register As A Property Locator In The State Of New Mexico.",
           "author": "Surplus Funds 101",
           "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "It's really hard to equitably divide land, so what courts have done in the past as the simple remedy is well why don't we…",
-          "category": "Pitfall / Hard No",
-          "timestamp": "00:16:23",
-          "link": "https://www.youtube.com/watch?v=whDzDrFNADQ&t=983s",
-          "video_title": "USDA FSA Resources for Heirs: Join FSA as we talk with the Experts (Episode 1-Full Version)",
-          "author": "FarmersGov",
-          "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "You're going to be consed, learn. >> Be consistent, make the mistakes, and get through the nos to get the yeses. You will I…",
-          "category": "Pitfall / Hard No",
-          "timestamp": "00:20:09",
-          "link": "https://www.youtube.com/watch?v=vd__NHmQYgM&t=1209s",
-          "video_title": "8 Surplus Funds Deals Within 3 Months of Starting The Business",
-          "author": "Nick Fullmer- Overage Syndicate",
-          "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "Boy, you don't want to lose them because the dollar value is very high. And so if you've got churn rates that are greater…",
-          "category": "Pitfall / Hard No",
-          "timestamp": "00:07:25",
-          "link": "https://www.youtube.com/watch?v=su9KuGnbAW8&t=445s",
-          "video_title": "AskAVC #2 - SaaS Churn: what is it?",
-          "author": "Ask a VC",
-          "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "The description for dynamic fields such as first_name and city will use payload fields to extract the information from the lead and insert it…",
-          "category": "Insider Tactic",
-          "timestamp": "00:00:48",
-          "link": "https://www.youtube.com/watch?v=gX0fjRlg1lg&t=48s",
-          "video_title": "Lead Prosper Ping Post Buyer Setup",
-          "author": "Lead Prosper",
-          "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "With spend, roughly one request per second for every dollar, capped at 500. OpenRouter wins on the two tests that decide how fast you…",
-          "category": "Sequence / Alternative",
-          "timestamp": "00:05:16",
-          "link": "https://www.youtube.com/watch?v=SDB5hKMHUA8&t=316s",
-          "video_title": "OpenRouter vs LiteLLM: Which Should You Self-Host?",
-          "author": "Bryan Software",
-          "verbatim_research_only": true
         }
       ],
       "statutes_and_forms": [
@@ -1643,44 +1643,44 @@
         "form or",
         "form you",
         "form the",
-        "form below",
         "form a",
-        "form on",
+        "form below",
         "form your",
+        "form on",
         "form in",
-        "form with",
-        "form where",
         "form so",
+        "form where",
+        "form with",
         "form like",
-        "form Commercial",
-        "property Act",
-        "form if",
         "form it",
         "Form uh",
-        "letters of administration",
+        "form Commercial",
+        "property Act",
         "form I",
+        "form if",
+        "letters of administration",
         "form we",
+        "form content",
         "form our",
         "form which",
         "form but",
-        "form content",
         "form here",
+        "form now",
+        "form them",
         "Exchange Act",
         "form as",
         "form because",
-        "form now",
         "form um",
-        "form them",
         "form called",
         "form right",
-        "letters testamentary"
+        "form at"
       ],
       "tools_and_portals": [
         "Google",
         "Facebook",
         "LinkedIn",
-        "Ancestry",
         "Excel",
+        "Ancestry",
         "CSV",
         "https://excesselite.com",
         "https://www.facebook.com/groups/assetrecovery",
@@ -1704,6 +1704,8 @@
         "https://www.youtube.com/@courtneyfricke",
         "https://x.com/courtneyfricke",
         "https://tinyurl.com/unclaimedmentor",
+        "http://amzn.to/1LGotjB",
+        "http://amzn.to/1T1dOU2",
         "http://familysearch.me/facebook",
         "http://familysearch.me/home",
         "http://familysearch.me/instagram",
@@ -1713,17 +1715,15 @@
         "http://familysearch.me/youtubeeurope",
         "http://familysearch.me/youtubeportuguese",
         "http://familysearch.me/youtubespanish",
-        "https://www.unclaimedceo.com/home-page-8750",
-        "https://youtu.be/3cmj5kGm2Xw",
-        "MyHeritage"
+        "http://www.inventright.com"
       ]
     },
     {
       "topic_id": "automation_and_small_team_ops",
       "title": "Docket Automation, AI Abstracting & Small-Team Operations",
-      "video_count": 1489,
-      "tip_count": 4598,
-      "channel_count": 1011,
+      "video_count": 1616,
+      "tip_count": 4867,
+      "channel_count": 1102,
       "top_sources": [
         {
           "video_id": "zqtx1Soeq5E",
@@ -1882,39 +1882,39 @@
         "form for",
         "form is",
         "form or",
-        "form you",
         "form the",
+        "form you",
         "form with",
-        "form where",
         "form a",
-        "form on",
         "form so",
-        "form below",
+        "form where",
+        "form on",
         "form your",
-        "form in",
+        "form below",
         "form like",
+        "form in",
         "form content",
+        "form it",
         "form if",
         "form as",
-        "form it",
-        "form which",
         "form at",
+        "form which",
         "form I",
         "form we",
         "form because",
         "form but",
+        "Form uh",
         "form um",
+        "form called",
         "form here",
         "form builder",
-        "form called",
         "form submissions",
-        "Form uh",
         "letters of administration",
+        "form built",
         "form this",
+        "form them",
         "form videos",
-        "property Act",
-        "form better",
-        "form fill"
+        "property Act"
       ],
       "tools_and_portals": [
         "Google",
@@ -1968,9 +1968,9 @@
       "headline": "Heir location is paid on contingency, never on up-front fees.",
       "summary": "Across the corpus, operators converge on a pure contingency model: the heir pays nothing out of pocket, the locator advances all research cost, and the fee is a negotiated percentage released only when the estate or state agency actually disburses funds. Charging an heir an advance fee is treated as the single clearest marker of a predatory or unlicensed operator.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 1004,
-      "video_count": 1417,
-      "corroborating_tip_count": 3162,
+      "channel_count": 1113,
+      "video_count": 1575,
+      "corroborating_tip_count": 3469,
       "supporting_links": [
         {
           "video_title": "State Funds Tutorial New Mexico: How To Register As A Property Locator In The State Of New Mexico.",
@@ -2018,9 +2018,9 @@
       "headline": "Fresh county probate and intestate dockets outperform purchased lead lists.",
       "summary": "Practitioners consistently build pipeline from newly filed probate and administration matters pulled directly from county clerk portals rather than resold lists. Filings naming an administrator but no located heirs, and estates sitting open past the local notice period, are the recurring high-value signal.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 874,
-      "video_count": 1343,
-      "corroborating_tip_count": 1896,
+      "channel_count": 950,
+      "video_count": 1449,
+      "corroborating_tip_count": 1998,
       "supporting_links": [
         {
           "video_title": "$57 Affiliate Payouts With $35 Google Ads CPA (Full Funnel Breakdown)",
@@ -2068,8 +2068,8 @@
       "headline": "State unclaimed-property and escheat databases supply the repeatable volume.",
       "summary": "Every state treasury or controller maintains a searchable unclaimed-property register, and the consensus workflow is to cross-reference deceased owners there against probate filings. Volume comes from systematic register sweeps; size comes from the rarer escheated estate, surplus-funds and safe-deposit categories.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 353,
-      "video_count": 576,
+      "channel_count": 366,
+      "video_count": 592,
       "corroborating_tip_count": 1772,
       "supporting_links": [
         {
@@ -2118,9 +2118,9 @@
       "headline": "The deliverable is a document-backed kinship chain, not a name on a list.",
       "summary": "Operators agree that claims succeed or fail on the evidentiary chain: each generational link supported by vital records, each branch mapped per stirpes, and every gap closed before contact. Tree hints from consumer genealogy sites are treated as leads to verify, never as proof to submit.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 1065,
-      "video_count": 1588,
-      "corroborating_tip_count": 1895,
+      "channel_count": 1167,
+      "video_count": 1741,
+      "corroborating_tip_count": 2120,
       "supporting_links": [
         {
           "video_title": "Understanding Aircraft Brokerage: Standards, Risk, and Trust",
@@ -2168,9 +2168,9 @@
       "headline": "Verify identity before contact, then lead with restraint, not the dollar figure.",
       "summary": "The recurring outreach pattern is: skip trace to a confirmed current address and phone, open by letter or a short calm call, state that funds may be owed to the family without naming an amount, and give the heir a way to independently verify the operator. Pressure tactics and inflated figures are consistently reported as the fastest way to lose a signed file.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 758,
-      "video_count": 1064,
-      "corroborating_tip_count": 865,
+      "channel_count": 804,
+      "video_count": 1137,
+      "corroborating_tip_count": 884,
       "supporting_links": [
         {
           "video_title": "How to Get Unlimited Leads Using Clay Enrichment Waterfall | clay.com Tutorial",
@@ -2218,9 +2218,9 @@
       "headline": "No work proceeds without a signed fee agreement and third-party escrow.",
       "summary": "Consensus practice is a plain-language, notarized or e-signed agreement that names the estate, states the percentage, discloses the heir's right to claim independently, and routes funds through attorney trust or licensed escrow so the locator never holds the heir's money directly.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 999,
-      "video_count": 1466,
-      "corroborating_tip_count": 1973,
+      "channel_count": 1088,
+      "video_count": 1594,
+      "corroborating_tip_count": 2118,
       "supporting_links": [
         {
           "video_title": "Topical Authority With Koray Tuğberk GÜBÜR",
@@ -2268,15 +2268,27 @@
       "headline": "Fee caps, waiting periods and licensing are decided per state, before the first call.",
       "summary": "Operators repeatedly stress that the governing rules — percentage caps on unclaimed-property recoveries, mandatory waiting periods after escheat or sale, private-investigator licensing triggers, and the line against practicing law — vary by jurisdiction and must be read in the local statute for every file rather than generalized from another state.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 961,
-      "video_count": 1464,
-      "corroborating_tip_count": 1232,
+      "channel_count": 1073,
+      "video_count": 1634,
+      "corroborating_tip_count": 1795,
       "supporting_links": [
         {
           "video_title": "Understanding Aircraft Brokerage: Standards, Risk, and Trust",
           "author": "Own The Jet",
           "timestamp": "00:04:01",
           "link": "https://www.youtube.com/watch?v=i36Xg_tsVAY&t=241s"
+        },
+        {
+          "video_title": "Licensing to Earn royalties Vs Manufacturing Your Invention Idea",
+          "author": "Brian Fried - The Inventor Coach",
+          "timestamp": "00:02:28",
+          "link": "https://www.youtube.com/watch?v=UnGdjQb467o&t=148s"
+        },
+        {
+          "video_title": "5 Patent Monetization Strategies Inventors Don't Know About",
+          "author": "Patent pc",
+          "timestamp": "00:02:21",
+          "link": "https://www.youtube.com/watch?v=TYb3i3iIHEQ&t=141s"
         },
         {
           "video_title": "State Funds Tutorial: First Steps For Somebody Brand New To Unclaimed Funds Business.",
@@ -2291,22 +2303,10 @@
           "link": "https://www.youtube.com/watch?v=CqlbwGPmv64&t=56s"
         },
         {
-          "video_title": "State Funds Tutorial Delaware: Registering As A Property Locator For The State Of Delaware.",
-          "author": "Surplus Funds 101",
-          "timestamp": "00:03:31",
-          "link": "https://www.youtube.com/watch?v=TTfaOSBvLDc&t=211s"
-        },
-        {
-          "video_title": "State Funds Tutorial New Mexico: How To Register As A Property Locator In The State Of New Mexico.",
-          "author": "Surplus Funds 101",
-          "timestamp": "00:07:16",
-          "link": "https://www.youtube.com/watch?v=6yIKsJMj6Gk&t=436s"
-        },
-        {
-          "video_title": "USDA FSA Resources for Heirs: Join FSA as we talk with the Experts (Episode 1-Full Version)",
-          "author": "FarmersGov",
-          "timestamp": "00:16:23",
-          "link": "https://www.youtube.com/watch?v=whDzDrFNADQ&t=983s"
+          "video_title": "Licensing Basics You NEED To Know In Business | Shark Tank's Daymond John",
+          "author": "Daymond John",
+          "timestamp": "00:08:49",
+          "link": "https://www.youtube.com/watch?v=knoob7eUS6Y&t=529s"
         }
       ],
       "caveat": "Consensus among the sampled operators — not legal advice and not a substitute for the governing statute in the reader's jurisdiction."
@@ -2318,9 +2318,9 @@
       "headline": "Automated docket monitoring plus AI abstracting lets one or two people run real volume.",
       "summary": "The operational consensus is to automate the repetitive layer — scheduled docket and register pulls, structured intake into a sheet or CRM, AI-assisted abstracting of filings — while keeping genealogy judgment, heir contact and contract execution human. That split is what keeps a two-person shop competitive against staffed firms.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 1011,
-      "video_count": 1489,
-      "corroborating_tip_count": 4598,
+      "channel_count": 1102,
+      "video_count": 1616,
+      "corroborating_tip_count": 4867,
       "supporting_links": [
         {
           "video_title": "State Funds Tutorial: 5 Tech Tools For Your State Funds Business",
@@ -2384,22 +2384,22 @@
           "link": "https://www.youtube.com/watch?v=i36Xg_tsVAY&t=241s"
         },
         {
+          "video_title": "Licensing to Earn royalties Vs Manufacturing Your Invention Idea",
+          "author": "Brian Fried - The Inventor Coach",
+          "timestamp": "00:02:28",
+          "link": "https://www.youtube.com/watch?v=UnGdjQb467o&t=148s"
+        },
+        {
+          "video_title": "5 Patent Monetization Strategies Inventors Don't Know About",
+          "author": "Patent pc",
+          "timestamp": "00:02:21",
+          "link": "https://www.youtube.com/watch?v=TYb3i3iIHEQ&t=141s"
+        },
+        {
           "video_title": "State Funds Tutorial: First Steps For Somebody Brand New To Unclaimed Funds Business.",
           "author": "Surplus Funds 101",
           "timestamp": "00:14:47",
           "link": "https://www.youtube.com/watch?v=PGvJEv9Y_Go&t=887s"
-        },
-        {
-          "video_title": "Surplus Funds Cold Calling Script: How to Not Sound Like a Scam",
-          "author": "Alfred Taren",
-          "timestamp": "00:00:56",
-          "link": "https://www.youtube.com/watch?v=CqlbwGPmv64&t=56s"
-        },
-        {
-          "video_title": "State Funds Tutorial Delaware: Registering As A Property Locator For The State Of Delaware.",
-          "author": "Surplus Funds 101",
-          "timestamp": "00:03:31",
-          "link": "https://www.youtube.com/watch?v=TTfaOSBvLDc&t=211s"
         }
       ]
     },
@@ -2424,22 +2424,22 @@
           "link": "https://www.youtube.com/watch?v=i36Xg_tsVAY&t=241s"
         },
         {
+          "video_title": "Licensing to Earn royalties Vs Manufacturing Your Invention Idea",
+          "author": "Brian Fried - The Inventor Coach",
+          "timestamp": "00:02:28",
+          "link": "https://www.youtube.com/watch?v=UnGdjQb467o&t=148s"
+        },
+        {
+          "video_title": "5 Patent Monetization Strategies Inventors Don't Know About",
+          "author": "Patent pc",
+          "timestamp": "00:02:21",
+          "link": "https://www.youtube.com/watch?v=TYb3i3iIHEQ&t=141s"
+        },
+        {
           "video_title": "State Funds Tutorial: First Steps For Somebody Brand New To Unclaimed Funds Business.",
           "author": "Surplus Funds 101",
           "timestamp": "00:14:47",
           "link": "https://www.youtube.com/watch?v=PGvJEv9Y_Go&t=887s"
-        },
-        {
-          "video_title": "Surplus Funds Cold Calling Script: How to Not Sound Like a Scam",
-          "author": "Alfred Taren",
-          "timestamp": "00:00:56",
-          "link": "https://www.youtube.com/watch?v=CqlbwGPmv64&t=56s"
-        },
-        {
-          "video_title": "State Funds Tutorial Delaware: Registering As A Property Locator For The State Of Delaware.",
-          "author": "Surplus Funds 101",
-          "timestamp": "00:03:31",
-          "link": "https://www.youtube.com/watch?v=TTfaOSBvLDc&t=211s"
         }
       ]
     },
@@ -2464,22 +2464,22 @@
           "link": "https://www.youtube.com/watch?v=i36Xg_tsVAY&t=241s"
         },
         {
+          "video_title": "Licensing to Earn royalties Vs Manufacturing Your Invention Idea",
+          "author": "Brian Fried - The Inventor Coach",
+          "timestamp": "00:02:28",
+          "link": "https://www.youtube.com/watch?v=UnGdjQb467o&t=148s"
+        },
+        {
+          "video_title": "5 Patent Monetization Strategies Inventors Don't Know About",
+          "author": "Patent pc",
+          "timestamp": "00:02:21",
+          "link": "https://www.youtube.com/watch?v=TYb3i3iIHEQ&t=141s"
+        },
+        {
           "video_title": "State Funds Tutorial: First Steps For Somebody Brand New To Unclaimed Funds Business.",
           "author": "Surplus Funds 101",
           "timestamp": "00:14:47",
           "link": "https://www.youtube.com/watch?v=PGvJEv9Y_Go&t=887s"
-        },
-        {
-          "video_title": "Surplus Funds Cold Calling Script: How to Not Sound Like a Scam",
-          "author": "Alfred Taren",
-          "timestamp": "00:00:56",
-          "link": "https://www.youtube.com/watch?v=CqlbwGPmv64&t=56s"
-        },
-        {
-          "video_title": "State Funds Tutorial Delaware: Registering As A Property Locator For The State Of Delaware.",
-          "author": "Surplus Funds 101",
-          "timestamp": "00:03:31",
-          "link": "https://www.youtube.com/watch?v=TTfaOSBvLDc&t=211s"
         }
       ]
     },
@@ -2544,22 +2544,22 @@
           "link": "https://www.youtube.com/watch?v=i36Xg_tsVAY&t=241s"
         },
         {
+          "video_title": "Licensing to Earn royalties Vs Manufacturing Your Invention Idea",
+          "author": "Brian Fried - The Inventor Coach",
+          "timestamp": "00:02:28",
+          "link": "https://www.youtube.com/watch?v=UnGdjQb467o&t=148s"
+        },
+        {
+          "video_title": "5 Patent Monetization Strategies Inventors Don't Know About",
+          "author": "Patent pc",
+          "timestamp": "00:02:21",
+          "link": "https://www.youtube.com/watch?v=TYb3i3iIHEQ&t=141s"
+        },
+        {
           "video_title": "State Funds Tutorial: First Steps For Somebody Brand New To Unclaimed Funds Business.",
           "author": "Surplus Funds 101",
           "timestamp": "00:14:47",
           "link": "https://www.youtube.com/watch?v=PGvJEv9Y_Go&t=887s"
-        },
-        {
-          "video_title": "Surplus Funds Cold Calling Script: How to Not Sound Like a Scam",
-          "author": "Alfred Taren",
-          "timestamp": "00:00:56",
-          "link": "https://www.youtube.com/watch?v=CqlbwGPmv64&t=56s"
-        },
-        {
-          "video_title": "State Funds Tutorial Delaware: Registering As A Property Locator For The State Of Delaware.",
-          "author": "Surplus Funds 101",
-          "timestamp": "00:03:31",
-          "link": "https://www.youtube.com/watch?v=TTfaOSBvLDc&t=211s"
         }
       ]
     },
@@ -2746,8 +2746,8 @@
         "asset_id": "youtube_thumbnails",
         "asset": "https://i.ytimg.com/vi/<video_id>/*.jpg",
         "asset_type": "youtube_thumbnail_image",
-        "source": "YouTube CDN thumbnails for the 1882 corpus videos",
-        "instance_count": 1882,
+        "source": "YouTube CDN thumbnails for the 2060 corpus videos",
+        "instance_count": 2060,
         "instances": [
           {
             "video_id": "9Q4qYeK5DTg",
@@ -15922,6 +15922,1252 @@
             "author": "Flying Wheels",
             "thumbnail_url": "https://i.ytimg.com/vi/en-0Xomp1UQ/hqdefault.jpg",
             "source_url": "https://www.youtube.com/watch?v=en-0Xomp1UQ"
+          },
+          {
+            "video_id": "E7nUaZBoVeI",
+            "title": "How Inventors Make Money Without Manufacturing Anything: Licensing, Royalties, and Selling Explained",
+            "author": "Patent Question",
+            "thumbnail_url": "https://i.ytimg.com/vi/E7nUaZBoVeI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=E7nUaZBoVeI"
+          },
+          {
+            "video_id": "lvsa9U4qZJA",
+            "title": "Digital IP Licensing for Business Revenue in United State 2026",
+            "author": "Gait Gain",
+            "thumbnail_url": "https://i.ytimg.com/vi/lvsa9U4qZJA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=lvsa9U4qZJA"
+          },
+          {
+            "video_id": "2dvDoXcllAw",
+            "title": "The Hidden Business of Licensing: How Brands Make Billions Without Making Products",
+            "author": "Cashix",
+            "thumbnail_url": "https://i.ytimg.com/vi/2dvDoXcllAw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=2dvDoXcllAw"
+          },
+          {
+            "video_id": "cfPpWt8cw64",
+            "title": "Patent Licensing 101 - Learn What Goes Into Monetizing Your Patented Ideas",
+            "author": "Jeff Schell",
+            "thumbnail_url": "https://i.ytimg.com/vi/cfPpWt8cw64/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=cfPpWt8cw64"
+          },
+          {
+            "video_id": "xkXjle5Spjw",
+            "title": "The Economics of Owning an IP Holding Company",
+            "author": "Useless Money",
+            "thumbnail_url": "https://i.ytimg.com/vi/xkXjle5Spjw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=xkXjle5Spjw"
+          },
+          {
+            "video_id": "yUPS-UISPnQ",
+            "title": "ICIP presents: Intellectual Property Licensing - Three Main Ways To Make Money on Your Invention",
+            "author": "Eric Hanscom (ICIP)",
+            "thumbnail_url": "https://i.ytimg.com/vi/yUPS-UISPnQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=yUPS-UISPnQ"
+          },
+          {
+            "video_id": "QRv3A_DETg4",
+            "title": "What Is Licensing? The Business Model That Turns Your Knowledge Into Scalable Revenue",
+            "author": "Dr. Lauryn B",
+            "thumbnail_url": "https://i.ytimg.com/vi/QRv3A_DETg4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=QRv3A_DETg4"
+          },
+          {
+            "video_id": "dSzZD5CnwK8",
+            "title": "From Idea to Income: How to License Your Patent for Royalties",
+            "author": "Trenner Law Firm - Patents & Trademarks",
+            "thumbnail_url": "https://i.ytimg.com/vi/dSzZD5CnwK8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=dSzZD5CnwK8"
+          },
+          {
+            "video_id": "knoob7eUS6Y",
+            "title": "Licensing Basics You NEED To Know In Business | Shark Tank's Daymond John",
+            "author": "Daymond John",
+            "thumbnail_url": "https://i.ytimg.com/vi/knoob7eUS6Y/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=knoob7eUS6Y"
+          },
+          {
+            "video_id": "0MpPL7OXNr4",
+            "title": "Turn Intellectual Property Into Revenue | Licensing & Commercialization Strategy",
+            "author": "Licensing Consulting Group",
+            "thumbnail_url": "https://i.ytimg.com/vi/0MpPL7OXNr4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=0MpPL7OXNr4"
+          },
+          {
+            "video_id": "fAwWxzitmUk",
+            "title": "Patents and patent licensing as a business model? Fractus co-founder Dr. Carles Puente explains how",
+            "author": "IP Europe",
+            "thumbnail_url": "https://i.ytimg.com/vi/fAwWxzitmUk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=fAwWxzitmUk"
+          },
+          {
+            "video_id": "2-_h0sI3YQI",
+            "title": "Licensing Fee: Definition, How It Works vs. Royalty, and Examples",
+            "author": "Simple Explain",
+            "thumbnail_url": "https://i.ytimg.com/vi/2-_h0sI3YQI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=2-_h0sI3YQI"
+          },
+          {
+            "video_id": "SkIAUEkenak",
+            "title": "Patent Licensing Strategy: Royalties, Equity & Exclusive Rights Explained",
+            "author": "Bao Tran, Esq. | Patent Attorney",
+            "thumbnail_url": "https://i.ytimg.com/vi/SkIAUEkenak/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=SkIAUEkenak"
+          },
+          {
+            "video_id": "mtxmo_OkhSw",
+            "title": "Patent Royalties How Much Can Inventors Really Earn",
+            "author": "UpCounsel",
+            "thumbnail_url": "https://i.ytimg.com/vi/mtxmo_OkhSw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=mtxmo_OkhSw"
+          },
+          {
+            "video_id": "QaABLYw6maY",
+            "title": "Licensing Agreements Key Elements and Business Benefits",
+            "author": "UpCounsel",
+            "thumbnail_url": "https://i.ytimg.com/vi/QaABLYw6maY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=QaABLYw6maY"
+          },
+          {
+            "video_id": "3P0vRsEmqtY",
+            "title": "Decoding Pure-Play Licensing Model: High Margin Royalty Cash Flows | Industry Terms",
+            "author": "INDIAN MARKETS DECODED",
+            "thumbnail_url": "https://i.ytimg.com/vi/3P0vRsEmqtY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=3P0vRsEmqtY"
+          },
+          {
+            "video_id": "A7xn_DzjKzE",
+            "title": "Got a Patent? Here’s How You Actually Make Money",
+            "author": "Patent pc",
+            "thumbnail_url": "https://i.ytimg.com/vi/A7xn_DzjKzE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=A7xn_DzjKzE"
+          },
+          {
+            "video_id": "dlTT-hWgkB8",
+            "title": "Patents Explained – How to Make Money from a Patent | Rich Goldstein",
+            "author": "Patent Question",
+            "thumbnail_url": "https://i.ytimg.com/vi/dlTT-hWgkB8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=dlTT-hWgkB8"
+          },
+          {
+            "video_id": "qZqv5lEPPQc",
+            "title": "Patent Monetization: Doing Business as an NPE",
+            "author": "IPWatchdog, Inc.",
+            "thumbnail_url": "https://i.ytimg.com/vi/qZqv5lEPPQc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=qZqv5lEPPQc"
+          },
+          {
+            "video_id": "TYb3i3iIHEQ",
+            "title": "5 Patent Monetization Strategies Inventors Don't Know About",
+            "author": "Patent pc",
+            "thumbnail_url": "https://i.ytimg.com/vi/TYb3i3iIHEQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=TYb3i3iIHEQ"
+          },
+          {
+            "video_id": "wiI7fBL42Vg",
+            "title": "How to Profit from Your Patent Selling, Licensing, and Protecting Your Invention",
+            "author": "UpCounsel",
+            "thumbnail_url": "https://i.ytimg.com/vi/wiI7fBL42Vg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=wiI7fBL42Vg"
+          },
+          {
+            "video_id": "xRRc9i7j5A8",
+            "title": "How Patent Brokers Help You Turn Intellectual Property Into Profit",
+            "author": "UpCounsel",
+            "thumbnail_url": "https://i.ytimg.com/vi/xRRc9i7j5A8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=xRRc9i7j5A8"
+          },
+          {
+            "video_id": "Te8GX-Xx4mo",
+            "title": "Errors You Can’t Afford to Make When Licensing Your Invention",
+            "author": "John Ferrell, Esq.",
+            "thumbnail_url": "https://i.ytimg.com/vi/Te8GX-Xx4mo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Te8GX-Xx4mo"
+          },
+          {
+            "video_id": "AaEw4SGbkk0",
+            "title": "How to Profit from Your Patent Through Licensing",
+            "author": "UpCounsel",
+            "thumbnail_url": "https://i.ytimg.com/vi/AaEw4SGbkk0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=AaEw4SGbkk0"
+          },
+          {
+            "video_id": "bO09tLv7ysM",
+            "title": "Licensing Your Product Idea: How to Negotiate Your Royalty Percentage with Sef Chang",
+            "author": "The Patent Professor®",
+            "thumbnail_url": "https://i.ytimg.com/vi/bO09tLv7ysM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=bO09tLv7ysM"
+          },
+          {
+            "video_id": "Lpv4Uq-cOLA",
+            "title": "Patent Licensing How It Works and What You Need to Know",
+            "author": "UpCounsel",
+            "thumbnail_url": "https://i.ytimg.com/vi/Lpv4Uq-cOLA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Lpv4Uq-cOLA"
+          },
+          {
+            "video_id": "Vi4MIcyHOFE",
+            "title": "Patent and Trademark Monetization through Licensing and Selling",
+            "author": "J.D. Houvener / Bold Patents Law Firm",
+            "thumbnail_url": "https://i.ytimg.com/vi/Vi4MIcyHOFE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Vi4MIcyHOFE"
+          },
+          {
+            "video_id": "TwdLXgIhXJA",
+            "title": "What is Brand Licensing?",
+            "author": "Brand Licensing by Informa",
+            "thumbnail_url": "https://i.ytimg.com/vi/TwdLXgIhXJA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=TwdLXgIhXJA"
+          },
+          {
+            "video_id": "fyUYT-gfzfU",
+            "title": "What You “NEED” To License Your Idea For Royalties!",
+            "author": "inventRightTV",
+            "thumbnail_url": "https://i.ytimg.com/vi/fyUYT-gfzfU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=fyUYT-gfzfU"
+          },
+          {
+            "video_id": "M69XC4rxxQc",
+            "title": "How licensing teams run agreements, approvals and royalties in one place",
+            "author": "Flowhaven",
+            "thumbnail_url": "https://i.ytimg.com/vi/M69XC4rxxQc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=M69XC4rxxQc"
+          },
+          {
+            "video_id": "WMcwXYcUD5c",
+            "title": "What is Brand Licensing?",
+            "author": "inventRightTV",
+            "thumbnail_url": "https://i.ytimg.com/vi/WMcwXYcUD5c/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=WMcwXYcUD5c"
+          },
+          {
+            "video_id": "qx___lyJ5yQ",
+            "title": "Licensing Basics: The Royalty Rate and Minimum Guarantee [Part 7/10]",
+            "author": "SeltzerLicensingGrp",
+            "thumbnail_url": "https://i.ytimg.com/vi/qx___lyJ5yQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=qx___lyJ5yQ"
+          },
+          {
+            "video_id": "yRNAVrfCNIE",
+            "title": "Navigating the Brand Licensing Life Cycle",
+            "author": "Mayer Brown",
+            "thumbnail_url": "https://i.ytimg.com/vi/yRNAVrfCNIE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=yRNAVrfCNIE"
+          },
+          {
+            "video_id": "MGH55iIT-A0",
+            "title": "What Are The Financial Terms in a Licensing Deal?",
+            "author": "SeltzerLicensingGrp",
+            "thumbnail_url": "https://i.ytimg.com/vi/MGH55iIT-A0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=MGH55iIT-A0"
+          },
+          {
+            "video_id": "6dKNY_VUEIs",
+            "title": "What can licensing do for your brand?",
+            "author": "Brand Licensing by Informa",
+            "thumbnail_url": "https://i.ytimg.com/vi/6dKNY_VUEIs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=6dKNY_VUEIs"
+          },
+          {
+            "video_id": "UnGdjQb467o",
+            "title": "Licensing to Earn royalties Vs Manufacturing Your Invention Idea",
+            "author": "Brian Fried - The Inventor Coach",
+            "thumbnail_url": "https://i.ytimg.com/vi/UnGdjQb467o/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=UnGdjQb467o"
+          },
+          {
+            "video_id": "HkDV-RELNXc",
+            "title": "How brand licensing teams run agreements, approvals and royalties in one place",
+            "author": "Flowhaven",
+            "thumbnail_url": "https://i.ytimg.com/vi/HkDV-RELNXc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=HkDV-RELNXc"
+          },
+          {
+            "video_id": "7LHR9Jso37I",
+            "title": "Licensing Basics: Key Legal Terms In Brand Licensing [Part 10/10]",
+            "author": "SeltzerLicensingGrp",
+            "thumbnail_url": "https://i.ytimg.com/vi/7LHR9Jso37I/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=7LHR9Jso37I"
+          },
+          {
+            "video_id": "KpR6WOaw0vM",
+            "title": "Brand Licensing Europe: LIMA President upbeat on licensing business | Marketing Media Money",
+            "author": "CNBC International Live",
+            "thumbnail_url": "https://i.ytimg.com/vi/KpR6WOaw0vM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=KpR6WOaw0vM"
+          },
+          {
+            "video_id": "WEVVJ111b8o",
+            "title": "How This Inventor Earned $10 Million In Royalties!",
+            "author": "inventRightTV",
+            "thumbnail_url": "https://i.ytimg.com/vi/WEVVJ111b8o/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=WEVVJ111b8o"
+          },
+          {
+            "video_id": "gxeuCPaGeHY",
+            "title": "How Much Money Stephen Key Made Licensing His Ideas",
+            "author": "inventRightTV",
+            "thumbnail_url": "https://i.ytimg.com/vi/gxeuCPaGeHY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=gxeuCPaGeHY"
+          },
+          {
+            "video_id": "5pNsi_2H-J4",
+            "title": "How Much Money Will You Make Licensing? (Royalties)",
+            "author": "inventRightTV",
+            "thumbnail_url": "https://i.ytimg.com/vi/5pNsi_2H-J4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=5pNsi_2H-J4"
+          },
+          {
+            "video_id": "G2JXLQrTZXI",
+            "title": "7 strategies to get a great licensing deal!",
+            "author": "inventRightTV",
+            "thumbnail_url": "https://i.ytimg.com/vi/G2JXLQrTZXI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=G2JXLQrTZXI"
+          },
+          {
+            "video_id": "hM7gpPqIDoQ",
+            "title": "I Licensed My Ideas — Here’s How Much I Made!",
+            "author": "inventRightTV",
+            "thumbnail_url": "https://i.ytimg.com/vi/hM7gpPqIDoQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=hM7gpPqIDoQ"
+          },
+          {
+            "video_id": "1w_iTE7ZNso",
+            "title": "12 Tips for Successful Product Licensing!",
+            "author": "inventRightTV",
+            "thumbnail_url": "https://i.ytimg.com/vi/1w_iTE7ZNso/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=1w_iTE7ZNso"
+          },
+          {
+            "video_id": "Se-TzTVqhfY",
+            "title": "From Ideas To Income : The Truth About Earning Royalties",
+            "author": "inventRightTV",
+            "thumbnail_url": "https://i.ytimg.com/vi/Se-TzTVqhfY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Se-TzTVqhfY"
+          },
+          {
+            "video_id": "ykqpNKDKFEE",
+            "title": "Who is Stephen Key?",
+            "author": "inventRightTV",
+            "thumbnail_url": "https://i.ytimg.com/vi/ykqpNKDKFEE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ykqpNKDKFEE"
+          },
+          {
+            "video_id": "p3ODWhpvt3E",
+            "title": "The #1 Thing Companies Want Before Buying Your Idea",
+            "author": "inventRightTV",
+            "thumbnail_url": "https://i.ytimg.com/vi/p3ODWhpvt3E/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=p3ODWhpvt3E"
+          },
+          {
+            "video_id": "IMLF0c7wOQI",
+            "title": "How to license your product ideas",
+            "author": "inventRightTV",
+            "thumbnail_url": "https://i.ytimg.com/vi/IMLF0c7wOQI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=IMLF0c7wOQI"
+          },
+          {
+            "video_id": "aFZpyTUvtlY",
+            "title": "How to Pitch Your Product to Companies For a Licensing Deal",
+            "author": "inventRightTV",
+            "thumbnail_url": "https://i.ytimg.com/vi/aFZpyTUvtlY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=aFZpyTUvtlY"
+          },
+          {
+            "video_id": "CS31715RNQk",
+            "title": "How to License Your Product Ideas Without a Patent",
+            "author": "inventRightTV",
+            "thumbnail_url": "https://i.ytimg.com/vi/CS31715RNQk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=CS31715RNQk"
+          },
+          {
+            "video_id": "mljygoL-peE",
+            "title": "Making Your Hit List of Potential Licensees",
+            "author": "inventRightTV",
+            "thumbnail_url": "https://i.ytimg.com/vi/mljygoL-peE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=mljygoL-peE"
+          },
+          {
+            "video_id": "LWNWc2dynPI",
+            "title": "How I License an Invention From Start to Finish",
+            "author": "inventRightTV",
+            "thumbnail_url": "https://i.ytimg.com/vi/LWNWc2dynPI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=LWNWc2dynPI"
+          },
+          {
+            "video_id": "biVTpLl2T5U",
+            "title": "How to Land the Licensing Deal of Your Dreams",
+            "author": "inventRightTV",
+            "thumbnail_url": "https://i.ytimg.com/vi/biVTpLl2T5U/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=biVTpLl2T5U"
+          },
+          {
+            "video_id": "uBnJLlSWMLk",
+            "title": "What's more important than your royalty rate in a licensing deal?",
+            "author": "Licensing Basics",
+            "thumbnail_url": "https://i.ytimg.com/vi/uBnJLlSWMLk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=uBnJLlSWMLk"
+          },
+          {
+            "video_id": "GLaoDfT8SDA",
+            "title": "Negotiate Like a Pro: Secure Your Royalties with This Licensing Fee Secret",
+            "author": "Legal Tips for Smart Entrepreneurs",
+            "thumbnail_url": "https://i.ytimg.com/vi/GLaoDfT8SDA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=GLaoDfT8SDA"
+          },
+          {
+            "video_id": "9Fku-QlhyHc",
+            "title": "Royalty Audit: Why Every Licensor & Artist Needs a Forensic Accountant on Their Side | Uncover Fraud",
+            "author": "Uncover Fraud",
+            "thumbnail_url": "https://i.ytimg.com/vi/9Fku-QlhyHc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=9Fku-QlhyHc"
+          },
+          {
+            "video_id": "cirxW12BS2k",
+            "title": "Royalty audits, steps and strategies.",
+            "author": "Artist Rights Institute",
+            "thumbnail_url": "https://i.ytimg.com/vi/cirxW12BS2k/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=cirxW12BS2k"
+          },
+          {
+            "video_id": "Z-vXnFsa6zY",
+            "title": "Red Flags in Licensing and Royalty Audits | PKF Texas - The Entrepreneur's Playbook®",
+            "author": "PKF Texas",
+            "thumbnail_url": "https://i.ytimg.com/vi/Z-vXnFsa6zY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Z-vXnFsa6zY"
+          },
+          {
+            "video_id": "4ZKPBotNzQw",
+            "title": "22.5. What is a Royalty Audit",
+            "author": "Sabarwal Law",
+            "thumbnail_url": "https://i.ytimg.com/vi/4ZKPBotNzQw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=4ZKPBotNzQw"
+          },
+          {
+            "video_id": "cURFfKlt_Ek",
+            "title": "Patent Licensing How to Set Fair Royalty Rates",
+            "author": "UpCounsel",
+            "thumbnail_url": "https://i.ytimg.com/vi/cURFfKlt_Ek/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=cURFfKlt_Ek"
+          },
+          {
+            "video_id": "DfuXhSrezTU",
+            "title": "Your Right to AUDIT: How to Catch Your Label Stealing Your Royalties 🕵️",
+            "author": "Secrets of the music industry",
+            "thumbnail_url": "https://i.ytimg.com/vi/DfuXhSrezTU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=DfuXhSrezTU"
+          },
+          {
+            "video_id": "_AP6Fd6Lwwg",
+            "title": "Passive Income Streams for Artists Module 6 Art Licensing and Royalty Agreements",
+            "author": "EarthTab Business School",
+            "thumbnail_url": "https://i.ytimg.com/vi/_AP6Fd6Lwwg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=_AP6Fd6Lwwg"
+          },
+          {
+            "video_id": "Dd9V4RSqNuk",
+            "title": "BWB TV: Commercializing university research with Lita Nelsen, MIT",
+            "author": "Informa Connect Life Sciences",
+            "thumbnail_url": "https://i.ytimg.com/vi/Dd9V4RSqNuk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Dd9V4RSqNuk"
+          },
+          {
+            "video_id": "BtnDins-U4g",
+            "title": "Lesley Millar-Nicholson: The Role of Technology Transfer",
+            "author": "Technology Licensing Office (TLO)",
+            "thumbnail_url": "https://i.ytimg.com/vi/BtnDins-U4g/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=BtnDins-U4g"
+          },
+          {
+            "video_id": "DsnLgDwQddQ",
+            "title": "Intro to Technology Commercialization",
+            "author": "UC Riverside Innovation & Entrepreneurship",
+            "thumbnail_url": "https://i.ytimg.com/vi/DsnLgDwQddQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=DsnLgDwQddQ"
+          },
+          {
+            "video_id": "2ADE7tP4bYM",
+            "title": "Commercialization of MIT Technology",
+            "author": "Technology Licensing Office (TLO)",
+            "thumbnail_url": "https://i.ytimg.com/vi/2ADE7tP4bYM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=2ADE7tP4bYM"
+          },
+          {
+            "video_id": "ThAHgFsvejI",
+            "title": "IMPACTT - Purdue Technology Transfer Office",
+            "author": "Circular Venture Lab",
+            "thumbnail_url": "https://i.ytimg.com/vi/ThAHgFsvejI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ThAHgFsvejI"
+          },
+          {
+            "video_id": "ZzczaFujs3A",
+            "title": "Patenting & Licensing of Early-Stage University Technology",
+            "author": "Columbia TechVentures",
+            "thumbnail_url": "https://i.ytimg.com/vi/ZzczaFujs3A/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ZzczaFujs3A"
+          },
+          {
+            "video_id": "Yqfdzambgbs",
+            "title": "Inside the Office for Technology Commercialization",
+            "author": "University of Minnesota",
+            "thumbnail_url": "https://i.ytimg.com/vi/Yqfdzambgbs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Yqfdzambgbs"
+          },
+          {
+            "video_id": "HKAvhkDKxNQ",
+            "title": "Technology Transfer and Intellectual Property",
+            "author": "OSU Center for Clinical and Translational Science",
+            "thumbnail_url": "https://i.ytimg.com/vi/HKAvhkDKxNQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=HKAvhkDKxNQ"
+          },
+          {
+            "video_id": "3iEjObMZnZo",
+            "title": "Intellectual Property and Technology Transfer - Why is Academia Suddenly So Interested in Patents?",
+            "author": "Salk Institute",
+            "thumbnail_url": "https://i.ytimg.com/vi/3iEjObMZnZo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=3iEjObMZnZo"
+          },
+          {
+            "video_id": "O2Cp8235kvg",
+            "title": "UOIT Office of Technology Transfer and Commercialization - How do I protect my Copyright?",
+            "author": "universityofontario",
+            "thumbnail_url": "https://i.ytimg.com/vi/O2Cp8235kvg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=O2Cp8235kvg"
+          },
+          {
+            "video_id": "2_OclNjs2Hg",
+            "title": "Why do so many university patents remain on the shelf?",
+            "author": "Commercialisation Talks",
+            "thumbnail_url": "https://i.ytimg.com/vi/2_OclNjs2Hg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=2_OclNjs2Hg"
+          },
+          {
+            "video_id": "hwcNfSr-ia0",
+            "title": "Tech Transfer and Commercialization",
+            "author": "USPTOvideo",
+            "thumbnail_url": "https://i.ytimg.com/vi/hwcNfSr-ia0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=hwcNfSr-ia0"
+          },
+          {
+            "video_id": "jxdKIK4n-Dk",
+            "title": "Engaging Your Technology Transfer Office to Translate Research into Patents",
+            "author": "American Physiological Society",
+            "thumbnail_url": "https://i.ytimg.com/vi/jxdKIK4n-Dk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=jxdKIK4n-Dk"
+          },
+          {
+            "video_id": "7U8vYps8fMk",
+            "title": "How Licensing Really Works (And How to Land One for Your Brand)",
+            "author": "Davie Fogarty",
+            "thumbnail_url": "https://i.ytimg.com/vi/7U8vYps8fMk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=7U8vYps8fMk"
+          },
+          {
+            "video_id": "SemEIJ61Mb0",
+            "title": "Disney's Licensing Magic A Global Success Story",
+            "author": "The Good Old Brands",
+            "thumbnail_url": "https://i.ytimg.com/vi/SemEIJ61Mb0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=SemEIJ61Mb0"
+          },
+          {
+            "video_id": "0ZCFBJ3aOOA",
+            "title": "Should You License Your Advisory Firm's Data for AI Training?",
+            "author": "Jason Varner",
+            "thumbnail_url": "https://i.ytimg.com/vi/0ZCFBJ3aOOA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=0ZCFBJ3aOOA"
+          },
+          {
+            "video_id": "y5YpFZxHpYE",
+            "title": "Do You Lose Your Files When You License Data for AI Training?",
+            "author": "Archive Trove",
+            "thumbnail_url": "https://i.ytimg.com/vi/y5YpFZxHpYE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=y5YpFZxHpYE"
+          },
+          {
+            "video_id": "nKuxu_x-s6o",
+            "title": "Explaining the Data Licensing Opportunity for Your Company",
+            "author": "Jason Varner",
+            "thumbnail_url": "https://i.ytimg.com/vi/nKuxu_x-s6o/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=nKuxu_x-s6o"
+          },
+          {
+            "video_id": "XDzwbT8LWMQ",
+            "title": "Types of Valuable Data for AI Training",
+            "author": "Jason Varner",
+            "thumbnail_url": "https://i.ytimg.com/vi/XDzwbT8LWMQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=XDzwbT8LWMQ"
+          },
+          {
+            "video_id": "5gxaM62YYFk",
+            "title": "Mayer Brown's Tech Talks: Smart Licensing of AI",
+            "author": "Mayer Brown",
+            "thumbnail_url": "https://i.ytimg.com/vi/5gxaM62YYFk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=5gxaM62YYFk"
+          },
+          {
+            "video_id": "bii4_gwgoBY",
+            "title": "OpenDataology - A Call to Arms for Fixing the Dataset Licensing Landscape - Gopi Krishnan Rajbahadur",
+            "author": "The Linux Foundation",
+            "thumbnail_url": "https://i.ytimg.com/vi/bii4_gwgoBY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=bii4_gwgoBY"
+          },
+          {
+            "video_id": "7NRKyXl9j6U",
+            "title": "Creating a License Service for NVIDIA AI Enterprise or Virtual GPU",
+            "author": "NVIDIA Developer",
+            "thumbnail_url": "https://i.ytimg.com/vi/7NRKyXl9j6U/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=7NRKyXl9j6U"
+          },
+          {
+            "video_id": "SU66nYi95IY",
+            "title": "How to License Your Data to AI Companies & Get Paid",
+            "author": "OneHourProfessor",
+            "thumbnail_url": "https://i.ytimg.com/vi/SU66nYi95IY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=SU66nYi95IY"
+          },
+          {
+            "video_id": "Sya3mBgQK7Q",
+            "title": "What every business owner should know abut AI data licensing",
+            "author": "micro1",
+            "thumbnail_url": "https://i.ytimg.com/vi/Sya3mBgQK7Q/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Sya3mBgQK7Q"
+          },
+          {
+            "video_id": "Awpsichbouw",
+            "title": "USPTO Patent Database Tutorial",
+            "author": "Erinnae Baker",
+            "thumbnail_url": "https://i.ytimg.com/vi/Awpsichbouw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Awpsichbouw"
+          },
+          {
+            "video_id": "SDXhhmDKGJo",
+            "title": "Beginner Tips for USPTO Search - [Operators & Fields]",
+            "author": "Edel Patents",
+            "thumbnail_url": "https://i.ytimg.com/vi/SDXhhmDKGJo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=SDXhhmDKGJo"
+          },
+          {
+            "video_id": "k0S01jxvk6M",
+            "title": "How to Use the Patent Office Patent Assignment Database Like a Pro. Ep. 167",
+            "author": "Patents and IP with Adam Diament",
+            "thumbnail_url": "https://i.ytimg.com/vi/k0S01jxvk6M/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=k0S01jxvk6M"
+          },
+          {
+            "video_id": "zel57Kej5nY",
+            "title": "How to Access HIDDEN Patent Assignment Records & Ownership History",
+            "author": "Patents Demystified",
+            "thumbnail_url": "https://i.ytimg.com/vi/zel57Kej5nY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=zel57Kej5nY"
+          },
+          {
+            "video_id": "oOln2IDvhqE",
+            "title": "Patent Application Number Search - Avoid the traps",
+            "author": "Edel Patents",
+            "thumbnail_url": "https://i.ytimg.com/vi/oOln2IDvhqE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=oOln2IDvhqE"
+          },
+          {
+            "video_id": "np8RKbVMSLg",
+            "title": "Using Patent Public Search Advanced to Search Designs",
+            "author": "USPTOvideo",
+            "thumbnail_url": "https://i.ytimg.com/vi/np8RKbVMSLg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=np8RKbVMSLg"
+          },
+          {
+            "video_id": "binARAl4AK8",
+            "title": "Path to a Patent, Part I - Intellectual property basics",
+            "author": "USPTOvideo",
+            "thumbnail_url": "https://i.ytimg.com/vi/binARAl4AK8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=binARAl4AK8"
+          },
+          {
+            "video_id": "K33V82uvPfc",
+            "title": "How to Search and Download USPTO Patents",
+            "author": "ipMAGNET USPTO Patent Search",
+            "thumbnail_url": "https://i.ytimg.com/vi/K33V82uvPfc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=K33V82uvPfc"
+          },
+          {
+            "video_id": "ixENhsfAdEA",
+            "title": "How to File a Provisional Patent Application with the USPTO (Step-by-Step)",
+            "author": "Idea2PatentAI",
+            "thumbnail_url": "https://i.ytimg.com/vi/ixENhsfAdEA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ixENhsfAdEA"
+          },
+          {
+            "video_id": "2L5qDLM_EkY",
+            "title": "How Can I Conduct Effective Patent Searches on the USPTO Database?",
+            "author": "Intellectual Property Ontario",
+            "thumbnail_url": "https://i.ytimg.com/vi/2L5qDLM_EkY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=2L5qDLM_EkY"
+          },
+          {
+            "video_id": "lVFYoVaNnrs",
+            "title": "Exclusive vs Non Exclusive License l What’s the difference?",
+            "author": "Ayers Law TV ~ Andrew M. Ayers, Esq.",
+            "thumbnail_url": "https://i.ytimg.com/vi/lVFYoVaNnrs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=lVFYoVaNnrs"
+          },
+          {
+            "video_id": "-VhDIVEwvzI",
+            "title": "Exclusive vs. Non-Exclusive Patent and Trademark License Agreements: What's the Difference?",
+            "author": "J.D. Houvener / Bold Patents Law Firm",
+            "thumbnail_url": "https://i.ytimg.com/vi/-VhDIVEwvzI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=-VhDIVEwvzI"
+          },
+          {
+            "video_id": "yl8L7tuwNuI",
+            "title": "Term Sheet in Patent Licensing (extended) Part 1- John Baxter",
+            "author": "BaxterIPAttorneys",
+            "thumbnail_url": "https://i.ytimg.com/vi/yl8L7tuwNuI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=yl8L7tuwNuI"
+          },
+          {
+            "video_id": "rbNcenaCppU",
+            "title": "Binding vs Non-Binding Clauses in a Term Sheet | Startup Legal Basics Explained",
+            "author": "Campus Fund",
+            "thumbnail_url": "https://i.ytimg.com/vi/rbNcenaCppU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=rbNcenaCppU"
+          },
+          {
+            "video_id": "NU_eh8zb6Uk",
+            "title": "Term Sheet in Patent Licensing (extended) Part 3- John Baxter",
+            "author": "BaxterIPAttorneys",
+            "thumbnail_url": "https://i.ytimg.com/vi/NU_eh8zb6Uk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=NU_eh8zb6Uk"
+          },
+          {
+            "video_id": "Q3YzwCiT2M4",
+            "title": "Startup Licensing 101: Term Sheets & Financials",
+            "author": "Osage University Partners",
+            "thumbnail_url": "https://i.ytimg.com/vi/Q3YzwCiT2M4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Q3YzwCiT2M4"
+          },
+          {
+            "video_id": "f7jKIsIKO1c",
+            "title": "AskAVC #12 - How to negotiate a term sheet",
+            "author": "Ask a VC",
+            "thumbnail_url": "https://i.ytimg.com/vi/f7jKIsIKO1c/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=f7jKIsIKO1c"
+          },
+          {
+            "video_id": "HbM8XU4hPCc",
+            "title": "Key Terms In All Term Sheets",
+            "author": "docstocTV",
+            "thumbnail_url": "https://i.ytimg.com/vi/HbM8XU4hPCc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=HbM8XU4hPCc"
+          },
+          {
+            "video_id": "NrMiKZwGTD4",
+            "title": "Understanding Your Royalty Statements and Learning What Questions to Ask Your Publisher",
+            "author": "Authors Guild",
+            "thumbnail_url": "https://i.ytimg.com/vi/NrMiKZwGTD4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=NrMiKZwGTD4"
+          },
+          {
+            "video_id": "UPnBwRHoelM",
+            "title": "What's in a Creo License",
+            "author": "3HTi",
+            "thumbnail_url": "https://i.ytimg.com/vi/UPnBwRHoelM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=UPnBwRHoelM"
+          },
+          {
+            "video_id": "3N-s4ptr2VU",
+            "title": "Manufacturing & Licensing: How To License Your Product",
+            "author": "UIA TV",
+            "thumbnail_url": "https://i.ytimg.com/vi/3N-s4ptr2VU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=3N-s4ptr2VU"
+          },
+          {
+            "video_id": "ApLNF2BQAt8",
+            "title": "Best 3D Parts Catalog Software in 2026 (5 Tools Compared)",
+            "author": "514Blog",
+            "thumbnail_url": "https://i.ytimg.com/vi/ApLNF2BQAt8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ApLNF2BQAt8"
+          },
+          {
+            "video_id": "jv3KcPKvwZs",
+            "title": "Leveraging Value Based Licensing within NX & Solid Edge Webinar",
+            "author": "CAM Logic, Inc.",
+            "thumbnail_url": "https://i.ytimg.com/vi/jv3KcPKvwZs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=jv3KcPKvwZs"
+          },
+          {
+            "video_id": "D6XhETdysBM",
+            "title": "How to Build a Music Catalog That Pays You for Years (Sync Licensing Strategy)",
+            "author": "Elite Music Coaching",
+            "thumbnail_url": "https://i.ytimg.com/vi/D6XhETdysBM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=D6XhETdysBM"
+          },
+          {
+            "video_id": "7t871xx-ysc",
+            "title": "sync licensing basics + libraries you should submit to - MORNING CHOPS",
+            "author": "Majeston",
+            "thumbnail_url": "https://i.ytimg.com/vi/7t871xx-ysc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=7t871xx-ysc"
+          },
+          {
+            "video_id": "2DYtoU6JVRA",
+            "title": "Why The Old Sync Licensing Rules No Longer Apply",
+            "author": "ClintMusic",
+            "thumbnail_url": "https://i.ytimg.com/vi/2DYtoU6JVRA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=2DYtoU6JVRA"
+          },
+          {
+            "video_id": "M7AeOQ9cxtQ",
+            "title": "What Is Sync Licensing? (And How It Actually Works)",
+            "author": "Sync Warehouse",
+            "thumbnail_url": "https://i.ytimg.com/vi/M7AeOQ9cxtQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=M7AeOQ9cxtQ"
+          },
+          {
+            "video_id": "hQRVouviU-w",
+            "title": "How to Do Sync in 2026 | Sync Library vs. Sync Agent vs. Direct to Music Supervisor",
+            "author": "Make Music Income",
+            "thumbnail_url": "https://i.ytimg.com/vi/hQRVouviU-w/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=hQRVouviU-w"
+          },
+          {
+            "video_id": "iF_Z6ikfzMo",
+            "title": "Ranking The Top 5 Major Sub-Publishers (Sync Licensing)",
+            "author": "Randy McGravey Music",
+            "thumbnail_url": "https://i.ytimg.com/vi/iF_Z6ikfzMo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=iF_Z6ikfzMo"
+          },
+          {
+            "video_id": "hoMi3ZhgFlc",
+            "title": "How Much Can You Make From Sync Licensing? (Real Numbers Explained)",
+            "author": "It's Julisa",
+            "thumbnail_url": "https://i.ytimg.com/vi/hoMi3ZhgFlc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=hoMi3ZhgFlc"
+          },
+          {
+            "video_id": "SEliWc2Tz3k",
+            "title": "Sync Licensing: How it works for Indie Artists and Music Producers in 2025",
+            "author": "xJ-Will",
+            "thumbnail_url": "https://i.ytimg.com/vi/SEliWc2Tz3k/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=SEliWc2Tz3k"
+          },
+          {
+            "video_id": "0r9cstgrqZM",
+            "title": "What Is Unauthorized Practice Of Law || Best Advice For Young Lawyers",
+            "author": "Jim Selbach",
+            "thumbnail_url": "https://i.ytimg.com/vi/0r9cstgrqZM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=0r9cstgrqZM"
+          },
+          {
+            "video_id": "IJ_WZiM4dKk",
+            "title": "AI Agents Are Transforming Patent Practice: From Patent Tools to AI Agents",
+            "author": "IP Author",
+            "thumbnail_url": "https://i.ytimg.com/vi/IJ_WZiM4dKk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=IJ_WZiM4dKk"
+          },
+          {
+            "video_id": "ijF0IyvjXXg",
+            "title": "Ask an IP litigator: #5 - How do I stop an unauthorized seller?",
+            "author": "Torys LLP",
+            "thumbnail_url": "https://i.ytimg.com/vi/ijF0IyvjXXg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ijF0IyvjXXg"
+          },
+          {
+            "video_id": "GOd61uYqq-8",
+            "title": "How To Practice Patent Law WITHOUT Being An Attorney [Insider Secrets]",
+            "author": "Patents Demystified",
+            "thumbnail_url": "https://i.ytimg.com/vi/GOd61uYqq-8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=GOd61uYqq-8"
+          },
+          {
+            "video_id": "xhIufRgP0ME",
+            "title": "Patent Agents, Patent Lawyers, and Unique Career Paths",
+            "author": "Berkeley Center for Law & Technology (BCLT)",
+            "thumbnail_url": "https://i.ytimg.com/vi/xhIufRgP0ME/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=xhIufRgP0ME"
+          },
+          {
+            "video_id": "q5uDRlH_eFo",
+            "title": "Intellectual Property: Licensing",
+            "author": "Kauffman FoundersSchool",
+            "thumbnail_url": "https://i.ytimg.com/vi/q5uDRlH_eFo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=q5uDRlH_eFo"
+          },
+          {
+            "video_id": "yAYeomyyeP8",
+            "title": "How Book Advances and Royalties Work",
+            "author": "Alexa Donne",
+            "thumbnail_url": "https://i.ytimg.com/vi/yAYeomyyeP8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=yAYeomyyeP8"
+          },
+          {
+            "video_id": "cEP_oNaMQcw",
+            "title": "💸 a guide to author finances // advances, royalties, taxes, & what worked for me",
+            "author": "Lynn D. Jung",
+            "thumbnail_url": "https://i.ytimg.com/vi/cEP_oNaMQcw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=cEP_oNaMQcw"
+          },
+          {
+            "video_id": "gN8CTjqp8lA",
+            "title": "Producer Publishing Deals in 2026 (Music Attorneys Explain)",
+            "author": "Producer Royalty",
+            "thumbnail_url": "https://i.ytimg.com/vi/gN8CTjqp8lA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=gN8CTjqp8lA"
+          },
+          {
+            "video_id": "SOV77fL52Dw",
+            "title": "Boardgame licensing rights duration, reversion and sublicensing",
+            "author": "Boardgame Publisher",
+            "thumbnail_url": "https://i.ytimg.com/vi/SOV77fL52Dw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=SOV77fL52Dw"
+          },
+          {
+            "video_id": "Xy0iIdZDIHk",
+            "title": "Rights Royalty Statement Standards: The Details Make the Difference",
+            "author": "Book Industry Study Group",
+            "thumbnail_url": "https://i.ytimg.com/vi/Xy0iIdZDIHk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Xy0iIdZDIHk"
+          },
+          {
+            "video_id": "QHV5OSGnAMg",
+            "title": "Understanding Contracts, Royalties, and Rights - Academic Publishing Series",
+            "author": "Ideas on Fire",
+            "thumbnail_url": "https://i.ytimg.com/vi/QHV5OSGnAMg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=QHV5OSGnAMg"
+          },
+          {
+            "video_id": "k9Sb2smIIjM",
+            "title": "Patent Licensing: Why You’re Losing Royalties (and How to Fix It)",
+            "author": "Bao Tran, Esq. | Patent Attorney",
+            "thumbnail_url": "https://i.ytimg.com/vi/k9Sb2smIIjM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=k9Sb2smIIjM"
+          },
+          {
+            "video_id": "yC0aLTouh44",
+            "title": "What Every Artist Must Know About Music Contracts and Royalties",
+            "author": "Agi Entertainment | The Star Maker",
+            "thumbnail_url": "https://i.ytimg.com/vi/yC0aLTouh44/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=yC0aLTouh44"
+          },
+          {
+            "video_id": "tk2j8egQtvo",
+            "title": "Music Business 102: Mechanical Royalties and Licensing - 18. Recoupment at 50-50",
+            "author": "macProVideoDotCom",
+            "thumbnail_url": "https://i.ytimg.com/vi/tk2j8egQtvo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=tk2j8egQtvo"
+          },
+          {
+            "video_id": "LO-vI8icz70",
+            "title": "How to Get Open Innovation Companies to Respond (Licensing Playbook)",
+            "author": "inventRightTV",
+            "thumbnail_url": "https://i.ytimg.com/vi/LO-vI8icz70/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=LO-vI8icz70"
+          },
+          {
+            "video_id": "zdIFauqdSt8",
+            "title": "Pitching an Idea? Learn the RIGHT Way to Land a Licensing Deal!",
+            "author": "inventRightTV",
+            "thumbnail_url": "https://i.ytimg.com/vi/zdIFauqdSt8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=zdIFauqdSt8"
+          },
+          {
+            "video_id": "_aiJZ1WKmfc",
+            "title": "The Game-Changing Power of Open Innovation",
+            "author": "inventRightTV",
+            "thumbnail_url": "https://i.ytimg.com/vi/_aiJZ1WKmfc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=_aiJZ1WKmfc"
+          },
+          {
+            "video_id": "MvycxV2ib_8",
+            "title": "Finding Companies That Embrace Open Innovation and Inventors",
+            "author": "inventRightTV",
+            "thumbnail_url": "https://i.ytimg.com/vi/MvycxV2ib_8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=MvycxV2ib_8"
+          },
+          {
+            "video_id": "WtxlYb996kI",
+            "title": "Patent Infringement Litigation: Module 5 of 5",
+            "author": "LawShelf",
+            "thumbnail_url": "https://i.ytimg.com/vi/WtxlYb996kI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=WtxlYb996kI"
+          },
+          {
+            "video_id": "nLSthuXQCL4",
+            "title": "What is the difference between design patent infringement and Copyright infringement?",
+            "author": "Derek Fahey, Esq.",
+            "thumbnail_url": "https://i.ytimg.com/vi/nLSthuXQCL4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=nLSthuXQCL4"
+          },
+          {
+            "video_id": "D-Am1gpuzaw",
+            "title": "Patent Infringement Explained: Types, Lawsuits & Legal Remedies (Complete Guide)",
+            "author": "Patent Attorney Worldwide",
+            "thumbnail_url": "https://i.ytimg.com/vi/D-Am1gpuzaw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=D-Am1gpuzaw"
+          },
+          {
+            "video_id": "-uT7bPngmNc",
+            "title": "TOPIC 18 Patent Infringement and Defences - Intellectual Property Law - UoL",
+            "author": "Sinorbit Academy",
+            "thumbnail_url": "https://i.ytimg.com/vi/-uT7bPngmNc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=-uT7bPngmNc"
+          },
+          {
+            "video_id": "Jwz-iMwUtCU",
+            "title": "Designing Around Patents - How to avoid patent infringement",
+            "author": "Patent Insanity",
+            "thumbnail_url": "https://i.ytimg.com/vi/Jwz-iMwUtCU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Jwz-iMwUtCU"
+          },
+          {
+            "video_id": "kRlS4inO95k",
+            "title": "Patent Infringement - Visually and Simply Explained",
+            "author": "CIONCA IP",
+            "thumbnail_url": "https://i.ytimg.com/vi/kRlS4inO95k/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=kRlS4inO95k"
+          },
+          {
+            "video_id": "EPj0ydCGdiU",
+            "title": "Patent Licensing | IP series (25 of 62)",
+            "author": "Michigan Engineering",
+            "thumbnail_url": "https://i.ytimg.com/vi/EPj0ydCGdiU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=EPj0ydCGdiU"
+          },
+          {
+            "video_id": "5RtieTL1OqM",
+            "title": "Understanding Compulsory Licensing",
+            "author": "Alliance for Patient Access",
+            "thumbnail_url": "https://i.ytimg.com/vi/5RtieTL1OqM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=5RtieTL1OqM"
+          },
+          {
+            "video_id": "9hTMXJtONtM",
+            "title": "Mastering Patentability And Infringement Concepts Made EASY",
+            "author": "Patents Demystified",
+            "thumbnail_url": "https://i.ytimg.com/vi/9hTMXJtONtM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=9hTMXJtONtM"
+          },
+          {
+            "video_id": "-267ABEXf8o",
+            "title": "Do You Own the Photos? - Photography Copyright/Licensing Simplified & Explained!",
+            "author": "Matthew Anderson",
+            "thumbnail_url": "https://i.ytimg.com/vi/-267ABEXf8o/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=-267ABEXf8o"
+          },
+          {
+            "video_id": "grui-CD6Uck",
+            "title": "What are the different types of image licenses and how do they work?",
+            "author": "freeCodeCamp Concepts",
+            "thumbnail_url": "https://i.ytimg.com/vi/grui-CD6Uck/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=grui-CD6Uck"
+          },
+          {
+            "video_id": "mGWJAAFhtRk",
+            "title": "Copyright and Fair Use for Images, Videos, and Audio - Basics",
+            "author": "DesignLab UW-Madison",
+            "thumbnail_url": "https://i.ytimg.com/vi/mGWJAAFhtRk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=mGWJAAFhtRk"
+          },
+          {
+            "video_id": "manKMR61ho0",
+            "title": "Photo Licensing 101 - The Basics Explained",
+            "author": "Matthew Anderson",
+            "thumbnail_url": "https://i.ytimg.com/vi/manKMR61ho0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=manKMR61ho0"
+          },
+          {
+            "video_id": "SK5CqQ61CYI",
+            "title": "How to Request Copyright Permission to Reuse an Image | Can You Use Images From Research Papers?",
+            "author": "Barbara “Financial Tidbitter” Aboagye",
+            "thumbnail_url": "https://i.ytimg.com/vi/SK5CqQ61CYI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=SK5CqQ61CYI"
+          },
+          {
+            "video_id": "74bQUodJbWY",
+            "title": "Registration Counts: How to Copyright Your Images",
+            "author": "B&H Photo Video Pro Audio",
+            "thumbnail_url": "https://i.ytimg.com/vi/74bQUodJbWY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=74bQUodJbWY"
+          },
+          {
+            "video_id": "s8iH8wFk-Hc",
+            "title": "The Complete Guide to Podcast Music Rights & Licensing 2026",
+            "author": "MillionPodcasts",
+            "thumbnail_url": "https://i.ytimg.com/vi/s8iH8wFk-Hc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=s8iH8wFk-Hc"
+          },
+          {
+            "video_id": "k3ktLc3BIZc",
+            "title": "Copyright Law and Generative AI Training CPDP 2026",
+            "author": "CPDPConferences",
+            "thumbnail_url": "https://i.ytimg.com/vi/k3ktLc3BIZc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=k3ktLc3BIZc"
+          },
+          {
+            "video_id": "ShCyD9TYhLY",
+            "title": "How to LEGALLY Use a Copyrighted Photo",
+            "author": "Visme",
+            "thumbnail_url": "https://i.ytimg.com/vi/ShCyD9TYhLY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ShCyD9TYhLY"
+          },
+          {
+            "video_id": "A4bw9yuaOVo",
+            "title": "Intellectual Property Strategy – Protect, Lead, and Monetize Innovation",
+            "author": "Go:lofty - The Official Channel",
+            "thumbnail_url": "https://i.ytimg.com/vi/A4bw9yuaOVo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=A4bw9yuaOVo"
+          },
+          {
+            "video_id": "SPgUdIOB0IM",
+            "title": "How IP can strategically advance your business goals",
+            "author": "MIT Bootcamps",
+            "thumbnail_url": "https://i.ytimg.com/vi/SPgUdIOB0IM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=SPgUdIOB0IM"
+          },
+          {
+            "video_id": "E5dH32uMqOY",
+            "title": "Licensing for Royalties (Passive Income) vs. Selling an Idea Yourself",
+            "author": "inventRightTV",
+            "thumbnail_url": "https://i.ytimg.com/vi/E5dH32uMqOY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=E5dH32uMqOY"
+          },
+          {
+            "video_id": "IZLXSII8AZ8",
+            "title": "IP valuation – The art of making money with your Intellectual Property",
+            "author": "EUIPO",
+            "thumbnail_url": "https://i.ytimg.com/vi/IZLXSII8AZ8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=IZLXSII8AZ8"
+          },
+          {
+            "video_id": "Tv_OWgYldPw",
+            "title": "How to Monetize Unused Intellectual Property and Patents",
+            "author": "Patent pc",
+            "thumbnail_url": "https://i.ytimg.com/vi/Tv_OWgYldPw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Tv_OWgYldPw"
+          },
+          {
+            "video_id": "aRUsXPICxpY",
+            "title": "Arm's Licensing & Royalty Business Model Explained",
+            "author": "Kingacademic UK",
+            "thumbnail_url": "https://i.ytimg.com/vi/aRUsXPICxpY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=aRUsXPICxpY"
+          },
+          {
+            "video_id": "o0riJRlxTsY",
+            "title": "AFAR Revenue 06: PFRS 15 Licensing – Right to Access vs. Right to Use; Usage-Based Royalties",
+            "author": "Accountancy Students Hub",
+            "thumbnail_url": "https://i.ytimg.com/vi/o0riJRlxTsY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=o0riJRlxTsY"
+          },
+          {
+            "video_id": "eoUe3NebB3E",
+            "title": "Episode 7 ASC 606 Licensing: Functional vs. Symbolic Intellectual Property",
+            "author": "Jobank CPA",
+            "thumbnail_url": "https://i.ytimg.com/vi/eoUe3NebB3E/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=eoUe3NebB3E"
+          },
+          {
+            "video_id": "uTreJGUMqMs",
+            "title": "Turning ideas into profits - licensing your patents",
+            "author": "Chartered Institute of Patent Attorneys",
+            "thumbnail_url": "https://i.ytimg.com/vi/uTreJGUMqMs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=uTreJGUMqMs"
+          },
+          {
+            "video_id": "TYLVikvshaE",
+            "title": "The Music Industry Is Broken: Why Your Rights Are Worth Less Than You Think | IN(C) TALK",
+            "author": "IN(C) TALK | Everything Has A Business Model",
+            "thumbnail_url": "https://i.ytimg.com/vi/TYLVikvshaE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=TYLVikvshaE"
+          },
+          {
+            "video_id": "pyi_x9MFGjs",
+            "title": "Patent Monetization Economics: What It Costs to Turn Patents into Revenue",
+            "author": "IPWatchdog, Inc.",
+            "thumbnail_url": "https://i.ytimg.com/vi/pyi_x9MFGjs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=pyi_x9MFGjs"
+          },
+          {
+            "video_id": "boXHxU-4qd8",
+            "title": "Patent Monetizing Strategies Every Entrepreneur Should Know",
+            "author": "Innovent Law",
+            "thumbnail_url": "https://i.ytimg.com/vi/boXHxU-4qd8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=boXHxU-4qd8"
+          },
+          {
+            "video_id": "Yg9nVJp45oo",
+            "title": "AI Agent-Powered Autonomous Patent Management & Monetization Webinar",
+            "author": "Alex G. Lee",
+            "thumbnail_url": "https://i.ytimg.com/vi/Yg9nVJp45oo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Yg9nVJp45oo"
+          },
+          {
+            "video_id": "ZbJhX8I0koA",
+            "title": "How to License a Patent",
+            "author": "J.D. Houvener / Bold Patents Law Firm",
+            "thumbnail_url": "https://i.ytimg.com/vi/ZbJhX8I0koA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ZbJhX8I0koA"
+          },
+          {
+            "video_id": "YwEyzgLoOrA",
+            "title": "Patent Monetization",
+            "author": "Schwegman Lundberg & Woessner, P.A.",
+            "thumbnail_url": "https://i.ytimg.com/vi/YwEyzgLoOrA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=YwEyzgLoOrA"
+          },
+          {
+            "video_id": "1UEOTCZ_qYA",
+            "title": "Is Your Patent Portfolio Ready to Make Money? Patent Monetization Reality Check",
+            "author": "IPWatchdog, Inc.",
+            "thumbnail_url": "https://i.ytimg.com/vi/1UEOTCZ_qYA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=1UEOTCZ_qYA"
+          },
+          {
+            "video_id": "3tCB_MAOXkA",
+            "title": "Brand Licensing 101 - Stu Seltzer Interview",
+            "author": "Brands On Brands Podcast",
+            "thumbnail_url": "https://i.ytimg.com/vi/3tCB_MAOXkA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=3tCB_MAOXkA"
+          },
+          {
+            "video_id": "K6BFUviYg0Q",
+            "title": "Licensing Your Trademarks (Intellectual Property) Without A Lawyer! PASSIVE INCOME Deals",
+            "author": "TrademarkLawyer",
+            "thumbnail_url": "https://i.ytimg.com/vi/K6BFUviYg0Q/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=K6BFUviYg0Q"
+          },
+          {
+            "video_id": "71FE9YR_9no",
+            "title": "Licensing A Retail Product by Mark Reyland",
+            "author": "Mark Reyland",
+            "thumbnail_url": "https://i.ytimg.com/vi/71FE9YR_9no/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=71FE9YR_9no"
+          },
+          {
+            "video_id": "ASLTB9jyYII",
+            "title": "PASSIVE INCOME LICENSING MODEL: Beginner’s Guide from a Trademark Lawyer ✅✅✅",
+            "author": "TrademarkLawyer",
+            "thumbnail_url": "https://i.ytimg.com/vi/ASLTB9jyYII/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ASLTB9jyYII"
+          },
+          {
+            "video_id": "hbfKyomYp6U",
+            "title": "The Licensing Lifestyle with Stephen Key",
+            "author": "inventRightTV",
+            "thumbnail_url": "https://i.ytimg.com/vi/hbfKyomYp6U/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=hbfKyomYp6U"
+          },
+          {
+            "video_id": "INuH7fr5H40",
+            "title": "How to License Your Ideas and Make Money (Your Honest Guide to Profitable Inventing)",
+            "author": "inventRightTV",
+            "thumbnail_url": "https://i.ytimg.com/vi/INuH7fr5H40/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=INuH7fr5H40"
+          },
+          {
+            "video_id": "KOR6yXD1nTQ",
+            "title": "How AI Can Help You Get a Licensing Deal",
+            "author": "inventRightTV",
+            "thumbnail_url": "https://i.ytimg.com/vi/KOR6yXD1nTQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=KOR6yXD1nTQ"
           }
         ],
         "research_reference_only": true,
@@ -15934,7 +17180,7 @@
         "asset_id": "verbatim_transcript_quotes",
         "asset": "data/transcripts/*.json -> segments[].text",
         "asset_type": "verbatim_transcript_passage",
-        "source": "Spoken content of 1882 third-party videos (17393 captured tips)",
+        "source": "Spoken content of 2060 third-party videos (19023 captured tips)",
         "research_reference_only": true,
         "commercial_republish_allowed": false,
         "commercial_use_allowed": false,
@@ -15950,38 +17196,38 @@
     ]
   },
   "corpus_metrics": {
-    "video_count": 1882,
-    "channel_count": 1242,
-    "total_words": 2638379,
-    "total_hours": 516.18,
-    "total_pro_tips": 17393,
-    "unique_statutes_and_forms": 904,
-    "unique_tools_and_portals": 5607
+    "video_count": 2060,
+    "channel_count": 1362,
+    "total_words": 2912349,
+    "total_hours": 573.66,
+    "total_pro_tips": 19023,
+    "unique_statutes_and_forms": 976,
+    "unique_tools_and_portals": 6031
   },
   "coverage": {
-    "videos_classified": 1882,
-    "videos_with_multiple_topics": 1880,
-    "tips_classified": 17393,
-    "raw_transcripts_joined": 1882,
+    "videos_classified": 2060,
+    "videos_with_multiple_topics": 2058,
+    "tips_classified": 19023,
+    "raw_transcripts_joined": 2060,
     "topic_video_counts": {
-      "business_model_and_economics": 1417,
-      "probate_and_docket_sourcing": 1343,
-      "unclaimed_property_and_escheat": 576,
-      "genealogy_and_heirship_proof": 1588,
-      "skip_tracing_and_outreach": 1064,
-      "contracts_and_compensation": 1466,
-      "statutory_caps_and_licensing": 1464,
-      "automation_and_small_team_ops": 1489
+      "business_model_and_economics": 1575,
+      "probate_and_docket_sourcing": 1449,
+      "unclaimed_property_and_escheat": 592,
+      "genealogy_and_heirship_proof": 1741,
+      "skip_tracing_and_outreach": 1137,
+      "contracts_and_compensation": 1594,
+      "statutory_caps_and_licensing": 1634,
+      "automation_and_small_team_ops": 1616
     },
     "topic_tip_counts": {
-      "business_model_and_economics": 3162,
-      "probate_and_docket_sourcing": 1896,
+      "business_model_and_economics": 3469,
+      "probate_and_docket_sourcing": 1998,
       "unclaimed_property_and_escheat": 1772,
-      "genealogy_and_heirship_proof": 1895,
-      "skip_tracing_and_outreach": 865,
-      "contracts_and_compensation": 1973,
-      "statutory_caps_and_licensing": 1232,
-      "automation_and_small_team_ops": 4598
+      "genealogy_and_heirship_proof": 2120,
+      "skip_tracing_and_outreach": 884,
+      "contracts_and_compensation": 2118,
+      "statutory_caps_and_licensing": 1795,
+      "automation_and_small_team_ops": 4867
     }
   },
   "schema_version": "1.0",
@@ -16007,22 +17253,22 @@
           "link": "https://www.youtube.com/watch?v=i36Xg_tsVAY&t=241s"
         },
         {
+          "video_title": "Licensing to Earn royalties Vs Manufacturing Your Invention Idea",
+          "author": "Brian Fried - The Inventor Coach",
+          "timestamp": "00:02:28",
+          "link": "https://www.youtube.com/watch?v=UnGdjQb467o&t=148s"
+        },
+        {
+          "video_title": "5 Patent Monetization Strategies Inventors Don't Know About",
+          "author": "Patent pc",
+          "timestamp": "00:02:21",
+          "link": "https://www.youtube.com/watch?v=TYb3i3iIHEQ&t=141s"
+        },
+        {
           "video_title": "State Funds Tutorial: First Steps For Somebody Brand New To Unclaimed Funds Business.",
           "author": "Surplus Funds 101",
           "timestamp": "00:14:47",
           "link": "https://www.youtube.com/watch?v=PGvJEv9Y_Go&t=887s"
-        },
-        {
-          "video_title": "Surplus Funds Cold Calling Script: How to Not Sound Like a Scam",
-          "author": "Alfred Taren",
-          "timestamp": "00:00:56",
-          "link": "https://www.youtube.com/watch?v=CqlbwGPmv64&t=56s"
-        },
-        {
-          "video_title": "State Funds Tutorial Delaware: Registering As A Property Locator For The State Of Delaware.",
-          "author": "Surplus Funds 101",
-          "timestamp": "00:03:31",
-          "link": "https://www.youtube.com/watch?v=TTfaOSBvLDc&t=211s"
         }
       ]
     },
@@ -16047,22 +17293,22 @@
           "link": "https://www.youtube.com/watch?v=i36Xg_tsVAY&t=241s"
         },
         {
+          "video_title": "Licensing to Earn royalties Vs Manufacturing Your Invention Idea",
+          "author": "Brian Fried - The Inventor Coach",
+          "timestamp": "00:02:28",
+          "link": "https://www.youtube.com/watch?v=UnGdjQb467o&t=148s"
+        },
+        {
+          "video_title": "5 Patent Monetization Strategies Inventors Don't Know About",
+          "author": "Patent pc",
+          "timestamp": "00:02:21",
+          "link": "https://www.youtube.com/watch?v=TYb3i3iIHEQ&t=141s"
+        },
+        {
           "video_title": "State Funds Tutorial: First Steps For Somebody Brand New To Unclaimed Funds Business.",
           "author": "Surplus Funds 101",
           "timestamp": "00:14:47",
           "link": "https://www.youtube.com/watch?v=PGvJEv9Y_Go&t=887s"
-        },
-        {
-          "video_title": "Surplus Funds Cold Calling Script: How to Not Sound Like a Scam",
-          "author": "Alfred Taren",
-          "timestamp": "00:00:56",
-          "link": "https://www.youtube.com/watch?v=CqlbwGPmv64&t=56s"
-        },
-        {
-          "video_title": "State Funds Tutorial Delaware: Registering As A Property Locator For The State Of Delaware.",
-          "author": "Surplus Funds 101",
-          "timestamp": "00:03:31",
-          "link": "https://www.youtube.com/watch?v=TTfaOSBvLDc&t=211s"
         }
       ]
     },
@@ -16087,22 +17333,22 @@
           "link": "https://www.youtube.com/watch?v=i36Xg_tsVAY&t=241s"
         },
         {
+          "video_title": "Licensing to Earn royalties Vs Manufacturing Your Invention Idea",
+          "author": "Brian Fried - The Inventor Coach",
+          "timestamp": "00:02:28",
+          "link": "https://www.youtube.com/watch?v=UnGdjQb467o&t=148s"
+        },
+        {
+          "video_title": "5 Patent Monetization Strategies Inventors Don't Know About",
+          "author": "Patent pc",
+          "timestamp": "00:02:21",
+          "link": "https://www.youtube.com/watch?v=TYb3i3iIHEQ&t=141s"
+        },
+        {
           "video_title": "State Funds Tutorial: First Steps For Somebody Brand New To Unclaimed Funds Business.",
           "author": "Surplus Funds 101",
           "timestamp": "00:14:47",
           "link": "https://www.youtube.com/watch?v=PGvJEv9Y_Go&t=887s"
-        },
-        {
-          "video_title": "Surplus Funds Cold Calling Script: How to Not Sound Like a Scam",
-          "author": "Alfred Taren",
-          "timestamp": "00:00:56",
-          "link": "https://www.youtube.com/watch?v=CqlbwGPmv64&t=56s"
-        },
-        {
-          "video_title": "State Funds Tutorial Delaware: Registering As A Property Locator For The State Of Delaware.",
-          "author": "Surplus Funds 101",
-          "timestamp": "00:03:31",
-          "link": "https://www.youtube.com/watch?v=TTfaOSBvLDc&t=211s"
         }
       ]
     },
@@ -16167,22 +17413,22 @@
           "link": "https://www.youtube.com/watch?v=i36Xg_tsVAY&t=241s"
         },
         {
+          "video_title": "Licensing to Earn royalties Vs Manufacturing Your Invention Idea",
+          "author": "Brian Fried - The Inventor Coach",
+          "timestamp": "00:02:28",
+          "link": "https://www.youtube.com/watch?v=UnGdjQb467o&t=148s"
+        },
+        {
+          "video_title": "5 Patent Monetization Strategies Inventors Don't Know About",
+          "author": "Patent pc",
+          "timestamp": "00:02:21",
+          "link": "https://www.youtube.com/watch?v=TYb3i3iIHEQ&t=141s"
+        },
+        {
           "video_title": "State Funds Tutorial: First Steps For Somebody Brand New To Unclaimed Funds Business.",
           "author": "Surplus Funds 101",
           "timestamp": "00:14:47",
           "link": "https://www.youtube.com/watch?v=PGvJEv9Y_Go&t=887s"
-        },
-        {
-          "video_title": "Surplus Funds Cold Calling Script: How to Not Sound Like a Scam",
-          "author": "Alfred Taren",
-          "timestamp": "00:00:56",
-          "link": "https://www.youtube.com/watch?v=CqlbwGPmv64&t=56s"
-        },
-        {
-          "video_title": "State Funds Tutorial Delaware: Registering As A Property Locator For The State Of Delaware.",
-          "author": "Surplus Funds 101",
-          "timestamp": "00:03:31",
-          "link": "https://www.youtube.com/watch?v=TTfaOSBvLDc&t=211s"
         }
       ]
     },

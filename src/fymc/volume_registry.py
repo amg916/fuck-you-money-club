@@ -592,7 +592,7 @@ ALL_VOLUME_SPECS: dict[int, dict] = {
     },
 }
 
-ACTIVE_PUBLISHED_NUMBERS: tuple[int, ...] = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12)
+ACTIVE_PUBLISHED_NUMBERS: tuple[int, ...] = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13)
 
 
 def get_published_volume_ids() -> tuple[str, ...]:

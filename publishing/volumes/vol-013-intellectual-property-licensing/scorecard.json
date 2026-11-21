@@ -1,0 +1,270 @@
+{
+  "candidate_number": 19,
+  "slug": "intellectual-property-licensing",
+  "title": "Intellectual Property Licensing",
+  "category": "Licensing services",
+  "production_stage": "approved_master",
+  "scores": {
+    "revenue_potential": 22,
+    "profit_margin_potential": 23,
+    "team_efficiency": 18,
+    "startup_accessibility": 6,
+    "automation_potential": 10
+  },
+  "dimension_max": {
+    "revenue_potential": 25,
+    "profit_margin_potential": 25,
+    "team_efficiency": 20,
+    "startup_accessibility": 15,
+    "automation_potential": 15
+  },
+  "total_score": 79,
+  "tier_label": "High-Leverage Operator Play",
+  "evidence_confidence": "High",
+  "uncertainty_band": "±3 pts",
+  "uncertainty_bounds": {
+    "low": 76,
+    "high": 82
+  },
+  "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
+  "score_rationale": {
+    "revenue_potential": "Revenue Potential: 22/25. Reusable rights can earn royalties, but defensible IP and licensee adoption are costly to establish.",
+    "profit_margin_potential": "Profit Margin Potential: 23/25. Reusable rights can earn royalties, but defensible IP and licensee adoption are costly to establish.",
+    "team_efficiency": "Team Efficiency: 18/20. Reusable rights can earn royalties, but defensible IP and licensee adoption are costly to establish.",
+    "startup_accessibility": "Startup Accessibility: 6/15. Reusable rights can earn royalties, but defensible IP and licensee adoption are costly to establish.",
+    "automation_potential": "Automation Potential: 10/15. Reusable rights can earn royalties, but defensible IP and licensee adoption are costly to establish."
+  },
+  "economics": {
+    "gross_revenue_range": "$50,000–$800,000 USD annually",
+    "net_profit_margin_range": "25–60%",
+    "owner_net_profit_potential": "$12,500–$480,000 USD annually, before personal taxes and reinvestment",
+    "startup_capital_range": "$25,000–$250,000 USD",
+    "monthly_opex_range": "$2,000–$15,000 USD",
+    "time_to_first_deal": "6–24 months",
+    "typical_team_size": {
+      "full_time_including_owner": 1,
+      "contractors": 3,
+      "total_people": 4
+    },
+    "includes_contractors_note": "Headcount includes the working owner and recurring contractors as people, not FTE equivalents. Contractors may be part-time. Scaled scenario adds one employee and one contractor; external vendor workforces are not counted as internal team members.",
+    "revenue_basis": "License fees and royalties; excludes licensees' underlying product sales",
+    "cost_basis": "Annual net margins include operating expenses and non-owner labor; monthly opex is fixed/semi-fixed overhead only. No owner salary is deducted. Capital needs may grow beyond startup range.",
+    "estimate_status": "Illustrative assumptions; not verified earnings data"
+  },
+  "scenarios": {
+    "conservative": {
+      "annual_gross_revenue_usd": 50000,
+      "net_profit_margin_pct": 25,
+      "annual_owner_net_profit_usd": 12500,
+      "full_time_including_owner": 1,
+      "contractors": 3,
+      "total_people": 4,
+      "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+    },
+    "base_case": {
+      "annual_gross_revenue_usd": 425000.0,
+      "net_profit_margin_pct": 42.5,
+      "annual_owner_net_profit_usd": 180625,
+      "full_time_including_owner": 1,
+      "contractors": 3,
+      "total_people": 4,
+      "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+    },
+    "scaled_small_team": {
+      "annual_gross_revenue_usd": 800000,
+      "net_profit_margin_pct": 60,
+      "annual_owner_net_profit_usd": 480000,
+      "full_time_including_owner": 2,
+      "contractors": 4,
+      "total_people": 6,
+      "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+    }
+  },
+  "automation_levers": [
+    "Royalty reporting",
+    "License renewal alerts",
+    "Contract obligation tracking"
+  ],
+  "key_risks": [
+    "Unproven demand",
+    "Infringement disputes",
+    "Licensee underreporting"
+  ],
+  "regulatory_notes": [
+    "Verify chain of title, permitted uses, territorial rights and competition-law constraints."
+  ],
+  "track_ids": [
+    "track_1",
+    "track_2"
+  ],
+  "track_labels": [
+    "Asymmetric & Data-Arbitrage Plays",
+    "Grey-Zone Growth & Traffic Arbitrage"
+  ],
+  "plays": [
+    {
+      "id": "patent_trademark_office_action_arbitrage",
+      "track_id": "track_1",
+      "name": "USPTO 'Office Action' Rejection & Trademark Abandonment Trigger Mail",
+      "mechanism": "Poll USPTO TSDR and Trademark Daily XML feeds for pro-se (unrepresented) trademark applicants who just received a Non-Final Office Action refusal, dispatching transparent private-attorney referral mailers while avoiding illegal government-lookalike fee scams.",
+      "inputs": [
+        "USPTO Trademark Daily XML & TSDR Office-Action status feeds",
+        "Filter isolating pro-se (no attorney of record) Section 2(d)/2(e) refusals",
+        "Partner IP law firm intake bridge & trademark-monitoring SaaS offers"
+      ],
+      "workflow": [
+        "Identify daily USPTO trademark applications issued a Non-Final Office Action where the Attorney of Record field is blank",
+        "Classify the refusal reason (specimen deficiency, disclaimer requirement, or likelihood of confusion) and deadline date",
+        "Send transparent private commercial notices offering a flat-fee licensed trademark attorney consultation or automated specimen/monitoring software"
+      ],
+      "metrics": [
+        "Office-action to applicant notification latency (hours)",
+        "Pro-se applicant consultation booking rate (%)",
+        "Legal marketing / software referral revenue per 1,000 notices"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "USPTO Scam Alert blacklisting, 39 U.S.C. § 3001 enforcement, or UPL (Unauthorized Practice of Law)",
+          "trigger": "Mimicking official USPTO patent/trademark invoices, inventing fake registry fees, or giving legal advice without a licensed attorney",
+          "impact": "Federal mail-stop order, USPTO public scam-list naming, and merchant account freeze",
+          "detection_metric": "100% private commercial disclosure compliance and licensed IP counsel review on all legal service offers",
+          "fallback": "Operate strictly as a transparent legal-marketing directory or software platform connecting applicants with licensed USPTO trademark attorneys"
+        }
+      ]
+    },
+    {
+      "id": "amazon_asin_hijack_brand_protection_trigger",
+      "track_id": "track_1",
+      "name": "Unauthorized 3P Seller / MAP-Violation Scraping & Enforcement Funnels",
+      "mechanism": "Continuously monitor Amazon, Walmart, and eBay Buy Boxes across mid-market consumer brands to detect unauthorized third-party (3P) resellers undercutting Minimum Advertised Price (MAP), triggering automated revenue-loss dossiers that convert brands into $2,500–$7,500/mo enforcement retainers.",
+      "inputs": [
+        "Hourly Amazon Keepa/SP-API Buy-Box & 3P seller-offer monitor",
+        "MAP price-violation & unauthorized reseller storefront cross-match graph",
+        "Automated Revenue-Loss Audit PDF generator + brand-protection agency desk"
+      ],
+      "workflow": [
+        "Scan 10,000+ mid-market brand ASINs hourly to identify brands losing >20% of Buy Box share to unauthorized discount resellers",
+        "Calculate exact monthly first-party revenue leakage and map the offending 3P seller corporate identities via state storefront filings",
+        "Send the brand's VP of E-Commerce a live ASIN leakage report offering serialized test-buys, authorized-distribution restructuring, and MAP enforcement retainers"
+      ],
+      "metrics": [
+        "ASIN Buy-Box recovery rate within 60 days (%)",
+        "Leakage-report to booked-audit conversion rate (%)",
+        "Monthly recurring retainer per enrolled brand ($2,500–$7,500/mo)"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Amazon false-counterfeit complaint penalty or antitrust resale-price-maintenance (RPM) liability",
+          "trigger": "Filing fraudulent IP/counterfeit takedowns against genuine first-sale-doctrine goods or coercing vertical price fixing instead of unilateral Colgate MAP policies",
+          "impact": "Amazon Brand Registry revocation or civil tortious-interference counterclaims by 3P sellers",
+          "detection_metric": "Zero false counterfeit filings and 100% unilateral Colgate-policy / material-difference legal review",
+          "fallback": "Enforce strictly via lawful unilateral MAP policies, warranty/packaging material-difference rules, and supply-chain lot serialization rather than false IP strikes"
+        }
+      ]
+    },
+    {
+      "id": "customs_first_sale_rule_valuation_arbitrage",
+      "track_id": "track_1",
+      "name": "CBP \"First-Sale Rule\" (19 CFR § 152.103) Multi-Tier Customs Valuation Arbitrage",
+      "mechanism": "Restructuring multi-tiered import supply chains under the US Court of Appeals *Nissho Iwai* 'First Sale Rule' so US importers legally declare the lower factory-to-middleman transaction price ($8) for US Customs duty and tariff calculation rather than the middleman-to-US-importer invoice price ($18)—slashing annual tariff cash outflows by 35–55% across $10M–$250M+ in imported merchandise.",
+      "inputs": [
+        "US Customs bill-of-lading and HTS duty-spend intelligence identifying mid-market importers paying $1M–$20M/yr in duties via trading companies",
+        "Three-party contract, factory cost-sheet, and arm's-length transfer-pricing documentation templates satisfying CBP *Nissho Iwai* criteria",
+        "Licensed customs brokerage and trade-attorney opinion pipeline"
+      ],
+      "workflow": [
+        "Identify US importers purchasing finished goods through Hong Kong, Singapore, Taiwanese, or European trading intermediaries or sourcing agents",
+        "Audit the two-tier transaction chain to confirm (1) bona fide sale from factory to middleman, (2) clear designation for US export at factory order, and (3) arm's-length pricing",
+        "Implement compliant multi-tier invoicing and ERP documentary trails so the customs broker declares the factory's First-Sale price on CBP Form 7501 instead of the middleman's marked-up invoice",
+        "Collect a 25–35% contingency fee on all prospective and retroactive (Post-Summary Correction / Protest) duty reductions realized by the importer"
+      ],
+      "metrics": [
+        "Percentage reduction in declared customs dutiable value (typically 30–50%)",
+        "Annualized cash tariff savings ($300k–$5M+/yr per importer) and retroactive PSC refund recovery ($)",
+        "CBP CF-28/CF-29 Request for Information audit survival rate (100% documentary compliance)"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "CBP disallowance of First-Sale valuation during a CF-28 Request for Information audit",
+          "trigger": "Related-party factory/middleman entities failing to prove arm's-length profit margins or refusing to disclose factory commercial invoices",
+          "impact": "Re-assessment of duties on the second-sale price plus interest",
+          "detection_metric": "Annual pre-audit verification of factory commercial invoices, bank wire proofs, and OECD transfer-pricing benchmark studies",
+          "fallback": "Store encrypted factory invoices in a confidential customs-broker escrow vault (so the US buyer never sees the middleman's margin, while CBP auditors have full access) and back every program with a formal customs-counsel opinion letter"
+        }
+      ]
+    },
+    {
+      "id": "copyright_phash_reverse_image_statutory_settlement",
+      "track_id": "track_2",
+      "name": "Perceptual-Hash (pHash) Reverse-Image & Audio-Stem Statutory Settlement Engines",
+      "mechanism": "Use perceptual matching to triage suspected unauthorized use of a represented rights holder's images or audio, with human and counsel review of ownership, licenses, exceptions, and statutory-damages eligibility.",
+      "inputs": [
+        "Authorized reference media and chain-of-title records",
+        "Permitted reverse-image and audio-fingerprint results",
+        "Registration dates, licenses, and preserved use evidence"
+      ],
+      "workflow": [
+        "1. Index authorized reference works and record ownership and registration provenance",
+        "2. Collect permitted match evidence and manually eliminate false positives and licensed uses",
+        "3. Have counsel assess exceptions, jurisdiction, standing, and available remedies before any demand",
+        "4. Resolve supported matters through proportionate licensing or settlement and record releases"
+      ],
+      "metrics": [
+        "Human-confirmed unauthorized-match precision",
+        "Net rights-holder recovery per reviewed matter",
+        "False-positive and withdrawn-demand rate"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "False match or unsupported statutory-damages claim",
+          "trigger": "Fingerprint collision, valid license, fair use, or ineligible registration timing",
+          "impact": "Wrongful demand, fee exposure, and loss of platform access",
+          "detection_metric": "Counsel rejection and counter-notice success rates",
+          "fallback": "Withdraw unsupported demands and retain matching only for authorized monitoring and voluntary licensing"
+        }
+      ]
+    }
+  ],
+  "platform_risks": [
+    {
+      "failure_mode": "USPTO Scam Alert blacklisting, 39 U.S.C. § 3001 enforcement, or UPL (Unauthorized Practice of Law)",
+      "trigger": "Mimicking official USPTO patent/trademark invoices, inventing fake registry fees, or giving legal advice without a licensed attorney",
+      "impact": "Federal mail-stop order, USPTO public scam-list naming, and merchant account freeze",
+      "detection_metric": "100% private commercial disclosure compliance and licensed IP counsel review on all legal service offers",
+      "fallback": "Operate strictly as a transparent legal-marketing directory or software platform connecting applicants with licensed USPTO trademark attorneys",
+      "play_id": "patent_trademark_office_action_arbitrage",
+      "play_name": "USPTO 'Office Action' Rejection & Trademark Abandonment Trigger Mail",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Amazon false-counterfeit complaint penalty or antitrust resale-price-maintenance (RPM) liability",
+      "trigger": "Filing fraudulent IP/counterfeit takedowns against genuine first-sale-doctrine goods or coercing vertical price fixing instead of unilateral Colgate MAP policies",
+      "impact": "Amazon Brand Registry revocation or civil tortious-interference counterclaims by 3P sellers",
+      "detection_metric": "Zero false counterfeit filings and 100% unilateral Colgate-policy / material-difference legal review",
+      "fallback": "Enforce strictly via lawful unilateral MAP policies, warranty/packaging material-difference rules, and supply-chain lot serialization rather than false IP strikes",
+      "play_id": "amazon_asin_hijack_brand_protection_trigger",
+      "play_name": "Unauthorized 3P Seller / MAP-Violation Scraping & Enforcement Funnels",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "CBP disallowance of First-Sale valuation during a CF-28 Request for Information audit",
+      "trigger": "Related-party factory/middleman entities failing to prove arm's-length profit margins or refusing to disclose factory commercial invoices",
+      "impact": "Re-assessment of duties on the second-sale price plus interest",
+      "detection_metric": "Annual pre-audit verification of factory commercial invoices, bank wire proofs, and OECD transfer-pricing benchmark studies",
+      "fallback": "Store encrypted factory invoices in a confidential customs-broker escrow vault (so the US buyer never sees the middleman's margin, while CBP auditors have full access) and back every program with a formal customs-counsel opinion letter",
+      "play_id": "customs_first_sale_rule_valuation_arbitrage",
+      "play_name": "CBP \"First-Sale Rule\" (19 CFR § 152.103) Multi-Tier Customs Valuation Arbitrage",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "False match or unsupported statutory-damages claim",
+      "trigger": "Fingerprint collision, valid license, fair use, or ineligible registration timing",
+      "impact": "Wrongful demand, fee exposure, and loss of platform access",
+      "detection_metric": "Counsel rejection and counter-notice success rates",
+      "fallback": "Withdraw unsupported demands and retain matching only for authorized monitoring and voluntary licensing",
+      "play_id": "copyright_phash_reverse_image_statutory_settlement",
+      "play_name": "Perceptual-Hash (pHash) Reverse-Image & Audio-Stem Statutory Settlement Engines",
+      "track_id": "track_2"
+    }
+  ]
+}

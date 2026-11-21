@@ -1,0 +1,81 @@
+{
+  "volume_id": "vol-013-intellectual-property-licensing",
+  "volume_slug": "vol-013-intellectual-property-licensing",
+  "volume_number": 13,
+  "site_ui": {
+    "cover": [
+      "INTELLECTUAL",
+      "PROPERTY",
+      "LICENSING"
+    ],
+    "deck": [
+      "VERIFY CHAIN OF TITLE. DEFINE FIELD.",
+      "AUDIT NET ROYALTIES."
+    ],
+    "lead": "Commercializing Dormant Patents, Trademarks, Industrial Designs & Proprietary Datasets via Minimum-Guarantee Royalty Contracts",
+    "summary": "Structure field-of-use licensing agreements, quarterly royalty reporting, and audit rights without taking manufacturing inventory risk.",
+    "chapters": [
+      "Business model & revenue boundaries",
+      "Decision-makers & payment rails",
+      "Unit economics & margin waterfall",
+      "Startup capital & lean stack",
+      "Beginner traps & failure modes",
+      "Sourcing & first deals",
+      "End-to-end operating blueprint",
+      "Public records, APIs & tooling",
+      "Contracts, statutes & scripts",
+      "Automation & distribution loops",
+      "Small-team pod & exit valuation",
+      "First 30-day launch sprint"
+    ],
+    "flow": [
+      [
+        "SOURCE",
+        "Mine high-intent deal triggers"
+      ],
+      [
+        "UNDERWRITE",
+        "Screen margin, float & rules"
+      ],
+      [
+        "ENGAGE",
+        "Execute mandate or pre-sell"
+      ],
+      [
+        "DELIVER",
+        "Run standardized SOP & ledger"
+      ],
+      [
+        "VERIFY",
+        "Audit quality, scrubs & statutes"
+      ],
+      [
+        "COMPOUND",
+        "Reconcile cash & scale pod"
+      ]
+    ]
+  },
+  "parent_brand": "THE FUCK YOU MONEY CLUB",
+  "book_series": "THE BIG MONEY PLAYBOOKS",
+  "tagline": "Big Money. Small Teams. No Bullshit.",
+  "title": "INTELLECTUAL PROPERTY LICENSING",
+  "subtitle": "The Complete Playbook for $50,000–$800,000 USD in Annual IP Licensing Revenue: Launch with 1 FT + 3 C (4 People), Scale to 6 People",
+  "chapter_count": 12,
+  "total_word_count": 75305,
+  "expert_youtube_link_count": 180,
+  "min_expert_youtube_links_required": 150,
+  "target_expert_youtube_links": "150-200+",
+  "min_expert_youtube_links_per_chapter": 12,
+  "rating_system": "Money-to-Manpower Score",
+  "composite_score": 79,
+  "formats": [
+    "8.5×11 Executive Digital PDF",
+    "6×9 Print Edition",
+    "Reflowable EPUB 3.0"
+  ],
+  "isbn": null,
+  "publication_status": "approved_master",
+  "public_deploy_approved": false,
+  "paid_sales_approved": false,
+  "updated_at": "2026-11-21T21:38:41Z"
+}

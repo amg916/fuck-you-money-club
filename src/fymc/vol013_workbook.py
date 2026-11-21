@@ -1,0 +1,1735 @@
+from __future__ import annotations
+
+
+def build_volume_013_workbook() -> dict:
+    def field(name: str, input_type: str, prompt: str, example: str) -> dict:
+        return {"name": name, "type": input_type, "prompt": prompt, "example": example}
+
+    return {
+        "workbook_id": "wb-013-intellectual-property-licensing",
+        "volume_id": "vol-013-intellectual-property-licensing",
+        "title": "Intellectual Property Licensing — Operator Companion Workbook",
+        "subtitle": (
+            "6 Printable Operator Worksheets for Patent, Brand, Catalog, and Dataset "
+            "Licensing: Rights Underwriting, Minimum Guarantees, Royalty Controls, "
+            "Contract Execution, Automation, and Transfer-Ready Operations"
+        ),
+        "worksheets": [
+            {
+                "worksheet_id": "ws-01",
+                "number": 1,
+                "title": "Opportunity Underwriting and Licensee Qualification",
+                "purpose": (
+                    "Select a licensable asset and solvent counterparty before spending "
+                    "on prosecution, packaging, or negotiations. Establish ownership, "
+                    "commercial demand, permitted uses, territorial boundaries, and "
+                    "reporting feasibility. Convert speculative intellectual property "
+                    "into an evidence-backed deal thesis with explicit rejection criteria."
+                ),
+                "chapter_ref": "Q1, Q2, Q6",
+                "instructions": [
+                    (
+                        "Create one underwriting record per asset and proposed licensee. "
+                        "Separate patents, brands, copyrighted catalogs, and datasets because "
+                        "their ownership evidence and permissible uses differ. Attach dated "
+                        "source documents rather than relying on a seller's presentation."
+                    ),
+                    (
+                        "Interview product, procurement, and accounting personnel at the "
+                        "prospective licensee. Confirm the product roadmap, budget owner, "
+                        "launch timing, and royalty-reporting system. Treat enthusiastic "
+                        "technical feedback without purchasing authority as discovery evidence, "
+                        "not committed demand."
+                    ),
+                    (
+                        "Map the proposed grant across territory, field of use, channels, "
+                        "term, exclusivity, and sublicensing. Test each dimension against "
+                        "existing grants and retained rights. Identify overlaps before "
+                        "discussing a price or promising category exclusivity."
+                    ),
+                    (
+                        "Calculate operator revenue separately from licensee product sales. "
+                        "Use the canonical annual scenarios as portfolio reference points, "
+                        "then document the commercial assumptions supporting this particular "
+                        "deal. Reject projections that quietly count the licensee's "
+                        "manufacturing turnover as licensing revenue."
+                    ),
+                    (
+                        "Assign an owner and resolution date to every material uncertainty. "
+                        "Rank evidence by source quality and commercial consequence. "
+                        "Advance only when title, demand, solvency, and reporting capability "
+                        "are documented sufficiently to justify the next underwriting expenditure."
+                    ),
+                ],
+                "fields": [
+                    field(
+                        "Asset identity and monetizable advantage",
+                        "textarea",
+                        "Identify the specific asset, protected subject matter, customer problem, "
+                        "and measurable advantage. Explain why a licensee would pay instead of "
+                        "building, sourcing, or using a substitute with fewer restrictions.",
+                        "A catalog contains 240 commissioned industrial illustrations with signed "
+                        "assignments and editable source files. Four equipment publishers need "
+                        "consistent maintenance diagrams. The proposed license replaces an "
+                        "estimated 600 annual illustration hours per publisher; the underwriting "
+                        "record links that estimate to two procurement interviews and three "
+                        "recent production invoices.",
+                    ),
+                    field(
+                        "Chain of title and encumbrance evidence",
+                        "textarea",
+                        "List creators, inventors, employers, assignors, registration references, "
+                        "and prior grants. Identify liens, retained rights, termination interests, "
+                        "or missing signatures that could prevent the exact license proposed "
+                        "to this counterparty.",
+                        "The asset register links 240 illustration files to eight creator "
+                        "agreements and eight signed assignments. Two agreements reserve "
+                        "portfolio-display rights but no commercial sublicensing rights. The "
+                        "operator obtains a seller lien search and releases before closing; "
+                        "12 illustrations with incomplete assignment schedules remain excluded "
+                        "from the initial licensed catalog.",
+                    ),
+                    field(
+                        "Buyer problem and verified demand",
+                        "textarea",
+                        "Record who experiences the problem, who controls purchasing, and "
+                        "what evidence supports willingness to pay. Distinguish interviews, "
+                        "sample evaluations, budget reservations, and executed purchase "
+                        "commitments rather than blending them into one pipeline total.",
+                        "Discovery covers 12 publishers: seven confirm a diagram backlog, "
+                        "four accept a sample package, and two budget owners discuss "
+                        "annual licensing. One procurement manager confirms a $110,000 "
+                        "spending envelope by email. No interview enters booked revenue; "
+                        "the next milestone is a signed paid evaluation with defined "
+                        "conversion terms.",
+                    ),
+                    field(
+                        "Counterparty solvency and payment security",
+                        "textarea",
+                        "Document the contracting entity, payment history, available credit "
+                        "evidence, and exposure before collection. Specify when deposits, "
+                        "parent support, shorter reporting intervals, or restricted delivery "
+                        "are necessary for a newly formed or thinly capitalized licensee.",
+                        "The proposed licensee is a recently formed subsidiary with $85,000 "
+                        "cash and no trading history. The operator requires a $15,000 "
+                        "quarterly minimum payment before access, a parent guarantee reviewed "
+                        "for enforceability, and monthly sales reports. Source-file delivery "
+                        "waits until the first payment clears and the authorized signatory "
+                        "is verified.",
+                    ),
+                    field(
+                        "Territory, field, channel, and exclusivity",
+                        "textarea",
+                        "Define the grant using boundaries that operations can enforce. "
+                        "State included products, excluded applications, geographic coverage, "
+                        "sales channels, affiliates, sublicense permissions, and performance "
+                        "conditions for retaining any negotiated exclusivity.",
+                        "The grant covers maintenance manuals for commercial refrigeration "
+                        "equipment sold in the United States and Canada for 24 months. "
+                        "Consumer appliances, merchandise, and training-model use are excluded. "
+                        "Exclusivity applies only to the named refrigeration field and "
+                        "converts to nonexclusive status if the annual $60,000 minimum "
+                        "is not paid after the contractual cure period.",
+                    ),
+                    field(
+                        "Competitive substitutes and infringement exposure",
+                        "textarea",
+                        "Identify competing assets, public-domain alternatives, technical "
+                        "workarounds, and plausible infringement allegations. Separate ownership "
+                        "of the offered asset from the licensee's freedom to commercialize "
+                        "a finished product containing other protected components.",
+                        "A sensor patent license covers one calibration method, not the "
+                        "entire device. The licensee identifies three competing calibration "
+                        "methods and commissions a separate product clearance review. The "
+                        "operator supplies claim charts and prosecution records; the proposal "
+                        "does not represent that the license automatically clears enclosure, "
+                        "wireless, or firmware rights.",
+                    ),
+                    field(
+                        "Royalty data availability and audit access",
+                        "textarea",
+                        "Verify that the licensee can produce transaction-level records "
+                        "matching the proposed royalty definition. Specify identifiers, "
+                        "deduction evidence, affiliate transfers, returns, currency treatment, "
+                        "retention periods, and an achievable contractual inspection mechanism.",
+                        "The licensee exports invoice ID, SKU, territory, gross sales, "
+                        "returns, freight, tax, and currency from NetSuite. The draft "
+                        "permits documented returns and separately stated sales tax as "
+                        "deductions, but excludes general overhead. A seven-year record "
+                        "retention clause and annual independent inspection right support "
+                        "reconciliation back to the sales ledger.",
+                    ),
+                    field(
+                        "Portfolio revenue thesis and scenario anchor",
+                        "textarea",
+                        "Select the canonical scenario used for planning and explain "
+                        "the revenue composition. Show underlying licensee sales only as "
+                        "a royalty driver, with license fees and earned royalties "
+                        "reported separately as operator revenue.",
+                        "The Base portfolio targets $425,000 annual operator revenue: "
+                        "$125,000 nonrecoupable license fees plus $300,000 earned royalties. "
+                        "At a 5% royalty rate, those royalties require $6,000,000 "
+                        "eligible licensee sales. Four equal accounts contribute $106,250 "
+                        "operator revenue each; the $6,000,000 sales denominator never "
+                        "appears as operator gross revenue.",
+                    ),
+                    field(
+                        "Underwriting budget and decision timetable",
+                        "textarea",
+                        "Set a staged expenditure limit for title review, demand testing, "
+                        "valuation, and negotiation. Connect spending releases to evidence "
+                        "received, and distinguish the 30-day preparation sprint from "
+                        "the likely time needed to close a first license.",
+                        "The operator starts with $75,000 capital, within the $25,000 "
+                        "to $250,000 planning range. Initial underwriting receives $9,000: "
+                        "$4,000 title work, $2,500 customer testing, and $2,500 contract "
+                        "design. A further $6,000 requires two qualified licensees. "
+                        "The first-deal planning window remains 6 to 24 months, "
+                        "not the first sprint.",
+                    ),
+                    field(
+                        "Advance, revise, or reject decision",
+                        "textarea",
+                        "Record the decision, decisive evidence, unresolved issues, and "
+                        "next expenditure limit. Make rejection criteria observable so "
+                        "commercial enthusiasm cannot override defective title, absent "
+                        "purchasing authority, or an unauditable royalty calculation.",
+                        "Decision: revise before negotiation. Demand and budget are "
+                        "credible, but 12 catalog assets lack complete assignment "
+                        "schedules and the buyer cannot yet report affiliate sales. "
+                        "The operator excludes those assets, requests an affiliate "
+                        "export within ten business days, and caps additional diligence "
+                        "at $2,000 until both issues are resolved.",
+                    ),
+                ],
+                "completion_gate": (
+                    "The deal owner signs a dated decision supported by a rights map, "
+                    "buyer evidence, solvency review, auditable royalty definition, and "
+                    "bounded diligence budget; unresolved rights are excluded explicitly."
+                ),
+            },
+            {
+                "worksheet_id": "ws-02",
+                "number": 2,
+                "title": "Unit Economics, Defect Reserve, and Working-Capital Float",
+                "purpose": (
+                    "Reconcile license-level economics to the three canonical annual "
+                    "scenarios without counting customer product sales as operator "
+                    "revenue. Model minimum guarantees, recoupment, collection timing, "
+                    "defect exposure, and liquidity separately so strong contracted "
+                    "royalties do not conceal a near-term cash shortage."
+                ),
+                "chapter_ref": "Q3, Q4",
+                "instructions": [
+                    (
+                        "Copy the canonical revenue, margin, owner profit, and staffing "
+                        "figures into the scenario record before building supporting "
+                        "assumptions. Derive total annual costs by subtraction. Keep "
+                        "monthly fixed overhead distinct from the broader annual cost envelope."
+                    ),
+                    (
+                        "Write the royalty formula using the agreement's eligible "
+                        "sales definition, permitted deductions, currency rules, and "
+                        "reporting periods. Model recoupable minimums as credits against "
+                        "the same earned royalties, never as additional revenue "
+                        "automatically stacked above them."
+                    ),
+                    (
+                        "Prepare separate earned-revenue, invoicing, and cash schedules. "
+                        "A payment date alone does not establish revenue recognition. "
+                        "Document the accounting treatment of each license fee, "
+                        "access obligation, support service, and annual minimum "
+                        "with the accounting owner."
+                    ),
+                    (
+                        "Build a managerial reserve for refunds, title defects, "
+                        "collection disputes, and reporting corrections using explicit "
+                        "probability and exposure assumptions. Identify whether each "
+                        "amount is already inside the scenario cost envelope "
+                        "to prevent duplicate deductions."
+                    ),
+                    (
+                        "Stress collection delays and lower sales independently. "
+                        "Show opening cash, restricted amounts, overdue receivables, "
+                        "and the minimum operating buffer by month. Escalate "
+                        "when unrestricted cash cannot cover the next committed "
+                        "payments without assuming an unsigned deal closes."
+                    ),
+                ],
+                "fields": [
+                    field(
+                        "Canonical annual scenario reconciliation",
+                        "textarea",
+                        "Enter all three canonical annual cases with revenue, net "
+                        "margin, owner net profit, total costs, and staffing. Use "
+                        "exact amounts so every supporting worksheet can reconcile "
+                        "to the same portfolio baseline.",
+                        "Conservative: $50,000 revenue, 25% margin, $12,500 owner net, "
+                        "$37,500 costs, 1 FT plus 3 C. Base: $425,000 revenue, "
+                        "42.5% margin, $180,625 owner net, $244,375 costs, same "
+                        "staffing. Scaled: $800,000 revenue, 60% margin, $480,000 "
+                        "owner net, $320,000 costs, 2 FT plus 4 C.",
+                    ),
+                    field(
+                        "License fees and royalty revenue bridge",
+                        "textarea",
+                        "Specify a nonoverlapping revenue composition for each scenario. "
+                        "State the royalty rate and eligible sales denominator, and "
+                        "identify the treatment of nonrecoupable fees separately from "
+                        "royalty advances and minimum guarantees.",
+                        "Conservative combines $20,000 fees with $30,000 royalties on "
+                        "$600,000 eligible sales. Base combines $125,000 fees with "
+                        "$300,000 royalties on $6,000,000 sales. Scaled combines "
+                        "$200,000 fees with $600,000 royalties on $12,000,000 sales. "
+                        "All three use 5%; modeled fees are nonrecoupable and "
+                        "recognized within the illustrated annual period.",
+                    ),
+                    field(
+                        "Minimum guarantee and recoupment waterfall",
+                        "textarea",
+                        "Define the minimum payment, payment dates, recoupment pool, "
+                        "carryforward rules, and true-up sequence. Show why the "
+                        "guarantee protects a floor without being counted twice "
+                        "when earned royalties exceed that floor.",
+                        "Each Base licensee owes a $60,000 annual minimum against "
+                        "earned royalties, paid in four $15,000 installments. At "
+                        "$1,500,000 annual eligible sales, earned royalties equal "
+                        "$75,000. The licensee pays a further $15,000 true-up; "
+                        "royalty revenue is $75,000, not $135,000. Credits expire "
+                        "annually and cannot cross between licensees.",
+                    ),
+                    field(
+                        "Quarterly royalty calculation and deductions",
+                        "textarea",
+                        "Calculate one reporting period from gross transactions through "
+                        "eligible sales, earned royalties, minimum credits, and balance "
+                        "due. Give each deduction a contractual basis and preserve "
+                        "the supporting source-record reference.",
+                        "Across four Base accounts, quarterly gross sales are "
+                        "$1,575,000. Documented returns of $45,000 and separately "
+                        "stated sales tax of $30,000 produce $1,500,000 eligible "
+                        "sales. At 5%, earned royalties are $75,000. Quarterly "
+                        "minimum payments total $60,000, leaving $15,000 additional "
+                        "royalties due without subtracting unrelated marketing expenses.",
+                    ),
+                    field(
+                        "Annual costs and monthly overhead boundary",
+                        "textarea",
+                        "Separate recurring fixed overhead from other annual operating "
+                        "costs. Reconcile both categories to canonical profit, and "
+                        "explain why total annual costs divided by twelve need "
+                        "not equal the stated fixed-overhead planning range.",
+                        "Conservative uses $24,000 fixed overhead plus $13,500 other "
+                        "costs. Base uses $96,000 plus $148,375. Scaled uses "
+                        "$180,000 plus $140,000. Fixed monthly overhead is therefore "
+                        "$2,000, $8,000, and $15,000. Other costs include "
+                        "deal-specific support, outside specialists, and forecast losses, "
+                        "without changing the canonical annual net figures.",
+                    ),
+                    field(
+                        "Scrub and title-defect reserve",
+                        "textarea",
+                        "Estimate the managerial reserve for defective rights, disputed "
+                        "deductions, refunds, and collection loss. Separate expected "
+                        "economic exposure from accounting entries, and show its "
+                        "position inside the existing annual scenario cost envelope.",
+                        "The Base plan allocates $12,000 within its $148,375 "
+                        "other-cost envelope: $6,000 for reporting adjustments, $4,000 "
+                        "for title-remediation work, and $2,000 for collection losses. "
+                        "This planning reserve is not an automatic ledger expense. "
+                        "Recognized provisions and actual costs follow the accounting "
+                        "policy; the model never deducts the reserve twice.",
+                    ),
+                    field(
+                        "Opening capital and collection-delay float",
+                        "textarea",
+                        "Build a cash bridge using actual receipt dates and "
+                        "committed outflows rather than annual profit averages. Identify "
+                        "minimum liquidity, collection timing sensitivity, and which "
+                        "discretionary expenditures can pause without breaching contracts.",
+                        "Opening capital of $75,000 funds $25,000 setup work, "
+                        "leaving $50,000 unrestricted cash. Three months of $8,000 "
+                        "fixed overhead and a $10,000 specialist payment leave "
+                        "$16,000 before receipts. A further month without collection "
+                        "reduces cash to $8,000, below the chosen $16,000 "
+                        "two-month fixed-overhead buffer.",
+                    ),
+                    field(
+                        "Revenue recognition and deferred cash",
+                        "textarea",
+                        "Identify the performance obligations and recognition policy "
+                        "for fees, royalties, support, and advance payments. Reconcile "
+                        "cash received with earned revenue and deferred balances, "
+                        "including the evidence supporting any point-in-time treatment.",
+                        "A licensee pays its $31,250 nonrecoupable fee and first "
+                        "$15,000 minimum together, producing $46,250 cash. The "
+                        "accounting owner documents when the specific license is "
+                        "available for use and whether continuing obligations alter "
+                        "recognition. The annual Base model assumes $31,250 fee "
+                        "revenue and $75,000 royalties, not immediate recognition "
+                        "of every receipt.",
+                    ),
+                    field(
+                        "Downside sensitivity and guarantee exposure",
+                        "textarea",
+                        "Model lower licensee sales and collection failure separately "
+                        "from the canonical cases. State which minimum obligations "
+                        "remain enforceable and collectible, and keep sensitivities "
+                        "clearly labeled rather than silently replacing published scenario figures.",
+                        "In a Base sensitivity, eligible sales fall 30% to "
+                        "$4,200,000, producing $210,000 percentage royalties. Collectible "
+                        "annual minimums of $240,000 establish the modeled royalty "
+                        "floor. With unchanged $125,000 fees and $244,375 costs, "
+                        "illustrative revenue becomes $365,000 and owner net "
+                        "$120,625; the canonical Base remains $425,000 and $180,625.",
+                    ),
+                    field(
+                        "Capital allocation and payout discipline",
+                        "textarea",
+                        "Set rules for owner distributions, reserve replenishment, and "
+                        "new asset acquisition. Tie available cash to collected "
+                        "receivables and committed obligations rather than treating "
+                        "forecast owner profit as immediately distributable money.",
+                        "The operator withholds distributions while unrestricted cash "
+                        "is below $16,000 or a material title claim remains "
+                        "unfunded. A proposed $20,000 catalog acquisition requires "
+                        "a separate cash forecast including specialist invoices "
+                        "and the next minimum-payment cycle. Base annual owner "
+                        "net stays $180,625, but payment timing follows actual "
+                        "liquidity and entity-level obligations.",
+                    ),
+                ],
+                "completion_gate": (
+                    "The accounting owner verifies all three exact scenario reconciliations, "
+                    "the minimum-credit waterfall, reserve placement, and a dated cash "
+                    "forecast showing the lowest unrestricted balance and required response."
+                ),
+            },
+            {
+                "worksheet_id": "ws-03",
+                "number": 3,
+                "title": "Execution Ledger and Technical QA Pre-Flight",
+                "purpose": (
+                    "Translate signed rights into controlled delivery, accurate royalty "
+                    "statements, and reproducible audit evidence. Define identifiers, "
+                    "source records, calculation versions, access controls, and exception "
+                    "handling before the first reporting cycle, with distinct technical "
+                    "checks for patent, brand, catalog, and dataset licenses."
+                ),
+                "chapter_ref": "Q7, Q8",
+                "instructions": [
+                    (
+                        "Create persistent identifiers for the agreement, amendment, "
+                        "asset, licensee, reporting period, statement, and receipt. "
+                        "Use those identifiers across the contract repository and "
+                        "ledger so an auditor can trace one royalty amount "
+                        "without relying on filenames alone."
+                    ),
+                    (
+                        "Convert every operative clause into a named obligation "
+                        "with a responsible person, due date, evidence requirement, "
+                        "and escalation path. Include delivery, marking, quality "
+                        "review, sublicensing, reporting, payment, renewal, and "
+                        "post-termination duties."
+                    ),
+                    (
+                        "Run a pre-delivery rights and technical review against "
+                        "the executed asset schedule. Compare file hashes, "
+                        "territorial permissions, approved branding, dataset provenance, "
+                        "and access permissions. Quarantine mismatches instead "
+                        "of expanding the grant through an informal delivery."
+                    ),
+                    (
+                        "Recompute the first royalty statement independently from "
+                        "transaction records. Test duplicates, missing identifiers, "
+                        "reversed invoices, currencies, deductions, and minimum-credit "
+                        "allocation. Preserve both the original submission and "
+                        "the corrected version with an explanation of every change."
+                    ),
+                    (
+                        "Close the period only after ledger totals, invoices, "
+                        "receipts, and exception records reconcile. Retain "
+                        "the calculation version and reviewer evidence. "
+                        "An unresolved discrepancy must have an owner, "
+                        "bounded amount, next action, and contractual deadline."
+                    ),
+                ],
+                "fields": [
+                    field(
+                        "Agreement and asset identifier register",
+                        "textarea",
+                        "Define stable identifiers and relationships connecting each "
+                        "asset to its executed grant, amendments, licensee entity, "
+                        "and reporting obligations. Prevent informal project names "
+                        "from becoming the sole reference for enforceable rights.",
+                        "Agreement LIC-013-004 connects entity PUB-004 to catalog "
+                        "CAT-240, asset schedule version 3, and amendment AMD-001. "
+                        "The executed schedule contains 228 deliverable illustrations "
+                        "after excluding 12 incomplete-title items. Each illustration "
+                        "retains its own asset ID, checksum, creator agreement "
+                        "reference, permitted territory, and approved distribution format.",
+                    ),
+                    field(
+                        "Clause-to-obligation execution ledger",
+                        "textarea",
+                        "Extract operational duties from the executed agreement "
+                        "and assign evidence-based completion criteria. Include "
+                        "contractual cure periods and notices so a missed "
+                        "internal reminder does not become an invented termination right.",
+                        "Clause 6.2 requires quarterly statements within 30 days "
+                        "after quarter-end; clause 6.3 requires payment within "
+                        "the same period. The royalty analyst prepares the "
+                        "reconciliation, the operator reviews it, and the ledger "
+                        "stores delivery evidence. Late-payment notices follow "
+                        "the negotiated ten-business-day cure mechanism and "
+                        "designated notice addresses.",
+                    ),
+                    field(
+                        "Catalog and dataset delivery manifest",
+                        "textarea",
+                        "Specify deliverable versions, integrity checks, source permissions, "
+                        "access limitations, and acceptance tests. For datasets, "
+                        "include provenance, permitted transformations, prohibited "
+                        "uses, and the contractual treatment of updates and "
+                        "derived outputs.",
+                        "A dataset delivery contains 80,000 equipment observations "
+                        "in CSV files, a schema dictionary, and a SHA-256 "
+                        "manifest. Validation confirms row counts, permitted "
+                        "source licenses, and removal of direct personal "
+                        "identifiers. The grant allows internal predictive "
+                        "maintenance analysis but excludes resale and model "
+                        "training unless a signed amendment adds those uses.",
+                    ),
+                    field(
+                        "Brand quality and patent-use pre-flight",
+                        "textarea",
+                        "List asset-specific checks beyond file delivery, including "
+                        "brand quality controls, approved specimens, patent claim "
+                        "scope, marking instructions, and responsibility for "
+                        "finished-product clearance outside the licensed rights.",
+                        "A brand license requires review of packaging artwork "
+                        "and two production samples before sale, with defects "
+                        "logged against the quality schedule. A separate "
+                        "patent license identifies covered claims and any "
+                        "applicable marking instructions under 35 U.S.C. § 287(a). "
+                        "Neither workflow treats an approved logo or patent "
+                        "grant as product-wide clearance.",
+                    ),
+                    field(
+                        "Source data schema and ingestion controls",
+                        "textarea",
+                        "Define required columns, accepted formats, identifier "
+                        "uniqueness, period rules, and rejection behavior. "
+                        "State how the operator preserves raw submissions "
+                        "while converting licensee-specific exports into "
+                        "a consistent royalty calculation dataset.",
+                        "The ingestion schema requires licensee_id, invoice_id, "
+                        "line_id, SKU, invoice_date, territory, currency, "
+                        "gross_amount, return_amount, and tax_amount. A composite "
+                        "licensee-invoice-line key rejects duplicates. Raw CSV "
+                        "files remain immutable in a restricted S3 bucket; "
+                        "normalized records enter a separate ledger with "
+                        "import timestamp, source checksum, and validation results.",
+                    ),
+                    field(
+                        "Royalty calculation acceptance tests",
+                        "textarea",
+                        "Write test cases with expected outputs for deductions, "
+                        "returns, rates, rounding, currencies, and recoupment. "
+                        "Include failure cases that must stop statement "
+                        "generation rather than producing plausible but "
+                        "unreviewed royalty totals.",
+                        "A $10,000 sale with $500 permitted returns yields "
+                        "$9,500 eligible sales and $475 royalty at 5%. "
+                        "A duplicate invoice line must fail ingestion. "
+                        "An unapproved 8% marketing deduction must be "
+                        "rejected. Portfolio quarterly royalties of $75,000 "
+                        "less $60,000 minimum credits must produce exactly "
+                        "$15,000 additional royalties due.",
+                    ),
+                    field(
+                        "Statement, receivable, and receipt reconciliation",
+                        "textarea",
+                        "Connect earned royalties to statements, invoices, credits, "
+                        "bank receipts, and outstanding balances. Distinguish "
+                        "a missing payment from a disputed calculation "
+                        "and preserve the cash-application rule for "
+                        "partial or combined remittances.",
+                        "Statement STM-Q1-004 records $18,750 earned royalties "
+                        "for one Base account. The ledger applies its "
+                        "$15,000 quarterly minimum receipt, leaving $3,750 "
+                        "due. A $3,000 remittance reduces the receivable "
+                        "to $750. The operator records the short payment "
+                        "without rewriting earned royalties or allocating "
+                        "another licensee's available credit.",
+                    ),
+                    field(
+                        "Royalty audit sampling and discrepancy treatment",
+                        "textarea",
+                        "Define the population, sampling method, escalation "
+                        "threshold, and evidence required to expand testing. "
+                        "Specify how contractual audit-cost shifting, interest, "
+                        "and corrections are calculated without assuming "
+                        "every discrepancy proves intentional concealment.",
+                        "An audit reconciles the full SKU list and samples "
+                        "40 invoices across territories and channels. Testing "
+                        "finds $200,000 eligible sales omitted from a separate "
+                        "audit-period submission, implying $10,000 underpaid "
+                        "royalties at 5%. The auditor expands testing, "
+                        "evaluates the contract's cost-shifting threshold, and "
+                        "records any recovery outside the unchanged canonical baseline.",
+                    ),
+                    field(
+                        "Exception ownership and correction history",
+                        "textarea",
+                        "Record the issue, affected amount, source evidence, "
+                        "owner, deadline, and resolution authority. Preserve "
+                        "superseded statements and calculation versions so "
+                        "a correction remains explainable during a later "
+                        "audit or portfolio sale.",
+                        "Exception EX-017 concerns $45,000 returns deducted "
+                        "without credit-memo references. The analyst requests "
+                        "support within five business days and freezes "
+                        "only the disputed adjustment. Version 1 remains "
+                        "archived; version 2 records $30,000 supported "
+                        "returns and a $750 royalty increase on "
+                        "the unsupported $15,000 balance at 5%.",
+                    ),
+                    field(
+                        "Termination, access withdrawal, and retention",
+                        "textarea",
+                        "Translate expiration and termination provisions into "
+                        "technical actions while preserving required evidence. "
+                        "Address credentials, delivered copies, sell-off rights, "
+                        "final statements, retained backups, and the boundaries "
+                        "of any continuing access permission.",
+                        "After the contractual cure period expires, the "
+                        "operator sends the required notice and disables "
+                        "future dataset downloads on the effective termination "
+                        "date. A negotiated 60-day inventory sell-off remains "
+                        "reportable and royalty-bearing. The licensee certifies "
+                        "deletion of prohibited working copies while the "
+                        "operator retains contracts and accounting evidence "
+                        "under the seven-year records schedule.",
+                    ),
+                ],
+                "completion_gate": (
+                    "A reviewer reproduces one complete royalty statement from preserved "
+                    "source records, confirms delivery against the executed grant, and "
+                    "signs the exception ledger with every material discrepancy resolved or bounded."
+                ),
+            },
+            {
+                "worksheet_id": "ws-04",
+                "number": 4,
+                "title": "Statutory, Contract, Licensing, and Outreach Audit",
+                "purpose": (
+                    "Identify the concrete statutory and contractual requirements "
+                    "governing the proposed asset and sales motion. Link each "
+                    "requirement to documents, operating controls, and accountable "
+                    "reviewers, while separating ownership, permitted use, privacy, "
+                    "competition, and outreach questions that cannot be resolved "
+                    "by one broad warranty."
+                ),
+                "chapter_ref": "Q5, Q9",
+                "instructions": [
+                    (
+                        "Classify each licensed component before reviewing the "
+                        "agreement. A product package can contain patents, "
+                        "marks, copyrighted files, confidential know-how, "
+                        "and personal data simultaneously. Create separate "
+                        "evidence requirements instead of assuming one "
+                        "registration establishes rights in every component."
+                    ),
+                    (
+                        "Check ownership documents against the precise grant "
+                        "and applicable statutory requirements. Record "
+                        "jurisdiction, effective dates, signatures, recording "
+                        "status, and retained interests. Route material "
+                        "gaps to the assigned specialist before "
+                        "promising exclusivity or unrestricted sublicensing."
+                    ),
+                    (
+                        "Review royalty definitions alongside competition, "
+                        "territorial, and duration provisions. Flag "
+                        "arrangements involving price coordination, market "
+                        "allocation, coercive bundles, or patent-expiration "
+                        "issues for fact-specific review. Do not "
+                        "treat a standard template as a substantive assessment."
+                    ),
+                    (
+                        "Map data flows and outreach channels separately "
+                        "from intellectual-property ownership. Establish "
+                        "processing purposes, recipient restrictions, "
+                        "suppression handling, and evidence retention. "
+                        "A license to use a database does "
+                        "not automatically authorize every personal-data "
+                        "use or marketing contact."
+                    ),
+                    (
+                        "Close each audit item with a document "
+                        "reference, control owner, and retest date. "
+                        "Track contractual deviations in the obligation "
+                        "ledger so negotiated protections survive handoff "
+                        "to the royalty analyst, delivery contractor, "
+                        "and commercial relationship owner."
+                    ),
+                ],
+                "fields": [
+                    field(
+                        "Patent ownership and territorial coverage",
+                        "textarea",
+                        "Identify issued claims, jurisdictions, expiration "
+                        "assumptions, maintenance status, assignments, "
+                        "and prior licenses. Connect the proposed "
+                        "grant to actual patent rights rather "
+                        "than application titles or marketing descriptions "
+                        "of worldwide protection.",
+                        "The patent file includes signed assignments "
+                        "under 35 U.S.C. § 261, USPTO recording "
+                        "references, maintenance-fee records, and claim charts "
+                        "for two issued United States patents. A "
+                        "pending European application is labeled separately. "
+                        "The contract grants only listed rights and "
+                        "requires updates if claims lapse, expire, "
+                        "or materially change during the term.",
+                    ),
+                    field(
+                        "Patent expiration, exhaustion, and marking",
+                        "textarea",
+                        "Review royalty duration, authorized sales, "
+                        "downstream restrictions, and applicable marking "
+                        "duties. Separate current patent use from "
+                        "deferred payment, know-how rights, and other "
+                        "consideration when constructing a royalty "
+                        "schedule extending beyond patent expiration.",
+                        "A patent expires in year three of a "
+                        "five-year commercial relationship. The draft "
+                        "separates patent consideration from continuing "
+                        "know-how support and reviews Brulotte v. "
+                        "Thys and Kimble v. Marvel before setting "
+                        "later payments. Product marking is assessed "
+                        "under 35 U.S.C. § 287(a); authorized-sale "
+                        "effects are reviewed under Impression Products "
+                        "v. Lexmark.",
+                    ),
+                    field(
+                        "Copyright transfers and catalog permissions",
+                        "textarea",
+                        "Verify signed transfers, work-made-for-hire "
+                        "assumptions, underlying components, and reserved "
+                        "rights for catalog assets. Review termination "
+                        "interests and distinguish copyright in "
+                        "selection or arrangement from rights "
+                        "in individual facts or third-party material.",
+                        "For 240 illustrations, the operator checks "
+                        "written transfers under 17 U.S.C. § 204(a) "
+                        "and evaluates work-made-for-hire claims under "
+                        "§ 101. Older author grants receive "
+                        "termination review under §§ 203 and 304 "
+                        "where applicable. Stock photographs embedded "
+                        "in 18 files require separate redistribution "
+                        "permission before inclusion in the deliverable schedule.",
+                    ),
+                    field(
+                        "Trademark ownership and quality controls",
+                        "textarea",
+                        "Record mark ownership, covered goods, "
+                        "territorial registrations, quality standards, "
+                        "inspection rights, and corrective actions. "
+                        "Distinguish a license from an assignment "
+                        "and ensure practical oversight supports "
+                        "the continuing significance of the licensed mark.",
+                        "The brand schedule identifies registered "
+                        "marks, approved refrigeration products, and "
+                        "packaging specimens. Quality reviews occur "
+                        "before launch and quarterly thereafter, "
+                        "with documented correction rights. The "
+                        "review considers abandonment principles in "
+                        "15 U.S.C. § 1127; any proposed "
+                        "ownership transfer separately addresses the "
+                        "goodwill requirements of 15 U.S.C. § 1060.",
+                    ),
+                    field(
+                        "Dataset rights, privacy, and purpose limits",
+                        "textarea",
+                        "Separate source permissions, confidentiality, "
+                        "copyright, database restrictions, and personal-data "
+                        "obligations. Record processing purposes and "
+                        "recipient roles, and avoid treating a "
+                        "purchased collection of facts as "
+                        "unrestricted ownership of every downstream use.",
+                        "A maintenance dataset contains 80,000 "
+                        "observations plus technician identifiers. "
+                        "The operator removes unnecessary identifiers "
+                        "and documents source permissions. Review "
+                        "addresses 17 U.S.C. §§ 102(b) and "
+                        "103, applicable California Civil Code "
+                        "§ 1798.100 duties, and GDPR Articles "
+                        "6, 28, and 44 when relevant. "
+                        "Model-training rights require an express "
+                        "purpose assessment and contractual grant.",
+                    ),
+                    field(
+                        "Trade-secret handling and disclosure controls",
+                        "textarea",
+                        "Identify confidential know-how that derives "
+                        "value from secrecy and define reasonable "
+                        "protection measures. Specify recipient access, "
+                        "onward disclosure, return duties, incident "
+                        "notice, and evidence proving the "
+                        "information was treated as confidential.",
+                        "A calibration recipe is distributed "
+                        "only to three named engineers through "
+                        "role-restricted access. The agreement bars "
+                        "unauthorized disclosure and requires return "
+                        "or deletion after termination. The "
+                        "operator logs access and labels the "
+                        "technical package confidential, supporting "
+                        "the reasonable-measures element of "
+                        "18 U.S.C. § 1839(3) rather than "
+                        "relying on secrecy language alone.",
+                    ),
+                    field(
+                        "Competition constraints and exclusivity review",
+                        "textarea",
+                        "Assess commercial context for exclusivity, "
+                        "territorial limits, tying, grantbacks, "
+                        "resale restrictions, and competitor coordination. "
+                        "Record market facts and rationale "
+                        "so a specialist can evaluate "
+                        "the actual arrangement rather than "
+                        "a clause in isolation.",
+                        "A proposed exclusive refrigeration-field "
+                        "license runs 24 months and depends "
+                        "on a $60,000 annual minimum. The "
+                        "operator documents substitute suppliers, "
+                        "market position, and investment rationale. "
+                        "Review addresses Sherman Act §§ 1 "
+                        "and 2, 15 U.S.C. §§ 1 and "
+                        "2, and applicable Clayton Act "
+                        "§ 3 issues under 15 U.S.C. § 14.",
+                    ),
+                    field(
+                        "Royalty definitions and dispute mechanics",
+                        "textarea",
+                        "Audit the contract's economic language "
+                        "for inconsistent definitions, ambiguous "
+                        "deductions, affiliate leakage, and "
+                        "inaccessible evidence. Specify reporting "
+                        "deadlines, audit procedures, correction "
+                        "mechanics, remedies, and notice "
+                        "requirements in executable operational terms.",
+                        "Eligible sales exclude documented returns "
+                        "and separately stated sales tax, "
+                        "but not internal commissions. Affiliate "
+                        "transfers use the expressly defined "
+                        "valuation method. Statements and payments "
+                        "are due 30 days after quarter-end. "
+                        "The agreement provides annual inspection "
+                        "on 20 business days' notice and "
+                        "shifts reasonable audit costs when "
+                        "underpayment exceeds 5% of royalties due.",
+                    ),
+                    field(
+                        "Commercial outreach and suppression controls",
+                        "textarea",
+                        "Document the actual email, telephone, "
+                        "and messaging channels used for "
+                        "licensee acquisition. Connect applicable "
+                        "requirements to sender identity, "
+                        "address information, opt-out processing, "
+                        "calling permissions, and records "
+                        "showing suppression before subsequent campaigns.",
+                        "The initial campaign uses individually "
+                        "reviewed commercial email to 40 "
+                        "business contacts. Templates include "
+                        "accurate routing information, required "
+                        "advertising identification, a physical "
+                        "postal address, and functioning opt-out "
+                        "instructions under 15 U.S.C. § 7704. "
+                        "The operator honors opt-outs within "
+                        "ten business days; automated calls "
+                        "and texts require separate 47 U.S.C. "
+                        "§ 227 review.",
+                    ),
+                    field(
+                        "Contract authority, jurisdiction, and exceptions",
+                        "textarea",
+                        "Verify signatory authority, governing "
+                        "law, dispute forum, notice addresses, "
+                        "assignment restrictions, and cross-border "
+                        "payment requirements. Capture deviations "
+                        "from the approved commercial position "
+                        "with their operational consequence "
+                        "and designated reviewer.",
+                        "The subsidiary's procurement manager "
+                        "provides delegated signing authority, "
+                        "while the parent guarantee receives "
+                        "a separate authorized signature. "
+                        "The contract specifies governing law, "
+                        "forum, and notice delivery methods. "
+                        "A negotiated assignment restriction "
+                        "requires consent for an asset sale; "
+                        "the exit ledger flags that dependency "
+                        "before the operator markets the portfolio.",
+                    ),
+                ],
+                "completion_gate": (
+                    "The assigned reviewers close the rights, privacy, competition, "
+                    "contract, and outreach checks with cited evidence; each remaining "
+                    "restriction is reflected in the grant, delivery controls, and obligation ledger."
+                ),
+            },
+            {
+                "worksheet_id": "ws-05",
+                "number": 5,
+                "title": "Automation, Growth Flywheel, and Risk Fallback Tracker",
+                "purpose": (
+                    "Automate repetitive royalty administration without surrendering "
+                    "control of contractual interpretation, cash application, or "
+                    "sensitive data. Build a narrow outbound engine around "
+                    "verified buyer needs, then define observable failure signals "
+                    "and manual fallback procedures for reporting, renewals, "
+                    "delivery, and disputes."
+                ),
+                "chapter_ref": "Q6, Q10",
+                "instructions": [
+                    (
+                        "Start with the three named automation "
+                        "levers: royalty reporting, license renewal "
+                        "alerts, and contract obligation tracking. "
+                        "Assign each workflow a source of "
+                        "truth, service owner, reconciliation "
+                        "test, and manual procedure before "
+                        "connecting production data."
+                    ),
+                    (
+                        "Separate deterministic calculations from "
+                        "interpretive decisions. Software may "
+                        "validate schemas, calculate approved "
+                        "rates, and schedule reminders. "
+                        "A responsible person resolves "
+                        "ambiguous grant language, disputed "
+                        "deductions, changes in ownership, "
+                        "and decisions affecting contractual rights."
+                    ),
+                    (
+                        "Build outbound lists from the "
+                        "asset's demonstrated commercial use "
+                        "rather than broad industry labels. "
+                        "Track a specific buyer problem, "
+                        "a plausible budget owner, and "
+                        "a reporting-capability hypothesis for "
+                        "every account before initiating contact."
+                    ),
+                    (
+                        "Instrument workflow failures and "
+                        "commercial conversion separately. "
+                        "A successful file import is "
+                        "not a collected royalty, and "
+                        "a positive reply is not "
+                        "an executed license. Use "
+                        "stage definitions tied to "
+                        "documents, meetings, signatures, and cash."
+                    ),
+                    (
+                        "Test fallback procedures with a "
+                        "missed report, duplicate event, "
+                        "revoked credential, and disputed "
+                        "renewal date. Confirm that "
+                        "the operator can reconstruct "
+                        "the current state and meet "
+                        "contractual deadlines without relying "
+                        "on the automation vendor's availability."
+                    ),
+                ],
+                "fields": [
+                    field(
+                        "Systems map and authoritative records",
+                        "textarea",
+                        "Assign authoritative systems for "
+                        "contracts, assets, obligations, "
+                        "royalty calculations, receivables, "
+                        "and prospect stages. Document "
+                        "integration boundaries and prevent "
+                        "multiple applications from silently "
+                        "maintaining conflicting versions "
+                        "of the same commercial term.",
+                        "Executed agreements reside in "
+                        "restricted SharePoint storage; "
+                        "Airtable tracks obligations; "
+                        "QuickBooks records invoices and "
+                        "receipts; HubSpot tracks prospects. "
+                        "A versioned royalty ledger "
+                        "stores approved formulas. Contract "
+                        "amendments update the obligation "
+                        "register through a documented "
+                        "review, not by scraping a "
+                        "sales note or trusting the "
+                        "latest spreadsheet attachment.",
+                    ),
+                    field(
+                        "Royalty reporting automation specification",
+                        "textarea",
+                        "Define ingestion triggers, schema "
+                        "validation, calculation versions, "
+                        "review queues, and statement "
+                        "release conditions. Show how "
+                        "the workflow handles repeated "
+                        "submissions and fails safely "
+                        "when required source data "
+                        "or contractual parameters are absent.",
+                        "A quarterly upload triggers "
+                        "CSV validation and computes "
+                        "royalties using formula version "
+                        "ROY-005. The event key "
+                        "combines licensee, period, and "
+                        "source checksum. Repeated uploads "
+                        "do not create duplicate "
+                        "invoices. Missing territory or "
+                        "currency values place the "
+                        "report in an exception queue; "
+                        "only reviewed statements synchronize "
+                        "with QuickBooks.",
+                    ),
+                    field(
+                        "Renewal alerts and notice verification",
+                        "textarea",
+                        "Translate contract-specific renewal "
+                        "and termination notice periods "
+                        "into reminders with confirmed "
+                        "recipients and escalation. "
+                        "Distinguish internal planning "
+                        "alerts from legally effective "
+                        "notices and preserve proof "
+                        "of required delivery.",
+                        "A license expires December "
+                        "31 and requires nonrenewal "
+                        "notice at least 90 days "
+                        "earlier. The system creates "
+                        "internal reviews 150, 120, "
+                        "and 105 days before expiry. "
+                        "The operator verifies the "
+                        "contractual counting rule and "
+                        "notice method, then records "
+                        "delivery evidence; an email "
+                        "reminder alone never constitutes "
+                        "the counterparty notice.",
+                    ),
+                    field(
+                        "Obligation tracking and change control",
+                        "textarea",
+                        "Specify how new agreements "
+                        "and amendments create or "
+                        "change operational tasks. "
+                        "Require a comparison between "
+                        "the executed language and "
+                        "stored parameters before "
+                        "automated rates, deadlines, "
+                        "or access permissions change.",
+                        "Amendment AMD-002 expands "
+                        "territory to Canada on "
+                        "July 1 but leaves the "
+                        "5% rate unchanged. A "
+                        "reviewer compares the signed "
+                        "document with the proposed "
+                        "parameter update. The ledger "
+                        "preserves earlier territory rules "
+                        "for historical periods and "
+                        "creates new delivery and "
+                        "reporting tasks only from "
+                        "the effective date.",
+                    ),
+                    field(
+                        "Ideal licensee list and outbound proposition",
+                        "textarea",
+                        "Define a tightly bounded "
+                        "buyer segment, observable "
+                        "qualification signals, contact "
+                        "roles, and a proposition "
+                        "supported by asset evidence. "
+                        "Set a manageable outreach "
+                        "batch size that permits "
+                        "individual review and suppression checks.",
+                        "The first list contains "
+                        "40 commercial refrigeration "
+                        "publishers and manufacturers "
+                        "with active manual-production "
+                        "teams. Each account record "
+                        "names a product-documentation "
+                        "leader and procurement contact. "
+                        "The message offers a "
+                        "12-image evaluation addressing "
+                        "maintenance-diagram backlog, "
+                        "rather than a generic "
+                        "portfolio pitch. Suppressed "
+                        "contacts are excluded before "
+                        "each send.",
+                    ),
+                    field(
+                        "Growth stages and conversion economics",
+                        "textarea",
+                        "Define measurable pipeline "
+                        "stages and conversion "
+                        "assumptions. Calculate acquisition "
+                        "cost using attributable "
+                        "spend, and keep "
+                        "expected licenses separate "
+                        "from signed contracts "
+                        "and recognized revenue "
+                        "when interpreting campaign results.",
+                        "A planning funnel uses "
+                        "40 researched accounts, "
+                        "12 replies, six qualified "
+                        "meetings, three paid "
+                        "evaluations, and one "
+                        "eventual license. With "
+                        "$4,000 attributable research "
+                        "and selling costs, "
+                        "modeled acquisition cost "
+                        "is $4,000 per signed "
+                        "license. Until that "
+                        "signature occurs, the "
+                        "figure remains a "
+                        "hypothesis rather than "
+                        "a realized conversion metric.",
+                    ),
+                    field(
+                        "Credential scope and data minimization",
+                        "textarea",
+                        "Limit automation identities "
+                        "to the records and "
+                        "actions needed for "
+                        "their function. Specify "
+                        "secret storage, rotation, "
+                        "logging, export restrictions, "
+                        "and separation between "
+                        "prospect information and "
+                        "licensee transaction data.",
+                        "The reporting service "
+                        "can read its designated "
+                        "S3 prefix and write "
+                        "draft ledger records, "
+                        "but cannot delete "
+                        "source files or issue "
+                        "refunds. Credentials live "
+                        "in AWS Secrets Manager "
+                        "with access logging. "
+                        "HubSpot receives account "
+                        "status and renewal "
+                        "dates, not transaction-level "
+                        "sales exports or "
+                        "dataset source records.",
+                    ),
+                    field(
+                        "Underreporting and dispute fallback",
+                        "textarea",
+                        "Define signals suggesting "
+                        "incomplete reporting and "
+                        "the bounded response "
+                        "to each signal. "
+                        "Separate anomaly detection "
+                        "from accusations, and "
+                        "preserve contractual rights "
+                        "while investigating source "
+                        "records and calculation differences.",
+                        "A 35% drop in "
+                        "reported royalties alongside "
+                        "unchanged shipment volumes "
+                        "triggers analyst review. "
+                        "The operator requests "
+                        "SKU-level reconciliation and "
+                        "affiliate-transfer records "
+                        "within the contract's "
+                        "response period. Undisputed "
+                        "amounts remain collectible. "
+                        "If the variance persists, "
+                        "the operator invokes "
+                        "the agreed audit "
+                        "process instead of "
+                        "automatically disabling all "
+                        "licensed operations.",
+                    ),
+                    field(
+                        "Outage recovery and manual operating packet",
+                        "textarea",
+                        "Prepare a manual "
+                        "procedure for vendor "
+                        "outages, failed integrations, "
+                        "or corrupted imports. "
+                        "List available backups, "
+                        "responsible operators, "
+                        "reconciliation steps, and "
+                        "tests proving restored "
+                        "automation will not "
+                        "duplicate prior actions.",
+                        "The weekly recovery "
+                        "packet contains current "
+                        "contracts, obligation "
+                        "exports, open receivables, "
+                        "and approved calculation "
+                        "templates. During a "
+                        "48-hour outage, the "
+                        "analyst prepares statements "
+                        "offline and records "
+                        "unique statement IDs. "
+                        "After restoration, a "
+                        "comparison of IDs "
+                        "and bank receipts "
+                        "prevents duplicate invoices "
+                        "and duplicate minimum-credit "
+                        "applications.",
+                    ),
+                    field(
+                        "Automation value and escalation thresholds",
+                        "textarea",
+                        "Measure saved processing "
+                        "time, exception rates, "
+                        "statement accuracy, and "
+                        "deadline performance against "
+                        "a documented manual "
+                        "baseline. Set thresholds "
+                        "that require corrective "
+                        "work before adding "
+                        "more accounts or "
+                        "broader automation permissions.",
+                        "Four quarterly statements "
+                        "take eight analyst "
+                        "hours manually. The "
+                        "target workflow reduces "
+                        "that to three hours "
+                        "including review, saving "
+                        "five hours per cycle. "
+                        "Any duplicate invoice, "
+                        "missed notice deadline, "
+                        "or unexplained royalty "
+                        "difference above $100 "
+                        "pauses expansion until "
+                        "the operator fixes "
+                        "and retests the "
+                        "specific failure.",
+                    ),
+                ],
+                "completion_gate": (
+                    "The operator demonstrates one successful reporting cycle, one renewal "
+                    "notice check, and one manual recovery exercise; outbound stages and "
+                    "automation metrics remain separate from booked and collected revenue."
+                ),
+            },
+            {
+                "worksheet_id": "ws-06",
+                "number": 6,
+                "title": "30-Day Launch Sprint, Pod Scorecard, and Exit Ledger",
+                "purpose": (
+                    "Turn the licensing thesis into a disciplined first-month "
+                    "execution plan without compressing a 6-to-24-month sales "
+                    "cycle into an artificial promise. Assign pod responsibilities, "
+                    "track evidence-based milestones, preserve canonical economics, "
+                    "and assemble records that support renewal, delegation, "
+                    "and eventual transfer."
+                ),
+                "chapter_ref": "Q11, Q12",
+                "instructions": [
+                    (
+                        "Treat the first 30 days "
+                        "as a preparation and "
+                        "validation sprint, not "
+                        "a requirement to "
+                        "close a license. "
+                        "Prioritize rights evidence, "
+                        "buyer qualification, "
+                        "contract economics, and "
+                        "a reproducible reporting "
+                        "demonstration over presentation "
+                        "volume or speculative "
+                        "revenue announcements."
+                    ),
+                    (
+                        "Assign the Conservative "
+                        "and Base pod as "
+                        "one full-time operator "
+                        "plus three contractors. "
+                        "Define contractor deliverables "
+                        "and availability explicitly. "
+                        "Use the Scaled structure "
+                        "of two full-time staff "
+                        "plus four contractors "
+                        "only with a documented "
+                        "workload and cost reconciliation."
+                    ),
+                    (
+                        "Review weekly leading "
+                        "indicators alongside cash "
+                        "and risk exposure. "
+                        "Separate researched prospects, "
+                        "qualified meetings, paid "
+                        "evaluations, signed grants, "
+                        "earned royalties, and "
+                        "collected receipts. "
+                        "A growing pipeline "
+                        "does not justify "
+                        "ignoring unresolved title "
+                        "or an approaching "
+                        "liquidity shortfall."
+                    ),
+                    (
+                        "Build transfer readiness "
+                        "from the first contract. "
+                        "Retain assignments, "
+                        "amendments, reporting history, "
+                        "renewal dates, dispute "
+                        "records, and documented "
+                        "operating procedures. "
+                        "Flag assignment restrictions "
+                        "and buyer dependencies "
+                        "before estimating value "
+                        "from recurring royalties "
+                        "or marketing the portfolio."
+                    ),
+                    (
+                        "At day 30, "
+                        "compare completed evidence "
+                        "with the original "
+                        "spending limits and "
+                        "rejection criteria. "
+                        "Choose continue, narrow, "
+                        "or stop for "
+                        "each opportunity. "
+                        "Authorize the next "
+                        "bounded work period "
+                        "only after updating "
+                        "cash, unresolved risks, "
+                        "and accountable owners."
+                    ),
+                ],
+                "fields": [
+                    field(
+                        "Days 1–7 rights and demand foundation",
+                        "textarea",
+                        "Schedule the first "
+                        "week's asset intake, "
+                        "ownership review, "
+                        "buyer research, and "
+                        "capital setup. "
+                        "Assign concrete evidence "
+                        "deliverables and "
+                        "spending limits "
+                        "rather than activity "
+                        "counts without "
+                        "commercial or "
+                        "rights-validation value.",
+                        "By day seven, "
+                        "the operator creates "
+                        "the asset register, "
+                        "collects eight creator "
+                        "agreements, identifies "
+                        "12 incomplete-title "
+                        "illustrations, and "
+                        "researches 40 target "
+                        "accounts. The rights "
+                        "contractor delivers a "
+                        "gap memo capped "
+                        "at $4,000. The "
+                        "cash ledger records "
+                        "$75,000 starting "
+                        "capital and separates "
+                        "committed setup costs "
+                        "from discretionary spending.",
+                    ),
+                    field(
+                        "Days 8–14 commercial and contract design",
+                        "textarea",
+                        "Define second-week "
+                        "buyer interviews, "
+                        "sample evaluation "
+                        "design, royalty "
+                        "terms, and "
+                        "contract drafting "
+                        "outputs. Require "
+                        "confirmation of "
+                        "budget authority "
+                        "and reporting "
+                        "capability before "
+                        "treating an "
+                        "account as "
+                        "commercially qualified.",
+                        "By day fourteen, "
+                        "six discovery "
+                        "meetings identify "
+                        "three plausible "
+                        "evaluation candidates. "
+                        "The draft term "
+                        "sheet proposes "
+                        "$31,250 nonrecoupable "
+                        "fees, a 5% "
+                        "royalty, and "
+                        "a $60,000 "
+                        "annual minimum "
+                        "per Base-style "
+                        "account. Two "
+                        "buyers provide "
+                        "sample sales "
+                        "exports; procurement "
+                        "confirms the "
+                        "signatory path "
+                        "before negotiation "
+                        "costs expand.",
+                    ),
+                    field(
+                        "Days 15–21 reporting and delivery rehearsal",
+                        "textarea",
+                        "Plan the third-week "
+                        "technical rehearsal "
+                        "using representative "
+                        "records and "
+                        "a bounded "
+                        "asset package. "
+                        "Specify calculation "
+                        "tests, exception "
+                        "handling, access "
+                        "checks, and "
+                        "the evidence "
+                        "required to "
+                        "demonstrate operational "
+                        "readiness without "
+                        "live contract execution.",
+                        "The analyst "
+                        "rehearses a "
+                        "$1,500,000 portfolio "
+                        "quarter, calculates "
+                        "$75,000 royalties, "
+                        "applies $60,000 "
+                        "minimum credits, "
+                        "and produces "
+                        "$15,000 additional "
+                        "royalties due. "
+                        "A duplicate "
+                        "invoice and "
+                        "unsupported deduction "
+                        "must fail. "
+                        "The delivery "
+                        "contractor validates "
+                        "228 asset "
+                        "hashes and "
+                        "demonstrates access "
+                        "withdrawal on "
+                        "a test account.",
+                    ),
+                    field(
+                        "Days 22–30 evaluation and next-period decision",
+                        "textarea",
+                        "Set final-week "
+                        "deliverables for "
+                        "buyer follow-up, "
+                        "risk closure, "
+                        "cash review, "
+                        "and operating "
+                        "handoff. State "
+                        "what evidence "
+                        "supports continued "
+                        "investment and "
+                        "which unresolved "
+                        "conditions require "
+                        "narrowing or "
+                        "stopping the opportunity.",
+                        "By day thirty, "
+                        "the operator "
+                        "has two "
+                        "qualified evaluation "
+                        "discussions, a "
+                        "reviewed term "
+                        "sheet, a "
+                        "reproducible royalty "
+                        "model, and "
+                        "a rights "
+                        "exception log. "
+                        "No license "
+                        "is signed. "
+                        "The decision "
+                        "authorizes another "
+                        "$6,000 of "
+                        "bounded work "
+                        "only if "
+                        "the liquidity "
+                        "forecast preserves "
+                        "the $16,000 "
+                        "buffer and "
+                        "buyer reporting "
+                        "tests succeed.",
+                    ),
+                    field(
+                        "Pod roles, capacity, and escalation ownership",
+                        "textarea",
+                        "Assign accountable "
+                        "owners for "
+                        "commercial negotiation, "
+                        "rights review, "
+                        "royalty accounting, "
+                        "and delivery "
+                        "automation. Distinguish "
+                        "headcount from "
+                        "contractor hours, "
+                        "and document "
+                        "who can "
+                        "resolve disputed "
+                        "terms or "
+                        "authorize contractual actions.",
+                        "The Base pod "
+                        "has one "
+                        "full-time operator "
+                        "and three "
+                        "contractors: rights "
+                        "specialist, royalty "
+                        "accountant, and "
+                        "delivery engineer. "
+                        "The operator "
+                        "owns negotiation "
+                        "and notices; "
+                        "contractors provide "
+                        "bounded specialist "
+                        "deliverables. Scaled "
+                        "adds one "
+                        "full-time relationship "
+                        "manager and "
+                        "one audit "
+                        "contractor, reaching "
+                        "two full-time "
+                        "staff plus "
+                        "four contractors, "
+                        "six people total.",
+                    ),
+                    field(
+                        "Weekly operating and risk KPI scorecard",
+                        "textarea",
+                        "Define each "
+                        "metric with "
+                        "a denominator, "
+                        "source system, "
+                        "review frequency, "
+                        "and response "
+                        "threshold. Include "
+                        "rights coverage, "
+                        "buyer qualification, "
+                        "report timeliness, "
+                        "reconciliation accuracy, "
+                        "collection exposure, "
+                        "and minimum "
+                        "cash rather "
+                        "than revenue alone.",
+                        "The weekly "
+                        "scorecard shows "
+                        "228 of "
+                        "240 assets "
+                        "cleared, two "
+                        "of six "
+                        "meetings commercially "
+                        "qualified, and "
+                        "four of "
+                        "four test "
+                        "statements reconciled. "
+                        "Required live "
+                        "statement timeliness "
+                        "is 100%. "
+                        "Any receivable "
+                        "over 30 "
+                        "days past "
+                        "due receives "
+                        "an owner; "
+                        "forecast unrestricted "
+                        "cash below "
+                        "$16,000 triggers "
+                        "a spending review.",
+                    ),
+                    field(
+                        "Canonical economics and leverage checkpoint",
+                        "textarea",
+                        "Restate the "
+                        "canonical portfolio "
+                        "economics and "
+                        "leverage rating "
+                        "without changing "
+                        "them to "
+                        "match an "
+                        "early pipeline. "
+                        "Explain how "
+                        "actual contracts "
+                        "and costs "
+                        "will be "
+                        "compared with "
+                        "these reference "
+                        "scenarios over time.",
+                        "Candidate 19 "
+                        "ranks 13 "
+                        "of 29 "
+                        "with a "
+                        "79/100 score: "
+                        "revenue 22, "
+                        "margin 23, "
+                        "team 18, "
+                        "accessibility 6, "
+                        "automation 10. "
+                        "Annual revenue "
+                        "and owner "
+                        "net remain "
+                        "$50,000/$12,500 "
+                        "Conservative, "
+                        "$425,000/$180,625 "
+                        "Base, and "
+                        "$800,000/$480,000 "
+                        "Scaled. The "
+                        "score expresses "
+                        "operating leverage, "
+                        "not a "
+                        "probability of "
+                        "closing or "
+                        "a substitute "
+                        "for deal "
+                        "underwriting.",
+                    ),
+                    field(
+                        "Renewal quality and concentration exposure",
+                        "textarea",
+                        "Measure renewal "
+                        "eligibility, payment "
+                        "performance, licensee "
+                        "concentration, "
+                        "remaining term, "
+                        "and dependence "
+                        "on specific "
+                        "assets. Separate "
+                        "recurring contractual "
+                        "economics from "
+                        "nonrecurring fees "
+                        "when judging "
+                        "the durability "
+                        "of future "
+                        "cash flows.",
+                        "Four equal "
+                        "Base accounts "
+                        "each contribute "
+                        "$106,250 first-year "
+                        "revenue, creating "
+                        "25% concentration "
+                        "per account. "
+                        "Their combined "
+                        "$125,000 fees "
+                        "do not "
+                        "automatically repeat "
+                        "at renewal. "
+                        "The renewal "
+                        "forecast separately "
+                        "models $300,000 "
+                        "earned royalties "
+                        "at current "
+                        "sales, $240,000 "
+                        "contractual minimums "
+                        "if renewed, "
+                        "and any "
+                        "new fees "
+                        "only when "
+                        "supported by "
+                        "specific renewal terms.",
+                    ),
+                    field(
+                        "Exit-readiness evidence and transfer restrictions",
+                        "textarea",
+                        "Build the "
+                        "record set "
+                        "a purchaser "
+                        "would need "
+                        "to validate "
+                        "ownership, "
+                        "transferability, "
+                        "cash generation, "
+                        "and operational "
+                        "continuity. Flag "
+                        "required consents, "
+                        "unresolved claims, "
+                        "and personal "
+                        "relationships that "
+                        "cannot transfer "
+                        "through document "
+                        "delivery alone.",
+                        "The exit "
+                        "folder contains "
+                        "assignments, executed "
+                        "licenses, amendments, "
+                        "24 months "
+                        "of statements "
+                        "when accumulated, "
+                        "bank reconciliations, "
+                        "audit findings, "
+                        "renewal schedules, "
+                        "and operating "
+                        "procedures. Two "
+                        "agreements require "
+                        "counterparty consent "
+                        "for assignment. "
+                        "Those dependencies "
+                        "remain explicit "
+                        "in the "
+                        "transfer ledger; "
+                        "the operator "
+                        "does not "
+                        "present the "
+                        "portfolio as "
+                        "freely transferable "
+                        "before resolving "
+                        "them.",
+                    ),
+                    field(
+                        "Day-30 decision and next 90-day mandate",
+                        "textarea",
+                        "Record completed "
+                        "evidence, actual "
+                        "spend, remaining "
+                        "cash, unresolved "
+                        "risks, and "
+                        "the next "
+                        "bounded mandate. "
+                        "Choose an "
+                        "explicit continue, "
+                        "narrow, or "
+                        "stop decision "
+                        "without treating "
+                        "unsigned pipeline "
+                        "as achieved "
+                        "revenue or "
+                        "promised collections.",
+                        "Decision: continue "
+                        "with the "
+                        "228 cleared "
+                        "catalog assets "
+                        "and exclude "
+                        "the 12 "
+                        "defective-title items. "
+                        "The first "
+                        "month spends "
+                        "$9,000 underwriting "
+                        "and $8,000 "
+                        "fixed overhead "
+                        "from $75,000, "
+                        "leaving $58,000 "
+                        "before other "
+                        "committed setup "
+                        "payments. The "
+                        "next 90 "
+                        "days target "
+                        "three qualified "
+                        "evaluations and "
+                        "one negotiated "
+                        "draft; first-deal "
+                        "timing remains "
+                        "6 to "
+                        "24 months.",
+                    ),
+                ],
+                "completion_gate": (
+                    "The operator signs the day-30 decision with actual spending, cash, "
+                    "evidence, pod ownership, and the next bounded mandate; canonical "
+                    "scenario figures and transfer restrictions remain intact in the record."
+                ),
+            },
+        ],
+    }

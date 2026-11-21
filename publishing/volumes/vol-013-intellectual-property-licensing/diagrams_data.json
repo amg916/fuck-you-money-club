@@ -1,0 +1,334 @@
+{
+  "diagrams": [
+    {
+      "diagram_id": "diag-01-rights-to-royalties",
+      "chart_type": "process_flow",
+      "title": "Turn Controlled Rights into Collectible Royalties",
+      "subtitle": "Five evidence-backed handoffs from asset intake to renewal.",
+      "chapter_number": 1,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Stages show operating sequence, not elapsed months or conversion rates. First-deal planning remains 6–24 months. Recognized revenue consists of operator license fees and royalties, excluding licensees' underlying product sales.",
+      "caption": "Every handoff produces an inspectable record; a signed license does not replace usage evidence or a reconciled royalty statement.",
+      "stages": [
+        {
+          "label": "Establish ownership",
+          "value": "Signed rights dossier and exception register",
+          "numeric_value": 1.0,
+          "detail": "Collect assignments, contributor agreements, registration records, encumbrances, and sublicensing authority. Apply 35 U.S.C. 261 and 17 U.S.C. 204 to relevant transfers."
+        },
+        {
+          "label": "Define licensed scope",
+          "value": "Asset schedule and permitted-use boundaries",
+          "numeric_value": 2.0,
+          "detail": "Specify patent claims, brand categories, catalog assets, or dataset fields; record territory, term, exclusivity, derivative uses, and prohibited redistribution."
+        },
+        {
+          "label": "Validate buyer economics",
+          "value": "Named buyer and measurable commercial use",
+          "numeric_value": 3.0,
+          "detail": "Interview the licensee's product owner, identify a budget owner, and test whether the rights solve a specific product, distribution, or research constraint."
+        },
+        {
+          "label": "Execute measurable terms",
+          "value": "Royalty schedule and enforceable reporting obligations",
+          "numeric_value": 4.0,
+          "detail": "Document royalty base, permitted deductions, minimum guarantees, payment dates, audit access, cure periods, quality controls, and termination consequences."
+        },
+        {
+          "label": "Reconcile and renew",
+          "value": "Matched usage, statements, invoices, and receipts",
+          "numeric_value": 5.0,
+          "detail": "Join licensee reports to invoice records in SQLite; schedule renewal alerts and exception reviews. Investigate missing territories, unexplained deductions, and late reports."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-02-qualified-licensee-cohorts",
+      "chart_type": "funnel",
+      "title": "A Nested Licensee Development Funnel",
+      "subtitle": "One 200-account cohort; five progressively narrower evidence states.",
+      "chapter_number": 6,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Illustrative account counts across a 6–24-month development window, not a measured benchmark or a 30-day closing promise. Every later cohort is a subset of the preceding cohort. These counts do not derive the canonical annual revenue scenarios.",
+      "caption": "Sequential conversion is 40%, 40%, 37.5%, and 41.67%; five executed licensees represent 2.5% of the original cohort.",
+      "stages": [
+        {
+          "label": "Screened accounts",
+          "value": "200 accounts with relevant commercial applications",
+          "numeric_value": 200.0,
+          "detail": "Each account has an identified product category, operating territory, and plausible use for the controlled rights."
+        },
+        {
+          "label": "Confirmed use cases",
+          "value": "80 accounts with documented buyer interest",
+          "numeric_value": 80.0,
+          "detail": "Eighty of 200 accounts confirm a specific application and identify a contact responsible for evaluating the rights."
+        },
+        {
+          "label": "Diligence participants",
+          "value": "32 accounts exchanging technical and rights evidence",
+          "numeric_value": 32.0,
+          "detail": "Thirty-two of 80 accounts review the rights package and supply enough product information to assess licensing fit."
+        },
+        {
+          "label": "Negotiated term sheets",
+          "value": "12 accounts negotiating scope and economics",
+          "numeric_value": 12.0,
+          "detail": "Twelve of 32 accounts negotiate permitted uses, minimum guarantees, royalty bases, and reporting capabilities."
+        },
+        {
+          "label": "Executed licensees",
+          "value": "5 accounts with signed reporting obligations",
+          "numeric_value": 5.0,
+          "detail": "Five of 12 negotiating accounts execute agreements. Track invoicing, collection, and revenue recognition separately."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-03-base-case-profit-bridge",
+      "chart_type": "waterfall",
+      "title": "The $425,000 Base-Case Profit Bridge",
+      "subtitle": "Four cost deductions reconcile to $180,625 owner net profit.",
+      "chapter_number": 3,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Annual USD. Opening and closing bars are absolute totals; intermediate bars are signed deductions. The cost allocation is illustrative, while revenue, profit, and margin are canonical. This example assumes the operator controls sublicensed rights and recognizes the associated fees gross; agency pass-through receipts are excluded. Recurring personnel and administration total $10,000 monthly; rights participation and transaction-specific legal and audit expenses are additional variable costs.",
+      "caption": "$425,000 - $96,000 - $24,000 - $85,000 - $39,375 = $180,625. Total modeled costs are $244,375; $180,625 / $425,000 = 42.5%.",
+      "stages": [
+        {
+          "label": "Recognized license revenue",
+          "value": "$425,000 annual operator fees and royalties",
+          "numeric_value": 425000.0,
+          "detail": "Opening total includes recognized license fees and royalties only, never the licensees' product-sales base."
+        },
+        {
+          "label": "Personnel and delivery",
+          "value": "Deduct $96,000 for recurring pod work",
+          "numeric_value": -96000.0,
+          "detail": "Illustrative annual allowance for operator delivery and recurring contractor retainers; exclude distributions of the closing owner profit."
+        },
+        {
+          "label": "Systems and administration",
+          "value": "Deduct $24,000 for recurring operating infrastructure",
+          "numeric_value": -24000.0,
+          "detail": "Fund reporting tools, insurance, bookkeeping, secure document storage, and administration without duplicating personnel costs."
+        },
+        {
+          "label": "Rights-holder participation",
+          "value": "Deduct $85,000 in contractual rights payments",
+          "numeric_value": -85000.0,
+          "detail": "Illustrative 20% participation on recognized revenue under controlled sublicensing arrangements; replace this allocation when the actual rights structure differs."
+        },
+        {
+          "label": "Deal-specific legal and audits",
+          "value": "Deduct $39,375 for variable specialist services",
+          "numeric_value": -39375.0,
+          "detail": "Expense transaction-specific drafting, rights investigation, and royalty examinations separately from recurring retainers; this bar is not an unspent cash reserve."
+        },
+        {
+          "label": "Annual owner net profit",
+          "value": "$180,625 retained at 42.5% modeled margin",
+          "numeric_value": 180625.0,
+          "detail": "Closing total equals revenue less all four modeled cost categories and matches the canonical Base-Case result."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-04-license-structure-yields",
+      "chart_type": "horizontal_bars",
+      "title": "Compare Annual License Receipts by Rights Package",
+      "subtitle": "Five illustrative agreement-level yields, all expressed in USD.",
+      "chapter_number": 2,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Bars show hypothetical annual operator fees for one agreement, not market royalty benchmarks, profit, or additive portfolio revenue. Assume a full licensed year, earned fees, and collection without withholding or payment charges. Minimum guarantees are creditable against royalties rather than added to them.",
+      "caption": "Compare license economics on one annual fee basis; the licensee's sales remain a royalty calculation input only.",
+      "stages": [
+        {
+          "label": "Patent field-of-use license",
+          "value": "$20,000 annual royalty from defined product sales",
+          "numeric_value": 20000.0,
+          "detail": "Illustrative 2% royalty on $1,000,000 of contract-defined net product sales; recognize $20,000, not the sales base. Collect against quarterly statements."
+        },
+        {
+          "label": "Brand category license",
+          "value": "$30,000 annual minimum exceeds calculated royalties",
+          "numeric_value": 30000.0,
+          "detail": "Illustrative greater of a $30,000 minimum or 4% of $600,000 net sales. The $24,000 royalty is covered by the minimum, not added to it."
+        },
+        {
+          "label": "Cleared catalog license",
+          "value": "$15,000 annual fee for scheduled catalog assets",
+          "numeric_value": 15000.0,
+          "detail": "Illustrative 100 cleared assets at $150 each for one annual use scope; additional media or territories require a separately priced amendment."
+        },
+        {
+          "label": "Controlled dataset license",
+          "value": "$25,000 annual fee for bounded dataset access",
+          "numeric_value": 25000.0,
+          "detail": "Illustrative five business units at $5,000 annually with permitted-use and redistribution limits; access logs support scope reconciliation rather than ownership claims."
+        },
+        {
+          "label": "Bundled technology package",
+          "value": "$50,000 annual fee across two licensed facilities",
+          "numeric_value": 50000.0,
+          "detail": "Illustrative two facilities at $25,000 annually for scheduled patent and know-how rights; define included support so service effort does not consume the margin."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-05-preflight-rights-and-risk",
+      "chart_type": "decision_tree",
+      "title": "Four Pre-Flight Decisions Before Commercial Commitment",
+      "subtitle": "Proceed on documented evidence; remediate the specific failed check.",
+      "chapter_number": 5,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Numeric values identify ordered decision nodes, not risk probabilities. Each node states its pass and remediation branches. Apply statutes to the actual rights, transaction, and territory; the checks are not interchangeable across asset classes.",
+      "caption": "Resolve title, scope, commercial restrictions, and evidence access before promising an exclusive or unrestricted license.",
+      "stages": [
+        {
+          "label": "Can the operator grant these rights?",
+          "value": "Pass documented title; otherwise repair ownership evidence",
+          "numeric_value": 1.0,
+          "detail": "Review assignments, liens, joint ownership, and sublicensing authority under 35 U.S.C. 261 or 17 U.S.C. 204 as applicable. If authority is supported, continue; otherwise obtain the missing grant or exclude the affected asset."
+        },
+        {
+          "label": "Does the proposed use fit the rights?",
+          "value": "Pass supported scope; otherwise narrow the licensed grant",
+          "numeric_value": 2.0,
+          "detail": "Check territory, duration, patent status, third-party material, and permitted data uses. Apply 17 U.S.C. 102–103 to expression and compilations and 18 U.S.C. 1839 to claimed trade secrets. Proceed only with supported scope."
+        },
+        {
+          "label": "Are commercial restrictions defensible?",
+          "value": "Pass reviewed terms; otherwise revise restrictive provisions",
+          "numeric_value": 3.0,
+          "detail": "Review exclusivity, tying, and resale restrictions under 15 U.S.C. 1 without assuming exclusivity is inherently unlawful. For brand arrangements, assess 16 CFR 436.1 and applicable state franchise rules; resolve classification and required disclosures before execution."
+        },
+        {
+          "label": "Can performance and misuse be detected?",
+          "value": "Pass inspectable controls; otherwise redesign monitoring terms",
+          "numeric_value": 4.0,
+          "detail": "Require royalty records, audit access, retention periods, and enforceable remedies. For trademarks, document quality control relevant to 15 U.S.C. 1055 and 1127. If evidence cannot be inspected, revise terms or decline."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-06-four-to-six-person-pod",
+      "chart_type": "org_architecture",
+      "title": "A Four-Person Core with Two Explicit Scale Seats",
+      "subtitle": "Base: 1 FT + 3 C. Scaled: 2 FT + 4 C.",
+      "chapter_number": 11,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "FT denotes a full-time seat; C denotes a contractor person, not a full-time equivalent. Each node represents one person. Conservative: $50,000 annual revenue, 25% margin, $12,500 owner net, 1 FT + 3 C. Base: $425,000 annual revenue, 42.5% margin, $180,625 owner net, 1 FT + 3 C. Scaled: $800,000 annual revenue, 60% margin, $480,000 owner net, 2 FT + 4 C. Revenue excludes licensee product sales.",
+      "caption": "Seats one through four form the core pod; seats five and six are additions for the Scaled Small-Team scenario.",
+      "stages": [
+        {
+          "label": "Licensing principal",
+          "value": "Core full-time seat owning commercial decisions",
+          "numeric_value": 1.0,
+          "detail": "Own buyer development, pricing, rights strategy, and renewal negotiation. Resolve exceptions across the contractor workstreams and retain responsibility for commitments."
+        },
+        {
+          "label": "IP transaction counsel",
+          "value": "Core contractor seat owning rights documentation",
+          "numeric_value": 1.0,
+          "detail": "Review chain of title, draft scoped grants, assess statutory issues, and manage disputes. Separate recurring retainer work from separately billed transaction services."
+        },
+        {
+          "label": "Royalty reporting specialist",
+          "value": "Core contractor seat owning statements and collections",
+          "numeric_value": 1.0,
+          "detail": "Reconcile licensee reports, inspect deductions, issue invoices, and escalate missing receipts. Maintain auditable links between contract terms and reported royalty calculations."
+        },
+        {
+          "label": "Technical rights analyst",
+          "value": "Core contractor seat owning asset-use evidence",
+          "numeric_value": 1.0,
+          "detail": "Map claims, catalog provenance, dataset permissions, and licensee use evidence. Maintain the rights inventory and support counsel without making unsupported ownership assertions."
+        },
+        {
+          "label": "Licensee success manager",
+          "value": "Scaled additional full-time seat owning account execution",
+          "numeric_value": 1.0,
+          "detail": "Add at the six-person scenario to own onboarding, obligation tracking, renewal alerts, and routine account coordination while the principal concentrates on negotiations."
+        },
+        {
+          "label": "Royalty audit examiner",
+          "value": "Scaled additional contractor seat owning exception examinations",
+          "numeric_value": 1.0,
+          "detail": "Add targeted examinations of source sales records and usage logs; avoid auditing their own reporting work and route disputed findings through counsel."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-07-startup-capital-buckets",
+      "chart_type": "stacked_comparison",
+      "title": "Allocate Startup Capital Before Expanding the Rights Portfolio",
+      "subtitle": "Four buckets illustrate a $100,000 plan within $25,000–$250,000.",
+      "chapter_number": 4,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Numeric values are USD allocations for the illustrative $100,000 plan, not annual expenses or canonical revenue. The same 35% / 25% / 20% / 20% split produces $25,000 and $250,000 endpoint comparisons stated in the details. Startup capital does not establish runway: recurring monthly opex is $2,000–$15,000 and first-deal timing is 6–24 months.",
+      "caption": "The four allocations sum to $100,000. The liquidity bucket covers two months at $10,000 recurring monthly opex, so separately fund the remaining development period and variable costs.",
+      "stages": [
+        {
+          "label": "Rights diligence and contracting",
+          "value": "$35,000 central plan allocation for defensible grants",
+          "numeric_value": 35000.0,
+          "detail": "Allocate 35% to title investigation, asset schedules, and contract drafting. Endpoint allocations are $8,750 at $25,000 and $87,500 at $250,000."
+        },
+        {
+          "label": "Buyer validation and packaging",
+          "value": "$25,000 central plan allocation for commercial evidence",
+          "numeric_value": 25000.0,
+          "detail": "Allocate 25% to technical demonstrations, buyer interviews, and scoped licensing materials. Endpoint allocations are $6,250 at $25,000 and $62,500 at $250,000."
+        },
+        {
+          "label": "Reporting and obligation systems",
+          "value": "$20,000 central plan allocation for inspectable operations",
+          "numeric_value": 20000.0,
+          "detail": "Allocate 20% to report templates, controlled document storage, SQLite reconciliation, and renewal scheduling. Endpoint allocations are $5,000 and $50,000 respectively."
+        },
+        {
+          "label": "Uncommitted operating liquidity",
+          "value": "$20,000 central plan allocation for cash continuity",
+          "numeric_value": 20000.0,
+          "detail": "Hold 20% as cash rather than recording an immediate expense. Endpoint allocations are $5,000 and $50,000; do not treat this reserve as acquisition funding twice."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-08-thirty-day-evidence-sprint",
+      "chart_type": "timeline_roadmap",
+      "title": "The First 30 Days Build Evidence, Not Assumed Royalty Income",
+      "subtitle": "Four weekly milestones prepare a disciplined licensing pipeline.",
+      "chapter_number": 12,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Numeric values are milestone ending days. Deliverables are 30-day operating targets, not executed-license forecasts. First-deal planning remains 6–24 months; the sprint does not change the canonical revenue or staffing scenarios.",
+      "caption": "Finish the month with a rights dossier, tested use cases, a draft term structure, and a working reporting rehearsal.",
+      "stages": [
+        {
+          "label": "Days 1-7",
+          "value": "Complete one asset dossier and rights-exception register",
+          "numeric_value": 7.0,
+          "detail": "Inventory ownership documents, licensed territories, asset identifiers, and existing grants. Assign every unresolved title or permission question to counsel."
+        },
+        {
+          "label": "Days 8-14",
+          "value": "Screen twenty accounts and seek five buyer interviews",
+          "numeric_value": 14.0,
+          "detail": "Rank accounts by concrete use case and ability to report usage. Record actual interview outcomes; unanswered outreach does not count as validated demand."
+        },
+        {
+          "label": "Days 15-21",
+          "value": "Draft one scoped offer and royalty calculation schedule",
+          "numeric_value": 21.0,
+          "detail": "Define minimum guarantees, royalty deductions, permitted uses, audit rights, and quality controls. Run the four pre-flight checks before circulating commercial commitments."
+        },
+        {
+          "label": "Days 22-30",
+          "value": "Rehearse reporting and establish the next development cycle",
+          "numeric_value": 30.0,
+          "detail": "Load synthetic royalty records into SQLite, reconcile one sample invoice, and test renewal reminders. Review buyer evidence and cash runway before further spending."
+        }
+      ]
+    }
+  ]
+}

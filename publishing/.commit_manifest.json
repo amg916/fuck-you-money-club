@@ -1,10 +1,10 @@
 {
   "scope": "publishing_store_excluding_previews",
   "sha256": {
-    "audit/existing_work_audit.json": "362ef04a89d07d17ca319c7d08054ad418fe81b33e2e2a4891deddb82a8e5327",
-    "brand/brand_system.json": "a922e0faeb84426df40026f070dba8457ee086b4329f57957519167c3610fabb",
-    "catalog/pipeline_29_candidates.json": "abc23a39f8424fb37efd373272cf29327e0b6eadf1fe225bdc46ff37f65b12f4",
-    "research/research_database_summary.json": "dc8050755287b7967ae265bce7b261dd520cf8e7d155682a66edfe9fc47aac59",
+    "audit/existing_work_audit.json": "47f802077946a509da39a524a7f0d7e2078e8ef00be1f6ac9a693cafa45bc644",
+    "brand/brand_system.json": "312bc5490a6d91e598ba534fddbdd5f9dbd30d0fdd92f13903769d1224831d46",
+    "catalog/pipeline_29_candidates.json": "80b5e5461f834d6fd1646024c835d9d0d0b447e6440eb74d6638a0f8a2c769e7",
+    "research/research_database_summary.json": "ca94536f03ba69deab8efc86479346c0b0f73abe7f18f454cb1778d23d89ba18",
     "site/newsletter_signups.json": "5a97fe09f877c0fccee940246e74f27dc5b6bc83148037af241946b350933794",
     "volumes/vol-001-heir-hunting/chapters/chapter-01.md": "4c44fe7e11c2f4af10ed7241bb0f8b49674c33d8c70c91a965cd3a0dab1133f0",
     "volumes/vol-001-heir-hunting/chapters/chapter-02.md": "c9f8705ba384dbbbd713674229cb8dfce45ab4fab27acea1480b476f229ad08b",
@@ -221,6 +221,24 @@
     "volumes/vol-012-equipment-brokerage/manuscript.json": "bdf084af9d21c0da9c6122aaa5d20020f11c73aadced545a486178604f176db4",
     "volumes/vol-012-equipment-brokerage/metadata.json": "b6061cbf7226583a90b8138c1fce24b62f7c6beb9e540c58a466757315f03dc7",
     "volumes/vol-012-equipment-brokerage/scorecard.json": "f1e0f68afce754e2fc1415598c05d286fd7eee764ff2113d787ae6acfad8b27f",
-    "volumes/vol-012-equipment-brokerage/workbook.json": "4b8b1efc8dff861dcba5f2b7c80e7e4607e25b7d7042f78c0aaf0c57d4873a82"
+    "volumes/vol-012-equipment-brokerage/workbook.json": "4b8b1efc8dff861dcba5f2b7c80e7e4607e25b7d7042f78c0aaf0c57d4873a82",
+    "volumes/vol-013-intellectual-property-licensing/chapters/chapter-01.md": "4380385537eff834446fcbf8aff16ddda93a2afd4034f5d7b3b3412d1777b745",
+    "volumes/vol-013-intellectual-property-licensing/chapters/chapter-02.md": "96177c40c112341e43ac65aaf9c3cf6412e6a5a6d0419019b7a1a4f86598f2ed",
+    "volumes/vol-013-intellectual-property-licensing/chapters/chapter-03.md": "dbefd8bb1aee2ce5c84576771c0bda283a034b0d30c753ea7b8e0a416584dc43",
+    "volumes/vol-013-intellectual-property-licensing/chapters/chapter-04.md": "83a3459a59bf688484fa0cf96a82a71e2d95b248e95d61935b85c5ed656cb249",
+    "volumes/vol-013-intellectual-property-licensing/chapters/chapter-05.md": "ceb2ad71a01da8b2c8be7cf11f6ecbf390c18eeca1d97e3c779d66e4d05858fb",
+    "volumes/vol-013-intellectual-property-licensing/chapters/chapter-06.md": "122bf973b431071c06e2761c4bb2950b240f8509b776fe9f4dddc5306cb7079d",
+    "volumes/vol-013-intellectual-property-licensing/chapters/chapter-07.md": "2f20f753badfb0198e9c9a66bb65be26c9d6786d1bd3e37abbddfd73171a22ee",
+    "volumes/vol-013-intellectual-property-licensing/chapters/chapter-08.md": "16579b1781b402f00ded7b9914d993c2c817d11ac367466bc1a0056237e3bb43",
+    "volumes/vol-013-intellectual-property-licensing/chapters/chapter-09.md": "7bd6bab03d55fb22cf1c357f005be029eed55dd4ada640c87e7f0e959a1552d5",
+    "volumes/vol-013-intellectual-property-licensing/chapters/chapter-10.md": "14e591d6b922ebce2c9806a62a0b03ea905e62f741795fc4fd637c3a6b612458",
+    "volumes/vol-013-intellectual-property-licensing/chapters/chapter-11.md": "8ef0ab935f6aed3552db72ee7ed10232b109eaa222c019801067e03aeb283384",
+    "volumes/vol-013-intellectual-property-licensing/chapters/chapter-12.md": "8a62ae81cb0254e18caf945b325765f303f6822ac40b7c812b65d9ff6d3a214f",
+    "volumes/vol-013-intellectual-property-licensing/diagrams_data.json": "617076f77591c6819bf997472993d553fbc0acffac6d2caa0549614b5dd14aec",
+    "volumes/vol-013-intellectual-property-licensing/graphics_reviews.json": "daa06b5e5860dca13bb8c71127ae7828ae13b88033b4c32023beaa0520fcb6d1",
+    "volumes/vol-013-intellectual-property-licensing/manuscript.json": "a5c46f47731a1731d6559aca406939efd4680785a782c61ca78692a80bddd2f7",
+    "volumes/vol-013-intellectual-property-licensing/metadata.json": "c403e8aa3bebfe80cbef3e0123b47ffa554b9941fd8f58200bd19c217ae3f3bc",
+    "volumes/vol-013-intellectual-property-licensing/scorecard.json": "4f0282791ee8bbfce0f50187ebfeacba8016d3cff8792c3ca28aa7f5864e21fd",
+    "volumes/vol-013-intellectual-property-licensing/workbook.json": "2b9456e54208422325577509fefae0664d3951cec88881653dc8a7c92526291e"
   }
 }
