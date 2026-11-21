@@ -23,18 +23,18 @@ CHAPTER_8 = {
             ],
             "table": {
                 "caption": "10-Tool Attribution, SERP/GEO Intelligence & Contextual Extension Stack",
-                "headers": ["Tool", "Job", "Control"],
+                "headers": ["Tool & Category", "Core Operator Job", "Governance & Cost-Discipline Control"],
                 "rows": [
-                    ["Search Console", "Own SERP demand", "Separate brand queries"],
-                    ["Ahrefs", "Comparison gaps", "Sample, not census"],
-                    ["Screaming Frog", "Indexable HTML", "Check canonical URLs"],
-                    ["Plausible", "Page events", "Minimize identifiers"],
-                    ["Merchant portal", "Cleared commissions", "Export reversals"],
-                    ["Postgres", "Referral ledger", "Dedupe order IDs"],
-                    ["Chrome DevTools", "MV3 event audit", "Inspect outbound calls"],
-                    ["Web Store dashboard", "Extension health", "Watch uninstall cohorts"],
-                    ["Sheets", "GEO test log", "Freeze query sets"],
-                    ["Playwright", "Price table checks", "Respect access terms"]
+                    ["1. Google Search Console + Bing Webmaster", "First-party BOFU query impression, CTR & indexing telemetry", "Segment brand vs non-brand regex; zero cost"],
+                    ["2. Ahrefs / Semrush + DataForSEO API", "Competitor `[Vendor] vs` gap mining, CPC floors & link provenance", "Treat volume estimates as directional samples; audit ROI quarterly"],
+                    ["3. Screaming Frog + Custom HTML Auditor", "Verify server-rendered `<table>` pricing markup, canonicals & FTC bars", "Block deploys if mobile above-the-fold disclosure or `sub1` link breaks"],
+                    ["4. Plausible / First-Party Event Logger", "Cookieless calculator slider completion & bridge-CTR measurement", "Zero PII or cross-site fingerprinting; fast `<2KB` script"],
+                    ["5. PartnerStack / Impact / Everflow Portals", "Authoritative pending -> locked -> settled commission & scrub exports", "Pull weekly CSV/API statements and reconcile reversals by cohort"],
+                    ["6. Cloudflare D1 / Managed PostgreSQL", "Immutable `click_ledger` + idempotent S2S `conversion_events` store", "Enforce `UNIQUE (network, external_tx_id, status)` deduplication"],
+                    ["7. Chrome DevTools + MV3 Service-Worker Audit", "Verify Manifest V3 extension network calls & `activeTab` scope", "Confirm zero background link rewriting or third-party script loads"],
+                    ["8. Chrome Web Store Developer Console", "Track weekly active users (WAU), uninstall spikes & review sentiment", "Gate phased rollouts at 5%-10% cohort before 100% publish"],
+                    ["9. Multi-Engine GEO Benchmark Harness", "Track 10-query citation accuracy across ChatGPT, Perplexity, Gemini & AIO", "Freeze prompt wording across 3 fresh logged-out sessions weekly"],
+                    ["10. Playwright Vendor-Pricing Diff Runner", "Monthly snapshot check of public SaaS/fintech pricing pages", "Respect `robots.txt`/ToS; flag changed seat tiers for human verification"]
                 ]
             }
         },
@@ -46,16 +46,27 @@ CHAPTER_8 = {
                 "The chrome_extension_contextual_arbitrage play works when the user asks for help at the point of choice. A single-purpose Manifest V3 extension can compare B2B fees after a click, explain its inputs, and offer a clearly labeled affiliate route. It must not silently rewrite links in the background, inject referral tags on page load, or displace an existing affiliate code. Stand down where another referral relationship is present; when detection is uncertain, leave the original route intact. Each affiliate action should follow an informed user action tied to a direct benefit, not a blanket permission granted months ago. Use narrow host access and keep the core calculator useful without a referral click. Check the current Chrome Web Store affiliate and single-purpose policies before release; store acceptance does not prove that a merchant permits the same acquisition method.",
                 "The expired_chrome_extension_acquisitions play means buying a dormant business asset, not taking over an abandoned login or domain. A clean extension with 10k-100k users can be a starting point, but installed users are not active buyers and a stale listing is not verified ownership. Obtain a documented transfer from the rightful seller and inspect source rights, dependencies, permissions, prior notices, reviews, and actual active cohorts. Price the deal on retained usefulness, not the seller's install badge. Preserve the original function, announce the ownership change plainly, and introduce related features in small, transparent releases. Compare uninstall rates with the old baseline after each release. If users flag malware or permissions expand without a clear need, stop expansion and investigate. Gradual updates must reduce disruption, never conceal a new purpose or postpone disclosure of material changes."
             ],
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Manifest V3 Extensions, GEO Citations & Pixel Boundaries",
+                "body": "Technical operators capture AI-search citations and extension distribution without policy bans:",
+                "items": [
+                    "Request `activeTab` Instead of `<all_urls>` When Acquiring or Shipping MV3 Extensions: Broad `<all_urls>` permission changes trigger Chrome's scary 'Read and change all your data' disablement prompt, wiping out 40%-70% of an acquired user base overnight.",
+                    "Win ChatGPT Search & Perplexity Citations With Dated HTML `<table>` + Methodology Rows: Answer engines disproportionately quote pages that pair an explicit numeric comparison `<table>` with a 2-sentence 'How We Calculated Seat Costs (Verified [Month Year])' block.",
+                    "Test Affiliate Stand-Down Against `?utm_source=`, `irclickid`, `ps_xid`, and `awc` Before Release: Your browser extension must detect existing referral parameters in the tab URL and suppress affiliate injection so partner networks never ban your account for poaching.",
+                    "Default Identity-Resolution Pixels to OFF Unless Explicit Opt-In Clears Counsel Review: On high-ticket B2B comparison hubs, server-side `click_id` + voluntary calculator email capture delivers 90% of the revenue value with zero CIPA section 631 wiretap exposure.",
+                ]
+            },
             "table": {
                 "caption": "Chrome Web Store Affiliate Policy & Extension Acquisition Diligence Checklist",
-                "headers": ["Check", "Evidence", "Reject condition"],
+                "headers": ["Diligence Gate", "Required Documentary & Technical Proof", "Immediate Deal-Kill / Reject Condition"],
                 "rows": [
-                    ["Single purpose", "Listing matches core utility", "Unrelated referral injection"],
-                    ["User action", "Click trace and disclosure", "Background tag insertion"],
-                    ["Stand-down", "Existing affiliate test fixture", "Prior tag displaced"],
-                    ["Ownership", "Seller rights and valid transfer", "Unverifiable title"],
-                    ["Code integrity", "Build, permissions, dependency review", "Unexplained remote execution"],
-                    ["Retention", "Active cohorts and update notices", "Install badge without activity"]
+                    ["1. Single-Purpose Compliance", "CWS listing, popup UI & codebase serve one narrow B2B utility", "Injecting unrelated retail shopping or coupon popups across general sites"],
+                    ["2. Explicit User Gesture", "HAR trace proves affiliate link opens strictly on user button click", "Background tab-unders, auto-redirects, or page-load cookie dropping"],
+                    ["3. Existing-Affiliate Stand-Down", "Automated Playwright test suite covering 12+ partner URL parameters", "Overwriting another publisher's `irclickid`, `ps_xid`, `sub1`, or promo code"],
+                    ["4. Clean Chain of Title", "Signed `17 U.S.C. 204(a)` assignment + developer-account CWS transfer", "Shared login credentials without legal assignment or disputed contributors"],
+                    ["5. Manifest V3 Code Integrity", "Reproducible local build from Git; zero remote-hosted JS or obfuscation", "Minified external script loaders, broadened `<all_urls>` asks, or adware history"],
+                    ["6. Active Cohort Retention", "28-day CWS Weekly Active Users (WAU) vs lifetime install badge", "WAU <15% of installs or >3% uninstall spike on benign bug-fix release"]
                 ]
             }
         },
@@ -69,13 +80,13 @@ CHAPTER_8 = {
             ],
             "table": {
                 "caption": "Multi-Engine GEO Citation Testing Protocol",
-                "headers": ["Surface", "Repeatable test", "Evidence and failure"],
+                "headers": ["AI Answer Surface", "Repeatable Weekly Panel Protocol", "Audit Evidence & Repair Trigger"],
                 "rows": [
-                    ["ChatGPT", "10 buyer queries x 3 fresh sessions", "Save cited passage; flag unsupported recommendation"],
-                    ["Perplexity", "Same query panel and locale", "Inspect source URL; flag stale price"],
-                    ["Gemini", "Same panel; record shown mode", "Separate linked source from uncited mention"],
-                    ["Google AI Overviews", "Same panel; record device and region", "Log absent overview separately"],
-                    ["All surfaces", "Weekly repeat after evidence refresh", "Report supported citations / all runs and / surfaced answers"]
+                    ["ChatGPT (Search / Browse)", "10 BOFU buyer queries x 3 fresh logged-out sessions", "Archive cited URL + verbatim fee quote; patch HTML/JSON if fee misquoted"],
+                    ["Perplexity Pro / Default", "Identical 10-query B2B pricing panel locked to US locale", "Verify footnote rank (#1-#5) and check dated vendor pricing freshness"],
+                    ["Google Gemini", "Identical 10-query panel; log model tier and grounding links", "Separate clickable source-card links from unlinked brand mentions"],
+                    ["Google AI Overviews (AIO)", "Desktop + mobile SERP capture across US commercial IPs", "Log AIO trigger rate separately; verify structured HTML table extraction"],
+                    ["Cross-Engine Synthesis", "Weekly diff run after vendor pricing or schema updates", "Track supported-citation share and downstream `/go/` Net EPC by referrer"]
                 ]
             },
             "sop_steps": [
@@ -105,14 +116,14 @@ CHAPTER_8 = {
                 ]
             },
             "table": {
-                "caption": "Forensic Controls for Attribution Shortcuts",
-                "headers": ["Naive Trap", "Detection Metric", "Durable Operator Fallback"],
+                "caption": "Forensic Controls for Attribution, Extension & Pixel Shortcuts",
+                "headers": ["Naive Beginner Trap", "Forensic Detection Metric", "Durable Operator Fallback"],
                 "rows": [
-                    ["Installs equal buyers", "Monthly active / installed users", "Price retained active cohorts"],
-                    ["Mentions equal accuracy", "Supported claims / cited claims", "Publish dated methods and corrections"],
-                    ["First-party hostname equals privacy", "Third-party requests before permission", "Disable resolution; use aggregate counts"],
-                    ["Clicks equal incremental sales", "Cleared earnings versus holdout", "Reconcile refunds and test a control"],
-                    ["Last touch justifies rewriting", "Existing tags altered in test suite", "Stand down; preserve original referral"]
+                    ["Valuing dormant Chrome extensions on lifetime install badges", "28-day CWS Weekly Active Users (WAU) divided by total installs", "Bid strictly on verified 28-day active cohorts and Manifest V3 code"],
+                    ["Treating uncited LLM brand mentions as monetizable GEO wins", "Clickable verified source-card citations divided by total panel runs", "Publish dated HTML+JSON fee benchmarks that earn linked citations"],
+                    ["Assuming CNAME first-party proxying exempts B2B identity pixels", "Third-party network/HAR requests fired prior to affirmative opt-in", "Hard-block resolver scripts until required jurisdiction consent is logged"],
+                    ["Crediting checkout coupon clicks as 100% incremental conversions", "Cleared post-scrub earnings vs merchant incrementality holdout tests", "Lead with pre-checkout comparison value and honor partner stand-down rules"],
+                    ["Overwriting upstream creator `irclickid` / `ps_xid` parameters", "Automated Playwright tag-preservation check across 12+ network params", "Enforce strict stand-down logic whenever any affiliate tag is present"]
                 ]
             }
         },

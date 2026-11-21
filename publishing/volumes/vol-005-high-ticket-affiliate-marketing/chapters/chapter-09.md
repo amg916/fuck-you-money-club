@@ -43,6 +43,14 @@ The play aged_high_karma_social_account_brokerage becomes dangerous when bought 
 
 Assign one owner to the evidence trail even when contractors write the pages and manage bids. Each live asset needs a merchant contract version, disclosure capture, claim support, traffic source, and last review date. Use a small register with links rather than a heavy process that nobody updates. Review the highest-spend campaigns first each Monday and sample lower-volume assets on a rotating schedule. Track the share of paid clicks covered by current written rights, the share of recommendations with visible disclosures, and the share of claims with accessible support. These are operating checks, not promises that enforcement or clawbacks cannot happen. When an exception appears, stop the affected placement, preserve its records, correct the cause, and tell the relevant buyer or merchant what changed. Do not destroy the history by silently replacing screenshots.
 
+> **INSIDER PRO-TIPS — Disclosure Placement, TM+ Riders & Lead-Consent Protections**
+> 
+> Compliance-first super-affiliates keep 100% of their earned commissions during merchant audits by enforcing four habits:
+> - Screenshot Mobile Viewport (`390x844`) Disclosure Placement on Every Template Change: Network compliance teams audit on mobile—if a hero badge pushes your 16 CFR Part 255 disclosure below the first affiliate CTA button on iPhone, fix the CSS before buying traffic.
+> - Get TM+ Co-Bidding Permission Signed by the Merchant's Growth Lead, Not Just Verbal AM Chat: Turnover among junior affiliate managers is high; a dated written rider listing exact `[Brand] vs [Competitor]` query scope prevents retroactive clawbacks when a new AM joins.
+> - Store TrustedForm / Jornaya Claim URLs Alongside Form-Text SHA-256 Hashes: Even after the Eleventh Circuit vacated the FCC's one-to-one rule in Jan. 2025, enterprise insurance/solar/home buyers still contractually reject leads lacking seller-named consent and retained session certificates.
+> - Never Cross-Pollinate Healthcare Clinical Referrals With Percentage RevShare: Keep B2B healthcare software (flat subscription SaaS sold to clinics) completely walled off from per-patient DME/lab/pharmacy referrals prohibited under `42 U.S.C. 1320a-7b(b)`.
+
 ## 3. Route leads only with provable, current permission  `🏷️ OPERATING_FRAMEWORK`
 
 The Eleventh Circuit vacated the FCC's one-to-one consent rule in Insurance Marketing Coalition v. FCC in January 2025. Do not describe that vacated rule as a current federal mandate. Its removal did not erase 47 U.S.C. section 227 or the applicable prior express written consent requirements in 47 CFR section 64.1200 for covered telemarketing calls and texts. Whether a communication is covered depends on technology, purpose, recipient, and other facts; an ordinary manual call is not automatically subject to every automated-call requirement. Separate federal consent analysis from do-not-call obligations, state mini-TCPA statutes such as Florida's FTSA, and lead-buyer contract terms. Use a specifically named seller in this chapter's template as a conservative operating and contractual choice, not as a claim that the vacated rule survived. Verify the live rules for each destination state before activating delivery.
@@ -117,21 +125,21 @@ Treat the legal allocations as planning inputs to quote against actual work, not
 
 **Annual Scenario Compliance & Legal Budget**
 
-| Annual line item | Conservative | Base | Scaled |
-| --- | --- | --- | --- |
-| Referred merchant GMV | Tracked separately | Tracked separately | Tracked separately |
-| Gross earned commissions, net of reversals/clawbacks | $50,000 | $325,000 | $600,000 |
-| Staffing footprint | 1 FT + 2 C | 1 FT + 2 C | 2 FT + 3 C |
-| Traffic cost | $15,000 | $85,000 | $100,000 |
-| Staffing/content cost | $16,000 | $95,000 | $145,000 |
-| Tooling/evidence services | $2,000 | $10,000 | $15,000 |
-| Compliance/legal allocation | $3,000 | $12,000 | $24,000 |
-| Other operating costs | $4,000 | $9,250 | $16,000 |
-| Total operating costs | $40,000 | $211,250 | $300,000 |
-| Owner net profit before personal tax | $10,000 | $113,750 | $300,000 |
-| Owner net margin | 20% | 35% | 50% |
-| Worked settled referrals x net commission | 100 x $500 | 500 x $650 | 800 x $750 |
-| Initial operating milestone | Disclosures and rights captured | Consent and suppression tested | Settled cohorts reconciled by channel |
+| Annual Line Item | Conservative | Base | Scaled | Compliance Scope & Audit Rule |
+| --- | --- | --- | --- | --- |
+| Referred merchant GMV | Tracked off-ledger | Tracked off-ledger | Tracked off-ledger | Merchant sales excluded from publisher revenue; never infer GMV from mixed CPA tiers |
+| Gross earned commissions, net of reversals/clawbacks | $50,000 | $325,000 | $600,000 | Settled commissions surviving partner compliance, duplicate, and refund reviews |
+| Staffing footprint | 1 FT + 2 C | 1 FT + 2 C | 2 FT + 3 C | Founder + scoped contractors through Base; adds second FT operator at Scaled |
+| Traffic cost | $15,000 | $85,000 | $100,000 | Authorized search, video, and sponsorship spend compliant with signed TM+ riders |
+| Staffing/content cost | $16,000 | $95,000 | $145,000 | Substantiated product testing, editorial QA, and non-owner labor compensation |
+| Tooling/evidence services | $2,000 | $10,000 | $15,000 | TrustedForm/Jornaya certificates, consent-log storage, LIT/DNC scrub APIs, and S2S |
+| Compliance/legal allocation | $3,000 | $12,000 | $24,000 | Counsel review of partner riders, 16 CFR 255 templates, TCPA flows, and vertical screens |
+| Other operating costs | $4,000 | $9,250 | $16,000 | Entity filings, insurance, accounting, and banking/wire administration |
+| Total operating costs | $40,000 | $211,250 | $300,000 | Complete annual operating expense budget including dedicated legal/evidence line items |
+| Owner net profit before personal tax | $10,000 | $113,750 | $300,000 | Residual business operating profit after compliance and operating expenses |
+| Owner net margin | 20% | 35% | 50% | Net margin sustained by avoiding catastrophic retro-clawbacks and statutory disputes |
+| Worked settled referrals x net commission | 100 x $500 | 500 x $650 | 800 x $750 | Illustrative post-scrub B2B referral cohorts reconciling to top-line revenue |
+| Initial operating milestone | Disclosures and rights captured | Consent and suppression tested | Settled cohorts reconciled by channel | Mandatory compliance verification gate before scaling traffic budgets |
 
 ---
 

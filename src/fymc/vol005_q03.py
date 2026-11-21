@@ -25,10 +25,11 @@ CHAPTER_3 = {
                 "caption": "Forensic EPC, Scrub & Float Traps",
                 "headers": ["Naive Trap", "Detection Metric", "Durable Operator Fallback"],
                 "rows": [
-                    ["GMV called revenue", "Fee / merchant sale", "Separate ledgers"],
-                    ["Pending called earned", "Loss by cohort age", "Reserve reversals"],
-                    ["EPC called profit", "Cost per outbound click", "Deduct all costs"],
-                    ["Net-60 called liquid", "Days to bank receipt", "Fund the cash gap"]
+                    ["Booking referred merchant GMV as publisher revenue", "Earned commission / referred order GMV (<5%-20%)", "Maintain strict 4-column ledger: GMV, Pending, Earned Net, Cash Received"],
+                    ["Spending 'Pending' dashboard commissions before locking", "Reversal + CRM-dedupe loss rate between Day 1 and Day 45-60", "Segregate a 12%-20% Scrub Reserve until contractual lock date passes"],
+                    ["Confusing outbound EPC with inbound bridge-page profit", "Net EPV (Earned / Bridge Visitors) vs paid CPC per visitor", "Cap max paid CPC at <=65% of reversal-adjusted Net EPV"],
+                    ["Scaling paid search into a Net-60 working-capital wall", "Days from ad-card debit (Day 30) to merchant ACH wire (Day 60-75)", "Ring-fence 2+ monthly cost cycles in liquid cash before raising daily caps"],
+                    ["Chasing 2%-4% ad-card rebates on break-even media", "Campaign contribution BEFORE card points (<15% net spread)", "Treat realized card rebates strictly as COGS reduction, never profit"],
                 ]
             }
         },
@@ -39,7 +40,18 @@ CHAPTER_3 = {
                 "Compare a $500 upfront CPA with a thirty percent share of a $200 monthly SaaS bill. The recurring fee is $60 for each paid active month. Assume the first bill succeeds, monthly retention stays constant, and both deals lose ten percent of fees to scrubs distinct from churn. At ninety percent monthly retention, expected active months sum to 7.18 over twelve months and 9.20 over twenty-four months. Net recurring fees are therefore about $387 and $497 per acquired customer, against $450 for the upfront deal. These are cohort expectations, not promises about an individual buyer. They exclude changes in price, expansion revenue, discounting, and contract termination. State those limits next to the comparison. A recurring offer that wins at month twenty-four can still lose badly on the cash needed to buy traffic today.",
                 "At ninety-five percent monthly retention, the same sum rises to 9.19 paid months over twelve months and 14.16 over twenty-four months. Multiplying by the $54 net monthly fee gives roughly $496 and $765. Use the geometric sum (1 - r**n) / (1 - r), with retention r and horizon n; at full retention use n directly. These figures assume churn begins after the first paid month and fees remain payable throughout the horizon. Check whether the merchant caps months, excludes renewals, changes attribution, or ends trailing payments when the publisher leaves. Treat unearned future renewal fees as a forecast, not current revenue or collateral. Discount future cash at the business's chosen funding hurdle when comparing present values, and stress a contract change as well as a retention decline before selecting the winner.",
                 "A hybrid deal can trade some immediate CPA for a smaller recurring share, but its headline parts do not automatically add to more value. Suppose it pays $250 upfront plus fifteen percent of the same monthly bill. With ten percent fee loss and ninety percent retention, net expected receipts are $225 plus $27 times retained paid months: about $419 over twelve months and $473 over twenty-four months. Ask whether the upfront fee is an advance against later revenue share; if so, offset it rather than counting it twice. Compare cash dates, refund exposure, and caps across all three contracts. Keep observed retention by acquisition source because cheap traffic may buy customers who leave sooner. The best blend is the one that pays its own acquisition and service costs under a downside retention curve."
-            ]
+            ],
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "EPC Blending, Negative-Carryover & Float Secrets",
+                "body": "High-margin media buyers protect cash velocity with four non-obvious unit-economics rules:",
+                "items": [
+                    "Pair One Upfront CPA Offer With One Recurring SaaS Offer on the Same Hub: Upfront fintech/demo CPAs ($300-$750) liquidate this month's paid search & contractor bills inside 45 days, while 30% recurring SaaS shares compound pure owner margin in Months 6-24.",
+                    "Strike 'Negative Carryover' Clauses in RevShare Contracts: In gaming, brokerage, or usage-billed SaaS, a single whale chargeback under negative carryover wipes out next month's commissions; insist on monthly zero-reset ('no negative carryover') language.",
+                    "Promote Annual-Prepay Toggle Links Whenever Merchant Pays Upfront Share: Many PartnerStack/Impact B2B programs pay 20%-30% of the entire Year-1 annual invoice on Day 45 when a referred buyer selects annual billing (turning $60/mo into a $600 single check).",
+                    "Align Ad-Card Statement Closing Dates With PartnerStack/Impact Payouts: Impact/PartnerStack typically initiate ACH around the 13th-15th; setting corporate charge-card statement close to the 18th gains ~25 extra float days without paying APR.",
+                ]
+            }
         },
         {
             "heading": "3. Fund the interval between earning and collecting",
@@ -112,21 +124,21 @@ CHAPTER_3 = {
             ],
             "table": {
                 "caption": "Conservative ($50k/$10k), Base ($325k/$113.75k) & Scaled ($600k/$300k) Full Annual P&L",
-                "headers": ["Annual line", "Conservative", "Base", "Scaled"],
+                "headers": ["Annual Line", "Conservative", "Base", "Scaled", "Unit-Economics & Working-Capital Rule"],
                 "rows": [
-                    ["Referred merchant GMV", "Excluded", "Excluded", "Excluded"],
-                    ["Gross earned commissions, net of reversals", "$50,000", "$325,000", "$600,000"],
-                    ["Media, net of realized rebates", "-$20,000", "-$120,000", "-$160,000"],
-                    ["People, excluding owner residual", "-$12,000", "-$60,000", "-$100,000"],
-                    ["Content production", "-$4,000", "-$15,000", "-$18,000"],
-                    ["Tools and tracking", "-$2,000", "-$6,250", "-$10,000"],
-                    ["Finance and other overhead", "-$2,000", "-$10,000", "-$12,000"],
-                    ["Total operating costs", "-$40,000", "-$211,250", "-$300,000"],
-                    ["Net owner profit, before owner income taxes", "$10,000", "$113,750", "$300,000"],
-                    ["Owner net margin", "20%", "35%", "50%"],
-                    ["Staffing capacity, including owner", "1 FT + 2 C", "1 FT + 2 C", "2 FT + 3 C"],
-                    ["Average monthly operating cost", "$3,333.33", "$17,604.17", "$25,000"],
-                    ["Illustrative two-cycle cash bridge", "$6,666.67", "$35,208.33", "$50,000"]
+                    ["Referred merchant GMV", "Excluded off-ledger", "Excluded off-ledger", "Excluded off-ledger", "Merchant gross sales stay outside publisher revenue; track only as partner health memo"],
+                    ["Gross earned commissions, net of reversals", "$50,000", "$325,000", "$600,000", "Post-scrub CPA bounties + recurring SaaS installments earned after lock windows close"],
+                    ["Media, net of realized rebates", "-$20,000", "-$120,000", "-$160,000", "Paid search/social/sponsorship outflow net of settled corporate card rebates"],
+                    ["People, excluding owner residual", "-$12,000", "-$60,000", "-$100,000", "Scoped contractor hours in Conservative/Base; adds loaded FT operator in Scaled"],
+                    ["Content production", "-$4,000", "-$15,000", "-$18,000", "Product test accounts, screen-capture production, and third-party dataset verification"],
+                    ["Tools and tracking", "-$2,000", "-$6,250", "-$10,000", "S2S click ledger, call routing, SERP monitoring, and automated link/cap health checks"],
+                    ["Finance and other overhead", "-$2,000", "-$10,000", "-$12,000", "Working-capital line fees, bookkeeping, legal riders, and state entity compliance"],
+                    ["Total operating costs", "-$40,000", "-$211,250", "-$300,000", "All-in annual expense ceiling prior to owner income taxes"],
+                    ["Net owner profit, before owner income taxes", "$10,000", "$113,750", "$300,000", "Residual owner earnings; price a replacement operator wage separately for valuation"],
+                    ["Owner net margin", "20%", "35%", "50%", "Margin expands only as compounding SEO/YouTube/recurring SaaS lowers blended media share"],
+                    ["Staffing capacity, including owner", "1 FT + 2 C", "1 FT + 2 C", "2 FT + 3 C", "Headcount budget boundary; never add fixed payroll ahead of settled recurring cash"],
+                    ["Average monthly operating cost", "$3,333.33", "$17,604.17", "$25,000", "Monthly cash burn rate that working capital must carry during network lock periods"],
+                    ["Illustrative two-cycle cash bridge", "$6,666.67", "$35,208.33", "$50,000", "Minimum committed liquidity required to survive a 60-day Net-60 payout lag without credit distress"]
                 ]
             }
         }

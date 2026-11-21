@@ -25,14 +25,14 @@ CHAPTER_5 = {
                 "caption": "Site-Reputation-Abuse, Merchant Clawback & Attribution-Loss Defense Matrix",
                 "headers": ["Naive Trap", "Detection Metric", "Durable Operator Fallback"],
                 "rows": [
-                    ["Rented subfolder", "Host profit share", "Independent useful pages"],
-                    ["80% one merchant", "Settled revenue share", "Test substitutes"],
-                    ["30% becomes 5%", "Effective rate", "Reprice acquisition"],
-                    ["Unauthorized TM+", "Permission coverage", "Signed co-bidding terms"],
-                    ["Typo domains", "Domain rights review", "Truthful comparisons"],
-                    ["Forced cookies", "Clicks without intent", "Authorized deal pages"],
-                    ["Coupon poaching", "Assisted credit loss", "Attribution evidence"],
-                    ["Cold direct links", "Reachable lead share", "Optional owned capture"]
+                    ["Unedited parasitic media subfolder leasing", "Share of net profit from third-party rented hosts (>30% alert)", "Build owned vertical calculator domains + disclosed editorial partnerships"],
+                    ["80% single-merchant revenue concentration", "Trailing 60-day settled commission share per merchant (>25% cap)", "Pre-approve Primary, Runner-Up & Fallback offers behind `/go/` edge router"],
+                    ["Overnight 30% -> 5% partner rate slash", "Effective realized payout per conversion vs contractual baseline", "Trigger automated ClickFlare EPC rule shifting traffic to Offer B in <2h"],
+                    ["Unauthorized TM+ brand-keyword bidding", "Brand-Monitor compliance flags or unpaid balance holds", "Apply account-wide negative brand lists OR sign a written TM+ co-bidding rider"],
+                    ["ACPA typo-squatted lookalike domains", "Trademark similarity screen under 15 U.S.C. 1125(d)", "Register neutral category benchmark domains (`payrollswitchlab.com`)"],
+                    ["Tab-under / forced cookie-stuffing scripts", "Abnormal click-to-order ratio (<0.1%) & sub-second session flags", "Use explicit user-clicked comparison CTAs & merchant-authorized deal pages"],
+                    ["Checkout coupon-toolbar last-click poaching", "Assisted conversions lost to promo-code affiliates at cart", "Negotiate exclusive partner landing URLs with coupon-field suppression + S2S"],
+                    ["Direct-linking cold traffic to vendor homepages", "0% reachable first-party email/quiz asset on bouncing clicks", "Insert a 30-second ROI calculator + optional migration-checklist opt-in first"]
                 ]
             }
         },
@@ -43,7 +43,18 @@ CHAPTER_5 = {
                 "Suppose one merchant provides eighty percent of earned commissions and cuts its rate from thirty percent to five percent overnight. Hold eligible sales volume and reversal rates constant to isolate the shock. That merchant now pays one sixth of its former amount; the remaining portfolio keeps its old earnings. Total commissions fall to one third of the starting level, a loss of roughly two thirds before any cost savings. This is not an eighty percent traffic problem. It is a contract pricing problem that can destroy a profitable acquisition budget while traffic looks healthy. Read notice periods, exclusions, and amendment rights before accepting the exposure. Record the effective date and which transactions receive the old rate. Never assume an announced rate change applies retroactively or that pending earnings are protected without checking the agreement.",
                 "Build substitutes while the leading offer still works. Compare customer fit, eligible order value, refund patterns, payout timing, support quality, and the merchant's ability to close qualified leads. A nominally higher rate can produce less cash if the sales team misses calls or the program rejects renewals. Send a limited matched cohort to a second merchant and wait through its reversal window before declaring victory. Keep a route for customers whose needs the first merchant cannot meet rather than forcing every reader into the same offer. Set a concentration ceiling from the cash loss you can withstand, not from a universal percentage borrowed from another business. The useful question is whether the company survives losing its largest contribution stream while still paying staff and honoring its existing production commitments through the replacement period.",
                 "Keep three amounts separate in every review: referred merchant gross merchandise value, affiliate commissions earned after reversals, and owner net profit after operating costs. A million dollars of customer purchases is not a million dollars of publisher revenue. Pending commissions are not settled cash either. Track the difference between booked, approved, payable, and received amounts, with the merchant's reason codes attached to changes. A contract may permit unpaid balance forfeiture for prohibited promotion; do not describe that outcome as automatic under every program or as a statutory penalty. Ask for the specific clause, an evidence trail, and a dispute route. Budget traffic, content, tooling, staff, and contractors against collectible commission income. When evidence is missing, preserve the disputed amount separately rather than making payroll depend on an optimistic dashboard number that the merchant has not accepted."
-            ]
+            ],
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Super-Affiliate Defenses Against Poaching & Rate Cuts",
+                "body": "Seven-figure referral operators insulate their margins from platform and merchant shocks with four structural plays:",
+                "items": [
+                    "Request a Dedicated Vanity Partner Code Alongside Your S2S Link: When a buyer watches your YouTube teardown on mobile and types the URL on desktop later, an exclusive 10%-off or extended-trial partner code (`SWITCHLAB`) captures cross-device conversions cookies miss.",
+                    "Audit 'BrandVerity / AdPolice' Broad-Match Leaks Weekly: Even honest non-brand Google Ads (`best payroll software`) match `[merchant name] payroll` under Broad Match unless every restricted partner brand is locked in an account-level Phrase/Exact negative list.",
+                    "Negotiate 30-Day Written Rate-Protection Windows: Standard network clickwrap lets merchants cut payouts on 24 hours' notice; once you deliver 15+ monthly customers, ask for a 30-day written rate-change notice rider so paid media never gets ambushed mid-flight.",
+                    "Keep Runner-Up Offer 'Warm' With 15%-20% Split Traffic: Never wait until Offer A pauses or slashes commissions to apply to Offer B—send 15%-20% of calculator traffic to Offer B continuously so your S2S postback, AM relationship, and VIP tier stay hot.",
+                ]
+            }
         },
         {
             "heading": "3. Replace stolen intent with explicit commercial rights",
@@ -106,23 +117,23 @@ CHAPTER_5 = {
             ],
             "table": {
                 "caption": "Conservative / Base / Scaled Risk-Adjusted Scenario Ledger",
-                "headers": ["Annual illustrative measure", "Conservative", "Base", "Scaled"],
+                "headers": ["Annual Illustrative Measure", "Conservative", "Base", "Scaled", "Concentration Stress & Governance Rule"],
                 "rows": [
-                    ["Eligible referred merchant GMV, rounded", "$277,778", "$1,805,556", "$3,333,333"],
-                    ["Commission before reversals, rounded", "$55,556", "$361,111", "$666,667"],
-                    ["Reversals at 10%, rounded", "$5,556", "$36,111", "$66,667"],
-                    ["Gross earned commissions, net of reversals", "$50,000", "$325,000", "$600,000"],
-                    ["Traffic cost allowance", "$10,000", "$80,000", "$110,000"],
-                    ["Content cost allowance, excluding labor below", "$4,000", "$16,000", "$25,000"],
-                    ["Tooling cost allowance", "$2,000", "$10,000", "$15,000"],
-                    ["FT + contractor compensation allowance", "$22,000", "$95,000", "$135,000"],
-                    ["Other operating costs", "$2,000", "$10,250", "$15,000"],
-                    ["Total cost ceiling", "$40,000", "$211,250", "$300,000"],
-                    ["Owner net profit / margin", "$10,000 / 20%", "$113,750 / 35%", "$300,000 / 50%"],
-                    ["Staffing", "1 FT + 2 C", "1 FT + 2 C", "2 FT + 3 C"],
-                    ["80% exposure: 30% to 5% rate shock; retained revenue", "$16,667", "$108,333", "$200,000"],
-                    ["Shock profit with unchanged costs, rounded", "-$23,333", "-$102,917", "-$100,000"],
-                    ["Evidence milestone", "Reconcile first settled cohort", "Validate substitute and capture", "Repeat profitable diversified cohorts"]
+                    ["Eligible referred merchant GMV, rounded", "$277,778", "$1,805,556", "$3,333,333", "Off-statement customer order volume assuming 20% gross commission before 10% scrub"],
+                    ["Commission before reversals, rounded", "$55,556", "$361,111", "$666,667", "Provisional webhook commissions prior to trial cancellations, refunds, and clawbacks"],
+                    ["Reversals at 10%, rounded", "$5,556", "$36,111", "$66,667", "Modeled 10% lock-window scrub deduction tracked by traffic source and merchant"],
+                    ["Gross earned commissions, net of reversals", "$50,000", "$325,000", "$600,000", "Recognized affiliate top-line revenue after reversals"],
+                    ["Traffic cost allowance", "$10,000", "$80,000", "$110,000", "Paid BOFU search, sponsorships, and email acquisition with source-level kill switches"],
+                    ["Content cost allowance, excluding labor below", "$4,000", "$16,000", "$25,000", "Independent vendor test accounts, calculators, datasets, and video assets"],
+                    ["Tooling cost allowance", "$2,000", "$10,000", "$15,000", "First-party `/go/` edge router, S2S ledger, email ESP, and SERP/uptime monitors"],
+                    ["FT + contractor compensation allowance", "$22,000", "$95,000", "$135,000", "Non-owner contractor scopes in Conservative/Base; includes second FT operator at Scaled"],
+                    ["Other operating costs", "$2,000", "$10,250", "$15,000", "Legal riders, accounting, entity compliance, insurance, and payment fees"],
+                    ["Total cost ceiling", "$40,000", "$211,250", "$300,000", "Fixed+variable annual expense budget stress-tested against merchant commission cuts"],
+                    ["Owner net profit / margin", "$10,000 / 20%", "$113,750 / 35%", "$300,000 / 50%", "Unshocked pre-tax owner operating profit and margin"],
+                    ["Staffing", "1 FT + 2 C", "1 FT + 2 C", "2 FT + 3 C", "Lean pod ceiling; never sign fixed commitments against single-merchant concentration"],
+                    ["80% exposure: 30% to 5% rate shock; retained revenue", "$16,667", "$108,333", "$200,000", "Harsh stress test: dominant 80%-share partner slashes commission rate by 83.3% overnight"],
+                    ["Shock profit with unchanged costs, rounded", "-$23,333", "-$102,917", "-$100,000", "Resulting operating loss proving why a <=25% single-merchant cap is mandatory"],
+                    ["Evidence milestone", "Reconcile first settled cohort", "Validate substitute and capture", "Repeat profitable diversified cohorts", "Required portfolio defense gate before graduating to the next operating tier"]
                 ]
             }
         }

@@ -26,20 +26,20 @@ Model six to sixteen percent click to lead or trial as an experiment range for c
 
 **12-Signal High-Intent Buyer Query & Spend-Velocity Qualification Matrix**
 
-| Signal | Evidence | Decision |
+| Commercial Signal | Observable Verification Evidence | Operator Action & Page Format |
 | --- | --- | --- |
-| Pricing calculator | Seats and billing term | Model total cost |
-| Vendor vs vendor | Specific use case | Compare verified features |
-| Switch from incumbent | Migration deadline | Explain switching work |
-| Cancel incumbent | Exit intent | Answer cancellation first |
-| Alternative query | Named unmet need | Match real substitutes |
-| CDL bonus jobs | License and location | Verify bonus conditions |
-| Travel-nurse bonus | Specialty and dates | Verify contract terms |
-| Meta persistence | >=30 days observed | Test; profit unknown |
-| Google persistence | Dated advertiser records | Check regional continuity |
-| TikTok persistence | Repeat visible creative | Coverage may be partial |
-| Creative refresh | New dated variants | Activity, not spend |
-| Offer continuity | Live terms and landing page | Check accepted EPC |
+| 1. `[Vendor] pricing calculator` | Tiered per-seat, usage, or state add-on fees hidden behind sales calls | Build interactive 12-month total-cost calculator with dated fee sources |
+| 2. `[Vendor A] vs [Vendor B]` | High commercial CPC ($12-$38+) & active dual-vendor search autocomplete | Publish side-by-side workflow test matrix + clear 'Best For / Avoid If' split |
+| 3. `How to migrate from [Incumbent]` | Contract renewal cliff, CSV/API export pain, or price-hike backlash | Offer step-by-step migration checklist + concierge setup bonus offer |
+| 4. `Cancel [Incumbent] contract` | Acute churn intent documented in G2/Reddit renewal complaints | Give exact honest cancellation steps first, then rank vetted replacements |
+| 5. `[Incumbent] alternative for [Niche]` | Missing vertical compliance, integration, or seat-minimum gap | Route to specialized challenger SaaS paying $300-$1,200+ qualified CPA |
+| 6. `CDL Class A sign-on bonus [Metro]` | Verified carrier XML feed with active DOT hiring & bonus terms | Enrich authorized XML feed with `JobPosting` schema & license-class filter |
+| 7. `ICU / OR travel-nurse stipend [State]` | Authorized healthcare staffing feed with dated weekly stipend breakdown | Route verified RNs to staffing partner CPA ($25-$85 qualified application) |
+| 8. Meta Ad Library >=30d run | Same advertiser running >=5 creative variants continuously >=30 days | Log angle & bridge structure as test candidate (activity proxy, not profit proof) |
+| 9. Google Ads Transparency continuity | Verified B2B/call advertiser bidding across Tier-1 US states >=45 days | Confirm commercial keyword economics & inspect landing-page qualification |
+| 10. TikTok / YouTube ad iteration | Fresh hook variants pointing to identical quiz or calculator bridge | Adapt problem-hook structure into organic YouTube comparison walkthrough |
+| 11. PartnerStack / Impact marketplace rank | Active VIP payout tiers, <15% historical reversal rate & responsive AM | Apply with live comparison hub URL and request S2S webhook sandbox |
+| 12. Live merchant sales-team SLA | Mystery-shopped demo calendar shows <24h AE slot availability | Approve for primary traffic slot (slow AE calendars kill B2B conversion) |
 
 ## 2. Mine activity, then build a useful destination  `🏷️ OPERATING_FRAMEWORK`
 
@@ -48,6 +48,14 @@ The play ad_library_spend_velocity_arbitrage is a research filter, not access to
 The play competitor_intent_comparison_hijacking means earning attention with a better answer, not impersonating an incumbent. Build a dated calculator for [Software] pricing calculator, a substantiated [Vendor] vs [Vendor] comparison, or a practical guide for how to switch from [Incumbent]. Show seat counts, currency, billing cycle, mandatory fees, and the date each price was checked. Distinguish published terms from estimates and link the underlying merchant pages. Explain migration limitations instead of implying every workflow transfers automatically. Use competitor names only as needed to identify the comparison, avoid confusing branding, and never imply sponsorship. Nominative fair use is context dependent, not an automatic shield; section 1125(a) addresses false association and misleading representations. Put a clear affiliate relationship disclosure near the recommendation, consistent with the endorsement guides, rather than hiding the financial connection in a remote page footer.
 
 For job_board_xml_feed_programmatic_arbitrage, start with legitimate employer feeds and explicit republication rights. Preserve employer identifiers and stable job IDs; enrich salary, location, shift, licensing, and bonus eligibility only from reliable authorized data. A CDL sign on bonus may require a specific license class, driving history, and repayment commitment. A travel nurse bonus may depend on specialty, contract duration, start date, and completed hours. State those conditions without turning maximum possible compensation into a universal salary promise. Refresh on the employer's schedule, display verification dates, deduplicate listings, and remove closed jobs promptly. If a feed fails, suspend uncertain inventory rather than silently treating yesterday's vacancy as live. Unique useful context can improve the application experience; thousands of thin pages cannot repair inaccurate inventory. Section 45 makes deceptive commercial claims relevant to this model even when the misleading data originated upstream.
+
+> **INSIDER PRO-TIPS — BOFU Query Mining & Private Payout-Bump Secrets**
+> 
+> Top B2B affiliates win approvals and private rate tiers faster by reversing how beginners approach partner managers:
+> - Ship One Working Comparison Calculator BEFORE Applying to Tier-1 Programs: Enterprise SaaS managers reject 80% of blank 'I run SEO/ads' applications; applying with a live, fast, FTC-disclosed calculator URL wins instant approval and Slack access.
+> - Target 'Zero-Volume' High-ACV Integration Queries (`[CRM] + [ERP] sync cost`): Keyword tools report '0-10/mo' on B2B integration queries where 8 monthly clicks yield two $1,000 closed-won deals—mine Google Search Console & sales-call FAQs instead.
+> - Ask for a '30-Day Volume-Tier Step-Up' Instead of an Unconditional Bump: Managers rarely grant a blind +30% CPA hike on Day 1, but routinely sign 'Default $500 CPA; steps retroactively to $650 CPA in any calendar month with >=10 qualified demos.'
+> - Mystery-Shop the Merchant's Demo Funnel Before Spending Paid Dollars: Book a disclosed test walkthrough or inspect their calendar—if the merchant's form errors on mobile or offers no AE slots for 9 days, your EPC will crater regardless of payout size.
 
 ## 3. Secure terms and negotiate from accepted cohorts  `🏷️ OPERATING_FRAMEWORK`
 
@@ -59,13 +67,13 @@ The outreach scripts below are templates with explicit placeholders, not invente
 
 **Verbatim Affiliate Manager Approval & Private 25%-CPA-Bump Negotiation Scripts**
 
-| Scenario | Send this | Required record |
+| Scenario | Copy-Pasteable Partner-Manager Outreach Script | Required Written Record |
 | --- | --- | --- |
-| New publisher | I plan [page] for [audience]. May I use [channel]? Please confirm payable events and exclusions. | Written program terms |
-| Comparison search | May I buy [keyword] and link through [URL]? Please distinguish competitor terms from your brand terms. | Keyword permissions |
-| Employer feed | May I republish your authorized XML with dated salary and location fields? What closes a listing and earns CPA? | Feed rights and event |
-| Mature cohort bump | Cohort [dates] produced [accepted] events and [reversals]. Can we test $125 instead of $100 CPA for [period]? | Verified cohort |
-| Conditional counteroffer | If $125 is unavailable now, what accepted volume and quality would qualify? Please confirm dates, channels, and whether tiers are retroactive. | Written tier schedule |
+| 1. Initial B2B Program Approval | Hi [Name] — we operate [Domain], an independent B2B fee calculator & migration desk for [10-150 seat buyers]. Live sample: [URL]. We drive US commercial comparison search + screen-recorded YouTube walkthroughs (zero coupon toolbars, zero unauthorized TM bidding). Could you approve Partner ID [#] and confirm S2S postback support (`ps_xid`/`subId1`) plus any CRM-dedupe exclusions? | Written channel approval, S2S parameter spec & CRM-dedupe rules |
+| 2. Competitor-Comparison Search Clearance | Hi [Name] — before we launch exact-match Google/Bing campaigns on `[Incumbent] pricing calculator` and `[Incumbent] vs [Your Brand]` routing through our disclosed comparison matrix at [URL], please confirm in writing: (a) non-brand & competitor comparison search is permitted, and (b) whether you offer a written TM+ co-bidding schedule or require `[Your Brand]` in account-level negatives. | Signed keyword scope or written negative-keyword confirmation |
+| 3. Authorized XML Job-Feed Onboarding | Hi [Name] — we enrich direct employer XML feeds on [Domain] with verified salary, shift, and bonus-eligibility tables for [CDL / RN segment]. May we ingest feed [URL] refreshing every [6h], and please confirm the exact billable CPA event (completed application vs verified interview), duplicate window, and closed-requisition suppression SLA. | Written XML republication license, billable event & dedupe window |
+| 4. Mature-Cohort 25% Private CPA Bump | Hi [Name] — our [Dates] cohort delivered [18] accepted [SQL demos / funded accounts] with only [1] duplicate scrub ([94.7%] acceptance) from our switching calculator. At our current [$400] CPA, paid search bids cap out at Position 3. Can we step to a private [$500] CPA (+25%) effective [Date] so we can move to top-of-page share and target [35+] accepted accounts/month? | Updated IO / PartnerStack tier confirmation with effective date |
+| 5. Volume-Tiered Step-Up Counteroffer | Understood if flat [$500] requires VP sign-off—would you approve a 30-day performance tier: [$400] baseline on conversions 1-9, stepping to [$500] (retroactive across the month's accepted cohort) whenever we clear >=10 accepted conversions with >=85% post-lock retention? Happy to share weekly subID quality readouts. | Written volume-tier schedule specifying retroactive vs marginal math |
 
 **SOP — Standard Operating Procedure**
 
@@ -90,15 +98,15 @@ Diagnose the weakest transition before changing the payout assumption. Cheap vis
 
 Read the scorecard as a sequence of evidence collection, not seven promises of success. On the first day, verify links and program reporting using permitted test methods; do not submit fake customer applications. During the next days, inspect query relevance, page behavior, and merchant transitions. By the seventh day, decide whether to stop, repair, or wait for acceptance data before extending spend. The table's example counts describe a single hypothetical cohort whose economics become known only after maturation. If actual acceptance remains pending, label the financial cells pending instead of filling them with the modeled numbers. Keep screenshots or exports of reporting totals with timestamps so later reversals can be reconciled. A winning first week may simply be eliminating an unsuitable offer cheaply while preserving a usable page and a clean measurement process for the next experiment.
 
-**Forensic failure patterns**
+**Forensic Sourcing & Bridge-Funnel Failure Patterns**
 
-| Naive Trap | Detection Metric | Durable Operator Fallback |
+| Naive Beginner Trap | Forensic Detection Metric | Durable Operator Fallback |
 | --- | --- | --- |
-| Old ads prove profit | Own mature EPC absent | Run a bounded cohort test |
-| Trials equal revenue | Accepted/submitted ratio | Price accepted events only |
-| Cheap clicks win | Net commission/purchased visit | Fix query and page fit |
-| More feed pages win | Closed or duplicate listing share | Refresh, deduplicate, suppress |
-| Largest CPA is best | Contribution after reversals | Compare mature cohort economics |
+| Treating 30-day competitor Ad Library longevity as guaranteed profit | Zero internal post-scrub Net EPC cohort data in your own account | Run a hard-capped $300-$500 exact-match validation test before cloning |
+| Counting free-trial or raw lead submissions as earned commission revenue | Accepted-and-settled conversions divided by raw submitted trials/leads | Underwrite media bids strictly on post-lock merchant-accepted events |
+| Chasing $0.08 curiosity clicks that bounce off B2B pricing bridges | Settled net commission per purchased landing visit (`Net EPV`) | Buy narrower `[Vendor] pricing` / `alternative` intent and align bridge copy |
+| Publishing 50,000 stale or duplicate XML job-board pages for volume | Expired-listing bounce rate and Google Search Console excluded-URL ratio | Sync authorized employer feeds hourly, deduplicate IDs, and 410 closed roles |
+| Routing 100% of clicks to the highest-headline-CPA unvetted merchant | Fully loaded cohort contribution after 60-day scrubs and payment lag | Split-test 2 vetted merchants on identical traffic and route by settled Net EPC |
 
 > **OPERATOR GATE — Spend only against observable economics**
 > 
@@ -118,26 +126,26 @@ Candidate #24's annual scenarios are targets for operating design, not extrapola
 
 **7-Day Paid-Search & Bridge-Page Validation Scorecard**
 
-| Day | Measure or milestone | Illustrative record | Decision |
+| Day / Window | Validation Milestone | Illustrative Cohort Telemetry | Mandatory Operator Gate Decision |
 | --- | --- | --- | --- |
-| 1 | Tracking and written terms | Permitted test; capped $500 media | Fix broken attribution before spend |
-| 2 | Actual query relevance | Two narrow query clusters | Exclude irrelevant terms |
-| 3 | Bridge outbound rate | 500 / 1,000 visits = 50% | Investigate page mismatch |
-| 4 | Lead/trial response | 50 / 500 outbound = 10% | Do not count as commissions |
-| 5 | Acceptance status | Pending until merchant review | Retain original cohort date |
-| 6 | Inventory and claims | Refresh jobs, prices, terms | Remove stale claims |
-| 7 | Spend or wait decision | $500 cap; mature results pending | Wait rather than assume profit |
-| After maturation | Accepted less reversals | 20 - 2 = 18; $1,800 earned | $3.60 outbound EPC |
-| Cost reconciliation | Traffic plus allocated operations | $500 + $700 = $1,200 | $600 before remaining overhead |
-| Confirmed bump | 18 retained events at $125 | $2,250 earned; $1,050 contribution | Hold volume assumptions constant |
+| Day 1 | S2S `click_id` & written terms check | Synthetic round-trip verified; $500 hard spend cap armed | Block live media spend until `sub1` echoes in partner portal |
+| Day 2 | Search-term intent & negative audit | 2 exact BOFU `[Vendor] pricing` / `vs` clusters inspected | Add negative keywords for `login`, `jobs`, `free`, and `support` |
+| Day 3 | Bridge calculator outbound CTR check | 500 outbound `/go/` clicks from 1,000 visits (50% CTR) | Rewrite above-the-fold comparison hook if outbound CTR <25% |
+| Day 4 | Merchant trial / demo submission rate | 50 merchant signups from 500 outbound clicks (10% CVR) | Log as provisional pipeline only; never book trials as revenue |
+| Day 5 | Lock-window & scrub queue inspection | 50 signups held in 30-day partner qualification review | Freeze cohort acquisition date; do not blend into newer clicks |
+| Day 6 | Pricing table & disclosure freshness check | Vendor seat tiers, fee dates, and 16 CFR 255 bar audited | Patch any vendor price change within 24h and log version hash |
+| Day 7 | Pilot cap reached — hold for settlement | $500 media cap hit; awaiting merchant billing validation | Pause expansion until lock window closes rather than guessing |
+| Post-Lock (Day 37) | Net accepted events minus reversals | 20 approved minus 2 reversals = 18 net ($1,800 earned) | Verified $3.60 outbound Net EPC ($1.80 Net EPV per visit) |
+| Cohort P&L Close | Media + allocated content/ops bridge | $500 Google Ads + $700 content/QA/tools = $1,200 total cost | +$600 net cohort contribution (33.3% pre-overhead margin) |
+| Written +25% Bump | 18 retained events repriced at $125 CPA | $2,250 net earned; +$1,050 contribution at constant volume | Authorize +20% weekly budget step-up with 2nd fallback offer |
 
-**Candidate #24 annual operating envelopes; GMV excluded**
+**Candidate #24 Annual Operating Envelopes (Merchant GMV Excluded Off-Ledger)**
 
-| Scenario | Gross earned commissions, net of reversals | All-in cost envelope | Margin | Owner net profit | Staffing |
-| --- | --- | --- | --- | --- | --- |
-| Conservative | $50,000 | $40,000 | 20% | $10,000 | 1 FT + 2 C |
-| Base | $325,000 | $211,250 | 35% | $113,750 | 1 FT + 2 C |
-| Scaled | $600,000 | $300,000 | 50% | $300,000 | 2 FT + 3 C |
+| Scenario | Gross Earned Commissions (Net) | All-In Cost Envelope | Margin | Owner Net Profit | Staffing | Primary Demand & Portfolio Rule |
+| --- | --- | --- | --- | --- | --- | --- |
+| Conservative | $50,000 | $40,000 | 20% | $10,000 | 1 FT + 2 C | 1 narrow BOFU niche; 3 competing offers; prove settled Net EPC |
+| Base | $325,000 | $211,250 | 35% | $113,750 | 1 FT + 2 C | 25+ BOFU comparison assets + YouTube + private CPA bumps; <=25% cap |
+| Scaled | $600,000 | $300,000 | 50% | $300,000 | 2 FT + 3 C | Compounding recurring SaaS book + owned newsletter capture across 3-5 hubs |
 
 ---
 
@@ -175,6 +183,6 @@ Candidate #24's annual scenarios are targets for operating design, not extrapola
 13. General Advertiser & Postback set up (Everflow - Partner Marketing Platform) — Everflow - Partner Marketing Platform @ [00:08:55]: Track this event in your everflow account and this event will be across all your offers that you created for this specific Advertiser in this case is Amazon so let's go back to Advertiser. — Attributed practitioner commentary on '[Competitor] alternative/pricing' buyer intent, Ad-Library spend-velocity mining, and private CPA bumps. — <https://www.youtube.com/watch?v=FMpj69YFsHA&t=535s>
 14. Clickfunnels Affiliate 'Mass Page Building' SEO Campaign Ranks For 763 Keywords! (Affiliate Marketing How To) — Affiliate Marketing How To @ [00:05:17]: Here you will see he's got three posts only showing in this homepage he's got absolutely no navigation apart from that okay there's no site map to be found here but if I come in here and I do site colon what was it sonya artwork.com let's take that part. — Attributed practitioner commentary on '[Competitor] alternative/pricing' buyer intent, Ad-Library spend-velocity mining, and private CPA bumps. — <https://www.youtube.com/watch?v=H6zM2ZJJCzk&t=317s>
 15. Profound Alternative: ZeroRank AI Review & Comparison 2026 (🔥 TOP Digital Products 🔥) — 🔥 TOP Digital Products 🔥 @ [00:01:00]: For example, in the analytics section, we've got prompts here. There's some YouTube growth strategy section, YouTube keyword research results, YouTube video ranking services. As you can see, we've got lots of different options here, which is super cool. — Attributed practitioner commentary on '[Competitor] alternative/pricing' buyer intent, Ad-Library spend-velocity mining, and private CPA bumps. — <https://www.youtube.com/watch?v=J_fDLt9cLEg&t=60s>
-16. Make STUPID Money With an SLO (Maximize Profits with a Self-Liquidating Offer & Affiliate Marketing) — Jonathan Montoya @ [00:03:03]: You're spending on Facebook ads to be less or equal to the average cart value okay again if you don't know what that means please go watch part one okay I'm just going over this real quick meaning okay let's just say my funnel is averaging a a total of $45 average cart value and it's costing me about $45 to get a customer that's a really good sign so this is how your SLO should work work. — Matched source commentary; not independent verification or legal authority. — <https://www.youtube.com/watch?v=QdGtcnjJSno&t=183s>
-17. Make STUPID Money With an SLO (Maximize Profits with a Self-Liquidating Offer & Affiliate Marketing) — Jonathan Montoya @ [00:00:00]: End-to-end autonomous case SOP — lead and research objective — Ingest raw evidence and assign immutable source IDs. — Matched source commentary; not independent verification or legal authority. — <https://www.youtube.com/watch?v=QdGtcnjJSno&t=0s>
-18. The Smartest Affiliate Business Model: Recurring SaaS Commissions — Michael Bashi @ [00:01:35]: What I mean. Don't focus on specific products. Rather focus on brands you love. You can choose almost any one of them. Go to their website, scroll all the way to the bottom of their website, and you will see that they have an affiliate program. Almost every single one of them. Even places like Costco has an affiliate program. — Matched source commentary; not independent verification or legal authority. — <https://www.youtube.com/watch?v=lh5ulbIfANU&t=95s>
+16. Parasite SEO is DEAD? (Site Reputation Abuse) - Google May 5, 2024 Algo Update Analysis — Chris Tzitzis @ [00:01:07]: People that don't own the website with little to no first-party oversight or involvement meaning that the owners of the website don't really edit the content or approve it or anything like that and the purpose is to manipulate search rankings by taking advantage of the first party's ranking signal so basically how parasite SEO works you get a big powerful website with a bunch of backlink authority you post content on that website and it ranks. — Matched source commentary; not independent verification or legal authority. — <https://www.youtube.com/watch?v=2VEzLrILXug&t=67s>
+17. Competitor Comparison Landing Pages: Best Practices for Creating a High Converting Comparison Page — Taylor Scher @ [00:00:00]: So I just wanted to make a quick video talking about how you should build out competitor comparison Pages um usually for most clients that I work with I almost always recommend that that's one of the first pages that they build out I kind of consider it to be a mix between sales enablement content and uh content that can work for SEO um really more for sales enablement if anything more for ux. — Matched source commentary; not independent verification or legal authority. — <https://www.youtube.com/watch?v=7tT35Ww4GBg&t=0s>
+18. Pay Per Call 101: Must-Know Before You Start — John Casto @ [00:00:00]: End-to-end autonomous case SOP — lead and research objective — Ingest raw evidence and assign immutable source IDs. — Matched source commentary; not independent verification or legal authority. — <https://www.youtube.com/watch?v=lXG5t2aVZE8&t=0s>

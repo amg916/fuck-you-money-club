@@ -21,20 +21,20 @@ CHAPTER_6 = {
             ],
             "table": {
                 "caption": "12-Signal High-Intent Buyer Query & Spend-Velocity Qualification Matrix",
-                "headers": ["Signal", "Evidence", "Decision"],
+                "headers": ["Commercial Signal", "Observable Verification Evidence", "Operator Action & Page Format"],
                 "rows": [
-                    ["Pricing calculator", "Seats and billing term", "Model total cost"],
-                    ["Vendor vs vendor", "Specific use case", "Compare verified features"],
-                    ["Switch from incumbent", "Migration deadline", "Explain switching work"],
-                    ["Cancel incumbent", "Exit intent", "Answer cancellation first"],
-                    ["Alternative query", "Named unmet need", "Match real substitutes"],
-                    ["CDL bonus jobs", "License and location", "Verify bonus conditions"],
-                    ["Travel-nurse bonus", "Specialty and dates", "Verify contract terms"],
-                    ["Meta persistence", ">=30 days observed", "Test; profit unknown"],
-                    ["Google persistence", "Dated advertiser records", "Check regional continuity"],
-                    ["TikTok persistence", "Repeat visible creative", "Coverage may be partial"],
-                    ["Creative refresh", "New dated variants", "Activity, not spend"],
-                    ["Offer continuity", "Live terms and landing page", "Check accepted EPC"]
+                    ["1. `[Vendor] pricing calculator`", "Tiered per-seat, usage, or state add-on fees hidden behind sales calls", "Build interactive 12-month total-cost calculator with dated fee sources"],
+                    ["2. `[Vendor A] vs [Vendor B]`", "High commercial CPC ($12-$38+) & active dual-vendor search autocomplete", "Publish side-by-side workflow test matrix + clear 'Best For / Avoid If' split"],
+                    ["3. `How to migrate from [Incumbent]`", "Contract renewal cliff, CSV/API export pain, or price-hike backlash", "Offer step-by-step migration checklist + concierge setup bonus offer"],
+                    ["4. `Cancel [Incumbent] contract`", "Acute churn intent documented in G2/Reddit renewal complaints", "Give exact honest cancellation steps first, then rank vetted replacements"],
+                    ["5. `[Incumbent] alternative for [Niche]`", "Missing vertical compliance, integration, or seat-minimum gap", "Route to specialized challenger SaaS paying $300-$1,200+ qualified CPA"],
+                    ["6. `CDL Class A sign-on bonus [Metro]`", "Verified carrier XML feed with active DOT hiring & bonus terms", "Enrich authorized XML feed with `JobPosting` schema & license-class filter"],
+                    ["7. `ICU / OR travel-nurse stipend [State]`", "Authorized healthcare staffing feed with dated weekly stipend breakdown", "Route verified RNs to staffing partner CPA ($25-$85 qualified application)"],
+                    ["8. Meta Ad Library >=30d run", "Same advertiser running >=5 creative variants continuously >=30 days", "Log angle & bridge structure as test candidate (activity proxy, not profit proof)"],
+                    ["9. Google Ads Transparency continuity", "Verified B2B/call advertiser bidding across Tier-1 US states >=45 days", "Confirm commercial keyword economics & inspect landing-page qualification"],
+                    ["10. TikTok / YouTube ad iteration", "Fresh hook variants pointing to identical quiz or calculator bridge", "Adapt problem-hook structure into organic YouTube comparison walkthrough"],
+                    ["11. PartnerStack / Impact marketplace rank", "Active VIP payout tiers, <15% historical reversal rate & responsive AM", "Apply with live comparison hub URL and request S2S webhook sandbox"],
+                    ["12. Live merchant sales-team SLA", "Mystery-shopped demo calendar shows <24h AE slot availability", "Approve for primary traffic slot (slow AE calendars kill B2B conversion)"]
                 ]
             }
         },
@@ -43,7 +43,18 @@ CHAPTER_6 = {
             "epistemic_status": "operating_framework",
             "paragraphs": [
                 "The play ad_library_spend_velocity_arbitrage is a research filter, not access to a competitor's bank account. Keep a dated log of ads found in Meta, Google Ads Transparency Center, and TikTok Creative Center. Track advertiser identity, first observed date, last observed date, offer wording, creative changes, destination, and region. Repeated observations spanning at least thirty days support an activity hypothesis. They do not establish continuous delivery, actual spend velocity, accepted lead quality, or profit. Some libraries expose only selected material, and absence is not proof that an advertiser stopped spending. Rank patterns by persistence and relevance to your chosen buyer task, then test your own unit EPC. A strong incumbent may have better retention, private payouts, or direct sales economics that you cannot copy. Borrow the research question, not their creative, customer claims, identity, or assumed cost structure."
-            ]
+            ],
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "BOFU Query Mining & Private Payout-Bump Secrets",
+                "body": "Top B2B affiliates win approvals and private rate tiers faster by reversing how beginners approach partner managers:",
+                "items": [
+                    "Ship One Working Comparison Calculator BEFORE Applying to Tier-1 Programs: Enterprise SaaS managers reject 80% of blank 'I run SEO/ads' applications; applying with a live, fast, FTC-disclosed calculator URL wins instant approval and Slack access.",
+                    "Target 'Zero-Volume' High-ACV Integration Queries (`[CRM] + [ERP] sync cost`): Keyword tools report '0-10/mo' on B2B integration queries where 8 monthly clicks yield two $1,000 closed-won deals—mine Google Search Console & sales-call FAQs instead.",
+                    "Ask for a '30-Day Volume-Tier Step-Up' Instead of an Unconditional Bump: Managers rarely grant a blind +30% CPA hike on Day 1, but routinely sign 'Default $500 CPA; steps retroactively to $650 CPA in any calendar month with >=10 qualified demos.'",
+                    "Mystery-Shop the Merchant's Demo Funnel Before Spending Paid Dollars: Book a disclosed test walkthrough or inspect their calendar—if the merchant's form errors on mobile or offers no AE slots for 9 days, your EPC will crater regardless of payout size.",
+                ]
+            }
         }
     ],
     "pull_quote": "A winning offer is not the largest payout on a spreadsheet; it is the one whose accepted commissions survive the full cost of reaching the buyer.",
@@ -76,13 +87,13 @@ CHAPTER_6["sections"].append({
     ],
     "table": {
         "caption": "Verbatim Affiliate Manager Approval & Private 25%-CPA-Bump Negotiation Scripts",
-        "headers": ["Scenario", "Send this", "Required record"],
+        "headers": ["Scenario", "Copy-Pasteable Partner-Manager Outreach Script", "Required Written Record"],
         "rows": [
-            ["New publisher", "I plan [page] for [audience]. May I use [channel]? Please confirm payable events and exclusions.", "Written program terms"],
-            ["Comparison search", "May I buy [keyword] and link through [URL]? Please distinguish competitor terms from your brand terms.", "Keyword permissions"],
-            ["Employer feed", "May I republish your authorized XML with dated salary and location fields? What closes a listing and earns CPA?", "Feed rights and event"],
-            ["Mature cohort bump", "Cohort [dates] produced [accepted] events and [reversals]. Can we test $125 instead of $100 CPA for [period]?", "Verified cohort"],
-            ["Conditional counteroffer", "If $125 is unavailable now, what accepted volume and quality would qualify? Please confirm dates, channels, and whether tiers are retroactive.", "Written tier schedule"]
+            ["1. Initial B2B Program Approval", "Hi [Name] — we operate [Domain], an independent B2B fee calculator & migration desk for [10-150 seat buyers]. Live sample: [URL]. We drive US commercial comparison search + screen-recorded YouTube walkthroughs (zero coupon toolbars, zero unauthorized TM bidding). Could you approve Partner ID [#] and confirm S2S postback support (`ps_xid`/`subId1`) plus any CRM-dedupe exclusions?", "Written channel approval, S2S parameter spec & CRM-dedupe rules"],
+            ["2. Competitor-Comparison Search Clearance", "Hi [Name] — before we launch exact-match Google/Bing campaigns on `[Incumbent] pricing calculator` and `[Incumbent] vs [Your Brand]` routing through our disclosed comparison matrix at [URL], please confirm in writing: (a) non-brand & competitor comparison search is permitted, and (b) whether you offer a written TM+ co-bidding schedule or require `[Your Brand]` in account-level negatives.", "Signed keyword scope or written negative-keyword confirmation"],
+            ["3. Authorized XML Job-Feed Onboarding", "Hi [Name] — we enrich direct employer XML feeds on [Domain] with verified salary, shift, and bonus-eligibility tables for [CDL / RN segment]. May we ingest feed [URL] refreshing every [6h], and please confirm the exact billable CPA event (completed application vs verified interview), duplicate window, and closed-requisition suppression SLA.", "Written XML republication license, billable event & dedupe window"],
+            ["4. Mature-Cohort 25% Private CPA Bump", "Hi [Name] — our [Dates] cohort delivered [18] accepted [SQL demos / funded accounts] with only [1] duplicate scrub ([94.7%] acceptance) from our switching calculator. At our current [$400] CPA, paid search bids cap out at Position 3. Can we step to a private [$500] CPA (+25%) effective [Date] so we can move to top-of-page share and target [35+] accepted accounts/month?", "Updated IO / PartnerStack tier confirmation with effective date"],
+            ["5. Volume-Tiered Step-Up Counteroffer", "Understood if flat [$500] requires VP sign-off—would you approve a 30-day performance tier: [$400] baseline on conversions 1-9, stepping to [$500] (retroactive across the month's accepted cohort) whenever we clear >=10 accepted conversions with >=85% post-lock retention? Happy to share weekly subID quality readouts.", "Written volume-tier schedule specifying retroactive vs marginal math"]
         ]
     },
     "sop_steps": [
@@ -113,14 +124,14 @@ CHAPTER_6["sections"].append({
         "items": ["Tracking resolves to the correct offer.", "Traffic permissions cover the actual channel.", "Inventory and comparison claims remain current.", "Loss limit and pending commission exposure are recorded."]
     },
     "table": {
-        "caption": "Forensic failure patterns",
-        "headers": ["Naive Trap", "Detection Metric", "Durable Operator Fallback"],
+        "caption": "Forensic Sourcing & Bridge-Funnel Failure Patterns",
+        "headers": ["Naive Beginner Trap", "Forensic Detection Metric", "Durable Operator Fallback"],
         "rows": [
-            ["Old ads prove profit", "Own mature EPC absent", "Run a bounded cohort test"],
-            ["Trials equal revenue", "Accepted/submitted ratio", "Price accepted events only"],
-            ["Cheap clicks win", "Net commission/purchased visit", "Fix query and page fit"],
-            ["More feed pages win", "Closed or duplicate listing share", "Refresh, deduplicate, suppress"],
-            ["Largest CPA is best", "Contribution after reversals", "Compare mature cohort economics"]
+            ["Treating 30-day competitor Ad Library longevity as guaranteed profit", "Zero internal post-scrub Net EPC cohort data in your own account", "Run a hard-capped $300-$500 exact-match validation test before cloning"],
+            ["Counting free-trial or raw lead submissions as earned commission revenue", "Accepted-and-settled conversions divided by raw submitted trials/leads", "Underwrite media bids strictly on post-lock merchant-accepted events"],
+            ["Chasing $0.08 curiosity clicks that bounce off B2B pricing bridges", "Settled net commission per purchased landing visit (`Net EPV`)", "Buy narrower `[Vendor] pricing` / `alternative` intent and align bridge copy"],
+            ["Publishing 50,000 stale or duplicate XML job-board pages for volume", "Expired-listing bounce rate and Google Search Console excluded-URL ratio", "Sync authorized employer feeds hourly, deduplicate IDs, and 410 closed roles"],
+            ["Routing 100% of clicks to the highest-headline-CPA unvetted merchant", "Fully loaded cohort contribution after 60-day scrubs and payment lag", "Split-test 2 vetted merchants on identical traffic and route by settled Net EPC"]
         ]
     }
 })
@@ -138,30 +149,30 @@ CHAPTER_6["sections"].append({
     ],
     "table": {
         "caption": "7-Day Paid-Search & Bridge-Page Validation Scorecard",
-        "headers": ["Day", "Measure or milestone", "Illustrative record", "Decision"],
+        "headers": ["Day / Window", "Validation Milestone", "Illustrative Cohort Telemetry", "Mandatory Operator Gate Decision"],
         "rows": [
-            ["1", "Tracking and written terms", "Permitted test; capped $500 media", "Fix broken attribution before spend"],
-            ["2", "Actual query relevance", "Two narrow query clusters", "Exclude irrelevant terms"],
-            ["3", "Bridge outbound rate", "500 / 1,000 visits = 50%", "Investigate page mismatch"],
-            ["4", "Lead/trial response", "50 / 500 outbound = 10%", "Do not count as commissions"],
-            ["5", "Acceptance status", "Pending until merchant review", "Retain original cohort date"],
-            ["6", "Inventory and claims", "Refresh jobs, prices, terms", "Remove stale claims"],
-            ["7", "Spend or wait decision", "$500 cap; mature results pending", "Wait rather than assume profit"],
-            ["After maturation", "Accepted less reversals", "20 - 2 = 18; $1,800 earned", "$3.60 outbound EPC"],
-            ["Cost reconciliation", "Traffic plus allocated operations", "$500 + $700 = $1,200", "$600 before remaining overhead"],
-            ["Confirmed bump", "18 retained events at $125", "$2,250 earned; $1,050 contribution", "Hold volume assumptions constant"]
+            ["Day 1", "S2S `click_id` & written terms check", "Synthetic round-trip verified; $500 hard spend cap armed", "Block live media spend until `sub1` echoes in partner portal"],
+            ["Day 2", "Search-term intent & negative audit", "2 exact BOFU `[Vendor] pricing` / `vs` clusters inspected", "Add negative keywords for `login`, `jobs`, `free`, and `support`"],
+            ["Day 3", "Bridge calculator outbound CTR check", "500 outbound `/go/` clicks from 1,000 visits (50% CTR)", "Rewrite above-the-fold comparison hook if outbound CTR <25%"],
+            ["Day 4", "Merchant trial / demo submission rate", "50 merchant signups from 500 outbound clicks (10% CVR)", "Log as provisional pipeline only; never book trials as revenue"],
+            ["Day 5", "Lock-window & scrub queue inspection", "50 signups held in 30-day partner qualification review", "Freeze cohort acquisition date; do not blend into newer clicks"],
+            ["Day 6", "Pricing table & disclosure freshness check", "Vendor seat tiers, fee dates, and 16 CFR 255 bar audited", "Patch any vendor price change within 24h and log version hash"],
+            ["Day 7", "Pilot cap reached — hold for settlement", "$500 media cap hit; awaiting merchant billing validation", "Pause expansion until lock window closes rather than guessing"],
+            ["Post-Lock (Day 37)", "Net accepted events minus reversals", "20 approved minus 2 reversals = 18 net ($1,800 earned)", "Verified $3.60 outbound Net EPC ($1.80 Net EPV per visit)"],
+            ["Cohort P&L Close", "Media + allocated content/ops bridge", "$500 Google Ads + $700 content/QA/tools = $1,200 total cost", "+$600 net cohort contribution (33.3% pre-overhead margin)"],
+            ["Written +25% Bump", "18 retained events repriced at $125 CPA", "$2,250 net earned; +$1,050 contribution at constant volume", "Authorize +20% weekly budget step-up with 2nd fallback offer"]
         ]
     }
 })
 CHAPTER_6["sections"][4]["tables"] = [
     CHAPTER_6["sections"][4].pop("table"),
     {
-        "caption": "Candidate #24 annual operating envelopes; GMV excluded",
-        "headers": ["Scenario", "Gross earned commissions, net of reversals", "All-in cost envelope", "Margin", "Owner net profit", "Staffing"],
+        "caption": "Candidate #24 Annual Operating Envelopes (Merchant GMV Excluded Off-Ledger)",
+        "headers": ["Scenario", "Gross Earned Commissions (Net)", "All-In Cost Envelope", "Margin", "Owner Net Profit", "Staffing", "Primary Demand & Portfolio Rule"],
         "rows": [
-            ["Conservative", "$50,000", "$40,000", "20%", "$10,000", "1 FT + 2 C"],
-            ["Base", "$325,000", "$211,250", "35%", "$113,750", "1 FT + 2 C"],
-            ["Scaled", "$600,000", "$300,000", "50%", "$300,000", "2 FT + 3 C"]
+            ["Conservative", "$50,000", "$40,000", "20%", "$10,000", "1 FT + 2 C", "1 narrow BOFU niche; 3 competing offers; prove settled Net EPC"],
+            ["Base", "$325,000", "$211,250", "35%", "$113,750", "1 FT + 2 C", "25+ BOFU comparison assets + YouTube + private CPA bumps; <=25% cap"],
+            ["Scaled", "$600,000", "$300,000", "50%", "$300,000", "2 FT + 3 C", "Compounding recurring SaaS book + owned newsletter capture across 3-5 hubs"]
         ]
     },
 ]

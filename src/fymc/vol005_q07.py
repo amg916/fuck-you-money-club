@@ -20,7 +20,43 @@ CHAPTER_7 = {
                 "Start with the decision the visitor is trying to make, not the commission the merchant offers. An interactive ROI calculator should expose its inputs, show its arithmetic, and distinguish customer savings from affiliate earnings. Ask for current spend, transaction volume, implementation cost, and expected adoption; publish a conservative range rather than a fabricated precision score. Editorial review checks every merchant claim against dated evidence and places the material affiliate relationship beside the recommendation. Cache the static explanation at the edge and measure a sub-second initial bridge response at the ninety-fifth percentile for target geographies. That latency is an engineering target, not a promise about every device. Keep the calculator usable without third-party scripts, and measure completed decisions separately from outbound clicks so speed does not conceal poor recommendations or accidental navigation.",
                 "Treat the bridge as a small application with a documented data contract. On inbound arrival, mint an opaque random click_id and persist campaign, creative, landing version, event time, and permitted platform identifiers in a first-party ledger. Do not embed email addresses, phone numbers, or quiz answers inside the identifier. Preserve the same identifier through the calculator and send it to the merchant as sub1=click_id only where that parameter is contractually supported. If a network uses another field, map it explicitly and test the returned value. A redirect must come from an allowlisted merchant destination, never an arbitrary user-supplied URL. Failed persistence should produce a usable page without inventing attributed conversions. Record attribution availability as a separate state so missing tracking does not become a false claim that the visitor never purchased anything.",
                 "Give each release an editorial owner and an engineering owner, even when one person fills both roles. The editorial owner maintains offer eligibility, exclusions, comparison evidence, and calculator assumptions; the engineering owner maintains event schemas, redirect mappings, and reconciliation jobs. Store the published content version with the click so a disputed claim can be reconstructed later. Separate behavioral analytics from contact data, apply purpose-specific retention, and restrict exports to the minimum fields required by each destination. Monday review should compare bridge completion, merchant arrival, approved commission, and settled cash by content version. A rising outbound click rate is not success when the same cohort produces more refunds. Keep a stable comparison cohort during revisions and wait through the contractual reversal window before declaring an economically meaningful winner from an apparent conversion uplift."
-            ]
+            ],
+            "table": {
+                "caption": "Production Cloudflare Worker + D1 S2S Redirect & Constant-Time HMAC Postback Reference",
+                "headers": ["Worker / D1 Module", "Copy-Pasteable Edge TypeScript / SQL Reference Implementation", "Production Invariant"],
+                "rows": [
+                    [
+                        "1. D1 Schema (`schema.sql`)",
+                        "CREATE TABLE click_ledger (click_id TEXT PRIMARY KEY, offer_slug TEXT NOT NULL, lander_ver TEXT NOT NULL, gclid TEXT, fbc TEXT, created_at TEXT NOT NULL); CREATE TABLE conversion_events (id INTEGER PRIMARY KEY AUTOINCREMENT, network TEXT NOT NULL, tx_id TEXT NOT NULL, status TEXT NOT NULL, click_id TEXT, payout_cents INTEGER NOT NULL, raw_sha256 TEXT NOT NULL, created_at TEXT NOT NULL, UNIQUE(network, tx_id, status)); CREATE TABLE capi_outbox (event_key TEXT PRIMARY KEY, network TEXT NOT NULL, tx_id TEXT NOT NULL, click_id TEXT NOT NULL, net_value_cents INTEGER NOT NULL, g_state INTEGER NOT NULL DEFAULT 0, m_state INTEGER NOT NULL DEFAULT 0, next_at INTEGER NOT NULL DEFAULT 0, done INTEGER NOT NULL DEFAULT 0);",
+                        "Monotone per-destination states (`0=new, 1=attempted, 2=acked, 3=reconciled_rev`), per-row `next_at` backoff, and `UNIQUE` idempotency."
+                    ],
+                    [
+                        "2. Outbound `/go/:slug` Minter",
+                        "const dest = ALLOWLIST[slug]; if (!dest) return new Response('Not found', { status: 404 }); const clickId = crypto.randomUUID(); const target = new URL(dest.url); try { await env.DB.prepare(\"INSERT INTO click_ledger (click_id, offer_slug, lander_ver, gclid, fbc, created_at) VALUES (?1,?2,?3,?4,?5,datetime('now'))\").bind(clickId, slug, ver, url.searchParams.get('gclid'), fbcCookie).run(); target.searchParams.set(dest.subParam, clickId); } catch (err) { ctx.waitUntil(logUnattributedRedirect(env, slug, err)); } return new Response(null, { status: 302, headers: { Location: target.toString(), 'Cache-Control': 'no-store, private', 'Referrer-Policy': 'strict-origin' } });",
+                        "`Cache-Control: no-store` prevents shared `click_id` caching; graceful fallback redirect avoids `HTTP 500` buyer drop-off on transient D1 faults."
+                    ],
+                    [
+                        "3. WebCrypto Constant-Time HMAC",
+                        "const raw = await request.arrayBuffer(); const sigHex = (request.headers.get('x-partner-signature') ?? '').trim(); if (!/^[0-9a-f]{64}$/i.test(sigHex)) return new Response('Forbidden', { status: 403 }); const sigBytes = Uint8Array.from(sigHex.match(/../g)!, b => parseInt(b, 16)); const key = await crypto.subtle.importKey('raw', new TextEncoder().encode(env.WEBHOOK_SECRET), { name: 'HMAC', hash: 'SHA-256' }, false, ['verify']); if (!(await crypto.subtle.verify('HMAC', key, sigBytes, raw))) return new Response('Forbidden', { status: 403 });",
+                        "Strict 64-hex validation + constant-time `crypto.subtle.verify` over exact raw request bytes before `JSON.parse` runs."
+                    ],
+                    [
+                        "4. Atomic D1 Event + Outbox Batch",
+                        "const eventKey = `${net}:${txId}`; const stmts = [env.DB.prepare(\"INSERT INTO conversion_events (network, tx_id, status, click_id, payout_cents, raw_sha256, created_at) VALUES (?1,?2,?3,?4,?5,?6,datetime('now')) ON CONFLICT(network, tx_id, status) DO NOTHING\").bind(net, txId, normStatus, clickId, cents, digest)]; if (normStatus === 'approved' && clickId) { stmts.push(env.DB.prepare(\"INSERT INTO capi_outbox (event_key, network, tx_id, click_id, net_value_cents) SELECT ?1,?2,?3,?4,?5 WHERE EXISTS (SELECT 1 FROM conversion_events WHERE network=?2 AND tx_id=?3 AND status='approved' AND raw_sha256=?6) AND NOT EXISTS (SELECT 1 FROM conversion_events WHERE network=?2 AND tx_id=?3 AND status='reversed') ON CONFLICT(event_key) DO NOTHING\").bind(eventKey, net, txId, clickId, Math.round(cents * 0.85), digest)); } else if (normStatus === 'reversed') { stmts.push(env.DB.prepare('UPDATE capi_outbox SET done=0, next_at=0 WHERE event_key=?1 AND (g_state < 3 OR m_state < 3)').bind(eventKey)); } const [evRes] = await env.DB.batch(stmts); ctx.waitUntil(env.OUTBOX_DO.get(env.OUTBOX_DO.idFromName('singleton')).fetch('https://do/kick')); return Response.json({ ok: true, deduped: (evRes.meta.changes ?? 0) === 0 });",
+                        "`env.DB.batch` atomically commits approvals and reopens `done=0, next_at=0` on reversals while nudging the singleton `OUTBOX_DO` actor."
+                    ],
+                    [
+                        "5. Out-of-Order Reversal View",
+                        "CREATE VIEW v_settled_tx AS SELECT network, tx_id, click_id, CASE WHEN MAX(CASE WHEN status = 'reversed' THEN 1 ELSE 0 END) = 1 THEN 0 WHEN MAX(CASE WHEN status IN ('approved','paid') THEN 1 ELSE 0 END) = 1 THEN MAX(CASE WHEN status IN ('approved','paid') THEN payout_cents ELSE 0 END) ELSE 0 END AS settled_cents FROM conversion_events GROUP BY network, tx_id;",
+                        "Prevents a delayed `approved` webhook retry from resurrecting a transaction that already posted `reversed`."
+                    ],
+                    [
+                        "6. Cron + Singleton DO Outbox Actor",
+                        "// wrangler.toml: [triggers] crons = ['* * * * *'] | durable_objects: OUTBOX_DO -> OutboxActor\nexport default { fetch, scheduled(_c: ScheduledController, env: Env, ctx: ExecutionContext) { ctx.waitUntil(env.OUTBOX_DO.get(env.OUTBOX_DO.idFromName('singleton')).fetch('https://do/kick')); } }; export class OutboxActor extends DurableObject<Env> { private busy = false; private again = false; async fetch(): Promise<Response> { if (this.busy) { this.again = true; return new Response('queued'); } this.busy = true; try { do { this.again = false; await this.drain(); } while (this.again); } finally { this.busy = false; } return new Response('ok'); } private async drain() { const { results } = await this.env.DB.prepare(\"SELECT o.*, c.gclid, c.fbc, EXISTS(SELECT 1 FROM conversion_events r WHERE r.network=o.network AND r.tx_id=o.tx_id AND r.status='reversed') AS is_rev FROM capi_outbox o LEFT JOIN click_ledger c ON c.click_id=o.click_id WHERE o.done=0 AND o.next_at <= unixepoch() ORDER BY o.next_at ASC LIMIT 25\").all(); for (const r of results) { try { const rev = async () => (await this.env.DB.prepare(\"SELECT EXISTS(SELECT 1 FROM conversion_events e WHERE e.network=?1 AND e.tx_id=?2 AND e.status='reversed') AS v\").bind(r.network, r.tx_id).first())?.v === 1; if (r.is_rev || await rev()) { if (r.g_state < 3) { if (r.gclid && r.g_state > 0) await reconcileOrRetractGoogle(this.env, r.gclid, r.event_key, r.g_state); await this.env.DB.prepare('UPDATE capi_outbox SET g_state=3 WHERE event_key=?1').bind(r.event_key).run(); } if (r.m_state < 3) { if (r.fbc && r.m_state > 0) await reconcileOrRetractMeta(this.env, r.fbc, r.event_key, r.m_state); await this.env.DB.prepare('UPDATE capi_outbox SET m_state=3 WHERE event_key=?1').bind(r.event_key).run(); } await this.env.DB.prepare('UPDATE capi_outbox SET done=1 WHERE event_key=?1 AND g_state=3 AND m_state=3').bind(r.event_key).run(); continue; } if (!r.gclid && r.g_state === 0) { await this.env.DB.prepare('UPDATE capi_outbox SET g_state=2 WHERE event_key=?1 AND g_state=0').bind(r.event_key).run(); r.g_state = 2; } else if (r.gclid && r.g_state < 2) { await this.env.DB.prepare('UPDATE capi_outbox SET g_state=1 WHERE event_key=?1 AND g_state=0').bind(r.event_key).run(); r.g_state = 1; await uploadGoogleClickConversion(this.env, r.gclid, r.event_key, r.net_value_cents / 100); await this.env.DB.prepare('UPDATE capi_outbox SET g_state=2 WHERE event_key=?1 AND g_state=1').bind(r.event_key).run(); r.g_state = 2; } if (await rev()) { this.again = true; continue; } if (!r.fbc && r.m_state === 0) { await this.env.DB.prepare('UPDATE capi_outbox SET m_state=2 WHERE event_key=?1 AND m_state=0').bind(r.event_key).run(); r.m_state = 2; } else if (r.fbc && r.m_state < 2) { await this.env.DB.prepare('UPDATE capi_outbox SET m_state=1 WHERE event_key=?1 AND m_state=0').bind(r.event_key).run(); r.m_state = 1; await uploadMetaCapiEvent(this.env, r.fbc, r.event_key, r.net_value_cents / 100); await this.env.DB.prepare('UPDATE capi_outbox SET m_state=2 WHERE event_key=?1 AND m_state=1').bind(r.event_key).run(); r.m_state = 2; } const fin = await this.env.DB.prepare(\"UPDATE capi_outbox SET done=1 WHERE event_key=?1 AND g_state=2 AND m_state=2 AND NOT EXISTS (SELECT 1 FROM conversion_events e WHERE e.network=capi_outbox.network AND e.tx_id=capi_outbox.tx_id AND e.status='reversed')\").bind(r.event_key).run(); if ((fin.meta.changes ?? 0) === 0) this.again = true; } catch (_e) { await this.env.DB.prepare('UPDATE capi_outbox SET next_at = unixepoch() + 15 WHERE event_key=?1').bind(r.event_key).run(); } } const rem = await this.env.DB.prepare('SELECT MIN(next_at) AS na FROM capi_outbox WHERE done=0').first(); if (rem?.na != null) await this.ctx.storage.setAlarm(Math.max(Date.now() + 1_000, Number(rem.na) * 1_000)); } async alarm() { await this.fetch(); } }",
+                        "Singleton `DurableObject` + `next_at` alarm backoff prevent concurrent lease races and head-of-line stalls; `state=1` pre-send intent + `state=3` reconciliation close uncertain-response and late-reversal gaps."
+                    ]
+                ]
+            }
         },
         {
             "heading": "2. Make authenticated events reconcile to money",
@@ -28,6 +64,17 @@ CHAPTER_7 = {
             "paragraphs": [
                 "Use the ledger below as a PostgreSQL-oriented implementation skeleton, not a complete deployment. A merchant adapter must validate transaction identity, amount, currency, status vocabulary, and the original click reference before creating an event. Verify signatures over the exact raw request bytes using the partner's documented signing format; parsing and serializing first can change the signed message. A timestamp bound applies only when the partner authenticates that timestamp inside the signature input. Duplicate delivery should return success after finding the durable event, while storage failure should remain retryable. Commit event insertion and an outbound work item in one database transaction. Workers then retry uploads independently of webhook response latency. This transactional outbox prevents an acknowledged conversion from disappearing between database commit and advertising-platform submission during a worker crash or a temporary network outage."
             ],
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "S2S Postback, Ping-Post & Offline-Pixel Secrets",
+                "body": "Performance engineers prevent silent attribution black holes with four battle-tested S2S rules:",
+                "items": [
+                    "Capture `GCLID` / `MSCLKID` Into First-Party Server Storage on Landing, Not on Redirect: Visitors who use your fee calculator for 4 minutes or open 2 comparison tabs often lose URL query strings unless the landing page persists click tokens immediately.",
+                    "Never Optimize Google/Meta Campaigns on Outbound Button Clicks: Bidding algorithms optimizing for cheap bridge clicks flood your funnel with curiosity bots; feed offline `Qualified Demo` / `Funded Account` S2S events discounted by your scrub rate.",
+                    "Quarantine Unmatched `sub1` Webhooks Instead of Dropping Them: When a buyer shares a merchant checkout URL with a CFO on another device, `sub1` may return blank while the partner portal credits your vanity code—route null-`sub1` webhooks to a review table.",
+                    "Enforce 800ms Ping Timeouts & Seller-Matched Consent Locks in Ping-Post: Slow downstream buyers tank quiz completion rates; cut off slow ping bidders at 800ms and never post PII unless the winning buyer matches the exact entity consented to by the user.",
+                ]
+            },
             "table": {
                 "caption": "Server-Side S2S Postback & Attribution Ledger Blueprint",
                 "headers": ["Pattern", "Executable core", "Contract"],
@@ -51,8 +98,19 @@ CHAPTER_7 = {
             ],
             "table": {
                 "caption": "10-Point Pre-Launch Tracking, Consent & Scrub QA Matrix",
-                "headers": ["Check", "Fixture", "Pass evidence"],
-                "rows": [["1. Bridge", "Slow target region", "Measured response below target"], ["2. Click", "Two separate arrivals", "Distinct durable IDs"], ["3. Redirect", "Merchant sandbox", "sub1 returned unchanged"], ["4. Signature", "Alter raw byte", "Rejected without event"], ["5. Replay", "Repeat signed event", "One event and upload"], ["6. Ordering", "Reversal arrives first", "No resurrected earnings"], ["7. Buyer permission", "Winner changes", "No contact transfer"], ["8. Duplicate lead", "Retry identical lead", "One accepted charge"], ["9. Scrub", "Invalid-number rejection", "Reason reconciles to ledger"], ["10. Platforms", "Partial upload failure", "Failed item retried only"]]
+                "headers": ["QA Check", "Synthetic Test Fixture", "Mandatory Pass Evidence"],
+                "rows": [
+                    ["1. Edge TTFB & No-Store", "Cold 4G mobile request + `/go/offer-a` double tap", "<100ms edge TTFB; two distinct UUID `click_id` rows written (`Cache-Control: no-store`)"],
+                    ["2. GCLID / FBC Persistence", "Land with `?gclid=TEST123`, navigate 2 calculator tabs, click CTA", "`click_ledger` row retains original `gclid` + landing content version"],
+                    ["3. Partner Sub-ID Round-Trip", "Trigger merchant sandbox conversion on PartnerStack / Impact / Everflow", "Inbound S2S postback echoes exact `click_id` in `ps_xid` / `subId1` / `sub1`"],
+                    ["4. Forged HMAC Rejection", "Flip 1 byte in raw webhook body or send stale/invalid `X-Partner-Signature`", "Endpoint returns `HTTP 403`; zero rows inserted into `conversion_events`"],
+                    ["5. Webhook Replay Idempotency", "Deliver identical valid signed `approved` webhook 3 times concurrently", "1 row in `conversion_events`, `HTTP 200` on retries, exactly 1 CAPI/GCLID upload"],
+                    ["6. Out-of-Order Reversal", "Fire `status=reversed` first, then replay delayed `status=approved`", "`v_settled_tx` view evaluates net settled balance to `$0.00` (zero resurrection)"],
+                    ["7. Seller-Matched Consent", "Simulate Buyer A timeout in ping-post so Buyer B wins the auction", "System blocks post until user explicitly consents to Buyer B + fresh TrustedForm cert"],
+                    ["8. Duplicate Lead Suppression", "Submit identical work email / phone number twice within 30-day window", "Second submission flagged duplicate pre-post; zero billable charge or buyer dispute"],
+                    ["9. Scrub Reason Mapping", "Send synthetic `invalid_geo` and `existing_customer` rejection codes", "Ledger categorizes scrub reason by `lander_ver` and decrements source Net EPC"],
+                    ["10. Partial Upload Retry", "Force transient `HTTP 503` on Google Ads / Meta CAPI endpoint", "Outbox retries failed item with exponential backoff without duplicating succeeded items"]
+                ]
             },
             "sop_steps": [
                 {"step": 1, "title": "Qualify", "action": "Run the four-step quiz.", "detail": "Persist need, geography, eligibility, and contact preference under a restricted lead ID."},
@@ -75,9 +133,15 @@ CHAPTER_7 = {
                 "items": ["Ping-post: selected buyer and contact permission match the posted recipient.", "RSOC: written provider rules match the actual two-click journey and traffic source.", "Web checkout: merchant authorization, recurring terms, and qualifying CPA event are documented.", "Tracking: a replay and a reversal cannot inflate net earned commission."]
             },
             "table": {
-                "caption": "Forensic Failure Patterns",
-                "headers": ["Naive Trap", "Detection Metric", "Durable Operator Fallback"],
-                "rows": [["Optimize quiz completions as purchases", "Purchase-to-quiz ratio", "Separate event names and values"], ["Count webhook retries as sales", "Events per transaction/status", "Unique ledger key and transactional outbox"], ["Sell permission to any bidder", "Recipient mismatch count", "Re-select buyer and capture matching permission"], ["Treat feed estimates as cash", "Finalized deduction rate", "Use mature net feed settlements"], ["Book merchant GMV as revenue", "Commission-to-GMV ratio", "Separate merchant and affiliate ledgers"]]
+                "caption": "Forensic S2S, Ping-Post & Feed Failure Patterns",
+                "headers": ["Naive Beginner Trap", "Forensic Detection Metric", "Durable Operator Fallback"],
+                "rows": [
+                    ["Training Meta/Google smart bidding on raw quiz completions as Purchase events", "Settled merchant purchase-to-quiz-completion ratio by ad set", "Fire micro-events as ViewContent/Lead; upload Purchase strictly via S2S"],
+                    ["Counting duplicate partner webhook retries as multiple billable sales", "Inbound webhook deliveries per unique `(partner, tx_id, status)` tuple", "Enforce SQLite/D1 `UNIQUE(partner, tx_id, status)` + transactional outbox"],
+                    ["Posting ping-post lead PII to a fallback buyer not named in consent text", "Mismatch count between `consented_seller` and winning `posted_buyer`", "Display dynamic winner disclosure and capture fresh seller-specific consent"],
+                    ["Spending provisional AFD/RSOC daily search-feed revenue before clawbacks", "Month-end invalid-traffic (IVT) deduction percentage per ad source", "Hold paid arbitrage caps flat until 45-day finalized feed statements clear"],
+                    ["Booking merchant subscription GMV as publisher top-line commission revenue", "Recognized publisher commission-to-merchant-GMV reconciliation check", "Maintain strict off-ledger GMV memo; recognize net earned referral fees only"],
+                ]
             }
         }
     ],
@@ -104,22 +168,34 @@ CHAPTER_7["sections"].append({
         "Underwrite one subscription cohort before extrapolating an annual target. For illustration, 1,000 purchased visits at $1 each cost $1,000; twenty qualifying subscriptions at a $100 CPA produce $2,000 of provisional commission. If two subscriptions reverse in full, earned commission becomes $1,800, not $2,000 and not the merchant's subscription sales. Assign $400 of content, labor, and tooling costs to that cohort and residual operating profit is $400, a 22.22% margin on earned commission. Its break-even traffic price is $1.40 per visit after the assigned nontraffic costs, assuming the same conversion and reversal behavior. This is a sensitivity model, not a performance forecast. Recalculate when traffic quality changes and show both the cohort count and its maturity date. A small winning sample cannot establish that a much larger audience will retain the same purchase intent.",
         "Build a weekly cash bridge beside the earnings report: opening receivables plus net earned commissions minus merchant payments equals closing receivables, before any separately identified statement adjustments. Cash collections minus cash operating payments describe operating cash movement, not automatically profit, because expense timing and liabilities differ. At the base scenario's illustrative $211,250 annual operating cost, a uniform monthly spend is about $17,604; a sixty-day payout lag suggests roughly $35,208 of operating funding before reserves, taxes, or timing variation. Do not subtract that funding requirement again as an expense. Start with a capped pilot, validate attribution and buyer acceptance, mature the first cohort through its reversal window, and then increase budgets in measured increments. Scale decisions should reference settled cohort economics and remaining liquidity, not the most exciting provisional number on a network's daily dashboard."
     ],
-    "table": {
-        "caption": "Annual Scenario Cash-to-Net-Profit Reconciliation",
-        "headers": ["Annual item", "Conservative", "Base", "Scaled"],
-        "rows": [
-            ["Merchant GMV", "Not inferred", "Not inferred", "Not inferred"],
-            ["Provisional commissions (illustrative)", "$55,000", "$350,000", "$640,000"],
-            ["Reversals / clawbacks (illustrative)", "-$5,000", "-$25,000", "-$40,000"],
-            ["Gross earned commissions, net of reversals", "$50,000", "$325,000", "$600,000"],
-            ["Traffic costs", "-$18,000", "-$105,000", "-$145,000"],
-            ["Labor and content costs", "-$18,000", "-$90,000", "-$130,000"],
-            ["Tooling and other operations", "-$4,000", "-$16,250", "-$25,000"],
-            ["Total operating costs", "-$40,000", "-$211,250", "-$300,000"],
-            ["Owner net profit", "$10,000", "$113,750", "$300,000"],
-            ["Net margin on earned commissions", "20%", "35%", "50%"],
-            ["Capacity", "1 FT + 2 C", "1 FT + 2 C", "2 FT + 3 C"],
-            ["Collections if opening and closing receivables equal", "$50,000", "$325,000", "$600,000"]
-        ]
-    }
+    "tables": [
+        {
+            "caption": "Worked 90-Day Cohort Walk: From $0 Launch to $27,120/mo Settled Net Commissions (Illustrative Base Ramp)",
+            "headers": ["Ramp Phase", "Sessions -> Outbound Clicks", "Gross S2S Events -> Post-Scrub Net", "Media + Opex Outflow vs Cash Received", "Cumulative Cash Float & Milestone"],
+            "rows": [
+                ["Days 1-14 (Build & S2S QA)", "180 organic/test -> 64 clicks", "3 sandbox tests -> $0 billable", "-$1,450 setup/stack vs $0 ACH", "-$1,450 trough | 3 competing offers + S2S verified"],
+                ["Days 15-30 (BOFU Pilot)", "1,400 visits -> 720 clicks", "14 demos/trials -> 12 net ($6,000 earned)", "-$2,650 ($1,400 ads + $1,250 C/tools) vs $0 ACH", "-$4,100 trough | Net EPV $4.29 vs $1.94 paid CPC"],
+                ["Month 2 (Multi-Channel + Bump)", "5,800 visits -> 3,010 clicks", "38 events -> 32 net ($17,600 @ $550 bumped)", "-$9,800 ($5,200 ads + $4,600 pod/tools) vs $0 ACH", "-$13,900 peak Net-60 trough | Private +10% CPA bump live"],
+                ["Month 3 (First ACH + Scale)", "11,900 visits -> 6,188 clicks", "58 events + SaaS recur -> 49 net ($27,120 earned)", "-$17,600 full Base opex vs +$6,000 M1 ACH wire", "-$25,500 working-capital bridge -> cash-flow positive M4+"],
+            ]
+        },
+        {
+            "caption": "Annual Scenario Cash-to-Net-Profit Reconciliation",
+            "headers": ["Annual Ledger Item", "Conservative", "Base", "Scaled", "S2S Ledger & Cash-Bridge Treatment"],
+            "rows": [
+                ["Merchant GMV", "Off-ledger memo", "Off-ledger memo", "Off-ledger memo", "Mixed CPA, SaaS rev-share, and feed contracts cannot share a single GMV denominator"],
+                ["Provisional commissions (illustrative)", "$55,000", "$350,000", "$640,000", "Signed S2S `approved` webhook balances prior to lock-window closure"],
+                ["Reversals / clawbacks (illustrative)", "-$5,000", "-$25,000", "-$40,000", "Idempotent `reversed` lifecycle events netted in `v_settled_tx`"],
+                ["Gross earned commissions, net of reversals", "$50,000", "$325,000", "$600,000", "Recognized publisher revenue reconciled to partner payout statements"],
+                ["Traffic costs", "-$18,000", "-$105,000", "-$145,000", "Paid search, RSOC/ping-post acquisition, and creator sponsorships"],
+                ["Labor and content costs", "-$18,000", "-$90,000", "-$130,000", "Benchmark maintenance, QA, contractor scopes, and Scaled FT operator"],
+                ["Tooling and other operations", "-$4,000", "-$16,250", "-$25,000", "Cloudflare Workers/D1, Queues, Ringba, TrustedForm, and entity/CPA overhead"],
+                ["Total operating costs", "-$40,000", "-$211,250", "-$300,000", "Total annual business operating expenses"],
+                ["Owner net profit", "$10,000", "$113,750", "$300,000", "Pre-tax residual operating profit before personal taxes or financing"],
+                ["Net margin on earned commissions", "20%", "35%", "50%", "Operating profit divided by gross earned commissions net of reversals"],
+                ["Capacity", "1 FT + 2 C", "1 FT + 2 C", "2 FT + 3 C", "Active operator headcount allocation across editorial, S2S engineering, and media"],
+                ["Collections if opening and closing receivables equal", "$50,000", "$325,000", "$600,000", "Steady-state annual ACH collections once opening/closing Net-60 float stabilizes"]
+            ]
+        }
+    ]
 })

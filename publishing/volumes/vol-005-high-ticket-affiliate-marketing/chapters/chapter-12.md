@@ -28,9 +28,11 @@ On Day 6, map twenty five bottom of funnel keyword and video intent blueprints. 
 
 | Naive Trap | Detection Metric | Durable Operator Fallback |
 | --- | --- | --- |
-| One merchant owns demand | Over 60% of earned commissions | Develop two substitutes |
-| Pending equals earned | Unsettled share | Separate cohorts |
-| Broken tracking looks like bad demand | Unmatched events above 2% | Pause spend; repair join |
+| Launching a hub before 3 competing offers are live | Single merchant >60% of clicks or 2 'coming soon' dead links | Hold paid spend until Primary, Runner-Up & Fallback approvals clear |
+| Annualizing Week-3 'Pending' conversions as profit | Share of reported commissions still inside 30-60d lock (100% in M1) | Keep test cap fixed until Cohort 1 clears lock and reconciles to cash |
+| Abandoning a niche when tracking silently drops `sub1` | Unmatched merchant conversions >2% vs internal `click_ledger` | Run synthetic Day-14 S2S conversion + duplicate + reversal pre-flight |
+| Burning the $500 test cap on broad informational terms | Search-term report showing `what is` / student / login queries | Restrict Week-3 paid pilot strictly to `[Vendor] pricing / alternative / vs` |
+| Building 50 thin AI articles instead of 1 calculator | Bridge outbound CTR <15% and <30s median engaged dwell | Ship 1 accurate fee/switching calculator + 10 deep substantiated guides |
 
 ## Days 8-14: Build a measurable switching path  `🏷️ OPERATING_FRAMEWORK`
 
@@ -39,6 +41,14 @@ On Day 8, ship a small serverless edge comparison hub with a fast page for each 
 On Day 10, place an above the fold disclosure bar explaining that you may earn a commission from linked purchases, with clear disclosure near recommendations as needed. Apply the endorsement principles in 16 CFR Part 255 to the actual reader journey, including video and email. On Day 11, offer a useful switching worksheet before the outbound link. Keep capture optional so the buyer can continue directly. For co-reg email capture, identify each receiving partner and the use of the address before collection; do not quietly sell a worksheet request as permission for unrelated lists. Apply the commercial email requirements of 15 U.S.C. section 7704, including accurate headers, a valid postal address, and a working opt out honored within ten business days. Separate service delivery from later promotional sends in your records.
 
 On Day 12, mint an opaque click_id at outbound redirect and write it to the click_ledger with merchant, asset, channel, timestamp, and test status. Pass it through the merchant's supported sub ID field. Keep email addresses out of URLs and use a separate restricted lead store. On Day 13, receive authenticated S2S postbacks, deduplicate by merchant event ID, and support pending, approved, reversed, and paid state changes without counting each update as another sale. Validate currency and amount as well as identity. On Day 14, run a merchant supported synthetic test conversion from landing page to postback. Replay it, reverse it, and inspect the ledger. Exclude test events from all earnings reports. If the merchant lacks a test path, document that limit and verify the join with an authorized sandbox rather than inventing a sale.
+
+> **INSIDER PRO-TIPS — First-30-Day Speed & Validation Shortcuts**
+> 
+> Experienced operators compress six months of trial-and-error into thirty days by sequencing four tactical moves:
+> - Include One Honest 'Stay With Your Current Vendor If...' Case in Your Calculator: Buyers immediately trust a switching calculator that tells <5-seat teams NOT to switch yet—lifting conversion rate on qualified 25-to-100-seat buyers who see they do save money.
+> - Launch Bing / Microsoft Advertising Exact-Match Alongside Google Search in Week 3: B2B desktop controllers and IT buyers on corporate Windows machines frequently convert at 30%-50% lower CPCs on Microsoft Search for `[Vendor] pricing` queries.
+> - Record All 5 Launch YouTube Tutorials From the Exact Same Screen-Test Session: Capturing real workflows across Offer A, Offer B, and Offer C in one afternoon gives you authentic UI footage for 5 `vs` / `pricing` videos plus screenshots for all 10 guides.
+> - Send Your Partner Manager Your Day-21 Sub-ID Quality Readout Before Asking for a Bump: Showing exact buyer seat counts and zero trademark-bidding violations makes approving your Day-25 +25% private CPA bump an easy internal win for the AM.
 
 ## Days 15-21: Publish proof and purchase a bounded sample  `🏷️ OPERATING_FRAMEWORK`
 
@@ -50,21 +60,21 @@ On Day 20, compare the paid cohort with organic and video traffic without poolin
 
 **30-Day High-Ticket Affiliate Launch & EPC Milestone Table**
 
-| Day | Deliverable | Evidence / milestone |
+| Sprint Days | Concrete Operator Deliverable | Auditable Pass Criterion & Evidence |
 | --- | --- | --- |
-| 1-2 | Vertical and three applications | Common buyer job; rate cards |
-| 3-4 | Live access and contract review | IDs; bidding, window, clawbacks |
-| 5-7 | Offer scoring; 25 blueprints | Three usable offers; production queue |
-| 8-9 | Edge hub and calculator | Dated prices; losing case tested |
-| 10-11 | Disclosure and email capture | Visible relationship; named recipients |
-| 12-14 | Ledger and S2S verification | Replay and reversal pass; tests excluded |
-| 15-17 | Ten comparison assets; paid test | $300-$500 total cap |
-| 18-19 | Five recorded tutorials | Real workflow and linked disclosure |
-| 20-21 | Seven day cohort readout | Lead rate and net EPC; maturity noted |
-| 22-23 | Merchant reconciliation | Unmatched events at most 2% |
-| 24-25 | Scrub audit and payout request | Reasons; mature approved volume |
-| 26-28 | Fix and retest weakest stage | Same cohort definitions retained |
-| 29-30 | Close books; Kill / Fix / Scale | Earned, pending, costs, owner profit |
+| Days 1-2 | Select 1 B2B/fintech vertical & submit 5+ partner applications | Written buyer job spec + public rate cards logged in `ws-01` |
+| Days 3-4 | Secure >=3 live merchant approvals & audit contract red lines | Partner IDs active; TM+, cookie window, lock days & scrub clauses archived |
+| Days 5-7 | Lock Primary/Runner-Up/Fallback basket + 25 BOFU query blueprints | Account-level negative brand list ready; 10 guide + 5 video specs assigned |
+| Days 8-9 | Deploy Astro/Cloudflare comparison hub + interactive fee calculator | <100ms regional edge TTFB; calculator includes dated vendor fee sources |
+| Days 10-11 | Ship mobile/desktop 16 CFR 255 bar + optional checklist email capture | 390px/1440px disclosure screenshots archived; RFC 8058 1-click opt-out live |
+| Days 12-14 | Wire `/go/:slug` `click_id` minter, D1 ledger & HMAC S2S postbacks | Synthetic conversion, duplicate replay & out-of-order reversal tests pass |
+| Days 15-17 | Publish 10 substantiated `vs`/`pricing` guides + launch $300-$500 search test | Exact-match non-brand BOFU ads live with hard budget cap & `GCLID` capture |
+| Days 18-19 | Publish 5 screen-recorded YouTube workflow/pricing comparisons | Spoken + pinned Line-1 FTC disclosure + UTM-tagged calculator links |
+| Days 20-21 | Compile 7-day channel-separated cohort readout (Paid vs Video vs Organic) | Bridge CTR, click-to-lead & pending vs settled Net EPC logged by cohort |
+| Days 22-23 | Reconcile partner portal exports against internal D1 `click_ledger` | Unmatched conversion share <=2.0%; zero duplicate event inflation |
+| Days 24-25 | Audit scrub reason codes & submit private 20%-30% CPA-bump pitch | Written AM outreach sent with verified SQL/funded-account quality metrics |
+| Days 26-28 | Repair weakest funnel transition & run labeled comparison cohort | Single-variable change (headline, calculator step, or Offer B split) tested |
+| Days 29-30 | Close Month-1 accrual books & execute Day-30 Kill / Fix / Scale gate | 15% scrub reserve booked; Net-60 cash float verified before Month-2 budget |
 
 **SOP — Standard Operating Procedure**
 
@@ -117,20 +127,20 @@ For planning only, hold the worked $10 net EPC constant and divide each annual c
 
 **Worked Unit-Economics and Annual Trajectory Blueprint**
 
-| Measure | Conservative | Base | Scaled |
-| --- | --- | --- | --- |
-| Annual gross earned commissions, net of reversals | $50,000 | $325,000 | $600,000 |
-| Owner net margin | 20% | 35% | 50% |
-| Annual owner net profit | $10,000 | $113,750 | $300,000 |
-| Annual total operating cost ceiling | $40,000 | $211,250 | $300,000 |
-| Staffing assumption | 1 FT + 2 C | 1 FT + 2 C | 2 FT + 3 C |
-| Monthly earned commission pace | $4,166.67 | $27,083.33 | $50,000 |
-| Monthly owner profit pace | $833.33 | $9,479.17 | $25,000 |
-| Annual outbound clicks at assumed $10 net EPC | 5,000 | 32,500 | 60,000 |
-| Monthly outbound clicks, rounded up | 417 | 2,709 | 5,000 |
-| Traffic cost if all clicks bought at $4 | $20,000 | $130,000 | $240,000 |
-| Remaining annual budget for labor, content, tools and other costs | $20,000 | $81,250 | $60,000 |
-| Merchant GMV | Track separately | Track separately | Track separately |
+| Measure | Conservative | Base | Scaled | Cohort Pacing & Budget Guardrail |
+| --- | --- | --- | --- | --- |
+| Annual gross earned commissions, net of reversals | $50,000 | $325,000 | $600,000 | Post-scrub settled referral revenue; never extrapolate pending Day-30 balances |
+| Owner net margin | 20% | 35% | 50% | Target operating margin unlocked as organic BOFU + recurring SaaS share compounds |
+| Annual owner net profit | $10,000 | $113,750 | $300,000 | Pre-tax residual owner cash flow after all traffic, pod labor, and tool expenses |
+| Annual total operating cost ceiling | $40,000 | $211,250 | $300,000 | Hard annual opex budget enforced via monthly accrual closes |
+| Staffing assumption | 1 FT + 2 C | 1 FT + 2 C | 2 FT + 3 C | Founder + 2 contractors through Base; adds 1 FT operator only after Base cash settles |
+| Monthly earned commission pace | $4,166.67 | $27,083.33 | $50,000 | Steady-state monthly settled run-rate required to hit annual revenue tier |
+| Monthly owner profit pace | $833.33 | $9,479.17 | $25,000 | Monthly pre-tax residual profit run-rate after operating expenses |
+| Annual outbound clicks at assumed $10 net EPC | 5,000 | 32,500 | 60,000 | Illustrative qualified `/go/` click volume required if settled Net EPC averages $10.00 |
+| Monthly outbound clicks, rounded up | 417 | 2,709 | 5,000 | Monthly high-intent outbound click target (~14 to ~167 qualified buyer clicks/day) |
+| Traffic cost if all clicks bought at $4 | $20,000 | $130,000 | $240,000 | Sensitivity stress test: 100% paid acquisition at $4/click eats 40% of gross commissions |
+| Remaining annual budget for labor, content, tools and other costs | $20,000 | $81,250 | $60,000 | Proves why Scaled 50% margin requires organic SEO/YouTube/email share alongside paid |
+| Merchant GMV | Tracked off-ledger | Tracked off-ledger | Tracked off-ledger | Customer order value belongs to the merchant and stays outside publisher revenue |
 
 ---
 

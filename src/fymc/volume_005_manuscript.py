@@ -435,21 +435,24 @@ def build_volume_005_manuscript(abridged_videos: list[dict] | None = None) -> di
             baseline_prepared.append(cloned)
         base_urls = {item.get("url") for item in baseline_prepared}
         non_base_raw = [item for item in existing if item.get("url") not in base_urls]
+        needed = None if cap_per_chapter is None else max(0, cap_per_chapter - len(baseline_prepared))
         fresh_vid_items = []
         repeat_vid_items = []
+        seen_candidate_vids: set[str] = set()
         for item in non_base_raw:
             ivid = str(item.get("video_id") or "")
-            if ivid and ivid not in used_book_videos:
-                used_book_videos.add(ivid)
+            if ivid and ivid not in used_book_videos and ivid not in seen_candidate_vids:
+                seen_candidate_vids.add(ivid)
                 fresh_vid_items.append(item)
             else:
                 repeat_vid_items.append(item)
         non_base = fresh_vid_items + repeat_vid_items
-        merged = baseline_prepared + non_base
-        if cap_per_chapter is not None and len(merged) > cap_per_chapter:
-            chapter["source_citations"] = baseline_prepared + non_base[: max(0, cap_per_chapter - len(baseline_prepared))]
-        else:
-            chapter["source_citations"] = merged
+        chosen_extra = non_base if needed is None else non_base[:needed]
+        for item in chosen_extra:
+            ivid = str(item.get("video_id") or "")
+            if ivid:
+                used_book_videos.add(ivid)
+        chapter["source_citations"] = baseline_prepared + chosen_extra
 
     total_words = compute_manuscript_word_count(chapters)
     total_yt_links = count_manuscript_youtube_links(chapters)

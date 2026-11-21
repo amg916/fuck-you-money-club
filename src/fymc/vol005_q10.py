@@ -21,11 +21,17 @@ CHAPTER_10 = {
                 "Define the money before setting a bid. Referred merchant GMV is the value of sales sent to merchants, not revenue earned by this business. Gross earned commissions here means affiliate commissions after reversals and clawbacks but before traffic, content, and tooling costs. Net owner profit is what remains after all modeled operating costs; personal tax is outside this model. A large merchant sale can still pay a small bounty or nothing if the buyer was already a customer. Track the order date, trial date, earned date, and cash date separately. Never count a trial as a sale or a pending bounty as cash. Use settled cohort earnings per outbound merchant click for EPC. That denominator differs from an ad click, an email open, or a calculator visit; mixing them makes a weak channel look strong.",
                 "Use a weekly budget with room to be wrong. Put an initial ceiling on each source and freeze increases until its oldest cohort has cleared the merchant reversal window. Reserve cash for the gap between paying for a click and receiving a commission. The conservative case earns $50,000 annually and spends $40,000 to leave $10,000; the base earns $325,000 and spends $211,250 to leave $113,750. The scaled case earns $600,000 and spends $300,000 to leave $300,000. These are scenarios, not observed results. FT means full time and C means contractor; headcount labels alone do not price labor. The model treats owner work as compensated from residual profit and includes paid contractor costs. Add a market wage for the owner when comparing this venture with a passive investment or a job offer."
             ],
-            "table": {"caption": "Forensic Traffic-Quality & Scrub Guards", "headers": ["Naive Trap", "Detection Metric", "Durable Operator Fallback"], "rows": [
-                ["Cheap leads", "Accepted referral rate", "Pay against cleared cohorts"],
-                ["Bot dwell", "Completed useful tasks", "Real calculator sessions"],
-                ["Revenue screenshots", "Settled EPC", "Reconcile merchant exports"]
-            ]}
+            "table": {
+                "caption": "Forensic Traffic-Quality & Scrub Guards",
+                "headers": ["Naive Trap", "Detection Metric", "Durable Operator Fallback"],
+                "rows": [
+                    ["Buying cheap social leads for SparkLoop co-reg", "Partner 14-to-30-day engagement acceptance rate (<65%)", "Acquire B2B problem-intent subscribers + send high-value Day-0 welcome tool"],
+                    ["Confusing bot/click-farm dwell with Navboost UX", "Calculator slider interactions & verified S2S conversions / 1k visits", "Engineer genuine interactive fee/ROI tools that earn real human bookmarks"],
+                    ["Scaling channels off unverified dashboard screenshots", "Settled post-lock Net EPV divided by channel CAC (<1.3x stop)", "Hold channel budgets flat until Cohort 1 clears its 45-day scrub window"],
+                    ["Flooding Reddit/Quora with bought sockpuppet accounts", "Subreddit link removals, domain bans & FTC endorsement exposure", "Operate disclosed brand benchmark hubs & answer with zero-link utility first"],
+                    ["Buying cheap MFA / junk programmatic CTV impressions", "Zero-click view-through claims with 0 lift in holdout tests", "Restrict media buys to high-intent search, YouTube tutorials & vetted newsletters"]
+                ]
+            }
         },
         {
             "heading": "2. Make Day 0 an earned offset",
@@ -34,7 +40,18 @@ CHAPTER_10 = {
                 "The newsletter_co_reg_sparkloop_arbitrage play can offset list acquisition when readers choose relevant partner newsletters and those referrals pass partner checks. It cannot make every signup profitable. Offer a useful first email, then clearly optional recommendations with the payment relationship disclosed near the choice. Keep newsletter signup distinct from each partner choice. Match source tags to referral IDs without exposing addresses in URLs. Measure acquisition cost per valid new subscriber and earned partner revenue per acquired subscriber. If a subscriber costs $2 and produces $2 of accepted referral revenue, the cohort covers media cost before service costs. Calling that Day 0 liquidation describes when the referral opportunity occurs, not when money reaches the bank. Pending credits remain a receivable estimate until the partner accepts them and a payable balance exists under the current program terms.",
                 "Model rejection before celebrating an offset. Suppose 1,000 valid subscribers cost $2,000, half choose two relevant recommendations, and each accepted placement pays $2.50. That yields 1,000 submitted referrals, not 2,000. With an 80% acceptance rate, earned revenue is $2,000 and media payback is exactly one times. At 60% acceptance, revenue falls to $1,500 and the cohort needs $500 from later commissions just to cover media. Verify permitted sources, duplicate rules, geography, and engagement requirements with each partner before buying traffic. Those are model inputs, not universal SparkLoop terms. Keep rejected and pending counts visible next to accepted counts. A high payout with a low acceptance rate can be worse than a small payout with clean buyers. Do not fund tomorrow's ads from an unsettled balance that may still be scrubbed after an engagement review.",
                 "Automate the ledger rather than automating wishful thinking. Send new subscribers a task focused welcome sequence, record their chosen interests, and suppress opt outs promptly across the relevant sending system. Use honest sender information and subject lines, a working unsubscribe route, and the required postal address for commercial mail. CAN SPAM applies even where a partner supplies the lead; a vendor does not erase the sender's duties. Keep proof of the recommendation wording and the reader's action so a disputed referral can be traced. Reconcile paid source totals against unique subscribers each week, then compare accepted referrals with payout exports. Pause any source whose acceptance rate drops below the cohort's break even requirement. Protect the reader relationship first: a useful list can earn recurring commissions, while a list built solely to sell the same address repeatedly tends to decay."
-            ]
+            ],
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "YouTube Carousels, SparkLoop Scrubs & Multi-Channel Flywheels",
+                "body": "Multi-channel operators compound traffic insulated from Google core updates using four high-leverage habits:",
+                "items": [
+                    "Pair Every BOFU Written Comparison With an 8-Minute Screen-Recorded YouTube Walkthrough: Embedding your own walkthrough lifts page dwell time while capturing both YouTube search and Google's Page-1 video carousel for the exact same `[Vendor A] vs [Vendor B]` query.",
+                    "Cap SparkLoop Co-Reg Upsells at 3 Curated B2B Publications: Showing 8+ irrelevant consumer newsletters tanks subscriber trust and spikes 14-day inactivity scrubs; 2-3 tight B2B finance/ops picks yield higher net accepted EPC.",
+                    "Put the Interactive Calculator Link on Line 1 of YouTube Descriptions + Spoken CTA at 0:45: 70%+ of high-ticket YouTube affiliate clicks come from viewers who click the pinned calculator link in the first two minutes rather than watching to the outro.",
+                    "Repurpose One Vendor Fee Dataset Into Five Surfaces Every Week: One verified 6-vendor pricing audit becomes (1) HTML comparison page, (2) YouTube screen demo, (3) SVG cost-crossover chart for Google Images/Pinterest, (4) newsletter teardown, and (5) LinkedIn/Substack note.",
+                ]
+            }
         },
         {
             "heading": "3. Route ten channels through one useful tool",
@@ -48,16 +65,16 @@ CHAPTER_10 = {
                 "caption": "10-Channel Traffic-to-EPC Payback & Platform-Risk Matrix",
                 "headers": ["Channel", "Target Buyer Intent", "Typical CPC / Production Cost", "Expected Click-to-Commission Lag", "Primary Platform Risk", "Durable Hedge"],
                 "rows": [
-                    ["Paid search", "Compare vendors", "$2–$8 CPC", "14–90 days", "Bid inflation", "Owned comparison tool"],
-                    ["Paid social", "Recognize problem", "$1–$4 CPC", "30–120 days", "Targeting drift", "Email cohort"],
-                    ["SparkLoop co-reg", "Choose newsletters", "$2/subscriber model", "0–30 days; checks vary", "Referral rejection", "Acceptance reserve"],
-                    ["YouTube tutorials", "Solve setup", "$150–$600/video", "14–120 days", "Discovery change", "Owned transcript"],
-                    ["Pinterest", "Plan purchase", "$30–$100/pin set", "30–180 days", "Reach decay", "Original data page"],
-                    ["Flipboard", "Research category", "$40–$120/card set", "30–120 days", "Distribution loss", "Direct subscribers"],
-                    ["Opt-in DM", "Request resource", "$50–$200/flow", "7–90 days", "Messaging limits", "Requested email option"],
-                    ["Organic calculator", "Quantify fit", "$300–$1,500/tool", "14–180 days", "Search update", "Direct bookmarks"],
-                    ["Community hub", "Ask peers", "$200–$600/month", "30–180 days", "Moderation rules", "Owned resource archive"],
-                    ["Utility CTV", "Learn workflow", "$500–$2,000/pilot", "30–180 days", "Opaque attribution", "Placement audit; holdout"]
+                    ["1. Exact-Match Search (Google/Bing)", "`[Incumbent] pricing calculator / alternative`", "$2.00–$8.50 CPC (non-brand BOFU)", "14–60 days (trial -> lock)", "CPC bid inflation & broad-match drift", "Strict exact/phrase match + post-scrub GCLID bidding"],
+                    ["2. Faceless YouTube Walkthroughs", "Live screen-recorded software/fee teardown", "$125–$450/video (founder + editor)", "14–90 days (compounding evergreen)", "Recommendation feed volatility", "Rank for exact search queries + capture email on calculator"],
+                    ["3. SparkLoop / Beehiiv Co-Reg", "B2B operators downloading migration checklist", "$2.00–$3.50 paid lead CAC", "14–30d co-reg scrub; 30–60d backend", "Partner quality scrub on unengaged subs", "Hold 20% scrub reserve + 5-email BOFU welcome sequence"],
+                    ["4. Organic Comparison & ROI Calculators", "Bottom-of-funnel seat/state fee modeling", "$300–$1,200 per interactive tool", "30–150 days (SERP + backlink ramp)", "Google core update ranking shifts", "Interactive tool bookmarks + multi-engine GEO schema"],
+                    ["5. Paid Social Quiz -> Bridge", "Problem-aware SMB founders / homeowners", "$0.80–$3.20 link-click CPC", "15–75 days (ping-post or SaaS demo)", "Creative fatigue & signal loss", "4-step qualification quiz + server-side Meta CAPI (`fbc`)"],
+                    ["6. Multi-Engine GEO (ChatGPT / Perplexity)", " conversational `'compare X vs Y for 50 seats'`", "$0 incremental (built into HTML hub)", "7–45 days (ultra-high buyer trust)", "Citation turnover if pricing goes stale", "30-day verified HTML `<table>` + JSON methodology refresh"],
+                    ["7. Visual SERPs (Pinterest / Google Images)", "Cost-crossover flowcharts & architecture matrices", "$30–$90 per original SVG/PNG chart pack", "30–150 days (evergreen image search)", "Low CTR on generic stock graphics", "Publish high-information fee crossover charts linked to tool"],
+                    ["8. Syndicated Authority Editions (LinkedIn/Substack)", "Mid-tail industry teardown & benchmark readers", "$75–$200 adaptation per research brief", "14–90 days", "Host platform link/visibility policy changes", "Explicit FTC disclosure + canonical dataset on owned domain"],
+                    ["9. Opt-In Comment / Keyword DM Flows", "Founders requesting editable fee spreadsheet", "$50–$150 automation setup", "7–60 days", "Platform messaging rate-limit bans", "Send strictly to explicit keyword requestors + email opt-in"],
+                    ["10. Disclosed Brand Community / Subreddit", "Peer migration Q&A & implementation benchmarks", "$200–$500/mo moderation & benchmarks", "30–180 days", "Zero-tolerance spam moderation", "Owned disclosed community hub + zero-bot policy"]
                 ]
             },
             "sop_steps": [

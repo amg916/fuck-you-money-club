@@ -26,18 +26,18 @@ The stack below is a menu of ten jobs, not an instruction to buy ten subscriptio
 
 **10-Tool Attribution, SERP/GEO Intelligence & Contextual Extension Stack**
 
-| Tool | Job | Control |
+| Tool & Category | Core Operator Job | Governance & Cost-Discipline Control |
 | --- | --- | --- |
-| Search Console | Own SERP demand | Separate brand queries |
-| Ahrefs | Comparison gaps | Sample, not census |
-| Screaming Frog | Indexable HTML | Check canonical URLs |
-| Plausible | Page events | Minimize identifiers |
-| Merchant portal | Cleared commissions | Export reversals |
-| Postgres | Referral ledger | Dedupe order IDs |
-| Chrome DevTools | MV3 event audit | Inspect outbound calls |
-| Web Store dashboard | Extension health | Watch uninstall cohorts |
-| Sheets | GEO test log | Freeze query sets |
-| Playwright | Price table checks | Respect access terms |
+| 1. Google Search Console + Bing Webmaster | First-party BOFU query impression, CTR & indexing telemetry | Segment brand vs non-brand regex; zero cost |
+| 2. Ahrefs / Semrush + DataForSEO API | Competitor `[Vendor] vs` gap mining, CPC floors & link provenance | Treat volume estimates as directional samples; audit ROI quarterly |
+| 3. Screaming Frog + Custom HTML Auditor | Verify server-rendered `<table>` pricing markup, canonicals & FTC bars | Block deploys if mobile above-the-fold disclosure or `sub1` link breaks |
+| 4. Plausible / First-Party Event Logger | Cookieless calculator slider completion & bridge-CTR measurement | Zero PII or cross-site fingerprinting; fast `<2KB` script |
+| 5. PartnerStack / Impact / Everflow Portals | Authoritative pending -> locked -> settled commission & scrub exports | Pull weekly CSV/API statements and reconcile reversals by cohort |
+| 6. Cloudflare D1 / Managed PostgreSQL | Immutable `click_ledger` + idempotent S2S `conversion_events` store | Enforce `UNIQUE (network, external_tx_id, status)` deduplication |
+| 7. Chrome DevTools + MV3 Service-Worker Audit | Verify Manifest V3 extension network calls & `activeTab` scope | Confirm zero background link rewriting or third-party script loads |
+| 8. Chrome Web Store Developer Console | Track weekly active users (WAU), uninstall spikes & review sentiment | Gate phased rollouts at 5%-10% cohort before 100% publish |
+| 9. Multi-Engine GEO Benchmark Harness | Track 10-query citation accuracy across ChatGPT, Perplexity, Gemini & AIO | Freeze prompt wording across 3 fresh logged-out sessions weekly |
+| 10. Playwright Vendor-Pricing Diff Runner | Monthly snapshot check of public SaaS/fintech pricing pages | Respect `robots.txt`/ToS; flag changed seat tiers for human verification |
 
 ## 2. Buy useful context, never borrowed trust  `🏷️ OPERATING_FRAMEWORK`
 
@@ -49,14 +49,22 @@ The expired_chrome_extension_acquisitions play means buying a dormant business a
 
 **Chrome Web Store Affiliate Policy & Extension Acquisition Diligence Checklist**
 
-| Check | Evidence | Reject condition |
+| Diligence Gate | Required Documentary & Technical Proof | Immediate Deal-Kill / Reject Condition |
 | --- | --- | --- |
-| Single purpose | Listing matches core utility | Unrelated referral injection |
-| User action | Click trace and disclosure | Background tag insertion |
-| Stand-down | Existing affiliate test fixture | Prior tag displaced |
-| Ownership | Seller rights and valid transfer | Unverifiable title |
-| Code integrity | Build, permissions, dependency review | Unexplained remote execution |
-| Retention | Active cohorts and update notices | Install badge without activity |
+| 1. Single-Purpose Compliance | CWS listing, popup UI & codebase serve one narrow B2B utility | Injecting unrelated retail shopping or coupon popups across general sites |
+| 2. Explicit User Gesture | HAR trace proves affiliate link opens strictly on user button click | Background tab-unders, auto-redirects, or page-load cookie dropping |
+| 3. Existing-Affiliate Stand-Down | Automated Playwright test suite covering 12+ partner URL parameters | Overwriting another publisher's `irclickid`, `ps_xid`, `sub1`, or promo code |
+| 4. Clean Chain of Title | Signed `17 U.S.C. 204(a)` assignment + developer-account CWS transfer | Shared login credentials without legal assignment or disputed contributors |
+| 5. Manifest V3 Code Integrity | Reproducible local build from Git; zero remote-hosted JS or obfuscation | Minified external script loaders, broadened `<all_urls>` asks, or adware history |
+| 6. Active Cohort Retention | 28-day CWS Weekly Active Users (WAU) vs lifetime install badge | WAU <15% of installs or >3% uninstall spike on benign bug-fix release |
+
+> **INSIDER PRO-TIPS — Manifest V3 Extensions, GEO Citations & Pixel Boundaries**
+> 
+> Technical operators capture AI-search citations and extension distribution without policy bans:
+> - Request `activeTab` Instead of `<all_urls>` When Acquiring or Shipping MV3 Extensions: Broad `<all_urls>` permission changes trigger Chrome's scary 'Read and change all your data' disablement prompt, wiping out 40%-70% of an acquired user base overnight.
+> - Win ChatGPT Search & Perplexity Citations With Dated HTML `<table>` + Methodology Rows: Answer engines disproportionately quote pages that pair an explicit numeric comparison `<table>` with a 2-sentence 'How We Calculated Seat Costs (Verified [Month Year])' block.
+> - Test Affiliate Stand-Down Against `?utm_source=`, `irclickid`, `ps_xid`, and `awc` Before Release: Your browser extension must detect existing referral parameters in the tab URL and suppress affiliate injection so partner networks never ban your account for poaching.
+> - Default Identity-Resolution Pixels to OFF Unless Explicit Opt-In Clears Counsel Review: On high-ticket B2B comparison hubs, server-side `click_id` + voluntary calculator email capture delivers 90% of the revenue value with zero CIPA section 631 wiretap exposure.
 
 ## 3. Earn citations with reproducible buyer evidence  `🏷️ OPERATING_FRAMEWORK`
 
@@ -68,13 +76,13 @@ Connect citation testing to the traditional search hub through canonical evidenc
 
 **Multi-Engine GEO Citation Testing Protocol**
 
-| Surface | Repeatable test | Evidence and failure |
+| AI Answer Surface | Repeatable Weekly Panel Protocol | Audit Evidence & Repair Trigger |
 | --- | --- | --- |
-| ChatGPT | 10 buyer queries x 3 fresh sessions | Save cited passage; flag unsupported recommendation |
-| Perplexity | Same query panel and locale | Inspect source URL; flag stale price |
-| Gemini | Same panel; record shown mode | Separate linked source from uncited mention |
-| Google AI Overviews | Same panel; record device and region | Log absent overview separately |
-| All surfaces | Weekly repeat after evidence refresh | Report supported citations / all runs and / surfaced answers |
+| ChatGPT (Search / Browse) | 10 BOFU buyer queries x 3 fresh logged-out sessions | Archive cited URL + verbatim fee quote; patch HTML/JSON if fee misquoted |
+| Perplexity Pro / Default | Identical 10-query B2B pricing panel locked to US locale | Verify footnote rank (#1-#5) and check dated vendor pricing freshness |
+| Google Gemini | Identical 10-query panel; log model tier and grounding links | Separate clickable source-card links from unlinked brand mentions |
+| Google AI Overviews (AIO) | Desktop + mobile SERP capture across US commercial IPs | Log AIO trigger rate separately; verify structured HTML table extraction |
+| Cross-Engine Synthesis | Weekly diff run after vendor pricing or schema updates | Track supported-citation share and downstream `/go/` Net EPC by referrer |
 
 **SOP — Standard Operating Procedure**
 
@@ -99,15 +107,15 @@ California Penal Code section 631 raises interception and consent questions that
 
 Implement the boundary as a loading rule, not a reporting filter applied after data has escaped. With resolution disabled, verify that no resolver script, preconnect, image request, server relay, or queued event contacts the provider. With the required permission present, send only the fields authorized for the stated purpose and retain a minimal versioned record of the choice. Withdrawal must stop future sends and trigger the relevant deletion or suppression process, including downstream recipients where required. Exercise denial, withdrawal, unknown location, expired permission, and vendor outage cases in the browser network inspector. Avoid replaying prepermission events when a person later opts in. Report match quality separately from permission coverage so an impressive match percentage cannot hide excluded visitors. When the boundary fails, disable the integration and keep the comparison utility working with contextual data and merchant reports rather than interrupting the entire buyer experience.
 
-**Forensic Controls for Attribution Shortcuts**
+**Forensic Controls for Attribution, Extension & Pixel Shortcuts**
 
-| Naive Trap | Detection Metric | Durable Operator Fallback |
+| Naive Beginner Trap | Forensic Detection Metric | Durable Operator Fallback |
 | --- | --- | --- |
-| Installs equal buyers | Monthly active / installed users | Price retained active cohorts |
-| Mentions equal accuracy | Supported claims / cited claims | Publish dated methods and corrections |
-| First-party hostname equals privacy | Third-party requests before permission | Disable resolution; use aggregate counts |
-| Clicks equal incremental sales | Cleared earnings versus holdout | Reconcile refunds and test a control |
-| Last touch justifies rewriting | Existing tags altered in test suite | Stand down; preserve original referral |
+| Valuing dormant Chrome extensions on lifetime install badges | 28-day CWS Weekly Active Users (WAU) divided by total installs | Bid strictly on verified 28-day active cohorts and Manifest V3 code |
+| Treating uncited LLM brand mentions as monetizable GEO wins | Clickable verified source-card citations divided by total panel runs | Publish dated HTML+JSON fee benchmarks that earn linked citations |
+| Assuming CNAME first-party proxying exempts B2B identity pixels | Third-party network/HAR requests fired prior to affirmative opt-in | Hard-block resolver scripts until required jurisdiction consent is logged |
+| Crediting checkout coupon clicks as 100% incremental conversions | Cleared post-scrub earnings vs merchant incrementality holdout tests | Lead with pre-checkout comparison value and honor partner stand-down rules |
+| Overwriting upstream creator `irclickid` / `ps_xid` parameters | Automated Playwright tag-preservation check across 12+ network params | Enforce strict stand-down logic whenever any affiliate tag is present |
 
 > **OPERATOR GATE — No permission evidence, no resolution request**
 > 
@@ -173,6 +181,6 @@ Sequence investment in four weekly blocks instead of purchasing the entire stack
 13. Earnings Per Call: Melissa Lai, Senior Business Development Manager at Ringba (OfferVault) — OfferVault @ [00:25:36]: Watching this thank you to brother and enjoy the rest of the weather out there in California we'll see you soon all right yes thank you so much I'll see you sooner than later all right. — Attributed practitioner commentary on S2S attribution stacks, contextual Chrome extensions, first-party identity pixels, and AI-Overview/GEO citations. — <https://www.youtube.com/watch?v=rsmZ9FBIPks&t=1536s>
 14. The 2027 SEO & GEO Checklist (What Your Site Might Be Missing) (Rank Math SEO) — Rank Math SEO @ [00:08:16]: You can also ask, what do customers always complain about your business? Find out how your business is performing on AI overview and take note of the reference sources. Go to ChatGPT, Perplexity, and Claude to ask the same question. — Attributed practitioner commentary on S2S attribution stacks, contextual Chrome extensions, first-party identity pixels, and AI-Overview/GEO citations. — <https://www.youtube.com/watch?v=wO28FZWmVwE&t=496s>
 15. How to Steal Your Competitor’s SEO Strategy in 15 Minutes (Semrush Traffic & AI Audit) (ToolTester Pro) — ToolTester Pro @ [00:16:14]: You get a set number of free searches a day for sizing up one competitor and working out where to point your next few posts, completely good with the free tool. — Attributed practitioner commentary on S2S attribution stacks, contextual Chrome extensions, first-party identity pixels, and AI-Overview/GEO citations. — <https://www.youtube.com/watch?v=boGwMjAxtuk&t=974s>
-16. Make STUPID Money With an SLO (Maximize Profits with a Self-Liquidating Offer & Affiliate Marketing) — Jonathan Montoya @ [00:00:00]: Decision gates and exception queue — case dossier — Gate identity on discriminating evidence, not name similarity. — Matched source commentary; not independent verification or legal authority. — <https://www.youtube.com/watch?v=QdGtcnjJSno&t=0s>
-17. Make STUPID Money With an SLO (Maximize Profits with a Self-Liquidating Offer & Affiliate Marketing) — Jonathan Montoya @ [00:00:00]: Research quality and tool selection — research tasks and available tools — Prefer official source images over commercial summaries when resolving decisive facts. — Matched source commentary; not independent verification or legal authority. — <https://www.youtube.com/watch?v=QdGtcnjJSno&t=0s>
-18. The Smartest Affiliate Business Model: Recurring SaaS Commissions — Michael Bashi @ [00:00:00]: Decision gates and exception queue — case dossier — Gate identity on discriminating evidence, not name similarity. — Matched source commentary; not independent verification or legal authority. — <https://www.youtube.com/watch?v=lh5ulbIfANU&t=0s>
+16. #3 Understanding FTC Guidelines for Affiliates and Influencers | Tricia Meyer — Always Be Testing @ [00:27:18]: Give you any data because it's either proprietary or we don't feel confident enough in it to share it or it can't be measured across different agencies anyway so what's the use like basically everyone wants to be a part of this everyone wants to try to help but no one really wants to share their data so we're just going to have to keep going at it and find different ways. — Matched source commentary; not independent verification or legal authority. — <https://www.youtube.com/watch?v=ny2He3BVEgM&t=1638s>
+17. Newsletter Office Hours: How to grow your newsletter with Paid Ads in 2023 — SparkLoop @ [00:00:00]: Decision gates and exception queue — case dossier — Gate identity on discriminating evidence, not name similarity. — Matched source commentary; not independent verification or legal authority. — <https://www.youtube.com/watch?v=uVhFrwe935U&t=0s>
+18. Newsletter Masterclass: How to create the perfect newsletter referral program in 2023 — SparkLoop @ [00:00:00]: Decision gates and exception queue — case dossier — Gate identity on discriminating evidence, not name similarity. — Matched source commentary; not independent verification or legal authority. — <https://www.youtube.com/watch?v=ucyDCgyYRko&t=0s>

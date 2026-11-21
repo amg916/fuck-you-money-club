@@ -2622,7 +2622,7 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
         self.assertEqual(len(v5["manuscript"]["operator_plays"]), 35)
         self.assertGreater(v5["manuscript"]["total_word_count"], 50000)
         repo_v5 = self.store.load_publishing_state(ROOT, volume_id=VOLUME_005_ID, verify_manifest=True)["volume"]
-        self.assertGreater(repo_v5["manuscript"]["total_word_count"], 59000)
+        self.assertGreater(repo_v5["manuscript"]["total_word_count"], 68000)
         self.assertGreaterEqual(v5["manuscript"]["expert_youtube_link_count"], 180)
         self.assertEqual(len(v5["workbook"]["worksheets"]), 6)
         self.assertGreaterEqual(len(json.dumps(v5["workbook"]).split()), 5000)
@@ -2633,17 +2633,34 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
             "Reversal-Adjusted EPC, Net-60 Working-Capital Float & Margin Waterfall",
             "12-Layer Zero-Idle Edge Hosting, S2S Tracker & Call-Routing Stack",
             "Server-Side S2S Postback & Attribution Ledger Blueprint",
+            "Production Cloudflare Worker + D1 S2S Redirect & Constant-Time HMAC Postback Reference",
+            "Worked 90-Day Cohort Walk",
             "FTC 16 CFR Part 255, Authorized Brand-Bidding & TCPA Consent Templates",
             "16 CFR Part 255",
         ):
             self.assertIn(required_v5_marker, v5_serialized)
-        v5_table_rows = sum(
-            len(sec["table"].get("rows", []))
+        v5_insider_callouts = [
+            c
             for ch in v5["manuscript"]["chapters"]
             for sec in ch.get("sections", [])
-            if isinstance(sec.get("table"), dict)
-        )
-        self.assertGreaterEqual(v5_table_rows, 220)
+            for c in (sec.get("callouts") or ([sec["callout"]] if isinstance(sec.get("callout"), dict) else []))
+            if c.get("kind") == "INSIDER PRO-TIPS"
+        ]
+        self.assertEqual(len(v5_insider_callouts), 12)
+        self.assertGreaterEqual(sum(len(c.get("items", [])) for c in v5_insider_callouts), 48)
+        v5_all_tables = [
+            t
+            for ch in v5["manuscript"]["chapters"]
+            for sec in ch.get("sections", [])
+            for t in (sec.get("tables") or ([sec["table"]] if isinstance(sec.get("table"), dict) else []))
+            if isinstance(t, dict) and t.get("rows")
+        ]
+        v5_table_rows = sum(len(t["rows"]) for t in v5_all_tables)
+        self.assertGreaterEqual(v5_table_rows, 415)
+        v5_avg_cell_words = sum(
+            len(str(cell).split()) for t in v5_all_tables for r in t["rows"] for cell in r
+        ) / max(1, sum(len(r) for t in v5_all_tables for r in t["rows"]))
+        self.assertGreaterEqual(v5_avg_cell_words, 5.5)
         v5_corpus = json.loads((ROOT / "data" / "custom" / "vol005_affiliate_marketing_corpus.json").read_text(encoding="utf-8"))
         self.assertGreaterEqual(len({v["video_id"] for v in v5_corpus.get("videos", [])}), 150)
         repo_v5_unique_vids = {
