@@ -1,0 +1,618 @@
+from __future__ import annotations
+
+CHAPTER_10 = {
+    "id": "Q10",
+    "chapter_id": "Q10",
+    "chapter_number": 10,
+    "question_number": 10,
+    "slug": "automation-ai-leverage-scalable-distribution-flywheels",
+    "question_prompt": "How does a 2 FT + 3 C (5 people) enterprise software reselling team automate 70%+ of repetitive research, qualification, fulfillment, and traffic/deal acquisition while keeping human-in-the-loop QA?",
+    "kicker": "Q10 / THE BIG MONEY PLAYBOOKS",
+    "title": "Automation, AI Leverage & Scalable Distribution Flywheels",
+    "subtitle": "Python Event Pipelines, AWS CPPO and Microsoft CSP Workflows, Renewal Intelligence, and Human-Controlled Quote Economics",
+    "layout_template": "case_study_walkthrough",
+    "reading_time_minutes": 14,
+    "executive_summary": (
+        "Candidate #23, Enterprise Software Reselling, holds Rank #19 with a 72/100 "
+        "Money-to-Manpower Score. Its leverage comes from automating evidence movement, "
+        "not delegating commercial authority to a model. This chapter connects nine mapped "
+        "plays: account research, qualification, deal registration, quote preparation, "
+        "marketplace offers, implementation attachment, license reconciliation, renewal "
+        "orchestration, and distribution referrals. A 2 FT + 3 C pod uses Python workers, "
+        "signed webhooks, constrained LLM extraction, and named human reviewers to target "
+        "70%+ removal of repetitive labor. Canonical annual owner profits remain $24,000 "
+        "Conservative, $196,000 Base, and $500,000 Scaled; the Scaled case requires "
+        "3 FT + 4 C. Instrument run costs, authorization evidence, collections, and "
+        "recovery paths before expanding automated volume."
+    ),
+    "key_metrics": [
+        {
+            "label": "Conservative",
+            "value": "$300,000",
+            "context": "Annual gross license resale and service billings; vendor costs included in margin",
+            "note": "8% net margin; $24,000 annual owner net profit; 2 FT + 3 C",
+        },
+        {
+            "label": "Base",
+            "value": "$1,400,000",
+            "context": "Annual gross license resale and service billings; vendor costs included in margin",
+            "note": "14.0% net margin; $196,000 annual owner net profit; 2 FT + 3 C",
+        },
+        {
+            "label": "Scaled",
+            "value": "$2,500,000",
+            "context": "Annual gross license resale and service billings; vendor costs included in margin",
+            "note": "20% net margin; $500,000 annual owner net profit; 3 FT + 4 C (7 people)",
+        },
+    ],
+    "sections": [
+        {
+            "heading": "1. Map nine operator plays into one evidence-controlled event system",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Build the automation boundary around a commercial record, not around an autonomous salesperson. "
+                    "Candidate #23's nine mapped operator plays are account research, qualification, deal registration, "
+                    "quote preparation, marketplace offer execution, implementation attachment, license reconciliation, "
+                    "renewal orchestration, and distribution referrals. Treat this chapter's mapping as the operating "
+                    "taxonomy, with one accountable owner and one measurable output per play. The first full-time "
+                    "operator owns vendor relationships, pricing decisions, procurement conversations, and customer "
+                    "commitments. The second owns delivery coordination, renewal operations, collections visibility, and "
+                    "exception triage. Three contractors supply bounded integration engineering, implementation capacity, "
+                    "and channel content production; contractor seats do not imply unlimited weekly hours. Record each "
+                    "person's contracted availability before allocating review work. HubSpot or Salesforce holds the "
+                    "opportunity record; a PostgreSQL event ledger holds processing history; vendor portals remain "
+                    "authoritative for program rights and transaction status. Assign stable customer, tenant, opportunity, "
+                    "and subscription identifiers before adding AI. Similar company names, subsidiaries, and shared "
+                    "email domains otherwise produce attractive but incorrect account matches. Every event must carry "
+                    "its source, retrieval time, permission scope, and evidence link so a reviewer can reconstruct "
+                    "the decision without searching chat transcripts. Separate customer-specific records from reusable "
+                    "channel templates at ingestion, rather than trusting a later prompt to separate them."
+                ),
+                (
+                    "Use Python 3.9 workers for normalization, deterministic arithmetic, and workflow routing; use "
+                    "an LLM only where extraction or drafting beats a fixed parser. A webhook receiver verifies the "
+                    "provider's supported signature or authentication mechanism, checks freshness where supported, "
+                    "persists the event durably, and acknowledges receipt before expensive processing. AWS API Gateway, "
+                    "Lambda, and SQS provide one implementation; an authenticated service and managed queue provide "
+                    "another. The ledger stores event_id, source, account_id, object_version, payload_hash, received_at, "
+                    "state, and reviewer_id. Enforce a unique source-event key to neutralize retries. Workers fetch "
+                    "current authoritative records before preparing consequential changes because delivery can be "
+                    "duplicated or out of order. Put credentials in AWS Secrets Manager or Azure Key Vault, grant "
+                    "separate read and write identities, and redact tokens from traces. Documents, email bodies, and "
+                    "web pages are untrusted evidence: instructions inside them cannot authorize tools, change pricing "
+                    "rules, or select another customer's records. Send the model only the fields required for the "
+                    "current task. Persist structured output separately from source evidence, validate its schema, and "
+                    "route unsupported claims to a reviewer rather than allowing persuasive prose to fill missing "
+                    "facts. Tenant isolation must be enforced by application queries and storage permissions, not "
+                    "by the model's willingness to obey a prompt."
+                ),
+                (
+                    "Measure the 70% target as avoided repetitive labor on a fixed workload, not as the percentage "
+                    "of messages touched by software. Establish a two-week baseline across research, qualification, "
+                    "fulfillment preparation, and acquisition operations, recording active minutes and completed "
+                    "outcomes. In an illustrative matched cohort of 100 events, manual handling consumes 1,000 minutes. "
+                    "After automation, scheduled human review consumes 220 minutes and exception recovery consumes "
+                    "60 minutes, leaving 280 minutes and removing 72% of repetitive effort. This is a measurement "
+                    "design, not a forecast for every reseller. Include rework, sampling, queue maintenance, and "
+                    "failed runs in the automated cohort; otherwise the dashboard conceals labor in contractors' "
+                    "inboxes. Break results out by play because an easy research classifier can mask a fragile "
+                    "provisioning workflow. Track unsupported-claim rate, quote correction rate, entitlement mismatch "
+                    "rate, and time to resolve exceptions alongside minutes saved. Reserve named review windows "
+                    "for the two full-time operators and cap releases at their actual capacity. When the queue "
+                    "exceeds that cap, slow intake instead of relaxing evidence requirements. The target concerns "
+                    "repetitive handling; negotiation, vendor disputes, architecture choices, and customer commitments "
+                    "remain human work. Publish a weekly denominator showing eligible events, excluded events, "
+                    "and the reason for each exclusion."
+                ),
+            ],
+            "table": {
+                "caption": "Nine Mapped Plays: Automated Artifacts, Human Authority, and Evidence",
+                "headers": [
+                    "Mapped operator play",
+                    "Machine-produced artifact",
+                    "Human decision retained",
+                    "Required operating evidence",
+                ],
+                "rows": [
+                    [
+                        "Play 1: Research accounts within an authorized target segment",
+                        "Normalize company records and draft source-linked account briefs",
+                        "Confirm subsidiary identity before creating a qualified opportunity",
+                        "Store source timestamps and permitted data-use scope together",
+                    ],
+                    [
+                        "Play 2: Qualify deployment fit and purchasing readiness",
+                        "Extract workload requirements and flag unsupported product assumptions",
+                        "Confirm budget ownership and actual procurement route directly",
+                        "Preserve discovery notes and customer-confirmed deployment requirements together",
+                    ],
+                    [
+                        "Play 3: Register eligible opportunities with channel vendors",
+                        "Prepare registration fields and identify possible duplicate submissions",
+                        "Verify program eligibility before submitting protected deal claims",
+                        "Record vendor confirmation identifiers and applicable protection dates",
+                    ],
+                    [
+                        "Play 4: Prepare quotes using approved commercial inputs",
+                        "Calculate extensions and draft versioned customer quote documents",
+                        "Approve margin exceptions and every customer-facing commercial commitment",
+                        "Attach current price sources and reviewer-approved quote versions",
+                    ],
+                    [
+                        "Play 5: Execute authorized marketplace and CSP transactions",
+                        "Prepare supported offer fields and reconcile transaction status",
+                        "Confirm buyer identity and release the authorized transaction",
+                        "Retain seller authorization and marketplace acceptance evidence together",
+                    ],
+                    [
+                        "Play 6: Attach bounded implementation services to licenses",
+                        "Draft scope options from verified deployment requirements only",
+                        "Approve acceptance criteria and committed delivery resource capacity",
+                        "Link signed scope and contractor availability before scheduling",
+                    ],
+                    [
+                        "Play 7: Reconcile purchased entitlements against customer assignments",
+                        "Compare normalized subscription exports and classify quantity mismatches",
+                        "Decide remediation before changing seats or access rights",
+                        "Preserve dated entitlement snapshots and documented customer instructions",
+                    ],
+                    [
+                        "Play 8: Orchestrate renewals before contractual action deadlines",
+                        "Generate notices and assemble current usage evidence packs",
+                        "Approve renewal recommendations and any cancellation instructions explicitly",
+                        "Record governing terms and notice receipt evidence together",
+                    ],
+                    [
+                        "Play 9: Distribute useful evidence and earn qualified referrals",
+                        "Draft approved content derivatives and attributed follow-up tasks",
+                        "Approve publication rights and customer-specific reference disclosures first",
+                        "Track permission scope and collected contribution by source",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Exploit channel mechanics without automating away accountability",
+                "body": (
+                    "Veteran operators automate the preparation surrounding vendor authority, "
+                    "then preserve the evidence supporting every consequential decision."
+                ),
+                "items": [
+                    "Keep deal-registration protection dates separate from quote expiry dates; one clock does not extend the other.",
+                    "Store the vendor authorization version with each CPPO draft so later wholesale changes cannot silently rewrite its economics.",
+                    "Tag CSP subscriptions with their actual term, billing cadence, and applicable change windows before building seat-adjustment recommendations.",
+                    "Ask customers to confirm tenant and billing identifiers in the review packet; a correct company name does not establish the correct purchasing account.",
+                ],
+            },
+        },
+        {
+            "heading": "2. Automate renewals, quote preparation, and license reconciliation safely",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Start renewal orchestration with signed order terms and current subscription records, not with "
+                    "a universal ninety-day countdown. Microsoft CSP new commerce subscriptions can have term-specific "
+                    "change and cancellation rules; AWS Marketplace agreements and private offers carry their own "
+                    "commercial conditions. Store term end, renewal behavior, notice deadline, quantity, billing cadence, "
+                    "and the source supporting each field. A daily Python scheduler computes configurable reminders "
+                    "at 120, 90, 60, and 30 days where those dates are useful, then prioritizes the earliest binding "
+                    "action deadline. A model may extract candidate dates from an order document, but deterministic "
+                    "date checks and a reviewer must establish the operative record. Compare purchased seats with "
+                    "assigned and meaningfully used seats only where customer authorization covers those datasets. "
+                    "Generate a renewal packet containing the current entitlement snapshot, unresolved support issues, "
+                    "proposed scope, and quote assumptions. Suppress duplicate messages after a customer response "
+                    "and keep an audit trail of delivery failures. Never let an inferred usage decline trigger "
+                    "automatic cancellation, employee deprovisioning, or seat reduction. Those actions can interrupt "
+                    "operations and may not reduce the current contractual obligation. Escalate approaching deadlines "
+                    "to the relationship owner with a specific decision request and a documented last-safe action time."
+                ),
+                (
+                    "Quote generation should resemble a compiler: approved inputs enter, reproducible commercial outputs "
+                    "leave, and invalid combinations fail visibly. Represent currency with Python Decimal, store the "
+                    "currency code explicitly, and distinguish monthly billing from the full committed term. Validate "
+                    "SKU, region, customer segment, license metric, support tier, quantity, term dates, tax treatment, "
+                    "and vendor authorization before rendering a document. Keep vendor acquisition cost, customer "
+                    "license price, implementation price, marketplace charges, and expected delivery cost in separate "
+                    "fields. An LLM can draft the scope narrative from approved facts; it cannot invent discounts, "
+                    "service levels, indemnities, or eligibility. AWS Channel Partner Private Offers use applicable "
+                    "selling authorizations and reseller offer mechanics; Microsoft CSP ordering follows the "
+                    "partner's actual direct or indirect relationship and supported Partner Center capabilities. "
+                    "Do not assume equivalent APIs or pricing controls across those routes. Persist a quote "
+                    "version and its input digest, then require the commercial owner to approve the exact "
+                    "rendered output before customer release. If vendor pricing changes, expire the draft and "
+                    "regenerate it rather than silently modifying a reviewed quote. Customer acceptance must link "
+                    "to the accepted version, not merely to the opportunity's latest document. This prevents "
+                    "later reconciliation from treating an unsigned revision as contractual evidence."
+                ),
+                (
+                    "License reconciliation joins three different truths: contractual entitlement, provisioning state, "
+                    "and observed assignment. Collect authorized exports through Microsoft Graph, Partner Center, "
+                    "vendor APIs, or customer-provided files according to available permissions; access to one "
+                    "system does not imply permission to inspect every tenant. Normalize timestamps, SKU aliases, "
+                    "tenant identifiers, subscription identifiers, and effective dates before comparing quantities. "
+                    "Shared devices, pooled licenses, service accounts, and bundle components require product-specific "
+                    "rules, not a universal named-user calculation. Classify differences as timing lag, mapping "
+                    "error, assignment exception, or commercial discrepancy, with evidence attached to each finding. "
+                    "A reconciliation result creates a remediation proposal, never an automatic accusation or "
+                    "purchase. For fulfillment, use a state machine such as prepared, reviewed, submitted, confirmed, "
+                    "and exception. Before retrying an ambiguous submission, query the provider's transaction "
+                    "record; a timeout after acceptance must not create duplicate purchases. Use provider "
+                    "idempotency features where supported and maintain local duplicate protection regardless. "
+                    "Reversible internal updates can be retried automatically, while purchases and access changes "
+                    "require stronger confirmation. If the API is unavailable, export a dated review packet "
+                    "for a designated operator to process through the authorized portal, then reconcile the "
+                    "portal receipt into the ledger before resuming automated writes."
+                ),
+            ],
+            "table": {
+                "caption": "Renewal, Quote, and Entitlement Failure-Recovery Matrix",
+                "headers": [
+                    "Failure condition and detection",
+                    "Automated containment and evidence",
+                    "Named human decision boundary",
+                    "Recovery and completion proof",
+                ],
+                "rows": [
+                    [
+                        "Renewal date extraction conflicts with signed order language",
+                        "Freeze reminders requiring that date and attach both sources",
+                        "Relationship owner determines the controlling contractual notice deadline",
+                        "Correct the operative record and regenerate dated reminder tasks",
+                    ],
+                    [
+                        "Vendor price source changes after customer quote review",
+                        "Invalidate the unreleased draft and preserve its previous digest",
+                        "Commercial owner approves revised economics before customer release",
+                        "Link the newly reviewed quote to current price evidence",
+                    ],
+                    [
+                        "Customer tenant identifier differs between order and discovery",
+                        "Block provisioning preparation and display both identifier sources",
+                        "Delivery owner obtains direct customer confirmation of tenant identity",
+                        "Resume only after matching identifiers across the reviewed packet",
+                    ],
+                    [
+                        "Submission times out after the provider might accept",
+                        "Stop blind retries and retrieve provider transaction status",
+                        "Commercial owner resolves any ambiguous purchase commitment first",
+                        "Record confirmed receipt before permitting another submission attempt",
+                    ],
+                    [
+                        "Assignment totals exceed normalized contractual entitlement quantities",
+                        "Create a discrepancy packet without changing customer access",
+                        "Delivery owner checks product rules and effective dates",
+                        "Close findings using verified mappings or authorized remediation evidence",
+                    ],
+                    [
+                        "Provider endpoint remains unavailable beyond bounded retry limits",
+                        "Move the event into a recoverable exception queue",
+                        "Designated operator chooses authorized portal processing or deferral",
+                        "Import portal receipts before releasing queued dependent actions",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Verify four conditions before any consequential external action",
+                "body": (
+                    "A generated draft is preparation. Publication, purchase, provisioning, "
+                    "and customer commitments require the appropriate recorded authority."
+                ),
+                "items": [
+                    "Verify current reseller authorization, permitted geography, eligible product, and the specific direct or indirect transaction route.",
+                    "Verify customer tenant, purchasing entity, currency, term, quantity, and the evidence supporting every binding date.",
+                    "Verify vendor cost, selling price, marketplace charges, delivery capacity, and the exact reviewed document version.",
+                    "Verify a named authorized reviewer, a duplicate-submission check, and a recovery path before releasing the action.",
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Ingest and authenticate",
+                    "action": "Persist authenticated events before scheduling downstream processing.",
+                    "detail": (
+                        "Record the provider event identifier, payload digest, tenant scope, "
+                        "receipt time, and validation outcome; reject unauthorized sources."
+                    ),
+                },
+                {
+                    "step": 2,
+                    "title": "Prepare and reconcile",
+                    "action": "Build a versioned packet from current authoritative inputs.",
+                    "detail": (
+                        "Run deterministic pricing and entitlement checks, attach source "
+                        "evidence, and isolate model-generated language from verified facts."
+                    ),
+                },
+                {
+                    "step": 3,
+                    "title": "Review and release",
+                    "action": "Obtain recorded authority for the exact consequential output.",
+                    "detail": (
+                        "Check reviewer permissions and packet freshness, then submit once "
+                        "through the supported provider interface or authorized portal."
+                    ),
+                },
+                {
+                    "step": 4,
+                    "title": "Confirm and recover",
+                    "action": "Reconcile the external receipt before closing the event.",
+                    "detail": (
+                        "Resolve ambiguous outcomes through status retrieval, route failures "
+                        "to an owner, and retain replayable evidence without duplicating purchases."
+                    ),
+                },
+            ],
+        },
+        {
+            "heading": "3. Build distribution loops from verified deployment evidence",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Programmatic distribution should publish useful procurement and deployment knowledge, not thousands "
+                    "of lightly rewritten product pages. Build a controlled catalog of vendor-approved product "
+                    "facts, deployment prerequisites, supported procurement routes, implementation scope patterns, "
+                    "and dated pricing assumptions. A Python generator can assemble segment-specific pages for "
+                    "a narrow workload, such as Microsoft 365 tenant consolidation or a documented AWS Marketplace "
+                    "purchasing path, while an LLM drafts readable explanations from that catalog. Each page "
+                    "needs an actual operator contribution: a migration checklist, entitlement worksheet, private "
+                    "offer readiness assessment, or implementation acceptance template. Do not imply vendor "
+                    "endorsement, reproduce restricted partner material, or publish customer-derived configurations "
+                    "without the required rights. Under 17 U.S.C. 106, reproduction and adaptation rights matter "
+                    "even when a model rewrites source material. Store publication permissions beside reusable "
+                    "assets, and review brand-use conditions separately. Instrument Search Console, first-party "
+                    "form submissions, and CRM attribution to measure qualified opportunities rather than raw "
+                    "page count. Version pages when vendor terms change and remove obsolete transaction "
+                    "instructions promptly. Publication remains a human-reviewed external action; internal drafts "
+                    "can be generated freely within the authorized source boundary. A smaller library of "
+                    "accurate, maintained assets is easier for a five-person pod to defend and convert."
+                ),
+                (
+                    "Outbound automation should improve account selection and evidence quality before it increases "
+                    "message volume. Use authorized account lists and documented firmographic sources to identify "
+                    "companies with a plausible deployment need, then draft a short hypothesis tied to public "
+                    "facts. Do not present inferred software usage, renewal dates, or buying authority as "
+                    "confirmed information. The relationship owner reviews targeting rules and initial sequences; "
+                    "routine messages may run only within the approved campaign scope and suppression controls. "
+                    "For commercial email, 15 U.S.C. 7704 supplies concrete requirements covering truthful "
+                    "transmission information, nondeceptive subjects, required identification, a valid physical "
+                    "postal address, and a functioning opt-out mechanism. Honor applicable opt-outs within "
+                    "ten business days and suppress internally immediately when received. Keep a durable "
+                    "suppression record that survives list refreshes. Stop sequences on replies, complaints, "
+                    "and delivery failures; do not route around provider restrictions with replacement "
+                    "identities. Qualification automation can summarize responses and propose discovery questions, "
+                    "but pricing promises and vendor eligibility claims require verified evidence. Track "
+                    "positive replies, accepted meetings, qualified opportunities, paid invoices, and delivery "
+                    "contribution as separate stages. A campaign producing many meetings but expensive "
+                    "unqualified implementation requests is consuming scarce pod capacity rather than creating "
+                    "a distribution advantage. Feed that result back into targeting rules each week."
+                ),
+                (
+                    "The strongest referral loop begins after a verified operational win. Following an authorized "
+                    "license cleanup or successful implementation, prepare a customer-facing evidence pack showing "
+                    "the starting condition, approved changes, measured outcome, and remaining tasks. Ask the "
+                    "customer whether they want a version suitable for an internal purchasing committee or "
+                    "a peer introduction; do not assume permission to name their organization publicly. "
+                    "Reusable worksheets and readiness assessments can circulate among procurement, IT, and "
+                    "department leaders, bringing the reseller into additional buying conversations without "
+                    "revealing tenant-level data. Attribute introductions with explicit CRM relationship records "
+                    "rather than hidden tracking. Separately, use permitted vendor co-selling and deal-registration "
+                    "processes to return high-quality opportunity evidence to the channel manager. Accurate "
+                    "scope, clean buyer identity, and dependable implementation follow-through make the next "
+                    "referral easier to evaluate. Route new leads back through the same qualification "
+                    "and authorization checks; referral status does not establish purchasing authority. "
+                    "Measure the loop as collected contribution from referred accounts divided by the "
+                    "fully loaded effort required to support it. Feed objections and delivery defects "
+                    "into the content catalog, then update the corresponding research and quote templates. "
+                    "This creates compounding operating knowledge without pretending that traffic, partner "
+                    "introductions, or marketplace visibility automatically become recognized revenue."
+                ),
+            ],
+            "table": {
+                "caption": "Six Distribution Loops with Permission Boundaries and Economic Signals",
+                "headers": [
+                    "Distribution loop and useful asset",
+                    "Automated preparation and routing",
+                    "Publication or outreach control",
+                    "Signal that merits continued investment",
+                ],
+                "rows": [
+                    [
+                        "Search discovery through maintained workload-specific procurement guides",
+                        "Generate drafts from approved facts and versioned templates",
+                        "Reviewer confirms current mechanics and permitted source reuse",
+                        "Qualified inbound opportunities progress to collected customer invoices",
+                    ],
+                    [
+                        "Outbound discovery using evidence-based deployment need hypotheses",
+                        "Draft account-specific questions and apply durable suppression records",
+                        "Relationship owner approves targeting and truthful campaign claims",
+                        "Accepted meetings produce scoped opportunities within delivery capacity",
+                    ],
+                    [
+                        "Customer referrals through permissioned implementation outcome summaries",
+                        "Prepare redacted evidence packs and introduction follow-up tasks",
+                        "Customer authorizes disclosures and each public reference scope",
+                        "Introduced accounts convert with lower fully loaded acquisition effort",
+                    ],
+                    [
+                        "Vendor co-selling through complete registered opportunity packets",
+                        "Assemble buyer requirements and registration protection date reminders",
+                        "Commercial owner verifies eligibility before submitting channel claims",
+                        "Partner-sourced opportunities retain contribution after delivery and fees",
+                    ],
+                    [
+                        "Internal account expansion through entitlement review workshops",
+                        "Identify documented deployment gaps and draft workshop agendas",
+                        "Customer confirms data access and relevant stakeholder participation",
+                        "Approved expansion scopes solve verified needs without rework",
+                    ],
+                    [
+                        "Reusable readiness worksheets shared across purchasing committees",
+                        "Generate clean templates without embedded customer-specific tenant data",
+                        "Reviewer checks rights and removes unsupported procurement promises",
+                        "Worksheet-originated inquiries produce correctly routed qualified purchasing conversations",
+                    ],
+                ],
+            },
+        },
+        {
+            "heading": "4. Price automation, rehearse recovery, and scale only measured capacity",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "Price every automated run with explicit assumptions and include the human work it creates. "
+                    "For an illustrative extraction task, assume 1,500 input tokens at $2 per million and "
+                    "500 output tokens at $8 per million: model cost is $0.003 plus $0.004, or $0.007. "
+                    "Add an assumed $0.005 for queue, compute, logging, and attributable storage, producing "
+                    "$0.012 of machine cost per completed run. These are planning inputs, not quoted "
+                    "provider prices. If 20% of runs receive three minutes of review at a loaded "
+                    "$60 hourly rate, expected review cost is $0.60 per run and combined cost is "
+                    "$0.612. At 5,000 runs monthly, that means $60 machine expense plus $3,000 review "
+                    "expense, with 50 review hours required. Add exception investigation, software subscriptions, "
+                    "and maintenance separately; the example does not conceal them inside token pricing. "
+                    "High-consequence quotes and purchasing actions still receive complete review, so this "
+                    "sampling assumption applies only to the eligible low-risk extraction population. "
+                    "Estimate each play separately and set budget alarms on actual retries and model "
+                    "usage. Cheap text generation can still be operationally expensive when weak extraction "
+                    "pushes hundreds of ambiguous records into the two full-time operators' queues. "
+                    "The earlier labor-saving cohort is a separate experiment, not this cost model's denominator."
+                ),
+                (
+                    "Keep the canonical scorecard intact when evaluating these costs. Conservative gross license "
+                    "resale and service billings are $300,000; an 8% net margin leaves $24,000 annual "
+                    "owner net profit and implies $276,000 of total modeled costs. Base billings of "
+                    "$1,400,000 at 14.0% leave $196,000 and imply $1,204,000 of costs. Scaled billings "
+                    "of $2,500,000 at 20% leave $500,000 and imply $2,000,000 of costs. Vendor "
+                    "acquisition costs are included within those margins, not deducted again from the "
+                    "stated profits. Conservative and Base use 2 FT + 3 C; Scaled uses "
+                    "3 FT + 4 C, seven people rather than five. Allocate automation expense "
+                    "within the relevant modeled cost envelope or explicitly revise an implementation "
+                    "budget; never add hypothetical labor savings directly to canonical owner profit. "
+                    "Keep customer cloud consumption and unrelated marketplace spend outside reseller "
+                    "billings. Where a particular arrangement makes the business an agent, determine "
+                    "the applicable presentation rather than assuming every routed dollar is gross "
+                    "revenue; this chapter preserves the supplied gross-resale scorecard basis. Track "
+                    "implementation scope contribution separately from license resale contribution, then "
+                    "reconcile both with shared operating costs. Slow customer collections can still "
+                    "create a cash shortfall when vendor obligations fall due before customer receipts."
+                ),
+                (
+                    "Scale by proving repeatability under failure, not by removing the last reviewer. Maintain "
+                    "test fixtures for duplicate webhooks, expired vendor authorization, mismatched tenants, "
+                    "changed prices, rejected model output, ambiguous purchase responses, and delayed "
+                    "customer payment. Rehearse queue replay with writes disabled, then compare proposed "
+                    "actions against recorded outcomes before permitting production execution. Use bounded "
+                    "exponential backoff with jitter for transient errors, stop retries on permission "
+                    "failures, and send exhausted events to an owned exception queue. A nightly "
+                    "reconciliation should detect events that never reached a terminal state and "
+                    "compare external receipts with internal commitments. Restrict emergency access and "
+                    "record every manual portal action. Under 18 U.S.C. 1030, automation does not "
+                    "create authorization to access systems beyond granted scope. For covered federal "
+                    "contract information systems, implement FAR 52.204-21 when the clause applies, "
+                    "including required access controls and safeguarding practices. Assign the integration "
+                    "contractor a documented restoration procedure and train a full-time operator "
+                    "to use it. Before moving toward the seven-person Scaled configuration, verify "
+                    "review capacity, collected contribution, defect rates, and support coverage over "
+                    "several complete renewal and delivery cycles. More events are useful only "
+                    "when the pod can preserve evidence, fulfill commitments, and recover without "
+                    "turning vendor-policy changes into customer-facing errors."
+                ),
+            ],
+            "table": {
+                "caption": "Canonical Economics and Measurable Automation Capacity",
+                "headers": [
+                    "Scenario or measurement boundary",
+                    "Revenue or machine cost basis",
+                    "Profit or human capacity implication",
+                    "Operator interpretation and required control",
+                ],
+                "rows": [
+                    [
+                        "Conservative canonical operation staffed with two employees and three contractors",
+                        "$300,000 annual gross license resale and service billings",
+                        "8% net margin yields $24,000 annual owner net profit",
+                        "$276,000 total modeled costs already include vendor acquisition costs",
+                    ],
+                    [
+                        "Base canonical operation staffed with two employees and three contractors",
+                        "$1,400,000 annual gross license resale and service billings",
+                        "14.0% net margin yields $196,000 annual owner net profit",
+                        "$1,204,000 total modeled costs must absorb actual operating expense",
+                    ],
+                    [
+                        "Scaled canonical operation staffed with three employees and four contractors",
+                        "$2,500,000 annual gross license resale and service billings",
+                        "20% net margin yields $500,000 annual owner net profit",
+                        "$2,000,000 total modeled costs support the seven-person staffing case",
+                    ],
+                    [
+                        "Illustrative low-risk extraction run under explicit provider-price assumptions",
+                        "$0.007 model usage plus $0.005 attributable infrastructure expense",
+                        "$0.60 expected review labor produces $0.612 combined run cost",
+                        "Exclude binding commercial outputs from the sampled-review population",
+                    ],
+                    [
+                        "Illustrative monthly extraction workload comprising five thousand completed runs",
+                        "$60 machine expense follows the stated per-run assumptions",
+                        "$3,000 review expense represents fifty loaded reviewer hours",
+                        "Budget maintenance and exception investigation outside this narrow example",
+                    ],
+                    [
+                        "Separate matched-cohort labor experiment covering one hundred eligible events",
+                        "Manual baseline consumes one thousand measured active work minutes",
+                        "Two hundred eighty remaining minutes demonstrate 72% labor reduction",
+                        "Include review and recovery time before claiming automation leverage",
+                    ],
+                ],
+            },
+        },
+    ],
+    "pull_quote": "Automate the movement of evidence, not the authority to spend, promise, or provision.",
+    "diagram_id": "diag-02",
+    "action_checklist": [
+        "Assign the nine mapped plays to the 2 FT + 3 C pod, recording contractor hours, reviewer capacity, and the owner of every exception queue.",
+        "Create a tenant-scoped event ledger with source identifiers, payload digests, versioned evidence, duplicate protection, and explicit consequential-action states.",
+        "Implement renewal reminders from verified contractual deadlines, quote arithmetic with Decimal, and entitlement comparisons using product-specific license rules.",
+        "Benchmark repetitive labor on a fixed cohort and report review minutes, recovery minutes, defects, and completed outcomes beside the 70%+ target.",
+        "Launch one maintained procurement asset, one bounded outbound sequence, and one permissioned referral packet with attribution through collected customer invoices.",
+        "Rehearse ambiguous purchase recovery and manual portal reconciliation, then reconcile actual automation costs against the unchanged canonical scenario envelopes.",
+    ],
+    "statutory_citations": [
+        {
+            "title": "15 U.S.C. 7704 — Requirements for transmission of messages",
+            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
+            "relevance": (
+                "Governs commercial email transmission information, subject lines, required "
+                "identification, physical postal addresses, opt-out mechanisms, and timely "
+                "honoring of qualifying opt-out requests."
+            ),
+        },
+        {
+            "title": "17 U.S.C. 106 — Exclusive rights in copyrighted works",
+            "url": "https://www.law.cornell.edu/uscode/text/17/106",
+            "relevance": (
+                "Supports checking reproduction, adaptation, and distribution rights before "
+                "turning vendor documentation or customer materials into reusable public assets."
+            ),
+        },
+        {
+            "title": "18 U.S.C. 1030 — Fraud and related activity in connection with computers",
+            "url": "https://www.law.cornell.edu/uscode/text/18/1030",
+            "relevance": (
+                "Makes authorization boundaries material to automated access; reseller status "
+                "does not itself authorize access to customer tenants or unrelated systems."
+            ),
+        },
+        {
+            "title": "48 CFR 52.204-21 — Basic Safeguarding of Covered Contractor Information Systems",
+            "url": "https://www.ecfr.gov/current/title-48/chapter-1/subchapter-H/part-52/subpart-52.2/section-52.204-21",
+            "relevance": (
+                "When applicable through the contract, requires specified safeguards for "
+                "covered contractor systems handling federal contract information, including "
+                "access restrictions and other basic protective measures."
+            ),
+        },
+    ],
+}

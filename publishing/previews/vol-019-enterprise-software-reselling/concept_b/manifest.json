@@ -1,0 +1,65 @@
+{
+  "concept_id": "concept_b",
+  "volume_id": "vol-019-enterprise-software-reselling",
+  "approved": true,
+  "edition_status": "approved_master",
+  "preview_only": true,
+  "files": {
+    "digital_pdf.pdf": {
+      "bytes": 1977609,
+      "sha256": "ec7934711a10e04cb188eb7f1e8a994355e62c5516aaa596ce5138826713c8f2"
+    },
+    "print_6x9_pdf.pdf": {
+      "bytes": 2604767,
+      "sha256": "6a55f90778561e4a4b334f803c91247851d7cd38854b4761d2c5715ea650396d"
+    },
+    "workbook_pdf.pdf": {
+      "bytes": 548312,
+      "sha256": "87974104ba2d5c164d2955eb00481335cf9b5ae8812b9ab9cdadae38345d79ac"
+    },
+    "book.epub": {
+      "bytes": 260234,
+      "sha256": "aca02ab7292da68a64b8005f2bfbb3e64b7542f1f399b37d9741406d4ebb1fc2"
+    },
+    "art/cover.svg": {
+      "bytes": 3659,
+      "sha256": "1eab6eef87dccba435c1390084f904632755ff86ab18d309dc460923a5b10650"
+    },
+    "art/scorecard.svg": {
+      "bytes": 76455,
+      "sha256": "97ee736a68ef455d1e85ddac1a6ba9309da8b23f72de9bfd7a886f66a86b1cd0"
+    },
+    "art/diag_01.svg": {
+      "bytes": 10561,
+      "sha256": "e66001049e072f459349dcf7b8c910f1f5ff3a1730caea22237e67009729bdf7"
+    },
+    "art/diag_02.svg": {
+      "bytes": 7601,
+      "sha256": "952cf5bcfa07528a1f490f012ab8fb1c91d92e162486b3686e155a19e9199553"
+    },
+    "art/diag_03.svg": {
+      "bytes": 11037,
+      "sha256": "cf6acd775cebbea31b4a2ffcc64b35dc987b402238bf255bdef75a51a9c9d8ff"
+    },
+    "art/diag_04.svg": {
+      "bytes": 9193,
+      "sha256": "c1901d19b9c7f92b0b8efd063f984f605baf1bbb3d57d08ff525655487a996ef"
+    },
+    "art/diag_05.svg": {
+      "bytes": 10187,
+      "sha256": "daff1d88b9010e028e862eee0a79c404e2ce65c6228e8b192f86529463527339"
+    },
+    "art/diag_06.svg": {
+      "bytes": 12824,
+      "sha256": "772508fc0e7c9afe6e9724bddaea419bc4fc8f49462cfc5d26a465e618d6f5cb"
+    },
+    "art/diag_07.svg": {
+      "bytes": 8797,
+      "sha256": "ae574a302a58378703e770a948b5ccfa21b603f33f62d08e4d5867a794d1d324"
+    },
+    "art/diag_08.svg": {
+      "bytes": 8809,
+      "sha256": "9eed40fc625df215576fef3c6ebcd77d7a8e1e65b798515f756bfb41f217d699"
+    }
+  }
+}

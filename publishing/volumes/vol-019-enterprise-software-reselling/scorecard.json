@@ -1,0 +1,475 @@
+{
+  "candidate_number": 23,
+  "slug": "enterprise-software-reselling",
+  "title": "Enterprise Software Reselling",
+  "category": "Software channel sales",
+  "production_stage": "approved_master",
+  "scores": {
+    "revenue_potential": 23,
+    "profit_margin_potential": 14,
+    "team_efficiency": 15,
+    "startup_accessibility": 9,
+    "automation_potential": 11
+  },
+  "dimension_max": {
+    "revenue_potential": 25,
+    "profit_margin_potential": 25,
+    "team_efficiency": 20,
+    "startup_accessibility": 15,
+    "automation_potential": 15
+  },
+  "total_score": 72,
+  "tier_label": "Disciplined Specialist Play",
+  "evidence_confidence": "High",
+  "uncertainty_band": "±3 pts",
+  "uncertainty_bounds": {
+    "low": 69,
+    "high": 75
+  },
+  "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
+  "score_rationale": {
+    "revenue_potential": "Revenue Potential: 23/25. Large license billings mask vendor costs; renewals help but enterprise sales need specialist labor.",
+    "profit_margin_potential": "Profit Margin Potential: 14/25. Large license billings mask vendor costs; renewals help but enterprise sales need specialist labor.",
+    "team_efficiency": "Team Efficiency: 15/20. Large license billings mask vendor costs; renewals help but enterprise sales need specialist labor.",
+    "startup_accessibility": "Startup Accessibility: 9/15. Large license billings mask vendor costs; renewals help but enterprise sales need specialist labor.",
+    "automation_potential": "Automation Potential: 11/15. Large license billings mask vendor costs; renewals help but enterprise sales need specialist labor."
+  },
+  "economics": {
+    "gross_revenue_range": "$300,000–$2,500,000 USD annually",
+    "net_profit_margin_range": "8–20%",
+    "owner_net_profit_potential": "$24,000–$500,000 USD annually, before personal taxes and reinvestment",
+    "startup_capital_range": "$25,000–$150,000 USD",
+    "monthly_opex_range": "$5,000–$25,000 USD",
+    "time_to_first_deal": "3–12 months",
+    "typical_team_size": {
+      "full_time_including_owner": 2,
+      "contractors": 3,
+      "total_people": 5
+    },
+    "includes_contractors_note": "Headcount includes the working owner and recurring contractors as people, not FTE equivalents. Contractors may be part-time. Scaled scenario adds one employee and one contractor; external vendor workforces are not counted as internal team members.",
+    "revenue_basis": "Gross license resale and service billings; vendor costs included in margin",
+    "cost_basis": "Annual net margins include operating expenses and non-owner labor; monthly opex is fixed/semi-fixed overhead only. No owner salary is deducted. Capital needs may grow beyond startup range.",
+    "estimate_status": "Illustrative assumptions; not verified earnings data"
+  },
+  "scenarios": {
+    "conservative": {
+      "annual_gross_revenue_usd": 300000,
+      "net_profit_margin_pct": 8,
+      "annual_owner_net_profit_usd": 24000,
+      "full_time_including_owner": 2,
+      "contractors": 3,
+      "total_people": 5,
+      "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+    },
+    "base_case": {
+      "annual_gross_revenue_usd": 1400000.0,
+      "net_profit_margin_pct": 14.0,
+      "annual_owner_net_profit_usd": 196000,
+      "full_time_including_owner": 2,
+      "contractors": 3,
+      "total_people": 5,
+      "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+    },
+    "scaled_small_team": {
+      "annual_gross_revenue_usd": 2500000,
+      "net_profit_margin_pct": 20,
+      "annual_owner_net_profit_usd": 500000,
+      "full_time_including_owner": 3,
+      "contractors": 4,
+      "total_people": 7,
+      "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+    }
+  },
+  "automation_levers": [
+    "Renewal alerts",
+    "Quote generation",
+    "License reconciliation"
+  ],
+  "key_risks": [
+    "Vendor policy changes",
+    "Slow collections",
+    "Channel competition"
+  ],
+  "regulatory_notes": [
+    "Verify reseller authorization, license terms, procurement requirements and data-processing duties."
+  ],
+  "track_ids": [
+    "track_1",
+    "track_2"
+  ],
+  "track_labels": [
+    "Asymmetric & Data-Arbitrage Plays",
+    "Grey-Zone Growth & Traffic Arbitrage"
+  ],
+  "plays": [
+    {
+      "id": "saas_technographic_churn_pixel_scraping",
+      "track_id": "track_1",
+      "name": "DNS/Script Technographic Drop-Off & Renewal-Window Interception",
+      "mechanism": "Crawl target commercial domains and DNS TXT/CNAME records weekly to detect the exact day a company installs or removes high-ticket enterprise software tags (Salesforce, HubSpot, Marketo, Segment, NetSuite), predicting annual renewal windows (Month 10–11) and active vendor migrations.",
+      "inputs": [
+        "Weekly HTTP script-tag, DOM header, & DNS TXT/CNAME technographic crawler",
+        "Historical install-timestamp ledger (calculating 12-month contract renewal windows)",
+        "B2B executive contact graph & migration-agency/SaaS partner routing"
+      ],
+      "workflow": [
+        "Scan 500,000+ target B2B domains weekly for JavaScript SDKs, tracking pixels, and SPF/CNAME records of $20k–$150k/yr SaaS platforms",
+        "Flag accounts entering Month 10 of their annual contract (60 days before auto-renewal lock-in) or accounts running dual competing tags during a live evaluation",
+        "Route renewal-window and active-churn signals to competing SaaS sales teams, software resellers, and implementation agencies"
+      ],
+      "metrics": [
+        "Install/drop detection precision (%) and renewal-date accuracy",
+        "Outbound reply-to-demo conversion rate on Month-10 renewal targets",
+        "Per-opportunity bounty or retainer revenue per agency/SaaS partner"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "WAF/Cloudflare bot-blocking or false-positive tag detection from server-side GTM",
+          "trigger": "High-concurrency crawling from datacenter IPs or misinterpreting server-side tag manager consolidation as vendor churn",
+          "impact": "Incomplete technographic diffs or wasted sales outreach on false churn signals",
+          "detection_metric": "Crawler HTTP 200 success rate and multi-signal verification (DNS SPF/CNAME + careers-page job-posting confirmation)",
+          "fallback": "Combine passive DNS TXT/CNAME monitoring with job-posting technographic mentions to confirm true vendor switches before routing"
+        }
+      ]
+    },
+    {
+      "id": "sec_edgar_8k_vendor_trigger_arbitrage",
+      "track_id": "track_1",
+      "name": "SEC Form 8-K, Form D & C-Suite Turnover Trigger Arbitrage",
+      "mechanism": "Parse SEC EDGAR real-time RSS/JSON feeds for Form D (private Reg D capital raises) and Form 8-K (Item 5.02 C-suite departures, Item 1.01 material agreements, Item 2.01 M&A closings) to trigger sub-hour executive outreach before commercial databases update.",
+      "inputs": [
+        "SEC EDGAR real-time Submissions API & Form D / Form 8-K XML feeds",
+        "Automated filing parser extracting raise amounts, executive names, & signatory contacts",
+        "Enterprise recruiting, specialty finance, & B2B agency deal-routing desk"
+      ],
+      "workflow": [
+        "Ingest SEC EDGAR filings within seconds of publication using a compliant User-Agent header (<=10 requests/second)",
+        "Extract Form D issuers raising $2M–$50M (who immediately deploy capital on hiring, growth agencies, and software) and Form 8-K executive transitions",
+        "Deliver tailored briefings to the filing officers and route warm introductions to executive search firms, enterprise software resellers, and B2B agencies"
+      ],
+      "metrics": [
+        "EDGAR publication-to-enrichment latency (seconds)",
+        "Form D / 8-K executive response rate vs. cold baseline (3–5x lift)",
+        "Retainer and placement referral fees generated per 100 filings"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "SEC EDGAR automated-access block or Reg D general-solicitation confusion",
+          "trigger": "Exceeding SEC EDGAR's 10-requests-per-second fair-access limit or omitting the mandatory contact User-Agent header",
+          "impact": "Temporary IP block by Akamai/SEC infrastructure",
+          "detection_metric": "Request rate strictly <=5 req/sec with compliant User-Agent and zero HTTP 403 responses",
+          "fallback": "Enforce token-bucket rate limiting at 5 req/sec and mirror SEC nightly bulk zip archives for historical lookbacks"
+        }
+      ]
+    },
+    {
+      "id": "multi_inbox_free_workspace_outbound_clusters",
+      "track_id": "track_2",
+      "name": "Subsidized / Developer-Tenant Multi-Inbox Cold Outbound Infrastructure",
+      "mechanism": "Provisioning hundreds of isolated secondary domains across subsidized Microsoft 365 developer/partner tenants, Cloudflare Email Routing, and low-cost SMTP relays—sending strictly 15–25 plain-text emails per inbox per day across 300+ free/subsidized mailboxes to deliver 150,000+ monthly B2B cold emails into primary inboxes without paying $6–$12/seat retail Google Workspace pricing.",
+      "inputs": [
+        "Lookalike secondary domain portfolio with automated SPF, DKIM (2048-bit), DMARC (`p=quarantine`/`reject`), and custom tracking-free MX records",
+        "Subsidized M365 partner/developer tenants, Cloudflare Email Routing catch-alls, and distributed SMTP sending nodes",
+        "Automated peer-to-peer warmup network and master unibox reply-routing webhook"
+      ],
+      "workflow": [
+        "Provision 100–300 secondary sending domains and bind 2–3 mailboxes per domain via automated DNS and tenant scripts",
+        "Warm every mailbox for 14–21 days with realistic thread-depth conversations before introducing live outbound prospects",
+        "Cap daily outbound volume at <=20 zero-link, zero-tracking-pixel plain-text messages per mailbox per day to stay completely beneath ESP volume heuristics",
+        "Aggregate all prospect replies into a single unified AI-triaged inbox that books qualified B2B sales calls on pay-per-show or retainer terms"
+      ],
+      "metrics": [
+        "Primary-inbox placement rate (%) across Gmail and Microsoft 365 seed tests",
+        "All-in monthly infrastructure cost per 10,000 delivered plain-text emails ($)",
+        "Positive reply rate (%) and booked meetings per 1,000 prospects contacted"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Tenant-wide outbound throttling or domain-footprint blacklisting (Spamhaus DBL)",
+          "trigger": "Placing too many domains inside a single tenant, embedding tracking pixels, or exceeding 30 sends/day per mailbox",
+          "impact": "Tenant suspension or domain-level spam-folder routing",
+          "detection_metric": "Daily seed-list inbox placement (%) and bounce rate (<1.5% hard threshold)",
+          "fallback": "Enforce max 2–3 domains per tenant, strip all open/click tracking pixels, verify 100% of leads via SMTP catch-all checks before sending, and keep hot-standby warmed domains ready for instant swap"
+        }
+      ]
+    },
+    {
+      "id": "erisa_self_funded_specialty_drug_importation_arbitrage",
+      "track_id": "track_1",
+      "name": "Employer Self-Funded ERISA Plan International Specialty-Drug Importation Arbitrage",
+      "mechanism": "Contracting with mid-market US employers (100–5,000 employees) operating self-funded ERISA health plans to carve out high-cost specialty biologics and GLP-1s ($6,000–$15,000/mo US PBM list price) and source the identical manufacturer-sealed drugs from licensed Tier-1 pharmacies in Canada, the UK, Australia, and New Zealand at $800–$2,200/mo—waiving the employee's copay to $0 while taking 25–35% of the employer's $50,000–$100,000/yr per-patient savings.",
+      "inputs": [
+        "Department of Labor (DOL) Form 5500 Schedule A/C database identifying self-funded ERISA employers by broker, TPA, and stop-loss carrier",
+        "Licensed international pharmacy dispensation network across Tier-1 jurisdictions (Canada, UK, Australia, New Zealand) with cold-chain courier logistics",
+        "Turnkey ERISA Summary Plan Description (SPD) 'Specialty Drug Carve-Out Amendment' and $0-copay patient concierge portal"
+      ],
+      "workflow": [
+        "Mine DOL Form 5500 filings to target CFOs and benefits directors of self-funded companies with 150–3,000 covered lives",
+        "Audit the employer's anonymized pharmacy claims file to flag the 1–3% of members driving 45–60% of total drug spend (Humira, Stelara, Skyrizi, Dupixent, Enbrel, Ozempic)",
+        "Plug in a voluntary $0-copay international personal-importation program alongside the existing TPA, fulfilling 90-day cold-chain prescriptions at 60–80% below US PBM prices",
+        "Bill the self-funded employer plan a shared-savings contingency fee equal to 25–35% of verified net claim reduction ($15,000–$30,000/yr per enrolled specialty patient)"
+      ],
+      "metrics": [
+        "Verified annual specialty-claim savings ($) per self-funded employer group",
+        "Net shared-savings fee revenue ($15k–$30k/yr) per enrolled specialty patient",
+        "Employee $0-copay opt-in conversion rate (target: >85%)"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Incumbent PBM rebate-contract retaliation or cold-chain customs shipment delay",
+          "trigger": "Legacy PBM threatening to withhold formulary rebates if specialty scripts are carved out, or border clearance delays on temperature-sensitive biologics",
+          "impact": "Delayed employer onboarding or need for local emergency bridge fills",
+          "detection_metric": "Cold-chain transit temperature telemetry and net employer savings after accounting for any forfeited PBM rebates",
+          "fallback": "Target independent TPAs and transparent pass-through PBMs first, combine international sourcing with US Manufacturer Patient Assistance Program (PAP) optimization, and maintain domestic bridge-fill coverage"
+        }
+      ]
+    },
+    {
+      "id": "section_340b_contract_pharmacy_spread_arbitrage",
+      "track_id": "track_1",
+      "name": "340B Contract-Pharmacy & Covered-Entity Drug Price Spread Arbitrage",
+      "mechanism": "Partnering with HRSA-qualified 340B Covered Entities (Federally Qualified Health Centers, Ryan White clinics, disproportionate-share rural hospitals) to provide turnkey Third-Party Administrator (TPA) split-billing software, specialty contract-pharmacy fulfillment, and tele-referral capture—buying outpatient specialty medications at 25–50%+ statutory 340B discounts while collecting 100% full commercial insurance reimbursement and splitting the multi-thousand-dollar per-script margin via compliant flat administrative/dispensing fees.",
+      "inputs": [
+        "HRSA OPAIS (Office of Pharmacy Affairs Information System) database of Covered Entities and registered contract pharmacies",
+        "340B split-billing / virtual-inventory accumulator software tracking 11-digit NDCs, prescriber NPIs, and patient-eligibility encounters",
+        "Licensed specialty/mail-order contract pharmacy network and commercial payer PBMs"
+      ],
+      "workflow": [
+        "Identify under-monetized 340B Covered Entities (FQHCs, grantees, rural hospitals) with low specialty capture rates in the HRSA OPAIS registry",
+        "Deploy split-billing TPA software and mail-order specialty contract-pharmacy infrastructure that captures commercially insured prescriptions written or co-managed by clinic providers",
+        "Reimburse the pharmacy at full commercial payer rates ($3,000–$12,000/script) while replenishing drug inventory via the clinic's 340B wholesaler account at $800–$4,000/script",
+        "Charge fixed fair-market-value per-dispense administrative, software, and clinical-management fees that capture a major share of the net spread while funding the clinic's safety-net mission"
+      ],
+      "metrics": [
+        "Captured commercially insured 340B scripts per month per Covered Entity",
+        "Gross commercial-to-340B acquisition spread ($1,500–$6,000+) per specialty fill",
+        "HRSA audit pass rate (zero duplicate Medicaid discount or diversion findings)"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Manufacturer contract-pharmacy restriction policies or HRSA 'patient definition' audit findings",
+          "trigger": "Drug manufacturers restricting 340B replenishment to a single contract pharmacy unless claims data is submitted, or filling scripts for patients without a documented clinic encounter",
+          "impact": "Loss of 340B ceiling price on specific NDCs or HRSA repayment liability",
+          "detection_metric": "100% EHR encounter-to-NPI match verification prior to 340B replenishment accumulation and automated ESP (340B ESP) data submission",
+          "fallback": "Operate an in-house entity-owned specialty pharmacy location alongside contract pharmacies, automate 340B ESP claims-data uploads to unlock restricted NDCs, and enforce strict EHR encounter gates"
+        }
+      ]
+    },
+    {
+      "id": "section_321_de_minimis_bonded_tariff_arbitrage",
+      "track_id": "track_1",
+      "name": "Section 321 \"De Minimis\" & Border Bonded-Warehouse Tariff Split-Shipping Arbitrage",
+      "mechanism": "Routing bulk sea/air container imports for high-tariff DTC and marketplace brands into Tijuana (IMMEX) or Canadian border-zone bonded 3PL warehouses instead of US ports, then fulfilling individual US consumer orders across the border daily under 19 U.S.C. § 1321 (Section 321 Entry Type 86)—legally eliminating 15%–42.5% customs duties on qualifying consumer parcels and charging brands 35–50% of the saved tariff bill plus 3PL fulfillment fees.",
+      "inputs": [
+        "USITC Harmonized Tariff Schedule (HTS) database cross-referenced against US Customs Bill-of-Lading import records (ImportYeti / Panjiva / Datamyne)",
+        "Nearshore Mexican IMMEX or Canadian customs-bonded fulfillment center 5–15 miles from San Ysidro/Otay Mesa or Windsor/Blaine border crossings",
+        "Automated CBP ACE Entry Type 86 manifest software transmitting 10-digit HTS and consignee data per individual consumer parcel"
+      ],
+      "workflow": [
+        "Scrape public maritime Bill-of-Lading records to identify US apparel, footwear, luggage, and consumer-goods brands importing 20+ containers/yr in 18%–37.5% HTS duty brackets",
+        "Divert the client's ocean containers in-bond (IT/T&E bond) directly to the nearshore border-zone fulfillment facility without paying US bulk entry duties",
+        "Sync the warehouse WMS with the brand's Shopify/Amazon store so each US consumer order (<$800 retail value, 1 per person per day) is picked, packed, and cleared via CBP Entry Type 86 at $0 duty",
+        "Line-item bill the brand for standard pick-and-pack fulfillment plus a 35–50% contingency split of the verified customs duties eliminated"
+      ],
+      "metrics": [
+        "Annualized customs duty eliminated ($500k–$10M+/yr per enterprise brand client)",
+        "Net tariff-savings share + 3PL margin ($) per parcel cleared across the border",
+        "CBP Type 86 automated release rate (>99.4%) and border transit time (<6 hours to USPS/FedEx domestic injection)"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Statutory exclusion of specific Section 301 country-of-origin SKUs from Section 321 de minimis eligibility",
+          "trigger": "Executive/statutory rulemaking removing China-origin Section 301 HTS codes from Entry Type 86 eligibility or tightening 10-digit HTS description rules",
+          "impact": "Loss of Section 321 duty exemption on affected country-of-origin SKUs",
+          "detection_metric": "Real-time HTS + Country-of-Origin eligibility screen in the WMS before container booking",
+          "fallback": "Focus on non-301 origin goods (Vietnam, India, EU, Bangladesh, Cambodia) where high MFN duties (16%–32% on apparel/footwear/textiles) remain 100% Section 321 exempt, and pair with CBP First-Sale Valuation for remaining SKUs"
+        }
+      ]
+    },
+    {
+      "id": "customs_first_sale_rule_valuation_arbitrage",
+      "track_id": "track_1",
+      "name": "CBP \"First-Sale Rule\" (19 CFR § 152.103) Multi-Tier Customs Valuation Arbitrage",
+      "mechanism": "Restructuring multi-tiered import supply chains under the US Court of Appeals *Nissho Iwai* 'First Sale Rule' so US importers legally declare the lower factory-to-middleman transaction price ($8) for US Customs duty and tariff calculation rather than the middleman-to-US-importer invoice price ($18)—slashing annual tariff cash outflows by 35–55% across $10M–$250M+ in imported merchandise.",
+      "inputs": [
+        "US Customs bill-of-lading and HTS duty-spend intelligence identifying mid-market importers paying $1M–$20M/yr in duties via trading companies",
+        "Three-party contract, factory cost-sheet, and arm's-length transfer-pricing documentation templates satisfying CBP *Nissho Iwai* criteria",
+        "Licensed customs brokerage and trade-attorney opinion pipeline"
+      ],
+      "workflow": [
+        "Identify US importers purchasing finished goods through Hong Kong, Singapore, Taiwanese, or European trading intermediaries or sourcing agents",
+        "Audit the two-tier transaction chain to confirm (1) bona fide sale from factory to middleman, (2) clear designation for US export at factory order, and (3) arm's-length pricing",
+        "Implement compliant multi-tier invoicing and ERP documentary trails so the customs broker declares the factory's First-Sale price on CBP Form 7501 instead of the middleman's marked-up invoice",
+        "Collect a 25–35% contingency fee on all prospective and retroactive (Post-Summary Correction / Protest) duty reductions realized by the importer"
+      ],
+      "metrics": [
+        "Percentage reduction in declared customs dutiable value (typically 30–50%)",
+        "Annualized cash tariff savings ($300k–$5M+/yr per importer) and retroactive PSC refund recovery ($)",
+        "CBP CF-28/CF-29 Request for Information audit survival rate (100% documentary compliance)"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "CBP disallowance of First-Sale valuation during a CF-28 Request for Information audit",
+          "trigger": "Related-party factory/middleman entities failing to prove arm's-length profit margins or refusing to disclose factory commercial invoices",
+          "impact": "Re-assessment of duties on the second-sale price plus interest",
+          "detection_metric": "Annual pre-audit verification of factory commercial invoices, bank wire proofs, and OECD transfer-pricing benchmark studies",
+          "fallback": "Store encrypted factory invoices in a confidential customs-broker escrow vault (so the US buyer never sees the middleman's margin, while CBP auditors have full access) and back every program with a formal customs-counsel opinion letter"
+        }
+      ]
+    },
+    {
+      "id": "b2b_commercial_vcc_interchange_rebate_arbitrage",
+      "track_id": "track_1",
+      "name": "B2B Commercial Virtual Card (VCC) Interchange & AP Settlement Rebate Arbitrage",
+      "mechanism": "Embedding a 'Free Automated Accounts Payable (AP) / Instant Vendor Settlement' platform inside high-volume B2B verticals (freight brokerage, construction general contracting, medical supply, property management, media agencies) that converts checks and ACH payables into single-use Visa/Mastercard Commercial Virtual Credit Cards (VCCs)—capturing 140–195 basis points (1.40%–1.95%) in uncapped commercial interchange rebates on hundreds of millions in third-party invoice volume.",
+      "inputs": [
+        "BaaS / Commercial Card Issuing bank partnership (Marqeta, Lithic, Stripe Issuing, Highnote, Cross River) on uncapped Visa/Mastercard Large-Ticket & Purchasing interchange tiers",
+        "ERP/accounting connector (QuickBooks, NetSuite, Sage, McLeod/TMW freight TMS) ingesting open vendor AP ledgers",
+        "Automated vendor-enablement call/email engine pitching 'Day-1 Instant Payment via Virtual Card vs. Net-45 Check/ACH'"
+      ],
+      "workflow": [
+        "Onboard mid-market companies with $20M–$250M/yr in fragmented vendor payables onto a $0-cost AP automation and working-capital portal",
+        "Cross-reference their vendor master list against Visa/Mastercard supplier-acceptance networks to flag vendors that already accept card payments",
+        "Offer remaining vendors immediate Day-1 invoice settlement via single-use emailed/API virtual card in exchange for waiving Net-30/Net-60 wait times",
+        "Earn 1.50%–1.95% gross interchange rebate from the issuing bank on every settled dollar, sharing 0.25%–0.50% with the corporate client while retaining 1.10%–1.45% net platform margin"
+      ],
+      "metrics": [
+        "Total annualized Gross Payment Volume (GPV $) converted from ACH/check to Virtual Card (target: 25–45% of total AP)",
+        "Net retained interchange spread in basis points (110–145 bps) after bank processor fees and client revenue share",
+        "Vendor card-acceptance retention rate (%) across repeat monthly invoices"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Vendor card-surcharging pushback or Visa/Mastercard Level-2/Level-3 large-ticket interchange downgrade",
+          "trigger": "Large vendors refusing card settlement or failing to pass Level-3 line-item tax/invoice metadata with the authorization",
+          "impact": "Shift of specific vendors back to low-margin ACH or interchange rate step-down",
+          "detection_metric": "Automated Level-2/Level-3 data-enrichment pass rate and per-vendor surcharge detection",
+          "fallback": "Automatically inject Level-3 line-item invoice metadata at card creation, offer dynamic early-pay ACH discounts (1.5%–2% 10-day net) for card-averse vendors, and focus on fragmented long-tail vendor bases"
+        }
+      ]
+    },
+    {
+      "id": "high_risk_payfac_iso_mid_cascading_arbitrage",
+      "track_id": "track_2",
+      "name": "High-Risk Payment Orchestration, MID Cascading & Payfac ISO Spread Arbitrage",
+      "mechanism": "Operating a wholesale high-risk Independent Sales Organization (ISO) and smart payment-orchestration gateway across 25–60 domestic and offshore acquiring banks for verticals banned by Stripe/PayPal (telehealth GLP-1s/peptides, nutra subscriptions, sweepstakes gaming, high-ticket coaching, AI companions)—buying wholesale processing at ~2.10% and charging merchants 5.50%–8.90% + rolling reserves while automatically cascading declines and deflecting pre-dispute chargebacks.",
+      "inputs": [
+        "Wholesale ISO / Payfac sponsorship agreements across 20+ high-risk domestic and international acquiring banks and EMIs",
+        "Smart payment-orchestration router (NMI / Spreedly / proprietary vault) supporting multi-MID load balancing, BIN-based routing, and automatic decline cascading",
+        "Integrated Verifi CDRN / Ethoca / RDR (Rapid Dispute Resolution) pre-chargeback interception pipeline"
+      ],
+      "workflow": [
+        "Onboard high-volume DTC, subscription, telehealth, and gaming merchants rejected or frozen by mainstream aggregators",
+        "Underwrite and provision each merchant with a diversified cluster of 3–8 dedicated Merchant IDs (MIDs) across distinct acquiring banks",
+        "Route live checkout transactions through the orchestration vault—matching card BINs to the highest-approval acquirer and automatically re-trying soft declines on secondary MIDs",
+        "Auto-refund disputed transactions via Ethoca/Verifi RDR alerts before they register as formal Visa/Mastercard chargebacks, keeping every MID below the 0.90% VAMP threshold while collecting 300–550 bps in recurring net processing residuals"
+      ],
+      "metrics": [
+        "Monthly Gross Processing Volume (GPV $) and net retained residual spread (300–550 bps)",
+        "Post-RDR net chargeback ratio (<0.65% across all active MIDs)",
+        "Cross-MID authorization approval lift (+8–18% over single-processor setups)"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Acquiring bank MID termination or Visa VAMP / Mastercard ECM excessive-chargeback fine",
+          "trigger": "Merchant fulfillment failure or deceptive continuity billing spiking raw disputes above 0.90%–1.50%",
+          "impact": "Frozen merchant rolling reserve or MATCH-list placement of the offending merchant entity",
+          "detection_metric": "Real-time Early Fraud Warning (EFW / TC40 / SAFE) ratio and mandatory RDR auto-refund activation at 0.50% dispute velocity",
+          "fallback": "Enforce mandatory 10% rolling reserves, automated Verifi RDR pre-dispute refunds, 3DS2 step-up authentication on high-risk BINs, and strict merchant descriptor transparency"
+        }
+      ]
+    }
+  ],
+  "platform_risks": [
+    {
+      "failure_mode": "WAF/Cloudflare bot-blocking or false-positive tag detection from server-side GTM",
+      "trigger": "High-concurrency crawling from datacenter IPs or misinterpreting server-side tag manager consolidation as vendor churn",
+      "impact": "Incomplete technographic diffs or wasted sales outreach on false churn signals",
+      "detection_metric": "Crawler HTTP 200 success rate and multi-signal verification (DNS SPF/CNAME + careers-page job-posting confirmation)",
+      "fallback": "Combine passive DNS TXT/CNAME monitoring with job-posting technographic mentions to confirm true vendor switches before routing",
+      "play_id": "saas_technographic_churn_pixel_scraping",
+      "play_name": "DNS/Script Technographic Drop-Off & Renewal-Window Interception",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "SEC EDGAR automated-access block or Reg D general-solicitation confusion",
+      "trigger": "Exceeding SEC EDGAR's 10-requests-per-second fair-access limit or omitting the mandatory contact User-Agent header",
+      "impact": "Temporary IP block by Akamai/SEC infrastructure",
+      "detection_metric": "Request rate strictly <=5 req/sec with compliant User-Agent and zero HTTP 403 responses",
+      "fallback": "Enforce token-bucket rate limiting at 5 req/sec and mirror SEC nightly bulk zip archives for historical lookbacks",
+      "play_id": "sec_edgar_8k_vendor_trigger_arbitrage",
+      "play_name": "SEC Form 8-K, Form D & C-Suite Turnover Trigger Arbitrage",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Tenant-wide outbound throttling or domain-footprint blacklisting (Spamhaus DBL)",
+      "trigger": "Placing too many domains inside a single tenant, embedding tracking pixels, or exceeding 30 sends/day per mailbox",
+      "impact": "Tenant suspension or domain-level spam-folder routing",
+      "detection_metric": "Daily seed-list inbox placement (%) and bounce rate (<1.5% hard threshold)",
+      "fallback": "Enforce max 2–3 domains per tenant, strip all open/click tracking pixels, verify 100% of leads via SMTP catch-all checks before sending, and keep hot-standby warmed domains ready for instant swap",
+      "play_id": "multi_inbox_free_workspace_outbound_clusters",
+      "play_name": "Subsidized / Developer-Tenant Multi-Inbox Cold Outbound Infrastructure",
+      "track_id": "track_2"
+    },
+    {
+      "failure_mode": "Incumbent PBM rebate-contract retaliation or cold-chain customs shipment delay",
+      "trigger": "Legacy PBM threatening to withhold formulary rebates if specialty scripts are carved out, or border clearance delays on temperature-sensitive biologics",
+      "impact": "Delayed employer onboarding or need for local emergency bridge fills",
+      "detection_metric": "Cold-chain transit temperature telemetry and net employer savings after accounting for any forfeited PBM rebates",
+      "fallback": "Target independent TPAs and transparent pass-through PBMs first, combine international sourcing with US Manufacturer Patient Assistance Program (PAP) optimization, and maintain domestic bridge-fill coverage",
+      "play_id": "erisa_self_funded_specialty_drug_importation_arbitrage",
+      "play_name": "Employer Self-Funded ERISA Plan International Specialty-Drug Importation Arbitrage",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Manufacturer contract-pharmacy restriction policies or HRSA 'patient definition' audit findings",
+      "trigger": "Drug manufacturers restricting 340B replenishment to a single contract pharmacy unless claims data is submitted, or filling scripts for patients without a documented clinic encounter",
+      "impact": "Loss of 340B ceiling price on specific NDCs or HRSA repayment liability",
+      "detection_metric": "100% EHR encounter-to-NPI match verification prior to 340B replenishment accumulation and automated ESP (340B ESP) data submission",
+      "fallback": "Operate an in-house entity-owned specialty pharmacy location alongside contract pharmacies, automate 340B ESP claims-data uploads to unlock restricted NDCs, and enforce strict EHR encounter gates",
+      "play_id": "section_340b_contract_pharmacy_spread_arbitrage",
+      "play_name": "340B Contract-Pharmacy & Covered-Entity Drug Price Spread Arbitrage",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Statutory exclusion of specific Section 301 country-of-origin SKUs from Section 321 de minimis eligibility",
+      "trigger": "Executive/statutory rulemaking removing China-origin Section 301 HTS codes from Entry Type 86 eligibility or tightening 10-digit HTS description rules",
+      "impact": "Loss of Section 321 duty exemption on affected country-of-origin SKUs",
+      "detection_metric": "Real-time HTS + Country-of-Origin eligibility screen in the WMS before container booking",
+      "fallback": "Focus on non-301 origin goods (Vietnam, India, EU, Bangladesh, Cambodia) where high MFN duties (16%–32% on apparel/footwear/textiles) remain 100% Section 321 exempt, and pair with CBP First-Sale Valuation for remaining SKUs",
+      "play_id": "section_321_de_minimis_bonded_tariff_arbitrage",
+      "play_name": "Section 321 \"De Minimis\" & Border Bonded-Warehouse Tariff Split-Shipping Arbitrage",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "CBP disallowance of First-Sale valuation during a CF-28 Request for Information audit",
+      "trigger": "Related-party factory/middleman entities failing to prove arm's-length profit margins or refusing to disclose factory commercial invoices",
+      "impact": "Re-assessment of duties on the second-sale price plus interest",
+      "detection_metric": "Annual pre-audit verification of factory commercial invoices, bank wire proofs, and OECD transfer-pricing benchmark studies",
+      "fallback": "Store encrypted factory invoices in a confidential customs-broker escrow vault (so the US buyer never sees the middleman's margin, while CBP auditors have full access) and back every program with a formal customs-counsel opinion letter",
+      "play_id": "customs_first_sale_rule_valuation_arbitrage",
+      "play_name": "CBP \"First-Sale Rule\" (19 CFR § 152.103) Multi-Tier Customs Valuation Arbitrage",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Vendor card-surcharging pushback or Visa/Mastercard Level-2/Level-3 large-ticket interchange downgrade",
+      "trigger": "Large vendors refusing card settlement or failing to pass Level-3 line-item tax/invoice metadata with the authorization",
+      "impact": "Shift of specific vendors back to low-margin ACH or interchange rate step-down",
+      "detection_metric": "Automated Level-2/Level-3 data-enrichment pass rate and per-vendor surcharge detection",
+      "fallback": "Automatically inject Level-3 line-item invoice metadata at card creation, offer dynamic early-pay ACH discounts (1.5%–2% 10-day net) for card-averse vendors, and focus on fragmented long-tail vendor bases",
+      "play_id": "b2b_commercial_vcc_interchange_rebate_arbitrage",
+      "play_name": "B2B Commercial Virtual Card (VCC) Interchange & AP Settlement Rebate Arbitrage",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Acquiring bank MID termination or Visa VAMP / Mastercard ECM excessive-chargeback fine",
+      "trigger": "Merchant fulfillment failure or deceptive continuity billing spiking raw disputes above 0.90%–1.50%",
+      "impact": "Frozen merchant rolling reserve or MATCH-list placement of the offending merchant entity",
+      "detection_metric": "Real-time Early Fraud Warning (EFW / TC40 / SAFE) ratio and mandatory RDR auto-refund activation at 0.50% dispute velocity",
+      "fallback": "Enforce mandatory 10% rolling reserves, automated Verifi RDR pre-dispute refunds, 3DS2 step-up authentication on high-risk BINs, and strict merchant descriptor transparency",
+      "play_id": "high_risk_payfac_iso_mid_cascading_arbitrage",
+      "play_name": "High-Risk Payment Orchestration, MID Cascading & Payfac ISO Spread Arbitrage",
+      "track_id": "track_2"
+    }
+  ]
+}

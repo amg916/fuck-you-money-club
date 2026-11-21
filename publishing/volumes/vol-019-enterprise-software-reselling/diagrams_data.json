@@ -1,0 +1,340 @@
+{
+  "diagrams": [
+    {
+      "diagram_id": "diag-01-authorized-resale-workflow",
+      "chart_type": "process_flow",
+      "title": "From Vendor Authorization to Collected Renewal",
+      "subtitle": "Five operating stages for license resale and implementation delivery.",
+      "chapter_number": 1,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "The scorecard uses gross license resale and service billings, with vendor costs included in margin. Customer cloud consumption outside the reseller contract is excluded. For actual reporting, assess principal-versus-agent treatment separately; a commission-only arrangement cannot inherit gross resale revenue merely because the reseller helped arrange the purchase.",
+      "caption": "Maintain one linked evidence trail across vendor authorization, registered opportunity, customer order, entitlement delivery, vendor settlement, and renewal ownership.",
+      "stages": [
+        {
+          "label": "Authorize",
+          "value": "Document program rights before offering licenses",
+          "numeric_value": 1.0,
+          "detail": "Confirm vendor territory, products, customer eligibility, deal-registration rules, and resale rights. Distinguish AWS Marketplace CPPO selling authorization from Microsoft CSP direct-bill or indirect-reseller responsibilities."
+        },
+        {
+          "label": "Qualify",
+          "value": "Validate buyer authority and renewal timing",
+          "numeric_value": 2.0,
+          "detail": "Use Salesforce or HubSpot to record the procurement owner, incumbent contract, renewal date, seat inventory, budget evidence, and competitive channel position."
+        },
+        {
+          "label": "Quote",
+          "value": "Lock vendor economics and implementation scope",
+          "numeric_value": 3.0,
+          "detail": "Generate a versioned quote from current vendor pricing; separate license charges, deployment fees, marketplace charges, payment dates, and change-order rates."
+        },
+        {
+          "label": "Deliver",
+          "value": "Reconcile purchased licenses against accepted delivery",
+          "numeric_value": 4.0,
+          "detail": "Verify customer tenant identifiers, assign entitlements, complete the implementation checklist, and capture acceptance without retaining unnecessary privileged access."
+        },
+        {
+          "label": "Collect and renew",
+          "value": "Match settlements and activate renewal alerts",
+          "numeric_value": 5.0,
+          "detail": "Reconcile customer receipts, marketplace remittances, vendor invoices, and credits. Schedule 120-, 90-, and 60-day renewal alerts with named account ownership."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-02-enterprise-opportunity-funnel",
+      "chart_type": "funnel",
+      "title": "A Nested Annual Enterprise Sales Cohort",
+      "subtitle": "100 target accounts narrow to seven collected customer contracts.",
+      "chapter_number": 6,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Illustrative mature-year cohort, not an observed conversion benchmark. Each stage is a subset of the preceding stage. Seven contracts averaging $200,000 in gross license and service billings produce the $1,400,000 Base-Case revenue. Assume delivery, billing, and collection occur within the modeled year.",
+      "caption": "Track conversion and elapsed days separately: the canonical time to first deal is 3–12 months, so these annual results are not a first-month sales commitment.",
+      "stages": [
+        {
+          "label": "Target accounts",
+          "value": "100 named enterprise accounts with channel fit",
+          "numeric_value": 100.0,
+          "detail": "Create a deduplicated account cohort with a compatible software estate, supported geography, identifiable buyer, and documented renewal or deployment trigger."
+        },
+        {
+          "label": "Qualified discovery",
+          "value": "40 accounts; 40% of the initial cohort",
+          "numeric_value": 40.0,
+          "detail": "Confirm a reachable procurement owner, real purchasing timeline, vendor eligibility, and a problem that can be solved within the pod's delivery capacity."
+        },
+        {
+          "label": "Validated opportunities",
+          "value": "20 accounts; 50% of qualified discovery",
+          "numeric_value": 20.0,
+          "detail": "Verify license quantities, budget ownership, technical fit, and the applicable deal-registration position before investing in detailed solution design."
+        },
+        {
+          "label": "Executable proposals",
+          "value": "10 accounts; 50% of validated opportunities",
+          "numeric_value": 10.0,
+          "detail": "Issue customer-specific quotes or private offers with confirmed vendor pricing, purchasing route, implementation scope, acceptance terms, and collection exposure."
+        },
+        {
+          "label": "Collected contracts",
+          "value": "7 accounts; 70% of executable proposals",
+          "numeric_value": 7.0,
+          "detail": "Seven times $200,000 equals $1,400,000 in gross annual resale and service billings. Vendor acquisition costs remain expenses rather than additional revenue."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-03-base-case-profit-waterfall",
+      "chart_type": "waterfall",
+      "title": "Base-Case Gross Billings to 14.0% Owner Net",
+      "subtitle": "$1,400,000 gross revenue less $1,204,000 costs equals $196,000.",
+      "chapter_number": 3,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Six bars: the first is an opening total, the middle four are signed deductions, and the last is a closing total rather than another additive movement. Cost allocations are illustrative; the canonical revenue, margin, and owner net are fixed. All operating charges are contained in the four expense buckets; owner-level personal taxes are outside this model.",
+      "caption": "Vendor costs consume 70.0% of gross revenue; delivery, staffing, and overhead consume another 16.0%. The remaining 14.0% is the canonical $196,000 annual owner net profit.",
+      "stages": [
+        {
+          "label": "Gross revenue",
+          "value": "$1,400,000 annual license resale and service billings",
+          "numeric_value": 1400000.0,
+          "detail": "Opening total includes only the reseller's modeled license and service sales, excluding unrelated customer cloud spend and sales taxes collected for remittance."
+        },
+        {
+          "label": "Vendor acquisition",
+          "value": "Subtract $980,000; 70.0% of gross revenue",
+          "numeric_value": -980000.0,
+          "detail": "Illustrative software acquisition and distributor charges leave $420,000 before delivery and operating expenses. Do not count prospective vendor rebates before earned."
+        },
+        {
+          "label": "Contract delivery",
+          "value": "Subtract $84,000; 6.0% of gross revenue",
+          "numeric_value": -84000.0,
+          "detail": "Three contractor seats share $84,000 in annual engagement spend for scoped implementation, license reconciliation, and specialist support; seats are not full-time equivalents."
+        },
+        {
+          "label": "Full-time staffing",
+          "value": "Subtract $98,000; 7.0% of gross revenue",
+          "numeric_value": -98000.0,
+          "detail": "Two full-time seats share an illustrative loaded annual staffing budget of $98,000. Higher local compensation requires additional contribution or reduces owner net."
+        },
+        {
+          "label": "Operating overhead",
+          "value": "Subtract $42,000; 3.0% of gross revenue",
+          "numeric_value": -42000.0,
+          "detail": "Illustrative overhead includes marketplace charges not already in vendor costs, CRM, insurance, professional services, collection losses, and other operating charges."
+        },
+        {
+          "label": "Annual owner net",
+          "value": "$196,000 retained; exactly 14.0% net margin",
+          "numeric_value": 196000.0,
+          "detail": "$1,400,000 minus $980,000 minus $84,000 minus $98,000 minus $42,000 equals $196,000. Non-vendor operating costs average $18,666.67 monthly, within the canonical range."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-04-channel-contribution-yields",
+      "chart_type": "horizontal_bars",
+      "title": "Compare Five Channel and Service Offers",
+      "subtitle": "Illustrative contribution yields after vendor and direct delivery costs.",
+      "chapter_number": 2,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Bars show contribution as a percentage of each offer's gross billings, before shared staffing and overhead; they are not net margins or vendor-published discounts. Each example uses $100,000 gross billings. These independent examples are not a weighted portfolio forecast.",
+      "caption": "Canonical annual outcomes remain Conservative: $300,000 at 8% equals $24,000; Base: $1,400,000 at 14.0% equals $196,000; Scaled: $2,500,000 at 20% equals $500,000. The first two use 2 FT + 3 C; Scaled uses 3 FT + 4 C.",
+      "stages": [
+        {
+          "label": "CSP seat renewals",
+          "value": "18% contribution after directly attributable costs",
+          "numeric_value": 18.0,
+          "detail": "$100,000 gross billings less $82,000 vendor and direct support costs leaves $18,000. Verify renewal pricing, cancellation windows, and responsibility for unpaid seats."
+        },
+        {
+          "label": "CPPO license offers",
+          "value": "24% contribution after directly attributable costs",
+          "numeric_value": 24.0,
+          "detail": "$100,000 gross billings less $76,000 vendor, marketplace, and direct execution costs leaves $24,000. Confirm the selling authorization and actual settlement calendar."
+        },
+        {
+          "label": "Security software deployments",
+          "value": "30% contribution after directly attributable costs",
+          "numeric_value": 30.0,
+          "detail": "$100,000 gross billings less $70,000 license and deployment costs leaves $30,000. Price integrations explicitly and separate customer acceptance from open-ended remediation."
+        },
+        {
+          "label": "Data-platform migrations",
+          "value": "35% contribution after directly attributable costs",
+          "numeric_value": 35.0,
+          "detail": "$100,000 gross billings less $65,000 vendor and migration costs leaves $35,000. Meter migration effort and exclude customer infrastructure consumption outside the contract."
+        },
+        {
+          "label": "Workflow application implementations",
+          "value": "42% contribution after directly attributable costs",
+          "numeric_value": 42.0,
+          "detail": "$100,000 gross billings less $58,000 license and delivery costs leaves $42,000. Limit custom connectors, document acceptance tests, and charge separately for scope changes."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-05-resale-preflight-decisions",
+      "chart_type": "decision_tree",
+      "title": "Four Checks Before a Binding Customer Offer",
+      "subtitle": "Pass each applicable branch; resolve failures before committing spend.",
+      "chapter_number": 5,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Apply checks to the actual product, buyer, geography, procurement route, and data access. Reseller authorization is a contractual requirement; statutory duties depend on the transaction. The numbered stages are sequential decision nodes, not risk scores.",
+      "caption": "Store the supporting evidence and decision owner with the opportunity record; a vendor discount alone does not resolve license rights, procurement duties, data access, or collection risk.",
+      "stages": [
+        {
+          "label": "Distribution rights",
+          "value": "Authorized product, territory, customer, and license use?",
+          "numeric_value": 1.0,
+          "detail": "Yes: attach current vendor authorization and license terms. No: obtain permission or remove the product. 17 U.S.C. 106 governs exclusive rights; do not assume 17 U.S.C. 109 authorizes transfers of cloud subscriptions or every licensed software arrangement."
+        },
+        {
+          "label": "Procurement and payment",
+          "value": "Valid purchasing route with financeable collection exposure?",
+          "numeric_value": 2.0,
+          "detail": "Yes: verify buyer authority, order documents, vendor due dates, and cash coverage. No: revise terms or decline unfunded exposure. For federal purchases, apply FAR 12.212, applicable award clauses such as FAR 52.212-4, and FAR 4.1102 registration requirements and exceptions."
+        },
+        {
+          "label": "Data-processing duties",
+          "value": "Documented access scope and applicable processing terms?",
+          "numeric_value": 3.0,
+          "detail": "Yes: use least-privilege access and a removal checklist. No: complete required contracts before accessing customer data. California Civil Code 1798.100(d) applies to specified disclosures by covered businesses; 16 CFR 314.4(f) addresses covered financial institutions' service-provider oversight."
+        },
+        {
+          "label": "Export and channel exposure",
+          "value": "Permitted destination and stable documented vendor economics?",
+          "numeric_value": 4.0,
+          "detail": "Yes: retain product classification, customer screening evidence, quote expiry, and vendor price protection. No: resolve restrictions or decline the transaction. Assess EAR scope under 15 CFR 734.3 and applicable restrictions under parts 744 and 746; escalate applicable OFAC restrictions before fulfillment."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-06-five-to-seven-person-pod",
+      "chart_type": "org_architecture",
+      "title": "Five Core Seats, Two Explicit Scale Additions",
+      "subtitle": "Conservative and Base: 2 FT + 3 C; Scaled: 3 FT + 4 C.",
+      "chapter_number": 11,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Each stage represents one person, with numeric_value equal to one seat. The first five seats form the active core pod; the last two are conditional scale additions. Contractor seats represent retained people, not full-time labor commitments.",
+      "caption": "Keep commercial ownership and operational control in the two core full-time seats. Add the third full-time seat and fourth contractor only when workload and funded economics support them.",
+      "stages": [
+        {
+          "label": "Channel principal",
+          "value": "Core seat one: full-time commercial owner",
+          "numeric_value": 1.0,
+          "detail": "Own vendor relationships, deal registration, pricing exceptions, strategic accounts, and contribution review. Check channel conflict before promising exclusivity."
+        },
+        {
+          "label": "Revenue operations lead",
+          "value": "Core seat two: full-time operating owner",
+          "numeric_value": 1.0,
+          "detail": "Own quote generation, CRM hygiene, purchase-order matching, license reconciliation, receivables aging, and automated renewal alerts tied to verified contract dates."
+        },
+        {
+          "label": "Implementation architect",
+          "value": "Core seat three: scoped delivery contractor",
+          "numeric_value": 1.0,
+          "detail": "Translate discovery into a bounded deployment plan, estimate integrations, define acceptance tests, and prevent unpaid implementation work from absorbing spread."
+        },
+        {
+          "label": "License operations specialist",
+          "value": "Core seat four: entitlement reconciliation contractor",
+          "numeric_value": 1.0,
+          "detail": "Match ordered products to customer tenants and active seats, investigate vendor invoice discrepancies, and produce evidence for renewal quantity decisions."
+        },
+        {
+          "label": "Technical support specialist",
+          "value": "Core seat five: scheduled support contractor",
+          "numeric_value": 1.0,
+          "detail": "Handle defined support windows, document recurring incidents, escalate product defects to the vendor, and keep unsupported customizations outside standard scope."
+        },
+        {
+          "label": "Expansion account manager",
+          "value": "Scaled addition: third full-time operating seat",
+          "numeric_value": 1.0,
+          "detail": "Activate for the seven-person model to own expansion and renewal negotiations. Measure contribution retained and overdue balances, not merely booked contract value."
+        },
+        {
+          "label": "Migration delivery specialist",
+          "value": "Scaled addition: fourth retained contractor seat",
+          "numeric_value": 1.0,
+          "detail": "Activate when signed implementation backlog exceeds the core delivery bench. Use project-specific statements of work and maintain independent acceptance evidence."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-07-startup-capital-allocation",
+      "chart_type": "stacked_comparison",
+      "title": "Allocate Startup Cash Without Hiding Vendor Float",
+      "subtitle": "Four buckets total $75,000 within the $25,000–$150,000 range.",
+      "chapter_number": 4,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "numeric_value encodes the $75,000 planning allocation. Matching low-capital allocations total $25,000 and high-capital allocations total $150,000, as detailed in each bucket. These are startup capital envelopes, not the Conservative, Base, and Scaled annual revenue scenarios.",
+      "caption": "Startup cash funds timing differences and operating readiness; it is not revenue. First deals may take 3–12 months, so recalculate runway against actual spending and vendor terms.",
+      "stages": [
+        {
+          "label": "Vendor settlement float",
+          "value": "$30,000 planning allocation; 40.0% of startup cash",
+          "numeric_value": 30000.0,
+          "detail": "Low envelope: $10,000; high envelope: $60,000. Cover the gap between vendor payment and customer settlement. Do not accept orders whose uncovered exposure exceeds available cash and confirmed credit capacity."
+        },
+        {
+          "label": "Operating cash reserve",
+          "value": "$20,000 planning allocation; 26.7% of startup cash",
+          "numeric_value": 20000.0,
+          "detail": "Low envelope: $7,000; high envelope: $40,000. At the canonical $5,000–$25,000 monthly operating range, this $20,000 reserve covers 4.0 to 0.8 months before receipts, excluding separately allocated vendor float."
+        },
+        {
+          "label": "Vendor enablement and delivery",
+          "value": "$15,000 planning allocation; 20.0% of startup cash",
+          "numeric_value": 15000.0,
+          "detail": "Low envelope: $5,000; high envelope: $30,000. Fund required certifications, documented demonstration environments, deployment runbooks, and limited specialist preparation for the chosen product family."
+        },
+        {
+          "label": "Commercial systems and setup",
+          "value": "$10,000 planning allocation; 13.3% of startup cash",
+          "numeric_value": 10000.0,
+          "detail": "Low envelope: $3,000; high envelope: $20,000. Establish CRM, quote templates, accounting integration, insurance, contract review, and focused account research without committing to broad paid acquisition."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-08-thirty-day-launch-roadmap",
+      "chart_type": "timeline_roadmap",
+      "title": "A Thirty-Day Sprint to a Ready Sales Operation",
+      "subtitle": "Build evidence, economics, and repeatable execution before scaling outreach.",
+      "chapter_number": 12,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Milestones represent Days 1–7, 8–14, 15–21, and 22–30; numeric_value records each milestone's ending day. This sprint prepares the operating system and early pipeline. Canonical time to first deal remains 3–12 months.",
+      "caption": "Finish the month with a narrow product thesis, reconciled economics, a tested delivery workflow, and accountable prospect follow-up rather than an assumed closed sale.",
+      "stages": [
+        {
+          "label": "Days 1–7",
+          "value": "Choose one product family and verify channel access",
+          "numeric_value": 7.0,
+          "detail": "Select a buyer segment, request vendor authorization, map CPPO or CSP participation requirements, identify required certifications, and document unresolved eligibility items before making customer-facing resale claims."
+        },
+        {
+          "label": "Days 8–14",
+          "value": "Build quote economics and settlement controls",
+          "numeric_value": 14.0,
+          "detail": "Create a versioned quote template and vendor-cost ledger. Reconcile $1,400,000 gross billings to $196,000 owner net in the Base model; stress-test delayed collections against the startup cash allocation."
+        },
+        {
+          "label": "Days 15–21",
+          "value": "Test implementation and automate recurring account work",
+          "numeric_value": 21.0,
+          "detail": "Use an authorized demonstration tenant to test entitlement reconciliation, acceptance evidence, access removal, quote generation, and renewal alerts. Obtain contractor scopes with explicit effort limits and change-order pricing."
+        },
+        {
+          "label": "Days 22–30",
+          "value": "Launch targeted discovery and review operating evidence",
+          "numeric_value": 30.0,
+          "detail": "Research the initial 100-account cohort, begin relevant outreach, and record actual stage movement without assuming the annual funnel converts this month. Review authorization status, cash exposure, delivery readiness, and each opportunity's next dated action."
+        }
+      ]
+    }
+  ]
+}

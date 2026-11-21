@@ -1,0 +1,662 @@
+from __future__ import annotations
+
+CHAPTER_5 = {
+    "id": "Q5",
+    "chapter_id": "Q5",
+    "chapter_number": 5,
+    "question_number": 5,
+    "slug": "beginner-traps-clawbacks-asymmetric-failure-modes",
+    "question_prompt": "What kills 80% of newcomers in enterprise software reselling, and what forensic metrics detect margin leaks, regulatory landmines, or platform bans before they wipe out capital?",
+    "kicker": "Q5 / THE BIG MONEY PLAYBOOKS",
+    "title": "Beginner Traps, Clawbacks & Asymmetric Failure Modes",
+    "subtitle": "AWS CPPO, Microsoft CSP, Deal-Registration Clawbacks, Implementation Leakage, and 340B Software Boundaries",
+    "layout_template": "expert_insights",
+    "reading_time_minutes": 14,
+    "executive_summary": (
+        "Candidate #23, Enterprise Software Reselling, ranks #19 with a 72/100 "
+        "Money-to-Manpower Score. Its annual owner-profit cases are $24,000 "
+        "Conservative, $196,000 Base, and $500,000 Scaled. This chapter organizes "
+        "nine mapped plays: authorized VAR resale, AWS CPPO, Microsoft CSP, deal "
+        "registration, implementation spreads, managed renewals, license reconciliation, "
+        "procurement enablement, and the supplied 340B specialty workflow. Eight are "
+        "chapter-local operating workstreams, not additional supplied play identifiers. "
+        "The question's 80% premise is a diagnostic framing, not a measured failure "
+        "rate. The actual killers are uncapped purchase commitments, reversible "
+        "incentives, unpriced service work, and permissions that fail under audit. "
+        "Build a transaction-level evidence ledger, reserve disputed economics, "
+        "and stop incremental exposure before attractive bookings become cash losses."
+    ),
+    "key_metrics": [
+        {
+            "label": "Conservative",
+            "value": "$300,000",
+            "context": "Annual gross license resale and service billings; vendor costs included in margin",
+            "note": "8% net margin; $24,000 annual owner net profit; 2 FT + 3 C",
+        },
+        {
+            "label": "Base",
+            "value": "$1,400,000",
+            "context": "Annual gross license resale and service billings; vendor costs included in margin",
+            "note": "14.0% net margin; $196,000 annual owner net profit; 2 FT + 3 C",
+        },
+        {
+            "label": "Scaled",
+            "value": "$2,500,000",
+            "context": "Annual gross license resale and service billings; vendor costs included in margin",
+            "note": "20% net margin; $500,000 annual owner net profit; 3 FT + 4 C",
+        },
+    ],
+    "sections": [
+        {
+            "heading": "1. Break the Nine Plays into Verifiable Rights and Reversible Economics",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Start with the permission chain, not the discount sheet. Authorized VAR "
+                    "resale fails when an enthusiastic salesperson mistakes distributor access "
+                    "for permission to sell every vendor, geography, customer class, and "
+                    "subscription edition. AWS Channel Partner Private Offers, or CPPO, require "
+                    "the relevant selling authorization and offer configuration; an attractive "
+                    "wholesale price does not establish customer eligibility or control settlement "
+                    "timing. Microsoft Cloud Solution Provider, or CSP, requires the correct "
+                    "partner relationship, customer agreement, and subscription commitments. "
+                    "For each quote, archive the applicable program terms, authorization "
+                    "identifier, customer legal entity, tenant or account identifier, currency, "
+                    "term, cancellation rights, and distributor purchase conditions. A $100,000 "
+                    "sale against an $88,000 supplier commitment appears to create $12,000 "
+                    "before other costs, but a rejected customer purchase can leave the entire "
+                    "$88,000 payable. These are illustrative transaction figures, not alternative "
+                    "scorecard cases. The fallback is a nonbinding estimate until eligibility "
+                    "and acceptance evidence exist, followed by a customer commitment aligned "
+                    "with the supplier obligation. If the vendor will not permit the intended "
+                    "route, sell separately scoped implementation work rather than routing the "
+                    "license through another customer's account. Keep the evidence attached "
+                    "to the transaction, not buried in a salesperson's inbox."
+                ),
+                (
+                    "The next traps are expired deal registration, duplicate opportunities, "
+                    "conditional rebates, and private offers priced against the wrong settlement "
+                    "basis. Deal-registration protection is a contractual benefit with conditions; "
+                    "it is not ownership of the customer. Record registration expiry and whether "
+                    "renewals, affiliates, expansion seats, or competing partners receive different "
+                    "treatment. Suppose a $120,000 order costs $108,000 before an expected $6,000 "
+                    "incentive. The transaction has $12,000 of initial spread, not $18,000 of "
+                    "secure contribution. Missing proof of customer acceptance can erase the "
+                    "incentive after commissions have already been paid. Treat incentive "
+                    "eligibility, submission, acceptance, settlement, and possible recovery as "
+                    "separate ledger states. AWS and distributor fees vary by route and "
+                    "agreement; never copy a percentage from a different seller's screenshot. "
+                    "For Microsoft subscriptions, verify the current cancellation and seat "
+                    "reduction windows for the actual product and commitment rather than "
+                    "promising monthly exit because billing occurs monthly. Freeze the "
+                    "specific SKU quote when the rights evidence expires. A valid fallback "
+                    "is a revised price without the incentive, a shorter commitment where "
+                    "available, or customer-funded prepaid exposure. A competitor's willingness "
+                    "to promise unsupported terms is evidence of risk, not a pricing benchmark."
+                ),
+                (
+                    "Implementation spreads, managed renewals, license reconciliation, and "
+                    "procurement enablement complete the ordinary commercial workstreams; the "
+                    "ninth play, the supplied 340B workflow, receives separate treatment below. "
+                    "Each needs independent acceptance criteria. A $30,000 implementation "
+                    "budgeted at 120 contractor hours costing $100 each leaves $18,000 "
+                    "before internal labor and overhead. An additional 100 unpaid hours "
+                    "remove $10,000 immediately. Require a statement of work that defines "
+                    "migration volume, integrations, identity configuration, test cases, and "
+                    "the customer dependencies that pause the schedule. Managed renewals "
+                    "need written renewal authority, not an assumption that last year's "
+                    "purchase order repeats. License reconciliation needs permitted "
+                    "administrative access and exportable entitlement evidence, not shared "
+                    "global credentials. Procurement enablement must distinguish purchasing "
+                    "assistance from representing that the reseller holds a government "
+                    "schedule or manufacturer certification. Selling evaluation keys, "
+                    "misstating end customers, duplicating rebate claims, inventing "
+                    "certifications, or creating replacement accounts after suspension can "
+                    "produce termination, recovery demands, intellectual-property claims, "
+                    "and permanent exclusion under applicable program terms. Preserve logs "
+                    "and use the documented appeal process instead. The circuit-breaker is "
+                    "simple: when a promised right cannot be demonstrated, stop that promise "
+                    "while continuing separately authorized support and data-return obligations."
+                ),
+            ],
+            "table": {
+                "caption": "Authorization, Incentive, and Delivery Failure Matrix",
+                "headers": [
+                    "Failure mechanism and exposed commercial workstream",
+                    "Evidence required before accepting supplier exposure",
+                    "Illustrative economic damage from one missed condition",
+                    "Circuit-breaker and executable alternative operating route",
+                ],
+                "rows": [
+                    [
+                        "Unauthorized VAR territory or customer class invalidates resale rights",
+                        "Match vendor authorization against geography, entity, product, and term",
+                        "An eighty-eight-thousand-dollar supplier obligation survives a rejected customer purchase",
+                        "Stop binding purchase activity and offer separately authorized implementation services",
+                    ],
+                    [
+                        "CPPO authorization differs from the offer actually accepted",
+                        "Archive selling authorization, offer identifier, buyer account, and settlement terms",
+                        "Incorrect wholesale pricing destroys twelve thousand dollars of expected spread",
+                        "Reissue the authorized offer before accepting a mismatched commercial commitment",
+                    ],
+                    [
+                        "CSP monthly billing disguises a longer subscription purchase commitment",
+                        "Verify product-specific cancellation windows and customer liability for remaining commitments",
+                        "A departing customer leaves unpaid months against continuing distributor invoices",
+                        "Align customer term or collect funds covering the unavoidable exposure",
+                    ],
+                    [
+                        "Expired deal registration removes expected preferential pricing and protection",
+                        "Preserve registration identifier, expiration date, eligible products, and customer scope",
+                        "Six thousand dollars of anticipated incentive disappears from transaction economics",
+                        "Reprice without conditional benefits before issuing the final customer quote",
+                    ],
+                    [
+                        "Duplicate incentive submissions trigger recovery and possible program suspension",
+                        "Join claim identifier to one accepted transaction and supporting documents",
+                        "Previously paid commissions remain after the vendor recovers disputed rebates",
+                        "Quarantine duplicate claims and reconcile through the documented partner process",
+                    ],
+                    [
+                        "Unbounded migration scope consumes the implementation spread before acceptance",
+                        "Specify migration volumes, dependency owners, test cases, and change pricing",
+                        "One hundred extra contractor hours remove ten thousand dollars immediately",
+                        "Pause out-of-scope work and obtain a priced written change order",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Protect the Spread Before It Enters the Sales Dashboard",
+                "body": "Experienced channel operators separate commercial enthusiasm from evidence that survives settlement and audit.",
+                "items": [
+                    "Save a dated copy of the applicable authorization and offer economics with every CPPO or CSP transaction; retain the original file when terms later change.",
+                    "Calculate commissions on a documented collected-contribution basis that addresses refunds and recoveries, while preserving applicable wage and contract requirements.",
+                    "Set registration-expiry alerts thirty and seven days ahead; obtain written renewal or reprice before the existing protection lapses.",
+                    "Quote migration exceptions as unit-priced additions, including each extra source tenant, integration, data batch, and customer-caused remobilization.",
+                ],
+            },
+        },
+        {
+            "heading": "2. Reconcile Gross Billings to Owner Profit and Cash at Risk",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "Use the canonical scorecard without silently switching revenue definitions. "
+                    "Conservative is $300,000 of gross license resale and service billings "
+                    "at 8% net margin, yielding $24,000 annual owner net profit with "
+                    "2 FT + 3 C. Base is $1,400,000 at 14.0%, yielding $196,000 "
+                    "with the same staffing count. Scaled is $2,500,000 at 20%, yielding "
+                    "$500,000 with 3 FT + 4 C. Total implied annual costs are therefore "
+                    "$276,000, $1,204,000, and $2,000,000 respectively. Those totals include "
+                    "vendor costs; subtracting license purchases again from the stated net "
+                    "profit would double count them. Conversely, license spread is not owner "
+                    "profit because payroll, contractors, service delivery, insurance, "
+                    "collections, and overhead still consume it. The staffing labels describe "
+                    "headcount, not five or seven fully utilized premium salaries. Validate "
+                    "actual hours, compensation, and owner-labor treatment before adopting "
+                    "the model. Gross billings are the supplied planning basis; statutory "
+                    "reporting may require a principal-versus-agent assessment by transaction. "
+                    "A commission-only arrangement does not become gross resale revenue "
+                    "because the customer's software spend is large. Maintain a bridge "
+                    "between the scorecard basis, booked revenue, supplier pass-throughs, "
+                    "and cash receipts so apparent growth cannot hide a deteriorating spread."
+                ),
+                (
+                    "Model a marketplace transaction as a waterfall with explicitly assigned "
+                    "fees. On an illustrative $100,000 customer charge, assume $88,000 "
+                    "supplier cost, $2,000 contractually assigned marketplace and distributor "
+                    "charges, $3,000 delivery labor, and $1,000 sales compensation. Contribution "
+                    "is $6,000 before shared overhead, tax treatment, and any owner-profit "
+                    "adjustments. These assumed charges are not published AWS or Microsoft "
+                    "tariffs. If the customer receives a $5,000 credit that the supplier "
+                    "does not match, contribution falls to $1,000. If a separately expected "
+                    "$4,000 rebate is rejected, the transaction never earned that incremental "
+                    "amount; do not describe it as cash already secured. Store each fee "
+                    "against its payer, calculation base, settlement event, refund treatment, "
+                    "and source agreement. Currency movements, withholding, indirect taxes, "
+                    "and minimum distributor charges require separate fields rather than "
+                    "a miscellaneous percentage. Where a marketplace deducts a charge "
+                    "before remittance, reconcile gross customer consideration to the "
+                    "settlement statement and bank deposit. Where the customer purchases "
+                    "directly and pays the reseller only for services, exclude the vendor's "
+                    "license sale from reseller billings. The fallback for an unpriced fee "
+                    "is a corrected quote, not an assumption that implementation margin "
+                    "will absorb the shortfall."
+                ),
+                (
+                    "Slow collections can kill a profitable model before the first renewal. "
+                    "At Base annual billings, average monthly sales are about $116,667. "
+                    "Under a simplified steady-state model in which all sales are credit "
+                    "sales, sixty days of receivables using annual revenue divided by "
+                    "365 implies roughly $230,137 outstanding. That exceeds the upper "
+                    "$150,000 startup-capital reference before considering inventory-like "
+                    "supplier commitments or service payroll. It is exposure, not a "
+                    "precise funding requirement: payables, deposits, marketplace settlement "
+                    "mechanics, and actual sales seasonality change the cash gap. Build "
+                    "a thirteen-week cash forecast from dated obligations instead. A "
+                    "$50,000 unrecovered customer balance equals about 25.5% of Base "
+                    "annual owner profit if the associated costs remain payable and "
+                    "no recovery offsets the loss. Define credit limits using committed "
+                    "supplier cost plus unpaid services, less cleared deposits and "
+                    "contractually usable credits. Do not count a disputed rebate as "
+                    "available liquidity. Require intervention when projected unrestricted "
+                    "cash falls below the next thirty days of unavoidable obligations. "
+                    "Fallbacks include deposits, milestone billing, reduced incremental "
+                    "exposure, and vendor-approved customer-direct licensing with a "
+                    "separate service contract; existing service duties remain governed "
+                    "by their actual terms."
+                ),
+            ],
+            "table": {
+                "caption": "Canonical Economics and Transaction-Level Cash Forensics",
+                "headers": [
+                    "Scenario or measurable transaction exposure under examination",
+                    "Exact computation and relevant accounting interpretation",
+                    "Early warning requiring a named operator review",
+                    "Corrective action preserving the underlying economic distinction",
+                ],
+                "rows": [
+                    [
+                        "Conservative annual billings with two employees and three contractors",
+                        "Three hundred thousand dollars times eight percent yields twenty-four thousand",
+                        "Actual total costs exceed the implied two-hundred-seventy-six-thousand-dollar annual cost envelope",
+                        "Reconcile vendor invoices and delivery hours before extending new discounts",
+                    ],
+                    [
+                        "Base annual billings with two employees and three contractors",
+                        "One million four hundred thousand times fourteen percent yields $196,000",
+                        "Actual total costs exceed the implied $1,204,000 annual cost envelope",
+                        "Separate price deterioration from higher service effort and overhead growth",
+                    ],
+                    [
+                        "Scaled annual billings with three employees and four contractors",
+                        "Two million five hundred thousand times twenty percent yields $500,000",
+                        "Actual total costs exceed the implied two-million-dollar annual cost envelope",
+                        "Validate service capacity and renewal workload before adding customer commitments",
+                    ],
+                    [
+                        "Illustrative marketplace transaction before shared overhead and owner-profit adjustments",
+                        "$100,000 less $88,000, $2,000, $3,000, and $1,000 leaves $6,000 contribution",
+                        "Any unmatched customer credit materially consumes the remaining contribution buffer",
+                        "Obtain supplier credit confirmation before promising matching customer commercial relief",
+                    ],
+                    [
+                        "Base credit sales outstanding for a modeled sixty-day collection cycle",
+                        "$1,400,000 divided by 365 times sixty produces approximately $230,137 receivables",
+                        "Collections timing exceeds available liquidity after unavoidable supplier and payroll obligations",
+                        "Rebuild dated cash forecasts using actual deposits, payables, and settlement schedules",
+                    ],
+                    [
+                        "Single unrecovered customer balance against Base annual owner profit",
+                        "Fifty thousand divided by $196,000 represents approximately 25.5 percent exposure",
+                        "Customer disputes acceptance while supplier obligations remain contractually enforceable and payable",
+                        "Escalate collections, preserve delivery evidence, and restrict new unsecured commitments",
+                    ],
+                ],
+            },
+        },
+        {
+            "heading": "3. Fence the 340B Workflow and Public-Sector Representations",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "The supplied play section_340b_contract_pharmacy_spread_arbitrage is a "
+                    "specialized customer workflow, not permission for a software reseller "
+                    "to acquire drugs or collect pharmacy reimbursement. Under 42 U.S.C. "
+                    "§ 256b, eligible covered entities receive ceiling-price protections "
+                    "subject to statutory conditions, including diversion and duplicate-discount "
+                    "prohibitions. Eligibility must be established for the particular "
+                    "entity and relevant sites; being a rural hospital or treating "
+                    "an eligible population alone does not establish participation. "
+                    "Federally Qualified Health Centers, qualifying Ryan White entities, "
+                    "and hospitals must be evaluated under their applicable eligibility "
+                    "categories. The statutory ceiling-price formula is not a universal "
+                    "25–50% discount promise, and commercial reimbursement is neither "
+                    "uniform nor necessarily retained in full. Manufacturer restrictions, "
+                    "payer adjustments, acquisition cost, dispensing costs, claim reversals, "
+                    "and contract terms determine actual economics. The reseller's "
+                    "authorized opportunity is implementing split-billing software, "
+                    "interfaces, reconciliation, and controlled administrative workflows. "
+                    "Do not book drug acquisition value, insurer reimbursement, or "
+                    "the covered entity's retained spread as software revenue. Require "
+                    "the covered entity to own patient-eligibility determinations, "
+                    "inventory policies, and exception resolution. Tele-referral capture "
+                    "cannot substitute for a qualifying care relationship or manufacture "
+                    "eligibility through a software flag. Test exception paths against "
+                    "the current program requirements and the customer's documented "
+                    "clinical and pharmacy operating model."
+                ),
+                (
+                    "Use transparent unit economics to expose the boundary. Assume, solely "
+                    "for illustration, a pharmacy transaction receives $8,000 in payer "
+                    "and patient collections against $4,000 drug acquisition, $300 "
+                    "dispensing and fulfillment, and $200 other attributable expense. "
+                    "The remaining $3,500 belongs in the pharmacy and covered-entity "
+                    "contract reconciliation before further allocations; it is not "
+                    "reseller income. A software operator charging $30 per processed "
+                    "eligible claim across 200 monthly claims bills $6,000 monthly, "
+                    "or $72,000 annually. At $4,000 monthly directly attributable "
+                    "delivery cost, that example leaves $24,000 annual contribution "
+                    "before shared overhead, not the Conservative scenario's owner "
+                    "profit merely because the dollar amounts coincide. Flat fees "
+                    "do not automatically satisfy 42 U.S.C. § 1320a-7b(b); referral "
+                    "remuneration, federal-program business, and any applicable safe "
+                    "harbor require separate assessment. Do not price tele-referrals "
+                    "as purchased patient volume. The proposed fallback of an "
+                    "entity-owned specialty pharmacy requires its own licenses, "
+                    "payer arrangements, operational capacity, and entity-specific "
+                    "eligibility analysis. Automated 340B ESP submissions may support "
+                    "manufacturer-specific processes where required and permitted, "
+                    "but uploading claims does not automatically unlock restricted "
+                    "NDCs. If the route remains unavailable, suspend the affected "
+                    "workflow instead of substituting another entity's identifiers."
+                ),
+                (
+                    "Data-processing and procurement failures can create losses far larger "
+                    "than software spread. When the reseller acts as a HIPAA business "
+                    "associate, execute the required agreement, bind relevant subcontractors, "
+                    "and implement access, audit, incident, and termination procedures "
+                    "appropriate to its actual role. A business-associate agreement does "
+                    "not itself authorize every analytics or manufacturer-data submission. "
+                    "Keep patient records out of ordinary partner-ticket attachments; "
+                    "use approved secure channels and the minimum data necessary for "
+                    "the task. For public procurement, verify solicitation-specific "
+                    "requirements, applicable contract clauses, reseller representations, "
+                    "and acceptance evidence. Knowingly false material claims or "
+                    "statements connected to government payment can implicate "
+                    "31 U.S.C. § 3729; a vendor badge cannot cure a fabricated "
+                    "certification. FAR 52.212-4 and 52.232-25 matter only where "
+                    "applicable to the actual contract, and subcontract payment "
+                    "rights do not automatically mirror the government's obligations. "
+                    "A $75,000 accepted-looking invoice still creates a cash hole "
+                    "if the authorized buyer rejects the delivery record and the "
+                    "supplier has already billed $66,000. Preserve the order, "
+                    "authorized acceptance, license assignment, and submission "
+                    "receipt as distinct artifacts. If evidence is defective, "
+                    "correct the record and payment request rather than backdating "
+                    "acceptance or borrowing another partner's authorization."
+                ),
+            ],
+            "table": {
+                "caption": "340B, Health-Data, and Government-Procurement Boundary Controls",
+                "headers": [
+                    "Regulated workflow and concrete failure being prevented",
+                    "Primary requirement and transaction evidence to preserve",
+                    "Illustrative metric showing the actual economic exposure",
+                    "Fallback that preserves legitimate operating and revenue boundaries",
+                ],
+                "rows": [
+                    [
+                        "Covered-entity eligibility incorrectly inferred from a broad hospital description",
+                        "Verify applicable statutory category, current registration, and relevant participating sites",
+                        "Count every processed exception lacking documented entity and site eligibility",
+                        "Hold affected processing until the covered entity resolves eligibility evidence",
+                    ],
+                    [
+                        "Split-billing configuration permits diversion or duplicate Medicaid discount exposure",
+                        "Apply documented patient rules and Medicaid duplicate-discount controls under section 256b",
+                        "Measure unresolved exception claims against all claims processed that day",
+                        "Quarantine affected transactions and reconcile through the entity's correction process",
+                    ],
+                    [
+                        "Drug reimbursement incorrectly presented as enterprise software reseller revenue",
+                        "Separate pharmacy collections, acquisition costs, dispensing charges, and software invoices",
+                        "Two hundred claims at thirty dollars generate six thousand monthly",
+                        "Recognize only the operator's applicable software and service consideration",
+                    ],
+                    [
+                        "Flat administrative fees disguise payment tied to healthcare referral volume",
+                        "Assess remuneration structure against federal anti-kickback requirements and applicable exceptions",
+                        "Review each fee change correlated with referrals or federal-program utilization",
+                        "Remove referral purchasing and redesign services around documented legitimate work",
+                    ],
+                    [
+                        "Manufacturer claims uploads exceed authorized data use or permitted submission scope",
+                        "Document recipient authority, required fields, contractual permissions, and transmission safeguards",
+                        "Track rejected submissions and unsupported restricted-NDC assumptions by manufacturer process",
+                        "Stop unauthorized uploads and use the entity's approved resolution channel",
+                    ],
+                    [
+                        "Government invoice relies on fabricated certification or unsupported customer acceptance",
+                        "Preserve solicitation terms, applicable clauses, truthful representations, and authorized acceptance",
+                        "A disputed seventy-five-thousand-dollar invoice may leave sixty-six thousand supplier exposure",
+                        "Correct the payment submission and preserve evidence without altering historical records",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Four Pre-Flight Checks Before Irreversible Commitments",
+                "body": "A named owner records the evidence and decision for each check; unresolved material defects stop the affected commitment.",
+                "items": [
+                    "Verify current reseller authority, exact end-customer identity, offer scope, commitment term, and cancellation rights before issuing a binding supplier order.",
+                    "Recompute collected contribution without conditional rebates and confirm that the thirteen-week cash forecast funds unavoidable obligations.",
+                    "For 340B implementations, obtain covered-entity ownership of eligibility rules, pharmacy operating responsibilities, authorized data uses, and exception handling.",
+                    "Confirm truthful procurement representations, applicable customer acceptance requirements, secure administrative access, and any required business-associate or subcontractor agreements.",
+                ],
+            },
+        },
+        {
+            "heading": "4. Instrument Early Warnings and Contain Failure Without Creating Another Breach",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Build a daily exception ledger joining CRM opportunity, registration, "
+                    "quote revision, customer order, supplier order, subscription identifier, "
+                    "service ticket, invoice, settlement, and bank receipt. Salesforce "
+                    "or HubSpot can hold commercial records; a controlled SQL database "
+                    "or spreadsheet can perform the initial reconciliation without "
+                    "an expensive integration project. AWS Marketplace reports, Microsoft "
+                    "Partner Center exports, and distributor statements provide "
+                    "different evidence and must not be treated as interchangeable. "
+                    "Store original currency, transaction date, fee category, and "
+                    "the source document behind every adjustment. Start with "
+                    "operator-selected thresholds, then recalibrate using actual "
+                    "contract economics: review contribution erosion greater than "
+                    "two percentage points, receivables more than fifteen days "
+                    "past their contractual due date, and any registration expiring "
+                    "within thirty days. These are internal intervention settings, "
+                    "not vendor enforcement standards. A customer may legitimately "
+                    "have longer payment terms; measure lateness against the "
+                    "agreed date rather than calling every sixty-day balance "
+                    "delinquent. Separate leading indicators from realized losses. "
+                    "An unresolved license-assignment mismatch is a delivery risk; "
+                    "an accepted supplier credit is a potential offset; a "
+                    "cleared refund changes cash. Assign an owner, next action, "
+                    "and deadline to each exception so the dashboard produces "
+                    "decisions rather than a colorful backlog."
+                ),
+                (
+                    "Use circuit-breakers that match the defect and avoid cascading "
+                    "damage. Any unverified administrative identity, exposed privileged "
+                    "credential, unsupported end-customer substitution, or unexplained "
+                    "duplicate entitlement warrants immediate security review and "
+                    "a hold on related new provisioning. That does not authorize "
+                    "disabling a customer's existing production service contrary "
+                    "to contract. Contain access through supported procedures, "
+                    "preserve evidence, and coordinate continuity with the "
+                    "customer and vendor. Alert when service hours exceed "
+                    "110% of budget before acceptance, forecast contribution "
+                    "falls below the written deal floor, or conditional "
+                    "rebates represent more than 25% of expected transaction "
+                    "contribution. The rebate threshold flags dependence; it "
+                    "does not establish an accounting recognition rule. Where "
+                    "a $20,000 expected contribution includes $8,000 conditional "
+                    "incentives, the dependency is 40%, and the transaction "
+                    "must also survive the $12,000 no-incentive case. Put "
+                    "a separate watch on customer concentration and supplier "
+                    "concentration because one account's payment dispute and "
+                    "one vendor's policy change can hit simultaneously. When "
+                    "a channel account is suspended, stop offers requiring "
+                    "that account, secure customer records, and pursue the "
+                    "documented review process. Do not create nominee accounts, "
+                    "misrepresent ownership, or transfer transactions to hide "
+                    "the suspension; those shortcuts enlarge the original "
+                    "contractual and operational exposure."
+                ),
+                (
+                    "Run a weekly loss review and a monthly reversal simulation. "
+                    "Take the ten largest open exposures, remove all conditional "
+                    "rebates, delay the largest collection by thirty days, "
+                    "and insert one customer refund that the supplier refuses "
+                    "to match. Recalculate cash, contribution, and staffing "
+                    "capacity without changing the published scorecard cases. "
+                    "These sensitivities describe resilience around the "
+                    "Conservative, Base, and Scaled plans; they are not "
+                    "replacement forecasts. Track both dollars and aging "
+                    "for unmatched credits, rejected incentive claims, "
+                    "unaccepted implementations, and vendor-policy exceptions. "
+                    "A falling exception count can conceal rising exposure "
+                    "when the remaining cases are larger. Require documentary "
+                    "closure: a bank receipt closes collection risk, an "
+                    "accepted credit closes the relevant payable adjustment, "
+                    "and verified customer acceptance closes that delivery "
+                    "milestone. A salesperson's assurance closes none of "
+                    "them. Retain alternate authorized distributors where "
+                    "commercially sensible, exportable entitlement records, "
+                    "and customer-specific transition instructions so vendor "
+                    "disruption does not become hostage-taking. Finally, "
+                    "compare actual profit with the $24,000, $196,000, "
+                    "and $500,000 annual targets using consistent cost "
+                    "classification. If growth requires repeated exceptions "
+                    "to credit, authorization, or delivery controls, reduce "
+                    "new commitments and repair the unit economics. More "
+                    "bookings cannot repair a transaction design that "
+                    "loses money whenever its promises are tested."
+                ),
+            ],
+            "table": {
+                "caption": "Operator-Selected Telemetry Thresholds and Containment Responses",
+                "headers": [
+                    "Leading indicator and exact internal measurement basis",
+                    "Initial threshold requiring review rather than assumed vendor policy",
+                    "Named evidence owner and records required for diagnosis",
+                    "Proportionate containment and documented condition for resuming activity",
+                ],
+                "rows": [
+                    [
+                        "Transaction contribution margin compared with the accepted quote baseline",
+                        "Investigate deterioration greater than two percentage points before additional commitments",
+                        "Finance owner compares supplier invoices, assigned fees, credits, and labor",
+                        "Reprice uncommitted work or document funded corrective economics before proceeding",
+                    ],
+                    [
+                        "Customer receivable aging measured from its contractual payment due date",
+                        "Escalate balances exceeding agreed payment deadlines by more than fifteen days",
+                        "Collections owner preserves invoice delivery, acceptance evidence, and dispute history",
+                        "Restrict new unsecured exposure while pursuing the documented collection process",
+                    ],
+                    [
+                        "Registration validity remaining before the intended binding order date",
+                        "Review every opportunity whose existing registration expires within thirty days",
+                        "Channel owner verifies vendor registration status and applicable renewal scope",
+                        "Secure written extension or quote without the unsupported preferential benefit",
+                    ],
+                    [
+                        "Actual implementation hours divided by approved delivery budget hours",
+                        "Review unfinished engagements when consumed hours exceed 110 percent of budget",
+                        "Delivery lead compares timesheets, scope changes, dependencies, and acceptance records",
+                        "Pause optional expansion work and obtain a properly priced scope amendment",
+                    ],
+                    [
+                        "Conditional incentives divided by expected contribution including those same incentives",
+                        "Review incentive dependence whenever that ratio exceeds twenty-five percent",
+                        "Finance owner documents eligibility, submission status, settlement evidence, and recovery terms",
+                        "Require viable no-incentive economics or revise the uncommitted transaction price",
+                    ],
+                    [
+                        "Privileged identity integrity and entitlement assignment against authorized customer records",
+                        "Any unexplained privileged access or customer substitution triggers immediate security review",
+                        "Security owner preserves access logs, identity records, and provisioning change history",
+                        "Hold affected new provisioning while maintaining contractually required customer continuity",
+                    ],
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Capture the transaction evidence bundle",
+                    "action": "Join customer acceptance, vendor authorization, supplier obligation, and settlement terms before commitment.",
+                    "detail": "Assign one transaction identifier across CRM, quote revisions, marketplace offers, distributor records, and the accounting ledger; preserve originals with controlled access.",
+                },
+                {
+                    "step": 2,
+                    "title": "Calculate exposure without contingent benefits",
+                    "action": "Recompute contribution and dated cash requirements with conditional incentives removed.",
+                    "detail": "Include delivery effort, assigned channel charges, refund mismatches, currency exposure, and supplier commitments; compare the result with the written deal floor.",
+                },
+                {
+                    "step": 3,
+                    "title": "Contain the defective activity precisely",
+                    "action": "Suspend the affected new commitment and assign a responsible commercial, delivery, or security owner.",
+                    "detail": "Keep existing contractual obligations visible; preserve records, contact the authorized counterpart, and avoid unsupported account substitutions or unilateral service interruption.",
+                },
+                {
+                    "step": 4,
+                    "title": "Close against external evidence",
+                    "action": "Resume affected activity only after the specific defect has a documented resolution.",
+                    "detail": "Use cleared funds, accepted supplier credits, verified authorization, corrected access, or valid customer acceptance; record residual exposure in the weekly loss review.",
+                },
+            ],
+        },
+    ],
+    "pull_quote": "A resale spread is only real when the selling right, customer acceptance, supplier liability, and collected cash agree.",
+    "diagram_id": "diag-05",
+    "action_checklist": [
+        "Create one evidence bundle per transaction linking authorization, deal registration, customer identity, commitment terms, acceptance, and settlement records.",
+        "Reconcile the canonical $300,000, $1,400,000, and $2,500,000 gross-billing cases to $24,000, $196,000, and $500,000 owner profit without double-counting vendor costs.",
+        "Build a thirteen-week cash forecast and assign customer credit limits using unavoidable supplier obligations rather than headline bookings.",
+        "Configure contribution erosion, overdue receivables, registration expiry, implementation overruns, incentive dependence, and privileged-access exception alerts.",
+        "Fence the 340B workflow so pharmacy economics remain outside software revenue and entity-owned eligibility, data permissions, and referral-payment controls are documented.",
+        "Simulate a rejected rebate, delayed collection, and unmatched customer refund monthly; record the funded response and preserve customer continuity.",
+    ],
+    "statutory_citations": [
+        {
+            "title": "42 U.S.C. § 256b — Limitation on prices of drugs purchased by covered entities",
+            "url": "https://www.law.cornell.edu/uscode/text/42/256b",
+            "relevance": "Defines covered-entity categories, ceiling-price requirements, and restrictions addressing duplicate discounts and diversion; software configuration must implement the entity's applicable requirements.",
+        },
+        {
+            "title": "42 U.S.C. § 1320a-7b(b) — Illegal remunerations involving federal health care programs",
+            "url": "https://www.law.cornell.edu/uscode/text/42/1320a-7b",
+            "relevance": "Requires scrutiny of remuneration connected to referrals or federally reimbursable business; describing a payment as a flat administrative fee does not alone resolve the statutory analysis.",
+        },
+        {
+            "title": "42 CFR § 1001.952 — Exceptions to the anti-kickback statute",
+            "url": "https://www.ecfr.gov/current/title-42/chapter-V/subchapter-B/part-1001/subpart-C/section-1001.952",
+            "relevance": "Provides regulatory safe-harbor conditions for specified arrangements; an operator must evaluate the actual service and payment structure rather than assume every administrative contract qualifies.",
+        },
+        {
+            "title": "45 CFR § 164.504(e) — Business associate contracts",
+            "url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.504",
+            "relevance": "Establishes required business-associate contractual provisions, including permitted uses, safeguards, subcontractor obligations, and handling of protected health information at termination.",
+        },
+        {
+            "title": "45 CFR § 164.312 — Technical safeguards",
+            "url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-164.312",
+            "relevance": "Addresses access control, audit controls, integrity, authentication, and transmission security for electronic protected health information within the rule's scope.",
+        },
+        {
+            "title": "31 U.S.C. § 3729 — False claims",
+            "url": "https://www.law.cornell.edu/uscode/text/31/3729",
+            "relevance": "Creates civil liability for specified knowing conduct involving false claims and material false records or statements; procurement certifications and acceptance evidence must remain truthful.",
+        },
+        {
+            "title": "FAR 52.212-4 — Contract Terms and Conditions, Commercial Products and Commercial Services",
+            "url": "https://www.acquisition.gov/far/52.212-4",
+            "relevance": "When applicable to the contract, governs matters including inspection, acceptance, invoicing, payment, and termination; quote and delivery procedures must reflect the actual incorporated terms.",
+        },
+        {
+            "title": "FAR 52.232-25 — Prompt Payment",
+            "url": "https://www.acquisition.gov/far/52.232-25",
+            "relevance": "When applicable, links federal payment timing to proper invoices and acceptance conditions; it does not automatically transfer identical payment rights to a reseller's subcontract.",
+        },
+        {
+            "title": "17 U.S.C. § 106 — Exclusive rights in copyrighted works",
+            "url": "https://www.law.cornell.edu/uscode/text/17/106",
+            "relevance": "Identifies rights relevant to software copying and distribution; evaluation access, possession of a license key, and channel purchasing access do not by themselves establish redistribution authority.",
+        },
+    ],
+}

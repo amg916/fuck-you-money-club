@@ -1,0 +1,685 @@
+from __future__ import annotations
+
+CHAPTER_1 = {
+    "id": "Q1",
+    "chapter_id": "Q1",
+    "chapter_number": 1,
+    "question_number": 1,
+    "slug": "what-exactly-is-enterprise-software-reselling",
+    "question_prompt": "What exactly is enterprise software reselling, how is real operator revenue recognized vs underlying asset/client GMV, and what separates durable small-team moats from fragile beginner hype?",
+    "kicker": "Q1 / THE BIG MONEY PLAYBOOKS",
+    "title": "What Exactly Is Enterprise Software Reselling?",
+    "subtitle": "Authorized VAR Economics, Microsoft CSP, AWS CPPO, Deal Registration, ASC 606 Revenue Boundaries, and Implementation Spreads",
+    "layout_template": "opportunity_overview",
+    "reading_time_minutes": 14,
+    "executive_summary": (
+        "Candidate #23, Enterprise Software Reselling, ranks #19 with a 72/100 Money-to-Manpower "
+        "Score: a Disciplined Specialist Play built on authorization, procurement fluency, and renewal "
+        "control. This chapter maps nine operating plays across technographic signals, registered "
+        "resale, Microsoft CSP, AWS CPPO, Azure private offers, implementation, license reconciliation, "
+        "renewal recovery, and procurement consolidation. Canonical annual owner profits are $24,000 "
+        "Conservative, $196,000 Base, and $500,000 Scaled, on $300,000, $1,400,000, and $2,500,000 "
+        "of gross license resale and service billings. Vendor costs remain inside the margin calculation; "
+        "customer cloud consumption and agent-only transaction value do not automatically become "
+        "operator revenue. Durable specialists win through documented entitlements, collected spreads, "
+        "repeatable delivery, and defensible renewal records rather than speculative discounts or scraped intent."
+    ),
+    "key_metrics": [
+        {
+            "label": "Conservative",
+            "value": "$300,000",
+            "context": "Annual gross license resale and service billings; vendor costs included in margin",
+            "note": "8% net margin; $24,000 annual owner net profit; 2 FT + 3 C",
+        },
+        {
+            "label": "Base",
+            "value": "$1,400,000",
+            "context": "Annual gross license resale and service billings; vendor costs included in margin",
+            "note": "14.0% net margin; $196,000 annual owner net profit; 2 FT + 3 C",
+        },
+        {
+            "label": "Scaled",
+            "value": "$2,500,000",
+            "context": "Annual gross license resale and service billings; vendor costs included in margin",
+            "note": "20% net margin; $500,000 annual owner net profit; 3 FT + 4 C",
+        },
+    ],
+    "sections": [
+        {
+            "heading": "1. Define the authorized transaction before selling the software",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Enterprise software reselling is the business of acquiring authorized commercial "
+                    "rights to supply software subscriptions, licenses, or related services to an "
+                    "organization, then earning the contractual resale spread and separately priced "
+                    "delivery fees. The operator connects an independent software vendor, a distributor "
+                    "or marketplace where applicable, and a buyer whose purchasing process may require "
+                    "security review, negotiated terms, a purchase order, and documented acceptance. A "
+                    "value-added reseller adds selection, deployment, migration, integration, support, "
+                    "or renewal administration rather than merely forwarding a checkout link. Microsoft "
+                    "Cloud Solution Provider arrangements, AWS Channel Partner Private Offers, and "
+                    "direct vendor partner programs are different contracting rails, not interchangeable "
+                    "labels for the same entitlement. Authorization must cover the actual product, "
+                    "territory, customer class, and transaction route. A badge on a website does not "
+                    "establish permission to discount every SKU. Before quoting, identify who contracts "
+                    "with the customer, who supplies support, who bears payment exposure, and who can "
+                    "cancel or change the subscription. Those answers determine the operating model "
+                    "more reliably than headline deal size. A $100,000 subscription sold for $112,000 "
+                    "creates a $12,000 preliminary spread, not $112,000 of spendable earnings; sales "
+                    "effort, support, collection losses, and delivery costs still consume that spread."
+                ),
+                (
+                    "Five useful operator archetypes separate this market into manageable businesses: "
+                    "the vertical application specialist, the Microsoft estate operator, the marketplace "
+                    "transaction specialist, the implementation-led integrator, and the renewal portfolio "
+                    "manager. A two-person core team should choose one primary archetype and one adjacent "
+                    "service instead of attempting universal coverage. For example, a HubSpot specialist "
+                    "serving industrial distributors can reuse permission models, lifecycle definitions, "
+                    "and reporting templates; a generalist covering every CRM loses that repetition. "
+                    "A Microsoft operator instead builds tenant administration, subscription reconciliation, "
+                    "and escalation discipline. A marketplace specialist earns their place through offer "
+                    "accuracy and purchasing coordination, but must not claim that marketplace access "
+                    "alone creates exclusivity. Implementation-led operators can earn attractive service "
+                    "contribution while assuming real delivery risk, including failed imports and "
+                    "unpriced customization. Renewal managers depend on accurate customer authority, "
+                    "contract dates, and service history, not possession of an email list. The table "
+                    "below defines each archetype by the operational asset that compounds. Across all "
+                    "five, the scarce resource is accountable execution inside a narrow customer workflow. "
+                    "Vendor certifications help open conversations, but measurable deployment outcomes, "
+                    "clean reconciliations, and references from comparable buyers create the repeat "
+                    "purchase behavior that a small team can actually defend."
+                ),
+                (
+                    "The revenue boundary is an accounting conclusion, not a marketing preference. "
+                    "The canonical scorecard uses gross license resale and service billings, with "
+                    "vendor costs included in margin. Apply that presentation only where the operator "
+                    "is principal for the specified good or service under ASC 606, including its "
+                    "principal-versus-agent guidance. Assess whether the operator controls that "
+                    "specified good or service before transfer; invoice routing, payment collection, "
+                    "and the presence of a distributor do not decide the question alone. If the "
+                    "operator merely arranges another party's supply, recognized revenue is generally "
+                    "the earned fee or commission, not the full customer purchase. A mixed contract "
+                    "can require separate conclusions for software and implementation. Consider a "
+                    "$120,000 software order and a $15,000 deployment engagement: principal treatment "
+                    "may support $135,000 gross revenue with software acquisition costs recorded "
+                    "separately, while an agent arrangement paying $9,000 plus the same principal "
+                    "service engagement produces $24,000 operator revenue. Customer sales processed "
+                    "through that software are neither amount. Recognition timing also follows "
+                    "performance obligations: signatures, cash receipts, and annual prepayments are "
+                    "not automatically earned revenue. Document the conclusion and allocation before "
+                    "building dashboards, so pipeline value never silently substitutes for recognized "
+                    "revenue or collected contribution."
+                ),
+            ],
+            "table": {
+                "caption": "Five operator archetypes and the assets that make each defensible",
+                "headers": [
+                    "Specialist archetype and initial customer wedge",
+                    "Authorized commercial rail and paid work",
+                    "Reusable asset that protects the spread",
+                    "Failure trigger and practical containment action",
+                ],
+                "rows": [
+                    [
+                        "Vertical application specialist serving industrial distribution sales teams",
+                        "Authorized HubSpot resale where contracted, plus separately scoped CRM deployment",
+                        "Reusable account structures, reporting definitions, and industry reference customers",
+                        "Custom workflow demands exceed scope; price discovery before promising delivery",
+                    ],
+                    [
+                        "Microsoft estate operator serving distributed professional services organizations",
+                        "Microsoft CSP through an approved distributor, with managed administration fees",
+                        "Tenant inventories, subscription calendars, and documented support escalation ownership",
+                        "Customer cancellation conflicts with supplier commitment; align terms before ordering",
+                    ],
+                    [
+                        "Marketplace transaction specialist supporting enterprise cloud procurement teams",
+                        "AWS CPPO or eligible Azure offers, subject to program participation",
+                        "Accurate offer construction, purchasing coordination, and settlement reconciliation records",
+                        "Wrong purchasing account blocks acceptance; validate buyer identifiers before issuance",
+                    ],
+                    [
+                        "Implementation-led integrator deploying complex revenue and operational applications",
+                        "Authorized Salesforce or NetSuite relationships plus contracted migration services",
+                        "Tested import mappings, acceptance scripts, and reusable integration components",
+                        "Unbounded customization destroys contribution; isolate extensions in separate work orders",
+                    ],
+                    [
+                        "Renewal portfolio manager serving customers with fragmented software ownership",
+                        "Authorized renewal transactions plus customer-contracted license reconciliation services",
+                        "Customer-owned entitlement records, renewal history, and named business sponsors",
+                        "Seat reductions erase expected spread; qualify usage before forecasting renewals",
+                    ],
+                ],
+            },
+        },
+        {
+            "heading": "2. Reconcile owner profit, supplier commitments, and collection exposure",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "Keep the three scorecard outcomes fixed: Conservative revenue of $300,000 at "
+                    "8% produces $24,000 annual owner net profit; Base revenue of $1,400,000 at "
+                    "14.0% produces $196,000; Scaled revenue of $2,500,000 at 20% produces "
+                    "$500,000. One illustrative bridge allocates Conservative costs to $210,000 "
+                    "of vendor and direct delivery costs plus $66,000 of remaining operating costs. "
+                    "The Base bridge uses $980,000 plus $224,000; the Scaled bridge uses "
+                    "$1,720,000 plus $280,000. Each bridge reconciles exactly, but these cost "
+                    "splits are chapter assumptions rather than additional scorecard facts. They "
+                    "imply contribution before remaining overhead of $90,000, $420,000, and "
+                    "$780,000 respectively. Better mix, reusable implementations, and renewal "
+                    "efficiency must explain the improvement; purchasing more software at the same "
+                    "spread does not automatically raise net margin. The remaining operating budgets "
+                    "average $5,500, approximately $18,667, and approximately $23,333 monthly, "
+                    "within the stated $5,000 to $25,000 monthly operating range. Actual classification "
+                    "depends on the ledger, and labor cannot appear in both direct delivery and "
+                    "overhead. Do not treat distributor rebates as earned merely because a target "
+                    "appears reachable; establish the applicable conditions and record reversals "
+                    "when eligibility fails."
+                ),
+                (
+                    "Working capital can break an apparently profitable reseller before the renewal "
+                    "book matures. Suppose a principal transaction bills the customer $120,000 and "
+                    "requires a $108,000 supplier payment. If the supplier requires payment on day "
+                    "30 while the customer pays on day 75, the operator must bridge $108,000 "
+                    "for 45 days, excluding other business obligations. That exposure already "
+                    "exceeds the low end of the $25,000 to $150,000 startup capital range. "
+                    "A customer's monthly payment preference does not shorten an annual supplier "
+                    "commitment. Require a deposit, matching payment dates, a suitably approved "
+                    "credit facility, or a different transaction structure before accepting the "
+                    "obligation. Marketplace billing may change who collects cash and when "
+                    "settlements arrive, but its actual terms decide the residual exposure. "
+                    "Build a weekly schedule showing supplier due dates, expected settlement "
+                    "dates, customer disputes, and contractually available cancellation remedies. "
+                    "A $12,000 spread is not protection against a $108,000 default. Similarly, "
+                    "tax collected for remittance is not operating revenue, and customer deposits "
+                    "may remain liabilities before performance. Measure collected contribution "
+                    "alongside booked orders so a salesperson cannot improve the dashboard by "
+                    "selling longer commitments to buyers whose ability or willingness to pay "
+                    "has not been established."
+                ),
+                (
+                    "The canonical staffing cases are 2 FT + 3 C for both Conservative and "
+                    "Base, and 3 FT + 4 C for Scaled, totaling seven people in the final "
+                    "case. Preserve those counts rather than quietly replacing the Conservative "
+                    "operation with a solo founder. The scorecard does not establish salaries, "
+                    "contractor utilization, geography, or owner compensation treatment, so the "
+                    "cost bridges above do not validate a full market-rate payroll. Price those "
+                    "inputs explicitly before committing to hires. At $24,000 annual owner "
+                    "profit, a single $12,000 unrecoverable account consumes half the modeled "
+                    "result; even modest support leakage matters. Use the first 3 to 12 months, "
+                    "the stated first-deal window, to secure authorization, build references, "
+                    "and prove one delivery pattern rather than assume immediate recurring cash. "
+                    "Assign one accountable commercial owner and one delivery owner, with "
+                    "contractors handling bounded specialist work. Renewal alerts, quote generation, "
+                    "and license reconciliation are the core automation levers, but each needs "
+                    "a named reviewer and exception queue. Track support hours per customer, "
+                    "quote correction frequency, and collections aging alongside revenue per "
+                    "person. A higher selling price does not create operating leverage if "
+                    "every additional customer requires bespoke administration that the staffing "
+                    "plan cannot absorb."
+                ),
+            ],
+            "table": {
+                "caption": "Canonical profit reconciliation and transaction-level accounting boundaries",
+                "headers": [
+                    "Scenario or transaction requiring explicit treatment",
+                    "Revenue basis and exact arithmetic bridge",
+                    "Cash or accounting exposure to measure",
+                    "Evidence required before accepting the result",
+                ],
+                "rows": [
+                    [
+                        "Conservative case retains two full-time staff and three contractors",
+                        "$300,000 revenue minus $210,000 direct costs minus $66,000 overhead equals $24,000",
+                        "Eight percent owner margin leaves little room for collection failures",
+                        "Validate actual labor assumptions against the complete $276,000 cost envelope",
+                    ],
+                    [
+                        "Base case retains two full-time staff and three contractors",
+                        "$1,400,000 revenue minus $980,000 direct costs minus $224,000 overhead equals $196,000",
+                        "Fourteen percent owner margin requires repeatable delivery and controlled support",
+                        "Reconcile vendor statements, service labor, rebates, and overhead without duplication",
+                    ],
+                    [
+                        "Scaled case uses three full-time staff and four contractors",
+                        "$2,500,000 revenue minus $1,720,000 direct costs minus $280,000 overhead equals $500,000",
+                        "Twenty percent owner margin depends on contribution improving with volume",
+                        "Demonstrate service mix and renewal efficiency before accepting margin expansion",
+                    ],
+                    [
+                        "Agent-only software transaction with a separately earned arrangement commission",
+                        "$120,000 customer purchase yielding $9,000 commission means $9,000 operator revenue",
+                        "Gross customer transaction value cannot inflate the agent revenue denominator",
+                        "Retain the principal-agent assessment and contractual commission settlement evidence",
+                    ],
+                    [
+                        "Annual subscription funded before a slow-paying enterprise customer settles",
+                        "$120,000 customer invoice less $108,000 supplier cost leaves $12,000 preliminary spread",
+                        "Day thirty supplier payment creates forty-five days of bridge exposure",
+                        "Secure payment alignment or sufficient liquidity before accepting supplier liability",
+                    ],
+                    [
+                        "Implementation service billed upfront but delivered through contractual acceptance milestones",
+                        "$15,000 service consideration is recognized according to satisfied performance obligations",
+                        "Cash received can precede earned revenue and unrestricted operating contribution",
+                        "Preserve scoped deliverables, allocation support, and dated evidence of performance",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Verify the transaction before committing supplier money",
+                "body": "Resolve these four checks against the actual order, not a generic partner brochure.",
+                "items": [
+                    "Verify current reseller authorization for the SKU, territory, customer class, distributor, and selected marketplace route.",
+                    "Document principal-versus-agent treatment for each specified supply and service, including recognition timing and transaction-price allocation.",
+                    "Match customer payment and cancellation terms to supplier commitments, then fund the largest weekly cash shortfall.",
+                    "Confirm delivery ownership, customer purchasing authority, data access scope, and evidence needed for contractual acceptance.",
+                ],
+            },
+        },
+        {
+            "heading": "3. Choose a sub-vertical where procurement knowledge becomes reusable",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "The mapped signal play saas_technographic_churn_pixel_scraping, or DNS/Script "
+                    "Technographic Drop-Off & Renewal-Window Interception, is a prospect prioritization "
+                    "method, not proof of contract expiration. Crawl permitted public commercial "
+                    "pages and inspect public DNS TXT and CNAME records weekly for evidence "
+                    "associated with Salesforce, HubSpot, Marketo, Segment, or NetSuite. Weekly "
+                    "observations establish an interval between sightings, not the exact installation "
+                    "or removal day. Browser-side tags can disappear because of redesigns, regional "
+                    "configuration, server-side tracking, or scanner errors; an old DNS verification "
+                    "record can persist after a vendor relationship ends. A tag does not expose "
+                    "contract term length. Treat months 10 and 11 after a reliable adoption "
+                    "observation as a testable outreach hypothesis, then ask the buyer to confirm "
+                    "renewal timing. For illustration, 200 monitored domains producing 20 corroborated "
+                    "changes, five qualified conversations, and one $60,000 principal resale at "
+                    "10% preliminary spread yield $6,000 before acquisition and support costs. "
+                    "If confirmation fails, combine passive DNS evidence with public job-posting "
+                    "mentions and route only corroborated vendor-switch signals. Respect published "
+                    "access restrictions, conservative request rates, and applicable privacy duties. "
+                    "Do not evade access controls or collect customer credentials to improve "
+                    "signal coverage. Discovery accuracy, not scrape volume, determines whether "
+                    "this play earns its operating cost."
+                ),
+                (
+                    "Select the transaction rail after understanding the customer's buying constraints. "
+                    "Microsoft CSP involves program roles and distributor relationships that determine "
+                    "support and commercial obligations. AWS CPPO lets participating channel partners "
+                    "construct eligible private offers using a seller's authorized commercial terms; "
+                    "it does not create a universal discount schedule. Azure multiparty private "
+                    "offers have their own participation, geographic, offer, and customer eligibility "
+                    "conditions. Never assume one marketplace's structure applies to another. For "
+                    "each quote, obtain current supplier economics, applicable platform charges, "
+                    "settlement terms, refund treatment, and any account-specific conditions. Ask "
+                    "the buyer whether the proposed purchase is eligible for their particular "
+                    "cloud commitment before suggesting that it consumes committed spend. A "
+                    "$200,000 offer with $180,000 supplier cost and an illustrative $2,000 "
+                    "operator-borne transaction charge leaves $18,000 before support, not "
+                    "$20,000. The charge is a modeling input, not a published platform rate. "
+                    "Direct registered resale can be simpler when a marketplace route is "
+                    "ineligible, but the vendor must authorize that alternative and the buyer "
+                    "must accept its procurement implications. The comparison matrix below "
+                    "therefore describes fee mechanisms rather than claiming fixed discounts. "
+                    "Durability comes from navigating the correct route consistently while "
+                    "preserving economics through order changes, cancellations, and settlement."
+                ),
+                (
+                    "Commercial authorization and statutory duties belong in the same transaction "
+                    "file, although they answer different questions. Copyright rights under "
+                    "17 U.S.C. 106 explain why a reseller cannot assume permission to reproduce "
+                    "or distribute software outside the license chain. Federal civilian procurement "
+                    "under FAR 12.212 addresses acquisition of commercial computer software and "
+                    "documentation under customary licenses, subject to federal law and agency "
+                    "needs; it does not make every vendor term enforceable against an agency. "
+                    "For California personal information, California Civil Code 1798.100(d) "
+                    "requires covered businesses to use specified contractual protections when "
+                    "disclosing information to service providers, contractors, or third parties. "
+                    "Determine the operator's actual role and whether the law applies instead "
+                    "of attaching a generic processing schedule to every resale. Installation "
+                    "work may introduce administrator access and personal information handling "
+                    "that a license-only transaction never requires. Use customer-authorized "
+                    "accounts, least-privilege roles, logged changes, and agreed deletion or "
+                    "return procedures. Separately, review purchase-order conflicts and applicable "
+                    "state enactments of UCC 2-207 where relevant; software and mixed-service "
+                    "classification can affect the analysis. Resolve inconsistent support, "
+                    "indemnity, payment, and termination terms before accepting orders. A clean "
+                    "technical deployment does not repair a transaction whose signed documents "
+                    "allocate obligations the operator cannot perform."
+                ),
+            ],
+            "table": {
+                "caption": "Sixteen sub-verticals: named platforms, negotiated fee mechanisms, durable assets, and failure triggers",
+                "headers": [
+                    "Sub-vertical and representative platform buying motion",
+                    "Fee structure to verify in writing",
+                    "Small-team moat with repeatable operating value",
+                    "Clawback or failure trigger and fallback",
+                ],
+                "rows": [
+                    [
+                        "Microsoft 365 productivity estates across distributed professional services organizations",
+                        "CSP subscription spread plus separately scoped support and administration fees",
+                        "Tenant entitlement ledger linked to renewal dates and escalation ownership",
+                        "Commitment cancellation restrictions cause losses; align customer terms before ordering",
+                    ],
+                    [
+                        "Azure application infrastructure supporting established enterprise cloud purchasing commitments",
+                        "Eligible multiparty private-offer economics plus separately contracted migration services",
+                        "Customer billing-account validation and accurate offer-to-workload procurement mapping",
+                        "Offer or commitment eligibility fails; use an authorized alternative transaction",
+                    ],
+                    [
+                        "AWS Marketplace software procurement through eligible channel partner private offers",
+                        "Seller-authorized wholesale economics less applicable charges and negotiated customer concessions",
+                        "Repeatable offer configuration and settlement reconciliation across participating software sellers",
+                        "Authorization or offer validity expires; obtain renewed terms before acceptance",
+                    ],
+                    [
+                        "Salesforce revenue operations for firms with complex account ownership models",
+                        "Contracted partner compensation where available plus separately priced integration services",
+                        "Industry-specific permissions, migration mappings, and tested sales reporting definitions",
+                        "Partner status lacks resale rights; sell services without inventing license authority",
+                    ],
+                    [
+                        "HubSpot lifecycle operations for industrial distribution and specialized services firms",
+                        "Eligible partner compensation under current terms plus onboarding and integration fees",
+                        "Reusable lifecycle stages and customer-specific attribution acceptance tests",
+                        "Compensation eligibility or retention conditions fail; exclude unearned incentives",
+                    ],
+                    [
+                        "Adobe Marketo Engage campaign operations for complex enterprise marketing organizations",
+                        "Authorized subscription economics where available plus migration and operations services",
+                        "Documented campaign dependencies and reusable CRM synchronization test cases",
+                        "Attribution disputes or scope growth occur; require signed delivery boundaries",
+                    ],
+                    [
+                        "Twilio Segment customer data pipelines connecting established application estates",
+                        "Authorized partner economics where available plus instrumentation and governance services",
+                        "Event dictionaries, identity mapping tests, and customer-approved destination controls",
+                        "Consumption estimates understate charges; reconcile usage before recommending commitments",
+                    ],
+                    [
+                        "Oracle NetSuite operational systems for growing multi-entity business groups",
+                        "Authorized solution-provider economics plus implementation and integration service fees",
+                        "Entity configuration templates and tested migration reconciliation procedures",
+                        "Customization overwhelms delivery capacity; separate discovery and change-order pricing",
+                    ],
+                    [
+                        "ServiceNow workflow estates spanning enterprise service and asset management",
+                        "Authorized resale economics plus separately scoped workflow implementation services",
+                        "Reusable service catalog structures and documented integration ownership",
+                        "Unpriced workflow expansion consumes margin; constrain acceptance to agreed processes",
+                    ],
+                    [
+                        "Atlassian collaboration estates with fragmented project and service management usage",
+                        "Eligible solution-partner subscription economics plus migration and administration fees",
+                        "Instance consolidation methods and tested permission migration procedures",
+                        "Tier or edition changes alter economics; requote against current entitlements",
+                    ],
+                    [
+                        "Okta identity programs serving businesses with complex application access requirements",
+                        "Authorized license spread plus integration and lifecycle automation service fees",
+                        "Application integration patterns and documented identity recovery procedures",
+                        "Incorrect access changes disrupt users; stage testing and preserve recovery paths",
+                    ],
+                    [
+                        "CrowdStrike endpoint security estates requiring consistent enterprise deployment coverage",
+                        "Authorized product spread plus bounded deployment and operational handover services",
+                        "Endpoint inventory reconciliation and repeatable installation exception handling",
+                        "Coverage claims exceed deployed agents; reconcile actual installations before acceptance",
+                    ],
+                    [
+                        "Palo Alto Networks Prisma Cloud programs spanning multiple cloud environments",
+                        "Authorized subscription economics plus scoped cloud security configuration services",
+                        "Cloud-account inventory and customer-approved remediation ownership records",
+                        "Entitlement metrics or scope assumptions change; validate the billable inventory",
+                    ],
+                    [
+                        "Datadog observability deployments across application and infrastructure engineering teams",
+                        "Eligible channel economics plus instrumentation and usage optimization services",
+                        "Telemetry inventory, usage forecasts, and reusable application monitoring templates",
+                        "Unexpected ingestion growth erodes budgets; set customer-owned usage alerts",
+                    ],
+                    [
+                        "Snowflake analytics environments purchased through authorized enterprise procurement routes",
+                        "Contracted partner economics where permitted plus migration and optimization services",
+                        "Workload baselines and reproducible data pipeline acceptance tests",
+                        "Consumption exceeds modeled workloads; separate usage assumptions from fixed services",
+                    ],
+                    [
+                        "Veeam backup environments requiring documented recovery and entitlement coverage",
+                        "Authorized subscription spread plus deployment and recovery validation service fees",
+                        "Protected-workload inventory and routinely tested customer recovery procedures",
+                        "License quantities miss protected workloads; reconcile inventory before renewal submission",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Protect spread with evidence competitors rarely maintain",
+                "body": "The strongest channel advantage is often a cleaner transaction file and a better renewal calendar.",
+                "items": [
+                    "Store deal-registration identifiers, expiry dates, covered entities, and discount conditions beside the quote; registration is not perpetual exclusivity.",
+                    "Record first-seen and last-seen technographic observations separately from buyer-confirmed contract dates so weak signals never become invented renewal facts.",
+                    "Preserve the exact supplier quote and marketplace offer version used for pricing; compare settlement deductions against that version rather than today's catalog.",
+                    "Tie implementation acceptance to a reusable test pack, then quote additional integrations separately instead of spending the license spread on open-ended delivery.",
+                ],
+            },
+        },
+        {
+            "heading": "4. Operate nine mapped plays through one controlled customer lifecycle",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "The nine-play map combines the supplied technographic play with eight "
+                    "chapter-defined operating motions, rather than presenting additional invented "
+                    "catalog identifiers. Registered SaaS resale, Microsoft CSP administration, "
+                    "AWS CPPO transactions, Azure private offers, implementation and migration, "
+                    "license reconciliation, renewal recovery, and procurement consolidation "
+                    "complete the map. Each earns money differently and needs its own fallback. "
+                    "For implementation, $30,000 of service fees less 150 delivery hours at "
+                    "$120 per hour leaves $12,000 before shared overhead; 50 unpriced "
+                    "additional hours reduce that contribution to $6,000. License reconciliation "
+                    "can bill $6,000 while consuming 30 hours at $100, leaving $3,000 "
+                    "before overhead, but customer subscription savings are not reseller revenue. "
+                    "A procurement retainer of $2,000 monthly yields $24,000 annual service "
+                    "revenue; it is not permission to count the buyer's entire software budget. "
+                    "The matrix provides illustrative transaction economics, not components to "
+                    "add onto the canonical scenarios. Some plays overlap on the same customer "
+                    "order, so aggregate only distinct recognized consideration. A renewal "
+                    "recovered through technographic outreach remains one sale, not two. "
+                    "If a vendor refuses authorization, retain only the independently authorized "
+                    "service work and remove the anticipated resale spread from the forecast. "
+                    "That discipline prevents an attractive play map from becoming double-counted pipeline."
+                ),
+                (
+                    "Run the customer lifecycle through a single opportunity record containing "
+                    "the buyer's entity, supplier authorization, transaction route, product "
+                    "configuration, recognition conclusion, payment schedule, and renewal evidence. "
+                    "HubSpot or Salesforce can own commercial activity; Jira Service Management "
+                    "can own delivery issues; an accounting ledger remains authoritative for "
+                    "recognized revenue and receivables. A lightweight script can compare "
+                    "distributor exports with customer entitlements using subscription identifiers, "
+                    "SKU, quantity, term, and currency. Do not reconcile on product names "
+                    "alone because editions and commitment periods often look deceptively "
+                    "similar. Automate renewal reminders at customer-appropriate intervals, "
+                    "such as 120, 90, 60, and 30 days before the confirmed decision deadline, "
+                    "while preserving earlier supplier notice requirements. Generated quotes "
+                    "should carry source-price timestamps, validity dates, and explicit "
+                    "service assumptions. Route changed quantities, expired discounts, and "
+                    "unusual payment terms to a named human reviewer. After activation, "
+                    "verify the correct customer tenant and purchasing account, collect "
+                    "acceptance evidence, and reconcile the first invoice. Restrict automation "
+                    "credentials to necessary actions and retain change logs. The objective "
+                    "is not autonomous purchasing: it is faster preparation with fewer "
+                    "unexplained exceptions, so the same small team can manage more "
+                    "renewals without increasing avoidable support work."
+                ),
+                (
+                    "Durable small-team moats are cumulative and observable: a narrow reference "
+                    "base, accurate entitlements, trusted procurement coordination, reusable "
+                    "implementation assets, and a renewal history that predicts actual work. "
+                    "Fragile beginner hype substitutes partner logos, gross transaction "
+                    "volume, supposed secret discounts, or unverified buying signals for "
+                    "those assets. Score the business against collected contribution per "
+                    "account, support hours per renewal, supplier concentration, overdue "
+                    "receivables, and the proportion of renewals with buyer-confirmed dates. "
+                    "These measures expose a portfolio that looks large but cannot support "
+                    "its obligations. Review vendor policy changes monthly and before "
+                    "material commitments, because discount revisions, program exits, or "
+                    "changed cancellation rights can invalidate yesterday's unit economics. "
+                    "Maintain a second authorized route where practical, but do not "
+                    "promise seamless portability when licenses or marketplace commitments "
+                    "prevent it. If channel competition compresses license spreads, defend "
+                    "a measurable service outcome rather than conceal fees inside confusing "
+                    "quotes. If collections slow, reduce new unsecured exposure rather "
+                    "than chasing volume to cover the shortfall. The $500,000 Scaled "
+                    "owner-profit case is a disciplined operating result on $2,500,000 "
+                    "gross revenue, not a commission on customer transaction volume. "
+                    "Build toward it by retaining the canonical headcount and testing "
+                    "every proposed efficiency against actual delivery capacity and cash."
+                ),
+            ],
+            "table": {
+                "caption": "Nine mapped plays with illustrative unit economics and executable fallbacks",
+                "headers": [
+                    "Mapped play and concrete operating scope",
+                    "Illustrative unit math before shared overhead",
+                    "Evidence that makes the opportunity actionable",
+                    "Risk fallback when the assumption fails",
+                ],
+                "rows": [
+                    [
+                        "saas_technographic_churn_pixel_scraping: public DNS and script change monitoring",
+                        "One $60,000 principal resale at ten percent spread produces $6,000",
+                        "Corroborated public changes plus buyer-confirmed product need and purchasing timing",
+                        "Combine passive DNS with job postings before routing unconfirmed switches",
+                    ],
+                    [
+                        "Registered SaaS resale using a current vendor-authorized opportunity record",
+                        "$100,000 principal resale less $88,000 supplier cost leaves $12,000",
+                        "Valid deal registration and written discount applicable to this customer",
+                        "Requote at confirmed economics if registration protection expires or disappears",
+                    ],
+                    [
+                        "Microsoft CSP administration with separately contracted customer support responsibilities",
+                        "$60,000 license billings less $54,000 cost plus $6,000 services yields $12,000",
+                        "Distributor authorization, customer tenant mapping, and separately priced service scope",
+                        "Reprice support or decline commitments that exceed documented customer obligations",
+                    ],
+                    [
+                        "AWS CPPO execution for an eligible customer and participating seller",
+                        "$200,000 principal billings less $180,000 cost and $2,000 assumed charges leaves $18,000",
+                        "Seller authorization, customer account validation, and current settlement charge terms",
+                        "Use authorized direct resale if marketplace eligibility or economics fails",
+                    ],
+                    [
+                        "Azure private-offer coordination for an eligible multiparty purchasing transaction",
+                        "$150,000 principal billings less $138,000 cost and $1,500 assumed charges leaves $10,500",
+                        "Current participation eligibility and buyer-confirmed purchasing account and commitment treatment",
+                        "Remove commitment claims and select another authorized route when ineligible",
+                    ],
+                    [
+                        "Implementation and migration using bounded deliverables and reusable acceptance tests",
+                        "$30,000 service fees less 150 hours at $120 leaves $12,000",
+                        "Signed scope, validated source data, and customer-approved acceptance criteria",
+                        "Use paid discovery and change orders when migration complexity expands",
+                    ],
+                    [
+                        "License reconciliation against customer-authorized entitlements and actual deployed inventory",
+                        "$6,000 service fees less thirty hours at $100 leaves $3,000",
+                        "Authorized exports joined by subscription identifier, product edition, and term",
+                        "Sell a bounded inventory assessment if usage evidence remains inaccessible",
+                    ],
+                    [
+                        "Renewal recovery for customers with confirmed supplier and decision deadlines",
+                        "$80,000 principal renewal less $72,000 supplier cost leaves $8,000",
+                        "Buyer-confirmed quantities, service performance history, and valid renewal authorization",
+                        "Reforecast reduced seats immediately rather than carrying obsolete renewal value",
+                    ],
+                    [
+                        "Procurement consolidation through a separately contracted recurring administration service",
+                        "$2,000 monthly fees yield $24,000 revenue; $12,000 delivery cost leaves $12,000",
+                        "Named customer sponsors and explicit purchasing responsibilities within service scope",
+                        "Retain a service-only engagement when resale rights or buyer mandates conflict",
+                    ],
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Qualify the buyer and transaction route",
+                    "action": "Confirm the customer entity, product need, purchasing authority, and authorized supply path.",
+                    "detail": "Treat technographic observations as leads; obtain buyer-confirmed timing and verify current vendor or distributor permissions.",
+                },
+                {
+                    "step": 2,
+                    "title": "Price contribution and cash exposure",
+                    "action": "Build a quote from current supplier terms, delivery estimates, charges, and payment dates.",
+                    "detail": "Record the principal-agent conclusion, test cancellation asymmetry, and identify the maximum cash shortfall before accepting liability.",
+                },
+                {
+                    "step": 3,
+                    "title": "Deliver and reconcile the actual entitlement",
+                    "action": "Activate the correct customer account, execute the scoped work, and retain acceptance evidence.",
+                    "detail": "Match purchased SKU, quantity, term, and currency against activation records, customer invoices, and supplier or marketplace statements.",
+                },
+                {
+                    "step": 4,
+                    "title": "Collect, review contribution, and prepare renewal",
+                    "action": "Track settlement, close exceptions, and schedule reminders against confirmed contractual deadlines.",
+                    "detail": "Compare actual support and delivery costs with the quote, update renewal quantities, and revalidate supplier authorization before requoting.",
+                },
+            ],
+        },
+    ],
+    "pull_quote": "The moat is not access to a software catalog; it is a repeatable path from authorized quote to collected spread and clean renewal.",
+    "diagram_id": "diag-01",
+    "action_checklist": [
+        "Select one of the five archetypes and one adjacent service, then document the exact customer workflow your team will own.",
+        "Obtain current product, territory, customer-class, distributor, and marketplace authorization before presenting resale terms.",
+        "Create an ASC 606 principal-agent worksheet separating license supply, implementation, arrangement fees, customer deposits, and recognition timing.",
+        "Reconcile the three canonical profit cases to actual cost assumptions without changing their revenue, margins, owner profits, or headcounts.",
+        "Build a weekly cash schedule that matches supplier commitments to customer collections and funds the largest projected shortfall.",
+        "Pilot the nine-play map on distinct opportunities, recording unit contribution, signal confidence, delivery scope, and confirmed renewal deadlines.",
+    ],
+    "statutory_citations": [
+        {
+            "title": "17 U.S.C. 106 — Exclusive rights in copyrighted works",
+            "url": "https://www.law.cornell.edu/uscode/text/17/106",
+            "relevance": (
+                "Identify the rights implicated by software reproduction and distribution; verify "
+                "the applicable license and reseller authorization rather than assuming unrestricted resale rights."
+            ),
+        },
+        {
+            "title": "48 CFR 12.212 — Computer software",
+            "url": "https://www.ecfr.gov/current/title-48/chapter-1/subchapter-B/part-12/subpart-12.2/section-12.212",
+            "relevance": (
+                "For covered federal commercial software procurement, assess customary license terms "
+                "against federal law and agency needs; marketplace participation alone does not resolve procurement requirements."
+            ),
+        },
+        {
+            "title": "California Civil Code 1798.100(d) — Personal information disclosure contracts",
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=1798.100.&lawCode=CIV",
+            "relevance": (
+                "When applicable, ensure covered disclosures to service providers, contractors, or "
+                "third parties use the required contractual protections; assess implementation access separately from license resale."
+            ),
+        },
+        {
+            "title": "15 U.S.C. 45 — Unfair or deceptive acts or practices",
+            "url": "https://www.law.cornell.edu/uscode/text/15/45",
+            "relevance": (
+                "Support commercial claims about authorization, savings, marketplace eligibility, "
+                "and service capabilities with evidence, recognizing the statute's jurisdictional scope."
+            ),
+        },
+    ],
+}

@@ -1,10 +1,10 @@
 {
   "scope": "publishing_store_excluding_previews",
   "sha256": {
-    "audit/existing_work_audit.json": "c2aa5cbe0c2b979c5e297d7e9226beb38910fc52f11059f22f268f8e1e85f883",
-    "brand/brand_system.json": "7bf2ffc76aeec896d8ffaa7b087489cd69e061dd10571750aa54ef5f9c25a4fb",
-    "catalog/pipeline_29_candidates.json": "e6ff093e16bbec4dfd4a741faad1f25fcf50ff59206c694c58718fd896ec0829",
-    "research/research_database_summary.json": "ee6024ae397ed034ce31d9eb637f3729a26c26a64cf72f23a52a9336d5486d53",
+    "audit/existing_work_audit.json": "127a59b86f7ad1e17d84dd4aae46615506506bf39007160af717a04fe6916085",
+    "brand/brand_system.json": "41f4b504e781730554adb3b3a1151100b5c6f06e95466351a8b1d13767f1184f",
+    "catalog/pipeline_29_candidates.json": "7bc51b0269c625da81cbb1afd48d1bfbdb8b4324f8fcf779c03b1898a49485ef",
+    "research/research_database_summary.json": "0a1e066f24f3c893268119f6c390bcd5e5bea32cdf44111086d08ae2d647ff12",
     "site/newsletter_signups.json": "5a97fe09f877c0fccee940246e74f27dc5b6bc83148037af241946b350933794",
     "volumes/vol-001-heir-hunting/chapters/chapter-01.md": "4c44fe7e11c2f4af10ed7241bb0f8b49674c33d8c70c91a965cd3a0dab1133f0",
     "volumes/vol-001-heir-hunting/chapters/chapter-02.md": "c9f8705ba384dbbbd713674229cb8dfce45ab4fab27acea1480b476f229ad08b",
@@ -329,6 +329,24 @@
     "volumes/vol-018-land-flipping/manuscript.json": "263389d7d4e4fee83cc191365d97c27c186f31d7117f530214f9e13f35c40790",
     "volumes/vol-018-land-flipping/metadata.json": "2d7a1c6d4c9cb178796c9c950108ada982e8f5d55f5c2d113f12105c759f6022",
     "volumes/vol-018-land-flipping/scorecard.json": "89154edfea34248f69c2d99cf73c7ae50a911281073ef4b9df599d4750ccb51e",
-    "volumes/vol-018-land-flipping/workbook.json": "d272aed456fe4dbbdc048431b18ae7f032cb0aabfd2041aaa382a66bd9b01586"
+    "volumes/vol-018-land-flipping/workbook.json": "d272aed456fe4dbbdc048431b18ae7f032cb0aabfd2041aaa382a66bd9b01586",
+    "volumes/vol-019-enterprise-software-reselling/chapters/chapter-01.md": "2ca159648795701f7f29dcce222fadc894c9d87fb52e0dfc3503810cb6d39589",
+    "volumes/vol-019-enterprise-software-reselling/chapters/chapter-02.md": "d39ddaffe4c40bbdadfa7dbd96e558efad1e722d1f058fd20f345bcd2e6a8b35",
+    "volumes/vol-019-enterprise-software-reselling/chapters/chapter-03.md": "8594c15a6537fe57ae451b68c5efc9fa3162165d11c359e2172ea5c5a6e9ecb5",
+    "volumes/vol-019-enterprise-software-reselling/chapters/chapter-04.md": "cf255392a6c141f079ad402d448bb61ac7728c3a6c91142f30f3a909f17b36da",
+    "volumes/vol-019-enterprise-software-reselling/chapters/chapter-05.md": "09ef90fa6270270637a826813a43067bd9ca71ba172255f7ccee137fc48bbd28",
+    "volumes/vol-019-enterprise-software-reselling/chapters/chapter-06.md": "e81980309cbd3e3c8f51e1b6285d12b2e610c8262a575307ceff99d99dc2f591",
+    "volumes/vol-019-enterprise-software-reselling/chapters/chapter-07.md": "a0fd58fc39f9f3ea44b41bb95362915c2bb5f0c9e88d40ede88f6cdcbe7bdae8",
+    "volumes/vol-019-enterprise-software-reselling/chapters/chapter-08.md": "1b39151b25ee62b47ce15bd44c13edb255c18f06a43f779dbf5f80750e7a3236",
+    "volumes/vol-019-enterprise-software-reselling/chapters/chapter-09.md": "9393d10def8a58065c63ab01dbb5db9d6921cab6ed63b1c9d17bf9150c474a07",
+    "volumes/vol-019-enterprise-software-reselling/chapters/chapter-10.md": "0d51b72101fee2d28e671ab75b5294b03897dc606005a1b73d769d4050ed4c2d",
+    "volumes/vol-019-enterprise-software-reselling/chapters/chapter-11.md": "8e03cfc24341505531c668d99da73e3a668f8bfdf627dedd73f96d5c62a8016b",
+    "volumes/vol-019-enterprise-software-reselling/chapters/chapter-12.md": "5373b5dd055a2000232497c2c903bb9401439c17f0816b65e6afc5cc3f685b75",
+    "volumes/vol-019-enterprise-software-reselling/diagrams_data.json": "403e9a44ce3bcfb2381fd43e37cb26828bbe7ce8512abfdec557344c74acd44a",
+    "volumes/vol-019-enterprise-software-reselling/graphics_reviews.json": "4c4ea166d35c0105a49e923d053cb3fcd637552c0fe17c1dac0a6c5ee1326ff0",
+    "volumes/vol-019-enterprise-software-reselling/manuscript.json": "43f9ed1cde3fac655e40013cae9021fd6776bc165a9f201296bab6b1a043aa8d",
+    "volumes/vol-019-enterprise-software-reselling/metadata.json": "bca106d7952559ef225f56ca201c7bfed6c8312eb0b7ef5c5253c634fa351c66",
+    "volumes/vol-019-enterprise-software-reselling/scorecard.json": "65b05fcff5cfb61ce3d11555e56989628a3ad68eed4dd6ec4704beace40d4cd2",
+    "volumes/vol-019-enterprise-software-reselling/workbook.json": "29707cf0e44872d6394302e66c4f063114e84aafc3b645120d641a56afca45f4"
   }
 }
