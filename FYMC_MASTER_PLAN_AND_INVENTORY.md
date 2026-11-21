@@ -170,6 +170,7 @@ The thirty-five mapped plays (`Track 01 + Track 02`) are `parasitic_seo`, `compe
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Vol. 006** | **Productized AI Agencies** (`#006`, `86/100`) | `76,030` (`2,258–2,508`/ch) | `48` tables / `323` rows (`10.35` w/cell) | `48` (`12` callouts) | `180` links / `162` videos (`178` harvested) | `23` plays | `227`p Dig / `364`p Print / `85`p WB (`7,095`w) |
 | **Vol. 007** | **Unclaimed Property Recovery** (`#007`, `85/100`) | `75,914` (`2,259–2,457`/ch) | `48` tables / `371` rows (`10.01` w/cell) | `48` (`12` callouts) | `180` links / `178` videos (`178` harvested) | `12` plays | `225`p Dig / `367`p Print / `85`p WB (`7,175`w) |
+| **Vol. 008** | **Commercial Lead Generation** (`#008`, `85/100`) | `77,918` (`2,239–2,531`/ch) | `48` tables / `335` rows (`11.05` w/cell) | `48` (`12` callouts) | `180` links / `153` videos (`178` harvested) | `54` plays | `231`p Dig / `376`p Print / `85`p WB (`7,142`w) |
 
 ### Built-Volume Unit Economics
 
@@ -231,7 +232,7 @@ Source of truth: [`publishing/catalog/pipeline_29_candidates.json`](publishing/c
 | **#05** | **Surplus Funds Recovery** *(Vol. 002 Built & QA-Verified)* | Recovery services | **86/100** (`±3` High) | `22/22/18/12/12` | 4 (`2 FT + 2 C`) | \$100k–\$750k | \$25,000–\$337,500 | T1, T2 | `10` |
 | **#06** | **Productized AI Agencies** *(Vol. 006 Built & QA-Verified)* | Tech implementation | **86/100** (`±10` Prelim) | `23/21/17/12/13` | 5 (`2 FT + 3 C`) | \$100k–\$1.0M | \$20,000–\$400,000 | T1, T2 | `23` |
 | **#07** | **Unclaimed Property Recovery** *(Vol. 007 Built & QA-Verified)* | Recovery services | **85/100** (`±3` High) | `20/22/18/13/12` | 3 (`1 FT + 2 C`) | \$60k–\$450k | \$15,000–\$225,000 | T1 | `12` |
-| **#08** | **Commercial Lead Generation** | B2B marketing services | **85/100** (`±6` Mod) | `21/21/18/12/13` | 4 (`1 FT + 3 C`) | \$100k–\$750k | \$20,000–\$300,000 | T1, T2 | `54` |
+| **#08** | **Commercial Lead Generation** *(Vol. 008 Built & QA-Verified)* | B2B marketing services | **85/100** (`±6` Mod) | `21/21/18/12/13` | 4 (`1 FT + 3 C`) | \$100k–\$750k | \$20,000–\$300,000 | T1, T2 | `54` |
 | **#09** | **Million-Dollar Lead Generation** | Enterprise demand gen | **82/100** (`±10` Prelim) | `24/21/16/9/12` | 5 (`2 FT + 3 C`) | \$150k–\$1.2M | \$30,000–\$480,000 | T1, T2 | `30` |
 | **#10** | **Building an SEO Empire** | Search-driven publishing | **82/100** (`±6` Mod) | `22/21/17/10/12` | 6 (`2 FT + 4 C`) | \$80k–\$900k | \$16,000–\$405,000 | T1, T2 | `30` |
 | **#11** | **High-Ticket Brokerage** | Specialist transactions | **82/100** (`±6` Mod) | `23/22/18/10/9` | 4 (`1 FT + 3 C`) | \$100k–\$1.0M | \$25,000–\$500,000 | T1, T2 | `21` |

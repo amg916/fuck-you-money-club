@@ -1,10 +1,10 @@
 {
   "scope": "publishing_store_excluding_previews",
   "sha256": {
-    "audit/existing_work_audit.json": "c4f09f2e1ee87510ccb26e5ad85a0aada360331b19fe6f6e6bab4eaa966de640",
-    "brand/brand_system.json": "2f214f3d136e26a920e0633163bd911630db2167914229fa217ed36553664881",
-    "catalog/pipeline_29_candidates.json": "c87900f30bf6b646ce3b8ef3f11cf3481dc97e0af8aa84c8dc2f53efc6e986b7",
-    "research/research_database_summary.json": "be298b3f81e3353262251c08e7f340b03dc383a178f460d4682fa806bb43e1fe",
+    "audit/existing_work_audit.json": "3f00f08c34a96511d09801527a88c819598ba0e59b0cf9e490124f09fb15d5b6",
+    "brand/brand_system.json": "03474d90ca4fb2cc56ef38f736b0feece30fec805e825582bf4c32145d5efb7a",
+    "catalog/pipeline_29_candidates.json": "26ea081176d1c13dac25ebbca6618f3d713594aa5aa460ca3854edaf83732062",
+    "research/research_database_summary.json": "e2e1c9a16bd4d69ceb2849fc0ac357fe0fbf3df04fceb2bbaceab69e454a01cf",
     "site/newsletter_signups.json": "5a97fe09f877c0fccee940246e74f27dc5b6bc83148037af241946b350933794",
     "volumes/vol-001-heir-hunting/chapters/chapter-01.md": "4c44fe7e11c2f4af10ed7241bb0f8b49674c33d8c70c91a965cd3a0dab1133f0",
     "volumes/vol-001-heir-hunting/chapters/chapter-02.md": "c9f8705ba384dbbbd713674229cb8dfce45ab4fab27acea1480b476f229ad08b",
@@ -131,6 +131,24 @@
     "volumes/vol-007-unclaimed-property-recovery/manuscript.json": "6ed77e2ebffadc902a988f64745af93f525fc6b681ee3d0d881ce7d99b3c4a26",
     "volumes/vol-007-unclaimed-property-recovery/metadata.json": "7d854d8f3e82fa659736eb3195032025a0776132c8a09627e2c8505317367c4b",
     "volumes/vol-007-unclaimed-property-recovery/scorecard.json": "3cf46111020ba5e86d4837779b6b58ba3a0d6e2e085fb580fbca17ddd648634a",
-    "volumes/vol-007-unclaimed-property-recovery/workbook.json": "a968f6ea6d0ead6bb19205046ce43b94979640d46d82d268637df90733a8603a"
+    "volumes/vol-007-unclaimed-property-recovery/workbook.json": "a968f6ea6d0ead6bb19205046ce43b94979640d46d82d268637df90733a8603a",
+    "volumes/vol-008-commercial-lead-generation/chapters/chapter-01.md": "b05c739a91d41998b01502edc0aa40dadadbc784d9000fe1b733cbab6614ae83",
+    "volumes/vol-008-commercial-lead-generation/chapters/chapter-02.md": "259e24a8c2ad4f4316aab6a3ad46734ef20d6337c6c4130fb3d3bafc875a9160",
+    "volumes/vol-008-commercial-lead-generation/chapters/chapter-03.md": "931f236e2d40e0695df69a719a4affa92e3cb983338e763e11e32bbfce1650e4",
+    "volumes/vol-008-commercial-lead-generation/chapters/chapter-04.md": "0a52c2751ab037043315dd5d08819e4e0dd37ef75cd3fe17d5b78db7f86576cb",
+    "volumes/vol-008-commercial-lead-generation/chapters/chapter-05.md": "106d31684c21a86d5a7a5fbf56fd2147423ee987938af3096cddc327c5be6830",
+    "volumes/vol-008-commercial-lead-generation/chapters/chapter-06.md": "22d43984bd512a7dc737ccbfceb53700aafab19bba456b3c3b0835e7c6c2b695",
+    "volumes/vol-008-commercial-lead-generation/chapters/chapter-07.md": "8e54b014b45fbc084064d40a8f40c8c284c87a749a353953b18c5a499f821be1",
+    "volumes/vol-008-commercial-lead-generation/chapters/chapter-08.md": "aa6e594e296a5baf03efb0f51956d3ce1dbd0fa587f987e1ebce0cffa2d8d81b",
+    "volumes/vol-008-commercial-lead-generation/chapters/chapter-09.md": "d35ec731b8e172f8197e21162d8b80b7c93d43178c5347d806aecfc807385278",
+    "volumes/vol-008-commercial-lead-generation/chapters/chapter-10.md": "2912c695fb1c465ffb51019e41d431459c636890e76ee80f4606874487ce949e",
+    "volumes/vol-008-commercial-lead-generation/chapters/chapter-11.md": "149d5f889f3018a762d6cafecfdc97e75a16118ea25abc26ea3b42781a75e757",
+    "volumes/vol-008-commercial-lead-generation/chapters/chapter-12.md": "0b3d640b26ef4023a505b4556d4d7ab8e9c7b1ca3582aea0340dbe9fe828962c",
+    "volumes/vol-008-commercial-lead-generation/diagrams_data.json": "ab77fb173350296d32c13fe1b2d7302a45739640df5b0d4b53165c2c6d9c8e69",
+    "volumes/vol-008-commercial-lead-generation/graphics_reviews.json": "b398969ee26886214f6125b4fbaf8d98efd8a5b053f101eea4fe5be3f3740daa",
+    "volumes/vol-008-commercial-lead-generation/manuscript.json": "41b83d18036422908025cac9fb279f6191051b6d415cbd318dae92d3b890c781",
+    "volumes/vol-008-commercial-lead-generation/metadata.json": "8df66b3788295a3894126e0100aec81b9201b45eaddbdab7283c32ddf47896e4",
+    "volumes/vol-008-commercial-lead-generation/scorecard.json": "958aaa3201943a4a708f12a6467deb2992ebb504c19afb4fd8ec87b067939726",
+    "volumes/vol-008-commercial-lead-generation/workbook.json": "72b3fa58fd6dc8313789df9e1a67c1e07aa22455b1c6dca0855cdb11b5210985"
   }
 }

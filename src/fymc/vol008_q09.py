@@ -1,0 +1,771 @@
+from __future__ import annotations
+
+CHAPTER_9 = {
+    "id": "Q9",
+    "chapter_id": "Q9",
+    "chapter_number": 9,
+    "question_number": 9,
+    "slug": "contracts-statutory-guardrails-licensing-outreach-scripts",
+    "question_prompt": "Which federal/state statutes, licensing boundaries, contract clauses, and compliant outreach scripts govern commercial lead generation?",
+    "kicker": "Q9 / THE BIG MONEY PLAYBOOKS",
+    "title": "Contracts, Statutory Guardrails, Licensing & Outreach Scripts",
+    "subtitle": "CAN-SPAM, TCPA, State Privacy Rules, Accepted-Lead Contracts, Ping-Post Evidence, and Permission-Aware B2B Outreach",
+    "layout_template": "legal_compliance_notes",
+    "reading_time_minutes": 14,
+    "executive_summary": (
+        "Candidate #18, Commercial Lead Generation, holds Rank #08 with an 85/100 "
+        "Money-to-Manpower Score across 54 mapped plays. The durable business sells "
+        "documented qualification and accountable routing, rather than untraceable "
+        "contact lists. This chapter translates CAN-SPAM, TCPA, state privacy and "
+        "recording rules, sector licensing boundaries, and buyer contracts into "
+        "operating controls for multi-inbox outbound, appointment setting, newsletter "
+        "referrals, and ping-post auctions. Canonical annual owner profit is $20,000 "
+        "Conservative, $127,500 Base, and $300,000 Scaled. Recognized revenue consists "
+        "of retainers and accepted-lead fees, excluding client-funded advertising "
+        "pass-through. Use explicit acceptance evidence, restrained outreach scripts, "
+        "channel-specific permissions, and enforceable dispute procedures to protect "
+        "those margins before increasing acquisition volume."
+    ),
+    "key_metrics": [
+        {
+            "label": "Conservative",
+            "value": "$100,000",
+            "context": "Annual retainer and accepted-lead revenue; advertising pass-through excluded",
+            "note": "20% net margin; $20,000 annual owner net profit; 1 FT + 3 C",
+        },
+        {
+            "label": "Base",
+            "value": "$425,000",
+            "context": "Annual retainer and accepted-lead revenue; advertising pass-through excluded",
+            "note": "30.0% net margin; $127,500 annual owner net profit; 1 FT + 3 C",
+        },
+        {
+            "label": "Scaled",
+            "value": "$750,000",
+            "context": "Annual retainer and accepted-lead revenue; advertising pass-through excluded",
+            "note": "40% net margin; $300,000 annual owner net profit; 2 FT + 4 C",
+        },
+    ],
+    "sections": [
+        {
+            "heading": "1. Classify Every Channel, Recipient, State, and Regulated Sector",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Build the rule map around the actual message and destination, not "
+                    "the label B2B. CAN-SPAM, 15 U.S.C. § 7704, reaches commercial email "
+                    "sent to business recipients: use accurate routing information, "
+                    "nondeceptive subjects, required advertising identification, a valid "
+                    "physical postal address, and a working unsubscribe mechanism. Honor "
+                    "qualifying opt-outs within ten business days and keep the mechanism "
+                    "available for at least thirty days after transmission. Operationally, "
+                    "suppress immediately across every connected sender. Google Workspace, "
+                    "Microsoft 365, HubSpot, and sequencing vendors must consume the same "
+                    "suppression ledger; changing an inbox never restores permission. "
+                    "Publish SPF, DKIM, and DMARC, but treat authentication as delivery "
+                    "infrastructure rather than permission to contact someone. The sender "
+                    "and promoted company can both face exposure depending on their roles, "
+                    "so outsourcing execution does not erase statutory duties. Separate "
+                    "transactional confirmations from promotional follow-ups and classify "
+                    "mixed messages by their primary purpose. Preserve the rendered email, "
+                    "subject, sender identity, address block, audience source, and "
+                    "unsubscribe test result for each campaign version. A purchased "
+                    "business address is evidence of acquisition, not evidence that "
+                    "every later channel or purpose is permitted."
+                ),
+                (
+                    "For calls and texts, evaluate 47 U.S.C. § 227 and 47 CFR § 64.1200 "
+                    "against the equipment, message, telephone category, and recipient. "
+                    "A business contact using a cellular number does not automatically "
+                    "lose TCPA protections. Artificial or prerecorded voice outreach and "
+                    "covered automated dialing require different analysis from a human "
+                    "placing an individual live call. Marketing texts require their own "
+                    "permission and suppression controls; permission for a newsletter "
+                    "does not authorize a sales text. Check applicable national and "
+                    "company-specific do-not-call requirements, calling hours, revocation "
+                    "procedures, and stricter state rules before assigning a route. The "
+                    "Telemarketing Sales Rule generally exempts many B2B calls from many "
+                    "provisions, but its current framework retains prohibitions on "
+                    "specified B2B misrepresentations. Never translate that exemption "
+                    "into unrestricted dialing. Florida Statutes § 501.059 has its own "
+                    "covered-call definitions and restrictions; determine whether the "
+                    "specific offer and recipient fall inside them. Store recipient "
+                    "timezone and state with provenance, and quarantine records whose "
+                    "location cannot be resolved. For cross-state recording, use an "
+                    "affirmative agreement workflow designed for the stricter applicable "
+                    "standard instead of assuming federal one-party permission resolves "
+                    "every state issue."
+                ),
+                (
+                    "Privacy analysis starts with a data-flow diagram showing collection, "
+                    "enrichment, qualification, auction, routing, retention, and deletion. "
+                    "California Civil Code § 1798.100 and following provisions can cover "
+                    "business-contact personal information when the relevant business "
+                    "meets statutory conditions; the former broad B2B exemption has "
+                    "expired. Determine whether a recipient is a service provider, "
+                    "contractor, or independent third party, and whether a transfer "
+                    "constitutes sale or sharing. Other state privacy laws differ in "
+                    "thresholds, exclusions, consumer definitions, and sensitive-data "
+                    "requirements, so maintain state-specific rules rather than copying "
+                    "California settings everywhere. Separately assess data-broker "
+                    "registration and deletion duties when collecting and selling "
+                    "personal information without a direct relationship. Licensing "
+                    "depends on conduct: finding commercial prospects differs from "
+                    "negotiating insurance, brokering loans, arranging securities "
+                    "transactions, or receiving regulated settlement-service referrals. "
+                    "RESPA, 12 U.S.C. § 2607, restricts referral payments connected to "
+                    "covered federally related mortgage settlement services. Exchange "
+                    "Act § 15(a) creates a separate broker-registration boundary when "
+                    "securities activity crosses into brokerage. Keep staff within "
+                    "documented qualification questions, route regulated advice to "
+                    "licensed professionals, and have counsel classify proposed "
+                    "compensation before activating a sector-specific buyer."
+                ),
+            ],
+            "table": {
+                "caption": "Channel, State, and Sector Requirements Translated into Routing Controls",
+                "headers": [
+                    "Activity and factual classification to establish",
+                    "Primary authority and operating rule",
+                    "Evidence the operator must preserve",
+                    "Specific failure response before further contact",
+                ],
+                "rows": [
+                    [
+                        "Commercial email sent to an identifiable business prospect",
+                        "15 U.S.C. § 7704 governs headers, subjects, identification, addresses, and opt-outs",
+                        "Store rendered messages, audience provenance, postal address, and unsubscribe test results",
+                        "Suspend affected sequences and propagate suppression to every connected sending account",
+                    ],
+                    [
+                        "Marketing calls or texts directed toward cellular telephone numbers",
+                        "47 U.S.C. § 227 and 47 CFR § 64.1200 require technology-specific analysis",
+                        "Preserve permission language, recipient number, timestamp, source, and dialing configuration",
+                        "Disable covered automated outreach until the applicable permission basis is established",
+                    ],
+                    [
+                        "Live commercial calls evaluated under federal telemarketing exemptions",
+                        "16 CFR Part 310 retains specified B2B misrepresentation prohibitions despite exemptions",
+                        "Archive approved scripts, offer claims, seller identity, and representative training records",
+                        "Remove unsupported claims and reassess federal and state coverage before dialing",
+                    ],
+                    [
+                        "Telephone recording involving participants located in different states",
+                        "California Penal Code § 632 addresses recording confidential communications without required consent",
+                        "Retain location evidence, recording disclosure, affirmative agreement, and recording start time",
+                        "Continue without recording or end the call when required agreement fails",
+                    ],
+                    [
+                        "Business-contact information transferred into lead auctions or enrichment systems",
+                        "California Civil Code §§ 1798.100 and 1798.120 govern covered processing and opt-outs",
+                        "Document business thresholds, recipient roles, transfer purposes, and rights-request propagation",
+                        "Stop affected transfers and investigate sale, sharing, or contractual classification failures",
+                    ],
+                    [
+                        "Prospects offered insurance, securities, mortgage, or other regulated services",
+                        "Apply sector licensing rules and 12 U.S.C. § 2607 where settlement referrals qualify",
+                        "Keep buyer licenses, compensation analysis, qualification scripts, and permitted territory records",
+                        "Remove transaction-linked compensation or decline the vertical when boundaries remain unresolved",
+                    ],
+                    [
+                        "Florida telephone solicitation requiring state-specific recipient and offer classification",
+                        "Florida Statutes § 501.059 adds restrictions when its statutory coverage applies",
+                        "Record recipient location, covered offer analysis, calling windows, and permission evidence",
+                        "Quarantine unresolved Florida routes rather than treating business status as universal exemption",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Four Checks Before Any New Buyer or Outreach Route Goes Live",
+                "body": (
+                    "Release only the documented channel, audience, geography, and buyer "
+                    "combination. A passing email review does not authorize texts, recorded "
+                    "calls, resale, or a different regulated offer."
+                ),
+                "items": [
+                    "Verify audience provenance, recipient classification, location, suppression status, and the permission basis required for the selected channel.",
+                    "Test unsubscribe, STOP handling where applicable, call recording agreement, and buyer-side suppression using seeded records across every connected inbox.",
+                    "Match each buyer's legal entity, licenses where required, allowed states, acceptance terms, data role, and downstream transfer restrictions.",
+                    "Capture the approved message, landing-page disclosures, form choices, vendor configuration, and evidence-retention policy before spending acquisition funds.",
+                ],
+            },
+        },
+        {
+            "heading": "2. Contract for Accepted Outcomes, Evidence, and Controllable Liability",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Use a master services agreement, campaign order, data-processing "
+                    "schedule, and acceptance specification that agree on the same "
+                    "definitions. Scope must identify the commercial offer, target "
+                    "industries, employee or revenue bands, territories, channels, buyer "
+                    "capacity, exclusions, and reporting cadence. For appointments, "
+                    "define whether payment requires booking, attendance, a named "
+                    "decision-maker, verified need, or a minimum conversation duration. "
+                    "These are different products with different refund rates. A useful "
+                    "starting term makes a lead billable only when the buyer accepts "
+                    "a unique record meeting the written criteria; receipt alone does "
+                    "not prove acceptance. Require rejection within two business days "
+                    "using enumerated reason codes and supporting evidence. Define "
+                    "duplicate lookback periods, rescheduling treatment, no-show "
+                    "responsibility, attribution windows, and whether exclusivity "
+                    "applies to a person, company, opportunity, or territory. Include "
+                    "buyer-response obligations because an unanswered transfer is not "
+                    "equivalent to an unqualified prospect. Record routing timestamps "
+                    "and call dispositions in HubSpot or Salesforce, while keeping "
+                    "sensitive evidence in restricted storage. Tie invoice lines to "
+                    "immutable lead identifiers and accepted events so finance can "
+                    "reproduce the bill without relying on an account manager's memory."
+                ),
+                (
+                    "Reconcile contract economics to the canonical annual scorecard "
+                    "before promising volume. Conservative revenue of $100,000 at a "
+                    "20% net margin produces $20,000 owner profit and implies $80,000 "
+                    "total costs with 1 FT plus 3 C. Base revenue of $425,000 at "
+                    "30.0% produces $127,500 owner profit and $297,500 costs with "
+                    "the same team. Scaled revenue of $750,000 at 40% produces "
+                    "$300,000 owner profit and $450,000 costs with 2 FT plus 4 C. "
+                    "One illustrative Base revenue bridge is five clients paying "
+                    "$5,000 monthly, producing $300,000, plus 1,000 accepted leads "
+                    "at $125, producing $125,000. Define what the retainers buy so "
+                    "accepted-lead fees do not duplicate an included allowance. "
+                    "Client-funded advertising pass-through is excluded from all "
+                    "three revenue figures; client sales, merchant volume, and loan "
+                    "principal are also excluded. Keep campaign experiments separate "
+                    "from annual forecasts. The $2,000–$12,000 monthly operating "
+                    "range is an orientation, not a substitute for each scenario's "
+                    "full cost bridge. Model acquisition, contractors, verification, "
+                    "credits, infrastructure, insurance, and administrative costs "
+                    "explicitly, with enough reserve for buyer disputes and delayed collections."
+                ),
+                (
+                    "Make anti-circumvention narrow enough to explain and administer: "
+                    "protect documented introductions for a defined period, exclude "
+                    "provable preexisting relationships, and avoid claiming ownership "
+                    "of an entire market. Specify who owns creative work, qualification "
+                    "logic, CRM configuration, prospect records, and evidence artifacts. "
+                    "Personal information remains subject to statutory rights regardless "
+                    "of commercial ownership language. Buyer access to a lead is a "
+                    "limited permitted use, not unlimited resale authority. Set "
+                    "retention by purpose and applicable obligations, with deletion "
+                    "propagation and a documented litigation-hold exception. Negotiate "
+                    "a liability cap using a stated fee period, identify any carve-outs "
+                    "precisely, and align indemnities with the party controlling "
+                    "collection, claims, outreach, security, or resale. Insurance "
+                    "coverage and exclusions must match the actual channels. Contract "
+                    "allocation cannot eliminate government enforcement or third-party "
+                    "rights. Define escalation contacts, evidence exchange, negotiation "
+                    "deadlines, forum, governing law, arbitration if selected, and "
+                    "treatment of undisputed invoices. Termination provisions should "
+                    "stop sending, revoke credentials, settle accepted events, return "
+                    "eligible data, and preserve necessary suppression records. Require "
+                    "written change orders for new states, channels, offers, or "
+                    "subprocessors rather than quietly expanding the original scope."
+                ),
+            ],
+            "table": {
+                "caption": "Accepted-Lead Agreement Clauses and the Evidence That Makes Them Operable",
+                "headers": [
+                    "Clause and commercial boundary being established",
+                    "Concrete starting language for negotiated documents",
+                    "System evidence required for billing disputes",
+                    "Failure mode and specific contractual remedy",
+                ],
+                "rows": [
+                    [
+                        "Scope defines the purchased service and permitted campaign routes",
+                        "Limit delivery to listed industries, territories, channels, offers, and qualification criteria",
+                        "Version the campaign order beside buyer configuration and approved qualification questions",
+                        "Require written change orders before adding audiences, states, channels, or regulated offers",
+                    ],
+                    [
+                        "Fee trigger distinguishes accepted leads from merely delivered records",
+                        "Charge $125 only after documented acceptance under the campaign's written criteria",
+                        "Join immutable lead identifiers with acceptance events, invoice lines, and buyer receipts",
+                        "Credit unsupported charges and correct integration logic before the next billing cycle",
+                    ],
+                    [
+                        "Rejection rules prevent indefinite disputes and unsupported quality objections",
+                        "Require reason-coded rejection within two business days with supporting factual evidence",
+                        "Retain duplicate checks, qualification answers, delivery timestamps, and buyer response history",
+                        "Resolve contested records individually while continuing collection of undisputed invoice amounts",
+                    ],
+                    [
+                        "Anti-circumvention protects attributable introductions without claiming entire customer markets",
+                        "Protect documented introductions for ninety days while excluding provable preexisting relationships",
+                        "Keep introduction timestamps, account identifiers, prior-relationship evidence, and agreed attribution rules",
+                        "Use the negotiated dispute process rather than asserting unsupported lost-profit claims",
+                    ],
+                    [
+                        "Intellectual property and data permissions separate assets from statutory rights",
+                        "Allocate creative ownership separately from limited prospect-data use and evidence access",
+                        "Maintain asset inventories, access logs, recipient contracts, retention schedules, and deletion receipts",
+                        "Revoke improper access and require downstream deletion subject to documented preservation duties",
+                    ],
+                    [
+                        "Liability allocation follows actual control over acquisition and subsequent outreach",
+                        "State the fee-based cap, negotiated exceptions, indemnity triggers, and defense procedures",
+                        "Store policy endorsements, approved claims, permission records, incident notices, and vendor agreements",
+                        "Escalate incidents promptly and preserve defenses without assuming every penalty is insurable",
+                    ],
+                    [
+                        "Dispute resolution and termination preserve evidence while stopping unnecessary processing",
+                        "Specify governing law, forum, escalation deadlines, credential revocation, and final accepted-event reconciliation",
+                        "Export invoice evidence, termination timestamps, access revocations, and suppression retention decisions",
+                        "Stop future delivery while preserving necessary records and settling documented earned fees",
+                    ],
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Translate the buyer promise into testable acceptance criteria",
+                    "action": "Draft the campaign order using territory, role, company fit, need, timing, duplication, and attendance rules.",
+                    "detail": "Run ten synthetic records through buyer review and resolve every disputed definition before live delivery.",
+                },
+                {
+                    "step": 2,
+                    "title": "Bind evidence to every billable event",
+                    "action": "Assign a lead identifier and attach collection disclosures, routing events, acceptance status, and invoice references.",
+                    "detail": "Restrict access to sensitive artifacts while exposing enough evidence for the buyer to verify each charge.",
+                },
+                {
+                    "step": 3,
+                    "title": "Reconcile quality decisions before invoicing",
+                    "action": "Review reason-coded rejections, duplicates, missed transfers, and unresolved acceptance events with the buyer.",
+                    "detail": "Issue documented credits where warranted and keep pending disputes separate from accepted revenue.",
+                },
+                {
+                    "step": 4,
+                    "title": "Close the campaign without leaving active data routes",
+                    "action": "Disable sending, revoke buyer credentials, reconcile earned fees, and execute the agreed return or deletion process.",
+                    "detail": "Preserve necessary suppression and dispute evidence under a defined retention schedule rather than keeping every record indefinitely.",
+                },
+            ],
+        },
+        {
+            "heading": "3. Attach Unit Economics and Permission Evidence to the Mapped Plays",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "For social_to_search_ping_post_arbitrage, replace dependence on "
+                    "fragile $1.50 RSOC/AFD search-feed clicks with a direct, disclosed "
+                    "qualification path. The acquisition hypothesis buys $0.05–$0.12 "
+                    "curiosity clicks on Meta, TikTok, NewsBreak, or native networks "
+                    "and asks four relevant questions before offering leads into "
+                    "$45–$180 auctions. Illustratively, 1,000 clicks at $0.08 cost "
+                    "$80; a 2% form-completion rate produces twenty leads, and "
+                    "50% buyer acceptance produces ten paid leads. At $60 each, "
+                    "accepted-lead revenue is $600 and the spread before verification, "
+                    "labor, refunds, and overhead is $520. This is an experiment, "
+                    "not an annual scenario or a client-sales estimate. Ping only "
+                    "the minimum attributes necessary for bidding, then post permitted "
+                    "contact details to the selected recipient under the disclosed "
+                    "routing arrangement. Use factual ad hooks and capture "
+                    "TrustedForm or Jornaya session evidence on every submission. "
+                    "Where supported, preserve vendor integrity evidence and "
+                    "cryptographic hashes of exported artifacts; a certificate alone "
+                    "does not establish valid permission. Diversify across five or "
+                    "more direct buyers, but never interpret diversification as "
+                    "permission to sell every lead to all of them."
+                ),
+                (
+                    "For newsletter_co_reg_sparkloop_arbitrage, separate the original "
+                    "subscription from each paid recommendation. Acquire topic-matched "
+                    "readers with calculators, docket alerts, or deal digests at "
+                    "$0.60–$1.50 per subscriber, then present clearly identified "
+                    "SparkLoop or Beehiiv Boosts recommendations paying "
+                    "$2.00–$5.00 per qualified referral. At 1,000 initial subscribers "
+                    "costing $1 each, acquisition spend is $1,000. Four hundred "
+                    "validated partner referrals at $2.50 generate $1,000, equal "
+                    "to 100% of acquisition spend before other costs. At that "
+                    "same payout, 320–520 validated referrals correspond to "
+                    "80–130% recovery; these are required outcomes, not automatic "
+                    "results. Same-day dashboard estimates are not settled cash, "
+                    "and invalidation, minimum payouts, or retention conditions "
+                    "can delay recognition. Leave every partner checkbox unchecked "
+                    "and identify each recipient and subscription purpose before "
+                    "the reader acts. A one-click interface must still represent "
+                    "an informed, distinct choice. Store the exact recommendation "
+                    "version and resulting subscription event. Diversify across "
+                    "six or more direct sponsorship and affiliate offers, while "
+                    "maintaining relevance, advertising disclosures, suppression "
+                    "separation, and partner-specific deletion procedures. Stop "
+                    "sources that buy accidental signups or systematically fail "
+                    "partner quality and retention requirements."
+                ),
+                (
+                    "For parasitic_free_publishing_account_serp_monopoly, treat the "
+                    "play's name as a hypothesis to constrain, not a promise of "
+                    "search dominance. Free hosting on Medium, Substack, LinkedIn "
+                    "Articles, GitHub Pages or Gists, Notion, Hashnode, Dev.to, "
+                    "and Google Sites does not authorize duplicate accounts, "
+                    "fabricated identities, or search manipulation. Use only "
+                    "accounts permitted by each platform and publish genuinely "
+                    "distinct materials: reproducible code benchmarks on GitHub, "
+                    "executive comparisons on LinkedIn, and a detailed newsletter "
+                    "analysis on Substack. Eight useful placements might cost "
+                    "$0 in platform hosting, but four production hours at "
+                    "$50 equal $200 in labor. If one hundred relevant visits "
+                    "produce ten inquiries and two accepted leads at $100, "
+                    "the $200 revenue only covers that production allocation "
+                    "before other costs. Occupying five to eight first-page "
+                    "positions is speculative and must never become a buyer "
+                    "commitment. Disclose material affiliate relationships under "
+                    "the FTC framework, substantiate comparison claims, and "
+                    "route calls to action through clean owned bridge domains. "
+                    "Owned domains still have registration and maintenance "
+                    "costs. If platforms remove distribution, retain the "
+                    "original research on owned channels rather than creating "
+                    "replacement accounts to bypass enforcement."
+                ),
+                (
+                    "For sec_edgar_8k_vendor_trigger_arbitrage, collect public filing "
+                    "events without pretending they establish buying intent. "
+                    "Monitor appropriate SEC EDGAR feeds and structured filing "
+                    "metadata for Form D offerings and Form 8-K Item 5.02 "
+                    "leadership changes, Item 1.01 material agreements, and "
+                    "Item 2.01 completed acquisitions or dispositions. Form D "
+                    "reports an exempt offering; it does not establish that "
+                    "the full offered amount was raised or that proceeds "
+                    "remain available. Verify the filing and supporting exhibit "
+                    "before sending sub-hour outreach. Apply a shared token "
+                    "bucket capped at five requests per second, identify the "
+                    "requesting organization, honor SEC access guidance, and "
+                    "back off on errors. Mirror available SEC nightly bulk "
+                    "archives for historical lookbacks instead of repeatedly "
+                    "fetching the same filings. An illustrative hundred-event "
+                    "batch yielding twenty relevant companies, five bookings, "
+                    "and two accepted appointments at $125 produces $250 "
+                    "revenue. Two research hours at $30 leave $190 before "
+                    "tools, sending, sales, and overhead. Contact a suitable "
+                    "business role, cite the public filing accurately, and "
+                    "offer a specific vendor diagnostic. Exclude securities "
+                    "solicitation, investment recommendations, and claims of "
+                    "special access to executives."
+                ),
+            ],
+            "table": {
+                "caption": "Mapped Acquisition Experiments with Explicit Gross Spreads and Risk Fallbacks",
+                "headers": [
+                    "Play component and experiment being evaluated",
+                    "Illustrative unit calculation before full overhead",
+                    "Required evidence and truthful recipient disclosures",
+                    "Risk fallback when the assumption fails",
+                ],
+                "rows": [
+                    [
+                        "Social auction acquisition through a four-question qualification bridge",
+                        "One thousand clicks cost $80; ten accepted leads generate $600 revenue",
+                        "Preserve factual creative, qualification answers, buyer disclosures, and accepted-event identifiers",
+                        "Pause weak sources and diversify across five or more authorized direct buyers",
+                    ],
+                    [
+                        "Session evidence supporting permission-sensitive lead auction and delivery decisions",
+                        "Twenty submissions support ten accepted sales; certificate costs remain separate expenses",
+                        "Bind TrustedForm or Jornaya evidence to disclosures, choices, timestamps, and exported artifact hashes",
+                        "Reject incomplete evidence rather than treating a certificate as universal outreach permission",
+                    ],
+                    [
+                        "Newsletter recommendations presented after a distinct original subscription decision",
+                        "One thousand dollars acquisition spend requires four hundred $2.50 validated referrals",
+                        "Store unchecked initial choices, partner identity, subscription events, and qualification outcomes",
+                        "Use six or more relevant offers and stop sources producing invalid referrals",
+                    ],
+                    [
+                        "Distinct editorial placements across permitted free-hosted publication and developer accounts",
+                        "Four hours at $50 cost $200; two $100 accepted leads recover production",
+                        "Retain original research, material-connection disclosures, platform permissions, and owned-domain attribution",
+                        "Shift distribution to owned research pages instead of bypassing account restrictions",
+                    ],
+                    [
+                        "Public filing triggers researched before personalized executive vendor outreach",
+                        "Two accepted $125 appointments produce $250; research labor consumes $60",
+                        "Archive filing identifiers, relevant exhibits, research decisions, and accurate message references",
+                        "Throttle at five requests per second and use available nightly bulk archives",
+                    ],
+                    [
+                        "Revenue classification shared across all experimental acquisition and referral routes",
+                        "Recognize earned service fees while excluding client advertising pass-through and client sales",
+                        "Document principal-versus-agent treatment, acceptance conditions, refunds, and settlement timing with accounting support",
+                        "Do not book an entire buyer payout when only the contractual commission is earned",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Protect the Margin Before Optimizing Click Prices",
+                "body": (
+                    "Cheap traffic becomes expensive when evidence fails, buyers reject "
+                    "delivery, or the same prospect receives conflicting promises."
+                ),
+                "items": [
+                    "Store the form's rendered disclosure and unchecked choices beside each session artifact; a vendor certificate URL can expire or become inaccessible.",
+                    "Send seeded opt-outs through Google Workspace, Microsoft 365, the sequencer, the CRM, and buyer routing to expose suppression gaps before prospects do.",
+                    "Rank buyers by accepted revenue after credits and payment delays, not headline auction bids; reserve capacity with multiple buyers without multiplying unauthorized transfers.",
+                    "Deduplicate EDGAR events by accession number and cache reviewed exhibits so faster outreach comes from better processing rather than heavier SEC traffic.",
+                ],
+            },
+        },
+        {
+            "heading": "4. Use Honest Scripts and Keep Privacy-Claim Work Counsel-Led",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Scripts should expose the commercial purpose and make refusal "
+                    "easy. The examples below assume the named operator, service, "
+                    "filing event, and promised deliverable are all real; replace "
+                    "identifying facts with verified facts before use. A live "
+                    "caller asks whether the prospect wants a short explanation "
+                    "without asserting an existing relationship. An email "
+                    "references a public event without claiming private knowledge "
+                    "of budgets, staffing, or distress. Include the actual "
+                    "sender's valid physical postal address in the production "
+                    "footer; the example body does not supply that factual "
+                    "address. Do not use invented reply chains, fake meeting "
+                    "confirmations, fabricated referrals, or a misleading service "
+                    "notice to increase opens. Discovery should establish "
+                    "company fit, decision responsibility, need, timing, and "
+                    "permission for the specific next step. Record a declined "
+                    "meeting as declined rather than recycling it through a "
+                    "different inbox. For routing, identify the receiving seller "
+                    "and proposed contact method before collecting the "
+                    "corresponding choice. Call-transfer announcements should "
+                    "name the destination and explain what information will "
+                    "be shared. Permission to discuss one vendor does not "
+                    "become permission for unrelated buyers, texts, recordings, "
+                    "or continuing newsletter enrollment."
+                ),
+                (
+                    "For cipa_vppa_wiretap_pixel_settlement_arbitrage, restrict the "
+                    "service to counsel-led evaluation of genuine tracking-related "
+                    "privacy claims and authorized remediation. California Penal "
+                    "Code § 631 addresses specified interception and related "
+                    "conduct; § 632 concerns confidential communications and "
+                    "recording. Application to tracking technologies depends on "
+                    "facts and developing decisions, not merely detecting a "
+                    "network request. The Video Privacy Protection Act, "
+                    "18 U.S.C. § 2710, has distinct requirements involving "
+                    "covered providers, consumers, personally identifiable "
+                    "information, disclosures, and available exceptions. Do not "
+                    "advertise an automatic payout or convert statutory damages "
+                    "figures into expected operating revenue. With authorization, "
+                    "preserve browser network logs, tag configurations, disclosure "
+                    "versions, permission events, timestamps, and artifact hashes "
+                    "while minimizing unrelated personal information. Counsel "
+                    "determines applicability, standing, claims, and recoverable "
+                    "damages. An alternative six-hour remediation audit at "
+                    "$150 per hour earns $900; six hours of delivery labor "
+                    "at $60 cost $360, leaving $540 before other costs. "
+                    "Keep that technical-service fee separate from claimant "
+                    "recoveries. Do not manufacture browsing events, pressure "
+                    "targets with unsupported allegations, or charge compensation "
+                    "that violates applicable attorney fee-sharing or referral "
+                    "rules. Close unsupported matters and offer authorized "
+                    "privacy-remediation audits instead."
+                ),
+                (
+                    "Operate the scripts through a controlled release process "
+                    "rather than an editable shared document with no history. "
+                    "Store each version with its channel, audience, offer, "
+                    "territory, factual substantiation, and required disclosures. "
+                    "Have a second person replay the journey from ad to "
+                    "form, qualification, buyer routing, outreach, opt-out, "
+                    "and deletion using synthetic records. Test failed "
+                    "handoffs: the buyer endpoint times out, a person "
+                    "revokes permission after an auction, a recording starts "
+                    "before agreement, or a contractor exports a suppressed "
+                    "contact. The correct response is a documented stop, "
+                    "repair, and evidence trail, not another sending domain. "
+                    "Review rejection reasons and complaints weekly with the "
+                    "buyer, then compare results against collected fees and "
+                    "actual acquisition costs. A falling acceptance rate "
+                    "may indicate mismatched creative or a changed buyer "
+                    "definition rather than poor sales execution. Maintain "
+                    "least-privilege vendor access, rotate credentials when "
+                    "contractors leave, and reconcile deletion acknowledgments "
+                    "across processors and independent recipients where duties "
+                    "apply. Before entering another state or sector, refresh "
+                    "the authoritative rule map and written contract scope. "
+                    "Scale only repeatable evidence-backed delivery; the "
+                    "canonical Scaled team has six people, leaving little "
+                    "capacity for avoidable disputes or manual incident recovery."
+                ),
+            ],
+            "table": {
+                "caption": "Verbatim Outreach and Discovery Scripts with Channel-Specific Deployment Conditions",
+                "headers": [
+                    "Interaction and verified assumptions before deployment",
+                    "Verbatim script for the specified interaction",
+                    "Required operational accompaniment to the script",
+                    "Specific fallback after refusal or uncertainty",
+                ],
+                "rows": [
+                    [
+                        "First commercial email from a genuine vendor-selection research operator",
+                        (
+                            "Subject: Vendor handoffs after your acquisition. "
+                            "Hello, I run Northline's vendor-selection research service. "
+                            "Your company's public Form 8-K reports a completed acquisition. "
+                            "We help operations teams compare commercial facilities vendors "
+                            "when locations change. This is a commercial introduction. "
+                            "Would a two-page comparison checklist be useful? Reply no or "
+                            "use the unsubscribe link and we will stop marketing email."
+                        ),
+                        "Use the real operator identity, verified filing, valid postal address, and functional unsubscribe link",
+                        "Suppress immediately after an opt-out and do not restart through another inbox",
+                    ],
+                    [
+                        "Individual live call after applicable calling restrictions are checked",
+                        (
+                            "Hello, this is Jordan with Northline. This is a sales call "
+                            "about commercial facilities vendor comparisons. Are you the "
+                            "person responsible for that work, and may I take thirty "
+                            "seconds to explain why I called?"
+                        ),
+                        "Confirm the actual caller identity, permitted calling time, applicable screening, and live-call configuration",
+                        "If they decline, end courteously and record any request against future contact",
+                    ],
+                    [
+                        "Discovery conversation following affirmative interest in the stated service",
+                        (
+                            "Which locations need service, who evaluates vendors, and when "
+                            "would a comparison be useful? What must a vendor demonstrate "
+                            "to earn a meeting? If a provider fits those requirements, "
+                            "would you like an introduction, or only the written comparison?"
+                        ),
+                        "Record substantive answers without converting curiosity into fabricated buying authority or urgency",
+                        "Keep the record outside billable qualification when required criteria are not established",
+                    ],
+                    [
+                        "Recording request delivered before the recording function is activated",
+                        (
+                            "With your agreement, I would like to record this conversation "
+                            "for training and to document your vendor requirements. The "
+                            "recording would be available to our account team. Do you "
+                            "agree to recording? We can continue without it."
+                        ),
+                        "Match the disclosure to actual uses and recipients, obtain agreement, then activate recording",
+                        "Continue without recording when agreement is withheld and the conversation can proceed",
+                    ],
+                    [
+                        "Specific buyer introduction after qualification and recipient identity verification",
+                        (
+                            "Your requirements match Harbor Facilities' commercial cleaning "
+                            "service. Would you like me to share your name, work email, "
+                            "and stated requirements with Harbor Facilities so their team "
+                            "can email you about this request? You can decline the introduction."
+                        ),
+                        "Use the actual buyer and requested channel; obtain separate valid permission for other contact methods",
+                        "Do not transmit contact details when the prospect declines or the buyer changes",
+                    ],
+                    [
+                        "Counsel-led privacy evidence intake or separately authorized technical remediation",
+                        (
+                            "We preserve tracking and disclosure evidence for counsel's "
+                            "review, and we also perform authorized privacy-remediation "
+                            "audits. We do not promise a claim or payment. Which website "
+                            "and session are involved, and are you authorized to provide "
+                            "the materials you want reviewed?"
+                        ),
+                        "Verify authority, restrict collection, preserve original artifacts, and separate technical fees from recoveries",
+                        "Close unsupported matters and offer a scoped audit only with the necessary authorization",
+                    ],
+                ],
+            },
+        },
+    ],
+    "pull_quote": "A billable lead is a documented qualification, a permitted handoff, and an accepted outcome—not merely a name that answered.",
+    "diagram_id": "diag-05",
+    "action_checklist": [
+        "Build a channel-by-state rule map covering email, live calls, automated contact, recording, privacy transfers, and regulated-sector licensing boundaries.",
+        "Execute a campaign order defining qualification, acceptance, duplicate windows, rejection evidence, buyer response duties, fee triggers, and termination handling.",
+        "Connect every sending account, CRM workflow, auction route, and participating buyer to tested suppression and permission-revocation procedures.",
+        "Attach versioned disclosures, session evidence, qualification answers, routing events, and buyer acceptance to immutable lead identifiers.",
+        "Reconcile retainers and accepted-lead fees to the three canonical revenue and profit cases while excluding client advertising pass-through and client transaction volume.",
+        "Replay the complete prospect journey with synthetic records, verify each script's factual claims, and close unsupported privacy matters before expanding volume.",
+    ],
+    "statutory_citations": [
+        {
+            "title": "15 U.S.C. § 7704 — Requirements for Commercial Electronic Mail",
+            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
+            "relevance": "Governs commercial email headers, subjects, identification, postal addresses, unsubscribe mechanisms, and opt-out handling, including business-directed messages.",
+        },
+        {
+            "title": "47 U.S.C. § 227 — Restrictions on Use of Telephone Equipment",
+            "url": "https://www.law.cornell.edu/uscode/text/47/227",
+            "relevance": "Establishes federal restrictions relevant to covered automated calls, artificial or prerecorded voice calls, and associated telephone solicitation practices.",
+        },
+        {
+            "title": "47 CFR § 64.1200 — Delivery Restrictions",
+            "url": "https://www.ecfr.gov/current/title-47/section-64.1200",
+            "relevance": "Supplies operative FCC requirements for covered calls and texts, permission, revocation, do-not-call practices, and related records.",
+        },
+        {
+            "title": "16 CFR Part 310 — Telemarketing Sales Rule",
+            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-C/part-310",
+            "relevance": "Requires activity-specific review of telemarketing duties and exemptions, including specified misrepresentation prohibitions retained for B2B calls.",
+        },
+        {
+            "title": "15 U.S.C. § 45 — Unfair or Deceptive Acts or Practices",
+            "url": "https://www.law.cornell.edu/uscode/text/15/45",
+            "relevance": "Supports controls against fabricated buying intent, deceptive ad hooks, unsupported comparison claims, and misleading commercial representations.",
+        },
+        {
+            "title": "16 CFR Part 255 — Guides Concerning Endorsements and Testimonials",
+            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-B/part-255",
+            "relevance": "Explains the FTC's interpretation of endorsement practices and material-connection disclosures for affiliate comparisons and paid recommendations.",
+        },
+        {
+            "title": "California Civil Code § 1798.100 — Covered Business Privacy Duties",
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=1798.100.&lawCode=CIV",
+            "relevance": "Informs collection disclosures, purpose limitations, retention practices, and contractual duties when the California privacy framework applies.",
+        },
+        {
+            "title": "California Civil Code § 1798.120 — Right to Opt Out of Sale or Sharing",
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=1798.120.&lawCode=CIV",
+            "relevance": "Requires covered operators to assess lead transfers and implement applicable sale or sharing opt-out rights.",
+        },
+        {
+            "title": "California Civil Code § 1798.99.82 — Data Broker Registration",
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=1798.99.82.&lawCode=CIV",
+            "relevance": "Provides a registration requirement to evaluate alongside statutory definitions when a business operates as a covered data broker.",
+        },
+        {
+            "title": "California Civil Code § 1798.99.86 — Data Broker Deletion Mechanism Duties",
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=1798.99.86.&lawCode=CIV",
+            "relevance": "Requires covered data brokers to evaluate centralized deletion processing and related implementation obligations under the applicable statutory schedule.",
+        },
+        {
+            "title": "Florida Statutes § 501.059 — Telephone Solicitation",
+            "url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0500-0599/0501/Sections/0501.059.html",
+            "relevance": "Adds state-specific telephone solicitation definitions and restrictions requiring analysis of the recipient, offer, technology, and location.",
+        },
+        {
+            "title": "California Penal Code § 631 — Interception and Related Conduct",
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=631.&lawCode=PEN",
+            "relevance": "Requires fact-specific counsel review when tracking or communications evidence raises potential interception issues.",
+        },
+        {
+            "title": "California Penal Code § 632 — Confidential Communications",
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=632.&lawCode=PEN",
+            "relevance": "Informs recording workflows for confidential communications and the required agreement of relevant participants.",
+        },
+        {
+            "title": "18 U.S.C. § 2710 — Video Privacy Protection Act",
+            "url": "https://www.law.cornell.edu/uscode/text/18/2710",
+            "relevance": "Defines the separate coverage, disclosure, exception, and remedy questions counsel must evaluate for genuine video-related privacy matters.",
+        },
+        {
+            "title": "12 U.S.C. § 2607 — Prohibition Against Kickbacks and Unearned Fees",
+            "url": "https://www.law.cornell.edu/uscode/text/12/2607",
+            "relevance": "Restricts specified referral compensation involving settlement services for covered federally related mortgage loans.",
+        },
+        {
+            "title": "15 U.S.C. § 78o — Registration and Regulation of Brokers and Dealers",
+            "url": "https://www.law.cornell.edu/uscode/text/15/78o",
+            "relevance": "Establishes a registration boundary that must be assessed before lead-generation activity becomes securities brokerage or transaction-related solicitation.",
+        },
+    ],
+}

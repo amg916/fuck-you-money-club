@@ -1,0 +1,65 @@
+{
+  "concept_id": "concept_b",
+  "volume_id": "vol-008-commercial-lead-generation",
+  "approved": true,
+  "edition_status": "approved_master",
+  "preview_only": true,
+  "files": {
+    "digital_pdf.pdf": {
+      "bytes": 1918769,
+      "sha256": "1af6af1b22f53d9e438c1ef6a3f209b8b2052a72cd54ee8142164baac43126f1"
+    },
+    "print_6x9_pdf.pdf": {
+      "bytes": 2491265,
+      "sha256": "1a83ecd707756a09efe2c84e939009b2ae052a524e5bdeb6f6cbafd73663f9e4"
+    },
+    "workbook_pdf.pdf": {
+      "bytes": 548977,
+      "sha256": "bc18df8dc34541ea6cd8d736c82a890c4603e3b350920ea3d67d2f4c4e22f303"
+    },
+    "book.epub": {
+      "bytes": 358926,
+      "sha256": "d3c039c6c8f8966456522535d0fa59b7e0965afdd37888aae0f97e80e7945851"
+    },
+    "art/cover.svg": {
+      "bytes": 3645,
+      "sha256": "eb353925e54524021579afe5ac6a19296369286cb2a5293c1a8feede7c94ab0a"
+    },
+    "art/scorecard.svg": {
+      "bytes": 195913,
+      "sha256": "8b60f97cd460d34e30ba0162b7c7b586b951c475787f54e607a17683fe9b6eee"
+    },
+    "art/diag_01.svg": {
+      "bytes": 10829,
+      "sha256": "61b9563f0f8864d51bfb0e63f85628524f15b902100bd503bebd6796aa080b53"
+    },
+    "art/diag_02.svg": {
+      "bytes": 8323,
+      "sha256": "231019365cdf0755d59db9c7f4a6efb4d94b3e7e0a10f7da56b050fba855b165"
+    },
+    "art/diag_03.svg": {
+      "bytes": 12506,
+      "sha256": "8f1dedb712f89f2e4b5ad02a84b4e925cc29aac1152916d1dbe13bf7d9832343"
+    },
+    "art/diag_04.svg": {
+      "bytes": 9716,
+      "sha256": "bdd6001665327672a527feb5cfa8ff0aa44731cce8372b28d3b428b6ee05670d"
+    },
+    "art/diag_05.svg": {
+      "bytes": 10423,
+      "sha256": "cecc8e87125f5aa51a9808be61a3aaa13a18d86c45ac5ad619d0fcceac5d52eb"
+    },
+    "art/diag_06.svg": {
+      "bytes": 12359,
+      "sha256": "a366723f2e093f482985564e53e5ba32f890e736915731db3a0fa45bf7115e75"
+    },
+    "art/diag_07.svg": {
+      "bytes": 9270,
+      "sha256": "9dee868e58390dbd943cb63ea908d276857289f1841662061d9be59ad109e8e9"
+    },
+    "art/diag_08.svg": {
+      "bytes": 9188,
+      "sha256": "9d01fc61b2b043f73d7a8e14d669898140579042f4391f73e9c8ea70a1d24d60"
+    }
+  }
+}

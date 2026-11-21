@@ -11,7 +11,8 @@
     "vol-004-ai-powered-micro-saas",
     "vol-005-high-ticket-affiliate-marketing",
     "vol-006-productized-ai-agencies",
-    "vol-007-unclaimed-property-recovery"
+    "vol-007-unclaimed-property-recovery",
+    "vol-008-commercial-lead-generation"
   ],
   "editorial_tracks": {
     "track_1": {
@@ -9321,7 +9322,7 @@
       "slug": "commercial-lead-generation",
       "title": "Commercial Lead Generation",
       "category": "B2B marketing services",
-      "production_stage": "candidate_scored",
+      "production_stage": "approved_master",
       "scores": {
         "revenue_potential": 21,
         "profit_margin_potential": 21,
@@ -9338,11 +9339,11 @@
       },
       "total_score": 85,
       "tier_label": "Elite Small-Team Cash Machine",
-      "evidence_confidence": "Moderate",
-      "uncertainty_band": "±6 pts",
+      "evidence_confidence": "High",
+      "uncertainty_band": "±3 pts",
       "uncertainty_bounds": {
-        "low": 79,
-        "high": 91
+        "low": 82,
+        "high": 88
       },
       "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
       "score_rationale": {
@@ -23574,5 +23575,5 @@
       "min_expert_youtube_links_per_chapter": 12
     }
   ],
-  "generated_at": "2026-11-21T20:51:34Z"
+  "generated_at": "2026-11-21T21:09:13Z"
 }
