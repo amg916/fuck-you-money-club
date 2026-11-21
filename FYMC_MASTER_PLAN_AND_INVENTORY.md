@@ -186,6 +186,7 @@ The thirty-five mapped plays (`Track 01 + Track 02`) are `parasitic_seo`, `compe
 | **Vol. 021** | **Automated E-Commerce** (`#021`, `70/100`) | `75,909` (`2,280–2,494`/ch) | `48` tables / `341` rows (`10.60` w/cell) | `48` (`12` callouts) | `180` links / `178` videos (`178` harvested) | `18` plays | `230`p Dig / `371`p Print / `85`p WB (`6,969`w) |
 | **Vol. 022** | **Medical Equipment Resale** (`#022`, `64/100`) | `75,959` (`2,229–2,477`/ch) | `48` tables / `341` rows (`9.76` w/cell) | `48` (`12` callouts) | `180` links / `175` videos (`175` harvested) | `3` plays | `225`p Dig / `365`p Print / `85`p WB (`6,869`w) |
 | **Vol. 023** | **Mineral Rights** (`#023`, `63/100`) | `77,054` (`2,315–2,538`/ch) | `48` tables / `336` rows (`10.83` w/cell) | `48` (`12` callouts) | `180` links / `175` videos (`175` harvested) | `5` plays | `228`p Dig / `370`p Print / `84`p WB (`7,041`w) |
+| **Vol. 024** | **Tax Lien Investing** (`#024`, `62/100`) | `76,601` (`2,296–2,463`/ch) | `48` tables / `322` rows (`10.64` w/cell) | `48` (`12` callouts) | `180` links / `175` videos (`175` harvested) | `4` plays | `230`p Dig / `369`p Print / `84`p WB (`7,168`w) |
 
 ### Built-Volume Unit Economics
 
@@ -263,7 +264,7 @@ Source of truth: [`publishing/catalog/pipeline_29_candidates.json`](publishing/c
 | **#21** | **Automated E-Commerce** *(Vol. 021 Built & QA-Verified)* | Online retail | **70/100** (`±6` Mod) | `23/13/14/8/12` | 5 (`2 FT + 3 C`) | \$250k–\$2.0M | \$12,500–\$360,000 | T2, T1 | `18` |
 | **#22** | **Medical Equipment Resale** *(Vol. 022 Built & QA-Verified)* | Equipment trading | **64/100** (`±6` Mod) | `21/16/13/6/8` | 6 (`2 FT + 4 C`) | \$250k–\$1.8M | \$25,000–\$396,000 | T1, T2 | `3` |
 | **#23** | **Mineral Rights** *(Vol. 023 Built & QA-Verified)* | Resource assets | **63/100** (`±6` Mod) | `20/17/16/3/7` | 4 (`1 FT + 3 C`) | \$30k–\$400k | \$6,000–\$180,000 | T1, T2 | `5` |
-| **#24** | **Tax Lien Investing** | Asset investing | **62/100** (`±6` Mod) | `17/15/17/5/8` | 3 (`1 FT + 2 C`) | \$15k–\$180k | \$4,500–\$99,000 | T1, T2 | `4` |
+| **#24** | **Tax Lien Investing** *(Vol. 024 Built & QA-Verified)* | Asset investing | **62/100** (`±6` Mod) | `17/15/17/5/8` | 3 (`1 FT + 2 C`) | \$15k–\$180k | \$4,500–\$99,000 | T1, T2 | `4` |
 | **#25** | **Freight Brokerage** | Logistics | **62/100** (`±6` Mod) | `23/10/10/7/12` | 5 (`3 FT + 2 C`) | \$1.0M–\$5.0M | \$30,000–\$400,000 | T1 | `8` |
 | **#26** | **Government Surplus Auctions** | Surplus asset trading | **62/100** (`±6` Mod) | `20/14/12/8/8` | 5 (`2 FT + 3 C`) | \$150k–\$1.0M | \$12,000–\$200,000 | T1, T2 | `6` |
 | **#27** | **Business Acquisition** | Operating ownership | **57/100** (`±6` Mod) | `24/16/7/2/8` | 10 (`7 FT + 3 C`) | \$750k–\$3.0M | \$60,000–\$540,000 | T1, T2 | `7` |

@@ -1,0 +1,328 @@
+{
+  "diagrams": [
+    {
+      "diagram_id": "diag-01-certificate-to-realized-cash",
+      "chart_type": "process_flow",
+      "title": "From County Inventory to Realized Cash",
+      "subtitle": "Five operating steps keep invested principal separate from earnings.",
+      "chapter_number": 1,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Applies to statutory certificates and separately classified redeemable deeds. County procedures control execution. The canonical time to first deal is 6–36 months; completing research or registering for an auction does not establish an earned return.",
+      "caption": "Track each parcel from original county record through bank settlement. Returned principal replenishes investment capital; only realized interest, penalties, and disposition gains enter the revenue scorecard.",
+      "stages": [
+        {
+          "label": "Source official inventory",
+          "value": "County records before auction marketing",
+          "numeric_value": 1.0,
+          "detail": "Download the county treasurer or tax collector sale file, preserve its publication date, and cross-check parcel identifiers against assessor GIS and recorder records. Record whether the asset is a certificate or a redeemable deed."
+        },
+        {
+          "label": "Underwrite parcel and procedure",
+          "value": "Title, access, value, and statutory clock",
+          "numeric_value": 2.0,
+          "detail": "Have the title contractor review recorded interests, access, parcel usability, and competing taxes. Local counsel maps redemption and enforcement requirements; PACER checks support bankruptcy review under 11 U.S.C. section 362."
+        },
+        {
+          "label": "Price and acquire",
+          "value": "Bid ceiling includes trapped-cash exposure",
+          "numeric_value": 3.0,
+          "detail": "Model the actual interest-bearing base, auction premium, fees, subsequent taxes, and collection delay. Apply the auction's bid-down or premium rules rather than bidding from a headline statutory rate."
+        },
+        {
+          "label": "Service and reconcile",
+          "value": "Track redemption without counting accruals",
+          "numeric_value": 4.0,
+          "detail": "Use a SQLite parcel register and scheduled calendar alerts for receipts, statutory dates, and subsequent tax decisions. Match county statements to bank activity and flag overdue events for human review."
+        },
+        {
+          "label": "Redeem or resolve",
+          "value": "Separate principal, earnings, costs, and surplus",
+          "numeric_value": 5.0,
+          "detail": "Post returned principal to the investment ledger and realized earnings to revenue. Route nonredemption through counsel-led enforcement or loss resolution; a property transfer alone is not a realized disposition gain, and restricted surplus is not operator revenue."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-02-auction-underwriting-cohort",
+      "chart_type": "funnel",
+      "title": "A Narrowing Auction Cohort",
+      "subtitle": "One acquisition cohort, five nested stages, and explicit rejection.",
+      "chapter_number": 6,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Illustrative counts represent the same candidate pool, not historical conversion evidence. Every later stage is a subset of the preceding stage. Twenty acquisitions at an average $37,500 all-in basis use the $750,000 acquisition bucket in the $1,000,000 capital illustration; this is not a 30-day target.",
+      "caption": "Screening automation reduces manual review volume. It does not turn title exceptions into clean assets or convert acquired certificates into certain redemptions.",
+      "stages": [
+        {
+          "label": "Published sale candidates",
+          "value": "1,000 entries form the starting cohort",
+          "numeric_value": 1000.0,
+          "detail": "Import 1,000 county sale entries into one dated cohort. Retain withdrawn and duplicate entries as excluded records so the original denominator remains auditable."
+        },
+        {
+          "label": "Desktop-qualified parcels",
+          "value": "300 remain; 30% of starting entries",
+          "numeric_value": 300.0,
+          "detail": "Retain 300 candidates after removing duplicates, withdrawals, unusable parcel fragments, inaccessible land, and assets outside the selected county strategy."
+        },
+        {
+          "label": "Title-reviewed candidates",
+          "value": "120 remain; 40% of desktop-qualified parcels",
+          "numeric_value": 120.0,
+          "detail": "Advance 120 of the 300 desktop survivors after recorded interest review, bankruptcy checks, and counsel's identification of the applicable redemption procedure."
+        },
+        {
+          "label": "Price-qualified bid plans",
+          "value": "40 remain; one-third of reviewed candidates",
+          "numeric_value": 40.0,
+          "detail": "Approve internal bid plans for 40 of the 120 reviewed candidates after modeling premiums, taxes, duration, loss exposure, and portfolio concentration limits."
+        },
+        {
+          "label": "Funded acquisitions",
+          "value": "20 acquired; 50% of price-qualified plans",
+          "numeric_value": 20.0,
+          "detail": "Acquire 20 of the 40 planned bids without exceeding individual price ceilings. The resulting 2% overall conversion measures purchase selection, not redemption probability or future investment profitability."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-03-base-case-owner-profit",
+      "chart_type": "waterfall",
+      "title": "Base Case: $97,500 Revenue to 42.5% Owner Net",
+      "subtitle": "Opening gross revenue, four deductions, and one closing total.",
+      "chapter_number": 3,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Canonical annual revenue and margin are fixed; expense categories are an illustrative allocation of their difference. The first bar is the opening total, the middle four are signed deltas, and the sixth is the closing total, not another delta. Recurring overhead plus contractors equals $36,000 annually or $3,000 monthly, inside the $500–$4,000 monthly opex range. Deal-specific costs and realized capital losses are separate.",
+      "caption": "$97,500 - $24,000 - $12,000 - $10,500 - $9,562.50 = $41,437.50, exactly 42.5% of revenue and displayed as $41,438 annual owner net profit. The owner works the core full-time seat; no additional owner salary is deducted. Returned principal never enters the opening revenue bar.",
+      "stages": [
+        {
+          "label": "Realized operator revenue",
+          "value": "$97,500 annual gross; principal receipts excluded",
+          "numeric_value": 97500.0,
+          "detail": "Opening total contains realized interest, penalties, and positive disposition gains. Gross property sale proceeds and recovered certificate basis are not recognized as revenue in this operator scorecard."
+        },
+        {
+          "label": "Recurring operating overhead",
+          "value": "Subtract $24,000 annual recurring operating overhead",
+          "numeric_value": -24000.0,
+          "detail": "Allocate $2,000 monthly to portfolio administration, data access, insurance, bookkeeping, secure records, and servicing systems; contractor retainers are separately shown in the next deduction."
+        },
+        {
+          "label": "Two contracted core seats",
+          "value": "Subtract $12,000 annual contractor retainer expense",
+          "numeric_value": -12000.0,
+          "detail": "Budget $6,000 annually for title review retainers and $6,000 for local counsel retainers. These are limited service budgets, not full-time salaries; exceptional matter charges belong in deal-specific expenses."
+        },
+        {
+          "label": "Deal-specific execution costs",
+          "value": "Subtract $10,500 in nonrecurring transaction costs",
+          "numeric_value": -10500.0,
+          "detail": "Allocate auction charges, targeted parcel inspections, recording expenses, incremental notices, and exceptional legal work here. Exclude costs already deducted when calculating a disposition gain to prevent double counting."
+        },
+        {
+          "label": "Realized capital losses",
+          "value": "Subtract $9,562.50 of unrecovered investment basis",
+          "numeric_value": -9562.5,
+          "detail": "Recognize documented unrecovered basis from resolved loss positions. Do not expense every principal purchase or treat principal repayment as income; a cash reserve transfer alone does not establish a realized loss."
+        },
+        {
+          "label": "Annual owner net profit",
+          "value": "$41,437.50 exact; $41,438 rounded annual owner net",
+          "numeric_value": 41437.5,
+          "detail": "Closing total equals $97,500 multiplied by 42.5%. This is owner operating profit before personal income tax, with no leverage or separate owner salary modeled."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-04-realized-cash-yield-mechanics",
+      "chart_type": "horizontal_bars",
+      "title": "Five Investment Bases, Five Cash-Yield Outcomes",
+      "subtitle": "Compare realized cash divided by invested cash, not headline rates.",
+      "chapter_number": 2,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "All bars are independent transaction illustrations, not portfolio forecasts or components of the canonical revenue scenarios. Numeric values are realized cash-yield percentages before expenses and taxes. Certificate examples assume one year outstanding; the Texas example is one redemption event within its applicable 180-day period and is not annualized.",
+      "caption": "The investment denominator matters as much as the rate. Certificate interest, auction premiums, and redeemable-deed payments follow different rules; verify the applicable statute and county settlement calculation before committing funds.",
+      "stages": [
+        {
+          "label": "Florida certificate at 6%",
+          "value": "6.0% cash yield on $10,000 invested",
+          "numeric_value": 6.0,
+          "detail": "Assume a $10,000 certificate acquired at a 6% auction rate and redeemed after one year: $600 realized interest divided by $10,000 invested. Apply Florida Statutes sections 197.432 and 197.472, including redemption-specific calculation rules."
+        },
+        {
+          "label": "Arizona certificate at 8%",
+          "value": "8.0% cash yield on $10,000 invested",
+          "numeric_value": 8.0,
+          "detail": "Assume a $10,000 interest-bearing certificate at an 8% bid rate for one year: $800 divided by $10,000. Arizona Revised Statutes sections 42-18114 and 42-18153 govern bid rates and redemption amounts; actual statutory month counting controls settlement."
+        },
+        {
+          "label": "New Jersey certificate at 4%",
+          "value": "4.0% interest-only yield before separate redemption charges",
+          "numeric_value": 4.0,
+          "detail": "Assume a $10,000 certificate bought without a premium at 4% and redeemed after one year. Interest alone contributes $400; separately analyze additional redemption amounts under N.J.S.A. 54:5-32 and 54:5-61 rather than adding them to the bid rate."
+        },
+        {
+          "label": "New Jersey premium-funded certificate",
+          "value": "2.0% interest-only yield on $20,000 committed",
+          "numeric_value": 2.0,
+          "detail": "Assume the same $10,000 certificate at 4% requires a separate $10,000 auction premium. Its $400 interest divided by $20,000 committed yields 2%; premium return, forfeiture, and holding rules require separate review under N.J.S.A. 54:5-33."
+        },
+        {
+          "label": "Texas nonhomestead redeemable deed",
+          "value": "25.0% event yield; no annualized comparison implied",
+          "numeric_value": 25.0,
+          "detail": "Assume a qualifying nonhomestead, nonagricultural property under Texas Tax Code section 34.21(e), with $10,000 total qualifying expenditure and timely redemption. A 25% premium produces $2,500; this is a statutory redemption payment, not annual interest."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-05-statutory-risk-preflight",
+      "chart_type": "decision_tree",
+      "title": "Four Checks Before Capital Moves",
+      "subtitle": "Every failed branch stops the bid or the proposed enforcement step.",
+      "chapter_number": 5,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Read these as ordered checks: passing advances to the next check; failing produces the stated stop action. Numeric values are layout weights, not probabilities. Re-run relevant checks before enforcement because bankruptcy, title, and statutory facts can change after purchase.",
+      "caption": "Local auction eligibility, rate limits, notice procedures, and redemption rights control the investment. A successful auction bid does not resolve title defects or authorize retaining another party's protected surplus.",
+      "stages": [
+        {
+          "label": "Eligibility and auction mechanics",
+          "value": "Pass documented authority; otherwise do not bid",
+          "numeric_value": 1.0,
+          "detail": "Verify bidder registration, deposits, payment deadlines, asset type, and rate or premium rules against the current county packet and governing statute. If any material rule is unresolved, remove the parcel from the live bid list."
+        },
+        {
+          "label": "Title, stays, and federal interests",
+          "value": "Pass counsel review; otherwise suspend affected action",
+          "numeric_value": 1.0,
+          "detail": "Review recorded liens, ownership, access, and bankruptcy status. Counsel evaluates 11 U.S.C. section 362 and federal lien notice or redemption issues under 26 U.S.C. section 7425; a recorder search alone does not establish that enforcement may proceed."
+        },
+        {
+          "label": "Redemption, notice, and surplus",
+          "value": "Pass lawful procedure; otherwise redesign the exit",
+          "numeric_value": 1.0,
+          "detail": "Map the jurisdiction's redemption period, required notices, foreclosure procedure, and surplus distribution. Apply Tyler v. Hennepin County, 598 U.S. 631 (2023), to the relevant government-taking issue without assuming identical rules for every private certificate."
+        },
+        {
+          "label": "Loss capacity and bid economics",
+          "value": "Pass funded downside; otherwise reduce bid or reject",
+          "numeric_value": 1.0,
+          "detail": "Stress delayed redemption, unusable collateral, subsequent taxes, counsel expense, and capital loss. Reject positions whose loss exposure or cash demands exceed funded reserves; a large statutory rate cannot repair defective collateral or an excessive premium."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-06-core-and-scaled-pod",
+      "chart_type": "org_architecture",
+      "title": "Three Core Seats, Five at Scale",
+      "subtitle": "The principal owns capital decisions; specialists own defined work.",
+      "chapter_number": 11,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "FT means full-time and C means contractor. Conservative and Base use 1 FT + 2 C, totaling three people. Scaled uses 2 FT + 3 C, totaling five people. The principal remains the investment decision owner in both structures.",
+      "caption": "Canonical annual outcomes: Conservative $15,000 gross at 30% margin yields $4,500 owner net; Base $97,500 gross at 42.5% yields $41,438 rounded owner net; Scaled $180,000 gross at 55% yields $99,000 owner net. All gross figures exclude returned principal, and the scaled result uses five people.",
+      "stages": [
+        {
+          "label": "Principal investor",
+          "value": "Core seat one: full-time capital decision owner",
+          "numeric_value": 1.0,
+          "detail": "Sets county coverage, concentration limits, bid ceilings, reserve policy, and acquisition decisions. Reviews cash reconciliation and maintains the distinction between invested basis, recovered principal, realized revenue, and owner profit."
+        },
+        {
+          "label": "Title and parcel reviewer",
+          "value": "Core seat two: contracted title research specialist",
+          "numeric_value": 1.0,
+          "detail": "Reports recorded interests, legal-description mismatches, access issues, parcel fragmentation, and unresolved exceptions. Delivers dated evidence packets rather than treating assessor records as proof of clear title."
+        },
+        {
+          "label": "Local enforcement counsel",
+          "value": "Core seat three: contracted jurisdiction-specific counsel",
+          "numeric_value": 1.0,
+          "detail": "Owns legal interpretation, notice sequencing, stay analysis, federal lien issues, enforcement filings, and surplus treatment. Distinguishes ordinary retainer work from separately budgeted litigation."
+        },
+        {
+          "label": "Portfolio operations lead",
+          "value": "Scaled seat four: second full-time operating seat",
+          "numeric_value": 1.0,
+          "detail": "Added only in the five-person model. Maintains the SQLite portfolio register, redemption calendar, bank matching, document versioning, and overdue exception queue; the principal retains capital authority."
+        },
+        {
+          "label": "Auction and field analyst",
+          "value": "Scaled seat five: third contracted specialist seat",
+          "numeric_value": 1.0,
+          "detail": "Added only in the five-person model. Cleans auction files, verifies property conditions, collects local sale evidence, and documents inspection exceptions without substituting desktop estimates for title review."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-07-startup-capital-allocation",
+      "chart_type": "stacked_comparison",
+      "title": "Capital Is Inventory and Runway, Not Revenue",
+      "subtitle": "Four buckets allocate a $1,000,000 startup illustration.",
+      "chapter_number": 4,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Numeric values are dollar allocations totaling $1,000,000, within the canonical $100,000–$1,500,000 startup range. Allocation shares are 75%, 10%, 10%, and 5%. Endpoint comparisons apply those shares mechanically, not as forecasts. Capital allocation alone does not generate the canonical Conservative, Base, or Scaled revenue outcomes.",
+      "caption": "The $750,000 acquisition bucket matches the illustrative twenty-position funnel. The $50,000 operating reserve covers about 16.7 months of the Base illustration's $3,000 recurring monthly spend, not the entire possible 36-month deal timeline.",
+      "stages": [
+        {
+          "label": "Acquisition principal and premiums",
+          "value": "$750,000 allocated; 75% of startup capital",
+          "numeric_value": 750000.0,
+          "detail": "Fund certificate principal or deed purchase basis and any required premium without counting purchases as revenue. At $100,000 total capital this bucket is $75,000; at $1,500,000 it is $1,125,000."
+        },
+        {
+          "label": "Parcel diligence and enforcement reserve",
+          "value": "$100,000 allocated; 10% of startup capital",
+          "numeric_value": 100000.0,
+          "detail": "Hold cash for inspections, title work, recording, notices, and exceptional enforcement matters. Reserve funding is not an immediate expense. Endpoint allocations are $10,000 and $150,000 respectively."
+        },
+        {
+          "label": "Liquidity and subsequent-tax reserve",
+          "value": "$100,000 allocated; 10% of startup capital",
+          "numeric_value": 100000.0,
+          "detail": "Preserve uncommitted liquidity for delayed redemptions and underwritten subsequent-tax decisions. Do not assume every additional tax payment earns interest or preserves priority. Endpoint allocations are $10,000 and $150,000 respectively."
+        },
+        {
+          "label": "Operating cash runway",
+          "value": "$50,000 allocated; 5% of startup capital",
+          "numeric_value": 50000.0,
+          "detail": "Fund recurring administration and contractor retainers while investment cash remains tied up. Endpoint allocations are $5,000 and $75,000; at the lower endpoint, size spend and commitments to available runway rather than assuming Base-case overhead fits."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-08-first-thirty-days",
+      "chart_type": "timeline_roadmap",
+      "title": "Thirty Days to a Documented Investment Process",
+      "subtitle": "Build the operating system before expecting investment proceeds.",
+      "chapter_number": 12,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Four consecutive work periods cover Days 1–30. Numeric values are each period's ending day, not revenue or deal counts. The canonical first-deal window remains 6–36 months; the sprint produces diligence and operating artifacts rather than promising an acquisition, redemption, or foreclosure.",
+      "caption": "A completed sprint leaves a traceable county rulebook, tested parcel records, conservative bid worksheets, and a funded cash plan. An unsuitable auction remains a valid reason to finish the month without deploying acquisition capital.",
+      "stages": [
+        {
+          "label": "Days 1-7",
+          "value": "Choose one jurisdiction and document its rules",
+          "numeric_value": 7.0,
+          "detail": "Select one county and asset type. Archive its official auction packet, registration instructions, payment requirements, redemption statute, and enforcement procedure. Ask local counsel to identify notice, bankruptcy, federal lien, and surplus issues."
+        },
+        {
+          "label": "Days 8-14",
+          "value": "Build and test the parcel evidence register",
+          "numeric_value": 14.0,
+          "detail": "Create a SQLite register keyed by county and parcel identifier. Import one published sale file, retain source dates, and manually audit twenty records against assessor GIS, recorder documents, and counsel's title-review requirements."
+        },
+        {
+          "label": "Days 15-21",
+          "value": "Model bids, reserves, and delayed cash recovery",
+          "numeric_value": 21.0,
+          "detail": "Create spreadsheet bid worksheets separating principal, premiums, interest-bearing amounts, fees, and taxes. Stress redemption at 6, 18, and 36 months where legally relevant, plus capital loss; test reserve adequacy without assuming immediate owner distributions."
+        },
+        {
+          "label": "Days 22-30",
+          "value": "Rehearse execution and verify cash classifications",
+          "numeric_value": 30.0,
+          "detail": "Run a mock auction against documented bid ceilings, test redemption alerts, and reconcile sample receipts into principal and earnings. Confirm contractor scope, payment procedures, and record retention; fund a real purchase only when its specific checks pass."
+        }
+      ]
+    }
+  ]
+}

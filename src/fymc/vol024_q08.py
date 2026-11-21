@@ -1,0 +1,738 @@
+from __future__ import annotations
+
+CHAPTER_8 = {
+    "id": "Q8",
+    "chapter_id": "Q8",
+    "chapter_number": 8,
+    "question_number": 8,
+    "slug": "public-records-apis-data-pipelines-operator-tooling",
+    "question_prompt": "Which exact public registries, government databases, commercial APIs, enrichment waterfalls, and diagnostic tools give a small tax lien investing desk an unfair information edge?",
+    "kicker": "Q8 / THE BIG MONEY PLAYBOOKS",
+    "title": "Public Records, APIs, Data Pipelines & Operator Tooling",
+    "subtitle": "County Certificate Rolls, Recorder Chains, PACER, Parcel APIs, Bid-Down Engines & Post-Tyler Surplus Controls",
+    "layout_template": "resource_directory",
+    "reading_time_minutes": 14,
+    "executive_summary": (
+        "Candidate #3, Tax Lien Investing, ranks #24 with a Money-to-Manpower Score of "
+        "62/100. This chapter maps four desk plays: certificate auction screening, "
+        "bid-down underwriting, redemption servicing, and post-Tyler resolution. "
+        "The information edge comes from joining authoritative certificate records "
+        "to parcel histories, recorded instruments, court events, and dated payment "
+        "instructions, then buying commercial enrichment only where uncertainty "
+        "changes the bid. A 1 FT + 2 C pod can run that waterfall without confusing "
+        "automation with authority. Annual owner net profit remains $4,500 "
+        "Conservative, $41,438 Base, and $99,000 Scaled; returned principal never "
+        "becomes operator revenue. The directory below specifies access paths, "
+        "cost structures, freshness checks, request discipline, and practical "
+        "fallbacks for a reproducible small-desk operating system."
+    ),
+    "key_metrics": [
+        {
+            "label": "Conservative",
+            "value": "$15,000",
+            "context": "Annual realized interest, penalties and disposition gains; excludes returned principal",
+            "note": "30% net margin; $4,500 annual owner net profit; 1 FT + 2 C",
+        },
+        {
+            "label": "Base",
+            "value": "$97,500",
+            "context": "Annual realized interest, penalties and disposition gains; excludes returned principal",
+            "note": "42.5% net margin; $41,438 annual owner net profit; 1 FT + 2 C",
+        },
+        {
+            "label": "Scaled",
+            "value": "$180,000",
+            "context": "Annual realized interest, penalties and disposition gains; excludes returned principal",
+            "note": "55% net margin; $99,000 annual owner net profit; 2 FT + 3 C",
+        },
+    ],
+    "sections": [
+        {
+            "heading": "1. Build the authoritative source map before buying enrichment",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Start with the legal instrument, not a national property search. "
+                    "A Florida tax certificate, an Arizona certificate of purchase, "
+                    "and a Texas redeemable tax deed require different clocks, "
+                    "cash-flow fields, and resolution procedures. Create one "
+                    "jurisdiction profile per county, recording the collecting "
+                    "officer, auction contractor, registration requirements, current "
+                    "rules, payment cutoff, redemption contact, and source of "
+                    "recorded instruments. Florida Statutes sections 197.432 and "
+                    "197.472 govern certificate sales and redemption mechanics; "
+                    "Arizona Revised Statutes sections 42-18114 and 42-18153 address "
+                    "interest bidding and redemption. Texas Tax Code section 34.21 "
+                    "instead supplies property-dependent redemption periods and "
+                    "redemption-premium mechanics. Store those provisions beside "
+                    "the county instructions rather than flattening everything "
+                    "into an interest-rate column. For Candidate #3, this chapter "
+                    "maps four operator plays: certificate auction screening, "
+                    "bid-down underwriting, redemption servicing, and post-Tyler "
+                    "resolution. Each play consumes the same evidence ledger but "
+                    "produces a different decision. Screening removes unsuitable "
+                    "instruments; underwriting prices the surviving exposure; "
+                    "servicing verifies cash and deadlines; resolution determines "
+                    "the lawful next action when redemption does not arrive. "
+                    "The full-time owner controls that ledger, while the two "
+                    "contractors supply parcel research and jurisdiction-specific "
+                    "title or procedural work."
+                ),
+                (
+                    "The directory gives starting addresses and access paths, not "
+                    "a promise that every county exposes a stable API. Follow "
+                    "links from the current county website before entering bidder "
+                    "credentials or wiring funds; a familiar vendor name does not "
+                    "authenticate a payment destination. Record retrieval time "
+                    "separately from the source's effective date. An auction CSV "
+                    "downloaded today can still reflect yesterday's cancellations, "
+                    "while a recorder index can lag the receipt of a document. "
+                    "The refresh intervals below are desk polling targets unless "
+                    "a publisher supplies a release timestamp; they are not "
+                    "publisher service commitments. Treat prices similarly: free "
+                    "public access can coexist with charges for certified copies, "
+                    "bulk delivery, commercial reuse, or contractor labor. "
+                    "Contract-priced services require a written quote covering "
+                    "query volume, retained fields, storage rights, and historical "
+                    "coverage. Use conditional requests only where supported, "
+                    "honor published quotas and Retry-After headers, and stop "
+                    "automation when access controls prohibit it. A manual "
+                    "download is often the correct production interface for a "
+                    "three-person desk. The fallback must preserve authority: "
+                    "a collector's redemption confirmation outranks an aggregator's "
+                    "status flag, and an instrument image outranks a summarized "
+                    "ownership label."
+                ),
+                (
+                    "Maintain a source register with owner, purpose, authentication "
+                    "method, permitted use, update evidence, retention period, and "
+                    "fallback contact. Separate discovery from dispositive evidence. "
+                    "ATTOM and Regrid can accelerate parcel matching, but neither "
+                    "replaces the certificate ledger, legal description, or "
+                    "recorded chain. OpenCorporates can suggest an entity identifier; "
+                    "the relevant secretary of state supplies the authoritative "
+                    "entity record. FEMA flood layers and EPA ECHO records flag "
+                    "exposure, not a complete physical or environmental evaluation. "
+                    "PACER reveals federal litigation and bankruptcy filings, but "
+                    "a name hit needs identity resolution and a current docket "
+                    "review. Build a short source packet for each shortlisted "
+                    "certificate: original sale row, parcel map, collector balance, "
+                    "recorded deed reference, relevant instruments, and unresolved "
+                    "exceptions. The research contractor prepares it; the owner "
+                    "checks instrument identity; the title or procedural contractor "
+                    "handles escalated defects. Save public records only to "
+                    "project storage with role-based access, and avoid distributing "
+                    "owner contact details beyond the task. This division keeps "
+                    "the Conservative and Base pod at 1 FT + 2 C while preserving "
+                    "a defensible trail from raw source to capital decision. "
+                    "At scale, add capacity without changing the evidence hierarchy."
+                ),
+            ],
+            "table": {
+                "caption": "Eighteen named sources: access, cost structure, freshness discipline, and authoritative fallbacks",
+                "headers": [
+                    "Named source and exact access starting point",
+                    "Decision evidence and practical access method",
+                    "Cost tier and desk refresh target",
+                    "Request discipline and source latency verification",
+                    "Fallback evidence when the interface fails",
+                ],
+                "rows": [
+                    [
+                        "Miami-Dade Tax Collector: https://www.miamidade.gov/global/taxcollector/home.page",
+                        "Follow property-tax and certificate-sale links; download offered rolls and current bidder instructions.",
+                        "Public research access is free; check auction terms for separate fees; refresh daily during sale preparation.",
+                        "Use published exports before interactive searches; record roll dates and recheck withdrawals before bidding.",
+                        "Request the current certificate ledger and payment instructions directly from the collector's office.",
+                    ],
+                    [
+                        "Maricopa County Treasurer: https://treasurer.maricopa.gov/",
+                        "Use parcel inquiry and tax-lien sale navigation for balances, certificates, and official auction links.",
+                        "Public inquiry is free; obtain current copy charges; refresh shortlisted balances before each decision.",
+                        "Avoid unattended form scraping without permission; distinguish inquiry timestamps from posted payment effective dates.",
+                        "Obtain a dated treasurer statement identifying certificate number, tax year, balance, and status.",
+                    ],
+                    [
+                        "Maricopa County Assessor: https://mcassessor.maricopa.gov/",
+                        "Search parcel identifiers and inspect parcel details, maps, situs addresses, and classification history.",
+                        "Public portal access is free; bulk products may have separate terms; check every shortlisted parcel.",
+                        "Use published data services where offered; read dataset dates because assessment updates are not transaction feeds.",
+                        "Ask assessor staff for parcel split history and the applicable historical assessment record.",
+                    ],
+                    [
+                        "Maricopa County Recorder: https://recorder.maricopa.gov/",
+                        "Search the recording index and retrieve available deeds, releases, assignments, and instrument references.",
+                        "Index access is public; copies and certification follow posted fees; refresh before material capital actions.",
+                        "Keep searches bounded by parties and dates; distinguish recording time from index publication latency.",
+                        "Order instrument copies from the recorder or commission a scoped title-company document search.",
+                    ],
+                    [
+                        "RealAuction auction platform: https://www.realauction.com/",
+                        "Identify the vendor, then enter the county-specific sale only through the official county link.",
+                        "Rules and catalogs may be public; deposits and bidder fees follow each sale's current terms.",
+                        "Use offered downloads and permitted sessions; follow sale notices rather than inventing a universal API.",
+                        "Confirm sale inventory, cancellations, settlement deadlines, and bidder eligibility with the collecting authority.",
+                    ],
+                    [
+                        "Palm Beach Clerk and Comptroller: https://www.mypalmbeachclerk.com/",
+                        "Navigate Official Records and tax-deed resources for instruments, sale documents, and relevant case references.",
+                        "Public browsing is generally free; document products carry posted charges; recheck before resolution spending.",
+                        "Observe portal restrictions; compare docket and instrument timestamps rather than assuming immediate indexing.",
+                        "Request certified records or a clerk-assisted search tied to the exact case and instrument.",
+                    ],
+                    [
+                        "Harris County Clerk real-property records: https://www.cclerk.hctx.net/",
+                        "Use Real Property navigation to examine recorded tax deeds and subsequent conveyance instruments.",
+                        "Search access and copy products follow posted terms; refresh deed evidence before redemption-related decisions.",
+                        "Use the supported search workflow; verify recording dates and request missing images instead of guessing.",
+                        "Order the recorded instrument directly and obtain separate tax-sale records from the responsible office.",
+                    ],
+                    [
+                        "PACER federal court records: https://pacer.uscourts.gov/",
+                        "Register for authorized case searches, resolve identities, then inspect the relevant court docket and filings.",
+                        "$0.10 per page generally applies; many documents cap at $3; quarterly charges of $30 or less are waived.",
+                        "Check current fee exceptions; restrict searches to identified parties and track filing versus retrieval dates.",
+                        "Contact the relevant bankruptcy clerk and have the procedural contractor verify current docket events.",
+                    ],
+                    [
+                        "FEMA National Flood Hazard Layer: https://msc.fema.gov/portal/home",
+                        "Use the Map Service Center or https://hazards.fema.gov/arcgis/rest/services/public/NFHL/MapServer for mapped hazard screening.",
+                        "Public maps and services are free; refresh shortlisted parcels when effective map revisions change.",
+                        "Inspect layer metadata and effective dates; limit spatial queries and honor service response constraints.",
+                        "Retrieve the effective flood panel and consult the local floodplain administrator about parcel interpretation.",
+                    ],
+                    [
+                        "EPA ECHO facility records: https://echo.epa.gov/tools/web-services",
+                        "Read documented web-service methods; search nearby regulated facilities and retain facility identifiers and coordinates.",
+                        "Public services are free; refresh during diligence and inspect each underlying program's data dates.",
+                        "Use bounded geography and documented parameters; cache responses and back off when service capacity declines.",
+                        "Review state environmental agency files and commission property-specific environmental work when exposure changes economics.",
+                    ],
+                    [
+                        "Census Geocoder service: https://geocoding.geo.census.gov/geocoder/",
+                        "Submit supported address or batch requests with explicit benchmark and vintage selections for reproducibility.",
+                        "Public access is free; geocode after address changes rather than repeatedly processing identical records.",
+                        "Respect documented batch limits; retain match quality because coordinate precision varies with source geography.",
+                        "Use the county parcel centroid and assessor map; manually inspect ambiguous or unmatched addresses.",
+                    ],
+                    [
+                        "ArcGIS REST parcel services: county GIS links ending in /arcgis/rest/services",
+                        "Discover the county's actual service, read layer metadata with f=pjson, and query stable parcel identifiers.",
+                        "Public layers often permit free access; licensing varies; refresh according to published edit timestamps.",
+                        "Read maxRecordCount and pagination capabilities; use bounded requests and never infer unpublished service addresses.",
+                        "Download the county's offered parcel file or request a licensed GIS extract with metadata.",
+                    ],
+                    [
+                        "ATTOM property-data API: https://www.attomdata.com/solutions/property-data-api/",
+                        "Request a commercial account and documented property endpoints; test county coverage against known parcel samples.",
+                        "Contract-priced access requires a written quote; purchase enrichment only after inexpensive exclusions pass.",
+                        "Follow account-specific quotas and caching rights; measure record age separately for each returned field.",
+                        "Return to assessor, recorder, and collector evidence for consequential ownership, lien, and balance decisions.",
+                    ],
+                    [
+                        "Regrid parcel API: https://regrid.com/api",
+                        "Obtain licensed API access for parcel geometries and attributes; retain provider identifiers beside county identifiers.",
+                        "Commercial plan pricing depends on rights and volume; enrich only selected geographic and bidding cohorts.",
+                        "Honor plan quotas and storage terms; inspect county-specific refresh metadata before accepting attribute changes.",
+                        "Use county GIS boundaries and assessor records; investigate mismatches before assigning certificates to parcels.",
+                    ],
+                    [
+                        "OpenCorporates company API: https://api.opencorporates.com/documentation",
+                        "Use documented company searches to identify likely jurisdictions and registration numbers for entity-owned parcels.",
+                        "Licensing depends on eligibility and use; obtain commercial terms before integrating production enrichment.",
+                        "Apply published account limits; record upstream source dates and verify same-name companies separately.",
+                        "Retrieve the entity's official secretary-of-state record and reconcile registration number, status, and recorded ownership.",
+                    ],
+                    [
+                        "USPS address lookup: https://tools.usps.com/zip-code-lookup.htm",
+                        "Use the interactive lookup for postal formatting checks; preserve the original recorded mailing address.",
+                        "Interactive lookup is free; check manually when formatting uncertainty could affect operational correspondence.",
+                        "Do not automate an interactive service without permission; postal formatting does not establish service sufficiency.",
+                        "Use recorded instruments and collector records; route statutory notice questions to the procedural contractor.",
+                    ],
+                    [
+                        "QGIS desktop verification: https://qgis.org/",
+                        "Install the official desktop release; overlay county parcels, flood layers, and dated aerial references.",
+                        "Software is free; analyst time and licensed layers cost money; review material geometry exceptions.",
+                        "Use cached local datasets where licensed; inspect coordinate systems and source dates before spatial joins.",
+                        "Compare the legal description with official plats and obtain survey assistance when boundaries remain consequential.",
+                    ],
+                    [
+                        "Florida Senate statute portal: https://www.flsenate.gov/Laws/Statutes",
+                        "Select the applicable year and Chapter 197; read sale, redemption, application, and distribution provisions together.",
+                        "Public access is free; review before entering a county and after relevant enacted changes.",
+                        "Save statute year and retrieval date; check effective amendments rather than treating codification as instantaneous.",
+                        "Consult enacted session laws, current county instructions, and jurisdiction-specific procedural review for timing conflicts.",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Buy certainty only where it changes the certificate decision",
+                "body": "The cheapest useful record is usually the authoritative record already available from the county.",
+                "items": [
+                    "Download the first auction roll and every permitted revision; diff certificate identifiers so withdrawals do not disappear into an overwritten spreadsheet.",
+                    "Ask the collector how parcel splits and certificate assignments appear in exports before building joins around a single parcel field.",
+                    "Purchase instrument images for shortlisted exposure rather than enriching every advertised certificate with a broad commercial package.",
+                    "Keep a dated written redemption quote separate from a portal balance; reconcile its validity window and included charges before acting.",
+                ],
+            },
+        },
+        {
+            "heading": "2. Run an evidence-first enrichment waterfall with reversible joins",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Use a small, inspectable data model rather than a sprawling "
+                    "property warehouse. A SQLite database can hold jurisdictions, "
+                    "parcels, parcel aliases, certificates, source documents, events, "
+                    "cash movements, and exceptions. Scope every certificate key "
+                    "to its issuing jurisdiction and preserve the issuer's "
+                    "identifier verbatim. A tax year and parcel number alone may "
+                    "not distinguish supplemental assessments, multiple instruments, "
+                    "or historical numbering changes. Store raw identifiers as "
+                    "text so leading zeros survive spreadsheet exports. Normalize "
+                    "spacing and punctuation into separate matching fields, never "
+                    "over the evidence itself. For each imported row, record "
+                    "source URL, retrieval timestamp, effective date when published, "
+                    "document hash, parser version, and original row number. "
+                    "Python's csv, json, hashlib, datetime, decimal, and sqlite3 "
+                    "modules are sufficient for this foundation. Store money as "
+                    "integer cents or exact decimal text; do not let binary "
+                    "floating-point rounding drive settlement comparisons. Keep "
+                    "the immutable downloaded file beside the normalized tables "
+                    "under a controlled retention policy. An updated collector "
+                    "record creates a new observation, not a silent replacement. "
+                    "The owner must be able to reconstruct what the desk knew "
+                    "when a bid was authorized and what changed afterward."
+                ),
+                (
+                    "The waterfall begins with free authoritative exclusions: "
+                    "withdrawn certificates, incompatible instrument types, missing "
+                    "parcel identity, unresolved sale eligibility, and payment "
+                    "deadlines the desk cannot meet. Next, join assessor and GIS "
+                    "records to examine land use, improvements, parcel size, and "
+                    "boundary continuity. Match the county identifier first; use "
+                    "legal descriptions and recorded references to investigate "
+                    "splits or mergers. Address similarity is supporting evidence, "
+                    "not a primary key. Only then buy commercial attributes that "
+                    "can change a bid or reduce expensive manual work. A property "
+                    "value estimate may support triage, but it cannot establish "
+                    "recoverable equity without senior interests, costs, condition, "
+                    "and the governing distribution rules. Escalate survivors to "
+                    "recorded-document review, bankruptcy checks, and targeted "
+                    "environmental or access investigation. Stop enrichment when "
+                    "a decisive defect appears; retain the rejection reason so "
+                    "the next sale does not trigger the same expense. Measure "
+                    "cost per accepted candidate and cost per funded certificate, "
+                    "not merely API cost per thousand records. For a 1 FT + 2 C "
+                    "pod, the research contractor works a bounded exception queue "
+                    "while the owner controls the purchase threshold and the "
+                    "specialist resolves instrument-level uncertainty."
+                ),
+                (
+                    "Attach freshness requirements to decisions rather than "
+                    "pretending that one daily refresh makes every field current. "
+                    "Parcel geometry changes infrequently, but withdrawals and "
+                    "redemption postings can invalidate a bid or notice immediately. "
+                    "Before submitting an auction instruction, recheck the sale "
+                    "status and the county's current settlement directions. Before "
+                    "spending on a collection or foreclosure step, recheck the "
+                    "certificate balance, redemption status, relevant docket, and "
+                    "procedural dates. Configure source-specific retry ceilings, "
+                    "bounded concurrency, and explicit timeouts. On an HTTP 429 "
+                    "response, honor Retry-After when present; otherwise use "
+                    "conservative exponential backoff with jitter and a stop "
+                    "condition. On authentication failure, stop and repair access "
+                    "rather than rotating identities or bypassing restrictions. "
+                    "Quarantine HTML error pages returned where a CSV was expected. "
+                    "Validate required headers, row counts, duplicate keys, monetary "
+                    "signs, date formats, and totals before promoting an import. "
+                    "A surprisingly clean empty file is a failure until confirmed. "
+                    "The production dashboard should show last successful retrieval, "
+                    "source effective date, rejected rows, unresolved joins, and "
+                    "the oldest actionable exception. Send the owner a compact "
+                    "failure digest instead of burying substantive breaks beneath "
+                    "routine success notifications."
+                ),
+            ],
+            "table": {
+                "caption": "Enrichment waterfall: spending thresholds, retained evidence, and accountable reviewers",
+                "headers": [
+                    "Waterfall stage and assigned operator responsibility",
+                    "Required evidence before advancing the candidate",
+                    "Failure condition and immediate desk response",
+                    "Economic control and retained audit artifact",
+                ],
+                "rows": [
+                    [
+                        "Owner imports the collector's current sale inventory and validates bidder eligibility.",
+                        "Preserve original certificate identifiers, sale date, instrument type, and current published settlement requirements.",
+                        "Reject withdrawn instruments and quarantine unsupported formats before any paid property lookup begins.",
+                        "Retain the original file and reconciliation totals; charge ingestion work to the research budget.",
+                    ],
+                    [
+                        "Research contractor resolves county parcel identity using assessor records and GIS.",
+                        "Confirm parcel identifiers, legal-description references, split history, and material geometry or land-use discrepancies.",
+                        "Hold ambiguous joins for manual investigation; never substitute the nearest matching street address.",
+                        "Retain match evidence and rejection reasons so subsequent auctions reuse resolved historical questions.",
+                    ],
+                    [
+                        "Owner authorizes targeted ATTOM or Regrid enrichment for economically viable survivors.",
+                        "Require a specific unresolved question, licensed retention rights, and a defined decision consequence.",
+                        "Stop purchases when source age or geographic coverage cannot answer the actual underwriting question.",
+                        "Track enrichment spending per funded certificate and preserve the provider's dated response metadata.",
+                    ],
+                    [
+                        "Title or procedural contractor reviews consequential instruments and relevant court records.",
+                        "Resolve identity, instrument scope, bankruptcy status, and jurisdiction-specific procedure before irreversible resolution spending.",
+                        "Suspend the affected action when a material defect or potentially applicable stay appears.",
+                        "Retain the scoped findings, supporting documents, reviewer identity, and next authorized procedural step.",
+                    ],
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Capture an immutable sale snapshot",
+                    "action": "Download the permitted collector export and save its instructions alongside it.",
+                    "detail": "Record retrieval time, published effective date, file hash, sale identifier, and source URL before parsing.",
+                },
+                {
+                    "step": 2,
+                    "title": "Validate and reconcile the import",
+                    "action": "Load rows into staging tables and compare counts, identifiers, and monetary totals.",
+                    "detail": "Reject malformed dates, duplicated instrument keys, missing required fields, and unexpected schema changes into a visible exception queue.",
+                },
+                {
+                    "step": 3,
+                    "title": "Resolve identity before purchasing attributes",
+                    "action": "Join county parcel evidence first, then buy only the enrichment needed for surviving decisions.",
+                    "detail": "Preserve aliases, confidence reasons, original documents, and a named reviewer for every consequential manual override.",
+                },
+                {
+                    "step": 4,
+                    "title": "Publish a decision packet and refresh its critical facts",
+                    "action": "Deliver the candidate packet to the owner and recheck time-sensitive sources before execution.",
+                    "detail": "Freeze the reviewed version, record subsequent changes as events, and block affected actions when authoritative evidence conflicts.",
+                },
+            ],
+        },
+        {
+            "heading": "3. Make bid-down diagnostics reconcile to realized revenue",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "Keep the underwriting engine separate from the source parser. "
+                    "The parser reports the advertised assessment, permitted bid "
+                    "increment, statutory rate framework, and auction-specific "
+                    "charges; the engine applies a versioned jurisdiction rule "
+                    "set to a proposed bid. Florida's certificate auction uses "
+                    "interest-rate bidding under section 197.432, while section "
+                    "197.472 includes redemption mechanics that require careful "
+                    "treatment of minimum charges and zero-percent certificates. "
+                    "Arizona has its own rate and accrual rules; do not copy "
+                    "Florida's calculation into an Arizona workbook. A Texas "
+                    "redemption premium under section 34.21 is not a quoted "
+                    "annual coupon, and its application depends on property "
+                    "classification, timing, and the statutory payment components. "
+                    "For every jurisdiction, test immediate redemption, partial "
+                    "calendar periods, the permitted zero-rate outcome, late "
+                    "posting, subsequent taxes, and reimbursable versus absorbed "
+                    "expenses. Use an independently checked example drawn from "
+                    "the current authority or a collector statement. Preserve "
+                    "both the contractual result and the cash date used for "
+                    "economic evaluation. An attractive nominal rate can produce "
+                    "poor realized economics after research costs and idle cash; "
+                    "a high redemption premium can coexist with substantial "
+                    "duration, title, and capital-loss exposure."
+                ),
+                (
+                    "Use a deliberately simple diagnostic fixture before testing "
+                    "jurisdiction-specific cases. Suppose a hypothetical instrument "
+                    "permits simple annual interest, has $10,000 of principal, "
+                    "earns 8%, and redeems after exactly one-half year without "
+                    "additional charges. Gross interest is $400; the $10,000 "
+                    "principal return is a balance-sheet recovery, not revenue. "
+                    "If unreimbursed research and servicing cost $125, the "
+                    "illustrative contribution is $275 before shared overhead "
+                    "and other portfolio outcomes. This fixture tests accounting "
+                    "classification only; it is not a Florida, Arizona, or Texas "
+                    "statutory calculator. Candidate #3's canonical annual cases "
+                    "remain $15,000 revenue and $4,500 owner profit at 30%; "
+                    "$97,500 revenue and $41,438 owner profit at 42.5%; and "
+                    "$180,000 revenue and $99,000 owner profit at 55%. The Base "
+                    "calculation produces $41,437.50 before whole-dollar rounding. "
+                    "Do not multiply certificate face value by a take rate and "
+                    "label the result recognized operator revenue. Revenue "
+                    "comprises realized interest, penalties, and disposition "
+                    "gains. Maintain separate fields for contributed capital, "
+                    "principal deployed, principal returned, earned receipts, "
+                    "reimbursed advances, and realized losses. Portfolio projections "
+                    "must reconcile those fields rather than treating every "
+                    "bank deposit as operating income."
+                ),
+                (
+                    "Budget tooling against the canonical expense envelope instead "
+                    "of selling automation as free margin. Conservative revenue "
+                    "less owner profit leaves $10,500 of annual costs; Base "
+                    "leaves $56,062.50 before display rounding; Scaled leaves "
+                    "$81,000. Those are total modeled cost envelopes, not "
+                    "permissions to spend the same amounts on subscriptions. "
+                    "The stated monthly operating range of $500 to $4,000 "
+                    "annualizes to $6,000 to $48,000, but transaction costs, "
+                    "contractor work, and other modeled expenses must also "
+                    "reconcile within each scenario rather than being counted "
+                    "twice. The $100,000 to $1,500,000 startup capital range "
+                    "describes funding needs, not revenue or a software budget. "
+                    "Likewise, the six-to-thirty-six-month first-deal window argues "
+                    "for reversible subscriptions and limited paid experiments. "
+                    "Track cash tied up by cohort, redemption duration, loss "
+                    "severity, contractor hours, and tool spending per funded "
+                    "certificate. Retain the 1 FT + 2 C structure for Conservative "
+                    "and Base; the Scaled case uses 2 FT + 3 C. These headcounts "
+                    "do not establish salary rates or spare capacity. Expand "
+                    "automation only when measured queue reduction exceeds its "
+                    "integration and maintenance burden without weakening "
+                    "source verification or procedural control."
+                ),
+            ],
+            "table": {
+                "caption": "Cash-flow and bid-engine fixtures that prevent false yield and false revenue",
+                "headers": [
+                    "Diagnostic fixture and specific failure being tested",
+                    "Expected classification or independently checked numerical result",
+                    "Evidence required before the result reaches production",
+                    "Owner response when the diagnostic check fails",
+                ],
+                "rows": [
+                    [
+                        "Hypothetical $10,000 principal at 8% simple interest for exactly half a year.",
+                        "$400 is gross interest revenue; returned principal of $10,000 remains a separate capital recovery.",
+                        "Retain the explicit hypothetical assumptions and arithmetic fixture separately from every statutory calculation.",
+                        "Repair the classification rule and rerun all settlement tests before trusting portfolio revenue totals.",
+                    ],
+                    [
+                        "Florida zero-percent certificate and statutory minimum-charge boundary cases under current redemption provisions.",
+                        "Apply the actual statutory exception and county calculation rather than adding a universal minimum yield.",
+                        "Retain current section 197.472 text and an independently checked collector calculation or authoritative example.",
+                        "Disable affected bidding outputs until the jurisdiction-specific rule and rounding behavior are verified.",
+                    ],
+                    [
+                        "Base annual scenario reconciliation using $97,500 revenue and a 42.5% net margin.",
+                        "Compute $41,437.50 owner profit and display $41,438; retain exact cents in reconciliation workpapers.",
+                        "Preserve canonical inputs and show costs of $56,062.50 before whole-dollar presentation rounding.",
+                        "Investigate duplicated costs, principal misclassification, or inconsistent rounding instead of changing canonical inputs.",
+                    ],
+                    [
+                        "Disposition proceeds containing recovered basis, realized gain, costs, and possible third-party distributions.",
+                        "Recognize only the operator's realized gain under the adopted accounting treatment, not gross sale receipts.",
+                        "Require a closing statement, basis schedule, cost allocation, and legally supported distribution reconciliation.",
+                        "Hold the revenue entry for review when surplus ownership or recoverable basis remains unresolved.",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Four pre-flight checks before capital or procedure moves",
+                "body": "A populated dashboard does not establish instrument validity, payment authority, or a lawful resolution path.",
+                "items": [
+                    "Verify certificate identity, current sale status, bidder eligibility, and settlement instructions through the issuing authority's authenticated access path.",
+                    "Reconcile the proposed bid against the correct jurisdiction rule set, current fees, principal exposure, and independently checked edge-case fixtures.",
+                    "Refresh redemption and relevant bankruptcy evidence before sending notices or initiating collection; escalate potentially applicable stays immediately.",
+                    "Confirm the resolution packet addresses title defects, required notices, federal interests where present, and ownership of any surplus proceeds.",
+                ],
+            },
+        },
+        {
+            "heading": "4. Operate redemption tracking and post-Tyler resolution as evidence queues",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Build redemption tracking as an event ledger with explicit "
+                    "states: held, redemption reported, collector remittance pending, "
+                    "cash received, reconciliation complete, and exception open. "
+                    "A portal label is not bank cash, and bank cash is not "
+                    "automatically interest. Link each remittance to its "
+                    "certificate and split principal, earned receipts, and "
+                    "recoverable advances using the collector's statement. "
+                    "Reconcile the bank ledger to the certificate subledger "
+                    "on every remittance cycle, with a weekly unresolved-item "
+                    "review by the owner. The research contractor can assemble "
+                    "statements and investigate identifiers, but the owner "
+                    "authorizes cash classification and resolves discrepancies. "
+                    "Keep county-specific calendars for application eligibility, "
+                    "expiration, notices, and required subsequent payments. "
+                    "Compute dates from verified statutory events, not from "
+                    "the date a spreadsheet row was created. Arizona Revised "
+                    "Statutes section 42-18201 supplies a foreclosure timing "
+                    "framework; Florida section 197.502 addresses tax-deed "
+                    "applications. Neither provision should become a national "
+                    "default. Configure reminders sufficiently early for document "
+                    "retrieval and specialist review, then confirm the live "
+                    "rule before taking action. Escalate approaching deadlines "
+                    "with the source citation, triggering event, proposed action, "
+                    "and named responsible person. Calendar automation should "
+                    "expose uncertainty, not conceal it behind a green status."
+                ),
+                (
+                    "When redemption stalls, the fourth play is disciplined "
+                    "resolution, not automatic acquisition of every dollar of "
+                    "property equity. In Tyler v. Hennepin County, 598 U.S. 631 "
+                    "(2023), the Supreme Court held that the owner's pleaded "
+                    "claim concerning retained surplus stated a Fifth Amendment "
+                    "takings claim. The decision makes surplus ownership a "
+                    "central diligence question; it does not supply one uniform "
+                    "private-investor foreclosure procedure across states. Track "
+                    "current statutory distribution rules, relevant state "
+                    "decisions, sale proceeds, debt, allowable costs, and potential "
+                    "surplus claimants in the resolution packet. Florida section "
+                    "197.582 supplies a concrete distribution framework for "
+                    "tax-deed sale proceeds. Separately, 11 U.S.C. section 362 "
+                    "can stay collection and foreclosure activity when applicable; "
+                    "a docket hit requires prompt specialist assessment, not "
+                    "an assumption that every tax-related action is prohibited "
+                    "or exempt. Federal liens can implicate 26 U.S.C. section "
+                    "7425 or 28 U.S.C. section 2410 depending on the proceeding. "
+                    "Route these issues to the procedural contractor with "
+                    "instrument images and current docket evidence. Do not "
+                    "let an API's lien count substitute for the analysis of "
+                    "parties, priority, notice, discharge, redemption rights, "
+                    "and the actual method of sale."
+                ),
+                (
+                    "Use diagnostics that a three-person pod can actually maintain. "
+                    "SQLite integrity checks test database structure; foreign-key "
+                    "checks expose orphaned events; duplicate-key reports detect "
+                    "repeat imports; and unit tests protect monetary classification "
+                    "and date rules. In QGIS, verify coordinate reference systems "
+                    "before interpreting a parcel overlay, then inspect apparent "
+                    "slivers or road-only parcels against recorded descriptions. "
+                    "Keep a small regression set containing a split parcel, "
+                    "a withdrawn certificate, a same-name bankruptcy mismatch, "
+                    "a zero-rate bid, a delayed remittance, and a disputed "
+                    "surplus allocation. Replay it after parser or rule changes. "
+                    "Back up source files and the database to controlled storage, "
+                    "and test restoration rather than merely counting backup "
+                    "jobs. Keep API credentials outside datasets and logs; "
+                    "restrict contractor access to the evidence needed for "
+                    "their assigned queue. Every week, the owner reviews stale "
+                    "sources, unresolved joins, upcoming statutory dates, cash "
+                    "mismatches, and paid enrichment that failed to change a "
+                    "decision. Every month, compare realized revenue, tool "
+                    "expense, contractor effort, and deployed capital with "
+                    "the selected canonical case. A useful system makes "
+                    "nonredeeming liens, title defects, and capital-loss exposure "
+                    "visible earlier; it does not claim to remove them."
+                ),
+            ],
+            "table": {
+                "caption": "Redemption, title, and resolution exception queue for the 1 FT + 2 C pod",
+                "headers": [
+                    "Observable exception and responsible queue owner",
+                    "Immediate containment action before further desk execution",
+                    "Required evidence for resolving the specific exception",
+                    "Closure test and permanent record to retain",
+                ],
+                "rows": [
+                    [
+                        "Collector reports redemption while the owner finds no matching bank remittance.",
+                        "Mark remittance pending and stop treating the certificate as an available new collection target.",
+                        "Obtain the dated collector statement, remittance reference, certificate allocation, and expected settlement information.",
+                        "Close only after bank receipt and principal-versus-earned-receipt reconciliation agree with the collector's allocation.",
+                    ],
+                    [
+                        "Research contractor finds a bankruptcy case potentially matching the recorded property owner.",
+                        "Pause affected collection or resolution activity pending identity confirmation and specialist review of applicable restrictions.",
+                        "Retain the petition identifiers, relevant docket entries, ownership evidence, and procedural contractor's current findings.",
+                        "Record the supported action path and review date without assuming a name match establishes applicability.",
+                    ],
+                    [
+                        "Title contractor identifies a parcel split, unresolved instrument, or potentially relevant federal interest.",
+                        "Hold affected underwriting or resolution instructions rather than transferring assumptions from the original parcel.",
+                        "Collect historical parcel references, instrument images, party identities, and the applicable notice or discharge analysis.",
+                        "Close only when the reviewed packet identifies the instrument's scope and the authorized next action.",
+                    ],
+                    [
+                        "Owner encounters disposition proceeds potentially exceeding supported debt and recoverable charges.",
+                        "Segregate disputed amounts and suspend any entry treating the entire receipt as operator gain.",
+                        "Obtain the distribution authority, closing statement, expense support, claimant information, and current procedural review.",
+                        "Retain the final allocation and payment evidence; reconcile recognized gain separately from principal and third-party proceeds.",
+                    ],
+                ],
+            },
+        },
+    ],
+    "pull_quote": "The information edge is a verified certificate-to-cash chain, not the largest spreadsheet of properties.",
+    "diagram_id": "diag-04",
+    "action_checklist": [
+        "Create one county rule profile for each target jurisdiction, linking current auction instructions, redemption provisions, payment requirements, and resolution authorities.",
+        "Build the eighteen-source register with access permissions, source-effective dates, polling targets, cost ownership, and authoritative fallback contacts.",
+        "Implement an immutable-source SQLite pipeline with jurisdiction-scoped certificate keys, parcel aliases, exact monetary fields, and quarantined import failures.",
+        "Assign free screening and parcel research to the research contractor; reserve paid enrichment and specialist review for economically viable unresolved questions.",
+        "Test bid-down, zero-rate, principal-return, remittance-delay, and disposition fixtures; reconcile annual reporting to the exact Conservative, Base, and Scaled scorecard cases.",
+        "Run a weekly owner review of redemption cash, stale evidence, procedural deadlines, bankruptcy exceptions, title defects, and potential surplus distributions.",
+    ],
+    "statutory_citations": [
+        {
+            "title": "Florida Statutes section 197.432 — Sale of tax certificates",
+            "url": "https://www.flsenate.gov/Laws/Statutes/2025/197.432",
+            "relevance": "Establishes certificate-sale mechanics supporting jurisdiction-specific auction ingestion and interest-bid rules; check subsequent effective amendments.",
+        },
+        {
+            "title": "Florida Statutes section 197.472 — Redemption of tax certificates",
+            "url": "https://www.flsenate.gov/Laws/Statutes/2025/197.472",
+            "relevance": "Supports redemption calculations, minimum-charge treatment, and the need to test zero-percent certificate exceptions.",
+        },
+        {
+            "title": "Florida Statutes section 197.502 — Application for obtaining tax deed",
+            "url": "https://www.flsenate.gov/Laws/Statutes/2025/197.502",
+            "relevance": "Provides application mechanics and timing inputs that belong in Florida-specific servicing calendars.",
+        },
+        {
+            "title": "Florida Statutes section 197.582 — Disbursement of proceeds of sale",
+            "url": "https://www.flsenate.gov/Laws/Statutes/2025/197.582",
+            "relevance": "Supports tax-deed proceeds allocation and separate treatment of amounts payable to other entitled parties.",
+        },
+        {
+            "title": "Arizona Revised Statutes section 42-18114 — Sale of tax lien; interest rate",
+            "url": "https://www.azleg.gov/ars/42/18114.htm",
+            "relevance": "Supplies Arizona-specific interest bidding requirements rather than a transferable national auction formula.",
+        },
+        {
+            "title": "Arizona Revised Statutes section 42-18153 — Amount required to redeem",
+            "url": "https://www.azleg.gov/ars/42/18153.htm",
+            "relevance": "Supports redemption component validation and separate reconciliation of principal, interest, and applicable charges.",
+        },
+        {
+            "title": "Arizona Revised Statutes section 42-18201 — Action to foreclose right to redeem",
+            "url": "https://www.azleg.gov/ars/42/18201.htm",
+            "relevance": "Provides a jurisdiction-specific foreclosure timing framework that requires current procedural verification before action.",
+        },
+        {
+            "title": "Texas Tax Code section 34.21 — Right of redemption",
+            "url": "https://statutes.capitol.texas.gov/Docs/TX/htm/TX.34.htm#34.21",
+            "relevance": "Distinguishes redeemable-deed periods and redemption payment mechanics from annual certificate interest.",
+        },
+        {
+            "title": "Tyler v. Hennepin County, 598 U.S. 631 (2023)",
+            "url": "https://www.law.cornell.edu/supremecourt/text/22-166",
+            "relevance": "Explains the constitutional significance of retained surplus beyond tax debt and supports explicit surplus-rights diligence.",
+        },
+        {
+            "title": "11 U.S.C. section 362 — Automatic stay",
+            "url": "https://www.law.cornell.edu/uscode/text/11/362",
+            "relevance": "Requires analysis of applicable stays and exceptions before affected collection or foreclosure activity proceeds.",
+        },
+        {
+            "title": "26 U.S.C. section 7425 — Discharge of liens",
+            "url": "https://www.law.cornell.edu/uscode/text/26/7425",
+            "relevance": "Addresses federal tax lien treatment in judicial proceedings and other sales, including relevant notice and redemption provisions.",
+        },
+        {
+            "title": "28 U.S.C. section 2410 — Actions affecting property on which United States has lien",
+            "url": "https://www.law.cornell.edu/uscode/text/28/2410",
+            "relevance": "Supports review of proceedings involving federal interests, required pleading and service matters, and applicable redemption rights.",
+        },
+    ],
+}

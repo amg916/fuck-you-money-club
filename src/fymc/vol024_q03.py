@@ -1,0 +1,675 @@
+from __future__ import annotations
+
+CHAPTER_3 = {
+    "id": "Q3",
+    "chapter_id": "Q3",
+    "chapter_number": 3,
+    "question_number": 3,
+    "slug": "unit-economics-margin-waterfall-working-capital-float",
+    "question_prompt": "What are the real unit economics, gross-to-net margin deductions, scrub/reversal reserves, and working-capital float requirements for tax lien investing?",
+    "kicker": "Q3 / THE BIG MONEY PLAYBOOKS",
+    "title": "Unit Economics, Margin Waterfall & Working-Capital Float",
+    "subtitle": "Certificate Bid-Down Math, Redemption Cash Bridges, Contractor Costs, and Post-Tyler Recovery Economics",
+    "layout_template": "financial_breakdown",
+    "reading_time_minutes": 14,
+    "executive_summary": (
+        "Candidate #3, Tax Lien Investing, ranks #24 with a Money-to-Manpower "
+        "Score of 62/100. Its four mapped operating lenses are auction bid-down "
+        "discipline, redemption-ladder construction, redeemable-deed recovery underwriting, "
+        "and agency_ad_spend_card_multiplier_rebate_cycling; the agency play remains "
+        "economically separate from the lien portfolio. Canonical annual owner profits "
+        "are $4,500 Conservative, $41,438 Base, and $99,000 Scaled, earned on "
+        "$15,000, $97,500, and $180,000 of realized revenue rather than returned "
+        "principal. This chapter builds the acquisition-to-cash waterfall, prices contractor "
+        "work, isolates reversal reserves, and sizes delayed-redemption liquidity. "
+        "The decisive discipline is matching legally collectible proceeds to actual "
+        "collection dates, while refusing auction prices that require instant redemption, "
+        "unpaid labor, or owner equity in excess of the enforceable claim."
+    ),
+    "key_metrics": [
+        {
+            "label": "Conservative",
+            "value": "$15,000",
+            "context": "Annual realized interest, penalties, and disposition gains; returned principal excluded",
+            "note": "30% margin; $4,500 annual owner net profit; 1 FT + 2 C",
+        },
+        {
+            "label": "Base",
+            "value": "$97,500",
+            "context": "Annual realized interest, penalties, and disposition gains; returned principal excluded",
+            "note": "42.5% margin; $41,438 annual owner net profit; 1 FT + 2 C",
+        },
+        {
+            "label": "Scaled",
+            "value": "$180,000",
+            "context": "Annual realized interest, penalties, and disposition gains; returned principal excluded",
+            "note": "55% margin; $99,000 annual owner net profit; 2 FT + 3 C",
+        },
+    ],
+    "sections": [
+        {
+            "heading": "1. Price the enforceable cash claim before pricing the certificate",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "Start with the revenue denominator, because tax receivable face value is not "
+                    "operator sales. The canonical Conservative, Base, and Scaled cases recognize "
+                    "$15,000, $97,500, and $180,000 of realized interest, penalties, and disposition "
+                    "gains. Returned certificate principal remains a balance-sheet recovery. For a "
+                    "transparent illustrative cohort, assume twenty $5,000 positions, one hundred "
+                    "$6,500 positions, and one hundred fifty $8,000 positions, respectively. Those "
+                    "cohorts deploy $100,000, $650,000, and $1,200,000 and require average realized "
+                    "revenue of $750, $975, and $1,200 per position to reproduce the scorecard. "
+                    "The resulting 15% revenue-to-deployed-principal ratio is a modeling bridge, "
+                    "not a statutory rate or a promised annualized return. Each jurisdiction, "
+                    "purchase date, redemption date, bid rate, premium, and recovery route must "
+                    "support its own dollars. A portfolio generating only 8% cannot retain the "
+                    "15% revenue assumption by relabeling principal distributions. Keep four "
+                    "operating lenses distinct: auction bid-down discipline, redemption-ladder "
+                    "construction, redeemable-deed recovery underwriting, and the separately "
+                    "identified agency rewards play. The first three describe this chapter's "
+                    "asset workflows rather than additional catalog identifiers. The fourth "
+                    "concerns advertising payment economics and contributes nothing to the "
+                    "canonical lien revenue cases. This separation prevents an attractive side "
+                    "business from disguising weak underlying asset returns."
+                ),
+                (
+                    "For auction bid-down discipline, calculate collectible dollars after the "
+                    "actual winning bid, not after the advertised maximum. Florida Statutes "
+                    "197.172 and 197.432 establish interest and bidding mechanics; section "
+                    "197.472 controls redemption amounts and the minimum-interest mechanism, "
+                    "including its zero-percent exception. A $5,000 certificate at a winning "
+                    "6% simple rate held six months produces $150 of ordinary interest before "
+                    "the applicable statutory minimum and any collectible charges. A 12% bid "
+                    "would produce $300 over the same interval. That $150 difference is "
+                    "economically material against a Conservative target of $225 owner profit "
+                    "per position. Do not extrapolate Florida's minimum to Arizona certificates "
+                    "or Texas redeemable deeds. Arizona Revised Statutes 42-18114 sets its "
+                    "own bid-rate framework; Texas Tax Code 34.21 supplies redemption-premium "
+                    "rules with property classifications and deadlines that require separate "
+                    "modeling. Any auction premium, subsequent tax payment, filing advance, "
+                    "or service charge belongs in invested cash until its recoverability is "
+                    "established. Compute a dated cash-flow return using actual settlement "
+                    "and receipt dates in Excel or LibreOffice, alongside the simple dollar "
+                    "spread. If competitive bidding removes the spread, the fallback is "
+                    "uncommitted cash or another eligible auction, not a speculative assumption "
+                    "that foreclosure will rescue an overbid."
+                ),
+                (
+                    "Redemption-ladder construction is the second asset play: stagger maturities "
+                    "and collection expectations instead of purchasing an entire year's exposure "
+                    "in one county sale. Ten $6,500 Base positions represent $65,000 of "
+                    "principal and $9,750 of modeled revenue; shifting their collections beyond "
+                    "year-end removes that revenue from the realized-year forecast while leaving "
+                    "the principal locked. The third asset play, redeemable-deed recovery "
+                    "underwriting, requires a different waterfall. A hypothetical $20,000 "
+                    "purchase with a legally applicable 25% first-period redemption premium "
+                    "would produce $5,000 of gross premium before eligible advances and "
+                    "expenses; it does not establish a repeatable annual yield or immediate "
+                    "possession right. Classify the property and redemption period under Texas "
+                    "Tax Code 34.21 before bidding. If redemption fails, price title work, "
+                    "possession proceedings, carrying taxes, insurance, remediation, and sale "
+                    "costs before forecasting disposition gain. Tyler v. Hennepin County "
+                    "rejects treating surplus equity as automatically confiscable by government; "
+                    "implement the applicable state's current sale and surplus-distribution "
+                    "procedure rather than assuming every dollar of property value belongs "
+                    "to the certificate holder. Where collectible recovery cannot be established, "
+                    "the fallback is a lower bid or exclusion. A lender's optimistic valuation "
+                    "cannot cure defective notice, impaired title, or a legally unavailable "
+                    "recovery theory."
+                ),
+            ],
+            "table": {
+                "caption": "Asset-Level Revenue Recognition and Auction Underwriting Matrix",
+                "headers": [
+                    "Operating item and governing economic distinction",
+                    "Concrete unit calculation or underwriting requirement",
+                    "Evidence retained before committing auction funds",
+                    "Failure response preserving cash and claim quality",
+                ],
+                "rows": [
+                    [
+                        "Conservative cohort uses twenty independently tracked certificate positions",
+                        "Twenty positions multiplied by $750 produces $15,000 revenue",
+                        "Store purchase receipts and redemption allocations for every position",
+                        "Exclude returned principal from every revenue subtotal and dashboard",
+                    ],
+                    [
+                        "Base cohort uses one hundred separately reconciled asset positions",
+                        "One hundred positions multiplied by $975 produces $97,500 revenue",
+                        "Match county remittances to certificate identifiers and settlement dates",
+                        "Move delayed collections into the next realized reporting period",
+                    ],
+                    [
+                        "Scaled cohort uses one hundred fifty individually controlled positions",
+                        "One hundred fifty multiplied by $1,200 produces $180,000 revenue",
+                        "Retain independent review evidence for larger county concentration exposures",
+                        "Reduce purchases when reconciliation exceptions exceed assigned processing capacity",
+                    ],
+                    [
+                        "Florida winning interest rate replaces the advertised auction ceiling",
+                        "$5,000 multiplied by 6% multiplied by half-year equals $150",
+                        "Preserve winning bid confirmation and applicable redemption calculation worksheet",
+                        "Apply statutory minimum mechanics only after verifying certificate eligibility",
+                    ],
+                    [
+                        "Auction premiums require separate recoverability and yield treatment",
+                        "$5,000 principal plus $500 unrecovered premium commits $5,500 cash",
+                        "Retain local auction terms describing premium disposition and recoverability",
+                        "Reject bids whose premium consumes the expected collectible spread",
+                    ],
+                    [
+                        "Texas redemption premium depends upon property classification and timing",
+                        "$20,000 eligible purchase basis multiplied by 25% equals $5,000",
+                        "Confirm statutory basis components and the applicable redemption period",
+                        "Exclude possession or sale proceeds unavailable during protected periods",
+                    ],
+                    [
+                        "Disposition revenue means gain after the recorded asset basis",
+                        "$30,000 sale less $22,000 basis produces $8,000 gross gain",
+                        "Keep settlement statement and a complete asset basis rollforward",
+                        "Deduct selling expenses separately without deducting asset basis twice",
+                    ],
+                    [
+                        "Post-Tyler recovery underwriting excludes automatically captured surplus owner equity",
+                        "Forecast only legally collectible claims and properly allocated sale proceeds",
+                        "Retain current state procedure and transaction-specific distribution calculations",
+                        "Remove speculative surplus capture from bid limits and profit forecasts",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Protect the spread before the auction clock starts",
+                "body": (
+                    "Experienced buyers use jurisdiction-specific collection math and cash "
+                    "evidence, rather than headline interest rates, to set executable bids."
+                ),
+                "items": [
+                    "Save the county's redemption worksheet before bidding, then test a short holding period, a long holding period, and the zero-percent outcome where applicable.",
+                    "Maintain separate fields for certificate face, premium, subsequent taxes, recoverable advances, and nonrecoverable costs; a single purchase-price field hides spread erosion.",
+                    "Review the oldest unreconciled county payment first each week; resolving a $6,500 principal posting can matter more than screening another auction list.",
+                    "Use parcel identifiers as permanent keys and retain dated title snapshots; owner names and mailing addresses change without curing the underlying defect.",
+                ],
+            },
+        },
+        {
+            "heading": "2. Reconcile every acquisition, delivery, financing, and reserve deduction",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "Build the gross-to-net bridge with six explicit expense buckets rather "
+                    "than one opaque management percentage. Acquisition and screening consume "
+                    "$1,500, $7,500, and $12,000 across Conservative, Base, and Scaled. "
+                    "Contractor delivery consumes $3,000, $18,000, and $28,000; title, filing, "
+                    "and recovery work consume $2,000, $10,000, and $14,000. Software and "
+                    "administration cost $1,000, $4,500, and $7,000; financing and settlement "
+                    "friction cost $1,000, $6,000, and $9,000. Scrub, reversal, and impairment "
+                    "reserves contribute $2,000, $10,062.50, and $11,000. Total modeled "
+                    "deductions are therefore $10,500, $56,062.50, and $81,000, leaving "
+                    "$4,500, $41,437.50, and $99,000. The displayed Base owner profit "
+                    "rounds to $41,438 while its unrounded 42.5% margin remains exact. "
+                    "These allocations explain the supplied scorecard; they are illustrative "
+                    "budget assignments, not measured results from an existing portfolio. "
+                    "For this managerial waterfall, reserves are explicit economic charges "
+                    "for expected leakage; statutory accounts and tax returns require their "
+                    "own recognition treatment. Keep returned principal outside both the "
+                    "revenue numerator and ordinary operating deductions. Adding recovered "
+                    "principal to sales would inflate margins and make the business appear "
+                    "larger without creating a dollar of additional earnings."
+                ),
+                (
+                    "Acquisition CAC here means cost per funded asset, not consumer marketing "
+                    "cost per lead. The three budgets imply $75, $75, and $80 per "
+                    "funded position. A Base screening funnel of 1,000 parcels, 250 "
+                    "document reviews, and 100 purchases converts 10% of initial records "
+                    "into funded assets; its $7,500 budget therefore equals $7.50 per "
+                    "initial parcel but still $75 per purchase. Price contractor delivery "
+                    "by completed tasks: two contractors billing 150 hours each at $60 "
+                    "produce the Base $18,000 annual delivery budget. Their work includes "
+                    "redemption tracking, document indexing, payment reconciliation, and exception "
+                    "follow-up; the separate $10,000 title and recovery bucket pays specialist "
+                    "work without duplicating those hours. The canonical teams remain "
+                    "1 FT + 2 C, 1 FT + 2 C, and 2 FT + 3 C. "
+                    "Headcount alone supplies neither salaries nor full-time-equivalent workload. "
+                    "This bridge leaves employee payroll and owner replacement salary "
+                    "unpriced because the scorecard supplies no compensation schedule. "
+                    "Consequently, the Scaled $99,000 is not demonstrated profit after "
+                    "two market-rate salaries. Budgeting an additional $60,000 of wages "
+                    "and employer costs would reduce that figure to $39,000. Display "
+                    "that limitation directly rather than presenting five people as an "
+                    "automatically affordable staffing plan."
+                ),
+                (
+                    "Scrub reserves cover purchased-record defects, mistaken eligibility, duplicate "
+                    "payments, and nonrecoverable diligence; reversal reserves cover corrected "
+                    "county allocations, voided certificates, and recovery shortfalls. The Base "
+                    "$10,062.50 charge could be allocated analytically as $2,000 record "
+                    "scrub, $3,000 interest or fee reversals, and $5,062.50 incremental "
+                    "principal impairment. Those categories are mutually exclusive. If a "
+                    "county refunds $6,500 of principal and reverses $975 of expected "
+                    "interest, the principal refund is not revenue and the uncollected "
+                    "interest is not both a revenue reduction and another full reserve "
+                    "charge. Maintain a reserve rollforward showing opening allowance, new "
+                    "provision, realized usage, releases, and closing allowance. Reconcile "
+                    "the managerial bridge to cash collections and formal accounts each "
+                    "month so that a gross realization convention does not silently "
+                    "change between periods. Illustrative fixed monthly overhead envelopes "
+                    "of $500, $2,000, and $4,000 sit within the supplied range and "
+                    "are included in the annual buckets, never added again. Variable "
+                    "contractor work, exceptional recovery costs, and reserve charges "
+                    "explain why total annual deductions can exceed twelve times fixed "
+                    "overhead. Set replenishment cash apart from the earnings reserve: "
+                    "an expense estimate measures loss, while a funded buffer determines "
+                    "whether the operation survives the wait."
+                ),
+            ],
+            "table": {
+                "caption": "Canonical Annual Margin Waterfall with Explicit Illustrative Cost Allocations",
+                "headers": [
+                    "Revenue or deduction with allocation basis",
+                    "Conservative annual dollars and operating interpretation",
+                    "Base annual dollars and operating interpretation",
+                    "Scaled annual dollars and operating interpretation",
+                ],
+                "rows": [
+                    [
+                        "Realized asset revenue excludes every returned principal dollar",
+                        "$15,000 recognized from twenty modeled income-producing asset positions",
+                        "$97,500 recognized from one hundred modeled asset positions",
+                        "$180,000 recognized from one hundred fifty modeled positions",
+                    ],
+                    [
+                        "Deduct acquisition screening and funded asset sourcing expense",
+                        "$1,500 deduction equals $75 per funded asset purchase",
+                        "$7,500 deduction equals $75 per funded asset purchase",
+                        "$12,000 deduction equals $80 per funded asset purchase",
+                    ],
+                    [
+                        "Deduct contractor delivery labor without assuming salaried employee coverage",
+                        "$3,000 deduction supports narrowly scoped tracking and reconciliation assignments",
+                        "$18,000 deduction funds three hundred contractor hours at $60",
+                        "$28,000 deduction funds expanded contractor delivery and exception handling",
+                    ],
+                    [
+                        "Deduct specialist title work filing and recovery expenses",
+                        "$2,000 deduction covers limited document and recovery work",
+                        "$10,000 deduction covers separately contracted title and recovery work",
+                        "$14,000 deduction covers expanded specialist title and recovery work",
+                    ],
+                    [
+                        "Deduct software administration and routine record maintenance costs",
+                        "$1,000 deduction supports lean administration and maintained asset records",
+                        "$4,500 deduction supports structured administration and payment reconciliation tooling",
+                        "$7,000 deduction supports expanded records administration and reporting capacity",
+                    ],
+                    [
+                        "Deduct actual financing settlement and payment processing friction",
+                        "$1,000 deduction captures modeled borrowing and settlement cash costs",
+                        "$6,000 deduction captures modeled borrowing and settlement cash costs",
+                        "$9,000 deduction captures modeled borrowing and settlement cash costs",
+                    ],
+                    [
+                        "Deduct economic provision for scrub reversals and incremental impairment",
+                        "$2,000 deduction reserves against identified collection and asset leakage",
+                        "$10,062.50 deduction reserves against identified collection and asset leakage",
+                        "$11,000 deduction reserves against identified collection and asset leakage",
+                    ],
+                    [
+                        "Subtract total modeled deductions from recognized asset revenue",
+                        "$10,500 total deductions leave $4,500 before owner distributions",
+                        "$56,062.50 total deductions leave $41,437.50 before owner distributions",
+                        "$81,000 total deductions leave $99,000 before owner distributions",
+                    ],
+                    [
+                        "Report canonical owner profit with consistent display rounding",
+                        "$4,500 annual owner profit equals precisely 30% net margin",
+                        "$41,438 displayed annual owner profit reflects 42.5% unrounded margin",
+                        "$99,000 annual owner profit equals precisely 55% net margin",
+                    ],
+                ],
+            },
+        },
+        {
+            "heading": "3. Fund redemption delays without confusing profit with spendable cash",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "Treat cash timing as two clocks, not one blended DSO statistic. "
+                    "The first clock runs from auction settlement to the legal event "
+                    "creating a payable redemption distribution; the second runs from "
+                    "that event to cleared funds in the investor's bank account. "
+                    "Certificates are purchased assets, not ordinary invoices, so invoice "
+                    "DSO is a poor label for the first interval. Track asset holding "
+                    "days and distribution-processing days separately. For planning, a "
+                    "270-day holding period followed by a 30-day processing allowance "
+                    "creates a 300-day cash cycle; neither duration is a county promise. "
+                    "A Base $6,500 position then ties up its purchase cash throughout "
+                    "that interval even if the ledger shows an enforceable claim. "
+                    "Obtain the county's published disbursement process and reconcile "
+                    "actual electronic transfers or checks to it. A redemption notice "
+                    "is not cleared cash, a check issued is not a settled deposit, "
+                    "and an auction deposit refund is not investment income. Use "
+                    "an asset register in SQLite or a controlled spreadsheet with "
+                    "purchase dates, legal milestones, expected distributions, bank dates, "
+                    "and disputed balances. Flag deadline exceptions separately from "
+                    "routine payment delays so a collection forecast never substitutes "
+                    "for preserving a legal right."
+                ),
+                (
+                    "Size incremental float from the purchase cadence the operator actually "
+                    "intends to maintain. Assume annual replacement purchases equal the "
+                    "illustrative $100,000, $650,000, and $1,200,000 deployment budgets, "
+                    "spread evenly across 365 days. An additional 90-day collection "
+                    "delay requires approximately $24,658, $160,274, and $295,890 "
+                    "of purchase float if buying continues unchanged. Excluding the "
+                    "noncash economic provisions, annual modeled cash deductions are "
+                    "$8,500, $46,000, and $70,000. Ninety days of those payments "
+                    "adds approximately $2,096, $11,342, and $17,260. Total incremental "
+                    "delay liquidity is therefore approximately $26,753, $171,616, "
+                    "and $313,151, using unrounded components before final rounding. "
+                    "These are bridge requirements, not additional annual expenses and "
+                    "not automatic additions when purchases can be paused. They "
+                    "also assume even settlement activity; seasonal auctions require "
+                    "a dated cash schedule rather than a daily average. At Scaled, "
+                    "$1,200,000 already deployed plus the full incremental bridge "
+                    "reaches roughly $1,513,151, exceeding the stated $1,500,000 "
+                    "startup ceiling before any separate initial liquidity buffer. "
+                    "The practical fallback is smaller commitments or slower replacement "
+                    "purchases, not silently expanding startup capital. A committed "
+                    "credit facility only solves the gap if its collateral eligibility, "
+                    "advance rate, and maturity survive the same delay."
+                ),
+                (
+                    "Use a thirteen-week direct cash forecast for near-term control and "
+                    "a thirty-six-month asset schedule for the stated 6–36 month "
+                    "time to first deal. At the illustrative fixed overhead envelopes, "
+                    "six months without receipts consumes $3,000, $12,000, or "
+                    "$24,000; thirty-six months consumes $18,000, $72,000, or "
+                    "$144,000 before purchase funding and variable recovery work. "
+                    "Those figures are runway uses already represented by overhead "
+                    "when the corresponding period is modeled, not fresh deductions "
+                    "from the annual scorecard. Record auction deposits, settlement "
+                    "deadlines, subsequent taxes, filing advances, debt service, and "
+                    "contractor invoices by payment date. Separate restricted deposits "
+                    "from bank cash available for ordinary bills. For a deliberately "
+                    "simple payout-lock example, $100,000 borrowed at 12% simple "
+                    "annual interest for 30 extra days costs about $986 using "
+                    "a 365-day basis, before facility fees. Add that cost only "
+                    "to the extent it exceeds financing already budgeted. Bankruptcy "
+                    "can interrupt enforcement through 11 U.S.C. 362; route "
+                    "affected assets into a separately reviewed collection schedule "
+                    "rather than assuming ordinary foreclosure dates continue. Suspend "
+                    "owner distributions whenever available cash falls below the "
+                    "dated purchase commitments, near-term operating obligations, and "
+                    "documented recovery buffer. Accounting profit cannot pay a "
+                    "contractor while the underlying redemption remains unsettled."
+                ),
+            ],
+            "table": {
+                "caption": "Redemption Float, Seasonal Funding, and Cash Availability Controls",
+                "headers": [
+                    "Cash exposure requiring a separate tracking field",
+                    "Concrete measurement and modeled funding consequence",
+                    "Evidence establishing when cash becomes spendable",
+                    "Operator response when the timing assumption fails",
+                ],
+                "rows": [
+                    [
+                        "Asset holding interval starts when auction settlement clears",
+                        "Model 270 holding days separately from processing delays",
+                        "Retain auction settlement proof and dated redemption event records",
+                        "Extend expected recovery dates without inventing current cash receipts",
+                    ],
+                    [
+                        "County distribution interval begins after the relevant payable event",
+                        "Model thirty processing days until actual bank settlement occurs",
+                        "Match county payment references against cleared bank transaction records",
+                        "Escalate aged payments through the county's published contact process",
+                    ],
+                    [
+                        "Conservative replacement purchase cadence continues during delayed collections",
+                        "Ninety extra days requires approximately $26,753 including cash deductions",
+                        "Use dated purchases and invoices rather than revenue projections",
+                        "Pause replacement purchases before exhausting the operating cash buffer",
+                    ],
+                    [
+                        "Base replacement purchase cadence continues during delayed collections",
+                        "Ninety extra days requires approximately $171,616 including cash deductions",
+                        "Validate borrowing availability against eligible collateral and maturity dates",
+                        "Reduce auction commitments when bridge funding cannot be demonstrated",
+                    ],
+                    [
+                        "Scaled replacement purchase cadence continues during delayed collections",
+                        "Ninety extra days requires approximately $313,151 including cash deductions",
+                        "Compare total commitments with the $1,500,000 startup capital ceiling",
+                        "Reduce deployment because full bridge funding exceeds that ceiling",
+                    ],
+                    [
+                        "Recovery proceedings can create legally constrained collection timing",
+                        "Bankruptcy review can replace ordinary enforcement dates with revised dates",
+                        "Retain case notices and documented instructions for affected proceedings",
+                        "Stop assuming routine collections while the enforcement route changes",
+                    ],
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Build the dated asset cash register",
+                    "action": "Record principal, premium, advances, rate, settlement date, and expected collection milestones for every certificate or deed.",
+                    "detail": "Maintain unique county and parcel identifiers, link auction evidence, and separate enforceable income claims from purchase-basis recovery.",
+                },
+                {
+                    "step": 2,
+                    "title": "Reconcile collectible proceeds to bank cash",
+                    "action": "Match county redemption reports to cleared deposits and allocate each receipt between principal, interest, penalties, and recoverable advances.",
+                    "detail": "Place unmatched amounts in an exception register; do not classify an entire redemption transfer as revenue.",
+                },
+                {
+                    "step": 3,
+                    "title": "Rebuild the delay bridge each week",
+                    "action": "Refresh thirteen-week payments and thirty-six-month asset collections, then run an additional ninety-day delay against unchanged purchase commitments.",
+                    "detail": "Separate cash expenses from economic reserve charges and verify that restricted deposits cannot be used to pay ordinary bills.",
+                },
+                {
+                    "step": 4,
+                    "title": "Release purchases and distributions from verified liquidity",
+                    "action": "Fund dated obligations and recovery buffers before making new bids or distributing owner cash.",
+                    "detail": "Reduce commitments if the stress bridge exceeds available capital; retain the revised bid schedule and the person responsible for each exception.",
+                },
+            ],
+        },
+        {
+            "heading": "4. Stress the yield, isolate agency rewards, and enforce preflight checks",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "Run sensitivities against the canonical cases without changing several "
+                    "assumptions at once. A two-percentage-point decline in realized "
+                    "revenue relative to deployed principal removes $2,000, $13,000, "
+                    "and $24,000, leaving owner profit of $2,500, $28,437.50, "
+                    "and $75,000 when modeled deductions stay fixed. These are "
+                    "portfolio revenue shocks, not statements that a statutory coupon "
+                    "has fallen by two points. A separate 25% shift of current-year "
+                    "realized revenue into the following year removes $3,750, "
+                    "$24,375, and $45,000, leaving $750, $17,062.50, and "
+                    "$54,000. That timing case preserves lifetime revenue only "
+                    "if eventual collection occurs, and it ignores additional borrowing "
+                    "costs until they are explicitly added. A further 1% principal "
+                    "loss beyond existing reserves costs $1,000, $6,500, and "
+                    "$12,000, leaving $3,500, $34,937.50, and $87,000. "
+                    "Label that loss incremental to avoid charging the existing "
+                    "impairment provision twice. Finally, a 25% contractor-delivery "
+                    "overrun removes $750, $4,500, and $7,000. Compare "
+                    "these sensitivities to concentration by county, property type, "
+                    "and redemption vintage. A small portfolio can lose its "
+                    "entire annual profit on one defective position, even when "
+                    "its average modeled yield appears comfortably above cash "
+                    "operating costs."
+                ),
+                (
+                    "The required adjacent play, agency_ad_spend_card_multiplier_rebate_cycling, "
+                    "belongs in a separate operating ledger and must never be presented "
+                    "as certificate yield. Route only genuine, client-authorized advertising "
+                    "spend through eligible arrangements whose issuer, network, agency, "
+                    "and client contracts permit the rewards and rebates. Consider "
+                    "$100,000 of authorized monthly spend earning an illustrative "
+                    "2% cash-equivalent reward and 0.5% volume rebate: gross "
+                    "benefit is $2,500. Deduct $800 of processing, $600 of "
+                    "financing, and $700 owed to the client, leaving $400 "
+                    "before agency servicing labor and overhead. A further "
+                    "$300 of reconciliation labor leaves $100. If the "
+                    "$500 rebate disappears, the same month loses $400 "
+                    "after that labor. Reward rates and redemption values "
+                    "must come from actual eligible terms, not aspirational "
+                    "point valuations. The $100,000 client advertising outlay "
+                    "is neither lien revenue nor automatically agency revenue; "
+                    "account for the underlying service arrangement separately. "
+                    "At $100,000 monthly spend, a fifteen-day mismatch "
+                    "between platform payment and client reimbursement creates "
+                    "about $50,000 of float using a thirty-day month. "
+                    "Never fund that gap with cash reserved for certificate "
+                    "settlement. The fallback is client-direct billing or "
+                    "prefunded approved agency terms, with rewards-dependent "
+                    "spending stopped rather than expanded."
+                ),
+                (
+                    "Preflight verification should produce evidence that another operator can "
+                    "reperform, not a ceremonial checklist. First, confirm auction "
+                    "eligibility, deposit rules, winning-rate mechanics, and payment "
+                    "deadlines from the current county materials. Second, commission "
+                    "the title and parcel review needed for the actual recovery "
+                    "route, including ownership, bankruptcy indicators, property classification, "
+                    "notice requirements, and current post-Tyler distribution procedure. "
+                    "Third, tie the purchase schedule and contractor statements "
+                    "of work to the cash forecast, distinguishing the supplied "
+                    "headcount from a funded compensation plan. Fourth, reconcile "
+                    "the three scenario waterfalls and rerun delay, yield, "
+                    "loss, and labor sensitivities before authorizing the next "
+                    "batch. A Base batch of ten assets consumes $65,000 "
+                    "of purchase principal plus its associated diligence and "
+                    "operating cash; its modeled $9,750 revenue cannot "
+                    "finance settlement before collection. Record who owns "
+                    "each deadline and who independently reviews payment "
+                    "allocations. When the legal recovery route, cash bridge, "
+                    "or bid economics fails verification, reduce or reject "
+                    "the batch and preserve the rejected assumptions for "
+                    "later comparison. Keep any agency rewards experiment "
+                    "outside portfolio funding and performance reporting. The "
+                    "objective is a repeatable, auditable spread after real "
+                    "costs, not the largest auction invoice or the highest "
+                    "interest rate displayed in a sales presentation."
+                ),
+            ],
+            "table": {
+                "caption": "Single-Factor Stress Tests and Separate Agency Rewards Economics",
+                "headers": [
+                    "Independent stress or adjacent operating case",
+                    "Conservative result or clearly separate unit calculation",
+                    "Base result or clearly separate funding implication",
+                    "Scaled result or concrete operating fallback",
+                ],
+                "rows": [
+                    [
+                        "Realized revenue falls two percentage points against deployed principal",
+                        "$2,500 owner profit remains after the $2,000 revenue reduction",
+                        "$28,437.50 owner profit remains after the $13,000 revenue reduction",
+                        "$75,000 owner profit remains after the $24,000 revenue reduction",
+                    ],
+                    [
+                        "One quarter of realized revenue moves into next year",
+                        "$750 current-year owner profit remains before additional financing costs",
+                        "$17,062.50 current-year owner profit remains before additional financing costs",
+                        "$54,000 current-year owner profit remains before additional financing costs",
+                    ],
+                    [
+                        "Additional principal impairment equals one percent beyond existing provisions",
+                        "$3,500 owner profit remains after the incremental $1,000 loss",
+                        "$34,937.50 owner profit remains after the incremental $6,500 loss",
+                        "$87,000 owner profit remains after the incremental $12,000 loss",
+                    ],
+                    [
+                        "Contractor delivery expense increases twenty-five percent with revenue unchanged",
+                        "$3,750 owner profit remains after $750 additional contractor expense",
+                        "$36,937.50 owner profit remains after $4,500 additional contractor expense",
+                        "$92,000 owner profit remains after $7,000 additional contractor expense",
+                    ],
+                    [
+                        "Separate agency reward arrangement processes genuine authorized advertising spend",
+                        "$100,000 spend earns $2,500 gross rewards under illustrative terms",
+                        "$400 remains after processing financing and required client pass-through",
+                        "$100 remains after $300 labor outside lien portfolio economics",
+                    ],
+                    [
+                        "Separate agency volume rebate disappears while other costs persist",
+                        "$500 rebate loss turns the after-labor result negative immediately",
+                        "$400 monthly loss requires stopping dependence on contingent rewards",
+                        "Move to client-direct billing or prefunded approved agency terms",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Verify the claim, the spread, the cash, and the separation",
+                "body": (
+                    "Release the next purchase batch only when the underlying evidence "
+                    "supports the economics and the dated funding plan."
+                ),
+                "items": [
+                    "Verify current county eligibility, deposit deadlines, bid-rate rules, and the redemption calculation against the actual certificate or deed being purchased.",
+                    "Verify parcel identity, title exceptions, bankruptcy indicators, notice requirements, and lawful surplus distribution before assigning a foreclosure or disposition recovery value.",
+                    "Verify that the ninety-day delay bridge and contractor obligations fit available capital without counting unpaid redemptions, restricted deposits, or unpriced employee labor as resources.",
+                    "Verify that any agency rewards activity has written client authorization, eligible payment terms, separate records, and no dependence on lien settlement reserves.",
+                ],
+            },
+        },
+    ],
+    "pull_quote": "A tax lien earns its spread only when enforceable proceeds clear the bank after every cost and every day of locked capital.",
+    "diagram_id": "diag-03",
+    "action_checklist": [
+        "Build a certificate-level cash register separating purchase principal, premium, advances, collectible income, expected redemption dates, and cleared bank receipts.",
+        "Reproduce the $4,500, $41,437.50 unrounded, and $99,000 annual profit bridges using the six expense buckets, then display Base profit as $41,438.",
+        "Price acquisition per funded asset and contractor delivery per completed task; add any employee compensation absent from the canonical budget as an explicit sensitivity.",
+        "Create the reserve rollforward and prevent duplicated deductions when reversed income, refunded principal, or impaired assets move between managerial and accounting records.",
+        "Fund the dated collection-delay bridge or reduce replacement purchases; test the Scaled plan against the $1,500,000 startup capital ceiling.",
+        "Keep authorized agency advertising rewards outside lien revenue, document actual reward eligibility, and switch to client-direct or prefunded terms when the net spread fails.",
+    ],
+    "statutory_citations": [
+        {
+            "title": "Florida Statutes § 197.172 — Interest rate and calculation",
+            "url": "https://www.flsenate.gov/Laws/Statutes/2025/197.172",
+            "relevance": "Establishes statutory interest rules that must be distinguished from the winning certificate bid rate and realized portfolio return.",
+        },
+        {
+            "title": "Florida Statutes § 197.432 — Sale of tax certificates for unpaid taxes",
+            "url": "https://www.flsenate.gov/Laws/Statutes/2025/197.432",
+            "relevance": "Governs certificate sale mechanics and supports bid-down underwriting based on the actual auction outcome.",
+        },
+        {
+            "title": "Florida Statutes § 197.472 — Redemption of tax certificates",
+            "url": "https://www.flsenate.gov/Laws/Statutes/2025/197.472",
+            "relevance": "Controls redemption payment components and minimum-interest treatment, including the exception affecting zero-percent bids.",
+        },
+        {
+            "title": "Arizona Revised Statutes § 42-18114 — Sale of tax lien; interest rate",
+            "url": "https://www.azleg.gov/ars/42/18114.htm",
+            "relevance": "Provides Arizona's certificate bidding framework; prevents importing another state's rate or redemption assumptions into Arizona assets.",
+        },
+        {
+            "title": "Texas Tax Code § 34.21 — Right of redemption",
+            "url": "https://statutes.capitol.texas.gov/Docs/TX/htm/TX.34.htm#34.21",
+            "relevance": "Defines property-dependent redemption periods and premium calculations for qualifying tax-sale property redemptions.",
+        },
+        {
+            "title": "Tyler v. Hennepin County, 598 U.S. 631 (2023)",
+            "url": "https://www.law.cornell.edu/supremecourt/text/22-166",
+            "relevance": "Requires recovery underwriting to account for constitutional protection of surplus equity rather than assuming government may retain value beyond the tax debt.",
+        },
+        {
+            "title": "11 U.S.C. § 362 — Automatic stay",
+            "url": "https://www.law.cornell.edu/uscode/text/11/362",
+            "relevance": "Can constrain collection and enforcement activity after a bankruptcy filing, requiring case-specific review of recovery dates and permissible actions.",
+        },
+    ],
+}

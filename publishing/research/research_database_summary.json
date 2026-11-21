@@ -1,6 +1,6 @@
 {
-  "abridged_video_count": 3834,
-  "raw_video_count": 3834,
+  "abridged_video_count": 4009,
+  "raw_video_count": 4009,
   "summary": {
     "type": "dict",
     "keys": [
@@ -22,11 +22,11 @@
       "coverage": 6
     },
     "values": {
-      "generated_at": "2026-11-21T23:07:58+00:00",
+      "generated_at": "2026-11-21T23:17:45+00:00",
       "schema_version": "1.0"
     }
   },
-  "generated_at": "2026-11-21T23:07:58Z",
+  "generated_at": "2026-11-21T23:17:45Z",
   "counts": {
     "topics": 8
   },
@@ -34,9 +34,9 @@
     {
       "topic_id": "business_model_and_economics",
       "title": "Business Model, Contingency Economics & Deal Scale",
-      "video_count": 3065,
-      "tip_count": 6294,
-      "channel_count": 2047,
+      "video_count": 3155,
+      "tip_count": 6370,
+      "channel_count": 2090,
       "top_sources": [
         {
           "video_id": "LKEn47f67vQ",
@@ -198,36 +198,36 @@
         "form or",
         "form you",
         "form a",
+        "form on",
         "form so",
         "form in",
-        "form on",
         "form where",
         "form with",
         "form your",
         "form like",
         "court order",
         "form as",
+        "quiet title",
         "form it",
         "form if",
         "form at",
         "form I",
         "form their",
-        "letters of administration",
         "form uh",
+        "letters of administration",
         "form which",
         "form content",
         "form um",
+        "Chapter 7",
         "form called",
+        "form here",
         "form an",
         "form below",
-        "Chapter 7",
-        "form here",
         "form we",
         "form but",
         "form from",
         "form right",
-        "Protection Act",
-        "form they"
+        "form them"
       ],
       "tools_and_portals": [
         "Google",
@@ -257,10 +257,10 @@
         "https://www.moneymakingjug.com/inquiry",
         "https://winnerswaybook.com/",
         "https://www.youtube.com/kizzyparks/?sub_confirmation=1",
+        "PropStream",
         "https://govconwinners.clickfunnels.com/make-money-strategy-video",
         "https://wise.com/invite/dic/todorivanovk1",
         "https://www.MediaOptions.com",
-        "PropStream",
         "https://www.instagram.com/erizzyy/",
         "https://www.surplusfunds101.com/freecallingscript",
         "https://www.youtube.com/watch?v=FWfV2m3K4jY",
@@ -275,9 +275,9 @@
     {
       "topic_id": "probate_and_docket_sourcing",
       "title": "County Probate Dockets, Intestate Filings & Estate Leads",
-      "video_count": 2881,
-      "tip_count": 6217,
-      "channel_count": 1827,
+      "video_count": 3052,
+      "tip_count": 6520,
+      "channel_count": 1896,
       "top_sources": [
         {
           "video_id": "Lt0e4PdSMmo",
@@ -434,41 +434,41 @@
         "form that",
         "form to",
         "form the",
-        "form for",
         "form is",
+        "form for",
         "form a",
         "form you",
         "form or",
         "court order",
-        "form your",
-        "form in",
         "form on",
+        "form in",
+        "form your",
+        "quiet title",
         "form below",
         "form where",
         "form like",
         "form with",
         "form so",
+        "Chapter 7",
         "letters of administration",
         "form it",
         "form their",
-        "Chapter 7",
-        "form as",
-        "form Commercial",
+        "Chapter 13",
         "form I",
         "Form uh",
-        "form if",
-        "protection act",
-        "Chapter 13",
+        "form as",
         "form at",
+        "form but",
+        "form Commercial",
+        "form if",
         "form we",
         "form which",
-        "form but",
-        "form um",
-        "letters testamentary",
-        "property Act",
+        "protection act",
         "form here",
-        "form an",
-        "form will"
+        "form um",
+        "warranty deed",
+        "letters testamentary",
+        "property Act"
       ],
       "tools_and_portals": [
         "Google",
@@ -481,19 +481,23 @@
         "https://www.facebook.com/groups/assetrecovery",
         "https://www.moneymakingjug.com/inquiry",
         "FamilySearch",
-        "https://probatemastery.com",
         "Bing",
+        "https://probatemastery.com",
         "https://www.instagram.com/erizzyy/",
+        "https://TaxLienSchool.com",
         "https://www.youtube.com/@realestateinprobate",
         "https://estateprofessionalsmastermind.buzzsprout.com/share",
         "https://probatemastery.com/earn-attorney-referrals-now-course-pricing/",
+        "https://taxlienschool.com/ytabcs",
         "https://www.facebook.com/ProbateMastery/",
         "https://www.govconwinners.com/",
         "https://www.instagram.com/coachbrucehill/",
+        "PropStream",
         "https://probatemastery.com/discovery-call/",
+        "https://taxlienschool.com/ytcall",
+        "https://vault.taxlienschool.com/",
         "https://wise.com/invite/dic/todorivanovk1",
         "https://youtu.be/YyPdhpdEs5c",
-        "PropStream",
         "https://profitablecontracts.co/",
         "https://www.facebook.com/groups/gcwalways",
         "https://youtu.be/-XAlvMJRIEM",
@@ -501,24 +505,20 @@
         "https://facebook.com/groups/estateprofessionalsmastermind",
         "https://www.surplusfunds101.com/freecallingscript",
         "https://www.youtube.com/surplusfunds101",
+        "PACER",
         "https://www.facebook.com/groups/770825015084618",
         "https://www.unclaimedceo.com/linkme",
-        "PACER",
         "https://winnerswaybook.com/",
         "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
-        "https://www.instagram.com/thedavidwilkerson",
-        "https://www.unclaimedceo.com/freemasterclass",
-        "https://www.youtube.com/kizzyparks/?sub_confirmation=1",
-        "https://govconwinners.clickfunnels.com/make-money-strategy-video",
-        "https://www.unclaimedceo.com/digitalcourse"
+        "http://TaxSaleHQ.com"
       ]
     },
     {
       "topic_id": "unclaimed_property_and_escheat",
       "title": "State Unclaimed Property, Escheated Funds & Treasury Claims",
-      "video_count": 811,
-      "tip_count": 1846,
-      "channel_count": 537,
+      "video_count": 859,
+      "tip_count": 1911,
+      "channel_count": 558,
       "top_sources": [
         {
           "video_id": "D-PMjgNe-7s",
@@ -677,16 +677,17 @@
         "form to",
         "Form is",
         "form you",
-        "form for",
         "form the",
+        "form for",
         "form or",
         "form a",
+        "form but",
         "form with",
         "form on",
-        "form but",
         "Form uh",
         "form we",
         "form your",
+        "court order",
         "form in",
         "form it",
         "form so",
@@ -694,22 +695,21 @@
         "form if",
         "form our",
         "form where",
-        "court order",
+        "quiet title",
+        "form at",
         "form them",
         "form this",
         "form um",
+        "form which",
         "affidavit of heirship",
+        "Chapter 7",
+        "form as",
         "form from",
         "form like",
         "form today",
-        "form which",
         "form all",
-        "form as",
-        "form at",
         "form because",
-        "form due",
-        "form I",
-        "form was"
+        "form due"
       ],
       "tools_and_portals": [
         "Google",
@@ -731,35 +731,35 @@
         "https://www.unclaimedceo.com/freemasterclass",
         "https://www.unclaimedceo.com/digitalcourse",
         "https://www.unclaimedceo.com/get-my-free-guide",
-        "https://tinyurl.com/unclaimedmentor",
         "Regrid",
+        "https://tinyurl.com/unclaimedmentor",
         "https://www.unclaimedceo.com/home-page-8750",
+        "PACER",
+        "Bing",
         "http://springsolutionsllcwordpress.com/",
         "https://recover-bankruptcy-unclaimed-funds.teachable.com/",
         "https://recover-bankruptcy-unclaimed-funds.teachable.com/p/bankruptcy-unclaimed-funds-hack",
         "https://recover-bankruptcy-unclaimed-funds.teachable.com/purchase?product_id=4503793",
         "https://sso.teachable.com/secure/657120/checkout/4503791/state-unclaimed-funds-guide",
         "https://www.youtube.com/watch?v=jlSGch2JEn0&t=540s",
-        "PACER",
         "DataTree",
-        "Ancestry",
-        "Bing",
-        "https://moneymakingjuggernaut.setmore.com",
-        "Small Estate",
-        "https://www.instagram.com/erizzyy",
-        "https://semenata.org",
-        "https://skool.com/surplusfunds",
-        "https://surplusfunds.ai",
-        "https://www.surplusfunds101.com/contractlibrary",
-        "Neo4j"
+        "http://CaseyDenman.com",
+        "http://Facebook.com/TheTaxSaleAcademy",
+        "http://Instagram.com/caseydenman",
+        "http://TaxSaleAcademy.com",
+        "http://TaxSaleAcademy.com/join",
+        "http://TaxSaleAcademy.com/state-guide",
+        "http://TaxSaleHQ.com",
+        "http://TaxSalePodcast.com",
+        "http://www.linkedin.com/in/caseydenman/"
       ]
     },
     {
       "topic_id": "genealogy_and_heirship_proof",
       "title": "Forensic Genealogy, Per-Stirpes Kinship & Proof of Heirship",
-      "video_count": 3116,
-      "tip_count": 3944,
-      "channel_count": 2060,
+      "video_count": 3275,
+      "tip_count": 3974,
+      "channel_count": 2123,
       "top_sources": [
         {
           "video_id": "7M3XZfN7814",
@@ -921,36 +921,36 @@
         "form you",
         "form or",
         "form a",
-        "form your",
         "form so",
+        "form your",
         "form on",
         "form in",
         "form with",
         "form where",
         "form like",
+        "quiet title",
         "form as",
         "form below",
-        "form it",
         "form at",
+        "form it",
         "form I",
         "form if",
         "form which",
-        "form content",
         "form their",
-        "Form uh",
-        "form um",
         "court order",
-        "form called",
-        "form Commercial",
+        "form content",
+        "Form uh",
         "form here",
-        "form from",
+        "form um",
+        "form called",
         "form we",
+        "form Commercial",
+        "Chapter 13",
+        "Chapter 7",
+        "form but",
+        "form from",
         "form they",
-        "letters of administration",
-        "property Act",
-        "Protection Act",
-        "form an",
-        "form but"
+        "warranty deed"
       ],
       "tools_and_portals": [
         "Google",
@@ -965,12 +965,16 @@
         "https://www.moneymakingjug.com/inquiry",
         "Bing",
         "https://www.instagram.com/erizzyy/",
+        "https://TaxLienSchool.com",
         "https://www.surplusfunds101.com/freecallingscript",
         "https://wise.com/invite/dic/todorivanovk1",
         "https://www.youtube.com/surplusfunds101",
         "https://www.govconwinners.com/",
         "https://youtu.be/YyPdhpdEs5c",
         "https://profitablecontracts.co/",
+        "https://taxlienschool.com/ytabcs",
+        "https://taxlienschool.com/ytcall",
+        "https://vault.taxlienschool.com/",
         "https://www.facebook.com/groups/gcwalways",
         "https://youtu.be/-XAlvMJRIEM",
         "https://youtu.be/VunK8iso33g",
@@ -979,28 +983,24 @@
         "https://winnerswaybook.com/",
         "https://www.unclaimedceo.com/linkme",
         "https://www.youtube.com/kizzyparks/?sub_confirmation=1",
+        "PropStream",
         "https://govconwinners.clickfunnels.com/make-money-strategy-video",
         "https://www.facebook.com/groups/770825015084618",
-        "PropStream",
         "https://www.MediaOptions.com",
         "https://www.unclaimedceo.com/freemasterclass",
         "https://www.unclaimedceo.com/digitalcourse",
         "https://www.unclaimedceo.com/get-my-free-guide",
-        "https://instagram.com/courtneyfricke",
-        "https://tiktok.com/@courtney.fricke",
-        "https://www.facebook.com/courtneyfricke19/",
-        "https://x.com/courtneyfricke",
         "PACER",
-        "http://familysearch.me/facebook",
-        "http://familysearch.me/home"
+        "http://secretsoftaxlieninvesting.com",
+        "http://TaxSaleHQ.com"
       ]
     },
     {
       "topic_id": "skip_tracing_and_outreach",
       "title": "Skip Tracing, Ethical Heir Contact & Trust Building",
-      "video_count": 2112,
-      "tip_count": 1147,
-      "channel_count": 1396,
+      "video_count": 2258,
+      "tip_count": 1151,
+      "channel_count": 1455,
       "top_sources": [
         {
           "video_id": "DgzklijTLzE",
@@ -1152,13 +1152,13 @@
         }
       ],
       "statutes_and_forms": [
-        "form and",
         "form of",
+        "form and",
         "form that",
-        "form for",
         "form to",
-        "form or",
+        "form for",
         "form you",
+        "form or",
         "form is",
         "form the",
         "form a",
@@ -1166,32 +1166,32 @@
         "form where",
         "form like",
         "form on",
+        "quiet title",
         "form with",
         "form in",
         "form so",
         "court order",
         "form as",
         "form um",
+        "form at",
         "form their",
         "Form uh",
         "form which",
         "Protection Act",
-        "form at",
         "form below",
-        "form content",
         "form I",
-        "form if",
         "form it",
+        "form but",
+        "form content",
+        "form if",
+        "Chapter 7",
         "form called",
         "form Commercial",
-        "form but",
         "form here",
-        "Chapter 7",
-        "form right",
         "Chapter 13",
         "form them",
-        "form they",
-        "Copyright Act"
+        "warranty deed",
+        "form right"
       ],
       "tools_and_portals": [
         "LinkedIn",
@@ -1203,16 +1203,29 @@
         "https://probatemastery.com",
         "https://excesselite.com",
         "https://www.facebook.com/groups/assetrecovery",
+        "https://TaxLienSchool.com",
         "https://www.moneymakingjug.com/inquiry",
         "PropStream",
         "https://www.surplusfunds101.com/freecallingscript",
+        "https://taxlienschool.com/ytcall",
+        "https://vault.taxlienschool.com/",
         "https://www.youtube.com/surplusfunds101",
+        "https://taxlienschool.com/ytabcs",
         "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
         "https://facebook.com/groups/estateprofessionalsmastermind",
         "https://www.instagram.com/thedavidwilkerson",
+        "http://TaxSaleHQ.com",
         "https://www.govconwinners.com/",
         "https://www.instagram.com/erizzyy/",
         "https://www.MediaOptions.com",
+        "http://CaseyDenman.com",
+        "http://Facebook.com/TheTaxSaleAcademy",
+        "http://Instagram.com/caseydenman",
+        "http://TaxSaleAcademy.com",
+        "http://TaxSaleAcademy.com/join",
+        "http://TaxSaleAcademy.com/state-guide",
+        "http://TaxSalePodcast.com",
+        "http://www.linkedin.com/in/caseydenman/",
         "https://estateprofessionalsmastermind.buzzsprout.com/share",
         "https://probatemastery.com/discovery-call/",
         "https://probatemastery.com/earn-attorney-referrals-now-course-pricing/",
@@ -1220,28 +1233,15 @@
         "https://www.instagram.com/coachbrucehill/",
         "https://www.youtube.com/@realestateinprobate",
         "https://youtu.be/YyPdhpdEs5c",
-        "https://instagram.com/courtneyfricke",
-        "https://profitablecontracts.co/",
-        "https://tiktok.com/@courtney.fricke",
-        "https://www.facebook.com/courtneyfricke19/",
-        "https://www.facebook.com/groups/770825015084618",
-        "https://www.facebook.com/groups/gcwalways",
-        "https://www.youtube.com/@courtneyfricke",
-        "https://x.com/courtneyfricke",
-        "https://youtu.be/-XAlvMJRIEM",
-        "https://youtu.be/VunK8iso33g",
-        "Ancestry",
-        "https://winnerswaybook.com/",
-        "https://www.unclaimedceo.com/linkme",
-        "https://www.youtube.com/kizzyparks/?sub_confirmation=1"
+        "https://instagram.com/courtneyfricke"
       ]
     },
     {
       "topic_id": "contracts_and_compensation",
       "title": "Fee Agreements, Assignments of Interest & Escrow Disbursement",
-      "video_count": 3003,
-      "tip_count": 4693,
-      "channel_count": 1945,
+      "video_count": 3170,
+      "tip_count": 5670,
+      "channel_count": 2012,
       "top_sources": [
         {
           "video_id": "VBvaq5etzV4",
@@ -1251,11 +1251,25 @@
           "duration": "00:02:55"
         },
         {
+          "video_id": "XgowlA2cjZA",
+          "title": "How to Clear a Title in Texas: Liens, Closing Problems, Quiet Title",
+          "author": "Stacked Legal",
+          "url": "https://www.youtube.com/watch?v=XgowlA2cjZA",
+          "duration": "00:10:07"
+        },
+        {
           "video_id": "dwH7f7RGYC4",
           "title": "What Is A Lien | Real Estate Exam Prep",
           "author": "The Real Estate Classroom",
           "url": "https://www.youtube.com/watch?v=dwH7f7RGYC4",
           "duration": "00:16:42"
+        },
+        {
+          "video_id": "stcKbUxhc84",
+          "title": "Quick Tips | Filling Out IRS Form 12277: Application for Withdrawal of Federal Tax Lien",
+          "author": "Canopy",
+          "url": "https://www.youtube.com/watch?v=stcKbUxhc84",
+          "duration": "00:04:57"
         },
         {
           "video_id": "cZtaubxDzMA",
@@ -1279,25 +1293,11 @@
           "duration": "00:05:35"
         },
         {
-          "video_id": "HPyO3dkjbCQ",
-          "title": "HOW TO FIND LIENS & TITLE SEARCH IN TEXAS",
-          "author": "AFX Research LLC",
-          "url": "https://www.youtube.com/watch?v=HPyO3dkjbCQ",
-          "duration": "00:03:48"
-        },
-        {
-          "video_id": "Z2ZeI5rayvk",
-          "title": "How to find what the government paid on previously awarded contracts! #govcon #governmentcontracting",
-          "author": "Fox Wade",
-          "url": "https://www.youtube.com/watch?v=Z2ZeI5rayvk",
-          "duration": "00:06:38"
-        },
-        {
-          "video_id": "-HFzhDO6v-A",
-          "title": "How Judgment Liens Show Up in Courthouse Records — And How to Find Them | Hidden Power Files",
-          "author": "Hidden Power Files",
-          "url": "https://www.youtube.com/watch?v=-HFzhDO6v-A",
-          "duration": "00:06:40"
+          "video_id": "D-ia73OSPG0",
+          "title": "Federal Tax Lien Filed Against You? Here's Exactly What to Do in 2026",
+          "author": "IRS FBAR Tax Attorney | Offshore Reporting Defense",
+          "url": "https://www.youtube.com/watch?v=D-ia73OSPG0",
+          "duration": "00:04:59"
         }
       ],
       "top_timestamped_insights": [
@@ -1338,6 +1338,24 @@
           "verbatim_research_only": true
         },
         {
+          "tip_paraphrase_summary": "Most of the time, but not all the time, but most of the time, you're not going to get the property. So don't think…",
+          "category": "Pitfall / Hard No",
+          "timestamp": "00:00:30",
+          "link": "https://www.youtube.com/watch?v=B0WBR5swuac&t=30s",
+          "video_title": "How Does Cook County Tax Sale Work?",
+          "author": "Bob Diamond - America's Tax Sale Attorney",
+          "verbatim_research_only": true
+        },
+        {
+          "tip_paraphrase_summary": "All right so always look at the property boots on the ground, feet on the ground makes a difference. If you can't do that…",
+          "category": "Pitfall / Hard No",
+          "timestamp": "00:12:27",
+          "link": "https://www.youtube.com/watch?v=LsEFs7uqzbA&t=747s",
+          "video_title": "Is Indiana A Tax Lien State?",
+          "author": "Ted Thomas",
+          "verbatim_research_only": true
+        },
+        {
           "tip_paraphrase_summary": "0:03:02.1 S2: Well, that person... And they just stated that they don't want somebody coming over to their house, not that they didn't wanna…",
           "category": "Pitfall / Hard No",
           "timestamp": "00:03:01",
@@ -1365,74 +1383,56 @@
           "verbatim_research_only": true
         },
         {
-          "tip_paraphrase_summary": "Amenities like a pool or laundry services locations what are the locations nearby this RV park that they service as well as nearby attractions…",
-          "category": "Pitfall / Hard No",
-          "timestamp": "00:03:57",
-          "link": "https://www.youtube.com/watch?v=n68rh1s-ZdY&t=237s",
-          "video_title": "Is Your Website Structure Hurting Your SEO? Do this!",
-          "author": "BKA Content",
-          "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "Say the topic is five common Guest Grill problems and how to fix them as you select the category as Guest Grills and you…",
-          "category": "Pitfall / Hard No",
-          "timestamp": "00:04:27",
-          "link": "https://www.youtube.com/watch?v=2XsoKvArFjo&t=267s",
-          "video_title": "6 Best Internal Linking Practices for Higher Rankings",
-          "author": "Rank Math SEO",
-          "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "What do you think it costs you per day? You know, you average a hundred miles or 200 miles a day, or a hundred…",
+          "tip_paraphrase_summary": "Which means you get an interest rate when they pay it off, and the other half offer tax deeds, which means you put the…",
           "category": "Legal / Deadline",
-          "timestamp": "00:01:21",
-          "link": "https://www.youtube.com/watch?v=60uc8gnDCiY&t=81s",
-          "video_title": "How To Estimate Equipment Cost In Construction",
-          "author": "George Hedley | HardHat BIZCOACH",
+          "timestamp": "00:01:42",
+          "link": "https://www.youtube.com/watch?v=nbHUraglUQo&t=102s",
+          "video_title": "How To Buy Over-The-Counter Tax Deeds",
+          "author": "Saen Higgins",
           "verbatim_research_only": true
         }
       ],
       "statutes_and_forms": [
-        "form and",
         "form of",
+        "form and",
         "form that",
         "form for",
         "form to",
         "Form is",
         "form the",
-        "form or",
         "form you",
+        "form or",
         "form a",
-        "form with",
         "form on",
+        "form with",
+        "form so",
         "form your",
         "form like",
-        "form so",
         "form in",
-        "form where",
         "court order",
+        "form where",
         "form as",
+        "quiet title",
         "form below",
         "form at",
+        "Chapter 7",
         "form it",
         "form their",
-        "letters of administration",
         "form I",
         "Form uh",
+        "letters of administration",
         "form which",
         "form um",
-        "Chapter 7",
+        "Chapter 13",
         "form content",
         "form if",
         "form called",
         "form we",
-        "Protection Act",
-        "form Commercial",
-        "form from",
         "form here",
-        "Chapter 13",
+        "Protection Act",
         "form but",
-        "letters testamentary"
+        "form Commercial",
+        "form from"
       ],
       "tools_and_portals": [
         "Google",
@@ -1447,6 +1447,7 @@
         "Bing",
         "https://probatemastery.com",
         "https://www.instagram.com/erizzyy/",
+        "https://TaxLienSchool.com",
         "FamilySearch",
         "https://www.govconwinners.com/",
         "https://www.youtube.com/@realestateinprobate",
@@ -1461,28 +1462,27 @@
         "https://youtu.be/-XAlvMJRIEM",
         "https://youtu.be/VunK8iso33g",
         "https://probatemastery.com/discovery-call/",
+        "https://taxlienschool.com/ytabcs",
+        "https://taxlienschool.com/ytcall",
+        "https://vault.taxlienschool.com/",
         "https://wise.com/invite/dic/todorivanovk1",
         "https://www.youtube.com/surplusfunds101",
+        "PropStream",
         "https://facebook.com/groups/estateprofessionalsmastermind",
         "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
-        "PropStream",
         "https://winnerswaybook.com/",
         "https://www.instagram.com/thedavidwilkerson",
-        "https://www.facebook.com/groups/770825015084618",
-        "https://www.unclaimedceo.com/linkme",
-        "https://www.youtube.com/kizzyparks/?sub_confirmation=1",
         "PACER",
-        "https://govconwinners.clickfunnels.com/make-money-strategy-video",
-        "https://www.MediaOptions.com",
-        "https://www.unclaimedceo.com/freemasterclass"
+        "https://www.facebook.com/groups/770825015084618",
+        "https://www.unclaimedceo.com/linkme"
       ]
     },
     {
       "topic_id": "statutory_caps_and_licensing",
       "title": "State Fee Caps, Waiting Periods, PI Licensing & UPL Rules",
-      "video_count": 3223,
-      "tip_count": 3390,
-      "channel_count": 2047,
+      "video_count": 3393,
+      "tip_count": 3494,
+      "channel_count": 2116,
       "top_sources": [
         {
           "video_id": "ttoT3V6duzU",
@@ -1570,6 +1570,15 @@
           "verbatim_research_only": true
         },
         {
+          "tip_paraphrase_summary": "I'm happy to send it to anyone that contacts us and it specifically addresses the time frame associated with most quiet title lawsuits that…",
+          "category": "Legal / Deadline",
+          "timestamp": "00:01:36",
+          "link": "https://www.youtube.com/watch?v=kJRxvYeK_eU&t=96s",
+          "video_title": "Quiet Title Process and Timeline",
+          "author": "Quiet Title Michigan",
+          "verbatim_research_only": true
+        },
+        {
           "tip_paraphrase_summary": "Succeed and you can claim 5% royalties on their sales uh the reward uh can be significant. So a few of the um uh…",
           "category": "Legal / Deadline",
           "timestamp": "00:02:21",
@@ -1597,6 +1606,15 @@
           "verbatim_research_only": true
         },
         {
+          "tip_paraphrase_summary": "Even the IRS. Okay, so it gets everybody's attention. And then they come down and pay it off. But if they don't come in…",
+          "category": "Pitfall / Hard No",
+          "timestamp": "00:06:51",
+          "link": "https://www.youtube.com/watch?v=EXkUbWWenl0&t=411s",
+          "video_title": "How To Foreclose On A Tax Lien Property",
+          "author": "Saen Higgins",
+          "verbatim_research_only": true
+        },
+        {
           "tip_paraphrase_summary": "MONTH, AND YOU BRING IN YOUR LICENSE AND NOW THEY GOTTA PAY YOU $15 AND IT DIDN'T INCREASE THE SALE OF THE JEANS, WELL…",
           "category": "Sequence / Alternative",
           "timestamp": "00:08:49",
@@ -1613,24 +1631,6 @@
           "video_title": "How the Depletion Allowance Works in Oil & Gas",
           "author": "ADKF | With You All The Way",
           "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "You would upload those necessary documents, make the payment of required fees, and then you would receive a receipt from the USPTO providing your…",
-          "category": "Legal / Deadline",
-          "timestamp": "00:32:53",
-          "link": "https://www.youtube.com/watch?v=binARAl4AK8&t=1973s",
-          "video_title": "Path to a Patent, Part I - Intellectual property basics",
-          "author": "USPTOvideo",
-          "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "Studying their product line keep on out thinking them be be an ass that keep on coming up with a lot of ideas because…",
-          "category": "Pitfall / Hard No",
-          "timestamp": "00:05:05",
-          "link": "https://www.youtube.com/watch?v=hbfKyomYp6U&t=305s",
-          "video_title": "The Licensing Lifestyle with Stephen Key",
-          "author": "inventRightTV",
-          "verbatim_research_only": true
         }
       ],
       "statutes_and_forms": [
@@ -1641,39 +1641,39 @@
         "form for",
         "form is",
         "form the",
-        "form a",
         "form you",
         "form or",
+        "form a",
         "form on",
         "form your",
         "form in",
-        "form where",
-        "form with",
         "court order",
+        "form where",
         "form so",
+        "form with",
         "form like",
+        "quiet title",
         "form below",
+        "Chapter 7",
         "form it",
         "form their",
-        "letters of administration",
         "Form uh",
+        "letters of administration",
+        "Chapter 13",
         "form as",
         "form I",
-        "Chapter 7",
         "form at",
-        "Protection Act",
-        "form Commercial",
-        "form if",
+        "form but",
         "form um",
         "form we",
         "form which",
-        "Chapter 13",
-        "form but",
-        "form an",
+        "Protection Act",
+        "form Commercial",
+        "form if",
         "form here",
-        "letters testamentary",
-        "property Act",
-        "form from"
+        "warranty deed",
+        "form an",
+        "letters testamentary"
       ],
       "tools_and_portals": [
         "Google",
@@ -1683,22 +1683,26 @@
         "CSV",
         "Ancestry",
         "https://excesselite.com",
+        "Bing",
         "https://www.facebook.com/groups/assetrecovery",
         "https://www.moneymakingjug.com/inquiry",
-        "Bing",
         "FamilySearch",
         "https://probatemastery.com",
         "https://www.instagram.com/erizzyy/",
+        "https://TaxLienSchool.com",
         "https://www.govconwinners.com/",
         "https://www.youtube.com/@realestateinprobate",
+        "PropStream",
         "https://estateprofessionalsmastermind.buzzsprout.com/share",
         "https://probatemastery.com/earn-attorney-referrals-now-course-pricing/",
+        "https://taxlienschool.com/ytabcs",
         "https://www.facebook.com/ProbateMastery/",
         "https://www.instagram.com/coachbrucehill/",
         "https://youtu.be/YyPdhpdEs5c",
-        "PropStream",
         "https://probatemastery.com/discovery-call/",
         "https://profitablecontracts.co/",
+        "https://taxlienschool.com/ytcall",
+        "https://vault.taxlienschool.com/",
         "https://wise.com/invite/dic/todorivanovk1",
         "https://www.facebook.com/groups/gcwalways",
         "https://youtu.be/-XAlvMJRIEM",
@@ -1706,24 +1710,20 @@
         "https://facebook.com/groups/estateprofessionalsmastermind",
         "https://www.surplusfunds101.com/freecallingscript",
         "https://www.youtube.com/surplusfunds101",
+        "PACER",
         "https://winnerswaybook.com/",
         "https://www.facebook.com/groups/770825015084618",
         "https://www.unclaimedceo.com/linkme",
-        "PACER",
         "https://www.youtube.com/kizzyparks/?sub_confirmation=1",
-        "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
-        "https://govconwinners.clickfunnels.com/make-money-strategy-video",
-        "https://www.instagram.com/thedavidwilkerson",
-        "https://www.unclaimedceo.com/freemasterclass",
-        "Small Estate"
+        "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV"
       ]
     },
     {
       "topic_id": "automation_and_small_team_ops",
       "title": "Docket Automation, AI Abstracting & Small-Team Operations",
-      "video_count": 2782,
-      "tip_count": 7504,
-      "channel_count": 1867,
+      "video_count": 2851,
+      "tip_count": 7623,
+      "channel_count": 1903,
       "top_sources": [
         {
           "video_id": "zqtx1Soeq5E",
@@ -1892,29 +1892,29 @@
         "form your",
         "form in",
         "form like",
-        "form below",
-        "form as",
         "court order",
+        "form as",
+        "form below",
         "form it",
         "form which",
         "letters of administration",
-        "form content",
-        "form if",
         "Form uh",
         "form at",
-        "form I",
+        "form content",
+        "form if",
+        "Chapter 7",
         "form we",
-        "form um",
         "form but",
+        "form I",
+        "form um",
+        "form here",
+        "Chapter 13",
+        "form called",
         "form from",
         "form their",
-        "Chapter 7",
-        "form called",
-        "form here",
         "form because",
         "form this",
-        "letters testamentary",
-        "form better"
+        "letters testamentary"
       ],
       "tools_and_portals": [
         "Google",
@@ -1944,11 +1944,11 @@
         "https://www.facebook.com/groups/770825015084618",
         "https://www.unclaimedceo.com/linkme",
         "PropStream",
+        "PACER",
         "https://facebook.com/groups/estateprofessionalsmastermind",
         "https://www.unclaimedceo.com/digitalcourse",
         "https://www.unclaimedceo.com/freemasterclass",
         "https://www.unclaimedceo.com/get-my-free-guide",
-        "PACER",
         "Small Estate",
         "DataTree",
         "https://www.govconwinners.com/",
@@ -1968,9 +1968,9 @@
       "headline": "Heir location is paid on contingency, never on up-front fees.",
       "summary": "Across the corpus, operators converge on a pure contingency model: the heir pays nothing out of pocket, the locator advances all research cost, and the fee is a negotiated percentage released only when the estate or state agency actually disburses funds. Charging an heir an advance fee is treated as the single clearest marker of a predatory or unlicensed operator.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 2047,
-      "video_count": 3065,
-      "corroborating_tip_count": 6294,
+      "channel_count": 2090,
+      "video_count": 3155,
+      "corroborating_tip_count": 6370,
       "supporting_links": [
         {
           "video_title": "State Funds Tutorial New Mexico: How To Register As A Property Locator In The State Of New Mexico.",
@@ -2018,9 +2018,9 @@
       "headline": "Fresh county probate and intestate dockets outperform purchased lead lists.",
       "summary": "Practitioners consistently build pipeline from newly filed probate and administration matters pulled directly from county clerk portals rather than resold lists. Filings naming an administrator but no located heirs, and estates sitting open past the local notice period, are the recurring high-value signal.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 1827,
-      "video_count": 2881,
-      "corroborating_tip_count": 6217,
+      "channel_count": 1896,
+      "video_count": 3052,
+      "corroborating_tip_count": 6520,
       "supporting_links": [
         {
           "video_title": "Before Your Next Land Deal: 7 Things to Know - REWBCON 2022 with Seth Williams",
@@ -2068,9 +2068,9 @@
       "headline": "State unclaimed-property and escheat databases supply the repeatable volume.",
       "summary": "Every state treasury or controller maintains a searchable unclaimed-property register, and the consensus workflow is to cross-reference deceased owners there against probate filings. Volume comes from systematic register sweeps; size comes from the rarer escheated estate, surplus-funds and safe-deposit categories.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 537,
-      "video_count": 811,
-      "corroborating_tip_count": 1846,
+      "channel_count": 558,
+      "video_count": 859,
+      "corroborating_tip_count": 1911,
       "supporting_links": [
         {
           "video_title": "How To Claim Surplus Funds From Foreclosure",
@@ -2118,9 +2118,9 @@
       "headline": "The deliverable is a document-backed kinship chain, not a name on a list.",
       "summary": "Operators agree that claims succeed or fail on the evidentiary chain: each generational link supported by vital records, each branch mapped per stirpes, and every gap closed before contact. Tree hints from consumer genealogy sites are treated as leads to verify, never as proof to submit.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 2060,
-      "video_count": 3116,
-      "corroborating_tip_count": 3944,
+      "channel_count": 2123,
+      "video_count": 3275,
+      "corroborating_tip_count": 3974,
       "supporting_links": [
         {
           "video_title": "Understanding Aircraft Brokerage: Standards, Risk, and Trust",
@@ -2168,9 +2168,9 @@
       "headline": "Verify identity before contact, then lead with restraint, not the dollar figure.",
       "summary": "The recurring outreach pattern is: skip trace to a confirmed current address and phone, open by letter or a short calm call, state that funds may be owed to the family without naming an amount, and give the heir a way to independently verify the operator. Pressure tactics and inflated figures are consistently reported as the fastest way to lose a signed file.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 1396,
-      "video_count": 2112,
-      "corroborating_tip_count": 1147,
+      "channel_count": 1455,
+      "video_count": 2258,
+      "corroborating_tip_count": 1151,
       "supporting_links": [
         {
           "video_title": "How to Get Unlimited Leads Using Clay Enrichment Waterfall | clay.com Tutorial",
@@ -2218,9 +2218,9 @@
       "headline": "No work proceeds without a signed fee agreement and third-party escrow.",
       "summary": "Consensus practice is a plain-language, notarized or e-signed agreement that names the estate, states the percentage, discloses the heir's right to claim independently, and routes funds through attorney trust or licensed escrow so the locator never holds the heir's money directly.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 1945,
-      "video_count": 3003,
-      "corroborating_tip_count": 4693,
+      "channel_count": 2012,
+      "video_count": 3170,
+      "corroborating_tip_count": 5670,
       "supporting_links": [
         {
           "video_title": "Topical Authority With Koray Tuğberk GÜBÜR",
@@ -2247,16 +2247,16 @@
           "link": "https://www.youtube.com/watch?v=9RNJrGhH7ek&t=1477s"
         },
         {
-          "video_title": "State Funds Tutorial: Cold Calling Objections vs. Complaints. Surplus Funds 101",
-          "author": "Surplus Funds 101",
-          "timestamp": "00:03:01",
-          "link": "https://www.youtube.com/watch?v=t4w_wFimZ9A&t=181s"
+          "video_title": "How Does Cook County Tax Sale Work?",
+          "author": "Bob Diamond - America's Tax Sale Attorney",
+          "timestamp": "00:00:30",
+          "link": "https://www.youtube.com/watch?v=B0WBR5swuac&t=30s"
         },
         {
-          "video_title": "Topical Authority With Koray Tuğberk GÜBÜR",
-          "author": "Pavel Klimakov",
-          "timestamp": "00:23:27",
-          "link": "https://www.youtube.com/watch?v=9RNJrGhH7ek&t=1407s"
+          "video_title": "Is Indiana A Tax Lien State?",
+          "author": "Ted Thomas",
+          "timestamp": "00:12:27",
+          "link": "https://www.youtube.com/watch?v=LsEFs7uqzbA&t=747s"
         }
       ],
       "caveat": "Consensus among the sampled operators — not legal advice and not a substitute for the governing statute in the reader's jurisdiction."
@@ -2268,9 +2268,9 @@
       "headline": "Fee caps, waiting periods and licensing are decided per state, before the first call.",
       "summary": "Operators repeatedly stress that the governing rules — percentage caps on unclaimed-property recoveries, mandatory waiting periods after escheat or sale, private-investigator licensing triggers, and the line against practicing law — vary by jurisdiction and must be read in the local statute for every file rather than generalized from another state.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 2047,
-      "video_count": 3223,
-      "corroborating_tip_count": 3390,
+      "channel_count": 2116,
+      "video_count": 3393,
+      "corroborating_tip_count": 3494,
       "supporting_links": [
         {
           "video_title": "How To Start Wholesale Real Estate In 2027 (15hrs/wk)!",
@@ -2291,6 +2291,12 @@
           "link": "https://www.youtube.com/watch?v=UnGdjQb467o&t=148s"
         },
         {
+          "video_title": "Quiet Title Process and Timeline",
+          "author": "Quiet Title Michigan",
+          "timestamp": "00:01:36",
+          "link": "https://www.youtube.com/watch?v=kJRxvYeK_eU&t=96s"
+        },
+        {
           "video_title": "5 Patent Monetization Strategies Inventors Don't Know About",
           "author": "Patent pc",
           "timestamp": "00:02:21",
@@ -2301,12 +2307,6 @@
           "author": "Surplus Funds 101",
           "timestamp": "00:14:47",
           "link": "https://www.youtube.com/watch?v=PGvJEv9Y_Go&t=887s"
-        },
-        {
-          "video_title": "Surplus Funds Cold Calling Script: How to Not Sound Like a Scam",
-          "author": "Alfred Taren",
-          "timestamp": "00:00:56",
-          "link": "https://www.youtube.com/watch?v=CqlbwGPmv64&t=56s"
         }
       ],
       "caveat": "Consensus among the sampled operators — not legal advice and not a substitute for the governing statute in the reader's jurisdiction."
@@ -2318,9 +2318,9 @@
       "headline": "Automated docket monitoring plus AI abstracting lets one or two people run real volume.",
       "summary": "The operational consensus is to automate the repetitive layer — scheduled docket and register pulls, structured intake into a sheet or CRM, AI-assisted abstracting of filings — while keeping genealogy judgment, heir contact and contract execution human. That split is what keeps a two-person shop competitive against staffed firms.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 1867,
-      "video_count": 2782,
-      "corroborating_tip_count": 7504,
+      "channel_count": 1903,
+      "video_count": 2851,
+      "corroborating_tip_count": 7623,
       "supporting_links": [
         {
           "video_title": "How To Find Comps For Land",
@@ -2396,10 +2396,10 @@
           "link": "https://www.youtube.com/watch?v=UnGdjQb467o&t=148s"
         },
         {
-          "video_title": "5 Patent Monetization Strategies Inventors Don't Know About",
-          "author": "Patent pc",
-          "timestamp": "00:02:21",
-          "link": "https://www.youtube.com/watch?v=TYb3i3iIHEQ&t=141s"
+          "video_title": "Quiet Title Process and Timeline",
+          "author": "Quiet Title Michigan",
+          "timestamp": "00:01:36",
+          "link": "https://www.youtube.com/watch?v=kJRxvYeK_eU&t=96s"
         }
       ]
     },
@@ -2436,10 +2436,10 @@
           "link": "https://www.youtube.com/watch?v=UnGdjQb467o&t=148s"
         },
         {
-          "video_title": "5 Patent Monetization Strategies Inventors Don't Know About",
-          "author": "Patent pc",
-          "timestamp": "00:02:21",
-          "link": "https://www.youtube.com/watch?v=TYb3i3iIHEQ&t=141s"
+          "video_title": "Quiet Title Process and Timeline",
+          "author": "Quiet Title Michigan",
+          "timestamp": "00:01:36",
+          "link": "https://www.youtube.com/watch?v=kJRxvYeK_eU&t=96s"
         }
       ]
     },
@@ -2476,10 +2476,10 @@
           "link": "https://www.youtube.com/watch?v=UnGdjQb467o&t=148s"
         },
         {
-          "video_title": "5 Patent Monetization Strategies Inventors Don't Know About",
-          "author": "Patent pc",
-          "timestamp": "00:02:21",
-          "link": "https://www.youtube.com/watch?v=TYb3i3iIHEQ&t=141s"
+          "video_title": "Quiet Title Process and Timeline",
+          "author": "Quiet Title Michigan",
+          "timestamp": "00:01:36",
+          "link": "https://www.youtube.com/watch?v=kJRxvYeK_eU&t=96s"
         }
       ]
     },
@@ -2556,10 +2556,10 @@
           "link": "https://www.youtube.com/watch?v=UnGdjQb467o&t=148s"
         },
         {
-          "video_title": "5 Patent Monetization Strategies Inventors Don't Know About",
-          "author": "Patent pc",
-          "timestamp": "00:02:21",
-          "link": "https://www.youtube.com/watch?v=TYb3i3iIHEQ&t=141s"
+          "video_title": "Quiet Title Process and Timeline",
+          "author": "Quiet Title Michigan",
+          "timestamp": "00:01:36",
+          "link": "https://www.youtube.com/watch?v=kJRxvYeK_eU&t=96s"
         }
       ]
     },
@@ -2746,8 +2746,8 @@
         "asset_id": "youtube_thumbnails",
         "asset": "https://i.ytimg.com/vi/<video_id>/*.jpg",
         "asset_type": "youtube_thumbnail_image",
-        "source": "YouTube CDN thumbnails for the 3834 corpus videos",
-        "instance_count": 3834,
+        "source": "YouTube CDN thumbnails for the 4009 corpus videos",
+        "instance_count": 4009,
         "instances": [
           {
             "video_id": "9Q4qYeK5DTg",
@@ -29586,6 +29586,1231 @@
             "author": "Mr. Business",
             "thumbnail_url": "https://i.ytimg.com/vi/8gaFGCKNpnk/hqdefault.jpg",
             "source_url": "https://www.youtube.com/watch?v=8gaFGCKNpnk"
+          },
+          {
+            "video_id": "KytTy1-RC5I",
+            "title": "The Truth About Tax Lien Investing",
+            "author": "The Ramsey Show Highlights",
+            "thumbnail_url": "https://i.ytimg.com/vi/KytTy1-RC5I/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=KytTy1-RC5I"
+          },
+          {
+            "video_id": "iCR-rdsQrUg",
+            "title": "The Pros and Cons of Tax Lien Investing",
+            "author": "Dustin Hahn",
+            "thumbnail_url": "https://i.ytimg.com/vi/iCR-rdsQrUg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=iCR-rdsQrUg"
+          },
+          {
+            "video_id": "vA4ImBMyenY",
+            "title": "A Warning To Tax Lien & Deed Investors | Risks!",
+            "author": "Dustin Hahn",
+            "thumbnail_url": "https://i.ytimg.com/vi/vA4ImBMyenY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=vA4ImBMyenY"
+          },
+          {
+            "video_id": "ehSkuiHT060",
+            "title": "Introduction to Tax Lien and Tax Deed Investing 101",
+            "author": "Red Lotus Chic",
+            "thumbnail_url": "https://i.ytimg.com/vi/ehSkuiHT060/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ehSkuiHT060"
+          },
+          {
+            "video_id": "H9fPhqUYPfc",
+            "title": "How Tax Lien Investing Actually Works",
+            "author": "Lien Ledger",
+            "thumbnail_url": "https://i.ytimg.com/vi/H9fPhqUYPfc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=H9fPhqUYPfc"
+          },
+          {
+            "video_id": "ES5ZPyHRFMM",
+            "title": "Tax Deed investing 101 - Buying $50 Property",
+            "author": "Dustin Hahn",
+            "thumbnail_url": "https://i.ytimg.com/vi/ES5ZPyHRFMM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ES5ZPyHRFMM"
+          },
+          {
+            "video_id": "jwFVT7nCrg8",
+            "title": "Tax Lien Investing With Artificial Intelligence 101",
+            "author": "Dustin Hahn",
+            "thumbnail_url": "https://i.ytimg.com/vi/jwFVT7nCrg8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=jwFVT7nCrg8"
+          },
+          {
+            "video_id": "Lcz3UJEz_oM",
+            "title": "How To Buy Tax Lien Certificates In Florida",
+            "author": "Saen Higgins",
+            "thumbnail_url": "https://i.ytimg.com/vi/Lcz3UJEz_oM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Lcz3UJEz_oM"
+          },
+          {
+            "video_id": "w8WivuvhKRI",
+            "title": "A Low-Cost Way Into Real Estate | Tax Lien Investing Explained",
+            "author": "Real Estate Ninja",
+            "thumbnail_url": "https://i.ytimg.com/vi/w8WivuvhKRI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=w8WivuvhKRI"
+          },
+          {
+            "video_id": "PSfIJ8cKE5I",
+            "title": "Tax Lien Vs. Tax Deed: Which One Is Right for You?",
+            "author": "Ted Thomas",
+            "thumbnail_url": "https://i.ytimg.com/vi/PSfIJ8cKE5I/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=PSfIJ8cKE5I"
+          },
+          {
+            "video_id": "jWaS4Y2Z1Mg",
+            "title": "Tax Deed vs Tax Lien: Differences Explained Simply",
+            "author": "Ted Thomas",
+            "thumbnail_url": "https://i.ytimg.com/vi/jWaS4Y2Z1Mg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=jWaS4Y2Z1Mg"
+          },
+          {
+            "video_id": "0adTzNpuLtk",
+            "title": "Tax Liens vs. Tax Deeds vs. Redemption Deeds: Which is Best?",
+            "author": "Tax Sale Secrets",
+            "thumbnail_url": "https://i.ytimg.com/vi/0adTzNpuLtk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=0adTzNpuLtk"
+          },
+          {
+            "video_id": "x3XX9ysKcUA",
+            "title": "What Is The Difference Between A Tax Lien And A Tax Deed?",
+            "author": "Ted Thomas",
+            "thumbnail_url": "https://i.ytimg.com/vi/x3XX9ysKcUA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=x3XX9ysKcUA"
+          },
+          {
+            "video_id": "oKQjnGAQlGs",
+            "title": "Tax Liens vs. Tax Deeds: Which Is the Better Investment for You?",
+            "author": "Tax Sale Academy",
+            "thumbnail_url": "https://i.ytimg.com/vi/oKQjnGAQlGs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=oKQjnGAQlGs"
+          },
+          {
+            "video_id": "RvfjpH1PWxE",
+            "title": "Tax Deed vs Tax Lien: Which State Strategy Makes the Most Money?",
+            "author": "Premier Wealth Builders",
+            "thumbnail_url": "https://i.ytimg.com/vi/RvfjpH1PWxE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=RvfjpH1PWxE"
+          },
+          {
+            "video_id": "D8YYUGD6y9I",
+            "title": "Redeemable Tax Deeds Vs Tax Liens",
+            "author": "Tax Sale Academy",
+            "thumbnail_url": "https://i.ytimg.com/vi/D8YYUGD6y9I/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=D8YYUGD6y9I"
+          },
+          {
+            "video_id": "DPKvfqp7T9g",
+            "title": "Is Georgia A Tax Lien Or Tax Deed State?",
+            "author": "Ted Thomas",
+            "thumbnail_url": "https://i.ytimg.com/vi/DPKvfqp7T9g/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=DPKvfqp7T9g"
+          },
+          {
+            "video_id": "FgLt0Zd5dxo",
+            "title": "Tax Liens, Deeds, Redeemable Deeds or Surplus?",
+            "author": "Tax Sale Academy",
+            "thumbnail_url": "https://i.ytimg.com/vi/FgLt0Zd5dxo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=FgLt0Zd5dxo"
+          },
+          {
+            "video_id": "VK7ChKB-gNU",
+            "title": "Tax Lien vs Tax Deed States - Kentucky's 11-Year Liens and the Texas 25% Myth",
+            "author": "Tax Lien School Highlights - Dustin Hahn",
+            "thumbnail_url": "https://i.ytimg.com/vi/VK7ChKB-gNU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=VK7ChKB-gNU"
+          },
+          {
+            "video_id": "JIdC6p9dM-k",
+            "title": "Tax Liens vs Tax Deeds",
+            "author": "Tax Sale Academy",
+            "thumbnail_url": "https://i.ytimg.com/vi/JIdC6p9dM-k/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=JIdC6p9dM-k"
+          },
+          {
+            "video_id": "0AibTtKKPPU",
+            "title": "What Are The Tax Deed States With No Redemption Period",
+            "author": "Ted Thomas",
+            "thumbnail_url": "https://i.ytimg.com/vi/0AibTtKKPPU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=0AibTtKKPPU"
+          },
+          {
+            "video_id": "sb6T0Xe5siY",
+            "title": "Tyler v. Hennepin County: A $2,300 Tax Debt, a $40,000 Condo",
+            "author": "The Deed | Real Estate",
+            "thumbnail_url": "https://i.ytimg.com/vi/sb6T0Xe5siY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=sb6T0Xe5siY"
+          },
+          {
+            "video_id": "d67aVfAEUxg",
+            "title": "Tyler v. Hennepin County and the Impact on Nebraska Tax Sales",
+            "author": "Tax Sale Resources",
+            "thumbnail_url": "https://i.ytimg.com/vi/d67aVfAEUxg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=d67aVfAEUxg"
+          },
+          {
+            "video_id": "NZlx21J6n-c",
+            "title": "The Equity the County Kept",
+            "author": "Community Living HQ",
+            "thumbnail_url": "https://i.ytimg.com/vi/NZlx21J6n-c/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=NZlx21J6n-c"
+          },
+          {
+            "video_id": "hKsLdKqVOE0",
+            "title": "Bidding: Tax Lien New Jersey",
+            "author": "Realauction",
+            "thumbnail_url": "https://i.ytimg.com/vi/hKsLdKqVOE0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=hKsLdKqVOE0"
+          },
+          {
+            "video_id": "RgLErVu5_Kk",
+            "title": "How to Buy Tax Deed LAND Online & OTC Right NOW!",
+            "author": "Tax Sale Secrets",
+            "thumbnail_url": "https://i.ytimg.com/vi/RgLErVu5_Kk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=RgLErVu5_Kk"
+          },
+          {
+            "video_id": "IMGzMnzQiZQ",
+            "title": "The Truth About Online Tax Lien Auctions (Watch Before You Bid)",
+            "author": "Tax Sale Secrets",
+            "thumbnail_url": "https://i.ytimg.com/vi/IMGzMnzQiZQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=IMGzMnzQiZQ"
+          },
+          {
+            "video_id": "6hRZuHmCM0M",
+            "title": "What is tax deed and tax lien premium bidding",
+            "author": "Tax Sale Resources",
+            "thumbnail_url": "https://i.ytimg.com/vi/6hRZuHmCM0M/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=6hRZuHmCM0M"
+          },
+          {
+            "video_id": "cnd7EM15dyk",
+            "title": "Formula for Tax Lien Premiums (Viewer Question)",
+            "author": "Tax Sale Academy",
+            "thumbnail_url": "https://i.ytimg.com/vi/cnd7EM15dyk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=cnd7EM15dyk"
+          },
+          {
+            "video_id": "0I_mhnrF0So",
+            "title": "Tax Lien Overbid Auction Process",
+            "author": "Tax Sale Academy",
+            "thumbnail_url": "https://i.ytimg.com/vi/0I_mhnrF0So/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=0I_mhnrF0So"
+          },
+          {
+            "video_id": "3thEKo1DOwU",
+            "title": "What is the Bid Down Ownership Bidding Process?",
+            "author": "Tax Sale Resources",
+            "thumbnail_url": "https://i.ytimg.com/vi/3thEKo1DOwU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=3thEKo1DOwU"
+          },
+          {
+            "video_id": "G8iotxNSgRg",
+            "title": "New Jersey Tax Liens EXPLAINED! Massive Opportunity!",
+            "author": "Tax Lien Bestie | Sabrina",
+            "thumbnail_url": "https://i.ytimg.com/vi/G8iotxNSgRg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=G8iotxNSgRg"
+          },
+          {
+            "video_id": "XaihRHU__R4",
+            "title": "6 Ways to Invest in Tax Deeds and Tax Liens (Florida Examples)",
+            "author": "The Jackie Jackson | Tax Deed & Real Estate Coach",
+            "thumbnail_url": "https://i.ytimg.com/vi/XaihRHU__R4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=XaihRHU__R4"
+          },
+          {
+            "video_id": "AYiTxfuCWHk",
+            "title": "Are You Losing Money on Tax Liens? The Truth About Supplemental Taxes",
+            "author": "Premier Wealth Builders",
+            "thumbnail_url": "https://i.ytimg.com/vi/AYiTxfuCWHk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=AYiTxfuCWHk"
+          },
+          {
+            "video_id": "jDYlxXpw-e4",
+            "title": "Ted Talks: Tax Liens, Tax Deeds, and You w/ Ted Thomas | REtipster 196",
+            "author": "REtipster",
+            "thumbnail_url": "https://i.ytimg.com/vi/jDYlxXpw-e4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=jDYlxXpw-e4"
+          },
+          {
+            "video_id": "7ybooMbrE58",
+            "title": "The Truth About Tax Lien Investing",
+            "author": "TaxLienLady",
+            "thumbnail_url": "https://i.ytimg.com/vi/7ybooMbrE58/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=7ybooMbrE58"
+          },
+          {
+            "video_id": "iOoZ743spRo",
+            "title": "PROS AND CONS OF TAX LIEN INVESTING",
+            "author": "Rent To Retirement",
+            "thumbnail_url": "https://i.ytimg.com/vi/iOoZ743spRo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=iOoZ743spRo"
+          },
+          {
+            "video_id": "l9-Us7KWWPM",
+            "title": "Tax Lien Investments and Self-Directed Retirement Plans",
+            "author": "Next Generation",
+            "thumbnail_url": "https://i.ytimg.com/vi/l9-Us7KWWPM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=l9-Us7KWWPM"
+          },
+          {
+            "video_id": "MoTnCzda1JA",
+            "title": "Bankruptcy Court Refuses to Award Damages for Automatic Stay Violation",
+            "author": "Personal Bankruptcy Law Atlanta",
+            "thumbnail_url": "https://i.ytimg.com/vi/MoTnCzda1JA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=MoTnCzda1JA"
+          },
+          {
+            "video_id": "m1B_j8n-b9E",
+            "title": "Chapter 7 Bankruptcy Process: The Automatic Stay | 50 Bankruptcy Lawyers",
+            "author": "Bankruptcy Explained",
+            "thumbnail_url": "https://i.ytimg.com/vi/m1B_j8n-b9E/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=m1B_j8n-b9E"
+          },
+          {
+            "video_id": "au90-c2Pwvo",
+            "title": "Episode 01 Automatic Stay Guillotine",
+            "author": "Behind The Servicing",
+            "thumbnail_url": "https://i.ytimg.com/vi/au90-c2Pwvo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=au90-c2Pwvo"
+          },
+          {
+            "video_id": "qEuYpfZ_Qgg",
+            "title": "Tax Lien Bankruptcy Myth Busted! It's Not What You Think",
+            "author": "Tax Sale Secrets",
+            "thumbnail_url": "https://i.ytimg.com/vi/qEuYpfZ_Qgg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=qEuYpfZ_Qgg"
+          },
+          {
+            "video_id": "MCyu08cBm-c",
+            "title": "What Happens When You File for Bankruptcy (Step by Step)",
+            "author": "Legal Lens",
+            "thumbnail_url": "https://i.ytimg.com/vi/MCyu08cBm-c/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=MCyu08cBm-c"
+          },
+          {
+            "video_id": "EXkUbWWenl0",
+            "title": "How To Foreclose On A Tax Lien Property",
+            "author": "Saen Higgins",
+            "thumbnail_url": "https://i.ytimg.com/vi/EXkUbWWenl0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=EXkUbWWenl0"
+          },
+          {
+            "video_id": "EBswPIFAXTY",
+            "title": "What is a Tax Lien Foreclosure Explained Simply",
+            "author": "Ted Thomas",
+            "thumbnail_url": "https://i.ytimg.com/vi/EBswPIFAXTY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=EBswPIFAXTY"
+          },
+          {
+            "video_id": "7BP12s9Jn2c",
+            "title": "Quiet Title Vs Tax Foreclosure Certification",
+            "author": "Tax Sale Academy",
+            "thumbnail_url": "https://i.ytimg.com/vi/7BP12s9Jn2c/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=7BP12s9Jn2c"
+          },
+          {
+            "video_id": "vMMozg0xaSA",
+            "title": "File Your Own Suit to Quiet Title for Tax Deeds",
+            "author": "Tax Sale Academy",
+            "thumbnail_url": "https://i.ytimg.com/vi/vMMozg0xaSA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=vMMozg0xaSA"
+          },
+          {
+            "video_id": "zaxbNjHaHww",
+            "title": "How To Fight Tax Lien Foreclosure",
+            "author": "Lenny the Lawyer-Live",
+            "thumbnail_url": "https://i.ytimg.com/vi/zaxbNjHaHww/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=zaxbNjHaHww"
+          },
+          {
+            "video_id": "tXVBp8vbkT4",
+            "title": "Pay The Back Taxes, Get The Property - Tax Lien Lie EXPOSED",
+            "author": "Dustin Hahn",
+            "thumbnail_url": "https://i.ytimg.com/vi/tXVBp8vbkT4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=tXVBp8vbkT4"
+          },
+          {
+            "video_id": "2g2qJcuuey4",
+            "title": "The Tax Foreclosure Certification Process - A Suit to Quiet Title Alternative",
+            "author": "Tax Sale Academy",
+            "thumbnail_url": "https://i.ytimg.com/vi/2g2qJcuuey4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=2g2qJcuuey4"
+          },
+          {
+            "video_id": "O8MWhOJE6Oc",
+            "title": "What Is a Quiet Title Action by the Tax Lien Certificates & Tax Deeds Authority",
+            "author": "Ted Thomas",
+            "thumbnail_url": "https://i.ytimg.com/vi/O8MWhOJE6Oc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=O8MWhOJE6Oc"
+          },
+          {
+            "video_id": "MzL0xEaYnUI",
+            "title": "Quiet title, what is it and what do I do with it?",
+            "author": "Ted Thomas",
+            "thumbnail_url": "https://i.ytimg.com/vi/MzL0xEaYnUI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=MzL0xEaYnUI"
+          },
+          {
+            "video_id": "7yD_brKdgXk",
+            "title": "How to Buy Tax Sale Properties and when to Quiet Title - (877) YOUR-FIRM",
+            "author": "Quiet Title Michigan",
+            "thumbnail_url": "https://i.ytimg.com/vi/7yD_brKdgXk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=7yD_brKdgXk"
+          },
+          {
+            "video_id": "rQco9s4XodM",
+            "title": "Judicial vs. Nonjudicial Foreclosures Explained",
+            "author": "Tax Sale Secrets",
+            "thumbnail_url": "https://i.ytimg.com/vi/rQco9s4XodM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=rQco9s4XodM"
+          },
+          {
+            "video_id": "kJRxvYeK_eU",
+            "title": "Quiet Title Process and Timeline",
+            "author": "Quiet Title Michigan",
+            "thumbnail_url": "https://i.ytimg.com/vi/kJRxvYeK_eU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=kJRxvYeK_eU"
+          },
+          {
+            "video_id": "TRZbdE4y2sc",
+            "title": "Do It Yourself Quiet Title",
+            "author": "Ted Thomas",
+            "thumbnail_url": "https://i.ytimg.com/vi/TRZbdE4y2sc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=TRZbdE4y2sc"
+          },
+          {
+            "video_id": "XgowlA2cjZA",
+            "title": "How to Clear a Title in Texas: Liens, Closing Problems, Quiet Title",
+            "author": "Stacked Legal",
+            "thumbnail_url": "https://i.ytimg.com/vi/XgowlA2cjZA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=XgowlA2cjZA"
+          },
+          {
+            "video_id": "N5hkQOZjHyU",
+            "title": "HOA Lien Foreclosure -Learn Why The Court Lack Jurisdiction",
+            "author": "PRO-SE LEGAL SCHOOL",
+            "thumbnail_url": "https://i.ytimg.com/vi/N5hkQOZjHyU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=N5hkQOZjHyU"
+          },
+          {
+            "video_id": "YD_WDRyFt4Q",
+            "title": "HOA Liens Explained – Can They Take Your House?",
+            "author": "HOA Insights",
+            "thumbnail_url": "https://i.ytimg.com/vi/YD_WDRyFt4Q/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=YD_WDRyFt4Q"
+          },
+          {
+            "video_id": "O6HhpnnQADM",
+            "title": "Podcast EP 59: Tax Liens, HOA Liens & Title Traps Every Investor Must Know",
+            "author": "Alex Goldovsky",
+            "thumbnail_url": "https://i.ytimg.com/vi/O6HhpnnQADM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=O6HhpnnQADM"
+          },
+          {
+            "video_id": "g0bsPf3Jwo4",
+            "title": "Over The Counter Tax Deed Sales (OTC) - What realtors don't want you to know!",
+            "author": "Ted Thomas",
+            "thumbnail_url": "https://i.ytimg.com/vi/g0bsPf3Jwo4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=g0bsPf3Jwo4"
+          },
+          {
+            "video_id": "XLUuBoGUOj8",
+            "title": "Over the Counter Tax Lien Certificate Sales",
+            "author": "Ted Thomas",
+            "thumbnail_url": "https://i.ytimg.com/vi/XLUuBoGUOj8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=XLUuBoGUOj8"
+          },
+          {
+            "video_id": "nbHUraglUQo",
+            "title": "How To Buy Over-The-Counter Tax Deeds",
+            "author": "Saen Higgins",
+            "thumbnail_url": "https://i.ytimg.com/vi/nbHUraglUQo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=nbHUraglUQo"
+          },
+          {
+            "video_id": "uiH28IFKgC4",
+            "title": "How 2 Buy Dirt Cheap Over The Counter Tax Deeds Today",
+            "author": "Dustin Hahn",
+            "thumbnail_url": "https://i.ytimg.com/vi/uiH28IFKgC4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=uiH28IFKgC4"
+          },
+          {
+            "video_id": "Ayjol9fgpNg",
+            "title": "Maryland OTC Tax Liens - 6 Months To Foreclose, 2 Years Before They Expire",
+            "author": "Tax Lien School Highlights - Dustin Hahn",
+            "thumbnail_url": "https://i.ytimg.com/vi/Ayjol9fgpNg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Ayjol9fgpNg"
+          },
+          {
+            "video_id": "YVYW5E5cTUI",
+            "title": "How To Find OTC Tax Deeds From Home?",
+            "author": "Dustin Hahn",
+            "thumbnail_url": "https://i.ytimg.com/vi/YVYW5E5cTUI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=YVYW5E5cTUI"
+          },
+          {
+            "video_id": "sY8o7KeLptY",
+            "title": "How To Buy Over The Counter Tax Deeds | Tax Deed Academy",
+            "author": "Tax Deed Wolf",
+            "thumbnail_url": "https://i.ytimg.com/vi/sY8o7KeLptY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=sY8o7KeLptY"
+          },
+          {
+            "video_id": "5t3VbtPlElc",
+            "title": "Tax Lien & Tax Deed \"Over the Counter\" OTC Training!",
+            "author": "Tax Sale Support",
+            "thumbnail_url": "https://i.ytimg.com/vi/5t3VbtPlElc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=5t3VbtPlElc"
+          },
+          {
+            "video_id": "RxbJj9wFJXI",
+            "title": "OTC Tax Deed Opportunities You Need to Grab Now (Before It's Too Late)",
+            "author": "Over The Counter Tax Deeds",
+            "thumbnail_url": "https://i.ytimg.com/vi/RxbJj9wFJXI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=RxbJj9wFJXI"
+          },
+          {
+            "video_id": "2M5EFWdf-is",
+            "title": "Having Trouble Finding Over The Counter Tax Liens? Try this....",
+            "author": "Dustin Hahn",
+            "thumbnail_url": "https://i.ytimg.com/vi/2M5EFWdf-is/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=2M5EFWdf-is"
+          },
+          {
+            "video_id": "mwdmkHEw0Rc",
+            "title": "Arizona Tax Lien Law Changes That Affect ALL Investors",
+            "author": "Tax Sale Academy",
+            "thumbnail_url": "https://i.ytimg.com/vi/mwdmkHEw0Rc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=mwdmkHEw0Rc"
+          },
+          {
+            "video_id": "LsEFs7uqzbA",
+            "title": "Is Indiana A Tax Lien State?",
+            "author": "Ted Thomas",
+            "thumbnail_url": "https://i.ytimg.com/vi/LsEFs7uqzbA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=LsEFs7uqzbA"
+          },
+          {
+            "video_id": "HjwUaTY_CAk",
+            "title": "How To Buy Tax Liens Over-The-Counter",
+            "author": "Saen Higgins",
+            "thumbnail_url": "https://i.ytimg.com/vi/HjwUaTY_CAk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=HjwUaTY_CAk"
+          },
+          {
+            "video_id": "nM1XxTC-5JY",
+            "title": "I Bought a Tax Lien. Where’s My House? | Beginner’s Guide New Edition Part 1",
+            "author": "Ted Thomas",
+            "thumbnail_url": "https://i.ytimg.com/vi/nM1XxTC-5JY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=nM1XxTC-5JY"
+          },
+          {
+            "video_id": "mHvzzGVcYdI",
+            "title": "The Worst States for Tax Liens and Tax Deeds - and Where To Go Instead",
+            "author": "Tax Lien School Highlights - Dustin Hahn",
+            "thumbnail_url": "https://i.ytimg.com/vi/mHvzzGVcYdI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=mHvzzGVcYdI"
+          },
+          {
+            "video_id": "z3AT7UeX52o",
+            "title": "How To: Florida Tax Lien Investing - 18% Returns in 2 Years",
+            "author": "Saen Higgins",
+            "thumbnail_url": "https://i.ytimg.com/vi/z3AT7UeX52o/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=z3AT7UeX52o"
+          },
+          {
+            "video_id": "46pI-T2mHZs",
+            "title": "Guide to Arizona Tax Lien Investing",
+            "author": "Tax Sale Resources",
+            "thumbnail_url": "https://i.ytimg.com/vi/46pI-T2mHZs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=46pI-T2mHZs"
+          },
+          {
+            "video_id": "bFO7QIn_w3U",
+            "title": "How Does A Tax Sale Work In Illinois?",
+            "author": "Bob Diamond - America's Tax Sale Attorney",
+            "thumbnail_url": "https://i.ytimg.com/vi/bFO7QIn_w3U/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=bFO7QIn_w3U"
+          },
+          {
+            "video_id": "-1glwzvZBoQ",
+            "title": "NEW JERSEY TAX LIEN SALE: Everything You Need to Know",
+            "author": "Tax Sale Secrets",
+            "thumbnail_url": "https://i.ytimg.com/vi/-1glwzvZBoQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=-1glwzvZBoQ"
+          },
+          {
+            "video_id": "eJhR4GkZ7Qo",
+            "title": "Tax Lien & Deed Property Research - Using GIS/Parcel Viewers",
+            "author": "Dustin Hahn",
+            "thumbnail_url": "https://i.ytimg.com/vi/eJhR4GkZ7Qo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=eJhR4GkZ7Qo"
+          },
+          {
+            "video_id": "2B3hCb362oA",
+            "title": "Tax Deed & Tax Sale Research Using GIS!",
+            "author": "Tax Sale Academy",
+            "thumbnail_url": "https://i.ytimg.com/vi/2B3hCb362oA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=2B3hCb362oA"
+          },
+          {
+            "video_id": "yUKmyPRuIsY",
+            "title": "Tax Sale Tip: Google Street View For Area Trends (Tax Deed & Lien Investing)",
+            "author": "Tax Sale Academy",
+            "thumbnail_url": "https://i.ytimg.com/vi/yUKmyPRuIsY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=yUKmyPRuIsY"
+          },
+          {
+            "video_id": "a81g1szr71Y",
+            "title": "Tax Deed Research Made Easy: 3 Must-Use Free Online Sources",
+            "author": "Ted Thomas",
+            "thumbnail_url": "https://i.ytimg.com/vi/a81g1szr71Y/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=a81g1szr71Y"
+          },
+          {
+            "video_id": "HU2epaRqEZE",
+            "title": "Tax Sale Resources Research Platform Walk Through",
+            "author": "Tax Sale Resources",
+            "thumbnail_url": "https://i.ytimg.com/vi/HU2epaRqEZE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=HU2epaRqEZE"
+          },
+          {
+            "video_id": "Mp1_eOyha6A",
+            "title": "Tax Sale Investing With GIS - Tax Lien and Tax Deed Research",
+            "author": "Tax Sale Academy",
+            "thumbnail_url": "https://i.ytimg.com/vi/Mp1_eOyha6A/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Mp1_eOyha6A"
+          },
+          {
+            "video_id": "dO80b3ivtWM",
+            "title": "How to Check if a Tax Sale House Is Still There Before You Bid",
+            "author": "Tax Sales Rebels",
+            "thumbnail_url": "https://i.ytimg.com/vi/dO80b3ivtWM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=dO80b3ivtWM"
+          },
+          {
+            "video_id": "GxMaS0YFT1Y",
+            "title": "Tax Deed Research Masterclass: County Records to CMA!",
+            "author": "Tax Sale Secrets",
+            "thumbnail_url": "https://i.ytimg.com/vi/GxMaS0YFT1Y/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=GxMaS0YFT1Y"
+          },
+          {
+            "video_id": "_nIeKBXnmws",
+            "title": "From Paper to Property: Step-by-Step GIS Method for Tax Sales",
+            "author": "Tax Sale Academy",
+            "thumbnail_url": "https://i.ytimg.com/vi/_nIeKBXnmws/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=_nIeKBXnmws"
+          },
+          {
+            "video_id": "bnQAJL9-zo0",
+            "title": "Tax Deed Tip #2 - GIS Mapping - It’s a MUST.",
+            "author": "Jason Porter",
+            "thumbnail_url": "https://i.ytimg.com/vi/bnQAJL9-zo0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=bnQAJL9-zo0"
+          },
+          {
+            "video_id": "q4Kqh7Vleyg",
+            "title": "IRS Right of Redemption Explained: Avoid This Foreclosure Trap!",
+            "author": "Global Estate Hub LLC",
+            "thumbnail_url": "https://i.ytimg.com/vi/q4Kqh7Vleyg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=q4Kqh7Vleyg"
+          },
+          {
+            "video_id": "1Ovbn9aeSCU",
+            "title": "IRS Notice of Federal Tax Lien: What It Means and How to Remove It",
+            "author": "Law Offices of Darrin T. Mish, P.A.",
+            "thumbnail_url": "https://i.ytimg.com/vi/1Ovbn9aeSCU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=1Ovbn9aeSCU"
+          },
+          {
+            "video_id": "_kLMdX9sR6Y",
+            "title": "Does a Notice of Federal Tax Lien Appear on Your Credit Report?",
+            "author": "Logan Allec",
+            "thumbnail_url": "https://i.ytimg.com/vi/_kLMdX9sR6Y/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=_kLMdX9sR6Y"
+          },
+          {
+            "video_id": "joIEfxnWZzE",
+            "title": "IRS Tax Lien Explained: What It Means and 4 Ways to Deal With It",
+            "author": "Logan Allec",
+            "thumbnail_url": "https://i.ytimg.com/vi/joIEfxnWZzE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=joIEfxnWZzE"
+          },
+          {
+            "video_id": "D-ia73OSPG0",
+            "title": "Federal Tax Lien Filed Against You? Here's Exactly What to Do in 2026",
+            "author": "IRS FBAR Tax Attorney | Offshore Reporting Defense",
+            "thumbnail_url": "https://i.ytimg.com/vi/D-ia73OSPG0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=D-ia73OSPG0"
+          },
+          {
+            "video_id": "Yxne6RuhWyg",
+            "title": "IRS Form 12277 walkthrough (Application for Withdrawal of Filed Notice of Federal Tax Lien",
+            "author": "Teach Me! Personal Finance",
+            "thumbnail_url": "https://i.ytimg.com/vi/Yxne6RuhWyg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Yxne6RuhWyg"
+          },
+          {
+            "video_id": "eZJCPENFp3o",
+            "title": "IRS Notice Federal Tax Lien - What is it? What does it mean to me? What can I do?",
+            "author": "Dan Britt",
+            "thumbnail_url": "https://i.ytimg.com/vi/eZJCPENFp3o/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=eZJCPENFp3o"
+          },
+          {
+            "video_id": "Fl9ZtNoyzj8",
+            "title": "Will the IRS Withdraw Your Tax Lien If You Get Into CNC Status?",
+            "author": "Logan Allec",
+            "thumbnail_url": "https://i.ytimg.com/vi/Fl9ZtNoyzj8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Fl9ZtNoyzj8"
+          },
+          {
+            "video_id": "MLaWCy3MlMQ",
+            "title": "How to Get IRS to Withdraw or Remove a Federal Tax Lien - Tips for Filling Out IRS Form 12277",
+            "author": "Stop IRS Problems | Tax Law Offices",
+            "thumbnail_url": "https://i.ytimg.com/vi/MLaWCy3MlMQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=MLaWCy3MlMQ"
+          },
+          {
+            "video_id": "FEsG-qPFvMc",
+            "title": "IRS Notice of Federal Tax Lien? DO NOT Skip the 30-Day Hearing",
+            "author": "Read The Corner",
+            "thumbnail_url": "https://i.ytimg.com/vi/FEsG-qPFvMc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=FEsG-qPFvMc"
+          },
+          {
+            "video_id": "Y2mRqIi8jqY",
+            "title": "Everything You Need To Know About FEDERAL TAX LIEN Explained By a Former IRS Agent",
+            "author": "Former IRS Agent Representation 4.2M Views",
+            "thumbnail_url": "https://i.ytimg.com/vi/Y2mRqIi8jqY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Y2mRqIi8jqY"
+          },
+          {
+            "video_id": "oPKD4zP1XUQ",
+            "title": "IRS Notice of Federal Tax Lien Filings Statistics (2026)",
+            "author": "Clarity Tax Relief",
+            "thumbnail_url": "https://i.ytimg.com/vi/oPKD4zP1XUQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=oPKD4zP1XUQ"
+          },
+          {
+            "video_id": "EpqtO6uiV_E",
+            "title": "How to Withdraw an IRS Tax Lien When You Owe $25,000 or Less",
+            "author": "Bob Jablonsky",
+            "thumbnail_url": "https://i.ytimg.com/vi/EpqtO6uiV_E/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=EpqtO6uiV_E"
+          },
+          {
+            "video_id": "GoBskUnMJ5k",
+            "title": "IRS Redemption at Foreclosure - What will they refund me on?",
+            "author": "LCO Law LLC | Estate Planning & Real Estate Law",
+            "thumbnail_url": "https://i.ytimg.com/vi/GoBskUnMJ5k/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=GoBskUnMJ5k"
+          },
+          {
+            "video_id": "c3YDDPR5wVo",
+            "title": "Learn How to Invest in Tax Liens and Deeds",
+            "author": "Advanta IRA",
+            "thumbnail_url": "https://i.ytimg.com/vi/c3YDDPR5wVo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=c3YDDPR5wVo"
+          },
+          {
+            "video_id": "DHgFebJCtQU",
+            "title": "Episode 19: Evaluating the Risks and Returns of Tax Lien Investing with Joanne Musa",
+            "author": "CamaPlan Self Directed IRA",
+            "thumbnail_url": "https://i.ytimg.com/vi/DHgFebJCtQU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=DHgFebJCtQU"
+          },
+          {
+            "video_id": "AcKbZeNuPr4",
+            "title": "2015 12 09 19 03 Basics of Tax Lien Deed Investing using your Self Direct IRA",
+            "author": "Platinum Investment Properties Group - Tax Liens",
+            "thumbnail_url": "https://i.ytimg.com/vi/AcKbZeNuPr4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=AcKbZeNuPr4"
+          },
+          {
+            "video_id": "RlQwxNYiqok",
+            "title": "🏠 Tax Deed Challenge: Defective Notice, Rushed Auction & Summary Judgment Without Evidence",
+            "author": "Florida Trust, Real Estate, Probate, & Foreclosure",
+            "thumbnail_url": "https://i.ytimg.com/vi/RlQwxNYiqok/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=RlQwxNYiqok"
+          },
+          {
+            "video_id": "SgoM18e6gXQ",
+            "title": "Jones v. SEC — 5th Cir. (Nov 2, 2026)",
+            "author": "Oral Arguments, with Context",
+            "thumbnail_url": "https://i.ytimg.com/vi/SgoM18e6gXQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=SgoM18e6gXQ"
+          },
+          {
+            "video_id": "0FOLJutyMHY",
+            "title": "Why Retirees Are Losing Paid-Off Homes Over $3,000 Tax Bills",
+            "author": "The Quiet Math",
+            "thumbnail_url": "https://i.ytimg.com/vi/0FOLJutyMHY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=0FOLJutyMHY"
+          },
+          {
+            "video_id": "B0WBR5swuac",
+            "title": "How Does Cook County Tax Sale Work?",
+            "author": "Bob Diamond - America's Tax Sale Attorney",
+            "thumbnail_url": "https://i.ytimg.com/vi/B0WBR5swuac/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=B0WBR5swuac"
+          },
+          {
+            "video_id": "QQ4bx7vLNS4",
+            "title": "A Treasure HIDDEN IN PLAIN SIGHT: Illinois Tax Liens - Ted Explains",
+            "author": "Ted Thomas",
+            "thumbnail_url": "https://i.ytimg.com/vi/QQ4bx7vLNS4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=QQ4bx7vLNS4"
+          },
+          {
+            "video_id": "fbdN21IB-I0",
+            "title": "How to Buy County-Held Tax Liens on LienHub (Florida Example)",
+            "author": "The Jackie Jackson | Tax Deed & Real Estate Coach",
+            "thumbnail_url": "https://i.ytimg.com/vi/fbdN21IB-I0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=fbdN21IB-I0"
+          },
+          {
+            "video_id": "RDk1Gksh9R4",
+            "title": "Learn About Tax Lien Investing with Chantelle Owens",
+            "author": "Advanta IRA",
+            "thumbnail_url": "https://i.ytimg.com/vi/RDk1Gksh9R4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=RDk1Gksh9R4"
+          },
+          {
+            "video_id": "vD0IitWLjZE",
+            "title": "How tax lien investing works and how to buy tax lien certificates (HYW066)",
+            "author": "Personal Finance Tips",
+            "thumbnail_url": "https://i.ytimg.com/vi/vD0IitWLjZE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=vD0IitWLjZE"
+          },
+          {
+            "video_id": "q7Fb-u0lpiY",
+            "title": "Tax Certificates/ Liens/ Deeds- Where to Start?",
+            "author": "Julia M. Spencer",
+            "thumbnail_url": "https://i.ytimg.com/vi/q7Fb-u0lpiY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=q7Fb-u0lpiY"
+          },
+          {
+            "video_id": "VdRy2aZvV-Y",
+            "title": "Maximizing Returns: The Power of Investing in Tax Liens",
+            "author": "Tranquillity",
+            "thumbnail_url": "https://i.ytimg.com/vi/VdRy2aZvV-Y/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=VdRy2aZvV-Y"
+          },
+          {
+            "video_id": "PRTEvlETNdk",
+            "title": "Tax Lien Certificate Investing",
+            "author": "realestatewealthguy",
+            "thumbnail_url": "https://i.ytimg.com/vi/PRTEvlETNdk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=PRTEvlETNdk"
+          },
+          {
+            "video_id": "bsVbyBCB2sA",
+            "title": "Tax Deeds vs. Tax Liens: Breaking Down the Pros and Cons",
+            "author": "Dustin Hahn",
+            "thumbnail_url": "https://i.ytimg.com/vi/bsVbyBCB2sA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=bsVbyBCB2sA"
+          },
+          {
+            "video_id": "cI-GhiUY6pg",
+            "title": "Tax Deeds vs. Tax Liens: Breaking Down the Pros and Cons",
+            "author": "Dustin Hahn",
+            "thumbnail_url": "https://i.ytimg.com/vi/cI-GhiUY6pg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=cI-GhiUY6pg"
+          },
+          {
+            "video_id": "akAZkzeH2PY",
+            "title": "Tax Liens vs. Tax Deeds: What's the Difference?",
+            "author": "Dustin Hahn",
+            "thumbnail_url": "https://i.ytimg.com/vi/akAZkzeH2PY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=akAZkzeH2PY"
+          },
+          {
+            "video_id": "wemMjCnrX34",
+            "title": "Tax Liens vs Tax Deeds - Which To Start With on a Small Budget",
+            "author": "Tax Lien School Highlights - Dustin Hahn",
+            "thumbnail_url": "https://i.ytimg.com/vi/wemMjCnrX34/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=wemMjCnrX34"
+          },
+          {
+            "video_id": "KoANRHO6Uko",
+            "title": "MAKING MONEY FROM HOME: Tax Lien Auctions Online Guide!",
+            "author": "Ted Thomas",
+            "thumbnail_url": "https://i.ytimg.com/vi/KoANRHO6Uko/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=KoANRHO6Uko"
+          },
+          {
+            "video_id": "rDGjWMwISOY",
+            "title": "Tax Lien Due Diligence: How to Research US County Tax Lien Auctions",
+            "author": "Cal Ewing",
+            "thumbnail_url": "https://i.ytimg.com/vi/rDGjWMwISOY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=rDGjWMwISOY"
+          },
+          {
+            "video_id": "cleRXY7vybQ",
+            "title": "Bidding: Tax Lien Arizona",
+            "author": "Realauction",
+            "thumbnail_url": "https://i.ytimg.com/vi/cleRXY7vybQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=cleRXY7vybQ"
+          },
+          {
+            "video_id": "RYrcnhZN5IM",
+            "title": "Investing in Real Estate Tax Lien Certificates: Case Study - learn Real Estate Investing",
+            "author": "Fallon Collen",
+            "thumbnail_url": "https://i.ytimg.com/vi/RYrcnhZN5IM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=RYrcnhZN5IM"
+          },
+          {
+            "video_id": "dI48opW6bWQ",
+            "title": "TAX LIEN ONLINE AUCTIONS REVIEWED! RESEARCH TAX & ASSESSOR RECORDS",
+            "author": "Tax Sale Secrets",
+            "thumbnail_url": "https://i.ytimg.com/vi/dI48opW6bWQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=dI48opW6bWQ"
+          },
+          {
+            "video_id": "Pz2ZCMuIox4",
+            "title": "Where Are Tax Deed Auctions Held? How I Find Online County Sales",
+            "author": "The Jackie Jackson | Tax Deed & Real Estate Coach",
+            "thumbnail_url": "https://i.ytimg.com/vi/Pz2ZCMuIox4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Pz2ZCMuIox4"
+          },
+          {
+            "video_id": "AO4ZqaMio7s",
+            "title": "Tax Lien Certificates vs Tax Deeds: Online Auction SECRETS!",
+            "author": "Tax Sale Secrets",
+            "thumbnail_url": "https://i.ytimg.com/vi/AO4ZqaMio7s/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=AO4ZqaMio7s"
+          },
+          {
+            "video_id": "XbThUArmcIE",
+            "title": "Why Do Investors Bid Down Florida Tax Lien Interest Rate To 0.25?",
+            "author": "Tax Sale Resources",
+            "thumbnail_url": "https://i.ytimg.com/vi/XbThUArmcIE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=XbThUArmcIE"
+          },
+          {
+            "video_id": "e-CuINE8x-g",
+            "title": "SKW Central | Tax Lien investing part 3",
+            "author": "skwcentraltraining",
+            "thumbnail_url": "https://i.ytimg.com/vi/e-CuINE8x-g/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=e-CuINE8x-g"
+          },
+          {
+            "video_id": "SwH4FFj8oZc",
+            "title": "He Bought a $500 Tax Sale House and Sold It for $50,000!",
+            "author": "Dustin Hahn",
+            "thumbnail_url": "https://i.ytimg.com/vi/SwH4FFj8oZc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=SwH4FFj8oZc"
+          },
+          {
+            "video_id": "wyAiYLlWM6A",
+            "title": "Ga Tax Lien Bootcamp Lead Instructor Case Study on Tax Lien Property",
+            "author": "Tax Lien Bootcamp",
+            "thumbnail_url": "https://i.ytimg.com/vi/wyAiYLlWM6A/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=wyAiYLlWM6A"
+          },
+          {
+            "video_id": "UyiZp8ocowM",
+            "title": "How to Invest in Tax Liens in 2026 (13%-18% Annual Returns) | Ep. 1002",
+            "author": "Kevin Bupp - Cash Flow Investor",
+            "thumbnail_url": "https://i.ytimg.com/vi/UyiZp8ocowM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=UyiZp8ocowM"
+          },
+          {
+            "video_id": "I9YP4P0-OM0",
+            "title": "Can You Really Earn 0% Interest on Tax Liens?",
+            "author": "Dustin Hahn",
+            "thumbnail_url": "https://i.ytimg.com/vi/I9YP4P0-OM0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=I9YP4P0-OM0"
+          },
+          {
+            "video_id": "xhw2pgi-46E",
+            "title": "The Hidden Gem of Tax Lien Investing with 33-Year Expert | Tony Martinez",
+            "author": "Justin Colby",
+            "thumbnail_url": "https://i.ytimg.com/vi/xhw2pgi-46E/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=xhw2pgi-46E"
+          },
+          {
+            "video_id": "08d72pEpig4",
+            "title": "The Bankruptcy Process: The Automatic Stay Part 1",
+            "author": "LawShelf",
+            "thumbnail_url": "https://i.ytimg.com/vi/08d72pEpig4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=08d72pEpig4"
+          },
+          {
+            "video_id": "YmgFMy7GMNk",
+            "title": "how to file a quiet title complaint and lis pendens",
+            "author": "4closurehelp777",
+            "thumbnail_url": "https://i.ytimg.com/vi/YmgFMy7GMNk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=YmgFMy7GMNk"
+          },
+          {
+            "video_id": "fhcWO24GS_w",
+            "title": "Quiet Title Actions",
+            "author": "Lawyer Greg McIntyre",
+            "thumbnail_url": "https://i.ytimg.com/vi/fhcWO24GS_w/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=fhcWO24GS_w"
+          },
+          {
+            "video_id": "B0yvMIdmaaQ",
+            "title": "Can You Remove Someone From a Deed? - How Quiet Title Action Works",
+            "author": "Jose Luiz Morales",
+            "thumbnail_url": "https://i.ytimg.com/vi/B0yvMIdmaaQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=B0yvMIdmaaQ"
+          },
+          {
+            "video_id": "zPDMr-7eAOc",
+            "title": "🏠 Lien Clearing 101: How Code Enforcement Transforms Blight Into Opportunity | Part 1",
+            "author": "Florida Trust, Real Estate, Probate, & Foreclosure",
+            "thumbnail_url": "https://i.ytimg.com/vi/zPDMr-7eAOc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=zPDMr-7eAOc"
+          },
+          {
+            "video_id": "rmXwIKKIDiw",
+            "title": "Over The Counter Tax Lien Certificates What Are They How It Works",
+            "author": "Ted Thomas",
+            "thumbnail_url": "https://i.ytimg.com/vi/rmXwIKKIDiw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=rmXwIKKIDiw"
+          },
+          {
+            "video_id": "ymnkPFHPY40",
+            "title": "Tax Lien Investing - Over The Counter (OTC) Tax Liens",
+            "author": "Tax Sale Lists",
+            "thumbnail_url": "https://i.ytimg.com/vi/ymnkPFHPY40/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ymnkPFHPY40"
+          },
+          {
+            "video_id": "VH9CbLJ5Erk",
+            "title": "Tax Lien Investing For Beginners ‼️",
+            "author": "Tax Lien Bestie | Sabrina",
+            "thumbnail_url": "https://i.ytimg.com/vi/VH9CbLJ5Erk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=VH9CbLJ5Erk"
+          },
+          {
+            "video_id": "K4wAHGQcqzQ",
+            "title": "Indiana Tax Sales - Tax Liens",
+            "author": "Tax Sale Academy",
+            "thumbnail_url": "https://i.ytimg.com/vi/K4wAHGQcqzQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=K4wAHGQcqzQ"
+          },
+          {
+            "video_id": "obD0PGbTJCI",
+            "title": "Tax Lien Sale New Jersey: Your Path to 18% Annually!",
+            "author": "Ted Thomas",
+            "thumbnail_url": "https://i.ytimg.com/vi/obD0PGbTJCI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=obD0PGbTJCI"
+          },
+          {
+            "video_id": "w_jhkHET_rg",
+            "title": "Web GIS Tutorial: Parcels, Map Layers, Analysis and Utility Networks",
+            "author": "All Things Spatial",
+            "thumbnail_url": "https://i.ytimg.com/vi/w_jhkHET_rg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=w_jhkHET_rg"
+          },
+          {
+            "video_id": "rcW3BV0Kzh0",
+            "title": "Esri Land Administration Latin American Webinar Series, Webinar #2 Parcel Management With GIS",
+            "author": "Esri Industries",
+            "thumbnail_url": "https://i.ytimg.com/vi/rcW3BV0Kzh0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=rcW3BV0Kzh0"
+          },
+          {
+            "video_id": "1rrID1N_BEY",
+            "title": "How Assessors Use GIS",
+            "author": "IAAO",
+            "thumbnail_url": "https://i.ytimg.com/vi/1rrID1N_BEY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=1rrID1N_BEY"
+          },
+          {
+            "video_id": "B1e8xDSixVg",
+            "title": "IRS Tax Lien Explained - Credit, Property, and Release Options",
+            "author": "IRS Notices Explained",
+            "thumbnail_url": "https://i.ytimg.com/vi/B1e8xDSixVg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=B1e8xDSixVg"
+          },
+          {
+            "video_id": "stcKbUxhc84",
+            "title": "Quick Tips | Filling Out IRS Form 12277: Application for Withdrawal of Federal Tax Lien",
+            "author": "Canopy",
+            "thumbnail_url": "https://i.ytimg.com/vi/stcKbUxhc84/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=stcKbUxhc84"
+          },
+          {
+            "video_id": "QWmH7uEe2g8",
+            "title": "From Confused to Confident: Tax Lien Investing Explained + FLIP Demo",
+            "author": "FLIP-Tech",
+            "thumbnail_url": "https://i.ytimg.com/vi/QWmH7uEe2g8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=QWmH7uEe2g8"
+          },
+          {
+            "video_id": "VmzztAnZ71w",
+            "title": "Introduction to Tax Lien Investing Webinar",
+            "author": "Ross Budrakey",
+            "thumbnail_url": "https://i.ytimg.com/vi/VmzztAnZ71w/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=VmzztAnZ71w"
+          },
+          {
+            "video_id": "U08uLxrDVE4",
+            "title": "Investing in Tax Liens with a Self Directed IRA",
+            "author": "CamaPlan Self Directed IRA",
+            "thumbnail_url": "https://i.ytimg.com/vi/U08uLxrDVE4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=U08uLxrDVE4"
+          },
+          {
+            "video_id": "Hqqt5H7mS3o",
+            "title": "Tax Liens & Tax Deed Investments In Your Self-Directed IRA",
+            "author": "NuView Trust",
+            "thumbnail_url": "https://i.ytimg.com/vi/Hqqt5H7mS3o/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Hqqt5H7mS3o"
+          },
+          {
+            "video_id": "rYcTmrny9JQ",
+            "title": "The Best Tax Lien State? 36% ROI With Illinois Tax Liens.",
+            "author": "Dustin Hahn",
+            "thumbnail_url": "https://i.ytimg.com/vi/rYcTmrny9JQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=rYcTmrny9JQ"
+          },
+          {
+            "video_id": "hK5QVUgFulI",
+            "title": "Earn Solid 6-20% ROI As A Beginner In Maryland Tax Liens!",
+            "author": "Dustin Hahn",
+            "thumbnail_url": "https://i.ytimg.com/vi/hK5QVUgFulI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=hK5QVUgFulI"
+          },
+          {
+            "video_id": "eNKIUQC6io0",
+            "title": "Beginner Tax Lien Investing (Step By Step)",
+            "author": "Dustin Hahn",
+            "thumbnail_url": "https://i.ytimg.com/vi/eNKIUQC6io0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=eNKIUQC6io0"
+          },
+          {
+            "video_id": "JcAwqIfK0vo",
+            "title": "What Is Tax Lien Certificate Investing?",
+            "author": "Ted Thomas",
+            "thumbnail_url": "https://i.ytimg.com/vi/JcAwqIfK0vo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=JcAwqIfK0vo"
+          },
+          {
+            "video_id": "2S4mkxCrOhM",
+            "title": "Property Tax Sales: Tax Lien Certificates vs Tax Deed States",
+            "author": "The Residential Buyer",
+            "thumbnail_url": "https://i.ytimg.com/vi/2S4mkxCrOhM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=2S4mkxCrOhM"
+          },
+          {
+            "video_id": "TL6AIsoe5m0",
+            "title": "Tax Lien Investing for Beginners: 8-18% Interest? Risks & Auction Mistakes",
+            "author": "Smart Capital",
+            "thumbnail_url": "https://i.ytimg.com/vi/TL6AIsoe5m0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=TL6AIsoe5m0"
+          },
+          {
+            "video_id": "fIPCLCdZlAU",
+            "title": "Tax Lien Investing 101: Tax Certificates Auctions Explained! TAX SALE TIP OF THE WEEK",
+            "author": "Tax Sale Secrets",
+            "thumbnail_url": "https://i.ytimg.com/vi/fIPCLCdZlAU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=fIPCLCdZlAU"
+          },
+          {
+            "video_id": "nMj50Itu21Q",
+            "title": "A Beginner's Guide to Investing in Tax Lien Certificates for New Real Estate Investors",
+            "author": "Gerald Harris",
+            "thumbnail_url": "https://i.ytimg.com/vi/nMj50Itu21Q/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=nMj50Itu21Q"
+          },
+          {
+            "video_id": "IH1JGgxRwIg",
+            "title": "Tax Lien vs Tax Deed [What You Actually Need To Know]",
+            "author": "Saen Higgins",
+            "thumbnail_url": "https://i.ytimg.com/vi/IH1JGgxRwIg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=IH1JGgxRwIg"
+          },
+          {
+            "video_id": "TnDzVaeksNc",
+            "title": "Top 5 OTC Tax Deed States Today! Dirt Cheap Property Here",
+            "author": "Dustin Hahn",
+            "thumbnail_url": "https://i.ytimg.com/vi/TnDzVaeksNc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=TnDzVaeksNc"
+          },
+          {
+            "video_id": "xEagXpsTPCw",
+            "title": "Top 6 Tax Deed State For Dirt Cheap Property",
+            "author": "Dustin Hahn",
+            "thumbnail_url": "https://i.ytimg.com/vi/xEagXpsTPCw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=xEagXpsTPCw"
+          },
+          {
+            "video_id": "41UuQtBLiBo",
+            "title": "Is Texas A Tax Lien Or Tax Deed State",
+            "author": "Ted Thomas",
+            "thumbnail_url": "https://i.ytimg.com/vi/41UuQtBLiBo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=41UuQtBLiBo"
+          },
+          {
+            "video_id": "tMIwxs2U5JM",
+            "title": "Tax Deeds and Redeemable Tax Deeds...So, what's the difference?",
+            "author": "Tax Sale Resources",
+            "thumbnail_url": "https://i.ytimg.com/vi/tMIwxs2U5JM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=tMIwxs2U5JM"
+          },
+          {
+            "video_id": "ul1onF24UbM",
+            "title": "Tax Liens vs Tax Deeds: Which One Should You Buy?",
+            "author": "Lien Ledger",
+            "thumbnail_url": "https://i.ytimg.com/vi/ul1onF24UbM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ul1onF24UbM"
+          },
+          {
+            "video_id": "qAoyeFTuxms",
+            "title": "Tax Enforcement After Tyler v. Hennepin County",
+            "author": "The Devine Law Group",
+            "thumbnail_url": "https://i.ytimg.com/vi/qAoyeFTuxms/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=qAoyeFTuxms"
+          },
+          {
+            "video_id": "M8AxkDXoffk",
+            "title": "ZeusAuction Tax Liens: How to Find Online Auctions With Less Competition",
+            "author": "Tax Lien School Highlights - Dustin Hahn",
+            "thumbnail_url": "https://i.ytimg.com/vi/M8AxkDXoffk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=M8AxkDXoffk"
+          },
+          {
+            "video_id": "_Ge3YGeNsFg",
+            "title": "County Held, State Held Sale: Tax Lien *NEW*",
+            "author": "Realauction",
+            "thumbnail_url": "https://i.ytimg.com/vi/_Ge3YGeNsFg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=_Ge3YGeNsFg"
+          },
+          {
+            "video_id": "prp5x8F5I60",
+            "title": "Florida Tax Deed Auctions on RealAuction: How to Check Real Value Fast",
+            "author": "Tax Lien School Highlights - Dustin Hahn",
+            "thumbnail_url": "https://i.ytimg.com/vi/prp5x8F5I60/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=prp5x8F5I60"
+          },
+          {
+            "video_id": "0TBV3XkrRmo",
+            "title": "Tax Lien & Tax Deed \"Online Auctions\" Training!",
+            "author": "Tax Sale Support",
+            "thumbnail_url": "https://i.ytimg.com/vi/0TBV3XkrRmo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=0TBV3XkrRmo"
+          },
+          {
+            "video_id": "OU-LqZt4nCs",
+            "title": "LIVE \"Actual\" County Tax Sale Research - How to Research & Purchase Tax Liens & Tax Deeds",
+            "author": "onlinetaxsales",
+            "thumbnail_url": "https://i.ytimg.com/vi/OU-LqZt4nCs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=OU-LqZt4nCs"
+          },
+          {
+            "video_id": "sH-Esa2i1zE",
+            "title": "TAX SALE TITANS PODCAST EPISODE 21: TAX LIENS & TAX DEEDS",
+            "author": "Tax Sale Support",
+            "thumbnail_url": "https://i.ytimg.com/vi/sH-Esa2i1zE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=sH-Esa2i1zE"
           }
         ],
         "research_reference_only": true,
@@ -29598,7 +30823,7 @@
         "asset_id": "verbatim_transcript_quotes",
         "asset": "data/transcripts/*.json -> segments[].text",
         "asset_type": "verbatim_transcript_passage",
-        "source": "Spoken content of 3834 third-party videos (35035 captured tips)",
+        "source": "Spoken content of 4009 third-party videos (36713 captured tips)",
         "research_reference_only": true,
         "commercial_republish_allowed": false,
         "commercial_use_allowed": false,
@@ -29614,38 +30839,38 @@
     ]
   },
   "corpus_metrics": {
-    "video_count": 3834,
-    "channel_count": 2448,
-    "total_words": 5650212,
-    "total_hours": 1134.3,
-    "total_pro_tips": 35035,
-    "unique_statutes_and_forms": 1642,
-    "unique_tools_and_portals": 10281
+    "video_count": 4009,
+    "channel_count": 2518,
+    "total_words": 5895442,
+    "total_hours": 1183.02,
+    "total_pro_tips": 36713,
+    "unique_statutes_and_forms": 1699,
+    "unique_tools_and_portals": 10602
   },
   "coverage": {
-    "videos_classified": 3834,
-    "videos_with_multiple_topics": 3831,
-    "tips_classified": 35035,
-    "raw_transcripts_joined": 3834,
+    "videos_classified": 4009,
+    "videos_with_multiple_topics": 4006,
+    "tips_classified": 36713,
+    "raw_transcripts_joined": 4009,
     "topic_video_counts": {
-      "business_model_and_economics": 3065,
-      "probate_and_docket_sourcing": 2881,
-      "unclaimed_property_and_escheat": 811,
-      "genealogy_and_heirship_proof": 3116,
-      "skip_tracing_and_outreach": 2112,
-      "contracts_and_compensation": 3003,
-      "statutory_caps_and_licensing": 3223,
-      "automation_and_small_team_ops": 2782
+      "business_model_and_economics": 3155,
+      "probate_and_docket_sourcing": 3052,
+      "unclaimed_property_and_escheat": 859,
+      "genealogy_and_heirship_proof": 3275,
+      "skip_tracing_and_outreach": 2258,
+      "contracts_and_compensation": 3170,
+      "statutory_caps_and_licensing": 3393,
+      "automation_and_small_team_ops": 2851
     },
     "topic_tip_counts": {
-      "business_model_and_economics": 6294,
-      "probate_and_docket_sourcing": 6217,
-      "unclaimed_property_and_escheat": 1846,
-      "genealogy_and_heirship_proof": 3944,
-      "skip_tracing_and_outreach": 1147,
-      "contracts_and_compensation": 4693,
-      "statutory_caps_and_licensing": 3390,
-      "automation_and_small_team_ops": 7504
+      "business_model_and_economics": 6370,
+      "probate_and_docket_sourcing": 6520,
+      "unclaimed_property_and_escheat": 1911,
+      "genealogy_and_heirship_proof": 3974,
+      "skip_tracing_and_outreach": 1151,
+      "contracts_and_compensation": 5670,
+      "statutory_caps_and_licensing": 3494,
+      "automation_and_small_team_ops": 7623
     }
   },
   "schema_version": "1.0",
@@ -29683,10 +30908,10 @@
           "link": "https://www.youtube.com/watch?v=UnGdjQb467o&t=148s"
         },
         {
-          "video_title": "5 Patent Monetization Strategies Inventors Don't Know About",
-          "author": "Patent pc",
-          "timestamp": "00:02:21",
-          "link": "https://www.youtube.com/watch?v=TYb3i3iIHEQ&t=141s"
+          "video_title": "Quiet Title Process and Timeline",
+          "author": "Quiet Title Michigan",
+          "timestamp": "00:01:36",
+          "link": "https://www.youtube.com/watch?v=kJRxvYeK_eU&t=96s"
         }
       ]
     },
@@ -29723,10 +30948,10 @@
           "link": "https://www.youtube.com/watch?v=UnGdjQb467o&t=148s"
         },
         {
-          "video_title": "5 Patent Monetization Strategies Inventors Don't Know About",
-          "author": "Patent pc",
-          "timestamp": "00:02:21",
-          "link": "https://www.youtube.com/watch?v=TYb3i3iIHEQ&t=141s"
+          "video_title": "Quiet Title Process and Timeline",
+          "author": "Quiet Title Michigan",
+          "timestamp": "00:01:36",
+          "link": "https://www.youtube.com/watch?v=kJRxvYeK_eU&t=96s"
         }
       ]
     },
@@ -29763,10 +30988,10 @@
           "link": "https://www.youtube.com/watch?v=UnGdjQb467o&t=148s"
         },
         {
-          "video_title": "5 Patent Monetization Strategies Inventors Don't Know About",
-          "author": "Patent pc",
-          "timestamp": "00:02:21",
-          "link": "https://www.youtube.com/watch?v=TYb3i3iIHEQ&t=141s"
+          "video_title": "Quiet Title Process and Timeline",
+          "author": "Quiet Title Michigan",
+          "timestamp": "00:01:36",
+          "link": "https://www.youtube.com/watch?v=kJRxvYeK_eU&t=96s"
         }
       ]
     },
@@ -29843,10 +31068,10 @@
           "link": "https://www.youtube.com/watch?v=UnGdjQb467o&t=148s"
         },
         {
-          "video_title": "5 Patent Monetization Strategies Inventors Don't Know About",
-          "author": "Patent pc",
-          "timestamp": "00:02:21",
-          "link": "https://www.youtube.com/watch?v=TYb3i3iIHEQ&t=141s"
+          "video_title": "Quiet Title Process and Timeline",
+          "author": "Quiet Title Michigan",
+          "timestamp": "00:01:36",
+          "link": "https://www.youtube.com/watch?v=kJRxvYeK_eU&t=96s"
         }
       ]
     },

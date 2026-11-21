@@ -1,0 +1,65 @@
+{
+  "concept_id": "concept_a",
+  "volume_id": "vol-024-tax-lien-investing",
+  "approved": false,
+  "edition_status": "concept_preview",
+  "preview_only": true,
+  "files": {
+    "digital_pdf.pdf": {
+      "bytes": 1860666,
+      "sha256": "481340ddff46e222533bd50deb7ad0a7bfcdaacd1853ff59c146cbf052047b43"
+    },
+    "print_6x9_pdf.pdf": {
+      "bytes": 2404120,
+      "sha256": "c328ca6b44891a558a7764cc8f15103e12ae6ab6a1c32815c230421faeae3791"
+    },
+    "workbook_pdf.pdf": {
+      "bytes": 532283,
+      "sha256": "c2ff6b674441831e2085dcb6e94075a0c98f86bd65c7c4ca8fb17f52aebbd5fb"
+    },
+    "book.epub": {
+      "bytes": 243060,
+      "sha256": "1f227fd7b6be739b9236f8021144923d0899ef00b9244b0163feac4519247933"
+    },
+    "art/cover.svg": {
+      "bytes": 4019,
+      "sha256": "ad605406d5b9b333657f7e2bb7eeb5e01fd0cc05ec1c9e12e6704d360087e353"
+    },
+    "art/scorecard.svg": {
+      "bytes": 32913,
+      "sha256": "32d8b164f19b570e568487a7a2329947e57fa198c1b2a89a1e5c6bb839469734"
+    },
+    "art/diag_01.svg": {
+      "bytes": 12275,
+      "sha256": "26549d68fdd9413e2d78c627a4e7493bd7f3441579b0c6bc0cffa85c47627fc3"
+    },
+    "art/diag_02.svg": {
+      "bytes": 8341,
+      "sha256": "bd3f15f810888bc888aacd50a3e808f6a706a90b2cdfc286935a3d956cd1df71"
+    },
+    "art/diag_03.svg": {
+      "bytes": 12851,
+      "sha256": "4285793fb3b17512fb8ed5916df3dbc01f54dc53f5c9468a3f809c58482b57fe"
+    },
+    "art/diag_04.svg": {
+      "bytes": 10695,
+      "sha256": "96f7efe2284bac8a58d58250e3a82d941f5dfe795913b2ffb2beb93ac2177436"
+    },
+    "art/diag_05.svg": {
+      "bytes": 10562,
+      "sha256": "a6a27b0f518e2731e887ed93a6371f300deca5f928603090d1da6957de4cccc1"
+    },
+    "art/diag_06.svg": {
+      "bytes": 11537,
+      "sha256": "5ac5222d336105eb06e22f3078f43a3b04da513ff6618a9b78d14ac35d0166dd"
+    },
+    "art/diag_07.svg": {
+      "bytes": 9566,
+      "sha256": "92a2474bd3d176ad475c159475849113bef882ddd0aed78fabcc56466df1cff4"
+    },
+    "art/diag_08.svg": {
+      "bytes": 8895,
+      "sha256": "7c69aec5b150a5d62f1cdf5e4f20cc8a0ed1caf3611ef6594d5d6479e3d152af"
+    }
+  }
+}

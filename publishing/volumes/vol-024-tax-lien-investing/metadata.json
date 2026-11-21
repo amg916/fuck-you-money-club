@@ -1,0 +1,80 @@
+{
+  "volume_id": "vol-024-tax-lien-investing",
+  "volume_slug": "vol-024-tax-lien-investing",
+  "volume_number": 24,
+  "site_ui": {
+    "cover": [
+      "TAX LIEN",
+      "INVESTING"
+    ],
+    "deck": [
+      "UNDERWRITE PARCEL EQUITY. MODEL REDEMPTION.",
+      "RESPECT STATUTORY NOTICE."
+    ],
+    "lead": "Data-Screened Tax Lien Certificate & Redeemable-Deed Investing Without Blind Landlocked, Brownfield, or Bid-Down Yield Traps",
+    "summary": "Separate returned principal from statutory interest income, screen EPA/GIS parcel hazards pre-auction, and follow post-Tyler equity rules.",
+    "chapters": [
+      "Business model & revenue boundaries",
+      "Decision-makers & payment rails",
+      "Unit economics & margin waterfall",
+      "Startup capital & lean stack",
+      "Beginner traps & failure modes",
+      "Sourcing & first deals",
+      "End-to-end operating blueprint",
+      "Public records, APIs & tooling",
+      "Contracts, statutes & scripts",
+      "Automation & distribution loops",
+      "Small-team pod & exit valuation",
+      "First 30-day launch sprint"
+    ],
+    "flow": [
+      [
+        "SOURCE",
+        "Mine high-intent deal triggers"
+      ],
+      [
+        "UNDERWRITE",
+        "Screen margin, float & rules"
+      ],
+      [
+        "ENGAGE",
+        "Execute mandate or pre-sell"
+      ],
+      [
+        "DELIVER",
+        "Run standardized SOP & ledger"
+      ],
+      [
+        "VERIFY",
+        "Audit quality, scrubs & statutes"
+      ],
+      [
+        "COMPOUND",
+        "Reconcile cash & scale pod"
+      ]
+    ]
+  },
+  "parent_brand": "THE FUCK YOU MONEY CLUB",
+  "book_series": "THE BIG MONEY PLAYBOOKS",
+  "tagline": "Big Money. Small Teams. No Bullshit.",
+  "title": "TAX LIEN INVESTING",
+  "subtitle": "The Complete Playbook for Tax Lien Investing: $15,000–$180,000 USD in Annual Realized Revenue, a 1 FT + 2 C Core Pod (3 People), and a 5-Person Scale Model",
+  "chapter_count": 12,
+  "total_word_count": 76601,
+  "expert_youtube_link_count": 180,
+  "min_expert_youtube_links_required": 150,
+  "target_expert_youtube_links": "150-200+",
+  "min_expert_youtube_links_per_chapter": 12,
+  "rating_system": "Money-to-Manpower Score",
+  "composite_score": 62,
+  "formats": [
+    "8.5×11 Executive Digital PDF",
+    "6×9 Print Edition",
+    "Reflowable EPUB 3.0"
+  ],
+  "isbn": null,
+  "publication_status": "approved_master",
+  "public_deploy_approved": false,
+  "paid_sales_approved": false,
+  "updated_at": "2026-11-21T23:17:45Z"
+}

@@ -1,0 +1,271 @@
+{
+  "candidate_number": 3,
+  "slug": "tax-lien-investing",
+  "title": "Tax Lien Investing",
+  "category": "Asset investing",
+  "production_stage": "approved_master",
+  "scores": {
+    "revenue_potential": 17,
+    "profit_margin_potential": 15,
+    "team_efficiency": 17,
+    "startup_accessibility": 5,
+    "automation_potential": 8
+  },
+  "dimension_max": {
+    "revenue_potential": 25,
+    "profit_margin_potential": 25,
+    "team_efficiency": 20,
+    "startup_accessibility": 15,
+    "automation_potential": 15
+  },
+  "total_score": 62,
+  "tier_label": "Capital / Labor Intensive",
+  "evidence_confidence": "High",
+  "uncertainty_band": "±3 pts",
+  "uncertainty_bounds": {
+    "low": 59,
+    "high": 65
+  },
+  "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
+  "score_rationale": {
+    "revenue_potential": "Revenue Potential: 17/25. Lean administration cannot offset capital lockup and adverse property selection.",
+    "profit_margin_potential": "Profit Margin Potential: 15/25. Lean administration cannot offset capital lockup and adverse property selection.",
+    "team_efficiency": "Team Efficiency: 17/20. Lean administration cannot offset capital lockup and adverse property selection.",
+    "startup_accessibility": "Startup Accessibility: 5/15. Lean administration cannot offset capital lockup and adverse property selection.",
+    "automation_potential": "Automation Potential: 8/15. Lean administration cannot offset capital lockup and adverse property selection."
+  },
+  "economics": {
+    "gross_revenue_range": "$15,000–$180,000 USD annually",
+    "net_profit_margin_range": "30–55%",
+    "owner_net_profit_potential": "$4,500–$99,000 USD annually, before personal taxes and reinvestment",
+    "startup_capital_range": "$100,000–$1,500,000 USD",
+    "monthly_opex_range": "$500–$4,000 USD",
+    "time_to_first_deal": "6–36 months",
+    "typical_team_size": {
+      "full_time_including_owner": 1,
+      "contractors": 2,
+      "total_people": 3
+    },
+    "includes_contractors_note": "Headcount includes the working owner and recurring contractors as people, not FTE equivalents. Contractors may be part-time. Scaled scenario adds one employee and one contractor; external vendor workforces are not counted as internal team members.",
+    "revenue_basis": "Realized interest, penalties and disposition gains; excludes returned principal",
+    "cost_basis": "Annual net margins include operating expenses and non-owner labor; monthly opex is fixed/semi-fixed overhead only. No owner salary is deducted. Capital needs may grow beyond startup range.",
+    "estimate_status": "Illustrative assumptions; not verified earnings data"
+  },
+  "scenarios": {
+    "conservative": {
+      "annual_gross_revenue_usd": 15000,
+      "net_profit_margin_pct": 30,
+      "annual_owner_net_profit_usd": 4500,
+      "full_time_including_owner": 1,
+      "contractors": 2,
+      "total_people": 3,
+      "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+    },
+    "base_case": {
+      "annual_gross_revenue_usd": 97500.0,
+      "net_profit_margin_pct": 42.5,
+      "annual_owner_net_profit_usd": 41438,
+      "full_time_including_owner": 1,
+      "contractors": 2,
+      "total_people": 3,
+      "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+    },
+    "scaled_small_team": {
+      "annual_gross_revenue_usd": 180000,
+      "net_profit_margin_pct": 55,
+      "annual_owner_net_profit_usd": 99000,
+      "full_time_including_owner": 2,
+      "contractors": 3,
+      "total_people": 5,
+      "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+    }
+  },
+  "automation_levers": [
+    "Auction screening",
+    "Redemption tracking"
+  ],
+  "key_risks": [
+    "Nonredeeming liens",
+    "Title defects",
+    "Capital loss"
+  ],
+  "regulatory_notes": [
+    "Auction eligibility, interest limits and foreclosure procedures are local."
+  ],
+  "track_ids": [
+    "track_1",
+    "track_2"
+  ],
+  "track_labels": [
+    "Asymmetric & Data-Arbitrage Plays",
+    "Grey-Zone Growth & Traffic Arbitrage"
+  ],
+  "plays": [
+    {
+      "id": "hoa_super_lien_tax_deed_redemption_arbitrage",
+      "track_id": "track_1",
+      "name": "HOA Super-Lien & Sub-Threshold Tax-Deed Statutory Redemption Arbitrage",
+      "mechanism": "Price small HOA priority liens and tax-sale interests using jurisdiction-specific priority, notice, and redemption rules; returns depend on enforceable rights, not assumed title extinguishment.",
+      "inputs": [
+        "County tax-sale and HOA lien records",
+        "Title report and statutory redemption calendar",
+        "Local counsel priority and notice opinion"
+      ],
+      "workflow": [
+        "1. Screen small-balance liens against property value, senior debt, and sale eligibility",
+        "2. Have local counsel verify priority, service, redemption rights, and purchaser restrictions",
+        "3. Bid within a net-recovery ceiling and calendar every payment and notice deadline",
+        "4. Reconcile redemption proceeds or pursue counsel-supervised title resolution after rights expire"
+      ],
+      "metrics": [
+        "Net realized recovery after legal costs",
+        "Capital days outstanding",
+        "Notice and redemption deadline compliance rate"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Sale invalidation or surviving senior lien",
+          "trigger": "Defective notice or incorrect assumption about statutory lien priority",
+          "impact": "Loss of expected recovery and extended title litigation",
+          "detection_metric": "Unresolved title exceptions and notice defects per acquisition",
+          "fallback": "Suspend bidding, seek available statutory refunds, and limit acquisitions to counsel-cleared interests"
+        }
+      ]
+    },
+    {
+      "id": "fractional_heir_share_partition_forcing",
+      "track_id": "track_1",
+      "name": "Fractional Heir-Share Acquisition & Tenancy-in-Common Partition Buyout Forcing",
+      "mechanism": "Acquire documented fractional heir interests at a discount reflecting illiquidity, then seek consensual buyouts or counsel-supervised partition subject to heirs-property protections and co-owner rights.",
+      "inputs": [
+        "Probate files and verified heirship records",
+        "Title chain, occupancy facts, and independent appraisal",
+        "Applicable partition and heirs-property protection rules"
+      ],
+      "workflow": [
+        "1. Establish ownership fractions, probate authority, and encumbrances before contacting sellers",
+        "2. Provide transparent offers with independent-advice opportunity and modeled partition costs",
+        "3. Seek voluntary co-owner buyouts or an agreed market sale before considering litigation",
+        "4. If unresolved, use counsel-led statutory procedures honoring notice, appraisal, and buyout rights"
+      ],
+      "metrics": [
+        "Verified ownership share acquired",
+        "Consensual resolution rate",
+        "Net proceeds after carrying and legal costs"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Heirs-property protections defeat assumed forced-sale economics",
+          "trigger": "Mandatory co-owner buyout, partition-in-kind preference, or defective heirship",
+          "impact": "Long holding period and lower realizable value",
+          "detection_metric": "Unresolved heirs and statutory buyout conditions per property",
+          "fallback": "Renegotiate voluntary exits or retain the interest without threatening unavailable remedies"
+        }
+      ]
+    },
+    {
+      "id": "agency_ad_spend_card_multiplier_rebate_cycling",
+      "track_id": "track_2",
+      "name": "Whitelisted Agency Ad-Spend Card-Multiplier Points & Volume-Rebate Cycling",
+      "mechanism": "Route genuine client-authorized advertising spend through eligible agency payment arrangements to earn contract-permitted rewards and volume rebates, net of financing, processing, and client pass-through obligations.",
+      "inputs": [
+        "Client media mandates and rebate ownership clauses",
+        "Issuer reward categories, caps, and repayment terms",
+        "Platform invoices and agency volume-rebate agreements"
+      ],
+      "workflow": [
+        "1. Verify client authorization, platform payment permissions, and ownership of rewards and rebates",
+        "2. Model eligible media purchases against reward caps, fees, liquidity, and rebate thresholds",
+        "3. Pay only genuine approved advertising invoices without circular spend or fabricated transactions",
+        "4. Reconcile settled rewards, client credits, refunds, and full card repayment each statement cycle"
+      ],
+      "metrics": [
+        "Net retained rewards and rebates per media dollar",
+        "Unfunded client exposure and repayment coverage",
+        "Invoice-to-reward reconciliation variance"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Reward clawback or client-funded liquidity shortfall",
+          "trigger": "Ineligible categories, prohibited payment aggregation, or delayed client reimbursement",
+          "impact": "Lost rebates, interest costs, and card suspension",
+          "detection_metric": "Denied reward value and overdue client balances versus cash reserves",
+          "fallback": "Move to client-direct billing or prefunded approved agency terms and stop rewards-dependent spending"
+        }
+      ]
+    },
+    {
+      "id": "tcpa_litigator_scrub_honeypot_arbitrage",
+      "track_id": "track_2",
+      "name": "TCPA Serial-Plaintiff Docket Scraping & Real-Time Litigator-Scrub Firewall Tollbooth",
+      "mechanism": "Offer consent-first outbound compliance screening using lawful docket-derived risk signals alongside mandatory do-not-call and revocation checks; plaintiff matching neither authorizes contact nor replaces TCPA compliance.",
+      "inputs": [
+        "Permitted public docket data with identity confidence scores",
+        "Consent provenance, revocations, and suppression lists",
+        "Applicable calling rules and customer retention policies"
+      ],
+      "workflow": [
+        "1. Ingest permitted docket records with source dates, minimization, and human identity review",
+        "2. Check consent, do-not-call status, revocations, and calling restrictions before optional risk enrichment",
+        "3. Suppress noncompliant contacts and route uncertain matches to review without planting honeypots or provoking claims",
+        "4. Serve auditable screening decisions with correction, deletion, and retention controls"
+      ],
+      "metrics": [
+        "Contacts blocked for missing consent or suppression match",
+        "False-positive identity match rate",
+        "Screening latency and stale-record share"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "False identity match or false assurance of permission to call",
+          "trigger": "Stale docket data or treating absence from a plaintiff list as consent",
+          "impact": "Unlawful outreach, privacy complaints, and customer liability",
+          "detection_metric": "Consent-audit failure rate and upheld identity correction requests",
+          "fallback": "Disable uncertain enrichment and require independently verified consent and authoritative suppression checks"
+        }
+      ]
+    }
+  ],
+  "platform_risks": [
+    {
+      "failure_mode": "Sale invalidation or surviving senior lien",
+      "trigger": "Defective notice or incorrect assumption about statutory lien priority",
+      "impact": "Loss of expected recovery and extended title litigation",
+      "detection_metric": "Unresolved title exceptions and notice defects per acquisition",
+      "fallback": "Suspend bidding, seek available statutory refunds, and limit acquisitions to counsel-cleared interests",
+      "play_id": "hoa_super_lien_tax_deed_redemption_arbitrage",
+      "play_name": "HOA Super-Lien & Sub-Threshold Tax-Deed Statutory Redemption Arbitrage",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Heirs-property protections defeat assumed forced-sale economics",
+      "trigger": "Mandatory co-owner buyout, partition-in-kind preference, or defective heirship",
+      "impact": "Long holding period and lower realizable value",
+      "detection_metric": "Unresolved heirs and statutory buyout conditions per property",
+      "fallback": "Renegotiate voluntary exits or retain the interest without threatening unavailable remedies",
+      "play_id": "fractional_heir_share_partition_forcing",
+      "play_name": "Fractional Heir-Share Acquisition & Tenancy-in-Common Partition Buyout Forcing",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Reward clawback or client-funded liquidity shortfall",
+      "trigger": "Ineligible categories, prohibited payment aggregation, or delayed client reimbursement",
+      "impact": "Lost rebates, interest costs, and card suspension",
+      "detection_metric": "Denied reward value and overdue client balances versus cash reserves",
+      "fallback": "Move to client-direct billing or prefunded approved agency terms and stop rewards-dependent spending",
+      "play_id": "agency_ad_spend_card_multiplier_rebate_cycling",
+      "play_name": "Whitelisted Agency Ad-Spend Card-Multiplier Points & Volume-Rebate Cycling",
+      "track_id": "track_2"
+    },
+    {
+      "failure_mode": "False identity match or false assurance of permission to call",
+      "trigger": "Stale docket data or treating absence from a plaintiff list as consent",
+      "impact": "Unlawful outreach, privacy complaints, and customer liability",
+      "detection_metric": "Consent-audit failure rate and upheld identity correction requests",
+      "fallback": "Disable uncertain enrichment and require independently verified consent and authoritative suppression checks",
+      "play_id": "tcpa_litigator_scrub_honeypot_arbitrage",
+      "play_name": "TCPA Serial-Plaintiff Docket Scraping & Real-Time Litigator-Scrub Firewall Tollbooth",
+      "track_id": "track_2"
+    }
+  ]
+}

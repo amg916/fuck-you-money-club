@@ -1,10 +1,10 @@
 {
   "scope": "publishing_store_excluding_previews",
   "sha256": {
-    "audit/existing_work_audit.json": "28de78fb4e698aac257d2af7e8f4fd41f6f37b6d40907e2483bfb2eb189aa9f4",
-    "brand/brand_system.json": "26ddb16555045beb7b4c92e41de1b229ea93d55a598070e7b87c893b9e528417",
-    "catalog/pipeline_29_candidates.json": "4d7215923285740854cbee689cb533c1f04a2b35387d49b40483e484928c9288",
-    "research/research_database_summary.json": "f21c3dc37cefbab5167b337f6ad42fd93ca8f74d33d2277278a3486aacf14450",
+    "audit/existing_work_audit.json": "7fcff1c1197dd1939c6bc8a99a9da8718680a336d7c8310ca573d0bddb359260",
+    "brand/brand_system.json": "f0d5fcfa9ddb5851f14f042f9293fbb3d0c48250961d919a5f41a5eecd858b73",
+    "catalog/pipeline_29_candidates.json": "dc2094ce8182f0fde0167df6e34572d329e6fac4798d6a5aedbc12785765f0f9",
+    "research/research_database_summary.json": "84ba29e649d35b0457f1fe7feaa7c80aaade4e8d0a7ec7f2b1e43a227f447adf",
     "site/newsletter_signups.json": "5a97fe09f877c0fccee940246e74f27dc5b6bc83148037af241946b350933794",
     "volumes/vol-001-heir-hunting/chapters/chapter-01.md": "4c44fe7e11c2f4af10ed7241bb0f8b49674c33d8c70c91a965cd3a0dab1133f0",
     "volumes/vol-001-heir-hunting/chapters/chapter-02.md": "c9f8705ba384dbbbd713674229cb8dfce45ab4fab27acea1480b476f229ad08b",
@@ -419,6 +419,24 @@
     "volumes/vol-023-mineral-rights/manuscript.json": "dbaa58eae52fb32ac328886435630bf65fc88ec43cbf50080d6e8316065285a6",
     "volumes/vol-023-mineral-rights/metadata.json": "72749d10657b9d99457b23ec7a9ce63d3161e775ea7ebdf176e3ddf2a2ef4e6e",
     "volumes/vol-023-mineral-rights/scorecard.json": "6c03ee568c9e8a05c8ed7fff06f3547eff52a421c287ca7e7219a486e9a244df",
-    "volumes/vol-023-mineral-rights/workbook.json": "88fa442ea8f09ff6d2f95e75dbee2a6f42279619d2d53fcf06c30ba0b0828fb0"
+    "volumes/vol-023-mineral-rights/workbook.json": "88fa442ea8f09ff6d2f95e75dbee2a6f42279619d2d53fcf06c30ba0b0828fb0",
+    "volumes/vol-024-tax-lien-investing/chapters/chapter-01.md": "17cb14cb6f146afe1f320fe12eb20d86cfac50d0b7dfe13738759bb26a3c9aa4",
+    "volumes/vol-024-tax-lien-investing/chapters/chapter-02.md": "89f395abef140a719c0e88fce2fbaadd7a2bb63448bc37cfe5fe3f36015a550d",
+    "volumes/vol-024-tax-lien-investing/chapters/chapter-03.md": "4ed04a07e26af4e91a8307f46f31644b47d2dfd897d1e222effbafff607ff639",
+    "volumes/vol-024-tax-lien-investing/chapters/chapter-04.md": "3948e34227333d28c79a15258aa5e7e0e7471c6f4c2d2cd73f4b04d8c8f151c1",
+    "volumes/vol-024-tax-lien-investing/chapters/chapter-05.md": "f10ac5a0f5e73f7759889456ef6b76cc48ae2dc975b9d9d7e23a9e4540424022",
+    "volumes/vol-024-tax-lien-investing/chapters/chapter-06.md": "e96f19aa0b1f3cc81cdd35496d8730aa5d4d75c81597fa5cf765b79b29b69b16",
+    "volumes/vol-024-tax-lien-investing/chapters/chapter-07.md": "0ae5cb1a90fdb1ec6a8f254e4149c775b36a40d93939ac811e2edf66ed7a3943",
+    "volumes/vol-024-tax-lien-investing/chapters/chapter-08.md": "e36c63b016b6f97df97ac95a1eb70e26f06e34293a20aa8fbda8c8d205760205",
+    "volumes/vol-024-tax-lien-investing/chapters/chapter-09.md": "d8cc027926189e68e6d81394bd9fd86931c2979995da7d3f9d929ee4b19fbf15",
+    "volumes/vol-024-tax-lien-investing/chapters/chapter-10.md": "e1e8f4256a1515072271729e45b14fee5cb32a23856feba96f3dc3ffa5f764a1",
+    "volumes/vol-024-tax-lien-investing/chapters/chapter-11.md": "ddd5347af0afb41b159505215fa7ffd698c7b27ae7d2982ce3155e3f217adb78",
+    "volumes/vol-024-tax-lien-investing/chapters/chapter-12.md": "cf8d9414b79e7c21651ace5397442e614260457fcd480129da3b0ae8e6bd4788",
+    "volumes/vol-024-tax-lien-investing/diagrams_data.json": "7dcf4695272302d318d57ae6e6976015207db0ef91baec385451d178817393cd",
+    "volumes/vol-024-tax-lien-investing/graphics_reviews.json": "509f8a9336317b6e5fbe097303ba5a6d0053c98674e2854e8f9fef9177f6a692",
+    "volumes/vol-024-tax-lien-investing/manuscript.json": "a9e9e7df8da847dcddd779012cbe4c4b69c2c2a8d142f7603349308279210adf",
+    "volumes/vol-024-tax-lien-investing/metadata.json": "3c4568f255879f55bf0c9a85a34128d91b398cd059d00380005405323733a7e5",
+    "volumes/vol-024-tax-lien-investing/scorecard.json": "6fb4e95f86355339d43ebe6829552eda4a00cd40b4a37870923213578baeca15",
+    "volumes/vol-024-tax-lien-investing/workbook.json": "b06029931665a05d02a346e575fc50e385b36ef74b1c8355a6234c4a289c73c2"
   }
 }
