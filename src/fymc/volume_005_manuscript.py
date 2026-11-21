@@ -413,6 +413,12 @@ def build_volume_005_manuscript(abridged_videos: list[dict] | None = None) -> di
                         existing.append(deepcopy(citation))
 
     cap_per_chapter = 18 if large_corpus else None
+    used_book_videos = {
+        str(base_cit.get("video_id") or "")
+        for ch_list in BASELINE_EXPERT_CITATIONS_BY_CHAPTER.values()
+        for base_cit in ch_list
+        if base_cit.get("video_id")
+    }
     for chapter in chapters:
         number = chapter["chapter_number"]
         existing = chapter["source_citations"]
@@ -428,7 +434,17 @@ def build_volume_005_manuscript(abridged_videos: list[dict] | None = None) -> di
                 cloned["tip"] = polished_base
             baseline_prepared.append(cloned)
         base_urls = {item.get("url") for item in baseline_prepared}
-        non_base = [item for item in existing if item.get("url") not in base_urls]
+        non_base_raw = [item for item in existing if item.get("url") not in base_urls]
+        fresh_vid_items = []
+        repeat_vid_items = []
+        for item in non_base_raw:
+            ivid = str(item.get("video_id") or "")
+            if ivid and ivid not in used_book_videos:
+                used_book_videos.add(ivid)
+                fresh_vid_items.append(item)
+            else:
+                repeat_vid_items.append(item)
+        non_base = fresh_vid_items + repeat_vid_items
         merged = baseline_prepared + non_base
         if cap_per_chapter is not None and len(merged) > cap_per_chapter:
             chapter["source_citations"] = baseline_prepared + non_base[: max(0, cap_per_chapter - len(baseline_prepared))]

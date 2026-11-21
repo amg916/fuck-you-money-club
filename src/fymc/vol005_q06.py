@@ -153,14 +153,17 @@ CHAPTER_6["sections"].append({
         ]
     }
 })
-CHAPTER_6["sections"][4]["scenario_table"] = {
-    "caption": "Candidate #24 annual operating envelopes; GMV excluded",
-    "headers": ["Scenario", "Gross earned commissions, net of reversals", "All-in cost envelope", "Margin", "Owner net profit", "Staffing"],
-    "rows": [
-        ["Conservative", "$50,000", "$40,000", "20%", "$10,000", "1 FT + 2 C"],
-        ["Base", "$325,000", "$211,250", "35%", "$113,750", "1 FT + 2 C"],
-        ["Scaled", "$600,000", "$300,000", "50%", "$300,000", "2 FT + 3 C"]
-    ]
-}
+CHAPTER_6["sections"][4]["tables"] = [
+    CHAPTER_6["sections"][4].pop("table"),
+    {
+        "caption": "Candidate #24 annual operating envelopes; GMV excluded",
+        "headers": ["Scenario", "Gross earned commissions, net of reversals", "All-in cost envelope", "Margin", "Owner net profit", "Staffing"],
+        "rows": [
+            ["Conservative", "$50,000", "$40,000", "20%", "$10,000", "1 FT + 2 C"],
+            ["Base", "$325,000", "$211,250", "35%", "$113,750", "1 FT + 2 C"],
+            ["Scaled", "$600,000", "$300,000", "50%", "$300,000", "2 FT + 3 C"]
+        ]
+    },
+]
 CHAPTER_6["statutory_citations"][0]["url"] = "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section1125&num=0&edition=prelim"
 CHAPTER_6["statutory_citations"][2]["url"] = "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section45&num=0&edition=prelim"

@@ -2644,6 +2644,15 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
             if isinstance(sec.get("table"), dict)
         )
         self.assertGreaterEqual(v5_table_rows, 220)
+        v5_corpus = json.loads((ROOT / "data" / "custom" / "vol005_affiliate_marketing_corpus.json").read_text(encoding="utf-8"))
+        self.assertGreaterEqual(len({v["video_id"] for v in v5_corpus.get("videos", [])}), 150)
+        repo_v5_unique_vids = {
+            cit["video_id"]
+            for ch in repo_v5["manuscript"]["chapters"]
+            for cit in ch.get("source_citations", [])
+            if cit.get("video_id")
+        }
+        self.assertGreaterEqual(len(repo_v5_unique_vids), 150)
         for ch in repo_v5["manuscript"]["chapters"]:
             for cit in ch.get("source_citations", []):
                 hay = f"{cit.get('title', '')} {cit.get('channel', '')}"

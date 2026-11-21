@@ -1,6 +1,6 @@
 {
-  "abridged_video_count": 541,
-  "raw_video_count": 541,
+  "abridged_video_count": 636,
+  "raw_video_count": 636,
   "summary": {
     "type": "dict",
     "keys": [
@@ -22,11 +22,11 @@
       "coverage": 6
     },
     "values": {
-      "generated_at": "2026-11-20T19:09:47+00:00",
+      "generated_at": "2026-11-21T11:03:49+00:00",
       "schema_version": "1.0"
     }
   },
-  "generated_at": "2026-11-20T19:09:47Z",
+  "generated_at": "2026-11-21T11:03:49Z",
   "counts": {
     "topics": 8
   },
@@ -34,9 +34,9 @@
     {
       "topic_id": "business_model_and_economics",
       "title": "Business Model, Contingency Economics & Deal Scale",
-      "video_count": 389,
-      "tip_count": 833,
-      "channel_count": 247,
+      "video_count": 468,
+      "tip_count": 1069,
+      "channel_count": 293,
       "top_sources": [
         {
           "video_id": "JVbzH2BD68w",
@@ -81,18 +81,18 @@
           "duration": "00:17:50"
         },
         {
+          "video_id": "N7nyWQc6E1c",
+          "title": "13 Best Affiliate Programs You NEED to Join in 2026 (High Paying for Beginners)",
+          "author": "Adam Enfroy",
+          "url": "https://www.youtube.com/watch?v=N7nyWQc6E1c",
+          "duration": "00:05:58"
+        },
+        {
           "video_id": "Xpw9vNbYna0",
           "title": "Core Unit Economics: The Financial Formulas Behind SaaS, E-Commerce, and Marketplaces",
           "author": "One Minute Finance",
           "url": "https://www.youtube.com/watch?v=Xpw9vNbYna0",
           "duration": "00:11:28"
-        },
-        {
-          "video_id": "aOKH0EoSCCc",
-          "title": "The Economics of Owning a SaaS Company",
-          "author": "Costoday",
-          "url": "https://www.youtube.com/watch?v=aOKH0EoSCCc",
-          "duration": "00:13:45"
         }
       ],
       "top_timestamped_insights": [
@@ -178,60 +178,60 @@
           "verbatim_research_only": true
         },
         {
-          "tip_paraphrase_summary": "Users on a subscription model. So, the customers pay monthly for a tool they really need to use all the time. Therefore, they are…",
-          "category": "Legal / Deadline",
-          "timestamp": "00:07:49",
-          "link": "https://www.youtube.com/watch?v=lh5ulbIfANU&t=469s",
-          "video_title": "The Smartest Affiliate Business Model: Recurring SaaS Commissions",
-          "author": "Michael Bashi",
+          "tip_paraphrase_summary": "Daqui, tá certo? Então aqui esta a minha recomendação. Se realmente você quer anunciar e inclusive pesquisou ali no planejador de palavra-chave que a…",
+          "category": "Non-Negotiable Rule",
+          "timestamp": "00:16:00",
+          "link": "https://www.youtube.com/watch?v=8XBelBHfIXE&t=960s",
+          "video_title": "Como Anunciar Produtos Proibidos (NO BRAND BIDDING) - FAÇA ISSO! [AFILIADO NA GRINGA] - GOOGLE ADS",
+          "author": "Amanda Agostinho",
           "verbatim_research_only": true
         }
       ],
       "statutes_and_forms": [
         "form and",
-        "form of",
         "form that",
         "form to",
         "form for",
+        "form of",
         "form is",
-        "form the",
-        "form you",
         "form or",
-        "letters of administration",
-        "form where",
+        "form you",
+        "form the",
         "form like",
-        "form below",
+        "form so",
+        "letters of administration",
         "form content",
         "form on",
-        "form so",
-        "quiet title",
-        "form in",
+        "form where",
+        "form as",
         "form with",
+        "form a",
+        "form below",
+        "form in",
+        "form videos",
+        "quiet title",
+        "form well",
+        "form your",
         "letters testamentary",
         "property Act",
-        "form a",
         "form our",
         "form partition",
-        "form your",
+        "form video",
         "form an",
-        "form as",
+        "form has",
+        "form I",
+        "form if",
         "form it",
         "form page",
+        "form they",
         "form this",
-        "form well",
+        "form uh",
         "warranty deed",
-        "affidavit of heirship",
-        "court order",
-        "form built",
-        "form called",
-        "form fields",
-        "form if",
-        "form law",
-        "form probate"
+        "affidavit of heirship"
       ],
       "tools_and_portals": [
-        "Facebook",
         "Google",
+        "Facebook",
         "LinkedIn",
         "Ancestry",
         "FamilySearch",
@@ -255,6 +255,7 @@
         "https://www.youtube.com/@courtneyfricke",
         "https://x.com/courtneyfricke",
         "https://youtu.be/3cmj5kGm2Xw",
+        "Bing",
         "https://www.youtube.com/surplusfunds101",
         "https://www.instagram.com/thedavidwilkerson",
         "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
@@ -268,16 +269,15 @@
         "https://www.instagram.com/erizzyy/",
         "https://www.youtube.com/user/AncestryCom",
         "MyHeritage",
-        "https://facebook.com/groups/estateprofessionalsmastermind",
-        "https://www.facebook.com/groups/curativetitle"
+        "https://facebook.com/groups/estateprofessionalsmastermind"
       ]
     },
     {
       "topic_id": "probate_and_docket_sourcing",
       "title": "County Probate Dockets, Intestate Filings & Estate Leads",
-      "video_count": 408,
-      "tip_count": 705,
-      "channel_count": 225,
+      "video_count": 463,
+      "tip_count": 776,
+      "channel_count": 267,
       "top_sources": [
         {
           "video_id": "oZiYbKNvxJY",
@@ -338,6 +338,33 @@
       ],
       "top_timestamped_insights": [
         {
+          "tip_paraphrase_summary": "I make sure to do two things with my landing pages for e-commerce products. One is to have a headline that is strongly related…",
+          "category": "Non-Negotiable Rule",
+          "timestamp": "00:03:37",
+          "link": "https://www.youtube.com/watch?v=rc7rwCDzbg4&t=217s",
+          "video_title": "$57 Affiliate Payouts With $35 Google Ads CPA (Full Funnel Breakdown)",
+          "author": "Aldo Gomes",
+          "verbatim_research_only": true
+        },
+        {
+          "tip_paraphrase_summary": "Key to cheaper traffic that is still high intent. But there is a way to come up with even better keywords. And that's what…",
+          "category": "Insider Tactic",
+          "timestamp": "00:02:02",
+          "link": "https://www.youtube.com/watch?v=rc7rwCDzbg4&t=122s",
+          "video_title": "$57 Affiliate Payouts With $35 Google Ads CPA (Full Funnel Breakdown)",
+          "author": "Aldo Gomes",
+          "verbatim_research_only": true
+        },
+        {
+          "tip_paraphrase_summary": "You don't really own any of that. It's not an asset. Now think about it like an entrepreneur, as you probably are. Your time…",
+          "category": "Pitfall / Hard No",
+          "timestamp": "00:05:03",
+          "link": "https://www.youtube.com/watch?v=BF1KHGKUa78&t=303s",
+          "video_title": "The New Parasite SEO Loophole Hiding Inside Google",
+          "author": "Alek Borisov",
+          "verbatim_research_only": true
+        },
+        {
           "tip_paraphrase_summary": "You could all a sudden, you know, get that knock on the door, you've inherited 2 million 2 million euro property in Portugal or…",
           "category": "Pitfall / Hard No",
           "timestamp": "00:32:03",
@@ -362,6 +389,15 @@
           "link": "https://www.youtube.com/watch?v=whDzDrFNADQ&t=1367s",
           "video_title": "USDA FSA Resources for Heirs: Join FSA as we talk with the Experts (Episode 1-Full Version)",
           "author": "FarmersGov",
+          "verbatim_research_only": true
+        },
+        {
+          "tip_paraphrase_summary": "Choice. In our example of the portable quiet AC, I would have a section explaining what this new AC is, why it's so quiet…",
+          "category": "Non-Negotiable Rule",
+          "timestamp": "00:04:57",
+          "link": "https://www.youtube.com/watch?v=rc7rwCDzbg4&t=297s",
+          "video_title": "$57 Affiliate Payouts With $35 Google Ads CPA (Full Funnel Breakdown)",
+          "author": "Aldo Gomes",
           "verbatim_research_only": true
         },
         {
@@ -390,99 +426,63 @@
           "video_title": "Hyperlocal real estate marketing at probate court & How to buy a probate property as a sub2 deal",
           "author": "Probate Mastery",
           "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "Plan their email marketing calendar for an entire year. Now, I recently pulled the data for this offer specifically. And as you can see…",
-          "category": "Legal / Deadline",
-          "timestamp": "00:01:24",
-          "link": "https://www.youtube.com/watch?v=vC_LEc8pGp8&t=84s",
-          "video_title": "This Landing Page Has A 79% Conversion Rate. Here’s Why It Works…",
-          "author": "Alex Cattoni",
-          "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "Scroll down and see that I've included a quick breakdown of everything that's included in that lead magnet, followed by a brief bio about…",
-          "category": "Pitfall / Hard No",
-          "timestamp": "00:07:36",
-          "link": "https://www.youtube.com/watch?v=vC_LEc8pGp8&t=456s",
-          "video_title": "This Landing Page Has A 79% Conversion Rate. Here’s Why It Works…",
-          "author": "Alex Cattoni",
-          "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "Unique visitors,3528 signups for a conversion rate of 79% which is pretty dang good. But do you think we could make this even better?…",
-          "category": "Non-Negotiable Rule",
-          "timestamp": "00:08:00",
-          "link": "https://www.youtube.com/watch?v=vC_LEc8pGp8&t=480s",
-          "video_title": "This Landing Page Has A 79% Conversion Rate. Here’s Why It Works…",
-          "author": "Alex Cattoni",
-          "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "I hope you enjoyed this breakdown of two high converting landing pages straight from my own funnel. I love breaking down marketing strategies and…",
-          "category": "Pitfall / Hard No",
-          "timestamp": "00:08:53",
-          "link": "https://www.youtube.com/watch?v=vC_LEc8pGp8&t=533s",
-          "video_title": "This Landing Page Has A 79% Conversion Rate. Here’s Why It Works…",
-          "author": "Alex Cattoni",
-          "verbatim_research_only": true
         }
       ],
       "statutes_and_forms": [
         "form and",
         "form of",
-        "form below",
         "form that",
-        "form the",
+        "form for",
         "form to",
         "form is",
-        "form for",
+        "form below",
+        "form the",
         "form you",
         "form or",
-        "letters of administration",
         "form a",
-        "form where",
+        "letters of administration",
         "form so",
+        "form where",
         "form in",
+        "form like",
         "form on",
+        "form our",
+        "form we",
         "form your",
         "quiet title",
-        "form our",
         "letters testamentary",
         "property Act",
         "affidavit of heirship",
         "form an",
+        "form as",
         "form partition",
         "form today",
-        "form we",
+        "Form uh",
+        "form um",
         "form will",
+        "form with",
         "warranty deed",
         "affidavit of airship",
         "court order",
+        "form but",
+        "form content",
         "form features",
-        "form it",
-        "form like",
-        "Form uh",
-        "Information Act",
-        "summary administration",
-        "balancing act",
-        "form as",
-        "form does",
-        "form due"
+        "form fill",
+        "form I"
       ],
       "tools_and_portals": [
         "Facebook",
         "Google",
-        "Ancestry",
         "LinkedIn",
+        "Ancestry",
         "FamilySearch",
         "https://excesselite.com",
         "https://www.facebook.com/groups/assetrecovery",
         "https://www.moneymakingjug.com/inquiry",
+        "Excel",
         "https://www.surplusfunds101.com/freecallingscript",
         "https://www.instagram.com/erizzyy/",
         "https://www.youtube.com/surplusfunds101",
-        "Excel",
         "https://instagram.com/courtneyfricke",
         "https://tiktok.com/@courtney.fricke",
         "https://www.facebook.com/courtneyfricke19/",
@@ -500,25 +500,25 @@
         "http://familysearch.me/youtubeportuguese",
         "http://familysearch.me/youtubespanish",
         "https://youtu.be/3cmj5kGm2Xw",
+        "Bing",
         "MyHeritage",
         "Regrid",
+        "CSV",
         "http://www.youtube.com/channel/UCsc0AQkAh_2cQmxqwD6VWRw?sub_confirmation=1",
         "https://probatemastery.com",
         "https://twitter.com/Ancestry",
         "https://www.ancestry.com/",
         "https://www.facebook.com/Ancestry/",
         "https://www.instagram.com/ancestry",
-        "https://www.youtube.com/user/AncestryCom",
-        "CSV",
-        "Find a Grave"
+        "https://www.youtube.com/user/AncestryCom"
       ]
     },
     {
       "topic_id": "unclaimed_property_and_escheat",
       "title": "State Unclaimed Property, Escheated Funds & Treasury Claims",
-      "video_count": 193,
+      "video_count": 204,
       "tip_count": 582,
-      "channel_count": 103,
+      "channel_count": 112,
       "top_sources": [
         {
           "video_id": "bsbWDqAXsrE",
@@ -675,41 +675,41 @@
         "form that",
         "Form is",
         "form you",
+        "form of",
         "form the",
         "form to",
         "form for",
-        "form of",
-        "form today",
-        "form in",
         "form our",
-        "form so",
+        "form today",
         "form we",
+        "form but",
+        "form in",
+        "form so",
+        "Form uh",
+        "form um",
         "affidavit of heirship",
+        "form a",
         "form as",
         "form due",
+        "form fill",
         "form it",
         "form now",
         "form on",
+        "form or",
         "form this",
-        "Form uh",
-        "form um",
         "form will",
         "form your",
         "Information Act",
         "summary administration",
         "balancing act",
-        "form a",
         "form all",
         "form an",
-        "form but",
-        "form fill",
+        "form because",
+        "form better",
+        "form configurations",
         "form from",
-        "Form located",
-        "form online",
-        "form or",
-        "form research",
-        "form some",
-        "form them"
+        "form I",
+        "Form located"
       ],
       "tools_and_portals": [
         "Facebook",
@@ -721,13 +721,13 @@
         "https://www.youtube.com/surplusfunds101",
         "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
         "https://www.instagram.com/thedavidwilkerson",
-        "https://www.instagram.com/erizzyy/",
         "LinkedIn",
+        "https://www.instagram.com/erizzyy/",
         "Regrid",
         "https://www.facebook.com/groups/770825015084618",
         "CSV",
-        "https://www.instagram.com/erizzyy",
         "Excel",
+        "https://www.instagram.com/erizzyy",
         "https://skool.com/surplusfunds",
         "https://surplusfunds.ai",
         "Ancestry",
@@ -757,9 +757,9 @@
     {
       "topic_id": "genealogy_and_heirship_proof",
       "title": "Forensic Genealogy, Per-Stirpes Kinship & Proof of Heirship",
-      "video_count": 449,
-      "tip_count": 677,
-      "channel_count": 262,
+      "video_count": 532,
+      "tip_count": 755,
+      "channel_count": 315,
       "top_sources": [
         {
           "video_id": "7M3XZfN7814",
@@ -912,51 +912,51 @@
       ],
       "statutes_and_forms": [
         "form and",
-        "form of",
         "form that",
         "form to",
         "form for",
+        "form of",
         "form you",
         "form is",
-        "form below",
-        "form the",
         "form or",
+        "form the",
+        "form below",
+        "form like",
+        "form so",
         "form a",
-        "form where",
-        "letters of administration",
+        "form as",
         "form content",
         "form on",
-        "form so",
+        "form where",
+        "letters of administration",
+        "form with",
         "form your",
         "form in",
-        "form like",
+        "form videos",
         "quiet title",
-        "form as",
-        "form with",
+        "Form uh",
+        "form video",
+        "form well",
         "property Act",
         "affidavit of heirship",
+        "form I",
+        "form if",
         "form our",
         "form partition",
+        "form they",
         "form this",
-        "Form uh",
         "form will",
         "letters testamentary",
         "affidavit of airship",
         "form an",
         "form features",
-        "form if",
-        "form it",
-        "form page",
-        "form video",
-        "form well",
-        "Information Act",
-        "summary administration"
+        "form has"
       ],
       "tools_and_portals": [
-        "Facebook",
         "Google",
-        "Ancestry",
+        "Facebook",
         "LinkedIn",
+        "Ancestry",
         "FamilySearch",
         "https://excesselite.com",
         "https://www.facebook.com/groups/assetrecovery",
@@ -967,6 +967,7 @@
         "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
         "https://www.instagram.com/thedavidwilkerson",
         "https://www.instagram.com/erizzyy/",
+        "Bing",
         "https://instagram.com/courtneyfricke",
         "https://tiktok.com/@courtney.fricke",
         "https://www.facebook.com/courtneyfricke19/",
@@ -991,16 +992,15 @@
         "https://www.instagram.com/ancestry",
         "https://www.youtube.com/user/AncestryCom",
         "Newspapers.com",
-        "Bing",
         "https://www.facebook.com/groups/curativetitle"
       ]
     },
     {
       "topic_id": "skip_tracing_and_outreach",
       "title": "Skip Tracing, Ethical Heir Contact & Trust Building",
-      "video_count": 235,
-      "tip_count": 102,
-      "channel_count": 153,
+      "video_count": 296,
+      "tip_count": 124,
+      "channel_count": 199,
       "top_sources": [
         {
           "video_id": "dJ-LTFmMsTg",
@@ -1038,6 +1038,13 @@
           "duration": "00:04:00"
         },
         {
+          "video_id": "nNr0jVmba9w",
+          "title": "THE most valuable funnel training you'll ever watch (10,000 hours experience)",
+          "author": "Sell Your Service",
+          "url": "https://www.youtube.com/watch?v=nNr0jVmba9w",
+          "duration": "00:35:08"
+        },
+        {
           "video_id": "zMW-iFWYX9w",
           "title": "Curative Title Research: How She Finds Missing Owners",
           "author": "Logan Fullmer",
@@ -1050,13 +1057,6 @@
           "author": "Money Talk With Leon",
           "url": "https://www.youtube.com/watch?v=B8Z2fA5X0J4",
           "duration": "00:16:37"
-        },
-        {
-          "video_id": "t4w_wFimZ9A",
-          "title": "State Funds Tutorial: Cold Calling Objections vs. Complaints. Surplus Funds 101",
-          "author": "Surplus Funds 101",
-          "url": "https://www.youtube.com/watch?v=t4w_wFimZ9A",
-          "duration": "00:10:10"
         }
       ],
       "top_timestamped_insights": [
@@ -1076,6 +1076,15 @@
           "link": "https://www.youtube.com/watch?v=ASO1JUOWTjA&t=355s",
           "video_title": "State Funds Tutorial Virtual Assistants: Top 3 Hiring Mistakes While Growing Your Surplus Business",
           "author": "Surplus Funds 101",
+          "verbatim_research_only": true
+        },
+        {
+          "tip_paraphrase_summary": "I have also left an overly broad question at the end for now. We will improve that, because the best follow up should connect…",
+          "category": "Legal / Deadline",
+          "timestamp": "00:18:18",
+          "link": "https://www.youtube.com/watch?v=gGfsCEiyizs&t=1098s",
+          "video_title": "Parasite Reddit SEO: Find Google Traffic With This Workflow",
+          "author": "Rankso SEO",
           "verbatim_research_only": true
         },
         {
@@ -1140,66 +1149,57 @@
           "video_title": "Pre Probate Leads vs Probate Leads: How do you market to them and why cold calling isn't the best",
           "author": "Probate Mastery",
           "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "To reject it um I love giving someone the opportunity to reject what I just offered because when I agree with them and I…",
-          "category": "Pitfall / Hard No",
-          "timestamp": "00:36:07",
-          "link": "https://www.youtube.com/watch?v=xumwh2SPKv4&t=2167s",
-          "video_title": "All The Leads Probate Mastermind #447",
-          "author": "All The Leads",
-          "verbatim_research_only": true
         }
       ],
       "statutes_and_forms": [
         "form and",
-        "form of",
         "form for",
+        "form of",
         "form to",
         "form that",
-        "form the",
-        "form you",
-        "form below",
-        "form is",
-        "form where",
-        "form a",
-        "form your",
-        "quiet title",
-        "form our",
         "form or",
-        "form partition",
-        "form so",
-        "Form uh",
-        "property act",
-        "form content",
+        "form you",
+        "form the",
+        "form is",
         "form like",
+        "form below",
+        "form so",
+        "form where",
+        "form your",
+        "form a",
         "form on",
+        "quiet title",
+        "form as",
+        "form content",
+        "form our",
+        "Form uh",
+        "form partition",
+        "property act",
+        "form in",
+        "form they",
+        "form video",
+        "form what",
+        "form with",
         "affidavit of heirship",
         "balancing act",
         "court order",
-        "form in",
+        "form fill",
+        "form I",
+        "form then",
         "form this",
+        "form um",
+        "form videos",
+        "form well",
         "form which",
-        "form will",
-        "form with",
-        "just act",
-        "summary administration",
-        "warranty deed",
-        "affidavit of airship",
-        "form all",
-        "form an",
-        "form as",
-        "form builder",
-        "form called",
-        "form demo"
+        "form will"
       ],
       "tools_and_portals": [
-        "Facebook",
         "Google",
+        "Facebook",
         "LinkedIn",
+        "Excel",
         "https://www.surplusfunds101.com/freecallingscript",
         "https://www.youtube.com/surplusfunds101",
-        "Excel",
         "https://excesselite.com",
         "https://www.facebook.com/groups/assetrecovery",
         "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
@@ -1210,6 +1210,7 @@
         "https://www.moneymakingjug.com/inquiry",
         "https://www.youtube.com/@courtneyfricke",
         "https://x.com/courtneyfricke",
+        "Bing",
         "Ancestry",
         "https://probatemastery.com",
         "https://www.facebook.com/groups/curativetitle",
@@ -1217,10 +1218,13 @@
         "https://www.youtube.com/playlist?list=PL_t1CjX04xMsUc4TcAH_uyYDMPzzU6xRy",
         "https://www.youtube.com/playlist?list=PL_t1CjX04xMtBIyWGIO5Mvi2FDn2f436N",
         "DataTree",
+        "https://sparkloop.app/paid-recommendations",
+        "https://sparkloop.app/partner-program",
+        "https://twitter.com/growthcurrency",
         "https://www.facebook.com/groups/770825015084618",
-        "Bing",
         "http://coaching.dpasummit.com",
         "https://book.dpasummit.com/free-book-page?el=Book_In_Descrip_YT&htrafficsource=youtube&hcategory=Book_Funnel_Organic",
+        "https://help.sparkloop.app/en/articles/8802280-win-a-free-trip-to-cancun",
         "https://www.instagram.com/logan_fullmer",
         "https://www.loganfullmer.com/",
         "https://www.tiktok.com/@loganfullmer_?is_from_webapp=1&sender_device=pc",
@@ -1229,19 +1233,15 @@
         "https://www.youtube.com/playlist?list=PL_t1CjX04xMtnNcKPG5LvTh-1m2QVIrY4",
         "Uniform Partition",
         "https://facebook.com/groups/estateprofessionalsmastermind",
-        "https://skool.com/surplusfunds",
-        "https://surplusfunds.ai",
-        "https://www.instagram.com/erizzyy",
-        "https://www.surplusfunds101.com/contractlibrary",
-        "CSV"
+        "https://skool.com/surplusfunds"
       ]
     },
     {
       "topic_id": "contracts_and_compensation",
       "title": "Fee Agreements, Assignments of Interest & Escrow Disbursement",
-      "video_count": 414,
-      "tip_count": 533,
-      "channel_count": 248,
+      "video_count": 491,
+      "tip_count": 705,
+      "channel_count": 298,
       "top_sources": [
         {
           "video_id": "VBvaq5etzV4",
@@ -1338,6 +1338,15 @@
           "verbatim_research_only": true
         },
         {
+          "tip_paraphrase_summary": "The model may not know you exist yet, at least not from the training. That's where the second source comes in, real time retrieval.…",
+          "category": "Legal / Deadline",
+          "timestamp": "00:01:02",
+          "link": "https://www.youtube.com/watch?v=WBhqyUPJOro&t=62s",
+          "video_title": "What Is GEO? Generative Engine Optimization & How to Rank in AI Search",
+          "author": "trendos",
+          "verbatim_research_only": true
+        },
+        {
           "tip_paraphrase_summary": "You probably couldn't see everything in DataTree in this particular state and county, you'd have to go find a titled company to help you…",
           "category": "Non-Negotiable Rule",
           "timestamp": "00:01:15",
@@ -1381,62 +1390,53 @@
           "video_title": "How Does Impact.com Work? | How To Make Money With Impact.com",
           "author": "subscribe if i helped you :)",
           "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "I applied and got a $1,000 AWS startup credit. AWS offers a $1,000 credit if you're building your startup. They also give up to…",
-          "category": "Sequence / Alternative",
-          "timestamp": "00:00:00",
-          "link": "https://www.youtube.com/watch?v=_oN2fQHccDc&t=0s",
-          "video_title": "How I Got $1,000 From AWS For My Startup!",
-          "author": "Vinod Sharma",
-          "verbatim_research_only": true
         }
       ],
       "statutes_and_forms": [
         "form and",
-        "form of",
         "form that",
         "form to",
+        "form of",
         "form for",
         "Form is",
         "form you",
+        "form or",
         "form below",
         "form the",
-        "letters of administration",
-        "form or",
-        "form where",
         "form like",
         "form on",
-        "form a",
-        "form content",
         "form as",
+        "form content",
+        "letters of administration",
+        "form so",
+        "form where",
+        "form a",
+        "form with",
         "form in",
         "form our",
-        "form so",
-        "form this",
-        "form with",
+        "Form uh",
         "form your",
+        "form this",
+        "form um",
+        "form video",
+        "form videos",
+        "form we",
+        "form well",
         "letters testamentary",
         "property Act",
         "quiet title",
         "affidavit of heirship",
+        "form I",
         "form partition",
-        "Form uh",
         "court order",
-        "form it",
-        "form video",
-        "form we",
-        "form well",
-        "form will",
-        "Information Act",
-        "summary administration",
-        "warranty deed",
-        "affidavit of airship",
-        "balancing act"
+        "form fill",
+        "form has",
+        "form if",
+        "form it"
       ],
       "tools_and_portals": [
-        "Facebook",
         "Google",
+        "Facebook",
         "LinkedIn",
         "Ancestry",
         "https://excesselite.com",
@@ -1454,6 +1454,7 @@
         "https://www.facebook.com/courtneyfricke19/",
         "https://www.youtube.com/@courtneyfricke",
         "https://x.com/courtneyfricke",
+        "Bing",
         "https://probatemastery.com",
         "https://www.facebook.com/groups/770825015084618",
         "https://www.facebook.com/groups/curativetitle",
@@ -1469,20 +1470,19 @@
         "http://familysearch.me/youtubeportuguese",
         "http://familysearch.me/youtubespanish",
         "https://facebook.com/groups/estateprofessionalsmastermind",
+        "https://sparkloop.app/paid-recommendations",
+        "https://sparkloop.app/partner-program",
+        "https://twitter.com/growthcurrency",
         "https://www.instagram.com/erizzyy",
-        "https://youtu.be/3cmj5kGm2Xw",
-        "MyHeritage",
-        "Bing",
-        "Find a Grave",
-        "http://coaching.dpasummit.com"
+        "https://youtu.be/3cmj5kGm2Xw"
       ]
     },
     {
       "topic_id": "statutory_caps_and_licensing",
       "title": "State Fee Caps, Waiting Periods, PI Licensing & UPL Rules",
-      "video_count": 438,
-      "tip_count": 364,
-      "channel_count": 253,
+      "video_count": 507,
+      "tip_count": 404,
+      "channel_count": 304,
       "top_sources": [
         {
           "video_id": "TA4mtGUeNo8",
@@ -1635,51 +1635,51 @@
       ],
       "statutes_and_forms": [
         "form and",
-        "form of",
         "form for",
         "form that",
+        "form of",
         "form to",
-        "form the",
-        "form below",
-        "form is",
         "form you",
+        "form is",
+        "form the",
         "form or",
-        "letters of administration",
+        "form below",
         "form a",
-        "form where",
-        "form on",
         "form so",
+        "letters of administration",
+        "form like",
+        "form where",
+        "form with",
         "form your",
         "form in",
-        "quiet title",
+        "form on",
         "form our",
-        "form with",
+        "form we",
+        "quiet title",
+        "form as",
+        "Form uh",
+        "form um",
         "letters testamentary",
         "property Act",
         "affidavit of heirship",
         "form an",
-        "form like",
+        "form content",
+        "form I",
         "form partition",
         "form today",
-        "form we",
         "form will",
         "warranty deed",
         "affidavit of airship",
         "court order",
-        "form features",
-        "form it",
-        "Form uh",
-        "Information Act",
-        "summary administration",
-        "balancing act",
-        "form as",
-        "form content"
+        "form better",
+        "form but",
+        "form features"
       ],
       "tools_and_portals": [
         "Facebook",
         "Google",
-        "Ancestry",
         "LinkedIn",
+        "Ancestry",
         "FamilySearch",
         "https://excesselite.com",
         "https://www.facebook.com/groups/assetrecovery",
@@ -1695,6 +1695,7 @@
         "https://x.com/courtneyfricke",
         "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
         "https://www.instagram.com/thedavidwilkerson",
+        "Bing",
         "http://familysearch.me/facebook",
         "http://familysearch.me/home",
         "http://familysearch.me/instagram",
@@ -1707,23 +1708,22 @@
         "https://youtu.be/3cmj5kGm2Xw",
         "MyHeritage",
         "Regrid",
+        "CSV",
         "http://www.youtube.com/channel/UCsc0AQkAh_2cQmxqwD6VWRw?sub_confirmation=1",
         "https://probatemastery.com",
         "https://twitter.com/Ancestry",
         "https://www.ancestry.com/",
         "https://www.facebook.com/Ancestry/",
         "https://www.instagram.com/ancestry",
-        "https://www.youtube.com/user/AncestryCom",
-        "CSV",
-        "Find a Grave"
+        "https://www.youtube.com/user/AncestryCom"
       ]
     },
     {
       "topic_id": "automation_and_small_team_ops",
       "title": "Docket Automation, AI Abstracting & Small-Team Operations",
-      "video_count": 452,
-      "tip_count": 1285,
-      "channel_count": 282,
+      "video_count": 529,
+      "tip_count": 1576,
+      "channel_count": 330,
       "top_sources": [
         {
           "video_id": "jHo-FO_OLv4",
@@ -1879,53 +1879,53 @@
         "form that",
         "form to",
         "form for",
-        "form is",
         "form of",
-        "form the",
+        "form is",
         "form you",
-        "form below",
+        "form the",
         "form or",
-        "form where",
-        "form so",
-        "letters of administration",
-        "form on",
-        "form content",
+        "form below",
         "form like",
-        "form a",
+        "form so",
         "form as",
-        "form in",
+        "form content",
+        "form on",
+        "form where",
         "form with",
-        "form your",
-        "form it",
-        "form this",
+        "letters of administration",
+        "form a",
         "Form uh",
-        "form will",
-        "form our",
-        "form today",
+        "form your",
+        "form in",
+        "form um",
         "form we",
+        "form but",
+        "form it",
+        "form our",
+        "form this",
+        "form videos",
+        "form well",
+        "form will",
+        "form I",
+        "form if",
+        "form they",
+        "form today",
+        "form video",
         "letters testamentary",
         "balancing act",
-        "form if",
-        "form um",
-        "form video",
-        "form well",
-        "quiet title",
-        "affidavit of heirship",
-        "court order",
-        "form built",
-        "form but",
-        "form called"
+        "form better",
+        "form fill"
       ],
       "tools_and_portals": [
-        "Facebook",
         "Google",
+        "Facebook",
         "LinkedIn",
         "Ancestry",
+        "Excel",
         "FamilySearch",
         "https://excesselite.com",
         "https://www.facebook.com/groups/assetrecovery",
         "https://www.moneymakingjug.com/inquiry",
-        "Excel",
         "https://www.surplusfunds101.com/freecallingscript",
         "https://www.youtube.com/surplusfunds101",
         "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
@@ -1934,6 +1934,7 @@
         "CSV",
         "Regrid",
         "https://probatemastery.com",
+        "Bing",
         "DataTree",
         "http://familysearch.me/facebook",
         "http://familysearch.me/home",
@@ -1955,8 +1956,7 @@
         "https://www.instagram.com/erizzyy",
         "https://www.youtube.com/@courtneyfricke",
         "https://www.youtube.com/user/AncestryCom",
-        "Newspapers.com",
-        "https://supabase.com/docs"
+        "Newspapers.com"
       ]
     }
   ],
@@ -1968,9 +1968,9 @@
       "headline": "Heir location is paid on contingency, never on up-front fees.",
       "summary": "Across the corpus, operators converge on a pure contingency model: the heir pays nothing out of pocket, the locator advances all research cost, and the fee is a negotiated percentage released only when the estate or state agency actually disburses funds. Charging an heir an advance fee is treated as the single clearest marker of a predatory or unlicensed operator.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 247,
-      "video_count": 389,
-      "corroborating_tip_count": 833,
+      "channel_count": 293,
+      "video_count": 468,
+      "corroborating_tip_count": 1069,
       "supporting_links": [
         {
           "video_title": "State Funds Tutorial New Mexico: How To Register As A Property Locator In The State Of New Mexico.",
@@ -2018,10 +2018,28 @@
       "headline": "Fresh county probate and intestate dockets outperform purchased lead lists.",
       "summary": "Practitioners consistently build pipeline from newly filed probate and administration matters pulled directly from county clerk portals rather than resold lists. Filings naming an administrator but no located heirs, and estates sitting open past the local notice period, are the recurring high-value signal.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 225,
-      "video_count": 408,
-      "corroborating_tip_count": 705,
+      "channel_count": 267,
+      "video_count": 463,
+      "corroborating_tip_count": 776,
       "supporting_links": [
+        {
+          "video_title": "$57 Affiliate Payouts With $35 Google Ads CPA (Full Funnel Breakdown)",
+          "author": "Aldo Gomes",
+          "timestamp": "00:03:37",
+          "link": "https://www.youtube.com/watch?v=rc7rwCDzbg4&t=217s"
+        },
+        {
+          "video_title": "$57 Affiliate Payouts With $35 Google Ads CPA (Full Funnel Breakdown)",
+          "author": "Aldo Gomes",
+          "timestamp": "00:02:02",
+          "link": "https://www.youtube.com/watch?v=rc7rwCDzbg4&t=122s"
+        },
+        {
+          "video_title": "The New Parasite SEO Loophole Hiding Inside Google",
+          "author": "Alek Borisov",
+          "timestamp": "00:05:03",
+          "link": "https://www.youtube.com/watch?v=BF1KHGKUa78&t=303s"
+        },
         {
           "video_title": "Unclaimed Estates & Abandoned Properties in Spain - tracing Heirs Worldwide",
           "author": "My Lawyer In Spain",
@@ -2039,24 +2057,6 @@
           "author": "FarmersGov",
           "timestamp": "00:22:47",
           "link": "https://www.youtube.com/watch?v=whDzDrFNADQ&t=1367s"
-        },
-        {
-          "video_title": "I got free probate leads from the courthouse! Plus SOI and referral marketing | Podcast Episode 85",
-          "author": "Probate Mastery",
-          "timestamp": "00:34:26",
-          "link": "https://www.youtube.com/watch?v=1BlzkVdGPAo&t=2066s"
-        },
-        {
-          "video_title": "Finding repositories for probate records",
-          "author": "Five-minute genealogy",
-          "timestamp": "00:04:33",
-          "link": "https://www.youtube.com/watch?v=A437gHrrk2s&t=273s"
-        },
-        {
-          "video_title": "Hyperlocal real estate marketing at probate court & How to buy a probate property as a sub2 deal",
-          "author": "Probate Mastery",
-          "timestamp": "00:18:25",
-          "link": "https://www.youtube.com/watch?v=Odf2VQ3AZsg&t=1105s"
         }
       ],
       "caveat": "Consensus among the sampled operators — not legal advice and not a substitute for the governing statute in the reader's jurisdiction."
@@ -2068,8 +2068,8 @@
       "headline": "State unclaimed-property and escheat databases supply the repeatable volume.",
       "summary": "Every state treasury or controller maintains a searchable unclaimed-property register, and the consensus workflow is to cross-reference deceased owners there against probate filings. Volume comes from systematic register sweeps; size comes from the rarer escheated estate, surplus-funds and safe-deposit categories.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 103,
-      "video_count": 193,
+      "channel_count": 112,
+      "video_count": 204,
       "corroborating_tip_count": 582,
       "supporting_links": [
         {
@@ -2118,9 +2118,9 @@
       "headline": "The deliverable is a document-backed kinship chain, not a name on a list.",
       "summary": "Operators agree that claims succeed or fail on the evidentiary chain: each generational link supported by vital records, each branch mapped per stirpes, and every gap closed before contact. Tree hints from consumer genealogy sites are treated as leads to verify, never as proof to submit.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 262,
-      "video_count": 449,
-      "corroborating_tip_count": 677,
+      "channel_count": 315,
+      "video_count": 532,
+      "corroborating_tip_count": 755,
       "supporting_links": [
         {
           "video_title": "Resolving Heirs' Property",
@@ -2168,9 +2168,9 @@
       "headline": "Verify identity before contact, then lead with restraint, not the dollar figure.",
       "summary": "The recurring outreach pattern is: skip trace to a confirmed current address and phone, open by letter or a short calm call, state that funds may be owed to the family without naming an amount, and give the heir a way to independently verify the operator. Pressure tactics and inflated figures are consistently reported as the fastest way to lose a signed file.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 153,
-      "video_count": 235,
-      "corroborating_tip_count": 102,
+      "channel_count": 199,
+      "video_count": 296,
+      "corroborating_tip_count": 124,
       "supporting_links": [
         {
           "video_title": "State Funds Tutorial: 5 Tech Tools For Your State Funds Business",
@@ -2183,6 +2183,12 @@
           "author": "Surplus Funds 101",
           "timestamp": "00:05:55",
           "link": "https://www.youtube.com/watch?v=ASO1JUOWTjA&t=355s"
+        },
+        {
+          "video_title": "Parasite Reddit SEO: Find Google Traffic With This Workflow",
+          "author": "Rankso SEO",
+          "timestamp": "00:18:18",
+          "link": "https://www.youtube.com/watch?v=gGfsCEiyizs&t=1098s"
         },
         {
           "video_title": "DataTree Hacks: How to Find Portfolio Owners With Multiple Properties",
@@ -2201,12 +2207,6 @@
           "author": "Money Making Juggernaut",
           "timestamp": "00:02:17",
           "link": "https://www.youtube.com/watch?v=4-lZwuXtY6Y&t=137s"
-        },
-        {
-          "video_title": "How To Find family members of a deceased person!",
-          "author": "Surplus Institute / David Church / Unclaimed Funds",
-          "timestamp": "00:02:27",
-          "link": "https://www.youtube.com/watch?v=eiQ53kxE6ZA&t=147s"
         }
       ],
       "caveat": "Consensus among the sampled operators — not legal advice and not a substitute for the governing statute in the reader's jurisdiction."
@@ -2218,9 +2218,9 @@
       "headline": "No work proceeds without a signed fee agreement and third-party escrow.",
       "summary": "Consensus practice is a plain-language, notarized or e-signed agreement that names the estate, states the percentage, discloses the heir's right to claim independently, and routes funds through attorney trust or licensed escrow so the locator never holds the heir's money directly.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 248,
-      "video_count": 414,
-      "corroborating_tip_count": 533,
+      "channel_count": 298,
+      "video_count": 491,
+      "corroborating_tip_count": 705,
       "supporting_links": [
         {
           "video_title": "DataTree Hacks: Find Full Legal Descriptions and Title Vesting Information",
@@ -2247,16 +2247,16 @@
           "link": "https://www.youtube.com/watch?v=LdemHPCk0dk&t=427s"
         },
         {
+          "video_title": "What Is GEO? Generative Engine Optimization & How to Rank in AI Search",
+          "author": "trendos",
+          "timestamp": "00:01:02",
+          "link": "https://www.youtube.com/watch?v=WBhqyUPJOro&t=62s"
+        },
+        {
           "video_title": "DataTree Hacks: How to Do Title Research and Hire Abstractor Services",
           "author": "REtipster",
           "timestamp": "00:01:15",
           "link": "https://www.youtube.com/watch?v=GfyX48eCbRY&t=75s"
-        },
-        {
-          "video_title": "Native Ads Samples – Affiliate, Arbitrage & Performance (Taboola Sample / Outbrain Sample)",
-          "author": "Marcel Sattler | Leading Native Advertising Expert",
-          "timestamp": "00:01:14",
-          "link": "https://www.youtube.com/watch?v=zxw8X11thwQ&t=74s"
         }
       ],
       "caveat": "Consensus among the sampled operators — not legal advice and not a substitute for the governing statute in the reader's jurisdiction."
@@ -2268,9 +2268,9 @@
       "headline": "Fee caps, waiting periods and licensing are decided per state, before the first call.",
       "summary": "Operators repeatedly stress that the governing rules — percentage caps on unclaimed-property recoveries, mandatory waiting periods after escheat or sale, private-investigator licensing triggers, and the line against practicing law — vary by jurisdiction and must be read in the local statute for every file rather than generalized from another state.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 253,
-      "video_count": 438,
-      "corroborating_tip_count": 364,
+      "channel_count": 304,
+      "video_count": 507,
+      "corroborating_tip_count": 404,
       "supporting_links": [
         {
           "video_title": "Surplus Funds Cold Calling Script: How to Not Sound Like a Scam",
@@ -2318,9 +2318,9 @@
       "headline": "Automated docket monitoring plus AI abstracting lets one or two people run real volume.",
       "summary": "The operational consensus is to automate the repetitive layer — scheduled docket and register pulls, structured intake into a sheet or CRM, AI-assisted abstracting of filings — while keeping genealogy judgment, heir contact and contract execution human. That split is what keeps a two-person shop competitive against staffed firms.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 282,
-      "video_count": 452,
-      "corroborating_tip_count": 1285,
+      "channel_count": 330,
+      "video_count": 529,
+      "corroborating_tip_count": 1576,
       "supporting_links": [
         {
           "video_title": "State Funds Tutorial: 5 Tech Tools For Your State Funds Business",
@@ -2746,8 +2746,8 @@
         "asset_id": "youtube_thumbnails",
         "asset": "https://i.ytimg.com/vi/<video_id>/*.jpg",
         "asset_type": "youtube_thumbnail_image",
-        "source": "YouTube CDN thumbnails for the 541 corpus videos",
-        "instance_count": 541,
+        "source": "YouTube CDN thumbnails for the 636 corpus videos",
+        "instance_count": 636,
         "instances": [
           {
             "video_id": "9Q4qYeK5DTg",
@@ -6535,6 +6535,671 @@
             "author": "AM Days",
             "thumbnail_url": "https://i.ytimg.com/vi/0ELJUfzzK1M/hqdefault.jpg",
             "source_url": "https://www.youtube.com/watch?v=0ELJUfzzK1M"
+          },
+          {
+            "video_id": "GCv_2yM5JtI",
+            "title": "High-Ticket Affiliate Marketing for Beginners: 5-Step System & Costly Mistakes",
+            "author": "Smart Capital",
+            "thumbnail_url": "https://i.ytimg.com/vi/GCv_2yM5JtI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=GCv_2yM5JtI"
+          },
+          {
+            "video_id": "N7nyWQc6E1c",
+            "title": "13 Best Affiliate Programs You NEED to Join in 2026 (High Paying for Beginners)",
+            "author": "Adam Enfroy",
+            "thumbnail_url": "https://i.ytimg.com/vi/N7nyWQc6E1c/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=N7nyWQc6E1c"
+          },
+          {
+            "video_id": "WVmpPW1fJPQ",
+            "title": "Done-For-You Affiliate Marketing: Recurring + High Ticket",
+            "author": "Smart Affiliate",
+            "thumbnail_url": "https://i.ytimg.com/vi/WVmpPW1fJPQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=WVmpPW1fJPQ"
+          },
+          {
+            "video_id": "mv0_WM_IIrU",
+            "title": "Highest Paying Affiliate Programs in 2026: The Ultimate List",
+            "author": "ODi Productions",
+            "thumbnail_url": "https://i.ytimg.com/vi/mv0_WM_IIrU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=mv0_WM_IIrU"
+          },
+          {
+            "video_id": "Pk230wGiiVY",
+            "title": "Impact Affiliate Program Tutorial (How To Make Money For Beginners)",
+            "author": "Kris the Entrepreneur",
+            "thumbnail_url": "https://i.ytimg.com/vi/Pk230wGiiVY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Pk230wGiiVY"
+          },
+          {
+            "video_id": "C-RMQqTVMOE",
+            "title": "PartnerStack for Beginners: (2026 Step-by-Step Tutorial)",
+            "author": "Kris the Entrepreneur",
+            "thumbnail_url": "https://i.ytimg.com/vi/C-RMQqTVMOE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=C-RMQqTVMOE"
+          },
+          {
+            "video_id": "YSLKEXHh_xI",
+            "title": "PartnerStack vs Impact.com: Best Affiliate Platform for 2026?",
+            "author": "GuideToEverything",
+            "thumbnail_url": "https://i.ytimg.com/vi/YSLKEXHh_xI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=YSLKEXHh_xI"
+          },
+          {
+            "video_id": "zOMjnVrk_pQ",
+            "title": "How to Record a Bridge Page Sales Video for Your Affiliate Funnel",
+            "author": "Eran Bucai",
+            "thumbnail_url": "https://i.ytimg.com/vi/zOMjnVrk_pQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=zOMjnVrk_pQ"
+          },
+          {
+            "video_id": "MIx20-uBG6s",
+            "title": "2026 High Ticket Affiliate Marketing Blueprint [Deep Dive]",
+            "author": "Rabbit Hole Radio",
+            "thumbnail_url": "https://i.ytimg.com/vi/MIx20-uBG6s/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=MIx20-uBG6s"
+          },
+          {
+            "video_id": "Ck6CfmXv244",
+            "title": "Can a $27 Low-Ticket Offer Really Sell a $5,000 Programme?",
+            "author": "Jamie McAdam",
+            "thumbnail_url": "https://i.ytimg.com/vi/Ck6CfmXv244/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Ck6CfmXv244"
+          },
+          {
+            "video_id": "lnRu8Ty8cuk",
+            "title": "Affiliate Marketing Sales Funnel - The Bridge Page That Converts",
+            "author": "Joshua Gill - Bossnation Academy",
+            "thumbnail_url": "https://i.ytimg.com/vi/lnRu8Ty8cuk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=lnRu8Ty8cuk"
+          },
+          {
+            "video_id": "nNr0jVmba9w",
+            "title": "THE most valuable funnel training you'll ever watch (10,000 hours experience)",
+            "author": "Sell Your Service",
+            "thumbnail_url": "https://i.ytimg.com/vi/nNr0jVmba9w/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=nNr0jVmba9w"
+          },
+          {
+            "video_id": "BF1KHGKUa78",
+            "title": "The New Parasite SEO Loophole Hiding Inside Google",
+            "author": "Alek Borisov",
+            "thumbnail_url": "https://i.ytimg.com/vi/BF1KHGKUa78/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=BF1KHGKUa78"
+          },
+          {
+            "video_id": "d5gBmVpAghM",
+            "title": "Free Traffic from Google in 2026 for your Brand/Person: Parasite SEO Strategy",
+            "author": "Affiliate Credo",
+            "thumbnail_url": "https://i.ytimg.com/vi/d5gBmVpAghM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=d5gBmVpAghM"
+          },
+          {
+            "video_id": "gGfsCEiyizs",
+            "title": "Parasite Reddit SEO: Find Google Traffic With This Workflow",
+            "author": "Rankso SEO",
+            "thumbnail_url": "https://i.ytimg.com/vi/gGfsCEiyizs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=gGfsCEiyizs"
+          },
+          {
+            "video_id": "yGAUu-eFDOM",
+            "title": "Kajabi Review: Kajabi vs LearnDash Affiliate SEO Strategy",
+            "author": "SEO Affiliate Domination",
+            "thumbnail_url": "https://i.ytimg.com/vi/yGAUu-eFDOM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=yGAUu-eFDOM"
+          },
+          {
+            "video_id": "DyyeBcHNuHU",
+            "title": "Comparison And Alternative Queries For Small Sites (2026)",
+            "author": "The SEO Desk",
+            "thumbnail_url": "https://i.ytimg.com/vi/DyyeBcHNuHU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=DyyeBcHNuHU"
+          },
+          {
+            "video_id": "cjhrLqpWHc0",
+            "title": "Kajabi Review: FreshLearn vs Kajabi Comparison and Strategy",
+            "author": "SEO Affiliate Domination",
+            "thumbnail_url": "https://i.ytimg.com/vi/cjhrLqpWHc0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=cjhrLqpWHc0"
+          },
+          {
+            "video_id": "ioLcYsLyaII",
+            "title": "How to build AEO Comparison Pages For AI Dominance",
+            "author": "CXL",
+            "thumbnail_url": "https://i.ytimg.com/vi/ioLcYsLyaII/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ioLcYsLyaII"
+          },
+          {
+            "video_id": "Kol8N2k5VQw",
+            "title": "Kajabi Review: Kajabi vs Gumroad, Plus SEO Strategy",
+            "author": "SEO Affiliate Domination",
+            "thumbnail_url": "https://i.ytimg.com/vi/Kol8N2k5VQw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Kol8N2k5VQw"
+          },
+          {
+            "video_id": "tiW6xRYSXmM",
+            "title": "SEO in 2026: How I'd Rank in Google in the AI Era",
+            "author": "Ahrefs",
+            "thumbnail_url": "https://i.ytimg.com/vi/tiW6xRYSXmM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=tiW6xRYSXmM"
+          },
+          {
+            "video_id": "SLm9lJnBvyo",
+            "title": "Content Strategy for Affiliate Marketing Sites [3.3]",
+            "author": "Ahrefs",
+            "thumbnail_url": "https://i.ytimg.com/vi/SLm9lJnBvyo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=SLm9lJnBvyo"
+          },
+          {
+            "video_id": "lZmPGHIeaf0",
+            "title": "THIS Divides SUCCESS And FAILURE In Affiliate Marketing In 2024",
+            "author": "SEO Jesus",
+            "thumbnail_url": "https://i.ytimg.com/vi/lZmPGHIeaf0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=lZmPGHIeaf0"
+          },
+          {
+            "video_id": "DXrqf5Xqpd4",
+            "title": "SaaS Competitor Comparison Pages: Why you NEED to Build them",
+            "author": "Rock The Rankings: B2B SaaS GEO & SEO Agency",
+            "thumbnail_url": "https://i.ytimg.com/vi/DXrqf5Xqpd4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=DXrqf5Xqpd4"
+          },
+          {
+            "video_id": "J_fDLt9cLEg",
+            "title": "Profound Alternative: ZeroRank AI Review & Comparison 2026",
+            "author": "🔥 TOP Digital Products 🔥",
+            "thumbnail_url": "https://i.ytimg.com/vi/J_fDLt9cLEg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=J_fDLt9cLEg"
+          },
+          {
+            "video_id": "mxJacfpHw9U",
+            "title": "My Best Affiliate Marketing SEO Strategy (2022 Guide)",
+            "author": "Derek Pierce",
+            "thumbnail_url": "https://i.ytimg.com/vi/mxJacfpHw9U/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=mxJacfpHw9U"
+          },
+          {
+            "video_id": "OFst3KoUCj0",
+            "title": "Ringba Setup Tutorial 2026 🔥 | Complete Pay Per Call Tracking Setup",
+            "author": "Decoding Ads",
+            "thumbnail_url": "https://i.ytimg.com/vi/OFst3KoUCj0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=OFst3KoUCj0"
+          },
+          {
+            "video_id": "a4Aa0kexuh8",
+            "title": "Why Pay Per Call Affiliates Need Their Own Call Tracking?",
+            "author": "Ringba",
+            "thumbnail_url": "https://i.ytimg.com/vi/a4Aa0kexuh8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=a4Aa0kexuh8"
+          },
+          {
+            "video_id": "rsmZ9FBIPks",
+            "title": "Earnings Per Call: Melissa Lai, Senior Business Development Manager at Ringba",
+            "author": "OfferVault",
+            "thumbnail_url": "https://i.ytimg.com/vi/rsmZ9FBIPks/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=rsmZ9FBIPks"
+          },
+          {
+            "video_id": "cuIiOD3qJ2o",
+            "title": "The \"Lazy\" Way to Make $100/Day With Facebook Ads (Affiliate Arbitrage)",
+            "author": "Powerhouse Affiliate",
+            "thumbnail_url": "https://i.ytimg.com/vi/cuIiOD3qJ2o/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=cuIiOD3qJ2o"
+          },
+          {
+            "video_id": "0bPegcpTJHs",
+            "title": "New School VS OG: How these Top Affiliates are dominating Lead Gen in 2025",
+            "author": "John Casto",
+            "thumbnail_url": "https://i.ytimg.com/vi/0bPegcpTJHs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=0bPegcpTJHs"
+          },
+          {
+            "video_id": "7lpBAuhtQBY",
+            "title": "Facebook Marketplace Training - Lead Smart - Pay Per Call Affiliate Marketing",
+            "author": "Matthew Zivkovic",
+            "thumbnail_url": "https://i.ytimg.com/vi/7lpBAuhtQBY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=7lpBAuhtQBY"
+          },
+          {
+            "video_id": "hgYi_edLti8",
+            "title": "How to ARBITRAGE Affiliate Offers with PAID Traffic [complete breakdown]",
+            "author": "Eric Beer",
+            "thumbnail_url": "https://i.ytimg.com/vi/hgYi_edLti8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=hgYi_edLti8"
+          },
+          {
+            "video_id": "iPXqbbPxjHQ",
+            "title": "Pay Per Lead Affiliate Programs - Full Training - $800 Per Lead?",
+            "author": "affiliatemarketingmc",
+            "thumbnail_url": "https://i.ytimg.com/vi/iPXqbbPxjHQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=iPXqbbPxjHQ"
+          },
+          {
+            "video_id": "UGKIfB-aGpg",
+            "title": "Lead Arbitrage: How To Turn A $2 Click Into $45 Profit",
+            "author": "Rafael Hernandez ⚡️",
+            "thumbnail_url": "https://i.ytimg.com/vi/UGKIfB-aGpg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=UGKIfB-aGpg"
+          },
+          {
+            "video_id": "-vgLc6H8Nac",
+            "title": "Pay Per Lead Affiliate Programs + CRAZY Directory Site Business Model!",
+            "author": "affiliatemarketingmc",
+            "thumbnail_url": "https://i.ytimg.com/vi/-vgLc6H8Nac/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=-vgLc6H8Nac"
+          },
+          {
+            "video_id": "hI7Wb7R-89g",
+            "title": "The \"Lazy\" Way to 1,000,000 Clicks (Free Viral AI Traffic - STEAL THIS!)",
+            "author": "Powerhouse Affiliate",
+            "thumbnail_url": "https://i.ytimg.com/vi/hI7Wb7R-89g/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=hI7Wb7R-89g"
+          },
+          {
+            "video_id": "o9x8kycf3Wo",
+            "title": "How to Generate Leads (FOR FREE) Using ChatGPT",
+            "author": "Caffeinated Blogger",
+            "thumbnail_url": "https://i.ytimg.com/vi/o9x8kycf3Wo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=o9x8kycf3Wo"
+          },
+          {
+            "video_id": "0mw4i-MSxoc",
+            "title": "how i made $917,000 with AI Lead Gen working 1-2 hours a day (copy me)",
+            "author": "Luke Pisacane",
+            "thumbnail_url": "https://i.ytimg.com/vi/0mw4i-MSxoc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=0mw4i-MSxoc"
+          },
+          {
+            "video_id": "oumcg9JUhzE",
+            "title": "How to Get More Outbound Clicks on Pinterest | Affiliate Marketing for Beginners",
+            "author": "Nuvela",
+            "thumbnail_url": "https://i.ytimg.com/vi/oumcg9JUhzE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=oumcg9JUhzE"
+          },
+          {
+            "video_id": "q6vkJhEncx0",
+            "title": "Postbacks 101 With Everflow",
+            "author": "Everflow - Partner Marketing Platform",
+            "thumbnail_url": "https://i.ytimg.com/vi/q6vkJhEncx0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=q6vkJhEncx0"
+          },
+          {
+            "video_id": "_VC3Wol9b0c",
+            "title": "How To Generate Tracking Links | Everflow Mini Webinars",
+            "author": "Everflow - Partner Marketing Platform",
+            "thumbnail_url": "https://i.ytimg.com/vi/_VC3Wol9b0c/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=_VC3Wol9b0c"
+          },
+          {
+            "video_id": "kLc_7B0eexA",
+            "title": "Connect Everflow to Your CRM: Pay on Quality, Not Just Quantity | Everflow Mini Webinars",
+            "author": "Everflow - Partner Marketing Platform",
+            "thumbnail_url": "https://i.ytimg.com/vi/kLc_7B0eexA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=kLc_7B0eexA"
+          },
+          {
+            "video_id": "HBs0vkiWarc",
+            "title": "Cloudflare Server Side Tracking Setup | GTM + Meta CAPI | Cloudflare pixel | Live Tracking Dashboard",
+            "author": "Pixel Setup GTM Expert",
+            "thumbnail_url": "https://i.ytimg.com/vi/HBs0vkiWarc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=HBs0vkiWarc"
+          },
+          {
+            "video_id": "3FcVWGZ_SGY",
+            "title": "What The FTC Actually Requires You To Disclose As An Affiliate",
+            "author": "Hustle Audit",
+            "thumbnail_url": "https://i.ytimg.com/vi/3FcVWGZ_SGY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=3FcVWGZ_SGY"
+          },
+          {
+            "video_id": "fnCkagoHXx0",
+            "title": "Affiliate Link Disclosure Rules for FTC",
+            "author": "Cheryl Phan",
+            "thumbnail_url": "https://i.ytimg.com/vi/fnCkagoHXx0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=fnCkagoHXx0"
+          },
+          {
+            "video_id": "723U5nGxhTU",
+            "title": "Lawyer Explains | FTC Guidelines for YouTubers (Affiliate Links and Sponsored Videos)",
+            "author": "Lawyer Explains - Erika Kullberg",
+            "thumbnail_url": "https://i.ytimg.com/vi/723U5nGxhTU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=723U5nGxhTU"
+          },
+          {
+            "video_id": "5myKyThXemw",
+            "title": "FTC & Amazon Affiliate Disclosures Explained (Avoid These Costly Mistakes) #amazoninfluencer",
+            "author": "eternalsoulwriter",
+            "thumbnail_url": "https://i.ytimg.com/vi/5myKyThXemw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=5myKyThXemw"
+          },
+          {
+            "video_id": "Hq1UDKzazVQ",
+            "title": "New FTC Guidelines & Disclosures that Brands, Agencies and Influencers Need to Know",
+            "author": "Find Your Influence",
+            "thumbnail_url": "https://i.ytimg.com/vi/Hq1UDKzazVQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Hq1UDKzazVQ"
+          },
+          {
+            "video_id": "oQhn2MkCyK4",
+            "title": "FTC Disclosures 101 for Social Media Influencers & Creators",
+            "author": "Justin Moore",
+            "thumbnail_url": "https://i.ytimg.com/vi/oQhn2MkCyK4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=oQhn2MkCyK4"
+          },
+          {
+            "video_id": "zMHcPlc6Nvc",
+            "title": "Updated FTC Guidelines on Internet Advertising & Marketing",
+            "author": "Jennings Strouss",
+            "thumbnail_url": "https://i.ytimg.com/vi/zMHcPlc6Nvc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=zMHcPlc6Nvc"
+          },
+          {
+            "video_id": "9bddsIKkfe0",
+            "title": "Lawyer Explains FTC Endorsement Guides for Influencers",
+            "author": "The Creator Cafe, with Lawyer Kae",
+            "thumbnail_url": "https://i.ytimg.com/vi/9bddsIKkfe0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=9bddsIKkfe0"
+          },
+          {
+            "video_id": "1g3rmmIH9VM",
+            "title": "FTC Reminds Influencers/Brands to Disclose - Mini Law Lesson",
+            "author": "Brian Heidelberger",
+            "thumbnail_url": "https://i.ytimg.com/vi/1g3rmmIH9VM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=1g3rmmIH9VM"
+          },
+          {
+            "video_id": "TpYEmQ9njyk",
+            "title": "New FTC Guidelines For Affiliate & Influencer MarketerS Must Watch Before Making Your Next Video",
+            "author": "Alston Godbolt",
+            "thumbnail_url": "https://i.ytimg.com/vi/TpYEmQ9njyk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=TpYEmQ9njyk"
+          },
+          {
+            "video_id": "ny2He3BVEgM",
+            "title": "#3 Understanding FTC Guidelines for Affiliates and Influencers | Tricia Meyer",
+            "author": "Always Be Testing",
+            "thumbnail_url": "https://i.ytimg.com/vi/ny2He3BVEgM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ny2He3BVEgM"
+          },
+          {
+            "video_id": "EJWC8jVfIko",
+            "title": "FTC Compliant | How To Play It Safe for Beginner Affiliate Marketing",
+            "author": "Digital Trailblazer",
+            "thumbnail_url": "https://i.ytimg.com/vi/EJWC8jVfIko/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=EJWC8jVfIko"
+          },
+          {
+            "video_id": "BY7l2XbdWPc",
+            "title": "What You Need to Know About FTC’s Proposed Changes to Its Endorsement Guides",
+            "author": "Venable LLP",
+            "thumbnail_url": "https://i.ytimg.com/vi/BY7l2XbdWPc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=BY7l2XbdWPc"
+          },
+          {
+            "video_id": "PQ6b58aTlas",
+            "title": "How to Stop Competitors from Bidding on Your Brand Name in Google Ads 🛑",
+            "author": "Grow My Ads",
+            "thumbnail_url": "https://i.ytimg.com/vi/PQ6b58aTlas/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=PQ6b58aTlas"
+          },
+          {
+            "video_id": "ceHQ0dOvobM",
+            "title": "💸 Brand Bidding On Google ADs - What People Don't Know About This That Loses Them Money! 🔍",
+            "author": "Guaranteed PPC",
+            "thumbnail_url": "https://i.ytimg.com/vi/ceHQ0dOvobM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ceHQ0dOvobM"
+          },
+          {
+            "video_id": "HMW_yXXlRPs",
+            "title": "Can You Bid on Competitor Brand Names in Google Ads?",
+            "author": "Analytics Playbook: Learn Marketing Analytics",
+            "thumbnail_url": "https://i.ytimg.com/vi/HMW_yXXlRPs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=HMW_yXXlRPs"
+          },
+          {
+            "video_id": "HRjV85omYRA",
+            "title": "BRAND BIDDING... How It Is Allowed??",
+            "author": "Ivan Mana",
+            "thumbnail_url": "https://i.ytimg.com/vi/HRjV85omYRA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=HRjV85omYRA"
+          },
+          {
+            "video_id": "Q3nMwUqzuq8",
+            "title": "How To Run Google Ads For High Ticket Products [2026]",
+            "author": "Max Crakanthorp",
+            "thumbnail_url": "https://i.ytimg.com/vi/Q3nMwUqzuq8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Q3nMwUqzuq8"
+          },
+          {
+            "video_id": "gYellXXL3Vk",
+            "title": "🔴[NO BRAND BIDDING] Como Anunciar PRODUTOS PROIBIDOS no Google Ads",
+            "author": "Vitor Lisboa",
+            "thumbnail_url": "https://i.ytimg.com/vi/gYellXXL3Vk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=gYellXXL3Vk"
+          },
+          {
+            "video_id": "A9oSfj8vCXE",
+            "title": "How I Made $1,527+ in One Day with CPA Affiliate Marketing Using Google Ads (2026 Strategy!)",
+            "author": "Traffic Systems Affiliate",
+            "thumbnail_url": "https://i.ytimg.com/vi/A9oSfj8vCXE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=A9oSfj8vCXE"
+          },
+          {
+            "video_id": "SpYPdy4dbsY",
+            "title": "How I Made $2,100 in One Day With Google Ads Affiliate Marketing",
+            "author": "Traffic Systems Affiliate",
+            "thumbnail_url": "https://i.ytimg.com/vi/SpYPdy4dbsY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=SpYPdy4dbsY"
+          },
+          {
+            "video_id": "RgtHvwDuzDs",
+            "title": "How I Made $13,531 in 7 Days With Google Ads + ClickBank",
+            "author": "Traffic Systems Affiliate",
+            "thumbnail_url": "https://i.ytimg.com/vi/RgtHvwDuzDs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=RgtHvwDuzDs"
+          },
+          {
+            "video_id": "TpcIvpsamnM",
+            "title": "The Best Way to Advertise on Google as an Affiliate (Results in 3 Days)",
+            "author": "Aldo Gomes",
+            "thumbnail_url": "https://i.ytimg.com/vi/TpcIvpsamnM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=TpcIvpsamnM"
+          },
+          {
+            "video_id": "hv2uV4hfAQE",
+            "title": "The Truth About Google's New Target Bidding \"Update\" [Inside Google Ads Episode 130]",
+            "author": "Jyll Saskin Gales | Google Ads Coach",
+            "thumbnail_url": "https://i.ytimg.com/vi/hv2uV4hfAQE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=hv2uV4hfAQE"
+          },
+          {
+            "video_id": "rc7rwCDzbg4",
+            "title": "$57 Affiliate Payouts With $35 Google Ads CPA (Full Funnel Breakdown)",
+            "author": "Aldo Gomes",
+            "thumbnail_url": "https://i.ytimg.com/vi/rc7rwCDzbg4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=rc7rwCDzbg4"
+          },
+          {
+            "video_id": "E6Nq0auvJ-8",
+            "title": "Neils Zee On Making 7 Fig With Google Ads Affiliate Marketing",
+            "author": "Jitendra Vaswani",
+            "thumbnail_url": "https://i.ytimg.com/vi/E6Nq0auvJ-8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=E6Nq0auvJ-8"
+          },
+          {
+            "video_id": "8XBelBHfIXE",
+            "title": "Como Anunciar Produtos Proibidos (NO BRAND BIDDING) - FAÇA ISSO! [AFILIADO NA GRINGA] - GOOGLE ADS",
+            "author": "Amanda Agostinho",
+            "thumbnail_url": "https://i.ytimg.com/vi/8XBelBHfIXE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=8XBelBHfIXE"
+          },
+          {
+            "video_id": "91G7BkMV6A8",
+            "title": "Should You Bid on Your Own Brand Name in Google Ads?",
+            "author": "Paul Rooney",
+            "thumbnail_url": "https://i.ytimg.com/vi/91G7BkMV6A8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=91G7BkMV6A8"
+          },
+          {
+            "video_id": "SFCvA5RqbgU",
+            "title": "How to Monetize Subscribers in the First 7 Days",
+            "author": "Local Media HQ",
+            "thumbnail_url": "https://i.ytimg.com/vi/SFCvA5RqbgU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=SFCvA5RqbgU"
+          },
+          {
+            "video_id": "pbmgkJeKEGc",
+            "title": "$1M with 1,000 Subscribers, Acquisition, Free Traffic is OVER | Louis Nicholls, SparkLoop Co-Founder",
+            "author": "George Helgesen",
+            "thumbnail_url": "https://i.ytimg.com/vi/pbmgkJeKEGc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=pbmgkJeKEGc"
+          },
+          {
+            "video_id": "uVhFrwe935U",
+            "title": "Newsletter Office Hours: How to grow your newsletter with Paid Ads in 2023",
+            "author": "SparkLoop",
+            "thumbnail_url": "https://i.ytimg.com/vi/uVhFrwe935U/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=uVhFrwe935U"
+          },
+          {
+            "video_id": "i_xgpz4ZZB8",
+            "title": "Explode Newsletter Growth with a Partner Program - newsletter growth masterclass",
+            "author": "SparkLoop",
+            "thumbnail_url": "https://i.ytimg.com/vi/i_xgpz4ZZB8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=i_xgpz4ZZB8"
+          },
+          {
+            "video_id": "KrUPlyUxncE",
+            "title": "Coaching Session: Tips from a Newsletter Pro — with Josh Spector of For The Interested",
+            "author": "SparkLoop",
+            "thumbnail_url": "https://i.ytimg.com/vi/KrUPlyUxncE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=KrUPlyUxncE"
+          },
+          {
+            "video_id": "7x3W0vKolWY",
+            "title": "Building a local newsletter business you can scale — with Geoff Sharpe of Lookout Media",
+            "author": "SparkLoop",
+            "thumbnail_url": "https://i.ytimg.com/vi/7x3W0vKolWY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=7x3W0vKolWY"
+          },
+          {
+            "video_id": "ucyDCgyYRko",
+            "title": "Newsletter Masterclass: How to create the perfect newsletter referral program in 2023",
+            "author": "SparkLoop",
+            "thumbnail_url": "https://i.ytimg.com/vi/ucyDCgyYRko/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ucyDCgyYRko"
+          },
+          {
+            "video_id": "XnLPTqyukUI",
+            "title": "How to use Facebook Ads to grow your newsletter — with Gunnar Holm of GrowJoy.co",
+            "author": "SparkLoop",
+            "thumbnail_url": "https://i.ytimg.com/vi/XnLPTqyukUI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=XnLPTqyukUI"
+          },
+          {
+            "video_id": "55VTgJoSWco",
+            "title": "$350k with a local newsletter business — with Ryan Sneddon of Naptown Scoop",
+            "author": "SparkLoop",
+            "thumbnail_url": "https://i.ytimg.com/vi/55VTgJoSWco/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=55VTgJoSWco"
+          },
+          {
+            "video_id": "q1jLTPNMaCY",
+            "title": "Free Newsletter Masterclass: Turn New Readers into Revenue",
+            "author": "SparkLoop",
+            "thumbnail_url": "https://i.ytimg.com/vi/q1jLTPNMaCY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=q1jLTPNMaCY"
+          },
+          {
+            "video_id": "cGtTorgyz9I",
+            "title": "How this newsletter growth expert scaled TWO newsletters to 50k+ subs — with Alex Brogan",
+            "author": "SparkLoop",
+            "thumbnail_url": "https://i.ytimg.com/vi/cGtTorgyz9I/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=cGtTorgyz9I"
+          },
+          {
+            "video_id": "6rbq9lhZYqY",
+            "title": "How two friends joined forces to scale their newsletter — with Tyler Parker & Colton Sakamoto",
+            "author": "SparkLoop",
+            "thumbnail_url": "https://i.ytimg.com/vi/6rbq9lhZYqY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=6rbq9lhZYqY"
+          },
+          {
+            "video_id": "u87gia-3VVo",
+            "title": "Connecting SparkLoop to Beehiiv: Get paid to recommend top newsletters to your audience",
+            "author": "SparkLoop",
+            "thumbnail_url": "https://i.ytimg.com/vi/u87gia-3VVo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=u87gia-3VVo"
+          },
+          {
+            "video_id": "wW2Mpe3uxT8",
+            "title": "How to Increase Newsletter Conversions From 7% to 35% | Marketing Max | Send & Grow 2.0 Ep. 7",
+            "author": "SparkLoop",
+            "thumbnail_url": "https://i.ytimg.com/vi/wW2Mpe3uxT8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=wW2Mpe3uxT8"
+          },
+          {
+            "video_id": "bHypgQE6iLY",
+            "title": "The DARK SIDE of Paid Recommendations: My Sparkloop & Kit Rejection Story",
+            "author": "Wanda Zelaya Real Estate Channel",
+            "thumbnail_url": "https://i.ytimg.com/vi/bHypgQE6iLY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=bHypgQE6iLY"
+          },
+          {
+            "video_id": "ClT7JBQFJGA",
+            "title": "How to Rank on ChatGPT and Claude | Generative Engine Optimization (GEO) Webinar",
+            "author": "Digital Niche Agency",
+            "thumbnail_url": "https://i.ytimg.com/vi/ClT7JBQFJGA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ClT7JBQFJGA"
+          },
+          {
+            "video_id": "ELiV_0RMFr4",
+            "title": "Generative Engine Optimization: How to Build Visibility in AI Searches like ChatGPT and Perplexity",
+            "author": "E-commerce Berlin Expo",
+            "thumbnail_url": "https://i.ytimg.com/vi/ELiV_0RMFr4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ELiV_0RMFr4"
+          },
+          {
+            "video_id": "VGI3TKBcH6A",
+            "title": "Generative Engine Optimization (GEO) Explained Like You're 5",
+            "author": "Vendasta",
+            "thumbnail_url": "https://i.ytimg.com/vi/VGI3TKBcH6A/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=VGI3TKBcH6A"
+          },
+          {
+            "video_id": "H3cOFc-TX8I",
+            "title": "How to Rank in AI Search Engines Using GEO - SEO course EP 11",
+            "author": "Marouane RHAFLI",
+            "thumbnail_url": "https://i.ytimg.com/vi/H3cOFc-TX8I/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=H3cOFc-TX8I"
+          },
+          {
+            "video_id": "bhTo8fDmr5I",
+            "title": "How to Dominate AI Search Results in 2026 (ChatGPT, AI Overviews & More)",
+            "author": "Surfer Academy",
+            "thumbnail_url": "https://i.ytimg.com/vi/bhTo8fDmr5I/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=bhTo8fDmr5I"
+          },
+          {
+            "video_id": "WBhqyUPJOro",
+            "title": "What Is GEO? Generative Engine Optimization & How to Rank in AI Search",
+            "author": "trendos",
+            "thumbnail_url": "https://i.ytimg.com/vi/WBhqyUPJOro/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=WBhqyUPJOro"
+          },
+          {
+            "video_id": "Pw5w2kXNRyw",
+            "title": "GEO - AI SEO Workshop - Rank on ChatGPT, Claude, Google Gemini, Perplexity with Full Playbook",
+            "author": "Chipp",
+            "thumbnail_url": "https://i.ytimg.com/vi/Pw5w2kXNRyw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Pw5w2kXNRyw"
+          },
+          {
+            "video_id": "44ifmL6JCs8",
+            "title": "Generative Engine Optimization: The 5-Part GEO Playbook",
+            "author": "Da Hoang",
+            "thumbnail_url": "https://i.ytimg.com/vi/44ifmL6JCs8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=44ifmL6JCs8"
           }
         ],
         "research_reference_only": true,
@@ -6547,7 +7212,7 @@
         "asset_id": "verbatim_transcript_quotes",
         "asset": "data/transcripts/*.json -> segments[].text",
         "asset_type": "verbatim_transcript_passage",
-        "source": "Spoken content of 541 third-party videos (5081 captured tips)",
+        "source": "Spoken content of 636 third-party videos (5991 captured tips)",
         "research_reference_only": true,
         "commercial_republish_allowed": false,
         "commercial_use_allowed": false,
@@ -6563,38 +7228,38 @@
     ]
   },
   "corpus_metrics": {
-    "video_count": 541,
-    "channel_count": 320,
-    "total_words": 828926,
-    "total_hours": 165.12,
-    "total_pro_tips": 5081,
-    "unique_statutes_and_forms": 369,
-    "unique_tools_and_portals": 1640
+    "video_count": 636,
+    "channel_count": 380,
+    "total_words": 1006406,
+    "total_hours": 198.23,
+    "total_pro_tips": 5991,
+    "unique_statutes_and_forms": 424,
+    "unique_tools_and_portals": 2025
   },
   "coverage": {
-    "videos_classified": 541,
-    "videos_with_multiple_topics": 541,
-    "tips_classified": 5081,
-    "raw_transcripts_joined": 541,
+    "videos_classified": 636,
+    "videos_with_multiple_topics": 636,
+    "tips_classified": 5991,
+    "raw_transcripts_joined": 636,
     "topic_video_counts": {
-      "business_model_and_economics": 389,
-      "probate_and_docket_sourcing": 408,
-      "unclaimed_property_and_escheat": 193,
-      "genealogy_and_heirship_proof": 449,
-      "skip_tracing_and_outreach": 235,
-      "contracts_and_compensation": 414,
-      "statutory_caps_and_licensing": 438,
-      "automation_and_small_team_ops": 452
+      "business_model_and_economics": 468,
+      "probate_and_docket_sourcing": 463,
+      "unclaimed_property_and_escheat": 204,
+      "genealogy_and_heirship_proof": 532,
+      "skip_tracing_and_outreach": 296,
+      "contracts_and_compensation": 491,
+      "statutory_caps_and_licensing": 507,
+      "automation_and_small_team_ops": 529
     },
     "topic_tip_counts": {
-      "business_model_and_economics": 833,
-      "probate_and_docket_sourcing": 705,
+      "business_model_and_economics": 1069,
+      "probate_and_docket_sourcing": 776,
       "unclaimed_property_and_escheat": 582,
-      "genealogy_and_heirship_proof": 677,
-      "skip_tracing_and_outreach": 102,
-      "contracts_and_compensation": 533,
-      "statutory_caps_and_licensing": 364,
-      "automation_and_small_team_ops": 1285
+      "genealogy_and_heirship_proof": 755,
+      "skip_tracing_and_outreach": 124,
+      "contracts_and_compensation": 705,
+      "statutory_caps_and_licensing": 404,
+      "automation_and_small_team_ops": 1576
     }
   },
   "schema_version": "1.0",
