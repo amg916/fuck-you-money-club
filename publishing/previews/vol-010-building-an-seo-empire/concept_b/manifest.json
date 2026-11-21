@@ -1,0 +1,65 @@
+{
+  "concept_id": "concept_b",
+  "volume_id": "vol-010-building-an-seo-empire",
+  "approved": true,
+  "edition_status": "approved_master",
+  "preview_only": true,
+  "files": {
+    "digital_pdf.pdf": {
+      "bytes": 1860914,
+      "sha256": "074a5d20f92dbaf462913cd214f7987d3f1ff57a681a316a539de23c0f0254c5"
+    },
+    "print_6x9_pdf.pdf": {
+      "bytes": 2438691,
+      "sha256": "9176195dbeb9402fc33014dfb1d6ab9c5efdba8aacf6a47ff75ab12161014820"
+    },
+    "workbook_pdf.pdf": {
+      "bytes": 540424,
+      "sha256": "f105a2367b9332127f19b4769a44fb7d312721429f708f3f2ee02ea91dd0f657"
+    },
+    "book.epub": {
+      "bytes": 301024,
+      "sha256": "a038155649039a619ad59a6200b870a64cf8a03a1d5d2f2b2b2dc8a409293f32"
+    },
+    "art/cover.svg": {
+      "bytes": 3657,
+      "sha256": "675ed031113c0eff2cc3f5590739e87117303b5b8fa86a50881b0ed22451e14c"
+    },
+    "art/scorecard.svg": {
+      "bytes": 130360,
+      "sha256": "eeb5331b373fde7e577facf552052d08056ac3497ee72910585f607d018a6940"
+    },
+    "art/diag_01.svg": {
+      "bytes": 10373,
+      "sha256": "fc4b1a6d5eabb95940382146046189f8abc1b625a5f3a823cb178bdc230a0c46"
+    },
+    "art/diag_02.svg": {
+      "bytes": 7904,
+      "sha256": "81e260e1dbb5b78087908b0c8f2ec0efcaf75dab415d0b747adcbd63d87fb326"
+    },
+    "art/diag_03.svg": {
+      "bytes": 11730,
+      "sha256": "037d0c17c3b00dba757372a20f765432ba996b1e38cd6a3b89a94a07ed7f4259"
+    },
+    "art/diag_04.svg": {
+      "bytes": 9438,
+      "sha256": "fc8c385fecc5e540e1277a9c962dcaf71f574093f0765c92d0beebe5a8fe9b4b"
+    },
+    "art/diag_05.svg": {
+      "bytes": 9502,
+      "sha256": "e831eb3570999e9a8e30d7a26a22e0fd18b96ef43687013c8bf55e49e74d761b"
+    },
+    "art/diag_06.svg": {
+      "bytes": 14759,
+      "sha256": "d08f670ecc6d303255dcdb12f0ce7545c86920f7bd0c30e1aaa604d420003dd2"
+    },
+    "art/diag_07.svg": {
+      "bytes": 8760,
+      "sha256": "0486a12840835c32db1835e981e46b344a507e6b92a36e81d971b5ee987f8c3a"
+    },
+    "art/diag_08.svg": {
+      "bytes": 8726,
+      "sha256": "f60cf51a1a483457b53e4424e758edb17a8af144135675b6ad1b411c9d1e12ca"
+    }
+  }
+}

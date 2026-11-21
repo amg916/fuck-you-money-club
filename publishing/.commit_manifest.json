@@ -1,10 +1,10 @@
 {
   "scope": "publishing_store_excluding_previews",
   "sha256": {
-    "audit/existing_work_audit.json": "1a515426636aecf4bdecd8864abc59f2b83b2a2e547942690c617e938b8b2d13",
-    "brand/brand_system.json": "a62acf23c4976a231a01a58aa9a055516cdc61aae50ad412029ab00c9585dcb6",
-    "catalog/pipeline_29_candidates.json": "2b59afc653fdd19c402c11c6fc821a2dbc8b33bf3bd293332fd58c61e401c808",
-    "research/research_database_summary.json": "e4a9212656649a580d45d2a39abf6ff103e25ead44eba47ae22251362ffe2455",
+    "audit/existing_work_audit.json": "182aaf4219ac4bf6e2fe26b3e38197d28c168bb432bd26cccfc561beb54a9870",
+    "brand/brand_system.json": "3162d67f3e12a9a1d599c576e3e0b7b6687a279318a185744b02b31a46f20d28",
+    "catalog/pipeline_29_candidates.json": "364ec5c80b8a0e57295de2ade039a1d71c496b679c3a29de19ef41440187032a",
+    "research/research_database_summary.json": "28824a6e9a47d967f16d8bbd03a5e247566bf04c04f78f288341420bd9cc05c7",
     "site/newsletter_signups.json": "5a97fe09f877c0fccee940246e74f27dc5b6bc83148037af241946b350933794",
     "volumes/vol-001-heir-hunting/chapters/chapter-01.md": "4c44fe7e11c2f4af10ed7241bb0f8b49674c33d8c70c91a965cd3a0dab1133f0",
     "volumes/vol-001-heir-hunting/chapters/chapter-02.md": "c9f8705ba384dbbbd713674229cb8dfce45ab4fab27acea1480b476f229ad08b",
@@ -167,6 +167,24 @@
     "volumes/vol-009-million-dollar-lead-generation/manuscript.json": "7e92b520b3eb8e3b8081102f2678032f8f6825cc7ce8047075c016af192fff4b",
     "volumes/vol-009-million-dollar-lead-generation/metadata.json": "935ec2d16271fa6a4ef851e575dd2949d1333f13e3e27071910f971ed6598d43",
     "volumes/vol-009-million-dollar-lead-generation/scorecard.json": "e6ca5a8dd35c64fca863b34d4d3f791755c2776fbf23cee0bf9522decfdfa149",
-    "volumes/vol-009-million-dollar-lead-generation/workbook.json": "e9ace2e67605896771dc6207c60d916bea75d579a7a75b9e6382c73255675dbb"
+    "volumes/vol-009-million-dollar-lead-generation/workbook.json": "e9ace2e67605896771dc6207c60d916bea75d579a7a75b9e6382c73255675dbb",
+    "volumes/vol-010-building-an-seo-empire/chapters/chapter-01.md": "269bddf7c4e5ecbb8bd4f2f01dde2c0cc998fa8e4d5771a1538e3a772101abc8",
+    "volumes/vol-010-building-an-seo-empire/chapters/chapter-02.md": "0a69deb907c08d66dcca0bbab37c9b63f41ec627768b7ce5b419b4e5271b3553",
+    "volumes/vol-010-building-an-seo-empire/chapters/chapter-03.md": "5d817d72bc07f2a1dd2f522918865428a1814051e6d851b7fddd908773f91cd5",
+    "volumes/vol-010-building-an-seo-empire/chapters/chapter-04.md": "8ebbdb3170a8145720cdc9df7da4e1bb90758a309dc7c966214c58610874527e",
+    "volumes/vol-010-building-an-seo-empire/chapters/chapter-05.md": "b49b330b7dab20d9cc19095c23b47496522ebe8d9691bfbc40fac566b0c35628",
+    "volumes/vol-010-building-an-seo-empire/chapters/chapter-06.md": "dc2fdcf6cf2dc2b663eef9cc3962a398250d25de48731e0364f38d808f0ec667",
+    "volumes/vol-010-building-an-seo-empire/chapters/chapter-07.md": "d2bdd7424a1034ac4962c5e9f2612fd14f36042ea596d4aecfcb8c3831129e7c",
+    "volumes/vol-010-building-an-seo-empire/chapters/chapter-08.md": "8ab06e3959f3dea276e36e873850a7b13e01080b4858b6fb380dce6bc40dfdd4",
+    "volumes/vol-010-building-an-seo-empire/chapters/chapter-09.md": "6044c666cf619a39035b218137e5a4403a078c2f487a288cb596677d7058ba5e",
+    "volumes/vol-010-building-an-seo-empire/chapters/chapter-10.md": "8752fc3b31c7f2b9c9e807ede7a96252f4d83d52be882d7068ca38e2bafc61c3",
+    "volumes/vol-010-building-an-seo-empire/chapters/chapter-11.md": "67091250323791c61c8992d5234f6396c451e29ea4418b9fa537e805efc70bdd",
+    "volumes/vol-010-building-an-seo-empire/chapters/chapter-12.md": "6b2437d563a7d6008d956deeef5d9706803f9b2233a4b7a0c73cf08bcdfea583",
+    "volumes/vol-010-building-an-seo-empire/diagrams_data.json": "581093f9495146d994bd1c517419edeb0f4cf0251d25e87851b0f18d3a266afc",
+    "volumes/vol-010-building-an-seo-empire/graphics_reviews.json": "eae5c905f8cf91eda2288ac2599e75e08ac1c72ac6f4eb5788c3b375aafd6b9e",
+    "volumes/vol-010-building-an-seo-empire/manuscript.json": "16a6428634fb3d6e7f778a67d5de26fafef89510ef3a08d830ae77adb2ee1b93",
+    "volumes/vol-010-building-an-seo-empire/metadata.json": "0bcd98a5ea2ecef02a191e801b55343398df87275bdf9c92c774a54780b0ad5d",
+    "volumes/vol-010-building-an-seo-empire/scorecard.json": "a3ff405431481b96220d2ce6cdc6ab637cbfdcc1dcce17ea49b4cfb2c82c6177",
+    "volumes/vol-010-building-an-seo-empire/workbook.json": "1cde7253455750a8582cfc3028a45d4b37f6d7da968d644c5850a44059ba68ba"
   }
 }

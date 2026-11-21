@@ -1,0 +1,81 @@
+{
+  "volume_id": "vol-010-building-an-seo-empire",
+  "volume_slug": "vol-010-building-an-seo-empire",
+  "volume_number": 10,
+  "site_ui": {
+    "cover": [
+      "BUILDING AN",
+      "SEO",
+      "EMPIRE"
+    ],
+    "deck": [
+      "OWN THE DATASET. CAPTURE SERP & GEO.",
+      "COMPOUND MEDIA EQUITY."
+    ],
+    "lead": "Programmatic Utility Hubs, Topical-Continuity Domain Rebuilds, Multi-Engine GEO & Scaling a $900k/yr 6-Person Search Portfolio",
+    "summary": "Build resilient search and AI-citation portfolios backed by proprietary calculators, clean link equity, and diversified ad/lead/affiliate yield.",
+    "chapters": [
+      "Business model & revenue boundaries",
+      "Decision-makers & payment rails",
+      "Unit economics & margin waterfall",
+      "Startup capital & lean stack",
+      "Beginner traps & failure modes",
+      "Sourcing & first deals",
+      "End-to-end operating blueprint",
+      "Public records, APIs & tooling",
+      "Contracts, statutes & scripts",
+      "Automation & distribution loops",
+      "Small-team pod & exit valuation",
+      "First 30-day launch sprint"
+    ],
+    "flow": [
+      [
+        "SOURCE",
+        "Mine high-intent deal triggers"
+      ],
+      [
+        "UNDERWRITE",
+        "Screen margin, float & rules"
+      ],
+      [
+        "ENGAGE",
+        "Execute mandate or pre-sell"
+      ],
+      [
+        "DELIVER",
+        "Run standardized SOP & ledger"
+      ],
+      [
+        "VERIFY",
+        "Audit quality, scrubs & statutes"
+      ],
+      [
+        "COMPOUND",
+        "Reconcile cash & scale pod"
+      ]
+    ]
+  },
+  "parent_brand": "THE FUCK YOU MONEY CLUB",
+  "book_series": "THE BIG MONEY PLAYBOOKS",
+  "tagline": "Big Money. Small Teams. No Bullshit.",
+  "title": "BUILDING AN SEO EMPIRE",
+  "subtitle": "The Complete Playbook for Building an SEO Empire: $80,000–$900,000 USD Annually, Starting with a 2 FT + 4 C (6 People) Publishing Pod",
+  "chapter_count": 12,
+  "total_word_count": 75099,
+  "expert_youtube_link_count": 180,
+  "min_expert_youtube_links_required": 150,
+  "target_expert_youtube_links": "150-200+",
+  "min_expert_youtube_links_per_chapter": 12,
+  "rating_system": "Money-to-Manpower Score",
+  "composite_score": 82,
+  "formats": [
+    "8.5×11 Executive Digital PDF",
+    "6×9 Print Edition",
+    "Reflowable EPUB 3.0"
+  ],
+  "isbn": null,
+  "publication_status": "approved_master",
+  "public_deploy_approved": false,
+  "paid_sales_approved": false,
+  "updated_at": "2026-11-21T21:28:24Z"
+}

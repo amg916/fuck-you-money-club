@@ -1,0 +1,346 @@
+{
+  "diagrams": [
+    {
+      "diagram_id": "diag-01-search-portfolio-production-loop",
+      "chart_type": "process_flow",
+      "title": "Turn Search Demand into Owned Publishing Assets",
+      "subtitle": "Five operating stages connect useful pages to publisher revenue.",
+      "chapter_number": 1,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "The operating sequence covers multi-site search publishing, selective programmatic production, and GEO citation tracking. Stage numbers express sequence, not revenue forecasts. The canonical time to first deal is 6–24 months.",
+      "caption": "Automate technical audits, refresh queues, and revenue reporting; retain human responsibility for evidence, rights, and editorial quality.",
+      "stages": [
+        {
+          "label": "Map demand",
+          "value": "Stage 1: select defensible topic clusters",
+          "numeric_value": 1.0,
+          "detail": "Combine Google Search Console, Ahrefs, and direct SERP inspection to map intent, competing formats, audience needs, and plausible advertising or affiliate demand."
+        },
+        {
+          "label": "Design assets",
+          "value": "Stage 2: establish evidence and page architecture",
+          "numeric_value": 2.0,
+          "detail": "Specify original research, licensed media, internal links, and differentiated page templates. Reject programmatic variants that add no substantive user value."
+        },
+        {
+          "label": "Publish and verify",
+          "value": "Stage 3: release tested editorial units",
+          "numeric_value": 3.0,
+          "detail": "Use Screaming Frog and Search Console to inspect status codes, canonicals, rendering, and indexability. Editors verify claims, contributor rights, and commercial disclosures."
+        },
+        {
+          "label": "Monetize earned attention",
+          "value": "Stage 4: connect approved commercial relationships",
+          "numeric_value": 4.0,
+          "detail": "Record advertising earnings, approved affiliate commissions, and delivered sponsorship revenue. Exclude referred merchant sales, pending commissions, and undelivered sponsor commitments."
+        },
+        {
+          "label": "Refresh and package",
+          "value": "Stage 5: reinvest using auditable asset records",
+          "numeric_value": 5.0,
+          "detail": "Queue decaying pages in Airtable; reconcile revenue in BigQuery and Looker Studio. Log sampled GEO citations separately from referrals and maintain transfer-ready rights records."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-02-organic-to-payable-affiliate-cohort",
+      "chart_type": "funnel",
+      "title": "Measure One Cohort through Payable Affiliate Outcomes",
+      "subtitle": "100,000 eligible organic sessions narrow to 530 payable sessions.",
+      "chapter_number": 6,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Illustrative cohort, not observed performance or an annual projection. Every downstream count is a subset of the original 100,000 sessions, counted once per stage. Use permitted attribution records and a stated 60-day reconciliation window. Assume exactly one $20 approved commission per payable session.",
+      "caption": "The cohort earns $10,600 in affiliate revenue: 530 multiplied by $20. Merchant order value is excluded. Advertising and sponsorship earnings are outside this conversion funnel.",
+      "stages": [
+        {
+          "label": "Organic entry sessions",
+          "value": "100,000 sessions establish the original cohort",
+          "numeric_value": 100000.0,
+          "detail": "Freeze eligible organic landing sessions for the cohort period. Exclude internal traffic and bot traffic; document measurement exclusions instead of treating them as conversions."
+        },
+        {
+          "label": "Commercial-content readers",
+          "value": "40,000 sessions; 40% of entry cohort",
+          "numeric_value": 40000.0,
+          "detail": "Count sessions reaching at least one relevant comparison or product-selection page. Multiple page views within the same session do not enlarge this stage."
+        },
+        {
+          "label": "Affiliate outbound sessions",
+          "value": "12,000 sessions; 30% of commercial readers",
+          "numeric_value": 12000.0,
+          "detail": "Count sessions with at least one disclosed affiliate outbound event. Preserve campaign and content identifiers without transmitting unnecessary personal information."
+        },
+        {
+          "label": "Attributed purchase sessions",
+          "value": "600 sessions; 5% of outbound sessions",
+          "numeric_value": 600.0,
+          "detail": "Match merchant-reported purchase events back to eligible outbound sessions. Deduplicate purchases within each session and retain pending status during returns review."
+        },
+        {
+          "label": "Payable purchase sessions",
+          "value": "530 sessions; 88.33% of purchase sessions",
+          "numeric_value": 530.0,
+          "detail": "Remove 70 sessions whose purchases were reversed or disallowed. Final conversion is 0.53% of the original cohort; reconcile $10,600 to approved commission statements."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-03-base-case-revenue-to-owner-net",
+      "chart_type": "waterfall",
+      "title": "Reconcile $490,000 Gross to $159,250 Owner Net",
+      "subtitle": "Four illustrative cost deductions produce the canonical 32.5% margin.",
+      "chapter_number": 3,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "First and last bars are totals; the four intervening bars are negative deductions. Revenue and owner net are canonical; cost category allocations are illustrative. Annual costs total $330,750, or $27,562.50 monthly. The supplied $3,000–$20,000 monthly opex range cannot be an all-in ceiling for this Base case: implied annual costs exceed its $240,000 upper annual equivalent by $90,750. Resolve that scope difference before budgeting.",
+      "caption": "$490,000 minus $156,000 minus $84,000 minus $42,000 minus $48,750 equals $159,250; $159,250 divided by $490,000 equals 32.5%. Referred merchant sales never enter publisher gross revenue.",
+      "stages": [
+        {
+          "label": "Publisher gross revenue",
+          "value": "$490,000 annual recognized operator revenue",
+          "numeric_value": 490000.0,
+          "detail": "Illustrative rail allocation is $218,000 advertising, $212,000 approved affiliate commissions, and $60,000 delivered sponsorship revenue; the three components reconcile."
+        },
+        {
+          "label": "Full-time labor",
+          "value": "Subtract $156,000 in modeled annual labor",
+          "numeric_value": -156000.0,
+          "detail": "Allocate $78,000 per full-time seat across two seats. Treat these as modeled loaded labor budgets, not salary survey findings or a separate owner distribution."
+        },
+        {
+          "label": "Contracted production",
+          "value": "Subtract $84,000 in modeled contractor fees",
+          "numeric_value": -84000.0,
+          "detail": "Allocate $21,000 annually to each of four fractional contractor relationships. Purchased capacity is limited; four contractors do not equal four full-time equivalents."
+        },
+        {
+          "label": "Publishing infrastructure",
+          "value": "Subtract $42,000 in modeled infrastructure costs",
+          "numeric_value": -42000.0,
+          "detail": "Budget hosting, security maintenance, audit tools, analytics, licensed datasets, and production software. Separate one-time setup purchases from recurring costs to prevent duplication."
+        },
+        {
+          "label": "Commercial and administrative costs",
+          "value": "Subtract $48,750 in modeled remaining expenses",
+          "numeric_value": -48750.0,
+          "detail": "Allocate $24,000 to commercial development, $12,000 to bookkeeping and contract administration, and $12,750 to insurance, banking, and other incurred operating expenses."
+        },
+        {
+          "label": "Annual owner net profit",
+          "value": "$159,250 retained after modeled operating costs",
+          "numeric_value": 159250.0,
+          "detail": "Preserve the canonical Base result. Conservative revenue of $80,000 at 20% yields $16,000; Scaled revenue of $900,000 at 45% yields $405,000."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-04-subniche-publisher-revenue-yields",
+      "chart_type": "horizontal_bars",
+      "title": "Compare Sub-Niches on Publisher Revenue per 1,000 Sessions",
+      "subtitle": "Equal traffic allocations produce a $49 blended publisher yield.",
+      "chapter_number": 2,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Illustrative yields, not market benchmarks. Allocate 2,000,000 annual sessions to each of five sub-niches: 10,000,000 sessions total. All yield components are USD of operator revenue per 1,000 sessions, after affiliate reversals. Equal traffic weighting produces $49 blended yield and $490,000 annual Base revenue.",
+      "caption": "Across the five equal-traffic segments, advertising contributes $218,000, affiliate commissions $212,000, and sponsorships $60,000. Yield comparisons require consistent session definitions and periods.",
+      "stages": [
+        {
+          "label": "Home workshop references",
+          "value": "$30 earned per 1,000 eligible sessions",
+          "numeric_value": 30.0,
+          "detail": "$18 advertising plus $10 affiliate commissions plus $2 sponsorship equals $30. At 2,000,000 annual sessions, publisher revenue is $60,000; original photos reduce rights risk."
+        },
+        {
+          "label": "Outdoor equipment guides",
+          "value": "$40 earned per 1,000 eligible sessions",
+          "numeric_value": 40.0,
+          "detail": "$20 advertising plus $15 affiliate commissions plus $5 sponsorship equals $40. At 2,000,000 annual sessions, publisher revenue is $80,000; monitor seasonal traffic concentration."
+        },
+        {
+          "label": "Creative software tutorials",
+          "value": "$50 earned per 1,000 eligible sessions",
+          "numeric_value": 50.0,
+          "detail": "$22 advertising plus $23 affiliate commissions plus $5 sponsorship equals $50. At 2,000,000 annual sessions, publisher revenue is $100,000; refresh screenshots after interface changes."
+        },
+        {
+          "label": "Small-business workflow guides",
+          "value": "$60 earned per 1,000 eligible sessions",
+          "numeric_value": 60.0,
+          "detail": "$24 advertising plus $28 affiliate commissions plus $8 sponsorship equals $60. At 2,000,000 annual sessions, publisher revenue is $120,000; verify affiliate attribution windows."
+        },
+        {
+          "label": "Specialist software comparisons",
+          "value": "$65 earned per 1,000 eligible sessions",
+          "numeric_value": 65.0,
+          "detail": "$25 advertising plus $30 affiliate commissions plus $10 sponsorship equals $65. At 2,000,000 annual sessions, publisher revenue is $130,000; monitor partner concentration and reversals."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-05-publication-statutory-risk-checks",
+      "chart_type": "decision_tree",
+      "title": "Resolve Rights, Claims, Privacy, and Distribution before Release",
+      "subtitle": "Each affirmative answer advances; each negative answer triggers repair.",
+      "chapter_number": 5,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Four sequential yes-or-no checks. A failed check sends the affected page, tracking feature, or outreach campaign to the named corrective action before reassessment. Statutory duties depend on the activity and applicable jurisdiction; search platform policies are separate contractual and distribution risks.",
+      "caption": "Record evidence, the responsible owner, and the corrective action. Do not treat an automated SEO score as proof of copyright permission, truthful advertising, or lawful data handling.",
+      "stages": [
+        {
+          "label": "Rights established?",
+          "value": "Yes: advance; no: replace or document permission",
+          "numeric_value": 1.0,
+          "detail": "Editor checks text, images, datasets, and contributor agreements against 17 U.S.C. 106, 107, and 204. Fair use requires specific analysis; attribution alone does not grant reproduction rights."
+        },
+        {
+          "label": "Commercial claims supportable?",
+          "value": "Yes: advance; no: correct claims and disclosures",
+          "numeric_value": 2.0,
+          "detail": "Commercial lead checks evidence under 15 U.S.C. 45 and material connections under 16 CFR 255.5. Place clear disclosures with endorsements; do not bury paid relationships in a distant policy page."
+        },
+        {
+          "label": "Data handling scoped?",
+          "value": "Yes: advance; no: disable affected collection",
+          "numeric_value": 3.0,
+          "detail": "Technical lead maps identifiers, recipients, retention, and applicable rights. Assess Cal. Civ. Code 1798.100, 1798.120, and 1798.140 applicability; assess COPPA under 15 U.S.C. 6502 and 16 CFR 312 for child-directed services or relevant actual knowledge."
+        },
+        {
+          "label": "Distribution method acceptable?",
+          "value": "Yes: release; no: revise outreach or templates",
+          "numeric_value": 4.0,
+          "detail": "Operator checks commercial email against 15 U.S.C. 7704, including accurate headers and functioning opt-out. Separately inspect Google spam policies for scaled content abuse, link spam, and site reputation abuse."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-06-six-core-eight-scaled-publishing-seats",
+      "chart_type": "org_architecture",
+      "title": "Operate Six Core Seats; Add Two Only in the Scaled Model",
+      "subtitle": "Conservative and Base: 2 FT + 4 C. Scaled: 3 FT + 5 C.",
+      "chapter_number": 11,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Eight depicted seats represent the Scaled organization; six are core and two are explicitly Scaled-only. Each numeric value represents one person, not a full-time equivalent. Contractor seats are fractional service relationships. Revenue scenarios do not establish workload capacity by themselves.",
+      "caption": "Core seats support the canonical $80,000 Conservative and $490,000 Base scenarios; the eight-person configuration belongs to the $900,000 Scaled scenario. Do not apply Base labor budgets to Conservative revenue without resizing paid capacity.",
+      "stages": [
+        {
+          "label": "Portfolio operator",
+          "value": "Core seat 1: full-time portfolio ownership",
+          "numeric_value": 1.0,
+          "detail": "Own topic allocation, site-level profit reporting, partner concentration, and capital deployment. Maintain the rights register and transaction-ready operating records for potential exits."
+        },
+        {
+          "label": "Managing editor",
+          "value": "Core seat 2: full-time editorial ownership",
+          "numeric_value": 1.0,
+          "detail": "Own evidence standards, contributor briefs, publishing cadence, and refresh priorities. Review risky commercial claims and prevent duplicative programmatic page expansion."
+        },
+        {
+          "label": "Technical SEO engineer",
+          "value": "Core seat 3: contracted technical delivery",
+          "numeric_value": 1.0,
+          "detail": "Maintain crawl monitoring, template tests, structured data, and deployment checks. Route indexing regressions to a tracked repair queue instead of mass resubmission."
+        },
+        {
+          "label": "Subject specialist",
+          "value": "Core seat 4: contracted research and writing",
+          "numeric_value": 1.0,
+          "detail": "Produce original explanations, product testing records, and attributable expert contributions. Deliver source packets and explicit rights documentation with every assignment."
+        },
+        {
+          "label": "Production specialist",
+          "value": "Core seat 5: contracted visual and CMS production",
+          "numeric_value": 1.0,
+          "detail": "Create licensed or original visuals, format accessible pages, and maintain CMS consistency. Verify internal links and disclosure placement before scheduled publication."
+        },
+        {
+          "label": "Revenue analyst",
+          "value": "Core seat 6: contracted measurement and reconciliation",
+          "numeric_value": 1.0,
+          "detail": "Reconcile advertising statements, payable affiliate events, and sponsorship delivery. Publish revenue per session, receivable aging, and partner exposure without merchant-sales inflation."
+        },
+        {
+          "label": "Growth partnerships lead",
+          "value": "Scaled-only seat 7: additional full-time commercial owner",
+          "numeric_value": 1.0,
+          "detail": "Add in the Scaled configuration to diversify sponsorships and manage partner renewals. Protect editorial independence and document placement obligations before recognizing sponsor revenue."
+        },
+        {
+          "label": "Second subject specialist",
+          "value": "Scaled-only seat 8: additional contracted production capacity",
+          "numeric_value": 1.0,
+          "detail": "Add in the Scaled configuration for a second validated topic cluster. Expand production only after measuring editorial review capacity and existing refresh backlog."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-07-startup-capital-four-bucket-allocation",
+      "chart_type": "stacked_comparison",
+      "title": "Allocate Startup Capital without Mistaking It for Annual Profit",
+      "subtitle": "Four buckets sum to a $45,000 reference launch budget.",
+      "chapter_number": 4,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Numeric values depict the $45,000 reference budget. Stage details also specify allocations for the canonical $15,000 minimum and $120,000 maximum: each column sums exactly to its total. These are illustrative cash allocations, not accounting capitalization instructions or additional annual costs.",
+      "caption": "Reference allocation is $18,000 + $12,000 + $9,000 + $6,000 = $45,000. A startup budget does not fund the entire canonical 6–24-month path to the first deal; calculate continuing funding separately.",
+      "stages": [
+        {
+          "label": "Original content and evidence",
+          "value": "$18,000 reference allocation; 40% of launch cash",
+          "numeric_value": 18000.0,
+          "detail": "Allocate $6,000 at the minimum, $18,000 at reference, or $48,000 at maximum. Fund original testing, commissioned writing, editing, and documented media licenses."
+        },
+        {
+          "label": "Technical publishing foundation",
+          "value": "$12,000 reference allocation; 26.67% of launch cash",
+          "numeric_value": 12000.0,
+          "detail": "Allocate $4,000 at the minimum, $12,000 at reference, or $32,000 at maximum. Fund templates, hosting setup, backups, access controls, and initial crawl remediation."
+        },
+        {
+          "label": "Measurement and commercial setup",
+          "value": "$9,000 reference allocation; 20% of launch cash",
+          "numeric_value": 9000.0,
+          "detail": "Allocate $3,000 at the minimum, $9,000 at reference, or $24,000 at maximum. Fund attribution setup, reporting connectors, partner materials, and contributor agreement preparation."
+        },
+        {
+          "label": "Unspent working reserve",
+          "value": "$6,000 reference allocation; 13.33% of launch cash",
+          "numeric_value": 6000.0,
+          "detail": "Allocate $2,000 at the minimum, $6,000 at reference, or $16,000 at maximum. The reference reserve covers two months at $3,000 monthly opex or 0.3 months at $20,000; reserve cash is not an incurred expense."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-08-thirty-day-search-portfolio-sprint",
+      "chart_type": "timeline_roadmap",
+      "title": "Use the First 30 Days to Establish a Measurable Publishing System",
+      "subtitle": "Ship an evidence-backed pilot, not a promised first-month revenue result.",
+      "chapter_number": 12,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Four weekly milestones span Days 1–7, 8–14, 15–21, and 22–30. Numeric values are milestone end days. Deliverable counts are sprint planning assumptions for the six-person core pod, not traffic forecasts. First-deal timing remains the canonical 6–24 months.",
+      "caption": "Finish with a tested pilot, documented rights, functioning revenue definitions, and a funded next sprint. Ranking losses, slow audience growth, and revenue concentration remain explicit risks.",
+      "stages": [
+        {
+          "label": "Days 1–7",
+          "value": "Select one site and one evidence-backed cluster",
+          "numeric_value": 7.0,
+          "detail": "Operator and editor map 30 queries, review ten competing pages, and select one initial site. Record expected revenue rails, rights requirements, and a twelve-month cash plan."
+        },
+        {
+          "label": "Days 8–14",
+          "value": "Test two templates and commission ten briefs",
+          "numeric_value": 14.0,
+          "detail": "Technical contractor validates canonicals, indexing controls, mobile rendering, and analytics events. Editor commissions ten distinct briefs and completes the four publication checks."
+        },
+        {
+          "label": "Days 15–21",
+          "value": "Publish ten reviewed pages with traceable evidence",
+          "numeric_value": 21.0,
+          "detail": "Release the pilot after editorial and technical review. Connect internal links, submit the sitemap, and sample GEO citations across twenty fixed prompts while recording engine, date, wording, and cited destination."
+        },
+        {
+          "label": "Days 22–30",
+          "value": "Audit the pilot and fund the next sprint",
+          "numeric_value": 30.0,
+          "detail": "Review crawl results, measured impressions, referral events, and production hours. Test revenue reconciliation with clearly labeled synthetic records; rank refresh work and record cash needs without counting pending deals as revenue."
+        }
+      ]
+    }
+  ]
+}

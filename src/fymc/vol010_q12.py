@@ -1,0 +1,779 @@
+from __future__ import annotations
+
+CHAPTER_12 = {
+    "id": "Q12",
+    "chapter_id": "Q12",
+    "chapter_number": 12,
+    "question_number": 12,
+    "slug": "first-30-day-launch-sprint-kill-fix-scale",
+    "question_prompt": "What is the exact Day-1-to-Day-30 execution schedule for launching building an seo empire, and what quantitative thresholds govern Kill, Fix, or Scale decisions at Day 30/60/90?",
+    "kicker": "Q12 / THE BIG MONEY PLAYBOOKS",
+    "title": "The First 30-Day Launch Sprint & Kill / Fix / Scale Gates",
+    "subtitle": "A Six-Person Search Publishing Sprint Using Search Console, Crawl Cohorts, Affiliate Disclosures, Copyright Records, and Cash-Limited Expansion",
+    "layout_template": "thirty_day_plan",
+    "reading_time_minutes": 14,
+    "executive_summary": (
+        "Candidate #25, Building an SEO Empire, ranks #10 with an 82/100 "
+        "Money-to-Manpower Score. Turn its 30 mapped plays into a controlled "
+        "launch: one accountable daily deliverable, one initial domain, 24 "
+        "evidence-backed pages, and a six-person pod comprising 2 FT + 4 C. "
+        "Authorize $12,000 of first-month expenditure, preserve a separate "
+        "$3,000 reserve, and judge early progress through crawlability, indexing, "
+        "qualified demand, and attributable economics rather than premature "
+        "revenue promises. Day 30/60/90 decisions distinguish technical repair "
+        "from weak demand and cap every expansion. Canonical annual owner "
+        "profits remain $16,000 Conservative, $159,250 Base, and $405,000 "
+        "Scaled; the final case requires 3 FT + 5 C. These are annual "
+        "operating scenarios, not launch-month forecasts."
+    ),
+    "key_metrics": [
+        {
+            "label": "Conservative",
+            "value": "$80,000",
+            "context": "Annual advertising, affiliate, and sponsorship revenue; excludes referred merchant sales",
+            "note": "20% net margin; $16,000 annual owner net profit; 2 FT + 4 C",
+        },
+        {
+            "label": "Base",
+            "value": "$490,000",
+            "context": "Annual advertising, affiliate, and sponsorship revenue; excludes referred merchant sales",
+            "note": "32.5% net margin; $159,250 annual owner net profit; 2 FT + 4 C",
+        },
+        {
+            "label": "Scaled",
+            "value": "$900,000",
+            "context": "Annual advertising, affiliate, and sponsorship revenue; excludes referred merchant sales",
+            "note": "45% net margin; $405,000 annual owner net profit; 3 FT + 5 C, eight people",
+        },
+    ],
+    "sections": [
+        {
+            "heading": "1. Days 1-7: Bound the portfolio thesis, staff the pod, and authorize cash",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Launch one domain and one commercially coherent topic cluster before "
+                    "building a portfolio. Candidate #25 has 30 mapped operator plays; "
+                    "the schedule below gives that scope 30 daily execution slots, "
+                    "P01 through P30. These are local work-package identifiers, not "
+                    "assertions about an unavailable source catalog's individual play "
+                    "names. Attach the authoritative play identifiers when that catalog "
+                    "is available, preserving all 30 slots and recording overlaps. "
+                    "The launch pod contains two full-time role holders: the publisher "
+                    "owns positioning, commercial relationships, and cash; the managing "
+                    "editor owns briefs, evidence, and release quality. Four contractors "
+                    "cover technical SEO, specialist research, writing, and design plus "
+                    "analytics implementation. Assign one accountable owner to every "
+                    "deliverable, even when another person reviews it. Reserve the "
+                    "publisher's mornings for decisions and the editor's afternoons "
+                    "for acceptance; do not create six parallel editorial authorities. "
+                    "During this sprint, cap contractor allocations at 24 technical "
+                    "hours, 32 research hours, 48 writing hours, and 16 design or "
+                    "measurement hours. These purchased hours are capacity limits, "
+                    "not declarations that contractors work full time. Use a shared "
+                    "issue board with evidence links, acceptance criteria, due dates, "
+                    "and blocked-work reasons."
+                ),
+                (
+                    "Authorize a $12,000 first-month operating budget: $4,000 for "
+                    "publisher and editor cash compensation, $6,000 for contractor "
+                    "hours at an illustrative blended $50 rate, $800 for hosting "
+                    "and software, $700 for licensed research or original testing, "
+                    "and $500 for repairs. Preserve another $3,000 as an untouched "
+                    "liquidity reserve. The resulting $15,000 initial funding "
+                    "requirement meets the bottom of the stated startup range, "
+                    "but it funds only this limited experiment. It does not finance "
+                    "the stated six-to-twenty-four-month path to a first deal. "
+                    "Continuing three comparable months requires $36,000 of operating "
+                    "cash plus the $3,000 reserve; continuing twelve requires "
+                    "$144,000 before revenue, beyond the startup range's upper bound. "
+                    "Secure later funding or reduce scope before making commitments. "
+                    "Record unpaid founder time separately at replacement cost so "
+                    "the small cash draw cannot masquerade as durable profitability. "
+                    "Maintain incurred, committed, and paid columns; the ceiling "
+                    "applies to incurred costs plus remaining commitments, not merely "
+                    "bank withdrawals. Warn at $9,600 and freeze discretionary "
+                    "purchases at $12,000. Releasing reserve cash requires a written "
+                    "revised budget and funded runway, not optimistic search forecasts."
+                ),
+                (
+                    "Choose the initial cluster through observable buyer tasks: "
+                    "installation comparisons, maintenance decisions, compatibility "
+                    "questions, or professional purchasing research. Reject topics "
+                    "whose answers require expertise the pod cannot substantiate. "
+                    "Inspect thirty representative queries manually, recording "
+                    "dominant intent, incumbent publishers, freshness needs, and "
+                    "whether an original test, dataset, or diagram would improve "
+                    "the answer. Ahrefs or Semrush can help prioritize queries, "
+                    "but estimated search volume is not measured site demand. "
+                    "Select twenty-four pages with distinct purposes and three "
+                    "plausible monetization partners; none needs to accept the "
+                    "site during this month. Prepare a rights ledger covering "
+                    "text, photographs, datasets, screenshots, and contractor "
+                    "deliverables. Under 17 U.S.C. 106, ownership and permission "
+                    "matter before reproduction and adaptation; a citation alone "
+                    "does not authorize copying. Establish adjacent affiliate "
+                    "disclosures under 16 CFR 255.5 wherever a material connection "
+                    "would affect how a recommendation is evaluated. Inventory "
+                    "analytics and advertising data flows, then determine applicable "
+                    "privacy duties before activating collection. An empty affiliate "
+                    "account is acceptable at launch; undocumented content rights "
+                    "and invisible commercial incentives are not. Archive the "
+                    "selection memo so later ranking changes do not rewrite "
+                    "the original investment thesis."
+                ),
+            ],
+            "table": {
+                "caption": "Week One: Seven Accountable Play Slots Establishing the Search Publishing Experiment",
+                "headers": [
+                    "Day and local play slot",
+                    "Accountable owner and concrete work",
+                    "Required artifact and acceptance evidence",
+                    "Capacity or spending control applied",
+                ],
+                "rows": [
+                    [
+                        "Day 01, P01: Bound the investment thesis",
+                        "Publisher selects one domain and one buyer problem",
+                        "Signed experiment brief names audience, advantage, and exclusions",
+                        "No second domain receives production spending this month",
+                    ],
+                    [
+                        "Day 02, P02: Validate the query landscape",
+                        "Research contractor inspects thirty representative search result sets",
+                        "Query ledger records intent, competitors, and evidence opportunities",
+                        "Research stays within the thirty-two-hour monthly allocation",
+                    ],
+                    [
+                        "Day 03, P03: Prioritize commercial topic coverage",
+                        "Publisher evaluates three potential advertising or affiliate relationships",
+                        "Partner matrix records eligibility, attribution, payment, and reversals",
+                        "Merchant transaction value never enters publisher revenue forecasts",
+                    ],
+                    [
+                        "Day 04, P04: Assign all production responsibilities",
+                        "Managing editor assigns twenty-four distinct page briefs",
+                        "Issue board names one owner and reviewer per brief",
+                        "Contractor commitments remain within one hundred twenty hours",
+                    ],
+                    [
+                        "Day 05, P05: Configure controlled publishing infrastructure",
+                        "Technical contractor configures hosting, backups, staging, and access",
+                        "Restore test and least-privilege account register are archived",
+                        "Hosting and software commitments remain below eight hundred dollars",
+                    ],
+                    [
+                        "Day 06, P06: Establish measurement and privacy scope",
+                        "Design and analytics contractor verifies Search Console ownership",
+                        "Measurement specification documents events, retention, and vendor transfers",
+                        "Activate collection only after applicable requirements are implemented",
+                    ],
+                    [
+                        "Day 07, P07: Complete evidence and rights checks",
+                        "Managing editor reviews source permissions and commercial disclosures",
+                        "Every planned asset has a documented permitted use",
+                        "Unresolved rights block affected assets rather than entire research",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Four checks before production expenditure accelerates",
+                "body": "The publisher records these checks in the sprint ledger before commissioning the full page batch.",
+                "items": [
+                    "Verify $15,000 available launch cash, a $12,000 spending authorization, and a separately tracked $3,000 reserve.",
+                    "Confirm one publisher, one managing editor, and four named contractors have bounded assignments and documented access.",
+                    "Require permitted-use evidence for every planned asset and implement material-connection disclosures before commercial publication.",
+                    "Verify domain ownership, backup restoration, production crawl settings, and the documented analytics collection scope.",
+                ],
+            },
+        },
+        {
+            "heading": "2. Days 8-14: Publish a measurable twenty-four-page evidence cohort",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Build the first twenty-four pages from original research "
+                    "packets, not from a keyword spreadsheet passed directly "
+                    "into a text generator. Each brief specifies the reader's "
+                    "decision, source hierarchy, supporting measurements, required "
+                    "visuals, and a reason this page deserves to exist separately. "
+                    "Use three reusable layouts: an explanatory guide, a comparison "
+                    "with explicit evaluation criteria, and a reference page built "
+                    "from licensed or independently gathered data. Programmatic "
+                    "production is appropriate only when each record contains "
+                    "meaningful differentiated facts and receives verification. "
+                    "Do not mint location or product permutations merely because "
+                    "a template can render them. The research contractor supplies "
+                    "evidence; the writer drafts; the editor checks claims and "
+                    "reader usefulness; the technical contractor verifies rendering. "
+                    "The twenty-four-page target assumes narrow, research-efficient "
+                    "pages rather than twenty-four laboratory investigations. If "
+                    "the evidence cannot support that output inside the allocated "
+                    "hours, publish fewer pages and classify the evaluation as "
+                    "sample-limited. Do not buy low-quality volume to satisfy "
+                    "a denominator. Freeze a release manifest with publication "
+                    "dates, page types, source versions, reviewer names, and "
+                    "content hashes so subsequent repairs are attributable rather "
+                    "than remembered informally after traffic moves."
+                ),
+                (
+                    "Release twelve accepted pages on Day 10, six on Day 12, "
+                    "and six on Day 14. Keep unfinished material out of "
+                    "production sitemaps. Every released URL must return a "
+                    "successful response, render its main content without "
+                    "requiring user interaction, declare the intended canonical, "
+                    "and remain reachable through relevant internal links. "
+                    "Use Screaming Frog or a small scheduled crawler to "
+                    "test status codes, canonical targets, titles, robots "
+                    "directives, and orphaned pages. Submit a clean XML "
+                    "sitemap in Google Search Console; submission requests "
+                    "discovery and does not establish indexing. Do not "
+                    "use Google's Indexing API as a general publishing "
+                    "shortcut for ordinary articles. Use the URL Inspection "
+                    "API or documented manual inspection within available "
+                    "quotas to collect index evidence. Keep the inspection "
+                    "timestamp and distinguish reported index status from "
+                    "a live accessibility test. Before removing a staging "
+                    "restriction, confirm that production and staging have "
+                    "separate settings; an inherited exclusion can erase "
+                    "the experiment's meaning. Record uptime and response "
+                    "errors daily. The target is zero operator-caused "
+                    "crawl blocks, zero broken canonical chains, and "
+                    "zero pages whose essential information disappears "
+                    "when a crawler renders the published template."
+                ),
+                (
+                    "Instrument the commercial path without confusing an "
+                    "outbound action with earned income. Define a qualified "
+                    "affiliate click as a human-initiated outbound event "
+                    "from an eligible editorial placement after internal "
+                    "tests and identifiable automation are excluded. Reconcile "
+                    "aggregate event counts against partner reporting, noting "
+                    "that attribution windows, devices, reversals, and reporting "
+                    "delays prevent exact agreement. Use campaign identifiers "
+                    "that avoid personal information. Advertising revenue "
+                    "belongs in the ledger when earned under the network's "
+                    "reporting terms; affiliate revenue reflects commissions "
+                    "after the applicable recognition policy and expected "
+                    "reversals; sponsorship revenue follows delivered contract "
+                    "obligations. A referred $500 merchant order is not "
+                    "$500 of publisher revenue. For illustration, a 4% "
+                    "approved commission produces $20 before publisher expenses. "
+                    "Create readable disclosure language beside affected "
+                    "recommendations rather than relying solely on a remote "
+                    "policy page. FTC endorsement requirements also make "
+                    "fabricated product experience unacceptable. For generative "
+                    "search visibility, add clear source attribution, stable "
+                    "entity descriptions, dated measurements, and concise "
+                    "answer passages. Track ten fixed prompts with their "
+                    "model and observation dates, but treat citation capture "
+                    "as a diagnostic: unstable generated mentions are "
+                    "neither attributable visits nor booked revenue."
+                ),
+            ],
+            "table": {
+                "caption": "Week Two: Seven Production Slots With Verifiable Release and Measurement Evidence",
+                "headers": [
+                    "Day and local play slot",
+                    "Accountable owner and concrete work",
+                    "Required artifact and acceptance evidence",
+                    "Failure prevented or workload bounded",
+                ],
+                "rows": [
+                    [
+                        "Day 08, P08: Standardize useful page templates",
+                        "Managing editor approves three research-driven editorial layouts",
+                        "Templates separate evidence, interpretation, commercial links, and disclosures",
+                        "No layout permits unsupported automated product recommendations",
+                    ],
+                    [
+                        "Day 09, P09: Complete initial research packets",
+                        "Research contractor supplies verified facts for initial releases",
+                        "Packets attach sources, permissions, observations, and reviewer questions",
+                        "Writer begins only when essential evidence is available",
+                    ],
+                    [
+                        "Day 10, P10: Release twelve accepted pages",
+                        "Managing editor publishes twelve individually reviewed cohort URLs",
+                        "Release manifest records dates, hashes, reviewers, and sources",
+                        "Failed pages remain unpublished rather than weakening standards",
+                    ],
+                    [
+                        "Day 11, P11: Inspect the first production cohort",
+                        "Technical contractor crawls rendering, canonicals, and internal links",
+                        "Defect register includes reproducible failures and assigned repairs",
+                        "Resolve systemic template faults before further publication proceeds",
+                    ],
+                    [
+                        "Day 12, P12: Release six additional pages",
+                        "Managing editor publishes six complementary buyer-task resources",
+                        "Each page adds distinct evidence and relevant internal links",
+                        "Total accepted cohort reaches eighteen substantive published pages",
+                    ],
+                    [
+                        "Day 13, P13: Validate commercial event reporting",
+                        "Design and analytics contractor tests outbound event deduplication",
+                        "Test log reconciles expected events with recorded events",
+                        "Internal test traffic stays outside commercial performance counts",
+                    ],
+                    [
+                        "Day 14, P14: Complete the twenty-four-page cohort",
+                        "Managing editor releases the final six accepted pages",
+                        "Frozen cohort manifest establishes the Day Thirty denominator",
+                        "Document shortfalls explicitly without purchasing low-quality replacement volume",
+                    ],
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Accept the evidence packet",
+                    "action": "Match each material claim to an original observation or appropriate source.",
+                    "detail": "Record permitted use, source date, limitations, and the editor responsible for verification before drafting.",
+                },
+                {
+                    "step": 2,
+                    "title": "Review the rendered page",
+                    "action": "Check reader usefulness, factual support, disclosures, and accessible presentation.",
+                    "detail": "Verify the actual production rendering, including tables, images, mobile layout, and adjacent commercial explanations.",
+                },
+                {
+                    "step": 3,
+                    "title": "Release and inspect",
+                    "action": "Publish only accepted pages and validate responses, canonicals, links, and sitemap inclusion.",
+                    "detail": "Archive the release timestamp and initial crawl result; roll back the affected release if a systemic defect appears.",
+                },
+                {
+                    "step": 4,
+                    "title": "Observe and reconcile",
+                    "action": "Join cohort-level search observations with events, partner statements, and costs.",
+                    "detail": "Keep merchant sales, estimated commissions, recognized revenue, receivables, and received cash in distinct fields.",
+                },
+            ],
+        },
+        {
+            "heading": "3. Days 15-21: Diagnose discoverability, build refresh queues, and protect attribution",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Start the observation week by freezing cohort membership "
+                    "rather than constantly adding pages to improve reported "
+                    "totals. An eligible URL is an intended indexable "
+                    "production page, published at least fourteen days "
+                    "before the checkpoint, with stable ownership and "
+                    "a recorded release date. Count accidental exclusions "
+                    "as failures within that denominator; removing broken "
+                    "pages from the denominator would conceal operational "
+                    "defects. For Day 30, require at least twenty "
+                    "eligible pages to classify indexing results. Calculate "
+                    "indexed share as inspected indexed URLs divided "
+                    "by eligible URLs, with inspection evidence no "
+                    "older than seven days. A published page that "
+                    "has impressions can corroborate discovery, but search "
+                    "performance and current inspection status measure "
+                    "different things. Export Search Console page-level "
+                    "totals after allowing for reporting delay, and "
+                    "store the extraction date and reporting timezone. "
+                    "Keep query exports separate because privacy "
+                    "filtering can make their sums smaller than "
+                    "page totals. Branded and nonbranded query "
+                    "segments are directional views, not an exact "
+                    "reconciliation target. The publisher signs the "
+                    "denominator manifest before seeing the checkpoint "
+                    "result. This prevents a weak week from "
+                    "quietly changing which pages count."
+                ),
+                (
+                    "Use a causal repair order: accessibility first, "
+                    "canonical selection second, internal discovery third, "
+                    "then usefulness and intent alignment. A page "
+                    "blocked by configuration does not demonstrate "
+                    "weak market demand. Conversely, changing titles "
+                    "cannot rescue a dataset that adds no "
+                    "meaningful information. Build a content refresh "
+                    "queue with one defect class, one owner, "
+                    "an expected observable effect, and a review "
+                    "date for every item. Prioritize errors shared "
+                    "by many pages over cosmetic edits affecting "
+                    "one sentence. Require critical crawl defects "
+                    "to receive an assigned repair within one "
+                    "business day and verified resolution within "
+                    "three business days. Keep content changes "
+                    "in small logged batches so attribution "
+                    "remains interpretable; this is an observational "
+                    "workflow, not a randomized ranking experiment. "
+                    "Run ten fixed generative-search prompts on "
+                    "Day 20 and compare source citations with "
+                    "the baseline, recording product version where "
+                    "visible. Do not multiply tests until "
+                    "a favorable answer appears. If a "
+                    "citation disappears, inspect source accessibility "
+                    "and factual clarity before assuming a "
+                    "platform penalty. Technical audit automation "
+                    "and refresh queues should remove repetitive "
+                    "inspection work, not replace editorial judgment "
+                    "or manufacture unsupported explanations for ranking volatility."
+                ),
+                (
+                    "Protect the economic model while traffic remains "
+                    "small. Canonical Conservative revenue is $80,000 "
+                    "with $64,000 total costs and $16,000 owner "
+                    "net profit; Base revenue is $490,000 with "
+                    "$330,750 costs and $159,250 profit; Scaled "
+                    "revenue is $900,000 with $495,000 costs "
+                    "and $405,000 profit. Those identities produce "
+                    "20%, 32.5%, and 45% margins respectively. "
+                    "The first two cases use 2 FT + "
+                    "4 C; the third uses 3 FT + "
+                    "5 C. The monthly operating-expense range "
+                    "describes an operating envelope, not a "
+                    "complete reconciliation of every annual scenario "
+                    "cost. Keep variable production, commercial "
+                    "servicing, and other scenario costs visible "
+                    "rather than forcing annual costs into "
+                    "that monthly range. For an illustrative "
+                    "monetization sensitivity, 10,000 sessions at "
+                    "$20 advertising revenue per thousand sessions "
+                    "produce $200. If 300 qualified outbound "
+                    "clicks convert at 3% with $25 approved "
+                    "commissions, affiliate revenue adds $225. "
+                    "Combined revenue is $425, not the "
+                    "merchants' underlying order value. These "
+                    "assumptions are neither canonical traffic "
+                    "requirements nor measured launch results. "
+                    "Use them to expose how much "
+                    "audience and commercial validation remain "
+                    "before the annual profit cases become credible."
+                ),
+            ],
+            "table": {
+                "caption": "Week Three: Seven Diagnostic Slots Separating Crawl Faults, Evidence Gaps, and Revenue Errors",
+                "headers": [
+                    "Day and local play slot",
+                    "Accountable owner and concrete work",
+                    "Required artifact and acceptance evidence",
+                    "Decision rule or forensic safeguard",
+                ],
+                "rows": [
+                    [
+                        "Day 15, P15: Freeze evaluation cohort membership",
+                        "Publisher signs the complete release and eligibility manifest",
+                        "Manifest retains broken pages within the original denominator",
+                        "No retrospective exclusions improve the reported indexing percentage",
+                    ],
+                    [
+                        "Day 16, P16: Inspect index coverage systematically",
+                        "Technical contractor inspects every currently eligible cohort URL",
+                        "Inspection register preserves timestamps, canonicals, and index classifications",
+                        "Accessibility tests remain distinct from reported indexing evidence",
+                    ],
+                    [
+                        "Day 17, P17: Repair shared technical defects",
+                        "Technical contractor resolves prioritized crawl and rendering failures",
+                        "Before-and-after crawl evidence verifies each claimed technical repair",
+                        "Critical defects receive verified resolution within three business days",
+                    ],
+                    [
+                        "Day 18, P18: Build the content refresh queue",
+                        "Managing editor ranks evidence gaps and intent mismatches",
+                        "Every queue item states owner, hypothesis, and review date",
+                        "Batch small changes instead of rewriting everything simultaneously",
+                    ],
+                    [
+                        "Day 19, P19: Reconcile early commercial reporting",
+                        "Publisher compares event counts against available partner statements",
+                        "Ledger separates estimates, recognized revenue, reversals, and cash",
+                        "Referred merchant sales remain outside operator revenue calculations",
+                    ],
+                    [
+                        "Day 20, P20: Observe generative search citations",
+                        "Research contractor repeats ten fixed dated discovery prompts",
+                        "Observation log preserves prompt, product, answer, and cited sources",
+                        "Generated mentions never substitute for attributable commercial outcomes",
+                    ],
+                    [
+                        "Day 21, P21: Review capacity and concentration",
+                        "Publisher compares contractor hours, commitments, and partner exposure",
+                        "Variance report identifies overspend risks and dependency concentrations",
+                        "Pause optional work before breaching the authorized cash ceiling",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Four tactics that preserve diagnostic value",
+                "body": "A small search portfolio wins by keeping evidence interpretable while larger publishers confuse activity with progress.",
+                "items": [
+                    "Save rendered HTML and a screenshot with each release hash; template regressions often disappear before someone investigates them.",
+                    "Maintain an original-cohort report beside the whole-site dashboard so new URLs cannot hide deterioration in earlier pages.",
+                    "Separate affiliate approval dates from click dates; delayed approvals otherwise make one week appear artificially profitable.",
+                    "Preserve source licenses, contractor assignments, and monthly revenue reconciliations from launch; those records support later media-exit diligence.",
+                ],
+            },
+        },
+        {
+            "heading": "4. Days 22-30 and checkpoints 60/90: Enforce Kill, Fix, or bounded Scale",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "The final nine days turn observations into "
+                    "a signed resource decision. Audit every "
+                    "published page against five checks: supported "
+                    "claims, permitted assets, distinct reader value, "
+                    "accurate commercial presentation, and functioning "
+                    "technical delivery. Require complete rights "
+                    "and disclosure coverage; require at least "
+                    "95% of cohort pages to pass all "
+                    "five checks before expansion. With twenty-four "
+                    "pages, that means at least twenty-three "
+                    "complete passes. Day 30 Scale means "
+                    "permission to add at most six pages "
+                    "during the next month inside the "
+                    "same $12,000 monthly ceiling, not permission "
+                    "to launch another site. Require at "
+                    "least twenty eligible URLs, at least "
+                    "90% indexed, zero unresolved critical "
+                    "technical defects, and funded continuation. "
+                    "With twenty-four eligible URLs, at least "
+                    "twenty-two must be indexed. Sparse "
+                    "search traffic alone does not kill "
+                    "a new domain after thirty days. "
+                    "If the sample is smaller or "
+                    "quality misses the threshold, choose "
+                    "Fix and stop net-new commissioning "
+                    "until the shortfall is addressed. "
+                    "If rights cannot be secured or "
+                    "cash is unavailable, stop affected "
+                    "publishing or spending immediately. Keep "
+                    "useful existing pages available when "
+                    "doing so is operationally supportable."
+                ),
+                (
+                    "At Days 60 and 90, evaluate the "
+                    "latest complete twenty-eight-day Search Console "
+                    "window, ending three days before review. "
+                    "Use the frozen original cohort for "
+                    "demand comparisons and report expansion "
+                    "pages separately. Day 60 bounded Scale "
+                    "requires at least 1,000 impressions, "
+                    "twenty-five organic clicks, and impressions "
+                    "on ten distinct cohort URLs, alongside "
+                    "the technical, quality, and cash prerequisites. "
+                    "Authorize no more than six additional "
+                    "pages. Day 90 bounded Scale requires "
+                    "3,000 impressions, one hundred clicks, "
+                    "impressions on ten URLs, and at "
+                    "least 25% impression growth against "
+                    "the preceding nonoverlapping twenty-eight-day "
+                    "window. A zero comparison denominator "
+                    "cannot establish that growth condition. "
+                    "These are deliberately modest experiment "
+                    "thresholds, not search-industry benchmarks. "
+                    "Kill paid expansion at Day 60 "
+                    "when impressions remain below one "
+                    "hundred after a documented repair "
+                    "cycle and fourteen technically stable "
+                    "days. At Day 90, kill paid "
+                    "expansion when impressions remain below "
+                    "three hundred and clicks below ten "
+                    "under those same conditions. Otherwise "
+                    "choose Fix when Scale criteria fail. "
+                    "A first deal can still take "
+                    "six to twenty-four months; these "
+                    "checkpoints test whether continued learning "
+                    "deserves additional capital."
+                ),
+                (
+                    "Apply decision precedence consistently: unresolved "
+                    "rights or funding failures stop affected "
+                    "activity first; measurement or technical "
+                    "defects produce Fix; valid low-demand "
+                    "evidence can then trigger Kill; Scale "
+                    "requires every stated prerequisite. Fix "
+                    "authorizes one thirty-day repair cycle "
+                    "with named defects and no net-new "
+                    "page commissioning. Never exceed $36,000 "
+                    "cumulative operating spend through Day "
+                    "90 without a separately funded plan. "
+                    "If data remain inconclusive then, "
+                    "choose a funded maintenance experiment "
+                    "or stop paid expansion rather than "
+                    "renewing the sprint indefinitely. Larger "
+                    "portfolio expansion needs separate economic "
+                    "evidence: three closed months with "
+                    "positive contribution after direct production "
+                    "and servicing costs, reconciled revenue "
+                    "statements, and a documented customer "
+                    "acquisition or audience-growth mechanism. "
+                    "Before making that decision, require "
+                    "at least one hundred qualified "
+                    "commercial outbound clicks and ten "
+                    "approved attributed affiliate conversions "
+                    "if affiliate economics support the "
+                    "case; otherwise use delivered sponsor "
+                    "contracts or closed advertising statements. "
+                    "Flag any partner exceeding 40% "
+                    "of recognized revenue and stress-test "
+                    "its complete loss. The eight-person "
+                    "Scaled scenario is a distinct "
+                    "staffing decision, never an automatic "
+                    "reward for indexing. Preserve these "
+                    "records for future buyers assessing "
+                    "transferable earnings rather than screenshots."
+                ),
+            ],
+            "table": {
+                "caption": "Final Nine Daily Slots and Quantitative Day 30/60/90 Kill, Fix, or Scale Decisions",
+                "headers": [
+                    "Execution slot or decision checkpoint",
+                    "Required work or measurable trigger",
+                    "Evidence and interpretation required before action",
+                    "Authorized action and bounded resource consequence",
+                ],
+                "rows": [
+                    [
+                        "Day 22, P22: Audit every published claim",
+                        "Managing editor checks all twenty-four pages against evidence",
+                        "Audit records supported claims and specific corrective edits",
+                        "Repair unsupported statements before commissioning additional editorial work",
+                    ],
+                    [
+                        "Day 23, P23: Review rights and commercial presentation",
+                        "Publisher verifies asset permissions and adjacent affiliate disclosures",
+                        "Complete coverage is required across every commercial placement",
+                        "Remove or repair affected material before continued distribution",
+                    ],
+                    [
+                        "Day 24, P24: Refresh the highest-impact page defects",
+                        "Managing editor implements the smallest evidence-backed repair batch",
+                        "Change log records hypothesis, affected URLs, and reviewer",
+                        "Stay inside existing hours and authorized repair funds",
+                    ],
+                    [
+                        "Day 25, P25: Verify all technical repairs",
+                        "Technical contractor repeats crawl and production rendering checks",
+                        "Zero unresolved critical defects is required for expansion",
+                        "Keep commissioning paused while systemic faults remain unresolved",
+                    ],
+                    [
+                        "Day 26, P26: Close provisional commercial accounts",
+                        "Publisher reconciles earned amounts and remaining reporting delays",
+                        "Revenue ledger excludes merchant sales and unapproved estimates",
+                        "Do not spend against commissions lacking dependable evidence",
+                    ],
+                    [
+                        "Day 27, P27: Inspect the eligible index cohort",
+                        "Technical contractor refreshes inspection evidence for checkpoint review",
+                        "Every status observation is dated within seven days",
+                        "Preserve original denominator including accidentally excluded production pages",
+                    ],
+                    [
+                        "Day 28, P28: Reconcile cash and commitments",
+                        "Publisher totals incurred spending plus outstanding contractual obligations",
+                        "Report shows operating ceiling and separately preserved reserve",
+                        "Freeze optional spending when commitments exhaust authorized funds",
+                    ],
+                    [
+                        "Day 29, P29: Assemble the checkpoint evidence packet",
+                        "Managing editor joins quality, index, demand, and cost records",
+                        "Packet exposes missing evidence rather than hiding small samples",
+                        "Prepare one recommended decision with explicit unresolved conditions",
+                    ],
+                    [
+                        "Day 30, P30: Sign the resource allocation decision",
+                        "Publisher applies precedence and records Kill, Fix, or Scale",
+                        "Decision names owner, authorized budget, and next review date",
+                        "No second domain or automatic staffing expansion is authorized",
+                    ],
+                    [
+                        "Day Thirty Kill: Stop unsupported or unfunded activity",
+                        "Unrecoverable rights problems or insufficient cash prevent continuation",
+                        "Publisher documents affected assets and actual funding deficit",
+                        "Stop affected publication or discretionary spending without deleting evidence",
+                    ],
+                    [
+                        "Day Thirty Fix: Repair before expanding the cohort",
+                        "Any Scale prerequisite fails without requiring immediate activity cessation",
+                        "Record sample shortfall, quality defects, or indexing problems",
+                        "Allow one bounded repair cycle without net-new commissioning",
+                    ],
+                    [
+                        "Day Thirty Scale: Authorize six further pages maximum",
+                        "Twenty eligible URLs, ninety-percent indexing, ninety-five-percent quality pass",
+                        "Also require complete rights, disclosures, technical health, and funding",
+                        "Keep the next month within twelve thousand dollars",
+                    ],
+                    [
+                        "Day Sixty Kill: Stop the weak demand experiment",
+                        "Fewer than one hundred original-cohort impressions in window",
+                        "Require completed repair cycle and fourteen technically stable days",
+                        "Stop paid expansion and preserve low-cost useful assets",
+                    ],
+                    [
+                        "Day Sixty Fix: Resolve missing evidence or performance",
+                        "Scale conditions fail without satisfying a valid Kill trigger",
+                        "Inspect demand, cohort size, technical health, and quality deficits",
+                        "Authorize bounded repairs only with explicitly funded continuation",
+                    ],
+                    [
+                        "Day Sixty Scale: Release another six-page production batch",
+                        "One thousand impressions, twenty-five clicks, ten impression-bearing URLs",
+                        "Retain Day Thirty quality, indexing, technical, and cash prerequisites",
+                        "Keep original-cohort reporting separate from the expansion pages",
+                    ],
+                    [
+                        "Day Ninety Kill: Stop persistently unproductive paid expansion",
+                        "Below three hundred impressions and below ten clicks",
+                        "Require valid data, completed repairs, and fourteen stable days",
+                        "End acquisition spending while evaluating inexpensive asset maintenance",
+                    ],
+                    [
+                        "Day Ninety Fix: Close or explicitly re-fund learning",
+                        "Neither valid Kill nor complete Scale conditions are satisfied",
+                        "Measurement deficits and missing growth denominators remain explicit",
+                        "Require a separate funded plan beyond cumulative spending ceiling",
+                    ],
+                    [
+                        "Day Ninety Scale: Permit bounded additional topic coverage",
+                        "Three thousand impressions, one hundred clicks, twenty-five-percent growth",
+                        "Require ten impression-bearing URLs and all earlier operating prerequisites",
+                        "Authorize six pages maximum; portfolio expansion requires economic evidence",
+                    ],
+                ],
+            },
+        },
+    ],
+    "pull_quote": "Scale the evidence before you scale the portfolio, and stop buying output when the next dollar cannot answer a defined question.",
+    "diagram_id": "diag-08",
+    "action_checklist": [
+        "Assign all thirty local play slots to the two full-time role holders and four contractors, preserving an explicit mapping field for the authoritative play catalog.",
+        "Authorize $12,000 operating expenditure, preserve $3,000 liquidity, and reconcile incurred costs plus commitments before each weekly release.",
+        "Publish up to twenty-four evidence-backed pages by Day 14, archiving permissions, disclosures, release dates, hashes, and production crawl results.",
+        "Freeze the original evaluation cohort and calculate indexed share using dated inspection evidence without excluding accidental technical failures.",
+        "Apply the documented Day 30/60/90 decision precedence, record every unmet threshold, and limit each Scale decision to six additional pages.",
+        "Reconcile advertising, affiliate, and sponsorship revenue separately from merchant sales; require funded runway and closed economic evidence before portfolio or staffing expansion.",
+    ],
+    "statutory_citations": [
+        {
+            "title": "17 U.S.C. 106 — Exclusive rights in copyrighted works",
+            "url": "https://www.law.cornell.edu/uscode/text/17/106",
+            "relevance": "Maintain documented ownership, permission, or an applicable statutory basis for reproducing and adapting text, photographs, diagrams, and other protected assets.",
+        },
+        {
+            "title": "16 CFR 255.5 — Disclosure of material connections",
+            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-B/part-255/section-255.5",
+            "relevance": "The FTC endorsement guides explain disclosure of unexpected material connections between endorsers and sellers; apply clear, conspicuous explanations to affected affiliate and sponsored recommendations.",
+        },
+        {
+            "title": "15 U.S.C. 45 — Unfair or deceptive acts or practices",
+            "url": "https://www.law.cornell.edu/uscode/text/15/45",
+            "relevance": "Substantiate commercial representations and avoid fabricated product experience, misleading comparisons, or deceptive presentation of sponsored editorial content.",
+        },
+        {
+            "title": "California Civil Code 1798.100 — Consumer information and business obligations",
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=1798.100.&lawCode=CIV",
+            "relevance": "Where the CCPA applies, implement required collection notices, purpose and retention disclosures, proportional data practices, and applicable contractual controls for analytics and advertising recipients.",
+        },
+    ],
+}
